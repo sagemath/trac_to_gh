@@ -3,10 +3,11 @@
 archive/issues_005891.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314 @saliola\n\nKeywords: categories parents\n\nThis (series of) patch(es) extends the Sage category framework as a\ndesign pattern for organizing generic code.\n\nUnder development on combinat.sagemath.org/patches:\n\n- categories-nt.patch:    the category framework itself\n                        + updates to combinatorial free modules (will be split before submission)\n\nRelated patches (will need to be applied to recover all previous functionalities):\n- family_enumset-fh.patch\n- enumset_unions-fh.patch\n- categories-sf-nt.patch \tSymmetric functions\n- ncsf-nt.patch\t\tNon commutative Symmetric Functions\n- root_systems-4326-nt.patch\n\nSmall technical patches they depend on:\n- unique_representation-5120-submitted.patch\n- lazy_attributes-fixes-5783-final.patch\n- element_wrapper-nt.patch\n- 5598-coerce-declare.patch\n- cached_in_parent_method-5449.new\n- explain-pickle-v1.patch\n- cPickle-copy_reg_classes-nt.patch\n- cPickle-nested-classes-nt.patch\n- dynamic_class-nt.patch\n- compositions-cleanup-5600-nt.patch\n- transitive_ideal-nt.patch\n\n\nCurrent status:\n\n* Documentation:\n  sage.categories?         Category quickref card\n  sage.categories.primer?  Element/Parent/Category primer (in writing)\n  Category?                Technical background on categories\n  Semigroups().example()?? A template of semigroup\n  See also the discussion on sage-devel in November 2009:\n  http://groups.google.com/group/sage-devel/msg/d4065154e2e8cbd9\n\n* Real life applications:\n  see related patches, automatic monoids, ...\n\n* Categories:\n  - All the mathematical categories of Axiom and MuPAD\n  - EnumeratedSets         (with example)\n  - Semigroups             (with example, basic methods, subquotients)\n  - FiniteSemigroups       (with example, cayley graphs, basic representation theory, ...)\n  - ModulesWithBasis       (with example, morphisms)\n  - HopfAlgebras & friends (with example)\n  - Cleanup:\n    - Have unique representation by default (no need to inherit from Category_uniq)\n    - Have construction / reduce by default\n\n* Functorial constructions:\n  - direct sum\n  - tensor product\n  - cartesian product (todo)\n  - dual (in progress)\n  - subquotient, subset, quotient (in progress)\n  - isomorphism type (todo)\n\n* Homomorphisms\n  - Integrates with current sage morphisms\n  - Adds morphisms for some categories\n  - Some general infrastructure\n\n* Generic test framework\n  - Functional, final design clear, needs cleanup (2/3 hours)\n\n* Combinatorial free modules\n  * Have unique representation\n\n* Reorganization of the Sage library to start using the category framework:\n  * Fixed some import loops\n  * Added temporary list() methods to:\n    - FreeModule_generic\n    - MatrixSpace_generic\n    - Set_object_enumerated\n    - ParentWithAdditiveAbelianGens\n    - ParentWithMultiplicativeAbelianGens\n    They should eventually be inherited from the EnumeratedSets() category\n  * ...\n\n* Todo:\n  * Naming cleanup:\n    * Parent -> ParentMethods (or _ParentMethods? or ?)\n    * Element -> ElementMethods + move them as a nested class of ParentMethods\n    * super_categories should be a method\n    * zero, one should be methods\n    * standardize the names: mult / product / multiplication / multiply?\n    * check -> test\n    * self.tester(**keywords)\n    * intrusive cat.tensor_category / ...\n    * cat.example() -> /an_example/an_object/... ?\n    * class.an_instance() ?\n    * all_weakly_super_categories -> ?\n  * Category graph picture\n\n  * Fixes:\n    * Pickling: essentially works; polish the remaining\n    * Integration in the Sage library: some tests are broken. Help welcome!\n    * Pickling from old sage: technically feasible. Need help!\n    * Inheritance from category for Cython classes: technically feasible. Need help!\n\n  * Hom is *not* a functorial construction, the design and user\n    interface needs to be discussed\n\n  * Support for multivariate morphims, i.e. morphisms A x B -> C where\n    the specializations A x b -> C are morphisms for a given category\n    and a x B -> C are morphisms for a possibly different category\n\n* Discussion:\n  * Defining new inline operators, at least within the sage interpreter\n\nIssue created by migration from https://trac.sagemath.org/ticket/5891\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314 @saliola\n\nKeywords: categories parents\n\nThis (series of) patch(es) extends the Sage category framework as a\ndesign pattern for organizing generic code.\n\nLatest version of the patches:\n\n- [categories-framework-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-framework-nt.patch)          (reviewer: David Roe; review essentially complete up to some doctests)\n- [categories-categories-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-categories-nt.patch)         (reviewer: Florent Hivert, Javier, David Kohel, Anne Schilling, ...) See [CategoriesCategoriesReview](CategoriesCategoriesReview)\n- [categories-fixsagelib-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-fixsagelib-nt.patch)         (positive review: Robert Bradshaw)\n   updates to the sage library (import fixes, ...)\n- [categories-fix-combinat-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-fix-combinat-nt.patch)       (positive review: Florent)\n- [categories-numberfield_homset-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-numberfield_homset-nt.patch) (reviewer: William)\n- [categories-unpickle_backward_compatibility_aliases-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-unpickle_backward_compatibility_aliases-nt.patch) (positive review: Florent)\n\nStatus and roadmap: http://trac.sagemath.org/sage_trac/wiki/CategoriesRoadMap\n\nSome of the things done in this ticket:\n\n- Categories:\n  - Infrastructure:\n    - sage.categories.category (500 lines of code)\n    - sage.structure.parent (100 lines of code)\n    - class manipulation: (25 lines of code)\n  - All the mathematical categories of Axiom and MuPAD (Courtesy of Teresa Gomez Diaz)\n    (except *WithSeveralBases which are not needed anymore; see .abstract_category())\n    See the category graph: attachment:sage-category-graph.pdf\n  - (Infinite/Finite)EnumeratedSets (with example) (Courtesy of Florent Hivert)\n  - Semigroups                      (with example, basic methods, subquotients)\n  - FiniteSemigroups                (with example, cayley graphs, basic representation theory, ...)\n  - ModulesWithBasis                (with example, morphisms)\n  - HopfAlgebras & friends          (with a couple examples)\n  - Cleanup:\n    - Have unique representation by default (no need to inherit from Category_uniq)\n    - Have construction / reduce by default\n    - Can systematically use the idiom P in Rings()\n  - Lattice structure (join, meet); meet needs cleanup; join and meet\n    should be swapped.\n\n- Reorganization of the Sage library to start using the category framework:\n  - Groups:\n    - AbelianGroup_class.__init__ was missing a call to Groups.__init__\n    - Support for Group.__init__(category = ...)\n    - AbelianGroups was renamed to CommutativeAdditiveGroups (idem for Semigroups, ...)\n      (note: AbelianGroup are about commutative multiplicative groups)\n  - NumberFields: bug fix (categories-numberfield_homset-nt.patch):\n    Hom(SomeNumberField,SomeVectorSpace) returned a numberfield homset\n  - Fixed some import loops\n  - Square MatrixSpace in Algebras(...)\n  - Added temporary list() methods to:\n    - FreeModule_generic\n    - MatrixSpace_generic\n    - Set_object_enumerated\n    - ParentWithAdditiveAbelianGens\n    - ParentWithMultiplicativeAbelianGens\n    They should eventually be inherited from the EnumeratedSets() category\n  - Added sage.sets.finite_enumerated_set\n  - Naming conventions and cleanup:\n    - parent.product(x,y)   parent.product    parent.product_on_basis\n      (was: multiply, _multiply, multiply_basis, _multiply_basis)\n    - parent.summation(x,y) parent.summation        # risk of confusion with infinite summation / ...\n\n    - parent.sum ([x,y,z,y])\n    - parent.prod([x,y,z,y])\n\n    - parent.coproduct, parent.coproduct_on_basis, parent.coproduct_on_generators\n    - parent.antipode, parent.antipode_on_basis, parent.antipode_on_generators\n    - cat.example()  cat.counter_example()\n    - A.one() A.zero() a.is_one() a.is_zero()   A(1) A(0) when it makes sense\n      A.one_element() A.zero_element() deprecated in the doc; fully deprecated later\n      Transitional aliases one = one_element, zero = zero_element\n    - Use class.an_instance() whenever meaningful\n    - parent.an_element() parent.some_elements(); possibly parent.example() parent.counterexample()\n    - all_weakly_super_categories -> all_super_categories(proper=False)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5891\n\n",
+    "closed_at": "2009-11-19T16:56:33Z",
     "created_at": "2009-04-25T06:38:51Z",
     "labels": [
-        "component: misc"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Categories for the working mathematics programmer",
@@ -24,116 +25,76 @@ Keywords: categories parents
 This (series of) patch(es) extends the Sage category framework as a
 design pattern for organizing generic code.
 
-Under development on combinat.sagemath.org/patches:
+Latest version of the patches:
 
-- categories-nt.patch:    the category framework itself
-                        + updates to combinatorial free modules (will be split before submission)
+- [categories-framework-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-framework-nt.patch)          (reviewer: David Roe; review essentially complete up to some doctests)
+- [categories-categories-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-categories-nt.patch)         (reviewer: Florent Hivert, Javier, David Kohel, Anne Schilling, ...) See [CategoriesCategoriesReview](CategoriesCategoriesReview)
+- [categories-fixsagelib-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-fixsagelib-nt.patch)         (positive review: Robert Bradshaw)
+   updates to the sage library (import fixes, ...)
+- [categories-fix-combinat-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-fix-combinat-nt.patch)       (positive review: Florent)
+- [categories-numberfield_homset-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-numberfield_homset-nt.patch) (reviewer: William)
+- [categories-unpickle_backward_compatibility_aliases-nt.patch](http://combinat.sagemath.org/patches/file/tip/categories-unpickle_backward_compatibility_aliases-nt.patch) (positive review: Florent)
 
-Related patches (will need to be applied to recover all previous functionalities):
-- family_enumset-fh.patch
-- enumset_unions-fh.patch
-- categories-sf-nt.patch 	Symmetric functions
-- ncsf-nt.patch		Non commutative Symmetric Functions
-- root_systems-4326-nt.patch
+Status and roadmap: http://trac.sagemath.org/sage_trac/wiki/CategoriesRoadMap
 
-Small technical patches they depend on:
-- unique_representation-5120-submitted.patch
-- lazy_attributes-fixes-5783-final.patch
-- element_wrapper-nt.patch
-- 5598-coerce-declare.patch
-- cached_in_parent_method-5449.new
-- explain-pickle-v1.patch
-- cPickle-copy_reg_classes-nt.patch
-- cPickle-nested-classes-nt.patch
-- dynamic_class-nt.patch
-- compositions-cleanup-5600-nt.patch
-- transitive_ideal-nt.patch
+Some of the things done in this ticket:
 
-
-Current status:
-
-* Documentation:
-  sage.categories?         Category quickref card
-  sage.categories.primer?  Element/Parent/Category primer (in writing)
-  Category?                Technical background on categories
-  Semigroups().example()?? A template of semigroup
-  See also the discussion on sage-devel in November 2009:
-  http://groups.google.com/group/sage-devel/msg/d4065154e2e8cbd9
-
-* Real life applications:
-  see related patches, automatic monoids, ...
-
-* Categories:
-  - All the mathematical categories of Axiom and MuPAD
-  - EnumeratedSets         (with example)
-  - Semigroups             (with example, basic methods, subquotients)
-  - FiniteSemigroups       (with example, cayley graphs, basic representation theory, ...)
-  - ModulesWithBasis       (with example, morphisms)
-  - HopfAlgebras & friends (with example)
+- Categories:
+  - Infrastructure:
+    - sage.categories.category (500 lines of code)
+    - sage.structure.parent (100 lines of code)
+    - class manipulation: (25 lines of code)
+  - All the mathematical categories of Axiom and MuPAD (Courtesy of Teresa Gomez Diaz)
+    (except *WithSeveralBases which are not needed anymore; see .abstract_category())
+    See the category graph: attachment:sage-category-graph.pdf
+  - (Infinite/Finite)EnumeratedSets (with example) (Courtesy of Florent Hivert)
+  - Semigroups                      (with example, basic methods, subquotients)
+  - FiniteSemigroups                (with example, cayley graphs, basic representation theory, ...)
+  - ModulesWithBasis                (with example, morphisms)
+  - HopfAlgebras & friends          (with a couple examples)
   - Cleanup:
     - Have unique representation by default (no need to inherit from Category_uniq)
     - Have construction / reduce by default
+    - Can systematically use the idiom P in Rings()
+  - Lattice structure (join, meet); meet needs cleanup; join and meet
+    should be swapped.
 
-* Functorial constructions:
-  - direct sum
-  - tensor product
-  - cartesian product (todo)
-  - dual (in progress)
-  - subquotient, subset, quotient (in progress)
-  - isomorphism type (todo)
-
-* Homomorphisms
-  - Integrates with current sage morphisms
-  - Adds morphisms for some categories
-  - Some general infrastructure
-
-* Generic test framework
-  - Functional, final design clear, needs cleanup (2/3 hours)
-
-* Combinatorial free modules
-  * Have unique representation
-
-* Reorganization of the Sage library to start using the category framework:
-  * Fixed some import loops
-  * Added temporary list() methods to:
+- Reorganization of the Sage library to start using the category framework:
+  - Groups:
+    - AbelianGroup_class.__init__ was missing a call to Groups.__init__
+    - Support for Group.__init__(category = ...)
+    - AbelianGroups was renamed to CommutativeAdditiveGroups (idem for Semigroups, ...)
+      (note: AbelianGroup are about commutative multiplicative groups)
+  - NumberFields: bug fix (categories-numberfield_homset-nt.patch):
+    Hom(SomeNumberField,SomeVectorSpace) returned a numberfield homset
+  - Fixed some import loops
+  - Square MatrixSpace in Algebras(...)
+  - Added temporary list() methods to:
     - FreeModule_generic
     - MatrixSpace_generic
     - Set_object_enumerated
     - ParentWithAdditiveAbelianGens
     - ParentWithMultiplicativeAbelianGens
     They should eventually be inherited from the EnumeratedSets() category
-  * ...
+  - Added sage.sets.finite_enumerated_set
+  - Naming conventions and cleanup:
+    - parent.product(x,y)   parent.product    parent.product_on_basis
+      (was: multiply, _multiply, multiply_basis, _multiply_basis)
+    - parent.summation(x,y) parent.summation        # risk of confusion with infinite summation / ...
 
-* Todo:
-  * Naming cleanup:
-    * Parent -> ParentMethods (or _ParentMethods? or ?)
-    * Element -> ElementMethods + move them as a nested class of ParentMethods
-    * super_categories should be a method
-    * zero, one should be methods
-    * standardize the names: mult / product / multiplication / multiply?
-    * check -> test
-    * self.tester(**keywords)
-    * intrusive cat.tensor_category / ...
-    * cat.example() -> /an_example/an_object/... ?
-    * class.an_instance() ?
-    * all_weakly_super_categories -> ?
-  * Category graph picture
+    - parent.sum ([x,y,z,y])
+    - parent.prod([x,y,z,y])
 
-  * Fixes:
-    * Pickling: essentially works; polish the remaining
-    * Integration in the Sage library: some tests are broken. Help welcome!
-    * Pickling from old sage: technically feasible. Need help!
-    * Inheritance from category for Cython classes: technically feasible. Need help!
+    - parent.coproduct, parent.coproduct_on_basis, parent.coproduct_on_generators
+    - parent.antipode, parent.antipode_on_basis, parent.antipode_on_generators
+    - cat.example()  cat.counter_example()
+    - A.one() A.zero() a.is_one() a.is_zero()   A(1) A(0) when it makes sense
+      A.one_element() A.zero_element() deprecated in the doc; fully deprecated later
+      Transitional aliases one = one_element, zero = zero_element
+    - Use class.an_instance() whenever meaningful
+    - parent.an_element() parent.some_elements(); possibly parent.example() parent.counterexample()
+    - all_weakly_super_categories -> all_super_categories(proper=False)
 
-  * Hom is *not* a functorial construction, the design and user
-    interface needs to be discussed
-
-  * Support for multivariate morphims, i.e. morphisms A x B -> C where
-    the specializations A x b -> C are morphisms for a given category
-    and a x B -> C are morphisms for a possibly different category
-
-* Discussion:
-  * Defining new inline operators, at least within the sage interpreter
 
 Issue created by migration from https://trac.sagemath.org/ticket/5891
 

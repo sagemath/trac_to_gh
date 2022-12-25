@@ -1,15 +1,16 @@
-# Issue 2060: Update PolyBoRi spkg to 0.2
+# Issue 2060: [with patch, positive review] Update PolyBoRi interface and spkg to 0.3.1
 
 archive/issues_002060.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nThe first release candidate of PolyBoRi 0.2 is available in the download area.\nThis version comes with refined Gr\u00f6bner algorithms and several stability\nimprovements. Also new procedures for interpolation of Boolean polynomials\nhave been added.\n```\nhttp://polybori.sourceforge.net/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2060\n\n",
+    "closed_at": "2008-04-01T22:14:04Z",
     "created_at": "2008-02-05T17:35:05Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Update PolyBoRi spkg to 0.2",
+    "title": "[with patch, positive review] Update PolyBoRi interface and spkg to 0.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2060",
     "user": "https://github.com/malb"

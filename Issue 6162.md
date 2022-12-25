@@ -1,27 +1,31 @@
-# Issue 6162: plot_histogram improvments
+# Issue 6162: [with patch, positive review] plot_histogram improvments
 
 archive/issues_006162.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @cswiercz\n\nSince R's histogram plotting is not working for me, I added some functionality to dft.py's plot_histogram method for IndexedSequences.\nHope this is useful to other.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6162\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @cswiercz\n\nKeywords: plot histogram\n\nSince R's histogram plotting is not working for me, I added some functionality to dft.py's plot_histogram method for IndexedSequences.\nHope this is useful to others.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6162\n\n",
+    "closed_at": "2009-06-26T17:42:07Z",
     "created_at": "2009-05-30T22:16:10Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "plot_histogram improvments",
+    "title": "[with patch, positive review] plot_histogram improvments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6162",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @cswiercz
 
+Keywords: plot histogram
+
 Since R's histogram plotting is not working for me, I added some functionality to dft.py's plot_histogram method for IndexedSequences.
-Hope this is useful to other.
+Hope this is useful to others.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6162
 

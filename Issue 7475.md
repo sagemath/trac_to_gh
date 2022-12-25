@@ -3,10 +3,11 @@
 archive/issues_007475.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage: K = ZZ.residue_field(2)\nsage: dumps(K)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/44250/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:7951)()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12800)()\n\nTypeError: 'NoneType' object is unsubscriptable\nsage: K = ZZ.residue_field(3)\nsage: dumps(K)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/44250/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:7951)()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12800)()\n\nTypeError: 'NoneType' object is unsubscriptable\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7475\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: K = ZZ.residue_field(2)\nsage: dumps(K)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/44250/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:7951)()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12800)()\n\nTypeError: 'NoneType' object is unsubscriptable\nsage: K = ZZ.residue_field(3)\nsage: dumps(K)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/44250/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:7951)()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12800)()\n\nTypeError: 'NoneType' object is unsubscriptable\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7475\n\n",
+    "closed_at": "2014-02-03T22:59:33Z",
     "created_at": "2009-11-16T17:41:54Z",
     "labels": [
-        "component: misc",
+        "component: pickling",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
@@ -16,7 +17,7 @@ archive/issues_007475.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 ```
 sage: K = ZZ.residue_field(2)

@@ -1,16 +1,17 @@
-# Issue 3975: Small mistake in the new plot() code.
+# Issue 3975: [with patch, positive review] Small mistake in the new plot() code.
 
 archive/issues_003975.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\ndelta is computed with xmin and xmax in the wrong order resulting in a negative delta.\n\nThis makes the rest of the code go very slowly.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3975\n\n",
+    "closed_at": "2008-08-28T20:39:47Z",
     "created_at": "2008-08-28T14:42:56Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Small mistake in the new plot() code.",
+    "title": "[with patch, positive review] Small mistake in the new plot() code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3975",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

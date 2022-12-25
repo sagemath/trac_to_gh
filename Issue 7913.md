@@ -1,17 +1,18 @@
-# Issue 7913: extraneous output after deprecation warning
+# Issue 7913: Warnings raised in Cython show wrong source line
 
 archive/issues_007913.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @orlitzky\n\nKeywords: deprecation\n\nIn the following:\n\n```\nsage: EllipticCurve(0)\n/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1:\nDeprecationWarning: 'EllipticCurve(j)' is deprecated; use\n'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.\n #!/usr/bin/env python\nElliptic Curve defined by y^2 = x^3 + 1 over Rational Field\n```\nwhere is the line \"#!/usr/bin/env python\" coming from?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7913\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky\n\nKeywords: deprecation\n\n```\nsage: 5.is_prime_power(flag=1)  # defined in sage/rings/integer.pyx\n/usr/local/src/sage-config/local/lib/python2.7/site-packages/IPython/core/interactiveshell.py:2881: DeprecationWarning: the 'flag' argument to is_prime_power() is no longer used\nSee http://trac.sagemath.org/16878 for details.\n  exec(code_obj, self.user_global_ns, self.user_ns)\nTrue\n```\n\nThe line `exec(code_obj, self.user_global_ns, self.user_ns)` is not very useful.\n\nThis is because Cython functions do not add a new stack level.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7913\n\n",
+    "closed_at": "2017-07-13T07:54:31Z",
     "created_at": "2010-01-12T20:28:38Z",
     "labels": [
-        "component: user interface",
-        "minor",
+        "component: cython",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "extraneous output after deprecation warning",
+    "title": "Warnings raised in Cython show wrong source line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7913",
     "user": "https://github.com/JohnCremona"
@@ -23,17 +24,17 @@ CC:  @orlitzky
 
 Keywords: deprecation
 
-In the following:
+```
+sage: 5.is_prime_power(flag=1)  # defined in sage/rings/integer.pyx
+/usr/local/src/sage-config/local/lib/python2.7/site-packages/IPython/core/interactiveshell.py:2881: DeprecationWarning: the 'flag' argument to is_prime_power() is no longer used
+See http://trac.sagemath.org/16878 for details.
+  exec(code_obj, self.user_global_ns, self.user_ns)
+True
+```
 
-```
-sage: EllipticCurve(0)
-/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1:
-DeprecationWarning: 'EllipticCurve(j)' is deprecated; use
-'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.
- #!/usr/bin/env python
-Elliptic Curve defined by y^2 = x^3 + 1 over Rational Field
-```
-where is the line "#!/usr/bin/env python" coming from?
+The line `exec(code_obj, self.user_global_ns, self.user_ns)` is not very useful.
+
+This is because Cython functions do not add a new stack level.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7913
 

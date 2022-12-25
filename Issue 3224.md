@@ -1,16 +1,17 @@
-# Issue 3224: add 64 bit OSX build support for lcalc
+# Issue 3224: [with spkg, positive review] add 64 bit OSX build support for lcalc
 
 archive/issues_003224.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3224\n\n",
+    "closed_at": "2008-05-18T23:45:41Z",
     "created_at": "2008-05-16T19:36:00Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support for lcalc",
+    "title": "[with spkg, positive review] add 64 bit OSX build support for lcalc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3224",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

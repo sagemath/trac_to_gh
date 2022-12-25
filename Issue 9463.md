@@ -3,10 +3,11 @@
 archive/issues_009463.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nfactor() is extremely slow at factoring large perfect powers (with a nontrivial base).\n\n```\nsage: %time factor(next_prime(10^20)^150)\nCPU times: user 0.75 s, sys: 0.00 s, total: 0.75 s\nWall time: 0.75 s\n100000000000000000039^150\nsage: %time factor(next_prime(10^20)^250)\nCPU times: user 2.68 s, sys: 0.00 s, total: 2.68 s\nWall time: 2.69 s\n100000000000000000039^250\nsage: %time factor(next_prime(10^20)^500)\nCPU times: user 13.19 s, sys: 0.00 s, total: 13.19 s\nWall time: 13.20 s\n100000000000000000039^500\n```\nFor comparison, SymPy handles such numbers in an instant:\n\n```\nsage: from sympy import factorint\nsage: %time factorint(next_prime(10^20)^150)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 150}\nsage: %time factorint(next_prime(10^20)^250)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 250}\nsage: %time factorint(next_prime(10^20)^500)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n{100000000000000000039L: 500}\n```\nPerfect power testing is very cheap, so it should be attempted early on for large numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9463\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nfactor() is extremely slow at factoring large perfect powers (with a nontrivial base).\n\n```\nsage: %time factor(next_prime(10^20)^150)\nCPU times: user 0.75 s, sys: 0.00 s, total: 0.75 s\nWall time: 0.75 s\n100000000000000000039^150\nsage: %time factor(next_prime(10^20)^250)\nCPU times: user 2.68 s, sys: 0.00 s, total: 2.68 s\nWall time: 2.69 s\n100000000000000000039^250\nsage: %time factor(next_prime(10^20)^500)\nCPU times: user 13.19 s, sys: 0.00 s, total: 13.19 s\nWall time: 13.20 s\n100000000000000000039^500\n```\nFor comparison, SymPy handles such numbers in an instant:\n\n```\nsage: from sympy import factorint\nsage: %time factorint(next_prime(10^20)^150)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 150}\nsage: %time factorint(next_prime(10^20)^250)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 250}\nsage: %time factorint(next_prime(10^20)^500)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n{100000000000000000039L: 500}\n```\nPerfect power testing is very cheap, so it should be attempted early on for large numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9463\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2010-07-09T09:03:28Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: factorization",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009463.json:
     "user": "https://github.com/fredrik-johansson"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 CC:  @jdemeyer
 

@@ -1,9 +1,10 @@
-# Issue 5737: pynac interface improvements
+# Issue 5737: [with patch, with positive review] pynac interface improvements
 
 archive/issues_005737.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @ncalexan\n\nAttached patches fix some bugs in the pynac interface and add .find() and .is_polynomial() functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5737\n\n",
+    "closed_at": "2009-04-13T09:25:30Z",
     "created_at": "2009-04-10T21:09:13Z",
     "labels": [
         "component: symbolics",
@@ -11,7 +12,7 @@ archive/issues_005737.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "pynac interface improvements",
+    "title": "[with patch, with positive review] pynac interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5737",
     "user": "https://github.com/burcin"

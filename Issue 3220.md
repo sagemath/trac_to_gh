@@ -1,16 +1,17 @@
-# Issue 3220: [with patch; needs review] readline -- fix a couple of issues
+# Issue 3220: [with patch; positive review] readline -- fix a couple of issues
 
 archive/issues_003220.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is what is fixed by this spkg:\n\n```\n  * /usr/bin/env bash;  change == to =; add support for cygwin; improve error messages and checking\n```\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/gmp-4.2.2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3220\n\n",
+    "body": "Assignee: mabshoff\n\nThis is what is fixed by this spkg:\n\n```\n  * /usr/bin/env bash;  change == to =; add support for cygwin; improve error messages and checking\n```\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/readline-5.2.p2.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3220\n\n",
+    "closed_at": "2008-05-18T12:40:22Z",
     "created_at": "2008-05-16T14:39:03Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] readline -- fix a couple of issues",
+    "title": "[with patch; positive review] readline -- fix a couple of issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3220",
     "user": "https://github.com/williamstein"
@@ -26,7 +27,8 @@ This is what is fixed by this spkg:
 
 The spkg is here:
 
-http://sage.math.washington.edu/home/was/cygwin/gmp-4.2.2.spkg
+http://sage.math.washington.edu/home/was/cygwin/readline-5.2.p2.spkg
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3220
 

@@ -4,6 +4,7 @@ archive/issues_005191.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @zimmermann6\n\nThis is a followup to #5023: Paul Zimmermann reports:\n\n```\nsage: a=tanh(2)\nsage: a._algebraic_(QQbar)\n...\nTypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational\n```\n\nCarl: If this is invalid just close the ticker as invalid.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5191\n\n",
+    "closed_at": "2009-02-06T03:26:20Z",
     "created_at": "2009-02-06T00:20:10Z",
     "labels": [
         "component: coercion",

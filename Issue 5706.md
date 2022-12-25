@@ -1,16 +1,17 @@
-# Issue 5706: implicit_plot totally sucks when input an equation
+# Issue 5706: [with patch; positive review] implicit_plot totally sucks when input an equation
 
 archive/issues_005706.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nMake Sage hurt:\n\n```\nvar('x,y')\nimplicit_plot(x^2+y^2 == 1, (x,-2,2), (y,-2,2))\n```\n\nThe problem is that implicit_plot takes a function, not a symbolic equation, so it views \"x<sup>2+y</sup>2 == 1\" as a function --- and that is very painful.  \n\nSOLUTION: Check if the input is an equation, and if so, make RHS zero, and plot corresponding function equal to 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5706\n\n",
+    "closed_at": "2009-04-09T06:40:59Z",
     "created_at": "2009-04-07T17:36:29Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "implicit_plot totally sucks when input an equation",
+    "title": "[with patch; positive review] implicit_plot totally sucks when input an equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5706",
     "user": "https://github.com/williamstein"

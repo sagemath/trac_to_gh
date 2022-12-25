@@ -1,15 +1,16 @@
-# Issue 2788: [with patch, needs review] update hypellfrob to 2.1
+# Issue 2788: [with patch, positive review] update hypellfrob to 2.1
 
 archive/issues_002788.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch updates hypellfrob to version 2.1, which is somewhat faster than the current 2.0.\n\nDepends on `zn_poly-0.8` (#2786).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2788\n\n",
+    "closed_at": "2008-04-03T19:08:48Z",
     "created_at": "2008-04-03T03:27:43Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] update hypellfrob to 2.1",
+    "title": "[with patch, positive review] update hypellfrob to 2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2788",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

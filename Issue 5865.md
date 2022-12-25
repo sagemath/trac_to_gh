@@ -1,17 +1,18 @@
-# Issue 5865: Add SAGE_SIMD_FLAG="SSE2" README.txt
+# Issue 5865: Add SAGE_SIMD_MODE="SSE2" README.txt
 
 archive/issues_005865.json:
 ```json
 {
-    "body": "Assignee: tba\n\nAdd some documentation to README.txt that explains the \n\n```\nexport SAGE_SIMD_FLAG=\"SSE2\"\n```\n\nflag, which makes it so one can build SAGE with ATLAS without sse3 optimizations.  This is slower but works on way more machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5865\n\n",
+    "body": "Assignee: tba\n\nAdd some documentation to README.txt that explains the \n\n```\nexport SAGE_SIMD_MODE=\"SSE2\"\n```\n\nflag, which makes it so one can build SAGE with ATLAS without sse3 optimizations.  This is slower but works on way more machines.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5865\n\n",
+    "closed_at": "2009-06-02T21:53:22Z",
     "created_at": "2009-04-23T06:38:41Z",
     "labels": [
         "component: documentation",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Add SAGE_SIMD_FLAG=\"SSE2\" README.txt",
+    "title": "Add SAGE_SIMD_MODE=\"SSE2\" README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5865",
     "user": "https://github.com/williamstein"
@@ -22,10 +23,11 @@ Assignee: tba
 Add some documentation to README.txt that explains the 
 
 ```
-export SAGE_SIMD_FLAG="SSE2"
+export SAGE_SIMD_MODE="SSE2"
 ```
 
 flag, which makes it so one can build SAGE with ATLAS without sse3 optimizations.  This is slower but works on way more machines.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5865
 

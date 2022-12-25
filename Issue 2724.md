@@ -4,6 +4,7 @@ archive/issues_002724.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nIn the following:\n\n```\nsage: g=graphs.PetersenGraph()\nsage: g.show3d()\n```\n\nthe edges look messed up (some are darker and some are lighter and it changes as you rotate the graph).  Putting aspect_ratio=[1,1,1] fixes the problem:\n\n```\nsage: g=graphs.PetersenGraph()\nsage: g.show3d(aspect_ratio=[1,1,1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2724\n\n",
+    "closed_at": "2008-03-29T20:05:20Z",
     "created_at": "2008-03-29T19:37:19Z",
     "labels": [
         "component: graph theory",

@@ -1,16 +1,17 @@
-# Issue 2837: [witch patch, needs review] use twisted-8.0.1's blockingCallFromThread
+# Issue 2837: [witch patch, positive review] use twisted-8.0.1's blockingCallFromThread
 
 archive/issues_002837.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nThis patch makes use of the official blockingCallFromThread method in twisted.internet.threads instead of the one supplied by dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2837\n\n",
+    "closed_at": "2008-04-07T01:23:49Z",
     "created_at": "2008-04-07T00:14:16Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[witch patch, needs review] use twisted-8.0.1's blockingCallFromThread",
+    "title": "[witch patch, positive review] use twisted-8.0.1's blockingCallFromThread",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2837",
     "user": "https://github.com/yqiang"

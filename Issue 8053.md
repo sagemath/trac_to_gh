@@ -4,6 +4,7 @@ archive/issues_008053.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @qed777\n\nThere was bug in the graph_editor which counted the release of a dragging move as a beginning of a double click. This should reduce the number of accidental node deletions.\n\nAlso added the following improvements.\n\n- there is one-step undo available.\n- a node dragged out of the iframe returns to its original position. Deletion is preformed only if mouse is released between the canvas and the iframe.\n- live sliders only shown when live is enabled.\n- live algorithm never pushes nodes out of bounds.\n\nNote that JSbeautifier.com moved some if else statements indents which is reflected in the patch (even though there was not actual code change in those parts).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8053\n\n",
+    "closed_at": "2010-04-04T17:18:33Z",
     "created_at": "2010-01-25T07:03:57Z",
     "labels": [
         "component: notebook",

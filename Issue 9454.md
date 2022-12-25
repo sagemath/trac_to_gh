@@ -4,6 +4,7 @@ archive/issues_009454.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nThe attached patch adds support for a new token-based challenge mechanism for account creation in the sage notebook.\n\nWorkflow:\n\nThe admin enables challenges, and sets challenge_type to token.\n\nThe admin generates 50 tokens (through the user management interface) and distributes these to 50 people. (Students taking some class, for example.)\n\nEach person that receives a token can use that token (once) to create an account.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9454\n\n",
+    "closed_at": "2020-09-09T09:39:30Z",
     "created_at": "2010-07-08T14:57:46Z",
     "labels": [
         "component: notebook"

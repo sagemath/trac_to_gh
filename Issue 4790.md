@@ -3,7 +3,8 @@
 archive/issues_004790.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is a split of #3677.  \nAt the end of testing when reporting the results, sage -t does not take into account the current directory. It produces output like this: \n\n```\n        sage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py\n\tsage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py\n```\n\nwhen it should be giving output like \n\n```\n        sage -t  ambient_space.py\n\tsage -t  root_lattice_realization.py\n\tsage -t  root_space.py\n\tsage -t  root_system.py\n\tsage -t  weight_space.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4790\n\n",
+    "body": "Assignee: mabshoff\n\nThis is a split of #3677.  \nAt the end of testing when reporting the results, sage -t does not take into account the current directory. It produces output like this: \n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py\nsage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py\nsage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py\nsage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py\n```\n\nwhen it should be giving output like \n\n```\nsage -t  ambient_space.py\nsage -t  root_lattice_realization.py\nsage -t  root_space.py\nsage -t  root_system.py\nsage -t  weight_space.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4790\n\n",
+    "closed_at": "2013-03-15T13:00:47Z",
     "created_at": "2008-12-14T05:28:39Z",
     "labels": [
         "component: doctest coverage",
@@ -22,20 +23,20 @@ This is a split of #3677.
 At the end of testing when reporting the results, sage -t does not take into account the current directory. It produces output like this: 
 
 ```
-        sage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py
-	sage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py
-	sage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py
-	sage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py
+sage -t  devel/sage-combinat/sage/combinat/root_system/root_lattice_realization.py
+sage -t  devel/sage-combinat/sage/combinat/root_system/root_space.py
+sage -t  devel/sage-combinat/sage/combinat/root_system/root_system.py
+sage -t  devel/sage-combinat/sage/combinat/root_system/weight_space.py
 ```
 
 when it should be giving output like 
 
 ```
-        sage -t  ambient_space.py
-	sage -t  root_lattice_realization.py
-	sage -t  root_space.py
-	sage -t  root_system.py
-	sage -t  weight_space.py
+sage -t  ambient_space.py
+sage -t  root_lattice_realization.py
+sage -t  root_space.py
+sage -t  root_system.py
+sage -t  weight_space.py
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/4790

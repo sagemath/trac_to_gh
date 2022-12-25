@@ -4,6 +4,7 @@ archive/issues_006703.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @dimpase\n\nA well known issue and one I think may be fixable without a huge effort. The Sun compilers give better performance on Solaris than GNU.\n\nNote, Sun Studio which contains the latest Solaris compilers is now free from Sun - it used to cost a lot of money. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6703\n\n",
+    "closed_at": "2020-07-15T07:18:41Z",
     "created_at": "2009-08-09T09:22:34Z",
     "labels": [
         "component: porting: solaris",

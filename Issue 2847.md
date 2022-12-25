@@ -1,15 +1,16 @@
-# Issue 2847: [with patch, needs review] more speedups to cyclotomic polynomials
+# Issue 2847: [with patch, positive review] more speedups to cyclotomic polynomials
 
 archive/issues_002847.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nUse some data provided by Michael Monagan, as well as take advantage of the fact (mentioned in the previous ticket by John Cremona) that $\\Phi_{pn}(x) = \\Phi_n(x^p)$ for $p|n$.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2847\n\n",
+    "body": "Assignee: somebody\n\nUse some data provided by Michael Monagan, as well as take advantage of the fact (mentioned in the previous ticket by John Cremona) that `$\\Phi_{pn}(x) = \\Phi_n(x^p)$ for $p|n$.`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2847\n\n",
+    "closed_at": "2008-04-09T04:07:55Z",
     "created_at": "2008-04-07T19:32:03Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] more speedups to cyclotomic polynomials",
+    "title": "[with patch, positive review] more speedups to cyclotomic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2847",
     "user": "https://github.com/robertwb"
@@ -17,7 +18,7 @@ archive/issues_002847.json:
 ```
 Assignee: somebody
 
-Use some data provided by Michael Monagan, as well as take advantage of the fact (mentioned in the previous ticket by John Cremona) that $\Phi_{pn}(x) = \Phi_n(x^p)$ for $p|n$.
+Use some data provided by Michael Monagan, as well as take advantage of the fact (mentioned in the previous ticket by John Cremona) that `$\Phi_{pn}(x) = \Phi_n(x^p)$ for $p|n$.`
 
 Issue created by migration from https://trac.sagemath.org/ticket/2847
 

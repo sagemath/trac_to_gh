@@ -1,16 +1,17 @@
-# Issue 5726: RDF quotes -- docstring bug (possibly cython issue)
+# Issue 5726: [with patch, positive review] "Definition:" missing/wrong/messed up both in notebook and command line in different ways for both python and cython code (frickin')
 
 archive/issues_005726.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\nsage: RDF.random_element?\n...\nDefinition: RDF.random_element(min='-1', max='1')\n```\nNotice the stupid quotes around -1 and 1, which are very confusing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5726\n\n",
+    "body": "Assignee: tba\n\n```\nsage: RDF.random_element?\n...\nDefinition: RDF.random_element(min='-1', max='1')\n```\nNotice the stupid quotes around -1 and 1, which are very confusing!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5726\n\n",
+    "closed_at": "2009-08-31T04:45:51Z",
     "created_at": "2009-04-09T16:58:20Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "RDF quotes -- docstring bug (possibly cython issue)",
+    "title": "[with patch, positive review] \"Definition:\" missing/wrong/messed up both in notebook and command line in different ways for both python and cython code (frickin')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5726",
     "user": "https://github.com/williamstein"
@@ -24,6 +25,8 @@ sage: RDF.random_element?
 Definition: RDF.random_element(min='-1', max='1')
 ```
 Notice the stupid quotes around -1 and 1, which are very confusing!
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5726
 

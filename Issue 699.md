@@ -1,21 +1,22 @@
-# Issue 699: implement computation of twisted winding elements (a technical thing involving modular symbols)
+# Issue 699: [with patch] implement computation of twisted winding elements (a technical thing involving modular symbols)
 
 archive/issues_000699.json:
 ```json
 {
-    "body": "Assignee: craig citro\n\nCraig just did this.  Now I need to test it out, etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/699\n\n",
+    "body": "Assignee: @craigcitro\n\nCraig just did this.  Now I need to test it out, etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/699\n\n",
+    "closed_at": "2007-10-21T03:14:53Z",
     "created_at": "2007-09-19T23:59:54Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "implement computation of twisted winding elements (a technical thing involving modular symbols)",
+    "title": "[with patch] implement computation of twisted winding elements (a technical thing involving modular symbols)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/699",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: craig citro
+Assignee: @craigcitro
 
 Craig just did this.  Now I need to test it out, etc. 
 

@@ -1,21 +1,22 @@
-# Issue 874: Implement Jordan and Rational Canonical Form
+# Issue 874: [with patch, positive review] Implement Jordan and Rational Canonical Form
 
 archive/issues_000874.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/874\n\n",
+    "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/874\n\n",
+    "closed_at": "2008-02-28T00:41:03Z",
     "created_at": "2007-10-13T05:57:48Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Implement Jordan and Rational Canonical Form",
+    "title": "[with patch, positive review] Implement Jordan and Rational Canonical Form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/874",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 
 

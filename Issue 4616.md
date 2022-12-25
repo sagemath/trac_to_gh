@@ -1,16 +1,17 @@
-# Issue 4616: cosine_series_coefficient hangs
+# Issue 4616: [with patch, positive review] cosine_series_coefficient hangs
 
 archive/issues_004616.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nThis is a method of the Piecewise class (which I use almost on a daily basis in teaching):\n\n```\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\n                                               \n```\nRequires a ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4616\n\n",
+    "closed_at": "2009-01-23T10:26:38Z",
     "created_at": "2008-11-25T12:47:24Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "cosine_series_coefficient hangs",
+    "title": "[with patch, positive review] cosine_series_coefficient hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4616",
     "user": "https://github.com/wdjoyner"

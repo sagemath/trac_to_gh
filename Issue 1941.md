@@ -1,16 +1,15 @@
-# Issue 1941: Finish bipartite graph implementation
+# Issue 1941: Meta ticket: Finish bipartite graph implementation
 
 archive/issues_001941.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  brunellus @maxale @tscrim\n\nSystematically go through the functions of graph and generic_graph and see which ones, such as add_vertex, need to be overridden in the bipartite graph class so that everything makes sense. Right now, you can add an edge so that the bipartite graph is no longer bipartite.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1941\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  brunellus @maxale @tscrim\n\nSystematically go through the functions of graph and generic_graph and see which ones, such as add_vertex, need to be overridden in the bipartite graph class so that everything makes sense. Right now, you can add an edge so that the bipartite graph is no longer bipartite.\n\n1. add to\u00a0`__cmp__`\u00a0to distinguish Bipartite from other graphs\n2. loops - this should always be false for bipartite, right? (other functions with \"loops\" in the name)\n3. density - should this reflect \"bipartite density\"?\n4. clear - left & right too?\n5. add left_vertices and right_vertices?\n6. adjacency_matrix - should this order the vertices a certain way?\n7. add_cycle\n8. add_path\n9. add a function \"bipartite_subgraph\" to preserve class?\n10. bipartite_color, bipartite_sets, is_bipartite\n\nSee discussion [https://groups.google.com/g/sage-devel/c/yU6nu89M4jU](https://groups.google.com/g/sage-devel/c/yU6nu89M4jU)\n\n\n**Open tickets**\n- #8744 Improve add_edge in `BipartiteGraph` to make it independent from the current coloring\n- #33255 equal hashes for non-isomorphic bipartite graphs with edge labels\n- #33365 missing interface for nauty-genbg (generating bipartite graphs with given bipartition)\n\n**Fixed issues**\n- #8329 copy\n- #8330 `add_vertex`, `add_vertices`\n- #8331 `BipartiteGraph` constructor does not create partitions for dict inputs\n- #8421 Change `BipartiteGraph` .left and .right to sets\n- #8425 `BipartiteGraph` `add_edge` allows bipartite property to be violated\n- #8640 add `BipartiteGraph` to the documentation\n- #10356 bipartite graph doesn't label a vertex when showing it\n- #10958 `BipartiteGraph` constructor without `*args` ignores `**kwds`\n- #10959 `BipartiteGraph` adding edges between new nodes ignores partition\n- #12155 bug when taking complement of bipartite graph\n- #12376 `BipartiteGraph` complement\n- #22559 matchings in `BipartiteGraph`\n- #23265 unify behavior of bipartite matchings on labels and multiedges\n- #23275 defect: bipartite graphs should not accept loops\n- #25065 partition input is ignored when casting `DiGraph` as `BipartiteGraph`\n- #25985 bipartite graph `project_right()` projects left\n- #25988 bug in vertex cover for `BipartiteGraph`\n- #26515 clean `bipartite_graph.py`\n- #28198 add method `is_bipartite` to `BipartiteGraph`\n- #28897 `BipartiteGraph` blindly trusts generic graphs\n- #31313 memory leak in `bipartite_graph` (and so in `generalised_quadrangle_with_spread`)\n- #33246 `canonical_label` returns incorrect partite sets\n- #33249 `BipartiteGraph()` silently ignores given 'partition' argument\n- #33260 Fix bug in `.perfect_matchings()` for `BipartiteGraph` and ensure that the output is consistent with the partite sets of a given bipartite graph\n- #33261 .complement() treats bipartite graphs as generic\n- #33366 `BipartiteGraph()` fails to create graph from `graph6` string\n- #33387 `BipartiteGraph.reduced_adjacency_matrix`: accept keyword arguments for matrix constructor\n\n**Considered invalid or duplicate**\n- #8350 `BipartiteGraph` override `add_vertex()` and `add_vertices()`\n- #10068 raising exceptions in `BipartiteGraph` instead of using unreliable methods\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1941\n\n",
     "created_at": "2008-01-26T20:11:04Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "Finish bipartite graph implementation",
+    "title": "Meta ticket: Finish bipartite graph implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1941",
     "user": "https://github.com/rlmill"
@@ -21,6 +20,59 @@ Assignee: @rlmill
 CC:  brunellus @maxale @tscrim
 
 Systematically go through the functions of graph and generic_graph and see which ones, such as add_vertex, need to be overridden in the bipartite graph class so that everything makes sense. Right now, you can add an edge so that the bipartite graph is no longer bipartite.
+
+1. add to `__cmp__` to distinguish Bipartite from other graphs
+2. loops - this should always be false for bipartite, right? (other functions with "loops" in the name)
+3. density - should this reflect "bipartite density"?
+4. clear - left & right too?
+5. add left_vertices and right_vertices?
+6. adjacency_matrix - should this order the vertices a certain way?
+7. add_cycle
+8. add_path
+9. add a function "bipartite_subgraph" to preserve class?
+10. bipartite_color, bipartite_sets, is_bipartite
+
+See discussion [https://groups.google.com/g/sage-devel/c/yU6nu89M4jU](https://groups.google.com/g/sage-devel/c/yU6nu89M4jU)
+
+
+**Open tickets**
+- #8744 Improve add_edge in `BipartiteGraph` to make it independent from the current coloring
+- #33255 equal hashes for non-isomorphic bipartite graphs with edge labels
+- #33365 missing interface for nauty-genbg (generating bipartite graphs with given bipartition)
+
+**Fixed issues**
+- #8329 copy
+- #8330 `add_vertex`, `add_vertices`
+- #8331 `BipartiteGraph` constructor does not create partitions for dict inputs
+- #8421 Change `BipartiteGraph` .left and .right to sets
+- #8425 `BipartiteGraph` `add_edge` allows bipartite property to be violated
+- #8640 add `BipartiteGraph` to the documentation
+- #10356 bipartite graph doesn't label a vertex when showing it
+- #10958 `BipartiteGraph` constructor without `*args` ignores `**kwds`
+- #10959 `BipartiteGraph` adding edges between new nodes ignores partition
+- #12155 bug when taking complement of bipartite graph
+- #12376 `BipartiteGraph` complement
+- #22559 matchings in `BipartiteGraph`
+- #23265 unify behavior of bipartite matchings on labels and multiedges
+- #23275 defect: bipartite graphs should not accept loops
+- #25065 partition input is ignored when casting `DiGraph` as `BipartiteGraph`
+- #25985 bipartite graph `project_right()` projects left
+- #25988 bug in vertex cover for `BipartiteGraph`
+- #26515 clean `bipartite_graph.py`
+- #28198 add method `is_bipartite` to `BipartiteGraph`
+- #28897 `BipartiteGraph` blindly trusts generic graphs
+- #31313 memory leak in `bipartite_graph` (and so in `generalised_quadrangle_with_spread`)
+- #33246 `canonical_label` returns incorrect partite sets
+- #33249 `BipartiteGraph()` silently ignores given 'partition' argument
+- #33260 Fix bug in `.perfect_matchings()` for `BipartiteGraph` and ensure that the output is consistent with the partite sets of a given bipartite graph
+- #33261 .complement() treats bipartite graphs as generic
+- #33366 `BipartiteGraph()` fails to create graph from `graph6` string
+- #33387 `BipartiteGraph.reduced_adjacency_matrix`: accept keyword arguments for matrix constructor
+
+**Considered invalid or duplicate**
+- #8350 `BipartiteGraph` override `add_vertex()` and `add_vertices()`
+- #10068 raising exceptions in `BipartiteGraph` instead of using unreliable methods
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1941
 

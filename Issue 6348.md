@@ -4,6 +4,7 @@ archive/issues_006348.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @maxthemouse\n\nKeywords: gap\n\nFrom an email:\n\n> I think we can upgrade gap to 4.12 now too, since I worked around \n> the problem we had before with 4.12 on itanium.\n> William\n\n\nBackground: Some months ago, we upgraded from gap 4.4.10 to gap 4.4.12 (gap 4.4.11 was skipped due to some technical problems). This\ncaused some docstrings to break, since some of gap's print methods were changed.\n\nThe patch at \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.12.p0.spkg\nwill also break some docstrings. However, it applies fine (using sage -f) to sage 4.0.2.rc1. \n\nA patch fixing the breaks will be posted later.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6348\n\n",
+    "closed_at": "2010-02-02T07:37:02Z",
     "created_at": "2009-06-17T15:40:44Z",
     "labels": [
         "component: group theory",

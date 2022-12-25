@@ -1,16 +1,17 @@
-# Issue 3226: add 64 bit OSX build support for gfan
+# Issue 3226: [with spkg, positive review] add 64 bit OSX build support for gfan
 
 archive/issues_003226.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3226\n\n",
+    "closed_at": "2008-05-18T23:55:46Z",
     "created_at": "2008-05-16T19:47:43Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support for gfan",
+    "title": "[with spkg, positive review] add 64 bit OSX build support for gfan",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3226",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

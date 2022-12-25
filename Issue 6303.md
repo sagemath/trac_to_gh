@@ -1,9 +1,10 @@
-# Issue 6303: sage-4.0.2.rc0 test failure
+# Issue 6303: [with second patch, positive review] sage-4.0.2.rc0 test failure
 
 archive/issues_006303.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nBuilt fine, 2 test failyres on 32-bit Suse:  the singular.pyx issue\nalready reported, and\n\n**********************************************************************\nFile \"/local/jec/sage-4.0.2.rc0/devel/sage/sage/rings/number_field/number_field_element.pyx\",\nline 2092:\n   sage: [L(6).valuation(P) for P in L.primes_above(6)]\nExpected:\n   [2, 2, 4]\nGot:\n   [4, 2, 2]\n**********************************************************************\n\nThat is on old issue: L.primes_above(6) tries to sort the primes but\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6303\n\n",
+    "closed_at": "2009-06-17T23:55:45Z",
     "created_at": "2009-06-15T17:04:45Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_006303.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "sage-4.0.2.rc0 test failure",
+    "title": "[with second patch, positive review] sage-4.0.2.rc0 test failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6303",
     "user": "https://github.com/williamstein"

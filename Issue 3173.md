@@ -1,16 +1,17 @@
-# Issue 3173: add 64 bit OSX build support to eclib
+# Issue 3173: [with spkg, with positive review] add 64 bit OSX build support to eclib
 
 archive/issues_003173.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nIssue created by migration from https://trac.sagemath.org/ticket/3173\n\n",
+    "closed_at": "2008-06-08T22:27:26Z",
     "created_at": "2008-05-13T00:22:47Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "add 64 bit OSX build support to eclib",
+    "title": "[with spkg, with positive review] add 64 bit OSX build support to eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3173",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_007612.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nDepends on #3619.\n\nAdd the new configuration setting to the server configuration (as a form of documentation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7612\n\n",
+    "closed_at": "2009-12-06T11:50:34Z",
     "created_at": "2009-12-06T11:48:53Z",
     "labels": [
         "component: notebook",

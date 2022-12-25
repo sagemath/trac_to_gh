@@ -1,16 +1,17 @@
-# Issue 2374: sage-ptest must run in $SAGE_ROOT
+# Issue 2374: [with patch, positive review] sage-ptest must run in $SAGE_ROOT
 
 archive/issues_002374.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nsage-ptest only works from $SAGE_ROOT\n\nIssue created by migration from https://trac.sagemath.org/ticket/2374\n\n",
+    "closed_at": "2008-03-10T07:20:47Z",
     "created_at": "2008-03-03T15:59:56Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "sage-ptest must run in $SAGE_ROOT",
+    "title": "[with patch, positive review] sage-ptest must run in $SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2374",
     "user": "https://github.com/garyfurnish"

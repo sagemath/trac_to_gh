@@ -4,6 +4,7 @@ archive/issues_000658.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n$ magma\nMagma V2.13-5     Fri Sep 14 2007 17:16:36 on sage     [Seed = 2401430993]\nType ? for help.  Type <Ctrl>-D to quit.\n>\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/658\n\n",
+    "closed_at": "2008-08-23T20:54:30Z",
     "created_at": "2007-09-15T00:22:37Z",
     "labels": [
         "component: basic arithmetic"

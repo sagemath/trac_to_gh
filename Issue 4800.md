@@ -4,6 +4,7 @@ archive/issues_004800.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4800\n\n",
+    "closed_at": "2008-12-15T17:58:27Z",
     "created_at": "2008-12-15T06:00:40Z",
     "labels": [
         "component: graph theory",

@@ -1,9 +1,10 @@
-# Issue 1489: serious bug in calculus maxima parsing
+# Issue 1489: [with patch, with positive review] serious bug in calculus maxima parsing
 
 archive/issues_001489.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\n\nOn Dec 13, 2007 9:53 AM, Matthias Hillenbrand <mailanhilli@googlemail.com> wrote:\n> \n> Hello,\n> \n> doing my first steps with SAGE I have a problem dealing with small\n> numbers like 2e-6. Here is a small example:\n> \n> k=var('k')\n> a0=2e-6\n> a1=12\n> b=sqrt(a1+a0*k)\n> show(b)\n> \n> With this parameters I don't get a result but have to interrupt the\n> computation. If I change a0 to a0=2e-2, the computation only needs one\n> second.\n> \n> Am I doing something wrong?\n> \n\nNo, this is a bug in this part of Sage itself in calculus.py.  Many many thanks\nfor finding this (it will be fixed in the next Sage release, which is planned\nfor Saturday). \n\nStarting at Line 6146:\n    #replace all instances of scientific notation\n    #with regular notation\n    search = sci_not.search(s)\n    while not search is None:\n        (start, end) = search.span()\n        s = s.replace(s[start:end], str(RR(s[start:end])))\n        search = sci_not.search(s)\n\nI think this bug was caused by some recent changes in how\nreal number printing works in Sage.  In any case,\nI'm glad you found the bug, which I'm sure we will easily be\nable to fix.   \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1489\n\n",
+    "closed_at": "2007-12-14T05:11:50Z",
     "created_at": "2007-12-13T18:27:09Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_001489.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "serious bug in calculus maxima parsing",
+    "title": "[with patch, with positive review] serious bug in calculus maxima parsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1489",
     "user": "https://github.com/williamstein"

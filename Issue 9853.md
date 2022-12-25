@@ -3,7 +3,8 @@
 archive/issues_009853.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIn order to finish Ticket #9808 (http://trac.sagemath.org/sage_trac/ticket/9808) there have to be a small patch applied to networks\n\nIssue created by migration from https://trac.sagemath.org/ticket/9854\n\n",
+    "body": "Assignee: tbd\n\nIn order to finish Ticket #9808 there have to be a small patch applied to networkx.\n\nA small change has to be done in convert.py, namely \n\n```\nnumpy.core.defmatrix\n```\nchanges to\n\n```\nnumpy.matrixlib.defmatrix\n```\n(see the diff for details)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9854\n\n",
+    "closed_at": "2010-09-05T08:47:45Z",
     "created_at": "2010-09-04T00:11:18Z",
     "labels": [
         "component: packages: standard"
@@ -17,7 +18,19 @@ archive/issues_009853.json:
 ```
 Assignee: tbd
 
-In order to finish Ticket #9808 (http://trac.sagemath.org/sage_trac/ticket/9808) there have to be a small patch applied to networks
+In order to finish Ticket #9808 there have to be a small patch applied to networkx.
+
+A small change has to be done in convert.py, namely 
+
+```
+numpy.core.defmatrix
+```
+changes to
+
+```
+numpy.matrixlib.defmatrix
+```
+(see the diff for details)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9854
 

@@ -3,7 +3,8 @@
 archive/issues_008901.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @sdenton4\n\nKeywords: integer, vector\n\nIntegerVectors() seems to only include vectors with positive integer entries:\n\n```\nsage: [-1,4] in IntegerVectors()\nFalse\n```\n\nCan the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?\n\nThanks,\nEva\n\nIssue created by migration from https://trac.sagemath.org/ticket/8901\n\n",
+    "body": "Assignee: ecurry\n\nCC:  @sdenton4\n\nKeywords: integer, vector, days38\n\nIntegerVectors() seems to only include vectors with positive integer entries:\n\n```\nsage: [-1,4] in IntegerVectors()\nFalse\n```\n\nCan the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?\n\nThanks,\nEva\n\nIssue created by migration from https://trac.sagemath.org/ticket/8901\n\n",
+    "closed_at": "2012-05-23T21:31:16Z",
     "created_at": "2010-05-06T01:14:18Z",
     "labels": [
         "component: combinatorics",
@@ -17,11 +18,11 @@ archive/issues_008901.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ecurry"
 }
 ```
-Assignee: sage-combinat
+Assignee: ecurry
 
 CC:  @sdenton4
 
-Keywords: integer, vector
+Keywords: integer, vector, days38
 
 IntegerVectors() seems to only include vectors with positive integer entries:
 

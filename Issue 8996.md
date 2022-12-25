@@ -4,6 +4,7 @@ archive/issues_008996.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nIn http://groups.google.com/group/sage-support/t/2acd499a566efce1 a user had troubles because his username is his email address and the `@` character messed things up. \n\nWe should either allow `@` (and similar non-alphanumeric) characters and make things work properly with them, or explicitly disallow them. Note that right now (4.4.1), http://sagenb.org/register says that `@` is allowed in usernames!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8996\n\n",
+    "closed_at": "2010-05-20T02:47:57Z",
     "created_at": "2010-05-19T23:58:30Z",
     "labels": [
         "component: notebook",

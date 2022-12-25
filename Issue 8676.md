@@ -3,7 +3,8 @@
 archive/issues_008676.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAs the subject says. Also make sure to cross-reference the DFS and BFS of C graph and generic graph implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8676\n\n",
+    "body": "Assignee: mvngu\n\nAs the subject says. Also make sure to cross-reference the DFS and BFS of C graph and generic graph implementations.\n\n**Prerequisite:** #8513\n\nIssue created by migration from https://trac.sagemath.org/ticket/8676\n\n",
+    "closed_at": "2010-04-16T18:46:39Z",
     "created_at": "2010-04-12T06:51:44Z",
     "labels": [
         "component: documentation"
@@ -18,6 +19,8 @@ archive/issues_008676.json:
 Assignee: mvngu
 
 As the subject says. Also make sure to cross-reference the DFS and BFS of C graph and generic graph implementations.
+
+**Prerequisite:** #8513
 
 Issue created by migration from https://trac.sagemath.org/ticket/8676
 

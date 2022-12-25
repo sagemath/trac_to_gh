@@ -1,16 +1,17 @@
-# Issue 6325: optional doctest failure -- linear algebra constructions.rst
+# Issue 6325: [with patch, positive review] optional doctest failure -- linear algebra constructions.rst
 
 archive/issues_006325.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/linear_algebra.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/linear_algebra.rst\", line 461:\n    sage: octave.solve_linear_system(A,b)    # requires optional octave\nExpected:\n    [-0.33333299999999999, 0.66666700000000001, -3.5236600000000002e-18]\nGot:\n    [-0.33333299999999999, 0.66666700000000001, 0]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6325\n\n",
+    "closed_at": "2009-09-09T11:13:53Z",
     "created_at": "2009-06-16T14:56:17Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "optional doctest failure -- linear algebra constructions.rst",
+    "title": "[with patch, positive review] optional doctest failure -- linear algebra constructions.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6325",
     "user": "https://github.com/williamstein"

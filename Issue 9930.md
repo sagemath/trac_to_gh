@@ -4,6 +4,7 @@ archive/issues_009930.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve point pari\n\nCurrently, points on elliptic curves cannot automatically be converted to PARI:\n\n```\nsage: E = EllipticCurve([0,0,0,3,0])\nsage: P = E.point([1,2]); P\n(1 : 2 : 1)\nsage: pari(P)\nTraceback (most recent call last):\n...\nRuntimeError: evaluating PARI string\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9931\n\n",
+    "closed_at": "2010-09-29T04:24:46Z",
     "created_at": "2010-09-17T09:50:24Z",
     "labels": [
         "component: elliptic curves",

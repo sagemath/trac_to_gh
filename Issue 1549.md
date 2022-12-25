@@ -1,16 +1,17 @@
-# Issue 1549: Sage 2.9: fix optional doctests in tut.tex
+# Issue 1549: [with patches, positive review] Sage 2.9: fix optional doctests in tut.tex
 
 archive/issues_001549.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nFile \"tut.py\", line 3390:\n    : G\nExpected:\n    Group([ (1,2,3)(4,5), (3,4) ])\nGot:\n    Group( [ (1,2,3)(4,5), (3,4) ] )\n**********************************************************************\nFile \"tut.py\", line 3392:\n    : G.Center()\nExpected:\n    Group(())\nGot:\n    Group( () ) \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1549\n\n",
+    "closed_at": "2008-04-28T00:08:06Z",
     "created_at": "2007-12-17T13:37:02Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Sage 2.9: fix optional doctests in tut.tex",
+    "title": "[with patches, positive review] Sage 2.9: fix optional doctests in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1549",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

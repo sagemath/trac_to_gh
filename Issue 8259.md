@@ -3,7 +3,8 @@
 archive/issues_008259.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nCurrently a function that converts a symmetric polynomial into the monomial basis is missing in sage. Jason Bandlow wrote a first version which should be integrated into sage:\n\ndef toSF(f):\n    \"\"\" Input is a symmetric polynomial in a polynomial ring in finitely\n    many variables.  Output is a symmetric function in the monomial\n    basis of the ring of symmetric functions over the same base ring.\n    \"\"\"\n    X = f.parent().gens()\n    n = f.parent().ngens()\n    SF = SymmetricFunctions(f.base_ring())\n    m = SF.monomial()\n    out = m(0)\n    while f != 0:\n        lt = f.lt()\n        c = lt.monomial_coefficient(lt)\n        p = Partition(lt.exponents()[0])\n        f += -c*m(p).expand(n,X)\n        out += c*m(p)\n    return out\n\nIssue created by migration from https://trac.sagemath.org/ticket/8259\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nCurrently a function that converts a symmetric polynomial into a symmetric function is missing in sage.\n\n-Added method to convert symmetric polynomial to a symmetric function in monomial basis\n\n-Added shortcut to symmetric functions\n\n-Small fix in crystals\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8259\n\n",
+    "closed_at": "2010-03-02T21:27:28Z",
     "created_at": "2010-02-14T00:22:35Z",
     "labels": [
         "component: combinatorics"
@@ -21,25 +22,14 @@ CC:  @jbandlow sage-combinat
 
 Keywords: symmetric functions
 
-Currently a function that converts a symmetric polynomial into the monomial basis is missing in sage. Jason Bandlow wrote a first version which should be integrated into sage:
+Currently a function that converts a symmetric polynomial into a symmetric function is missing in sage.
 
-def toSF(f):
-    """ Input is a symmetric polynomial in a polynomial ring in finitely
-    many variables.  Output is a symmetric function in the monomial
-    basis of the ring of symmetric functions over the same base ring.
-    """
-    X = f.parent().gens()
-    n = f.parent().ngens()
-    SF = SymmetricFunctions(f.base_ring())
-    m = SF.monomial()
-    out = m(0)
-    while f != 0:
-        lt = f.lt()
-        c = lt.monomial_coefficient(lt)
-        p = Partition(lt.exponents()[0])
-        f += -c*m(p).expand(n,X)
-        out += c*m(p)
-    return out
+-Added method to convert symmetric polynomial to a symmetric function in monomial basis
+
+-Added shortcut to symmetric functions
+
+-Small fix in crystals
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8259
 

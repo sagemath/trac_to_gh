@@ -4,6 +4,7 @@ archive/issues_007094.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI doctested sage-4.1.2.rc1 and some doctest rudely leaves the file \"my_general_distribution_plot.png\" in $SAGE_ROOT.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7094\n\n",
+    "closed_at": "2009-10-02T17:26:05Z",
     "created_at": "2009-10-01T20:02:41Z",
     "labels": [
         "component: doctest coverage",

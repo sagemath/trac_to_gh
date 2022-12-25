@@ -1,16 +1,17 @@
-# Issue 3507: fix major efficiency/performance bug in sparse linear algebra matrix multiply
+# Issue 3507: [with patch, with positive review] fix major efficiency/performance bug in sparse linear algebra matrix multiply
 
 archive/issues_003507.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\na * b for a, b sparse matrices over QQ was VASTLY too slow because of a stupid bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3507\n\n",
+    "closed_at": "2008-06-25T02:47:25Z",
     "created_at": "2008-06-25T01:46:19Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "fix major efficiency/performance bug in sparse linear algebra matrix multiply",
+    "title": "[with patch, with positive review] fix major efficiency/performance bug in sparse linear algebra matrix multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3507",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 4439: Sage 3.2.a2: make three doctests from #788 random again
+# Issue 4439: [with patch, with positive review] Sage 3.2.a2: make three doctests from #788 random again
 
 archive/issues_004439.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe following tests should be made random again:\n\n```\n(make #random again)\nsage -t  devel/sage/sage/matrix/matrix_complex_double_dense.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-menas/tmp/matrix_complex_double_dense.py\", line 899:\n    sage: U*S*V.transpose()\nExpected:\n    [...e-1...                1.0]\n    [               2.0                3.0]\n    [               4.0                5.0]\nGot:\n    [  0 1.0]\n    [2.0 3.0]\n    [4.0 5.0]\n**********************************************************************\n\n(make random again)\nsage -t  devel/sage/sage/matrix/matrix_real_double_dense.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-menas/tmp/matrix_real_double_dense.py\", line 786:\n    sage: U*S*V.transpose()\nExpected:\n    [...e-1...               1.0               2.0]\n    [              3.0               4.0               5.0]\nGot:\n    [0.0 1.0 2.0]\n    [3.0 4.0 5.0]\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-menas/tmp/matrix_real_double_dense.py\", line 794:\n    sage: U*S*V.transpose()\nExpected:\n    [...e-1...                1.0]\n    [               2.0                3.0]\n    [               4.0                5.0]\nGot:\n    [0.0 1.0]\n    [2.0 3.0]\n    [4.0 5.0]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4439\n\n",
+    "closed_at": "2008-11-05T23:14:25Z",
     "created_at": "2008-11-04T13:57:11Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.a2: make three doctests from #788 random again",
+    "title": "[with patch, with positive review] Sage 3.2.a2: make three doctests from #788 random again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4439",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

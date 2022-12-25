@@ -1,15 +1,16 @@
-# Issue 6350: [with spkg, needs review] update M4RI to newest upstream release (20090617)
+# Issue 6350: [with spkg, with positive review] update M4RI to newest upstream release (20090617)
 
 archive/issues_006350.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @craigcitro\n\nKeywords: m4ri\n\nWhile fixing a few issues for OSX PPC and IA64 (Iras) I fixed L1 cache size detection for OSX x86 too. Thus, now M4RI uses the correct L1 cache size on OSX x86 machines.\n\nThe SPKG is at:\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20090617.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6350\n\n",
+    "closed_at": "2009-06-17T23:56:37Z",
     "created_at": "2009-06-17T22:28:03Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with spkg, needs review] update M4RI to newest upstream release (20090617)",
+    "title": "[with spkg, with positive review] update M4RI to newest upstream release (20090617)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6350",
     "user": "https://github.com/malb"

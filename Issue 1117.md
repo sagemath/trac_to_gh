@@ -4,6 +4,7 @@ archive/issues_001117.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nFixes a typo in 1088.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1117\n\n",
+    "closed_at": "2007-11-06T22:44:15Z",
     "created_at": "2007-11-06T22:26:28Z",
     "labels": [
         "component: combinatorics",

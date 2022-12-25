@@ -4,6 +4,7 @@ archive/issues_001787.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee\n\nhttp://math-atlas.sourceforge.net/errata.html#RMAAT\n\nfor the required fixes.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1787\n\n",
+    "closed_at": "2008-01-22T07:11:25Z",
     "created_at": "2008-01-15T20:06:19Z",
     "labels": [
         "component: packages: standard",

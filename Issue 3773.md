@@ -1,15 +1,16 @@
-# Issue 3773: hidden markov models -- part 2
+# Issue 3773: [with patch, positive review] hidden markov models -- part 2
 
 archive/issues_003773.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nAdd more capabilities involving HMM's.  This is a continuation of #3726.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3773\n\n",
+    "closed_at": "2008-08-19T02:04:24Z",
     "created_at": "2008-08-05T01:05:21Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "hidden markov models -- part 2",
+    "title": "[with patch, positive review] hidden markov models -- part 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3773",
     "user": "https://github.com/williamstein"

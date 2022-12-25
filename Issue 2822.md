@@ -1,9 +1,10 @@
-# Issue 2822: Invalid read in libgroebner.so [picked up by valgrinding catalogue.py]
+# Issue 2822: [with spkg, positive review] Invalid read in libgroebner.so [picked up by valgrinding catalogue.py]
 
 archive/issues_002822.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nValgrind says:\n\n```\n==28038== Invalid read of size 4\n==28038==    at 0x152C3A90: (within /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/libgroebner.so)\n==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)\n==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd\n```\nThis seems to be cause by either the new PolyBoRi.spkg or its interface.\n\nThe component for this bug is debatable.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2822\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @burcin polybori\n\nKeywords: polybori\n\nValgrind says:\n\n```\n==28038== Invalid read of size 4\n==28038==    at 0x152C3A90: (within /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/libgroebner.so)\n==28038==    by 0x4FEEB8C: exit (in /lib/libc-2.3.6.so)\n==28038==  Address 0x5566450 is not stack'd, malloc'd or (recently) free'd\n```\nThis seems to be cause by either the new PolyBoRi.spkg or its interface.\n\nThe component for this bug is debatable.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2822\n\n",
+    "closed_at": "2008-04-11T22:09:01Z",
     "created_at": "2008-04-06T06:26:30Z",
     "labels": [
         "component: commutative algebra",
@@ -11,15 +12,17 @@ archive/issues_002822.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Invalid read in libgroebner.so [picked up by valgrinding catalogue.py]",
+    "title": "[with spkg, positive review] Invalid read in libgroebner.so [picked up by valgrinding catalogue.py]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2822",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @malb
+Assignee: mabshoff
 
 CC:  @burcin polybori
+
+Keywords: polybori
 
 Valgrind says:
 

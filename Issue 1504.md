@@ -3,7 +3,8 @@
 archive/issues_001504.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1504\n\n",
+    "body": "Assignee: @williamstein\n\nThis is completely wrong / uninteresting.  never mind.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1504\n\n",
+    "closed_at": "2007-12-14T07:00:29Z",
     "created_at": "2007-12-14T06:55:10Z",
     "labels": [
         "component: graphics",
@@ -18,7 +19,7 @@ archive/issues_001504.json:
 ```
 Assignee: @williamstein
 
-
+This is completely wrong / uninteresting.  never mind.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1504
 

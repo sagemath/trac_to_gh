@@ -1,9 +1,10 @@
-# Issue 3027: [with patches; needs review] Debian lintian fixes
+# Issue 3027: [with patches; posititve review] Debian lintian fixes
 
 archive/issues_003027.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI ran lintian (the Debian packaging error checking tool) on all my packages, and found a bunch of bugs.  I guess the Debian build system is too automated for me to notice these normally.  I've attached a bunch of patches to fix many of these bugs (some others I reported upstream).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3027\n\n",
+    "closed_at": "2008-04-26T02:45:49Z",
     "created_at": "2008-04-26T01:30:09Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003027.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patches; needs review] Debian lintian fixes",
+    "title": "[with patches; posititve review] Debian lintian fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3027",
     "user": "https://github.com/timabbott"

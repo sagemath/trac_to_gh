@@ -1,16 +1,16 @@
-# Issue 9708: mesh= option to plot3d is completely broken?
+# Issue 9708: Jmol options to plot3d are not passed on to show
 
 archive/issues_009708.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman @novoselt @kini @gutow\n\nI tried the plot3d example that involves \"mesh=True\" and it is completely broken.  The plot simply doesn't show a mesh at all.\n\n```\nplot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)\n```\n[This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9708\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @novoselt @kini @gutow\n\nKeywords: plot3d mesh\n\nI tried the plot3d example that involves \"mesh=True\" and it is completely broken.  The plot simply doesn't show a mesh at all.\n\n```\nplot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)\n```\n[This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9708\n\n",
     "created_at": "2010-08-08T00:49:42Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "mesh= option to plot3d is completely broken?",
+    "title": "Jmol options to plot3d are not passed on to show",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9708",
     "user": "https://github.com/williamstein"
@@ -19,6 +19,8 @@ archive/issues_009708.json:
 Assignee: jason, was
 
 CC:  @kcrisman @novoselt @kini @gutow
+
+Keywords: plot3d mesh
 
 I tried the plot3d example that involves "mesh=True" and it is completely broken.  The plot simply doesn't show a mesh at all.
 

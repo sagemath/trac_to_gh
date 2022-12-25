@@ -4,6 +4,7 @@ archive/issues_008934.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nCurrently computing faces of a non-full-dimensional lattice polytopes causes and exception, because when I was implementing support for such polytopes I missed a parameter in one place. The attached little patch fixes it and adds a doctest for the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8934\n\n",
+    "closed_at": "2010-06-06T19:32:28Z",
     "created_at": "2010-05-08T22:11:05Z",
     "labels": [
         "component: geometry",

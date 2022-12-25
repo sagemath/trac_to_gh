@@ -1,16 +1,17 @@
-# Issue 4035: [with patch, needs review] fix optional doctests for multivariate polynomials
+# Issue 4035: [with patch, positive review] fix optional doctests for multivariate polynomials
 
 archive/issues_004035.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4035\n\n",
+    "closed_at": "2008-11-02T16:16:22Z",
     "created_at": "2008-09-01T09:55:46Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] fix optional doctests for multivariate polynomials",
+    "title": "[with patch, positive review] fix optional doctests for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4035",
     "user": "https://github.com/malb"

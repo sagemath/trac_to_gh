@@ -1,16 +1,17 @@
-# Issue 6692: spell-check all modules under sage/crypto
+# Issue 6692: [with patch, positive review] spell-check all modules under sage/crypto
 
 archive/issues_006692.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6692\n\n",
+    "closed_at": "2009-08-12T05:08:02Z",
     "created_at": "2009-08-09T05:45:04Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/crypto",
+    "title": "[with patch, positive review] spell-check all modules under sage/crypto",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6692",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

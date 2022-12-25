@@ -1,16 +1,17 @@
-# Issue 3236: [with patch; needs review] cygwin -- quaddouble -- get it to work with cygwin
+# Issue 3236: [with patch; positive review] cygwin -- quaddouble -- get it to work with cygwin
 
 archive/issues_003236.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHere it is:\n\n   http://sage.math.washington.edu/home/was/cygwin/quaddouble-2.2.p8.spkg\n\nI also fixed up the internals of the spkg some, etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3236\n\n",
+    "closed_at": "2008-05-18T13:08:37Z",
     "created_at": "2008-05-17T05:39:12Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- quaddouble -- get it to work with cygwin",
+    "title": "[with patch; positive review] cygwin -- quaddouble -- get it to work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3236",
     "user": "https://github.com/williamstein"

@@ -3,7 +3,8 @@
 archive/issues_008218.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: finite fields\n\nMoves all of the finite field files, the integer_mod files and the base classes from sage.rings.ring and sage.structure.element into their own folder in sage.rings.  In preparation for more work on finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8218\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @robertwb\n\nKeywords: finite fields\n\nMoves all of the finite field files, the integer_mod files and the base classes from sage.rings.ring and sage.structure.element into their own folder in sage.rings.  In preparation for more work on finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8218\n\n",
+    "closed_at": "2010-04-15T05:18:00Z",
     "created_at": "2010-02-09T03:39:15Z",
     "labels": [
         "component: algebra"
@@ -15,7 +16,7 @@ archive/issues_008218.json:
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @aghitza
+Assignee: @loefflerd
 
 CC:  @robertwb
 

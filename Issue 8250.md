@@ -4,6 +4,7 @@ archive/issues_008250.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: ClassCall, descriptor, __classget__\n\nFrom the documentation:\n\n(using this patch) we show how to implement a nested class Foo.Bar\nwith a binding behavior, as if it was a method of Foo: namely for\n``foo`` an instance of ``Foo``, calling ``foo.Bar()`` is equivalent to\n``Foo.Bar(foo)``::\n\n```\n            sage: import functools\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo:\n            ...       class Bar(object):\n            ...           __metaclass__ = ClasscallMetaclass\n            ...           @staticmethod\n            ...           def __classget__(cls, instance, owner):\n            ...               print \"calling __classget__\"\n            ...               if instance is None:\n            ...                   return cls\n            ...               return functools.partial(cls, instance)\n            ...           def __init__(self, instance):\n            ...               self.instance = instance\n            sage: foo = Foo()\n            sage: bar = foo.Bar()\n            calling __classget__\n            sage: bar.instance == foo\n            True\n```\n\nThis will be used by the upcoming improvements to the functorial constructions in categories\n\nIssue created by migration from https://trac.sagemath.org/ticket/8250\n\n",
+    "closed_at": "2010-02-15T03:40:37Z",
     "created_at": "2010-02-12T15:12:34Z",
     "labels": [
         "component: categories"

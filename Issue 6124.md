@@ -3,10 +3,11 @@
 archive/issues_006124.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: p-adic\n\nA bug in the implementation of p-adic groups.\n\nsage: K.<a> = Qp(2).extension(x^3 + x^2+1)\nsage: K.galois_group()\n\n---\nImportError                               Traceback (most recent call last)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/23278/_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/unramified_extension_generic.pyc in galois_group(self)\n     96         ## doing this.\n     97         ##\n---> 98         from sage.groups.perm_gps.permgroup import CyclicPermutationGroup\n     99         return CyclicPermutationGroup(self.modulus().degree())\n    100 \n\nImportError: cannot import name CyclicPermutationGroup\n\n\nWhile, CyclicPermutationGroup does work fine on my machine.\nsage: G=CyclicPermutationGroup(2)\nsage: G.list()\n[(), (1,2)]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6124\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: p-adic\n\nA bug in the implementation of p-adic groups.\n\n```\nsage: K.<a> = Qp(2).extension(x^3 + x^2+1)\nsage: K.galois_group()\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/23278/_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/unramified_extension_generic.pyc in galois_group(self)\n     96         ## doing this.\n     97         ##\n---> 98         from sage.groups.perm_gps.permgroup import CyclicPermutationGroup\n     99         return CyclicPermutationGroup(self.modulus().degree())\n    100 \n\nImportError: cannot import name CyclicPermutationGroup\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6124\n\n",
+    "closed_at": "2011-11-26T13:05:13Z",
     "created_at": "2009-05-24T14:41:03Z",
     "labels": [
-        "component: number theory",
+        "component: padics",
         "minor",
         "bug"
     ],
@@ -17,16 +18,16 @@ archive/issues_006124.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jlefebvre"
 }
 ```
-Assignee: @williamstein
+Assignee: @roed314
 
 Keywords: p-adic
 
 A bug in the implementation of p-adic groups.
 
+```
 sage: K.<a> = Qp(2).extension(x^3 + x^2+1)
 sage: K.galois_group()
-
----
+---------------------------------------------------------------------------
 ImportError                               Traceback (most recent call last)
 
 /Users/jeromelefebvre/.sage/temp/Jerome.local/23278/_Users_jeromelefebvre__sage_init_sage_0.py in <module>()
@@ -39,12 +40,7 @@ ImportError                               Traceback (most recent call last)
     100 
 
 ImportError: cannot import name CyclicPermutationGroup
-
-
-While, CyclicPermutationGroup does work fine on my machine.
-sage: G=CyclicPermutationGroup(2)
-sage: G.list()
-[(), (1,2)]
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6124
 

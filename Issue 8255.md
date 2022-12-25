@@ -4,6 +4,7 @@ archive/issues_008255.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe SageTeX spkg shipped in 4.3.2 has a slightly broken spkg-check: if LaTeX is present, but the tkz-berge.sty file isn't, the example file included with SageTeX cannot be typeset and spkg-check fails. Since I don't assume the user has LaTeX installed, I shouldn't assume that tkz-berge.sty is either.\n\nThere are also some documentation fixes, including notably an \"egrep\" which should be \"egrep -v\"!\n\nFinally, the license for the documentation is now CC BY-SA; I've dropped the noncommercial clause.\n\nThe new spkg is version 2.2.3.p0 in http://sage.math.washington.edu/home/drake/code/sage/st/ . The last version of the spkg is available in the same place, for ease of reviewing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8255\n\n",
+    "closed_at": "2010-03-03T15:05:58Z",
     "created_at": "2010-02-13T13:42:58Z",
     "labels": [
         "component: spkg-check",

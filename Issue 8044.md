@@ -1,16 +1,16 @@
-# Issue 8044: Categories for finite (permutation) groups
+# Issue 8044: Categories for finite/permutation/symmetric groups
 
 archive/issues_008044.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat vengoroso@gmail.com\n\nKeywords: Finite groups, permutation groups\n\nThis patch:\n\n- Introduces two new categories, FiniteGroups and FinitePermutationGroups\n- Deprecates the class sage.groups.group.FiniteGroup\n  (content moved to the FiniteGroups category; this is essentially\n  the cayley_graph method)\n- Puts all permutation groups and most other finite groups in the\n  corresponding categories\n- As a result, this standardizes the interface of those groups\n  (cardinality, one, ...), and reveals lots of failures in the\n  completely undocumented PariGroup (category not set properly yet)\n- Makes a minor improvement to FiniteEnumeratedSets tests for\n  large finite enumerated sets\n\nIssue created by migration from https://trac.sagemath.org/ticket/8044\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat vengoroso@gmail.com\n\nKeywords: Finite groups, permutation groups, symmetric groups\n\nThis patch:\n\n- Introduces two new categories: FiniteGroups and FinitePermutationGroups\n- As a result, this standardizes the interface of those groups\n  (cardinality, one, ...).\n\n- Puts all pari, permutation, and matrix groups in the corresponding\n  categories. There remains to handle Galois groups in\n  sage/rings/number_field/.\n\n- Deprecates the abstract class sage.groups.group.FiniteGroup.\n  Content moved to the FiniteGroups category (see ``cayley_graph``).\n  It is not used anymore anywhere in Sage's library.\n\n- Merges cayley_graph with that for FiniteSemigroups:\n  - Generalization to any Semigroups with an ``elements`` option\n    (should this be vertices?) to handle large/infinite semigroups\n  - The call:\n        sage: G.cayley_graph(connecting_set = [a,b,c])\n    is deprecated in favor of:\n        sage: G.cayley_graph(generators     = [a,b,c])\n  - The following feature is removed:\n      sage: G.cayley_graph(connecting_set = a)\n  - side = \"right\" is now the default (was \"twosided\" for semigroups).\n  - Removed forcing ``implementation = \"networkx\"`` in the produced graph.\n    Note: this changed the order of the edges, which required fixing\n    a test in sage.graphs.generic_graphs (color_by_label)\n\n- Adds cool examples of Cayley graphs plots, courtesy of Sebastien Labbe\n\n- Provides group_generators defined from gens, as well as\n  semigroup_generators defined from group_generators in the finite\n  and coxeter cases.\n\n- Puts the SymmetricGroup in the FiniteWeylGroups category.\n  Beware: as all Sage's permutation groups, this uses GAP's product\n  convention coming from left-to-right composition of permutations,\n  which can be surprising for combinatorists.\n  Beware: the generators of SymmetricGroup(n) are now its canonical\n  Weyl group generators, namely the elementary transpositions\n- Adds an has_descent method to permutation group elements\n\n- Makes all named permutation groups, as well as GL and SL have\n  UniqueRepresentation,\n\n- Makes more systematic use of TestSuite(...).run()\n- Makes a minor improvement to FiniteEnumeratedSets tests for\n  large finite enumerated sets\n- Strips away some unused imports\n- Updates a couple doctests here and there\n\nFurther debatable changes:\n\n- The underlying set of an alternating or symmetric group is now a\n  tuple. This is safer and helps UniqueRepresentation. However, this\n  could break backward compatibility.  Also, the repr is now of the\n  form SymmetricGroup((1,3,4)) instead of SymmetricGroup([1,3,4]).\n\n- Due to the switch to UniqueRepresentation, with:\n\n       sage: F = GF(3); MS = MatrixSpace(F,2,2)\n       sage: gens = [MS([[0,1],[1,0]]),MS([[1,1],[0,1]])]\n       sage: G = MatrixGroup(gens)\n       sage: H = GL(2,F)\n\n  the following equality test fails:\n\n       sage: H == G\n\tTrue\n\n   Do we really want this feature? If yes, than the equality test\n   inherited from UniqueRepresentation will have to be fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8044\n\n",
+    "closed_at": "2010-02-11T14:45:54Z",
     "created_at": "2010-01-23T10:29:04Z",
     "labels": [
-        "component: group theory",
-        "bug"
+        "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Categories for finite (permutation) groups",
+    "title": "Categories for finite/permutation/symmetric groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8044",
     "user": "https://github.com/nthiery"
@@ -20,21 +20,81 @@ Assignee: @nthiery
 
 CC:  sage-combinat vengoroso@gmail.com
 
-Keywords: Finite groups, permutation groups
+Keywords: Finite groups, permutation groups, symmetric groups
 
 This patch:
 
-- Introduces two new categories, FiniteGroups and FinitePermutationGroups
-- Deprecates the class sage.groups.group.FiniteGroup
-  (content moved to the FiniteGroups category; this is essentially
-  the cayley_graph method)
-- Puts all permutation groups and most other finite groups in the
-  corresponding categories
+- Introduces two new categories: FiniteGroups and FinitePermutationGroups
 - As a result, this standardizes the interface of those groups
-  (cardinality, one, ...), and reveals lots of failures in the
-  completely undocumented PariGroup (category not set properly yet)
+  (cardinality, one, ...).
+
+- Puts all pari, permutation, and matrix groups in the corresponding
+  categories. There remains to handle Galois groups in
+  sage/rings/number_field/.
+
+- Deprecates the abstract class sage.groups.group.FiniteGroup.
+  Content moved to the FiniteGroups category (see ``cayley_graph``).
+  It is not used anymore anywhere in Sage's library.
+
+- Merges cayley_graph with that for FiniteSemigroups:
+  - Generalization to any Semigroups with an ``elements`` option
+    (should this be vertices?) to handle large/infinite semigroups
+  - The call:
+        sage: G.cayley_graph(connecting_set = [a,b,c])
+    is deprecated in favor of:
+        sage: G.cayley_graph(generators     = [a,b,c])
+  - The following feature is removed:
+      sage: G.cayley_graph(connecting_set = a)
+  - side = "right" is now the default (was "twosided" for semigroups).
+  - Removed forcing ``implementation = "networkx"`` in the produced graph.
+    Note: this changed the order of the edges, which required fixing
+    a test in sage.graphs.generic_graphs (color_by_label)
+
+- Adds cool examples of Cayley graphs plots, courtesy of Sebastien Labbe
+
+- Provides group_generators defined from gens, as well as
+  semigroup_generators defined from group_generators in the finite
+  and coxeter cases.
+
+- Puts the SymmetricGroup in the FiniteWeylGroups category.
+  Beware: as all Sage's permutation groups, this uses GAP's product
+  convention coming from left-to-right composition of permutations,
+  which can be surprising for combinatorists.
+  Beware: the generators of SymmetricGroup(n) are now its canonical
+  Weyl group generators, namely the elementary transpositions
+- Adds an has_descent method to permutation group elements
+
+- Makes all named permutation groups, as well as GL and SL have
+  UniqueRepresentation,
+
+- Makes more systematic use of TestSuite(...).run()
 - Makes a minor improvement to FiniteEnumeratedSets tests for
   large finite enumerated sets
+- Strips away some unused imports
+- Updates a couple doctests here and there
+
+Further debatable changes:
+
+- The underlying set of an alternating or symmetric group is now a
+  tuple. This is safer and helps UniqueRepresentation. However, this
+  could break backward compatibility.  Also, the repr is now of the
+  form SymmetricGroup((1,3,4)) instead of SymmetricGroup([1,3,4]).
+
+- Due to the switch to UniqueRepresentation, with:
+
+       sage: F = GF(3); MS = MatrixSpace(F,2,2)
+       sage: gens = [MS([[0,1],[1,0]]),MS([[1,1],[0,1]])]
+       sage: G = MatrixGroup(gens)
+       sage: H = GL(2,F)
+
+  the following equality test fails:
+
+       sage: H == G
+	True
+
+   Do we really want this feature? If yes, than the equality test
+   inherited from UniqueRepresentation will have to be fixed.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8044
 

@@ -4,6 +4,7 @@ archive/issues_006863.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  mtaranes\n\nKeywords: number field modular\n\nThis is related to, but not dependent on, #6829.\n\nCusps over a number field K are elements of `P^1(K)`.  Support for these is to be provided as part of the general implementation of modular symbols and related matters over number fields.\n\nA patch which will be available shortly will supply this implementation, together with related utilities such as testing Gamma_0(N)-equivalence etc.\n\nThis work has been done by Maite Aranes, under the supervision of John Cremona.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6863\n\n",
+    "closed_at": "2010-01-24T02:51:34Z",
     "created_at": "2009-09-02T13:00:01Z",
     "labels": [
         "component: modular forms"

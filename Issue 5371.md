@@ -1,9 +1,10 @@
-# Issue 5371: change autosave defaults
+# Issue 5371: [with patch, positive review] change autosave defaults
 
 archive/issues_005371.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: autosave interval, snapshot\n\nUntil the autosave becomes smarter, the default settings should be changed.  Otherwise the number of snapshots eats up too much space.  In the exchange below, Jan Groenewald likes an autosave interval of 2 hours, which might be a bit long since the fix that deletes redundant snapshots is in.  So I would suggest a max history length of 50, as Jan asked for, and an autosave interval of at least 5 minutes.\n\nOn Mon, Feb 23, 2009 at 12:00 AM, Jan Groenewald <j...`@`aims.ac.za> wrote: \n> PS. I will now be permanently patching user_conf.py to set autosave_interval higher\n> from 3*60 to 120*60 and and max_history_length lower from 500 to 50. It would be\n> great if the defaults here were reconsidered.\n\n\n+1  -- I would be very happy if that change were made officially.\nPlease submit a patch / ticket.\n\nWilliam\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5371\n\n",
+    "closed_at": "2009-06-13T23:20:40Z",
     "created_at": "2009-02-25T13:01:07Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005371.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "change autosave defaults",
+    "title": "[with patch, positive review] change autosave defaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5371",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

@@ -1,16 +1,16 @@
-# Issue 3745: calculus -- bug in solve
+# Issue 3745: calculus -- bugs in solve
 
 archive/issues_003745.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n```\nOn Tue, Jul 29, 2008 at 6:05 PM, jamlatino <medrano.antonio@gmail.com> wrote:\n>\n> While working on the video tutorial for Sage I tried the following\n> equation:\n>\n> (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) - (2*cos(x)*sin(x) -\n> sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\n>\n> if I use find_root in the interval 1,2 I get the following answer:\n> 1.9106332362490561\n>\n> but when I use solve to find the solution I get\n> [x == pi, x == pi/2, x == 0]\n>\n> pi/2 is 1.57, but when I try find_root in the interval 1.5,1.6 it\n> tells me that the equation has no zero in that interval, can someone\n> explain??\n\nThis appears to me to be a bug as pi/2 is not a solution.\nIf you do the following it is pretty clear that the 0's are\nat 0, 1.9..., etc. and not at pi/2:\n\nsage: f = (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) -\n(2*cos(x)*sin(x) - sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\nsage: f(pi/2)\n-1\nsage: f.plot(-1,4)\n\nSage finds the numerical 0's using a numerical root\nfinder (from scipy).\n\nSage finds the exact solutions by calling the computer\nalgebra system Maxima, which indeed strangely claims that pi/2 is a solution:\n\n(%i1) solve((sin(x)-8*cos(x)*sin(x))*(sin(x)^2+cos(x))-(2*cos(x)*sin(x)-sin(x))*(-2*sin(x)^2+2*cos(x)^2-cos(x))=0,\nx);\n\n`solve' is using arc-trig functions to get a solution.\nSome solutions will be lost.\n                                        %pi\n(%o1)                      [x = %pi, x = ---, x = 0]\n                                         2\n\nIt looks like this might be a bug in Maxima's solve function.\n\nThere's not much for me to do besides:\n  * report this to the maxima folks (I've cc'd Robert Dodier\nin this email),\n  * completely rewrite Sage's solve to not use Maxima.\n\nFrom Robert Dodier:\n\n\nYup, that's a bug, all right ... I'll make a bug report.\n\n>    * completely rewrite Sage's solve to not use Maxima.\n\nWell, if you do that, please write it in pure Python so it is easier\nto translate to Lisp.\n\nMaxima's code for solving equations has more than a few bugs,\nand it's not clear what classes of problems it can handle, nor is\nit clear what method is used for each class, and there certainly\nare interesting and useful equations which it just can't handle.\nAll of this motivates a complete rewrite. Not that I'm volunteering;\nnot yet, anyway.\n\nFWIW\n\nRobert Dodier\n```\n\nI think we need to rewrite solve for Sage.  Any volunteers?  It will have to wait until we change to use either \"Gary's symbolics\" or \"Sympy\" for Sage's symbolics, since the current symbolics likely don't support enough to make implementing solve practical.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3745\n\n",
+    "body": "Assignee: @garyfurnish\n\nWe get a \"solution\" from `solve()` that isn't actually a solution:\n\n```\nsage: f(x) = (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) - (2*cos(x)*sin(x) - sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\nsage: solve(f(x), x)\n[x == pi, x == 1/2*pi, x == 0]\nsage: f(pi/2)\n-1\n```\n\nThe following is correct:\n\n```\nsage: solve(f(x).simplify_trig(), x)\n[x == 0, x == pi - arccos(1/3), x == pi]\n```\n\nReduced example (after manually removing the factor `sin(x)`):\n\n```\nsage: g(x) = (1 - 8*cos(x))*(sin(x)^2 + cos(x)) - (2*cos(x) - 1)*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))\nsage: solve(g(x), x)\n[x == pi, x == 1/2*pi]\nsage: g(pi/2)\n-1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3745\n\n",
     "created_at": "2008-07-30T12:45:59Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "calculus -- bug in solve",
+    "title": "calculus -- bugs in solve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3745",
     "user": "https://github.com/williamstein"
@@ -18,80 +18,32 @@ archive/issues_003745.json:
 ```
 Assignee: @garyfurnish
 
+We get a "solution" from `solve()` that isn't actually a solution:
+
 ```
-On Tue, Jul 29, 2008 at 6:05 PM, jamlatino <medrano.antonio@gmail.com> wrote:
->
-> While working on the video tutorial for Sage I tried the following
-> equation:
->
-> (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) - (2*cos(x)*sin(x) -
-> sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))
->
-> if I use find_root in the interval 1,2 I get the following answer:
-> 1.9106332362490561
->
-> but when I use solve to find the solution I get
-> [x == pi, x == pi/2, x == 0]
->
-> pi/2 is 1.57, but when I try find_root in the interval 1.5,1.6 it
-> tells me that the equation has no zero in that interval, can someone
-> explain??
-
-This appears to me to be a bug as pi/2 is not a solution.
-If you do the following it is pretty clear that the 0's are
-at 0, 1.9..., etc. and not at pi/2:
-
-sage: f = (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) -
-(2*cos(x)*sin(x) - sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))
+sage: f(x) = (sin(x) - 8*cos(x)*sin(x))*(sin(x)^2 + cos(x)) - (2*cos(x)*sin(x) - sin(x))*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))
+sage: solve(f(x), x)
+[x == pi, x == 1/2*pi, x == 0]
 sage: f(pi/2)
 -1
-sage: f.plot(-1,4)
-
-Sage finds the numerical 0's using a numerical root
-finder (from scipy).
-
-Sage finds the exact solutions by calling the computer
-algebra system Maxima, which indeed strangely claims that pi/2 is a solution:
-
-(%i1) solve((sin(x)-8*cos(x)*sin(x))*(sin(x)^2+cos(x))-(2*cos(x)*sin(x)-sin(x))*(-2*sin(x)^2+2*cos(x)^2-cos(x))=0,
-x);
-
-`solve' is using arc-trig functions to get a solution.
-Some solutions will be lost.
-                                        %pi
-(%o1)                      [x = %pi, x = ---, x = 0]
-                                         2
-
-It looks like this might be a bug in Maxima's solve function.
-
-There's not much for me to do besides:
-  * report this to the maxima folks (I've cc'd Robert Dodier
-in this email),
-  * completely rewrite Sage's solve to not use Maxima.
-
-From Robert Dodier:
-
-
-Yup, that's a bug, all right ... I'll make a bug report.
-
->    * completely rewrite Sage's solve to not use Maxima.
-
-Well, if you do that, please write it in pure Python so it is easier
-to translate to Lisp.
-
-Maxima's code for solving equations has more than a few bugs,
-and it's not clear what classes of problems it can handle, nor is
-it clear what method is used for each class, and there certainly
-are interesting and useful equations which it just can't handle.
-All of this motivates a complete rewrite. Not that I'm volunteering;
-not yet, anyway.
-
-FWIW
-
-Robert Dodier
 ```
 
-I think we need to rewrite solve for Sage.  Any volunteers?  It will have to wait until we change to use either "Gary's symbolics" or "Sympy" for Sage's symbolics, since the current symbolics likely don't support enough to make implementing solve practical.
+The following is correct:
+
+```
+sage: solve(f(x).simplify_trig(), x)
+[x == 0, x == pi - arccos(1/3), x == pi]
+```
+
+Reduced example (after manually removing the factor `sin(x)`):
+
+```
+sage: g(x) = (1 - 8*cos(x))*(sin(x)^2 + cos(x)) - (2*cos(x) - 1)*(-2*sin(x)^2 + 2*cos(x)^2 - cos(x))
+sage: solve(g(x), x)
+[x == pi, x == 1/2*pi]
+sage: g(pi/2)
+-1
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3745
 

@@ -4,6 +4,7 @@ archive/issues_000052.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: O(5)\n 0\n```\n\nPerhaps it would be better if it printed as `0 + O(5)`. Especially because otherwise there's no way to tell the difference between O(5) and O(25).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/52\n\n",
+    "closed_at": "2007-01-13T02:11:55Z",
     "created_at": "2006-09-13T19:04:57Z",
     "labels": [
         "component: basic arithmetic",

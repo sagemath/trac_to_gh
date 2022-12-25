@@ -4,6 +4,7 @@ archive/issues_008307.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  mvngu\n\nI think this happens because we misuse [rstrip](http://docs.python.org/library/stdtypes.html#str.rstrip) in `SAGE_LOCAL/bin/sage-update`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8307\n\n",
+    "closed_at": "2010-03-02T21:13:25Z",
     "created_at": "2010-02-19T12:36:24Z",
     "labels": [
         "component: build",

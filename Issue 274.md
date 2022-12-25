@@ -4,9 +4,11 @@ archive/issues_000274.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLeaks like a bad ...\n\n```\n\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n    s = K.random_element(); t = K.random_element()\n    poly = s + t*X\n....:     \nsage: get_memory_usage()\n'281M'\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/274\n\n",
+    "closed_at": "2007-08-19T08:28:30Z",
     "created_at": "2007-02-21T08:50:03Z",
     "labels": [
         "component: number theory",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",

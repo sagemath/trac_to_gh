@@ -1,16 +1,17 @@
-# Issue 3239: [with patch; needs review] cygwin polybori -- add Cygwin build support for polybori
+# Issue 3239: [with patch; positive review] cygwin polybori -- add Cygwin build support for polybori
 
 archive/issues_003239.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  polybori\n\nSee also #3195: add 64 bit OSX build support for polybori\n\nNew spkg here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/polybori-0.3.1.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3239\n\n",
+    "closed_at": "2008-05-18T13:49:59Z",
     "created_at": "2008-05-17T17:03:47Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin polybori -- add Cygwin build support for polybori",
+    "title": "[with patch; positive review] cygwin polybori -- add Cygwin build support for polybori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3239",
     "user": "https://github.com/williamstein"

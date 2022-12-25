@@ -4,6 +4,7 @@ archive/issues_001467.json:
 ```json
 {
     "body": "Assignee: boothby\n\nmake it possible to upload/download worksheets as plain text\n\nIssue created by migration from https://trac.sagemath.org/ticket/1467\n\n",
+    "closed_at": "2008-03-31T15:52:13Z",
     "created_at": "2007-12-12T06:23:58Z",
     "labels": [
         "component: notebook"

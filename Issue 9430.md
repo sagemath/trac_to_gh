@@ -3,7 +3,8 @@
 archive/issues_009430.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  acleone @williamstein @qed777 @nexttime\n\nDownload at: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg\n\nVersion 0.8.1 solves the following tickets:\n\n#9294, #8760, #8758, #8686, #7633, #7418, #7379\n\nPlease merge the Sage main library patch at #7379 when including this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9430\n\n",
+    "body": "Assignee: jason, was\n\nCC:  acleone @williamstein @qed777 @nexttime\n\nDownload at: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg\n\nVersion 0.8.1 solves the following tickets:\n\n#9294, #8760, #8758, #8686, #7633, #7418, #7379, #8961, #8959\n\nPlease merge the Sage main library patch at #7379 when including this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9430\n\n",
+    "closed_at": "2010-07-08T19:53:21Z",
     "created_at": "2010-07-05T11:30:03Z",
     "labels": [
         "component: notebook"
@@ -23,7 +24,7 @@ Download at: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg
 
 Version 0.8.1 solves the following tickets:
 
-#9294, #8760, #8758, #8686, #7633, #7418, #7379
+#9294, #8760, #8758, #8686, #7633, #7418, #7379, #8961, #8959
 
 Please merge the Sage main library patch at #7379 when including this.
 

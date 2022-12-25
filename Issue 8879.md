@@ -1,9 +1,10 @@
-# Issue 8879: Bad indentation in hyperelliptic curve file
+# Issue 8879: Clean up whitespace in padic hyperelliptic curve file
 
 archive/issues_008879.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @orlitzky\n\nAs of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n\n```\n    def is_in_weierstrass_disc(self,P):\n        \"\"\"\n        Checks if $P$ is in a Weierstrass disc\n\n        EXAMPLES:\n            sage: R.<x> = QQ['x']\n            sage: H = HyperellipticCurve(x^3-10*x+9)\n            sage: K = Qp(5,8)\n            sage: HK = H.change_ring(K)\n\t    sage: P = HK(0,3)\n\t    sage: HK.is_in_weierstrass_disc(P)\n\t    False\n\t    sage: Q = HK(0,1,0)\n\t    sage: HK.is_in_weierstrass_disc(Q)\n\t    True\n\t    sage: S = HK(1,0)\n            sage: HK.is_in_weierstrass_disc(S)\n            True\n\t    sage: T = HK.lift_x(1+3*5^2); T\n\t    (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))\n\t    sage: HK.is_in_weierstrass_disc(T)\n\t    True\n\n\tAUTHOR:\n            - Jennifer Balakrishnan (2010-02)\n        \"\"\"\n```\nI don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8879\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @orlitzky\n\nAs of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n\n```\n    def is_in_weierstrass_disc(self,P):\n        \"\"\"\n        Checks if $P$ is in a Weierstrass disc\n\n        EXAMPLES:\n            sage: R.<x> = QQ['x']\n            sage: H = HyperellipticCurve(x^3-10*x+9)\n            sage: K = Qp(5,8)\n            sage: HK = H.change_ring(K)\n            sage: P = HK(0,3)\n            sage: HK.is_in_weierstrass_disc(P)\n            False\n            sage: Q = HK(0,1,0)\n            sage: HK.is_in_weierstrass_disc(Q)\n            True\n            sage: S = HK(1,0)\n            sage: HK.is_in_weierstrass_disc(S)\n            True\n            sage: T = HK.lift_x(1+3*5^2); T\n            (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))\n            sage: HK.is_in_weierstrass_disc(T)\n            True\n\n        AUTHOR:\n            - Jennifer Balakrishnan (2010-02)\n        \"\"\"\n```\nI don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8879\n\n",
+    "closed_at": "2012-02-06T21:22:49Z",
     "created_at": "2010-05-05T00:01:01Z",
     "labels": [
         "component: elliptic curves",
@@ -11,7 +12,7 @@ archive/issues_008879.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Bad indentation in hyperelliptic curve file",
+    "title": "Clean up whitespace in padic hyperelliptic curve file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8879",
     "user": "https://github.com/kcrisman"
@@ -33,21 +34,21 @@ As of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperel
             sage: H = HyperellipticCurve(x^3-10*x+9)
             sage: K = Qp(5,8)
             sage: HK = H.change_ring(K)
-	    sage: P = HK(0,3)
-	    sage: HK.is_in_weierstrass_disc(P)
-	    False
-	    sage: Q = HK(0,1,0)
-	    sage: HK.is_in_weierstrass_disc(Q)
-	    True
-	    sage: S = HK(1,0)
+            sage: P = HK(0,3)
+            sage: HK.is_in_weierstrass_disc(P)
+            False
+            sage: Q = HK(0,1,0)
+            sage: HK.is_in_weierstrass_disc(Q)
+            True
+            sage: S = HK(1,0)
             sage: HK.is_in_weierstrass_disc(S)
             True
-	    sage: T = HK.lift_x(1+3*5^2); T
-	    (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))
-	    sage: HK.is_in_weierstrass_disc(T)
-	    True
+            sage: T = HK.lift_x(1+3*5^2); T
+            (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))
+            sage: HK.is_in_weierstrass_disc(T)
+            True
 
-	AUTHOR:
+        AUTHOR:
             - Jennifer Balakrishnan (2010-02)
         """
 ```

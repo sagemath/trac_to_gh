@@ -3,10 +3,12 @@
 archive/issues_009228.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nKeywords: mwrank\n\n```\n\ndevel/sage-main/sage/interfaces/mwrank.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)\n\nMissing documentation:\n* __getattr__(self, attrname):\n* __reduce__(self):\n* __call__(self, cmd):\n* console(self):\n* _reduce_load_mwrank():\n* mwrank_console():\n\n\nMissing doctests:\n* Mwrank(options=\"\", server=None, server_tmpdir=None):\n* __init__(self, options=\"\", server=None,server_tmpdir=None):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9228\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: mwrank\n\n```\ndevel/sage-main/sage/interfaces/mwrank.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)\n\nMissing documentation:\n* __getattr__(self, attrname):\n* __reduce__(self):\n* __call__(self, cmd):\n* console(self):\n* _reduce_load_mwrank():\n* mwrank_console():\n\n\nMissing doctests:\n* Mwrank(options=\"\", server=None, server_tmpdir=None):\n* __init__(self, options=\"\", server=None,server_tmpdir=None):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9228\n\n",
+    "closed_at": "2011-01-25T08:14:46Z",
     "created_at": "2010-06-12T13:42:01Z",
     "labels": [
         "component: doctest coverage",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
@@ -21,7 +23,6 @@ Assignee: @JohnCremona
 Keywords: mwrank
 
 ```
-
 devel/sage-main/sage/interfaces/mwrank.py
 ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)
@@ -39,6 +40,7 @@ Missing doctests:
 * Mwrank(options="", server=None, server_tmpdir=None):
 * __init__(self, options="", server=None,server_tmpdir=None):
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9228
 

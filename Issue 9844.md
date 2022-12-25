@@ -3,7 +3,8 @@
 archive/issues_009844.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @rishikesha @nexttime @jdemeyer\n\nOne needs to add\n\n```\n#include <time.h> \n```\nto `include/Lcommandline_numbertheory.h`\nto get lcalc to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9845\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rishikesha @nexttime @jdemeyer\n\nOne needs to add\n\n```\n#include <time.h> \n```\nto `include/Lcommandline_numbertheory.h`\nto get lcalc to build on cygwin.\n\n---\n\n**Final spkg: http://sage.math.washington.edu/home/jdemeyer/spkg/lcalc-20100428-1.23.p5.spkg** \n\nIssue created by migration from https://trac.sagemath.org/ticket/9845\n\n",
+    "closed_at": "2010-09-29T08:39:47Z",
     "created_at": "2010-09-01T02:17:51Z",
     "labels": [
         "component: build",
@@ -27,6 +28,10 @@ One needs to add
 ```
 to `include/Lcommandline_numbertheory.h`
 to get lcalc to build on cygwin.
+
+---
+
+**Final spkg: http://sage.math.washington.edu/home/jdemeyer/spkg/lcalc-20100428-1.23.p5.spkg** 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9845
 

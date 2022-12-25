@@ -1,16 +1,17 @@
-# Issue 2625: [with patch, needs review] BooleanPolynomial to Singular conversion
+# Issue 2625: [with patch, withdrawn] BooleanPolynomial to Singular conversion
 
 archive/issues_002625.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\n`BooleanPolynomialRing`\n* more general constructor\n* cover_ring\n* defining_ideal\n* _singular_init_\n* some whitespace changes for docstrings\n\n`MPolynomial`\n* is_homogenous\n\n`BooleanMonomial`\n* degree method (same as deg method)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2625\n\n",
+    "closed_at": "2008-04-01T13:17:57Z",
     "created_at": "2008-03-21T01:52:52Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] BooleanPolynomial to Singular conversion",
+    "title": "[with patch, withdrawn] BooleanPolynomial to Singular conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2625",
     "user": "https://github.com/malb"

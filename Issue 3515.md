@@ -4,6 +4,7 @@ archive/issues_003515.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nFinance needs to be set up or pbuild configured to properly compile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3515\n\n",
+    "closed_at": "2008-07-12T14:05:06Z",
     "created_at": "2008-06-26T15:48:43Z",
     "labels": [
         "component: pbuild",

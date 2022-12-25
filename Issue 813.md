@@ -3,10 +3,11 @@
 archive/issues_000813.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should give similar results, but it is inconsistent:\n\n```\nP1.<x>=QQ[]\nL=P1.fraction_field()\nx=L(x)\nP2.<y>=P1[]\n\nf=x+y\n\nP3.<x,y>=QQ[]\n\nP3(f)\n\n0*P3.0+f\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/813\n\n",
+    "body": "Assignee: @roed314\n\nThis should give similar results, but it is inconsistent:\n\n```\nP1.<x>=QQ[]\nL=P1.fraction_field()\nx=L(x)\nP2.<y>=P1[]\n\nf=x+y\n\nP3.<x,y>=QQ[]\n\nP3(f)\n\n0*P3.0+f\n```\n\n---\n\nApply\n\n1. [attachment:trac813_univariate_coerce_from_multivariate.patch]\n2. [attachment:trac_813_review.patch]\n\nto the Sage library repository.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/813\n\n",
+    "closed_at": "2011-09-27T17:42:14Z",
     "created_at": "2007-10-03T18:52:27Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
@@ -16,7 +17,7 @@ archive/issues_000813.json:
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: @williamstein
+Assignee: @roed314
 
 This should give similar results, but it is inconsistent:
 
@@ -34,6 +35,16 @@ P3(f)
 
 0*P3.0+f
 ```
+
+---
+
+Apply
+
+1. [attachment:trac813_univariate_coerce_from_multivariate.patch]
+2. [attachment:trac_813_review.patch]
+
+to the Sage library repository.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/813
 

@@ -4,6 +4,7 @@ archive/issues_007354.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol\n\n```\nWhen I click on an \"Undo\" version of a worksheet (click \"Undo\", then click on a revision), jsmath is not invoked, so I see a bunch of latex code instead of typeset math.  It would be nice if jsmath was invoked when looking at a revision of a worksheet.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7354\n\n",
+    "closed_at": "2009-11-11T20:07:43Z",
     "created_at": "2009-10-30T03:09:29Z",
     "labels": [
         "component: notebook",

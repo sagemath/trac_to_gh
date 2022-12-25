@@ -1,16 +1,17 @@
-# Issue 4619: Sage 3.2.1.a1: Update HISTORY.txt with the 3.1.3, 3.1.4 and 3.2 release notes
+# Issue 4619: [with patch, positive review] Sage 3.2.1.a1: Update HISTORY.txt with the 3.1.3, 3.1.4 and 3.2 release notes
 
 archive/issues_004619.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis depends on me finishing the release notes, but I am 80% done and currently working on this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4619\n\n",
+    "closed_at": "2008-11-30T06:33:47Z",
     "created_at": "2008-11-25T22:07:14Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Sage 3.2.1.a1: Update HISTORY.txt with the 3.1.3, 3.1.4 and 3.2 release notes",
+    "title": "[with patch, positive review] Sage 3.2.1.a1: Update HISTORY.txt with the 3.1.3, 3.1.4 and 3.2 release notes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4619",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

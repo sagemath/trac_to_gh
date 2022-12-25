@@ -1,16 +1,17 @@
-# Issue 7230: [with spkg, needs review] Switch from setuptools to Distribute
+# Issue 7230: Switch from setuptools to Distribute
 
 archive/issues_007230.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  wstein @mwhansen @nexttime\n\nDistribute is a fork of setuptools that aims to be open and actively maintained. It's also run by a handful of core Python devs.\n\nThere's a new spkg file, as well as updates to `spkg/install` and `spkg/standard/deps`. All three are sitting in this directory:\n\n  http://sage.math.washington.edu/home/craigcitro/distribute-spkg/\n\nTo test, delete the setuptools spkg, drop in the new `install` and `deps`, and then build sage. (Or, alternately, build the two spkgs that currently depend on setuptools -- Jinja and SQLAlchemy.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7230\n\n",
+    "closed_at": "2011-06-20T18:52:56Z",
     "created_at": "2009-10-16T00:05:56Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with spkg, needs review] Switch from setuptools to Distribute",
+    "title": "Switch from setuptools to Distribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7230",
     "user": "https://github.com/craigcitro"

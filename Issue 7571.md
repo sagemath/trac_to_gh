@@ -4,9 +4,11 @@ archive/issues_007571.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch improves 3 methods in graph.py:\n\n* connected_components: we use python set instead of lists to enable fast lookup\n* blocks_and_cut_vertices: using dicts instead of lists enable us to avoid relabeling\n* girth: idem\n\nIssue created by migration from https://trac.sagemath.org/ticket/7571\n\n",
+    "closed_at": "2009-12-02T08:13:47Z",
     "created_at": "2009-12-01T15:10:38Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "use more dicts in graph.py",

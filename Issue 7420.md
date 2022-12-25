@@ -4,6 +4,7 @@ archive/issues_007420.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @robertwb\n\nKeywords: coercion\n\n#5597 or #5598 introduced a potential infinite loop (and segfault) upon coercion discovery on a cyclic graph. The first occurence of such a graph was with the newly refactored symmetric functions.\n\nThe attached patch fixes this. By the way, it uses a dictionary rather than a list to hold the marks used (register_pair) to detect cycles.\n\nThe category patches #5981 depend on this!!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7420\n\n",
+    "closed_at": "2009-11-17T05:42:30Z",
     "created_at": "2009-11-10T00:45:07Z",
     "labels": [
         "component: coercion",

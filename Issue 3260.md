@@ -4,9 +4,10 @@ archive/issues_003260.json:
 ```json
 {
     "body": "Assignee: failure\n\nCC:  @mezzarobba\n\nWhen adding optional spkgs to Sage, it is necessary to go through the Python interface file and put #optional on every single line of every single doctest, to indicate that those doctests should not be run.\n\nIt would be nice to be able to put #optional at, say, the top of the file, or in the docstring for the module or class, and then have that imply that every doctest within is optional.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3260\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2008-05-20T12:20:28Z",
     "labels": [
-        "component: doctest",
+        "component: doctest framework",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

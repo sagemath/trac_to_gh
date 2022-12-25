@@ -1,16 +1,18 @@
-# Issue 5985: cPickle: adds support for class pickling customizing  and for nested classes
+# Issue 5985: [with spkg, with positive review] cPickle: adds support for class pickling customization
 
 archive/issues_005985.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty @saliola @burcin @craigcitro\n\nKeywords: cPickle, pickling classes\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5985\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty @saliola @burcin @craigcitro\n\nKeywords: cPickle, pickling classes\n\nOriginal implementation:\n\nThe first patch imports the vanilla cPickle.c and test_cpickle.py\nfrom python 2.5.2.p9 as sage.misc.cPickle, and updates accordingly the\ncPickle imports throughout the sage library.\n\nThe second patch makes a very small modification to cPickle to allow\nfor customizing how class are pickled via metaclasses.\n\nFinal implementation: adds the second patch to the python spkg\n\nSee discussions on:\n- http://groups.google.com/group/comp.lang.python/browse_thread/thread/66c282afc04aa39c/\n- http://groups.google.com/group/sage-devel/browse_thread/thread/583048dc7d373d6a/\n\nThanks to Mike, Burcin, and Carl for suggestions on how to handle this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5985\n\n",
+    "closed_at": "2009-10-15T06:56:06Z",
     "created_at": "2009-05-05T05:54:04Z",
     "labels": [
         "component: misc",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "cPickle: adds support for class pickling customizing  and for nested classes",
+    "title": "[with spkg, with positive review] cPickle: adds support for class pickling customization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5985",
     "user": "https://github.com/nthiery"
@@ -22,7 +24,22 @@ CC:  sage-combinat cwitty @saliola @burcin @craigcitro
 
 Keywords: cPickle, pickling classes
 
+Original implementation:
 
+The first patch imports the vanilla cPickle.c and test_cpickle.py
+from python 2.5.2.p9 as sage.misc.cPickle, and updates accordingly the
+cPickle imports throughout the sage library.
+
+The second patch makes a very small modification to cPickle to allow
+for customizing how class are pickled via metaclasses.
+
+Final implementation: adds the second patch to the python spkg
+
+See discussions on:
+- http://groups.google.com/group/comp.lang.python/browse_thread/thread/66c282afc04aa39c/
+- http://groups.google.com/group/sage-devel/browse_thread/thread/583048dc7d373d6a/
+
+Thanks to Mike, Burcin, and Carl for suggestions on how to handle this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5985
 

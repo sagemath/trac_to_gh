@@ -1,9 +1,10 @@
-# Issue 2261: setup.py: Don't add emtpy Debian directory to scripts section
+# Issue 2261: [with patch, positive review]setup.py: Don't add emtpy Debian directory to scripts section
 
 archive/issues_002261.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe directory entry causes the sage lib to fail building on a minimal Debian install. Go figure.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/2261\n\n",
+    "closed_at": "2008-02-22T18:44:28Z",
     "created_at": "2008-02-22T18:04:05Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_002261.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "setup.py: Don't add emtpy Debian directory to scripts section",
+    "title": "[with patch, positive review]setup.py: Don't add emtpy Debian directory to scripts section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2261",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 2506: Problem with inequality operator (!=) in graph.py
+# Issue 2506: [with patch, positive review] Problem with inequality operator (!=) in graph.py
 
 archive/issues_002506.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g   # fine\nTrue\nsage: g != g   # fine\nFalse\nsage: g2 == g  # PROBLEM: either this one\nTrue\nsage: g2 != g  # or this one should be false\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2506\n\n",
+    "closed_at": "2008-03-14T14:16:29Z",
     "created_at": "2008-03-13T16:56:38Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Problem with inequality operator (!=) in graph.py",
+    "title": "[with patch, positive review] Problem with inequality operator (!=) in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2506",
     "user": "https://github.com/rhinton"

@@ -1,16 +1,17 @@
-# Issue 2730: matplotlib in Debian is (probably) too old
+# Issue 2730: matplotlib in Debian is too old
 
 archive/issues_002730.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI get the following doctest errors in the Debian build of SAGE 2.10.4.  I think the problem is that matplotlib.patches got changed to add \"from matplotlib.lines as lines\" since matplotlib 0.90.1 (the version in debian).  \n\n**********************************************************************\nFile \"tut.py\", line 1818:\n    : p.save()\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_72[2]>\", line 1, in <module>\n        p.save()###line 1818:\n    : p.save()\n      File \"/usr/lib/python2.5/site-packages/sage/plot/plot.py\", line 1419, in save\n        xmin, xmax, ymin, ymax = sage_axes.add_xy_axes(subplot, xmin, xmax, ymin, ymax)\n      File \"/usr/lib/python2.5/site-packages/sage/plot/axes.py\", line 332, in add_xy_axes\n        self._draw_axes(subplot, axes, xmin, xmax, ymin, ymax, x_axis_ypos, y_axis_xpos)\n      File \"/usr/lib/python2.5/site-packages/sage/plot/axes.py\", line 263, in _draw_axes\n        subplot.add_line(patches.lines.Line2D([xmin, xmax], [x_axis_ypos, x_axis_ypos],\n    AttributeError: 'module' object has no attribute 'lines'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2730\n\n",
+    "closed_at": "2008-03-30T09:54:42Z",
     "created_at": "2008-03-30T00:02:01Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "matplotlib in Debian is (probably) too old",
+    "title": "matplotlib in Debian is too old",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2730",
     "user": "https://github.com/timabbott"

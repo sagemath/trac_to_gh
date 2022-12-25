@@ -4,6 +4,7 @@ archive/issues_008742.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nKeywords: lazy format strings\n\nThe class `LazyFormat` allows to create format strings which calls their argument's `__repr__` only if needed. Otherwise it behaves as usual format string.\n\nThis is useful tor speeding up tests suites. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8742\n\n",
+    "closed_at": "2010-06-05T21:50:02Z",
     "created_at": "2010-04-21T19:50:06Z",
     "labels": [
         "component: misc"

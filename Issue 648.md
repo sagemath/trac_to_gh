@@ -1,16 +1,17 @@
-# Issue 648: memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)
+# Issue 648: [with patch] memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)
 
 archive/issues_000648.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHello folks,\n\nmatrix_integer_dense.pyx, lines 2190-2202:\n\n```\n##########################################################\n# Setup the c-library and GMP random number generators.\n# seed it when module is loaded.\nfrom random import randrange\ncdef extern from \"stdlib.h\":\n    long random()\n    void srandom(unsigned int seed)\nk = randrange(0,Integer(2)**(32))\nsrandom(k)\n\ncdef gmp_randstate_t state\ngmp_randinit_mt(state)\ngmp_randseed_ui(state,k)\n```\n\nSo in this particular case we actually seed the random number\ngenerator with a random value. Now my questions:\n\na) Why do we need randomness here?\nb) Why don't we use the global seed? \n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/5fe050ae9a2dc373/\n\nIssue created by migration from https://trac.sagemath.org/ticket/648\n\n",
+    "closed_at": "2007-09-15T00:21:23Z",
     "created_at": "2007-09-13T16:01:00Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)",
+    "title": "[with patch] memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/648",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

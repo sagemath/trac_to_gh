@@ -3,10 +3,12 @@
 archive/issues_008603.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @wdjoyner @jasongrout @jondo @kcrisman @vbraun @slel @mkoeppe @eviatarbach @rwst @novoselt\n\nDoing\n\n```\nf = Piecewise([[(-pi, pi), x]])\nprint f.fourier_series_partial_sum(2, pi)\nprint f.fourier_series_partial_sum(3, pi)\n```\nwe get\n\n```\n2*sin(x)\n-sin(2*x) + 2*sin(x)\n```\nwhile according to the documentation we should get the second output with the first command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8603\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @wdjoyner @jasongrout @jondo @kcrisman @vbraun @slel @mkoeppe @eviatarbach @rwst @novoselt\n\nKeywords: sd31\n\nDoing\n\n```\nf = Piecewise([[(-pi, pi), x]])\nprint f.fourier_series_partial_sum(2, pi)\nprint f.fourier_series_partial_sum(3, pi)\n```\nwe get\n\n```\n2*sin(x)\n-sin(2*x) + 2*sin(x)\n```\nwhile according to the documentation we should get the second output with the first command.\n\nUpdate: Same output with the new `piecewise` from #14801. Does it agree with the documentation there?\n\nUPDATE: this is fixed in Sage 8.1 (see #23672):\n\n```\nsage: f = piecewise([[(-pi, pi), x]])\nsage: f.fourier_series_partial_sum(2, pi)\n-sin(2*x) + 2*sin(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8603\n\n",
+    "closed_at": "2017-12-12T08:23:33Z",
     "created_at": "2010-03-25T04:06:02Z",
     "labels": [
         "component: calculus",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -19,6 +21,8 @@ archive/issues_008603.json:
 Assignee: @burcin
 
 CC:  @wdjoyner @jasongrout @jondo @kcrisman @vbraun @slel @mkoeppe @eviatarbach @rwst @novoselt
+
+Keywords: sd31
 
 Doing
 
@@ -34,6 +38,17 @@ we get
 -sin(2*x) + 2*sin(x)
 ```
 while according to the documentation we should get the second output with the first command.
+
+Update: Same output with the new `piecewise` from #14801. Does it agree with the documentation there?
+
+UPDATE: this is fixed in Sage 8.1 (see #23672):
+
+```
+sage: f = piecewise([[(-pi, pi), x]])
+sage: f.fourier_series_partial_sum(2, pi)
+-sin(2*x) + 2*sin(x)
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8603
 

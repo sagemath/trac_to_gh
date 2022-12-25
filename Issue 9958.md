@@ -1,16 +1,18 @@
-# Issue 9958: Get Pari to stop starting automatically
+# Issue 9958: Get PARI/GP to stop starting automatically
 
 archive/issues_009958.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @qed777 @jdemeyer @nexttime\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing to a non-Pari user.  We should stop it.\n\nThis is with 4.6.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
+    "body": "Assignee: tbd\n\nCC:  @qed777 @jdemeyer @nexttime\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing.  We should stop it.\n\nApply **9959_combined.patch** below and install the **new spkg**: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg) (note that this spkg is *not* based on the earlier p8)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
+    "closed_at": "2010-10-21T08:18:58Z",
     "created_at": "2010-09-21T13:36:14Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Get Pari to stop starting automatically",
+    "title": "Get PARI/GP to stop starting automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9958",
     "user": "https://github.com/kcrisman"
@@ -27,9 +29,9 @@ Exiting Sage (CPU time 0m0.74s, Wall time 11m11.95s).
 Exiting spawned GP/PARI interpreter process. 
 ```
 It's not exactly a bug, but it's also annoying and potentially 
-confusing to a non-Pari user.  We should stop it.
+confusing.  We should stop it.
 
-This is with 4.6.alpha1.
+Apply **9959_combined.patch** below and install the **new spkg**: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg) (note that this spkg is *not* based on the earlier p8)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9959
 

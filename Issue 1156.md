@@ -1,16 +1,17 @@
-# Issue 1156: Functions lost in massive combinatorics reorganization?
+# Issue 1156: [with patch] Functions lost in massive combinatorics reorganization?
 
 archive/issues_001156.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nSee changeset \"Initial commit of combinat/ files and bug fixes.\" from Mike Hansen. \n\nSome functions lost. bernoulli_polynomial among them. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1156\n\n",
+    "closed_at": "2007-11-19T21:16:32Z",
     "created_at": "2007-11-12T20:41:15Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "Functions lost in massive combinatorics reorganization?",
+    "title": "[with patch] Functions lost in massive combinatorics reorganization?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1156",
     "user": "https://github.com/robertwb"

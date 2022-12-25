@@ -1,15 +1,16 @@
-# Issue 5920: Implements view(object, format='pdf')
+# Issue 5920: [with patch, positive review] Implement view(object, viewer='pdf')
 
 archive/issues_005920.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: latex view\n\nThis patch allows for:\n\n```\nsage: view(object, format = \"pdf\")\n```\n\nTypical use cases:\n- you prefer your pdf browser\n- view latex snippets which are not displayed in dvi viewers (e.g. tikzpicture)\n\nShould this use 'output=' rather than 'format='\n\nPotential extensions: `view(object, format='png')`, `view(object, format='html')`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5920\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: view, latex, dvi, pdf\n\nThis patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\n\nTypical use cases:\n- you prefer your pdf browser to your dvi browser\n- you want to view latex snippets which are not displayed well in dvi viewers (e.g. tikzpicture)\n\nPotential extensions: `view(object, viewer='png')`, `view(object, viewer='html')`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5920\n\n",
+    "closed_at": "2009-05-07T07:09:55Z",
     "created_at": "2009-04-28T19:35:58Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Implements view(object, format='pdf')",
+    "title": "[with patch, positive review] Implement view(object, viewer='pdf')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5920",
     "user": "https://github.com/nthiery"
@@ -19,21 +20,20 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-Keywords: latex view
+Keywords: view, latex, dvi, pdf
 
-This patch allows for:
+This patch implements:
 
 ```
-sage: view(object, format = "pdf")
+sage: view(object, viewer = "pdf")
 ```
 
 Typical use cases:
-- you prefer your pdf browser
-- view latex snippets which are not displayed in dvi viewers (e.g. tikzpicture)
+- you prefer your pdf browser to your dvi browser
+- you want to view latex snippets which are not displayed well in dvi viewers (e.g. tikzpicture)
 
-Should this use 'output=' rather than 'format='
+Potential extensions: `view(object, viewer='png')`, `view(object, viewer='html')`
 
-Potential extensions: `view(object, format='png')`, `view(object, format='html')`
 
 Issue created by migration from https://trac.sagemath.org/ticket/5920
 

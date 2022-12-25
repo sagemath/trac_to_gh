@@ -1,16 +1,17 @@
-# Issue 3719: bug in group cohomology
+# Issue 3719: [with spkg, patch,  positive review] bug in group cohomology
 
 archive/issues_003719.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  alexghitza\n\nAs reported by Ursula Whitcher\n\n```\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\n```\nyields an error. The problem is a bug in the current version of the GAP package HAP, version 1.8.5. The latest version 1.8.7 but there the bug still exists\n\n```\ngap> G := SymmetricGroup(4);\nSym( [ 1 .. 4 ] )\ngap> GroupCohomology(G,1); ## an improvement over 1.8.5\n[  ]\ngap> GroupCohomology(G,1,2);\nList Element: <position> must be a positive integer (not a integer) at\nif IsInt( C!.fpIntHom[n] )  then\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3719\n\n",
+    "closed_at": "2008-08-27T08:08:18Z",
     "created_at": "2008-07-24T11:16:49Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug in group cohomology",
+    "title": "[with spkg, patch,  positive review] bug in group cohomology",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3719",
     "user": "https://github.com/wdjoyner"

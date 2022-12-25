@@ -3,7 +3,8 @@
 archive/issues_008705.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nTitle says all\n\nIssue created by migration from https://trac.sagemath.org/ticket/8705\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nKeywords: unittest, TestSuite\n\nI also cleaned up the doc which didn't properly compile and added a reference to http://docs.python.org/library/unittest.html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8705\n\n",
+    "closed_at": "2010-04-19T05:17:22Z",
     "created_at": "2010-04-17T16:14:49Z",
     "labels": [
         "component: categories",
@@ -20,7 +21,9 @@ Assignee: @hivert
 
 CC:  @nthiery
 
-Title says all
+Keywords: unittest, TestSuite
+
+I also cleaned up the doc which didn't properly compile and added a reference to http://docs.python.org/library/unittest.html.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8705
 

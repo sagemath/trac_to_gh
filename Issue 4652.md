@@ -1,16 +1,17 @@
-# Issue 4652: [with code, needs testing] make distutils compile Cython extensions in parallel
+# Issue 4652: [with patch, needs testing] make distutils compile Cython extensions in parallel
 
 archive/issues_004652.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCurrently, we've got excellent code to run Cython in parallel as part of the Sage build process. However, once we ask distutils to begin compiling that code, everything is done in serial, because distutils works solely in serial. \n\n## The Code\n\nThe attached file changes that. This (somewhat brutally) hacks distutils to dispatch the calls to build C/C++ extensions in parallel, using pyprocessing. (I totally jacked William's code from #3765 for this.) Here's how to put this code in place:\n\n* download the attached file (`build_ext.py`)\n* replace `$SAGE_ROOT/local/lib/python2.5/distutils/command/build_ext.py` with the new version.\n  \nNow, if you want to test the new code, do the following:\n\n* set the environment variable `SAGE_PARALLEL_DIST` to something. (The code just checks to see if the variable is defined at all.)\n* set the environment variable `MAKE` to `MAKE -j2`, where `2` is replaced by the number of simultaneous build processes you want. \n* build.\n\n## Notes\n\nIf you want to test this, don't go around touching the `.pyx` files in the Sage library, since Cython is much slower than `gcc`. Instead, simply go around touching the `.c` and `.cpp` files in `$SAGE_ROOT/devel/sage/sage`. One of the cool features we added with the new build system is that these files get recompiled when they change.\n\nThere is now a line that prints as part of the build process that looks like:\n\n```\nTotal time spent compiling C/C++ extensions:  5.2876701355 seconds.\n```\nSo try touching a bunch of files in the Sage library, and seeing what kind of speedups you get.\n\nThere are two caveats I want to offer with this code: \n\n* Michael points out that numpy does a lot with distutils. I could very well have broken their use of distutils.\n* I don't do anything involving dependency tracking between extensions. In particular, if there are extensions that have to be built in a certain order, this code could break it. (This code still compiles all source files **within** an extension in the usual way.) Neither Michael nor I could think of a situation where this would break anything in Sage, but who knows ...\n\n## The Plan\n\nSo while this code is cool, and will definitely save a ton of CPU time on `sage.math` (**cough** mabshoff **cough**), the plan is **not** to maintain it as a part of the Sage Python spkg indefinitely. Instead, if it seems to work well, then we should try to clean this code up a bit more and upstream it, since pyprocessing is standard in Python 2.6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4652\n\n",
+    "closed_at": "2009-06-12T07:02:16Z",
     "created_at": "2008-11-29T11:37:40Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with code, needs testing] make distutils compile Cython extensions in parallel",
+    "title": "[with patch, needs testing] make distutils compile Cython extensions in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4652",
     "user": "https://github.com/craigcitro"

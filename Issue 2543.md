@@ -1,9 +1,10 @@
-# Issue 2543: [with patch, needs quick review] fix broken doctest in modular/modform/element.py
+# Issue 2543: [with patch, positive review] fix broken doctest in modular/modform/element.py
 
 archive/issues_002543.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere was a doctest that was broken in element.py; I think it was because something got moved around. In any event, this fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2543\n\n",
+    "closed_at": "2008-03-16T04:11:04Z",
     "created_at": "2008-03-16T03:52:07Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_002543.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs quick review] fix broken doctest in modular/modform/element.py",
+    "title": "[with patch, positive review] fix broken doctest in modular/modform/element.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2543",
     "user": "https://github.com/craigcitro"

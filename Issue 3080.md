@@ -4,6 +4,7 @@ archive/issues_003080.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\n```\nsage -t devel/sage/sage/dsage/tests/testdoc.py\n```\nnever finishes for me (even after 1hr +).  I have to Ctrl-C my doctests to get them to finish.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3080\n\n",
+    "closed_at": "2008-05-03T17:06:16Z",
     "created_at": "2008-05-02T13:26:09Z",
     "labels": [
         "component: dsage",

@@ -1,9 +1,10 @@
-# Issue 5358: major bug in missing import of escape in twist.py
+# Issue 5358: [with patch; positive review] major bug in missing import of escape in twist.py
 
 archive/issues_005358.json:
 ```json
 {
     "body": "Assignee: boothby\n\ntwist.py uses escape but doesnt' import it.  This is a bug introduced in #5258 by bad refereeing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5358\n\n",
+    "closed_at": "2009-02-28T15:56:36Z",
     "created_at": "2009-02-24T14:44:39Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005358.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "major bug in missing import of escape in twist.py",
+    "title": "[with patch; positive review] major bug in missing import of escape in twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5358",
     "user": "https://github.com/williamstein"

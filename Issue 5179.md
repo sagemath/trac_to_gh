@@ -1,16 +1,17 @@
-# Issue 5179: Delete __getslice__ from matrices
+# Issue 5179: [with patch, positive review] Replace __getslice__ with functionality in __getitem__ in matrices
 
 archive/issues_005179.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n`__getslice__` has been deprecated for a long time in Python.  This patch adds equivalent functionality to `__getitem__`, which is where the functionality should be.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5179\n\n",
+    "closed_at": "2009-02-05T10:49:34Z",
     "created_at": "2009-02-04T18:31:44Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Delete __getslice__ from matrices",
+    "title": "[with patch, positive review] Replace __getslice__ with functionality in __getitem__ in matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5179",
     "user": "https://github.com/jasongrout"

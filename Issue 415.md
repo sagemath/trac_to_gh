@@ -4,6 +4,7 @@ archive/issues_000415.json:
 ```json
 {
     "body": "Assignee: somebody\n\nZZ.random_element(0)\n\nproduces an uncaught FPE and hence crashes sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/415\n\n",
+    "closed_at": "2007-08-09T21:29:57Z",
     "created_at": "2007-08-09T19:53:56Z",
     "labels": [
         "component: basic arithmetic",

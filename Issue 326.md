@@ -4,6 +4,7 @@ archive/issues_000326.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen I change a pyrex file (specifically rings/integer.pyx), sage -b doesn't seem to notice. I have to manually delete the corresponding .c file to get a rebuild happening. This is mac OS 10.4.9, powerpc G5, sage 2.3.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/326\n\n",
+    "closed_at": "2007-03-22T02:21:45Z",
     "created_at": "2007-03-21T04:25:32Z",
     "labels": [
         "component: packages: standard",

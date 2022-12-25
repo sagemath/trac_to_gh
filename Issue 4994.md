@@ -1,16 +1,17 @@
-# Issue 4994: OSX 64 bit: add 64 bit build support for ghmm
+# Issue 4994: [with spkg, positive review] OSX 64 bit: add 64 bit build support for ghmm
 
 archive/issues_004994.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4994\n\n",
+    "closed_at": "2009-01-23T00:25:50Z",
     "created_at": "2009-01-17T15:35:54Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "OSX 64 bit: add 64 bit build support for ghmm",
+    "title": "[with spkg, positive review] OSX 64 bit: add 64 bit build support for ghmm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4994",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

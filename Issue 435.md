@@ -1,16 +1,18 @@
-# Issue 435: sage notebooks have hardcoded absolute paths
+# Issue 435: [with patch] sage notebooks have hardcoded absolute paths
 
 archive/issues_000435.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI just moved a complete notebook directory to a different user on a different machine and\nget errors on startup related to the notebook object hard coding absolute paths related to the notebook.  This must all be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/435\n\n",
+    "closed_at": "2007-11-03T18:45:12Z",
     "created_at": "2007-08-17T14:40:50Z",
     "labels": [
         "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "sage notebooks have hardcoded absolute paths",
+    "title": "[with patch] sage notebooks have hardcoded absolute paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/435",
     "user": "https://github.com/williamstein"

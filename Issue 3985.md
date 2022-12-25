@@ -3,11 +3,10 @@
 archive/issues_003985.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPlotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  \nE.g.\n\n```\nsage: plot(tan,-20,20).show(ymin=-5, ymax=5) \n```\nexcept automatic detection of the ymin and ymax.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3985\n\n",
+    "body": "Assignee: @williamstein\n\nStill need improvement on plotting of asymptote of e.g. tan or 1/x, especially when detect_poles != True.  Ideally one has an output similar to\n\n```\nsage: plot(tan,-20,20).show(ymin=-5, ymax=5) \n```\nbut just straight out of plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3985\n\n",
     "created_at": "2008-08-29T02:28:48Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Asymptote plotting",
@@ -18,13 +17,12 @@ archive/issues_003985.json:
 ```
 Assignee: @williamstein
 
-Plotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  
-E.g.
+Still need improvement on plotting of asymptote of e.g. tan or 1/x, especially when detect_poles != True.  Ideally one has an output similar to
 
 ```
 sage: plot(tan,-20,20).show(ymin=-5, ymax=5) 
 ```
-except automatic detection of the ymin and ymax.
+but just straight out of plot.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3985
 

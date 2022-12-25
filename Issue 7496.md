@@ -3,7 +3,8 @@
 archive/issues_007496.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nWTF?\n\n```\nsage: var('1')\n1\nsage: var('1')+1\n1 + 1\nsage: expand((var('2')+var('2'))^2)\n4*2^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7496\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: sd31\n\nWTF?\n\n```\nsage: var('1')\n1\nsage: var('1')+1\n1 + 1\nsage: expand((var('2')+var('2'))^2)\n4*2^2\n```\n\nWhen this ticket is closed, #9724 can also be closed.\n\n---\nApply [attachment:trac_7496_check_symbolic_variable_names.patch] and [attachment:trac_7496-reviewer.2.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/7496\n\n",
+    "closed_at": "2011-07-22T12:48:27Z",
     "created_at": "2009-11-20T02:16:09Z",
     "labels": [
         "component: symbolics",
@@ -18,6 +19,8 @@ archive/issues_007496.json:
 ```
 Assignee: @burcin
 
+Keywords: sd31
+
 WTF?
 
 ```
@@ -28,6 +31,11 @@ sage: var('1')+1
 sage: expand((var('2')+var('2'))^2)
 4*2^2
 ```
+
+When this ticket is closed, #9724 can also be closed.
+
+---
+Apply [attachment:trac_7496_check_symbolic_variable_names.patch] and [attachment:trac_7496-reviewer.2.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/7496
 

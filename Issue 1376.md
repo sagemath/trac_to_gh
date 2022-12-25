@@ -1,16 +1,17 @@
-# Issue 1376: 2.8.15.rc0: sage/calculus/calculus.py doctest failure
+# Issue 1376: 2.8.15.rc0: numerical doctest failure
 
 archive/issues_001376.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe following is a failed doctest because of we changed the default printing behavior for floats:\n\n```\nsage -t  devel/sage-main/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 1973:\n    sage: f.n(200)\nExpected:\n    -0.00000000000074992740280181431112064614366622348652078895136533593355718\nGot:\n    -7.4992740280181431112064614366622348652078895136533593355718e-13\n**********************************************************************\nFile \"calculus.py\", line 1975:\n    sage: f.n(300)\nExpected:\n    -0.000000000000749927402801814311120646143662663009137292462589621789352095066181709095575681963967103004\nGot:\n    -7.49927402801814311120646143662663009137292462589621789352095066181709095575681963967103004e-13\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1376\n\n",
+    "closed_at": "2007-12-02T22:04:15Z",
     "created_at": "2007-12-02T21:09:11Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "2.8.15.rc0: sage/calculus/calculus.py doctest failure",
+    "title": "2.8.15.rc0: numerical doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1376",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

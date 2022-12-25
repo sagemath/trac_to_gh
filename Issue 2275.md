@@ -1,9 +1,10 @@
-# Issue 2275: [with patch, needs review] get sloane_functions.py to 100% coverage
+# Issue 2275: [with patch, with enthuisiastic positive review] get sloane_functions.py to 100% coverage
 
 archive/issues_002275.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2275\n\n",
+    "closed_at": "2008-03-03T12:33:48Z",
     "created_at": "2008-02-23T04:44:31Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002275.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] get sloane_functions.py to 100% coverage",
+    "title": "[with patch, with enthuisiastic positive review] get sloane_functions.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2275",
     "user": "https://github.com/mwhansen"

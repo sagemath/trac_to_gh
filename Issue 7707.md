@@ -4,6 +4,7 @@ archive/issues_007707.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe picklejar doctest in structure/sage_object.pyx has to be changed whenever we update the picklejar, when things get deprecated, etc.  That's silly.  Let's change the test to be like this:\n\n```\n        sage: print \"x\"; sage....\n        x...\n        Failed to unpickle 0 objects.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7707\n\n",
+    "closed_at": "2009-12-20T07:20:14Z",
     "created_at": "2009-12-16T09:11:02Z",
     "labels": [
         "component: doctest coverage"

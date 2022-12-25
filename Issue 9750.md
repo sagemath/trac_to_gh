@@ -3,7 +3,8 @@
 archive/issues_009750.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @JohnCremona\n\nEarlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, \"only\" the GRH is assumed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9750\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @JohnCremona\n\nEarlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, \"only\" the GRH is assumed, see [http://www.math.u-bordeaux.fr/~belabas/pari/doc/faq.html#nfGRH](http://www.math.u-bordeaux.fr/~belabas/pari/doc/faq.html#nfGRH)\n\nDependency: #9343\n\nIssue created by migration from https://trac.sagemath.org/ticket/9750\n\n",
+    "closed_at": "2010-09-10T10:44:27Z",
     "created_at": "2010-08-14T19:15:17Z",
     "labels": [
         "component: documentation",
@@ -21,7 +22,9 @@ Assignee: mvngu
 
 CC:  @JohnCremona
 
-Earlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, "only" the GRH is assumed.
+Earlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, "only" the GRH is assumed, see [http://www.math.u-bordeaux.fr/~belabas/pari/doc/faq.html#nfGRH](http://www.math.u-bordeaux.fr/~belabas/pari/doc/faq.html#nfGRH)
+
+Dependency: #9343
 
 Issue created by migration from https://trac.sagemath.org/ticket/9750
 

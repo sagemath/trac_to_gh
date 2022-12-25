@@ -1,30 +1,38 @@
-# Issue 8431: Rauzy fractal (discrete planes and broken lines)
+# Issue 8431: Substitutions over unit cube faces (Rauzy fractals)
 
 archive/issues_008431.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  sage-combinat @seblabbe abmasse tmonteil\n\nKeywords: word morphism\n\nThinking about it for a long time and motivated by\u00a0[#8423](http://trac.sagemath.org/sage_trac/ticket/8423&usg=AFQjCNG8_y-UlT3ON3unoD3utIEHQfTYbQ) this ticket stands for\n* the creation of WordMorphismExtension and WordMorphismExtensionDual (from [an article of Sano-Arnoux-Ito](http://iml.univ-mrs.fr/~arnoux/AISrev.pdf))\n* Have easy to use function for plotting Rauzy fractals using those algebraic tools\n\nIssue created by migration from https://trac.sagemath.org/ticket/8431\n\n",
+    "body": "Assignee: tjolivet\n\nCC:  sage-combinat @seblabbe abmasse tmonteil\n\nKeywords: word morphism unit face generalized substitution rauzy fractal\n\nThis patch  introduces unit cube faces and substitutions over them, as defined in the article [Pisot substitutions and Rauzy fractals](http://iml.univ-mrs.fr/%7Earnoux/ArnouxIto.pdf) by Arnoux and Ito.\n\nThree new classes are defined:\n\n* `Face` -- models a unit cube face\n* `Patch` -- models a finite collection of faces\n* `E1Star` -- models the the *E_1!^*(sigma)* substitution (over faces) defined by a unimodular substitution `sigma`\n\nThe plotting features enable us draw approximations of Rauzy fractals, or to generate patches of discrete planes.\n\nThe dimension of the faces can be of any dimension (and the substitutions work accordingly), but the plotting features work only in dimension three (with three-letter alphabet substitutions).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8431\n\n",
+    "closed_at": "2010-11-19T07:53:54Z",
     "created_at": "2010-03-03T23:49:21Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Rauzy fractal (discrete planes and broken lines)",
+    "title": "Substitutions over unit cube faces (Rauzy fractals)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8431",
     "user": "https://github.com/videlec"
 }
 ```
-Assignee: @videlec
+Assignee: tjolivet
 
 CC:  sage-combinat @seblabbe abmasse tmonteil
 
-Keywords: word morphism
+Keywords: word morphism unit face generalized substitution rauzy fractal
 
-Thinking about it for a long time and motivated by [#8423](http://trac.sagemath.org/sage_trac/ticket/8423&usg=AFQjCNG8_y-UlT3ON3unoD3utIEHQfTYbQ) this ticket stands for
-* the creation of WordMorphismExtension and WordMorphismExtensionDual (from [an article of Sano-Arnoux-Ito](http://iml.univ-mrs.fr/~arnoux/AISrev.pdf))
-* Have easy to use function for plotting Rauzy fractals using those algebraic tools
+This patch  introduces unit cube faces and substitutions over them, as defined in the article [Pisot substitutions and Rauzy fractals](http://iml.univ-mrs.fr/%7Earnoux/ArnouxIto.pdf) by Arnoux and Ito.
+
+Three new classes are defined:
+
+* `Face` -- models a unit cube face
+* `Patch` -- models a finite collection of faces
+* `E1Star` -- models the the *E_1!^*(sigma)* substitution (over faces) defined by a unimodular substitution `sigma`
+
+The plotting features enable us draw approximations of Rauzy fractals, or to generate patches of discrete planes.
+
+The dimension of the faces can be of any dimension (and the substitutions work accordingly), but the plotting features work only in dimension three (with three-letter alphabet substitutions).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8431
 

@@ -1,15 +1,16 @@
-# Issue 1002: update clisp to 2.42
+# Issue 1002: update clisp to 2.44.1
 
 archive/issues_001002.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nClisp 2.42 was released on October 16th.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1002\n\n",
+    "closed_at": "2008-05-01T14:13:48Z",
     "created_at": "2007-10-26T09:07:30Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update clisp to 2.42",
+    "title": "update clisp to 2.44.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1002",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

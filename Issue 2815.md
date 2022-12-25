@@ -1,16 +1,17 @@
-# Issue 2815: docstring errors in coding/pbori
+# Issue 2815: [with patch, positive review] add more coding theory to the reference manual
 
 archive/issues_002815.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe attached patch fixes some latex docstring errors. No code is modified or added.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2815\n\n",
+    "closed_at": "2008-04-05T22:30:08Z",
     "created_at": "2008-04-05T21:30:38Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "docstring errors in coding/pbori",
+    "title": "[with patch, positive review] add more coding theory to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2815",
     "user": "https://github.com/wdjoyner"

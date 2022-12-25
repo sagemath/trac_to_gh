@@ -1,16 +1,17 @@
-# Issue 1174: very minor bug in calculs _complex_ coercion.
+# Issue 1174: [with patch, with positive review] very minor bug in calculs _complex_ coercion.
 
 archive/issues_001174.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1174\n\n",
+    "body": "Assignee: @williamstein\n\nStill broken (or perhaps something deeper)\n\n```\nsage: complex(cos(3))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3908, in __complex__\n    return complex(f._approx_(complex(g)))\n<type 'exceptions.TypeError'>: can't convert complex to float; use abs(z)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1174\n\n",
+    "closed_at": "2007-12-02T22:07:56Z",
     "created_at": "2007-11-15T07:46:36Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "very minor bug in calculs _complex_ coercion.",
+    "title": "[with patch, with positive review] very minor bug in calculs _complex_ coercion.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1174",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,17 @@ archive/issues_001174.json:
 ```
 Assignee: @williamstein
 
+Still broken (or perhaps something deeper)
 
+```
+sage: complex(cos(3))
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "<ipython console>", line 1, in <module>
+  File "/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py", line 3908, in __complex__
+    return complex(f._approx_(complex(g)))
+<type 'exceptions.TypeError'>: can't convert complex to float; use abs(z)
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1174
 

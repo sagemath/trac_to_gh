@@ -1,16 +1,17 @@
-# Issue 2218: assuming an expression is not equal to zero doesn't work
+# Issue 2218: [with patch, positive review] assuming an expression is not equal to another expression doesn't work
 
 archive/issues_002218.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  b.w.barker@smokejive.net\n\n```\nsage: v,c = var('v,c')\nsage: assume(c!=0)\nsage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)\n...\n<type 'exceptions.TypeError'>: Computation failed since Maxima requested additional constraints (use assume):\nIs  c  zero or nonzero?\n```\n\nThis is caused by the following:\n\n```\nsage: eq = c != 0\nsage: eq._maxima_init_(assume=True)\n'(c)#(0)'\n\n(%i1) assume(c#0);\n`assume': `#' means syntactic nonequality in Maxima. Maybe you want to use `not equal'.\n -- an error.  To debug this try debugmode(true);\n\n```\nand is fixed by the following:\n\n```\nsage: sage.calculus.calculus.maxima.assume('notequal(c,0)');\nsage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)\n-75*sqrt(c^2)*arcsin(sqrt(c^2)*v/c^2)/8 - v^5/(4*c^4*sqrt(1 - v^2/c^2)) - 17*v^3/(8*c^2*sqrt(1 - v^2/c^2)) + 83*v/(8*sqrt(1 - v^2/c^2))\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2218\n\n",
+    "closed_at": "2008-02-20T09:41:32Z",
     "created_at": "2008-02-20T03:50:43Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "assuming an expression is not equal to zero doesn't work",
+    "title": "[with patch, positive review] assuming an expression is not equal to another expression doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2218",
     "user": "https://github.com/mwhansen"

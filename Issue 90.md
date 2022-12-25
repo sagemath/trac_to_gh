@@ -4,6 +4,7 @@ archive/issues_000090.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSAGE can't build with GCC 2.9x, so it shouldn't try.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/90\n\n",
+    "closed_at": "2007-08-09T21:49:11Z",
     "created_at": "2006-09-27T17:33:45Z",
     "labels": [
         "component: user interface",

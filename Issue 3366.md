@@ -1,17 +1,17 @@
-# Issue 3366: improve subs/subsitute inheritance
+# Issue 3366: improve subs/substitute inheritance
 
 archive/issues_003366.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  jbmohler\n\njbmohler wrote at #1440:\n\"\"\"\nsubs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class. I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded. Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug. \n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3366\n\n",
+    "closed_at": "2015-02-08T15:30:07Z",
     "created_at": "2008-06-04T20:39:40Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "improve subs/subsitute inheritance",
+    "title": "improve subs/substitute inheritance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3366",
     "user": "https://github.com/malb"

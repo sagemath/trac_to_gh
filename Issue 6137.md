@@ -1,16 +1,17 @@
-# Issue 6137: Symmetric functions: refactoring, step I
+# Issue 6137: Symmetric functions: refactoring to use coercions, categories, unique rep, and Hopf algebra framework
 
 archive/issues_006137.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nKeywords: symmetric functions, categories\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6137\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nKeywords: symmetric functions, categories\n\nSee: http://combinat.sagemath.org/patches/file/tip/categories-sf-6137-nt.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/6137\n\n",
+    "closed_at": "2009-11-19T16:59:45Z",
     "created_at": "2009-05-27T05:24:38Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Symmetric functions: refactoring, step I",
+    "title": "Symmetric functions: refactoring to use coercions, categories, unique rep, and Hopf algebra framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6137",
     "user": "https://github.com/nthiery"
@@ -22,7 +23,7 @@ CC:  sage-combinat @jbandlow
 
 Keywords: symmetric functions, categories
 
-
+See: http://combinat.sagemath.org/patches/file/tip/categories-sf-6137-nt.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/6137
 

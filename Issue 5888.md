@@ -1,9 +1,10 @@
-# Issue 5888: quadratic forms added a stupid/broken new function to sage for random integer.  Remove!
+# Issue 5888: [fixed by #5834] quadratic forms added a stupid/broken new function to sage for random integer.  Remove!
 
 archive/issues_005888.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\n```\n\n\nOn Thu, Apr 23, 2009 at 11:51 PM, Bill Hart <goodwillhart@googlemail.com> wrote:\n> Yeah, the random_int_upto function looks broken.\n> random_int_upto(2^100) is always divisible by 2^47. Not very random.\n\n\nI've never heard of that function, and expected it to be something you defined.\nI was surprised to find it is in Sage.\n\nThis was some weird crap that Jon Hanke just added to Sage in his big patch (bomb), evidently.\n\nFile:\t\t/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.py\nDefinition:\trandom_int_upto(n)\nSource:\ndef random_int_upto(n):\n    \"\"\"\n    Returns a random integer x satisfying 0 <= x < n.\n\n    EXAMPLES:\n        sage: x = random_int_upto(10) \n        sage: x >= 0\n        True\n        sage: x < 10\n        True\n    \"\"\"\n    return floor(n * random())\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5888\n\n",
+    "body": "Assignee: @jonhanke\n\nCC:  @JohnCremona\n\n```\n\n\nOn Thu, Apr 23, 2009 at 11:51 PM, Bill Hart <goodwillhart@googlemail.com> wrote:\n> Yeah, the random_int_upto function looks broken.\n> random_int_upto(2^100) is always divisible by 2^47. Not very random.\n\n\nI've never heard of that function, and expected it to be something you defined.\nI was surprised to find it is in Sage.\n\nThis was some weird crap that Jon Hanke just added to Sage in his big patch (bomb), evidently.\n\nFile:/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.py\nDefinition:random_int_upto(n)\nSource:\ndef random_int_upto(n):\n    \"\"\"\n    Returns a random integer x satisfying 0 <= x < n.\n\n    EXAMPLES:\n        sage: x = random_int_upto(10) \n        sage: x >= 0\n        True\n        sage: x < 10\n        True\n    \"\"\"\n    return floor(n * random())\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5888\n\n",
+    "closed_at": "2009-05-04T18:16:52Z",
     "created_at": "2009-04-24T06:53:32Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_005888.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "quadratic forms added a stupid/broken new function to sage for random integer.  Remove!",
+    "title": "[fixed by #5834] quadratic forms added a stupid/broken new function to sage for random integer.  Remove!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5888",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @jonhanke
 
 CC:  @JohnCremona
 
@@ -34,8 +35,8 @@ I was surprised to find it is in Sage.
 
 This was some weird crap that Jon Hanke just added to Sage in his big patch (bomb), evidently.
 
-File:		/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.py
-Definition:	random_int_upto(n)
+File:/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.py
+Definition:random_int_upto(n)
 Source:
 def random_int_upto(n):
     """

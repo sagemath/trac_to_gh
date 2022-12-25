@@ -1,9 +1,10 @@
-# Issue 9584: Some graph-related doctest failures and timeouts with 4.5.2.alpha0
+# Issue 9584: Weird timeouts in doctesting generic_graph with 4.5.2.alpha0 on some systems
 
 archive/issues_009584.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @nexttime @nathanncohen\n\nReported by John Palmieri and Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/da2dfbbe52d9917b#da2dfbbe52d9917b):\n\n```\nOn 07/23/2010 12:18 AM, leif wrote:\n> John H Palmieri wrote:\n>> On iras (ia64-Linux-suse), after continuing the build, one failure:\n>>\n>> sage -t -long \"devel/sage/sage/graphs/genus.pyx\"\n>> **********************************************************************\n>> File \"/home/palmieri/iras/sage-4.5.2.alpha0/devel/sage/sage/graphs/\n>> genus.pyx\", line 129:\n>>     sage: get_memory_usage(t)\n>> Expected:\n>>     0.0\n>> Got:\n>>     -0.28125\n>> **********************************************************************\n> \n> So whenever you run out of memory on that machine, start a few instances\n> of that program... :D :D :D\n> \n>> Several machines (cleo, iras) get timeouts on generic_graph.py.\n> \n> (Doesn't terminate within an hour here on 32-bit Ubuntu, Pentium 4...)\n```\nThese may be unrelated to each other, however.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9584\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @nexttime @nathanncohen\n\nKeywords: generic_graph, generic graph, time-out, time out\n\nReported by John Palmieri and Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/da2dfbbe52d9917b#da2dfbbe52d9917b):\n\n```\nOn 07/23/2010 12:18 AM, leif wrote:\n> John H Palmieri wrote:\n>> On iras (ia64-Linux-suse), after continuing the build, one failure:\n>>\n>> sage -t -long \"devel/sage/sage/graphs/genus.pyx\"\n>> **********************************************************************\n>> File \"/home/palmieri/iras/sage-4.5.2.alpha0/devel/sage/sage/graphs/\n>> genus.pyx\", line 129:\n>>     sage: get_memory_usage(t)\n>> Expected:\n>>     0.0\n>> Got:\n>>     -0.28125\n>> **********************************************************************\n> \n> So whenever you run out of memory on that machine, start a few instances\n> of that program... :D :D :D\n> \n>> Several machines (cleo, iras) get timeouts on generic_graph.py.\n> \n> (Doesn't terminate within an hour here on 32-bit Ubuntu, Pentium 4...)\n```\nThese may be unrelated to each other, however.\n\n---\n\nThe **doctest error** in `sage/graphs/generic_graph.py` on 32-bit systems is now #9594.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9584\n\n",
+    "closed_at": "2010-07-27T00:42:21Z",
     "created_at": "2010-07-23T08:12:35Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_009584.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "Some graph-related doctest failures and timeouts with 4.5.2.alpha0",
+    "title": "Weird timeouts in doctesting generic_graph with 4.5.2.alpha0 on some systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9584",
     "user": "https://github.com/qed777"
@@ -20,6 +21,8 @@ archive/issues_009584.json:
 Assignee: mvngu
 
 CC:  @jhpalmieri @nexttime @nathanncohen
+
+Keywords: generic_graph, generic graph, time-out, time out
 
 Reported by John Palmieri and Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/da2dfbbe52d9917b#da2dfbbe52d9917b):
 
@@ -47,6 +50,10 @@ On 07/23/2010 12:18 AM, leif wrote:
 > (Doesn't terminate within an hour here on 32-bit Ubuntu, Pentium 4...)
 ```
 These may be unrelated to each other, however.
+
+---
+
+The **doctest error** in `sage/graphs/generic_graph.py` on 32-bit systems is now #9594.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9584
 

@@ -3,7 +3,8 @@
 archive/issues_007200.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nThe method \"longest_increasing_subsequence\" was computing the longest increasing factors of the permutation!\n\nThis patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7200\n\n",
+    "body": "Assignee: vferay\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nThe method \"longest_increasing_subsequence\" was computing the longest increasing factors of the permutation!\n\nThis patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7200\n\n",
+    "closed_at": "2009-11-05T01:47:57Z",
     "created_at": "2009-10-13T14:04:38Z",
     "labels": [
         "component: combinatorics",
@@ -17,7 +18,7 @@ archive/issues_007200.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/vferay"
 }
 ```
-Assignee: @mwhansen
+Assignee: vferay
 
 CC:  sage-combinat
 

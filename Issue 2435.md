@@ -1,17 +1,18 @@
-# Issue 2435: Fix memory leak from #1337 workaround
+# Issue 2435: [with patch, needs review] Fix memory leak from #1337 workaround
 
 archive/issues_002435.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nThe workaround for the double free in #1337 causes memory leaks if the integer pool is full\n\nIssue created by migration from https://trac.sagemath.org/ticket/2435\n\n",
+    "closed_at": "2008-03-11T15:41:39Z",
     "created_at": "2008-03-09T05:32:17Z",
     "labels": [
         "component: memleak",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Fix memory leak from #1337 workaround",
+    "title": "[with patch, needs review] Fix memory leak from #1337 workaround",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2435",
     "user": "https://github.com/robertwb"

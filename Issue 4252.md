@@ -4,6 +4,7 @@ archive/issues_004252.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: Arrangements(range(5),4).count()\n116\nsage: len(list(sage.combinat.permutation.PermutationsNK(5,4).iterator()))\n116\nsage: factorial(5)/factorial(5-4)\n120\n```\n\nThey should all be 120. This also doesn't work for the pairs: (4,4), (5, 4), (5, 5), (6, 4), (6, 5), (6, 6), ....\n\nIssue created by migration from https://trac.sagemath.org/ticket/4252\n\n",
+    "closed_at": "2008-10-07T19:55:12Z",
     "created_at": "2008-10-07T19:40:10Z",
     "labels": [
         "component: combinatorics",

@@ -1,16 +1,17 @@
-# Issue 5265: Link the matrix_mod2_dense extension against png12
+# Issue 5265: [with patch, positive review] Link the matrix_mod2_dense extension against png12
 
 archive/issues_005265.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRight now we link the matrix_mod2_dense.pyx aginst libpng:\n\n```\n     Extension('sage.matrix.matrix_mod2_dense',\n               sources = ['sage/matrix/matrix_mod2_dense.pyx'],\n               libraries = ['gmp','m4ri', 'png', 'gd']),\n```\nWe need to link against png12 since the new libpng.spkg will only provide libpng12.*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5265\n\n",
+    "closed_at": "2009-02-14T13:24:41Z",
     "created_at": "2009-02-14T09:53:07Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Link the matrix_mod2_dense extension against png12",
+    "title": "[with patch, positive review] Link the matrix_mod2_dense extension against png12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5265",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

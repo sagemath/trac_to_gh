@@ -1,16 +1,17 @@
-# Issue 4391: [with patch, needs review] Sage 3.1.4: optional doctest failure in sage/schemes/elliptic_curves/ell_finite_field.py
+# Issue 4391: [with patch, with positive review] Sage 3.1.4: optional doctest failure in sage/schemes/elliptic_curves/ell_finite_field.py
 
 archive/issues_004391.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t -long -optional devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/ell_finite_field.py\", line 102:\n    sage: magma(E) # optional -- requires Magma\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        magma(E) # optional -- requires Magma###line 102:\n    sage: magma(E) # optional -- requires Magma\n    NameError: name 'E' is not defined\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4391\n\n",
+    "closed_at": "2008-10-30T07:42:54Z",
     "created_at": "2008-10-30T06:41:42Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Sage 3.1.4: optional doctest failure in sage/schemes/elliptic_curves/ell_finite_field.py",
+    "title": "[with patch, with positive review] Sage 3.1.4: optional doctest failure in sage/schemes/elliptic_curves/ell_finite_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4391",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

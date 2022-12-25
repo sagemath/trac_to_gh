@@ -4,6 +4,7 @@ archive/issues_002500.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUnless somebody thinks they can make \"sage -upgrade\" bulletproof, which I have no clue how to do, this gets deprecated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2500\n\n",
+    "closed_at": "2008-08-24T17:09:52Z",
     "created_at": "2008-03-12T16:56:27Z",
     "labels": [
         "component: build",

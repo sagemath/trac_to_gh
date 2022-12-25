@@ -1,16 +1,17 @@
-# Issue 5817: Update FLINT to 1.2.5 (latest upstream release)
+# Issue 5817: [with spkg, positive review] Update FLINT to 1.2.5 (latest upstream release)
 
 archive/issues_005817.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nI've release FLINT 1.2.5. This fixes a serious error that existed in\nzn_poly-0.8. Unbeknownst to me, David Harvey had already fixed this\nissue in zn_poly-0.9 but I had not realised that had been released,\ndue to him changing institutions and me not updating my link to his\nwebpage in my frequently visited tabs list. FLINT now uses zn_poly-0.9\nby default for polynomial arithmetic over Z/nZ in zmod_poly.\n\nThere is still an issue with z_factor which fails to factor some\nnumbers very rarely (it prints a message to say it has failed). Tom\nBoothby is working on a fix, and this should also speed up the\nfactorisation function noticeably.\n\nBill. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5817\n\n",
+    "closed_at": "2009-06-03T20:23:05Z",
     "created_at": "2009-04-18T23:20:28Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Update FLINT to 1.2.5 (latest upstream release)",
+    "title": "[with spkg, positive review] Update FLINT to 1.2.5 (latest upstream release)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5817",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

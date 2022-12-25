@@ -4,6 +4,7 @@ archive/issues_006592.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @mforets\n\ne.g.:\n\n```\nsage: var('x y')\nsage: f = (100 - x) + (1000 - y)\nsage: c = x + y - 479 # > 0\nsage: minimize_constrained(f,[c],[100,300])\nTraceback (most recent call last):\n...\nUnboundLocalError: local variable 'min' referenced before assignment\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6592\n\n",
+    "closed_at": "2017-07-26T22:13:49Z",
     "created_at": "2009-07-22T15:31:31Z",
     "labels": [
         "component: numerical",

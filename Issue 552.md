@@ -1,16 +1,17 @@
-# Issue 552: come up with a better way of deciding whether or not the SAGE install has moved
+# Issue 552: [with patch; positive review] come up with a better way of deciding whether or not the SAGE install has moved
 
 archive/issues_000552.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAll too often, because of symlinks, etc., my script for detecting whether or not the SAGE install\ntree has moved gets it wrong.  This is frickin' annoying.  I would like a way to determine this\nthat is much more intelligent. \n\nThe relevant code is SAGE_ROOT/local/bin/sage-location:\n\n```/usr/bin/env sage.bin\n\nimport os\n\nSAGE_ROOT = os.environ['SAGE_ROOT']\n\nlocation_file = '%s/local/lib/sage-current-location.txt'%SAGE_ROOT\n\ndef install_moved():\n    if not os.path.exists(location_file):\n        O = open(location_file,'w')\n        O.write(SAGE_ROOT)\n        O.close()\n        return False, ''   # first time -- so no need to update; this was during the build.\n\n    O = open(location_file)\n    R = O.read().strip()\n    O.close()\n    if os.path.abspath(R) != os.path.abspath(SAGE_ROOT):  # really different\n        return True, R  # it moved\n    return False, ''\n```\n\nAny better ideas???\n\nIssue created by migration from https://trac.sagemath.org/ticket/552\n\n",
+    "closed_at": "2008-10-31T21:30:19Z",
     "created_at": "2007-09-01T16:55:28Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "come up with a better way of deciding whether or not the SAGE install has moved",
+    "title": "[with patch; positive review] come up with a better way of deciding whether or not the SAGE install has moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/552",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_007801.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee `run_notebook.py`'s `run_twisted`, which generates `DOT_SAGE/sagen_notebook.sagenb/twistedconf.tac`.\n\nMentioned [comment:ticket:7514:16 here].\n\nIssue created by migration from https://trac.sagemath.org/ticket/7801\n\n",
+    "closed_at": "2010-01-19T03:33:52Z",
     "created_at": "2010-01-01T05:03:22Z",
     "labels": [
         "component: notebook",

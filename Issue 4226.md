@@ -1,15 +1,16 @@
-# Issue 4226: [with patch, needs reivew] Real Lazy Field
+# Issue 4226: [with patch, positive review] Real Lazy Field
 
 archive/issues_004226.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nThis is needed for number field embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4226\n\n",
+    "closed_at": "2008-10-01T10:32:28Z",
     "created_at": "2008-09-30T21:10:57Z",
     "labels": [
         "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs reivew] Real Lazy Field",
+    "title": "[with patch, positive review] Real Lazy Field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4226",
     "user": "https://github.com/robertwb"

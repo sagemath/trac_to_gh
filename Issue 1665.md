@@ -3,7 +3,8 @@
 archive/issues_001665.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs of jmol 11.5.2, one can store a collection of scripts and data inside a single zip archive. This reduces clutter from the command line, reduces http transactions for the browser, as well as giving one a single file to manage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1665\n\n",
+    "body": "Assignee: @robertwb\n\nAs of jmol 11.5.2, one can store a collection of scripts and data inside a single zip archive. This reduces clutter from the command line, reduces http transactions for the browser, as well as giving one a single file to manage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1665\n\n",
+    "closed_at": "2008-01-03T16:15:28Z",
     "created_at": "2008-01-03T11:29:29Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_001665.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 As of jmol 11.5.2, one can store a collection of scripts and data inside a single zip archive. This reduces clutter from the command line, reduces http transactions for the browser, as well as giving one a single file to manage. 
 

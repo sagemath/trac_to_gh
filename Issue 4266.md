@@ -1,16 +1,17 @@
-# Issue 4266: overflow error in SR approx
+# Issue 4266: [with patch, positive review] overflow error in SR approx
 
 archive/issues_004266.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nsage: round(sqrt(Integer('1'*500)))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 865, in round\n    except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6164, in __float__\n    return float(f._approx_(float(g)))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7941, in _approx_\n    return math.sqrt(x)\nOverflowError: math range error\n```\n\nApprox should fall back to mpfr if float fails. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4266\n\n",
+    "closed_at": "2008-11-28T07:32:47Z",
     "created_at": "2008-10-11T14:06:33Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "overflow error in SR approx",
+    "title": "[with patch, positive review] overflow error in SR approx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4266",
     "user": "https://github.com/robertwb"

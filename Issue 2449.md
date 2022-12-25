@@ -1,26 +1,34 @@
-# Issue 2449: interact -- interactive functions in the notebook
+# Issue 2449: [with patch; needs more reviews] interact -- interactive functions in the notebook
 
 archive/issues_002449.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timothyclemans\n\nThis was #1322.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2449\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\nThis was #1322. \n\nImplement something like Mathematica's manipulate.\n\nhttp://sage.math.washington.edu/home/was/tmp/interact.png\n\nThere will be two patch bundles attached to this email; each a bundle that applies cleanly against sage-2.10.3.rc3.  One against scripts and one against the main sage repo. \n\nI will not put anything in the reference manual until this code has got some testing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2449\n\n",
+    "closed_at": "2008-03-11T02:11:43Z",
     "created_at": "2008-03-09T23:45:58Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "interact -- interactive functions in the notebook",
+    "title": "[with patch; needs more reviews] interact -- interactive functions in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2449",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 CC:  timothyclemans
 
-This was #1322.
+This was #1322. 
+
+Implement something like Mathematica's manipulate.
+
+http://sage.math.washington.edu/home/was/tmp/interact.png
+
+There will be two patch bundles attached to this email; each a bundle that applies cleanly against sage-2.10.3.rc3.  One against scripts and one against the main sage repo. 
+
+I will not put anything in the reference manual until this code has got some testing. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2449
 

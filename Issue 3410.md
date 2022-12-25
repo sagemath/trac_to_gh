@@ -1,22 +1,25 @@
-# Issue 3410: [with patch, needs review] conversion of matrices over polynomial rings to magma is broken
+# Issue 3410: [with patch, positive review] conversion of matrices over polynomial rings to magma is broken
 
 archive/issues_003410.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAttached patch fixes conversion of matrices over polynomial rings to magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3410\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_craigcitro\n\nAttached patch fixes conversion of matrices over polynomial rings to magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3410\n\n",
+    "closed_at": "2008-07-02T19:23:54Z",
     "created_at": "2008-06-13T05:29:44Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] conversion of matrices over polynomial rings to magma is broken",
+    "title": "[with patch, positive review] conversion of matrices over polynomial rings to magma is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3410",
     "user": "https://github.com/burcin"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_craigcitro
 
 Attached patch fixes conversion of matrices over polynomial rings to magma.
 

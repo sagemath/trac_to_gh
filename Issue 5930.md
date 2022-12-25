@@ -1,26 +1,37 @@
-# Issue 5930: switch from maxima to pynac for core symbolic manipulation system
+# Issue 5930: [with patch,  positive review] switch from maxima to pynac for core symbolic manipulation system
 
 archive/issues_005930.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5930\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @burcin\n\nSEE http://wiki.sagemath.org/symbolics/pynac_todo/push\n\nIf you want to try the code out do this:\n\n1. Apply symbolics_final1.patch from #5777\n\n2. Apply symbolics_final2.patch from this ticket.\n\n3. Build new pynac spkg:\n     http://sage.math.washington.edu/home/mhansen/pynac-0.1.7.spkg\n     \n\nIssue created by migration from https://trac.sagemath.org/ticket/5930\n\n",
+    "closed_at": "2009-05-21T02:46:34Z",
     "created_at": "2009-04-29T01:52:44Z",
     "labels": [
-        "component: algebra",
+        "component: symbolics",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "switch from maxima to pynac for core symbolic manipulation system",
+    "title": "[with patch,  positive review] switch from maxima to pynac for core symbolic manipulation system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5930",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 CC:  @burcin
 
+SEE http://wiki.sagemath.org/symbolics/pynac_todo/push
 
+If you want to try the code out do this:
+
+1. Apply symbolics_final1.patch from #5777
+
+2. Apply symbolics_final2.patch from this ticket.
+
+3. Build new pynac spkg:
+     http://sage.math.washington.edu/home/mhansen/pynac-0.1.7.spkg
+     
 
 Issue created by migration from https://trac.sagemath.org/ticket/5930
 

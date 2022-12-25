@@ -4,6 +4,7 @@ archive/issues_000400.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere are numerous small problems in the code.  The first is that class Matrix is not known in this module.  The second is that is_symmetric() is not defined.  There are others, but this is a start.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/400\n\n",
+    "closed_at": "2007-08-29T01:51:09Z",
     "created_at": "2007-07-08T04:17:40Z",
     "labels": [
         "component: algebraic geometry",

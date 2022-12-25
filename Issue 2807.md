@@ -1,16 +1,17 @@
-# Issue 2807: line 26 of c_lib/src/interrupt.c is probably wrong
+# Issue 2807: [with patch, positive review] line 26 of c_lib/src/interrupt.c is wrong
 
 archive/issues_002807.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nLine 26 of c_lib/src/interrupt.c says:\n\n```\n if ( _signals.mpio && 1 ) {\n```\n\nit should probably be\n\n```\nif ( _signals.mpio & 1 ) {\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2807\n\n",
+    "closed_at": "2008-04-05T15:49:09Z",
     "created_at": "2008-04-05T14:50:26Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "line 26 of c_lib/src/interrupt.c is probably wrong",
+    "title": "[with patch, positive review] line 26 of c_lib/src/interrupt.c is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2807",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

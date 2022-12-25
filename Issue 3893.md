@@ -3,7 +3,8 @@
 archive/issues_003893.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nBecause:\n* some more highlevel `random_element` functions pass thru `*args` and `**kwds`\n* it unifies the interface to some extend \n* it allows the user to pass thru parameters\n\nIssue created by migration from https://trac.sagemath.org/ticket/3893\n\n",
+    "body": "Assignee: somebody\n\nKeywords: random_element, args, kwds\n\nBecause:\n* some more highlevel `random_element` functions pass thru `*args` and `**kwds`\n* it unifies the interface to some extend \n* it allows the user to pass thru parameters\n\n\n## Apply\n\n* patches from #8955\n* [attachment:trac_3893_args_kwds_for_random_element_4.6.alpha2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/3893\n\n",
+    "closed_at": "2010-10-04T02:48:24Z",
     "created_at": "2008-08-18T15:38:23Z",
     "labels": [
         "component: basic arithmetic"
@@ -17,10 +18,18 @@ archive/issues_003893.json:
 ```
 Assignee: somebody
 
+Keywords: random_element, args, kwds
+
 Because:
 * some more highlevel `random_element` functions pass thru `*args` and `**kwds`
 * it unifies the interface to some extend 
 * it allows the user to pass thru parameters
+
+
+## Apply
+
+* patches from #8955
+* [attachment:trac_3893_args_kwds_for_random_element_4.6.alpha2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/3893
 

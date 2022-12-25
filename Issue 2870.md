@@ -1,16 +1,17 @@
-# Issue 2870: [with patch, needs review] Various files poorly import calculus.py
+# Issue 2870: [with patch, positive review] Various files poorly import calculus.py
 
 archive/issues_002870.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nVarious files import specific classes from calculus.py instead of their wrappers, making them too dependent on calculus internals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2870\n\n",
+    "closed_at": "2008-04-10T13:36:25Z",
     "created_at": "2008-04-10T05:46:11Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] Various files poorly import calculus.py",
+    "title": "[with patch, positive review] Various files poorly import calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2870",
     "user": "https://github.com/garyfurnish"

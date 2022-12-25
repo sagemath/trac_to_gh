@@ -1,16 +1,17 @@
-# Issue 4124: disable pbuild
+# Issue 4124: [with patch, positive review] disable pbuild
 
 archive/issues_004124.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4124\n\n",
+    "closed_at": "2008-09-15T02:03:28Z",
     "created_at": "2008-09-15T01:10:24Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "disable pbuild",
+    "title": "[with patch, positive review] disable pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4124",
     "user": "https://github.com/rlmill"

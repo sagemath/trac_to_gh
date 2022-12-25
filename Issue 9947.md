@@ -1,16 +1,17 @@
-# Issue 9947: Conversion of p-adic to gp is buggy because of "+Infinity" exponent
+# Issue 9947: Conversion between p-adics and PARI/GP
 
 archive/issues_009947.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mstreng\n\n```\nsage: gp(pAdicField(5)(0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jdemeyer/<ipython console> in <module>()\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1032             return cls(self, x, name=name)\n   1033         try:\n-> 1034             return self._coerce_from_special_method(x)\n   1035         except TypeError:\n   1036             raise\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1056             s = '_gp_'\n   1057         try:\n-> 1058             return (x.__getattribute__(s))(self)\n   1059         except AttributeError:\n   1060             return self(x._interface_init_())\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._gp_ (sage/structure/sage_object.c:4092)()\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)()\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[2]=0 + O(5^+Infinity);\nGP/PARI ERROR:\n  ***   at top-level: sage[2]=0+O(5^+Infinity)\n  ***                                ^---------\n  ***   gtos expected an integer, got 'Infinity'.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9948\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mstreng\n\nKeywords: sd35\n\n```\nsage: gp(pAdicField(5)(0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jdemeyer/<ipython console> in <module>()\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1032             return cls(self, x, name=name)\n   1033         try:\n-> 1034             return self._coerce_from_special_method(x)\n   1035         except TypeError:\n   1036             raise\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1056             s = '_gp_'\n   1057         try:\n-> 1058             return (x.__getattribute__(s))(self)\n   1059         except AttributeError:\n   1060             return self(x._interface_init_())\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._gp_ (sage/structure/sage_object.c:4092)()\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)()\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/usr/local/src/sage-4.6.prealpha4/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[2]=0 + O(5^+Infinity);\nGP/PARI ERROR:\n  ***   at top-level: sage[2]=0+O(5^+Infinity)\n  ***                                ^---------\n  ***   gtos expected an integer, got 'Infinity'.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9948\n\n",
+    "closed_at": "2014-04-12T07:34:25Z",
     "created_at": "2010-09-19T11:02:53Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Conversion of p-adic to gp is buggy because of \"+Infinity\" exponent",
+    "title": "Conversion between p-adics and PARI/GP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9947",
     "user": "https://github.com/jdemeyer"
@@ -19,6 +20,8 @@ archive/issues_009947.json:
 Assignee: @williamstein
 
 CC:  @mstreng
+
+Keywords: sd35
 
 ```
 sage: gp(pAdicField(5)(0))

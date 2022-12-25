@@ -3,7 +3,8 @@
 archive/issues_008063.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nSetting SAGE64=yes not only works on OSX, but also with Open Solaris 64 bit.\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8063\n\n",
+    "body": "Assignee: drkirkby\n\nSetting SAGE64=yes not only works on OSX, but also with Open Solaris 64 bit.\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg)\n\nPS, CC'ing 'drkirby' will not get to me, as my user name is 'drkirkby'. \n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8063\n\n",
+    "closed_at": "2010-02-11T15:17:03Z",
     "created_at": "2010-01-25T21:49:41Z",
     "labels": [
         "component: porting"
@@ -22,7 +23,11 @@ Setting SAGE64=yes not only works on OSX, but also with Open Solaris 64 bit.
 The package can be found here:
 [http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg)
 
+PS, CC'ing 'drkirby' will not get to me, as my user name is 'drkirkby'. 
+
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8063
 

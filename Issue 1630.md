@@ -1,16 +1,17 @@
-# Issue 1630: update opencdk to 0.6.6
+# Issue 1630: [with spkg] update opencdk to 0.6.6
 
 archive/issues_001630.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1630\n\n",
+    "closed_at": "2008-01-19T22:59:43Z",
     "created_at": "2007-12-29T04:42:08Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update opencdk to 0.6.6",
+    "title": "[with spkg] update opencdk to 0.6.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1630",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

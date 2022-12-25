@@ -1,15 +1,16 @@
-# Issue 1271: update Singular to 3-0-4 release
+# Issue 1271: [with spkg] update Singular to 3-0-4 release
 
 archive/issues_001271.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSingular 3-0-4 should be released shortly. The non-final sources are already available.\n\nThis should also close #1074\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1271\n\n",
+    "closed_at": "2007-12-03T14:52:37Z",
     "created_at": "2007-11-25T18:32:09Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "update Singular to 3-0-4 release",
+    "title": "[with spkg] update Singular to 3-0-4 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1271",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

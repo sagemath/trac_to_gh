@@ -4,6 +4,7 @@ archive/issues_007150.json:
 ```json
 {
     "body": "CC:  @williamstein\n\nI am getting this in 4.1.1 and find it really frustrating (especially since it took me several hours to catch):\n\n\n```\nsage: QQ[\"x\", \"y\"].inject_variables()\nDefining x, y\nsage: e1 = x^2*y^3 - x^2*y - x*y\nsage: e2 = e1.parent().fraction_field()(e1)\nsage: print e2\nx^2*y^3 - x^2*y - x*y\nsage: print e2.subs(y=SR(\"s\"))\nx^2*s^3 - (x^2 - x)*s\n```\nThe last line is wrong!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7150\n\n",
+    "closed_at": "2009-10-16T05:00:29Z",
     "created_at": "2009-10-08T04:40:11Z",
     "labels": [
         "component: symbolics",

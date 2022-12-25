@@ -1,15 +1,16 @@
-# Issue 2741: Implement mesh lines in 3d plots
+# Issue 2741: [with patch; positive review] Implement mesh lines in 3d plots
 
 archive/issues_002741.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\n> >  Is there an easy way to get mesh lines in a plot3d surface?\n\n\nThis is not implemented.  I wish you would implement it  :-) \n\nRobert Bradshaw might have some useful advise.\n\n> > Sometimes\n> >  it is hard to visualize the plot (especially when it is printed) without\n> >  the mesh lines.\n\n> >\n> >  If that is easy, what about the possibility of doing some of things that\n> >  Mma does with different types of meshes?  For reference, see:\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/Mesh.html\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshShading.html\n\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html\n\n> >\n\nIssue created by migration from https://trac.sagemath.org/ticket/2741\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\n> >  Is there an easy way to get mesh lines in a plot3d surface?\n\n\nThis is not implemented.  I wish you would implement it  :-) \n\nRobert Bradshaw might have some useful advise.\n\n```\n> > Sometimes\n> >  it is hard to visualize the plot (especially when it is printed) without\n> >  the mesh lines.\n> >\n> >  If that is easy, what about the possibility of doing some of things that\n> >  Mma does with different types of meshes?  For reference, see:\n> >\n> >  http://reference.wolfram.com/mathematica/ref/Mesh.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshShading.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html\n> >\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2741\n\n",
+    "closed_at": "2008-04-30T05:47:48Z",
     "created_at": "2008-03-31T18:19:49Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Implement mesh lines in 3d plots",
+    "title": "[with patch; positive review] Implement mesh lines in 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2741",
     "user": "https://github.com/jasongrout"
@@ -26,27 +27,23 @@ This is not implemented.  I wish you would implement it  :-)
 
 Robert Bradshaw might have some useful advise.
 
+```
 > > Sometimes
 > >  it is hard to visualize the plot (especially when it is printed) without
 > >  the mesh lines.
-
 > >
 > >  If that is easy, what about the possibility of doing some of things that
 > >  Mma does with different types of meshes?  For reference, see:
-
 > >
 > >  http://reference.wolfram.com/mathematica/ref/Mesh.html
-
 > >
 > >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html
-
 > >
 > >  http://reference.wolfram.com/mathematica/ref/MeshShading.html
-
 > >
 > >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html
-
 > >
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/2741
 

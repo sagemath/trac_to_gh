@@ -4,6 +4,7 @@ archive/issues_007533.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: distance graph\n\nCreate a new graph from an old graph by making vertices of the new graph adjacent exactly when they are a certain distance apart in the old graph.  This construction is useful in algebraic graph theory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7533\n\n",
+    "closed_at": "2009-11-29T05:57:55Z",
     "created_at": "2009-11-26T07:02:45Z",
     "labels": [
         "component: graph theory",

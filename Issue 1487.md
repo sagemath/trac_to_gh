@@ -4,6 +4,7 @@ archive/issues_001487.json:
 ```json
 {
     "body": "Assignee: mabsoff\n\n3.8.p3 breaks during the building of the finaly libraries when using parallel make. So disable parallel in spkg-install. This is fixed in 3.8.p4.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1487\n\n",
+    "closed_at": "2007-12-14T02:26:57Z",
     "created_at": "2007-12-13T17:39:44Z",
     "labels": [
         "component: packages: standard",

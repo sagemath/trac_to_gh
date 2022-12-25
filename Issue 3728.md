@@ -1,16 +1,18 @@
-# Issue 3728: tutorial: add documentation for solving matrix equations
+# Issue 3728: [with patch, positive review] tutorial: add documentation for solving matrix equations
 
 archive/issues_003728.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: tutorial, matrix equations\n\nI don't think that the current documentation for solving matrix equations is sufficient, so I've added a little bit in the \"linear algebra\" section of the guided tour in the tutorial.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3728\n\n",
+    "closed_at": "2008-09-03T19:18:26Z",
     "created_at": "2008-07-26T16:27:11Z",
     "labels": [
         "component: documentation",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "tutorial: add documentation for solving matrix equations",
+    "title": "[with patch, positive review] tutorial: add documentation for solving matrix equations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3728",
     "user": "https://github.com/jhpalmieri"

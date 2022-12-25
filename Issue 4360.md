@@ -1,21 +1,22 @@
-# Issue 4360: [with patch, needs review] fraction field improvements
+# Issue 4360: [with patch, positive review] fraction field improvements
 
 archive/issues_004360.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nAttached patches move `sage.rings.fraction_field.FractionField_generic` to the new coercion model, and cythonize the `sage.rings.fraction_field_element.FractionFieldElement` class. They also allow homomorphisms of fraction fields to work, and make the `random_element()` method of fractions fields return sensible results.\n\nI will follow these up with specialized classes for rational functions.\n\nThe patches depend on #4278.\n\nSince one of the patches renames a file (from *.py to *.pyx) it contains a git style patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4360\n\n",
+    "body": "Assignee: @burcin\n\nAttached patches move `sage.rings.fraction_field.FractionField_generic` to the new coercion model, and cythonize the `sage.rings.fraction_field_element.FractionFieldElement` class. They also allow homomorphisms of fraction fields to work, and make the `random_element()` method of fractions fields return sensible results.\n\nI will follow these up with specialized classes for rational functions.\n\nThe patches depend on #4278.\n\nSince one of the patches renames a file (from *.py to *.pyx) it contains a git style patch.  Here are the lines you need in the .hgrc file:\n\n```\n[diff]\ngit = 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4360\n\n",
+    "closed_at": "2008-12-07T08:05:27Z",
     "created_at": "2008-10-24T09:23:03Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] fraction field improvements",
+    "title": "[with patch, positive review] fraction field improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4360",
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: somebody
+Assignee: @burcin
 
 Attached patches move `sage.rings.fraction_field.FractionField_generic` to the new coercion model, and cythonize the `sage.rings.fraction_field_element.FractionFieldElement` class. They also allow homomorphisms of fraction fields to work, and make the `random_element()` method of fractions fields return sensible results.
 
@@ -23,7 +24,13 @@ I will follow these up with specialized classes for rational functions.
 
 The patches depend on #4278.
 
-Since one of the patches renames a file (from *.py to *.pyx) it contains a git style patch.
+Since one of the patches renames a file (from *.py to *.pyx) it contains a git style patch.  Here are the lines you need in the .hgrc file:
+
+```
+[diff]
+git = 1
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4360
 

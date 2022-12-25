@@ -3,10 +3,12 @@
 archive/issues_007656.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThere are some extra tricks in here: http://www.jjj.de/fxt/#fxtbook\n\nin the first chapter for doing bitset operations that ought to be applied to our Bitset class.  For example, there is a trick that allows you to count the number of bits in log time instead of linear time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7656\n\n",
+    "body": "Assignee: tbd\n\nThere are some extra tricks in here: http://www.jjj.de/fxt/#fxtbook\n\nin the first chapter for doing bitset operations that ought to be applied to our Bitset class.  For example, there is a trick that allows you to count the number of bits in log time instead of linear time.\n\nMore bitset tricks can be found at:\n\n* [The Aggregate Magic Algorithms](http://aggregate.org/MAGIC/) by Hank Dietz\n* [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html) by Sean Eron Anderson\n* [All The Twiddled Bits](http://bits.stephan-brumme.com) by Stephan Brumme\n\nThe project on this ticket can be divided up into the following sub-projects:\n\n1. #10287 memleak in bitset_realloc()\n2. #10093 clean up documentation of sage/misc/bitset.pyx\n3. #10269 clean up documentation of sage/misc/bitset_pxd.pxi\n4. #10245 clean up documentation of sage/misc/bitset.pxi\n\nIssue created by migration from https://trac.sagemath.org/ticket/7656\n\n",
+    "closed_at": "2014-09-15T14:56:06Z",
     "created_at": "2009-12-11T04:03:16Z",
     "labels": [
-        "component: misc"
+        "component: misc",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bitset tricks",
@@ -20,6 +22,19 @@ Assignee: tbd
 There are some extra tricks in here: http://www.jjj.de/fxt/#fxtbook
 
 in the first chapter for doing bitset operations that ought to be applied to our Bitset class.  For example, there is a trick that allows you to count the number of bits in log time instead of linear time.
+
+More bitset tricks can be found at:
+
+* [The Aggregate Magic Algorithms](http://aggregate.org/MAGIC/) by Hank Dietz
+* [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html) by Sean Eron Anderson
+* [All The Twiddled Bits](http://bits.stephan-brumme.com) by Stephan Brumme
+
+The project on this ticket can be divided up into the following sub-projects:
+
+1. #10287 memleak in bitset_realloc()
+2. #10093 clean up documentation of sage/misc/bitset.pyx
+3. #10269 clean up documentation of sage/misc/bitset_pxd.pxi
+4. #10245 clean up documentation of sage/misc/bitset.pxi
 
 Issue created by migration from https://trac.sagemath.org/ticket/7656
 

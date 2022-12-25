@@ -1,15 +1,16 @@
-# Issue 1461: [with patch] implement general subs_expr for calculus expressions
+# Issue 1461: [with patch, with positive review] implement general subs_expr for calculus expressions
 
 archive/issues_001461.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nImplement general expression substitution, as per Ondjej C.'s request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1461\n\n",
+    "closed_at": "2007-12-15T12:08:40Z",
     "created_at": "2007-12-11T20:11:19Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with patch] implement general subs_expr for calculus expressions",
+    "title": "[with patch, with positive review] implement general subs_expr for calculus expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1461",
     "user": "https://github.com/williamstein"

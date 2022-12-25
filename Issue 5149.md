@@ -1,16 +1,17 @@
-# Issue 5149: [with patch; needs review] Cremona database -- fix a bug in handling of 990h
+# Issue 5149: [with patch; positive review] Cremona database -- fix a bug in handling of 990h
 
 archive/issues_005149.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nJohn mentioned that 990h3 is a special case in ticket #5138 -- I looked at the Cremona database code and found that there was one function where this special case isn't treated correctly.  I fixed that and added some doctests.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5149\n\n",
+    "closed_at": "2009-02-02T02:56:56Z",
     "created_at": "2009-02-01T08:34:22Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch; needs review] Cremona database -- fix a bug in handling of 990h",
+    "title": "[with patch; positive review] Cremona database -- fix a bug in handling of 990h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5149",
     "user": "https://github.com/williamstein"

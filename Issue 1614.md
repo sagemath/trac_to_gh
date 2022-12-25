@@ -4,6 +4,7 @@ archive/issues_001614.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\nWe have a lot of extensions directly listed in the `ext_modules section`. Move those out and also sort the `ext_modules list`\n\nIssue created by migration from https://trac.sagemath.org/ticket/1614\n\n",
+    "closed_at": "2008-11-13T16:32:39Z",
     "created_at": "2007-12-28T17:02:27Z",
     "labels": [
         "component: distribution",

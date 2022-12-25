@@ -1,15 +1,16 @@
-# Issue 2242: optional nauty package
+# Issue 2242: [with spkg and patch, positive review] optional nauty package
 
 archive/issues_002242.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nIt's available here:\n\nhttp://sage.math.washington.edu/home/jason/nauty-24b7.spkg\n\nIt is the 2.4 beta 7 version, since Brendan says that it is pretty stable.  It would be trivial to make a nauty 2.2 stable version if people wanted it.\n\nThis is the spkg for #1306.  Now we just need to make the interface in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2242\n\n",
+    "body": "Assignee: @rlmill\n\nIt's available here:\n\nhttp://sage.math.washington.edu/home/jason/nauty-24b7.spkg\n\nIt is the 2.4 beta 7 version, since Brendan says that it is pretty stable.  It would be trivial to make a nauty 2.2 stable version if people wanted it.\n\nThis is the spkg for #1301.  Now we just need to make the interface in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2242\n\n",
+    "closed_at": "2008-04-07T21:40:41Z",
     "created_at": "2008-02-21T00:41:09Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "optional nauty package",
+    "title": "[with spkg and patch, positive review] optional nauty package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2242",
     "user": "https://github.com/jasongrout"
@@ -23,7 +24,7 @@ http://sage.math.washington.edu/home/jason/nauty-24b7.spkg
 
 It is the 2.4 beta 7 version, since Brendan says that it is pretty stable.  It would be trivial to make a nauty 2.2 stable version if people wanted it.
 
-This is the spkg for #1306.  Now we just need to make the interface in Sage.
+This is the spkg for #1301.  Now we just need to make the interface in Sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2242
 

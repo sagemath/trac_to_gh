@@ -4,9 +4,11 @@ archive/issues_001757.json:
 ```json
 {
     "body": "Assignee: somebody\n\nFrom the MAGMA 2.14 changelog: \"Coppersmith's method for finding small roots of univariate polynomials modulo an integer has been implemented. This implementation uses the new fpLLL package of Damien Stehl\u00e9.\" ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )\n\nIssue created by migration from https://trac.sagemath.org/ticket/1757\n\n",
+    "closed_at": "2008-03-20T14:11:09Z",
     "created_at": "2008-01-11T18:36:46Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "implement Coppersmith's method for finding small roots of univariate polynomials modulo an integer",

@@ -1,9 +1,10 @@
-# Issue 2715: sage -coverage currently counts functions that are defined in doctests
+# Issue 2715: [with patch, positive review] sage -coverage currently counts functions that are defined in doctests
 
 archive/issues_002715.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2715\n\n",
+    "closed_at": "2008-03-29T21:57:28Z",
     "created_at": "2008-03-29T02:41:45Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_002715.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "sage -coverage currently counts functions that are defined in doctests",
+    "title": "[with patch, positive review] sage -coverage currently counts functions that are defined in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2715",
     "user": "https://github.com/mwhansen"

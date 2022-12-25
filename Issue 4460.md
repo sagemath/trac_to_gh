@@ -1,16 +1,17 @@
-# Issue 4460: add link to PDF manuals in doc/html/index.html
+# Issue 4460: [with patch, positive review] add link to PDF manuals in doc/html/index.html
 
 archive/issues_004460.json:
 ```json
 {
     "body": "Assignee: tba\n\nAdding a link to the PDF versions of the manuals from the /html/index.html page. Both, useful locally and on the website. But I don't know how this page is generated (i get errors or nothing happens) and it isn't even under revision control. Here my improvised patch:\n\n```\nadd in /sage/devel/doc-main/html/index.html.in at line 88:\n------------\n <ul>\n\t    <li> <font size=+2><a href=\"../paper-$(PAPER)/\" class=\"title\">PDF Versions</a></font>\n\t      <br>\n\t  </ul>\n-------------\n```\n\nAn enhancement would be to link to each .pdf file directly, something like \"link to html (PDF)\" for each link.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4460\n\n",
+    "closed_at": "2009-07-30T01:46:34Z",
     "created_at": "2008-11-07T10:09:25Z",
     "labels": [
         "component: documentation",
-        "critical"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "add link to PDF manuals in doc/html/index.html",
+    "title": "[with patch, positive review] add link to PDF manuals in doc/html/index.html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4460",
     "user": "https://github.com/haraldschilly"

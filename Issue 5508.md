@@ -1,15 +1,16 @@
-# Issue 5508: [with patch, needs review] Improvements for relative number fields
+# Issue 5508: [with patch, positive review] Improvements for relative number fields
 
 archive/issues_005508.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patch implements many improvements for relative number fields.  \nIn particular a whole load of previously unimplemented functions for ideals in a relative number field now work, and others work better.\n\nFollowing discussion at\n[sage-nt thread](http://groups.google.co.uk/group/sage-nt/browse_thread/thread/16106258cd436515?hl=en-GB),\nfor several functions the distinction between the relative and absolute \nversion has been made explicit, in order to  avoid ambiguity.  \nThus, for example, for a relative number \nfield both relative_degree and absolute_degree are defined but degree is \nunimplemented, while for an absolute number field relative_degree, \nabsolute_degree and degree are *all* defined (with the same meaning).  \nThis has entailed a few minor changes to enable \nfunctions to work with either absolute or relative number fields.\n\nIt has been suggested that `NumberField` should only be allowed to generate \nan absolute number field.  I have not implemented this, but I have made `NumberFieldTower` publicly available and used it in several \ndoctests.  If a change was made to `NumberField`, `NumberFieldTower` could \nretain the old functionality of `NumberField`.\n\nA number of other minor changes have been made, and these seem to fix\n#5276, #5214 and #2551\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5508\n\n",
+    "closed_at": "2009-03-25T08:52:56Z",
     "created_at": "2009-03-13T11:55:25Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Improvements for relative number fields",
+    "title": "[with patch, positive review] Improvements for relative number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5508",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

@@ -4,6 +4,7 @@ archive/issues_000208.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: Magma, polynomial, coercion\n\nThe following code segment causes a segmentation fault (unhandled SIGSEGV):\n\n```\nP.<x> = PolynomialRing(Rationals())\ny = magma(x) * 1.0\n```\nThe expected behavior is to return a Magma polynomial over the real field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/208\n\n",
+    "closed_at": "2007-01-23T20:05:36Z",
     "created_at": "2007-01-23T18:25:41Z",
     "labels": [
         "component: interfaces",

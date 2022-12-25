@@ -3,10 +3,11 @@
 archive/issues_009502.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nThere is an inconsistency in the example below for the echelonized basis of submodules with basis:\n\n```\nsage: F = FreeModule(ZZ, 3)\nsage: S = F.submodule_with_basis([(1,2,3),(3,2,1)])\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nUser basis matrix:\n[1 2 3]\n[3 2 1]\nsage: parent(S.echelonized_basis()[0])\nAmbient free module of rank 3 over the principal ideal domain Integer Ring\n```\n\nFor automatic bases everything is OK:\n\n```\nsage: S = F.submodule([(1,2,3),(3,2,1)])\nsage: parent(S.echelonized_basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\n```\n\nI am working on a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9502\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nThere is an inconsistency in the example below for the echelonized basis of submodules with basis:\n\n```\nsage: F = FreeModule(ZZ, 3)\nsage: S = F.submodule_with_basis([(1,2,3),(3,2,1)])\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nUser basis matrix:\n[1 2 3]\n[3 2 1]\nsage: parent(S.echelonized_basis()[0])\nAmbient free module of rank 3 over the principal ideal domain Integer Ring\n```\n\nFor automatic bases everything is OK:\n\n```\nsage: S = F.submodule([(1,2,3),(3,2,1)])\nsage: parent(S.echelonized_basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\nsage: parent(S.basis()[0])\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 2 3]\n[0 4 8]\n```\n\nWhile I was working on this patch, I expanded documentation for `FreeModule_submodule_with_basis_pid` and rewrote its constructor to fix the issue on this ticket and make its logic more clear.\n\nI have also discovered that it avoids calling the base constructor which checks that the base ring is indeed a PID. I tried to fix, got errors, fixed one of them (thanks to Mike Hansen), but there are more with number fields and since it was not the main issue on this ticket I delegated it to #9503.\n\nCurrent patch passed all tests on 4.5.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9502\n\n",
+    "closed_at": "2010-09-15T10:00:29Z",
     "created_at": "2010-07-15T02:49:51Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -50,7 +51,11 @@ Echelon basis matrix:
 [0 4 8]
 ```
 
-I am working on a patch to fix this.
+While I was working on this patch, I expanded documentation for `FreeModule_submodule_with_basis_pid` and rewrote its constructor to fix the issue on this ticket and make its logic more clear.
+
+I have also discovered that it avoids calling the base constructor which checks that the base ring is indeed a PID. I tried to fix, got errors, fixed one of them (thanks to Mike Hansen), but there are more with number fields and since it was not the main issue on this ticket I delegated it to #9503.
+
+Current patch passed all tests on 4.5.alpha1.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9502
 

@@ -1,15 +1,16 @@
-# Issue 4747: [with patch; needs review] add custom hash function for cusps.
+# Issue 4747: [with new patch; with positive review] add custom hash function for cusps.
 
 archive/issues_004747.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis speeds up hash(c) for c a cusp by a lot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4747\n\n",
+    "closed_at": "2008-12-14T20:07:57Z",
     "created_at": "2008-12-09T21:59:30Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch; needs review] add custom hash function for cusps.",
+    "title": "[with new patch; with positive review] add custom hash function for cusps.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4747",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_008729.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/f82e24efdfe23b07/d9e563f086b1136d for a solution\n\n```\nsage: a=sqrt((sin(t))^2 + (cos(t))^2)\nsage: integrate(a, t, 0, 2*pi) # WRONG!\npi\nsage: a.simplify_full().simplify_trig()\n1\nsage: integrate(a.simplify_full().simplify_trig(), t, 0, 2*pi)\n2*pi \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8729\n\n",
+    "closed_at": "2010-06-25T11:23:32Z",
     "created_at": "2010-04-20T16:52:51Z",
     "labels": [
         "component: calculus",

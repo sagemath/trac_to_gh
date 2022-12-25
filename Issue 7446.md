@@ -4,6 +4,7 @@ archive/issues_007446.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThere was one tiny problem in sagenb-0.4.2, which Mitesh Patel found.  This spkg fixes that.  \n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7446\n\n",
+    "closed_at": "2009-11-13T04:30:45Z",
     "created_at": "2009-11-12T17:24:47Z",
     "labels": [
         "component: notebook",

@@ -3,7 +3,8 @@
 archive/issues_007969.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following input in the notebook produces the wrong output:\n\n```\n%python\n2+2\nprint \"\"\"\\\na\\\\\nn\nc\n\"\"\"\n```\n\nIt should return\n\n```\na\\\nn\nc\n```\n\nbut instead prints\n\n```\na\n\nc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7969\n\n",
+    "body": "Assignee: @TimDumol\n\nThe following input in the notebook produces the wrong output:\n\n```\n%python\n2+2\nprint \"\"\"\\\na\\\\\nn\nc\n\"\"\"\n```\n\nIt should return\n\n```\na\\\nn\nc\n```\n\nbut instead prints\n\n```\na\n\nc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7969\n\n",
+    "closed_at": "2010-01-25T00:51:22Z",
     "created_at": "2010-01-17T21:21:38Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_007969.json:
     "user": "https://github.com/wjp"
 }
 ```
-Assignee: @williamstein
+Assignee: @TimDumol
 
 The following input in the notebook produces the wrong output:
 

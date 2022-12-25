@@ -1,16 +1,17 @@
-# Issue 8907: build Python as a shared library
+# Issue 8907: build Python with --enabled-shared
 
 archive/issues_008907.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis is needed by #8542 .  There is an spkg at http://sage.math.washington.edu/home/mhansen/python-2.6.4.p8.spkg but it requires lots of testing.  Also, the changes are not committed to the repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8907\n\n",
+    "closed_at": "2010-05-26T00:44:22Z",
     "created_at": "2010-05-06T17:10:55Z",
     "labels": [
-        "component: algebra",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
-    "title": "build Python as a shared library",
+    "title": "build Python with --enabled-shared",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8907",
     "user": "https://github.com/mwhansen"

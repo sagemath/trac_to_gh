@@ -1,9 +1,10 @@
-# Issue 6853: [with patch, needs review] Templating tag typo
+# Issue 6853: [with patch, positive review] Templating tag typo
 
 archive/issues_006853.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nThere is an incomplete closing script tag in `server/notebook/templates/notebook/head.tmpl`:\n\n```\n<script type=\"text/javascript\" src=\"/javascript/sage3d.js\"></script\n```\n\nI don't know if this actually affects any rendering engine.  I just noticed it when viewing the source for a worksheet page in Firefox.\n\nThis depends on #6568.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6853\n\n",
+    "closed_at": "2009-09-03T08:16:57Z",
     "created_at": "2009-08-31T22:09:05Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_006853.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Templating tag typo",
+    "title": "[with patch, positive review] Templating tag typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6853",
     "user": "https://github.com/qed777"

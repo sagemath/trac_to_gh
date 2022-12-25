@@ -3,7 +3,8 @@
 archive/issues_009332.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  adeines @JohnCremona jeremywest\n\nThe title says it all. I have a fix ready to go\n\nIssue created by migration from https://trac.sagemath.org/ticket/9332\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  adeines @JohnCremona jeremywest\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9332\n\n",
+    "closed_at": "2011-01-19T22:20:48Z",
     "created_at": "2010-06-24T21:23:42Z",
     "labels": [
         "component: number fields"
@@ -19,7 +20,7 @@ Assignee: @loefflerd
 
 CC:  adeines @JohnCremona jeremywest
 
-The title says it all. I have a fix ready to go
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9332
 

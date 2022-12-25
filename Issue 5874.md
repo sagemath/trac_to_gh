@@ -1,22 +1,23 @@
-# Issue 5874: [with patch, needs review] Fix readline build on FreeBSD
+# Issue 5874: [with patch, positive review] Fix readline build on FreeBSD
 
 archive/issues_005874.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  chet.ramey@case.edu\n\nChase shared library name difference on FreeBSD. Without this patch, the build claims that expected files don't exist.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5874\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  chet.ramey@case.edu\n\nChase shared library name difference on FreeBSD. Without this patch, the build claims that expected files don't exist.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5874\n\n",
+    "closed_at": "2009-07-02T23:07:32Z",
     "created_at": "2009-04-23T08:47:52Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] Fix readline build on FreeBSD",
+    "title": "[with patch, positive review] Fix readline build on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5874",
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 CC:  chet.ramey@case.edu
 

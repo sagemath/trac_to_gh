@@ -1,15 +1,16 @@
-# Issue 6813: [with patch, needs review] The whole world in a graph
+# Issue 6813: The whole world in a graph
 
 archive/issues_006813.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nsee http://groups.google.com/group/sage-devel/browse_thread/thread/25e57b8421c0ae9c/5ed13d13bc41b370#5ed13d13bc41b370\n\nThis patch adds a function WorldMap to graph_generators.py, which lets the user load the graph in which vertices are countries and links denote a shared boundary between two of them. The data I used to build this comes from The Cia Factbook ( mentionned in the docstring )\n\nTo use it, you need to apply the patch, but also to move the file graph_world.sobj to SAGE_ROOT/data/graphs/\n\nThank you for your help ! :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6813\n\n",
+    "closed_at": "2009-11-29T04:50:40Z",
     "created_at": "2009-08-23T08:43:18Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] The whole world in a graph",
+    "title": "The whole world in a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6813",
     "user": "https://github.com/nathanncohen"

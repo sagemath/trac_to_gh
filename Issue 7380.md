@@ -4,6 +4,7 @@ archive/issues_007380.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nAs the title says, there are many places where Graph.vertices() is used when Graph.vertex_iterator ( or even self ) would be better. The same goes for edges.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7380\n\n",
+    "closed_at": "2010-03-01T10:53:11Z",
     "created_at": "2009-11-03T11:25:56Z",
     "labels": [
         "component: graph theory",

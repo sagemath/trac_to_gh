@@ -3,10 +3,12 @@
 archive/issues_009008.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nThe zlib package building 32-bit on OpenSolaris (see #7128), and has various hacks to make it build 64-bit on OS X. The spkg-install has various hacks, which I think are better implemented other ways. \n\n1) \n\n```\n-I\\\"$SAGE_LOCAL/include\\\"\"\n```\n\nseems better replaced by the command line option available on the configure script. \n\n```\n--includedir=\"$SAGE_LOCAL/include\" \n```\n\n2) Adding \n\n```\n-m64\n``` \nis not currently the correct way to make a 64-bit build - the option \n\n```\n--64\n```\n\nis for that purpose. The developer (Mark Alder) was surprised hacks were needed for OS X, as that is his main development platform. \n\n3) The spkg-install adds \n\n```\n-fPIC\n```\n\nwhich apparently is(was) needed on Debian on Itanium. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. \n\nThis package is much cleaner, but may not work on all platforms. It would be better to make the code cleaner, and fix what (if any) issues do actually still exist. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9008\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe zlib package building 32-bit on OpenSolaris (see #7128), and has various hacks to make it build 64-bit on OS X. The spkg-install has various hacks, which I think are better implemented other ways. \n\n1) \n\n```\n-I\\\"$SAGE_LOCAL/include\\\"\"\n```\n\nseems better replaced by the command line option available on the configure script. \n\n```\n--includedir=\"$SAGE_LOCAL/include\" \n```\n\n2) Adding \n\n```\n-m64\n``` \nis not currently the correct way to make a 64-bit build - the option \n\n```\n--64\n```\n\nis for that purpose. The developer (Mark Alder) was surprised hacks were needed for OS X, as that is his main development platform. \n\n3) The spkg-install adds \n\n```\n-fPIC\n```\n\nwhich apparently is(was) needed on Debian on Opteron. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. \n\nThis package is much cleaner, but may not work on all platforms. It would be better to make the code cleaner, and fix what (if any) issues do actually still exist. \n\nDave\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9008\n\n",
+    "closed_at": "2010-06-25T15:38:14Z",
     "created_at": "2010-05-21T14:40:02Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -16,7 +18,7 @@ archive/issues_009008.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 CC:  @jaapspies
 
@@ -53,11 +55,12 @@ is for that purpose. The developer (Mark Alder) was surprised hacks were needed 
 -fPIC
 ```
 
-which apparently is(was) needed on Debian on Itanium. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. 
+which apparently is(was) needed on Debian on Opteron. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. 
 
 This package is much cleaner, but may not work on all platforms. It would be better to make the code cleaner, and fix what (if any) issues do actually still exist. 
 
 Dave
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9008
 

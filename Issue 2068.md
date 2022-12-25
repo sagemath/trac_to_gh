@@ -1,16 +1,17 @@
-# Issue 2068: zlib -- not picking up the right zlib when building libpng
+# Issue 2068: [with spkg] zlib -- not picking up the right zlib when building libpng
 
 archive/issues_002068.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n\nHi,\n\nlibpng-1.2.22.p5 added this in spkg-install:\nLDFLAGS=\"-L\\\"$SAGE_LOCAL/lib\\\" $LDFLAGS\"\n\nI tried the following modification:\nLDFLAGS=\"-L$SAGE_LOCAL/lib $LDFLAGS\"\nand it worked.\n\nThe problem is that quoting the arg of -L seems still wise as the path\ncould contain a space but it seems it interferes with the (eval\n\"$ac_link\") 2>conftest.er1  in src/configure.\nE.g. the original LD_FLAGS definition works if we use instead: (eval\nbash -c \\\"$ac_link\\\") 2>conftest.er1\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2068\n\n",
+    "closed_at": "2008-02-15T02:14:13Z",
     "created_at": "2008-02-05T23:13:09Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "zlib -- not picking up the right zlib when building libpng",
+    "title": "[with spkg] zlib -- not picking up the right zlib when building libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2068",
     "user": "https://github.com/williamstein"

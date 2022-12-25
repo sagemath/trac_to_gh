@@ -4,6 +4,7 @@ archive/issues_001984.json:
 ```json
 {
     "body": "Assignee: tba\n\nin v2.10, after the build process is complete, change directories to devel/doc and run make html. This gives an emergency stop on \\`@`mathbf when processing ref.toc. In order to successfully generate the HTML documentation I  had to first run \n\nsed -i -e \"s/`@`mathbf/mathbf/g\" ../doc-main/ref/ref.toc\n\nwhich simply removed the unnecessary '`@`' sign before mathbf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1984\n\n",
+    "closed_at": "2009-02-26T17:22:48Z",
     "created_at": "2008-01-30T13:42:31Z",
     "labels": [
         "component: documentation",

@@ -1,9 +1,10 @@
-# Issue 2403: Cannot copy Sequence
+# Issue 2403: [with patch; with positive review] Cannot copy Sequence
 
 archive/issues_002403.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI get an error when I am trying to copy a sequence:\n\n\n```\nsage: copy([1,2])\n[1, 2]\nsage: copy(Sequence([1,2]))\nTraceback (most recent call last):\n...\nTypeError: sage.structure.sage_object.SageObject.__new__(Sequence) is not safe, use list.__new__()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2403\n\n",
+    "closed_at": "2008-03-14T02:31:41Z",
     "created_at": "2008-03-06T06:18:45Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_002403.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Cannot copy Sequence",
+    "title": "[with patch; with positive review] Cannot copy Sequence",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2403",
     "user": "https://github.com/novoselt"

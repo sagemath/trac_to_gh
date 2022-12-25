@@ -1,15 +1,16 @@
-# Issue 3794: [with preliminary patch, needs documentation] Create eigen functions for matrices
+# Issue 3794: [with patch, with positive review] Create eigen functions for matrices
 
 archive/issues_003794.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nMake the following functions:\n\n* eigenvalues\n* eigenvectors_left, eigenvectors_right\n* eigenmatrix_left, eigenmatrix_right\n* eigenspaces_left, eigenspaces_right\n\n(with the appropriate left_* and right_* aliases)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3794\n\n",
+    "closed_at": "2008-08-25T22:07:32Z",
     "created_at": "2008-08-09T14:40:16Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with preliminary patch, needs documentation] Create eigen functions for matrices",
+    "title": "[with patch, with positive review] Create eigen functions for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3794",
     "user": "https://github.com/jasongrout"

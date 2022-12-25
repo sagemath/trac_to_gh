@@ -1,17 +1,17 @@
-# Issue 9162: cygwin:
+# Issue 9162: cygwin/ARM:pynac.pyx use double precision special functions instead of long double (REVISITED)
 
 archive/issues_009162.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  snark\n\nThis is a followup to #8847, which was supposed to fix this, but simply didn't. \n\n```\n\nsage -t  \"devel/sage/sage/functions/other.py\"               \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/functions/other.py\", line 475:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n1 items had failures:\n   1 of  29 in __main__.example_12\n```\n\nSee #8847 for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9162\n\n",
+    "body": "Assignee: tbd\n\nCC:  snark\n\nThis is a followup to #8847, which was supposed to fix this, but simply didn't. \n\n```\n\nsage -t  \"devel/sage/sage/functions/other.py\"               \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/functions/other.py\", line 475:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n1 items had failures:\n   1 of  29 in __main__.example_12\n```\n\nSee #8847 for more details.  Fixed by #12449.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9162\n\n",
+    "closed_at": "2012-02-16T21:32:51Z",
     "created_at": "2010-06-07T03:57:50Z",
     "labels": [
         "component: porting: cygwin",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cygwin:",
+    "title": "cygwin/ARM:pynac.pyx use double precision special functions instead of long double (REVISITED)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9162",
     "user": "https://github.com/williamstein"
@@ -38,7 +38,7 @@ Got:
    1 of  29 in __main__.example_12
 ```
 
-See #8847 for more details.
+See #8847 for more details.  Fixed by #12449.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9162
 

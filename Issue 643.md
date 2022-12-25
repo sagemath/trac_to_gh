@@ -1,22 +1,23 @@
-# Issue 643: notebook -- fix space issues with the top bar.
+# Issue 643: [with patch] notebook -- fix space issues with the top bar.
 
 archive/issues_000643.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\nOn 9/12/07, Marshall Hampton <hamptonio@gmail.com> wrote:\n>\n> I am very happy that the new notebook is more secure, and so I first\n> want to thank everyone who worked on it.\n>\n> There is one thing that bothers me a lot: I treasure my screen real\n> estate, and there is a large (about 1\") gap between the useful stuff\n> in the outer frame (the file menu, use/edit/text/etc) and the frame\n> with the cells.  Is there a way to shrink that?\n>\n\nYes, by appropriately rewriting some of the css that defines the page\nin sage/notebook/server/css.py.\nI wish somebody would do that and send me a patch.\n\nNote that if you just shrink the space on your machine, it will actually\ncompletely cover up all the controls on the top on many other machines.\nIt's very very system dependent.  Having extra space is the only reasonable\nsolution until somebody sits down and does this right.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/643\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn 9/12/07, Marshall Hampton <hamptonio@gmail.com> wrote:\n>\n> I am very happy that the new notebook is more secure, and so I first\n> want to thank everyone who worked on it.\n>\n> There is one thing that bothers me a lot: I treasure my screen real\n> estate, and there is a large (about 1\") gap between the useful stuff\n> in the outer frame (the file menu, use/edit/text/etc) and the frame\n> with the cells.  Is there a way to shrink that?\n>\n\nYes, by appropriately rewriting some of the css that defines the page\nin sage/notebook/server/css.py.\nI wish somebody would do that and send me a patch.\n\nNote that if you just shrink the space on your machine, it will actually\ncompletely cover up all the controls on the top on many other machines.\nIt's very very system dependent.  Having extra space is the only reasonable\nsolution until somebody sits down and does this right.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/643\n\n",
+    "closed_at": "2007-10-13T06:59:39Z",
     "created_at": "2007-09-12T18:56:16Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "notebook -- fix space issues with the top bar.",
+    "title": "[with patch] notebook -- fix space issues with the top bar.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/643",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 ```
 On 9/12/07, Marshall Hampton <hamptonio@gmail.com> wrote:

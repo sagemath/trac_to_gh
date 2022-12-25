@@ -3,7 +3,8 @@
 archive/issues_009988.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  jpflori\n\nAttached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\nsage: e.op[-1]\nx\nsage: e.op[1:]\n[3*y*z, z^y, x]\n```\n\nUsing `__getitem__()` directly was not an option since it breaks conversion to numpy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9989\n\n",
+    "body": "Assignee: @burcin\n\nCC:  jpflori\n\nKeywords: sd31\n\nAttached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:\n\n```\nsage: x,y,z = var('x,y,z')\nsage: e = x + x*y + z^y + 3*y*z; e\nx*y + 3*y*z + z^y + x\nsage: e.op[1]\n3*y*z\nsage: e.op[1,1]\nz\nsage: e.op[-1]\nx\nsage: e.op[1:]\n[3*y*z, z^y, x]\n```\n\nUsing `__getitem__()` directly was not an option since it breaks conversion to numpy.\n\n\nApply [attachment:trac_9989-operands.take4.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9989\n\n",
+    "closed_at": "2011-06-15T15:23:46Z",
     "created_at": "2010-09-23T22:07:51Z",
     "labels": [
         "component: symbolics"
@@ -18,6 +19,8 @@ archive/issues_009988.json:
 Assignee: @burcin
 
 CC:  jpflori
+
+Keywords: sd31
 
 Attached patch adds an `op` attribute to symbolic expressions which gives easy access to its operands. We now have:
 
@@ -36,6 +39,9 @@ sage: e.op[1:]
 ```
 
 Using `__getitem__()` directly was not an option since it breaks conversion to numpy.
+
+
+Apply [attachment:trac_9989-operands.take4.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9989
 

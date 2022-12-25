@@ -1,16 +1,17 @@
-# Issue 5282: In %python mode in the notebook, tracebacks are not properly reported
+# Issue 5282: [with patch; positive review] In %python mode in the notebook, tracebacks are not properly reported
 
 archive/issues_005282.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5282\n\n",
+    "body": "Assignee: @williamstein\n\nType \n\n```\n%python\nos.chdir(1,2,2)\n```\ninto a notebook cell in sage <= 3.3.rc0 and you will get this\nas output\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/.sage/sage_notebook/worksheets/admin/42/code/14.py\", line 6, in <module>\n    print _support_.syseval(python, ur'''os.chdir(1,2,2)''', '/Users/wstein/.sage/sage_notebook/worksheets/admin/42/cells/35')\n  File \"/Users/wstein/build/build/sage-3.3.alpha3/local/lib/python2.5/site-packages/sage/server/support.py\", line 321, in syseval\n    return system.eval(cmd)\nTypeError: eval() takes at least 3 arguments (2 given)\n```\n\nThat's bad since it's giving a traceback based on an error in the use of the system.eval method by the sage notebook itself in server/support.py!\n\nIn Sage mode one gets:\n\n```\nos.chdir(1,2,2)\n```\noutputs\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/.sage/sage_notebook/worksheets/admin/42/code/15.py\", line 7, in <module>\n    os.chdir(_sage_const_1 ,_sage_const_2 ,_sage_const_2 )\n  File \"/Users/wstein/build/build/sage-3.3.alpha3/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \nTypeError: chdir() takes exactly 1 argument (3 given)\n```\n\nThat's much better -- at least it is the right exception.  Of course the spurious reference ot SQLAlchemy is yet another bug...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5282\n\n",
+    "closed_at": "2009-02-16T08:22:30Z",
     "created_at": "2009-02-16T06:29:42Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "In %python mode in the notebook, tracebacks are not properly reported",
+    "title": "[with patch; positive review] In %python mode in the notebook, tracebacks are not properly reported",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5282",
     "user": "https://trac.sagemath.org/admin/accounts/users/wasI"
@@ -18,7 +19,45 @@ archive/issues_005282.json:
 ```
 Assignee: @williamstein
 
+Type 
 
+```
+%python
+os.chdir(1,2,2)
+```
+into a notebook cell in sage <= 3.3.rc0 and you will get this
+as output
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/wstein/.sage/sage_notebook/worksheets/admin/42/code/14.py", line 6, in <module>
+    print _support_.syseval(python, ur'''os.chdir(1,2,2)''', '/Users/wstein/.sage/sage_notebook/worksheets/admin/42/cells/35')
+  File "/Users/wstein/build/build/sage-3.3.alpha3/local/lib/python2.5/site-packages/sage/server/support.py", line 321, in syseval
+    return system.eval(cmd)
+TypeError: eval() takes at least 3 arguments (2 given)
+```
+
+That's bad since it's giving a traceback based on an error in the use of the system.eval method by the sage notebook itself in server/support.py!
+
+In Sage mode one gets:
+
+```
+os.chdir(1,2,2)
+```
+outputs
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/wstein/.sage/sage_notebook/worksheets/admin/42/code/15.py", line 7, in <module>
+    os.chdir(_sage_const_1 ,_sage_const_2 ,_sage_const_2 )
+  File "/Users/wstein/build/build/sage-3.3.alpha3/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/", line 1, in <module>
+    
+TypeError: chdir() takes exactly 1 argument (3 given)
+```
+
+That's much better -- at least it is the right exception.  Of course the spurious reference ot SQLAlchemy is yet another bug...
 
 Issue created by migration from https://trac.sagemath.org/ticket/5282
 

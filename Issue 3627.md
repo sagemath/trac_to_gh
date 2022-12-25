@@ -1,9 +1,10 @@
-# Issue 3627: illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz
+# Issue 3627: [with spkg; positive review] FLINT build issue on Intel x86-64 with spkg-install (in in ZmodF_poly_pointwise_mul): illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz with 3.0.4.rc0
 
 archive/issues_003627.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nOn a P4 3.4Ghz machine with RHEL4 I get upon doing a source build of rc0:\n\n```\nsage -t  devel/sage/sage/modular/modsym/subspace.py         sh: line 1: 26365 Illegal instruction     /u/was/sage-3.0.4.rc1/local/bin/python /u/was/sage-3.0.4.rc1/tmp/.doctest_subspace.py >/tmp/tmpdmHxDr 2>/tmp/tmpx-xlyH\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [32.1 s]\n```\n\n\nMore details\n\n```\ntimpani%  gcc -v\nReading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux\nThread model: posix\ngcc version 3.4.5 20051201 (Red Hat 3.4.5-2)\n\n\n% uname -a\nLinux 2.6.9-34.ELsmp #1 SMP Fri Feb 24 16:56:28 EST 2006 x86_64 x86_64 x86_64 GNU/Linux\ntimpani% cat /etc/issue\nRed Hat Enterprise Linux WS release 4 (Nahant Update 3)\nKernel \\r on an \\m\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3627\n\n",
+    "closed_at": "2008-07-10T02:01:45Z",
     "created_at": "2008-07-09T18:50:02Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_003627.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz",
+    "title": "[with spkg; positive review] FLINT build issue on Intel x86-64 with spkg-install (in in ZmodF_poly_pointwise_mul): illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz with 3.0.4.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3627",
     "user": "https://github.com/williamstein"

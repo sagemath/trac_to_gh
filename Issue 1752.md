@@ -1,9 +1,10 @@
-# Issue 1752: sage make install bug
+# Issue 1752: [with spkg] sage make install bug
 
 archive/issues_001752.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nWhen calling \n\n```\nDESTDIR=$sagedir make install\n```\nthe following library files will be created with 555 permissions. When causes problems when trying to strip those files. To change that, deliver the files with 755 permissions.\n\n$sagedir/sage/local/lib/libhistory.so.*\n$sagedir/sage/local/lib/libreadline.so.*\n\nIssue created by migration from https://trac.sagemath.org/ticket/1752\n\n",
+    "body": "Assignee: mabshoff\n\nWhen calling \n\n```\nDESTDIR=$sagedir make install\n```\nthe following library files will be created with 555 permissions. When causes problems when trying to strip those files. To change that, deliver the files with 755 permissions.\n\n$sagedir/sage/local/lib/libhistory.so.*\n$sagedir/sage/local/lib/libreadline.so.*\n\nIssue created by migration from https://trac.sagemath.org/ticket/1752\n\n",
+    "closed_at": "2008-01-11T19:21:01Z",
     "created_at": "2008-01-10T22:14:38Z",
     "labels": [
         "component: relocation",
@@ -11,13 +12,13 @@ archive/issues_001752.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "sage make install bug",
+    "title": "[with spkg] sage make install bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1752",
     "user": "https://trac.sagemath.org/admin/accounts/users/pgrinber"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 When calling 
 

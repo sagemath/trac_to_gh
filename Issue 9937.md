@@ -1,9 +1,10 @@
-# Issue 9937: GAP does not start if the path to the GAP workspace file contains more than 83 characters
+# Issue 9937: GAP does not start if the path to the GAP workspace file contains more than 82 characters
 
 archive/issues_009937.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @seblabbe mrobado\n\nKeywords: gap\n\nAs pointed out in \n[this thread](http://groups.google.com/group/sage-support/browse_thread/thread/7e169e371308838/a1403ee743fd6ea6?lnk=gst&q=tremblay+gap#a1403ee743fd6ea6), on some machines one there is a problem starting GAP from within Sage:\n\n```\nsage: gap('3+2')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\n...\nTypeError: Unable to start gap\n```\nThe problem is in Sage's attempt to rebuild the GAP workspace. It turns out that Sage calls GAP's `SaveWorkspace` command incorrectly in a particular case.\n\nTo explain the problem, first recall the process used by the GAP interface to evaluate a line of GAP code, say `LineOfGapCode`. It begins by checking the length `LineOfGapCode` (as a string). If this length is greater than 100 (a pre-defined cut-off value), then a file is created containing:\n\n```\nPrint(LineOfGapCode);\n```\nThis file is read into GAP using the expect interface and the output is parsed and returned to Sage. (There is no problem if the length is less than 100, because the interface does not use a file.)\n\nLet's apply this to the case where we need to rebuild a workspace. The workspace is just a file contained in a user's .sage directory. If the number of characters in the path to the workspace is greater than the cut-off, then Sage tries to execute the following command:\n\n```\nPrint(SaveWorkspace(\"PathToWorkspaceFile\"));\n```\nThis is not permitted by GAP, as explained in the [GAP Reference Manual](http://www.gap-system.org/Manuals/doc/htm/ref/CHAP003.htm#SSEC011.1):\n\n```\nSaveWorkspace can only be used at the main gap> prompt. It cannot be included in the body of a loop or function, or called from a break loop.\n```\nSo to fix this, we need to force the interface not to use a file to execute the `SaveWorkspace` command.\n\n(This problem has plagued all the computers in our computer lab for months since a user's home directory is located on a network drive with a long name.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9938\n\n",
+    "body": "Assignee: @saliola\n\nCC:  @seblabbe mrobado\n\nKeywords: gap\n\nAs pointed out in \n[this thread](http://groups.google.com/group/sage-support/browse_thread/thread/7e169e371308838/a1403ee743fd6ea6?lnk=gst&q=tremblay+gap#a1403ee743fd6ea6), on some machines one there is a problem starting GAP from within Sage:\n\n```\nsage: gap('3+2')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\n...\nTypeError: Unable to start gap\n```\nThe problem is in Sage's attempt to rebuild the GAP workspace. It turns out that Sage calls GAP's `SaveWorkspace` command incorrectly in a particular case.\n\nTo explain the problem, first recall the process used by the GAP interface to evaluate a line of GAP code, say `LineOfGapCode`. It begins by checking the length `LineOfGapCode` (as a string). If this length is greater than 100 (a pre-defined cut-off value), then a file is created containing:\n\n```\nPrint(LineOfGapCode);\n```\nThis file is read into GAP using the expect interface and the output is parsed and returned to Sage. (There is no problem if the length is less than 100, because the interface does not use a file.)\n\nLet's apply this to the case where we need to rebuild a workspace. The workspace is just a file contained in a user's .sage directory. If the number of characters in the path to the workspace is greater than the cut-off, then Sage tries to execute the following command:\n\n```\nPrint(SaveWorkspace(\"PathToWorkspaceFile\"));\n```\nThis is not permitted by GAP, as explained in the [GAP Reference Manual](http://www.gap-system.org/Manuals/doc/htm/ref/CHAP003.htm#SSEC011.1):\n\n```\nSaveWorkspace can only be used at the main gap> prompt. It cannot be included in the body of a loop or function, or called from a break loop.\n```\nSo to fix this, we need to force the interface not to use a file to execute the `SaveWorkspace` command.\n\n(This problem has plagued all the computers in our computer lab for months since a user's home directory is located on a network drive with a long name.)\n\nThis is reproducible:\n\n```\nsage: ws = sage.interfaces.gap.WORKSPACE\nsage: sage.interfaces.gap.WORKSPACE += \"0\"*(83-len(ws))\nsage: gap = Gap()\nsage: gap('3+2')\n```\nBoom!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9938\n\n",
+    "closed_at": "2010-09-28T09:14:39Z",
     "created_at": "2010-09-17T21:31:06Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_009937.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "GAP does not start if the path to the GAP workspace file contains more than 83 characters",
+    "title": "GAP does not start if the path to the GAP workspace file contains more than 82 characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9937",
     "user": "https://github.com/saliola"
 }
 ```
-Assignee: @williamstein
+Assignee: @saliola
 
 CC:  @seblabbe mrobado
 
@@ -55,6 +56,16 @@ SaveWorkspace can only be used at the main gap> prompt. It cannot be included in
 So to fix this, we need to force the interface not to use a file to execute the `SaveWorkspace` command.
 
 (This problem has plagued all the computers in our computer lab for months since a user's home directory is located on a network drive with a long name.)
+
+This is reproducible:
+
+```
+sage: ws = sage.interfaces.gap.WORKSPACE
+sage: sage.interfaces.gap.WORKSPACE += "0"*(83-len(ws))
+sage: gap = Gap()
+sage: gap('3+2')
+```
+Boom!
 
 Issue created by migration from https://trac.sagemath.org/ticket/9938
 

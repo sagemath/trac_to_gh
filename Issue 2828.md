@@ -1,15 +1,16 @@
-# Issue 2828: get doctest coverage for combinat/ to 100%
+# Issue 2828: [with patch, positive review] get doctest coverage for combinat/ to 100%
 
 archive/issues_002828.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2828\n\n",
+    "closed_at": "2008-04-06T14:09:32Z",
     "created_at": "2008-04-06T10:09:16Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "get doctest coverage for combinat/ to 100%",
+    "title": "[with patch, positive review] get doctest coverage for combinat/ to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2828",
     "user": "https://github.com/mwhansen"

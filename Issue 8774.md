@@ -3,7 +3,8 @@
 archive/issues_008774.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nWhile gap-4.4.12.p0 was unpacking, I noticed:\n\n```\ngap-4.4.12.p1/src/bin/\ngap-4.4.12.p1/src/bin/gap.bat\ngap-4.4.12.p1/src/bin/libW11.dll\ngap-4.4.12.p1/src/bin/gap.pif\ngap-4.4.12.p1/src/bin/gapicon.bmp\ngap-4.4.12.p1/src/bin/cygncurses-8.dll\ngap-4.4.12.p1/src/bin/regtool.exe\ngap-4.4.12.p1/src/bin/gaprxvt.bat\ngap-4.4.12.p1/src/bin/gap.dll\ngap-4.4.12.p1/src/bin/gapw95.exe\ngap-4.4.12.p1/src/bin/usemem.bat\ngap-4.4.12.p1/src/bin/gapp.bat\ngap-4.4.12.p1/src/bin/cygpanel-8.dll\ngap-4.4.12.p1/src/bin/gapw95p.exe\ngap-4.4.12.p1/src/bin/rxvt.exe\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gac\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gap.dll\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/config.h\ngap-4.4.12.p1/src/bin/gapp.pif\ngap-4.4.12.p1/src/bin/cygwin1.dll\ngap-4.4.12.p1/src/description4r4p7\ngap-4.4.12.p1/src/grp/\n...\n```\n\nNO!!!  We absolutely should not be shipping Windows frickin' binaries with Sage.    Ticket #8076 introduced all these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8774\n\n",
+    "body": "Assignee: @dimpase\n\nCC:  @wdjoyner\n\nWhile gap-4.4.12.p0 was unpacking, I noticed:\n\n```\ngap-4.4.12.p1/src/bin/\ngap-4.4.12.p1/src/bin/gap.bat\ngap-4.4.12.p1/src/bin/libW11.dll\ngap-4.4.12.p1/src/bin/gap.pif\ngap-4.4.12.p1/src/bin/gapicon.bmp\ngap-4.4.12.p1/src/bin/cygncurses-8.dll\ngap-4.4.12.p1/src/bin/regtool.exe\ngap-4.4.12.p1/src/bin/gaprxvt.bat\ngap-4.4.12.p1/src/bin/gap.dll\ngap-4.4.12.p1/src/bin/gapw95.exe\ngap-4.4.12.p1/src/bin/usemem.bat\ngap-4.4.12.p1/src/bin/gapp.bat\ngap-4.4.12.p1/src/bin/cygpanel-8.dll\ngap-4.4.12.p1/src/bin/gapw95p.exe\ngap-4.4.12.p1/src/bin/rxvt.exe\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gac\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gap.dll\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/config.h\ngap-4.4.12.p1/src/bin/gapp.pif\ngap-4.4.12.p1/src/bin/cygwin1.dll\ngap-4.4.12.p1/src/description4r4p7\ngap-4.4.12.p1/src/grp/\n...\n```\n\nNO!!!  We absolutely should not be shipping Windows frickin' binaries with Sage.    Ticket #8076 introduced all these.  \n\nNOTE: It is *my* (=William's) fault that 8076 got a positive review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8774\n\n",
+    "closed_at": "2010-04-28T18:58:01Z",
     "created_at": "2010-04-26T23:43:05Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +18,7 @@ archive/issues_008774.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @dimpase
 
 CC:  @wdjoyner
 
@@ -50,7 +51,9 @@ gap-4.4.12.p1/src/grp/
 ...
 ```
 
-NO!!!  We absolutely should not be shipping Windows frickin' binaries with Sage.    Ticket #8076 introduced all these.
+NO!!!  We absolutely should not be shipping Windows frickin' binaries with Sage.    Ticket #8076 introduced all these.  
+
+NOTE: It is *my* (=William's) fault that 8076 got a positive review. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8774
 

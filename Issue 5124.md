@@ -4,6 +4,7 @@ archive/issues_005124.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\nThis doesn't depend on xmin!?\n\n```\nE = EllipticCurve('37a')\nE.plot(xmin=-10, xmax=10)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5124\n\n",
+    "closed_at": "2014-04-12T07:35:04Z",
     "created_at": "2009-01-28T23:15:08Z",
     "labels": [
         "component: graphics",

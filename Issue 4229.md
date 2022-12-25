@@ -3,10 +3,12 @@
 archive/issues_004229.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nMPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.\n\nExample:\n\n```\nsage: a = RR(2)\nsage: timeit(\"bessel_J(1, a)\")\n625 loops, best of 3: 370 \u00b5s per loop\nsage: timeit(\"a.j1()\")\n625 loops, best of 3: 13.9 \u00b5s per loop\n```\n\nThat's 26 times faster than Pari.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4229\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nKeywords: sd31\n\nMPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.\n\nExample:\n\n```\nsage: a = RR(2)\nsage: timeit(\"bessel_J(1, a)\")\n625 loops, best of 3: 370 \u00b5s per loop\nsage: timeit(\"a.j1()\")\n625 loops, best of 3: 13.9 \u00b5s per loop\n```\n\nThat's 26 times faster than Pari.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4229\n\n",
+    "closed_at": "2011-06-14T20:39:08Z",
     "created_at": "2008-10-01T09:55:56Z",
     "labels": [
-        "component: calculus"
+        "component: calculus",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "special functions should use mpfr when available",
@@ -18,6 +20,8 @@ archive/issues_004229.json:
 Assignee: @burcin
 
 CC:  @jdemeyer
+
+Keywords: sd31
 
 MPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.
 

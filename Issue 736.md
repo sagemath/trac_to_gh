@@ -1,17 +1,17 @@
-# Issue 736: combinatorics updates
+# Issue 736: [with patch] combinatorics updates
 
 archive/issues_000736.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/736\n\n",
+    "closed_at": "2007-10-04T17:27:11Z",
     "created_at": "2007-09-22T13:37:42Z",
     "labels": [
         "component: combinatorics",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "combinatorics updates",
+    "title": "[with patch] combinatorics updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/736",
     "user": "https://github.com/mwhansen"

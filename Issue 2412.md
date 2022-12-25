@@ -4,6 +4,7 @@ archive/issues_002412.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan @jasongrout\n\nKeywords: basis matrix basis_matrix ZZ\n\n```\nsage: (ZZ**3).basis_matrix()\n\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: (ZZ**3).basis_matrix().parent()\nFull MatrixSpace of 3 by 3 dense matrices over Rational Field\n```\n\nThat should be over the integer ring; you can't do `(ZZ**3).basis_matrix().smith_form()` otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2412\n\n",
+    "closed_at": "2008-11-14T05:20:25Z",
     "created_at": "2008-03-06T22:54:36Z",
     "labels": [
         "component: linear algebra",

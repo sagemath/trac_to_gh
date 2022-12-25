@@ -4,6 +4,7 @@ archive/issues_006705.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @dimpase\n\nCode in ATLAS can not detect the processor type on machines like the Sun T5240 ('t2') as it \n\nThis has been passed upstream\n\nhttps://sourceforge.net/tracker/?func=detail&aid=2825994&group_id=23725&atid=379483\n\nbut there is no fix yet. I probably have enough information to fix this, but have not done so yet. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6705\n\n",
+    "closed_at": "2020-07-15T07:18:41Z",
     "created_at": "2009-08-09T09:48:52Z",
     "labels": [
         "component: porting: solaris",

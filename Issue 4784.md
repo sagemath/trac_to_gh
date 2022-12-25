@@ -1,9 +1,10 @@
-# Issue 4784: [with patch, needs review] trivial ref manual fix for 3.2.2.alpha2
+# Issue 4784: [with patch, positive review] trivial ref manual fix for 3.2.2.alpha2
 
 archive/issues_004784.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nKeywords: reference manual\n\nmissing $ in a docstring screws up reference manual\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4784\n\n",
+    "closed_at": "2008-12-14T05:41:13Z",
     "created_at": "2008-12-13T21:04:08Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004784.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] trivial ref manual fix for 3.2.2.alpha2",
+    "title": "[with patch, positive review] trivial ref manual fix for 3.2.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4784",
     "user": "https://github.com/jhpalmieri"

@@ -3,7 +3,8 @@
 archive/issues_009472.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\n`SPKG.txt` excerpt from the *modified* spkg:\n\n```\n### polybori-0.6.4.p2 (Leif Leonhardy, July 10th, 2010)\n * Removed Michael Abshoff from maintainer list (see #7738)\n * Deleted Boost source tree again since it was split off into a separate\n   spkg (see below, 0.5.rc.p7), modified spkg-install accordingly\n * Deleted M4RI source tree, because it is a standard Sage package\n * Little clean-up and minor fixes in patches/custom.py\n   - Note that CFLAGS etc. are still *overwritten* rather than modified!\n * Updated \"Dependencies\" section above\n```\n\nSlightly more readable:\n* Removed *Michael Abshoff* from maintainer list (see #7738)\n* Deleted Boost source tree again since it was split off into a separate\n  spkg (see below, 0.5.rc.p7), modified `spkg-install` accordingly\n* Deleted M4RI source tree, because it is a standard Sage package\n* Little clean-up and minor fixes in `patches/custom.py`\n  - Note that `CFLAGS` etc. are still **overwritten** rather than modified!\n* Updated *\"Dependencies\"* section above\n\n\nDuring upgrade to 0.6.x, the Boost source unintentionally got in again. The new spkg is about 1.7MB, i.e. 300KB smaller.\n\nTo test *the patch*, the directories have to be removed manually (the attached patch doesn't delete them from 0.6.4.p1), but **the new spkg will be uploaded to sage.math soon**.\n\nSince PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9472\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\n`SPKG.txt` excerpt from the *modified* spkg:\n\n```\n### polybori-0.6.4.p2 (Leif Leonhardy, July 10th, 2010)\n * Removed Michael Abshoff from maintainer list (see #7738)\n * Deleted Boost source tree again since it was split off into a separate\n   spkg (see below, 0.5.rc.p7), modified spkg-install accordingly\n * Deleted M4RI source tree, because it is a standard Sage package\n * Little clean-up and minor fixes in patches/custom.py\n   - Note that CFLAGS etc. are still *overwritten* rather than modified!\n * Updated \"Dependencies\" section above\n```\n\nSlightly more readable:\n* Removed *Michael Abshoff* from maintainer list (see #7738)\n* Deleted Boost source tree again since it was split off into a separate\n  spkg (see below, 0.5.rc.p7), modified `spkg-install` accordingly\n* Deleted M4RI source tree, because it is a standard Sage package\n* Little clean-up and minor fixes in `patches/custom.py`\n  - Note that `CFLAGS` etc. are still **overwritten** rather than modified!\n* Updated *\"Dependencies\"* section above\n\n\nDuring upgrade to 0.6.x, the Boost source unintentionally got in again. The new spkg is about 1.7MB, i.e. 300KB smaller.\n\n---\n\n**The new PolyBoRi 0.6.4.p2 spkg is [here](http://sage.math.washington.edu/home/schilly/sage/spkg/polybori-0.6.4.p2.spkg).**\n\n(To test *the patch*, the directories have to be removed manually, since the attached patch doesn't delete them from 0.6.4.p1; see [comment below](http://trac.sagemath.org/sage_trac/ticket/9472#comment:1).)\n\n---\n\nSince PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9472\n\n",
+    "closed_at": "2010-08-09T09:39:13Z",
     "created_at": "2010-07-11T00:05:23Z",
     "labels": [
         "component: packages: standard",
@@ -45,9 +46,16 @@ Slightly more readable:
 
 During upgrade to 0.6.x, the Boost source unintentionally got in again. The new spkg is about 1.7MB, i.e. 300KB smaller.
 
-To test *the patch*, the directories have to be removed manually (the attached patch doesn't delete them from 0.6.4.p1), but **the new spkg will be uploaded to sage.math soon**.
+---
+
+**The new PolyBoRi 0.6.4.p2 spkg is [here](http://sage.math.washington.edu/home/schilly/sage/spkg/polybori-0.6.4.p2.spkg).**
+
+(To test *the patch*, the directories have to be removed manually, since the attached patch doesn't delete them from 0.6.4.p1; see [comment below](http://trac.sagemath.org/sage_trac/ticket/9472#comment:1).)
+
+---
 
 Since PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9472
 

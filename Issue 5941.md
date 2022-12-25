@@ -1,16 +1,17 @@
-# Issue 5941: transitive_close returns a graph with the same name even though it is a totally different graph!
+# Issue 5941: [with patch, positive review] transitive_close returns a graph with the same name even though it is a totally different graph!
 
 archive/issues_005941.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: h = g.transitive_closure()\nsage: h       # oops -- h says it is Krackhardt Kite but it isn't\nKrackhardt Kite Graph: Graph on 10 vertices\nsage: h == g\nFalse\nsage: h.is_isomorphic(g)\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5941\n\n",
+    "closed_at": "2009-07-19T13:31:43Z",
     "created_at": "2009-04-29T17:18:14Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "transitive_close returns a graph with the same name even though it is a totally different graph!",
+    "title": "[with patch, positive review] transitive_close returns a graph with the same name even though it is a totally different graph!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5941",
     "user": "https://github.com/williamstein"

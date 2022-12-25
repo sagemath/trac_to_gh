@@ -1,16 +1,17 @@
-# Issue 2209: gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations
+# Issue 2209: [with spkg; positive review] gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations
 
 archive/issues_002209.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe patch is here:\n\n   http://www.gap-system.org/Faq/Hardware-OS/hardware-os8.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/2209\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: editor_wstein\n\nThe new spkg is here:\n \nhttp://sage.math.washington.edu/home/was/patches/gap-4.4.10.p9.spkg\n   \n\nIssue created by migration from https://trac.sagemath.org/ticket/2209\n\n",
+    "closed_at": "2008-08-29T02:58:09Z",
     "created_at": "2008-02-19T15:19:47Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations",
+    "title": "[with spkg; positive review] gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2209",
     "user": "https://github.com/williamstein"
@@ -18,9 +19,12 @@ archive/issues_002209.json:
 ```
 Assignee: mabshoff
 
-The patch is here:
+Keywords: editor_wstein
 
-   http://www.gap-system.org/Faq/Hardware-OS/hardware-os8.html
+The new spkg is here:
+ 
+http://sage.math.washington.edu/home/was/patches/gap-4.4.10.p9.spkg
+   
 
 Issue created by migration from https://trac.sagemath.org/ticket/2209
 

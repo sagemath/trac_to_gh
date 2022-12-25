@@ -1,16 +1,17 @@
-# Issue 4431: [with patch, needs review] conversion of maxima matrices to sage matrices
+# Issue 4431: [with patch, positive review] conversion of maxima matrices to sage matrices
 
 archive/issues_004431.json:
 ```json
 {
     "body": "Assignee: whuss\n\nThis patch implements conversion of Maxima matrices, to Sage matrices. The patch is based on\nsage-3.2alpha1.\n\nA sample session:\n\n```\nsage: var('x,y')\nsage: v = maxima('v: vandermonde_matrix([x, y, 1/2])')\nsage: v\nmatrix([1,x,x^2],[1,y,y^2],[1,1/2,1/4])\nsage: type(v)\n<class 'sage.interfaces.maxima.MaximaElement'>\nsage: v.sage()\n\n[  1   x x^2]\n[  1   y y^2]\n[  1 1/2 1/4]\nsage: mlist = maxima('[v, sin(x), 1, v.v]').sage()\nsage: mlist\n\n[[  1   x x^2]\n[  1   y y^2]\n[  1 1/2 1/4],\n    sin(x),\n    1,\n    [       x^2 + x + 1    x*y + x^2/2 + x    x*y^2 + 5*x^2/4]\n[       y^2 + y + 1        3*y^2/2 + x  y^3 + y^2/4 + x^2]\n[               7/4      y/2 + x + 1/8 y^2/2 + x^2 + 1/16]]\nsage: [parent(i) for i in mlist]\n\n[Full MatrixSpace of 3 by 3 dense matrices over Symbolic Ring,\n    Symbolic Ring,\n    Symbolic Ring,\n    Full MatrixSpace of 3 by 3 dense matrices over Symbolic Ring]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4431\n\n",
+    "closed_at": "2008-11-28T07:50:27Z",
     "created_at": "2008-11-03T19:37:18Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] conversion of maxima matrices to sage matrices",
+    "title": "[with patch, positive review] conversion of maxima matrices to sage matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4431",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

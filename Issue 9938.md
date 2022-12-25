@@ -1,34 +1,28 @@
-# Issue 9938: Remove unnecessary .hgtags.orig, SConstruct.orig, and hgrc files
+# Issue 9938: Remove unnecessary .hgignore files
 
 archive/issues_009938.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu\n\nWe can remove\n\n* `SAGE_ROOT/local/bin/.hg/hgrc`\n* `SAGE_ROOT/devel/sage-main/.hg/hgrc`\n* `SAGE_ROOT/local/bin/.hgtags.orig`\n* `SAGE_ROOT/devel/sage-main/c_lib/SConstruct.orig`\n\nright?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9939\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9939\n\n",
+    "closed_at": "2014-02-11T15:14:30Z",
     "created_at": "2010-09-18T00:10:31Z",
     "labels": [
-        "component: build",
+        "component: misc",
         "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "Remove unnecessary .hgtags.orig, SConstruct.orig, and hgrc files",
+    "title": "Remove unnecessary .hgignore files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9938",
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: @jasongrout
 
 CC:  mvngu
 
-We can remove
 
-* `SAGE_ROOT/local/bin/.hg/hgrc`
-* `SAGE_ROOT/devel/sage-main/.hg/hgrc`
-* `SAGE_ROOT/local/bin/.hgtags.orig`
-* `SAGE_ROOT/devel/sage-main/c_lib/SConstruct.orig`
-
-right?
 
 Issue created by migration from https://trac.sagemath.org/ticket/9939
 

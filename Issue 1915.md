@@ -1,9 +1,10 @@
-# Issue 1915: infinity doesn't behave well
+# Issue 1915: [with new patch, positive review] infinity doesn't behave well
 
 archive/issues_001915.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe default model for handling infinity in Sage is not very user friendly.\n\nHere is an example from Mathematica:\n\n```\nmathematica: Gamma[0]\nComplexInfinity\n\nmathematica: 1/Gamma[0]\n0\n\nmathematica: 1 + 1/Gamma[0]\n1\n```\n\nAnd an example from sage:\n\n```\nsage: 1/Infinity\nZero\n\nsage: 1 + 1/Infinity\nA positive finite number\n```\n\nIn Sage `1/Infinity` should be `0` in some numeric domain. Returning `Zero` in `The Infinity Ring`  results in everything coercing to `The Infinity Ring`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1915\n\n",
+    "closed_at": "2008-09-15T03:54:36Z",
     "created_at": "2008-01-24T17:35:48Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_001915.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "infinity doesn't behave well",
+    "title": "[with new patch, positive review] infinity doesn't behave well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1915",
     "user": "https://github.com/burcin"

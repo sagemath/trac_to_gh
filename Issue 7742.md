@@ -3,11 +3,11 @@
 archive/issues_007742.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\n\ndef compose(f, n, a):\n    \"\"\"\n    Return f(f(...f(a)...)), where the composition occurs n times.\n    \n    INPUT:\n        - `f` -- anything that is callable\n        - `n` -- a nonnegative integer\n        - `a` -- any input for `f`\n\n    OUTPUT:\n        result of composing `f` with itself `n` times and applying to `a`.\n\n    EXAMPLES::\n\n        sage: def f(x): return x^2 + 1\n        sage: x = var('x')\n        sage: compose(f, 3, x)\n        ((x^2 + 1)^2 + 1)^2 + 1\n    \"\"\"\n    n = Integer(n)\n    if n <= 0: return a\n    a = f(a)\n    for i in range(n-1): a = f(a)\n    return a\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7742\n\n",
+    "body": "Assignee: @aghitza\n\n```\n\ndef compose(f, n, a):\n    \"\"\"\n    Return f(f(...f(a)...)), where the composition occurs n times.\n    \n    INPUT:\n        - `f` -- anything that is callable\n        - `n` -- a nonnegative integer\n        - `a` -- any input for `f`\n\n    OUTPUT:\n        result of composing `f` with itself `n` times and applying to `a`.\n\n    EXAMPLES::\n\n        sage: def f(x): return x^2 + 1\n        sage: x = var('x')\n        sage: compose(f, 3, x)\n        ((x^2 + 1)^2 + 1)^2 + 1\n    \"\"\"\n    n = Integer(n)\n    if n <= 0: return a\n    a = f(a)\n    for i in range(n-1): a = f(a)\n    return a\n\n```\nTo the release manager: apply only the last patch\n(trac_7742-add-compose-etc_v2.1.patch).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7742\n\n",
+    "closed_at": "2011-03-17T19:22:27Z",
     "created_at": "2009-12-19T20:15:55Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "add a compose function to sage",
@@ -46,6 +46,8 @@ def compose(f, n, a):
     return a
 
 ```
+To the release manager: apply only the last patch
+(trac_7742-add-compose-etc_v2.1.patch).
 
 Issue created by migration from https://trac.sagemath.org/ticket/7742
 

@@ -1,16 +1,17 @@
-# Issue 5754: docstrings for all the interactive_constructors functions are *all* now completely broken
+# Issue 5754: [with patch; positive review] docstrings for all the interactive_constructors functions are *all* now completely broken
 
 archive/issues_005754.json:
 ```json
 {
     "body": "Assignee: tba\n\nType\n\n```\nsage: inject_on()\nsage: PolynomialRing?\n```\n\nYou won't get a docstring at all, which sucks.  You *should* get \n\n```\n    Construct a finite field and inject the variables of the\n    finite field to the global interactive interpreter.  Use\n    inject=False to not inject the variables.  This is a wrapper\n    around the following function: <<<FiniteField>>>\n```\nbut with <<<FiniteField>>> replaced by the docstring for FiniteField.  \n\nThe problem is probably that misc/sagedoc.py contains this line:\n\n```\n            t0 = sage.server.support.get_def(x, obj)\n```\nand there is no function sage.server.support.get_def.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5754\n\n",
+    "closed_at": "2009-04-13T06:33:40Z",
     "created_at": "2009-04-11T17:13:58Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "docstrings for all the interactive_constructors functions are *all* now completely broken",
+    "title": "[with patch; positive review] docstrings for all the interactive_constructors functions are *all* now completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5754",
     "user": "https://github.com/williamstein"

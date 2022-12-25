@@ -4,6 +4,7 @@ archive/issues_004801.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4801\n\n",
+    "closed_at": "2008-12-15T17:58:14Z",
     "created_at": "2008-12-15T06:11:45Z",
     "labels": [
         "component: interfaces",

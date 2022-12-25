@@ -1,16 +1,17 @@
-# Issue 3509: [with spkg, needs review] Update eclib to eclib-20080310.p3.spkg
+# Issue 3509: [with spkg, positive review] Update eclib to eclib-20080310.p3.spkg
 
 archive/issues_003509.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nSplit of from #3119:\n\nThe newly patched eclib at http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p3.spkg contains several small fixes *including* the eclib.patch attached to this ticket already. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3509\n\n",
+    "closed_at": "2008-06-25T09:16:54Z",
     "created_at": "2008-06-25T08:28:35Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg, needs review] Update eclib to eclib-20080310.p3.spkg",
+    "title": "[with spkg, positive review] Update eclib to eclib-20080310.p3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3509",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

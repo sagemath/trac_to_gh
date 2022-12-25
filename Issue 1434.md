@@ -4,6 +4,7 @@ archive/issues_001434.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nsince I'm moving the scipy sandbox stuff we are using into a separate spkg,\nI want to remove the corresponding stuff from the scipy spkg. \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy-20071020-0.6.p2.spkg\n\nthis has the added benefit of shrinking the scipy package by about 2mb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1434\n\n",
+    "closed_at": "2007-12-13T08:51:03Z",
     "created_at": "2007-12-09T10:52:24Z",
     "labels": [
         "component: numerical",

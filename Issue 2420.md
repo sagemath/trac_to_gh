@@ -1,15 +1,15 @@
-# Issue 2420: [with patch, needs review] Extending the gap interface to uni- and multivariate polynomial rings over number fields
+# Issue 2420: Extending the gap interface to uni- and multivariate polynomial rings over number fields
 
 archive/issues_002420.json:
 ```json
 {
-    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner @mwhansen @loefflerd\n\nKeywords: gap interface, polynomial rings, number fields\n\nUp to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.\nUnivariate:\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree 4>, [\"x\"] )\nsage: p=R('zeta8^2*x+zeta8')\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\nMultivariate:\n\n```\nsage: R=PolynomialRing(F,'x,y')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree\n4>, [\"x\", \"y\"] )\nsage: p=R('zeta8*x+zeta8^2*y')^2\nsage: gap(p)\n(zeta8^2)*x^2+(2*zeta8^3)*x*y-y^2\nsage: p\nzeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2\n```\n\nThe patches also provide doc tests.\n\nHowever, there is one problem: On my machine, the doc tests of sage.rings.polynomial.polynomial_element.pyx trigger the bug reported in #2419.\nThat bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). \n\nSo, there should be discussion how to deal with that issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2420\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner @mwhansen @loefflerd\n\nKeywords: gap interface, polynomial rings, number fields, interface cache\n\nUp to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.\nUnivariate:\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree 4>, [\"x\"] )\nsage: p=R('zeta8^2*x+zeta8')\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\nMultivariate:\n\n```\nsage: R=PolynomialRing(F,'x,y')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree\n4>, [\"x\", \"y\"] )\nsage: p=R('zeta8*x+zeta8^2*y')^2\nsage: gap(p)\n(zeta8^2)*x^2+(2*zeta8^3)*x*y-y^2\nsage: p\nzeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2\n```\n\nThe patches also provide doc tests.\n\nHowever, there is one problem: On my machine, the doc tests of sage.rings.polynomial.polynomial_element.pyx trigger the bug reported in #2419.\nThat bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). \n\nSo, there should be discussion how to deal with that issue.\n\nApply [attachment:trac2420_gap_interface_polynomials.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/2420\n\n",
     "created_at": "2008-03-07T09:05:58Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-pending",
-    "title": "[with patch, needs review] Extending the gap interface to uni- and multivariate polynomial rings over number fields",
+    "title": "Extending the gap interface to uni- and multivariate polynomial rings over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2420",
     "user": "https://github.com/simon-king-jena"
@@ -19,7 +19,7 @@ Assignee: @simon-king-jena
 
 CC:  @wdjoyner @mwhansen @loefflerd
 
-Keywords: gap interface, polynomial rings, number fields
+Keywords: gap interface, polynomial rings, number fields, interface cache
 
 Up to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.
 Univariate:
@@ -56,6 +56,8 @@ However, there is one problem: On my machine, the doc tests of sage.rings.polyno
 That bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). 
 
 So, there should be discussion how to deal with that issue.
+
+Apply [attachment:trac2420_gap_interface_polynomials.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/2420
 

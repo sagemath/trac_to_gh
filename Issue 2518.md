@@ -3,7 +3,8 @@
 archive/issues_002518.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @williamstein @mwhansen @robertwb\n\nFact is, several people have observed lisp.run's getting left running.\n\nIf *anybody* can find a 100% reliable way to replicate this problem, PLEASE LET US KNOW!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2518\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @mwhansen @robertwb\n\nFact is, several people have observed lisp.run's getting left running.\n\nIf *anybody* can find a 100% reliable way to replicate this problem, PLEASE LET US KNOW!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2518\n\n",
+    "closed_at": "2010-01-19T07:15:54Z",
     "created_at": "2008-03-14T19:25:20Z",
     "labels": [
         "component: misc",
@@ -16,7 +17,7 @@ archive/issues_002518.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 CC:  @williamstein @mwhansen @robertwb
 

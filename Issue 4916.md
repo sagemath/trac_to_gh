@@ -1,15 +1,16 @@
-# Issue 4916: convert sage.lfunctions.* docstrings to Sphinx
+# Issue 4916: [with patch, needs review] convert sage.lfunctions.* docstrings to Sphinx
 
 archive/issues_004916.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4916\n\n",
+    "closed_at": "2009-02-24T18:54:42Z",
     "created_at": "2009-01-01T22:52:38Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.lfunctions.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.lfunctions.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4916",
     "user": "https://github.com/mwhansen"

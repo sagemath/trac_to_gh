@@ -4,6 +4,7 @@ archive/issues_008339.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @embray @jdemeyer @kiwifb\n\nKeywords: notebook\n\nFrom sage-devel 2010-02-22:\n\nHere's a suggestion for the notebook:   allow the admin user to set a\n\"message of the day\" which would be seen either on the login page\nitself, or as a pop-up or similar after logging in.\n\nExample:  after the server has just been upgraded to a new version\n(like 4.3.3 recently) users could be alerted of this change (and yes,\nI know that the version number is displayed right above the login box,\nbut how many users will actually notice that it has changed)?\n\nAs an admin I would also find this useful as a way of communicating\nwith the user base on my server.\n\nThe existence and text of the MOTD should be settable from the usual\nadmin notebook settings screen.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8339\n\n",
+    "closed_at": "2019-06-15T12:40:53Z",
     "created_at": "2010-02-23T22:46:08Z",
     "labels": [
         "component: notebook"

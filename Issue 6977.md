@@ -1,21 +1,22 @@
-# Issue 6977: Implement __len__ to add support for MuPAD objects as Python containers
+# Issue 6977: [with patch, positive review] Implement __len__ to add support for MuPAD objects as Python containers
 
 archive/issues_006977.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mhansen@gmail.com sage-combinat\n\nKeywords: MuPAD len\n\nThe title says it all; after the patch, one can do:\n\n            sage: len(mupad([1,2,3]))\n            3\n            sage: map(ZZ, list(mupad([1,2,3])))\n            [1, 2, 3]\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6977\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  mhansen@gmail.com sage-combinat\n\nKeywords: MuPAD len\n\nThe title says it all; after the patch, one can do:\n\n            sage: len(mupad([1,2,3]))\n            3\n            sage: map(ZZ, list(mupad([1,2,3])))\n            [1, 2, 3]\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6977\n\n",
+    "closed_at": "2009-10-15T08:53:27Z",
     "created_at": "2009-09-21T13:43:23Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Implement __len__ to add support for MuPAD objects as Python containers",
+    "title": "[with patch, positive review] Implement __len__ to add support for MuPAD objects as Python containers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6977",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @williamstein
+Assignee: @nthiery
 
 CC:  mhansen@gmail.com sage-combinat
 

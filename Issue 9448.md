@@ -3,10 +3,12 @@
 archive/issues_009448.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @williamstein @JohnCremona @jhpalmieri\n\nSuggested approaches during SD23 lightning talk:\n\nAdd a big note in the developer guide around where the location of the cloned branch is mentioned\n\nAdd an extra field in the source introspection pointing to the sage source file. (Suggested by John Cremona)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9448\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @williamstein @JohnCremona @jhpalmieri\n\nKeywords: doc\n\nWhen doing factor?? (either from the command line or in the notebook), the given file is in site-packages.  It should give the file in devel instead.\n\nExample: factor??\n\n```\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function factor at 0x282d230>\nNamespace:      Interactive\nFile:           /usr/local/src/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/arith.py\nDefinition:     factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds)\n```\n\nSuggested approaches during SD23 lightning talk:\n\nAdd a big note in the developer guide around where the location of the cloned branch is mentioned\n\nAlso: no source file is given for class methods, for example:\nn = 60\nn.factor??\n\n```\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method factor of sage.rings.integer.Integer object at 0x428ed20>\nNamespace:      Interactive\nDefinition:     n.factor(self, algorithm='pari', proof=True, limit=None)\nSource:\n    def factor(self, algorithm='pari', proof=True, limit=None):\n```\n\nIn the notebook interface, n.factor?? DOES work, and it even points to the right file in the devel directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9448\n\n",
+    "closed_at": "2010-11-15T23:26:18Z",
     "created_at": "2010-07-07T10:20:04Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "make it clearer not to edit sources in site-packages",
@@ -19,11 +21,40 @@ Assignee: mvngu
 
 CC:  @williamstein @JohnCremona @jhpalmieri
 
+Keywords: doc
+
+When doing factor?? (either from the command line or in the notebook), the given file is in site-packages.  It should give the file in devel instead.
+
+Example: factor??
+
+```
+Type:           function
+Base Class:     <type 'function'>
+String Form:    <function factor at 0x282d230>
+Namespace:      Interactive
+File:           /usr/local/src/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/arith.py
+Definition:     factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds)
+```
+
 Suggested approaches during SD23 lightning talk:
 
 Add a big note in the developer guide around where the location of the cloned branch is mentioned
 
-Add an extra field in the source introspection pointing to the sage source file. (Suggested by John Cremona)
+Also: no source file is given for class methods, for example:
+n = 60
+n.factor??
+
+```
+Type:           builtin_function_or_method
+Base Class:     <type 'builtin_function_or_method'>
+String Form:    <built-in method factor of sage.rings.integer.Integer object at 0x428ed20>
+Namespace:      Interactive
+Definition:     n.factor(self, algorithm='pari', proof=True, limit=None)
+Source:
+    def factor(self, algorithm='pari', proof=True, limit=None):
+```
+
+In the notebook interface, n.factor?? DOES work, and it even points to the right file in the devel directory.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9448
 

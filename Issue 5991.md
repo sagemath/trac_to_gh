@@ -1,15 +1,16 @@
-# Issue 5991: Add as tandard constructor for dynamic classes
+# Issue 5991: [with patch, positive review] Add a standard constructor for dynamic classes
 
 archive/issues_005991.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @saliola @roed314\n\nKeywords: dynamic classes, pickling, unique representation\n\nThis patch implements sage.structure.dynamic_class.dynamic_class, for constructing dynamically new python classes. The constructed classes can be pickled, and have unique representation.\n\nDepends on #5985 for the pickling and #5120\n\nUsed by the upcoming category framework #5891, (and sage-words?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5991\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @saliola @roed314\n\nKeywords: dynamic classes, pickling, unique representation\n\nThis patch implements sage.structure.dynamic_class.dynamic_class, for constructing dynamically new python classes. The constructed classes can be pickled, and have unique representation.\n\nThe patch includes a discussion on the relevance of dynamic classes for Sage.\n\nDepends on #5985 for pickling and #5120.\n\nUsed by the upcoming category framework #5891, (and sage-words?)\n\nIssue: is sage.structure.dynamic_class.dynamic_class the natural location for this?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5991\n\n",
+    "closed_at": "2009-10-15T07:15:24Z",
     "created_at": "2009-05-05T22:04:01Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Add as tandard constructor for dynamic classes",
+    "title": "[with patch, positive review] Add a standard constructor for dynamic classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5991",
     "user": "https://github.com/nthiery"
@@ -23,9 +24,14 @@ Keywords: dynamic classes, pickling, unique representation
 
 This patch implements sage.structure.dynamic_class.dynamic_class, for constructing dynamically new python classes. The constructed classes can be pickled, and have unique representation.
 
-Depends on #5985 for the pickling and #5120
+The patch includes a discussion on the relevance of dynamic classes for Sage.
+
+Depends on #5985 for pickling and #5120.
 
 Used by the upcoming category framework #5891, (and sage-words?)
+
+Issue: is sage.structure.dynamic_class.dynamic_class the natural location for this?
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5991
 

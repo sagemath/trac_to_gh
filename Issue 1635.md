@@ -1,9 +1,10 @@
-# Issue 1635: Singular.spkg relatated: lib->LIB link issue on OSX
+# Issue 1635: [with spkg, with positive review] Singular.spkg relatated: lib->LIB link issue on OSX
 
 archive/issues_001635.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe problem has come up a couple times on sage-devel: The OSX binary Sage tar-ball contains a link case sensitive link lib->LIB that is caused by the singular.spkg. I believe it is to accomodate some issue with Singular's high level libraries. We should just skip creating that link on OSX and all should be fine.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1635\n\n",
+    "closed_at": "2008-01-03T13:51:20Z",
     "created_at": "2007-12-29T06:19:21Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001635.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "Singular.spkg relatated: lib->LIB link issue on OSX",
+    "title": "[with spkg, with positive review] Singular.spkg relatated: lib->LIB link issue on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1635",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

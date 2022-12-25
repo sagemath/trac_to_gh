@@ -3,7 +3,8 @@
 archive/issues_008652.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\nKeywords: sd40.5\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
+    "closed_at": "2014-03-19T04:36:53Z",
     "created_at": "2010-04-06T05:25:31Z",
     "labels": [
         "component: user interface",
@@ -19,6 +20,8 @@ archive/issues_008652.json:
 Assignee: @williamstein
 
 CC:  @nexttime
+
+Keywords: sd40.5
 
 I got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  
 

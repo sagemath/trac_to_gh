@@ -4,6 +4,7 @@ archive/issues_007371.json:
 ```json
 {
     "body": "Assignee: joyner\n\nThere is a generic group method called `quotient`, which is meant to return the quotient group by a normal subgroup, and is meant to be overridden by inheriting classes.  However, the corresponding method for permutation groups is called `quotient_group` instead:\n\n```\nsage: S = SymmetricGroup(6)\nsage: N = S.normal_subgroups()[1]\nsage: S.quotient(N)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/674/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-stable/local/lib/python2.6/site-packages/sage/groups/group.so in sage.groups.group.Group.quotient (sage/groups/group.c:1719)()\n\nNotImplementedError: \nsage: S.quotient_group(N)\nPermutation Group with generators [(), (1,2)]\n```\n\nThe attached patch renames the permutation group method to `quotient` and deprecates `quotient_group`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7371\n\n",
+    "closed_at": "2009-11-17T12:10:28Z",
     "created_at": "2009-11-01T22:29:41Z",
     "labels": [
         "component: group theory",

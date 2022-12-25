@@ -4,6 +4,7 @@ archive/issues_007853.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  hartke @rlmill @nathanncohen\n\nCurrently, block_and_cut_vertices says that the vertex in a single-vertex graph is a cut vertex:\n\n```\nsage: Graph(1).blocks_and_cut_vertices()\n([0], [0])\n```\n\nAccording to the definition of cut vertices given in the documentation of the function, a cut vertex, when removed, increases the connected components of the graph.  Either that documentation should be changed to mention a corner case, or (preferably), the above computation should look like:\n\n```\nsage: Graph(1).blocks_and_cut_vertices()\n([0], [])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7853\n\n",
+    "closed_at": "2010-01-13T04:51:06Z",
     "created_at": "2010-01-06T06:06:06Z",
     "labels": [
         "component: graph theory",

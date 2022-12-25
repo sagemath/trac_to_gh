@@ -3,7 +3,8 @@
 archive/issues_006900.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: pexpect\n\nSince pexpect is a very important package, I would like to point one problem that happens when DOT_SAGE is set to a long pathname, causing the SaveWorkspace(\"/path/to/$DOT_SAGE/gap/workspace-ext\");\ncommand in interfaces/gap.py fail (and possibly others).\n\n  Sample test case to reproduce the problem:\n\n% mkdir -p /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage\n<<make sure DOT_SAGE will point to that directory>>\n% sage\n<<exit sage>>\n% ls /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage/gap/\nREADME.txt\n<<change DOT_SAGE to something like just /tmp/0123456789/>>\n% sage\n<<exit sage>>\n% ls /tmp/0123456789/.sage/gap\nREADME.txt  workspace-1328071335\n\n  The problem is due to the command having more then 80 characters.\n\n  Currently sage uses pexpect-2.0 (patchlevel 4). And this is also one special case in my rpm packages of sage, because if using the latest upstream, in my case:\n% rpm -q python-pexpect\npython-pexpect-2.4-1mdv2010.0\nit works correctly in the terminal interface, but doesn't work correctly in the notebook interface.\n\n  A quick and dirty way to test a newer pexpect would be:\n% mkdir $HOME/tmp/sage-pexpect\n% mv $SAGE_ROOT/lib/python/site-packages/{ANSI,FSM,pexpect,pxssh,screen}.py $HOME/tmp/sage-pexpect\n% cp newer-python-pexpect/{ANSI,FSM,pexpect,pxssh,screen}.py $SAGE_ROOT/lib/python/site-packages\n% sage\nsage: notebook()\n\n  After starting the notebook, and using a newer pexpect, try some command that causes a background processes to be created, like the first singular example in the tutorial.\nA screenshot of the problem, that happens the first time a background process is started is:\nhttp://img134.imageshack.us/img134/557/sagewithnewerpexpect1.jpg\nbut, as also shown in the screenshot, in subsequent evaluations, it works correctly in the notebook.\n\n  Since it always works correct in the terminal interface of sage, I suspect it is an issue in the notebook/worksheet code. And in that case, it actually may be a different way to debug problems in the sage pexpect interface (also a suggestion :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6900\n\n",
+    "body": "Assignee: boothby\n\nKeywords: pexpect\n\n  Since pexpect is a very important package, I would like to point one problem that happens when DOT_SAGE is set to a long pathname, causing the SaveWorkspace(\"/path/to/$DOT_SAGE/gap/workspace-ext\");\ncommand in interfaces/gap.py fail (and possibly others).\n\n  Sample test case to reproduce the problem:\n\n\n```\n% mkdir -p /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage\n<<make sure DOT_SAGE will point to that directory>>\n% sage\n<<exit sage>>\n% ls /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage/gap/\nREADME.txt\n<<change DOT_SAGE to something like just /tmp/0123456789/>>\n% sage\n<<exit sage>>\n% ls /tmp/0123456789/.sage/gap\nREADME.txt  workspace-1328071335\n```\n\n  The problem is due to the command having more then 80 characters.\n\n  Currently sage uses pexpect-2.0 (patchlevel 4). And this is also one special case in my rpm packages of sage, because if using the latest upstream, in my case:\n\n```\n% rpm -q python-pexpect\npython-pexpect-2.4-1mdv2010.0\n```\n\nit works correctly in the terminal interface, but doesn't work correctly in the notebook interface.\n\n  A quick and dirty way to test a newer pexpect would be:\n\n\n```\n% mkdir $HOME/tmp/sage-pexpect\n% mv $SAGE_ROOT/lib/python/site-packages/{ANSI,FSM,pexpect,pxssh,screen}.py $HOME/tmp/sage-pexpect\n% cp newer-python-pexpect/{ANSI,FSM,pexpect,pxssh,screen}.py $SAGE_ROOT/lib/python/site-packages\n% sage\nsage: notebook()\n```\n\n  After starting the notebook, and using a newer pexpect, try some command that causes a background processes to be created, like the first singular example in the tutorial.\nA screenshot of the problem, that happens the first time a background process is started is:\nhttp://img134.imageshack.us/img134/557/sagewithnewerpexpect1.jpg\nbut, as also shown in the screenshot, in subsequent evaluations, it works correctly in the notebook.\n\n  Since it always works correct in the terminal interface of sage, I suspect it is an issue in the notebook/worksheet code. And in that case, it actually may be a different way to debug problems in the sage pexpect interface (also a suggestion :-)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6900\n\n",
+    "closed_at": "2014-09-18T17:58:35Z",
     "created_at": "2009-09-07T04:32:43Z",
     "labels": [
         "component: notebook"
@@ -19,11 +20,13 @@ Assignee: boothby
 
 Keywords: pexpect
 
-Since pexpect is a very important package, I would like to point one problem that happens when DOT_SAGE is set to a long pathname, causing the SaveWorkspace("/path/to/$DOT_SAGE/gap/workspace-ext");
+  Since pexpect is a very important package, I would like to point one problem that happens when DOT_SAGE is set to a long pathname, causing the SaveWorkspace("/path/to/$DOT_SAGE/gap/workspace-ext");
 command in interfaces/gap.py fail (and possibly others).
 
   Sample test case to reproduce the problem:
 
+
+```
 % mkdir -p /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage
 <<make sure DOT_SAGE will point to that directory>>
 % sage
@@ -35,20 +38,29 @@ README.txt
 <<exit sage>>
 % ls /tmp/0123456789/.sage/gap
 README.txt  workspace-1328071335
+```
 
   The problem is due to the command having more then 80 characters.
 
   Currently sage uses pexpect-2.0 (patchlevel 4). And this is also one special case in my rpm packages of sage, because if using the latest upstream, in my case:
+
+```
 % rpm -q python-pexpect
 python-pexpect-2.4-1mdv2010.0
+```
+
 it works correctly in the terminal interface, but doesn't work correctly in the notebook interface.
 
   A quick and dirty way to test a newer pexpect would be:
+
+
+```
 % mkdir $HOME/tmp/sage-pexpect
 % mv $SAGE_ROOT/lib/python/site-packages/{ANSI,FSM,pexpect,pxssh,screen}.py $HOME/tmp/sage-pexpect
 % cp newer-python-pexpect/{ANSI,FSM,pexpect,pxssh,screen}.py $SAGE_ROOT/lib/python/site-packages
 % sage
 sage: notebook()
+```
 
   After starting the notebook, and using a newer pexpect, try some command that causes a background processes to be created, like the first singular example in the tutorial.
 A screenshot of the problem, that happens the first time a background process is started is:
@@ -56,6 +68,7 @@ http://img134.imageshack.us/img134/557/sagewithnewerpexpect1.jpg
 but, as also shown in the screenshot, in subsequent evaluations, it works correctly in the notebook.
 
   Since it always works correct in the terminal interface of sage, I suspect it is an issue in the notebook/worksheet code. And in that case, it actually may be a different way to debug problems in the sage pexpect interface (also a suggestion :-)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6900
 

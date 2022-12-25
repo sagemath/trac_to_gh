@@ -1,16 +1,17 @@
-# Issue 3484: [with patch, needs review] extend sage_eval (in preparation for sage_input)
+# Issue 3484: [with patch, positive review] extend sage_eval (in preparation for sage_input)
 
 archive/issues_003484.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nThis patch creates some new functionality in sage_eval: the preparser can be disabled; a sequence of commands can be specified, which will be run before the string is evaluated; and there are new calling conventions that take a tuple instead of a string.\n\nThese new calling conventions are useful for the proposed sage_input function (so that `sage_eval(sage_input(...))` works); but the other new functionality is generally useful, so I think it's reasonable to review and apply this patch even though sage_input is not ready for submission.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3484\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nKeywords: editor_mabshoff\n\nThis patch creates some new functionality in sage_eval: the preparser can be disabled; a sequence of commands can be specified, which will be run before the string is evaluated; and there are new calling conventions that take a tuple instead of a string.\n\nThese new calling conventions are useful for the proposed sage_input function (so that `sage_eval(sage_input(...))` works); but the other new functionality is generally useful, so I think it's reasonable to review and apply this patch even though sage_input is not ready for submission.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3484\n\n",
+    "closed_at": "2008-08-10T08:27:04Z",
     "created_at": "2008-06-20T08:01:48Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] extend sage_eval (in preparation for sage_input)",
+    "title": "[with patch, positive review] extend sage_eval (in preparation for sage_input)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3484",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -19,6 +20,8 @@ archive/issues_003484.json:
 Assignee: cwitty
 
 CC:  @ncalexan wstein
+
+Keywords: editor_mabshoff
 
 This patch creates some new functionality in sage_eval: the preparser can be disabled; a sequence of commands can be specified, which will be run before the string is evaluated; and there are new calling conventions that take a tuple instead of a string.
 

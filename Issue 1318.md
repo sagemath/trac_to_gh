@@ -1,23 +1,22 @@
-# Issue 1318: [graphs] calculate eigenspaces of the graph
+# Issue 1318: [with patch] calculate eigenspaces of the graph
 
 archive/issues_001318.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1318\n\n",
+    "body": "Assignee: @rlmill\n\nFrom Chris Godsil's wishlist.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1318\n\n",
+    "closed_at": "2007-12-18T17:31:40Z",
     "created_at": "2007-11-28T20:05:37Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[graphs] calculate eigenspaces of the graph",
+    "title": "[with patch] calculate eigenspaces of the graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1318",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 From Chris Godsil's wishlist.
 

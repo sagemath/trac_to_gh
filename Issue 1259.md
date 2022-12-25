@@ -1,16 +1,17 @@
-# Issue 1259: readline miscompiles on OSX 10.5.[1]
+# Issue 1259: readline, termcap don't create dynamic libraries on OSX 10.5
 
 archive/issues_001259.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJustin Walker reports:\n\n```\nThe only problem with the build is this, with readline:\n\nConfigured with: /var/tmp/gcc/gcc-5465~16/src/configure --disable-\nchecking -enable-werror --prefix=/usr --mandir=/share/man --enable-\nlanguages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/\n$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/\nlib --build=i686-apple-darwin9 --with-arch=apple --with-tune=generic  \n--host=i686-apple-darwin9 --target=i686-apple-darwin9\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5465)\ni686-apple-darwin9-gcc-4.0.1: -compatibility_version only allowed  \nwith -dynamiclib\ni686-apple-darwin9-gcc-4.0.1: -compatibility_version only allowed  \nwith -dynamiclib\nmake[3]: *** [libreadline.5.2.dylib] Error 1\nmake[3]: *** Waiting for unfinished jobs....\nmake[3]: *** [libhistory.5.2.dylib] Error 1\nmake[2]: [install-shared] Error 2 (ignored)\n\nFWIW, this same error crops up in a standalone build of readline, but  \nit kills the build.  Sage seems to be unconcerned.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1259\n\n",
+    "closed_at": "2008-02-24T01:09:07Z",
     "created_at": "2007-11-25T04:34:31Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "readline miscompiles on OSX 10.5.[1]",
+    "title": "readline, termcap don't create dynamic libraries on OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1259",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

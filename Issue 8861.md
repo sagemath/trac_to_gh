@@ -1,9 +1,10 @@
-# Issue 8861: sagenb-0.8.p0.spkg: broken dependencies, requires internet conn. to build
+# Issue 8861: sagenb-0.8.p1.spkg: broken dependencies, requires internet conn. to build
 
 archive/issues_008861.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @TimDumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p1.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @TimDumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p2.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file. \n\n**Apply this spkg:**\n\n* http://sage.math.washington.edu/home/mvngu/spkg/standard/sagenb/sagenb-0.8.p2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
+    "closed_at": "2010-05-08T21:36:21Z",
     "created_at": "2010-05-03T19:02:55Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_008861.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "sagenb-0.8.p0.spkg: broken dependencies, requires internet conn. to build",
+    "title": "sagenb-0.8.p1.spkg: broken dependencies, requires internet conn. to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8861",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
@@ -63,7 +64,11 @@ Adding mechanize 0.1.11 to easy-install.pth file
 ```
 So the solution seems to be pretty easy: 
 
-Make a new sagenb-0.8.p1.spkg, by throwing out "mechanize-0.2.0.tar.gz" under /src/, adding back the old "mechanize-0.1.11.zip", and finally adjusting the corresponding line 6 in the spkg-install file.
+Make a new sagenb-0.8.p2.spkg, by throwing out "mechanize-0.2.0.tar.gz" under /src/, adding back the old "mechanize-0.1.11.zip", and finally adjusting the corresponding line 6 in the spkg-install file. 
+
+**Apply this spkg:**
+
+* http://sage.math.washington.edu/home/mvngu/spkg/standard/sagenb/sagenb-0.8.p2.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/8861
 

@@ -1,15 +1,16 @@
-# Issue 3674: Implement integral point finding for elliptic curves over Q
+# Issue 3674: [with new patches, positive review] Implement integral point finding for elliptic curves over Q
 
 archive/issues_003674.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  mardaus@students.uni-mainz.de\n\nThe problem of enumerating integral and S-integral points on elliptic curves over Q and over number fields is one which it would be wonderful to have implemented in Sage.  Magma has this over Q (for general S), but no package has the general case (except possibly in code for Simath written by E.Hermann).\n\nI suggested this as a good problem for a Masters student to work on after the Sage Days in Bristol in November 2007.   After that, Tobias Nagel & Michael Mardaus (students at Mainz) started to work on it.  At my suggestion they started with the easiest case: integral points over Q (i.e. S=\\emptyset).  They have just sent me this, and I am about to start testing it:\n\nDear John,\n\nwe just finished our work (or at least part one of it).\nAs you explained to us we put our code into ell_rational_field.py. So a new function 'integral_points(self, mw_base='auto', tors_points='auto')' is provided after a rebuild of sage.\n\nOur testcases are also attached to the mail. If you load self_test.sage you have a funtion called 'test_integral_points'. Call it by test_integral_points('all') to test 12 testcases, which mean several curves and changes in the generators of the Mordell-Weil base. (As an overview we made an excel-sheet with the computation time, but it is only one run and not statistically correct evaluated ;) )\nWe are not sure if all the functionality should be written in ell_rational_field.py as we did or if it should be swaped out to somewhere.\n\nWe hope you are satisfied with our work.\n\nGreetings\nTobias and Michael\n\nI will attach a patch file created from the attachments they sent me shortly.\n\nJohn Cremona\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3674\n\n",
+    "closed_at": "2008-08-13T17:27:16Z",
     "created_at": "2008-07-18T17:19:43Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Implement integral point finding for elliptic curves over Q",
+    "title": "[with new patches, positive review] Implement integral point finding for elliptic curves over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3674",
     "user": "https://github.com/JohnCremona"

@@ -3,7 +3,8 @@
 archive/issues_009834.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y[0,-1,1,1]);\n```\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y,[0,-1,1,1]);\n```\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
+    "closed_at": "2010-09-28T09:11:40Z",
     "created_at": "2010-08-28T21:18:27Z",
     "labels": [
         "component: calculus",
@@ -17,7 +18,7 @@ archive/issues_009834.json:
     "user": "https://github.com/robert-marik"
 }
 ```
-Assignee: @burcin
+Assignee: mhampton
 
 CC:  mhampton
 
@@ -35,10 +36,12 @@ when trying
 ```
 epsilon = 1e-2; vars = var('x'); y = function('y',x);
 de = epsilon*diff(y,x,2)+y*(1-y^2)==0;
-soln = desolve(de,y[0,-1,1,1]);
+soln = desolve(de,y,[0,-1,1,1]);
 ```
 
 Explanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9835
 

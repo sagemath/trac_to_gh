@@ -1,9 +1,10 @@
-# Issue 5338: Sage 3.2.2: speed regression/infite loop for "K.<b> = QQ[a]"
+# Issue 5338: Sage 3.2.2: speed regression/infinite loop for "K.<b> = QQ[a]"
 
 archive/issues_005338.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @robertwb\n\nThe code below works instantly in Sage 3.2.1, but starting with Sage 3.2.2 it doesn't even finish the last command in 30 minutes CPU time:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:     sage: x = var('x')\nsage:     sage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage:     sage: a = solve(eqn, x)[0].rhs()\nsage:     sage: K.<b> = QQ[a]\n```\nCarl Witty suggests:\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n[10:23am] mabs: So far it has eaten *4 minutes* of CPU time.\n[10:23am] cwitty: It looks like somebody changed the embedding \nsystem to use QQbar instead of wstein's algdep-of-numerical-value.\n```\nThis is likely related to the new embedding code in Sage 3.2.2, so I am CCing RobertWB.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5338\n\n",
+    "closed_at": "2009-12-02T08:44:27Z",
     "created_at": "2009-02-22T18:50:31Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_005338.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Sage 3.2.2: speed regression/infite loop for \"K.<b> = QQ[a]\"",
+    "title": "Sage 3.2.2: speed regression/infinite loop for \"K.<b> = QQ[a]\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5338",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

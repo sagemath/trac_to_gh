@@ -3,10 +3,11 @@
 archive/issues_005686.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nmpi4py in the optional package is version 0.3.1, while the newest version is 1.0.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5686\n\n",
+    "body": "Assignee: mabshoff\n\nmpi4py in the experimental package is version 0.3.1, while the newest version is 1.0.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5686\n\n",
+    "closed_at": "2009-12-19T05:22:40Z",
     "created_at": "2009-04-04T22:55:34Z",
     "labels": [
-        "component: optional packages",
+        "component: packages: experimental",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
@@ -18,7 +19,7 @@ archive/issues_005686.json:
 ```
 Assignee: mabshoff
 
-mpi4py in the optional package is version 0.3.1, while the newest version is 1.0.0.
+mpi4py in the experimental package is version 0.3.1, while the newest version is 1.0.0.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5686
 

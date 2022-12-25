@@ -1,16 +1,17 @@
-# Issue 946: hang when doctesting calculus.py on some systems
+# Issue 946: [with patch] hang when doctesting calculus.py on some systems
 
 archive/issues_000946.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nRemove the lines with # not tested -- trac #number\nin them from calculus.py to replicate this problem on sage.math. \nIt might be a weird hanging issue with maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/946\n\n",
+    "closed_at": "2007-11-27T06:25:12Z",
     "created_at": "2007-10-20T17:23:23Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "hang when doctesting calculus.py on some systems",
+    "title": "[with patch] hang when doctesting calculus.py on some systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/946",
     "user": "https://github.com/williamstein"

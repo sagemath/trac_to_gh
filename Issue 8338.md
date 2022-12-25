@@ -3,11 +3,10 @@
 archive/issues_008338.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: fourier,transform\n\nSage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adecuate definition for each should be agreed upon though...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8338\n\n",
+    "body": "Assignee: olazo\n\nCC:  @kcrisman\n\nKeywords: fourier,transform\n\nSage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adequate definition for each should be agreed upon though...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8338\n\n",
     "created_at": "2010-02-23T19:36:16Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Add Fourier transforms",
@@ -16,13 +15,13 @@ archive/issues_008338.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
-Assignee: @burcin
+Assignee: olazo
 
 CC:  @kcrisman
 
 Keywords: fourier,transform
 
-Sage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adecuate definition for each should be agreed upon though...
+Sage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adequate definition for each should be agreed upon though...
 
 Issue created by migration from https://trac.sagemath.org/ticket/8338
 

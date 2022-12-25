@@ -1,24 +1,27 @@
-# Issue 526: better support for parallel make
+# Issue 526: [easy?] better support for parallel make
 
 archive/issues_000526.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  dmharvey@math.harvard.edu\n\na.k.a. `make -j`\n\nSee discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a88d59dc35404507\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/526\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  dmharvey@math.harvard.edu\n\nKeywords: package audit\n\na.k.a. `make -j`\n\nSee discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a88d59dc35404507\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/526\n\n",
+    "closed_at": "2008-09-26T09:18:33Z",
     "created_at": "2007-08-30T04:30:52Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "better support for parallel make",
+    "title": "[easy?] better support for parallel make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/526",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 CC:  dmharvey@math.harvard.edu
+
+Keywords: package audit
 
 a.k.a. `make -j`
 

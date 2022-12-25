@@ -1,9 +1,10 @@
-# Issue 1289: serious problems with how ceil and floor are computed symbolically
+# Issue 1289: [with patch, with positive review] serious problems with how ceil and floor are computed symbolically
 
 archive/issues_001289.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThese are mostly the result of maxima getting used at some point to do the computation (except the one that leaves floor(a) symbolic?!)\n\n```\nsage: a = factorial(50) / e\nsage: ceil(a)\n11188719610782480421414879249141773426630319613740326700720324608\nsage: floor(a)\nfloor(30414093201713378043612608166064768844377641568960512000000000000*e^-1)\nsage: ceil(factorial(50) / n(e,20000))\n11188719610782480504630258070757734324011354208865721592720336801\nsage: floor(factorial(50) / n(e,20000))\n11188719610782480504630258070757734324011354208865721592720336800\nsage: int(floor(a))\n11188719610782479690664060583690314324787903255598816872754053120L\n```\n\nBasically the ceil and floor need to be improved to *not* fall back on Maxima,\nbut hopefully do something more sensible, especially when large numbers are\ninvolved.  \n\nI think this is an extremely important bug to fix, since it is something\nthat will come up in practice and produce wrong results, e.g., in a recent\npatch by Dan Drake posted on sage-devel it *did*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1289\n\n",
+    "body": "Assignee: @mwhansen\n\nThese are mostly the result of maxima getting used at some point to do the computation (except the one that leaves floor(a) symbolic?!)\n\n```\nsage: a = factorial(50) / e\nsage: ceil(a)\n11188719610782480421414879249141773426630319613740326700720324608\nsage: floor(a)\nfloor(30414093201713378043612608166064768844377641568960512000000000000*e^-1)\nsage: ceil(factorial(50) / n(e,20000))\n11188719610782480504630258070757734324011354208865721592720336801\nsage: floor(factorial(50) / n(e,20000))\n11188719610782480504630258070757734324011354208865721592720336800\nsage: int(floor(a))\n11188719610782479690664060583690314324787903255598816872754053120L\n```\n\nBasically the ceil and floor need to be improved to *not* fall back on Maxima,\nbut hopefully do something more sensible, especially when large numbers are\ninvolved.  \n\nI think this is an extremely important bug to fix, since it is something\nthat will come up in practice and produce wrong results, e.g., in a recent\npatch by Dan Drake posted on sage-devel it *did*. \n\nThis is related to trac #1286. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1289\n\n",
+    "closed_at": "2008-01-18T01:45:44Z",
     "created_at": "2007-11-27T14:34:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_001289.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "serious problems with how ceil and floor are computed symbolically",
+    "title": "[with patch, with positive review] serious problems with how ceil and floor are computed symbolically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1289",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 These are mostly the result of maxima getting used at some point to do the computation (except the one that leaves floor(a) symbolic?!)
 
@@ -41,7 +42,9 @@ involved.
 
 I think this is an extremely important bug to fix, since it is something
 that will come up in practice and produce wrong results, e.g., in a recent
-patch by Dan Drake posted on sage-devel it *did*.
+patch by Dan Drake posted on sage-devel it *did*. 
+
+This is related to trac #1286. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1289
 

@@ -4,6 +4,7 @@ archive/issues_008536.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWhen quitting we see\n\n```\nExiting SAGE (CPU time 0m0.04s, Wall time 0m0.63s).\n```\nand there are several other places where \"SAGE\" is output instead of \"Sage\".\n\nThe patch changes these.  I tested the whole library: no doctests needed changing at all.  But maybe there are other issues which I did not think of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8536\n\n",
+    "closed_at": "2010-04-16T18:40:32Z",
     "created_at": "2010-03-14T18:01:19Z",
     "labels": [
         "component: user interface",

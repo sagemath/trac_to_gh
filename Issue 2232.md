@@ -1,16 +1,17 @@
-# Issue 2232: Bug in 'digits' function for Integers
+# Issue 2232: [with patch, positive review] Bug in 'digits' function for Integers
 
 archive/issues_002232.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis works\n\n```\nsage: 1.digits(16,'0123456789abcdef')\n['1']\nsage: 2.digits(16,'0123456789abcdef')\n['2']\n```\nbut this don't\n\n```\nsage: 0.digits(16,'0123456789abcdef')\n[]\n```\n\nThe problem exists for all bases. The '0'-value is never returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2232\n\n",
+    "closed_at": "2008-04-04T18:14:36Z",
     "created_at": "2008-02-20T14:11:38Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Bug in 'digits' function for Integers",
+    "title": "[with patch, positive review] Bug in 'digits' function for Integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2232",
     "user": "https://github.com/m-r-k"

@@ -1,16 +1,17 @@
-# Issue 1812: [with patch] doctest coverage for finite_field_givaro up to 100%
+# Issue 1812: [with patch, positive review] doctest coverage for finite_field_givaro up to 100%
 
 archive/issues_001812.json:
 ```json
 {
     "body": "Assignee: tba\n\nbesides this, this patch also removes the redundant `K.is_prime` method, sorry for the mess. It can easily be re-added though but this time in `FiniteField_generic` instead of in every implementation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1812\n\n",
+    "closed_at": "2008-01-21T04:22:42Z",
     "created_at": "2008-01-17T22:40:53Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] doctest coverage for finite_field_givaro up to 100%",
+    "title": "[with patch, positive review] doctest coverage for finite_field_givaro up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1812",
     "user": "https://github.com/malb"

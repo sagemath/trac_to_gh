@@ -1,9 +1,10 @@
-# Issue 1324: 2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64
+# Issue 1324: [with patch, with positive report] 2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64
 
 archive/issues_001324.json:
 ```json
 {
-    "body": "Assignee: failure\n\nInitially Kate Minola reported the issue in http://groups.google.com/group/sage-support/t/ff6aa3efc272f40b\n\nValgrind tells us:\n\n```\n==6899== Conditional jump or move depends on uninitialised value(s)\n==6899==    at 0xC4BCC67: __pyx_f_4sage_5rings_9real_rqdf_17QuadDoubleElement__set(__pyx_obj_4sage_5rings_9real_rqdf_QuadDou\nbleElement*, _object*) (real_rqdf.cpp:2521)\n==6899==    by 0xC4B6037: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___init__(_object*, _object*, _object*) (real_\nrqdf.cpp:4282)\n==6899==    by 0x458E40: type_call (typeobject.c:436)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4B94F6: __pyx_pf_4sage_5rings_9real_rqdf_25RealQuadDoubleField_class___call__(_object*, _object*, _object*\n) (real_rqdf.cpp:2919)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==6899==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==6899==    by 0x4838F4: PyEval_EvalFrameEx (ceval.c:494)\n==6899==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==6899==    by 0x48328C: PyEval_EvalFrameEx (ceval.c:3660)\n\n==6899== Invalid read of size 1\n==6899==    at 0x4A1CA13: strlen (mc_replace_strmem.c:242)\n==6899==    by 0x44D65A: PyString_FromString (stringobject.c:108)\n==6899==    by 0xC4B81B8: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___str_no_scientific(_object*, _object*) (real\n_rqdf.cpp:5315)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4BB34A: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement_str(_object*, _object*) (real_rqdf.cpp:5851)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4B595B: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___repr__(_object*) (real_rqdf.cpp:5153)\n==6899==    by 0x443279: PyObject_Repr (object.c:361)\n==6899==    by 0x429B5B: PyFile_WriteObject (fileobject.c:2196)\n==6899==    by 0x4ABD88: sys_displayhook (sysmodule.c:114)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1324\n\n",
+    "body": "Assignee: cwitty\n\nInitially Kate Minola reported the issue in http://groups.google.com/group/sage-support/t/ff6aa3efc272f40b\n\nValgrind tells us:\n\n```\n==6899== Conditional jump or move depends on uninitialised value(s)\n==6899==    at 0xC4BCC67: __pyx_f_4sage_5rings_9real_rqdf_17QuadDoubleElement__set(__pyx_obj_4sage_5rings_9real_rqdf_QuadDou\nbleElement*, _object*) (real_rqdf.cpp:2521)\n==6899==    by 0xC4B6037: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___init__(_object*, _object*, _object*) (real_\nrqdf.cpp:4282)\n==6899==    by 0x458E40: type_call (typeobject.c:436)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4B94F6: __pyx_pf_4sage_5rings_9real_rqdf_25RealQuadDoubleField_class___call__(_object*, _object*, _object*\n) (real_rqdf.cpp:2919)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==6899==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==6899==    by 0x4838F4: PyEval_EvalFrameEx (ceval.c:494)\n==6899==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==6899==    by 0x48328C: PyEval_EvalFrameEx (ceval.c:3660)\n\n==6899== Invalid read of size 1\n==6899==    at 0x4A1CA13: strlen (mc_replace_strmem.c:242)\n==6899==    by 0x44D65A: PyString_FromString (stringobject.c:108)\n==6899==    by 0xC4B81B8: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___str_no_scientific(_object*, _object*) (real\n_rqdf.cpp:5315)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4BB34A: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement_str(_object*, _object*) (real_rqdf.cpp:5851)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4B595B: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___repr__(_object*) (real_rqdf.cpp:5153)\n==6899==    by 0x443279: PyObject_Repr (object.c:361)\n==6899==    by 0x429B5B: PyFile_WriteObject (fileobject.c:2196)\n==6899==    by 0x4ABD88: sys_displayhook (sysmodule.c:114)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1324\n\n",
+    "closed_at": "2007-12-09T12:03:15Z",
     "created_at": "2007-11-28T21:44:15Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_001324.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64",
+    "title": "[with patch, with positive report] 2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1324",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: cwitty
 
 Initially Kate Minola reported the issue in http://groups.google.com/group/sage-support/t/ff6aa3efc272f40b
 

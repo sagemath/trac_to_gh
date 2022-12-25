@@ -1,16 +1,17 @@
-# Issue 3253: f.jacob() used to work to compute jacobian ideal. Now it doesn't
+# Issue 3253: [with patch, positive review] f.jacob() used to work to compute jacobian ideal. Now it doesn't
 
 archive/issues_003253.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nThe code {{{ # file = singularlocus1.sage\nK = QQ\nR.<x,y,z> = PolynomialRing(K)\nf = x^3 + y^3 + z^3\nJ = f.jacob()*R # Jacobian ideal\nd = J.dimension()\nprint \"f =\", f\nprint \"dimension(Jacobian ideal of f) =\", d\nprint \"projective dimension of singular locus of f =\", d-1 }}}\ngenerates an error:\n\n[chiquito:jc] sage\n\n---\n| SAGE Version 3.0, Release Date: 2008-04-21                         |\n| Type notebook() for the GUI, and license() for information.        |\n---\n\nsage: load \"singularlocus1.sage\"\n\n---\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py in <module>()\n      7 R = PolynomialRing(K,names=('x', 'y', 'z')); (x, y, z,) = R._first_ngens(Integer(3))\n      8 f = x**Integer(3) + y**Integer(3) + z**Integer(3)\n\n---\n     10 d = J.dimension()\n     11 print \"f =\", f\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'jacob'\nWARNING: Failure executing file: </Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py>\n\n\nIt seems that f.jacob() no longer exists.  (for a while it didn't, then it did, now it doesn')\n\nIssue created by migration from https://trac.sagemath.org/ticket/3253\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nThe code \n\n``` \n# file = singularlocus1.sage\nK = QQ\nR.<x,y,z> = PolynomialRing(K)\nf = x^3 + y^3 + z^3\nJ = f.jacob()*R # Jacobian ideal\nd = J.dimension()\nprint \"f =\", f\nprint \"dimension(Jacobian ideal of f) =\", d\nprint \"projective dimension of singular locus of f =\", d-1 }}}\ngenerates an error:\n\n[chiquito:jc] sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0, Release Date: 2008-04-21                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: load \"singularlocus1.sage\"\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py in <module>()\n      7 R = PolynomialRing(K,names=('x', 'y', 'z')); (x, y, z,) = R._first_ngens(Integer(3))\n      8 f = x**Integer(3) + y**Integer(3) + z**Integer(3)\n----> 9 J = f.jacob()*R # Jacobian ideal\n     10 d = J.dimension()\n     11 print \"f =\", f\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'jacob'\nWARNING: Failure executing file: </Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py>\n```\nIt seems that f.jacob() no longer exists.  (for a while it didn't, then it did, now it doesn')\n\nIssue created by migration from https://trac.sagemath.org/ticket/3253\n\n",
+    "closed_at": "2008-08-28T12:00:27Z",
     "created_at": "2008-05-18T03:43:31Z",
     "labels": [
         "component: algebraic geometry",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "f.jacob() used to work to compute jacobian ideal. Now it doesn't",
+    "title": "[with patch, positive review] f.jacob() used to work to compute jacobian ideal. Now it doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3253",
     "user": "https://trac.sagemath.org/admin/accounts/users/jxxcarlson"
@@ -20,7 +21,10 @@ Assignee: @williamstein
 
 CC:  alexghitza
 
-The code {{{ # file = singularlocus1.sage
+The code 
+
+``` 
+# file = singularlocus1.sage
 K = QQ
 R.<x,y,z> = PolynomialRing(K)
 f = x^3 + y^3 + z^3
@@ -32,29 +36,24 @@ print "projective dimension of singular locus of f =", d-1 }}}
 generates an error:
 
 [chiquito:jc] sage
-
----
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 | SAGE Version 3.0, Release Date: 2008-04-21                         |
 | Type notebook() for the GUI, and license() for information.        |
----
-
 sage: load "singularlocus1.sage"
-
----
+---------------------------------------------------------------------------
 <type 'exceptions.AttributeError'>        Traceback (most recent call last)
 
 /Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py in <module>()
       7 R = PolynomialRing(K,names=('x', 'y', 'z')); (x, y, z,) = R._first_ngens(Integer(3))
       8 f = x**Integer(3) + y**Integer(3) + z**Integer(3)
-
----
+----> 9 J = f.jacob()*R # Jacobian ideal
      10 d = J.dimension()
      11 print "f =", f
 
 <type 'exceptions.AttributeError'>: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'jacob'
 WARNING: Failure executing file: </Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py>
-
-
+```
 It seems that f.jacob() no longer exists.  (for a while it didn't, then it did, now it doesn')
 
 Issue created by migration from https://trac.sagemath.org/ticket/3253

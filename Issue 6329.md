@@ -1,22 +1,26 @@
-# Issue 6329: optional doctest failure -- bad data type breakage in the sage-->magma interface
+# Issue 6329: optional doctest failure --  breakage in the sage<-->magma interface
 
 archive/issues_006329.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/rings/rational.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/rational.pyx\", line 3087:\n    sage: magma(3/1).Type()             # optional\nExpected:\n    FldRatElt\nGot:\n    RngIntElt\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_84\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6329\n\n",
+    "body": "Assignee: tbd\n\nKeywords: sd32\n\n```\nsage -t -long --optional devel/sage/sage/rings/rational.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/rational.pyx\", line 3087:\n    sage: magma(3/1).Type()             # optional\nExpected:\n    FldRatElt\nGot:\n    RngIntElt\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_84\n***Test Failed*** 1 failures.\n```\n\n---\n\nApply only [attachment:trac_6329.2.patch] to the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6329\n\n",
+    "closed_at": "2011-09-12T19:27:00Z",
     "created_at": "2009-06-16T15:06:55Z",
     "labels": [
-        "component: optional packages",
+        "component: interfaces",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "optional doctest failure -- bad data type breakage in the sage-->magma interface",
+    "title": "optional doctest failure --  breakage in the sage<-->magma interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6329",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
+
+Keywords: sd32
 
 ```
 sage -t -long --optional devel/sage/sage/rings/rational.pyx
@@ -32,6 +36,11 @@ Got:
    1 of   5 in __main__.example_84
 ***Test Failed*** 1 failures.
 ```
+
+---
+
+Apply only [attachment:trac_6329.2.patch] to the Sage library.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6329
 

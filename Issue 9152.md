@@ -3,7 +3,8 @@
 archive/issues_009152.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @burcin\n\nI plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.\n\nSome testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\nThe patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9152\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @burcin\n\nI plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.\n\nSome testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\nThe patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9152\n\n",
+    "closed_at": "2010-06-25T15:44:05Z",
     "created_at": "2010-06-05T17:39:17Z",
     "labels": [
         "component: packages: standard"
@@ -15,7 +16,7 @@ archive/issues_009152.json:
     "user": "https://github.com/fredrik-johansson"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
 
 CC:  @burcin
 

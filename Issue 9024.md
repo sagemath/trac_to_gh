@@ -4,6 +4,7 @@ archive/issues_009024.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\n'tachyon' has a script called 'Make-arch' which has various architectures. But there was not one for 64-bit Solaris on x86. The code in Sage currently uses the target 'solaris-pthreads-gcc' - see below\n\n```\nif [ $UNAME = \"SunOS\" ]; then\n    make solaris-pthreads-gcc\n    finished\nfi\n```\n\nThat target consists of the lines:\n\n```\nsolaris-pthreads-gcc:\n        $(MAKE) all \\\n        \"ARCH = solaris-pthreads-gcc\" \\\n        \"CC = gcc\" \\\n        \"CFLAGS = -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS $(MISCFLAGS) -DTHR -DUSEPOSIXTHREADS\" \\\n        \"AR = ar\" \\\n        \"ARFLAGS = r\" \\\n        \"STRIP = strip\" \\\n        \"LIBS = -L. -ltachyon $(MISCLIB) -lm -lpthread\"\n```\n\nNote there are two problems with this. \n\n* '-O6' is not an option for gcc. \n* There is no option to make this build 64-bit objects. \n\nThese problems should be easily solved. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9024\n\n",
+    "closed_at": "2010-06-11T18:31:54Z",
     "created_at": "2010-05-23T22:05:30Z",
     "labels": [
         "component: porting: solaris",

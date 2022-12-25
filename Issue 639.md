@@ -3,7 +3,8 @@
 archive/issues_000639.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be very cool if `sage -t` could run tests in parallel on a multicore machine. There would need to be some clever output redirection so all the test output didn't get mishmashed together.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/639\n\n",
+    "body": "Assignee: @garyfurnish\n\nIt would be very cool if `sage -t` could run tests in parallel on a multicore machine. There would need to be some clever output redirection so all the test output didn't get mishmashed together.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/639\n\n",
+    "closed_at": "2008-03-10T06:32:27Z",
     "created_at": "2007-09-11T12:42:41Z",
     "labels": [
         "component: user interface"
@@ -15,7 +16,7 @@ archive/issues_000639.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 It would be very cool if `sage -t` could run tests in parallel on a multicore machine. There would need to be some clever output redirection so all the test output didn't get mishmashed together.
 

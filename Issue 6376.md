@@ -4,6 +4,7 @@ archive/issues_006376.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @golam-m-hossain @mwhansen\n\n```\nsage: f(x) = function('f',x)\nsage: g = f(-x).diff(x); g\n-D[0](f)(-x)\nsage: g._maxima_init_()\n\"(diff('f(x), x, 1))*(-1)\"\n```\n\nNotice that the `-x` inside f is totally ignored!  This is because of code in the derivative method around line 454 of `sage/symbolic/expression_conversion.py`\n\nChanging the line\n\n```\nargs = ex.args()\n```\n\nto \n\n```\nargs = ex.operands()\n```\n\n\"fixes\" the problem, in that a NotImplementedError gets raised, instead of a wrong result returned.  This is **way** better than the current situation, and we better fix this asap.  \n\nA better fix of course is to implement proper conversion. mhansen wrote this code, so maybe it would be easy for him.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6376\n\n",
+    "closed_at": "2009-11-19T17:47:22Z",
     "created_at": "2009-06-21T14:13:14Z",
     "labels": [
         "component: calculus",

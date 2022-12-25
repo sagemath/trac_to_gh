@@ -1,9 +1,10 @@
-# Issue 6306: [with patch, needs review] fix some reference manual issues for 4.0.2
+# Issue 6306: [with patch, positive review] fix some reference manual issues for 4.0.2
 
 archive/issues_006306.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe attached patch should fix several of the reference manual warnings for 4.0.2.  There is still one outstanding -- sage/misc/misc.py -- but I can't figure that one out.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6306\n\n",
+    "closed_at": "2009-06-18T00:07:40Z",
     "created_at": "2009-06-16T02:06:05Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006306.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] fix some reference manual issues for 4.0.2",
+    "title": "[with patch, positive review] fix some reference manual issues for 4.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6306",
     "user": "https://github.com/jhpalmieri"

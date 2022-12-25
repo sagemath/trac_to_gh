@@ -4,6 +4,7 @@ archive/issues_000690.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI could be mistaken, but running sage under VMware on a Windows machine (e.g. for a huge DSage project) won't allow the creation of a file.  If you log in under manage, you are not given the permissions to create a file!\n\nIssue created by migration from https://trac.sagemath.org/ticket/690\n\n",
+    "closed_at": "2008-06-10T19:21:33Z",
     "created_at": "2007-09-18T20:28:43Z",
     "labels": [
         "component: interfaces"

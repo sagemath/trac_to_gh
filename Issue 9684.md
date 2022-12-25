@@ -4,6 +4,7 @@ archive/issues_009684.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  cturner beankao\n\nKeywords: local_data\n\nCurrently, local_data() after running Tate's algorithm always also calls _tidy_model().  The attached patch makes this behaviour optional by introducing a parameter tidy.  This functionality is needed for the implementation of ticket #9320.\n\n```\nsage: E = EllipticCurve([2, 1, 0, -2, -1])\nsage: E.local_data(ZZ.ideal(2), algorithm=\"generic\").minimal_model()\nElliptic Curve defined by y^2 = x^3 - x^2 - 3*x + 2 over Rational Field\nsage: E.local_data(ZZ.ideal(2), algorithm=\"generic\").minimal_model(tidy=False)\nElliptic Curve defined by y^2 + 2*x*y + 2*y = x^3 + x^2 - 4*x - 2 over Rational Field\n```\n\nSince Pari also does this \"tidying\", the patch needs to add the parameter algorithm to various functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9684\n\n",
+    "closed_at": "2010-09-15T11:38:05Z",
     "created_at": "2010-08-04T05:14:25Z",
     "labels": [
         "component: elliptic curves",

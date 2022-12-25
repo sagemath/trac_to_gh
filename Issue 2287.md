@@ -1,16 +1,17 @@
-# Issue 2287: error installing rubiks
+# Issue 2287: [with spkg, with positive review] error installing rubiks related to location of install
 
 archive/issues_002287.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nLog:\nsizekoc1.c: In function \u2018main\u2019:\nsizekoc1.c:134: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\nsizekoc1.c:153: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\nsizekoc1.c:230: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc1 sizekoc1.o\nsize sizekoc1\n   text    data     bss     dec     hex filename\n  14622     296 82244256        82259174        4e72ce6 sizekoc1\ngcc -O -DLARGE_MEM -DVERBOSE -DCCPERM -DIPERM -c sizekoc2.c\nsizekoc2.c: In function \u2018main\u2019:\nsizekoc2.c:171: warning: incompatible implicit declaration of built-in function \u2018exit\u2019sizekoc2.c:190: warning: incompatible implicit declaration of built-in function \u2018exit\u2019sizekoc2.c:267: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o\nsize sizekoc2\n   text    data     bss     dec     hex filename\n  15212     296 409577600       409593108       1869e514        sizekoc2\nmake[3]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/dik'\nmake[3]: Entering directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/reid'\nmake[3]: Nothing to be done for `all'. \nmake[3]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/reid'\nmkdir -p /home/yqiang/Software/sage-2.10.2/local/bin\n/usr/bin/install reid/optimal /home/yqiang/Software/sage-2.10.2/local/bin\nmake[2]: /usr/bin/install: Command not found\nmake[2]: *** [install] Error 127\nmake[2]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src'\n\nreal    0m29.404s\nuser    0m28.275s\nsys     0m1.107s\nsage: An error occurred while installing rubiks-20070912.p2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\n\n\n---\n\nOn my distribution 'install' is in /bin/install instead of /usr/bin/install. Maybe the script needs to check where 'install' actually is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2287\n\n",
+    "body": "Assignee: mabshoff\n\n```\nLog:\nsizekoc1.c: In function \u2018main\u2019:\nsizekoc1.c:134: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\nsizekoc1.c:153: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\nsizekoc1.c:230: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc1 sizekoc1.o\nsize sizekoc1\n   text    data     bss     dec     hex filename\n  14622     296 82244256        82259174        4e72ce6 sizekoc1\ngcc -O -DLARGE_MEM -DVERBOSE -DCCPERM -DIPERM -c sizekoc2.c\nsizekoc2.c: In function \u2018main\u2019:\nsizekoc2.c:171: warning: incompatible implicit declaration of built-in function \u2018exit\u2019sizekoc2.c:190: warning: incompatible implicit declaration of built-in function \u2018exit\u2019sizekoc2.c:267: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o\nsize sizekoc2\n   text    data     bss     dec     hex filename\n  15212     296 409577600       409593108       1869e514        sizekoc2\nmake[3]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/dik'\nmake[3]: Entering directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/reid'\nmake[3]: Nothing to be done for `all'. \nmake[3]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/reid'\nmkdir -p /home/yqiang/Software/sage-2.10.2/local/bin\n/usr/bin/install reid/optimal /home/yqiang/Software/sage-2.10.2/local/bin\nmake[2]: /usr/bin/install: Command not found\nmake[2]: *** [install] Error 127\nmake[2]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src'\n\nreal    0m29.404s\nuser    0m28.275s\nsys     0m1.107s\nsage: An error occurred while installing rubiks-20070912.p2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\n\n\n-------------------------\n```\nOn my distribution 'install' is in /bin/install instead of /usr/bin/install. Maybe the script needs to check where 'install' actually is.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2287\n\n",
+    "closed_at": "2008-03-21T13:17:48Z",
     "created_at": "2008-02-24T01:10:30Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "error installing rubiks",
+    "title": "[with spkg, with positive review] error installing rubiks related to location of install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2287",
     "user": "https://github.com/yqiang"
@@ -18,6 +19,7 @@ archive/issues_002287.json:
 ```
 Assignee: mabshoff
 
+```
 Log:
 sizekoc1.c: In function ‘main’:
 sizekoc1.c:134: warning: incompatible implicit declaration of built-in function ‘exit’
@@ -52,9 +54,12 @@ Please email sage-devel http://groups.google.com/group/sage-devel
 explaining the problem and send the relevant part of
 
 
----
-
+-------------------------
+```
 On my distribution 'install' is in /bin/install instead of /usr/bin/install. Maybe the script needs to check where 'install' actually is.
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2287
 

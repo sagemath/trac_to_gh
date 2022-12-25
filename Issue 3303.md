@@ -1,16 +1,17 @@
-# Issue 3303: [with patch; needs review] Add shared library to tachyon Debian package
+# Issue 3303: [with patch; positive review] Add shared library to tachyon Debian package
 
 archive/issues_003303.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nCC:  f.r.bissey@massey.ac.nz\n\nI've attached a patch that adds a shared library to tachyon.\n\nMy patch includes the necessary changes to the Debian package.\n\nLooking at spkg-install, it looks like SAGE doesn't actually use the tachyon library, only the binary, so I'm not including any changes to the spkg-install system.\n\nOnce this gets merged, I'll email John Stone with the patch to tachyon upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3303\n\n",
+    "closed_at": "2008-05-28T07:51:04Z",
     "created_at": "2008-05-25T22:17:00Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] Add shared library to tachyon Debian package",
+    "title": "[with patch; positive review] Add shared library to tachyon Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3303",
     "user": "https://github.com/timabbott"

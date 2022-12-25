@@ -1,16 +1,17 @@
-# Issue 6342: notebook -- fix that the slideshow mode in the notebook utterly completely broken
+# Issue 6342: [with patch; needs work] notebook -- fix that the slideshow mode in the notebook utterly completely broken
 
 archive/issues_006342.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis patch turns slideshow mode into something actually pretty useful.  It is maybe uglier than it was 2 years ago.  It is maybe \"lame\"-ish, perhaps.  But it is usable!  Which is a million times better than the literally buggy situation now.  \n\nThe actual patch attached here tracks both the cell_list (the compute cells), and adds a new list allcell_list, which contains all the cells (not just the compute cells).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6342\n\n",
+    "body": "Assignee: boothby\n\nThis patch turns slideshow mode into something actually pretty useful.  It is maybe uglier than it was 2 years ago.  It is maybe \"lame\"-ish, perhaps.  But it is usable!  Which is a million times better than the literally buggy situation now.  \n\nThe actual patch attached here tracks both the cell_list (the compute cells), and adds a new list allcell_list, which contains all the cells (not just the compute cells).\n\nOne other thing -- this patch addresses what looks to me like some terrible scary code in the tinymce integration into Sage.  Basically there was a massive junk of javascript that got sent back from the server with each evaluation, and got eval'd via a timeout -- not good.   Now it is done statically without any code being eval'd.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/6342\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-06-16T22:15:54Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "notebook -- fix that the slideshow mode in the notebook utterly completely broken",
+    "title": "[with patch; needs work] notebook -- fix that the slideshow mode in the notebook utterly completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6342",
     "user": "https://github.com/williamstein"
@@ -21,6 +22,8 @@ Assignee: boothby
 This patch turns slideshow mode into something actually pretty useful.  It is maybe uglier than it was 2 years ago.  It is maybe "lame"-ish, perhaps.  But it is usable!  Which is a million times better than the literally buggy situation now.  
 
 The actual patch attached here tracks both the cell_list (the compute cells), and adds a new list allcell_list, which contains all the cells (not just the compute cells).
+
+One other thing -- this patch addresses what looks to me like some terrible scary code in the tinymce integration into Sage.  Basically there was a massive junk of javascript that got sent back from the server with each evaluation, and got eval'd via a timeout -- not good.   Now it is done statically without any code being eval'd.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/6342
 

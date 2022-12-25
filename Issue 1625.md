@@ -4,6 +4,7 @@ archive/issues_001625.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1625\n\n",
+    "closed_at": "2008-05-11T16:27:22Z",
     "created_at": "2007-12-29T04:39:19Z",
     "labels": [
         "component: packages: standard",

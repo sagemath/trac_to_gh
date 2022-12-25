@@ -1,16 +1,17 @@
-# Issue 6405: Typesetting of imaginary 'I' in new Symbolics is not proper
+# Issue 6405: Typesetting of imaginary 'I' in new symbolics is not proper
 
 archive/issues_006405.json:
 ```json
 {
     "body": "CC:  @robertwb\n\nIn new symbolics, imaginary 'I' is typeset as 'I' which is not \"textbook style\". This is a regression compared to Sage 3.4\n\n```\nsage: latex( exp(i*x))\ne^{I \\, x}\n```\n\nLower case letter 'i' should be used in the typeset version.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6405\n\n",
+    "closed_at": "2010-07-11T16:00:20Z",
     "created_at": "2009-06-25T14:30:01Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Typesetting of imaginary 'I' in new Symbolics is not proper",
+    "title": "Typesetting of imaginary 'I' in new symbolics is not proper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6405",
     "user": "https://github.com/golam-m-hossain"

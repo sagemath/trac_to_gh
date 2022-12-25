@@ -1,16 +1,16 @@
-# Issue 2436: Canabalize useful glib algorithms
+# Issue 2436: Integrate useful glib algorithms
 
 archive/issues_002436.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nCopy files containing glib algorithms that are useful to an appropriate folder and give them pxi includes for cython.  This is the conclusion of #2270 (namely that making a glib spkg has too many dependencies for things we don't need).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2436\n\n",
+    "closed_at": "2008-04-03T01:16:56Z",
     "created_at": "2008-03-09T05:37:03Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Canabalize useful glib algorithms",
+    "title": "Integrate useful glib algorithms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2436",
     "user": "https://github.com/garyfurnish"

@@ -1,16 +1,17 @@
-# Issue 8951: Clear /tmp/ECL* after building ECL
+# Issue 8951: Clear /tmp/ECL* after building on Solaris + sort out minor SAGE64 issue.
 
 archive/issues_008951.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @williamstein mvngu juanjose.garciaripoll@googlemail.com @kcrisman @nbruin\n\nAs reported here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/54544d8649bd027a\n\nthere is a problem when temp files created during the build of ECL. A correct fix requires changes made to ECL source code, but as a temporary fix, it may be sufficient to remove /tmp/ECL* after building ecl. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8951\n\n",
+    "closed_at": "2010-06-25T11:19:51Z",
     "created_at": "2010-05-11T20:38:47Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Clear /tmp/ECL* after building ECL",
+    "title": "Clear /tmp/ECL* after building on Solaris + sort out minor SAGE64 issue.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8951",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

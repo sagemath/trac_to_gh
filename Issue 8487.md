@@ -4,6 +4,7 @@ archive/issues_008487.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nSage returns no solution \n\n```\nx,y=var('x y')\nc1(x,y)=(x-5)^2+y^2-16; c2(x,y)=(y-3)^2+x^2-9\nsolve([c1(x,y),c2(x,y)],[x,y])\n```\n\nreported on [sage-support](http://groups.google.cz/group/sage-support/browse_thread/thread/40eda7084856aa3e)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8487\n\n",
+    "closed_at": "2010-04-16T17:28:47Z",
     "created_at": "2010-03-10T10:05:03Z",
     "labels": [
         "component: symbolics"

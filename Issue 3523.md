@@ -1,15 +1,17 @@
-# Issue 3523: [with spkg; needs review] upgrade flint to 1.0.10
+# Issue 3523: [with spkg; with positive review] upgrade flint to 1.0.10
 
 archive/issues_003523.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAmong other things, this fixes a MAJOR bug in flint-1.0.6 (in getting coefficients of polys) which would make that version of flint pretty useless.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3523\n\n",
+    "body": "Assignee: mabshoff\n\nAmong other things, this fixes a MAJOR bug in flint-1.0.6 (in getting coefficients of polys) which would make that version of flint pretty useless. \n\n\nNOTE: One serious concern is that somebody stupidly named the last flint package in sage 1.06 instead of 1.0.6.   This means that the sage auto-upgrade system will think that flint 106 is newer than 1.0.10.  so this spkg should probably be remade as 1.010 before it is included.  Bummer.   [This is the Trac macro *I made it 1.010 below!* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#I made it 1.010 below!-macro)\n\nhttp://sage.math.washington.edu/home/was/patches/flint-1.010.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3523\n\n",
+    "closed_at": "2008-07-01T02:57:46Z",
     "created_at": "2008-06-27T14:45:08Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg; needs review] upgrade flint to 1.0.10",
+    "title": "[with spkg; with positive review] upgrade flint to 1.0.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3523",
     "user": "https://github.com/williamstein"
@@ -17,7 +19,12 @@ archive/issues_003523.json:
 ```
 Assignee: mabshoff
 
-Among other things, this fixes a MAJOR bug in flint-1.0.6 (in getting coefficients of polys) which would make that version of flint pretty useless.
+Among other things, this fixes a MAJOR bug in flint-1.0.6 (in getting coefficients of polys) which would make that version of flint pretty useless. 
+
+
+NOTE: One serious concern is that somebody stupidly named the last flint package in sage 1.06 instead of 1.0.6.   This means that the sage auto-upgrade system will think that flint 106 is newer than 1.0.10.  so this spkg should probably be remade as 1.010 before it is included.  Bummer.   [This is the Trac macro *I made it 1.010 below!* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#I made it 1.010 below!-macro)
+
+http://sage.math.washington.edu/home/was/patches/flint-1.010.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/3523
 

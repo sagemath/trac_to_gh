@@ -1,15 +1,16 @@
-# Issue 4487: add method to evaluate characters of permutation and matrix groups
+# Issue 4487: [with patch; positive review] add method to evaluate characters of permutation and matrix groups
 
 archive/issues_004487.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCurrently to evaluate a character, you have to use\nsomething indirect like \n\n```\nsage: G = GL(2,7)\nsage: z = G.center().an_element()\nsage: reps = [x.Representative() for x in gap(G).ConjugacyClasses()]\nsage: reps.index(gap(z))\n8\nsage: table = gap(G).CharacterTable().Irr()\nsage: chi = table[2]\nsage: chi[8]\n1\n```\n\nMartin Mereb asked\n\n```\nis it possible to imlpement something like\nchi(z) or chi.eval(z) or something like that?\n```\n\nThis should be implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4487\n\n",
+    "closed_at": "2008-11-21T19:15:22Z",
     "created_at": "2008-11-10T00:12:42Z",
     "labels": [
         "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "add method to evaluate characters of permutation and matrix groups",
+    "title": "[with patch; positive review] add method to evaluate characters of permutation and matrix groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4487",
     "user": "https://github.com/wdjoyner"

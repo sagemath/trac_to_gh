@@ -4,6 +4,7 @@ archive/issues_002106.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @malb\n\nMarshall Buck on [sage-support] writes:\n\nIt is a shame that normal arithmetic for polys over GF(2) still seems\nto be implemented by the ntl ZZ_pX library, which is usually at least\n10 times slower than GF2X,  up to degree 2<sup>17</sup> anyway. In that range\nGF2X matches the speed of magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2106\n\n",
+    "closed_at": "2008-11-01T22:18:39Z",
     "created_at": "2008-02-08T09:44:08Z",
     "labels": [
         "component: basic arithmetic"

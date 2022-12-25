@@ -1,16 +1,17 @@
-# Issue 3227: add 64 bit OSX build support for tachyon
+# Issue 3227: [with spkg, needs review] add 64 bit OSX build support for tachyon
 
 archive/issues_003227.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3227\n\n",
+    "closed_at": "2009-01-23T00:11:50Z",
     "created_at": "2008-05-16T19:58:43Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add 64 bit OSX build support for tachyon",
+    "title": "[with spkg, needs review] add 64 bit OSX build support for tachyon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3227",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

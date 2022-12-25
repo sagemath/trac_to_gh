@@ -1,16 +1,17 @@
-# Issue 919: creation of p-adic rings uses O(n^2) memory
+# Issue 919: [with-patch] creation of p-adic rings uses O(n^2) memory
 
 archive/issues_000919.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nKeywords: padics\n\nUpon creation, p-adic rings currently cache powers of p from 0 up to their precision cap.  This uses O(n^2) space, and is very unfriendly to someone who wants to use a capped relative ring with very high precision in order to never run into the precision cap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/919\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: padics\n\nUpon creation, p-adic rings currently cache powers of p from 0 up to their precision cap.  This uses O(n**2) space, and is very unfriendly to someone who wants to use a capped relative ring with very high precision in order to never run into the precision cap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/919\n\n",
+    "closed_at": "2007-10-20T18:00:00Z",
     "created_at": "2007-10-18T14:51:33Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "creation of p-adic rings uses O(n^2) memory",
+    "title": "[with-patch] creation of p-adic rings uses O(n^2) memory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/919",
     "user": "https://github.com/roed314"
@@ -20,7 +21,7 @@ Assignee: @roed314
 
 Keywords: padics
 
-Upon creation, p-adic rings currently cache powers of p from 0 up to their precision cap.  This uses O(n^2) space, and is very unfriendly to someone who wants to use a capped relative ring with very high precision in order to never run into the precision cap.
+Upon creation, p-adic rings currently cache powers of p from 0 up to their precision cap.  This uses O(n**2) space, and is very unfriendly to someone who wants to use a capped relative ring with very high precision in order to never run into the precision cap.
 
 Issue created by migration from https://trac.sagemath.org/ticket/919
 

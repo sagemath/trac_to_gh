@@ -3,7 +3,8 @@
 archive/issues_002783.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nHi,\n\nI was very embarrassed while teaching today since maybe 15 times I got\ncrap like this in the output from the notebook:\n\n```\nprint \"\\x01r\\x01e580\"\n```\n\nThis is from the synchronization code that *I* wrote.  It \"should\" never happen.  Anyways it does -- but of course only when 40 people are watching you :-(.  Anyways, to solve this ticket should mean to simply look at that synchro code again, think about it, and rewrite it in a way that is _more_ robust. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/2783\n\n",
+    "body": "Assignee: boothby\n\n** NOTE: If we can't find a way to reliably replicate this issue by June 1, 2008, then this ticket should be closed as invalid. It could have just been an issue with the particular alpha version of Sage I was using or something. **  \n\nHi,\n\nI was very embarrassed while teaching today since maybe 15 times I got\ncrap like this in the output from the notebook:\n\n```\nprint \"\\x01r\\x01e580\"\n```\n\nThis is from the synchronization code that *I* wrote.  It \"should\" never happen.  Anyways it does -- but of course only when 40 people are watching you :-(.  Anyways, to solve this ticket should mean to simply look at that synchro code again, think about it, and rewrite it in a way that is _more_ robust. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/2783\n\n",
+    "closed_at": "2009-11-18T09:36:28Z",
     "created_at": "2008-04-02T22:17:45Z",
     "labels": [
         "component: notebook",
@@ -17,6 +18,8 @@ archive/issues_002783.json:
 }
 ```
 Assignee: boothby
+
+** NOTE: If we can't find a way to reliably replicate this issue by June 1, 2008, then this ticket should be closed as invalid. It could have just been an issue with the particular alpha version of Sage I was using or something. **  
 
 Hi,
 

@@ -1,23 +1,27 @@
-# Issue 1276: incorporate willem's doctest timing code into sage
+# Issue 1276: [with patches, needs review] incorporate willem's doctest timing code into sage
 
 archive/issues_001276.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  @wjp\n\n```\n> Send me your doctest timing code :-)  I'm looking forward to playing with it.\n\nHere you go. It's a patch to local/bin/sage-doctest and a file timing.py\nthat I had put in sage/misc .\n\nIt adds a --time option to sage-doctest that makes it append the timings\nit generates as a dict indexed by hash to the (cpickled) file\n.doctest/timings.sobj .  There's no infrastructure yet to automatically\ndelete that file when appropriate, though.\n\nI also attached two very basic scripts that show or compare the contents\nof timings.sobj files.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1276\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @wjp\n\nKeywords: editor_mabshoff\n\n```\n> Send me your doctest timing code :-)  I'm looking forward to playing with it.\n\nHere you go. It's a patch to local/bin/sage-doctest and a file timing.py\nthat I had put in sage/misc .\n\nIt adds a --time option to sage-doctest that makes it append the timings\nit generates as a dict indexed by hash to the (cpickled) file\n.doctest/timings.sobj .  There's no infrastructure yet to automatically\ndelete that file when appropriate, though.\n\nI also attached two very basic scripts that show or compare the contents\nof timings.sobj files.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1276\n\n",
+    "closed_at": "2008-09-06T23:14:26Z",
     "created_at": "2007-11-26T04:18:09Z",
     "labels": [
-        "component: doctest coverage"
+        "component: doctest coverage",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "incorporate willem's doctest timing code into sage",
+    "title": "[with patches, needs review] incorporate willem's doctest timing code into sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1276",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: @garyfurnish
 
 CC:  @wjp
+
+Keywords: editor_mabshoff
 
 ```
 > Send me your doctest timing code :-)  I'm looking forward to playing with it.

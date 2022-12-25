@@ -3,7 +3,7 @@
 archive/issues_006389.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mkoeppe @jdemeyer @vbraun @fchapoton @williamstein @dimpase @nthiery fhivert @embray\n\nKeywords: documentation, sphinx\n\nIt would be neat to be able to do:\n\n`sage -docbuild foo.py`\n\nfor a single file not in the library\n\nIssue created by migration from https://trac.sagemath.org/ticket/6389\n\n",
+    "body": "Assignee: tba\n\nCC:  @mkoeppe @jdemeyer @vbraun @fchapoton @williamstein @dimpase @nthiery fhivert @embray\n\nKeywords: documentation, sphinx\n\nIt would be neat to be able to do:\n\n`sage -docbuild foo.py`\n\nfor a single file not in the library.\n\n\nSee also:\n- https://github.com/mkoeppe/sage-numerical-backends-coin/issues/2\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6389\n\n",
     "created_at": "2009-06-23T14:34:27Z",
     "labels": [
         "component: documentation",
@@ -26,7 +26,12 @@ It would be neat to be able to do:
 
 `sage -docbuild foo.py`
 
-for a single file not in the library
+for a single file not in the library.
+
+
+See also:
+- https://github.com/mkoeppe/sage-numerical-backends-coin/issues/2
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6389
 

@@ -1,16 +1,17 @@
-# Issue 6662: [with patch, needs review] sampling from a general discrete probability distribution
+# Issue 6662: sampling from a general discrete probability distribution
 
 archive/issues_006662.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  kohel\n\nThis patch exposes the general discrete distribution code in the Gnu Scientific Library (GSL). It provides a fast way to sample from a user-defined discrete probability distribution, and it also extends the DiscreteProbabilitySpace class by allowing sampling from the defined distribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6662\n\n",
+    "closed_at": "2009-09-09T10:40:18Z",
     "created_at": "2009-07-31T14:32:08Z",
     "labels": [
         "component: statistics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] sampling from a general discrete probability distribution",
+    "title": "sampling from a general discrete probability distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6662",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"

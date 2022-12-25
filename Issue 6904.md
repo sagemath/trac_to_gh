@@ -3,7 +3,8 @@
 archive/issues_006904.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: matrix(QQ,2,[1,0,0,1]).change_ring(GF(2)) - 1\nTraceback (most recent call last):\n...\nRuntimeError\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6904\n\n",
+    "body": "Assignee: @ClementPernet\n\nI've uploaded a new patch (sage-6906-v2.patch) taking into account the remarks by was.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6904\n\n",
+    "closed_at": "2010-07-20T08:19:43Z",
     "created_at": "2009-09-08T20:13:34Z",
     "labels": [
         "component: linear algebra",
@@ -16,14 +17,9 @@ archive/issues_006904.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @ClementPernet
 
-```
-sage: matrix(QQ,2,[1,0,0,1]).change_ring(GF(2)) - 1
-Traceback (most recent call last):
-...
-RuntimeError
-}}
+I've uploaded a new patch (sage-6906-v2.patch) taking into account the remarks by was.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6904
 

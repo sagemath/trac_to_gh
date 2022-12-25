@@ -3,7 +3,8 @@
 archive/issues_007434.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTrac #7310 introduced nice modal jquery dialog boxes.  Unfortunately, they do not play well at all with the output of jmol 3d graphics (java).  See this screenshot:\n\nIssue created by migration from https://trac.sagemath.org/ticket/7434\n\n",
+    "body": "Assignee: boothby\n\nTrac #7310 introduced nice modal jquery dialog boxes.  Unfortunately, they do not play well at all with the output of jmol 3d graphics (java).  See this screenshot:\n\nhttp://wstein.org/home/wstein/patches/trac-7434.png\n\nIssue created by migration from https://trac.sagemath.org/ticket/7434\n\n",
+    "closed_at": "2010-01-25T03:09:43Z",
     "created_at": "2009-11-11T22:20:44Z",
     "labels": [
         "component: notebook",
@@ -19,6 +20,8 @@ archive/issues_007434.json:
 Assignee: boothby
 
 Trac #7310 introduced nice modal jquery dialog boxes.  Unfortunately, they do not play well at all with the output of jmol 3d graphics (java).  See this screenshot:
+
+http://wstein.org/home/wstein/patches/trac-7434.png
 
 Issue created by migration from https://trac.sagemath.org/ticket/7434
 

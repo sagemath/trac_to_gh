@@ -1,15 +1,16 @@
-# Issue 6628: [with patch, needs review] Singular functions via libSingular
+# Issue 6628: [with patch, positive review] Singular functions via libSingular
 
 archive/issues_006628.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: singular, libsingular, commutative algebra\n\nThe attached patch implements the following:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = Ideal(P.random_element() for _ in range(3000))\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: %time groebner(I)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n[1]\n```\n\nFor comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)\n\n```\nsage: %time I.groebner_basis()\nCPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s\nWall time: 1.92 s\n[1]\n```\n\nThis patch requires an updated Singular SPKG (see below).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6628\n\n",
+    "closed_at": "2009-09-03T06:09:14Z",
     "created_at": "2009-07-26T13:59:05Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Singular functions via libSingular",
+    "title": "[with patch, positive review] Singular functions via libSingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6628",
     "user": "https://github.com/malb"

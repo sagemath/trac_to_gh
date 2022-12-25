@@ -1,16 +1,17 @@
-# Issue 6182: notebook -- saving a worksheet with double quotes in the worksheet name fails with a weird error
+# Issue 6182: Notebook -- Saving a worksheet with double quotes in the worksheet name fails with a weird error
 
 archive/issues_006182.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen @qed777\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6182\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen @qed777\n\nJavascript errors show up in console which pretty much messes up all javascript in the page (S-Enter, etc.).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6182\n\n",
+    "closed_at": "2010-01-25T00:51:58Z",
     "created_at": "2009-06-02T07:26:37Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "notebook -- saving a worksheet with double quotes in the worksheet name fails with a weird error",
+    "title": "Notebook -- Saving a worksheet with double quotes in the worksheet name fails with a weird error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6182",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,7 @@ Assignee: boothby
 
 CC:  @williamstein @mwhansen @qed777
 
-
+Javascript errors show up in console which pretty much messes up all javascript in the page (S-Enter, etc.).
 
 Issue created by migration from https://trac.sagemath.org/ticket/6182
 

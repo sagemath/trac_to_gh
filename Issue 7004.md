@@ -1,15 +1,16 @@
-# Issue 7004: [with patch] Refactor the graph layout code, and add interface with graphviz for acyclic layout
+# Issue 7004: Refactor the graph layout code, and add interface with graphviz
 
 archive/issues_007004.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nathanncohen @rlmill\n\nKeywords: graph layout, graphviz, acyclic\n\nExperimental patch on:  http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/graphviz-nt.patch\n\nFrom the patch description:\n\n- Refactors the graph layout code, with:\n\n  - A new main graph.layout() method, to be called by plot, latex, ...\n  - Many layout methods, like graph._layout_circular()\n  - Extends the graphviz_string method (latex labels)\n  - Define a new layout method ._layout_acyclic() implemented by\n    calling dot2tex and graphviz\n  - Implement an alternative implementation of latex for graphs\n    by delegating all the work to dot2tex (GraphLatex.dot2tex_picture)\n  - Slightly simplifies the handling of default values for graph.latex_options\n\n- Makes some fixes to the poset code:\n  - __repr__ -> _repr_\n  - _latex_ by calling latex on the internal element\n\nTODO:\n\n- Add an optional default_layout method that subclasses could\n  override (like for the Petersen graph, ...). This would be better\n  for them than to systematically construct the layout at\n  construction time.\n\n- Refactor the remaining layout functions (planar, ...) as above\n\n- Double check all the logic to make sure it is backward compatible\n\n- A lot of code is doing things very similar to dot2tex. Maybe things\n  could be merged.\n\n- Finish to doctest everything\n\n- Implement the different options for both latex constructions\n\n- Add appropriate # optional comments\n\n- Make dot2tex.spkg into an optional sage package\n\nIssue created by migration from https://trac.sagemath.org/ticket/7004\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nathanncohen @rlmill\n\nKeywords: graph layout, graphviz, acyclic\n\nLatest version of the patch on:\nhttp://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/trac_7004-graphviz-nt.patch\nand followups\n\nUsing the graphviz interface requires graphviz to be installed on the\nmachine, as well as a dot2tex spkg which can be installed with:\n\n```\nsage -f http://sage.math.washington.edu/home/nthiery/dot2tex-2.8.7-dev.spkg\n```\n\nFrom the patch description:\n\n* Refactors the graph layout code:\n\n* Add a new main graph.layout() method, to be called by plot, plot3d, latex, graph_editor, ...\n\n* The various graph layout algorithms spread over the graph code are systematically reorganized into as many layout methods that can be called from layout():\n\n* graph.layout_circular()\n* graph.layout_spring()\n* graph.layout_tree()\n* graph.layout_ranked()\n* graph.layout_acyclic()\n* graph.layout_planar()\n* graph.layout_default()\n\n* Extends the graphviz_string method (latex labels) and refactors its logic to make it simpler for subclasses\n\n* Slightly simplifies the handling of default values for graph.latex_options\n\n* Visible user change: graph_editor, plot3d, ... all accept the same layout options.\n\n* Implements an interface to dot2tex/graphviz:\n\n* Define a new layout method .layout_graphviz() implemented by calling dot2tex and graphviz\n\n* Implement an alternative implementation of latex for graphs by delegating all the work to dot2tex (GraphLatex.dot2tex_picture)\n\n* Makes some fixes to the poset code:\n  * __repr__ -> _repr_\n  * _latex_ by calling latex on the internal element\n\n* Moved the level_sets method from HasseDiagram to DirectedGraph Reimplemented to support properly non acyclic graph. It should be quite faster (it just goes through the graph, without modifying it).\n\nTODO, for this ticket or a later one:\n\n* Double check all the logic to make sure it is backward compatible\n   - Done for the latex part (Rob)\n\n* What should be the default layout algorithm?\n  * Planar layout when the graph is planar (not yet: the planar\n    layout is not that nice looking; postponed for later when\n    planar+spring will be implemented)\n  * acyclic if acyclic\n  * spring otherwise\n\n* The spring option for ranked layouts does not work nicely:\n\n```\n     sage: G = posets.IntegerPartitions(5).hasse_diagram()\n     sage: G = DiGraph({1:(2,3), 2:[4], 3:[4]})            # alternative example\n     sage: G.plot(layout=\"acyclic_dummy\", spring = True)\n```\n\n   to be compared with:\n\n```\n      sage: G.plot(layout=\"acyclic_dummy\")\n      sage: G.plot(layout=\"spring\")\n```\n\n   Thinking twice about it, this seems to be inherent. See the comments in the code.\n\n\n* Find a better name for acyclic_dummy. Once the spring layout will be functional, this could be set to the default value, and the layout renamed to acyclic_spring.\n\n* Choose a good option name for the direction of growth of acyclic layout, an a good default value. Merge this with the option for tree layout (tree_orientation).\n  * orientation = \"up\" (as for tree) ?\n  * rankdir = \"BT\" (as in graphviz)?\n\n* A lot of code is doing things very similar to dot2tex. Maybe things could be merged.\n\n* Implement the various options for both latex constructions (tikz or dot2tex)\n\n* Implement the default layout of standard graphs using a default_layout method rather than at construction time.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7004\n\n",
+    "closed_at": "2010-04-29T05:38:01Z",
     "created_at": "2009-09-24T22:02:49Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "[with patch] Refactor the graph layout code, and add interface with graphviz for acyclic layout",
+    "title": "Refactor the graph layout code, and add interface with graphviz",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7004",
     "user": "https://github.com/nthiery"
@@ -21,46 +22,93 @@ CC:  sage-combinat @nathanncohen @rlmill
 
 Keywords: graph layout, graphviz, acyclic
 
-Experimental patch on:  http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/graphviz-nt.patch
+Latest version of the patch on:
+http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/trac_7004-graphviz-nt.patch
+and followups
+
+Using the graphviz interface requires graphviz to be installed on the
+machine, as well as a dot2tex spkg which can be installed with:
+
+```
+sage -f http://sage.math.washington.edu/home/nthiery/dot2tex-2.8.7-dev.spkg
+```
 
 From the patch description:
 
-- Refactors the graph layout code, with:
+* Refactors the graph layout code:
 
-  - A new main graph.layout() method, to be called by plot, latex, ...
-  - Many layout methods, like graph._layout_circular()
-  - Extends the graphviz_string method (latex labels)
-  - Define a new layout method ._layout_acyclic() implemented by
-    calling dot2tex and graphviz
-  - Implement an alternative implementation of latex for graphs
-    by delegating all the work to dot2tex (GraphLatex.dot2tex_picture)
-  - Slightly simplifies the handling of default values for graph.latex_options
+* Add a new main graph.layout() method, to be called by plot, plot3d, latex, graph_editor, ...
 
-- Makes some fixes to the poset code:
-  - __repr__ -> _repr_
-  - _latex_ by calling latex on the internal element
+* The various graph layout algorithms spread over the graph code are systematically reorganized into as many layout methods that can be called from layout():
 
-TODO:
+* graph.layout_circular()
+* graph.layout_spring()
+* graph.layout_tree()
+* graph.layout_ranked()
+* graph.layout_acyclic()
+* graph.layout_planar()
+* graph.layout_default()
 
-- Add an optional default_layout method that subclasses could
-  override (like for the Petersen graph, ...). This would be better
-  for them than to systematically construct the layout at
-  construction time.
+* Extends the graphviz_string method (latex labels) and refactors its logic to make it simpler for subclasses
 
-- Refactor the remaining layout functions (planar, ...) as above
+* Slightly simplifies the handling of default values for graph.latex_options
 
-- Double check all the logic to make sure it is backward compatible
+* Visible user change: graph_editor, plot3d, ... all accept the same layout options.
 
-- A lot of code is doing things very similar to dot2tex. Maybe things
-  could be merged.
+* Implements an interface to dot2tex/graphviz:
 
-- Finish to doctest everything
+* Define a new layout method .layout_graphviz() implemented by calling dot2tex and graphviz
 
-- Implement the different options for both latex constructions
+* Implement an alternative implementation of latex for graphs by delegating all the work to dot2tex (GraphLatex.dot2tex_picture)
 
-- Add appropriate # optional comments
+* Makes some fixes to the poset code:
+  * __repr__ -> _repr_
+  * _latex_ by calling latex on the internal element
 
-- Make dot2tex.spkg into an optional sage package
+* Moved the level_sets method from HasseDiagram to DirectedGraph Reimplemented to support properly non acyclic graph. It should be quite faster (it just goes through the graph, without modifying it).
+
+TODO, for this ticket or a later one:
+
+* Double check all the logic to make sure it is backward compatible
+   - Done for the latex part (Rob)
+
+* What should be the default layout algorithm?
+  * Planar layout when the graph is planar (not yet: the planar
+    layout is not that nice looking; postponed for later when
+    planar+spring will be implemented)
+  * acyclic if acyclic
+  * spring otherwise
+
+* The spring option for ranked layouts does not work nicely:
+
+```
+     sage: G = posets.IntegerPartitions(5).hasse_diagram()
+     sage: G = DiGraph({1:(2,3), 2:[4], 3:[4]})            # alternative example
+     sage: G.plot(layout="acyclic_dummy", spring = True)
+```
+
+   to be compared with:
+
+```
+      sage: G.plot(layout="acyclic_dummy")
+      sage: G.plot(layout="spring")
+```
+
+   Thinking twice about it, this seems to be inherent. See the comments in the code.
+
+
+* Find a better name for acyclic_dummy. Once the spring layout will be functional, this could be set to the default value, and the layout renamed to acyclic_spring.
+
+* Choose a good option name for the direction of growth of acyclic layout, an a good default value. Merge this with the option for tree layout (tree_orientation).
+  * orientation = "up" (as for tree) ?
+  * rankdir = "BT" (as in graphviz)?
+
+* A lot of code is doing things very similar to dot2tex. Maybe things could be merged.
+
+* Implement the various options for both latex constructions (tikz or dot2tex)
+
+* Implement the default layout of standard graphs using a default_layout method rather than at construction time.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7004
 

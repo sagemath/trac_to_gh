@@ -3,7 +3,8 @@
 archive/issues_008799.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rlmill\n\nKeywords: mwrank\n\nImprove documentation for this:\n\n```\nsage/libs/mwrank/mwrank.pyx:  3% (1 of 30)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8799\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @rlmill\n\nKeywords: mwrank\n\nImprove documentation for this:\n\n```\nsage/libs/mwrank/mwrank.pyx:  3% (1 of 30)\n```\n\n**Apply in this order:**\n\n1. [trac_8799-mwrank-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-mwrank-doctest.patch)\n2. [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch)\n3. [trac_8799-extra.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-extra.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8799\n\n",
+    "closed_at": "2010-06-06T08:41:56Z",
     "created_at": "2010-04-28T08:11:56Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_008799.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: mvngu
+Assignee: @JohnCremona
 
 CC:  @rlmill
 
@@ -27,6 +28,12 @@ Improve documentation for this:
 ```
 sage/libs/mwrank/mwrank.pyx:  3% (1 of 30)
 ```
+
+**Apply in this order:**
+
+1. [trac_8799-mwrank-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-mwrank-doctest.patch)
+2. [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch)
+3. [trac_8799-extra.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-extra.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8799
 

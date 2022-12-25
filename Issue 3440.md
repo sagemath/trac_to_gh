@@ -1,16 +1,17 @@
-# Issue 3440: Our PolyBoRi's GB calculation in AES mode is broken
+# Issue 3440: [with patch,positive review] Our PolyBoRi's GB calculation in AES mode is broken
 
 archive/issues_003440.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  polybori @burcin\n\nKeywords: polybori\n\nBurcin says this broke when the iterators changed:\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n/usr/local/sage-3.0/local/lib/python2.5/site-packages/polybori/PyPolyBoRi.py in <lambda>(x)\n     21 OrderCode.__dict__ = order_dict\n     22\n---> 23 Variable = lambda x: get_cring().gen(x)\n     24\n     25 def Ring(n, order='lp'):\n\n/home/malb/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.gen (sage/rings/polynomial/pbori.cpp:3333)()\n\n<type 'exceptions.TypeError'>: an integer is required\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3440\n\n",
+    "closed_at": "2008-08-27T21:28:24Z",
     "created_at": "2008-06-16T20:03:55Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Our PolyBoRi's GB calculation in AES mode is broken",
+    "title": "[with patch,positive review] Our PolyBoRi's GB calculation in AES mode is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3440",
     "user": "https://github.com/malb"

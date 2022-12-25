@@ -4,6 +4,7 @@ archive/issues_008377.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: MPFR\n\nThere is no example of using rounding modes with RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8377\n\n",
+    "closed_at": "2010-02-26T09:34:02Z",
     "created_at": "2010-02-26T09:31:52Z",
     "labels": [
         "component: basic arithmetic",

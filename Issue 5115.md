@@ -1,16 +1,17 @@
-# Issue 5115: documentation for IterableFunctionCall is poor
+# Issue 5115: [with patch, positive review] documentation for IterableFunctionCall is poor
 
 archive/issues_005115.json:
 ```json
 {
     "body": "Assignee: @dandrake\n\nThe docstrings for CartesianProduct and IterableFunctionCall don't tell you how to use them with functions that actually take arguments.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5115\n\n",
+    "closed_at": "2009-01-29T06:50:32Z",
     "created_at": "2009-01-28T08:13:51Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "documentation for IterableFunctionCall is poor",
+    "title": "[with patch, positive review] documentation for IterableFunctionCall is poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5115",
     "user": "https://github.com/dandrake"

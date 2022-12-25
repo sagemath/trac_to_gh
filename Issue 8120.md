@@ -3,7 +3,8 @@
 archive/issues_008120.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @nthiery\n\nThe documentation of `UniqueRepresentation` says \n\n```\n    Similarly, the identity is used as hash function, which is also as\n    fast as it can get. However this means that the hash function may\n    change in between Sage sessions, or even within the same Sage\n    session (see below). Subclasses should overload :meth:`__hash__`\n    if this could be a problem.\n```\nBut there is no implementation of `__hash__`.\n\nI'm adding one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8120\n\n",
+    "body": "CC:  @zimmermann6 @nthiery\n\nKeywords: UniqueRepresentation hash\n\nThe documentation of `UniqueRepresentation` says \n\n```\n    Similarly, the identity is used as hash function, which is also as\n    fast as it can get. However this means that the hash function may\n    change in between Sage sessions, or even within the same Sage\n    session (see below). Subclasses should overload :meth:`__hash__`\n    if this could be a problem.\n```\nBut there is no implementation of `__hash__`.\n\nI'm adding one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8120\n\n",
+    "closed_at": "2010-02-11T14:48:12Z",
     "created_at": "2010-01-29T15:31:33Z",
     "labels": [
         "component: algebra",
@@ -16,9 +17,9 @@ archive/issues_008120.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @aghitza
-
 CC:  @zimmermann6 @nthiery
+
+Keywords: UniqueRepresentation hash
 
 The documentation of `UniqueRepresentation` says 
 

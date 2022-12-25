@@ -1,16 +1,16 @@
-# Issue 1815: Implement good formatted output
+# Issue 1815: [invalid?] Implement good formatted output
 
 archive/issues_001815.json:
 ```json
 {
     "body": "Assignee: TimothyClemans\n\nFinish the work started at https://sage.math.washington.edu:2345/home/pub/0/ and implement the rest of Mathematica's formatted output functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1815\n\n",
+    "closed_at": "2008-04-15T14:40:14Z",
     "created_at": "2008-01-17T23:31:49Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Implement good formatted output",
+    "title": "[invalid?] Implement good formatted output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1815",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

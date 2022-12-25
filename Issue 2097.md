@@ -1,16 +1,17 @@
-# Issue 2097: aspect_ratio option to show() for function plots does not work correctly
+# Issue 2097: [with patch, with positive review] aspect_ratio option to show() for function plots does not work correctly
 
 archive/issues_002097.json:
 ```json
 {
     "body": "Assignee: @bobmoretti\n\n```\nplot(x^2, (x, -10, 10)).show(aspect_ratio=1)\n```\n\noutputs a figure which is wide and short. It should be skinny and tall.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2097\n\n",
+    "closed_at": "2008-02-12T18:29:06Z",
     "created_at": "2008-02-08T02:04:14Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "aspect_ratio option to show() for function plots does not work correctly",
+    "title": "[with patch, with positive review] aspect_ratio option to show() for function plots does not work correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2097",
     "user": "https://github.com/bobmoretti"

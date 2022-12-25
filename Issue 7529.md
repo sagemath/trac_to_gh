@@ -3,7 +3,8 @@
 archive/issues_007529.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThe maximum average degree of a graph is the maximum, over all subgraphs H of a graph G, of average_degree(H).\n\nThis can be computed in polynomial time ( though I do not know of any practical way to do it ) and could be used, for example, as a certificate for negative answers in #7528.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7529\n\n",
+    "body": "Assignee: @rlmill\n\nThe maximum average degree of a graph is the maximum, over all subgraphs H of a graph G, of average_degree(H).\n\nThis can be computed in polynomial time ( though I do not know of any practical way to do it ) and could be used, for example, as a certificate for negative answers in #7528.\n\n**Apply:**\n\n1. #8364\n2. #8166\n3. #2203\n4. [trac_7529.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7529/trac_7529.patch)\n\nEven applying in this order, you might get some fuzz. But that's OK and is not as bad as a hunk failure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7529\n\n",
+    "closed_at": "2010-06-06T07:11:09Z",
     "created_at": "2009-11-25T09:57:52Z",
     "labels": [
         "component: graph theory"
@@ -21,7 +22,14 @@ The maximum average degree of a graph is the maximum, over all subgraphs H of a 
 
 This can be computed in polynomial time ( though I do not know of any practical way to do it ) and could be used, for example, as a certificate for negative answers in #7528.
 
-Nathann
+**Apply:**
+
+1. #8364
+2. #8166
+3. #2203
+4. [trac_7529.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7529/trac_7529.patch)
+
+Even applying in this order, you might get some fuzz. But that's OK and is not as bad as a hunk failure.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7529
 

@@ -1,16 +1,17 @@
-# Issue 1598: [with patch] fix SIGSEGV in libSINGULAR interface on Solaris
+# Issue 1598: [with patch, with positive review] fix SIGSEGV in libSINGULAR interface on Solaris
 
 archive/issues_001598.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1598\n\n",
+    "closed_at": "2008-01-07T17:19:17Z",
     "created_at": "2007-12-25T20:52:31Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with patch] fix SIGSEGV in libSINGULAR interface on Solaris",
+    "title": "[with patch, with positive review] fix SIGSEGV in libSINGULAR interface on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1598",
     "user": "https://github.com/malb"

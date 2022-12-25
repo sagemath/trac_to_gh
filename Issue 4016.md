@@ -1,16 +1,17 @@
-# Issue 4016: [with patch, needs review] improve doctests to schemes/generic/scheme.py
+# Issue 4016: [with patch, positive review] improve doctests to schemes/generic/scheme.py
 
 archive/issues_004016.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nBrings coverage up to 96% (sorry, I have no idea what's going on with the one remaining function).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4016\n\n",
+    "closed_at": "2008-09-01T02:56:07Z",
     "created_at": "2008-08-31T07:52:18Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] improve doctests to schemes/generic/scheme.py",
+    "title": "[with patch, positive review] improve doctests to schemes/generic/scheme.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4016",
     "user": "https://github.com/aghitza"

@@ -4,6 +4,7 @@ archive/issues_008600.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nthe fibonacci tree, [wikipedia](http://de.wikipedia.org/wiki/Datei:Fibonacci_Tree_5.svg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8600\n\n",
+    "closed_at": "2010-04-16T18:51:42Z",
     "created_at": "2010-03-24T17:46:29Z",
     "labels": [
         "component: graph theory",

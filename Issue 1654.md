@@ -4,6 +4,7 @@ archive/issues_001654.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nFrancois wrote:\n> I was looking at the deps file and stumble across this:\n> \n> $(INST)/$(PYSQLITE): $(INST)/$(PYTHON) $(INST)/$(SQLITE)\n>         $(SAGE_SPKG) $(SQLITE) 2>&1\n> \n> Given that there is a pysqlite spkg I assume that must be a mistake.\n\npysqlite is included in Python 2.5.1.  For a long time we shipped and built\npysqlite since it wasn't part of Python, but now that it is we don't need to.\n\nThe pysqlite package should be removed from sage-2.9.2 if it hasn't\nalready been removed, and we might as well delete the above line from deps.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1654\n\n",
+    "closed_at": "2008-01-03T07:22:29Z",
     "created_at": "2008-01-02T07:32:09Z",
     "labels": [
         "component: packages: standard",

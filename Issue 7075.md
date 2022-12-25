@@ -4,6 +4,7 @@ archive/issues_007075.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri mvngu\n\nThere are two more instances in plot/plot of saving figures to the current directory as opposed to SAGE_TMP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7075\n\n",
+    "closed_at": "2009-09-30T15:01:06Z",
     "created_at": "2009-09-29T13:57:29Z",
     "labels": [
         "component: graphics",

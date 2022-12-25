@@ -1,16 +1,17 @@
-# Issue 683: bug in "latex?" in the notebook
+# Issue 683: [with patch] bug in "latex?" in the notebook
 
 archive/issues_000683.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n     --  The response to `latex?' seems to be out of date.\n\n            %latex\n            The equation y^2 = x^3 + x defines an elliptic curve.\n            We have 2006 = SAGE{factor(2006)}.\n\n    I thought it was a great credit to SAGE that when I edited the sample input\n    in what seemed the obvious way, enclosing the math in $$ and changing SAGE\n    to \\sage, that it worked as expected.\n\n```\n\n\n\n\nAh, you've found a bug.  What happens is that all SAGE documentation\nis de-texed before displaying in the notebook (in plain text format).  Unfortunately\nthis detexing makes the documentation for latex appear completely\nwrong!  \n\nThe solution is probably to come up with a notation to tell SAGE not\nto do the detexing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/683\n\n",
+    "closed_at": "2007-11-06T21:35:43Z",
     "created_at": "2007-09-17T21:52:21Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "bug in \"latex?\" in the notebook",
+    "title": "[with patch] bug in \"latex?\" in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/683",
     "user": "https://github.com/williamstein"

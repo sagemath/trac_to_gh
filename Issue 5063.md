@@ -4,6 +4,7 @@ archive/issues_005063.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is to allow one to take more advantages of matplotlib functionality.\n\nI'm posting a patch so that I can look at the diff.  It's definitely not ready.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5063\n\n",
+    "closed_at": "2010-01-18T22:39:52Z",
     "created_at": "2009-01-23T01:32:50Z",
     "labels": [
         "component: graphics"

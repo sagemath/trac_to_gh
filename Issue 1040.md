@@ -1,9 +1,10 @@
-# Issue 1040: bug in new ring extension constructor
+# Issue 1040: [with patch] bug in new ring extension constructor
 
 archive/issues_001040.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNow that we allow notation such as\n\n```\nQQ[2^(1/3)]\n```\nto create a number field, the following is totally wrong and\nneeds to be fixed ASAP:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: K\nUnivariate Polynomial Ring in a over Rational Field\nsage: parent(a)\nUnivariate Polynomial Ring in a over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1040\n\n",
+    "body": "Assignee: @ncalexan\n\nNow that we allow notation such as\n\n```\nQQ[2^(1/3)]\n```\nto create a number field, the following is totally wrong and\nneeds to be fixed ASAP:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: K\nUnivariate Polynomial Ring in a over Rational Field\nsage: parent(a)\nUnivariate Polynomial Ring in a over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1040\n\n",
+    "closed_at": "2007-11-03T23:43:20Z",
     "created_at": "2007-10-31T18:14:03Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_001040.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "bug in new ring extension constructor",
+    "title": "[with patch] bug in new ring extension constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1040",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @ncalexan
 
 Now that we allow notation such as
 

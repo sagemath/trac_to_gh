@@ -1,9 +1,10 @@
-# Issue 1696: osx 10.4 2.9.2 instructions don't work.
+# Issue 1696: osx 10.4, 2.9.2 dmg instructions don't work.
 
 archive/issues_001696.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI tried the 2.9.2 dmg for osx 10.4. There were two major issue\n\n1. Graphically dragging and dropping the sage folder didn't work. about halfway through the copy \n   failed with the message \n\n(You cannot copy \"singular\" to the destination because its name is the \nsame as the name of an item on the destination except for the case of \nsome characters) \n\n2. From the command line I was able to do \n\ncp -R -P /Volumes/sage-2.9.2-OSX10.4-intel-i386-Darwin/sage . \n\nThis worked modulo a missing libintl (see 1695).\n\nIf you only do cp -r, every symbolic link breaks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1696\n\n",
+    "closed_at": "2008-02-16T06:11:07Z",
     "created_at": "2008-01-05T23:48:32Z",
     "labels": [
         "component: relocation",
@@ -11,7 +12,7 @@ archive/issues_001696.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "osx 10.4 2.9.2 instructions don't work.",
+    "title": "osx 10.4, 2.9.2 dmg instructions don't work.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1696",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

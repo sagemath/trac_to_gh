@@ -1,16 +1,17 @@
-# Issue 4392: smallest_integer() is broken
+# Issue 4392: [with patch, positive review] smallest_integer() is broken
 
 archive/issues_004392.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  m.t.aranes@warwick.ac.uk\n\nKeywords: number field ideal\n\nFor number field ideals and fractional ideals, the smallest_integer() function is broken in 2 ways:\n\n```\nsage: K.<a>=QuadraticField(-5)\nsage: I=K.ideal(7)\nsage: I.smallest_integer()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (237, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\n/local/jec/sage-3.2.alpha1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.pyc in smallest_integer(self)\n    731                         bound /= p\n    732                 self.smallest_integer = ZZ(bound)\n--> 733                 return self.__smallest_integer\n    734             I,d = self.integral_split() ## self = I/d\n    735             n = I.smallest_integer()    ## n/d in self\n\nAttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\nsage: I.smallest_integer\n1\nsage: I.smallest_integer()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\n```\nFirst: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!\n\nSecond:  the answer is wrong (as the example shows).\n\nI will try to fix this and post a ptach today (Bug Day 2008-10-30).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4392\n\n",
+    "closed_at": "2008-11-13T19:36:08Z",
     "created_at": "2008-10-30T13:10:27Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "smallest_integer() is broken",
+    "title": "[with patch, positive review] smallest_integer() is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4392",
     "user": "https://github.com/JohnCremona"

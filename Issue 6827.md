@@ -1,16 +1,17 @@
-# Issue 6827: [with patch, needs review] probability distributions doctests + general discrete distribution
+# Issue 6827: [with patch, positive review] probability distributions doctests + general discrete distribution
 
 archive/issues_006827.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nThis patch attends to sage/gsl/probability_distribution.pyx:\n\n- 100% doctest coverage (previously this file had nodoctest)\n\n- fixed formatting (all indents now 4 spaces).\n\n- ReST docstring formatting.\n\n- One extra class: general discrete distributions (I think that #6662 should be marked as invalid since the code there fits better here).\n\n- valgrind ok\n\n- probability_distribution.pyx added to the reference manual under Probability.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6827\n\n",
+    "closed_at": "2009-09-09T10:39:00Z",
     "created_at": "2009-08-26T08:28:09Z",
     "labels": [
         "component: statistics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] probability distributions doctests + general discrete distribution",
+    "title": "[with patch, positive review] probability distributions doctests + general discrete distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6827",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"

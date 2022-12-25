@@ -3,11 +3,11 @@
 archive/issues_007958.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\nsage: F = Frac(PolynomialRing(ZZ, 't'))\nsage: F(1/2)\n...\nTypeError: no conversion of this rational to integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7958\n\n",
+    "body": "Assignee: @robertwb\n\n```\nsage: F = Frac(PolynomialRing(ZZ, 't'))\nsage: F(1/2)\n...\nTypeError: no conversion of this rational to integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7958\n\n",
+    "closed_at": "2010-01-23T07:47:55Z",
     "created_at": "2010-01-16T19:28:41Z",
     "labels": [
-        "component: algebra",
-        "minor",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
@@ -17,7 +17,7 @@ archive/issues_007958.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
-Assignee: @aghitza
+Assignee: @robertwb
 
 ```
 sage: F = Frac(PolynomialRing(ZZ, 't'))

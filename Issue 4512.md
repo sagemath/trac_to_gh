@@ -1,9 +1,10 @@
-# Issue 4512: [with patch, needs review] sage path-related troubles
+# Issue 4512: [with patch, positive review] sage path-related troubles
 
 archive/issues_004512.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nUnfortunately, it seems that `sage -sh` doesn't ask the shell to avoid processing the `.profile` or equivalent. In particular, it can lead to things like this:\n\n```\n[craigcitro@sharma ~/new-three-two]  $ ./sage -version\nSage Version 3.2.rc0, Release Date: 2008-11-10\n[craigcitro@sharma ~/new-three-two]  $ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[craigcitro@sharma ~/new-three-two]  $ sage -version\nSAGE Version 3.1.4, Release Date: 2008-10-16\n[craigcitro@sharma ~/new-three-two]  $ which sage\n/usr/local/bin/sage\n```\n\nThis comes from the fact that I manually **prepend** certain things to my path in my `.bashrc`. Sadly, this leads to several small, subtle issues. I've attached a patch which turns several calls to `sage` into `$SAGE_ROOT/sage`.\n\nHowever, something more serious is needed. I think that the right approach is to start the new shell without processing any login files, so that we know our path is correct. The patch does that. \n\nI'm listing this as a blocker, because it causes such subtle errors, and because a fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4512\n\n",
+    "closed_at": "2008-11-14T06:00:05Z",
     "created_at": "2008-11-13T10:58:04Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004512.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] sage path-related troubles",
+    "title": "[with patch, positive review] sage path-related troubles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4512",
     "user": "https://github.com/craigcitro"

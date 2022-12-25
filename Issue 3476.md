@@ -1,15 +1,16 @@
-# Issue 3476: [with patch, needs review] save timeit information with sage -t -timeit
+# Issue 3476: [with patch, positive review] save timeit information with sage -t -timeit
 
 archive/issues_003476.json:
 ```json
 {
-    "body": "Assignee: failure\n\nKeywords: testing doctest timing timeit profile regression\n\nThere are several parts to this patch.\n\nThe first is an update to `sage.misc.sage_timeit` that generalizes the interface to return an object that prints itself as a timing string rather than the string itself.  The advantage is that the information does not need to be parsed from the string later.  This patch is a requirement of the later ones but is conceptually independent.\n\nThe second adds a file `ncadoctest.py` to **scripts** that is a slightly modified version of Python's `doctest.py` file.  It is easier to subclass the various classes with this version.\n\nThe third uses `ncadoctest.py` to subclass the doctest architecture and updates `sage-doctest` to use these updated classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3476\n\n",
+    "body": "Assignee: failure\n\nKeywords: testing doctest timing timeit profile regression, editor_mhansen\n\nThere are several parts to this patch.\n\nThe first is an update to `sage.misc.sage_timeit` that generalizes the interface to return an object that prints itself as a timing string rather than the string itself.  The advantage is that the information does not need to be parsed from the string later.  This patch is a requirement of the later ones but is conceptually independent.\n\nThe second adds a file `ncadoctest.py` to **scripts** that is a slightly modified version of Python's `doctest.py` file.  It is easier to subclass the various classes with this version.\n\nThe third uses `ncadoctest.py` to subclass the doctest architecture and updates `sage-doctest` to use these updated classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3476\n\n",
+    "closed_at": "2008-11-08T20:11:23Z",
     "created_at": "2008-06-19T21:53:02Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] save timeit information with sage -t -timeit",
+    "title": "[with patch, positive review] save timeit information with sage -t -timeit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3476",
     "user": "https://github.com/ncalexan"
@@ -17,7 +18,7 @@ archive/issues_003476.json:
 ```
 Assignee: failure
 
-Keywords: testing doctest timing timeit profile regression
+Keywords: testing doctest timing timeit profile regression, editor_mhansen
 
 There are several parts to this patch.
 

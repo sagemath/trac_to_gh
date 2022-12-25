@@ -1,21 +1,24 @@
-# Issue 3216: notebook -- doctests for user.py
+# Issue 3216: [with patch, positive review] notebook -- doctests for user.py
 
 archive/issues_003216.json:
 ```json
 {
-    "body": "Assignee: timothyclemans\n\nWarning patch will depend on #3213 because user.py was modified for it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3216\n\n",
+    "body": "Assignee: timothyclemans\n\nKeywords: editor_wstein\n\nWarning patch will depend on #3213 because user.py was modified for it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3216\n\n",
+    "closed_at": "2008-06-23T12:56:40Z",
     "created_at": "2008-05-16T04:34:16Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- doctests for user.py",
+    "title": "[with patch, positive review] notebook -- doctests for user.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3216",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: timothyclemans
+
+Keywords: editor_wstein
 
 Warning patch will depend on #3213 because user.py was modified for it.
 

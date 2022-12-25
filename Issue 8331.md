@@ -3,7 +3,8 @@
 archive/issues_008331.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @rlmill\n\nKeywords: BipartiteGraph\n\nThe BipartiteGraph constructor does not create partitions for dict inputs.\n\n```\nsage: t1 = BipartiteGraph({'a': ['b'], 'b':['c']})\nsage: t1.left\n...\nAttributeError: 'BipartiteGraph' object has no attribute 'left'\n```\n\nThe problem comes in the constructor in the \"other inputs\" case.  A Graph object is created, but not all the control paths find a bipartition.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8331\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @jasongrout @rlmill\n\nKeywords: BipartiteGraph\n\nThe BipartiteGraph constructor does not create partitions for dict inputs.\n\n```\nsage: t1 = BipartiteGraph({'a': ['b'], 'b':['c']})\nsage: t1.left\n...\nAttributeError: 'BipartiteGraph' object has no attribute 'left'\n```\n\nThe problem comes in the constructor in the \"other inputs\" case.  A Graph object is created, but not all the control paths find a bipartition.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8331\n\n",
+    "closed_at": "2010-03-03T14:25:55Z",
     "created_at": "2010-02-23T01:04:44Z",
     "labels": [
         "component: graph theory",
@@ -16,7 +17,7 @@ archive/issues_008331.json:
     "user": "https://github.com/rhinton"
 }
 ```
-Assignee: @rlmill
+Assignee: @rhinton
 
 CC:  @jasongrout @rlmill
 

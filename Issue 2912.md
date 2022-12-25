@@ -1,15 +1,16 @@
-# Issue 2912: M4RI should be built with -O3
+# Issue 2912: [with spkg, positive review] M4RI should be built with -O3
 
 archive/issues_002912.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: speed, build system\n\n* it is fairly straight forward C so it shouldn't break under `-O3`\n* it makes a noticeable speed difference. To echelonise a random 10<sup>4</sup> x 10<sup>4</sup> matrix takes ~ 8 seconds with `-O2` and ~ 6 seconds with `-O3`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2912\n\n",
+    "closed_at": "2008-04-13T23:42:25Z",
     "created_at": "2008-04-13T21:05:11Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "M4RI should be built with -O3",
+    "title": "[with spkg, positive review] M4RI should be built with -O3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2912",
     "user": "https://github.com/malb"

@@ -3,7 +3,8 @@
 archive/issues_003231.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf e.g. Magma is started from Sage then the seed parameter (`-S seed`) should be set using the randgen framework maybe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3231\n\n",
+    "body": "Assignee: cwitty\n\nThe interfaces to gp, gap, r, scilab, magma, etc., should use the randgen framework to initialize/set the seed for their respective random number generators.\n\nThe purpose of this ticket is to add a `set_seed` method to each interface which takes the appropriate input to modify the random number generator's seed value. It should also make the interfaces initialize their seed value with a random value generated from the randgen framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3231\n\n",
+    "closed_at": "2015-06-22T22:25:10Z",
     "created_at": "2008-05-16T23:14:33Z",
     "labels": [
         "component: interfaces",
@@ -16,9 +17,11 @@ archive/issues_003231.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
-If e.g. Magma is started from Sage then the seed parameter (`-S seed`) should be set using the randgen framework maybe.
+The interfaces to gp, gap, r, scilab, magma, etc., should use the randgen framework to initialize/set the seed for their respective random number generators.
+
+The purpose of this ticket is to add a `set_seed` method to each interface which takes the appropriate input to modify the random number generator's seed value. It should also make the interfaces initialize their seed value with a random value generated from the randgen framework.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3231
 

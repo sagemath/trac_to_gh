@@ -1,22 +1,23 @@
-# Issue 2416: jmol error on FF3
+# Issue 2416: jmol error on FF3/OSX
 
 archive/issues_002416.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: jmol\n\njmol doesn't go\n\nTested on OSX 10.5.1, FF3 Beta 1, Sage 2.10.2\n\n```\nplot3d(lambda x,y:x^2+y^2,(0,pi),(0,pi))\n```\nPopup says:\n\n```\nReferenceError: _jmolInitCheck is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2416\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: jmol\n\njmol doesn't go\n\nTested on OSX 10.5.1, FF3 Beta 1, Sage 2.10.2\n\n```\nplot3d(lambda x,y:x^2+y^2,(0,pi),(0,pi))\n```\nPopup says:\n\n```\nReferenceError: _jmolInitCheck is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2416\n\n",
+    "closed_at": "2008-10-23T20:04:18Z",
     "created_at": "2008-03-07T04:39:17Z",
     "labels": [
-        "component: cygwin",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "jmol error on FF3",
+    "title": "jmol error on FF3/OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2416",
     "user": "https://trac.sagemath.org/admin/accounts/users/edrex"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 Keywords: jmol
 

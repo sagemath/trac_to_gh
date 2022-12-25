@@ -3,10 +3,12 @@
 archive/issues_008342.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nKeywords: sequence, generator\n\n```\ndef construct_sequence(base,f):\n    \"\"\"\n    Returns a function that gives sequence terms, building off past calls.\n    \n    Input:\n       - `base` -- the base case(s) of the sequence.\n       - `f`    -- the recursive description of the sequence; it takes a sequence referencing function and returns a function that will, given n, return the nth term.\n\n    Output:\n       A function that, given n, returns the nth term in the sequence.\n    \n    Examples:\n       sage: fib = construct_sequence([1,1], lambda t: lambda n : t(n-1) + t(n-2)) #The Fibonacci sequence\n\n       sage: hof = construct_sequence([1,1], lambda t: lambda n : t(n-t(n-1)) + t(n-t(n-2))) #The Hofstadter Q sequence\n       sage: [hof(n) for n in range(100)] # List of 100 terms\n    \"\"\"\n    b = {}\n    for i in range(len(base)):\n        b[i] = base[i]\n    def get_term(n):\n        if n in b.keys(): return b[n]\n        else:\n            b[n] = f(get_term)(n)\n            return b[n]\n    return get_term\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8342\n\n",
+    "body": "Assignee: colah\n\nKeywords: sequence, generator\n\n```\ndef construct_sequence(base,f):\n    \"\"\"\n    Returns a function that gives sequence terms, building off past calls.\n    \n    Input:\n       - `base` -- the base case(s) of the sequence.\n       - `f`    -- the recursive description of the sequence; it takes a sequence referencing function and returns a function that will, given n, return the nth term.\n\n    Output:\n       A function that, given n, returns the nth term in the sequence.\n    \n    Examples:\n       sage: fib = construct_sequence([1,1], lambda t: lambda n : t(n-1) + t(n-2)) #The Fibonacci sequence\n\n       sage: hof = construct_sequence([1,1], lambda t: lambda n : t(n-t(n-1)) + t(n-t(n-2))) #The Hofstadter Q sequence\n       sage: [hof(n) for n in range(100)] # List of 100 terms\n    \"\"\"\n    b = {}\n    for i in range(len(base)):\n        b[i] = base[i]\n    def get_term(n):\n        if n in b.keys(): return b[n]\n        else:\n            b[n] = f(get_term)(n)\n            return b[n]\n    return get_term\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8342\n\n",
+    "closed_at": "2014-03-19T04:42:36Z",
     "created_at": "2010-02-24T01:41:50Z",
     "labels": [
-        "component: numerical"
+        "component: numerical",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Efficient Arbitrary Sequence Generator",
@@ -15,7 +17,7 @@ archive/issues_008342.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/colah"
 }
 ```
-Assignee: jkantor
+Assignee: colah
 
 Keywords: sequence, generator
 

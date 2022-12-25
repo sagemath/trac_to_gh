@@ -1,9 +1,10 @@
-# Issue 5406: [with patch, needs review] Remove the doc repo from Sage
+# Issue 5406: [with patch, positive review] Remove the doc repo from Sage
 
 archive/issues_005406.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince 3.4.alpha0 the documentation has moved to the main sage repo. So let's get rid of it and save 11 MB in the tarball.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5406\n\n",
+    "closed_at": "2009-03-02T02:35:19Z",
     "created_at": "2009-03-01T05:27:25Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_005406.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] Remove the doc repo from Sage",
+    "title": "[with patch, positive review] Remove the doc repo from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5406",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

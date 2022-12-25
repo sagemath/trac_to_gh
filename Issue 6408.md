@@ -1,9 +1,10 @@
-# Issue 6408: notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6
+# Issue 6408: [with patch; positive review] notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6
 
 archive/issues_006408.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n```\nsage: notebook('foobar',secure=True,address='geom.math.washington.edu')\nThe notebook files are stored in: foobar\n******************************************************************\n*                                                                *\n* Open your web browser to https://geom.math.washington.edu:8000 *\n*                                                                *\n******************************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\n/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/persisted/sob.py:12: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import os, md5, sys\n2009-06-25 08:17:28-0700 [-] Log opened.\n2009-06-25 08:17:28-0700 [-] twistd 8.2.0 (/space/rlm/new_r/sage-4.1.alpha0/local/bin/python 2.6.2) starting up.\n2009-06-25 08:17:28-0700 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-06-25 08:17:28-0700 [-] twisted.web2.channel.http.HTTPFactory starting on 8000\n2009-06-25 08:17:28-0700 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0x3e2b098>\nxprop:  unable to open display ''\n2009-06-25 08:17:28-0700 [twisted.web2.channel.http.HTTPFactory] Unhandled Error\n        Traceback (most recent call last):\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/python/log.py\", line 69, in callWithContext\n            return context.call({ILogContext: newCtx}, func, *args, **kw)\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/python/context.py\", line 59, in callWithContext\n            return self.currentContext().callWithContext(ctx, func, *args, **kw)\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/python/context.py\", line 37, in callWithContext\n            return func(*args,**kw)\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/internet/selectreactor.py\", line 146, in _doReadOrWrite\n            why = getattr(selectable, method)()\n        --- <exception caught here> ---\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/internet/tcp.py\", line 938, in doRead\n            transport = self.transport(skt, protocol, addr, self, s, self.reactor)\n        exceptions.TypeError: __init__() takes exactly 6 arguments (7 given)\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6408\n\n",
+    "closed_at": "2009-07-09T19:10:37Z",
     "created_at": "2009-06-25T15:23:55Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_006408.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6",
+    "title": "[with patch; positive review] notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6408",
     "user": "https://github.com/williamstein"

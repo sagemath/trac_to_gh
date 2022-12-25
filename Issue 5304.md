@@ -1,9 +1,10 @@
-# Issue 5304: Sage 3.3.rc2: Fix documentation build
+# Issue 5304: [with patch, positive review] Sage 3.3.rc2: Fix documentation build
 
 archive/issues_005304.json:
 ```json
 {
-    "body": "Assignee: tba\n\nWe need various fixes to make the documentation build. \n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5304\n\n",
+    "body": "Assignee: mabshoff\n\nWe need various fixes to make the documentation build. \n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5304\n\n",
+    "closed_at": "2009-02-20T07:40:48Z",
     "created_at": "2009-02-18T11:58:26Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_005304.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Sage 3.3.rc2: Fix documentation build",
+    "title": "[with patch, positive review] Sage 3.3.rc2: Fix documentation build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5304",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 We need various fixes to make the documentation build. 
 

@@ -4,6 +4,7 @@ archive/issues_008505.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nThis is because it chooses only the first of the (usually) two possible lifts of a random x. Computing both is not more expensive, and this avoids the (expensive) exception creation and throwing as well. \n\nMay have a bit of fuzz with #8311.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8505\n\n",
+    "closed_at": "2010-04-19T05:15:48Z",
     "created_at": "2010-03-12T00:34:32Z",
     "labels": [
         "component: elliptic curves",

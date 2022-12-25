@@ -4,6 +4,7 @@ archive/issues_009671.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  davidm jguzman @eviatarbach @jondo\n\nThe current state is not ideal.  One either uses `bar_chart`, which doesn't allow any control of where the bars actually go, or `IndexedSequence.plot_histogram`, which looks sort of clunky (at least the one example in the doc).  Matplotlib has very nice bar charts and histograms, obviously, so combining the approaches of these two to unify this would be very good.  Ideally one could do labels or place bars of given height at various locations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9671\n\n",
+    "closed_at": "2014-11-19T08:32:15Z",
     "created_at": "2010-08-02T20:51:19Z",
     "labels": [
         "component: graphics"

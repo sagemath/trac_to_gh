@@ -1,9 +1,10 @@
-# Issue 2851: clean binary install of sage followed by "sage -br" is broken
+# Issue 2851: [with patch; positive review] clean binary install of sage followed by "sage -br" is broken
 
 archive/issues_002851.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nGet any binary of sage, type \"sage -br\", and it is broken.\nThe workaround is to touch any pyx file.  This should have been fixed but hasn't, and is a _major_ problem.  This *must* be fixed for 3.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2851\n\n",
+    "closed_at": "2008-04-15T18:21:14Z",
     "created_at": "2008-04-07T22:36:34Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_002851.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "clean binary install of sage followed by \"sage -br\" is broken",
+    "title": "[with patch; positive review] clean binary install of sage followed by \"sage -br\" is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2851",
     "user": "https://github.com/williamstein"

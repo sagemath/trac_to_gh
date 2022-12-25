@@ -3,7 +3,8 @@
 archive/issues_006887.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @categorie shumow kohel jcooley\n\nKeywords: elliptic curve isogeny\n\nThanks mainly to Dan Shumow, 4.1.1 has some very useful code for constructing elliptic curve isogenies.  Together with a summer student Jenny Cooley, I am implementing the following:\n\n1. For `l=2,3,5,7,13` over any field, find all `l`-isogenies of a given elliptic curve. (These are the `l` for which `X_0(l)` has genus 0).\n\n2. For the remaining `l` for which `l`-isogenies exist over QQ, similarly.\n\n3. Given an elliptic curve over QQ, find the whole isogeny class (this currently exists by wrapping some eclib code, but that it not very robust -- what we are writing will be!)\n\n4. Testing if two curves are isogenous (at least over QQ;  we can do something over other number fields but I am still working out how to make it rigorous.)\n\nAt the moment I am not planning anything over finite fields, where the situation is very different, though the generic code for `l=2,3,5,7,13` will work (as it is right now, only as long as the characteristic is not 2, 3 or `l`, but eventually that will change).\n\nSome of the methods we are implementing were worked out by  Mark Watkins and me in an unfinished preprint c.2005.\n\nAs one major test of the code for curves over QQ, we are intending to check that the databases are closed under isogeny (as they should be!  at least my own should be).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6887\n\n",
+    "body": "CC:  @williamstein @categorie shumow kohel jcooley\n\nKeywords: elliptic curve isogeny\n\nThanks mainly to Dan Shumow, 4.1.1 has some very useful code for constructing elliptic curve isogenies.  Together with a summer student Jenny Cooley, I am implementing the following:\n\n1. For `l=2,3,5,7,13` over any field, find all `l`-isogenies of a given elliptic curve. (These are the `l` for which `X_0(l)` has genus 0).\n\n2. For the remaining `l` for which `l`-isogenies exist over QQ, similarly.\n\n3. Given an elliptic curve over QQ, find the whole isogeny class (this currently exists by wrapping some eclib code, but that it not very robust -- what we are writing will be!)\n\n4. Testing if two curves are isogenous (at least over QQ;  we can do something over other number fields but I am still working out how to make it rigorous.)\n\nAt the moment I am not planning anything over finite fields, where the situation is very different, though the generic code for `l=2,3,5,7,13` will work (as it is right now, only as long as the characteristic is not 2, 3 or `l`, but eventually that will change).\n\nSome of the methods we are implementing were worked out by  Mark Watkins and me in an unfinished preprint c.2005.\n\nAs one major test of the code for curves over QQ, we are intending to check that the databases are closed under isogeny (as they should be!  at least my own should be).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6887\n\n",
+    "closed_at": "2010-01-04T04:09:44Z",
     "created_at": "2009-09-04T11:59:29Z",
     "labels": [
         "component: elliptic curves"
@@ -15,8 +16,6 @@ archive/issues_006887.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @loefflerd
-
 CC:  @williamstein @categorie shumow kohel jcooley
 
 Keywords: elliptic curve isogeny

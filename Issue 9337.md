@@ -3,7 +3,8 @@
 archive/issues_009337.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis patch adds toric (QQ-Weil) divisors. Characteristic classes of associated sheaves as well as computation of the sheaf cohomology groups is implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9337\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis patch adds toric (QQ-Weil) divisors. Characteristic classes of associated sheaves as well as computation of the sheaf cohomology groups is implemented.\n\nSee tracker bug at #9604 to for the patch queue/dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9337\n\n",
+    "closed_at": "2010-09-15T09:58:22Z",
     "created_at": "2010-06-25T16:02:40Z",
     "labels": [
         "component: algebraic geometry"
@@ -20,6 +21,8 @@ Assignee: @aghitza
 CC:  @novoselt
 
 This patch adds toric (QQ-Weil) divisors. Characteristic classes of associated sheaves as well as computation of the sheaf cohomology groups is implemented.
+
+See tracker bug at #9604 to for the patch queue/dependencies.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9337
 

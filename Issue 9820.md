@@ -4,6 +4,7 @@ archive/issues_009820.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
+    "closed_at": "2010-11-05T12:22:45Z",
     "created_at": "2010-08-27T11:53:35Z",
     "labels": [
         "component: commutative algebra",

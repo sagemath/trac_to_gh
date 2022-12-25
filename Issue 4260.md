@@ -3,7 +3,8 @@
 archive/issues_004260.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  simonking @rbeezer drkirkby\n\nKeywords: linbox, linear algebra\n\nCopying to and from LinBox uses up precious RAM and the point of fast linear algebra is to deal with large matrices. We should consider switching to LinBox as the native representation of matrices over GF(p)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4260\n\n",
+    "body": "Assignee: @ClementPernet\n\nCC:  simonking @rbeezer drkirkby\n\nKeywords: linbox, linear algebra, sd32, sd34\n\nCopying to and from LinBox uses up precious RAM and the point of fast linear algebra is to deal with large matrices. We should consider switching to LinBox as the native representation of matrices over GF(p)\n\n**Without Patch**\n\n```python\nsage: A = random_matrix(GF(97),2000,2000)\nsage: %time A*A\nCPU times: user 9.66 s, sys: 0.12 s, total: 9.77 s\nWall time: 9.82 s\n```\n\n**With Patch**\n\n```python\nsage: A = random_matrix(GF(97),2000,2000)\nsage: %time A*A\nCPU times: user 1.32 s, sys: 0.00 s, total: 1.32 s\nWall time: 1.35 s\n```\n\n**Magma**\n\n```\n> A:=RandomMatrix(GF(97),2000,2000);\n> time C:=A*A;                      \nTime: 1.560\n```\n\n* **Install** http://sage.math.washington.edu/home/malb/spkgs/linbox-1.1.6.p5.spkg\n* **Apply** [attachment:trac_4260-linbox_default.patch]\n* **Apply** [attachment:trac_4260-dense_ctypes_template.patch]\n* **Apply** [attachment:trac_4260-matrix-modn-docs.patch]\n* **Apply** [attachment:trac_4260_more_doctests.patch]\n* **Apply** [attachment:trac_4260_echelonformdomain.patch]\n* **Apply** [attachment:trac_4260-minor_fixes.patch]\n* **Apply** [attachment:trac_4260_bugfix.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4260\n\n",
+    "closed_at": "2011-12-01T08:12:15Z",
     "created_at": "2008-10-10T08:54:18Z",
     "labels": [
         "component: linear algebra"
@@ -15,13 +16,48 @@ archive/issues_004260.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @ClementPernet
 
 CC:  simonking @rbeezer drkirkby
 
-Keywords: linbox, linear algebra
+Keywords: linbox, linear algebra, sd32, sd34
 
 Copying to and from LinBox uses up precious RAM and the point of fast linear algebra is to deal with large matrices. We should consider switching to LinBox as the native representation of matrices over GF(p)
+
+**Without Patch**
+
+```python
+sage: A = random_matrix(GF(97),2000,2000)
+sage: %time A*A
+CPU times: user 9.66 s, sys: 0.12 s, total: 9.77 s
+Wall time: 9.82 s
+```
+
+**With Patch**
+
+```python
+sage: A = random_matrix(GF(97),2000,2000)
+sage: %time A*A
+CPU times: user 1.32 s, sys: 0.00 s, total: 1.32 s
+Wall time: 1.35 s
+```
+
+**Magma**
+
+```
+> A:=RandomMatrix(GF(97),2000,2000);
+> time C:=A*A;                      
+Time: 1.560
+```
+
+* **Install** http://sage.math.washington.edu/home/malb/spkgs/linbox-1.1.6.p5.spkg
+* **Apply** [attachment:trac_4260-linbox_default.patch]
+* **Apply** [attachment:trac_4260-dense_ctypes_template.patch]
+* **Apply** [attachment:trac_4260-matrix-modn-docs.patch]
+* **Apply** [attachment:trac_4260_more_doctests.patch]
+* **Apply** [attachment:trac_4260_echelonformdomain.patch]
+* **Apply** [attachment:trac_4260-minor_fixes.patch]
+* **Apply** [attachment:trac_4260_bugfix.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/4260
 

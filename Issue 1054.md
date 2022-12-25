@@ -4,9 +4,10 @@ archive/issues_001054.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rlmill\n\nThe reference manual chapter on number fields only lists number fields and their elements as sections.  It should also list orders, class groups, etc.  I.e., because of code refactoring.\n\nThis is just a few lines added to the ref repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1054\n\n",
+    "closed_at": "2010-01-18T19:03:24Z",
     "created_at": "2007-11-01T20:03:28Z",
     "labels": [
-        "component: notebook"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add number fields documentation to the reference manual",

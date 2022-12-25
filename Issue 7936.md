@@ -4,6 +4,7 @@ archive/issues_007936.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nSee http://www.sagemath.org.nyud.net/doc/constructions/calculus.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7936\n\n",
+    "closed_at": "2010-05-12T22:45:33Z",
     "created_at": "2010-01-15T17:35:41Z",
     "labels": [
         "component: documentation",

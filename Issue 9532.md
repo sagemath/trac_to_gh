@@ -4,6 +4,7 @@ archive/issues_009532.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @rlmill\n\nThere are several places in sage/graphs that use random numbers that aren't under the control of randstate.pyx.  I'm going to fix them now.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9532\n\n",
+    "closed_at": "2010-07-21T02:49:34Z",
     "created_at": "2010-07-17T20:12:40Z",
     "labels": [
         "component: graph theory",

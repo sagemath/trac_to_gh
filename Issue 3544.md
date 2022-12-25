@@ -1,16 +1,17 @@
-# Issue 3544: PermutationGroup.is_transitive is broken
+# Issue 3544: [with patch; positive review] PermutationGroup.is_transitive is broken
 
 archive/issues_003544.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  alexghitza\n\n```\nsage: G = Graph({0:[1],1:[2]}); G.num_verts()\n3\nsage: A = G.automorphism_group(); A\nPermutation Group with generators [(2,3)]\nsage: A.is_transitive()\nTrue\nsage: A.gens()[0].list()\n[1,3,2]\n```\n\nHuh?  The cyclic group of order 2 acting on 3 letters is transitive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3544\n\n",
+    "closed_at": "2009-01-23T07:27:14Z",
     "created_at": "2008-07-03T17:57:05Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "PermutationGroup.is_transitive is broken",
+    "title": "[with patch; positive review] PermutationGroup.is_transitive is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3544",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

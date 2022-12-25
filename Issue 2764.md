@@ -1,9 +1,10 @@
-# Issue 2764: apply Minh Nguyen's patches to hg_doc
+# Issue 2764: [with patch, positive review] apply Minh Nguyen's patches to hg_doc
 
 archive/issues_002764.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2764\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2764\n\n",
+    "closed_at": "2008-04-02T19:36:13Z",
     "created_at": "2008-04-01T22:14:30Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_002764.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "apply Minh Nguyen's patches to hg_doc",
+    "title": "[with patch, positive review] apply Minh Nguyen's patches to hg_doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2764",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 
 

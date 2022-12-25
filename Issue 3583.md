@@ -1,9 +1,10 @@
-# Issue 3583: randomness in some worksheet doctests
+# Issue 3583: [with patch; with positive review] randomness in some worksheet doctests
 
 archive/issues_003583.json:
 ```json
 {
     "body": "Assignee: failure\n\nOn Debian 64-bit vmware:\n\n```\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2677:\n    sage: W.interrupt()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2681:\n    sage: W.check_comp()\nExpected:\n    ('e', None)\nGot:\n    ('w', Cell 0; in=factor(2^997-1), out=)\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_85\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_worksheet.py\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3583\n\n",
+    "closed_at": "2008-07-07T21:50:02Z",
     "created_at": "2008-07-07T15:19:22Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_003583.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "randomness in some worksheet doctests",
+    "title": "[with patch; with positive review] randomness in some worksheet doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3583",
     "user": "https://github.com/williamstein"

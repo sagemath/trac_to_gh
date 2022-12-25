@@ -1,15 +1,16 @@
-# Issue 1432: add some plotting examples from the pyx gallery
+# Issue 1432: [with easy patch, with positive review] add some plotting examples from the pyx gallery
 
 archive/issues_001432.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAdd some Sage-versions of these well thought out plots:\n\n  http://pyx.sourceforge.net/gallery/graphs/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1432\n\n",
+    "closed_at": "2007-12-17T22:06:43Z",
     "created_at": "2007-12-09T03:03:37Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "add some plotting examples from the pyx gallery",
+    "title": "[with easy patch, with positive review] add some plotting examples from the pyx gallery",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1432",
     "user": "https://github.com/williamstein"

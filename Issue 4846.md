@@ -1,9 +1,10 @@
-# Issue 4846: Doctesting should create an empty init.sage if it doesn't exist
+# Issue 4846: [with patch, positive review] Doctesting should create an empty init.sage if it doesn't exist
 
 archive/issues_004846.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\nOften when we do fix IPython related problems things break when init.sage is present. So make doctesting create an empty init.sage so that this is potentially caught.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4846\n\n",
+    "closed_at": "2008-12-26T23:53:41Z",
     "created_at": "2008-12-21T09:25:01Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004846.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Doctesting should create an empty init.sage if it doesn't exist",
+    "title": "[with patch, positive review] Doctesting should create an empty init.sage if it doesn't exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4846",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,7 +3,8 @@
 archive/issues_008148.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus @orlitzky\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus @orlitzky\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\nSee #10998 instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
+    "closed_at": "2012-01-31T09:38:20Z",
     "created_at": "2010-02-02T04:52:34Z",
     "labels": [
         "component: combinatorics",
@@ -43,6 +44,8 @@ sage: Poset(Q.hasse_diagram().reverse()).show()
 ...
 RuntimeError: Error building image
 ```
+
+See #10998 instead.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8148
 

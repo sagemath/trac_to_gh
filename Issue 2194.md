@@ -1,16 +1,17 @@
-# Issue 2194: Elliptic curves over QQbar: point creation fails
+# Issue 2194: [with patch; positive review] Elliptic curves over QQbar: point creation fails
 
 archive/issues_002194.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nOn discovering QQbar I tried to define an elliptic curve over it and ran into difficulties creating a point:\n\n```\nsage: E=EllipticCurve(QQbar,[0,1])\nsage: E(0)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/jec/sage/<ipython console> in <module>()\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in __call__(self, *args, **kwds)\n    435         if len(args) == 1 and args[0] == 0:\n    436             R = self.base_ring()\n--> 437             return self.point([R(0),R(1),R(0)], check=False)\n    438         if isinstance(args[0],\n    439               (ell_point.EllipticCurvePoint_field, ell_point.EllipticCurvePoint)):\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/generic/scheme.py in point(self, v, check)\n    152\n    153     def point(self, v, check=True):\n--> 154         return self._point_class(self, v, check=check)\n    155\n    156     def _point_class(self):\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.py in __init__(self, curve, v, check)\n    134     \"\"\"\n    135     def __init__(self, curve, v, check=True):\n--> 136         point_homset = curve.point_homset()\n    137         AdditiveGroupElement.__init__(self, point_homset)\n    138         if check:\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/generic/scheme.py in point_homset(self, R)\n    139                 return self.__ring_point_homset\n    140             except AttributeError:\n--> 141                 self.__ring_point_homset = self._homset_class(self,self.base_ring())\n    142                 return self.__ring_point_homset\n    143         try:\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in _homset_class(self, *args, **kwds)\n    543\n    544     def _homset_class(self, *args, **kwds):\n--> 545         return homset.SchemeHomsetModule_abelian_variety_coordinates_field(*args, **kwds)\n    546\n    547     def __getitem__(self, n):\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/generic/homset.py in __init__(self, X, S, cat, check)\n    316     def __init__(self, X, S, cat=None, check=True):\n    317         R = X.base_ring()\n--> 318         Y = spec.Spec(S, R)\n    319         HomsetWithBase.__init__(self, Y, X, cat=cat,\n    320                                 check = check,\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/generic/spec.py in __init__(self, R, S, check)\n     81                 S.hom(R)\n     82             except TypeError:\n---> 83                 raise ValueError, \"There must be a natural map S --> R, but S = %s and R = %s\"%(S,R)\n     84             self._base_ring = S\n     85\n\n<type 'exceptions.ValueError'>: There must be a natural map S --> R, but S = Algebraic Field and R = Algebraic Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2194\n\n",
+    "closed_at": "2008-02-17T22:37:50Z",
     "created_at": "2008-02-17T18:21:47Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Elliptic curves over QQbar: point creation fails",
+    "title": "[with patch; positive review] Elliptic curves over QQbar: point creation fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2194",
     "user": "https://github.com/JohnCremona"

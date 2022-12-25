@@ -1,16 +1,17 @@
-# Issue 358: padic_height_pairing_matrix computes too many heights
+# Issue 358: [with patch, with positive review] padic_height_pairing_matrix computes too many heights
 
 archive/issues_000358.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe function `padic_height_pairing_matrix()` is a bit lazy. It should do less work along the diagonal. e.g. for rank 2, if the generators are P and Q, it computes h(P), h(Q), h(P+Q), h(P+P), h(Q+Q). Clearly the last two are silly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/358\n\n",
+    "closed_at": "2008-04-06T17:06:15Z",
     "created_at": "2007-04-25T22:39:16Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "padic_height_pairing_matrix computes too many heights",
+    "title": "[with patch, with positive review] padic_height_pairing_matrix computes too many heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/358",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

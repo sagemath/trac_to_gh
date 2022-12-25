@@ -3,7 +3,8 @@
 archive/issues_007776.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nFrom the doc:\n\n    inject a variable into the main global namespace\n\n    INPUT:\n- name  - a string\n- value - anything\n\n    EXAMPLES::\n\n        sage: from sage.misc.misc import inject_variable\n        sage: inject_variable(\"a\", 314)\n        sage: a\n        314\n\nThis will be used in the upcoming \"inject_shorthands\" patch for symmetric functions, and could be used in the various inject_variable code instead of manipulating directly globals() (which could be incorrect if not called directly from the interpreter/notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7776\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nFrom the doc:\n\n```\n    inject a variable into the main global namespace\n\n    INPUT:\n     - name  - a string\n     - value - anything\n\n    EXAMPLES::\n\n        sage: from sage.misc.misc import inject_variable\n        sage: inject_variable(\"a\", 314)\n        sage: a\n        314\n```\n\nThis will be used in the upcoming \"inject_shorthands\" patch for symmetric functions #7777, and could be used in the various inject_variable code instead of manipulating directly globals() (which could be incorrect if not called directly from the interpreter/notebook.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7776\n\n",
+    "closed_at": "2010-01-14T01:34:18Z",
     "created_at": "2009-12-27T22:27:38Z",
     "labels": [
         "component: user interface"
@@ -21,11 +22,12 @@ CC:  sage-combinat
 
 From the doc:
 
+```
     inject a variable into the main global namespace
 
     INPUT:
-- name  - a string
-- value - anything
+     - name  - a string
+     - value - anything
 
     EXAMPLES::
 
@@ -33,8 +35,10 @@ From the doc:
         sage: inject_variable("a", 314)
         sage: a
         314
+```
 
-This will be used in the upcoming "inject_shorthands" patch for symmetric functions, and could be used in the various inject_variable code instead of manipulating directly globals() (which could be incorrect if not called directly from the interpreter/notebook.
+This will be used in the upcoming "inject_shorthands" patch for symmetric functions #7777, and could be used in the various inject_variable code instead of manipulating directly globals() (which could be incorrect if not called directly from the interpreter/notebook.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7776
 

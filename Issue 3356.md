@@ -1,16 +1,17 @@
-# Issue 3356: [with patch; not ready for review] finance -- add randomization code; optimize some models; improve plotting code
+# Issue 3356: [with patch; positive review] finance -- add randomization code; optimize some models; improve plotting code
 
 archive/issues_003356.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3356\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_wstein\n\nFor the lazy I've also posted this clean hg bundle:\n\n\n http://sage.math.washington.edu/home/was/patches/finance.hg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3356\n\n",
+    "closed_at": "2008-07-06T19:35:43Z",
     "created_at": "2008-06-03T07:13:19Z",
     "labels": [
         "component: finance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; not ready for review] finance -- add randomization code; optimize some models; improve plotting code",
+    "title": "[with patch; positive review] finance -- add randomization code; optimize some models; improve plotting code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3356",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,12 @@ archive/issues_003356.json:
 ```
 Assignee: @williamstein
 
+Keywords: editor_wstein
 
+For the lazy I've also posted this clean hg bundle:
+
+
+ http://sage.math.washington.edu/home/was/patches/finance.hg
 
 Issue created by migration from https://trac.sagemath.org/ticket/3356
 

@@ -4,6 +4,7 @@ archive/issues_009149.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nThe following message has a spelling error: `occured` should be\n`occurred`:\n\n```\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9149\n\n",
+    "closed_at": "2010-06-06T01:25:00Z",
     "created_at": "2010-06-05T12:02:01Z",
     "labels": [
         "component: build",

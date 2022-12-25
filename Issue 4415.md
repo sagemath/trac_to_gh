@@ -1,9 +1,10 @@
-# Issue 4415: update sage-combinat script to latest upstream version
+# Issue 4415: [with patch, positive review] update sage-combinat script to latest upstream version
 
 archive/issues_004415.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nThe sage-combinat in Sage 3.1.4 has issues. There is a cleanup up/less buggy version somewhere upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4415\n\n",
+    "closed_at": "2008-11-02T16:22:39Z",
     "created_at": "2008-11-01T01:10:03Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_004415.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "update sage-combinat script to latest upstream version",
+    "title": "[with patch, positive review] update sage-combinat script to latest upstream version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4415",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

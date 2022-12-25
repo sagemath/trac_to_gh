@@ -4,6 +4,7 @@ archive/issues_009673.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @fchapoton\n\nKeywords: doctest\n\nIn the Developer's Guide there is no reference to the \"-tnew\" flag to the sage executable, which will instruct Sage to only doctest changed files. I suggest adding such a reference in \"Walking through the development process\" as well as \"Parallel Testing the Sage Library\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9673\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2010-08-03T07:56:52Z",
     "labels": [
         "component: documentation",

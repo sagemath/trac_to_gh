@@ -3,7 +3,8 @@
 archive/issues_009333.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9333\n\n",
+    "body": "Assignee: tbd\n\nHere's a new spkg:\n\n- [http://sage.math.washington.edu/home/palmieri/SPKG/kash3-2008-07-31.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/kash3-2008-07-31.p0.spkg)\n\nThis installs for me on sage.math and on an OS X box.\n\n---\n\nApply:\n\n- [attachment:trac_9333-kash-sage-library.patch] to Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9333\n\n",
+    "closed_at": "2011-07-03T11:17:33Z",
     "created_at": "2010-06-25T03:08:21Z",
     "labels": [
         "component: packages: optional",
@@ -19,6 +20,17 @@ archive/issues_009333.json:
 ```
 Assignee: tbd
 
+Here's a new spkg:
+
+- [http://sage.math.washington.edu/home/palmieri/SPKG/kash3-2008-07-31.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/kash3-2008-07-31.p0.spkg)
+
+This installs for me on sage.math and on an OS X box.
+
+---
+
+Apply:
+
+- [attachment:trac_9333-kash-sage-library.patch] to Sage library.
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9333

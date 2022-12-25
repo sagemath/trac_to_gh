@@ -1,22 +1,26 @@
-# Issue 6480: .subs_expr() method doesn't work for argument of D derivative operator
+# Issue 6480: Failure with diff(f(x),x).subs(f(x) == g(x))
 
 archive/issues_006480.json:
 ```json
 {
-    "body": "CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\nIn new symbolics, if I do the same I get\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
+    "body": "CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker\n\nSubject says it all.\n\nPrevious (no longer up-to-date) description was:\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\nIn new symbolics, if I do the same I get\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\n\n\n---\n\n\nFrom #11842, the list of what does/doesn't work:\n\n```\nfrom sage.all import *\n\n\n# 1. Fails.\nx = var('x')\nf = function('f', x)\ng = function('g', x)\np = f\nprint p.substitute_function(f, g) # Outputs \"f(x)\"\n\n\n\n# 2. Fails.\nx = var('x')\nf = function('f')\ng = function('g')\np = f(x)\nprint p.substitute_function(f(x), g(x)) # Outputs \"f(x)\"\n\n\n\n# 3. Works.\nx = var('x')\nf = function('f')\ng = function('g')\np = f(x)\nprint p.substitute_function(f, g) # Outputs \"g(x)\"\n\n\n\n# 4. Fails.\nx = var('x')\nf = function('f')\ng = function('g')\np = f(1)\nprint p.substitute_function(f(1), g(1)) # Outputs \"f(1)\"\n\n\n\n# 5. Works.\nx = var('x')\nf = function('f')\ng = function('g')\np = f(1)\nprint p.substitute_function(f, g) # Outputs \"g(1)\"\n\n\n\n# 6. Fails.\nx = var('x')\nf = function('f', x)\ng = function('g', x)\np = f.diff()\nprint p.substitute_function(f, g) # Outputs \"D[0](f)(x)\"\n\n\n\n# 7. Fails.\nx = var('x')\nf = function('f', x)\ng = function('g', x)\np = f.diff()\nprint p.substitute_function(f(x), g(x)) # Outputs \"D[0](f)(x)\"\n\n\n\n# 8. Works.\nx = var('x')\nf = function('f')\ng = function('g')\np = f(x).diff()\nprint p.substitute_function(f, g) # Outputs \"D[0](g)(x)\"\n\n\n\n# 9. Fails.\nx = var('x')\nf = function('f')\ng = function('g')\np = f(x).diff()(1)\nprint p.substitute_function(f(x).diff(), g(x).diff()) # Outputs \"D[0](f)(1)\"\n\n\n\n# 10. Works..\nx = var('x')\nf = function('f')\ng = function('g')\np = f(x).diff()(1)\nprint p.substitute_function(f, g) # Prints D[0](g)(1).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
     "created_at": "2009-07-08T11:37:56Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
-    "title": ".subs_expr() method doesn't work for argument of D derivative operator",
+    "title": "Failure with diff(f(x),x).subs(f(x) == g(x))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6480",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
 CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker
+
+Subject says it all.
+
+Previous (no longer up-to-date) description was:
 
 In computing functional derivative, one needs to vary
 a functional. For example, in sage-3.4 one can do as follows
@@ -38,6 +42,106 @@ sage: g
 D[0](f)(x)
 sage: g.subs_expr(f(x)==f(x)+df(x))
 D[0](f)(x)
+```
+
+
+
+---
+
+
+From #11842, the list of what does/doesn't work:
+
+```
+from sage.all import *
+
+
+# 1. Fails.
+x = var('x')
+f = function('f', x)
+g = function('g', x)
+p = f
+print p.substitute_function(f, g) # Outputs "f(x)"
+
+
+
+# 2. Fails.
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(x)
+print p.substitute_function(f(x), g(x)) # Outputs "f(x)"
+
+
+
+# 3. Works.
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(x)
+print p.substitute_function(f, g) # Outputs "g(x)"
+
+
+
+# 4. Fails.
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(1)
+print p.substitute_function(f(1), g(1)) # Outputs "f(1)"
+
+
+
+# 5. Works.
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(1)
+print p.substitute_function(f, g) # Outputs "g(1)"
+
+
+
+# 6. Fails.
+x = var('x')
+f = function('f', x)
+g = function('g', x)
+p = f.diff()
+print p.substitute_function(f, g) # Outputs "D[0](f)(x)"
+
+
+
+# 7. Fails.
+x = var('x')
+f = function('f', x)
+g = function('g', x)
+p = f.diff()
+print p.substitute_function(f(x), g(x)) # Outputs "D[0](f)(x)"
+
+
+
+# 8. Works.
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(x).diff()
+print p.substitute_function(f, g) # Outputs "D[0](g)(x)"
+
+
+
+# 9. Fails.
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(x).diff()(1)
+print p.substitute_function(f(x).diff(), g(x).diff()) # Outputs "D[0](f)(1)"
+
+
+
+# 10. Works..
+x = var('x')
+f = function('f')
+g = function('g')
+p = f(x).diff()(1)
+print p.substitute_function(f, g) # Prints D[0](g)(1).
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6480

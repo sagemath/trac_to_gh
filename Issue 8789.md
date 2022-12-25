@@ -4,6 +4,7 @@ archive/issues_008789.json:
 ```json
 {
     "body": "Assignee: tbd\n\nStarting score in sage-4.4:\n\n```\nfree_module_element.pyx: 47% (50 of 105)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8789\n\n",
+    "closed_at": "2010-05-08T21:47:57Z",
     "created_at": "2010-04-28T04:16:47Z",
     "labels": [
         "component: doctest coverage"

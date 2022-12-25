@@ -3,11 +3,12 @@
 archive/issues_009434.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri\n\nIn install.log, we often see:\n\n```\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\nsage_scripts-4.5.alpha3/.hg/store/data/sage-banner.i\nsage_scripts-4.5.alpha3/sage-banner\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ \n```\n\nI think this is probably due to some code in sage-sage\n\n```\nif [ \"$1\" = '-v' -o \"$1\" = '-version' -o \"$1\" = '--version' ]; then\n    cat \"$SAGE_LOCAL/bin/sage-banner\" | grep -i \"version\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n    exit $?\nfi\n```\n\nThis will obviously fail if sage-banner does not exist. \n\nAlso\n* There is an useless use of 'cat'. Perhaps the author was hoping to get a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) (Well worth a read - it's both funny and educational.) \n* There is an an unnecessary use of double-quotes around 'version'. \n\nThe following will save a few bytes of disk space and a few CPU cycles, as it will invoke one less process. \n\n```\n    grep -i version \"$SAGE_LOCAL/bin/sage-banner\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n```\n\nMore importantly, we should check that sage-banner exists before doing this, so it does not produce potentially confusing error messages. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9434\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri\n\nKeywords: scripts VERSION.txt\n\nIn install.log, we often see:\n\n```\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\nsage_scripts-4.5.alpha3/.hg/store/data/sage-banner.i\nsage_scripts-4.5.alpha3/sage-banner\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ \n```\n\nI think this is probably due to some code in sage-sage\n\n```\nif [ \"$1\" = '-v' -o \"$1\" = '-version' -o \"$1\" = '--version' ]; then\n    cat \"$SAGE_LOCAL/bin/sage-banner\" | grep -i \"version\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n    exit $?\nfi\n```\n\nThis will obviously fail if sage-banner does not exist. \n\nAlso\n* There is an useless use of 'cat'. Perhaps the author was hoping to get a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) (Well worth a read - it's both funny and educational.) \n* There is an an unnecessary use of double-quotes around 'version'. \n\nThe following will save a few bytes of disk space and a few CPU cycles, as it will invoke one less process. \n\n```\n    grep -i version \"$SAGE_LOCAL/bin/sage-banner\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n```\n\nMore importantly, we should check that sage-banner exists before doing this, so it does not produce potentially confusing error messages. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9434\n\n",
+    "closed_at": "2010-12-19T09:33:33Z",
     "created_at": "2010-07-06T06:50:04Z",
     "labels": [
         "component: build",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
@@ -17,9 +18,11 @@ archive/issues_009434.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 CC:  @jhpalmieri
+
+Keywords: scripts VERSION.txt
 
 In install.log, we often see:
 

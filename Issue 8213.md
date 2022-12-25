@@ -1,16 +1,17 @@
-# Issue 8213: [meta] the "Sage developer trac" banner should link to trac.sagemath.org, not sagemath.org
+# Issue 8213: the "Sage developer trac" banner should link to trac.sagemath.org, not sagemath.org
 
 archive/issues_008213.json:
 ```json
 {
     "body": "Assignee: tbd\n\nPerhaps this is a bit silly, but the banner at the top of the trac pages says \"Sage developer trac\", but links to sagemath.org. When I see a link that says \"Sage developer trac\", I expect the link to go to, well, the trac site. On many occasions I've clicked that banner, wanting to go to the main trac page, and had to backtrack from the main Sage page.\n\nCan someone with trac admin access change the link to trac.sagemath.org?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8213\n\n",
+    "closed_at": "2010-02-08T23:24:20Z",
     "created_at": "2010-02-08T07:42:06Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "[meta] the \"Sage developer trac\" banner should link to trac.sagemath.org, not sagemath.org",
+    "title": "the \"Sage developer trac\" banner should link to trac.sagemath.org, not sagemath.org",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8213",
     "user": "https://github.com/dandrake"

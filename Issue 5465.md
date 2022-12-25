@@ -1,16 +1,17 @@
-# Issue 5465: render3d for groebner fans is totally broken
+# Issue 5465: [with patch, positive review] render3d for groebner fans is totally broken
 
 archive/issues_005465.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: P.<a,b,c> = PolynomialRing(QQ,3, order='lex')\nsage: sage.rings.ideal.Katsura(P,3).groebner_fan().render3d()\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n| Sage Version 3.4.alpha0, Release Date: 2009-02-24                  |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/wstein/.sage/temp/teragon.local/68617/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.pyc in render3d(self, verbose)\n   1067         g_cones_ieqs = [self._cone_to_ieq(q) for q in g_cones_facets]\n   1068         # Now the cones are intersected with a plane:\n-> 1069         cone_info = [ieq_to_vert(q,linearities=[[1,-1,-1,-1,-1]]) for q in g_cones_ieqs]\n   1070 \tif verbose:\n   1071 \t    for x in cone_info:\n\n/Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/geometry/polyhedra.pyc in ieq_to_vert(in_list, linearities, cdd_type, verbose)\n   1268             adj_index = index\n   1269     # read the vertices and rays:\n-> 1270     for index in range(vert_index,len(ans_lines)):\n   1271         a_line = ans_lines[index]\n   1272         if a_line.find('end') != -1: break\n\nUnboundLocalError: local variable 'vert_index' referenced before assignment\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5465\n\n",
+    "body": "Assignee: mhampton\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: P.<a,b,c> = PolynomialRing(QQ,3, order='lex')\nsage: sage.rings.ideal.Katsura(P,3).groebner_fan().render3d()\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n| Sage Version 3.4.alpha0, Release Date: 2009-02-24                  |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/wstein/.sage/temp/teragon.local/68617/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.pyc in render3d(self, verbose)\n   1067         g_cones_ieqs = [self._cone_to_ieq(q) for q in g_cones_facets]\n   1068         # Now the cones are intersected with a plane:\n-> 1069         cone_info = [ieq_to_vert(q,linearities=[[1,-1,-1,-1,-1]]) for q in g_cones_ieqs]\n   1070         if verbose:\n   1071             for x in cone_info:\n\n/Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/geometry/polyhedra.pyc in ieq_to_vert(in_list, linearities, cdd_type, verbose)\n   1268             adj_index = index\n   1269     # read the vertices and rays:\n-> 1270     for index in range(vert_index,len(ans_lines)):\n   1271         a_line = ans_lines[index]\n   1272         if a_line.find('end') != -1: break\n\nUnboundLocalError: local variable 'vert_index' referenced before assignment\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5465\n\n",
+    "closed_at": "2009-03-26T23:20:25Z",
     "created_at": "2009-03-10T08:03:00Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "render3d for groebner fans is totally broken",
+    "title": "[with patch, positive review] render3d for groebner fans is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5465",
     "user": "https://github.com/williamstein"
@@ -34,8 +35,8 @@ UnboundLocalError                         Traceback (most recent call last)
    1067         g_cones_ieqs = [self._cone_to_ieq(q) for q in g_cones_facets]
    1068         # Now the cones are intersected with a plane:
 -> 1069         cone_info = [ieq_to_vert(q,linearities=[[1,-1,-1,-1,-1]]) for q in g_cones_ieqs]
-   1070 	if verbose:
-   1071 	    for x in cone_info:
+   1070         if verbose:
+   1071             for x in cone_info:
 
 /Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/geometry/polyhedra.pyc in ieq_to_vert(in_list, linearities, cdd_type, verbose)
    1268             adj_index = index

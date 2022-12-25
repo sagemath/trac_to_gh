@@ -4,9 +4,10 @@ archive/issues_007113.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe build of Sage fails when trying to build Maxima on Iras. \n\n```\n\n;;; Emitting code for FLOAT.\n;;; Emitting code for DO-MERGE-SYMM.\n;;; Emitting code for DO-MERGE-ASYM.\n;;; Internal error: #<a floating-point-overflow>\n;      - Loading binary file \"binary-ecl/clmacs.fas\" An error occurred during initialization:\nFilesystem error with pathname #P\"/home/wstein/screen/iras/build/sage-4.1.2.rc1.alpha1/spkg/build/maxima-5.19.1.p0/src/src/binary-ecl/clmacs.fas\".\nEither\n 1) the file does not exist, or\n 2) we are not allow to access the file, or\n 3) the pathname points to a broken symbolic link..\nmake[3]: *** [binary-ecl/maxima] Error 1\nmake[3]: Leaving directory `/home/wstein/screen/iras/build/sage-4.1.2.rc1.alpha1/spkg/build/maxima-5.19.1.p0/src/src'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/wstein/screen/iras/build/sage-4.1.2.rc1.alpha1/spkg/build/maxima-5.19.1.p0/src'\n***********************************************************\nFailed to make Maxima.\n***********************************************************\n\nreal    0m30.404s\nuser    0m9.684s\nsys     0m1.984s\nsage: An error occurred while installing maxima-5.19.1.p0\n\n\n\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7113\n\n",
+    "closed_at": "2009-11-06T07:21:43Z",
     "created_at": "2009-10-04T17:32:53Z",
     "labels": [
-        "component: doctest",
+        "component: build",
         "blocker",
         "bug"
     ],

@@ -1,16 +1,17 @@
-# Issue 2293: word_problem error in AbelianGroup
+# Issue 2293: [with patch at #2292, positive review] word_problem error in AbelianGroup
 
 archive/issues_002293.json:
 ```json
 {
     "body": "Assignee: joyner\n\n```\nsage: sage: A.<a,b,c,d,e> = AbelianGroup(5,[4, 5, 5, 7, 8])\nsage: wp = word_problem([a,b,c,d,e],a); wp\n[[a, 1]]\n```\nis okay but all these are wrong:\n\n```\nsage: wp = word_problem([a,b,c,d,e],b); wp\n[[a, 1]]\nsage: wp = word_problem([a,b,c,d,e],c); wp\n[[a, 1]]\nsage: wp = word_problem([a,b,c,d,e],d); wp\n[[a, 1]]\nsage: wp = word_problem([a,b,c,d,e],e); wp\n[[a, 1]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2293\n\n",
+    "closed_at": "2008-02-27T23:10:18Z",
     "created_at": "2008-02-24T15:33:04Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "word_problem error in AbelianGroup",
+    "title": "[with patch at #2292, positive review] word_problem error in AbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2293",
     "user": "https://github.com/wdjoyner"

@@ -1,16 +1,17 @@
-# Issue 2900: matplotlib bug in imshow (probably fixed in new version)
+# Issue 2900: [with patch, positive review] matplotlib bug in imshow (probably fixed in new version)
 
 archive/issues_002900.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @jasongrout\n\nSage's current version of matplotlib has a bug, as reported by Fabio Tonti (http://groups.google.com/group/sage-support/browse_thread/thread/a41e9ab2b158c41e#):\n\n```\nsage: from pylab import *\nsage: imshow([[(0,0,0)]])\nsage: savefig('foo.png')\nTraceback (most recent call last):\n...\nNameError: global name 'npy' is not defined \n```\nIt looks like this bug has been fixed in 0.91.2 (although I haven't actually tried it); we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2900\n\n",
+    "closed_at": "2009-10-15T05:23:42Z",
     "created_at": "2008-04-12T16:22:28Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "matplotlib bug in imshow (probably fixed in new version)",
+    "title": "[with patch, positive review] matplotlib bug in imshow (probably fixed in new version)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2900",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,15 +1,16 @@
-# Issue 6966: Shimura subgroup
+# Issue 6966: [with patch, positive review] Shimura subgroup
 
 archive/issues_006966.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: shimura subgroup\n\nsmall patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.\n\n```\nJ=J0(11)\nJ.shimura_subgroup()\n\nFinite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6966\n\n",
+    "closed_at": "2009-09-22T22:09:19Z",
     "created_at": "2009-09-20T03:51:08Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Shimura subgroup",
+    "title": "[with patch, positive review] Shimura subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6966",
     "user": "https://github.com/syazdani77"

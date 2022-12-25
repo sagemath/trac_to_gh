@@ -1,9 +1,10 @@
-# Issue 4603: trivial typos in files under sage/categories
+# Issue 4603: [with patch, positive review] trivial typos in files under sage/categories
 
 archive/issues_004603.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: typos, sage/categories\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4603\n\n",
+    "closed_at": "2008-11-24T19:09:50Z",
     "created_at": "2008-11-24T10:33:07Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004603.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "trivial typos in files under sage/categories",
+    "title": "[with patch, positive review] trivial typos in files under sage/categories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4603",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

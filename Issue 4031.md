@@ -1,22 +1,22 @@
-# Issue 4031: Callable symbolic expressions should allow keyword args
+# Issue 4031: [with patch, positive review] Callable symbolic expressions should allow keyword args
 
 archive/issues_004031.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFor consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.\n\n```\nsage: x, y = var('x,y')\nsage: f = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: f(3,2)\n13\nsage: f(x=3,y=2)\n13\n\nThe desired behavior is\n\nsage: f(x,y) = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: f(3,2)\n13\nsage: f(x=3, y=2)\n13\n\nBut the current behavior is\n\nsage: f(x=3, y=2)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4031\n\n",
+    "body": "Assignee: @jicama\n\nFor consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.\n\n```\nsage: x, y = var('x,y')\nsage: f = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: f(3,2)\n13\nsage: f(x=3,y=2)\n13\n\nThe desired behavior is\n\nsage: f(x,y) = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: f(3,2)\n13\nsage: f(x=3, y=2)\n13\n\nBut the current behavior is\n\nsage: f(x=3, y=2)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4031\n\n",
+    "closed_at": "2008-09-02T10:13:23Z",
     "created_at": "2008-09-01T06:25:55Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Callable symbolic expressions should allow keyword args",
+    "title": "[with patch, positive review] Callable symbolic expressions should allow keyword args",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4031",
     "user": "https://github.com/jicama"
 }
 ```
-Assignee: tbd
+Assignee: @jicama
 
 For consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.
 

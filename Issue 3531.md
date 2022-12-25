@@ -1,22 +1,25 @@
-# Issue 3531: [With SPKG, needs review] Boehm_GC spkg
+# Issue 3531: [With spkg, with positive review] Boehm_GC spkg
 
 archive/issues_003531.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nBoehm GC is a prerequisite for ECL lisp and M2 (See #10)\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/boehm_gc-7.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3531\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: editor_mabshoff\n\nBoehm GC is a prerequisite for ECL lisp and M2 (See #10)\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/boehm_gc-7.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3531\n\n",
+    "closed_at": "2008-07-16T18:22:50Z",
     "created_at": "2008-06-28T23:36:39Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[With SPKG, needs review] Boehm_GC spkg",
+    "title": "[With spkg, with positive review] Boehm_GC spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3531",
     "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
+
+Keywords: editor_mabshoff
 
 Boehm GC is a prerequisite for ECL lisp and M2 (See #10)
 Download at http://sage.math.washington.edu/home/gfurnish/spkg/boehm_gc-7.1.spkg

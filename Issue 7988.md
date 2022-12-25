@@ -4,9 +4,10 @@ archive/issues_007988.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7988\n\n",
+    "closed_at": "2010-01-19T05:07:05Z",
     "created_at": "2010-01-19T02:08:41Z",
     "labels": [
-        "component: algebra",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",

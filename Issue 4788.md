@@ -1,16 +1,17 @@
-# Issue 4788: [with patch, needs review] Dsage doctest fixes
+# Issue 4788: [with patch, positive review] Dsage doctest fixes
 
 archive/issues_004788.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nCC:  @mwhansen\n\nThis file contains lots of small dsage doctest fixes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4788\n\n",
+    "closed_at": "2008-12-14T17:36:57Z",
     "created_at": "2008-12-14T01:34:54Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] Dsage doctest fixes",
+    "title": "[with patch, positive review] Dsage doctest fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4788",
     "user": "https://github.com/garyfurnish"

@@ -1,22 +1,23 @@
-# Issue 5163: jsmath extensions for published webpages
+# Issue 5163: [with patch, positive review] jsmath extensions for published webpages
 
 archive/issues_005163.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe extensions enabled in #5021 don't work for published web pages, I think because js.py isn't loaded.\n\nWe could move the extensions to be invoked right after jsmath is loaded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5163\n\n",
+    "body": "Assignee: @jasongrout\n\nThe extensions enabled in #5021 don't work for published web pages, I think because js.py isn't loaded.\n\nWe could move the extensions to be invoked right after jsmath is loaded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5163\n\n",
+    "closed_at": "2009-02-05T10:49:17Z",
     "created_at": "2009-02-03T04:55:31Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "jsmath extensions for published webpages",
+    "title": "[with patch, positive review] jsmath extensions for published webpages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5163",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 The extensions enabled in #5021 don't work for published web pages, I think because js.py isn't loaded.
 

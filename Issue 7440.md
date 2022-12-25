@@ -1,16 +1,17 @@
-# Issue 7440: optional valgrind spkg doesn't build with newer GCC's
+# Issue 7440: optional valgrind-3.3.1 spkg doesn't build with newer GCC's
 
 archive/issues_007440.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein david.kirkby@onetel.net\n\nI tried to build the valgrind_3.3.1 spkg on ubuntu-9.10 and it quickly fails with \n\n```\nconfigure: error: Valgrind requires glibc version 2.2 - 2.7\nerror configuring valgrind 3.3.1\n\nreal    0m10.843s\nuser    0m2.928s\nsys     0m6.640s\nsage: An error occurred while installing valgrind_3.3.1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7440\n\n",
+    "closed_at": "2010-08-28T12:10:25Z",
     "created_at": "2009-11-12T05:40:01Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "optional valgrind spkg doesn't build with newer GCC's",
+    "title": "optional valgrind-3.3.1 spkg doesn't build with newer GCC's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7440",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_003766.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe should move sage_fortran from the fortran spkg to the sage_scripts spkg, since sage packages need this script even if they are not installing the fortran spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3766\n\n",
+    "closed_at": "2012-07-06T08:32:32Z",
     "created_at": "2008-08-03T19:20:53Z",
     "labels": [
         "component: packages: standard",

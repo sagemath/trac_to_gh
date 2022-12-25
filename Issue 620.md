@@ -1,4 +1,4 @@
-# Issue 620: memory still reachable in vector_rational_dense_21Vector_rational_dense__init
+# Issue 620: memory leaks affecting modular symbols
 
 archive/issues_000620.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_000620.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "memory still reachable in vector_rational_dense_21Vector_rational_dense__init",
+    "title": "memory leaks affecting modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/620",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_005469.json:
 ```json
 {
     "body": "Assignee: tba\n\nRunning \"sage -clone blah\" should copy $SAGE_ROOT/devel/sage/doc/output/...: for one thing, if you clone the repository, you should still have access to all of the local Sage documentation (via the \"Help\" button in the notebook), and for another, if you want to modify library code, you shouldn't have to wait 20 minutes to see how your changes affect the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5469\n\n",
+    "closed_at": "2009-03-11T06:27:26Z",
     "created_at": "2009-03-10T19:00:18Z",
     "labels": [
         "component: documentation",

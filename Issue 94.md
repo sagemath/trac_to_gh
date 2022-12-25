@@ -4,6 +4,7 @@ archive/issues_000094.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nDavid Harvey requested this.  There's all kinds of weird url encoding to\nget to the source, which I don't understand, so possibly we need to improve\nthe cgi-bin script.   \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/94\n\n",
+    "closed_at": "2006-09-29T14:52:25Z",
     "created_at": "2006-09-28T17:45:41Z",
     "labels": [
         "component: user interface",

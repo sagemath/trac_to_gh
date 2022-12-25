@@ -4,6 +4,7 @@ archive/issues_008710.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jhpalmieri alexghitza\n\nDoctests introduced in #4756 return the negative of certain eigenvectors on certain hardware.\n\nSee initital discussion at \n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/9136569bd1c67f6\n\nIssue created by migration from https://trac.sagemath.org/ticket/8710\n\n",
+    "closed_at": "2010-04-27T05:59:12Z",
     "created_at": "2010-04-18T03:30:23Z",
     "labels": [
         "component: linear algebra",

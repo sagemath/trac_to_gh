@@ -3,7 +3,8 @@
 archive/issues_007187.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: gnuplot.py\n\nUpdating to Gnuplot.py 1.8.\n\nThere have been a couple of requests on sage-support and the current package (1.7.p3) does not install with python 2.6.\n\nThis will also close #3772. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7187\n\n",
+    "body": "Assignee: @maxthemouse\n\nKeywords: gnuplot.py\n\nUpdating to Gnuplot.py 1.8.\n\nThere have been a couple of requests on sage-support and the current package (1.7.p3) does not install with python 2.6.\n\nThis will also close #3772. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7187\n\n",
+    "closed_at": "2009-11-17T11:21:38Z",
     "created_at": "2009-10-11T09:41:48Z",
     "labels": [
         "component: packages: optional",
@@ -16,7 +17,7 @@ archive/issues_007187.json:
     "user": "https://github.com/maxthemouse"
 }
 ```
-Assignee: tbd
+Assignee: @maxthemouse
 
 Keywords: gnuplot.py
 

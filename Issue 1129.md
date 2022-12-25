@@ -1,29 +1,30 @@
-# Issue 1129: is_irreducible()
+# Issue 1129: [with patch, with positive review] is_irreducible()
 
 archive/issues_001129.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nsage: F.<t> = NumberField(x^2-5)\nsage: Fx.<xF> = PolynomialRing(F)\nsage: f = Fx([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1])\nsage: f.is_irreducible()\n\n---\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/jvoight/<ipython console> in <module>()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.is_irreducible()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.factor()\n\n/home/jvoight/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>:  (8)\nsage: %magma\n\n  --> Switching to Magma <--\n\n''\nmagma: F<t> := NumberField(Polynomial([-5,0,1]));\n\nmagma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));\n\n[\n<$.1 + 1, 1>,\n<$.1 + 1/2*(-t + 1), 2>,\n<$.1^2 + 1/2*(t - 5), 1>\n]\nmagma: quit\n\nIssue created by migration from https://trac.sagemath.org/ticket/1129\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: F.<t> = NumberField(x^2-5)\nsage: Fx.<xF> = PolynomialRing(F)\nsage: f = Fx([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1])\nsage: f.is_irreducible()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/jvoight/<ipython console> in <module>()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.is_irreducible()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.factor()\n\n/home/jvoight/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>:  (8)\n\nsage: %magma\n\n  --> Switching to Magma <--\n\n''\nmagma: F<t> := NumberField(Polynomial([-5,0,1]));\n\nmagma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));\n\n[\n<$.1 + 1, 1>,\n<$.1 + 1/2*(-t + 1), 2>,\n<$.1^2 + 1/2*(t - 5), 1>\n]\nmagma: quit\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1129\n\n",
+    "closed_at": "2007-12-02T20:19:26Z",
     "created_at": "2007-11-08T16:22:36Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "is_irreducible()",
+    "title": "[with patch, with positive review] is_irreducible()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1129",
     "user": "https://github.com/jvoight"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
+```
 sage: F.<t> = NumberField(x^2-5)
 sage: Fx.<xF> = PolynomialRing(F)
 sage: f = Fx([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1])
 sage: f.is_irreducible()
-
----
+---------------------------------------------------------------------------
 <class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)
 
 /home/jvoight/<ipython console> in <module>()
@@ -35,6 +36,7 @@ sage: f.is_irreducible()
 /home/jvoight/gen.pyx in sage.libs.pari.gen._pari_trap()
 
 <class 'sage.libs.pari.gen.PariError'>:  (8)
+
 sage: %magma
 
   --> Switching to Magma <--
@@ -50,6 +52,7 @@ magma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));
 <$.1^2 + 1/2*(t - 5), 1>
 ]
 magma: quit
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1129
 

@@ -1,22 +1,23 @@
-# Issue 1575: plotting -- fix vector plotting
+# Issue 1575: [with patch, with positive review] plotting -- fix vector plotting
 
 archive/issues_001575.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nOn Dec 19, 2007 12:24 PM, Jason Grout <> wrote:\n> I'm teaching linear algebra next semester and plan to use Sage.  In\n> trying the \"obvious\" way to plot a vector:\n> \n> sage: v=vector([1,2])\n> sage: v.plot().show()\n> \n> I get what looks like a step function of the coordinates. \n\nYes, that's what it is.  This is very useful, e.g., when using\nvectors of data, computing Fourier transforms of them, etc. \nAnd it works in arbitrary dimensions.  \n\n>  Instead, I\n> have to do:\n> \n> sage: v=vector([1,2])\n> sage: arrow((0,0),v).show()\n> \n> which doesn't seem quite so natural to an undergraduate linear algebra\n> student.  First, is there an easier way to plot a vector (yes, I know I\n> don't have to define v above and could just give the coordinates to\n> arrow, but usually I'll be doing something with v as a vector)?  Is it\n> reasonable to redefine v.plot() to return the arrow for a vector with 3\n> or fewer dimensions, or is there some bigger reason to have things the\n> way they are now?\n\nI think that would be bad, because it's potentially confusing and\nunsystematic.  However, the following -- which you will like --\nwould be acceptable to me:\n\n   Redefine v.plot() so for dimensions <= 3 it does what you describe above,\ni.e., draws an arrow, but for dimensions >= 4 it gives an error message.\nThen add an option to plot called \"step\", which if set to True restores\nthe current behavior.    \n\nIn fact, this was my intention all along, and somehow I screwed up. \nThe current plot signature for vectors is:\n\n    def plot(self, xmin=0, xmax=1, eps=None, res=None,\n             connect=True, step=False, **kwds):\n\nNotice that step=False is already there!  \n\n\n\n-- William\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1575\n\n",
+    "body": "Assignee: @jasongrout\n\n```\nOn Dec 19, 2007 12:24 PM, Jason Grout <> wrote:\n> I'm teaching linear algebra next semester and plan to use Sage.  In\n> trying the \"obvious\" way to plot a vector:\n> \n> sage: v=vector([1,2])\n> sage: v.plot().show()\n> \n> I get what looks like a step function of the coordinates. \n\nYes, that's what it is.  This is very useful, e.g., when using\nvectors of data, computing Fourier transforms of them, etc. \nAnd it works in arbitrary dimensions.  \n\n>  Instead, I\n> have to do:\n> \n> sage: v=vector([1,2])\n> sage: arrow((0,0),v).show()\n> \n> which doesn't seem quite so natural to an undergraduate linear algebra\n> student.  First, is there an easier way to plot a vector (yes, I know I\n> don't have to define v above and could just give the coordinates to\n> arrow, but usually I'll be doing something with v as a vector)?  Is it\n> reasonable to redefine v.plot() to return the arrow for a vector with 3\n> or fewer dimensions, or is there some bigger reason to have things the\n> way they are now?\n\nI think that would be bad, because it's potentially confusing and\nunsystematic.  However, the following -- which you will like --\nwould be acceptable to me:\n\n   Redefine v.plot() so for dimensions <= 3 it does what you describe above,\ni.e., draws an arrow, but for dimensions >= 4 it gives an error message.\nThen add an option to plot called \"step\", which if set to True restores\nthe current behavior.    \n\nIn fact, this was my intention all along, and somehow I screwed up. \nThe current plot signature for vectors is:\n\n    def plot(self, xmin=0, xmax=1, eps=None, res=None,\n             connect=True, step=False, **kwds):\n\nNotice that step=False is already there!  \n\n\n\n-- William\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1575\n\n",
+    "closed_at": "2008-01-27T03:32:26Z",
     "created_at": "2007-12-20T18:47:13Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "plotting -- fix vector plotting",
+    "title": "[with patch, with positive review] plotting -- fix vector plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1575",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 ```
 On Dec 19, 2007 12:24 PM, Jason Grout <> wrote:

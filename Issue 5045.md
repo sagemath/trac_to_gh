@@ -1,16 +1,17 @@
-# Issue 5045: sage's "make check" should check that the sage build flags (in sage-flags.txt) are right
+# Issue 5045: [with patch; positive review] sage's "make check" should check that the sage build flags (in sage-flags.txt) are right
 
 archive/issues_005045.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSome people do \"make check\" but never even try to run sage.  Thus it is stupid that make check can run without ever verifying that sage-flags.txt is valid.  If it isn't, just stop the check.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5045\n\n",
+    "closed_at": "2009-01-23T08:47:53Z",
     "created_at": "2009-01-21T06:00:52Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "sage's \"make check\" should check that the sage build flags (in sage-flags.txt) are right",
+    "title": "[with patch; positive review] sage's \"make check\" should check that the sage build flags (in sage-flags.txt) are right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5045",
     "user": "https://github.com/williamstein"

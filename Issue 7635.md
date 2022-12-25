@@ -4,6 +4,7 @@ archive/issues_007635.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7635\n\n",
+    "closed_at": "2010-01-04T06:52:51Z",
     "created_at": "2009-12-09T06:14:09Z",
     "labels": [
         "component: notebook"

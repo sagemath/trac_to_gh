@@ -3,7 +3,8 @@
 archive/issues_009304.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI have a lot of pickles here (in the data directory):\n\nhttp://sage.math.washington.edu/home/wstein/db/modsym/\n\nAll the ones without \"aplist\" in their name were broken by trac #8218 which rearranged code without any backwards compatibility imports.    This should have never happened. Sigh.\n\nAnyway, my pickles are fixed by just adding back one file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9304\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pickling\n\nI have a lot of pickles here (in the data directory):\n\nhttp://sage.math.washington.edu/home/wstein/db/modsym/\n\nAll the ones without \"aplist\" in their name were broken by trac #8218 which rearranged code without any backwards compatibility imports.    This should have never happened. Sigh.\n\nAnyway, my pickles are fixed by just adding back one file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9304\n\n",
+    "closed_at": "2010-11-01T10:06:55Z",
     "created_at": "2010-06-22T06:33:00Z",
     "labels": [
         "component: pickling",
@@ -18,6 +19,8 @@ archive/issues_009304.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: pickling
 
 I have a lot of pickles here (in the data directory):
 

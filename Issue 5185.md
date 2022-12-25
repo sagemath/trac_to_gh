@@ -1,22 +1,24 @@
-# Issue 5185: [with patch, needs review] is_zero is broken for sparse vectors
+# Issue 5185: [with patch, positive review] is_zero is broken for sparse vectors
 
 archive/issues_005185.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nConsider this:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 1})\nsage: v+w\n(0, 0, 0, 0)\nsage: (v+w).is_zero()\nFalse\n```\n\nI see two things wrong with the source code:\n\n1. in modules/free_module_element.pyx, it says\n\n```\n    def __nonzero__(self):\n        \"\"\"\n        EXAMPLES:\n            sage: V = vector(ZZ, [0, 0, 0, 0])\n            sage: bool(V)\n            False\n            sage: V = vector(ZZ, [1, 2, 3, 5])\n            sage: bool(V)\n            True\n        \"\"\"\n        return self != 0\n```\nI don't understand the relevance of the doctest at all, and the actual code should probably say something like `self != self.parent()(0)`.  In fact, this is completely unnecessary, because this class inherits from ModuleElement, which has `__nonzero__` defined in precisely this way -- see structure/element.pyx.\n\n2. in structure/element.pyx, it says\n\n```\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not self\n```\nThe code `return not self` looks like a typo: it should be `return not self.__nonzero__()` -- read the docstring!\n\nThe patch deals with both of these issues by fixing the code in element.pyx and by deleting the code in free_module_element.pyx.  It also adds a doctest to element.pyx, verifying that the above vector example now works.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5185\n\n",
+    "body": "Assignee: @jhpalmieri\n\nConsider this:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 1})\nsage: v+w\n(0, 0, 0, 0)\nsage: (v+w).is_zero()\nFalse\n```\n\nI see two things wrong with the source code:\n\n1. in modules/free_module_element.pyx, it says\n\n```\n    def __nonzero__(self):\n        \"\"\"\n        EXAMPLES:\n            sage: V = vector(ZZ, [0, 0, 0, 0])\n            sage: bool(V)\n            False\n            sage: V = vector(ZZ, [1, 2, 3, 5])\n            sage: bool(V)\n            True\n        \"\"\"\n        return self != 0\n```\nI don't understand the relevance of the doctest at all, and the actual code should probably say something like `self != self.parent()(0)`.  In fact, this is completely unnecessary, because this class inherits from ModuleElement, which has `__nonzero__` defined in precisely this way -- see structure/element.pyx.\n\n2. in structure/element.pyx, it says\n\n```\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not self\n```\nThe code `return not self` looks like a typo: it should be `return not self.__nonzero__()` -- read the docstring!\n\nThe patch deals with both of these issues by fixing the code in element.pyx and by deleting the code in free_module_element.pyx.  It also adds a doctest to element.pyx, verifying that the above vector example now works.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5185\n\n",
+    "closed_at": "2009-02-11T04:06:54Z",
     "created_at": "2009-02-05T04:05:51Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] is_zero is broken for sparse vectors",
+    "title": "[with patch, positive review] is_zero is broken for sparse vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5185",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: tbd
+Assignee: @jhpalmieri
 
 Consider this:
 

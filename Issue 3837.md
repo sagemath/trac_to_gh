@@ -1,16 +1,18 @@
-# Issue 3837: Performance regression in sha.py due to #3674
+# Issue 3837: [with patch, positive review] Performance regression in sha.py due to #3674
 
 archive/issues_003837.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nThew new code uses symbolic sqrt, ceil and floor. Hence doctest timing of sha.py go from 22 to 45 seconds and the long version goes from 4 minutes to 10.5. Most of the time is spend in Maxima.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3837\n\n",
+    "closed_at": "2008-08-15T09:16:15Z",
     "created_at": "2008-08-13T17:14:08Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Performance regression in sha.py due to #3674",
+    "title": "[with patch, positive review] Performance regression in sha.py due to #3674",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3837",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

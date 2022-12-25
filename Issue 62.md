@@ -4,6 +4,7 @@ archive/issues_000062.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI would like to have a specialized sparse boolean matrix class in SAGE which would be faster than any general mod p matrix could be. Also there exist specialized algorithms for row echelon forms, inversion, and multiplication (e.g. the \"method of the four russians\") of boolean matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/62\n\n",
+    "closed_at": "2007-08-09T21:50:02Z",
     "created_at": "2006-09-14T23:35:53Z",
     "labels": [
         "component: basic arithmetic",

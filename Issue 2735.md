@@ -1,15 +1,16 @@
-# Issue 2735: [with patch; needs review] minor eclib build system improvements
+# Issue 2735: [with patch; positive review] minor eclib build system improvements
 
 archive/issues_002735.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nCC:  @JohnCremona\n\nThe eclib root makefile doesn't have a way to install the programs such as mwrank that it builds.  \n\nThere's currently a hack around this in the spkg-install script, but I'd prefer to not reproduce this random list of programs for the Debian package.\n\nSo, I've written some code to add to its root makefile that will call \"make install_progs\" in each of the subdirectories, and modified the Debian rules file to use it to install the non-test binary programs.  I notice that one of the test binary programs is installed by SAGE, so this new makefile can't yet simplify the dpkg-install by much.\n\nThe patches are attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2735\n\n",
+    "closed_at": "2008-04-01T21:10:13Z",
     "created_at": "2008-03-30T06:48:39Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] minor eclib build system improvements",
+    "title": "[with patch; positive review] minor eclib build system improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2735",
     "user": "https://github.com/timabbott"

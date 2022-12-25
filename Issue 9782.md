@@ -4,6 +4,7 @@ archive/issues_009782.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @JohnCremona\n\nAdd the relatively new additive group documentation from #6449 into the reference manual and verify that it builds properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9783\n\n",
+    "closed_at": "2010-08-31T03:20:18Z",
     "created_at": "2010-08-22T23:25:14Z",
     "labels": [
         "component: group theory",

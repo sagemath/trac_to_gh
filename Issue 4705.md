@@ -1,22 +1,22 @@
-# Issue 4705: Make in-line wysiwyg editor for text cells using TinyMCE
+# Issue 4705: [with patch and spkg, positive review] Make in-line wysiwyg editor for text cells using TinyMCE
 
 archive/issues_004705.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis ticket splits off part of #4267.\n\nIt depends on #4704\n\nIssue created by migration from https://trac.sagemath.org/ticket/4705\n\n",
+    "body": "Assignee: @jasongrout\n\nThis ticket splits off part of #4267.\n\nIt depends on #4704\n\nIssue created by migration from https://trac.sagemath.org/ticket/4705\n\n",
+    "closed_at": "2009-01-19T08:11:02Z",
     "created_at": "2008-12-05T01:13:31Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Make in-line wysiwyg editor for text cells using TinyMCE",
+    "title": "[with patch and spkg, positive review] Make in-line wysiwyg editor for text cells using TinyMCE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4705",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 This ticket splits off part of #4267.
 

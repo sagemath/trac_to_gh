@@ -1,9 +1,10 @@
-# Issue 6457: Intersection of ideals in a number field
+# Issue 6457: [with patch, positive review] Intersection of ideals in a number field
 
 archive/issues_006457.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: ideal\n\nThis is not difficult but for some reason it wasn't implemented before. Here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6457\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: ideals\n\nThis is not difficult but for some reason it wasn't implemented before. Here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6457\n\n",
+    "closed_at": "2009-07-18T20:00:51Z",
     "created_at": "2009-07-02T13:10:13Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_006457.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Intersection of ideals in a number field",
+    "title": "[with patch, positive review] Intersection of ideals in a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6457",
     "user": "https://github.com/loefflerd"
@@ -19,7 +20,7 @@ archive/issues_006457.json:
 ```
 Assignee: @williamstein
 
-Keywords: ideal
+Keywords: ideals
 
 This is not difficult but for some reason it wasn't implemented before. Here it is.
 

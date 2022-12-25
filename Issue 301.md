@@ -4,10 +4,11 @@ archive/issues_000301.json:
 ```json
 {
     "body": "Assignee: boothby\n\n* Show history without code lines.\n* Show history without SAGE command line markup\n* Show history by time\n* Show activity graphs by time\n* Show history for worksheets\n* Show history for cell in worksheet\n  * Show differences between two edits in a cell\n\nIssue created by migration from https://trac.sagemath.org/ticket/301\n\n",
+    "closed_at": "2014-11-28T20:58:39Z",
     "created_at": "2007-03-01T01:25:27Z",
     "labels": [
         "component: notebook",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Create some functions for notebook history.",

@@ -1,9 +1,10 @@
-# Issue 3834: notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!
+# Issue 3834: [with patch, positive review] notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!
 
 archive/issues_003834.json:
 ```json
 {
     "body": "Assignee: boothby\n\nnotebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!\n\nThis is a major showstopper bug.\n\nAnd it's either my fault (or Timothy Clemans), but probably me. \n\nThe solution will be to rewrite how full text search works to just look at the filesystem.\nI'm guessing right now it is suddenly doing something really stupid as a result of the \noptimizations I made recently to the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3834\n\n",
+    "closed_at": "2008-08-15T09:55:50Z",
     "created_at": "2008-08-13T06:23:47Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003834.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!",
+    "title": "[with patch, positive review] notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3834",
     "user": "https://github.com/williamstein"

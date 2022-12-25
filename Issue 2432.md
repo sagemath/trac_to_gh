@@ -1,16 +1,16 @@
-# Issue 2432: Add support for Macdonald polynomials, LLT polynomials, Jack polynomials, etc.
+# Issue 2432: [with patch, positive review] Add support for Macdonald polynomials, LLT polynomials, Jack polynomials, etc.
 
 archive/issues_002432.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2432\n\n",
+    "closed_at": "2008-03-14T19:51:59Z",
     "created_at": "2008-03-09T02:57:53Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Add support for Macdonald polynomials, LLT polynomials, Jack polynomials, etc.",
+    "title": "[with patch, positive review] Add support for Macdonald polynomials, LLT polynomials, Jack polynomials, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2432",
     "user": "https://github.com/mwhansen"

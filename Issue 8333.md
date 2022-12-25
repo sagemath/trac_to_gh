@@ -3,7 +3,8 @@
 archive/issues_008333.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nMoves finite fields to the new coercion model.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8333\n\n",
+    "body": "Assignee: @aghitza\n\nMoves finite fields to the new coercion model.  Patches have been moved to #8334, so **do not apply the patches** from this ticket.\n\nDepends on #8218, #8332, #7880 and #7883. Prerequisite for #8334, #8335, #9887.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8333\n\n",
+    "closed_at": "2010-09-28T11:12:28Z",
     "created_at": "2010-02-23T15:07:26Z",
     "labels": [
         "component: algebra"
@@ -17,7 +18,9 @@ archive/issues_008333.json:
 ```
 Assignee: @aghitza
 
-Moves finite fields to the new coercion model.
+Moves finite fields to the new coercion model.  Patches have been moved to #8334, so **do not apply the patches** from this ticket.
+
+Depends on #8218, #8332, #7880 and #7883. Prerequisite for #8334, #8335, #9887.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8333
 

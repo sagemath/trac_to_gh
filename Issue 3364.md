@@ -1,16 +1,17 @@
-# Issue 3364: randstate interaction with GAP is broken
+# Issue 3364: [with patch, positive review] randstate interaction with GAP is broken
 
 archive/issues_003364.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis is the remaining issue from #3130.  See this example:\n\n```\nsage: set_random_seed(0)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.composition_series()\n\n[Permutation Group with generators [(1,2,3)(4,5), (3,4)],\n Permutation Group with generators [(1,5)(3,4), (1,5)(2,3), (1,5,3)],\n Permutation Group with generators [()]]\nsage: set_random_seed(0)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.composition_series()\n\n[Permutation Group with generators [(1,2,3)(4,5), (3,4)],\n Permutation Group with generators [(1,5)(3,4), (1,5)(2,4), (1,4,5)],\n Permutation Group with generators [()]]\n```\n\nEven with the same random number seed, the result of .composition_series() is different.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3364\n\n",
+    "closed_at": "2008-06-09T18:47:46Z",
     "created_at": "2008-06-04T16:38:05Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "randstate interaction with GAP is broken",
+    "title": "[with patch, positive review] randstate interaction with GAP is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3364",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

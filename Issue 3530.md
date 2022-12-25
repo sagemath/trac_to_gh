@@ -1,16 +1,17 @@
-# Issue 3530: [with patch, needs review] documentation for clib, cinclude pragmas
+# Issue 3530: [with patch, with positive review] documentation for clib, cinclude pragmas
 
 archive/issues_003530.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @craigcitro wstein\n\nKeywords: cython, documentation\n\nCraig wrote off list:\n> hey martin -- william tells me you created these pragmas for .spyx\n> files. can you document them somewhere?\n\n\nThis patch documents the pragmas in the docstring. I also changed the behaviour of atlas() which now assumes that ATLAS is installed, since we ship it. mabshoff/wstein please check if my assumption is correct e.g. on OSX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3530\n\n",
+    "closed_at": "2008-07-06T18:16:10Z",
     "created_at": "2008-06-28T14:45:26Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] documentation for clib, cinclude pragmas",
+    "title": "[with patch, with positive review] documentation for clib, cinclude pragmas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3530",
     "user": "https://github.com/malb"

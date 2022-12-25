@@ -1,9 +1,10 @@
-# Issue 1799: [with patch, needs review] fix spelling errors in qqbar.py
+# Issue 1799: [with patch, with positive review] fix spelling errors in qqbar.py
 
 archive/issues_001799.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI confused \"principle\" and \"principal\".  The attached patch has the fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1799\n\n",
+    "closed_at": "2008-01-17T14:22:42Z",
     "created_at": "2008-01-17T03:44:45Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001799.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with patch, needs review] fix spelling errors in qqbar.py",
+    "title": "[with patch, with positive review] fix spelling errors in qqbar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1799",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

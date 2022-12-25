@@ -3,10 +3,10 @@
 archive/issues_008290.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nKeywords: hdf5 h5py\n\nWe would like to have hdf5 support into sage. This will include the C/C++ bindings and also should have the Java bindings. \n\nTO obtain HDF5:\nhttp://www.hdfgroup.org/HDF5/release/obtain5.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/8290\n\n",
+    "body": "Assignee: GeorgSWeber\n\nKeywords: hdf5 h5py hdf5python\n\nWe would like to have hdf5 support into sage. This will include the C/C++ bindings and also should have the Java bindings. \n\nTo obtain HDF5:\nhttp://www.hdfgroup.org/HDF5/release/obtain5.html\n\nCurrent version of spkg (install in order):\n* https://github.com/downloads/aginiewicz/spkgs/hdf5-1.8.9.spkg\n* https://github.com/downloads/aginiewicz/spkgs/h5py-2.0.1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8290\n\n",
     "created_at": "2010-02-17T01:16:46Z",
     "labels": [
-        "component: build"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Support HDF5",
@@ -17,12 +17,17 @@ archive/issues_008290.json:
 ```
 Assignee: GeorgSWeber
 
-Keywords: hdf5 h5py
+Keywords: hdf5 h5py hdf5python
 
 We would like to have hdf5 support into sage. This will include the C/C++ bindings and also should have the Java bindings. 
 
-TO obtain HDF5:
+To obtain HDF5:
 http://www.hdfgroup.org/HDF5/release/obtain5.html
+
+Current version of spkg (install in order):
+* https://github.com/downloads/aginiewicz/spkgs/hdf5-1.8.9.spkg
+* https://github.com/downloads/aginiewicz/spkgs/h5py-2.0.1.spkg
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8290
 

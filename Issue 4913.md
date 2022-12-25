@@ -1,15 +1,16 @@
-# Issue 4913: convert sage.graphs.* docstrings to Sphinx
+# Issue 4913: [with patch, positive review] convert sage.graphs.* docstrings to Sphinx
 
 archive/issues_004913.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4913\n\n",
+    "closed_at": "2009-02-24T18:04:42Z",
     "created_at": "2009-01-01T22:51:53Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.graphs.* docstrings to Sphinx",
+    "title": "[with patch, positive review] convert sage.graphs.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4913",
     "user": "https://github.com/mwhansen"

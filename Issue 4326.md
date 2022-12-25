@@ -3,7 +3,8 @@
 archive/issues_004326.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nDoc:\n- Use $F_4$ instead of F4 \n\nDynkinDiagram:\n- allow for slicing notation for column/row extraction: c[i,:]\n\nAmbientSpace:\n- fundamental coweights by appropriate scaling of the fundamental weights\n- embedding coweight lattice\n\nWeightLatticeRealization\n- scalar product with coweight lattice in finite dimension\n\nGeneric:\n- (signed) reduced word for a chamber/alcove\n\nClassical case:\n- reverse map to coroot space and coroot lattice by scalar product with the fundamental weights\n- => associated coroot\n- s_\\alpha on the (co)root and (co)weight lattice for any root \\alpha\n\nAffine case:\n- analogues whenever well defined \n- reduced words for translations elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4326\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: root systems\n\nPatch taken from Sage-Combinat: http://combinat.sagemath.org/patches/file/tip/root_systems-4326-nt.patch\n\nDepends on: #6136 #6253 #6250 #5891\n\n---\n\nDocumention:\n- quickref + links in sage.combinat.root_system\n- Long introduction in CartanTypes\n- ...\n\nCartan Types:\n- Object oriented clean up: each cartan type has its own class (in\n  .type_....py) which contains all its specific data (dynkin diagram,\n  ascii art, ...). All the dispatch logic is now concentrated in the\n  CartanType factory.\n- fixed the definition of rank for affine types (Anne Schilling)\n- systematic implementation of the classical type underlying an affine type (Anne Schilling)\n- New methods: is_untwisted_affine, special_node, a, acheck,\n  translation_factors, symmetrizer, row_annihilator col_annihilator (partly Nicolas Borie)\n- Relabelled Cartan types (with composition, classical, special_node, dual)\n- Use A~... B~* BC~ convention for affine types;\n  Kac' convention implemented by renaming them (see CartanType?)\n- F3 is nonexistent so use F4 in one test (Dan Bump)\n- ascii art for reducible (Dan Bump), relabelled, and dual Cartan types\n\nRoot systems:\n- Preliminary plots (Nicolas Borie)\n- New methods for affine root systems (mostly Nicolas Borie):\n  null_(co)root, level\n- RootSystem([\"A\",3,1]) returns None rather than the ambient space\n  for type A_3 (which was wrong!)\n- positive and negative roots for all (finite) root lattice realizations\n\nCoxeter groups:\n- New categories: (Finite) CoxeterGroups, (Finite, Affine) WeylGroups\n  standardized methods: first_descent, has_descent, descents,\n  reduced_word, length, from_reduced_word, with systematic associated\n  test (test_has_descent, ...) simple_reflections,\n  simple_projections, coset_representatives, binary_factorisations, ...\n  (many of them were extracted and generalized from WeylGroup)\n- lower and upper cover for Bruhat order (Steve Pon)\n- affine stanley symmetric functions for types A, A affine\n- Documentation (with help from Qiang Wang, Nicolas Borie)\n\nThe following are not yet addressed, and will be bumped to a subsequent patch:\n\nDynkinDiagram:\n- allow for slicing notation for column/row extraction: c[i,:]\n\nAmbientSpace:\n- fundamental coweights by appropriate scaling of the fundamental weights\n- embedding coweight lattice\n\nWeightLatticeRealization\n- scalar product with coweight lattice in finite dimension\n\nClassical case:\n- reverse map to coroot space and coroot lattice by scalar product with the fundamental weights\n- associated coroot in the root and weight space\n- s_\\alpha on the (co)root and (co)weight lattice for any root \\alpha\n- highest_coroot returning self.coroot_lattice().highest_root()\nAffine case:\n- affine ambient space\n- Fix:\n  {{{\n    sage: R = RootSystem([\"A\",2,1]).weight_lattice()\n    sage: R.rho_classical()\n    ...\n    TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Weight lattice of the Root system of type ['A', 2, 1]'\n   }}}\n\nCategorification of RootLatticeRealization / ...\nNew category CoxeterGroupModules\nSupport for non crystalographic root systems\n\nIssue created by migration from https://trac.sagemath.org/ticket/4326\n\n",
+    "closed_at": "2009-11-19T17:00:28Z",
     "created_at": "2008-10-20T08:17:24Z",
     "labels": [
         "component: combinatorics"
@@ -19,8 +20,54 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-Doc:
-- Use $F_4$ instead of F4 
+Keywords: root systems
+
+Patch taken from Sage-Combinat: http://combinat.sagemath.org/patches/file/tip/root_systems-4326-nt.patch
+
+Depends on: #6136 #6253 #6250 #5891
+
+---
+
+Documention:
+- quickref + links in sage.combinat.root_system
+- Long introduction in CartanTypes
+- ...
+
+Cartan Types:
+- Object oriented clean up: each cartan type has its own class (in
+  .type_....py) which contains all its specific data (dynkin diagram,
+  ascii art, ...). All the dispatch logic is now concentrated in the
+  CartanType factory.
+- fixed the definition of rank for affine types (Anne Schilling)
+- systematic implementation of the classical type underlying an affine type (Anne Schilling)
+- New methods: is_untwisted_affine, special_node, a, acheck,
+  translation_factors, symmetrizer, row_annihilator col_annihilator (partly Nicolas Borie)
+- Relabelled Cartan types (with composition, classical, special_node, dual)
+- Use A~... B~* BC~ convention for affine types;
+  Kac' convention implemented by renaming them (see CartanType?)
+- F3 is nonexistent so use F4 in one test (Dan Bump)
+- ascii art for reducible (Dan Bump), relabelled, and dual Cartan types
+
+Root systems:
+- Preliminary plots (Nicolas Borie)
+- New methods for affine root systems (mostly Nicolas Borie):
+  null_(co)root, level
+- RootSystem(["A",3,1]) returns None rather than the ambient space
+  for type A_3 (which was wrong!)
+- positive and negative roots for all (finite) root lattice realizations
+
+Coxeter groups:
+- New categories: (Finite) CoxeterGroups, (Finite, Affine) WeylGroups
+  standardized methods: first_descent, has_descent, descents,
+  reduced_word, length, from_reduced_word, with systematic associated
+  test (test_has_descent, ...) simple_reflections,
+  simple_projections, coset_representatives, binary_factorisations, ...
+  (many of them were extracted and generalized from WeylGroup)
+- lower and upper cover for Bruhat order (Steve Pon)
+- affine stanley symmetric functions for types A, A affine
+- Documentation (with help from Qiang Wang, Nicolas Borie)
+
+The following are not yet addressed, and will be bumped to a subsequent patch:
 
 DynkinDiagram:
 - allow for slicing notation for column/row extraction: c[i,:]
@@ -32,17 +79,24 @@ AmbientSpace:
 WeightLatticeRealization
 - scalar product with coweight lattice in finite dimension
 
-Generic:
-- (signed) reduced word for a chamber/alcove
-
 Classical case:
 - reverse map to coroot space and coroot lattice by scalar product with the fundamental weights
-- => associated coroot
+- associated coroot in the root and weight space
 - s_\alpha on the (co)root and (co)weight lattice for any root \alpha
-
+- highest_coroot returning self.coroot_lattice().highest_root()
 Affine case:
-- analogues whenever well defined 
-- reduced words for translations elements.
+- affine ambient space
+- Fix:
+  {{{
+    sage: R = RootSystem(["A",2,1]).weight_lattice()
+    sage: R.rho_classical()
+    ...
+    TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Weight lattice of the Root system of type ['A', 2, 1]'
+   }}}
+
+Categorification of RootLatticeRealization / ...
+New category CoxeterGroupModules
+Support for non crystalographic root systems
 
 Issue created by migration from https://trac.sagemath.org/ticket/4326
 

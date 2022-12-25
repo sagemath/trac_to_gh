@@ -1,15 +1,16 @@
-# Issue 3449: notebook -- implement inline error reporting for login
+# Issue 3449: [with patch, positive review] notebook -- implement inline error reporting for login
 
 archive/issues_003449.json:
 ```json
 {
     "body": "Assignee: timothyclemans\n\nCurrently when a user has entered incorrect login information she is sent to a page that states the error.\n\nThe error should be reported under the input box related to the error. Also if the user gave an incorrect password than the username should be filled in and the error should be given inline.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3449\n\n",
+    "closed_at": "2008-06-25T04:12:41Z",
     "created_at": "2008-06-17T20:23:33Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- implement inline error reporting for login",
+    "title": "[with patch, positive review] notebook -- implement inline error reporting for login",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3449",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

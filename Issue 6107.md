@@ -1,22 +1,23 @@
-# Issue 6107: [with patch, needs review] misc. fixes for symbolics for 4.0.rc0
+# Issue 6107: [with patch, positive review] misc. fixes for symbolics for 4.0.rc0
 
 archive/issues_006107.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6107\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6107\n\n",
+    "closed_at": "2009-05-21T13:40:49Z",
     "created_at": "2009-05-21T05:53:20Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] misc. fixes for symbolics for 4.0.rc0",
+    "title": "[with patch, positive review] misc. fixes for symbolics for 4.0.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6107",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 
 

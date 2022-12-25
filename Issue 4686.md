@@ -1,16 +1,17 @@
-# Issue 4686: Documentation for eta products
+# Issue 4686: [with patch, positive review] Documentation for eta products
 
 archive/issues_004686.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nWhen I wrote the eta products code I didn't know how to add it to the reference manual. Here is the requisite patch, together with a patch to the code itself correcting LaTeX errors in the docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4686\n\n",
+    "closed_at": "2008-12-04T15:37:16Z",
     "created_at": "2008-12-03T10:20:01Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Documentation for eta products",
+    "title": "[with patch, positive review] Documentation for eta products",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4686",
     "user": "https://github.com/loefflerd"

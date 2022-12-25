@@ -4,6 +4,7 @@ archive/issues_009459.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nRight now, there is a function radical() as member of IntegerRing_class.  But there is no generic radical() function:\n\n```\nsage: radical(100)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/usr/local/src/sage-4.4.4/devel/sage-test/<ipython console> in <module>()\n\nNameError: name 'radical' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9459\n\n",
+    "closed_at": "2011-01-12T06:32:30Z",
     "created_at": "2010-07-08T21:43:40Z",
     "labels": [
         "component: number theory"

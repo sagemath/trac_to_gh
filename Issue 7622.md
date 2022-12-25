@@ -4,6 +4,7 @@ archive/issues_007622.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @gvol @mwhansen @williamstein\n\nFrom #5261: \n\n```\nremove the extra copyright work in credits as well as give credit to \"William Stein and the Sage Development Team\"\n```\n\n```\nSomeone with a better understanding of the copyright situation should change data/extcode/sage/ext/mac-app/Sage.app/Contents/Info.plist (it's an xml file) in two places.\n```\nThis shouldn't be hard to fix.  Use hg_sage.extcode!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7622\n\n",
+    "closed_at": "2009-12-15T16:08:27Z",
     "created_at": "2009-12-08T15:27:34Z",
     "labels": [
         "component: documentation",

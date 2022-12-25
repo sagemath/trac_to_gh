@@ -1,16 +1,17 @@
-# Issue 4996: OSX64: add proper libcsage build support
+# Issue 4996: [with patch, positive review] OSX64: add proper libcsage build support
 
 archive/issues_004996.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPatch coming up: We need to add \n\n```\n## We want the debug and optimization flags, since debug symbols are so useful, etc.\nenv.Append( CFLAGS=\"-O2 -g -m64\" )\nenv.Append( CXXFLAGS=\"-O2 -g -m64\" )\nenv.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n```\nin case we are building in 64 bit mode on OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4996\n\n",
+    "closed_at": "2009-01-23T00:30:47Z",
     "created_at": "2009-01-17T15:37:45Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "OSX64: add proper libcsage build support",
+    "title": "[with patch, positive review] OSX64: add proper libcsage build support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4996",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

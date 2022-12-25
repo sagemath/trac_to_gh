@@ -3,10 +3,11 @@
 archive/issues_007085.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mhampton\n\n```\n> Ok, I am completely baffled by the following situation:\n>\n> sage: A.<z>=LaurentSeriesRing(QQ)\n> sage: B.<w>=LaurentSeriesRing(A)\n> sage: z/w\n>  1\n> Maybe you will agree this is a bug?\n\nThat's definitely a coercion bug.   You can workaround it like this:\n\n\nsage: sage: A.<z>=LaurentSeriesRing(QQ)\nsage: sage: B.<w>=LaurentSeriesRing(A)\nsage: z/w\n1\nsage: (1/w) * z\nz*w^-1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7085\n\n",
+    "body": "Assignee: somebody\n\nCC:  mhampton\n\nKeywords: laurent series\n\n```\n> Ok, I am completely baffled by the following situation:\n>\n> sage: A.<z>=LaurentSeriesRing(QQ)\n> sage: B.<w>=LaurentSeriesRing(A)\n> sage: z/w\n>  1\n> Maybe you will agree this is a bug?\n\nThat's definitely a coercion bug.   You can workaround it like this:\n\n\nsage: sage: A.<z>=LaurentSeriesRing(QQ)\nsage: sage: B.<w>=LaurentSeriesRing(A)\nsage: z/w\n1\nsage: (1/w) * z\nz*w^-1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7085\n\n",
+    "closed_at": "2014-05-06T22:02:51Z",
     "created_at": "2009-09-30T23:10:18Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
@@ -19,6 +20,8 @@ archive/issues_007085.json:
 Assignee: somebody
 
 CC:  mhampton
+
+Keywords: laurent series
 
 ```
 > Ok, I am completely baffled by the following situation:

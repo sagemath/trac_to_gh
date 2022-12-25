@@ -4,6 +4,7 @@ archive/issues_008092.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nFrom the main notebook help page:\n\n   The file `$HOME/.sage/init.sage` is attached on startup if it exists.\n\nBut the file is not `attach`ed --- try evaluating `attached_files()`.  This is a follow-up to #7514.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/856f02edb25e8781#), [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/320d494175d46012).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8092\n\n",
+    "closed_at": "2010-05-04T04:44:29Z",
     "created_at": "2010-01-27T10:09:52Z",
     "labels": [
         "component: notebook",

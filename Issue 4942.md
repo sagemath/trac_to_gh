@@ -3,11 +3,12 @@
 archive/issues_004942.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
+    "closed_at": "2018-09-19T08:09:26Z",
     "created_at": "2009-01-05T20:32:08Z",
     "labels": [
         "component: numerical",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
@@ -17,7 +18,7 @@ archive/issues_004942.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: jkantor
+Assignee: @mwhansen
 
 CC:  @kcrisman
 

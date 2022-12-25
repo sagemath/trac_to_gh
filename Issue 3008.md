@@ -1,9 +1,10 @@
-# Issue 3008: first cell in notebook is undeletable
+# Issue 3008: [with patch; positive review] first cell in notebook is undeletable
 
 archive/issues_003008.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe top cell in a notebook worksheet cannot be deleted by backspace.  A workaround is ctrl-backspace from the next cell, but that is annoyingly indirect.  I have tried this on both Safari and Firefox on OS X, but not other platforms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3008\n\n",
+    "closed_at": "2008-05-11T12:21:47Z",
     "created_at": "2008-04-23T18:44:30Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003008.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "first cell in notebook is undeletable",
+    "title": "[with patch; positive review] first cell in notebook is undeletable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3008",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

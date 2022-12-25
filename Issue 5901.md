@@ -1,9 +1,10 @@
-# Issue 5901: [with patch, needs review] Avoid permission denied error message when testing with non-writeable sage install
+# Issue 5901: Avoid permission denied error message when testing with non-writeable sage install
 
 archive/issues_005901.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThis is a patch to fix the fact that running sage tests prints a permission denied error writing to test.log when you don't have write access to the Sage installation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5901\n\n",
+    "closed_at": "2010-06-25T15:42:30Z",
     "created_at": "2009-04-26T05:47:24Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_005901.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "[with patch, needs review] Avoid permission denied error message when testing with non-writeable sage install",
+    "title": "Avoid permission denied error message when testing with non-writeable sage install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5901",
     "user": "https://github.com/timabbott"

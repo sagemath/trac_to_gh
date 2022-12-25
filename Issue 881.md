@@ -4,10 +4,10 @@ archive/issues_000881.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI'm seeing this on my laptop version right now.  This is a blocker for the next release.  It should be easy to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/881\n\n",
+    "closed_at": "2007-10-20T20:08:34Z",
     "created_at": "2007-10-13T19:11:55Z",
     "labels": [
         "component: notebook",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",

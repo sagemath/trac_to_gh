@@ -1,9 +1,10 @@
-# Issue 8219: show(...) is now broken
+# Issue 8219: regression in show(...)
 
 archive/issues_008219.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8219\n\n",
+    "body": "Assignee: tbd\n\nThe problem was reported at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_frm/thread/5982cd0a443d84f1).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8219\n\n",
+    "closed_at": "2010-02-11T14:23:33Z",
     "created_at": "2010-02-09T04:45:20Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_008219.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "show(...) is now broken",
+    "title": "regression in show(...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8219",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,7 @@ archive/issues_008219.json:
 ```
 Assignee: tbd
 
-
+The problem was reported at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_frm/thread/5982cd0a443d84f1).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8219
 

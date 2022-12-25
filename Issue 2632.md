@@ -4,11 +4,11 @@ archive/issues_002632.json:
 ```json
 {
     "body": "Assignee: boothby\n\na) If you don't have the browser window set quite wide, the buttons \"Use\", \"Edit\", \"Text\" end up stacked on top of each other. In contrast, Google Docs responds to window resizing much more gracefully, including allowing buttons to slide off screen if they just won't reasonably fit. \n\nb) There is no way to resize the text in the input boxes without also  resizing the interface buttons, which quickly makes them unreadable if  you size down the text by much.  Similarly, making the text larger \n\nThese especially impede use on smaller screens, e.g. laptops.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2632\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2008-03-21T16:10:37Z",
     "labels": [
         "component: notebook",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Inflexibility of browser window size and resolution",

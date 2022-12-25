@@ -1,15 +1,16 @@
-# Issue 3660: add documentation to the reference manual for crystals and Weyl groups / characters
+# Issue 3660: [with patch, positive review] add documentation to the reference manual for crystals and root systems
 
 archive/issues_003660.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3660\n\n",
+    "closed_at": "2008-07-16T22:12:15Z",
     "created_at": "2008-07-15T23:57:21Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "add documentation to the reference manual for crystals and Weyl groups / characters",
+    "title": "[with patch, positive review] add documentation to the reference manual for crystals and root systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3660",
     "user": "https://github.com/mwhansen"

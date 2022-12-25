@@ -7,8 +7,7 @@ archive/issues_002266.json:
     "created_at": "2008-02-22T21:27:54Z",
     "labels": [
         "component: graph theory",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "give shortest_paths an optional endpoint",

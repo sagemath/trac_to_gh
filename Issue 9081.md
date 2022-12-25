@@ -4,6 +4,7 @@ archive/issues_009081.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu @williamstein\n\nDiscussions at Sage Days 21 suggest that the two halves of the walkthrough (clones, then queues) could be delineated more clearly.  This transistion text does that, and suggests starting with clones and moving to queues when clones start to feel cumbersome.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9081\n\n",
+    "closed_at": "2010-06-06T00:47:10Z",
     "created_at": "2010-05-29T06:34:06Z",
     "labels": [
         "component: documentation",

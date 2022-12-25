@@ -1,9 +1,10 @@
-# Issue 852: Singular's Factorisation crashes under OSX
+# Issue 852: [with patches] Singular's Factorisation crashes under OSX
 
 archive/issues_000852.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince we pass `--with-NTL` to the Singular build scripts and work around/fix the resulting build problems (see #842) Singular crashes when attempting to factor a simple multivariate polynomial.\n\n```\n> ring r= 0,(x,y),dp;\n> poly f = x + y*y;\n> factorize(f);\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x0000001b\n0x0021c0e7 in fREe ()\n```\n\nThe backtrace is:\n\n```\n#0  0x0021c0e7 in fREe ()\n#1  0x000a95f2 in omFreeSizeToSystem ()\n#2  0x0009f815 in operator delete[] ()\n#3  0x0055ae48 in NTL::SetSeed ()\n#4  0x0055afbb in NTL::ran_bytes ()\n#5  0x0055b06c in NTL::RandomBits ()\n#6  0x0055b4a0 in NTL::RandomBnd ()\n#7  0x0055b69f in NTL::RandomBnd ()\n#8  0x00507595 in NTL::NextFFTPrime ()\n#9  0x00507796 in NTL::UseFFTPrime ()\n#10 0x005b4a88 in NTL::zz_pInfoT::zz_pInfoT ()\n#11 0x005b4c55 in NTL::zz_pContext::zz_pContext ()\n#12 0x005b4ca8 in NTL::zz_p::FFTInit ()\n#13 0x005693f5 in NTL::GCD ()\n#14 0x005704c0 in NTL::SquareFreeDecomp ()\n#15 0x00579a18 in NTL::factor ()\n#16 0x0021adb2 in factorize ()\n#17 0x0024df2f in ZFactorizeMulti ()\n#18 0x0024f19f in ZFactorizeMultivariate ()\n#19 0x0021aadd in factorize ()\n#20 0x001358e3 in singclap_factorize ()\n#21 0x000122fd in jjFAC_P ()\n#22 0x0000cff9 in iiExprArith1 ()\n#23 0x0002eca5 in yyparse ()\n#24 0x0000292f in main ()\n```\n\nHowever, this backtrace was different before I rebuilt the NTL library. I assume some linkage is wrong but I have no idea how to figure this one out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/852\n\n",
+    "closed_at": "2007-10-13T02:14:49Z",
     "created_at": "2007-10-11T21:52:07Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_000852.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "Singular's Factorisation crashes under OSX",
+    "title": "[with patches] Singular's Factorisation crashes under OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/852",
     "user": "https://github.com/malb"

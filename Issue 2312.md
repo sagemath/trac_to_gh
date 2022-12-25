@@ -1,16 +1,16 @@
-# Issue 2312: add support for braclets, necklaces, and Lyndon words, of a fixed length
+# Issue 2312: Add support for bracelets, necklaces, and Lyndon words, of a fixed length
 
 archive/issues_002312.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2312\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nAdd support for bracelets, necklaces, and Lyndon words, of a fixed length.\n\nWikipedia:\n- [Necklace](https://en.wikipedia.org/wiki/Necklace_(combinatorics))\n- [Lyndon word](https://en.wikipedia.org/wiki/Lyndon_word)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2312\n\n",
     "created_at": "2008-02-26T05:02:36Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "add support for braclets, necklaces, and Lyndon words, of a fixed length",
+    "title": "Add support for bracelets, necklaces, and Lyndon words, of a fixed length",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2312",
     "user": "https://github.com/mwhansen"
@@ -20,6 +20,11 @@ Assignee: @mwhansen
 
 CC:  sage-combinat
 
+Add support for bracelets, necklaces, and Lyndon words, of a fixed length.
+
+Wikipedia:
+- [Necklace](https://en.wikipedia.org/wiki/Necklace_(combinatorics))
+- [Lyndon word](https://en.wikipedia.org/wiki/Lyndon_word)
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2312

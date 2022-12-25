@@ -1,22 +1,25 @@
-# Issue 4527: Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'
+# Issue 4527: [with patch, with positive review] Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'
 
 archive/issues_004527.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHi, \n\nthe following code raises an exception that crashes sage on my computer:\n\n```\ncond=206\nJ=J0(206)\nD=J.new_subvariety().decomposition()\nJp=J.old_subvariety(2)\nJpc=Jp.cuspidal_subgroup()\nAc=D[3].cuspidal_subgroup()\nAc.intersection(Jpc)\n```\n\nThe error I get (running it through the notebook) is\n\n```\n          \t\n\nException  in\n'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'\nignored\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nThis seems very sensitive to the set of inputs, but it is consistent on my computer.\nI'm running sage 3.1.4 (release date 2008-10-20), on mandriva, compiled with gcc 4.2.2 20071128.\n\nSoroosh\n\nIssue created by migration from https://trac.sagemath.org/ticket/4527\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: segfault\n\nHi, \n\nthe following code raises an exception that crashes sage on my computer:\n\n```\ncond=206\nJ=J0(206)\nD=J.new_subvariety().decomposition()\nJp=J.old_subvariety(2)\nJpc=Jp.cuspidal_subgroup()\nAc=D[3].cuspidal_subgroup()\nAc.intersection(Jpc)\n```\n\nThe error I get (running it through the notebook) is\n\n```\nException  in\n'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'\nignored\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nThis seems very sensitive to the set of inputs, but it is consistent on my computer.\nI'm running sage 3.1.4 (release date 2008-10-20), on mandriva, compiled with gcc 4.2.2 20071128.\n\nSoroosh\n\nIssue created by migration from https://trac.sagemath.org/ticket/4527\n\n",
+    "closed_at": "2008-11-15T09:52:46Z",
     "created_at": "2008-11-14T20:13:29Z",
     "labels": [
-        "component: algebra",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'",
+    "title": "[with patch, with positive review] Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4527",
     "user": "https://github.com/syazdani77"
 }
 ```
-Assignee: tbd
+Assignee: @craigcitro
+
+Keywords: segfault
 
 Hi, 
 
@@ -35,8 +38,6 @@ Ac.intersection(Jpc)
 The error I get (running it through the notebook) is
 
 ```
-          	
-
 Exception  in
 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'
 ignored

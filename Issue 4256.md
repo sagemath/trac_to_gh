@@ -1,16 +1,17 @@
-# Issue 4256: [with patch, needs review] polyhedral improvements: Schlegel diagrams, standard 4d polytopes
+# Issue 4256: [with patch, positive review] polyhedral improvements: Schlegel diagrams, standard polytopes, multiplication, polars
 
 archive/issues_004256.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  anakha\n\nKeywords: polytopes, geometry\n\nThis patch adds Schlegel diagrams for 4d polytopes (via the render_wireframe function), as well as built-in definitions of the 24-cell and 600-cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4256\n\n",
+    "closed_at": "2008-10-26T01:35:14Z",
     "created_at": "2008-10-09T18:49:18Z",
     "labels": [
         "component: geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] polyhedral improvements: Schlegel diagrams, standard 4d polytopes",
+    "title": "[with patch, positive review] polyhedral improvements: Schlegel diagrams, standard polytopes, multiplication, polars",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4256",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

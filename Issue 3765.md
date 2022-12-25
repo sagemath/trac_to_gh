@@ -1,15 +1,16 @@
-# Issue 3765: make it so "sage -br" does the cythonization in parallel using pyprocessing
+# Issue 3765: [with patch; positive review] make it so "sage -br" does the cythonization in parallel using pyprocessing
 
 archive/issues_003765.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis would be just a few lines of code to implement and would make doing \"sage -br\" much faster. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3765\n\n",
+    "closed_at": "2008-10-27T02:11:11Z",
     "created_at": "2008-08-03T18:26:24Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "make it so \"sage -br\" does the cythonization in parallel using pyprocessing",
+    "title": "[with patch; positive review] make it so \"sage -br\" does the cythonization in parallel using pyprocessing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3765",
     "user": "https://github.com/williamstein"

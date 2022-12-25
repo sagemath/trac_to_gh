@@ -1,16 +1,17 @@
-# Issue 2967: Debian package lcalc spkg fixes
+# Issue 2967: [with patch; positive review] Debian package lcalc spkg fixes
 
 archive/issues_002967.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch that fixes the Debian packaging of lcalc to work with SAGE 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2967\n\n",
+    "closed_at": "2008-04-20T04:35:25Z",
     "created_at": "2008-04-20T04:06:51Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Debian package lcalc spkg fixes",
+    "title": "[with patch; positive review] Debian package lcalc spkg fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2967",
     "user": "https://github.com/timabbott"

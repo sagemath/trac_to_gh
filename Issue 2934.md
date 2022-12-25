@@ -1,9 +1,10 @@
-# Issue 2934: doctesting files outside of sage repo is completely broken!!
+# Issue 2934: [with patch; positive review] doctesting files outside of sage repo is completely broken!!
 
 archive/issues_002934.json:
 ```json
 {
-    "body": "Assignee: failure\n\n```\n\n\nOn Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <jbandlow@gmail.com> wrote:\n> \n>  Hello all,\n>  \n>  Regarding doctesting, I'd like to work with the following setup:\n>  1. Create a file work.sage (or work.py) somewhere in my home directory.\n>  2. Start a notebook session, and attach work.sage.\n>  3. Use the notebook for generating and staring at data, while using a\n>  text editor to modify my code.\n>  4. Periodically run: $ sage -t work.sage      to make sure that I\n>  haven't completely fouled things up.\n>  \n>  Step 4 seems not to work (on Sage 2.11 on Ubuntu).  For example,\n>  I created the following file, foo.py, in my ~/.sage directory:\n>  \n>  def foo(x):\n>     r\"\"\"\n>     Shows how doctests don't work.\n>  \n>     EXAMPLES:\n>         sage: 2+2\n>         5\n>         sage: foo(3)\n>         4\n>     \"\"\"\n>     print(x)\n>  \n>  And then\n>  $ sage -t --verbose ~/.sage/foo.py\n>  \n>  ----------------------------------------------------------------------\n>  All tests passed!\n>  Total time for all tests: 0.0 seconds\n>  \n>  $ sage -coverage ~/.sage/foo.py\n>  ----------------------------------------------------------------------\n>  foo.py\n>  SCORE foo.py: 100% (1 of 1)\n>  ----------------------------------------------------------------------\n>  \n>  \n>  Can someone explain to me what's going on here?\n\nSomebody (I don't want to name names; maybe it is me?) has completely\nbroken doctesting of user files, evidently.   There has\nbeen a lot of changes made to the doctesting system\nrecently, and I don't know which thing caused the\nabove very serious problems.    Even doctesting a pure\n.py file is broken!\n\nteragon:.sage was$ more foo.py \ndef foo(x):\n   r\"\"\"\n   Shows how doctests don't work.\n\n   EXAMPLES:\n       sage: 2+2\n       5\n       sage: foo(3)\n       4\n   \"\"\"\n   print(x)\n\nteragon:.sage was$ sage -t foo.py\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2934\n\n",
+    "body": "Assignee: failure\n\n```\n\n\nOn Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <> wrote:\n> \n>  Hello all,\n>  \n>  Regarding doctesting, I'd like to work with the following setup:\n>  1. Create a file work.sage (or work.py) somewhere in my home directory.\n>  2. Start a notebook session, and attach work.sage.\n>  3. Use the notebook for generating and staring at data, while using a\n>  text editor to modify my code.\n>  4. Periodically run: $ sage -t work.sage      to make sure that I\n>  haven't completely fouled things up.\n>  \n>  Step 4 seems not to work (on Sage 2.11 on Ubuntu).  For example,\n>  I created the following file, foo.py, in my ~/.sage directory:\n>  \n>  def foo(x):\n>     r\"\"\"\n>     Shows how doctests don't work.\n>  \n>     EXAMPLES:\n>         sage: 2+2\n>         5\n>         sage: foo(3)\n>         4\n>     \"\"\"\n>     print(x)\n>  \n>  And then\n>  $ sage -t --verbose ~/.sage/foo.py\n>  \n>  ----------------------------------------------------------------------\n>  All tests passed!\n>  Total time for all tests: 0.0 seconds\n>  \n>  $ sage -coverage ~/.sage/foo.py\n>  ----------------------------------------------------------------------\n>  foo.py\n>  SCORE foo.py: 100% (1 of 1)\n>  ----------------------------------------------------------------------\n>  \n>  \n>  Can someone explain to me what's going on here?\n\nSomebody (I don't want to name names; maybe it is me?) has completely\nbroken doctesting of user files, evidently.   There has\nbeen a lot of changes made to the doctesting system\nrecently, and I don't know which thing caused the\nabove very serious problems.    Even doctesting a pure\n.py file is broken!\n\nteragon:.sage was$ more foo.py \ndef foo(x):\n   r\"\"\"\n   Shows how doctests don't work.\n\n   EXAMPLES:\n       sage: 2+2\n       5\n       sage: foo(3)\n       4\n   \"\"\"\n   print(x)\n\nteragon:.sage was$ sage -t foo.py\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2934\n\n",
+    "closed_at": "2008-04-21T02:51:15Z",
     "created_at": "2008-04-15T16:49:11Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002934.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "doctesting files outside of sage repo is completely broken!!",
+    "title": "[with patch; positive review] doctesting files outside of sage repo is completely broken!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2934",
     "user": "https://github.com/williamstein"
@@ -22,7 +23,7 @@ Assignee: failure
 ```
 
 
-On Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <jbandlow@gmail.com> wrote:
+On Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <> wrote:
 > 
 >  Hello all,
 >  

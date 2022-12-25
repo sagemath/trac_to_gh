@@ -4,6 +4,7 @@ archive/issues_001282.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nThe thing to do is to change the sage build process so that building\nFLINT depends on\nhaving already built Python.    Then python-2.5.1 -- built by sage -- will get\nused if you put\n  #!/usr/bin/env python\nat the top of a script or whatever.  I.e., it will be in your path.\n\nI hadn't realized that building flint required Python, so we didn't\nput that as a dependency\nin the overall Sage makefile.\n\nwilliam\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1282\n\n",
+    "closed_at": "2007-12-04T06:48:25Z",
     "created_at": "2007-11-26T20:25:01Z",
     "labels": [
         "component: packages: standard",

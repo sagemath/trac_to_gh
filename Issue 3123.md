@@ -4,10 +4,10 @@ archive/issues_003123.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ngcc version 4.1.0 (SUSE Linux) from OpenSuSE 10.1 is know broken and will fail to file Sage with\n\n```\nsage/modules/real_double_vector.c: In function \u2018__pyx_pf_4sage_7modules_18real_double_vector_28RealDoubleVectorSpaceElement_\n__init__\u2019:\nsage/modules/real_double_vector.c:2012: internal compiler error: in merge_alias_info, at tree-ssa-copy.c:235\nPlease submit a full bug report,\nwith preprocessed source if appropriate.\nSee <URL:http://www.suse.de/feedback> for instructions.\nerror: command 'gcc' failed with exit status 1\n```\nBlacklist it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3123\n\n",
+    "closed_at": "2013-05-21T07:23:36Z",
     "created_at": "2008-05-07T14:27:31Z",
     "labels": [
         "component: build",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -1,16 +1,17 @@
-# Issue 4276: [with patch, needs review] move number fields to new coercion, implement embeddings
+# Issue 4276: [with patch, positive review] move number fields to new coercion, implement embeddings
 
 archive/issues_004276.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @craigcitro @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4276\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @craigcitro @williamstein\n\nSee summary.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4276\n\n",
+    "closed_at": "2008-12-14T16:58:12Z",
     "created_at": "2008-10-13T19:27:47Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] move number fields to new coercion, implement embeddings",
+    "title": "[with patch, positive review] move number fields to new coercion, implement embeddings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4276",
     "user": "https://github.com/robertwb"
@@ -19,6 +20,8 @@ archive/issues_004276.json:
 Assignee: @robertwb
 
 CC:  @craigcitro @williamstein
+
+See summary.
 
 
 

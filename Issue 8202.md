@@ -4,6 +4,7 @@ archive/issues_008202.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nWe can do this by setting `safeHBoxes` to 0 in `sagenb/data/sage/js/jsmath.js`.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/b56eb3ec554642ce).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8202\n\n",
+    "closed_at": "2010-02-10T18:31:37Z",
     "created_at": "2010-02-06T19:58:18Z",
     "labels": [
         "component: notebook",

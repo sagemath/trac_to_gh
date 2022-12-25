@@ -1,16 +1,17 @@
-# Issue 1699: [with spkg] Fix matplotlib compilation on Linux/Itanium
+# Issue 1699: [with spkg, with positive review] Fix matplotlib compilation on Linux/Itanium
 
 archive/issues_001699.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWilliam did fix the build of matplotlib on Linux/Itanium. The spkg can be found at:\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.9.3/rc0/matplotlib-0.91.1.p1.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1699\n\n",
+    "closed_at": "2008-01-06T13:13:57Z",
     "created_at": "2008-01-06T13:12:51Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.3",
-    "title": "[with spkg] Fix matplotlib compilation on Linux/Itanium",
+    "title": "[with spkg, with positive review] Fix matplotlib compilation on Linux/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1699",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

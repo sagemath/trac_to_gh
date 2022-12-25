@@ -3,7 +3,8 @@
 archive/issues_008150.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nvarious fixes needed to move to GAP 4.4.12, mostly concerning\nTESTS:: and EXAMPLES::\nDue to apparent changes in GAP internals, some things like the order\nof irreducible characters of a group can change from a previous\nrelease. I made comparisons in docstrings as foolproof as possible.\n\nThese changes actually would also work for 4.4.10 (not tested, but pretty sure)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8150\n\n",
+    "body": "Assignee: joyner\n\nvarious fixes needed to move to GAP 4.4.12, mostly concerning\nTESTS:: and EXAMPLES::\nDue to apparent changes in GAP internals, some things like the order\nof irreducible characters of a group can change from a previous\nrelease. I made comparisons in docstrings as foolproof as possible.\n\nThese changes break gap-4.4.10.spkg.\n\nDependencies: #8076.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8150\n\n",
+    "closed_at": "2010-02-17T20:53:36Z",
     "created_at": "2010-02-02T09:08:14Z",
     "labels": [
         "component: group theory",
@@ -24,7 +25,9 @@ Due to apparent changes in GAP internals, some things like the order
 of irreducible characters of a group can change from a previous
 release. I made comparisons in docstrings as foolproof as possible.
 
-These changes actually would also work for 4.4.10 (not tested, but pretty sure)
+These changes break gap-4.4.10.spkg.
+
+Dependencies: #8076.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8150
 

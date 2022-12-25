@@ -1,26 +1,26 @@
-# Issue 7681: R pexpect interface seems to keep data around
+# Issue 7681: R pexpect interface doesn't handle errors well
 
 archive/issues_007681.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nKeywords: pexpect, interface, R\n\nFor instance:\n\n```\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 2\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\nError: object 'sage49' not found\n```\nSomehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden \n\n```\n[1] 1 2 3 4 3\n```\nshowed up - as the answer to something else!  Where it had been hiding, I can only guess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7681\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @haraldschilly\n\nKeywords: pexpect, interface, R, r-project\n\nFor instance:\n\n```\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 2\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\nError: object 'sage49' not found\n```\nSomehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden \n\n```\n[1] 1 2 3 4 3\n```\nshowed up - as the answer to something else!  Where it had been hiding, I can only guess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7681\n\n",
     "created_at": "2009-12-14T19:43:23Z",
     "labels": [
-        "component: packages",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "R pexpect interface seems to keep data around",
+    "title": "R pexpect interface doesn't handle errors well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7681",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @haraldschilly
 
-Keywords: pexpect, interface, R
+Keywords: pexpect, interface, R, r-project
 
 For instance:
 

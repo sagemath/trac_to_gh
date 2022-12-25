@@ -1,16 +1,17 @@
-# Issue 3138: [with patch, needs review] Singular multivariate polynomial ring has redundant _repr_ method
+# Issue 3138: [with patch, positive review] Singular multivariate polynomial ring has redundant _repr_ method
 
 archive/issues_003138.json:
 ```json
 {
     "body": "Assignee: broune\n\nMPolynomialRing_libsingular in sage/rings/polynomial/multi_polynomial_libsingular.pyx defines a _repr_ method which does the same thing as the _repr_ method that it inherits from MPolynomialRing_generic in sage/rings/polynomial/multi_polynomial_ring_generic.pyx\n\nThus the _repr_ method is redundant and should be removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3138\n\n",
+    "closed_at": "2008-05-09T13:11:56Z",
     "created_at": "2008-05-09T00:52:47Z",
     "labels": [
         "component: algebra",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] Singular multivariate polynomial ring has redundant _repr_ method",
+    "title": "[with patch, positive review] Singular multivariate polynomial ring has redundant _repr_ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3138",
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"

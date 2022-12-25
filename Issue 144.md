@@ -4,9 +4,10 @@ archive/issues_000144.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nGets a key error here:\n\nnumpy-2006-08-16: blew chunks here;\n    File \"/SandBox/Justin/sb/sage-1.4/spkg/build/numpy-2006-08-16/numpy/distutils/\\\n            ..../fcompiler/__init__.py\", line 199, in get_flags_linker_exe\n      if self.executables['linker_exe']:\n    KeyError: 'linker_exe'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/144\n\n",
+    "closed_at": "2007-01-08T19:28:05Z",
     "created_at": "2006-10-21T20:44:08Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "title": "Numpy build breaks on sage-1.4.1.2",

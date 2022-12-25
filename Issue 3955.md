@@ -3,10 +3,11 @@
 archive/issues_003955.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\n\n\nOn Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear William,\n>\n> On Aug 25, 6:48 pm, \"William Stein\" <wst...@gmail.com> wrote:\n>\n>> If you call _fast_float_ as illustrated below on your functions, find_* will\n>> work, and also be much much faster:\n>>\n>> sage: find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-7.7037197775489434e-34, -2.77555756156e-17)\n>> sage: find_minimum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-0.99999992595132459, -0.999999962976)\n>>\n>> find_* doesn't do this already since (1) _fast_float_ was written\n>> after find_*, and (2) nobody has had the time to change find_*\n>> to use _fast_float_.\n>\n> That's amazing, thank you! I didn't find any information about the\n> _fast_float_. Can it be used for other purposes, too?\n\nYes.  It takes any polynomial or symbolic expression and turns\nit into a very fast callable function that has input and output floats.\nIt should get used automatically by functions like find_min* but\nwe haven't pushed this through enough yet. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3955\n\n",
+    "body": "Assignee: @burcin\n\n```\n\n\nOn Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear William,\n>\n> On Aug 25, 6:48 pm, \"William Stein\" <wst...@gmail.com> wrote:\n>\n>> If you call _fast_float_ as illustrated below on your functions, find_* will\n>> work, and also be much much faster:\n>>\n>> sage: find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-7.7037197775489434e-34, -2.77555756156e-17)\n>> sage: find_minimum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-0.99999992595132459, -0.999999962976)\n>>\n>> find_* doesn't do this already since (1) _fast_float_ was written\n>> after find_*, and (2) nobody has had the time to change find_*\n>> to use _fast_float_.\n>\n> That's amazing, thank you! I didn't find any information about the\n> _fast_float_. Can it be used for other purposes, too?\n\nYes.  It takes any polynomial or symbolic expression and turns\nit into a very fast callable function that has input and output floats.\nIt should get used automatically by functions like find_min* but\nwe haven't pushed this through enough yet. \n```\n\n**Apply:**\n* [attachment:trac3955-find_local_maximum-ff.2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/3955\n\n",
+    "closed_at": "2012-12-29T19:32:12Z",
     "created_at": "2008-08-26T09:12:29Z",
     "labels": [
-        "component: algebra"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "make find_minimum_on_interval use _fast_float_",
@@ -15,7 +16,7 @@ archive/issues_003955.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @burcin
 
 ```
 
@@ -46,6 +47,9 @@ it into a very fast callable function that has input and output floats.
 It should get used automatically by functions like find_min* but
 we haven't pushed this through enough yet. 
 ```
+
+**Apply:**
+* [attachment:trac3955-find_local_maximum-ff.2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/3955
 

@@ -4,6 +4,7 @@ archive/issues_009944.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\n```\n> sage: R.<x> = GF(3)[]\n> sage: q = (x+1)/(x^3+x+1)\n> sage: q.partial_fraction_decomposition()\n```\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/5423a314227309b3#\n\nIssue created by migration from https://trac.sagemath.org/ticket/9945\n\n",
+    "closed_at": "2010-09-29T10:48:12Z",
     "created_at": "2010-09-18T23:41:19Z",
     "labels": [
         "component: basic arithmetic",

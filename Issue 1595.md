@@ -1,16 +1,16 @@
-# Issue 1595: do something about the pari overflow test
+# Issue 1595: [with patch; positive review] do something about the pari overflow test
 
 archive/issues_001595.json:
 ```json
 {
     "body": "Assignee: failure\n\nThis disturbs people:\n\n```\nsage -t  devel/sage-main/sage/libs/pari/gen.pyx             python(85565) malloc: *** mmap(size=4096000000) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\n```\n\nThis would disturb people less:\n\n```\n[[The following doctest contains an intentional memory error.]]\nsage -t  devel/sage-main/sage/libs/pari/gen.pyx             python(85565) malloc: *** mmap(size=4096000000) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1595\n\n",
+    "closed_at": "2009-04-09T02:22:50Z",
     "created_at": "2007-12-24T18:43:56Z",
     "labels": [
-        "component: doctest coverage",
-        "bug"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "do something about the pari overflow test",
+    "title": "[with patch; positive review] do something about the pari overflow test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1595",
     "user": "https://github.com/williamstein"

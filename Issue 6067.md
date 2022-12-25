@@ -4,6 +4,7 @@ archive/issues_006067.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @embray @jdemeyer @kiwifb\n\nIf a the publication status of a worksheet is selected from published to unpublished to published, the URL changes (the number is incremented to the next available). This causes grief if the URL has been given to anyone. It would be much friendlier if the URL remained stable once it had be defined, regardless of any changes in publication status.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6067\n\n",
+    "closed_at": "2019-06-15T12:40:53Z",
     "created_at": "2009-05-18T13:07:14Z",
     "labels": [
         "component: notebook",

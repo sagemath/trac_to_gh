@@ -1,9 +1,10 @@
-# Issue 3093: [with patch; needs review] Debian lcalc package missing -DINCLUDE_PARI flag
+# Issue 3093: [with patch; positive review] Debian lcalc package missing -DINCLUDE_PARI flag
 
 archive/issues_003093.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThe Debian package for lcalc was missing the -DINCLUDE_PARI flag.  Also, it had a useless setting of CFLAGS.  This patch fixes these issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3093\n\n",
+    "closed_at": "2008-05-03T14:29:27Z",
     "created_at": "2008-05-03T08:22:40Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003093.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Debian lcalc package missing -DINCLUDE_PARI flag",
+    "title": "[with patch; positive review] Debian lcalc package missing -DINCLUDE_PARI flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3093",
     "user": "https://github.com/timabbott"

@@ -1,16 +1,17 @@
-# Issue 6860: dimensions of modular forms spaces for Gamma(N) is busted / not implemented
+# Issue 6860: dimensions of modular forms spaces for Gamma(N) is slow
 
 archive/issues_006860.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n[hangs forever]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6860\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: sd51\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n[hangs forever]\n```\n\nThis has now been **fixed** as a consequence of #10546. Release manager: please close as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6860\n\n",
+    "closed_at": "2013-08-13T08:46:45Z",
     "created_at": "2009-09-02T02:22:05Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "dimensions of modular forms spaces for Gamma(N) is busted / not implemented",
+    "title": "dimensions of modular forms spaces for Gamma(N) is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6860",
     "user": "https://github.com/williamstein"
@@ -18,10 +19,14 @@ archive/issues_006860.json:
 ```
 Assignee: @williamstein
 
+Keywords: sd51
+
 ```
 sage: dimension_cusp_forms(Gamma(11))
 [hangs forever]
 ```
+
+This has now been **fixed** as a consequence of #10546. Release manager: please close as fixed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6860
 

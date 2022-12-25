@@ -1,16 +1,17 @@
-# Issue 2876: sage/server/notebook/twist.py doctest fails when dsage certificates are not present
+# Issue 2876: [witch patch, positive review] sage/server/notebook/twist.py doctest fails when dsage certificates are not present
 
 archive/issues_002876.json:
 ```json
 {
     "body": "Assignee: boothby\n\nSince it's trying to use https, the notebook object will try to generate a self signed certificate when one is not present already. This doesn't work with doctesting since we can't expect user interaction. The fix switches the notebook server to use http instead. It looks like robert did a good job of disabling creating accounts so I don't see any new security holes created by this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2876\n\n",
+    "closed_at": "2008-04-12T00:11:36Z",
     "created_at": "2008-04-11T04:52:50Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "sage/server/notebook/twist.py doctest fails when dsage certificates are not present",
+    "title": "[witch patch, positive review] sage/server/notebook/twist.py doctest fails when dsage certificates are not present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2876",
     "user": "https://github.com/yqiang"

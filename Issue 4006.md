@@ -1,16 +1,17 @@
-# Issue 4006: [with patch, needs review] Remove unused code in sage/libs/pari/functional.py
+# Issue 4006: [with patch, positive review] Remove unused code in sage/libs/pari/functional.py
 
 archive/issues_004006.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4006\n\n",
+    "closed_at": "2008-08-30T22:46:20Z",
     "created_at": "2008-08-30T19:05:49Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Remove unused code in sage/libs/pari/functional.py",
+    "title": "[with patch, positive review] Remove unused code in sage/libs/pari/functional.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4006",
     "user": "https://github.com/mwhansen"

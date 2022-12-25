@@ -4,6 +4,7 @@ archive/issues_007950.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t.factor()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in factor(self, proof)\n   1422         # try to use univariate factoring first\n\n   1423         try:\n-> 1424             F = self.univariate_polynomial().factor()\n   1425             return Factorization([(R(f),m) for f,m in F], unit=F.unit())\n   1426         except TypeError:\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in univariate_polynomial(self, R)\n   1055         #construct ring if None\n\n   1056         if R is None:\n-> 1057             R = self.base_ring()[str(self.variables()[0])]\n   1058 \n   1059         monomial_coefficients = self._MPolynomial_element__element.dict()\n\nIndexError: tuple index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7950\n\n",
+    "closed_at": "2010-01-23T09:32:29Z",
     "created_at": "2010-01-16T17:52:56Z",
     "labels": [
         "component: commutative algebra",

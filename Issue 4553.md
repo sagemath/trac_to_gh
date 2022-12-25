@@ -1,15 +1,16 @@
-# Issue 4553: [with patch, needs review] a few new methods for FiniteFieldElement
+# Issue 4553: [with patch, with positive review] a few new methods for FiniteFieldElement
 
 archive/issues_004553.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: finite field element\n\nThe attached patch adds a few methods for finite field elements.  It seems as though `.additive_order()` (and therefore `.order()`) was not implemented before (!), so I've implemented that.  I've also implemented pth powers and pth roots, where p is the characteristic of the field.\n\nThese are written pretty naively, so they may not be that fast. If anyone has suggestions for improvements, I'm happy to hear them (or to have you implement them).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4553\n\n",
+    "closed_at": "2008-11-25T13:41:46Z",
     "created_at": "2008-11-19T18:05:02Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] a few new methods for FiniteFieldElement",
+    "title": "[with patch, with positive review] a few new methods for FiniteFieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4553",
     "user": "https://github.com/jhpalmieri"

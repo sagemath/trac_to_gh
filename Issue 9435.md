@@ -4,6 +4,7 @@ archive/issues_009435.json:
 ```json
 {
     "body": "Assignee: tbd\n\n... and I haven't yet tried this version on any other OS X platforms. Reported by William Stein:\n\n```\nThis fails completely to build on bsd.math.washington.edu (OS X 10.6).\n\n/i686-apple-darwin10/4.2.1/../../.. -lSystem\nchecking for dummy main to link with Fortran 77 libraries... none\nchecking for Fortran 77 name-mangling scheme... unknown\nconfigure: WARNING: unknown Fortran name-mangling scheme\nchecking whether sage_fortran appends underscores to external names... unknown\nconfigure: error: cannot use Fortran\nError configuring R.\n\nreal    1m10.765s\nuser    0m10.200s\nsys     0m16.450s\nsage: An error occurred while installing r-2.10.1.p2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9435\n\n",
+    "closed_at": "2010-07-18T09:48:31Z",
     "created_at": "2010-07-06T12:10:50Z",
     "labels": [
         "component: packages: standard",

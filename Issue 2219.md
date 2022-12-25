@@ -1,9 +1,10 @@
-# Issue 2219: docs for root_field should say the polynomial needs to be irreducible
+# Issue 2219: [with patch, positive review] docs for root_field should say the polynomial needs to be irreducible
 
 archive/issues_002219.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nroot_field()\n-- whose docstring does not say that self should be irreducible,\nthough in fact it must. \n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2219\n\n",
+    "closed_at": "2008-04-15T00:31:55Z",
     "created_at": "2008-02-20T03:51:37Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002219.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "docs for root_field should say the polynomial needs to be irreducible",
+    "title": "[with patch, positive review] docs for root_field should say the polynomial needs to be irreducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2219",
     "user": "https://github.com/jasongrout"

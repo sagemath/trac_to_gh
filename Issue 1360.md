@@ -3,10 +3,11 @@
 archive/issues_001360.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nThe full discussion is here.\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c615950a190e3f3\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1360\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: isomorphism, canonical labeling\n\nThe full discussion is here.\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c615950a190e3f3\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1360\n\n",
+    "closed_at": "2008-02-19T22:25:00Z",
     "created_at": "2007-12-02T04:21:06Z",
     "labels": [
-        "component: combinatorics",
+        "component: graph theory",
         "minor",
         "bug"
     ],
@@ -17,7 +18,9 @@ archive/issues_001360.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
+
+Keywords: isomorphism, canonical labeling
 
 The full discussion is here.
 

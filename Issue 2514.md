@@ -1,16 +1,17 @@
-# Issue 2514: additions to coding modules
+# Issue 2514: [with patch, one positive] additions to coding modules
 
 archive/issues_002514.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nI have a number of changes to the modules in coding. With permission of Robert Miller, it is rather large (\"code bomb\"). However, most are guava wrappers, rewritten as pure Python/SAGE functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2514\n\n",
+    "closed_at": "2008-03-21T05:32:46Z",
     "created_at": "2008-03-13T23:51:40Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "additions to coding modules",
+    "title": "[with patch, one positive] additions to coding modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2514",
     "user": "https://github.com/wdjoyner"

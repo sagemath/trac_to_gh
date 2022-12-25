@@ -1,16 +1,17 @@
-# Issue 2930: CDF is slow, fix it.
+# Issue 2930: [with patch, needs work] CDF is slow, fix it.
 
 archive/issues_002930.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @robertwb\n\nAdd a CDF pool, optimize CD creation.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2930\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @robertwb\n\nKeywords: editor_gfurnish\n\nAdd a CDF pool, optimize CD creation.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2930\n\n",
+    "closed_at": "2008-12-02T13:01:00Z",
     "created_at": "2008-04-15T06:13:29Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "CDF is slow, fix it.",
+    "title": "[with patch, needs work] CDF is slow, fix it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2930",
     "user": "https://github.com/garyfurnish"
@@ -19,6 +20,8 @@ archive/issues_002930.json:
 Assignee: @garyfurnish
 
 CC:  @robertwb
+
+Keywords: editor_gfurnish
 
 Add a CDF pool, optimize CD creation.  
 

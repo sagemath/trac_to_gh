@@ -4,6 +4,7 @@ archive/issues_007954.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @kwankyu\n\nReported by Ronald van Luijk:\n\nbecause the Curve constructor automatically interprets a homogeneous polynomial in 3 variables as a projective curve, the following doesn't work:\n\n```\nA.<x,y,z>=AffineSpace(QQ,3)\nC=Curve([x-y,x-z])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7954\n\n",
+    "closed_at": "2020-08-22T07:20:12Z",
     "created_at": "2010-01-16T18:15:19Z",
     "labels": [
         "component: algebraic geometry",

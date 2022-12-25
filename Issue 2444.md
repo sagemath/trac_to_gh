@@ -1,16 +1,17 @@
-# Issue 2444: [with patch, needs review] add UTF-8 support to sage -t
+# Issue 2444: [with patch, positive review] add UTF-8 support to sage -t
 
 archive/issues_002444.json:
 ```json
 {
     "body": "Assignee: tba\n\nsage -t should be able to handle UTF-8 encoded python files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2444\n\n",
+    "closed_at": "2008-03-15T22:57:03Z",
     "created_at": "2008-03-09T20:49:59Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] add UTF-8 support to sage -t",
+    "title": "[with patch, positive review] add UTF-8 support to sage -t",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2444",
     "user": "https://github.com/malb"

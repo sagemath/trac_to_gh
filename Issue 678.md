@@ -4,6 +4,7 @@ archive/issues_000678.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn Solaris scipy looks for \n\n* g77\n* f77\n* f90\n\nbut fails to detect either g95 or gfortran. It should look for those two, but a quick fix is usually to symbolically link gfortran or g95 as g77.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/678\n\n",
+    "closed_at": "2008-07-29T17:27:38Z",
     "created_at": "2007-09-17T05:22:27Z",
     "labels": [
         "component: packages: standard",

@@ -3,10 +3,11 @@
 archive/issues_009480.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis is related to #8942. The limit function can output either\n`+Infinity`, `-Infinity`, or `Infinity`, the later\nmeaning a complex infinity. For example:\n\n```\nsage: limit(1/x, x=0, dir='above')\n+Infinity\nsage: limit(1/x, x=0, dir='below')\n-Infinity\nsage: limit(1/x, x=0)             \nInfinity\n```\nHowever Sage does not distinguish `+Infinity` and `Infinity`:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l2=limit(1/x, x=0, dir='below')\nsage: l3=limit(1/x, x=0)\nsage: l1==l3\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9480\n\n",
+    "body": "Assignee: @robertwb\n\nKeywords: infinity, equality\n\nThis is related to #8942. The limit function can output either\n`+Infinity`, `-Infinity`, or `Infinity`, the later\nmeaning a complex infinity. For example:\n\n```\nsage: limit(1/x, x=0, dir='above')\n+Infinity\nsage: limit(1/x, x=0, dir='below')\n-Infinity\nsage: limit(1/x, x=0)             \nInfinity\n```\nHowever Sage does not distinguish `+Infinity` and `Infinity`:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l2=limit(1/x, x=0, dir='below')\nsage: l3=limit(1/x, x=0)\nsage: l1==l3\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9480\n\n",
+    "closed_at": "2014-01-03T09:36:30Z",
     "created_at": "2010-07-12T12:48:51Z",
     "labels": [
-        "component: calculus",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,9 @@ archive/issues_009480.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @burcin
+Assignee: @robertwb
+
+Keywords: infinity, equality
 
 This is related to #8942. The limit function can output either
 `+Infinity`, `-Infinity`, or `Infinity`, the later

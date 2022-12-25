@@ -1,15 +1,16 @@
-# Issue 5569: [with patch, needs review] weil restriction of scalars
+# Issue 5569: [with patch, positive review] weil restriction of scalars
 
 archive/issues_005569.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @JohnCremona\n\nWhile cleaning up `mq.MPolynomialSystem` I moved its misnamed `change_ring()` function to a more proper place, i.e. `weil_restriction()` on ideals. Note, that these are defined on varieties but we don't have any variety objects and the function indeed works with ideal generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5569\n\n",
+    "closed_at": "2009-03-23T20:47:11Z",
     "created_at": "2009-03-19T22:28:05Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] weil restriction of scalars",
+    "title": "[with patch, positive review] weil restriction of scalars",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5569",
     "user": "https://github.com/malb"

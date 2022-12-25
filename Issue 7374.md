@@ -4,6 +4,7 @@ archive/issues_007374.json:
 ```json
 {
     "body": "Assignee: joyner\n\nThe docstring for `is_isomorphic()` for permutation groups claims \"If mode=\"verbose\" then an isomorphism is printed.\"\n\nHowever, that's not the case.  This is probably just left over from a previous version of the method.  In any case, the attached trivial patch removes this from the docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7374\n\n",
+    "closed_at": "2009-11-04T14:46:33Z",
     "created_at": "2009-11-02T06:18:33Z",
     "labels": [
         "component: group theory",

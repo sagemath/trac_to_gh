@@ -1,16 +1,17 @@
-# Issue 3242: [with patch, needs review] Fix little bug in G.relabel() for G a graph...
+# Issue 3242: [with patch, positive review] Fix little bug in G.relabel() for G a graph...
 
 archive/issues_003242.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nReported by Chris Godsil:\n\n```\n\"\"\"\nbad4.txt\n\nCreated by Chris Godsil on 2008-05-14.\n\n\"\"\"\n\nI construct a graph P on 8 vertices from the Petersen graph.\n\nPROBLEMS:\n\t(1) The command P.relabel() raises an error as shown, but seems to work.\n\t(2) An attempt to get the automorphism group again raises an error, as shown.\n\t(3) P.is_planar() raises an exceptions.KeyError.\n\t(4) Attempting to get the group before relabelling raises an error too.\n\t(5) Ditto for P.girth()\n\t\nVERSION:\n\tsage: version()\n\t'SAGE Version 3.0, Release Date: 2008-04-21'\n\nGRAPH CONSTRUCTION:\nP = graphs.PetersenGraph()\nP.delete_edge([0,1])\nP.add_edge([4,5])\nP.add_edge([2,6])\nP.delete_vertices([0,1])\n\nsage: P.degree()  \n[3, 3, 3, 3, 3, 3, 3, 3]\n\nsage: P.vertices()\n[2, 3, 4, 5, 6, 7, 8, 9]\n\n\nERRORS:\nsage: P.relabel()\n---------------------------------------------------------------------------\n<type 'exceptions.KeyError'>              Traceback (most recent call last)\n\n/Users/chrisgodsil/Documents/sgwork/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in relabel(self, perm, inplace, return_map)\n   5791             new_pos = {}\n   5792             for v in self._pos:\n-> 5793                 new_pos[perm[v]] = self._pos[v]\n   5794             self._pos = new_pos\n   5795         self._boundary = [perm[v] for v in self._boundary]\n\n<type 'exceptions.KeyError'>: 0\n\nsage: P.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7]\n\n\nsage: P.automorphism_group()\n---------------------------------------------------------------------------\n<type 'exceptions.KeyError'>              Traceback (most recent call last)\n\n/Users/chrisgodsil/Documents/sgwork/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in automorphism_group(self, partition, translation, verbosity, edge_labels, order, return_group, orbits)\n   6159                     a,b = A\n   6160             else:\n-> 6161                 a = search_tree(self, partition, dict_rep=False, lab=False, dig=dig, verbosity=verbosity, order=order)\n   6162                 if order:\n   6163                     a,c = a\n\n/Users/chrisgodsil/Documents/sgwork/graph_isom.pyx in sage.graphs.graph_isom.search_tree (sage/graphs/graph_isom.c:8990)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in relabel(self, perm, inplace, return_map)\n   5791             new_pos = {}\n   5792             for v in self._pos:\n-> 5793                 new_pos[perm[v]] = self._pos[v]\n   5794             self._pos = new_pos\n   5795         self._boundary = [perm[v] for v in self._boundary]\n\n<type 'exceptions.KeyError'>: 8\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3242\n\n",
+    "body": "Assignee: @rlmill\n\nReported by Chris Godsil:\n\n```\n\"\"\"\nbad4.txt\n\nCreated by Chris Godsil on 2008-05-14.\n\n\"\"\"\n\nI construct a graph P on 8 vertices from the Petersen graph.\n\nPROBLEMS:\n(1) The command P.relabel() raises an error as shown, but seems to work.\n(2) An attempt to get the automorphism group again raises an error, as shown.\n(3) P.is_planar() raises an exceptions.KeyError.\n(4) Attempting to get the group before relabelling raises an error too.\n(5) Ditto for P.girth()\n\nVERSION:\n\nsage: version()\n'SAGE Version 3.0, Release Date: 2008-04-21'\n\nGRAPH CONSTRUCTION:\nP = graphs.PetersenGraph()\nP.delete_edge([0,1])\nP.add_edge([4,5])\nP.add_edge([2,6])\nP.delete_vertices([0,1])\n\nsage: P.degree()  \n[3, 3, 3, 3, 3, 3, 3, 3]\n\nsage: P.vertices()\n[2, 3, 4, 5, 6, 7, 8, 9]\n\n\nERRORS:\nsage: P.relabel()\n---------------------------------------------------------------------------\n<type 'exceptions.KeyError'>              Traceback (most recent call last)\n\n/Users/chrisgodsil/Documents/sgwork/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in relabel(self, perm, inplace, return_map)\n   5791             new_pos = {}\n   5792             for v in self._pos:\n-> 5793                 new_pos[perm[v]] = self._pos[v]\n   5794             self._pos = new_pos\n   5795         self._boundary = [perm[v] for v in self._boundary]\n\n<type 'exceptions.KeyError'>: 0\n\nsage: P.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7]\n\n\nsage: P.automorphism_group()\n---------------------------------------------------------------------------\n<type 'exceptions.KeyError'>              Traceback (most recent call last)\n\n/Users/chrisgodsil/Documents/sgwork/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in automorphism_group(self, partition, translation, verbosity, edge_labels, order, return_group, orbits)\n   6159                     a,b = A\n   6160             else:\n-> 6161                 a = search_tree(self, partition, dict_rep=False, lab=False, dig=dig, verbosity=verbosity, order=order)\n   6162                 if order:\n   6163                     a,c = a\n\n/Users/chrisgodsil/Documents/sgwork/graph_isom.pyx in sage.graphs.graph_isom.search_tree (sage/graphs/graph_isom.c:8990)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in relabel(self, perm, inplace, return_map)\n   5791             new_pos = {}\n   5792             for v in self._pos:\n-> 5793                 new_pos[perm[v]] = self._pos[v]\n   5794             self._pos = new_pos\n   5795         self._boundary = [perm[v] for v in self._boundary]\n\n<type 'exceptions.KeyError'>: 8\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3242\n\n",
+    "closed_at": "2008-05-22T20:13:10Z",
     "created_at": "2008-05-17T19:14:18Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] Fix little bug in G.relabel() for G a graph...",
+    "title": "[with patch, positive review] Fix little bug in G.relabel() for G a graph...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3242",
     "user": "https://github.com/rlmill"
@@ -31,15 +32,16 @@ Created by Chris Godsil on 2008-05-14.
 I construct a graph P on 8 vertices from the Petersen graph.
 
 PROBLEMS:
-	(1) The command P.relabel() raises an error as shown, but seems to work.
-	(2) An attempt to get the automorphism group again raises an error, as shown.
-	(3) P.is_planar() raises an exceptions.KeyError.
-	(4) Attempting to get the group before relabelling raises an error too.
-	(5) Ditto for P.girth()
-	
+(1) The command P.relabel() raises an error as shown, but seems to work.
+(2) An attempt to get the automorphism group again raises an error, as shown.
+(3) P.is_planar() raises an exceptions.KeyError.
+(4) Attempting to get the group before relabelling raises an error too.
+(5) Ditto for P.girth()
+
 VERSION:
-	sage: version()
-	'SAGE Version 3.0, Release Date: 2008-04-21'
+
+sage: version()
+'SAGE Version 3.0, Release Date: 2008-04-21'
 
 GRAPH CONSTRUCTION:
 P = graphs.PetersenGraph()

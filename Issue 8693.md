@@ -1,16 +1,16 @@
-# Issue 8693: QuadraticForm::basis_of_short_vectors may not return an actual basis.
+# Issue 8693: QuadraticForm.basis_of_short_vectors may not return an actual ZZ-basis
 
 archive/issues_008693.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  @yyyyx4\n\nKeywords: quadratic forms, basis, automorphisms\n\nQuadraticForm::basis_of_short_vectors does not actually ensure the list of vectors it returns is a basis, it only assures that it spans a full rank sub-lattice.\n\nIn particular in the following example (E8):\n\n\n```\nQ = QuadraticForm( matrix( [[2,0,0,0,0,0,0,1],\n                            [0,2,1,1,1,1,1,1],\n                            [0,1,2,1,1,1,1,1],\n                            [0,1,1,2,1,1,1,1],\n                            [0,1,1,1,2,1,1,1],\n                            [0,1,1,1,1,2,1,1],\n                            [0,1,1,1,1,1,2,0],\n                            [1,1,1,1,1,1,0,2]] ))\nB = Q.basis_of_short_vectors()\nmatrix(B).det()\n```\n\n\nThe result is -2, which indicates we did not get a basis.\nNote that the above means that sage likely returns incorrect results about the automorphism groups of a number of interesting lattices.\nI am attaching some sample code which (once properly merged {and tested}) could be used to correct the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8693\n\n",
+    "body": "Assignee: justin\n\nCC:  @yyyyx4\n\nKeywords: quadratic forms, basis, automorphisms\n\n`QuadraticForm.basis_of_short_vectors()` does not actually ensure the list of vectors it returns is a basis, it only assures that it spans a full rank sub-lattice.\n\nIn particular in the following example (E8):\n\n```\nQ = QuadraticForm( matrix( [[2,0,0,0,0,0,0,1],\n                            [0,2,1,1,1,1,1,1],\n                            [0,1,2,1,1,1,1,1],\n                            [0,1,1,2,1,1,1,1],\n                            [0,1,1,1,2,1,1,1],\n                            [0,1,1,1,1,2,1,1],\n                            [0,1,1,1,1,1,2,0],\n                            [1,1,1,1,1,1,0,2]] ))\nB = Q.basis_of_short_vectors()\nmatrix(B).det()\n```\n\nThe result is -2, which indicates we did not get a basis.\n\nI am attaching some sample code which (once properly merged {and tested}) could be used to correct the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8693\n\n",
     "created_at": "2010-04-15T18:51:18Z",
     "labels": [
         "component: quadratic forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
-    "title": "QuadraticForm::basis_of_short_vectors may not return an actual basis.",
+    "title": "QuadraticForm.basis_of_short_vectors may not return an actual ZZ-basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8693",
     "user": "https://trac.sagemath.org/admin/accounts/users/afiori"
@@ -22,10 +22,9 @@ CC:  @yyyyx4
 
 Keywords: quadratic forms, basis, automorphisms
 
-QuadraticForm::basis_of_short_vectors does not actually ensure the list of vectors it returns is a basis, it only assures that it spans a full rank sub-lattice.
+`QuadraticForm.basis_of_short_vectors()` does not actually ensure the list of vectors it returns is a basis, it only assures that it spans a full rank sub-lattice.
 
 In particular in the following example (E8):
-
 
 ```
 Q = QuadraticForm( matrix( [[2,0,0,0,0,0,0,1],
@@ -40,9 +39,8 @@ B = Q.basis_of_short_vectors()
 matrix(B).det()
 ```
 
-
 The result is -2, which indicates we did not get a basis.
-Note that the above means that sage likely returns incorrect results about the automorphism groups of a number of interesting lattices.
+
 I am attaching some sample code which (once properly merged {and tested}) could be used to correct the issue.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8693

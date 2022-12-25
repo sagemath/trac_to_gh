@@ -1,9 +1,10 @@
-# Issue 6152: [with patch, needs review] more ReST fixes
+# Issue 6152: [with patch, positive review] more ReST fixes
 
 archive/issues_006152.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nHere are a few more reST fixes, continued from #6149.  This depends on #6149.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6152\n\n",
+    "closed_at": "2009-05-28T18:36:25Z",
     "created_at": "2009-05-28T18:25:16Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006152.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] more ReST fixes",
+    "title": "[with patch, positive review] more ReST fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6152",
     "user": "https://github.com/jhpalmieri"

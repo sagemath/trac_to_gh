@@ -1,15 +1,16 @@
-# Issue 5318: ideas for improving random testers (like #4779)
+# Issue 5318: [with patch, positive review] ideas for improving random testers (like #4779)
 
 archive/issues_005318.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRandom testers (like the ones in #4779) should have a structure something like this (untested):\n\n```\ndef test_foo(n_trials, seed=None, verbose=False):\n  with random_seed(seed):\n    used_seed = initial_seed()\n    try:\n        for i in range(n_trials): # or whatever\n            ... do test\n            ... if verbose, then print out the details of the\n                test you're running\n    except:\n        print \"We've detected a failure in random testing.\"\n        print \"Please report this bug; you may be the only person\"\n        print \"in the world to see this particular problem!\"\n        print \"initial seed: \" + used_seed\n        print \"trial: \" + i\n        raise\n```\n\nThen the doctests should start with:\n\n```\nsage: test_foo(2, seed=0, verbose=True)\n... verbose output from two tests; should always be the same across machines, etc.\n```\nto verify that the test is correctly using the randstate framework, so that failures can be reproduced.\n\nThen you can continue to:\n\n```\nsage: test_foo(10)\nsage: test_foo(100) # long time\n```\nwhich will use truly random seeds (with /dev/urandom).\n\nThe above should be adjusted if you want to run the testing function for a very long time; you would want to re-initialize the random seed at least every few seconds, so that if you detect a problem after running for several hours, you don't have to run for the same several hours to reproduce it.\n\nThe simplest way is not to loop for long inside the function; instead, do:\n\n```\nwhile True:\n    test_foo(100)\n```\n\n(That's a lot of boilerplate; maybe this whole setup can be encapsulated in a decorator?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5318\n\n",
+    "closed_at": "2009-04-01T01:54:30Z",
     "created_at": "2009-02-20T07:51:47Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "ideas for improving random testers (like #4779)",
+    "title": "[with patch, positive review] ideas for improving random testers (like #4779)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5318",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,16 +1,17 @@
-# Issue 3237: update ecm to 6.2
+# Issue 3237: [with spkg, positive review] update ecm to 6.2.1
 
 archive/issues_003237.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @zimmermann6\n\nPaul Zimmermann writes:\n\n```\nRelease notes:\n* New stage 2 for P-1 and P+1, described in Montgomery and Kruppa,\n  Improved Stage 2 to P+-1 Factoring Algorithms,\n  in A. J. van der Poorten and A. Stein (Eds.), ANTS-VIII 2008,\n  LNCS 5011, pp. 180-195.\n* Parallelization in the new P+-1 stage 2 (with --enable-openmp).\n* Optimizations to the NTT code by Jason S. Papadopoulos\n* Improved mulredc assembly code for Athlon64/Opteron\n* Improved modular reduction in the mpzmod range\n* Bugfix in P+1 stage 2 which caused incorrect initialisation if\n  Brent-Suyama polynomial had degree > 1 and i0 was negative (occurs\n  only with non-standard parameters)\n* Bugfix in generation of Lucas chains for P+1 and ECM, causing some\n  stage 1 primes close to 2^32 to be processed incorrectly on 32 bit\n  systems\n* Added build project for VC++ by Brian Gladman\n* File ecm.h changed from GPL to LGPL: the fact it was under GPL was an\n  unvoluntary mistake, which has the consequence that applications\n  linking with libecm for version < 6.2 should be under GPL too.\n* Fixed a regression introduced in 6.1.1: the default arithmetic (NTT)\n  for stage 2 was slower for large inputs. Now defaults to -no-ntt for\n  input numbers >30 machine words.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3237\n\n",
+    "closed_at": "2008-12-23T23:44:07Z",
     "created_at": "2008-05-17T09:51:38Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "update ecm to 6.2",
+    "title": "[with spkg, positive review] update ecm to 6.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3237",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

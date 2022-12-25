@@ -3,7 +3,8 @@
 archive/issues_009664.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nThere should be some graphical representation of rational polyhedral fans in low dimensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9664\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nThere should be some graphical representation of rational polyhedral fans in low dimensions. \n\nSee tracker bug at #9604 to for the patch queue/dependencies.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9664\n\n",
+    "closed_at": "2010-10-08T22:31:09Z",
     "created_at": "2010-08-01T20:15:07Z",
     "labels": [
         "component: geometry"
@@ -19,7 +20,10 @@ Assignee: mhampton
 
 CC:  @novoselt
 
-There should be some graphical representation of rational polyhedral fans in low dimensions.
+There should be some graphical representation of rational polyhedral fans in low dimensions. 
+
+See tracker bug at #9604 to for the patch queue/dependencies.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9664
 

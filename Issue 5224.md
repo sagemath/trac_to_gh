@@ -1,16 +1,17 @@
-# Issue 5224: [with patch, needs review (easy)] speed up isomorphism testing for graphs which are c_graphs
+# Issue 5224: [with patch, positive review] speed up isomorphism testing for graphs which are c_graphs
 
 archive/issues_005224.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @mwhansen\n\nReported by Mike Hansen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5224\n\n",
+    "closed_at": "2009-02-10T06:40:55Z",
     "created_at": "2009-02-09T21:11:24Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review (easy)] speed up isomorphism testing for graphs which are c_graphs",
+    "title": "[with patch, positive review] speed up isomorphism testing for graphs which are c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5224",
     "user": "https://github.com/rlmill"

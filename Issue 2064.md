@@ -4,9 +4,10 @@ archive/issues_002064.json:
 ```json
 {
     "body": "Assignee: @ncalexan\n\nCC:  @jhpalmieri @robertwb\n\nIf you cpdef a function foo, and do foo?? from the command line, it displays both foo and the next function after it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2064\n\n",
+    "closed_at": "2010-02-17T20:39:46Z",
     "created_at": "2008-02-05T21:38:25Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: documentation",
         "trivial",
         "bug"
     ],

@@ -4,6 +4,7 @@ archive/issues_009935.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nI couldn't find sage.symbolic.function_factory.function in the reference manual.  It looks like it is already formatted correctly.  It just needs to be added into an appropriate place somewhere in sage/devel/sage/doc/en/reference/*.rst (maybe calculus.rst?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9936\n\n",
+    "closed_at": "2010-09-28T09:10:09Z",
     "created_at": "2010-09-17T20:22:12Z",
     "labels": [
         "component: documentation",

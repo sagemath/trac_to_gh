@@ -4,6 +4,7 @@ archive/issues_008370.json:
 ```json
 {
     "body": "Assignee: @mezzarobba\n\nCC:  abmasse\n\ntour_functions.rst (added by #5463) is missing from the French translation of the tutorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/8370\n\n",
+    "closed_at": "2010-04-29T05:36:02Z",
     "created_at": "2010-02-25T23:00:17Z",
     "labels": [
         "component: documentation",

@@ -1,21 +1,22 @@
-# Issue 4493: derivative and integral of a matrix
+# Issue 4493: [with patch, positive review] derivative of a vector and a matrix
 
 archive/issues_004493.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nIt would be handy in differential equations to be able to do differentiation and integration of matrices and vectors, with the exact same answer as obtained by using the apply_map method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4493\n\n",
+    "body": "Assignee: @jasongrout\n\nIt would be handy in differential equations to be able to do differentiation and integration of matrices and vectors, with the exact same answer as obtained by using the apply_map method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4493\n\n",
+    "closed_at": "2008-12-07T09:59:29Z",
     "created_at": "2008-11-11T18:22:50Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "derivative and integral of a matrix",
+    "title": "[with patch, positive review] derivative of a vector and a matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4493",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @burcin
+Assignee: @jasongrout
 
 It would be handy in differential equations to be able to do differentiation and integration of matrices and vectors, with the exact same answer as obtained by using the apply_map method.
 

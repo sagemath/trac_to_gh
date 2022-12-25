@@ -4,6 +4,7 @@ archive/issues_007935.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @robertwb\n\nKeywords: elliptic curve, number fields, local data, tamagawa\n\nFirst of all, I spotted the following bug:\n\n```\nK.<a> = NumberField(x^2-38)\nE = EllipticCurve([a,1/2])\nE.global_integral_model()\n```\n\nwhich yields\n\n```\nAssertionError: bug in global_integral_model: [0, 0, 0, 4/361*a, 4/6859]\n```\n\nand that is easy to fix. But I also wish to add a `tamagawa_product` and improve the documentation.\n\nI will post a patch later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7935\n\n",
+    "closed_at": "2010-02-11T15:11:15Z",
     "created_at": "2010-01-15T13:41:18Z",
     "labels": [
         "component: elliptic curves",

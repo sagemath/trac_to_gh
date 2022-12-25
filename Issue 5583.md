@@ -4,6 +4,7 @@ archive/issues_005583.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @tscrim\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5583\n\n",
+    "closed_at": "2019-06-05T18:31:09Z",
     "created_at": "2009-03-22T11:36:05Z",
     "labels": [
         "component: group theory",

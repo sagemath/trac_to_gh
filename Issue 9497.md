@@ -3,7 +3,8 @@
 archive/issues_009497.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nRight now the Singular spkg contains the lines:\n\n```\n# since parallel make breaks the singular build\nMAKE=\"make\"\nexport MAKE\n```\n\nSince Singular takes a long time to build, e.g., > 8 minutes on sage.math, and 16 minutes on my laptop, it would be nice to be able to build it in parallel.\n\nWhy precisely does parallel build not work?  Maybe it is only one component of the singular build that has trouble?  Track this down, make the parts that can work to work, and the parts that can't should be explained.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9497\n\n",
+    "body": "Assignee: GeorgSWeber\n\nKeywords: singular\n\nRight now the Singular spkg contains the lines:\n\n```\n# since parallel make breaks the singular build\nMAKE=\"make\"\nexport MAKE\n```\n\nSince Singular takes a long time to build, e.g., > 8 minutes on sage.math, and 16 minutes on my laptop, it would be nice to be able to build it in parallel.\n\nWhy precisely does parallel build not work?  Maybe it is only one component of the singular build that has trouble?  Track this down, make the parts that can work to work, and the parts that can't should be explained. \n\nNew spkg: \n\n- [http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9497\n\n",
+    "closed_at": "2011-04-11T19:15:54Z",
     "created_at": "2010-07-14T13:53:39Z",
     "labels": [
         "component: build",
@@ -18,6 +19,8 @@ archive/issues_009497.json:
 ```
 Assignee: GeorgSWeber
 
+Keywords: singular
+
 Right now the Singular spkg contains the lines:
 
 ```
@@ -28,7 +31,11 @@ export MAKE
 
 Since Singular takes a long time to build, e.g., > 8 minutes on sage.math, and 16 minutes on my laptop, it would be nice to be able to build it in parallel.
 
-Why precisely does parallel build not work?  Maybe it is only one component of the singular build that has trouble?  Track this down, make the parts that can work to work, and the parts that can't should be explained.
+Why precisely does parallel build not work?  Maybe it is only one component of the singular build that has trouble?  Track this down, make the parts that can work to work, and the parts that can't should be explained. 
+
+New spkg: 
+
+- [http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9497
 

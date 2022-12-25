@@ -1,16 +1,17 @@
-# Issue 1051: pari/gp extended help stops working when sage tree is moved
+# Issue 1051: [with patch] pari/gp extended help stops working when sage tree is moved
 
 archive/issues_001051.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nWith the new pari-2.3.2.p4.spkg, the ?? help works.  However, it stops working when the Sage tree is moved, because libpari hardcodes the path to the gphelp binary.\n\nThis path can be overridden with the GPHELP environment variable; sage-env should set that variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1051\n\n",
+    "closed_at": "2007-11-02T02:00:02Z",
     "created_at": "2007-11-01T06:25:48Z",
     "labels": [
         "component: relocation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "pari/gp extended help stops working when sage tree is moved",
+    "title": "[with patch] pari/gp extended help stops working when sage tree is moved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1051",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

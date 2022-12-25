@@ -4,6 +4,7 @@ archive/issues_007322.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nVersion 3.6c of jsMath works around Firefox 3.5's single-origin policy for local files.  The policy can keep jsMath from loading its external components and functioning properly (cf. #6820).\n\nPlease see the [change log](http://www.math.union.edu/~dpvc/jsMath/changes.html) for other bug fixes. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7322\n\n",
+    "closed_at": "2009-11-11T22:14:59Z",
     "created_at": "2009-10-27T17:22:19Z",
     "labels": [
         "component: notebook",

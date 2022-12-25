@@ -1,9 +1,10 @@
-# Issue 3326: trailing question marks in %html blocks are mistreated
+# Issue 3326: [with patch, positive review] trailing question marks in %html blocks are mistreated
 
 archive/issues_003326.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: %html\n\nIn the notebook:\n\n```\nsage: %html  How are you?\n```\nreturns\n\n```\nNo object 'you' currently defined.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3326\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: %html\n\nIn the notebook:\n\n```\nsage: %html  How are you?\n```\nreturns\n\n```\nNo object 'you' currently defined.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3326\n\n",
+    "closed_at": "2009-01-28T15:19:06Z",
     "created_at": "2008-05-28T20:01:47Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_003326.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "trailing question marks in %html blocks are mistreated",
+    "title": "[with patch, positive review] trailing question marks in %html blocks are mistreated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3326",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 Keywords: %html
 

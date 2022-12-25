@@ -3,7 +3,8 @@
 archive/issues_007409.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: random integer partition, placherel measure\n\nIt is currently implemented by building the list !\nHere are some suggestions: Look at \n\n```\nhttp://www.site.uottawa.ca/~ivan/F49-int-part.pdf\n```\nThanks to #7408 we have a fast algorithm for generating partitions with Plancherel measure. So I suggest the following interface:\n\n```\nParitions(n).random_element()\n```\ndefault to\n\n```\nPartitions(n).random_element_uniform()\n```\nand to implement\n\n```\nPartitions(n).random_element_Plancherel()\n```\nAny comment about the interface ? \n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7409\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: random integer partition, placherel measure\n\nIt is currently implemented by building the list !\nHere are some suggestions: Look at \n\n```\nhttp://www.site.uottawa.ca/~ivan/F49-int-part.pdf\n```\nThanks to #7408 we have a fast algorithm for generating partitions with Plancherel measure. So I suggest the following interface:\n\n```\nParitions(n).random_element()\n```\ndefault to\n\n```\nPartitions(n).random_element_uniform()\n```\nand to implement\n\n```\nPartitions(n).random_element_Plancherel()\n```\nAny comment about the interface ? \n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7409\n\n",
+    "closed_at": "2009-12-01T04:56:43Z",
     "created_at": "2009-11-08T10:33:58Z",
     "labels": [
         "component: combinatorics"
@@ -15,7 +16,7 @@ archive/issues_007409.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 

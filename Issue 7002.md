@@ -3,7 +3,8 @@
 archive/issues_007002.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mvngu @kcrisman\n\n#auto was the old way, %auto was the new way.  Plus, we should say % directives need to happen above the input. \n\nTo see the problem, click the \"Help\" in the upper right corner.  The second row is:\n\nAny cells with \"#auto\" in the input is automatically evaluated when the worksheet is first opened.\n\nThis should be changed to:\n\nAny cells with \"%auto\" above the input is automatically evaluated when the worksheet is first opened.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7002\n\n",
+    "body": "Assignee: tba\n\nCC:  mvngu @kcrisman\n\n#auto was the old way, %auto was the new way.  Plus, we should say % directives need to happen above the input. \n\nTo see the problem, click the \"Help\" in the upper right corner.  The second row is:\n\nAny cells with \"#auto\" in the input is automatically evaluated when the worksheet is first opened.\n\nThis should be changed to:\n\nAny cells with \"%auto\" above the input is automatically evaluated when the worksheet is first opened.\n\nApply [attachment:7002_rebase_4.7.patch] to sagenb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7002\n\n",
+    "closed_at": "2009-09-24T07:16:13Z",
     "created_at": "2009-09-23T13:29:00Z",
     "labels": [
         "component: documentation",
@@ -30,6 +31,8 @@ Any cells with "#auto" in the input is automatically evaluated when the workshee
 This should be changed to:
 
 Any cells with "%auto" above the input is automatically evaluated when the worksheet is first opened.
+
+Apply [attachment:7002_rebase_4.7.patch] to sagenb.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7002
 

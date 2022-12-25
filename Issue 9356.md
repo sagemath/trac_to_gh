@@ -3,10 +3,12 @@
 archive/issues_009356.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby @kiwifb\n\nSAGE_ATLAS_LIB is supposed to allow the use of an external ATLAS installation rather than have Sage build it.  I think if Sage builds ATLAS once, then you ought to be able to copy the relevant files from that build to another directory and then use that directory as SAGE_ATLAS_LIB the next time you build Sage.  But this doesn't work on Solaris: on Solaris, when Sage builds ATLAS, it explicitly deletes the file liblapack.so, installing liblapack.a instead.  But when it tests SAGE_ATLAS_LIB, it tests for the existence of liblapack.so.\n\nThe new spkg just tests for the existence of liblapack.a on Solaris.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9356\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @kiwifb\n\nSAGE_ATLAS_LIB is supposed to allow the use of an external ATLAS installation rather than have Sage build it.  I think if Sage builds ATLAS once, then you ought to be able to copy the relevant files from that build to another directory and then use that directory as SAGE_ATLAS_LIB the next time you build Sage.  But this doesn't work on Solaris: on Solaris, when Sage builds ATLAS, it explicitly deletes the file liblapack.so, installing liblapack.a instead.  But when it tests SAGE_ATLAS_LIB, it tests for the existence of liblapack.so.\n\nThe new spkg just tests for the existence of liblapack.a on Solaris.\n\nThe new spkg is here:\n[http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p13.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p13.spkg)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9356\n\n",
+    "closed_at": "2010-08-09T09:37:47Z",
     "created_at": "2010-06-28T01:26:33Z",
     "labels": [
         "component: porting: solaris",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
@@ -23,6 +25,10 @@ CC:  drkirkby @kiwifb
 SAGE_ATLAS_LIB is supposed to allow the use of an external ATLAS installation rather than have Sage build it.  I think if Sage builds ATLAS once, then you ought to be able to copy the relevant files from that build to another directory and then use that directory as SAGE_ATLAS_LIB the next time you build Sage.  But this doesn't work on Solaris: on Solaris, when Sage builds ATLAS, it explicitly deletes the file liblapack.so, installing liblapack.a instead.  But when it tests SAGE_ATLAS_LIB, it tests for the existence of liblapack.so.
 
 The new spkg just tests for the existence of liblapack.a on Solaris.
+
+The new spkg is here:
+[http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p13.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p13.spkg)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9356
 

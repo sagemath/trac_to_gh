@@ -3,7 +3,8 @@
 archive/issues_007705.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis command in sage-4.3 returns a loaded sobj:\n\n```\nsage: graphs.WorldMap()\nGraph on 251 vertices\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7705\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis command in sage-4.3 returns a loaded sobj:\n\n```\nsage: graphs.WorldMap()\nGraph on 251 vertices\n```\n\nThe Sage source distribution must ship with a bare minimum of opaque potentially dangerous binary files.   Pickles (i.e. sobjs) are fairly opaque binary files that can invoke arbitrary code when being unpickled.  Also, sobj's have the drawback that they can someday break, and can be very hard to update later (the map of the world will change periodically).   There are currently three places in the Sage source code that includes pickles:  \n* the pickle jar,\n* the database of lattice polytopes\n* the above world map graph.\n\nPlease replace the world map sobj by something else, e.g., some code that creates the world map when the user first asks for it.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7705\n\n",
+    "closed_at": "2009-12-19T20:21:24Z",
     "created_at": "2009-12-16T08:45:55Z",
     "labels": [
         "component: graph theory",
@@ -26,6 +27,13 @@ This command in sage-4.3 returns a loaded sobj:
 sage: graphs.WorldMap()
 Graph on 251 vertices
 ```
+
+The Sage source distribution must ship with a bare minimum of opaque potentially dangerous binary files.   Pickles (i.e. sobjs) are fairly opaque binary files that can invoke arbitrary code when being unpickled.  Also, sobj's have the drawback that they can someday break, and can be very hard to update later (the map of the world will change periodically).   There are currently three places in the Sage source code that includes pickles:  
+* the pickle jar,
+* the database of lattice polytopes
+* the above world map graph.
+
+Please replace the world map sobj by something else, e.g., some code that creates the world map when the user first asks for it.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/7705
 

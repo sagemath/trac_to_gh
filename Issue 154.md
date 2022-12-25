@@ -1,9 +1,10 @@
-# Issue 154: gfan -- something wrong
+# Issue 154: gfan -- gfan changes broke interface slightly.
 
 archive/issues_000154.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: i = ideal([x + y - 1])\nsage: g = i.groebner_fan()\nsage: g.tropical_basis()\nTraceback (most recent call last):\n...\nKeyError: 'Dimension of homogeneity space'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/154\n\n",
+    "closed_at": "2007-01-19T11:39:47Z",
     "created_at": "2006-10-26T20:37:48Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_000154.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
-    "title": "gfan -- something wrong",
+    "title": "gfan -- gfan changes broke interface slightly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/154",
     "user": "https://github.com/williamstein"

@@ -1,21 +1,22 @@
-# Issue 1239: Wrap Simon's new gp two descent code
+# Issue 1239: [with patch, with positive review *BUT* see comments] Wrap Simon's new gp two descent code
 
 archive/issues_001239.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nScripts were recently updated http://www.math.unicaen.fr/~simon/\n\nIt now handles two-torsion more uniformly, works on more curves, and actually returns points on the curve given. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1239\n\n",
+    "body": "Assignee: @robertwb\n\nScripts were recently updated http://www.math.unicaen.fr/~simon/\n\nIt now handles two-torsion more uniformly, works on more curves, and actually returns points on the curve given. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1239\n\n",
+    "closed_at": "2007-12-15T08:49:18Z",
     "created_at": "2007-11-21T19:43:50Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Wrap Simon's new gp two descent code",
+    "title": "[with patch, with positive review *BUT* see comments] Wrap Simon's new gp two descent code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1239",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Scripts were recently updated http://www.math.unicaen.fr/~simon/
 

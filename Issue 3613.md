@@ -1,22 +1,23 @@
-# Issue 3613: symbolic equations are not passed to Maple correctly
+# Issue 3613: [with patch, with positive review] symbolic equations are not passed to Maple correctly
 
 archive/issues_003613.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: maple(x==2)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.0.3.rc0/devel/sage-coerce/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x, name)\n    945             return cls(self, x, name=name)\n    946         try:\n--> 947             return self._coerce_from_special_method(x)\n    948         except TypeError:\n    949             raise\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _coerce_from_special_method(self, x)\n    969             s = '_gp_'\n    970         try:\n--> 971             return (x.__getattribute__(s))(self)\n    972         except AttributeError:\n    973             return self(x._interface_init_())\n\n/opt/sage-3.0.3.rc0/devel/sage-coerce/sage/sage_object.pyx in sage.structure.sage_object.SageObject._maple_ (sage/structure/sage_object.c:3342)()\n\n/opt/sage-3.0.3.rc0/devel/sage-coerce/sage/sage_object.pyx in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2009)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x, name)\n    943             return x\n    944         if isinstance(x, basestring):\n--> 945             return cls(self, x, name=name)\n    946         try:\n    947             return self._coerce_from_special_method(x)\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name, name)\n   1208             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1209                 self._session_number = -1\n-> 1210                 raise TypeError, x\n   1211         self._session_number = parent._session_number\n   1212 \n\nTypeError: An error occured running a Maple command:\nINPUT:\nread \"/home/mike/.sage//temp/mike_laptop/21257//interface//tmp\";\nOUTPUT:\non line 1, syntax error, `=` unexpected:\nsage1:=x == 2:;\n          ^\nError, while reading `/home/mike/.sage//temp/mike_laptop/21257//interface//tmp`\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3613\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: maple(x==2)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.0.3.rc0/devel/sage-coerce/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x, name)\n    945             return cls(self, x, name=name)\n    946         try:\n--> 947             return self._coerce_from_special_method(x)\n    948         except TypeError:\n    949             raise\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _coerce_from_special_method(self, x)\n    969             s = '_gp_'\n    970         try:\n--> 971             return (x.__getattribute__(s))(self)\n    972         except AttributeError:\n    973             return self(x._interface_init_())\n\n/opt/sage-3.0.3.rc0/devel/sage-coerce/sage/sage_object.pyx in sage.structure.sage_object.SageObject._maple_ (sage/structure/sage_object.c:3342)()\n\n/opt/sage-3.0.3.rc0/devel/sage-coerce/sage/sage_object.pyx in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2009)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x, name)\n    943             return x\n    944         if isinstance(x, basestring):\n--> 945             return cls(self, x, name=name)\n    946         try:\n    947             return self._coerce_from_special_method(x)\n\n/opt/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name, name)\n   1208             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1209                 self._session_number = -1\n-> 1210                 raise TypeError, x\n   1211         self._session_number = parent._session_number\n   1212 \n\nTypeError: An error occured running a Maple command:\nINPUT:\nread \"/home/mike/.sage//temp/mike_laptop/21257//interface//tmp\";\nOUTPUT:\non line 1, syntax error, `=` unexpected:\nsage1:=x == 2:;\n          ^\nError, while reading `/home/mike/.sage//temp/mike_laptop/21257//interface//tmp`\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3613\n\n",
+    "closed_at": "2008-08-11T05:15:22Z",
     "created_at": "2008-07-08T17:58:37Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "symbolic equations are not passed to Maple correctly",
+    "title": "[with patch, with positive review] symbolic equations are not passed to Maple correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3613",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: maple(x==2)

@@ -1,9 +1,10 @@
-# Issue 6840: Fix documentation for Sage Notebook
+# Issue 6840: [with patch, positive review] Fix documentation for Sage Notebook
 
 archive/issues_006840.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: notebook documentation\n\nChange documentation of the notebook to a uniform format and complete notebook doctest/documentation coverage.\n\n* Some docstrings are improperly formatted.\n* The formatting of docstrings is inconsistent, e.g.:\n\nSome have:\n\n```\nOutput: footype\n\nDescription\n```\n\nWhile others have:\n\n```\nOutput:\n\n- footype -- description\n```\n\netc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6840\n\n",
+    "closed_at": "2009-09-01T06:12:17Z",
     "created_at": "2009-08-29T07:30:36Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_006840.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Fix documentation for Sage Notebook",
+    "title": "[with patch, positive review] Fix documentation for Sage Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6840",
     "user": "https://github.com/TimDumol"

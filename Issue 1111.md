@@ -1,21 +1,22 @@
-# Issue 1111: Symbolic equation expand left and right
+# Issue 1111: [with patch+review] Symbolic equation expand left and right
 
 archive/issues_001111.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
+    "closed_at": "2007-12-01T11:31:59Z",
     "created_at": "2007-11-06T05:25:35Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "Symbolic equation expand left and right",
+    "title": "[with patch+review] Symbolic equation expand left and right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1111",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: eqn.expand() # does it to both sides

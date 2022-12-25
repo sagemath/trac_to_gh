@@ -1,16 +1,17 @@
-# Issue 7400: ElementWrapper does not copy the wrapped values when copied
+# Issue 7400: Element does not copy its __dict__ when copied, ElementWrapper does not copy the wrapped values when copied
 
 archive/issues_007400.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: copy, ElementWrapper\n\nBefore the patch\n\n```\nsage: o1 = ElementWrapper([1], parent=ZZ)\nsage: o2 = copy(o1)\nsage: o2.value[0] = 3; o2\n[3]\nsage: o1\n[3]\n```\nAfter the patch\n\n```\nsage: o1 = ElementWrapper([1], parent=ZZ)\nsage: o2 = copy(o1)\nsage: o2.value[0] = 3; o2\n[3]\nsage: o1\n[1]\n```\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7400\n\n",
+    "closed_at": "2009-12-19T20:57:48Z",
     "created_at": "2009-11-06T09:52:42Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "ElementWrapper does not copy the wrapped values when copied",
+    "title": "Element does not copy its __dict__ when copied, ElementWrapper does not copy the wrapped values when copied",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7400",
     "user": "https://github.com/hivert"

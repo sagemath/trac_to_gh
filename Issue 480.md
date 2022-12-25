@@ -3,7 +3,8 @@
 archive/issues_000480.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @williamstein @vbraun\n\nFedora Core 7 has SELinux turned on per default. Sage should support running when SELinux is activated. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/480\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @vbraun\n\nKeywords: sd40.5\n\nFedora Core 7 has SELinux turned on per default. Sage should support running when SELinux is activated. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/480\n\n",
+    "closed_at": "2012-08-01T12:23:55Z",
     "created_at": "2007-08-22T21:37:55Z",
     "labels": [
         "component: distribution"
@@ -18,6 +19,8 @@ archive/issues_000480.json:
 Assignee: mabshoff
 
 CC:  @williamstein @vbraun
+
+Keywords: sd40.5
 
 Fedora Core 7 has SELinux turned on per default. Sage should support running when SELinux is activated. 
 

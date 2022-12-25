@@ -1,15 +1,17 @@
-# Issue 5083: Colormap updating?
+# Issue 5083: Clarify how colormap options are documented
 
 archive/issues_005083.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  abergeron @williamstein @mwhansen\n\nReferring to #4884 and the last set of comments there - loose ends for colormap info:\n\n1. So should there be cmap_help or not?  abergeron's last statement  in #4884 implies yes.  If so...\n\n2. For every function (e.g. matrix_plot) where cmap is an option, that function's docstring should have as a doctest a full call of cmap_help (or whatever with its output.  Also in the cmap_help doctest should have the whole output of cmap_help show up, not have ... where the actual colormaps are outputted.\n\nIf neither of these things are true, please close this ticket.  It seemed like both were true, though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5083\n\n",
+    "closed_at": "2016-02-23T22:59:37Z",
     "created_at": "2009-01-24T02:44:59Z",
     "labels": [
-        "component: graphics"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Colormap updating?",
+    "title": "Clarify how colormap options are documented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5083",
     "user": "https://github.com/kcrisman"

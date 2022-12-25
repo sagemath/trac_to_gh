@@ -1,22 +1,23 @@
-# Issue 6420: Maxima integration error with 1/x^3
+# Issue 6420: [with patch, positive review] Maxima integration error with 1/x^3
 
 archive/issues_006420.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: maxima integral\n\n```\nsage: integrate(1/x^3,x,1,infinity)\nValueError: Integral is divergent.\n```\n\nBut it's NOT!\n\nThe problem comes from Maxima. I could check four versions:\n\n```\nMaxima 5.13.0: it's ok\nMaxima 5.16.3: it gives wrong result, Sage 4.0.2 uses this\nMaxima 5.17.1: it gives wrong result\nMaxima 5.18.1: it's ok\n```\n\nAn example for wrong result:\n\n```\npetya@desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(1/x^3,x,1,inf);\n\nIntegral is divergent\n -- an error.  To debug this try debugmode(true);\n```\n\nWe would like to teach undergradute students with Sage, and this bug is quite annoying. It would be helpful, if someone could update Maxima in Sage.\n\n\n Thanks,\n  Peter\n\nIssue created by migration from https://trac.sagemath.org/ticket/6420\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: maxima integral\n\n```\nsage: integrate(1/x^3,x,1,infinity)\nValueError: Integral is divergent.\n```\n\nBut it's NOT!\n\nThe problem comes from Maxima. I could check four versions:\n\n```\nMaxima 5.13.0: it's ok\nMaxima 5.16.3: it gives wrong result, Sage 4.0.2 uses this\nMaxima 5.17.1: it gives wrong result\nMaxima 5.18.1: it's ok\n```\n\nAn example for wrong result:\n\n```\npetya@desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(1/x^3,x,1,inf);\n\nIntegral is divergent\n -- an error.  To debug this try debugmode(true);\n```\n\nWe would like to teach undergradute students with Sage, and this bug is quite annoying. It would be helpful, if someone could update Maxima in Sage.\n\n\n Thanks,\n  Peter\n\nIssue created by migration from https://trac.sagemath.org/ticket/6420\n\n",
+    "closed_at": "2009-10-15T07:07:14Z",
     "created_at": "2009-06-26T07:33:08Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Maxima integration error with 1/x^3",
+    "title": "[with patch, positive review] Maxima integration error with 1/x^3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6420",
     "user": "https://trac.sagemath.org/admin/accounts/users/mora"
 }
 ```
-Assignee: @mwhansen
+Assignee: @aghitza
 
 Keywords: maxima integral
 

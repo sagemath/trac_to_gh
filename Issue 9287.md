@@ -3,7 +3,8 @@
 archive/issues_009287.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  wstein\n\nKeywords: doctest coverage\n\nThe bad files are\n\n* BSD.py 85% (6 of 7)\n* ell_egros.py 85% (6 of 7)\n* ell_modular_symbols.py 86% (13 of 15)\n* gp_cremona.py 85% (6 of 7)\n* gp_simon.py 50% (1 of 2)\n* mod5family.py 0% (0 of 1)\n* monsky_washnitzer.py 26% (28 of 107)\n* padic_height.py 0% (0 of 6) #deprecated\n* padic_lseries.py 59% (19 of 32)\n* padics.py 83% (10 of 12)\n* sea.py 0% (0 of 1)\n* sha_tate.py 80% (8 of 10)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9287\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  wstein\n\nKeywords: doctest coverage\n\nThe bad files (at 4.4.4.alpha0) are\n\n* BSD.py 85% (6 of 7)\n* ell_egros.py 85% (6 of 7)\n* ell_modular_symbols.py 86% (13 of 15)\n* gp_cremona.py 85% (6 of 7)\n* gp_simon.py 50% (1 of 2)\n* mod5family.py 0% (0 of 1)\n* monsky_washnitzer.py 26% (28 of 107)\n* padic_height.py 0% (0 of 6) #deprecated\n* padic_lseries.py 59% (19 of 32)\n* padics.py 83% (10 of 12)\n* sea.py 0% (0 of 1)\n* sha_tate.py 80% (8 of 10)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9287\n\n",
+    "closed_at": "2010-07-20T07:08:35Z",
     "created_at": "2010-06-20T23:40:48Z",
     "labels": [
         "component: elliptic curves",
@@ -23,7 +24,7 @@ CC:  wstein
 
 Keywords: doctest coverage
 
-The bad files are
+The bad files (at 4.4.4.alpha0) are
 
 * BSD.py 85% (6 of 7)
 * ell_egros.py 85% (6 of 7)
@@ -37,6 +38,7 @@ The bad files are
 * padics.py 83% (10 of 12)
 * sea.py 0% (0 of 1)
 * sha_tate.py 80% (8 of 10)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9287
 

@@ -4,9 +4,11 @@ archive/issues_009764.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nIn matrix2.pyx, there is a doctest (line 6406):\n\n```\n            sage: all(imag(e) < 1.1e-15 for e in eigs)\n```\nWe should replace \"imag(e)\" by \"abs(imag(e))\".\n\nThe attached patch depends on #9760.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9765\n\n",
+    "closed_at": "2010-08-24T02:48:01Z",
     "created_at": "2010-08-18T22:14:49Z",
     "labels": [
         "component: algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",

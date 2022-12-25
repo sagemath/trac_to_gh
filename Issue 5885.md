@@ -4,10 +4,11 @@ archive/issues_005885.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n#5567 fixes a bug, but in doing so, avoids the deprecation warning that should happen when the user types in\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\nSee #5413 for details on the deprecation warning.  This deprecation warning should be triggered when the code in the doctest of #5567 is run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5885\n\n",
+    "closed_at": "2010-01-22T21:42:02Z",
     "created_at": "2009-04-24T01:20:37Z",
     "labels": [
         "component: calculus",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",

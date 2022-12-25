@@ -3,10 +3,11 @@
 archive/issues_009529.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @fchapoton @tscrim\n\nTo reproduce this, you can do something like the following in bash:\n\n```\n\nsage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;\n> do\n>     ../../sage -t sage/graphs/graph_plot.py\n> done\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9529\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @fchapoton @tscrim\n\nTo reproduce this, you can do something like the following in bash:\n\n```\n\nsage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;\n> do\n>     ../../sage -t sage/graphs/graph_plot.py\n> done\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9529\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2010-07-17T12:56:30Z",
     "labels": [
-        "component: algebra",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009529.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @aghitza
+Assignee: jason, ncohen, rlm
 
 CC:  @fchapoton @tscrim
 

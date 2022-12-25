@@ -1,16 +1,17 @@
-# Issue 6261: Add multiplicative order for matrices over finite fields
+# Issue 6261: [with patch, with positive review] Add multiplicative order for matrices over finite fields
 
 archive/issues_006261.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor the algorithm used, see\nFrank Celler and Charles R. Leedham-Green, \"Calculating the Order of an Invertible Matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6261\n\n",
+    "closed_at": "2009-06-24T10:10:33Z",
     "created_at": "2009-06-11T16:54:34Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Add multiplicative order for matrices over finite fields",
+    "title": "[with patch, with positive review] Add multiplicative order for matrices over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6261",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

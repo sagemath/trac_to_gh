@@ -1,9 +1,10 @@
-# Issue 9580: Check in or ignore sagenb.po in SageNB package
+# Issue 9580: Check in, ignore, or delete sagenb.po in SageNB package
 
 archive/issues_009580.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @TimDumol\n\nNoted by Leif Leonhardy in a [comment:ticket:9554:5 comment] at #9554:\n\n```sh\nleif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n? sagenb/sagenb.po\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9580\n\n",
+    "closed_at": "2010-07-25T07:56:46Z",
     "created_at": "2010-07-23T06:28:05Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_009580.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "Check in or ignore sagenb.po in SageNB package",
+    "title": "Check in, ignore, or delete sagenb.po in SageNB package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9580",
     "user": "https://github.com/qed777"

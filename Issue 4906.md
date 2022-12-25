@@ -1,16 +1,17 @@
-# Issue 4906: convert sage.combinat.* docstrings to Sphinx
+# Issue 4906: [with patch, needs work] convert sage.combinat.* docstrings to Sphinx
 
 archive/issues_004906.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  ddrake@member.ams.org\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4906\n\n",
+    "closed_at": "2009-02-24T18:37:59Z",
     "created_at": "2009-01-01T22:47:01Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.combinat.* docstrings to Sphinx",
+    "title": "[with patch, needs work] convert sage.combinat.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4906",
     "user": "https://github.com/mwhansen"

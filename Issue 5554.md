@@ -1,15 +1,16 @@
-# Issue 5554: implement cholesky_decomposition for matrices other than RDF
+# Issue 5554: [with patch, positive review] implement cholesky_decomposition for matrices other than RDF
 
 archive/issues_005554.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  jkantor wstein\n\nKeywords: cholesky decomposition RDF real\n\nThe attached patch\n\n* renames cholesky() to cholesky_decomposition()\n* improves the documentation\n* adds a helper function _cholesky_decomposition_() for specialization;\n* moves the GSL/scipy cholesky function to matrix_real_double_dense, where it belongs;\n* implements a generic Cholesky decomposition that works for arbitrary precision real and complex fields, where we generalize symmetric to Hermitian.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5554\n\n",
+    "closed_at": "2009-05-19T19:43:21Z",
     "created_at": "2009-03-17T21:38:35Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "implement cholesky_decomposition for matrices other than RDF",
+    "title": "[with patch, positive review] implement cholesky_decomposition for matrices other than RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5554",
     "user": "https://github.com/ncalexan"

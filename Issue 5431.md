@@ -1,16 +1,17 @@
-# Issue 5431: Command line parser fails on hex values with 'e'
+# Issue 5431: [with patch, positive review] Command line parser fails on hex values with 'e'
 
 archive/issues_005431.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @robertwb\n\n```\nsage: 0xe\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ryan/.sage/temp/fileserv/1535/_home_ryan__sage_init_sage_0.py in <module>()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.create_RealNumber (sage/rings/real_mpfr.c:21774)()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealLiteral.__init__ (sage/rings/real_mpfr.c:20990)()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber.__init__ (sage/rings/real_mpfr.c:7454)()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:7957)()\n\nTypeError: Unable to convert x (='0xe') to real number.\n```\nThe same thing happens with \"0xE\".  It appears the parser sees the E/e and assumes it is a floating-point number instead of using the leading \"0x\".  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5431\n\n",
+    "closed_at": "2009-06-13T21:50:12Z",
     "created_at": "2009-03-03T19:18:40Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Command line parser fails on hex values with 'e'",
+    "title": "[with patch, positive review] Command line parser fails on hex values with 'e'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5431",
     "user": "https://github.com/rhinton"

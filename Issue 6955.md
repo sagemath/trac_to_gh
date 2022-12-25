@@ -3,7 +3,8 @@
 archive/issues_006955.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nKeywords: two descent,\n\nI found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/6955\n\n",
+    "body": "Keywords: two descent,\n\nI found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/6955\n\n",
+    "closed_at": "2010-04-16T18:58:22Z",
     "created_at": "2009-09-18T11:03:40Z",
     "labels": [
         "component: elliptic curves",
@@ -16,8 +17,6 @@ archive/issues_006955.json:
     "user": "https://github.com/categorie"
 }
 ```
-Assignee: @loefflerd
-
 Keywords: two descent,
 
 I found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .

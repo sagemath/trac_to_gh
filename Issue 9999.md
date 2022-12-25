@@ -1,16 +1,17 @@
-# Issue 9999: GSL libary fails to install on AIX 5.3
+# Issue 9999: GSL library fails to install on AIX 5.3
 
 archive/issues_009999.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @kiwifb\n\n## Hardware and Software\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\n == The problem ==\n\n```\ngsl-1.14/src/\ngsl-1.14/src/multimin/\n\"gsl-1.14.log\" 2326 lines, 99663 characters\nmv -f .deps/print.Tpo .deps/print.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo\n -c -o make_rep.lo make_rep.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo -c make_rep.c  -DPIC -o .lib\ns/make_rep.o\nmv -f .deps/make_rep.Tpo .deps/make_rep.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c -o env\n.lo env.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c env.c  -DPIC -o .libs/env.o\nmv -f .deps/env.Tpo .deps/env.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c -o fp.lo\n fp.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c fp.c  -DPIC -o .libs/fp.o\nIn file included from fp.c:22:\nfp-aix.c: In function 'gsl_ieee_set_mode':\nfp-aix.c:30: error: 'fprnd_t' undeclared (first use in this function)\nfp-aix.c:30: error: (Each undeclared identifier is reported only once\nfp-aix.c:30: error: for each function it appears in.)\nfp-aix.c:30: error: expected ';' before 'rnd'\nfp-aix.c:55: error: 'rnd' undeclared (first use in this function)\nfp-aix.c:55: error: 'FP_RND_RN' undeclared (first use in this function)\nfp-aix.c:59: error: 'FP_RND_RM' undeclared (first use in this function)\nfp-aix.c:63: error: 'FP_RND_RP' undeclared (first use in this function)\nfp-aix.c:67: error: 'FP_RND_RZ' undeclared (first use in this function)\nmake[2]: *** [fp.lo] Error 1\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src/ieee-utils'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src'\nmake: *** [all] Error 2\nError building GSL\n\nreal    7m59.053s\nuser    5m41.085s\nsys     0m49.623s\nsage: An error occurred while installing gsl-1.14\n```\n\n == Possible Solution ==\nThe same problem has been reported before against AIX 5.2\n\nhttp://osdir.com/ml/lib.gsl.bugs/2006-06/msg00006.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/10000\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @kiwifb\n\nKeywords: gcc-bug\n\n == Hardware and Software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\n == The problem ==\n\n```\ngsl-1.14/src/\ngsl-1.14/src/multimin/\n\"gsl-1.14.log\" 2326 lines, 99663 characters\nmv -f .deps/print.Tpo .deps/print.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo\n -c -o make_rep.lo make_rep.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT make_rep.lo -MD -MP -MF .deps/make_rep.Tpo -c make_rep.c  -DPIC -o .lib\ns/make_rep.o\nmv -f .deps/make_rep.Tpo .deps/make_rep.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c -o env\n.lo env.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT env.lo -MD -MP -MF .deps/env.Tpo -c env.c  -DPIC -o .libs/env.o\nmv -f .deps/env.Tpo .deps/env.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I..    -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c -o fp.lo\n fp.c\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I.. -g -O2 -MT fp.lo -MD -MP -MF .deps/fp.Tpo -c fp.c  -DPIC -o .libs/fp.o\nIn file included from fp.c:22:\nfp-aix.c: In function 'gsl_ieee_set_mode':\nfp-aix.c:30: error: 'fprnd_t' undeclared (first use in this function)\nfp-aix.c:30: error: (Each undeclared identifier is reported only once\nfp-aix.c:30: error: for each function it appears in.)\nfp-aix.c:30: error: expected ';' before 'rnd'\nfp-aix.c:55: error: 'rnd' undeclared (first use in this function)\nfp-aix.c:55: error: 'FP_RND_RN' undeclared (first use in this function)\nfp-aix.c:59: error: 'FP_RND_RM' undeclared (first use in this function)\nfp-aix.c:63: error: 'FP_RND_RP' undeclared (first use in this function)\nfp-aix.c:67: error: 'FP_RND_RZ' undeclared (first use in this function)\nmake[2]: *** [fp.lo] Error 1\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src/ieee-utils'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/gsl-1.14/src'\nmake: *** [all] Error 2\nError building GSL\n\nreal    7m59.053s\nuser    5m41.085s\nsys     0m49.623s\nsage: An error occurred while installing gsl-1.14\n```\n\n## Solution\n#11357\n\nIssue created by migration from https://trac.sagemath.org/ticket/10000\n\n",
+    "closed_at": "2011-05-31T09:48:16Z",
     "created_at": "2010-09-24T02:40:44Z",
     "labels": [
         "component: porting: aix or hp-ux",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "GSL libary fails to install on AIX 5.3",
+    "title": "GSL library fails to install on AIX 5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9999",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -20,7 +21,9 @@ Assignee: drkirkby
 
 CC:  @kiwifb
 
-## Hardware and Software
+Keywords: gcc-bug
+
+ == Hardware and Software ==
 * IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)
 * 4 x 332 MHz 32-bit PowerPC CPUs
 * 3 GB RAM
@@ -73,10 +76,8 @@ sys     0m49.623s
 sage: An error occurred while installing gsl-1.14
 ```
 
- == Possible Solution ==
-The same problem has been reported before against AIX 5.2
-
-http://osdir.com/ml/lib.gsl.bugs/2006-06/msg00006.html
+## Solution
+#11357
 
 Issue created by migration from https://trac.sagemath.org/ticket/10000
 

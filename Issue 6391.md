@@ -3,11 +3,11 @@
 archive/issues_006391.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin nborie @robertwb jeremywest @gvol davidm @kini @kcrisman @nthiery jpflori simonking\n\nThere's libSingular, there's libPari, and next we need to create libGAP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6391\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin nborie @robertwb jeremywest @gvol davidm @kini @kcrisman @nthiery jpflori simonking\n\nThere's libSingular, there's libPari, and next we need to create libGAP.  \n\nTo try it out,\n* Install http://boxen.math.washington.edu/home/dima/packages/gap-4.5.6.spkg from #13211\n* Install http://www.stp.dias.ie/~vbraun/Sage/spkg/libgap-4.5.6.spkg\n* Apply [attachment:trac_6391_libGAP.patch] to the Sage library\n* Apply [attachment:trac_6391_libGAP_root.patch] to the root repository\n\nCode in `sage/libs/gap/test/` demonstrates an interface to `libgap` from C. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6391\n\n",
+    "closed_at": "2012-12-27T10:30:42Z",
     "created_at": "2009-06-23T21:59:35Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libGAP!  -- create a Cython library interface to gap",
@@ -20,7 +20,15 @@ Assignee: @williamstein
 
 CC:  @burcin nborie @robertwb jeremywest @gvol davidm @kini @kcrisman @nthiery jpflori simonking
 
-There's libSingular, there's libPari, and next we need to create libGAP.
+There's libSingular, there's libPari, and next we need to create libGAP.  
+
+To try it out,
+* Install http://boxen.math.washington.edu/home/dima/packages/gap-4.5.6.spkg from #13211
+* Install http://www.stp.dias.ie/~vbraun/Sage/spkg/libgap-4.5.6.spkg
+* Apply [attachment:trac_6391_libGAP.patch] to the Sage library
+* Apply [attachment:trac_6391_libGAP_root.patch] to the root repository
+
+Code in `sage/libs/gap/test/` demonstrates an interface to `libgap` from C. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6391
 

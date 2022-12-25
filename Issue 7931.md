@@ -3,7 +3,8 @@
 archive/issues_007931.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: finite fields, nth root\n\nImplements an algorithm described in \n{{\nJohnston, Anna M. A generalized qth root algorithm. \nProceedings of the tenth annual ACM-SIAM symposium on Discrete algorithms. \nBaltimore, 1999: pp 929-930.\n}}}\n\nThis means we can take nth roots with large n, since we no longer need to create the polynomial x^n-a.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7931\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @robertwb\n\nKeywords: finite fields, nth root\n\nImplements an algorithm described in \n\n```\nJohnston, Anna M. A generalized qth root algorithm. \nProceedings of the tenth annual ACM-SIAM symposium on Discrete algorithms. \nBaltimore, 1999: pp 929-930.\n```\n\nThis means we can take nth roots with large n, since we no longer need to create the polynomial x<sup>n</sup> - a.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7931\n\n",
+    "closed_at": "2011-02-07T08:14:22Z",
     "created_at": "2010-01-14T15:27:30Z",
     "labels": [
         "component: algebra"
@@ -15,20 +16,21 @@ archive/issues_007931.json:
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @aghitza
+Assignee: @roed314
 
 CC:  @robertwb
 
 Keywords: finite fields, nth root
 
 Implements an algorithm described in 
-{{
+
+```
 Johnston, Anna M. A generalized qth root algorithm. 
 Proceedings of the tenth annual ACM-SIAM symposium on Discrete algorithms. 
 Baltimore, 1999: pp 929-930.
-}}}
+```
 
-This means we can take nth roots with large n, since we no longer need to create the polynomial x^n-a.
+This means we can take nth roots with large n, since we no longer need to create the polynomial x<sup>n</sup> - a.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7931
 

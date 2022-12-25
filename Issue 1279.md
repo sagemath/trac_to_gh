@@ -1,22 +1,23 @@
-# Issue 1279: LLL on "tall" matrices immediately crashes sage
+# Issue 1279: [with spkg, with positive review] LLL on "tall" matrices immediately crashes sage
 
 archive/issues_001279.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
+    "body": "Assignee: @malb\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
+    "closed_at": "2007-12-01T18:12:00Z",
     "created_at": "2007-11-26T08:38:20Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "LLL on \"tall\" matrices immediately crashes sage",
+    "title": "[with spkg, with positive review] LLL on \"tall\" matrices immediately crashes sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1279",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 If you create an n x m matrix over ZZ in sage with n > m, then 
 run the LLL algorithm on it (fplll), Sage completely terminates.

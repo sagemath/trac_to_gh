@@ -4,6 +4,7 @@ archive/issues_001251.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nThe tut.tex file needed a few updates and corrections. The patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut20071123.hg\nThe new latex file (which passes sage -t) is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut.tex\nI also tried to change the file copyright.tex (which is\nin the commontex subdirectory). I don't think the changes stuck, but\nthe revised version is at\nhttp://sage.math.washington.edu/home/wdj/patches/copyright.tex\n(The old one said \"See the end of this document for licensing\ninformation. However, those sections were commented out, so I just\ncopied some lines from the start of the wiki.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1251\n\n",
+    "closed_at": "2007-11-25T04:55:56Z",
     "created_at": "2007-11-23T22:54:56Z",
     "labels": [
         "component: documentation",

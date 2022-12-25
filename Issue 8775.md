@@ -3,7 +3,8 @@
 archive/issues_008775.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):\n\n```\nsage: a = sqrt(-3) \nsage: a \nsqrt(-3) \nsage: a.conjugate() \nsqrt(-3) \nsage: bool(a==a.conjugate()) \nTrue \n```\nCould this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8775\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):\n\n```\nsage: a = sqrt(-3) \nsage: a \nsqrt(-3) \nsage: a.conjugate() \nsqrt(-3) \nsage: bool(a==a.conjugate()) \nTrue \n```\nCould this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8775\n\n",
+    "closed_at": "2010-11-11T13:42:34Z",
     "created_at": "2010-04-27T01:02:12Z",
     "labels": [
         "component: symbolics",
@@ -18,6 +19,8 @@ archive/issues_008775.json:
 }
 ```
 Assignee: @burcin
+
+Keywords: pynac
 
 From [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):
 

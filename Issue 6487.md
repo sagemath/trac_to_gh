@@ -4,6 +4,7 @@ archive/issues_006487.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:\nsage: sage: s = SFASchur(QQ)\nsage: sage: s([2]).plethysm(s.zero_element())\nsage.bin:\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\n| Type notebook() for the GUI, and license() for information.        |\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\nThis problem also exists with sage-4.0.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6487\n\n",
+    "closed_at": "2010-05-06T16:02:48Z",
     "created_at": "2009-07-08T19:17:28Z",
     "labels": [
         "component: combinatorics",

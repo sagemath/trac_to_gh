@@ -1,21 +1,24 @@
-# Issue 6524: Ratio of two symbolic expressions involving derivative does not simplify
+# Issue 6524: [with patch, positive review] Ratio of two symbolic expressions involving derivative does not simplify
 
 archive/issues_006524.json:
 ```json
 {
-    "body": "In new symbolics, ratio of two symbolic expressions involving derivative does not simplify\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = f(x).diff(x)*sin(x)\nsage: h/g\nsin(x)*D[0](f)(x)/D[0](f)(x)\n```\n\n\nHowever, for some ordering it does simplify\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = sin(x)*f(x).diff(x)\nsage: h/g\nsin(x)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6524\n\n",
+    "body": "Assignee: @burcin\n\nIn new symbolics, ratio of two symbolic expressions involving derivative does not simplify\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = f(x).diff(x)*sin(x)\nsage: h/g\nsin(x)*D[0](f)(x)/D[0](f)(x)\n```\n\n\nHowever, for some ordering it does simplify\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = sin(x)*f(x).diff(x)\nsage: h/g\nsin(x)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6524\n\n",
+    "closed_at": "2009-09-25T22:46:38Z",
     "created_at": "2009-07-13T12:18:10Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Ratio of two symbolic expressions involving derivative does not simplify",
+    "title": "[with patch, positive review] Ratio of two symbolic expressions involving derivative does not simplify",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6524",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Assignee: @burcin
+
 In new symbolics, ratio of two symbolic expressions involving derivative does not simplify
 
 ```

@@ -3,7 +3,8 @@
 archive/issues_006623.json:
 ```json
 {
-    "body": "Keywords: binomial, leak\n\nThere appears to be a memory leak when repeatedly calling binomial with different parameters.  This sometimes also appears when the parameters to binomial are not varied, but is not consistent.  This is a problem for the Combinations rank code, which makes many repeated calls to binomial.\n\n```\nsage: import random\nprint get_memory_usage()\nfor i in xrange(100000):\n    x=random.randint(10,100)\n    y=random.randint(0,x)\n    r=binomial(x,y)\nprint get_memory_usage()\n\n730.6328125\n736.5625\n```\n\nThe output is from running the code in Sage 4.1 on sagenb.org.  I think the same problem may involve the symbolic backend and GiNaC, since the same problem also occurs with log.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6623\n\n",
+    "body": "Keywords: binomial, leak\n\nThere appears to be a memory leak when repeatedly calling binomial with different parameters.  This sometimes also appears when the parameters to binomial are not varied, but is not consistent.  This is a problem for the Combinations rank code, which makes many repeated calls to binomial.\n\n```\nsage: import random\nprint get_memory_usage()\nfor i in xrange(100000):\n    x=random.randint(10,100)\n    y=random.randint(0,x)\n    r=binomial(x,y)\nprint get_memory_usage()\n\n730.6328125\n736.5625\n```\n\nThe output is from running the code in Sage 4.1 on sagenb.org.  I think the same problem may involve the symbolic backend and GiNaC, since the same problem also occurs with log. See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/5d202080e85ab1b8/2d71601ce86d7645) thread for some background discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6623\n\n",
+    "closed_at": "2013-07-23T15:02:36Z",
     "created_at": "2009-07-26T01:41:23Z",
     "labels": [
         "component: symbolics",
@@ -33,7 +34,7 @@ print get_memory_usage()
 736.5625
 ```
 
-The output is from running the code in Sage 4.1 on sagenb.org.  I think the same problem may involve the symbolic backend and GiNaC, since the same problem also occurs with log.
+The output is from running the code in Sage 4.1 on sagenb.org.  I think the same problem may involve the symbolic backend and GiNaC, since the same problem also occurs with log. See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/5d202080e85ab1b8/2d71601ce86d7645) thread for some background discussion.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6623
 

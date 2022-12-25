@@ -1,16 +1,17 @@
-# Issue 7982: sage_fortran on Open Solaris 64 bit is the wrong thing
+# Issue 7982: sage_fortran is not working properly on Open Solaris x64 in 64 bit mode
 
 archive/issues_007982.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby\n\nThe fortran-20071120.p9.spkg does not build well on Open Solaris 64 bit. It defaults to 32 bit.\n\nWhat is the way to go?\n\n1) try to build g95 from src\n\nor \n\n2) export SAGE_FORTRAN='path to gfortran'\n   export SAGE_FORTAN_LIB='path to lib/amd64/libfortran.so\n\nI all cases there must be a way to inserting the compiler option -m64\nin sage_fortran.\n\nFor now I went for 2) and edited the file by hand.\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7982\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby\n\nThe fortran-20071120.p9.spkg does not build well on Open Solaris 64 bit. It defaults to 32 bit.\n\nWhat is the way to go?\n\n1) try to build g95 from src\n\nor \n\n2) export SAGE_FORTRAN='path to gfortran'\n   export SAGE_FORTAN_LIB='path to lib/amd64/libgfortran.so\n\nI all cases there must be a way to inserting the compiler option -m64\nin sage_fortran.\n\nFor now I went for 2) and edited the file by hand.\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7982\n\n",
+    "closed_at": "2010-06-25T15:47:50Z",
     "created_at": "2010-01-18T19:14:43Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "sage_fortran on Open Solaris 64 bit is the wrong thing",
+    "title": "sage_fortran is not working properly on Open Solaris x64 in 64 bit mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7982",
     "user": "https://github.com/jaapspies"
@@ -29,7 +30,7 @@ What is the way to go?
 or 
 
 2) export SAGE_FORTRAN='path to gfortran'
-   export SAGE_FORTAN_LIB='path to lib/amd64/libfortran.so
+   export SAGE_FORTAN_LIB='path to lib/amd64/libgfortran.so
 
 I all cases there must be a way to inserting the compiler option -m64
 in sage_fortran.
@@ -46,6 +47,8 @@ jaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran
 
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7982
 

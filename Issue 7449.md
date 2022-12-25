@@ -1,16 +1,17 @@
-# Issue 7449: Some doc request hangs sage eating all memory.
+# Issue 7449: Some doc request hangs sage eating all memory
 
 archive/issues_007449.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @hivert @nthiery\n\nKeywords: doc\n\nIf I type\n\n```\nsage: MS = MatrixSpace(QQ,6,6,sparse=True); MS\nFull MatrixSpace of 6 by 6 sparse matrices over Rational Field\nsage: MS?\n```\nThen sage hangs eating all the memory. I don't have the less idea why it happens with `MatrixSpace`. I didn't try very hard but I can't manage any other request with the same effect. I checked that this is not a problem of installation on my computer: It happens as well on boxen. Though, on the contrary to my own computer, I didn't check that it effectively eat all the memory on boxen ;-)\n\nCheers,\n\nFlorent\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7449\n\n",
+    "closed_at": "2009-11-17T06:05:10Z",
     "created_at": "2009-11-12T21:49:17Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Some doc request hangs sage eating all memory.",
+    "title": "Some doc request hangs sage eating all memory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7449",
     "user": "https://github.com/hivert"

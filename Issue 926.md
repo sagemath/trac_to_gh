@@ -1,22 +1,23 @@
-# Issue 926: MPolynomial Iterator
+# Issue 926: [with patch] MPolynomial Iterator
 
 archive/issues_000926.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nSAGE should support iterating over sparse multivariate polynomials like this:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3)\nsage: f= 3*x^3*y + 16*x + 7\nsage: for c,m in f:\n....:     print c,m\n....:\n3, x^3*y\n16, x\n7,1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/926\n\n",
+    "body": "Assignee: @robertwb\n\nSAGE should support iterating over sparse multivariate polynomials like this:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3)\nsage: f= 3*x^3*y + 16*x + 7\nsage: for c,m in f:\n....:     print c,m\n....:\n3, x^3*y\n16, x\n7,1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/926\n\n",
+    "closed_at": "2007-10-21T03:24:11Z",
     "created_at": "2007-10-19T09:59:18Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "MPolynomial Iterator",
+    "title": "[with patch] MPolynomial Iterator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/926",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @malb
+Assignee: @robertwb
 
 SAGE should support iterating over sparse multivariate polynomials like this:
 

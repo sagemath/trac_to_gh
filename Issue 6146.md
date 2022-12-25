@@ -1,16 +1,17 @@
-# Issue 6146: [with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)
+# Issue 6146: the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)
 
 archive/issues_006146.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nSee #5852.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6146\n\n",
+    "closed_at": "2011-08-18T21:37:57Z",
     "created_at": "2009-05-28T07:00:10Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)",
+    "title": "the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6146",
     "user": "https://github.com/williamstein"

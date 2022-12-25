@@ -3,7 +3,8 @@
 archive/issues_007482.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCollege teacher often say that by far the biggest obstruction to people switching from Maple to Sage is that:\n\n (1) symbolic variables don't magically spring into existence when used\n\n (2) one has to use object oriented notation---foo.bar(...)---to access methods of an object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7482\n\n",
+    "body": "Assignee: tbd\n\nThis depends on #7514. \n\n\nCollege teacher often say that by far the biggest obstruction to people switching from Maple to Sage is that:\n\n\n (1) symbolic variables don't magically spring into existence when used\n\n (2) one has to use object oriented notation---foo.bar(...)---to access methods of an object. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7482\n\n",
+    "closed_at": "2010-01-04T06:43:58Z",
     "created_at": "2009-11-17T22:20:48Z",
     "labels": [
         "component: misc"
@@ -17,11 +18,17 @@ archive/issues_007482.json:
 ```
 Assignee: tbd
 
+This depends on #7514. 
+
+
 College teacher often say that by far the biggest obstruction to people switching from Maple to Sage is that:
+
 
  (1) symbolic variables don't magically spring into existence when used
 
- (2) one has to use object oriented notation---foo.bar(...)---to access methods of an object.
+ (2) one has to use object oriented notation---foo.bar(...)---to access methods of an object. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7482
 

@@ -1,9 +1,10 @@
-# Issue 6919: basic arithmetic using FLINT is broken (very serious!)
+# Issue 6919: [with patch and spkg, positive review] basic arithmetic using FLINT is broken (very serious!)
 
 archive/issues_006919.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  wbhart @burcin\n\nMariah Lenox reported:\n\n```\nR.<x> = PolynomialRing(ZZ)\nA = 2^(2^17+2^15)  # note the 2 rather than the \"s\"\na = A * x^31\nb = (A * x) * x^30\na == b   # prints \"False\" ???\n```\n\nBut\n\n```\nR.<x> = PolynomialRing(ZZ, implementation='NTL')\nA = 2^(2^17+2^15)  # note the 2 rather than the \"s\"\na = A * (x^31)\nb = A * x * (x^30)\na == b   \n```\ngives True.  So this is definitely either a bug in FLINT (highly likely), or a bug in our wrapper (much less likely, since our wrapper is so generic:\n\n```\ncpdef RingElement _mul_(self, RingElement right):\n    r\"\"\"\n    Returns self multiplied by right.\n\n    EXAMPLES::\n\n        sage: R.<x> = PolynomialRing(ZZ)\n        sage: (x - 2)*(x^2 - 8*x + 16)\n        x^3 - 10*x^2 + 32*x - 32\n    \"\"\"\n    cdef Polynomial_integer_dense_flint x = self._new()\n    _sig_on\n    fmpz_poly_mul(x.__poly, self.__poly,\n            (<Polynomial_integer_dense_flint>right).__poly)\n    _sig_off\n    return x\n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6919\n\n",
+    "closed_at": "2009-09-27T03:40:12Z",
     "created_at": "2009-09-10T18:56:51Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_006919.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "basic arithmetic using FLINT is broken (very serious!)",
+    "title": "[with patch and spkg, positive review] basic arithmetic using FLINT is broken (very serious!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6919",
     "user": "https://github.com/williamstein"

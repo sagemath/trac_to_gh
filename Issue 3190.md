@@ -1,16 +1,17 @@
-# Issue 3190: add 64 bit OSX build support to zodb
+# Issue 3190: [with spkg, positive review] add 64 bit OSX build support to zodb
 
 archive/issues_003190.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3190\n\n",
+    "closed_at": "2008-05-19T05:24:22Z",
     "created_at": "2008-05-13T14:26:27Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to zodb",
+    "title": "[with spkg, positive review] add 64 bit OSX build support to zodb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3190",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

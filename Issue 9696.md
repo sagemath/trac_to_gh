@@ -4,6 +4,7 @@ archive/issues_009696.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @loefflerd @JohnCremona\n\nPatch adds `is_cyclic()` and `_latex_()` methods to the `AdditiveAbelianGroup`s.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9696\n\n",
+    "closed_at": "2010-09-15T10:40:03Z",
     "created_at": "2010-08-06T06:22:59Z",
     "labels": [
         "component: group theory",

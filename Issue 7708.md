@@ -1,25 +1,24 @@
-# Issue 7708: upgrade openopt spkg to 0.27
+# Issue 7708: upgrade openopt spkg to 0.29
 
 archive/issues_007708.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n[announcement was here](http://groups.google.com/group/sage-support/browse_thread/thread/ddc22bcd971b69fd)\n\n[http://openopt.org/](http://openopt.org/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7708\n\n",
+    "body": "Assignee: @haraldschilly\n\n[http://openopt.org/](http://openopt.org/) latest version of the OOSuite is 0.29\n\nIssue created by migration from https://trac.sagemath.org/ticket/7708\n\n",
+    "closed_at": "2010-08-18T16:21:10Z",
     "created_at": "2009-12-16T10:40:58Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "upgrade openopt spkg to 0.27",
+    "title": "upgrade openopt spkg to 0.29",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7708",
     "user": "https://github.com/haraldschilly"
 }
 ```
-Assignee: tbd
+Assignee: @haraldschilly
 
-[announcement was here](http://groups.google.com/group/sage-support/browse_thread/thread/ddc22bcd971b69fd)
-
-[http://openopt.org/](http://openopt.org/)
+[http://openopt.org/](http://openopt.org/) latest version of the OOSuite is 0.29
 
 Issue created by migration from https://trac.sagemath.org/ticket/7708
 

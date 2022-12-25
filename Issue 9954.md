@@ -4,6 +4,7 @@ archive/issues_009954.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis is inconsistent\n\n```\nsage: Rational(3)%Rational(-1)\nZeroDivisionError: Inverse does not exist.\n```\n\nbut\n\n```\nsage: 3%(-1)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9955\n\n",
+    "closed_at": "2011-02-07T08:13:53Z",
     "created_at": "2010-09-20T18:20:29Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,9 +1,10 @@
-# Issue 4929: [with patch, needs review] 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation
+# Issue 4929: [with patch, positive review] 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation
 
 archive/issues_004929.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn #4847 we removed sage/functions/elementary.py from Sage since it was dead code. But it is part of the documentation, so remove it from ref/files.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4929\n\n",
+    "body": "Assignee: mabshoff\n\nIn #4847 we removed sage/functions/elementary.py from Sage since it was dead code. But it is part of the documentation, so remove it from ref/files.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4929\n\n",
+    "closed_at": "2009-01-03T03:50:34Z",
     "created_at": "2009-01-03T03:16:59Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_004929.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch, needs review] 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation",
+    "title": "[with patch, positive review] 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4929",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 In #4847 we removed sage/functions/elementary.py from Sage since it was dead code. But it is part of the documentation, so remove it from ref/files.
 

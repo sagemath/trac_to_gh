@@ -1,22 +1,23 @@
-# Issue 3125: chromatic_polynomial incorrectly blocks control-c
+# Issue 3125: [with patch, positive review] chromatic_polynomial incorrectly blocks control-c
 
 archive/issues_003125.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nTry this:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n[control-c]\n```\n\ncontrol-c is ignored.  Probably somebody doesn't understand _sig_on/_sig_off!\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3125\n\n",
+    "body": "Assignee: @rlmill\n\nTry this:\n\n```\nsage: graphs.CubeGraph(5).chromatic_polynomial()\n[control-c]\n```\n\ncontrol-c is ignored.  Probably somebody doesn't understand _sig_on/_sig_off!\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3125\n\n",
+    "closed_at": "2008-05-11T10:43:49Z",
     "created_at": "2008-05-07T16:14:33Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "chromatic_polynomial incorrectly blocks control-c",
+    "title": "[with patch, positive review] chromatic_polynomial incorrectly blocks control-c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3125",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 Try this:
 

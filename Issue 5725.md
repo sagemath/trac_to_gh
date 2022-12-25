@@ -1,16 +1,17 @@
-# Issue 5725: [with patch; needs review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences
+# Issue 5725: [with patch; positive review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences
 
 archive/issues_005725.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nBring up the coverage of sequence.py from 59% to 100%.  Also, sequences allowed hashing even when they are mutable which *breaks* all the Python algorithms that rely on hashing!  This was because I didn't understand this fast about Python when I implemented Sequences.  \n\nIf there is any fallout as a result of eliminating hashing, then that other code must be fixed, because it would surely exhibit subtle bugs. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5725\n\n",
+    "closed_at": "2009-04-09T09:10:57Z",
     "created_at": "2009-04-09T08:34:53Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences",
+    "title": "[with patch; positive review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5725",
     "user": "https://github.com/williamstein"

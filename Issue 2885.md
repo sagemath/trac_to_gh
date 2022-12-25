@@ -1,15 +1,16 @@
-# Issue 2885: make a knoboo optional package
+# Issue 2885: [with spkg; positive review] make a knoboo optional package
 
 archive/issues_002885.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2885\n\n",
+    "closed_at": "2008-04-12T01:10:30Z",
     "created_at": "2008-04-11T23:54:32Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "make a knoboo optional package",
+    "title": "[with spkg; positive review] make a knoboo optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2885",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 6093: [with patch, needs review] module to read ext_rep format of combinatorial designs
+# Issue 6093: [with patch, positive review] module to read ext_rep format of combinatorial designs
 
 archive/issues_006093.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nAdds documentation and doctests to the pydesign module ext_rep for reading combinatorial designs from http://designtheory.org/database/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6093\n\n",
+    "closed_at": "2009-06-03T20:28:12Z",
     "created_at": "2009-05-20T08:16:47Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] module to read ext_rep format of combinatorial designs",
+    "title": "[with patch, positive review] module to read ext_rep format of combinatorial designs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6093",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"

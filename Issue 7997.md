@@ -1,15 +1,16 @@
-# Issue 7997: Use ast to replace display hook hack
+# Issue 7997: Use ast to replace display hook hack, and replace pexpect based WorksheetProcess classes with Pipe-based ones
 
 archive/issues_007997.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton\n\nSee http://docs.python.org/library/ast.html#ast.NodeTransformer\n\nReplace any Expr node in the ast tree with a function call to\n\n```\ndef __print_if_not_none(expr):\n    if expr is not None:\n        print expr\n```\nAn Expr node is anything like\n\n```\n123\ndo_foo()\nfor i in range(10):\n    i\n```\nWhich will be replaced by\n\n```\n__print_if_not_none(123)\n__print_if_not_none(do_foo())\nfor i in range(10):\n    __print_if_not_none(i)\n```\nWhich will output\n\n```\n123\n0\n1\n...\n9\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton\n\nPlease see ticket:7997:comment:10 for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
+    "closed_at": "2020-08-29T15:27:48Z",
     "created_at": "2010-01-19T15:09:00Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Use ast to replace display hook hack",
+    "title": "Use ast to replace display hook hack, and replace pexpect based WorksheetProcess classes with Pipe-based ones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7997",
     "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
@@ -19,40 +20,7 @@ Assignee: @williamstein
 
 CC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton
 
-See http://docs.python.org/library/ast.html#ast.NodeTransformer
-
-Replace any Expr node in the ast tree with a function call to
-
-```
-def __print_if_not_none(expr):
-    if expr is not None:
-        print expr
-```
-An Expr node is anything like
-
-```
-123
-do_foo()
-for i in range(10):
-    i
-```
-Which will be replaced by
-
-```
-__print_if_not_none(123)
-__print_if_not_none(do_foo())
-for i in range(10):
-    __print_if_not_none(i)
-```
-Which will output
-
-```
-123
-0
-1
-...
-9
-```
+Please see ticket:7997:comment:10 for more details.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7997
 

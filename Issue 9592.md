@@ -1,26 +1,30 @@
-# Issue 9592: Upgrade lcalc to pari 2.4.3
+# Issue 9592: Upgrade lcalc to work with Pari svn snapshot 12577 - a pre-release of Pari 2.4.3
 
 archive/issues_009592.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nAfter upgrading PARI/GP to version 2.4.3 (#9343), lcalc no longer compiles properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9592\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @JohnCremona\n\nAfter upgrading PARI/GP to a snapshot based on a pre-release of 2.4.3 (#9343), lcalc no longer compiles properly.\n\nSee [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9592\n\n",
+    "closed_at": "2010-09-10T11:19:19Z",
     "created_at": "2010-07-24T11:57:12Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Upgrade lcalc to pari 2.4.3",
+    "title": "Upgrade lcalc to work with Pari svn snapshot 12577 - a pre-release of Pari 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9592",
     "user": "https://github.com/jdemeyer"
 }
 ```
-Assignee: tbd
+Assignee: @jdemeyer
 
 CC:  @JohnCremona
 
-After upgrading PARI/GP to version 2.4.3 (#9343), lcalc no longer compiles properly.
+After upgrading PARI/GP to a snapshot based on a pre-release of 2.4.3 (#9343), lcalc no longer compiles properly.
+
+See [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9592
 

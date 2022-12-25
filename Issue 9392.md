@@ -4,6 +4,7 @@ archive/issues_009392.json:
 ```json
 {
     "body": "Assignee: jason, jkantor\n\nCC:  @rlmill @nexttime\n\nNot really broken, but subject to change of behaviours depending on the solver used.... ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9392\n\n",
+    "closed_at": "2010-07-05T22:33:49Z",
     "created_at": "2010-06-30T05:46:10Z",
     "labels": [
         "component: numerical",

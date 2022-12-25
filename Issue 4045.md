@@ -1,16 +1,17 @@
-# Issue 4045: [with patch, needs review] fix PolyBoRi GB calculations in some situations
+# Issue 4045: [with patch, positive review] fix PolyBoRi GB calculations in some situations
 
 archive/issues_004045.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  rpw\n\nKeywords: polybori\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4045\n\n",
+    "closed_at": "2008-09-03T15:42:20Z",
     "created_at": "2008-09-03T13:37:52Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] fix PolyBoRi GB calculations in some situations",
+    "title": "[with patch, positive review] fix PolyBoRi GB calculations in some situations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4045",
     "user": "https://github.com/malb"

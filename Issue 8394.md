@@ -4,6 +4,7 @@ archive/issues_008394.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  wcauchois boothby\n\nKeywords: doctests, coverage, plotting\n\nThe adaptive refinement code in tri_plot.py has almost no docstrings or tests.  However, there are a lot of helpful comments in the code, and the file is not very long, so it should be pretty easy to bring this up to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8394\n\n",
+    "closed_at": "2010-04-29T05:28:31Z",
     "created_at": "2010-02-28T14:48:33Z",
     "labels": [
         "component: graphics",

@@ -4,6 +4,7 @@ archive/issues_007768.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: reference manual\n\nWith Sage 4.3, building the PDF version of the reference manual hangs at the line:\n\n```\n! Missing $ inserted.\n<inserted text> \n                $\nl.164972 $\\mbox{min_bound} \n                           \\leq \\mbox{linear_function} \\leq \\mbox{max_bound}$\n```\nThis is due to the docstring of the method `constraints()` in `sage/numerical/mip.pyx`. The attached patch should fix the docstring formatting and allow the PDF version of the reference manual to build successfully.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7768\n\n",
+    "closed_at": "2010-01-03T21:24:04Z",
     "created_at": "2009-12-26T13:33:58Z",
     "labels": [
         "component: documentation",

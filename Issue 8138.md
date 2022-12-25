@@ -1,9 +1,10 @@
-# Issue 8138: Single-column index in PDF documentation
+# Issue 8138: Single-column index in PDF reference manual
 
 archive/issues_008138.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx's LaTeX and PDF builders output two-column indexes / indices, but the badness is high.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8138\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx's LaTeX builder makes two-column indexes / indices, but the badness can be high.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8138\n\n",
+    "closed_at": "2010-02-11T14:53:37Z",
     "created_at": "2010-01-31T09:45:31Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_008138.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Single-column index in PDF documentation",
+    "title": "Single-column index in PDF reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8138",
     "user": "https://github.com/qed777"
@@ -21,7 +22,7 @@ Assignee: mvngu
 
 CC:  @jhpalmieri
 
-Sphinx's LaTeX and PDF builders output two-column indexes / indices, but the badness is high.
+Sphinx's LaTeX builder makes two-column indexes / indices, but the badness can be high.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8138
 

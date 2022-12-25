@@ -1,26 +1,35 @@
-# Issue 1452: GAP - id120.z file missing (?)
+# Issue 1452: [with GAP spkg, needs review] Guava - in gap-4.4.10, Leon's code is never compiled
 
 archive/issues_001452.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @wdjoyner\n\nRunning doctests on permgroup.py complains that file `id120.z` is missing. Indeed it is!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1452\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nThe source is included here:\n`local/lib/gap-4.4.10/pkg/guava3.1/src/leon/src`\n\n\nI did a separate spkg for this software, which is here:\n\nhttp://sage.math.washington.edu/home/rlmill/leon-0.2.spkg\n\nIt includes autoconf tweaking goodness, etc. So the work for this is done, minus moving the autoconf stuff over to the gap-4.4.10 spkg. I'm assuming this should be upstream, in Guava itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1452\n\n",
+    "closed_at": "2008-03-31T20:30:55Z",
     "created_at": "2007-12-10T19:29:19Z",
     "labels": [
-        "component: combinatorics",
+        "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "GAP - id120.z file missing (?)",
+    "title": "[with GAP spkg, needs review] Guava - in gap-4.4.10, Leon's code is never compiled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1452",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 CC:  @wdjoyner
 
-Running doctests on permgroup.py complains that file `id120.z` is missing. Indeed it is!
+The source is included here:
+`local/lib/gap-4.4.10/pkg/guava3.1/src/leon/src`
+
+
+I did a separate spkg for this software, which is here:
+
+http://sage.math.washington.edu/home/rlmill/leon-0.2.spkg
+
+It includes autoconf tweaking goodness, etc. So the work for this is done, minus moving the autoconf stuff over to the gap-4.4.10 spkg. I'm assuming this should be upstream, in Guava itself.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1452
 

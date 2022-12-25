@@ -1,16 +1,17 @@
-# Issue 9643: Force ECL to disable assembly code on Solaris 10 as it does on OpenSolaris
+# Issue 9643: Force ECL to disable assembly code on Solaris 10 x86 as it does on OpenSolaris
 
 archive/issues_009643.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies mariah @qed777\n\n#9474 disabled assembly code in ECL if the following three conditions were all met\n\n* OpenSolaris  (also known as Solaris 11 or SunOS 5.11)\n* x64 platform\n* 64-bit build\n\nThese conditions were checked, by testing the output of `uname -rsm`, which was: \n\n```\ndrkirkby@hawk:~$ uname -rsm\nSunOS 5.11 i86pc\n```\n\nA note was added in `spkg-install` that it might be necessary to disable the assembly code on other variants of Solaris, but I was unsure at the time. \n\nJohn Palmieri has discovered ECL fails to build on Solaris 10 with the x64 processor in 64-bit mode. So the conditions for disabling the assembly code needs to be made less strict, as the release number (5.10 for Solaris 10, 5.11 for OpenSolaris), must be ignored. Instead the test will use `uname -sm`, dropping the `-r` option which checked the release. \n\n```\ndrkirkby@hawk:~$ uname -sm\nSunOS i86pc\n```\n\nThis should be a very easy fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9643\n\n",
+    "closed_at": "2010-08-15T08:03:49Z",
     "created_at": "2010-07-29T23:30:46Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Force ECL to disable assembly code on Solaris 10 as it does on OpenSolaris",
+    "title": "Force ECL to disable assembly code on Solaris 10 x86 as it does on OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9643",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

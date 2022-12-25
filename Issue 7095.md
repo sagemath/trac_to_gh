@@ -3,7 +3,8 @@
 archive/issues_007095.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAfter testing sage-4.1.2.rc0 (and applying a tiny numerical noise fix), we have 12 files that all fail doctests with \"myserious error\":\n\n```\nwstein@bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l\n      12\n```\n\nThe files with failures are:\n\n```\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/calculus/tests.py\"\n        sage -t -long \"devel/sage/sage/calculus/wester.py\"\n        sage -t -long \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t -long \"devel/sage/sage/functions/other.py\"\n        sage -t -long \"devel/sage/sage/functions/trig.py\"\n        sage -t -long \"devel/sage/sage/gsl/interpolation.pyx\"\n        sage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t -long \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/constants.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/function.pyx\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7095\n\n",
+    "body": "Assignee: tbd\n\nAfter testing sage-4.1.2.rc0 (and applying a tiny numerical noise fix), we have 12 files that all fail doctests with \"myserious error\":\n\n```\nwstein@bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l\n      12\n```\n\nThe files with failures are:\n\n```\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/calculus/tests.py\"\n        sage -t -long \"devel/sage/sage/calculus/wester.py\"\n        sage -t -long \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t -long \"devel/sage/sage/functions/other.py\"\n        sage -t -long \"devel/sage/sage/functions/trig.py\"\n        sage -t -long \"devel/sage/sage/gsl/interpolation.pyx\"\n        sage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t -long \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/constants.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/function.pyx\"\n```\n\nTo fix, use the following new spkgs, plus the two patches to the Sage library (trac-7095.patch and trac_7095-ref.patch), plus the patch to sage_scripts, plus (finally) add the new sage_env also to SAGE_ROOT/spkg/base (available only in a Sage source distribution), mind to chmod the right flags for this sage-env:\n\n- [http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg](http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg)\n\n- [http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/matplotlib-0.99.1.p4.spkg](http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/matplotlib-0.99.1.p4.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7095\n\n",
+    "closed_at": "2010-01-18T17:13:08Z",
     "created_at": "2009-10-01T20:05:26Z",
     "labels": [
         "component: porting",
@@ -42,6 +43,12 @@ The files with failures are:
         sage -t -long "devel/sage/sage/symbolic/expression.pyx"
         sage -t -long "devel/sage/sage/symbolic/function.pyx"
 ```
+
+To fix, use the following new spkgs, plus the two patches to the Sage library (trac-7095.patch and trac_7095-ref.patch), plus the patch to sage_scripts, plus (finally) add the new sage_env also to SAGE_ROOT/spkg/base (available only in a Sage source distribution), mind to chmod the right flags for this sage-env:
+
+- [http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg](http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/python-2.6.4.p4.spkg)
+
+- [http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/matplotlib-0.99.1.p4.spkg](http://sage.math.washington.edu/home/craigcitro/sage/SPKGs/matplotlib-0.99.1.p4.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7095
 

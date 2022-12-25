@@ -3,7 +3,8 @@
 archive/issues_003783.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @ncalexan simonking\n\nThe cached_method decorator from #3781 could use some improvements:\n\n```\n<mhansen> Does anyone feel up for reviewing #3781 for me?\n<ncalexan> I'll look at it, one moment.  I've wanted this for a while.\n<mhansen> Awesome.  It doesn't work on C extension types though since they don't have a __dict__.  This could be done by storing the cache in the decorator object with a weakref though.\n<ncalexan> The problem is much more complicated than this.\n<ncalexan> Okay, there are other problems too, like un-hashable arguments will break it.\n<mhansen> Yep\n<ncalexan> And there is no way to clear the cache...\n<ncalexan> And the tests don't actually demonstrate that the cache is workin.\n<ncalexan> (One could touch the cache with an incorrect answer, then verify it is \"correctly\" returning that value)\n<ncalexan> For what it is, though, it's fine.  It will hurt nothing -- shall I review positive?\n<mhansen> If you could, that'd be great.  I do know it's limitations, but there are some big patches going in that depend on it.  I'll make a ticket with your comments for improvement.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3783\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @ncalexan simonking\n\nThe cached_method decorator from #3781 could use some improvements:\n\n```\n<mhansen> Does anyone feel up for reviewing #3781 for me?\n<ncalexan> I'll look at it, one moment.  I've wanted this \nfor a while.\n<mhansen> Awesome.  It doesn't work on C extension types \nthough since they don't have a __dict__.  This could be \ndone by storing the cache in the decorator object with a \nweakref though.\n<ncalexan> The problem is much more complicated than this.\n<ncalexan> Okay, there are other problems too, like \nun-hashable arguments will break it.\n<mhansen> Yep\n<ncalexan> And there is no way to clear the cache...\n<ncalexan> And the tests don't actually demonstrate that \nthe cache is workin.\n<ncalexan> (One could touch the cache with an incorrect \nanswer, then verify it is \"correctly\" returning that value)\n<ncalexan> For what it is, though, it's fine.  It will \nhurt nothing -- shall I review positive?\n<mhansen> If you could, that'd be great.  I do know it's \nlimitations, but there are some big patches going in that \ndepend on it.  I'll make a ticket with your comments for \nimprovement.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3783\n\n",
+    "closed_at": "2015-04-26T01:45:39Z",
     "created_at": "2008-08-06T23:31:20Z",
     "labels": [
         "component: misc",
@@ -24,16 +25,27 @@ The cached_method decorator from #3781 could use some improvements:
 
 ```
 <mhansen> Does anyone feel up for reviewing #3781 for me?
-<ncalexan> I'll look at it, one moment.  I've wanted this for a while.
-<mhansen> Awesome.  It doesn't work on C extension types though since they don't have a __dict__.  This could be done by storing the cache in the decorator object with a weakref though.
+<ncalexan> I'll look at it, one moment.  I've wanted this 
+for a while.
+<mhansen> Awesome.  It doesn't work on C extension types 
+though since they don't have a __dict__.  This could be 
+done by storing the cache in the decorator object with a 
+weakref though.
 <ncalexan> The problem is much more complicated than this.
-<ncalexan> Okay, there are other problems too, like un-hashable arguments will break it.
+<ncalexan> Okay, there are other problems too, like 
+un-hashable arguments will break it.
 <mhansen> Yep
 <ncalexan> And there is no way to clear the cache...
-<ncalexan> And the tests don't actually demonstrate that the cache is workin.
-<ncalexan> (One could touch the cache with an incorrect answer, then verify it is "correctly" returning that value)
-<ncalexan> For what it is, though, it's fine.  It will hurt nothing -- shall I review positive?
-<mhansen> If you could, that'd be great.  I do know it's limitations, but there are some big patches going in that depend on it.  I'll make a ticket with your comments for improvement.
+<ncalexan> And the tests don't actually demonstrate that 
+the cache is workin.
+<ncalexan> (One could touch the cache with an incorrect 
+answer, then verify it is "correctly" returning that value)
+<ncalexan> For what it is, though, it's fine.  It will 
+hurt nothing -- shall I review positive?
+<mhansen> If you could, that'd be great.  I do know it's 
+limitations, but there are some big patches going in that 
+depend on it.  I'll make a ticket with your comments for 
+improvement.
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3783

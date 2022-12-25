@@ -4,6 +4,7 @@ archive/issues_002384.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  dmharvey @ncalexan @koffie\n\n```\n[Tue Mar 4 2008] [05:06:54] <dmharvey>  how many finite field implementations do we have?\n[Tue Mar 4 2008] [05:06:56] <dmharvey>  it's crazy.\n```\n\nI propose:\n* implement `FiniteField_ntl` which covers `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` via a bunch of function pointers. This introduces a pointer dereference as overhead but this should be relatively cheap compared to the actual operations (small fields are implemented via Givaro anyway). \n* kill `FiniteField_ext_pari` \n\nThis would leave us with two implementations: one for small extension fields and one for larger (in terms of the order)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2384\n\n",
+    "closed_at": "2008-06-12T22:55:48Z",
     "created_at": "2008-03-04T11:38:04Z",
     "labels": [
         "component: basic arithmetic",

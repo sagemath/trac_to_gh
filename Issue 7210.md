@@ -3,7 +3,8 @@
 archive/issues_007210.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMathematica has something called RevolutionPlot3D.  Maybe we should too.\n\n[http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7210\n\n",
+    "body": "Assignee: @williamstein\n\nMathematica has something called RevolutionPlot3D.  Maybe we should too.\n\n[http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html)\n\nThis is now done in #7889\n\nIssue created by migration from https://trac.sagemath.org/ticket/7210\n\n",
+    "closed_at": "2010-02-01T04:11:34Z",
     "created_at": "2009-10-14T16:57:23Z",
     "labels": [
         "component: graphics",
@@ -21,6 +22,8 @@ Assignee: @williamstein
 Mathematica has something called RevolutionPlot3D.  Maybe we should too.
 
 [http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html)
+
+This is now done in #7889
 
 Issue created by migration from https://trac.sagemath.org/ticket/7210
 

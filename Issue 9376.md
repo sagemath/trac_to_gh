@@ -4,6 +4,7 @@ archive/issues_009376.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4c65447e5e9cc900\n\nIssue created by migration from https://trac.sagemath.org/ticket/9376\n\n",
+    "closed_at": "2010-07-20T07:47:20Z",
     "created_at": "2010-06-29T17:34:29Z",
     "labels": [
         "component: modular forms",

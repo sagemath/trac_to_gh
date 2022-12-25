@@ -3,7 +3,8 @@
 archive/issues_009252.json:
 ```json
 {
-    "body": "Assignee: wjlaffin\n\nCC:  @kcrisman @embray @tscrim\n\n$'s are not escaped, multilines appear wrong, etc.\n\npatch to appear shortly\n\nIssue created by migration from https://trac.sagemath.org/ticket/9252\n\n",
+    "body": "Assignee: wjlaffin\n\nCC:  @kcrisman @embray @tscrim\n\n$'s are not escaped, multilines appear wrong, etc.\n\nThis patches the tutorial plus others so that reading the live-help leaves one with less papercuts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9252\n\n",
+    "closed_at": "2019-05-22T19:51:59Z",
     "created_at": "2010-06-17T08:03:23Z",
     "labels": [
         "component: documentation",
@@ -23,7 +24,7 @@ CC:  @kcrisman @embray @tscrim
 
 $'s are not escaped, multilines appear wrong, etc.
 
-patch to appear shortly
+This patches the tutorial plus others so that reading the live-help leaves one with less papercuts.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9252
 

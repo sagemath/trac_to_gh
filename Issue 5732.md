@@ -1,15 +1,16 @@
-# Issue 5732: digits,exact_log,ndigits speed overhaul
+# Issue 5732: [with patch, positive review] digits,exact_log,ndigits speed overhaul
 
 archive/issues_005732.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe Integer.exact_log method is very slow for small input simply because it has never been optimized for this usage.  The attached patch provides a specialized case for small input to exact log.  It also adds a super-fast path for cases when the exact_log can conveniently be computed by log 2 estimation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5732\n\n",
+    "closed_at": "2009-06-03T20:19:32Z",
     "created_at": "2009-04-10T09:55:10Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "digits,exact_log,ndigits speed overhaul",
+    "title": "[with patch, positive review] digits,exact_log,ndigits speed overhaul",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5732",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

@@ -1,9 +1,10 @@
-# Issue 2684: vertices should not default to  red
+# Issue 2684: [with patch, positive review] vertices should not default to  red
 
 archive/issues_002684.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nA student has brought up that having vertices default to red makes the number labels very difficult to read, especially for visually-impaired people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2684\n\n",
+    "closed_at": "2008-05-11T09:21:44Z",
     "created_at": "2008-03-27T14:25:42Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_002684.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "vertices should not default to  red",
+    "title": "[with patch, positive review] vertices should not default to  red",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2684",
     "user": "https://github.com/jasongrout"

@@ -1,22 +1,23 @@
-# Issue 3826: Empty string in interact prints \x00
+# Issue 3826: [with patch; positive review] Empty string in interact prints \x00
 
 archive/issues_003826.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @saliola\n\nKeywords: interact empty string\n\nIn the notebook of sage 3.0.6: \n\nWrite\n\n```\n@interact\ndef f(a=input_box(default='aaa',type=str,label='Your name :')):\n    print a\n    print [1,2,3,a]\n```\n\nThen, delete 'aaa' from the box. Press enter and the list prints like this :\n\n```\n[1, 2, 3, '\\x00']\n```\n\nwhile should be :\n\n```\n[1, 2, 3, '']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3826\n\n",
+    "body": "Assignee: @itolkov\n\nCC:  @saliola\n\nKeywords: interact empty string\n\nIn the notebook of sage 3.0.6: \n\nWrite\n\n```\n@interact\ndef f(a=input_box(default='aaa',type=str,label='Your name :')):\n    print a\n    print [1,2,3,a]\n```\n\nThen, delete 'aaa' from the box. Press enter and the list prints like this :\n\n```\n[1, 2, 3, '\\x00']\n```\n\nwhile should be :\n\n```\n[1, 2, 3, '']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3826\n\n",
+    "closed_at": "2008-08-27T01:15:47Z",
     "created_at": "2008-08-12T23:23:21Z",
     "labels": [
-        "component: notebook",
+        "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Empty string in interact prints \\x00",
+    "title": "[with patch; positive review] Empty string in interact prints \\x00",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3826",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: boothby
+Assignee: @itolkov
 
 CC:  @saliola
 

@@ -3,7 +3,8 @@
 archive/issues_001157.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n```\n\nThat is the problem, as the file is 2.2GB.  \n\n-rw------- 1 sage sage 2.2G 2007-11-07 09:52 Ubuntu.vmdk\n\nI think it's supposed to be easy (and sometimes very desirable)\nto convert a filesystem in Windows from FAT32 to NTFS.  This\nwill make the filesystem journaled, which means the person won't\nsee the \"checking the file system\" blue screen whenever Windows\ncrashes and reboots.     \n\nThat said -- vmware has an option to split virtual disks into files\nthat are all < 2GB.  I will definitely fix the vmware machine when\ni get back to Seattle to only include files that are < 2GB. However,\nthis will have to wait about a week.   \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1157\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nThat is the problem, as the file is 2.2GB.  \n\n-rw------- 1 sage sage 2.2G 2007-11-07 09:52 Ubuntu.vmdk\n\nI think it's supposed to be easy (and sometimes very desirable)\nto convert a filesystem in Windows from FAT32 to NTFS.  This\nwill make the filesystem journaled, which means the person won't\nsee the \"checking the file system\" blue screen whenever Windows\ncrashes and reboots.     \n\nThat said -- vmware has an option to split virtual disks into files\nthat are all < 2GB.  I will definitely fix the vmware machine when\ni get back to Seattle to only include files that are < 2GB. However,\nthis will have to wait about a week.   \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1157\n\n",
+    "closed_at": "2007-11-22T04:24:32Z",
     "created_at": "2007-11-12T20:54:29Z",
     "labels": [
         "component: distribution",
@@ -16,7 +17,7 @@ archive/issues_001157.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 ```
 

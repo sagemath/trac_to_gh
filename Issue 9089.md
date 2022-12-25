@@ -3,10 +3,11 @@
 archive/issues_009089.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb mhampton @kcrisman @seblabbe @ppurka\n\nIn an attempt to optimize, in some cases the __add__ method of Graphics3dGroup modifies its arguments instead of returning a new Graphics3dGroup object.  This breaks the user expectation, as illustrated below:\n\n```\na=point3d([1,0,0])+point3d([0,1,0])\nb=point3d([0,0,1])\na # shows 2 points\na+b # shows all 3 points\na # Now this shows 3 points!!!\n```\n\nThe attached patch deletes the offending optimization.  If fast summing is needed, then the user can either create a Graphics3dGroup object themselves, or use something like `sage.misc.misc.balanced_sum`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9089\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @robertwb mhampton @kcrisman @seblabbe @ppurka\n\nIn an attempt to optimize, in some cases the __add__ method of Graphics3dGroup modifies its arguments instead of returning a new Graphics3dGroup object.  This breaks the user expectation, as illustrated below:\n\n```\na=point3d([1,0,0])+point3d([0,1,0])\nb=point3d([0,0,1])\na # shows 2 points\na+b # shows all 3 points\na # Now this shows 3 points!!!\n```\n\nThe attached patch deletes the offending optimization.  If fast summing is needed, then the user can either create a Graphics3dGroup object themselves, or use something like `sage.misc.misc.balanced_sum`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9089\n\n",
+    "closed_at": "2015-03-21T09:30:42Z",
     "created_at": "2010-05-29T20:21:42Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009089.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @aghitza
+Assignee: jason, was
 
 CC:  @robertwb mhampton @kcrisman @seblabbe @ppurka
 

@@ -1,37 +1,55 @@
-# Issue 4539: [with patch, needs work] plural wrapper
+# Issue 4539: plural wrapper
 
 archive/issues_004539.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @saliola @mwhansen alexanderdreyer oleksandrmotsak polybori @malb simonking\n\nDuring SD10 in Nancy, Michael Brickenstein and I worked on making Plural (the non-commutative extension of Singular) accessible from Sage.\n\nThe patches that resulted from this work are attached. They still need to be polished to be included in Sage.\n\nPossible topics that need work are:\n* coercion\n* flag to check degeneracy conditions on init\n* put the files in sage/algebra/ ???\n* make sure element does not export functions it doesn't support (e.g. gcd)\n\nFor a full featured wrapper we also need the following (they should be separated into different bugs once this one is done):\n* groebner basis\n* predefined structures from the library\n\nIssue created by migration from https://trac.sagemath.org/ticket/4539\n\n",
+    "body": "Assignee: OleksandrMotsak, AlexanderDreyer\n\nCC:  @saliola @mwhansen alexanderdreyer oleksandrmotsak polybori @malb simonking\n\nKeywords: libsingular plural wrapper sd10 sd23.5 sd24 sd34\n\nDuring SD10 in Nancy, Michael Brickenstein and Burcin Erocal worked on making Plural (the non-commutative extension of Singular) accessible from Sage. Burcin and Michael also worked at the Plural wrapper on SD 23.5 in Kaiserslautern. Oleksandr Motsak and Alexander Dreyer continued this at SD 24 in Linz.\n\nThe patches that resulted from this work are attached.\n\nNewest functionality:\n\n* non-commutative rings/polynomials/ideals are fully featured classes now (no deriving from commutative ones)!\n* coercion from basering/Integer types (still needs tests)\n* flag to check degeneracy conditions on init\n* relations for non-commutative rings\n* most relevant functions for rings/polynomials/ideals (mostly adopted from MPolynomialRing_libsingular/MPolynomialRing_libsingular/...) e.g. std/twostd/syzygy_module/lc/lm/lt/monomial operations\n* RingWrap and TermOrder were extended\n* quick and dirty conversion of RingWrap to Sage rings (needs some care as the resulting rings may not be unique and therefore may confuse coercion)\n* quotient of a non-commutative ring by a two-sided Groebner basis\n* shortcut to create graded commutative algebras: SCA\n\nPossible topics that need work are:\n\n* put the files in sage/algebra/ ???\n* make sure element does not export functions it doesn't support (e.g. gcd)\n* predefined structures from the library\n\n**__Apply__**\n\n* [attachment:trac4539_libplural_rel11761.patch]\n* [attachment:trac4539_pickling_rel10903.patch]\n* [attachment:trac4539_normal_forms_rel10903.patch]\n* [attachment:trac4539_fix_docs_rel10903.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4539\n\n",
+    "closed_at": "2012-01-21T23:39:13Z",
     "created_at": "2008-11-17T15:27:31Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "[with patch, needs work] plural wrapper",
+    "title": "plural wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4539",
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: tbd
+Assignee: OleksandrMotsak, AlexanderDreyer
 
 CC:  @saliola @mwhansen alexanderdreyer oleksandrmotsak polybori @malb simonking
 
-During SD10 in Nancy, Michael Brickenstein and I worked on making Plural (the non-commutative extension of Singular) accessible from Sage.
+Keywords: libsingular plural wrapper sd10 sd23.5 sd24 sd34
 
-The patches that resulted from this work are attached. They still need to be polished to be included in Sage.
+During SD10 in Nancy, Michael Brickenstein and Burcin Erocal worked on making Plural (the non-commutative extension of Singular) accessible from Sage. Burcin and Michael also worked at the Plural wrapper on SD 23.5 in Kaiserslautern. Oleksandr Motsak and Alexander Dreyer continued this at SD 24 in Linz.
+
+The patches that resulted from this work are attached.
+
+Newest functionality:
+
+* non-commutative rings/polynomials/ideals are fully featured classes now (no deriving from commutative ones)!
+* coercion from basering/Integer types (still needs tests)
+* flag to check degeneracy conditions on init
+* relations for non-commutative rings
+* most relevant functions for rings/polynomials/ideals (mostly adopted from MPolynomialRing_libsingular/MPolynomialRing_libsingular/...) e.g. std/twostd/syzygy_module/lc/lm/lt/monomial operations
+* RingWrap and TermOrder were extended
+* quick and dirty conversion of RingWrap to Sage rings (needs some care as the resulting rings may not be unique and therefore may confuse coercion)
+* quotient of a non-commutative ring by a two-sided Groebner basis
+* shortcut to create graded commutative algebras: SCA
 
 Possible topics that need work are:
-* coercion
-* flag to check degeneracy conditions on init
+
 * put the files in sage/algebra/ ???
 * make sure element does not export functions it doesn't support (e.g. gcd)
-
-For a full featured wrapper we also need the following (they should be separated into different bugs once this one is done):
-* groebner basis
 * predefined structures from the library
+
+**__Apply__**
+
+* [attachment:trac4539_libplural_rel11761.patch]
+* [attachment:trac4539_pickling_rel10903.patch]
+* [attachment:trac4539_normal_forms_rel10903.patch]
+* [attachment:trac4539_fix_docs_rel10903.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/4539
 

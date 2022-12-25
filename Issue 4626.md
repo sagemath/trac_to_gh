@@ -1,22 +1,23 @@
-# Issue 4626: error in bessel_J(0,0)
+# Issue 4626: [with patch, positive review] error in bessel_J(0,0)
 
 archive/issues_004626.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: bessel_J(0,0)    \nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (284, 0))\n\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/2662/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage-3.1.4/sage/local/lib/python2.5/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    522             K = C\n    523         K = z.parent()\n--> 524         return K(pari(nu).besselj(z, precision=prec))\n    525     elif algorithm==\"scipy\":\n    526         if prec != 53:\n\n/usr/local/sage-3.1.4/sage/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:34447)()\n   7864 \n   7865 \n-> 7866 \n   7867 \n   7868 \n\nPariError:  (8)\n```\nThe other non-default algorithms (maxima and scipy) return the correct answer 1.0000...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4626\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: bessel_J(0,0)    \nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (284, 0))\n\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/2662/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage-3.1.4/sage/local/lib/python2.5/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    522             K = C\n    523         K = z.parent()\n--> 524         return K(pari(nu).besselj(z, precision=prec))\n    525     elif algorithm==\"scipy\":\n    526         if prec != 53:\n\n/usr/local/sage-3.1.4/sage/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:34447)()\n   7864 \n   7865 \n-> 7866 \n   7867 \n   7868 \n\nPariError:  (8)\n```\nThe other non-default algorithms (maxima and scipy) return the correct answer 1.0000...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4626\n\n",
+    "closed_at": "2009-01-23T10:02:13Z",
     "created_at": "2008-11-26T16:44:35Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "error in bessel_J(0,0)",
+    "title": "[with patch, positive review] error in bessel_J(0,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4626",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: somebody
+Assignee: @rlmill
 
 ```
 sage: bessel_J(0,0)    

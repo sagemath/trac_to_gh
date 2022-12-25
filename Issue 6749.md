@@ -1,15 +1,16 @@
-# Issue 6749: [with patch, needs review] Knapsack algorithm
+# Issue 6749: [with patch, positive review] Knapsack algorithm
 
 archive/issues_006749.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nA general knapsack algorithm using Linear programming ( check you have #6502 installed ! ) to patiently wait for more efficient versions :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6749\n\n",
+    "closed_at": "2009-09-10T12:02:01Z",
     "created_at": "2009-08-14T21:01:44Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Knapsack algorithm",
+    "title": "[with patch, positive review] Knapsack algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6749",
     "user": "https://github.com/nathanncohen"

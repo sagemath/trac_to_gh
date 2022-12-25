@@ -1,16 +1,17 @@
-# Issue 3427: [with patch; needs review] remove ntl library from sage_object build dependency in setup.py
+# Issue 3427: [with patch; positive review] remove ntl library from sage_object build dependency in setup.py
 
 archive/issues_003427.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI can think of no good reason that the ntl library is linked into sage_object.pyx!  It absolutely shouldn't be needed.   Not having it there is needed for making sagelite. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3427\n\n",
+    "closed_at": "2008-06-15T19:15:54Z",
     "created_at": "2008-06-14T22:15:34Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] remove ntl library from sage_object build dependency in setup.py",
+    "title": "[with patch; positive review] remove ntl library from sage_object build dependency in setup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3427",
     "user": "https://github.com/williamstein"

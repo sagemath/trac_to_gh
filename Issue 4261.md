@@ -1,16 +1,17 @@
-# Issue 4261: sympow Configure fails to handle aliases
+# Issue 4261: [with patch, positive review] sympow Configure fails to handle aliases
 
 archive/issues_004261.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  dkohel\n\nThe sympow Configure script has a `whichexe` function to determine which `rm`, `grep`, etc to call that effectively does `RM=`which rm``. If `rm` is an alias (e.g., aliased to `rm -i`), this fails.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4261\n\n",
+    "closed_at": "2008-12-01T01:04:03Z",
     "created_at": "2008-10-10T09:43:01Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "sympow Configure fails to handle aliases",
+    "title": "[with patch, positive review] sympow Configure fails to handle aliases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4261",
     "user": "https://github.com/wjp"

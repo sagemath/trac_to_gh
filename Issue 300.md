@@ -4,6 +4,7 @@ archive/issues_000300.json:
 ```json
 {
     "body": "Assignee: @malb\n\nRight now PyObject and PyTypeObjects are blackboxes in SageX/Pyrex. This is because they are declared without members in python.pxi or some file included from there. For some rare applications it might be useful to have direct access to the members of those structs. \n\nIssue created by migration from https://trac.sagemath.org/ticket/300\n\n",
+    "closed_at": "2007-10-21T22:55:26Z",
     "created_at": "2007-02-28T21:46:47Z",
     "labels": [
         "component: basic arithmetic",

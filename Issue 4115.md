@@ -1,16 +1,17 @@
-# Issue 4115: [with patch, not ready for review] Double coset problems
+# Issue 4115: [with patch, positive review] Double coset problems
 
 archive/issues_004115.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nImplements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all possible isomorphisms is the double coset Aut(H) m Aut(G).\n\nThis algorithm is pretty close to the canonical label algorithm, but it is a more efficient way to implement the isomorphism question. If the objects are not isomorphic, it will tend to discover this pretty quickly, via refinement invariants and examining the partition structure. If they are isomorphic, chances are this isomorphism will be discovered quickly and the algorithm will terminate at that moment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4115\n\n",
+    "body": "Assignee: @rlmill\n\nImplements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all isomorphisms is the double coset Aut(H) m Aut(G).\n\nThis algorithm is pretty close to the canonical label algorithm, but it is a more efficient way to implement the isomorphism question. If the objects are not isomorphic, it will tend to discover this pretty quickly, via refinement invariants and examining the partition structure. If they are isomorphic, chances are this isomorphism will be discovered quickly and the algorithm will terminate at that moment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4115\n\n",
+    "closed_at": "2008-09-19T00:48:18Z",
     "created_at": "2008-09-14T07:52:20Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, not ready for review] Double coset problems",
+    "title": "[with patch, positive review] Double coset problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4115",
     "user": "https://github.com/rlmill"
@@ -18,7 +19,7 @@ archive/issues_004115.json:
 ```
 Assignee: @rlmill
 
-Implements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all possible isomorphisms is the double coset Aut(H) m Aut(G).
+Implements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all isomorphisms is the double coset Aut(H) m Aut(G).
 
 This algorithm is pretty close to the canonical label algorithm, but it is a more efficient way to implement the isomorphism question. If the objects are not isomorphic, it will tend to discover this pretty quickly, via refinement invariants and examining the partition structure. If they are isomorphic, chances are this isomorphism will be discovered quickly and the algorithm will terminate at that moment.
 

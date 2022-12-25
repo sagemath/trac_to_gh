@@ -1,9 +1,10 @@
-# Issue 3848: [with patch, needs instant review] Better documentation for discriminant function for modular abelian varieties' endomorphism ring
+# Issue 3848: [with patch, positive review] Better documentation for discriminant function for modular abelian varieties' endomorphism ring
 
 archive/issues_003848.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe `discriminant` function for the endomorphism ring of a modular abelian variety needs a bit of clarification in its documentation. Namely, the fact that the discriminant returned is off by a factor of `2^d` isn't at all obvious, and we now clearly state it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3848\n\n",
+    "closed_at": "2008-08-15T01:34:07Z",
     "created_at": "2008-08-14T10:33:06Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_003848.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs instant review] Better documentation for discriminant function for modular abelian varieties' endomorphism ring",
+    "title": "[with patch, positive review] Better documentation for discriminant function for modular abelian varieties' endomorphism ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3848",
     "user": "https://github.com/craigcitro"

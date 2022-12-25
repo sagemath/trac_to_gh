@@ -1,26 +1,29 @@
-# Issue 3056: bug with polynomials over power series
+# Issue 3056: [with patch, with positive review] bug with polynomials over power series
 
 archive/issues_003056.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @burcin\n\nThe first computation of z^2 is incorrect, whereas the second is correct:\n\n```\nsage: C.<t> = PowerSeriesRing(ZZ)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z^2\n t^2*s^4 + 1 + O(t)\nsage: z._mul_generic(z)\n t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3056\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @burcin\n\nKeywords: polynomials, power series, Karatsuba\n\nThe first computation of `z^2` is incorrect, whereas the second is correct:\n\n```\nsage: C.<t> = PowerSeriesRing(ZZ)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z^2\n t^2*s^4 + 1 + O(t)\nsage: z._mul_generic(z)\n t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3056\n\n",
+    "closed_at": "2009-01-24T18:42:01Z",
     "created_at": "2008-04-29T21:04:34Z",
     "labels": [
-        "component: cygwin",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bug with polynomials over power series",
+    "title": "[with patch, with positive review] bug with polynomials over power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3056",
     "user": "https://github.com/kedlaya"
 }
 ```
-Assignee: mabshoff
+Assignee: @roed314
 
 CC:  @burcin
 
-The first computation of z^2 is incorrect, whereas the second is correct:
+Keywords: polynomials, power series, Karatsuba
+
+The first computation of `z^2` is incorrect, whereas the second is correct:
 
 ```
 sage: C.<t> = PowerSeriesRing(ZZ)

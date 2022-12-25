@@ -4,6 +4,7 @@ archive/issues_003409.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAttached patch fixes conversion of matrices over polynomial rings to magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3409\n\n",
+    "closed_at": "2008-06-13T05:31:47Z",
     "created_at": "2008-06-13T05:29:28Z",
     "labels": [
         "component: interfaces",

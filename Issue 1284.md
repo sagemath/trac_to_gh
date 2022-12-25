@@ -1,23 +1,24 @@
-# Issue 1284: G.subgroup([...]) for G an abelian group has at least one lame property
+# Issue 1284: [with patch, with positive review] G.subgroup([...]) for G an abelian group has at least one lame property
 
 archive/issues_001284.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  fwclarke\n\n```\nFrancis Clarke to sage-support\n\nSubgroups of abelian groups:\n\nsage: G.<a, b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: B = G.subgroup([b])\nsage: A == B\nTrue\n\nSurely not!\n\nOn the other hand for vector spaces:\n\nsage: W.<u, v> = QQ^2\nsage: U = W.subspace([u])\nsage: V = W.subspace([v])\nsage: U == V\nFalse\n\nAs expected.\n```\n\nI have verified this and I agree that this is stupid.\nThe problem is that the __cmp__ method is just comparing\nthe groups abstract structure:\n\n```\n        if not is_AbelianGroup(right):\n            return -1\n        return cmp(self.invariants(), right.invariants())\n```\n\nIt should also take into account the embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1284\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  fwclarke\n\n```\nFrancis Clarke to sage-support\n\nSubgroups of abelian groups:\n\nsage: G.<a, b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: B = G.subgroup([b])\nsage: A == B\nTrue\n\nSurely not!\n\nOn the other hand for vector spaces:\n\nsage: W.<u, v> = QQ^2\nsage: U = W.subspace([u])\nsage: V = W.subspace([v])\nsage: U == V\nFalse\n\nAs expected.\n```\n\nI have verified this and I agree that this is stupid.\nThe problem is that the __cmp__ method is just comparing\nthe groups abstract structure:\n\n```\n        if not is_AbelianGroup(right):\n            return -1\n        return cmp(self.invariants(), right.invariants())\n```\n\nIt should also take into account the embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1284\n\n",
+    "closed_at": "2008-05-26T16:42:38Z",
     "created_at": "2007-11-26T21:04:14Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: algebra",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "G.subgroup([...]) for G an abelian group has at least one lame property",
+    "title": "[with patch, with positive review] G.subgroup([...]) for G an abelian group has at least one lame property",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1284",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @rlmill
 
 CC:  fwclarke
 

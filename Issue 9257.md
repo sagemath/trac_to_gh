@@ -4,6 +4,7 @@ archive/issues_009257.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nFrom [sage-devel](https://groups.google.com/group/sage-devel/browse_thread/thread/971ea3ce256eed20):\n\n```\nThe file misc/darcs.py was meant to serve as an interface to the Darcs\nsource code version control system, back in the old days before Sage\nswitched to using Mercurial. With the upcoming Sage 5.0 milestone, I\nthink that module can be removed from the Sage library. I believe its\nremoval would result in very minimal (next to zero?) hassle regarding\nissues of backward compatibility. If I understand the Mercurial log of\nthe Sage library correctly, Sage hasn't been using Darcs for over 2\nyears now, or even since February 2006. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9257\n\n",
+    "closed_at": "2010-07-21T10:10:38Z",
     "created_at": "2010-06-18T05:58:15Z",
     "labels": [
         "component: documentation",

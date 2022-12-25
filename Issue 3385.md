@@ -1,22 +1,23 @@
-# Issue 3385: plot_vector_field does not deal with aspect ratios correctly
+# Issue 3385: [with patch and spkg, positive review] plot_vector_field does not deal with aspect ratios correctly
 
 archive/issues_003385.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs [reported to sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f409c06fc3a291c), `plot_vector_field()` does not change the angle of the arrows as appropriate for the aspect ratio.\n\nTo see this, take [this `@`interact demo](http://wiki.sagemath.org/interact/diffeq#head-f79d3195e10d507bda57064c8b8d10d15e55a5e4) and change `xmin` to 1/4. The plotted solution is correct, but the angles of the arrows for the vector field aren't changed correctly. (Also see https://www.sagenb.org/home/pub/1794/, if it's actually loading.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3385\n\n",
+    "body": "Assignee: @mwhansen\n\nAs [reported to sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f409c06fc3a291c), `plot_vector_field()` does not change the angle of the arrows as appropriate for the aspect ratio.\n\nTo see this, take [this `@`interact demo](http://wiki.sagemath.org/interact/diffeq#head-f79d3195e10d507bda57064c8b8d10d15e55a5e4) and change `xmin` to 1/4. The plotted solution is correct, but the angles of the arrows for the vector field aren't changed correctly. (Also see https://www.sagenb.org/home/pub/1794/, if it's actually loading.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3385\n\n",
+    "closed_at": "2008-10-02T08:32:30Z",
     "created_at": "2008-06-08T23:22:38Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "plot_vector_field does not deal with aspect ratios correctly",
+    "title": "[with patch and spkg, positive review] plot_vector_field does not deal with aspect ratios correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3385",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 As [reported to sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f409c06fc3a291c), `plot_vector_field()` does not change the angle of the arrows as appropriate for the aspect ratio.
 

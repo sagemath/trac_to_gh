@@ -1,9 +1,10 @@
-# Issue 6081: [with patch, needs review] make abelian categories abelian
+# Issue 6081: [with patch, positive review] make abelian categories abelian
 
 archive/issues_006081.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAs reported [on sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/ea99b379e5b1b8ab): \n\n```\nsage: RingModules(ZZ).is_abelian() \nFalse \nsage: AbelianGroups().is_abelian()\nFalse\n```\nThe attached patch should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6081\n\n",
+    "closed_at": "2009-06-04T18:29:43Z",
     "created_at": "2009-05-19T03:53:34Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_006081.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] make abelian categories abelian",
+    "title": "[with patch, positive review] make abelian categories abelian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6081",
     "user": "https://github.com/jhpalmieri"

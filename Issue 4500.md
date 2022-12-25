@@ -1,22 +1,24 @@
-# Issue 4500: cython files missing from build directory after install
+# Issue 4500: [with patch, positive review] cython files missing from build directory after install
 
 archive/issues_004500.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nImmediately after building sage from source, the cython files from the sage library aren't in `$SAGE_ROOT/devel/sage/build/sage` where they belong. One can see them get copied when doing a `sage -b` or `sage -clone`, but why aren't they there in the first place?\n\nEven stranger -- they get copied over during the build, as one can see in `install.log` ... where do they get deleted?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4500\n\n",
+    "body": "Assignee: @craigcitro\n\nImmediately after building sage from source, the cython files from the sage library aren't in `$SAGE_ROOT/devel/sage/build/sage` where they belong. One can see them get copied when doing a `sage -b` or `sage -clone`, but why aren't they there in the first place?\n\nEven stranger -- they get copied over during the build, as one can see in `install.log` ... where do they get deleted?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4500\n\n",
+    "closed_at": "2008-11-14T04:02:24Z",
     "created_at": "2008-11-12T11:10:47Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "cython files missing from build directory after install",
+    "title": "[with patch, positive review] cython files missing from build directory after install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4500",
     "user": "https://github.com/craigcitro"
 }
 ```
-Assignee: mabshoff
+Assignee: @craigcitro
 
 Immediately after building sage from source, the cython files from the sage library aren't in `$SAGE_ROOT/devel/sage/build/sage` where they belong. One can see them get copied when doing a `sage -b` or `sage -clone`, but why aren't they there in the first place?
 

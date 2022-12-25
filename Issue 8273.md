@@ -4,10 +4,10 @@ archive/issues_008273.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @rlmill sage-combinat\n\nKeywords: cycle, enumeration\n\nIn many graph-theoretical problems, it is important to understand the cycles structure of undirected graphs as well as directed ones. Therefore, I suggest three functions that allow one to iterate over all cycles of a directed graph (I might be interested in writing some functions for undirected graphs, but I prefer to have these ones validated before I do so).\n\n\n\nThe first and main function is called `cycles_iterator(...)` and allows one to iterate over all cycles satisfying conditions according to the following parameters:\n\n- `simple` (a boolean). When set to True, only the starting and ending vertex may be repeated in the cycle\n\n- `distinct` (also a boolean). When set to True, then all equivalent cycles are merged into one cycle. Equivalent cycles are cycles differing only from their starting vertex, such as `[0,1,2,0]` and `[1,2,0,1]`.\n\n- `initial_vertices` (an iterable). Specify the only allowed starting vertices of the cycles.\n\n- `max_length` (an integer). The maximum length of cycles. Useful especially when a graph contains a very large number of cycles and one wants to compute smaller ones.\n\nThe two other function are merely calling `cycles_iterator(...)` with some of the above parameters fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8273\n\n",
+    "closed_at": "2010-03-03T14:23:40Z",
     "created_at": "2010-02-15T14:43:20Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Enumeration of cycles in directed graphs",

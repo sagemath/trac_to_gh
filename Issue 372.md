@@ -4,6 +4,7 @@ archive/issues_000372.json:
 ```json
 {
     "body": "Assignee: michel v\n\n```\nOn 5/20/07, Michel <michel.vandenbergh@uhasselt.be> wrote:\n>\n> While doing \"singular.interact()\" I see that lots and lots\n> of variables (named: sage*) are being defined in the singular\n> interface.\n> Basically for every intermediate result and then some.\n> I have not looked in detail but are these variables recycled when the\n> corresponding python object goes out of scope?\n\nThey are not reused.  The code is there in interfaces/singular.py,\nbut it's not used right now because everything I tried to reuse\nor clear variables in Singular resulted in all kinds of problems,\nprobably partly because Singular is somewhat statically typed.\nI've always meant to look into this again.   In the other interfaces\n(which are all dynamically typed) variables are recycled when they\naren't used anymore.\n\n> Otherwise this is a memory leak (these variables usual contain\n> polynomials).\n\nIndeed.   Please feel free to work on fixing this.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/372\n\n",
+    "closed_at": "2007-05-31T15:10:21Z",
     "created_at": "2007-05-20T22:36:12Z",
     "labels": [
         "component: interfaces",

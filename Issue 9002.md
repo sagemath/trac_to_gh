@@ -4,6 +4,7 @@ archive/issues_009002.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  georgsweber\n\nWith 4.4.2 on 10.4 on PPC G4:\n\n```\nsage -t  \"devel/sage/sage/plot/plot3d/parametric_surface.pyx\"\n**********************************************************************\n    sage: M.bounding_box()\nExpected:\n    ((-10.0, -7.5390734925047846, -2.9940801852848145), (10.0, 7.5390734925047846, 2.9940801852848145))\nGot:\n    ((-10.0, -7.5390734925047855, -2.9940801852848145), (10.0, 7.5390734925047846, 2.9940801852848145))\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9002\n\n",
+    "closed_at": "2010-07-22T23:34:01Z",
     "created_at": "2010-05-21T00:01:14Z",
     "labels": [
         "component: doctest coverage",

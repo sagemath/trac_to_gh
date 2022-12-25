@@ -3,11 +3,11 @@
 archive/issues_000588.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/588\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/588\n\n",
+    "closed_at": "2007-09-05T05:04:57Z",
     "created_at": "2007-09-04T19:44:52Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Symmetrica spkg for SAGE",
@@ -16,7 +16,7 @@ archive/issues_000588.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

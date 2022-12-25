@@ -3,7 +3,8 @@
 archive/issues_001416.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTODO list\n* upgrade to 2.6.1\n* patch rpy\n* fix build issues and install issues\n* finish pexpect interface.\n* worry about graphics / X11 issues\n* readline\n* gfortran support (extra setup.py in rpy package)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1416\n\n",
+    "body": "Assignee: @williamstein\n\nMUST DO\n* (done) upgrade to 2.6.1\n* (done) fix build issues and install issues\n* (done) worry about graphics / X11 issues\n* (done) readline\n* (done) gfortran support (modify setup.py in rpy package; anything else?)\n\nTODO LATER\n* finish pexpect interface.\n* properly patch rpy so _rpy_ methods are called.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1416\n\n",
+    "closed_at": "2007-12-10T05:22:50Z",
     "created_at": "2007-12-07T07:23:33Z",
     "labels": [
         "component: packages: standard",
@@ -18,14 +19,17 @@ archive/issues_001416.json:
 ```
 Assignee: @williamstein
 
-TODO list
-* upgrade to 2.6.1
-* patch rpy
-* fix build issues and install issues
+MUST DO
+* (done) upgrade to 2.6.1
+* (done) fix build issues and install issues
+* (done) worry about graphics / X11 issues
+* (done) readline
+* (done) gfortran support (modify setup.py in rpy package; anything else?)
+
+TODO LATER
 * finish pexpect interface.
-* worry about graphics / X11 issues
-* readline
-* gfortran support (extra setup.py in rpy package)
+* properly patch rpy so _rpy_ methods are called.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1416
 

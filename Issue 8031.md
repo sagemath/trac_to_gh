@@ -3,10 +3,11 @@
 archive/issues_008031.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @fchapoton\n\nThis is nice:\n\n```\ng = graphs.CompleteGraph(5)\ngraph_editor(g)\n```\n\nbut this would be even better:\n\n```\ng = graphs.CompleteGraph(5)\ng.edit()\n```\n\nIt could also fit into a framework where we have \"edit\" methods for all kinds of objects in Sage, including matrices, elliptic curves, etc.,.   These could be implemented using `@`interact in many cases. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8031\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @fchapoton\n\nKeywords: graph_editor\n\nThis is nice:\n\n```\ng = graphs.CompleteGraph(5)\ngraph_editor(g)\n```\n\nbut this would be even better:\n\n```\ng = graphs.CompleteGraph(5)\ng.edit()\n```\n\nIt could also fit into a framework where we have \"edit\" methods for all kinds of objects in Sage, including matrices, elliptic curves, etc.,.   These could be implemented using `@`interact in many cases. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8031\n\n",
+    "closed_at": "2021-01-01T14:23:25Z",
     "created_at": "2010-01-21T20:05:00Z",
     "labels": [
-        "component: graph theory"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make graph_editor also available as a *method* on graphs",
@@ -18,6 +19,8 @@ archive/issues_008031.json:
 Assignee: @rlmill
 
 CC:  @fchapoton
+
+Keywords: graph_editor
 
 This is nice:
 

@@ -1,16 +1,17 @@
-# Issue 2457: ideal.py doctest failure
+# Issue 2457: [with patch, positive review] ideal.py doctest failure
 
 archive/issues_002457.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\n```\nFile \"ideal.py\", line 384:\n    sage: I.is_prime()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2457\n\n",
+    "closed_at": "2008-03-10T14:55:31Z",
     "created_at": "2008-03-10T14:07:03Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "ideal.py doctest failure",
+    "title": "[with patch, positive review] ideal.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2457",
     "user": "https://github.com/garyfurnish"

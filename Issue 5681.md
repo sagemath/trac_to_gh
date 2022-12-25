@@ -1,16 +1,17 @@
-# Issue 5681: [with patch; needs review] notebook -- worksheets open in new page/tab
+# Issue 5681: [with patch; hugely positive review] notebook -- worksheets open in new page/tab
 
 archive/issues_005681.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI'm so so so SICK (!) of accidentally hitting the back button and corrupting my worksheet.  It happens to me and everybody constantly. It's horrible and confusing.  The attached trivial 1-line patch makes it so when open a worksheet it appears in a new tab (or windows), hence there is *no history*, hence nothing to accidentally go back to.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5681\n\n",
+    "closed_at": "2009-04-05T01:35:07Z",
     "created_at": "2009-04-04T07:09:46Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] notebook -- worksheets open in new page/tab",
+    "title": "[with patch; hugely positive review] notebook -- worksheets open in new page/tab",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5681",
     "user": "https://github.com/williamstein"

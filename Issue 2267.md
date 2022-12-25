@@ -1,22 +1,24 @@
-# Issue 2267: [with patch, needs review] Sage 2.10.2: fix latex errors when generating the documentation
+# Issue 2267: [with patch, positive review] Sage 2.10.2: fix latex errors when generating the documentation
 
 archive/issues_002267.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs a last step after merging all the patches we need to regenerate the documentation. That does involve fixing a bunch of LaTeX errors from the docstrings.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2267\n\n",
+    "body": "Assignee: mabshoff\n\nAs a last step after merging all the patches we need to regenerate the documentation. That does involve fixing a bunch of LaTeX errors from the docstrings.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2267\n\n",
+    "closed_at": "2008-02-22T23:29:59Z",
     "created_at": "2008-02-22T21:54:45Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: documentation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] Sage 2.10.2: fix latex errors when generating the documentation",
+    "title": "[with patch, positive review] Sage 2.10.2: fix latex errors when generating the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2267",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 As a last step after merging all the patches we need to regenerate the documentation. That does involve fixing a bunch of LaTeX errors from the docstrings.
 

@@ -1,16 +1,17 @@
-# Issue 5986: [with patch, needs review] Workaround mishandled nested classes in Python and cPickle
+# Issue 5986: [with patch, positive review] Workaround mishandled nested classes in Python and cPickle
 
 archive/issues_005986.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty\n\nKeywords: pickling, nested classes\n\nWith the python code below::\n    class A:\n        class B:\n            pass\nPython 2.6 erroneously set the B.__name__ to \"B\" instead of \"A.B\".\n\nFurthermore, upon pickling (here in save_global)\n*and* unpickling (in load_global) a class\nwith name \"A.B\" in a module mod, the standard\ncPickle module searches for \"A.B\" in mod.__dict__\ninstead of looking up \"A\" and then \"B\" in the result.\n\nThis patch works around this by a patch to cPickle.c which fixes the\nname for B to its appropriate value A.B, and inserts 'A.B' = A.B in\nmod.__dict__ (hacky, but seems to work) the first time A.B is pickled,\nand fixes load_global to implement a proper lookup upon unpickling.\n\nIt also ensures that sage/interfaces/sage0.py uses loads/dumps from\nsage_object rather than calling directly cPickle.loads/dumps\n(+1 by cwitty on this change)\n\nDepends on #5483 and #5985\n\nIssue created by migration from https://trac.sagemath.org/ticket/5986\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty\n\nKeywords: pickling, nested classes\n\nWith the python code below::\n    class A:\n        class B:\n            pass\nPython 2.6 erroneously set the B.__name__ to \"B\" instead of \"A.B\".\n\nFurthermore, upon pickling (here in save_global)\n*and* unpickling (in load_global) a class\nwith name \"A.B\" in a module mod, the standard\ncPickle module searches for \"A.B\" in mod.__dict__\ninstead of looking up \"A\" and then \"B\" in the result.\n\nThis patch works around this by a patch to cPickle.c (in fact a copy of it in the Sage source tree; see #5985) which fixes the name for B to its appropriate value A.B, and inserts 'A.B' = A.B in\nmod.__dict__ (hacky, but seems to work) the first time A.B is pickled,\nand fixes load_global to implement a proper lookup upon unpickling.\n\nIt also ensures that sage/interfaces/sage0.py uses loads/dumps from\nsage_object rather than calling directly cPickle.loads/dumps\n(+1 by cwitty on this change)\n\nPython source experts are more than welcome to rework/rewrite this patch!\n\nDepends on #5483 and #5985\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5986\n\n",
+    "closed_at": "2009-10-15T07:05:19Z",
     "created_at": "2009-05-05T07:14:13Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] Workaround mishandled nested classes in Python and cPickle",
+    "title": "[with patch, positive review] Workaround mishandled nested classes in Python and cPickle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5986",
     "user": "https://github.com/nthiery"
@@ -34,8 +35,7 @@ with name "A.B" in a module mod, the standard
 cPickle module searches for "A.B" in mod.__dict__
 instead of looking up "A" and then "B" in the result.
 
-This patch works around this by a patch to cPickle.c which fixes the
-name for B to its appropriate value A.B, and inserts 'A.B' = A.B in
+This patch works around this by a patch to cPickle.c (in fact a copy of it in the Sage source tree; see #5985) which fixes the name for B to its appropriate value A.B, and inserts 'A.B' = A.B in
 mod.__dict__ (hacky, but seems to work) the first time A.B is pickled,
 and fixes load_global to implement a proper lookup upon unpickling.
 
@@ -43,7 +43,10 @@ It also ensures that sage/interfaces/sage0.py uses loads/dumps from
 sage_object rather than calling directly cPickle.loads/dumps
 (+1 by cwitty on this change)
 
+Python source experts are more than welcome to rework/rewrite this patch!
+
 Depends on #5483 and #5985
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5986
 

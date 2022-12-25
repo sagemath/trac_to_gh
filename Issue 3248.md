@@ -1,16 +1,17 @@
-# Issue 3248: [with patch; needs review] cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes
+# Issue 3248: cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes
 
 archive/issues_003248.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n1. Something involving the python library in SConstruct that affect c_lib\n\n2. Something library ordering issues that break matrix_real_double_dense in setup.py\n\n3. Choosing ATLAS instead of GSL by default in setup.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/3248\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\nKeywords: editor_wstein\n\n1. Something involving the python library in SConstruct that affect c_lib\n\n2. Something library ordering issues that break matrix_real_double_dense in setup.py\n\n3. Choosing ATLAS instead of GSL by default in setup.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/3248\n\n",
+    "closed_at": "2010-01-17T12:03:43Z",
     "created_at": "2008-05-17T20:55:36Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch; needs review] cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes",
+    "title": "cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3248",
     "user": "https://github.com/williamstein"
@@ -19,6 +20,8 @@ archive/issues_003248.json:
 Assignee: mabshoff
 
 CC:  @craigcitro
+
+Keywords: editor_wstein
 
 1. Something involving the python library in SConstruct that affect c_lib
 

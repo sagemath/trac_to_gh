@@ -1,9 +1,10 @@
-# Issue 1641: Make ATLAS restart build on tolerance error
+# Issue 1641: [with spkg, positive review] Make ATLAS restart build on tolerance error
 
 archive/issues_001641.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen the ATLAS build fails due to tolerance errors we can restart the build by restarting the build process via \"make\". We should do it a set number of times, i.e. 5 and then finally fail. I have hit the problem repeatedly while building in a VMWare machine and have little to no control to prevent the issue from happening. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1641\n\n",
+    "closed_at": "2009-02-21T09:42:13Z",
     "created_at": "2007-12-30T18:47:05Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001641.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Make ATLAS restart build on tolerance error",
+    "title": "[with spkg, positive review] Make ATLAS restart build on tolerance error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1641",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

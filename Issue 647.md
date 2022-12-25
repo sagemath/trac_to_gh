@@ -1,15 +1,16 @@
-# Issue 647: create a quaternion algebra element class
+# Issue 647: [with patch] create a quaternion algebra element class
 
 archive/issues_000647.json:
 ```json
 {
     "body": "Assignee: somebody\n\nFrom Alex Ghitza:\n\n```\nI fiddled a bit more with the quaternion algebras, this time with\nelements.  This is still warm-up for doing something more serious with\norders and ideals, starting with implementing the code by\nRodriguez-Villegas et al.\n```\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/647\n\n",
+    "closed_at": "2007-09-20T23:48:15Z",
     "created_at": "2007-09-13T14:07:10Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "create a quaternion algebra element class",
+    "title": "[with patch] create a quaternion algebra element class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/647",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 3723: alarm doesn't work with the factor command on os x (but control c does)
+# Issue 3723: alarm() doesn't work with the factor() command
 
 archive/issues_003723.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\nteragon-2:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: review\nsage: alarm(3); factor(2^997-1) \n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\n#\n# and I wait 10 seconds then hit control c\n#\n\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/misc.py in __mysig(a, b)\n   1343 __alarm_time=0\n   1344 def __mysig(a,b):\n-> 1345     raise KeyboardInterrupt, \"computation timed out because alarm was set for %s seconds\"%__alarm_time\n   1346 \n   1347 def alarm(seconds):\n\nKeyboardInterrupt: computation timed out because alarm was set for 3 seconds\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3723\n\n",
+    "closed_at": "2013-05-16T07:33:38Z",
     "created_at": "2008-07-25T10:45:37Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "alarm doesn't work with the factor command on os x (but control c does)",
+    "title": "alarm() doesn't work with the factor() command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3723",
     "user": "https://github.com/williamstein"

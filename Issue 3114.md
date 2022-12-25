@@ -4,10 +4,10 @@ archive/issues_003114.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAny gcc 4.0.0 provided by Apple is buggier than a Florida swamp. Refuse to build Sage with it at start up!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3114\n\n",
+    "closed_at": "2010-01-17T06:32:54Z",
     "created_at": "2008-05-06T22:06:10Z",
     "labels": [
         "component: build",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",

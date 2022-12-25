@@ -1,16 +1,17 @@
-# Issue 2566: [with patch, needs review] fix type of "size" in graph_isom and binary_code
+# Issue 2566: [with patch, positive review] fix all known bugs in graph_isom and binary_code
 
 archive/issues_002566.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nBecause, after all, 14! > 2<sup>32</sup> and 21! > 2<sup>64</sup>.\n\nThis also makes the codewords in `binary_code.pyx` unsigned, because of those pesky signed integer shifting issues...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2566\n\n",
+    "body": "Assignee: @rlmill\n\nBecause, after all, 14! > 2<sup>32</sup> and 21! > 2<sup>64</sup>.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2566\n\n",
+    "closed_at": "2008-03-20T00:58:07Z",
     "created_at": "2008-03-17T06:39:38Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] fix type of \"size\" in graph_isom and binary_code",
+    "title": "[with patch, positive review] fix all known bugs in graph_isom and binary_code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2566",
     "user": "https://github.com/rlmill"
@@ -19,8 +20,6 @@ archive/issues_002566.json:
 Assignee: @rlmill
 
 Because, after all, 14! > 2<sup>32</sup> and 21! > 2<sup>64</sup>.
-
-This also makes the codewords in `binary_code.pyx` unsigned, because of those pesky signed integer shifting issues...
 
 Issue created by migration from https://trac.sagemath.org/ticket/2566
 

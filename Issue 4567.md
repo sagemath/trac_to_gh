@@ -1,16 +1,17 @@
-# Issue 4567: Create Sage 3.2 release notes
+# Issue 4567: [with patches, positive review] Create Sage 3.2 release notes
 
 archive/issues_004567.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs the subject says.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4567\n\n",
+    "closed_at": "2008-11-30T06:01:21Z",
     "created_at": "2008-11-20T18:51:10Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Create Sage 3.2 release notes",
+    "title": "[with patches, positive review] Create Sage 3.2 release notes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4567",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

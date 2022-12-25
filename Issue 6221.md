@@ -1,9 +1,10 @@
-# Issue 6221: typos in Lagrange interpolation polynomial
+# Issue 6221: [with patch, positive review] typos in Lagrange interpolation polynomial
 
 archive/issues_006221.json:
 ```json
 {
     "body": "Assignee: tba\n\nThis is a follow-up to #6043. Here we fix typos found in the patch at that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6221\n\n",
+    "closed_at": "2009-06-13T21:39:47Z",
     "created_at": "2009-06-05T05:44:38Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006221.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "typos in Lagrange interpolation polynomial",
+    "title": "[with patch, positive review] typos in Lagrange interpolation polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6221",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -1,22 +1,23 @@
-# Issue 2028: Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR
+# Issue 2028: [with patch, needs review] Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR
 
 archive/issues_002028.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. \"for e,f in mat.charpoly().factor()\" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.\n\nData:\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nand \n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2028\n\n",
+    "body": "Assignee: @mwhansen\n\nThe matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. \"for e,f in mat.charpoly().factor()\" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.\n\nData:\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nand \n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2028\n\n",
+    "closed_at": "2008-02-18T21:22:59Z",
     "created_at": "2008-02-02T03:57:59Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR",
+    "title": "[with patch, needs review] Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2028",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 The matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. "for e,f in mat.charpoly().factor()" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.
 

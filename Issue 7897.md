@@ -3,7 +3,8 @@
 archive/issues_007897.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Macaulay2, interface\n\nThese patches change the prompt detection/stripping and update doctests to cause no errors with Macaulay2 1.3.1.\n\nImprovements/fixes achieved:\n- examples in Macaulay2 documentation (which include input prompts) do not break the interaction with Sage;\n- empty/whitespace/comment lines can be executed;\n- multiline commands can be executed;\n- stripping output prompts will not cut error messages if they occur (e.g. the first call \"help Thing\" currently shows some errors in Macaulay2).\n\nThis is done by:\n- changing input and input continuation prompts;\n- starting with a big line number to make all output labels of the same width;\n- making sure that only output labels and spaces are stripped from the output.\n\nSide effects / Remaining issues:\n- \"restart\" command of Macaulay2 is handled separately when it is called like \"macaulay2.restart()\" since we need to repeat prompt adjustments;\n- this command cannot be used in the string code passed to Macaulay2, since it will cause a lock. Since this should not cause loss of data (if the user intentionally tried to restart Macaulay2), I think this is OK. Correct checking of all the code for \"restart\" in it would involve also checking if it is inside string constants. \n\nThese patches make tickets #7882 and #7888 unnecessary.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7897\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Macaulay2, interface\n\nSee also #5467 and #7915 (!).\n\nThese patches change the prompt detection/stripping and update doctests to cause no errors with Macaulay2 1.3.1.\n\nImprovements/fixes achieved:\n- examples in Macaulay2 documentation (which include input prompts) do not break the interaction with Sage;\n- empty/whitespace/comment lines can be executed;\n- multiline commands can be executed;\n- stripping output prompts will not cut error messages if they occur (e.g. the first call \"help Thing\" currently shows some errors in Macaulay2);\n- \"macaulay2.restart()\" does not print a useless variable name.\n\nThis is done by:\n- changing input and input continuation prompts;\n- starting with a big line number to make all output labels of the same width;\n- making sure that only output labels and spaces are stripped from the output.\n\nThese patches make tickets #7882 and #7888 unnecessary.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7897\n\n",
+    "closed_at": "2010-07-21T03:30:48Z",
     "created_at": "2010-01-11T20:53:30Z",
     "labels": [
         "component: interfaces",
@@ -20,22 +21,21 @@ Assignee: @williamstein
 
 Keywords: Macaulay2, interface
 
+See also #5467 and #7915 (!).
+
 These patches change the prompt detection/stripping and update doctests to cause no errors with Macaulay2 1.3.1.
 
 Improvements/fixes achieved:
 - examples in Macaulay2 documentation (which include input prompts) do not break the interaction with Sage;
 - empty/whitespace/comment lines can be executed;
 - multiline commands can be executed;
-- stripping output prompts will not cut error messages if they occur (e.g. the first call "help Thing" currently shows some errors in Macaulay2).
+- stripping output prompts will not cut error messages if they occur (e.g. the first call "help Thing" currently shows some errors in Macaulay2);
+- "macaulay2.restart()" does not print a useless variable name.
 
 This is done by:
 - changing input and input continuation prompts;
 - starting with a big line number to make all output labels of the same width;
 - making sure that only output labels and spaces are stripped from the output.
-
-Side effects / Remaining issues:
-- "restart" command of Macaulay2 is handled separately when it is called like "macaulay2.restart()" since we need to repeat prompt adjustments;
-- this command cannot be used in the string code passed to Macaulay2, since it will cause a lock. Since this should not cause loss of data (if the user intentionally tried to restart Macaulay2), I think this is OK. Correct checking of all the code for "restart" in it would involve also checking if it is inside string constants. 
 
 These patches make tickets #7882 and #7888 unnecessary.
 

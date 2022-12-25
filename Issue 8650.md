@@ -4,6 +4,7 @@ archive/issues_008650.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nLet's look at the first face of each dimension of a polyhedron:\n\n```\nfor lset in polytopes.cross_polytope(2).face_lattice().level_sets():\n    print lset[0]\n```\nThe result is \n\n```\n(None, None)\n((0,), (1, 2))\n((1, 2), (3,))\n((0, 1, 2, 3), (0, 1, 2, 3))\n```\nwhere the first tuple (None, None) corresponds to the empty face of the polytope. The first element gives generating vertices of this face (there are None). The second one should give all facets that contain this face. This should be the set of all facets of the polytope, not None. Similarly, for the last face, i.e. the whole polytope, we need to list all vertices belonging to this face (they are correctly listed), and all facets containing the polytope - there should be None.\n\nWhile it should be easy to fix, I don't quite understand the code of face_lattice, so maybe someone else can do this...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8650\n\n",
+    "closed_at": "2010-04-16T18:56:29Z",
     "created_at": "2010-04-04T19:23:02Z",
     "labels": [
         "component: geometry",

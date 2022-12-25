@@ -4,6 +4,7 @@ archive/issues_008042.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona\n\nKeywords: eclib modular symbols\n\n```\nE = EllipticCurve('858k2')\nfrom sage.libs.cremona.newforms import ECModularSymbol\nECModularSymbol(E)\n```\n\nproduces \n\n```\nFile \"newforms.pyx\", line 60, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1804)\nOverflowError: value too large to convert to int\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8042\n\n",
+    "closed_at": "2010-01-24T18:08:13Z",
     "created_at": "2010-01-23T00:14:37Z",
     "labels": [
         "component: modular forms",

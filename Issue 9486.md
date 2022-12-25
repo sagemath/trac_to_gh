@@ -3,7 +3,8 @@
 archive/issues_009486.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nFollowing a decision to roll back the version of ECL and remove a patch from maxima\n\n|                    |                |        |\n|--------------------|----------------|--------|\n|**sage-4.5.alpha4** |**sage-4.5.rc0**|*Notes*'|\n|ecl-10.4.1 | ecl-10.2.1 ||\n|maxima-5.20.1.p1 |maxima-5.20.1.p0 | Removing #8645|\nmy attempts to build on OS X have constantly failed unless I install ecl manually from sage. \n\n```\n$ export MAKE=\"make -j3\"\n$ export SAGE_PARALLEL_SPKG_BUILD=yes\n$ make # First try\n$ make # Second try\n$ make # Third try\n$ ./sage -f ecl-10.2.1 # Give up, use 'sage' to install ECL\n```\n\nI get exactly the same error if I use ecl-10.2.1.p0, which has a couple of Solaris/OpenSolaris specific patches contained on #9474. \n\nThe error message the build fails with is:\n\n```\ncat /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list.h | \\\n\tsed -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*NULL,.*}%{\\1,NULL}%g' \\\n\t    -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*\\([^,]*\\),.*}%{\\1,\"\\2\"}%g' \\\n\t    -e 's%{NULL.*%{NULL,NULL}};%' > /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list2.h\nif test -f ../CROSS-DPP ; then ../CROSS-DPP /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/main.d tmp.c ; else ./dpp /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/main.d tmp.c ; fi\n/bin/sh: ./dpp: No such file or directory\nmake[4]: *** [main.o] Error 127\nmake[3]: *** [libeclmin.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\nreal\t1m59.589s\nuser\t0m17.877s\nsys\t0m31.643s\nsage: An error occurred while installing ecl-10.2.1\n```\n\nThis error has also been seen with ecl-9.8.4 in sage-4.1.2.alpha2. \n\nhttp://www.mail-archive.com/sage-devel`@`googlegroups.com/msg29628.html\n\nI'm attaching a log file \n\n`sage-4.5.rc0/spkg/logs/ecl-10.2.1.log`\n\nwhich shows 3 failed builds using ecl-10.2.1\n\n\nI'm also attaching a log which just shows one failed build using ecl-10.2.1.p0 from #9474. Unlike the case with ecl-10.2.1, I did not attempt the installation multiple times, or install it manually. Hence this log file is shorter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9486\n\n",
+    "body": "Assignee: drkirkby\n\nFollowing a decision to roll back the version of ECL and remove a patch from maxima\n\n|                    |                |        |\n|--------------------|----------------|--------|\n|**sage-4.5.alpha4** |**sage-4.5.rc0**|*Notes*'|\n|ecl-10.4.1 | ecl-10.2.1 ||\n|maxima-5.20.1.p1 |maxima-5.20.1.p0 | Removing #8645|\nmy attempts to build on OS X have constantly failed unless I install ecl manually from sage. \n\n```\n$ export MAKE=\"make -j3\"\n$ export SAGE_PARALLEL_SPKG_BUILD=yes\n$ make # First try\n$ make # Second try\n$ make # Third try\n$ ./sage -f ecl-10.2.1 # Give up, use 'sage' to install ECL\n```\n\nI get exactly the same error if I use ecl-10.2.1.p0, which has a couple of Solaris/OpenSolaris specific patches contained on #9474. \n\nThe error message the build fails with is:\n\n```\ncat /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list.h | \\\nsed -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*NULL,.*}%{\\1,NULL}%g' \\\n    -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*\\([^,]*\\),.*}%{\\1,\"\\2\"}%g' \\\n    -e 's%{NULL.*%{NULL,NULL}};%' > /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list2.h\nif test -f ../CROSS-DPP ; then ../CROSS-DPP /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/main.d tmp.c ; else ./dpp /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/main.d tmp.c ; fi\n/bin/sh: ./dpp: No such file or directory\nmake[4]: *** [main.o] Error 127\nmake[3]: *** [libeclmin.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\nreal 1m59.589s\nuser 0m17.877s\nsys 0m31.643s\nsage: An error occurred while installing ecl-10.2.1\n```\n\nThis error has also been seen with ecl-9.8.4 in sage-4.1.2.alpha2. \n\nhttp://www.mail-archive.com/sage-devel`@`googlegroups.com/msg29628.html\n\nI'm attaching a log file \n\n`sage-4.5.rc0/spkg/logs/ecl-10.2.1.log`\n\nwhich shows 3 failed builds using ecl-10.2.1\n\n\nI'm also attaching a log which just shows one failed build using ecl-10.2.1.p0 from #9474. Unlike the case with ecl-10.2.1, I did not attempt the installation multiple times, or install it manually. Hence this log file is shorter. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9486\n\n",
+    "closed_at": "2010-07-13T16:27:46Z",
     "created_at": "2010-07-12T20:35:59Z",
     "labels": [
         "component: build",
@@ -17,7 +18,7 @@ archive/issues_009486.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 Following a decision to roll back the version of ECL and remove a patch from maxima
 
@@ -43,9 +44,9 @@ The error message the build fails with is:
 
 ```
 cat /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list.h | \
-	sed -e 's%{\([A-Z ]*.*".*"\),[^,]*,[ ]*NULL,.*}%{\1,NULL}%g' \
-	    -e 's%{\([A-Z ]*.*".*"\),[^,]*,[ ]*\([^,]*\),.*}%{\1,"\2"}%g' \
-	    -e 's%{NULL.*%{NULL,NULL}};%' > /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list2.h
+sed -e 's%{\([A-Z ]*.*".*"\),[^,]*,[ ]*NULL,.*}%{\1,NULL}%g' \
+    -e 's%{\([A-Z ]*.*".*"\),[^,]*,[ ]*\([^,]*\),.*}%{\1,"\2"}%g' \
+    -e 's%{NULL.*%{NULL,NULL}};%' > /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/symbols_list2.h
 if test -f ../CROSS-DPP ; then ../CROSS-DPP /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/main.d tmp.c ; else ./dpp /Users/kirkby/sage-4.5.rc0/spkg/build/ecl-10.2.1/src/src/c/main.d tmp.c ; fi
 /bin/sh: ./dpp: No such file or directory
 make[4]: *** [main.o] Error 127
@@ -53,9 +54,9 @@ make[3]: *** [libeclmin.a] Error 2
 make[2]: *** [all] Error 2
 Failed to build ECL ... exiting
 
-real	1m59.589s
-user	0m17.877s
-sys	0m31.643s
+real 1m59.589s
+user 0m17.877s
+sys 0m31.643s
 sage: An error occurred while installing ecl-10.2.1
 ```
 
@@ -70,7 +71,9 @@ I'm attaching a log file
 which shows 3 failed builds using ecl-10.2.1
 
 
-I'm also attaching a log which just shows one failed build using ecl-10.2.1.p0 from #9474. Unlike the case with ecl-10.2.1, I did not attempt the installation multiple times, or install it manually. Hence this log file is shorter.
+I'm also attaching a log which just shows one failed build using ecl-10.2.1.p0 from #9474. Unlike the case with ecl-10.2.1, I did not attempt the installation multiple times, or install it manually. Hence this log file is shorter. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9486
 

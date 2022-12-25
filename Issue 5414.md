@@ -1,9 +1,10 @@
-# Issue 5414: notebook help: the live documentation list are broken after the doc removal
+# Issue 5414: [with patch, positive review] notebook help: the live documentation list are broken after the doc removal
 
 archive/issues_005414.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen @jhpalmieri\n\nThe notebook help screen has links to the reference manual and so on. Those links point to the doc repo where the static html lives. Once #5410 is done those links should be fixed to point to the new static html.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5414\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen @jhpalmieri\n\nThe notebook help screen has links to the reference manual and so on. Those links point to the doc repo where the static html lives. Once #5410 is done those links should be fixed to point to the new static html.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5414\n\n",
+    "closed_at": "2009-03-11T06:25:22Z",
     "created_at": "2009-03-01T21:17:39Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_005414.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "notebook help: the live documentation list are broken after the doc removal",
+    "title": "[with patch, positive review] notebook help: the live documentation list are broken after the doc removal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5414",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 CC:  @mwhansen @jhpalmieri
 

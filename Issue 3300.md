@@ -1,9 +1,10 @@
-# Issue 3300: [with patch; needs review] ntl soname for Debian package
+# Issue 3300: [with patch; positive review] ntl soname for Debian package
 
 archive/issues_003300.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached the patch to make the ntl Debian package use the soname library patch we made earlier (with a few other improvements).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3300\n\n",
+    "closed_at": "2008-05-28T07:43:55Z",
     "created_at": "2008-05-25T18:57:23Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003300.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] ntl soname for Debian package",
+    "title": "[with patch; positive review] ntl soname for Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3300",
     "user": "https://github.com/timabbott"

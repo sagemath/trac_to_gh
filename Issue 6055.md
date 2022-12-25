@@ -4,6 +4,7 @@ archive/issues_006055.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  david.kirkby@onetel.net\n\nThe top level README.txt has a few problems reguarding Solaris.\n\n1) It says:\n\n---\n  SOLARIS:\n     It is reportedly possible, but not recommended yet (see below).\n     A fully supported port is planned.\n\n---\n\nBut there is nothing below that. \n\n2) The OS is spelled as Solaris and SOLARIS. Makes searching more difficult. If you must use SOLARIS, then put 'Solaris' in a word close by. i.e, something like:\n\n---\n  SOLARIS:\n     It is reportedly possible to build Sage on Solaris, but not recommended yet (see below).\n     A fully supported port is planned.\n\n---\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6055\n\n",
+    "closed_at": "2011-04-05T15:55:08Z",
     "created_at": "2009-05-17T08:38:17Z",
     "labels": [
         "component: porting: solaris",

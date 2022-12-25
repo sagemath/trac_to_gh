@@ -1,9 +1,10 @@
-# Issue 1368: fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.
+# Issue 1368: [with patch] fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.
 
 archive/issues_001368.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1368\n\n",
+    "closed_at": "2007-12-03T01:55:22Z",
     "created_at": "2007-12-02T09:44:38Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_001368.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
+    "title": "[with patch] fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1368",
     "user": "https://github.com/williamstein"

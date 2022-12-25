@@ -1,16 +1,16 @@
-# Issue 4733: matrix exponential for general matrices
+# Issue 4733: [with patch, positive review] matrix exponential for general matrices
 
 archive/issues_004733.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis adds a generic matrix exponential (convert to SR matrix; use maxima, or use scipy if RDF/CDF matrix)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4733\n\n",
+    "closed_at": "2009-01-23T07:30:51Z",
     "created_at": "2008-12-06T23:35:17Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "matrix exponential for general matrices",
+    "title": "[with patch, positive review] matrix exponential for general matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4733",
     "user": "https://github.com/jasongrout"

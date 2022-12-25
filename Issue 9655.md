@@ -1,15 +1,17 @@
-# Issue 9655: Add an example ploting spherical harmonics to spherical_plot3d's docstring
+# Issue 9655: Add an example plotting spherical harmonics to spherical_plot3d's docstring
 
 archive/issues_009655.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nKeywords: spherical,harmonics\n\nPloting Spherical Harmonics is one of the most useful ways to use spherical_plot3d. Adding an example of that would be nice.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9655\n\n",
+    "body": "Assignee: olazo\n\nKeywords: spherical,harmonics\n\nPloting Spherical Harmonics is one of the most useful ways to use spherical_plot3d. Adding an example of that would be nice.\n\n**Apply:**\n\n1. [attachment:trac-9655_spherical-harmonic-example.patch]\n2. [attachment:trac-9655_reviewer.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9655\n\n",
+    "closed_at": "2010-11-10T22:19:52Z",
     "created_at": "2010-08-01T01:43:52Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Add an example ploting spherical harmonics to spherical_plot3d's docstring",
+    "title": "Add an example plotting spherical harmonics to spherical_plot3d's docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9655",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
@@ -20,6 +22,11 @@ Assignee: olazo
 Keywords: spherical,harmonics
 
 Ploting Spherical Harmonics is one of the most useful ways to use spherical_plot3d. Adding an example of that would be nice.
+
+**Apply:**
+
+1. [attachment:trac-9655_spherical-harmonic-example.patch]
+2. [attachment:trac-9655_reviewer.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9655
 

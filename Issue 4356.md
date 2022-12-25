@@ -4,6 +4,7 @@ archive/issues_004356.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis used to work (e.g., it is in my modular forms book), but now it doesn't.  No clue why it is broken:\n\n```\nsage: M = ModularForms(1,36, prec=10).echelon_form()\nTraceback (most recent call last):\n...\nValueError: The given basis vectors must be linearly independent.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4356\n\n",
+    "closed_at": "2008-10-30T16:52:08Z",
     "created_at": "2008-10-24T02:03:06Z",
     "labels": [
         "component: modular forms",

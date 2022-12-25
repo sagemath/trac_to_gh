@@ -4,6 +4,7 @@ archive/issues_009348.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is for a workaround on 32-bit Fedora 11, \n#7092, but probably isn't worth hurting all other platforms. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9348\n\n",
+    "closed_at": "2013-10-05T09:39:28Z",
     "created_at": "2010-06-27T00:15:52Z",
     "labels": [
         "component: packages: standard",

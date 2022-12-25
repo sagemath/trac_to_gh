@@ -1,21 +1,22 @@
-# Issue 5653: [with patch, needs work] display docstrings in the notebook using html and jsMath
+# Issue 5653: [with patch, positive review] display docstrings in the notebook using html and jsMath
 
 archive/issues_005653.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nThe attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \\times b' with 'a x b'). In the notebook, though:\n\n```\nidentity_matrix(TAB\n```\nshould pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \\times n$ in the first line of the docstring -- and with example blocks in <pre> format.\n\nThis is marked \"needs work\" for two reasons, one of which is a mystery to me:\n\n1. (the mystery) start a fresh worksheet and type\n\n```\nidentity_matrix? [SHIFT-RETURN]\n```\nThis will be typeset in <pre> format. Then type\n\n```\nidentity_matrix? [TAB]\n```\nThis is typeset nicely. I don't know what the difference is.\n\n2. Math is not handled properly.  I have a hack in place to typeset inline math (\"`... `blah` ...`\") in the docstring, but not displayed math (directive \"`.. math::`\"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.\n\nPlease test out the patch, improve it, rewrite it, whatever.\n\n(By the way, Tom Boothby deserves credit for getting jsMath to process the docstring.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5653\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @mwhansen\n\nThe attached patch shouldn't affect docstrings from the command line (well, except that it should replace 'a \\times b' with 'a x b'). In the notebook, though:\n\n```\nidentity_matrix(TAB\n```\nshould pop open the usual docstring, but it's not in html <pre> format: see [this picture](http://sage.math.washington.edu/home/palmieri/misc/docstring.png). It's in a variable width font, with math typeset correctly -- see the $n \\times n$ in the first line of the docstring -- and with example blocks in <pre> format.\n\nThis is marked \"needs work\" for two reasons, one of which is a mystery to me:\n\n1. (the mystery) start a fresh worksheet and type\n\n```\nidentity_matrix? [SHIFT-RETURN]\n```\nThis will be typeset in <pre> format. Then type\n\n```\nidentity_matrix? [TAB]\n```\nThis is typeset nicely. I don't know what the difference is.\n\n2. Math is not handled properly.  I have a hack in place to typeset inline math (\"`... `blah` ...`\") in the docstring, but not displayed math (directive \"`.. math::`\"). This is because I'm using docutils to convert the docstring to html, and docutils doesn't know about math. I would like to use Sphinx to do the conversion (in which case more math should be handled, and there would also be some syntax highlighting), but I don't know how to use Sphinx well enough to do that.  I've posted a question to the sphinx-dev group, and if I hear anything, I'll post it here or update the ticket.\n\nPlease test out the patch, improve it, rewrite it, whatever.\n\n(By the way, Tom Boothby deserves credit for getting jsMath to process the docstring.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5653\n\n",
+    "closed_at": "2009-07-30T02:01:49Z",
     "created_at": "2009-03-31T21:23:24Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs work] display docstrings in the notebook using html and jsMath",
+    "title": "[with patch, positive review] display docstrings in the notebook using html and jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5653",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: boothby
+Assignee: @jhpalmieri
 
 CC:  @mwhansen
 

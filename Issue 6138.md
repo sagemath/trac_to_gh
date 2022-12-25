@@ -3,7 +3,8 @@
 archive/issues_006138.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: symmetric group, free module\n\nSee: http://combinat.sagemath.org/patches/file/tip/categories-symmetric_group_algebra-6138-nt.patch\n\nDepends on #6136\n\nIssue created by migration from https://trac.sagemath.org/ticket/6138\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: symmetric group, free module\n\nThe goal of the patch is to adapt SymmetricGroupAlgebra to categories and to add some improvements. The patch improve SymmetricGroupAlgebra in two ways:\n \n- SymmetricGroupAlgebra is now in the category FiniteDimensionalAlgebraWithBasis. Note: A forthcomming patch from Valentin F\u00e9ray will put it in the correct GroupAlgebras category;\n\n- When creating SGA(n) a coercion from SGA(n-1) is declared.\n\nI'm submitting the patch on behalf on Nicolas after reviewing it.\n\nDepends on the categories framework #5891, #6136.\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6138\n\n",
+    "closed_at": "2009-11-19T17:00:03Z",
     "created_at": "2009-05-27T05:38:44Z",
     "labels": [
         "component: combinatorics"
@@ -21,9 +22,20 @@ CC:  sage-combinat
 
 Keywords: symmetric group, free module
 
-See: http://combinat.sagemath.org/patches/file/tip/categories-symmetric_group_algebra-6138-nt.patch
+The goal of the patch is to adapt SymmetricGroupAlgebra to categories and to add some improvements. The patch improve SymmetricGroupAlgebra in two ways:
+ 
+- SymmetricGroupAlgebra is now in the category FiniteDimensionalAlgebraWithBasis. Note: A forthcomming patch from Valentin Féray will put it in the correct GroupAlgebras category;
 
-Depends on #6136
+- When creating SGA(n) a coercion from SGA(n-1) is declared.
+
+I'm submitting the patch on behalf on Nicolas after reviewing it.
+
+Depends on the categories framework #5891, #6136.
+
+Cheers,
+
+Florent
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6138
 

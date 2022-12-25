@@ -1,15 +1,16 @@
-# Issue 8519: Add a set of Positive Integer with categories (and factor the code with NonNegativeInteger)
+# Issue 8519: Add a factory of finite/infinite enumerated set (with categories) defines by Range(begin, end, step)
 
 archive/issues_008519.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: positive integer\n\nWe have already a proper set with category of NonNegativeIntegers, let's use it to also define PositiveInteger\n\n```\nsage: NonNegativeIntegers()\nNon negative integers\nsage: PositiveInteger()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/nicolas/<ipython console> in <module>()\n\nNameError: name 'PositiveInteger' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8519\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: range, categories, set, integer\n\nA general tool to define:\n* PositiveInteger\n* NonNegativeInteger\n* More.....\n\nThe idea is :\nRange(begin, end, step) returns a proper finite/infinite set with categories of the defined set as you think...\n\n(12:37:41) hivert: For example but not only: Range(5, 2**1321312, 3)...\n\n(12:38:09) hivert: Range(0, Infinity, 1) <=> NonNegativeIntegers\n\n(12:38:18) hivert: Range(1, Infinity, 1) <=> PositiveIntegers\n\nIssue created by migration from https://trac.sagemath.org/ticket/8519\n\n",
+    "closed_at": "2010-04-17T02:50:09Z",
     "created_at": "2010-03-13T11:33:46Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "Add a set of Positive Integer with categories (and factor the code with NonNegativeInteger)",
+    "title": "Add a factory of finite/infinite enumerated set (with categories) defines by Range(begin, end, step)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8519",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
@@ -19,21 +20,21 @@ Assignee: nborie
 
 CC:  sage-combinat
 
-Keywords: positive integer
+Keywords: range, categories, set, integer
 
-We have already a proper set with category of NonNegativeIntegers, let's use it to also define PositiveInteger
+A general tool to define:
+* PositiveInteger
+* NonNegativeInteger
+* More.....
 
-```
-sage: NonNegativeIntegers()
-Non negative integers
-sage: PositiveInteger()
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
+The idea is :
+Range(begin, end, step) returns a proper finite/infinite set with categories of the defined set as you think...
 
-/home/nicolas/<ipython console> in <module>()
+(12:37:41) hivert: For example but not only: Range(5, 2**1321312, 3)...
 
-NameError: name 'PositiveInteger' is not defined
-```
+(12:38:09) hivert: Range(0, Infinity, 1) <=> NonNegativeIntegers
+
+(12:38:18) hivert: Range(1, Infinity, 1) <=> PositiveIntegers
 
 Issue created by migration from https://trac.sagemath.org/ticket/8519
 

@@ -1,15 +1,16 @@
-# Issue 5642: Overconvergent modular forms for genus 0 primes
+# Issue 5642: [with patch, positive review] Overconvergent modular forms for genus 0 primes
 
 archive/issues_005642.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nI have written some code that computes approximations to the q-expansions of overconvergent p-adic modular forms of tame level 1, when p is one of the primes {2, 3, 5, 7, 13} (so X_0(p) has genus 0). See the notes of my talk at the Heilbronn Institute for background: \n\nhttp://www.dpmms.cam.ac.uk/~dl267/maths/lecturenotes/overconvergent_lecture.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5642\n\n",
+    "closed_at": "2009-04-02T18:45:44Z",
     "created_at": "2009-03-30T09:50:20Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Overconvergent modular forms for genus 0 primes",
+    "title": "[with patch, positive review] Overconvergent modular forms for genus 0 primes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5642",
     "user": "https://github.com/loefflerd"

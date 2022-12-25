@@ -4,6 +4,7 @@ archive/issues_000744.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nCurrently many functions which modify a graph return the value that was just set.  If instead the modified graph were returned, it would permit a very powerful chaining mechanism in programming.  This mechanism, for example, is one of the things that is best-loved about the jQuery javascript library and something that I personally like very much in Mathematica.\n\nFor example, if \"name\" and \"add_vertex\" both returned the modified graph, then the following code would make 10 copies of the graph g, labeling each appropriately, and add a new vertex that was hooked, successively, to the first 10 vertices of g.  Notice how nicely that chaining complements list comprehensions.\n\n```\n  sage: [g.copy().name(new=\"graph %d\"%i).add_vertex('center').add_edge(('center',i)) for i in [1..10] ]\n```\n\nIs there something that would break if we make this change (e.g., is there some functionality that depends on receiving back the change that was just made in the graph)?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/744\n\n",
+    "closed_at": "2007-10-25T21:02:58Z",
     "created_at": "2007-09-24T18:22:33Z",
     "labels": [
         "component: combinatorics"

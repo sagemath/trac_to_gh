@@ -1,22 +1,23 @@
-# Issue 4386: Sage 3.1.4: optional doctest failure in sage/rings/number_field/totallyreal_phc.py
+# Issue 4386: [with patch, positive review] Sage 3.1.4: optional doctest failure in sage/rings/number_field/totallyreal_phc.py
 
 archive/issues_004386.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @craigcitro @jvoight\n\n```\nsage -t -long -optional devel/sage/sage/rings/number_field/totallyreal_phc.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/totallyreal_phc.py\", line 86:\n    sage: __lagrange_bounds_phc(3,5,[8,1,2,0,1],tmpfile='phc') # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        __lagrange_bounds_phc(Integer(3),Integer(5),[Integer(8),Integer(1),Integer(2),Integer(0),Integer(1)],tmpfile='phc') # optional###line 86:\n    sage: __lagrange_bounds_phc(3,5,[8,1,2,0,1],tmpfile='phc') # optional\n    NameError: name '__lagrange_bounds_phc' is not defined\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/totallyreal_phc.py\", line 89:\n    sage: __lagrange_bounds_phc(3,2,[8,1,2,0,1],tmpfile='phc') # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        __lagrange_bounds_phc(Integer(3),Integer(2),[Integer(8),Integer(1),Integer(2),Integer(0),Integer(1)],tmpfile='phc') # optional###line 89:\n    sage: __lagrange_bounds_phc(3,2,[8,1,2,0,1],tmpfile='phc') # optional\n    NameError: name '__lagrange_bounds_phc' is not defined\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/totallyreal_phc.py\", line 92:\n    sage: __lagrange_bounds_phc(3,1,[8,1,2,0,1],tmpfile='phc') # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        __lagrange_bounds_phc(Integer(3),Integer(1),[Integer(8),Integer(1),Integer(2),Integer(0),Integer(1)],tmpfile='phc') # optional###line 92:\n    sage: __lagrange_bounds_phc(3,1,[8,1,2,0,1],tmpfile='phc') # optional\n    NameError: name '__lagrange_bounds_phc' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_2\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_totallyreal_phc.py\n\t [2.0 s]\nexit code: 1024\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4386\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro @jvoight\n\n```\nsage -t -long -optional devel/sage/sage/rings/number_field/totallyreal_phc.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/totallyreal_phc.py\", line 86:\n    sage: __lagrange_bounds_phc(3,5,[8,1,2,0,1],tmpfile='phc') # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        __lagrange_bounds_phc(Integer(3),Integer(5),[Integer(8),Integer(1),Integer(2),Integer(0),Integer(1)],tmpfile='phc') # optional###line 86:\n    sage: __lagrange_bounds_phc(3,5,[8,1,2,0,1],tmpfile='phc') # optional\n    NameError: name '__lagrange_bounds_phc' is not defined\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/totallyreal_phc.py\", line 89:\n    sage: __lagrange_bounds_phc(3,2,[8,1,2,0,1],tmpfile='phc') # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        __lagrange_bounds_phc(Integer(3),Integer(2),[Integer(8),Integer(1),Integer(2),Integer(0),Integer(1)],tmpfile='phc') # optional###line 89:\n    sage: __lagrange_bounds_phc(3,2,[8,1,2,0,1],tmpfile='phc') # optional\n    NameError: name '__lagrange_bounds_phc' is not defined\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/totallyreal_phc.py\", line 92:\n    sage: __lagrange_bounds_phc(3,1,[8,1,2,0,1],tmpfile='phc') # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        __lagrange_bounds_phc(Integer(3),Integer(1),[Integer(8),Integer(1),Integer(2),Integer(0),Integer(1)],tmpfile='phc') # optional###line 92:\n    sage: __lagrange_bounds_phc(3,1,[8,1,2,0,1],tmpfile='phc') # optional\n    NameError: name '__lagrange_bounds_phc' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_2\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_totallyreal_phc.py\n [2.0 s]\nexit code: 1024\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4386\n\n",
+    "closed_at": "2008-10-31T05:27:19Z",
     "created_at": "2008-10-30T04:19:15Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.1.4: optional doctest failure in sage/rings/number_field/totallyreal_phc.py",
+    "title": "[with patch, positive review] Sage 3.1.4: optional doctest failure in sage/rings/number_field/totallyreal_phc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4386",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mhampton
+Assignee: @craigcitro
 
 CC:  @craigcitro @jvoight
 
@@ -60,7 +61,7 @@ Exception raised:
    3 of   5 in __main__.example_2
 ***Test Failed*** 3 failures.
 For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_totallyreal_phc.py
-	 [2.0 s]
+ [2.0 s]
 exit code: 1024
 ```
 

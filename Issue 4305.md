@@ -1,16 +1,17 @@
-# Issue 4305: [with patch, needs review] move finite fields into their own directory
+# Issue 4305: move finite fields into their own directory
 
 archive/issues_004305.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is in anticipation of much re-factoring and refinement. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4305\n\n",
+    "closed_at": "2010-07-20T09:23:26Z",
     "created_at": "2008-10-15T20:50:56Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] move finite fields into their own directory",
+    "title": "move finite fields into their own directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4305",
     "user": "https://github.com/robertwb"

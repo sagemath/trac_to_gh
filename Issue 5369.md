@@ -1,15 +1,16 @@
-# Issue 5369: [with patch, needs review] Optimize transpose for matrix_integer_dense and matrix_rational_dense
+# Issue 5369: [with patch, positive review] Optimize transpose for matrix_integer_dense and matrix_rational_dense
 
 archive/issues_005369.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nKeywords: transpose\n\nmatrix_integer_dense and matrix_rational_dense don't have any optimize transpose functions, so add it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5369\n\n",
+    "closed_at": "2009-02-28T21:04:29Z",
     "created_at": "2009-02-25T10:00:02Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] Optimize transpose for matrix_integer_dense and matrix_rational_dense",
+    "title": "[with patch, positive review] Optimize transpose for matrix_integer_dense and matrix_rational_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5369",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

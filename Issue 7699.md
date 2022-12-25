@@ -4,6 +4,7 @@ archive/issues_007699.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n      sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/src/.DS_Store\n      sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/include/.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7699\n\n",
+    "closed_at": "2010-01-03T22:21:09Z",
     "created_at": "2009-12-16T01:26:02Z",
     "labels": [
         "component: packages: standard",

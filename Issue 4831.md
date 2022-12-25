@@ -1,15 +1,16 @@
-# Issue 4831: More number field ideal utilities
+# Issue 4831: [with patch, positive review] More number field ideal utilities
 
 archive/issues_004831.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @loefflerd m.t.aranes@warwick.ac.uk\n\nKeywords: number fields, orders, ideals\n\nThis follows on from #4536:\n\n1. New invertible_residues() iterator for iterating though only the invertible residues modulo an integral ideal.\n2. New function like pari's add_to_1 so that A.add_to_1(B) return a in A such that 1-a is in B.  (The name of this might change before we upload a patch).\n\nPatch to follows later today.\n\nJohn Cremona and Maite Aranes\n\nIssue created by migration from https://trac.sagemath.org/ticket/4831\n\n",
+    "closed_at": "2009-01-19T01:34:44Z",
     "created_at": "2008-12-19T12:31:40Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "More number field ideal utilities",
+    "title": "[with patch, positive review] More number field ideal utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4831",
     "user": "https://github.com/JohnCremona"

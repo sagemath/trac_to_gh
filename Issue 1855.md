@@ -1,16 +1,17 @@
-# Issue 1855: [with 1-line patch; needs review] trivial but visibly very painful bug in plotting
+# Issue 1855: [with 1-line patch; with positive review] trivial but visibly very painful bug in plotting
 
 archive/issues_001855.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1855\n\n",
+    "body": "Assignee: @williamstein\n\nMerged in Sage 2.10.1.alpha0\n\nIssue created by migration from https://trac.sagemath.org/ticket/1855\n\n",
+    "closed_at": "2008-01-19T22:58:25Z",
     "created_at": "2008-01-19T22:38:52Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with 1-line patch; needs review] trivial but visibly very painful bug in plotting",
+    "title": "[with 1-line patch; with positive review] trivial but visibly very painful bug in plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1855",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,7 @@ archive/issues_001855.json:
 ```
 Assignee: @williamstein
 
-
+Merged in Sage 2.10.1.alpha0
 
 Issue created by migration from https://trac.sagemath.org/ticket/1855
 

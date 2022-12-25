@@ -1,9 +1,10 @@
-# Issue 1570: typo in sage/rings/number_field/number_field.py
+# Issue 1570: [with trivial patch] typo in sage/rings/number_field/number_field.py
 
 archive/issues_001570.json:
 ```json
 {
     "body": "Assignee: tba\n\nReported by Francis Clarke\n\n```\n--- a/sage/rings/number_field/number_field.py   Sun Dec 16 06:37:16\n2007 -0800\n+++ b/sage/rings/number_field/number_field.py   Wed Dec 19 18:54:54\n2007 +0000\n@@ -751,7 +751,7 @@ class NumberField_generic(number_field_b\n\n         You can also view a number field as having a different\n         generator by just chosing the input to generate the\n-        whole filed; for that it is better to use\n+        whole field; for that it is better to use\n         \\code{self.change_generator}, which gives isomorphisms\n         in both directions.\n         \"\"\" \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1570\n\n",
+    "closed_at": "2008-01-13T17:49:03Z",
     "created_at": "2007-12-20T01:30:55Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001570.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "typo in sage/rings/number_field/number_field.py",
+    "title": "[with trivial patch] typo in sage/rings/number_field/number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1570",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

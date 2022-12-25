@@ -1,22 +1,23 @@
-# Issue 3099: Singular crashes
+# Issue 3099: Singular crashes on OSX in 32 bit mode
 
 archive/issues_003099.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  polybori @dimpase\n\nSingular crashes at degree 13 on intel core duo machine (mac os 10.5.2) when running \"fano7.sage\" with user command \"run2(1,20)\".  See attached files (fano7.sage, crash.txt}.  You may want to try \"run(12,20)\" to get to the crash more quickly.  Also, \"run2(19,40)\" crashed a quad core ppc machine with 8 gigs of memory.  The crash occurred before there was any significant output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3099\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori @dimpase\n\nSingular crashes at degree 13 on intel core duo machine (mac os 10.5.2) when running \"fano7.sage\" with user command \"run2(1,20)\".  See attached files (fano7.sage, crash.txt}.  You may want to try \"run(12,20)\" to get to the crash more quickly.  Also, \"run2(19,40)\" crashed a quad core ppc machine with 8 gigs of memory.  The crash occurred before there was any significant output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3099\n\n",
+    "closed_at": "2020-04-18T12:57:50Z",
     "created_at": "2008-05-03T21:00:46Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Singular crashes",
+    "title": "Singular crashes on OSX in 32 bit mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3099",
     "user": "https://trac.sagemath.org/admin/accounts/users/jxxcarlson"
 }
 ```
-Assignee: @malb
+Assignee: mabshoff
 
 CC:  polybori @dimpase
 

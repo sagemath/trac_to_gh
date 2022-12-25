@@ -1,15 +1,16 @@
-# Issue 7595: Chinese Remainder Theorem for polynomials over a field
+# Issue 7595: Chinese Remainder Theorem for univariate polynomials over a field
 
 archive/issues_007595.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis wasn't hard to implement, since all the hard work was already done.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7595\n\n",
+    "closed_at": "2010-01-13T05:03:26Z",
     "created_at": "2009-12-03T17:27:53Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Chinese Remainder Theorem for polynomials over a field",
+    "title": "Chinese Remainder Theorem for univariate polynomials over a field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7595",
     "user": "https://github.com/rlmill"

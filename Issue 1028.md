@@ -1,15 +1,16 @@
-# Issue 1028: add omega support for sage-test
+# Issue 1028: [with patch] fix omega support for new valgrind release (3.3.0 once it is out)
 
 archive/issues_001028.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nTitle says it all :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1028\n\n",
+    "body": "Assignee: mabshoff\n\nThe omega tool is now called exp-omega. So update the scripts once we update to a more recent version of valgrind.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1028\n\n",
+    "closed_at": "2008-01-25T20:52:27Z",
     "created_at": "2007-10-29T05:35:10Z",
     "labels": [
         "component: memleak"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "add omega support for sage-test",
+    "title": "[with patch] fix omega support for new valgrind release (3.3.0 once it is out)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1028",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -17,7 +18,7 @@ archive/issues_001028.json:
 ```
 Assignee: mabshoff
 
-Title says it all :)
+The omega tool is now called exp-omega. So update the scripts once we update to a more recent version of valgrind.
 
 Cheers,
 

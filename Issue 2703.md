@@ -1,21 +1,22 @@
-# Issue 2703: make _fast_float_ work on inequality testing
+# Issue 2703: [Invalid (?)] make _fast_float_ work on inequality testing
 
 archive/issues_002703.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt would be really nice if this worked:\n\n```\nsage: var('x y')\nsage: f=x^2+y^2<=1\nsage: g=f._fast_float_('x','y')\nsage: g(1,2)\nFalse\nsage: g(0.5,0.5)\nTrue\n```\n\nHere is a toy implementation:\n\n```\ndef ff(func,*args):\n    g1 = func.left()._fast_float_(*args)\n    g2 = func.right()._fast_float_(*args)\n    oper = func.operator()\n    def ret(*sub_args):\n        return oper(g1(*sub_args), g2(*sub_args))\n    return ret\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2703\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be really nice if this worked:\n\n```\nsage: var('x y')\nsage: f=x^2+y^2<=1\nsage: g=f._fast_float_('x','y')\nsage: g(1,2)\nFalse\nsage: g(0.5,0.5)\nTrue\n```\n\nHere is a toy implementation:\n\n```\ndef ff(func,*args):\n    g1 = func.left()._fast_float_(*args)\n    g2 = func.right()._fast_float_(*args)\n    oper = func.operator()\n    def ret(*sub_args):\n        return oper(g1(*sub_args), g2(*sub_args))\n    return ret\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2703\n\n",
+    "closed_at": "2008-09-02T10:18:02Z",
     "created_at": "2008-03-28T17:29:54Z",
     "labels": [
-        "component: cygwin"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "make _fast_float_ work on inequality testing",
+    "title": "[Invalid (?)] make _fast_float_ work on inequality testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2703",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 It would be really nice if this worked:
 

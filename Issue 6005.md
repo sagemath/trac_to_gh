@@ -1,22 +1,23 @@
-# Issue 6005: [with patch, needs review] real and imaginary parts for quadratic number fields
+# Issue 6005: real and imaginary parts for quadratic number fields
 
 archive/issues_006005.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6005\n\n",
+    "body": "Assignee: @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6005\n\n",
+    "closed_at": "2010-07-29T06:12:14Z",
     "created_at": "2009-05-07T21:22:29Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] real and imaginary parts for quadratic number fields",
+    "title": "real and imaginary parts for quadratic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6005",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 
 

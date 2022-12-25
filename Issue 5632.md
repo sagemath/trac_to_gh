@@ -1,9 +1,10 @@
-# Issue 5632: [with spkg; needs review] doc fixes for quaternion algebra element
+# Issue 5632: [with patch, positive review] doc fixes for quaternion algebra element
 
 archive/issues_005632.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAlong the lines of #5541, here are some doc fixes for quaternion_algebra_element.pyx.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5632\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAlong the lines of #5541, here are some doc fixes for quaternion_algebra_element.pyx.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5632\n\n",
+    "closed_at": "2009-03-31T20:08:49Z",
     "created_at": "2009-03-29T15:39:54Z",
     "labels": [
         "component: algebra",
@@ -11,13 +12,13 @@ archive/issues_005632.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with spkg; needs review] doc fixes for quaternion algebra element",
+    "title": "[with patch, positive review] doc fixes for quaternion algebra element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5632",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: tbd
+Assignee: @jhpalmieri
 
 Along the lines of #5541, here are some doc fixes for quaternion_algebra_element.pyx.
 

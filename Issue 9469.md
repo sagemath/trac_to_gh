@@ -3,7 +3,8 @@
 archive/issues_009469.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently one can do:\n\n```\n    sage: F = FreeModule(QQ,3)\n    sage: F in VectorSpaces(QQ)\n    True\n```\n\nThis patch implements:\n\n```\n    sage: F in VectorSpaces\n    True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9469\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Cernay2012\n\nCurrently one can do:\n\n```\n    sage: F = FreeModule(QQ,3)\n    sage: F in VectorSpaces(QQ)\n    True\n```\n\nThis patch implements:\n\n```\n    sage: F in VectorSpaces\n    True\n```\n\n(and does a couple closeby minor improvements to the doc)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9469\n\n",
+    "closed_at": "2012-02-27T11:19:53Z",
     "created_at": "2010-07-10T02:52:00Z",
     "labels": [
         "component: categories"
@@ -19,6 +20,8 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
+Keywords: Cernay2012
+
 Currently one can do:
 
 ```
@@ -33,6 +36,8 @@ This patch implements:
     sage: F in VectorSpaces
     True
 ```
+
+(and does a couple closeby minor improvements to the doc)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9469
 

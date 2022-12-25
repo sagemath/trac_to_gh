@@ -6,8 +6,7 @@ archive/issues_006893.json:
     "body": "Assignee: @williamstein\n\nThe patch on this ticket was originally posted by Mike Hansen to #5448.  This patch was replaced with a different patch on that ticket.  However, there are still good bits in this patch that simplify the plotting code.  These good bits should be taken and incorporated into the plotting code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6893\n\n",
     "created_at": "2009-09-05T09:06:37Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch, needs work] Plotting code improvements",

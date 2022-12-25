@@ -3,7 +3,8 @@
 archive/issues_009949.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\nKeywords: brian brain simulator neuronal dynamics\n\nBrian, a simulator for spiking neural networks, has been recently accepted as an experimental package (see ticket [#9675](http://trac.sagemath.org/sage_trac/ticket/9675) and [Brian's webage](http://www.briansimulator.org/)). In this ticket, it has been suggested the possibility to change it to an optional package. However, at least it should be tested in some different platforms.\n\nCode can be downloaded by clicking [here](http://code.google.com/p/spkg-upload/downloads/detail?name=brian-1.2.1.p0.spkg&can=2&q=) or at Sage's experimental packages page: [http://www.sagemath.org/packages/experimental/](http://www.sagemath.org/packages/experimental/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9950\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\nKeywords: brian brain simulator neuronal dynamics sd40.5\n\nBrian, a simulator for spiking neural networks, has been recently accepted as an experimental package (see ticket #9675) and [Brian's webage](http://www.briansimulator.org/)). In this ticket, it has been suggested the possibility to change it to an optional package. However, at least it should be tested in some different platforms.\n\nCode can be downloaded by clicking [here](http://code.google.com/p/spkg-upload/downloads/detail?name=brian-1.2.1.p0.spkg&can=2&q=) or at Sage's experimental packages page: [http://www.sagemath.org/packages/experimental/](http://www.sagemath.org/packages/experimental/). \n\nIssue created by migration from https://trac.sagemath.org/ticket/9950\n\n",
+    "closed_at": "2012-06-12T08:15:34Z",
     "created_at": "2010-09-19T17:51:10Z",
     "labels": [
         "component: packages: optional",
@@ -20,11 +21,11 @@ Assignee: tbd
 
 CC:  @kcrisman
 
-Keywords: brian brain simulator neuronal dynamics
+Keywords: brian brain simulator neuronal dynamics sd40.5
 
-Brian, a simulator for spiking neural networks, has been recently accepted as an experimental package (see ticket [#9675](http://trac.sagemath.org/sage_trac/ticket/9675) and [Brian's webage](http://www.briansimulator.org/)). In this ticket, it has been suggested the possibility to change it to an optional package. However, at least it should be tested in some different platforms.
+Brian, a simulator for spiking neural networks, has been recently accepted as an experimental package (see ticket #9675) and [Brian's webage](http://www.briansimulator.org/)). In this ticket, it has been suggested the possibility to change it to an optional package. However, at least it should be tested in some different platforms.
 
-Code can be downloaded by clicking [here](http://code.google.com/p/spkg-upload/downloads/detail?name=brian-1.2.1.p0.spkg&can=2&q=) or at Sage's experimental packages page: [http://www.sagemath.org/packages/experimental/](http://www.sagemath.org/packages/experimental/).
+Code can be downloaded by clicking [here](http://code.google.com/p/spkg-upload/downloads/detail?name=brian-1.2.1.p0.spkg&can=2&q=) or at Sage's experimental packages page: [http://www.sagemath.org/packages/experimental/](http://www.sagemath.org/packages/experimental/). 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9950
 

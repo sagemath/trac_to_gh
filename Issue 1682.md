@@ -1,16 +1,17 @@
-# Issue 1682: Turn on implicit multiplication per default
+# Issue 1682: [with patch, docs] make enabling implicit multiplication easy
 
 archive/issues_001682.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is the second patch from #1576 which turns on implicit multiplication per default. We will wait to merge this past 2.9.2.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1682\n\n",
+    "closed_at": "2008-01-15T06:05:25Z",
     "created_at": "2008-01-04T18:13:41Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Turn on implicit multiplication per default",
+    "title": "[with patch, docs] make enabling implicit multiplication easy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1682",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

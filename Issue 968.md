@@ -1,16 +1,16 @@
-# Issue 968: graph_isom: memory management, legibility
+# Issue 968: [with patch] graph_isom: memory management, legibility
 
 archive/issues_000968.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThese are a few changesets to increase readability and eliminate some pointer arithmetic in memory allocation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/968\n\n",
+    "closed_at": "2007-10-23T22:18:11Z",
     "created_at": "2007-10-22T01:22:09Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "graph_isom: memory management, legibility",
+    "title": "[with patch] graph_isom: memory management, legibility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/968",
     "user": "https://github.com/rlmill"

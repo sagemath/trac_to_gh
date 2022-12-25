@@ -1,16 +1,17 @@
-# Issue 6504: Add doctests to toy_buchberger to get it to 100%
+# Issue 6504: [with patch, positive review] Add doctests to toy_buchberger to get it to 100%
 
 archive/issues_006504.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: groebner basis, buchberger\n\nSome functions were missing doctests, I think I have corrected that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6504\n\n",
+    "closed_at": "2009-07-24T08:41:57Z",
     "created_at": "2009-07-09T22:52:51Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Add doctests to toy_buchberger to get it to 100%",
+    "title": "[with patch, positive review] Add doctests to toy_buchberger to get it to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6504",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

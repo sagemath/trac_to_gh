@@ -4,6 +4,7 @@ archive/issues_003618.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince clisp has been updated we need to rebuild Maxima with it. Otherwise upgrades will fail to work properly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3618\n\n",
+    "closed_at": "2008-07-09T16:05:12Z",
     "created_at": "2008-07-08T23:25:52Z",
     "labels": [
         "component: build",

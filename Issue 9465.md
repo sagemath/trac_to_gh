@@ -1,15 +1,16 @@
-# Issue 9465: Update to FriCAS 1.1.0
+# Issue 9465: Update to FriCAS 1.2.4
 
 archive/issues_009465.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @hemmecke @rwst\n\nThe earliear upgrade is in http://trac.sagemath.org/sage_trac/ticket/9354\nAlso look at http://trac.sagemath.org/sage_trac/ticket/6517\nfor more information.\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricas-1.1.0.spkg\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.1.0.spkg\n\nfricasaldor might not properly work on 64 bit machines or might not work at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9465\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @hemmecke @rwst\n\nKeywords: fricas\n\nThe earlier upgrade is in #9354. See also #6517 for more information.\n\nSource tarball:\n\nhttp://sourceforge.net/projects/fricas/files/fricas/1.2.4/fricas-1.2.4-full.tar.bz2/download\n\nthat has to be renamed into fricas-1.2.4.tar.bz2 (and put in $SAGE_ROOT/upstream) as usual.\n\n\nOlder instructions:\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricas-1.1.0.spkg\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.1.0.spkg\n\nfricasaldor might not properly work on 64 bit machines or might not work at all.\n\nLink to project: http://sourceforge.net/projects/fricas/\n\nIssue created by migration from https://trac.sagemath.org/ticket/9465\n\n",
+    "closed_at": "2014-12-12T12:29:56Z",
     "created_at": "2010-07-09T12:39:04Z",
     "labels": [
-        "component: algebra"
+        "component: packages: experimental"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Update to FriCAS 1.1.0",
+    "title": "Update to FriCAS 1.2.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9465",
     "user": "https://github.com/hemmecke"
@@ -19,15 +20,26 @@ Assignee: @aghitza
 
 CC:  @hemmecke @rwst
 
-The earliear upgrade is in http://trac.sagemath.org/sage_trac/ticket/9354
-Also look at http://trac.sagemath.org/sage_trac/ticket/6517
-for more information.
+Keywords: fricas
+
+The earlier upgrade is in #9354. See also #6517 for more information.
+
+Source tarball:
+
+http://sourceforge.net/projects/fricas/files/fricas/1.2.4/fricas-1.2.4-full.tar.bz2/download
+
+that has to be renamed into fricas-1.2.4.tar.bz2 (and put in $SAGE_ROOT/upstream) as usual.
+
+
+Older instructions:
 
 http://sage.math.washington.edu/home/hemmecke/pub/fricas-1.1.0.spkg
 
 http://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.1.0.spkg
 
 fricasaldor might not properly work on 64 bit machines or might not work at all.
+
+Link to project: http://sourceforge.net/projects/fricas/
 
 Issue created by migration from https://trac.sagemath.org/ticket/9465
 

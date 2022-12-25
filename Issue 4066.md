@@ -1,16 +1,17 @@
-# Issue 4066: [with patch, needs review] Sage 3.1.2.alpha3: Solaris build fixes for the Sage library
+# Issue 4066: [with patch, positive review] Sage 3.1.2.alpha3: Solaris build fixes for the Sage library
 
 archive/issues_004066.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nThere are two small fixes needed for the Sage library.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4066\n\n",
+    "closed_at": "2008-09-05T16:59:49Z",
     "created_at": "2008-09-05T06:42:16Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Sage 3.1.2.alpha3: Solaris build fixes for the Sage library",
+    "title": "[with patch, positive review] Sage 3.1.2.alpha3: Solaris build fixes for the Sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4066",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_000597.json:
 ```json
 {
     "body": "Assignee: somebody\n\nIs there any advantage to having _neg_c/_neg_/_neg_c_imple as opposed to overriding __neg__? \n\nIssue created by migration from https://trac.sagemath.org/ticket/597\n\n",
+    "closed_at": "2008-11-14T08:56:35Z",
     "created_at": "2007-09-06T00:52:14Z",
     "labels": [
         "component: basic arithmetic",

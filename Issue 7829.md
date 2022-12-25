@@ -4,9 +4,10 @@ archive/issues_007829.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\n```\nsage: float(e).hex()\n'0x1.5bf0a8b145769p+1'\nsage: RR(e).hex()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\nAttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'\n```\n\nThere should probably be a __hex__ method as well, so hex(2.3) works. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7829\n\n",
+    "closed_at": "2014-06-04T14:48:09Z",
     "created_at": "2010-01-03T05:37:30Z",
     "labels": [
-        "component: algebra",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],

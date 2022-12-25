@@ -4,6 +4,7 @@ archive/issues_008240.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nCC:  @roed314 @robertwb @saraedum @xcaruso @kedlaya\n\n```\nsage: K.<a> = Qq(25)\nsage: F = K.residue_field()\nsage: F(a)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: unable to coerce\n```\n\nPerhaps this is a \"feature request\", but it seems like a pretty basic feature...\n\n(It works fine for prime fields)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8240\n\n",
+    "closed_at": "2017-10-20T09:15:34Z",
     "created_at": "2010-02-11T19:51:59Z",
     "labels": [
         "component: padics",

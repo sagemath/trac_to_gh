@@ -3,10 +3,10 @@
 archive/issues_006092.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  fwclarke\n\nKeywords: subfield relativize number field multiple elements\n\nSee #6079 for a first stab patch and discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6092\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  fwclarke\n\nKeywords: subfield relativize number field multiple elements\n\nSee #6079 for a first stab patch and discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6092\n\n",
     "created_at": "2009-05-20T07:29:53Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,7 +16,7 @@ archive/issues_006092.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  fwclarke
 

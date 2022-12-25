@@ -1,9 +1,10 @@
-# Issue 4843: Fix readline related build problems on OpenSUSE 11.1
+# Issue 4843: [with spkg; positive review] Fix readline related build problems on OpenSUSE 11.1
 
 archive/issues_004843.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere are some small issues with Sage's readline and the one from OpenSUSE not playing well together. I have some temporary fix to get around this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4843\n\n",
+    "closed_at": "2009-01-06T06:39:29Z",
     "created_at": "2008-12-20T22:57:16Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004843.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Fix readline related build problems on OpenSUSE 11.1",
+    "title": "[with spkg; positive review] Fix readline related build problems on OpenSUSE 11.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4843",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

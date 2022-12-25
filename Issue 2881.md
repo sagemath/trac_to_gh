@@ -4,6 +4,7 @@ archive/issues_002881.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis makes things dreadfully slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2881\n\n",
+    "closed_at": "2008-08-31T18:45:20Z",
     "created_at": "2008-04-11T22:40:23Z",
     "labels": [
         "component: calculus",

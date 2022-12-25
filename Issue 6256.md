@@ -1,9 +1,10 @@
-# Issue 6256: bug in symbolic arithmetic with exp
+# Issue 6256: [with patch and package, positive review] bug in symbolic arithmetic with exp
 
 archive/issues_006256.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n```\nsage: var('kappa')\nkappa\nsage: x = sqrt(kappa)\nsage: F = exp(x)\nsage: F\ne^sqrt(kappa)\nsage: F/F\ne^(2*sqrt(kappa))\nsage: 1/F\ne^(-sqrt(kappa))\nsage: (1/F) * F\ne^(2*sqrt(kappa))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6256\n\n",
+    "closed_at": "2009-06-14T21:36:21Z",
     "created_at": "2009-06-10T08:48:57Z",
     "labels": [
         "component: symbolics",
@@ -11,7 +12,7 @@ archive/issues_006256.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "bug in symbolic arithmetic with exp",
+    "title": "[with patch and package, positive review] bug in symbolic arithmetic with exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6256",
     "user": "https://github.com/burcin"

@@ -3,10 +3,10 @@
 archive/issues_006232.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @zimmermann6 @nexttime wbhart jpflori @yyyyx4\n\nKeywords: linear algebra, factoring, number theory\n\nCADO-NFS is an implementation of the number field sieve:\n\n```\nCADO is sponsored by the French Research Agency (ANR).\nIt started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum\u2019s team (IECN Nancy). \n\nObjectives:\n * better understand how the Number Field Sieve works\n * publish a state-of-the art implementation, not to break new\n   records, but to routinely factor numbers of 155 digits\n * use that code base to try new ideas and/or new algorithms\n```\n\nhttp://webloria.loria.fr/~zimmerma/talks/cado.pdf\n\nThe Block-Wiedemann in CADO-NSF might be of independent interest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6232\n\n",
+    "body": "Assignee: @malb\n\nCC:  @zimmermann6 @nexttime wbhart jpflori @yyyyx4\n\nKeywords: linear algebra, factoring, number theory\n\nCADO-NFS is an implementation of the number field sieve:\n\n```\nCADO is sponsored by the French Research Agency (ANR).\nIt started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum\u2019s team (IECN Nancy). \n\nObjectives:\n * better understand how the Number Field Sieve works\n * publish a state-of-the art implementation, not to break new\n   records, but to routinely factor numbers of 155 digits\n * use that code base to try new ideas and/or new algorithms\n```\n\nhttps://members.loria.fr/PZimmermann/talks/cado.pdf\n\nThe Block-Wiedemann in CADO-NFS might be of independent interest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6232\n\n",
     "created_at": "2009-06-06T12:48:45Z",
     "labels": [
-        "component: packages: standard",
+        "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
@@ -35,9 +35,9 @@ Objectives:
  * use that code base to try new ideas and/or new algorithms
 ```
 
-http://webloria.loria.fr/~zimmerma/talks/cado.pdf
+https://members.loria.fr/PZimmermann/talks/cado.pdf
 
-The Block-Wiedemann in CADO-NSF might be of independent interest.
+The Block-Wiedemann in CADO-NFS might be of independent interest.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6232
 

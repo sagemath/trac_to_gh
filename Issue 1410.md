@@ -4,6 +4,7 @@ archive/issues_001410.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nToDo:\n* delete $SAGE_LOCAL/include/mwrank\n* strip the mwrank binaries? Also make them link dynamically?\n  mwrank unstripped: 12 mb, stripped 2.2MB\n* delete $SAGE_LOCAL/lib/libmwrank.[so|dylib]\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1410\n\n",
+    "closed_at": "2007-12-06T17:46:59Z",
     "created_at": "2007-12-06T13:17:34Z",
     "labels": [
         "component: algebraic geometry",

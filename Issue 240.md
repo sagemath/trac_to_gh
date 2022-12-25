@@ -4,6 +4,7 @@ archive/issues_000240.json:
 ```json
 {
     "body": "Assignee: boothby\n\nin notebook when refresh browser or first get page cell update list isn't sent out with running cells. This means that if cell x is in the middle of running, and you refresh your browser, it is *impossible* to see what cell x is outputing. \n\nHelena Verrill found this bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/240\n\n",
+    "closed_at": "2007-08-19T02:06:59Z",
     "created_at": "2007-02-03T10:15:45Z",
     "labels": [
         "component: notebook",

@@ -1,9 +1,10 @@
-# Issue 3305: [with patch; needs review] man page for lcalc Debian package
+# Issue 3305: [with patch; positive review] man page for lcalc Debian package
 
 archive/issues_003305.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch which adds a man page to the lcalc Debian package (generated using help2man).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3305\n\n",
+    "closed_at": "2008-05-28T06:45:30Z",
     "created_at": "2008-05-26T02:40:54Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003305.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] man page for lcalc Debian package",
+    "title": "[with patch; positive review] man page for lcalc Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3305",
     "user": "https://github.com/timabbott"

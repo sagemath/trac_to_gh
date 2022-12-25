@@ -1,16 +1,17 @@
-# Issue 4601: [with patch; needs review] optional magma interface -- fix all broken optional doctests by introducing _magma_init_(self, magma) signature
+# Issue 4601: [with patch; positive review] optional magma interface -- fix all broken optional doctests by introducing _magma_init_(self, magma) signature
 
 archive/issues_004601.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4601\n\n",
+    "body": "Assignee: @williamstein\n\nThis ticket changes the signature of _magma_ and _magma_init_ slightly to pass in the interface -- which makes a MASSIVE amount of sense if you think about it. Also, the magma interface takes care of caching of values, which also makes sense.\n\nThere is some redundancy -- the generic infrastructure also separately caches stuff as well. This will be eliminated in a future ticket.  The key point about this patch is that it applies cleanly to 3.2.1.alpha0 *and* it works -- it fixes all problems in trac's #4482, #4401 and #4399.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4601\n\n",
+    "closed_at": "2008-11-24T23:38:46Z",
     "created_at": "2008-11-24T03:37:26Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch; needs review] optional magma interface -- fix all broken optional doctests by introducing _magma_init_(self, magma) signature",
+    "title": "[with patch; positive review] optional magma interface -- fix all broken optional doctests by introducing _magma_init_(self, magma) signature",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4601",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,9 @@ archive/issues_004601.json:
 ```
 Assignee: @williamstein
 
+This ticket changes the signature of _magma_ and _magma_init_ slightly to pass in the interface -- which makes a MASSIVE amount of sense if you think about it. Also, the magma interface takes care of caching of values, which also makes sense.
 
+There is some redundancy -- the generic infrastructure also separately caches stuff as well. This will be eliminated in a future ticket.  The key point about this patch is that it applies cleanly to 3.2.1.alpha0 *and* it works -- it fixes all problems in trac's #4482, #4401 and #4399.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4601
 

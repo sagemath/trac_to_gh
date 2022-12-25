@@ -1,15 +1,16 @@
-# Issue 6343: Adds SageObject.check() generic testing framework
+# Issue 6343: [with patch, positive review] Adds TestSuite(object).run() generic testing framework
 
 archive/issues_006343.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty @roed314 @saliola mvngu\n\nThis patch adds a .check() method in SageObject which runs systematic checks on the object. Here is a typical call:\n\n     sage: ZZ.check(verbose = True)\n     running test_an_element ... done\n     running test_element_pickling ... done\n     running test_not_implemented_methods ... done\n     running test_pickling ... done\n\nIn practice, o.check() runs all the methods named test_* of the object o.\n\nThe test_* methods are typically implemented by abstract super classes and in particular via categories, in order to enforce standard behavior and API (test_pickling, test_an_element), or provide mathematical sanity checks (test_associativity).\n\nFor consistent error reporting, the test_* methods in turn must use the gadget sage.misc.instance_tester.InstanceTester to actually run the tests.\n\nThis patch is a prerequisite for #5891 (category framework), which uses it intensively. Some examples in the patch illustrate this, and are therefore temporarily disabled.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6343\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty @roed314 @saliola mvngu\n\nKeywords: testunit\n\nThis patch implements TestSuite(object).run()  which runs\nsystematic checks on the object. Here is a typical call:\n\n```\n     sage: TestSuite(ZZ).run(verbose = True)\n     running ._test_an_element() ... done\n     running ._test_element_pickling() ... done\n     running ._test_not_implemented_methods() ... done\n     running ._test_pickling() ... done\n```\nIn practice, TestSuite(o).run() runs all the methods named _test_* of the object o.\nThe _test_* methods are typically implemented by abstract super classes\nand in particular via categories, in order to enforce standard\nbehavior and API (_test_pickling, _test_an_element), or provide\nmathematical sanity checks (_test_associativity).\n\nFor consistent error reporting, the _test_* methods in turn must use\nthe new gadget sage.misc.sage_unittest.InstanceTester to actually\nrun the tests.\n\nThis is used by the category patches #5891 and followers\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6343\n\n",
+    "closed_at": "2009-09-08T11:09:27Z",
     "created_at": "2009-06-16T22:21:54Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Adds SageObject.check() generic testing framework",
+    "title": "[with patch, positive review] Adds TestSuite(object).run() generic testing framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6343",
     "user": "https://github.com/nthiery"
@@ -19,21 +20,30 @@ Assignee: @nthiery
 
 CC:  sage-combinat cwitty @roed314 @saliola mvngu
 
-This patch adds a .check() method in SageObject which runs systematic checks on the object. Here is a typical call:
+Keywords: testunit
 
-     sage: ZZ.check(verbose = True)
-     running test_an_element ... done
-     running test_element_pickling ... done
-     running test_not_implemented_methods ... done
-     running test_pickling ... done
+This patch implements TestSuite(object).run()  which runs
+systematic checks on the object. Here is a typical call:
 
-In practice, o.check() runs all the methods named test_* of the object o.
+```
+     sage: TestSuite(ZZ).run(verbose = True)
+     running ._test_an_element() ... done
+     running ._test_element_pickling() ... done
+     running ._test_not_implemented_methods() ... done
+     running ._test_pickling() ... done
+```
+In practice, TestSuite(o).run() runs all the methods named _test_* of the object o.
+The _test_* methods are typically implemented by abstract super classes
+and in particular via categories, in order to enforce standard
+behavior and API (_test_pickling, _test_an_element), or provide
+mathematical sanity checks (_test_associativity).
 
-The test_* methods are typically implemented by abstract super classes and in particular via categories, in order to enforce standard behavior and API (test_pickling, test_an_element), or provide mathematical sanity checks (test_associativity).
+For consistent error reporting, the _test_* methods in turn must use
+the new gadget sage.misc.sage_unittest.InstanceTester to actually
+run the tests.
 
-For consistent error reporting, the test_* methods in turn must use the gadget sage.misc.instance_tester.InstanceTester to actually run the tests.
+This is used by the category patches #5891 and followers
 
-This patch is a prerequisite for #5891 (category framework), which uses it intensively. Some examples in the patch illustrate this, and are therefore temporarily disabled.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6343
 

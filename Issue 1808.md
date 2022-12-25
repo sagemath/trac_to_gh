@@ -1,16 +1,17 @@
-# Issue 1808: [with very short patch] two simple LaTeX fixes
+# Issue 1808: [with very short patch, positive review] two simple LaTeX fixes
 
 archive/issues_001808.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1808\n\n",
+    "closed_at": "2008-01-17T21:43:39Z",
     "created_at": "2008-01-17T20:47:37Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with very short patch] two simple LaTeX fixes",
+    "title": "[with very short patch, positive review] two simple LaTeX fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1808",
     "user": "https://github.com/malb"

@@ -4,6 +4,7 @@ archive/issues_009055.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @wdjoyner\n\nKeywords: rational points enumeration\n\nI think it would be sensible to move the functions\n\n\nenum_projective_rational_field\n\n\nenum_projective_finite_field\n\n\nenum_affine_rational_field\n\n\nenum_affine_finite field\n\n\n\nfrom their current position at the top of sage.schemes.generic.homset, and to clean up their code to make it easier to read whilst (I believe) keeping the timing about the same.\n\nI have started work on a patch that does this, putting them into a new file sage.schemes.generic.rational_point and using the cartesian_product_iterator function to make the code much more readable.\n\nThis is a preamble to putting other (more efficient) functions that find rational points in specific cases into the same file - I am currently working on this, and will make a separate ticket for it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9055\n\n",
+    "closed_at": "2011-01-12T06:32:17Z",
     "created_at": "2010-05-26T11:34:42Z",
     "labels": [
         "component: algebraic geometry",

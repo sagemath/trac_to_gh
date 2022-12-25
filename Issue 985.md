@@ -1,9 +1,10 @@
-# Issue 985: sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py
+# Issue 985: [with patch] sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py
 
 archive/issues_000985.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nequations.py:\n\n```\nFile \"equations.py\", line 12:\n    sage: print solve(qe, x)\nExpected:\n    [\n                                          2\n                                  - sqrt(b  - 4 a c) - b\n                              x == ----------------------\n                                           2 a,\n                                         2\n                                   sqrt(b  - 4 a c) - b\n                               x == --------------------\n                                           2 a\n    ]\nGot:\n    [x == (-sqrt(b^2 - 4*a*c) - b)/(2*a), x == (sqrt(b^2 - 4*a*c) - b)/(2*a)]\n```\n\nell_generic.py:\n\n```\nFile \"ell_generic.py\", line 249:\n    sage: print F.solve(y)\nExpected:\n    [\n                          3      2\n                - sqrt(4 x  - 4 x  - 40 x - 79) - 1\n            y == -----------------------------------\n                                 2,\n                         3      2\n                 sqrt(4 x  - 4 x  - 40 x - 79) - 1\n             y == ---------------------------------\n                                 2\n    ]\nGot:\n    [y == (-sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2, y == (sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/985\n\n",
+    "body": "Assignee: @mwhansen\n\nequations.py:\n\n```\nFile \"equations.py\", line 12:\n    sage: print solve(qe, x)\nExpected:\n    [\n                                          2\n                                  - sqrt(b  - 4 a c) - b\n                              x == ----------------------\n                                           2 a,\n                                         2\n                                   sqrt(b  - 4 a c) - b\n                               x == --------------------\n                                           2 a\n    ]\nGot:\n    [x == (-sqrt(b^2 - 4*a*c) - b)/(2*a), x == (sqrt(b^2 - 4*a*c) - b)/(2*a)]\n```\n\nell_generic.py:\n\n```\nFile \"ell_generic.py\", line 249:\n    sage: print F.solve(y)\nExpected:\n    [\n                          3      2\n                - sqrt(4 x  - 4 x  - 40 x - 79) - 1\n            y == -----------------------------------\n                                 2,\n                         3      2\n                 sqrt(4 x  - 4 x  - 40 x - 79) - 1\n             y == ---------------------------------\n                                 2\n    ]\nGot:\n    [y == (-sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2, y == (sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/985\n\n",
+    "closed_at": "2007-10-25T06:44:17Z",
     "created_at": "2007-10-25T00:55:12Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_000985.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py",
+    "title": "[with patch] sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/985",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 equations.py:
 

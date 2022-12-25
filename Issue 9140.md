@@ -4,6 +4,7 @@ archive/issues_009140.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill\n\nThis patch adds a \"normalized\" option to the laplacian_matrix method to return the normalized Laplacian matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9140\n\n",
+    "closed_at": "2010-06-06T07:19:03Z",
     "created_at": "2010-06-04T19:56:44Z",
     "labels": [
         "component: graph theory",

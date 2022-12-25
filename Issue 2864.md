@@ -1,16 +1,17 @@
-# Issue 2864: Weyl groups are implemented in rootsystem.py
+# Issue 2864: [with patch, positive review] Weyl groups are mplemented in rootsystem.py
 
 archive/issues_002864.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe original Weyl group patch was described here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/80515528dc9648fd?hl=en\n\nNo trac ticket was made, and the patch no longer applies without modification so I\nrevised it and am uploading it as this ticket.\n\nMike Hansen told me he wants to revise the patch in connection with a reorganization\nin which case this ticket might be superfluous. However I added one thing, which is\ninstructions for obtaining the character tables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2864\n\n",
+    "closed_at": "2008-04-10T20:31:14Z",
     "created_at": "2008-04-09T16:51:12Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Weyl groups are implemented in rootsystem.py",
+    "title": "[with patch, positive review] Weyl groups are mplemented in rootsystem.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2864",
     "user": "https://github.com/dwbump"

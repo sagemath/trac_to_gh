@@ -4,6 +4,7 @@ archive/issues_001865.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTry this in the notebook:\n\n1. Click restart worksheet in the action menu.\n\n2. Evaluate the contents of a cell.\n\nYou'll find nothing happens.   More precisely, the first cell does get evaluated (as you can see by assigning a variable there), but the output of this evaluation is never displayed in the notebook. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1865\n\n",
+    "closed_at": "2008-05-11T06:13:13Z",
     "created_at": "2008-01-20T16:44:36Z",
     "labels": [
         "component: notebook",

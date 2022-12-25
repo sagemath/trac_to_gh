@@ -4,6 +4,7 @@ archive/issues_000193.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nElliptic curves have `a_invariants()` and `b_invariants()` methods. They also have `a1()`, `a3()` etc. Would be convenient if they also had `b2()` through `b8()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/193\n\n",
+    "closed_at": "2007-01-15T22:05:51Z",
     "created_at": "2007-01-15T16:42:33Z",
     "labels": [
         "component: algebraic geometry",

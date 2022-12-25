@@ -1,16 +1,17 @@
-# Issue 8391: Temporary ugly fix: Change 'top' to 'prstat' on Solaris for 'getusage.py'
+# Issue 8391: Change 'top' to 'prstat' on Solaris for get_memory_usage() and top()
 
 archive/issues_008391.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nThe file 'getusage.py' has two main functions. \n\n* top() - Display the output of the 'top' command for the current process. \n* get_memory_usage() - Display the memory usage in MB. \n\nThe implementation on Solaris is particularly poor for many reasons. \n* The Sage function 'top()' calls the external command 'top' on Solaris, despite the fact that 'top' has never been part of the Solaris operating system. (The command has to be installed, but is not standard.)\n* The Sage function get_memory_usage() calls the function top(), so obviously breaks get_memory_usage() fails if the command 'top' is not installed. \n* 'top' is not very accurate on modern Solaris versions - is was OK 10+ years ago, but not now. \n* You need root access to install 'top'. \n* The ticket #6028 created by Micheal Abshoff with the title \"get_memory_usage() sucks performance wise on Solaris\" gives a gentle hint at one more problem. \n* Running the Sage doctests brings a system to an almost standstill if top is not installed. The non-existent 'top' is run multiple times in a loop in an attempt to overcome some race condition. \n* I believe not having 'top' is causing doctest failures, which brings the system to an almost standstill as documented at #7153.\n\n**Overall, the usage of 'top' in Solaris is a disaster.** The proper way to get the memory usage is to use a system call, but it is going to take some effort to sort out how to do so and is not high on the list of priorities. \n\nA command with similar functionality to 'top', but greater accuracy is '/usr/bin/prstat' which comes as part of all recent versions of Solaris. The output looks similar to that of 'top'\n\n```\n   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP       \n   604 drkirkby  189M  106M cpu2    59    0 537:45:37  11% Xorg/1\n 28286 drkirkby   78M   19M sleep   32    0 244:22:50 5.2% zenity/1\n 15753 drkirkby  553M  517M sleep   49    0  46:10:43 0.5% VirtualBox/24\n 14951 drkirkby  345M  161M sleep   48    0   0:07:45 0.3% firefox-bin/20\n 22223 drkirkby  163M   80M sleep   59    0   0:06:58 0.0% gnome-terminal/2\n   731 drkirkby  106M   26M sleep   59    0   0:14:12 0.0% gnome-netstatus/2\n   719 drkirkby  113M   34M sleep   59    0   0:08:23 0.0% wnck-applet/1\n  7703 drkirkby 6328K 3144K cpu3    49    0   0:00:00 0.0% prstat/1\n   730 drkirkby  107M   26M sleep   59    0   0:09:18 0.0% mixer_applet2/1\n   741 root     1636K 1080K sleep   59    0   0:12:55 0.0% gnome-netstatus/1\n   663 drkirkby   94M   35M sleep   59    0   0:06:55 0.0% metacity/1\n   294 root     4804K 2056K sleep   59    0   0:00:00 0.0% dbus-daemon/1\n   153 root     6396K 2824K sleep   59    0   0:00:00 0.0% picld/4\n   385 root     5140K 1576K sleep   59    0   0:00:00 0.0% automountd/2\n   270 root     4596K 1420K sleep   59    0   0:00:02 0.0% cron/1\nTotal: 141 processes, 389 lwps, load averages: 1.79, 1.70, 1.66\n```\n\nHence I propose to replace the call to 'top' with one to 'prstat'. Despite I know this is not the correct way to determine memory usage, using 'prstat' is at least better than the current implementation using 'top'\n\nIssue created by migration from https://trac.sagemath.org/ticket/8391\n\n",
+    "body": "Assignee: drkirkby\n\nThe file 'getusage.py' has two main functions. \n\n* top() - Display the output of the 'top' command for the current process. \n* get_memory_usage() - Display the memory usage in MB. \n\nThe Sage implementation of top() and get_memory_usage() on Solaris are particularly poor for many reasons. \n\n* The Sage function 'top()' calls the external command 'top' on Solaris, despite the fact that 'top' has never been part of the Solaris operating system. ('top' can be installed, but it is not standard.)\n* The Sage function get_memory_usage() calls the function top(), so obviously get_memory_usage() fails if the command 'top' is not installed. \n* 'top' is not very accurate on modern Solaris versions - it was OK 10+ years ago, but not now. \n* You need root access to install 'top'. \n* The ticket #6028 created by Micheal Abshoff with the title \"get_memory_usage() sucks performance wise on Solaris\" gives a gentle hint at one more problem. \n* I believe not having 'top' is causing doctest failures, which brings the system to an almost standstill as documented at #7153. \nEven having it causes failures, as noted above. \n\n**Overall, the usage of 'top' in Solaris is a disaster.** \n\nThe proper way to get the memory usage is to use a system call, but it is going to take some effort to sort out how to do so and is not high on the list of priorities. \n\nA command with similar functionality to 'top', but greater accuracy is '/usr/bin/prstat' which comes as part of all recent versions of Solaris. The output looks similar to that of 'top'\n\n```\n   PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP       \n   604 drkirkby  189M  106M cpu2    59    0 537:45:37  11% Xorg/1\n 28286 drkirkby   78M   19M sleep   32    0 244:22:50 5.2% zenity/1\n 15753 drkirkby  553M  517M sleep   49    0  46:10:43 0.5% VirtualBox/24\n 14951 drkirkby  345M  161M sleep   48    0   0:07:45 0.3% firefox-bin/20\n 22223 drkirkby  163M   80M sleep   59    0   0:06:58 0.0% gnome-terminal/2\n   731 drkirkby  106M   26M sleep   59    0   0:14:12 0.0% gnome-netstatus/2\n   719 drkirkby  113M   34M sleep   59    0   0:08:23 0.0% wnck-applet/1\n  7703 drkirkby 6328K 3144K cpu3    49    0   0:00:00 0.0% prstat/1\n   730 drkirkby  107M   26M sleep   59    0   0:09:18 0.0% mixer_applet2/1\n   741 root     1636K 1080K sleep   59    0   0:12:55 0.0% gnome-netstatus/1\n   663 drkirkby   94M   35M sleep   59    0   0:06:55 0.0% metacity/1\n   294 root     4804K 2056K sleep   59    0   0:00:00 0.0% dbus-daemon/1\n   153 root     6396K 2824K sleep   59    0   0:00:00 0.0% picld/4\n   385 root     5140K 1576K sleep   59    0   0:00:00 0.0% automountd/2\n   270 root     4596K 1420K sleep   59    0   0:00:02 0.0% cron/1\nTotal: 141 processes, 389 lwps, load averages: 1.79, 1.70, 1.66\n```\n\nHence I propose to replace the call to 'top' with one to 'prstat'. Despite I know this is not the correct way to determine memory usage, using 'prstat' is at least better than the current implementation using 'top' \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8391\n\n",
+    "closed_at": "2010-03-06T08:26:50Z",
     "created_at": "2010-02-27T19:18:49Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Temporary ugly fix: Change 'top' to 'prstat' on Solaris for 'getusage.py'",
+    "title": "Change 'top' to 'prstat' on Solaris for get_memory_usage() and top()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8391",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -23,16 +24,19 @@ The file 'getusage.py' has two main functions.
 * top() - Display the output of the 'top' command for the current process. 
 * get_memory_usage() - Display the memory usage in MB. 
 
-The implementation on Solaris is particularly poor for many reasons. 
-* The Sage function 'top()' calls the external command 'top' on Solaris, despite the fact that 'top' has never been part of the Solaris operating system. (The command has to be installed, but is not standard.)
-* The Sage function get_memory_usage() calls the function top(), so obviously breaks get_memory_usage() fails if the command 'top' is not installed. 
-* 'top' is not very accurate on modern Solaris versions - is was OK 10+ years ago, but not now. 
+The Sage implementation of top() and get_memory_usage() on Solaris are particularly poor for many reasons. 
+
+* The Sage function 'top()' calls the external command 'top' on Solaris, despite the fact that 'top' has never been part of the Solaris operating system. ('top' can be installed, but it is not standard.)
+* The Sage function get_memory_usage() calls the function top(), so obviously get_memory_usage() fails if the command 'top' is not installed. 
+* 'top' is not very accurate on modern Solaris versions - it was OK 10+ years ago, but not now. 
 * You need root access to install 'top'. 
 * The ticket #6028 created by Micheal Abshoff with the title "get_memory_usage() sucks performance wise on Solaris" gives a gentle hint at one more problem. 
-* Running the Sage doctests brings a system to an almost standstill if top is not installed. The non-existent 'top' is run multiple times in a loop in an attempt to overcome some race condition. 
-* I believe not having 'top' is causing doctest failures, which brings the system to an almost standstill as documented at #7153.
+* I believe not having 'top' is causing doctest failures, which brings the system to an almost standstill as documented at #7153. 
+Even having it causes failures, as noted above. 
 
-**Overall, the usage of 'top' in Solaris is a disaster.** The proper way to get the memory usage is to use a system call, but it is going to take some effort to sort out how to do so and is not high on the list of priorities. 
+**Overall, the usage of 'top' in Solaris is a disaster.** 
+
+The proper way to get the memory usage is to use a system call, but it is going to take some effort to sort out how to do so and is not high on the list of priorities. 
 
 A command with similar functionality to 'top', but greater accuracy is '/usr/bin/prstat' which comes as part of all recent versions of Solaris. The output looks similar to that of 'top'
 
@@ -56,7 +60,9 @@ A command with similar functionality to 'top', but greater accuracy is '/usr/bin
 Total: 141 processes, 389 lwps, load averages: 1.79, 1.70, 1.66
 ```
 
-Hence I propose to replace the call to 'top' with one to 'prstat'. Despite I know this is not the correct way to determine memory usage, using 'prstat' is at least better than the current implementation using 'top'
+Hence I propose to replace the call to 'top' with one to 'prstat'. Despite I know this is not the correct way to determine memory usage, using 'prstat' is at least better than the current implementation using 'top' 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8391
 

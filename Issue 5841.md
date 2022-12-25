@@ -4,10 +4,11 @@ archive/issues_005841.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  mvngu @mwhansen @jdemeyer\n\n#5662 introduced a problem when using old clisp builds which we need to use on RHEL5/Itanium since any more current clisp is hopelessly broken there. But since Gonzalo's patch fixes a real issue in the clisp interface I don't want to change any of that patch.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5841\n\n",
+    "closed_at": "2011-03-17T09:47:12Z",
     "created_at": "2009-04-21T06:26:48Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

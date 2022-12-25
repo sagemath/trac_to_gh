@@ -4,6 +4,7 @@ archive/issues_009388.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill\n\nThe current makefile for the rubiks spkg.\n\nThe makefile erroneously assumes that \"mktemp\" can be run with no arguments.  This is not the case on, at least, recent versions of Mac OS X.\n\nThe probable fix is to run \"mktemp\" with a template filename.  See the man page for details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9388\n\n",
+    "closed_at": "2010-07-01T18:14:55Z",
     "created_at": "2010-06-30T00:53:16Z",
     "labels": [
         "component: build",

@@ -4,6 +4,7 @@ archive/issues_007445.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: jmol, graphics, 3d, applet\n\nThis ticket is analogous to #3106, but in addition to exporting a 2d image there should be a way to export a html page with the 3d applet script embedded.  \n\nIt would be assumed that the user has a jmol/ directory in the same directory as the html file - I don't see an easy way to be more flexible about that. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7445\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-11-12T17:10:27Z",
     "labels": [
         "component: notebook",

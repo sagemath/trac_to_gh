@@ -1,16 +1,17 @@
-# Issue 2836: [with patch, needs review] twisted.conch.ssh deprecated functions
+# Issue 2836: [with patch, postive review] twisted.conch.ssh deprecated functions
 
 archive/issues_002836.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nPatch attached which uses the new twisted.conch.ssh.keys.Key object instead of the old helper functions. If we don't apply this patch we'll get a bunch of annoying deprecated API warnings :-) \n\nIssue created by migration from https://trac.sagemath.org/ticket/2836\n\n",
+    "closed_at": "2008-04-07T01:22:00Z",
     "created_at": "2008-04-07T00:11:07Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] twisted.conch.ssh deprecated functions",
+    "title": "[with patch, postive review] twisted.conch.ssh deprecated functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2836",
     "user": "https://github.com/yqiang"

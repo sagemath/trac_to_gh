@@ -1,9 +1,10 @@
-# Issue 5053: If the hostname of the computer has a "-" in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!
+# Issue 5053: [with patch, positive review] If the hostname of the computer has a "-"  in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!
 
 archive/issues_005053.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis is because host-name and host_name get confused.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5053\n\n",
+    "closed_at": "2009-01-29T03:50:27Z",
     "created_at": "2009-01-22T11:23:30Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005053.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "If the hostname of the computer has a \"-\" in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!",
+    "title": "[with patch, positive review] If the hostname of the computer has a \"-\"  in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5053",
     "user": "https://github.com/williamstein"

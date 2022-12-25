@@ -1,21 +1,24 @@
-# Issue 3559: [with patch; needs review] sage timeup script
+# Issue 3559: [with patch; positive review] sage timeup script
 
 archive/issues_003559.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCredit goes to Andrew Dalke, Mike Hansen, and William Stein (a little)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3559\n\n",
+    "body": "Assignee: tbd\n\nKeywords: editor_mhansen\n\nCredit goes to Andrew Dalke, Mike Hansen, and William Stein (a little)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3559\n\n",
+    "closed_at": "2008-07-06T18:11:58Z",
     "created_at": "2008-07-06T08:20:37Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] sage timeup script",
+    "title": "[with patch; positive review] sage timeup script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3559",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
+
+Keywords: editor_mhansen
 
 Credit goes to Andrew Dalke, Mike Hansen, and William Stein (a little)
 

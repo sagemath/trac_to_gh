@@ -4,6 +4,7 @@ archive/issues_009878.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nSymbolic expressions automatically evaluate themselves to simplify the data structures, representation, etc. For example,\n\n```\nsage: x+x\n2*x\nsage: x*x\nx^2\n```\n\nThe ability to disable this evaluation is a feature requested very often.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9879\n\n",
+    "closed_at": "2010-10-06T03:20:12Z",
     "created_at": "2010-09-09T08:46:26Z",
     "labels": [
         "component: symbolics"

@@ -3,7 +3,8 @@
 archive/issues_005532.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen @mkoeppe @slel\n\n1. log in at [http://sagenb.org](http://sagenb.org)\n   1. goto [http://www.sagenb.org/doc/live/tutorial/search.html](http://www.sagenb.org/doc/live/tutorial/search.html)\n\nno search box, just a js-artefact at the bottom.\n\n[reported by gustav delius in the notebook bugtracker](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1237223353260000&pt=1237223333260000&diffWidget=true&s=AJVazbWgyWS5_1pWMq6L9iylQ_7orMIUow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5532\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen @mkoeppe @slel\n\n1. log in at [http://sagenb.org](http://sagenb.org)\n2. goto [http://sagenb.org/doc/live/tutorial/search.html](http://sagenb.org/doc/live/tutorial/search.html)\n\nno search box, just a js-artefact at the bottom.\n\n[reported by gustav delius in the notebook bugtracker](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1237223353260000&pt=1237223333260000&diffWidget=true&s=AJVazbWgyWS5_1pWMq6L9iylQ_7orMIUow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5532\n\n",
+    "closed_at": "2020-07-02T14:05:02Z",
     "created_at": "2009-03-16T17:48:46Z",
     "labels": [
         "component: documentation",
@@ -21,7 +22,7 @@ Assignee: tba
 CC:  @mwhansen @mkoeppe @slel
 
 1. log in at [http://sagenb.org](http://sagenb.org)
-   1. goto [http://www.sagenb.org/doc/live/tutorial/search.html](http://www.sagenb.org/doc/live/tutorial/search.html)
+2. goto [http://sagenb.org/doc/live/tutorial/search.html](http://sagenb.org/doc/live/tutorial/search.html)
 
 no search box, just a js-artefact at the bottom.
 

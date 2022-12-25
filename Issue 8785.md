@@ -3,7 +3,8 @@
 archive/issues_008785.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nIt turns out that on some platforms, importing multiprocessing, then twisted, leads to an \"int object is not callable\" TypeError.  This breaks devel/sage/sage/all.py's quit_sage function, causing a big traceback at exit.   This could also cause great confusion for people writing a program that uses `@`parallel('multiprocessing') followed by anything involving twisted. \n\nA simple fix is to import the relevant part of twisted before using multiprocessing in `@`parallel.   The attached patch does this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8785\n\n",
+    "body": "Assignee: @jasongrout\n\nIt turns out that on some platforms, importing multiprocessing, then twisted, leads to an \"int object is not callable\" TypeError.  This breaks devel/sage/sage/all.py's quit_sage function, causing a big traceback at exit.   This could also cause great confusion for people writing a program that uses `@`parallel('multiprocessing') followed by anything involving twisted. \n\nA simple fix is to import the relevant part of twisted before using multiprocessing in `@`parallel.   The attached patch does this.\n\nNOTE: The system that exhibits this is in a corporate setting, and no devs have systems where this can be replicated at present, unfortunately.  So please do NOT revert this just because you don't see the problem on your laptop!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8785\n\n",
+    "closed_at": "2010-04-28T17:36:19Z",
     "created_at": "2010-04-27T20:54:37Z",
     "labels": [
         "component: misc",
@@ -21,6 +22,8 @@ Assignee: @jasongrout
 It turns out that on some platforms, importing multiprocessing, then twisted, leads to an "int object is not callable" TypeError.  This breaks devel/sage/sage/all.py's quit_sage function, causing a big traceback at exit.   This could also cause great confusion for people writing a program that uses `@`parallel('multiprocessing') followed by anything involving twisted. 
 
 A simple fix is to import the relevant part of twisted before using multiprocessing in `@`parallel.   The attached patch does this.
+
+NOTE: The system that exhibits this is in a corporate setting, and no devs have systems where this can be replicated at present, unfortunately.  So please do NOT revert this just because you don't see the problem on your laptop!
 
 Issue created by migration from https://trac.sagemath.org/ticket/8785
 

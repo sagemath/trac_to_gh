@@ -1,21 +1,22 @@
-# Issue 6184: mesh=True and dots=True don't work for 3D plots
+# Issue 6184: [with patch, positive review] mesh=True and dots=True don't work for 3D plots
 
 archive/issues_006184.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nJust like the title says; the options noted do not have any effect on 3D plots in Sage 4.0.rc0.\n\nFor example, the command\n\n```\nplot3d(lambda x,y: exp(x+y*I).real(), (-2, 2.4), (-3, 3), mesh=True)\n```\nShould display a 3D plot with mesh lines drawn in. However, the result does not have mesh lines.\n\n(This bug was discussed at [this forum thread](http://groups.google.com/group/sage-devel/browse_thread/thread/ac3ae56aa896826f).)\n\nI will attach a patch that fixes the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6184\n\n",
+    "body": "Assignee: @williamstein\n\nJust like the title says; the options noted do not have any effect on 3D plots in Sage 4.0.rc0.\n\nFor example, the command\n\n```\nplot3d(lambda x,y: exp(x+y*I).real(), (-2, 2.4), (-3, 3), mesh=True)\n```\nShould display a 3D plot with mesh lines drawn in. However, the result does not have mesh lines.\n\n(This bug was discussed at [this forum thread](http://groups.google.com/group/sage-devel/browse_thread/thread/ac3ae56aa896826f).)\n\nI will attach a patch that fixes the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6184\n\n",
+    "closed_at": "2009-06-03T18:24:11Z",
     "created_at": "2009-06-02T08:30:53Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
         "bug"
     ],
-    "title": "mesh=True and dots=True don't work for 3D plots",
+    "title": "[with patch, positive review] mesh=True and dots=True don't work for 3D plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6184",
     "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 Just like the title says; the options noted do not have any effect on 3D plots in Sage 4.0.rc0.
 

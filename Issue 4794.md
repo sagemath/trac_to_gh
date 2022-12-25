@@ -1,16 +1,17 @@
-# Issue 4794: Update pari to 2.3.4svb
+# Issue 4794: [with spkg, needs work] Update pari to 2.4.3-svn
 
 archive/issues_004794.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @ncalexan boothby @craigcitro\n\nThe following spkgs depend on pari and need to be bumped:\n\n```\n * genus2reduction\n * lcalc \n * eclib\n```\nThe Sage library also depends on pari, but is linked dynamically. Note that once this ticket is solved we should also fix #1891. For update to lcalc see #4793, for eclib see #3358.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4794\n\n",
+    "closed_at": "2010-09-10T10:50:47Z",
     "created_at": "2008-12-14T07:45:53Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Update pari to 2.3.4svb",
+    "title": "[with spkg, needs work] Update pari to 2.4.3-svn",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4794",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

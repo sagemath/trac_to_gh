@@ -4,6 +4,7 @@ archive/issues_000312.json:
 ```json
 {
     "body": "Assignee: boothby\n\nLaTex formulas do not appear in the doc browser. For example\nhttp://sage.math.washington.edu/sage/doc/html/tut/node20.html compared\nto http://sage.math.washington.edu:8100/doc_browser?/tut/?node20.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/312\n\n",
+    "closed_at": "2007-08-19T02:05:07Z",
     "created_at": "2007-03-09T18:15:23Z",
     "labels": [
         "component: notebook",

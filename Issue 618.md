@@ -4,6 +4,7 @@ archive/issues_000618.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/618\n\n",
+    "closed_at": "2007-09-07T18:35:24Z",
     "created_at": "2007-09-07T14:49:10Z",
     "labels": [
         "component: basic arithmetic",

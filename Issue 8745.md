@@ -4,6 +4,7 @@ archive/issues_008745.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @wdjoyner\n\nThis patch adds a function to block_design returning a Steiner Triple System on any number of vertices n congruent to 1 or 3 modulo 6. There is none otherwise :-)\n\nThe function is pretty short, a satisfiable decomposition being explicitely given in the reference : \nhttp://www.utu.fi/~honkala/designs.ps\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8745\n\n",
+    "closed_at": "2010-04-29T05:08:16Z",
     "created_at": "2010-04-22T12:31:11Z",
     "labels": [
         "component: combinatorics"

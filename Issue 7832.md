@@ -4,6 +4,7 @@ archive/issues_007832.json:
 ```json
 {
     "body": "Assignee: @peterjeremy\n\nBy default, you get the following, which is corrected by the patch to singuname.sh:\n\n```\nmake[2]: Entering directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nmake[2]: *** No rule to make target `distclean'.  Stop.\nmake[2]: Leaving directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nrm: /home/peter/sage/sage-4.3/local/bin/Singular*: No such file or directory\ncreating cache ./config.cache\nchecking uname for singular... unknown\nconfigure: error: Unknown architecture: Check singuname.sh\nUnable to configure Singular.\n```\n\nCorrect configure script for amd64 by patching the autoconf inputs and re-running autoconf.  This corrects a problem where linking libsingular.so reports lots of undefined references to both internal `om`* functions and functions within libncurses.\n\nSeveral other trivial fixes to support dynamic linking on FreeBSD/amd64.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7832\n\n",
+    "closed_at": "2012-09-13T22:37:41Z",
     "created_at": "2010-01-03T10:10:09Z",
     "labels": [
         "component: porting: bsd",

@@ -1,9 +1,10 @@
-# Issue 4080: [with patch, needs review] Symbol clash between global M4RI and PolyBoRi's M4RI
+# Issue 4080: [with patch, positive review] Symbol clash between global M4RI and PolyBoRi's M4RI
 
 archive/issues_004080.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  polybori\n\nKeywords: sigsegv\n\nPolyBoRi uses its own M4RI instance which is older than the version of M4RI which is going to be in Sage 3.1.2. Since M4RI is written in C there are no namespaces and thus the symbols clash, even though both versions are binary incompatible. A workaround for now -- until PolyBoRi is updated -- is to delay the import of `sage.rings.pbring` after the import of `sage.matrix.matrix_mod2_dense`. Since PolyBoRi is statically linked for now anyway, this shouldn't mess up things. However **this is a dirty workaround**\n\nIssue created by migration from https://trac.sagemath.org/ticket/4080\n\n",
+    "closed_at": "2008-09-08T23:57:47Z",
     "created_at": "2008-09-08T23:03:27Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004080.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Symbol clash between global M4RI and PolyBoRi's M4RI",
+    "title": "[with patch, positive review] Symbol clash between global M4RI and PolyBoRi's M4RI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4080",
     "user": "https://github.com/malb"

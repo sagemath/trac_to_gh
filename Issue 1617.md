@@ -1,16 +1,17 @@
-# Issue 1617: speed problem when factoring polynoms
+# Issue 1617: [with patch, positive review] speed problem when factoring polynoms
 
 archive/issues_001617.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere is a huge speed difference. Any special reasons? A novice user would possibly not understand why!\n\n\n\n```\nvar('x,y')\ntime p1=factor(x^99+y^99)\n\nTime: CPU 0.05 s, Wall: 58.43 s\n```\n\n\n\n```\nR.<x,y> = QQ[]\ntime p2=factor(x^99+y^99)\n\nTime: CPU 0.06 s, Wall: 0.06 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1617\n\n",
+    "closed_at": "2008-01-25T17:32:11Z",
     "created_at": "2007-12-28T22:01:50Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "speed problem when factoring polynoms",
+    "title": "[with patch, positive review] speed problem when factoring polynoms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1617",
     "user": "https://github.com/haraldschilly"

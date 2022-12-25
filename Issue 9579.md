@@ -4,6 +4,7 @@ archive/issues_009579.json:
 ```json
 {
     "body": "Assignee: jason, jkantor\n\nBecause of the error reported on :\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b953192f3554337f\n\nIt may be good to save an user several hours of trouble because a wrong argument is silently accepted.\n\nDone in this patch ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9579\n\n",
+    "closed_at": "2010-07-26T02:37:43Z",
     "created_at": "2010-07-23T02:37:16Z",
     "labels": [
         "component: numerical",

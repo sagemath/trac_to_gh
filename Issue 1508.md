@@ -1,16 +1,17 @@
-# Issue 1508: axes_label in plot() broken
+# Issue 1508: [with patch, positive review] axes_label in plot() broken
 
 archive/issues_001508.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
+    "closed_at": "2008-01-21T03:17:47Z",
     "created_at": "2007-12-14T18:04:33Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "axes_label in plot() broken",
+    "title": "[with patch, positive review] axes_label in plot() broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1508",
     "user": "https://github.com/williamstein"

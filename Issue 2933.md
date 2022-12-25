@@ -1,22 +1,23 @@
-# Issue 2933: calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)
+# Issue 2933: [with patch, with positive review] calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)
 
 archive/issues_002933.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSubstitution with a dictionary as input is broken.  Notice below in the\nthird input that the dictionary is ignored?!\n\n```\nsage: function('f',x)\nf(x)\nsage: (f(x)).substitute(f=log)\nlog(x)\nsage: (f(x)).substitute({f:log})\nf(x)\nsage: type(f(x))\n<class 'sage.calculus.calculus.SymbolicFunctionEvaluation'>\nsage: (x^3 + 1).substitute(x=5)\n126\nsage: (x^3 + 1).substitute({x:5})\n126\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2933\n\n",
+    "body": "Assignee: @mwhansen\n\nSubstitution with a dictionary as input is broken.  Notice below in the\nthird input that the dictionary is ignored?!\n\n```\nsage: function('f',x)\nf(x)\nsage: (f(x)).substitute(f=log)\nlog(x)\nsage: (f(x)).substitute({f:log})\nf(x)\nsage: type(f(x))\n<class 'sage.calculus.calculus.SymbolicFunctionEvaluation'>\nsage: (x^3 + 1).substitute(x=5)\n126\nsage: (x^3 + 1).substitute({x:5})\n126\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2933\n\n",
+    "closed_at": "2008-04-17T06:11:01Z",
     "created_at": "2008-04-15T15:02:46Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)",
+    "title": "[with patch, with positive review] calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2933",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Substitution with a dictionary as input is broken.  Notice below in the
 third input that the dictionary is ignored?!

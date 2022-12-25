@@ -1,9 +1,10 @@
-# Issue 2948: (Additional) Docstrings and Doctests for rings/quotient_ring.py
+# Issue 2948: [with patch, positive review] (Additional) Docstrings and Doctests for rings/quotient_ring.py
 
 archive/issues_002948.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: doctest, docstring, documentation, quotient_ring.py\n\nProvide missing docstrings and doctests for rings/quotient_ring.py. Also provide additional doctests for several functions i.e. imporve the quality of the doctests in this file.\n\n* SCORE quotient_ring.py: 54% (12 of 22)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2948\n\n",
+    "closed_at": "2008-09-27T00:53:34Z",
     "created_at": "2008-04-17T22:36:52Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002948.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "(Additional) Docstrings and Doctests for rings/quotient_ring.py",
+    "title": "[with patch, positive review] (Additional) Docstrings and Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2948",
     "user": "https://github.com/cswiercz"

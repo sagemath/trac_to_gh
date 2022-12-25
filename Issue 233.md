@@ -3,7 +3,8 @@
 archive/issues_000233.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis would be like the RealDoubleField in rings/real_double.pyx or like riungs/real_mpfr.pyx, except that the quad double library is a C++ library -- so actually this might be similar to the Givaro wrapper in rings/finite_field_givaro.*.  \n\nThe quaddouble library (and docs?) are available at \n\n    http://www.cs.berkeley.edu/~yozo/\n\nAlso, I made a SAGE package, which you get by doing\n    sage -i quaddouble-2.1.213.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/233\n\n",
+    "body": "Assignee: didier deshommes\n\nThis would be like the RealDoubleField in rings/real_double.pyx or like riungs/real_mpfr.pyx, except that the quad double library is a C++ library -- so actually this might be similar to the Givaro wrapper in rings/finite_field_givaro.*.  \n\nThe quaddouble library (and docs?) are available at \n\n    http://www.cs.berkeley.edu/~yozo/\n\nAlso, I made a SAGE package, which you get by doing\n\n```\n    sage -i quaddouble-2.1.213.1.spkg \n```\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/233\n\n",
+    "closed_at": "2007-08-23T05:47:50Z",
     "created_at": "2007-01-30T19:08:51Z",
     "labels": [
         "component: basic arithmetic"
@@ -15,7 +16,7 @@ archive/issues_000233.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: didier deshommes
 
 This would be like the RealDoubleField in rings/real_double.pyx or like riungs/real_mpfr.pyx, except that the quad double library is a C++ library -- so actually this might be similar to the Givaro wrapper in rings/finite_field_givaro.*.  
 
@@ -24,7 +25,11 @@ The quaddouble library (and docs?) are available at
     http://www.cs.berkeley.edu/~yozo/
 
 Also, I made a SAGE package, which you get by doing
-    sage -i quaddouble-2.1.213.1.spkg
+
+```
+    sage -i quaddouble-2.1.213.1.spkg 
+```
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/233
 

@@ -4,6 +4,7 @@ archive/issues_002277.json:
 ```json
 {
     "body": "Assignee: hfvillafuerte\n\nKeywords: DSP\n\nWrite a guide/book on Digital Signal Processing using SAGE. Should include both introductory material and more advanced computational aspects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2277\n\n",
+    "closed_at": "2015-09-12T14:05:27Z",
     "created_at": "2008-02-23T15:08:53Z",
     "labels": [
         "component: documentation",

@@ -3,10 +3,12 @@
 archive/issues_008231.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @williamstein @robert-marik\n\nSince the upgrade to sage 4.3.2, when one creates a new input cell in the notebook, the cursor is not automatically placed in the new input cell. It is fair to assume that a user that creates a new input cell wants to type in it straight away, so time would be saved if the cursor was put there automatically, as was the case in previous versions of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8231\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @williamstein @robert-marik\n\nSince the upgrade to sage 4.3.2, when one creates a new input cell in the notebook, the cursor is not automatically placed in the new input cell. It is fair to assume that a user that creates a new input cell wants to type in it straight away, so time would be saved if the cursor was put there automatically, as was the case in previous versions of the notebook.\n\nThis is a follow-up to #4450.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8231\n\n",
+    "closed_at": "2010-02-22T03:59:38Z",
     "created_at": "2010-02-10T15:27:31Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -21,6 +23,8 @@ Assignee: @williamstein
 CC:  @jhpalmieri @williamstein @robert-marik
 
 Since the upgrade to sage 4.3.2, when one creates a new input cell in the notebook, the cursor is not automatically placed in the new input cell. It is fair to assume that a user that creates a new input cell wants to type in it straight away, so time would be saved if the cursor was put there automatically, as was the case in previous versions of the notebook.
+
+This is a follow-up to #4450.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8231
 

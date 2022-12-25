@@ -1,9 +1,10 @@
-# Issue 6842: [with patch, needs review] ordinal_str giving wrong answers for 111, 112, 113
+# Issue 6842: [with patch, positive review] ordinal_str giving wrong answers for 111, 112, 113
 
 archive/issues_006842.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: ordinals\n\nThe following is incorrect, if I am not mistaken (but I am not a native speaker):\n\n```\nsage: n = 113\nsage: n.ordinal_str()\n'113rd'\nsage: n = 112\nsage: n.ordinal_str()\n'112nd'\nsage: n = 111\nsage: n.ordinal_str()\n'111st'\n```\n\nWith my patch, one gets\n\n```\nsage: n = 111\nsage: n.ordinal_str()\n'111th'\nsage: n = 112\nsage: n.ordinal_str()\n'112th'\nsage: n = 113\nsage: n.ordinal_str()\n'113th'\n```\nwhile one still has\n\n```\nsage: n = 121\nsage: n.ordinal_str()\n'121st'\nsage: n = 122\nsage: n.ordinal_str()\n'122nd'\nsage: n = 123\nsage: n.ordinal_str()\n'123rd'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6842\n\n",
+    "closed_at": "2009-08-30T07:09:42Z",
     "created_at": "2009-08-29T11:29:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_006842.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] ordinal_str giving wrong answers for 111, 112, 113",
+    "title": "[with patch, positive review] ordinal_str giving wrong answers for 111, 112, 113",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6842",
     "user": "https://github.com/simon-king-jena"

@@ -3,7 +3,8 @@
 archive/issues_008674.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis is fine :\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\nBut we would like the following to be an endomorphism as well:\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis is fine :\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\nBut we would like the following to be an endomorphism as well:\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\nIt is caused by the following problem:\n\n```\nsage: WordPaths('abcd') <= Words('abcd')\nFalse\nsage: WordPaths('abcd') >= Words('abcd')\nTrue\nsage: Words('abcd') >= WordPaths('abcd')\nFalse\nsage: Words('abcd') <= WordPaths('abcd')\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
+    "closed_at": "2010-11-18T22:25:58Z",
     "created_at": "2010-04-11T14:17:52Z",
     "labels": [
         "component: combinatorics",
@@ -35,6 +36,19 @@ sage: P = WordPaths('abcd')
 sage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)
 sage: m.is_endomorphism()
 False
+```
+
+It is caused by the following problem:
+
+```
+sage: WordPaths('abcd') <= Words('abcd')
+False
+sage: WordPaths('abcd') >= Words('abcd')
+True
+sage: Words('abcd') >= WordPaths('abcd')
+False
+sage: Words('abcd') <= WordPaths('abcd')
+True
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8674

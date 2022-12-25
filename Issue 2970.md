@@ -4,6 +4,7 @@ archive/issues_002970.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThe gap and scipy_sandbox spkg-debian scripts aren't marked as executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2970\n\n",
+    "closed_at": "2008-04-20T04:48:15Z",
     "created_at": "2008-04-20T04:28:47Z",
     "labels": [
         "component: debian-package",

@@ -1,15 +1,16 @@
-# Issue 4240: magma -- increase doctest coverage of magma.py from current 17% to 100%.
+# Issue 4240: [with patch; positive review]  magma -- increase doctest coverage of magma.py (all exported methods)
 
 archive/issues_004240.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\nRight now the doctest coverage of devel/sage/sage/interfaces/magma.py is a pitiful 17%.  Increase this to 100%.   This will involving adding about 59 doctests and docstrings.  See also #4231, which adds two docstrings/doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4240\n\n",
+    "closed_at": "2008-10-12T15:33:38Z",
     "created_at": "2008-10-04T03:42:48Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "magma -- increase doctest coverage of magma.py from current 17% to 100%.",
+    "title": "[with patch; positive review]  magma -- increase doctest coverage of magma.py (all exported methods)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4240",
     "user": "https://github.com/williamstein"

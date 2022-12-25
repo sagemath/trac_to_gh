@@ -1,22 +1,24 @@
-# Issue 540: 3d: move all .jar files to an optional package;
+# Issue 540: 3d: move all .jar files to a separate package.
 
 archive/issues_000540.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nIMPORTANT NOTE: I just realized that SAGE-2.8.3 includes some pre-compiled\njava .jar files in the\n     SAGE_ROOT/data/extcode/notebook/java/3d\ndirectory.  If you're the sort of person who must compile everything from source, wait\nfor SAGE-2.9, when we'll do something about this problem (probably the only option\nis to move these to an optional package since I do not want to require java to be installed\nin order to build SAGE). \n\nThis made the extcode .hg directory *HUGE*, so we're going to have to probably\nrevert to right before these were added.\n\nIssue created by migration from https://trac.sagemath.org/ticket/540\n\n",
+    "body": "Assignee: @robertwb\n\n\nIMPORTANT NOTE: I just realized that SAGE-2.8.3 includes some pre-compiled\njava .jar files in the\n     SAGE_ROOT/data/extcode/notebook/java/3d\ndirectory.  If you're the sort of person who must compile everything from source, wait\nfor SAGE-2.9, when we'll do something about this problem (probably the only option\nis to move these to an optional package since I do not want to require java to be installed\nin order to build SAGE). \n\nThis made the extcode .hg directory *HUGE*, so we're going to have to probably\nrevert to right before these were added.\n\nSome of the java code isn't GPLv2 compatible, but that's OK, since\nwe don't actually run that java code as part of SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/540\n\n",
+    "closed_at": "2007-09-06T17:03:07Z",
     "created_at": "2007-08-31T19:10:57Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
-    "title": "3d: move all .jar files to an optional package;",
+    "title": "3d: move all .jar files to a separate package.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/540",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @robertwb
+
 
 IMPORTANT NOTE: I just realized that SAGE-2.8.3 includes some pre-compiled
 java .jar files in the
@@ -28,6 +30,9 @@ in order to build SAGE).
 
 This made the extcode .hg directory *HUGE*, so we're going to have to probably
 revert to right before these were added.
+
+Some of the java code isn't GPLv2 compatible, but that's OK, since
+we don't actually run that java code as part of SAGE.
 
 Issue created by migration from https://trac.sagemath.org/ticket/540
 

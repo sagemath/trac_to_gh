@@ -1,16 +1,17 @@
-# Issue 6728: spell-check all modules under sage/quadratic_forms
+# Issue 6728: [with patch, positive review] spell-check all modules under sage/quadratic_forms
 
 archive/issues_006728.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6728\n\n",
+    "closed_at": "2009-08-14T11:03:42Z",
     "created_at": "2009-08-10T12:21:27Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/quadratic_forms",
+    "title": "[with patch, positive review] spell-check all modules under sage/quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6728",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -4,6 +4,7 @@ archive/issues_008264.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor some reason, swap_row does not work if the elements of the matrix are treated as integers modulo something. The code to reproduce the bug is the following:\n\n\n```\nA = matrix(ZZ, 2,[1,2,3,4])\nB = copy(A)\nB.swap_rows(0,1)\nprint B,'\\n'\nB.swap_columns(0,1) # So far so good\nprint B,'\\n'\nC = A.apply_map(lambda x:mod(x,8))\nC.swap_rows(0,1) # This line does not work\nprint C,'\\n'\nC.swap_columns(0,1) # But this one does\nprint C\n```\n\nThe bug reproduces every time on Mac OSX 10.6, SAGE version 4.3.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8264\n\n",
+    "closed_at": "2010-03-06T23:57:22Z",
     "created_at": "2010-02-14T17:50:43Z",
     "labels": [
         "component: linear algebra",

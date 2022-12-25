@@ -3,7 +3,8 @@
 archive/issues_008869.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nRight now, we have the following behavior:\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: CDF conversion, complex double\n\nRight now, we have the following behavior:\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
+    "closed_at": "2010-06-06T01:21:28Z",
     "created_at": "2010-05-04T15:56:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,6 +18,8 @@ archive/issues_008869.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: CDF conversion, complex double
 
 Right now, we have the following behavior:
 

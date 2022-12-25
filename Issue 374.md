@@ -4,6 +4,7 @@ archive/issues_000374.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nx = polygen(QQ, 'x')\nf = x^6 + 10/7*x^5 - 867/49*x^4 - 76/245*x^3 + 3148/35*x^2 - 25944/245*x + 48771/1225\n```\n\n```\nlegendre_symbol(-7,73)\n///\n-1\n```\n\n```\nf.factor_mod(73)\n///\n(x^2 + 12*x + 47) * (x^2 + 15*x + 21) * (x^2 + 37*x + 21)\n```\n\n```\nK.<a> = NumberField(f/1225)\nS.<T> = K[]\nff = S(f)\nprint ff\n///\n1225*T^6 + 1750*T^5 + (-21675)*T^4 + (-380)*T^3 + 110180*T^2 + (-129720)*T + 48771\n```\n\n```\nff.factor()\n///\nMulMod: bad args\nAborted\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/374\n\n",
+    "closed_at": "2007-05-31T14:54:57Z",
     "created_at": "2007-05-23T01:56:09Z",
     "labels": [
         "component: basic arithmetic",

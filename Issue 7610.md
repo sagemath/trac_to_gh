@@ -4,6 +4,7 @@ archive/issues_007610.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  drkirkby alexghitza\n\nOn running Sage or the next build, readline fails with:\n\n```\nbash: symbol lookup error: /opt/sage-bin/local/lib/libreadline.so.6: undefined symbol: PC\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7610\n\n",
+    "closed_at": "2009-12-09T02:34:20Z",
     "created_at": "2009-12-06T02:43:36Z",
     "labels": [
         "component: packages: standard",

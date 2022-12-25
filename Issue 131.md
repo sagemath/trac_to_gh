@@ -4,6 +4,7 @@ archive/issues_000131.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI will not be happy until every single method has a doctest!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/131\n\n",
+    "closed_at": "2007-01-12T23:25:32Z",
     "created_at": "2006-10-15T06:00:10Z",
     "labels": [
         "component: user interface",

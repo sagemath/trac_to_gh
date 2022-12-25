@@ -1,16 +1,17 @@
-# Issue 4153: re-enable -fwrapv option for Python on Itanium
+# Issue 4153: [with patch, positive review] re-enable -fwrapv option for Python on Itanium
 
 archive/issues_004153.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4153\n\n",
+    "closed_at": "2008-09-20T00:06:34Z",
     "created_at": "2008-09-19T18:15:06Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "re-enable -fwrapv option for Python on Itanium",
+    "title": "[with patch, positive review] re-enable -fwrapv option for Python on Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4153",
     "user": "https://github.com/rlmill"

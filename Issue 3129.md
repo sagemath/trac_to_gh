@@ -1,9 +1,10 @@
-# Issue 3129: [with patch, needs review] The singular interface should not claim to support polynomial rings with no variables
+# Issue 3129: [with patch, positive review] The singular interface should not claim to support polynomial rings with no variables
 
 archive/issues_003129.json:
 ```json
 {
     "body": "Assignee: broune\n\nThe function can_convert_to_singular in polynomial_singular_interface claims (by returning True) that Singular can support multivariate polynomial rings with no variables. This claim seems to be unintended, since the wrapper for Singular polynomial ideals claims the opposite.\n\nThe attached trivial patch makes can_convert_to_singular return False if the passed-in ring has zero generators.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3129\n\n",
+    "closed_at": "2008-05-11T08:08:18Z",
     "created_at": "2008-05-07T23:01:58Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_003129.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] The singular interface should not claim to support polynomial rings with no variables",
+    "title": "[with patch, positive review] The singular interface should not claim to support polynomial rings with no variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3129",
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"

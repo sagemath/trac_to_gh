@@ -1,16 +1,17 @@
-# Issue 9387: Add method for elliptic curves over number fields
+# Issue 9387: Add tamagawa_numbers method for elliptic curves over number fields
 
 archive/issues_009387.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve, tamagawa number\n\nElliptic curves over the rationals have a method that returns a list of tamagawa numbers for the curve.  There is no such method in the case of number fields.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9387\n\n",
+    "closed_at": "2010-07-20T07:17:38Z",
     "created_at": "2010-06-29T23:32:43Z",
     "labels": [
         "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "Add method for elliptic curves over number fields",
+    "title": "Add tamagawa_numbers method for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9387",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"

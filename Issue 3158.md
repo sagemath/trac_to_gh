@@ -1,16 +1,17 @@
-# Issue 3158: singular-3-0-4-2-20080405.p1 requires flex
+# Issue 3158: [with spkg, positive review] singular-3-0-4-2-20080405.p1 requires flex
 
 archive/issues_003158.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nsingular-3-0-4-2-20080405.p1 requires flex to build. This is because libparse.l has the same time stamp as libparse.cc:\n\n```\n[mabshoff@eno Singular]$ ls -al libparse.*\n-rw-r----- 1 mabshoff sage 109970 2008-03-19 13:44 libparse.cc\n-rw-r----- 1 mabshoff sage   1524 2008-03-25 11:04 libparse.h\n-rw-r----- 1 mabshoff sage  31422 2008-03-19 13:44 libparse.l\n-rw-r----- 1 mabshoff sage     52 1998-04-20 06:05 libparse.sed\n```\nThe fix is to touch libparse.cc so that the time stamp is older. I did that in the spkg linked at #2983.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3158\n\n",
+    "closed_at": "2008-05-11T13:13:35Z",
     "created_at": "2008-05-11T12:35:49Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "singular-3-0-4-2-20080405.p1 requires flex",
+    "title": "[with spkg, positive review] singular-3-0-4-2-20080405.p1 requires flex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3158",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

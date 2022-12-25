@@ -1,9 +1,10 @@
-# Issue 3918: notebook -- MAJOR BUG involving uploading file from URL
+# Issue 3918: [with patch, positive review] notebook -- MAJOR BUG involving uploading file from URL
 
 archive/issues_003918.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n1. Go to Data --> Upload File\n2. Select a URL that takes \"forever\" to download.\n3. Now the ENTIRE SERVER hangs \"forever\".  \n\nThis is clearly very much not good. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3918\n\n",
+    "body": "Assignee: @mwhansen\n\n1. Go to Data --> Upload File\n2. Select a URL that takes \"forever\" to download.\n3. Now the ENTIRE SERVER hangs \"forever\".  \n\nThis is clearly very much not good. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3918\n\n",
+    "closed_at": "2008-09-09T00:40:30Z",
     "created_at": "2008-08-20T23:17:14Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_003918.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "notebook -- MAJOR BUG involving uploading file from URL",
+    "title": "[with patch, positive review] notebook -- MAJOR BUG involving uploading file from URL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3918",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 1. Go to Data --> Upload File
 2. Select a URL that takes "forever" to download.

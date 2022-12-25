@@ -3,7 +3,7 @@
 archive/issues_007317.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nKeywords: CSV, XLF,\n\nImporting and exporting different standard data types \n\ne.g.\n\n.csv, .mat, .xlf\n\nImports as a list for use in Sage\n\nExports into whatever file type\n\nIssue created by migration from https://trac.sagemath.org/ticket/7317\n\n",
+    "body": "Assignee: amhou\n\nKeywords: CSV, XLF,\n\nImporting and exporting different standard data types \n\ne.g.\n\n.csv, .mat, .xls\n\nImports as a list for use in Sage\n\nExports into whatever file type\n\nIssue created by migration from https://trac.sagemath.org/ticket/7317\n\n",
     "created_at": "2009-10-26T23:51:23Z",
     "labels": [
         "component: misc",
@@ -15,7 +15,7 @@ archive/issues_007317.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/amhou"
 }
 ```
-Assignee: cwitty
+Assignee: amhou
 
 Keywords: CSV, XLF,
 
@@ -23,7 +23,7 @@ Importing and exporting different standard data types
 
 e.g.
 
-.csv, .mat, .xlf
+.csv, .mat, .xls
 
 Imports as a list for use in Sage
 

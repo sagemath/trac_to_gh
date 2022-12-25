@@ -1,16 +1,17 @@
-# Issue 5616: speed regression with fast_callable
+# Issue 5616: [with patch, positive review] speed regression with fast_callable
 
 archive/issues_005616.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nBefore (vanilla 3.4)\n\n```\nsage: var('x,y')\n(x, y)\nsage: time P = parametric_plot3d((x, y, x*y), (x, -10, 10), (y, -10, 10), plot_points=(500,500))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time P.triangulate()\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.08 s\n```\n\nafter (3.4 + #5093)\n\n```\nsage: sage: var('x,y')\n(x, y)\nsage: sage: time P = parametric_plot3d((x, y, x*y), (x, -10, 10), (y, -10, 10), plot_points=(500,500))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: sage: time P.triangulate()\nCPU times: user 0.28 s, sys: 0.02 s, total: 0.30 s\nWall time: 0.30 s\n```\n\nI think this is due to there not being an interface to evaluate fast_callable objects without passing through Python. Perhaps a \n\n```\ncdef int call_c(void* args, void* ret) except -1\n```\n\nmethod should be attached to the generic interpreter wrapper class (to be overridden by the subclasses), and those with specific knowledge about the various implementations could then use this interface (e.g. RDF passes double*). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5616\n\n",
+    "closed_at": "2009-03-31T06:33:01Z",
     "created_at": "2009-03-26T08:31:17Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "speed regression with fast_callable",
+    "title": "[with patch, positive review] speed regression with fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5616",
     "user": "https://github.com/robertwb"

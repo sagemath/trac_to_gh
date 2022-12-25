@@ -1,21 +1,22 @@
-# Issue 2895: [with patch, needs review] add support for Laurent polynomials in Sage
+# Issue 2895: [with patch, positive review] add support for Laurent polynomials in Sage
 
 archive/issues_002895.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nDavid Roe did the initial implementation, and Jason Bandlow and I cleaned it up and got it ready for inclusion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2895\n\n",
+    "body": "Assignee: @mwhansen\n\nDavid Roe did the initial implementation, and Jason Bandlow and I cleaned it up and got it ready for inclusion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2895\n\n",
+    "closed_at": "2008-04-18T20:22:41Z",
     "created_at": "2008-04-12T11:20:24Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] add support for Laurent polynomials in Sage",
+    "title": "[with patch, positive review] add support for Laurent polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2895",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 David Roe did the initial implementation, and Jason Bandlow and I cleaned it up and got it ready for inclusion.
 

@@ -1,26 +1,27 @@
-# Issue 4535: refactoring in plot/*
+# Issue 4535: [with patch, positive review] refactoring in plot/*
 
 archive/issues_004535.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\nThe main goals of this ticket are to split up plot.py so that it's not 4500 lines long and change the way the bounding boxes are computed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4535\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  timothyclemans\n\nThe main goals of this ticket are to split up plot.py so that it's not 4500 lines long and change the way the bounding boxes are computed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4535\n\n",
+    "closed_at": "2008-11-28T05:30:32Z",
     "created_at": "2008-11-16T13:12:43Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "refactoring in plot/*",
+    "title": "[with patch, positive review] refactoring in plot/*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4535",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  timothyclemans
 
 The main goals of this ticket are to split up plot.py so that it's not 4500 lines long and change the way the bounding boxes are computed.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4535
 

@@ -1,16 +1,17 @@
-# Issue 1418: magma element __floordiv__
+# Issue 1418: [with patch, with positive review] magma element __floordiv__
 
 archive/issues_001418.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI added a !__floordiv!__ to the magma element for the 'div' operator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1418\n\n",
+    "closed_at": "2008-01-21T05:42:00Z",
     "created_at": "2007-12-07T11:52:22Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "magma element __floordiv__",
+    "title": "[with patch, with positive review] magma element __floordiv__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1418",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

@@ -1,22 +1,23 @@
-# Issue 4280: Syntax error for a comment line, then help query in a notebook cell
+# Issue 4280: [with patch, positive review] Syntax error for a comment line, then help query in a notebook cell
 
 archive/issues_004280.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn Sage (up through 3.1.3rc0), paste this into a notebook cell:\n\n```\n#\ngraphs?\n```\n\nand you get a syntax error when evaluating.  Removing the comment makes it work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4280\n\n",
+    "body": "Assignee: @mwhansen\n\nIn Sage (up through 3.1.3rc0), paste this into a notebook cell:\n\n```\n#\ngraphs?\n```\n\nand you get a syntax error when evaluating.  Removing the comment makes it work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4280\n\n",
+    "closed_at": "2009-02-07T01:37:18Z",
     "created_at": "2008-10-14T10:02:49Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Syntax error for a comment line, then help query in a notebook cell",
+    "title": "[with patch, positive review] Syntax error for a comment line, then help query in a notebook cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4280",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 In Sage (up through 3.1.3rc0), paste this into a notebook cell:
 

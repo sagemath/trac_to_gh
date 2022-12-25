@@ -1,15 +1,16 @@
-# Issue 5178: [with patch; needs review] change LLL_gram to work with Gram matrices with not-necessarily integer entries
+# Issue 5178: Make LLL_gram also work with Gram matrices with non-integer entries
 
 archive/issues_005178.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  boothby @craigcitro @JohnCremona kohel mabshoff @malb @ncalexan @slel @tornaria @williamstein\n\nThis patch changes LLL_gram to work with Gram matrices with not-necessarily integer entries.  Also it fixes several \"non-optimal\" coding issues both in the old implementation and the doctests.  For example, instead of computing U.det() to determine if the unimodular A has det -1 or 1, we just compute A.change_ring(GF(3)).det(), which is much faster. \n\nChanging LLL_gram to work for nonintegral gram matrices is critical for applications to computing class groups for the course I'm teaching right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5178\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  boothby @craigcitro @JohnCremona kohel mabshoff @malb @ncalexan @slel @tornaria @williamstein\n\nKeywords: LLL, Gram\n\nThis ticket is to make `LLL_gram` work with more general\nGram matrices than integer ones.\n\nIt also speeds up the step where we check the\ntransformation matrix is orientation-preserving.\n\nThe trick for the speedup is computing a determinant mod 3\ninstead of in `ZZ`: given a matrix `U` over `ZZ` with\ndeterminant known to be -1 or 1, checking whether it is\n+1 or -1 is much  faster with `U.change_ring(GF(3)).det()`\nthan with `U.det()`.)\n\nMaking `LLL_gram` work for non-integral Gram matrices\nis critical for applications to computing class groups.\n\nThat was used in a course William Stein taught in 2009,\nat which time he wrote the patch `trac_5178.patch`\nattached to this ticket.\n\nGonzalo Tornar\u00eda observed the patch revealed a PARI bug.\nThe PARI bug was fixed.\n\nThis ticket adapts William Stein's 2009 patch to Sage 9.x.\n\nEarly discussion of using this function for matrices\nover the reals and not just the integers:\n\n- [sage-devel 2007 post by Gonzalo Tornar\u00eda](https://groups.google.com/d/msg/sage-devel/hXbgSKhMrC0/branld-SJ1gJ)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5178\n\n",
+    "closed_at": "2020-09-23T21:27:57Z",
     "created_at": "2009-02-04T18:23:08Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.2",
-    "title": "[with patch; needs review] change LLL_gram to work with Gram matrices with not-necessarily integer entries",
+    "title": "Make LLL_gram also work with Gram matrices with non-integer entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5178",
     "user": "https://github.com/williamstein"
@@ -19,9 +20,36 @@ Assignee: @williamstein
 
 CC:  boothby @craigcitro @JohnCremona kohel mabshoff @malb @ncalexan @slel @tornaria @williamstein
 
-This patch changes LLL_gram to work with Gram matrices with not-necessarily integer entries.  Also it fixes several "non-optimal" coding issues both in the old implementation and the doctests.  For example, instead of computing U.det() to determine if the unimodular A has det -1 or 1, we just compute A.change_ring(GF(3)).det(), which is much faster. 
+Keywords: LLL, Gram
 
-Changing LLL_gram to work for nonintegral gram matrices is critical for applications to computing class groups for the course I'm teaching right now.
+This ticket is to make `LLL_gram` work with more general
+Gram matrices than integer ones.
+
+It also speeds up the step where we check the
+transformation matrix is orientation-preserving.
+
+The trick for the speedup is computing a determinant mod 3
+instead of in `ZZ`: given a matrix `U` over `ZZ` with
+determinant known to be -1 or 1, checking whether it is
++1 or -1 is much  faster with `U.change_ring(GF(3)).det()`
+than with `U.det()`.)
+
+Making `LLL_gram` work for non-integral Gram matrices
+is critical for applications to computing class groups.
+
+That was used in a course William Stein taught in 2009,
+at which time he wrote the patch `trac_5178.patch`
+attached to this ticket.
+
+Gonzalo Tornaría observed the patch revealed a PARI bug.
+The PARI bug was fixed.
+
+This ticket adapts William Stein's 2009 patch to Sage 9.x.
+
+Early discussion of using this function for matrices
+over the reals and not just the integers:
+
+- [sage-devel 2007 post by Gonzalo Tornaría](https://groups.google.com/d/msg/sage-devel/hXbgSKhMrC0/branld-SJ1gJ)
 
 Issue created by migration from https://trac.sagemath.org/ticket/5178
 

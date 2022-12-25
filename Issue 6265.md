@@ -4,6 +4,7 @@ archive/issues_006265.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @malb @tscrim @kedlaya simonking\n\nAs discussed at #6051.  Line 91 of sage/rings/polynomial/toy_d_basis.py needs to be unrandomed when this is fixed.\n\n```\nHowever, when we compute the Groebner basis of I (defined over `\\ZZ`), we note that there is a certain integer in the ideal which is not 1.::\n\n    sage: d_basis(I) # random -- waiting on upstream singular fixes at #6051\n    [x + 170269749119, y + 2149906854, z + ..., 282687803443]                                \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6265\n\n",
+    "closed_at": "2017-04-07T22:24:09Z",
     "created_at": "2009-06-12T08:01:59Z",
     "labels": [
         "component: commutative algebra",

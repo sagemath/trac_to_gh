@@ -1,9 +1,10 @@
-# Issue 3594: lisp -- impossible to run command line!
+# Issue 3594: [with spkg, positive review] lisp -- impossible to run command line!
 
 archive/issues_003594.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe upgrade of clisp to 2.46 seriously broke something \n\n```\nage@modular:~/build/sage-3.0.4.alpha2$ ./sage -lisp\n/home2/sage/build/sage-3.0.4.alpha2/local/bin/clisp.bin: /home2/sage/build/sage-3.0.4.alpha2/local/lib/clisp/base/lisp.run: Nosuch file or directory\nsage@modular:~/build/sage-3.0.4.alpha2$ ./sage -clisp\n/home2/sage/build/sage-3.0.4.alpha2/local/bin/clisp.bin: /home2/sage/build/sage-3.0.4.alpha2/local/lib/clisp/base/lisp.run: Nosuch file or directory\nsage@modular:~/build/sage-3.0.4.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.4.alpha2, Release Date: 2008-07-06                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: !clisp\n/home2/sage/build/sage-3.0.4.alpha2/local/bin/clisp.bin: /home2/sage/build/sage-3.0.4.alpha2/local/lib/clisp/base/lisp.run: Nosuch file or director]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3594\n\n",
+    "closed_at": "2008-07-08T00:00:58Z",
     "created_at": "2008-07-07T22:38:17Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003594.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "lisp -- impossible to run command line!",
+    "title": "[with spkg, positive review] lisp -- impossible to run command line!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3594",
     "user": "https://github.com/williamstein"

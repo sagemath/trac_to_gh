@@ -1,9 +1,10 @@
-# Issue 5619: doctests for error messages in groebner_fan.py
+# Issue 5619: [with patch, positive review] doctests for error messages in groebner_fan.py
 
 archive/issues_005619.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  mhampton\n\nKeywords: groebner_fan.py, doctest\n\nThis is a follow-up to ticket #5465. Here, we add some doctests to check the error messages being raised.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5619\n\n",
+    "closed_at": "2009-05-21T00:31:01Z",
     "created_at": "2009-03-27T02:48:38Z",
     "labels": [
         "component: geometry",
@@ -11,7 +12,7 @@ archive/issues_005619.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "doctests for error messages in groebner_fan.py",
+    "title": "[with patch, positive review] doctests for error messages in groebner_fan.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5619",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

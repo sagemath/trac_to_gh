@@ -1,9 +1,10 @@
-# Issue 5848: [with patch, needs review] untabify Sage
+# Issue 5848: [with patch,  positive review] untabify Sage
 
 archive/issues_005848.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @roed314\n\nThe attached patch removes all of the TABs I could find in .py and .pyx files in the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5848\n\n",
+    "closed_at": "2009-04-24T09:27:49Z",
     "created_at": "2009-04-21T23:51:34Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005848.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] untabify Sage",
+    "title": "[with patch,  positive review] untabify Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5848",
     "user": "https://github.com/jhpalmieri"

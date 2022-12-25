@@ -1,16 +1,17 @@
-# Issue 2985: ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()
+# Issue 2985: [with spkg, with positive review] ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()
 
 archive/issues_002985.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n[wstein@cleo sage-3.0.rc0]$ ./sage -t --long devel/sage/sage/interfaces/rubik.py\nsage -t --long devel/sage/sage/interfaces/rubik.py          **********************************************************************\nFile \"/home/wstein/sage-3.0.rc0/tmp/rubik.py\", line 132:\n    sage: solver = OptimalSolver() # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        solver = OptimalSolver() # long time###line 132:\n    sage: solver = OptimalSolver() # long time\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/interfaces/rubik.py\", line 98, in __init__\n        self.ready()\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/interfaces/rubik.py\", line 117, in ready\n        self.child.expect('enter cube')\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/pexpect.py\", line 978, in expect_list\n        raise EOF (str(e) + '\\n' + str(self))\n    EOF: End Of File (EOF) in read_nonblocking(). Exception style platform.\n    <pexpect.spawn instance at 0x6000000003270950>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /home/wstein/sage-3.0.rc0/local/bin/optimal\n    args: ['/home/wstein/sage-3.0.rc0/local/bin/optimal']\n    patterns:\n        enter cube\n    buffer (last 100 chars): \n    before (last 100 chars): *********\n    1 items had failures:\n       1 of  10 in __main__.example_3\n    ***Test Failed*** 1 failures.\n\n    after: <class 'pexpect.EOF'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 1\n    pid: 18447\n    child_fd: 3\n    timeout: None\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/sage-3.0.rc0/tmp/.doctest_rubik.py\n         [49.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2985\n\n",
+    "closed_at": "2008-04-25T06:34:27Z",
     "created_at": "2008-04-21T04:39:21Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()",
+    "title": "[with spkg, with positive review] ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2985",
     "user": "https://github.com/williamstein"

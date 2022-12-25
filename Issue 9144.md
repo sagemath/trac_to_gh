@@ -3,11 +3,11 @@
 archive/issues_009144.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nIf we did this, then we could maybe just eliminate the \"Print\" button?  I don't know; maybe.\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9144\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nIf we did this, then we could maybe just eliminate the \"Print\" button?  I don't know; maybe.\n\nSee the following excerpt from http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this:\n\nIt's pretty easy to specify a print css sheet using CSS \"media\"\nconstructs.  The browser then automatically uses this CSS when printing,\nbut uses your normal CSS when displaying.  A user shouldn't have to hit\na special Sage print button to print.\n\nYeah, I know, \"Implement it and send a patch\" :).  Well, if someone gets\nto it before me, here are a few references:\n\nSee http://www.yourhtmlsource.com/stylesheets/cssmediatypes.html or for\nthe spec, see http://www.w3.org/TR/CSS2/media.html.  See also\nhttp://www.javascriptkit.com/dhtmltutors/cssmedia.shtml or\nhttp://webdesign.about.com/cs/css/a/aa042103a.htm for further\nsuggestions/tips. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9144\n\n",
+    "closed_at": "2020-08-27T08:43:23Z",
     "created_at": "2010-06-05T03:40:03Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make printing automatically load a print stylesheet",
@@ -22,7 +22,21 @@ CC:  @fchapoton
 
 If we did this, then we could maybe just eliminate the "Print" button?  I don't know; maybe.
 
-See http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.
+See the following excerpt from http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this:
+
+It's pretty easy to specify a print css sheet using CSS "media"
+constructs.  The browser then automatically uses this CSS when printing,
+but uses your normal CSS when displaying.  A user shouldn't have to hit
+a special Sage print button to print.
+
+Yeah, I know, "Implement it and send a patch" :).  Well, if someone gets
+to it before me, here are a few references:
+
+See http://www.yourhtmlsource.com/stylesheets/cssmediatypes.html or for
+the spec, see http://www.w3.org/TR/CSS2/media.html.  See also
+http://www.javascriptkit.com/dhtmltutors/cssmedia.shtml or
+http://webdesign.about.com/cs/css/a/aa042103a.htm for further
+suggestions/tips. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9144
 

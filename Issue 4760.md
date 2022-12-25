@@ -1,16 +1,17 @@
-# Issue 4760: [with patch, needs review] dsage_interface doctests broken
+# Issue 4760: [with patch, positive review] dsage_interface doctests broken
 
 archive/issues_004760.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThe doctests in dsage_interface are disabled and do not work properly when enabled.  This patch fixes these issues.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4760\n\n",
+    "closed_at": "2008-12-11T15:55:42Z",
     "created_at": "2008-12-11T14:51:54Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] dsage_interface doctests broken",
+    "title": "[with patch, positive review] dsage_interface doctests broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4760",
     "user": "https://github.com/garyfurnish"

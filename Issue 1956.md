@@ -1,26 +1,34 @@
-# Issue 1956: implement multivariate power series arithmetic
+# Issue 1956: implement multivariate truncated power series arithmetic
 
 archive/issues_001956.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @mwhansen simonking @malb @unzvfu\n\nMultivariate power series arithmetic has been requested a *lot*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1956\n\n",
+    "body": "Assignee: pernici\n\nCC:  @mwhansen simonking @malb @unzvfu\n\nKeywords: multivariate power series\n\nMultivariate truncated power series arithmetic has been requested a *lot*. \n\n## Apply:\n\n1. [attachment:trac_1956_combined_6.patch]\n\nThis is a single patch combining all of the partial patches now attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1956\n\n",
+    "closed_at": "2011-06-07T08:34:52Z",
     "created_at": "2008-01-28T02:26:47Z",
     "labels": [
-        "component: commutative algebra",
-        "bug"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "implement multivariate power series arithmetic",
+    "title": "implement multivariate truncated power series arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1956",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @malb
+Assignee: pernici
 
 CC:  @mwhansen simonking @malb @unzvfu
 
-Multivariate power series arithmetic has been requested a *lot*.
+Keywords: multivariate power series
+
+Multivariate truncated power series arithmetic has been requested a *lot*. 
+
+## Apply:
+
+1. [attachment:trac_1956_combined_6.patch]
+
+This is a single patch combining all of the partial patches now attached to this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1956
 

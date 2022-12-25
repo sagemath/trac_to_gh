@@ -3,7 +3,7 @@
 archive/issues_009873.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  ktkohl @rwst @kcrisman @pelegm\n\nWe should define a new symbolic function for the derivative of `ceil` or `floor`. \n\nIn Maple:\n\n```\n> diff(floor(x),x);\n                                  floor(1, x)\n> diff(floor(x),x,x);\n                                  floor(1, x)\n> diff(ceil(x),x,x); \n                                  floor(1, x)\n> eval(diff(ceil(x),x,x),x=1.5);\n                                       0\n> eval(diff(ceil(x),x,x),x=0);  \nError, (in floor) floor is not differentiable at integers\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9874\n\n",
+    "body": "Assignee: @burcin\n\nCC:  ktkohl @rwst @kcrisman @pelegm\n\nKeywords: sd35.5\n\nWe should define a new symbolic function for the derivative of `ceil` or `floor`. \n\nIn Maple:\n\n```\n> diff(floor(x),x);\n                                  floor(1, x)\n> diff(floor(x),x,x);\n                                  floor(1, x)\n> diff(ceil(x),x,x); \n                                  floor(1, x)\n> eval(diff(ceil(x),x,x),x=1.5);\n                                       0\n> eval(diff(ceil(x),x,x),x=0);  \nError, (in floor) floor is not differentiable at integers\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9874\n\n",
     "created_at": "2010-09-08T11:41:23Z",
     "labels": [
         "component: symbolics",
@@ -19,6 +19,8 @@ archive/issues_009873.json:
 Assignee: @burcin
 
 CC:  ktkohl @rwst @kcrisman @pelegm
+
+Keywords: sd35.5
 
 We should define a new symbolic function for the derivative of `ceil` or `floor`. 
 

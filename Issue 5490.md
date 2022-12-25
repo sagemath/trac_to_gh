@@ -1,15 +1,16 @@
-# Issue 5490: Easter!
+# Issue 5490: [with patch, positive review] add capabilities to compute the day of Easter
 
 archive/issues_005490.json:
 ```json
 {
     "body": "Assignee: psinis\n\nCC:  @cswiercz\n\nKeywords: finance, dates\n\nCalculates the date for Easter according to any of three methods: Western, Eastern Orthodox, and Julian.\n\n(Critical for future libraries which will introduce business date calculations)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5490\n\n",
+    "closed_at": "2009-03-25T09:41:24Z",
     "created_at": "2009-03-11T22:19:28Z",
     "labels": [
         "component: finance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Easter!",
+    "title": "[with patch, positive review] add capabilities to compute the day of Easter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5490",
     "user": "https://trac.sagemath.org/admin/accounts/users/psinis"

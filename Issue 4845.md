@@ -1,9 +1,10 @@
-# Issue 4845: [with patch, needs review] sage 3.2.2 crashes on startup when init.sage present
+# Issue 4845: [with patch, positive review] sage 3.2.2 crashes on startup when init.sage present
 
 archive/issues_004845.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI think the title says it all -- sage seems to crash on start whenever the file `~/.sage/init.sage` is present, at least on my Mac. The attached patch fixes the issue.\n\nI'm listing this as a blocker, partially because the fix is so short. I think that this bug has been lurking quite a while -- I think it was the fix for #4792 that exposed it ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4845\n\n",
+    "closed_at": "2008-12-21T11:58:20Z",
     "created_at": "2008-12-21T09:15:09Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004845.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch, needs review] sage 3.2.2 crashes on startup when init.sage present",
+    "title": "[with patch, positive review] sage 3.2.2 crashes on startup when init.sage present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4845",
     "user": "https://github.com/craigcitro"

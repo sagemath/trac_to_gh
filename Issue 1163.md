@@ -1,22 +1,23 @@
-# Issue 1163: assume seems to have some undesired side-effects
+# Issue 1163: make assume behave more consistently and catch inconsistent assumptions
 
 archive/issues_001163.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb @jasongrout @robert-marik\n\n```\nsage: assume(x > 0)\nsage: sqrt(x^2)\nx\nsage: assume(x < 0)\nsage: sqrt(x^2)\nx\n```\n\nMaybe it is not allowed to make two assumptions on the same variable, without any forget inbetween, anyway the documentation should be clear about this, or a warning should be issued.\nAlso, is there a way to know which assumptions were made on a given variable (like about in\nMaple)?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1163\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @robertwb @jasongrout @robert-marik\n\n```\nsage: assume(x > 0)\nsage: sqrt(x^2)\nx\nsage: assume(x < 0)\nsage: sqrt(x^2)\nx\n```\n\nMaybe it is not allowed to make two assumptions on the same variable, without any forget inbetween, anyway the documentation should be clear about this, or a warning should be issued.\nAlso, is there a way to know which assumptions were made on a given variable (like about in\nMaple)?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1163\n\n",
+    "closed_at": "2009-11-19T17:35:36Z",
     "created_at": "2007-11-13T11:58:31Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "assume seems to have some undesired side-effects",
+    "title": "make assume behave more consistently and catch inconsistent assumptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1163",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 CC:  @burcin @robertwb @jasongrout @robert-marik
 

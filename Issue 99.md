@@ -4,6 +4,7 @@ archive/issues_000099.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: Preparsing, sage integers\n\nIf I have, for example,\n\n```\n    print \"F(%s,0)=%s\"%(a,b)\n```\nthe result appears as\n\n```\n    F(27,Integer(0))=359\n```\nwhich seems kind of sucky (to use the technical term).  The only workaround is something like\n\n```\n    zero = 0\n    print \"F(%s,%s)=%s\"%(a,zero,b)\n```\nwhich is similarly sucky...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/99\n\n",
+    "closed_at": "2006-11-06T06:24:22Z",
     "created_at": "2006-09-30T02:57:51Z",
     "labels": [
         "component: user interface",

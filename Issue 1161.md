@@ -1,9 +1,10 @@
-# Issue 1161: New versions of cvxopt, numpy, scipy[with spkg]
+# Issue 1161: [with spkg] New cvxopt-0.9.spkg
 
 archive/issues_001161.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nI have made new spkgs for new versions of cvxopt, numpy, and scipy.\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy-20071020.spkg\nhttp://sage.math.washington.edu/home/jkantor/spkgs/numpy-20071020.spkg\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1161\n\n",
+    "body": "Assignee: jkantor\n\nI have made a new spkg for new cvxopt:\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1161\n\n",
+    "closed_at": "2007-11-18T06:23:39Z",
     "created_at": "2007-11-12T23:34:45Z",
     "labels": [
         "component: numerical",
@@ -11,7 +12,7 @@ archive/issues_001161.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "New versions of cvxopt, numpy, scipy[with spkg]",
+    "title": "[with spkg] New cvxopt-0.9.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1161",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
@@ -19,9 +20,7 @@ archive/issues_001161.json:
 ```
 Assignee: jkantor
 
-I have made new spkgs for new versions of cvxopt, numpy, and scipy.
-http://sage.math.washington.edu/home/jkantor/spkgs/scipy-20071020.spkg
-http://sage.math.washington.edu/home/jkantor/spkgs/numpy-20071020.spkg
+I have made a new spkg for new cvxopt:
 http://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/1161

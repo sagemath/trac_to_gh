@@ -1,16 +1,17 @@
-# Issue 9178: attrcall: add missing hash function
+# Issue 9178: attrcall: implement missing hash function
 
 archive/issues_009178.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen\n\nKeywords: attrcall, hash\n\nThis patch implements `attrcall.__hash__`. Its absence caused the\nfollowing misbehavior:\n\n```\n    sage: x = attrcall(\"blah\")\n    sage: y = attrcall(\"blah\")\n    sage: x == y\n    True\n    sage: hash(x) == hash(y)\n    False\n```\n\nwhich in particular broke unique representation and pickling of some\ncrystals (see #8911).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9178\n\n",
+    "closed_at": "2010-06-09T02:31:14Z",
     "created_at": "2010-06-07T15:23:23Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "attrcall: add missing hash function",
+    "title": "attrcall: implement missing hash function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9178",
     "user": "https://github.com/nthiery"

@@ -4,6 +4,7 @@ archive/issues_007898.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package will break. The fix is to simply replace things like \n\n$LN with 'ln'\n\nAn updated .spkg can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/singular-3-1-0-4-20090818.p3/singular-3-1-0-4-20090818.p3.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7898\n\n",
+    "closed_at": "2010-01-16T02:29:09Z",
     "created_at": "2010-01-12T03:12:28Z",
     "labels": [
         "component: build",

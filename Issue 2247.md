@@ -1,16 +1,17 @@
-# Issue 2247: [with patch, needs wildly trivial review] comment out long doctest in totallyreal_rel.py
+# Issue 2247: [with patch, with positive review] comment out long doctest in totallyreal_rel.py
 
 archive/issues_002247.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere's a really long doctest in sage/rings/number_field/totallyreal_rel.py. We can't just `# long` it, because it also needs to use `# 32-bit`/`# 64-bit`, and these two don't play nicely together. This patch makes it into a `# no doctest` for now to avoid timeouts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2247\n\n",
+    "closed_at": "2008-02-21T18:29:51Z",
     "created_at": "2008-02-21T18:15:39Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs wildly trivial review] comment out long doctest in totallyreal_rel.py",
+    "title": "[with patch, with positive review] comment out long doctest in totallyreal_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2247",
     "user": "https://github.com/craigcitro"

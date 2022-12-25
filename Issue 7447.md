@@ -3,7 +3,8 @@
 archive/issues_007447.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nOn occasion, it's useful to get the installed SageNB version from inside a Sage process.  Here's a possible API:\n\n```python\nsage: import sagenb.version\nsage: sagenb.version.version\n0.4.3\nsage: sagenb.version.date\n'2009-11-12 11:56:53'\n```\nThis is similar to `sage.version`, except this `date` also has the install / package build time.  This could be useful to developers.\n\nReminder: If this merges, update #7390's test report generator, which has a notebook version field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7447\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nOn occasion, it's useful to get the installed SageNB version from inside a Sage process.  Here's a possible API:\n\n```python\nsage: import sagenb.version\nsage: sagenb.version.version\n0.4.3\nsage: sagenb.version.date\n'2009-11-12 11:56:53'\n```\nThis is similar to `sage.version`.\n\nReminder: If this merges, update #7390's test report generator, which has a notebook version field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7447\n\n",
+    "closed_at": "2009-12-09T01:11:51Z",
     "created_at": "2009-11-12T20:19:39Z",
     "labels": [
         "component: notebook",
@@ -29,7 +30,7 @@ sage: sagenb.version.version
 sage: sagenb.version.date
 '2009-11-12 11:56:53'
 ```
-This is similar to `sage.version`, except this `date` also has the install / package build time.  This could be useful to developers.
+This is similar to `sage.version`.
 
 Reminder: If this merges, update #7390's test report generator, which has a notebook version field.
 

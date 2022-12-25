@@ -1,15 +1,16 @@
-# Issue 7233: [with patch, positive review] adapted SymmetricGroupAlgebra to the category framework
+# Issue 7233: [Closed as Duplicate to #6138] adapted SymmetricGroupAlgebra to the category framework
 
 archive/issues_007233.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  combinat\n\nKeywords: Symmetric Group Algebra, Categories\n\nThe goal of the patch is to adapt SymmetricGroupAlgebra to categories and to add some improvements. The patch improve SymmetricGroupAlgebra in two ways:\n \n- SymmetricGroupAlgebra is now in the category FiniteDimensionalAlgebraWithBasis. Note: A forthcomming patch from Valentin Feray will put it in the correct GroupAlgebras category;\n\n- When creating SGA(n) a coercion from SGA(n-1) is declared.\n\nI'm submitting the patch on behalf on Nicolas after reviewing it.\n\nDepends on the categories framework #5891.\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7233\n\n",
+    "closed_at": "2009-10-16T11:12:38Z",
     "created_at": "2009-10-16T11:03:04Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, positive review] adapted SymmetricGroupAlgebra to the category framework",
+    "title": "[Closed as Duplicate to #6138] adapted SymmetricGroupAlgebra to the category framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7233",
     "user": "https://github.com/hivert"

@@ -4,6 +4,7 @@ archive/issues_000720.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen the browser pops up automatically, it could give a one-time use session in the url that would negate the need for the user to type in the name/password. \n\nIssue created by migration from https://trac.sagemath.org/ticket/720\n\n",
+    "closed_at": "2008-03-17T17:57:21Z",
     "created_at": "2007-09-20T21:34:36Z",
     "labels": [
         "component: notebook",

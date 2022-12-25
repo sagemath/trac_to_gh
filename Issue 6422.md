@@ -1,21 +1,26 @@
-# Issue 6422: [with patch, needs review] make sage.symbolic.expression.Expression.__init__ usable
+# Issue 6422: [with patch, positive review] make sage.symbolic.expression.Expression.__init__ usable
 
 archive/issues_006422.json:
 ```json
 {
-    "body": "From sage-support:\n\n```\nOn Fri, 26 Jun 2009 06:14:13 -0700 (PDT)\nNicolas <nicolas.fressengeas@gmail.com> wrote:\n\n> \n> I think there is definitely a bug in the __init__ method of the\n> Expression class.\n> Probably it has not been tracked down because this method is quasi\n> never used in the new version of symbolics. However, it raises\n> problems when one wants to derive a suclass from Expression.\n> \n> The bug is described in details here for the 4.0.1 version. It is\n> still present in the 4.0.2 :\n> \n> http://groups.google.com/group/sage-support/browse_thread/thread/d50dc3bc2bdbeab0/34798c0585fc034f?lnk=gst&q=nicolas#34798c0585fc034f\n> \n> Burcin provided a simple solution that works wonderfully, in the same\n> thread.\n> \n> Should we issue a ticket for this to be included in the future\n> versions ?\n```\n\nThe patch mentioned above is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6422\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: expression init\n\nFrom sage-support:\n\n```\nOn Fri, 26 Jun 2009 06:14:13 -0700 (PDT)\nNicolas <nicolas.fressengeas@gmail.com> wrote:\n\n> \n> I think there is definitely a bug in the __init__ method of the\n> Expression class.\n> Probably it has not been tracked down because this method is quasi\n> never used in the new version of symbolics. However, it raises\n> problems when one wants to derive a subclass from Expression.\n> \n> The bug is described in details here for the 4.0.1 version. It is\n> still present in the 4.0.2 :\n> \n> http://groups.google.com/group/sage-support/browse_thread/thread/d50dc3bc2bdbeab0/34798c0585fc034f?lnk=gst&q=nicolas#34798c0585fc034f\n> \n> Burcin provided a simple solution that works wonderfully, in the same\n> thread.\n> \n> Should we issue a ticket for this to be included in the future\n> versions ?\n```\n\nThe patch mentioned above is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6422\n\n",
+    "closed_at": "2009-07-18T16:05:07Z",
     "created_at": "2009-06-26T14:13:50Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] make sage.symbolic.expression.Expression.__init__ usable",
+    "title": "[with patch, positive review] make sage.symbolic.expression.Expression.__init__ usable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6422",
     "user": "https://github.com/burcin"
 }
 ```
+Assignee: @burcin
+
+Keywords: expression init
+
 From sage-support:
 
 ```
@@ -27,7 +32,7 @@ Nicolas <nicolas.fressengeas@gmail.com> wrote:
 > Expression class.
 > Probably it has not been tracked down because this method is quasi
 > never used in the new version of symbolics. However, it raises
-> problems when one wants to derive a suclass from Expression.
+> problems when one wants to derive a subclass from Expression.
 > 
 > The bug is described in details here for the 4.0.1 version. It is
 > still present in the 4.0.2 :

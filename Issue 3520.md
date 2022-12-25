@@ -1,16 +1,17 @@
-# Issue 3520: bug in integrating sqrt
+# Issue 3520: inconsistency in simplify_radical
 
 archive/issues_003520.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nCC:  @burcin alexghitza @orlitzky\n\nThis is a problem:\n\n```\nsage: f = sqrt(25-x)*sqrt(1+1/(4*(25-x)))\nsage: f.integral(x,9,16)\nintegrate(sqrt(1/(4*(25 - x)) + 1)*sqrt(25 - x), x, 9, 16)\nsage: f.nintegral(x,9,16)\n(24.9153783348643, 2.7661626694613149e-13, 21, 0)\nsage: g = f.simplify_radical()\nsage: g.integral(x,9,16)\nI*(65*sqrt(65)*I/6 - 37*sqrt(37)*I/6)/2\nsage: ans = g.integral(x,9,16)\nsage: ans.real()\n(37*sqrt(37)/6 - 65*sqrt(65)/6)/2\nsage: RR(ans.real())\n-24.9153783348643\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3520\n\n",
+    "closed_at": "2014-11-28T18:38:12Z",
     "created_at": "2008-06-27T13:02:02Z",
     "labels": [
-        "component: calculus",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "bug in integrating sqrt",
+    "title": "inconsistency in simplify_radical",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3520",
     "user": "https://github.com/wdjoyner"

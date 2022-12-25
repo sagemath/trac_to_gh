@@ -1,22 +1,25 @@
-# Issue 3522: [with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux
+# Issue 3522: [with spkgs, positive review] New experimental mayavi2 spkg based on vtk_5.2 for linux
 
 archive/issues_003522.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nThere were problems building mayavi2 experimental spkg on Fedora 9 and other\nnew Linuxes:\n1) vtk-5.0.4 does not build with tcl/tk-8.5.1\n2) vtk-5.0.4 will not build with gcc-4.3\n\nBoth problems are solved with vtk-5.2 from svn.\n\nI checked out mayavi_2.2.0 and it worked for me on Fedora 8 and Fedora 9:\n```\n\nhttp://sage.math.washington.edu/home/jsp/mayavi_2.2.0.spkg\n\n```\nDepends on:\n```\nhttp://sage.math.washington.edu/home/jsp/vtk-5.2.spkg\n\n```\n(and experimental spkgs cmake-2.4.8 and wxPython-2.8.7.1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3522\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: editor_mabshoff\n\n\n```\nThere were problems building mayavi2 experimental spkg on Fedora 9 and other\nnew Linuxes:\n1) vtk-5.0.4 does not build with tcl/tk-8.5.1\n2) vtk-5.0.4 will not build with gcc-4.3\n\nBoth problems are solved with vtk-5.2 from svn.\n\nI checked out mayavi_2.2.0 and it worked for me on Fedora 8 and Fedora 9:\n```\n\nhttp://sage.math.washington.edu/home/jsp/mayavi_2.2.0.spkg\n\n```\nDepends on:\n```\nhttp://sage.math.washington.edu/home/jsp/vtk-5.2.spkg\n\n```\n(and experimental spkgs cmake-2.4.8 and wxPython-2.8.7.1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3522\n\n",
+    "closed_at": "2008-08-11T06:58:44Z",
     "created_at": "2008-06-27T14:26:11Z",
     "labels": [
         "component: packages: experimental",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux",
+    "title": "[with spkgs, positive review] New experimental mayavi2 spkg based on vtk_5.2 for linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3522",
     "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: mabshoff
+
+Keywords: editor_mabshoff
 
 
 ```

@@ -1,17 +1,17 @@
-# Issue 3487: mercurial and sage
+# Issue 3487: mercurial ought to deal with branches of clones
 
 archive/issues_003487.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen sage comes up it announces:\n\nLoading SAGE library. Current Mercurial branch is: worldDomination\n\nturns out, this is the current \"clone\"... when you are using \"hg branches\" in your clone it would be nice for it to say something like:\n\nLoading SAGE library. Current Mercurial clone is: worldDomination on branch: riemannProof\n\nIssue created by migration from https://trac.sagemath.org/ticket/3487\n\n",
+    "closed_at": "2014-03-19T04:41:22Z",
     "created_at": "2008-06-20T21:02:04Z",
     "labels": [
         "component: user interface",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "mercurial and sage",
+    "title": "mercurial ought to deal with branches of clones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3487",
     "user": "https://trac.sagemath.org/admin/accounts/users/ghtdak"

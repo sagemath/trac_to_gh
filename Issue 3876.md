@@ -1,22 +1,23 @@
-# Issue 3876: Add plotting to sigma function
+# Issue 3876: [with patches, positive review] Add plotting to sigma and Euler phi functions
 
 archive/issues_003876.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFirst attempt at adding plotting to sigma (sum-of-divisors) function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3876\n\n",
+    "body": "Assignee: @kcrisman\n\nFirst attempt at adding plotting to sigma (sum-of-divisors) function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3876\n\n",
+    "closed_at": "2008-09-19T04:03:58Z",
     "created_at": "2008-08-15T17:54:23Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Add plotting to sigma function",
+    "title": "[with patches, positive review] Add plotting to sigma and Euler phi functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3876",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
 First attempt at adding plotting to sigma (sum-of-divisors) function.
 

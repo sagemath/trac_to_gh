@@ -3,7 +3,8 @@
 archive/issues_009232.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman @jasongrout @jdemeyer\n\nI can't see Graphics3d objects on the command line. For example, \n\n```\nsage: sphere()\nsage: \n```\nThe command returns without starting jmol or producing any other graphical output.\n\nStrangely enough, I can start jmol from the sage command line:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: !jmol\nsplash_image=jar:file:/home/vbraun/opt/sage-hg/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol/Jmol.jar!/org/openscience/jmol/images/Jmol_splash.jpg\nhistory file is /home/vbraun/.jmol/history\nusing Smarter Model Adapter\n(C) 2008 Jmol Development\nJmol Version 11.6.16  2008-11-24 13:39\njava.vendor:Sun Microsystems Inc.\njava.version:1.6.0_18\nos.name:Linux\nmemory:9.8/21.1\nuseCommandThread: false\nUser macros dir: /home/vbraun/.jmol/macros\n       exists: false\n  isDirectory: false\n```\n| Sage Version 4.4.3, Release Date: 2010-06-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe following also works and shows a tachyon-generated plot:\n\n```\nsphere(viewer='tachyon')\n```\n\nMore verbosity:\n\n```\nsage: sphere(verbosity=99)\nTraceback (most recent call last):\n  File \"/home/vbraun/Sage/sage/local/bin/sage-pypkg-location\", line 3, in <module>\n    from pkg_resources import Requirement, working_set\nzipimport.ZipImportError: can't decompress data; zlib not available\nJmol.jar not found\n```\n\nFor the record, I'm running Fedora 13 x86_64\n\nIssue created by migration from https://trac.sagemath.org/ticket/9232\n\n",
+    "body": "Assignee: @gutow\n\nCC:  @kcrisman @jasongrout @jdemeyer\n\nI can't see Graphics3d objects on the command line. For example, \n\n```\nsage: sphere()\nsage: \n```\nThe command returns without starting jmol or producing any other graphical output.\n\nStrangely enough, I can start jmol from the sage command line:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: !jmol\nsplash_image=jar:file:/home/vbraun/opt/sage-hg/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/jmol/Jmol.jar!/org/openscience/jmol/images/Jmol_splash.jpg\nhistory file is /home/vbraun/.jmol/history\nusing Smarter Model Adapter\n(C) 2008 Jmol Development\nJmol Version 11.6.16  2008-11-24 13:39\njava.vendor:Sun Microsystems Inc.\njava.version:1.6.0_18\nos.name:Linux\nmemory:9.8/21.1\nuseCommandThread: false\nUser macros dir: /home/vbraun/.jmol/macros\n       exists: false\n  isDirectory: false\n```\n| Sage Version 4.4.3, Release Date: 2010-06-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe following also works and shows a tachyon-generated plot:\n\n```\nsphere(viewer='tachyon')\n```\n\nMore verbosity:\n\n```\nsage: sphere(verbosity=99)\nTraceback (most recent call last):\n  File \"/home/vbraun/Sage/sage/local/bin/sage-pypkg-location\", line 3, in <module>\n    from pkg_resources import Requirement, working_set\nzipimport.ZipImportError: can't decompress data; zlib not available\nJmol.jar not found\n```\n\nFor the record, I'm running Fedora 13 x86_64\n\n---\n\nApply [attachment:trac_9232_call_jmol_correctly.patch] and [attachment:trac_9232-lighting.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/9232\n\n",
+    "closed_at": "2011-04-07T13:48:29Z",
     "created_at": "2010-06-13T20:57:16Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_009232.json:
     "user": "https://github.com/vbraun"
 }
 ```
-Assignee: jason, was
+Assignee: @gutow
 
 CC:  @kcrisman @jasongrout @jdemeyer
 
@@ -68,6 +69,10 @@ Jmol.jar not found
 ```
 
 For the record, I'm running Fedora 13 x86_64
+
+---
+
+Apply [attachment:trac_9232_call_jmol_correctly.patch] and [attachment:trac_9232-lighting.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/9232
 

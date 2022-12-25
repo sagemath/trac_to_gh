@@ -4,6 +4,7 @@ archive/issues_009301.json:
 ```json
 {
     "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  nathann.cohen@gmail.com\n\nKeywords: graph,label\n\nModified check_edge_label in the sparse graph backend to consider equals the same objects rather than objects with the same contents. Discussion and example here: http://groups.google.com/group/sage-devel/browse_thread/thread/310fba4f1c119e63#\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9301\n\n",
+    "closed_at": "2021-10-25T15:39:21Z",
     "created_at": "2010-06-21T23:11:15Z",
     "labels": [
         "component: graph theory",

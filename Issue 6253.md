@@ -1,15 +1,16 @@
-# Issue 6253: [with patch, needs review] Constant functions
+# Issue 6253: [with patch, positive review] Constant functions
 
 archive/issues_006253.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @jasongrout\n\nKeywords: constant functions\n\nThis trivial patch adds basic support for constant functions\n\nSuch a function could be written as lambda x: constant, but that's not picklable. Besides, this should eventually be cythoned for speed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6253\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @jasongrout\n\nKeywords: constant functions\n\nThis trivial patch adds basic support for constant functions\n\nSuch a function could be written as lambda x: constant, but that's not picklable. Besides, this should eventually be cythoned for speed.\n\nPrerequisite for #4326.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6253\n\n",
+    "closed_at": "2009-08-23T09:52:52Z",
     "created_at": "2009-06-09T22:08:39Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Constant functions",
+    "title": "[with patch, positive review] Constant functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6253",
     "user": "https://github.com/nthiery"
@@ -24,6 +25,8 @@ Keywords: constant functions
 This trivial patch adds basic support for constant functions
 
 Such a function could be written as lambda x: constant, but that's not picklable. Besides, this should eventually be cythoned for speed.
+
+Prerequisite for #4326.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6253
 

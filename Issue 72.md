@@ -3,10 +3,11 @@
 archive/issues_000072.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nI don't know that this belongs here, but: emacs key bindings are hard-wired in my lizard brain, and I've noticed that not all control characters work: try ^F.\n\nIssue created by migration from https://trac.sagemath.org/ticket/72\n\n",
+    "body": "Assignee: @williamstein\n\nI don't know that this belongs here, but: emacs key bindings are hard-wired in my lizard brain, and I've noticed that not all control characters work: try ^F.\n\nIssue created by migration from https://trac.sagemath.org/ticket/72\n\n",
+    "closed_at": "2007-09-14T02:58:25Z",
     "created_at": "2006-09-20T21:43:29Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: user interface",
         "trivial",
         "bug"
     ],
@@ -17,7 +18,7 @@ archive/issues_000072.json:
     "user": "Justin Walker (justin@mac.com)"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 I don't know that this belongs here, but: emacs key bindings are hard-wired in my lizard brain, and I've noticed that not all control characters work: try ^F.
 

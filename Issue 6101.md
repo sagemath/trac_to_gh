@@ -3,11 +3,11 @@
 archive/issues_006101.json:
 ```json
 {
-    "body": "Assignee: @antieau\n\nCC:  @jhpalmieri @nthiery simonking\n\nAdd functionality to sage to compute the effect of a simplicial complex morphism on homology and cohomology.\n\nThis patch will rely on fuctionality in #6099, #6100, and #5882.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6101\n\n",
+    "body": "Assignee: @antieau\n\nCC:  @jhpalmieri @nthiery simonking\n\nAdd functionality to sage to compute the effect of a simplicial complex morphism on homology and cohomology.\n\nThis patch will rely on fuctionality in #6099, #6100, #6102, and #5882.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6101\n\n",
+    "closed_at": "2015-10-28T17:59:47Z",
     "created_at": "2009-05-21T03:43:56Z",
     "labels": [
-        "component: algebraic topology",
-        "minor"
+        "component: algebraic topology"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
     "title": "computation of induced morphism on homology and cohomology of simplicial complex morphisms",
@@ -22,7 +22,7 @@ CC:  @jhpalmieri @nthiery simonking
 
 Add functionality to sage to compute the effect of a simplicial complex morphism on homology and cohomology.
 
-This patch will rely on fuctionality in #6099, #6100, and #5882.
+This patch will rely on fuctionality in #6099, #6100, #6102, and #5882.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6101
 

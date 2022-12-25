@@ -1,9 +1,10 @@
-# Issue 2820: notebook -- turn off the jsmath warning
+# Issue 2820: [with patch; positive review] notebook -- turn off the jsmath warning; fix other misc polish issues and bugs resulting from #2840
 
 archive/issues_002820.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nI think the plan should be \n1. get rid of it; \n2. make much better jsmath instructions;\n3. put something like it back (that doesn't suck)\n\nAlso, we could support official jsmath image fonts (150MB) as an optional package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2820\n\n",
+    "body": "Assignee: boothby\n\nThis patch depends on #2840 and #2852.  \n\nI think the plan should be \n1. get rid of it; \n2. make much better jsmath instructions;\n3. put something like it back (that doesn't suck)\n\nAlso, we could support official jsmath image fonts (150MB) as an optional package.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2820\n\n",
+    "closed_at": "2008-04-08T18:13:09Z",
     "created_at": "2008-04-06T04:02:16Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002820.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- turn off the jsmath warning",
+    "title": "[with patch; positive review] notebook -- turn off the jsmath warning; fix other misc polish issues and bugs resulting from #2840",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2820",
     "user": "https://github.com/williamstein"
@@ -19,12 +20,15 @@ archive/issues_002820.json:
 ```
 Assignee: boothby
 
+This patch depends on #2840 and #2852.  
+
 I think the plan should be 
 1. get rid of it; 
 2. make much better jsmath instructions;
 3. put something like it back (that doesn't suck)
 
 Also, we could support official jsmath image fonts (150MB) as an optional package.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2820
 

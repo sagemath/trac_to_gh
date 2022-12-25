@@ -1,16 +1,16 @@
-# Issue 6034: [with spkg, needs review] update Singular to newest upstream release
+# Issue 6034: [with spkg, positive review] update Singular to newest upstream release
 
 archive/issues_006034.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @craigcitro\n\nKeywords: singular\n\nSingular 3.1 has many new features which are pretty exciting for Sage (computation over base *rings*, yay!). So we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6034\n\n",
+    "closed_at": "2009-06-12T07:43:44Z",
     "created_at": "2009-05-13T03:00:37Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with spkg, needs review] update Singular to newest upstream release",
+    "title": "[with spkg, positive review] update Singular to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6034",
     "user": "https://github.com/malb"

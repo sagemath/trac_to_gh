@@ -1,16 +1,17 @@
-# Issue 6363: [with patch, needs review] Display Sage version on notebook login page
+# Issue 6363: [with patch, with positive review] Display Sage version on notebook login page
 
 archive/issues_006363.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCf. [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/3e8484254e3a1cfb).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6363\n\n",
+    "closed_at": "2009-06-24T09:46:01Z",
     "created_at": "2009-06-20T12:21:47Z",
     "labels": [
         "component: notebook",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] Display Sage version on notebook login page",
+    "title": "[with patch, with positive review] Display Sage version on notebook login page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6363",
     "user": "https://github.com/qed777"

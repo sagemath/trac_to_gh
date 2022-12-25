@@ -4,6 +4,7 @@ archive/issues_007279.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nWhen I do this in a cell on demo.sagenb.org:\n\n%sh\nls\n\n\nI get an error:\n\ncd: 1: can't cd to\n/home/sage/sagenb/sage_notebook-demo.sagenb/home/jason3/7/cells/4\ndata\n_sage_input_5.py\n/tmp/tmp4oPNHC\n\nThanks,\n\nJason\n```\n\nJason doesn't want to see that error.  It is there because of enhanced security on the public notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7279\n\n",
+    "closed_at": "2010-01-04T02:00:26Z",
     "created_at": "2009-10-24T00:46:02Z",
     "labels": [
         "component: notebook",

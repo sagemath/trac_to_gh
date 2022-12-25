@@ -1,15 +1,16 @@
-# Issue 2768: add comparison operators to the fast_float mechanism
+# Issue 2768: [with patch, positive review] add comparison operators to the fast_float mechanism
 
 archive/issues_002768.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nmake it so that comparisons work too: return 0.0 if false, 1.0 if true.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2768\n\n",
+    "closed_at": "2008-05-07T08:35:41Z",
     "created_at": "2008-04-02T05:47:22Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add comparison operators to the fast_float mechanism",
+    "title": "[with patch, positive review] add comparison operators to the fast_float mechanism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2768",
     "user": "https://github.com/jasongrout"

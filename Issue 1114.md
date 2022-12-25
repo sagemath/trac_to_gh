@@ -4,6 +4,7 @@ archive/issues_001114.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\n\nThis is for a 2.8.10 installation so apologies if it has been fixed.\n\nThe file examples/latex_embed/E2.sobj contains bad cached data so that\nwhen you run \"sage example.sage\" you get a run-time error, even though\nexample.tex is correct!   The clue came from looking at the backup\nfile #example.tex#.   Since the script cleverly only does a long\ncomputation when the result has not been stored, it keeps on using the\nbad data (just an array subscript out of range).  The solution is to\ndelete file E2.sobj .\n\nI didn't think this was worth a trac ticket...\n```\n\nYes it is, or it will be lost...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1114\n\n",
+    "closed_at": "2007-11-07T05:22:13Z",
     "created_at": "2007-11-06T16:25:11Z",
     "labels": [
         "component: documentation",

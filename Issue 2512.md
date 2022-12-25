@@ -3,7 +3,8 @@
 archive/issues_002512.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matrix, condition number\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
+    "closed_at": "2011-03-23T00:55:46Z",
     "created_at": "2008-03-13T22:33:26Z",
     "labels": [
         "component: linear algebra"
@@ -16,6 +17,8 @@ archive/issues_002512.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: matrix, condition number
 
 implement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. 
 

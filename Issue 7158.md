@@ -4,6 +4,7 @@ archive/issues_007158.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nKeywords: sagenb captcha\n\nSee\n\n* [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA)\n* [reCAPTCHA](http://recaptcha.net/)\n\nfor descriptions and examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7158\n\n",
+    "closed_at": "2009-10-17T06:01:18Z",
     "created_at": "2009-10-08T17:07:10Z",
     "labels": [
         "component: notebook",

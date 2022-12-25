@@ -3,7 +3,8 @@
 archive/issues_001656.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKiran had some build failure with PolyBori because SCons seems to pick the newest gcc in $PATH instead of the first one. In his particular case the newest gcc was a 32 bit target on a 64 bit platform and things didn't go to well from there. See the discussion toward the end of \n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e#\n\nThis affects PolyBori as well as sagelib as far as I can tell.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1656\n\n",
+    "body": "Assignee: @garyfurnish\n\nKiran had some build failure with PolyBori because SCons seems to pick the newest gcc in $PATH instead of the first one. In his particular case the newest gcc was a 32 bit target on a 64 bit platform and things didn't go to well from there. See the discussion toward the end of \n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e#\n\nThis affects PolyBori as well as sagelib as far as I can tell.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1656\n\n",
+    "closed_at": "2008-04-25T16:56:27Z",
     "created_at": "2008-01-02T17:01:49Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_001656.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 Kiran had some build failure with PolyBori because SCons seems to pick the newest gcc in $PATH instead of the first one. In his particular case the newest gcc was a 32 bit target on a 64 bit platform and things didn't go to well from there. See the discussion toward the end of 
 

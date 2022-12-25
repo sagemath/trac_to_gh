@@ -1,9 +1,10 @@
-# Issue 5542: more docstring fixes for permgroup.py
+# Issue 5542: [with patch, positive review] more docstring fixes for permgroup.py
 
 archive/issues_005542.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: permgroup.py, docstring\n\nWhile reviewing the patch on ticket #5536, I noticed that there are more formatting issues in `sage/groups/perm_gps/permgroup.py`. This is a follow up to that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5542\n\n",
+    "closed_at": "2009-03-20T21:20:04Z",
     "created_at": "2009-03-17T05:45:48Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005542.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "more docstring fixes for permgroup.py",
+    "title": "[with patch, positive review] more docstring fixes for permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5542",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

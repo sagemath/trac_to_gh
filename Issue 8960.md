@@ -3,7 +3,8 @@
 archive/issues_008960.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb @williamstein\n\nThis patch works on doctest coverage.\n\nIt also changes the latex representation of a real field to indicate the precision and rounding\n\nIssue created by migration from https://trac.sagemath.org/ticket/8960\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb @williamstein\n\nThis patch works on doctest coverage.\n\n**Apply:**\n\n1. [trac-8960-RealField-docs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8960/trac-8960-RealField-docs.patch)\n2. [trac_8960-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8960/trac_8960-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8960\n\n",
+    "closed_at": "2010-06-07T04:48:09Z",
     "created_at": "2010-05-14T09:27:18Z",
     "labels": [
         "component: basic arithmetic"
@@ -21,7 +22,10 @@ CC:  @robertwb @williamstein
 
 This patch works on doctest coverage.
 
-It also changes the latex representation of a real field to indicate the precision and rounding
+**Apply:**
+
+1. [trac-8960-RealField-docs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8960/trac-8960-RealField-docs.patch)
+2. [trac_8960-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8960/trac_8960-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8960
 

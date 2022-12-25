@@ -1,16 +1,17 @@
-# Issue 4254: [with patch, needs review] better parameter parsing for mq.SR
+# Issue 4254: [with patch, positive review]  mq.SR improvements for convenience
 
 archive/issues_004254.json:
 ```json
 {
     "body": "Assignee: @malb\n\n`correct_only` is only valid for GF(2). Make sure it is passed on correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4254\n\n",
+    "closed_at": "2008-11-30T23:49:56Z",
     "created_at": "2008-10-08T14:18:45Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] better parameter parsing for mq.SR",
+    "title": "[with patch, positive review]  mq.SR improvements for convenience",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4254",
     "user": "https://github.com/malb"

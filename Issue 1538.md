@@ -3,10 +3,11 @@
 archive/issues_001538.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nDoing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).\n\nCurrently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we should put in a real fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1538\n\n",
+    "body": "Assignee: mabshoff\n\nDoing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).\n\nCurrently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we can properly fix this by using \"exec\" such that the scripts `spkg/bin/sage` and `local/bin/sage-upgrade` are no longer running.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1538\n\n",
+    "closed_at": "2013-12-20T15:59:23Z",
     "created_at": "2007-12-16T16:01:56Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,11 +17,11 @@ archive/issues_001538.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Doing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).
 
-Currently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we should put in a real fix.
+Currently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we can properly fix this by using "exec" such that the scripts `spkg/bin/sage` and `local/bin/sage-upgrade` are no longer running.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1538
 

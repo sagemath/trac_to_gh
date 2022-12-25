@@ -3,11 +3,11 @@
 archive/issues_009568.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @malb\n\nAs noted at #9309, the IML library is not current in Sage, and spkg-install could be improved somewhat. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9568\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @malb\n\nAs noted at #9309, the IML library is not current in Sage, and spkg-install could be improved somewhat. \n\nDuplicate of #748.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9568\n\n",
+    "closed_at": "2012-06-02T12:40:57Z",
     "created_at": "2010-07-21T22:17:33Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update IML to the newest upstream release, and improve spkg-install",
@@ -22,7 +22,7 @@ CC:  @nexttime @malb
 
 As noted at #9309, the IML library is not current in Sage, and spkg-install could be improved somewhat. 
 
-Dave
+Duplicate of #748.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9568
 

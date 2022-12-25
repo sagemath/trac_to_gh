@@ -1,22 +1,23 @@
-# Issue 4374: Numerical noise doctest failure in sage/tests/book_stein_ent.py
+# Issue 4374: [with patch, positive review] Numerical noise doctest failure in sage/tests/book_stein_ent.py
 
 archive/issues_004374.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py \n********************************************************************** \nFile \"/local/jec/sage-3.1.4/tmp/book_stein_ent.py\", line 5056: \n    : g2.complex_embedding() \nExpected: \n    -2.2360679775 + 3.33066907388e-16*I \nGot: \n    -2.2360679775 + 3.83970199386e-16*I \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4374\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py \n********************************************************************** \nFile \"/local/jec/sage-3.1.4/tmp/book_stein_ent.py\", line 5056: \n    : g2.complex_embedding() \nExpected: \n    -2.2360679775 + 3.33066907388e-16*I \nGot: \n    -2.2360679775 + 3.83970199386e-16*I \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4374\n\n",
+    "closed_at": "2008-10-27T20:05:28Z",
     "created_at": "2008-10-27T17:12:43Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Numerical noise doctest failure in sage/tests/book_stein_ent.py",
+    "title": "[with patch, positive review] Numerical noise doctest failure in sage/tests/book_stein_ent.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4374",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @craigcitro
 
 CC:  @craigcitro
 

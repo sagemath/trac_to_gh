@@ -3,10 +3,12 @@
 archive/issues_009984.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* DDS-4 tape drive \n\nFreeType fails to build, but reports:\n\n```\nkby/sage-4.6.alpha1/spkg/build/freetype-2.3.5.p2/src/src/lzw/ftlzw.c\nIn file included from /home/users/drkirkby/sage-4.6.alpha1/spkg/build/freetype-2.3.5.p2/src/src/gzip/ftgzip.c:45:\n/opt/pware/include/zlib.h:1585: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gzseek'\n/opt/pware/include/zlib.h:1586: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gztell'\n/opt/pware/include/zlib.h:1587: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gzoffset'\n/opt/pware/include/zlib.h:1588: error: expected declaration specifiers or '...' before 'off_t'\n/opt/pware/include/zlib.h:1589: error: expected declaration specifiers or '...' before 'off_t'\n```\n\nI can't understand why this is using the header files from `/opt/pware/include/` when it should be using the header file from `$SAGE_LOCAL/local/include/zlib.h`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9985\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\n\nFreeType fails to build, but reports:\n\n```\nkby/sage-4.6.alpha1/spkg/build/freetype-2.3.5.p2/src/src/lzw/ftlzw.c\nIn file included from /home/users/drkirkby/sage-4.6.alpha1/spkg/build/freetype-2.3.5.p2/src/src/gzip/ftgzip.c:45:\n/opt/pware/include/zlib.h:1585: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gzseek'\n/opt/pware/include/zlib.h:1586: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gztell'\n/opt/pware/include/zlib.h:1587: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gzoffset'\n/opt/pware/include/zlib.h:1588: error: expected declaration specifiers or '...' before 'off_t'\n/opt/pware/include/zlib.h:1589: error: expected declaration specifiers or '...' before 'off_t'\n```\n\nI can't understand why this is using the header files from `/opt/pware/include/` when it should be using the header file from `$SAGE_LOCAL/local/include/zlib.h`\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9985\n\n",
+    "closed_at": "2020-06-25T13:33:03Z",
     "created_at": "2010-09-23T20:51:00Z",
     "labels": [
         "component: porting: aix or hp-ux",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -26,9 +28,11 @@ Using the following system:
 * 4 x 332 MHz 32-bit PowerPC CPUs
 * 3 GB RAM
 * A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)
+* DDS-4 tape drive 
 * AIX 5.3 (A POSIX certified operating system)
 * gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)
-* DDS-4 tape drive 
+* sage-4.6.alpha1
+
 
 FreeType fails to build, but reports:
 
@@ -43,6 +47,8 @@ In file included from /home/users/drkirkby/sage-4.6.alpha1/spkg/build/freetype-2
 ```
 
 I can't understand why this is using the header files from `/opt/pware/include/` when it should be using the header file from `$SAGE_LOCAL/local/include/zlib.h`
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9985
 

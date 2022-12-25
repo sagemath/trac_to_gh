@@ -1,16 +1,17 @@
-# Issue 98: p-adic print_prec does work as advertised
+# Issue 98: p-adic print_prec does not work as advertised
 
 archive/issues_000098.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: K = Qp(13); K.prec(6); K.print_prec(3)\nsage: K(1/2)\n 7 + 6*13 + 6*13^2 + O(13^6)\n```\n\nOutput should presumably be\n\n```\n 7 + 6*13 + 6*13^2 + O(13^3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/98\n\n",
+    "closed_at": "2007-01-22T03:27:54Z",
     "created_at": "2006-09-30T02:18:55Z",
     "labels": [
         "component: basic arithmetic",
         "trivial",
         "bug"
     ],
-    "title": "p-adic print_prec does work as advertised",
+    "title": "p-adic print_prec does not work as advertised",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/98",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

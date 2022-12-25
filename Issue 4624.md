@@ -1,16 +1,18 @@
-# Issue 4624: Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting
+# Issue 4624: [with patch; positive review] Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting
 
 archive/issues_004624.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nSigh:\n\n```\nsage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat\n! ipy_profile_sage.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4624\n\n",
+    "closed_at": "2008-11-27T02:06:45Z",
     "created_at": "2008-11-26T14:56:24Z",
     "labels": [
         "component: distribution",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting",
+    "title": "[with patch; positive review] Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4624",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

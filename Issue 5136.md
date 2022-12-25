@@ -1,23 +1,23 @@
-# Issue 5136: sage-3.3.alpha3 gets stuck computing the ring of integers of a relative number field
+# Issue 5136: [fixed by #5842] constructing the ring of integers of a relative number field is SLOW
 
 archive/issues_005136.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nDavid Loeffler reported this on sage-devel:\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^3 - x - 1)\nsage: OL = L.ring_of_integers()   # infinite loop?\n```\n\nNote also that CTRL-C seems to have no effect.  I see the same problem on my 32-bit Archlinux machine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5136\n\n",
+    "body": "Assignee: @loefflerd\n\nDavid Loeffler reported this on sage-devel:\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^3 - x - 1)\nsage: OL = L.ring_of_integers()   # infinite loop?\n```\n\nNote also that CTRL-C seems to have no effect.  I see the same problem on my 32-bit Archlinux machine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5136\n\n",
+    "closed_at": "2010-08-07T04:58:08Z",
     "created_at": "2009-01-30T09:40:00Z",
     "labels": [
-        "component: number theory",
-        "blocker",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage-3.3.alpha3 gets stuck computing the ring of integers of a relative number field",
+    "title": "[fixed by #5842] constructing the ring of integers of a relative number field is SLOW",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5136",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 David Loeffler reported this on sage-devel:
 

@@ -1,9 +1,10 @@
-# Issue 4870: Sage 3.2.3: turn off FLINT test suite in the final build
+# Issue 4870: [with spkg, positive review] Sage 3.2.3: turn off FLINT test suite in the final build
 
 archive/issues_004870.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is a followup to #4861 so we don't forget to turn off the FLINT test suite we run automatically.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4870\n\n",
+    "closed_at": "2009-01-03T06:36:47Z",
     "created_at": "2008-12-24T14:00:46Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004870.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Sage 3.2.3: turn off FLINT test suite in the final build",
+    "title": "[with spkg, positive review] Sage 3.2.3: turn off FLINT test suite in the final build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4870",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

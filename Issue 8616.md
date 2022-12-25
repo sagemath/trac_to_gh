@@ -1,15 +1,15 @@
-# Issue 8616: Symbolic type checking and expression parcing module
+# Issue 8616: Make desolve deduce the variable if you don't state it
 
 archive/issues_008616.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik @novoselt\n\nKeywords: symbolic, type, subexpression\n\nProvides unified interface for standard python types and sage specific types.\nTreats everything as symbolic expression which allows to check its type, take\noperator and operands and extract subexpressions by given types.\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f2ba2198dc5b79ed\n\nIssue created by migration from https://trac.sagemath.org/ticket/8616\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @novoselt\n\nKeywords: symbolic, type, subexpression\n\nProvides autodetect dependent and independent variables in desolve(), desolve_laplace()\n\nAdditionally as module which helps to solve first problem provides unified interface for standard python types and sage specific types.\nTreats everything as symbolic expression which allows to check its type, take\noperator and operands and extract subexpressions by given types.\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f2ba2198dc5b79ed\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e04cbc547095f2ac\n\nIssue created by migration from https://trac.sagemath.org/ticket/8616\n\n",
     "created_at": "2010-03-27T20:26:08Z",
     "labels": [
         "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Symbolic type checking and expression parcing module",
+    "title": "Make desolve deduce the variable if you don't state it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8616",
     "user": "https://trac.sagemath.org/admin/accounts/users/yuri.k"
@@ -21,11 +21,15 @@ CC:  @robert-marik @novoselt
 
 Keywords: symbolic, type, subexpression
 
-Provides unified interface for standard python types and sage specific types.
+Provides autodetect dependent and independent variables in desolve(), desolve_laplace()
+
+Additionally as module which helps to solve first problem provides unified interface for standard python types and sage specific types.
 Treats everything as symbolic expression which allows to check its type, take
 operator and operands and extract subexpressions by given types.
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/f2ba2198dc5b79ed
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/e04cbc547095f2ac
 
 Issue created by migration from https://trac.sagemath.org/ticket/8616
 

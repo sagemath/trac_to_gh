@@ -1,15 +1,16 @@
-# Issue 3778: [with patch, do not review] part 1 of new configuration system
+# Issue 3778: part 1 of new configuration system
 
 archive/issues_003778.json:
 ```json
 {
     "body": "Assignee: boothby\n\n(1) Centralized dictionary of the configurable settings with object oriented interface\n(2) CurrentConfig class will have process_runtime method taking the arguments at runtime and updating the current configuration\n(3) run_notebook.py will use current_config.value(SETTING) to retrieve current configuration for each setting needed at run_time\n(4) NotebookObject's __doc__ wil be dynamically created\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3778\n\n",
+    "closed_at": "2009-11-19T23:31:34Z",
     "created_at": "2008-08-05T23:27:01Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, do not review] part 1 of new configuration system",
+    "title": "part 1 of new configuration system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3778",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

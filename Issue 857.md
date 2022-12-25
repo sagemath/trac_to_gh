@@ -1,21 +1,22 @@
-# Issue 857: update info about cython in license() output
+# Issue 857: [with file] update info about cython in license() output
 
 archive/issues_000857.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn 2.8.6, license() still talks about pyrex/sagex, not cython\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/857\n\n",
+    "body": "Assignee: mabshoff\n\nIn 2.8.6, license() still talks about pyrex/sagex, not cython\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/857\n\n",
+    "closed_at": "2007-12-22T17:38:02Z",
     "created_at": "2007-10-12T03:12:23Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "update info about cython in license() output",
+    "title": "[with file] update info about cython in license() output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/857",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 In 2.8.6, license() still talks about pyrex/sagex, not cython
 

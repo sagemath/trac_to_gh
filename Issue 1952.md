@@ -1,16 +1,17 @@
-# Issue 1952: Follow up to #1940: Ideal comparison improvements
+# Issue 1952: [with patch, positive review] Follow up to #1940: Ideal comparison improvements
 
 archive/issues_001952.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\n[21:30] <wstein-1649> one thing about #1940...\n[21:30] <wstein-1649> If you're comparing two ideals, it might make sense to use the term ordering for which\n[21:30] <wstein-1649> computing groebner basis is *easy*.\n[21:31] <wstein-1649> E.g., wrt one order it can be super super hard, and wrt to another, quite easy.\n[21:31] <mabshoff> Yep. That sounds like a great idea.\n[21:31] <mabshoff> i.e. degrevlex per default.\n[21:31] <mabshoff> Ticket?\n[21:31] <wstein-1649> But in malb's code for #1940 he just uses whatever term order.\n[21:31] <mabshoff> Well, I think he caches the gbasis, so in some cases it might already exist.\n[21:32] <wstein-1649> Also, he doesn't even seem to check that other is an ideal.\n[21:32] <wstein-1649> Also, if the two ideals are in the same ring but with two different term orders,\n[21:32] <wstein-1649> that __cmp__ function will get the wrong answer.\n[21:32] <mabshoff> mmh.\n[21:32] <mabshoff> I guess reopen, but leave the patch applied?\n[21:32] <wstein-1649> I think his patch perfectly addresses the given #1940.\n[21:32] <wstein-1649> But there should be another trac ticket about my points above.\n[21:33] <wstein-1649> Yeah?\n[21:33] <mabshoff> Yep.\n[21:33] <wstein-1649> Can you open it and maybe paste this discussion in?\n[21:33] <mabshoff> Already on the way :)\n[21:33] <wstein-1649> cool.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1952\n\n",
+    "closed_at": "2008-08-27T23:11:36Z",
     "created_at": "2008-01-27T20:47:54Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Follow up to #1940: Ideal comparison improvements",
+    "title": "[with patch, positive review] Follow up to #1940: Ideal comparison improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1952",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

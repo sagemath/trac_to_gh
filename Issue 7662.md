@@ -1,15 +1,16 @@
-# Issue 7662: Chordal Graphs
+# Issue 7662: Update is_chordal to return certificates
 
 archive/issues_007662.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCreate a module for chordal graphs :\n\n* Perfect elimination order ( use 7541 )\n* Move is-chordal in this module\n* Polynomial-time algorithms for\n     * Vertex coloring\n     * Max clique/stable\n* MaxBFS\n* BFS*\n\nIssue created by migration from https://trac.sagemath.org/ticket/7662\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch lets is_chordal return a certificate when asked to do so. The former algorithm is kept, and several lines are added to collect the certificate on the way and return it.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7662\n\n",
+    "closed_at": "2011-01-12T06:31:19Z",
     "created_at": "2009-12-11T14:27:34Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "Chordal Graphs",
+    "title": "Update is_chordal to return certificates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7662",
     "user": "https://github.com/nathanncohen"
@@ -17,15 +18,9 @@ archive/issues_007662.json:
 ```
 Assignee: @rlmill
 
-Create a module for chordal graphs :
+This patch lets is_chordal return a certificate when asked to do so. The former algorithm is kept, and several lines are added to collect the certificate on the way and return it.
 
-* Perfect elimination order ( use 7541 )
-* Move is-chordal in this module
-* Polynomial-time algorithms for
-     * Vertex coloring
-     * Max clique/stable
-* MaxBFS
-* BFS*
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/7662
 

@@ -1,9 +1,10 @@
-# Issue 3596: can't build tut.tex; latex errors in ref.tex
+# Issue 3596: [with patch; positive review] can't build tut.tex; latex errors in ref.tex
 
 archive/issues_003596.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3596\n\n",
+    "body": "Assignee: tba\n\nThe attached patch fixes some trivial errors in ref.tex, an obvious error in tut.tex (missing \\fi), and gets rid of deleting the .ind files, and removes a stupid comment. \n\nI'm a little unsure about not deleting those ind files.   It really shouldn't be necessary.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3596\n\n",
+    "closed_at": "2008-07-08T00:46:06Z",
     "created_at": "2008-07-07T23:17:21Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_003596.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "can't build tut.tex; latex errors in ref.tex",
+    "title": "[with patch; positive review] can't build tut.tex; latex errors in ref.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3596",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,9 @@ archive/issues_003596.json:
 ```
 Assignee: tba
 
+The attached patch fixes some trivial errors in ref.tex, an obvious error in tut.tex (missing \fi), and gets rid of deleting the .ind files, and removes a stupid comment. 
 
+I'm a little unsure about not deleting those ind files.   It really shouldn't be necessary.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3596
 

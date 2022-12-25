@@ -4,10 +4,10 @@ archive/issues_003753.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n```\n\n\nHi,\n\nI also noticed there is a problem with \"nb.save()\". It assumes that\nthe current directory is \".sage\". So it saves the notebook object in a\nwrong place if you are not in \".sage\". I think this is a bug.\n\n\nKwankyu\n\n\t\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3753\n\n",
+    "closed_at": "2009-11-19T23:30:27Z",
     "created_at": "2008-08-01T01:34:06Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- change the default for nb.save('...')",

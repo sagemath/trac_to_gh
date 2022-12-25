@@ -3,10 +3,11 @@
 archive/issues_009103.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nI believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. \n\nFurthermore, ATLAS was apparently updated to the latest upstream source code on February 20th, 2009 (that's what SPKG.txt says), but some of the files in the 'src' directory have modification dates of June 22nd 2009 - some 4 months later. \n\nI don't know for sure who is guilty here, but I've suspicion it might be me, as 'hg log' shows:\n\n```\nchangeset:   53:41de1efe8559\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Thu Jul 02 14:13:54 2009 -0700\nsummary:     Checked in drkirkby's changes\n\nchangeset:   52:3acaaff52099\nuser:        William Stein <wstein@gmail.com>\ndate:        Tue Jun 02 14:30:03 2009 -0700\nsummary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium!)\n```\n\nSo it looks like I probably screwed up, and Robert did not notice and checked in my changes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9103\n\n",
+    "body": "Assignee: tbd\n\nI believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. \n\nFurthermore, ATLAS was apparently updated to the latest upstream source code on February 20th, 2009 (that's what SPKG.txt says), but some of the files in the 'src' directory have modification dates of June 22nd 2009 - some 4 months later. \n\nI don't know for sure who is guilty here, but I've suspicion it might be me, as 'hg log' shows:\n\n```\nchangeset:   53:41de1efe8559\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Thu Jul 02 14:13:54 2009 -0700\nsummary:     Checked in drkirkby's changes\n\nchangeset:   52:3acaaff52099\nuser:        William Stein <wstein@gmail.com>\ndate:        Tue Jun 02 14:30:03 2009 -0700\nsummary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium!)\n```\n\nSo it looks like I probably screwed up, and Robert did not notice and checked in my changes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9103\n\n",
+    "closed_at": "2013-05-24T12:20:38Z",
     "created_at": "2010-05-31T11:22:31Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009103.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 I believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. 
 

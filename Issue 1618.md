@@ -1,22 +1,23 @@
-# Issue 1618: Make SCons use the GNU compiler even when Intel's compilers are present
+# Issue 1618: [with spkg, positive review] Make SCons ignore Intel ifort's linker options
 
 archive/issues_001618.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-devel/t/74de10c9f2d3edf7 Francois reported:\n\n```\nHello Michael,\n\nI think I found my problem. A little googling actually helped with\nthis link:\nhttp://bugs.archlinux.org/task/6864\nI did some experiments with the intel _fortran_ compiler (not even the\nC compiler)\nand I still have it on my system.\nSince the intel compiler doesn't compile my lattice QCD code correctly\nanyway\nI will remove it and try again.\nI am busy for the next few hours so I will do that a bit latter.\n\nThanks for looking,\nFrancois\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1618\n\n",
+    "body": "Assignee: @garyfurnish\n\nIn http://groups.google.com/group/sage-devel/t/74de10c9f2d3edf7 Francois reported:\n\n```\nHello Michael,\n\nI think I found my problem. A little googling actually helped with\nthis link:\nhttp://bugs.archlinux.org/task/6864\nI did some experiments with the intel _fortran_ compiler (not even the\nC compiler)\nand I still have it on my system.\nSince the intel compiler doesn't compile my lattice QCD code correctly\nanyway\nI will remove it and try again.\nI am busy for the next few hours so I will do that a bit latter.\n\nThanks for looking,\nFrancois\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1618\n\n",
+    "closed_at": "2008-03-24T17:30:47Z",
     "created_at": "2007-12-29T03:55:55Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Make SCons use the GNU compiler even when Intel's compilers are present",
+    "title": "[with spkg, positive review] Make SCons ignore Intel ifort's linker options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1618",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 In http://groups.google.com/group/sage-devel/t/74de10c9f2d3edf7 Francois reported:
 

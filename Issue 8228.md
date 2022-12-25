@@ -3,10 +3,12 @@
 archive/issues_008228.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @jaapspies\n\nThis is bad:\n\n```python\nsage: P.<x,y> = Zmod(10)[]; P(0)\n0\nsage: P.<x,y> = Zmod(2^10)[]; P(0)\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8228\n\n",
+    "body": "Assignee: @malb\n\nCC:  @jaapspies\n\nKeywords: singular\n\nThis is bad:\n\n```python\nsage: P.<x,y> = Zmod(10)[]; P(0)\n0\nsage: P.<x,y> = Zmod(2^10)[]; P(0)\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8228\n\n",
+    "closed_at": "2010-09-29T04:24:57Z",
     "created_at": "2010-02-10T13:24:13Z",
     "labels": [
         "component: commutative algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -19,6 +21,8 @@ archive/issues_008228.json:
 Assignee: @malb
 
 CC:  @jaapspies
+
+Keywords: singular
 
 This is bad:
 

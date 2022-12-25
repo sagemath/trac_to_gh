@@ -1,21 +1,22 @@
-# Issue 3950: notebook -- template(s) for generating worksheet listings
+# Issue 3950: [with patch, positive review] notebook -- template(s) for generating worksheet listings
 
 archive/issues_003950.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nMake templates to replace `notebook.html_worksheet_list_public` and `notebook.html_worksheet_list_for_user` \n\nCreate a new folder to do this. Maybe use `{% include %`}\n\nRelies on #3949.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3950\n\n",
+    "body": "Assignee: TimothyClemans\n\nMake templates to replace `notebook.html_worksheet_list_public` and `notebook.html_worksheet_list_for_user` \n\nCreate a new folder to do this. Maybe use `{% include %`}\n\nRelies on #3949.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3950\n\n",
+    "closed_at": "2008-12-04T14:55:37Z",
     "created_at": "2008-08-25T18:05:19Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "notebook -- template(s) for generating worksheet listings",
+    "title": "[with patch, positive review] notebook -- template(s) for generating worksheet listings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3950",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 Make templates to replace `notebook.html_worksheet_list_public` and `notebook.html_worksheet_list_for_user` 
 

@@ -1,16 +1,17 @@
-# Issue 2405: Polydict speed
+# Issue 2405: [with patch, positive review] Polydict speed
 
 archive/issues_002405.json:
 ```json
 {
     "body": "Assignee: @malb\n\nWe have this timing:\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: f=prod([g^2-12*g+2 for g in R.gens()])\nsage: len((f).monomials())\n729\nsage: %time _=f**2\nCPU times: user 21.32 s, sys: 0.14 s, total: 21.46 s\nWall time: 21.46\n```\n\nI did some testing and I believe that the ETuple !__hash!__ function appears to be a quite non-trivial part of this bottleneck.  A slightly tweaked version gives me the time\n\n```\nsage: %time _=f**2\nCPU times: user 7.67 s, sys: 0.07 s, total: 7.74 s\nWall time: 7.74\n```\n\nA principle part of this tweak was replacing \n\n```\nreturn hash((tuple(sorted(self._data.iteritems())),self._length))\n```\nwith \n\n```\nreturn hash((tuple(self._data.items()),self._length))\n```\n\nI would have submitted a patch with this replaced code, but I think the sorting is a good part of that algorithm.  But, if we suppose that dictionaries produce their tuples in a predictable order, then I think the unsorted version should work.  However, the deeper issue is that I think we might want to consider some other storage alternatives for e-tuples -- possibly a sparse C array?  I think that the unsorted version is still pretty heavy for a hash function of an ETuple which absolutely must be super-fast.\n\nA paper by Fateman proved to be moderately interesting:  http://www.cs.berkeley.edu/~fateman/papers/fastmult.pdf  My impression after reading that paper is that we're essentially doing the correct algorithm (that is, there is no better algorithm for generic sparse poly's than the ordinary multiplication).  So, it seems to me that there really isn't a good reason that we should be significantly slower than singular at this.  Singular does this multiplication in about 1/4 second.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2405\n\n",
+    "closed_at": "2008-03-20T00:46:58Z",
     "created_at": "2008-03-06T14:21:20Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Polydict speed",
+    "title": "[with patch, positive review] Polydict speed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2405",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

@@ -4,6 +4,7 @@ archive/issues_009279.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nThe code from `databases/tables.py` was long ago split into `databases/odlyzko.py` and `databases/cremona.py`, and these have been documented and improved.  For some reason the old file is still around, undocumented and untested.\n\nIt's time to get rid of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9279\n\n",
+    "closed_at": "2010-07-22T07:57:16Z",
     "created_at": "2010-06-19T23:12:55Z",
     "labels": [
         "component: misc",

@@ -1,9 +1,10 @@
-# Issue 2158: Fix some typos in matrix/matrix2.pyx
+# Issue 2158: [with patch, with positive review] Fix some typos in matrix/matrix2.pyx
 
 archive/issues_002158.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe patch fixes a few typos in matrix2.pyx\n\nThe patch will be attached shortly\n\nIssue created by migration from https://trac.sagemath.org/ticket/2158\n\n",
+    "closed_at": "2008-02-14T17:07:57Z",
     "created_at": "2008-02-14T16:56:02Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002158.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Fix some typos in matrix/matrix2.pyx",
+    "title": "[with patch, with positive review] Fix some typos in matrix/matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2158",
     "user": "https://github.com/jaapspies"

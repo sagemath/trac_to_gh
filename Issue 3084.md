@@ -1,23 +1,23 @@
-# Issue 3084: Solve Sudoku faster!
+# Issue 3084: [with patch, positive review] Solve Sudoku faster!
 
 archive/issues_003084.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI've got a faster Sudoku-solving class than what's currently in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3084\n\n",
+    "body": "Assignee: cwitty\n\nI've got a faster Sudoku-solving class than what's currently in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3084\n\n",
+    "closed_at": "2009-06-24T10:12:44Z",
     "created_at": "2008-05-02T21:59:18Z",
     "labels": [
-        "component: cygwin",
-        "trivial",
-        "bug"
+        "component: misc",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Solve Sudoku faster!",
+    "title": "[with patch, positive review] Solve Sudoku faster!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3084",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: mabshoff
+Assignee: cwitty
 
 I've got a faster Sudoku-solving class than what's currently in Sage.
 

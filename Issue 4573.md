@@ -1,16 +1,17 @@
-# Issue 4573: Permutation not callable, but PermutationGroupElement is.
+# Issue 4573: [with patch; positive review] Permutation not callable, but PermutationGroupElement is.
 
 archive/issues_004573.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\n```\nsage: p = PermutationGroupElement([2, 1, 4, 5, 3])\nsage: p(1)\n2\nsage: q = Permutation([2, 1, 4, 5, 3])\nsage: q(1)\n...\nTypeError: 'Permutation_class' object is not callable\n```\n\nThis causes me some confusion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4573\n\n",
+    "closed_at": "2008-11-21T20:23:17Z",
     "created_at": "2008-11-20T22:15:08Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Permutation not callable, but PermutationGroupElement is.",
+    "title": "[with patch; positive review] Permutation not callable, but PermutationGroupElement is.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4573",
     "user": "https://github.com/saliola"

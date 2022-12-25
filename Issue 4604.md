@@ -4,6 +4,7 @@ archive/issues_004604.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphics, 3d\n\nFrom sage-support (and this has bugged me too):\n\n\nI'm not sure if this is a bug or just something I'm misunderstanding,\nbut for 2D graphics I can write code like this.\n\n```\ng = Graphics()\ng += line( [ [-1,-1], [1,1] ] )\ng.show()\n```\nBut in 3D if I do either\n\n```\ng = Graphics()\ng += sphere( (1,1,1), 2 )\ng.show()\n```\nor\n\n```\ng = sage.plot.plot3d.base.Graphics3dGroup()\ng += sphere( (1,1,1), 2 )\ng.show()\n```\nI get the error: \n\n```\nValueError: min() arg is an empty sequence\n```\n\nIs there something I'm missing on how to create a graphics object and\nadd 3D graphics to it like the way it's done in 2D? \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4604\n\n",
+    "closed_at": "2010-01-19T00:40:56Z",
     "created_at": "2008-11-24T17:37:26Z",
     "labels": [
         "component: graphics",

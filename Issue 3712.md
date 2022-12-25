@@ -1,9 +1,10 @@
-# Issue 3712: clisp+nohup eats ones disc
+# Issue 3712: [with spkg, positive review] clisp+nohup eats ones disc
 
 archive/issues_003712.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nABORT          :R364    Abort debug loop\nABORT          :R365    Abort debug loop\nABORT          :R366    Abort debug loop\nABORT          :R367    Abort debug loop\nABORT          :R368    Abort debug loop\nABORT          :R369    Abort debug loop\nABORT          :R370    Abort debug loop\nABORT          :R371    Abort debug loop\nABORT        tee: write e\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3712\n\n",
+    "closed_at": "2008-07-29T16:55:45Z",
     "created_at": "2008-07-23T13:17:01Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003712.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "clisp+nohup eats ones disc",
+    "title": "[with spkg, positive review] clisp+nohup eats ones disc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3712",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

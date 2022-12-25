@@ -7,8 +7,7 @@ archive/issues_001031.json:
     "created_at": "2007-10-29T17:02:24Z",
     "labels": [
         "component: documentation",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add Py_ssize_t info to developer manual",

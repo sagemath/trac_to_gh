@@ -3,7 +3,8 @@
 archive/issues_001013.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMatrix_real_double_dense and Matrix_complex_double_dense both define a numpy() method that turns the matrix into the appropriate kind of numpy matrix.  However, Matrix defines a numpy() method that takes an optional type argument, to say what kind of matrix to produce.  The specialized classes should also take this optional type argument, and fall back to the slow method defined by Matrix if the type is not 'd' or 'D', respectively.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1013\n\n",
+    "body": "Assignee: @jasongrout\n\nMatrix_real_double_dense and Matrix_complex_double_dense both define a numpy() method that turns the matrix into the appropriate kind of numpy matrix.  However, Matrix defines a numpy() method that takes an optional type argument, to say what kind of matrix to produce.  The specialized classes should also take this optional type argument, and fall back to the slow method defined by Matrix if the type is not 'd' or 'D', respectively.\n\nApply [attachment:trac_1013-whitespace_removed.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/1013\n\n",
+    "closed_at": "2012-03-28T10:02:20Z",
     "created_at": "2007-10-27T22:40:12Z",
     "labels": [
         "component: linear algebra",
@@ -16,9 +17,11 @@ archive/issues_001013.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 Matrix_real_double_dense and Matrix_complex_double_dense both define a numpy() method that turns the matrix into the appropriate kind of numpy matrix.  However, Matrix defines a numpy() method that takes an optional type argument, to say what kind of matrix to produce.  The specialized classes should also take this optional type argument, and fall back to the slow method defined by Matrix if the type is not 'd' or 'D', respectively.
+
+Apply [attachment:trac_1013-whitespace_removed.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/1013
 

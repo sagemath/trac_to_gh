@@ -4,6 +4,7 @@ archive/issues_008283.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nReported by ylchapuy:\n\nHere is another implementation:\n\n {{{\n\n def carmichael_lambda(n):\n    n = Integer(n)\n\n    if n < 1:\n        raise ValueError(\"Input n must be a positive integer.\")\n\n    F = n.factor()\n    L = []\n\n    # first get rid of the even part\n    if n & 1 == 0:\n        e = F[0][1]\n        F = F[1:]\n        if e < 3:\n            e = e-1\n        else:\n            e = e-2\n        L.append(1<<e)\n\n    # then other prime factors\n    L += [ p**(k-1)*(p-1) for p,k in F]\n\n    # finish the job\n    return lcm(L)\n\n }}}\n\nThis is a bit faster than the current implementation and, if you replace lcm with sage.rings.integer.LCM_list, it is even faster.\n\nA bug with the current function is that the output is not always an integer: e.g., carmichael_lambda(16) is of type sage.rings.rational.Rational .\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8283\n\n",
+    "closed_at": "2010-03-06T08:36:59Z",
     "created_at": "2010-02-16T16:36:13Z",
     "labels": [
         "component: cryptography",

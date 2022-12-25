@@ -4,6 +4,7 @@ archive/issues_007737.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nRight now the entire description for each spkg at http://sagemath.org/packages/standard/ is a link, so that the text is displayed (on firefox 3.5, Ubuntu) as blue underlined text.  That makes it harder to read than if it was just normal black-on-white text.  I'm suggesting we make the description text not a link, but just put something like a \"More\" link at the end of the description that is a link to the spkg.txt.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7737\n\n",
+    "closed_at": "2009-12-18T22:01:04Z",
     "created_at": "2009-12-18T20:33:36Z",
     "labels": [
         "component: website/wiki",

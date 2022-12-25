@@ -4,6 +4,7 @@ archive/issues_008130.json:
 ```json
 {
     "body": "Assignee: tbd\n\nTry this:\n\n```\nsage: s = u\"\u010d\"\nsage: view(s)\n```\nIt will throw a `UnicodeDecodeError`.  This much can be fixed using the \"experimental\" patch at #8083; however, after applying that patch,\n\n```\nsage: view(s)\n```\npops open a dvi/pdf file showing the wrong unicode character.\n\nSee #8083 and #8128 for tickets focusing on latex and unicode in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8130\n\n",
+    "closed_at": "2010-01-31T00:57:22Z",
     "created_at": "2010-01-30T04:51:58Z",
     "labels": [
         "component: misc",

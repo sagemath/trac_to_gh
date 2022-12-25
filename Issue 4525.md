@@ -1,15 +1,17 @@
-# Issue 4525: [with patch, needs review] LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points())
+# Issue 4525: [with patch, positive review] LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points())
 
 archive/issues_004525.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve\n\nThe integral_points() function for elliptic curves can be speeded up if the Mordell-Weil basis used is first LLL-reduced, since this increases the minimal eigenvalue of the height-pairing matrix.  The patch achieves this.  For example, before:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: E.gens()\n[(-4 : 1 : 1), (-3 : 5 : 1), (-11/4 : 43/8 : 1), (-2 : 6 : 1)]\nsage: time len(E.integral_points())\nCPU times: user 42.67 s, sys: 0.48 s, total: 43.15 s\nWall time: 43.50 s\n24\n```\nand after:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: E.gens()\n[(-4 : 1 : 1), (-3 : 5 : 1), (-11/4 : 43/8 : 1), (-2 : 6 : 1)]\nsage: time len(E.integral_points())\nCPU times: user 8.18 s, sys: 0.12 s, total: 8.29 s\nWall time: 8.37 s\n24\n```\n(i.e. speedup by a factor of 5) and for a rank 5 example I had a speedup factor of 50.\n\nI implemented the LLL-reduction via pari's lllgram function, in a separate function lll_reduce() since it will be useful elsewhere.  There is a case for applying it whenever we compute generators (since, for example, mwrank does not LLL-reduce its generators, because the mwrank code has no access to a floating point LLL routine!) but I have not done that -- many doctest would need changing as generators would change.\n\nThe doctests include a long one on a curve of rank 24, which adds 2m to the -long doctest time.  If that is too long it could be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4525\n\n",
+    "closed_at": "2008-11-23T23:50:49Z",
     "created_at": "2008-11-14T17:36:47Z",
     "labels": [
-        "component: number theory"
+        "component: number theory",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points())",
+    "title": "[with patch, positive review] LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points())",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4525",
     "user": "https://github.com/JohnCremona"

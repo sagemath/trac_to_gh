@@ -1,15 +1,16 @@
-# Issue 6290: Allow latex_name=LaTeX keyword while defining symbolic function
+# Issue 6290: [with patch, positive review] Allow keywords such as latex_name=LaTeX while defining symbolic function
 
 archive/issues_006290.json:
 ```json
 {
-    "body": "CC:  @williamstein\n\nKeywords: latex_name, symbolic function\n\nIn new symbolics, underlying \"sage.symbolic.SFunction\" class allows\none to pass the keyword \"latex_name=LaTeX\". It would be really good if we expose this feature at the user interface level. Currently,\nSage (4.0.1) raises error if one tries to do so.\n\n\nExample uses:\n\n```\nriemann(x) = function('riemann', x, latex_name=\"\\\\mathcal{R}\")\nlatex( riemann(x) )\n\\mathcal{R}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6290\n\n",
+    "body": "CC:  @williamstein\n\nKeywords: latex_name, symbolic function\n\nIn new symbolics, underlying \"sage.symbolic.function.SFunction\" class allows one to pass the keywords such as \"latex_name=LaTeX\". It would be really good if we expose this feature at the user interface level. This will directly allow LaTeX customization by users according to their need.\n\nCurrently, Sage (4.0.1) raises error if one tries to do so.\n\n\nCouple of example usage:\n\n**(1)** Define symbolic function with its latex representaion\n\n```\nriemann(x) = function('riemann', x, latex_name=\"\\\\mathcal{R}\")\nlatex( riemann(x) )\n\\mathcal{R}\\left(x\\right)\n```\n\n\n**(2)**   Printing arguments of a symbolic functions as its indices.\n\n```\nmu,nu = var('mu,nu')\ndef my_latex_print(*args): \n    return \"\\psi_{%s}\"%(', '.join(map(latex, args)))\n\npsi(mu,nu) = function('psi', mu,nu, print_latex_func=my_latex_print)\n\nlatex(psi(mu,nu))\n\\psi_{\\mu, \\nu}\n```\n\n\nAttached patch allows keyword arguments while defining symbolic functions.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6290\n\n",
+    "closed_at": "2009-06-24T09:44:35Z",
     "created_at": "2009-06-14T23:29:44Z",
     "labels": [
         "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Allow latex_name=LaTeX keyword while defining symbolic function",
+    "title": "[with patch, positive review] Allow keywords such as latex_name=LaTeX while defining symbolic function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6290",
     "user": "https://github.com/golam-m-hossain"
@@ -19,18 +20,39 @@ CC:  @williamstein
 
 Keywords: latex_name, symbolic function
 
-In new symbolics, underlying "sage.symbolic.SFunction" class allows
-one to pass the keyword "latex_name=LaTeX". It would be really good if we expose this feature at the user interface level. Currently,
-Sage (4.0.1) raises error if one tries to do so.
+In new symbolics, underlying "sage.symbolic.function.SFunction" class allows one to pass the keywords such as "latex_name=LaTeX". It would be really good if we expose this feature at the user interface level. This will directly allow LaTeX customization by users according to their need.
+
+Currently, Sage (4.0.1) raises error if one tries to do so.
 
 
-Example uses:
+Couple of example usage:
+
+**(1)** Define symbolic function with its latex representaion
 
 ```
 riemann(x) = function('riemann', x, latex_name="\\mathcal{R}")
 latex( riemann(x) )
-\mathcal{R}
+\mathcal{R}\left(x\right)
 ```
+
+
+**(2)**   Printing arguments of a symbolic functions as its indices.
+
+```
+mu,nu = var('mu,nu')
+def my_latex_print(*args): 
+    return "\psi_{%s}"%(', '.join(map(latex, args)))
+
+psi(mu,nu) = function('psi', mu,nu, print_latex_func=my_latex_print)
+
+latex(psi(mu,nu))
+\psi_{\mu, \nu}
+```
+
+
+Attached patch allows keyword arguments while defining symbolic functions.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6290
 

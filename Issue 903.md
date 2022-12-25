@@ -1,16 +1,17 @@
-# Issue 903: charpoly of matrices over number fields is ridiculously slow right now (easy fixes exist)
+# Issue 903: [with patch, very positive review] charpoly of matrices over number fields is ridiculously slow right now (easy fixes exist)
 
 archive/issues_000903.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSee the below examples that illustrate that charpoly(A), where A is over a number field, currently totally\nsucks.  This has very bad implications for modular forms computations.  Even switching to use PARI for\ncharpoly would give a significant speedup (which is a lot faster than Magma, interestingly). \n\n\n```\nK.<a> = NumberField(x^2 + 17)\na^2\n///\n-17\n```\n\n```\nn = 40\nm = matrix(K, n, [(a+1)^randint(0,3) for _ in xrange(n^2)])\nm\n///\n40 x 40 dense matrix over Number Field in a with defining polynomial x^2 + 17\n```\n\n```\nm[0] # first row\n///\n(2*a - 16, 1, -14*a - 50, a + 1, 2*a - 16, 2*a - 16, a + 1, -14*a - 50, 1, -14*a - 50, 2*a - 16, a + 1, 1, a + 1, a + 1, a + 1, a + 1, -14*a - 50, -14*a - 50, 2*a - 16, 1, a + 1, 1, a + 1, 2*a - 16, -14*a - 50, 1, 2*a - 16, 2*a - 16, 1, a + 1, a + 1, 1, 2*a - 16, -14*a - 50, 2*a - 16, 2*a - 16, -14*a - 50, 2*a - 16, -14*a - 50)\n```\n\n```\ntime k = m*m\n///\nCPU time: 0.14 s,  Wall time: 0.27 s\n```\n\n```\ntime f=m.charpoly()\n///\nCPU time: 23.93 s,  Wall time: 26.22 s\n```\n\n<b>NOTE:</b> Sage <i>should</i> use PARI for charpoly's over number\nfields, but currently it doesn't.  Notice how much faster PARI is at\nthe same computation!\n\n```\nm._clear_cache()\ng = pari(m)\ntime h = g.charpoly()\n///\nTime: CPU 2.52 s, Wall: 2.76 s\n```\n\nBut a <b>multimodular algorithm</b> should blow away all of them.  Student project?\nBasically, charpoly mod p is extremely fast in Sage, and one could reduce modulo\n<i>primes of a number field</i>, do the computation mod p, then lift, and get the\ncorrect result.  I know of no implementations of this.  A student project could be\nto implement this and tune it to be the fastest program in the world for charpoly\nover number fields. \n<br>\n\n```\ntime m.echelonize()\n///\nCPU time: 0.35 s,  Wall time: 0.35 s\n```\n\n```\n%magma\nR<x> := PolynomialRing(RationalField());\nK<a> := NumberField(x^2 + 17);\nn := 40;\nm := MatrixAlgebra(K, n)![(1+a)^Random(0, 3) : i in [1..n^2]];\ntime k := m*m;\ntime f := CharacteristicPolynomial(m);\ntime e := EchelonForm(m);\n///\nTime: 0.000\nTime: 15.220\nTime: 0.150\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/903\n\n",
+    "body": "Assignee: @williamstein\n\nSee the below examples that illustrate that charpoly(A), where A is over a number field, currently totally\nsucks.  This has very bad implications for modular forms computations.  Even switching to use PARI for\ncharpoly would give a significant speedup (which is a lot faster than Magma, interestingly). \n\n\n```\nK.<a> = NumberField(x^2 + 17)\na^2\n///\n-17\n```\n\n```\nn = 40\nm = matrix(K, n, [(a+1)^randint(0,3) for _ in xrange(n^2)])\nm\n///\n40 x 40 dense matrix over Number Field in a with defining polynomial x^2 + 17\n```\n\n```\nm[0] # first row\n///\n(2*a - 16, 1, -14*a - 50, a + 1, 2*a - 16, 2*a - 16, a + 1, -14*a - 50, 1, -14*a - 50, 2*a - 16, a + 1, 1, a + 1, a + 1, a + 1, a + 1, -14*a - 50, -14*a - 50, 2*a - 16, 1, a + 1, 1, a + 1, 2*a - 16, -14*a - 50, 1, 2*a - 16, 2*a - 16, 1, a + 1, a + 1, 1, 2*a - 16, -14*a - 50, 2*a - 16, 2*a - 16, -14*a - 50, 2*a - 16, -14*a - 50)\n```\n\n```\ntime k = m*m\n///\nCPU time: 0.14 s,  Wall time: 0.27 s\n```\n\n```\ntime f=m.charpoly()\n///\nCPU time: 23.93 s,  Wall time: 26.22 s\n```\n\n**NOTE:** Sage *should* use PARI for charpoly's over number\nfields, but currently it doesn't.  Notice how much faster PARI is at\nthe same computation!\n\n```\nm._clear_cache()\ng = pari(m)\ntime h = g.charpoly()\n///\nTime: CPU 2.52 s, Wall: 2.76 s\n```\n\nBut a **multimodular algorithm** should blow away all of them.  Student project?\nBasically, charpoly mod p is extremely fast in Sage, and one could reduce modulo\n*primes of a number field*, do the computation mod p, then lift, and get the\ncorrect result.  I know of no implementations of this.  A student project could be\nto implement this and tune it to be the fastest program in the world for charpoly\nover number fields. \n\n```\ntime m.echelonize()\n///\nCPU time: 0.35 s,  Wall time: 0.35 s\n```\n\n```\n%magma\nR<x> := PolynomialRing(RationalField());\nK<a> := NumberField(x^2 + 17);\nn := 40;\nm := MatrixAlgebra(K, n)![(1+a)^Random(0, 3) : i in [1..n^2]];\ntime k := m*m;\ntime f := CharacteristicPolynomial(m);\ntime e := EchelonForm(m);\n///\nTime: 0.000\nTime: 15.220\nTime: 0.150\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/903\n\n",
+    "closed_at": "2008-04-15T20:30:38Z",
     "created_at": "2007-10-15T21:01:58Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "charpoly of matrices over number fields is ridiculously slow right now (easy fixes exist)",
+    "title": "[with patch, very positive review] charpoly of matrices over number fields is ridiculously slow right now (easy fixes exist)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/903",
     "user": "https://github.com/williamstein"
@@ -56,7 +57,7 @@ time f=m.charpoly()
 CPU time: 23.93 s,  Wall time: 26.22 s
 ```
 
-<b>NOTE:</b> Sage <i>should</i> use PARI for charpoly's over number
+**NOTE:** Sage *should* use PARI for charpoly's over number
 fields, but currently it doesn't.  Notice how much faster PARI is at
 the same computation!
 
@@ -68,13 +69,12 @@ time h = g.charpoly()
 Time: CPU 2.52 s, Wall: 2.76 s
 ```
 
-But a <b>multimodular algorithm</b> should blow away all of them.  Student project?
+But a **multimodular algorithm** should blow away all of them.  Student project?
 Basically, charpoly mod p is extremely fast in Sage, and one could reduce modulo
-<i>primes of a number field</i>, do the computation mod p, then lift, and get the
+*primes of a number field*, do the computation mod p, then lift, and get the
 correct result.  I know of no implementations of this.  A student project could be
 to implement this and tune it to be the fastest program in the world for charpoly
 over number fields. 
-<br>
 
 ```
 time m.echelonize()
@@ -96,6 +96,7 @@ Time: 0.000
 Time: 15.220
 Time: 0.150
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/903
 

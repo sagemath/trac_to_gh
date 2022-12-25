@@ -1,15 +1,16 @@
-# Issue 6800: [with patch, needs review] formal/lazy/infinite powerseries
+# Issue 6800: formal/lazy/infinite powerseries
 
 archive/issues_006800.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  sage-combinat @mantepse\n\nNew code that implements lazy power and Laurant series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6800\n\n",
+    "body": "Assignee: @burcin\n\nCC:  sage-combinat @mantepse\n\nKeywords: LazyPowerSeries\n\nNew code that implements lazy power and Laurent series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6800\n\n",
+    "closed_at": "2022-09-01T02:30:35Z",
     "created_at": "2009-08-22T07:32:14Z",
     "labels": [
-        "component: calculus"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] formal/lazy/infinite powerseries",
+    "title": "formal/lazy/infinite powerseries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6800",
     "user": "https://trac.sagemath.org/admin/accounts/users/Henryk.Trappmann"
@@ -19,7 +20,9 @@ Assignee: @burcin
 
 CC:  sage-combinat @mantepse
 
-New code that implements lazy power and Laurant series.
+Keywords: LazyPowerSeries
+
+New code that implements lazy power and Laurent series.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6800
 

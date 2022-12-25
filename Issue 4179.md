@@ -4,6 +4,7 @@ archive/issues_004179.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nIn the file \"ell_finite_field.py\" change the line 1013 from\n\n            sage: for p in prime_range(10000):           #long time (~20s)\n\nto\n\n            sage: for p in prime_range(32768, 42768):           #long time (~20s)\n\nto achieve the same intended amount of testing for the elliptic cirves code as such.\n(But do not run into an --- as of this writing --- outstanding bug related to 16-Bit signed integers on Mac OS X 10.4.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4179\n\n",
+    "closed_at": "2008-09-24T08:30:57Z",
     "created_at": "2008-09-23T22:07:17Z",
     "labels": [
         "component: doctest coverage",

@@ -1,22 +1,23 @@
-# Issue 1957: [with spkg] Solaris 9 fixes for libfplll
+# Issue 1957: [with spkg,positive review] Solaris 9 fixes for libfplll
 
 archive/issues_001957.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc2/libfplll-2.1.6-20071129.p0.spkg\n\nbuilds fine on Solaris 9, OSX and Linux.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1957\n\n",
+    "body": "Assignee: mabshoff\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc2/libfplll-2.1.6-20071129.p0.spkg\n\nbuilds fine on Solaris 9, OSX and Linux.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1957\n\n",
+    "closed_at": "2008-01-28T05:06:02Z",
     "created_at": "2008-01-28T03:20:09Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with spkg] Solaris 9 fixes for libfplll",
+    "title": "[with spkg,positive review] Solaris 9 fixes for libfplll",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1957",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 The spkg at
 

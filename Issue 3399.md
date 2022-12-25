@@ -1,22 +1,25 @@
-# Issue 3399: [with patch, needs review] sage build scripts should be moved to devel
+# Issue 3399: [with patch, needs review] sage pbuild extcode files should be moved to devel
 
 archive/issues_003399.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThe sage build files that use pbuild should be moved to the devel repo while the pbuild files should stay in extcode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3399\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: editor_mabshoff\n\nThe sage build files that use pbuild should be moved to the devel repo while the pbuild files should stay in extcode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3399\n\n",
+    "closed_at": "2008-07-06T09:05:41Z",
     "created_at": "2008-06-11T15:00:38Z",
     "labels": [
         "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] sage build scripts should be moved to devel",
+    "title": "[with patch, needs review] sage pbuild extcode files should be moved to devel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3399",
     "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
+
+Keywords: editor_mabshoff
 
 The sage build files that use pbuild should be moved to the devel repo while the pbuild files should stay in extcode.
 

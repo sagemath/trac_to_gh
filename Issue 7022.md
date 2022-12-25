@@ -1,9 +1,10 @@
-# Issue 7022: os x -- 10.6 -- generated the matplotlib font cache crashes sage
+# Issue 7022: [with spkg, positive review] os x -- 10.6 -- generated the matplotlib font cache crashes sage
 
 archive/issues_007022.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a huge problem and total blocker:\n\n```\nflat:.matplotlib wstein$ mv fontList.cache fontList.cache.XXX\nflat:.matplotlib wstein$ cd\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: parallel\nsage: import pylab\n/Users/wstein/sage/build/64bit/sage/local/bin/sage-sage: line 199: 58213 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nflat:.matplotlib wstein$ mv fontList.cache.XXX fontList.cache\nflat:.matplotlib wstein$ cd ..\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: parallel\nsage: import pylab\nsage: \n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIdeas for solution: \n\n  (1) track down exactly where the problem happens in the matplotlib/freetype(?) code and fix it.\n\n  (2) Just ship the font cache with Sage until this gets resolved upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7022\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a huge problem and total blocker:\n\n```\nflat:.matplotlib wstein$ mv fontList.cache fontList.cache.XXX\nflat:.matplotlib wstein$ cd\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: parallel\nsage: import pylab\n/Users/wstein/sage/build/64bit/sage/local/bin/sage-sage: line 199: 58213 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nflat:.matplotlib wstein$ mv fontList.cache.XXX fontList.cache\nflat:.matplotlib wstein$ cd ..\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: parallel\nsage: import pylab\nsage: \n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIdeas for solution: \n\n  (1) track down exactly where the problem happens in the matplotlib/freetype(?) code and fix it.\n\n  (2) Just ship the font cache with Sage until this gets resolved upstream\n\n\nA working version of the fontcache is here:\n\n   http://wstein.org/home/wstein/tmp/fontList.cache\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7022\n\n",
+    "closed_at": "2009-09-30T12:05:42Z",
     "created_at": "2009-09-27T01:34:49Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_007022.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "os x -- 10.6 -- generated the matplotlib font cache crashes sage",
+    "title": "[with spkg, positive review] os x -- 10.6 -- generated the matplotlib font cache crashes sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7022",
     "user": "https://github.com/williamstein"
@@ -47,7 +48,14 @@ Ideas for solution:
 
   (1) track down exactly where the problem happens in the matplotlib/freetype(?) code and fix it.
 
-  (2) Just ship the font cache with Sage until this gets resolved upstream.
+  (2) Just ship the font cache with Sage until this gets resolved upstream
+
+
+A working version of the fontcache is here:
+
+   http://wstein.org/home/wstein/tmp/fontList.cache
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7022
 

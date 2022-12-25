@@ -1,16 +1,17 @@
-# Issue 5704: Implementation of finding elliptic curves with prescribed reduction over QQ
+# Issue 5704: [with patch, positive review] Implementation of finding elliptic curves with prescribed reduction over QQ
 
 archive/issues_005704.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: elliptic curve\n\nThis enhancement implements (over QQ only) the algorithm in  \"Finding\nall elliptic curves with good reduction outside a given set of primes\"\nby John Cremona and Mark Lingham, Experimental Mathematics 16 No.3\n(2007), 303-312.\n\nThis is a serious application of the S-integral point functions added last year.  I have a partial Magma implementation over number fields (partial since Magma does not have S-integral points over number fields either), which requires number field functionality not yet in Sage (pSelmer groups), which I know how to do but have not done;  I will put those on a separate ticket.\n\nIt is based on 3.4.1.rc0 + #5673 (2 patches) + #5685 (1 patch).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5704\n\n",
+    "closed_at": "2009-04-24T08:34:49Z",
     "created_at": "2009-04-07T09:40:41Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Implementation of finding elliptic curves with prescribed reduction over QQ",
+    "title": "[with patch, positive review] Implementation of finding elliptic curves with prescribed reduction over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5704",
     "user": "https://github.com/JohnCremona"

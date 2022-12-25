@@ -1,9 +1,10 @@
-# Issue 5782: Failure of __pow__ in RDF for noninteger powers of  zero
+# Issue 5782: [with patch, positive review] Failure of __pow__ in RDF for noninteger powers of  zero
 
 archive/issues_005782.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: RDF, __pow__, zero\n\nPositive noninteger powers of RDF(0) give nan rather than zero:\n\n```\n  sage: RDF(0)^.5\n  nan\n\n  sage: RDF(0)^(1/2)\n  nan\n```\n\nIn contrast, noninteger powers of CDF(0) have the correct value:\n\n```\n  sage: CDF(0)^.5\n  0\n\n  sage: CDF(0)^(1/2)\n  0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5782\n\n",
+    "closed_at": "2009-04-16T07:24:49Z",
     "created_at": "2009-04-14T00:00:05Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_005782.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Failure of __pow__ in RDF for noninteger powers of  zero",
+    "title": "[with patch, positive review] Failure of __pow__ in RDF for noninteger powers of  zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5782",
     "user": "https://trac.sagemath.org/admin/accounts/users/kbaker"

@@ -1,16 +1,17 @@
-# Issue 8844: add missing libraries to module_list for Cygwin
+# Issue 8844: add missing libraries to module_list for Cygwin (and Fedora, OpenSuSE, ...)
 
 archive/issues_008844.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @robertwb\n\nCygwin is a lot pickier about missing symbols so more libraries need to be linked in to the extension modules.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8844\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @robertwb\n\nKeywords: missing library, unresolved symbol\n\nCygwin is a lot pickier about missing symbols so more libraries need to be linked in to the extension modules.  This also fixes some issues on other systems: see then end of this thread http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg38859.html\n\nFollow-up: #19606\n\nIssue created by migration from https://trac.sagemath.org/ticket/8844\n\n",
+    "closed_at": "2010-05-26T01:03:22Z",
     "created_at": "2010-05-03T04:53:40Z",
     "labels": [
-        "component: cygwin",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
-    "title": "add missing libraries to module_list for Cygwin",
+    "title": "add missing libraries to module_list for Cygwin (and Fedora, OpenSuSE, ...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8844",
     "user": "https://github.com/mwhansen"
@@ -20,7 +21,11 @@ Assignee: tbd
 
 CC:  @nexttime @robertwb
 
-Cygwin is a lot pickier about missing symbols so more libraries need to be linked in to the extension modules.
+Keywords: missing library, unresolved symbol
+
+Cygwin is a lot pickier about missing symbols so more libraries need to be linked in to the extension modules.  This also fixes some issues on other systems: see then end of this thread http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg38859.html
+
+Follow-up: #19606
 
 Issue created by migration from https://trac.sagemath.org/ticket/8844
 

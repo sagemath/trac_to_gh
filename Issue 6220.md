@@ -4,6 +4,7 @@ archive/issues_006220.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nWe have a symbolic absolute value, we should have a symbolic argument as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6220\n\n",
+    "closed_at": "2010-05-27T10:26:29Z",
     "created_at": "2009-06-05T03:58:51Z",
     "labels": [
         "component: calculus",

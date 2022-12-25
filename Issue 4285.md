@@ -1,16 +1,17 @@
-# Issue 4285: [with patch, needs review] update desolver interface
+# Issue 4285: [with patch, positive review] update desolver interface
 
 archive/issues_004285.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThe current interface takes and returns raw maxima strings, and doesn't do any error handling. This gives the desolver a much more sage-like interface. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4285\n\n",
+    "closed_at": "2008-10-18T12:06:05Z",
     "created_at": "2008-10-14T17:39:28Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] update desolver interface",
+    "title": "[with patch, positive review] update desolver interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4285",
     "user": "https://github.com/robertwb"

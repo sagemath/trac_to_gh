@@ -4,6 +4,7 @@ archive/issues_005592.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWe should make the cell insertion bar available above a text cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5592\n\n",
+    "closed_at": "2009-11-15T14:17:33Z",
     "created_at": "2009-03-23T14:56:52Z",
     "labels": [
         "component: notebook",

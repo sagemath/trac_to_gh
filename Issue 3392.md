@@ -1,16 +1,17 @@
-# Issue 3392: upgrade matplotlib to 0.98.0 release
+# Issue 3392: [with patch, positive review] upgrade matplotlib to 0.98.3 release
 
 archive/issues_003392.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nmatplotlib 0.98.0 is a major release which requires python2.4 and numpy 1.1. It contains significant improvements and may require some advanced users to update their code; see migration and API_CHANGES. We are supporting a maintenance \n\nIssue created by migration from https://trac.sagemath.org/ticket/3392\n\n",
+    "closed_at": "2008-08-27T12:16:03Z",
     "created_at": "2008-06-10T19:08:37Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "upgrade matplotlib to 0.98.0 release",
+    "title": "[with patch, positive review] upgrade matplotlib to 0.98.3 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3392",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

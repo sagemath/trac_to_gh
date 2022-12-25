@@ -3,7 +3,8 @@
 archive/issues_009176.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kcrisman @dimpase\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6380:\n    sage: E.heegner_index(-7)\nExpected:\n    1.00000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6410:\n    sage: I = E.heegner_index(-8); I\nExpected:\n    1.50000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6412:\n    sage: 2*I\nExpected:\n    3.0000?\nGot:\n    2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6546:\n    sage: E.heegner_index_bound()\nExpected:\n    ([2], -7)\nGot:\n    ([], -7)\n**********************************************************************\n2 items had failures:\n   3 of  15 in __main__.example_229\n   1 of   4 in __main__.example_231\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9176\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman @dimpase\n\nKeywords: cygwin\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6380:\n    sage: E.heegner_index(-7)\nExpected:\n    1.00000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6410:\n    sage: I = E.heegner_index(-8); I\nExpected:\n    1.50000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6412:\n    sage: 2*I\nExpected:\n    3.0000?\nGot:\n    2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6546:\n    sage: E.heegner_index_bound()\nExpected:\n    ([2], -7)\nGot:\n    ([], -7)\n**********************************************************************\n2 items had failures:\n   3 of  15 in __main__.example_229\n   1 of   4 in __main__.example_231\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9176\n\n",
+    "closed_at": "2013-04-03T15:11:18Z",
     "created_at": "2010-06-07T05:33:45Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,6 +20,8 @@ archive/issues_009176.json:
 Assignee: tbd
 
 CC:  @kcrisman @dimpase
+
+Keywords: cygwin
 
 ```
 

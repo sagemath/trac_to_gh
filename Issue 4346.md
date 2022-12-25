@@ -1,16 +1,17 @@
-# Issue 4346: segmentation fault with set_block
+# Issue 4346: [with patch; with positive review] segmentation fault with set_block
 
 archive/issues_004346.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: M=Matrix([1])\nsage: M.set_block(0,1,matrix([1]))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4346\n\n",
+    "closed_at": "2008-10-26T02:26:02Z",
     "created_at": "2008-10-23T09:07:15Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "segmentation fault with set_block",
+    "title": "[with patch; with positive review] segmentation fault with set_block",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4346",
     "user": "https://github.com/zimmermann6"

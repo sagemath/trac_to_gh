@@ -1,22 +1,23 @@
-# Issue 1772: bug somewhere in the symbolics
+# Issue 1772: [with patch, positive review] bug somewhere in the symbolics
 
 archive/issues_001772.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is from Hector:\n\n```\nI also hit this bug while doing this (taken from the \"piecewise\"\ndocumentation):\n\nsage: f1 = lambda x:-1\nsage: f2 = lambda x:2\nsage: f = Piecewise([[(0,pi/2),f1],[(pi/2,pi),f2]])\nsage: P = f.plot_fourier_series_partial_sum(15,pi,-5,5)   # long time\nboom\n...\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in <lambda>(i)\n   3607             # We need to do this maximum to correctly handle the case where\n   3608             # self is something like (sin+1)\n-> 3609             n = max( max(map(lambda i: i.number_of_arguments(), self._operands)+[0]), len(variables) )\n   3610         self.__number_of_args = n\n   3611         return n\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute 'number_of_arguments'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1772\n\n",
+    "body": "Assignee: @mwhansen\n\nThis is from Hector:\n\n```\nI also hit this bug while doing this (taken from the \"piecewise\"\ndocumentation):\n\nsage: f1 = lambda x:-1\nsage: f2 = lambda x:2\nsage: f = Piecewise([[(0,pi/2),f1],[(pi/2,pi),f2]])\nsage: P = f.plot_fourier_series_partial_sum(15,pi,-5,5)   # long time\nboom\n...\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in <lambda>(i)\n   3607             # We need to do this maximum to correctly handle the case where\n   3608             # self is something like (sin+1)\n-> 3609             n = max( max(map(lambda i: i.number_of_arguments(), self._operands)+[0]), len(variables) )\n   3610         self.__number_of_args = n\n   3611         return n\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute 'number_of_arguments'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1772\n\n",
+    "closed_at": "2008-01-20T01:50:05Z",
     "created_at": "2008-01-14T05:58:16Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "bug somewhere in the symbolics",
+    "title": "[with patch, positive review] bug somewhere in the symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1772",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 This is from Hector:
 

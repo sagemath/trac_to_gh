@@ -1,9 +1,10 @@
-# Issue 5378: Sage 3.3: numerical noise in rings/polynomial/complex_roots.py on cicero & fulvia
+# Issue 5378: [with patch, positive review] Sage 3.3: numerical noise in rings/polynomial/complex_roots.py on cicero & fulvia
 
 archive/issues_005378.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  cwitty\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/complex_roots.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.3-x86-Linux-fc-test/devel/sage/sage/rings/polynom\nial/complex_roots.py\", line 271:\n   sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n   [(-14.61803398874990?..., 1), (-12.3819660112501...? + 0.?e-27*I, 1)]\nGot:\n   [(-12.3819660112501?, 1), (-14.61803398874990? + 0.?e-27*I, 1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5378\n\n",
+    "closed_at": "2009-04-19T02:10:25Z",
     "created_at": "2009-02-26T02:40:47Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005378.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Sage 3.3: numerical noise in rings/polynomial/complex_roots.py on cicero & fulvia",
+    "title": "[with patch, positive review] Sage 3.3: numerical noise in rings/polynomial/complex_roots.py on cicero & fulvia",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5378",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

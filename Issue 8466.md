@@ -1,15 +1,16 @@
-# Issue 8466: include the document "Sage and Coding Theory" in the classification "Sage HOWTOs"
+# Issue 8466: include the document "Sage and Coding Theory" in the classification "Thematic Tutorials"
 
 archive/issues_008466.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @rwst\n\nKeywords: coding theory\n\nTicket #3624 has a document called \"Sage and Coding Theory\" that fits nicely in the classification \"Sage HOWTOs\". A closely related, if not identical, document can be found [here](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** Once this ticket is closed, #3624 can be also be closed as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8466\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @rwst\n\nKeywords: coding theory\n\nTicket #3624 has a document called \"Sage and Coding Theory\" that fits nicely in the classification \"Thematic Tutorials\". A closely related, if not identical, document can be found [here](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** Once this ticket is closed, #3624 can be also be closed as fixed. The current ticket needs to be coordinated with #8470.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8466\n\n",
+    "closed_at": "2014-08-20T20:33:16Z",
     "created_at": "2010-03-07T02:09:39Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "include the document \"Sage and Coding Theory\" in the classification \"Sage HOWTOs\"",
+    "title": "include the document \"Sage and Coding Theory\" in the classification \"Thematic Tutorials\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8466",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -21,11 +22,11 @@ CC:  @wdjoyner @rlmill @rwst
 
 Keywords: coding theory
 
-Ticket #3624 has a document called "Sage and Coding Theory" that fits nicely in the classification "Sage HOWTOs". A closely related, if not identical, document can be found [here](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+Ticket #3624 has a document called "Sage and Coding Theory" that fits nicely in the classification "Thematic Tutorials". A closely related, if not identical, document can be found [here](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
 
 
 
-**Notes:** Once this ticket is closed, #3624 can be also be closed as fixed.
+**Notes:** Once this ticket is closed, #3624 can be also be closed as fixed. The current ticket needs to be coordinated with #8470.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8466
 

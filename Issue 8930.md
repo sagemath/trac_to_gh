@@ -3,7 +3,8 @@
 archive/issues_008930.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nKeywords: EnumeratedSet, deprecate\n\nIt is not use, redundant with `Set()` and confusing with `EnumeratedSets()`. Therefore it should be removed\n\nIssue created by migration from https://trac.sagemath.org/ticket/8930\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: EnumeratedSet, deprecate\n\n`EnumeratedSet` is not used, redundant with `Set` and confusing with `EnumeratedSets()`. The attached patch deprecates it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8930\n\n",
+    "closed_at": "2010-06-05T22:11:50Z",
     "created_at": "2010-05-08T05:34:09Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +21,7 @@ Assignee: @hivert
 
 Keywords: EnumeratedSet, deprecate
 
-It is not use, redundant with `Set()` and confusing with `EnumeratedSets()`. Therefore it should be removed
+`EnumeratedSet` is not used, redundant with `Set` and confusing with `EnumeratedSets()`. The attached patch deprecates it. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8930
 

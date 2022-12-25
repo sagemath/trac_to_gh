@@ -3,7 +3,8 @@
 archive/issues_008911.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8911\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: crystals,  categories\n\nThis patch let the crystal code use the category framework\n\nNew crystal categories:\n\n* Crystals\n* FiniteCrystals\n* HighestWeightCrystals\n* ClassicalCrystals\n\ntogether with a template in categories/example/crystals on how to\nimplement a new crystal.\n\nThe files\n\n* combinat/crystals/letters.py\n* combinat/crystals/tensor_product.py\n* combinat/crystals/spins.py\n* combinat/crystals/fast_crystals.py\n* combinat/crystals/highest_weight_crystals.py\n* combinat/crystals/direct_sum.py\n* combinat/crystals/affine.py\n* combinat/crystals/kirillov_reshetikhin.py\n\nhave been categorified. What was before in\n\n* combinat/crystals\n\nis now mostly in the various categories except for the BackTracker class and the documentation about crystals.\n\nThis patch breaks old crystal pickles. Well, those were actually\nsilently broken since #7978 four months ago, and no-one voted for\nagainst this on sage-combinat-devel.\n\nDepends on #8881. Requires updating Sage's pickle jar.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8911\n\n",
+    "closed_at": "2010-06-09T02:42:18Z",
     "created_at": "2010-05-07T13:47:43Z",
     "labels": [
         "component: combinatorics"
@@ -18,6 +19,43 @@ archive/issues_008911.json:
 Assignee: sage-combinat
 
 CC:  sage-combinat
+
+Keywords: crystals,  categories
+
+This patch let the crystal code use the category framework
+
+New crystal categories:
+
+* Crystals
+* FiniteCrystals
+* HighestWeightCrystals
+* ClassicalCrystals
+
+together with a template in categories/example/crystals on how to
+implement a new crystal.
+
+The files
+
+* combinat/crystals/letters.py
+* combinat/crystals/tensor_product.py
+* combinat/crystals/spins.py
+* combinat/crystals/fast_crystals.py
+* combinat/crystals/highest_weight_crystals.py
+* combinat/crystals/direct_sum.py
+* combinat/crystals/affine.py
+* combinat/crystals/kirillov_reshetikhin.py
+
+have been categorified. What was before in
+
+* combinat/crystals
+
+is now mostly in the various categories except for the BackTracker class and the documentation about crystals.
+
+This patch breaks old crystal pickles. Well, those were actually
+silently broken since #7978 four months ago, and no-one voted for
+against this on sage-combinat-devel.
+
+Depends on #8881. Requires updating Sage's pickle jar.
 
 
 

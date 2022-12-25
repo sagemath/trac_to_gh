@@ -1,15 +1,16 @@
-# Issue 3148: improved orthogonal functions
+# Issue 3148: [with patch, positive review] improved orthogonal functions
 
 archive/issues_003148.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: orthogonal polynomials Maxima\n\n\nThe defects in the code for the hermite function in\nsage/functions/orthogonal_polys.py which were noted and corrected in \n#2336 apply equally to the other functions in that file.\n\nThe attached patch applies the same fix that worked for hermite to the \nfollowing functions:\n\nchebyshev_T,\nchebyshev_U,\ngen_laguerre,\ngen_legendre_P,\ngen_legendre_Q,\njacobi_P,\nlaguerre,\nlegendre_P,\nlegendre_Q,\nultraspherical\n\nThis allows these polynomials to take much more general \narguments; see the examples given for legendre_P.\n\nThe functions:\n\ngen_legendre_P,\ngen_legendre_Q,\nlegendre_Q\n\nno longer yield a string representing a Maxima expression when the \nargument is a variable.   \n\nFor m > n the function gen_legendre_Q(n, m, x)\nhas to be computed independently of Maxima.  This part of the code may \nneed improving.\n\nThe introductory documentation has not been changed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3148\n\n",
+    "closed_at": "2008-05-23T07:29:07Z",
     "created_at": "2008-05-10T12:08:12Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "improved orthogonal functions",
+    "title": "[with patch, positive review] improved orthogonal functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3148",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

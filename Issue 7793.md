@@ -4,6 +4,7 @@ archive/issues_007793.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFrom the report a bug link:\n\nIt seems that the zorder does not work with disk(). I found a report saying that this was resolved for point() and polygon(), (and I know it works) but nothing about disk(). I found this using the following test:\n\n```\nd1 = disk((0,0), 1, (0, 2*pi), color = 'red', zorder=0) \nd2 = disk((0,0), 0.75, (0, 2*pi), color = 'brown', zorder=1)\nd3 = disk((0,0), 0.5, (0, 2*pi), color = 'green', zorder= 2)\nd4 = disk((0,0), 0.25, (0, 2*pi), color = 'yellow', zorder=3)\nfinal = d4 + d3 + d2 + d1\nfinal.show(aspect_ratio = 1)\n```\n\nIncidentally (not in the report), this shows that axes apparently have default zorder of 2.  So do arrows, but polygons have a default of 1.  This is confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7793\n\n",
+    "closed_at": "2010-02-11T14:56:07Z",
     "created_at": "2009-12-30T03:40:26Z",
     "labels": [
         "component: graphics",

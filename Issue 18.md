@@ -4,6 +4,7 @@ archive/issues_000018.json:
 ```json
 {
     "body": "Assignee: somebody\n\n* load 'a/b/c.sage' leaves the path messed up if an error occurs during load.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/18\n\n",
+    "closed_at": "2007-01-13T02:03:19Z",
     "created_at": "2006-09-12T23:18:11Z",
     "labels": [
         "component: basic arithmetic",

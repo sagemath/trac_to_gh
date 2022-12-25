@@ -1,15 +1,16 @@
-# Issue 2073: calculus -- get doctest coverage up to 100%
+# Issue 2073: [with patch, positive review] calculus -- get doctest coverage above 50%
 
 archive/issues_002073.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2073\n\n",
+    "closed_at": "2008-02-07T10:05:53Z",
     "created_at": "2008-02-06T09:00:28Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "calculus -- get doctest coverage up to 100%",
+    "title": "[with patch, positive review] calculus -- get doctest coverage above 50%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2073",
     "user": "https://github.com/williamstein"

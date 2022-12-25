@@ -1,16 +1,17 @@
-# Issue 3933: Set iteration is broken over sets created with iterators
+# Issue 3933: [with patch, positive review] Set iteration is broken over sets created with iterators
 
 archive/issues_003933.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis works:\n\nsage: list(Set([1, 2, 3, 4, 5]))\n[1, 2, 3, 4, 5]\n\nBut this doesn't:\n\nsage: list(Set(iter([1, 2, 3, 4, 5])))\n[]\n\nBasically Set makes a Set_object() out of it and Set_object is really not prepared to deal with an iterator.  I glanced over the code and did find an obvious solution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3933\n\n",
+    "closed_at": "2009-01-25T20:59:17Z",
     "created_at": "2008-08-22T19:12:05Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Set iteration is broken over sets created with iterators",
+    "title": "[with patch, positive review] Set iteration is broken over sets created with iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3933",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

@@ -1,17 +1,16 @@
-# Issue 7798: Text in Plots at any given Function
+# Issue 7798: Recomputing graphs after changing range of axes
 
 archive/issues_007798.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: plot, label\n\nThe purpose of the ticket is to locate where the function text should be applied to the function plot to be able to have lables for plots like: var('x'); f = x**2; p = plot(f,x); p.text(\"hello\") for one function.\n\n---\nTwo functions: g = x; p2 = plot(g,x); (g + f).text(\"eggs fro g\", g) where the string prints the label for g, while \"g\" prints label only for f.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7798\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: axes, range\n\nThe purpose of the ticket is be able to recompute plots such that the following problem can be solved\n\n```\n\n# to increase the range of axis does not extend the plots\n# we need to recompute the plot to do that\nvar('x')\np = plot(x**,x)\np.set_axes_range(-10,10,-10,10)\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7798\n\n",
     "created_at": "2009-12-31T00:56:07Z",
     "labels": [
         "component: graphics",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
-    "title": "Text in Plots at any given Function",
+    "title": "Recomputing graphs after changing range of axes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7798",
     "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
@@ -19,12 +18,19 @@ archive/issues_007798.json:
 ```
 Assignee: @williamstein
 
-Keywords: plot, label
+Keywords: axes, range
 
-The purpose of the ticket is to locate where the function text should be applied to the function plot to be able to have lables for plots like: var('x'); f = x**2; p = plot(f,x); p.text("hello") for one function.
+The purpose of the ticket is be able to recompute plots such that the following problem can be solved
 
----
-Two functions: g = x; p2 = plot(g,x); (g + f).text("eggs fro g", g) where the string prints the label for g, while "g" prints label only for f.
+```
+
+# to increase the range of axis does not extend the plots
+# we need to recompute the plot to do that
+var('x')
+p = plot(x**,x)
+p.set_axes_range(-10,10,-10,10)
+
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7798
 

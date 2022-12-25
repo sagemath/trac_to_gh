@@ -1,16 +1,17 @@
-# Issue 697: NTL rewrite (splitting ntl.pyx down into each class)
+# Issue 697: [with patch] NTL rewrite (splitting ntl.pyx down into each class)
 
 archive/issues_000697.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is finally the big NTL rewrite.  It would be nice to get this integrated soon since David Harvey is already building on top of this for dense polys over ZZ.  Robert Bradshaw and Craig Citro are also champing at the bit.\n\nIssue created by migration from https://trac.sagemath.org/ticket/697\n\n",
+    "closed_at": "2007-09-20T21:18:57Z",
     "created_at": "2007-09-19T20:56:57Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "NTL rewrite (splitting ntl.pyx down into each class)",
+    "title": "[with patch] NTL rewrite (splitting ntl.pyx down into each class)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/697",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

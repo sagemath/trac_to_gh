@@ -1,16 +1,18 @@
-# Issue 5432: sage-combinat fixes: sage calls and qselect
+# Issue 5432: [with patch, positive review] sage-combinat fixes: sage calls and qselect
 
 archive/issues_005432.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nBug fixes:\n- Honor the SAGE_ROOT env variable to call sage\n- Removed config file handling which is now useless\n- Fixed missing default value for guards in qselect_backward_compatibility_patches\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5432\n\n",
+    "closed_at": "2009-03-04T23:54:55Z",
     "created_at": "2009-03-03T23:28:24Z",
     "labels": [
         "component: combinatorics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "sage-combinat fixes: sage calls and qselect",
+    "title": "[with patch, positive review] sage-combinat fixes: sage calls and qselect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5432",
     "user": "https://github.com/nthiery"

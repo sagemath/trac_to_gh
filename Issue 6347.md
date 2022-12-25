@@ -4,6 +4,7 @@ archive/issues_006347.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: singular\n\nIt turns out the bug discussed at #6051 and\n\n  http://www.singular.uni-kl.de:8002/trac/ticket/138\n\nis not an upstream bug but a problem in our conversion. Fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6347\n\n",
+    "closed_at": "2009-09-09T19:46:16Z",
     "created_at": "2009-06-17T15:32:55Z",
     "labels": [
         "component: commutative algebra"

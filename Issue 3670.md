@@ -4,10 +4,10 @@ archive/issues_003670.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nAs detailed in emails with cwitty, SymbolicEquation should be absorbed into a ==, <, etc, SymbolicOperator that is of sym_parent boolean parent (which is not yet implemented), to be based off of BooleanLattice.  Notzero should remain as is, but raise an exception of sym_parent is not boolean.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3670\n\n",
+    "closed_at": "2008-08-23T08:14:07Z",
     "created_at": "2008-07-17T11:14:45Z",
     "labels": [
-        "component: symbolics",
-        "bug"
+        "component: symbolics"
     ],
     "title": "symbolic equation should be merged into symbolic opeartors",
     "type": "issue",

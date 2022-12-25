@@ -1,16 +1,17 @@
-# Issue 4876: replace the two kash3 optional spkg's by a single optional spkg that works on both Linux and OS X, and gives a graceful message on other systems
+# Issue 4876: [with spkg; positive review] update to latest version of kash; improve spkg-install
 
 archive/issues_004876.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4876\n\n",
+    "body": "Assignee: mabshoff\n\nNEW Spkg at http://sage.math.washington.edu/home/was/patches/kash3-2008-07-31.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4876\n\n",
+    "closed_at": "2009-04-01T05:27:05Z",
     "created_at": "2008-12-24T19:55:15Z",
     "labels": [
-        "component: packages",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "replace the two kash3 optional spkg's by a single optional spkg that works on both Linux and OS X, and gives a graceful message on other systems",
+    "title": "[with spkg; positive review] update to latest version of kash; improve spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4876",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,7 @@ archive/issues_004876.json:
 ```
 Assignee: mabshoff
 
-
+NEW Spkg at http://sage.math.washington.edu/home/was/patches/kash3-2008-07-31.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/4876
 

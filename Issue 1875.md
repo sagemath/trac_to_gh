@@ -1,16 +1,17 @@
-# Issue 1875: increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)
+# Issue 1875: [with patch, with positive review] increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)
 
 archive/issues_001875.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1875\n\n",
+    "closed_at": "2008-01-26T16:57:01Z",
     "created_at": "2008-01-21T05:54:10Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)",
+    "title": "[with patch, with positive review] increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1875",
     "user": "https://github.com/williamstein"

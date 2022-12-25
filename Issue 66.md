@@ -3,11 +3,11 @@
 archive/issues_000066.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robert-marik @kcrisman @kini\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/66\n\n",
+    "body": "Assignee: boothby\n\nCC:  @robert-marik @kcrisman @kini\n\nAs the title states - notebook should be able export (=print) to latex/pdf/dvi\n\nIssue created by migration from https://trac.sagemath.org/ticket/66\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2006-09-17T21:48:12Z",
     "labels": [
-        "component: basic arithmetic",
-        "minor"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- should be able export (=print) to latex/pdf/dvi",
@@ -16,11 +16,11 @@ archive/issues_000066.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: boothby
 
 CC:  @robert-marik @kcrisman @kini
 
-
+As the title states - notebook should be able export (=print) to latex/pdf/dvi
 
 Issue created by migration from https://trac.sagemath.org/ticket/66
 

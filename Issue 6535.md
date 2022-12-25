@@ -4,6 +4,7 @@ archive/issues_006535.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMany spkg's have tons of `._` files in them since the spkg's were made on OS X.  To fix this we just have to set two environment variables. \n\n```\nMarshall Hampton notes the following:\n\nHelpful post on avoiding this:\n\nhttp://norman.walsh.name/2008/02/22/tar\n\n...upshot is that one should add\n\nexport COPYFILE_DISABLE=true\n\nto your profile if using leopard, or\n\nCOPY_EXTENDED_ATTRIBUTES_DISABLE=true\n\nif using tiger or previous stuff (I don't think many sage developers\nare using something pre-tiger at this point though).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6535\n\n",
+    "closed_at": "2013-05-16T07:58:34Z",
     "created_at": "2009-07-15T06:11:16Z",
     "labels": [
         "component: packages: standard",

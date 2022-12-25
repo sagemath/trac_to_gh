@@ -4,6 +4,7 @@ archive/issues_007459.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @kcrisman\n\nWhen we make the virtualbox sage image for sage-4.2.1, do the following:\n\n```\nThe easiest way is :\n\n1) Within VirtualBox, use the integrated web navigator SeaMonkey to go\nat :\n\nhttp://www.murga-linux.com/puppy/viewtopic.php?t=45981\n\n2) download the two packages :\nImageMagick-6.5.6-10.pet\nImageMagick_DEV-6.5.6-10.pet\n\nand in dialog, choose : open with petget\n\n3) installation is automatic.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7459\n\n",
+    "closed_at": "2012-06-02T13:31:10Z",
     "created_at": "2009-11-14T17:56:37Z",
     "labels": [
         "component: distribution"

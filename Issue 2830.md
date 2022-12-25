@@ -1,9 +1,10 @@
-# Issue 2830: ace-5.0.spkg fails to install
+# Issue 2830: [with spkg, positive review] ace-5.0.spkg fails to install
 
 archive/issues_002830.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe optional ace-5.0.spkg for the GAP component fails to install.  It tries to copy itself into the non-existent directory of GAP version 4.4.9 instead of the current version 4.4.10.\n\nThis can be fixed by changing line 3 of the spkg-install file to:\n\n```\nDEST=\"$SAGE_LOCAL\"/lib/gap-4.4.10/pkg/\n```\n\nHowever, as mabshoff says:\n\n''The proper fix in this  would be to use a variety of \"newest_version\". Right now it doesn't \nreturn the proper version you need: ''\n\n```\n$SAGE_ROOT/spkg/standard$ ./newest_version gap \ngap-4.4.10.p5 \n```\n*but after some discussion in debian-sage it now seems likely that we will switch to dashes for the patch level. *\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2830\n\n",
+    "closed_at": "2008-04-06T15:11:46Z",
     "created_at": "2008-04-06T14:31:03Z",
     "labels": [
         "component: packages: optional",
@@ -11,7 +12,7 @@ archive/issues_002830.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "ace-5.0.spkg fails to install",
+    "title": "[with spkg, positive review] ace-5.0.spkg fails to install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2830",
     "user": "https://github.com/NathanDunfield"

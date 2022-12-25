@@ -4,6 +4,7 @@ archive/issues_008932.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\n* Update the multiflow method\n* replace topological_sort to use Sage instead of NetworkX\n\nIssue created by migration from https://trac.sagemath.org/ticket/8932\n\n",
+    "closed_at": "2021-10-04T23:44:13Z",
     "created_at": "2010-05-08T15:51:09Z",
     "labels": [
         "component: graph theory"

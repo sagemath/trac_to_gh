@@ -4,6 +4,7 @@ archive/issues_009995.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  goodwillhart@googlemail.com jpflori @fchapoton\n\n## Hardware and software\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 \n\n## The problem\nFlint builds ok (see attached log), but the shared library has the wrong extension.\n\n```\n-bash-4.1$ ls local/lib/*flint*\nlocal/lib/libflint.so\n-bash-4.1$ file local/lib/libflint.so\nlocal/lib/libflint.so: executable (RISC System/6000) or object module not stripped\n```\n\nThis is not normal on AIX, where the extension for both shared and archive libraries should be `.a` and not `.so`. See \n[IBM compiler manual](http://publib.boulder.ibm.com/infocenter/comphelp/v7v91/index.jsp?topic=/com.ibm.vacpp7a.doc/getstart/overview/port_aix_obj_lib.htm) and [notes on GCC on AIX](http://www.ibm.com/developerworks/aix/library/au-gnu.html) \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9996\n\n",
+    "closed_at": "2020-06-25T13:34:01Z",
     "created_at": "2010-09-24T02:17:14Z",
     "labels": [
         "component: porting: aix or hp-ux",

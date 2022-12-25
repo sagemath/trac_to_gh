@@ -1,22 +1,23 @@
-# Issue 2185: [with patch, needs easy review] improvement to plotting digraphs with fixed heights
+# Issue 2185: [with patch, positive review] improvement to plotting digraphs with fixed heights
 
 archive/issues_002185.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis improves the way things look when you plot a digraph with the \"heights\" option. The width of the plot is now more intelligently arrived at, so that the arrows aren't so fat.\n\nDepends on #2184 and its dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2185\n\n",
+    "body": "Assignee: @rlmill\n\nThis improves the way things look when you plot a digraph with the \"heights\" option. The width of the plot is now more intelligently arrived at, so that the arrows aren't so fat.\n\nDepends on #2184 and its dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2185\n\n",
+    "closed_at": "2008-02-19T15:26:40Z",
     "created_at": "2008-02-16T23:36:12Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs easy review] improvement to plotting digraphs with fixed heights",
+    "title": "[with patch, positive review] improvement to plotting digraphs with fixed heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2185",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @williamstein
+Assignee: @rlmill
 
 This improves the way things look when you plot a digraph with the "heights" option. The width of the plot is now more intelligently arrived at, so that the arrows aren't so fat.
 

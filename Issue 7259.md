@@ -3,7 +3,8 @@
 archive/issues_007259.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, sets\n\nIn Sage 4.1, the category of a category was changed from Objects() to\nSets(). I.e. we used to have:\n\n  \tsage: Groups().category()\n  \tCategory of objects\n\nAnd now we have:\n\n\tsage: Groups().category()\n\tCategory of sets\n\nThe former sounds more natural to me, in particular because the\nobjects of Sets() are exactly the parents.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7259\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, sets\n\nIn Sage 4.1, the category of a category was changed from Objects() to Sets(). I.e. we used to have:\n\n```\nsage: Groups().category()\nCategory of objects\n```\nAnd now we have:\n\n```\nsage: Groups().category()\nCategory of sets\n```\n\nThe attached patch reverts this, in particular because the\nobjects of Sets() are exactly the parents.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7259\n\n",
+    "closed_at": "2009-10-23T09:11:54Z",
     "created_at": "2009-10-21T08:36:14Z",
     "labels": [
         "component: algebra",
@@ -22,19 +23,22 @@ CC:  sage-combinat
 
 Keywords: categories, sets
 
-In Sage 4.1, the category of a category was changed from Objects() to
-Sets(). I.e. we used to have:
+In Sage 4.1, the category of a category was changed from Objects() to Sets(). I.e. we used to have:
 
-  	sage: Groups().category()
-  	Category of objects
-
+```
+sage: Groups().category()
+Category of objects
+```
 And now we have:
 
-	sage: Groups().category()
-	Category of sets
+```
+sage: Groups().category()
+Category of sets
+```
 
-The former sounds more natural to me, in particular because the
+The attached patch reverts this, in particular because the
 objects of Sets() are exactly the parents.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7259
 

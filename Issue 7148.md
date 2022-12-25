@@ -1,16 +1,17 @@
-# Issue 7148: [with patch, needs review] tutorial: try to clarify the 'rings' section
+# Issue 7148: [with patch, positive review] tutorial: try to clarify the 'rings' section
 
 archive/issues_007148.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nThe section in the tutorial on rings can be confusing to people who aren't familiar with them, and since this precedes the material on matrices (for example), people wanting to know how to solve linear equations might be thrown off.  This patch attempts to remedy this, at least partially.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7148\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe section in the tutorial on rings can be confusing to people who aren't familiar with them, and since this precedes the material on matrices (for example), people wanting to know how to solve linear equations might be thrown off.  This patch attempts to remedy this, at least partially.\n\nThis patch depends on the scripts patches at #6572 -- without them, many of the doctests here will not actually be run.\n\nIf this patch is merged, then we should open up a ticket to do the same thing to the French version of the tutorial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7148\n\n",
+    "closed_at": "2009-10-15T09:22:31Z",
     "created_at": "2009-10-07T23:59:08Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] tutorial: try to clarify the 'rings' section",
+    "title": "[with patch, positive review] tutorial: try to clarify the 'rings' section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7148",
     "user": "https://github.com/jhpalmieri"
@@ -19,6 +20,10 @@ archive/issues_007148.json:
 Assignee: @jhpalmieri
 
 The section in the tutorial on rings can be confusing to people who aren't familiar with them, and since this precedes the material on matrices (for example), people wanting to know how to solve linear equations might be thrown off.  This patch attempts to remedy this, at least partially.
+
+This patch depends on the scripts patches at #6572 -- without them, many of the doctests here will not actually be run.
+
+If this patch is merged, then we should open up a ticket to do the same thing to the French version of the tutorial.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7148
 

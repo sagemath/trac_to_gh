@@ -3,7 +3,8 @@
 archive/issues_007573.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nThis crashes Sage:\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nThis crashes Sage:\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\nDepends on #7270 !!!!!!!!!!!!!!!!!!!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
+    "closed_at": "2009-12-02T08:07:46Z",
     "created_at": "2009-12-01T16:00:50Z",
     "labels": [
         "component: numerical",
@@ -30,6 +31,8 @@ sage: p.set_objective(sum([b[v] for v in g]))
 sage: p.set_binary(b)
 sage: p.solve(objective_only=True)
 ```
+
+Depends on #7270 !!!!!!!!!!!!!!!!!!!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7573
 

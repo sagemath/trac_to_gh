@@ -4,6 +4,7 @@ archive/issues_001435.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nBill Page fixed various bugs in the test suite and some portability issues with Solaris.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1435\n\n",
+    "closed_at": "2007-12-09T13:10:50Z",
     "created_at": "2007-12-09T12:55:46Z",
     "labels": [
         "component: packages: standard",

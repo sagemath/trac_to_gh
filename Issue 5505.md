@@ -4,6 +4,7 @@ archive/issues_005505.json:
 ```json
 {
     "body": "Assignee: tba\n\nREADME.txt doesn't say anything about how to make Sage accessible to multiple users; it should.  (Perhaps it could copy text from the installation guide, http://www.sagemath.org/doc/installation/source.html#installation-in-a-multiuser-environment)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5505\n\n",
+    "closed_at": "2014-08-20T20:36:01Z",
     "created_at": "2009-03-12T23:00:23Z",
     "labels": [
         "component: documentation",

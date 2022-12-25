@@ -1,15 +1,16 @@
-# Issue 3657: [with patch against 3.0.5, needs review] Documentation for latin squares, DLXCPP; minor fixes
+# Issue 3657: [with patch, positive review] Documentation for latin squares, DLXCPP; minor fixes
 
 archive/issues_003657.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFixed some LaTeX problems so that the docs from latin.py would compile properly, also fixed some minor things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3657\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: editor_mhansen\n\nFixed some LaTeX problems so that the docs from latin.py would compile properly, also fixed some minor things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3657\n\n",
+    "closed_at": "2008-07-16T03:26:52Z",
     "created_at": "2008-07-15T11:59:28Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch against 3.0.5, needs review] Documentation for latin squares, DLXCPP; minor fixes",
+    "title": "[with patch, positive review] Documentation for latin squares, DLXCPP; minor fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3657",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
@@ -18,6 +19,8 @@ archive/issues_003657.json:
 Assignee: @mwhansen
 
 CC:  sage-combinat
+
+Keywords: editor_mhansen
 
 Fixed some LaTeX problems so that the docs from latin.py would compile properly, also fixed some minor things.
 

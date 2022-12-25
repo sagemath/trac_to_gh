@@ -1,15 +1,16 @@
-# Issue 4658: magma -- get rid of redundant caching: just have _magma_init_
+# Issue 4658: [with patch; positive review] magma -- get rid of redundant caching: just have _magma_init_
 
 archive/issues_004658.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4658\n\n",
+    "body": "Assignee: @williamstein\n\n* Get rid of _magma_ and _magma_convert_. Now there is *only* _magma_init_.  The other two are not necessary.\n* Add more magma doctests throughout. \n* In some cases there were three totally different caching mechanisms being used.  Cleaned this up.\n* Created a new \"reference\" system, (see the _ref method), that nicely solves a seemingly difficult issue with objects being freed before they are used. \n* Cache all parents no matter what, even if they don't explicit support caching.  This fixes several subtle cases. \n* Made a bunch of cython code much shorter/cleaner by using list compressions.\n* Fixed some ints that should be Py_ssize_t's.\n\nTo doctest this apply the one patch to sage >= 3.2.1 and do\n\n```\ncd SAGE_ROOT/devel/sage/sage\nsage -tp 6 -only_optional=magma .\n```\n\nAll doctests should pass on Linux.   On OS X some may fail, due to bugs in Magma (segfaults). \n\nSince this touches code all of the tree it is high priority to get into sage asap. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4658\n\n",
+    "closed_at": "2008-11-30T08:35:50Z",
     "created_at": "2008-11-29T23:50:12Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "magma -- get rid of redundant caching: just have _magma_init_",
+    "title": "[with patch; positive review] magma -- get rid of redundant caching: just have _magma_init_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4658",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,24 @@ archive/issues_004658.json:
 ```
 Assignee: @williamstein
 
+* Get rid of _magma_ and _magma_convert_. Now there is *only* _magma_init_.  The other two are not necessary.
+* Add more magma doctests throughout. 
+* In some cases there were three totally different caching mechanisms being used.  Cleaned this up.
+* Created a new "reference" system, (see the _ref method), that nicely solves a seemingly difficult issue with objects being freed before they are used. 
+* Cache all parents no matter what, even if they don't explicit support caching.  This fixes several subtle cases. 
+* Made a bunch of cython code much shorter/cleaner by using list compressions.
+* Fixed some ints that should be Py_ssize_t's.
 
+To doctest this apply the one patch to sage >= 3.2.1 and do
+
+```
+cd SAGE_ROOT/devel/sage/sage
+sage -tp 6 -only_optional=magma .
+```
+
+All doctests should pass on Linux.   On OS X some may fail, due to bugs in Magma (segfaults). 
+
+Since this touches code all of the tree it is high priority to get into sage asap. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4658
 

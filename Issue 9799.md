@@ -1,16 +1,16 @@
-# Issue 9799: doctutils fails to run test suite when SAGE_CHECK=yes. Missing spkg-check
+# Issue 9799: docutils fails to run test suite when SAGE_CHECK=yes. Missing spkg-check
 
 archive/issues_009799.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @nexttime @qed777\n\nThe `docutils` package, which is at version 0.5 in sage, lacks a spkg-check file, so the self-tests can't be run. But the package has a set of tests, which according to the `README.txt` is executed as below. \n\n```\nRunning the Test Suite\n======================\n\nTo run the entire test suite, after installation_ open a shell and use\nthe following commands::\n\n    cd <archive_directory_path>/test\n    ./alltests.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9800\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @nexttime @qed777\n\nKeywords: docutils\n\nThe `docutils` package, which is at version 0.5 in sage, lacks a spkg-check file, so the self-tests can't be run. But the package has a set of tests, which according to the `README.txt` is executed as below. \n\n```\nRunning the Test Suite\n======================\n\nTo run the entire test suite, after installation_ open a shell and use\nthe following commands::\n\n    cd <archive_directory_path>/test\n    ./alltests.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9800\n\n",
     "created_at": "2010-08-25T13:00:18Z",
     "labels": [
         "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "doctutils fails to run test suite when SAGE_CHECK=yes. Missing spkg-check",
+    "title": "docutils fails to run test suite when SAGE_CHECK=yes. Missing spkg-check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9799",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -19,6 +19,8 @@ archive/issues_009799.json:
 Assignee: drkirkby
 
 CC:  @nexttime @qed777
+
+Keywords: docutils
 
 The `docutils` package, which is at version 0.5 in sage, lacks a spkg-check file, so the self-tests can't be run. But the package has a set of tests, which according to the `README.txt` is executed as below. 
 

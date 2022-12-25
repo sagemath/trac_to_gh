@@ -4,6 +4,7 @@ archive/issues_009845.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: help info parallel\n\nsage: help(parallel)\n\nhelp on function parallel in module sage.parallel.decorate:\n\nparallel(p_iter='fork', ncpus=None, **kwds)\n    This is a decorator that gives a function a parallel interface,\n    allowing it to be called with a list of inputs, whose ***valuaes*** will\n    be computed in parallel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9846\n\n",
+    "closed_at": "2011-01-19T22:21:50Z",
     "created_at": "2010-09-01T05:48:06Z",
     "labels": [
         "component: documentation",

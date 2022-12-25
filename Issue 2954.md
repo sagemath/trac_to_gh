@@ -1,9 +1,10 @@
-# Issue 2954: [with spkg. needs review] ATLAS 3.8.1: Fix Itanium 2 detection on Itanium/gcc compiler flags on RHEL5/Itanium
+# Issue 2954: [with spkg, positive review] ATLAS 3.8.1: Fix Itanium 2 detection on Itanium/gcc compiler flags on RHEL5/Itanium
 
 archive/issues_002954.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nItanium 2 on RHEL 5 and pretty much any other modern kernel is not properly detected. ATLAS also uses the -m64 flags which is not available on RHEL 5 on Itanium. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha6/atlas-3.8.1.p0.spkg\n\nfixes both issues.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2954\n\n",
+    "closed_at": "2008-04-19T06:52:43Z",
     "created_at": "2008-04-19T04:00:01Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002954.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg. needs review] ATLAS 3.8.1: Fix Itanium 2 detection on Itanium/gcc compiler flags on RHEL5/Itanium",
+    "title": "[with spkg, positive review] ATLAS 3.8.1: Fix Itanium 2 detection on Itanium/gcc compiler flags on RHEL5/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2954",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,10 +3,11 @@
 archive/issues_007532.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\nOn Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n> In ring.pyx, there is code like this:\n>\n>        if proof:\n>            return NotImplementedError\n>        else:\n>            return False\n>\n> I would think that the second line should say \"raise\n> NotImplementedError\".  (Changing it makes some doctests fail,\n> though.)  Is there a good reason for doing \"return\n> NotImplementedError\"?\n\nThat's *definitely* a bug.   No question about it. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7532\n\n",
+    "body": "Assignee: @JohnCremona\n\n```\nOn Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n> In ring.pyx, there is code like this:\n>\n>        if proof:\n>            return NotImplementedError\n>        else:\n>            return False\n>\n> I would think that the second line should say \"raise\n> NotImplementedError\".  (Changing it makes some doctests fail,\n> though.)  Is there a good reason for doing \"return\n> NotImplementedError\"?\n\nThat's *definitely* a bug.   No question about it. \n```\n\nAddendum: apply the patches `trac_7532.patch` and `trac_7532-rings.patch`.  Depends on #7535.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7532\n\n",
+    "closed_at": "2010-01-23T20:03:36Z",
     "created_at": "2009-11-26T05:37:36Z",
     "labels": [
-        "component: algebra",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
@@ -16,7 +17,7 @@ archive/issues_007532.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @aghitza
+Assignee: @JohnCremona
 
 ```
 On Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:
@@ -34,6 +35,8 @@ On Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:
 
 That's *definitely* a bug.   No question about it. 
 ```
+
+Addendum: apply the patches `trac_7532.patch` and `trac_7532-rings.patch`.  Depends on #7535.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7532
 

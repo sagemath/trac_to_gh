@@ -1,16 +1,17 @@
-# Issue 1627: update libgcrypt to 1.4
+# Issue 1627: [with spkg] update libgcrypt to 1.4
 
 archive/issues_001627.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1627\n\n",
+    "closed_at": "2008-01-19T23:34:15Z",
     "created_at": "2007-12-29T04:40:24Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update libgcrypt to 1.4",
+    "title": "[with spkg] update libgcrypt to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1627",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

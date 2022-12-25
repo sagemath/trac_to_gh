@@ -1,9 +1,10 @@
-# Issue 1783: fix latex errors with fraction field elements
+# Issue 1783: [with patch, with positive review] fix latex errors with fraction field elements
 
 archive/issues_001783.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nsage:             sage: R = PolynomialRing(QQ, 'x').fraction_field()\nsage:             sage: x = R.gen()\nsage:             sage: a = 1/x\nsage:             sage: a._FractionFieldElement__numerator = R(0)\nsage:             sage: latex(a)\n\\frac{0}{x}\n```\n\nIt should instead give 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1783\n\n",
+    "closed_at": "2008-01-15T19:47:56Z",
     "created_at": "2008-01-15T19:06:52Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_001783.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "fix latex errors with fraction field elements",
+    "title": "[with patch, with positive review] fix latex errors with fraction field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1783",
     "user": "https://github.com/mwhansen"

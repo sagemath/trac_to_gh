@@ -1,16 +1,17 @@
-# Issue 4241: magma -- memory is never freed in the interface when MagmaElement's are deleted
+# Issue 4241: [with patch; positive review] magma -- memory is never freed in the interface when MagmaElement's are deleted
 
 archive/issues_004241.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nObserve:\n\n```\nsage: a = magma('10000')\nsage: a.name()\n'_sage_[1]'\nsage: del a\nsage: magma.eval('_sage_[1]')\n'10000'\n```\n\nWhenever anybody ever creates a MagmaElement via the Magma interface, it doesn't get deleted.  This is because possible (1) the clear method in magma.py is commented out, and/or (2) the _available_var list that gets appended to in (1) isn't actually used by magma.py, so e.g., _sage_[1] in the example above never gets re-used. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4241\n\n",
+    "closed_at": "2008-10-27T04:19:14Z",
     "created_at": "2008-10-04T05:01:55Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "magma -- memory is never freed in the interface when MagmaElement's are deleted",
+    "title": "[with patch; positive review] magma -- memory is never freed in the interface when MagmaElement's are deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4241",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,18 @@
-# Issue 835: cannot coerce real numbers to Integer
+# Issue 835: [with patch] cannot coerce real numbers to Integer
 
 archive/issues_000835.json:
 ```json
 {
     "body": "Assignee: somebody\n\nIf a real number is exactly an integer, it should be possible to coerce to an Integer, but this is what happens:\n\n```\nsage: Integer(RR(2.0))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/835\n\n",
+    "closed_at": "2007-10-13T05:46:07Z",
     "created_at": "2007-10-06T15:33:28Z",
     "labels": [
         "component: basic arithmetic",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "cannot coerce real numbers to Integer",
+    "title": "[with patch] cannot coerce real numbers to Integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/835",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

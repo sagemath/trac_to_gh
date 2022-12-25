@@ -4,6 +4,7 @@ archive/issues_005950.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n-bdist should add something analog to the SSE flags on Linux so that if someone tried to run a ppc build on an x86 it aborts with a sane error message instead of just blowing up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5950\n\n",
+    "closed_at": "2015-01-13T01:16:05Z",
     "created_at": "2009-04-30T21:50:58Z",
     "labels": [
         "component: distribution"

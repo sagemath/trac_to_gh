@@ -4,6 +4,7 @@ archive/issues_001203.json:
 ```json
 {
     "body": "Assignee: failure\n\n```\nsage -t  devel/sage-main/sage/libs/flint/fmpz_poly.pyx      **********************************************************************\nFile \"fmpz_poly.pyx\", line 271:\n    sage: g / f\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[3]>\", line 1, in <module>\n        g / f###line 271:\n    sage: g / f\n    TypeError: unsupported operand type(s) for /: 'sage.libs.flint.fmpz_poly.Fmpz_poly' and 'sage.libs.flint.fmpz_poly.Fmpz_poly'\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1203\n\n",
+    "closed_at": "2007-11-20T09:41:30Z",
     "created_at": "2007-11-18T23:12:10Z",
     "labels": [
         "component: doctest coverage",

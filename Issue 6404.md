@@ -1,21 +1,24 @@
-# Issue 6404: Typeseting for conjugate() of symbolic function is inadequate
+# Issue 6404: [with patch, positive review] Typeseting for conjugate() of symbolic function is inadequate
 
 archive/issues_006404.json:
 ```json
 {
-    "body": "In current Sage (4.0.2), while typesetting conjugate() of\nan symbolic expression, latex symbol \"\\bar\" is used\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\nThe problem with \"\\bar\" is that it is of fixed width and not scalable. For example, this is inadequate for symbolic functions\n\n```\nsage: x,y=var('x,y')\nsage: f = function('psi',x,y)\nsage: latex(f.conjugate())\n\\bar{\\psi\\left(x, y\\right)\n```\n\nA better solution is to use \"\\overline\" instead of \"\\bar\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6404\n\n",
+    "body": "Assignee: @burcin\n\nIn current Sage (4.0.2), while typesetting conjugate() of\nan symbolic expression, latex symbol \"\\bar\" is used\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\nThe problem with \"\\bar\" is that it is of fixed width and not scalable. For example, this is inadequate for symbolic functions\n\n```\nsage: x,y=var('x,y')\nsage: f = function('psi',x,y)\nsage: latex(f.conjugate())\n\\bar{\\psi\\left(x, y\\right)\n```\n\nA better solution is to use \"\\overline\" instead of \"\\bar\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6404\n\n",
+    "closed_at": "2009-08-03T00:28:00Z",
     "created_at": "2009-06-25T14:22:31Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Typeseting for conjugate() of symbolic function is inadequate",
+    "title": "[with patch, positive review] Typeseting for conjugate() of symbolic function is inadequate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6404",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Assignee: @burcin
+
 In current Sage (4.0.2), while typesetting conjugate() of
 an symbolic expression, latex symbol "\bar" is used
 

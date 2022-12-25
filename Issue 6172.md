@@ -1,17 +1,17 @@
-# Issue 6172: add support for building FAT binaries to mpir
+# Issue 6172: [with patch; positive review] add support for building FAT binaries to mpir
 
 archive/issues_006172.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSee trac #5818, which is related to this, but not the same.  In particular, see the big remark by Bill Hart.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6172\n\n",
+    "closed_at": "2009-06-01T01:13:20Z",
     "created_at": "2009-05-31T23:52:17Z",
     "labels": [
         "component: distribution",
-        "blocker",
-        "bug"
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "add support for building FAT binaries to mpir",
+    "title": "[with patch; positive review] add support for building FAT binaries to mpir",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6172",
     "user": "https://github.com/williamstein"

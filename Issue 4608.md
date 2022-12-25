@@ -3,7 +3,8 @@
 archive/issues_004608.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
+    "closed_at": "2010-04-30T16:25:35Z",
     "created_at": "2008-11-25T00:33:55Z",
     "labels": [
         "component: combinatorics",
@@ -16,7 +17,7 @@ archive/issues_004608.json:
     "user": "https://github.com/saliola"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 

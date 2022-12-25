@@ -1,16 +1,16 @@
-# Issue 1475: notebook -- lprint() -- make an option so lprint is done automatically
+# Issue 1475: [with patch, needs work] notebook -- lprint() -- make an option so lprint is done automatically
 
 archive/issues_001475.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n[07:23am] ikaruga2099: while make test is running.... do you know how to enable the auto latex output (as per the presentation on the website)? Currently, if I do latex(command), I get back text not a typeset equation...\n[07:23am] william-doctest-: lprint()\n[07:24am] ikaruga2099: oh.... is there a way to have that called automatically?\n[07:26am] william-doctest-: Not *yet*.  It's planned.  I'll create a trac ticket.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1475\n\n",
+    "closed_at": "2009-10-21T07:46:24Z",
     "created_at": "2007-12-12T15:28:19Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "notebook -- lprint() -- make an option so lprint is done automatically",
+    "title": "[with patch, needs work] notebook -- lprint() -- make an option so lprint is done automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1475",
     "user": "https://github.com/williamstein"

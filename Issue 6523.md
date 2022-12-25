@@ -3,7 +3,8 @@
 archive/issues_006523.json:
 ```json
 {
-    "body": "CC:  @mwhansen\n\nIf a symbolic expression contains \u00a0symbolic derivative then\nchecking whether it is zero, raises error:\n\n```\nsage: x.diff(x,2).is_zero()\nTrue\n\nsage: f(x) = function('f',x)\nsage: f(x).diff(x).is_zero()\n....\nNotImplementedError: derivative\n```\n\nThis fails because new symbolics tries to convert it to maxima\nexpression for checking the relation.\n\nIt works fine for any other expression not involving symbolic\nderivative and without invoking maxima.\n\nIt seems to me, pynac relational test needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6523\n\n",
+    "body": "CC:  @mwhansen\n\nIf a symbolic expression contains \u00a0symbolic derivative then\nchecking whether it is zero, raises error:\n\n```\nsage: x.diff(x,2).is_zero()\nTrue\n\nsage: f(x) = function('f',x)\nsage: f(x).diff(x).is_zero()\n....\nNotImplementedError: derivative\n```\n\nThis fails because new symbolics tries to convert it to maxima\nexpression for checking the relation.\n\n**Update:**\n\n***** A patch to fix the issue is attached. The patch \nadds a new method \".has_fderivative()\" for symbolic expressions \nand in `__nonzero__` method adds a check whether it has fderivative.\n\n**Comments**  (for future works):\nA simple timing comparison that illustrates why we should\navoid calling maxima to assert nonzero even for symbolic \nfunctions\n\n```\nsage: f(x) = function('f',x)\nsage: timeit('sin(f(x)).is_zero()')\n5 loops, best of 3: 85.8 ms per loop\nsage: timeit('sin(f(x).diff(x)).is_zero()')\n625 loops, best of 3: 132 \u00b5s per loop\n```  \n\nIt seems pynac is 400 times faster than maxima in this case.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6523\n\n",
+    "closed_at": "2009-12-06T08:33:39Z",
     "created_at": "2009-07-13T11:39:09Z",
     "labels": [
         "component: symbolics",
@@ -34,10 +35,27 @@ NotImplementedError: derivative
 This fails because new symbolics tries to convert it to maxima
 expression for checking the relation.
 
-It works fine for any other expression not involving symbolic
-derivative and without invoking maxima.
+**Update:**
 
-It seems to me, pynac relational test needs to be fixed.
+***** A patch to fix the issue is attached. The patch 
+adds a new method ".has_fderivative()" for symbolic expressions 
+and in `__nonzero__` method adds a check whether it has fderivative.
+
+**Comments**  (for future works):
+A simple timing comparison that illustrates why we should
+avoid calling maxima to assert nonzero even for symbolic 
+functions
+
+```
+sage: f(x) = function('f',x)
+sage: timeit('sin(f(x)).is_zero()')
+5 loops, best of 3: 85.8 ms per loop
+sage: timeit('sin(f(x).diff(x)).is_zero()')
+625 loops, best of 3: 132 µs per loop
+```  
+
+It seems pynac is 400 times faster than maxima in this case.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6523
 

@@ -1,16 +1,17 @@
-# Issue 867: [with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras)
+# Issue 867: [with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras) and a few other misc. fixes
 
 archive/issues_000867.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/867\n\n",
+    "closed_at": "2007-10-13T07:55:16Z",
     "created_at": "2007-10-12T23:18:36Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "[with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras)",
+    "title": "[with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras) and a few other misc. fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/867",
     "user": "https://github.com/mwhansen"

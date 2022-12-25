@@ -1,15 +1,16 @@
-# Issue 6517: [with SPKG, needs review] FriCAS 1.0.7
+# Issue 6517: FriCAS X.Y.Z
 
 archive/issues_006517.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  bpage @mwhansen @hemmecke\n\nThis is an update to fricas to use ecl and to update to the recent fricas release. The package is based on fricas-1.0.3.p0.spkg. \n\nThe package can be downloaded here: http://www.mediafire.com/file/im5zd201mh0/fricas-1.0.7.p0.spkg\n\nAdam\n\nIssue created by migration from https://trac.sagemath.org/ticket/6517\n\n",
+    "body": "Assignee: tbd\n\nCC:  bpage @mwhansen @hemmecke\n\nThis is an update to fricas to use ecl and to update to the recent fricas release. \n\nAdam\n\nIssue created by migration from https://trac.sagemath.org/ticket/6517\n\n",
+    "closed_at": "2010-06-27T20:07:46Z",
     "created_at": "2009-07-12T11:52:39Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with SPKG, needs review] FriCAS 1.0.7",
+    "title": "FriCAS X.Y.Z",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6517",
     "user": "https://github.com/maxthemouse"
@@ -19,9 +20,7 @@ Assignee: tbd
 
 CC:  bpage @mwhansen @hemmecke
 
-This is an update to fricas to use ecl and to update to the recent fricas release. The package is based on fricas-1.0.3.p0.spkg. 
-
-The package can be downloaded here: http://www.mediafire.com/file/im5zd201mh0/fricas-1.0.7.p0.spkg
+This is an update to fricas to use ecl and to update to the recent fricas release. 
 
 Adam
 

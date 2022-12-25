@@ -1,22 +1,23 @@
-# Issue 1707: add Carlo Hamalainen latin square stuff to Sage
+# Issue 1707: [with patch, positive review] add Carlo Hamalainen's latin square stuff to Sage
 
 archive/issues_001707.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1707\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1707\n\n",
+    "closed_at": "2008-03-25T14:33:09Z",
     "created_at": "2008-01-07T07:51:28Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: combinatorics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "add Carlo Hamalainen latin square stuff to Sage",
+    "title": "[with patch, positive review] add Carlo Hamalainen's latin square stuff to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1707",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

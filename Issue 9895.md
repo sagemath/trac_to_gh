@@ -1,9 +1,10 @@
-# Issue 9895: upgrading from 4.5.3 to 4.6.alpha0 fails on OS X 10.6
+# Issue 9895: Upgrading from 4.5.3 to 4.6.alpha* can fail (not limited to MacOS X)
 
 archive/issues_009895.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @JohnCremona drkirkby @jdemeyer @nexttime justin @mwhansen\n\nOn two separate machines running OS X 10.6, upgrading from 4.5.3 to 4.6.alpha0 seemed to work -- no errors were reported -- but Sage fails to start:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n  ***   bug in PARI/GP (Segmentation Fault), please report\n  ***   bug in PARI/GP (Segmentation Fault), please report\n```\n(Building from scratch works fine.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9896\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @JohnCremona drkirkby @jdemeyer @nexttime justin @mwhansen\n\nKeywords: upgrade update dependencies PARI NewPARI\n\nOn two separate machines running OS X 10.6, upgrading from 4.5.3 to 4.6.alpha0 seemed to work -- no errors were reported -- but Sage fails to start:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n  ***   bug in PARI/GP (Segmentation Fault), please report\n  ***   bug in PARI/GP (Segmentation Fault), please report\n```\n(Building from scratch works fine.)\n| Sage Version 4.6.alpha0, Release Date: 2010-09-10                  |\n| Type notebook() for the GUI, and license() for information.        |\n---\n\n## How to test:\n\n'''Upgrade path for testing the fixes:\nhttp://sage.math.washington.edu/home/release/sage-4.6.rc0/sage-4.6.rc0/'''\n\nNote that **non-inplace upgrades** had been **broken in** Sage 4.6.**alpha3**, due to the inclusion of matplotlib 1.0.0 (#9221) into that version. To temporarily work around this, it is sufficient to trigger a rebuild of freetype during the upgrade **when upgrading from a moved (copied or renamed) Sage installation to alpha3**:\n\n```sh\n$ rm spkg/installed/freetype-*\n```\n**This is not required for the rc0 upgrade path.**\n\nIf you want to speed up the upgrade (i.e., reduce the number of packages that get rebuilt) **on systems other than Cygwin, HP-UX and Solaris**, do the following **before** starting the upgrade:\n\n```sh\n$ touch spkg/installed/iconv-1.13.1.p3 # fake it was already installed\n```\n(This package is only used on the above systems, but upgrading it triggers the rebuild of MPIR on **any** platform, which in turn causes rebuilding all packages that directly or indirectly depend on MPIR, the GMP replacement package.)\n\nDo the upgrade:\n\n```sh\n$ ./sage -upgrade http://sage.math.washington.edu/home/release/sage-4.6.rc0/sage-4.6.rc0/\n```\nNote that you'll be prompted to confirm upgrading (by typing \"y\" followed by carriage return), so be careful when `tee`ing the output, since currently the script's output isn't flushed s.t. you won't see the prompt in that case and perhaps wait forever... ;-) (this has been fixed in #10011.)\n\n---\n\n## To the release manager / How to merge this ticket:\n* Replace `spkg/install` by http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-SAGE_ROOT__spkg__install.v2b\n* Replace `spkg/standard/deps` by http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v3\n* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/9896_scripts_hgignore.patch to the **Sage scripts repository** (Not mandatory, but helpful.)\n* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch to the **Sage scripts repository**\n* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_extension_module_deps-sagelib.patch to the **Sage library repository**\n* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch to the **Sage library repository**\n* Run `./sage -sdist ...`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9896\n\n",
+    "closed_at": "2010-10-30T09:39:17Z",
     "created_at": "2010-09-11T06:04:41Z",
     "labels": [
         "component: build",
@@ -11,15 +12,17 @@ archive/issues_009895.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "upgrading from 4.5.3 to 4.6.alpha0 fails on OS X 10.6",
+    "title": "Upgrading from 4.5.3 to 4.6.alpha* can fail (not limited to MacOS X)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9895",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: @nexttime
 
 CC:  @JohnCremona drkirkby @jdemeyer @nexttime justin @mwhansen
+
+Keywords: upgrade update dependencies PARI NewPARI
 
 On two separate machines running OS X 10.6, upgrading from 4.5.3 to 4.6.alpha0 seemed to work -- no errors were reported -- but Sage fails to start:
 
@@ -35,6 +38,47 @@ On two separate machines running OS X 10.6, upgrading from 4.5.3 to 4.6.alpha0 s
   ***   bug in PARI/GP (Segmentation Fault), please report
 ```
 (Building from scratch works fine.)
+| Sage Version 4.6.alpha0, Release Date: 2010-09-10                  |
+| Type notebook() for the GUI, and license() for information.        |
+---
+
+## How to test:
+
+'''Upgrade path for testing the fixes:
+http://sage.math.washington.edu/home/release/sage-4.6.rc0/sage-4.6.rc0/'''
+
+Note that **non-inplace upgrades** had been **broken in** Sage 4.6.**alpha3**, due to the inclusion of matplotlib 1.0.0 (#9221) into that version. To temporarily work around this, it is sufficient to trigger a rebuild of freetype during the upgrade **when upgrading from a moved (copied or renamed) Sage installation to alpha3**:
+
+```sh
+$ rm spkg/installed/freetype-*
+```
+**This is not required for the rc0 upgrade path.**
+
+If you want to speed up the upgrade (i.e., reduce the number of packages that get rebuilt) **on systems other than Cygwin, HP-UX and Solaris**, do the following **before** starting the upgrade:
+
+```sh
+$ touch spkg/installed/iconv-1.13.1.p3 # fake it was already installed
+```
+(This package is only used on the above systems, but upgrading it triggers the rebuild of MPIR on **any** platform, which in turn causes rebuilding all packages that directly or indirectly depend on MPIR, the GMP replacement package.)
+
+Do the upgrade:
+
+```sh
+$ ./sage -upgrade http://sage.math.washington.edu/home/release/sage-4.6.rc0/sage-4.6.rc0/
+```
+Note that you'll be prompted to confirm upgrading (by typing "y" followed by carriage return), so be careful when `tee`ing the output, since currently the script's output isn't flushed s.t. you won't see the prompt in that case and perhaps wait forever... ;-) (this has been fixed in #10011.)
+
+---
+
+## To the release manager / How to merge this ticket:
+* Replace `spkg/install` by http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-SAGE_ROOT__spkg__install.v2b
+* Replace `spkg/standard/deps` by http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v3
+* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/9896_scripts_hgignore.patch to the **Sage scripts repository** (Not mandatory, but helpful.)
+* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch to the **Sage scripts repository**
+* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_extension_module_deps-sagelib.patch to the **Sage library repository**
+* Apply http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch to the **Sage library repository**
+* Run `./sage -sdist ...`
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9896
 

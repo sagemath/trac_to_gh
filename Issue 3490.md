@@ -1,15 +1,16 @@
-# Issue 3490: notebook -- improve registration error checking and reporting
+# Issue 3490: [with patch, positive review] notebook -- improve registration error checking and reporting
 
 archive/issues_003490.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nThis is a follow up to #3483.\n\nis_valid_username should be upgraded to follow this rule:\n\n```\nYour username must start with a letter and be between 4 and 32 characters long. You may only use letters, numbers, underscores, and one dot (.).\n```\n\nA new function, is_valid_password, should be added that follows this rule:\n\n```\nYour password must be between 6 and 32 characters long. Your password can not contain your username nor spaces.\n```\n\nCheck to make sure the input for password and retype_password are the same.\n\nCurrently only one error is reported even if there is several of them. Report all errors to the user.\n\nDon't loose the user's input except for password/retype_password when returning error reports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3490\n\n",
+    "closed_at": "2008-06-25T06:34:13Z",
     "created_at": "2008-06-21T04:48:49Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- improve registration error checking and reporting",
+    "title": "[with patch, positive review] notebook -- improve registration error checking and reporting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3490",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

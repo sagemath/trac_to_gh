@@ -1,16 +1,17 @@
-# Issue 1899: Calling graphs with a matrix and loops=True blows up
+# Issue 1899: [with patch, positive review] Making graphs with a matrix and loops=True blows up
 
 archive/issues_001899.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: Graph(matrix([[1,2],[3,4]]),loops=True)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/home/jason/download/sage-2.10-Linux-i686-Linux/devel/sage-main/sage/combinat/<ipython console> in <module>()\n\n/home/was/build/sage-2.10/local/lib/python2.5/site-packages/sage/graphs/graph.py in __init__(self, data, pos, loops, format, boundary, weighted, **kwds)\n\n<type 'exceptions.NameError'>: global name 'multiedges' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1899\n\n",
+    "closed_at": "2008-01-24T04:04:40Z",
     "created_at": "2008-01-23T22:19:40Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Calling graphs with a matrix and loops=True blows up",
+    "title": "[with patch, positive review] Making graphs with a matrix and loops=True blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1899",
     "user": "https://github.com/jasongrout"

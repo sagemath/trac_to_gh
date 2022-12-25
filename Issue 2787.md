@@ -3,7 +3,7 @@
 archive/issues_002787.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman ktkohl\n\nIt would be nice if the following worked, if f was a function:\n\n```\nsage: integrate(f, x)\n\nsage: # Double indefinite integral wrt x\nsage: integrate(f, x, x)\n\nsage: # limits and a double integral: x is the inner integral, y is the outer integral (note that this order is backwards from Mma...they think of nested integrals as int dx int dy function, so the first parameter is the outer integral in Mma.)\nsage: integrate(f, (x, 0, 1), (y, 1, 2))\nsage: integrate(f, (x, 0, y), (y, 1, 2))\n\nsage: # Double integral, x is the inner integral, y is the outer integral\nsage: integrate(f, x, y)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2787\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman ktkohl\n\nIt would be nice if the following worked, if f was a function:\n\n```\nsage: integrate(f, x)\n\nsage: # Double indefinite integral wrt x\nsage: integrate(f, x, x)\n\nsage: # limits and a double integral: x is the inner integral, y is the outer integral (note that this order is backwards from Mma...they think of nested integrals as int dx int dy function, so the first parameter is the outer integral in Mma.)\nsage: integrate(f, (x, 0, 1), (y, 1, 2))\nsage: integrate(f, (x, 0, y), (y, 1, 2))\n\nsage: # Double integral, x is the inner integral, y is the outer integral\nsage: integrate(f, x, y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2787\n\n",
     "created_at": "2008-04-03T02:38:39Z",
     "labels": [
         "component: calculus"
@@ -34,6 +34,7 @@ sage: integrate(f, (x, 0, y), (y, 1, 2))
 sage: # Double integral, x is the inner integral, y is the outer integral
 sage: integrate(f, x, y)
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2787
 

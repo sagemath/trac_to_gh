@@ -4,6 +4,7 @@ archive/issues_008017.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n```\n\nFollowup to and depends on #5107, which documents the function better. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8017\n\n",
+    "closed_at": "2010-08-09T09:47:51Z",
     "created_at": "2010-01-21T00:12:58Z",
     "labels": [
         "component: basic arithmetic",

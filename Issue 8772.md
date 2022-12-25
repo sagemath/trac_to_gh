@@ -7,7 +7,6 @@ archive/issues_008772.json:
     "created_at": "2010-04-26T21:00:59Z",
     "labels": [
         "component: interfaces",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",

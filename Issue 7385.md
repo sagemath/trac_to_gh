@@ -4,6 +4,7 @@ archive/issues_007385.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen I go to this published page:\n\nhttp://www.sagenb.org/home/pub/924/\n\nIt asks me about renaming the page, presumably because it's titled \"Untitled\".\n\nOf course, this is silly; it's not my page, and it's a static published page anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7385\n\n",
+    "closed_at": "2009-11-11T22:15:20Z",
     "created_at": "2009-11-03T20:59:04Z",
     "labels": [
         "component: notebook",

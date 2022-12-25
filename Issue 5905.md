@@ -1,9 +1,10 @@
-# Issue 5905: [with patch, needs review (trivial)] minor fix to ReST markup in ell_rational_field.py
+# Issue 5905: [with patch, positive review] minor fix to ReST markup in ell_rational_field.py
 
 archive/issues_005905.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: elliptic curve docbuild\n\nThere are two glitches in the docstring for function has_good_reduction_outside_S() in sage/schemes/elliptic_curves/ell_rational_field.py .\n\nThe ptach fixes them.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5905\n\n",
+    "closed_at": "2009-04-30T01:09:51Z",
     "created_at": "2009-04-26T20:05:06Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005905.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review (trivial)] minor fix to ReST markup in ell_rational_field.py",
+    "title": "[with patch, positive review] minor fix to ReST markup in ell_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5905",
     "user": "https://github.com/JohnCremona"

@@ -1,9 +1,10 @@
-# Issue 5534: sage.combinat.subword.smallest_positions modifying its input
+# Issue 5534: [with patch, positive review] sage.combinat.subword.smallest_positions modifying its input (use #5200)
 
 archive/issues_005534.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI came across this function in Sage-Combinat,\n\nsage.combinat.subword.smallest_positions(word, subword, pos=0)\n\nRunning this function not only returns the positions in \"word\" where\n\"subword\" occurs, but it modifies \"subword\" to be this sequence of\npositions.  Is there a reason for this?  It seems to me that it should\nleave \"subword\" unchanged, but maybe I'm not thinking of something.\n\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions?\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n[1, 3]\n\nThanks,\nSteve\n\nIssue created by migration from https://trac.sagemath.org/ticket/5534\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nI came across this function in Sage-Combinat,\n\nsage.combinat.subword.smallest_positions(word, subword, pos=0)\n\nRunning this function not only returns the positions in \"word\" where\n\"subword\" occurs, but it modifies \"subword\" to be this sequence of\npositions.  Is there a reason for this?  It seems to me that it should\nleave \"subword\" unchanged, but maybe I'm not thinking of something.\n\n```\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n[1, 3]\n```\n\nThanks,\nSteve\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5534\n\n",
+    "closed_at": "2009-04-03T00:57:17Z",
     "created_at": "2009-03-16T20:46:13Z",
     "labels": [
         "component: combinatorics",
@@ -11,13 +12,13 @@ archive/issues_005534.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "sage.combinat.subword.smallest_positions modifying its input",
+    "title": "[with patch, positive review] sage.combinat.subword.smallest_positions modifying its input (use #5200)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5534",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -30,18 +31,22 @@ Running this function not only returns the positions in "word" where
 positions.  Is there a reason for this?  It seems to me that it should
 leave "subword" unchanged, but maybe I'm not thinking of something.
 
+```
 sage: w = ["a", "b", "c", "d"]
 sage: ww = ["b", "d"]
-sage: sage.combinat.subword.smallest_positions?
 sage: sage.combinat.subword.smallest_positions(w, ww)
 [1, 3]
 sage: w
 ['a', 'b', 'c', 'd']
 sage: ww
 [1, 3]
+```
 
 Thanks,
 Steve
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5534
 

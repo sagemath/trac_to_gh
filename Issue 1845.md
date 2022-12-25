@@ -1,16 +1,17 @@
-# Issue 1845: [with patch, spkg] list_plot3d should be able to accept lists of points in arbitrary positions
+# Issue 1845: [with patch, spkg, with positive review] list_plot3d should be able to accept lists of points in arbitrary positions
 
 archive/issues_001845.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following patch adds some improvements to list_plot3d\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/list_plot3d.hg\n\nThe new code requires an updated scipy_sandbox\n\nhttp://sage.math.washington.edu/spkgs/scipy_sandbox-20071020.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1845\n\n",
+    "body": "Assignee: @williamstein\n\nThe following patch adds some improvements to list_plot3d\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/list_plot3d.hg\n\nThe new code requires an updated scipy_sandbox\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy_sandbox-20071020.p1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1845\n\n",
+    "closed_at": "2008-01-27T07:18:31Z",
     "created_at": "2008-01-19T07:46:24Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, spkg] list_plot3d should be able to accept lists of points in arbitrary positions",
+    "title": "[with patch, spkg, with positive review] list_plot3d should be able to accept lists of points in arbitrary positions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1845",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
@@ -24,7 +25,8 @@ http://sage.math.washington.edu/home/jkantor/spkgs/list_plot3d.hg
 
 The new code requires an updated scipy_sandbox
 
-http://sage.math.washington.edu/spkgs/scipy_sandbox-20071020.p1.spkg
+http://sage.math.washington.edu/home/jkantor/spkgs/scipy_sandbox-20071020.p1.spkg
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1845
 

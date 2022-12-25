@@ -3,10 +3,12 @@
 archive/issues_009172.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori\n\n```\n\nsage -t  \"devel/sage/sage/rings/integer.pyx\"                \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/integer.pyx\", line 1681:\n    sage: 2^float(1.5)       # python float\nExpected:\n    2.8284271247461903\nGot:\n    2.8284271247461898\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_integer.py\n\t [15.2 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9172\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\n```\n\nsage -t  \"devel/sage/sage/rings/integer.pyx\"                \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/integer.pyx\", line 1681:\n    sage: 2^float(1.5)       # python float\nExpected:\n    2.8284271247461903\nGot:\n    2.8284271247461898\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_integer.py\n [15.2 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9172\n\n",
+    "closed_at": "2013-02-08T13:20:49Z",
     "created_at": "2010-06-07T04:52:04Z",
     "labels": [
         "component: porting: cygwin",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -35,7 +37,7 @@ Got:
    1 of  26 in __main__.example_42
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_integer.py
-	 [15.2 s]
+ [15.2 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9172

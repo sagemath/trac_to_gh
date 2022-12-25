@@ -1,9 +1,10 @@
-# Issue 5181: [with patch, needs review] arith.py: some docstrings with backslashes in them don't start with r"""
+# Issue 5181: [with patch, positive review] arith.py: some docstrings with backslashes in them don't start with r"""
 
 archive/issues_005181.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe summary explains it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5181\n\n",
+    "closed_at": "2009-02-05T11:10:08Z",
     "created_at": "2009-02-04T21:13:52Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005181.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] arith.py: some docstrings with backslashes in them don't start with r\"\"\"",
+    "title": "[with patch, positive review] arith.py: some docstrings with backslashes in them don't start with r\"\"\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5181",
     "user": "https://github.com/jhpalmieri"

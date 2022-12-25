@@ -4,6 +4,7 @@ archive/issues_008921.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @rbeezer\n\nThe cross product is defined for 7D, this patch allows for that functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8921\n\n",
+    "closed_at": "2010-06-07T07:10:27Z",
     "created_at": "2010-05-07T18:39:09Z",
     "labels": [
         "component: linear algebra",

@@ -3,7 +3,8 @@
 archive/issues_009519.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. \n\n```\ngcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput:\n```\n\n`wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy has installed OK. \n\n```\nreal    22m34.927s\nuser    20m23.356s\nsys     1m5.603s\nSuccessfully installed scipy-0.7.p5\n```\n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n```\npython setup.py build\nif [ $? -ne 0 ]; then\n    echo \"Error building scipy.\"\n    exit 1\nfi\n\n# Intall\npython setup.py install\nif [ $? -ne 0 ]; then\n    echo \"Error installing scipy.\"\n    exit 1\nfi\n```\n\nThe problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  \n\nAt this point, I've not no idea if this is an upstream bug, or a Sage bug. \n\nAnyone got any ideas? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9519\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. \n\n```\ngcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput:\n```\n\n`wrong ELF class:` messages mean an attempt was made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy has installed OK. \n\n```\nreal    22m34.927s\nuser    20m23.356s\nsys     1m5.603s\nSuccessfully installed scipy-0.7.p5\n```\n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n```\npython setup.py build\nif [ $? -ne 0 ]; then\n    echo \"Error building scipy.\"\n    exit 1\nfi\n\n# Intall\npython setup.py install\nif [ $? -ne 0 ]; then\n    echo \"Error installing scipy.\"\n    exit 1\nfi\n```\n\nThe problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  \n\nAt this point, I've not no idea if this is an upstream bug, or a Sage bug. \n\nAnyone got any ideas? \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9519\n\n",
+    "closed_at": "2020-09-21T16:41:51Z",
     "created_at": "2010-07-16T22:43:58Z",
     "labels": [
         "component: build",
@@ -36,7 +37,7 @@ Status: 255
 Output:
 ```
 
-`wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. 
+`wrong ELF class:` messages mean an attempt was made to link a mixture of 32-bit and 64-bit object files. 
 
 But the build process still goes on to report that scipy has installed OK. 
 
@@ -70,7 +71,7 @@ At this point, I've not no idea if this is an upstream bug, or a Sage bug.
 
 Anyone got any ideas? 
 
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9519
 

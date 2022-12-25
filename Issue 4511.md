@@ -1,16 +1,17 @@
-# Issue 4511: sage-combinat script won't work with two digit version numbers (for example: 3.2)
+# Issue 4511: [with patch; positive review] sage-combinat script won't work with two digit version numbers (for example: 3.2)
 
 archive/issues_004511.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat script\n\nChange the version number in $SAGE_ROOT/local/bin/sage-banner to 3.2 and then watch 'sage -combinat config' fail.\n\nI'll fix this right away.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4511\n\n",
+    "closed_at": "2008-11-15T04:48:56Z",
     "created_at": "2008-11-13T10:45:09Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "sage-combinat script won't work with two digit version numbers (for example: 3.2)",
+    "title": "[with patch; positive review] sage-combinat script won't work with two digit version numbers (for example: 3.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4511",
     "user": "https://github.com/saliola"

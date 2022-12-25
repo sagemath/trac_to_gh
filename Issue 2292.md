@@ -1,9 +1,10 @@
-# Issue 2292: segfault in AbelianGroups
+# Issue 2292: [with patch, positive review] segfault in AbelianGroups
 
 archive/issues_002292.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nwdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n\n---\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\n---\n\nsage: G.<a,b> = AbelianGroup(2)\nsage: a/b\n/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$`@`\"\n\nOn the other hand, this seems to be okay in perm_groups_named:\n\nwdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n\n---\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\n---\n\nsage: G = SymmetricGroup(5)\nsage: G.gens()\n((1,2,3,4,5), (1,2))\nsage: a,b = G.gens()\nsage: a/b\n(2,3,4,5)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2292\n\n",
+    "body": "Assignee: joyner\n\n```\nwdj@wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G.<a,b> = AbelianGroup(2)\nsage: a/b\n/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\nOn the other hand, this seems to be okay in perm_groups_named:\n\n```\nwdj@wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G = SymmetricGroup(5)\nsage: G.gens()\n((1,2,3,4,5), (1,2))\nsage: a,b = G.gens()\nsage: a/b\n(2,3,4,5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2292\n\n",
+    "closed_at": "2008-02-27T23:07:55Z",
     "created_at": "2008-02-24T15:16:16Z",
     "labels": [
         "component: group theory",
@@ -11,7 +12,7 @@ archive/issues_002292.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "segfault in AbelianGroups",
+    "title": "[with patch, positive review] segfault in AbelianGroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2292",
     "user": "https://github.com/wdjoyner"
@@ -19,32 +20,32 @@ archive/issues_002292.json:
 ```
 Assignee: joyner
 
-wdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage
-
----
+```
+wdj@wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 | SAGE Version 2.10.2, Release Date: 2008-02-22                      |
 | Type notebook() for the GUI, and license() for information.        |
----
-
 sage: G.<a,b> = AbelianGroup(2)
 sage: a/b
-/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
-
+/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
+```
 On the other hand, this seems to be okay in perm_groups_named:
 
-wdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage
-
----
+```
+wdj@wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 | SAGE Version 2.10.2, Release Date: 2008-02-22                      |
 | Type notebook() for the GUI, and license() for information.        |
----
-
 sage: G = SymmetricGroup(5)
 sage: G.gens()
 ((1,2,3,4,5), (1,2))
 sage: a,b = G.gens()
 sage: a/b
 (2,3,4,5)
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2292
 

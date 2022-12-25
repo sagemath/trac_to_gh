@@ -1,9 +1,10 @@
-# Issue 2979: clisp -- try to build using -O2; if that fails try again but using -O0.
+# Issue 2979: [with spkg; may or may not work] force "-O0" for clisp with gcc 4.3
 
 archive/issues_002979.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is needed on some gcc-4.3 installs, some architectures, etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2979\n\n",
+    "closed_at": "2008-04-22T05:11:54Z",
     "created_at": "2008-04-21T02:37:55Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_002979.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "clisp -- try to build using -O2; if that fails try again but using -O0.",
+    "title": "[with spkg; may or may not work] force \"-O0\" for clisp with gcc 4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2979",
     "user": "https://github.com/williamstein"

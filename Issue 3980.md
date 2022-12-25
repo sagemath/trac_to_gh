@@ -1,23 +1,24 @@
-# Issue 3980: Find_root bug
+# Issue 3980: [with patch, positive review] Find_root bug
 
 archive/issues_003980.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThe reciprocal of tangent is not a constant function, but Sage says otherwise.  \n\n```\nsage: z=tan\nsage: z\ntan\nsage: 1/z\n1/tan\nsage: find_root(1/z,1,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n<snip>\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3088                     return a\n   3089                 else:\n-> 3090                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3091             var = repr(w[0])\n   3092 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3980\n\n",
+    "body": "Assignee: @jicama\n\nThe reciprocal of tangent is not a constant function, but Sage says otherwise.  \n\n```\nsage: z=tan\nsage: z\ntan\nsage: 1/z\n1/tan\nsage: find_root(1/z,1,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n<snip>\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3088                     return a\n   3089                 else:\n-> 3090                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3091             var = repr(w[0])\n   3092 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3980\n\n",
+    "closed_at": "2008-10-01T10:32:42Z",
     "created_at": "2008-08-28T20:38:30Z",
     "labels": [
-        "component: numerical",
+        "component: calculus",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Find_root bug",
+    "title": "[with patch, positive review] Find_root bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3980",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: jkantor
+Assignee: @jicama
 
 The reciprocal of tangent is not a constant function, but Sage says otherwise.  
 

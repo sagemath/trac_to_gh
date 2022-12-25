@@ -4,6 +4,7 @@ archive/issues_004756.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: a = matrix(CDF,2,[1,2,4,7])\nsage: a.eigenmatrix_right()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_right (sage/matrix/matrix2.c:18170)()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_left (sage/matrix/matrix2.c:17965)()\n\nIndexError: list index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4756\n\n",
+    "closed_at": "2010-04-15T20:12:15Z",
     "created_at": "2008-12-11T05:11:14Z",
     "labels": [
         "component: linear algebra",

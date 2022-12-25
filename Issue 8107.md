@@ -4,6 +4,7 @@ archive/issues_008107.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb @TimDumol\n\nThis should reduce startup time, according to `sage -startuptime`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8107\n\n",
+    "closed_at": "2010-01-30T23:52:17Z",
     "created_at": "2010-01-28T05:33:30Z",
     "labels": [
         "component: notebook",

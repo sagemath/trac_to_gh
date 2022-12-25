@@ -1,15 +1,16 @@
-# Issue 3943: pydesign patch [not ready for review]
+# Issue 3943: [with patch, positive review] block designs patch
 
 archive/issues_003943.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\npydesign is a very basic GPL2+ package for block designs (http://www.designtheory.org/software/pydesign/). This patch adds a little functionality and a few examples. Needs *lots* more work!\n\nIn creates a new subdirectory of sage/combinat and adds several files to that subdirectory. See block_design.py for some examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3943\n\n",
+    "closed_at": "2008-09-30T07:02:25Z",
     "created_at": "2008-08-24T12:27:42Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "pydesign patch [not ready for review]",
+    "title": "[with patch, positive review] block designs patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3943",
     "user": "https://github.com/wdjoyner"

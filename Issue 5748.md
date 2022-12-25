@@ -1,9 +1,10 @@
-# Issue 5748: Sage 3.4.1.rc2: isinf() related doctest failure in sage/rings/infinity.py
+# Issue 5748: [with patch, positive review] Sage 3.4.1.rc2: isinf() related doctest failure in sage/rings/infinity.py
 
 archive/issues_005748.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNotice the following on OSX and Solaris:\n\n```\nbsd:sage-3.4.1.rc2 mabshoff$ ./sage -t  devel/sage/sage/rings/infinity.py\nsage -t  \"devel/sage/sage/rings/infinity.py\"                \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc2/devel/sage/sage/rings/infinity.py\", line 408:\n    sage: CDF(-infinity)\nExpected:\n    -infinity\nGot:\n    +infinity\n**********************************************************************\n```\nIIRC there was an analog problem in the GSL when using isinf() on OSX and Solaris due to the system's math library having a bug.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5748\n\n",
+    "closed_at": "2009-04-15T06:46:52Z",
     "created_at": "2009-04-11T08:13:38Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005748.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Sage 3.4.1.rc2: isinf() related doctest failure in sage/rings/infinity.py",
+    "title": "[with patch, positive review] Sage 3.4.1.rc2: isinf() related doctest failure in sage/rings/infinity.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5748",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

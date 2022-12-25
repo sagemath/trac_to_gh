@@ -1,15 +1,16 @@
-# Issue 3470: [with spkg; needs review] add pyprocessing (=multiproccessing) to sage
+# Issue 3470: [with spkg; positive review] add pyprocessing (=multiproccessing) to sage
 
 archive/issues_003470.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nThis has been officially excepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3470\n\n",
+    "body": "Assignee: @yqiang\n\nThis has been officially accepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc. \n\nSee http://www.python.org/dev/peps/pep-0371/ for more details.\n\nThis is easily by far the best library I've ever used for making use of multicore machines.  It's amazing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3470\n\n",
+    "closed_at": "2008-06-26T04:12:01Z",
     "created_at": "2008-06-19T16:32:23Z",
     "labels": [
         "component: dsage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg; needs review] add pyprocessing (=multiproccessing) to sage",
+    "title": "[with spkg; positive review] add pyprocessing (=multiproccessing) to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3470",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,11 @@ archive/issues_003470.json:
 ```
 Assignee: @yqiang
 
-This has been officially excepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc.
+This has been officially accepted for Python 2.7, but we need it now.  It is Python/c and takes literally 1 second to install, and supports OSX, Linux, Windows, etc. 
+
+See http://www.python.org/dev/peps/pep-0371/ for more details.
+
+This is easily by far the best library I've ever used for making use of multicore machines.  It's amazing.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3470
 

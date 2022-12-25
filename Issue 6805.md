@@ -1,16 +1,17 @@
-# Issue 6805: [with patch, needs review] Integrality check in LatticePolytope
+# Issue 6805: [with patch, positive review] Integrality check in LatticePolytope
 
 archive/issues_006805.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nIt is possible now to create a lattice polytope with rational vertices, which allows things to work, but causes wrong answers:\n\n```\nsage: m = matrix([1/2, 3/2])\nsage: m\n[1/2 3/2]\nsage: LatticePolytope(m).points()\n[0 1]\n```\nThis patch adds an extra check/conversion to the constructor to prevent this:\n\n```\nsage: m = matrix([1/2, 3/2])\nsage: m\n[1/2 3/2]\nsage: LatticePolytope(m).points()\nTraceback (most recent call last):\n...\nValueError: Points must be integral!\nGiven:\n[1/2 3/2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6805\n\n",
+    "closed_at": "2009-11-02T04:36:31Z",
     "created_at": "2009-08-22T20:25:59Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] Integrality check in LatticePolytope",
+    "title": "[with patch, positive review] Integrality check in LatticePolytope",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6805",
     "user": "https://github.com/novoselt"

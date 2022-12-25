@@ -1,16 +1,17 @@
-# Issue 9756: Document SAGE_TUNE_pari in Sage installation guide.
+# Issue 9756: Document SAGE_TUNE_pari in the Sage Installation Guide
 
 archive/issues_009756.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @jdemeyer @JohnCremona\n\nIf the variable `SAGE_TUNE_pari` is exported to \"yes\", Pari will go through a tuning process to optimize the code for a particular computer. This takes considerable time, so the default behavior is not to tune Pari. \n\nThis is implemented in a Pari snapshot (see #9343), but it not documented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9756\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @jdemeyer @JohnCremona\n\nIf the environment variable `SAGE_TUNE_pari` is exported to \"yes\", PARI will go through a tuning process to optimize the code for a particular computer. This takes considerable time, so the default behavior is not to tune PARI. \n\nThis is implemented in a PARI snapshot (see #9343), but is not documented.  In particular, it depends on #9343.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9756\n\n",
+    "closed_at": "2022-08-02T06:31:03Z",
     "created_at": "2010-08-17T17:36:14Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Document SAGE_TUNE_pari in Sage installation guide.",
+    "title": "Document SAGE_TUNE_pari in the Sage Installation Guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9756",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -20,9 +21,9 @@ Assignee: mvngu
 
 CC:  @jhpalmieri @jdemeyer @JohnCremona
 
-If the variable `SAGE_TUNE_pari` is exported to "yes", Pari will go through a tuning process to optimize the code for a particular computer. This takes considerable time, so the default behavior is not to tune Pari. 
+If the environment variable `SAGE_TUNE_pari` is exported to "yes", PARI will go through a tuning process to optimize the code for a particular computer. This takes considerable time, so the default behavior is not to tune PARI. 
 
-This is implemented in a Pari snapshot (see #9343), but it not documented.
+This is implemented in a PARI snapshot (see #9343), but is not documented.  In particular, it depends on #9343.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9756
 

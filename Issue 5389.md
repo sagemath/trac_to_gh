@@ -1,9 +1,10 @@
-# Issue 5389: Creating a  updated workspace with -tp is racy
+# Issue 5389: Creating a  updated GAP workspace with -tp is racy
 
 archive/issues_005389.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee a comment on #5366. When one does doctest Sage with -tp and GAP has been updated, but Sage not started the creation of the workspace is racy since many processes will try to update it at the same time.\n\nStarting up Sage once at the start of -tp via \"sage -c\" ought to fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5389\n\n",
+    "closed_at": "2011-01-11T06:14:46Z",
     "created_at": "2009-02-26T23:33:09Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005389.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Creating a  updated workspace with -tp is racy",
+    "title": "Creating a  updated GAP workspace with -tp is racy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5389",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

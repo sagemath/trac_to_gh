@@ -1,9 +1,10 @@
-# Issue 4594: typos in files under sage/algebras
+# Issue 4594: [with patch, positive review] typos in files under sage/algebras
 
 archive/issues_004594.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: typos, algebra\n\nNoticed some minor typos in files under the directory sage/algebras.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4594\n\n",
+    "closed_at": "2008-11-23T07:19:55Z",
     "created_at": "2008-11-23T05:52:44Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004594.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "typos in files under sage/algebras",
+    "title": "[with patch, positive review] typos in files under sage/algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4594",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -3,7 +3,8 @@
 archive/issues_001020.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWith 2.8.10.alpha1 every file that includes decl.pxi cython emits the following warnings:\n\n```\nwarning: /tmp/Work-mabshoff/sage-2.8.10.alpha1/devel/sage-main/sage/libs/ntl/decl.pxi:33:18: Function signature does not match previous declaration\nwarning: /tmp/Work-mabshoff/sage-2.8.10.alpha1/devel/sage-main/sage/libs/ntl/decl.pxi:34:18: Function signature does not match previous declaration\nwarning: /tmp/Work-mabshoff/sage-2.8.10.alpha1/devel/sage-main/sage/libs/ntl/decl.pxi:244:27: Function signature does not match previous declaration\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1020\n\n",
+    "body": "Assignee: cwitty\n\nWith 2.8.10.alpha1 every file that includes decl.pxi cython emits the following warnings:\n\n```\nwarning: /tmp/Work-mabshoff/sage-2.8.10.alpha1/devel/sage-main/sage/libs/ntl/decl.pxi:33:18: Function signature does not match previous declaration\nwarning: /tmp/Work-mabshoff/sage-2.8.10.alpha1/devel/sage-main/sage/libs/ntl/decl.pxi:34:18: Function signature does not match previous declaration\nwarning: /tmp/Work-mabshoff/sage-2.8.10.alpha1/devel/sage-main/sage/libs/ntl/decl.pxi:244:27: Function signature does not match previous declaration\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1020\n\n",
+    "closed_at": "2007-10-28T17:46:20Z",
     "created_at": "2007-10-28T09:52:05Z",
     "labels": [
         "component: distribution",
@@ -16,7 +17,7 @@ archive/issues_001020.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: cwitty
 
 With 2.8.10.alpha1 every file that includes decl.pxi cython emits the following warnings:
 

@@ -1,16 +1,18 @@
-# Issue 9367: S_unit return type is incorrect,
+# Issue 9367: S_unit return type is incorrect
 
 archive/issues_009367.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @orlitzky\n\nKeywords: S_units\n\nHere is a sample error:\n\n```\nsage: _.<x>=QQ[]\nsage: L.<alpha>=NumberField(x^3+x+1)\nsage: p=L.S_units([ L.ideal(7) ] )\nsage: p[0].parent()\nRational Field\n```\nThe correct output should be\n\n```\nNumber Field in alpha with defining polynomial x^3 + x + 1\n```\n\nThe attached patch solves this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9367\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @orlitzky\n\nKeywords: S_units\n\nIn some old versions of Sage, the S-unit commands returned values with the wrong parent:\n\n```\nsage: _.<x>=QQ[]\nsage: L.<alpha>=NumberField(x^3+x+1)\nsage: p=L.S_units([ L.ideal(7) ] )\nsage: p[0].parent()\nRational Field\n```\nThe correct output should be\n\n```\nNumber Field in alpha with defining polynomial x^3 + x + 1\n```\n\nThis is now fixed, so we should doctest to make sure it doesn't get broken again.\n\nApply [attachment:sage-trac_9367.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9367\n\n",
+    "closed_at": "2012-03-21T22:03:49Z",
     "created_at": "2010-06-28T21:54:48Z",
     "labels": [
         "component: number fields",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "S_unit return type is incorrect,",
+    "title": "S_unit return type is incorrect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9367",
     "user": "https://github.com/syazdani77"
@@ -22,7 +24,7 @@ CC:  @orlitzky
 
 Keywords: S_units
 
-Here is a sample error:
+In some old versions of Sage, the S-unit commands returned values with the wrong parent:
 
 ```
 sage: _.<x>=QQ[]
@@ -37,7 +39,10 @@ The correct output should be
 Number Field in alpha with defining polynomial x^3 + x + 1
 ```
 
-The attached patch solves this problem.
+This is now fixed, so we should doctest to make sure it doesn't get broken again.
+
+Apply [attachment:sage-trac_9367.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9367
 

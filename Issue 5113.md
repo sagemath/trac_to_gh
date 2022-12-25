@@ -1,15 +1,16 @@
-# Issue 5113: [with patch, needs review] elliptic curve construction from weierstrass equation
+# Issue 5113: [with patch, positive review] elliptic curve construction from weierstrass equation
 
 archive/issues_005113.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rlmill\n\nIt would be nice to be able to do \n\n```\n        sage: x, y = var('x,y')\n        sage: EllipticCurve(y^2 + y ==  x^3 + x - 9)\n        Elliptic Curve defined by y^2 + y = x^3 + x - 9 over Rational Field\n        \n        sage: R.<x,y> = GF(5)[]\n        sage: EllipticCurve(x^3 + x^2 + 2 - y^2 - y*x)\n        Elliptic Curve defined by y^2 + x*y  = x^3 + x^2 + 2 over Finite Field of size 5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5113\n\n",
+    "closed_at": "2009-01-29T00:27:38Z",
     "created_at": "2009-01-27T22:21:12Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] elliptic curve construction from weierstrass equation",
+    "title": "[with patch, positive review] elliptic curve construction from weierstrass equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5113",
     "user": "https://github.com/robertwb"

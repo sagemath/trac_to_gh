@@ -3,7 +3,8 @@
 archive/issues_007124.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7124\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nKeywords: affine cipher\n\nDepends on #7123.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7124\n\n",
+    "closed_at": "2009-10-31T15:39:33Z",
     "created_at": "2009-10-05T16:13:43Z",
     "labels": [
         "component: cryptography"
@@ -19,7 +20,9 @@ Assignee: somebody
 
 CC:  @rbeezer
 
+Keywords: affine cipher
 
+Depends on #7123.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7124
 

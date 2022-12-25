@@ -4,6 +4,7 @@ archive/issues_007806.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nA MIP variable is more a dictionnary of variables than a \"variable\". This should be clarified both in the LP Constructions document and in the functions' docstrings.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7806\n\n",
+    "closed_at": "2010-10-09T08:28:55Z",
     "created_at": "2010-01-01T14:39:34Z",
     "labels": [
         "component: documentation",

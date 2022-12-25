@@ -1,16 +1,17 @@
-# Issue 4183: ?? can't always find the source for new style classes
+# Issue 4183: [with patch, positive review] ?? can't always find the source for new style classes
 
 archive/issues_004183.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4183\n\n",
+    "body": "Assignee: @williamstein\n\nI think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the `__class__.__flags__` attribute to see if one should do the same trick as in #2777 or something like that. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4183\n\n",
+    "closed_at": "2008-10-18T12:03:30Z",
     "created_at": "2008-09-24T01:25:02Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "?? can't always find the source for new style classes",
+    "title": "[with patch, positive review] ?? can't always find the source for new style classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4183",
     "user": "https://github.com/robertwb"
@@ -18,7 +19,7 @@ archive/issues_004183.json:
 ```
 Assignee: @williamstein
 
-I think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.
+I think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the `__class__.__flags__` attribute to see if one should do the same trick as in #2777 or something like that. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4183
 

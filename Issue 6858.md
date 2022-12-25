@@ -1,16 +1,17 @@
-# Issue 6858: [with patch, needs review] Cayley graph connecting set
+# Issue 6858: [with patch, positive review] Cayley graph connecting set
 
 archive/issues_006858.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nReported by Chris Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6858\n\n",
+    "closed_at": "2009-09-11T17:10:25Z",
     "created_at": "2009-09-02T01:11:38Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Cayley graph connecting set",
+    "title": "[with patch, positive review] Cayley graph connecting set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6858",
     "user": "https://github.com/rlmill"

@@ -4,6 +4,7 @@ archive/issues_000065.json:
 ```json
 {
     "body": "Assignee: dmharvey\n\nThe Profiler class prints incorrect source code lines when the relevant source is right near the end of the source file (or probably right at the beginning too). Seems to be because the \"inspect\" module returns a truncated list. Shouldn't be hard to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/65\n\n",
+    "closed_at": "2007-10-21T01:46:25Z",
     "created_at": "2006-09-16T15:11:08Z",
     "labels": [
         "component: basic arithmetic",

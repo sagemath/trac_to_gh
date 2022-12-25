@@ -3,7 +3,8 @@
 archive/issues_009082.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @dimpase @jdemeyer\n\nKeywords: beginner\n\nWhen one build sage, the modification times of the following 3 files are changed. \n\n```\n./README.txt\n./COPYING.txt\n./sage-README-osx.txt\n```\n\nWhilst not a major problem in itself, it does mean that 'make distclean' does not return the source tree to its original state. \n\nIf one runs\n\n```\n$ 'make distclean'\n$ find . -mtime -2\n```\nit will list all files modified in the last two days. Those files should not modified but they are. Some files created in the build process are not being removed, but they should be. That will be the subject of another ticket.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9082\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @dimpase @jdemeyer\n\nKeywords: makefile\n\nWhen one build sage, the modification times of the following 3 files are changed. \n\n```\n./README.txt\n./COPYING.txt\n./sage-README-osx.txt\n```\n\nWhilst not a major problem in itself, it does mean that 'make distclean' does not return the source tree to its original state. \n\nIf one runs\n\n```\n$ 'make distclean'\n$ find . -mtime -2\n```\nit will list all files modified in the last two days. Those files should not modified but they are. Some files created in the build process are not being removed, but they should be. That will be the subject of another ticket.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9082\n\n",
+    "closed_at": "2017-01-21T18:03:11Z",
     "created_at": "2010-05-29T07:28:36Z",
     "labels": [
         "component: build",
@@ -20,7 +21,7 @@ Assignee: GeorgSWeber
 
 CC:  @dimpase @jdemeyer
 
-Keywords: beginner
+Keywords: makefile
 
 When one build sage, the modification times of the following 3 files are changed. 
 

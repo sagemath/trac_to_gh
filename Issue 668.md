@@ -1,22 +1,23 @@
-# Issue 668: Solaris 10: calculus/calculus.py doctests failure (numerical)
+# Issue 668: [with patch] Solaris 10: calculus/calculus.py doctests failure (numerical)
 
 archive/issues_000668.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest\n\n```\nsage -t  calculus/calculus.py                               **********************************************************************\nFile \"calculus.py\", line 1695:\n    sage: f.nintegral(x, 0, 1)\nExpected:\n    (0.52848223531423055, 4.1633141378838452e-11, 231, 0)\nGot:\n    (0.52848223531423055, 4.163291933423352e-11, 231, 0)\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_35\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/668\n\n",
+    "body": "Assignee: failure\n\nKeywords: Solaris 10, doctest\n\n```\nsage -t  calculus/calculus.py                               **********************************************************************\nFile \"calculus.py\", line 1695:\n    sage: f.nintegral(x, 0, 1)\nExpected:\n    (0.52848223531423055, 4.1633141378838452e-11, 231, 0)\nGot:\n    (0.52848223531423055, 4.163291933423352e-11, 231, 0)\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_35\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/668\n\n",
+    "closed_at": "2007-12-22T01:06:49Z",
     "created_at": "2007-09-17T00:29:00Z",
     "labels": [
-        "component: packages",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Solaris 10: calculus/calculus.py doctests failure (numerical)",
+    "title": "[with patch] Solaris 10: calculus/calculus.py doctests failure (numerical)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/668",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: failure
 
 Keywords: Solaris 10, doctest
 

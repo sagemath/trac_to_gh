@@ -4,6 +4,7 @@ archive/issues_001132.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI've attached b.sobj which you can load to reproduce the error.\n\n```\nsage: ~b\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/home/mike/<ipython console> in <module>()\n\n/home/mike/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\nsage: c = b.change_ring(RDF)\nsage: ~c\n\n[ 0.0277777777778  0.0277777777778  0.0277777777778  0.0277777777778  0.0277777777778  0.0277777777778]\n[  0.111111111111  -0.111111111111  0.0555555555556 -0.0555555555556  0.0555555555556 -0.0555555555556]\n[             0.0              0.0  0.0962250448649  0.0962250448649 -0.0962250448649 -0.0962250448649]\n[            -0.0             -0.0  0.0962250448649 -0.0962250448649 -0.0962250448649  0.0962250448649]\n[  0.111111111111   0.111111111111 -0.0555555555556 -0.0555555555556 -0.0555555555556 -0.0555555555556]\n[ 0.0277777777778 -0.0277777777778 -0.0277777777778  0.0277777777778 -0.0277777777778  0.0277777777778]\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1132\n\n",
+    "closed_at": "2008-11-14T05:38:44Z",
     "created_at": "2007-11-09T03:51:57Z",
     "labels": [
         "component: linear algebra",

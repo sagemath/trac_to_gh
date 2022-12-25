@@ -3,10 +3,11 @@
 archive/issues_003202.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTo see this, evaluate the following in a notebook cell:\n\n```\nvar('r,z')\na=(r*z^2).integrate(z,0,r).integrate(r,0,sqrt(9/2))*2*pi\na.show()\nprint a\n```\n\nFirefox 3 Beta 5; Ubuntu 8.04\n\nIssue created by migration from https://trac.sagemath.org/ticket/3202\n\n",
+    "body": "Assignee: @burcin\n\nTo see this, evaluate the following in a notebook cell:\n\n```\nvar('r,z')\na=(r*z^2).integrate(z,0,r).integrate(r,0,sqrt(9/2))*2*pi\na.show()\nprint a\n```\n\nFirefox 3 Beta 5; Ubuntu 8.04\n\nIssue created by migration from https://trac.sagemath.org/ticket/3202\n\n",
+    "closed_at": "2009-05-26T17:02:06Z",
     "created_at": "2008-05-14T06:04:13Z",
     "labels": [
-        "component: notebook",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
@@ -16,7 +17,7 @@ archive/issues_003202.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @burcin
 
 To see this, evaluate the following in a notebook cell:
 

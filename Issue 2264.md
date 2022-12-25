@@ -1,9 +1,10 @@
-# Issue 2264: Sage 2.10.2.rc0: numerical noise doctest failure in rings/real_rqdf.pyx
+# Issue 2264: [with patch, positive review] Sage 2.10.2.rc0: numerical noise doctest failure in rings/real_rqdf.pyx
 
 archive/issues_002264.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCraig Citro reported:\n\n```\n**********************************************************************\nFile \"real_rqdf.pyx\", line 32:\n    sage: RQDF(a)\nExpected:\n    0.868588963806503655302257837833210164588794011607333132228907565\nGot:\n    0.868588963806503655302257837833210164588794011607333132228907566\n********************************************************************** \n```\nThe above failure corresponds to:\n\n```\nMixing of symbolic an quad double elements:\n    sage: a = RQDF(2) / log(10); a\n    2.00000000000000/log(10)\n    sage: parent(a)\n    Symbolic Ring\n    sage: RQDF(a)\n    0.868588963806503655302257837833210164588794011607333132228907565\n```\nSo in this case it isn't so much a failure of an RQDF element (which should always print the same), but a numerical inconsistency from coercion the result into the quad double ring, i.e. coercion to the ring with lower precision. If the fix is to add \"...\" here we should comment on the fact that coercion causes the numerical noise and that RQDF is not at fault for that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2264\n\n",
+    "body": "Assignee: mabshoff\n\nCraig Citro reported:\n\n```\n**********************************************************************\nFile \"real_rqdf.pyx\", line 32:\n    sage: RQDF(a)\nExpected:\n    0.868588963806503655302257837833210164588794011607333132228907565\nGot:\n    0.868588963806503655302257837833210164588794011607333132228907566\n********************************************************************** \n```\nThe above failure corresponds to:\n\n```\nMixing of symbolic an quad double elements:\n    sage: a = RQDF(2) / log(10); a\n    2.00000000000000/log(10)\n    sage: parent(a)\n    Symbolic Ring\n    sage: RQDF(a)\n    0.868588963806503655302257837833210164588794011607333132228907565\n```\nThe issue seems to be a numerical inconsistency with the RQDF, which doesn't guarantee the same precision for all digits like MPFR does.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2264\n\n",
+    "closed_at": "2008-02-22T22:12:30Z",
     "created_at": "2008-02-22T19:19:06Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_002264.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Sage 2.10.2.rc0: numerical noise doctest failure in rings/real_rqdf.pyx",
+    "title": "[with patch, positive review] Sage 2.10.2.rc0: numerical noise doctest failure in rings/real_rqdf.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2264",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 Craig Citro reported:
 
@@ -42,7 +43,7 @@ Mixing of symbolic an quad double elements:
     sage: RQDF(a)
     0.868588963806503655302257837833210164588794011607333132228907565
 ```
-So in this case it isn't so much a failure of an RQDF element (which should always print the same), but a numerical inconsistency from coercion the result into the quad double ring, i.e. coercion to the ring with lower precision. If the fix is to add "..." here we should comment on the fact that coercion causes the numerical noise and that RQDF is not at fault for that.
+The issue seems to be a numerical inconsistency with the RQDF, which doesn't guarantee the same precision for all digits like MPFR does.
 
 Cheers,
 

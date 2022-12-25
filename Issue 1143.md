@@ -3,7 +3,8 @@
 archive/issues_001143.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1143\n\n",
+    "body": "Assignee: tba\n\nCC:  @jasongrout\n\nMerged in 2.8.15.rc0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1143\n\n",
+    "closed_at": "2007-12-02T20:23:23Z",
     "created_at": "2007-11-11T11:32:47Z",
     "labels": [
         "component: documentation"
@@ -19,7 +20,7 @@ Assignee: tba
 
 CC:  @jasongrout
 
-
+Merged in 2.8.15.rc0.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1143
 

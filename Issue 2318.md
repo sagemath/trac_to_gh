@@ -3,7 +3,8 @@
 archive/issues_002318.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nSince dsage is being developed fairly actively, the database schema tends to change more often than not. We need to come up with a good way to migrate existing db's to newer versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2318\n\n",
+    "body": "Assignee: @yqiang\n\nSince dsage is being developed fairly actively, the database schema tends to change more often than not. We need to come up with a good way to migrate existing db's to newer versions.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2318\n\n",
+    "closed_at": "2010-01-19T07:40:15Z",
     "created_at": "2008-02-26T17:43:32Z",
     "labels": [
         "component: dsage",
@@ -19,6 +20,7 @@ archive/issues_002318.json:
 Assignee: @yqiang
 
 Since dsage is being developed fairly actively, the database schema tends to change more often than not. We need to come up with a good way to migrate existing db's to newer versions.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2318
 

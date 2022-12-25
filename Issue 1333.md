@@ -1,15 +1,16 @@
-# Issue 1333: [with trivial patch] fix a major inefficiency in floating point square root computation in Sage
+# Issue 1333: [with trivial patch, with positive review] fix a major inefficiency in floating point square root computation in Sage
 
 archive/issues_001333.json:
 ```json
 {
     "body": "Assignee: somebody\n\nPaul Zimmerman's benchmarks unveiled a serious slowdown in x.sqrt() for x mpfr.\n\nThis patch fixes the problem. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1333\n\n",
+    "closed_at": "2007-12-01T18:21:31Z",
     "created_at": "2007-11-29T06:53:50Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with trivial patch] fix a major inefficiency in floating point square root computation in Sage",
+    "title": "[with trivial patch, with positive review] fix a major inefficiency in floating point square root computation in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1333",
     "user": "https://github.com/williamstein"

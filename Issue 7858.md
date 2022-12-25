@@ -1,9 +1,10 @@
-# Issue 7858: Declare KEY_* binding variables explicitly
+# Issue 7858: Add Content-Type to JS and declare KEY_* vars
 
 archive/issues_007858.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen @TimDumol\n\nFrom Firebug's console:\n\n```\nsyntax error\n    KEY_SHIFT = \"16,16\"\n```\nWe should declare each variable explicitly (to avoid implicit globals), e.g.,\n\n```js\nvar KEY_SHIFT = \"16,16\";\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7858\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen @TimDumol\n\nWebKit browsers (e.g., Chrome, Chromium, Safari) are picky about missing `Content-Type` headers (cf. #6742).  In particular, we should add them to dynamically generated JavaScript.\n\nAlso, from Firebug's console:\n\n```\nsyntax error\n    KEY_SHIFT = \"16,16\"\n```\nWe should declare each variable explicitly (to avoid implicit globals), e.g.,\n\n```js\nvar KEY_SHIFT = \"16,16\";\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7858\n\n",
+    "closed_at": "2010-01-19T03:33:47Z",
     "created_at": "2010-01-06T18:51:25Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_007858.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Declare KEY_* binding variables explicitly",
+    "title": "Add Content-Type to JS and declare KEY_* vars",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7858",
     "user": "https://github.com/qed777"
@@ -21,7 +22,9 @@ Assignee: @williamstein
 
 CC:  @mwhansen @TimDumol
 
-From Firebug's console:
+WebKit browsers (e.g., Chrome, Chromium, Safari) are picky about missing `Content-Type` headers (cf. #6742).  In particular, we should add them to dynamically generated JavaScript.
+
+Also, from Firebug's console:
 
 ```
 syntax error
@@ -32,6 +35,7 @@ We should declare each variable explicitly (to avoid implicit globals), e.g.,
 ```js
 var KEY_SHIFT = "16,16";
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7858
 

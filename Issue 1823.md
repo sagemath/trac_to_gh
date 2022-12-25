@@ -1,22 +1,23 @@
-# Issue 1823: [with patch] RDF/CDF coverage, consistent hashing
+# Issue 1823: [with patch, with positive review] RDF/CDF coverage, consistent hashing
 
 archive/issues_001823.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nSome functions, e.g. one-liners and stuff dealing with the RDF pool, are hard or useless to test in the doctest setting. \n\nHashing is now consistent between RDF, RR, CDF, CC, float, and complex. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1823\n\n",
+    "body": "Assignee: @robertwb\n\nSome functions, e.g. one-liners and stuff dealing with the RDF pool, are hard or useless to test in the doctest setting. \n\nHashing is now consistent between RDF, RR, CDF, CC, float, and complex. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1823\n\n",
+    "closed_at": "2008-01-27T22:21:00Z",
     "created_at": "2008-01-18T02:14:07Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] RDF/CDF coverage, consistent hashing",
+    "title": "[with patch, with positive review] RDF/CDF coverage, consistent hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1823",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 Some functions, e.g. one-liners and stuff dealing with the RDF pool, are hard or useless to test in the doctest setting. 
 

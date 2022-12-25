@@ -1,16 +1,17 @@
-# Issue 729: graphs: Implement __eq__ and __neq__ rather than __cmp__
+# Issue 729: [is duplicate?] graphs: Implement __eq__ and __neq__ rather than __cmp__
 
 archive/issues_000729.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe rich comparison operators __eq__ and __neq__ are preferred in Python.  See [http://docs.python.org/ref/customization.html](http://docs.python.org/ref/customization.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/729\n\n",
+    "closed_at": "2007-10-23T18:01:14Z",
     "created_at": "2007-09-21T17:56:12Z",
     "labels": [
         "component: combinatorics",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "graphs: Implement __eq__ and __neq__ rather than __cmp__",
+    "title": "[is duplicate?] graphs: Implement __eq__ and __neq__ rather than __cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/729",
     "user": "https://github.com/jasongrout"

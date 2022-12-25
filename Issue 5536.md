@@ -1,9 +1,10 @@
-# Issue 5536: [with patch, review pending] trivial docstring patches for permgp.py
+# Issue 5536: [with patch, positive review] trivial docstring patches for permgp.py
 
 archive/issues_005536.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe subject says it all.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5536\n\n",
+    "closed_at": "2009-03-20T21:20:17Z",
     "created_at": "2009-03-16T22:50:39Z",
     "labels": [
         "component: group theory",
@@ -11,7 +12,7 @@ archive/issues_005536.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, review pending] trivial docstring patches for permgp.py",
+    "title": "[with patch, positive review] trivial docstring patches for permgp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5536",
     "user": "https://github.com/jhpalmieri"

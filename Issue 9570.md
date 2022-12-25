@@ -4,6 +4,7 @@ archive/issues_009570.json:
 ```json
 {
     "body": "Assignee: jason, jkantor\n\nAt the moment, GLPK is the solver used regardless of the presence of CBC or CPLEX. This is just because of a line written ten lines too high in the file !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9570\n\n",
+    "closed_at": "2010-07-26T02:35:08Z",
     "created_at": "2010-07-22T02:55:20Z",
     "labels": [
         "component: numerical",

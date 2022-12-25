@@ -3,7 +3,8 @@
 archive/issues_000959.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n> It looks like maybe there is an issue with the system-wide boost\n> you have installed.\n\nThanks William. Moving /usr/include/boost to /usr/include/boost.old and\ntyping again make in SAGE_ROOT did it. You can recommend it to users who\nencounter the same problem.\n```\n\nSo, can we turn off Singular using boost at all, by default?\n\nIssue created by migration from https://trac.sagemath.org/ticket/959\n\n",
+    "body": "Assignee: @malb\n\n```\n> It looks like maybe there is an issue with the system-wide boost\n> you have installed.\n\nThanks William. Moving /usr/include/boost to /usr/include/boost.old and\ntyping again make in SAGE_ROOT did it. You can recommend it to users who\nencounter the same problem.\n```\n\nSo, can we turn off Singular using boost at all, by default?\n\nIssue created by migration from https://trac.sagemath.org/ticket/959\n\n",
+    "closed_at": "2007-11-01T10:36:40Z",
     "created_at": "2007-10-21T12:41:12Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_000959.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 ```
 > It looks like maybe there is an issue with the system-wide boost

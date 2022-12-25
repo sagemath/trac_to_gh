@@ -1,16 +1,17 @@
-# Issue 2524: update givaro.spkg to the 3.2.10.rc3 release
+# Issue 2524: [with spkg, positive review] update givaro.spkg to the 3.2.10.rc3 release
 
 archive/issues_002524.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe updated spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.4/alpha0/givaro-3.2.10.rc3.spkg\n\ncontains the following fixes:\n* update to upstream 3.2.10.rc3\n* add 64 bit OSX 10.5 support\n* remove all patches since they were integrated upstream\n* add spkg-check\n\nIssue created by migration from https://trac.sagemath.org/ticket/2524\n\n",
+    "closed_at": "2008-03-15T06:40:55Z",
     "created_at": "2008-03-15T01:53:45Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "update givaro.spkg to the 3.2.10.rc3 release",
+    "title": "[with spkg, positive review] update givaro.spkg to the 3.2.10.rc3 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2524",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

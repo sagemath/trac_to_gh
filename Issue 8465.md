@@ -1,15 +1,18 @@
-# Issue 8465: move the document "Python Functional Programming for Mathematicians" to the classification "Sage HOWTOs"
+# Issue 8465: move the document "Python Functional Programming for Mathematicians" to the classification "Thematic Tutorials"
 
 archive/issues_008465.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime @qed777\n\nKeywords: Sage HOWTOs\n\nThe new document classification \"Sage HOWTOs\" aims to include various in-depth documentation/tutorials on specific topics. Here, we move the chapter [Python Functional Programming for Mathematicians](http://www.sagemath.org/doc/constructions/functional_programming.html) to the \"Sage HOWTOs\" classification. The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8465\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime @qed777\n\nKeywords: Sage HOWTOs\n\nThe new documentation classification \"Thematic Tutorials\" aims to include various in-depth documentation/tutorials on specific topics. Here, we move the chapter [Python Functional Programming for Mathematicians](http://www.sagemath.org/doc/constructions/functional_programming.html) to the \"Thematic Tutorials\" classification. The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** The current ticket needs to be coordinated with #8470.\n\n\n\n**Prerequisites:** #8480, #8464\n\nIssue created by migration from https://trac.sagemath.org/ticket/8465\n\n",
+    "closed_at": "2010-07-29T04:47:16Z",
     "created_at": "2010-03-07T02:03:10Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "blocker",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "move the document \"Python Functional Programming for Mathematicians\" to the classification \"Sage HOWTOs\"",
+    "title": "move the document \"Python Functional Programming for Mathematicians\" to the classification \"Thematic Tutorials\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8465",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -21,7 +24,15 @@ CC:  @nexttime @qed777
 
 Keywords: Sage HOWTOs
 
-The new document classification "Sage HOWTOs" aims to include various in-depth documentation/tutorials on specific topics. Here, we move the chapter [Python Functional Programming for Mathematicians](http://www.sagemath.org/doc/constructions/functional_programming.html) to the "Sage HOWTOs" classification. The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+The new documentation classification "Thematic Tutorials" aims to include various in-depth documentation/tutorials on specific topics. Here, we move the chapter [Python Functional Programming for Mathematicians](http://www.sagemath.org/doc/constructions/functional_programming.html) to the "Thematic Tutorials" classification. The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+
+
+
+**Notes:** The current ticket needs to be coordinated with #8470.
+
+
+
+**Prerequisites:** #8480, #8464
 
 Issue created by migration from https://trac.sagemath.org/ticket/8465
 

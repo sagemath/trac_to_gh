@@ -3,11 +3,11 @@
 archive/issues_000252.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @katestange bouillaguet\n\nMake number fields work when polynomial not integral or not monic.\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\nTraceback (most recent call last):\n...\ngen.PariError:  (8)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @katestange bouillaguet\n\nThe goal of this ticket is to make number fields work when the defining polynomial is not integral or not monic.\n\nIf the user specifies a non-integral or non-monic polynomial to define an absolute or relative number field, we define the corresponding PARI number field by a monic integral polynomial obtained from the PARI functions `polredbest` and `rnfpolredbest`, respectively.\n\nThe new methods `NumberField_generic._pari_absolute_structure()` and `NumberField_relative._pari_relative_structure()` return the data needed to convert elements between the Sage `NumberField` and the PARI `nf` structure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
+    "closed_at": "2015-08-26T03:00:18Z",
     "created_at": "2007-02-08T17:49:51Z",
     "labels": [
-        "component: number theory",
-        "minor",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -17,20 +17,15 @@ archive/issues_000252.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @katestange bouillaguet
 
-Make number fields work when polynomial not integral or not monic.
+The goal of this ticket is to make number fields work when the defining polynomial is not integral or not monic.
 
-```
-sage: R.<x> = QQ[]
-sage: L.<b> = NumberField(x^2-1/2)
-sage: L.discriminant()
-Traceback (most recent call last):
-...
-gen.PariError:  (8)
-```
+If the user specifies a non-integral or non-monic polynomial to define an absolute or relative number field, we define the corresponding PARI number field by a monic integral polynomial obtained from the PARI functions `polredbest` and `rnfpolredbest`, respectively.
+
+The new methods `NumberField_generic._pari_absolute_structure()` and `NumberField_relative._pari_relative_structure()` return the data needed to convert elements between the Sage `NumberField` and the PARI `nf` structure.
 
 Issue created by migration from https://trac.sagemath.org/ticket/252
 

@@ -3,7 +3,8 @@
 archive/issues_000676.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: Solaris 10, python\n\nWe need to add\n\n```\n --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s -L/lib/ -luutil -ldl -lm -lsocket -lnsl -lxnet'\n```\non Solaris 10 only. It is not needed on Solaris 9.\n\nIssue created by migration from https://trac.sagemath.org/ticket/676\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: Solaris 10, python\n\nWe need to add\n\n```\n --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s\n -luutil -ldl -lm -lsocket -lnsl -lxnet'\n```\non Solaris 10 only. It is not needed on Solaris 9.\n\nAnd Solaris 10 with the Sun Forte compiler does work without the above. Solaris 10 seems to be missing symbolic links to libuutil.so.1\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/676\n\n",
+    "closed_at": "2008-04-27T07:23:11Z",
     "created_at": "2007-09-17T00:44:11Z",
     "labels": [
         "component: packages: standard",
@@ -23,9 +24,13 @@ Keywords: Solaris 10, python
 We need to add
 
 ```
- --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s -L/lib/ -luutil -ldl -lm -lsocket -lnsl -lxnet'
+ --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s
+ -luutil -ldl -lm -lsocket -lnsl -lxnet'
 ```
 on Solaris 10 only. It is not needed on Solaris 9.
+
+And Solaris 10 with the Sun Forte compiler does work without the above. Solaris 10 seems to be missing symbolic links to libuutil.so.1
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/676
 

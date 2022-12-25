@@ -3,7 +3,8 @@
 archive/issues_008049.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer tmonteil\n\n```\nI'm suddenly very concerned that Sage binaries won't work at all on computers without libgfortran.so installed. Does Sage even start up on such a box?\n\nYep.  If I take one of the Sage build machines, remove libgfortran, then start Sage I get:\n\n$ sage\nBOOM!\n\n.... ImportError: libgfortran.so.3: cannot open shared object file: No such file or directory\n\n----------------\n\nNot good, since most Linux installs won't have libgfortran.  If I then reinstall gfortran, and copy libgfortran.so  to SAGE_ROOT/local/lib/, then uninstall gfortran, then Sage works fine again.\n\ncp /usr/lib/libgfortran.so.3.0.0 local/lib/libgfortran.so.3\n\nwstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import scipy.linalg\nsage:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8049\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer tmonteil\n\nKeywords: days43\n\n```\nI'm suddenly very concerned that Sage binaries won't work at all on computers without libgfortran.so installed. Does Sage even start up on such a box?\n\nYep.  If I take one of the Sage build machines, remove libgfortran, then start Sage I get:\n\n$ sage\nBOOM!\n\n.... ImportError: libgfortran.so.3: cannot open shared object file: No such file or directory\n\n----------------\n\nNot good, since most Linux installs won't have libgfortran.  If I then reinstall gfortran, and copy libgfortran.so  to SAGE_ROOT/local/lib/, then uninstall gfortran, then Sage works fine again.\n\ncp /usr/lib/libgfortran.so.3.0.0 local/lib/libgfortran.so.3\n\nwstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import scipy.linalg\nsage:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8049\n\n",
+    "closed_at": "2010-02-13T00:29:07Z",
     "created_at": "2010-01-24T02:22:18Z",
     "labels": [
         "component: build",
@@ -20,6 +21,8 @@ archive/issues_008049.json:
 Assignee: GeorgSWeber
 
 CC:  @jdemeyer tmonteil
+
+Keywords: days43
 
 ```
 I'm suddenly very concerned that Sage binaries won't work at all on computers without libgfortran.so installed. Does Sage even start up on such a box?

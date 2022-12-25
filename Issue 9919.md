@@ -4,6 +4,7 @@ archive/issues_009919.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @kcrisman\n\nJason Grout commented on #9822 about the relative difficulty/inconvenience of developing and applying patches for SageNB as compared to Sage. This ticket should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9920\n\n",
+    "closed_at": "2010-10-06T03:33:58Z",
     "created_at": "2010-09-16T15:48:08Z",
     "labels": [
         "component: notebook",

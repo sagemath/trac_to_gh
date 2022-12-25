@@ -1,27 +1,36 @@
-# Issue 5448: [with patch, not ready for review] rework save/show in plot, use Matplotlib's axes code
+# Issue 5448: [with patch, positive review] rework save/show in plot, use Matplotlib's axes code, upgrade matplotlib
 
 archive/issues_005448.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois @kcrisman\n\nThis removes the axes.py code from Sage and switches to Matplotlib's code.  This allows for things like log scales as well as more flexibility in controlling how the ticks are labeled formatted.  It also fixes a number of existing bugs (like 2754).  After this change, it will be trivial to add a viewer='flot' option to Graphics.\n\nThe patch still needs some work a.k.a. doctests.  There are also a few things that don't work yet (like tick color and tick fontsize), and matrix_plot needs a matplotlib Locater and Formatter.  Also, GraphicsArray needs to be updated and should get lots of doctests for it added.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5448\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  wcauchois @kcrisman\n\nThis makes the axes and gridline code in Sage obsolete and upgrades the matplotlib spkg.\n\nThis patch depends on the following spkgs.\n\nhttp://sage.math.washington.edu/home/jason/matplotlib-0.99.0.spkg (for all of the good stuff for this patch)\n\nhttp://sage.math.washington.edu/home/jason/networkx-0.99.p1-fake_really-0.36.p1.spkg (to get rid of lots of deprecation warnings from the upgraded matplotlib).\n\nLast patch applies to 4.1.2.alpha0, or 4.1.1 with #6685.\n\nDoctests in plot/*.py pass.  -docbuild reference html passes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5448\n\n",
+    "closed_at": "2009-09-07T18:25:56Z",
     "created_at": "2009-03-06T03:38:48Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, not ready for review] rework save/show in plot, use Matplotlib's axes code",
+    "title": "[with patch, positive review] rework save/show in plot, use Matplotlib's axes code, upgrade matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5448",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  wcauchois @kcrisman
 
-This removes the axes.py code from Sage and switches to Matplotlib's code.  This allows for things like log scales as well as more flexibility in controlling how the ticks are labeled formatted.  It also fixes a number of existing bugs (like 2754).  After this change, it will be trivial to add a viewer='flot' option to Graphics.
+This makes the axes and gridline code in Sage obsolete and upgrades the matplotlib spkg.
 
-The patch still needs some work a.k.a. doctests.  There are also a few things that don't work yet (like tick color and tick fontsize), and matrix_plot needs a matplotlib Locater and Formatter.  Also, GraphicsArray needs to be updated and should get lots of doctests for it added.
+This patch depends on the following spkgs.
+
+http://sage.math.washington.edu/home/jason/matplotlib-0.99.0.spkg (for all of the good stuff for this patch)
+
+http://sage.math.washington.edu/home/jason/networkx-0.99.p1-fake_really-0.36.p1.spkg (to get rid of lots of deprecation warnings from the upgraded matplotlib).
+
+Last patch applies to 4.1.2.alpha0, or 4.1.1 with #6685.
+
+Doctests in plot/*.py pass.  -docbuild reference html passes.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5448
 

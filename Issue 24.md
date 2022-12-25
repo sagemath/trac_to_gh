@@ -4,6 +4,7 @@ archive/issues_000024.json:
 ```json
 {
     "body": "Assignee: somebody\n\nin sage notebook, if there are prompts, e.g., \"sage: 2\", then\nno implicit printing of last result.  It should still.\n\nIssue created by migration from https://trac.sagemath.org/ticket/24\n\n",
+    "closed_at": "2007-01-13T01:58:11Z",
     "created_at": "2006-09-12T23:23:14Z",
     "labels": [
         "component: basic arithmetic",

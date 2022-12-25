@@ -1,16 +1,17 @@
-# Issue 6851: hashes for derivatives of symbolic functions still collide
+# Issue 6851: [with patch, positive review] hashes for derivatives of symbolic functions still collide
 
 archive/issues_006851.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nIt seems that #6243 didn't fix things properly:\n\n```\nThanks to those who worked on closing ticket 6243 regarding\nderivatives as dictionary keys for the release of Sage 4.1.1.  It\nappears that there's still a bug, though (see below).\n\nAlex\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f= function('f',x)\nsage: d= {}\nsage: for i in [1..5]:\n....:     print diff(f,x,i)\n....:     d[diff(f,x,i)] = i\n....:\nD[0](f)(x)\nD[0, 0](f)(x)\n<boom>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6851\n\n",
+    "closed_at": "2009-09-25T22:45:59Z",
     "created_at": "2009-08-31T12:02:12Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "hashes for derivatives of symbolic functions still collide",
+    "title": "[with patch, positive review] hashes for derivatives of symbolic functions still collide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6851",
     "user": "https://github.com/burcin"

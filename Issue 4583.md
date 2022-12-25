@@ -1,15 +1,16 @@
-# Issue 4583: implement "sage -t --only-optional"
+# Issue 4583: [with patch; positive review] implement "sage -t --only-optional"
 
 archive/issues_004583.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI am going to implement exactly one thing for this ticket:\n\nI will add an option\n\n```\n   sage -t --only-optional=comma,separated,list,of,tags file1.py dir ...\n```\n\nThis would run every doctest block where at least one line in the block contains \n\n```\n# optional - set of tags that must be subset of those above\n```\n\nThe complete block would run, but with any # optional's that don't have tags a subset of the input to sage -t removed. \n\nAlso, there is one special case:\n\n```\nsage -t only-optional\n```\nwith no tages.  In this case, every doctest block that contains any # optional's is run.  All others are skipped. \n\nThis design is joint work with Michael Abshoff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4583\n\n",
+    "body": "Assignee: mabshoff\n\nI am going to implement exactly one thing for this ticket. I will add an option\n\n```\n   sage -t --only-optional=comma,separated,list,of,tags file1.py dir ...\n```\n\nThis will run every doctest block where at least one line in the block contains \n\n```\n# optional - set of tags that must be *nonempty* subset of those above\n```\n\nThe complete block will run, but with any # optional's that don't have tags a subset of the input to sage -t removed. \n\nAlso, there is one special case:\n\n```\nsage -t only-optional\n```\nwith no tages.  In this case, every doctest block that contains any # optional's is run.  All others are skipped. \n\nThis design is joint work with Michael Abshoff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4583\n\n",
+    "closed_at": "2008-11-23T04:19:57Z",
     "created_at": "2008-11-22T20:25:48Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "implement \"sage -t --only-optional\"",
+    "title": "[with patch; positive review] implement \"sage -t --only-optional\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4583",
     "user": "https://github.com/williamstein"
@@ -17,21 +18,19 @@ archive/issues_004583.json:
 ```
 Assignee: mabshoff
 
-I am going to implement exactly one thing for this ticket:
-
-I will add an option
+I am going to implement exactly one thing for this ticket. I will add an option
 
 ```
    sage -t --only-optional=comma,separated,list,of,tags file1.py dir ...
 ```
 
-This would run every doctest block where at least one line in the block contains 
+This will run every doctest block where at least one line in the block contains 
 
 ```
-# optional - set of tags that must be subset of those above
+# optional - set of tags that must be *nonempty* subset of those above
 ```
 
-The complete block would run, but with any # optional's that don't have tags a subset of the input to sage -t removed. 
+The complete block will run, but with any # optional's that don't have tags a subset of the input to sage -t removed. 
 
 Also, there is one special case:
 

@@ -1,16 +1,17 @@
-# Issue 3171: add 64 bit OSX build support to termcap
+# Issue 3171: [with patch, with positive review] add 64 bit OSX build support to termcap
 
 archive/issues_003171.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3171\n\n",
+    "closed_at": "2008-05-19T00:33:50Z",
     "created_at": "2008-05-13T00:01:12Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to termcap",
+    "title": "[with patch, with positive review] add 64 bit OSX build support to termcap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3171",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

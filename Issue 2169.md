@@ -1,15 +1,16 @@
-# Issue 2169: [with patch; needs review] magma <--> sage conversions: first step to more systematic conversions back and forth
+# Issue 2169: [with patch; with positive review] magma <--> sage conversions: first step to more systematic conversions back and forth
 
 archive/issues_002169.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2169\n\n",
+    "closed_at": "2008-02-15T05:04:08Z",
     "created_at": "2008-02-15T01:21:29Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch; needs review] magma <--> sage conversions: first step to more systematic conversions back and forth",
+    "title": "[with patch; with positive review] magma <--> sage conversions: first step to more systematic conversions back and forth",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2169",
     "user": "https://github.com/williamstein"

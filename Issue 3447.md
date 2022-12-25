@@ -3,7 +3,8 @@
 archive/issues_003447.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  @garyfurnish @orlitzky\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \"/Users/was/s/tmp/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\nNotice the *tmp* above.  \n\nThis is not trivial to fix.  We need to change this:\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \".../devel/sage-main/sage/modular/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3447\n\n",
+    "body": "Assignee: failure\n\nCC:  @garyfurnish @orlitzky\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \"/Users/was/s/tmp/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\nNotice the *tmp* above.  \n\nThis is not trivial to fix.  We need to change this:\n\n```\nD-69-91-136-212:modular was$ sage -t dims.py \nsage -t  devel/sage-main/sage/modular/dims.py               **********************************************************************\nFile \".../devel/sage-main/sage/modular/dims.py\", line 1564:\n    sage: sturm_bound(Gamma1(13),5)\n```\n\n---\n\nTo the release manager: please close this as already fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3447\n\n",
+    "closed_at": "2011-12-09T10:25:09Z",
     "created_at": "2008-06-17T04:46:36Z",
     "labels": [
         "component: doctest coverage",
@@ -37,6 +38,11 @@ sage -t  devel/sage-main/sage/modular/dims.py               ********************
 File ".../devel/sage-main/sage/modular/dims.py", line 1564:
     sage: sturm_bound(Gamma1(13),5)
 ```
+
+---
+
+To the release manager: please close this as already fixed.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3447
 

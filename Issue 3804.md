@@ -4,10 +4,10 @@ archive/issues_003804.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen I am editing a worksheet, and I'm using tex, it would be really nice to have a moin moin style preview button, so I can check my tex as I go.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3804\n\n",
+    "closed_at": "2009-11-19T23:37:57Z",
     "created_at": "2008-08-11T07:14:49Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement a preview button for \"edit\"",

@@ -1,16 +1,17 @@
-# Issue 4126: [with patch; not ready for review] improve sage <--> magma interface for number fields
+# Issue 4126: [with patch; positive review] improve sage <--> magma interface for number fields
 
 archive/issues_004126.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4126\n\n",
+    "closed_at": "2008-09-26T05:06:14Z",
     "created_at": "2008-09-15T03:56:49Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch; not ready for review] improve sage <--> magma interface for number fields",
+    "title": "[with patch; positive review] improve sage <--> magma interface for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4126",
     "user": "https://github.com/williamstein"

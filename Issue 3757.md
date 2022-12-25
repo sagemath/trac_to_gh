@@ -1,15 +1,16 @@
-# Issue 3757: [with preliminary patch, needs review] change printing for intervals (and AA/QQbar)
+# Issue 3757: [with patch, positive review] change printing for intervals (and AA/QQbar)
 
 archive/issues_003757.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis patch introduces \"question-mark style printing\" for intervals, where instead of [1.123 .. 1.125] we get 1.124? (the question mark means that the previous digit may be off by +/- 1).  (The slightly unfortunate thing is that [1.1238 .. 1.1242] will also print as 1.124?, so the new default printing loses a lot of information about exactly how tight the interval is.)\n\nI'm going to post a preliminary patch first, that actually changes the printing and adds extensive docstrings and doctests for the new/changed methods.  This leaves many, many doctests broken throughout the rest of Sage.\n\nIf/when this preliminary patch is positively reviewed, I will go ahead and post a follow-on patch that fixes all the doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3757\n\n",
+    "closed_at": "2008-08-05T23:53:00Z",
     "created_at": "2008-08-02T14:33:47Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with preliminary patch, needs review] change printing for intervals (and AA/QQbar)",
+    "title": "[with patch, positive review] change printing for intervals (and AA/QQbar)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3757",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

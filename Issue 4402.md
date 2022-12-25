@@ -1,16 +1,17 @@
-# Issue 4402: Sage 3.1.4: magma related optional doctest failure in tut.tex
+# Issue 4402: [with patch; positive review] Sage 3.1.4: magma related optional doctest failure in tut.tex
 
 archive/issues_004402.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage -t -long -optional devel/doc/prog/prog.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/prog.py\", line 520:\n    sage: E._magma_init_() # optional -- requires Magma\nExpected:\n    'EllipticCurve([_sage_[1]|GF(41)!0,GF(41)!0,GF(41)!0,GF(41)!2,GF(41)!5])'\nGot:\n    'EllipticCurve([GF(41)|GF(41)!0,GF(41)!0,GF(41)!0,GF(41)!2,GF(41)!5])'\n**********************************************************************\n```\n\nTrivial to fix since this is just a printing issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4402\n\n",
+    "closed_at": "2008-11-30T08:24:17Z",
     "created_at": "2008-10-30T17:34:25Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Sage 3.1.4: magma related optional doctest failure in tut.tex",
+    "title": "[with patch; positive review] Sage 3.1.4: magma related optional doctest failure in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4402",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

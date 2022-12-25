@@ -1,16 +1,17 @@
-# Issue 1450: update the error message for using maple / mathmatica from sage
+# Issue 1450: [with patch, with positive review] update the error message for using maple / mathmatica from sage
 
 archive/issues_001450.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe current error message mentions colinux, and is also has all kinds of remarks about \"buy xxx for thousands of dollars\", which were fun when sage was small, but now seem kind of adolescent. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/1450\n\n",
+    "closed_at": "2007-12-11T01:04:52Z",
     "created_at": "2007-12-10T17:11:21Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "update the error message for using maple / mathmatica from sage",
+    "title": "[with patch, with positive review] update the error message for using maple / mathmatica from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1450",
     "user": "https://github.com/williamstein"

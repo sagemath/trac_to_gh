@@ -1,16 +1,17 @@
-# Issue 1869: Implement show(list(graphs(n))) et al
+# Issue 1869: [with patch, with positive review] Implement show(list(graphs(n))) et al
 
 archive/issues_001869.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n`show` is in `sage/misc/functional.py`. It should be easy to get graphs_list functionality in there, if it applies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1869\n\n",
+    "body": "Assignee: @rlmill\n\n`show` is in `sage/misc/functional.py`. It should be easy to get `graphs_list` functionality in there, if it applies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1869\n\n",
+    "closed_at": "2008-01-24T00:08:48Z",
     "created_at": "2008-01-20T20:35:34Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Implement show(list(graphs(n))) et al",
+    "title": "[with patch, with positive review] Implement show(list(graphs(n))) et al",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1869",
     "user": "https://github.com/rlmill"
@@ -18,7 +19,7 @@ archive/issues_001869.json:
 ```
 Assignee: @rlmill
 
-`show` is in `sage/misc/functional.py`. It should be easy to get graphs_list functionality in there, if it applies.
+`show` is in `sage/misc/functional.py`. It should be easy to get `graphs_list` functionality in there, if it applies.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1869
 

@@ -4,6 +4,7 @@ archive/issues_008615.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nBasically, in Google Chrome, creating a new worksheet sometimes (usually?) doesn't work.   Tested in both Linux and OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8615\n\n",
+    "closed_at": "2014-12-11T18:35:35Z",
     "created_at": "2010-03-27T17:42:55Z",
     "labels": [
         "component: notebook",

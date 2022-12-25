@@ -1,9 +1,10 @@
-# Issue 3816: [with patch; needs review] notebook -- SyntaxWarning in twist.py
+# Issue 3816: [with patch, positive review] notebook -- SyntaxWarning in twist.py
 
 archive/issues_003816.json:
 ```json
 {
     "body": "Assignee: boothby\n\nthis was in there forever, but for some reason it causes a warning...\n\nFrom Cremona:\n\n```\n\nI have a successful build of 3.1.alpha1.  When I make a clone, the\n*first* time I run sage (by typing ./sage in SAGE_ROOT right after the\nsage -clone) I get this message after the banner and before the first\nprompt:\n\n/home/john/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/twist.py:1762:\nSyntaxWarning: name 'notebook' is used prior to global declaration\n global notebook\n\nBut if I then quit and restart, the message does not recur.\n\nWhat gives?\n\nJohn\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3816\n\n",
+    "closed_at": "2008-08-13T06:39:15Z",
     "created_at": "2008-08-12T13:16:44Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003816.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] notebook -- SyntaxWarning in twist.py",
+    "title": "[with patch, positive review] notebook -- SyntaxWarning in twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3816",
     "user": "https://github.com/williamstein"

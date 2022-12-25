@@ -4,6 +4,7 @@ archive/issues_005123.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis caused me trouble when preparing for my class today:\n\n```\nsage: k.<X> = GF(2)[]\nsage: xgcd(X^2, X+1)\nTraceback (most recent call last):\n...\nNotImplementedError\nsage: (X^2).xgcd(X+1)\nTraceback (most recent call last):\n...\nNotImplementedError\n```\n\nNote that PARI can do this, so that's an easy shortcut to implement *something*:\n\n```\nsage: pari(X^2).xgcd(X+1)\n(Mod(1, 2), Mod(1, 2), Mod(1, 2)*X + Mod(1, 2))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5123\n\n",
+    "closed_at": "2009-06-05T01:19:32Z",
     "created_at": "2009-01-28T20:57:39Z",
     "labels": [
         "component: basic arithmetic",

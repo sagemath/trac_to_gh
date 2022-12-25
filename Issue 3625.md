@@ -1,9 +1,10 @@
-# Issue 3625: fix latex2html'ing of the sage docs, which is broken
+# Issue 3625: [with patch; positive review] fix latex2html'ing of the sage docs, which is broken
 
 archive/issues_003625.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor some reason running latex2html to make the sage docs doesn't work -- the images rarely get built.  This must be fixed, because it causes massive frustration when I try to do releases, etc.\n\nI suspect mistakes in paths or something else.  I don't know. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3625\n\n",
+    "closed_at": "2008-07-10T04:34:12Z",
     "created_at": "2008-07-09T18:28:37Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_003625.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "fix latex2html'ing of the sage docs, which is broken",
+    "title": "[with patch; positive review] fix latex2html'ing of the sage docs, which is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3625",
     "user": "https://github.com/williamstein"

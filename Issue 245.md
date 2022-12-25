@@ -1,16 +1,17 @@
-# Issue 245: a bunch of random notebook improvement ideas
+# Issue 245: [kitchen sink] a bunch of random notebook improvement ideas
 
 archive/issues_000245.json:
 ```json
 {
     "body": "Assignee: boothby\n\nFrom Timothy C:\n\nMerge show/hide together so that if output cells are showing then the\nhide tab is showing. Make it possible to hide code cells. Make a full\npage directory of worksheets. Have a category system like Wikipedia's.\n \nHave a user system like Wikipedia. Have watch worksheet(s) system.\nHave a discussion section for each worksheet. Allow user to have\ncustom CSS file like Wikipedia. Have private worksheets. Make it easy\nto copy worksheets and copy cells for private/public editing. Have a\nlist user's contributions to public notebooks. Allow users to select\nother users that can view all private or selected worksheets.\n \nHave a system for schools and classes in the notebook.\n \nMerge bug track with notebook to track discussion and code submissions.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/245\n\n",
+    "closed_at": "2008-05-10T17:09:42Z",
     "created_at": "2007-02-05T02:57:31Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "a bunch of random notebook improvement ideas",
+    "title": "[kitchen sink] a bunch of random notebook improvement ideas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/245",
     "user": "https://github.com/williamstein"

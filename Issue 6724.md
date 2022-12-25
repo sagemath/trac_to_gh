@@ -1,16 +1,17 @@
-# Issue 6724: spell-check all modules under sage/modules
+# Issue 6724: [with patch, positive review] spell-check all modules under sage/modules
 
 archive/issues_006724.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6724\n\n",
+    "closed_at": "2009-08-14T08:10:10Z",
     "created_at": "2009-08-10T08:41:04Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/modules",
+    "title": "[with patch, positive review] spell-check all modules under sage/modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6724",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

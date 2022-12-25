@@ -1,9 +1,10 @@
-# Issue 3686: trivial problems in extcode.spkg
+# Issue 3686: [with patch, positive review] trivial problems in extcode.spkg
 
 archive/issues_003686.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nBelow is a list trivial problems in the excode spkg that were found by Debian's automatic package quality checking tools:\n\n# Scripts missing #!/bin/sh lines in extcode-3.0.5.spkg:\nmirror\npari/dokchitser/testall\nspkg-dist\n\n# Files unnecessarily marked as executable in extcode-3.0.5.spkg\njavascript/jsmath/plugins/autoload.js\njavascript/jsmath/plugins/CHMmode.js\nnotebook/javascript/jsmath/plugins/autoload.js\nnotebook/javascript/jsmath/plugins/CHMmode.js\nnotebook/javascript/farbtastic/marker.png\n\n# Empty directories in extcode-3.0.5.spkg\n# (These look like they might have a purpose, but I'm not sure)\ndist/\ngap/user/\ngenus2reduction/\ngnuplot/\nmacaulay2/user/\nmaple/user/\nmathematica/user/\nmatlab/user/\noctave/user/\nsage/user/\nsingular/user/\nsobj/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3686\n\n",
+    "closed_at": "2009-07-23T09:52:11Z",
     "created_at": "2008-07-21T05:44:51Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003686.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "trivial problems in extcode.spkg",
+    "title": "[with patch, positive review] trivial problems in extcode.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3686",
     "user": "https://github.com/timabbott"

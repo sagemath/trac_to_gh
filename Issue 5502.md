@@ -1,15 +1,16 @@
-# Issue 5502: implement ascii art output for Dynkin diagrams
+# Issue 5502: [with patch, positive review] implement ascii art output for Dynkin diagrams
 
 archive/issues_005502.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: dynkin diagram ascii art lie\n\nDan Bump requested this in his Sage Days 14 talk: have ascii art output a la LiE for Dynkin diagrams (see interfaces/lie.py for some examples of usage).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5502\n\n",
+    "closed_at": "2009-05-12T06:04:06Z",
     "created_at": "2009-03-12T19:26:49Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "implement ascii art output for Dynkin diagrams",
+    "title": "[with patch, positive review] implement ascii art output for Dynkin diagrams",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5502",
     "user": "https://github.com/aghitza"

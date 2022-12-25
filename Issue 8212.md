@@ -3,7 +3,8 @@
 archive/issues_008212.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe default polynomials chosen by Sage to perform arithmetic over\nGF(2**n) have sometimes Hamming weight 7 or more, which is not optimal.\nConsider for example:\n\n```\nsage: T.<a> = GF(2^211)\nsage: T.modulus()\nx^211 + x^9 + x^6 + x^5 + x^3 + x + 1\n\ndef bar(n):\n   f = a\n   for i in range(n):\n      f = f^2\n   return f\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 88.5 ms per loop\n```\nWith the following pentanomial, we get a nice speedup:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: T.<a> = GF(2^211,name='a',modulus=x^211 + x^11 + x^10 + x^8 + 1)\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 57.3 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8212\n\n",
+    "body": "Assignee: @zimmermann6\n\nThe default polynomials chosen by Sage to perform arithmetic over\nGF(2**n) have sometimes Hamming weight 7 or more, which is not optimal.\nConsider for example:\n\n```\nsage: T.<a> = GF(2^211)\nsage: T.modulus()\nx^211 + x^9 + x^6 + x^5 + x^3 + x + 1\n\ndef bar(n):\n   f = a\n   for i in range(n):\n      f = f^2\n   return f\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 88.5 ms per loop\n```\nWith the following pentanomial, we get a nice speedup:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: T.<a> = GF(2^211,name='a',modulus=x^211 + x^11 + x^10 + x^8 + 1)\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 57.3 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8212\n\n",
+    "closed_at": "2010-02-11T14:51:20Z",
     "created_at": "2010-02-08T07:06:33Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_008212.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @aghitza
+Assignee: @zimmermann6
 
 The default polynomials chosen by Sage to perform arithmetic over
 GF(2**n) have sometimes Hamming weight 7 or more, which is not optimal.

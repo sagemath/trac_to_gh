@@ -4,6 +4,7 @@ archive/issues_005238.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis ought to be doable in the 3.4 release once the ReST patches are in:\n\n```\nFLINT ships with a much improved version of qsieve. It is now called mpQS.\n\nIf you do make mpQS in the main directory of  FLINT (make all also\nbuilds it) it will build a program which replaces the old qsieve.\nHowever this program will deal with much smaller integers, and is much\nfaster overall.\n\nIt should have far fewer issues than the old code.\n\nIt also handles numbers with small factors, but still won't handle\nintegers which are perfect powers or primes. These should be scanned\nfor before running mpQS.\n\nThe new program actually uses FLINT for some parts of the computation,\nso it cannot be built standalone (it doesn't link against libflint, it\njust includes the files it needs). I have just verified this program\nstill builds (and works) on sage.math.\n\nBill.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5238\n\n",
+    "closed_at": "2010-06-16T02:09:36Z",
     "created_at": "2009-02-11T23:20:59Z",
     "labels": [
         "component: packages: standard",

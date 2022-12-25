@@ -1,16 +1,17 @@
-# Issue 6396: primes_of_degree_one is broken for relative extensions
+# Issue 6396: [with patch, positive review] primes_of_degree_one is broken for relative extensions
 
 archive/issues_006396.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nThis is kind of irritating:\n\n```\nsage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: N.primes_of_degree_one_list(10)\n[Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6396\n\n",
+    "closed_at": "2009-07-16T21:14:18Z",
     "created_at": "2009-06-24T17:07:16Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "primes_of_degree_one is broken for relative extensions",
+    "title": "[with patch, positive review] primes_of_degree_one is broken for relative extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6396",
     "user": "https://github.com/loefflerd"

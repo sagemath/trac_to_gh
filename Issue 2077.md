@@ -1,16 +1,17 @@
-# Issue 2077: matrix.column(i) should throw error when i is larger than the number of columns in the matrix (minus 1).
+# Issue 2077: [with patch, positive review] matrix.column(i) should throw error when i is larger than the number of columns in the matrix (minus 1).
 
 archive/issues_002077.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: a=matrix([[1,2],[3,4]])\nsage: a.column(0)\n(1, 3)\nsage: a.column(1)\n(2, 4)\nsage: a.column(3)\n(2, 4)\nsage: a.column(2)\n(1, 3)\n```\n\nThe documentation for a.column says that it behaves like list indexing when given a negative index.  We should probably also act like list indexing for positive indices that are too big and throw an error:\n\n```\nsage: l=range(3); l\n[0, 1, 2]\nsage: l[3]\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/home/grout/downloads/cython-callback/<ipython console> in <module>()\n\n<type 'exceptions.IndexError'>: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2077\n\n",
+    "closed_at": "2008-02-07T10:19:34Z",
     "created_at": "2008-02-06T23:29:16Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "matrix.column(i) should throw error when i is larger than the number of columns in the matrix (minus 1).",
+    "title": "[with patch, positive review] matrix.column(i) should throw error when i is larger than the number of columns in the matrix (minus 1).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2077",
     "user": "https://github.com/jasongrout"

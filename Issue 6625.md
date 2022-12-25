@@ -4,6 +4,7 @@ archive/issues_006625.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis is a follow up to #3687. Apparently, the issue of executable bits pop up again after they had been manually removed. That is, manually remove the executable bits of sage-banner, sage-gdb-commands, sage-maxima.lisp, and sage-verify-pyc. Then create a source distribution and you see those executable bits restored:\n\n```\n[mvngu@sage bin]$ pwd\n/home/mvngu/release/sage-4.1.1.alpha1/local/bin\n[mvngu@sage bin]$ hg st\nM sage-README-osx.txt\nM sage-banner\nM sage-gdb-commands\nM sage-maxima.lisp\nM sage-verify-pyc\n```\nSomewhere a script called by the command\n\n```\nsage -sdist <version-number>\n```\nis restoring those executable bits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6625\n\n",
+    "closed_at": "2010-01-24T02:22:34Z",
     "created_at": "2009-07-26T06:50:31Z",
     "labels": [
         "component: misc",

@@ -4,6 +4,7 @@ archive/issues_006757.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSage has libgcrypt version 1.4.3 in spkg/standard.\n\nBut:\n\nhttp://directory.fsf.org/project/libgcrypt/\n\nclearly shows:\n\n1.4.3\n\n* Released: 21 Nov, 2008\n* Code Maturity: Stable\n* Source Archive: http://www.gnupg.org/download/index.en.html#lib...\n* Licenses: GPLv3\n* Interfaces: Command Line\n\nThe file SPKG.txt says:\n\n## License\n\n* LGPL V2.1 or later (1.4 release)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6757\n\n",
+    "closed_at": "2009-09-28T01:34:21Z",
     "created_at": "2009-08-16T03:42:29Z",
     "labels": [
         "component: cryptography",

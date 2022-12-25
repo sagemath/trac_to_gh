@@ -1,22 +1,23 @@
-# Issue 5495: type: "A mysterious error (perphaps a memory error?)"   *PERP*HAPS!!!
+# Issue 5495: [with patch, positive review] fix typo in error: "A mysterious error (perphaps a memory error?)"   *PERP*HAPS!!!
 
 archive/issues_005495.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThere is a typo in the error message below (not a \"perp\"haps):\n\n```\nwstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n*** glibc detected *** double free or corruption (fasttop): 0x0a41a380 ***\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n\t [2.4 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5495\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThere is a typo in the error message below (not a \"perp\"haps):\n\n```\nwstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix2.pyx\"          \n*** glibc detected *** double free or corruption (fasttop): 0x0a41a380 ***\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n [2.4 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5495\n\n",
+    "closed_at": "2009-03-26T23:02:52Z",
     "created_at": "2009-03-12T02:38:25Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "type: \"A mysterious error (perphaps a memory error?)\"   *PERP*HAPS!!!",
+    "title": "[with patch, positive review] fix typo in error: \"A mysterious error (perphaps a memory error?)\"   *PERP*HAPS!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5495",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @jhpalmieri
 
 There is a typo in the error message below (not a "perp"haps):
 
@@ -25,7 +26,7 @@ wstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matr
 sage -t  "devel/sage-main/sage/matrix/matrix2.pyx"          
 *** glibc detected *** double free or corruption (fasttop): 0x0a41a380 ***
 A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
-	 [2.4 s]
+ [2.4 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5495

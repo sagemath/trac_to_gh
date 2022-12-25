@@ -1,16 +1,17 @@
-# Issue 6713: spell-check all modules under sage/lfunctions
+# Issue 6713: [with patch, positive review] spell-check all modules under sage/lfunctions
 
 archive/issues_006713.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6713\n\n",
+    "closed_at": "2009-08-12T06:25:36Z",
     "created_at": "2009-08-09T14:13:13Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/lfunctions",
+    "title": "[with patch, positive review] spell-check all modules under sage/lfunctions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6713",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

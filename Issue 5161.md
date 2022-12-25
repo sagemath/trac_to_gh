@@ -1,9 +1,10 @@
-# Issue 5161: [with patch, needs review] Remove outdated SHAREDFLAGS and Solaris specific injected flags from sage-env
+# Issue 5161: [with patch, positive review] Remove outdated SHAREDFLAGS and Solaris specific injected flags from sage-env
 
 archive/issues_005161.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nsage-env sets a bunch of environment variables like SHAREFLAGS that cause trouble on Cygwin and Solaris and are also pretty outdated. Setting global flags should be handled in a cleaner matter in case they are required, so for now remove the code from sage-env. It does break previously working setups and has cost me considerable time to work around before I discovered that the problem was introduced by sage-env.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5161\n\n",
+    "closed_at": "2009-02-03T01:03:42Z",
     "created_at": "2009-02-02T19:59:15Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_005161.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Remove outdated SHAREDFLAGS and Solaris specific injected flags from sage-env",
+    "title": "[with patch, positive review] Remove outdated SHAREDFLAGS and Solaris specific injected flags from sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5161",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

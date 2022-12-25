@@ -4,6 +4,7 @@ archive/issues_003624.json:
 ```json
 {
     "body": "Assignee: tba\n\nI've put a draft for the coding theory chapter for the cookbook.tex document in \nhttp://sage.math.washington.edu/home/wdj/cookbook/\nTo possibly make it easier, I've created this tarball of the directory:\nhttp://sage.math.washington.edu/home/wdj/cookbook2008-07-09.tar.gz\n\nIssue created by migration from https://trac.sagemath.org/ticket/3624\n\n",
+    "closed_at": "2014-08-16T09:32:11Z",
     "created_at": "2008-07-09T12:59:24Z",
     "labels": [
         "component: documentation",

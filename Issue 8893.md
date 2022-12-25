@@ -1,15 +1,17 @@
-# Issue 8893: disjoint rooted paths
+# Issue 8893: disjoint routed paths
 
 archive/issues_008893.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nUsing #8870\n\nIssue created by migration from https://trac.sagemath.org/ticket/8893\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nThis patch implements the method disjoint_routed_path (k-DRP) which solves the following problem :\n\ngiven a list of pairs s_i, t_i, find in a given graph a set of vertex-disjoints paths P_i such that P_i goes from s_i to t_i\n\nRequires #8870\n\nIssue created by migration from https://trac.sagemath.org/ticket/8893\n\n",
+    "closed_at": "2010-06-29T16:47:15Z",
     "created_at": "2010-05-05T18:21:32Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "disjoint rooted paths",
+    "title": "disjoint routed paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8893",
     "user": "https://github.com/nathanncohen"
@@ -17,7 +19,11 @@ archive/issues_008893.json:
 ```
 Assignee: jason, ncohen, rlm
 
-Using #8870
+This patch implements the method disjoint_routed_path (k-DRP) which solves the following problem :
+
+given a list of pairs s_i, t_i, find in a given graph a set of vertex-disjoints paths P_i such that P_i goes from s_i to t_i
+
+Requires #8870
 
 Issue created by migration from https://trac.sagemath.org/ticket/8893
 

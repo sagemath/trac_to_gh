@@ -1,16 +1,17 @@
-# Issue 6228: Wrong multiplicities when solving a univariate polynomial equation
+# Issue 6228: [with patch, positive review] Wrong multiplicities when solving a univariate polynomial equation
 
 archive/issues_006228.json:
 ```json
 {
     "body": "Keywords: multiplicities solve\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/d8e22deb18d97253 Michael Friedman asked how to get the multiplicities when solving a set of nonlinear equations. \n\nIt turns out that actually even the multiplicities for a single and rather simple equation are wrong:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: z = var('z')\nsage: solve((z^3-1)^3,z,multiplicities=True)\n([z == (sqrt(3)*I - 1)/2, z == (-sqrt(3)*I - 1)/2, z == 1], [1, 1, 3])\n```\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\nI am afraid that symbolics isn't my field of expertise. So, I don't know how to cure it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6228\n\n",
+    "closed_at": "2009-10-15T08:38:47Z",
     "created_at": "2009-06-05T19:17:33Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Wrong multiplicities when solving a univariate polynomial equation",
+    "title": "[with patch, positive review] Wrong multiplicities when solving a univariate polynomial equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6228",
     "user": "https://github.com/simon-king-jena"

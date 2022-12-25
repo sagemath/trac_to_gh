@@ -1,16 +1,16 @@
-# Issue 6865: Use templates for CSS
+# Issue 6865: [with patch, positive review] Use templates for CSS
 
 archive/issues_006865.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: notebook css stylesheets\n\nCSS is currently served by `css()` in `css.py`, even though it is completely static. Using templates for it should make things easier to customize in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6865\n\n",
+    "closed_at": "2009-09-22T17:55:59Z",
     "created_at": "2009-09-02T15:30:45Z",
     "labels": [
-        "component: notebook",
-        "minor"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Use templates for CSS",
+    "title": "[with patch, positive review] Use templates for CSS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6865",
     "user": "https://github.com/TimDumol"

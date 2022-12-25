@@ -3,11 +3,11 @@
 archive/issues_007872.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  wcauchois @jasongrout mhampton olazo @kcrisman\n\nWhile developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.\n\nI agreed to that, so I propose an adition to plot3d's syntax: \"plot3d(function,var1range,var2range,transformation=None,**kwds)\" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.\n\nIt's inclution within plot3d would be something on the likes of\n\n```\ndef plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):\n    if transformation==None:\n        return plot3d(f,v1ran,v2ran,**kwds)\n    else:\n        v1=v1ran[0]\n        v2=v2ran[0]\n\n        if transformation=='spherical':\n            r=var('r')\n            transformation=(r*cos(v1)*sin(v2),r*sin(v1)*sin(v2),r*cos(v2),r)\n        elif transformation=='cylindrical':\n            r=var('r')\n            transformation=(r*cos(v1),r*sin(v1),v2,r)\n        elif str(type(transformation))==\"<type 'str'>\":\n            print 'Warning: the transformation given is not amongst the options, it will be ignored'\n            return plot3d(f,v1ran,v2ran,**kwds)\n\n        fvar=transformation[3]\n        transformation=(transformation[0],transformation[1],transformation[2])\n\n        try:\n            R=[t.subs({fvar:f}) for t in transformation]\n        except:\n            def subs_func(t):\n                return lambda x,y: t.subs({fvar:f(x,y), v1:x, v2:y})\n            R=map(subs_func,transformation)\n        return parametric_plot(R,v1ran,v2ran,**kwds)\n```\n\nExamples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).\n\nSpherical and cylindrical plots are now meant to be purely derived from plot3d. So tickets [http://trac.sagemath.org/sage_trac/ticket/7850](http://trac.sagemath.org/sage_trac/ticket/7850) and [http://trac.sagemath.org/sage_trac/ticket/7869](http://trac.sagemath.org/sage_trac/ticket/7869) should be updated\n\nIssue created by migration from https://trac.sagemath.org/ticket/7872\n\n",
+    "body": "CC:  wcauchois @jasongrout mhampton olazo @kcrisman\n\nWhile developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.\n\nI agreed to that, so I propose an adition to plot3d's syntax: \"plot3d(function,var1range,var2range,transformation=None,**kwds)\" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.\n\nExamples can be found in [http://www.sagenb.org/home/pub/1328/](http://www.sagenb.org/home/pub/1328/).\n\nI've just added a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7872\n\n",
+    "closed_at": "2010-03-03T14:09:38Z",
     "created_at": "2010-01-08T17:44:47Z",
     "labels": [
-        "component: graphics",
-        "minor"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Adding coordinate transformations to plot3d",
@@ -16,49 +16,15 @@ archive/issues_007872.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
-Assignee: olazo
-
 CC:  wcauchois @jasongrout mhampton olazo @kcrisman
 
 While developing a command called transform_plot3d, that generalized ploting in diferent coordinate systems, Jason Grout suggested to me that such a command would be better implemented within plot3d.
 
 I agreed to that, so I propose an adition to plot3d's syntax: "plot3d(function,var1range,var2range,transformation=None,**kwds)" where transformation is a 4-tuple containing 3 functions of arity 3, and a variable which is to be interpreted as the function to be ploted. Like this (r*cos(fi),r*sin(fi),z,r), so the function will be ploted as r.
 
-It's inclution within plot3d would be something on the likes of
+Examples can be found in [http://www.sagenb.org/home/pub/1328/](http://www.sagenb.org/home/pub/1328/).
 
-```
-def plot3d_new(f,v1ran,v2ran,transformation=None,**kwds):
-    if transformation==None:
-        return plot3d(f,v1ran,v2ran,**kwds)
-    else:
-        v1=v1ran[0]
-        v2=v2ran[0]
-
-        if transformation=='spherical':
-            r=var('r')
-            transformation=(r*cos(v1)*sin(v2),r*sin(v1)*sin(v2),r*cos(v2),r)
-        elif transformation=='cylindrical':
-            r=var('r')
-            transformation=(r*cos(v1),r*sin(v1),v2,r)
-        elif str(type(transformation))=="<type 'str'>":
-            print 'Warning: the transformation given is not amongst the options, it will be ignored'
-            return plot3d(f,v1ran,v2ran,**kwds)
-
-        fvar=transformation[3]
-        transformation=(transformation[0],transformation[1],transformation[2])
-
-        try:
-            R=[t.subs({fvar:f}) for t in transformation]
-        except:
-            def subs_func(t):
-                return lambda x,y: t.subs({fvar:f(x,y), v1:x, v2:y})
-            R=map(subs_func,transformation)
-        return parametric_plot(R,v1ran,v2ran,**kwds)
-```
-
-Examples can be found in [http://www.sagenb.org/home/omologos/9/](http://www.sagenb.org/home/omologos/9/).
-
-Spherical and cylindrical plots are now meant to be purely derived from plot3d. So tickets [http://trac.sagemath.org/sage_trac/ticket/7850](http://trac.sagemath.org/sage_trac/ticket/7850) and [http://trac.sagemath.org/sage_trac/ticket/7869](http://trac.sagemath.org/sage_trac/ticket/7869) should be updated
+I've just added a patch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7872
 

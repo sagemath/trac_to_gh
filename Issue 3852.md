@@ -3,10 +3,11 @@
 archive/issues_003852.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nHere are three possibilities:\n\n* ScientificPython's PhysicalQuantities package: http://dirac.cnrs-orleans.fr/ScientificPython/ScientificPythonManual/Scientific.Physics.PhysicalQuantities-module.html\n\nIt looks like this package is part of an actively maintained library, ScientificPython (http://dirac.cnrs-orleans.fr/plone/software/scientificpython/).  Here is a link for a printing package for this module: http://python.net/crew/bhoel/PyLaTeX-0.2/html/PyLaTeX.UnitPrint.html\n\n\n\n* Unum: http://home.scarlet.be/be052320/Unum.html\n\nIt looks like this package is dead; last release was in 2005.  It is GPL.\n\n* The Pyre units package (http://www.cacr.caltech.edu/projects/pyre/).  This was last updated in 2005, I think (you have to check out pythia 0.8).\n\n* The enthought units package (which is apparently based on the pyre package), as well as the blockcanvas unit functions.\n\nA thread about adding a units package to scipy: http://projects.scipy.org/pipermail/scipy-user/2005-March/004263.html\n\nAnother thread: http://aspn.activestate.com/ASPN/Mail/Message/scipy-user/3176352\n\nAnother page in a book mentioning two packages: http://books.google.com/books?id=j7QbD83-h8AC&pg=PA157&lpg=PA157&dq=python+physicalquantities&source=web&ots=C-JZyCFWn2&sig=x62bQ0jWyQerBGAvgJOBQuMQeWM&hl=en&sa=X&oi=book_result&resnum=10&ct=result\n\nA recent (July 2008!) trac ticket about the enthought units package: https://svn.enthought.com/enthought/ticket/1524  Related checkins seem to include: https://svn.enthought.com/enthought/changeset/21093\n\nApparently the enthought units code is undergoing refactorization.  See https://mail.enthought.com/pipermail/enthought-dev/2008-July/015717.html\n\n\nI'd say we ought to keep our eye (or help out with) the enthought package refactorization.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3852\n\n",
+    "body": "Assignee: somebody\n\nSee this [sage-wiki](http://wiki.sagemath.org/Unit%20of%20Measurement) page for some ideas.\n\nHere are three possibilities:\n\n* ScientificPython's PhysicalQuantities package: http://dirac.cnrs-orleans.fr/ScientificPython/ScientificPythonManual/Scientific.Physics.PhysicalQuantities-module.html\n\nIt looks like this package is part of an actively maintained library, ScientificPython (http://dirac.cnrs-orleans.fr/plone/software/scientificpython/).  Here is a link for a printing package for this module: http://python.net/crew/bhoel/PyLaTeX-0.2/html/PyLaTeX.UnitPrint.html\n\n\n\n* Unum: http://home.scarlet.be/be052320/Unum.html\n\nIt looks like this package is dead; last release was in 2005.  It is GPL.\n\n* The Pyre units package (http://www.cacr.caltech.edu/projects/pyre/).  This was last updated in 2005, I think (you have to check out pythia 0.8).\n\n* The enthought units package (which is apparently based on the pyre package), as well as the blockcanvas unit functions.\n\nA thread about adding a units package to scipy: http://projects.scipy.org/pipermail/scipy-user/2005-March/004263.html\n\nAnother thread: http://aspn.activestate.com/ASPN/Mail/Message/scipy-user/3176352\n\nAnother page in a book mentioning two packages: http://books.google.com/books?id=j7QbD83-h8AC&pg=PA157&lpg=PA157&dq=python+physicalquantities&source=web&ots=C-JZyCFWn2&sig=x62bQ0jWyQerBGAvgJOBQuMQeWM&hl=en&sa=X&oi=book_result&resnum=10&ct=result\n\nA recent (July 2008!) trac ticket about the enthought units package: https://svn.enthought.com/enthought/ticket/1524  Related checkins seem to include: https://svn.enthought.com/enthought/changeset/21093\n\nApparently the enthought units code is undergoing refactorization.  See https://mail.enthought.com/pipermail/enthought-dev/2008-July/015717.html\n\n\nI'd say we ought to keep our eye (or help out with) the enthought package refactorization.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3852\n\n",
+    "closed_at": "2010-04-15T06:02:12Z",
     "created_at": "2008-08-14T17:47:02Z",
     "labels": [
-        "component: numerical"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "create or adapt or include a units package",
@@ -15,7 +16,9 @@ archive/issues_003852.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: jkantor
+Assignee: somebody
+
+See this [sage-wiki](http://wiki.sagemath.org/Unit%20of%20Measurement) page for some ideas.
 
 Here are three possibilities:
 

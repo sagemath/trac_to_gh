@@ -3,12 +3,12 @@
 archive/issues_000800.json:
 ```json
 {
-    "body": "Assignee: @tornaria\n\nGonzalo brought up the following very good idea: one should rewrite the code for _sig_on and _sig_off to keep a counter of how many _sig_on calls it has seen, and run less than the full amount of code (i.e. nothing involving system calls) if we've already had a _sig_on. Then _sig_off can just decrement the counter, and only do the \"real work\" if it's being decremented to zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/800\n\n",
+    "body": "Assignee: @malb\n\nGonzalo brought up the following very good idea: one should rewrite the code for _sig_on and _sig_off to keep a counter of how many _sig_on calls it has seen, and run less than the full amount of code (i.e. nothing involving system calls) if we've already had a _sig_on. Then _sig_off can just decrement the counter, and only do the \"real work\" if it's being decremented to zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/800\n\n",
+    "closed_at": "2011-05-15T14:41:07Z",
     "created_at": "2007-10-03T06:35:24Z",
     "labels": [
         "component: interfaces",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make _sig_on and _sig_off faster when stacked",
@@ -17,7 +17,7 @@ archive/issues_000800.json:
     "user": "https://github.com/craigcitro"
 }
 ```
-Assignee: @tornaria
+Assignee: @malb
 
 Gonzalo brought up the following very good idea: one should rewrite the code for _sig_on and _sig_off to keep a counter of how many _sig_on calls it has seen, and run less than the full amount of code (i.e. nothing involving system calls) if we've already had a _sig_on. Then _sig_off can just decrement the counter, and only do the "real work" if it's being decremented to zero.
 

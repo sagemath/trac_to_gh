@@ -3,11 +3,11 @@
 archive/issues_006604.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @kliem @tscrim\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6604\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @kliem @tscrim\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/2bdfa75d401575f2\n\nIssue created by migration from https://trac.sagemath.org/ticket/6604\n\n",
+    "closed_at": "2021-12-12T15:09:10Z",
     "created_at": "2009-07-23T15:56:41Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
     "title": "Polish the use of iterators in C graphs",
@@ -20,7 +20,7 @@ Assignee: @rlmill
 
 CC:  @kliem @tscrim
 
-
+http://groups.google.com/group/sage-devel/browse_thread/thread/2bdfa75d401575f2
 
 Issue created by migration from https://trac.sagemath.org/ticket/6604
 

@@ -1,22 +1,24 @@
-# Issue 1884: memory leak in real numbers
+# Issue 1884: [with patch] memory leak in real numbers
 
 archive/issues_001884.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis leaks like a sieve in 2.10:\n\n```\nt = 0.0\nwhile True:\n    t = t * 2.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1884\n\n",
+    "body": "Assignee: @robertwb\n\nThis leaks like a sieve in 2.10:\n\n```\nt = 0.0\nwhile True:\n    t = t * 2.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1884\n\n",
+    "closed_at": "2008-03-09T05:08:52Z",
     "created_at": "2008-01-22T02:53:16Z",
     "labels": [
         "component: memleak",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "memory leak in real numbers",
+    "title": "[with patch] memory leak in real numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1884",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: mabshoff
+Assignee: @robertwb
 
 This leaks like a sieve in 2.10:
 

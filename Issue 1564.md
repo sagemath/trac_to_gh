@@ -4,6 +4,7 @@ archive/issues_001564.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI will post patches here, mainly for Robert Bradshaw. These shouldn't be applied\nyet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1564\n\n",
+    "closed_at": "2007-12-23T02:58:04Z",
     "created_at": "2007-12-19T06:33:38Z",
     "labels": [
         "component: graphics"

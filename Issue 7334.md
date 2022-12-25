@@ -4,6 +4,7 @@ archive/issues_007334.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  fmaltey@nerim.fr\n\nKeywords: logarithm\n\nCurrently there is no direct way in Sage to apply the transformation:\n\n```\nlog(x) + log(y) -> log(x*y)\n```\n\nThe attached patch fixes this by inserting a call to logcontract()\nin the definition of simplify_radical.\n\nNow the following works:\n\n```\nsage: f = log(sqrt(2) - 1) + log(sqrt(2) + 1)\nsage: f.simplify_full()\n0\n```\n\nBut I'm not sure if this is the right place for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7334\n\n",
+    "closed_at": "2010-02-11T15:02:55Z",
     "created_at": "2009-10-28T17:32:35Z",
     "labels": [
         "component: calculus",

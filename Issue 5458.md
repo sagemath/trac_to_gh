@@ -3,7 +3,8 @@
 archive/issues_005458.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nRefactor the set partitions code to have a single entry point in the global name space for the various types. I.e. from the user point of view, replace the various:\n\n> > SetPartitions     SetPartitionsIk   SetPartitionsRk\n> > SetPartitionsAk   SetPartitionsPRk  SetPartitionsSk\n> > SetPartitionsBk   SetPartitionsPk   SetPartitionsTk\n\n\nBy something like:\n \tSetPartitions(..., type=[\"A\",3])\n\nSee also: http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5458\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nRefactor the set partitions code to have a single entry point in the global name space for the various types. I.e. from the user point of view, replace the following names in the global name space:\n- SetPartitions, SetPartitionsIk, SetPartitionsRk, SetPartitionsAk, SetPartitionsPRk  SetPartitionsSk, SetPartitionsBk, SetPartitionsPk, SetPartitionsTk\n\nBy something like:\n \tSetPartitions(..., type=[\"A\",3])\n\nSee also: http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5458\n\n",
+    "closed_at": "2013-07-23T14:30:55Z",
     "created_at": "2009-03-08T21:03:46Z",
     "labels": [
         "component: combinatorics",
@@ -20,12 +21,8 @@ Assignee: @mwhansen
 
 CC:  sage-combinat
 
-Refactor the set partitions code to have a single entry point in the global name space for the various types. I.e. from the user point of view, replace the various:
-
-> > SetPartitions     SetPartitionsIk   SetPartitionsRk
-> > SetPartitionsAk   SetPartitionsPRk  SetPartitionsSk
-> > SetPartitionsBk   SetPartitionsPk   SetPartitionsTk
-
+Refactor the set partitions code to have a single entry point in the global name space for the various types. I.e. from the user point of view, replace the following names in the global name space:
+- SetPartitions, SetPartitionsIk, SetPartitionsRk, SetPartitionsAk, SetPartitionsPRk  SetPartitionsSk, SetPartitionsBk, SetPartitionsPk, SetPartitionsTk
 
 By something like:
  	SetPartitions(..., type=["A",3])

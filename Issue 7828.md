@@ -3,10 +3,11 @@
 archive/issues_007828.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7828\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: sign sgn\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7828\n\n",
+    "closed_at": "2010-06-06T08:37:15Z",
     "created_at": "2010-01-03T05:34:19Z",
     "labels": [
-        "component: algebra",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -18,6 +19,8 @@ archive/issues_007828.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: sign sgn
 
 
 

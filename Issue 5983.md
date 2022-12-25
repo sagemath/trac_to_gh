@@ -1,9 +1,10 @@
-# Issue 5983: cmp related doctest failure in sage/schemes/jacobians/abstract_jacobian.py
+# Issue 5983: [with patch, positive review] cmp related doctest failure in sage/schemes/jacobians/abstract_jacobian.py
 
 archive/issues_005983.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  alexghitza\n\nThis says it all and fails on occasion due to memory layout, etc. Writing a doctest this way is **wrong**:\n\n```\nsage -t -long \"devel/sage/sage/schemes/jacobians/abstract_jacobian.py\"\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2/sage-3.4.2-eno-gcc-4.3.3/devel/sage/sage/schemes/jacobians/abstract_jacobian.py\", line 118:\n    sage: J1 < P2\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2/sage-3.4.2-eno-gcc-4.3.3/devel/sage/sage/schemes/jacobians/abstract_jacobian.py\", line 120:\n    sage: J1 > P2\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\nI am CCing Alex since I believe he wrote this doctest :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5983\n\n",
+    "closed_at": "2009-05-05T04:21:02Z",
     "created_at": "2009-05-05T03:39:23Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005983.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "cmp related doctest failure in sage/schemes/jacobians/abstract_jacobian.py",
+    "title": "[with patch, positive review] cmp related doctest failure in sage/schemes/jacobians/abstract_jacobian.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5983",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

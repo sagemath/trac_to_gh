@@ -4,6 +4,7 @@ archive/issues_007361.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: graph regular\n\nThe attached patch implements a method that checks whether a graph is regular.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7361\n\n",
+    "closed_at": "2009-11-02T04:27:46Z",
     "created_at": "2009-10-31T14:11:02Z",
     "labels": [
         "component: graph theory",

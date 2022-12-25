@@ -3,7 +3,8 @@
 archive/issues_001581.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(.1).translate(1,2,3).show()\n```\n\ndoes not adjust the viewpoint, etc. to include the sphere, so it confusingly looks like a blank plot until, for example, the interactive version is rotated around.  It would be nice to have at least some part of the plot, if not the whole thing, visible by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1581\n\n",
+    "body": "Assignee: @robertwb\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(.1).translate(1,2,3).show()\n```\n\ndoes not adjust the viewpoint, etc. to include the sphere, so it confusingly looks like a blank plot until, for example, the interactive version is rotated around.  It would be nice to have at least some part of the plot, if not the whole thing, visible by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1581\n\n",
+    "closed_at": "2008-01-15T06:14:01Z",
     "created_at": "2007-12-21T08:58:06Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_001581.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 ```
 from sage.plot.plot3d.all import Sphere

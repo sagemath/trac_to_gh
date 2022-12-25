@@ -1,9 +1,10 @@
-# Issue 4114: [with patch, needs review] hang in lisp.py on OS X 10.5
+# Issue 4114: [with patch, positive review] hang in lisp.py on OS X 10.5
 
 archive/issues_004114.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nOne *major* issue that remains is that the lisp.py doctest hangs forever\non OS X ppc 10.5:\n\nsage -t -long devel/sage/sage/interfaces/lie.py\n        [5.5 s]\nsage -t -long devel/sage/sage/interfaces/lisp.py\n\n^Z [[10 hours later!]]\n[1]+  Stopped                 ./bb\nclement-pernets-imac-g5:~ was$\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4114\n\n",
+    "closed_at": "2008-09-14T09:11:21Z",
     "created_at": "2008-09-14T06:45:11Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_004114.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] hang in lisp.py on OS X 10.5",
+    "title": "[with patch, positive review] hang in lisp.py on OS X 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4114",
     "user": "https://github.com/mwhansen"

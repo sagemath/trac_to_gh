@@ -1,9 +1,10 @@
-# Issue 5764: [with patch, needs review] improve doctest coverage for sageinspect.py
+# Issue 5764: [with patch, positive review] improve doctest coverage for sageinspect.py
 
 archive/issues_005764.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nAs the summary says...\n\nUnfortunately, running 'sage -coverage' on this file doesn't yield 100% because it gets confused by, for example, a string containing 'def test1' -- it thinks this is a function without a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5764\n\n",
+    "closed_at": "2009-04-13T22:57:11Z",
     "created_at": "2009-04-11T22:23:22Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005764.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] improve doctest coverage for sageinspect.py",
+    "title": "[with patch, positive review] improve doctest coverage for sageinspect.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5764",
     "user": "https://github.com/jhpalmieri"

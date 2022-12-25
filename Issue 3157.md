@@ -1,16 +1,17 @@
-# Issue 3157: [with patch, needs trivial review] Executable target for pbuild
+# Issue 3157: [with patch, positive review] Executable target for pbuild
 
 archive/issues_003157.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThis patch adds a GCC executable extension for pbuild\n\nIssue created by migration from https://trac.sagemath.org/ticket/3157\n\n",
+    "closed_at": "2008-05-11T10:04:27Z",
     "created_at": "2008-05-11T10:01:12Z",
     "labels": [
         "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs trivial review] Executable target for pbuild",
+    "title": "[with patch, positive review] Executable target for pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3157",
     "user": "https://github.com/garyfurnish"

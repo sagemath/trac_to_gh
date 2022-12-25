@@ -4,6 +4,7 @@ archive/issues_004514.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe element below is constructed as an element of GL(2,7), but when converted into an element in GL(2,7) it is not equal to itself.\n\n```\nsage: G = GL(2,7)\nsage: z = G.center().an_element()\nsage: z\n[3 0]\n[0 3]\nsage: z in G\nTrue\nsage: G(z)\n[3 0]\n[0 3]\nsage: G(z) == z\nFalse\nsage: G(G(z)) == G(z)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4514\n\n",
+    "closed_at": "2008-11-14T17:49:08Z",
     "created_at": "2008-11-13T17:20:00Z",
     "labels": [
         "component: algebra",

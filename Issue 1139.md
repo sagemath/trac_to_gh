@@ -1,22 +1,23 @@
-# Issue 1139: nintegral fails for large precision (version 2.8.12)
+# Issue 1139: [with patch, positive review] nintegral fails for large precision (version 2.8.12)
 
 archive/issues_001139.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\n```\nsage: f=x\nsage: f.nintegral(x,0,1,1e-14)\nMaxima ERROR:\n         ***MESSAGE FROM ROUTINE DQAGS IN LIBRARY SLATEC.\n ***POTENTIALLY RECOVERABLE ERROR, PROG ABORTED, TRACEBACK REQUESTED\n *  ABNORMAL RETURN\n *  ERROR NUMBER = 6\n *   \n ***END OF MESSAGE\n \n ***JOB ABORT DUE TO UNRECOVERED ERROR.\n0          ERROR MESSAGE SUMMARY\n LIBRARY    SUBROUTINE MESSAGE START             NERR     LEVEL     COUNT\n SLATEC     DQAGS      ABNORMAL RETURN              6         1         2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1139\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: f=x\nsage: f.nintegral(x,0,1,1e-14)\nMaxima ERROR:\n         ***MESSAGE FROM ROUTINE DQAGS IN LIBRARY SLATEC.\n ***POTENTIALLY RECOVERABLE ERROR, PROG ABORTED, TRACEBACK REQUESTED\n *  ABNORMAL RETURN\n *  ERROR NUMBER = 6\n *   \n ***END OF MESSAGE\n \n ***JOB ABORT DUE TO UNRECOVERED ERROR.\n0          ERROR MESSAGE SUMMARY\n LIBRARY    SUBROUTINE MESSAGE START             NERR     LEVEL     COUNT\n SLATEC     DQAGS      ABNORMAL RETURN              6         1         2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1139\n\n",
+    "closed_at": "2007-12-17T22:14:03Z",
     "created_at": "2007-11-10T15:39:07Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "nintegral fails for large precision (version 2.8.12)",
+    "title": "[with patch, positive review] nintegral fails for large precision (version 2.8.12)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1139",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: jkantor
+Assignee: @mwhansen
 
 ```
 sage: f=x

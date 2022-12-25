@@ -1,9 +1,10 @@
-# Issue 1366: speed up "sage -br" -- make it cache the dependency diagram instead of computing it every time
+# Issue 1366: [with patch, with positive review] speed up "sage -br" -- make it cache the dependency diagram instead of computing it every time
 
 archive/issues_001366.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf you do \"sage -br\" on a very very fast machine, it still takes nearly\n10 seconds.  This is in a sense a bug, because it should take < 0.4 seconds.\nIt takes a long time, since the entire dependency graph for all .pyx files\nis being computed every single time.  This information should somehow be cached,\nwhich would vastly speed things up. \n\nI consider this a bug since the performance is so bad as to make \"sage -br\"\nvery painful. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1366\n\n",
+    "closed_at": "2008-02-10T01:26:31Z",
     "created_at": "2007-12-02T06:15:13Z",
     "labels": [
         "component: user interface",
@@ -11,7 +12,7 @@ archive/issues_001366.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "speed up \"sage -br\" -- make it cache the dependency diagram instead of computing it every time",
+    "title": "[with patch, with positive review] speed up \"sage -br\" -- make it cache the dependency diagram instead of computing it every time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1366",
     "user": "https://github.com/williamstein"

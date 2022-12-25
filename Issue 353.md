@@ -3,7 +3,8 @@
 archive/issues_000353.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThanks.  It turns out that the chroot jail that runs the notebooks\nran out of disk space.  I've cleared off some files and now it works\nagain.  Interestingly, there are over 4000 worksheets at sagenb.org\nand an additional over 4000 worksheets at sagenb.com.  Some are\nweird things like index_asp.\n\nWe should make creating a new worksheet require clicking a button\nor something in addition to just typing in a new url.  Also, there should\nbe an easy way to dele\n\nIssue created by migration from https://trac.sagemath.org/ticket/353\n\n",
+    "body": "Assignee: @williamstein\n\nThanks.  It turns out that the chroot jail that runs the notebooks\nran out of disk space.  I've cleared off some files and now it works\nagain.  Interestingly, there are over 4000 worksheets at sagenb.org\nand an additional over 4000 worksheets at sagenb.com.  Some are\nweird things like index_asp.\n\nWe should make creating a new worksheet require clicking a button\nor something in addition to just typing in a new url.  Also, there should\nbe an easy way to dele\n\nIssue created by migration from https://trac.sagemath.org/ticket/353\n\n",
+    "closed_at": "2008-03-18T10:15:35Z",
     "created_at": "2007-04-20T15:05:22Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_000353.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 Thanks.  It turns out that the chroot jail that runs the notebooks
 ran out of disk space.  I've cleared off some files and now it works

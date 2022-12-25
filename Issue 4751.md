@@ -1,16 +1,17 @@
-# Issue 4751: if spkg/standard contains an extracted directory then "sage -upgrade" fails in multiple ways
+# Issue 4751: [with patch; positive review] if spkg/standard contains an extracted directory then "sage -upgrade" fails in multiple ways
 
 archive/issues_004751.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n  File \"/home/was/build/sage-3.2.2.alpha0/local/bin/sage-update\", line 178, in do_update\n    if 'Placeholder spkg file' in open(F).readline():\nIOError: [Errno 21] Is a directory\nError getting new packages!\nwas@sage:~/build/sage-3.2.2.alpha0$ \n```\n\nAlso, later it would try to move the directory out of the way, which will fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4751\n\n",
+    "closed_at": "2008-12-11T11:15:16Z",
     "created_at": "2008-12-10T13:28:03Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "if spkg/standard contains an extracted directory then \"sage -upgrade\" fails in multiple ways",
+    "title": "[with patch; positive review] if spkg/standard contains an extracted directory then \"sage -upgrade\" fails in multiple ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4751",
     "user": "https://github.com/williamstein"

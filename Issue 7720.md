@@ -6,8 +6,7 @@ archive/issues_007720.json:
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThis function should be rewritten much more efficiently :\n\nFirst, there should be a way to reverse the arcs \"in place\" ( without building a copy, by modifying the current graph -- I do not know if the expression used in frech translates in this case ). Such a function, for c_graphs, should be written in Cython and consist in the case of sparse graph in reverting the two copies kept of the graph.\nIn the end, this function should consist in an (optional) copy of the graph (=fast) and a call to the functionr reverting the arcs ( O(1) )\n\nIf possible and if deemed useful, the same should be made for NetworkX graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7720\n\n",
     "created_at": "2009-12-17T12:47:49Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Digraph.reverse() should be rewritten more efficiently ( not hard )",

@@ -3,7 +3,8 @@
 archive/issues_000483.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n* fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel\n\n* add doc on how to do ssh through hops \n(that's 5828.patch )\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/483\n\n",
+    "body": "Assignee: pdehaye\n\n* fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel\n\n* add doc on how to do ssh through hops \n(that's 5828.patch )\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/483\n\n",
+    "closed_at": "2007-08-29T03:11:33Z",
     "created_at": "2007-08-23T10:06:39Z",
     "labels": [
         "component: user interface",
@@ -17,7 +18,7 @@ archive/issues_000483.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"
 }
 ```
-Assignee: @williamstein
+Assignee: pdehaye
 
 * fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel
 

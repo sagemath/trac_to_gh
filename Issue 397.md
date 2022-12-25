@@ -4,6 +4,7 @@ archive/issues_000397.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attache file is a patch to allow the following code to work:\n\n```\nsage: e = 7\nsage: e.digits(2)\n[1, 1, 1]\nsage: e.digits(3)\n[1, 2]\nsage: e.digits(10)\n[7]\nsage: ZZ(e.digits(3),3)\n7\n```\nThe return type of ZZ.digits() is a list with Integer entries in little endian order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/397\n\n",
+    "closed_at": "2007-08-09T13:32:36Z",
     "created_at": "2007-06-30T18:27:03Z",
     "labels": [
         "component: basic arithmetic",

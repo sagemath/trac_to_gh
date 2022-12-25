@@ -1,9 +1,10 @@
-# Issue 5329: [with patch; needs review] sage-3.3.rc3 -- latex mistake
+# Issue 5329: [with patch; positive review] sage-3.3.rc3 -- latex mistake
 
 archive/issues_005329.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5329\n\n",
+    "closed_at": "2009-02-21T09:41:04Z",
     "created_at": "2009-02-21T08:50:09Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005329.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch; needs review] sage-3.3.rc3 -- latex mistake",
+    "title": "[with patch; positive review] sage-3.3.rc3 -- latex mistake",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5329",
     "user": "https://github.com/williamstein"

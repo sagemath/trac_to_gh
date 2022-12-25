@@ -1,22 +1,24 @@
-# Issue 6168: FLINT wrapper not reducing coefficients properly
+# Issue 6168: [with patch, positive review] FLINT wrapper not reducing coefficients properly
 
 archive/issues_006168.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIt is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nFalse\nsage: f.degree()\n1\n```\n\nInternally the coefficient 5 is not reduced, but it prints as reduced.\n\nThis bug is probably the main cause of #5817.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6168\n\n",
+    "body": "Assignee: somebody\n\nIt is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nFalse\nsage: f.degree()\n1\n```\n\nInternally the coefficient 5 is not reduced, but it prints as reduced.\n\nThis bug is probably the main cause of #5817.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6168\n\n",
+    "closed_at": "2009-06-03T18:26:22Z",
     "created_at": "2009-05-31T05:40:26Z",
     "labels": [
-        "component: algebra",
+        "component: basic arithmetic",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "FLINT wrapper not reducing coefficients properly",
+    "title": "[with patch, positive review] FLINT wrapper not reducing coefficients properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6168",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: tbd
+Assignee: somebody
 
 It is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:
 

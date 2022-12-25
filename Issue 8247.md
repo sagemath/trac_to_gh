@@ -1,9 +1,10 @@
-# Issue 8247: Remove package GLPK 3.9
+# Issue 8247: Remove package GLPK 4.9
 
 archive/issues_008247.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  mvngu\n\nExperimental package glpk 4.9 should be removed\n\n* We have a more recent version of GLPK (v 4.38)\n* No one seems to know who is the package maintainer of 4.9\n* there does not seem to be any reason for having 2 different GLPK packages as 4.9 only contains glpk and no custom code... \n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8247\n\n",
+    "closed_at": "2010-02-14T16:40:43Z",
     "created_at": "2010-02-12T08:41:56Z",
     "labels": [
         "component: packages: optional",
@@ -11,7 +12,7 @@ archive/issues_008247.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Remove package GLPK 3.9",
+    "title": "Remove package GLPK 4.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8247",
     "user": "https://github.com/nathanncohen"

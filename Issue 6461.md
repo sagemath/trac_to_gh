@@ -1,15 +1,16 @@
-# Issue 6461: Schaefer's Simplified Data Encryption Standard for educational purposes
+# Issue 6461: [with patch, positive review] Schaefer's Simplified Data Encryption Standard for educational purposes
 
 archive/issues_006461.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @malb\n\nKeywords: cryptography, DES, S-DES\n\nThis is a follow-up to #6164. The goal here is to implement the S-DES block cipher of Schaefer as described in the paper:\n\nE. Schaefer. A simplified data encryption algorithm. Cryptologia, 20(1):77--84, 1996.\n\nThis is a simplified variant of the Data Encryption Standard (DES) to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6461\n\n",
+    "closed_at": "2009-08-23T14:01:48Z",
     "created_at": "2009-07-04T09:44:37Z",
     "labels": [
         "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Schaefer's Simplified Data Encryption Standard for educational purposes",
+    "title": "[with patch, positive review] Schaefer's Simplified Data Encryption Standard for educational purposes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6461",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

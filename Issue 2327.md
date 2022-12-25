@@ -1,9 +1,10 @@
-# Issue 2327: libgcrypt can't find libgpg-error headers
+# Issue 2327: [with spkg, positive review] libgcrypt can't find libgpg-error headers
 
 archive/issues_002327.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNew spkg coming up. The problem is that CPPFLAGFS isn't set at all.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2327\n\n",
+    "closed_at": "2008-02-27T08:23:16Z",
     "created_at": "2008-02-27T05:46:37Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002327.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "libgcrypt can't find libgpg-error headers",
+    "title": "[with spkg, positive review] libgcrypt can't find libgpg-error headers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2327",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

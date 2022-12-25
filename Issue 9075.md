@@ -3,7 +3,8 @@
 archive/issues_009075.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9075\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: pickling, testsuite\n\nImproves the output of unpickling error to make it possible to reproduce the problems individually by copy-paste.\n\nAlso adds an option run_test_suite which catches many glitches in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9075\n\n",
+    "closed_at": "2010-11-01T10:06:31Z",
     "created_at": "2010-05-28T17:38:25Z",
     "labels": [
         "component: pickling"
@@ -19,7 +20,11 @@ Assignee: @williamstein
 
 CC:  sage-combinat
 
+Keywords: pickling, testsuite
 
+Improves the output of unpickling error to make it possible to reproduce the problems individually by copy-paste.
+
+Also adds an option run_test_suite which catches many glitches in Sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9075
 

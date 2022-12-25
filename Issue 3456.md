@@ -4,10 +4,11 @@ archive/issues_003456.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nKeywords: notebook database sql\n\nThe public notebook is useless as is.  Life will be better with SQL.  This is probably a duplicate, but I couldn't find the original ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3456\n\n",
+    "closed_at": "2014-09-18T18:00:06Z",
     "created_at": "2008-06-18T01:25:47Z",
     "labels": [
         "component: notebook",
-        "blocker"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SQLize the notebook",

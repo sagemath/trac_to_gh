@@ -1,16 +1,17 @@
-# Issue 9026: Issues preventing 64-bit builds on various flavors of Solaris.
+# Issue 9026: METATICKET Issues preventing 64-bit builds on various flavors of Solaris.
 
 archive/issues_009026.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @dimpase @jaapspies mvngu @jhpalmieri robertw @williamstein\n\nThe following is list of the issues that are currently preventing Sage build on either\n\n* OpenSolaris (aka Solaris 11) on Intel/AMD x64. (e.g. 'disk')\n* Solaris 10 on Intel/AMD (e.g. 'fulva')\n* Solaris 10 on SPARC (e.g. 't2')\n\nThe list can be added as new problems are found, making what William calls a 'metaticket' \n\nPlease put \n* \"yes\" if the trac ticket is known, or one might reasonably expect it to cause a problem on a particular platform.\n* \"no\" if one knows the problem does not exist on that platform, or one reasonably expect it will not be an issue. \n* \"unknow\" if one can not determine if it will be an issue. \n\nAlthough OpenSolaris can run on the SPARC platform, very few people run it, so there is little to be gained by tracking issues on that platform. (David Kirkby does not have OpenSolaris installed on any of his SPARC systems)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9026\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @dimpase @jaapspies mvngu @jhpalmieri robertw @williamstein\n\nThe following is list of the issues that are currently preventing Sage build 64-bit on either\n\n* OpenSolaris (aka Solaris 11) on Intel/AMD x64. (e.g. 'disk')\n* Solaris 10 on Intel/AMD (e.g. 'fulva')\n* Solaris 10 on SPARC (e.g. 't2')\n\nThe list can be added as new problems are found, making what William calls a 'metaticket' \n\nPlease put \n* \"bug\" if one knows, or might reasonable expect, it to cause a problem on a particular platform.\n* \"OK\" if one knows the problem does not exist on that platform, or one reasonably expect it will not be an issue. \n* \"unknown\" if one can not determine if it will be an issue. \n\nAlthough OpenSolaris can run on the SPARC platform, very few people run it, so there is little to be gained by tracking issues on that platform. (David Kirkby does not have OpenSolaris installed on any of his SPARC systems)\n\n|        |         |             |           |                    |         |\n|--------|---------|-------------|-----------|--------------------|---------|\n|**Trac**|**Title**|**S10 SPARC**|**S10 x64**| **OpenSolaris x64**|**Notes**|\n|#7861|pynac not building on Open Solaris x64 (32-bit/64-bit mixup)|unknown|unknown|bug||\n|#7864|libfplll tries to link 64-bit objects to 32-bit libstdc++.so|unknown|unknown|bug||\n|#7982|sage_fortran is not working properly on Open Solaris x64 in 64 bit mode.|bug|bug|bug||\n|#8086|numpy fails to build on Open Solaris x64 - 32 / 64-bit mixup|unknown|unknown|bug||\n|#8089|ecl 9.10.2-20091105cvs.p1 fails to build on Open Solaris x64|unknown|unknown|bug||\n|#9008|Update zlib to latest upstream, and clean up spkg-install|bug|unknown|bug||\n|#9009|Mercurial is not building 64-bit with OpenSolaris with SAGE64=yes.|bug|bug|bug||\n|#9022|python fails to build _socket on OpenSolaris x64, so ipython fails to build.|unknown|unknown|bug||\n|#9023|ghmm needs compiler flag -m64 when SAGE64 is set to \"yes\"|bug|bug|bug||\n|#9024|tachyon is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to \"yes\"|bug|bug|bug||\n|#9025|PALP is building 32-bit on OpenSolaris - probably other platforms too.|bug|bug|bug||\n|#9029|sympow is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to \"yes\"|bug|bug|bug||\n|#9030|rubiks is building part 32-bit and part 64-bit on OpenSolaris x64.|bug|bug|bug||\n|#9034|flintqs builds as 32-bit despite SAGE64=yes on OpenSolaris x64|bug|bug|bug||\n|#9037|pynac fails to build on 64-bit OpenSolaris x64.|bug|bug|bug|Pynac 0.2 now in Sage. That must be fixed - see #8903 too|\n|#9040|fatal relocation error installing R on OpenSolaris|unknown|unknown|bug|We many need to build R with SunStudio on OpenSolaris or Solaris 10 on x64|\n|#9041|python fails to build _socket on OpenSolaris x64, so pygments fails to build.|unknown|unknown|bug||\n|#9042|Cython fails to build on OpenSolaris x64|unknown|unknown|bug||\n|#9043|lcalc failing to build on OpenSolaris x64.|bug|bug|bug||\n|#9097|c_lib in Sage library fails to build on OpenSolaris x64|unknown|unknown|bug||\n|#9098|gap buillds 32-bit on OpenSolaris when SAGE64=yes|bug|bug|bug||\n|#9099|Maxima fails to build on OpenSolaris x64, though ECL does.|OK|bug|bug||\n|#9100|scipy is probably building part 32-bit on OpenSolaris x64 when SAGE64=yes|unknown|unknown|bug|This is odd - see trac ticket|\n|#9101|linbox reports \"ERROR: BLAS not found!\" on Solaris 10 SPARC (64-bit build).|bug|unknown|OK|It should use ATLAS, which mis-compiled as 32-bit|\n|#9358|zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install|bug|bug|bug|**positive review**|\n|#9397|Resolve corrupted patches to permit Singular to build on Solaris x86/x64|bug|unknown|OK|Should be fixed by update of Singular at #8059 |\n|#9399|Remove Sun-specific junk in rings/finite_rings/stdint.h|OK|bug|bug||\n|#9508|Fix all ATLAS build problems on Solaris/OpenSolaris|bug|bug|bug||\n|#9643|Force ECL to disable assembly code on Solaris 10 x86 as it does on OpenSolaris|OK|bug|OK|**Positive review** (OpenSolaris issue was resolved in #9474)|\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9026\n\n",
+    "closed_at": "2020-04-01T14:48:46Z",
     "created_at": "2010-05-24T00:14:01Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Issues preventing 64-bit builds on various flavors of Solaris.",
+    "title": "METATICKET Issues preventing 64-bit builds on various flavors of Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9026",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -20,7 +21,7 @@ Assignee: drkirkby
 
 CC:  @dimpase @jaapspies mvngu @jhpalmieri robertw @williamstein
 
-The following is list of the issues that are currently preventing Sage build on either
+The following is list of the issues that are currently preventing Sage build 64-bit on either
 
 * OpenSolaris (aka Solaris 11) on Intel/AMD x64. (e.g. 'disk')
 * Solaris 10 on Intel/AMD (e.g. 'fulva')
@@ -29,11 +30,44 @@ The following is list of the issues that are currently preventing Sage build on 
 The list can be added as new problems are found, making what William calls a 'metaticket' 
 
 Please put 
-* "yes" if the trac ticket is known, or one might reasonably expect it to cause a problem on a particular platform.
-* "no" if one knows the problem does not exist on that platform, or one reasonably expect it will not be an issue. 
-* "unknow" if one can not determine if it will be an issue. 
+* "bug" if one knows, or might reasonable expect, it to cause a problem on a particular platform.
+* "OK" if one knows the problem does not exist on that platform, or one reasonably expect it will not be an issue. 
+* "unknown" if one can not determine if it will be an issue. 
 
 Although OpenSolaris can run on the SPARC platform, very few people run it, so there is little to be gained by tracking issues on that platform. (David Kirkby does not have OpenSolaris installed on any of his SPARC systems)
+
+|        |         |             |           |                    |         |
+|--------|---------|-------------|-----------|--------------------|---------|
+|**Trac**|**Title**|**S10 SPARC**|**S10 x64**| **OpenSolaris x64**|**Notes**|
+|#7861|pynac not building on Open Solaris x64 (32-bit/64-bit mixup)|unknown|unknown|bug||
+|#7864|libfplll tries to link 64-bit objects to 32-bit libstdc++.so|unknown|unknown|bug||
+|#7982|sage_fortran is not working properly on Open Solaris x64 in 64 bit mode.|bug|bug|bug||
+|#8086|numpy fails to build on Open Solaris x64 - 32 / 64-bit mixup|unknown|unknown|bug||
+|#8089|ecl 9.10.2-20091105cvs.p1 fails to build on Open Solaris x64|unknown|unknown|bug||
+|#9008|Update zlib to latest upstream, and clean up spkg-install|bug|unknown|bug||
+|#9009|Mercurial is not building 64-bit with OpenSolaris with SAGE64=yes.|bug|bug|bug||
+|#9022|python fails to build _socket on OpenSolaris x64, so ipython fails to build.|unknown|unknown|bug||
+|#9023|ghmm needs compiler flag -m64 when SAGE64 is set to "yes"|bug|bug|bug||
+|#9024|tachyon is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes"|bug|bug|bug||
+|#9025|PALP is building 32-bit on OpenSolaris - probably other platforms too.|bug|bug|bug||
+|#9029|sympow is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes"|bug|bug|bug||
+|#9030|rubiks is building part 32-bit and part 64-bit on OpenSolaris x64.|bug|bug|bug||
+|#9034|flintqs builds as 32-bit despite SAGE64=yes on OpenSolaris x64|bug|bug|bug||
+|#9037|pynac fails to build on 64-bit OpenSolaris x64.|bug|bug|bug|Pynac 0.2 now in Sage. That must be fixed - see #8903 too|
+|#9040|fatal relocation error installing R on OpenSolaris|unknown|unknown|bug|We many need to build R with SunStudio on OpenSolaris or Solaris 10 on x64|
+|#9041|python fails to build _socket on OpenSolaris x64, so pygments fails to build.|unknown|unknown|bug||
+|#9042|Cython fails to build on OpenSolaris x64|unknown|unknown|bug||
+|#9043|lcalc failing to build on OpenSolaris x64.|bug|bug|bug||
+|#9097|c_lib in Sage library fails to build on OpenSolaris x64|unknown|unknown|bug||
+|#9098|gap buillds 32-bit on OpenSolaris when SAGE64=yes|bug|bug|bug||
+|#9099|Maxima fails to build on OpenSolaris x64, though ECL does.|OK|bug|bug||
+|#9100|scipy is probably building part 32-bit on OpenSolaris x64 when SAGE64=yes|unknown|unknown|bug|This is odd - see trac ticket|
+|#9101|linbox reports "ERROR: BLAS not found!" on Solaris 10 SPARC (64-bit build).|bug|unknown|OK|It should use ATLAS, which mis-compiled as 32-bit|
+|#9358|zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install|bug|bug|bug|**positive review**|
+|#9397|Resolve corrupted patches to permit Singular to build on Solaris x86/x64|bug|unknown|OK|Should be fixed by update of Singular at #8059 |
+|#9399|Remove Sun-specific junk in rings/finite_rings/stdint.h|OK|bug|bug||
+|#9508|Fix all ATLAS build problems on Solaris/OpenSolaris|bug|bug|bug||
+|#9643|Force ECL to disable assembly code on Solaris 10 x86 as it does on OpenSolaris|OK|bug|OK|**Positive review** (OpenSolaris issue was resolved in #9474)|
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9026

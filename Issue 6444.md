@@ -3,10 +3,11 @@
 archive/issues_006444.json:
 ```json
 {
-    "body": "Assignee: tbd\n\ntest, please ignore\n\nIssue created by migration from https://trac.sagemath.org/ticket/6444\n\n",
+    "body": "Assignee: cwitty\n\ntest, please ignore\n\nIssue created by migration from https://trac.sagemath.org/ticket/6444\n\n",
+    "closed_at": "2009-07-19T06:32:11Z",
     "created_at": "2009-06-29T08:34:48Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_006444.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: cwitty
 
 test, please ignore
 

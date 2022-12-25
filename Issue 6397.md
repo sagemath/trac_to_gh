@@ -1,4 +1,4 @@
-# Issue 6397: implement general Newton's method root finding for power series rings
+# Issue 6397: [with patch, needs work] implement general Newton's method root finding for power series rings
 
 archive/issues_006397.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_006397.json:
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
-    "title": "implement general Newton's method root finding for power series rings",
+    "title": "[with patch, needs work] implement general Newton's method root finding for power series rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6397",
     "user": "https://github.com/ncalexan"

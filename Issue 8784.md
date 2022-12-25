@@ -4,6 +4,7 @@ archive/issues_008784.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nIt is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function \"quit_sage()\" available at the sage: prompt by default that does not quit sage, is dumb. \n\n```\nwstein@boxen:~/build/sage-4.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: quit_sage()\nExiting Sage (CPU time 0m0.04s, Wall time 0m3.16s).\nsage: quit\nExiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).\n/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython \"$@\" -i\nwstein@boxen:~/build/sage-4.4$            \n```\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix is to rename quit_sage() somehow and change *all* code that calls it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8784\n\n",
+    "closed_at": "2022-04-02T10:53:24Z",
     "created_at": "2010-04-27T20:47:41Z",
     "labels": [
         "component: misc",

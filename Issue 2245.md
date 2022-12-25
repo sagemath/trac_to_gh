@@ -1,15 +1,16 @@
-# Issue 2245: abvar -- increase the doctest coverage to 100%
+# Issue 2245: [with patches; with positive review] abvar -- increase the doctest coverage to 100%
 
 archive/issues_002245.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe doctest coverage for devel/sage/sage/modular/abvar is as follows:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 62% (20 of 32)\nabvar_ambient_jacobian.py: 28% (2 of 7)\nabvar_modsym_factor.py: 60% (3 of 5)\nabvar_newform.py: 0% (0 of 1)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 16% (1 of 6)\nfinite_subgroup.py: 12% (4 of 33)\nhecke_operator.py: 66% (4 of 6)\nhomology.py: 57% (16 of 28)\nhomspace.py: 0% (0 of 2)\nlseries.py: 0% (0 of 6)\nmorphism.py: 0% (0 of 2)\ntorsion_point.py: 0% (0 of 2)\ntorsion_subgroup.py: 37% (3 of 8)\n\nOverall weighted coverage score:  39.4%\nTotal number of functions:  141\n```\n\nThe goal of this ticket is to change that to 100%.\n\nThis is in preparation for substantial work to move\nthe modular abelian varieties package forward in preparation\nfor lots of enhancements to it that are coming up. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2245\n\n",
+    "closed_at": "2008-03-03T12:56:23Z",
     "created_at": "2008-02-21T07:31:34Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "abvar -- increase the doctest coverage to 100%",
+    "title": "[with patches; with positive review] abvar -- increase the doctest coverage to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2245",
     "user": "https://github.com/williamstein"

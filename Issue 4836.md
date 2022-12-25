@@ -3,10 +3,11 @@
 archive/issues_004836.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nthe pari interface relies on the function getattr(), e.g. as in\n\n```\nzk_basis = K.pari_nf().getattr('zk')\n```\nbut I *really* don't like this function!  Each of these dot-attributes\nin pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are\neasier when running gp than remembering which field is which in the\nnf/bnf structures.  There are not very many of these (I started making\na list).  But what I do not like is the implementation of getattr() in\nSage:\n\n```\n   def getattr(self, attr):\n       t0GEN(str(self) + '.' + str(attr))\n       _sig_on\n       return self.new_gen(t0)\n```\nSo it converts the nf into a string (in my examples, that's a string\nof length 59604), adds \".zk\" to it, and reparses the input (using the\ngp parser).\n\nWe could instead implement the getattr function with a dictionary like\nthis for an nf:\n\n```\n{('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),\n```\netc   (where the numbers are indices into the array so should actually have 1 subtracted\nfrom them).\n\nThe only disadvantage I can see for this is that new versions of pari\nmight change the indices -- though I doubt that happens often, as you\ncan see from the existence of unused fields which are just there to\npad arrays to the expected length.  And in any case doctests would\nfind these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4836\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nKeywords: pari gp getattr\n\nthe pari interface relies on the function getattr(), e.g. as in\n\n```\nzk_basis = K.pari_nf().getattr('zk')\n```\nbut I *really* don't like this function!  Each of these dot-attributes\nin pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are\neasier when running gp than remembering which field is which in the\nnf/bnf structures.  There are not very many of these (I started making\na list).  But what I do not like is the implementation of getattr() in\nSage:\n\n```\n   def getattr(self, attr):\n       t0GEN(str(self) + '.' + str(attr))\n       _sig_on\n       return self.new_gen(t0)\n```\nSo it converts the nf into a string (in my examples, that's a string\nof length 59604), adds \".zk\" to it, and reparses the input (using the gp parser).\n\nMore generally: using PARI through the string interface (i.e. `pari(\"some string\")`) should be avoided when it might give a large overhead.\n\nDependencies: #9898, #9753\n\nIssue created by migration from https://trac.sagemath.org/ticket/4836\n\n",
+    "closed_at": "2010-09-28T11:05:18Z",
     "created_at": "2008-12-20T12:08:49Z",
     "labels": [
-        "component: algebra"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "pari types getattr() function ugly and inefficient",
@@ -15,9 +16,11 @@ archive/issues_004836.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @jdemeyer
+
+Keywords: pari gp getattr
 
 the pari interface relies on the function getattr(), e.g. as in
 
@@ -38,23 +41,11 @@ Sage:
        return self.new_gen(t0)
 ```
 So it converts the nf into a string (in my examples, that's a string
-of length 59604), adds ".zk" to it, and reparses the input (using the
-gp parser).
+of length 59604), adds ".zk" to it, and reparses the input (using the gp parser).
 
-We could instead implement the getattr function with a dictionary like
-this for an nf:
+More generally: using PARI through the string interface (i.e. `pari("some string")`) should be avoided when it might give a large overhead.
 
-```
-{('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),
-```
-etc   (where the numbers are indices into the array so should actually have 1 subtracted
-from them).
-
-The only disadvantage I can see for this is that new versions of pari
-might change the indices -- though I doubt that happens often, as you
-can see from the existence of unused fields which are just there to
-pad arrays to the expected length.  And in any case doctests would
-find these.
+Dependencies: #9898, #9753
 
 Issue created by migration from https://trac.sagemath.org/ticket/4836
 

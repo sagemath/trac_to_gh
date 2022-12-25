@@ -1,16 +1,17 @@
-# Issue 6109: Bring documentation for QQbar up to 100% and add to reference manual
+# Issue 6109: [with patch, positive review] Bring documentation for QQbar up to 100% and add to reference manual
 
 archive/issues_006109.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  cwitty\n\nKeywords: QQbar documentation\n\nThis is not good:\n\nsage/rings/qqbar.py\nSCORE sage/rings/qqbar.py: 40% (110 of 272)\n\nand we also need to put this into the reference manual.  It is not totally clear which section, so I'll start out by putting it into number_fields.rst.\n\nI discovered this while trying to actually use the class, of course...so I will have a go but might need to consult Carl.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6109\n\n",
+    "closed_at": "2009-06-01T00:00:26Z",
     "created_at": "2009-05-21T08:29:20Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Bring documentation for QQbar up to 100% and add to reference manual",
+    "title": "[with patch, positive review] Bring documentation for QQbar up to 100% and add to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6109",
     "user": "https://github.com/JohnCremona"

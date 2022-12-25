@@ -1,15 +1,16 @@
-# Issue 996: Isomorph-Free Exhaustive Generation
+# Issue 996: [with patch] Isomorph-Free Exhaustive Generation
 
 archive/issues_000996.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nImplements a new feature that quickly generates representatives of distinct isomorphism classes satisfying some vertex-heredetary property.\n\nIssue created by migration from https://trac.sagemath.org/ticket/996\n\n",
+    "closed_at": "2007-10-27T03:08:44Z",
     "created_at": "2007-10-25T06:23:04Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "Isomorph-Free Exhaustive Generation",
+    "title": "[with patch] Isomorph-Free Exhaustive Generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/996",
     "user": "https://github.com/rlmill"

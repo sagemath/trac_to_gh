@@ -4,9 +4,10 @@ archive/issues_008127.json:
 ```json
 {
     "body": "Assignee: @videlec\n\nCC:  @seblabbe sage-combinat\n\nKeywords: string, word\n\nPython has low-level operations for strings and we should allow them for words. For example\n\n```\nsage: sage: s = \"ma maman est magique\"\nsage: s.split(' ')\n['ma', 'maman', 'est', 'magique']\nsage: s.split('ma')\n['', ' ', '', 'n est ', 'gique']\n```\n\nThe patch implements split and partition for words\n\n```\nsage: w = Word(\"ma maman est magique\")\nsage: w.split(' ')\n[word: ma, word: maman, word: est, word: magique]\nsage: w.split('ma')\n[word: , word:  , word: , word: n est , word: gique]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8127\n\n",
+    "closed_at": "2010-02-11T14:49:25Z",
     "created_at": "2010-01-29T23:05:14Z",
     "labels": [
-        "component: algebra"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Wraps string features into WordDatatypes",

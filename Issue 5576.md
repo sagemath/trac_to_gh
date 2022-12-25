@@ -1,15 +1,16 @@
-# Issue 5576: [with patch, needs review] MPolynomialSystem cleanup
+# Issue 5576: [with patch, positive review] MPolynomialSystem cleanup
 
 archive/issues_005576.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nKeywords: crypto\n\n* clean up of ReST in `mq.MPolynomialSystem`\n* improved documentation of `mq.MPolynomialSystem`\n* deprecated `mq.MPolynomialSystem_gf2e.change_ring()`\n* added `mq.MPolynomialSystem_gf2e.weil_restriction()`\n* added `mq.MPolynomialSystem.connected_components()`\n* added `mq.MPolynomialSystem.connection_graph()`\n* added `mq.MPolynomialSystem_gf2.eliminate_linear_variables()`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5576\n\n",
+    "closed_at": "2009-05-12T17:15:31Z",
     "created_at": "2009-03-20T13:39:50Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] MPolynomialSystem cleanup",
+    "title": "[with patch, positive review] MPolynomialSystem cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5576",
     "user": "https://github.com/malb"

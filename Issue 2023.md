@@ -1,17 +1,17 @@
-# Issue 2023: dynkin diagram weights
+# Issue 2023: Latex pictures for Dynkin diagram and misc improvements to Cartan types
 
 archive/issues_002023.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI may be misinterpreting something but it seems to me that\nsage: dynkin_diagram(['C',4]).show()\ndoes not display the Dynkin diagram of C_4 correctly.\nThere is a an online generator at http://www-math.mit.edu/~lesha/dynkin-diagrams.html\nwhich indicates the arrow and the long root in that case.\nAlso, there are no examples for that function but the docstring says\n\"Returns a DiGraph corresponding to the Dynkin diagram...\" but the Dynkin \ndiagram is not a digraph, AFAIK.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2023\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nDisplaying nice latex pictures for all Dynkin diagrams of affine and classical types.\n\nAlso:\n\n- Improves the description of which conventions are used for Dynkin\n  diagrams and Cartan matrices (Bourbaki/Kac).\n\n- Misc improvements to Cartan types, including a global option\n  for displaying Cartan types using Kac's conventions and much\n  documentation cleanup.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2023\n\n",
+    "closed_at": "2013-05-13T13:26:32Z",
     "created_at": "2008-02-01T04:54:06Z",
     "labels": [
         "component: combinatorics",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
-    "title": "dynkin diagram weights",
+    "title": "Latex pictures for Dynkin diagram and misc improvements to Cartan types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2023",
     "user": "https://github.com/wdjoyner"
@@ -21,14 +21,17 @@ Assignee: @mwhansen
 
 CC:  sage-combinat
 
-I may be misinterpreting something but it seems to me that
-sage: dynkin_diagram(['C',4]).show()
-does not display the Dynkin diagram of C_4 correctly.
-There is a an online generator at http://www-math.mit.edu/~lesha/dynkin-diagrams.html
-which indicates the arrow and the long root in that case.
-Also, there are no examples for that function but the docstring says
-"Returns a DiGraph corresponding to the Dynkin diagram..." but the Dynkin 
-diagram is not a digraph, AFAIK.
+Displaying nice latex pictures for all Dynkin diagrams of affine and classical types.
+
+Also:
+
+- Improves the description of which conventions are used for Dynkin
+  diagrams and Cartan matrices (Bourbaki/Kac).
+
+- Misc improvements to Cartan types, including a global option
+  for displaying Cartan types using Kac's conventions and much
+  documentation cleanup.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2023
 

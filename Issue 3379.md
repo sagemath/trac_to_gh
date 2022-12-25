@@ -1,9 +1,10 @@
-# Issue 3379: error in plotting 3d polytopes
+# Issue 3379: [with patch, positive review] error in plotting 3d polytopes
 
 archive/issues_003379.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: m = matrix([[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).transpose()\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: p.plot3d()\n\n---\nAttributeError                            Traceback (most recent call last)\n\n/home/mike/temp/natalie/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/geometry/lattice_polytope.py in plot3d(self, show_facets, facet_opacity, facet_color, show_edges, edge_thickness, edge_color, show_vertices, vertex_size, vertex_color, show_points, point_size, point_color, show_vindices, vindex_color, show_pindices, pindex_color, index_shift)\n   1447         if show_points:\n   1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],\n-> 1449                         size=point_size, rgbcolor=point_color)\n   1450         if show_pindices == None:\n   1451             show_pindices = show_points\n\n/opt/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/shapes2.py in point3d(v, size, **kwds)\n    506     else:\n    507         A = sum([Point(z, size, **kwds) for z in v])\n--> 508         A._set_extra_kwds(kwds)\n    509         return A\n    510     \n\nAttributeError: 'int' object has no attribute '_set_extra_kwds'\n\nIssue created by migration from https://trac.sagemath.org/ticket/3379\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: editor_mhansen\n\n```\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: m = matrix([[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).transpose()\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: p.plot3d()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/mike/temp/natalie/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/geometry/lattice_polytope.py in plot3d(self, show_facets, facet_opacity, facet_color, show_edges, edge_thickness, edge_color, show_vertices, vertex_size, vertex_color, show_points, point_size, point_color, show_vindices, vindex_color, show_pindices, pindex_color, index_shift)\n   1447         if show_points:\n   1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],\n-> 1449                         size=point_size, rgbcolor=point_color)\n   1450         if show_pindices == None:\n   1451             show_pindices = show_points\n\n/opt/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/shapes2.py in point3d(v, size, **kwds)\n    506     else:\n    507         A = sum([Point(z, size, **kwds) for z in v])\n--> 508         A._set_extra_kwds(kwds)\n    509         return A\n    510     \n\nAttributeError: 'int' object has no attribute '_set_extra_kwds'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3379\n\n",
+    "closed_at": "2008-06-23T12:24:18Z",
     "created_at": "2008-06-06T23:00:02Z",
     "labels": [
         "component: geometry",
@@ -11,20 +12,22 @@ archive/issues_003379.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "error in plotting 3d polytopes",
+    "title": "[with patch, positive review] error in plotting 3d polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3379",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mhampton
+Assignee: @mwhansen
 
+Keywords: editor_mhansen
+
+```
 sage: p = LatticePolytope(m, compute_vertices=True)
 sage: m = matrix([[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).transpose()
 sage: p = LatticePolytope(m, compute_vertices=True)
 sage: p.plot3d()
-
----
+---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
 
 /home/mike/temp/natalie/<ipython console> in <module>()
@@ -44,6 +47,7 @@ AttributeError                            Traceback (most recent call last)
     510     
 
 AttributeError: 'int' object has no attribute '_set_extra_kwds'
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3379
 

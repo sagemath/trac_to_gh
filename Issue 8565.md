@@ -4,6 +4,7 @@ archive/issues_008565.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n```\nthe summary is:\n-------------------\natan2(3,0)   --> 1/2*pi\natan2(-3,0)  --> -1/2*pi\natan2(pi,0)  --> 1/2*pi\natan2(-pi,0) -->  RuntimeError: power::eval(): division by zero\n--------------------\n```\n\nsage-devel thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/317e6bfe11fabb4\n\nalso reported on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/02f3446e68381346\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8565\n\n",
+    "closed_at": "2010-04-29T04:13:43Z",
     "created_at": "2010-03-20T10:33:22Z",
     "labels": [
         "component: symbolics",

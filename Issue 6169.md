@@ -1,16 +1,17 @@
-# Issue 6169: upgrade mpir to 1.2
+# Issue 6169: [with patch; positive review] upgrade mpir to 1.2
 
 archive/issues_006169.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n1. Upgrade mpir to version 1.2.\n\n2. Change the name of the spkg from gmp-mpir to mpir and the error message from \"there was a problem building gmp\" to there was a problem building \"mpir\", so there are no complaints about us muddying the name of gmp when something goes wrong with building mpir.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6169\n\n",
+    "closed_at": "2009-06-04T06:17:29Z",
     "created_at": "2009-05-31T07:51:14Z",
     "labels": [
         "component: packages: standard",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "upgrade mpir to 1.2",
+    "title": "[with patch; positive review] upgrade mpir to 1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6169",
     "user": "https://github.com/williamstein"

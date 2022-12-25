@@ -1,16 +1,17 @@
-# Issue 4571: merge sage's numpy.pxd with the cython numpy.pxd
+# Issue 4571: [with patch, positive review] merge sage's numpy.pxd with the cython numpy.pxd
 
 archive/issues_004571.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @robertwb dagss\n\n```\n[15:53] <robertwb> yep, we should merge them\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4571\n\n",
+    "closed_at": "2009-07-25T15:45:02Z",
     "created_at": "2008-11-20T21:56:56Z",
     "labels": [
-        "component: build",
+        "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "merge sage's numpy.pxd with the cython numpy.pxd",
+    "title": "[with patch, positive review] merge sage's numpy.pxd with the cython numpy.pxd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4571",
     "user": "https://github.com/jasongrout"

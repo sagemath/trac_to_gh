@@ -1,15 +1,15 @@
-# Issue 7998: Add William's Riemann Prime Counting Function code to Sage (EASY)
+# Issue 7998: Improve Prime Number Theory Function documentation and make mpmath.functions.riemannr a builtin
 
 archive/issues_007998.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @nexttime\n\nKeywords: Riemann prime counting function\n\nAdd William's Riemann Prime Counting Function code to Sage.\nThere is already source available at http://wstein.org/rh/rh/code/code.sage.\nI have found this very useful.  There has been talk of using Ri or an approximation in the prime_pi function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7998\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @nexttime\n\nKeywords: Riemann prime counting function\n\nSee comments below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7998\n\n",
     "created_at": "2010-01-19T15:17:52Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Add William's Riemann Prime Counting Function code to Sage (EASY)",
+    "title": "Improve Prime Number Theory Function documentation and make mpmath.functions.riemannr a builtin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7998",
     "user": "https://trac.sagemath.org/admin/accounts/users/kevin.stueve"
@@ -21,9 +21,7 @@ CC:  @williamstein @nexttime
 
 Keywords: Riemann prime counting function
 
-Add William's Riemann Prime Counting Function code to Sage.
-There is already source available at http://wstein.org/rh/rh/code/code.sage.
-I have found this very useful.  There has been talk of using Ri or an approximation in the prime_pi function.
+See comments below.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7998
 

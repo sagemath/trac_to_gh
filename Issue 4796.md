@@ -1,9 +1,10 @@
-# Issue 4796: Remove bugs.py in sage/modular/modform
+# Issue 4796: [with patch, positive review] Remove bugs.py in sage/modular/modform
 
 archive/issues_004796.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nTitle says it all -- it's a very old todo list, and #4795 now has those feature requests.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4796\n\n",
+    "closed_at": "2008-12-14T08:17:00Z",
     "created_at": "2008-12-14T07:56:40Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_004796.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Remove bugs.py in sage/modular/modform",
+    "title": "[with patch, positive review] Remove bugs.py in sage/modular/modform",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4796",
     "user": "https://github.com/craigcitro"

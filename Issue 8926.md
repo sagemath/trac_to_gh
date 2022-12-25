@@ -3,7 +3,8 @@
 archive/issues_008926.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n```\nsage: F = Family(NonNegativeIntegers(), PerfectMatchings)\nsage: F\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\n/home/saliola/Applications/sage-4.4/local/lib/python2.6/site-packages/sage/sets/family.pyc in _repr_(self)\n    873             name = name+\"(i)\"\n    874         else:\n--> 875             name = self.function.__repr__()\n    876             if isinstance(self.function, AttrCallObject):\n    877                 name = \"i\"+name[1:]\n\nTypeError: descriptor '__repr__' of 'sage.structure.sage_object.SageObject' object needs an argument\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8926\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\n```\nsage: F = Family(NonNegativeIntegers(), PerfectMatchings)\nsage: F\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\n/home/saliola/Applications/sage-4.4/local/lib/python2.6/site-packages/sage/sets/family.pyc in _repr_(self)\n    873             name = name+\"(i)\"\n    874         else:\n--> 875             name = self.function.__repr__()\n    876             if isinstance(self.function, AttrCallObject):\n    877                 name = \"i\"+name[1:]\n\nTypeError: descriptor '__repr__' of 'sage.structure.sage_object.SageObject' object needs an argument\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8926\n\n",
+    "closed_at": "2010-06-05T22:12:38Z",
     "created_at": "2010-05-07T20:32:47Z",
     "labels": [
         "component: combinatorics",
@@ -16,7 +17,7 @@ archive/issues_008926.json:
     "user": "https://github.com/saliola"
 }
 ```
-Assignee: sage-combinat
+Assignee: @hivert
 
 CC:  sage-combinat
 

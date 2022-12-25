@@ -3,7 +3,8 @@
 archive/issues_007406.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: latex, power, jsmath\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right}^{b}\n```\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\nand \n\n```\n(x^a)^b\n```\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: latex, power, jsmath, pynac\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right)^{b}\n```\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\nand \n\n```\n(x^a)^b\n```\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
+    "closed_at": "2009-12-10T14:22:58Z",
     "created_at": "2009-11-06T20:37:51Z",
     "labels": [
         "component: symbolics",
@@ -18,7 +19,7 @@ archive/issues_007406.json:
 ```
 Assignee: @burcin
 
-Keywords: latex, power, jsmath
+Keywords: latex, power, jsmath, pynac
 
 The LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath
 
@@ -63,7 +64,7 @@ However a better fix would be to get
 if the base is an atom (or not power) and
 
 ```
-\left({x^a}\right}^{b}
+\left({x^a}\right)^{b}
 ```
 if the base is a power. This allows to distinguish easily between
 

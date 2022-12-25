@@ -4,6 +4,7 @@ archive/issues_000868.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThis patch makes the necessary changes to upgrade networkx to 0.35.1 (and have the doctests not complain).\n\nIssue created by migration from https://trac.sagemath.org/ticket/868\n\n",
+    "closed_at": "2007-10-13T05:01:18Z",
     "created_at": "2007-10-13T00:23:11Z",
     "labels": [
         "component: combinatorics"

@@ -4,6 +4,7 @@ archive/issues_004700.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis ticket moves the jsmath, jquery, jqueryui, and jsmath-image-fonts packages to their own spkgs that install in local/notebook/javascript.\n\nSorry, mabshoff; it was much easier to group these very related and similar tasks together.\n\nThe spkgs are at:\n\n\n\nhttp://sage.math.washington.edu/home/jason/notebook/jquery-1.2.6.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-image-fonts-1.3p0.spkg\n\nThe (huge) patch that deletes things from the extcode repository is at\n\nhttp://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch (apply to the extcode repository; we might reset the extcode history, as mabshoff suggested on #4267).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4700\n\n",
+    "closed_at": "2008-12-05T00:34:54Z",
     "created_at": "2008-12-05T00:23:39Z",
     "labels": [
         "component: notebook",

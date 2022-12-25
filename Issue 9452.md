@@ -4,6 +4,7 @@ archive/issues_009452.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\n> We wrote the strip_automount_prefix() function for\n> sage-test to get around problems with automounted\n> file system having wierd mount points.\n> Unfotunately the strip_automount_prefix() does not\n> work at all!\n\n>\n> Here is a patch:\n\n>\n> % diff sage-test.old sage-test.new\n> 20c20\n> <     return strip_automount_prefix(os.path.abspath(x))\n> ---\n\n>>     return os.path.abspath(x)\n> 57c57\n> <         f = g[len(SAGE_ROOT)+1:]\n> ---\n\n>>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]\n> %\n\n>\n> You can remove - or deprecate - the function strip_automount_prefix().\n\nIssue created by migration from https://trac.sagemath.org/ticket/9452\n\n",
+    "closed_at": "2011-03-08T21:45:14Z",
     "created_at": "2010-07-08T08:00:49Z",
     "labels": [
         "component: distribution",

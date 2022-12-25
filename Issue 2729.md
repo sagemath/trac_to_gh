@@ -1,16 +1,17 @@
-# Issue 2729: [with patch] tiny jmol spheres have holes
+# Issue 2729: [with patch, positive review] tiny jmol spheres have holes
 
 archive/issues_002729.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFor example, try \n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
+    "closed_at": "2008-03-31T13:47:06Z",
     "created_at": "2008-03-30T00:01:21Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch] tiny jmol spheres have holes",
+    "title": "[with patch, positive review] tiny jmol spheres have holes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2729",
     "user": "https://github.com/robertwb"

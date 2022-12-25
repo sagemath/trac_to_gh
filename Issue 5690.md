@@ -1,16 +1,17 @@
-# Issue 5690: Update MPIR to 1.0.0.rc7 (latest upstream)
+# Issue 5690: [with spkg; positive review] Update MPIR to 1.0.0.rc7 (latest upstream)
 
 archive/issues_005690.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSpkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc1/gmp-mpir-1.0.rc7.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5690\n\n",
+    "closed_at": "2009-04-06T02:50:58Z",
     "created_at": "2009-04-06T02:34:20Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Update MPIR to 1.0.0.rc7 (latest upstream)",
+    "title": "[with spkg; positive review] Update MPIR to 1.0.0.rc7 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5690",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

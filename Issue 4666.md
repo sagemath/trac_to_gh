@@ -1,16 +1,17 @@
-# Issue 4666: Make -bdist use canonical binary names
+# Issue 4666: Add William's "personal souped up version of sage -bdist" to Sage
 
 archive/issues_004666.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @vbraun\n\nWhen we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. \n\nOn Linux -bdist should produce consistent names for binaries, so use lsb_release when available. I.e. on an x86 Fedora Core 9 system a\n\n```\n ./sage -bdist 3.2.1\n```\nwould yield\n\n```\n sage-3.2.1-Fedora-9-x86.tar.gz\n```\nThis info can be extracted on Linux via lsb_release\n\n```\n[mabshoff@eno ~]$ lsb_release -i -s\nFedora\n[mabshoff@eno ~]$ lsb_release -r -s\n9\n```\nOn OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4666\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @vbraun\n\nThe buildbots are using a script (originally written by William and edited by me) to produce the binaries.  It automatically builds a \"Mac App\" on OS X and chooses a meaningful name for the binary.\n\nSome version of this script should be added to Sage itself, I propose to call it `sage-autobdist`.  Then `sage-bdist` can handle the low-level stuff of actually building the binary.\n\nI'm adding the script as reference, but it needs some work to integrate it in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4666\n\n",
+    "closed_at": "2015-09-12T13:57:33Z",
     "created_at": "2008-12-01T00:01:12Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Make -bdist use canonical binary names",
+    "title": "Add William's \"personal souped up version of sage -bdist\" to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4666",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,31 +21,11 @@ Assignee: mabshoff
 
 CC:  @jhpalmieri @vbraun
 
-When we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. 
+The buildbots are using a script (originally written by William and edited by me) to produce the binaries.  It automatically builds a "Mac App" on OS X and chooses a meaningful name for the binary.
 
-On Linux -bdist should produce consistent names for binaries, so use lsb_release when available. I.e. on an x86 Fedora Core 9 system a
+Some version of this script should be added to Sage itself, I propose to call it `sage-autobdist`.  Then `sage-bdist` can handle the low-level stuff of actually building the binary.
 
-```
- ./sage -bdist 3.2.1
-```
-would yield
-
-```
- sage-3.2.1-Fedora-9-x86.tar.gz
-```
-This info can be extracted on Linux via lsb_release
-
-```
-[mabshoff@eno ~]$ lsb_release -i -s
-Fedora
-[mabshoff@eno ~]$ lsb_release -r -s
-9
-```
-On OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.
-
-Cheers,
-
-Michael
+I'm adding the script as reference, but it needs some work to integrate it in Sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4666
 

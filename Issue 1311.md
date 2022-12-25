@@ -1,23 +1,22 @@
-# Issue 1311: [graphs] calculate chromatic number
+# Issue 1311: [with patch; positive review] graphs: calculate chromatic number
 
 archive/issues_001311.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1311\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1311\n\n",
+    "closed_at": "2008-02-25T20:49:51Z",
     "created_at": "2007-11-28T20:01:15Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[graphs] calculate chromatic number",
+    "title": "[with patch; positive review] graphs: calculate chromatic number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1311",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 
 

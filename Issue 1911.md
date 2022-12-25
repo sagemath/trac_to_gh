@@ -1,16 +1,17 @@
-# Issue 1911: [with patch; needs review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)
+# Issue 1911: [with patch; with positive review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)
 
 archive/issues_001911.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1911\n\n",
+    "closed_at": "2008-01-26T11:21:14Z",
     "created_at": "2008-01-24T15:18:51Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch; needs review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)",
+    "title": "[with patch; with positive review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1911",
     "user": "https://github.com/williamstein"

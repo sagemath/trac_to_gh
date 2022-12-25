@@ -1,17 +1,18 @@
-# Issue 2984: ITANIUM (RHEL 5) -- turn off all unaligned access messages
+# Issue 2984: [with patch; positive review] ITANIUM (RHEL 5) -- turn off all unaligned access messages
 
 archive/issues_002984.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n20:30 < wstein|afk> See this page: http://kbase.redhat.com/faq/FAQ_105_9111.shtm\n20:30 < wstein|afk> It says \"These messages are informative only. When any application performs an unaligned \n                    access, the processor traps into the kernel and the kernel emulates the unaligned access. \n                    The program will work correctly however there will be a performance hit, as emulating the \n                    unaligned memory access is a software operation and not a hardware operation.\"\n20:30 < mabshoff> ok\n```\n\nThis will not be needed once #2209 is done, I hope. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2984\n\n",
+    "closed_at": "2008-04-21T06:53:29Z",
     "created_at": "2008-04-21T03:37:37Z",
     "labels": [
-        "component: cygwin",
+        "component: porting",
         "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "ITANIUM (RHEL 5) -- turn off all unaligned access messages",
+    "title": "[with patch; positive review] ITANIUM (RHEL 5) -- turn off all unaligned access messages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2984",
     "user": "https://github.com/williamstein"

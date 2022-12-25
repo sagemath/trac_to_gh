@@ -1,15 +1,16 @@
-# Issue 5936: result of graph query should be iterable -- make more pythonic
+# Issue 5936: [with patch, positive review] result of graph query should be iterable -- make more pythonic
 
 archive/issues_005936.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCurrently we have this:\n\n```\nsage: Q = GraphQuery(\n       display_cols=['graph6','num_vertices','degree_sequence'],\n       num_edges=['<=',5],min_degree=1)\nsage: for G in Q: print G\n```\noutputs\n\n```\nTraceback (click to the left for traceback)\n...\nTypeError: 'GraphQuery' object is not iterable\n```\n\nWhy not have it Q.__iter__() return an iterator over `Q.get_graphs_list()`, which would easily work?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5936\n\n",
+    "closed_at": "2009-06-01T04:57:05Z",
     "created_at": "2009-04-29T15:59:37Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "result of graph query should be iterable -- make more pythonic",
+    "title": "[with patch, positive review] result of graph query should be iterable -- make more pythonic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5936",
     "user": "https://github.com/williamstein"

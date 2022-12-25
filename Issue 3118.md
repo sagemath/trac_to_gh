@@ -1,16 +1,17 @@
-# Issue 3118: update LCM (easy-to-fix buglet)
+# Issue 3118: [with new patch, positive review] update LCM (easy-to-fix buglet)
 
 archive/issues_003118.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\n```\n\n\nOn Tue, May 6, 2008 at 8:49 PM, schmmd <schmmd@gmail.com> wrote:\n> \n>  lcm? gives the following output:\n>  \n>  Type:           function\n>  Base Class:     <type 'function'>\n>  String Form:    <function lcm at 0x879087c>\n>  Namespace:      Interactive\n>  File:           /home/michael/downloads/sage-3.0/local/lib/python2.5/\n>  site-packages/sage/rings/arith.py\n>  Definition:     lcm(a, b=None, integer=False)\n>  Docstring:\n>  \n>         The least common multiple of a and b, or if a is a list and b\n>  is\n>         omitted the least common multiple of all elements of a.\n>  \n>         NOTE: Use integer=True to make this vastly faster if you are\n>         working with lists of integers.\n>  \n>         INPUT:\n>             a -- number\n>             b -- number (optional)\n>             integer -- (default: False); if True, do an integer LCM\n>         or\n>   *           a -- vector\n>             integer -- (default: False); if True, do an integer LCM\n>                 NOTE -- this is *vastly* faster than doing the generic\n>  LCM\n>  \n>  Note the starred line.  I believe that the lcm method takes a list and\n>  not a vector.  At least, I seem to get errors when I pass a vector.\n>  \n>  \n\nI fully agree that this is a bug.\n\nIncidentally I wrote the LCM function a while before I implemented vectors,\nso I think when I wrote those docs \"vector\" and \"list\" were the same\nthing in my mind.  \n\nThe fix should be to change the docs to replace \"vector\" by any itterable.\nThen the LCM code should iterate over the object calling LCM \nif it doesn't have an LCM method.   \n\nProbably similar fixes need to be made for GCD.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3118\n\n",
+    "closed_at": "2008-10-25T22:41:19Z",
     "created_at": "2008-05-07T04:00:56Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "update LCM (easy-to-fix buglet)",
+    "title": "[with new patch, positive review] update LCM (easy-to-fix buglet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3118",
     "user": "https://github.com/williamstein"

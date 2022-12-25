@@ -1,22 +1,23 @@
-# Issue 7407: Fix building of binary distribution so it works on Solaris. Make name of .tar.gz file sensible too.
+# Issue 7407: Fix building of binary distribution so it works on Solaris.
 
 archive/issues_007407.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby georgsweber mvngu\n\nKeywords: solairs GNUism cp\n\nIn version 4.2 of Sage, an attempt to build a binary distribution failed on Solaris, due to the use of a non-portable '-a' option to the 'cp' command, which is not defined by the POSIX specification of Unix. \n\nThe only options that should be used are given here. \n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/cp.html\n\nAlso, the file name created seems a bit silly. After typing:\n\n~/sage-4.2$ ./sage -bdist 4.2-Solaris-10-SPARC\n\na useless output file of about 4 KB in size named 'sage-4.2-Solaris-10-SPARC-sun4u-SunOS.tar.gz' was created. I do not think it is sensible to have 'sun4u' in the name, since it would run on sun4v machines too. Also, since Sun's operating system is known as 'Solaris' far more than 'SunOS', the use of 'SunOS' in the name is not necessary. I assume the 'sun4u' and 'SunOS' are probably taken from the output of the 'uname' command. \n\nHere is the result of trying to build a binary distribution on a Sun Netra T1, running the first release of Solaris 10. Had this not failed, the resulting binary should have worked on any Solaris 10 sun4u or sun4v (i.e the CoolThreads machines like the Sun T5240 't2'). Building a Sage binary for Solaris 10 on 't2' would not be sensible, as the resulting binary might not run on earlier release of Solaris 10. The T5240 is not supported on the first release of Solaris 10, so it would be impossible to downgrade the operating system if one wanted to. For building this, I specifically used an old version of Solaris. \n\n```\ndrkirkby@kestrel:~/sage-4.2$ ./sage -bdist 4.2-Solaris-10-SPARC\nSage works!\nCopying files over to tmp directory\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\nCopying Sage library over\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n/export/home/drkirkby/sage-4.2/local/bin/sage-bdist: line 60: cd: sage: No such file or directory\n/export/home/drkirkby/sage-4.2/local/bin/sage-bdist: line 63: cd: /export/home/drkirkby/sage-4.2/tmp/sage-4.2-Solaris-10-SPARC-sun4u-SunOS/local/lib/python/site-packages: No such file or directory\nMaking empty spkg's\ncp: illegal option -- a\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7407\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby georgsweber mvngu\n\nKeywords: solairs GNUism cp\n\nIn version 4.2 of Sage, an attempt to build a binary distribution failed on Solaris, due to the use of a non-portable '-a' option to the 'cp' command, which is not defined by the POSIX specification of Unix. \n\nThe only options that should be used are given here. \n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/cp.html\n\nHere is the result of trying to build a binary distribution on a Sun Netra T1, running the first release of Solaris 10. Had this not failed, the resulting binary should have worked on any Solaris 10 sun4u or sun4v (i.e the CoolThreads machines like the Sun T5240 't2'). Building a Sage binary for Solaris 10 on 't2' would not be sensible, as the resulting binary might not run on earlier release of Solaris 10. The T5240 is not supported on the first release of Solaris 10, so it would be impossible to downgrade the operating system if one wanted to. For building this, I specifically used an old version of Solaris. \n\n```\ndrkirkby@kestrel:~/sage-4.2$ ./sage -bdist 4.2-Solaris-10-SPARC\nSage works!\nCopying files over to tmp directory\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\nCopying Sage library over\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n/export/home/drkirkby/sage-4.2/local/bin/sage-bdist: line 60: cd: sage: No such file or directory\n/export/home/drkirkby/sage-4.2/local/bin/sage-bdist: line 63: cd: /export/home/drkirkby/sage-4.2/tmp/sage-4.2-Solaris-10-SPARC-sun4u-SunOS/local/lib/python/site-packages: No such file or directory\nMaking empty spkg's\ncp: illegal option -- a\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7407\n\n",
+    "closed_at": "2010-06-11T20:51:31Z",
     "created_at": "2009-11-07T04:49:27Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Fix building of binary distribution so it works on Solaris. Make name of .tar.gz file sensible too.",
+    "title": "Fix building of binary distribution so it works on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7407",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  drkirkby georgsweber mvngu
 
@@ -27,12 +28,6 @@ In version 4.2 of Sage, an attempt to build a binary distribution failed on Sola
 The only options that should be used are given here. 
 
 http://www.opengroup.org/onlinepubs/009695399/utilities/cp.html
-
-Also, the file name created seems a bit silly. After typing:
-
-~/sage-4.2$ ./sage -bdist 4.2-Solaris-10-SPARC
-
-a useless output file of about 4 KB in size named 'sage-4.2-Solaris-10-SPARC-sun4u-SunOS.tar.gz' was created. I do not think it is sensible to have 'sun4u' in the name, since it would run on sun4v machines too. Also, since Sun's operating system is known as 'Solaris' far more than 'SunOS', the use of 'SunOS' in the name is not necessary. I assume the 'sun4u' and 'SunOS' are probably taken from the output of the 'uname' command. 
 
 Here is the result of trying to build a binary distribution on a Sun Netra T1, running the first release of Solaris 10. Had this not failed, the resulting binary should have worked on any Solaris 10 sun4u or sun4v (i.e the CoolThreads machines like the Sun T5240 't2'). Building a Sage binary for Solaris 10 on 't2' would not be sensible, as the resulting binary might not run on earlier release of Solaris 10. The T5240 is not supported on the first release of Solaris 10, so it would be impossible to downgrade the operating system if one wanted to. For building this, I specifically used an old version of Solaris. 
 
@@ -54,6 +49,9 @@ Usage: cp [-f] [-i] [-p] [-@] f1 f2
 Making empty spkg's
 cp: illegal option -- a
 ```
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7407
 

@@ -4,6 +4,7 @@ archive/issues_007830.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nHere's a function that answers the question posed in http://groups.google.com/group/sage-devel/browse_thread/thread/c8c75b483f2c47f6 -- give the sign, mantissa, and exponent of a floating point number.\n\nI also cleaned up a few minor other things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7830\n\n",
+    "closed_at": "2010-01-22T21:11:27Z",
     "created_at": "2010-01-03T07:37:21Z",
     "labels": [
         "component: basic arithmetic"

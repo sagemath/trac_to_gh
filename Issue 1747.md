@@ -1,16 +1,17 @@
-# Issue 1747: [with patch, needs review] speed improvement for mq.SR.polynomial_system
+# Issue 1747: [with patch, with positive review] speed improvement for mq.SR.polynomial_system
 
 archive/issues_001747.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1747\n\n",
+    "closed_at": "2008-01-16T15:59:53Z",
     "created_at": "2008-01-10T15:14:18Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with patch, needs review] speed improvement for mq.SR.polynomial_system",
+    "title": "[with patch, with positive review] speed improvement for mq.SR.polynomial_system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1747",
     "user": "https://github.com/malb"

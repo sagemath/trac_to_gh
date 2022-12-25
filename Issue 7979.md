@@ -3,7 +3,8 @@
 archive/issues_007979.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\npdehaye reported a build error in pari on IRC.\n\nWe tracked this down to what seems to be a bug in pari's Configure script (or rather config/get_fltk): if X11 is not found, and fltk is found, it ignores the --graphic=none option. It then tries to build with fltk support, and fails spectacularly.\n\n(Aside: pari-2.4.2.alpha still has the same logic in config/get_fltk.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7979\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\npdehaye reported a build error in pari on IRC.\n\nWe tracked this down to what seems to be a bug in pari's Configure script (or rather config/get_fltk): if X11 is not found, and fltk is found, it ignores the --graphic=none option. It then tries to build with fltk support, and fails spectacularly.\n\n(Aside: pari-2.4.2.alpha still has the same logic in config/get_fltk.) This [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/0c895b6b12eb1d41) thread also reports the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7979\n\n",
+    "closed_at": "2010-04-29T06:09:56Z",
     "created_at": "2010-01-18T17:48:44Z",
     "labels": [
         "component: build",
@@ -24,7 +25,7 @@ pdehaye reported a build error in pari on IRC.
 
 We tracked this down to what seems to be a bug in pari's Configure script (or rather config/get_fltk): if X11 is not found, and fltk is found, it ignores the --graphic=none option. It then tries to build with fltk support, and fails spectacularly.
 
-(Aside: pari-2.4.2.alpha still has the same logic in config/get_fltk.)
+(Aside: pari-2.4.2.alpha still has the same logic in config/get_fltk.) This [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/0c895b6b12eb1d41) thread also reports the same problem.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7979
 

@@ -1,16 +1,17 @@
-# Issue 5130: [with patch; not ready for review] create a prime_pi function that doesn't just compute len(prime_range(n))
+# Issue 5130: [with patch; positive review] create a prime_pi function that doesn't just compute len(prime_range(n))
 
 archive/issues_005130.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe goal of this ticket is to make something eventually competitive with Mathematica's PrimePi.  The first version won't do that, but it is a step in the right direction. \n\nNote that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do PrimePi[10^14] in \"about a minute\", but the algorithm there doesn't allow larger input.\n\n```\nIn[11]:= Timing[PrimePi[ 10^13 + 10^8 +10^9]]\nOut[11]= {12., 346102281239}\n\nIn[13]:= Timing[PrimePi[10^14]]\nOut[13]= {59.53, 3204941750802}\n```\n\nThe attached code did `10^14` in just under an hour.   The issue is that Mathematica implements a different sublinear algorithm.\n\nIn Sage, with extra storage usage:\n\n```\nsage: k = 10^13\nsage: time print prime_pi(k,40)\n346065536839\nTime: CPU 219.44 s, Wall: 219.44 s\n```\n\nSo for that one mathematica is 18 times faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5130\n\n",
+    "body": "Assignee: @williamstein\n\nThe goal of this ticket is to make something eventually competitive with Mathematica's PrimePi.  The first version won't do that, but it is a step in the right direction. \n\nNote that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do `PrimePi[10^14]` in \"about a minute\", but the algorithm there doesn't allow larger input.\n\n```\nIn[11]:= Timing[PrimePi[ 10^13 + 10^8 +10^9]]\nOut[11]= {12., 346102281239}\n\nIn[13]:= Timing[PrimePi[10^14]]\nOut[13]= {59.53, 3204941750802}\n```\n\nThe attached code did `10^14` in just under an hour.   The issue is that Mathematica implements a different sublinear algorithm.\n\nIn Sage, with extra storage usage:\n\n```\nsage: k = 10^13\nsage: time print prime_pi(k,40)\n346065536839\nTime: CPU 219.44 s, Wall: 219.44 s\n```\n\nSo for that one mathematica is 18 times faster. \n\nAnother comparison for smaller input, where this is better:\n\n```\nsage: time prime_pi(10^10,32)\nCPU times: user 0.59 s, sys: 0.04 s, total: 0.63 s\nWall time: 0.63 s\n455052511L\n\n...\n\nwstein@sage:~$ math\nMathematica 6.0 for Linux x86 (64-bit)\nCopyright 1988-2007 Wolfram Research, Inc.\nIn[1]:= Timing[PrimePi[10^10]]\nOut[1]= {0.12, 455052511}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5130\n\n",
+    "closed_at": "2009-04-22T22:18:58Z",
     "created_at": "2009-01-29T21:41:56Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch; not ready for review] create a prime_pi function that doesn't just compute len(prime_range(n))",
+    "title": "[with patch; positive review] create a prime_pi function that doesn't just compute len(prime_range(n))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5130",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 The goal of this ticket is to make something eventually competitive with Mathematica's PrimePi.  The first version won't do that, but it is a step in the right direction. 
 
-Note that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do PrimePi[10^14] in "about a minute", but the algorithm there doesn't allow larger input.
+Note that evidently the only program we know of with a fast prime_pi is Mathematica (pari, maple, etc., -- none of them have anything at all).  In contract, Mathematica can do `PrimePi[10^14]` in "about a minute", but the algorithm there doesn't allow larger input.
 
 ```
 In[11]:= Timing[PrimePi[ 10^13 + 10^8 +10^9]]
@@ -41,7 +42,24 @@ sage: time print prime_pi(k,40)
 Time: CPU 219.44 s, Wall: 219.44 s
 ```
 
-So for that one mathematica is 18 times faster.
+So for that one mathematica is 18 times faster. 
+
+Another comparison for smaller input, where this is better:
+
+```
+sage: time prime_pi(10^10,32)
+CPU times: user 0.59 s, sys: 0.04 s, total: 0.63 s
+Wall time: 0.63 s
+455052511L
+
+...
+
+wstein@sage:~$ math
+Mathematica 6.0 for Linux x86 (64-bit)
+Copyright 1988-2007 Wolfram Research, Inc.
+In[1]:= Timing[PrimePi[10^10]]
+Out[1]= {0.12, 455052511}
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5130
 

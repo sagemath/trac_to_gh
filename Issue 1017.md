@@ -1,15 +1,16 @@
-# Issue 1017: [with (partial) patch] add an option to solve to return a list of dictionaries instead of a list of lists of equations.
+# Issue 1017: [with patch] add an option to solve to return a list of dictionaries instead of a list of lists of equations.
 
 archive/issues_001017.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt's terribly convenient to be able to write:\n\n```\nsolutions=solve([x^2+y^2 == 1, y^2 == x^3 + x + 1], x, y, solution_dict=True);\nfor solution in solutions: \n    print solution[x].n(digits=3), \",\", solution[y].n(digits=3)\n```\n\nto print out a list of the solutions or to refer back to the solved values.  This patch implements a naive approach to solution_dict.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1017\n\n",
+    "closed_at": "2007-10-28T18:38:53Z",
     "created_at": "2007-10-28T04:02:22Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "[with (partial) patch] add an option to solve to return a list of dictionaries instead of a list of lists of equations.",
+    "title": "[with patch] add an option to solve to return a list of dictionaries instead of a list of lists of equations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1017",
     "user": "https://github.com/jasongrout"

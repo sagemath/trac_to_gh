@@ -4,6 +4,7 @@ archive/issues_009179.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout ryan mvngu\n\n```\n    to the `xy`-plane.\n```\nshould have a colon in line 259, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9179\n\n",
+    "closed_at": "2010-08-31T03:20:13Z",
     "created_at": "2010-06-07T15:40:03Z",
     "labels": [
         "component: graphics",

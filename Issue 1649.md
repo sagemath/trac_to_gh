@@ -1,16 +1,17 @@
-# Issue 1649: Updated eclib.spkg to  eclib-20071231.p0.spkg  or later
+# Issue 1649: [with patch and new spkg; with positive review] Updated eclib.spkg to  eclib-20071231.p0.spkg  or later
 
 archive/issues_001649.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/eclib-20071231.p0.spkg\n\nChangelog:\neclib-20071231.p0 (Michael Abshoff)\n* added Cygwin support\n* add spkg-check\n* install headers into $SAGE_LOCAL/eclib\n* delete $SAGE_LOCAL/include/cremona\n* chown $SAGE_LOCAL/include/eclib and files underneath\n\neclib-20071231 (John Cremona):\n* renamed to eclib\n* allows elliptic curves as input with rational (as opposed to just integer) coefficients.\n\nThis spkg still needs fixes to `mwrank.pyx` [expect a patch shortly] and is related to #1058.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1649\n\n",
+    "closed_at": "2008-01-27T20:20:33Z",
     "created_at": "2007-12-31T23:59:03Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Updated eclib.spkg to  eclib-20071231.p0.spkg  or later",
+    "title": "[with patch and new spkg; with positive review] Updated eclib.spkg to  eclib-20071231.p0.spkg  or later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1649",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

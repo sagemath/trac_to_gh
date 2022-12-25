@@ -3,7 +3,8 @@
 archive/issues_007863.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\n[JSLint](http://www.jslint.com/) on \"The Good Parts\" setting, applied to `sagenb/data/sage/js/*.js` but *not* `notebook_lib.js`.  The latter will have its own ticket.\n\nFor now, I've have not enabled [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/), since most (all?) current browsers don't yet have it.\n\nGiven the overall current design of the notebook JS library --- use lots of global variables, etc. --- I haven't implemented *all* of JSLint's suggestions.  More generally:\n\n    \"If you're writing javascript code, [JSLint](http://www.jslint.com/) is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.\" -- http://jsbeautifier.org/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7863\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\n[JSLint](http://www.jslint.com/) on \"The Good Parts\" setting, applied to `sagenb/data/sage/js/*.js` but *not* `notebook_lib.js`.  The latter will have its own ticket.\n\nFor now, I've disabled [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/), since most (all?) current browsers don't yet have it.\n\nGiven the present architecture of the notebook JS library --- use lots of global variables, etc. --- I haven't implemented *all* of JSLint's suggestions.  More generally:\n\n    \"If you're writing javascript code, [JSLint](http://www.jslint.com/) is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.\" -- http://jsbeautifier.org/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7863\n\n",
+    "closed_at": "2010-01-19T03:34:29Z",
     "created_at": "2010-01-07T03:11:23Z",
     "labels": [
         "component: notebook",
@@ -23,9 +24,9 @@ CC:  @TimDumol
 
 [JSLint](http://www.jslint.com/) on "The Good Parts" setting, applied to `sagenb/data/sage/js/*.js` but *not* `notebook_lib.js`.  The latter will have its own ticket.
 
-For now, I've have not enabled [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/), since most (all?) current browsers don't yet have it.
+For now, I've disabled [strict mode](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/), since most (all?) current browsers don't yet have it.
 
-Given the overall current design of the notebook JS library --- use lots of global variables, etc. --- I haven't implemented *all* of JSLint's suggestions.  More generally:
+Given the present architecture of the notebook JS library --- use lots of global variables, etc. --- I haven't implemented *all* of JSLint's suggestions.  More generally:
 
     "If you're writing javascript code, [JSLint](http://www.jslint.com/) is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills." -- http://jsbeautifier.org/
 

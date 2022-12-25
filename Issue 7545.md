@@ -1,16 +1,17 @@
-# Issue 7545: Gaussian Integers
+# Issue 7545: Gaussian and Eisenstein integers
 
 archive/issues_007545.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @kcrisman @videlec @katestange\n\nKeywords: gaussian integers, Z[i], quadratic number ring\n\nWhen teaching Gaussian Integers, I decided to modify sage slightly for my students. For them Z[i] is the ring of a+b*i with a and b integers and they learn that one can compute gcd's and that the unique factorisation holds.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7545\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @kcrisman @videlec @katestange\n\nKeywords: gaussian integers, Z[i], quadratic number ring\n\nDefine `GaussianIntegers()` and `EisensteinIntegers()` as orders in the appropriate number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7545\n\n",
+    "closed_at": "2016-02-25T20:08:54Z",
     "created_at": "2009-11-27T17:03:48Z",
     "labels": [
         "component: number fields",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
-    "title": "Gaussian Integers",
+    "title": "Gaussian and Eisenstein integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7545",
     "user": "https://github.com/categorie"
@@ -22,7 +23,7 @@ CC:  @kcrisman @videlec @katestange
 
 Keywords: gaussian integers, Z[i], quadratic number ring
 
-When teaching Gaussian Integers, I decided to modify sage slightly for my students. For them Z[i] is the ring of a+b*i with a and b integers and they learn that one can compute gcd's and that the unique factorisation holds.
+Define `GaussianIntegers()` and `EisensteinIntegers()` as orders in the appropriate number field.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7545
 

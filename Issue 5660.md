@@ -1,21 +1,22 @@
-# Issue 5660: count_points(1) for elliptic curves over finite fields is stupid
+# Issue 5660: [with patch, positive review] count_points(1) for elliptic curves over finite fields is stupid
 
 archive/issues_005660.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  jcooley\n\nThere is one special case of count_points that could be massively faster.  This should definitely be optimized!\n\n```\nsage: E = EllipticCurve(GF(97),[1,2])\nsage: time E.count_points(1)\n[104]\nTime: CPU 1.91 s, Wall: 1.93 s\nsage: time E.cardinality()\n104\nTime: CPU 0.00 s, Wall: 0.18 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5660\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  jcooley\n\nThere is one special case of count_points that could be massively faster.  This should definitely be optimized!\n\n```\nsage: E = EllipticCurve(GF(97),[1,2])\nsage: time E.count_points(1)\n[104]\nTime: CPU 1.91 s, Wall: 1.93 s\nsage: time E.cardinality()\n104\nTime: CPU 0.00 s, Wall: 0.18 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5660\n\n",
+    "closed_at": "2009-08-23T10:09:56Z",
     "created_at": "2009-04-01T17:27:14Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "count_points(1) for elliptic curves over finite fields is stupid",
+    "title": "[with patch, positive review] count_points(1) for elliptic curves over finite fields is stupid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5660",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  jcooley
 

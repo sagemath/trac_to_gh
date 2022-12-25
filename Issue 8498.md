@@ -3,7 +3,8 @@
 archive/issues_008498.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nJean Gillibert reported me the following bug. Define\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\nThen the following works fine\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\nbut not this one :\n\n```\nP.has_good_reduction(p)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: good reduction points\n\nJean Gillibert reported me the following bug. Define\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\nThen the following works fine\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\nbut not this one :\n\n```\nP.has_good_reduction(p)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
+    "closed_at": "2010-03-12T04:53:11Z",
     "created_at": "2010-03-11T10:39:16Z",
     "labels": [
         "component: elliptic curves",
@@ -17,6 +18,8 @@ archive/issues_008498.json:
 }
 ```
 Assignee: @JohnCremona
+
+Keywords: good reduction points
 
 Jean Gillibert reported me the following bug. Define
 

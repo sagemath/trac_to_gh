@@ -1,16 +1,17 @@
-# Issue 5302: Numerical noise in graph.py get_pos() and graph_plot.py
+# Issue 5302: [with patch, positive review] Numerical noise in graph.py get_pos() and graph_plot.py
 
 archive/issues_005302.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nOn Fedora 9 and 10, 32 bits:\n\n```\nsage -t  \"devel/sage/sage/graphs/graph.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.3.alpha1/devel/sage/sage/graphs/graph.py\", line 5814:\n    sage: G.get_pos()\nExpected:\n    {0: [-0.81..., -0.32...],\n    1: [-0.49..., 0.53...],\n    2: [0.04..., 0.96...],\n    3: [0.00..., 0.01...],\n    4: [0.17..., -0.71...],\n    5: [-0.47..., 0.06...],\n    6: [0.35..., -0.17...],\n    7: [0.54..., 0.50...],\n    8: [-0.30..., -0.57...],\n    9: [0.95..., -0.28...]}\nGot:\n    {0: [-0.80999357280480733, -0.35674303178095085], 1: [-0.5137985651989595, 0.53516030613479626], 2: [0.04267232662930763, 0.9733718008664739], 3: [-0.0030625205151234456, 0.025523074413981252], 4: [0.20666820211352116, -0.73775138260652107], 5: [-0.48704143554494495, 0.075148546351255105], 6: [0.35418721150812299, -0.17351758872721781], 7: [0.54564695734576318, 0.51479808833141838], 8: [-0.29589999259318039, -0.57812915207589943], 9: [0.96062138906029881, -0.27786066090733674]}\n**********************************************************************\n1 items had failures:\n   1 of  78 in __main__.example_133\n***Test Failed*** 1 failures.\n\nsage -t  \"devel/sage/sage/graphs/graph_plot.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.3.alpha1/devel/sage/sage/graphs/graph_plot.py\", line 108:\n    sage: g.get_pos()\nExpected:\n    {0: [6.123233995736766e-17, 1.0],\n     1: [-0.95105651629515353, 0.30901699437494751],\n     2: [-0.58778525229247325, -0.80901699437494734],\n     3: [0.58778525229247292, -0.80901699437494756],\n     4: [0.95105651629515364, 0.30901699437494717]}\nGot:\n    {0: [6.1230317691118863e-17, 1.0], 1: [-0.95105651629515353, 0.30901699437494751], 2: [-0.58778525229247325, -0.80901699437494734], 3: [0.58778525229247292, -0.80901699437494756], 4: [0.95105651629515364, 0.30901699437494717]}\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.3.alpha1/tmp/.doctest_graph_plot.py\n\t [28.9 s]\n\n```\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5302\n\n",
+    "body": "Assignee: @rlmill\n\nOn Fedora 9 and 10, 32 bits:\n\n```\nsage -t  \"devel/sage/sage/graphs/graph.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.3.alpha1/devel/sage/sage/graphs/graph.py\", line 5814:\n    sage: G.get_pos()\nExpected:\n    {0: [-0.81..., -0.32...],\n    1: [-0.49..., 0.53...],\n    2: [0.04..., 0.96...],\n    3: [0.00..., 0.01...],\n    4: [0.17..., -0.71...],\n    5: [-0.47..., 0.06...],\n    6: [0.35..., -0.17...],\n    7: [0.54..., 0.50...],\n    8: [-0.30..., -0.57...],\n    9: [0.95..., -0.28...]}\nGot:\n    {0: [-0.80999357280480733, -0.35674303178095085], 1: [-0.5137985651989595, 0.53516030613479626], 2: [0.04267232662930763, 0.9733718008664739], 3: [-0.0030625205151234456, 0.025523074413981252], 4: [0.20666820211352116, -0.73775138260652107], 5: [-0.48704143554494495, 0.075148546351255105], 6: [0.35418721150812299, -0.17351758872721781], 7: [0.54564695734576318, 0.51479808833141838], 8: [-0.29589999259318039, -0.57812915207589943], 9: [0.96062138906029881, -0.27786066090733674]}\n**********************************************************************\n1 items had failures:\n   1 of  78 in __main__.example_133\n***Test Failed*** 1 failures.\n\nsage -t  \"devel/sage/sage/graphs/graph_plot.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.3.alpha1/devel/sage/sage/graphs/graph_plot.py\", line 108:\n    sage: g.get_pos()\nExpected:\n    {0: [6.123233995736766e-17, 1.0],\n     1: [-0.95105651629515353, 0.30901699437494751],\n     2: [-0.58778525229247325, -0.80901699437494734],\n     3: [0.58778525229247292, -0.80901699437494756],\n     4: [0.95105651629515364, 0.30901699437494717]}\nGot:\n    {0: [6.1230317691118863e-17, 1.0], 1: [-0.95105651629515353, 0.30901699437494751], 2: [-0.58778525229247325, -0.80901699437494734], 3: [0.58778525229247292, -0.80901699437494756], 4: [0.95105651629515364, 0.30901699437494717]}\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.3.alpha1/tmp/.doctest_graph_plot.py\n [28.9 s]\n\n```\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5302\n\n",
+    "closed_at": "2009-02-20T06:39:59Z",
     "created_at": "2009-02-18T11:35:18Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Numerical noise in graph.py get_pos() and graph_plot.py",
+    "title": "[with patch, positive review] Numerical noise in graph.py get_pos() and graph_plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5302",
     "user": "https://github.com/jaapspies"
@@ -60,11 +61,14 @@ Got:
    1 of   8 in __main__.example_2
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/jaap/downloads/sage-3.3.alpha1/tmp/.doctest_graph_plot.py
-	 [28.9 s]
+ [28.9 s]
 
 ```
 
 Jaap
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5302
 

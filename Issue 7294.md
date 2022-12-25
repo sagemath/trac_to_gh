@@ -3,7 +3,8 @@
 archive/issues_007294.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThere should be a way in Sage to find a degree-constrained subgraph. This should be done through LP ( there may be a better way to do it, but I am not aware of it )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7294\n\n",
+    "body": "Assignee: @rlmill\n\nDegree constrained subgraph problem in Sage in Graph.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7294\n\n",
+    "closed_at": "2009-12-15T17:52:40Z",
     "created_at": "2009-10-25T09:26:41Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +19,8 @@ archive/issues_007294.json:
 ```
 Assignee: @rlmill
 
-There should be a way in Sage to find a degree-constrained subgraph. This should be done through LP ( there may be a better way to do it, but I am not aware of it )
+Degree constrained subgraph problem in Sage in Graph.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7294
 

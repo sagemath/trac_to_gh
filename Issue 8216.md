@@ -1,15 +1,16 @@
-# Issue 8216: Make David Perkinson's sandpile 2.0 module an optional package
+# Issue 8216: Make David Perkinson's sandpile 2.2 module an experimental (at least) package
 
 archive/issues_008216.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dperkinson @wdjoyner @jdemeyer\n\nKeywords: sandpile\n\nRecently the sandpile-1.51 spkg was included in the experimental components.  This ticket updates the source to version 2.0.\n\nIn addition to updating the source, the installation script has been simplified and the SPKG.txt has been improved in an effort to get this package to optional status.  \n\nThis package does depend on the 4ti2.p0 spkg, which is currently experimental.  As a separate but dependent ticket 4ti2 will be upgraded to an optional package as well to harmonize this dependency.\n\nNew package is at:\n[http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg](http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8216\n\n",
+    "body": "Assignee: tbd\n\nCC:  dperkinson @wdjoyner @jdemeyer\n\nKeywords: sandpile\n\nRecently the sandpile-1.51 spkg was included in the experimental components.  This ticket updates the source to version 2.2.\n\nIn addition to updating the source, the installation script has been simplified and the SPKG.txt has been improved in an effort to get this package to optional status.  \n\nThis package does depend on the 4ti2.p0 spkg, which is currently experimental.  As a separate but dependent ticket 4ti2 will be upgraded to an optional package as well to harmonize this dependency.\n\nNew package is at:\n[http://sage.math.washington.edu/home/mhampton/sandpile-2.2.spkg](http://sage.math.washington.edu/home/mhampton/sandpile-2.2.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8216\n\n",
+    "closed_at": "2011-01-13T04:41:19Z",
     "created_at": "2010-02-08T20:20:14Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Make David Perkinson's sandpile 2.0 module an optional package",
+    "title": "Make David Perkinson's sandpile 2.2 module an experimental (at least) package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8216",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
@@ -21,14 +22,14 @@ CC:  dperkinson @wdjoyner @jdemeyer
 
 Keywords: sandpile
 
-Recently the sandpile-1.51 spkg was included in the experimental components.  This ticket updates the source to version 2.0.
+Recently the sandpile-1.51 spkg was included in the experimental components.  This ticket updates the source to version 2.2.
 
 In addition to updating the source, the installation script has been simplified and the SPKG.txt has been improved in an effort to get this package to optional status.  
 
 This package does depend on the 4ti2.p0 spkg, which is currently experimental.  As a separate but dependent ticket 4ti2 will be upgraded to an optional package as well to harmonize this dependency.
 
 New package is at:
-[http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg](http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg)
+[http://sage.math.washington.edu/home/mhampton/sandpile-2.2.spkg](http://sage.math.washington.edu/home/mhampton/sandpile-2.2.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8216
 

@@ -4,6 +4,7 @@ archive/issues_009039.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nDoes not check for primes of bad reduction at all!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9039\n\n",
+    "closed_at": "2010-06-04T15:28:21Z",
     "created_at": "2010-05-25T00:37:50Z",
     "labels": [
         "component: elliptic curves",

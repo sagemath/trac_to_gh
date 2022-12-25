@@ -1,16 +1,16 @@
-# Issue 3786: [with patch, needs review] Refactor binary code isom code.
+# Issue 3786: [with patch, with positive review] Refactor binary code isomorphism code.
 
 archive/issues_003786.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis is *not* a full replacement of `binary_code`, only the half of it that computes automorphism groups and canonical labels. The other half will be refactored later in the summer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3786\n\n",
+    "closed_at": "2008-08-12T06:01:05Z",
     "created_at": "2008-08-07T01:13:10Z",
     "labels": [
-        "component: coding theory",
-        "bug"
+        "component: coding theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] Refactor binary code isom code.",
+    "title": "[with patch, with positive review] Refactor binary code isomorphism code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3786",
     "user": "https://github.com/rlmill"

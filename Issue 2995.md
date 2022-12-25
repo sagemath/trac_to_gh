@@ -1,16 +1,17 @@
-# Issue 2995: [with patch, needs review] some new functionality and doctests for congruence subgroups
+# Issue 2995: [with patch, with positive review] some new functionality and doctests for congruence subgroups
 
 archive/issues_002995.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: congruence subgroup\n\nThe attached patch does the following:\n\n1. allow coercing a 2x2 matrix (or a list of 4 elements) into a congruence subgroup: Gamma0(5)([1,5,1,6]) now works\n\n2. modified G.generators() so that it actually returns a list of elements of the group G instead of just matrices\n\n3. added gens()\n\n4. added a bunch of doctests\n\nRight now, all these changes are for Gamma0 and Gamma1 subgroups; I will do the same with GammaH subgroups as soon as I figure out how these work.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2995\n\n",
+    "closed_at": "2008-04-26T00:42:19Z",
     "created_at": "2008-04-22T03:34:36Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch, needs review] some new functionality and doctests for congruence subgroups",
+    "title": "[with patch, with positive review] some new functionality and doctests for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2995",
     "user": "https://github.com/aghitza"

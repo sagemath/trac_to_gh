@@ -4,6 +4,7 @@ archive/issues_001070.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @craigcitro\n\nFor instance, if local/lib/libmpfi.a changes, then sage/rings/real_mpfi.pyx should be rebuilt.  \n\nMost of the information to do this is in setup.py; the missing piece is knowing which libraries are static-only, which can presumably be determined by looking in local/lib/ for libraries with \".a\" files and without corresponding \".so\" files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1070\n\n",
+    "closed_at": "2008-12-17T14:28:44Z",
     "created_at": "2007-11-02T21:35:57Z",
     "labels": [
         "component: misc",

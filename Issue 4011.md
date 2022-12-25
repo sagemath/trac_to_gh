@@ -1,22 +1,23 @@
-# Issue 4011: notebook -- copying a worksheet on worksheet listings page results in the new worksheet being listed as running
+# Issue 4011: [with patch, positive review] notebook -- copying a worksheet on worksheet listings page results in the new worksheet being listed as running
 
 archive/issues_004011.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWhy is the new worksheet, copy of another worksheet, running? It hasn't been accessed by the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4011\n\n",
+    "body": "Assignee: @mwhansen\n\nWhy is the new worksheet, copy of another worksheet, running? It hasn't been accessed by the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4011\n\n",
+    "closed_at": "2009-03-24T23:26:00Z",
     "created_at": "2008-08-31T01:08:02Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "notebook -- copying a worksheet on worksheet listings page results in the new worksheet being listed as running",
+    "title": "[with patch, positive review] notebook -- copying a worksheet on worksheet listings page results in the new worksheet being listed as running",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4011",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Why is the new worksheet, copy of another worksheet, running? It hasn't been accessed by the user.
 

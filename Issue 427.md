@@ -1,22 +1,24 @@
-# Issue 427: backslash infix operator does not print properly in documentation
+# Issue 427: [close once the ReST patches are in] backslash infix operator does not print properly in documentation
 
 archive/issues_000427.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThe infix operator '\\' does not print properly in the notebook\nwhen used in the examples of solve_right (for a matrix)\n(file:\n`local/lib/python/site-packages/sage/matrix/matrix2.pyx`)\nI suspect that these backslashes simply end up escaping the space after them. Some more preprocessing may be needed to escape backslashes occurring in examples in documentation?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/427\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\nThe infix operator '\\' does not print properly in the notebook\nwhen used in the examples of solve_right (for a matrix)\n(file:\n`local/lib/python/site-packages/sage/matrix/matrix2.pyx`)\nI suspect that these backslashes simply end up escaping the space after them. Some more preprocessing may be needed to escape backslashes occurring in examples in documentation?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/427\n\n",
+    "closed_at": "2009-02-24T19:57:21Z",
     "created_at": "2007-08-13T20:50:31Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: user interface",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "backslash infix operator does not print properly in documentation",
+    "title": "[close once the ReST patches are in] backslash infix operator does not print properly in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/427",
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  @mwhansen
 

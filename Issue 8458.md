@@ -3,7 +3,8 @@
 archive/issues_008458.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  brunellus\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/4f822bba45432f7b):\n\n```\nSo, what you are saying is that the iterator for graphs() does not\nreturn independent graphs which can be changed without affecting the\nothers.\nThat does explain what I am seeing and is consistent with Pat\nLeSmith's suggested workaround.\n\nShould this property of the iterators to the generated graphs be\ndocumented?\n\nSo, I think I will try making a copy of just the graphs I want to\nchange or use the list() trick. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8458\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  brunellus\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/4f822bba45432f7b):\n\n```\nSo, what you are saying is that the iterator for graphs() does not\nreturn independent graphs which can be changed without affecting the\nothers.\nThat does explain what I am seeing and is consistent with Pat\nLeSmith's suggested workaround.\n\nShould this property of the iterators to the generated graphs be\ndocumented?\n\nSo, I think I will try making a copy of just the graphs I want to\nchange or use the list() trick. \n```\n\nApply:\n    [attachment:trac_8458.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8458\n\n",
+    "closed_at": "2012-02-06T21:22:29Z",
     "created_at": "2010-03-06T19:18:00Z",
     "labels": [
         "component: graph theory",
@@ -35,6 +36,10 @@ documented?
 So, I think I will try making a copy of just the graphs I want to
 change or use the list() trick. 
 ```
+
+Apply:
+    [attachment:trac_8458.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8458
 

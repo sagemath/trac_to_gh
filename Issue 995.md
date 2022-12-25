@@ -1,16 +1,17 @@
-# Issue 995: Generalize polynomial .roots() method by adding optional ring= parameter for result ring
+# Issue 995: [with patch] Generalize polynomial .roots() method by adding optional ring= parameter for result ring
 
 archive/issues_000995.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\n<wstein> Better might be to improve the roots function so that it can take \n an optional ring as input.\n e.g.,\n    f = x^3 + 1 (over QQ say), then\n f.roots(ComplexField(200))\n would give the roots in that field.\n What do you think?\n<cwitty> I like it.\n I like it a lot.\n f.roots(RealField(200)), f.roots(AA), f.roots(RealIntervalField(200)) ...\n<wstein> Yep.\n And it could be intelligent, but when it doesn't know what to do just \n return f.change_ring(R).roots(...)\n But in many cases it could use that f is defined over a better ring\n than R, e.g., QQ, to find the roots\n to lots of precision.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/995\n\n",
+    "closed_at": "2007-11-06T21:44:20Z",
     "created_at": "2007-10-25T06:21:10Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "Generalize polynomial .roots() method by adding optional ring= parameter for result ring",
+    "title": "[with patch] Generalize polynomial .roots() method by adding optional ring= parameter for result ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/995",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

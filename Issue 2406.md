@@ -4,6 +4,7 @@ archive/issues_002406.json:
 ```json
 {
     "body": "Assignee: tba\n\nOn the page \n\nhttp://www.sagemath.org/doc/html/tut/node12.html\n\n\"interderminate\" should be \"indeterminate\".  It's near the beginning of the page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2406\n\n",
+    "closed_at": "2008-03-07T21:01:12Z",
     "created_at": "2008-03-06T17:07:03Z",
     "labels": [
         "component: documentation",

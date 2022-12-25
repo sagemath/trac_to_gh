@@ -4,6 +4,7 @@ archive/issues_006871.json:
 ```json
 {
     "body": "Assignee: boothby\n\nAs described in comment:27:ticket:4135, when #4135 is applied, the \"temporary\" password you get when resetting a user's password isn't temporary -- you can log in, log out, and then log in again with it.\n\nAlso, the page that tells you the new password has a title of \"Error\" even though no error has occurred.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6871\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-09-03T03:19:25Z",
     "labels": [
         "component: notebook",

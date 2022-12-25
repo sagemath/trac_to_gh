@@ -1,16 +1,17 @@
-# Issue 6744: [with patch, needs review] install script stores start time of build
+# Issue 6744: [with patch, positive review] install script stores start time of build
 
 archive/issues_006744.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIn order to track the build progress, it is necessary to store the start time of the build process. (elapsed time, estimate of remaining time, ...) \n\nThis patch inserts a line in \"install\" which stores the seconds since 1970-1-1 in a hidden file `.BUILDSTART` in `%SAGE_ROOT` when the build process starts. This could also be useful for other applications. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6744\n\n",
+    "closed_at": "2009-08-31T08:20:27Z",
     "created_at": "2009-08-14T09:58:17Z",
     "labels": [
         "component: distribution",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] install script stores start time of build",
+    "title": "[with patch, positive review] install script stores start time of build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6744",
     "user": "https://github.com/haraldschilly"

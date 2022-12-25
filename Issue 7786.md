@@ -4,6 +4,7 @@ archive/issues_007786.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @qed777 @williamstein\n\nBy idiomatic Jinja, I mean\n\n* Inheritance instead of inclusion\n\n* Arguments required are only the needed models to produce the required view [1]\n\nThis will make editing the templates easier, and will allow for a more consistent interface (by specifying base templates for each section).\n\n[1] [Model-View-Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7786\n\n",
+    "closed_at": "2010-01-19T03:29:00Z",
     "created_at": "2009-12-29T09:19:36Z",
     "labels": [
         "component: notebook"

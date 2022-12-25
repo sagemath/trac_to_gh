@@ -1,16 +1,17 @@
-# Issue 5397: SmallGroups library can't be used in Sage-3.3
+# Issue 5397: [with patch, needs work] SmallGroups library can't be used in Sage-3.3
 
 archive/issues_005397.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: SmallGroups library gap package\n\nAs I reported at http://groups.google.com/group/sage-support/browse_thread/thread/b82584e0ee6ba733, it seems that the `SmallGroups` library can not be used in `sage 3.3`.\n\nMore precisely: I installed `database_gap-4.4.10`\nand `gap_packages-4.4.10_6` -- apparently with success. But when I tried to use it, say, with `gap('NumberSmallGroups(128)')`, an error is raised, complaining about the `SmallGroups` library being missing.\n\nThis occurs in the following settings:\n- sage-3.3 built from source on x86_64 GNU/Linux, Dual Core AMD Opteron(tm) Processor 270, gcc (GCC) 4.1.2 20061115 (prerelease) (SUSE Linux)\n- sage-3.3 obtained by an upgrade of sage-3.1.2 (built from source) on the same machine\n- sage-3.3 obtained by an upgrade of sage-3.2.3 (built from source) on x86_64 GNU/Linux, AMD Athlon(tm) 64 Processor 3700+, gcc (GCC) 4.2.1 \n\nIt does not occur in a sage-3.3.rc0 install on `sage.math`. Perhaps this helps to locate the source of trouble.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5397\n\n",
+    "closed_at": "2012-03-02T13:54:52Z",
     "created_at": "2009-02-27T21:06:24Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "SmallGroups library can't be used in Sage-3.3",
+    "title": "[with patch, needs work] SmallGroups library can't be used in Sage-3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5397",
     "user": "https://github.com/simon-king-jena"

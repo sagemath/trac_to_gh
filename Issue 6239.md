@@ -1,22 +1,23 @@
-# Issue 6239: fix ReST formatting for pydesign module ext_rep
+# Issue 6239: [with patch, positive review] fix ReST formatting for pydesign module ext_rep
 
 archive/issues_006239.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  carlohamalainen @wdjoyner\n\nKeywords: ReST, ext_rep.py\n\nThis is a follow up to #6093. The patch on that ticket adds documentation to the pydesign module ext_rep. However, some of the formatting of the docstrings doesn't follow ReST formatting, hence doesn't show up nicely in the HTML and PDF versions. The module `sage/combinat/designs/ext_rep.py` should also be added to the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6239\n\n",
+    "body": "Assignee: carlohamalainen\n\nCC:  carlohamalainen @wdjoyner\n\nKeywords: ReST, ext_rep.py\n\nThis is a follow up to #6093. The patch on that ticket adds documentation to the pydesign module ext_rep. However, some of the formatting of the docstrings doesn't follow ReST formatting, hence doesn't show up nicely in the HTML and PDF versions. The module `sage/combinat/designs/ext_rep.py` should also be added to the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6239\n\n",
+    "closed_at": "2009-06-24T09:58:45Z",
     "created_at": "2009-06-07T06:11:40Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "fix ReST formatting for pydesign module ext_rep",
+    "title": "[with patch, positive review] fix ReST formatting for pydesign module ext_rep",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6239",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tba
+Assignee: carlohamalainen
 
 CC:  carlohamalainen @wdjoyner
 

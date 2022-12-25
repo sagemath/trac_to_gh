@@ -1,16 +1,17 @@
-# Issue 3610: __contains__ for RealIntervalFields does not work correctly.
+# Issue 3610: [with patch, positive review] __contains__ for RealIntervalFields does not work correctly.
 
 archive/issues_003610.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: (R(2.1) + R(2.2))^2 in R\nFalse\nsage: R = RealIntervalField(32)\nsage: a = (R(2.1) + R(2.2))^2 \nsage: a\n[18.489999987 .. 18.490000010]\nsage: a in R\nFalse\nsage: a.parent()\nReal Interval Field with 32 bits of precision\nsage: a == a\nFalse\n```\n\nThis is caused by the following code in which gets inherited from parent.pyx:\n\n```\n        try:\n            x2 = self(x)\n            return bool(x2 == x)\n        except TypeError:\n            return False\n```\n\nSince equality is not reflexive for RealIntervals, this doesn't work as intended.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3610\n\n",
+    "closed_at": "2009-01-24T19:31:24Z",
     "created_at": "2008-07-08T17:41:30Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "__contains__ for RealIntervalFields does not work correctly.",
+    "title": "[with patch, positive review] __contains__ for RealIntervalFields does not work correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3610",
     "user": "https://github.com/mwhansen"

@@ -3,7 +3,8 @@
 archive/issues_004217.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/642313d7270e789f it was reported:\n\n```\nAs of version 3.1.2, plots are saved correctly in notebooks. Thanks to \nthose that fixed it. However, I noticed that the formatting of cells \nbeginning with \"%hide %html\" is not saved. I need to re-evaluate all \nof those cells to get the formatting back. Is this a bug in SAGE or \ndoes it have something to do with the web browser (Firefox 3.0.3 on \nMac OS X 10.4)? \nThanks again for the great effort! \n\nStan\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4217\n\n",
+    "body": "Assignee: @mwhansen\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/642313d7270e789f it was reported:\n\n```\nAs of version 3.1.2, plots are saved correctly in notebooks. Thanks to \nthose that fixed it. However, I noticed that the formatting of cells \nbeginning with \"%hide %html\" is not saved. I need to re-evaluate all \nof those cells to get the formatting back. Is this a bug in SAGE or \ndoes it have something to do with the web browser (Firefox 3.0.3 on \nMac OS X 10.4)? \nThanks again for the great effort! \n\nStan\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4217\n\n",
+    "closed_at": "2010-01-25T00:51:44Z",
     "created_at": "2008-09-29T18:17:11Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_004217.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 In http://groups.google.com/group/sage-support/browse_thread/thread/642313d7270e789f it was reported:
 

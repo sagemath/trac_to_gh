@@ -1,16 +1,16 @@
-# Issue 610: padics have no doctests
+# Issue 610: improve doctest coverage for padics (currently at 25.8% and 40.6%)
 
 archive/issues_000610.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nAll files in the rings/padics directory need doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/610\n\n",
+    "closed_at": "2009-04-30T00:56:23Z",
     "created_at": "2007-09-07T01:09:01Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "padics have no doctests",
+    "title": "improve doctest coverage for padics (currently at 25.8% and 40.6%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/610",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

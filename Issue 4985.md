@@ -1,15 +1,17 @@
-# Issue 4985: Expand documentation for list_plot to point out the utility of zip
+# Issue 4985: [with patch, positive review] Expand documentation for list_plot to point out the utility of zip
 
 archive/issues_004985.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWe should expand the documentation for list_plot so that questions like on the latter half of this thread don't happen:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/e523b8ade175746c\n\nBasically, we should explain how to use zip like thus:\n\nlist_plot(zip(list of x-coords, list of y-coords))\n\nso that people from Matlab don't get confused by the very unhelpful error message.  Maybe the error message ought to be changed too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4985\n\n",
+    "closed_at": "2009-03-25T06:08:13Z",
     "created_at": "2009-01-16T02:50:47Z",
     "labels": [
-        "component: graphics"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Expand documentation for list_plot to point out the utility of zip",
+    "title": "[with patch, positive review] Expand documentation for list_plot to point out the utility of zip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4985",
     "user": "https://github.com/jasongrout"

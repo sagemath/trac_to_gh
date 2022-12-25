@@ -3,7 +3,8 @@
 archive/issues_007909.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nsage-env has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. \n\nI'm attaching a copy of the revised sage-env, and also a Mercurial patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7909\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nsage-spkg has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. \n\nI'm attaching a copy of the revised sage-spkg, and also a Mercurial patch. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7909\n\n",
+    "closed_at": "2010-01-14T03:03:07Z",
     "created_at": "2010-01-12T16:15:32Z",
     "labels": [
         "component: build",
@@ -20,9 +21,11 @@ Assignee: GeorgSWeber
 
 CC:  @jaapspies
 
-sage-env has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. 
+sage-spkg has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. 
 
-I'm attaching a copy of the revised sage-env, and also a Mercurial patch.
+I'm attaching a copy of the revised sage-spkg, and also a Mercurial patch. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7909
 

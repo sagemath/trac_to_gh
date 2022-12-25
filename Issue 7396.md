@@ -1,16 +1,17 @@
-# Issue 7396: Disjoint unions of enumerated sets.
+# Issue 7396: Disjoint unions of enumerated sets
 
 archive/issues_007396.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Disjoint union, enumerated sets\n\nThe patch implement the disjoint union of a family of enumerated sets. It allows in particular to deal with infinite unions such as in \n\n```\nsage: DisjointUnionEnumeratedSets(\n...       Family(NonNegativeIntegers(), Permutations))\nDisjoint union of Lazy family (Permutations(i))_{i in Non negative integers}\n```\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7396\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Disjoint union, enumerated sets\n\nThe patch implement the disjoint union of a family of enumerated sets. It allows in particular to deal with infinite unions such as in \n\n```\nsage: DisjointUnionEnumeratedSets(\n...       Family(NonNegativeIntegers(), Permutations))\nDisjoint union of Lazy family (Permutations(i))_{i in Non negative integers}\n```\n\nDepend on #7395.\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7396\n\n",
+    "closed_at": "2009-11-19T16:58:39Z",
     "created_at": "2009-11-05T15:46:33Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Disjoint unions of enumerated sets.",
+    "title": "Disjoint unions of enumerated sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7396",
     "user": "https://github.com/hivert"
@@ -30,7 +31,10 @@ sage: DisjointUnionEnumeratedSets(
 Disjoint union of Lazy family (Permutations(i))_{i in Non negative integers}
 ```
 
+Depend on #7395.
+
 Florent
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7396
 

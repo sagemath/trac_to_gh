@@ -1,9 +1,10 @@
-# Issue 901: minor addition to prog.tex
+# Issue 901: [with patch] minor addition to prog.tex
 
 archive/issues_000901.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nTo view a hg patch bundle as a text file, you can use the\nhg_sage.inspect('patchname.hg') command. This was added to \n\nhttp://www.sagemath.org/doc/html/prog/node72.html\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/prog.tex.hg\n\nThough \"inspect\" seems to work on \"source code\" patches, it does not \nseem to work on doc patches.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/901\n\n",
+    "closed_at": "2007-10-27T04:55:07Z",
     "created_at": "2007-10-15T01:06:27Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_000901.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "minor addition to prog.tex",
+    "title": "[with patch] minor addition to prog.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/901",
     "user": "https://github.com/wdjoyner"

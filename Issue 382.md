@@ -4,6 +4,7 @@ archive/issues_000382.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn \"databases/db_class_polynomials.py:_dbpath()\", the \"NYI\" error for level>1 refers\nto the variable 's'; it should be 'level'. \n\nBundle attached.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/382\n\n",
+    "closed_at": "2007-05-31T13:48:27Z",
     "created_at": "2007-05-29T04:23:16Z",
     "labels": [
         "component: algebraic geometry",

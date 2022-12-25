@@ -1,16 +1,17 @@
-# Issue 3481: remove sage/plot/plot3dsoya.py from sage!!!
+# Issue 3481: [with patch, positive review] remove sage/plot/plot3dsoya.py from sage
 
 archive/issues_003481.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3481\n\n",
+    "body": "Assignee: @williamstein\n\nReason for removal: that soya3d project is sort of deprecated and we don't support it at all. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3481\n\n",
+    "closed_at": "2008-08-31T04:22:40Z",
     "created_at": "2008-06-20T05:44:21Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "remove sage/plot/plot3dsoya.py from sage!!!",
+    "title": "[with patch, positive review] remove sage/plot/plot3dsoya.py from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3481",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,7 @@ archive/issues_003481.json:
 ```
 Assignee: @williamstein
 
-
+Reason for removal: that soya3d project is sort of deprecated and we don't support it at all. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3481
 

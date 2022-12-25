@@ -4,6 +4,7 @@ archive/issues_009624.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @dandrake @qed777\n\nThe doctest failure reported by Harald Schilly\n\n\nhttp://groups.google.com/group/sage-release/msg/8807ed7073c6793f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9624\n\n",
+    "closed_at": "2010-07-28T14:09:49Z",
     "created_at": "2010-07-28T11:51:22Z",
     "labels": [
         "component: doctest coverage",

@@ -3,7 +3,8 @@
 archive/issues_008860.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @nexttime\n\nThis was reported by Francois Maltey:\n\n```\nsage: map (type, [float(1.2), N(1.2), N(1.2,digits=50)])\n\n                           [<type 'float'>,\n                            <type 'sage.rings.real_mpfr.RealLiteral'>,\n                            <type 'sage.rings.real_mpfr.RealNumber'>]\n```\nWhy does the second one return `RealLiteral` and the 3rd one\n`RealNumber`?\n\nSide question: how does one test if the type of an object \ncorresponds to a real number, like for example:\n\n```\ntype (345) is Integer, type([1,2,3]) is list, type (2/3) is Rational\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8860\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @nexttime\n\nKeywords: sd40.5\n\nThis was reported by Francois Maltey:\n\n```\nsage: map (type, [float(1.2), N(1.2), N(1.2,digits=50)])\n\n                           [<type 'float'>,\n                            <type 'sage.rings.real_mpfr.RealLiteral'>,\n                            <type 'sage.rings.real_mpfr.RealNumber'>]\n```\nWhy does the second one return `RealLiteral` and the 3rd one\n`RealNumber`?\n\nSide question: how does one test if the type of an object \ncorresponds to a real number, like for example:\n\n```\ntype (345) is Integer, type([1,2,3]) is list, type (2/3) is Rational\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8860\n\n",
+    "closed_at": "2012-06-02T12:56:18Z",
     "created_at": "2010-05-03T18:10:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,6 +21,8 @@ archive/issues_008860.json:
 Assignee: @aghitza
 
 CC:  @nexttime
+
+Keywords: sd40.5
 
 This was reported by Francois Maltey:
 

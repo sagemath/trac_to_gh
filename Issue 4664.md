@@ -4,10 +4,10 @@ archive/issues_004664.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @robertwb\n\nSage's dependency checking code should be useful for many Cython projects. So let's move that code upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4664\n\n",
+    "closed_at": "2013-05-21T07:24:15Z",
     "created_at": "2008-11-30T09:36:25Z",
     "labels": [
-        "component: build",
-        "bug"
+        "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Move Cython dependency checking code into upstream Cython",

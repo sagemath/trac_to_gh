@@ -1,16 +1,17 @@
-# Issue 5793: [with patch, needs review] New algorithm for Max Clique in Graph class using Cython
+# Issue 5793: [with patch, positive review] New algorithm for Max Clique in Graph class using Cython
 
 archive/issues_005793.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nAfter the discussion that has followed the following patch :\nhttp://trac.sagemath.org/sage_trac/ticket/5669\n\nI began to re-write the same functions using Cython. There is now no need of a spkg package, and I hope it will be faster this way (and prettier) ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5793\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThis depends on #6355.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5793\n\n",
+    "closed_at": "2009-07-31T23:32:09Z",
     "created_at": "2009-04-16T01:00:04Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] New algorithm for Max Clique in Graph class using Cython",
+    "title": "[with patch, positive review] New algorithm for Max Clique in Graph class using Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5793",
     "user": "https://github.com/nathanncohen"
@@ -20,10 +21,7 @@ Assignee: @rlmill
 
 CC:  @rlmill
 
-After the discussion that has followed the following patch :
-http://trac.sagemath.org/sage_trac/ticket/5669
-
-I began to re-write the same functions using Cython. There is now no need of a spkg package, and I hope it will be faster this way (and prettier) ;-)
+This depends on #6355.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5793
 

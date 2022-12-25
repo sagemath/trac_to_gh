@@ -3,7 +3,8 @@
 archive/issues_000196.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSomewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code\nappears to be completely not doing anything at all.  Weird!  This is a\nmajor bug that must be fixed before SAGE-2.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/196\n\n",
+    "body": "Assignee: @malb\n\nSomewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code\nappears to be completely not doing anything at all.  Weird!  This is a\nmajor bug that must be fixed before SAGE-2.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/196\n\n",
+    "closed_at": "2007-01-21T21:51:43Z",
     "created_at": "2007-01-19T09:54:09Z",
     "labels": [
         "component: user interface",
@@ -17,7 +18,7 @@ archive/issues_000196.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 Somewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code
 appears to be completely not doing anything at all.  Weird!  This is a

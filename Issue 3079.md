@@ -1,9 +1,10 @@
-# Issue 3079: quaddouble configuration and spkg-install cleaning
+# Issue 3079: [with patch, needs work] quaddouble configuration and spkg-install cleaning
 
 archive/issues_003079.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe current spkg-install keep the strange default of the qd \npackage. The proposed patch enable ieee error compliant addition\nand disable sloppy division and multiplication.\nFurther spkg-install currently comes with the following strange\nsettings:\n CXXFLAGS='-fPIC -O3 -Dx86'\n-fpic, beside being platform specific, is useless in this case\nas no shared object is produced. Flags like -Dx86 are best left\nto the configure script, fortunately this should be without effect,\nthe correct parameter being \"X86\". Both flags should be removed as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3079\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: editor_mabshoff\n\nThe current spkg-install keep the strange default of the qd \npackage. The proposed patch enable ieee error compliant addition\nand disable sloppy division and multiplication.\nFurther spkg-install currently comes with the following strange\nsettings:\n CXXFLAGS='-fPIC -O3 -Dx86'\n-fpic, beside being platform specific, is useless in this case\nas no shared object is produced. Flags like -Dx86 are best left\nto the configure script, fortunately this should be without effect,\nthe correct parameter being \"X86\". Both flags should be removed as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3079\n\n",
+    "closed_at": "2008-08-11T05:25:57Z",
     "created_at": "2008-05-02T11:34:25Z",
     "labels": [
         "component: build",
@@ -11,13 +12,15 @@ archive/issues_003079.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "quaddouble configuration and spkg-install cleaning",
+    "title": "[with patch, needs work] quaddouble configuration and spkg-install cleaning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3079",
     "user": "https://github.com/kiwifb"
 }
 ```
 Assignee: mabshoff
+
+Keywords: editor_mabshoff
 
 The current spkg-install keep the strange default of the qd 
 package. The proposed patch enable ieee error compliant addition

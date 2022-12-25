@@ -1,9 +1,10 @@
-# Issue 313: Slideshow doesn't update when cell deleted.
+# Issue 313: [with patch, positive review] Slideshow doesn't update correctly when first cell deleted.
 
 archive/issues_000313.json:
 ```json
 {
     "body": "Assignee: boothby\n\nSlideshow doesn't update when first cell deleted. If the first cell is deleted then the second cell should become the first and the slideshow should show that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/313\n\n",
+    "closed_at": "2009-01-23T10:03:16Z",
     "created_at": "2007-03-09T21:49:50Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_000313.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Slideshow doesn't update when cell deleted.",
+    "title": "[with patch, positive review] Slideshow doesn't update correctly when first cell deleted.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/313",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

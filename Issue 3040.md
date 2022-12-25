@@ -1,16 +1,17 @@
-# Issue 3040: [with patch; needs review] make it so magma(A) works for matrices over cyclotomic number fields
+# Issue 3040: [with patch, with positive review] make it so magma(A) works for matrices over cyclotomic number fields
 
 archive/issues_003040.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3040\n\n",
+    "closed_at": "2008-06-09T07:42:19Z",
     "created_at": "2008-04-27T03:21:07Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] make it so magma(A) works for matrices over cyclotomic number fields",
+    "title": "[with patch, with positive review] make it so magma(A) works for matrices over cyclotomic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3040",
     "user": "https://github.com/williamstein"

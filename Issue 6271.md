@@ -1,16 +1,17 @@
-# Issue 6271: upgrade to mpir-1.3.0
+# Issue 6271: [with patch, with positive review] upgrade to mpir-1.3.0
 
 archive/issues_006271.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @craigcitro\n\npackages are on sage.math, Craig knows where.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6271\n\n",
+    "closed_at": "2009-06-14T22:31:18Z",
     "created_at": "2009-06-12T18:49:57Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "upgrade to mpir-1.3.0",
+    "title": "[with patch, with positive review] upgrade to mpir-1.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6271",
     "user": "https://github.com/ncalexan"

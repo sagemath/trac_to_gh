@@ -1,16 +1,17 @@
-# Issue 4615: [with spkg, needs review] Make boehm_gc a standard spkg
+# Issue 4615: [with spkg, positive review] Make boehm_gc a standard spkg
 
 archive/issues_004615.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is part of the project to replace clisp by ecl. The vote was at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/450bb51e12fab1aa\n\nSince it is already an optional spkg all that needs to be done is to patch deps and so on. Maxima should depend on boehm_gc.\n\nThe spkg is at\n\nhttp://sagemath.org/packages/optional/boehm_gc-7.1.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4615\n\n",
+    "closed_at": "2008-11-29T07:08:13Z",
     "created_at": "2008-11-25T11:49:34Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with spkg, needs review] Make boehm_gc a standard spkg",
+    "title": "[with spkg, positive review] Make boehm_gc a standard spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4615",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

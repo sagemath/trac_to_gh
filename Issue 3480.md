@@ -1,16 +1,17 @@
-# Issue 3480: notebook -- hide "New Worksheet" and "Upload" links on the published worksheets page from guest users
+# Issue 3480: [with patch, positive review] notebook -- hide "New Worksheet" and "Upload" links on the published worksheets page from guest users
 
 archive/issues_003480.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3480\n\n",
+    "closed_at": "2008-06-25T05:58:45Z",
     "created_at": "2008-06-19T23:29:25Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- hide \"New Worksheet\" and \"Upload\" links on the published worksheets page from guest users",
+    "title": "[with patch, positive review] notebook -- hide \"New Worksheet\" and \"Upload\" links on the published worksheets page from guest users",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3480",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

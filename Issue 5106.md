@@ -1,22 +1,23 @@
-# Issue 5106: preparse bug with time and generator assignment naming
+# Issue 5106: [with patch, positive review] preparse bug with time and generator assignment naming
 
 archive/issues_005106.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  boothby @mwhansen\n\nThe Sage `.<a>` notation doesn't properly deal with `time foo`.\n\n```\nsage: time K.<a> = GF(9)\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     K = GF(Integer(Integer(9)),names=(u'a',)); (a,) = time K._first_ngens(Integer(1))\n                                                            ^\nSyntaxError: invalid syntax\n```\n\nNote that the Ipython magic %time works fine:\n\n```\nsage: %time K.<a> = GF(9)\nCPU times: user 0.11 s, sys: 0.09 s, total: 0.19 s\nWall time: 2.17 s\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5106\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  boothby @mwhansen\n\nThe Sage `.<a>` notation doesn't properly deal with `time foo`.\n\n```\nsage: time K.<a> = GF(9)\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     K = GF(Integer(Integer(9)),names=(u'a',)); (a,) = time K._first_ngens(Integer(1))\n                                                            ^\nSyntaxError: invalid syntax\n```\n\nNote that the Ipython magic %time works fine:\n\n```\nsage: %time K.<a> = GF(9)\nCPU times: user 0.11 s, sys: 0.09 s, total: 0.19 s\nWall time: 2.17 s\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5106\n\n",
+    "closed_at": "2009-02-17T19:50:24Z",
     "created_at": "2009-01-26T19:10:38Z",
     "labels": [
-        "component: misc",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "preparse bug with time and generator assignment naming",
+    "title": "[with patch, positive review] preparse bug with time and generator assignment naming",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5106",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @williamstein
 
 CC:  boothby @mwhansen
 

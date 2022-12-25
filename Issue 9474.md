@@ -3,7 +3,8 @@
 archive/issues_009474.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nSince it is claimed ECL and Maxima are causing doctest failures on sage.math (see #9460) a decision has been made to revert ECL and Maxima. This patch will use the old version, but with a couple of patches which are already positively reviewed to allow ECL to build on Solaris 10 and OpenSolaris x64.\n\nLet's hope this solves the problem, as several people manage to build sage-4.5.alpah4 on sage.math.washington.edu with Maxima tests passing, and other tests have failed on sage.math too. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9474\n\n",
+    "body": "Assignee: drkirkby\n\nSince it is claimed ECL and Maxima are causing doctest failures on sage.math (see #9460) a decision has been made to revert ECL and Maxima. This patch will use the old version, but with a couple of patches which are already positively reviewed to allow ECL to build on Solaris 10 and OpenSolaris x64.\n\nLet's hope this solves the problem, as several people manage to build sage-4.5.alpah4 on sage.math.washington.edu with Maxima tests passing, and other tests have failed on sage.math too. \n\nDave \n\n\nTo the release manager: merge the spkg from #9187 instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9474\n\n",
+    "closed_at": "2010-07-13T18:39:44Z",
     "created_at": "2010-07-11T11:36:49Z",
     "labels": [
         "component: porting: solaris",
@@ -23,7 +24,10 @@ Since it is claimed ECL and Maxima are causing doctest failures on sage.math (se
 
 Let's hope this solves the problem, as several people manage to build sage-4.5.alpah4 on sage.math.washington.edu with Maxima tests passing, and other tests have failed on sage.math too. 
 
-Dave
+Dave 
+
+
+To the release manager: merge the spkg from #9187 instead.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9474
 

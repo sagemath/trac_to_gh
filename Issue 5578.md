@@ -1,16 +1,17 @@
-# Issue 5578: [with patch, needs review] elliptic curve local data cache ignores proof flag
+# Issue 5578: [with patch, with positive  review] elliptic curve local data cache ignores proof flag
 
 archive/issues_005578.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe fix is trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5578\n\n",
+    "closed_at": "2009-03-26T00:36:49Z",
     "created_at": "2009-03-21T11:29:24Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] elliptic curve local data cache ignores proof flag",
+    "title": "[with patch, with positive  review] elliptic curve local data cache ignores proof flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5578",
     "user": "https://github.com/robertwb"

@@ -1,28 +1,35 @@
-# Issue 6371: implement Riemann theta functions
+# Issue 6371: Implement Riemann theta functions
 
 archive/issues_006371.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @cswiercz fredrik.johannson @mstreng jpflori @slel\n\nKeywords: riemann theta klein\n\nIn the theory of differential equations and abelian varieties, Riemann theta functions and there relatives play an important role.  Implement these in sage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6371\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz fredrik.johannson @mstreng jpflori @slel\n\nKeywords: riemann theta klein\n\nIn the theory of differential equations and Abelian varieties, Riemann theta functions and their relatives play an important role.  Implement these in Sage!\n\nSee also:\n\n- [RiemannTheta](https://github.com/nbruin/RiemannTheta) --\n  A Sagemath package for evaluating Riemann theta functions\n  with characteristics numerically to arbitrary precision,\n  as well as their derivatives\n\nIssue created by migration from https://trac.sagemath.org/ticket/6371\n\n",
     "created_at": "2009-06-20T18:15:55Z",
     "labels": [
         "component: numerical",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
-    "title": "implement Riemann theta functions",
+    "title": "Implement Riemann theta functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6371",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: jkantor
+Assignee: @cswiercz
 
 CC:  @cswiercz fredrik.johannson @mstreng jpflori @slel
 
 Keywords: riemann theta klein
 
-In the theory of differential equations and abelian varieties, Riemann theta functions and there relatives play an important role.  Implement these in sage!
+In the theory of differential equations and Abelian varieties, Riemann theta functions and their relatives play an important role.  Implement these in Sage!
+
+See also:
+
+- [RiemannTheta](https://github.com/nbruin/RiemannTheta) --
+  A Sagemath package for evaluating Riemann theta functions
+  with characteristics numerically to arbitrary precision,
+  as well as their derivatives
 
 Issue created by migration from https://trac.sagemath.org/ticket/6371
 

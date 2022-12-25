@@ -1,21 +1,24 @@
-# Issue 1839: [with script; needs review and integration] sage-crap: incorporate this script into sage and start using it before each release.
+# Issue 1839: [with script; positive] sage-crap: incorporate this script into sage and start using it before each release.
 
 archive/issues_001839.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1839\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: editor_wstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1839\n\n",
+    "closed_at": "2008-07-08T00:42:05Z",
     "created_at": "2008-01-18T22:04:27Z",
     "labels": [
-        "component: commutative algebra"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with script; needs review and integration] sage-crap: incorporate this script into sage and start using it before each release.",
+    "title": "[with script; positive] sage-crap: incorporate this script into sage and start using it before each release.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1839",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @malb
+Assignee: mabshoff
+
+Keywords: editor_wstein
 
 
 

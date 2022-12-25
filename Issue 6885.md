@@ -4,6 +4,7 @@ archive/issues_006885.json:
 ```json
 {
     "body": "Assignee: tba\n\nWhen building the PDF reference manual on 64-bit Fedora 10:\n\n```\n[1913] [1914] [1915] [1916]\nChapter 24.\n\n! LaTeX Error: Too deeply nested.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.154726 \\begin{itemize}\n\n?\n```\nI think this is near the beginning of `sage/rings/ring.pyx`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6885\n\n",
+    "closed_at": "2009-09-22T20:14:25Z",
     "created_at": "2009-09-04T08:02:16Z",
     "labels": [
         "component: documentation",

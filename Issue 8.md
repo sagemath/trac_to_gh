@@ -4,6 +4,7 @@ archive/issues_000008.json:
 ```json
 {
     "body": "Assignee: somebody\n\nIt would be useful for Integer and Rational classes to have:\n\n(1) nth_root: this would wrap GMP's mpz_root.\n(2) exact_power: would accept a *rational* number as an index, and work out which root to take. For example\n\n(-8/27).exact_power(2/3) == 4/9\n\nI had to take an exact 6th root of a rational in some code the other day and it was **painful** going via real numbers, worrying about bits of precision and all that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8\n\n",
+    "closed_at": "2006-09-16T05:05:03Z",
     "created_at": "2006-09-12T02:39:12Z",
     "labels": [
         "component: basic arithmetic"

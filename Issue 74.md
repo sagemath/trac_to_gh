@@ -4,6 +4,7 @@ archive/issues_000074.json:
 ```json
 {
     "body": "Assignee: somebody\n\nWhy: Because SAGE is huge and darcs doesn't scale sufficiently well.  \nMercurial does scale to the task, though is less capable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/74\n\n",
+    "closed_at": "2006-09-21T10:58:54Z",
     "created_at": "2006-09-21T01:30:16Z",
     "labels": [
         "component: basic arithmetic"

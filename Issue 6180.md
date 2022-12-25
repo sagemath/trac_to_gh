@@ -1,9 +1,10 @@
-# Issue 6180: [with patch; needs review] fix typo in spkg-install for pynac
+# Issue 6180: [with patch; positive review] fix typo in spkg-install for pynac
 
 archive/issues_006180.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6180\n\n",
+    "body": "Assignee: mabshoff\n\nThe typo is spkg-install starts with ##!/usr/bin/env\n\nIssue created by migration from https://trac.sagemath.org/ticket/6180\n\n",
+    "closed_at": "2009-06-04T06:27:45Z",
     "created_at": "2009-06-01T23:56:36Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_006180.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch; needs review] fix typo in spkg-install for pynac",
+    "title": "[with patch; positive review] fix typo in spkg-install for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6180",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,7 @@ archive/issues_006180.json:
 ```
 Assignee: mabshoff
 
-
+The typo is spkg-install starts with ##!/usr/bin/env
 
 Issue created by migration from https://trac.sagemath.org/ticket/6180
 

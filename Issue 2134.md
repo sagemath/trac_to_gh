@@ -1,15 +1,16 @@
-# Issue 2134: arrows for digraphs
+# Issue 2134: [with patch; with positive review] arrows for digraphs
 
 archive/issues_002134.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nnote - author of patch doesn't give a hoot. do what you will with it, i won't touch it again. several things may break, for example, the only guaranteed color format is a float tuple. also, no new documentation.\n\neverybody wants it, so here it is... :-D\n\nIssue created by migration from https://trac.sagemath.org/ticket/2134\n\n",
+    "closed_at": "2008-02-15T02:18:26Z",
     "created_at": "2008-02-10T00:25:14Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "arrows for digraphs",
+    "title": "[with patch; with positive review] arrows for digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2134",
     "user": "https://github.com/rlmill"

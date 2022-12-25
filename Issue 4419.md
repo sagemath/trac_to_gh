@@ -1,9 +1,10 @@
-# Issue 4419: [with patch, needs review] conversion of Permutations to GAP not implemented
+# Issue 4419: [with patch, positive review] conversion of Permutations to GAP not implemented
 
 archive/issues_004419.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe following fails \n\n```\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation([()]))\nsage: gap.Group([p, q])\n```\nbecause \n\n```\nsage: gap(Permutation((1,2,3)))\n[ 2 3 1 ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4419\n\n",
+    "closed_at": "2008-11-21T10:56:12Z",
     "created_at": "2008-11-02T00:17:11Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_004419.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] conversion of Permutations to GAP not implemented",
+    "title": "[with patch, positive review] conversion of Permutations to GAP not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4419",
     "user": "https://github.com/mwhansen"

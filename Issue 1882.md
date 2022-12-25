@@ -1,16 +1,17 @@
-# Issue 1882: new phcpack spkg
+# Issue 1882: [with optional spkg, positive review] update optional phcpack.spkg to 2.3.39, mixed volume computation
 
 archive/issues_001882.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: phcpack\n\nPhcpack has had many releases since the last spkg.  This brings it up to date as of January 21, 2008, with release 2.3.38.  I have changed the install script to python instead of a shell script, because that's what I know how to do.  I have also tried to add AIX support but I don't have a machine to test it on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1882\n\n",
+    "closed_at": "2008-03-29T15:40:24Z",
     "created_at": "2008-01-21T23:06:32Z",
     "labels": [
-        "component: packages",
+        "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "new phcpack spkg",
+    "title": "[with optional spkg, positive review] update optional phcpack.spkg to 2.3.39, mixed volume computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1882",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

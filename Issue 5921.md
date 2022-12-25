@@ -1,16 +1,17 @@
-# Issue 5921: factoring integer polynomials does not factor the content
+# Issue 5921: [with patch, with positive review] factoring integer polynomials does not factor the content
 
 archive/issues_005921.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI think this is wrong:\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 30*x\nsage: f.factor()\n30 * x\n```\nsince in the ring ZZ[] 30 is not irreducible;  it should return 2*3*5*x.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5921\n\n",
+    "closed_at": "2009-04-30T09:20:52Z",
     "created_at": "2009-04-28T19:54:00Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "factoring integer polynomials does not factor the content",
+    "title": "[with patch, with positive review] factoring integer polynomials does not factor the content",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5921",
     "user": "https://github.com/JohnCremona"

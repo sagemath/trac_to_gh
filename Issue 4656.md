@@ -1,17 +1,17 @@
-# Issue 4656: power series with zero p-adic coefficients
+# Issue 4656: [with patch, needs work] power series with zero p-adic coefficients
 
 archive/issues_004656.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: padic powerseries\n\nThe following _repr_ does not look good to me\n\n```\nsage: R.<T> = Qp(5,5)[[]]\nsage: O(5^3)*T\n0\nsage: 1+O(5^3)*T\n1 + O(5^5) + O(5^3)*T\n```\n\nBut that is due to \n\n```\nsage: s= O(5^3)*T\nsage: s.is_zero()\nTrue\nsage: s == R(0)\nFalse\n```\n\nThis I consider to be a bug according to the docstring of s.is_zero? saying\n\n```\nReturn True if self equals self.parent()(0).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4656\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: padic powerseries padicIMA\n\nThe following _repr_ does not look good to me\n\n```\nsage: R.<T> = Qp(5,5)[[]]\nsage: O(5^3)*T\n0\nsage: 1+O(5^3)*T\n1 + O(5^5) + O(5^3)*T\n```\n\nBut that is due to \n\n```\nsage: s= O(5^3)*T\nsage: s.is_zero()\nTrue\nsage: s == R(0)\nFalse\n```\n\nThis I consider to be a bug according to the docstring of s.is_zero? saying\n\n```\nReturn True if self equals self.parent()(0).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4656\n\n",
     "created_at": "2008-11-29T21:53:42Z",
     "labels": [
-        "component: number theory",
+        "component: padics",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "power series with zero p-adic coefficients",
+    "title": "[with patch, needs work] power series with zero p-adic coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4656",
     "user": "https://github.com/categorie"
@@ -19,7 +19,7 @@ archive/issues_004656.json:
 ```
 Assignee: @williamstein
 
-Keywords: padic powerseries
+Keywords: padic powerseries padicIMA
 
 The following _repr_ does not look good to me
 

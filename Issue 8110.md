@@ -4,6 +4,7 @@ archive/issues_008110.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe patch at #7109 mistakenly removed some code from `rings/polynomial/multi_polynomial.pyx`, which causes doctest trouble in sage-4.3.2.alpha0.\n\nA patch fixing this is on its way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8110\n\n",
+    "closed_at": "2010-01-30T23:33:35Z",
     "created_at": "2010-01-28T12:30:54Z",
     "labels": [
         "component: commutative algebra",

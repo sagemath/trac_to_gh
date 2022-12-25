@@ -1,16 +1,17 @@
-# Issue 3234: [with patch; needs review] cygwin -- make numpy work with cygwin
+# Issue 3234: [with patch; positive review] cygwin -- make numpy work with cygwin
 
 archive/issues_003234.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPatch here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/numpy-20080104-1.0.4.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3234\n\n",
+    "closed_at": "2008-05-18T13:29:06Z",
     "created_at": "2008-05-17T00:39:17Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- make numpy work with cygwin",
+    "title": "[with patch; positive review] cygwin -- make numpy work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3234",
     "user": "https://github.com/williamstein"

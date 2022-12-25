@@ -4,6 +4,7 @@ archive/issues_008694.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nI am attaching notebook printouts with old and new output in text and typeset mode.\n\n(In the \"before\" file typeset versions are for some reason on top of the last lines of text - this happens only after pressing \"Print\" button in the notebook, the usual editable version looks fine.)\n\nCurrent situation:\n* schemes don't have _latex_ methods, so typesetting just outputs the usual text representation;\n* this is not only not very good looking, but actually can be confusing since polynomials that were on different lines before are now separated just by a space, which may look like an omitted multiplication.\n\nThe patch provides _latex_ methods for pretty yet compact typesetting. In addition, while working on this I made the following changes to _repr_ methods:\n* put commas between polynomials: this may be important even in text mode if polynomials are long and some of them are printed on several lines;\n* replaced (no equations) by (no polynomials) for schemes that do not have defining polynomials: since the output does not include \"=0\", this seems to be more correct;\n* compactified printing of quasi-schemes: since both components are schemes in the same ambient space, there is no need to print it twice.\n\nApply on top of #8675 and #8682.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8694\n\n",
+    "closed_at": "2010-06-06T07:55:28Z",
     "created_at": "2010-04-15T19:56:11Z",
     "labels": [
         "component: algebraic geometry",

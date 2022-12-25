@@ -1,16 +1,17 @@
-# Issue 2867: [witch patch, needs review] allow load_files parameter in __call__
+# Issue 2867: [witch patch, positive review] allow load_files parameter in __call__
 
 archive/issues_002867.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nThis patch allows you to do dsage('f = Foo()', load_files = ['foo.py']) which loads foo.py before executing the job. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2867\n\n",
+    "closed_at": "2008-04-10T01:59:36Z",
     "created_at": "2008-04-09T23:09:00Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[witch patch, needs review] allow load_files parameter in __call__",
+    "title": "[witch patch, positive review] allow load_files parameter in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2867",
     "user": "https://github.com/yqiang"

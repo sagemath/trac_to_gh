@@ -3,7 +3,8 @@
 archive/issues_008606.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout alexghitza @williamstein\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
+    "body": "Assignee: @zimmermann6\n\nCC:  @jasongrout alexghitza @williamstein\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
+    "closed_at": "2010-06-06T08:28:15Z",
     "created_at": "2010-03-25T15:11:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_008606.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @aghitza
+Assignee: @zimmermann6
 
 CC:  @jasongrout alexghitza @williamstein
 

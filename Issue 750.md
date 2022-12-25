@@ -1,22 +1,23 @@
-# Issue 750: permutation group element (dict method, acting on lists)
+# Issue 750: [with patch] permutation group element (dict method, acting on lists)
 
 archive/issues_000750.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nIt would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like\n\n```\n  sage: g.dict()\n{1:2, 2:1}\n```\n\nIt would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.\n\n```\n  sage: g.action(range(3))\n[0,2,1]\n```\n\nAre these things possible already?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/750\n\n",
+    "body": "Assignee: boothby\n\nCC:  sage-combinat\n\nIt would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like\n\n```\n  sage: g.dict()\n{1:2, 2:1}\n```\n\nIt would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.\n\n```\n  sage: g.action(range(3))\n[0,2,1]\n```\n\nAre these things possible already?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/750\n\n",
+    "closed_at": "2007-11-02T03:19:07Z",
     "created_at": "2007-09-24T23:13:58Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "permutation group element (dict method, acting on lists)",
+    "title": "[with patch] permutation group element (dict method, acting on lists)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/750",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 CC:  sage-combinat
 

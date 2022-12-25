@@ -1,15 +1,16 @@
-# Issue 2153: Defined Hom parent of group homomorphisms.
+# Issue 2153: [with bundle, needs additional review] Defined Hom parent of group homomorphisms.
 
 archive/issues_002153.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @tscrim\n\nDefined parent of a group homomorphism such that the following example\nworks (and similar for permutation groups):\n\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G \nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n\nAbelianGroup morphism:\n  From: Multiplicative Abelian Group isomorphic to C2 x C3\n  To:   Multiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi.parent()\nSet of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Multiplicative Abelian Group isomorphic to C2 x C3 x C4 in Category of groups\nsage: Hom(G,H) == phi.parent()\nTrue\n\nIssue created by migration from https://trac.sagemath.org/ticket/2153\n\n",
+    "body": "Assignee: joyner\n\nCC:  @tscrim\n\nDefined parent of a group homomorphism such that the following example\nworks (and similar for permutation groups):\n\n```\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G \nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n\nAbelianGroup morphism:\n  From: Multiplicative Abelian Group isomorphic to C2 x C3\n  To:   Multiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi.parent()\nSet of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Multiplicative Abelian Group isomorphic to C2 x C3 x C4 in Category of groups\nsage: Hom(G,H) == phi.parent()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2153\n\n",
+    "closed_at": "2018-01-27T16:00:08Z",
     "created_at": "2008-02-13T22:42:50Z",
     "labels": [
         "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
-    "title": "Defined Hom parent of group homomorphisms.",
+    "title": "[with bundle, needs additional review] Defined Hom parent of group homomorphisms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2153",
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
@@ -22,6 +23,7 @@ CC:  @tscrim
 Defined parent of a group homomorphism such that the following example
 works (and similar for permutation groups):
 
+```
 sage: G.<x,y> = AbelianGroup(2,[2,3]); G 
 Multiplicative Abelian Group isomorphic to C2 x C3
 sage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H
@@ -36,6 +38,7 @@ sage: phi.parent()
 Set of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Multiplicative Abelian Group isomorphic to C2 x C3 x C4 in Category of groups
 sage: Hom(G,H) == phi.parent()
 True
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/2153
 

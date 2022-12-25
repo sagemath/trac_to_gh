@@ -1,16 +1,17 @@
-# Issue 3194: ix 64 bit OSX build support for singular
+# Issue 3194: [with spkg, positive review] fix 64 bit OSX build support for singular
 
 archive/issues_003194.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3194\n\n",
+    "closed_at": "2008-08-20T00:18:13Z",
     "created_at": "2008-05-13T15:08:39Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "ix 64 bit OSX build support for singular",
+    "title": "[with spkg, positive review] fix 64 bit OSX build support for singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3194",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

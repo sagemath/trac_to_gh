@@ -3,10 +3,11 @@
 archive/issues_009969.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @dimpase @kcrisman @nthiery @timokau\n\n[Dima Pasechnik reports on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/01a01378099b9d5e/3fe4b83c4c612663#3fe4b83c4c612663):\n\n```\nBuilds and tests OK on Linux amd64 (Debian unstable). Got one test failure:\n\nsage -t  \"devel/sage/sage/interfaces/r.py\"\n**********************************************************************\nFile \"/usr/local/src/sage/sage-4.6.alpha1/devel/sage/sage/interfaces/r.py\", line 1128:\n    sage: tmpdir in sageobj(r.getwd())\nExpected:\n    True\nGot:\n    False\n\nthat however would  not repeat if I tested again...\n```\n\nI've also seen this error, on occasion.  The test lines are\n\n```python\n            sage: import tempfile\n            sage: tmpdir = tempfile.mkdtemp()\n            sage: r.chdir(tmpdir)\n            sage: tmpdir in sageobj(r.getwd()) \n            True\n```\nOn sage.math, I get\n\n```python\nsage: import tempfile\nsage: \nsage: fail = 0\nsage: for i in xrange(1000):\n....:     tmpdir = tempfile.mkdtemp()\n....:     r.chdir(tmpdir)\n....:     if tmpdir not in sageobj(r.getwd()):\n....:             fail += 1\n....: \nsage: print fail\n13\n```\nfor example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9970\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dimpase @kcrisman @nthiery @timokau\n\nKeywords: r\n\nThis test in `src/sage/interfaces/r.py` should be fixed:\n\n```\n            sage: os.path.realpath(tmpdir) == sageobj(r.getwd())  # known bug (:trac:`9970`)\n            True\n```\n\nThe script\n\n```python\nimport os\nimport tempfile\n\nfail = 0\nfor i in xrange(1000):\n    tmpdir = tempfile.mkdtemp()\n    r.chdir(tmpdir)\n    if tmpdir not in sageobj(r.getwd()):\n        print tmpdir, r.getwd(), sageobj(r.getwd())\n        fail += 1\n    os.rmdir(tmpdir)  # clean up\n\nprint fail\n```\nprints\n\n```python\n/tmp/tmpb1LEIM [1] \"/tmp/tmpb1LEIM\" /tmp/tmpbInteger(1)EIM\n/tmp/tmpZ6LyPm [1] \"/tmp/tmpZ6LyPm\" /tmp/tmpZInteger(6)yPm\n/tmp/tmp2LTCse [1] \"/tmp/tmp2LTCse\" /tmp/tmpInteger(2)TCse\n/tmp/tmpzoor1L [1] \"/tmp/tmpzoor1L\" /tmp/tmpzoorInteger(1)\n/tmp/tmpCl70Lo [1] \"/tmp/tmpCl70Lo\" /tmp/tmpClInteger(70)o\n/tmp/tmpN7L_vQ [1] \"/tmp/tmpN7L_vQ\" /tmp/tmpNInteger(7)_vQ\n/tmp/tmp9LAnw8 [1] \"/tmp/tmp9LAnw8\" /tmp/tmpInteger(9)Anw8\n/tmp/tmpvL13LQ [1] \"/tmp/tmpvL13LQ\" /tmp/tmpvLInteger(13)Q\n/tmp/tmpfB9L8g [1] \"/tmp/tmpfB9L8g\" /tmp/tmpfBInteger(9)8g\n/tmp/tmp0LtlQ6 [1] \"/tmp/tmp0LtlQ6\" /tmp/tmpInteger(0)tlQ6\n/tmp/tmpQF4L5I [1] \"/tmp/tmpQF4L5I\" /tmp/tmpQFInteger(4)5I\n/tmp/tmp_0LOOr [1] \"/tmp/tmp_0LOOr\" /tmp/tmp_Integer(0)OOr\n/tmp/tmpdDDj7L [1] \"/tmp/tmpdDDj7L\" /tmp/tmpdDDjInteger(7)\n/tmp/tmpr0LiLu [1] \"/tmp/tmpr0LiLu\" /tmp/tmprInteger(0)iLu\n/tmp/tmpu5LnMJ [1] \"/tmp/tmpu5LnMJ\" /tmp/tmpuInteger(5)nMJ\n/tmp/tmp0Py04L [1] \"/tmp/tmp0Py04L\" /tmp/tmp0PyInteger(04)\n/tmp/tmp3LZjCk [1] \"/tmp/tmp3LZjCk\" /tmp/tmpInteger(3)ZjCk\n17\n```\non sage.math.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9970\n\n",
     "created_at": "2010-09-22T22:32:47Z",
     "labels": [
         "component: doctest coverage",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
@@ -20,48 +21,55 @@ Assignee: mvngu
 
 CC:  @dimpase @kcrisman @nthiery @timokau
 
-[Dima Pasechnik reports on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/01a01378099b9d5e/3fe4b83c4c612663#3fe4b83c4c612663):
+Keywords: r
+
+This test in `src/sage/interfaces/r.py` should be fixed:
 
 ```
-Builds and tests OK on Linux amd64 (Debian unstable). Got one test failure:
-
-sage -t  "devel/sage/sage/interfaces/r.py"
-**********************************************************************
-File "/usr/local/src/sage/sage-4.6.alpha1/devel/sage/sage/interfaces/r.py", line 1128:
-    sage: tmpdir in sageobj(r.getwd())
-Expected:
-    True
-Got:
-    False
-
-that however would  not repeat if I tested again...
-```
-
-I've also seen this error, on occasion.  The test lines are
-
-```python
-            sage: import tempfile
-            sage: tmpdir = tempfile.mkdtemp()
-            sage: r.chdir(tmpdir)
-            sage: tmpdir in sageobj(r.getwd()) 
+            sage: os.path.realpath(tmpdir) == sageobj(r.getwd())  # known bug (:trac:`9970`)
             True
 ```
-On sage.math, I get
+
+The script
 
 ```python
-sage: import tempfile
-sage: 
-sage: fail = 0
-sage: for i in xrange(1000):
-....:     tmpdir = tempfile.mkdtemp()
-....:     r.chdir(tmpdir)
-....:     if tmpdir not in sageobj(r.getwd()):
-....:             fail += 1
-....: 
-sage: print fail
-13
+import os
+import tempfile
+
+fail = 0
+for i in xrange(1000):
+    tmpdir = tempfile.mkdtemp()
+    r.chdir(tmpdir)
+    if tmpdir not in sageobj(r.getwd()):
+        print tmpdir, r.getwd(), sageobj(r.getwd())
+        fail += 1
+    os.rmdir(tmpdir)  # clean up
+
+print fail
 ```
-for example.
+prints
+
+```python
+/tmp/tmpb1LEIM [1] "/tmp/tmpb1LEIM" /tmp/tmpbInteger(1)EIM
+/tmp/tmpZ6LyPm [1] "/tmp/tmpZ6LyPm" /tmp/tmpZInteger(6)yPm
+/tmp/tmp2LTCse [1] "/tmp/tmp2LTCse" /tmp/tmpInteger(2)TCse
+/tmp/tmpzoor1L [1] "/tmp/tmpzoor1L" /tmp/tmpzoorInteger(1)
+/tmp/tmpCl70Lo [1] "/tmp/tmpCl70Lo" /tmp/tmpClInteger(70)o
+/tmp/tmpN7L_vQ [1] "/tmp/tmpN7L_vQ" /tmp/tmpNInteger(7)_vQ
+/tmp/tmp9LAnw8 [1] "/tmp/tmp9LAnw8" /tmp/tmpInteger(9)Anw8
+/tmp/tmpvL13LQ [1] "/tmp/tmpvL13LQ" /tmp/tmpvLInteger(13)Q
+/tmp/tmpfB9L8g [1] "/tmp/tmpfB9L8g" /tmp/tmpfBInteger(9)8g
+/tmp/tmp0LtlQ6 [1] "/tmp/tmp0LtlQ6" /tmp/tmpInteger(0)tlQ6
+/tmp/tmpQF4L5I [1] "/tmp/tmpQF4L5I" /tmp/tmpQFInteger(4)5I
+/tmp/tmp_0LOOr [1] "/tmp/tmp_0LOOr" /tmp/tmp_Integer(0)OOr
+/tmp/tmpdDDj7L [1] "/tmp/tmpdDDj7L" /tmp/tmpdDDjInteger(7)
+/tmp/tmpr0LiLu [1] "/tmp/tmpr0LiLu" /tmp/tmprInteger(0)iLu
+/tmp/tmpu5LnMJ [1] "/tmp/tmpu5LnMJ" /tmp/tmpuInteger(5)nMJ
+/tmp/tmp0Py04L [1] "/tmp/tmp0Py04L" /tmp/tmp0PyInteger(04)
+/tmp/tmp3LZjCk [1] "/tmp/tmp3LZjCk" /tmp/tmpInteger(3)ZjCk
+17
+```
+on sage.math.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9970
 

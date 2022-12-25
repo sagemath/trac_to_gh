@@ -4,6 +4,7 @@ archive/issues_009829.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  schymans @jhpalmieri\n\nReported by Stan Schymanski on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c814c8cf7bc7dd87):\n\n```\nWhen trying to change the code of a worksheet in a text editor (using\nthe edit button in the worksheet), I get the following error message\nwhenever I want to save changes:\n\nBad Request\nMaximum length of 102400 bytes exceeded.\n\nDoes anyone have an idea what could cause this and how this can be\ncircumvented?\n```\nDidier Deshommes replied:\n\n```\nMy guess is that the web server has a limit on the size of a POST\nrequest and that you have reached it. Typically this is 1024kb. The\nsolution is to increase this limit. I'm not sure how to do that for a \nwsgi application (which I assume sage is). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9830\n\n",
+    "closed_at": "2020-03-28T17:11:25Z",
     "created_at": "2010-08-28T07:44:03Z",
     "labels": [
         "component: notebook",

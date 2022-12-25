@@ -1,15 +1,16 @@
-# Issue 4799: [with patch, positive review] Add mappded CombinatorialClasses
+# Issue 4799: [with patch, positive review] Add mapped CombinatorialClasses
 
 archive/issues_004799.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4799\n\n",
+    "closed_at": "2008-12-15T17:58:40Z",
     "created_at": "2008-12-15T05:57:20Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, positive review] Add mappded CombinatorialClasses",
+    "title": "[with patch, positive review] Add mapped CombinatorialClasses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4799",
     "user": "https://github.com/mwhansen"

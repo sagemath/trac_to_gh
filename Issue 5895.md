@@ -1,16 +1,17 @@
-# Issue 5895: Limit number of worksheet snapshots
+# Issue 5895: [with patch; positive review] Limit number of worksheet snapshots
 
 archive/issues_005895.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nCC:  @tornaria\n\nThis is an attempt to reduce the unlimited growth of snapshots of worksheets when using the notebook.  See related #5880 as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5895\n\n",
+    "closed_at": "2009-06-01T06:30:54Z",
     "created_at": "2009-04-25T17:31:46Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Limit number of worksheet snapshots",
+    "title": "[with patch; positive review] Limit number of worksheet snapshots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5895",
     "user": "https://github.com/rbeezer"

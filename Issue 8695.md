@@ -4,6 +4,7 @@ archive/issues_008695.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: UniqueRepresentation, equality\n\nPython manuals says:\n\n    There are no implied relationships among the comparison operators. The truth of x==y does not imply that x!=y is false. Accordingly, when defining __eq__(), one should also define __ne__() so that the operators will behave as expected.\n\nUniqueRepresentation fails to comply with this. As a consequence:\n\n```\nsage: G6 = GL(6, QQ)\nsage: G6 == G6\nTrue\nsage: G6 != G6\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8695\n\n",
+    "closed_at": "2010-04-19T05:16:59Z",
     "created_at": "2010-04-16T15:13:49Z",
     "labels": [
         "component: misc",

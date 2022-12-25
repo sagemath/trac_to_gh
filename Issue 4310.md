@@ -1,16 +1,17 @@
-# Issue 4310: [with patch, needs review] simplification of the coercion api
+# Issue 4310: [with patch, positive review] simplification of the coercion api
 
 archive/issues_004310.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @mwhansen @craigcitro\n\nThe `_has_coerce_map_from_` has been deleted, and the `_coerce_map_from_` now can return a boolean or callable as well as a map. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4310\n\n",
+    "closed_at": "2008-11-21T21:32:56Z",
     "created_at": "2008-10-16T18:15:20Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] simplification of the coercion api",
+    "title": "[with patch, positive review] simplification of the coercion api",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4310",
     "user": "https://github.com/robertwb"

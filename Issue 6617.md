@@ -1,21 +1,22 @@
-# Issue 6617: remove stale SageTeX files from latex_embed
+# Issue 6617: [with patch, positive review] remove stale SageTeX files from latex_embed
 
 archive/issues_006617.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: sagetex latex_embed\n\nThe directory `$SAGE_ROOT/examples/latex_embed` contains an old version of SageTeX, which is now a full-fledged Sage package. We should delete these old files. The attached patch does this, leaving behind just a pointer to the current SageTeX stuff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6617\n\n",
+    "body": "Assignee: @dandrake\n\nKeywords: sagetex latex_embed\n\nThe directory `$SAGE_ROOT/examples/latex_embed` contains an old version of SageTeX, which is now a full-fledged Sage package. We should delete these old files. The attached patch does this, leaving behind just a pointer to the current SageTeX stuff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6617\n\n",
+    "closed_at": "2009-07-25T20:56:10Z",
     "created_at": "2009-07-25T12:30:24Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "remove stale SageTeX files from latex_embed",
+    "title": "[with patch, positive review] remove stale SageTeX files from latex_embed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6617",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
 
 Keywords: sagetex latex_embed
 

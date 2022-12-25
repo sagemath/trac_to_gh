@@ -4,10 +4,10 @@ archive/issues_002331.json:
 ```json
 {
     "body": "Assignee: @malb\n\n* the superclass injection trick is a bad design decision\n* derivatives don't need to be handled by Singular\n* the `have_ring` option should go, because we don't need this dirty speed improvement anymore (we have libSingular)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2331\n\n",
+    "closed_at": "2022-08-02T06:31:03Z",
     "created_at": "2008-02-27T11:04:18Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Polynomial_singular_repr is pretty messed up",

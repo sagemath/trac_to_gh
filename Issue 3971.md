@@ -1,16 +1,17 @@
-# Issue 3971: [with patch; needs review] hidden markov models -- implement nsteps and log_likelihood_cutoff
+# Issue 3971: [with patch; positive review] hidden markov models -- implement nsteps and log_likelihood_cutoff
 
 archive/issues_003971.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI forgot to implement the nsteps and log_likelihood_cuttoff parameters for discrete hidden markov models, despite documenting them as implemented. The attached short patch fixes this oversight. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3971\n\n",
+    "closed_at": "2008-08-28T12:00:19Z",
     "created_at": "2008-08-27T23:37:19Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch; needs review] hidden markov models -- implement nsteps and log_likelihood_cutoff",
+    "title": "[with patch; positive review] hidden markov models -- implement nsteps and log_likelihood_cutoff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3971",
     "user": "https://github.com/williamstein"

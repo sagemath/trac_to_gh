@@ -4,6 +4,7 @@ archive/issues_009515.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @mwhansen mvngu @williamstein\n\nSee\n\n\u00a0 http://wiki.yobi.be/wiki/PyCryptoPlus\n\nand\u00a0\n\n\u00a0 http://groups.google.com/group/sage-devel/browse_thread/thread/500063cfaa2961b0/\u00a0\n\nIssue created by migration from https://trac.sagemath.org/ticket/9515\n\n",
+    "closed_at": "2010-08-15T06:55:10Z",
     "created_at": "2010-07-16T09:26:40Z",
     "labels": [
         "component: cryptography",

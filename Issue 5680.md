@@ -4,9 +4,10 @@ archive/issues_005680.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin wbhart\n\nNow that FLINT 1.2.4 is in Sage we should hook up various new methods:\n\n* factor\n* square free factoring\n* derivative\n* powermod\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5680\n\n",
+    "closed_at": "2009-11-05T01:19:13Z",
     "created_at": "2009-04-04T05:19:10Z",
     "labels": [
-        "component: misc"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Use new bits from FLINT 1.2.4 (followup to #5240)",

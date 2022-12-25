@@ -1,16 +1,17 @@
-# Issue 1140: typo in documentation [with patch]
+# Issue 1140: [with patch] typo in documentation
 
 archive/issues_001140.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1140\n\n",
+    "closed_at": "2007-11-18T13:48:11Z",
     "created_at": "2007-11-10T17:44:38Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "typo in documentation [with patch]",
+    "title": "[with patch] typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1140",
     "user": "https://github.com/zimmermann6"

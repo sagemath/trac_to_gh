@@ -1,9 +1,10 @@
-# Issue 4991: GDB is broken on OSX due to ipython's readline detection
+# Issue 4991: [with spkg, positive review] GDB is broken on OSX due to ipython's readline detection
 
 archive/issues_004991.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRunning Sage under gdb is broken on OSX at the moment:\n\n```\n(gdb) r\nStarting program: /Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/bin/python /Users/michaelabshoff/Desktop/sage-3.2.3-64bit/tmp/.doctest_ell_finite_field.py\nwarning: posix_spawn failed, trying execvp, error: 86\nTraceback (most recent call last):\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/tmp/.doctest_ell_finite_field.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/sage/all.py\", line 64, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/sage/misc/all.py\", line 16, in <module>\n    from sage_timeit_class import timeit\n  File \"sage_timeit_class.pyx\", line 3, in sage.misc.sage_timeit_class (sage/misc/sage_timeit_class.c:603)\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/sage/misc/sage_timeit.py\", line 12, in <module>\n    import timeit as timeit_, time, math, preparser, interpreter\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/sage/misc/interpreter.py\", line 95, in <module>\n    import IPython.ipapi\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/IPython/__init__.py\", line 57, in <module>\n    __import__(name,glob,loc,[])\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/IPython/ipstruct.py\", line 22, in <module>\n    from IPython.genutils import list2dict2\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/IPython/genutils.py\", line 118, in <module>\n    import IPython.rlineimpl as readline\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/site-packages/IPython/rlineimpl.py\", line 37, in <module>\n    (status, result) = commands.getstatusoutput( \"otool -L %s | grep libedit\" % _rl.__file__ )\n  File \"/Users/michaelabshoff/Desktop/sage-3.2.3-64bit/local/lib/python2.5/commands.py\", line 54, in getstatusoutput\n    text = pipe.read()\nIOError: [Errno 4] Interrupted system call\n\nProgram exited with code 01.\n```\nThe above problem is caused by the IPython import. The problem goes away if we disable the following libedit import test in rlineimpl.py\n\n```\nuses_libedit = False\nif sys.platform == 'darwin' and have_readline:\n    import commands\n    (status, result) = commands.getstatusoutput( \"otool -L %s | grep libedit\" % _rl.__file__ )\n    if status == 0 and len(result) > 0:\n        # we are bound to libedit - new in Leopard\n        _rl.parse_and_bind(\"bind ^I rl_complete\")\n        print \"Leopard libedit detected.\"\n        uses_libedit = True\n```\nThis can be done without side effects since we link against the real readline. The issue has been reported to the IPython mailing list.\n\nspkg is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4991\n\n",
+    "closed_at": "2009-01-19T02:07:11Z",
     "created_at": "2009-01-17T15:28:37Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004991.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "GDB is broken on OSX due to ipython's readline detection",
+    "title": "[with spkg, positive review] GDB is broken on OSX due to ipython's readline detection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4991",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

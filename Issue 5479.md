@@ -1,22 +1,25 @@
-# Issue 5479: schemes/generic/spec.py: Spec.__call__ is basically not implemented
+# Issue 5479: [with patch, positive review] schemes/generic/spec.py: Spec.__call__ is basically not implemented
 
 archive/issues_005479.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nRoi Docampo found this:\n\n```\nsage: S = Spec(ZZ)\nsage: S\nSpectrum of Integer Ring\nsage: S(3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/6737/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/spec.pyc in __call__(self, x)\n    112         Create a point of this scheme.\n    113         \"\"\"\n--> 114         return point.SchemePoint_spec(self, x)\n    115 \n    116     def coordinate_ring(self):\n\nAttributeError: 'module' object has no attribute 'SchemePoint_spec'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5479\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: spectrum ring call\n\nRoi Docampo found this:\n\n```\nsage: S = Spec(ZZ)\nsage: S\nSpectrum of Integer Ring\nsage: S(3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/6737/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/spec.pyc in __call__(self, x)\n    112         Create a point of this scheme.\n    113         \"\"\"\n--> 114         return point.SchemePoint_spec(self, x)\n    115 \n    116     def coordinate_ring(self):\n\nAttributeError: 'module' object has no attribute 'SchemePoint_spec'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5479\n\n",
+    "closed_at": "2009-04-30T01:17:47Z",
     "created_at": "2009-03-11T04:09:10Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "schemes/generic/spec.py: Spec.__call__ is basically not implemented",
+    "title": "[with patch, positive review] schemes/generic/spec.py: Spec.__call__ is basically not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5479",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
+
+Keywords: spectrum ring call
 
 Roi Docampo found this:
 

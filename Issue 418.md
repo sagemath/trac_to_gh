@@ -1,16 +1,17 @@
-# Issue 418: Wrap MiniSAT
+# Issue 418: Add SAT Solvers
 
 archive/issues_000418.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  polybori fichtejo abmasse sbulygin\n\nMake an optional SAGE package for MiniSAT (http://www.cs.chalmers.se/Cs/Research/FormalMethods/MiniSat/) an award winning SAT solver. Also implement/port Nicolas Courtois' and Gregory Bard's ANF to CNF converter (http://eprint.iacr.org/2006/402.pdf) to SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/418\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  polybori fichtejo abmasse sbulygin\n\nKeywords: SAT\n\nThis ticket implements\n\n* an optional Sage package for CryptoMiniSat\n* a C++ interface to CryptoMiniSat which supports xor clauses, options, conflict clauses and learnt clause extraction\n* a generic interface for various SAT solvers based on the DIMACS file format\n* instantiations of this interface for Glucose and RSat\n* a converter for Boolean Polynomials to SAT\n* highlevel functions for solving Boolean polynomial systems and for learning new polynomials for Boolean polynomial systems\n\nHow to install/test:\n\n1. **Install**\u00a0http://sage.math.washington.edu/home/malb/spkgs/cryptominisat-2.9.5.spkg\n2. **Pull** from https://bitbucket.org/malb/sage-cryptominisat\n\n**Note to release manager:** The SPKG is optional but the patches for the Sage library should be merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/418\n\n",
+    "closed_at": "2012-08-12T18:57:35Z",
     "created_at": "2007-08-10T15:18:34Z",
     "labels": [
-        "component: packages",
+        "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.3",
-    "title": "Wrap MiniSAT",
+    "title": "Add SAT Solvers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/418",
     "user": "https://github.com/malb"
@@ -20,7 +21,23 @@ Assignee: @williamstein
 
 CC:  polybori fichtejo abmasse sbulygin
 
-Make an optional SAGE package for MiniSAT (http://www.cs.chalmers.se/Cs/Research/FormalMethods/MiniSat/) an award winning SAT solver. Also implement/port Nicolas Courtois' and Gregory Bard's ANF to CNF converter (http://eprint.iacr.org/2006/402.pdf) to SAGE.
+Keywords: SAT
+
+This ticket implements
+
+* an optional Sage package for CryptoMiniSat
+* a C++ interface to CryptoMiniSat which supports xor clauses, options, conflict clauses and learnt clause extraction
+* a generic interface for various SAT solvers based on the DIMACS file format
+* instantiations of this interface for Glucose and RSat
+* a converter for Boolean Polynomials to SAT
+* highlevel functions for solving Boolean polynomial systems and for learning new polynomials for Boolean polynomial systems
+
+How to install/test:
+
+1. **Install** http://sage.math.washington.edu/home/malb/spkgs/cryptominisat-2.9.5.spkg
+2. **Pull** from https://bitbucket.org/malb/sage-cryptominisat
+
+**Note to release manager:** The SPKG is optional but the patches for the Sage library should be merged.
 
 Issue created by migration from https://trac.sagemath.org/ticket/418
 

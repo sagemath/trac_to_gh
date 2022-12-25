@@ -1,16 +1,17 @@
-# Issue 6778: [with patch, needs review] Fix nfacets for non-reflexive lattice polytopes
+# Issue 6778: [with patch, positive review] Fix nfacets for non-reflexive lattice polytopes
 
 archive/issues_006778.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nThere is a silly bug in computing the number of facets of non-reflexive lattice polytopes:\n\n```\nsage: p = LatticePolytope(matrix([1, 2]))\nsage: p.nfacets()\nTraceback (most recent call last):\n...\nTypeError: object of type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense' has no len()\n```\nThe attached one-line patch fixes it:\n\n```\nsage: p = LatticePolytope(matrix([1, 2]))\nsage: p.nfacets()\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6778\n\n",
+    "closed_at": "2009-09-23T02:45:27Z",
     "created_at": "2009-08-19T23:01:45Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Fix nfacets for non-reflexive lattice polytopes",
+    "title": "[with patch, positive review] Fix nfacets for non-reflexive lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6778",
     "user": "https://github.com/novoselt"

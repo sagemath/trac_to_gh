@@ -1,16 +1,17 @@
-# Issue 4965: [with patch, needs work] Z/nZ[x] via FLINT's zmod_poly
+# Issue 4965: [with patch, positive review] Z/nZ[x] via FLINT's zmod_poly
 
 archive/issues_004965.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @burcin @williamstein\n\nThe attached patches wrap FLINT's Z/nZ[x] for word sized n. This provides a considerable speed-up (~ 20x) for univariate polynomial arithmetic over these rings and also cleans up the code using the `polynomial_template.pxi` mechanism. For that `polynomial_template.pxi` was also cleaned-up which should make it more suitable for other backend implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4965\n\n",
+    "closed_at": "2009-01-22T23:34:40Z",
     "created_at": "2009-01-11T22:03:25Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs work] Z/nZ[x] via FLINT's zmod_poly",
+    "title": "[with patch, positive review] Z/nZ[x] via FLINT's zmod_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4965",
     "user": "https://github.com/malb"

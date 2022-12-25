@@ -1,16 +1,17 @@
-# Issue 2202: [with spkg; needs review] Debianize rubiks spkg
+# Issue 2202: [with spkg; with positive review] Debianize rubiks spkg
 
 archive/issues_002202.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI created a new spkg for rubiks that has a global Makefile, and added Debian build support to it:\n\nhttp://sage.math.washington.edu/home/tabbott/rubiks-20070912.p2.spkg\n\nThe process involved adding distclean targets to the individual Makefiles for the various solvers; for now I made these changes in the spkg because I'm a bad person; but we should submit them upstream for those that we are not the official distribution point for.  I've attached patches for each to this ticket which we can submit to the upstream authors.\n\nThere are two things that bug me about this package.  One is that I'm not convinced Debian will want this motley assortment of rubiks cube solvers (so that we might end up leaving it as part of the \"sagemath\" package), and the other is that we don't install all the solvers that we build.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2202\n\n",
+    "closed_at": "2008-02-18T13:40:03Z",
     "created_at": "2008-02-18T02:05:29Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with spkg; needs review] Debianize rubiks spkg",
+    "title": "[with spkg; with positive review] Debianize rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2202",
     "user": "https://github.com/timabbott"

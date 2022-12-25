@@ -1,9 +1,10 @@
-# Issue 6031: [with spkg, needs review] ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target
+# Issue 6031: [with spkg, positive review] ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target
 
 archive/issues_006031.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNTL 5.4.2 needs a minimal header fix to build with gcc 4.4. While at it I also added a spkg-check target. \n\nThe spkg is at \n\n   http://sage.math.washington.edu/home/mabshoff/release-cycles-4.0/alpha0/ntl-5.4.2.p7.spkg\n\nTested on Linux and 64 bit OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6031\n\n",
+    "closed_at": "2009-05-12T18:17:07Z",
     "created_at": "2009-05-12T16:39:26Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_006031.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with spkg, needs review] ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target",
+    "title": "[with spkg, positive review] ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6031",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

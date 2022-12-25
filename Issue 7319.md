@@ -4,6 +4,7 @@ archive/issues_007319.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\nOn Cywgin, the gdmodule spkg requires libiconv.  I think we have two choices for handling this:\n\n1. Making sure that libiconv is always installed in the system Cygwin environment.  We can probably have control over this if we include the Cygwin install with Sage.\n\n2. Add a libiconv spkg that is only installed if we are in Cygwin.  Note that this would probably amount to including it in all source tarballs.\n\nOnce libiconv is present, we need to patch Setup.py in gdmodule to add libiconv to the list of required libraries.\n\nI'll put up an spkg for libiconv and gdmodule here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7319\n\n",
+    "closed_at": "2010-04-29T05:04:54Z",
     "created_at": "2009-10-27T05:13:46Z",
     "labels": [
         "component: porting: cygwin",

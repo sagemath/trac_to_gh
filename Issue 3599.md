@@ -1,16 +1,16 @@
-# Issue 3599: Longer slider and labels on sliders
+# Issue 3599: [with patch, positive review] Longer slider and labels on sliders
 
 archive/issues_003599.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nSlider update:\n\n* Sliders are now version 3, which is similar to current version 1, but longer\n\n* Label to the right of slider containing the current slider value (string representation), which is updated dynamically\n\n* User can hide label with \"display_value=False\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3599\n\n",
+    "closed_at": "2008-07-31T21:51:06Z",
     "created_at": "2008-07-08T00:28:26Z",
     "labels": [
-        "component: notebook",
-        "minor"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Longer slider and labels on sliders",
+    "title": "[with patch, positive review] Longer slider and labels on sliders",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3599",
     "user": "https://github.com/itolkov"

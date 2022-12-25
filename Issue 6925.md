@@ -3,10 +3,10 @@
 archive/issues_006925.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @pjbruin\n\nKeywords: cuspidal subgroup, modular abelian variety\n\nThis is the first implementation of Ligozat's method of calculating the rational cuspidal subgroup of J_0(N). This is done by doing linear algebra in d(N)*d(N) matrices, which seems considerably faster than the modular symbol methods.\n\nThis code is functional at this point. The problems with it are\na) __cmp__ is not called.\nb) Hecke operators aren't defined yet.\nc) can't coerce specific degree zero cuspidal divisors in our group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6925\n\n",
+    "body": "Assignee: tbd\n\nCC:  @pjbruin\n\nKeywords: cuspidal subgroup, modular abelian variety\n\nThis is the first implementation of Ligozat's method of calculating the rational cuspidal subgroup of J_0(N). This is done by doing linear algebra in d(N)*d(N) matrices, which seems considerably faster than the modular symbol methods.\n\nThis code is functional at this point. The problems with it are\n\na) __cmp__ is not called.\n\nb) Hecke operators aren't defined yet.\n\nc) can't coerce specific degree zero cuspidal divisors in our group.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6925\n\n",
     "created_at": "2009-09-11T23:49:01Z",
     "labels": [
-        "component: algebra"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
     "title": "Fast way of calculating cuspidal subgroup of J0(N)",
@@ -24,9 +24,13 @@ Keywords: cuspidal subgroup, modular abelian variety
 This is the first implementation of Ligozat's method of calculating the rational cuspidal subgroup of J_0(N). This is done by doing linear algebra in d(N)*d(N) matrices, which seems considerably faster than the modular symbol methods.
 
 This code is functional at this point. The problems with it are
+
 a) __cmp__ is not called.
+
 b) Hecke operators aren't defined yet.
+
 c) can't coerce specific degree zero cuspidal divisors in our group.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6925
 

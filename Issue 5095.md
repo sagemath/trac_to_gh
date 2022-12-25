@@ -1,16 +1,17 @@
-# Issue 5095: [with patch, needs review] AJAX requests don't work from the worksheet listing page
+# Issue 5095: [with patch, positive review] AJAX requests don't work from the worksheet listing page
 
 archive/issues_005095.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is because the TinyMCE patch made the AJAX requests dependent of jQuery, but the worksheet listing page did not include jQuery. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5095\n\n",
+    "closed_at": "2009-01-28T13:03:24Z",
     "created_at": "2009-01-25T07:16:04Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] AJAX requests don't work from the worksheet listing page",
+    "title": "[with patch, positive review] AJAX requests don't work from the worksheet listing page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5095",
     "user": "https://github.com/mwhansen"

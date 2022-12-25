@@ -1,22 +1,24 @@
-# Issue 5806: failing test "devel/sage/sage/misc/sagedoc.py"
+# Issue 5806: [with patch, positive review] Sage 3.4.1.rc3: failing test "devel/sage/sage/misc/sagedoc.py"
 
 archive/issues_005806.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @jhpalmieri\n\nOn fedora 9, 32 bit this fails:\n\n\n```\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/misc/sagedoc.py\", line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[2]>\", line 1, in <module>\n        print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string###line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/sage/misc/sagedoc.py\", line 431, in search_doc\n        pager()(r)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/IPython/genutils.py\", line 1664, in page\n        term_flags = termios.tcgetattr(sys.stdout)\n    TypeError: argument must be an int, or have a fileno() method.\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.4.1.rc0/tmp/.doctest_sagedoc.py\n\t [46.3 s]\nexit code: 1024\n\n```\n\nWhatever :)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5806\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @jhpalmieri\n\nOn fedora 9, 32 bit this fails:\n\n\n```\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/misc/sagedoc.py\", line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[2]>\", line 1, in <module>\n        print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string###line 411:\n    sage: print \"ignore this\";  search_doc('this creates a polynomial ring') # random # this function has no output: it just prints a string\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/sage/misc/sagedoc.py\", line 431, in search_doc\n        pager()(r)\n      File \"/home/jaap/downloads/sage-3.4.1.rc0/local/lib/python2.5/site-packages/IPython/genutils.py\", line 1664, in page\n        term_flags = termios.tcgetattr(sys.stdout)\n    TypeError: argument must be an int, or have a fileno() method.\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.4.1.rc0/tmp/.doctest_sagedoc.py\n [46.3 s]\nexit code: 1024\n\n```\n\nWhatever :)\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5806\n\n",
+    "closed_at": "2009-06-24T09:47:07Z",
     "created_at": "2009-04-16T21:40:09Z",
     "labels": [
         "component: misc",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "failing test \"devel/sage/sage/misc/sagedoc.py\"",
+    "title": "[with patch, positive review] Sage 3.4.1.rc3: failing test \"devel/sage/sage/misc/sagedoc.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5806",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: cwitty
+Assignee: @dandrake
 
 CC:  @jhpalmieri
 
@@ -49,7 +51,7 @@ Exception raised:
    1 of   3 in __main__.example_8
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/jaap/downloads/sage-3.4.1.rc0/tmp/.doctest_sagedoc.py
-	 [46.3 s]
+ [46.3 s]
 exit code: 1024
 
 ```
@@ -57,6 +59,9 @@ exit code: 1024
 Whatever :)
 
 Jaap
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5806
 

@@ -1,16 +1,17 @@
-# Issue 6117: graph plotting with show ignores keyword 'talk'
+# Issue 6117: [with patch, positive review] graph plotting with show ignores keyword 'talk'
 
 archive/issues_006117.json:
 ```json
 {
     "body": "Assignee: ekirkman\n\nCC:  @rlmill\n\nBug pointed out by Fidel Barrera-Cruz.  Entering\n\n```\ng = graphs.PetersenGraph()\ng.show(talk=True)\n```\n\nresults in \n\n```\nTypeError: show() got an unexpected keyword argument 'talk'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6117\n\n",
+    "closed_at": "2009-05-22T13:45:00Z",
     "created_at": "2009-05-21T22:13:58Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "graph plotting with show ignores keyword 'talk'",
+    "title": "[with patch, positive review] graph plotting with show ignores keyword 'talk'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6117",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"

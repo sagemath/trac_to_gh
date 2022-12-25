@@ -1,9 +1,10 @@
-# Issue 6921: MATLAB crashes on Snow Leopard due to library conflicts
+# Issue 6921: [with patch, positive review] MATLAB crashes on Snow Leopard due to library conflicts
 
 archive/issues_006921.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen using the MATLAB interface in Sage MATLAB crashes on startup. This is due to library conflicts with Sage.\n\nI have created a (minor) patch to use sage-native-execute when starting MATLAB. This fixes the problems on my machine (OS X 10.6) and the interface now passes all doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6921\n\n",
+    "closed_at": "2009-09-23T06:36:18Z",
     "created_at": "2009-09-11T04:28:16Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_006921.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "MATLAB crashes on Snow Leopard due to library conflicts",
+    "title": "[with patch, positive review] MATLAB crashes on Snow Leopard due to library conflicts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6921",
     "user": "https://trac.sagemath.org/admin/accounts/users/jjh"

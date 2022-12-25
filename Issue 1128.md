@@ -1,22 +1,23 @@
-# Issue 1128: Coercion of complex numbers
+# Issue 1128: [with-patch+review] Coercion of complex numbers
 
 archive/issues_001128.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: ComplexField(200)(1) + RealField(100)(1)\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Complex Field with 200 bits of precision' and 'Real Field with 100 bits of precision'\n```\nShould return an element of ComplexField(100)\n\nThis should be an easy fix, see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5bc6c9190a3da63e/597d0eb7a45dae11?lnk=gst&q=complexfield#597d0eb7a45dae11\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1128\n\n",
+    "body": "Assignee: @roed314\n\n```\nsage: ComplexField(200)(1) + RealField(100)(1)\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Complex Field with 200 bits of precision' and 'Real Field with 100 bits of precision'\n```\nShould return an element of ComplexField(100)\n\nThis should be an easy fix, see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5bc6c9190a3da63e/597d0eb7a45dae11?lnk=gst&q=complexfield#597d0eb7a45dae11\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1128\n\n",
+    "closed_at": "2007-12-02T08:07:26Z",
     "created_at": "2007-11-08T05:44:47Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "Coercion of complex numbers",
+    "title": "[with-patch+review] Coercion of complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1128",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @roed314
 
 ```
 sage: ComplexField(200)(1) + RealField(100)(1)

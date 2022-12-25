@@ -4,6 +4,7 @@ archive/issues_007709.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nthiery @rlmill\n\nI often need to create graphs defined by a set of edges, and it should not be hard to add a new constructor of this shape :\n\n```\ng = Graph(edges=[ ... ] )\n```\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7709\n\n",
+    "closed_at": "2010-11-11T13:01:50Z",
     "created_at": "2009-12-16T11:55:26Z",
     "labels": [
         "component: graph theory"

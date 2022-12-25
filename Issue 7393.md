@@ -4,6 +4,7 @@ archive/issues_007393.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  dkirkby\n\nThe new spkg can be found at http://sage.math.washington.edu/home/mhansen/ecl-9.10.2-20091105cvs.p0.spkg\n\nThis should fix #7113.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7393\n\n",
+    "closed_at": "2009-11-06T07:21:18Z",
     "created_at": "2009-11-05T03:28:52Z",
     "labels": [
         "component: packages: standard",

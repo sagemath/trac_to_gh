@@ -3,7 +3,8 @@
 archive/issues_009028.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nFixes the calculation of standard deviation. \n\nPreviously, sample standard deviation had returned a denominator of n, this fix gives a denominator of n-1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9028\n\n",
+    "body": "Assignee: amhou\n\nKeywords: standard deviation\n\nFixes the calculation of standard deviation. \n\nPreviously, sample standard deviation had returned a denominator of n, this fix gives a denominator of n-1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9028\n\n",
+    "closed_at": "2011-04-13T07:42:40Z",
     "created_at": "2010-05-24T06:53:23Z",
     "labels": [
         "component: statistics",
@@ -18,6 +19,8 @@ archive/issues_009028.json:
 }
 ```
 Assignee: amhou
+
+Keywords: standard deviation
 
 Fixes the calculation of standard deviation. 
 

@@ -1,17 +1,17 @@
-# Issue 980: random_element() for multivariate polynomials
+# Issue 980: [with patch, with positive review] random_element() for multivariate polynomials
 
 archive/issues_000980.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\nCC:  dfdeshom@gmail.com\n\nThere are 2 quirks about random multivariate polynomials outlined below:\n\n1) Degrees are severely restricted:\n> The maximum degree in every variable\n> is (maximum total degree of resulting polynomial) / (number of\n> varialbes of the polynomial). \n\n\n2) Too many zero elements. Polynomials generated are too sparse.\n> The second point is about the number of coefficients that are set to\n> 0. This might a point to argue about, but if I create a random\n> polynomial with a  (maximum number of terms to generate) then I expect\n> that the 0 occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/980\n\n",
+    "closed_at": "2008-01-27T02:20:37Z",
     "created_at": "2007-10-24T04:42:07Z",
     "labels": [
-        "component: algebraic geometry",
-        "minor",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "random_element() for multivariate polynomials",
+    "title": "[with patch, with positive review] random_element() for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/980",
     "user": "https://github.com/dfdeshom"

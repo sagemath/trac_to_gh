@@ -1,21 +1,24 @@
-# Issue 2568: dokchitser port, work in progress
+# Issue 2568: [with patch, not ready for review] dokchitser port, work in progress
 
 archive/issues_002568.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nsnapshot of work in progress of the port of the Dokchitser L-series calculator\n\nIssue created by migration from https://trac.sagemath.org/ticket/2568\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_wstein\n\nsnapshot of work in progress of the port of the Dokchitser L-series calculator\n\nIssue created by migration from https://trac.sagemath.org/ticket/2568\n\n",
+    "closed_at": "2008-11-09T06:55:45Z",
     "created_at": "2008-03-17T08:59:17Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "dokchitser port, work in progress",
+    "title": "[with patch, not ready for review] dokchitser port, work in progress",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2568",
     "user": "https://github.com/jbalakrishnan"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_wstein
 
 snapshot of work in progress of the port of the Dokchitser L-series calculator
 

@@ -1,16 +1,17 @@
-# Issue 2021: SR eigenvalues and eigenvectors returns nonsense in both cases in the simplest example
+# Issue 2021: [with patch, positive review] Only start one maxima instance
 
 archive/issues_002021.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: a = matrix(SR, 2, [1,2,3,4])\nsage: a.eigenspaces()\nTraceback (most recent call last):\n...\nTypeError: 'SymbolicArithmetic' object is not iterable\nsage: a.eigenvalues()\n[]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2021\n\n",
+    "closed_at": "2008-02-02T03:11:19Z",
     "created_at": "2008-02-01T03:29:51Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "SR eigenvalues and eigenvectors returns nonsense in both cases in the simplest example",
+    "title": "[with patch, positive review] Only start one maxima instance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2021",
     "user": "https://github.com/williamstein"

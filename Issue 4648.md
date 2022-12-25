@@ -1,9 +1,10 @@
-# Issue 4648: sparse linear algebra: nonzero_positions is slow
+# Issue 4648: [with patch, with positive review] sparse linear algebra: nonzero_positions is slow
 
 archive/issues_004648.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: sparse\n\nCurrently, generic sparse matrices inherit their nonzero_positions method from matrix0.py.  This should be trivial to fix.\n\n```\ndef nonzero_positions(self):\n    return self._entries.keys()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4648\n\n",
+    "closed_at": "2009-01-24T19:55:05Z",
     "created_at": "2008-11-29T00:54:49Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_004648.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "sparse linear algebra: nonzero_positions is slow",
+    "title": "[with patch, with positive review] sparse linear algebra: nonzero_positions is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4648",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

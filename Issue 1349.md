@@ -1,21 +1,22 @@
-# Issue 1349: notebook -- to avoid massive confusion, make the default notebook location $HOME/.sage/notebook
+# Issue 1349: [with patch] notebook -- to avoid massive confusion, make the default notebook location $HOME/.sage/notebook
 
 archive/issues_001349.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTo avoid massive confusion, make the default notebook location $HOME/.sage/notebook/.  However, if the user specifies a directory, use it.   This will allow the current usage, but also avoid the massive amount of surprising (to me) confusion everybody seems to have with where the notebook files are stored. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1349\n\n",
+    "body": "Assignee: @williamstein\n\nTo avoid massive confusion, make the default notebook location $HOME/.sage/notebook/.  However, if the user specifies a directory, use it.   This will allow the current usage, but also avoid the massive amount of surprising (to me) confusion everybody seems to have with where the notebook files are stored. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1349\n\n",
+    "closed_at": "2007-12-02T05:05:53Z",
     "created_at": "2007-12-01T16:22:27Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "notebook -- to avoid massive confusion, make the default notebook location $HOME/.sage/notebook",
+    "title": "[with patch] notebook -- to avoid massive confusion, make the default notebook location $HOME/.sage/notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1349",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 To avoid massive confusion, make the default notebook location $HOME/.sage/notebook/.  However, if the user specifies a directory, use it.   This will allow the current usage, but also avoid the massive amount of surprising (to me) confusion everybody seems to have with where the notebook files are stored. 
 

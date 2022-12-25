@@ -4,6 +4,7 @@ archive/issues_007787.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nA minifier is safer (less likely to cause errors), is faster (no need for client-side to unpack), and smaller (with gzip).\n\nGoogle has reimplemented Douglas Crockford's `jsmin.py` with a BSD License for its V8 engine. It is available here:\n\nhttp://code.google.com/p/v8/source/browse/branches/bleeding_edge/tools/jsmin.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/7787\n\n",
+    "closed_at": "2020-08-19T08:53:50Z",
     "created_at": "2009-12-29T10:20:28Z",
     "labels": [
         "component: notebook",

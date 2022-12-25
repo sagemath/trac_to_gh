@@ -3,7 +3,8 @@
 archive/issues_008809.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nWhen building binaries that include fortran, etc., it would give developers and users a lot more control if the local/bin/sage_fortran script were changed from\n\n```\n!/bin/sh\n\n/usr/bin/gfortran -fPIC $@\n```\nto\n\n```\n!/bin/sh\n\nif [ x\"$SAGE_FORTRAN\" != x ]; then\n     \"$SAGE_FORTRAN\" -fPIC $@\nelse\n     /usr/bin/gfortran -fPIC $@\nfi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8809\n\n",
+    "body": "Assignee: GeorgSWeber\n\nWhen building binaries that include fortran, etc., it would give developers and users a lot more control if the local/bin/sage_fortran script were changed from\n\n```\n!/bin/sh\n\n/usr/bin/gfortran -fPIC $@\n```\nto\n\n```\n!/bin/sh\n\nif [ x\"$SAGE_FORTRAN\" != x ]; then\n     \"$SAGE_FORTRAN\" -fPIC $@\nelse\n     /usr/bin/gfortran -fPIC $@\nfi\n```\n\nwhere /usr/bin/gfortran just happens to what was hardcoded. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8809\n\n",
+    "closed_at": "2013-05-21T07:26:14Z",
     "created_at": "2010-04-28T22:10:59Z",
     "labels": [
         "component: build",
@@ -36,6 +37,8 @@ else
      /usr/bin/gfortran -fPIC $@
 fi
 ```
+
+where /usr/bin/gfortran just happens to what was hardcoded. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8809
 

@@ -1,16 +1,17 @@
-# Issue 3729: [with patch; needs review] Only overwrite RHOME environment variable when it is unset
+# Issue 3729: [with patch, positive review] Only overwrite RHOME environment variable when it is unset
 
 archive/issues_003729.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen using my Debian Sage package, \"import rpy\" fails because Sage is overwriting the RHOME environment variable.  I could install a symlink to the right place in $SAGE_LOCAL/lib/R, but I think it's cleaner for Sage to only replace RHOME if it isn't already set (and then the Debian Sage wrapper script would set it correctly).  I've attached a patch to do this.\n\nThere are several uncommitted changes in spkg/base/sage-env, so my patch is a normal patch (rather than an hg one).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3729\n\n",
+    "closed_at": "2008-07-31T00:53:05Z",
     "created_at": "2008-07-26T17:28:35Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] Only overwrite RHOME environment variable when it is unset",
+    "title": "[with patch, positive review] Only overwrite RHOME environment variable when it is unset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3729",
     "user": "https://github.com/timabbott"

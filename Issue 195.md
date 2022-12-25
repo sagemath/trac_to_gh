@@ -4,6 +4,7 @@ archive/issues_000195.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe syntax\n   attach \"filename.spyx\"\nfails when filename contains a hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/195\n\n",
+    "closed_at": "2007-01-19T10:45:07Z",
     "created_at": "2007-01-17T20:27:37Z",
     "labels": [
         "component: packages: standard",

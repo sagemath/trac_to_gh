@@ -4,6 +4,7 @@ archive/issues_000379.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTimothy Clemans found the following bug:\n\n```\nsage: 3 == x\nFalse\nsage: x == 3\nx == 3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/379\n\n",
+    "closed_at": "2007-05-31T14:49:08Z",
     "created_at": "2007-05-26T02:27:53Z",
     "labels": [
         "component: calculus",

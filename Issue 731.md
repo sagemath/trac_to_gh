@@ -1,9 +1,10 @@
-# Issue 731: graphs: set_boundary accepts integers
+# Issue 731: [is invalid] graphs: set_boundary accepts integers
 
 archive/issues_000731.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n```\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/731\n\n",
+    "closed_at": "2007-10-23T21:15:23Z",
     "created_at": "2007-09-21T18:54:22Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_000731.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "graphs: set_boundary accepts integers",
+    "title": "[is invalid] graphs: set_boundary accepts integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/731",
     "user": "https://github.com/jasongrout"

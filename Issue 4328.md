@@ -4,6 +4,7 @@ archive/issues_004328.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R=PolynomialRing(ZZ, x)\nsage: f=R(x^4+1)\nsage: f.roots(GF(2))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: factorization of 0 not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4328\n\n",
+    "closed_at": "2008-10-20T13:23:34Z",
     "created_at": "2008-10-20T11:39:21Z",
     "labels": [
         "component: basic arithmetic",

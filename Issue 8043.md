@@ -4,6 +4,7 @@ archive/issues_008043.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAs detailed at comment:4:ticket:7544, the functionality introduced in #7355 was broken by #7544.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8043\n\n",
+    "closed_at": "2010-04-23T19:10:20Z",
     "created_at": "2010-01-23T05:54:41Z",
     "labels": [
         "component: misc",

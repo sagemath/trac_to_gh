@@ -1,9 +1,10 @@
-# Issue 1921: add random_element to groups
+# Issue 1921: [with patches, positive review] add random_element to groups
 
 archive/issues_001921.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCurrently, at least some of the groups G in SAGE access a random\nelement using G.random(). (This was borrowed from GAP's syntax.) \nThe default for a ring R in SAGE seems to be R.random_element(). \nThe function call should be the same in both cases, \nso for now add G.random_element() and in the future maybe deprecate\nG.random().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1921\n\n",
+    "closed_at": "2008-04-26T02:49:16Z",
     "created_at": "2008-01-25T06:09:48Z",
     "labels": [
         "component: group theory",
@@ -11,7 +12,7 @@ archive/issues_001921.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "add random_element to groups",
+    "title": "[with patches, positive review] add random_element to groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1921",
     "user": "https://github.com/wdjoyner"

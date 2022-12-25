@@ -4,6 +4,7 @@ archive/issues_008697.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: generic tests\n\nIn SageObject:\n\n- _test_eq: tests self == self, (self != self) == False, (self == None) == False, self != None (this would have caught #8695)\n\n- _test_hash: test that the result of __hash__ is an int or that it raises an appropriate exception\n\n- Please Florent, add here what we had thought about\n\nIssue created by migration from https://trac.sagemath.org/ticket/8697\n\n",
+    "closed_at": "2010-04-18T10:02:26Z",
     "created_at": "2010-04-16T21:37:32Z",
     "labels": [
         "component: doctest coverage",

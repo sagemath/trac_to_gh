@@ -1,16 +1,17 @@
-# Issue 954: Make sure compiler is C99 capable
+# Issue 954: [with script] Make sure compiler is C99 capable
 
 archive/issues_000954.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: gcc, flint, C99\n\nFlint requires C99 capable compilers. gcc 3.4.x and later are, but gcc 3.3 and earlier are not. There are still a number of those older compilers around, so error out early right away with an understandable error message to avoid bug reports with flint compiling to fail.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/954\n\n",
+    "closed_at": "2007-12-20T21:32:01Z",
     "created_at": "2007-10-21T03:43:10Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Make sure compiler is C99 capable",
+    "title": "[with script] Make sure compiler is C99 capable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/954",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

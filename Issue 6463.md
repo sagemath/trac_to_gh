@@ -1,16 +1,17 @@
-# Issue 6463: Residue fields broken for relative extensions
+# Issue 6463: [with patch, positive review] Residue fields broken for relative extensions
 
 archive/issues_006463.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: ideals\n\nThe code for residue fields of ideals in number fields is broken for ideals of relative extensions, as it tries to call \"norm\" on an ideal, which we have chosen to deliberately break for relative ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6463\n\n",
+    "closed_at": "2009-07-16T21:01:12Z",
     "created_at": "2009-07-04T15:42:22Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Residue fields broken for relative extensions",
+    "title": "[with patch, positive review] Residue fields broken for relative extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6463",
     "user": "https://github.com/loefflerd"

@@ -3,7 +3,8 @@
 archive/issues_009835.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  minh @rhinton\n\nHere it is ! The long-promised tutorial for LP. It is a translation of the french sagebook, and I hope I will be able to keep the two coordinated `:-)`\n\nThis patchremoved the old tutorial from the \"constructions\" document where it shouldn't have been put in the first place, and creates a new file in thematic_tutorials. It is up-to-date for the moment, though I hope to be able to work on some improvements with the CPLEX interface soon. It may only change te way CPLEX has to be installed, which would only require a minor edit later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9836\n\n",
+    "body": "Assignee: mvngu\n\nCC:  minh @rhinton\n\nHere it is ! The long-promised tutorial for LP. It is a translation of the french sagebook, and I hope I will be able to keep the two coordinated `:-)`\n\nThis patchremoved the old tutorial from the \"constructions\" document where it shouldn't have been put in the first place, and creates a new file in thematic_tutorials. It is up-to-date for the moment, though I hope to be able to work on some improvements with the CPLEX interface soon. It may only change te way CPLEX has to be installed, which would only require a minor edit later.\n\n**Apply**:\n\n1. [attachment:trac_9836.patch]\n2. [attachment:trac_9836-reviewer.patch]\n3. [attachment:\"trac_9836 - renaming a variable.patch\"]\n4. [attachment:trac_9836-manifest.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9836\n\n",
+    "closed_at": "2010-09-15T11:38:19Z",
     "created_at": "2010-08-29T03:56:30Z",
     "labels": [
         "component: documentation"
@@ -22,6 +23,13 @@ CC:  minh @rhinton
 Here it is ! The long-promised tutorial for LP. It is a translation of the french sagebook, and I hope I will be able to keep the two coordinated `:-)`
 
 This patchremoved the old tutorial from the "constructions" document where it shouldn't have been put in the first place, and creates a new file in thematic_tutorials. It is up-to-date for the moment, though I hope to be able to work on some improvements with the CPLEX interface soon. It may only change te way CPLEX has to be installed, which would only require a minor edit later.
+
+**Apply**:
+
+1. [attachment:trac_9836.patch]
+2. [attachment:trac_9836-reviewer.patch]
+3. [attachment:"trac_9836 - renaming a variable.patch"]
+4. [attachment:trac_9836-manifest.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9836
 

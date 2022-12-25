@@ -1,24 +1,25 @@
-# Issue 9661: pari(string) and gp(string) always returns a value, even when it should not
+# Issue 9661: pari(string) always returns a value, even when it should not
 
 archive/issues_009661.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n```\ngp> kill(x)   /* No output */\n```\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\nsage: pari('kill(x)')\n0\n```\n\nIt should be possible to fix this by checking for `gnil` as return value.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9661\n\n",
+    "body": "Assignee: @jdemeyer\n\nWhen executing a PARI command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (say, started with sage -gp):\n\n```\ngp> kill(x)   /* No output */\n```\n\nBut in Sage:\n\n```\nsage: pari('kill(x)')\n0\n```\n\nIt should be possible to fix this by checking for `gnil` (PARI's concept of None) as return value.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9661\n\n",
+    "closed_at": "2010-08-09T09:42:11Z",
     "created_at": "2010-08-01T16:47:28Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "pari(string) and gp(string) always returns a value, even when it should not",
+    "title": "pari(string) always returns a value, even when it should not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9661",
     "user": "https://github.com/jdemeyer"
 }
 ```
-Assignee: @williamstein
+Assignee: @jdemeyer
 
-When executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
+When executing a PARI command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (say, started with sage -gp):
 
 ```
 gp> kill(x)   /* No output */
@@ -27,13 +28,11 @@ gp> kill(x)   /* No output */
 But in Sage:
 
 ```
-sage: gp('kill(x)')
-0
 sage: pari('kill(x)')
 0
 ```
 
-It should be possible to fix this by checking for `gnil` as return value.
+It should be possible to fix this by checking for `gnil` (PARI's concept of None) as return value.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9661
 

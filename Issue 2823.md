@@ -1,23 +1,24 @@
-# Issue 2823: notebook -- safari 3.1 introspection completely broken
+# Issue 2823: [with patch, with positive review] notebook -- safari 3.1 introspection completely broken
 
 archive/issues_002823.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIntrospection (via tab completion), and most other keyboard stuff,\netc., is broken in safari 3.1 because they changed their even handling system.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2823\n\n",
+    "body": "Assignee: boothby\n\nIntrospection (via tab completion), and most other keyboard stuff,\netc., is broken in safari 3.1 because they changed their even handling system.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2823\n\n",
+    "closed_at": "2008-04-06T14:15:06Z",
     "created_at": "2008-04-06T06:32:26Z",
     "labels": [
-        "component: cygwin",
+        "component: notebook",
         "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- safari 3.1 introspection completely broken",
+    "title": "[with patch, with positive review] notebook -- safari 3.1 introspection completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2823",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: boothby
 
 Introspection (via tab completion), and most other keyboard stuff,
 etc., is broken in safari 3.1 because they changed their even handling system.

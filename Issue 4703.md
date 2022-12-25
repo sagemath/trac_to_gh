@@ -1,15 +1,16 @@
-# Issue 4703: inst.tex addition of Sage+tcl/tk [patch attached, needs review]
+# Issue 4703: [with patch; positive review] inst.tex addition of Sage+tcl/tk
 
 archive/issues_004703.json:
 ```json
 {
     "body": "Assignee: tba\n\nBasically added a description of making tcl/tk work in Sage as in http://wiki.sagemath.org/faq#HowtogetSage.27sPythontorecognizemysystem.27sTcl.2BAC8-Tkinstall.3F\nfollowing descriptions of William Stein and several others on sage-support (see thread titled \"sage and tkinter?\").\nSeems to compile fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4703\n\n",
+    "closed_at": "2008-12-08T10:56:22Z",
     "created_at": "2008-12-05T01:04:12Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "inst.tex addition of Sage+tcl/tk [patch attached, needs review]",
+    "title": "[with patch; positive review] inst.tex addition of Sage+tcl/tk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4703",
     "user": "https://github.com/wdjoyner"

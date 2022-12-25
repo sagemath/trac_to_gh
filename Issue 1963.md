@@ -1,15 +1,16 @@
-# Issue 1963: unramified and eisenstein extensions
+# Issue 1963: [with bundle, with positive review] unramified and eisenstein extensions
 
 archive/issues_001963.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nKeywords: p-adics\n\nAdds unramified and eisenstein extensions of Qp and Zp.  Adds printing features for p-adics, improves construction of p-adic elements, fixes some bugs and memleaks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1963\n\n",
+    "closed_at": "2008-02-21T03:08:34Z",
     "created_at": "2008-01-28T22:49:59Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "unramified and eisenstein extensions",
+    "title": "[with bundle, with positive review] unramified and eisenstein extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1963",
     "user": "https://github.com/roed314"

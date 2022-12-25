@@ -4,6 +4,7 @@ archive/issues_003754.json:
 ```json
 {
     "body": "Assignee: joyner\n\nIf K is a number field, then K.galois_group() gives a group with very little functionality. One can get an abstract group with more functionality by calling K.galois_group().group(), but it would be nice to be able to access the functionality of the group type without having to forget the metadata attached to the Galois group (its number field, etc). Would this be difficult?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3754\n\n",
+    "closed_at": "2009-05-12T01:39:45Z",
     "created_at": "2008-08-01T15:46:41Z",
     "labels": [
         "component: group theory",

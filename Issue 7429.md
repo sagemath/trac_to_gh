@@ -1,9 +1,10 @@
-# Issue 7429: pari is misbuilt on OS X using xcode 3.2.1, making sage be mostly broken
+# Issue 7429: pari is misbuilt on OS X using xcode 3.2.1, making sage mostly broken
 
 archive/issues_007429.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nAfter building sage on OS X 10.6.2 with Xcode 3.2.1 (all latest versions right now, and using #7426), PARI doesn't work, which causes massive failures all over the place:\n\n```\nPARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT\nANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 8000000, primelimit = 500000\n? polcoeff(1/eta(x)^2, 8, x)\ndyld: lazy symbol binding failed: Symbol not found: ___gmpn_mul_1\n  Referenced from: /Users/was/build/sage-4.2.1.alpha0/local/lib//libpari-gmp.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: ___gmpn_mul_1\n  Referenced from: /Users/was/build/sage-4.2.1.alpha0/local/lib//libpari-gmp.dylib\n  Expected in: flat namespace\n\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7429\n\n",
+    "closed_at": "2009-11-11T18:56:24Z",
     "created_at": "2009-11-11T17:38:54Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_007429.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "pari is misbuilt on OS X using xcode 3.2.1, making sage be mostly broken",
+    "title": "pari is misbuilt on OS X using xcode 3.2.1, making sage mostly broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7429",
     "user": "https://github.com/williamstein"

@@ -1,22 +1,24 @@
-# Issue 3580: ensure that numpy is not imported on startup.
+# Issue 3580: [with patch, with positive review] ensure that totallyreal does not import numpy on startup.
 
 archive/issues_003580.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @craigcitro @jvoight\n\nThis is a followup to #3577 that is forced by a merge conflict.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3580\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro @jvoight\n\nThis is a followup to #3577 that is forced by a merge conflict.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3580\n\n",
+    "closed_at": "2008-11-09T08:24:18Z",
     "created_at": "2008-07-07T02:56:55Z",
     "labels": [
         "component: misc",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "ensure that numpy is not imported on startup.",
+    "title": "[with patch, with positive review] ensure that totallyreal does not import numpy on startup.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3580",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @craigcitro
 
 CC:  @craigcitro @jvoight
 

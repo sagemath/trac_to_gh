@@ -1,16 +1,17 @@
-# Issue 1628: update Moinmoin to 1.5.8
+# Issue 1628: update Moinmoin to 1.6
 
 archive/issues_001628.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1628\n\n",
+    "closed_at": "2008-07-21T07:27:51Z",
     "created_at": "2007-12-29T04:41:02Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update Moinmoin to 1.5.8",
+    "title": "update Moinmoin to 1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1628",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

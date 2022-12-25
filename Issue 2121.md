@@ -1,16 +1,17 @@
-# Issue 2121: move libecm wrapper from interfaces to libs
+# Issue 2121: [with patch, positive review] move libecm wrapper from interfaces to libs
 
 archive/issues_002121.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n...yeah...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2121\n\n",
+    "closed_at": "2008-05-23T01:13:01Z",
     "created_at": "2008-02-09T01:32:52Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "move libecm wrapper from interfaces to libs",
+    "title": "[with patch, positive review] move libecm wrapper from interfaces to libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2121",
     "user": "https://github.com/robertwb"

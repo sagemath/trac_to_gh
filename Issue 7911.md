@@ -1,16 +1,18 @@
-# Issue 7911: scilab interface is missing in the notebook dropdown menu
+# Issue 7911: Fix Scilab interface doctests, add 'scilab (optional)' to systems in the notebook dropdown menu
 
 archive/issues_007911.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nKeywords: scilab,notebook\n\nThe dropdown menu that shows the different interfaces is missing scilab.\n\nUsing %scilab in a notebook cell works though\n\nIssue created by migration from https://trac.sagemath.org/ticket/7911\n\n",
+    "closed_at": "2010-02-18T22:02:06Z",
     "created_at": "2010-01-12T18:20:31Z",
     "labels": [
-        "component: notebook",
+        "component: interfaces",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "scilab interface is missing in the notebook dropdown menu",
+    "title": "Fix Scilab interface doctests, add 'scilab (optional)' to systems in the notebook dropdown menu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7911",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"

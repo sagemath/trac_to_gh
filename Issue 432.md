@@ -1,21 +1,22 @@
-# Issue 432: finish implementing deleting the trash (emptying it) in the sage notebook.
+# Issue 432: [with patch; positive review] finish implementing deleting the trash (emptying it) in the sage notebook.
 
 archive/issues_000432.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI just never got around to implementing it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/432\n\n",
+    "body": "Assignee: boothby\n\nI just never got around to implementing it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/432\n\n",
+    "closed_at": "2008-03-17T04:01:40Z",
     "created_at": "2007-08-16T09:43:33Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "finish implementing deleting the trash (emptying it) in the sage notebook.",
+    "title": "[with patch; positive review] finish implementing deleting the trash (emptying it) in the sage notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/432",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 I just never got around to implementing it.
 

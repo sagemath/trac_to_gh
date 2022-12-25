@@ -1,15 +1,16 @@
-# Issue 1287: [with patch] wrappers for Dokchitser L-series
+# Issue 1287: [with patch, with *positive* review] wrappers for Dokchitser L-series
 
 archive/issues_001287.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWrappers for Dokchitser L-series for various types of modular forms, e.g.,:\n\n```\n        sage: L = delta_Lseries()\n        sage: L(1)\n        0.0374412812685155\n\n        sage: f = CuspForms(2,8).0\n        sage: L = f.cuspform_Lseries()\n        sage: L(1)\n        0.0884317737041015\n        sage: L(0.5)\n        0.0296568512531983\n\n        sage: f = ModularForms(1,4).0\n        sage: L = f.modform_Lseries()\n        sage: L(1)\n        -0.0304484570583933\n\n        sage: L = eisenstein_series_Lseries(20)\n        sage: L(2)\n        -5.02355351645987 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1287\n\n",
+    "closed_at": "2007-12-02T19:04:35Z",
     "created_at": "2007-11-27T04:17:26Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] wrappers for Dokchitser L-series",
+    "title": "[with patch, with *positive* review] wrappers for Dokchitser L-series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1287",
     "user": "https://github.com/jbalakrishnan"

@@ -4,6 +4,7 @@ archive/issues_007770.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: tower of hanoi graph\n\nThe Tower of Hanoi puzzle can be described by a graph whose vertices are possible states of the disks on the pegs, with edges represdenting legitimate moves of a single disk.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7770\n\n",
+    "closed_at": "2010-01-03T21:05:01Z",
     "created_at": "2009-12-27T00:02:14Z",
     "labels": [
         "component: graph theory",

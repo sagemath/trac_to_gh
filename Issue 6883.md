@@ -1,9 +1,10 @@
-# Issue 6883: ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8
+# Issue 6883: [with spkg, positive review] ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8
 
 archive/issues_006883.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nI got the following failure when compiling Sage 4.1.2.alpha0:\n\n```\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: System gmp library requested but not found.\nFailed to configure ECL ... exiting\n\nreal    0m3.427s\nuser    0m1.095s\nsys     0m2.049s\nsage: An error occurred while installing ecl-9.8.4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4 and type 'make'.\nInstead type \"/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/ecl-9.8.4] Error 1\n\nreal    0m7.189s\nuser    0m2.507s\nsys     0m3.197s\nError building Sage.\n```\nThis was on Mac OS X 10.5.8 (bsd.math.washington.edu), compiling in 64-bit mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6883\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nKeywords: os x ecl cvs\n\nI got the following failure when compiling Sage 4.1.2.alpha0:\n\n```\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: System gmp library requested but not found.\nFailed to configure ECL ... exiting\n\nreal    0m3.427s\nuser    0m1.095s\nsys     0m2.049s\nsage: An error occurred while installing ecl-9.8.4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4 and type 'make'.\nInstead type \"/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/ecl-9.8.4] Error 1\n\nreal    0m7.189s\nuser    0m2.507s\nsys     0m3.197s\nError building Sage.\n```\nThis was on Mac OS X 10.5.8 (bsd.math.washington.edu), compiling in 64-bit mode.\n\n\nBEFORE including in Sage, please see trac #6971\n\nIssue created by migration from https://trac.sagemath.org/ticket/6883\n\n",
+    "closed_at": "2009-09-27T02:39:40Z",
     "created_at": "2009-09-04T06:36:43Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_006883.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8",
+    "title": "[with spkg, positive review] ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6883",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -20,6 +21,8 @@ archive/issues_006883.json:
 Assignee: mabshoff
 
 CC:  mvngu
+
+Keywords: os x ecl cvs
 
 I got the following failure when compiling Sage 4.1.2.alpha0:
 
@@ -50,6 +53,9 @@ sys     0m3.197s
 Error building Sage.
 ```
 This was on Mac OS X 10.5.8 (bsd.math.washington.edu), compiling in 64-bit mode.
+
+
+BEFORE including in Sage, please see trac #6971
 
 Issue created by migration from https://trac.sagemath.org/ticket/6883
 

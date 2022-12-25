@@ -3,7 +3,7 @@
 archive/issues_001422.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @burcin ranosch\n\n6.3 how do i reference sage?\nIf you write a paper using SAGE, please reference computations done with\nSAGE by including\n[SAGE], SAGE Mathematical Software, Version 2.6, http://www.sagemath.org\n<sup>^</sup>\nHow about a function bibtex() similar to latex() which gives a bibtex\nentry? Coudl default to bibtex(sage) but could also provide\nbibtex(pari), bibtex(gp), bibtex(Singular), etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1422\n\n",
+    "body": "Assignee: tba\n\nCC:  @burcin ranosch\n\nThis is a follow-up to the BibTeX idea from #1348:\n\n```\n6.3 how do i reference sage?\nIf you write a paper using SAGE, please reference computations done with\nSAGE by including\n[SAGE], SAGE Mathematical Software, Version 2.6, http://www.sagemath.org\n^^^\nHow about a function bibtex() similar to latex() which gives a bibtex\nentry? Coudl default to bibtex(sage) but could also provide\nbibtex(pari), bibtex(gp), bibtex(Singular), etc.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1422\n\n",
     "created_at": "2007-12-07T21:42:23Z",
     "labels": [
         "component: documentation",
@@ -20,14 +20,18 @@ Assignee: tba
 
 CC:  @burcin ranosch
 
+This is a follow-up to the BibTeX idea from #1348:
+
+```
 6.3 how do i reference sage?
 If you write a paper using SAGE, please reference computations done with
 SAGE by including
 [SAGE], SAGE Mathematical Software, Version 2.6, http://www.sagemath.org
-<sup>^</sup>
+^^^
 How about a function bibtex() similar to latex() which gives a bibtex
 entry? Coudl default to bibtex(sage) but could also provide
 bibtex(pari), bibtex(gp), bibtex(Singular), etc.
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1422
 

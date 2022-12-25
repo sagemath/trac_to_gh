@@ -3,7 +3,8 @@
 archive/issues_007408.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @hivert\n\nThe implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7408\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @hivert\n\nKeywords: Robinson-Schensted\n\nThe implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7408\n\n",
+    "closed_at": "2009-11-12T06:28:33Z",
     "created_at": "2009-11-07T19:43:20Z",
     "labels": [
         "component: combinatorics",
@@ -19,6 +20,8 @@ archive/issues_007408.json:
 Assignee: @mwhansen
 
 CC:  @hivert
+
+Keywords: Robinson-Schensted
 
 The implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.
 

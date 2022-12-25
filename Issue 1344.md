@@ -4,6 +4,7 @@ archive/issues_001344.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\nI have now successfully started SAGE. My problem was using \"The\nUnarchiver\" to open the compressed file. (The Unarchiver.app is\navailable at http://www.apple.com/downloads/macosx/system_disk_utilities/theunarchiver.html.)\nWhen I used the standard shell tools gunzip and tar to install SAGE,\neverything worked fine. I assume this has been the problem all along.\nThis might be worth a warning to other Mac users.\n\nThanks, Max\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1344\n\n",
+    "closed_at": "2008-01-20T03:06:47Z",
     "created_at": "2007-11-30T18:47:25Z",
     "labels": [
         "component: documentation",

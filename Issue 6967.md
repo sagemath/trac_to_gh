@@ -3,10 +3,12 @@
 archive/issues_006967.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6967\n\n",
+    "body": "Assignee: cwitty\n\nTODO:\n\n* refactor use_fork.py\n\n* change use_fork.py to use mmap: http://docs.python.org/library/mmap.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/6967\n\n",
+    "closed_at": "2010-01-19T04:07:33Z",
     "created_at": "2009-09-20T10:43:46Z",
     "labels": [
-        "component: misc"
+        "component: misc",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "@parallel -- dramatically improve by rewriting with fork directly, using files, timeouts, controlling interfaces, etc.",
@@ -17,7 +19,11 @@ archive/issues_006967.json:
 ```
 Assignee: cwitty
 
+TODO:
 
+* refactor use_fork.py
+
+* change use_fork.py to use mmap: http://docs.python.org/library/mmap.html
 
 Issue created by migration from https://trac.sagemath.org/ticket/6967
 

@@ -3,10 +3,12 @@
 archive/issues_008200.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: ElementWrapper\n\nThe attached patch updates the doctests of ElementWrapper to use a custom dummy parent, rather than abusing from ZZ. This abuse could trigger a segfault (see #8177).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8200\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: ElementWrapper\n\nThe attached patch updates the doctests of ElementWrapper to use a custom dummy parent, rather than abusing from ZZ. This abuse could trigger a segfault (see #8177).\n\nI put this back to \"needs review\", *without* the reviewer's patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8200\n\n",
+    "closed_at": "2010-02-06T18:08:42Z",
     "created_at": "2010-02-06T12:03:24Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
@@ -16,13 +18,15 @@ archive/issues_008200.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @nthiery
+Assignee: @williamstein
 
 CC:  sage-combinat
 
 Keywords: ElementWrapper
 
 The attached patch updates the doctests of ElementWrapper to use a custom dummy parent, rather than abusing from ZZ. This abuse could trigger a segfault (see #8177).
+
+I put this back to "needs review", *without* the reviewer's patch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8200
 

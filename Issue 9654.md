@@ -1,16 +1,17 @@
-# Issue 9654: implicit_plot does not accept color or rgbcolor as keywords
+# Issue 9654: implicit_plot does not accept rgbcolor as keyword
 
 archive/issues_009654.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  @kcrisman\n\nBoth\n\n`implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')`\n\nand\n\n`implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')`\n\ndo not produce a red circle as would be expected. matplotlib's cmap options don't get it quite good.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9654\n\n",
+    "body": "Assignee: olazo\n\nCC:  @kcrisman\n\nKeywords: implicit_plot\n\nBoth\n\n```\nimplicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')\n```\n\nand\n\n```\nimplicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')\n```\n\ndo not produce a red circle as would be expected. matplotlib's cmap options don't get it quite good.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9654\n\n",
+    "closed_at": "2016-07-09T16:29:15Z",
     "created_at": "2010-08-01T01:35:14Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
-    "title": "implicit_plot does not accept color or rgbcolor as keywords",
+    "title": "implicit_plot does not accept rgbcolor as keyword",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9654",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
@@ -20,13 +21,19 @@ Assignee: olazo
 
 CC:  @kcrisman
 
+Keywords: implicit_plot
+
 Both
 
-`implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')`
+```
+implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')
+```
 
 and
 
-`implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')`
+```
+implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')
+```
 
 do not produce a red circle as would be expected. matplotlib's cmap options don't get it quite good.
 

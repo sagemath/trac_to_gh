@@ -3,7 +3,8 @@
 archive/issues_008639.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nThe variable's name was changed.... :-p\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8639\n\n",
+    "body": "Assignee: @wdjoyner\n\nA missing '_' in a variable's name :-p\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8639\n\n",
+    "closed_at": "2010-04-16T18:55:52Z",
     "created_at": "2010-04-01T14:06:28Z",
     "labels": [
         "component: numerical",
@@ -16,9 +17,9 @@ archive/issues_008639.json:
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: jason, jkantor
+Assignee: @wdjoyner
 
-The variable's name was changed.... :-p
+A missing '_' in a variable's name :-p
 
 Nathann
 

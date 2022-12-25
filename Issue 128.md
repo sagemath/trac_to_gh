@@ -3,10 +3,11 @@
 archive/issues_000128.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @jdemeyer\n\nSince Elliptic curves should probably have some things in common, one would probably at some point want signatures of the type\n\nEllipticCurve(f) and EllipticCurve(f,h)\n\nto define curves with models y^2=f(x) and y^2+h(x)*y=f(x).\nThis would clash with EllipticCurve(j-invariant) that exists now.\n\nExample:\n\nEllipticCurve(x^3-x)\n\nShould this create an elliptic curve over Q[x] with j-invariant x^3-x or should it create an elliptic curve over Q with equation y<sup>2=x</sup>3-x?\n\nMagma did go with the first for a while but decided to stick with the latter later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/128\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @jdemeyer\n\nSince Elliptic curves should probably have some things in common, one would probably at some point want signatures of the type\n\n```\nEllipticCurve(f) and EllipticCurve(f,h)\n```\nto define curves with models `y^2=f(x)` and `y^2+h(x)*y=f(x)`.\nThis would clash with EllipticCurve(j-invariant) that exists now.\n\nExample:\n\n```\nEllipticCurve(x^3-x)\n```\nShould this create an elliptic curve over Q[x] with j-invariant `x^3-x` or should it create an elliptic curve over Q with equation `y<sup>2=x</sup>3-x`?\n\nMagma did go with the first for a while but decided to stick with the latter later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/128\n\n",
+    "closed_at": "2013-01-31T20:37:21Z",
     "created_at": "2006-10-14T05:31:06Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: elliptic curves",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -22,16 +23,18 @@ CC:  @JohnCremona @jdemeyer
 
 Since Elliptic curves should probably have some things in common, one would probably at some point want signatures of the type
 
+```
 EllipticCurve(f) and EllipticCurve(f,h)
-
-to define curves with models y^2=f(x) and y^2+h(x)*y=f(x).
+```
+to define curves with models `y^2=f(x)` and `y^2+h(x)*y=f(x)`.
 This would clash with EllipticCurve(j-invariant) that exists now.
 
 Example:
 
+```
 EllipticCurve(x^3-x)
-
-Should this create an elliptic curve over Q[x] with j-invariant x^3-x or should it create an elliptic curve over Q with equation y<sup>2=x</sup>3-x?
+```
+Should this create an elliptic curve over Q[x] with j-invariant `x^3-x` or should it create an elliptic curve over Q with equation `y<sup>2=x</sup>3-x`?
 
 Magma did go with the first for a while but decided to stick with the latter later.
 

@@ -1,16 +1,17 @@
-# Issue 2676: [with patch, needs easy review] is_equitable: flatten flattens too much!
+# Issue 2676: [with patch, positive review] equitable partitions: two bugs
 
 archive/issues_002676.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis is the problem, which is now a doctest:\n\n```\nsage: ss = (graphs.WheelGraph(5)).line_graph(labels=False)\nsage: prt = [[(0, 1)], [(0, 2), (0, 3), (0, 4), (1, 2), (1, 4)], [(2, 3), (3, 4)]]\nsage: ss.is_equitable(prt)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/rlmill/sage-2.11.alpha1/<ipython console> in <module>()\n\n/Users/rlmill/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/graphs/graph.py in is_equitable(self, partition, quotient_matrix)\n   5477         from sage.misc.misc import uniq\n   5478         if sorted(flatten(partition)) != self.vertices() or any(len(cell)==0 for cell in partition):\n-> 5479             raise TypeError(\"Partition (%s) is not valid for this graph.\"%partition)\n   5480         if quotient_matrix:\n   5481             from sage.matrix.constructor import Matrix\n\n<type 'exceptions.TypeError'>: Partition ([[(0, 1)], [(0, 2), (0, 3), (0, 4), (1, 2), (1, 4)], [(2, 3), (3, 4)]]) is not valid for this graph.\n```\n\nReported by Chris Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2676\n\n",
+    "closed_at": "2008-03-28T07:21:54Z",
     "created_at": "2008-03-26T17:41:40Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs easy review] is_equitable: flatten flattens too much!",
+    "title": "[with patch, positive review] equitable partitions: two bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2676",
     "user": "https://github.com/rlmill"

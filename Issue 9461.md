@@ -1,16 +1,16 @@
-# Issue 9461: Doctest failures with sage -t -randorder=X
+# Issue 9461: Doctest failures with --randorder X
 
 archive/issues_009461.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jm58660\n\nStart with a build of 4.5.alpha4 for which all long doctests pass.  Run, e.g.,\n\n```sh\n$ ./sage -t -long -sagenb -randorder=12345 devel/sage\n```\nMany tests fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9461\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jm58660\n\ntart with a build of Sage for which all long doctests pass.  Run, e.g.,\n\n```sh\n$ ./sage -t -a --long --randorder 12345\n```\nMany tests fail.\n\nSee https://groups.google.com/forum/#!topic/sage-devel/2LsEMzIDvfw\n\nSee also the much older discussion http://groups.google.com/group/sage-devel/browse_thread/thread/80d6e8b9f976019b/d861632ec04f3562#d861632ec04f3562\n\nIssue created by migration from https://trac.sagemath.org/ticket/9461\n\n",
     "created_at": "2010-07-09T05:28:56Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
-    "title": "Doctest failures with sage -t -randorder=X",
+    "title": "Doctest failures with --randorder X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9461",
     "user": "https://github.com/qed777"
@@ -20,12 +20,16 @@ Assignee: mvngu
 
 CC:  @jm58660
 
-Start with a build of 4.5.alpha4 for which all long doctests pass.  Run, e.g.,
+tart with a build of Sage for which all long doctests pass.  Run, e.g.,
 
 ```sh
-$ ./sage -t -long -sagenb -randorder=12345 devel/sage
+$ ./sage -t -a --long --randorder 12345
 ```
 Many tests fail.
+
+See https://groups.google.com/forum/#!topic/sage-devel/2LsEMzIDvfw
+
+See also the much older discussion http://groups.google.com/group/sage-devel/browse_thread/thread/80d6e8b9f976019b/d861632ec04f3562#d861632ec04f3562
 
 Issue created by migration from https://trac.sagemath.org/ticket/9461
 

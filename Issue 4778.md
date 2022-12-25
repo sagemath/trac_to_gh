@@ -1,16 +1,17 @@
-# Issue 4778: [with patch, needs review] Creates Scilab pexpect interface
+# Issue 4778: [with patch, positive review] Creates Scilab pexpect interface
 
 archive/issues_004778.json:
 ```json
 {
     "body": "Assignee: ronanpaixao\n\nKeywords: scilab\n\nCreates an interface to Scilab numerical math software, available at www.scilab.org\n\nTested with Scilab version 5.0.3\n\nIssue created by migration from https://trac.sagemath.org/ticket/4778\n\n",
+    "closed_at": "2008-12-17T15:11:36Z",
     "created_at": "2008-12-13T02:53:25Z",
     "labels": [
-        "component: optional packages",
+        "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] Creates Scilab pexpect interface",
+    "title": "[with patch, positive review] Creates Scilab pexpect interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4778",
     "user": "https://trac.sagemath.org/admin/accounts/users/ronanpaixao"

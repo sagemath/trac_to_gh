@@ -4,6 +4,7 @@ archive/issues_004259.json:
 ```json
 {
     "body": "Assignee: @ClementPernet\n\nCC:  @ClementPernet\n\nKeywords: linbox, linear algebra\n\nWe should use the faster option if possible. I'm not sure what the constraints on the primes are though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4259\n\n",
+    "closed_at": "2013-03-29T19:00:05Z",
     "created_at": "2008-10-10T08:51:53Z",
     "labels": [
         "component: linbox"

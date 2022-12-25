@@ -3,7 +3,8 @@
 archive/issues_006565.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: substitution cryptosystem\n\nThe class `SubstitutionCryptosystem` accepts keys whose values are alphabetic characters. We should implement a method to allow a key\nto be converted between alphabetic characters and numerical values. For example, here is what I have in mind:\n\n```\nsage: A = AlphabeticStrings()\nsage: S = SubstitutionCryptosystem(A)\nsage: key = S.random_key()\nABC\nsage: S.alphabet_to_numbers(key)\n012\nsage: S.numbers_to_alphabet([0, 1, 2])\nABC\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6565\n\n",
+    "body": "Assignee: somebody\n\nKeywords: substitution cryptosystem\n\nThe class `SubstitutionCryptosystem` accepts keys whose values are alphabetic characters. We should implement a method to allow a key\nto be converted between alphabetic characters and numerical values. For example, here is what I have in mind:\n\n```\nsage: A = AlphabeticStrings()\nsage: S = SubstitutionCryptosystem(A)\nsage: key = S.random_key()\nABC\nsage: S.alphabet_to_numbers(key)\n012\nsage: S.numbers_to_alphabet([0, 1, 2])\nABC\n```\nGeneralizing from this, we can also have methods to do the following conversions:\n\n* from alphabetic characters to binary values and vice versa\n\n* from alphabetic characters to hexadecimal values and vice versa\n\n* from alphabetic characters to mod 26 values and vice versa\n\n* from alphabetic characters to ASCII values and vice versa\n\nIssue created by migration from https://trac.sagemath.org/ticket/6565\n\n",
+    "closed_at": "2015-06-19T08:38:23Z",
     "created_at": "2009-07-20T11:49:03Z",
     "labels": [
         "component: cryptography"
@@ -32,6 +33,15 @@ sage: S.alphabet_to_numbers(key)
 sage: S.numbers_to_alphabet([0, 1, 2])
 ABC
 ```
+Generalizing from this, we can also have methods to do the following conversions:
+
+* from alphabetic characters to binary values and vice versa
+
+* from alphabetic characters to hexadecimal values and vice versa
+
+* from alphabetic characters to mod 26 values and vice versa
+
+* from alphabetic characters to ASCII values and vice versa
 
 Issue created by migration from https://trac.sagemath.org/ticket/6565
 

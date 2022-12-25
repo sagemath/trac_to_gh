@@ -4,6 +4,7 @@ archive/issues_008244.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu @jhpalmieri @mwhansen @craigcitro @robertwb\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8244\n\n",
+    "closed_at": "2010-03-02T22:04:09Z",
     "created_at": "2010-02-11T21:43:46Z",
     "labels": [
         "component: documentation",

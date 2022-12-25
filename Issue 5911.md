@@ -4,6 +4,7 @@ archive/issues_005911.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nImagine a new user who wants to create a graph.  They do `Graph?` and they get (in order):\n\n1. Two pages of parameters, which they can't possibly read through.\n\n2. The first *page* of examples all involve networkx (they think -- huh?) and starts like this.\n\n```\n  \n    EXAMPLES: We illustrate the first six input formats (the other two\n    involve packages that are currently not standard in Sage):\n    \n    #. A NetworkX XGraph::\n    \n          sage: import networkx\n          sage: g = networkx.XGraph({0:[1,2,3], 2:[4]})\n          sage: Graph(g)\n          Graph on 5 vertices\n....\n```\n\nI propose:\n \n1. Putting a few simple straightforward examples (which is all most users need) right *before* the INPUT: block.\n\n2. Moving any mention of networkx lower in the lists, e.g., when defining the data input, don't put networkx first, and when documenting things later with examples, don't put networkx first. \n\n3. That one can do \"graphs.<tab>\" and get constructors for any family of graphs should be noted clearly and prominently, also before the INPUT: block.  This is not even noted anywhere right now, though it is used in two examples.\n\nThe above are all easy changes, I think. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5911\n\n",
+    "closed_at": "2009-11-05T01:33:06Z",
     "created_at": "2009-04-27T13:02:05Z",
     "labels": [
         "component: graph theory"

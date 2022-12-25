@@ -1,16 +1,17 @@
-# Issue 1735: do not mark a spkg as installed if sage-check fails
+# Issue 1735: [with patch] do not mark a spkg as installed if sage-check fails
 
 archive/issues_001735.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIf `SAGE_CHECK` is exported as a non-empty string we run spkg-check per default if it is available. But if spkg-check fails we still mark the spkg as installed. This should obviously not happen.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1735\n\n",
+    "closed_at": "2008-01-13T02:01:09Z",
     "created_at": "2008-01-09T11:16:51Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "do not mark a spkg as installed if sage-check fails",
+    "title": "[with patch] do not mark a spkg as installed if sage-check fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1735",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 5795: Improved performance of MPolynomialRing_libsingular.__call__()
+# Issue 5795: [with patch, positive review] Improved performance of MPolynomialRing_libsingular.__call__()
 
 archive/issues_005795.json:
 ```json
 {
     "body": "Assignee: @simon-king-jena\n\nCC:  @malb\n\nKeywords: MPolynomialRing_libsingular, coercion, call\n\nOne comment in the `__call__()` method of MPolynomialRing_libsingular states:\n #TODO: We can do this faster without the dict\n\nIn fact, we can!\n\nWithout the patch, we have the following timings on sage.math:\n\n```\nsage: R=PolynomialRing(QQ,5,'x')\nsage: S=PolynomialRing(QQ,6,'x')\nsage: T=PolynomialRing(QQ,5,'y')\nsage: U=PolynomialRing(GF(2),5,'x')\nsage: p=R('x0*x1+2*x4+x3*x1^2')^4\nsage: timeit('q=S(p)')\n625 loops, best of 3: 341 \u00c2\u00b5s per loop\nsage: timeit('q=T(p)')\n625 loops, best of 3: 370 \u00c2\u00b5s per loop\nsage: timeit('q=U(p)')\n625 loops, best of 3: 451 \u00c2\u00b5s per loop\n```\n\nWith the patch, we have\n\n```\nsage: timeit('q=S(p)')\n625 loops, best of 3: 328 \u00c2\u00b5s per loop\nsage: timeit('q=T(p)')\n625 loops, best of 3: 292 \u00c2\u00b5s per loop\nsage: timeit('q=U(p)')\n625 loops, best of 3: 396 \u00c2\u00b5s per loop\n```\nSo, the improvement is small, but it *is* an improvement.\n\nBackground: \n In the original version, if the input of `__call__` is MPolynomial_libsingular, then the `dict()` method of this polynomial was called in order to get the coefficients and exponent vectors. \n \n In the new version, the underlying libsingular methods are called directly, which is faster. The price to pay is that currRing changes more often. I hope change of currRing is not too expensive (in my examples above, apparently it isn't).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5795\n\n",
+    "closed_at": "2009-04-22T18:48:37Z",
     "created_at": "2009-04-16T02:50:47Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Improved performance of MPolynomialRing_libsingular.__call__()",
+    "title": "[with patch, positive review] Improved performance of MPolynomialRing_libsingular.__call__()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5795",
     "user": "https://github.com/simon-king-jena"

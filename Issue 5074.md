@@ -3,7 +3,8 @@
 archive/issues_005074.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\n```\n\nNote that the factors need not even be coprime!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5074\n\n",
+    "body": "Assignee: @malb\n\nKeywords: factorisation\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\n```\n\nNote that the factors need not even be coprime!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5074\n\n",
+    "closed_at": "2013-08-16T11:10:49Z",
     "created_at": "2009-01-23T14:30:09Z",
     "labels": [
         "component: commutative algebra",
@@ -17,6 +18,8 @@ archive/issues_005074.json:
 }
 ```
 Assignee: @malb
+
+Keywords: factorisation
 
 ```
 sage: k.<a> = GF(9)

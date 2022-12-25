@@ -3,7 +3,7 @@
 archive/issues_007716.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: coverage\n\nAdds features to the sage-coverage script.\n\n- rewrite for modularity and easier addition of features\n- changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.\n- adds option to check cdef'd functions\n- adds option to check docstrings on classes\n- adds option to check for the existence of INPUT block\n- adds option to check that parameters are all listed in the INPUT block.\n- adds option to check for the existence of OUTPUT block\n\nSo that we don't bring our coverage level way down, these aren't turned on automatically.  Instead, they can be invoked from the command line by using options ( -cdefs, -classes, -input, -output and -params)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7716\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: coverage\n\nAdds features to the sage-coverage script.\n\n* rewrite for modularity and easier addition of features\n* changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.\n* adds option to check cdef'd functions\n* adds option to check docstrings on classes\n* adds option to check for the existence of INPUT block\n* adds option to check that parameters are all listed in the INPUT block.\n* adds option to check for the existence of OUTPUT block\n\nSo that we don't bring our coverage level way down, these aren't turned on automatically.  Instead, they can be invoked from the command line by using options ( -cdefs, -classes, -input, -output and -params)\n\nResolves #1795 and #5859\n\nThe current ticket might conflict with #8699.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7716\n\n",
     "created_at": "2009-12-17T01:39:31Z",
     "labels": [
         "component: documentation"
@@ -21,15 +21,19 @@ Keywords: coverage
 
 Adds features to the sage-coverage script.
 
-- rewrite for modularity and easier addition of features
-- changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.
-- adds option to check cdef'd functions
-- adds option to check docstrings on classes
-- adds option to check for the existence of INPUT block
-- adds option to check that parameters are all listed in the INPUT block.
-- adds option to check for the existence of OUTPUT block
+* rewrite for modularity and easier addition of features
+* changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.
+* adds option to check cdef'd functions
+* adds option to check docstrings on classes
+* adds option to check for the existence of INPUT block
+* adds option to check that parameters are all listed in the INPUT block.
+* adds option to check for the existence of OUTPUT block
 
 So that we don't bring our coverage level way down, these aren't turned on automatically.  Instead, they can be invoked from the command line by using options ( -cdefs, -classes, -input, -output and -params)
+
+Resolves #1795 and #5859
+
+The current ticket might conflict with #8699.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7716
 

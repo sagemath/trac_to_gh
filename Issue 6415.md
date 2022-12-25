@@ -3,11 +3,12 @@
 archive/issues_006415.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nRecently (during Sage Days 12 ?!) the doctesting code was changed so that \"sage -t\" on a certain class of *.pyx files now is broken.\nEspecially, they now get not only copied to some temp directory, but it is attempted to build dynamically the *.so extension out of them, as if they were all files to be loaded/attached.\nThis almost certainly must fail, if e.g. you have installed a package under $SAGE_ROOT/local/lib/python/site-packages/, with Cython extensions, building which needs certain libraries, additional C sources, special compiler flags, and so on.\n(And where one \"imports\" the functionality, not loads/attaches it.)\n\nPreviously, doctesting was very well suited to this situation, but is no more.\n\nSo the current (Sage 4.0.2) doctesting code should be enhanced in e.g. one of the following ways:\n\n1) If \"dynamically building\" of an extension fails, just \"try\" to import the functionality as a fallback (in other words: use a prebuilt *.so if one exists, and you can't build a fresh one)\n\n2) Change to the old behaviour, and additionally try build dynamically an extension only if it is missing and/or seems to be outdated compared to the *.pyx file\n\n3) Use the old/new behaviour depending on whether \".../site-packages/...\" is in the path of the *.pyx-file, or not.\n\nAt the core of these problems of course is the fact that there is no standard way to store the build information (not to talk of the \"full\" dependency information) for a Cython source file.\nThe Sage project e.g. invented its own custom-made monolithic \"module_list.py\" on the one hand, its custom-made #clib, #cinclude, ... pragmas on the other hand, but all this does not at all work smoothly together.\nLet alone being usable in Sage-related Cython projects which address a broader audience, and are thus placed under .../site-packages/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6415\n\n",
+    "body": "Assignee: GeorgSWeber\n\nRecently (during Sage Days 12 ?!) the doctesting code was changed so that \"sage -t\" on a certain class of *.pyx files now is broken.\nEspecially, they now get not only copied to some temp directory, but it is attempted to build dynamically the *.so extension out of them, as if they were all files to be loaded/attached.\nThis almost certainly must fail, if e.g. you have installed a package under $SAGE_ROOT/local/lib/python/site-packages/, with Cython extensions, building which needs certain libraries, additional C sources, special compiler flags, and so on.\n(And where one \"imports\" the functionality, not loads/attaches it.)\n\nPreviously, doctesting was very well suited to this situation, but is no more.\n\nSo the current (Sage 4.0.2) doctesting code should be enhanced in e.g. one of the following ways:\n\n1) If \"dynamically building\" of an extension fails, just \"try\" to import the functionality as a fallback (in other words: use a prebuilt *.so if one exists, and you can't build a fresh one)\n\n2) Change to the old behaviour, and additionally try build dynamically an extension only if it is missing and/or seems to be outdated compared to the *.pyx file\n\n3) Use the old/new behaviour depending on whether \".../site-packages/...\" is in the path of the *.pyx-file, or not.\n\nAt the core of these problems of course is the fact that there is no standard way to store the build information (not to talk of the \"full\" dependency information) for a Cython source file.\nThe Sage project e.g. invented its own custom-made monolithic \"module_list.py\" on the one hand, its custom-made #clib, #cinclude, ... pragmas on the other hand, but all this does not at all work smoothly together.\nLet alone being usable in Sage-related Cython projects which address a broader audience, and are thus placed under .../site-packages/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6415\n\n",
+    "closed_at": "2013-03-29T19:01:41Z",
     "created_at": "2009-06-25T21:28:29Z",
     "labels": [
-        "component: doctest",
-        "bug"
+        "component: doctest framework",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"sage -t foo.pyx\" should not by default dynamically build foo.so",
@@ -16,7 +17,7 @@ archive/issues_006415.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
-Assignee: tbd
+Assignee: GeorgSWeber
 
 Recently (during Sage Days 12 ?!) the doctesting code was changed so that "sage -t" on a certain class of *.pyx files now is broken.
 Especially, they now get not only copied to some temp directory, but it is attempted to build dynamically the *.so extension out of them, as if they were all files to be loaded/attached.

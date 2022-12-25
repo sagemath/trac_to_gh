@@ -1,9 +1,10 @@
-# Issue 6349: graphs -- bug in DiGraph constructor
+# Issue 6349: [with patch, positive review] graphs -- bug in DiGraph constructor
 
 archive/issues_006349.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: DiGraph(matrix(2,[0,0,-1,1]), format=\"incidence_matrix\")\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/.sage/sage_notebook/worksheets/admin/187/code/29.py\", line 7, in <module>\n    DiGraph(matrix(_sage_const_2 ,[_sage_const_0 ,_sage_const_0 ,-_sage_const_1 ,_sage_const_1 ]), format=\"incidence_matrix\")\n  File \"/Users/wstein/s/local/lib/python2.5/site-packages/Jinja-1.2-py2.5-macosx-10.3-i386.egg/\", line 1, in <module>\n    \n  File \"/Users/wstein/s/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 9894, in __init__\n    raise ValueError(msg + msg2)\nTypeError: cannot concatenate 'str' and 'exceptions.AssertionError' objects\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6349\n\n",
+    "closed_at": "2009-06-24T10:11:53Z",
     "created_at": "2009-06-17T22:27:52Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_006349.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "graphs -- bug in DiGraph constructor",
+    "title": "[with patch, positive review] graphs -- bug in DiGraph constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6349",
     "user": "https://github.com/williamstein"

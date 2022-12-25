@@ -1,9 +1,10 @@
-# Issue 282: Add matrix() class to FiniteFields and FiniteField extensions
+# Issue 282: [with patch] add matrix() class to FiniteFields and FiniteField extensions
 
 archive/issues_000282.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: finitefield extension matrix polynomial\n\nNumberFields support a matrix() class, very handy.  FiniteFields and FiniteField extensions should also support such a beast.  In fact, all algebraic extensions should provide such functionality, but at this time there is no generic AlgebraicExtension class in which to put such functionality.  Damn you, Pyrex and multiple inheritance!\n\nIssue created by migration from https://trac.sagemath.org/ticket/282\n\n",
+    "body": "Assignee: @malb\n\nKeywords: finitefield extension matrix polynomial\n\nNumberFields support a matrix() class, very handy.  FiniteFields and FiniteField extensions should also support such a beast.  In fact, all algebraic extensions should provide such functionality, but at this time there is no generic AlgebraicExtension class in which to put such functionality.  Damn you, Pyrex and multiple inheritance!\n\nIssue created by migration from https://trac.sagemath.org/ticket/282\n\n",
+    "closed_at": "2007-10-23T19:51:22Z",
     "created_at": "2007-02-23T20:02:37Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_000282.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Add matrix() class to FiniteFields and FiniteField extensions",
+    "title": "[with patch] add matrix() class to FiniteFields and FiniteField extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/282",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 Keywords: finitefield extension matrix polynomial
 

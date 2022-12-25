@@ -4,6 +4,7 @@ archive/issues_009349.json:
 ```json
 {
     "body": "Assignee: tbd\n\nMany, many times I forget I downloaded a binary, and have tried to untar a spkg, getting the error that it's not a tar file. It would be better if, instead of getting an error on tar, it expanded into a directory with a simple text file (possibly with a url of where to get the full spkg.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9349\n\n",
+    "closed_at": "2014-11-07T16:50:05Z",
     "created_at": "2010-06-27T00:31:35Z",
     "labels": [
         "component: packages: standard",

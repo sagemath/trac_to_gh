@@ -1,4 +1,4 @@
-# Issue 7890: [new] Improve conversion of GAP objects into sage objects.
+# Issue 7890: [with patch, needs work] Improve conversion of GAP objects into sage objects.
 
 archive/issues_007890.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_007890.json:
         "component: interfaces",
         "bug"
     ],
-    "title": "[new] Improve conversion of GAP objects into sage objects.",
+    "title": "[with patch, needs work] Improve conversion of GAP objects into sage objects.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7890",
     "user": "https://trac.sagemath.org/admin/accounts/users/jlopez"

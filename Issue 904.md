@@ -4,6 +4,7 @@ archive/issues_000904.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThis adds is_clique and is_indendent_set functions to undirected graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/904\n\n",
+    "closed_at": "2007-10-23T22:17:43Z",
     "created_at": "2007-10-15T22:19:21Z",
     "labels": [
         "component: combinatorics"

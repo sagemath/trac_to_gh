@@ -1,22 +1,23 @@
-# Issue 4201: add .options and .reset to plot functions
+# Issue 4201: [with patch, positive review] add .options and .reset to plot functions
 
 archive/issues_004201.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4201\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4201\n\n",
+    "closed_at": "2008-09-27T04:24:52Z",
     "created_at": "2008-09-26T17:08:06Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "add .options and .reset to plot functions",
+    "title": "[with patch, positive review] add .options and .reset to plot functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4201",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  boothby
 

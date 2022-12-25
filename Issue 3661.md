@@ -1,16 +1,17 @@
-# Issue 3661: move sage/combinat/family.py into the main tree
+# Issue 3661: [with patch, positive review] move sage/combinat/family.py into the main tree
 
 archive/issues_003661.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3661\n\n",
+    "closed_at": "2008-07-16T05:28:14Z",
     "created_at": "2008-07-16T00:32:47Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "move sage/combinat/family.py into the main tree",
+    "title": "[with patch, positive review] move sage/combinat/family.py into the main tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3661",
     "user": "https://github.com/mwhansen"

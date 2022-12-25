@@ -1,22 +1,23 @@
-# Issue 1375: tutorial texing typo issue
+# Issue 1375: [with patch, with positive review] tutorial texing typo issue
 
 archive/issues_001375.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nJason Ribeiro to me\n\t\nshow details Nov 30 (3 days ago)\n\t\n\t\n\t\nReply\n\t\n\t\nHi,\n\nWhile reading http://sagemath.org/doc/html/tut/node47.html I noticed a\nsmall typo:\n\n\"NO SAGE preparsing is applied to spyx files, e.g., 23 means exclusive\nor rather than power. If foo is a function in the SAGE library, to use\nit from a spyx file import sage.all and use sage.all.foo.\"\n\nThe \"23\" should be \"^\".\n\nBest,\nJason\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1375\n\n",
+    "body": "Assignee: cwitty\n\n```\nJason Ribeiro to me\n\t\nshow details Nov 30 (3 days ago)\n\t\n\t\n\t\nReply\n\t\n\t\nHi,\n\nWhile reading http://sagemath.org/doc/html/tut/node47.html I noticed a\nsmall typo:\n\n\"NO SAGE preparsing is applied to spyx files, e.g., 23 means exclusive\nor rather than power. If foo is a function in the SAGE library, to use\nit from a spyx file import sage.all and use sage.all.foo.\"\n\nThe \"23\" should be \"^\".\n\nBest,\nJason\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1375\n\n",
+    "closed_at": "2007-12-02T20:44:07Z",
     "created_at": "2007-12-02T20:38:01Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "tutorial texing typo issue",
+    "title": "[with patch, with positive review] tutorial texing typo issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1375",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
 ```
 Jason Ribeiro to me

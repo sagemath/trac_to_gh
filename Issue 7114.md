@@ -3,7 +3,7 @@
 archive/issues_007114.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @rbeezer @rwst\n\nKeywords: cryptanalysis\n\nImplement cryptanalytic techniques for the following classical ciphers:\n\n* Hill or matrix cipher\n* shift cipher\n* substitution cipher\n* transposition cipher\n* Vigenere cipher\n\nIssue created by migration from https://trac.sagemath.org/ticket/7114\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer @rwst\n\nKeywords: cryptanalysis\n\nImplement cryptanalytic techniques for the following classical ciphers:\n\n* Hill or matrix cipher\n* #7123 shift cipher\n* #7124 affine cipher\n* #15756 substitution cipher\n* transposition cipher\n* #7231 Vigenere cipher\n\nThis depends on #6841 and #7010 (in that order).\nAlso depends on #15772\n\nIssue created by migration from https://trac.sagemath.org/ticket/7114\n\n",
     "created_at": "2009-10-04T17:33:49Z",
     "labels": [
         "component: cryptography"
@@ -24,10 +24,14 @@ Keywords: cryptanalysis
 Implement cryptanalytic techniques for the following classical ciphers:
 
 * Hill or matrix cipher
-* shift cipher
-* substitution cipher
+* #7123 shift cipher
+* #7124 affine cipher
+* #15756 substitution cipher
 * transposition cipher
-* Vigenere cipher
+* #7231 Vigenere cipher
+
+This depends on #6841 and #7010 (in that order).
+Also depends on #15772
 
 Issue created by migration from https://trac.sagemath.org/ticket/7114
 

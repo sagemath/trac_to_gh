@@ -4,6 +4,7 @@ archive/issues_009880.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nOur wrapper of the csgn function from GiNaC (in `sage/symbolic/expression.pyx`) doesn't reflect it's real definition:\n\n```\n  /** Return the complex half-plane (left or right) in which the number lies.\n   *  csgn(x)==0 for x==0, csgn(x)==1 for Re(x)>0 or Re(x)=0 and Im(x)>0,\n   *  csgn(x)==-1 for Re(x)<0 or Re(x)=0 and Im(x)<0.\n   *  */\n```\n\nFix this and add doctests.\n\nWe should also consider using GiNaC's `csgn()` function for the top level `sgn()` and `sign()` functions. This should be on a different ticket though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9881\n\n",
+    "closed_at": "2010-10-06T03:20:19Z",
     "created_at": "2010-09-09T09:04:30Z",
     "labels": [
         "component: symbolics",

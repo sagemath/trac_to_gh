@@ -3,7 +3,8 @@
 archive/issues_009630.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @orlitzky\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @orlitzky\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\nDuplicate of #9393.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
+    "closed_at": "2012-01-16T10:07:05Z",
     "created_at": "2010-07-29T01:36:07Z",
     "labels": [
         "component: symbolics",
@@ -38,6 +39,8 @@ does.  We need to fix
 int(3)._maxima_()
 AttributeError: 'int' object has no attribute '_maxima_'
 ```
+
+Duplicate of #9393.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9630
 

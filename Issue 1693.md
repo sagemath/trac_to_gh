@@ -1,16 +1,18 @@
-# Issue 1693: jmol stubles over browser caching
+# Issue 1693: [with patch, positive review; another positive review] jmol stubles over browser caching
 
 archive/issues_001693.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @malb\n\napplet is invoked by\n\n```\njmol_applet(500, \"/home/harri/5/cells/204/sage0-size500.jmol\")\n```\nbut does not get the new jmol file. possibly just needs a ?\"number\" as with plots/images\n\nIssue created by migration from https://trac.sagemath.org/ticket/1693\n\n",
+    "closed_at": "2008-01-08T23:24:28Z",
     "created_at": "2008-01-05T20:20:07Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "jmol stubles over browser caching",
+    "title": "[with patch, positive review; another positive review] jmol stubles over browser caching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1693",
     "user": "https://github.com/haraldschilly"

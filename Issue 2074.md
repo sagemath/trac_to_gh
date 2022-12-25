@@ -1,16 +1,17 @@
-# Issue 2074: PermutationGroupElement constructor bug.
+# Issue 2074: [with patch, positive review] PermutationGroupElement constructor bug.
 
 archive/issues_002074.json:
 ```json
 {
     "body": "Assignee: boothby\n\nGetting a permutation with empty, or singleton tuples blows up.\n\n```\nsage: G = SymmetricGroup(10)\nsage: G(((1,2,3),(4,),(5,)))\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/boothby/.sage/sage_notebook/worksheets/admin/15/code/148.py\", line 5, in <module>\n    G(((Integer(1),Integer(2),Integer(3)),(Integer(4),),(Integer(4),)))\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sympy/plotting/\", line 1, in <module>\n    \n  File \"/home/boothby/sagebuilds/sage-2.9.3/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\", line 298, in __call__\n    return PermutationGroupElement([x], self, check = check)\n  File \"permgroup_element.pyx\", line 239, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__\n  File \"/home/boothby/sagebuilds/sage-2.9.3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 738, in __call__\n    return cls(self, x)\n  File \"/home/boothby/sagebuilds/sage-2.9.3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 989, in __init__\n    raise TypeError, x\nTypeError: Gap produced error output\nSyntax error: expression expected\n$sage156:=((1,2,3)(4,)(4,));;\n                     ^\n\n   executing $sage156:=((1,2,3)(4,)(4,));;\n```\n\nSimilarly, a tuple consisting of a single cycle blows up:\n\n```\nsage: G(((1,2,3),))\nException (click to the left for traceback):\n...\n   executing $sage163:=((1,2,3),);;\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2074\n\n",
+    "closed_at": "2008-02-07T09:59:52Z",
     "created_at": "2008-02-06T09:41:23Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "PermutationGroupElement constructor bug.",
+    "title": "[with patch, positive review] PermutationGroupElement constructor bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2074",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

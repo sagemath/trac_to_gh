@@ -3,7 +3,8 @@
 archive/issues_009586.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen @jasongrout\n\nLet Sage schedule all the lectures at a university via an object oriented framework using the MILP solver infrastructure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9586\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen @jasongrout\n\nLet Sage schedule all the lectures at a university via an object oriented framework using the MILP solver infrastructure.\n\n[preliminary example](http://sagenb.org/home/pub/2275/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9586\n\n",
+    "closed_at": "2021-10-04T23:44:13Z",
     "created_at": "2010-07-23T10:23:09Z",
     "labels": [
         "component: numerical"
@@ -20,6 +21,8 @@ Assignee: jason, jkantor
 CC:  @nathanncohen @jasongrout
 
 Let Sage schedule all the lectures at a university via an object oriented framework using the MILP solver infrastructure.
+
+[preliminary example](http://sagenb.org/home/pub/2275/)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9586
 

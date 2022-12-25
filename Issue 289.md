@@ -4,11 +4,11 @@ archive/issues_000289.json:
 ```json
 {
     "body": "Assignee: Robert Bradshaw and Robert Miller\n\nCreate a java program and install packages for 3d plotting for SAGE.\n\nThis will require some rewriting of the SAGE notebook server to serve up the big java applets. \n\nIssue created by migration from https://trac.sagemath.org/ticket/289\n\n",
+    "closed_at": "2007-08-29T23:59:43Z",
     "created_at": "2007-02-24T02:42:22Z",
     "labels": [
         "component: packages: standard",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "3d plotting java applet that can be included in SAGE",

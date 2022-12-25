@@ -1,22 +1,22 @@
-# Issue 1578: [with patch, with bundle] Make polynomial .diff() accept optional argument times for repeated differentiation.
+# Issue 1578: [with bundle, needs review] Make polynomial .diff() accept optional argument times for repeated differentiation.
 
 archive/issues_001578.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: polynomial diff times repeat\n\nMake polynomial .diff() accept optional argument times for repeated differentiation.\n\nMakes diff do its thing multiple time if requested.\n\n```\n-    def diff(self, MPolynomial_libsingular variable, have_ring=True):\n+    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1578\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: polynomial diff times repeat\n\nMake polynomial .diff() accept optional argument times for repeated differentiation.\n\nMakes diff do its thing multiple time if requested.\n\n```\n-    def diff(self, MPolynomial_libsingular variable, have_ring=True):\n+    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1578\n\n",
+    "closed_at": "2008-03-03T16:13:58Z",
     "created_at": "2007-12-21T03:53:30Z",
     "labels": [
-        "component: commutative algebra",
-        "minor"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, with bundle] Make polynomial .diff() accept optional argument times for repeated differentiation.",
+    "title": "[with bundle, needs review] Make polynomial .diff() accept optional argument times for repeated differentiation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1578",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @malb
+Assignee: @ncalexan
 
 Keywords: polynomial diff times repeat
 

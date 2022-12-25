@@ -1,9 +1,10 @@
-# Issue 5743: Solaris 10/Sparc: Fix numerical noise issues in doctests
+# Issue 5743: [with patch, with positive review] Solaris 10/Sparc: Fix numerical noise issues in doctests
 
 archive/issues_005743.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere are a couple doctests on Solaris 10/Sparc that fail due to numerical noise. Fix it. \n\nA patch is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5743\n\n",
+    "closed_at": "2009-04-16T10:21:25Z",
     "created_at": "2009-04-11T01:25:26Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005743.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Solaris 10/Sparc: Fix numerical noise issues in doctests",
+    "title": "[with patch, with positive review] Solaris 10/Sparc: Fix numerical noise issues in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5743",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

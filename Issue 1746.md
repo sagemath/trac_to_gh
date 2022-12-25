@@ -1,16 +1,16 @@
-# Issue 1746: add p-norm as a method to vectors (probably very easy)
+# Issue 1746: [with patch, positive review] add p-norm as a method to vectors (probably very easy)
 
 archive/issues_001746.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\n\nOn Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:\n> \n> [Sorry for asking so much \"Is there a ... function in Sage?\" -\n> Questions.]\n> \n> But: Is there a native way to compute the p-Norm (e.g. euclidean oder\n> maximum norm) of a vector?\n> \n\nThere is no built in function, but we can write one easily:\n\ndef pnorm(v, p):\n      return sum([a^p for a in v])^(1/p)\n\n\nThen:\n\nsage: pnorm(vector([1,2,3]), 5)\n276^(1/5)\nsage: pnorm(vector(RDF, [1,2,3]), 5)\n3.07738488539\nsage: var('a b c d p')\nsage: pnorm(vector([a, b, c, d]), p)\n(d^p + c^p + b^p + a^p)^(1/p)\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1746\n\n",
+    "closed_at": "2008-01-20T00:51:53Z",
     "created_at": "2008-01-10T10:44:22Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "add p-norm as a method to vectors (probably very easy)",
+    "title": "[with patch, positive review] add p-norm as a method to vectors (probably very easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1746",
     "user": "https://github.com/williamstein"

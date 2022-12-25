@@ -1,15 +1,16 @@
-# Issue 9623: interacts for high school level
+# Issue 9623: interacts for high school level education
 
 archive/issues_009623.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  @kcrisman mhampton @robert-marik @rbeezer jthurber\n\nInclude the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9623\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @kcrisman mhampton @robert-marik @rbeezer jthurber\n\nInclude the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`\n\n**Apply**:\n1. [attachment:trac_9623-rebase-v3.patch]\n2. [attachment:9623_copyright_v2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9623\n\n",
+    "closed_at": "2011-05-03T12:28:40Z",
     "created_at": "2010-07-28T10:41:53Z",
     "labels": [
         "component: interact"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "interacts for high school level",
+    "title": "interacts for high school level education",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9623",
     "user": "https://github.com/haraldschilly"
@@ -20,6 +21,10 @@ Assignee: itolkov, jason
 CC:  @kcrisman mhampton @robert-marik @rbeezer jthurber
 
 Include the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`
+
+**Apply**:
+1. [attachment:trac_9623-rebase-v3.patch]
+2. [attachment:9623_copyright_v2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9623
 

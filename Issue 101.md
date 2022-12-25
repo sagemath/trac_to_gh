@@ -3,7 +3,8 @@
 archive/issues_000101.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSee http://sage.math.washington.edu/home/rlmill/graph_software.html for\ninitial research that Robert Miller and Emily Kirkman are doing on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/101\n\n",
+    "body": "Assignee: @williamstein\n\nSee http://sage.math.washington.edu:9001/graph for\ninitial research that Robert Miller and Emily Kirkman are doing on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/101\n\n",
+    "closed_at": "2007-09-19T21:35:42Z",
     "created_at": "2006-10-01T12:55:13Z",
     "labels": [
         "component: combinatorics"
@@ -17,7 +18,7 @@ archive/issues_000101.json:
 ```
 Assignee: @williamstein
 
-See http://sage.math.washington.edu/home/rlmill/graph_software.html for
+See http://sage.math.washington.edu:9001/graph for
 initial research that Robert Miller and Emily Kirkman are doing on this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/101

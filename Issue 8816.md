@@ -1,16 +1,17 @@
-# Issue 8816: Bug in CPS_height_bound
+# Issue 8816: Bug in CPS_height_bound documentation
 
 archive/issues_008816.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThe documentation states that \n\n```\n        Return the Cremona-Prickett-Siksek height bound. This is a\n        floating point number B such that if P is a rational point on\n        the curve, then `|h(P) - \\hat{h}(P)| \\leq B`, where `h(P)` is        the naive logarithmic height of `P` and `\\hat{h}(P)` is the\n        canonical height.\n```\n\nBut\n\n```\n            sage: E = EllipticCurve(\"5077a\")\n            sage: E.CPS_height_bound()\n            0.0\n```\n\nClearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8816\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe documentation states that \n\n```\n        Return the Cremona-Prickett-Siksek height bound. This is a\n        floating point number B such that if P is a rational point on\n        the curve, then `|h(P) - \\hat{h}(P)| \\leq B`, where `h(P)` is        the naive logarithmic height of `P` and `\\hat{h}(P)` is the\n        canonical height.\n```\n\nBut\n\n```\n            sage: E = EllipticCurve(\"5077a\")\n            sage: E.CPS_height_bound()\n            0.0\n```\n\nClearly that can't be correct as the naive height is not exactly equal to the canonical height. The documentation is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8816\n\n",
+    "closed_at": "2010-05-08T21:54:23Z",
     "created_at": "2010-04-29T05:59:24Z",
     "labels": [
         "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "Bug in CPS_height_bound",
+    "title": "Bug in CPS_height_bound documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8816",
     "user": "https://github.com/robertwb"
@@ -35,7 +36,7 @@ But
             0.0
 ```
 
-Clearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)
+Clearly that can't be correct as the naive height is not exactly equal to the canonical height. The documentation is incorrect.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8816
 

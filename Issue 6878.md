@@ -1,21 +1,22 @@
-# Issue 6878: [with patch, needs review] allow the exclusion of points from the plot range
+# Issue 6878: Allow the exclusion of points from the plot range
 
 archive/issues_006878.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: plot\n\nThe attached patch adds a new option 'exclude' to the plot command\nwhich allows to exclude points from the plot.\n\nThis is useful if there are discontinuities in the function you are plotting.\n\n```\nsage: plot(floor(x), (x, 1, 10), exclude = [1..10])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6878\n\n",
+    "body": "Assignee: whuss\n\nKeywords: plot\n\nThe attached patch adds a new option 'exclude' to the plot command\nwhich allows to exclude points from the plot.\n\nThis is useful if there are discontinuities in the function you are plotting.\n\n```\nsage: plot(floor(x), (x, 1, 10), exclude = [1..10])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6878\n\n",
+    "closed_at": "2010-02-11T14:59:20Z",
     "created_at": "2009-09-03T13:27:41Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "[with patch, needs review] allow the exclusion of points from the plot range",
+    "title": "Allow the exclusion of points from the plot range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6878",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
-Assignee: @williamstein
+Assignee: whuss
 
 Keywords: plot
 

@@ -1,16 +1,16 @@
-# Issue 4521: Trivial permutation group enumeration bug
+# Issue 4521: Trivial permutation and permutation groups
 
 archive/issues_004521.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @saliola @mwhansen @KPanComputes\n\n1. This gives an error:\n\nsage: G = PermutationGroup([])\nsage: G.list()\n\n2. Permutation group should take an argument for the degree, e.g.:\n\nsage: G = PermutationGroup([],degree=4)\n\n3. Permutation group should set the degree correctly:\n\nsage: G = PermutationGroup([[]])\nsage: \nsage: G.list()\n[()]\nsage: G.degree()\n1\nsage: G = PermutationGroup([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro))\nsage: G.degree()\n1\n\nThe first group should have degree 0. \n\n3. Degree 0 should really be supported or \nwe will have difficulties with automorphism \ngroups of boundary cases.  Currently this \ngives an error:\n\nsage: SymmetricGroup(0)\n\nCertainly these examples should go into the \ndocstrings.\nMost of these can be trivially fixed, but \nit would be good if someone could review \npermutation groups with a view to catching \nthese problems before they arise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4521\n\n",
+    "body": "Assignee: joyner\n\nCC:  @saliola @mwhansen @KPanComputes\n\nWhen constructing an empty permutation the degree should be zero (ie a permutation of the empty set). But\n\n```\nsage: PermutationGroupElement([]).parent().domain()\n{1}\n```\nIncidentally, it is also wrong for `PermutationGroup`\n\n```\nsage: G = PermutationGroup([])\nsage: G.degree()\n1\n```\n\nMaybe `PermutationGroupElement` and `PermutationGroup` should take an argument for the degree, e.g.:\n\n```\nsage: G = PermutationGroup([],degree=4)\n```\n\nNOTE: one (not compltely ideal) workaround is to use `SymmetricGroup(4).subgroup([])`\n\n---\n\nThe original report mentioned two other problems that now behave coherently (tested on 9.0.beta3)\n\n1. This gives an error:\n\n```\nsage: G = PermutationGroup([])\nsage: G.list()\n```\n\n4. Degree 0 should really be supported or \nwe will have difficulties with automorphism \ngroups of boundary cases.  Currently this \ngives an error:\n\n```\nsage: SymmetricGroup(0)\n```\nCertainly these examples should go into the  docstrings. Most of these can be trivially fixed, but it would be good if someone could review permutation groups with a view to catching these problems before they arise.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4521\n\n",
     "created_at": "2008-11-14T09:05:07Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "Trivial permutation group enumeration bug",
+    "title": "Trivial permutation and permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4521",
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
@@ -20,42 +20,50 @@ Assignee: joyner
 
 CC:  @saliola @mwhansen @KPanComputes
 
+When constructing an empty permutation the degree should be zero (ie a permutation of the empty set). But
+
+```
+sage: PermutationGroupElement([]).parent().domain()
+{1}
+```
+Incidentally, it is also wrong for `PermutationGroup`
+
+```
+sage: G = PermutationGroup([])
+sage: G.degree()
+1
+```
+
+Maybe `PermutationGroupElement` and `PermutationGroup` should take an argument for the degree, e.g.:
+
+```
+sage: G = PermutationGroup([],degree=4)
+```
+
+NOTE: one (not compltely ideal) workaround is to use `SymmetricGroup(4).subgroup([])`
+
+---
+
+The original report mentioned two other problems that now behave coherently (tested on 9.0.beta3)
+
 1. This gives an error:
 
+```
 sage: G = PermutationGroup([])
 sage: G.list()
+```
 
-2. Permutation group should take an argument for the degree, e.g.:
-
-sage: G = PermutationGroup([],degree=4)
-
-3. Permutation group should set the degree correctly:
-
-sage: G = PermutationGroup([[]])
-sage: 
-sage: G.list()
-[()]
-sage: G.degree()
-1
-sage: G = PermutationGroup([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro))
-sage: G.degree()
-1
-
-The first group should have degree 0. 
-
-3. Degree 0 should really be supported or 
+4. Degree 0 should really be supported or 
 we will have difficulties with automorphism 
 groups of boundary cases.  Currently this 
 gives an error:
 
+```
 sage: SymmetricGroup(0)
+```
+Certainly these examples should go into the  docstrings. Most of these can be trivially fixed, but it would be good if someone could review permutation groups with a view to catching these problems before they arise.
 
-Certainly these examples should go into the 
-docstrings.
-Most of these can be trivially fixed, but 
-it would be good if someone could review 
-permutation groups with a view to catching 
-these problems before they arise.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4521
 

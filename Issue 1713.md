@@ -1,16 +1,17 @@
-# Issue 1713: [with patch] fix SageElement._sage_
+# Issue 1713: [with patch, positive review] fix SageElement._sage_
 
 archive/issues_001713.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis didn't work, now it does:\n\n```\nsage: sr = mq.SR(allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\nsage: F == sage0(F)._sage_()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1713\n\n",
+    "closed_at": "2008-01-21T02:04:09Z",
     "created_at": "2008-01-07T14:01:39Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] fix SageElement._sage_",
+    "title": "[with patch, positive review] fix SageElement._sage_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1713",
     "user": "https://github.com/malb"

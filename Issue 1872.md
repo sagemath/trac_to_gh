@@ -1,16 +1,17 @@
-# Issue 1872: serious bug in pickling elliptic curves
+# Issue 1872: [with patch; with positive review] serious bug in pickling elliptic curves
 
 archive/issues_001872.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve('185c1')\nsage: E.gens()\n[(-5/4 : 3/8 : 1)]\nsage: loads(dumps(E))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/was/papers/bsdalg/newdata/heegner_index_rank1/data/<ipython console> in <module>()\n\n/Users/was/papers/bsdalg/newdata/heegner_index_rank1/data/sage_object.pyx in sage.structure.sage_object.loads()\n\n/Users/was/papers/bsdalg/newdata/heegner_index_rank1/data/sage_object.pyx in sage.structure.sage_object.loads()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.py in make_point(X, v)\n    648     # It looks like there's generic code to do this, but it's been commented out. \n    649     #\n    650     # Here we create a new (equivalent) parent manually. \n--> 651     del X._Scheme__ring_point_homset\n    652     return EllipticCurvePoint_field(X, v)\n\n<type 'str'>: (<type 'exceptions.AttributeError'>, AttributeError(\"'EllipticCurve_rational_field' object has no attribute '_EllipticCurve_generic__ainvs'\",))\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1872\n\n",
+    "closed_at": "2008-01-21T09:37:59Z",
     "created_at": "2008-01-20T22:22:44Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "serious bug in pickling elliptic curves",
+    "title": "[with patch; with positive review] serious bug in pickling elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1872",
     "user": "https://github.com/williamstein"

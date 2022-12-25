@@ -4,9 +4,11 @@ archive/issues_009862.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @koffie\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/9cab8cb98f0d6d51#9cab8cb98f0d6d51):\n\n```\nOn iras (ia64-Linux-suse), after continuing the build, one failure:\n\nsage -t -long \"devel/sage/sage/graphs/genus.pyx\"\n**********************************************************************\nFile \"/home/palmieri/iras/sage-4.5.2.alpha0/devel/sage/sage/graphs/\ngenus.pyx\", line 129:\n    sage: get_memory_usage(t)\nExpected:\n    0.0\nGot:\n    -0.28125\n```\n\nRelated: #9584, which once mentioned this problem, but ended up fixing another.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9863\n\n",
+    "closed_at": "2010-12-19T09:34:27Z",
     "created_at": "2010-09-06T21:48:26Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",

@@ -4,6 +4,7 @@ archive/issues_004548.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nReported by Anders in sage-devel:\n\n```\nThere's a problem with powers of negative numbers the latex method for\nsymbolic arithmetic.\nIn version 3.1.4 I get this:\n{{{\nsage: var('n')\nn\nsage: latex((-1)^n)\n{-1}^{n}\n\nIt should, of course, be {(-1)}^{n}.\n -- Anders\n}}}\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4548\n\n",
+    "closed_at": "2009-01-18T00:03:38Z",
     "created_at": "2008-11-19T15:35:07Z",
     "labels": [
         "component: misc",

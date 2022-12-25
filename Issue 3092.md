@@ -1,9 +1,10 @@
-# Issue 3092: [with patch; needs review] Debian Singular permissions fixes
+# Issue 3092: [with patch; positive review] Debian Singular permissions fixes
 
 archive/issues_003092.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch that fixes the permissions issues with libsingular.so (and the oddly executable stuff in /usr/lib/singular).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3092\n\n",
+    "closed_at": "2008-05-03T19:14:04Z",
     "created_at": "2008-05-03T08:21:36Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003092.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Debian Singular permissions fixes",
+    "title": "[with patch; positive review] Debian Singular permissions fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3092",
     "user": "https://github.com/timabbott"

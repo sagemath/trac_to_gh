@@ -1,16 +1,17 @@
-# Issue 4723: Infinite precision increase finding roots over QQbar
+# Issue 4723: [with patch, with positive review] Infinite precision increase finding roots over QQbar
 
 archive/issues_004723.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  cwitty\n\nKeywords: precision qqbar algebraic roots\n\n```\nsage: ZZ['x'](x^2 + 27*x + 181).roots(QQbar)\n```\n\nCauses an infinite loop of increasing precision around sage/rings/polynomial/complex_roots.py(323)complex_roots().\n\nIssue created by migration from https://trac.sagemath.org/ticket/4723\n\n",
+    "closed_at": "2009-01-18T15:56:11Z",
     "created_at": "2008-12-06T01:59:15Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Infinite precision increase finding roots over QQbar",
+    "title": "[with patch, with positive review] Infinite precision increase finding roots over QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4723",
     "user": "https://github.com/ncalexan"

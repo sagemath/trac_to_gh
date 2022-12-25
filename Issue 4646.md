@@ -1,16 +1,17 @@
-# Issue 4646: Create Sage 3.2.1 release notes
+# Issue 4646: [with patch, positive review] Create Sage 3.2.1 release notes
 
 archive/issues_004646.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nAs the summary says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4646\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nKeywords: release note\n\nAs the summary says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4646\n\n",
+    "closed_at": "2008-12-07T03:42:07Z",
     "created_at": "2008-11-28T23:08:43Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Create Sage 3.2.1 release notes",
+    "title": "[with patch, positive review] Create Sage 3.2.1 release notes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4646",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,6 +20,8 @@ archive/issues_004646.json:
 Assignee: mabshoff
 
 CC:  mvngu
+
+Keywords: release note
 
 As the summary says :)
 

@@ -4,6 +4,7 @@ archive/issues_007174.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: HP-UX compiler warnings\n\nThe title says it all. This is **very** bad practice.\n\nNote the package does build on HP-UX, which is good to see. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7174\n\n",
+    "closed_at": "2013-05-21T07:24:23Z",
     "created_at": "2009-10-10T08:18:15Z",
     "labels": [
         "component: build",

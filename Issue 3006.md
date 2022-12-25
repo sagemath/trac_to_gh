@@ -1,16 +1,17 @@
-# Issue 3006: missing elliptic integrals in special.py
+# Issue 3006: [with patch, positive review] missing elliptic integrals in special.py
 
 archive/issues_003006.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following problem was reported by Dustin Vaselaar to sage-support:\n\n\nHello,\nI am looking to use a complete elliptic integral of the first kind in\nsage, however I'm not sure if this has been implemented.  The link\nhttp://www.sagemath.org/doc/html/ref/module-sage.functions.special.html\nmentions a function \"elliptic_kc\", but it doesn't seem to be\nimplemented in sage version 3.0, judging from the result of this\ncommand:\n\n```\nsage: elliptic_kc?\nObject `elliptic_kc` not found.\n```\n\nAny insights on using a a complete elliptic integral of the first kind\nin sage?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3006\n\n",
+    "closed_at": "2008-04-24T04:00:13Z",
     "created_at": "2008-04-23T14:27:55Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "missing elliptic integrals in special.py",
+    "title": "[with patch, positive review] missing elliptic integrals in special.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3006",
     "user": "https://github.com/wdjoyner"

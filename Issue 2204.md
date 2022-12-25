@@ -1,16 +1,17 @@
-# Issue 2204: Integrate Karim Belabas's HNF bug fix for pari
+# Issue 2204: [with spkg, with positive review] Integrate Karim Belabas's HNF bug fix for pari, add 64 bit OSX support
 
 archive/issues_002204.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nReported by William via the pari bug tracker:\n\n```\n---------- Forwarded message ----------\nFrom: Karim Belabas <Karim.Belabas@math.u-bordeaux1.fr>\nDate: Feb 18, 2008 2:49 AM\nSubject: Re: Bug#741: Fwd: bug in PARI's mathnf function\nTo: William Stein <wstein@gmail.com>, 741-close@pari.math.u-bordeaux.fr\n\n\n* William Stein [2008-02-16 23:47]:\n> > Package: pari\n> > Version: 2.3.3\n[...]\n> > PARI sometimes puts negative numbers in the *output* of mathnf(a, 1)[0],\n> > which is a bug.\n\nIndeed.\n\n> >   * I didn't use mathnf(b) directly (the default option), since\n> > already for a 20x18 matrix it\n> > is too slow to be useful.\n\nAs documented.\n\n[ Actually, I am going to change this: I don't see the point in defaulting\nto a slow routine; let mathnf choose depending on the matrix size.\nIt should either call matdetint + mathnfmod, or mathnf(,1) ]\n\n> >   * I'm guessing maybe mathnf(b, 1) uses the modular hnf modulo the\n> >   determinant.\n\nActually, no; mathnfmod does that.\n\n> > If not, maybe you just need to add mutliples of rows until everything\n> > is correctly normalized.\n\nWe do that, with one optimization too many which sometimes cancelled the\nnormalization step ( when the kernel is non trivial and we are \"lucky\":\na coefficient which we want to set to 0 is already 0 ).\n\nIt is fixed in both stable and unstable branches. I am attaching the\n(trivial) patch.\n\nThanks for your report !\n\n    K.B.\n--\nKarim Belabas                  Tel: (+33) (0)5 40 00 26 17\nIMB, Universite Bordeaux 1     Fax: (+33) (0)5 40 00 69 50\n351, cours de la Liberation    http://www.math.u-bordeaux.fr/~belabas/\nF-33405 Talence (France)       http://pari.math.u-bordeaux.fr/  [PARI/GP]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2204\n\n",
+    "closed_at": "2008-02-18T19:05:11Z",
     "created_at": "2008-02-18T18:09:16Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Integrate Karim Belabas's HNF bug fix for pari",
+    "title": "[with spkg, with positive review] Integrate Karim Belabas's HNF bug fix for pari, add 64 bit OSX support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2204",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

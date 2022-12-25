@@ -3,7 +3,8 @@
 archive/issues_007599.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the functions vertex_cut and edge_cut in Graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7599\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the functions vertex_cut and edge_cut in Graph.\n\n\nYou could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7599\n\n",
+    "closed_at": "2009-12-19T20:52:12Z",
     "created_at": "2009-12-04T07:44:20Z",
     "labels": [
         "component: graph theory"
@@ -18,6 +19,9 @@ archive/issues_007599.json:
 Assignee: @rlmill
 
 As the title says, this patch implements the functions vertex_cut and edge_cut in Graph.
+
+
+You could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7599
 

@@ -1,15 +1,16 @@
-# Issue 5535: is_primitive is computes integer prime factorization on every call
+# Issue 5535: [with patch, with positive review] is_primitive is computes integer prime factorization on every call
 
 archive/issues_005535.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @malb @JohnCremona\n\nThe current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is\n\n```\n        if not self.is_irreducible():\n            return False\n        p = self.parent().characteristic()\n        n = p ** self.degree() - 1\n        y = self.parent().quo(self).gen()\n        for d in n.prime_divisors():\n            if ( y ** (n//d) ) == 1:\n                return False\n        return True\n```\nNote that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.\n\nThe proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5535\n\n",
+    "closed_at": "2009-03-23T20:18:03Z",
     "created_at": "2009-03-16T21:04:31Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "is_primitive is computes integer prime factorization on every call",
+    "title": "[with patch, with positive review] is_primitive is computes integer prime factorization on every call",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5535",
     "user": "https://github.com/rhinton"

@@ -3,7 +3,8 @@
 archive/issues_004491.json:
 ```json
 {
-    "body": "Assignee: ghtdak\n\nLooks like initializing a TimeSeries from a column of a numpy array doesn't work properly\n\n```\ntestp.shape\n```\n(373389, 4)\n\n```\nt1=finance.TimeSeries(testp[:,3]); t1             # wrong\n```\n\n[962.5000, 1225742099742.0000, 4.0000, 4.0000, 962.5000 ... 999.2500,\n1225850900622.0000, 4.0000, 5.0000, 999.2500]\n\n```\nt1=finance.TimeSeries(testp[:,3].tolist()); t1     # correct\n```\n[962.5000, 962.5000, 962.5000, 962.5000, 962.5000 ... 954.5000,\n954.5000, 954.5000, 954.5000, 954.5000]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4491\n\n",
+    "body": "Assignee: @jasongrout\n\nLooks like initializing a TimeSeries from a column of a numpy array doesn't work properly\n\n```\ntestp.shape\n(373389, 4)\nt1=finance.TimeSeries(testp[:,3]); t1             # wrong\n[962.5000, 1225742099742.0000, 4.0000, 4.0000, 962.5000 ... 999.2500,\n1225850900622.0000, 4.0000, 5.0000, 999.2500]\nt1=finance.TimeSeries(testp[:,3].tolist()); t1     # correct\n[962.5000, 962.5000, 962.5000, 962.5000, 962.5000 ... 954.5000,\n954.5000, 954.5000, 954.5000, 954.5000]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4491\n\n",
+    "closed_at": "2008-12-09T09:09:54Z",
     "created_at": "2008-11-11T03:31:26Z",
     "labels": [
         "component: finance",
@@ -17,27 +18,20 @@ archive/issues_004491.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ghtdak"
 }
 ```
-Assignee: ghtdak
+Assignee: @jasongrout
 
 Looks like initializing a TimeSeries from a column of a numpy array doesn't work properly
 
 ```
 testp.shape
-```
 (373389, 4)
-
-```
 t1=finance.TimeSeries(testp[:,3]); t1             # wrong
-```
-
 [962.5000, 1225742099742.0000, 4.0000, 4.0000, 962.5000 ... 999.2500,
 1225850900622.0000, 4.0000, 5.0000, 999.2500]
-
-```
 t1=finance.TimeSeries(testp[:,3].tolist()); t1     # correct
-```
 [962.5000, 962.5000, 962.5000, 962.5000, 962.5000 ... 954.5000,
 954.5000, 954.5000, 954.5000, 954.5000]
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/4491
 

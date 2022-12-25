@@ -3,7 +3,8 @@
 archive/issues_000811.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nget Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE (see also #793)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/811\n\n",
+    "body": "Assignee: mabshoff\n\nget Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE (see also #793)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/811\n\n",
+    "closed_at": "2007-10-21T21:26:16Z",
     "created_at": "2007-10-03T16:49:22Z",
     "labels": [
         "component: algebraic geometry"
@@ -15,7 +16,7 @@ archive/issues_000811.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 get Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE (see also #793)
 

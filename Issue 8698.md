@@ -3,7 +3,8 @@
 archive/issues_008698.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bblochl@arcor.de simon.king@nuigalway.ie @nexttime minz\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8698\n\n",
+    "body": "Assignee: mvngu\n\nCC:  bblochl@arcor.de simon.king@nuigalway.ie @nexttime minz\n\nKeywords: german\n\nAs the subject says. Because the patch on this ticket is short, I think this ticket takes much less work to review than #8660. So it's very likely that the current ticket would be merged first, then #8660. Someone who knows German needs to look over the attached patch.\n\nSee this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c14c761ee3dc5203) thread for background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8698\n\n",
+    "closed_at": "2014-07-21T17:38:07Z",
     "created_at": "2010-04-17T02:49:06Z",
     "labels": [
         "component: documentation"
@@ -19,7 +20,11 @@ Assignee: mvngu
 
 CC:  bblochl@arcor.de simon.king@nuigalway.ie @nexttime minz
 
-As the subject says.
+Keywords: german
+
+As the subject says. Because the patch on this ticket is short, I think this ticket takes much less work to review than #8660. So it's very likely that the current ticket would be merged first, then #8660. Someone who knows German needs to look over the attached patch.
+
+See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c14c761ee3dc5203) thread for background information.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8698
 

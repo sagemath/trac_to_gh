@@ -1,22 +1,24 @@
-# Issue 1689: document SAGE_FORTRAN_LIB
+# Issue 1689: [with patch; needs review] document SAGE_FORTRAN_LIB
 
 archive/issues_001689.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIt is certainly a special option, but we need to document this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1689\n\n",
+    "body": "Assignee: mabshoff\n\nIt is certainly a special option, but we need to document this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1689\n\n",
+    "closed_at": "2008-04-11T20:44:56Z",
     "created_at": "2008-01-05T00:42:56Z",
     "labels": [
         "component: documentation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "document SAGE_FORTRAN_LIB",
+    "title": "[with patch; needs review] document SAGE_FORTRAN_LIB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1689",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 It is certainly a special option, but we need to document this.
 

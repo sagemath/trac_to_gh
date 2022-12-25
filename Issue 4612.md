@@ -1,22 +1,23 @@
-# Issue 4612: [with patch, needs review] is_perfect_power for rationals
+# Issue 4612: [with patch, with positive review] is_perfect_power for rationals
 
 archive/issues_004612.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4612\n\n",
+    "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4612\n\n",
+    "closed_at": "2009-01-18T14:45:15Z",
     "created_at": "2008-11-25T07:21:25Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] is_perfect_power for rationals",
+    "title": "[with patch, with positive review] is_perfect_power for rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4612",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @craigcitro
 
 
 

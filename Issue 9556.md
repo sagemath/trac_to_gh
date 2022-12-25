@@ -3,7 +3,8 @@
 archive/issues_009556.json:
 ```json
 {
-    "body": "Assignee: segfaulting doctests\n\nCC:  @burcin @kcrisman @vbraun @eviatarbach\n\nKeywords: symbolic expression dynamic attribute\n\nLet `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions.\n\n**__Example__**\n\n```\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n...     def __init__(self):\n...         BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n...     def some_function_name(self, *args):\n...         return len(args)\n...\nsage: ex_func = ExampleBuiltin()\nsage: ex_func\nex_func\n```\n\nWe obtain a symbolic expression by calling `ex_func`:\n\n```\nsage: e = ex_func(x,x+1, x+2)\nsage: type(e)\n<type 'sage.symbolic.expression.Expression'>\n```\n\nWe add a callable and a non-callable attribute to `ex_func`:\n\n```\nsage: def some_function(slf, *L): print slf,'called with',L\n...\nsage: ex_func.foo_bar = some_function\nsage: ex_func.bar_foo = 4\n```\n\nNow, both the new method and the callable attribute `foo_bar` of\n`ex_func` are available from `e`, but not the non-callable:\n\n```\nsage: e.some_function_name()\n3\nsage: e.foo_bar()\nex_func called with (x, x + 1, x + 2)\nsage: e.bar_foo\nTraceback (most recent call last):\n...\nAttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'\n```\n\nTab completion  and introspection work:\n\n```\nsage: 'foo_bar' in dir(e)     # indirect doctest\nTrue\nsage: 'some_function_name' in dir(e)\nTrue\nsage: 'bar_foo' in dir(e)\nFalse\nsage: import sagenb.misc.support as s\nsage: s.completions('e.some', globals(), system='python')\n['e.some_function_name']\n```\n\n**__Problems__**\n\nWhen I ran `sage -testall`, several doctests segfaulted:\n\n```\n        sage -t  -verbose \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t  -verbose \"devel/sage/sage/games/hexad.py\"\n        sage -t  -verbose \"devel/sage/sage/matrix/tests.py\"\n        sage -t  -verbose \"devel/sage/sage/misc/sage_eval.py\"\n        sage -t  -verbose \"devel/sage/sage/plot/animate.py\"\n        sage -t  -verbose \"devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\"\n        sage -t  -verbose \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n```\n\nI tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9556\n\n",
+    "body": "CC:  @burcin @kcrisman @vbraun @eviatarbach\n\nKeywords: symbolic expression dynamic attribute sd48\n\nLet `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions (#2516).\n\n**__Example__**\n\n```\n       sage: from sage.symbolic.function import BuiltinFunction\n        sage: class TFunc(BuiltinFunction):\n        ....:     def __init__(self):\n        ....:         BuiltinFunction.__init__(self, 'tfunc', nargs=1)\n        ....:\n        ....:     class EvaluationMethods:\n        ....:         def argp1(self, x):\n        ....:             '''\n        ....:             Some documentation about a bogus function.\n        ....:             '''\n        ....:             return x+1\n        ....:\n        ....:         @property\n        ....:         def foo(self):\n        ....:             return 5\n        ....:\n        sage: tfunc = TFunc()\n        sage: e = tfunc(x); e\n        tfunc(x)\n        sage: type(e)\n        <class '__main__.Expression_with_dynamic_methods'>\n        sage: e.argp1()\n        x + 1\n        sage: e.foo\n        5\n        sage: x.argp1()\n        Traceback (most recent call last):\n        ...\n        AttributeError: 'sage.symbolic.expression.Expression' object has no\n        attribute 'argp1'\n        sage: t = (e + 1).op[0]; t\n        tfunc(x)\n        sage: t\n        tfunc(x)\n        sage: type(t)\n        <class '__main__.Expression_with_dynamic_methods'>\n        sage: t.argp1()\n        x + 1\n        sage: import sagenb.misc.support as s\n        sage: s.completions('t.argp', globals(), system='python')\n        ['t.argp1']\n        sage: t.argp1.__doc__.strip()\n        'Some documentation about a bogus function.'\n```\n\nApply: [This is the Trac macro *attachment:trac_9556-dynamic_class_everywhere.patch* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#attachment:trac_9556-dynamic_class_everywhere.patch-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9556\n\n",
+    "closed_at": "2013-06-20T21:33:53Z",
     "created_at": "2010-07-20T12:21:13Z",
     "labels": [
         "component: symbolics"
@@ -15,89 +16,61 @@ archive/issues_009556.json:
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: segfaulting doctests
-
 CC:  @burcin @kcrisman @vbraun @eviatarbach
 
-Keywords: symbolic expression dynamic attribute
+Keywords: symbolic expression dynamic attribute sd48
 
-Let `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions.
+Let `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions (#2516).
 
 **__Example__**
 
 ```
-sage: from sage.symbolic.function import BuiltinFunction
-sage: class ExampleBuiltin(BuiltinFunction):
-...     def __init__(self):
-...         BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args
-...     def some_function_name(self, *args):
-...         return len(args)
-...
-sage: ex_func = ExampleBuiltin()
-sage: ex_func
-ex_func
+       sage: from sage.symbolic.function import BuiltinFunction
+        sage: class TFunc(BuiltinFunction):
+        ....:     def __init__(self):
+        ....:         BuiltinFunction.__init__(self, 'tfunc', nargs=1)
+        ....:
+        ....:     class EvaluationMethods:
+        ....:         def argp1(self, x):
+        ....:             '''
+        ....:             Some documentation about a bogus function.
+        ....:             '''
+        ....:             return x+1
+        ....:
+        ....:         @property
+        ....:         def foo(self):
+        ....:             return 5
+        ....:
+        sage: tfunc = TFunc()
+        sage: e = tfunc(x); e
+        tfunc(x)
+        sage: type(e)
+        <class '__main__.Expression_with_dynamic_methods'>
+        sage: e.argp1()
+        x + 1
+        sage: e.foo
+        5
+        sage: x.argp1()
+        Traceback (most recent call last):
+        ...
+        AttributeError: 'sage.symbolic.expression.Expression' object has no
+        attribute 'argp1'
+        sage: t = (e + 1).op[0]; t
+        tfunc(x)
+        sage: t
+        tfunc(x)
+        sage: type(t)
+        <class '__main__.Expression_with_dynamic_methods'>
+        sage: t.argp1()
+        x + 1
+        sage: import sagenb.misc.support as s
+        sage: s.completions('t.argp', globals(), system='python')
+        ['t.argp1']
+        sage: t.argp1.__doc__.strip()
+        'Some documentation about a bogus function.'
 ```
 
-We obtain a symbolic expression by calling `ex_func`:
-
-```
-sage: e = ex_func(x,x+1, x+2)
-sage: type(e)
-<type 'sage.symbolic.expression.Expression'>
-```
-
-We add a callable and a non-callable attribute to `ex_func`:
-
-```
-sage: def some_function(slf, *L): print slf,'called with',L
-...
-sage: ex_func.foo_bar = some_function
-sage: ex_func.bar_foo = 4
-```
-
-Now, both the new method and the callable attribute `foo_bar` of
-`ex_func` are available from `e`, but not the non-callable:
-
-```
-sage: e.some_function_name()
-3
-sage: e.foo_bar()
-ex_func called with (x, x + 1, x + 2)
-sage: e.bar_foo
-Traceback (most recent call last):
-...
-AttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'
-```
-
-Tab completion  and introspection work:
-
-```
-sage: 'foo_bar' in dir(e)     # indirect doctest
-True
-sage: 'some_function_name' in dir(e)
-True
-sage: 'bar_foo' in dir(e)
-False
-sage: import sagenb.misc.support as s
-sage: s.completions('e.some', globals(), system='python')
-['e.some_function_name']
-```
-
-**__Problems__**
-
-When I ran `sage -testall`, several doctests segfaulted:
-
-```
-        sage -t  -verbose "devel/sage/sage/functions/hyperbolic.py"
-        sage -t  -verbose "devel/sage/sage/games/hexad.py"
-        sage -t  -verbose "devel/sage/sage/matrix/tests.py"
-        sage -t  -verbose "devel/sage/sage/misc/sage_eval.py"
-        sage -t  -verbose "devel/sage/sage/plot/animate.py"
-        sage -t  -verbose "devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py"
-        sage -t  -verbose "devel/sage/sage/rings/polynomial/polynomial_element.pyx"
-```
-
-I tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?
+Apply: [This is the Trac macro *attachment:trac_9556-dynamic_class_everywhere.patch* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#attachment:trac_9556-dynamic_class_everywhere.patch-macro)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9556
 

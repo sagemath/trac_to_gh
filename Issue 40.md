@@ -3,10 +3,11 @@
 archive/issues_000040.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nTo: \"Kyle Schalm\" <kschalm@math.utexas.edu>, sage-devel@lists.sourceforge.net\nSubject: Re: [SAGEdev] long string parsing bug in 1.3.2.2\n\nThe SAGE pre-parser currently works on single lines only -- it doesn't\ntake into account multi-line blocks.  This is more a\nnot-implemented-error than a bug.  Many thanks for sending this email\nthough, since it's an excellent test case:\nmm.sage:\n---------------------\n\"\"\"\nload with\n \nsage: load \"/Users/kyle/Documents/math/scripts/mm.sage\"\n\"\"\"\n---------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/40\n\n",
+    "body": "Assignee: somebody\n\n```\nTo: \"Kyle Schalm\" <kschalm@math.utexas.edu>, sage-devel@lists.sourceforge.net\nSubject: Re: [SAGEdev] long string parsing bug in 1.3.2.2\n\nThe SAGE pre-parser currently works on single lines only -- it doesn't\ntake into account multi-line blocks.  This is more a\nnot-implemented-error than a bug.  Many thanks for sending this email\nthough, since it's an excellent test case:\nmm.sage:\n---------------------\n\"\"\"\nload with\n \nsage: load \"/Users/kyle/Documents/math/scripts/mm.sage\"\n\"\"\"\n---------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/40\n\n",
+    "closed_at": "2007-01-12T21:57:59Z",
     "created_at": "2006-09-12T23:31:32Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: user interface",
         "bug"
     ],
     "title": "preparser issues",
@@ -34,6 +35,7 @@ sage: load "/Users/kyle/Documents/math/scripts/mm.sage"
 """
 ---------------------
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/40
 

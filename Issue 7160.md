@@ -1,16 +1,17 @@
-# Issue 7160: comparison with quadratic number field elements needs work
+# Issue 7160: comparison with quadratic number field elements
 
 archive/issues_007160.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @videlec\n\n```\nsage: I^2\n-1\nsage: bool(I^2 < 0)\nTrue\nsage: bool(I^2 > 0)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7160\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @videlec\n\nKeywords: sd35\n\n```\nsage: I^2\n-1\nsage: bool(I^2 < 0)\nTrue\nsage: bool(I^2 > 0)\nTrue\n```\n\nApply:\n\n- [attachment:trac_7160-doctest.take2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7160\n\n",
+    "closed_at": "2013-06-06T12:31:18Z",
     "created_at": "2009-10-08T18:38:28Z",
     "labels": [
         "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "comparison with quadratic number field elements needs work",
+    "title": "comparison with quadratic number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7160",
     "user": "https://github.com/mwhansen"
@@ -20,6 +21,8 @@ Assignee: @loefflerd
 
 CC:  @videlec
 
+Keywords: sd35
+
 ```
 sage: I^2
 -1
@@ -28,6 +31,10 @@ True
 sage: bool(I^2 > 0)
 True
 ```
+
+Apply:
+
+- [attachment:trac_7160-doctest.take2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7160
 

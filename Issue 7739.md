@@ -4,6 +4,7 @@ archive/issues_007739.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nNative (much faster) agm for RDF and CDF, optimized and document agm for RR. \n\nInspired by, but somewhat orthogonal to, #7719.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7739\n\n",
+    "closed_at": "2010-01-13T08:43:00Z",
     "created_at": "2009-12-18T23:57:01Z",
     "labels": [
         "component: basic arithmetic"

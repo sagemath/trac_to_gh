@@ -1,22 +1,22 @@
-# Issue 4030: Vectors of callable things should be callable
+# Issue 4030: [with patch, positive review] Vectors of callable things should be callable
 
 archive/issues_004030.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe motivation here is being able to evaluate the gradient of a function at a point.\n\n```\nThe desired behavior is\n    sage: x, y = var('x, y')\n    sage: f = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(x=3,y=2)\n    (6,4)\n\nCurrently, however\n    sage: g(x=3,y=2)\n    Traceback (most recent call last):\n    ...\n    TypeError:\n    'sage.modules.free_module_element.FreeModuleElement_generic_dense'\n    object is not callable\n\nCalls should also work for a vector of callable symbolic expressions.\nNote that the gradient part will only work once #2547 is applied.\n    sage: f(x,y) = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(3,2)\n    (6,4)\n    sage: g(y=2,x=3)\n    (6,4)\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4030\n\n",
+    "body": "Assignee: @jicama\n\nThe motivation here is being able to evaluate the gradient of a function at a point.\n\n```\nThe desired behavior is\n    sage: x, y = var('x, y')\n    sage: f = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(x=3,y=2)\n    (6,4)\n\nCurrently, however\n    sage: g(x=3,y=2)\n    Traceback (most recent call last):\n    ...\n    TypeError:\n    'sage.modules.free_module_element.FreeModuleElement_generic_dense'\n    object is not callable\n\nCalls should also work for a vector of callable symbolic expressions.\nNote that the gradient part will only work once #2547 is applied.\n    sage: f(x,y) = x^2 + y^2\n    sage: g = f.gradient()\n    sage: g(3,2)\n    (6,4)\n    sage: g(y=2,x=3)\n    (6,4)\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4030\n\n",
+    "closed_at": "2008-09-02T10:14:56Z",
     "created_at": "2008-09-01T05:13:17Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Vectors of callable things should be callable",
+    "title": "[with patch, positive review] Vectors of callable things should be callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4030",
     "user": "https://github.com/jicama"
 }
 ```
-Assignee: tbd
+Assignee: @jicama
 
 The motivation here is being able to evaluate the gradient of a function at a point.
 

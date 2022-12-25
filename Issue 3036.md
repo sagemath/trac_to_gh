@@ -1,16 +1,17 @@
-# Issue 3036: [with patch; needs review] SAGE_TESTDIR broken
+# Issue 3036: [with patch; positive review] SAGE_TESTDIR broken
 
 archive/issues_003036.json:
 ```json
 {
     "body": "Assignee: failure\n\nWe got a test backwards in sage-env for setting SAGE_TESTDIR.  Attached is a patch to fix it and a related error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3036\n\n",
+    "closed_at": "2008-04-27T00:45:39Z",
     "created_at": "2008-04-27T00:33:30Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] SAGE_TESTDIR broken",
+    "title": "[with patch; positive review] SAGE_TESTDIR broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3036",
     "user": "https://github.com/timabbott"

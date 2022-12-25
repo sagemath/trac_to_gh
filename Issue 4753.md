@@ -1,16 +1,18 @@
-# Issue 4753: make sparse * sparse = dense mod p like 50 frickin' times faster.
+# Issue 4753: [with patch, positive review] make sparse * sparse = dense mod p like 50 frickin' times faster.
 
 archive/issues_004753.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\ntitle says it all\n\nIssue created by migration from https://trac.sagemath.org/ticket/4753\n\n",
+    "closed_at": "2009-01-18T13:54:41Z",
     "created_at": "2008-12-11T02:36:08Z",
     "labels": [
         "component: linear algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "make sparse * sparse = dense mod p like 50 frickin' times faster.",
+    "title": "[with patch, positive review] make sparse * sparse = dense mod p like 50 frickin' times faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4753",
     "user": "https://github.com/williamstein"

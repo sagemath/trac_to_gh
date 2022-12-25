@@ -1,22 +1,23 @@
-# Issue 431: dsage server hangs
+# Issue 431: dsage jobs get lost by server
 
 archive/issues_000431.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nApparently, a large number of jobs in a small time can cause the dsage server to hang, while there are waiting jobs and workers. \n\nIssue created by migration from https://trac.sagemath.org/ticket/431\n\n",
+    "body": "Assignee: @yqiang\n\nApparently, a large number of jobs in a small time can cause the dsage server to hang, while there are waiting jobs and workers. \n\nIssue created by migration from https://trac.sagemath.org/ticket/431\n\n",
+    "closed_at": "2007-11-01T22:21:00Z",
     "created_at": "2007-08-16T03:12:35Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "dsage server hangs",
+    "title": "dsage jobs get lost by server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/431",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @rlmill
+Assignee: @yqiang
 
 Apparently, a large number of jobs in a small time can cause the dsage server to hang, while there are waiting jobs and workers. 
 

@@ -1,16 +1,17 @@
-# Issue 5079: overly greedy RealNumber handling in preparser
+# Issue 5079: [with patch, positive review] overly greedy RealNumber handling in preparser
 
 archive/issues_005079.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is too greedy.\n\n```\n   1.exp() -> RealNumber(1.e)xp()\n   1.rational_reconstruction() -> 1.ational_reconstruction()\n   1.e+10 -> RealNumber(1.e)+10\n   1._xgcd() -> RealNumber(1.)_xgcd()\n```\n\nOne patch should do it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5079\n\n",
+    "closed_at": "2009-01-25T01:45:17Z",
     "created_at": "2009-01-23T22:29:27Z",
     "labels": [
-        "component: interfaces",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "overly greedy RealNumber handling in preparser",
+    "title": "[with patch, positive review] overly greedy RealNumber handling in preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5079",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

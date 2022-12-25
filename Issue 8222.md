@@ -1,15 +1,16 @@
-# Issue 8222: sagenb -- misc improvements to the notebook graph editor
+# Issue 8222: improvements to the notebook graph editor
 
 archive/issues_008222.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @williamstein @fchapoton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8222\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @williamstein @fchapoton\n\nKeywords: graph editor\n\nMade the following improvements to the notebook graph editor:\n\n- Increased size of graph editing window.\n- Stopped crashes occurring when the graph editor was called on a graph with fewer than 4 vertices or separate components.\n- Added the option to display vertex numbering. \n- Added slider that allows the user to adjust vertex size. \n- Added slider allowing the user to rotate the graph around the center of the editing window. \n- Added buttons allowing the user to center and maximize the graph in the editing window. \n- Added a circular layout button. \n- Added a spring-electrical force based layout algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8222\n\n",
+    "closed_at": "2020-10-26T11:11:08Z",
     "created_at": "2010-02-09T20:04:59Z",
     "labels": [
-        "component: graph theory"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sagenb -- misc improvements to the notebook graph editor",
+    "title": "improvements to the notebook graph editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8222",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,18 @@ Assignee: @rlmill
 
 CC:  @williamstein @fchapoton
 
+Keywords: graph editor
 
+Made the following improvements to the notebook graph editor:
+
+- Increased size of graph editing window.
+- Stopped crashes occurring when the graph editor was called on a graph with fewer than 4 vertices or separate components.
+- Added the option to display vertex numbering. 
+- Added slider that allows the user to adjust vertex size. 
+- Added slider allowing the user to rotate the graph around the center of the editing window. 
+- Added buttons allowing the user to center and maximize the graph in the editing window. 
+- Added a circular layout button. 
+- Added a spring-electrical force based layout algorithm.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8222
 

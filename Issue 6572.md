@@ -1,16 +1,17 @@
-# Issue 6572: tutorial: put double colon on its own line
+# Issue 6572: [with patch, positive review] tutorial: put double colon on its own line
 
 archive/issues_006572.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @jhpalmieri @nathanncohen\n\nKeywords: tutorial\n\nSee this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d) thread for some background information. John Palmieri suggests that all doctests in the Sage tutorial be preceded with a double colon on its own line. That way, the doctest script would pick up all doctests in the tutorial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6572\n\n",
+    "body": "Assignee: tba\n\nCC:  @jhpalmieri @nathanncohen\n\nKeywords: tutorial\n\nSee this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d) thread for some background information. John Palmieri suggests that all doctests in the Sage tutorial be preceded with a double colon on its own line. That way, the doctest script would pick up all doctests in the tutorial.\n\nDepends on #6642 and #7149.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6572\n\n",
+    "closed_at": "2009-10-15T09:17:17Z",
     "created_at": "2009-07-20T20:11:48Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "tutorial: put double colon on its own line",
+    "title": "[with patch, positive review] tutorial: put double colon on its own line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6572",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -23,6 +24,8 @@ CC:  @jhpalmieri @nathanncohen
 Keywords: tutorial
 
 See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d) thread for some background information. John Palmieri suggests that all doctests in the Sage tutorial be preceded with a double colon on its own line. That way, the doctest script would pick up all doctests in the tutorial.
+
+Depends on #6642 and #7149.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6572
 

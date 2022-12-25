@@ -1,16 +1,17 @@
-# Issue 2869: Cell sizing is broken
+# Issue 2869: [with patch; positive review] Cell sizing is broken
 
 archive/issues_002869.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCells with funny input (i.e., long lines or long words) don't get sized nicely.  Worse, cells containing the character '<' are totally broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2869\n\n",
+    "closed_at": "2008-04-10T16:46:02Z",
     "created_at": "2008-04-09T23:50:44Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Cell sizing is broken",
+    "title": "[with patch; positive review] Cell sizing is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2869",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

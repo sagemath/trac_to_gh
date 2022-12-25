@@ -3,7 +3,8 @@
 archive/issues_009900.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @qed777\n\nKeywords: pynac\n\nThere is a new pynac version available with patches for #9394, #9834, #9878, #9879, #9881, #9900.\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.1.spkg\n\nPatches from the tickets mentioned above need to be merged to test this. I'll post detailed instructions after I upload the patches.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9901\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @qed777\n\nKeywords: pynac\n\nThere is a new pynac version available with patches for #9394, #9834, #9878, #9879, #9881, #9900.\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.1.spkg\n\nPatches from the tickets mentioned above need to be merged to test this. \n\nThis package depends on the patches available at #9394, #9878, #9879, #9881, #9900. In turn, the first one of these (#9394) depends on #8568 because of changes in `sage/symbolic/random_tests.py`. The following patches should be applied before running tests:\n\n* attachment:trac_8568-diff_conversion.take2.patch:ticket:8568\n* attachment:trac_8568-erf-deriv.patch:ticket:8568\n* attachment:trac_8568-fix_doctests.patch:ticket:8568\n* attachment:trac_9394-leading_minus.patch:ticket:9394\n* attachment:trac_9878-zeta_infinity.patch:ticket:9878\n* attachment:trac_9879-hold.patch:ticket:9879\n* attachment:trac_9881-csgn.patch:ticket:9881\n* attachment:trac_9900_conjugate_doctests.patch:ticket:9900\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9901\n\n",
+    "closed_at": "2010-10-06T03:18:56Z",
     "created_at": "2010-09-12T11:00:07Z",
     "labels": [
         "component: symbolics",
@@ -26,7 +27,19 @@ There is a new pynac version available with patches for #9394, #9834, #9878, #98
 
 http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.1.spkg
 
-Patches from the tickets mentioned above need to be merged to test this. I'll post detailed instructions after I upload the patches.
+Patches from the tickets mentioned above need to be merged to test this. 
+
+This package depends on the patches available at #9394, #9878, #9879, #9881, #9900. In turn, the first one of these (#9394) depends on #8568 because of changes in `sage/symbolic/random_tests.py`. The following patches should be applied before running tests:
+
+* attachment:trac_8568-diff_conversion.take2.patch:ticket:8568
+* attachment:trac_8568-erf-deriv.patch:ticket:8568
+* attachment:trac_8568-fix_doctests.patch:ticket:8568
+* attachment:trac_9394-leading_minus.patch:ticket:9394
+* attachment:trac_9878-zeta_infinity.patch:ticket:9878
+* attachment:trac_9879-hold.patch:ticket:9879
+* attachment:trac_9881-csgn.patch:ticket:9881
+* attachment:trac_9900_conjugate_doctests.patch:ticket:9900
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9901
 

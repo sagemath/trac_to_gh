@@ -1,16 +1,17 @@
-# Issue 9167: cygwin: importing sage.libs.ecl yields a "no such process" error
+# Issue 9167: Resolve ecl.dll conflict on Cygwin
 
 archive/issues_009167.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen @dimpase jpflori @jdemeyer\n\nThough the C-library interface to ecl builds on cygwin, it does not work at all.  All tests fail:\n\n```\nsage: import sage.libs.ecl\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\nImportError: No such process\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9167\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen @dimpase jpflori @jdemeyer\n\nKeywords: cygwin spkg ecl\n\nThough the C-library interface to ECL builds on Cygwin, it does not work at all.  All tests fail:\n\n```\nsage: import sage.libs.ecl\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\nImportError: No such process\nsage: \n```\n\nThe reason of this is a name clash: there are two different libraries called `ecl.dll`.\nOne in `SAGE_LOCAL/lib/` and one in `SAGE_LOCAL/lib/python/site-packages/sage/libs/`.\nIt is the second one whose importing fails because it should be linked to the first one, but `cygcheck` shows that this dependency is resolved to itself!\nThis is of course dysfunctional, whence the import failure.\n\nThe easiest solution would be to rename `sage/libs/ecl.pyx` to something else, thus avoiding a name clash.\nThe solution proposed here is different and more indirect:\nPatch ECL build system so that it follows the name convention proposed by Cygwin.\nThe shared library itself is now in `SAGE_LOCAL/bin/cygecl.dll`.\nIn addition, an import file is created in `SAGE_LOCAL/lib/libecl.dll.a`.\n\nAn updated spkg, based on the one in #13324, is available at\n[http://boxen.math.washington.edu/home/jpflori/ecl-12.12.1.p1.spkg](http://boxen.math.washington.edu/home/jpflori/ecl-12.12.1.p1.spkg)\n\n**Reported upstream**: \u200bhttps://gitlab.com/embeddable-common-lisp/ecl/issues/235\n\nIssue created by migration from https://trac.sagemath.org/ticket/9167\n\n",
+    "closed_at": "2013-01-26T09:52:37Z",
     "created_at": "2010-06-07T04:25:41Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
-    "title": "cygwin: importing sage.libs.ecl yields a \"no such process\" error",
+    "title": "Resolve ecl.dll conflict on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9167",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,9 @@ Assignee: tbd
 
 CC:  @mwhansen @dimpase jpflori @jdemeyer
 
-Though the C-library interface to ecl builds on cygwin, it does not work at all.  All tests fail:
+Keywords: cygwin spkg ecl
+
+Though the C-library interface to ECL builds on Cygwin, it does not work at all.  All tests fail:
 
 ```
 sage: import sage.libs.ecl
@@ -32,6 +35,22 @@ ImportError                               Traceback (most recent call last)
 ImportError: No such process
 sage: 
 ```
+
+The reason of this is a name clash: there are two different libraries called `ecl.dll`.
+One in `SAGE_LOCAL/lib/` and one in `SAGE_LOCAL/lib/python/site-packages/sage/libs/`.
+It is the second one whose importing fails because it should be linked to the first one, but `cygcheck` shows that this dependency is resolved to itself!
+This is of course dysfunctional, whence the import failure.
+
+The easiest solution would be to rename `sage/libs/ecl.pyx` to something else, thus avoiding a name clash.
+The solution proposed here is different and more indirect:
+Patch ECL build system so that it follows the name convention proposed by Cygwin.
+The shared library itself is now in `SAGE_LOCAL/bin/cygecl.dll`.
+In addition, an import file is created in `SAGE_LOCAL/lib/libecl.dll.a`.
+
+An updated spkg, based on the one in #13324, is available at
+[http://boxen.math.washington.edu/home/jpflori/ecl-12.12.1.p1.spkg](http://boxen.math.washington.edu/home/jpflori/ecl-12.12.1.p1.spkg)
+
+**Reported upstream**: ​https://gitlab.com/embeddable-common-lisp/ecl/issues/235
 
 Issue created by migration from https://trac.sagemath.org/ticket/9167
 

@@ -4,9 +4,10 @@ archive/issues_000190.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nBug reported by Andrey Novoseltsev\n\nThis is disturbing.\n\n```\na=matrix(2,2,[1,2,3,4]); a\n///\n[1 2]\n[3 4]\n```\n\n```\na.row(1.5)\n///\n(3, 4)\n```\n\n```\na[1.5]\n///\n(3, 4)\n```\n\n```\na[1]\n///\n(3, 4)\n```\n\n```\na[1.4, 0.8]\n///\n3\n```\n\n```\na[1,0]\n///\n3\n```\n\nThe unfortunate thing is that SageX converts things to Py_ssize_t without\nany type checking.  Maybe this is way faster ...  Anyway, it should be possible\nto instead call whatever C library function __getitem__ uses, which would then\nhave the right behavior. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/190\n\n",
+    "closed_at": "2007-08-18T20:58:29Z",
     "created_at": "2007-01-13T09:05:16Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",

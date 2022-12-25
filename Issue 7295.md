@@ -4,6 +4,7 @@ archive/issues_007295.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe removal of the old version of ecm in ecm-6.2.1_p0.spkg\nis broken because of typo:\n\n\nrm -f \"$SAGE_LCOAL\"/lib/libecm.*\n\n\nshould be:\n\n\nrm -f \"$SAGE_LOCAL\"/lib/libecm.*\n\nNotice LOCAL\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7295\n\n",
+    "closed_at": "2009-10-31T16:47:35Z",
     "created_at": "2009-10-25T09:35:57Z",
     "labels": [
         "component: build",

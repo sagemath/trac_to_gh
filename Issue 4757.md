@@ -1,22 +1,23 @@
-# Issue 4757: eigenspaces_right over CDF gives total nonsense
+# Issue 4757: [with patch, with positive review] eigenspaces_right over CDF gives total nonsense
 
 archive/issues_004757.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)\n\n```\nsage: a = random_matrix(CDF,2)\nsage: a.eigenspaces_right()\n\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\nWe easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:\n\n```\nsage: a.eigenvectors_right()\n\n([1.68954005899 + 0.570924387184*I, -0.0345737707895 + 0.485480056628*I],\n [                    0.800587795941                     0.758354735061]\n[  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])\n```\n\nSame comments for eigenspaces_left.\n\nNote that oddly a.eigenspaces() gives a sensible answer though neither left nor right does.\n\n```\nsage: a.eigenspaces_right()\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4757\n\n",
+    "body": "Assignee: @mwhansen\n\nI don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)\n\n```\nsage: a = random_matrix(CDF,2)\nsage: a.eigenspaces_right()\n\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\nWe easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:\n\n```\nsage: a.eigenvectors_right()\n\n([1.68954005899 + 0.570924387184*I, -0.0345737707895 + 0.485480056628*I],\n [                    0.800587795941                     0.758354735061]\n[  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])\n```\n\nSame comments for eigenspaces_left.\n\nNote that oddly a.eigenspaces() gives a sensible answer though neither left nor right does.\n\n```\nsage: a.eigenspaces_right()\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4757\n\n",
+    "closed_at": "2009-01-23T07:32:05Z",
     "created_at": "2008-12-11T05:17:47Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "eigenspaces_right over CDF gives total nonsense",
+    "title": "[with patch, with positive review] eigenspaces_right over CDF gives total nonsense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4757",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 I don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)
 

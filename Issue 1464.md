@@ -1,15 +1,16 @@
-# Issue 1464: [with patch] binary code canonical labels & automorphism group generators
+# Issue 1464: [with patch, positive review] binary code canonical labels & automorphism group generators
 
 archive/issues_001464.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe following bundle is based on 2.9 alpha5, so should merge easily\n\nhttp://sage.math.washington.edu/home/rlmill/sage-2.9.alpha5/binary_codes.hg\n\nNote that the coverage in the new file, binary_codes.pyx, is 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1464\n\n",
+    "closed_at": "2007-12-16T00:46:58Z",
     "created_at": "2007-12-11T23:25:32Z",
     "labels": [
         "component: coding theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with patch] binary code canonical labels & automorphism group generators",
+    "title": "[with patch, positive review] binary code canonical labels & automorphism group generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1464",
     "user": "https://github.com/rlmill"

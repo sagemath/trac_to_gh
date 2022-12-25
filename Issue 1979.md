@@ -1,9 +1,10 @@
-# Issue 1979: doctest fall out from #740 in tut.tex
+# Issue 1979: [with patch, positive review] doctest fall out from #740 in tut.tex
 
 archive/issues_001979.json:
 ```json
 {
     "body": "Assignee: failure\n\nThe following happens while doctesting `tut.tex`:\n\n```\nsage -t  tut.tex\n**********************************************************************\nFile \"tut.py\", line 1676:\n    : EllipticCurve(5)\nExpected:\n    Elliptic Curve defined by y^2 + x*y  = x^3 + 36/1723*x + 1/1723\n                over Rational Field\nGot:\n    Elliptic Curve defined by y^2  = x^3 + 25845*x - 29687290 over Rational Field\n**********************************************************************\nFile \"tut.py\", line 1722:\n    : factor(F.conductor())\nExpected:\n    2^6 * 37\nGot:\n    2^6 * 3^2 * 37^2\n**********************************************************************\nFile \"tut.py\", line 1730:\n    : G = F.quadratic_twist(2); G\nExpected:\n    Elliptic Curve defined by y^2 + y = x^3 - x over Rational Field\nGot:\n    Elliptic Curve defined by y^2 + y = x^3 - 12321*x - 341908 over Rational Field\n**********************************************************************\nFile \"tut.py\", line 1732:\n    : G.conductor()\nExpected:\n    37\nGot:\n    12321\n**********************************************************************\n```\nWilliam says:\n\n```\n[04:56] <mabshoff> william_stein: #740 seems to create different results in various places, i.e. doc test failures.\n[04:56] <william_stein> hmmm\n[04:57] <mabshoff> File \"tut.py\", line 1676:\n[04:57] <mabshoff>     : EllipticCurve(5)\n[04:57] <mabshoff> Expected:\n[04:57] <mabshoff>     Elliptic Curve defined by y^2 + x*y  = x^3 + 36/1723*x + 1/1723\n[04:57] <mabshoff>                 over Rational Field\n[04:57] <mabshoff> Got:\n[04:57] <mabshoff>     Elliptic Curve defined by y^2  = x^3 + 25845*x - 29687290 over Rational Field\n[04:57] <william_stein> mabshoff -- not surprising.\n[04:57] <william_stein> NOBODY has doctested testall after applying that.\n[04:57] <mabshoff> ok\n[04:57] <william_stein> The new output in tut.py is right, by the way.\n[04:57] <mabshoff> :)\n[04:57] <william_stein> It's a different curve with that j-invariant -- a better one.\n```\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1979\n\n",
+    "closed_at": "2008-01-30T09:42:09Z",
     "created_at": "2008-01-30T05:10:33Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_001979.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "doctest fall out from #740 in tut.tex",
+    "title": "[with patch, positive review] doctest fall out from #740 in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1979",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

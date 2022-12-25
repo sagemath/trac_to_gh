@@ -1,16 +1,17 @@
-# Issue 5738: update MPIR to 1.0.0.rc8: --enable-gmplink -> --enable-gmpcompat
+# Issue 5738: [with spkg, positive review] update MPIR to 1.0.0.rc8: --enable-gmplink -> --enable-gmpcompat
 
 archive/issues_005738.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs the ticket mentions. This resolves the last known problem we had in Sage and this should be identical to the MPIR 1.0 release.\n\nThe spkg can be found at \n\n http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc2/gmp-mpir-1.0.rc8.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5738\n\n",
+    "closed_at": "2009-04-11T00:58:54Z",
     "created_at": "2009-04-10T22:25:47Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "update MPIR to 1.0.0.rc8: --enable-gmplink -> --enable-gmpcompat",
+    "title": "[with spkg, positive review] update MPIR to 1.0.0.rc8: --enable-gmplink -> --enable-gmpcompat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5738",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

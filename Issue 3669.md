@@ -1,15 +1,16 @@
-# Issue 3669: [with patch; needs review] improve multiple_of_order command for torsion subgroups of modular abelian varieties
+# Issue 3669: [with patch; with positive review] improve multiple_of_order command for torsion subgroups of modular abelian varieties
 
 archive/issues_003669.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3669\n\n",
+    "closed_at": "2008-07-18T09:25:36Z",
     "created_at": "2008-07-16T23:32:28Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch; needs review] improve multiple_of_order command for torsion subgroups of modular abelian varieties",
+    "title": "[with patch; with positive review] improve multiple_of_order command for torsion subgroups of modular abelian varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3669",
     "user": "https://github.com/williamstein"

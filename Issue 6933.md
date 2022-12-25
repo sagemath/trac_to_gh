@@ -4,6 +4,7 @@ archive/issues_006933.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe title pretty much says it all. The spkg-install is ignoring SAGE64 unless the OS is Darwin (OS X). \n\nit currently has:\n\n```\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"Building 64 bit OSX version of Sage\"\n   CFLAGS=\"-O2 -g -m64 \" && export CFLAGS\n   LDFLAGS=\"-m64\"\nfi\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6933\n\n",
+    "closed_at": "2009-09-17T22:13:32Z",
     "created_at": "2009-09-15T09:27:56Z",
     "labels": [
         "component: porting: solaris",

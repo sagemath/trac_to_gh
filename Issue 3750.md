@@ -1,9 +1,10 @@
-# Issue 3750: Request for a "log" function for Sage integers
+# Issue 3750: [with patch, positive review] Request for a "log" function for Sage integers
 
 archive/issues_003750.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe following command\n\n```\nsage: N=8\nsage: N.log(2)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/ljpk/<ipython console> in <module>()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'log'\n```\n\nreturns an error (as does N.exp()). Would it be possible to add a function to the Sage integers class which worked like the ones for the real numbers?\n\n```\nsage: N=8.0\nsage: N.log(2)\n3.00000000000000\nsage: N.exp()\n2980.95798704173\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3750\n\n",
+    "body": "Assignee: @kcrisman\n\nThe following command\n\n```\nsage: N=8\nsage: N.log(2)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/ljpk/<ipython console> in <module>()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'log'\n```\n\nreturns an error (as does N.exp()). Would it be possible to add a function to the Sage integers class which worked like the ones for the real numbers?\n\n```\nsage: N=8.0\nsage: N.log(2)\n3.00000000000000\nsage: N.exp()\n2980.95798704173\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3750\n\n",
+    "closed_at": "2008-11-09T18:18:44Z",
     "created_at": "2008-07-31T17:49:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_003750.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Request for a \"log\" function for Sage integers",
+    "title": "[with patch, positive review] Request for a \"log\" function for Sage integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3750",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: somebody
+Assignee: @kcrisman
 
 The following command
 

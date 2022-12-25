@@ -1,16 +1,17 @@
-# Issue 6020: bug in delta_qexp over finite fields
+# Issue 6020: [fixed by #6671] bug in delta_qexp over finite fields
 
 archive/issues_006020.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: delta q-expansion finite field\n\nThis is in sage-3.4.2:\n\n```\nsage: delta_qexp(K=GF(5))\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.libs.ntl.ntl_ZZX.ntl_ZZX'> to an integer\n```\n\nI don't have time to investigate this right now, but it might be a similar issue as #5102.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6020\n\n",
+    "closed_at": "2010-04-15T05:56:20Z",
     "created_at": "2009-05-11T12:08:47Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "bug in delta_qexp over finite fields",
+    "title": "[fixed by #6671] bug in delta_qexp over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6020",
     "user": "https://github.com/aghitza"

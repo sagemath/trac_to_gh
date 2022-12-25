@@ -1,15 +1,16 @@
-# Issue 4404: notebook -- split "Download to a file" into two menu options, one without revision history
+# Issue 4404: notebook -- provide an additional (non default) option to "Download to a file" so that revision history is *also* exported.
 
 archive/issues_004404.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @burcin @kcrisman @williamstein @mwhansen\n\nAs requested by Stan Flavia on sage-support, replace the single \"Download to a file\" menu option in the notebook by two options:\n* Download to a file\n* Download to a file w/ history\n\nThe first would download a version of the file without the revision history.  The second would do what the current \"Download to a file\" command does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4404\n\n",
+    "closed_at": "2020-03-29T02:05:01Z",
     "created_at": "2008-10-30T18:36:03Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "notebook -- split \"Download to a file\" into two menu options, one without revision history",
+    "title": "notebook -- provide an additional (non default) option to \"Download to a file\" so that revision history is *also* exported.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4404",
     "user": "https://github.com/williamstein"

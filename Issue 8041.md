@@ -4,6 +4,7 @@ archive/issues_008041.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSubject says it all.  In the notebook type `XGCD?` and get errors. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8041\n\n",
+    "closed_at": "2010-01-23T07:03:59Z",
     "created_at": "2010-01-22T15:31:55Z",
     "labels": [
         "component: basic arithmetic",

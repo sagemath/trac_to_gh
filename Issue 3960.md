@@ -1,23 +1,24 @@
-# Issue 3960: "edit this" on published worksheets doesn't work anymore in 3.1.1
+# Issue 3960: [with patch, positive review] "edit this" on published worksheets doesn't work anymore in 3.1.1
 
 archive/issues_003960.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWay to reproduce:\n\n- start notebook\n- create worksheet\n- publish worksheet\n- go to \"published worksheets\"\n- click published worksheet\n\nresult:\n\n\"edit this\" or \"edit a copy\" link lead to another \"published\" version, not a normal worksheet\n\nexpected result:\n\nan editable worksheet\n\nNOTE: This worked properly in 3.0.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/3960\n\n",
+    "body": "Assignee: @mwhansen\n\nWay to reproduce:\n\n- start notebook\n- create worksheet\n- publish worksheet\n- go to \"published worksheets\"\n- click published worksheet\n\nresult:\n\n\"edit this\" or \"edit a copy\" link lead to another \"published\" version, not a normal worksheet\n\nexpected result:\n\nan editable worksheet\n\nNOTE: This worked properly in 3.0.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/3960\n\n",
+    "closed_at": "2008-09-04T02:02:46Z",
     "created_at": "2008-08-26T18:27:26Z",
     "labels": [
         "component: notebook",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "\"edit this\" on published worksheets doesn't work anymore in 3.1.1",
+    "title": "[with patch, positive review] \"edit this\" on published worksheets doesn't work anymore in 3.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3960",
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Way to reproduce:
 

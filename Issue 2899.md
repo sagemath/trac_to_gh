@@ -4,6 +4,7 @@ archive/issues_002899.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\n> Also, round(RR(3.0)) returns an Integer...should RDF behave the same\n> > way? (currently round(RDF(3.0)) returns an RDF).\n\nWe recently changed round, floor, ceiling, and trunc on RR to return\nintegers; yes, I think the corresponding RDF methods should change as\nwell.\n\nCarl\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2899\n\n",
+    "closed_at": "2010-01-16T23:47:00Z",
     "created_at": "2008-04-12T16:09:26Z",
     "labels": [
         "component: coercion",

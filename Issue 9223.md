@@ -3,7 +3,8 @@
 archive/issues_009223.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: cremona elliptic curve database\n\nAs of sage-4.4.3, we have:\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE cremona.py: 42% (17 of 40)\n\nMissing documentation:\n\t * _init(self, ftpdata):\n\t * __repr__(self):\n\t * CremonaDatabase():\n\n\nMissing doctests:\n\t * rebuild(data_tgz, largest_conductor, decompress=True):\n\t * __init__(self, read_only=True):\n\t * __iter__(self):\n\t * __getitem__(self, N):\n\t * __repr__(self):\n\t * allbsd(self, N):\n\t * allcurves(self, N):\n\t * allgens(self, N):\n\t * degphi(self, N):\n\t * elliptic_curve_from_ainvs(self, N, ainvs):\n\t * elliptic_curve(self, label):\n\t * iter(self, conductors):\n\t * isogeny_classes(self, conductor):\n\t * isogeny_class(self, label):\n\t * list(self, conductors):\n\t * _init_allcurves(self, ftpdata, largest_conductor=0):\n\t * _init_degphi(self, ftpdata, largest_conductor=0):\n\t * _init_allbsd(self, ftpdata, largest_conductor=0):\n\t * _init_allgens(self, ftpdata, largest_conductor=0):\n\t * __init__(self, read_only=True):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9223\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: cremona elliptic curve database\n\nAs of sage-4.4.3, we have:\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE cremona.py: 42% (17 of 40)\n\nMissing documentation:\n * _init(self, ftpdata):\n * __repr__(self):\n * CremonaDatabase():\n\nMissing doctests:\n * rebuild(data_tgz, largest_conductor, decompress=True):\n * __init__(self, read_only=True):\n * __iter__(self):\n * __getitem__(self, N):\n * __repr__(self):\n * allbsd(self, N):\n * allcurves(self, N):\n * allgens(self, N):\n * degphi(self, N):\n * elliptic_curve_from_ainvs(self, N, ainvs):\n * elliptic_curve(self, label):\n * iter(self, conductors):\n * isogeny_classes(self, conductor):\n * isogeny_class(self, label):\n * list(self, conductors):\n * _init_allcurves(self, ftpdata, largest_conductor=0):\n * _init_degphi(self, ftpdata, largest_conductor=0):\n * _init_allbsd(self, ftpdata, largest_conductor=0):\n * _init_allgens(self, ftpdata, largest_conductor=0):\n * __init__(self, read_only=True):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9223\n\n",
+    "closed_at": "2010-07-22T07:48:24Z",
     "created_at": "2010-06-12T09:26:59Z",
     "labels": [
         "component: doctest coverage",
@@ -27,32 +28,31 @@ ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE cremona.py: 42% (17 of 40)
 
 Missing documentation:
-	 * _init(self, ftpdata):
-	 * __repr__(self):
-	 * CremonaDatabase():
-
+ * _init(self, ftpdata):
+ * __repr__(self):
+ * CremonaDatabase():
 
 Missing doctests:
-	 * rebuild(data_tgz, largest_conductor, decompress=True):
-	 * __init__(self, read_only=True):
-	 * __iter__(self):
-	 * __getitem__(self, N):
-	 * __repr__(self):
-	 * allbsd(self, N):
-	 * allcurves(self, N):
-	 * allgens(self, N):
-	 * degphi(self, N):
-	 * elliptic_curve_from_ainvs(self, N, ainvs):
-	 * elliptic_curve(self, label):
-	 * iter(self, conductors):
-	 * isogeny_classes(self, conductor):
-	 * isogeny_class(self, label):
-	 * list(self, conductors):
-	 * _init_allcurves(self, ftpdata, largest_conductor=0):
-	 * _init_degphi(self, ftpdata, largest_conductor=0):
-	 * _init_allbsd(self, ftpdata, largest_conductor=0):
-	 * _init_allgens(self, ftpdata, largest_conductor=0):
-	 * __init__(self, read_only=True):
+ * rebuild(data_tgz, largest_conductor, decompress=True):
+ * __init__(self, read_only=True):
+ * __iter__(self):
+ * __getitem__(self, N):
+ * __repr__(self):
+ * allbsd(self, N):
+ * allcurves(self, N):
+ * allgens(self, N):
+ * degphi(self, N):
+ * elliptic_curve_from_ainvs(self, N, ainvs):
+ * elliptic_curve(self, label):
+ * iter(self, conductors):
+ * isogeny_classes(self, conductor):
+ * isogeny_class(self, label):
+ * list(self, conductors):
+ * _init_allcurves(self, ftpdata, largest_conductor=0):
+ * _init_degphi(self, ftpdata, largest_conductor=0):
+ * _init_allbsd(self, ftpdata, largest_conductor=0):
+ * _init_allgens(self, ftpdata, largest_conductor=0):
+ * __init__(self, read_only=True):
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9223

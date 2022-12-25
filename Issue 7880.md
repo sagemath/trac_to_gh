@@ -4,6 +4,7 @@ archive/issues_007880.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nIn support of #7585 and Tate's algorithm over function fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7880\n\n",
+    "closed_at": "2010-04-15T20:13:34Z",
     "created_at": "2010-01-09T19:40:58Z",
     "labels": [
         "component: categories"

@@ -3,11 +3,11 @@
 archive/issues_000188.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nFrom Susan Addington:\n\n```\nI just downloaded SAGE and am trying it out on MacOS 10.4.\nSo far the only weirdness I have found is the behavior of the round\nfunction:\nround(sqrt(2),2) gives 1.4099999999999999.\nWhile this is correct, it looks strange.\n```\n\nHere is some further I/O that illustrates more what is going on:\n\n```\nsage: a = sqrt(2)\nsage: type(a)\n<type 'sage.rings.real_mpfr.RealNumber'>\nsage: b = round(a,2); b\n1.4099999999999999\nsage: type(b)\n<type 'float'>\nsage: round?\nNamespace:      Python builtin\nDocstring [source file open failed]:\n    round(number[, ndigits]) -> floating point number\n    \n    Round a number to a given precision in decimal digits (default 0 digits).\n    This always returns a floating point number.  Precision may be negative.\n```\n\nNote that round is a python builtin and it always outputs a float. \nIt would make way more sense if round on a mpfr or complex number, etc.,\nwere to output a number of that type.  Thus in SAGE the round function\nshould be replaced by our own, which first tries to call a _round_ function,\nand if that doesn't work, calls the builtin round function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/188\n\n",
+    "body": "Assignee: somebody\n\nFrom Susan Addington:\n\n```\nI just downloaded SAGE and am trying it out on MacOS 10.4.\nSo far the only weirdness I have found is the behavior of the round\nfunction:\nround(sqrt(2),2) gives 1.4099999999999999.\nWhile this is correct, it looks strange.\n```\n\nHere is some further I/O that illustrates more what is going on:\n\n```\nsage: a = sqrt(2)\nsage: type(a)\n<type 'sage.rings.real_mpfr.RealNumber'>\nsage: b = round(a,2); b\n1.4099999999999999\nsage: type(b)\n<type 'float'>\nsage: round?\nNamespace:      Python builtin\nDocstring [source file open failed]:\n    round(number[, ndigits]) -> floating point number\n    \n    Round a number to a given precision in decimal digits (default 0 digits).\n    This always returns a floating point number.  Precision may be negative.\n```\n\nNote that round is a python builtin and it always outputs a float. \nIt would make way more sense if round on a mpfr or complex number, etc.,\nwere to output a number of that type.  Thus in SAGE the round function\nshould be replaced by our own, which first tries to call a _round_ function,\nand if that doesn't work, calls the builtin round function.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/188\n\n",
+    "closed_at": "2007-01-25T18:58:14Z",
     "created_at": "2006-12-28T05:10:25Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "title": "Python's builtin round function is funny since it always coerces to float",
     "type": "issue",
@@ -51,6 +51,8 @@ It would make way more sense if round on a mpfr or complex number, etc.,
 were to output a number of that type.  Thus in SAGE the round function
 should be replaced by our own, which first tries to call a _round_ function,
 and if that doesn't work, calls the builtin round function.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/188
 

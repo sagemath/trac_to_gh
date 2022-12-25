@@ -1,9 +1,10 @@
-# Issue 3860: itanium -- can't build mercurial extension
+# Issue 3860: [with spkg, positive review] itanium -- can't build mercurial extension
 
 archive/issues_003860.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nbuilding 'mercurial.osutil' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/home/wstein/iras/build/sage-3.1.alpha2/local/include/python2.5 -c mercurial/osutil.c -o build/temp.linux-ia64-2.5/mercurial/osutil.o\ngcc -pthread -shared build/temp.linux-ia64-2.5/mercurial/osutil.o -o build/lib.linux-ia64-2.5/mercurial/osutil.so\nbuilding 'hgext.inotify.linux._inotify' extension\ncreating build/temp.linux-ia64-2.5/hgext\ncreating build/temp.linux-ia64-2.5/hgext/inotify\ncreating build/temp.linux-ia64-2.5/hgext/inotify/linux\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/home/wstein/iras/build/sage-3.1.alpha2/loc\nal/include/python2.5 -c hgext/inotify/linux/_inotify.c -o build/temp.linux-ia64-2.5/hgext/inotify/linux/_inotify.o\nhgext/inotify/linux/_inotify.c:172: error: \u2018IN_ONLYDIR\u2019 undeclared here (not in a function)\nhgext/inotify/linux/_inotify.c:173: error: \u2018IN_DONT_FOLLOW\u2019 undeclared here (not in a function)\nhgext/inotify/linux/_inotify.c:174: error: \u2018IN_MASK_ADD\u2019 undeclared here (not in a function)\nhgext/inotify/linux/_inotify.c: In function \u2018define_consts\u2019:\nhgext/inotify/linux/_inotify.c:266: warning: passing argument 3 of \u2018define_const\u2019 makes integer from pointer without a\n cast\nhgext/inotify/linux/_inotify.c:267: warning: passing argument 3 of \u2018define_const\u2019 makes integer from pointer without a\n cast\nhgext/inotify/linux/_inotify.c:268: warning: passing argument 3 of \u2018define_const\u2019 makes integer from pointer without a\n cast\nerror: command 'gcc' failed with exit status 1\nError building mercurial\n\nreal    0m3.062s\nuser    0m2.308s\nsys     0m0.280s\nsage: An error occurred while installing mercurial-1.01.p0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3860\n\n",
+    "closed_at": "2008-08-15T11:04:48Z",
     "created_at": "2008-08-14T22:16:42Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003860.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "itanium -- can't build mercurial extension",
+    "title": "[with spkg, positive review] itanium -- can't build mercurial extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3860",
     "user": "https://github.com/williamstein"

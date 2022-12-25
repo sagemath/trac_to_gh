@@ -1,9 +1,10 @@
-# Issue 6229: efficiency in Lagrange polynomial interpolation (easy fix...)
+# Issue 6229: [with patch, positive review] efficiency in Lagrange polynomial interpolation (easy fix...)
 
 archive/issues_006229.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu\n\nThis is a follow-up to #6043.\n\nThis nested loop is useless:\n{{\n        P = 0 \n        for i in xrange(n): \n            prod = 1 \n            for j in xrange(i): \n                prod *= (x - points[j][0]) \n            P += (F[i] * prod) \n        return P\n\n}}\n\nand should be replaced with (something like)\n\n{{\n        P = F[n-1]\n        for i in xrange(n-2,-1,-1): \n            P *= (x - points[i][0])\n            P += F[i]\n        return P\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6229\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu\n\nThis is a follow-up to #6043.\n\nThis nested loop is useless:\n\n```\n        P = 0 \n        for i in xrange(n): \n            prod = 1 \n            for j in xrange(i): \n                prod *= (x - points[j][0]) \n            P += (F[i] * prod) \n        return P\n\n```\n\nand should be replaced with (something like)\n\n```\n        P = F[n-1]\n        for i in xrange(n-2,-1,-1): \n            P *= (x - points[i][0])\n            P += F[i]\n        return P\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6229\n\n",
+    "closed_at": "2009-06-13T21:18:38Z",
     "created_at": "2009-06-05T22:15:54Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_006229.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "efficiency in Lagrange polynomial interpolation (easy fix...)",
+    "title": "[with patch, positive review] efficiency in Lagrange polynomial interpolation (easy fix...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6229",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
@@ -24,7 +25,8 @@ CC:  mvngu
 This is a follow-up to #6043.
 
 This nested loop is useless:
-{{
+
+```
         P = 0 
         for i in xrange(n): 
             prod = 1 
@@ -33,17 +35,17 @@ This nested loop is useless:
             P += (F[i] * prod) 
         return P
 
-}}
+```
 
 and should be replaced with (something like)
 
-{{
+```
         P = F[n-1]
         for i in xrange(n-2,-1,-1): 
             P *= (x - points[i][0])
             P += F[i]
         return P
-}}
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6229
 

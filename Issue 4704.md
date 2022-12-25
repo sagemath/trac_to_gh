@@ -1,22 +1,22 @@
-# Issue 4704: Use jquery to make the javascript code nicer
+# Issue 4704: [with patch, positive review] Use jquery to make the javascript code nicer
 
 archive/issues_004704.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  boothby tclemans @robertwb\n\nThis ticket splits off part of #4267.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4704\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  boothby tclemans @robertwb\n\nThis ticket splits off part of #4267.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4704\n\n",
+    "closed_at": "2009-01-19T08:09:56Z",
     "created_at": "2008-12-05T01:11:07Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Use jquery to make the javascript code nicer",
+    "title": "[with patch, positive review] Use jquery to make the javascript code nicer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4704",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 CC:  boothby tclemans @robertwb
 

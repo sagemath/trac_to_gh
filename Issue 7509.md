@@ -3,11 +3,11 @@
 archive/issues_007509.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @novoselt whuss\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7509\n\n",
+    "body": "Assignee: boothby\n\nCC:  @novoselt whuss\n\nNOTE: \"sage -coverage\" claims less than 100% coverage, but there is 100% coverage. It's a bug in the coverage script that it doesn't count doctests marked with `>>>`.\n\n\n---\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7509\n\n",
+    "closed_at": "2012-02-07T13:20:52Z",
     "created_at": "2009-11-21T13:11:41Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: interact"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "notebook -- make it possible to debug Python code in the notebook, e.g., something like pdb that works in the notebook",
@@ -20,6 +20,10 @@ Assignee: boothby
 
 CC:  @novoselt whuss
 
+NOTE: "sage -coverage" claims less than 100% coverage, but there is 100% coverage. It's a bug in the coverage script that it doesn't count doctests marked with `>>>`.
+
+
+---
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7509

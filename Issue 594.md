@@ -4,6 +4,7 @@ archive/issues_000594.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patch implements conversion to/from MAGMA polynomials over non-prime finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/594\n\n",
+    "closed_at": "2007-09-06T17:50:05Z",
     "created_at": "2007-09-05T16:27:33Z",
     "labels": [
         "component: interfaces"

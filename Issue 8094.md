@@ -1,15 +1,16 @@
-# Issue 8094: shortcuts for matrix transpose, complex conjugate, ...
+# Issue 8094: shortcuts properties for matrix transpose, complex conjugate, conjugate transpose, and inverse
 
 archive/issues_008094.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @rbeezer\n\nThe aim is to enhance `/sage/matrix/matrix*.pyx` files with a `__getattr__` mechanism to call `self.transpose()` and others more quickly. The attribute lookup mechanism provides a shortcut like `self.T` that is resolved to `self.transpose()`. \nShortcuts should be similar to other environments like `numpy`.\n\nAdditionally, `__setattr__` and `__delattr__` have to be implemented to avoid modification and deletion of these attributes.\n\nNotes: [python data model](http://docs.python.org/reference/datamodel.html#customizing-attribute-access).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8094\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @rbeezer\n\nKeywords: sd32\n\nThe aim is to enhance the `/sage/matrix/matrix2.pyx` file with cython's properties to call `self.transpose()` and other methods more quickly. A shortcut like` self.T` is resolved to `self.transpose()`. Shortcuts should be similar to other environments like `numpy`.  Shortcuts added are:\n\n* m.T -> m.transpose()\n* m.I -> m.inverse()\n* m.C -> m.conjugate()\n* m.H -> m.conjugate().transpose()\n\nNotes: [python data model](http://docs.python.org/reference/datamodel.html#customizing-attribute-access), [Cython's properties](http://docs.cython.org/src/userguide/extension_types.html#properties)\n\n---\n\n**Apply**:\n\n1. [attachment:8094-shortcut-matrix-transpose-v2-rebased_on_4.7.2.alpha3.patch]\n2. [attachment:trac-8094_matrix_shortcut_docs_reviewer2.patch]\n3. [attachment:trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch]\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8094\n\n",
+    "closed_at": "2011-09-18T09:37:06Z",
     "created_at": "2010-01-27T13:00:23Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "shortcuts for matrix transpose, complex conjugate, ...",
+    "title": "shortcuts properties for matrix transpose, complex conjugate, conjugate transpose, and inverse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8094",
     "user": "https://github.com/haraldschilly"
@@ -19,12 +20,27 @@ Assignee: @williamstein
 
 CC:  @robertwb @rbeezer
 
-The aim is to enhance `/sage/matrix/matrix*.pyx` files with a `__getattr__` mechanism to call `self.transpose()` and others more quickly. The attribute lookup mechanism provides a shortcut like `self.T` that is resolved to `self.transpose()`. 
-Shortcuts should be similar to other environments like `numpy`.
+Keywords: sd32
 
-Additionally, `__setattr__` and `__delattr__` have to be implemented to avoid modification and deletion of these attributes.
+The aim is to enhance the `/sage/matrix/matrix2.pyx` file with cython's properties to call `self.transpose()` and other methods more quickly. A shortcut like` self.T` is resolved to `self.transpose()`. Shortcuts should be similar to other environments like `numpy`.  Shortcuts added are:
 
-Notes: [python data model](http://docs.python.org/reference/datamodel.html#customizing-attribute-access).
+* m.T -> m.transpose()
+* m.I -> m.inverse()
+* m.C -> m.conjugate()
+* m.H -> m.conjugate().transpose()
+
+Notes: [python data model](http://docs.python.org/reference/datamodel.html#customizing-attribute-access), [Cython's properties](http://docs.cython.org/src/userguide/extension_types.html#properties)
+
+---
+
+**Apply**:
+
+1. [attachment:8094-shortcut-matrix-transpose-v2-rebased_on_4.7.2.alpha3.patch]
+2. [attachment:trac-8094_matrix_shortcut_docs_reviewer2.patch]
+3. [attachment:trac_8094-matrix-properties-more-documentation-rebased_on_4.7.2.alpha3.patch]
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8094
 

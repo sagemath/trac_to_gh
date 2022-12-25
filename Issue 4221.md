@@ -1,15 +1,16 @@
-# Issue 4221: [with package, needs review] pynac package
+# Issue 4221: [with package, positive review] add initial pynac-0.1.p0 package
 
 archive/issues_004221.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: symbolics, pynac\n\nTo split the task of testing the new pynac package and the interface code from #3872, the new version of the pynac package is moved here.\n\nLatest version of the package can be downloaded from:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4221\n\n",
+    "closed_at": "2008-09-30T12:55:08Z",
     "created_at": "2008-09-30T12:34:07Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with package, needs review] pynac package",
+    "title": "[with package, positive review] add initial pynac-0.1.p0 package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4221",
     "user": "https://github.com/burcin"

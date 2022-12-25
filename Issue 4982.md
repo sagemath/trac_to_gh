@@ -4,10 +4,10 @@ archive/issues_004982.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @malb @burcin\n\nSee discussion at end of #4965. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4982\n\n",
+    "closed_at": "2009-11-29T04:44:16Z",
     "created_at": "2009-01-15T19:57:37Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "consolidate shifts in polynomial_template",

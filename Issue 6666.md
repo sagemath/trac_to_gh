@@ -1,16 +1,17 @@
-# Issue 6666: [with patch] implement analytic modular symbols algorithm and cusp transformation matrix
+# Issue 6666: Implement analytic modular symbols for elliptic curves
 
 archive/issues_006666.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @pjbruin @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6666\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @pjbruin @JohnCremona\n\nKeywords: period, modular symbol\n\nApply [attachment:trac_6666-rebased-5.12.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6666\n\n",
+    "closed_at": "2015-01-25T16:25:50Z",
     "created_at": "2009-08-02T18:52:08Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch] implement analytic modular symbols algorithm and cusp transformation matrix",
+    "title": "Implement analytic modular symbols for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6666",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,9 @@ Assignee: @williamstein
 
 CC:  @pjbruin @JohnCremona
 
+Keywords: period, modular symbol
 
+Apply [attachment:trac_6666-rebased-5.12.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6666
 

@@ -1,16 +1,17 @@
-# Issue 762: Elliptic curve L-series bug
+# Issue 762: [with patch] Elliptic curve L-series bug
 
 archive/issues_000762.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is a bug in computing the values along a line of the L-series:\n\n```\nsage: E = EllipticCurve('389a')\nsage: L = E.Lseries_dokchitser()\nsage: E.Lseries_values_along_line(0.5, 3, 5)\nTraceback (most recent call last):\n...\nValueError: too many values to unpack\n```\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a bug in computing the values along a line of the L-series:\n\n```\nsage: E = EllipticCurve('389a')\nsage: E.Lseries().values_along_line(0.5, 3, 5)\n```\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be easy to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
+    "closed_at": "2007-11-01T09:43:21Z",
     "created_at": "2007-09-30T04:34:43Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "Elliptic curve L-series bug",
+    "title": "[with patch] Elliptic curve L-series bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/762",
     "user": "https://github.com/williamstein"
@@ -22,14 +23,10 @@ There is a bug in computing the values along a line of the L-series:
 
 ```
 sage: E = EllipticCurve('389a')
-sage: L = E.Lseries_dokchitser()
-sage: E.Lseries_values_along_line(0.5, 3, 5)
-Traceback (most recent call last):
-...
-ValueError: too many values to unpack
+sage: E.Lseries().values_along_line(0.5, 3, 5)
 ```
 
-This is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.
+This is just a light wrapper around Rubinstein's lcalc, so should be easy to fix. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/762
 

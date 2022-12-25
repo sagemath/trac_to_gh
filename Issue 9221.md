@@ -1,15 +1,16 @@
-# Issue 9221: update matplotlib to svn and clean out the patches
+# Issue 9221: update matplotlib to 1.0.0 and clean out the patches
 
 archive/issues_009221.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  drkirkby @kcrisman\n\nMatplotlib SVN 8415 has some bugfixes and enhancements that are really nice for us.  For example, the configuration variables allow us to eliminate most of our patches to the spkg, and a new path.snap config parameter solves #7808.\n\nThe spkg is up at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3-svn8415.spkg, and builds on the spkg in #9202.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9221\n\n",
+    "body": "Assignee: jason, was\n\nCC:  drkirkby @kcrisman\n\nMatplotlib 1.0.0 has some bugfixes and enhancements that are really nice for us.  For example, the configuration variables allow us to eliminate most of our patches to the spkg, and a new path.snap config parameter solves #7808.\n\nThe spkg is up at http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9221\n\n",
+    "closed_at": "2010-10-03T06:35:39Z",
     "created_at": "2010-06-11T21:35:44Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "update matplotlib to svn and clean out the patches",
+    "title": "update matplotlib to 1.0.0 and clean out the patches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9221",
     "user": "https://github.com/jasongrout"
@@ -19,9 +20,9 @@ Assignee: jason, was
 
 CC:  drkirkby @kcrisman
 
-Matplotlib SVN 8415 has some bugfixes and enhancements that are really nice for us.  For example, the configuration variables allow us to eliminate most of our patches to the spkg, and a new path.snap config parameter solves #7808.
+Matplotlib 1.0.0 has some bugfixes and enhancements that are really nice for us.  For example, the configuration variables allow us to eliminate most of our patches to the spkg, and a new path.snap config parameter solves #7808.
 
-The spkg is up at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3-svn8415.spkg, and builds on the spkg in #9202.
+The spkg is up at http://sage.math.washington.edu/home/jason/matplotlib-1.0.0.spkg.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9221
 

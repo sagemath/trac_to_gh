@@ -1,9 +1,10 @@
-# Issue 1718: bug in parametric_plot
+# Issue 1718: [with patch, with positive review] bug in parametric_plot
 
 archive/issues_001718.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nsage: parametric_plot([t, t + RR(pi)], -2, 2, rgbcolor=(1,0,0))\n\nworks but not this:\n\nsage: parametric_plot([t, t + pi], -2, 2, rgbcolor=(1,0,0))\n\n---\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n....\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute\n'number_of_arguments'\n\nIssue created by migration from https://trac.sagemath.org/ticket/1718\n\n",
+    "closed_at": "2008-01-21T05:26:27Z",
     "created_at": "2008-01-07T22:34:39Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_001718.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "bug in parametric_plot",
+    "title": "[with patch, with positive review] bug in parametric_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1718",
     "user": "https://github.com/wdjoyner"

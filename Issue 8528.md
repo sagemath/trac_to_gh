@@ -1,17 +1,18 @@
-# Issue 8528: type in an exception
+# Issue 8528: typo in an exception
 
 archive/issues_008528.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nhere it is\n\n```\nsage: x.n()\nTraceback (most recent call last)\n...\nTypeError: cannot evaluate symbolic expresssion numerically\n                                         ^^^\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8528\n\n",
+    "closed_at": "2010-03-14T22:39:31Z",
     "created_at": "2010-03-13T21:53:53Z",
     "labels": [
         "component: symbolics",
-        "trivial",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "type in an exception",
+    "title": "typo in an exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8528",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

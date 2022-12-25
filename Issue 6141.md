@@ -1,16 +1,17 @@
-# Issue 6141: [with patch, needs review] simplicial complexes: change 'facets' from an attribute to a method
+# Issue 6141: [with patch, positive review] simplicial complexes: change 'facets' from an attribute to a method
 
 archive/issues_006141.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nSee [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/b5f9b4e58cce0c6b) from sage-devel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6141\n\n",
+    "closed_at": "2009-06-01T01:12:12Z",
     "created_at": "2009-05-27T22:00:42Z",
     "labels": [
         "component: algebraic topology",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] simplicial complexes: change 'facets' from an attribute to a method",
+    "title": "[with patch, positive review] simplicial complexes: change 'facets' from an attribute to a method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6141",
     "user": "https://github.com/jhpalmieri"

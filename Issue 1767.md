@@ -4,6 +4,7 @@ archive/issues_001767.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe currently provide a SAGE_FORTRAN flag that lets external fortran be used if the user desires.\nSince atlas takes a long time to build, we should have an optional SAGE_ATLAS_LIB flag \nthat would accept the path to a directory that contained libatlas, libcblas, libf77blas, and liblapack. The atlas install script will do some tests to ensure these work and will then create symlinks to them in $SAGE_LOCAL/lib\n\nThere should also be a SAGE_ATLAS_TARGZ with would be the path to a tar or tar.gz with libatlas, libcblas, libf77blas, and liblapack. These would just be copied into $SAGE_LOCAL/lib\n\nAs mentioned some checking needs to be done to ensure the atlas provided is compatible with the fortran we are using, that it actually works, as well as to check that the lapack is the full lapack (8Mb or so) and not a crippled lapack.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1767\n\n",
+    "closed_at": "2014-08-20T20:32:31Z",
     "created_at": "2008-01-13T23:48:24Z",
     "labels": [
         "component: packages: standard",

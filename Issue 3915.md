@@ -1,16 +1,17 @@
-# Issue 3915: [with patch, needs review] PolyBoRi interface improvements
+# Issue 3915: [with patch, positive review] PolyBoRi interface improvements
 
 archive/issues_003915.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThe attached patch\n* adds an `interpolation_polynomial` method to `BooleanPolynomialRing`\n* adds `reduce` methods to `BooleanPolynomial` and `BooleanPolynomialIdeal`\n* improves the documentation slightly\n* makes `f in I` work for f a `BooleanPolynomial`\n\nIssue created by migration from https://trac.sagemath.org/ticket/3915\n\n",
+    "closed_at": "2008-08-29T01:43:08Z",
     "created_at": "2008-08-20T20:02:48Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] PolyBoRi interface improvements",
+    "title": "[with patch, positive review] PolyBoRi interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3915",
     "user": "https://github.com/malb"

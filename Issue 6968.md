@@ -1,16 +1,17 @@
-# Issue 6968: improve _vector_times_matrix
+# Issue 6968: [with patch, positive review] improve _vector_times_matrix
 
 archive/issues_006968.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nVery small patch avoiding multiple copies\n\nIssue created by migration from https://trac.sagemath.org/ticket/6968\n\n",
+    "closed_at": "2009-09-24T16:45:51Z",
     "created_at": "2009-09-20T20:30:00Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "improve _vector_times_matrix",
+    "title": "[with patch, positive review] improve _vector_times_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6968",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

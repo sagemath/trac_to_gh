@@ -1,16 +1,17 @@
-# Issue 3045: K.gen() where K = GF(p) returns 1, not a primitive element
+# Issue 3045: [with patch, positive review] K.gen() where K = GF(p) returns 1, not a primitive element
 
 archive/issues_003045.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: galois field\n\n```\nsage: k = GF(7)\nsage: k.gen()\n1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3045\n\n",
+    "closed_at": "2009-01-25T02:20:34Z",
     "created_at": "2008-04-27T15:06:13Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "K.gen() where K = GF(p) returns 1, not a primitive element",
+    "title": "[with patch, positive review] K.gen() where K = GF(p) returns 1, not a primitive element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3045",
     "user": "https://trac.sagemath.org/admin/accounts/users/jxxcarlson"

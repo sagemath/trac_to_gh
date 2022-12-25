@@ -1,22 +1,25 @@
-# Issue 3553: Update eclib to eclib-20080310.p4.spkg
+# Issue 3553: [with spkg, positive review] Update eclib to eclib-20080310.p4.spkg
 
 archive/issues_003553.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThere's a newly patched version here:\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p4.spkg\n\nJohn Cremona removed some unused LiDiA code since it no longer builds. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3553\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: editor_mabshoff\n\nThere's a newly patched version here:\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p4.spkg\n\nJohn Cremona removed some unused LiDiA code since it no longer builds. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3553\n\n",
+    "closed_at": "2008-07-05T22:12:03Z",
     "created_at": "2008-07-05T20:42:22Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Update eclib to eclib-20080310.p4.spkg",
+    "title": "[with spkg, positive review] Update eclib to eclib-20080310.p4.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3553",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @JohnCremona
+
+Keywords: editor_mabshoff
 
 There's a newly patched version here:
 

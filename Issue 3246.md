@@ -1,16 +1,17 @@
-# Issue 3246: [with patch; needs review] cygwin -- fix broken gsl.ode setup.py code
+# Issue 3246: [with patch; positive review] cygwin -- fix broken gsl.ode setup.py code
 
 archive/issues_003246.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3246\n\n",
+    "closed_at": "2008-05-17T21:40:24Z",
     "created_at": "2008-05-17T20:52:12Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- fix broken gsl.ode setup.py code",
+    "title": "[with patch; positive review] cygwin -- fix broken gsl.ode setup.py code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3246",
     "user": "https://github.com/williamstein"

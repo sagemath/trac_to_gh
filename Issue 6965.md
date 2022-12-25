@@ -4,9 +4,11 @@ archive/issues_006965.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @jasongrout\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61612a7bcca169e7/17f2ab8eb4f63b7f):\n\n```\nI should have posted this question here instead of at #6865, as the\nanswer is probably interesting to many people here.  I'd heard things\nabout MANIFEST.in, but for some reason didn't have a clear idea of what\nit was or what I should do about it.  It would be nice if something was\nadded to the developer's guide... \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6965\n\n",
+    "closed_at": "2010-01-03T22:04:51Z",
     "created_at": "2009-09-20T02:56:51Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "preventing repository corruption with MANIFEST.in",

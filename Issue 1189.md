@@ -1,16 +1,16 @@
-# Issue 1189: update sympy to 0.5.7, patch to make SymPy and SAGE work nicely
+# Issue 1189: [with patch, with positive review] SymPy <-> SAGE automatic conversion
 
 archive/issues_001189.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPlease update to sympy 0.5.7 using the attached spkg.\n\nThen apply the attached patch that will allow SAGE to freely mix SymPy and SAGE expressions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1189\n\n",
+    "closed_at": "2007-12-10T22:30:24Z",
     "created_at": "2007-11-17T00:15:13Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "update sympy to 0.5.7, patch to make SymPy and SAGE work nicely",
+    "title": "[with patch, with positive review] SymPy <-> SAGE automatic conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1189",
     "user": "https://github.com/certik"

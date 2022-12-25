@@ -1,16 +1,17 @@
-# Issue 5101: [with patch, needs review] more types for sage_input: vectors, matrices, etc.
+# Issue 5101: [with patch, positive review] more types for sage_input: vectors, matrices, etc.
 
 archive/issues_005101.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @jasongrout\n\nI'm attaching a patch to increase sage_input support.  Newly supported are floats, elements of RDF and CC, vectors, and matrices (sparse and dense).  I also added some new features to sage_input for handling these new types, and fixed a bug in matrix_modn_sparse that was exposed in the process (sorry, the bug fix really should have been a separate patch).\n\nThis patch depends on #2898 (and hence indirectly on #3938).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5101\n\n",
+    "closed_at": "2009-02-09T09:05:19Z",
     "created_at": "2009-01-25T20:32:52Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] more types for sage_input: vectors, matrices, etc.",
+    "title": "[with patch, positive review] more types for sage_input: vectors, matrices, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5101",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

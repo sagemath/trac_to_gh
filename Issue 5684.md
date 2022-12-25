@@ -1,16 +1,17 @@
-# Issue 5684: [with patch, needs review] Taking negative powers of Laurent polynomial throws exception
+# Issue 5684: [with patch, positive review] Taking negative powers of Laurent polynomial throws exception
 
 archive/issues_005684.json:
 ```json
 {
     "body": "Assignee: tbd\n\nTaking negative powers of a Laurent polynomial doesn't currently work due to a typo in LaurentPolynomial_mpair.__pow__(). The attached patch fixes this.\n\n```\nsage: F.<t> = LaurentPolynomialRing(GF(3))\nsage: (1+t)^(-1)\nTypeError: fraction_field() takes no arguments (1 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5684\n\n",
+    "closed_at": "2009-04-13T01:49:40Z",
     "created_at": "2009-04-04T20:40:48Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Taking negative powers of Laurent polynomial throws exception",
+    "title": "[with patch, positive review] Taking negative powers of Laurent polynomial throws exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5684",
     "user": "https://github.com/wjp"

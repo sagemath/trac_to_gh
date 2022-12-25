@@ -1,9 +1,10 @@
-# Issue 7604: Bug in continued fractions module (contfrac).  Patch attached
+# Issue 7604: Bug in continued fractions module (contfrac)
 
 archive/issues_007604.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  solevillar@gmail.com\n\nKeywords: contfrac\n\nI've found this bug in the contfrac module:\n\n```\nsage: a=continued_fraction(sqrt(2))\nsage: a.qn(0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 5, in <module>\n    a.qn(_sage_const_0 )\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/contfrac.py\", line 461, in qn\n    if len(self.__qn) < n+3:\nAttributeError: 'ContinuedFraction' object has no attribute '_ContinuedFraction__qn'\n```\n\nBut this actually works:\n\n```\nsage: a=continued_fraction(sqrt(2))\nsage: b=a.pn(0)\nsage: a.qn(0)\n1\n```\n\n\nThat's because the method contfrac.pn initializes the attributes pn and qn so if you call contfrac.qn before calling contfrac.pn the attribute qn wont be initialized and that's why it doesn't work in the first snippet.\n\nI wrote a patch that solves this problem (minor changes, very easy to solve). I'm attaching that patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7604\n\n",
+    "closed_at": "2009-12-07T08:12:11Z",
     "created_at": "2009-12-04T16:37:52Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_007604.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Bug in continued fractions module (contfrac).  Patch attached",
+    "title": "Bug in continued fractions module (contfrac)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7604",
     "user": "https://trac.sagemath.org/admin/accounts/users/solevillar"

@@ -4,6 +4,7 @@ archive/issues_003879.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: c_graph\n\n```\nsage: D = DiGraph({0:[1]})\nsage: D.edges()\n[(0, 1, None)]\nsage: DiGraph(D).edges()\n[(0, 1, None)]\nsage: DiGraph(D,implementation=\"c_graph\").edges()\n[(0, 1, None), (1, 0, None)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3879\n\n",
+    "closed_at": "2008-08-16T08:52:09Z",
     "created_at": "2008-08-16T08:49:18Z",
     "labels": [
         "component: graph theory",

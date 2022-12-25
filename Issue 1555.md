@@ -1,16 +1,17 @@
-# Issue 1555: [with patch] typos in tutorial
+# Issue 1555: [with patch, with positive review] typos in tutorial
 
 archive/issues_001555.json:
 ```json
 {
     "body": "Assignee: tba\n\nbill.p from sage-newbie found two typos in tut.tex. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1555\n\n",
+    "closed_at": "2007-12-17T22:02:19Z",
     "created_at": "2007-12-17T17:04:06Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[with patch] typos in tutorial",
+    "title": "[with patch, with positive review] typos in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1555",
     "user": "https://github.com/williamstein"

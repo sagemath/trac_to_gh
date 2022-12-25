@@ -1,21 +1,22 @@
-# Issue 3923: [with patch, not ready for review] notebook -- convert existing templates to Jinja templates
+# Issue 3923: [with patch, positive review] notebook -- convert existing templates to Jinja templates
 
 archive/issues_003923.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nRequires the Jinja Template Engine http://jinja.pocoo.org/2/\n\nIssue created by migration from https://trac.sagemath.org/ticket/3923\n\n",
+    "body": "Assignee: @mwhansen\n\nRequires the Jinja Template Engine http://jinja.pocoo.org/2/\n\nIssue created by migration from https://trac.sagemath.org/ticket/3923\n\n",
+    "closed_at": "2008-10-25T22:55:09Z",
     "created_at": "2008-08-22T00:11:17Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, not ready for review] notebook -- convert existing templates to Jinja templates",
+    "title": "[with patch, positive review] notebook -- convert existing templates to Jinja templates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3923",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Requires the Jinja Template Engine http://jinja.pocoo.org/2/
 

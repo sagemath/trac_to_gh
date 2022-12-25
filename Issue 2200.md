@@ -4,6 +4,7 @@ archive/issues_002200.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nAs part of adding Debian copyright files to all the Debian packages, I tried to verify the copyright status of all the SAGE dependencies I'm packaging for Debian.  The following are the list of packages for which I have questions about:\n\n- givaro: I can only verify this is GPL2; is it supposed to be GPL3 compatible?\n\n- genus2reduction: The genus2reduction package itself doesn't mention copyright; though the SAGE COPYING.txt file claims GPL...\n\n- libm4ri: I can't find an upstream URL for this.  Is there one?\n\n- tachyon: still has 4-clause BSD in the sources (It apparently hasn't been released since the author agreed to relicense to 3-clause over email; since the email is 6 months old, it might be useful to email John Stone again?).\n\n- sympow: the copyright statement in the SAGE COPYING.txt differs from that in the sympow sources (the latter seems to not be a standard BSD license).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2200\n\n",
+    "closed_at": "2008-04-01T20:38:43Z",
     "created_at": "2008-02-17T21:53:31Z",
     "labels": [
         "component: debian-package"

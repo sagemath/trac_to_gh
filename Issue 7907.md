@@ -3,7 +3,8 @@
 archive/issues_007907.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @categorie shumow\n\nKeywords: isogeny\n\nThe method  __compute_omega_general() in ell_curve_isogeny.py contains\n\n```\n        for j  in xrange(0,n-1):\n            psi_prpr = psi_prpr + \\\n                binomial(j+2,2)*psi_coeffs[(j+2)]*cur_x_pow\n            cur_x_pow = x*cur_x_pow\n```\nwhere the degree of the isogeny is 2*n+1.   In degree 3 (the only case doctested) n=1 and the loop is empty.  Otherwise there is a run-time error since the name \"binomial\" has not been imported.\n\nThis will be simple to patch, but of course as this indicated that higher degree isogenies in char.2 have not been tested, other issues might arise.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7907\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie shumow\n\nKeywords: isogeny\n\nThe method  `__compute_omega_general()` in ell_curve_isogeny.py contains\n\n```\n        for j  in xrange(0,n-1):\n            psi_prpr = psi_prpr + \\\n                binomial(j+2,2)*psi_coeffs[(j+2)]*cur_x_pow\n            cur_x_pow = x*cur_x_pow\n```\nwhere the degree of the isogeny is 2*n+1.   In degree 3 (the only case doctested) n=1 and the loop is empty.  Otherwise there is a run-time error since the name \"binomial\" has not been imported.\n\nThis will be simple to patch, but of course as this indicated that higher degree isogenies in char.2 have not been tested, other issues might arise.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7907\n\n",
+    "closed_at": "2010-01-13T08:02:18Z",
     "created_at": "2010-01-12T12:36:44Z",
     "labels": [
         "component: elliptic curves",
@@ -22,7 +23,7 @@ CC:  @categorie shumow
 
 Keywords: isogeny
 
-The method  __compute_omega_general() in ell_curve_isogeny.py contains
+The method  `__compute_omega_general()` in ell_curve_isogeny.py contains
 
 ```
         for j  in xrange(0,n-1):

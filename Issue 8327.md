@@ -3,7 +3,8 @@
 archive/issues_008327.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  sage-combinat cwitty\n\nKeywords: Cyclotomic field, Zumbroich basis\n\nHere is a user story for this feature.\n\nWe construct the universal cyclotomic field::\n\n```\n    sage: F = CyclotomicField()\n```\n\nThis field contains all roots of unity:\n\n```\n    sage: z3 = F.zeta(3)\n    sage: z3\n    E(3)\n    sage: z3^3\n    1\n    sage: z5 = F.zeta(5)\n    sage: z5\n    E(5)\n    sage: z5^5\n    1\n```\n\nIt comes equipped with a distinguished basis, called the Zumbroich\nbasis, which consists of a strict subset of all roots of unity::\n\n```\n    sage: z9 = F.zeta(9)\n    -E(9)^4-E(9)^7\n    sage: z3 * z5\n    sage: E(15)^8\n    sage: z3 + z5\n    -E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14\n    sage: [z9^i for i in range(0,9)]\n    [1, -E(9)^4-E(9)^7, E(9)^2, E(3), E(9)^4, E(9)^5, E(3)^2, E(9)^7, -E(9)^2-E(9)^5 ]\n```\n\nNote: we might want some other style of pretty printing.\n\nThe following is called AsRootOfUnity in Chevie; we might want instead\nto use (z1*z3).multiplicative_order()::\n\n```\n    sage: (z1*z3).as_root_of_unity()\n    11/18\n```\n\nDepending on the progress on #6391 (lib gap), we might want to\nimplement this directly in Sage or to instead expose GAP's\nimplementation, creating elements as in::\n\n```\nsage: z5 = gap(\"E(5)\")\nsage: z3 = gap(\"E(3)\")\nsage: z3+z5\n-E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8327\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  sage-combinat cwitty\n\nKeywords: Cyclotomic field, Zumbroich basis\n\nThis patch provides the universal cyclotomic field\n\n```\n    sage: UCF.<E> = UniversalCyclotomicField(); UCF\n    Universal Cyclotomic Field endowed with the Zumbroich basis\n```\n\nin sage. This field is the smallest field extension of QQ which contains all roots of unity.\n\n```\n    sage: E(3); E(3)^3\n    E(3)\n    1\n    sage: E(6); E(6)^2; E(6)^3; E(6)^6\n    -E(3)^2\n    E(3)\n    -1\n    1\n```\n\nIt comes equipped with a distinguished basis, called the Zumbroich\nbasis, which gives, for any n, A basis of QQ( E(n) ) over QQ, where (n,k) stands for E(n)^k.\n\n```\n    sage: UCF.zumbroich_basis(6)\n    [(6, 2), (6, 4)]\n```\n\nAs seen for E(6), every element in UCF is expressed in terms of the smallest cyclotomic field in which it is contained.\n\n```\nsage: E(6)*E(4)\n-E(12)^11\n```\n\nIt provides arithmetics on UCF as addition, multiplication, and inverses:\n\n```\n    sage: E(3)+E(4)\n    E(12)^4 - E(12)^7 - E(12)^11\n    sage: E(3)*E(4)\n    E(12)^7\n    sage: (E(3)+E(4)).inverse()\n    E(12)^4 + E(12)^8 + E(12)^11\n    sage: (E(3)+E(4))*(E(3)+E(4)).inverse()\n    1\n```\n\nAnd also things like Galois conjugates.\n\n```\n    sage: (E(3)+E(4)).galois_conjugates()\n    [E(12)^4 - E(12)^7 - E(12)^11, -E(12)^7 + E(12)^8 - E(12)^11, E(12)^4 + E(12)^7 + E(12)^11, E(12)^7 + E(12)^8 + E(12)^11]\n```\n\nThe ticket does not use the gap interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8327\n\n",
+    "closed_at": "2013-02-05T08:16:37Z",
     "created_at": "2010-02-22T17:48:55Z",
     "labels": [
         "component: number fields"
@@ -15,69 +16,68 @@ archive/issues_008327.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @loefflerd
+Assignee: @jdemeyer
 
 CC:  sage-combinat cwitty
 
 Keywords: Cyclotomic field, Zumbroich basis
 
-Here is a user story for this feature.
-
-We construct the universal cyclotomic field::
+This patch provides the universal cyclotomic field
 
 ```
-    sage: F = CyclotomicField()
+    sage: UCF.<E> = UniversalCyclotomicField(); UCF
+    Universal Cyclotomic Field endowed with the Zumbroich basis
 ```
 
-This field contains all roots of unity:
+in sage. This field is the smallest field extension of QQ which contains all roots of unity.
 
 ```
-    sage: z3 = F.zeta(3)
-    sage: z3
+    sage: E(3); E(3)^3
     E(3)
-    sage: z3^3
     1
-    sage: z5 = F.zeta(5)
-    sage: z5
-    E(5)
-    sage: z5^5
+    sage: E(6); E(6)^2; E(6)^3; E(6)^6
+    -E(3)^2
+    E(3)
+    -1
     1
 ```
 
 It comes equipped with a distinguished basis, called the Zumbroich
-basis, which consists of a strict subset of all roots of unity::
+basis, which gives, for any n, A basis of QQ( E(n) ) over QQ, where (n,k) stands for E(n)^k.
 
 ```
-    sage: z9 = F.zeta(9)
-    -E(9)^4-E(9)^7
-    sage: z3 * z5
-    sage: E(15)^8
-    sage: z3 + z5
-    -E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14
-    sage: [z9^i for i in range(0,9)]
-    [1, -E(9)^4-E(9)^7, E(9)^2, E(3), E(9)^4, E(9)^5, E(3)^2, E(9)^7, -E(9)^2-E(9)^5 ]
+    sage: UCF.zumbroich_basis(6)
+    [(6, 2), (6, 4)]
 ```
 
-Note: we might want some other style of pretty printing.
-
-The following is called AsRootOfUnity in Chevie; we might want instead
-to use (z1*z3).multiplicative_order()::
+As seen for E(6), every element in UCF is expressed in terms of the smallest cyclotomic field in which it is contained.
 
 ```
-    sage: (z1*z3).as_root_of_unity()
-    11/18
+sage: E(6)*E(4)
+-E(12)^11
 ```
 
-Depending on the progress on #6391 (lib gap), we might want to
-implement this directly in Sage or to instead expose GAP's
-implementation, creating elements as in::
+It provides arithmetics on UCF as addition, multiplication, and inverses:
 
 ```
-sage: z5 = gap("E(5)")
-sage: z3 = gap("E(3)")
-sage: z3+z5
--E(15)^2-2*E(15)^8-E(15)^11-E(15)^13-E(15)^14
+    sage: E(3)+E(4)
+    E(12)^4 - E(12)^7 - E(12)^11
+    sage: E(3)*E(4)
+    E(12)^7
+    sage: (E(3)+E(4)).inverse()
+    E(12)^4 + E(12)^8 + E(12)^11
+    sage: (E(3)+E(4))*(E(3)+E(4)).inverse()
+    1
 ```
+
+And also things like Galois conjugates.
+
+```
+    sage: (E(3)+E(4)).galois_conjugates()
+    [E(12)^4 - E(12)^7 - E(12)^11, -E(12)^7 + E(12)^8 - E(12)^11, E(12)^4 + E(12)^7 + E(12)^11, E(12)^7 + E(12)^8 + E(12)^11]
+```
+
+The ticket does not use the gap interface.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8327
 

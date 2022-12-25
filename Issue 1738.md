@@ -4,6 +4,7 @@ archive/issues_001738.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNegative exponents put fraction field elements in the denominator of a fraction field element.\n\n```\nsage: R.<x>=ZZ[]\nsage: (1/x)^-3\n1/(1/x^3)\n```\n\nWith the patch:\n\n```\nsage: R.<x>=ZZ[]\nsage: (1/x)^-3\nx^3\n```\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/1738\n\n",
+    "closed_at": "2008-01-16T22:05:40Z",
     "created_at": "2008-01-10T01:49:26Z",
     "labels": [
         "component: algebraic geometry",

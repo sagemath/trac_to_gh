@@ -1,17 +1,18 @@
-# Issue 5952: Worksheet downloading blocks the entire server
+# Issue 5952: [with patch, positive review] Worksheet downloading blocks the entire server
 
 archive/issues_005952.json:
 ```json
 {
     "body": "Assignee: tbd\n\n#2740 is great to have, but we need to have a way to disable it, at least on the public server, until the blocking issue gets resolved\n\nIssue created by migration from https://trac.sagemath.org/ticket/5952\n\n",
+    "closed_at": "2009-05-04T10:12:04Z",
     "created_at": "2009-05-01T04:58:18Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Worksheet downloading blocks the entire server",
+    "title": "[with patch, positive review] Worksheet downloading blocks the entire server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5952",
     "user": "https://github.com/robertwb"

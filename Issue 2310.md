@@ -1,16 +1,17 @@
-# Issue 2310: [with patch; needs review] bug attaching files in files that are attached
+# Issue 2310: [with patch; positive review] bug attaching files in files that are attached
 
 archive/issues_002310.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI found this bug when testing #1964.  To replicate, create a file a.sage and put \n\n```\nattach b.sage\n```\nin it.  This fails, but {{{attach \"b.sage\"} works.  This was a problem before this patch, so it is NOT the fault of this patch.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2310\n\n",
+    "closed_at": "2008-03-05T05:33:19Z",
     "created_at": "2008-02-26T04:15:27Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch; needs review] bug attaching files in files that are attached",
+    "title": "[with patch; positive review] bug attaching files in files that are attached",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2310",
     "user": "https://github.com/williamstein"

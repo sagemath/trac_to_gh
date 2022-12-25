@@ -3,10 +3,11 @@
 archive/issues_002335.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSee ticket #1209\n\nIssue created by migration from https://trac.sagemath.org/ticket/2335\n\n",
+    "body": "Assignee: @mwhansen\n\nSee ticket #1209\n\nIssue created by migration from https://trac.sagemath.org/ticket/2335\n\n",
     "created_at": "2008-02-27T19:52:05Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add documentation to the programming guide about _sage_src_",
@@ -15,7 +16,7 @@ archive/issues_002335.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 See ticket #1209
 

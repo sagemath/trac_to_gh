@@ -1,16 +1,17 @@
-# Issue 2590: plotting a line with no points throws a nonsensical error
+# Issue 2590: [with patch, positive review] plotting a line with no points throws a nonsensical error
 
 archive/issues_002590.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe first attached patch returns an empty graphic when plotting a line with no points.\n\nThis addresses the concern in #2038 about not having any valid points in a plot (by returning an empty plot).\n\nThe second patch modifies using a tidbit from moretti's patch in #2038---he should get credit for it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2590\n\n",
+    "closed_at": "2008-04-12T11:29:26Z",
     "created_at": "2008-03-19T01:38:27Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "plotting a line with no points throws a nonsensical error",
+    "title": "[with patch, positive review] plotting a line with no points throws a nonsensical error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2590",
     "user": "https://github.com/jasongrout"

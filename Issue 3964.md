@@ -3,7 +3,8 @@
 archive/issues_003964.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: projective space morphism\n\nAlex Ghitsa reported:\n\n```\nI am fairly certain the following two things are bugs, but I want to\ndouble-check that I'm not doing something stupid before submitting a ticket:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x-y, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x - y : x*y)\n\n\nThis is nonsense: there is no morphism from P1 to P1 given by those\nequations, since the two polynomials x-y and x*y are not homogeneous of\nthe same degree.  I think Sage should throw a ValueError here.\n\nThe second example:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x^2, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x^2 : x*y)\n\n\nThis is also bad: the two polynomials are now homogeneous of degree 2,\nbut they are not relatively prime (and so this is not a morphism from P1\nto P1, but rather a rational map since it is not defined at (0 : y)).  I\nthink Sage should also throw a ValueError here.\n\n(Or maybe I'm doing things wrong, in which case I'd love to find out how\nto make this work.)\n```\n\nto which John Cremona added:\n\n```\nYou are definitely right.  The problem lies (as far as I can see) in\nsage.schemes.generic in the __init__ funtion of class\nSchemeMorphism_on_points_projective_space.  (I only found this out by\ntring to construct a morphism from P^1 to P^1 using 3 polynomials,\nwhich did raise an error in this very function.)\n\nIt appears that the only check this function does is that the number\nof polys is correct.  It does not check that they are actually polys,\nor have the right number of variables, let alone that they are coprime\nand homogeneous of the same degree:\n\nsage: S.<u,v,w> = QQ[]\nsage: f = H([u,v])\nsage: f = H([u*v*w,u+v+w])\nsage: f = H([exp(u),exp(v)])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (e^u : e^v)\n\nwith H as in your example.\n\nThis definitely deserves a ticket, which I will create. now.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3964\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: projective space morphism\n\nAlex Ghitza reported:\n\n```\nI am fairly certain the following two things are bugs, but I want to\ndouble-check that I'm not doing something stupid before submitting a ticket:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x-y, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x - y : x*y)\n\n\nThis is nonsense: there is no morphism from P1 to P1 given by those\nequations, since the two polynomials x-y and x*y are not homogeneous of\nthe same degree.  I think Sage should throw a ValueError here.\n\nThe second example:\n\nsage: R.<x,y> = QQ[]\nsage: P1 = ProjectiveSpace(R)\nsage: H = P1.Hom(P1)\nsage: f = H([x^2, x*y])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (x^2 : x*y)\n\n\nThis is also bad: the two polynomials are now homogeneous of degree 2,\nbut they are not relatively prime (and so this is not a morphism from P1\nto P1, but rather a rational map since it is not defined at (0 : y)).  I\nthink Sage should also throw a ValueError here.\n\n(Or maybe I'm doing things wrong, in which case I'd love to find out how\nto make this work.)\n```\n\nto which John Cremona added:\n\n```\nYou are definitely right.  The problem lies (as far as I can see) in\nsage.schemes.generic in the __init__ funtion of class\nSchemeMorphism_on_points_projective_space.  (I only found this out by\ntring to construct a morphism from P^1 to P^1 using 3 polynomials,\nwhich did raise an error in this very function.)\n\nIt appears that the only check this function does is that the number\nof polys is correct.  It does not check that they are actually polys,\nor have the right number of variables, let alone that they are coprime\nand homogeneous of the same degree:\n\nsage: S.<u,v,w> = QQ[]\nsage: f = H([u,v])\nsage: f = H([u*v*w,u+v+w])\nsage: f = H([exp(u),exp(v)])\nsage: f\n\nScheme endomorphism of Projective Space of dimension 1 over Rational Field\n Defn: Defined on coordinates by sending (x : y) to\n       (e^u : e^v)\n\nwith H as in your example.\n\nThis definitely deserves a ticket, which I will create. now.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3964\n\n",
+    "closed_at": "2010-01-18T23:44:40Z",
     "created_at": "2008-08-27T09:06:09Z",
     "labels": [
         "component: algebraic geometry",
@@ -16,11 +17,11 @@ archive/issues_003964.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 Keywords: projective space morphism
 
-Alex Ghitsa reported:
+Alex Ghitza reported:
 
 ```
 I am fairly certain the following two things are bugs, but I want to
@@ -91,6 +92,7 @@ with H as in your example.
 
 This definitely deserves a ticket, which I will create. now.
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3964
 

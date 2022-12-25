@@ -4,6 +4,7 @@ archive/issues_000158.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nsage-make_relative needs to be called after any \"sage -i\".  E.g., installing pyrex\nthen moving sage results in a broken sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/158\n\n",
+    "closed_at": "2006-11-06T07:52:28Z",
     "created_at": "2006-10-27T21:02:30Z",
     "labels": [
         "component: packages: standard",

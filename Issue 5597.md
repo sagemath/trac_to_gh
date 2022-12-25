@@ -1,16 +1,16 @@
-# Issue 5597: [with patch, needs review] rename coercion action methods
+# Issue 5597: Rename coercion action methods
 
 archive/issues_005597.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber @craigcitro\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber @craigcitro\n\nKeywords: actions, left actions, right actions\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
+    "closed_at": "2009-10-21T06:18:48Z",
     "created_at": "2009-03-24T05:09:01Z",
     "labels": [
-        "component: coercion",
-        "bug"
+        "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] rename coercion action methods",
+    "title": "Rename coercion action methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5597",
     "user": "https://github.com/robertwb"
@@ -19,6 +19,8 @@ archive/issues_005597.json:
 Assignee: @robertwb
 
 CC:  @nthiery georgsweber @craigcitro
+
+Keywords: actions, left actions, right actions
 
 ```
 Currently, if A has an action on B (where B is not an A-module) one  

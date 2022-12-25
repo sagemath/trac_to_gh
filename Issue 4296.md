@@ -1,9 +1,10 @@
-# Issue 4296: univariate polynomial power ignores 2nd argument
+# Issue 4296: [with patch, with positive review] univariate polynomial power ignores 2nd argument
 
 archive/issues_004296.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: R = PolynomialRing(GF(2), x)\nsage: f = R(x^9 + x^7 + x^6 + x^5 + x^4 + x^2 + x)\nsage: h = R(x^10 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + 1)\nsage: (f^2) % h\nx^9 + x^8 + x^7 + x^5 + x^3\nsage: pow(f, 2, h)\nx^18 + x^14 + x^12 + x^10 + x^8 + x^4 + x^2\n```\nWe should expect both results to be equal to f^2 mod h.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4296\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R = PolynomialRing(GF(2), x)\nsage: f = R(x^9 + x^7 + x^6 + x^5 + x^4 + x^2 + x)\nsage: h = R(x^10 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + 1)\nsage: (f^2) % h\nx^9 + x^8 + x^7 + x^5 + x^3\nsage: pow(f, 2, h)\nx^18 + x^14 + x^12 + x^10 + x^8 + x^4 + x^2\n```\nWe should expect both results to be equal to f<sup>2</sup> mod h.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4296\n\n",
+    "closed_at": "2009-01-19T04:16:38Z",
     "created_at": "2008-10-15T13:47:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_004296.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "univariate polynomial power ignores 2nd argument",
+    "title": "[with patch, with positive review] univariate polynomial power ignores 2nd argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4296",
     "user": "https://github.com/zimmermann6"
@@ -28,7 +29,7 @@ x^9 + x^8 + x^7 + x^5 + x^3
 sage: pow(f, 2, h)
 x^18 + x^14 + x^12 + x^10 + x^8 + x^4 + x^2
 ```
-We should expect both results to be equal to f^2 mod h.
+We should expect both results to be equal to f<sup>2</sup> mod h.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4296
 

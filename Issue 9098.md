@@ -3,7 +3,8 @@
 archive/issues_009098.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\ngap is building as a 32-bit application:\n\n```\nconfig.status: creating gac\nconfig.status: creating Makefile\nconfig.status: creating config.h\n( cd bin/i386-pc-solaris2.11-gcc ; make CC='gcc' )\nmake[3]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/gap-4.4.12.p3/src/bin/i386-pc-solaris2.11-gcc'\ngcc -I. -I../.. -DCONFIG_H -Wall -g -O2  -o ariths.o -c ../../src/ariths.c\ngcc -I. -I../.. -DCONFIG_H -Wall -g -O2  -o blister.o -c ../../src/blister.c\n```\n\nAlthough it builds, the binaries are 32-bit:\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ find . -exec file {} \\; | grep 32-bit\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/objcftl.o:\tELF 32-bit LSB relocatable 80386 Version 1\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/saveload.o:\tELF 32-bit LSB relocatable 80386 Version 1\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/listoper.o:\tELF 32-bit LSB relocatable 80386 Version 1\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/read.o:\tELF 32-bit LSB relocatable 80386 Version 1\n```\n\nThere's nothing in spkg-install to add the -m64 flag on any operating system, so I doubt this ever built as a 64-bit application on OS X. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9098\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\ngap is building as a 32-bit application:\n\n```\nconfig.status: creating gac\nconfig.status: creating Makefile\nconfig.status: creating config.h\n( cd bin/i386-pc-solaris2.11-gcc ; make CC='gcc' )\nmake[3]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/gap-4.4.12.p3/src/bin/i386-pc-solaris2.11-gcc'\ngcc -I. -I../.. -DCONFIG_H -Wall -g -O2  -o ariths.o -c ../../src/ariths.c\ngcc -I. -I../.. -DCONFIG_H -Wall -g -O2  -o blister.o -c ../../src/blister.c\n```\n\nAlthough it builds, the binaries are 32-bit:\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ find . -exec file {} \\; | grep 32-bit\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/objcftl.o: ELF 32-bit LSB relocatable 80386 Version 1\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/saveload.o: ELF 32-bit LSB relocatable 80386 Version 1\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/listoper.o: ELF 32-bit LSB relocatable 80386 Version 1\n./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/read.o: ELF 32-bit LSB relocatable 80386 Version 1\n```\n\nThere's nothing in spkg-install to add the -m64 flag on any operating system, so I doubt this ever built as a 64-bit application on OS X. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9098\n\n",
+    "closed_at": "2010-06-25T15:51:57Z",
     "created_at": "2010-05-31T01:02:38Z",
     "labels": [
         "component: porting: solaris",
@@ -36,15 +37,15 @@ Although it builds, the binaries are 32-bit:
 
 ```
 drkirkby@hawk:~/sage-4.4.2$ find . -exec file {} \; | grep 32-bit
-./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/objcftl.o:	ELF 32-bit LSB relocatable 80386 Version 1
-./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/saveload.o:	ELF 32-bit LSB relocatable 80386 Version 1
-./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/listoper.o:	ELF 32-bit LSB relocatable 80386 Version 1
-./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/read.o:	ELF 32-bit LSB relocatable 80386 Version 1
+./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/objcftl.o: ELF 32-bit LSB relocatable 80386 Version 1
+./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/saveload.o: ELF 32-bit LSB relocatable 80386 Version 1
+./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/listoper.o: ELF 32-bit LSB relocatable 80386 Version 1
+./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/read.o: ELF 32-bit LSB relocatable 80386 Version 1
 ```
 
 There's nothing in spkg-install to add the -m64 flag on any operating system, so I doubt this ever built as a 64-bit application on OS X. 
 
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9098
 

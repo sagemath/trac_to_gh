@@ -1,16 +1,18 @@
-# Issue 9915: Change Shafarevich-Tate in BSD.py (also fixes doctests)
+# Issue 9915: Change Shafarevich-Tate in BSD, ell_rational_field and padic_lseries (also fixes doctests)
 
 archive/issues_009915.json:
 ```json
 {
-    "body": "Assignee: @nexttime\n\nCC:  @JohnCremona @kcrisman @qed777 @categorie\n\nDue to #9330, some doctests have to be adapted (and also the documentation).\n\nI've **not** changed the name in the in the references' titles of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9916\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @JohnCremona @kcrisman @qed777 @categorie\n\nDue to #9330, some doctests have to be adapted (and also the documentation), simply by changing *Shafarevich-Tate* to *Tate-Shafarevich*, which is now consistently used as the group's name.\n\nI've **not** changed the name in the references' titles of course.\n\n---\n\n## Note to the release manager\n\nApply **both** patches (to the Sage library).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9916\n\n",
+    "closed_at": "2010-09-17T03:28:34Z",
     "created_at": "2010-09-16T09:41:21Z",
     "labels": [
         "component: elliptic curves",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Change Shafarevich-Tate in BSD.py (also fixes doctests)",
+    "title": "Change Shafarevich-Tate in BSD, ell_rational_field and padic_lseries (also fixes doctests)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9915",
     "user": "https://github.com/nexttime"
@@ -20,9 +22,16 @@ Assignee: @nexttime
 
 CC:  @JohnCremona @kcrisman @qed777 @categorie
 
-Due to #9330, some doctests have to be adapted (and also the documentation).
+Due to #9330, some doctests have to be adapted (and also the documentation), simply by changing *Shafarevich-Tate* to *Tate-Shafarevich*, which is now consistently used as the group's name.
 
-I've **not** changed the name in the in the references' titles of course.
+I've **not** changed the name in the references' titles of course.
+
+---
+
+## Note to the release manager
+
+Apply **both** patches (to the Sage library).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9916
 

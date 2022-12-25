@@ -1,22 +1,23 @@
-# Issue 6307: Move javascript out of python-land
+# Issue 6307: [with patch, positive review] Move javascript out of python-land
 
 archive/issues_006307.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAs Mike Hansen noted in #5564, the javascript shouldn't be in a python file in triple-quoted strings.  Unfortunately, the patch he submitted to do this bitrotted. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6307\n\n",
+    "body": "Assignee: boothby\n\nAs Mike Hansen noted in #5564, the javascript shouldn't be in a python file in triple-quoted strings.  Unfortunately, the patch he submitted to do this bitrotted. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6307\n\n",
+    "closed_at": "2009-07-23T09:16:17Z",
     "created_at": "2009-06-16T05:42:28Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Move javascript out of python-land",
+    "title": "[with patch, positive review] Move javascript out of python-land",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6307",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: tbd
+Assignee: boothby
 
 As Mike Hansen noted in #5564, the javascript shouldn't be in a python file in triple-quoted strings.  Unfortunately, the patch he submitted to do this bitrotted. 
 

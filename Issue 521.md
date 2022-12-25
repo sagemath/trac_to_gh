@@ -1,16 +1,17 @@
-# Issue 521: put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py
+# Issue 521: [with partial patch, positive review] put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py
 
 archive/issues_000521.json:
 ```json
 {
     "body": "Assignee: dmharvey\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/521\n\n",
+    "closed_at": "2008-02-17T17:12:05Z",
     "created_at": "2007-08-29T22:22:07Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py",
+    "title": "[with partial patch, positive review] put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/521",
     "user": "https://github.com/williamstein"

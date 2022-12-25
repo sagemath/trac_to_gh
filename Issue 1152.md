@@ -1,16 +1,17 @@
-# Issue 1152: [UPDATED SPKG] sqlite 3.5.2
+# Issue 1152: [broken spkg] sqlite 3.5.2
 
 archive/issues_001152.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nhttp://sage.math.washington.edu/home/yqiang/sqlite-3.5.2.p1.spkg\n\nbuild and tested on OS X 10.5, needs some more testing before going into 2.8.13\n\nIssue created by migration from https://trac.sagemath.org/ticket/1152\n\n",
+    "closed_at": "2007-12-14T02:10:20Z",
     "created_at": "2007-11-12T06:52:55Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[UPDATED SPKG] sqlite 3.5.2",
+    "title": "[broken spkg] sqlite 3.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1152",
     "user": "https://github.com/yqiang"

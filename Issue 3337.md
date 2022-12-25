@@ -1,15 +1,16 @@
-# Issue 3337: Upgrade gap-guava to new 3.5 release
+# Issue 3337: [with spkg, positive review] Upgrade gap-guava to new 4.4.12/3.9 release
 
 archive/issues_003337.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nUpgrading guava to 3.5 would be especially helpful for the Debianization, because that version includes fixes to several upstream problems that cause problems for the Debian package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3337\n\n",
+    "closed_at": "2009-02-14T01:43:50Z",
     "created_at": "2008-05-30T06:06:30Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Upgrade gap-guava to new 3.5 release",
+    "title": "[with spkg, positive review] Upgrade gap-guava to new 4.4.12/3.9 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3337",
     "user": "https://github.com/timabbott"

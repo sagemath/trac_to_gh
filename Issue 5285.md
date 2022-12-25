@@ -1,16 +1,17 @@
-# Issue 5285: Dyck Paths documentation problem
+# Issue 5285: [with patch; positive review] Dyck Paths documentation problem
 
 archive/issues_005285.json:
 ```json
 {
-    "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: dyck words\n\nMike Zabrocki posted the following to sage.combinat.devel:\n\nHi,\nI'm making a bug report instead of fixing this myself.\n\nI have a student who is working on Dyck paths and\nshe read the documentation for some of the code\nand noticed a few inconsistencies.\n\na.b_statistic(self)\n\nReturns the b-statistic for the Dyck word.\n\nOne can view a balanced Dyck word as a lattice path from (0,0) to\n(n,n) in the first quadrant by letting '1's represent steps in\nthe direction (1,0) and '0's represent steps in the direction\n(0,1).  The resulting path will remain weakly above the\ndiagonal y = x.\n\nAs she points out (1,0) should mean horizontal step (following\nDescartes) and (0,1) should be a vertical step in which case\nthe path will be below the diagonal compared to what the code\nused (e.g. 11100010 steps horizontally first by the documentation\nhence is 'below' the diagonal).  I believe that interchanging (1,0)\nand (0,1) should fix the inconsistency in this part of the\ndocumentation.\n\nThen further down the documentation reads:\n\nWe can think of our bounce path as describing the trail of a \nbilliard ball shot North from (0, 0), which \"bounces\" right\nwhenever it encounters a horizontal step and \"bounces\" up\nwhen it encounters the line y = x. The bouncing ball will strike\nthe diagonal at places (0, 0), (j_1, j_1), (j_2, j_2), ... ,\n(j_r-1, j_r-1), (j_r, j_r) = (n, n). We define the b-statistic to\nbe the sum sum_{i=1}^{r-1} n - j_i.\n\nand in the the examples (one of many):\n\n```\n  sage: DyckWord([1,1,1,0,0,1,0,0]).b_statistic()\n  2\n```\n\ndoes not agree with the description because the diagonal\nplaces it hits are (0,0), (3,3), (4,4) and 4-3 = 1.\nThe documentation does not agree with the code.\n\nWhat is really happening is different.  The bounce path starts\nat (n,n), moves left and down and the statistic is the sum\nof the coordinates j_i where the bounce path hits the diagonal\nat (j_i, j_i).\n\nThe paragraph should read (which is no\nlonger quoting *directly* from Jim Haglund's reference):\n\nWe can think of our bounce path as describing the trail of a\nbilliard ball shot West from (n, n), which \"bounces\" down\nwhenever it encounters a vertical step and \"bounces\" left\nwhen it encounters the line y = x. The bouncing ball will strike\nthe diagonal at places (0, 0), (j_1, j_1), (j_2, j_2), ... ,\n(j_r-1, j_r-1), (j_r, j_r) = (n, n). We define the b-statistic to\nbe the sum sum_{i=1}^{r-1} j_i.\n\nIt seems easier to me to change the documentation than the code.\nBoth definitions of bounce statistic are valid.\nThe documentation was included directly from the reference,\nbut does not follow the code which does indeed refer to \"left\" and\n\"drop\" rather than \"right\" and \"up\"\n\n-Mike\n\nIssue created by migration from https://trac.sagemath.org/ticket/5285\n\n",
+    "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: dyck words\n\nMike Zabrocki posted the following to sage.combinat.devel:\n\nHi,\nI'm making a bug report instead of fixing this myself.\n\nI have a student who is working on Dyck paths and\nshe read the documentation for some of the code\nand noticed a few inconsistencies.\n\na.b_statistic(self)\n\nReturns the b-statistic for the Dyck word.\n\nOne can view a balanced Dyck word as a lattice path from (0,0) to\n(n,n) in the first quadrant by letting '1's represent steps in\nthe direction (1,0) and '0's represent steps in the direction\n(0,1).  The resulting path will remain weakly above the\ndiagonal y = x.\n\nAs she points out (1,0) should mean horizontal step (following\nDescartes) and (0,1) should be a vertical step in which case\nthe path will be below the diagonal compared to what the code\nused (e.g. 11100010 steps horizontally first by the documentation\nhence is 'below' the diagonal).  I believe that interchanging (1,0)\nand (0,1) should fix the inconsistency in this part of the\ndocumentation.\n\nThen further down the documentation reads:\n\nWe can think of our bounce path as describing the trail of a \nbilliard ball shot North from (0, 0), which \"bounces\" right\nwhenever it encounters a horizontal step and \"bounces\" up\nwhen it encounters the line y = x. The bouncing ball will strike\nthe diagonal at places (0, 0), `(j_1, j_1), (j_2, j_2)`, ... ,\n`(j_r-1, j_r-1), (j_r, j_r) = (n, n)`. We define the b-statistic to\nbe the `sum sum_{i=1}^{r-1} n - j_i`.\n\nand in the the examples (one of many):\n\n```\n  sage: DyckWord([1,1,1,0,0,1,0,0]).b_statistic()\n  2\n```\n\ndoes not agree with the description because the diagonal\nplaces it hits are (0,0), (3,3), (4,4) and 4-3 = 1.\nThe documentation does not agree with the code.\n\nWhat is really happening is different.  The bounce path starts\nat (n,n), moves left and down and the statistic is the sum\nof the coordinates `j_i` where the bounce path hits the diagonal\nat `(j_i, j_i)`.\n\nThe paragraph should read (which is no\nlonger quoting *directly* from Jim Haglund's reference):\n\nWe can think of our bounce path as describing the trail of a\nbilliard ball shot West from (n, n), which \"bounces\" down\nwhenever it encounters a vertical step and \"bounces\" left\nwhen it encounters the line y = x. The bouncing ball will strike\nthe diagonal at places `(0, 0), (j_1, j_1), (j_2, j_2)`, ... ,\n`(j_r-1, j_r-1), (j_r, j_r) = (n, n)`. We define the b-statistic to\nbe the `sum sum_{i=1}^{r-1} j_i`.\n\nIt seems easier to me to change the documentation than the code.\nBoth definitions of bounce statistic are valid.\nThe documentation was included directly from the reference,\nbut does not follow the code which does indeed refer to \"left\" and\n\"drop\" rather than \"right\" and \"up\"\n\n-Mike\n\nIssue created by migration from https://trac.sagemath.org/ticket/5285\n\n",
+    "closed_at": "2009-02-17T20:21:34Z",
     "created_at": "2009-02-16T14:30:22Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Dyck Paths documentation problem",
+    "title": "[with patch; positive review] Dyck Paths documentation problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5285",
     "user": "https://github.com/jbandlow"
@@ -55,9 +56,9 @@ We can think of our bounce path as describing the trail of a
 billiard ball shot North from (0, 0), which "bounces" right
 whenever it encounters a horizontal step and "bounces" up
 when it encounters the line y = x. The bouncing ball will strike
-the diagonal at places (0, 0), (j_1, j_1), (j_2, j_2), ... ,
-(j_r-1, j_r-1), (j_r, j_r) = (n, n). We define the b-statistic to
-be the sum sum_{i=1}^{r-1} n - j_i.
+the diagonal at places (0, 0), `(j_1, j_1), (j_2, j_2)`, ... ,
+`(j_r-1, j_r-1), (j_r, j_r) = (n, n)`. We define the b-statistic to
+be the `sum sum_{i=1}^{r-1} n - j_i`.
 
 and in the the examples (one of many):
 
@@ -72,8 +73,8 @@ The documentation does not agree with the code.
 
 What is really happening is different.  The bounce path starts
 at (n,n), moves left and down and the statistic is the sum
-of the coordinates j_i where the bounce path hits the diagonal
-at (j_i, j_i).
+of the coordinates `j_i` where the bounce path hits the diagonal
+at `(j_i, j_i)`.
 
 The paragraph should read (which is no
 longer quoting *directly* from Jim Haglund's reference):
@@ -82,9 +83,9 @@ We can think of our bounce path as describing the trail of a
 billiard ball shot West from (n, n), which "bounces" down
 whenever it encounters a vertical step and "bounces" left
 when it encounters the line y = x. The bouncing ball will strike
-the diagonal at places (0, 0), (j_1, j_1), (j_2, j_2), ... ,
-(j_r-1, j_r-1), (j_r, j_r) = (n, n). We define the b-statistic to
-be the sum sum_{i=1}^{r-1} j_i.
+the diagonal at places `(0, 0), (j_1, j_1), (j_2, j_2)`, ... ,
+`(j_r-1, j_r-1), (j_r, j_r) = (n, n)`. We define the b-statistic to
+be the `sum sum_{i=1}^{r-1} j_i`.
 
 It seems easier to me to change the documentation than the code.
 Both definitions of bounce statistic are valid.

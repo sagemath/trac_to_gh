@@ -4,6 +4,7 @@ archive/issues_004421.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe have removed the Java binaries required for surf (which is part of Singular). Since there are optional doctests in sage/rings/polynomial/multi_polynomial_ideal.py that depend on it and since people have complained about it not being available we should add it back via an optional spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4421\n\n",
+    "closed_at": "2017-09-13T18:05:25Z",
     "created_at": "2008-11-02T02:31:43Z",
     "labels": [
         "component: packages: optional",

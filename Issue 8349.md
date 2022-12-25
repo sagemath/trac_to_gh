@@ -4,6 +4,7 @@ archive/issues_008349.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nKeywords: isogeny, elliptic curves\n\nSomething is wrong with the post_isomorphism of isogenies of elliptic curves :\n\n```\nsage: E = EllipticCurve(GF(17), [0,-1,0,-3,-1])\nsage: P = E([16,0])\nsage: phi = E.isogeny(P,codomain=E)\nsage: phi(P)\n(9 : 11 : 1)\nsage: phi(P) in E\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8349\n\n",
+    "closed_at": "2010-03-03T14:06:17Z",
     "created_at": "2010-02-24T17:38:51Z",
     "labels": [
         "component: elliptic curves",

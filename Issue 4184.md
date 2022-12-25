@@ -3,7 +3,8 @@
 archive/issues_004184.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nCurrently we are supporting a fork of jQueryUI-Slider. An upgrade would eliminate the need to support that fork.\n\nThis ticket is related to #3767.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4184\n\n",
+    "body": "Assignee: @jasongrout\n\nCurrently we are supporting a fork of jQueryUI-Slider. An upgrade would eliminate the need to support that fork.\n\nThis ticket is related to #3767.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4184\n\n",
+    "closed_at": "2009-01-19T08:08:07Z",
     "created_at": "2008-09-24T02:40:17Z",
     "labels": [
         "component: interact",
@@ -16,7 +17,7 @@ archive/issues_004184.json:
     "user": "https://github.com/itolkov"
 }
 ```
-Assignee: @itolkov
+Assignee: @jasongrout
 
 Currently we are supporting a fork of jQueryUI-Slider. An upgrade would eliminate the need to support that fork.
 

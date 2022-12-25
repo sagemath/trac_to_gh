@@ -1,15 +1,16 @@
-# Issue 3458: parallel -- a very simple reference api for @parallel and parallel_eval
+# Issue 3458: [with patch, positive review] parallel -- a very simple reference api for @parallel and parallel_eval
 
 archive/issues_003458.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3458\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: editor_wstein\n\nWARNING: This depends on us including pyprocessing into Sage.\nThat spkg is here:\n\nhttp://trac.sagemath.org/sage_trac/ticket/3470\n\nIssue created by migration from https://trac.sagemath.org/ticket/3458\n\n",
+    "closed_at": "2008-06-26T04:22:19Z",
     "created_at": "2008-06-18T03:14:08Z",
     "labels": [
         "component: dsage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "parallel -- a very simple reference api for @parallel and parallel_eval",
+    "title": "[with patch, positive review] parallel -- a very simple reference api for @parallel and parallel_eval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3458",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,12 @@ archive/issues_003458.json:
 ```
 Assignee: @yqiang
 
+Keywords: editor_wstein
 
+WARNING: This depends on us including pyprocessing into Sage.
+That spkg is here:
+
+http://trac.sagemath.org/sage_trac/ticket/3470
 
 Issue created by migration from https://trac.sagemath.org/ticket/3458
 

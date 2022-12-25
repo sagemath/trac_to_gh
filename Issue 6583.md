@@ -1,22 +1,22 @@
-# Issue 6583: Implement two descent over QQ natively in Sage using ratpoints
+# Issue 6583: Implement 2-isogeny descent over QQ natively in Sage using ratpoints
 
 archive/issues_006583.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6583\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @JohnCremona @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6583\n\n",
+    "closed_at": "2010-01-04T04:02:54Z",
     "created_at": "2009-07-21T19:26:23Z",
     "labels": [
-        "component: elliptic curves",
-        "bug"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Implement two descent over QQ natively in Sage using ratpoints",
+    "title": "Implement 2-isogeny descent over QQ natively in Sage using ratpoints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6583",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @loefflerd
+Assignee: @rlmill
 
 CC:  @JohnCremona @williamstein
 

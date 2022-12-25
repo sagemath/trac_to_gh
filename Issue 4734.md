@@ -1,16 +1,17 @@
-# Issue 4734: sage -notebook option now broken
+# Issue 4734: [with patch; positive review] sage -notebook option now broken
 
 archive/issues_004734.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n\nDear Sage-Devels,\n\nLet me again thank you for the excellent work put in building sage.\n\nI've found a bug in the most recent release. Specifically, when\ninvoked with the -notebook switch, the current release does not\nproperly quote paths. So, if I execute:\n\n/Applications/sage/sage -notebook \"/Users/carson/doc/math/\nsage_notebook/\"\n\nSage says:\n\nTraceback (most recent call last):\n File \"/Applications/sage/local/bin/sage-notebook\", line 14, in\n<module>\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n File \"<string>\", line 1\n   notebook(/Users/carson/doc/math/sage_notebook/)\n            ^\nSyntaxError: invalid syntax\n\nIf I edit the offending line in local/bin/sage-notebook:\n\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n\nTo instead read:\n\n   exec \"notebook('\" + \",\".join(sys.argv[1:]) + \"')\"\n\nThen the -notebook switch works as expected. Please consider using the\nfollowing sage-notebook file to correct this bug:\n\nhttp://bentham.k2.t.u-tokyo.ac.jp/media/bugs/sage/sage-notebook\n\nCheers,\n```\n\nMakes sense.  This was indeed caused by a patch in the last version of sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4734\n\n",
+    "closed_at": "2009-02-02T04:58:16Z",
     "created_at": "2008-12-07T04:49:58Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "sage -notebook option now broken",
+    "title": "[with patch; positive review] sage -notebook option now broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4734",
     "user": "https://github.com/williamstein"

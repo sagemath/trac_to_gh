@@ -3,7 +3,8 @@
 archive/issues_000490.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHello,\n\nnot to be surprised by a new gcc version I have started building gcc 4.3 snapshots (20070824 in this particular case) and compile Sage with them. Here is a problem with gmp.h\n\nGivaro's gmp test fails:\n\n```\ng++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp -o gcc-test\nIn file included from gcc-test.cpp:1:\n../../../../local/include/gmp.h:515: error: \u2018std::FILE\u2019 has not been declared\n```\nUncommenting \"std::FILE\" fixes the problem.\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n//using std::FILE;\n#endif\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/490\n\n",
+    "body": "Assignee: mabshoff\n\nHello,\n\nnot to be surprised by a new gcc version I have started building gcc 4.3 snapshots (20070824 in this particular case) and compile Sage with them. Here is a problem with gmp.h\n\nGivaro's gmp test fails:\n\n```\ng++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp -o gcc-test\nIn file included from gcc-test.cpp:1:\n../../../../local/include/gmp.h:515: error: \u2018std::FILE\u2019 has not been declared\n```\nUncommenting \"std::FILE\" fixes the problem.\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n//using std::FILE;\n#endif\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/490\n\n",
+    "closed_at": "2008-04-15T10:53:59Z",
     "created_at": "2007-08-25T23:13:13Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_000490.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Hello,
 

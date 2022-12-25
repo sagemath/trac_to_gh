@@ -3,10 +3,11 @@
 archive/issues_000804.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @pjbruin\n\nKeywords: AlgebraElement, Matrix\n\nPeople just don't want to fix it because you'll have to rebuild everything after editing element.pxd.\n\nIssue created by migration from https://trac.sagemath.org/ticket/804\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @pjbruin\n\nKeywords: AlgebraElement, Matrix\n\nThis ticket makes `Matrix` only inherit from `ModuleElement`.\n\nWarning: it will cause practically all Cython files to be rebuilt.\n\nSee also #15215 (duplicate of this ticket).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/804\n\n",
+    "closed_at": "2014-07-19T04:57:49Z",
     "created_at": "2007-10-03T08:30:30Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -23,7 +24,12 @@ CC:  @jasongrout @pjbruin
 
 Keywords: AlgebraElement, Matrix
 
-People just don't want to fix it because you'll have to rebuild everything after editing element.pxd.
+This ticket makes `Matrix` only inherit from `ModuleElement`.
+
+Warning: it will cause practically all Cython files to be rebuilt.
+
+See also #15215 (duplicate of this ticket).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/804
 

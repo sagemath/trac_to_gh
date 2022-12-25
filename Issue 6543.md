@@ -1,21 +1,22 @@
-# Issue 6543: improve doctests for tachyon
+# Issue 6543: [with patch, needs review] improve doctests for tachyon
 
 archive/issues_006543.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: tachyon, graphics, 3d, raytracer\n\nCurrently tachyon is hardly documented or doctested at all, which is bad.  I (Marshall Hampton) will try to work on bringing it up to 100% coverage within the next month or so.  If someone wants to beat me to it, please let me know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6543\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: tachyon, graphics, 3d, raytracer\n\nCurrently tachyon is hardly documented or doctested at all, which is bad.  I (Marshall Hampton) will try to work on bringing it up to 100% coverage within the next month or so.  If someone wants to beat me to it, please let me know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6543\n\n",
+    "closed_at": "2009-10-31T07:41:56Z",
     "created_at": "2009-07-16T18:24:18Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "improve doctests for tachyon",
+    "title": "[with patch, needs review] improve doctests for tachyon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6543",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: @williamstein
+Assignee: mhampton
 
 Keywords: tachyon, graphics, 3d, raytracer
 

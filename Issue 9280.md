@@ -1,16 +1,16 @@
-# Issue 9280: implement an example of a graded algebra with basis
+# Issue 9280: Implement an example of a graded algebra with basis, and improve the later
 
 archive/issues_009280.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nThe summary says it all.  Also see the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9280\n\n",
+    "body": "Assignee: @nthiery\n\nKeywords: graded algebra\n\nThe summary says it all.  See also the patch on the Sage-Combinat patch server:\n\nhttp://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/trac_9280-graded-algebras-example.patch\n\nThanks to Jason Bandlow and Franco Saliola who participated to the improvement of the example.  It now depends on #10193.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9280\n\n",
     "created_at": "2010-06-20T03:39:29Z",
     "labels": [
         "component: categories",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.4",
-    "title": "implement an example of a graded algebra with basis",
+    "title": "Implement an example of a graded algebra with basis, and improve the later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9280",
     "user": "https://github.com/jhpalmieri"
@@ -18,7 +18,13 @@ archive/issues_009280.json:
 ```
 Assignee: @nthiery
 
-The summary says it all.  Also see the patch.
+Keywords: graded algebra
+
+The summary says it all.  See also the patch on the Sage-Combinat patch server:
+
+http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/trac_9280-graded-algebras-example.patch
+
+Thanks to Jason Bandlow and Franco Saliola who participated to the improvement of the example.  It now depends on #10193.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9280
 

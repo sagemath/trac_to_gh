@@ -1,16 +1,17 @@
-# Issue 4447: graph attributes (_boundary, _pos, etc.) are not updated properly
+# Issue 4447: [with patch, positive review] graph attributes (_boundary, _pos, etc.) are not updated properly
 
 archive/issues_004447.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe attached patch fixes a number of small issues with updating graph attributes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4447\n\n",
+    "closed_at": "2008-11-13T18:42:46Z",
     "created_at": "2008-11-05T19:09:05Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "graph attributes (_boundary, _pos, etc.) are not updated properly",
+    "title": "[with patch, positive review] graph attributes (_boundary, _pos, etc.) are not updated properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4447",
     "user": "https://github.com/jasongrout"

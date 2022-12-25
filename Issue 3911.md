@@ -4,6 +4,7 @@ archive/issues_003911.json:
 ```json
 {
     "body": "Assignee: tba\n\nthe framework should allow to generate a bibliography etc. while not reinventing the wheel: BibTeX? By citing in docstrings I mean stuff like this:\n\n```\nINPUT:\n   foo -- bar (as described in [BCDT]\n\nREFERENCES:\n[BCDT] Breuil, Conrad, Diamond, Taylor, \"Modularity ....\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3911\n\n",
+    "closed_at": "2009-04-27T13:01:54Z",
     "created_at": "2008-08-20T14:29:10Z",
     "labels": [
         "component: documentation"

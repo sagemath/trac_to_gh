@@ -1,15 +1,16 @@
-# Issue 2062: [with patch] add support for binary vectors (sd7 test ticket)
+# Issue 2062: [with patch, positive review] add support for binary vectors (sd7 test ticket)
 
 archive/issues_002062.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nblah blah\n\nIssue created by migration from https://trac.sagemath.org/ticket/2062\n\n",
+    "closed_at": "2008-02-05T19:52:23Z",
     "created_at": "2008-02-05T18:55:33Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch] add support for binary vectors (sd7 test ticket)",
+    "title": "[with patch, positive review] add support for binary vectors (sd7 test ticket)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2062",
     "user": "https://github.com/mwhansen"

@@ -1,15 +1,16 @@
-# Issue 2482: [with patch, needs review] ptest iterators
+# Issue 2482: [with patch, positive review] ptest iterators
 
 archive/issues_002482.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\n$SAGE_TEST_ITER sets the number of times each file test runs (local repeat)\n$SAGE_TEST_GLOBAL_ITER sets the number of times all tests run (global repeat)\n$SAGE_TEST_TEX sets if ptest should run the latex tests by default\n\nIssue created by migration from https://trac.sagemath.org/ticket/2482\n\n",
+    "closed_at": "2008-03-14T15:20:44Z",
     "created_at": "2008-03-12T07:01:52Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] ptest iterators",
+    "title": "[with patch, positive review] ptest iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2482",
     "user": "https://github.com/garyfurnish"

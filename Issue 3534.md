@@ -1,9 +1,10 @@
-# Issue 3534: plot -- fix circle example in the documentation
+# Issue 3534: [with patch; positive review] plot -- fix circle example in the documentation
 
 archive/issues_003534.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\n\n> The first example here:\n> http://www.sagemath.org/doc/html/tut/node21.html\n> .. shows creating a circle plot via:\n> L = [[cos(pi*i/100),sin(pi*i/100)] for i in range(200)]\n> p = polygon(L, rgbcolor=(1,1,0))\n> p.save()          ## or   p.show()\n>\n> When I try this, I get an ellipse!  Or more precisely, the plot has\n> unequal axis scaling.\n>\n> Here's a picture:\n> http://backspaces.net/temp/Safari116.png\n\nUse this instead:\n\nL = [[cos(pi*i/100),sin(pi*i/100)] for i in range(200)]\np = polygon(L, rgbcolor=(1,1,0))\np.save(aspect_ratio=1)          ## or   p.show()\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3534\n\n",
+    "body": "Assignee: tba\n\nKeywords: editor_mhansen\n\n```\n\n> The first example here:\n> http://www.sagemath.org/doc/html/tut/node21.html\n> .. shows creating a circle plot via:\n> L = [[cos(pi*i/100),sin(pi*i/100)] for i in range(200)]\n> p = polygon(L, rgbcolor=(1,1,0))\n> p.save()          ## or   p.show()\n>\n> When I try this, I get an ellipse!  Or more precisely, the plot has\n> unequal axis scaling.\n>\n> Here's a picture:\n> http://backspaces.net/temp/Safari116.png\n\nUse this instead:\n\nL = [[cos(pi*i/100),sin(pi*i/100)] for i in range(200)]\np = polygon(L, rgbcolor=(1,1,0))\np.save(aspect_ratio=1)          ## or   p.show()\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3534\n\n",
+    "closed_at": "2008-09-16T03:53:17Z",
     "created_at": "2008-06-30T00:37:59Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,15 @@ archive/issues_003534.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "plot -- fix circle example in the documentation",
+    "title": "[with patch; positive review] plot -- fix circle example in the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3534",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
+
+Keywords: editor_mhansen
 
 ```
 

@@ -4,6 +4,7 @@ archive/issues_004732.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n[17:21] <jason->  matrix(SR,[e]).change_ring(RR) works fine from the Sage command line\n[17:21] <jason-> but gives a huge type error when it is a doctest\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4732\n\n",
+    "closed_at": "2009-01-22T08:08:28Z",
     "created_at": "2008-12-06T23:26:49Z",
     "labels": [
         "component: doctest coverage",

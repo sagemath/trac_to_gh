@@ -1,9 +1,10 @@
-# Issue 4182: plot3d fails with 'IndexError: list index out of range'
+# Issue 4182: [with patch, positive review] plot3d fails with 'IndexError: list index out of range'
 
 archive/issues_004182.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: def g(x,y): \n...            if y <= 0 or y >= x**2: \n...                return 0 \n...           else: \n...               return 1 \nsage: plot3d(g, (-3, 3), (-3, 3), adaptive=True) \n```\nfails, returning\n\n```\nTraceback (most recent call last): \n  File \"<stdin>\", line 1, in <module> \n  File \"/home/palmieri/.sage/sage_notebook/worksheets/admin/37/code/ \n7.py\", line 6, in <module> \n    plot3d(g, (-Integer(3), Integer(3)), (-Integer(3), Integer(3)), \nadaptive=True) \n  File \"/usr/local/share/sage/local/lib/python2.5/site-packages/ \nSQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module> \n  File \"/home/palmieri/Documents/sage-3.1.2/local/lib/python2.5/site- \npackages/sage/plot/plot3d/plot3d.py\", line 157, in plot3d \n    P = plot3d_adaptive(f, urange, vrange, **kwds) \n  File \"/home/palmieri/Documents/sage-3.1.2/local/lib/python2.5/site- \npackages/sage/plot/plot3d/plot3d.py\", line 255, in plot3d_adaptive \n    G.set_texture(texture[k], opacity=opacity) \nIndexError: list index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4182\n\n",
+    "closed_at": "2008-10-26T03:18:30Z",
     "created_at": "2008-09-23T22:52:24Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_004182.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "plot3d fails with 'IndexError: list index out of range'",
+    "title": "[with patch, positive review] plot3d fails with 'IndexError: list index out of range'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4182",
     "user": "https://github.com/jhpalmieri"

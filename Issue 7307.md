@@ -4,6 +4,7 @@ archive/issues_007307.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nKeywords: doctest typo\n\nPatch corrects an indent in doctest for the `EllipticCurveIsogeny` class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7307\n\n",
+    "closed_at": "2009-11-03T13:51:02Z",
     "created_at": "2009-10-26T08:31:33Z",
     "labels": [
         "component: elliptic curves",

@@ -1,16 +1,17 @@
-# Issue 6108: sage -tp skips all.py!!
+# Issue 6108: [with patch, positive review] sage -tp skips all.py and __init__.py!!
 
 archive/issues_006108.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6108\n\n",
+    "closed_at": "2009-06-13T22:56:33Z",
     "created_at": "2009-05-21T05:57:59Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "sage -tp skips all.py!!",
+    "title": "[with patch, positive review] sage -tp skips all.py and __init__.py!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6108",
     "user": "https://github.com/williamstein"

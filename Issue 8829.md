@@ -1,15 +1,16 @@
-# Issue 8829: Saturation for curves over number fields.
+# Issue 8829: Saturation for MW-groups of elliptic curves over number fields.
 
 archive/issues_008829.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @pjbruin @kedlaya\n\nI also implemented the simple case of E.gens() for E(K) when E/Q and [K:Q] = 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8829\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @pjbruin @kedlaya\n\nKeywords: saturation\n\nImplementation of saturation of points on elliptic curves over number fields.  Original patch by Robert Bradshaw in 2010, refactored and made into a git branch by John Cremona in 2015.\n\nI also implemented the simple case of E.gens() for E(K) when E/Q and [K:Q] = 2. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8829\n\n",
+    "closed_at": "2017-08-29T19:51:22Z",
     "created_at": "2010-04-30T06:49:16Z",
     "labels": [
         "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
-    "title": "Saturation for curves over number fields.",
+    "title": "Saturation for MW-groups of elliptic curves over number fields.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8829",
     "user": "https://github.com/robertwb"
@@ -19,7 +20,12 @@ Assignee: @JohnCremona
 
 CC:  @pjbruin @kedlaya
 
-I also implemented the simple case of E.gens() for E(K) when E/Q and [K:Q] = 2.
+Keywords: saturation
+
+Implementation of saturation of points on elliptic curves over number fields.  Original patch by Robert Bradshaw in 2010, refactored and made into a git branch by John Cremona in 2015.
+
+I also implemented the simple case of E.gens() for E(K) when E/Q and [K:Q] = 2. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8829
 

@@ -4,6 +4,7 @@ archive/issues_009522.json:
 ```json
 {
     "body": "Assignee: tbd\n\nFrom the end of MPIR's `spkg-install`:\n\n```sh\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    cd ..; ./spkg-check\nfi\n```\nWe should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9522\n\n",
+    "closed_at": "2011-09-29T23:46:49Z",
     "created_at": "2010-07-17T01:02:45Z",
     "labels": [
         "component: packages: standard",

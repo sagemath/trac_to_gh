@@ -1,9 +1,10 @@
-# Issue 6948: powers of exp are over simplified
+# Issue 6948: [with patch, positive review] powers of exp are over simplified
 
 archive/issues_006948.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nFrancois Maltey wrote on sage-support:\n\n```\nvar(\"a,b,c\")\nexp(a)^2 # returns exp(2a) is right\nexp(a)^(1/2) # returns exp (a/2) is wrong, with a=2*i*pi we get -1=1\nexp(a)^b # returns exp(a*b) is wrong\n```\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/330a015bf640a4f3/0ddfdd5a4e021579\n\nIssue created by migration from https://trac.sagemath.org/ticket/6948\n\n",
+    "closed_at": "2009-09-25T22:44:21Z",
     "created_at": "2009-09-17T13:48:17Z",
     "labels": [
         "component: symbolics",
@@ -11,7 +12,7 @@ archive/issues_006948.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "powers of exp are over simplified",
+    "title": "[with patch, positive review] powers of exp are over simplified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6948",
     "user": "https://github.com/burcin"

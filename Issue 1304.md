@@ -1,25 +1,26 @@
-# Issue 1304: [graphs] edge-labeled graph isomorphism
+# Issue 1304: [with patch, positive review] edge-labeled graph isomorphism
 
 archive/issues_001304.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  boothby\n\nKeywords: graphs\n\nFrom Robert Miller:\n\n```\n> Another ticket you might want to create, but that I would be most\n> likely to implement, is edge-labeled graph isomorphism.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1304\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nKeywords: isomorphism, labeling\n\nFrom Robert Miller:\n\n```\n> Another ticket you might want to create, but that I would be most\n> likely to implement, is edge-labeled graph isomorphism.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1304\n\n",
+    "closed_at": "2008-02-19T15:13:18Z",
     "created_at": "2007-11-28T19:48:43Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[graphs] edge-labeled graph isomorphism",
+    "title": "[with patch, positive review] edge-labeled graph isomorphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1304",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 CC:  boothby
 
-Keywords: graphs
+Keywords: isomorphism, labeling
 
 From Robert Miller:
 

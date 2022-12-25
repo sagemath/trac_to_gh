@@ -4,6 +4,7 @@ archive/issues_000496.json:
 ```json
 {
     "body": "Assignee: boothby\n\n* In rings/arith.py the code for generic powering does an extra multiply the last time through the loop.\nThis can take a huge amount of extra time on big powering.\n\n* In structure/element.pyx the code for generic n*x (the function cdef ModuleElement _lmul_c_impl(self, RingElement right), around line 1125) does possibly an extra add.\n\n\nTo fix this either rewrite or refactor the above code to be more like the __pow__ that is around\nline 1057 of element.pyx.  Also, write *lots of doctests* to make sure you're really computing\nthe right thing. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/496\n\n",
+    "closed_at": "2007-08-31T22:45:13Z",
     "created_at": "2007-08-27T21:26:34Z",
     "labels": [
         "component: basic arithmetic",

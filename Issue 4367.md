@@ -1,16 +1,17 @@
-# Issue 4367: plot gamma bug
+# Issue 4367: [with patch, positive review] plot gamma bug
 
 archive/issues_004367.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n   sage: plot(gamma(x),(x,1,5))\n```\n\nGives error.  \n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/jvoight/.sage/sage_notebook/worksheets/jvoight/10/code/18.py\", line 6, in <module>\n    plot(gamma(x),(x,Integer(1),Integer(5)))\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/functions/transcendental.py\", line 106, in gamma\n    return CC(s).gamma()\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py\", line 211, in __call__\n    return x._complex_mpfr_field_( self )\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1451, in _complex_mpfr_field_\n    raise TypeError\nTypeError\n```\n\nThere seems to be some confusing type error in coercion between floats and complex numbers.\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/4367\n\n",
+    "closed_at": "2008-12-21T12:22:17Z",
     "created_at": "2008-10-25T18:54:40Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "plot gamma bug",
+    "title": "[with patch, positive review] plot gamma bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4367",
     "user": "https://github.com/jvoight"

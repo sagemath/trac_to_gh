@@ -4,6 +4,7 @@ archive/issues_008589.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @nilesjohnson sage-combinat\n\nThis patch gives its Hopf algebra structure to the group algebra of `G` over `R` created in the following way\n\n```\n   sage: G.algebra(R)\n```\n\nAnother feature is a method is_central on elements of the algebra (which works also for monoid algebras so is in the file sage.categories.monoids)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8589\n\n",
+    "closed_at": "2010-11-01T10:06:12Z",
     "created_at": "2010-03-23T17:16:37Z",
     "labels": [
         "component: combinatorics"

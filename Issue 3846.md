@@ -4,6 +4,7 @@ archive/issues_003846.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nThe Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead\nit does something very confusing.    This was found by Franco Saliola.\n\n```\nsage: vector(v)[3] = 5\nsage: preparse('vector(v)[3] = 5')\n'_=var(\"v\");vector=symbolic_expression(Integer(5)).function(v)'\nsage: vector(10)\n5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3846\n\n",
+    "closed_at": "2009-06-04T23:08:11Z",
     "created_at": "2008-08-14T03:35:27Z",
     "labels": [
         "component: misc",

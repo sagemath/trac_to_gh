@@ -1,16 +1,17 @@
-# Issue 5207: remove unnecessary use of symbolics in doctests in weierstrass_morphism.py
+# Issue 5207: [with patch, with positive review] remove unnecessary use of symbolics in doctests in weierstrass_morphism.py
 
 archive/issues_005207.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nAs discussed at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/48b893e904634273\n\nthere are two doctests in weierstrass_morphism.py that use symbolic variables.  This is slow, completely unnecessary, and causes trouble given that Maxima has a tendency to hang.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5207\n\n",
+    "closed_at": "2009-02-09T07:54:15Z",
     "created_at": "2009-02-08T13:11:37Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "remove unnecessary use of symbolics in doctests in weierstrass_morphism.py",
+    "title": "[with patch, with positive review] remove unnecessary use of symbolics in doctests in weierstrass_morphism.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5207",
     "user": "https://github.com/aghitza"

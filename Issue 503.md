@@ -3,7 +3,8 @@
 archive/issues_000503.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/503\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/503\n\n",
+    "closed_at": "2007-09-07T04:08:04Z",
     "created_at": "2007-08-28T21:41:00Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000503.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @robertwb
 
 
 

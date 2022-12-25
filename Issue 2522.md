@@ -1,15 +1,16 @@
-# Issue 2522: modify "sage -pkg" to not include OSX junk in spkgs
+# Issue 2522: [with patch; positive review] modify "sage -pkg" to not include OSX junk in spkgs
 
 archive/issues_002522.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIt looks like maybe we only need to set an environment variable to eliminate at least some of the junk; see http://norman.walsh.name/2008/02/22/tar for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2522\n\n",
+    "closed_at": "2009-02-16T04:34:44Z",
     "created_at": "2008-03-14T23:54:05Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "modify \"sage -pkg\" to not include OSX junk in spkgs",
+    "title": "[with patch; positive review] modify \"sage -pkg\" to not include OSX junk in spkgs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2522",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

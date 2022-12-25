@@ -1,22 +1,24 @@
-# Issue 8839: comment in rating
+# Issue 8839: comment in rating can be arbitrary code (e.g. js)
 
 archive/issues_008839.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nHello , \nhtml is ebabled in comment which allow to add iframe ,images ,etc ...\n\nexample \n\nhttp://alpha.sagenb.org/home/pub/1/rate?rating=4&comment=very%20good<br><br><img src=\"http://games.pcmasters.de/fileadmin/Games/Sport/TDU2/3.jpg\">\n\nthanks .\n\nIssue created by migration from https://trac.sagemath.org/ticket/8839\n\n",
+    "body": "Assignee: aliajouz\n\nHello , \nhtml is ebabled in comment which allow to add iframe ,images ,etc ...\n\nexample \n\nhttp://alpha.sagenb.org/home/pub/1/rate?rating=4&comment=very%20good<br><br><img src=\"http://games.pcmasters.de/fileadmin/Games/Sport/TDU2/3.jpg\">\n\nthanks .\n\nIssue created by migration from https://trac.sagemath.org/ticket/8839\n\n",
+    "closed_at": "2015-02-12T21:16:58Z",
     "created_at": "2010-05-01T23:59:25Z",
     "labels": [
         "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "comment in rating",
+    "title": "comment in rating can be arbitrary code (e.g. js)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8839",
     "user": "https://trac.sagemath.org/admin/accounts/users/aliajouz"
 }
 ```
-Assignee: jason, was
+Assignee: aliajouz
 
 Hello , 
 html is ebabled in comment which allow to add iframe ,images ,etc ...

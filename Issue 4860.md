@@ -1,16 +1,17 @@
-# Issue 4860: upgrade networkx to 0.99 upstream release
+# Issue 4860: [with spkg, positive review] upgrade networkx to 0.99 upstream release
 
 archive/issues_004860.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nSee http://networkx.lanl.gov/reference/news.html\n\nIt seems that this could still come in handy since we will need it for Python 2.6 support for example. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4860\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nKeywords: networkx-0.99\n\nSee http://networkx.lanl.gov/reference/news.html\n\nIt seems that this could still come in handy since we will need it for Python 2.6 support for example. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4860\n\n",
+    "closed_at": "2009-01-29T06:31:02Z",
     "created_at": "2008-12-23T21:23:00Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "upgrade networkx to 0.99 upstream release",
+    "title": "[with spkg, positive review] upgrade networkx to 0.99 upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4860",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,6 +20,8 @@ archive/issues_004860.json:
 Assignee: @rlmill
 
 CC:  @jasongrout
+
+Keywords: networkx-0.99
 
 See http://networkx.lanl.gov/reference/news.html
 

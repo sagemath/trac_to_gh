@@ -1,9 +1,10 @@
-# Issue 5370: [with patch, needs review] copy for matrix_double_dense
+# Issue 5370: [with patch, positive review] copy for matrix_double_dense
 
 archive/issues_005370.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nno __copy__ defined for matrix_double_dense, add it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5370\n\n",
+    "closed_at": "2009-02-28T17:10:10Z",
     "created_at": "2009-02-25T10:50:15Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005370.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] copy for matrix_double_dense",
+    "title": "[with patch, positive review] copy for matrix_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5370",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

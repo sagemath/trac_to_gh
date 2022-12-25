@@ -1,16 +1,17 @@
-# Issue 3997: [with patch, needs review] doctesst and fix the Lisp interface
+# Issue 3997: [with patch, positive review] doctest and fix the Lisp interface
 
 archive/issues_003997.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3997\n\n",
+    "closed_at": "2008-08-30T01:15:06Z",
     "created_at": "2008-08-29T21:58:20Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] doctesst and fix the Lisp interface",
+    "title": "[with patch, positive review] doctest and fix the Lisp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3997",
     "user": "https://github.com/mwhansen"

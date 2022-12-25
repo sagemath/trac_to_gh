@@ -1,16 +1,17 @@
-# Issue 1494: bug coercing from maximal order of cyclotomic field into cyclotomic field
+# Issue 1494: [with patch, with positive review] bug coercing from maximal order of cyclotomic field into cyclotomic field
 
 archive/issues_001494.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: O = K.maximal_order()\nsage: K(O.1)\nTraceback (most recent call last):\n...\nTypeError: Cannot coerce element into this number field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1494\n\n",
+    "closed_at": "2007-12-15T09:42:45Z",
     "created_at": "2007-12-13T22:08:23Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "bug coercing from maximal order of cyclotomic field into cyclotomic field",
+    "title": "[with patch, with positive review] bug coercing from maximal order of cyclotomic field into cyclotomic field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1494",
     "user": "https://github.com/williamstein"

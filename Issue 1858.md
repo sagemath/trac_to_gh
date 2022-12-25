@@ -1,16 +1,17 @@
-# Issue 1858: plot.py coverage is crap -- get it to 100%
+# Issue 1858: [with patch; with positive review] plot.py coverage is crap -- improve it
 
 archive/issues_001858.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nRight now:\n\n```\n$ sage -coverage plot.py\n----------------------------------------------------------------------\nplot.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE plot.py: 13% (25 of 185)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1858\n\n",
+    "closed_at": "2008-01-21T03:52:51Z",
     "created_at": "2008-01-20T00:33:52Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "plot.py coverage is crap -- get it to 100%",
+    "title": "[with patch; with positive review] plot.py coverage is crap -- improve it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1858",
     "user": "https://github.com/williamstein"

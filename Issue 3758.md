@@ -1,9 +1,10 @@
-# Issue 3758: crypto --   sage -t -long devel/sage/sage/crypto/mq/sr.py  fails on many machines
+# Issue 3758: [with patch, positive review] crypto --   sage -t -long devel/sage/sage/crypto/mq/sr.py  fails on many machines
 
 archive/issues_003758.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n\n=====================================================\n\n[was@localhost ~]$ cat /etc/issue\nRHEL5 -- StartCom Enterprise Linux AS release 5.0.0 (Kishuf)\nKernel \\r on an \\m\n\n        sage -t -long devel/sage/sage/crypto/mq/sr.py\nTotal time for all tests: 4047.3 seconds\n\nBecause of lack of RAM:\n\n[was@localhost ~]$ free\n             total       used       free     shared    buffers     cached\nMem:        255704     223072      32632          0      35608     140592\nSwap:       524280      41776     482504\n\nI still am very unhappy about this doctest failure.  Shouldn't Sage should work and\npass its test suite  with 768MB memory?\n\n=====================================================\n\nOn the Ubuntu LTS 64-bit Sage install with 1GB RAM exactly one failure:\n\n\n        sage -t -long devel/sage/sage/crypto/mq/sr.py\n\nwas@SAGE64VPC:~$ free\n             total       used       free     shared    buffers     cached\nMem:       1028380     576408     451972          0     101512     196976\n\n=====================================================\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3758\n\n",
+    "closed_at": "2009-01-24T13:15:47Z",
     "created_at": "2008-08-02T18:59:13Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_003758.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "crypto --   sage -t -long devel/sage/sage/crypto/mq/sr.py  fails on many machines",
+    "title": "[with patch, positive review] crypto --   sage -t -long devel/sage/sage/crypto/mq/sr.py  fails on many machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3758",
     "user": "https://github.com/williamstein"

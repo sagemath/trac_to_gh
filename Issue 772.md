@@ -1,15 +1,16 @@
-# Issue 772: Interface to QEPCAD for quantifier elimination and solving systems of inequalities
+# Issue 772: [with spkg; updated; positive review] Interface to QEPCAD for quantifier elimination and solving systems of inequalities
 
 archive/issues_000772.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nQEPCAD uses cylindrical algebraic decomposition to eliminate quantifiers in\nstatements.  QEPCAD takes the statement\n\n```\nthere exists an x such that a*x2 + b*x + c = 0 and a /= 0 (i.e., a!=0)\n```\n\nand eliminates the quantifier and answers that:\n\n```\na /= 0 and 4 a c - b^2 <= 0\n(i.e., a!=0 and 4ac-b^2<=0)\n```\n\nIn other words, it gives you the conditions of a solution satisfying\nyour original statement.  See more examples at [http://www.cs.usna.edu/~qepcad/B/examples/Examples.html](http://www.cs.usna.edu/~qepcad/B/examples/Examples.html)\n\nQEPCAD is not currently GPL and depends on the saclib library, which currently is not GPL.  However, both of those could change if there was interest.\n\nDavid Joyner talked with Chris Brown, and reported that:\n\n  I spoke with Chris Brown, who is essentially now the maintainer of\nqepcad. Here is his response:\n\n  \"Saclib's actual status is probably a bit up in the air.  What I might\n  call the saclib \"stakeholders\" had agreed to GPL it, but everybody\n  was, I guess, too busy to do anything about it.  Qepcad's status is\n  similar ... except that my contributions are necessarily public\n  domain.\"\n\n  In a second email, he added:\n\n  \"If you're interested, we can talk about this. Ultimately I can ask the\n  saclib/qepcad folks for permission and move forward.\"\n\n  (see [http://groups.google.com/group/sage-devel/msg/4f63c0636720ed51](http://groups.google.com/group/sage-devel/msg/4f63c0636720ed51))\n\nReferences:\n\nQEPCAD: [http://www.cs.usna.edu/~qepcad/B/QEPCAD.html](http://www.cs.usna.edu/~qepcad/B/QEPCAD.html)\n\nMathematica implementation (Resolve, Reduce, FindInstance,\nCylindricalDecomposition, etc.):\n\n[http://reference.wolfram.com/mathematica/tutorial/Quantifiers.html](http://reference.wolfram.com/mathematica/tutorial/Quantifiers.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/TheRepresentationOfSolutionSets.html](http://reference.wolfram.com/mathematica/tutorial/TheRepresentationOfSolutionSets.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/Inequalities-ManipulatingEquationsAndInequalities.html](http://reference.wolfram.com/mathematica/tutorial/Inequalities-ManipulatingEquationsAndInequalities.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/EquationsAndInequalitiesOverDomains.html](http://reference.wolfram.com/mathematica/tutorial/EquationsAndInequalitiesOverDomains.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/772\n\n",
+    "closed_at": "2008-08-28T02:32:17Z",
     "created_at": "2007-10-01T14:24:04Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Interface to QEPCAD for quantifier elimination and solving systems of inequalities",
+    "title": "[with spkg; updated; positive review] Interface to QEPCAD for quantifier elimination and solving systems of inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/772",
     "user": "https://github.com/jasongrout"

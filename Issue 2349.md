@@ -1,16 +1,17 @@
-# Issue 2349: homogenize does different things in different contexts
+# Issue 2349: [with patch, with positive review] homogenize does different things in different contexts
 
 archive/issues_002349.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: polynomial multi multivariate homogenize\n\nHere are some examples:\n\n```\nsage: x = Zmod(3)['x'].gen(); x.homogenize('y')\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x, y = Zmod(3)['x', 'y'].gens(); (x + x^2).homogenize(y)\nx^2 + x*y\nsage: x, y = Zmod(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()\nMultivariate Polynomial Ring in x, y, y over Ring of integers modulo 3\nsage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y)\nx^2 + x*y\nsage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()\nMultivariate Polynomial Ring in x, y over Finite Field of size 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2349\n\n",
+    "closed_at": "2008-03-02T20:54:35Z",
     "created_at": "2008-02-28T21:54:09Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "homogenize does different things in different contexts",
+    "title": "[with patch, with positive review] homogenize does different things in different contexts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2349",
     "user": "https://github.com/ncalexan"

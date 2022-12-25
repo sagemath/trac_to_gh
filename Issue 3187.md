@@ -1,16 +1,17 @@
-# Issue 3187: fix 64 bit OSX build support for matplotli
+# Issue 3187: [with spkg, positive review] fix 64 bit OSX build support for matplotlib
 
 archive/issues_003187.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3187\n\n",
+    "closed_at": "2008-05-19T04:43:18Z",
     "created_at": "2008-05-13T13:57:29Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "fix 64 bit OSX build support for matplotli",
+    "title": "[with spkg, positive review] fix 64 bit OSX build support for matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3187",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,22 +1,25 @@
-# Issue 3205: when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell
+# Issue 3205: [with patch, positive review] when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell
 
 archive/issues_003205.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWhen scrolling through the notebook with the cursor keys (i.e., moving from cell to cell), if you move to a cell below the currently visible ones, the browser automatically scrolls down to let you see the new cell, but the jsmath box is sitting right there at the start of the cell, so you can't see what is in the start of the cell.\n\nFix 1: scroll a bit more than we do now\n\nFix 2: move the jsmath box to the bottom right instead of the bottom left\n\nFix 3: Get rid of the jsmath box and instead just make a menu option or some other way to access the jsmath controls.  Once the jsmath controls are set, they are very rarely accessed, at least for me.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3205\n\n",
+    "body": "Assignee: boothby\n\nKeywords: editor_mhansen\n\nWhen scrolling through the notebook with the cursor keys (i.e., moving from cell to cell), if you move to a cell below the currently visible ones, the browser automatically scrolls down to let you see the new cell, but the jsmath box is sitting right there at the start of the cell, so you can't see what is in the start of the cell.\n\nFix 1: scroll a bit more than we do now\n\nFix 2: move the jsmath box to the bottom right instead of the bottom left\n\nFix 3: Get rid of the jsmath box and instead just make a menu option or some other way to access the jsmath controls.  Once the jsmath controls are set, they are very rarely accessed, at least for me.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3205\n\n",
+    "closed_at": "2008-06-23T12:55:15Z",
     "created_at": "2008-05-14T21:55:56Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell",
+    "title": "[with patch, positive review] when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3205",
     "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
+
+Keywords: editor_mhansen
 
 When scrolling through the notebook with the cursor keys (i.e., moving from cell to cell), if you move to a cell below the currently visible ones, the browser automatically scrolls down to let you see the new cell, but the jsmath box is sitting right there at the start of the cell, so you can't see what is in the start of the cell.
 

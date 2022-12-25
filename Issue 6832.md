@@ -1,16 +1,17 @@
-# Issue 6832: [with patch, needs review] bug in inverse_mod for number field elements
+# Issue 6832: [with patch, positive review] bug in inverse_mod for number field elements
 
 archive/issues_006832.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\nKeywords: number fields\n\nIn the documentation for inverse_mod for (integral) elements of a number field says that the input may be \"an ideal, or an element or list of elements generating a nonzero ideal\" which is not true right now.\n\n```\nsage: k.<a> = NumberField(x^2 + 23)\nsage: d = a + 3\nsage: d.inverse_mod(a)\nTraceback (most recent call last)\n...\nAttributeError: ...\n```\n\nI fixed that and added an example in the doctest (patch based on 4.1.1) \n\nIssue created by migration from https://trac.sagemath.org/ticket/6832\n\n",
+    "closed_at": "2009-09-23T04:08:35Z",
     "created_at": "2009-08-27T12:50:26Z",
     "labels": [
         "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] bug in inverse_mod for number field elements",
+    "title": "[with patch, positive review] bug in inverse_mod for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6832",
     "user": "https://trac.sagemath.org/admin/accounts/users/mtaranes"

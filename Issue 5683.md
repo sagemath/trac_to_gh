@@ -1,16 +1,17 @@
-# Issue 5683: Inverse operation for matrices over non integral domain
+# Issue 5683: [with patch; with positive review] Inverse operation for matrices over non integral domain
 
 archive/issues_005683.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: inverse\n\nWe get this: \n\n```\nsage: R=IntegerModRing(8)\nsage: m=matrix(R,2,[2,1,3,3]);\nsage: m.inverse()\nTraceback (most recent call last):\n...\nTypeError: self must be an integral domain.\n```\n\nThe inverse operation for matrices over non integral domain, in particular for over integer mod rings, is a missing feature. Somebody should *definitely* implement this.  A\nfirst reasonable thing would be \"lift to ZZ, invert, reduce\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5683\n\n",
+    "closed_at": "2009-04-06T00:46:39Z",
     "created_at": "2009-04-04T20:33:09Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Inverse operation for matrices over non integral domain",
+    "title": "[with patch; with positive review] Inverse operation for matrices over non integral domain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5683",
     "user": "https://github.com/kwankyu"

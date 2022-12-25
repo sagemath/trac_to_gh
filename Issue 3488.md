@@ -1,9 +1,10 @@
-# Issue 3488: typos in sage-clone script
+# Issue 3488: [with patch, positive review] typos in sage-clone script
 
 archive/issues_003488.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nfix some typos\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3488\n\n",
+    "closed_at": "2008-06-23T08:51:22Z",
     "created_at": "2008-06-20T23:01:41Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003488.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "typos in sage-clone script",
+    "title": "[with patch, positive review] typos in sage-clone script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3488",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

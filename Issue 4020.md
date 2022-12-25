@@ -1,15 +1,16 @@
-# Issue 4020: fraction field doctests
+# Issue 4020: [with patch, positive review] fraction field doctests
 
 archive/issues_004020.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4020\n\n",
+    "closed_at": "2008-09-01T22:08:35Z",
     "created_at": "2008-08-31T10:29:58Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "fraction field doctests",
+    "title": "[with patch, positive review] fraction field doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4020",
     "user": "https://github.com/robertwb"

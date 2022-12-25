@@ -4,9 +4,10 @@ archive/issues_008198.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nCC:  @nilesjohnson jpflori\n\nKeywords: padics vector\n\nTrying to resolve #4656, I found the following unpleasant bug.\n\nthis looks good :\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: x\nO(5)\nsage: x*R(1)\nO(5)\n```\n\nBut when multiplied with the identity matrix the precision is lost\n\n```\nsage: I = matrix(R, [[1,0],[0,1]])\nsage: v = vector([R(1),x])\nsage: v\n(1 + O(5^5), O(5))\nsage: v*I\n(1 + O(5^5), 0)\nsage: v[0]*I[1,0] + v[1]*I[1,1]\nO(5)\n```\n\nThis causes things like\n\n```\nsage: M = matrix(R,[[1,2],[3,4]])\nsage: M*v\n(1 + O(5^5), 3 + O(5^5))\nsage: v[0]*M[0,0] + v[1]*M[0,1]\n1 + O(5)\nsage: v[0]*M[1,0] + v[1]*M[1,1]\n3 + O(5)\n```\n\nThis is an even worse example, which could be a different bug\n\n```\nsage: vv = vector(x)\nsage: vv\n(0)\nsage: vv[0]\n0\nsage: x\nO(5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8198\n\n",
+    "closed_at": "2014-04-13T19:33:32Z",
     "created_at": "2010-02-05T22:52:30Z",
     "labels": [
-        "component: padics",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",

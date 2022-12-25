@@ -1,22 +1,23 @@
-# Issue 6283: Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing "make ptest" or "make ptestlong" doesn't kill some computers
+# Issue 6283: [with patch, positive review] Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing "make ptest" or "make ptestlong" doesn't kill some computers
 
 archive/issues_006283.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe top of SAGE_ROOT/makefile is\n\n```\n# How many threads should be used when doing parallel testing (and\n# sometime in the future, parallel building)?\nNUM_THREADS=20\n\n```\n\nI've many times accidently done \"make ptest\" and with extremely unpleasant results the next day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6283\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe top of SAGE_ROOT/makefile is\n\n```\n# How many threads should be used when doing parallel testing (and\n# sometime in the future, parallel building)?\nNUM_THREADS=20\n\n```\n\nI've many times accidently done \"make ptest\" and with extremely unpleasant results the next day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6283\n\n",
+    "closed_at": "2009-09-25T06:30:27Z",
     "created_at": "2009-06-14T09:57:54Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing \"make ptest\" or \"make ptestlong\" doesn't kill some computers",
+    "title": "[with patch, positive review] Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing \"make ptest\" or \"make ptestlong\" doesn't kill some computers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6283",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @jhpalmieri
 
 The top of SAGE_ROOT/makefile is
 

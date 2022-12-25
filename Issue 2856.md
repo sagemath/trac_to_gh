@@ -1,16 +1,17 @@
-# Issue 2856: [with patch, needs review] PyLint unused variable cleanup for sage.rings.polynomial 2
+# Issue 2856: [with patch, posititive review] PyLint unused variable cleanup for sage.rings.polynomial 2
 
 archive/issues_002856.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: pylint\n\nthe usual stuff:\n* delete unused variables\n* remove unused imports\n\nPS: After this patch, I'll get down to fixing real bugs again rather than introducing some via unforeseen sideeffects of these clean-ups :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2856\n\n",
+    "closed_at": "2008-04-08T15:44:46Z",
     "created_at": "2008-04-08T14:54:02Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] PyLint unused variable cleanup for sage.rings.polynomial 2",
+    "title": "[with patch, posititive review] PyLint unused variable cleanup for sage.rings.polynomial 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2856",
     "user": "https://github.com/malb"

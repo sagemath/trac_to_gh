@@ -1,16 +1,17 @@
-# Issue 2285: add "--trace-children=yes" back for memcheck in sage-doctest
+# Issue 2285: [with patch, positive review] add "--trace-children=yes" back for memcheck in sage-doctest
 
 archive/issues_002285.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAt some point I did remove \"--trace-children=yes\" from sage-doctest to investigate some issue and via `-sdist` it actually got committed to the repo. Fix that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2285\n\n",
+    "closed_at": "2008-02-25T19:50:32Z",
     "created_at": "2008-02-24T01:04:23Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "add \"--trace-children=yes\" back for memcheck in sage-doctest",
+    "title": "[with patch, positive review] add \"--trace-children=yes\" back for memcheck in sage-doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2285",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

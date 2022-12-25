@@ -1,16 +1,17 @@
-# Issue 4253: polybori interface: equality operator for navigators
+# Issue 4253: [with patch, positive review] polybori interface: equality operator for navigators
 
 archive/issues_004253.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: polybori\n\n```\nsage: r.<x,y>=BooleanPolynomialRing(2)\n\nsage: p=r(\"0\")\nsage: p.navigation()==p.navigation()\nFalse\n```\nShould be True, probably `__eq__` not implemented.\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4253\n\n",
+    "closed_at": "2008-10-11T06:40:49Z",
     "created_at": "2008-10-08T06:42:41Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "polybori interface: equality operator for navigators",
+    "title": "[with patch, positive review] polybori interface: equality operator for navigators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4253",
     "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"

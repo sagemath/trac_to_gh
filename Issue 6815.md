@@ -4,6 +4,7 @@ archive/issues_006815.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nRestarting worksheet seems to disable latex typesetting even though \"Typeset\" box is checked. If I un-check and then re-check the \"Typeset\" box, it starts working again.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6815\n\n",
+    "closed_at": "2009-12-22T17:04:13Z",
     "created_at": "2009-08-23T22:57:41Z",
     "labels": [
         "component: notebook",

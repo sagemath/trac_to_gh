@@ -3,7 +3,8 @@
 archive/issues_000823.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/823\n\n",
+    "body": "Assignee: mabshoff\n\nMerged in 2.9.alpha6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/823\n\n",
+    "closed_at": "2007-12-13T06:42:12Z",
     "created_at": "2007-10-04T15:56:26Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +19,7 @@ archive/issues_000823.json:
 ```
 Assignee: mabshoff
 
-
+Merged in 2.9.alpha6.
 
 Issue created by migration from https://trac.sagemath.org/ticket/823
 

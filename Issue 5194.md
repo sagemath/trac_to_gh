@@ -1,22 +1,23 @@
-# Issue 5194: add option to turn off automatic updates for an interact
+# Issue 5194: [with patch; positive review] add option to turn off automatic updates for an interact
 
 archive/issues_005194.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nWhenever the user of an interact tabs from one input_box to another, the function is called, which sets off all the computations associated with the interact. Even when the computations are not very time-consuming, it can be a hassle if, for example, the user wishes to change several input boxes at once, before getting an update.\n\nThis enhancement, discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9ff935e0d6a729b3/554c6c448e6a75e5?lnk=gst&q=interact+update#554c6c448e6a75e5) on sage-devel, would allow an interact to turn off automatic update, adding a user interface element that will prompt the interact to re-run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5194\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout\n\nWhenever the user of an interact tabs from one input_box to another, the function is called, which sets off all the computations associated with the interact. Even when the computations are not very time-consuming, it can be a hassle if, for example, the user wishes to change several input boxes at once, before getting an update.\n\nThis enhancement, discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9ff935e0d6a729b3/554c6c448e6a75e5?lnk=gst&q=interact+update#554c6c448e6a75e5) on sage-devel, would allow an interact to turn off automatic update, adding a user interface element that will prompt the interact to re-run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5194\n\n",
+    "closed_at": "2009-02-09T11:16:00Z",
     "created_at": "2009-02-06T03:38:45Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add option to turn off automatic updates for an interact",
+    "title": "[with patch; positive review] add option to turn off automatic updates for an interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5194",
     "user": "https://github.com/johnperry-math"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 CC:  @jasongrout
 

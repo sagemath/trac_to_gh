@@ -4,10 +4,10 @@ archive/issues_001754.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nKeywords: gnutls https ssl\n\nUsing the latest beta version of firefox 3, if one tries to connect to the notebook via ssl, the following happens as outlined in the screenshots. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1754\n\n",
+    "closed_at": "2008-10-26T16:03:37Z",
     "created_at": "2008-01-11T00:44:18Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "gnutls self signed certificates do not work with firefox 3 (pre-beta 3)",

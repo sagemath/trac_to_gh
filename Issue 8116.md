@@ -3,7 +3,8 @@
 archive/issues_008116.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @robertwb\n\nIf $SAGE64 = \"yes\" we need CFLAGS=-m64 on Open Solaris.\n\nPatch coming up.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8116\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @robertwb\n\nIf $SAGE64 = \"yes\" we need CFLAGS=-m64 on Open Solaris.\n\nPatch coming up.\n\nspkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)\n\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8116\n\n",
+    "closed_at": "2010-01-30T12:46:10Z",
     "created_at": "2010-01-29T12:53:27Z",
     "labels": [
         "component: porting",
@@ -24,7 +25,14 @@ If $SAGE64 = "yes" we need CFLAGS=-m64 on Open Solaris.
 
 Patch coming up.
 
+spkg is here:
+[http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/cython-0.12.p0.spkg)
+
+
+
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8116
 

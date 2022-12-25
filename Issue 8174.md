@@ -4,6 +4,7 @@ archive/issues_008174.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @kcrisman @jasongrout @robert-marik\n\nAttached patch provides a `.maxima_methods()` function in symbolic expressions to give access to various methods of simplification, etc. available in Maxima. The return values of functions called through this interface are Sage expressions. Tab completion and docstrings work as expected.\n\nThis was proposed on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/t/3899a578da747009\n\nIssue created by migration from https://trac.sagemath.org/ticket/8174\n\n",
+    "closed_at": "2010-05-08T22:08:43Z",
     "created_at": "2010-02-03T14:56:36Z",
     "labels": [
         "component: symbolics"

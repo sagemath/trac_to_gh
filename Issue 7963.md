@@ -3,7 +3,8 @@
 archive/issues_007963.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @jasongrout\n\nI do the following:\n\n1. Start the notebook with `notebook()`\n2. click the checkboxes next to a few worksheets\n3. hit the \"Download\" button\n\nand I get an error:\n\n```\nThe resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7963\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @jasongrout\n\nI do the following:\n\n1. Start the notebook with `notebook()`\n\n2. click the checkboxes next to a few worksheets\n\n3. hit the \"Download\" button\n\nand I get an error:\n\n```\nThe resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7963\n\n",
+    "closed_at": "2010-01-25T01:00:28Z",
     "created_at": "2010-01-17T10:18:51Z",
     "labels": [
         "component: notebook",
@@ -23,7 +24,9 @@ CC:  @TimDumol @jasongrout
 I do the following:
 
 1. Start the notebook with `notebook()`
+
 2. click the checkboxes next to a few worksheets
+
 3. hit the "Download" button
 
 and I get an error:
@@ -31,6 +34,8 @@ and I get an error:
 ```
 The resource /download_worksheets?filenames=admin/77___S_A_G_E___admin/76___S_A_G_E___admin/75___S_A_G_E___&sep=___S_A_G_E___ cannot be found.
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7963
 

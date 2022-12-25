@@ -1,16 +1,17 @@
-# Issue 4100: comparison with None extraordinarily slow
+# Issue 4100: [with patch, positive review] comparison with None extraordinarily slow
 
 archive/issues_004100.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis is because the coercion model is invoked, and with types it actually tries to cast one direction or the other, raising errors. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4100\n\n",
+    "closed_at": "2008-09-19T15:57:28Z",
     "created_at": "2008-09-11T06:04:35Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "comparison with None extraordinarily slow",
+    "title": "[with patch, positive review] comparison with None extraordinarily slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4100",
     "user": "https://github.com/robertwb"

@@ -1,16 +1,17 @@
-# Issue 2236: plot randomizes the endpoints of the interval and causes wiggling in the graph
+# Issue 2236: [with patch, positive review] plot randomizes the endpoints of the interval and causes wiggling in the graph
 
 archive/issues_002236.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\np=plot(x, (x,-1,1))\np[0][0] == -1\np[0][-1] == 1\n\nThey will almost always return false before the patch.  After the patch, the two statements should return True always.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2236\n\n",
+    "closed_at": "2008-02-20T23:05:01Z",
     "created_at": "2008-02-20T22:39:42Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "plot randomizes the endpoints of the interval and causes wiggling in the graph",
+    "title": "[with patch, positive review] plot randomizes the endpoints of the interval and causes wiggling in the graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2236",
     "user": "https://github.com/jasongrout"

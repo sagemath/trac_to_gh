@@ -1,9 +1,10 @@
-# Issue 2411: Missing references in Sage tutorial
+# Issue 2411: [fixed by another ticket, no patch required, should be closed] Missing references in Sage tutorial
 
 archive/issues_002411.json:
 ```json
 {
     "body": "Assignee: tba\n\nOn the page\n\nhttp://www.sagemath.org/doc/html/tut/node16.html\n\nin the second paragraph the following sentence has problems.\n\n\"Note that the Sage kernel of a matrix $A$ is the ``left kernel'', i.e. the space of vectors 33#1 such that 34#2.\"\n\nI'm not exactly sure what 33#1 and 34#2 should be, but these symbols certainly don't make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2411\n\n",
+    "closed_at": "2008-08-25T21:23:21Z",
     "created_at": "2008-03-06T22:36:13Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002411.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Missing references in Sage tutorial",
+    "title": "[fixed by another ticket, no patch required, should be closed] Missing references in Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2411",
     "user": "https://github.com/rhinton"

@@ -1,22 +1,23 @@
-# Issue 4892: Changing precision of a Complex can convert it to a real
+# Issue 4892: [with patch, positive review] Changing precision of a Complex can convert it to a real
 
 archive/issues_004892.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: real complex precision\n\ngeorg.grafendorfer reported this to sage-support:\n\n```\nsage: a = CC(-5).n(prec=100)\nsage: b = ComplexField(100)(-5)\nsage: a == b\nTrue\nsage: type(a) == type(b)\nFalse\nsage: ln(a)\nNaN\nsage: ln(b)\n1.6094379124341003746007593332 + 3.1415926535897932384626433833*I\n```\nThe issue is that both a and b are equal to -5 (exactly, to 100 bit precision) but a is a Real while b is a Complex.  This happens because \n\n```\nLooking at the code for numerical_approx() in sage.misc.functional,\nthis happens because the attempt to coerce z into RealField(100)\nsucceeds.  To fix this (if it is agreed that it is a bug) that\nfunction would need to test the type of the input and return something\nof the same type (real/complex).\n```\nThe suggested fix is that the numerical_approx function should always return a complex number to the appropriate precsion if the input has type complex, even if the coercion into a real succeeded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4892\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: real complex precision\n\ngeorg.grafendorfer reported this to sage-support:\n\n```\nsage: a = CC(-5).n(prec=100)\nsage: b = ComplexField(100)(-5)\nsage: a == b\nTrue\nsage: type(a) == type(b)\nFalse\nsage: ln(a)\nNaN\nsage: ln(b)\n1.6094379124341003746007593332 + 3.1415926535897932384626433833*I\n```\nThe issue is that both a and b are equal to -5 (exactly, to 100 bit precision) but a is a Real while b is a Complex.  This happens because \n\n```\nLooking at the code for numerical_approx() in sage.misc.functional,\nthis happens because the attempt to coerce z into RealField(100)\nsucceeds.  To fix this (if it is agreed that it is a bug) that\nfunction would need to test the type of the input and return something\nof the same type (real/complex).\n```\nThe suggested fix is that the numerical_approx function should always return a complex number to the appropriate precsion if the input has type complex, even if the coercion into a real succeeded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4892\n\n",
+    "closed_at": "2009-01-28T15:23:18Z",
     "created_at": "2008-12-30T09:40:16Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Changing precision of a Complex can convert it to a real",
+    "title": "[with patch, positive review] Changing precision of a Complex can convert it to a real",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4892",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: somebody
+Assignee: @rlmill
 
 Keywords: real complex precision
 

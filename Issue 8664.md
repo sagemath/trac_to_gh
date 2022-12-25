@@ -1,15 +1,16 @@
-# Issue 8664: upgrade sage's mpir spkg to version 2.0.0
+# Issue 8664: Upgrade Sage's MPIR spkg to version 2.1.3
 
 archive/issues_008664.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @nexttime drkirkby @jdemeyer wbhart jpflori\n\n```\nHi,\n\nOK, after all this, the build finally completed.  The only changes I made were:\n\n* Updated mpir to rc3\n* patched ecm as explained here:\n    http://lists.gforge.inria.fr/pipermail/ecm-discuss/2009-August/004070.html\n   (Though this had to be slightly modified -- just search for the same command, which moved.)\n\n\nI then ran the long Sage test suite, and some tests fail.  \n\n  http://sage.math.washington.edu/home/wstein/build/mpir2/sage-4.3.5/testlong.log\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  -long \"devel/sage/doc/en/tutorial/tour_numtheory.rst\"\n        sage -t  -long \"devel/sage/doc/fr/tutorial/tour_numtheory.rst\"\n        sage -t  -long \"devel/sage/sage/modular/cusps.py\"\n        sage -t  -long \"devel/sage/sage/modular/modsym/boundary.py\"\n        sage -t  -long \"devel/sage/sage/modular/modsym/ambient.py\"\n        sage -t  -long \"devel/sage/sage/libs/pari/gen.pyx\"\n        sage -t  -long \"devel/sage/sage/rings/arith.py\"\n        sage -t  -long \"devel/sage/sage/rings/integer.pyx\"\n        sage -t  -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t  -long \"devel/sage/sage/tests/book_stein_ent.py\"\n        sage -t  -long \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\nTotal time for all tests: 7170.6 seconds\n\n--\n\nI looked and it appears that maybe all of these are the result of the XGCD behavior in MPIR changing again.  Has it changed to be like GMP now?  That would be convenient.\n\nwilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8664\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @nexttime drkirkby @jdemeyer wbhart jpflori\n\nKeywords: sd32, GMP ECM execstack Fedora 14 extension module library dependencies Darwin 11 MacOS X 10.7 Lion\n\n```\nHi,\n\nOK, after all this, the build finally completed.  The only changes I made were:\n\n* Updated mpir to rc3\n* patched ecm as explained here:\n    http://lists.gforge.inria.fr/pipermail/ecm-discuss/2009-August/004070.html\n   (Though this had to be slightly modified -- just search for the same command, which moved.)\n\n\nI then ran the long Sage test suite, and some tests fail.  \n\n  http://sage.math.washington.edu/home/wstein/build/mpir2/sage-4.3.5/testlong.log\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  -long \"devel/sage/doc/en/tutorial/tour_numtheory.rst\"\n        sage -t  -long \"devel/sage/doc/fr/tutorial/tour_numtheory.rst\"\n        sage -t  -long \"devel/sage/sage/modular/cusps.py\"\n        sage -t  -long \"devel/sage/sage/modular/modsym/boundary.py\"\n        sage -t  -long \"devel/sage/sage/modular/modsym/ambient.py\"\n        sage -t  -long \"devel/sage/sage/libs/pari/gen.pyx\"\n        sage -t  -long \"devel/sage/sage/rings/arith.py\"\n        sage -t  -long \"devel/sage/sage/rings/integer.pyx\"\n        sage -t  -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t  -long \"devel/sage/sage/tests/book_stein_ent.py\"\n        sage -t  -long \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\nTotal time for all tests: 7170.6 seconds\n\n--\n\nI looked and it appears that maybe all of these are the result of the XGCD behavior in MPIR changing again.  Has it changed to be like GMP now?  That would be convenient.\n\nwilliam\n```\n\n\n---\n\n**New spkg: [http://sage.math.washington.edu/home/leif/Sage/spkgs/mpir-2.1.3.p4.spkg](http://sage.math.washington.edu/home/leif/Sage/spkgs/mpir-2.1.3.p4.spkg)**\n\n**md5sum:** `197c652a6bdbf20c2e47be9176a8616e  mpir-2.1.3.p4.spkg`\n\n**Apply** [attachment:trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.2.alpha2.patch] **to the Sage library** (after installation of the spkgs and a rebuild of dependent packages).\n\n---\n\nSee comment(s) below on how to *\"manually\"* install and test the new packages. (ECM has to be updated, too, package is at #5847.)\n\n---\n\n#9522 can be closed as invalid / duplicate once this ticket has been merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8664\n\n",
+    "closed_at": "2011-10-14T09:41:13Z",
     "created_at": "2010-04-09T04:10:07Z",
     "labels": [
-        "component: build"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
-    "title": "upgrade sage's mpir spkg to version 2.0.0",
+    "title": "Upgrade Sage's MPIR spkg to version 2.1.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8664",
     "user": "https://github.com/williamstein"
@@ -18,6 +19,8 @@ archive/issues_008664.json:
 Assignee: GeorgSWeber
 
 CC:  @williamstein @nexttime drkirkby @jdemeyer wbhart jpflori
+
+Keywords: sd32, GMP ECM execstack Fedora 14 extension module library dependencies Darwin 11 MacOS X 10.7 Lion
 
 ```
 Hi,
@@ -57,6 +60,23 @@ I looked and it appears that maybe all of these are the result of the XGCD behav
 
 william
 ```
+
+
+---
+
+**New spkg: [http://sage.math.washington.edu/home/leif/Sage/spkgs/mpir-2.1.3.p4.spkg](http://sage.math.washington.edu/home/leif/Sage/spkgs/mpir-2.1.3.p4.spkg)**
+
+**md5sum:** `197c652a6bdbf20c2e47be9176a8616e  mpir-2.1.3.p4.spkg`
+
+**Apply** [attachment:trac_8664-fix_extmod_deps_for_MPIR_generically-sagelib-rebased_to_4.7.2.alpha2.patch] **to the Sage library** (after installation of the spkgs and a rebuild of dependent packages).
+
+---
+
+See comment(s) below on how to *"manually"* install and test the new packages. (ECM has to be updated, too, package is at #5847.)
+
+---
+
+#9522 can be closed as invalid / duplicate once this ticket has been merged.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8664
 

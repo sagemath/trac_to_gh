@@ -1,16 +1,16 @@
-# Issue 2942: notebook -- new command line options: sage -n and sage -nb
+# Issue 2942: new command line options: sage -n and sage -bn
 
 archive/issues_002942.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777\n\nAfter a vote, almost everybody (including me) agrees with the following:\n\nsage -n:\n   run the notebook -- equivalent to \"sage -notebook\"\n\nsage -bn:\n   build sage, then run the notebook -- equivalent to \"sage -b; sage -n\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2942\n\n",
+    "closed_at": "2009-12-09T02:36:41Z",
     "created_at": "2008-04-16T11:34:55Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "notebook -- new command line options: sage -n and sage -nb",
+    "title": "new command line options: sage -n and sage -bn",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2942",
     "user": "https://github.com/williamstein"

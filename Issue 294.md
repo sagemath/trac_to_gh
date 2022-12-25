@@ -1,16 +1,17 @@
-# Issue 294: slowness in mpfr_root
+# Issue 294: [with patch] slowness in mpfr_root
 
 archive/issues_000294.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe `RealNumber.nth_root()` function (new patch, not yet committed) is very slow when the index is large, e.g.\n\n```\nsage: x = RealNumber(8)\n\nsage: time x.nth_root(100000)\nCPU times: user 1.97 s, sys: 0.14 s, total: 2.11 s\nWall time: 2.11\n 1.00002079463162\n```\n\nSeems to be caused by `mpfr_root()` itself; probably needs to be discussed upstream with the mpfr developers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/294\n\n",
+    "closed_at": "2007-10-13T05:23:44Z",
     "created_at": "2007-02-24T17:15:26Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "slowness in mpfr_root",
+    "title": "[with patch] slowness in mpfr_root",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/294",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

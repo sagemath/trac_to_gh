@@ -3,7 +3,8 @@
 archive/issues_006580.json:
 ```json
 {
-    "body": "Assignee: rlmillster\n\nWe let ratpoints get in, and nobody thought to check that it actually builds with gcc-3.4.x.  Well, it doesn't.  This needs to get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6580\n\n",
+    "body": "Assignee: @rlmill\n\nWe let ratpoints get in, and nobody thought to check that it actually builds with gcc-3.4.x.  Well, it doesn't.  This needs to get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6580\n\n",
+    "closed_at": "2012-06-02T12:32:18Z",
     "created_at": "2009-07-21T16:40:22Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_006580.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: rlmillster
+Assignee: @rlmill
 
 We let ratpoints get in, and nobody thought to check that it actually builds with gcc-3.4.x.  Well, it doesn't.  This needs to get fixed. 
 

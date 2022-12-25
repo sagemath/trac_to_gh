@@ -1,9 +1,10 @@
-# Issue 3700: [with spkg, needs review] Solaris: Fix ntl build issue
+# Issue 3700: [with spkg, positive review] Solaris: Fix ntl build issue
 
 archive/issues_003700.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCurrently we skip the setup on Solaris which completely breaks ntl on Solaris. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.6/alpha1/ntl-5.4.2.p4.spkg\n\nfixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3700\n\n",
+    "closed_at": "2008-07-21T22:15:34Z",
     "created_at": "2008-07-21T21:41:44Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003700.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with spkg, needs review] Solaris: Fix ntl build issue",
+    "title": "[with spkg, positive review] Solaris: Fix ntl build issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3700",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

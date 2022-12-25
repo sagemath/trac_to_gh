@@ -4,11 +4,11 @@ archive/issues_003551.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe magma_version command is not documented; I would suggest that it say \"this command returns a tuple of the form ((int,int,int),str) giving the version numbers, and it depends on having magma installed\".\n\nIt also actually calls magma (to ask it its version number, I think). Would it be worth storing the version information in a file somewhere to aviod having to start a magma session?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3551\n\n",
+    "closed_at": "2008-10-23T16:34:39Z",
     "created_at": "2008-07-05T11:39:11Z",
     "labels": [
         "component: documentation",
-        "trivial",
-        "bug"
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "magma_version command",

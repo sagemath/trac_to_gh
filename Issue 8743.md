@@ -4,6 +4,7 @@ archive/issues_008743.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @williamstein @rbeezer\n\nchange_ring on a rational matrix goes against the documentation for the generic change_ring function, which states that a copy is always returned.  This patch fixes this and adds a TestSuite test for it (the advantage of a testsuite test is that this will be run for *every* matrix class, not just the rational matrix class).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8743\n\n",
+    "closed_at": "2010-06-06T01:33:11Z",
     "created_at": "2010-04-22T01:17:21Z",
     "labels": [
         "component: linear algebra",

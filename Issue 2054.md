@@ -4,6 +4,7 @@ archive/issues_002054.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf one uses the Python profiler through Sage's Ipython command line, the input line is not preparsed, which is potentially very confusing.  E.g., this should print 256:\n\n```\nsage: %prun print 2^8\n10\n         2 function calls in 0.000 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.000    0.000 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2054\n\n",
+    "closed_at": "2010-02-11T15:12:25Z",
     "created_at": "2008-02-05T14:31:08Z",
     "labels": [
         "component: user interface",

@@ -1,15 +1,16 @@
-# Issue 1592: jmol -- misc small changes; added minimal 3d parametric plotting
+# Issue 1592: [with bundle, needs review] jmol -- misc small changes; added minimal 3d parametric plotting
 
 archive/issues_001592.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1592\n\n",
+    "closed_at": "2008-01-05T03:05:52Z",
     "created_at": "2007-12-24T07:38:40Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "jmol -- misc small changes; added minimal 3d parametric plotting",
+    "title": "[with bundle, needs review] jmol -- misc small changes; added minimal 3d parametric plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1592",
     "user": "https://github.com/williamstein"

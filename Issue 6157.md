@@ -1,15 +1,16 @@
-# Issue 6157: [with patch, needs review] enhance implicit_plot3d documentation
+# Issue 6157: [with patch, positive review] enhance implicit_plot3d documentation
 
 archive/issues_006157.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  cwitty wcauchois\n\nBased on some feedback from Ben Woodruff, the patch below adds a simple implicit_plot3d command for a sphere, and then adds variables to the ranges for the rest of the examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6157\n\n",
+    "closed_at": "2009-05-31T23:52:53Z",
     "created_at": "2009-05-30T07:50:19Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] enhance implicit_plot3d documentation",
+    "title": "[with patch, positive review] enhance implicit_plot3d documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6157",
     "user": "https://github.com/jasongrout"

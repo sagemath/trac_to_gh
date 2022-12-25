@@ -4,6 +4,7 @@ archive/issues_007755.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nWe should update the \"docbuild\" configuration so that Sphinx can locate jsMath.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/9db6f5df45bc05cc), #7467.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7755\n\n",
+    "closed_at": "2009-12-24T07:11:50Z",
     "created_at": "2009-12-24T05:15:55Z",
     "labels": [
         "component: documentation",

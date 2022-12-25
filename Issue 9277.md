@@ -3,10 +3,11 @@
 archive/issues_009277.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jaapspies\n\nJust when I thought I'd got rid of all the junk like this from spkg-install files:\n\nIssue created by migration from https://trac.sagemath.org/ticket/9277\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nJust when I thought I'd got rid of all the junk like this from spkg-install files:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   FLINT_TUNE=\" -fPIC -m64 -funroll-loops\"\nfi\n```\n\nI realise that these can lurk in spkg-check files too. Flint has such a check routine, so whilst flint builds OK on OpenSolaris x64 in 64-bit mode, the self tests do not work, as the building of the self-tests does not produce 64-bit binaries, but 32-bit ones. Hence one gets a failure:\n\n```\ng++  -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include/ -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include  -fPIC -funroll-loops   -O2 F_mpz-test.o test-support.o -o F_mpz-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib/ -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib/  -lgmp -lpthread -lntl -lm \nld: fatal: file zn_mod.o: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to F_mpz-test\ncollect2: ld returned 1 exit status\nmake[2]: *** [F_mpz-test] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/flint-1.5.0.p4/src'\nError building the test suite for FLINT\n\nreal 0m19.361s\nuser 0m18.552s\nsys 0m0.676s\nsage: An error occurred while installing flint-1.5.0.p4\n```\n\nNote how g++ is invoked with no -m64 option. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9277\n\n",
+    "closed_at": "2010-06-25T15:42:08Z",
     "created_at": "2010-06-19T21:38:52Z",
     "labels": [
-        "component: algebra",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -16,11 +17,38 @@ archive/issues_009277.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @aghitza
+Assignee: GeorgSWeber
 
 CC:  @jaapspies
 
 Just when I thought I'd got rid of all the junk like this from spkg-install files:
+
+
+```
+if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
+   echo "64 bit MacIntel"
+   FLINT_TUNE=" -fPIC -m64 -funroll-loops"
+fi
+```
+
+I realise that these can lurk in spkg-check files too. Flint has such a check routine, so whilst flint builds OK on OpenSolaris x64 in 64-bit mode, the self tests do not work, as the building of the self-tests does not produce 64-bit binaries, but 32-bit ones. Hence one gets a failure:
+
+```
+g++  -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include/ -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include  -fPIC -funroll-loops   -O2 F_mpz-test.o test-support.o -o F_mpz-test zn_mod.o misc.o mul_ks.o pack.o mul.o mulmid.o mulmid_ks.o ks_support.o mpn_mulmid.o nuss.o pmf.o pmfvec_fft.o tuning.o mul_fft.o mul_fft_dft.o array.o invert.o mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o theta.o zmod_mat.o F_mpz.o tinyQS.o factor_base.o poly.o sieve.o linear_algebra.o block_lanczos.o NTL-interface.o -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib/ -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib/  -lgmp -lpthread -lntl -lm 
+ld: fatal: file zn_mod.o: wrong ELF class: ELFCLASS64
+ld: fatal: file processing errors. No output written to F_mpz-test
+collect2: ld returned 1 exit status
+make[2]: *** [F_mpz-test] Error 1
+make[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/flint-1.5.0.p4/src'
+Error building the test suite for FLINT
+
+real 0m19.361s
+user 0m18.552s
+sys 0m0.676s
+sage: An error occurred while installing flint-1.5.0.p4
+```
+
+Note how g++ is invoked with no -m64 option. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9277
 

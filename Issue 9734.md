@@ -3,7 +3,8 @@
 archive/issues_009734.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri\n\nAlthough the 32-bit SPARC version of Sage passes all doc tests, there are still issues on 32-bit versions of Solaris/OpenSolaris on x86 hardware. This ticket summaries lists only failures on 32-bit builds, versions on x86 processors. \n\n64-bit versions have far more failures, and will need another ticket to address them. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9734\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri\n\nAlthough the 32-bit SPARC version of Sage passes all doc tests, there are still issues on 32-bit versions of Solaris/OpenSolaris on x86 hardware. This ticket summaries lists only failures on 32-bit builds, versions on x86 processors. \n\n64-bit versions have far more failures, and will need another ticket to address them. \n\n|        |              |                |         |\n|--------|--------------|----------------|---------|\n|**Test**|**Solaris 10**| **OpenSolaris**|**Notes**|\n|`doc/en/tutorial/tour_advanced.rs`|Passed|#9736|gfan|\n|`doc/rf/tutorial/tour_advanced.rs`|Passed|#9736|gfan|\n|`sage/lfunctions/sympow.py`|#9703|#9703|SYMPOW is also busted on Cygwin & ArchLinux (see #9166)|\n|`sage/modular/hecke/submodule.py`|#9703|#9703|SYMPOW|\n|`sage/modular/abvar/abvar.p`|#9703|#9703|SYMPOW|\n|`sage/rings/polynomial/groebner_fan.py`|Passed|#9736|Gfan|\n|`sage/schemes/elliptic_curves/ell_rational_field.py`|#9703|#9703|SYMPOW|\n|`sage/rings/polynomial/multi_polynomial_ideal.py`|Passed|#9736|Gfan|\n|`sage/symbolic/expression.pyx`|#9689+#9693|#9689+#9693|numerical noise and missing zero|\n|`sage/stats/hmm/chmm.pyx`|#9735|#9735|numerical noise. **Positive review**|\nAt this early stage of the 32-bit ports to Solaris 10 and OpenSolaris on x86 processors, it would appear the problems fall into 3 areas\n\n* Numerical noise. \n* [SYMPOW](http://www.sagemath.org/doc/reference/sage/lfunctions/sympow.html) on both Solaris 10 and OpenSolaris.\n* [Gfan](http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html) - only on OpenSolaris. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9734\n\n",
+    "closed_at": "2015-09-12T13:58:43Z",
     "created_at": "2010-08-12T16:09:46Z",
     "labels": [
         "component: porting: solaris",
@@ -23,6 +24,26 @@ CC:  @jaapspies @jhpalmieri
 Although the 32-bit SPARC version of Sage passes all doc tests, there are still issues on 32-bit versions of Solaris/OpenSolaris on x86 hardware. This ticket summaries lists only failures on 32-bit builds, versions on x86 processors. 
 
 64-bit versions have far more failures, and will need another ticket to address them. 
+
+|        |              |                |         |
+|--------|--------------|----------------|---------|
+|**Test**|**Solaris 10**| **OpenSolaris**|**Notes**|
+|`doc/en/tutorial/tour_advanced.rs`|Passed|#9736|gfan|
+|`doc/rf/tutorial/tour_advanced.rs`|Passed|#9736|gfan|
+|`sage/lfunctions/sympow.py`|#9703|#9703|SYMPOW is also busted on Cygwin & ArchLinux (see #9166)|
+|`sage/modular/hecke/submodule.py`|#9703|#9703|SYMPOW|
+|`sage/modular/abvar/abvar.p`|#9703|#9703|SYMPOW|
+|`sage/rings/polynomial/groebner_fan.py`|Passed|#9736|Gfan|
+|`sage/schemes/elliptic_curves/ell_rational_field.py`|#9703|#9703|SYMPOW|
+|`sage/rings/polynomial/multi_polynomial_ideal.py`|Passed|#9736|Gfan|
+|`sage/symbolic/expression.pyx`|#9689+#9693|#9689+#9693|numerical noise and missing zero|
+|`sage/stats/hmm/chmm.pyx`|#9735|#9735|numerical noise. **Positive review**|
+At this early stage of the 32-bit ports to Solaris 10 and OpenSolaris on x86 processors, it would appear the problems fall into 3 areas
+
+* Numerical noise. 
+* [SYMPOW](http://www.sagemath.org/doc/reference/sage/lfunctions/sympow.html) on both Solaris 10 and OpenSolaris.
+* [Gfan](http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html) - only on OpenSolaris. 
+
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9734

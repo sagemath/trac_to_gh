@@ -1,22 +1,23 @@
-# Issue 5890: clean up schemes/elliptic_curves/ell_generic.py
+# Issue 5890: [with patch, woth positive review] clean up schemes/elliptic_curves/ell_generic.py
 
 archive/issues_005890.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @JohnCremona\n\nKeywords: elliptic curve field\n\nAs noted at #5765, `ell_generic.py` has some functions that do not make sense over a general ring and should rather be moved down to `ell_field.py` or one of its descendants.\n\nNote also William's comment from #5765: I think it would be nice to be able to implement the elliptic curve factorization method (ECM) without having to use this hack:\n\n```\nR = Zmod(N)\nR.is_field = lambda: True\nE = EllipticCurve(R, [-1,0])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5890\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein @JohnCremona\n\nKeywords: elliptic curve field\n\nAs noted at #5765, `ell_generic.py` has some functions that do not make sense over a general ring and should rather be moved down to `ell_field.py` or one of its descendants.\n\nNote also William's comment from #5765: I think it would be nice to be able to implement the elliptic curve factorization method (ECM) without having to use this hack:\n\n```\nR = Zmod(N)\nR.is_field = lambda: True\nE = EllipticCurve(R, [-1,0])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5890\n\n",
+    "closed_at": "2009-04-30T00:54:18Z",
     "created_at": "2009-04-24T23:43:37Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "clean up schemes/elliptic_curves/ell_generic.py",
+    "title": "[with patch, woth positive review] clean up schemes/elliptic_curves/ell_generic.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5890",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 CC:  @williamstein @JohnCremona
 

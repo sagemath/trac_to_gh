@@ -1,16 +1,17 @@
-# Issue 4394: Sage 3.1.4: magma related optional doctest failure in sage/rings/polynomial/polynomial_element.pyx
+# Issue 4394: [with patch; positive review] Sage 3.1.4: magma related optional doctest failure in sage/rings/polynomial/polynomial_element.pyx
 
 archive/issues_004394.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nmabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/polynomial_element.py\", line 2833:\n    sage: g = magma(f); g              # optional -- requires Magma\nExpected:\n    y^3 - 17*y + 5\nGot:\n    $.1^3 - 17*$.1 + 5\n**********************************************************************\n1 items had failures:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4394\n\n",
+    "closed_at": "2008-10-31T20:21:20Z",
     "created_at": "2008-10-30T16:51:51Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.1.4: magma related optional doctest failure in sage/rings/polynomial/polynomial_element.pyx",
+    "title": "[with patch; positive review] Sage 3.1.4: magma related optional doctest failure in sage/rings/polynomial/polynomial_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4394",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

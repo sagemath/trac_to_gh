@@ -3,7 +3,8 @@
 archive/issues_008262.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8262\n\n",
+    "body": "Assignee: drkirkby\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8262\n\n",
+    "closed_at": "2010-07-16T08:03:27Z",
     "created_at": "2010-02-14T12:19:48Z",
     "labels": [
         "component: documentation"
@@ -15,7 +16,7 @@ archive/issues_008262.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: mvngu
+Assignee: drkirkby
 
 As the subject says.
 

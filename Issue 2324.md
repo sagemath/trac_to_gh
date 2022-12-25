@@ -1,22 +1,23 @@
-# Issue 2324: RealNumber->QQ coercion fails for NaN, infinity
+# Issue 2324: [with patch, positive review] RealNumber->QQ coercion fails for NaN, infinity
 
 archive/issues_002324.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nBoth of these should raise an exception immediately.  Instead, the former crashes, and the latter takes a long time to do something (I haven't tracked down what yet).\n\n```\nsage: QQ(RR(0.0/0.0))\n/home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\n\n```\nsage: QQ(RR(1.0/0.0))\n... infinite loop?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2324\n\n",
+    "body": "Assignee: cwitty\n\nBoth of these should raise an exception immediately.  Instead, the former crashes, and the latter takes a long time to do something (I haven't tracked down what yet).\n\n```\nsage: QQ(RR(0.0/0.0))\n/home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\n\n```\nsage: QQ(RR(1.0/0.0))\n... infinite loop?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2324\n\n",
+    "closed_at": "2008-02-27T23:59:16Z",
     "created_at": "2008-02-26T20:27:06Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "RealNumber->QQ coercion fails for NaN, infinity",
+    "title": "[with patch, positive review] RealNumber->QQ coercion fails for NaN, infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2324",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: somebody
+Assignee: cwitty
 
 Both of these should raise an exception immediately.  Instead, the former crashes, and the latter takes a long time to do something (I haven't tracked down what yet).
 

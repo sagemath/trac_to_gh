@@ -3,10 +3,11 @@
 archive/issues_002048.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2048\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2048\n\n",
+    "closed_at": "2010-06-18T12:57:11Z",
     "created_at": "2008-02-05T02:46:16Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
@@ -16,7 +17,7 @@ archive/issues_002048.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 
 

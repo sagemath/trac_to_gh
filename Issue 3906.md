@@ -4,6 +4,7 @@ archive/issues_003906.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nNo response on sage-support, so I deem this a bug, not a feature:\n\n```\nsage: plot(sin,0,pi)\n<plots fine>\nsage: plot(2*sin,0,pi)\n<boom>\n\nAlthough I suppose we should always include variables -\n\nsage: plot(2*sin(x),0,pi)\n<plots fine>\n\n- for consistency's (and ease of use's) sake both of the above should\nwork. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3906\n\n",
+    "closed_at": "2008-09-05T19:41:46Z",
     "created_at": "2008-08-20T01:16:20Z",
     "labels": [
         "component: symbolics",

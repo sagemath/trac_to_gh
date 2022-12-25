@@ -1,16 +1,17 @@
-# Issue 3241: [with patch; needs review] cygwin -- new rubiks spkg that builds on cygwin
+# Issue 3241: [with patch; positive review] cygwin -- new rubiks spkg that builds on cygwin
 
 archive/issues_003241.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNew package here:\n\n    http://sage.math.washington.edu/home/was/cygwin/rubiks-20070912.p7.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3241\n\n",
+    "closed_at": "2008-05-18T13:04:17Z",
     "created_at": "2008-05-17T18:01:49Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- new rubiks spkg that builds on cygwin",
+    "title": "[with patch; positive review] cygwin -- new rubiks spkg that builds on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3241",
     "user": "https://github.com/williamstein"

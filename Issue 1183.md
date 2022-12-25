@@ -1,16 +1,17 @@
-# Issue 1183: Residue fields are broken
+# Issue 1183: [with patch, with positive review] Residue fields are broken
 
 archive/issues_001183.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe current implementation of residue fields for number fields is broken.  It just takes the defining polynomial for the number field, factors it over Z/pZ, picks one factor and creates an extension using that factor.  This breaks because elements of the ring of integers, when expressed in terms of the power basis of the number field can have denominators divisible by p.\n\nThe solution is to create a p-maximal order and do some linear algebra to come up with a map that doesn't break on denominators divisible by p.  Pari's nfinit has a way to give it a partial factorization of the discriminant that will produce a p-maximal order.\n\nIf you want to implement this, talk to William Stein or David Roe for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1183\n\n",
+    "closed_at": "2007-12-15T13:40:29Z",
     "created_at": "2007-11-16T02:35:39Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Residue fields are broken",
+    "title": "[with patch, with positive review] Residue fields are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1183",
     "user": "https://github.com/roed314"

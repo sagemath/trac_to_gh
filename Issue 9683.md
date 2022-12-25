@@ -3,7 +3,8 @@
 archive/issues_009683.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nKeywords: pretty_print, history\n\nAfter using `pretty_print`, the first history variable (`_`) no longer updates.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: 17\n17\nsage: _\n17\nsage: 23\n23\nsage: _\n23\nsage: pretty_print(17)\n<html><span class=\"math\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}17</span></html>\nsage: _\n17\nsage: 23\n23\nsage: _\n17\n```\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe relevant function seems to be `pretty_print` in `/sage/misc/latex.py`, but I don't know the right way to fix it. The function and `pretty_print_default` in same file, and the functions `displayhook` and `install` in `/sage/misc/displayhook.py` may also be relevant.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9683\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nKeywords: pretty_print, history, days57\n\nAfter using `pretty_print`, the first history variable (`_`) no longer updates.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: 17\n17\nsage: _\n17\nsage: 23\n23\nsage: _\n23\nsage: pretty_print(17)\n<html><span class=\"math\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}17</span></html>\nsage: _\n17\nsage: 23\n23\nsage: _\n17\n```\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe relevant function seems to be `pretty_print` in `/sage/misc/latex.py`, but I don't know the right way to fix it. The function and `pretty_print_default` in same file, and the functions `displayhook` and `install` in `/sage/misc/displayhook.py` may also be relevant.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9683\n\n",
+    "closed_at": "2014-04-13T19:33:28Z",
     "created_at": "2010-08-04T05:05:14Z",
     "labels": [
         "component: user interface",
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 CC:  @mwhansen
 
-Keywords: pretty_print, history
+Keywords: pretty_print, history, days57
 
 After using `pretty_print`, the first history variable (`_`) no longer updates.
 

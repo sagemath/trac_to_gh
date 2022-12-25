@@ -4,6 +4,7 @@ archive/issues_006989.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:\n\n```\nsage: mypoints = [vector([1,2,3]), vector([4,5,6])]\nsage: type(mypoints[0])\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\nbut then:\n\n```\nsage: L = line3d(mypoints)\nsage: type(mypoints[0])\n<type 'tuple'>\n```\n\nso vectors are changed to tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6989\n\n",
+    "closed_at": "2010-01-31T01:00:49Z",
     "created_at": "2009-09-22T17:49:16Z",
     "labels": [
         "component: graphics",

@@ -1,16 +1,17 @@
-# Issue 5623: 5x speedup in all_graph_colorings
+# Issue 5623: [with patch, positive review] 5x speedup in all_graph_colorings
 
 archive/issues_005623.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis patch changes all_graph_colorings to use the C++ dancing links implementation instead of the Cython implementation.\n\n* sage -testall is all ok\n* valgrind is ok\n* Roughly 5x speedup on some random graphs (see test.sage):\n\nSage 3.4 timing:\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 158 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 158 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 157 ms per loop\n\nSage 3.4 with patch timing:\n\n5 loops, best of 3: 33.5 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 33.1 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 33.3 ms per loop\n\nIssue created by migration from https://trac.sagemath.org/ticket/5623\n\n",
+    "body": "Assignee: boothby\n\nThis patch changes all_graph_colorings to use the C++ dancing links implementation instead of the Cython implementation.\n\n* sage -testall is all ok\n* valgrind is ok\n* Roughly 5x speedup on some random graphs (see test.sage):\n\nSage 3.4 timing:\n\n```\ncarlo@ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 158 ms per loop\ncarlo@ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 158 ms per loop\ncarlo@ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 157 ms per loop\n```\nSage 3.4 with patch timing:\n\n```\n5 loops, best of 3: 33.5 ms per loop\ncarlo@ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 33.1 ms per loop\ncarlo@ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 33.3 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5623\n\n",
+    "closed_at": "2009-04-01T02:24:39Z",
     "created_at": "2009-03-28T13:13:25Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "5x speedup in all_graph_colorings",
+    "title": "[with patch, positive review] 5x speedup in all_graph_colorings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5623",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
@@ -25,20 +26,24 @@ This patch changes all_graph_colorings to use the C++ dancing links implementati
 * Roughly 5x speedup on some random graphs (see test.sage):
 
 Sage 3.4 timing:
-carlo`@`ka37:~/work/code/graphdlx$ sage test.sage 
-5 loops, best of 3: 158 ms per loop
-carlo`@`ka37:~/work/code/graphdlx$ sage test.sage 
-5 loops, best of 3: 158 ms per loop
-carlo`@`ka37:~/work/code/graphdlx$ sage test.sage 
-5 loops, best of 3: 157 ms per loop
 
+```
+carlo@ka37:~/work/code/graphdlx$ sage test.sage 
+5 loops, best of 3: 158 ms per loop
+carlo@ka37:~/work/code/graphdlx$ sage test.sage 
+5 loops, best of 3: 158 ms per loop
+carlo@ka37:~/work/code/graphdlx$ sage test.sage 
+5 loops, best of 3: 157 ms per loop
+```
 Sage 3.4 with patch timing:
 
+```
 5 loops, best of 3: 33.5 ms per loop
-carlo`@`ka37:~/work/code/graphdlx$ sage test.sage 
+carlo@ka37:~/work/code/graphdlx$ sage test.sage 
 5 loops, best of 3: 33.1 ms per loop
-carlo`@`ka37:~/work/code/graphdlx$ sage test.sage 
+carlo@ka37:~/work/code/graphdlx$ sage test.sage 
 5 loops, best of 3: 33.3 ms per loop
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5623
 

@@ -1,15 +1,16 @@
-# Issue 7724: breadth/depth first search for c_graphs
+# Issue 7724: breadth/depth first search and basic connectivity for c_graphs
 
 archive/issues_007724.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nSome improvement on this side, and so for ther functions like connected components, strongly connected components, etc...\n\n```\nsage: g= graphs.RandomGNP(1000,.01)\nsage: h=g.copy(implementation=\"c_graph\")\nsage: timeit(\"list(g.depth_first_search(0))\")\n25 loops, best of 3: 10.9 ms per loop\nsage: timeit(\"list(h.depth_first_search(0))\")\n125 loops, best of 3: 2.03 ms per loop\n```\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7724\n\n",
+    "closed_at": "2010-01-03T22:13:00Z",
     "created_at": "2009-12-17T17:46:37Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "breadth/depth first search for c_graphs",
+    "title": "breadth/depth first search and basic connectivity for c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7724",
     "user": "https://github.com/nathanncohen"

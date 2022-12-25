@@ -1,16 +1,17 @@
-# Issue 6045: [with patch, needs review] Computation of Heegner points
+# Issue 6045: [with patch, positive review] Computation of Heegner points
 
 archive/issues_006045.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nAdds Heegner point method to elliptic curves over Q. Also cleans up the modular parametrization code.\n\nThis ticket is almost certainly related: #4849\n\nIssue created by migration from https://trac.sagemath.org/ticket/6045\n\n",
+    "closed_at": "2009-07-20T15:48:26Z",
     "created_at": "2009-05-15T09:59:52Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Computation of Heegner points",
+    "title": "[with patch, positive review] Computation of Heegner points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6045",
     "user": "https://github.com/robertwb"

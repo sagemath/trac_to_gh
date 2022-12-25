@@ -4,6 +4,7 @@ archive/issues_002669.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt would be nice if we could set multiple elements using indexing notation, ala matlab or numpy (see, for example, http://www.scipy.org/NumPy_for_Matlab_Users\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2669\n\n",
+    "closed_at": "2008-03-25T22:48:59Z",
     "created_at": "2008-03-25T22:24:46Z",
     "labels": [
         "component: linear algebra"

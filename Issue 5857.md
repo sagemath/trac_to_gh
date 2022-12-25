@@ -1,22 +1,23 @@
-# Issue 5857: E.list() for E an elliptic curve over a finite field is broken
+# Issue 5857: [with patch, positive review] E.list() for E an elliptic curve over a finite field is broken
 
 archive/issues_005857.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nE.list() doesn't work, but list(E) works fine.\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
+    "body": "Assignee: @loefflerd\n\nE.list() doesn't work, but list(E) works fine.\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
+    "closed_at": "2009-08-23T02:11:00Z",
     "created_at": "2009-04-22T15:47:55Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "E.list() for E an elliptic curve over a finite field is broken",
+    "title": "[with patch, positive review] E.list() for E an elliptic curve over a finite field is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5857",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 E.list() doesn't work, but list(E) works fine.
 

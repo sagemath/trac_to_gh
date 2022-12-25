@@ -1,22 +1,24 @@
-# Issue 2351: sagenb.org SSL certificate is expired
+# Issue 2351: [with positive review] sagenb.org SSL certificate is expired
 
 archive/issues_002351.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe certificate expired earlier in February 2008.\n\nIt seems that the certificate was only good for a month.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2351\n\n",
+    "body": "Assignee: mabshoff\n\nThe certificate expired earlier in February 2008.\n\nIt seems that the certificate was only good for a month.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2351\n\n",
+    "closed_at": "2008-06-10T00:39:15Z",
     "created_at": "2008-02-29T02:45:25Z",
     "labels": [
         "component: website/wiki",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "sagenb.org SSL certificate is expired",
+    "title": "[with positive review] sagenb.org SSL certificate is expired",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2351",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 The certificate expired earlier in February 2008.
 

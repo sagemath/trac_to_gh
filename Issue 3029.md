@@ -1,16 +1,17 @@
-# Issue 3029: [with patch; needs review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages
+# Issue 3029: [with patch; positive review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages
 
 archive/issues_003029.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nDebian doesn't allow you to upload packages that use DEB_AUTO_UPDATE_DEBIAN_CONTROL because it causes confusion with Non-Maintainer Uploads.  Since I'd like to get the packages so that they can be uploaded to Debian, we should remove it from our rules files.  Since it's fine for our purposes, I've modified sage-debsource to set DEB_AUTO_UPDATE_DEBIAN_CONTROL so that it always gets used when we are building packages.  I think it's probably easier for Michael to just make the changes than to merge N patches, so the following code will do the relevant update when the relevant spkgs are unpacked.\n\nperl -i -0pe 's/^DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1\\n//m' */dist/debian/*/rules */dist/debian/rules\n\n(if the patches are easier to deal with, let me know and I'll generate them)\nThe complete list of spkgs that require this treatment is as follows:\n\ncddlib\neclib\nextcode\nflint\nflintqs\ngap\ngenus2reduction\ngfan\ngivaro\niml\njmol\nlcalc\nlibfplll\nlibm4ri\nlinbox\nntl\npalp\npolybori\nrubiks\nscipy_sandbox\nsingular\nsymmetrica\nsympow\ntachyon\nzn_poly\n\nIssue created by migration from https://trac.sagemath.org/ticket/3029\n\n",
+    "body": "Assignee: @timabbott\n\nDebian doesn't allow you to upload packages that use DEB_AUTO_UPDATE_DEBIAN_CONTROL because it causes confusion with Non-Maintainer Uploads.  Since I'd like to get the packages so that they can be uploaded to Debian, we should remove it from our rules files.  Since it's fine for our purposes, I've modified sage-debsource to set DEB_AUTO_UPDATE_DEBIAN_CONTROL so that it always gets used when we are building packages.  I think it's probably easier for Michael to just make the changes than to merge N patches, so the following code will do the relevant update when the relevant spkgs are unpacked.\n\n```\nperl -i -0pe 's/^DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1\\n//m' \n*/dist/debian/*/rules */dist/debian/rules\n```\n(if the patches are easier to deal with, let me know and I'll generate them)\nThe complete list of spkgs that require this treatment is as follows:\n\n* cddlib\n* eclib\n* extcode\n* flint\n* flintqs\n* gap\n* genus2reduction\n* gfan\n* givaro\n* iml\n* jmol\n* lcalc\n* libfplll\n* libm4ri\n* linbox\n* ntl\n* palp\n* polybori\n* rubiks\n* scipy_sandbox\n* singular\n* symmetrica\n* sympow\n* tachyon\n* zn_poly\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3029\n\n",
+    "closed_at": "2008-04-27T07:19:49Z",
     "created_at": "2008-04-26T04:13:21Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages",
+    "title": "[with patch; positive review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3029",
     "user": "https://github.com/timabbott"
@@ -20,36 +21,39 @@ Assignee: @timabbott
 
 Debian doesn't allow you to upload packages that use DEB_AUTO_UPDATE_DEBIAN_CONTROL because it causes confusion with Non-Maintainer Uploads.  Since I'd like to get the packages so that they can be uploaded to Debian, we should remove it from our rules files.  Since it's fine for our purposes, I've modified sage-debsource to set DEB_AUTO_UPDATE_DEBIAN_CONTROL so that it always gets used when we are building packages.  I think it's probably easier for Michael to just make the changes than to merge N patches, so the following code will do the relevant update when the relevant spkgs are unpacked.
 
-perl -i -0pe 's/^DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1\n//m' */dist/debian/*/rules */dist/debian/rules
-
+```
+perl -i -0pe 's/^DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1\n//m' 
+*/dist/debian/*/rules */dist/debian/rules
+```
 (if the patches are easier to deal with, let me know and I'll generate them)
 The complete list of spkgs that require this treatment is as follows:
 
-cddlib
-eclib
-extcode
-flint
-flintqs
-gap
-genus2reduction
-gfan
-givaro
-iml
-jmol
-lcalc
-libfplll
-libm4ri
-linbox
-ntl
-palp
-polybori
-rubiks
-scipy_sandbox
-singular
-symmetrica
-sympow
-tachyon
-zn_poly
+* cddlib
+* eclib
+* extcode
+* flint
+* flintqs
+* gap
+* genus2reduction
+* gfan
+* givaro
+* iml
+* jmol
+* lcalc
+* libfplll
+* libm4ri
+* linbox
+* ntl
+* palp
+* polybori
+* rubiks
+* scipy_sandbox
+* singular
+* symmetrica
+* sympow
+* tachyon
+* zn_poly
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3029
 

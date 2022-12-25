@@ -1,9 +1,10 @@
-# Issue 2212: degree sequence documentation [with bundle, needs review]
+# Issue 2212: [with patch, positive review] degree sequence documentation
 
 archive/issues_002212.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis corrects some errors/transpositions in the documentation of the various degree sequence functions.  It also removes the \"seed\" variable in DegreeSequence itself, as a main NetworkX developer confirmed what the NetworkX code suggests, that this is unnecessary (they have now removed it in their implementation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2212\n\n",
+    "closed_at": "2008-03-13T12:45:42Z",
     "created_at": "2008-02-19T20:30:40Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_002212.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "degree sequence documentation [with bundle, needs review]",
+    "title": "[with patch, positive review] degree sequence documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2212",
     "user": "https://github.com/kcrisman"

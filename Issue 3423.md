@@ -4,6 +4,7 @@ archive/issues_003423.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nConsider this sage session:\n\n```\nsage: pari('1.q')\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/gen.pyx in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:32332)()\n\n<class 'sage.libs.pari.gen.PariError'>:  (7)\n```\n\nas opposed to this gp session:\n\n```\n? 1.q\n  ***   unknown member function: 1.q\n                                   ^-\n```\n\nIt'd be nice if the error messages we generate are a bit more informative. This may be an arbitrarily large amount of work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3423\n\n",
+    "closed_at": "2013-11-02T12:57:20Z",
     "created_at": "2008-06-14T01:12:31Z",
     "labels": [
         "component: interfaces",

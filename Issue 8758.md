@@ -4,6 +4,7 @@ archive/issues_008758.json:
 ```json
 {
     "body": "Assignee: acleone\n\nCC:  acleone @williamstein @TimDumol\n\nInstead of having /js, /css, etc, we should serve all static data files out of /data.  For now this patch just adds /data using `child_data = static.File(DATA)`, where `static.File(path)` is defined in twisted.  It will serve files with the correct MIME type based on extension.\n\nEventually we should find all the /js and /css paths and change them to /data\n\nAt some point in the future we could even implement caching of all the static files easily by subclassing static.File(path), and making everything in /data cached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8758\n\n",
+    "closed_at": "2010-07-11T05:58:13Z",
     "created_at": "2010-04-24T22:58:06Z",
     "labels": [
         "component: notebook",

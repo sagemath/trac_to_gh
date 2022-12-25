@@ -1,16 +1,17 @@
-# Issue 4026: [with spkg, needs review] Move Macaulay2  to latest upstream
+# Issue 4026: [with spkg, positive review] Move Macaulay2  to latest upstream
 
 archive/issues_004026.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis spkg removes the patches from #3926.\nIt updates upstream to r7221 of the 1.1 branch.\nIt also solves a build issue under gcc 4.3.1.\n\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/macaulay2-1.1-r7221.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4026\n\n",
+    "closed_at": "2008-09-03T15:47:39Z",
     "created_at": "2008-08-31T23:39:33Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] Move Macaulay2  to latest upstream",
+    "title": "[with spkg, positive review] Move Macaulay2  to latest upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4026",
     "user": "https://github.com/garyfurnish"

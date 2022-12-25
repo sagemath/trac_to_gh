@@ -3,11 +3,12 @@
 archive/issues_001341.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI added a script to the fortran package which gets installed to local/bin\n\nwhich_fortran\n\nwill return g95 or gfortran.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1341\n\n",
+    "body": "Assignee: jkantor\n\nI added a script to the fortran package which gets installed to local/bin\n\nwhich_fortran\n\nwill return g95 or gfortran.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1341\n\n",
+    "closed_at": "2007-12-01T19:54:08Z",
     "created_at": "2007-11-30T05:25:59Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: numerical",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with spkg] add script so that which_fortran returns g95 or gfortran",
@@ -16,7 +17,7 @@ archive/issues_001341.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
-Assignee: @williamstein
+Assignee: jkantor
 
 I added a script to the fortran package which gets installed to local/bin
 

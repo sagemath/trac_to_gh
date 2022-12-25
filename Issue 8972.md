@@ -3,7 +3,8 @@
 archive/issues_008972.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @tscrim @mkoeppe @nbruin @jhpalmieri @dkrenn @bgrenet tmonteil @videlec @davewittemorris\n\nKeywords: power series ring, fraction field\n\nThis ticket is about at least three bugs related with inversion of elements of power series rings.\n\nHere is the first:\n\n```\nsage: R.<x> = ZZ[[]]\nsage: (1/x).parent()\nLaurent Series Ring in x over Integer Ring\nsage: (x/x).parent()\nPower Series Ring in x over Integer Ring\n```\n*Both* parents are wrong. Usually, the parent of ``a/b`` is the fraction field of the parent of ``a,b``, even if ``a==b``. And neither above parent is a field.\n\nNext bug:\n\n```\nsage: (1/(2*x)).parent()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (919, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n... very long traceback\nTypeError: no conversion of this rational to integer\n```\n\nAnd the third:\n\n```\nsage: F = FractionField(R)\nsage: 1/x in F\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8972\n\n",
+    "body": "CC:  @tscrim @mkoeppe @nbruin @jhpalmieri @dkrenn @bgrenet tmonteil @videlec @davewittemorris\n\nKeywords: power series ring, fraction field\n\nThis ticket is about at least three bugs related with inversion of elements of power series rings.\n\nHere is the first:\n\n```\nsage: R.<x> = ZZ[[]]\nsage: (1/x).parent()\nLaurent Series Ring in x over Integer Ring\nsage: (x/x).parent()\nPower Series Ring in x over Integer Ring\n```\n*Both* parents are wrong. Usually, the parent of ``a/b`` is the fraction field of the parent of ``a,b``, even if ``a==b``. And neither above parent is a field.\n\nNext bug:\n\n```\nsage: (1/(2*x)).parent()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (919, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n... very long traceback\nTypeError: no conversion of this rational to integer\n```\n\nAnd the third:\n\n```\nsage: F = FractionField(R)\nsage: 1/x in F\nFalse\n```\n\nWith the proposed patch, we solve all bugs except\n\n```\nsage: (x/x).parent()\nPower Series Ring in x over Integer Ring\n```\n\n\n---\n\nApply (old):\n\n* [attachment:trac-8972_fraction_of_power_series_combined.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8972\n\n",
+    "closed_at": "2021-03-01T00:21:07Z",
     "created_at": "2010-05-15T15:46:05Z",
     "labels": [
         "component: algebra",
@@ -16,8 +17,6 @@ archive/issues_008972.json:
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: @aghitza
-
 CC:  @tscrim @mkoeppe @nbruin @jhpalmieri @dkrenn @bgrenet tmonteil @videlec @davewittemorris
 
 Keywords: power series ring, fraction field
@@ -56,6 +55,20 @@ sage: F = FractionField(R)
 sage: 1/x in F
 False
 ```
+
+With the proposed patch, we solve all bugs except
+
+```
+sage: (x/x).parent()
+Power Series Ring in x over Integer Ring
+```
+
+
+---
+
+Apply (old):
+
+* [attachment:trac-8972_fraction_of_power_series_combined.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8972
 

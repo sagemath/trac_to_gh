@@ -4,6 +4,7 @@ archive/issues_000426.json:
 ```json
 {
     "body": "Assignee: boothby\n\nStart the notebook, click help, and try to interact with the documentation.\nIt doesn't work.\n\nCopying the worksheet and interacting with it does work.  I suspect some sort\nof permissions issue. \n\nIssue created by migration from https://trac.sagemath.org/ticket/426\n\n",
+    "closed_at": "2007-08-21T12:10:58Z",
     "created_at": "2007-08-13T01:59:34Z",
     "labels": [
         "component: notebook",

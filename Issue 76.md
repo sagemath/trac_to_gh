@@ -4,6 +4,7 @@ archive/issues_000076.json:
 ```json
 {
     "body": "Assignee: somebody\n\nsage: attach?\nObject `attach` not found.\n\nThis means that 'attach' is not a first-class citizen of SAGE-land.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/76\n\n",
+    "closed_at": "2006-09-23T00:59:49Z",
     "created_at": "2006-09-22T22:28:05Z",
     "labels": [
         "component: basic arithmetic",

@@ -4,6 +4,7 @@ archive/issues_000611.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nfor memory debugging\n\nIssue created by migration from https://trac.sagemath.org/ticket/611\n\n",
+    "closed_at": "2007-09-07T01:28:57Z",
     "created_at": "2007-09-07T01:11:15Z",
     "labels": [
         "component: memleak"

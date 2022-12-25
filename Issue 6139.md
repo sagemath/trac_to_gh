@@ -1,16 +1,17 @@
-# Issue 6139: [with patch, needs review] Fix S-Box calling when m != n
+# Issue 6139: [with patch, positive review] Fix S-Box calling when m != n
 
 archive/issues_006139.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  mvngu\n\nKeywords: crypto, mq, sbox\n\nThis should work:\n\n```\nsage: S = mq.SBox(3, 0, 1, 3, 1, 0, 2, 2)\nsage: S(0)\n3\nsage: S([0,0,0])\n[1, 1]\n```\n\nreported by Sajan.S on [sage-support] (27.5.09)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6139\n\n",
+    "closed_at": "2009-06-04T18:22:37Z",
     "created_at": "2009-05-27T12:20:18Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] Fix S-Box calling when m != n",
+    "title": "[with patch, positive review] Fix S-Box calling when m != n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6139",
     "user": "https://github.com/malb"

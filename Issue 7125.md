@@ -4,6 +4,7 @@ archive/issues_007125.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nCC:  @jasongrout\n\nThe new report 21 does not include information from report 9 (at least, not for me).  This seems strange, since creation should be participation, at least ontologically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7125\n\n",
+    "closed_at": "2009-10-05T18:48:35Z",
     "created_at": "2009-10-05T18:10:05Z",
     "labels": [
         "component: website/wiki",

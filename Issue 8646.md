@@ -4,6 +4,7 @@ archive/issues_008646.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nI am running windows 7 64 bit, and have installed \nvirtualbox 3.1.6.  Sage 4.3 does not import into virtualbox   right near the end of the import process it fails with the following error\n\nRuntime error: -35 (Unresolved (unknown) host platform error.).\n\nThe error occurs on line 3325 of the source file VirtualBoxImpl.cpp .\n\nThis may be a virtualbox issue,  but it does mean that perhaps a lot of windows users can't get the default sage virtual environment to run.  I have not seen this issue reported elsewhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8646\n\n",
+    "closed_at": "2014-05-12T20:18:09Z",
     "created_at": "2010-04-03T01:54:07Z",
     "labels": [
         "component: build",

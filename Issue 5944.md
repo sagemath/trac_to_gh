@@ -1,16 +1,17 @@
-# Issue 5944: fix a nasty pynac bug in exp
+# Issue 5944: [with patch, positive review] fix a nasty pynac bug in exp
 
 archive/issues_005944.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n```\nsage: t = var('t', ns=1)\nsage: a = (-2*t).exp(); a\ne^(-2*t)\nsage: b = (-t).exp(); b\ne^(-t)\nsage: a - b\n0\nsage: a\ne^(-t)\nsage: b\ne^(-t)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5944\n\n",
+    "closed_at": "2009-05-20T23:47:28Z",
     "created_at": "2009-04-29T22:59:30Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "fix a nasty pynac bug in exp",
+    "title": "[with patch, positive review] fix a nasty pynac bug in exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5944",
     "user": "https://github.com/williamstein"

@@ -1,9 +1,10 @@
-# Issue 3681: modulus() randomly broken for gf2e fields
+# Issue 3681: [with patch; positive review] modulus() randomly broken for gf2e fields
 
 archive/issues_003681.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nwdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx    **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.0.4.rc0/tmp/finite_field_ntl_gf2e.py\", line 170:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.0.4.rc0/tmp/.doctest_finite_field_ntl_gf2e.py\n         [2.9 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 2.9 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3681\n\n",
+    "closed_at": "2008-07-21T17:54:02Z",
     "created_at": "2008-07-19T14:03:56Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_003681.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "modulus() randomly broken for gf2e fields",
+    "title": "[with patch; positive review] modulus() randomly broken for gf2e fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3681",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

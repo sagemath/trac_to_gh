@@ -4,6 +4,7 @@ archive/issues_000305.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: y = loads(dumps(x))\nsage: x.parent().print_prec()\n Infinity\nsage: y.parent().print_prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/305\n\n",
+    "closed_at": "2007-03-06T22:22:57Z",
     "created_at": "2007-03-03T14:57:19Z",
     "labels": [
         "component: basic arithmetic",

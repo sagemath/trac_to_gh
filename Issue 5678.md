@@ -1,9 +1,10 @@
-# Issue 5678: LaTeX typesetting for two letters phi and Phi
+# Issue 5678: [with patch, positive review] LaTeX typesetting for two letters phi and Phi
 
 archive/issues_005678.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: Latex,\n\nIn the list \"common_varnames\" (in sage/misc/latex.py) two\nGreek letters \"phi\" and \"Phi\" are missing. So LaTeX typesetting\nfor them doesn't work unlike other Greek letters.\n\nThis issue has been discussed in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223\n\nA patch (created on top of sage-3.4) to fix this issue is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5678\n\n",
+    "closed_at": "2009-04-09T09:42:51Z",
     "created_at": "2009-04-04T01:34:08Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005678.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "LaTeX typesetting for two letters phi and Phi",
+    "title": "[with patch, positive review] LaTeX typesetting for two letters phi and Phi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5678",
     "user": "https://github.com/golam-m-hossain"

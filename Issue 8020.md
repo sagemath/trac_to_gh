@@ -4,6 +4,7 @@ archive/issues_008020.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\ngcc version 4.4.2 (GCC)\n****************************************************\nUpdating readline.c for Linux/Itanium\ncp: cannot create regular file `Modules/readline.c': No such file or directory\nError copying patched readline.c\n\nreal    0m0.029s\nuser    0m0.009s\nsys     0m0.011s\nsage: An error occurred while installing python-2.6.4.p4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/screen/cleo/sage-4.3.1/install.log.  Describe your c\n```\n\nI missed this doing the release, because our Itaniums weren't accessible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8020\n\n",
+    "closed_at": "2010-01-24T22:29:02Z",
     "created_at": "2010-01-21T02:18:07Z",
     "labels": [
         "component: packages: standard",

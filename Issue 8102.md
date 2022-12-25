@@ -4,6 +4,7 @@ archive/issues_008102.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\nSimplifying `sagenb.misc.sphinxify` and importing `sphinx.application.Sphinx` on demand should make docstrings render faster and reduce Sage startup time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8102\n\n",
+    "closed_at": "2010-02-05T00:36:37Z",
     "created_at": "2010-01-28T02:23:43Z",
     "labels": [
         "component: notebook",

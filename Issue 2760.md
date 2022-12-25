@@ -1,16 +1,17 @@
-# Issue 2760: [with patch; needs review] Debian amd64 fixes for NTL
+# Issue 2760: [with patch; postitive review] Debian amd64 fixes for NTL
 
 archive/issues_002760.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached the patch I needed to apply to the Debianization of NTL to make it build on amd64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2760\n\n",
+    "closed_at": "2008-04-01T21:51:07Z",
     "created_at": "2008-04-01T21:28:20Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] Debian amd64 fixes for NTL",
+    "title": "[with patch; postitive review] Debian amd64 fixes for NTL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2760",
     "user": "https://github.com/timabbott"

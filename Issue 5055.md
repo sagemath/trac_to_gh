@@ -1,9 +1,10 @@
-# Issue 5055: Trivial but fatal typo in interact documentation
+# Issue 5055: [with patch, positive review] Trivial typo in interact documentation
 
 archive/issues_005055.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nAbout halfway through the documentation of interact, there is this example:\n\n```\nsage: @interact\n... def _(title=[\"A Plot Demo\", \"Something silly\", \"something tricky\" , a=input_box(sin(x*sin(x*sin(x))), 'function'),\n...     clr = Color('red'), thickness=[1..30], zoom=(1,0.95,..,0.1), plot_points=(200..2000)):\n...     html('<h1 align=center>%s</h1>'%title)\n...     print plot_points\n...     show(plot(a, -zoom*pi,zoom*pi, color=clr, thickness=thickness, plot_points=plot_points))\n<html>...\n```\nThere should be a ] after the \" after the word tricky.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5055\n\n",
+    "body": "Assignee: @mwhansen\n\nAbout halfway through the documentation of interact, there is this example:\n\n```\nsage: @interact\n... def _(title=[\"A Plot Demo\", \"Something silly\", \"something tricky\" , a=input_box(sin(x*sin(x*sin(x))), 'function'),\n...     clr = Color('red'), thickness=[1..30], zoom=(1,0.95,..,0.1), plot_points=(200..2000)):\n...     html('<h1 align=center>%s</h1>'%title)\n...     print plot_points\n...     show(plot(a, -zoom*pi,zoom*pi, color=clr, thickness=thickness, plot_points=plot_points))\n<html>...\n```\nThere should be a ] after the \" after the word tricky.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5055\n\n",
+    "closed_at": "2009-01-28T14:12:58Z",
     "created_at": "2009-01-22T15:58:43Z",
     "labels": [
         "component: interact",
@@ -11,13 +12,13 @@ archive/issues_005055.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Trivial but fatal typo in interact documentation",
+    "title": "[with patch, positive review] Trivial typo in interact documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5055",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @itolkov
+Assignee: @mwhansen
 
 About halfway through the documentation of interact, there is this example:
 

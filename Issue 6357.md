@@ -3,11 +3,11 @@
 archive/issues_006357.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kini @novoselt\n\nKeywords: sage test worksheet doctest\n\nThis came up on the mailing list: it would be nice if sage -t worksheet.sws worked.\n\nSeparate, but also nice, would be \"worksheet-ify\" command that took a series of doctests and made a nice worksheet out of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6357\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kini @novoselt\n\nKeywords: doctest sws notebook worksheet test\n\nThis came up on the mailing list: it would be nice if sage -t worksheet.sws worked.\n\nAlso, it would be nice to have a button when using notebook that would launch sage -t on it and display the result. \n\nSeparate, but also nice, would be \"worksheet-ify\" command that took a series of doctests and made a nice worksheet out of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6357\n\n",
+    "closed_at": "2017-01-21T18:03:11Z",
     "created_at": "2009-06-18T17:05:01Z",
     "labels": [
-        "component: doctest",
-        "bug"
+        "component: doctest framework"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make sage -t worksheet.sws work",
@@ -20,9 +20,11 @@ Assignee: tbd
 
 CC:  @kini @novoselt
 
-Keywords: sage test worksheet doctest
+Keywords: doctest sws notebook worksheet test
 
 This came up on the mailing list: it would be nice if sage -t worksheet.sws worked.
+
+Also, it would be nice to have a button when using notebook that would launch sage -t on it and display the result. 
 
 Separate, but also nice, would be "worksheet-ify" command that took a series of doctests and made a nice worksheet out of it.
 

@@ -1,16 +1,17 @@
-# Issue 1919: improve base fields of DualAbelainGroup
+# Issue 1919: improve base fields of DualAbelianGroup
 
 archive/issues_001919.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @tscrim @jhpalmieri\n\nIn sage/groups/abelian_gps/dual_abelian_group_element.py, the __call__\nmethod uses some code which must be modified if the base field is finite.\nSpecifically, \"zeta = F.gen()\" must be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1919\n\n",
+    "closed_at": "2017-09-24T13:04:01Z",
     "created_at": "2008-01-25T02:41:58Z",
     "labels": [
         "component: group theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
-    "title": "improve base fields of DualAbelainGroup",
+    "title": "improve base fields of DualAbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1919",
     "user": "https://github.com/wdjoyner"

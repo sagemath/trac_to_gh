@@ -1,16 +1,17 @@
-# Issue 1328: 2.8.14/Solaris: partitions_c.h compile fix - unclean
+# Issue 1328: [with patch, positive review] 2.8.14/Solaris: partitions_c.h compile fix
 
 archive/issues_001328.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn Solaris we need to apply the attached patch to make the partition code compile. This version breaks on non-Solaris, so it needs some trivial cleanup.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1328\n\n",
+    "closed_at": "2008-01-30T07:55:44Z",
     "created_at": "2007-11-28T22:26:23Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "2.8.14/Solaris: partitions_c.h compile fix - unclean",
+    "title": "[with patch, positive review] 2.8.14/Solaris: partitions_c.h compile fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1328",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

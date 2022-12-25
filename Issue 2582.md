@@ -1,16 +1,17 @@
-# Issue 2582: [with patch, needs review] fix bug in PermutationGroupElement
+# Issue 2582: [with patch, positive review] fix bug in PermutationGroupElement
 
 archive/issues_002582.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nsage: PermutationGroupElement([1,2,4,3,5])\n---------------------------------------------------------------------------\n<type 'exceptions.AssertionError'>        Traceback (most recent call last)\n\n/Users/rlmill/sage-2.10.4/<ipython console> in <module>()\n\n/Users/rlmill/sage-2.10.4/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__()\n\n<type 'exceptions.AssertionError'>: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2582\n\n",
+    "closed_at": "2008-03-18T10:17:45Z",
     "created_at": "2008-03-18T07:29:53Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] fix bug in PermutationGroupElement",
+    "title": "[with patch, positive review] fix bug in PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2582",
     "user": "https://github.com/rlmill"

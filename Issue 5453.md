@@ -1,21 +1,22 @@
-# Issue 5453: [with patch, needs review] Create a ring for working with polynomials in countably infinitely many variables
+# Issue 5453: Create a ring for working with polynomials in countably infinitely many variables
 
 archive/issues_005453.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  simonking\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5453\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  simonking\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5453\n\n",
+    "closed_at": "2009-06-04T18:14:34Z",
     "created_at": "2009-03-07T19:12:56Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] Create a ring for working with polynomials in countably infinitely many variables",
+    "title": "Create a ring for working with polynomials in countably infinitely many variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5453",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @malb
+Assignee: @mwhansen
 
 CC:  simonking
 

@@ -3,7 +3,8 @@
 archive/issues_001192.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1192\n\n",
+    "body": "Assignee: tba\n\nLooks good to me. Paul told me off-list that this actually fixes an issue that only shows up with the ASCII help.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1192\n\n",
+    "closed_at": "2007-11-18T14:08:20Z",
     "created_at": "2007-11-17T16:08:59Z",
     "labels": [
         "component: documentation",
@@ -18,7 +19,11 @@ archive/issues_001192.json:
 ```
 Assignee: tba
 
+Looks good to me. Paul told me off-list that this actually fixes an issue that only shows up with the ASCII help.
 
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/1192
 

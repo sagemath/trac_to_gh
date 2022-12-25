@@ -3,11 +3,11 @@
 archive/issues_004508.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nMake sure to also apply the warning fix from #4507.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4508\n\n",
+    "body": "Assignee: mabshoff\n\nMake sure to also apply the warning fix from #4507.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4508\n\n",
+    "closed_at": "2015-04-14T23:04:19Z",
     "created_at": "2008-11-13T03:25:37Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update John Boyer's planarity code to the BSD version",
@@ -16,7 +16,7 @@ archive/issues_004508.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @rlmill
+Assignee: mabshoff
 
 Make sure to also apply the warning fix from #4507.
 

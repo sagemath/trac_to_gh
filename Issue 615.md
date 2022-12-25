@@ -4,6 +4,7 @@ archive/issues_000615.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/615\n\n",
+    "closed_at": "2007-09-07T07:17:43Z",
     "created_at": "2007-09-07T05:14:57Z",
     "labels": [
         "component: calculus",

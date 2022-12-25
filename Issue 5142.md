@@ -1,23 +1,24 @@
-# Issue 5142: [with patch, needs review] speed up elementary_divisors for sparse integer matrices?
+# Issue 5142: [with patch, positive review] speed up elementary_divisors for sparse integer matrices?
 
 archive/issues_005142.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: sparse, elementary_divisors\n\nIt seems to me that if mat is a sparse integer matrix, then\n\n```\nmat.dense_matrix().elementary_divisors()\n```\nis much faster than \n\n```\nmat.elementary_divisors()\n```\nIs this correct?  I've checked this on certain families of matrices, but probably not extensively enough.\n\nIf so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5142\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: sparse, elementary_divisors\n\nIt seems to me that if mat is a sparse integer matrix, then\n\n```\nmat.dense_matrix().elementary_divisors()\n```\nis much faster than \n\n```\nmat.elementary_divisors()\n```\nIs this correct?  I've checked this on certain families of matrices, but probably not extensively enough.\n\nIf so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5142\n\n",
+    "closed_at": "2009-02-11T04:06:23Z",
     "created_at": "2009-01-30T22:30:51Z",
     "labels": [
         "component: linear algebra",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] speed up elementary_divisors for sparse integer matrices?",
+    "title": "[with patch, positive review] speed up elementary_divisors for sparse integer matrices?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5142",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @williamstein
+Assignee: @jhpalmieri
 
 Keywords: sparse, elementary_divisors
 

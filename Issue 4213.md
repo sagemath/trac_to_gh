@@ -1,16 +1,17 @@
-# Issue 4213: Bug in Permutations(n, k)
+# Issue 4213: [with patch, positive review] Bug in Permutations(n, k)
 
 archive/issues_004213.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: list(Permutations([1,2,3,4,5], 4))\n\n[ ...\n [2, 3, 1, 5],\n [2, 3, 3, 1],\n [2, 3, 3, 4],\n [2, 3, 3, 5],\n [2, 3, 4, 1],\n ...\n [3, 2, 1, 5],\n [3, 2, 2, 1],\n [3, 2, 2, 4],\n [3, 2, 2, 5],\n [3, 2, 4, 1],\n ...\n [4, 2, 1, 5],\n [4, 2, 2, 1],\n [4, 2, 2, 3],\n [4, 2, 2, 5],\n [4, 2, 3, 1],\n ...\n [5, 2, 1, 4],\n [5, 2, 2, 1],\n [5, 2, 2, 3],\n [5, 2, 2, 4],\n [5, 2, 3, 1],\n```\n\nOnly the buggy parts are shown.\n\nThis does not occur for lists smaller that 5 or when len(n) == k.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4213\n\n",
+    "closed_at": "2008-09-29T02:14:23Z",
     "created_at": "2008-09-28T21:26:17Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Bug in Permutations(n, k)",
+    "title": "[with patch, positive review] Bug in Permutations(n, k)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4213",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

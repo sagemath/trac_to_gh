@@ -4,6 +4,7 @@ archive/issues_008379.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @malb\n\nwe define:\n\n* `~` : returns the complement Boolean function\n* `+`,`*` : corresponds to the same op. on the ANFs\n* `|` : concatenate the truth tables ( used for various constructions, e.g. http://eprint.iacr.org/2009/134.pdf )\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8379\n\n",
+    "closed_at": "2010-06-06T08:32:40Z",
     "created_at": "2010-02-26T13:21:45Z",
     "labels": [
         "component: cryptography",

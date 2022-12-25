@@ -3,7 +3,8 @@
 archive/issues_004338.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCraig Citro is working on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4338\n\n",
+    "body": "Assignee: citro\n\nCraig Citro is working on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4338\n\n",
+    "closed_at": "2008-10-22T19:07:41Z",
     "created_at": "2008-10-22T17:47:26Z",
     "labels": [
         "component: modular forms"
@@ -15,7 +16,7 @@ archive/issues_004338.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @craigcitro
+Assignee: citro
 
 Craig Citro is working on this.
 

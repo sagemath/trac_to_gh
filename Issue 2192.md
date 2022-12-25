@@ -1,16 +1,17 @@
-# Issue 2192: [with patch, needs review] various Dirichlet character fixes/improvements
+# Issue 2192: [with patch, positive review] various Dirichlet character fixes/improvements
 
 archive/issues_002192.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @ncalexan\n\nThis patch does a number of different things:\n\n* It makes it so that for `chi` a Dirichlet character, `chi.__call__` has a new\n  optional argument \"integral_value\", which makes it return values in the \n  maximal order of a cyclotomic field, instead of the cyclotomic field. I \n  needed this so that I could multiply `chi(n)` by an element of a finite field,\n  so that it can do coercion for me. In the process of doing this, I ended\n  up doing all of the following as well:\n\n* There was a big \"TODO\" in the `values()` method for Dirichlet characters, \n  where William left a suggestion for a way to improve the speed of finding \n  all the values of a Dirichlet character. I did this, and here's the result.\n  (Note that it caches values, so evaluating on the same character repeatedly\n  will only test the code once.)\n\n  BEFORE:\n  {{{\n  sage: G = DirichletGroup(960)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 2.03 s, sys: 0.20 s, total: 2.22 s\n  Wall time: 2.22\n  sage: G = DirichletGroup(1040)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 4.11 s, sys: 0.41 s, total: 4.52 s\n  Wall time: 4.52\n  }}}\n\n  AFTER: \n  {{{\n  sage: G = DirichletGroup(960)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 0.50 s, sys: 0.01 s, total: 0.50 s\n  Wall time: 0.50\n  sage: G = DirichletGroup(1040)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 1.11 s, sys: 0.01 s, total: 1.12 s\n  Wall time: 1.12\n  }}}\n\n* I also noticed that evaluating the trivial character was falling through to\n  some overly complicated code. Here's the comparison:\n\n  BEFORE:\n  {{{\n  sage: id = DirichletGroup(1).0\n  sage: n = 3\n  sage: time for _ in range(1000000): x = id(n)\n  CPU times: user 12.08 s, sys: 0.90 s, total: 12.98 s\n  Wall time: 12.98\n  }}}\n\n  AFTER:\n  {{{\n  sage: id = DirichletGroup(1).0\n  sage: n = 3\n  sage: time for _ in range(1000000): x = id(n)\n  CPU times: user 3.63 s, sys: 0.74 s, total: 4.37 s\n  Wall time: 4.37\n  }}}\n\n* While working on this, I noticed that elements of `CyclotomicField(3)`\n  and other degree 2 cyclotomic fields were being represented as \n  `NumberFieldElement`s, not `NumberFieldElement_quadratic`s. I fixed this,\n  which involves one silly-looking but necessary piece of code in \n  number_field_element_quadratic.pyx -- it has to convert between two \n  representations of elements, so some amount of mess is unavoidable.\n\n* I fixed one small bug while doing this: as an example, before this\n  patch, Sage claims that you can't coerce `zeta6` into `CyclotomicField(3)`.\n  This was a pretty trivial fix.\n\nI think that's it for this patch. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2192\n\n",
+    "closed_at": "2008-03-15T07:26:41Z",
     "created_at": "2008-02-17T11:58:22Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] various Dirichlet character fixes/improvements",
+    "title": "[with patch, positive review] various Dirichlet character fixes/improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2192",
     "user": "https://github.com/craigcitro"

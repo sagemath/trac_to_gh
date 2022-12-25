@@ -1,16 +1,16 @@
-# Issue 1270: [with patch] implement complex intervals
+# Issue 1270: [with patch, tested] implement complex intervals
 
 archive/issues_001270.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attached patch provides a simple implementation of complex intervals.  Tested with testall on 32-bit x86 Linux.\n\nRequires the new MPFI spkg from #1268; otherwise, some tests will fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1270\n\n",
+    "closed_at": "2007-12-01T10:57:48Z",
     "created_at": "2007-11-25T17:13:57Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] implement complex intervals",
+    "title": "[with patch, tested] implement complex intervals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1270",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

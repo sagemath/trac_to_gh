@@ -4,6 +4,7 @@ archive/issues_007323.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nAs motivated by a discussion on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/7096309ff3af9d95), here are two minor documentation changes for simplicial complexes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7323\n\n",
+    "closed_at": "2009-10-31T15:56:11Z",
     "created_at": "2009-10-27T18:48:43Z",
     "labels": [
         "component: algebraic topology",

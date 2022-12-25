@@ -1,22 +1,23 @@
-# Issue 5637: [with patch, needs review] allow \[ and \] to delimit math in %html blocks
+# Issue 5637: [with patch, positive review] allow \[ and \] to delimit math in %html blocks
 
 archive/issues_005637.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWithout the patch,\n\n```\n%html\ntest\n\\[ x^2 \\]\n```\nis not typeset with `x^2` in math mode.  With the patch, the above is treated just like \n\n```\n%html\ntest\n$$ x^2 $$\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5637\n\n",
+    "body": "Assignee: @jhpalmieri\n\nWithout the patch,\n\n```\n%html\ntest\n\\[ x^2 \\]\n```\nis not typeset with `x^2` in math mode.  With the patch, the above is treated just like \n\n```\n%html\ntest\n$$ x^2 $$\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5637\n\n",
+    "closed_at": "2009-06-24T10:07:44Z",
     "created_at": "2009-03-30T00:57:53Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] allow \\[ and \\] to delimit math in %html blocks",
+    "title": "[with patch, positive review] allow \\[ and \\] to delimit math in %html blocks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5637",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: boothby
+Assignee: @jhpalmieri
 
 Without the patch,
 

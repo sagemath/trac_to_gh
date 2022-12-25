@@ -3,10 +3,11 @@
 archive/issues_001431.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAmazingly some very basic functionality for plotting hasn't yet been implemented!  In particular, there is nothing yet for setting the location and labels of all tick marks on the x and y axes.  This need to be implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1431\n\n",
+    "body": "Assignee: @kcrisman\n\nAmazingly some very basic functionality for plotting hasn't yet been implemented!  In particular, there is nothing yet for setting the location and labels of all tick marks on the x and y axes.  This needs to be implemented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1431\n\n",
+    "closed_at": "2010-09-15T10:40:29Z",
     "created_at": "2007-12-09T02:49:00Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "basic plotting: add support for setting the location and labels of all tick marks on the x and y axes",
@@ -15,9 +16,9 @@ archive/issues_001431.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
-Amazingly some very basic functionality for plotting hasn't yet been implemented!  In particular, there is nothing yet for setting the location and labels of all tick marks on the x and y axes.  This need to be implemented.
+Amazingly some very basic functionality for plotting hasn't yet been implemented!  In particular, there is nothing yet for setting the location and labels of all tick marks on the x and y axes.  This needs to be implemented. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1431
 

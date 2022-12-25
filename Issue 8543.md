@@ -1,16 +1,17 @@
-# Issue 8543: EmptySet is Back !
+# Issue 8543: EmptySet is Back ! TestSuite should allows for empty sets.
 
 archive/issues_008543.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  nborie sage-combinat\n\nKeywords: empty set, Testsuite\n\nThere is currently no way to have an empty set which pass the category tests. Indeed the current specification says: for any set `S` there must be a method `S.an_element()` which returns an actual element `x` such that `x in S`:\n\n```\nan_element = self.an_element()\ntester.assert_(an_element in self, \"self.an_element() is not in self\")\n```\nThis tests should allows `S` to be empty.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8543\n\n",
+    "body": "Assignee: @hivert\n\nCC:  nborie sage-combinat\n\nKeywords: empty set, Testsuite, EmptySetError\n\nThere is currently no way to have an empty set which pass the category tests. Indeed the current specification says: for any set `S` there must be a method `S.an_element()` which returns an actual element `x` such that `x in S`:\n\n```\nan_element = self.an_element()\ntester.assert_(an_element in self, \"self.an_element() is not in self\")\n```\nThis tests should allows `S` to be empty.\n\nTo solve this issue I added a new exception called `EmptySetError` which should be raised in such cases. I fixed the tests suite of the category `Sets()` accordingly and expanded the test in some places where this could be done before.\n\nDepends on #8519\n\nIssue created by migration from https://trac.sagemath.org/ticket/8543\n\n",
+    "closed_at": "2010-04-17T02:50:58Z",
     "created_at": "2010-03-15T17:27:20Z",
     "labels": [
         "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "EmptySet is Back !",
+    "title": "EmptySet is Back ! TestSuite should allows for empty sets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8543",
     "user": "https://github.com/hivert"
@@ -20,7 +21,7 @@ Assignee: @hivert
 
 CC:  nborie sage-combinat
 
-Keywords: empty set, Testsuite
+Keywords: empty set, Testsuite, EmptySetError
 
 There is currently no way to have an empty set which pass the category tests. Indeed the current specification says: for any set `S` there must be a method `S.an_element()` which returns an actual element `x` such that `x in S`:
 
@@ -29,6 +30,10 @@ an_element = self.an_element()
 tester.assert_(an_element in self, "self.an_element() is not in self")
 ```
 This tests should allows `S` to be empty.
+
+To solve this issue I added a new exception called `EmptySetError` which should be raised in such cases. I fixed the tests suite of the category `Sets()` accordingly and expanded the test in some places where this could be done before.
+
+Depends on #8519
 
 Issue created by migration from https://trac.sagemath.org/ticket/8543
 

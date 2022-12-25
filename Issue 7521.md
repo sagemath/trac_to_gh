@@ -4,6 +4,7 @@ archive/issues_007521.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jasongrout @mwhansen\n\n```\nsage: r.install_package('Hmisc')       #optional \n```\nmakes no sense, because the command is install_packages().\n\nIssue created by migration from https://trac.sagemath.org/ticket/7521\n\n",
+    "closed_at": "2010-01-25T23:52:39Z",
     "created_at": "2009-11-24T01:00:30Z",
     "labels": [
         "component: packages: standard",

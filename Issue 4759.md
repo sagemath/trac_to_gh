@@ -4,10 +4,10 @@ archive/issues_004759.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMerging the sage library with local changes can often break -upgrade. The new behavior would rename the sage-main directory if it wasn't pristine. \n\nSee the end of http://groups.google.com/group/sage-devel/browse_thread/thread/5b566397731862d/e4b19771599e2afd?lnk=gst&q=3.2.2.alpha0#e4b19771599e2afd for the full discussion. \n\n```\nOn Dec 8, 2008, at 12:25 PM, William Stein wrote:\n\n> On Mon, Dec 8, 2008 at 12:22 PM, Robert Bradshaw\n> What about an option to the upgrade script, e.g.\n>\n> sage -upgrade [-b branch]\n>\n> which would upgrade specified branch inplace if specified?\n\nThat sounds like a reasonable compromise.\n\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4759\n\n",
+    "closed_at": "2014-03-11T14:04:30Z",
     "created_at": "2008-12-11T10:34:45Z",
     "labels": [
-        "component: build",
-        "bug"
+        "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add branch option to sage -upgrade",

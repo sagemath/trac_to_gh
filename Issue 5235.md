@@ -4,6 +4,7 @@ archive/issues_005235.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-devel/t/894d29e0bde4550c\n\n```\n> Yes, afs is a strange filessystem and might be the root cause of your \n> trouble, but that is far from certain at this point. \n\n\nNo longer far from certain. The build completed without ANY problems, \nincluding getting past gnutls without error. This is not unprecedented \nbut somewhat surprising nevertheless. Running make test now. \n\nGedaliah \n```\n\nAFS seems to be commonly used with RHEL 4 in some instituations. It has come up twice now.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5235\n\n",
+    "closed_at": "2014-09-09T14:52:41Z",
     "created_at": "2009-02-11T21:20:04Z",
     "labels": [
         "component: build",

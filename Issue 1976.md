@@ -1,16 +1,17 @@
-# Issue 1976: [with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly
+# Issue 1976: [with 1-line patch; with positive review] disable the use of openssl on linux as a hack to generate security certificates quickly
 
 archive/issues_001976.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis needs review and testing on linux with brand new GNUtls package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1976\n\n",
+    "closed_at": "2008-03-14T13:46:27Z",
     "created_at": "2008-01-30T04:17:23Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly",
+    "title": "[with 1-line patch; with positive review] disable the use of openssl on linux as a hack to generate security certificates quickly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1976",
     "user": "https://github.com/williamstein"

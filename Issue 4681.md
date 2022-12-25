@@ -1,15 +1,16 @@
-# Issue 4681: General Smith normal form implementation
+# Issue 4681: [with patches, positive review] General Smith normal form implementation
 
 archive/issues_004681.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @ncalexan\n\nKeywords: matrix, smith normal form\n\nSmith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4681\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @ncalexan\n\nKeywords: matrix, smith normal form\n\nSmith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).\n\n**Note**: This ticket should also fix #3068\n\nIssue created by migration from https://trac.sagemath.org/ticket/4681\n\n",
+    "closed_at": "2008-12-10T11:25:53Z",
     "created_at": "2008-12-03T00:01:47Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "General Smith normal form implementation",
+    "title": "[with patches, positive review] General Smith normal form implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4681",
     "user": "https://github.com/loefflerd"
@@ -22,6 +23,8 @@ CC:  @ncalexan
 Keywords: matrix, smith normal form
 
 Smith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).
+
+**Note**: This ticket should also fix #3068
 
 Issue created by migration from https://trac.sagemath.org/ticket/4681
 

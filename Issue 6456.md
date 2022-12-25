@@ -1,16 +1,17 @@
-# Issue 6456: Upgrade cvxopt in sage from 0.9 to 1.1.1
+# Issue 6456: Upgrade cvxopt in sage from 0.9 to 1.1.3
 
 archive/issues_006456.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWe are shipping an *ancient* version of cvxopt in sage.  It's worse than Debian shipping sage-3.0.5!\n\nNote that upgrading cvxopt should be fairly easy, since basically nothing in Sage depends on cvxopt.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6456\n\n",
+    "body": "Assignee: mabshoff\n\nWe are shipping an *ancient* version of cvxopt in sage.  It's worse than Debian shipping sage-3.0.5!\n\nNote that upgrading cvxopt should be fairly easy, since basically nothing in Sage depends on cvxopt.\n\nNew spkg: [http://sage.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg](http://sage.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg)\nand the patch to use the interface to GLPK : [http://trac.sagemath.org/sage_trac/attachment/ticket/6456/6456-cvxopt-glpk-interface.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6456/6456-cvxopt-glpk-interface.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6456\n\n",
+    "closed_at": "2010-12-03T08:54:42Z",
     "created_at": "2009-07-01T21:02:23Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Upgrade cvxopt in sage from 0.9 to 1.1.1",
+    "title": "Upgrade cvxopt in sage from 0.9 to 1.1.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6456",
     "user": "https://github.com/williamstein"
@@ -21,6 +22,9 @@ Assignee: mabshoff
 We are shipping an *ancient* version of cvxopt in sage.  It's worse than Debian shipping sage-3.0.5!
 
 Note that upgrading cvxopt should be fairly easy, since basically nothing in Sage depends on cvxopt.
+
+New spkg: [http://sage.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg](http://sage.math.washington.edu/home/dima/packages/cvxopt-1.1.3.spkg)
+and the patch to use the interface to GLPK : [http://trac.sagemath.org/sage_trac/attachment/ticket/6456/6456-cvxopt-glpk-interface.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6456/6456-cvxopt-glpk-interface.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/6456
 

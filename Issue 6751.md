@@ -1,15 +1,16 @@
-# Issue 6751: implement ternary quadratic forms associated to orders in rational quaternion algebras
+# Issue 6751: [with patch, positive review] implement ternary quadratic forms associated to orders in rational quaternion algebras
 
 archive/issues_006751.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis patch could possibly depend on #6745.\n\nThe goal of this patch is to implement computation of the ternary quadratic form associated to an order in a rational quaternion algebra.  These are useful, e.g, in computing with Heegner points, in decided whether quaternion orders have embeddings from orders in quadratic imaginary fields, and in computing elements of the Kohnen + subspace of modular forms of weight 3/2. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6751\n\n",
+    "closed_at": "2009-08-30T09:29:13Z",
     "created_at": "2009-08-15T01:18:30Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "implement ternary quadratic forms associated to orders in rational quaternion algebras",
+    "title": "[with patch, positive review] implement ternary quadratic forms associated to orders in rational quaternion algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6751",
     "user": "https://github.com/williamstein"

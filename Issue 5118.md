@@ -1,16 +1,17 @@
-# Issue 5118: [with patch, needs review] Improve elliptic curve printing
+# Issue 5118: [with patch, positive review] Improve elliptic curve printing
 
 archive/issues_005118.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nBefore:\n\n```\nElliptic Curve defined by y^2  = x^3 + x +1 ...\n```\n\nAfter:\n\n```\nElliptic Curve defined by y^2 = x^3 + x + 1 ...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5118\n\n",
+    "closed_at": "2009-02-02T05:53:43Z",
     "created_at": "2009-01-28T19:05:22Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Improve elliptic curve printing",
+    "title": "[with patch, positive review] Improve elliptic curve printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5118",
     "user": "https://github.com/rlmill"

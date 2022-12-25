@@ -4,6 +4,7 @@ archive/issues_004727.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhat the heck is this?\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j\nI\nsage: K(j.list())\nI - sqrt2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4727\n\n",
+    "closed_at": "2009-01-29T05:44:48Z",
     "created_at": "2008-12-06T18:45:19Z",
     "labels": [
         "component: number theory",

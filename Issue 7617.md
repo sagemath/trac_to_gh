@@ -3,10 +3,12 @@
 archive/issues_007617.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dandrake @jhpalmieri\n\nsagetex has been voted in to be a standard sage spkg. \n\nthe official maintainer for the \"next few years\" is Dan Drake.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7617\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dandrake @jhpalmieri\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4c192cdc748c9b1c) thread, SageTeX has been voted to be a standard Sage spkg. The official maintainer for the \"next few years\" is Dan Drake.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7617\n\n",
+    "closed_at": "2010-01-31T00:02:41Z",
     "created_at": "2009-12-07T22:20:37Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "include sagetex as a standard spkg",
@@ -19,9 +21,7 @@ Assignee: tbd
 
 CC:  @dandrake @jhpalmieri
 
-sagetex has been voted in to be a standard sage spkg. 
-
-the official maintainer for the "next few years" is Dan Drake.
+From this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4c192cdc748c9b1c) thread, SageTeX has been voted to be a standard Sage spkg. The official maintainer for the "next few years" is Dan Drake.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7617
 

@@ -4,6 +4,7 @@ archive/issues_009294.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @hemmecke\n\nsagenb-0.8.p2/src/sagenb/sagenb/notebook/js.py\n\nsays\n\ntry:\n    from sage.misc.misc import SAGE_ROOT\n    from pkg_resources import Requirement, working_set\n    sagenb_path = working_set.find(Requirement.parse('sagenb')).location\n    debug_mode = SAGE_ROOT not in os.path.realpath(sagenb_path)\nexcept AttributeError, ImportError:\n    debug_mode = False\n\nBut according to what I cite below, it should rather be\n\nexcept (AttributeError, ImportError):\n\nhttp://docs.python.org/tutorial/errors.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9294\n\n",
+    "closed_at": "2010-07-11T05:57:35Z",
     "created_at": "2010-06-21T09:36:28Z",
     "labels": [
         "component: notebook",

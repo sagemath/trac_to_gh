@@ -1,16 +1,17 @@
-# Issue 6042: Bring doctests of modular/modsym/ambient.py up to 100%
+# Issue 6042: [with patch, positive review] Bring doctests of modular/modsym/ambient.py up to 100%
 
 archive/issues_006042.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: documentation, modular symbols\n\nThis 2500-line file has a low score:\n 26% (26 of 97)\n\nI have nearly finished documenting it and will upload a patch over the weekend.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6042\n\n",
+    "closed_at": "2009-05-18T18:05:27Z",
     "created_at": "2009-05-15T07:21:34Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring doctests of modular/modsym/ambient.py up to 100%",
+    "title": "[with patch, positive review] Bring doctests of modular/modsym/ambient.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6042",
     "user": "https://github.com/JohnCremona"

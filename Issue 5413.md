@@ -1,16 +1,17 @@
-# Issue 5413: [with patch, needs review] deprecate substitution via __call__ w/ unnamed arguments
+# Issue 5413: [with patch, positive review] deprecate substitution via __call__ w/ unnamed arguments
 
 archive/issues_005413.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nAs discussed on sage-devel here: http://groups.google.com/group/sage-devel/browse_thread/thread/b1a03f8fc8ae8fcd/553773d7ba600ae7#553773d7ba600ae7\n\nI added deprecation warnings to the four affected __call__ functions (two for symbolic values, one for equations, one for matrices), and fixed almost all the warnings in all the doctests other than the doctests specifically for those __call__ methods.\n\nThere's one set of warnings that I didn't figure out how to fix (in piecewise.py), so I just added the warning to the expected output for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5413\n\n",
+    "closed_at": "2009-03-25T23:31:14Z",
     "created_at": "2009-03-01T18:00:29Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] deprecate substitution via __call__ w/ unnamed arguments",
+    "title": "[with patch, positive review] deprecate substitution via __call__ w/ unnamed arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5413",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

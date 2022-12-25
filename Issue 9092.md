@@ -4,6 +4,7 @@ archive/issues_009092.json:
 ```json
 {
     "body": "Assignee: olazo\n\nCC:  @fchapoton\n\nKeywords: editor\n\nWell, I'm surprised I couldn't find any ticket about this. Perhaps I just didn't search enough but I'd like to work on this. Sage would enormously benefit from something like this:\n\nhttp://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html\n\nI think that editor is in javascript, which is probably the best for a web aplication like the one i've got in mind: Something to compete and surpass Mathematica's natural representation capabilities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9092\n\n",
+    "closed_at": "2020-10-11T17:40:29Z",
     "created_at": "2010-05-30T04:43:59Z",
     "labels": [
         "component: notebook"

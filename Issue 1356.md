@@ -1,16 +1,17 @@
-# Issue 1356: [with patch] fix bug when taking abs() of exactly known QQbar
+# Issue 1356: [with patch, with positive review] fix bug when taking abs() of exactly known QQbar
 
 archive/issues_001356.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe following test fails in 2.8.15.alpha1:\n\n```\n            sage: v = QQbar.zeta(3) + 1\n            sage: v.exactify()\n            sage: v.abs().minpoly()\n```\nbut the attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1356\n\n",
+    "closed_at": "2007-12-02T20:12:08Z",
     "created_at": "2007-12-02T01:25:31Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] fix bug when taking abs() of exactly known QQbar",
+    "title": "[with patch, with positive review] fix bug when taking abs() of exactly known QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1356",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

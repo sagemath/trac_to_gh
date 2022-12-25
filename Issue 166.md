@@ -4,6 +4,7 @@ archive/issues_000166.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: -Mod(0, 5)\n 5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/166\n\n",
+    "closed_at": "2006-11-06T07:44:42Z",
     "created_at": "2006-11-01T22:55:52Z",
     "labels": [
         "component: basic arithmetic",

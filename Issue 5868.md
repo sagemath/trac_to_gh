@@ -1,22 +1,23 @@
-# Issue 5868: Fix libgcrypt shared library name on FreeBSD
+# Issue 5868: [with patch, positive review] Fix libgcrypt shared library name on FreeBSD
 
 archive/issues_005868.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nEnsure that a symlink is created from libgcrypt.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5868\n\n",
+    "body": "Assignee: @mwhansen\n\nEnsure that a symlink is created from libgcrypt.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5868\n\n",
+    "closed_at": "2009-07-02T22:32:12Z",
     "created_at": "2009-04-23T07:00:46Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Fix libgcrypt shared library name on FreeBSD",
+    "title": "[with patch, positive review] Fix libgcrypt shared library name on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5868",
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Ensure that a symlink is created from libgcrypt.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.
 

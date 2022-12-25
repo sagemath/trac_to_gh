@@ -3,7 +3,8 @@
 archive/issues_009907.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @eviatarbach\n\nThe parsing of Maxima's output is not good enough to handle this:\n\n```\nvar('n')\nsum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)\n```\ngives an exception\n\n```\nTypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage\n```\nwhich is - i think - a f_43 hypergeometric function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9908\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @eviatarbach\n\nKeywords: hypergeometric\n\nThe parsing of Maxima's output is not good enough to handle this:\n\n```\nvar('n')\nsum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)\n```\ngives an exception\n\n```\nTypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage\n```\nwhich is - i think - a f_43 hypergeometric function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9908\n\n",
+    "closed_at": "2014-07-08T22:53:22Z",
     "created_at": "2010-09-14T10:31:28Z",
     "labels": [
         "component: symbolics",
@@ -19,6 +20,8 @@ archive/issues_009907.json:
 Assignee: @burcin
 
 CC:  @eviatarbach
+
+Keywords: hypergeometric
 
 The parsing of Maxima's output is not good enough to handle this:
 

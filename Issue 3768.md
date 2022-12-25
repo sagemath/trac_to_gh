@@ -1,16 +1,17 @@
-# Issue 3768: move jsmath into its own spkg
+# Issue 3768: move jsmath into its own spkg and update to latest upstream (3.6a)
 
 archive/issues_003768.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe should move jsmath into its own spkg.  Like jquery, there seem to be two copies of it, and it'd be good to get rid of this duplication and track its versioning explicitly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3768\n\n",
+    "closed_at": "2008-12-04T18:09:39Z",
     "created_at": "2008-08-03T19:29:09Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "move jsmath into its own spkg",
+    "title": "move jsmath into its own spkg and update to latest upstream (3.6a)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3768",
     "user": "https://github.com/timabbott"

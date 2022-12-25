@@ -1,28 +1,30 @@
-# Issue 624: Inplace operators
+# Issue 624: [with patch] Inplace operators
 
 archive/issues_000624.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nDespite the potential speed increase (I've implemented some and it  \ncan be considerable), SAGE has avoided almost all use of inplace  \noperators due to the fact that elements are supposed to be immutable,  \ndespite the fact that one does not really need the \"old\" result  \nanymore. For example, if I type x^5 - 3*x + 1, the subexpressions  \n(x^5), (3*x), and (x^5-3*x) are all created and then discarded. This  \nalso shows up in places like the operation sum() which doesn't return  \nany of its intermediate results, or loops that increment variables in  \ncertain ways. The worry is that perhaps somewhere something else is  \nholding onto a given variable, and we don't want to mess it up.\n\nJust the other day, I realized that Python provides the perfect  \nsolution--by looking at the reference count of an object we can  \ndetect whether or not its safe to mutate it (i.e. nothing else is  \nholding onto it but the current call). If it is safe to mutate, then  \ndo so, otherwise create and return a new object. I propose adding  \n_iadd_c, _imul_c, etc. to the coercion hierarchy such that the  \ndefault __iadd__/__add__ detects whether or not inplace operations  \nare safe and calls the respective operation accordingly. One would  \nhave bold comments on functions that are not safe to call directly.\n\nThe only caveat is that it might make it a tiny bit slower for types  \nthat do not define inplace operations, and it would take a slight  \n(SAGE-specific and optional) tweak to Cython (specifically Cython  \nlocal function variables have a refcount one less than expected due  \nto their not being in any kind of a python \"scope\" container, so we  \nwould need an extra incref/decref them when performing arithmetic on  \nthem).\n\nIssue created by migration from https://trac.sagemath.org/ticket/624\n\n",
+    "body": "Assignee: @robertwb\n\nDespite the potential speed increase (I've implemented some and it  \ncan be considerable), SAGE has avoided almost all use of inplace  \noperators due to the fact that elements are supposed to be immutable,  \ndespite the fact that one does not really need the \"old\" result  \nanymore. For example, if I type \n`x^5 - 3*x + 1`, the subexpressions  \n`(x^5), (3*x), and (x^5-3*x)` are all created and then discarded. This  \nalso shows up in places like the operation sum() which doesn't return  \nany of its intermediate results, or loops that increment variables in  \ncertain ways. The worry is that perhaps somewhere something else is  \nholding onto a given variable, and we don't want to mess it up.\n\nJust the other day, I realized that Python provides the perfect  \nsolution--by looking at the reference count of an object we can  \ndetect whether or not its safe to mutate it (i.e. nothing else is  \nholding onto it but the current call). If it is safe to mutate, then  \ndo so, otherwise create and return a new object. I propose adding  \n_iadd_c, _imul_c, etc. to the coercion hierarchy such that the  \ndefault __iadd__/__add__ detects whether or not inplace operations  \nare safe and calls the respective operation accordingly. One would  \nhave bold comments on functions that are not safe to call directly.\n\nThe only caveat is that it might make it a tiny bit slower for types  \nthat do not define inplace operations, and it would take a slight  \n(SAGE-specific and optional) tweak to Cython (specifically Cython  \nlocal function variables have a refcount one less than expected due  \nto their not being in any kind of a python \"scope\" container, so we  \nwould need an extra incref/decref them when performing arithmetic on  \nthem).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/624\n\n",
+    "closed_at": "2007-10-21T02:25:46Z",
     "created_at": "2007-09-07T19:44:53Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "Inplace operators",
+    "title": "[with patch] Inplace operators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/624",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 Despite the potential speed increase (I've implemented some and it  
 can be considerable), SAGE has avoided almost all use of inplace  
 operators due to the fact that elements are supposed to be immutable,  
 despite the fact that one does not really need the "old" result  
-anymore. For example, if I type x^5 - 3*x + 1, the subexpressions  
-(x^5), (3*x), and (x^5-3*x) are all created and then discarded. This  
+anymore. For example, if I type 
+`x^5 - 3*x + 1`, the subexpressions  
+`(x^5), (3*x), and (x^5-3*x)` are all created and then discarded. This  
 also shows up in places like the operation sum() which doesn't return  
 any of its intermediate results, or loops that increment variables in  
 certain ways. The worry is that perhaps somewhere something else is  
@@ -45,6 +47,7 @@ local function variables have a refcount one less than expected due
 to their not being in any kind of a python "scope" container, so we  
 would need an extra incref/decref them when performing arithmetic on  
 them).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/624
 

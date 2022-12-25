@@ -3,7 +3,8 @@
 archive/issues_008481.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\nAnother somewhat related issue:\n\n```\nsage: X = QQ**2\nsage: V = X.span([[2, 0], [0, 8]], ZZ)\nsage: V.linear_combination_of_basis([1, -1/2])\n(2, -4)\n```\nNote that (2, -4) is not actually in V, but no error occurred. This problem is caused by having `check=False` somewhere in the code, rather than `check=True`.  As a consequence of this, calls to f.lift() where V is the domain of f can result in elements not contained in V. \n\nThe attached patch fixes both of these issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
+    "closed_at": "2010-04-15T23:54:05Z",
     "created_at": "2010-03-07T22:49:07Z",
     "labels": [
         "component: linear algebra",
@@ -38,6 +39,18 @@ AttributeError                            Traceback (most recent call last)
 
 ...
 ```
+
+Another somewhat related issue:
+
+```
+sage: X = QQ**2
+sage: V = X.span([[2, 0], [0, 8]], ZZ)
+sage: V.linear_combination_of_basis([1, -1/2])
+(2, -4)
+```
+Note that (2, -4) is not actually in V, but no error occurred. This problem is caused by having `check=False` somewhere in the code, rather than `check=True`.  As a consequence of this, calls to f.lift() where V is the domain of f can result in elements not contained in V. 
+
+The attached patch fixes both of these issues.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8481
 

@@ -4,6 +4,7 @@ archive/issues_000523.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWould be nice if the trac email notification was switched on.\n\nSee e.g.\n\nhttp://www.sagemath.org:9002/sage_trac/wiki/TracNotification\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/523\n\n",
+    "closed_at": "2008-01-27T02:29:42Z",
     "created_at": "2007-08-29T22:57:33Z",
     "labels": [
         "component: website/wiki",

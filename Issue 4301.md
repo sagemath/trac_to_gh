@@ -1,16 +1,17 @@
-# Issue 4301: [with patch, needs review] lookup generic methods on category
+# Issue 4301: [with patch, needs work] lookup generic methods on category
 
 archive/issues_004301.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @mwhansen\n\nNo caching is done yet, but it shouldn't be too hard to add at some point. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4301\n\n",
+    "closed_at": "2009-10-19T17:32:24Z",
     "created_at": "2008-10-15T16:24:55Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] lookup generic methods on category",
+    "title": "[with patch, needs work] lookup generic methods on category",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4301",
     "user": "https://github.com/robertwb"

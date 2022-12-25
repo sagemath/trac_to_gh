@@ -1,22 +1,23 @@
-# Issue 5777: [with package and patches, needs review] update to pynac 0.1.5
+# Issue 5777: [with package and patches, positive review] update to pynac 0.1.6
 
 archive/issues_005777.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @ncalexan @robertwb\n\nThere is a new version of pynac with the following changes:\n\n* Change printing of pi (Pi -> pi)\n* Delay evaluation of special functions until .evalf() is called\n* Add precision parameter to .evalf()\n\nI am opening a new ticket, since the patches require separate review.\n\nThe package is here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.5.spkg\n\nAttached patches need to be applied to Sage, they depend on #5753.\n\nI got an infinite loop trying to convert to `ComplexField` in the second patch, hence the additions to sage/rings/complex_field.py. Robert, am I doing something wrong here?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5777\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  wstein @mwhansen @ncalexan @robertwb\n\nThere is a new version of pynac with the following changes:\n\n* Change printing of pi (Pi -> pi)\n* Delay evaluation of special functions until .evalf() is called\n* Add precision parameter to .evalf()\n\nI am opening a new ticket, since the patches require separate review.\n\nThe package is here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.5.spkg\n\nAttached patches need to be applied to Sage, they depend on #5753.\n\nI got an infinite loop trying to convert to `ComplexField` in the second patch, hence the additions to sage/rings/complex_field.py. Robert, am I doing something wrong here?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5777\n\n",
+    "closed_at": "2009-05-20T23:44:31Z",
     "created_at": "2009-04-13T16:07:10Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with package and patches, needs review] update to pynac 0.1.5",
+    "title": "[with package and patches, positive review] update to pynac 0.1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5777",
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: @burcin
+Assignee: @mwhansen
 
 CC:  wstein @mwhansen @ncalexan @robertwb
 

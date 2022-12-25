@@ -1,16 +1,17 @@
-# Issue 3453: [with patch, needs review] add function pickling to sage
+# Issue 3453: [with patch, with positive review] add function pickling to sage
 
 archive/issues_003453.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCode from William to allow one to pickle functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3453\n\n",
+    "closed_at": "2008-06-23T09:59:05Z",
     "created_at": "2008-06-18T00:05:15Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] add function pickling to sage",
+    "title": "[with patch, with positive review] add function pickling to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3453",
     "user": "https://github.com/yqiang"

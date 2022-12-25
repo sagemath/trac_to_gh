@@ -1,41 +1,62 @@
-# Issue 5794: [with patch, needs review] G2 branching rules
+# Issue 5794: exceptional and reducible type branching rules
 
 archive/issues_005794.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nThis patch implements branching rules for the following inclusions\nof Lie groups: \n\n```\nA1 in G2 (along short root) \nA2 in G2\nG2 in B3\nG2 in D4\n```\n\nIt goes on top of the following patches:\n\n```\ntrac_5721-a.patch\ntrac_5721-b.patch\ntrac_5751.patch\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5794\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nKeywords: lie groups\n\nPatch summary for trac_5794.revised:\n\n```\n\n- new branching rules, including exceptional and reducible types\n- all new rules have tests but slower F4 tests are # long time\n- bugfix: reducible root system methods simple_roots etc. return families\n- Cartan Types B, C and D allow low rank cases such as D2, B1 and C1\n- WeylCharacterRings: new style=\"coroots\" option gives output similar to published tables\n- WeylCharacterRings: methods for rank, simple_roots etc.\n- doc revision in weyl_characters.py\n```\n\nThis patch contains #5831. If this patch is merged, that ticket may be closed.\n\nThe patch trac_5794-continued.patch goes on top of trac_5794-revised.patch. Together, the two patches\ngive complete coverage of branching rules from\nclassical root systems to maximal subgroups.\n\nHighlights of the second patch:\n\n```\nNew WeylCharacter methods is_reducible and frobenius_schur_indicator\nRevised tensor rule handles all classical Cartan types\npowerful new branching_rule_from_plethysm handles unusual cases\ndoc revision\n```\n\nThe file at\nhttp://sporadic.stanford.edu/bump/branch.sage contains additional tests demonstrating every branching rule in Patera and McKay's book of tables for Cartan types A,B,C,D. This verifies the completeness of the patch for nonexceptional types.\n\nThe patch `trac_5794-exceptional.patch` adds some more F4 and E6 branching rules. It also adds `dynkin_diagram` and `extended_dynkin_diagram` methods to WeylCharacterRings. It goes on top of the other two patches.\n\nThe last patch `trac_5794-more-exceptional.patch` adds E6, E7 and E8 branching rules.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5794\n\n",
+    "closed_at": "2009-11-19T17:02:33Z",
     "created_at": "2009-04-16T01:16:30Z",
     "labels": [
-        "component: algebra"
+        "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] G2 branching rules",
+    "title": "exceptional and reducible type branching rules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5794",
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: tbd
+Assignee: @dwbump
 
 CC:  sage-combinat
 
-This patch implements branching rules for the following inclusions
-of Lie groups: 
+Keywords: lie groups
+
+Patch summary for trac_5794.revised:
 
 ```
-A1 in G2 (along short root) 
-A2 in G2
-G2 in B3
-G2 in D4
+
+- new branching rules, including exceptional and reducible types
+- all new rules have tests but slower F4 tests are # long time
+- bugfix: reducible root system methods simple_roots etc. return families
+- Cartan Types B, C and D allow low rank cases such as D2, B1 and C1
+- WeylCharacterRings: new style="coroots" option gives output similar to published tables
+- WeylCharacterRings: methods for rank, simple_roots etc.
+- doc revision in weyl_characters.py
 ```
 
-It goes on top of the following patches:
+This patch contains #5831. If this patch is merged, that ticket may be closed.
+
+The patch trac_5794-continued.patch goes on top of trac_5794-revised.patch. Together, the two patches
+give complete coverage of branching rules from
+classical root systems to maximal subgroups.
+
+Highlights of the second patch:
 
 ```
-trac_5721-a.patch
-trac_5721-b.patch
-trac_5751.patch
+New WeylCharacter methods is_reducible and frobenius_schur_indicator
+Revised tensor rule handles all classical Cartan types
+powerful new branching_rule_from_plethysm handles unusual cases
+doc revision
 ```
+
+The file at
+http://sporadic.stanford.edu/bump/branch.sage contains additional tests demonstrating every branching rule in Patera and McKay's book of tables for Cartan types A,B,C,D. This verifies the completeness of the patch for nonexceptional types.
+
+The patch `trac_5794-exceptional.patch` adds some more F4 and E6 branching rules. It also adds `dynkin_diagram` and `extended_dynkin_diagram` methods to WeylCharacterRings. It goes on top of the other two patches.
+
+The last patch `trac_5794-more-exceptional.patch` adds E6, E7 and E8 branching rules.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5794
 

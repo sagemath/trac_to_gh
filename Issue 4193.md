@@ -1,16 +1,17 @@
-# Issue 4193: Coercion between relative and absolute number fields
+# Issue 4193: [fixed by #5508] Coercion between relative and absolute number fields
 
 archive/issues_004193.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  fwclarke\n\nIs there supposed to be a canonical coercion map between a relative number field and its associated absolute field?\n\nAt the moment (in 3.1.2) there apparently isn't, and trying to force one raises a TypeError:\n\n```\nsage: K1.<a> = NumberField(x^3 - 2)\nsage: R.<y> = PolynomialRing(K1).gen()\nsage: K2.<b> = K1.extension(y^2 - a)\nsage: K2abs = K2.absolute_field('w')\nsage: K2abs(b)\nTypeError: Cannot coerce element into this number field\n```\n\nI suppose it's sort of fair enough as there exist multiple K1-linear embeddings from K2 into K2abs, but shouldn't the definition of K2abs give a distinguished element of this set, sending the generator b of K2 to the generator w of K2abs?\n\nThis causes problems elsewhere, as the code for relative orders in number fields relies on having such a coercion to do basic element-creation and membership-testing routines, and these are all broken as a result:\n\n```\nsage: R = K2.order(b)\nsage: b in R\nFalse\nsage: bb = R.gens()[1] # b by any other name\nsage: bb == b\nTrue\nsage: bb.parent() is R\nTrue\nsage: bb in R\nFalse\nsage: R(bb) # trying to coerce something into its own parent!\nTypeError: Cannot coerce element into this number field\n```\n\nI uncovered this last problem first while trying to fix #4190, or more precisely while trying to write a doctest for a fix that I'd already written. (I have a fix which works for absolute orders and should work for relative orders too, but there's no way it can work given the above general brokenness.)\n\nDavid\n\nIssue created by migration from https://trac.sagemath.org/ticket/4193\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  fwclarke\n\nIs there supposed to be a canonical coercion map between a relative number field and its associated absolute field?\n\nAt the moment (in 3.1.2) there apparently isn't, and trying to force one raises a TypeError:\n\n```\nsage: K1.<a> = NumberField(x^3 - 2)\nsage: R.<y> = PolynomialRing(K1)\nsage: K2.<b> = K1.extension(y^2 - a)\nsage: K2abs = K2.absolute_field('w')\nsage: K2abs(b)\nTypeError: Cannot coerce element into this number field\n```\n\nI suppose it's sort of fair enough as there exist multiple K1-linear embeddings from K2 into K2abs, but shouldn't the definition of K2abs give a distinguished element of this set, sending the generator b of K2 to the generator w of K2abs?\n\nThis causes problems elsewhere, as the code for relative orders in number fields relies on having such a coercion to do basic element-creation and membership-testing routines, and these are all broken as a result:\n\n```\nsage: R = K2.order(b)\nsage: b in R\nFalse\nsage: bb = R.gens()[1] # b by any other name\nsage: bb == b\nTrue\nsage: bb.parent() is R\nTrue\nsage: bb in R\nFalse\nsage: R(bb) # trying to coerce something into its own parent!\nTypeError: Cannot coerce element into this number field\n```\n\nI uncovered this last problem first while trying to fix #4190, or more precisely while trying to write a doctest for a fix that I'd already written. (I have a fix which works for absolute orders and should work for relative orders too, but there's no way it can work given the above general brokenness.)\n\nDavid\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4193\n\n",
+    "closed_at": "2009-04-24T08:44:29Z",
     "created_at": "2008-09-25T10:15:29Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Coercion between relative and absolute number fields",
+    "title": "[fixed by #5508] Coercion between relative and absolute number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4193",
     "user": "https://github.com/loefflerd"
@@ -26,7 +27,7 @@ At the moment (in 3.1.2) there apparently isn't, and trying to force one raises 
 
 ```
 sage: K1.<a> = NumberField(x^3 - 2)
-sage: R.<y> = PolynomialRing(K1).gen()
+sage: R.<y> = PolynomialRing(K1)
 sage: K2.<b> = K1.extension(y^2 - a)
 sage: K2abs = K2.absolute_field('w')
 sage: K2abs(b)
@@ -55,6 +56,7 @@ TypeError: Cannot coerce element into this number field
 I uncovered this last problem first while trying to fix #4190, or more precisely while trying to write a doctest for a fix that I'd already written. (I have a fix which works for absolute orders and should work for relative orders too, but there's no way it can work given the above general brokenness.)
 
 David
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4193
 

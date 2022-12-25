@@ -1,15 +1,16 @@
-# Issue 1567: zn_poly spkg
+# Issue 1567: [with spkg, positive review] zn_poly
 
 archive/issues_001567.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nspkg for the `zn_poly` library:\n\nhttp://math.harvard.edu/~dmharvey/zn_poly/releases/zn_poly-0.4.1.spkg\n\nI've tested it on some platforms, but it needs to be tested on more.\n\nSee also\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9844ce77400e7ed4\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1567\n\n",
+    "closed_at": "2008-03-20T02:52:10Z",
     "created_at": "2007-12-19T15:18:45Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "zn_poly spkg",
+    "title": "[with spkg, positive review] zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1567",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

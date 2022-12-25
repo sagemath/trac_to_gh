@@ -1,15 +1,16 @@
-# Issue 9493: Remove extra baggage from ECL 10.2.1.p1 (again)
+# Issue 9493: Remove extra baggage from the ECL spkg
 
 archive/issues_009493.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nSnippet from (my new) `SPKG.txt`:\n\n```\n## Dependencies\n\n * mpir\n * boehm_gc\n\n## Special Update/Build Instructions\n * Delete the src/msvc directory\n * Delete the src/contrib/encodings directory.  So, do not build with\n   --enable-unicode: See http://trac.sagemath.org/sage_trac/ticket/7732\n * TODO: Delete the src/src/gmp directory (13MB!), as we use MPIR\n     - perhaps add --with-gmp-prefix=$SAGE_LOCAL to configure\n       to make sure we use Sage's one (MPIR); this is independent\n       of the deletion of src/src/gmp\n     - needs copying src/src/gmp/install-sh to somewhere else or\n       patching configure to use e.g. that one in src/src/gc\n * TODO: Make ECL use Sage's Boehm GC on MacOS X as well (but perhaps\n   put some changes from ECL's into Sage's Boehm GC), then remove\n   the src/src/gc directory, too\n\n## Changelog\n\n### ecl-10.2.1.p2 (Leif Leonhardy, 13th July 2010)\n  * Removed src/msvc and src/contrib/encodings directories again.\n  * Updated build/update instructions above.\n```\n(See also [this comment](http://trac.sagemath.org/sage_trac/ticket/9187#comment:29) ff. at #9187)\n\nMore worth is removing the GMP source tree, too:\n\n```\n$ ls -l ecl-stripped-v?/*.spkg\n-rw-r--r-- 1 leif64 leif64 3976609 Jul 14 00:42 ecl-stripped-v1/ecl-10.2.1.p2.spkg\n-rw-r--r-- 1 leif64 leif64 2379135 Jul 14 00:02 ecl-stripped-v2/ecl-10.2.1.p2.spkg\n```\n(v2 with in addition GMP removed is less than half the size!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9493\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nKeywords: ecl gmp cygwin spkg\n\nRemove GMP subdir.\n\nUse tarball at:\n* http://boxen.math.washington.edu/home/jpflori/upstream/ecl-12.12.1.20140409.tar.bz2\n\nIssue created by migration from https://trac.sagemath.org/ticket/9493\n\n",
+    "closed_at": "2014-05-21T15:33:43Z",
     "created_at": "2010-07-13T23:19:35Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
-    "title": "Remove extra baggage from ECL 10.2.1.p1 (again)",
+    "title": "Remove extra baggage from the ECL spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9493",
     "user": "https://github.com/nexttime"
@@ -19,44 +20,12 @@ Assignee: tbd
 
 CC:  drkirkby @kcrisman
 
-Snippet from (my new) `SPKG.txt`:
+Keywords: ecl gmp cygwin spkg
 
-```
-## Dependencies
+Remove GMP subdir.
 
- * mpir
- * boehm_gc
-
-## Special Update/Build Instructions
- * Delete the src/msvc directory
- * Delete the src/contrib/encodings directory.  So, do not build with
-   --enable-unicode: See http://trac.sagemath.org/sage_trac/ticket/7732
- * TODO: Delete the src/src/gmp directory (13MB!), as we use MPIR
-     - perhaps add --with-gmp-prefix=$SAGE_LOCAL to configure
-       to make sure we use Sage's one (MPIR); this is independent
-       of the deletion of src/src/gmp
-     - needs copying src/src/gmp/install-sh to somewhere else or
-       patching configure to use e.g. that one in src/src/gc
- * TODO: Make ECL use Sage's Boehm GC on MacOS X as well (but perhaps
-   put some changes from ECL's into Sage's Boehm GC), then remove
-   the src/src/gc directory, too
-
-## Changelog
-
-### ecl-10.2.1.p2 (Leif Leonhardy, 13th July 2010)
-  * Removed src/msvc and src/contrib/encodings directories again.
-  * Updated build/update instructions above.
-```
-(See also [this comment](http://trac.sagemath.org/sage_trac/ticket/9187#comment:29) ff. at #9187)
-
-More worth is removing the GMP source tree, too:
-
-```
-$ ls -l ecl-stripped-v?/*.spkg
--rw-r--r-- 1 leif64 leif64 3976609 Jul 14 00:42 ecl-stripped-v1/ecl-10.2.1.p2.spkg
--rw-r--r-- 1 leif64 leif64 2379135 Jul 14 00:02 ecl-stripped-v2/ecl-10.2.1.p2.spkg
-```
-(v2 with in addition GMP removed is less than half the size!)
+Use tarball at:
+* http://boxen.math.washington.edu/home/jpflori/upstream/ecl-12.12.1.20140409.tar.bz2
 
 Issue created by migration from https://trac.sagemath.org/ticket/9493
 

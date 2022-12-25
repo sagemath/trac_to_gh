@@ -1,16 +1,17 @@
-# Issue 1034: clean up 'revlex' term ordering mess
+# Issue 1034: [with patch] clean up 'revlex' term ordering mess
 
 archive/issues_001034.json:
 ```json
 {
     "body": "Assignee: @malb\n\nWhat we call 'revlex' and which translates to 'rp' in Singular is not what is called 'revlex' in literature. Also our generic implementation doesn't match the one of Singular. This needs to be cleaned up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1034\n\n",
+    "closed_at": "2007-11-01T10:20:02Z",
     "created_at": "2007-10-30T15:03:33Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "clean up 'revlex' term ordering mess",
+    "title": "[with patch] clean up 'revlex' term ordering mess",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1034",
     "user": "https://github.com/malb"

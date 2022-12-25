@@ -1,9 +1,10 @@
-# Issue 4532: [with patch, needs review] trivial typo in modform theta.py
+# Issue 4532: [with patch, with positive review] trivial typo in modform theta.py
 
 archive/issues_004532.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4532\n\n",
+    "closed_at": "2008-11-20T09:33:53Z",
     "created_at": "2008-11-16T07:22:37Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004532.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] trivial typo in modform theta.py",
+    "title": "[with patch, with positive review] trivial typo in modform theta.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4532",
     "user": "https://github.com/robertwb"

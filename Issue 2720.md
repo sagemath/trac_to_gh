@@ -1,9 +1,10 @@
-# Issue 2720: Sage 2.11.alpha2: fix documentation build issues
+# Issue 2720: [with patch, positive review] Sage 2.11.alpha2: fix documentation build issues
 
 archive/issues_002720.json:
 ```json
 {
-    "body": "Assignee: tba\n\nI got a patch for this. Coming up shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2720\n\n",
+    "body": "Assignee: mabshoff\n\nI got a patch for this. Coming up shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2720\n\n",
+    "closed_at": "2008-03-29T18:06:10Z",
     "created_at": "2008-03-29T17:12:34Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_002720.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Sage 2.11.alpha2: fix documentation build issues",
+    "title": "[with patch, positive review] Sage 2.11.alpha2: fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2720",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 I got a patch for this. Coming up shortly.
 

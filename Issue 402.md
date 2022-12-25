@@ -4,6 +4,7 @@ archive/issues_000402.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCurrently, both in sage 2.6 and William's online notebook (which I guess is also sage 2.6)\n\n```\n%slide\nsome text here\n```\nfails with\n\n```\nsh: line 1: 23279 Segmentation fault      dvipng -q* -T bbox -D 256 sage6.dvi\n>/dev/null 2>/dev/null\nAn error occured.\n[...]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/402\n\n",
+    "closed_at": "2007-08-18T23:34:30Z",
     "created_at": "2007-07-11T20:25:07Z",
     "labels": [
         "component: notebook",

@@ -4,6 +4,7 @@ archive/issues_009755.json:
 ```json
 {
     "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: symmetric functions\n\nThe following was reported to me by Nicolas Thi\u00e9ry and Lenny Tevlin.\n\n```\nR.<q,t> = ZZ[]\nR = FractionField(R)\nP = MacdonaldPolynomialsP(R,q,t) \nQ = HallLittlewoodQ(R,t) # or Q or P (Qp = H)\nPh=HallLittlewoodP(R,t)\nSF = SymmetricFunctions(R)\nSF.inject_shorthands()\nQ(s.one())\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'int' object has no attribute 'subs'\n```\nThe same error occurs with `Ph(s.one())`, although `P(s.one())` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9755\n\n",
+    "closed_at": "2010-09-29T04:25:03Z",
     "created_at": "2010-08-17T15:27:40Z",
     "labels": [
         "component: combinatorics",

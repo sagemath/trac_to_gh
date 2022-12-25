@@ -3,10 +3,10 @@
 archive/issues_003836.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @TimDumol @qed777 @jasongrout\n\n```\n\nI really like the @interact functionality! I'm trying to do something\nlike this:\n\n@interact\ndef _(p=5,q=range(p)):\n   ...\n\nSo I'd like the range of q to depend on the current value of p. This\ndoesn't seem to be possible. Is there any way to make it work?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3836\n\n",
+    "body": "Assignee: @itolkov\n\nCC:  @TimDumol @qed777 @jasongrout\n\n```\n\nI really like the @interact functionality! I'm trying to do something\nlike this:\n\n@interact\ndef _(p=5,q=range(p)):\n   ...\n\nSo I'd like the range of q to depend on the current value of p. This\ndoesn't seem to be possible. Is there any way to make it work?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3836\n\n",
     "created_at": "2008-08-13T16:12:38Z",
     "labels": [
-        "component: notebook"
+        "component: interact"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook interact -- make it so one control can depend on others",
@@ -15,7 +15,7 @@ archive/issues_003836.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @itolkov
 
 CC:  @TimDumol @qed777 @jasongrout
 

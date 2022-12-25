@@ -1,9 +1,10 @@
-# Issue 3842: notebook -- major bug in how javascript <script> tags are interpreted by the notebook
+# Issue 3842: [with patch; positive review] notebook -- major bug in how javascript <script> tags are interpreted by the notebook
 
 archive/issues_003842.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3842\n\n",
+    "body": "Assignee: boothby\n\nTry the following:\n\n```\nprint \"hi\"\nsleep(2)\nhtml('<script>alert(\"boom!\")</script>')\nsleep(5)\nhtml('<script>alert(\"sage!\")</script>')\n```\n\nThis illustrates that the <script> tags get evaled AS THE OUTPUT gets received.  Instead the <script> parser should wait until the output is done before parsing anything.  This will likely fix a LOT of annoying weirdness with latency and interact over a slow connection. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3842\n\n",
+    "closed_at": "2008-08-14T16:42:29Z",
     "created_at": "2008-08-13T19:15:24Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003842.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "notebook -- major bug in how javascript <script> tags are interpreted by the notebook",
+    "title": "[with patch; positive review] notebook -- major bug in how javascript <script> tags are interpreted by the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3842",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,17 @@ archive/issues_003842.json:
 ```
 Assignee: boothby
 
+Try the following:
 
+```
+print "hi"
+sleep(2)
+html('<script>alert("boom!")</script>')
+sleep(5)
+html('<script>alert("sage!")</script>')
+```
+
+This illustrates that the <script> tags get evaled AS THE OUTPUT gets received.  Instead the <script> parser should wait until the output is done before parsing anything.  This will likely fix a LOT of annoying weirdness with latency and interact over a slow connection. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3842
 

@@ -1,16 +1,16 @@
-# Issue 4721: [with patch; needs review] Indefinite integration for piecewise functions
+# Issue 4721: [with patch; positive review] Indefinite integration for piecewise functions
 
 archive/issues_004721.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIt would be nice to be able to do indefinite integration of piecewise functions in Sage.\n\nI've created a patch which does this. I have made the default behavior of the integral() function of a piecewise function be to return the indefinite integral, and the definite integral is returned only when definite=True is supplied.\n\n```\nsage: pw = Piecewise([[(0,1), x*2], [(1,2), x + 3]])\nsage: pw.integral()\nPiecewise defined function with 2 parts, [[(0, 1), x^2], [(1, 2), (x^2 + 6*x)/2 - 5/2]]\nsage: pw.integral(definite=True)\n11/2\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4721\n\n",
+    "closed_at": "2009-02-09T08:26:22Z",
     "created_at": "2008-12-05T22:37:17Z",
     "labels": [
-        "component: calculus",
-        "minor"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch; needs review] Indefinite integration for piecewise functions",
+    "title": "[with patch; positive review] Indefinite integration for piecewise functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4721",
     "user": "https://trac.sagemath.org/admin/accounts/users/pbutler"

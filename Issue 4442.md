@@ -1,9 +1,10 @@
-# Issue 4442: [with patch, needs review] fix documetation build issue with congroup.py
+# Issue 4442: [with patch, positive review] fix documetation build issue with congroup.py
 
 archive/issues_004442.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nSplitted away from #4370, the patch is identical and was just renamed.\n\nThe documentation does not build (at least on my install) without that fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4442\n\n",
+    "closed_at": "2008-11-05T20:46:49Z",
     "created_at": "2008-11-04T21:24:38Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004442.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] fix documetation build issue with congroup.py",
+    "title": "[with patch, positive review] fix documetation build issue with congroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4442",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

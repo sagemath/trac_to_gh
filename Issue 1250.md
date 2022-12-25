@@ -4,6 +4,7 @@ archive/issues_001250.json:
 ```json
 {
     "body": "Assignee: @malb\n\neasy fix.  use _sig_on / _sig_off. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1250\n\n",
+    "closed_at": "2007-11-24T10:27:20Z",
     "created_at": "2007-11-23T21:28:21Z",
     "labels": [
         "component: commutative algebra",

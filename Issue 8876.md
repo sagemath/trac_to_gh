@@ -3,7 +3,8 @@
 archive/issues_008876.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nKeywords: Triangular Morphisms\n\nPatch in progress on sage-combinat queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8876\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: Triangular Morphisms\n\nCurrently triangular morphisms required to have domain and codomain with the\nsame index sets. The patch remove this limitation by having\nTriangularMorphism accept a new argument `inverse_on_support`. It is\nsupposed to be a function `r : J |--> I` returning the leading term `i`\nfrom the one of `j = on_basis(i)`. This is used by: `preimage` and\n`section`.\n\nI also wrote the methods `co_kernel_projection`, `co_reduced`, and\n`_test_triangular`. \n\nDepend on #8881 and #8742, Apply patch in that order:\n- [trac_8876-triangular_morphisms_improve-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8876/trac_8876-triangular_morphisms_improve-fh.patch)\n- [trac_8876-reviewer_patch-jb.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8876/trac_8876-reviewer_patch-jb.patch)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8876\n\n",
+    "closed_at": "2010-06-05T21:51:42Z",
     "created_at": "2010-05-04T22:37:22Z",
     "labels": [
         "component: categories"
@@ -19,7 +20,20 @@ Assignee: @hivert
 
 Keywords: Triangular Morphisms
 
-Patch in progress on sage-combinat queue.
+Currently triangular morphisms required to have domain and codomain with the
+same index sets. The patch remove this limitation by having
+TriangularMorphism accept a new argument `inverse_on_support`. It is
+supposed to be a function `r : J |--> I` returning the leading term `i`
+from the one of `j = on_basis(i)`. This is used by: `preimage` and
+`section`.
+
+I also wrote the methods `co_kernel_projection`, `co_reduced`, and
+`_test_triangular`. 
+
+Depend on #8881 and #8742, Apply patch in that order:
+- [trac_8876-triangular_morphisms_improve-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8876/trac_8876-triangular_morphisms_improve-fh.patch)
+- [trac_8876-reviewer_patch-jb.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8876/trac_8876-reviewer_patch-jb.patch)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8876
 

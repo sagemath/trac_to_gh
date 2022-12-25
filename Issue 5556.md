@@ -1,9 +1,10 @@
-# Issue 5556: symbolic gamma function and symbolic log function are incoherent
+# Issue 5556: [with patch, positive review] symbolic gamma function is incoherent
 
 archive/issues_005556.json:
 ```json
 {
     "body": "CC:  @burcin @robertwb\n\nKeywords: symbolic gamma log function numerical approximation\n\nSo this is incredibly awful:\n\n```\nsage: gamma(RealField(100)(3/4))\n1.2254167024651776451290983034\nsage: gamma(3/4).n(100)\n1.2254167024651776429777783051\n```\n\n(for the record, the first one is correct)\n\nand this doesn't agree with that:\n\n```\nsage: log(2).n(100)\n0.69314718055994530941723212146\nsage: log(RealField(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/Devel/RiemannTheta/riemann_theta.py in <module>()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in log(x, base)\n   9242             return x.log()\n   9243         except AttributeError: \n-> 9244             return ln(x)\n   9245     else:\n   9246         try:\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in ln(x)\n   9189         0.693147180559945\n   9190     \"\"\"\n-> 9191     return function_log(x)\n   9192 \n   9193 def log(x, base=None):\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in __call__(self, x, *args)\n   7542             return getattr(x, self._repr_())(*args)\n   7543         except AttributeError:\n-> 7544             return SymbolicComposition(self, SR(x))\n   7545 \n   7546     def _approx_(self, x):  # must *always* be called with a float x as input.\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)\n    507 \n    508     def _coerce_impl(self, x):\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a SymbolicExpression.\"%type(x)\n    569 \n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type 'sage.rings.real_mpfr.RealField'>' into a SymbolicExpression.\nsage: log(RealField(2))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5556\n\n",
+    "closed_at": "2009-10-15T05:17:40Z",
     "created_at": "2009-03-18T05:54:30Z",
     "labels": [
         "component: symbolics",
@@ -11,7 +12,7 @@ archive/issues_005556.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "symbolic gamma function and symbolic log function are incoherent",
+    "title": "[with patch, positive review] symbolic gamma function is incoherent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5556",
     "user": "https://github.com/ncalexan"

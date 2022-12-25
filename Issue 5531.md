@@ -1,16 +1,17 @@
-# Issue 5531: [with patch, needs review] Quaternion algebra docstring formatting needs small fixes
+# Issue 5531: [with patch, positive review] Quaternion algebra docstring formatting needs small fixes
 
 archive/issues_005531.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nIn a vanilla copy of 3.4, I get complaints from sage -docbuild because some of the docstrings in sage/algebras/quaternion_algebra.py are wrongly formatted. \n\n```\nWARNING: /home/david/sage-current/local/lib/python2.5/site-packages/sage/algebras/quaternion_algebra.py:docstring of sage.algebras.quaternion_algebra.unpickle_QuaternionAlgebra_v0:4: (WARNING/2) Inline emphasis start-string without end-string.\nWARNING: /home/david/sage-current/local/lib/python2.5/site-packages/sage/algebras/quaternion_algebra_element.so:docstring of sage.algebras.quaternion_algebra_element.QuaternionAlgebraElement_abstract.conjugate:13: (WARNING/2) Inline literal start-string without end-string.\nWARNING: /home/david/sage-current/local/lib/python2.5/site-packages/sage/algebras/quaternion_algebra_element.so:docstring of sage.algebras.quaternion_algebra_element.QuaternionAlgebraElement_generic:3: (WARNING/2) Literal block expected; none found.\nWARNING: /home/david/sage-current/local/lib/python2.5/site-packages/sage/algebras/quaternion_algebra_element.so:docstring of sage.algebras.quaternion_algebra_element.QuaternionAlgebraElement_rational_field:4: (WARNING/2) Literal block expected; none found.\nWARNING: /home/david/sage-current/local/lib/python2.5/site-packages/sage/algebras/quaternion_algebra_element.so:docstring of sage.algebras.quaternion_algebra_element.unpickle_QuaternionAlgebraElement_generic_v0:2: (WARNING/2) Inline emphasis start-string without end-string.\nWARNING: /home/david/sage-current/local/lib/python2.5/site-packages/sage/algebras/quaternion_algebra_element.so:docstring of sage.algebras.quaternion_algebra_element.unpickle_QuaternionAlgebraElement_generic_v0:2: (WARNING/2) Inline emphasis start-string without end-string.\n```\n\nThis patch fixes that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5531\n\n",
+    "closed_at": "2009-03-20T21:50:57Z",
     "created_at": "2009-03-16T17:44:59Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Quaternion algebra docstring formatting needs small fixes",
+    "title": "[with patch, positive review] Quaternion algebra docstring formatting needs small fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5531",
     "user": "https://github.com/loefflerd"

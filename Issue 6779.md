@@ -1,16 +1,17 @@
-# Issue 6779: [with patch, needs review] positive_integer_relations bug in lattice_polytope
+# Issue 6779: [with patch, positive review] positive_integer_relations bug in lattice_polytope
 
 archive/issues_006779.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nSince gcd(3/2, 9/5) used to be 3/10, it was used in lattice_polytope functions for rescaling to primitive integral vectors in the given rational direction. This is no longer true and leads to bugs:\n\n```\nsage: p = ReflexivePolytope(2, 1)\nsage: lattice_polytope.positive_integer_relations(p.vertices())\nTraceback (most recent call last):\n...\nTypeError: matrix has denominators so can't change to ZZ.\n```\nThe patch adds a function integral_length and uses it instead of gcd:\n\n```\nsage: p = ReflexivePolytope(2, 1)\nsage: lattice_polytope.positive_integer_relations(p.vertices())\n[2 1 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6779\n\n",
+    "closed_at": "2009-11-02T04:35:39Z",
     "created_at": "2009-08-20T00:04:40Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] positive_integer_relations bug in lattice_polytope",
+    "title": "[with patch, positive review] positive_integer_relations bug in lattice_polytope",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6779",
     "user": "https://github.com/novoselt"

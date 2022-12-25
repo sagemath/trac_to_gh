@@ -1,9 +1,10 @@
-# Issue 2231: sage-2.10.2-alpha1: doctest failure in partition_algebra.py
+# Issue 2231: [with patch, positive review] sage-2.10.2-alpha1: doctest failure in partition_algebra.py
 
 archive/issues_002231.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2231\n\n",
+    "closed_at": "2008-02-20T17:29:00Z",
     "created_at": "2008-02-20T09:15:41Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002231.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage-2.10.2-alpha1: doctest failure in partition_algebra.py",
+    "title": "[with patch, positive review] sage-2.10.2-alpha1: doctest failure in partition_algebra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2231",
     "user": "https://github.com/mwhansen"

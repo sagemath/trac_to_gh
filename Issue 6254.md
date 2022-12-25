@@ -4,6 +4,7 @@ archive/issues_006254.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  fredrik @jasongrout\n\nKeywords: mpmath\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6254\n\n",
+    "closed_at": "2009-08-13T19:21:10Z",
     "created_at": "2009-06-09T22:28:27Z",
     "labels": [
         "component: packages: standard"

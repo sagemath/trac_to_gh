@@ -1,16 +1,18 @@
-# Issue 1721: Introduse SYSTEM_ATLAS to skip tuning of ATLAS
+# Issue 1721: [with spkg ] Introduce SYSTEM_ATLAS to skip tuning of ATLAS
 
 archive/issues_001721.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince many people complain about the ATLAS build in case they end up with a system without pre-tuned CPUs add this end-variable to skip over the ATLAS build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1721\n\n",
+    "closed_at": "2008-01-22T07:11:05Z",
     "created_at": "2008-01-08T10:52:38Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Introduse SYSTEM_ATLAS to skip tuning of ATLAS",
+    "title": "[with spkg ] Introduce SYSTEM_ATLAS to skip tuning of ATLAS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1721",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_000543.json:
 ```json
 {
     "body": "Assignee: somebody\n\nAdd some code Chris Gorecki wrote for symbolic logic into SAGE.  It's very basic stuff, but it will get the ball rolling toward supporting logic in SAGE. \n\nIssue created by migration from https://trac.sagemath.org/ticket/543\n\n",
+    "closed_at": "2007-08-31T21:03:26Z",
     "created_at": "2007-08-31T19:51:20Z",
     "labels": [
         "component: basic arithmetic"

@@ -4,6 +4,7 @@ archive/issues_004643.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nAs it stands, if you remove a Cython extension from `module_list.py`, and remove all associated files in the sage library, everything builds fine. However, the `.so` files are still there. In particular, if you try to load a pickled object from a class that was defined in that `.pyx` file, it still loads just fine -- in fact, it loads the `.so` and uses that code. \n\nUnfortunately, I don't see an easy fix for this offhand. The problem is that we don't manage the `.so` files ourselves -- we leave that to distutils. If someone has a good idea for how to fix this, I'm happy to help implement it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4643\n\n",
+    "closed_at": "2014-08-20T20:37:36Z",
     "created_at": "2008-11-28T08:29:39Z",
     "labels": [
         "component: build",

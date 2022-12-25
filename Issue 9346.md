@@ -4,6 +4,7 @@ archive/issues_009346.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @qed777 @jaapspies\n\nA recent update to the sage_fortran package (#7982), was made to aid the creation of 64-bit object files when the environment variable SAGE64 was set to yes. The patch accomplished that task. \n\nUnfortunately, this was as the cost of 32-bit object files. \n\nInstead of the file sage_fortran being a small script to invoke the Fortran compiler, it is now a broken script.\n\n```\n$ cat local/bin/sage_fortran\n#!/bin/sh \n```\n\nSince a 64-bit port is not complete and this breaks a 32-bit build, it means Sage is totally broken on Solaris. \n\nFortunately the required change is very small indeed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9346\n\n",
+    "closed_at": "2010-06-28T16:58:56Z",
     "created_at": "2010-06-26T18:06:03Z",
     "labels": [
         "component: porting: solaris",

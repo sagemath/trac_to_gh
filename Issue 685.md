@@ -4,6 +4,7 @@ archive/issues_000685.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe eisenstein_series_qexp function currently only handles eisenstein series for level 1. It wouldn't be hard to make this handle eisenstein series for higher level and with character. I'm going to take care of this soon, but this is here in case I forget. ;)\n\nIssue created by migration from https://trac.sagemath.org/ticket/685\n\n",
+    "closed_at": "2014-06-06T11:01:15Z",
     "created_at": "2007-09-18T05:14:14Z",
     "labels": [
         "component: modular forms",

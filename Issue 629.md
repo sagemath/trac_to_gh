@@ -1,16 +1,17 @@
-# Issue 629: Fix DSage on PPC Linux
+# Issue 629: [with patch] Fix DSage on PPC Linux
 
 archive/issues_000629.json:
 ```json
 {
     "body": "Assignee: Yi\n\nKeywords: DSage, PPC\n\nDSage needs certain bits implemented for each platform. This is missing for PPC Linux. The DSage doc test is the only failing on for Sage on PPC Linux 32 bit as of 2.8.4+pari fix.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/629\n\n",
+    "closed_at": "2007-09-21T00:09:46Z",
     "created_at": "2007-09-09T18:12:38Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "Fix DSage on PPC Linux",
+    "title": "[with patch] Fix DSage on PPC Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/629",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

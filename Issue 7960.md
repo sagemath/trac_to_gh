@@ -3,7 +3,8 @@
 archive/issues_007960.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @videlec\n\nOne should be able to do \n\n```\nsage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)\nsage: QQBar(a)\n-1.324717957244746?\n```\n\nFollowup to #4621\n\nIssue created by migration from https://trac.sagemath.org/ticket/7960\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @videlec\n\nOne should be able to do \n\n```\nsage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)\nsage: QQbar(a)\n-1.324717957244746?\n```\n\nFollowup to #4621\n\nIssue created by migration from https://trac.sagemath.org/ticket/7960\n\n",
+    "closed_at": "2019-02-26T13:58:00Z",
     "created_at": "2010-01-17T00:26:12Z",
     "labels": [
         "component: number theory"
@@ -23,7 +24,7 @@ One should be able to do
 
 ```
 sage: K.<a> = NumberField(x^3-x+1, embedding=-1.32)
-sage: QQBar(a)
+sage: QQbar(a)
 -1.324717957244746?
 ```
 

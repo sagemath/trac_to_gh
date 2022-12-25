@@ -4,6 +4,7 @@ archive/issues_004497.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\"very useful for those who use a lot logarithmic scale\" - Ronan Paix\u00e3o\n\nIssue created by migration from https://trac.sagemath.org/ticket/4497\n\n",
+    "closed_at": "2008-11-12T17:09:38Z",
     "created_at": "2008-11-11T23:19:57Z",
     "labels": [
         "component: basic arithmetic",

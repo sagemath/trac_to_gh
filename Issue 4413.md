@@ -3,7 +3,8 @@
 archive/issues_004413.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following code, entered in the command-line interface to Sage, shows the effect:\n\n```\nsage: def foo(x):\n   ....:     '''\n   ....:     Eh?\nObject `Eh` not found.\n   ....:     '''\n   ....:     return x\n   ....: \n```\nThe parser appears to act on the '?' right away, rather than wait for the end of the thing being defined (or realizing that '?' in this case is not to be acted on).\n\nThe effect shows up with both single- and double- quotes, and with and without the \"raw\" qualifier (r!''').\n\nThis may be related to Trac#4405.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4413\n\n",
+    "body": "Assignee: @mwhansen\n\nThe following code, entered in the command-line interface to Sage, shows the effect:\n\n```\nsage: def foo(x):\n   ....:     '''\n   ....:     Eh?\nObject `Eh` not found.\n   ....:     '''\n   ....:     return x\n   ....: \n```\nThe parser appears to act on the '?' right away, rather than wait for the end of the thing being defined (or realizing that '?' in this case is not to be acted on).\n\nThe effect shows up with both single- and double- quotes, and with and without the \"raw\" qualifier (r!''').\n\nThis may be related to Trac#4405.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4413\n\n",
+    "closed_at": "2013-01-25T09:47:59Z",
     "created_at": "2008-10-31T21:05:37Z",
     "labels": [
         "component: user interface",
@@ -16,7 +17,7 @@ archive/issues_004413.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 The following code, entered in the command-line interface to Sage, shows the effect:
 

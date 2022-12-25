@@ -1,16 +1,17 @@
-# Issue 4972: matrix setitem should deal with slicing
+# Issue 4972: [with patch, positive review] matrix setitem should deal with slicing
 
 archive/issues_004972.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following should work:\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\nInstead, I get an error:\n\n```\n          \t\n\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should work:\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\nInstead, I get an error:\n\n```\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
+    "closed_at": "2009-02-06T22:27:49Z",
     "created_at": "2009-01-14T08:33:23Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "matrix setitem should deal with slicing",
+    "title": "[with patch, positive review] matrix setitem should deal with slicing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4972",
     "user": "https://github.com/jasongrout"
@@ -28,8 +29,6 @@ a[1,:]=a[0,:]
 Instead, I get an error:
 
 ```
-          	
-
 Traceback (click to the left for traceback)
 ...
 TypeError: 'slice' object cannot be interpreted as an index
@@ -44,6 +43,7 @@ Traceback (most recent call last):
 TypeError: 'slice' object cannot be interpreted as an index
 
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4972
 

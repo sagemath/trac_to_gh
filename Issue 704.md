@@ -1,15 +1,16 @@
-# Issue 704: create a global proof option, which integrates "proof = False" and "proof = True" in a much better way
+# Issue 704: [with patch] create a global proof option
 
 archive/issues_000704.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nDavid Roe did it!  See attached patch. \n\nIssue created by migration from https://trac.sagemath.org/ticket/704\n\n",
+    "closed_at": "2007-09-21T02:45:38Z",
     "created_at": "2007-09-20T13:44:04Z",
     "labels": [
         "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "create a global proof option, which integrates \"proof = False\" and \"proof = True\" in a much better way",
+    "title": "[with patch] create a global proof option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/704",
     "user": "https://github.com/williamstein"

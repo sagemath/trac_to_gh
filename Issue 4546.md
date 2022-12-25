@@ -1,9 +1,10 @@
-# Issue 4546: [with patch, needs review] redundant print in sage-doctest
+# Issue 4546: [with patch, positive review] redundant print in sage-doctest
 
 archive/issues_004546.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nAn extra print statement seems to have snuck in the `sage-doctest` script. Attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4546\n\n",
+    "closed_at": "2008-11-18T21:02:37Z",
     "created_at": "2008-11-18T10:39:56Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004546.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] redundant print in sage-doctest",
+    "title": "[with patch, positive review] redundant print in sage-doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4546",
     "user": "https://github.com/burcin"

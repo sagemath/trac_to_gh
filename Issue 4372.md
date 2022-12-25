@@ -1,9 +1,10 @@
-# Issue 4372: [with patch] Repair to totallyreal_dsage
+# Issue 4372: Repair to totallyreal_dsage
 
 archive/issues_004372.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTwo changes/updates to get totallyreal_dsage to work:\n\n(1) Craig improved the totally real field enumeration, but changed the public incr() to increment().\n\n(2) dsage had some update where wall_time of a job is returned as a datetime object.\n\ntotallyreal_dsage is still at a nodoctest status, so shouldn't require any (meaningful) review if the patch works (it's against 3.1.4).\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/4372\n\n",
+    "closed_at": "2010-02-02T06:37:28Z",
     "created_at": "2008-10-26T16:45:38Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004372.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch] Repair to totallyreal_dsage",
+    "title": "Repair to totallyreal_dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4372",
     "user": "https://github.com/jvoight"

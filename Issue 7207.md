@@ -4,6 +4,7 @@ archive/issues_007207.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777 @williamstein\n\n`from __future__ import *` statements must be the first statements in a file. However, the old Sage Notebook inserts synchronization code before the file, and the new SageNB inserts prompt changing code first. Both of the aforementioned changes break the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7207\n\n",
+    "closed_at": "2010-01-25T00:52:54Z",
     "created_at": "2009-10-14T11:42:07Z",
     "labels": [
         "component: notebook",

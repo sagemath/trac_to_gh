@@ -1,22 +1,24 @@
-# Issue 2347: Symbolic parsing uses eval()
+# Issue 2347: [with bundle, positive review] better parsing for symbolics
 
 archive/issues_002347.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a security risk, and limits the potential uses of Sage. For example, if I wanted to put a text box on my website where people could type in a function and it would return the derivative (computed using Sage) someone could \"ask\" for the derivative of `2*os.system('rm -rf /')`. Symbolic expressions should be able to be parsed in such a way that one can safely reject expressions using unknown (or non-whitelisted) functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2347\n\n",
+    "body": "Assignee: @robertwb\n\nThis is a security risk, and limits the potential uses of Sage. For example, if I wanted to put a text box on my website where people could type in a function and it would return the derivative (computed using Sage) someone could \"ask\" for the derivative of `2*os.system('rm -rf /')`. Symbolic expressions should be able to be parsed in such a way that one can safely reject expressions using unknown (or non-whitelisted) functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2347\n\n",
+    "closed_at": "2008-04-14T22:55:58Z",
     "created_at": "2008-02-28T09:26:58Z",
     "labels": [
         "component: calculus",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Symbolic parsing uses eval()",
+    "title": "[with bundle, positive review] better parsing for symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2347",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 This is a security risk, and limits the potential uses of Sage. For example, if I wanted to put a text box on my website where people could type in a function and it would return the derivative (computed using Sage) someone could "ask" for the derivative of `2*os.system('rm -rf /')`. Symbolic expressions should be able to be parsed in such a way that one can safely reject expressions using unknown (or non-whitelisted) functions. 
 

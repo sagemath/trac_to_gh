@@ -1,21 +1,22 @@
-# Issue 3452: implement inline error reporting for registration
+# Issue 3452: [with patch, positive review] implement inline error reporting for registration
 
 archive/issues_003452.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCurrently when a user has incorrectly filled out the registration form she is sent to a page that states the error.\n\nThe error should be reported under the input box related to the error. Also form should stay filled in except for the password input boxes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3452\n\n",
+    "body": "Assignee: TimothyClemans\n\nCurrently when a user has incorrectly filled out the registration form she is sent to a page that states the error.\n\nThe error should be reported under the input box related to the error. Also form should stay filled in except for the password input boxes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3452\n\n",
+    "closed_at": "2008-06-25T05:49:13Z",
     "created_at": "2008-06-17T22:28:52Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "implement inline error reporting for registration",
+    "title": "[with patch, positive review] implement inline error reporting for registration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3452",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 Currently when a user has incorrectly filled out the registration form she is sent to a page that states the error.
 

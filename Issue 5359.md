@@ -1,9 +1,10 @@
-# Issue 5359: Block matrix viewing is broken
+# Issue 5359: [with patch, positive review] Block matrix viewing is broken
 
 archive/issues_005359.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nFrom sage-support:\n\nViewing block matrices \"nicely\" seems to be difficult in Sage. \n\n```\nsage: A=matrix([[1]]) \nsage: B=matrix([[2]]) \nsage: C=matrix([[3]]) \nsage: D=matrix([[4]]) \nsage: BM=block_matrix([A,B,C,D]) \nsage: BM \n[1|2] \n[-+-] \n[3|4] \n```\nOkay, this is fine but a little clunky.  Let's try something nicer: \n\n```\nsage: show(BM) \n```\nUpon which a dvi viewer opens up, unfortunately not a very nice one... \nand shows the block matrix with only a vertical dividing line, not a \nhorizontal one! \nOkay, let's try the notebook: \n\n```\nA=matrix([[1]]) \nB=matrix([[2]]) \nC=matrix([[3]]) \nD=matrix([[4]]) \n\nBM=block_matrix([A,B,C,D]);BM \n\n[1|2] \n[-+-] \n[3|4] \n``` \n\nSo far so good, but when I click \"Typeset\" to get a LaTeXed matrix... \n\n```\nBM=block_matrix([A,B,C,D]);BM \n\n<html><span class=\"math\">\\left(\\begin{array}{r|r} \n1 & 2 \\\\ \n3 & 4 \n\\end{array}\\right)</span></html> \n``` \nWhich as you can see does NOT have any \"blockiness\" to it at all. \nVery pretty, but not a block matrix, at least not identifiably so. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5359\n\n",
+    "body": "Assignee: @jhpalmieri\n\nFrom sage-support:\n\nViewing block matrices \"nicely\" seems to be difficult in Sage. \n\n```\nsage: A=matrix([[1]]) \nsage: B=matrix([[2]]) \nsage: C=matrix([[3]]) \nsage: D=matrix([[4]]) \nsage: BM=block_matrix([A,B,C,D]) \nsage: BM \n[1|2] \n[-+-] \n[3|4] \n```\nOkay, this is fine but a little clunky.  Let's try something nicer: \n\n```\nsage: show(BM) \n```\nUpon which a dvi viewer opens up, unfortunately not a very nice one... \nand shows the block matrix with only a vertical dividing line, not a \nhorizontal one! \nOkay, let's try the notebook: \n\n```\nA=matrix([[1]]) \nB=matrix([[2]]) \nC=matrix([[3]]) \nD=matrix([[4]]) \n\nBM=block_matrix([A,B,C,D]);BM \n\n[1|2] \n[-+-] \n[3|4] \n``` \n\nSo far so good, but when I click \"Typeset\" to get a LaTeXed matrix... \n\n```\nBM=block_matrix([A,B,C,D]);BM \n\n<html><span class=\"math\">\\left(\\begin{array}{r|r} \n1 & 2 \\\\ \n3 & 4 \n\\end{array}\\right)</span></html> \n``` \nWhich as you can see does NOT have any \"blockiness\" to it at all. \nVery pretty, but not a block matrix, at least not identifiably so. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5359\n\n",
+    "closed_at": "2009-03-25T08:43:40Z",
     "created_at": "2009-02-24T17:55:14Z",
     "labels": [
         "component: misc",
@@ -11,13 +12,13 @@ archive/issues_005359.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Block matrix viewing is broken",
+    "title": "[with patch, positive review] Block matrix viewing is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5359",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: cwitty
+Assignee: @jhpalmieri
 
 From sage-support:
 

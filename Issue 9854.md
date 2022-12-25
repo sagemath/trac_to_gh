@@ -4,6 +4,7 @@ archive/issues_009854.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @vbraun\n\nKeywords: tachyon, raytracing\n\nCurrently the Tachyon object defined in plot3d/tachyon.py does not support projections other than the default.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9855\n\n",
+    "closed_at": "2015-01-02T22:12:30Z",
     "created_at": "2010-09-04T03:13:06Z",
     "labels": [
         "component: graphics",

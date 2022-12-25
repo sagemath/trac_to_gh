@@ -1,16 +1,16 @@
-# Issue 7198: Free Algebra Iteration, needs review
+# Issue 7198: Free Algebra Iteration
 
 archive/issues_007198.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @burcin @saliola @malb\n\nKeywords: free algebra\n\nIteration over free algebra elements and monoid elements\n\nIssue created by migration from https://trac.sagemath.org/ticket/7198\n\n",
+    "closed_at": "2010-01-19T06:14:41Z",
     "created_at": "2009-10-13T10:20:32Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Free Algebra Iteration, needs review",
+    "title": "Free Algebra Iteration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7198",
     "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"

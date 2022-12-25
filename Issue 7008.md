@@ -1,16 +1,17 @@
-# Issue 7008: consolidate in plotting all extraction of variables, ranges, and fast_float setup
+# Issue 7008: [with patch, positive review] consolidate in plotting all extraction of variables, ranges, and fast_float setup
 
 archive/issues_007008.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman @mwhansen @rbeezer @robertwb\n\nCurrently, code for extracting variables, dealing with ranges of variables, and making the functions fast_float is scattered throughout the plotting directory.  There are multiple implementations, each having its own quirks.\n\nThis patch consolidates all of this to two functions in sage.plot.misc and makes all the necessary changes to use this consolidated function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7008\n\n",
+    "closed_at": "2009-09-29T14:53:29Z",
     "created_at": "2009-09-25T04:09:34Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "consolidate in plotting all extraction of variables, ranges, and fast_float setup",
+    "title": "[with patch, positive review] consolidate in plotting all extraction of variables, ranges, and fast_float setup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7008",
     "user": "https://github.com/jasongrout"

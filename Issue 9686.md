@@ -3,7 +3,8 @@
 archive/issues_009686.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9686\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\n**Apply:**\n\n1. [attachment:trac_9686.patch]\n2. [attachment:trac_9686-reviewer.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9686\n\n",
+    "closed_at": "2010-08-09T09:47:03Z",
     "created_at": "2010-08-04T13:38:38Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +19,10 @@ archive/issues_009686.json:
 ```
 Assignee: jason, ncohen, rlm
 
+**Apply:**
 
+1. [attachment:trac_9686.patch]
+2. [attachment:trac_9686-reviewer.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9686
 

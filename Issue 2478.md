@@ -1,16 +1,16 @@
-# Issue 2478: [with patch, needs review] chromatic polynomial revisited
+# Issue 2478: [with patch, positive review] chromatic polynomial revisited
 
 archive/issues_002478.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @robertwb\n\nMake the function effective, instead of really really slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2478\n\n",
+    "closed_at": "2008-03-15T22:32:41Z",
     "created_at": "2008-03-11T23:43:11Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] chromatic polynomial revisited",
+    "title": "[with patch, positive review] chromatic polynomial revisited",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2478",
     "user": "https://github.com/rlmill"

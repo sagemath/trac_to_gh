@@ -4,6 +4,7 @@ archive/issues_006821.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  sage-combinat\n\nKeywords: empty_species.py\n\nThis is a follow-up to #6630. Here, we add the module `sage/combinat/species/empty_species.py` introduced in #6630 to the reference manual and fix some typos left over from #6630.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6821\n\n",
+    "closed_at": "2009-08-25T00:17:09Z",
     "created_at": "2009-08-25T00:08:45Z",
     "labels": [
         "component: documentation"

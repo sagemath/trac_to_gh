@@ -3,7 +3,8 @@
 archive/issues_009169.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [361.6 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n [361.6 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
+    "closed_at": "2013-02-08T13:21:28Z",
     "created_at": "2010-06-07T04:32:34Z",
     "labels": [
         "component: porting: cygwin",
@@ -39,7 +40,7 @@ This results in a doctest file failure:
 sage -t  "devel/sage/sage/misc/cachefunc.py"                
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***
-	 [361.6 s]
+ [361.6 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9169

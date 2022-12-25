@@ -4,6 +4,7 @@ archive/issues_007812.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @jbandlow @nathanncohen\n\nKeywords: bell numbers\n\nFredrick Johansson discusses [here](http://fredrik-j.blogspot.com/2009/03/computing-generalized-bell-numbers.html) his implementation of generalized Bell numbers in mpmath. I've verified that this function is present in the version of mpmath shipped with sage 4.3. Benchmarks show it is faster than GAP (currently used by sage) and even mathematica.  This should be very easy to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7812\n\n",
+    "closed_at": "2013-05-03T08:03:01Z",
     "created_at": "2010-01-02T02:41:55Z",
     "labels": [
         "component: combinatorics"

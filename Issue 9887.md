@@ -3,7 +3,7 @@
 archive/issues_009887.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 45.6 ms per loop\n```\n\n(That's about 4 times slower than Magma, but I can put up with that, that's a ticket for another day.)\n\nHere is the problem:\n\n```\nsage: R = Integers(3^20)\nsage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 877 ms per loop\n```\n\nIn other words, I can multiply the matrices over R roughly 20x faster by multiplying over Z and then reducing! That's ridiculous!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9888\n\n",
+    "body": "Assignee: tbd\n\nKeywords: sd90\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 45.6 ms per loop\n```\n\n(That's about 4 times slower than Magma, but I can put up with that, that's a ticket for another day.)\n\nHere is the problem:\n\n```\nsage: R = Integers(3^20)\nsage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 877 ms per loop\n```\n\nIn other words, I can multiply the matrices over R roughly 20x faster by multiplying over Z and then reducing! That's ridiculous!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9888\n\n",
     "created_at": "2010-09-09T16:21:26Z",
     "labels": [
         "component: performance",
@@ -16,6 +16,8 @@ archive/issues_009887.json:
 }
 ```
 Assignee: tbd
+
+Keywords: sd90
 
 Sage 4.5.3, 2.6GHz Opteron, Linux
 

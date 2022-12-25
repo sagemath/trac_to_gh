@@ -4,6 +4,7 @@ archive/issues_000581.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee http://groups.google.com/group/linbox-use/t/513b47fcedb0f736 for details.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/581\n\n",
+    "closed_at": "2007-09-04T01:52:04Z",
     "created_at": "2007-09-03T16:39:24Z",
     "labels": [
         "component: packages: standard"

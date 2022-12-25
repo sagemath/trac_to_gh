@@ -1,32 +1,35 @@
-# Issue 5751: cartan_type now a method rather than attribute in weyl_characters.py
+# Issue 5751: [with patch, positive review] cartan_type now a method rather than attribute in weyl_characters.py
 
 archive/issues_005751.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nIn connection with #5729 this makes cartan_type a method rather than attribute in weyl_characters.py.\n\nSee cartan_type now a method rather than attribute in weyl_characters.py\n\nBut this patch has a minor conflict with #5721 which is the more important of the two\npatches. So let us get #5721 merged first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5751\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nIn connection with #5729 this makes cartan_type a method rather than attribute in weyl_characters.py.\n\nSee http://groups.google.com/group/sage-combinat-devel/msg/a250953d9a8000f8?hl=en\n\nSee cartan_type now a method rather than attribute in weyl_characters.py\n\nBut this patch has a minor conflict with #5721 which is the more important of the two\npatches. So let us get #5721 merged first. Then I will revise the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5751\n\n",
+    "closed_at": "2009-04-23T05:42:01Z",
     "created_at": "2009-04-11T15:47:37Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "cartan_type now a method rather than attribute in weyl_characters.py",
+    "title": "[with patch, positive review] cartan_type now a method rather than attribute in weyl_characters.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5751",
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: tbd
+Assignee: @dwbump
 
 CC:  sage-combinat
 
 In connection with #5729 this makes cartan_type a method rather than attribute in weyl_characters.py.
 
+See http://groups.google.com/group/sage-combinat-devel/msg/a250953d9a8000f8?hl=en
+
 See cartan_type now a method rather than attribute in weyl_characters.py
 
 But this patch has a minor conflict with #5721 which is the more important of the two
-patches. So let us get #5721 merged first.
+patches. So let us get #5721 merged first. Then I will revise the patch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5751
 

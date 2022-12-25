@@ -1,16 +1,17 @@
-# Issue 2479: RDF polynomial factoring bug
+# Issue 2479: [with patch; with positive review] RDF polynomial factoring bug
 
 archive/issues_002479.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: x = polygen(RDF,'x')\nsage: (-2*x^2 - 1).factor()\n[]\n```\n\ndegree 4?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2479\n\n",
+    "closed_at": "2008-03-12T19:34:24Z",
     "created_at": "2008-03-12T00:49:24Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "RDF polynomial factoring bug",
+    "title": "[with patch; with positive review] RDF polynomial factoring bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2479",
     "user": "https://github.com/williamstein"

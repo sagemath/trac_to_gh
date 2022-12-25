@@ -3,7 +3,8 @@
 archive/issues_009313.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  wstein\n\nThis file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9313\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  wstein\n\nThis file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9313\n\n",
+    "closed_at": "2010-07-20T07:18:07Z",
     "created_at": "2010-06-22T17:11:36Z",
     "labels": [
         "component: elliptic curves",
@@ -22,6 +23,8 @@ Assignee: @JohnCremona
 CC:  wstein
 
 This file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9313
 

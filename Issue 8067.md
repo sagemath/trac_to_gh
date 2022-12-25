@@ -4,9 +4,11 @@ archive/issues_008067.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nMake sure SAGE64=\"yes\" is respected on Open Solaris 64 bit\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/linbox-1.1.6.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/linbox-1.1.6.p3.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8067\n\n",
+    "closed_at": "2010-02-11T15:17:28Z",
     "created_at": "2010-01-25T23:04:06Z",
     "labels": [
-        "component: porting"
+        "component: porting",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New linbox-1.1.6.p3.spkg works with Open Solaris 64 bit",

@@ -1,16 +1,17 @@
-# Issue 3977: [with patch, needs review] get interfaces/octave.py up to 100% coverage
+# Issue 3977: [with patch, positive review] get interfaces/octave.py up to 100% coverage
 
 archive/issues_003977.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3977\n\n",
+    "closed_at": "2008-08-28T23:23:12Z",
     "created_at": "2008-08-28T19:41:27Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] get interfaces/octave.py up to 100% coverage",
+    "title": "[with patch, positive review] get interfaces/octave.py up to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3977",
     "user": "https://github.com/mwhansen"

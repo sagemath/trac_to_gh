@@ -3,7 +3,8 @@
 archive/issues_007856.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7856\n\n",
+    "body": "Assignee: tbd\n\nSee the discussion on #7095.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7856\n\n",
+    "closed_at": "2010-01-13T06:39:02Z",
     "created_at": "2010-01-06T15:01:56Z",
     "labels": [
         "component: packages: standard",
@@ -19,6 +20,7 @@ archive/issues_007856.json:
 ```
 Assignee: tbd
 
+See the discussion on #7095.  
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7856

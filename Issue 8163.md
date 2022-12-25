@@ -4,6 +4,7 @@ archive/issues_008163.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.12.1.spkg, no patches required. \n\nRelease notes: http://wiki.cython.org/ReleaseNotes-0.12.1\n\nIssue created by migration from https://trac.sagemath.org/ticket/8163\n\n",
+    "closed_at": "2010-02-17T00:17:27Z",
     "created_at": "2010-02-03T05:11:01Z",
     "labels": [
         "component: packages: standard"

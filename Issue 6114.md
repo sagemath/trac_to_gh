@@ -1,9 +1,10 @@
-# Issue 6114: symbolics -- fix removal of constants.so
+# Issue 6114: [with patch, positive review] symbolics -- fix removal of constants.so
 
 archive/issues_006114.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n```\nUpgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so\nby hand.\n\n$ rm devel/sage/build/sage/symbolic/constants.so\n\nNow testing.\n\nOn Fedora 9 I'll do a fresh install.\n\n```\n\nI (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6114\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nUpgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so\nby hand.\n\n$ rm devel/sage/build/sage/symbolic/constants.so\n\nNow testing.\n\nOn Fedora 9 I'll do a fresh install.\n\n```\n\nI (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6114\n\n",
+    "closed_at": "2009-05-28T08:04:21Z",
     "created_at": "2009-05-21T18:38:31Z",
     "labels": [
         "component: calculus",
@@ -11,13 +12,13 @@ archive/issues_006114.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "symbolics -- fix removal of constants.so",
+    "title": "[with patch, positive review] symbolics -- fix removal of constants.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6114",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @burcin
+Assignee: @mwhansen
 
 ```
 Upgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so

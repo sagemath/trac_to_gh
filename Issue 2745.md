@@ -1,16 +1,17 @@
-# Issue 2745: upgrade twisted to 8.0.1
+# Issue 2745: [with spkg, positive review] upgrade twisted to 8.0.1
 
 archive/issues_002745.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nA major new version of twisted has been released and I strongly recommend that we upgrade to it for sage-3.0.  There are a ton of new features and many bug fixes. Some specifics that are relevant to dsage are:\n\n- The reactor now has a blockingCallFromThread method for non-reactor threads\n  to use to wait for a reactor-scheduled call to return a result (#1042, #3030)\n- LoopingCall now allows you to specify the reactor to use to schedule new\n  calls, allowing much better testing techniques (#2633, #2634)\n- twisted.python.log now contains a Twisted log observer which can forward\n  messages to the Python logging system (#1351)\n- Log files now include seconds in the timestamps (#867)\n- PB now supports anonymous login (#439, #2312)\n- twisted.spread.jelly now supports decimal objects (#2920)\n- twisted.spread.jelly now supports all forms of sets (#2958)\n\nAlso, this release is easy_install'able. I don't know if we ever use easy_install to install packages or what the thought on it is. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2745\n\n",
+    "closed_at": "2008-04-06T03:24:23Z",
     "created_at": "2008-04-01T00:42:44Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "upgrade twisted to 8.0.1",
+    "title": "[with spkg, positive review] upgrade twisted to 8.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2745",
     "user": "https://github.com/yqiang"

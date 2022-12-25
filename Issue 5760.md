@@ -1,16 +1,17 @@
-# Issue 5760: bring doctest coverage of plot3d/shapes.pyx to 100%
+# Issue 5760: [with patch, positive review] bring doctest coverage of plot3d/shapes.pyx to 100%
 
 archive/issues_005760.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nplot/plot3d/shapes.pyx: 16% (5 of 31)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5760\n\n",
+    "closed_at": "2009-04-13T19:56:21Z",
     "created_at": "2009-04-11T19:04:00Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "bring doctest coverage of plot3d/shapes.pyx to 100%",
+    "title": "[with patch, positive review] bring doctest coverage of plot3d/shapes.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5760",
     "user": "https://github.com/robertwb"

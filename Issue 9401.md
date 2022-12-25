@@ -4,10 +4,10 @@ archive/issues_009401.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @orlitzky wstein @robertwb\n\nKeywords: prime number\n\nThe Pari `isprime` function is able to return a primality\ncertificate:\n\n```\ngp: isprime(2^31-1,1)\n\n[2 3 1]\n\n[3 5 1]\n\n[7 3 1]\n\n[11 3 1]\n\n[31 2 1]\n\n[151 3 1]\n\n[331 3 1]\n```\nHowever when calling this function from Sage, the certificate is\nlost:\n\n```\nsage: pari(2^31-1).isprime(1)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9401\n\n",
+    "closed_at": "2014-03-05T09:36:28Z",
     "created_at": "2010-07-01T08:12:38Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",

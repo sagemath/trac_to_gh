@@ -1,16 +1,17 @@
-# Issue 4389: [with patch, needs review] Sage 3.1.4: optional doctest failure in sage/groups/perm_gps/permgroup.py
+# Issue 4389: [with patch, positive review] Sage 3.1.4: optional doctest failure in sage/groups/perm_gps/permgroup.py
 
 archive/issues_004389.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t -long -optional devel/sage/sage/groups/perm_gps/permgroup.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/permgroup.py\", line 179:\n    sage: H.gens()                            # requires optional database_gap\nExpected:\n    ((1,2,3,4), (1,3))\nGot:\n    [(1,2,3,4), (1,3)]\n**********************************************************************\n```\nThe above is caused by changing the printing of permutations that went into Sage a while ago. The fix is obvious.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4389\n\n",
+    "closed_at": "2008-10-30T05:50:56Z",
     "created_at": "2008-10-30T05:35:08Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Sage 3.1.4: optional doctest failure in sage/groups/perm_gps/permgroup.py",
+    "title": "[with patch, positive review] Sage 3.1.4: optional doctest failure in sage/groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4389",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

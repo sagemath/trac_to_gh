@@ -4,6 +4,7 @@ archive/issues_009066.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jasongrout mvngu @robertwb\n\nplot.plot3d.shapes2.py was a mess, including having several weird helper functions that didn't really need doctests, such as\n\n```\n    def avg(a,b):\n        return (a+b)/2.0\n```\nThis cleans up the situation here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9066\n\n",
+    "closed_at": "2010-07-23T00:10:35Z",
     "created_at": "2010-05-27T15:03:33Z",
     "labels": [
         "component: documentation",

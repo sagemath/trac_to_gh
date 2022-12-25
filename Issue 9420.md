@@ -4,6 +4,7 @@ archive/issues_009420.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill\n\nHello !!\n\nThis patch implements the class SubgraphSearch, which enables one to look for copies of a small graph in a larger one, which is exactly what the method subgraph_search previously did (#8922).\n\nThe code is simply inserted inside a new class, with a few other methods to iterate over the occurences, or to count them !\n\nThis could have been done with a simple \"yield\" in Cython, though we may not want to wait until they are implemented ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9420\n\n",
+    "closed_at": "2010-09-29T08:39:28Z",
     "created_at": "2010-07-03T11:52:09Z",
     "labels": [
         "component: graph theory"

@@ -4,6 +4,7 @@ archive/issues_001981.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nError message:\n\n```\nld.real: FFT.o: relocation R_X86_64_32 against `a local symbol' can not be used when making a shared object; recompile with -fPIC\nFFT.o: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nmake[3]: *** [libntl.so] Error 1\nmake[3]: Leaving directory `/tmp/sage-2.10.1.rc2-hardening-wrapper/spkg/build/ntl-5.4.1.p10/src/src'\nmake[2]: *** [lib] Error 2\nmake[2]: Leaving directory `/tmp/sage-2.10.1.rc2-hardening-wrapper/spkg/build/ntl-5.4.1.p10/src/src'\nError creating ntl shared library.\n```\n\nHow to reproduce (Debian only!):\n\n```\napt-get install hardening-wrapper\nexport DEB_BUILD_HARDENING=1\ncd <SAGE_ROOT>\nmake\n```\n\nSee http://wiki.debian.org/Hardening and http://lists.debian.org/debian-devel-announce/2008/01/msg00006.html for rationale of hardening. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1981\n\n",
+    "closed_at": "2013-06-19T12:21:13Z",
     "created_at": "2008-01-30T10:34:24Z",
     "labels": [
         "component: packages: standard",

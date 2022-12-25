@@ -3,7 +3,8 @@
 archive/issues_009056.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: semiring\n\nAll is in the title, we want :\n\n```\nsage: SemiRings()\nsage: Category of semi rings\nsage: NN = NonNegativeIntegers()\nsage: NN.category()\nCategory of semi rings\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9056\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: semiring\n\nAll is in the title, we want :\n\n```\nsage: Semirings()\nsage: Category of semirings\nsage: NN = NonNegativeIntegerSemiring()\nsage: NN.category()\nJoin of Category of semirings and Category of infinite enumerated sets\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9056\n\n",
+    "closed_at": "2010-06-09T03:30:54Z",
     "created_at": "2010-05-26T14:26:00Z",
     "labels": [
         "component: categories"
@@ -24,11 +25,11 @@ Keywords: semiring
 All is in the title, we want :
 
 ```
-sage: SemiRings()
-sage: Category of semi rings
-sage: NN = NonNegativeIntegers()
+sage: Semirings()
+sage: Category of semirings
+sage: NN = NonNegativeIntegerSemiring()
 sage: NN.category()
-Category of semi rings
+Join of Category of semirings and Category of infinite enumerated sets
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9056

@@ -1,9 +1,10 @@
-# Issue 2401: Docstrings and doctests for rings/integer_ring.pyx
+# Issue 2401: [with patch; needs review] Docstrings and doctests for rings/integer_ring.pyx
 
 archive/issues_002401.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for non-underscore functions in rings/integer_ring.pyx (Current score: 30% (11 of 36))\n\nIssue created by migration from https://trac.sagemath.org/ticket/2401\n\n",
+    "closed_at": "2008-04-02T21:02:45Z",
     "created_at": "2008-03-06T01:18:14Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002401.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Docstrings and doctests for rings/integer_ring.pyx",
+    "title": "[with patch; needs review] Docstrings and doctests for rings/integer_ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2401",
     "user": "https://github.com/cswiercz"

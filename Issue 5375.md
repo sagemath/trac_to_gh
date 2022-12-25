@@ -1,17 +1,18 @@
-# Issue 5375: [with patch, needs review] minor problems with ReST in geometry/lattice_polytope.py
+# Issue 5375: [with patch, positive review] minor problems with ReST in geometry/lattice_polytope.py
 
 archive/issues_005375.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis fixes the few open problems from ticket #4912.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5375\n\n",
+    "closed_at": "2009-02-28T16:24:29Z",
     "created_at": "2009-02-26T00:22:43Z",
     "labels": [
-        "component: geometry",
+        "component: documentation",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] minor problems with ReST in geometry/lattice_polytope.py",
+    "title": "[with patch, positive review] minor problems with ReST in geometry/lattice_polytope.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5375",
     "user": "https://github.com/jhpalmieri"

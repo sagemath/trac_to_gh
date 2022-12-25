@@ -1,26 +1,27 @@
-# Issue 717: sage -t timeout stuff works poorly
+# Issue 717: [With patch, positive review] sage -t timeout stuff works poorly
 
 archive/issues_000717.json:
 ```json
 {
-    "body": "Assignee: failure\n\nIssues:\n1. I can't actually find anywhere in sage-doctest right now where the two alarm codes are actually used, so SAGE should never timeout.  Weird.\n2. It should be easy for users to adjust the timeout, e.g., on slow systems.\n3. \"sage --long\" should automatically have a much longer timeout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/717\n\n",
+    "body": "Assignee: @garyfurnish\n\nIssues:\n1. I can't actually find anywhere in sage-doctest right now where the two alarm codes are actually used, so SAGE should never timeout.  Weird.\n2. It should be easy for users to adjust the timeout, e.g., on slow systems.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/717\n\n",
+    "closed_at": "2008-12-05T07:38:52Z",
     "created_at": "2007-09-20T20:07:28Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "sage -t timeout stuff works poorly",
+    "title": "[With patch, positive review] sage -t timeout stuff works poorly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/717",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: @garyfurnish
 
 Issues:
 1. I can't actually find anywhere in sage-doctest right now where the two alarm codes are actually used, so SAGE should never timeout.  Weird.
 2. It should be easy for users to adjust the timeout, e.g., on slow systems.
-3. "sage --long" should automatically have a much longer timeout.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/717
 

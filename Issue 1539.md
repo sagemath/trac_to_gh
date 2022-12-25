@@ -1,16 +1,18 @@
-# Issue 1539: bdist of sage should include devel/doc
+# Issue 1539: [with patch; positive review] bdist of sage should include devel/doc
 
 archive/issues_001539.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nwstein: note-to-self devel/doc is missing from the bdist.\n[08:33am] wstein: maybe it shouldn't be.\n[08:33am] wstein: I don't know.\n[08:33am] wstein: I think bdist should have it...\n[08:33am] wstein: trac ticket\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1539\n\n",
+    "closed_at": "2008-08-26T09:31:33Z",
     "created_at": "2007-12-16T16:35:16Z",
     "labels": [
         "component: distribution",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bdist of sage should include devel/doc",
+    "title": "[with patch; positive review] bdist of sage should include devel/doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1539",
     "user": "https://github.com/williamstein"

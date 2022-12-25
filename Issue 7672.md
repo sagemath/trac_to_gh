@@ -4,6 +4,7 @@ archive/issues_007672.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe function topological_sort uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7672\n\n",
+    "closed_at": "2011-01-01T13:25:38Z",
     "created_at": "2009-12-12T18:14:14Z",
     "labels": [
         "component: graph theory"

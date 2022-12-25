@@ -1,22 +1,23 @@
-# Issue 2674: Bug in modforms
+# Issue 2674: [with another patch; positive review] Bug in modforms
 
 archive/issues_002674.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nReported by Jay Pottharst <sharlaon`@`gmail.com>:\n\n```\nsage: b=CuspForms(22).basis()\nsage: sum(b)\nTraceback (most recent call last):\n...\nNameError: global name 'other' is not defined\n```\nThis covers up a possibly larger problem:\n\n```\nsage: ssum=0\nsage: for u in b:\n...     ssum=(ssum+u)\n...\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '+': 'Integer Ring' and\n'Cuspidal subspace of dimension 2 of Modular Forms space of dimension\n5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field'\n```\n\nThe first problem is easily fixed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2674\n\n",
+    "body": "Assignee: @craigcitro\n\nReported by Jay Pottharst <sharlaon`@`gmail.com>:\n\n```\nsage: b=CuspForms(22).basis()\nsage: sum(b)\nTraceback (most recent call last):\n...\nNameError: global name 'other' is not defined\n```\nThis covers up a possibly larger problem:\n\n```\nsage: ssum=0\nsage: for u in b:\n...     ssum=(ssum+u)\n...\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '+': 'Integer Ring' and\n'Cuspidal subspace of dimension 2 of Modular Forms space of dimension\n5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field'\n```\n\nThe first problem is easily fixed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2674\n\n",
+    "closed_at": "2008-03-26T23:18:21Z",
     "created_at": "2008-03-26T16:37:12Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Bug in modforms",
+    "title": "[with another patch; positive review] Bug in modforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2674",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 Reported by Jay Pottharst <sharlaon`@`gmail.com>:
 

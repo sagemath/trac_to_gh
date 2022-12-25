@@ -1,16 +1,17 @@
-# Issue 1804: Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption
+# Issue 1804: [with patch, positive review] Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption
 
 archive/issues_001804.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis is LAME:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F*F\nx^6 * y^4\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1804\n\n",
+    "closed_at": "2008-01-21T02:10:09Z",
     "created_at": "2008-01-17T19:52:14Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption",
+    "title": "[with patch, positive review] Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1804",
     "user": "https://github.com/williamstein"

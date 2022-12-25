@@ -4,6 +4,7 @@ archive/issues_006702.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @dimpase\n\nWell known issue, but I thought I'd raise a trac ticket for it. \n\nI don't see this being fixed any time soon. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6702\n\n",
+    "closed_at": "2020-07-15T07:18:41Z",
     "created_at": "2009-08-09T09:19:59Z",
     "labels": [
         "component: porting: solaris",

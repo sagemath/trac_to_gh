@@ -1,24 +1,25 @@
-# Issue 133: Galois action
+# Issue 133: [with patch, positive review] Galois action
 
 archive/issues_000133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Galois group, algebric number theory\n\nIt would be great if something like the following worked:\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: Galois group, algebraic number theory\n\nIt would be great if something like the following worked:\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
+    "closed_at": "2009-06-01T04:43:38Z",
     "created_at": "2006-10-15T16:47:17Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Galois action",
+    "title": "[with patch, positive review] Galois action",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/133",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
-Keywords: Galois group, algebric number theory
+Keywords: Galois group, algebraic number theory
 
 It would be great if something like the following worked:
 

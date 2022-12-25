@@ -4,6 +4,7 @@ archive/issues_003180.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3180\n\n",
+    "closed_at": "2008-08-19T23:35:46Z",
     "created_at": "2008-05-13T11:54:41Z",
     "labels": [
         "component: build",

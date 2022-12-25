@@ -1,9 +1,10 @@
-# Issue 6866: Latex typos in orthogonal_polys.py
+# Issue 6866: [with patch, positive review] Latex typos in orthogonal_polys.py
 
 archive/issues_006866.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: orthogonal polynomials\n\nThere are some LaTeX typos in the reference manual on orthogonal\npolynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6866\n\n",
+    "closed_at": "2009-09-03T08:15:55Z",
     "created_at": "2009-09-02T15:54:21Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006866.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Latex typos in orthogonal_polys.py",
+    "title": "[with patch, positive review] Latex typos in orthogonal_polys.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6866",
     "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"

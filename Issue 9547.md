@@ -3,10 +3,11 @@
 archive/issues_009547.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n```\nsage: var('x') * Infinity\n+Infinity\n```\n\nThis is not right; x could represent something non-positive.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9547\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\n```\nsage: var('x') * Infinity\n+Infinity\n```\n\nThis is not right; x could represent something non-positive.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9547\n\n",
+    "closed_at": "2012-07-04T07:23:50Z",
     "created_at": "2010-07-19T08:25:53Z",
     "labels": [
-        "component: algebra",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009547.json:
     "user": "https://github.com/fredrik-johansson"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  @kcrisman
 

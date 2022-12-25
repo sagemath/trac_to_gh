@@ -1,15 +1,16 @@
-# Issue 6568: Migrate Notebook to Jinja
+# Issue 6568: [with patch, positive review] Migrate Notebook to Jinja
 
 archive/issues_006568.json:
 ```json
 {
-    "body": "Assignee: @TimDumol\n\nCC:  @jasongrout\n\nKeywords: notebook, jinja,templating engine\n\nJinja is a templating engine based on Django's. It's already included\nin Sage due to the inclusion of Sphinx. Migrating from HTML to\ntemplates should make it easier to make future changes to the code,\nand make things easier to read.\n\nAdditionally, this will give us the option of switching to a web framework such as Django.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6568\n\n",
+    "body": "Assignee: @TimDumol\n\nCC:  @jasongrout\n\nKeywords: notebook, jinja, templating engine\n\nJinja is a templating engine based on Django's. It's already included\nin Sage due to the inclusion of Sphinx. Migrating from HTML to\ntemplates should make it easier to make future changes to the code,\nand make things easier to read.\n\nAdditionally, this will give us the option of switching to a web framework such as Django.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6568\n\n",
+    "closed_at": "2009-08-30T11:32:22Z",
     "created_at": "2009-07-20T13:50:24Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Migrate Notebook to Jinja",
+    "title": "[with patch, positive review] Migrate Notebook to Jinja",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6568",
     "user": "https://github.com/TimDumol"
@@ -19,7 +20,7 @@ Assignee: @TimDumol
 
 CC:  @jasongrout
 
-Keywords: notebook, jinja,templating engine
+Keywords: notebook, jinja, templating engine
 
 Jinja is a templating engine based on Django's. It's already included
 in Sage due to the inclusion of Sphinx. Migrating from HTML to

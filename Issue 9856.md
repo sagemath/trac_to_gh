@@ -4,6 +4,7 @@ archive/issues_009856.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @mwhansen mvngu @haraldschilly\n\nKeywords: biopython\n\nBiopython is actively maintained and this latest release comes closer to supporting python 3.0.  It also improves some command-line utilities and other miscellaneous improvements.\n\nAn spkg is available at:\nhttp://sage.math.washington.edu/home/mhampton/biopython-1.55.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9857\n\n",
+    "closed_at": "2010-09-28T09:50:58Z",
     "created_at": "2010-09-04T20:31:05Z",
     "labels": [
         "component: packages: optional"

@@ -1,16 +1,17 @@
-# Issue 3105: [with patch, needs review]  new  _latex_  and modified  __repr__  for elements of relative number fields
+# Issue 3105: [with patch, positive review]  new  _latex_  and modified  __repr__  for elements of relative number fields
 
 archive/issues_003105.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  f.clarke@swansea.ac.uk\n\nPatch by Francis Clarke. He should fill in the details once his new trac account works.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3105\n\n",
+    "closed_at": "2008-05-06T09:37:21Z",
     "created_at": "2008-05-05T12:56:27Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review]  new  _latex_  and modified  __repr__  for elements of relative number fields",
+    "title": "[with patch, positive review]  new  _latex_  and modified  __repr__  for elements of relative number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3105",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

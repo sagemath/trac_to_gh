@@ -1,9 +1,10 @@
-# Issue 5780: [with patch; needs review] plotting -- deal with NaN's in plot range
+# Issue 5780: [with patch; positive review] plotting -- deal with NaN's in plot range
 
 archive/issues_005780.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5780\n\n",
+    "closed_at": "2009-04-15T23:18:35Z",
     "created_at": "2009-04-13T20:13:41Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005780.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] plotting -- deal with NaN's in plot range",
+    "title": "[with patch; positive review] plotting -- deal with NaN's in plot range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5780",
     "user": "https://github.com/williamstein"

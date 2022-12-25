@@ -4,6 +4,7 @@ archive/issues_007949.json:
 ```json
 {
     "body": "Assignee: spancratz\n\nKeywords: bit shift, integer mod ring\n\nCurrently, some code for bit-shifts in Z/(n) looks like\n\n```\n    def __lshift__(IntegerMod_gmp self, int right):\n        ...\n        cdef IntegerMod_gmp x\n        x = self._new_c()\n        mpz_mul_2exp(x.value, self.value, right)\n        mpz_fdiv_r(x.value, x.value, self.__modulus.sageInteger.value)\n        return x\n```\n\nwhere the method ``mpz_mul_2exp`` expect an ``unsigned long``.  Negative values of ``right`` thus cause undesired integral promotion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7949\n\n",
+    "closed_at": "2010-01-22T21:36:28Z",
     "created_at": "2010-01-16T17:43:34Z",
     "labels": [
         "component: basic arithmetic",

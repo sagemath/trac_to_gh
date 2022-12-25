@@ -3,10 +3,11 @@
 archive/issues_009826.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nReported by Justin C. Walker on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/4327cb6c3f565890#4327cb6c3f565890) (scroll down the thread for replies):\n\n```\nUpgraded from 4.5.3.a1, w/o problems.  Ran 'ptestlong', and one test failed.  Failure noted below.  I reran the test by hand and it passed.  Mac OS X, 10.5.8, Dual Quad Xeon.\n```\n\n```python\nsage -t  -long devel/sage/sage/interfaces/psage.py\n**********************************************************************\nFile \"/Users/Sage/sage-4.5.3.alpha1/devel/sage-main/sage/interfaces/psage.py\", line 35:\n     sage: print \"ignore this\";  w       # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n         self.run_one_example(test, example, filename, compileflags)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n         print \"ignore this\";  w       # random output###line 35:\n     sage: print \"ignore this\";  w       # random output\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n         print_obj(sys.stdout, obj)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n         print >>out_stream, `obj`\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1670, in __repr__\n         s =  s.replace(self._name, self.__dict__['__custom_name'])\n     KeyError: '__custom_name' \n```\n\nSee [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.  The problem may be in `SAGE_LOCAL/bin/sage-test` and/or `sage-doctest`.\n\nDistantly related: #1991.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9827\n\n",
+    "body": "Assignee: @williamstein\n\nThis happens sometimes:\n\n```python\nsage -t --long devel/sage/sage/interfaces/psage.py\n**********************************************************************\nFile \"devel/sage/sage/interfaces/psage.py\", line 37, in sage.interfaces.psage\nFailed example:\n    w       # long time, random output\nException raised:\n    Traceback (most recent call last):\n      File \"/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 466, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 825, in execute\n        exec compiled in globs\n      File \"<doctest sage.interfaces.psage[3]>\", line 1, in <module>\n        w       # long time, random output\n      File \"/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/misc/displayhook.py\", line 201, in __call__\n        self.oldhook(obj)\n      File \"/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 880, in __repr__\n        s =  s.replace(self._name, self.__dict__['__custom_name'])\n    KeyError: '__custom_name'\n**********************************************************************\n```\n\nSee [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.\n\nDistantly related: #1991.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9827\n\n",
+    "closed_at": "2014-10-23T11:17:01Z",
     "created_at": "2010-08-28T00:15:05Z",
     "labels": [
-        "component: doctest",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,40 +17,33 @@ archive/issues_009826.json:
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: mvngu
+Assignee: @williamstein
 
-Reported by Justin C. Walker on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/4327cb6c3f565890#4327cb6c3f565890) (scroll down the thread for replies):
-
-```
-Upgraded from 4.5.3.a1, w/o problems.  Ran 'ptestlong', and one test failed.  Failure noted below.  I reran the test by hand and it passed.  Mac OS X, 10.5.8, Dual Quad Xeon.
-```
+This happens sometimes:
 
 ```python
-sage -t  -long devel/sage/sage/interfaces/psage.py
+sage -t --long devel/sage/sage/interfaces/psage.py
 **********************************************************************
-File "/Users/Sage/sage-4.5.3.alpha1/devel/sage-main/sage/interfaces/psage.py", line 35:
-     sage: print "ignore this";  w       # random output
+File "devel/sage/sage/interfaces/psage.py", line 37, in sage.interfaces.psage
+Failed example:
+    w       # long time, random output
 Exception raised:
-     Traceback (most recent call last):
-       File "/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py", line 1231, in run_one_test
-         self.run_one_example(test, example, filename, compileflags)
-       File "/Users/Sage/sage-4.5.3.alpha1/local/bin/sagedoctest.py", line 38, in run_one_example
-         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
-       File "/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py", line 1172, in run_one_example
-         compileflags, 1) in test.globs
-       File "<doctest __main__.example_0[5]>", line 1, in <module>
-         print "ignore this";  w       # random output###line 35:
-     sage: print "ignore this";  w       # random output
-       File "/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py", line 174, in displayhook
-         print_obj(sys.stdout, obj)
-       File "/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py", line 142, in print_obj
-         print >>out_stream, `obj`
-       File "/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/interfaces/expect.py", line 1670, in __repr__
-         s =  s.replace(self._name, self.__dict__['__custom_name'])
-     KeyError: '__custom_name' 
+    Traceback (most recent call last):
+      File "/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/doctest/forker.py", line 466, in _run
+        self.execute(example, compiled, test.globs)
+      File "/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/doctest/forker.py", line 825, in execute
+        exec compiled in globs
+      File "<doctest sage.interfaces.psage[3]>", line 1, in <module>
+        w       # long time, random output
+      File "/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/misc/displayhook.py", line 201, in __call__
+        self.oldhook(obj)
+      File "/release/buildbot/sage/sage-1/sage_upgrade_4.8/build/sage-5.9.beta4/local/lib/python2.7/site-packages/sage/interfaces/interface.py", line 880, in __repr__
+        s =  s.replace(self._name, self.__dict__['__custom_name'])
+    KeyError: '__custom_name'
+**********************************************************************
 ```
 
-See [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.  The problem may be in `SAGE_LOCAL/bin/sage-test` and/or `sage-doctest`.
+See [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.
 
 Distantly related: #1991.
 

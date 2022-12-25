@@ -1,16 +1,17 @@
-# Issue 3639: [witch patch, needs review] reenable dsage doctesting
+# Issue 3639: [with patch, needs review] reenable dsage doctesting
 
 archive/issues_003639.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch needs to be applied to reenable dsage doctesting. It depends on #3600 getting merged in first. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3639\n\n",
+    "closed_at": "2008-12-11T15:46:16Z",
     "created_at": "2008-07-11T03:10:12Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[witch patch, needs review] reenable dsage doctesting",
+    "title": "[with patch, needs review] reenable dsage doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3639",
     "user": "https://github.com/yqiang"

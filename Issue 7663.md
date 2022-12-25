@@ -1,16 +1,17 @@
-# Issue 7663: notebook -- synchronization code surprises printing of certain characters
+# Issue 7663: notebook -- synchronization code suppresses printing of certain characters
 
 archive/issues_007663.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n``` \nThis is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the\nlast characters of output after evaluating a cell are supressed. I've\ntried all of string.printable: the only characters supressed are \"S\",\n\"A\", \"G\", \"E\" and \"_\". No kidding.\n Just try:\n\nprint \"ASAVFDBAAGGG___EEESS\"\n///\nASAVFDB\n\n\nprint \"ASAVFDBAAGGG___EEESS.\"\n///\nASAVFDBAAGGG___EEESS.\n\n Is this a private joke or an amazing coincidence?\n\n Regards\nPablo\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7663\n\n",
+    "closed_at": "2010-01-19T03:28:21Z",
     "created_at": "2009-12-11T15:13:24Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "notebook -- synchronization code surprises printing of certain characters",
+    "title": "notebook -- synchronization code suppresses printing of certain characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7663",
     "user": "https://github.com/williamstein"

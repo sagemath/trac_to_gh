@@ -6,8 +6,7 @@ archive/issues_005506.json:
     "body": "Assignee: @williamstein\n\nCC:  @eviatarbach\n\nWe really should make symbolic vectors a subclass of the generic free modules.  That way we can have a .args() function, a variables function, and a few other functions that make sense for symbolic vectors, but maybe not for arbitrary vectors.\n\nWe can also make them callable, so vector-valued functions work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5506\n\n",
     "created_at": "2009-03-12T23:07:38Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "symbolic vectors class",

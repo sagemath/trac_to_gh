@@ -1,9 +1,10 @@
-# Issue 848: Using strings for infinity
+# Issue 848: [with patch, positive review] Using strings for infinity
 
 archive/issues_000848.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nsage/gsl/integration.pyx uses the strings 'inf' and '-inf' rather than the infinity element for its bounds. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/848\n\n",
+    "closed_at": "2008-04-14T23:56:26Z",
     "created_at": "2007-10-11T09:02:45Z",
     "labels": [
         "component: numerical",
@@ -11,7 +12,7 @@ archive/issues_000848.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Using strings for infinity",
+    "title": "[with patch, positive review] Using strings for infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/848",
     "user": "https://github.com/robertwb"

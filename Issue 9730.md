@@ -3,7 +3,7 @@
 archive/issues_009730.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: RC4, Cryptosystem, Cipher\n\nThis is a standard RC4 implementation in the Cryptography directory for Sage. We do not consider advanced criteria to initialize the state bytearray, and hence this system may be prone to attacks (refer to relevant literature).\n\nThough this is not fully secure (upto industry standard), this is a full-version implementation of the cipher, and can be used for educational purpose as well as for small-scale encryptions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9730\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: RC4, Cryptosystem, Cipher\n\nThis is a standard RC4 implementation in the Cryptography directory for Sage. We do not consider advanced criteria to initialize the state bytearray, and hence this system may be prone to attacks (refer to relevant literature).\n\nThough this is not fully secure (upto industry standard), this is a full-version implementation of the cipher, and can be used for educational purpose as well as for small-scale encryptions.\n\nApply:\n* [attachment:rc4_mod1.patch]\n* [attachment:trac_9730_addon.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9730\n\n",
     "created_at": "2010-08-11T21:55:35Z",
     "labels": [
         "component: cryptography",
@@ -22,6 +22,10 @@ Keywords: RC4, Cryptosystem, Cipher
 This is a standard RC4 implementation in the Cryptography directory for Sage. We do not consider advanced criteria to initialize the state bytearray, and hence this system may be prone to attacks (refer to relevant literature).
 
 Though this is not fully secure (upto industry standard), this is a full-version implementation of the cipher, and can be used for educational purpose as well as for small-scale encryptions.
+
+Apply:
+* [attachment:rc4_mod1.patch]
+* [attachment:trac_9730_addon.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9730
 

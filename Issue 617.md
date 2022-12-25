@@ -3,7 +3,8 @@
 archive/issues_000617.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSegfault on new doctest\n\nIssue created by migration from https://trac.sagemath.org/ticket/617\n\n",
+    "body": "Assignee: @robertwb\n\nSegfault on new doctest\n\nIssue created by migration from https://trac.sagemath.org/ticket/617\n\n",
+    "closed_at": "2007-09-07T17:35:12Z",
     "created_at": "2007-09-07T09:15:47Z",
     "labels": [
         "component: algebraic geometry",
@@ -17,7 +18,7 @@ archive/issues_000617.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Segfault on new doctest
 

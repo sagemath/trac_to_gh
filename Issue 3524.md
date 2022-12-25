@@ -3,11 +3,12 @@
 archive/issues_003524.json:
 ```json
 {
-    "body": "Assignee: ghtdak\n\nCC:  @mwhansen mvngu drkirkby @nexttime @jdemeyer @kini\n\nIn general, buildbot can be nasty in that its hugely configurable.  However, there's the \"shellcommand\" element which can do just about anything.\n\nTo start, we could shell getting the tarball, unwind it, make and make test.  As time progresses we could get fancier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3524\n\n",
+    "body": "Assignee: ghtdak\n\nCC:  @mwhansen mvngu drkirkby @nexttime @jdemeyer @kini\n\n[Buildbot](http://buildbot.net/) is a [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) system for software projects.\n\nLinks:\n\n* [Buildbot manual](http://buildbot.net/buildbot/docs/current/)\n* [Buildbot API reference](http://buildbot.net/buildbot/docs/current/reference/)\n* [Projects using Buildbot](http://buildbot.net/trac/wiki/SuccessStories)\n* [Set up password-protection for the \"Force Build\" and other buttons](http://agile.idyll.org/wiki/BuildbotConfiguration)\n\nAlternatives:\n\n* [Bitten](http://bitten.edgewall.org/)\n* [CDash](http://www.cdash.org/)\n* [Hudson](http://hudson-ci.org/)\n* [others](http://en.wikipedia.org/wiki/Comparison_of_Continuous_Integration_Software)\n\nImportant relevant tickets: #8677, #9433, #9739, #9799, #9811, #9876, #10040.\nWe also need to speed up t2's ATLAS build (cf. #4949, #6705, #9780).\n\nSee [this page](http://boxen.math.washington.edu/buildbots/) for Sage-related Buildbots. [TODO](http://boxen.math.washington.edu/home/buildbot/TODO) for the Sage Buildbot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3524\n\n",
+    "closed_at": "2012-05-21T08:05:39Z",
     "created_at": "2008-06-27T23:58:11Z",
     "labels": [
-        "component: distribution",
-        "minor"
+        "component: build",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Buildbot",
@@ -20,9 +21,26 @@ Assignee: ghtdak
 
 CC:  @mwhansen mvngu drkirkby @nexttime @jdemeyer @kini
 
-In general, buildbot can be nasty in that its hugely configurable.  However, there's the "shellcommand" element which can do just about anything.
+[Buildbot](http://buildbot.net/) is a [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) system for software projects.
 
-To start, we could shell getting the tarball, unwind it, make and make test.  As time progresses we could get fancier.
+Links:
+
+* [Buildbot manual](http://buildbot.net/buildbot/docs/current/)
+* [Buildbot API reference](http://buildbot.net/buildbot/docs/current/reference/)
+* [Projects using Buildbot](http://buildbot.net/trac/wiki/SuccessStories)
+* [Set up password-protection for the "Force Build" and other buttons](http://agile.idyll.org/wiki/BuildbotConfiguration)
+
+Alternatives:
+
+* [Bitten](http://bitten.edgewall.org/)
+* [CDash](http://www.cdash.org/)
+* [Hudson](http://hudson-ci.org/)
+* [others](http://en.wikipedia.org/wiki/Comparison_of_Continuous_Integration_Software)
+
+Important relevant tickets: #8677, #9433, #9739, #9799, #9811, #9876, #10040.
+We also need to speed up t2's ATLAS build (cf. #4949, #6705, #9780).
+
+See [this page](http://boxen.math.washington.edu/buildbots/) for Sage-related Buildbots. [TODO](http://boxen.math.washington.edu/home/buildbot/TODO) for the Sage Buildbot.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3524
 

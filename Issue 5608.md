@@ -3,7 +3,8 @@
 archive/issues_005608.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nsage.functions.constants.Merten is named wrongly, as the mathematician's name is Franz Mertens and not Merten. The class and default instance should be renamed and \"Merten constant\" and \"Merten's second theorem\" in the docstring should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5608\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: documentation, typo\n\nsage.functions.constants.Merten is named wrongly, as the mathematician's name is Franz Mertens and not Merten. The class and default instance should be renamed and \"Merten constant\" and \"Merten's second theorem\" in the docstring should be fixed.\n\nThis ticket **removes** the \"merten\" function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5608\n\n",
+    "closed_at": "2013-09-02T10:21:04Z",
     "created_at": "2009-03-25T12:56:31Z",
     "labels": [
         "component: misc",
@@ -19,7 +20,11 @@ archive/issues_005608.json:
 ```
 Assignee: cwitty
 
+Keywords: documentation, typo
+
 sage.functions.constants.Merten is named wrongly, as the mathematician's name is Franz Mertens and not Merten. The class and default instance should be renamed and "Merten constant" and "Merten's second theorem" in the docstring should be fixed.
+
+This ticket **removes** the "merten" function.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5608
 

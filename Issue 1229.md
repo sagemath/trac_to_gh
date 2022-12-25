@@ -3,7 +3,8 @@
 archive/issues_001229.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nFile \"calculus.py\", line 209:\n     sage: expand((x+y)^3)\nExpected:\n     y^3 + 3*x*y^2 + 3*x^2*y + x^3\nGot:\n     x^6 + 3*x^5 + 3*x^4 + x^3\n```\nThis is likely fallout from #1215.\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1229\n\n",
+    "body": "Assignee: mabshoff\n\n```\nFile \"calculus.py\", line 209:\n     sage: expand((x+y)^3)\nExpected:\n     y^3 + 3*x*y^2 + 3*x^2*y + x^3\nGot:\n     x^6 + 3*x^5 + 3*x^4 + x^3\n```\nThis is likely fallout from #1215.\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1229\n\n",
+    "closed_at": "2007-11-21T13:01:01Z",
     "created_at": "2007-11-20T23:06:20Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +18,7 @@ archive/issues_001229.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 ```
 File "calculus.py", line 209:

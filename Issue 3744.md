@@ -1,16 +1,17 @@
-# Issue 3744: Coercion between isomorphic parents should result in an element of the left operand's parent
+# Issue 3744: [with patch, positive review] Coercion between isomorphic parents should result in an element of the left operand's parent
 
 archive/issues_003744.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nThis is in accordance with the programming guide. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3744\n\n",
+    "closed_at": "2008-08-14T23:49:53Z",
     "created_at": "2008-07-30T05:00:58Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Coercion between isomorphic parents should result in an element of the left operand's parent",
+    "title": "[with patch, positive review] Coercion between isomorphic parents should result in an element of the left operand's parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3744",
     "user": "https://github.com/robertwb"

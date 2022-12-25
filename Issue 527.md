@@ -4,9 +4,11 @@ archive/issues_000527.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe gap workspace cache should be invalidated not only when the version of gap changes but when the\nspkg version number changes.  This very important. \n\nIssue created by migration from https://trac.sagemath.org/ticket/527\n\n",
+    "closed_at": "2007-11-03T19:22:59Z",
     "created_at": "2007-08-30T06:49:55Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "gap -- gap_reset_workspace()",

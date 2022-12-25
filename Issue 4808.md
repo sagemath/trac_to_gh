@@ -1,15 +1,16 @@
-# Issue 4808: [with patch, needs work] Move HTML for Worksheets to template
+# Issue 4808: Move HTML for Worksheets to template
 
 archive/issues_004808.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @mwhansen mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4808\n\n",
+    "closed_at": "2009-10-06T20:04:16Z",
     "created_at": "2008-12-16T05:20:45Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs work] Move HTML for Worksheets to template",
+    "title": "Move HTML for Worksheets to template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4808",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

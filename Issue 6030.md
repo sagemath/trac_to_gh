@@ -1,22 +1,23 @@
-# Issue 6030: Bring plot/circle.py to 100% coverage
+# Issue 6030: [with patch, positive review] Bring plot/circle.py to 100% coverage
 
 archive/issues_006030.json:
 ```json
 {
-    "body": "Assignee: tba\n\nBring plot/circle.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6030\n\n",
+    "body": "Assignee: @kcrisman\n\nBring plot/circle.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6030\n\n",
+    "closed_at": "2009-05-15T07:55:23Z",
     "created_at": "2009-05-12T16:06:29Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring plot/circle.py to 100% coverage",
+    "title": "[with patch, positive review] Bring plot/circle.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6030",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tba
+Assignee: @kcrisman
 
 Bring plot/circle.py to 100% coverage.
 

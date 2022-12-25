@@ -4,6 +4,7 @@ archive/issues_005299.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5299\n\n",
+    "closed_at": "2013-07-23T14:21:05Z",
     "created_at": "2009-02-17T23:44:26Z",
     "labels": [
         "component: misc",

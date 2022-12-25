@@ -4,9 +4,10 @@ archive/issues_006942.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nKeywords: jordan_form, transformation\n\nThe following code returns an incorrect result:\n\n```\nmm=Matrix(GF(2),[[1,0,1,0,0,0,1],[1,0,0,1,1,1,0],[1,1,0,1,1,1,1],[1,1,1,0,1,1,1],[1,1,1,0,0,1,0],[1,1,1,0,1,0,0],[1,1,1,1,1,1,0]])\n_,S = mm.jordan_form(transformation=True)\nS.rank()\n```\nS should be invertible, so the rank should be 7, but the rank of the above is 5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6942\n\n",
+    "closed_at": "2010-02-11T14:33:05Z",
     "created_at": "2009-09-16T01:35:43Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "critical",
         "bug"
     ],

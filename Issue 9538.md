@@ -4,6 +4,7 @@ archive/issues_009538.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @nbruin\n\nKeywords: roots, side effect\n\nConsider the following with Sage 4.4.4:\n\n```\nsage: var('a6,a5,a4,x')\n(a6, a5, a4, x)\nsage: e=15*a6*x^2 + 5*a5*x + a4\nsage: e.roots(x)\n[(-1/30*(sqrt(-12*a4*a6 + 5*a5^2)*sqrt(5) + 5*a5)/a6, 1), (1/30*(sqrt(-12*a4*a6 + 5*a5^2)*sqrt(5) - 5*a5)/a6, 1)]\n```\nThis is fine. However:\n\n```\nsage: var('f6,f5,f4,x')\n(f6, f5, f4, x)\nsage: e=15*f6*x^2 + 5*f5*x + f4\nsage: e.roots(x)\n[(1/30*(-I*sqrt(35) - 5)/binomial(n, k), 1), (1/30*(I*sqrt(35) - 5)/binomial(n, k), 1)]\n```\nWTF???\n\nIssue created by migration from https://trac.sagemath.org/ticket/9538\n\n",
+    "closed_at": "2010-10-04T02:48:22Z",
     "created_at": "2010-07-18T15:42:05Z",
     "labels": [
         "component: calculus",

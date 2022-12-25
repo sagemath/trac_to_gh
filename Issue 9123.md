@@ -1,15 +1,16 @@
-# Issue 9123: implement Schur algebras using AlgebrasWithBasis
+# Issue 9123: implement Schur algebras and use them to determine irreducible characters for GL_n
 
 archive/issues_009123.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  quantumking\n\nSchur algebras are algebras with basis used in the description of the representation theory of GL_n.  I'd like to implement them.  \n\nA nice reference is Chapter 2 of Green's book \"Polynomial representations of GL_n\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9123\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  quantumking\n\nKeywords: days30, schur\n\nSchur algebras are used in the description of the representation theory of GL_n.  I plan to implement them, and use them to calculate the characters of the irreducible modules of GL_n (in characteristic p).  \n\nA nice reference is Green's book \"Polynomial representations of GL_n\".\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9123\n\n",
+    "closed_at": "2015-05-03T12:06:44Z",
     "created_at": "2010-06-03T04:08:56Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",
-    "title": "implement Schur algebras using AlgebrasWithBasis",
+    "title": "implement Schur algebras and use them to determine irreducible characters for GL_n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9123",
     "user": "https://github.com/hughrthomas"
@@ -19,9 +20,13 @@ Assignee: @aghitza
 
 CC:  quantumking
 
-Schur algebras are algebras with basis used in the description of the representation theory of GL_n.  I'd like to implement them.  
+Keywords: days30, schur
 
-A nice reference is Chapter 2 of Green's book "Polynomial representations of GL_n".
+Schur algebras are used in the description of the representation theory of GL_n.  I plan to implement them, and use them to calculate the characters of the irreducible modules of GL_n (in characteristic p).  
+
+A nice reference is Green's book "Polynomial representations of GL_n".
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9123
 

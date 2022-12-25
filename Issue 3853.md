@@ -1,22 +1,23 @@
-# Issue 3853: [with patch, needs review] plot.py improvements part 1: Remove all factories
+# Issue 3853: [with patch, positive review] plot.py improvements part 1: Remove all factories
 
 archive/issues_003853.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  anakha @jasongrout\n\nI replaced all of the factories with individual functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3853\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  anakha @jasongrout\n\nI replaced all of the factories with individual functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3853\n\n",
+    "closed_at": "2008-08-26T03:44:45Z",
     "created_at": "2008-08-14T17:56:23Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] plot.py improvements part 1: Remove all factories",
+    "title": "[with patch, positive review] plot.py improvements part 1: Remove all factories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3853",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  anakha @jasongrout
 

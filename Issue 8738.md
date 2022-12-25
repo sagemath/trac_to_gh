@@ -4,6 +4,7 @@ archive/issues_008738.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nTry this interact:\n\n```\n@interact\ndef f(M = (\"matrix \", random_matrix(QQ,3,4)), n=(\"an int\", 5)):\n    print \"The echelon form of the above matrix is:\"\n    print M.echelon_form()\n```\n\nThe first input control should be labeled \"matrix\", but it isn't.  Whoever added the matrix control for `@`interact, somehow did it in a way that breaks control labels. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8738\n\n",
+    "closed_at": "2015-01-13T01:22:33Z",
     "created_at": "2010-04-21T17:05:43Z",
     "labels": [
         "component: notebook",

@@ -1,16 +1,16 @@
-# Issue 6855: [with patch, needs work] Enable interacts in published worksheets
+# Issue 6855: Embed live cells in external web pages
 
 archive/issues_006855.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nWorksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.\n\nPlease visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).\n\nCurrently, `interact` cells do not work in published worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6855\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nA Sage Embed API, for loading cells or worksheets easily in external web pages, could be useful.  For example,\n\n```text/html\n<html>\n  <head>\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/>\n    <title>Sage Embed API demo</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"sage_embed.css\" />\n    <script src=\"sage_embed.js\"></script>\n    <script>\n```\n\n```js\n      var initialize = function () {\n          var cell = new SageCell(); // empty by default\n          cell.init(document.getElementById('cell1'));\n\n          var ws = new SageWorksheet();\n          ws.load('http://sagenb.org/url/to/worksheet/');\n          ws.init(document.getElementById('worksheet1'));\n      };\n```\n\n```text/html\n    </script>\n  </head>\n  <body onload=\"initialize();\">\n    <div id=\"cell1\" style=\"height: 10.0em; width: 20.0em;\"></div>\n    Blah, blah, blah.\n    <div id=\"worksheet1\" style=\"height: 600px; width: 100%;\"></div>\n  </body>\n</html>\n```\nSee, e.g., the [Google Wave Embed API](http://code.google.com/apis/wave/embed/guide.html) for inspiration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6855\n\n",
+    "closed_at": "2014-09-18T17:57:44Z",
     "created_at": "2009-09-01T12:31:09Z",
     "labels": [
-        "component: notebook",
-        "minor"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs work] Enable interacts in published worksheets",
+    "title": "Embed live cells in external web pages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6855",
     "user": "https://github.com/qed777"
@@ -20,11 +20,40 @@ Assignee: boothby
 
 CC:  @williamstein
 
-Worksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.
+A Sage Embed API, for loading cells or worksheets easily in external web pages, could be useful.  For example,
 
-Please visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).
+```text/html
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Sage Embed API demo</title>
+    <link rel="stylesheet" type="text/css" href="sage_embed.css" />
+    <script src="sage_embed.js"></script>
+    <script>
+```
 
-Currently, `interact` cells do not work in published worksheets.
+```js
+      var initialize = function () {
+          var cell = new SageCell(); // empty by default
+          cell.init(document.getElementById('cell1'));
+
+          var ws = new SageWorksheet();
+          ws.load('http://sagenb.org/url/to/worksheet/');
+          ws.init(document.getElementById('worksheet1'));
+      };
+```
+
+```text/html
+    </script>
+  </head>
+  <body onload="initialize();">
+    <div id="cell1" style="height: 10.0em; width: 20.0em;"></div>
+    Blah, blah, blah.
+    <div id="worksheet1" style="height: 600px; width: 100%;"></div>
+  </body>
+</html>
+```
+See, e.g., the [Google Wave Embed API](http://code.google.com/apis/wave/embed/guide.html) for inspiration.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6855
 

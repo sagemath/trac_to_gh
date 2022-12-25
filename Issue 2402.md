@@ -1,22 +1,23 @@
-# Issue 2402: there should be a hg_examples mercurial wrapper for the examples repository
+# Issue 2402: [with patch, positive review] there should be a hg_examples mercurial wrapper for the examples repository
 
 archive/issues_002402.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nLike the summary says, there should be a hg_examples mercurial wrapper for the examples repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2402\n\n",
+    "body": "Assignee: @mwhansen\n\nLike the summary says, there should be a hg_examples mercurial wrapper for the examples repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2402\n\n",
+    "closed_at": "2009-01-24T13:15:16Z",
     "created_at": "2008-03-06T02:14:31Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "there should be a hg_examples mercurial wrapper for the examples repository",
+    "title": "[with patch, positive review] there should be a hg_examples mercurial wrapper for the examples repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2402",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Like the summary says, there should be a hg_examples mercurial wrapper for the examples repository.
 

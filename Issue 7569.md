@@ -3,7 +3,8 @@
 archive/issues_007569.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  abmasse\n\nIn many algorithms we want to find a random vertex or a random edge in a graph. It is also very often required to find, given a vertex, one edge adjacent to it ( for example in depth first or breadth first search ).\n\nThis should be possible easily, and most importantly efficiently ( if possible, directly written in C ) as DFS and BFS are very slow when written in python ( same problem with Floyd Warshall for all_pairs_shortest_path and networkX's distance function )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7569\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  abmasse\n\nIn many algorithms we want to find a random vertex or a random edge in a graph. \n\nHere it is !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7569\n\n",
+    "closed_at": "2010-04-15T05:59:42Z",
     "created_at": "2009-12-01T10:15:12Z",
     "labels": [
         "component: graph theory"
@@ -19,9 +20,11 @@ Assignee: @rlmill
 
 CC:  abmasse
 
-In many algorithms we want to find a random vertex or a random edge in a graph. It is also very often required to find, given a vertex, one edge adjacent to it ( for example in depth first or breadth first search ).
+In many algorithms we want to find a random vertex or a random edge in a graph. 
 
-This should be possible easily, and most importantly efficiently ( if possible, directly written in C ) as DFS and BFS are very slow when written in python ( same problem with Floyd Warshall for all_pairs_shortest_path and networkX's distance function )
+Here it is !
+
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/7569
 

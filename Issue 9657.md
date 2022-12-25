@@ -3,11 +3,12 @@
 archive/issues_009657.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @dimpase @jaapspies @qed777\n\nThere's a problem with cvxopt not building on gcc versions 4.5.0 or later. This has become especially critical lately, as only gcc 4.5.0 is available on Skynet, so this effecitvely means Sage can not be built on any Skynet computer running Solaris (*mark*, *mark2* or *fulvia*)\n\nHere's an example with OpenSolaris with gcc 4.5.0, though the same problem occurs on Solaris 10 SPARC and Solaris 10 x86. \n\n```\ndrkirkby@hawk:~/sage-4.5.1$ ./sage -f cvxopt-0.9.p8\n\n<snip>\n\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -m64 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/sage-4.5.1/local/include/python2.6 -c C/base.c -o build/temp.solaris-2.11-i86pc-2.6/C/base.o\nIn file included from C/cvxopt.h:30:0,\n                 from C/base.c:23:\nC/sun_complex.h:9:0: warning: ignoring #pragma ident \nC/sun_complex.h:30:32: error: expected identifier or '(' before '_Imaginary'\nerror: command 'gcc' failed with exit status 1\n\nreal\t0m0.131s\nuser\t0m0.080s\nsys\t0m0.042s\nsage: An error occurred while installing cvxopt-0.9.p8\n```\n\nThis is ultimately due to `_Complex_I` being undefined - exactly the same problem which was observed in the Sage library several months ago - see #7932. \n\nThis patch defines `_Complex_I` to be `1j` on Solaris with gcc versions prior to 4.5.0. \n\nWith this change, cvxopt builds properly \n\n```\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.5.1/local/lib/python2.6/site-packages/cvxopt-0.9-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.5.1/local/lib/python2.6/site-packages/cvxopt-0.9-py2.6.egg-info\n\nreal\t0m45.306s\nuser\t0m40.395s\nsys\t0m3.786s\nSuccessfully installed cvxopt-0.9.p9\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.5.1/spkg/build/cvxopt-0.9.p9\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\n```\n\n**The patch is only applied on Solaris, so is very safe.**\n\nIssue created by migration from https://trac.sagemath.org/ticket/9657\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @dimpase @jaapspies @qed777\n\nThere's a problem with cvxopt not building on gcc versions 4.5.0 or later. **This has become especially critical lately, as only gcc 4.5.0 is available on Skynet, so this effectively means Sage can not be built on any Skynet computer running Solaris (*mark*, *mark2* or *fulvia*)**\n\nHere's an example with OpenSolaris with gcc 4.5.0, though the same problem occurs on Solaris 10 SPARC and Solaris 10 x86. \n\n```\ndrkirkby@hawk:~/sage-4.5.1$ ./sage -f cvxopt-0.9.p8\n\n<snip>\n\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -m64 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/sage-4.5.1/local/include/python2.6 -c C/base.c -o build/temp.solaris-2.11-i86pc-2.6/C/base.o\nIn file included from C/cvxopt.h:30:0,\n                 from C/base.c:23:\nC/sun_complex.h:9:0: warning: ignoring #pragma ident \nC/sun_complex.h:30:32: error: expected identifier or '(' before '_Imaginary'\nerror: command 'gcc' failed with exit status 1\n\nreal\t0m0.131s\nuser\t0m0.080s\nsys\t0m0.042s\nsage: An error occurred while installing cvxopt-0.9.p8\n```\n\nThis is ultimately due to `_Complex_I` and `I` being undefined.\n\nThe correct definitions were taken from the complex.h header file which was *fixed* by gcc's `fixincludes` program.  \n\nWith this change, cvxopt builds properly \n\n```\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.5.1/local/lib/python2.6/site-packages/cvxopt-0.9-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.5.1/local/lib/python2.6/site-packages/cvxopt-0.9-py2.6.egg-info\n\nreal\t0m45.306s\nuser\t0m40.395s\nsys\t0m3.786s\nSuccessfully installed cvxopt-0.9.p9\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.5.1/spkg/build/cvxopt-0.9.p9\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\n```\n\nThe patch has been tested with: \n* gcc 4.2.4 on a Linux server (sage.math). The patch will not be applied there, but it was worth just verifying that. \n* gcc 4.4.4 on a Sun Ultra 27 running OpenSolaris 06/2009 (64-bit build)\n* gcc 4.5.0 on a Sun Ultra 27 running OpenSolaris 06/2009 (64-bit build)\n* gcc 3.4.3 on a Sun Blade 1000 running Solaris 10 03/2005 (32-bit build). Sage will not build with a gcc this old, but cvxopt built ok. \n* gcc 4.5.0 on a Sun Blade 1000 running Solaris 10 03/2005 (32-bit build)\n* gcc 4.4.1 on a Sun T5240 (t2.math) running Solaris 10 05/2009\n\nOn all systems, cvxopt built properly. \n \n**The patch is only applied on Solaris, so is very safe.**\n\nIssue created by migration from https://trac.sagemath.org/ticket/9657\n\n",
+    "closed_at": "2010-08-04T02:10:33Z",
     "created_at": "2010-08-01T03:21:39Z",
     "labels": [
         "component: porting: solaris",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
@@ -21,7 +22,7 @@ Assignee: drkirkby
 
 CC:  @jhpalmieri @dimpase @jaapspies @qed777
 
-There's a problem with cvxopt not building on gcc versions 4.5.0 or later. This has become especially critical lately, as only gcc 4.5.0 is available on Skynet, so this effecitvely means Sage can not be built on any Skynet computer running Solaris (*mark*, *mark2* or *fulvia*)
+There's a problem with cvxopt not building on gcc versions 4.5.0 or later. **This has become especially critical lately, as only gcc 4.5.0 is available on Skynet, so this effectively means Sage can not be built on any Skynet computer running Solaris (*mark*, *mark2* or *fulvia*)**
 
 Here's an example with OpenSolaris with gcc 4.5.0, though the same problem occurs on Solaris 10 SPARC and Solaris 10 x86. 
 
@@ -43,9 +44,9 @@ sys	0m0.042s
 sage: An error occurred while installing cvxopt-0.9.p8
 ```
 
-This is ultimately due to `_Complex_I` being undefined - exactly the same problem which was observed in the Sage library several months ago - see #7932. 
+This is ultimately due to `_Complex_I` and `I` being undefined.
 
-This patch defines `_Complex_I` to be `1j` on Solaris with gcc versions prior to 4.5.0. 
+The correct definitions were taken from the complex.h header file which was *fixed* by gcc's `fixincludes` program.  
 
 With this change, cvxopt builds properly 
 
@@ -65,6 +66,16 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 ```
 
+The patch has been tested with: 
+* gcc 4.2.4 on a Linux server (sage.math). The patch will not be applied there, but it was worth just verifying that. 
+* gcc 4.4.4 on a Sun Ultra 27 running OpenSolaris 06/2009 (64-bit build)
+* gcc 4.5.0 on a Sun Ultra 27 running OpenSolaris 06/2009 (64-bit build)
+* gcc 3.4.3 on a Sun Blade 1000 running Solaris 10 03/2005 (32-bit build). Sage will not build with a gcc this old, but cvxopt built ok. 
+* gcc 4.5.0 on a Sun Blade 1000 running Solaris 10 03/2005 (32-bit build)
+* gcc 4.4.1 on a Sun T5240 (t2.math) running Solaris 10 05/2009
+
+On all systems, cvxopt built properly. 
+ 
 **The patch is only applied on Solaris, so is very safe.**
 
 Issue created by migration from https://trac.sagemath.org/ticket/9657

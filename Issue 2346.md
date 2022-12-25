@@ -1,21 +1,22 @@
-# Issue 2346: Sage needs a simple api for interaction with other applications
+# Issue 2346: [with patch, positive review] Sage needs a simple api for interaction with other applications
 
 archive/issues_002346.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMany people have shown interest in a simple API that could be used to interface with Sage. This would be useful for java applets, moodle plugins, and other applications to use Sage as a computational back end. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2346\n\n",
+    "body": "Assignee: @robertwb\n\nMany people have shown interest in a simple API that could be used to interface with Sage. This would be useful for java applets, moodle plugins, and other applications to use Sage as a computational back end. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2346\n\n",
+    "closed_at": "2008-04-06T06:05:45Z",
     "created_at": "2008-02-28T08:53:49Z",
     "labels": [
         "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Sage needs a simple api for interaction with other applications",
+    "title": "[with patch, positive review] Sage needs a simple api for interaction with other applications",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2346",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Many people have shown interest in a simple API that could be used to interface with Sage. This would be useful for java applets, moodle plugins, and other applications to use Sage as a computational back end. 
 

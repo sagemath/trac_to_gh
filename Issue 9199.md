@@ -3,7 +3,8 @@
 archive/issues_009199.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nTry `plot(x^2,(x,-1,1), fill=False)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9199\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nKeywords: beginner\n\nTry `plot(x^2,(x,-1,1), fill=False)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9199\n\n",
+    "closed_at": "2010-09-15T10:40:35Z",
     "created_at": "2010-06-10T01:14:40Z",
     "labels": [
         "component: graphics",
@@ -19,6 +20,8 @@ archive/issues_009199.json:
 Assignee: jason, was
 
 CC:  @kcrisman
+
+Keywords: beginner
 
 Try `plot(x^2,(x,-1,1), fill=False)`.
 

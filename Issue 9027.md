@@ -3,7 +3,8 @@
 archive/issues_009027.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nKeywords: latex\n\nThere are a variety of ways to use latex in Sage, which often leads to some confusion.  This new section of the tutorial will present an overview and the basics of usage from a users perspective.  However, doctests might also help developers understand how to make changes related to various aspects of tex support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9027\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nKeywords: latex\n\nThere are a variety of ways to use latex in Sage, which often leads to some confusion.  This new section of the tutorial will present an overview and the basics of usage from a users perspective.  However, doctests might also help developers understand how to make changes related to various aspects of tex support.\n\nTo the release manager, merge\n\n- trac_9027_tutorial_latex_v4.patch\n- trac_9027-reviewer.patch\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9027\n\n",
+    "closed_at": "2010-07-26T02:17:30Z",
     "created_at": "2010-05-24T05:45:32Z",
     "labels": [
         "component: documentation",
@@ -23,6 +24,12 @@ CC:  @jhpalmieri mvngu
 Keywords: latex
 
 There are a variety of ways to use latex in Sage, which often leads to some confusion.  This new section of the tutorial will present an overview and the basics of usage from a users perspective.  However, doctests might also help developers understand how to make changes related to various aspects of tex support.
+
+To the release manager, merge
+
+- trac_9027_tutorial_latex_v4.patch
+- trac_9027-reviewer.patch
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9027
 

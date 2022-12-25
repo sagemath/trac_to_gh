@@ -1,9 +1,10 @@
-# Issue 3830: plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.
+# Issue 3830: [with patch, positive review] plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.
 
 archive/issues_003830.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nplot(sin(1/x), (x,-1,3), foo=10)\n///\n          \t\n\nverbose 0 (1537: plot.py, options) WARNING: Ignoring option\n'plot_division'=0\nverbose 0 (1537: plot.py, options) \nThe allowed options for Line defined by 94005 points are:\n    alpha          How transparent the line is.                         \n\n    hue            The color given as a hue.                            \n\n    linestyle      The style of the line, which is one of '--' (dashed),\n'-.' (dash dot), '-' (solid), 'steps', ':' (dotted).\n    marker         '0' (tickleft), '1' (tickright), '2' (tickup), '3'\n(tickdown), '' (nothing), ' ' (nothing), '+' (plus), ',' (pixel), '.'\n(point), '1' (tri_down), '3' (tri_left), '2' (tri_up), '4' (tri_right),\n'<' (triangle_left), '>' (triangle_right), 'None' (nothing), 'D'\n(diamond), 'H' (hexagon2), '_' (hline), '^' (triangle_up), 'd'\n(thin_diamond), 'h' (hexagon1), 'o' (circle), 'p' (pentagon), 's'\n(square), 'v' (triangle_down), 'x' (x), '|' (vline)\n    markeredgecolorthe markerfacecolor can be any color arg             \n\n    markeredgewidththe size of the markter edge in points               \n\n    markersize     the size of the marker in points                     \n\n    rgbcolor       The color as an rgb tuple.                           \n\n    thickness      How thick the line is.                               \n\n\nTraceback (click to the left for traceback)\n...\nAttributeError: Unknown property foo\n```\n\nThe error that comes from line could just be very lightly wrapped in an error from plot that says plot error using the line command.  This could thus be almost trivially fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3830\n\n",
+    "body": "Assignee: @williamstein\n\n```\nplot(sin(1/x), (x,-1,3), foo=10)\n///\nverbose 0 (1537: plot.py, options) WARNING: Ignoring option\n'plot_division'=0\nverbose 0 (1537: plot.py, options) \nThe allowed options for Line defined by 94005 points are:\n    alpha          How transparent the line is.                         \n\n    hue            The color given as a hue.                            \n\n    linestyle      The style of the line, which is one of '--' (dashed),\n'-.' (dash dot), '-' (solid), 'steps', ':' (dotted).\n    marker         '0' (tickleft), '1' (tickright), '2' (tickup), '3'\n(tickdown), '' (nothing), ' ' (nothing), '+' (plus), ',' (pixel), '.'\n(point), '1' (tri_down), '3' (tri_left), '2' (tri_up), '4' (tri_right),\n'<' (triangle_left), '>' (triangle_right), 'None' (nothing), 'D'\n(diamond), 'H' (hexagon2), '_' (hline), '^' (triangle_up), 'd'\n(thin_diamond), 'h' (hexagon1), 'o' (circle), 'p' (pentagon), 's'\n(square), 'v' (triangle_down), 'x' (x), '|' (vline)\n    markeredgecolorthe markerfacecolor can be any color arg             \n\n    markeredgewidththe size of the markter edge in points               \n\n    markersize     the size of the marker in points                     \n\n    rgbcolor       The color as an rgb tuple.                           \n\n    thickness      How thick the line is.                               \n\n\nTraceback (click to the left for traceback)\n...\nAttributeError: Unknown property foo\n```\n\nThe error that comes from line could just be very lightly wrapped in an error from plot that says plot error using the line command.  This could thus be almost trivially fixed. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3830\n\n",
+    "closed_at": "2009-01-23T10:26:17Z",
     "created_at": "2008-08-13T03:02:53Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_003830.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.",
+    "title": "[with patch, positive review] plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3830",
     "user": "https://github.com/williamstein"
@@ -22,8 +23,6 @@ Assignee: @williamstein
 ```
 plot(sin(1/x), (x,-1,3), foo=10)
 ///
-          	
-
 verbose 0 (1537: plot.py, options) WARNING: Ignoring option
 'plot_division'=0
 verbose 0 (1537: plot.py, options) 
@@ -57,7 +56,8 @@ Traceback (click to the left for traceback)
 AttributeError: Unknown property foo
 ```
 
-The error that comes from line could just be very lightly wrapped in an error from plot that says plot error using the line command.  This could thus be almost trivially fixed.
+The error that comes from line could just be very lightly wrapped in an error from plot that says plot error using the line command.  This could thus be almost trivially fixed. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3830
 

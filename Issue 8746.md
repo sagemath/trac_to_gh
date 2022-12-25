@@ -3,10 +3,12 @@
 archive/issues_008746.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Comparison posets elements\n\nThis is due to comparing the parent which can indeed be very slow. However most of the time when comparing `x` and `y`, the two parent are identical and are better compared with `is`. Here is the results:\n\nBefore the patch:\n\n```\nsage: P = Posets.ChainPoset(30)\nsage: %time len([x == y for x in P for y in P])\nCPU times: user 18.05 s, sys: 0.04 s, total: 18.09 s\nWall time: 18.25 s\n900\n```\nAfter the patch:\n\n```\nsage: P = Posets.ChainPoset(30)\nsage: %time len([x == y for x in P for y in P])\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.02 s\n900\n```\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8746\n\n",
+    "body": "CC:  sage-combinat\n\nKeywords: Comparison posets elements\n\nThis is due to comparing the parent which can indeed be very slow. However most of the time when comparing `x` and `y`, the two parent are identical and are better compared with `is`. Here is the results:\n\nBefore the patch:\n\n```\nsage: P = Posets.ChainPoset(30)\nsage: %time len([x == y for x in P for y in P])\nCPU times: user 18.05 s, sys: 0.04 s, total: 18.09 s\nWall time: 18.25 s\n900\n```\nAfter the patch:\n\n```\nsage: P = Posets.ChainPoset(30)\nsage: %time len([x == y for x in P for y in P])\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.02 s\n900\n```\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8746\n\n",
+    "closed_at": "2010-04-29T05:22:27Z",
     "created_at": "2010-04-22T19:45:56Z",
     "labels": [
         "component: combinatorics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
@@ -16,8 +18,6 @@ archive/issues_008746.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: sage-combinat
-
 CC:  sage-combinat
 
 Keywords: Comparison posets elements

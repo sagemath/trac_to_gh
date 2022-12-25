@@ -3,7 +3,8 @@
 archive/issues_009632.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin cwitty @dandrake @jhpalmieri @kcrisman\n\nThe order in which the terms in some symbolic expressions are printed depends on the platform/system.  For example, evaluating `cos(x) + zeta(x)` yields\n\n* `zeta(x) + cos(x)` on Linux\n* `cos(x) + zeta(x)` on OS X\n\nin Sage 4.4.4 and 4.5.2.alpha{0,1}, at least.\n\nPlease see #9582 for some details and discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9632\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin cwitty @dandrake @jhpalmieri @kcrisman\n\nThe order in which the terms in some symbolic expressions are printed depends on the platform/system.  For example, evaluating `cos(x) + zeta(x)` yields\n\n* `zeta(x) + cos(x)` on Linux\n* `cos(x) + zeta(x)` on OS X\n\nin Sage 4.4.4 and 4.5.2.alpha{0,1}, at least.\n\nPlease see #9582 for some details and discussion.\n\nApply: [attachment:trac_9632-doctests.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9632\n\n",
+    "closed_at": "2013-07-31T12:53:09Z",
     "created_at": "2010-07-29T06:16:00Z",
     "labels": [
         "component: symbolics",
@@ -28,6 +29,8 @@ The order in which the terms in some symbolic expressions are printed depends on
 in Sage 4.4.4 and 4.5.2.alpha{0,1}, at least.
 
 Please see #9582 for some details and discussion.
+
+Apply: [attachment:trac_9632-doctests.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9632
 

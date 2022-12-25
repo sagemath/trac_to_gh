@@ -1,22 +1,23 @@
-# Issue 5002: CrystalOfTableaux call method breaks on legitimate data
+# Issue 5002: [with patch, positive review] CrystalOfTableaux call method breaks on legitimate data
 
 archive/issues_005002.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: C = CrystalOfTableaux(['B',2],shape=[3]) \nsage: C(rows=[[1,1,0]])\n```\n\nraises an exception though this is a legitimate B2 tableaux. This was\nanalyzed by Anne Schilling and others in this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/cb02f961c41947e2?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5002\n\n",
+    "body": "Assignee: @anneschilling\n\nCC:  sage-combinat\n\n```\nsage: C = CrystalOfTableaux(['B',2],shape=[3]) \nsage: C(rows=[[1,1,0]])\n```\n\nraises an exception though this is a legitimate B2 tableaux. This was\nanalyzed by Anne Schilling and others in this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/cb02f961c41947e2?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5002\n\n",
+    "closed_at": "2009-04-09T07:22:16Z",
     "created_at": "2009-01-17T17:03:36Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "CrystalOfTableaux call method breaks on legitimate data",
+    "title": "[with patch, positive review] CrystalOfTableaux call method breaks on legitimate data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5002",
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: @mwhansen
+Assignee: @anneschilling
 
 CC:  sage-combinat
 

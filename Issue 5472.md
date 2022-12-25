@@ -1,9 +1,10 @@
-# Issue 5472: [with patch, needs review] typo in developer's guide
+# Issue 5472: [with patch, positive review] typo in developer's guide
 
 archive/issues_005472.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nFirst noted in [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/9dbf78b5df933420).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5472\n\n",
+    "closed_at": "2009-03-10T20:58:46Z",
     "created_at": "2009-03-10T20:38:19Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005472.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] typo in developer's guide",
+    "title": "[with patch, positive review] typo in developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5472",
     "user": "https://github.com/jhpalmieri"

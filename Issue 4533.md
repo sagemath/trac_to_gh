@@ -1,16 +1,17 @@
-# Issue 4533: divisors function slow for integers
+# Issue 4533: [with patch; needs work] divisors function slow for integers
 
 archive/issues_004533.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @craigcitro\n\nThere's *tons* of room for optimization for the divisors function in sage/rings/arith.py. This should probably be generalized to do more than integers, with a specialized divisors method on Integer. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4533\n\n",
+    "closed_at": "2008-11-21T08:47:47Z",
     "created_at": "2008-11-16T08:21:30Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "divisors function slow for integers",
+    "title": "[with patch; needs work] divisors function slow for integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4533",
     "user": "https://github.com/robertwb"

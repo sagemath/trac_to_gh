@@ -3,7 +3,8 @@
 archive/issues_009713.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThe toric Chow group is a useful version of a homology theory for toric varieties, especially for singular varieties. The attached patch provides support for computing the toric Chow group as well as elementary intersection theory.\n\nSee tracker bug at #9604 to for the patch queue/dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9713\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThe toric Chow group is a useful version of a homology theory for toric varieties, especially for singular varieties. The attached patch provides support for computing the toric Chow group as well as elementary intersection theory.\n\nSee tracker bug at #9604 to for related patches.\n\n**Apply**:\n1. [attachment:trac_9713_fix_cardinality.patch]\n2. [attachment:trac_9713_fix_fg_pid.2.patch]\n3. [attachment:trac_9713_fix_fg_pid_reviewer.2.patch]\n4. [attachment:trac_9713_toric_chow_group.patch]\n5. [attachment:9713_hash.patch]\n\nDepends on #8948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9713\n\n",
+    "closed_at": "2011-02-07T08:13:46Z",
     "created_at": "2010-08-09T22:54:14Z",
     "labels": [
         "component: algebraic geometry"
@@ -21,7 +22,16 @@ CC:  @novoselt
 
 The toric Chow group is a useful version of a homology theory for toric varieties, especially for singular varieties. The attached patch provides support for computing the toric Chow group as well as elementary intersection theory.
 
-See tracker bug at #9604 to for the patch queue/dependencies.
+See tracker bug at #9604 to for related patches.
+
+**Apply**:
+1. [attachment:trac_9713_fix_cardinality.patch]
+2. [attachment:trac_9713_fix_fg_pid.2.patch]
+3. [attachment:trac_9713_fix_fg_pid_reviewer.2.patch]
+4. [attachment:trac_9713_toric_chow_group.patch]
+5. [attachment:9713_hash.patch]
+
+Depends on #8948.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9713
 

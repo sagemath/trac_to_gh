@@ -1,16 +1,17 @@
-# Issue 3588: Divison may involve lengthy calculations
+# Issue 3588: [with patch, needs review] Divison may involve lengthy calculations
 
 archive/issues_003588.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nsage: p = random_prime(2^1000, proof=False)\n\nsage: r = Integers(p)(2)\n\nsage: time 1/r\nCPU times: user 8.33 s, sys: 0.04 s, total: 8.37 s\nWall time: 8.38 s\n 3499526081536621642679042248089160305431650460015592790597504050874839449753564641181241694531732168529968232075793871659087004627036430097798051425534663680136477216778245568521334956231031996455409743133009480089945324001250066901998383114487031466512725971538453941363837544198631115493811447198845\n```\n\nThe generic fraction_field() call does primality testing here, takes too long. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3588\n\n",
+    "closed_at": "2008-08-24T17:33:38Z",
     "created_at": "2008-07-07T20:23:11Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "Divison may involve lengthy calculations",
+    "title": "[with patch, needs review] Divison may involve lengthy calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3588",
     "user": "https://github.com/robertwb"

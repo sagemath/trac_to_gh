@@ -1,15 +1,16 @@
-# Issue 5581: Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py
+# Issue 5581: [with patch, positive review] Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py
 
 archive/issues_005581.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: polyhedra, face lattice, geometry\n\nThis patch adds the important functionality of computing face lattices and f-vectors of polytopes.  In the course of adding these, I found a number of bugs that occur for polyhedra of lower dimensions that are embedded in higher dimensions, which I believe I have fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5581\n\n",
+    "closed_at": "2009-05-21T02:07:30Z",
     "created_at": "2009-03-21T17:12:27Z",
     "labels": [
         "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py",
+    "title": "[with patch, positive review] Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5581",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

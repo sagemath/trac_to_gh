@@ -1,16 +1,16 @@
-# Issue 2207: fcp for matrices over SR
+# Issue 2207: [with patch, with positive review, needs rebase] fcp for matrices over SR
 
 archive/issues_002207.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2207\n\n",
+    "closed_at": "2008-03-05T05:35:27Z",
     "created_at": "2008-02-18T21:25:50Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "fcp for matrices over SR",
+    "title": "[with patch, with positive review, needs rebase] fcp for matrices over SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2207",
     "user": "https://github.com/jasongrout"

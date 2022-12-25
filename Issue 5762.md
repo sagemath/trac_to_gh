@@ -4,6 +4,7 @@ archive/issues_005762.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5762\n\n",
+    "closed_at": "2009-04-11T23:03:07Z",
     "created_at": "2009-04-11T20:10:04Z",
     "labels": [
         "component: doctest coverage",

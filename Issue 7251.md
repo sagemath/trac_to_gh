@@ -3,7 +3,8 @@
 archive/issues_007251.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  sage-combinat @mwhansen @robertwb\n\nKeywords: Integer, IntegerWrapper\n\nThe attached patch allows for the creation of integers whose parents are not IntegerRing():\n\n```\n            sage: n = Integer(3, parent = Primes())\n            sage: n\n            3\n            sage: n.parent()\n            Set of all prime numbers: 2, 3, 5, 7, ...\n```\n\nThat's used in a couple places in the category code #5891, when illustrating how to create new parents like the set of prime integers. So this is quite urgent.\n\nAny better implementation welcome! I am fine also with having this work only for IntegerWrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7251\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @robertwb\n\nKeywords: Integer, IntegerWrapper\n\nThe attached patch allows for the creation of integers whose parents are not IntegerRing():\n\n```\n            sage: n = Integer(3, parent = Primes())\n            sage: n\n            3\n            sage: n.parent()\n            Set of all prime numbers: 2, 3, 5, 7, ...\n```\n\nThat's used in a couple places in the category code #5891, when illustrating how to create new parents like the set of prime integers. So this is quite urgent.\n\nAny better implementation welcome! I am fine also with having this work only for IntegerWrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7251\n\n",
+    "closed_at": "2009-10-21T07:12:04Z",
     "created_at": "2009-10-19T21:59:48Z",
     "labels": [
         "component: basic arithmetic"
@@ -15,7 +16,7 @@ archive/issues_007251.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: somebody
+Assignee: @nthiery
 
 CC:  sage-combinat @mwhansen @robertwb
 

@@ -4,6 +4,7 @@ archive/issues_000205.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: [ p.is_prime() for p in prime_range(2**160, 2**160+2**12) ]\n---------------------------------------------------------------------------\n<type 'exceptions.OverflowError'>         Traceback (most recent call last)\n \n/Users/nalexand/Devel/sage-alpha8/devel/sage-main/<ipython console> in <module>()\n \n/Users/nalexand/Devel/sage/local/lib/python2.5/site-packages/sage/rings/arith.py in prime_range(start, stop, leave_pari)\n    477     if stop is None:\n    478         start, stop = 2, start\n--> 479     v = pari.primes_up_to_n(stop-1)\n    480     Z = sage.rings.integer.Integer\n    481     if leave_pari:\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/205\n\n",
+    "closed_at": "2007-01-23T23:38:11Z",
     "created_at": "2007-01-22T20:12:39Z",
     "labels": [
         "component: number theory",

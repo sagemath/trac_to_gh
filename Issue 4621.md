@@ -1,16 +1,16 @@
-# Issue 4621: '2' not in QQbar -- canonical embedding of subfields
+# Issue 4621: Fix membership in QQbar for number field elements -- canonical embedding of subfields
 
 archive/issues_004621.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kliem @slel\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\nPerhaps related to this is\n\n```\nsage: F.<a>=NumberField(x^2-2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\nand then `x in QQbar` would answer True, since \n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kliem @slel\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev\non [sage-support](https://groups.google.com/g/sage-support/c/wRKJ15QpmQM).\n\n```\nsage: F.<a> = NumberField(x^2 - 2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\nPerhaps related to this is\n\n```\nsage: F.<a> = NumberField(x^2 - 2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element `x` in `F_1` such that there is in fact a subfield `F_2` of `F_1` with `x` in `F_1`. Moreover, we have a field `F_3` such that `F_2` has a canonical embedding into `F_3`, but `F_1` has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield `F_m` of `F_1` that has a canonical embedding into `F_3`? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\nand then `x in QQbar` would answer `True`, since\n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
     "created_at": "2008-11-26T11:26:25Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "'2' not in QQbar -- canonical embedding of subfields",
+    "title": "Fix membership in QQbar for number field elements -- canonical embedding of subfields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4621",
     "user": "https://github.com/simon-king-jena"
@@ -22,10 +22,11 @@ CC:  @kliem @slel
 
 Keywords: canonical embedding subfield
 
-Reported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903
+Reported by Alex Raichev
+on [sage-support](https://groups.google.com/g/sage-support/c/wRKJ15QpmQM).
 
 ```
-sage: F.<a>= NumberField(x^2-2)
+sage: F.<a> = NumberField(x^2 - 2)
 sage: a^2
 2
 sage: a^2 in QQ
@@ -45,7 +46,7 @@ False
 Perhaps related to this is
 
 ```
-sage: F.<a>=NumberField(x^2-2)
+sage: F.<a> = NumberField(x^2 - 2)
 sage: QQ.is_subring(F)
 True
 sage: F.is_subring(QQbar)
@@ -56,11 +57,11 @@ Robert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `
 
 So, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.
 
-In other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.
+In other words, we have a field element `x` in `F_1` such that there is in fact a subfield `F_2` of `F_1` with `x` in `F_1`. Moreover, we have a field `F_3` such that `F_2` has a canonical embedding into `F_3`, but `F_1` has no canonical embedding.
 
 Is it possible for Sage to detect that situation? 
 
-Idea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. 
+Idea: Is there a *unique* maximal subfield `F_m` of `F_1` that has a canonical embedding into `F_3`? If there is, there could be a method `max_subfield_coercing_into(...)`. 
 
 Then, in the original example, we probably have 
 
@@ -68,7 +69,7 @@ Then, in the original example, we probably have
 sage: F.max_subfield_coercing_into(QQbar)
 Rational Field
 ```
-and then `x in QQbar` would answer True, since 
+and then `x in QQbar` would answer `True`, since
 
 ```
 sage: x in F_1.max_subfield_coercing_into(QQbar)

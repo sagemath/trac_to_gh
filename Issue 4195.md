@@ -1,15 +1,16 @@
-# Issue 4195: [with patch, needs review] implicit plotting for multivariate polynomial ideals
+# Issue 4195: [with patch, positive review] implicit plotting for multivariate polynomial ideals
 
 archive/issues_004195.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: plotting, ideal, polynomial\n\nThis now works without having surf installed:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: I = R.ideal([y^3 - x^2])\nsage: I.plot()\nsage: I = R.ideal([y^2 - x^2 - 1])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4195\n\n",
+    "closed_at": "2008-09-26T05:08:24Z",
     "created_at": "2008-09-25T12:09:01Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] implicit plotting for multivariate polynomial ideals",
+    "title": "[with patch, positive review] implicit plotting for multivariate polynomial ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4195",
     "user": "https://github.com/malb"

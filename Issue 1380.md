@@ -1,22 +1,24 @@
-# Issue 1380: subs in the MPolynomial_libsingular insists on taking things to QQ
+# Issue 1380: [with patch, positive review] subs in the MPolynomial_libsingular insists on taking things to QQ
 
 archive/issues_001380.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following code should not give an error:\n\n```\nsage: R.<x,y>=QQ[]\nsage: x.subs(x=1/y)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: no implicit coercion of element to the rational numbers\n```\n\nAs evidence, I give,\n\n```\nsage: R.<x,y>=ZZ[]\nsage: x.subs(x=1/y)\n1/y\n```\nwhich makes perfect sense to me.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1380\n\n",
+    "body": "Assignee: @malb\n\nThe following code should not give an error:\n\n```\nsage: R.<x,y>=QQ[]\nsage: x.subs(x=1/y)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: no implicit coercion of element to the rational numbers\n```\n\nAs evidence, I give,\n\n```\nsage: R.<x,y>=ZZ[]\nsage: x.subs(x=1/y)\n1/y\n```\nwhich makes perfect sense to me.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1380\n\n",
+    "closed_at": "2007-12-18T21:21:15Z",
     "created_at": "2007-12-03T10:01:35Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "subs in the MPolynomial_libsingular insists on taking things to QQ",
+    "title": "[with patch, positive review] subs in the MPolynomial_libsingular insists on taking things to QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1380",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 The following code should not give an error:
 

@@ -4,6 +4,7 @@ archive/issues_008884.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona\n\nWe found inefficiency in isogeny_class function for elliptic curves over rational field. The patch will improve this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8884\n\n",
+    "closed_at": "2010-06-06T08:45:01Z",
     "created_at": "2010-05-05T09:08:26Z",
     "labels": [
         "component: elliptic curves",

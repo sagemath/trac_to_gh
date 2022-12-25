@@ -4,6 +4,7 @@ archive/issues_008311.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @haraldschilly\n\nKeywords: random point\n\nAs reported:\n\n```\nE = EllipticCurve(GF(3), [0,0,0,2,2])\nE.random_element()\n```\nHangs since\n\n```\nsage: E.rational_points()\n[(0 : 1 : 0)]\n```\nso unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.\n\nThis can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8311\n\n",
+    "closed_at": "2010-03-11T04:45:47Z",
     "created_at": "2010-02-20T12:06:17Z",
     "labels": [
         "component: elliptic curves",

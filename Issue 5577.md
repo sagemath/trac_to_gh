@@ -1,9 +1,10 @@
-# Issue 5577: [with patch, needs review] typo in tutorial
+# Issue 5577: [with patch, positive review] typo in tutorial
 
 archive/issues_005577.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThis is a repeat of #4379, changing one word in the tutorial: the change there was undone, perhaps in the ReST conversion, and this reinstates it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5577\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis is a repeat of #4379, changing one word in the tutorial: the change there was undone, perhaps in the ReST conversion, and this reinstates it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5577\n\n",
+    "closed_at": "2009-03-23T18:39:47Z",
     "created_at": "2009-03-20T18:18:20Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_005577.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] typo in tutorial",
+    "title": "[with patch, positive review] typo in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5577",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 This is a repeat of #4379, changing one word in the tutorial: the change there was undone, perhaps in the ReST conversion, and this reinstates it.
 

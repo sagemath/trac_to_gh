@@ -3,10 +3,12 @@
 archive/issues_007518.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  david.kirkby@onetel.net\n\nObserve:\n\n```\nsage: Q.<x> = ZZ[]\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever!>\n```\n\nwhereas\n\n```\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\n```\n\nworks fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7518\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nObserve:\n\n```\nsage: Q.<x> = ZZ[]\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever!>\n```\n\nwhereas\n\n```\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\n```\n\nworks fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7518\n\n",
+    "closed_at": "2013-05-16T08:02:02Z",
     "created_at": "2009-11-23T07:00:21Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: packages: standard",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +18,7 @@ archive/issues_007518.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 CC:  david.kirkby@onetel.net
 

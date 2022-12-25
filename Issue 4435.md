@@ -1,22 +1,23 @@
-# Issue 4435: %latex -- don't use \usepackage{fullpage}
+# Issue 4435: [with patch, positive review] %latex -- don't use \usepackage{fullpage}
 
 archive/issues_004435.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n```\n\n\nOn Mon, Nov 3, 2008 at 7:57 PM, William Stein <wstein@gmail.com> wrote:\n>\n> On Mon, Nov 3, 2008 at 5:23 PM, Matthew J <matdjj@gmail.com> wrote:\n>>\n>> If anyone else comes across this problem and installing gs and\n>> imagemagick does not solve it, I also had to install tetex-extra.\n>>\n>>\n>> I realized when I was getting the error: fullpage.sty could not be\n>> found.\n>\n> Thanks.  Maybe we should get rid of dependence on fullpage.sty,\n> since probably there is an easy direct way to do about the same thing.\n>\n> William\n>\n\nThis should do something pretty close:\n\n%% margins\n\\oddsidemargin  0.0in\n\\evensidemargin 0.0in\n\\textwidth      6.45in\n\\topmargin  0.0in\n\\headheight 0.0in\n\\headsep    0.0in\n\\textheight 9.0in\n\n-cc\n- Hide quoted text -\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4435\n\n",
+    "body": "Assignee: @jhpalmieri\n\n```\n\n\nOn Mon, Nov 3, 2008 at 7:57 PM, William Stein <wstein@gmail.com> wrote:\n>\n> On Mon, Nov 3, 2008 at 5:23 PM, Matthew J <matdjj@gmail.com> wrote:\n>>\n>> If anyone else comes across this problem and installing gs and\n>> imagemagick does not solve it, I also had to install tetex-extra.\n>>\n>>\n>> I realized when I was getting the error: fullpage.sty could not be\n>> found.\n>\n> Thanks.  Maybe we should get rid of dependence on fullpage.sty,\n> since probably there is an easy direct way to do about the same thing.\n>\n> William\n>\n\nThis should do something pretty close:\n\n%% margins\n\\oddsidemargin  0.0in\n\\evensidemargin 0.0in\n\\textwidth      6.45in\n\\topmargin  0.0in\n\\headheight 0.0in\n\\headsep    0.0in\n\\textheight 9.0in\n\n-cc\n- Hide quoted text -\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4435\n\n",
+    "closed_at": "2009-04-30T03:59:17Z",
     "created_at": "2008-11-04T04:55:49Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "%latex -- don't use \\usepackage{fullpage}",
+    "title": "[with patch, positive review] %latex -- don't use \\usepackage{fullpage}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4435",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @jhpalmieri
 
 ```
 

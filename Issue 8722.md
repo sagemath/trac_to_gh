@@ -3,7 +3,8 @@
 archive/issues_008722.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\n```\nsage: L.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: p = L.ideal((-1/2*b - 1/2)*a + 1/2*b - 1/2)\nsage: p.absolute_norm()\n9\nsage: p.is_prime()\nTrue\nsage: W = L.S_units([p]); W\n[1/2*a + 7/4, a, 1/2*b - 1/2]\nsage: W[0].valuation(L.primes_above(2)[0])\n-4\n```\nSo the first element of the list of S-units isn't actually an S-unit! In other examples the code just blows up, because it calls `residue_field` and that dies because of #8721:\n\n```\nsage: L.<a, b> = NumberField([polygen(QQ)^2 - 3, polygen(QQ)^2 - 5])\nsage: L.S_units([L.ideal(a)])\n```\nThis is arguably less bad: raising an error is far better than silently a wrong answer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8722\n\n",
+    "body": "Assignee: @loefflerd\n\nThe code for S-unit groups of number fields calls the `degree` method. For relative number fields this deliberately returns an error, because of the ambiguity between absolute and relative degree. \n\n```\nsage: L.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: sage: p = L.ideal((-1/2*b - 1/2)*a + 1/2*b - 1/2)\nsage: sage: W = L.S_units([p]); W\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: For a relative number field you must use relative_degree or absolute_degree as appropriate\n```\n\nIn this case I think it should be absolute_degree, but changing this returns wrong output: \n\n```\nsage: L.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: p = L.ideal((-1/2*b - 1/2)*a + 1/2*b - 1/2)\nsage: p.absolute_norm()\n9\nsage: p.is_prime()\nTrue\nsage: W = L.S_units([p]); W\n[1/2*a + 7/4, a, 1/2*b - 1/2]\nsage: W[0].valuation(L.primes_above(2)[0])\n-4\n```\nSo the first element of the list of S-units isn't actually an S-unit! \n\nIn other examples the code just blows up, because it calls `residue_field` and that dies because of #8721:\n\n```\nsage: L.<a, b> = NumberField([polygen(QQ)^2 - 3, polygen(QQ)^2 - 5])\nsage: L.S_units([L.ideal(a)])\n```\nThis is arguably less bad: raising an error is far better than silently a wrong answer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8722\n\n",
+    "closed_at": "2010-04-23T17:09:40Z",
     "created_at": "2010-04-20T09:09:57Z",
     "labels": [
         "component: number fields",
@@ -18,6 +19,20 @@ archive/issues_008722.json:
 ```
 Assignee: @loefflerd
 
+The code for S-unit groups of number fields calls the `degree` method. For relative number fields this deliberately returns an error, because of the ambiguity between absolute and relative degree. 
+
+```
+sage: L.<a,b> = NumberField([x^2 + 1, x^2 - 5])
+sage: sage: p = L.ideal((-1/2*b - 1/2)*a + 1/2*b - 1/2)
+sage: sage: W = L.S_units([p]); W
+---------------------------------------------------------------------------
+NotImplementedError                       Traceback (most recent call last)
+...
+NotImplementedError: For a relative number field you must use relative_degree or absolute_degree as appropriate
+```
+
+In this case I think it should be absolute_degree, but changing this returns wrong output: 
+
 ```
 sage: L.<a,b> = NumberField([x^2 + 1, x^2 - 5])
 sage: p = L.ideal((-1/2*b - 1/2)*a + 1/2*b - 1/2)
@@ -30,7 +45,9 @@ sage: W = L.S_units([p]); W
 sage: W[0].valuation(L.primes_above(2)[0])
 -4
 ```
-So the first element of the list of S-units isn't actually an S-unit! In other examples the code just blows up, because it calls `residue_field` and that dies because of #8721:
+So the first element of the list of S-units isn't actually an S-unit! 
+
+In other examples the code just blows up, because it calls `residue_field` and that dies because of #8721:
 
 ```
 sage: L.<a, b> = NumberField([polygen(QQ)^2 - 3, polygen(QQ)^2 - 5])

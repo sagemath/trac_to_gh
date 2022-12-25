@@ -1,17 +1,18 @@
-# Issue 4593: do not uncinditionally use M2 for Gbasis computations over ZZ if it is installed
+# Issue 4593: [with patch, positive review] do not unconditionally use M2 for Gbasis computations over ZZ if it is installed
 
 archive/issues_004593.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis is a left over from #4589: The doctest below from sage/rings/polynomial/multi_polynomial_ideal.py changes depending on whether M2 is installed or not since the GBasis computation uses the optional M2 if it is installed. But the interface should offer an option what code is used since results should not vary depending on optional spkg\n\n```\n@@ -164,7 +166,7 @@\n\n         sage: I.change_ring(P.change_ring( IntegerModRing(2*7) )).groebner_basis()\n         verbose 0 (...: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.\n-        [x + y + z, y^2 + y + 8, y*z + y + 2, 2*y + 6, z^2 + 3, 2*z + 10]\n+        [x + y + z^3 + z^2 + 11, y^2 + y + 5*z^3 + 2*z^2 + 3*z + 10, y*z + y + 9*z^3 + 5*z^2 + 9*z + 11, 2*y + 2*z^3 + 4*z^2 + 4*z + 8, z^2 + 3, 2*z + 10]\n\n     Modulo any other prime the Groebner basis is trivial so there are\n     no other solutions. For example:\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4593\n\n",
+    "closed_at": "2009-02-03T17:53:44Z",
     "created_at": "2008-11-23T04:59:19Z",
     "labels": [
         "component: commutative algebra",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "do not uncinditionally use M2 for Gbasis computations over ZZ if it is installed",
+    "title": "[with patch, positive review] do not unconditionally use M2 for Gbasis computations over ZZ if it is installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4593",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_009720.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer @jasongrout\n\nAdds two routines.  One creates random matrices in echelon form to be used in other routines to be added later.  The other creates random matrices whose echelon form has desirable properties, with the help of the first routine.  These routines are designed as educational tools, generating exam and homework problems, and problem generating interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9720\n\n",
+    "closed_at": "2010-09-15T09:52:32Z",
     "created_at": "2010-08-10T18:51:32Z",
     "labels": [
         "component: linear algebra"

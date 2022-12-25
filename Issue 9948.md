@@ -1,15 +1,16 @@
-# Issue 9948: Add major index (generating polynomial) for the category of finite permutation groups
+# Issue 9948: Add major index (polynomial) for the symmetric group
 
 archive/issues_009948.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: major, index, generating, polynomial, permutation\n\nIn the spirit of factorization of the code, add a method major_index for parents/elements inheriting from FinitePrmutationGoups()\n\n```\nsage: DihedralGroup(5).major_index()\nq^10 + q^9 + q^8 + q^7 + q^6 + q^4 + q^3 + q^2 + q + 1\nsage: PermutationGroup([[(1,2,3,4,5)]]).major_index()\nq^4 + q^3 + q^2 + q + 1\nsage: SymmetricGroup(3).major_index()\nq^3 + 2*q^2 + 2*q + 1\nsage: TransitiveGroup(5,3).major_index()\nq^10 + q^9 + 2*q^8 + 2*q^7 + 3*q^6 + 2*q^5 + 3*q^4 + 2*q^3 + 2*q^2 + q + 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9949\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: major, index, generating, polynomial, permutation\n\nIn permgroup_named.py, add a method major_index for the SymmetricGroup(n)\n\nApply: [attachment:trac_9949_major_index_really_final-nb.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9949\n\n",
+    "closed_at": "2011-04-08T12:59:02Z",
     "created_at": "2010-09-19T16:49:15Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
-    "title": "Add major index (generating polynomial) for the category of finite permutation groups",
+    "title": "Add major index (polynomial) for the symmetric group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9948",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
@@ -21,18 +22,9 @@ CC:  sage-combinat @nthiery
 
 Keywords: major, index, generating, polynomial, permutation
 
-In the spirit of factorization of the code, add a method major_index for parents/elements inheriting from FinitePrmutationGoups()
+In permgroup_named.py, add a method major_index for the SymmetricGroup(n)
 
-```
-sage: DihedralGroup(5).major_index()
-q^10 + q^9 + q^8 + q^7 + q^6 + q^4 + q^3 + q^2 + q + 1
-sage: PermutationGroup([[(1,2,3,4,5)]]).major_index()
-q^4 + q^3 + q^2 + q + 1
-sage: SymmetricGroup(3).major_index()
-q^3 + 2*q^2 + 2*q + 1
-sage: TransitiveGroup(5,3).major_index()
-q^10 + q^9 + 2*q^8 + 2*q^7 + 3*q^6 + 2*q^5 + 3*q^4 + 2*q^3 + 2*q^2 + q + 1
-```
+Apply: [attachment:trac_9949_major_index_really_final-nb.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9949
 

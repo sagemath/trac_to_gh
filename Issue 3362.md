@@ -4,6 +4,7 @@ archive/issues_003362.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nInteger(5)._lmul_(Integer(3))\n```\n should produce 15, but instead throws\n\n```\nNotImplementedError: parents Integer Ring Integer Ring True\n```\nThis makes it hard to write general code that works with noncomutative multiplication.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3362\n\n",
+    "closed_at": "2008-10-28T17:22:26Z",
     "created_at": "2008-06-04T16:19:22Z",
     "labels": [
         "component: coercion",

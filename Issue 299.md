@@ -1,21 +1,22 @@
-# Issue 299: make check and its analogues
+# Issue 299: add make check to all spkg where it is missing
 
 archive/issues_000299.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nProject:\nGo through every spkg in the SAGE standard distribution and add a file\n\n   spkg-check\n\nthat runs whatever the standard test program is for that package, assuming\nspkg-install has already run successfully.  For example, for many programs\n(e.g., gmp), this will just be:\n\n  make check\n\nor maybe \"make test\".\n\nThe program spkg-check should exit with a 0 code if and only if all tests pass.\n\nThen when building SAGE, if one did something like\n\n   export CHECK=1\n   make\n\nthen all spkg-check's would get run along the way.  The build would take much longer,\nbut would be much more confidence inspiring. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/299\n\n",
+    "body": "Assignee: mabshoff\n\nProject:\nGo through every spkg in the SAGE standard distribution and add a file\n\n   spkg-check\n\nthat runs whatever the standard test program is for that package, assuming\nspkg-install has already run successfully.  For example, for many programs\n(e.g., gmp), this will just be:\n\n  make check\n\nor maybe \"make test\".\n\nThe program spkg-check should exit with a 0 code if and only if all tests pass.\n\nThen when building SAGE, if one did something like\n\n   export CHECK=1\n   make\n\nthen all spkg-check's would get run along the way.  The build would take much longer,\nbut would be much more confidence inspiring. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/299\n\n",
+    "closed_at": "2008-08-30T07:08:43Z",
     "created_at": "2007-02-27T14:49:57Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "make check and its analogues",
+    "title": "add make check to all spkg where it is missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/299",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Project:
 Go through every spkg in the SAGE standard distribution and add a file

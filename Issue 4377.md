@@ -1,9 +1,10 @@
-# Issue 4377: Building the Sage library with parallel make is broken on OSX 10.4
+# Issue 4377: [with patch; positive review] Building the Sage library with parallel make is broken on OSX 10.4
 
 archive/issues_004377.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  justin\n\nexporting MAKE=make -j2 leads to\n\n```\nTraceback (most recent call last):\n  File \"setup.py\", line 1545, in <module>\n    cython(deps, ext_modules)\n  File \"setup.py\", line 1311, in cython\n    execute_list_of_commands(command_list)\n  File \"setup.py\", line 1403, in execute_list_of_commands\n    n = 2*number_of_cpus()\nTypeError: unsupported operand type(s) for *: 'int' and 'NoneType'\nsage: There was an error installing modified sage library code.\n```\non OSX 10.4.\n\nThis is caused by #3765.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4377\n\n",
+    "closed_at": "2008-10-28T16:19:40Z",
     "created_at": "2008-10-28T15:03:40Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004377.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Building the Sage library with parallel make is broken on OSX 10.4",
+    "title": "[with patch; positive review] Building the Sage library with parallel make is broken on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4377",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

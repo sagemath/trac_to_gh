@@ -4,6 +4,7 @@ archive/issues_008443.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @dandrake mhampton\n\nThe problem seems to be duplicate cell IDs.  The function `Worksheet.edit_save` parses a worksheet's text into a list of cells.  If the worksheet ends with a text cell, the function appends a compute cell.  But the existing code does not update the cell counter, which is the ID of the next new cell, **before** it appends the cell.  The appended cell's ID could match an existing ID.  If two cells have the same ID, the browser can jump to the second one, at the end of the worksheet, after you evaluate the predecessor of the first.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/f28cd98f3623316c).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8443\n\n",
+    "closed_at": "2010-03-09T04:59:10Z",
     "created_at": "2010-03-05T12:02:34Z",
     "labels": [
         "component: notebook",

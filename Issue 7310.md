@@ -4,6 +4,7 @@ archive/issues_007310.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nJavascript prompts are jarring, and more importantly, are not properly handled by Selenium.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7310\n\n",
+    "closed_at": "2009-11-11T19:39:39Z",
     "created_at": "2009-10-26T13:27:43Z",
     "labels": [
         "component: notebook",

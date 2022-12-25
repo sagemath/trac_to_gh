@@ -1,22 +1,23 @@
-# Issue 4250: In QQ[t], 2**t should raise an error, but it crashes
+# Issue 4250: [with patch, positive review] In QQ[t], 2**t should raise an error, but it crashes
 
 archive/issues_004250.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: crash, polynomial ring, rationals\n\nOf course, doing\n\n```\nsage: R.<t>=QQ[]\nsage: 2**t\n```\nshould result in a traceback. In fact it does so for `R.<t>=ZZ[]`. But over `QQ`, it crashes with a segmentation fault.\n\nRunning `sage -gdb` yields a very long output, too long to reproduce it here, and sorry that I don't know how to save the output of `bt`.\n\nI use Sage version 3.1.2, and it occurs on two different Linux machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4250\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @malb\n\nKeywords: crash, polynomial ring, rationals\n\nOf course, doing\n\n```\nsage: R.<t>=QQ[]\nsage: 2**t\n```\nshould result in a traceback. In fact it does so for `R.<t>=ZZ[]`. But over `QQ`, it crashes with a segmentation fault.\n\nRunning `sage -gdb` yields a very long output, too long to reproduce it here, and sorry that I don't know how to save the output of `bt`.\n\nI use Sage version 3.1.2, and it occurs on two different Linux machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4250\n\n",
+    "closed_at": "2008-10-31T14:20:50Z",
     "created_at": "2008-10-07T17:34:12Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "In QQ[t], 2**t should raise an error, but it crashes",
+    "title": "[with patch, positive review] In QQ[t], 2**t should raise an error, but it crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4250",
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: @malb
+Assignee: @burcin
 
 CC:  @malb
 

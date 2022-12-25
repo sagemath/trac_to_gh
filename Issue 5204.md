@@ -1,16 +1,17 @@
-# Issue 5204: simon_two_descent -- bug in the interface when number field has variable name 'x'
+# Issue 5204: [with new patch, positive review] simon_two_descent -- bug in the interface when number field has variable name 'x'
 
 archive/issues_005204.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n1. A basic bug in the wrapper, which is probably easy to fix:\n\n```\nsage: E = EllipticCurve('8320e1').change_ring(QuadraticField(-191,'x'))\nsage: E.simon_two_descent()\nTraceback (most recent call last):\n...\n---> 98     ans = sage_eval(v, {'Mod': _gp_mod, 'y': K.gen(0)})\nNameError: name 'ans' is not defined\n```\n\nThe problem is my choice of 'x' as generator name for the number field.  The fix is to always change the variable of the base number field to 'a' before feeding anything to pari.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5204\n\n",
+    "closed_at": "2009-03-24T23:16:07Z",
     "created_at": "2009-02-08T05:37:04Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "simon_two_descent -- bug in the interface when number field has variable name 'x'",
+    "title": "[with new patch, positive review] simon_two_descent -- bug in the interface when number field has variable name 'x'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5204",
     "user": "https://github.com/williamstein"

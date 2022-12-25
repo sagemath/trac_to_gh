@@ -1,15 +1,16 @@
-# Issue 705: Make vtk an easy-to-install optional sage package
+# Issue 705: [with optional spkg] Make vtk an easy-to-install optional sage package
 
 archive/issues_000705.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nFrom Josh:\n\n```\nI have a vtk meta package in my spkgs directory.\nIt automatically attempts to detect the tcl/tk libs\nand rebuild python if the tk bindings were not compiled on linux and\nrebuilds python as a framework on OSX, it then builds VTK.\n```\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/\n\nIssue created by migration from https://trac.sagemath.org/ticket/705\n\n",
+    "closed_at": "2008-01-09T02:12:39Z",
     "created_at": "2007-09-20T13:49:53Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Make vtk an easy-to-install optional sage package",
+    "title": "[with optional spkg] Make vtk an easy-to-install optional sage package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/705",
     "user": "https://github.com/williamstein"

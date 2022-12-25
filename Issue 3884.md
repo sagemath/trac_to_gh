@@ -1,16 +1,17 @@
-# Issue 3884: change banner in "sage -advanced"
+# Issue 3884: [with patch, positive review] change banner in "sage -advanced"
 
 archive/issues_003884.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nFrom Ralf Hemmecke:\n\n```\nwoodpecker:~/scratch/SAGE>./sage -advanced\n-----------------------------------------------------------\n-----------------------------------------------------------\n| SAGE: Software for Algebra and Geometry Experimentation |\nDidn't I hear you saying at ISSAC that SAGE is no longer an abbreviation?\n```\n\nIt should be the normal Sage banner. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3884\n\n",
+    "closed_at": "2008-08-23T00:06:40Z",
     "created_at": "2008-08-17T19:40:27Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "change banner in \"sage -advanced\"",
+    "title": "[with patch, positive review] change banner in \"sage -advanced\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3884",
     "user": "https://github.com/williamstein"

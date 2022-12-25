@@ -1,9 +1,10 @@
-# Issue 5343: trac login redirects to the front page
+# Issue 5343: [positive review] trac login redirects to the front page
 
 archive/issues_005343.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nAfter updating to Trac 0.11.3, the login link takes the user to the front page instead of the page they were looking at when they tried to login. It's annoying to go back and refresh to add some comments to an issue you were looking at.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5343\n\n",
+    "closed_at": "2009-07-04T01:23:11Z",
     "created_at": "2009-02-22T20:54:07Z",
     "labels": [
         "component: website/wiki",
@@ -11,7 +12,7 @@ archive/issues_005343.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "trac login redirects to the front page",
+    "title": "[positive review] trac login redirects to the front page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5343",
     "user": "https://github.com/burcin"

@@ -4,6 +4,7 @@ archive/issues_009778.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nAdded methods to create the Grotzsch graph and the Mycielski graphs. The Mycielski graphs are a sequence of triangle-free graphs with arbitrarily high chromatic number. The Grotzsch graph is (isomorphic to) the fourth graph in this series; it it triangle-free and has chromatic number equal to 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9779\n\n",
+    "closed_at": "2010-09-29T10:48:17Z",
     "created_at": "2010-08-22T00:48:00Z",
     "labels": [
         "component: graph theory"

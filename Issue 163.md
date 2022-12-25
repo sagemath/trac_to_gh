@@ -4,10 +4,12 @@ archive/issues_000163.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: pari, hyperu\n\nThis is funny:\n\n```\nP = plot(hypergeometric_U(1.0,1.0,x),0.1,0.9)\n```\nfails (hangs, actually) but \n\n```\nsage: f = lambda x: gp.eval(\"hyperu(1,1,%s)\"%x)\nsage: P = plot(f,0,1)\nsage: show(P)\n```\n\nhypergeometric_U is in functions/special.py. The error\nmay have something to do with the pari class.\n\nworks fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/163\n\n",
+    "closed_at": "2007-10-21T01:55:04Z",
     "created_at": "2006-10-29T22:51:31Z",
     "labels": [
-        "component: interfaces",
-        "minor"
+        "component: number theory",
+        "minor",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "plot hypergeometric_U fails",

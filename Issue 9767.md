@@ -3,10 +3,11 @@
 archive/issues_009767.json:
 ```json
 {
-    "body": "Assignee: @alexanderdreyer\n\nCC:  polybori @malb @wjp mvngu\n\nIn #8830 wqe worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.\n\nThe package at http://sage.math.washington.edu/home/dreyer/pb/polybori-0.6.4.p5.spkg backports this fix and reintroduces the dynamic libraries. The spkg is based on #9717 and assumes its sage-library patch to be applied. It installs, runs and passed testall on boxen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9768\n\n",
+    "body": "Assignee: @alexanderdreyer\n\nCC:  polybori @malb @wjp mvngu\n\nIn #8830 we worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.\n\nThe package at http://sage.math.washington.edu/home/dreyer/pb/polybori-0.6.4.p5.spkg backports this fix and reintroduces the dynamic libraries. The spkg is based on #9717 and assumes its sage-library patch to be applied. It installs, runs and passed testall on boxen.\n\n\n## Remark\nThere's an updated skpg, which adresses the issues of #9872:\nhttp://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9768\n\n",
+    "closed_at": "2010-09-16T00:53:58Z",
     "created_at": "2010-08-19T20:17:16Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -20,9 +21,14 @@ Assignee: @alexanderdreyer
 
 CC:  polybori @malb @wjp mvngu
 
-In #8830 wqe worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.
+In #8830 we worked around PolyBoRi's broken dynamic libraries by removing them after build, hence using the static ones instead. The problem was caused by improper handling of a global variable which was fixed for upcoming PolyBoRi 0.7.
 
 The package at http://sage.math.washington.edu/home/dreyer/pb/polybori-0.6.4.p5.spkg backports this fix and reintroduces the dynamic libraries. The spkg is based on #9717 and assumes its sage-library patch to be applied. It installs, runs and passed testall on boxen.
+
+
+## Remark
+There's an updated skpg, which adresses the issues of #9872:
+http://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/9768
 

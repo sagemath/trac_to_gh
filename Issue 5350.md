@@ -1,15 +1,16 @@
-# Issue 5350: [with patch, needs review] sage-clone should use hard links for the build directory
+# Issue 5350: [with patch, positive review] sage-clone should use hard links for the build directory
 
 archive/issues_005350.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  cwitty @robertwb ralf@hemmecke.de\n\nWe copy the build directory when we're cloning the tree. This wastes disk space, and makes switching between branches slow, since new files need to be loaded from disk while the previous ones might already be in the cache.\n\nAttached patch to the scripts repository changes the sage-clone script to hard link the build directory. On my laptop this saves >450 MB per clone.\n\n```\nburcin@karr ~/sage/sage-3.3/devel $ du -sh sage-*\n593M    sage-hl\n125M    sage-hl1\n557M    sage-main\n```\n\nAlso the time to clone on my laptop goes from:\n\n```\nreal    0m14.709s\nuser    0m4.640s\nsys     0m1.924s\n```\nto\n\n```\nreal    0m6.100s\nuser    0m4.712s\nsys     0m0.928s\n```\nabout 2.8 seconds of which is spent in the sage -b step.\n\nUnfortunately, hard linking the .c, .cpp, and .h files doesn't work. This might be a problem with how cython handles its output when the output file is already present. This would save another ~100MB if it works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5350\n\n",
+    "closed_at": "2009-06-26T17:45:24Z",
     "created_at": "2009-02-23T18:53:19Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] sage-clone should use hard links for the build directory",
+    "title": "[with patch, positive review] sage-clone should use hard links for the build directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5350",
     "user": "https://github.com/burcin"

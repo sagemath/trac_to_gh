@@ -1,16 +1,17 @@
-# Issue 9830: Strange behaviour of Permutation(list) when list contains 0
+# Issue 9830: Permutation(list) should check its input (?)
 
 archive/issues_009830.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  brunellus\n\n```\n~$ ulimit -v 1048576 \n~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Permutation([1]).signature()\n1\nsage: Permutation([0]).signature()\n-1\nsage: Permutation([1,0]).signature()\n-1\nsage: Permutation([0,1]).signature()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in signature(p)\n    739             -1\n    740         \"\"\"\n--> 741         return (-1)**(len(p)-len(p.to_cycles()))\n    742     \n    743 \n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in to_cycles(self, singletons)\n    556             l[i], next = False, l[i]\n    557             while next != cycleFirst:\n--> 558                 cycle.append( next )\n    559                 l[next - 1], next  = False, l[next - 1]\n    560             #Add the cycle to the list of cycles\n\nMemoryError:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9831\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  brunellus\n\nIt seems that ``Permutation(list)`` requires that the elements of list are exactly 1, 2, ..., n, but this is not clearly documented. Other values of ``list`` are accepted without error and lead to strange behaviours later.\n\nWhen ``list`` contains 0:\n\n```\n~$ ulimit -v 1048576 \n~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Permutation([1]).signature()\n1\nsage: Permutation([0]).signature()\n-1\nsage: Permutation([1,0]).signature()\n-1\nsage: Permutation([0,1]).signature()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in signature(p)\n    739             -1\n    740         \"\"\"\n--> 741         return (-1)**(len(p)-len(p.to_cycles()))\n    742     \n    743 \n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in to_cycles(self, singletons)\n    556             l[i], next = False, l[i]\n    557             while next != cycleFirst:\n--> 558                 cycle.append( next )\n    559                 l[next - 1], next  = False, l[next - 1]\n    560             #Add the cycle to the list of cycles\n\nMemoryError:\n```\nWith repeated elements:\n\n```\nsage: Permutation([1,1]).signature()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n\n/home/marc/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in signature(p)\n    739             -1\n    740         \"\"\"\n--> 741         return (-1)**(len(p)-len(p.to_cycles()))\n    742     \n    743 \n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in to_cycles(self, singletons)\n    556             l[i], next = False, l[i]\n    557             while next != cycleFirst:\n--> 558                 cycle.append( next )\n    559                 l[next - 1], next  = False, l[next - 1]\n    560             #Add the cycle to the list of cycles\n\nMemoryError:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9831\n\n",
+    "closed_at": "2013-07-22T15:28:55Z",
     "created_at": "2010-08-28T08:13:00Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Strange behaviour of Permutation(list) when list contains 0",
+    "title": "Permutation(list) should check its input (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9830",
     "user": "https://github.com/mezzarobba"
@@ -19,6 +20,10 @@ archive/issues_009830.json:
 Assignee: sage-combinat
 
 CC:  brunellus
+
+It seems that ``Permutation(list)`` requires that the elements of list are exactly 1, 2, ..., n, but this is not clearly documented. Other values of ``list`` are accepted without error and lead to strange behaviours later.
+
+When ``list`` contains 0:
 
 ```
 ~$ ulimit -v 1048576 
@@ -54,6 +59,32 @@ MemoryError                               Traceback (most recent call last)
 
 MemoryError:
 ```
+With repeated elements:
+
+```
+sage: Permutation([1,1]).signature()
+---------------------------------------------------------------------------
+MemoryError                               Traceback (most recent call last)
+
+/home/marc/<ipython console> in <module>()
+
+/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in signature(p)
+    739             -1
+    740         """
+--> 741         return (-1)**(len(p)-len(p.to_cycles()))
+    742     
+    743 
+
+/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in to_cycles(self, singletons)
+    556             l[i], next = False, l[i]
+    557             while next != cycleFirst:
+--> 558                 cycle.append( next )
+    559                 l[next - 1], next  = False, l[next - 1]
+    560             #Add the cycle to the list of cycles
+
+MemoryError:
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9831
 

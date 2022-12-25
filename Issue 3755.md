@@ -1,15 +1,16 @@
-# Issue 3755: [with patch; needs review] finance -- improve implementation of hurst exponent
+# Issue 3755: [with patch; positive review] finance -- improve implementation of hurst exponent
 
 archive/issues_003755.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis improves the examples, documentation, and implementation of the code in\nthe finance package for computing the Hurst exponent.  The main core improvement\nis that the algorithm is more sophisticated than the very naive one currently\nin Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3755\n\n",
+    "closed_at": "2008-08-06T01:04:19Z",
     "created_at": "2008-08-01T16:07:13Z",
     "labels": [
         "component: finance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] finance -- improve implementation of hurst exponent",
+    "title": "[with patch; positive review] finance -- improve implementation of hurst exponent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3755",
     "user": "https://github.com/williamstein"

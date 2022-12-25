@@ -1,9 +1,10 @@
-# Issue 3981: finance.TimeSeries - Add candlestick plot method.
+# Issue 3981: [with patch, positive review] finance.TimeSeries - Add candlestick plot method.
 
 archive/issues_003981.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: finance\n\nA candlestick plot is a nice way of visualizing open, high, low, and close stock information over intervals in a time series. The attached patch adds the method TimeSeries.plot_candlestick(bins) to do exactly that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3981\n\n",
+    "closed_at": "2008-09-19T03:13:17Z",
     "created_at": "2008-08-28T23:12:46Z",
     "labels": [
         "component: finance",
@@ -11,7 +12,7 @@ archive/issues_003981.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "finance.TimeSeries - Add candlestick plot method.",
+    "title": "[with patch, positive review] finance.TimeSeries - Add candlestick plot method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3981",
     "user": "https://github.com/cswiercz"

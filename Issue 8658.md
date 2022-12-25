@@ -4,6 +4,7 @@ archive/issues_008658.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: DSO\n\nopencdk fails to explicitly link against libgcrypt. This is exposed by the changed ld behavior in Fedora 13 (beta), see https://fedoraproject.org/wiki/UnderstandingDSOLinkChange\n\nThe new version fixes this and is necessary to compile on F13. You can get it at\n\nhttp://www.stp.dias.ie/~vbraun/Sage/spkg/opencdk-0.6.6.p4.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8658\n\n",
+    "closed_at": "2010-06-11T18:24:17Z",
     "created_at": "2010-04-07T22:24:48Z",
     "labels": [
         "component: algebra",

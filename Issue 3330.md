@@ -4,6 +4,7 @@ archive/issues_003330.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  gaetan.bisson@loria.fr\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because Sage attempts to find the GCD of multivariate polynomials over a relative number field using Singular, and Singular does not support relative number fields.  This should be implemented in Sage (probably by converting the relative number field into an absolute field, performing the computation, and converting back).\n\nSee also #3329, which is about the exact same test case, but requests only a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3330\n\n",
+    "closed_at": "2018-10-30T22:37:38Z",
     "created_at": "2008-05-29T17:37:52Z",
     "labels": [
         "component: commutative algebra"

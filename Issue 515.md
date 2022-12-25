@@ -4,6 +4,7 @@ archive/issues_000515.json:
 ```json
 {
     "body": "Assignee: somebody\n\nmabshoff discovered a memleak in the conversion route for rational numbers in the libsingular interface. The attached patch supposedly fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/515\n\n",
+    "closed_at": "2007-08-29T21:26:04Z",
     "created_at": "2007-08-29T20:50:02Z",
     "labels": [
         "component: basic arithmetic",

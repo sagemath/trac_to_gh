@@ -1,22 +1,23 @@
-# Issue 6939: [with patch, needs review] Make scrollbars appear on cell output when the output is too wide
+# Issue 6939: [with patch, positive review] Make scrollbars appear on cell output when the output is too wide
 
 archive/issues_006939.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777 @kcrisman boothby\n\nCurrently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.\n\nThis patch makes scrollbars appear on output that is too wide, but just on that output.\n\nTo test, do something like:\n\n```\nf=cos(x)-x\nshow(f.taylor(x,0,50))\n```\n\nin the notebook\n\nIssue created by migration from https://trac.sagemath.org/ticket/6939\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @qed777 @kcrisman boothby\n\nCurrently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.\n\nThis patch makes scrollbars appear on output that is too wide, but just on that output.\n\nTo test, do something like:\n\n```\nf=cos(x)-x\nshow(f.taylor(x,0,50))\n```\n\nin the notebook\n\nIssue created by migration from https://trac.sagemath.org/ticket/6939\n\n",
+    "closed_at": "2009-09-22T18:08:03Z",
     "created_at": "2009-09-15T22:08:01Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Make scrollbars appear on cell output when the output is too wide",
+    "title": "[with patch, positive review] Make scrollbars appear on cell output when the output is too wide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6939",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 CC:  @qed777 @kcrisman boothby
 

@@ -1,15 +1,16 @@
-# Issue 2545: [with patch, needs review] FractionFieldElement lacks derivative method
+# Issue 2545: [with patch, positive review] FractionFieldElement lacks derivative method
 
 archive/issues_002545.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nAttached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.\n\nSo these now work:\n\n```\nsage: R = ZZ['x']\nsage: S = R.fraction_field(); x = S.gen()\nsage: R(1).derivative(R(x))\n0\n\nsage: F = FractionField(PolynomialRing(RationalField(),'x,y'))\nsage: x,y = F.gens()\nsage: (1/(x+y)).derivative(x,y)\n2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2545\n\n",
+    "closed_at": "2008-03-18T00:06:36Z",
     "created_at": "2008-03-16T12:35:22Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] FractionFieldElement lacks derivative method",
+    "title": "[with patch, positive review] FractionFieldElement lacks derivative method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2545",
     "user": "https://github.com/burcin"

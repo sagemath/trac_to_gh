@@ -1,15 +1,16 @@
-# Issue 3623: Factory and pickling framework (part of coercion branch)
+# Issue 3623: [with patch, positive review] Factory and pickling framework (part of coercion branch)
 
 archive/issues_003623.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nUniqueness of parents makes Sage operate much more smoothly. This leads to an enormous amount of nearly identical caching code scattered throughout the library. This factory handles all the caching for you, and also provides a good pickling mechanism. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3623\n\n",
+    "closed_at": "2008-12-04T11:57:20Z",
     "created_at": "2008-07-09T08:03:41Z",
     "labels": [
         "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Factory and pickling framework (part of coercion branch)",
+    "title": "[with patch, positive review] Factory and pickling framework (part of coercion branch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3623",
     "user": "https://github.com/robertwb"

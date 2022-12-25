@@ -3,7 +3,8 @@
 archive/issues_003049.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe following calculation is trivial, so shouldn't overflow:\n\n```\nsage: len(Compositions(30))\n536870912\nsage: len(Compositions(40))\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3049\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe following calculation is trivial, so shouldn't overflow:\n\n```\nsage: len(Compositions(30))\n536870912\nsage: len(Compositions(40))\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```        \n\n\nThis is also lame:\n\n```\nsage: len(Partitions(1000))\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3049\n\n",
+    "closed_at": "2008-04-28T19:20:30Z",
     "created_at": "2008-04-28T15:24:02Z",
     "labels": [
         "component: combinatorics",
@@ -26,6 +27,16 @@ The following calculation is trivial, so shouldn't overflow:
 sage: len(Compositions(30))
 536870912
 sage: len(Compositions(40))
+Traceback (most recent call last):
+...
+OverflowError: long int too large to convert to int
+```        
+
+
+This is also lame:
+
+```
+sage: len(Partitions(1000))
 Traceback (most recent call last):
 ...
 OverflowError: long int too large to convert to int

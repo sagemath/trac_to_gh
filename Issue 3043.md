@@ -3,7 +3,8 @@
 archive/issues_003043.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe gfan SPKG.txt says:\n\n## License\n* GPL\n\nit does not say which version of the GPL it is.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3043\n\n",
+    "body": "The gfan SPKG.txt says:\n\n## License\n* GPL\n\nit does not say which version of the GPL it is.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3043\n\n",
+    "closed_at": "2010-01-25T14:13:32Z",
     "created_at": "2008-04-27T12:58:06Z",
     "labels": [
         "component: commutative algebra",
@@ -17,8 +18,6 @@ archive/issues_003043.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
-Assignee: @malb
-
 The gfan SPKG.txt says:
 
 ## License

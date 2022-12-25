@@ -1,16 +1,17 @@
-# Issue 6932: jordan_form with transformation=true fails on a 1x1 matrix.
+# Issue 6932: jordan_form with transformation=true fails on a 1x1 matrix
 
 archive/issues_006932.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: jordan_form\n\nThe following code fails:\n\n```\nM=Matrix(1,1,[1])\nM.jordan_form(transformation=True)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6932\n\n",
+    "closed_at": "2010-03-03T04:11:11Z",
     "created_at": "2009-09-15T05:54:37Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "jordan_form with transformation=true fails on a 1x1 matrix.",
+    "title": "jordan_form with transformation=true fails on a 1x1 matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6932",
     "user": "https://github.com/syazdani77"

@@ -4,6 +4,7 @@ archive/issues_009059.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nSome useful tests :\n\n* is_even_hole_free\n* is_odd_hole_free\n* is_odd_antihole_free\n\nMay be worth a dedicated function... :-)\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9059\n\n",
+    "closed_at": "2010-06-29T16:46:25Z",
     "created_at": "2010-05-26T22:34:40Z",
     "labels": [
         "component: graph theory"

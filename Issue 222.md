@@ -4,6 +4,7 @@ archive/issues_000222.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\ncwitty: Yuck:\n[10:48pm] cwitty: sage: RS = RealField(sci_not=True)\n[10:48pm] cwitty: sage: R == RS\n[10:48pm] cwitty: sage: RS.scientific_notation(False)\n[10:48pm] cwitty: sage: RR == RS\n[10:48pm] cwitty: (Oops... second line should be \"RR == RS\")\n[10:49pm] cwitty: Second line prints False, fourth line prints True.  Shouldn't fields be immutable?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/222\n\n",
+    "closed_at": "2007-10-21T02:36:57Z",
     "created_at": "2007-01-26T07:09:28Z",
     "labels": [
         "component: basic arithmetic",

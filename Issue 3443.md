@@ -1,16 +1,17 @@
-# Issue 3443: notebook -- confirmation e-mail sent even when username already taken
+# Issue 3443: [with patch, positive review] notebook -- confirmation e-mail sent even when username already taken
 
 archive/issues_003443.json:
 ```json
 {
     "body": "Assignee: timothyclemans\n\n```\nI tried to register twice on the online notebook at https://sage.math.washington.edu:8102,\nand after the registration page it says that my user name is taken (as\nexpected). But, it still sends me a confirmation email. I click on the\nregistration confirmation link and it says that I've confirmed.\nIt shouldn't send the email at all.\n(it also does the same thing at 8103)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3443\n\n",
+    "closed_at": "2008-06-25T03:50:00Z",
     "created_at": "2008-06-16T22:46:12Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- confirmation e-mail sent even when username already taken",
+    "title": "[with patch, positive review] notebook -- confirmation e-mail sent even when username already taken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3443",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

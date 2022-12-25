@@ -1,16 +1,17 @@
-# Issue 1550: use libecm instead of pexpect+ecm binary
+# Issue 1550: [with patch, with positive review] use libecm instead of pexpect+ecm binary
 
 archive/issues_001550.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI noticed the GMP-ECM interface currently calls the ecm binary through a text interface, with command line \nparameters, and gets results by parsing the output of ecm.\n\nIt would be much better and more efficient to use the C interface libecm (see the ecm.h header file, and the\necmfactor.c file distributed without GMP-ECM). Note that the C interface already returns information about the\nfound factor and the cofactor (prime, composite). Also, the libecm.a file is already compiled by SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1550\n\n",
+    "closed_at": "2008-01-23T04:20:03Z",
     "created_at": "2007-12-17T13:46:48Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "use libecm instead of pexpect+ecm binary",
+    "title": "[with patch, with positive review] use libecm instead of pexpect+ecm binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1550",
     "user": "https://github.com/zimmermann6"

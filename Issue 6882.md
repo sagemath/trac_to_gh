@@ -1,22 +1,23 @@
-# Issue 6882: bug in conversion of "i" from Maxima to Sage
+# Issue 6882: bugs in conversion of variable names from Maxima to Sage
 
 archive/issues_006882.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\n```\n-----------\nsage: from sage.calculus.calculus import symbolic_expression_from_maxima_string\nsage: symbolic_expression_from_maxima_string('%i')\nI\nsage: symbolic_expression_from_maxima_string('i')\nI\n-----------\n\nSo as you see, we are converting both '%i' and 'i' to  imaginary 'I' !!!!\n```\n\nSee the sage-devel thread about this on Sept 3 for some discussion and motivation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6882\n\n",
+    "body": "Assignee: @rwst\n\nCC:  @robert-marik\n\n```\n-----------\nsage: from sage.calculus.calculus import symbolic_expression_from_maxima_string\nsage: symbolic_expression_from_maxima_string('%i')\nI\nsage: symbolic_expression_from_maxima_string('i')\nI\nsage: symbolic_expression_from_maxima_string('%inf')\nInf\n-----------\n\nSo as you see, we are converting both '%i' and 'i' to  imaginary 'I' !!!!\n```\nThe ticket should implement a multi word replace and use that on a symtable with additional entries `'e':'_e', 'i':'_i', 'I':'_I'`.\n\nWe do not want to be surprised when some new Maxima variable starting %i is introduced. At the moment it's really just a string replace from %i to I, without sense of word boundaries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6882\n\n",
+    "closed_at": "2014-07-03T12:41:31Z",
     "created_at": "2009-09-03T22:58:43Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
-    "title": "bug in conversion of \"i\" from Maxima to Sage",
+    "title": "bugs in conversion of variable names from Maxima to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6882",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @burcin
+Assignee: @rwst
 
 CC:  @robert-marik
 
@@ -27,12 +28,15 @@ sage: symbolic_expression_from_maxima_string('%i')
 I
 sage: symbolic_expression_from_maxima_string('i')
 I
+sage: symbolic_expression_from_maxima_string('%inf')
+Inf
 -----------
 
 So as you see, we are converting both '%i' and 'i' to  imaginary 'I' !!!!
 ```
+The ticket should implement a multi word replace and use that on a symtable with additional entries `'e':'_e', 'i':'_i', 'I':'_I'`.
 
-See the sage-devel thread about this on Sept 3 for some discussion and motivation.
+We do not want to be surprised when some new Maxima variable starting %i is introduced. At the moment it's really just a string replace from %i to I, without sense of word boundaries.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6882
 

@@ -1,16 +1,17 @@
-# Issue 1733: notebook bug -- %foo (or anything else) in a cell by itself (with nothing else in the cell) does not give an error but it *should*
+# Issue 1733: [with patch; positive review] notebook bug -- %foo (or anything else) in a cell by itself (with nothing else in the cell) does not give an error but it *should*
 
 archive/issues_001733.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is probably easy to fix in server/notebook/worksheet.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/1733\n\n",
+    "closed_at": "2008-05-12T11:03:18Z",
     "created_at": "2008-01-09T08:51:02Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook bug -- %foo (or anything else) in a cell by itself (with nothing else in the cell) does not give an error but it *should*",
+    "title": "[with patch; positive review] notebook bug -- %foo (or anything else) in a cell by itself (with nothing else in the cell) does not give an error but it *should*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1733",
     "user": "https://github.com/williamstein"

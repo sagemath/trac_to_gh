@@ -1,16 +1,17 @@
-# Issue 6144: Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)
+# Issue 6144: [with patch, positive review] Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)
 
 archive/issues_006144.json:
 ```json
 {
     "body": "CC:  @williamstein\n\n```\nsage: exp(x)*exp(2*x)\ne^(2*x)*e^x\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6144\n\n",
+    "closed_at": "2009-06-05T02:01:32Z",
     "created_at": "2009-05-28T05:27:18Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)",
+    "title": "[with patch, positive review] Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6144",
     "user": "https://github.com/mwhansen"

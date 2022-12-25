@@ -1,16 +1,17 @@
-# Issue 5669: [with patch, needs review] New algorithm for Max Clique in Graph class
+# Issue 5669: New algorithm for Max Clique in Graph class
 
 archive/issues_005669.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nKeywords: independant set stable clique\n\nI recently had to compute a maximum stable set in a graph with 100 vertices and ended up waiting a whole day ( to no good end ) for Sage to compute it. The current algorithm uses the library NetworkX whose algorithm is not nearly as efficient as Cliquer :\n\nhttp://www.tkk.fi/~pat/cliquer.html\n\nIt is based on an algorithm published in 2002, and it gave me a result in less than a millisecond ;-)\n\nHere are the modification I made :\n- I created a spkg file containing the sources of this software for it to be available in SAGE\n- I wrote the interface to use it\n- I modified the Graph class to use this software instead.\n- Added to the function to compute the maximum clique, I added the function Maximum independant set ( which is a similar notion for the complement of a graph, a bit more customary ). As the algorithm provided a function to compute all the maximum cliques, I also added this function\n\nIssue created by migration from https://trac.sagemath.org/ticket/5669\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nKeywords: independant set stable clique\n\nI recently had to compute a maximum stable set in a graph with 100 vertices and ended up waiting a whole day ( to no good end ) for Sage to compute it. The current algorithm uses the library NetworkX whose algorithm is not nearly as efficient as Cliquer :\n\nhttp://www.tkk.fi/~pat/cliquer.html\n\nIt is based on an algorithm published in 2002, and it gave me a result in less than a millisecond ;-)\n\nHere are the modification I made :\n- I created a spkg file containing the sources of this software for it to be available in SAGE\n- I wrote the interface to use it\n- I modified the Graph class to use this software instead.\n- Added to the function to compute the maximum clique, I added the function Maximum independant set ( which is a similar notion for the complement of a graph, a bit more customary ). As the algorithm provided a function to compute all the maximum cliques, I also added this function\n\nNote: The spkg can be found in http://sage.math.washington.edu/home/mabshoff/SPKG/cliquer-1.2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5669\n\n",
+    "closed_at": "2009-06-22T22:34:23Z",
     "created_at": "2009-04-02T20:16:24Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] New algorithm for Max Clique in Graph class",
+    "title": "New algorithm for Max Clique in Graph class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5669",
     "user": "https://github.com/nathanncohen"
@@ -33,6 +34,8 @@ Here are the modification I made :
 - I wrote the interface to use it
 - I modified the Graph class to use this software instead.
 - Added to the function to compute the maximum clique, I added the function Maximum independant set ( which is a similar notion for the complement of a graph, a bit more customary ). As the algorithm provided a function to compute all the maximum cliques, I also added this function
+
+Note: The spkg can be found in http://sage.math.washington.edu/home/mabshoff/SPKG/cliquer-1.2.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/5669
 

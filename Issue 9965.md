@@ -4,9 +4,10 @@ archive/issues_009965.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jhpalmieri\n\nThis is a follow-up of problems noted on #8633 (see the bottom of the ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9966\n\n",
+    "closed_at": "2010-09-30T02:03:13Z",
     "created_at": "2010-09-22T04:00:58Z",
     "labels": [
-        "component: notebook",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",

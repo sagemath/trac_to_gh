@@ -1,15 +1,16 @@
-# Issue 1895: [with patch, needs review] deal with passed through keyword arguments for Gröbner basis computation
+# Issue 1895: [with patch, with positive review] deal with passed through keyword arguments for Gröbner basis computation
 
 archive/issues_001895.json:
 ```json
 {
     "body": "Assignee: @malb\n\nRe-adding the missing hunk 2 of #1837.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1895\n\n",
+    "closed_at": "2008-01-23T22:09:13Z",
     "created_at": "2008-01-23T17:00:33Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] deal with passed through keyword arguments for Gr\u00f6bner basis computation",
+    "title": "[with patch, with positive review] deal with passed through keyword arguments for Gr\u00f6bner basis computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1895",
     "user": "https://github.com/malb"

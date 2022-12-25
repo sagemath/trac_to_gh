@@ -1,16 +1,17 @@
-# Issue 1934: sage-check for ATLAS broken on OSX
+# Issue 1934: [with spkg] sage-check for ATLAS broken on OSX
 
 archive/issues_001934.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn OSX we need to exit `sage-check` since we currently do not build ATLAS on OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1934\n\n",
+    "closed_at": "2008-01-26T09:26:47Z",
     "created_at": "2008-01-26T09:17:47Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "sage-check for ATLAS broken on OSX",
+    "title": "[with spkg] sage-check for ATLAS broken on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1934",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

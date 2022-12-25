@@ -3,7 +3,8 @@
 archive/issues_007138.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nUsing\n\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\" \n\nLooking at the directory $SAGE_HOME/local/lib, we can see the *freetype*' libraries are 32-bit, even though SAGE64 was set to \"yes\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/7138\n\n",
+    "body": "Assignee: tbd\n\nUsing\n\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\" \n\nLooking at the directory $SAGE_HOME/local/lib, we can see the *freetype* libraries are 32-bit, even though SAGE64 was set to \"yes\"\n\n```\ndrkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file libfreetype*\nlibfreetype.a:  current ar archive, not a dynamic executable or shared object\nlibfreetype.la: commands text\nlibfreetype.so: ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibfreetype.so.6:       ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibfreetype.so.6.3.16:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\n\n```\nThis is far from the only package building 32-bit when SAGE64 is set to \"yes\" on Solaris. All of the following do, and I suspect there are many others too.\n\n* zlib #7128\n* libgpg_error #7129\n* libpng #7130\n* libcliquer #7131\n* pari #7133\n* ntl #7134\n* python #7135\n* gp #7136 \n* ratpoints #7137\n\nmpir currently mixes 32 and 64-bit objects, so does not build at all #7132.\n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. This is not a very difficult task really. Whilst any changes to the source that might be necessary for a port would take a lot of time, finding the right flags to build with should be quite easy. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7138\n\n",
+    "closed_at": "2010-01-04T02:01:26Z",
     "created_at": "2009-10-06T01:09:25Z",
     "labels": [
         "component: porting: solaris",
@@ -25,7 +26,38 @@ Using
 * gcc 4.4.1
 * SAGE64 exported to "yes" 
 
-Looking at the directory $SAGE_HOME/local/lib, we can see the *freetype*' libraries are 32-bit, even though SAGE64 was set to "yes"
+Looking at the directory $SAGE_HOME/local/lib, we can see the *freetype* libraries are 32-bit, even though SAGE64 was set to "yes"
+
+```
+drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file libfreetype*
+libfreetype.a:  current ar archive, not a dynamic executable or shared object
+libfreetype.la: commands text
+libfreetype.so: ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped
+libfreetype.so.6:       ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped
+libfreetype.so.6.3.16:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped
+
+```
+This is far from the only package building 32-bit when SAGE64 is set to "yes" on Solaris. All of the following do, and I suspect there are many others too.
+
+* zlib #7128
+* libgpg_error #7129
+* libpng #7130
+* libcliquer #7131
+* pari #7133
+* ntl #7134
+* python #7135
+* gp #7136 
+* ratpoints #7137
+
+mpir currently mixes 32 and 64-bit objects, so does not build at all #7132.
+
+I will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.
+
+Although there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.
+
+IBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.
+
+The sensible way to resolve this is to add the correct flag on every platform. This is not a very difficult task really. Whilst any changes to the source that might be necessary for a port would take a lot of time, finding the right flags to build with should be quite easy. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7138
 

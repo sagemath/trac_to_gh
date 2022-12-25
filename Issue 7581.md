@@ -4,6 +4,7 @@ archive/issues_007581.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  simonking\n\nMike Hansen wrote on [sage-devel]:\n\nThe following messages are probably relevant for the fast conversion\nbetween singular polynomial rings:\n\nOn Sat, Oct 18, 2008 at 2:55 AM, Michael Brickenstein\n<brickenstein`@`mfo.de> wrote:\n> In Singular the same thing is essentially done from the > interpreter\n> level by the more general command fetch.\n> I had a look, what it does internally and came to the conclusion,\n> that it just calls\n> poly prCopyR(poly p, ring src_r, ring dest_r)\n> in your simple case (same coefficient domains).\n> So first, you should setup a new ring and\n> then map the polynomial via\n> prCopyR\n\n>\n> Michael\n\n\nOn Mon, Oct 20, 2008 at 8:43 PM,  <hannes`@`mathematik.uni-kl.de> wrote:\n> if the monomial ordering is really the same,\n> you may also use\n> poly prCopyR_NoSort(poly p, ring src_r, ring dest_r)\n> which avoids the sorting the polynomial after mapping each monomial.\n> There are also corresponding routines for ideals\n> (ideal idrCopyR(ideal id, ring src_r, ring dest_r),\n> ideal idrCopyR_NoSort(ideal id, ring src_r, ring dest_r)\n> )\n\n>\n\nIssue created by migration from https://trac.sagemath.org/ticket/7581\n\n",
+    "closed_at": "2009-12-04T05:48:54Z",
     "created_at": "2009-12-02T11:47:01Z",
     "labels": [
         "component: commutative algebra"

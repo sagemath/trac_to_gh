@@ -3,7 +3,8 @@
 archive/issues_006884.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nThe following doctests failed in Sage 4.1.2.alpha0 on mod.math:\n\n```\nsage -t -long devel/sage-main/sage/server/notebook/notebook.py # 12 doctests failed\nsage -t -long devel/sage-main/sage/server/notebook/worksheet.py # 5 doctests failed\n```\nThis was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5370af4b74c5ca3c) thread. A full log is attached with this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6884\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nThe following doctests failed in Sage 4.1.2.alpha0 on mod.math:\n\n```\nsage -t -long devel/sage-main/sage/server/notebook/notebook.py # 12 doctests failed\nsage -t -long devel/sage-main/sage/server/notebook/worksheet.py # 5 doctests failed\n```\nThis was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5370af4b74c5ca3c) thread. A full log is attached with this ticket. The same failures were [also reported](http://groups.google.com/group/sage-devel/browse_thread/thread/5b33219224ead7fa).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6884\n\n",
+    "closed_at": "2009-09-07T16:19:48Z",
     "created_at": "2009-09-04T07:45:12Z",
     "labels": [
         "component: notebook",
@@ -26,7 +27,7 @@ The following doctests failed in Sage 4.1.2.alpha0 on mod.math:
 sage -t -long devel/sage-main/sage/server/notebook/notebook.py # 12 doctests failed
 sage -t -long devel/sage-main/sage/server/notebook/worksheet.py # 5 doctests failed
 ```
-This was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5370af4b74c5ca3c) thread. A full log is attached with this ticket.
+This was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5370af4b74c5ca3c) thread. A full log is attached with this ticket. The same failures were [also reported](http://groups.google.com/group/sage-devel/browse_thread/thread/5b33219224ead7fa).
 
 Issue created by migration from https://trac.sagemath.org/ticket/6884
 

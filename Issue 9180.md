@@ -4,6 +4,7 @@ archive/issues_009180.json:
 ```json
 {
     "body": "Assignee: jason, jkantor\n\nCC:  @rishikesha @jdemeyer\n\nNeeded for #4475, but quite self contained and doesn't require any number theory to understand or review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9180\n\n",
+    "closed_at": "2011-07-22T12:49:05Z",
     "created_at": "2010-06-07T20:40:08Z",
     "labels": [
         "component: numerical"

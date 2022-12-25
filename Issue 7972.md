@@ -4,6 +4,7 @@ archive/issues_007972.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n`show_identifiers` works fine on the command line, but not in the notebook.\n\n```\nWhen I use show_identifiers() from the command line, the behaviour is\nas described.  But if I use it from a notebook, then it returns an\narray with 1746 elements, even if I call reset().  The first few\nelements are\n\n['paretovariate', 'is_MPolynomial', 'cartan_matrix',\n'is_NumberFieldElement', 'elliptic_curves', 'sleep',\n\nWould it be more sensible not to display these omnipresent\nidentifiers?  It's hard to find my own variables in the mess!\n(I'm on 10.6, core 2 duo, running 4.3, if this is a bug)\n\nCheers,\nFelix\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7972\n\n",
+    "closed_at": "2010-01-19T05:58:02Z",
     "created_at": "2010-01-18T06:13:19Z",
     "labels": [
         "component: notebook",

@@ -1,9 +1,10 @@
-# Issue 5008: Solaris/gcc 4.3.2: fix matplotlib build
+# Issue 5008: [with spkg, positive review] Solaris/gcc 4.3.2: fix matplotlib build
 
 archive/issues_005008.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMatplotlib has some build problems on Solaris when using gcc 4.3.2 that do not happen on other platforms.\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5008\n\n",
+    "closed_at": "2009-01-19T12:01:43Z",
     "created_at": "2009-01-18T06:31:49Z",
     "labels": [
         "component: porting: solaris",
@@ -11,7 +12,7 @@ archive/issues_005008.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Solaris/gcc 4.3.2: fix matplotlib build",
+    "title": "[with spkg, positive review] Solaris/gcc 4.3.2: fix matplotlib build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5008",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

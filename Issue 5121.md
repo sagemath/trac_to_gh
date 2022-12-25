@@ -1,9 +1,10 @@
-# Issue 5121: major bug in plot command
+# Issue 5121: [with patch, positive review] major bug in plot command
 
 archive/issues_005121.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve('37a')\nsage: plot(E)\nsage: plot(E, xmin=25,xmax=25)\nTraceback (most recent call last):\n...\nAttributeError: 'SymbolicEquation' object has no attribute '_fast_float_'\n```\n\nThis broke David Hansen's thesis.  It also caused me a lot of embarasement during my talk at Sage Days 12!!!\n\nIt is a new bug introduced by some plot refactoring recently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5121\n\n",
+    "closed_at": "2009-01-29T00:27:53Z",
     "created_at": "2009-01-28T20:07:18Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005121.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "major bug in plot command",
+    "title": "[with patch, positive review] major bug in plot command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5121",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,16 @@
-# Issue 237: create an interface to the "Inverse Symbolic Calculator"
+# Issue 237: Add inverse expression/equation identifier capability to Sage
 
 archive/issues_000237.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kini @slel\n\nWrite a function that queries this web pge and gives the result:\n\n    http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/237\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kini @slel\n\nIt would be nice to have some sort of inverse expression finder that takes a real number and returns possible identities it might be, like the identify Maple command or the Inverse Symbolic Calculator of yore.  This could be via a web interface or by having an spkg (perhaps optional) for such functionality.\n\nRelated:\n\n- SageMath's `algdep` aka `algebraic_dependency` function: [code](https://github.com/sagemath/sage/blob/9.4.rc2/src/sage/arith/misc.py#L44) - [docs](https://doc.sagemath.org/html/en/reference/rings_standard/sage/arith/misc.html#sage.arith.misc.algdep)\n  - based on PARI's algdep\n  - also available as a method of various classes of floating-point numbers\n- Ordner: [Ordner home](https://fungrim.org/ordner/) - [blog post introducing Ordner](http://fredrikj.net/blog/2019/09/what-is-the-most-common-real-number/)\n- [xkcd comic: Approximations](https://xkcd.com/1047/)\n- [RIES](http://mrob.com/pub/ries/)\n- [Maple's \"identify\"](https://www.maplesoft.com/support/help/Maple/view.aspx?path=identify)\n- SageMath's interface to the OEIS: [code](https://github.com/sagemath/sage/blob/develop/src/sage/databases/oeis.py) - [docs](https://doc.sagemath.org/html/en/reference/databases/sage/databases/oeis.html)\n- [sage-devel 2012-04 discussion](https://groups.google.com/g/sage-devel/c/M5oqX85XgU0)\n- [Former ISC at CECM](http://web.archive.org/web/20150727021614/http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html)\n- [Former ISC at CARMA](https://web.archive.org/web/20180828122202/http://isc.carma.newcastle.edu.au/)\n- [Working archived ISC](http://wayback.cecm.sfu.ca/projects/ISC/ISCmain.html)\n- [AskConstants Mathematica package](http://askconstants.org)\n- [David R. Stoutemyer. How to hunt wild constants. arxiv:2103.16720](https://arxiv.org/abs/2103.16720)\n\n---\n\nOriginal ticket title and summary:\n\nCreate an interface to the \"Inverse Symbolic Calculator\"\n\nWrite a function that queries this web page and gives the result:\n\n    http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html\n\nSee sage/databases/sloane.py for ideas for how to do this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/237\n\n",
     "created_at": "2007-02-01T20:26:05Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "create an interface to the \"Inverse Symbolic Calculator\"",
+    "title": "Add inverse expression/equation identifier capability to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/237",
     "user": "https://github.com/williamstein"
@@ -20,9 +20,37 @@ Assignee: @williamstein
 
 CC:  @kini @slel
 
-Write a function that queries this web pge and gives the result:
+It would be nice to have some sort of inverse expression finder that takes a real number and returns possible identities it might be, like the identify Maple command or the Inverse Symbolic Calculator of yore.  This could be via a web interface or by having an spkg (perhaps optional) for such functionality.
+
+Related:
+
+- SageMath's `algdep` aka `algebraic_dependency` function: [code](https://github.com/sagemath/sage/blob/9.4.rc2/src/sage/arith/misc.py#L44) - [docs](https://doc.sagemath.org/html/en/reference/rings_standard/sage/arith/misc.html#sage.arith.misc.algdep)
+  - based on PARI's algdep
+  - also available as a method of various classes of floating-point numbers
+- Ordner: [Ordner home](https://fungrim.org/ordner/) - [blog post introducing Ordner](http://fredrikj.net/blog/2019/09/what-is-the-most-common-real-number/)
+- [xkcd comic: Approximations](https://xkcd.com/1047/)
+- [RIES](http://mrob.com/pub/ries/)
+- [Maple's "identify"](https://www.maplesoft.com/support/help/Maple/view.aspx?path=identify)
+- SageMath's interface to the OEIS: [code](https://github.com/sagemath/sage/blob/develop/src/sage/databases/oeis.py) - [docs](https://doc.sagemath.org/html/en/reference/databases/sage/databases/oeis.html)
+- [sage-devel 2012-04 discussion](https://groups.google.com/g/sage-devel/c/M5oqX85XgU0)
+- [Former ISC at CECM](http://web.archive.org/web/20150727021614/http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html)
+- [Former ISC at CARMA](https://web.archive.org/web/20180828122202/http://isc.carma.newcastle.edu.au/)
+- [Working archived ISC](http://wayback.cecm.sfu.ca/projects/ISC/ISCmain.html)
+- [AskConstants Mathematica package](http://askconstants.org)
+- [David R. Stoutemyer. How to hunt wild constants. arxiv:2103.16720](https://arxiv.org/abs/2103.16720)
+
+---
+
+Original ticket title and summary:
+
+Create an interface to the "Inverse Symbolic Calculator"
+
+Write a function that queries this web page and gives the result:
 
     http://oldweb.cecm.sfu.ca/projects/ISC/ISCmain.html
+
+See sage/databases/sloane.py for ideas for how to do this.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/237
 

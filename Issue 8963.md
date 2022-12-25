@@ -4,6 +4,7 @@ archive/issues_008963.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat-devel@googlegroups.com\n\nThe row_stabilizer method of a tableau ignores elements of the tableau which are alone in their row, and this can cause problems.  For example,\n\n```\nsage: t = Tableau([[1,2],[3]])\nsage: rs = t.row_stabilizer()\nsage: PermutationGroupElement([(1,2),(3,)]) in rs\nFalse\nsage: rs.one().list()\n[1, 2]\n```\n\nThe expected output is \"True\" and \"[1, 2, 3]\".\n\nI will attach a patch fixing this in a few minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8963\n\n",
+    "closed_at": "2010-07-21T01:44:45Z",
     "created_at": "2010-05-14T15:32:55Z",
     "labels": [
         "component: combinatorics",

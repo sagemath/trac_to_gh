@@ -1,16 +1,17 @@
-# Issue 1391: bug in unit part of factorizations of multivariate polynomials
+# Issue 1391: [with patch, with positive review] bug in unit part of factorizations of multivariate polynomials
 
 archive/issues_001391.json:
 ```json
 {
     "body": "Assignee: @malb\n\nBehold this behavior:\n\n```\nsage: R.<a,b,c,d> = QQ[]\nsage: f =  (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: f.factor()\n(-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: F = f.factor()\nsage: F[0][0]\n-1\nsage: F.unit_part ()\n1\n```\n\nHowever it should be that F.unit_part() is -1 and F[0][0] is a-d.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1391\n\n",
+    "closed_at": "2008-01-20T02:36:50Z",
     "created_at": "2007-12-04T04:38:52Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "bug in unit part of factorizations of multivariate polynomials",
+    "title": "[with patch, with positive review] bug in unit part of factorizations of multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1391",
     "user": "https://github.com/williamstein"

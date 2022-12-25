@@ -3,11 +3,11 @@
 archive/issues_005814.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5814\n\n",
+    "body": "Assignee: @tkluck\n\nIn ipython, one can use the %prun directive to use a profiler on cell contents. We can support the same in sage. The attached patches allow this.\n\nApply:\n\n* [attachment:trac_5814-prun_notebook-combined.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/5814\n\n",
+    "closed_at": "2013-04-06T14:50:17Z",
     "created_at": "2009-04-17T21:50:36Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
     "title": "%prun doesn't work in the notebook",
@@ -16,9 +16,13 @@ archive/issues_005814.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: boothby
+Assignee: @tkluck
 
+In ipython, one can use the %prun directive to use a profiler on cell contents. We can support the same in sage. The attached patches allow this.
 
+Apply:
+
+* [attachment:trac_5814-prun_notebook-combined.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/5814
 

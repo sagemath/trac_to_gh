@@ -1,9 +1,10 @@
-# Issue 5434: [with patch, needs review] .shift() of a zero polynomial is broken
+# Issue 5434: [with patch, positive review] .shift() of a zero polynomial is broken
 
 archive/issues_005434.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\nsage: K.<x> = RDF[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = RR[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = AA[]\nsage: K(0).shift(3).is_zero()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5434\n\n",
+    "closed_at": "2009-03-05T00:07:32Z",
     "created_at": "2009-03-04T04:02:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_005434.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] .shift() of a zero polynomial is broken",
+    "title": "[with patch, positive review] .shift() of a zero polynomial is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5434",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

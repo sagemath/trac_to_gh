@@ -3,10 +3,12 @@
 archive/issues_008801.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis was requested by Ursula Whitcher on sage-support.  She adds:\n\n```\n  I'm playing with a family of plane curves with rational coefficients in \n  the complex projective plane.  So rational or complex numbers would be \n  enough for me to test examples.  In a perfect world I'd be able to \n  specify a family using rational functions of arbitrary constants \n  (something like a x^2 + b/(a-1) y^2), and compute the projective dual in \n  terms of those constants.\n```\n\nA good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8801\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: projective duality\n\nThis was requested by Ursula Whitcher on sage-support.  She adds:\n\n```\n  I'm playing with a family of plane curves with rational coefficients in \n  the complex projective plane.  So rational or complex numbers would be \n  enough for me to test examples.  In a perfect world I'd be able to \n  specify a family using rational functions of arbitrary constants \n  (something like a x^2 + b/(a-1) y^2), and compute the projective dual in \n  terms of those constants.\n```\n\nA good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8801\n\n",
+    "closed_at": "2016-02-24T19:35:24Z",
     "created_at": "2010-04-28T14:24:54Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: algebraic geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "implement the projective dual of a plane curve",
@@ -16,6 +18,8 @@ archive/issues_008801.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: projective duality
 
 This was requested by Ursula Whitcher on sage-support.  She adds:
 

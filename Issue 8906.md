@@ -3,7 +3,8 @@
 archive/issues_008906.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @burcin @AndrewAtLarge\n\nKeywords: gap3\n\nHere is an spkg wich contains a patched version of gap3 that compiles on linux/x86 and macosx/x86.\n\n[http://thales.math.uqam.ca/~robado/gap3-0.3.spkg](http://thales.math.uqam.ca/~robado/gap3-0.3.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8906\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin @AndrewAtLarge\n\nKeywords: gap3\n\nHere is a (new) spkg which contains Jean Michel's \"pre-packaged GAP3 with everything you need\". From his webpage:\n\n  To help people who are just interested in GAP3 because they need a package which has not been ported to GAP4, I have prepared an easy-to install minimal GAP3 distribution containing an up-to-date versions of the packages:\n\n  anusq, arep, autag, chevie, cryst, dce, grim, matrix, meataxe, monoid, nq, pcqa, sisyphos, specht, ve, vkcurve.\n\n  These packages have been chosen since most have no equivalent in GAP4. They are autoloaded when starting gap.This distribution includes only partial lists of small groups, 2-groups, 3-groups, character tables from the Atlas and tables of marks. It does not include either the packages:\n\n  anupq, grape, kbmag, xgap, cohomolo, gliss, guava, xmod\n\n  which have some equivalent in GAP4. You can get these extra features at\n\n  http://www.math.rwth-aachen.de/~Frank.Luebeck/gap/GAP3\n\nHere is a link to the corresponding upstream tarball:\n\n```\nhttp://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8906\n\n",
+    "closed_at": "2015-09-02T17:25:36Z",
     "created_at": "2010-05-06T14:07:54Z",
     "labels": [
         "component: packages: optional"
@@ -21,9 +22,25 @@ CC:  @burcin @AndrewAtLarge
 
 Keywords: gap3
 
-Here is an spkg wich contains a patched version of gap3 that compiles on linux/x86 and macosx/x86.
+Here is a (new) spkg which contains Jean Michel's "pre-packaged GAP3 with everything you need". From his webpage:
 
-[http://thales.math.uqam.ca/~robado/gap3-0.3.spkg](http://thales.math.uqam.ca/~robado/gap3-0.3.spkg)
+  To help people who are just interested in GAP3 because they need a package which has not been ported to GAP4, I have prepared an easy-to install minimal GAP3 distribution containing an up-to-date versions of the packages:
+
+  anusq, arep, autag, chevie, cryst, dce, grim, matrix, meataxe, monoid, nq, pcqa, sisyphos, specht, ve, vkcurve.
+
+  These packages have been chosen since most have no equivalent in GAP4. They are autoloaded when starting gap.This distribution includes only partial lists of small groups, 2-groups, 3-groups, character tables from the Atlas and tables of marks. It does not include either the packages:
+
+  anupq, grape, kbmag, xgap, cohomolo, gliss, guava, xmod
+
+  which have some equivalent in GAP4. You can get these extra features at
+
+  http://www.math.rwth-aachen.de/~Frank.Luebeck/gap/GAP3
+
+Here is a link to the corresponding upstream tarball:
+
+```
+http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8906
 

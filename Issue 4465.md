@@ -3,7 +3,8 @@
 archive/issues_004465.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is an error to a custom patch that we have to the matplotlib code so that we can have arrows that are shortened by a certain number of points.\n\n```\nThis week, I was drawing plot vector field using two ways : (1) plot_vector_field and (2) by simply suming up plenty of arrows as I wished. Since their was a fixed point somewhere, I came up with the problem of drawing a zero length arrow. Using sage 3.1.4, I get a zero division error. Where is this division from? The example below show that it is not from the slope as it can draw a vertical arrow.\n\nsage: arrow((1, 1), (2, 1))\nsage: arrow((1, 1), (1, 2))\nsage: arrow((1, 1), (1, 1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last) :\n...\n/home/slabbe/sage/local/lib/python2.5/site-packages/matplotlib/arrow_line.pyc in draw(self, renderer)\n    100         pixel_vector = (orig_t.transform_point(points[1]) - orig_t.transform_point(points[0]))\n    101         pixel_length=math.sqrt(sum(pixel_vector**2))\n--> 102         clip_fraction = renderer.points_to_pixels(self._arrowshorten)/pixel_length\n    103         head_clip_fraction = renderer.points_to_pixels(self._arrowshorten+self._arrowheadlength*0.8)/pixel_length\n    104\n\nZeroDivisionError: float division\n\nIn my problem, I would have been happy if arrow(x,x) would draw simply a point. I know I can define my own arrow but maybe sage's arrow could behave like myarrow ?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4465\n\n",
+    "body": "Assignee: @jasongrout\n\nThis is an error to a custom patch that we have to the matplotlib code so that we can have arrows that are shortened by a certain number of points.\n\n```\nThis week, I was drawing plot vector field using two ways : (1) plot_vector_field and (2) by simply suming up plenty of arrows as I wished. Since their was a fixed point somewhere, I came up with the problem of drawing a zero length arrow. Using sage 3.1.4, I get a zero division error. Where is this division from? The example below show that it is not from the slope as it can draw a vertical arrow.\n\nsage: arrow((1, 1), (2, 1))\nsage: arrow((1, 1), (1, 2))\nsage: arrow((1, 1), (1, 1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last) :\n...\n/home/slabbe/sage/local/lib/python2.5/site-packages/matplotlib/arrow_line.pyc in draw(self, renderer)\n    100         pixel_vector = (orig_t.transform_point(points[1]) - orig_t.transform_point(points[0]))\n    101         pixel_length=math.sqrt(sum(pixel_vector**2))\n--> 102         clip_fraction = renderer.points_to_pixels(self._arrowshorten)/pixel_length\n    103         head_clip_fraction = renderer.points_to_pixels(self._arrowshorten+self._arrowheadlength*0.8)/pixel_length\n    104\n\nZeroDivisionError: float division\n\nIn my problem, I would have been happy if arrow(x,x) would draw simply a point. I know I can define my own arrow but maybe sage's arrow could behave like myarrow ?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4465\n\n",
+    "closed_at": "2009-06-04T23:33:42Z",
     "created_at": "2008-11-08T03:03:22Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_004465.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 This is an error to a custom patch that we have to the matplotlib code so that we can have arrows that are shortened by a certain number of points.
 

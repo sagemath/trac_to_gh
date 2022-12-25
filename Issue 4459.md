@@ -1,9 +1,10 @@
-# Issue 4459: preparser incorrectly identifies integer methods that start with e
+# Issue 4459: preparser incorrectly identifies integer methods that start with e as scientific notation
 
 archive/issues_004459.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\nsage: 3.exp()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     RealNumber('3.e')xp()\n                       ^\nSyntaxError: invalid syntax\n\nsage: 3.is_square()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4459\n\n",
+    "closed_at": "2009-01-23T22:30:40Z",
     "created_at": "2008-11-07T03:19:02Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004459.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "preparser incorrectly identifies integer methods that start with e",
+    "title": "preparser incorrectly identifies integer methods that start with e as scientific notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4459",
     "user": "https://github.com/mwhansen"

@@ -1,16 +1,17 @@
-# Issue 2053: creating symbolic matrices is insanely slow
+# Issue 2053: [with patch; positive review] creating symbolic matrices is insanely slow
 
 archive/issues_002053.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nOn the fastest modern hardware we have:\n\n```\nsage: time m = matrix(SR, 20, [1..20^2])\nCPU times: user 0.34 s, sys: 0.12 s, total: 0.45 s\nWall time: 1.05\n```\nwhich is frickin' slow.  And the time isn't just in coercion, since\n\n```\nsage: time v = [SR(a) for a in [1..20^2]]\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2053\n\n",
+    "closed_at": "2008-02-07T10:10:31Z",
     "created_at": "2008-02-05T14:28:48Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "creating symbolic matrices is insanely slow",
+    "title": "[with patch; positive review] creating symbolic matrices is insanely slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2053",
     "user": "https://github.com/williamstein"

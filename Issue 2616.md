@@ -1,16 +1,17 @@
-# Issue 2616: Replace all matrix.submatrix() instances
+# Issue 2616: [with patch, positive review] Replace all matrix.submatrix() instances
 
 archive/issues_002616.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\nPending review and inclusion of #2355, we can replace all instances of M.submatrix() with `M[indexa, indexb]`\n\nNote: I only found one function is using the submatrix method (subdivisions in matrix2.pyx). \n\nIssue created by migration from https://trac.sagemath.org/ticket/2616\n\n",
+    "closed_at": "2008-04-14T20:39:19Z",
     "created_at": "2008-03-20T17:51:24Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Replace all matrix.submatrix() instances",
+    "title": "[with patch, positive review] Replace all matrix.submatrix() instances",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2616",
     "user": "https://github.com/dfdeshom"

@@ -3,10 +3,10 @@
 archive/issues_006720.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFrom Josh Kantor\n\n```\nIt was easier to work on a matlab python bridge just writing pure python C/api code.  I have a file matpy.c in my home directory on sage.math.\nOn sage.math if you start matlab and do\n\n>> mex -g -I/usr/local/sage/local/include/python2.5 matpy.c /usr/lib/libpython2.5.so.1\n\nThen you can do\n\n>> matemb(pythonfilename, pythonfunc, v1,v2,...,vn)\n\nThe function pythonfunc in pythonfilename will be called with arguments v1,v2,..,v_n which are matlab matrices or vectors, converted to python lists of lists.\n\n\nBefore starting matlab you may need to do\n\nexport PYTHONPATH= <current directory path>\n\nto make sure it sees files in the current directory.\n\nCurrently it doesn't process return values and of course its just a prototype.\n\n                                                                                   Josh Kantor\n```\n\nIncluding at an example or something based on the above could be very useful for some people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6720\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Josh Kantor\n\n```\nIt was easier to work on a matlab python bridge just writing pure python C/api code.  I have a file matpy.c in my home directory on sage.math.\nOn sage.math if you start matlab and do\n\n>> mex -v -I/usr/local/sage/local/include/python2.5 matpy.c /usr/lib/libpython2.5.so.1\n\nThen you can do\n\n>> matpy(pythonfilename, pythonfunc, v1,v2,...,vn)\n\nThe function pythonfunc in pythonfilename will be called with arguments v1,v2,..,v_n which are matlab matrices or vectors, converted to python lists of lists.\n\n\nBefore starting matlab you may need to do\n\nexport PYTHONPATH= <current directory path>\n\nto make sure it sees files in the current directory.\n\nCurrently it doesn't process return values and of course its just a prototype.\n\n                                                                                   Josh Kantor\n```\n\nIncluding at an example or something based on the above could be very useful for some people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6720\n\n",
     "created_at": "2009-08-09T21:04:16Z",
     "labels": [
-        "component: interfaces"
+        "component: interfaces: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "make it easy to use sage from matlab",
@@ -23,11 +23,11 @@ From Josh Kantor
 It was easier to work on a matlab python bridge just writing pure python C/api code.  I have a file matpy.c in my home directory on sage.math.
 On sage.math if you start matlab and do
 
->> mex -g -I/usr/local/sage/local/include/python2.5 matpy.c /usr/lib/libpython2.5.so.1
+>> mex -v -I/usr/local/sage/local/include/python2.5 matpy.c /usr/lib/libpython2.5.so.1
 
 Then you can do
 
->> matemb(pythonfilename, pythonfunc, v1,v2,...,vn)
+>> matpy(pythonfilename, pythonfunc, v1,v2,...,vn)
 
 The function pythonfunc in pythonfilename will be called with arguments v1,v2,..,v_n which are matlab matrices or vectors, converted to python lists of lists.
 

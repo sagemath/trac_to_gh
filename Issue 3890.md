@@ -1,16 +1,17 @@
-# Issue 3890: exact division syntax in finite fields of prime order
+# Issue 3890: [with patch, positive review] exact division syntax in finite fields of prime order
 
 archive/issues_003890.json:
 ```json
 {
     "body": "Assignee: somebody\n\nIt appears that the // operator is supported for most fields, but not for GF(prime).\n\nThe example involving GF(7,'a') should not produce a TypeError.\n\n```\nsage: GF(49,'a')(121)//GF(49,'a')(124)\n6\nsage: GF(7,'a')(121)//GF(7,'a')(124)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/joel/sage-patches/<ipython console> in <module>()\n\nTypeError: unsupported operand type(s) for //: 'sage.rings.integer_mod.IntegerMod_int' and 'sage.rings.integer_mod.IntegerMod_int'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3890\n\n",
+    "closed_at": "2009-01-25T20:58:30Z",
     "created_at": "2008-08-18T13:56:34Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "exact division syntax in finite fields of prime order",
+    "title": "[with patch, positive review] exact division syntax in finite fields of prime order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3890",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

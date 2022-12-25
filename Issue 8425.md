@@ -1,16 +1,17 @@
-# Issue 8425: BipartiteGraph add_edge allows bipartite property to be violated.
+# Issue 8425: BipartiteGraph add_edge allows bipartite property to be violated
 
 archive/issues_008425.json:
 ```json
 {
     "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, add_edge\n\nadd_edge() needs to be overridden in BipartiteGraph in order to preserve the bipartite property of the graph.\n\n```\nsage: # non-bipartite graphs are rejected by the constructor\nsage: BipartiteGraph(Graph({0:[1,2], 1:[2]}))\nTraceback (most recent call last)\n...\nTypeError: Input graph is not bipartite!\n\nsage: # but the same graph can be constructed edge-by-edge without raising an error\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices([0,1,2], left=[True,False,True])\nsage: bg.add_edges([(0,1), (1,2)])  # good so far\nsage: bg.add_edge(2,0)  # should raise exception!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8425\n\n",
+    "closed_at": "2010-04-29T05:38:42Z",
     "created_at": "2010-03-03T01:35:07Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "BipartiteGraph add_edge allows bipartite property to be violated.",
+    "title": "BipartiteGraph add_edge allows bipartite property to be violated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8425",
     "user": "https://github.com/rhinton"

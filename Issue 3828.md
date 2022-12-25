@@ -1,15 +1,16 @@
-# Issue 3828: Upgrade to linbox-1.1.6rc1
+# Issue 3828: [with spkg, positive review] Upgrade to linbox-1.1.6rc1
 
 archive/issues_003828.json:
 ```json
 {
     "body": "Assignee: @ClementPernet\n\nKeywords: charpoly\n\nThe main improvement in 1.1.6rc1 is the fix to the charpoly bug (see #3671), plus some memory management improvement and memleak fixes.\n\nTherefore the workaround with 1.1.6rc0, bypassing this implementation is now removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3828\n\n",
+    "closed_at": "2008-08-13T07:05:01Z",
     "created_at": "2008-08-12T23:54:36Z",
     "labels": [
         "component: linbox"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Upgrade to linbox-1.1.6rc1",
+    "title": "[with spkg, positive review] Upgrade to linbox-1.1.6rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3828",
     "user": "https://github.com/ClementPernet"

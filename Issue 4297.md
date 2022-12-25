@@ -1,15 +1,16 @@
-# Issue 4297: [with patch, needs review] make sage -cython work on .spyx and library files
+# Issue 4297: [with patch, positive review] make sage -cython work on .spyx and library files
 
 archive/issues_004297.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @rlmill\n\nThis adds the path information, and is handy for invoking cython directly (e.g. to produce an annotation). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4297\n\n",
+    "closed_at": "2008-10-18T20:31:28Z",
     "created_at": "2008-10-15T14:41:05Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] make sage -cython work on .spyx and library files",
+    "title": "[with patch, positive review] make sage -cython work on .spyx and library files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4297",
     "user": "https://github.com/robertwb"

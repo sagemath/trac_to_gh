@@ -1,9 +1,10 @@
-# Issue 949: "sage -f" fails to install packages when given an absolute path
+# Issue 949: [with patch] "sage -f" fails to install packages when given an absolute path
 
 archive/issues_000949.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen you run this command:\n\n```\ncwitty@magnetar:~/my-sage$ ~/sage/sage -f ~/spkg/mercurial-0.9.5.spkg \n```\n\nthe output includes this line:\n\n```\n/home/cwitty/sage/local/bin/sage-spkg: file /home/cwitty/my-sage//home/cwitty/spkg/mercurial-0.9.5.spkg does not exist\n```\n\nshowing that \"sage -f\" does some sort of \"convert relative filename to absolute\", but does the operation even if the path is already absolute.\n\nIssue created by migration from https://trac.sagemath.org/ticket/949\n\n",
+    "closed_at": "2007-10-20T22:30:46Z",
     "created_at": "2007-10-20T19:52:36Z",
     "labels": [
         "component: user interface",
@@ -11,7 +12,7 @@ archive/issues_000949.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "\"sage -f\" fails to install packages when given an absolute path",
+    "title": "[with patch] \"sage -f\" fails to install packages when given an absolute path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/949",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

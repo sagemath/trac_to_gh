@@ -1,9 +1,10 @@
-# Issue 4662: Sage 3.2.1.rc1: Fix documentation build issues
+# Issue 4662: [with patch, with positive review] Sage 3.2.1.rc1: Fix documentation build issues
 
 archive/issues_004662.json:
 ```json
 {
-    "body": "Assignee: tba\n\nVarious LaTeX related build failures have to be fixed before 3.2.1.rc1 should be released. I am on this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4662\n\n",
+    "body": "Assignee: mabshoff\n\nVarious LaTeX related build failures have to be fixed before 3.2.1.rc1 should be released. I am on this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4662\n\n",
+    "closed_at": "2008-11-30T10:43:22Z",
     "created_at": "2008-11-30T09:21:10Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_004662.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Sage 3.2.1.rc1: Fix documentation build issues",
+    "title": "[with patch, with positive review] Sage 3.2.1.rc1: Fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4662",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 Various LaTeX related build failures have to be fixed before 3.2.1.rc1 should be released. I am on this.
 

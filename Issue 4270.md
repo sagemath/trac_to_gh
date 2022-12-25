@@ -1,21 +1,22 @@
-# Issue 4270: Add sage-combinat script and sage-combinat
+# Issue 4270: [with patch, positive review] Add sage-combinat script and sage-combinat
 
 archive/issues_004270.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe attached patch adds the sage-combinat patch management script into local/bin,\nand adds an option -combinat to the main sage script which calls this script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4270\n\n",
+    "body": "Assignee: @mwhansen\n\nThe attached patch adds the sage-combinat patch management script into local/bin,\nand adds an option -combinat to the main sage script which calls this script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4270\n\n",
+    "closed_at": "2008-10-12T22:32:33Z",
     "created_at": "2008-10-12T20:06:02Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Add sage-combinat script and sage-combinat",
+    "title": "[with patch, positive review] Add sage-combinat script and sage-combinat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4270",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 The attached patch adds the sage-combinat patch management script into local/bin,
 and adds an option -combinat to the main sage script which calls this script.

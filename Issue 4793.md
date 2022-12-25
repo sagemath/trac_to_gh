@@ -1,30 +1,27 @@
-# Issue 4793: Update lcalc to the new upstream 1.2
+# Issue 4793: Update lcalc to the new upstream 1.23
 
 archive/issues_004793.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @JohnCremona ylchapuy drkirkby\n\nAs the summary says. This should be done at the same time as the update to the latest stable pari.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4793\n\n",
+    "body": "Assignee: @rishikesha\n\nCC:  @JohnCremona ylchapuy drkirkby\n\nupdate lcalc to new version\n\nIssue created by migration from https://trac.sagemath.org/ticket/4793\n\n",
+    "closed_at": "2010-04-28T19:29:50Z",
     "created_at": "2008-12-14T07:45:09Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "Update lcalc to the new upstream 1.2",
+    "title": "Update lcalc to the new upstream 1.23",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4793",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @rishikesha
 
 CC:  @JohnCremona ylchapuy drkirkby
 
-As the summary says. This should be done at the same time as the update to the latest stable pari.
-
-Cheers,
-
-Michael
+update lcalc to new version
 
 Issue created by migration from https://trac.sagemath.org/ticket/4793
 

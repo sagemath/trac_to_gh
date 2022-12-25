@@ -1,16 +1,17 @@
-# Issue 1421: [with patch] finer control in ECM interface
+# Issue 1421: [with patch, with positive review] finer control in ECM interface
 
 archive/issues_001421.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI have added a new method \"one_curve\" (maybe a better name can be found) to run exactly one\ncurve (either ECM or P-1 or P+1). Also added examples for find_factor() method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1421\n\n",
+    "closed_at": "2007-12-18T02:12:38Z",
     "created_at": "2007-12-07T19:34:29Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[with patch] finer control in ECM interface",
+    "title": "[with patch, with positive review] finer control in ECM interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1421",
     "user": "https://github.com/zimmermann6"

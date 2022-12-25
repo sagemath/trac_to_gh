@@ -1,9 +1,10 @@
-# Issue 5208: Differing behavior for matrix left_kernel vs. right_kernel
+# Issue 5208: [with patch, positive review] Differing behavior for matrix left_kernel vs. right_kernel
 
 archive/issues_005208.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nKeywords: matrix, left_kernel, right_kernel\n\nCalls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.\n\n```\nsage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)\n\nsage: time a.transpose().right_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nTime: CPU 0.18 s, Wall: 0.18 s\n\nsage: time a.left_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nCPU time: 70.76 s,  Wall time: 71.55 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5208\n\n",
+    "closed_at": "2009-02-09T07:54:40Z",
     "created_at": "2009-02-08T19:34:30Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005208.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Differing behavior for matrix left_kernel vs. right_kernel",
+    "title": "[with patch, positive review] Differing behavior for matrix left_kernel vs. right_kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5208",
     "user": "https://github.com/rbeezer"

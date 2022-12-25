@@ -1,9 +1,10 @@
-# Issue 5303: Sage 3.3.rc2: numerical noise in sage/schemes/elliptic_curves/sha_tate.py
+# Issue 5303: [with patch,positive review] Sage 3.3.rc2: numerical noise in sage/schemes/elliptic_curves/sha_tate.py
 
 archive/issues_005303.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @JohnCremona\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.rc1/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 88:\n    sage: [sha.an_numerical(prec) for prec in xrange(30,100,10)] # long time\nExpected:\n    [1.0000000,\n    1.0000000000,\n    1.0000000000000,\n    1.0000000000000000,\n    1.0000000000000000000,\n    1.0000000000000000000000,\n    1.0000000000000000000000000]\nGot:\n    [0.99999969, 1.0000000000, 1.0000000000000, 1.0000000000000000, 1.0000000000000000000, 1.0000000000000000000000, 1.0000000000000000000000000]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5303\n\n",
+    "closed_at": "2009-02-20T20:55:29Z",
     "created_at": "2009-02-18T11:55:21Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005303.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Sage 3.3.rc2: numerical noise in sage/schemes/elliptic_curves/sha_tate.py",
+    "title": "[with patch,positive review] Sage 3.3.rc2: numerical noise in sage/schemes/elliptic_curves/sha_tate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5303",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

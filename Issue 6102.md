@@ -3,11 +3,11 @@
 archive/issues_006102.json:
 ```json
 {
-    "body": "Assignee: @antieau\n\nCC:  @jhpalmieri fbreuer @tscrim @fchapoton\n\nAdd functionality in sage to compute the cohomology ring of a simplicial complex.\n\nThis relies on #6099, #6100, #6101, and #5882.\n\nThese will be examples of graded alebras, finite as modules over their bases, that are graded-commutative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6102\n\n",
+    "body": "Assignee: @antieau\n\nCC:  @jhpalmieri fbreuer @tscrim @fchapoton\n\nAdd functionality in sage to compute the cohomology ring of a simplicial complex.\n\nThis relies on #6099, #6100, and #5882.\n\nThese will be examples of graded alebras, finite as modules over their bases, that are graded-commutative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6102\n\n",
+    "closed_at": "2015-10-18T12:06:14Z",
     "created_at": "2009-05-21T03:47:14Z",
     "labels": [
-        "component: algebraic topology",
-        "minor"
+        "component: algebraic topology"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
     "title": "cohomology ring of simplicial complexes",
@@ -22,7 +22,7 @@ CC:  @jhpalmieri fbreuer @tscrim @fchapoton
 
 Add functionality in sage to compute the cohomology ring of a simplicial complex.
 
-This relies on #6099, #6100, #6101, and #5882.
+This relies on #6099, #6100, and #5882.
 
 These will be examples of graded alebras, finite as modules over their bases, that are graded-commutative.
 

@@ -1,36 +1,40 @@
-# Issue 3467: [with patch, needs review] implements @parallel decorator using dsage
+# Issue 3467: [with patch, positive review] implements @parallel decorator using dsage
 
 archive/issues_003467.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHere's how to use it:\n\nsage: d = dsage.start_all()\nSpawned twistd -d /Users/yqiang/.sage/dsage --pidfile=server.pid --logfile=/Users/yqiang/.sage/dsage/server.log -y dsage_server.tac (pid = 73563)\n\nSpawned python /Users/yqiang/Software/sage-3.0.3.rc0/local/bin/dsage_worker.py -s localhost -p 8083 -u yqiang -w 2 --poll 1.0 -l 0 -f /Users/yqiang/.sage/dsage/worker.log --privkey=/Users/yqiang/.sage/dsage/dsage_key --pubkey=/Users/yqiang/.sage/dsage/dsage_key.pub --priority=20 --ssl --noblock (pid = 73571)\n\nsage: P = parallel(p_iter = d.parallel_iter)\nsage: `@`P\n....: def MS1(N,k):\n....:     return ModularSymbols(N,k,sign=1).decomposition(10)[0]\n....: \nsage: time v = MS1([(250,2), (11,2), (37,2)])\n\nIssue created by migration from https://trac.sagemath.org/ticket/3467\n\n",
+    "body": "Assignee: @yqiang\n\nHere's how to use it:\n\n```\nsage: d = dsage.start_all()\nSpawned twistd -d /Users/yqiang/.sage/dsage --pidfile=server.pid --logfile=/Users/yqiang/.sage/dsage/server.log -y dsage_server.tac (pid = 73563)\n\nSpawned python /Users/yqiang/Software/sage-3.0.3.rc0/local/bin/dsage_worker.py -s localhost -p 8083 -u yqiang -w 2 --poll 1.0 -l 0 -f /Users/yqiang/.sage/dsage/worker.log --privkey=/Users/yqiang/.sage/dsage/dsage_key --pubkey=/Users/yqiang/.sage/dsage/dsage_key.pub --priority=20 --ssl --noblock (pid = 73571)\n\nsage: P = parallel(p_iter = d.parallel_iter)\nsage: @P\n....: def MS1(N,k):\n....:     return ModularSymbols(N,k,sign=1).decomposition(10)[0]\n....: \nsage: time v = MS1([(250,2), (11,2), (37,2)])\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3467\n\n",
+    "closed_at": "2008-06-26T04:29:30Z",
     "created_at": "2008-06-19T02:11:52Z",
     "labels": [
-        "component: algebra",
+        "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] implements @parallel decorator using dsage",
+    "title": "[with patch, positive review] implements @parallel decorator using dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3467",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: tbd
+Assignee: @yqiang
 
 Here's how to use it:
 
+```
 sage: d = dsage.start_all()
 Spawned twistd -d /Users/yqiang/.sage/dsage --pidfile=server.pid --logfile=/Users/yqiang/.sage/dsage/server.log -y dsage_server.tac (pid = 73563)
 
 Spawned python /Users/yqiang/Software/sage-3.0.3.rc0/local/bin/dsage_worker.py -s localhost -p 8083 -u yqiang -w 2 --poll 1.0 -l 0 -f /Users/yqiang/.sage/dsage/worker.log --privkey=/Users/yqiang/.sage/dsage/dsage_key --pubkey=/Users/yqiang/.sage/dsage/dsage_key.pub --priority=20 --ssl --noblock (pid = 73571)
 
 sage: P = parallel(p_iter = d.parallel_iter)
-sage: `@`P
+sage: @P
 ....: def MS1(N,k):
 ....:     return ModularSymbols(N,k,sign=1).decomposition(10)[0]
 ....: 
 sage: time v = MS1([(250,2), (11,2), (37,2)])
+
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3467
 

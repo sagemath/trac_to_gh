@@ -1,16 +1,17 @@
-# Issue 4133: sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py
+# Issue 4133: [with spkg, positive review] sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py
 
 archive/issues_004133.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 791: \n    sage: 'gcd' in t \nExpected: \n    True \nGot: \n    False \n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 1849: \n    sage: 'gcd' in m.trait_names() \nExpected: \n    True \nGot: \n    False \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4133\n\n",
+    "closed_at": "2008-09-17T01:17:59Z",
     "created_at": "2008-09-16T05:26:28Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py",
+    "title": "[with spkg, positive review] sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4133",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

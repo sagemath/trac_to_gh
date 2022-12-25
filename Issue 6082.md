@@ -1,16 +1,17 @@
-# Issue 6082: [with patch, needs review] realloc called too often for Integer construction/deconstruction
+# Issue 6082: [with patch, positive review] realloc called too often for Integer construction/deconstruction
 
 archive/issues_006082.json:
 ```json
 {
     "body": "Assignee: somebody\n\nWhen putting objects back into the pool, we realloc the `mpz_t` to a smaller size to be able to reclaim the memory for larger integers. Unfortunately, chopping them to one limb means that they will often need to grow again (even if subsequent arithmetic fits in a limb). \n\nIssue created by migration from https://trac.sagemath.org/ticket/6082\n\n",
+    "closed_at": "2009-05-21T02:08:03Z",
     "created_at": "2009-05-19T06:02:38Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] realloc called too often for Integer construction/deconstruction",
+    "title": "[with patch, positive review] realloc called too often for Integer construction/deconstruction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6082",
     "user": "https://github.com/robertwb"

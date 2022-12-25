@@ -3,7 +3,8 @@
 archive/issues_000525.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/525\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/525\n\n",
+    "closed_at": "2008-09-26T19:08:39Z",
     "created_at": "2007-08-30T03:06:42Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_000525.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 
 

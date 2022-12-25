@@ -3,7 +3,8 @@
 archive/issues_000550.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nVersion: \n\nNew function, see attached patch.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/550\n\n",
+    "body": "Assignee: somebody\n\nNew function, see attached patch.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/550\n\n",
+    "closed_at": "2007-09-01T17:05:56Z",
     "created_at": "2007-09-01T02:58:45Z",
     "labels": [
         "component: basic arithmetic"
@@ -16,8 +17,6 @@ archive/issues_000550.json:
 }
 ```
 Assignee: somebody
-
-Version: 
 
 New function, see attached patch.
 

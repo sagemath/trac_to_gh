@@ -4,6 +4,7 @@ archive/issues_008942.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @mwhansen\n\nKeywords: limit\n\nIn all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.\n\n```\nsage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))\nsage:limit(f(x), x = pi/4) \n+Infinity\nsage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8942\n\n",
+    "closed_at": "2010-07-20T10:04:03Z",
     "created_at": "2010-05-10T09:32:39Z",
     "labels": [
         "component: calculus",

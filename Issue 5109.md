@@ -1,16 +1,17 @@
-# Issue 5109: add support for Bell polynomials in Sage
+# Issue 5109: [with patch, positive review] add support for Bell polynomials in Sage
 
 archive/issues_005109.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5109\n\n",
+    "closed_at": "2009-01-28T13:03:33Z",
     "created_at": "2009-01-27T00:14:11Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add support for Bell polynomials in Sage",
+    "title": "[with patch, positive review] add support for Bell polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5109",
     "user": "https://github.com/mwhansen"

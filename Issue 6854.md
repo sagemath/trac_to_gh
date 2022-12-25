@@ -1,22 +1,26 @@
-# Issue 6854: Something weird in the implementation of InfinitePolynomialRing
+# Issue 6854: Tab completion for elements of InfinitePolynomialRing
 
 archive/issues_006854.json:
 ```json
 {
-    "body": "CC:  @mwhansen simonking\n\nHello !!\n\nI know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use \"Tab\" to list its methods, some of them not being printed. Example :\n\n```\nsage: P.<x>=InfinitePolynomialRing(RR)\nsage: e=x[1]+x[3]\nsage: e.\ne.abs                           e.footprint                     e.multiplicative_order          e.save\ne.additive_order                e.is_nilpotent                  e.n                             e.squeezed\ne.base_extend                   e.is_one                        e.order                         e.stretch\ne.base_ring                     e.is_unit                       e.parent                        e.subs\ne.category                      e.is_zero                       e.polynomial                    e.substitute\ne.coefficient                   e.lc                            e.reduce                        e.symmetric_cancellation_order\ne.db                            e.lm                            e.rename                        e.tail\ne.dump                          e.lt                            e.reset_name                    e.variables\ne.dumps                         e.max_index                     e.ring                          e.version\nsage: e.constant_coefficient()\n0.000000000000000\n```\n\nBesides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :\n\n```\nsage: e<3\nFalse\n```\n\nBut this may be intentional, even though I do not like it :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6854\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @mwhansen simonking\n\nKeywords: tab completion, InfinitePolynomialRing\n\nHello !!\n\nI know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use \"Tab\" to list its methods, some of them not being printed. Example :\n\n```\nsage: P.<x>=InfinitePolynomialRing(RR)\nsage: e=x[1]+x[3]\nsage: e.\ne.abs                           e.footprint                     e.multiplicative_order          e.save\ne.additive_order                e.is_nilpotent                  e.n                             e.squeezed\ne.base_extend                   e.is_one                        e.order                         e.stretch\ne.base_ring                     e.is_unit                       e.parent                        e.subs\ne.category                      e.is_zero                       e.polynomial                    e.substitute\ne.coefficient                   e.lc                            e.reduce                        e.symmetric_cancellation_order\ne.db                            e.lm                            e.rename                        e.tail\ne.dump                          e.lt                            e.reset_name                    e.variables\ne.dumps                         e.max_index                     e.ring                          e.version\nsage: e.constant_coefficient()\n0.000000000000000\n```\n\nBesides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :\n\n```\nsage: e<3\nFalse\n```\n\nBut this may be intentional, even though I do not like it :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6854\n\n",
+    "closed_at": "2009-12-09T02:57:28Z",
     "created_at": "2009-09-01T08:17:04Z",
     "labels": [
-        "component: symbolics",
-        "bug"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Something weird in the implementation of InfinitePolynomialRing",
+    "title": "Tab completion for elements of InfinitePolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6854",
     "user": "https://github.com/nathanncohen"
 }
 ```
+Assignee: @simon-king-jena
+
 CC:  @mwhansen simonking
+
+Keywords: tab completion, InfinitePolynomialRing
 
 Hello !!
 

@@ -1,21 +1,22 @@
-# Issue 4918: convert sage.matrix.* docstrings to Sphinx
+# Issue 4918: [with patch, needs review] convert sage.matrix.* docstrings to Sphinx
 
 archive/issues_004918.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4918\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4918\n\n",
+    "closed_at": "2009-02-24T19:04:15Z",
     "created_at": "2009-01-01T22:53:12Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.matrix.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.matrix.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4918",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 
 

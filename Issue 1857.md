@@ -1,16 +1,17 @@
-# Issue 1857: examples of parametric surfaces in 3d
+# Issue 1857: [with bundle, with positive review] examples of parametric surfaces in 3d
 
 archive/issues_001857.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nHi:\nAll these need:\n\n```\nsage: u = var(\"u\")\nsage: v = var(\"v\")\n```\nSome interesting surfaces can be found here:\nhttp://virtualmathmuseum.org/galleryS.html\n- David Joyner\n\n```\n#Hyperhelicoidal\nsage: fx = (sinh(v)*cos(3*u))/(1+cosh(u)*cosh(v))\nsage: fy = (sinh(v)*sin(3*u))/(1+cosh(u)*cosh(v))\nsage: fz = (cosh(v)*sinh(u))/(1+cosh(u)*cosh(v))\nsage: parametric_plot3d([fx, fy, fz], (u, -pi, pi), (v, -pi, pi),\nplot_points = [50,50], frame=False, color=\"red\")\n\n\n#Helicoid (lines through a helix)\n#http://en.wikipedia.org/wiki/Helix\nsage: fx = sinh(v)*sin(u)\nsage: fy = -sinh(v)*cos(u)\nsage: fz = 3*u\nsage: parametric_plot3d([fx, fy, fz], (u, -pi, pi), (v, -pi, pi),\nplot_points = [50,50], frame=False, color=\"red\")\n\n\n#Kuen's surface\n#http://www.math.umd.edu/research/bianchi/Gifccsurfs/ccsurfs.html\nsage: fx = (2*(cos(u) + u*sin(u))*sin(v))/(1+ u^2*sin(v)^2)\nsage: fy = (2*(sin(u) - u*cos(u))*sin(v))/(1+ u^2*sin(v)^2)\nsage: fz = log(tan(1/2 *v)) + (2*cos(v))/(1+ u^2*sin(v)^2)\nsage: parametric_plot3d([fx, fy, fz], (u, 0, 2*pi), (v, 0.01,\npi-0.01), plot_points = [50,50], frame=False, color=\"green\")\n\n\n#5-pointed star\nsage: fx = cos(u)*cos(v)*(abs(cos(1*u/4))^0.5 +\nabs(sin(1*u/4))^0.5)^(-1/0.3)*(abs(cos(5*v/4))^1.7 +\nabs(sin(5*v/4))^1.7)^(-1/0.1)\nsage: fy = cos(u)*sin(v)*(abs(cos(1*u/4))^0.5 +\nabs(sin(1*u/4))^0.5)^(-1/0.3)*(abs(cos(5*v/4))^1.7 +\nabs(sin(5*v/4))^1.7)^(-1/0.1)\nsage: fz = sin(u)*(abs(cos(1*u/4))^0.5 + abs(sin(1*u/4))^0.5)^(-1/0.3)\nsage: parametric_plot3d([fx, fy, fz], (u, -pi/2, pi/2), (v, 0, 2*pi),\nplot_points = [50,50], frame=False, color=\"green\")\n\n#a cool self-intersecting surface (Eppener surface?)\nsage: fx = u - u^3/3 + u*v^2\nsage: fy = v - v^3/3 + v*u^2\nsage: fz = u^2 - v^2\nsage: parametric_plot3d([fx, fy, fz], (u, -25, 25), (v, -25, 25),\nplot_points = [50,50], frame=False, color=\"green\")\n\n#breather surface\n#http://en.wikipedia.org/wiki/Breather_surface\nsage: fx = (2*sqrt(0.84)*cosh(0.4*u)*(-(sqrt(0.84)*cos(v)*cos(sqrt(0.84)*v))\n- sin(v)*sin(sqrt(0.84)*v)))/(0.4*((sqrt(0.84)*cosh(0.4*u))^2 +\n(0.4*sin(sqrt(0.84)*v))^2))\nsage: fy = (2*sqrt(0.84)*cosh(0.4*u)*(-(sqrt(0.84)*sin(v)*cos(sqrt(0.84)*v))\n+ cos(v)*sin(sqrt(0.84)*v)))/(0.4*((sqrt(0.84)*cosh(0.4*u))^2 +\n(0.4*sin(sqrt(0.84)*v))^2))\nsage: fz = -u +\n(2*0.84*cosh(0.4*u)*sinh(0.4*u))/(0.4*((sqrt(0.84)*cosh(0.4*u))^2 +\n(0.4*sin(sqrt(0.84)*v))^2))\nsage: parametric_plot3d([fx, fy, fz], (u, -13.2, 13.2), (v, -37.4,\n37.4), plot_points = [90,90], frame=False, color=\"green\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1857\n\n",
+    "closed_at": "2008-02-18T19:21:30Z",
     "created_at": "2008-01-20T00:15:14Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "examples of parametric surfaces in 3d",
+    "title": "[with bundle, with positive review] examples of parametric surfaces in 3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1857",
     "user": "https://github.com/wdjoyner"

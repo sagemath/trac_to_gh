@@ -3,7 +3,8 @@
 archive/issues_009065.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: facade, parent, TestSuite\n\nThe goal of this tickets is to add support for facade parents; see:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a5ea008c24c17956/00ab8c6d2a16f57a\n\nThe main issue currently is that facade parents (Primes, NonNegativeIntegers, SymmetricFunctions, ...) are not aware that they are, which breaks some of the generic TestSuite tests.\n\nThis involves:\n- Creating a category or abstract class for facade parents\n  Such parents should declare a list of parents they are facade\n  for.\n- Adding a method P.check_element(x) (find a better name!) in Sets.ParentMethods which checks that the parent of x is P. Override this method for facade parents to check that the parent of x is one of the declared parents of P.\n- Fix P._test_one(), P._test_zero(), P._test_an_element() (and maybe others) to use P.check_element(x) instead of x in P.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9065\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: facade, parent, TestSuite\n\nThe goal of this tickets is to add support for facade parents; see:\n[This thread](http://groups.google.com/group/sage-devel/browse_thread/thread/a5ea008c24c17956/00ab8c6d2a16f57a)\n\nThe main issue currently is that facade parents (`Primes, NonNegativeIntegers, SymmetricFunctions,` ...) are not aware that they are, which breaks some of the generic `TestSuite` tests.\n\nThis involves:\n- Adding a new optional argument for `Parent.__init__`: `Parent.__init__(self, facade = [ZZ])`\n- Creating a category or abstract class for facade parents\n- Adding a method `P.is_parent_of(x)` in `Sets.ParentMethods` which checks that the parent of x is (equal to) P. Override this method for facade parents to check that the parent of x is one of the declared parents of P.\n- Fix `P._test_one(), P._test_zero(), P._test_an_element()` (and maybe others) to use `P.is_parent_of(x)` instead of `x in P`.\n- Updating a couple parents to use it\n\nIssue created by migration from https://trac.sagemath.org/ticket/9065\n\n",
+    "closed_at": "2011-05-03T12:28:29Z",
     "created_at": "2010-05-27T13:02:37Z",
     "labels": [
         "component: categories"
@@ -22,16 +23,16 @@ CC:  sage-combinat
 Keywords: facade, parent, TestSuite
 
 The goal of this tickets is to add support for facade parents; see:
-http://groups.google.com/group/sage-devel/browse_thread/thread/a5ea008c24c17956/00ab8c6d2a16f57a
+[This thread](http://groups.google.com/group/sage-devel/browse_thread/thread/a5ea008c24c17956/00ab8c6d2a16f57a)
 
-The main issue currently is that facade parents (Primes, NonNegativeIntegers, SymmetricFunctions, ...) are not aware that they are, which breaks some of the generic TestSuite tests.
+The main issue currently is that facade parents (`Primes, NonNegativeIntegers, SymmetricFunctions,` ...) are not aware that they are, which breaks some of the generic `TestSuite` tests.
 
 This involves:
+- Adding a new optional argument for `Parent.__init__`: `Parent.__init__(self, facade = [ZZ])`
 - Creating a category or abstract class for facade parents
-  Such parents should declare a list of parents they are facade
-  for.
-- Adding a method P.check_element(x) (find a better name!) in Sets.ParentMethods which checks that the parent of x is P. Override this method for facade parents to check that the parent of x is one of the declared parents of P.
-- Fix P._test_one(), P._test_zero(), P._test_an_element() (and maybe others) to use P.check_element(x) instead of x in P.
+- Adding a method `P.is_parent_of(x)` in `Sets.ParentMethods` which checks that the parent of x is (equal to) P. Override this method for facade parents to check that the parent of x is one of the declared parents of P.
+- Fix `P._test_one(), P._test_zero(), P._test_an_element()` (and maybe others) to use `P.is_parent_of(x)` instead of `x in P`.
+- Updating a couple parents to use it
 
 Issue created by migration from https://trac.sagemath.org/ticket/9065
 

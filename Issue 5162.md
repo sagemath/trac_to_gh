@@ -1,9 +1,10 @@
-# Issue 5162: [with spkg, needs review] atlas.spkg: Fix mistake introduced in atlas-3.8.2.p1 and actually correct the bug
+# Issue 5162: [with spkg, positive review] atlas.spkg: Fix mistake introduced in atlas-3.8.2.p1 and actually correct the bug
 
 archive/issues_005162.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIn atlas-3.8.2.p1 I accidentally did something dumb and broken some non-g95 code on Linux. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha4/atlas-3.8.2.p2.spkg\n\nfixes that problem and also resolves the Solaris issue I intended to fix in atlas-3.8.2.p1.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5162\n\n",
+    "body": "Assignee: mabshoff\n\nIn atlas-3.8.2.p1 I accidentally did something dumb and broken some non-g95 code on Linux. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha4/atlas-3.8.2.p2.spkg\n\nfixes that problem and also resolves the Solaris issue I intended to fix in atlas-3.8.2.p1.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5162\n\n",
+    "closed_at": "2009-02-03T01:21:19Z",
     "created_at": "2009-02-02T20:32:37Z",
     "labels": [
         "component: algebra",
@@ -11,13 +12,13 @@ archive/issues_005162.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with spkg, needs review] atlas.spkg: Fix mistake introduced in atlas-3.8.2.p1 and actually correct the bug",
+    "title": "[with spkg, positive review] atlas.spkg: Fix mistake introduced in atlas-3.8.2.p1 and actually correct the bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5162",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 In atlas-3.8.2.p1 I accidentally did something dumb and broken some non-g95 code on Linux. The spkg at 
 

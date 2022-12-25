@@ -1,16 +1,17 @@
-# Issue 5449: Implement @cache_method with cache stored in the parent
+# Issue 5449: [with patch, positive review] Implements a variant of @cached_method with cache stored in the parent
 
 archive/issues_005449.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nWhen the elements of a parent do not have unique representation, it can be desirable to store the cache of (some of) the methods in the parent rather than in the element.\n\nComments, suggestions?\n\n`@`cached_in_parent_method ?\n\nI'll write a quick patch in sage-combinat\n\nIssue created by migration from https://trac.sagemath.org/ticket/5449\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: cached_method, cache\n\nWhen the elements of a parent do not have unique representation, it\ncan be desirable to store the cache of (some of) the methods in the\nparent rather than in the element.\n\nThis patches implements a variant `@`cached_in_parent_method of the\ndecorator `@`cached_method which does just this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5449\n\n",
+    "closed_at": "2009-05-22T13:57:14Z",
     "created_at": "2009-03-06T15:57:38Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Implement @cache_method with cache stored in the parent",
+    "title": "[with patch, positive review] Implements a variant of @cached_method with cache stored in the parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5449",
     "user": "https://github.com/nthiery"
@@ -20,13 +21,15 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-When the elements of a parent do not have unique representation, it can be desirable to store the cache of (some of) the methods in the parent rather than in the element.
+Keywords: cached_method, cache
 
-Comments, suggestions?
+When the elements of a parent do not have unique representation, it
+can be desirable to store the cache of (some of) the methods in the
+parent rather than in the element.
 
-`@`cached_in_parent_method ?
+This patches implements a variant `@`cached_in_parent_method of the
+decorator `@`cached_method which does just this.
 
-I'll write a quick patch in sage-combinat
 
 Issue created by migration from https://trac.sagemath.org/ticket/5449
 

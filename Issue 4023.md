@@ -1,9 +1,10 @@
-# Issue 4023: Sage 3.1.2.alpha3: 32 vs. 64 b bit doctesting issuess for gp
+# Issue 4023: [with patch, positive review] Sage 3.1.2.alpha3: 32 vs. 64 bit doctesting issues for gp
 
 archive/issues_004023.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @malb\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/interfaces/gp.py \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 266: \n    sage: gp.get_precision() \nExpected: \n    38 \nGot: \n    28 \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 520: \n    sage: gp.new_with_bits_prec(pi, 100) \nExpected: \n    3.1415926535897932384626433832795028842 \nGot: \n    3.141592653589793238462643383 \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 244: \n    sage: gp.get_precision() \nExpected: \n    38 \nGot: \n    28 \n********************************************************************** \n3 items had failures: \n   1 of   6 in __main__.example_10 \n   1 of   3 in __main__.example_27 \n   1 of   3 in __main__.example_9 \n***Test Failed*** 3 failures. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4023\n\n",
+    "closed_at": "2008-09-05T11:12:21Z",
     "created_at": "2008-08-31T18:58:50Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004023.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Sage 3.1.2.alpha3: 32 vs. 64 b bit doctesting issuess for gp",
+    "title": "[with patch, positive review] Sage 3.1.2.alpha3: 32 vs. 64 bit doctesting issues for gp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4023",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

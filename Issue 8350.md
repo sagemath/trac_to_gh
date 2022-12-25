@@ -4,6 +4,7 @@ archive/issues_008350.json:
 ```json
 {
     "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to override add_vertex() and add_vertices() to properly partition the vertices.\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a')  # this vertex should go left or right\nsage: (bg.left, bg.right)  # one of these should contain vertex 'a'\n([], [])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8350\n\n",
+    "closed_at": "2010-03-02T02:56:17Z",
     "created_at": "2010-02-24T18:04:42Z",
     "labels": [
         "component: graph theory",

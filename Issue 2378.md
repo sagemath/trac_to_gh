@@ -1,21 +1,22 @@
-# Issue 2378: graph animations
+# Issue 2378: graph and digraph animations
 
 archive/issues_002378.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWe ought to have a way to create animations like these:\n\nhttp://www.cs.sunysb.edu/~skiena/combinatorica/animations/\n\nSee the Mathematica function:\n\nhttp://reference.wolfram.com/mathematica/Combinatorica/ref/AnimateGraph.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/2378\n\n",
+    "body": "Assignee: @jasongrout\n\nWe ought to have a way to create animations like these:\n\nhttp://www.cs.sunysb.edu/~skiena/combinatorica/animations/\n\nSee the Mathematica function:\n\nhttp://reference.wolfram.com/mathematica/Combinatorica/ref/AnimateGraph.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/2378\n\n",
+    "closed_at": "2022-05-11T02:14:43Z",
     "created_at": "2008-03-03T18:07:41Z",
     "labels": [
-        "component: cygwin"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "graph animations",
+    "title": "graph and digraph animations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2378",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: mabshoff
+Assignee: @jasongrout
 
 We ought to have a way to create animations like these:
 

@@ -1,22 +1,22 @@
-# Issue 6775: Having an easy to use Disjoint Set data structure
+# Issue 6775: Create an interface for Disjoint Set data structure
 
 archive/issues_006775.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @rlmill\n\nKeywords: disjoint set data structure\n\nI would like to have an easy to use disjoint-set data structure like the one described here:\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\n```\nsage: d = DisjointSet(range(5))\nsage: d\n{{0}, {1}, {2}, {3}, {4}}\nsage: d.union(3,4)\nsage: d\n{{0}, {1}, {2}, {3, 4}}\nsage: d.union(0,2)\nsage: d\n{{0, 2}, {1}, {3, 4}}\nsage: d.union(1,4)\nsage: d.find(3)\n3\nsage: d.find(4)\n3\n```\n\nAs suggested [by Robert Miller on sage-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f), one could use what is defined in\n\n`sage/groups/perm_gps/partn_ref/data_structures_*`\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6775\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @rlmill\n\nKeywords: disjoint set data structure\n\nI would like to have an easy to use disjoint-set data structure like the one described here:\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\n```\nsage: d = DisjointSet(range(5))\nsage: d\n{{0}, {1}, {2}, {3}, {4}}\nsage: d.union(3,4)\nsage: d\n{{0}, {1}, {2}, {3, 4}}\nsage: d.union(0,2)\nsage: d\n{{0, 2}, {1}, {3, 4}}\nsage: d.union(1,4)\nsage: d.find(3)\n3\nsage: d.find(4)\n3\n```\n\nAs suggested [by Robert Miller on sage-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f), one could use what is defined in\n\n`sage/groups/perm_gps/partn_ref/data_structures_*`\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6775\n\n",
+    "closed_at": "2010-02-11T14:47:53Z",
     "created_at": "2009-08-19T18:29:55Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Having an easy to use Disjoint Set data structure",
+    "title": "Create an interface for Disjoint Set data structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6775",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @mwhansen
+Assignee: @seblabbe
 
 CC:  @rlmill
 

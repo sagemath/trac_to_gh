@@ -1,9 +1,10 @@
-# Issue 5568: [with patch, needs review] a few latex methods
+# Issue 5568: [with patch, positive review] a few latex methods
 
 archive/issues_005568.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nTwo issues: QQbar doesn't seem to have a latex method. Also, the latex method for CC is \"\\\\C\", which is not a valid LaTeX command. For example, if I type \"view(CC)\" in the notebook, jsmath gives an error, and if I type \"view(CC)\" from the command line, I get a blank page.\n\nThis patch provides a latex method for QQbar and changes the latex method for CC (note that it uses `\\mathbf`, just as the latex methods for RR, ZZ, and QQ do).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5568\n\n",
+    "closed_at": "2009-03-25T07:42:08Z",
     "created_at": "2009-03-19T17:59:55Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005568.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] a few latex methods",
+    "title": "[with patch, positive review] a few latex methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5568",
     "user": "https://github.com/jhpalmieri"

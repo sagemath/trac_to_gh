@@ -1,15 +1,16 @@
-# Issue 3568: optimize sage startup -- don't import twisted.web2 until needed
+# Issue 3568: [with patch, needs work] optimize sage startup -- don't import twisted.web2 until needed
 
 archive/issues_003568.json:
 ```json
 {
     "body": "Assignee: boothby\n\nBEFORE\n\n```\nteragon-2:databases was$ sage -startuptime |grep -i web2\n           twisted.web2: 0.106 (twist)\n            twisted.python: 0.004 (twisted.web2)\n            twisted._version: 0.001 (twisted.web2)\n            twisted.web2._version: 0.000 (twisted.web2)\n            cgi: 0.004 (twisted.web2)\n            twisted.internet: 0.011 (twisted.web2)\n            twisted.persisted: 0.001 (twisted.web2)\n            zope.interface.adapter: 0.001 (twisted.web2)\n            calendar: 0.002 (twisted.web2)\n            twisted.internet.defer: 0.000 (twisted.web2)\n            twisted.internet.interfaces: 0.000 (twisted.web2)\n             twisted.web2.stream: 0.000 (OpenSSL)\n             twisted.web2.filter.range: 0.001 (OpenSSL)\n             twisted.web2.responsecode: 0.000 (OpenSSL)\n             twisted.web2.channel.cgi: 0.001 (OpenSSL)\n             twisted.web2.channel.scgi: 0.000 (OpenSSL)\n              twisted.web2.channel: 0.000 (twisted.web2.channel.scgi)\n             twisted.web2.channel.http: 0.002 (OpenSSL)\n             twisted.web2.channel.fastcgi: 0.000 (OpenSSL)\n0.106 twisted.web2 (twist)\n```\n\nThis is on os x with disk caching.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3568\n\n",
+    "closed_at": "2009-01-19T22:31:07Z",
     "created_at": "2008-07-06T19:54:38Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "optimize sage startup -- don't import twisted.web2 until needed",
+    "title": "[with patch, needs work] optimize sage startup -- don't import twisted.web2 until needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3568",
     "user": "https://github.com/williamstein"

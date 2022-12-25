@@ -3,11 +3,11 @@
 archive/issues_009428.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @dandrake aquino.luizclaudio@gmail.com @robert-marik\n\nThis patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9428\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @dandrake aquino.luizclaudio@gmail.com @robert-marik\n\nThis patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese and Czech. Blocks #8754.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9428\n\n",
+    "closed_at": "2012-09-05T07:15:38Z",
     "created_at": "2010-07-05T09:37:24Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Internationalize the Sage Notebook",
@@ -20,7 +20,7 @@ Assignee: jason, was
 
 CC:  @dandrake aquino.luizclaudio@gmail.com @robert-marik
 
-This patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese.
+This patch internationalizes the Sage Notebook and adds a localization to Brazilian Portuguese and Czech. Blocks #8754.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9428
 

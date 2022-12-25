@@ -3,7 +3,8 @@
 archive/issues_009928.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @roed314 @xcaruso\n\nthe answer is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9929\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @roed314 @xcaruso\n\nKeywords: padicIMA\n\n```\nsage: R.<x> = PolynomialRing(Zp(17), sparse=True)\nsage: x**(10**10)\nTraceback (most recent call last)\n...\nMemoryError:\n```\n\nThis should work (and be fast). The solution is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9929\n\n",
+    "closed_at": "2019-02-26T13:58:00Z",
     "created_at": "2010-09-17T07:27:14Z",
     "labels": [
         "component: algebra",
@@ -20,7 +21,17 @@ Assignee: @aghitza
 
 CC:  @roed314 @xcaruso
 
-the answer is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`
+Keywords: padicIMA
+
+```
+sage: R.<x> = PolynomialRing(Zp(17), sparse=True)
+sage: x**(10**10)
+Traceback (most recent call last)
+...
+MemoryError:
+```
+
+This should work (and be fast). The solution is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9929
 

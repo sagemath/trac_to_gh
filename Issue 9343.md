@@ -1,27 +1,29 @@
-# Issue 9343: upgrade pari to version 2.4.3
+# Issue 9343: Upgrade PARI to svn snapshot 12577 - a pre-release of PARI 2.4.3.
 
 archive/issues_009343.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @robertwb @loefflerd @JohnCremona @jdemeyer\n\nSee #7736 (a bug this will fix), #8453 (last pari upgrade).\n\nAfter doing this, we also need to remove sea.gp, since it is included in pari now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9343\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @robertwb @loefflerd @JohnCremona @jdemeyer\n\nSee #7736 (a bug this will fix), #8453 (last pari upgrade).\n\nSee [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9343\n\n",
+    "closed_at": "2010-09-10T10:38:49Z",
     "created_at": "2010-06-26T05:52:42Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "upgrade pari to version 2.4.3",
+    "title": "Upgrade PARI to svn snapshot 12577 - a pre-release of PARI 2.4.3.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9343",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @jdemeyer
 
 CC:  @robertwb @loefflerd @JohnCremona @jdemeyer
 
 See #7736 (a bug this will fix), #8453 (last pari upgrade).
 
-After doing this, we also need to remove sea.gp, since it is included in pari now.
+See [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9343
 

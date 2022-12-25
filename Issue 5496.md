@@ -1,16 +1,17 @@
-# Issue 5496: fix bugs in is_prime  (EASY)
+# Issue 5496: fix bugs in is_prime
 
 archive/issues_005496.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is not good:\n\n```\nsage: is_prime(GF(5)(3))\nTrue\nsage: is_prime(GF(5)(4))\nFalse\n```\n\nThe fix is to totally 100% rewrite is_prime in arith.py so that it first calls x.is_prime() and if that isn't defined, then in some special cases (e.g., python ints) converts to Integer and calls is_prime.  Otherwise, it raises a NotImplementedError. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5496\n\n",
+    "closed_at": "2010-01-19T01:15:00Z",
     "created_at": "2009-03-12T02:55:11Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "fix bugs in is_prime  (EASY)",
+    "title": "fix bugs in is_prime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5496",
     "user": "https://github.com/williamstein"

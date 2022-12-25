@@ -1,16 +1,17 @@
-# Issue 2941: sympy spkg updated + a test patch for Sage
+# Issue 2941: [with spkg, positive review] sympy spkg updated + a test patch for Sage
 
 archive/issues_002941.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nApply the attached patch to Sage, then install the attached spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2941\n\n",
+    "closed_at": "2008-04-17T06:35:51Z",
     "created_at": "2008-04-16T09:37:36Z",
     "labels": [
-        "component: cygwin",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "sympy spkg updated + a test patch for Sage",
+    "title": "[with spkg, positive review] sympy spkg updated + a test patch for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2941",
     "user": "https://github.com/certik"

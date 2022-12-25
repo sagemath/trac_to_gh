@@ -1,16 +1,17 @@
-# Issue 8269: cygwin: maxima does not build on cygwin due to ECL bug.
+# Issue 8269: cygwin: maxima does not build on cygwin, possibly due to ECL bug.
 
 archive/issues_008269.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nTrying to build the maxima-5.20.1.spkg fails on Cygwin.  The error is\n\n```\n;;; Loading \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\"\n;  - Providing system maxima\nAn error occurred during initialization:\nC::BUILDER does not accept a file \"binary-ecl/init-cl.fas\" of kind :FASL.\n```\n\nSee this possibly very relevant thread for a discussion about this: http://groups.google.com/group/sage-devel/browse_thread/thread/cecd40138ed552b9\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8269\n\n",
+    "closed_at": "2011-07-22T17:22:18Z",
     "created_at": "2010-02-15T06:56:48Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cygwin: maxima does not build on cygwin due to ECL bug.",
+    "title": "cygwin: maxima does not build on cygwin, possibly due to ECL bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8269",
     "user": "https://github.com/williamstein"

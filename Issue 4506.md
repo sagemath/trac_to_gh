@@ -1,16 +1,17 @@
-# Issue 4506: planarity ignores error code when adding edge
+# Issue 4506: [with patch, positive review] planarity ignores error code when adding edge
 
 archive/issues_004506.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  ekirkman bober\n\nThe planarity code ignores errors when adding edges.  This patch also shortcuts the planarity checking when adding an edge returns the NONPLANAR code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4506\n\n",
+    "closed_at": "2008-11-14T03:30:53Z",
     "created_at": "2008-11-13T01:21:30Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "planarity ignores error code when adding edge",
+    "title": "[with patch, positive review] planarity ignores error code when adding edge",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4506",
     "user": "https://github.com/jasongrout"

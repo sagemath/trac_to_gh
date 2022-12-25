@@ -3,7 +3,8 @@
 archive/issues_000206.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I add a bunch of graphics primitives to a Graphic object using the Graphic append() method, the `__xmax`, `__xmin`, `__ymax`, `__ymin` attributes are not updated. Therefore when I try to plot the graphic, nothing shows up. Code for the correct behaviour can be found in the `Graphic.__add__()` method.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/206\n\n",
+    "body": "Assignee: agc\n\nIf I add a bunch of graphics primitives to a Graphic object using the Graphic append() method, the `__xmax`, `__xmin`, `__ymax`, `__ymin` attributes are not updated. Therefore when I try to plot the graphic, nothing shows up. Code for the correct behaviour can be found in the `Graphic.__add__()` method.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/206\n\n",
+    "closed_at": "2007-08-19T01:06:34Z",
     "created_at": "2007-01-23T04:46:27Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_000206.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: agc
 
 If I add a bunch of graphics primitives to a Graphic object using the Graphic append() method, the `__xmax`, `__xmin`, `__ymax`, `__ymin` attributes are not updated. Therefore when I try to plot the graphic, nothing shows up. Code for the correct behaviour can be found in the `Graphic.__add__()` method.
 

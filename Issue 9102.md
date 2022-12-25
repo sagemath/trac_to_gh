@@ -4,10 +4,11 @@ archive/issues_009102.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @nthiery nborie @qed777 @williamstein @mwhansen jasonbhill\n\nI put this together as a reviewer patch for a ticket that I thought needed review (#8030), but which was already reviewed.  Rather than letting it go to waste, here it is.\n\nIt will depend on #8030.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9102\n\n",
+    "closed_at": "2010-07-06T08:09:09Z",
     "created_at": "2010-05-31T03:33:41Z",
     "labels": [
         "component: algebra",
-        "trivial"
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Docstring improvements for strong generating systems of permutation groups",

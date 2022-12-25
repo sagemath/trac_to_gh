@@ -1,22 +1,23 @@
-# Issue 5401: Fix the permission issues with the CC field after the trac 0.10.3 -> 0.11.3 update
+# Issue 5401: [with patch, positive review] Fix the permission issues with the CC field after the trac 0.10.3 -> 0.11.3 update
 
 archive/issues_005401.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nCC:  @mwhansen @jasongrout\n\nFrom #5400:\n\nMe:\n\n```\nI assume you know about the CC field, so what is the problem? \n```\nJason:\n\n```\nThe only CC option I have now with the new trac is to add myself. It's not a text box anymore. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5401\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen @jasongrout\n\nFrom #5400:\n\nMe:\n\n```\nI assume you know about the CC field, so what is the problem? \n```\nJason:\n\n```\nThe only CC option I have now with the new trac is to add \nmyself. It's not a text box anymore. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5401\n\n",
+    "closed_at": "2009-03-01T06:15:13Z",
     "created_at": "2009-02-28T16:55:46Z",
     "labels": [
         "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Fix the permission issues with the CC field after the trac 0.10.3 -> 0.11.3 update",
+    "title": "[with patch, positive review] Fix the permission issues with the CC field after the trac 0.10.3 -> 0.11.3 update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5401",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @haraldschilly
+Assignee: mabshoff
 
 CC:  @mwhansen @jasongrout
 
@@ -30,7 +31,8 @@ I assume you know about the CC field, so what is the problem?
 Jason:
 
 ```
-The only CC option I have now with the new trac is to add myself. It's not a text box anymore. 
+The only CC option I have now with the new trac is to add 
+myself. It's not a text box anymore. 
 ```
 
 Cheers,

@@ -4,6 +4,7 @@ archive/issues_006068.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @jasongrout @kini @williamstein @fchapoton\n\nCurrently all worksheets have URLs that end in a number (e.g. https://99.240.209.8:8000/home/pub/12)\n.  It would be nice to have the option to specify a piece of text to\nend the URL (e.g. https://99.240.209.8:8000/home/pub/Cruise_Perf).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6068\n\n",
+    "closed_at": "2020-08-22T07:13:48Z",
     "created_at": "2009-05-18T13:09:50Z",
     "labels": [
         "component: notebook",

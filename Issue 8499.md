@@ -1,16 +1,16 @@
-# Issue 8499: partial_fraction_decomposition does not work over algebraic extensions
+# Issue 8499: improve documentation of partial_fraction_decomposition
 
 archive/issues_008499.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nHow can one compute a partial fraction decomposition over the\ncomplex numbers? Consider the following:\n\n```\nsage: x = PolynomialRing(RationalField(), 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n(0, [1/(x^4 + 1)])\n```\nThis is ok since we explicitely work over QQ. Now compare with:\n\n```\nsage: P.<y> = PolynomialRing(RationalField())\nsage: Qbar.<y> = QuotientRing(P, y^2+1)\nsage: x = PolynomialRing(Qbar, 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8499\n\n",
+    "body": "Assignee: @burcin\n\nHow can one compute a partial fraction decomposition over the\ncomplex numbers? Consider the following:\n\n```\nsage: x = PolynomialRing(RationalField(), 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n(0, [1/(x^4 + 1)])\n```\nThis is ok since we explicitely work over QQ. Now compare with:\n\n```\nsage: P.<y> = PolynomialRing(RationalField())\nsage: Qbar.<y> = QuotientRing(P, y^2+1)\nsage: x = PolynomialRing(Qbar, 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n\n**apply** [attachment:trac_8499.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8499\n\n",
+    "closed_at": "2014-02-07T00:50:02Z",
     "created_at": "2010-03-11T16:55:05Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "partial_fraction_decomposition does not work over algebraic extensions",
+    "title": "improve documentation of partial_fraction_decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8499",
     "user": "https://github.com/zimmermann6"
@@ -38,6 +38,9 @@ sage: r.partial_fraction_decomposition()
 ---------------------------------------------------------------------------
 NotImplementedError                       Traceback (most recent call last)
 ```
+
+
+**apply** [attachment:trac_8499.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8499
 

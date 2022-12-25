@@ -1,16 +1,17 @@
-# Issue 3013: bug in integrate (found during a talk!)
+# Issue 3013: [with patch, positive review] bug in integrate (found during a talk!)
 
 archive/issues_003013.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: integrate(sin(x)*cos(10*x)*log(x))\nTraceback (most recent call last):\n...\nTypeError: Error executing code in Maxima\nCODE:\n\tsage22 : integrate(sage21,sage3)$\nMaxima ERROR:\n\t\n\nToo many contexts.\nsage: show(integrate(sin(x^2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3013\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: integrate(sin(x)*cos(10*x)*log(x))\nTraceback (most recent call last):\n...\nTypeError: Error executing code in Maxima\nCODE:\nsage22 : integrate(sage21,sage3)$\nMaxima ERROR:\n\n\nToo many contexts.\nsage: show(integrate(sin(x^2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3013\n\n",
+    "closed_at": "2008-08-23T00:05:58Z",
     "created_at": "2008-04-23T23:50:42Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug in integrate (found during a talk!)",
+    "title": "[with patch, positive review] bug in integrate (found during a talk!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3013",
     "user": "https://github.com/williamstein"
@@ -24,9 +25,9 @@ Traceback (most recent call last):
 ...
 TypeError: Error executing code in Maxima
 CODE:
-	sage22 : integrate(sage21,sage3)$
+sage22 : integrate(sage21,sage3)$
 Maxima ERROR:
-	
+
 
 Too many contexts.
 sage: show(integrate(sin(x^2)

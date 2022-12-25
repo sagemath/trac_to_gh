@@ -4,6 +4,7 @@ archive/issues_009088.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @kcrisman mhampton\n\nRight now, this fails:\n\n```\nline3d(( (0,0,0), (1,2,3) ))\n```\n\nsince the copy of the input data is not converted to a list.  This is an easy fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9088\n\n",
+    "closed_at": "2010-07-20T10:12:39Z",
     "created_at": "2010-05-29T19:47:00Z",
     "labels": [
         "component: graphics",

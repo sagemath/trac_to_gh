@@ -4,6 +4,7 @@ archive/issues_008293.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  magawake@gmail.com\n\nI am not sure if this already exists but it would be nice if we can include the fortran compiler into the sage distribution. \n\nWhen packages like BLAS depend on fortran and other packages such as Octave prefer to use the same compiler.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8293\n\n",
+    "closed_at": "2013-05-09T18:24:41Z",
     "created_at": "2010-02-17T12:36:02Z",
     "labels": [
         "component: build"

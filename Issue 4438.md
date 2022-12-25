@@ -1,16 +1,17 @@
-# Issue 4438: Sage 3.2.a2: numerical noise in sage/calculus/functional.py and wester.py
+# Issue 4438: [with patch, with positive review] Sage 3.2.a2: numerical noise in sage/calculus/functional.py and wester.py
 
 archive/issues_004438.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/calculus/functional.py             \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-menas/tmp/functional.py\", line 248:\n    sage: [float(h(i)) for i in range(5)]\nExpected:\n    <BLANKLINE>\n    [0.0,\n     -1.1102230246251565e-16,\n     -5.5511151231257827e-17,\n     -5.5511151231257827e-17,\n     -6.9388939039072284e-17]\nGot:\n    [0.0, -1.1102230246251565e-16, 5.5511151231257827e-17, -5.5511151231257827e-17, -6.9388939039072284e-17]\n**********************************************************************\n\n\nsage -t  devel/sage/sage/calculus/wester.py                 \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-menas/tmp/wester.py\", line 261:\n    : [float(f(i/10)) for i in range(1,5)]\nExpected:\n    <BLANKLINE>\n    [-0.00033670040754082975,\n     -0.0027778004096620235,\n     -0.0098909940914040928,\n     -0.025411145508414501]\nGot:\n    [-0.00033670040754082975, -0.0027778004096620235, -0.0098909940914039263, -0.02541114550841439]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4438\n\n",
+    "closed_at": "2008-11-05T23:14:15Z",
     "created_at": "2008-11-04T13:55:36Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.a2: numerical noise in sage/calculus/functional.py and wester.py",
+    "title": "[with patch, with positive review] Sage 3.2.a2: numerical noise in sage/calculus/functional.py and wester.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4438",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

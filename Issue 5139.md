@@ -1,16 +1,17 @@
-# Issue 5139: add computation of Bach bound of number fields to Sage
+# Issue 5139: [with patch; positive review] add computation of Bach bound of number fields to Sage
 
 archive/issues_005139.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5139\n\n",
+    "closed_at": "2009-02-02T02:30:34Z",
     "created_at": "2009-01-30T19:18:55Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add computation of Bach bound of number fields to Sage",
+    "title": "[with patch; positive review] add computation of Bach bound of number fields to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5139",
     "user": "https://github.com/williamstein"

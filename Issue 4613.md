@@ -1,16 +1,17 @@
-# Issue 4613: [with patch, needs review] doctests for big-o
+# Issue 4613: [with patch, with positive review] doctests for big-o
 
 archive/issues_004613.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAlso now takes polynomial powers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4613\n\n",
+    "closed_at": "2008-11-27T03:13:27Z",
     "created_at": "2008-11-25T07:33:52Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] doctests for big-o",
+    "title": "[with patch, with positive review] doctests for big-o",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4613",
     "user": "https://github.com/robertwb"

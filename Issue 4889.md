@@ -1,16 +1,17 @@
-# Issue 4889: deprecate matrix.list()
+# Issue 4889: document matrix.list() better
 
 archive/issues_004889.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nlist(M) and M.list() returning different lists is inconsistent. As discussed at http://groups.google.com/group/sage-support/browse_thread/thread/a7d8b439df769e7 we should have  M.entries() which replaces M.list() and deprecate the latter. \n\nThe behavior of list(M) will remain the same, and consistency with M[i]. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4889\n\n",
+    "closed_at": "2010-02-18T22:03:37Z",
     "created_at": "2008-12-30T01:01:47Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "deprecate matrix.list()",
+    "title": "document matrix.list() better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4889",
     "user": "https://github.com/robertwb"

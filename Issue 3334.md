@@ -1,16 +1,17 @@
-# Issue 3334: [with patch, needs review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off
+# Issue 3334: [with patch, positive review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off
 
 archive/issues_003334.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3334\n\n",
+    "closed_at": "2008-05-31T06:21:56Z",
     "created_at": "2008-05-29T22:44:27Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off",
+    "title": "[with patch, positive review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3334",
     "user": "https://github.com/malb"

@@ -1,15 +1,16 @@
-# Issue 655: Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields
+# Issue 655: [with patch] Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields
 
 archive/issues_000655.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nApparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:\n\nSAGE:\n\n```\nsage: A = random_matrix(GF(127),10000,10000,density=0.0002,sparse=True)\nsage: time A.echelonize()\nCPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s\n```\n\nLinBox:\n\n```\nmatrix size :10000x10000\ndensity = 0.0002\nsize before = 19981\nGaussian elimination (no reordering)...done (9.08057 s)\nDONE\nsize after = 0 # Bug\n```\n\nI was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.\n\nAlso, it claims to support GF(q) which is very very slow in SAGE right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/655\n\n",
+    "closed_at": "2007-09-21T00:08:19Z",
     "created_at": "2007-09-14T09:22:40Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields",
+    "title": "[with patch] Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/655",
     "user": "https://github.com/malb"

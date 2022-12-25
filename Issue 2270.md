@@ -4,10 +4,10 @@ archive/issues_002270.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nglib is a c library with algorithms for just about everything under the sun.  The documentation for the library is available at http://library.gnome.org/devel/glib/2.14/ and the spkg itself may be downloaded at http://www.indirectproof.net/sage/glib-2.14.0.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2270\n\n",
+    "closed_at": "2008-03-09T05:39:39Z",
     "created_at": "2008-02-22T23:17:14Z",
     "labels": [
-        "component: packages: standard",
-        "minor"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "glib spkg",

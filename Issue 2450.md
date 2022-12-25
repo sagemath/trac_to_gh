@@ -1,16 +1,17 @@
-# Issue 2450: [with patch] a few doctests for matrix_integer_dense
+# Issue 2450: [with patch, with positive review] a few doctests for matrix_integer_dense
 
 archive/issues_002450.json:
 ```json
 {
     "body": "Assignee: failure\n\nJust a few doctests.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2450\n\n",
+    "closed_at": "2008-03-14T14:23:36Z",
     "created_at": "2008-03-09T23:54:10Z",
     "labels": [
         "component: doctest coverage",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch] a few doctests for matrix_integer_dense",
+    "title": "[with patch, with positive review] a few doctests for matrix_integer_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2450",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

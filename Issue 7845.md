@@ -4,6 +4,7 @@ archive/issues_007845.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nIn Sage 4.3.1.alpha0:\n\n```python\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"\n**********************************************************************\nFile \"/home/jaap/downloads/sage-4.3/devel/sage/sage/misc/sagedoc.py\", line 897:\n     sage: browse_sage_doc(identity_matrix, 'html', False)[:59]\nExpected:\n     '<div class=\"docstring\">\\n    \\n  <p><strong>File:</strong> /v'\nGot:\n     '<div class=\"docstring\">\\n    \\n  <p><strong>File:</strong> /h'\n********************************************************************** \n```\n\n\nFirst reported by [Jaap Spies](http://groups.google.com/group/sage-devel/msg/960b6f10c9024d0f).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7845\n\n",
+    "closed_at": "2010-01-13T04:14:50Z",
     "created_at": "2010-01-05T02:55:05Z",
     "labels": [
         "component: documentation",

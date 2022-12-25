@@ -4,6 +4,7 @@ archive/issues_007796.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/64bcac2d0705570f):\n\n```\nI built the html documentation in a fresh 4.3 build using \"sage\n-docbuild reference html\" as usual.  I made a clone, and it appeared\nthat all the docs were rebuilt (another 5 mins).  I made a change to a\ndocstring in one file (see #7780) and did \"sage -b\" and then \"sage\n-docbuild reference html\" again, and again it appeared that all the\ndocs were built -- another 5 mins. \n```\nMitesh Patel suggests the following fix:\n\n```\nA possible workaround:  In\n\nSAGE_LOCAL/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\n\nimport inspect and insert, e.g.,\n\n                if inspect.isfunction(config[key]):\n                    continue\n\naround line 474. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7796\n\n",
+    "closed_at": "2010-01-03T22:25:33Z",
     "created_at": "2009-12-30T15:26:07Z",
     "labels": [
         "component: documentation",

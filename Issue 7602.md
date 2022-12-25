@@ -3,7 +3,8 @@
 archive/issues_007602.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAndyNovo wrote on [sage-devel]:\n\n```\nWe've been working on factoring polynomials in FLINT very intensively the last couple months.  So we've been making floating point LLL in FLINT.  During the process I just discovered what I thought was my bug but is actually a bug in fpLLL which means it's a bug in SAGE too.\n\nHere's a simple lattice which triggers the bug on my 32 bit machine.\n(It's the zero rows which are not handled cleanly causing it to size\nreduce in very odd ways...)  For a 64 bit machine I have a much larger example which breaks it.\n\n[[0 0 0 0 0]\n[0 0 0 0 0]\n[1 0 0 0 11]\n[0 1 0 0 47]\n[0 0 1 0 3748]]\n\nTo test the bug in SAGE just run the following code:\n\nmatrix([[0,0,0,0,0],[0,0,0,0,0],[1,0,0,0,11],[0,1,0,0,47],\n[0,0,1,0,3748]]).LLL()\n\n(This was on SAGE 4-1-1 the August 14th version.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7602\n\n",
+    "body": "Assignee: @williamstein\n\nAndyNovo wrote on http://groups.google.com/group/sage-devel/browse_thread/thread/12cbd8a649a3d655/:\n\n```\nWe've been working on factoring polynomials in FLINT very intensively the last couple months.  So we've been making floating point LLL in FLINT.  During the process I just discovered what I thought was my bug but is actually a bug in fpLLL which means it's a bug in SAGE too.\n\nHere's a simple lattice which triggers the bug on my 32 bit machine.\n(It's the zero rows which are not handled cleanly causing it to size\nreduce in very odd ways...)  For a 64 bit machine I have a much larger example which breaks it.\n\n[[0 0 0 0 0]\n[0 0 0 0 0]\n[1 0 0 0 11]\n[0 1 0 0 47]\n[0 0 1 0 3748]]\n\nTo test the bug in SAGE just run the following code:\n\nmatrix([[0,0,0,0,0],[0,0,0,0,0],[1,0,0,0,11],[0,1,0,0,47],\n[0,0,1,0,3748]]).LLL()\n\n(This was on SAGE 4-1-1 the August 14th version.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7602\n\n",
+    "closed_at": "2014-08-20T20:32:01Z",
     "created_at": "2009-12-04T11:13:19Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +20,7 @@ archive/issues_007602.json:
 ```
 Assignee: @williamstein
 
-AndyNovo wrote on [sage-devel]:
+AndyNovo wrote on http://groups.google.com/group/sage-devel/browse_thread/thread/12cbd8a649a3d655/:
 
 ```
 We've been working on factoring polynomials in FLINT very intensively the last couple months.  So we've been making floating point LLL in FLINT.  During the process I just discovered what I thought was my bug but is actually a bug in fpLLL which means it's a bug in SAGE too.

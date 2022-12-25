@@ -1,16 +1,16 @@
-# Issue 3304: [with patch; needs review] Make cddlib Debian package use shared library
+# Issue 3304: Make cddlib a shared library
 
 archive/issues_003304.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nCC:  @vbraun mhampton\n\nI've attached a patch to make the Debian package use the cddlib shared library code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3304\n\n",
+    "body": "Assignee: @timabbott\n\nCC:  @vbraun mhampton\n\nKeywords: editor_mabshoff\n\nCddlib builds as a static library only. We should libtoolize it so that it installs static and dynamic libraries and .la files.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3304\n\n",
+    "closed_at": "2010-06-02T23:09:00Z",
     "created_at": "2008-05-26T01:31:25Z",
     "labels": [
-        "component: debian-package",
-        "blocker"
+        "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
-    "title": "[with patch; needs review] Make cddlib Debian package use shared library",
+    "title": "Make cddlib a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3304",
     "user": "https://github.com/timabbott"
@@ -20,7 +20,10 @@ Assignee: @timabbott
 
 CC:  @vbraun mhampton
 
-I've attached a patch to make the Debian package use the cddlib shared library code.
+Keywords: editor_mabshoff
+
+Cddlib builds as a static library only. We should libtoolize it so that it installs static and dynamic libraries and .la files.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3304
 

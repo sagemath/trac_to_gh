@@ -1,16 +1,18 @@
-# Issue 2592: NTL abort in Integers(125)[]
+# Issue 2592: [with patch; positive review] NTL abort in Integers(125)[]
 
 archive/issues_002592.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis NTL abort should be handled with a python exception:\n\n```\nsage: R.<x> = Integers(125)[]\nsage: (3*x).quo_rem(5*x)\nInvMod: inverse undefined\n/home/joel/sage/local/bin/sage-sage: line 214: 31177 Aborted                 sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2592\n\n",
+    "closed_at": "2008-04-17T20:06:43Z",
     "created_at": "2008-03-19T08:55:25Z",
     "labels": [
         "component: basic arithmetic",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "NTL abort in Integers(125)[]",
+    "title": "[with patch; positive review] NTL abort in Integers(125)[]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2592",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

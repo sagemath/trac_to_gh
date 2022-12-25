@@ -3,10 +3,11 @@
 archive/issues_007382.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @jbalakrishnan minz jpflori\n\nSo I don't actually *need* matrix_of_frobenius_hyperelliptic of a curve over an extension field, but I inadvertently passed it in during a computation and caused a segfault. It would be nice for this to work (coercion?), since the curve is defined over QQ anyway.\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HJ = H.change_ring(J)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HJ)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7382\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @jbalakrishnan minz jpflori\n\nSo I don't actually *need* matrix_of_frobenius_hyperelliptic of a curve over an extension field, but I inadvertently passed it in during a computation and caused a segfault. It would be nice for this to work (coercion?), since the curve is defined over QQ anyway.\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HJ = H.change_ring(J)\nsage: import sage.schemes.hyperelliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HJ)\n...SIGSEGV...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7382\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2009-11-03T17:59:21Z",
     "labels": [
-        "component: number theory",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -28,18 +29,9 @@ sage: H = HyperellipticCurve(x^3-10*x+9)
 sage: K = Qp(3,5)
 sage: J.<a> = K.extension(x^30-3)
 sage: HJ = H.change_ring(J)
-sage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw
+sage: import sage.schemes.hyperelliptic_curves.monsky_washnitzer as mw
 sage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HJ)
-
-
-------------------------------------------------------------
-Unhandled SIGSEGV: A segmentation fault occured in SAGE.
-This probably occured because a *compiled* component
-of SAGE has a bug in it (typically accessing invalid memory)
-or is not properly wrapped with _sig_on, _sig_off.
-You might want to run SAGE under gdb with 'sage -gdb' to debug this.
-SAGE will now terminate (sorry).
-------------------------------------------------------------
+...SIGSEGV...
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7382

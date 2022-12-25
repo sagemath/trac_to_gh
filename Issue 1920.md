@@ -3,11 +3,11 @@
 archive/issues_001920.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen cwitty @jasongrout\n\nThis works:\n\n```\nvar('x,y')\nplot3d(0, (x,-1,1), (y,-1,1))\n```\n\nThis doesn't:\n\n```\nplot3d(0, (-1,1), (-1,1))\n```\n\nIt seems completely reasonable that we fix the above so it does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1920\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen cwitty @jasongrout\n\nThis works:\n\n```\nvar('x,y')\nplot3d(0, (x,-1,1), (y,-1,1))\n```\n\nThis doesn't:\n\n```\nplot3d(0, (-1,1), (-1,1))\n```\n\nIt seems completely reasonable that we fix the above so it does.\n\n\n---\n\nApply [attachment:trac_1920-verify.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/1920\n\n",
+    "closed_at": "2012-12-18T11:17:16Z",
     "created_at": "2008-01-25T05:59:46Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "3d graphics -- constant plot3d's",
@@ -34,6 +34,11 @@ plot3d(0, (-1,1), (-1,1))
 ```
 
 It seems completely reasonable that we fix the above so it does.
+
+
+---
+
+Apply [attachment:trac_1920-verify.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/1920
 

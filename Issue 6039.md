@@ -1,16 +1,17 @@
-# Issue 6039: [with patch, needs review] Change name of pari's sum function when imported
+# Issue 6039: [with patch, positive review] Change name of pari's sum function when imported
 
 archive/issues_006039.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nWhen we include Pari's `sum` function via `libs/pari/decl.pxi`, it takes precedence over the default Python one. This causes some rather confusing compiler errors -- see, e.g., this thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/68a7bd7e99ef22e6#\n\nThe attached patch uses string replace magic to rename it to `pari_sum`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6039\n\n",
+    "closed_at": "2009-05-14T17:33:03Z",
     "created_at": "2009-05-14T16:49:37Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] Change name of pari's sum function when imported",
+    "title": "[with patch, positive review] Change name of pari's sum function when imported",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6039",
     "user": "https://github.com/craigcitro"

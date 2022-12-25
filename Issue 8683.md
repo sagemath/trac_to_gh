@@ -3,7 +3,8 @@
 archive/issues_008683.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rhinton @jasongrout @jhpalmieri\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/277c49764bb2aea) thread for the request and some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8683\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rhinton @jasongrout @jhpalmieri\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/277c49764bb2aea) thread for the request and some background information.\n\nMerge in this order:\n\n1. [trac_8683-randstate.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8683/trac_8683-randstate.patch)\n2. [trac_8683-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8683/trac_8683-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8683\n\n",
+    "closed_at": "2010-04-16T18:57:38Z",
     "created_at": "2010-04-13T23:44:34Z",
     "labels": [
         "component: documentation"
@@ -20,6 +21,11 @@ Assignee: mvngu
 CC:  @rhinton @jasongrout @jhpalmieri
 
 As the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/277c49764bb2aea) thread for the request and some background information.
+
+Merge in this order:
+
+1. [trac_8683-randstate.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8683/trac_8683-randstate.patch)
+2. [trac_8683-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8683/trac_8683-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8683
 

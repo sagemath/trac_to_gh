@@ -1,16 +1,17 @@
-# Issue 1254: revision to combinat.py
+# Issue 1254: [with bundle] revision to combinat.py
 
 archive/issues_001254.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/combinat20071124.hg\ndoes the following: \n(1) adds a wrapper to guava's HadamardMat, constructing Hadamard matrices of \ncertain types,\n(2) modifies the function permutations following the suggestions in the \n\"bug in permutations\" thread\nhttp://thread.gmane.org/gmane.comp.mathematics.sage.support/2245\n\nIssue created by migration from https://trac.sagemath.org/ticket/1254\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/combinat20071124.hg\ndoes the following: \n(1) adds a wrapper to guava's HadamardMat, constructing Hadamard matrices of \ncertain types,\n(2) modifies the function permutations following the suggestions in the \n\"bug in permutations\" thread\nhttp://thread.gmane.org/gmane.comp.mathematics.sage.support/2245\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1254\n\n",
+    "closed_at": "2007-11-24T18:48:53Z",
     "created_at": "2007-11-24T17:40:57Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
-    "title": "revision to combinat.py",
+    "title": "[with bundle] revision to combinat.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1254",
     "user": "https://github.com/wdjoyner"
@@ -28,6 +29,7 @@ certain types,
 (2) modifies the function permutations following the suggestions in the 
 "bug in permutations" thread
 http://thread.gmane.org/gmane.comp.mathematics.sage.support/2245
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1254
 

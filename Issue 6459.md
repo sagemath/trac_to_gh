@@ -1,9 +1,10 @@
-# Issue 6459: make it so control-shift-enter sends a blank line to tinymce
+# Issue 6459: [with patch, positive review] make it so control-shift-enter sends a blank line to tinymce
 
 archive/issues_006459.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jasongrout\n\n```\nFrom Pat LeSmithe:\n\nControl-enter is bound to spliteval_cell.  To make control-shift-enter, say, insert a line break, try augmenting notebook.py's tinyMCE.init()'s setup with some code ripped from the Safari plug-in:\n\n     // Around line 1840 of sage/server/notebook/notebook.py\n     setup : function(ed) {\n         ed.onKeyDown.add(function(ed, e) {\n             // Make ctrl-shift-enter insert a line break.  Copied from\nthe Safari plug-in.\n             if (e.keyCode == 13 && e.shiftKey && e.ctrlKey) {\n                 // Workaround for missing shift+enter support,\nhttp://bugs.webkit.org/show_bug.cgi?id=16973\n                 var dom = ed.dom, s = ed.selection, r = s.getRng(), br;\n\n                 // Insert BR element\n                 r.insertNode(br = dom.create('br'));\n\n                 // Place caret after BR\n                 r.setStartAfter(br);\n                 r.setEndAfter(br);\n                 s.setRng(r);\n\n                 // Could not place caret after BR then insert an nbsp\nentity and move the caret\n                 if (s.getSel().focusNode == br.previousSibling) {\n\ns.select(dom.insertAfter(dom.doc.createTextNode('\\u00a0'), br));\n                     s.collapse(1);\n                 }\n\n                 // Scroll to new position, scrollIntoView can't be\nused due to bug: http://bugs.webkit.org/show_bug.cgi?id=16117\n                 ed.getWin().scrollTo(0,\ndom.getPos(s.getRng().startContainer).y);\n\n                 tinymce.dom.Event.cancel(e);\n             }\n         });\n         // Make shift-enter quit editing.  This is the \"old\" code.\n         ed.onKeyDown.add(function(ed, e) {\n             if (key_enter_shift(key_event(e))) {\n                 $(ed.formElement).submit();\n             }\n         })\n     }\n\nThis seems to work on Linux in Firefox, Opera, and the Qt 4.5 WebKit\ndemo browser (e.g., /usr/lib64/qt4/demos/browser/browser).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6459\n\n",
+    "closed_at": "2009-10-17T07:32:11Z",
     "created_at": "2009-07-03T15:16:51Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_006459.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "make it so control-shift-enter sends a blank line to tinymce",
+    "title": "[with patch, positive review] make it so control-shift-enter sends a blank line to tinymce",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6459",
     "user": "https://github.com/williamstein"

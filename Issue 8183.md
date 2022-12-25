@@ -3,10 +3,11 @@
 archive/issues_008183.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  mvngu @jhpalmieri\n\nLikely follow-up to #8036.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8183\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mvngu @jhpalmieri\n\nLikely follow-up to #8036.\n\nFor the tour\n\n```\nWriting index file a_tour_of_sage.idx\n\n! LaTeX Error: Command \\at already defined.\n               Or name \\end... illegal, see p.192 of the manual.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.39 \\newcommand\\at{@}\n                      \n?\n```\nFor the tutorial:\n\n```\n! LaTeX Error: Missing \\begin{document}.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.29 \\DeclareUnicodeCharacter{00A0}{\\nobreakspace}\n                                                  \n?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8183\n\n",
+    "closed_at": "2010-02-11T14:29:32Z",
     "created_at": "2010-02-04T07:34:34Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -21,6 +22,36 @@ Assignee: @aghitza
 CC:  mvngu @jhpalmieri
 
 Likely follow-up to #8036.
+
+For the tour
+
+```
+Writing index file a_tour_of_sage.idx
+
+! LaTeX Error: Command \at already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \newcommand\at{@}
+                      
+?
+```
+For the tutorial:
+
+```
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \DeclareUnicodeCharacter{00A0}{\nobreakspace}
+                                                  
+?
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8183
 

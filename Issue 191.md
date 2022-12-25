@@ -1,25 +1,28 @@
-# Issue 191: prime table / database
+# Issue 191: factorization table / database
 
 archive/issues_000191.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of prime numbers.\n\nFor example, on the number theory list:\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\nSo a person really wanted to factor some numbers p^p -1, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject.\n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of integers\nof special forms whose factorizations are known, since a huge amount of work has already been done on this.  The SAGE factor command could consult such a table, before applying other more general techniques. \n\nFor example, on the number theory list:\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\nSo a person really wanted to factor some numbers `p^p -1`, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject. \n\nI believe the Cunningham project has large tables of factored integers\nof a special form. This might be a useful resource for those wanting to\nundertake this project.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
+    "closed_at": "2010-07-20T09:40:24Z",
     "created_at": "2007-01-13T20:51:51Z",
     "labels": [
-        "component: number theory"
+        "component: factorization",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "prime table / database",
+    "title": "factorization table / database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/191",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: tbd
 
 CC:  mvngu
 
-It would be very nice if SAGE had a large table/database of prime numbers.
+It would be very nice if SAGE had a large table/database of integers
+of special forms whose factorizations are known, since a huge amount of work has already been done on this.  The SAGE factor command could consult such a table, before applying other more general techniques. 
 
 For example, on the number theory list:
 
@@ -36,12 +39,17 @@ For the meaning of the "L" and "M" notation, see the papers at
  
 http://homes.cerias.purdue.edu/~ssw/bell/index.html
 ```
-So a person really wanted to factor some numbers p^p -1, but couldn't
+So a person really wanted to factor some numbers `p^p -1`, but couldn't
 with PARI.  If SAGE had tables of the factorizations of those numbers,
 it could have done it via a lookup, and the verbose message could have
 given the above reference.  Something similar would be good for a huge
 range of classes of prime numbers.   This would be an excellent student
-project.
+project. 
+
+I believe the Cunningham project has large tables of factored integers
+of a special form. This might be a useful resource for those wanting to
+undertake this project.
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/191
 

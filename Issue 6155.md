@@ -4,6 +4,7 @@ archive/issues_006155.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nThe full Stein-Watkins package fails to install cleanly on x86_64-\nredhat-linux\n\nhttp://modular.math.washington.edu/Tables/ecdb/stein-watkins-ecdb.spkg\n\nThe relevant lines from install-log seem to be:\n\nmv: invalid option -- r\nTry `mv --help' for more information.\n\nSince the install script only moves some .bz2 files into the data\ndirectory, it's easy to figure out how to do this by hand and after a\n2.7Gb download, one is remarkably motivated to do so. So I'm a very\nhappy user of the database now. But William might want to fix the\ninstall script ...\n\nCheers,\n\nNils\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6155\n\n",
+    "closed_at": "2013-08-16T11:12:07Z",
     "created_at": "2009-05-30T03:52:10Z",
     "labels": [
         "component: packages: optional",

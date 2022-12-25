@@ -3,7 +3,8 @@
 archive/issues_004484.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere are lots of platform-specific quirks in various parts of the Sage library. For instance, see the `#if defined(__sun)` at the top of `partitions_c.cc` (`partitions_c.h`). These should be moved to a single header in `libcsage`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4484\n\n",
+    "body": "Assignee: mabshoff\n\nThere are lots of platform-specific quirks in various parts of the Sage library. For instance, see the `#if defined(__sun)` at the top of `partitions_c.cc` (and `partitions_c.h`). These should be moved to a single header in `libcsage`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4484\n\n",
+    "closed_at": "2013-05-21T07:23:47Z",
     "created_at": "2008-11-09T23:05:29Z",
     "labels": [
         "component: build",
@@ -18,7 +19,7 @@ archive/issues_004484.json:
 ```
 Assignee: mabshoff
 
-There are lots of platform-specific quirks in various parts of the Sage library. For instance, see the `#if defined(__sun)` at the top of `partitions_c.cc` (`partitions_c.h`). These should be moved to a single header in `libcsage`.
+There are lots of platform-specific quirks in various parts of the Sage library. For instance, see the `#if defined(__sun)` at the top of `partitions_c.cc` (and `partitions_c.h`). These should be moved to a single header in `libcsage`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4484
 

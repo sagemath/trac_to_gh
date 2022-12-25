@@ -4,6 +4,7 @@ archive/issues_006248.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe file sage-README-osx.txt in SAGE_ROOT has mode 755, which is silly for a text file. Someone in charge of the \"official\" tarball should run a \"chmod 644\" on that file so it's not executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6248\n\n",
+    "closed_at": "2009-06-18T10:32:06Z",
     "created_at": "2009-06-08T14:41:05Z",
     "labels": [
         "component: distribution",

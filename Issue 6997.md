@@ -1,9 +1,10 @@
-# Issue 6997: minor typo in Constructions documentation
+# Issue 6997: [with patch, positive review] minor typo in Constructions documentation
 
 archive/issues_006997.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  mariah.lenox@gmail.com @wdjoyner\n\nMariah Lenox reports a typo in the Construction Guide at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b370c14dea509a7c) thread:\n\n```\nA minor typo in the Constructions documentation.  The\nConstructions documentation says to send corrections\nto sage-devel.\n\n# HG changeset patch\n# User Mariah Lenox <mariah.le...@gmail.com>\n# Date 1253652415 14400\n# Node ID bd65499b09ca9c88108908a609648850433dda8a\n# Parent  40fe66e6c2b07677706fd983a6be6f3eb86060c5\nuser: Mariah Lenox <mariah.le...@gmail.com>\nbranch 'default'\nchanged doc/en/constructions/interface_issues.rst\n\ndiff -r 40fe66e6c2b0 -r bd65499b09ca doc/en/constructions/\ninterface_issues.rst\n--- a/doc/en/constructions/interface_issues.rst Mon Sep 21 09:59:54\n2009 -0400\n+++ b/doc/en/constructions/interface_issues.rst Tue Sep 22 16:46:55\n2009 -0400\n@@ -549,7 +549,7 @@\n some of the GAP databases have to be added separately, and\n Singular. Adding Singular was not easy, due to the difficulty of\n compiling Singular from source. Version 0.9 was released in\n-November. This version when through 34 releases! As of version\n+November. This version went through 34 releases! As of version\n 0.9.34 (definitely by version 0.10.0), Maxima and clisp were\n included with Sage. Version 0.10.0 was released January 12, 2006.\n The release of Sage 1.0 was made early February, 2006. As of\n@@ -559,4 +559,4 @@\n such as assistance in compiling on various OS's. Generally code\n authors are acknowledged in the AUTHOR section of the Python\n docstring of their file and the credits section of the Sage\n-website.\n\\ No newline at end of file\n+website. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6997\n\n",
+    "closed_at": "2009-09-23T00:20:27Z",
     "created_at": "2009-09-22T22:22:55Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006997.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "minor typo in Constructions documentation",
+    "title": "[with patch, positive review] minor typo in Constructions documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6997",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

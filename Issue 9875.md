@@ -1,17 +1,18 @@
-# Issue 9875: Building PARI/GP with SAGE_CHECK=yes fails on rnfkummer on a PPC Mac OS X 10.4
+# Issue 9875: Building PARI/GP with SAGE_CHECK=yes fails on 32-bit big endian machines
 
 archive/issues_009875.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @qed777 georgsweber\n\n**This is an upstream problem with PARI/GP**\n\nOn one PPC Mac OS X 10.4 machine, the \"rnfkummer\" test in PARI's `make test-all` always fails.\n\nFor example, with this version:\n\n```\nGP/PARI CALCULATOR Version 2.4.3 (development svn-12594)\nPowerPC running darwin (PPC/GMP-5.0.1 kernel) 32-bit version\ncompiled: Sep  8 2010, gcc-4.5.1 (GCC)\n(readline v5.0 enabled, extended help enabled)\n```\n\nI get a failure in rnfkummer (both sta and dyn), I am attaching the dif and the output of Configure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9876\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @qed777 georgsweber\n\n**This is an upstream problem with PARI/GP**\n\nUpstream report: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1099](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1099)\n\nThe \"rnfkummer\" test in PARI's `make test-all` fails on the following systems:\n* PPC OS X 10.4\n* Linux PPC 32-bit\n* Solaris SPARC\n\nFor example, on a PPC Mac OS X 10.4:\n\n```\nGP/PARI CALCULATOR Version 2.4.3 (development svn-12594)\nPowerPC running darwin (PPC/GMP-5.0.1 kernel) 32-bit version\ncompiled: Sep  8 2010, gcc-4.5.1 (GCC)\n(readline v5.0 enabled, extended help enabled)\n```\n\nI get a failure in rnfkummer (both sta and dyn), I am attaching the dif and the output of Configure.\n\n* **New pari spkg:** [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p7.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p7.spkg) (see also `pari.p7.patch` below)\n* **sagelib patch:** `9876_doctest.patch`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9876\n\n",
+    "closed_at": "2010-09-29T08:40:07Z",
     "created_at": "2010-09-08T18:58:52Z",
     "labels": [
         "component: packages: standard",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Building PARI/GP with SAGE_CHECK=yes fails on rnfkummer on a PPC Mac OS X 10.4",
+    "title": "Building PARI/GP with SAGE_CHECK=yes fails on 32-bit big endian machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9875",
     "user": "https://github.com/jdemeyer"
@@ -23,9 +24,14 @@ CC:  drkirkby @qed777 georgsweber
 
 **This is an upstream problem with PARI/GP**
 
-On one PPC Mac OS X 10.4 machine, the "rnfkummer" test in PARI's `make test-all` always fails.
+Upstream report: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1099](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1099)
 
-For example, with this version:
+The "rnfkummer" test in PARI's `make test-all` fails on the following systems:
+* PPC OS X 10.4
+* Linux PPC 32-bit
+* Solaris SPARC
+
+For example, on a PPC Mac OS X 10.4:
 
 ```
 GP/PARI CALCULATOR Version 2.4.3 (development svn-12594)
@@ -35,6 +41,9 @@ compiled: Sep  8 2010, gcc-4.5.1 (GCC)
 ```
 
 I get a failure in rnfkummer (both sta and dyn), I am attaching the dif and the output of Configure.
+
+* **New pari spkg:** [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p7.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p7.spkg) (see also `pari.p7.patch` below)
+* **sagelib patch:** `9876_doctest.patch`
 
 Issue created by migration from https://trac.sagemath.org/ticket/9876
 

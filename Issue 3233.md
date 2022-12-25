@@ -1,16 +1,17 @@
-# Issue 3233: [with patch; needs review] cygwin -- make linbox work with cygwin
+# Issue 3233: [with patch; positive review] cygwin -- make linbox work with cygwin
 
 archive/issues_003233.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe new spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/linbox-1.1.5.p5.spkg\n\nPlease note also #3183.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3233\n\n",
+    "closed_at": "2008-05-18T12:57:38Z",
     "created_at": "2008-05-16T23:34:29Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- make linbox work with cygwin",
+    "title": "[with patch; positive review] cygwin -- make linbox work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3233",
     "user": "https://github.com/williamstein"

@@ -3,7 +3,8 @@
 archive/issues_009154.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime\n\nThis is a followup to #9067.  Amazingly,  the BoehmGC spkg: boehm_gc-7.1.p5.spkg in Sage 4.4.3 does not work.  \n\nI'm trying building now with the boehm_gc-7.1.p4.spkg in /home/mhansen/sage-4.3.5/spkg/standard on winxp2, and it quickly gets passed the problem that boehm_gc-7.1.p5.spkg exhibits, and so far seems to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9154\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime\n\nThis is a followup to #9067.  Amazingly,  the BoehmGC spkg: boehm_gc-7.1.p5.spkg in Sage 4.4.3 does not work.\n\nApply the spkg [http://boxen.math.washington.edu/home/dima/packages/boehm_gc-7.1.p7.spkg](http://boxen.math.washington.edu/home/dima/packages/boehm_gc-7.1.p7.spkg).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9154\n\n",
+    "closed_at": "2011-05-31T17:06:59Z",
     "created_at": "2010-06-06T03:50:06Z",
     "labels": [
         "component: packages: standard",
@@ -21,9 +22,9 @@ Assignee: tbd
 
 CC:  @nexttime
 
-This is a followup to #9067.  Amazingly,  the BoehmGC spkg: boehm_gc-7.1.p5.spkg in Sage 4.4.3 does not work.  
+This is a followup to #9067.  Amazingly,  the BoehmGC spkg: boehm_gc-7.1.p5.spkg in Sage 4.4.3 does not work.
 
-I'm trying building now with the boehm_gc-7.1.p4.spkg in /home/mhansen/sage-4.3.5/spkg/standard on winxp2, and it quickly gets passed the problem that boehm_gc-7.1.p5.spkg exhibits, and so far seems to work.
+Apply the spkg [http://boxen.math.washington.edu/home/dima/packages/boehm_gc-7.1.p7.spkg](http://boxen.math.washington.edu/home/dima/packages/boehm_gc-7.1.p7.spkg).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9154
 

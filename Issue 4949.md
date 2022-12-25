@@ -1,16 +1,17 @@
-# Issue 4949: Optionally build spkgs in $SAGE_BUILD_TMPDIR
+# Issue 4949: Optionally build spkgs in $SAGE_BUILD_DIR
 
 archive/issues_004949.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  drkirkby @nexttime\n\n$HOME can be slow in case it is NFS mounted for example. So using local scratch space or even better a RAM disk should speed up the build by a nice factor. To so so use $SAGE_BUILD_TMPDIR in case it exists instead of $SAGE_ROOT/spkg/build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4949\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  drkirkby @nexttime\n\nKeywords: sd32\n\n`$SAGE_ROOT/spkg/build` can be slow in case it is NFS-mounted for example. So using local scratch space or even better a RAM disk should speed up the build by a nice factor. To do so, use `$SAGE_BUILD_DIR` instead of `$SAGE_ROOT/spkg/build/`.\n\n---\n\nApply [attachment:trac_4949-root.v5.patch] and [attachment:4949_review.patch] to the Sage **root repository**.\n\nApply [attachment:trac_4949-installation.v3.patch] to the **Sage library**.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4949\n\n",
+    "closed_at": "2012-02-22T10:43:54Z",
     "created_at": "2009-01-07T05:20:19Z",
     "labels": [
         "component: build",
-        "critical"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Optionally build spkgs in $SAGE_BUILD_TMPDIR",
+    "title": "Optionally build spkgs in $SAGE_BUILD_DIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4949",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,11 +21,16 @@ Assignee: mabshoff
 
 CC:  drkirkby @nexttime
 
-$HOME can be slow in case it is NFS mounted for example. So using local scratch space or even better a RAM disk should speed up the build by a nice factor. To so so use $SAGE_BUILD_TMPDIR in case it exists instead of $SAGE_ROOT/spkg/build.
+Keywords: sd32
 
-Cheers,
+`$SAGE_ROOT/spkg/build` can be slow in case it is NFS-mounted for example. So using local scratch space or even better a RAM disk should speed up the build by a nice factor. To do so, use `$SAGE_BUILD_DIR` instead of `$SAGE_ROOT/spkg/build/`.
 
-Michael
+---
+
+Apply [attachment:trac_4949-root.v5.patch] and [attachment:4949_review.patch] to the Sage **root repository**.
+
+Apply [attachment:trac_4949-installation.v3.patch] to the **Sage library**.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4949
 

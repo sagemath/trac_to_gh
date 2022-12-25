@@ -1,16 +1,16 @@
-# Issue 5093: [with preliminary patch, request comments] rewrite fast_float to support more datatypes
+# Issue 5093: [with patch, positive review] rewrite fast_float to support more datatypes
 
 archive/issues_005093.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @robertwb @jasongrout bober\n\nI've mentioned several times over the past months that I'm rewriting fast_float.  Here's a preliminary patch, that shows the direction I'm taking (automatically generate interpreters for each type, by having Python code write C code).\n\nThis version replaces fast_float with the new code, and also adds a new entry point, fast_callable.\n\nfast_callable(EXPR, domain=R)\n\n(where EXPR is a symbolic expression or a polynomial) is essentially equivalent to evaluating EXPR with calls to R() at every node.  There's special fast support for domain=RDF or domain=RealField(n), and there's slowish generic code that should work for arbitrary R.\n\nThe code is not ready for submission... there are very few doctests, and a lot of the documentation is simply wrong.  But if anybody has any comments, I'd be happy to hear them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5093\n\n",
+    "closed_at": "2009-03-25T06:24:30Z",
     "created_at": "2009-01-25T03:33:37Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with preliminary patch, request comments] rewrite fast_float to support more datatypes",
+    "title": "[with patch, positive review] rewrite fast_float to support more datatypes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5093",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -4,6 +4,7 @@ archive/issues_000109.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R.<x> = PolynomialRing(pAdicField(5))\nsage: type(x)\n <class 'sage.rings.polynomial_element.Polynomial_generic_dense_field'>\nsage: type(x**int(0))\n <class 'sage.rings.polynomial_element.Polynomial_generic_dense_field'>\nsage: type((x**3)**int(0))\n <type 'int'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/109\n\n",
+    "closed_at": "2006-10-05T07:56:50Z",
     "created_at": "2006-10-04T21:25:16Z",
     "labels": [
         "component: basic arithmetic",

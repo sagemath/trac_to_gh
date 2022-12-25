@@ -3,7 +3,8 @@
 archive/issues_009439.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @kcrisman @pjbruin\n\nKeywords: hyperbolic geometry, Poincare disc, upper half plane\n\nImplementation of three conformal models for hyperbolic geometry (half plane, disc, hyperboloid) with actions of their isometry groups.\n\nThe actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle\n\n```\nsage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')\n```\nThere are more examples in the file.\n\n\nDepandancy:\n\n* #9076: plot arc of circles\n\nIssue created by migration from https://trac.sagemath.org/ticket/9439\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @kcrisman @pjbruin\n\nKeywords: hyperbolic geometry, Poincare disc, upper half plane, Beltrami-Klein, hyperboloid model, sd35, days64\n\nImplementation of two conformal models of hyperbolic geometry (half plane, disc) and actions of their isometry groups.\n\nThe actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle\n\n```\nsage: HH\nHyperbolic half plane\nsage: HH(0)\nBoundary point 0\nsage: p = HH.polygon([CC(0), CC(1), CC(2,2)])\nsage: p.plot(face_color='red').show(aspect_ratio=1)\n```\nThere are more examples in the file.\n\nApply:\n* [attachment:trac_9439-hyperbolic_geometry.patch]\n* [attachment:trac_9439-hyperbolic_geometry_review_fc.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9439\n\n",
+    "closed_at": "2015-03-19T03:17:35Z",
     "created_at": "2010-07-06T16:13:33Z",
     "labels": [
         "component: geometry"
@@ -15,25 +16,29 @@ archive/issues_009439.json:
     "user": "https://github.com/videlec"
 }
 ```
-Assignee: mhampton
+Assignee: @videlec
 
 CC:  @kcrisman @pjbruin
 
-Keywords: hyperbolic geometry, Poincare disc, upper half plane
+Keywords: hyperbolic geometry, Poincare disc, upper half plane, Beltrami-Klein, hyperboloid model, sd35, days64
 
-Implementation of three conformal models for hyperbolic geometry (half plane, disc, hyperboloid) with actions of their isometry groups.
+Implementation of two conformal models of hyperbolic geometry (half plane, disc) and actions of their isometry groups.
 
 The actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle
 
 ```
-sage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')
+sage: HH
+Hyperbolic half plane
+sage: HH(0)
+Boundary point 0
+sage: p = HH.polygon([CC(0), CC(1), CC(2,2)])
+sage: p.plot(face_color='red').show(aspect_ratio=1)
 ```
 There are more examples in the file.
 
-
-Depandancy:
-
-* #9076: plot arc of circles
+Apply:
+* [attachment:trac_9439-hyperbolic_geometry.patch]
+* [attachment:trac_9439-hyperbolic_geometry_review_fc.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9439
 

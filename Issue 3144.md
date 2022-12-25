@@ -4,6 +4,7 @@ archive/issues_003144.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNote that the output of var('x,y') below the second time is *totally broken* - it returns a string:\n\n```\nsage: x,y=var(\"x,y\")\nsage: f(x,y)=sin(x)+cos(y)\nsage: grads=[diff(f,var) for var in (x,y)]\nsage: var('x,y')\n'x,y'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3144\n\n",
+    "closed_at": "2009-01-22T02:30:33Z",
     "created_at": "2008-05-09T15:16:51Z",
     "labels": [
         "component: calculus",

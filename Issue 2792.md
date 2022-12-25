@@ -1,16 +1,17 @@
-# Issue 2792: [with patch, needs review] remove workaround for non-existing Cython bug
+# Issue 2792: [with patch, positive review] remove workaround for non-existing Cython bug
 
 archive/issues_002792.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @robertwb\n\nSee https://bugs.launchpad.net/bugs/151575 for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2792\n\n",
+    "closed_at": "2008-04-03T11:09:34Z",
     "created_at": "2008-04-03T10:23:16Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] remove workaround for non-existing Cython bug",
+    "title": "[with patch, positive review] remove workaround for non-existing Cython bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2792",
     "user": "https://github.com/malb"

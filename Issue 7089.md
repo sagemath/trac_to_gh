@@ -1,22 +1,25 @@
-# Issue 7089: refactor SAGE_ROOT/makefile
+# Issue 7089: [with patch, positive review] refactor SAGE_ROOT/makefile
 
 archive/issues_007089.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI've been editing the root makefile while working on a couple tickets, and I have a deep urge to refactor repetitive, boilerplate code. In SAGE_ROOT/makefile, there are many sequences of commands that are repeated in multiple targets.\n\nThe attached patch puts the repetitive bits into variables that can easily be customized later by editing only one thing in the makefile, instead of multiple things.\n\nI'd also like to consider removing the \"install\" and \"gmp\" targets in the makefile. I suspect no one ever uses them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7089\n\n",
+    "body": "Assignee: @dandrake\n\nKeywords: makefile\n\nI've been editing the root makefile while working on a couple tickets, and I have a deep urge to refactor repetitive, boilerplate code. In SAGE_ROOT/makefile, there are many sequences of commands that are repeated in multiple targets.\n\nThe attached patch puts the repetitive bits into variables that can easily be customized later by editing only one thing in the makefile, instead of multiple things.\n\nI'd also like to consider removing the \"install\" and \"gmp\" targets in the makefile. I suspect no one ever uses them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7089\n\n",
+    "closed_at": "2009-10-16T09:02:23Z",
     "created_at": "2009-10-01T03:39:26Z",
     "labels": [
         "component: build",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "refactor SAGE_ROOT/makefile",
+    "title": "[with patch, positive review] refactor SAGE_ROOT/makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7089",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
+
+Keywords: makefile
 
 I've been editing the root makefile while working on a couple tickets, and I have a deep urge to refactor repetitive, boilerplate code. In SAGE_ROOT/makefile, there are many sequences of commands that are repeated in multiple targets.
 

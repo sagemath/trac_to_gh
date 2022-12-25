@@ -1,16 +1,17 @@
-# Issue 6127: [with patch; needs review] fix trivial typo in documentation
+# Issue 6127: [with patch, positive review] fix trivial typo in documentation
 
 archive/issues_006127.json:
 ```json
 {
     "body": "Assignee: tba\n\nThis was pointed out by Ron Evans (of UCSD).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6127\n\n",
+    "closed_at": "2009-05-28T00:32:32Z",
     "created_at": "2009-05-25T01:13:55Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] fix trivial typo in documentation",
+    "title": "[with patch, positive review] fix trivial typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6127",
     "user": "https://github.com/williamstein"

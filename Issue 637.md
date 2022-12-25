@@ -1,15 +1,17 @@
-# Issue 637: notebook improvement --
+# Issue 637: [with patch; positive review] notebook improvement -- upload allow txt worksheets.
 
 archive/issues_000637.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\n> 1) It would be nice if one could upload directly the text of a\n>    worksheet to SAGE and have it automatically evaluated as an\n>    uploaded worksheet.\n\nI like this suggestion.  It has always been on my (perhaps only mental)\ntodo list. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/637\n\n",
+    "body": "Assignee: boothby\n\n```\n> 1) It would be nice if one could upload directly the text of a\n>    worksheet to SAGE and have it automatically evaluated as an\n>    uploaded worksheet.\n\nI like this suggestion.  It has always been on my (perhaps only mental) todo list.   To clarify -- this means making it in \nthe \"upload a file\" box you can upload plain text files in addition\nto .sws files. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/637\n\n",
+    "closed_at": "2008-05-17T18:36:20Z",
     "created_at": "2007-09-11T04:39:49Z",
     "labels": [
-        "component: notebook"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook improvement --",
+    "title": "[with patch; positive review] notebook improvement -- upload allow txt worksheets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/637",
     "user": "https://github.com/williamstein"
@@ -22,8 +24,9 @@ Assignee: boothby
 >    worksheet to SAGE and have it automatically evaluated as an
 >    uploaded worksheet.
 
-I like this suggestion.  It has always been on my (perhaps only mental)
-todo list. 
+I like this suggestion.  It has always been on my (perhaps only mental) todo list.   To clarify -- this means making it in 
+the "upload a file" box you can upload plain text files in addition
+to .sws files. 
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/637

@@ -4,6 +4,7 @@ archive/issues_000035.json:
 ```json
 {
     "body": "Assignee: somebody\n\n SAGE notebook load doesn't deal with DOS format files correctly,\n  but python import does.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/35\n\n",
+    "closed_at": "2007-01-19T11:13:27Z",
     "created_at": "2006-09-12T23:29:11Z",
     "labels": [
         "component: basic arithmetic",

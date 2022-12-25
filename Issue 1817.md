@@ -1,16 +1,17 @@
-# Issue 1817: [with patch] crypto.mq.sr doctest coverage at 100%
+# Issue 1817: [with patch, with positive review] crypto.mq.sr doctest coverage at 100%
 
 archive/issues_001817.json:
 ```json
 {
     "body": "Assignee: tba\n\nSee patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1817\n\n",
+    "closed_at": "2008-01-23T04:15:18Z",
     "created_at": "2008-01-18T00:11:23Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] crypto.mq.sr doctest coverage at 100%",
+    "title": "[with patch, with positive review] crypto.mq.sr doctest coverage at 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1817",
     "user": "https://github.com/malb"

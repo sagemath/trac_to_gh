@@ -4,6 +4,7 @@ archive/issues_000478.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSAGE should not depend on openssl, since openssl is gpl-incompatible.\n\nUnfortunately, gnutls's presence isn't enough for Python to build the \"md5\" module, and\nSAGE needs that module.\n\nIssue created by migration from https://trac.sagemath.org/ticket/478\n\n",
+    "closed_at": "2008-01-27T17:31:17Z",
     "created_at": "2007-08-22T07:01:43Z",
     "labels": [
         "component: packages: standard"

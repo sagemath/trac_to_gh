@@ -4,6 +4,7 @@ archive/issues_007827.json:
 ```json
 {
     "body": "Assignee: @peterjeremy\n\nCC:  drkirby @williamstein\n\n* FreeBSD uses an '_fbsd' suffix on the ELF format supported by ld - prevents ld: unrecognised emulation mode: elf_x86_64 error during atlas build. Reported upstream as https://sourceforge.net/tracker/index.php?func=detail&aid=2728930&group_id=23725&atid=379482\n\n* Treat shared libraries the same as Linux - otherwise they aren't correctly detected by (eg) numpy. (sage-specific) \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7827\n\n",
+    "closed_at": "2010-02-01T00:40:07Z",
     "created_at": "2010-01-03T04:15:58Z",
     "labels": [
         "component: porting: bsd",

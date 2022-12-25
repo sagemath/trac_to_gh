@@ -3,7 +3,8 @@
 archive/issues_006873.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nObserve:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n3*y\nsage: var('x,y')\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n2*x + y\n```\n\nThis is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6873\n\n",
+    "body": "Assignee: @malb\n\nObserve:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n3*y\nsage: var('x,y')\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n2*x + y\n```\n\n\nThis is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases. \n\nIf you do `f.subs` in the first case above you'll see at the bottom code using I think libsingular that is really wrong.  Probably the only way to do this right will be to construct a homomorphism and apply it (?), sort of like this:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x + 2*y\nsage: R.hom([y,x])(f)\n2*x + y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6873\n\n",
+    "closed_at": "2009-09-09T20:13:49Z",
     "created_at": "2009-09-03T06:12:27Z",
     "labels": [
         "component: commutative algebra",
@@ -32,7 +33,17 @@ sage: f.subs(x=y,y=x)
 2*x + y
 ```
 
-This is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases.
+
+This is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases. 
+
+If you do `f.subs` in the first case above you'll see at the bottom code using I think libsingular that is really wrong.  Probably the only way to do this right will be to construct a homomorphism and apply it (?), sort of like this:
+
+```
+sage: R.<x,y> = QQ[]
+sage: f = x + 2*y
+sage: R.hom([y,x])(f)
+2*x + y
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6873
 

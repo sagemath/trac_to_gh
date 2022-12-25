@@ -1,16 +1,17 @@
-# Issue 7141: `math_parse` parses $'s in <script> tags
+# Issue 7141: [with patch, positive review] `math_parse` parses $'s in <script> tags
 
 archive/issues_007141.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: sagenb notebook jQuery\n\n`sagenb.notebook.jsmath.math_parse` (and the source, `sage.misc.html.math_parse`) parse $'s in <script> tags, which breaks jQuery code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7141\n\n",
+    "closed_at": "2009-10-07T04:48:53Z",
     "created_at": "2009-10-06T15:02:03Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "`math_parse` parses $'s in <script> tags",
+    "title": "[with patch, positive review] `math_parse` parses $'s in <script> tags",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7141",
     "user": "https://github.com/TimDumol"

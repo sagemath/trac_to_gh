@@ -1,16 +1,17 @@
-# Issue 4936: massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched
+# Issue 4936: [with patch; positive review] massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched
 
 archive/issues_004936.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt is *always* safe to delete anything in ~/.sage/gap, since it will get autorecreated when Sage is started.   I just looked at my ~/.sage/gap on sage.math and it is HUGE:\n\n```\nwstein@sage:~/.sage/gap$ ls -1 |wc -l\n90\nwstein@sage:~/.sage/gap$ du -sch .\n1.3G\t.\n1.3G\ttotal\n```\n\nI have stuff in there going back to March 2008.\n\nThe code in gap.py that creates the workspace in .sage/gap should also delete all old workspaces.   I think 1 week is arbitrary, but is safe since as mentioned above any time length is safe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4936\n\n",
+    "body": "Assignee: mabshoff\n\nIt is *always* safe to delete anything in ~/.sage/gap, since it will get autorecreated when Sage is started.   I just looked at my ~/.sage/gap on sage.math and it is HUGE:\n\n```\nwstein@sage:~/.sage/gap$ ls -1 |wc -l\n90\nwstein@sage:~/.sage/gap$ du -sch .\n1.3G .\n1.3G total\n```\n\nI have stuff in there going back to March 2008.\n\nThe code in gap.py that creates the workspace in .sage/gap should also delete all old workspaces.   I think 1 week is arbitrary, but is safe since as mentioned above any time length is safe. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4936\n\n",
+    "closed_at": "2009-01-24T14:31:19Z",
     "created_at": "2009-01-04T17:02:31Z",
     "labels": [
         "component: performance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched",
+    "title": "[with patch; positive review] massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4936",
     "user": "https://github.com/williamstein"
@@ -24,13 +25,13 @@ It is *always* safe to delete anything in ~/.sage/gap, since it will get autorec
 wstein@sage:~/.sage/gap$ ls -1 |wc -l
 90
 wstein@sage:~/.sage/gap$ du -sch .
-1.3G	.
-1.3G	total
+1.3G .
+1.3G total
 ```
 
 I have stuff in there going back to March 2008.
 
-The code in gap.py that creates the workspace in .sage/gap should also delete all old workspaces.   I think 1 week is arbitrary, but is safe since as mentioned above any time length is safe.
+The code in gap.py that creates the workspace in .sage/gap should also delete all old workspaces.   I think 1 week is arbitrary, but is safe since as mentioned above any time length is safe. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4936
 

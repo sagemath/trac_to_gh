@@ -4,6 +4,7 @@ archive/issues_009754.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer @wdjoyner @mwhansen\n\nThis depends on #9720, so first apply the v3 patch from there.  Two routines are added.  One generates matrices (using methods from the v3 patch) whose right and left null spaces, row space, and column space have desirable properties.  The other creates random unimodular matrices. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9754\n\n",
+    "closed_at": "2010-09-15T09:54:11Z",
     "created_at": "2010-08-17T00:02:37Z",
     "labels": [
         "component: linear algebra"

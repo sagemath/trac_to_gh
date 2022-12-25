@@ -1,15 +1,16 @@
-# Issue 4144: [with patch, needs review] allow finite field elements in SBox constructor
+# Issue 4144: [with patch, positive review] allow finite field elements in SBox constructor
 
 archive/issues_004144.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: crypto, aes, sbox, mq\n\nmake it so that this works:\n\n```\nsage: sr = mq.SR(1,1,1,4, allow_zero_inversions=True)\nsage: S = mq.SBox([sr.sub_byte(e) for e in list(sr.k)])\nsage: S\n(6, 5, 2, 9, 4, 7, 3, 12, 14, 15, 10, 0, 8, 1, 13, 11)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4144\n\n",
+    "closed_at": "2008-11-23T07:56:15Z",
     "created_at": "2008-09-18T10:26:59Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] allow finite field elements in SBox constructor",
+    "title": "[with patch, positive review] allow finite field elements in SBox constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4144",
     "user": "https://github.com/malb"

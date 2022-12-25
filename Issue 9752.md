@@ -4,6 +4,7 @@ archive/issues_009752.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nThe design of number field elements (and other aspects of sage) assumes that cmp defines a total ordering, which of course doesn't respect the algebraic field structure.   Unfortunately, the actual implementation (in number_field_element.pyx) is buggy and doesn't define a total ordering.   Look at the code and you'll see.  Or just look at this example:\n\n```\nsage: L.<b> = NumberField(x^3-10001)\nsage: b+1 < L(1667)\nFalse\nsage: L(1667) < b+1\nFalse\n```\n\n\n\nI think the best correct implementation of cmp should be one that is efficient and *also* agrees with the lexicographic ordering of elements based on their representation as a polynomial in the generator of the number field.   I did implement this as part of the patch bomb #9541.  The point of the present ticket is to \"backport\" something like this out of #9541, or implement a new fix from scratch.  This is motivated by #9400. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9752\n\n",
+    "closed_at": "2011-03-21T01:17:13Z",
     "created_at": "2010-08-15T17:46:07Z",
     "labels": [
         "component: number fields",

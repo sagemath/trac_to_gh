@@ -1,16 +1,17 @@
-# Issue 8276: The one of MatrixSpace can be changed !
+# Issue 8276: Make the one(), identity_matrix() and zero_matrix() cached and immutable
 
 archive/issues_008276.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  mraum\n\nKeywords: One mutable.\n\n```\nsage: A = MatrixSpace(ZZ, 3)\nsage: A.one()\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: A.one()[1,2] = 1\nsage: A.one()\n[1 0 0]\n[0 1 1]\n[0 0 1]\n```\nIndeed it is mutable an cached !\n\nIssue created by migration from https://trac.sagemath.org/ticket/8276\n\n",
+    "body": "Assignee: @hivert\n\nCC:  mraum\n\nKeywords: One Zero mutable.\n\nAfter I found the following bug, it was decided on sage-devel that in a `MatrixSpace` the methods `.one()`, `.identity_matrix()` and `.zero_matrix()` should returns a cached immutable matrix. I had to update sage's library accordingly. \n\n```\nsage: A = MatrixSpace(ZZ, 3)\nsage: A.one()\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: A.one()[1,2] = 1\nsage: A.one()\n[1 0 0]\n[0 1 1]\n[0 0 1]\n```\n\nSo here is now the current behavior:\n\n```\nsage: MM = MatrixSpace(ZZ, 3,3)\nsage: MM(0).is_mutable()\nTrue\nsage: MM.zero_matrix().is_mutable()\nFalse\nsage: MM(1).is_mutable()\nTrue\nsage: MM.identity_matrix().is_mutable()\nFalse\n```\n\nNote that calling `MM(0)` or `MM(1)` was a bad idea:\n\n```\nsage: timeit(\"MM(0)\")\n625 loops, best of 3: 72.4 \u00b5s per loop\nsage: timeit(\"copy(MM.zero_matrix())\")\n625 loops, best of 3: 15.6 \u00b5s per loop\n```\nAnd for identity:\n\n```\nsage: timeit(\"MM(1)\")\n625 loops, best of 3: 67.4 \u00b5s per loop\nsage: timeit(\"copy(MM.identity_matrix())\")\n625 loops, best of 3: 41.1 \u00b5s per loop\n```\nI took the chance to optimize those. The extra cost of calling `MM()` or `M(0)` instead of `copy(MM.zero_matrix())` is now very small. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8276\n\n",
+    "closed_at": "2010-03-03T14:30:36Z",
     "created_at": "2010-02-15T20:49:35Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "The one of MatrixSpace can be changed !",
+    "title": "Make the one(), identity_matrix() and zero_matrix() cached and immutable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8276",
     "user": "https://github.com/hivert"
@@ -20,7 +21,9 @@ Assignee: @hivert
 
 CC:  mraum
 
-Keywords: One mutable.
+Keywords: One Zero mutable.
+
+After I found the following bug, it was decided on sage-devel that in a `MatrixSpace` the methods `.one()`, `.identity_matrix()` and `.zero_matrix()` should returns a cached immutable matrix. I had to update sage's library accordingly. 
 
 ```
 sage: A = MatrixSpace(ZZ, 3)
@@ -34,7 +37,38 @@ sage: A.one()
 [0 1 1]
 [0 0 1]
 ```
-Indeed it is mutable an cached !
+
+So here is now the current behavior:
+
+```
+sage: MM = MatrixSpace(ZZ, 3,3)
+sage: MM(0).is_mutable()
+True
+sage: MM.zero_matrix().is_mutable()
+False
+sage: MM(1).is_mutable()
+True
+sage: MM.identity_matrix().is_mutable()
+False
+```
+
+Note that calling `MM(0)` or `MM(1)` was a bad idea:
+
+```
+sage: timeit("MM(0)")
+625 loops, best of 3: 72.4 µs per loop
+sage: timeit("copy(MM.zero_matrix())")
+625 loops, best of 3: 15.6 µs per loop
+```
+And for identity:
+
+```
+sage: timeit("MM(1)")
+625 loops, best of 3: 67.4 µs per loop
+sage: timeit("copy(MM.identity_matrix())")
+625 loops, best of 3: 41.1 µs per loop
+```
+I took the chance to optimize those. The extra cost of calling `MM()` or `M(0)` instead of `copy(MM.zero_matrix())` is now very small. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8276
 

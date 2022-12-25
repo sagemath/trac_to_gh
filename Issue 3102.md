@@ -1,22 +1,23 @@
-# Issue 3102: debugging output in p-adics with print mode "digits"
+# Issue 3102: [with patch, positive review] debugging output in p-adics with print mode "digits"
 
 archive/issues_003102.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSomeone apparently forgot to uncomment some debugging code:\n\n```\nsage: K = Qp(7, print_mode=\"digits\")\nsage: K(1/2)     # ok\n...33333333333333333334\nsage: K(1/42)    # hmmmmmmmm\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '6']\n-1\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5']\n['6']\n...5555555555555555555.6\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3102\n\n",
+    "body": "Assignee: somebody\n\nSomeone apparently forgot to uncomment some debugging code:\n\n```\nsage: K = Qp(7, print_mode=\"digits\")\nsage: K(1/2)     # ok\n...33333333333333333334\nsage: K(1/42)    # hmmmmmmmm\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '6']\n-1\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5']\n['6']\n...5555555555555555555.6\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3102\n\n",
+    "closed_at": "2008-11-28T07:31:58Z",
     "created_at": "2008-05-04T21:54:08Z",
     "labels": [
-        "component: cygwin",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "debugging output in p-adics with print mode \"digits\"",
+    "title": "[with patch, positive review] debugging output in p-adics with print mode \"digits\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3102",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: mabshoff
+Assignee: somebody
 
 Someone apparently forgot to uncomment some debugging code:
 

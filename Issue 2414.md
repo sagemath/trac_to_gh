@@ -4,6 +4,7 @@ archive/issues_002414.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R.<x,y> = QQ[]\nsage: R(x/y*y)\n```\ngoes boom; it should return x.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2414\n\n",
+    "closed_at": "2008-03-21T06:20:03Z",
     "created_at": "2008-03-07T02:29:19Z",
     "labels": [
         "component: basic arithmetic",

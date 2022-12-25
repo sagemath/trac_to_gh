@@ -4,6 +4,7 @@ archive/issues_009365.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nSee\n\n  http://sage.math.washington.edu/home/wstein/tmp/install-4.5.alpha0.log\n\nand \n\n  http://sage.math.washington.edu/home/justin/logs/install-4.5.a0.log\n\nfor potentially two different issues with building R on OS X 10.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/9365\n\n",
+    "closed_at": "2010-06-30T22:10:17Z",
     "created_at": "2010-06-28T21:08:45Z",
     "labels": [
         "component: build",

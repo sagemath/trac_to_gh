@@ -3,10 +3,11 @@
 archive/issues_008854.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  jpflori @dimpase\n\nThe segfault occurred when trying to get the timings from all of the mirrors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8854\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\nThe segfault occurred when trying to get the timings from all of the mirrors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8854\n\n",
+    "closed_at": "2013-04-03T15:08:56Z",
     "created_at": "2010-05-03T12:32:08Z",
     "labels": [
-        "component: algebra",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_008854.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 CC:  jpflori @dimpase
 

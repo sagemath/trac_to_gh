@@ -3,7 +3,7 @@
 archive/issues_004475.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSee http://wiki.sagemath.org/days11/projects for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4475\n\n",
+    "body": "Assignee: @williamstein\n\nthis is basically superseded by #9193.\n\nSee http://wiki.sagemath.org/days11/projects for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4475\n\n",
     "created_at": "2008-11-09T04:26:47Z",
     "labels": [
         "component: number theory"
@@ -16,6 +16,8 @@ archive/issues_004475.json:
 }
 ```
 Assignee: @williamstein
+
+this is basically superseded by #9193.
 
 See http://wiki.sagemath.org/days11/projects for now.
 

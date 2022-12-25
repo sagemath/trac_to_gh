@@ -4,6 +4,7 @@ archive/issues_007658.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nWe've switched to VirtualBox for using Sage on Windows, but the installation guide still refers to VMWare: http://www.sagemath.org/doc/installation/binary.html#microsoft-windows\n\nWe should update this to reflect our current setup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7658\n\n",
+    "closed_at": "2009-12-14T16:13:44Z",
     "created_at": "2009-12-11T06:27:15Z",
     "labels": [
         "component: documentation",

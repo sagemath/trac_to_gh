@@ -1,9 +1,10 @@
-# Issue 5460: [with patch, needs review] deprecate 'invert' in matrix_rational_dense
+# Issue 5460: [with patch, positive review] deprecate 'invert' in matrix_rational_dense
 
 archive/issues_005460.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nSee [this thread on sage-devel](http://groups.google.com/group/sage-support/browse_frm/thread/215ae58d5a3e900f).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5460\n\n",
+    "closed_at": "2009-03-23T21:26:31Z",
     "created_at": "2009-03-09T20:17:51Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005460.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] deprecate 'invert' in matrix_rational_dense",
+    "title": "[with patch, positive review] deprecate 'invert' in matrix_rational_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5460",
     "user": "https://github.com/jhpalmieri"

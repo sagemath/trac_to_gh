@@ -4,6 +4,7 @@ archive/issues_004678.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: hg, libpng\n\nWhen trying hg_sage.commit() on OS X 10.5.5. I get the following error\n\n``` \nsage: hg_sage.commit()\ncd \"/Users/tjlahey/sage/devel/sage\" && hg diff  | less\ncd \"/Users/tjlahey/sage/devel/sage\" && hg commit  \ndyld: Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/tjlahey/sage/local/lib//libPng.dylib\n\ntransaction abort!\nrollback completed\nabort: edit failed: mate killed by signal 5\n```\nSo, for some reason, there is a conflict with the system frameworks. Unfortunately, this can't be commented out like Macports or Fink.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4678\n\n",
+    "closed_at": "2008-12-02T19:43:01Z",
     "created_at": "2008-12-02T18:14:53Z",
     "labels": [
         "component: misc",

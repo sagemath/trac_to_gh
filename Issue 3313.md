@@ -1,16 +1,17 @@
-# Issue 3313: Add code to lift SL2(Z/NZ) to SL2(Z) (and for m not equal 2)
+# Issue 3313: Add code to lift SLm(Z/NZ) to SLm(Z) (also for m not equal 2)
 
 archive/issues_003313.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan @mstreng @mmasdeu\n\nKeywords: lift symplectic sl sl2 sl2z special linear\n\nThis is very handy in the theory of abelian varieties... here's some code to do it.  Maybe someday I'll write the patch.\n\n```\ndef lift(A, N):\n    r\"\"\"\n    Lift a matrix A from SL_m(Z/NZ) to SL_m(Z).\n\n    Follows Shimura, Lemma 1.38, p21.\n\n    sage: N = 11\n    sage: A = matrix(ZZ, 4, 4, [6, 0, 0, 9, 1, 6, 9, 4, 4, 4, 8, 0, 4, 0, 0, 8])\n    sage: A.det()\n    144\n    sage: A.change_ring(Zmod(N)).det()\n    1\n    sage: L = lift(A, N)\n    sage: L.det()\n    1\n    sage: (L - A) * Mod(1, N) == 0\n    True\n\n    sage: N = 19\n    sage: B = matrix(ZZ, 4, 4, [1, 6, 10, 4, 4, 14, 15, 4, 13, 0, 1, 15, 15, 15, 17, 10])\n    sage: B.det()\n    4447\n    sage: B.change_ring(Zmod(N)).det()\n    1\n    sage: L = lift(B, N)\n    sage: L.det()\n    1\n    sage: (L - B) * Mod(1, N) == 0\n    True\n    \"\"\"\n    assert A.is_square()\n    assert det(A) != 0\n    m = A.nrows()\n    if m == 1:\n        return identity_matrix(1)\n\n    D, U, V = A.smith_form()\n    assert det(U) == 1\n    assert det(V) == 1\n#     print\n#     print \"D\"\n#     print D\n\n    a = [ D[i, i] for i in range(m) ]\n    b = prod(a[1:])\n    W = identity_matrix(m)\n    W[0, 0] = b\n    W[1, 0] = b-1\n    W[0, 1] = 1\n#     print\n#     print \"W\"\n#     print W\n\n    X = identity_matrix(m)\n    X[0, 1] = -a[1]\n#     print\n#     print \"X\"\n#     print X\n\n    Ap = D.copy()\n    Ap[0, 0] = 1\n    Ap[1, 0] = 1-a[0]\n    Ap[1, 1] *= a[0]\n#     print\n#     print \"Ap\"\n#     print Ap\n\n    assert (W*U*A*V*X).change_ring(Zmod(N)) == Ap.change_ring(Zmod(N))\n    Cp = diagonal_matrix(a[1:])\n    Cp[0, 0] *= a[0]\n    C = lift(Cp, N)\n#     print \"C\"\n#     print C\n\n    Cpp = block_diagonal_matrix(identity_matrix(1), C)\n    Cpp[1, 0] = 1-a[0]\n#     print \"Cpp\"\n#     print Cpp\n\n#     print\n    return (~U * ~W * Cpp * ~X * ~V).change_ring(ZZ)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3313\n\n",
+    "closed_at": "2018-01-20T10:42:45Z",
     "created_at": "2008-05-27T04:30:49Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
-    "title": "Add code to lift SL2(Z/NZ) to SL2(Z) (and for m not equal 2)",
+    "title": "Add code to lift SLm(Z/NZ) to SLm(Z) (also for m not equal 2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3313",
     "user": "https://github.com/ncalexan"

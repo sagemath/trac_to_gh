@@ -1,16 +1,17 @@
-# Issue 2400: maxima automatically simplifies floats to rationals
+# Issue 2400: [with patch, positive review] maxima automatically simplifies floats to rationals
 
 archive/issues_002400.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nI tried doing some integrals today and the output doesn't make much  \nsense to me:\n\nsage: f = e^(-x2)\nsage: f.integrate(x, 0, 0.1)\n2066*sqrt(pi)/36741\nsage: f.integrate(x, 0, 1/10)\nsqrt(pi)*erf(1/10)/2\n\nHmmmm. Does this mean erf(1/10) is a rational number? That's a little  \nsurprising to me. In fact:\n\nsage: RR(f.integrate(x, 0, 0.1))\n0.0996676643523801\nsage: RR(f.integrate(x, 0, 1/10))\n0.0996676642903363\n\nWhat's going on here?\n\ndavid\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2400\n\n",
+    "closed_at": "2008-03-16T02:48:45Z",
     "created_at": "2008-03-06T00:44:39Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "maxima automatically simplifies floats to rationals",
+    "title": "[with patch, positive review] maxima automatically simplifies floats to rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2400",
     "user": "https://github.com/jasongrout"

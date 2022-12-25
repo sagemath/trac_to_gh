@@ -1,21 +1,24 @@
-# Issue 6823: [with patch, needs review] Kneser Graph in graph_generators
+# Issue 6823: [with patch, positive review] Kneser Graph in graph_generators
 
 archive/issues_006823.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nKneser graphs for graph_generators ( http://en.wikipedia.org/wiki/Kneser_graph )\n\nI just define the new function graphs.KneserGraph()\n\nIssue created by migration from https://trac.sagemath.org/ticket/6823\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graph generators kneser\n\nKneser graphs for graph_generators ( http://en.wikipedia.org/wiki/Kneser_graph )\n\nI just define the new function graphs.KneserGraph()\n\nIssue created by migration from https://trac.sagemath.org/ticket/6823\n\n",
+    "closed_at": "2009-10-15T16:25:00Z",
     "created_at": "2009-08-25T08:20:10Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] Kneser Graph in graph_generators",
+    "title": "[with patch, positive review] Kneser Graph in graph_generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6823",
     "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
+
+Keywords: graph generators kneser
 
 Kneser graphs for graph_generators ( http://en.wikipedia.org/wiki/Kneser_graph )
 

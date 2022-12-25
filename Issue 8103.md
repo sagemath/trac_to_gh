@@ -4,6 +4,7 @@ archive/issues_008103.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nIt's possible to modify published worksheets, by appending worksheet commands to their URLs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8103\n\n",
+    "closed_at": "2010-01-30T05:24:18Z",
     "created_at": "2010-01-28T03:54:24Z",
     "labels": [
         "component: notebook",

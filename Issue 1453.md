@@ -1,16 +1,17 @@
-# Issue 1453: [with patch, positive review] fix cython dependency computation for new files
+# Issue 1453: fix cython dependency computation for new files
 
 archive/issues_001453.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nBuilding sage/structure/coerce.c because it depends on sage/structure/\ncoerce.pyx.\ncython --embed-positions --incref-local-binop -I/tmp/Work-mabshoff/\nrelease-cycles-2.9/sage-2.9.alpha4/devel/sage-main -o sage/structure/\ncoerce.c sage/structure/coerce.pyx\nTraceback (most recent call last):\n  File \"setup.py\", line 1124, in <module>\n    cython(ext_modules)\n  File \"setup.py\", line 1111, in cython\n    new_sources += process_cython_file(f, m, deps_of)\n  File \"setup.py\", line 1061, in process_cython_file\n    if need_to_cython(f, outfile, deps_of):\n  File \"setup.py\", line 1035, in need_to_cython\n    if os.path.exists(pxd) and check_dependencies(pxd, outfile, deps):\n  File \"setup.py\", line 1011, in check_dependencies\n    deps = deps_of[filename]\nKeyError: 'sage/rings/polynomial/pbori.pxd'\nsage: There was an error installing modified sage library code. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1453\n\n",
+    "closed_at": "2008-02-12T17:56:18Z",
     "created_at": "2007-12-10T21:35:48Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, positive review] fix cython dependency computation for new files",
+    "title": "fix cython dependency computation for new files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1453",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

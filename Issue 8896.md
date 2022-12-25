@@ -3,7 +3,7 @@
 archive/issues_008896.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nIn Sage 0.0 and 0.00000000000000000000000000000000000000 should not denote the same thing, though sadly they do.  Note, however, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage (as I expect):\n\n```\nsage: 0.0\n0.000000000000000\nsage: 0.00000000000000000000000000000000000000\n0.000000000000000\nsage: parent(0.00000000000000000000000000000000000000)\nReal Field with 53 bits of precision\nsage: 1.00000000000000000000000000000000000000\n1.0000000000000000000000000000000000000\nsage: 1.0\n1.00000000000000\nsage: parent(1.00000000000000000000000000000000000000)\nReal Field with 130 bits of precision\nsage: parent(1.0)\nReal Field with 53 bits of precision\n```\nI consider the above inconsistency a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8896\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nKeywords: sd32\n\nIn Sage 0.0 and 0.00000000000000000000000000000000000000 denote exactly the same thing (a zero with the same precision).  However, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage:\n\n```\nsage: 0.0\n0.000000000000000\nsage: 0.00000000000000000000000000000000000000\n0.000000000000000\nsage: parent(0.00000000000000000000000000000000000000)\nReal Field with 53 bits of precision\nsage: 1.00000000000000000000000000000000000000\n1.0000000000000000000000000000000000000\nsage: 1.0\n1.00000000000000\nsage: parent(1.00000000000000000000000000000000000000)\nReal Field with 130 bits of precision\nsage: parent(1.0)\nReal Field with 53 bits of precision\n```\n\nSome people consider the above inconsistency a bug.\nSee the discussion below and at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/73d513e2c55d4601).\n\nApply [attachment:8896-rebased.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8896\n\n",
     "created_at": "2010-05-05T20:17:53Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,9 @@ Assignee: @aghitza
 
 CC:  @jasongrout
 
-In Sage 0.0 and 0.00000000000000000000000000000000000000 should not denote the same thing, though sadly they do.  Note, however, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage (as I expect):
+Keywords: sd32
+
+In Sage 0.0 and 0.00000000000000000000000000000000000000 denote exactly the same thing (a zero with the same precision).  However, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage:
 
 ```
 sage: 0.0
@@ -39,7 +41,11 @@ Real Field with 130 bits of precision
 sage: parent(1.0)
 Real Field with 53 bits of precision
 ```
-I consider the above inconsistency a bug.
+
+Some people consider the above inconsistency a bug.
+See the discussion below and at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/73d513e2c55d4601).
+
+Apply [attachment:8896-rebased.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8896
 

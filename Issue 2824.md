@@ -1,9 +1,10 @@
-# Issue 2824: [with patch, needs review] sturm_bound incorrect for GammaH
+# Issue 2824: [with patch, positive review] sturm_bound incorrect for GammaH
 
 archive/issues_002824.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe Sturm bound is being calculated incorrectly for GammaH (we're just returning the bound for Gamma0, which is wrong). This fixes it.\n\nWe're actually producing wrong answers, so this is getting listed as critical.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2824\n\n",
+    "closed_at": "2008-04-06T14:16:22Z",
     "created_at": "2008-04-06T07:19:22Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_002824.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] sturm_bound incorrect for GammaH",
+    "title": "[with patch, positive review] sturm_bound incorrect for GammaH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2824",
     "user": "https://github.com/craigcitro"

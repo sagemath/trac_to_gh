@@ -1,16 +1,17 @@
-# Issue 6690: spell-check all modules under sage/coding
+# Issue 6690: [with patch, positive review] spell-check all modules under sage/coding
 
 archive/issues_006690.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @wdjoyner\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6690\n\n",
+    "closed_at": "2009-08-12T04:35:45Z",
     "created_at": "2009-08-08T17:35:54Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/coding",
+    "title": "[with patch, positive review] spell-check all modules under sage/coding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6690",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -3,11 +3,11 @@
 archive/issues_000408.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is on Mac OS X, 10.4.10, with Safari, using SAGE 2.7.1.\n\nIf I create a worksheet, fiddle around with it, and then quit and restart the server,\ngoing to \"localhost/8000\" gives me a page with the worksheet shown (as possibly\none of many).  If I click the adjacent check box and then the DELETE button, the\ncheck box is cleared but the worksheet entry remains.  Only when I 'refresh' the page\ndoes the worksheet entry disappear.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/408\n\n",
+    "body": "Assignee: boothby\n\nThis is on Mac OS X, 10.4.10, with Safari, using SAGE 2.7.1.\n\nIf I create a worksheet, fiddle around with it, and then quit and restart the server,\ngoing to \"localhost/8000\" gives me a page with the worksheet shown (as possibly\none of many).  If I click the adjacent check box and then the DELETE button, the\ncheck box is cleared but the worksheet entry remains.  Only when I 'refresh' the page\ndoes the worksheet entry disappear.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/408\n\n",
+    "closed_at": "2008-05-10T20:30:56Z",
     "created_at": "2007-07-27T05:16:05Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Notebook glitch in Safari",
@@ -16,7 +16,7 @@ archive/issues_000408.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 This is on Mac OS X, 10.4.10, with Safari, using SAGE 2.7.1.
 

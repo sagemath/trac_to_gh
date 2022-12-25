@@ -1,16 +1,17 @@
-# Issue 8800: Doctest coverage of categories
+# Issue 8800: Doctest coverage of categories - numerous coercion fixes
 
 archive/issues_008800.json:
 ```json
 {
-    "body": "Assignee: Simon King\n\nKeywords: categories doctests\n\nAccording to William at the doctest coverage of categories is too low:\n\n```\naction.pyx: 0% (0 of 31)\nfunctor.pyx: 17% (3 of 17)\nmap.pyx: 27% (10 of 37)\nmorphism.pyx: 20% (5 of 24)\npushout.py: 24% (19 of 77) \n```\nTrying to add doc tests, I actually found a bug:\n\n```\nsage: abgrps = CommutativeAdditiveGroups()\nsage: ForgetfulFunctor(abgrps, abgrps)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/patches/doku/english/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/categories/functor.so in sage.categories.functor.ForgetfulFunctor (sage/categories/functor.c:2083)()\n\nTypeError: IdentityFunctor() takes exactly one argument (2 given)\n```\nThe forgetful functor should coincide with the identity functor, but inside ``ForgetfulFunctor``, the latter is called in the wrong way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8800\n\n",
+    "body": "Assignee: Simon King\n\nKeywords: categories doctests\n\nAccording to William, the doctest coverage of categories is too low:\n\n```\naction.pyx: 0% (0 of 31)\nfunctor.pyx: 17% (3 of 17)\nmap.pyx: 27% (10 of 37)\nmorphism.pyx: 20% (5 of 24)\npushout.py: 24% (19 of 77) \n```\n\nThe original purpose of this ticket was to provide full doctest coverage for `functor.pyx` and `pushout.py`. **The doctest coverage of both files is now 100%**.\n\n\nHowever, the attempt to create meaningful doctests uncovered many bugs in various parts of Sage, and also motivated the implementation of coercion for various algebraic structures for which this has not been done before.\n\nThis a-posteriori ticket description lists the bugs killed and the features added by the patch, which should apply (with a little fuzz) after the patch from #8807. For more details on the bugs, see the comments below.\n\n1. Bug: Creating `ForgetfulFunctor` fails.\n\n   Was:\n   {{{\nsage: abgrps = CommutativeAdditiveGroups()\nsage: ForgetfulFunctor(abgrps, abgrps)\n\n---\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/patches/doku/english/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/categories/functor.so in sage.categories.functor.ForgetfulFunctor (sage/categories/functor.c:2083)()\n\nTypeError: IdentityFunctor() takes exactly one argument (2 given)\n  }}}\n\n  Now:\n  {{{\nsage: abgrps = CommutativeAdditiveGroups()\nsage: ForgetfulFunctor(abgrps, abgrps)\nThe identity functor on Category of commutative additive groups\n  }}}\n\n2. Bug: Applying `ForgetfulFunctor` returns `None`.\n\n   Was:\n   {{{\nsage: fields = Fields()\nsage: rings = Rings()\nsage: F = ForgetfulFunctor(fields,rings)\nsage: F(QQ)\n  }}}\n\n  Now:\n  {{{\nsage: fields = Fields()\nsage: rings = Rings()\nsage: F = ForgetfulFunctor(fields,rings)\nsage: F(QQ)\nRational Field\n  }}}\n\n3. Bug: Applying a functor does not complain if the argument is not contained in the domain.\n\n   Was:\n   {{{\nsage: fields = Fields()\nsage: rings = Rings()\nsage: F = ForgetfulFunctor(fields,rings)\n# Yields None, see previous bug\nsage: F(ZZ['x','y'])\n  }}}\n\n  Now:\n  {{{\nsage: fields = Fields()\nsage: rings = Rings()\nsage: F = ForgetfulFunctor(fields,rings)\nsage: F(ZZ['x','y'])\nTraceback (most recent call last):\n...\nTypeError: x (=Multivariate Polynomial Ring in x, y over Integer Ring) is not in Category of fields\n  }}}\n\n4. Bug: Comparing identity functor with any functor only checks domain and codomain\n\n   Was:\n   {{{\nsage: F = QQ['x'].construction()[0]\nsage: F\nPoly[x]\nsage: F == IdentityFunctor(Rings())\nFalse\nsage: IdentityFunctor(Rings()) == F\nTrue\n  }}}\n\n  Now:\n  {{{\nsage: F = QQ['x'].construction()[0]\nsage: F\nPoly[x]\nsage: F == IdentityFunctor(Rings())\nFalse\nsage: IdentityFunctor(Rings()) == F\nFalse\n  }}}\n\n5. Bug: Comparing identity functor with anything that is not a functor produces an error\n\n   Was:\n   {{{\nsage: IdentityFunctor(Rings()) == QQ\nTraceback (most recent call last):\n...\nAttributeError: 'RationalField_with_category' object has no attribute 'domain'\n  }}}\n\n  Now:\n  {{{\nsage: IdentityFunctor(Rings()) == QQ\nFalse\n  }}}\n\n6. Bug: The matrix functor is ill defined; moreover, ill-definedness does not result in an error.\n\n   Was:\n   {{{\nsage: F = MatrixSpace(ZZ,2,3).construction()[0]\nsage: F(RR) in F.codomain()\nFalse\n# The codomain is wrong for non-square matrices!\nsage: F.codomain()\nCategory of rings\n  }}}\n\n  Now:\n  {{{\nsage: F = MatrixSpace(ZZ,2,3).construction()[0]\nsage: F.codomain()\nCategory of commutative additive groups\nsage: F(RR) in F.codomain()\nTrue\nsage: F = MatrixSpace(ZZ,2,2).construction()[0]\nsage: F.codomain()\nCategory of rings\nsage: F(RR) in F.codomain()\nTrue\n  }}}\n\n7. Bug: Wrong domain for `VectorFunctor`; and again, functors don't test if the domain is appropriate\n\n   Was:\n   {{{\nsage: F = FreeModule(ZZ,3).construction()[0]\nsage: F\nVectorFunctor\nsage: F.domain()\nCategory of objects\nsage: F.codomain()\nCategory of objects\nsage: Set([1,2,3]) in F.domain()\nTrue\nsage: F(Set([1,2,3]))\nTraceback (most recent call last):\n...\nAttributeError: 'Set_object_enumerated' object has no attribute 'is_commutative'\n  }}}\n\n  Now:\n  {{{\nsage: F = FreeModule(ZZ,3).construction()[0]\nsage: F\nVectorFunctor\nsage: F.domain()\nCategory of commutative rings\nsage: Set([1,2,3]) in F.domain()\nFalse\nsage: F(Set([1,2,3]))\nTraceback (most recent call last):\n...\nTypeError: x (={1, 2, 3}) is not in Category of commutative rings\n  }}}\n\n8. Bug: `BlackBoxConstructionFunctor` is completely unusable\n\n`BlackBoxConstructionFunctor` should be a class, but is defined as a function. Moreover, the given init method is not using the init method of `ConstructionFunctor`. And the cmp method would raise an error if the second argument has no attribute `.box`. \n\n  The following did not work at all:\n  {{{\nsage: from sage.categories.pushout import BlackBoxConstructionFunctor\nsage: FG = BlackBoxConstructionFunctor(gap)\nsage: FS = BlackBoxConstructionFunctor(singular)\nsage: FG\nBlackBoxConstructionFunctor\nsage: FG(ZZ)\nIntegers\nsage: FG(ZZ).parent()\nGap\nsage: FS(QQ['t'])\n//   characteristic : 0\n//   number of vars : 1\n//        block   1 : ordering lp\n//                  : names    t\n//        block   2 : ordering C\nsage: FG == FS\nFalse\nsage: FG == loads(dumps(FG))\nTrue\n}}}\n\n9. Nitpicking: The `LocalizationFunctor` is nowhere used (yet)\n\nHence, I removed it.\n\n10. Bug / New Feature: Make completion and and fraction field construction functors commute.\n\nThe result of them not commuting is the following coercion bug.\n\n  Was:\n  {{{\nsage: R1.<x> = Zp(5)[]\nsage: R2 = Qp(5)\nsage: R2(1)+x\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '+': '5-adic Field with capped relative precision 20' and 'Univariate Polynomial Ring in x over 5-adic Ring with capped relative precision 20'\n  }}}\n\n  Now:\n  {{{\nsage: R1.<x> = Zp(5)[]\nsage: R2 = Qp(5)\nsage: R2(1)+x\n(1 + O(5^20))*x + (1 + O(5^20))\n  }}}\n\n11. New feature: Make the completion functor work on some objects that do not provide a completion method.\n\nThe idea is to use that the completion functor may commute with the construction of the given argument. That may safe the day.\n\n  Was:\n  {{{\nsage: P.<x> = ZZ[]\nsage: C = P.completion(x).construction()[0]\nsage: R = FractionField(P)\nsage: hasattr(R,'completion')\nFalse\nsage: C(R)\nTraceback (most recent  call last):\n...\nAttributeError: 'FractionField_generic' object has no attribute 'completion'\n  }}}\n\n  Now:\n  {{{\nsage: P.<x> = ZZ[]\nsage: C = P.completion(x).construction()[0]\nsage: R = FractionField(P)\nsage: hasattr(R,'completion')\nFalse\nsage: C(R)\nFraction Field of Power Series Ring in x over Integer Ring\n  }}}\n\n12. Bug / new feature: Coercion for free modules, taking into account a user-defined inner product\n\n   Was:\n   {{{\nsage: P.<t> = ZZ[]\nsage: M1 = FreeModule(P,3)\nsage: M2 = QQ^3\nsage: M2([1,1/2,1/3]) + M1([t,t^2+t,3])     # This is ok\n(t + 1, t^2 + t + 1/2, 10/3)\nsage: M3 = FreeModule(P,3, inner_product_matrix = Matrix(3,3,range(9)))\nsage: M2([1,1/2,1/3]) + M3([t,t^2+t,3])     # This is ok\n(t + 1, t^2 + t + 1/2, 10/3)\n# The user defined inner product matrix is lost! Bug\nsage: parent(M2([1,1/2,1/3]) + M3([t,t^2+t,3])).inner_product_matrix()\n[1 0 0]\n[0 1 0]\n[0 0 1]\n  }}}\n\n  Now:\n  {{{\nsage: parent(M2([1,1/2,1/3]) + M3([t,t^2+t,3])).inner_product_matrix()\n[0 1 2]\n[3 4 5]\n[6 7 8]\n  }}}\n\n  However, the real problem is that modules are not part of the coercion model. I tried to implement it, but that turned out to be a can of worms. So, **I suggest to deal with it on a different ticket**. Here is one bug that isn't removed, yet:\n  {{{\nsage: M4 = FreeModule(P,3, inner_product_matrix = Matrix(3,3,[1,1,1,0,1,1,0,0,1]))\nsage: M3([t,1,t^2]) + M4([t,t^2+t,3])     # This should result in an error\n(2*t, t^2 + t + 1, t^2 + 3)\n  }}}\n  Note that there should be no coercion between `M3` and `M4`, since they have different user-defined inner product matrices.\n\n\n13. Bug / new feature: Quotient rings of univariate polynomial rings do not have a construction method.\n\n   Was:\n   {{{\nsage: P.<x> = QQ[]\nsage: Q1 = P.quo([(x<sup>2+1)</sup>2*(x^2-3)])\nsage: Q2 = P.quo([(x<sup>2+1)</sup>2*(x^5+3)])\nsage: from sage.categories.pushout import pushout\nsage: pushout(Q1,Q2)\nTraceback (most recent call last):\n...\nCoercionException: No common base\n  }}}\n\n  Now:\n  {{{\nsage: P.<x> = QQ[]\nsage: Q1 = P.quo([(x<sup>2+1)</sup>2*(x^2-3)])\nsage: Q2 = P.quo([(x<sup>2+1)</sup>2*(x^5+3)])\nsage: from sage.categories.pushout import pushout\nsage: pushout(Q1,Q2)\nUnivariate Quotient Polynomial Ring in xbar over Rational Field with modulus x^4 + 2*x^2 + 1\n  }}}\n\n14. Insufficient coercion of quotient rings, if one modulus divides the other\n\n   Was:\n   {{{\nsage: P5.<x> = GF(5)[]\nsage: Q = P5.quo([(x<sup>2+1)</sup>2])\nsage: P.<x> = ZZ[]\nsage: Q1 = P.quo([(x<sup>2+1)</sup>2*(x^2-3)])\nsage: Q2 = P.quo([(x<sup>2+1)</sup>2*(x^5+3)])\nsage: Q.has_coerce_map_from(Q1)\nFalse\n  }}}\n\n  Now: There is a coercion from `Q1` to `Q`.\n\n15. Coercion of `GF(p)` versus `Integers(p)`\n\nI am not sure if this is really a bug.\n\n  Was:\n  {{{\nsage: from sage.categories.pushout import pushout\nsage: pushout(GF(5), Integers(5))\nRing of integers modulo 5\n  }}}\n\n  Now\n  {{{\nsage: from sage.categories.pushout import pushout\nsage: pushout(GF(5), Integers(5))\nFinite Field of size 5\n  }}}\n\n16. Bug / new feature: Construction for QQbar was missing.\n\n   Now:\n   {{{\nsage: QQbar.construction()\n(AlgebraicClosureFunctor, Rational Field)\n  }}}\n\n17. Bug / new feature: Construction for number fields is missing.\n\nThis became a rather complicated topic, including \"coercions for embedded versus non-embedded number fields and coercion for an order from a coercion from the ambient field\", \"pushout for number fields\", \"comparison of fractional ideals\", \"identity of residue fields\". See three discussions on sage-algebra and sage-nt\n* [Bidirectional coercions](http://groups.google.com/group/sage-nt/browse_thread/thread/32b65a5173f43267)\n* [Coercions for number fields](http://groups.google.com/group/sage-nt/browse_thread/thread/5c376dbf7e99ea97)\n* [Comparison of fractional ideals](http://groups.google.com/group/sage-nt/browse_thread/thread/54c1e33872d14334)\n\n__Coercion__\n\nImportant for the discussion is: What will we do with embeddings? \n\nCurrently, the embedding of two number fields is used to construct a coercion (compatible with the embedding). Of course, the given embedding is also used as a coerce map.\n\nIt was discussed to additionally have a \"forgetful\" coercion from an embedded to a non-embedded number field.\n\nIt turned out that with bidirectional and forgetful coercions together, one can construct examples in which the coercions do not form a commutative diagram. Hence, we do *not* introduce forgetful coercions here.\n\nHowever, some improvement of the existing implementation was needed.\n\n  Was:\n  {{{\nsage: K.<r4> = NumberField(x^4-2)\nsage: L1.<r2_1> = NumberField(x^2-2, embedding = r4**2)\nsage: L2.<r2_2> = NumberField(x^2-2, embedding = -r4**2)\nsage: r2_1+r2_2    # indirect doctest\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1109, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1109, 0))\n\n...\nsage: K.has_coerce_map_from(L1.maximal_order())\nFalse   # that's the wrong direction.\nsage: L1.has_coerce_map_from(K.maximal_order())\nTrue\n  }}}\n\n  Now:\n  {{{\nsage: K.<r4> = NumberField(x^4-2)\nsage: L1.<r2_1> = NumberField(x^2-2, embedding = r4**2)\nsage: L2.<r2_2> = NumberField(x^2-2, embedding = -r4**2)\nsage: r2_1+r2_2    # indirect doctest\n0\nsage: (r2_1+r2_2).parent() is L1\nTrue\nsage: (r2_2+r2_1).parent() is L2\nTrue\nsage: K.has_coerce_map_from(L1.maximal_order())\nTrue\nsage: L1.has_coerce_map_from(K.maximal_order())\nFalse\n  }}}\n\n__Pushout__\n\n  Was:\n  {{{\nsage: P.<x> = QQ[]\nsage: L.<b> = NumberField(x<sup>8-x</sup>4+1, embedding=CDF.0)\nsage: M1.<c1> = NumberField(x^2+x+1, embedding=b^4-1)\nsage: M2.<c2> = NumberField(x^2+1, embedding=-b^6)\nsage: M1.coerce_map_from(M2)\nsage: M2.coerce_map_from(M1)\nsage: c1+c2; parent(c1+c2)    #indirect doctest\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '+': 'Number Field in c1 with defining polynomial x^2 + x + 1' and 'Number Field in c2 with defining polynomial x^2 + 1'\nsage: from sage.categories.pushout import pushout\nsage: pushout(M1['x'],M2['x'])\nTraceback (most recent call last):\n...\nCoercionException: No common base\n  }}}\n\n  Now: Note that we will only have a pushout if the codomains of the embeddings are number fields. Hence, in the second example, we won't use `CDF` as a pushout.\n  {{{\nsage: P.<x> = QQ[]\nsage: L.<b> = NumberField(x<sup>8-x</sup>4+1, embedding=CDF.0)\nsage: M1.<c1> = NumberField(x^2+x+1, embedding=b^4-1)\nsage: M2.<c2> = NumberField(x^2+1, embedding=-b^6)\nsage: M1.coerce_map_from(M2)\nsage: M2.coerce_map_from(M1)\nsage: c1+c2; parent(c1+c2)    #indirect doctest\n-b^6 + b^4 - 1\nNumber Field in b with defining polynomial x^8 - x^4 + 1\nsage: from sage.categories.pushout import pushout\nsage: pushout(M1['x'],M2['x'])\nUnivariate Polynomial Ring in x over Number Field in b with defining polynomial x^8 - x^4 + 1\nsage: K.<a> = NumberField(x^3-2, embedding=CDF(1/2*I*2^(1/3)*sqrt(3) - 1/2*2^(1/3)))\nsage: L.<b> = NumberField(x^6-2, embedding=1.1)\nsage: L.coerce_map_from(K)\nsage: K.coerce_map_from(L)\nsage: pushout(K,L)\nTraceback (most recent call last):\n...\nCoercionException: ('Ambiguous Base Extension', Number Field in a with defining polynomial x^3 - 2, Number Field in b with defining polynomial x^6 - 2)\n}}}\n\n__Comparison of fractional ideals / identity of Residue Fields__\n\n  Fractional ideals have a `__cmp__` method that only took into account the Hermite normal form. Originally, the comparison of fractional ideals by \"==\" and by \"cmp\" yields different results. Since \"==\" of fractional ideals is used for caching residue fields, but \"cmp\" was used for comparing residue fields, the residue fields did not provide unique parents.\n\n  Was:\n  {{{\nsage: L.<b> = NumberField(x<sup>8-x</sup>4+1)\nsage: F_2 = L.fractional_ideal(b^2-1)\nsage: F_4 = L.fractional_ideal(b^4-1)\nsage: F_2==F_4\nTrue\nsage: K.<r4> = NumberField(x^4-2)\nsage: L.<r4> = NumberField(x^4-2, embedding=CDF.0)\nsage: FK = K.fractional_ideal(K.0)\nsage: FL = L.fractional_ideal(L.0)\nsage: FK != FL\nTrue\nsage: RL = ResidueField(FL)\nsage: RK = ResidueField(FK)\nsage: RK is RL\nFalse\nsage: RK == RL\nTrue\n  }}}\n\n  Now:\n  {{{\nsage: L.<b> = NumberField(x<sup>8-x</sup>4+1)\nsage: F_2 = L.fractional_ideal(b^2-1)\nsage: F_4 = L.fractional_ideal(b^4-1)\nsage: F_2==F_4\nTrue\nsage: K.<r4> = NumberField(x^4-2)\nsage: L.<r4> = NumberField(x^4-2, embedding=CDF.0)\nsage: FK = K.fractional_ideal(K.0)\nsage: FL = L.fractional_ideal(L.0)\nsage: FK != FL\nTrue\nsage: RL = ResidueField(FL)\nsage: RK = ResidueField(FK)\nsage: RK is RL\nFalse\nsage: RK == RL\nFalse\n  }}}\n\n  Since `RL` is defined with the embedded field `L`, not with the unembedded `K`, there is no coercion from the order of `K` to `RL`. However, *conversion* works (this used to fail!):\n\n  {{{\nsage: OK = K.maximal_order()\nsage: RL.has_coerce_map_from(OK)\nFalse\nsage: RL(OK.1)\n0\n  }}}\n\n  Note that I also had to change some arithmetic stuff in the `_tate` method of elliptic curves: The old implementation relied on the assumption that fractional ideals in an embedded field and in a non-embedded field can't be equal. This assumption should still hold (since we do not introduce forgetful coercion), but I think it is OK to keep the change in _tate.\n\n**Apply:**\n1. [attachment:8800_functor_pushout_doc_and_fixes.patch]\n2. [attachment:referee.patch]\n\n**Dependencies:** #10677, #2329.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8800\n\n",
+    "closed_at": "2011-03-08T21:45:09Z",
     "created_at": "2010-04-28T08:47:56Z",
     "labels": [
         "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
-    "title": "Doctest coverage of categories",
+    "title": "Doctest coverage of categories - numerous coercion fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8800",
     "user": "https://github.com/simon-king-jena"
@@ -20,7 +21,7 @@ Assignee: Simon King
 
 Keywords: categories doctests
 
-According to William at the doctest coverage of categories is too low:
+According to William, the doctest coverage of categories is too low:
 
 ```
 action.pyx: 0% (0 of 31)
@@ -29,12 +30,22 @@ map.pyx: 27% (10 of 37)
 morphism.pyx: 20% (5 of 24)
 pushout.py: 24% (19 of 77) 
 ```
-Trying to add doc tests, I actually found a bug:
 
-```
+The original purpose of this ticket was to provide full doctest coverage for `functor.pyx` and `pushout.py`. **The doctest coverage of both files is now 100%**.
+
+
+However, the attempt to create meaningful doctests uncovered many bugs in various parts of Sage, and also motivated the implementation of coercion for various algebraic structures for which this has not been done before.
+
+This a-posteriori ticket description lists the bugs killed and the features added by the patch, which should apply (with a little fuzz) after the patch from #8807. For more details on the bugs, see the comments below.
+
+1. Bug: Creating `ForgetfulFunctor` fails.
+
+   Was:
+   {{{
 sage: abgrps = CommutativeAdditiveGroups()
 sage: ForgetfulFunctor(abgrps, abgrps)
----------------------------------------------------------------------------
+
+---
 TypeError                                 Traceback (most recent call last)
 
 /home/king/SAGE/patches/doku/english/<ipython console> in <module>()
@@ -42,8 +53,503 @@ TypeError                                 Traceback (most recent call last)
 /home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/categories/functor.so in sage.categories.functor.ForgetfulFunctor (sage/categories/functor.c:2083)()
 
 TypeError: IdentityFunctor() takes exactly one argument (2 given)
-```
-The forgetful functor should coincide with the identity functor, but inside ``ForgetfulFunctor``, the latter is called in the wrong way.
+  }}}
+
+  Now:
+  {{{
+sage: abgrps = CommutativeAdditiveGroups()
+sage: ForgetfulFunctor(abgrps, abgrps)
+The identity functor on Category of commutative additive groups
+  }}}
+
+2. Bug: Applying `ForgetfulFunctor` returns `None`.
+
+   Was:
+   {{{
+sage: fields = Fields()
+sage: rings = Rings()
+sage: F = ForgetfulFunctor(fields,rings)
+sage: F(QQ)
+  }}}
+
+  Now:
+  {{{
+sage: fields = Fields()
+sage: rings = Rings()
+sage: F = ForgetfulFunctor(fields,rings)
+sage: F(QQ)
+Rational Field
+  }}}
+
+3. Bug: Applying a functor does not complain if the argument is not contained in the domain.
+
+   Was:
+   {{{
+sage: fields = Fields()
+sage: rings = Rings()
+sage: F = ForgetfulFunctor(fields,rings)
+# Yields None, see previous bug
+sage: F(ZZ['x','y'])
+  }}}
+
+  Now:
+  {{{
+sage: fields = Fields()
+sage: rings = Rings()
+sage: F = ForgetfulFunctor(fields,rings)
+sage: F(ZZ['x','y'])
+Traceback (most recent call last):
+...
+TypeError: x (=Multivariate Polynomial Ring in x, y over Integer Ring) is not in Category of fields
+  }}}
+
+4. Bug: Comparing identity functor with any functor only checks domain and codomain
+
+   Was:
+   {{{
+sage: F = QQ['x'].construction()[0]
+sage: F
+Poly[x]
+sage: F == IdentityFunctor(Rings())
+False
+sage: IdentityFunctor(Rings()) == F
+True
+  }}}
+
+  Now:
+  {{{
+sage: F = QQ['x'].construction()[0]
+sage: F
+Poly[x]
+sage: F == IdentityFunctor(Rings())
+False
+sage: IdentityFunctor(Rings()) == F
+False
+  }}}
+
+5. Bug: Comparing identity functor with anything that is not a functor produces an error
+
+   Was:
+   {{{
+sage: IdentityFunctor(Rings()) == QQ
+Traceback (most recent call last):
+...
+AttributeError: 'RationalField_with_category' object has no attribute 'domain'
+  }}}
+
+  Now:
+  {{{
+sage: IdentityFunctor(Rings()) == QQ
+False
+  }}}
+
+6. Bug: The matrix functor is ill defined; moreover, ill-definedness does not result in an error.
+
+   Was:
+   {{{
+sage: F = MatrixSpace(ZZ,2,3).construction()[0]
+sage: F(RR) in F.codomain()
+False
+# The codomain is wrong for non-square matrices!
+sage: F.codomain()
+Category of rings
+  }}}
+
+  Now:
+  {{{
+sage: F = MatrixSpace(ZZ,2,3).construction()[0]
+sage: F.codomain()
+Category of commutative additive groups
+sage: F(RR) in F.codomain()
+True
+sage: F = MatrixSpace(ZZ,2,2).construction()[0]
+sage: F.codomain()
+Category of rings
+sage: F(RR) in F.codomain()
+True
+  }}}
+
+7. Bug: Wrong domain for `VectorFunctor`; and again, functors don't test if the domain is appropriate
+
+   Was:
+   {{{
+sage: F = FreeModule(ZZ,3).construction()[0]
+sage: F
+VectorFunctor
+sage: F.domain()
+Category of objects
+sage: F.codomain()
+Category of objects
+sage: Set([1,2,3]) in F.domain()
+True
+sage: F(Set([1,2,3]))
+Traceback (most recent call last):
+...
+AttributeError: 'Set_object_enumerated' object has no attribute 'is_commutative'
+  }}}
+
+  Now:
+  {{{
+sage: F = FreeModule(ZZ,3).construction()[0]
+sage: F
+VectorFunctor
+sage: F.domain()
+Category of commutative rings
+sage: Set([1,2,3]) in F.domain()
+False
+sage: F(Set([1,2,3]))
+Traceback (most recent call last):
+...
+TypeError: x (={1, 2, 3}) is not in Category of commutative rings
+  }}}
+
+8. Bug: `BlackBoxConstructionFunctor` is completely unusable
+
+`BlackBoxConstructionFunctor` should be a class, but is defined as a function. Moreover, the given init method is not using the init method of `ConstructionFunctor`. And the cmp method would raise an error if the second argument has no attribute `.box`. 
+
+  The following did not work at all:
+  {{{
+sage: from sage.categories.pushout import BlackBoxConstructionFunctor
+sage: FG = BlackBoxConstructionFunctor(gap)
+sage: FS = BlackBoxConstructionFunctor(singular)
+sage: FG
+BlackBoxConstructionFunctor
+sage: FG(ZZ)
+Integers
+sage: FG(ZZ).parent()
+Gap
+sage: FS(QQ['t'])
+//   characteristic : 0
+//   number of vars : 1
+//        block   1 : ordering lp
+//                  : names    t
+//        block   2 : ordering C
+sage: FG == FS
+False
+sage: FG == loads(dumps(FG))
+True
+}}}
+
+9. Nitpicking: The `LocalizationFunctor` is nowhere used (yet)
+
+Hence, I removed it.
+
+10. Bug / New Feature: Make completion and and fraction field construction functors commute.
+
+The result of them not commuting is the following coercion bug.
+
+  Was:
+  {{{
+sage: R1.<x> = Zp(5)[]
+sage: R2 = Qp(5)
+sage: R2(1)+x
+Traceback (most recent call last):
+...
+TypeError: unsupported operand parent(s) for '+': '5-adic Field with capped relative precision 20' and 'Univariate Polynomial Ring in x over 5-adic Ring with capped relative precision 20'
+  }}}
+
+  Now:
+  {{{
+sage: R1.<x> = Zp(5)[]
+sage: R2 = Qp(5)
+sage: R2(1)+x
+(1 + O(5^20))*x + (1 + O(5^20))
+  }}}
+
+11. New feature: Make the completion functor work on some objects that do not provide a completion method.
+
+The idea is to use that the completion functor may commute with the construction of the given argument. That may safe the day.
+
+  Was:
+  {{{
+sage: P.<x> = ZZ[]
+sage: C = P.completion(x).construction()[0]
+sage: R = FractionField(P)
+sage: hasattr(R,'completion')
+False
+sage: C(R)
+Traceback (most recent  call last):
+...
+AttributeError: 'FractionField_generic' object has no attribute 'completion'
+  }}}
+
+  Now:
+  {{{
+sage: P.<x> = ZZ[]
+sage: C = P.completion(x).construction()[0]
+sage: R = FractionField(P)
+sage: hasattr(R,'completion')
+False
+sage: C(R)
+Fraction Field of Power Series Ring in x over Integer Ring
+  }}}
+
+12. Bug / new feature: Coercion for free modules, taking into account a user-defined inner product
+
+   Was:
+   {{{
+sage: P.<t> = ZZ[]
+sage: M1 = FreeModule(P,3)
+sage: M2 = QQ^3
+sage: M2([1,1/2,1/3]) + M1([t,t^2+t,3])     # This is ok
+(t + 1, t^2 + t + 1/2, 10/3)
+sage: M3 = FreeModule(P,3, inner_product_matrix = Matrix(3,3,range(9)))
+sage: M2([1,1/2,1/3]) + M3([t,t^2+t,3])     # This is ok
+(t + 1, t^2 + t + 1/2, 10/3)
+# The user defined inner product matrix is lost! Bug
+sage: parent(M2([1,1/2,1/3]) + M3([t,t^2+t,3])).inner_product_matrix()
+[1 0 0]
+[0 1 0]
+[0 0 1]
+  }}}
+
+  Now:
+  {{{
+sage: parent(M2([1,1/2,1/3]) + M3([t,t^2+t,3])).inner_product_matrix()
+[0 1 2]
+[3 4 5]
+[6 7 8]
+  }}}
+
+  However, the real problem is that modules are not part of the coercion model. I tried to implement it, but that turned out to be a can of worms. So, **I suggest to deal with it on a different ticket**. Here is one bug that isn't removed, yet:
+  {{{
+sage: M4 = FreeModule(P,3, inner_product_matrix = Matrix(3,3,[1,1,1,0,1,1,0,0,1]))
+sage: M3([t,1,t^2]) + M4([t,t^2+t,3])     # This should result in an error
+(2*t, t^2 + t + 1, t^2 + 3)
+  }}}
+  Note that there should be no coercion between `M3` and `M4`, since they have different user-defined inner product matrices.
+
+
+13. Bug / new feature: Quotient rings of univariate polynomial rings do not have a construction method.
+
+   Was:
+   {{{
+sage: P.<x> = QQ[]
+sage: Q1 = P.quo([(x<sup>2+1)</sup>2*(x^2-3)])
+sage: Q2 = P.quo([(x<sup>2+1)</sup>2*(x^5+3)])
+sage: from sage.categories.pushout import pushout
+sage: pushout(Q1,Q2)
+Traceback (most recent call last):
+...
+CoercionException: No common base
+  }}}
+
+  Now:
+  {{{
+sage: P.<x> = QQ[]
+sage: Q1 = P.quo([(x<sup>2+1)</sup>2*(x^2-3)])
+sage: Q2 = P.quo([(x<sup>2+1)</sup>2*(x^5+3)])
+sage: from sage.categories.pushout import pushout
+sage: pushout(Q1,Q2)
+Univariate Quotient Polynomial Ring in xbar over Rational Field with modulus x^4 + 2*x^2 + 1
+  }}}
+
+14. Insufficient coercion of quotient rings, if one modulus divides the other
+
+   Was:
+   {{{
+sage: P5.<x> = GF(5)[]
+sage: Q = P5.quo([(x<sup>2+1)</sup>2])
+sage: P.<x> = ZZ[]
+sage: Q1 = P.quo([(x<sup>2+1)</sup>2*(x^2-3)])
+sage: Q2 = P.quo([(x<sup>2+1)</sup>2*(x^5+3)])
+sage: Q.has_coerce_map_from(Q1)
+False
+  }}}
+
+  Now: There is a coercion from `Q1` to `Q`.
+
+15. Coercion of `GF(p)` versus `Integers(p)`
+
+I am not sure if this is really a bug.
+
+  Was:
+  {{{
+sage: from sage.categories.pushout import pushout
+sage: pushout(GF(5), Integers(5))
+Ring of integers modulo 5
+  }}}
+
+  Now
+  {{{
+sage: from sage.categories.pushout import pushout
+sage: pushout(GF(5), Integers(5))
+Finite Field of size 5
+  }}}
+
+16. Bug / new feature: Construction for QQbar was missing.
+
+   Now:
+   {{{
+sage: QQbar.construction()
+(AlgebraicClosureFunctor, Rational Field)
+  }}}
+
+17. Bug / new feature: Construction for number fields is missing.
+
+This became a rather complicated topic, including "coercions for embedded versus non-embedded number fields and coercion for an order from a coercion from the ambient field", "pushout for number fields", "comparison of fractional ideals", "identity of residue fields". See three discussions on sage-algebra and sage-nt
+* [Bidirectional coercions](http://groups.google.com/group/sage-nt/browse_thread/thread/32b65a5173f43267)
+* [Coercions for number fields](http://groups.google.com/group/sage-nt/browse_thread/thread/5c376dbf7e99ea97)
+* [Comparison of fractional ideals](http://groups.google.com/group/sage-nt/browse_thread/thread/54c1e33872d14334)
+
+__Coercion__
+
+Important for the discussion is: What will we do with embeddings? 
+
+Currently, the embedding of two number fields is used to construct a coercion (compatible with the embedding). Of course, the given embedding is also used as a coerce map.
+
+It was discussed to additionally have a "forgetful" coercion from an embedded to a non-embedded number field.
+
+It turned out that with bidirectional and forgetful coercions together, one can construct examples in which the coercions do not form a commutative diagram. Hence, we do *not* introduce forgetful coercions here.
+
+However, some improvement of the existing implementation was needed.
+
+  Was:
+  {{{
+sage: K.<r4> = NumberField(x^4-2)
+sage: L1.<r2_1> = NumberField(x^2-2, embedding = r4**2)
+sage: L2.<r2_2> = NumberField(x^2-2, embedding = -r4**2)
+sage: r2_1+r2_2    # indirect doctest
+ERROR: An unexpected error occurred while tokenizing input
+The following traceback may be corrupted or invalid
+The error message is: ('EOF in multi-line statement', (1109, 0))
+
+ERROR: An unexpected error occurred while tokenizing input
+The following traceback may be corrupted or invalid
+The error message is: ('EOF in multi-line statement', (1109, 0))
+
+...
+sage: K.has_coerce_map_from(L1.maximal_order())
+False   # that's the wrong direction.
+sage: L1.has_coerce_map_from(K.maximal_order())
+True
+  }}}
+
+  Now:
+  {{{
+sage: K.<r4> = NumberField(x^4-2)
+sage: L1.<r2_1> = NumberField(x^2-2, embedding = r4**2)
+sage: L2.<r2_2> = NumberField(x^2-2, embedding = -r4**2)
+sage: r2_1+r2_2    # indirect doctest
+0
+sage: (r2_1+r2_2).parent() is L1
+True
+sage: (r2_2+r2_1).parent() is L2
+True
+sage: K.has_coerce_map_from(L1.maximal_order())
+True
+sage: L1.has_coerce_map_from(K.maximal_order())
+False
+  }}}
+
+__Pushout__
+
+  Was:
+  {{{
+sage: P.<x> = QQ[]
+sage: L.<b> = NumberField(x<sup>8-x</sup>4+1, embedding=CDF.0)
+sage: M1.<c1> = NumberField(x^2+x+1, embedding=b^4-1)
+sage: M2.<c2> = NumberField(x^2+1, embedding=-b^6)
+sage: M1.coerce_map_from(M2)
+sage: M2.coerce_map_from(M1)
+sage: c1+c2; parent(c1+c2)    #indirect doctest
+Traceback (most recent call last):
+...
+TypeError: unsupported operand parent(s) for '+': 'Number Field in c1 with defining polynomial x^2 + x + 1' and 'Number Field in c2 with defining polynomial x^2 + 1'
+sage: from sage.categories.pushout import pushout
+sage: pushout(M1['x'],M2['x'])
+Traceback (most recent call last):
+...
+CoercionException: No common base
+  }}}
+
+  Now: Note that we will only have a pushout if the codomains of the embeddings are number fields. Hence, in the second example, we won't use `CDF` as a pushout.
+  {{{
+sage: P.<x> = QQ[]
+sage: L.<b> = NumberField(x<sup>8-x</sup>4+1, embedding=CDF.0)
+sage: M1.<c1> = NumberField(x^2+x+1, embedding=b^4-1)
+sage: M2.<c2> = NumberField(x^2+1, embedding=-b^6)
+sage: M1.coerce_map_from(M2)
+sage: M2.coerce_map_from(M1)
+sage: c1+c2; parent(c1+c2)    #indirect doctest
+-b^6 + b^4 - 1
+Number Field in b with defining polynomial x^8 - x^4 + 1
+sage: from sage.categories.pushout import pushout
+sage: pushout(M1['x'],M2['x'])
+Univariate Polynomial Ring in x over Number Field in b with defining polynomial x^8 - x^4 + 1
+sage: K.<a> = NumberField(x^3-2, embedding=CDF(1/2*I*2^(1/3)*sqrt(3) - 1/2*2^(1/3)))
+sage: L.<b> = NumberField(x^6-2, embedding=1.1)
+sage: L.coerce_map_from(K)
+sage: K.coerce_map_from(L)
+sage: pushout(K,L)
+Traceback (most recent call last):
+...
+CoercionException: ('Ambiguous Base Extension', Number Field in a with defining polynomial x^3 - 2, Number Field in b with defining polynomial x^6 - 2)
+}}}
+
+__Comparison of fractional ideals / identity of Residue Fields__
+
+  Fractional ideals have a `__cmp__` method that only took into account the Hermite normal form. Originally, the comparison of fractional ideals by "==" and by "cmp" yields different results. Since "==" of fractional ideals is used for caching residue fields, but "cmp" was used for comparing residue fields, the residue fields did not provide unique parents.
+
+  Was:
+  {{{
+sage: L.<b> = NumberField(x<sup>8-x</sup>4+1)
+sage: F_2 = L.fractional_ideal(b^2-1)
+sage: F_4 = L.fractional_ideal(b^4-1)
+sage: F_2==F_4
+True
+sage: K.<r4> = NumberField(x^4-2)
+sage: L.<r4> = NumberField(x^4-2, embedding=CDF.0)
+sage: FK = K.fractional_ideal(K.0)
+sage: FL = L.fractional_ideal(L.0)
+sage: FK != FL
+True
+sage: RL = ResidueField(FL)
+sage: RK = ResidueField(FK)
+sage: RK is RL
+False
+sage: RK == RL
+True
+  }}}
+
+  Now:
+  {{{
+sage: L.<b> = NumberField(x<sup>8-x</sup>4+1)
+sage: F_2 = L.fractional_ideal(b^2-1)
+sage: F_4 = L.fractional_ideal(b^4-1)
+sage: F_2==F_4
+True
+sage: K.<r4> = NumberField(x^4-2)
+sage: L.<r4> = NumberField(x^4-2, embedding=CDF.0)
+sage: FK = K.fractional_ideal(K.0)
+sage: FL = L.fractional_ideal(L.0)
+sage: FK != FL
+True
+sage: RL = ResidueField(FL)
+sage: RK = ResidueField(FK)
+sage: RK is RL
+False
+sage: RK == RL
+False
+  }}}
+
+  Since `RL` is defined with the embedded field `L`, not with the unembedded `K`, there is no coercion from the order of `K` to `RL`. However, *conversion* works (this used to fail!):
+
+  {{{
+sage: OK = K.maximal_order()
+sage: RL.has_coerce_map_from(OK)
+False
+sage: RL(OK.1)
+0
+  }}}
+
+  Note that I also had to change some arithmetic stuff in the `_tate` method of elliptic curves: The old implementation relied on the assumption that fractional ideals in an embedded field and in a non-embedded field can't be equal. This assumption should still hold (since we do not introduce forgetful coercion), but I think it is OK to keep the change in _tate.
+
+**Apply:**
+1. [attachment:8800_functor_pushout_doc_and_fixes.patch]
+2. [attachment:referee.patch]
+
+**Dependencies:** #10677, #2329.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8800
 

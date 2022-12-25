@@ -1,16 +1,17 @@
-# Issue 8281: coercion problem breaks hecke_operator_on_basis over finite fields
+# Issue 8281: bug in hecke_operator_on_basis over finite fields
 
 archive/issues_008281.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\nThis happens in 4.3.3.alpha0:\n\n```\nsage: bas_mod5 = [f.change_ring(GF(5)) for f in victor_miller_basis(12, 20)]\nsage: hecke_operator_on_basis(bas_mod5, 2, 12)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ghitza/shared/articles/eigensystems/code/<ipython console> in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/hecke_operator_on_qexp.pyc in hecke_operator_on_basis(B, n, k, eps, already_echelonized)\n    186     V = A.span_of_basis([g.padded_list(prec) for g in B],\n    187                         already_echelonized = already_echelonized)\n--> 188     return _hecke_operator_on_basis(B, V, n, k, eps)\n    189 \n    190     \n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/hecke_operator_on_qexp.pyc in _hecke_operator_on_basis(B, V, n, k, eps)\n    119     prec = V.degree()\n    120     TB = [hecke_operator_on_qexp(f, n, k, eps, prec, check=False, _return_list=True)\n--> 121                 for f in B]\n    122     TB = [V.coordinate_vector(w) for w in TB]\n    123     return matrix(V.base_ring(), len(B), len(B), TB, sparse=False)\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/hecke_operator_on_qexp.pyc in hecke_operator_on_qexp(f, n, k, eps, prec, check, _return_list)\n     87     for m in range(prec):\n     88         am = sum([eps(d) * d**l * f[m*n//(d*d)] for \\\n---> 89                   d in divisors(gcd(n, m)) if (m*n) % (d*d) == 0])\n     90         v.append(am)\n     91     if _return_list:\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11336)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6990)()\n\nTypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 1 and degree 1' and 'Finite Field of size 5'\n```\n\nI'm putting this in modular forms, but the underlying issue is likely a more general coercion problem.\n\nI'm ccing Craig because I seem to remember that he fixed something like this before :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8281\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\nThis happens in 4.3.3.alpha0:\n\n```\nsage: bas_mod5 = [f.change_ring(GF(5)) for f in victor_miller_basis(12, 20)]\nsage: hecke_operator_on_basis(bas_mod5, 2, 12)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ghitza/shared/articles/eigensystems/code/<ipython console> in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/hecke_operator_on_qexp.pyc in hecke_operator_on_basis(B, n, k, eps, already_echelonized)\n    186     V = A.span_of_basis([g.padded_list(prec) for g in B],\n    187                         already_echelonized = already_echelonized)\n--> 188     return _hecke_operator_on_basis(B, V, n, k, eps)\n    189 \n    190     \n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/hecke_operator_on_qexp.pyc in _hecke_operator_on_basis(B, V, n, k, eps)\n    119     prec = V.degree()\n    120     TB = [hecke_operator_on_qexp(f, n, k, eps, prec, check=False, _return_list=True)\n--> 121                 for f in B]\n    122     TB = [V.coordinate_vector(w) for w in TB]\n    123     return matrix(V.base_ring(), len(B), len(B), TB, sparse=False)\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/hecke_operator_on_qexp.pyc in hecke_operator_on_qexp(f, n, k, eps, prec, check, _return_list)\n     87     for m in range(prec):\n     88         am = sum([eps(d) * d**l * f[m*n//(d*d)] for \\\n---> 89                   d in divisors(gcd(n, m)) if (m*n) % (d*d) == 0])\n     90         v.append(am)\n     91     if _return_list:\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11336)()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6990)()\n\nTypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 1 and degree 1' and 'Finite Field of size 5'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8281\n\n",
+    "closed_at": "2010-04-15T20:06:56Z",
     "created_at": "2010-02-16T03:03:08Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "coercion problem breaks hecke_operator_on_basis over finite fields",
+    "title": "bug in hecke_operator_on_basis over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8281",
     "user": "https://github.com/aghitza"
@@ -58,9 +59,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unsupported operand parent(s) for '*': 'Cyclotomic Field of order 1 and degree 1' and 'Finite Field of size 5'
 ```
 
-I'm putting this in modular forms, but the underlying issue is likely a more general coercion problem.
-
-I'm ccing Craig because I seem to remember that he fixed something like this before :).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8281
 

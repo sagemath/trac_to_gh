@@ -1,16 +1,17 @@
-# Issue 1546: Update FLINT.spkg to 1.03 release
+# Issue 1546: [with spkg] Update FLINT.spkg to 1.03 release
 
 archive/issues_001546.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nTo quote Bill:\n\n```\nI also found some critical bugs in FLINT 1.0.2. In a few minutes I'll \nupdate the website with the patched version (1.0.3).\n\nBill.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1546\n\n",
+    "closed_at": "2007-12-19T19:26:29Z",
     "created_at": "2007-12-17T04:06:47Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Update FLINT.spkg to 1.03 release",
+    "title": "[with spkg] Update FLINT.spkg to 1.03 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1546",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

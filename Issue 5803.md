@@ -1,15 +1,16 @@
-# Issue 5803: [with patch, needs review] Upgrade Cython to 0.11.1
+# Issue 5803: [with patch, spkg; positive review] Upgrade Cython to 0.11.1
 
 archive/issues_005803.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5803\n\n",
+    "closed_at": "2009-04-24T08:13:59Z",
     "created_at": "2009-04-16T08:38:38Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] Upgrade Cython to 0.11.1",
+    "title": "[with patch, spkg; positive review] Upgrade Cython to 0.11.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5803",
     "user": "https://github.com/robertwb"

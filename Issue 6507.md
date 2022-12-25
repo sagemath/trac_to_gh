@@ -1,16 +1,17 @@
-# Issue 6507: [with patch, needs review] doc sidebar toggle
+# Issue 6507: [with patch, positive review] doc sidebar toggle
 
 archive/issues_006507.json:
 ```json
 {
     "body": "Assignee: tba\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8c8fe7c5d0c0f725/4807f5553bdbd6b0#4807f5553bdbd6b0) for an early version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6507\n\n",
+    "closed_at": "2009-09-23T02:43:47Z",
     "created_at": "2009-07-10T11:05:10Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] doc sidebar toggle",
+    "title": "[with patch, positive review] doc sidebar toggle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6507",
     "user": "https://github.com/qed777"

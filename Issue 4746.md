@@ -1,16 +1,17 @@
-# Issue 4746: Bug in srange
+# Issue 4746: [with patch, positive review] Bug in srange
 
 archive/issues_004746.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nOne can produce almost every (wrong) behavior concerning the endpoint\nof the returned list. Here are some examples:\n\n\n```\nsage: srange(0.5,1.1,0.1,include_endpoint=False)\n[0.500000000000000,\n 0.600000000000000,\n 0.700000000000000,\n 0.800000000000000,\n 0.900000000000000,\n 1.00000000000000,\n 1.10000000000000]\n\nsage: srange(0.5,1,0.1,include_endpoint=False)\n[0.500000000000000,\n 0.600000000000000,\n 0.700000000000000,\n 0.800000000000000,\n 0.900000000000000]\n\nsage: srange(0.5,0.9,0.1,include_endpoint=False)\n[0.500000000000000, 0.600000000000000, 0.700000000000000,\n0.800000000000000]\n\nsage: srange(0,1.1,0.1,include_endpoint=True)\n[0.000000000000000,\n 0.100000000000000,\n 0.200000000000000,\n 0.300000000000000,\n 0.400000000000000,\n 0.500000000000000,\n 0.600000000000000,\n 0.700000000000000,\n 0.800000000000000,\n 0.900000000000000,\n 1.00000000000000,\n 1.10000000000000,\n 1.20000000000000]\n\nsage: srange(0,0.2,0.1,include_endpoint=True)\n[0.000000000000000, 0.100000000000000, 0.200000000000000]\n\nsage: srange(0,0.3,0.1,include_endpoint=True)\n[0.000000000000000, 0.100000000000000, 0.200000000000000]\n```\n\n-MRK- \n\nIssue created by migration from https://trac.sagemath.org/ticket/4746\n\n",
+    "closed_at": "2009-02-20T07:37:32Z",
     "created_at": "2008-12-09T09:42:20Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Bug in srange",
+    "title": "[with patch, positive review] Bug in srange",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4746",
     "user": "https://github.com/m-r-k"

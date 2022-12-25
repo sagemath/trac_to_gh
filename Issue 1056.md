@@ -4,6 +4,7 @@ archive/issues_001056.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nrpw has posted a patch to fix the Givaro on OSX 10.5 build issue. See\n\nhttp://groups.google.com/group/sage-devel/t/615ac2baa3684cae\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1056\n\n",
+    "closed_at": "2007-11-01T23:53:48Z",
     "created_at": "2007-11-01T20:38:01Z",
     "labels": [
         "component: packages: standard",

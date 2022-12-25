@@ -1,16 +1,17 @@
-# Issue 2193: doctest framework should check for keywords only in comments
+# Issue 2193: [with patch, with positive review] doctest framework should check for keywords only in comments
 
 archive/issues_002193.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @ncalexan\n\nChecking for keywords on the whole line causes unexpected behavior while testing. The test framework should only check for the keywords in the comments.\n\nThis thread is also relevant:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/c63998dbd4ee6a27/fc6643a2a871bf34#fc6643a2a871bf34\n\nIssue created by migration from https://trac.sagemath.org/ticket/2193\n\n",
+    "closed_at": "2008-02-18T19:37:06Z",
     "created_at": "2008-02-17T14:19:35Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "doctest framework should check for keywords only in comments",
+    "title": "[with patch, with positive review] doctest framework should check for keywords only in comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2193",
     "user": "https://github.com/burcin"

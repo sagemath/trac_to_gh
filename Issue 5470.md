@@ -1,9 +1,10 @@
-# Issue 5470: Update Cython entry in Developer's Guide
+# Issue 5470: [with patch, positive review] Update Cython entry in Developer's Guide
 
 archive/issues_005470.json:
 ```json
 {
-    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: documentation, cython\n\nThe current description for adding a new Cython module is outdated:\n\nhttp://www.sagemath.org/doc/prog/node29.html\n\n```\n3. Create a .pyx file in the Sage library and add a listing for it to the variable\next_modules in the file SAGE_ROOT/devel/sage/setup.py. For example, the file \nSAGE_ROOT/devel/sage/sage/graphs/chrompoly.pyx has lines\n\n    Extension('sage.graphs.chrompoly',\n              ['sage/graphs/chrompoly.pyx']\n              ), \\\n\nin setup.py. Also, the module - in this example sage.graphs.chrompoly - needs to be \nadded to the packages list in setup.py . Then type sage -b to build Sage with the new \ncode.\n```\n\nThis documentation needs to account for the separate `module_list.py` file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5470\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: documentation, cython\n\nThe current description for adding a new Cython module is outdated:\n\nhttp://www.sagemath.org/doc/prog/node29.html\n\n```\n3. Create a .pyx file in the Sage library and add a listing for it to the variable\next_modules in the file SAGE_ROOT/devel/sage/setup.py. For example, the file \nSAGE_ROOT/devel/sage/sage/graphs/chrompoly.pyx has lines\n\n    Extension('sage.graphs.chrompoly',\n              ['sage/graphs/chrompoly.pyx']\n              ), \\\n\nin setup.py. Also, the module - in this example sage.graphs.chrompoly - needs to be \nadded to the packages list in setup.py . Then type sage -b to build Sage with the new \ncode.\n```\n\nHere is a fix. However, it looks like `SAGE_ROOT/devel/sage/doc/en/developer/coding_in_other.rst` isn't under any version control. Therefore, I'll just post a replacement docstring here. Hopefully, someone can help me include it in the appropriate file.\n\n```\n#. Create a .pyx file and add it to the Sage library.\n\n\n   #. First, add a listing for the Cython extension to the variable\n      ``ext_modules`` in the file\n      ``SAGE_ROOT/devel/sage/module_list.py``. See the\n      ``distutils.extension.Extension`` class for more information on creating\n      a new Cython extension.\n\n   #. Then, add the module name to the ``packages`` list in the file\n      ``SAGE_ROOT/devel/sage/setup.py``.\n\n   #. Run ``sage -b`` to rebuild Sage with the new code.\n\n\n   For example, the file ``SAGE_ROOT/devel/sage/sage/graphs/chrompoly.pyx``\n   has the lines\n\n::\n\n    Extension('sage.graphs.chompoly',\n              sources = ['sage/graphs/chrompoly.pyx']),\n\n   in ``module_list.py``. In addition, ``sage.graphs`` is included in the\n   packages list under the Distutils section of ``setup.py``.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5470\n\n",
+    "closed_at": "2009-04-01T01:15:21Z",
     "created_at": "2009-03-10T19:54:07Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005470.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Update Cython entry in Developer's Guide",
+    "title": "[with patch, positive review] Update Cython entry in Developer's Guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5470",
     "user": "https://github.com/cswiercz"
@@ -41,7 +42,35 @@ added to the packages list in setup.py . Then type sage -b to build Sage with th
 code.
 ```
 
-This documentation needs to account for the separate `module_list.py` file.
+Here is a fix. However, it looks like `SAGE_ROOT/devel/sage/doc/en/developer/coding_in_other.rst` isn't under any version control. Therefore, I'll just post a replacement docstring here. Hopefully, someone can help me include it in the appropriate file.
+
+```
+#. Create a .pyx file and add it to the Sage library.
+
+
+   #. First, add a listing for the Cython extension to the variable
+      ``ext_modules`` in the file
+      ``SAGE_ROOT/devel/sage/module_list.py``. See the
+      ``distutils.extension.Extension`` class for more information on creating
+      a new Cython extension.
+
+   #. Then, add the module name to the ``packages`` list in the file
+      ``SAGE_ROOT/devel/sage/setup.py``.
+
+   #. Run ``sage -b`` to rebuild Sage with the new code.
+
+
+   For example, the file ``SAGE_ROOT/devel/sage/sage/graphs/chrompoly.pyx``
+   has the lines
+
+::
+
+    Extension('sage.graphs.chompoly',
+              sources = ['sage/graphs/chrompoly.pyx']),
+
+   in ``module_list.py``. In addition, ``sage.graphs`` is included in the
+   packages list under the Distutils section of ``setup.py``.
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5470
 

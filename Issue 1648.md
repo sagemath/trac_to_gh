@@ -3,7 +3,8 @@
 archive/issues_001648.json:
 ```json
 {
-    "body": "Assignee: tba\n\nI did some presentation at Sage Days 5 in Boston about this and *really, really* need to get this into the developer's guide.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1648\n\n",
+    "body": "Assignee: mabshoff\n\nI did some presentation at Sage Days 5 in Boston about this and *really, really* need to get this into the developer's guide.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1648\n\n",
+    "closed_at": "2008-08-31T07:57:52Z",
     "created_at": "2007-12-31T18:14:08Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_001648.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 I did some presentation at Sage Days 5 in Boston about this and *really, really* need to get this into the developer's guide.
 

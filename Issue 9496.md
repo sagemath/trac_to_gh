@@ -4,6 +4,7 @@ archive/issues_009496.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: cryptography, lattices\n\nWe introduce a generator for different types of integral lattice bases of row vectors relevant in cryptography.\n\nIt offers more variety and better usability than fplll's generator.\n\nContacts:\nRichard Lindner <rlindner`@`cdc.informatik.tu-darmstadt.de>\nMichael Schneider <mischnei`@`cdc.informatik.tu-darmstadt.de>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9496\n\n",
+    "closed_at": "2010-07-20T10:06:54Z",
     "created_at": "2010-07-14T13:36:13Z",
     "labels": [
         "component: cryptography"

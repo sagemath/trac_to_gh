@@ -3,7 +3,8 @@
 archive/issues_009248.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAt comment:2:ticket:9240, we see someone get confused about the docstring for `factorial`, which claims it takes as input an integer or symbolic expression. However, it takes non-integer, non-SR inputs:\n\n```\nsage: x = 1.5; parent(x)\nReal Field with 53 bits of precision\nsage: factorial(x)\n1.32934038817914\nsage: x = 3/2; parent(x)\nRational Field\nsage: factorial(x)      \n3/4*sqrt(pi)\nsage: x = CC(1+I); parent(x)\nComplex Field with 53 bits of precision\nsage: factorial(x)\n0.652965496420167 + 0.343065839816545*I\n```\nI understand that there is coercion going on, but we should specify that the function takes pretty much any complex number (except of course negative integers) and evaluates (something akin to) gamma(1+x).\n\nHowever, it doesn't exactly do gamma(1+x):\n\n```\nsage: x = I; parent(x)  \nSymbolic Ring\nsage: factorial(x)    \n0.498015668118356 - 0.154949828301811*I\nsage: gamma(x+1)      \ngamma(I + 1)\nsage: parent(factorial(x))  \nSymbolic Ring\nsage: gamma(x+1).n() \n0.498015668118356 - 0.154949828301811*I\nsage: parent(gamma(x+1).n())\nComplex Field with 53 bits of precision\n```\nThe factorial function clearly is not simply calling gamma(x+1) when x is not an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9248\n\n",
+    "body": "Assignee: @dandrake\n\nAt comment:2:ticket:9240, we see someone get confused about the docstring for `factorial`, which claims it takes as input an integer or symbolic expression. However, it takes non-integer, non-SR inputs:\n\n```\nsage: x = 1.5; parent(x)\nReal Field with 53 bits of precision\nsage: factorial(x)\n1.32934038817914\nsage: x = 3/2; parent(x)\nRational Field\nsage: factorial(x)      \n3/4*sqrt(pi)\nsage: x = CC(1+I); parent(x)\nComplex Field with 53 bits of precision\nsage: factorial(x)\n0.652965496420167 + 0.343065839816545*I\n```\nI understand that there is coercion going on, but we should specify that the function takes pretty much any complex number (except of course negative integers) and evaluates (something akin to) gamma(1+x).\n\nHowever, it doesn't exactly do gamma(1+x):\n\n```\nsage: x = I; parent(x)  \nSymbolic Ring\nsage: factorial(x)    \n0.498015668118356 - 0.154949828301811*I\nsage: gamma(x+1)      \ngamma(I + 1)\nsage: parent(factorial(x))  \nSymbolic Ring\nsage: gamma(x+1).n() \n0.498015668118356 - 0.154949828301811*I\nsage: parent(gamma(x+1).n())\nComplex Field with 53 bits of precision\n```\nThe factorial function clearly is not simply calling gamma(x+1) when x is not an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9248\n\n",
+    "closed_at": "2015-01-13T01:16:55Z",
     "created_at": "2010-06-16T01:55:29Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_009248.json:
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: mvngu
+Assignee: @dandrake
 
 At comment:2:ticket:9240, we see someone get confused about the docstring for `factorial`, which claims it takes as input an integer or symbolic expression. However, it takes non-integer, non-SR inputs:
 

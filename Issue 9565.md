@@ -4,9 +4,11 @@ archive/issues_009565.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nOne can use a different call to GMP to find out whether an mpz_t fits into a long.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9565\n\n",
+    "closed_at": "2010-07-26T02:30:04Z",
     "created_at": "2010-07-21T14:02:35Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: basic arithmetic",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "One-line improvement for #9537",

@@ -3,10 +3,11 @@
 archive/issues_005392.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider\n\n```\nsage: R.<a> = NumberField(x^4 - 2*x^2 - 1)\nsage: S.<i> = R.extension(x^2 + 1)\nsage: S.subfield(a + i/a)\n```\n\nThe S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5392\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: sd51\n\nConsider\n\n```\nsage: R.<a> = NumberField(x^4 - 2*x^2 - 1)\nsage: S.<i> = R.extension(x^2 + 1)\nsage: S.subfield(a + i/a)\n```\n\nThe S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5392\n\n",
+    "closed_at": "2013-07-31T12:53:02Z",
     "created_at": "2009-02-27T16:03:04Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
@@ -16,7 +17,9 @@ archive/issues_005392.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
+
+Keywords: sd51
 
 Consider
 

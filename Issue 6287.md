@@ -1,16 +1,17 @@
-# Issue 6287: sage -lisp should run ECL
+# Issue 6287: [with patch, positive review] sage -lisp should run ECL
 
 archive/issues_006287.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @maxthemouse\n\nWhen we upgraded Sage from Clisp to ECL we forgot to make it so\n\n```\nsage -lisp\n``` \nworks and runs ecl.  Right now it still runs clisp if that happens to be on your system, which is silly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6287\n\n",
+    "closed_at": "2009-08-30T11:46:44Z",
     "created_at": "2009-06-14T20:56:44Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "sage -lisp should run ECL",
+    "title": "[with patch, positive review] sage -lisp should run ECL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6287",
     "user": "https://github.com/williamstein"

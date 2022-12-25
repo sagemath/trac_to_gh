@@ -1,15 +1,16 @@
-# Issue 5028: point2d? says point.options instead of point2d.options
+# Issue 5028: [with patch, positive review] point2d? says point.options instead of point2d.options
 
 archive/issues_005028.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nKeywords: point2d\n\n```\nsage: point2d?\n...\nDocstring:\n    \n        A point of size `pointsize' defined by point = (x,y).\n        Point takes either a single tuple of coordinates or a list of tuples.\n    \n        Type point.options to see all options.\n    \n        EXAMPLES:\n            ...\n\nsage: point.options\nTraceback (most recent call last):\n...\nAttributeError: 'function' object has no attribute 'options'\nsage: point2d.options\n{'alpha': 1, 'faceted': False, 'pointsize': 10, 'rgbcolor': (0, 0, 1)}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5028\n\n",
+    "closed_at": "2009-01-23T09:40:16Z",
     "created_at": "2009-01-19T16:53:26Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "point2d? says point.options instead of point2d.options",
+    "title": "[with patch, positive review] point2d? says point.options instead of point2d.options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5028",
     "user": "https://github.com/seblabbe"

@@ -3,7 +3,8 @@
 archive/issues_008544.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6\n\nKeywords: factor polynomial QQbar\n\nQQbar and AA have root-finding but not polynomial factorization.\n\nSee the discussion at #8344, where a special case is dealt with and a possible solution outlined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8544\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6\n\nKeywords: factor polynomial QQbar AA\n\nQQbar and AA have root-finding but not polynomial factorization.\n\nSee the discussion at #8344, where a special case is dealt with and a possible solution outlined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8544\n\n",
+    "closed_at": "2010-06-06T01:08:01Z",
     "created_at": "2010-03-15T20:44:31Z",
     "labels": [
         "component: algebra",
@@ -20,7 +21,7 @@ Assignee: @aghitza
 
 CC:  @zimmermann6
 
-Keywords: factor polynomial QQbar
+Keywords: factor polynomial QQbar AA
 
 QQbar and AA have root-finding but not polynomial factorization.
 

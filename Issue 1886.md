@@ -3,7 +3,8 @@
 archive/issues_001886.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSo that building ATLAS on AMD Athlon doesn't take FIVE HOURS, I've recorded the tuning information and attached it to this ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1886\n\n",
+    "body": "Assignee: mabshoff\n\nSo that building ATLAS on AMD Athlon doesn't take FIVE HOURS, I've recorded the tuning information and attached it to this ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1886\n\n",
+    "closed_at": "2008-02-02T09:58:59Z",
     "created_at": "2008-01-22T04:45:44Z",
     "labels": [
         "component: linear algebra"
@@ -15,7 +16,7 @@ archive/issues_001886.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 So that building ATLAS on AMD Athlon doesn't take FIVE HOURS, I've recorded the tuning information and attached it to this ticket. 
 

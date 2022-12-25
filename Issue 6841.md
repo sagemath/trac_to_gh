@@ -1,15 +1,16 @@
-# Issue 6841: the shift cryptosystem
+# Issue 6841: [with patch, positive review] the shift cryptosystem
 
 archive/issues_006841.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nImplement the shift cryptosystem for educational purposes. This adds to the classical cryptosystems already implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6841\n\n",
+    "closed_at": "2009-09-25T08:12:46Z",
     "created_at": "2009-08-29T08:55:28Z",
     "labels": [
         "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "the shift cryptosystem",
+    "title": "[with patch, positive review] the shift cryptosystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6841",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

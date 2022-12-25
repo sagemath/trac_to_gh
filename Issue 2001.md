@@ -1,16 +1,17 @@
-# Issue 2001: --long doctests -- seven files have doctst failures in sage-2.10.rc3
+# Issue 2001: [with patchs, with positive reviews] --long doctests -- seven files have doctest failures in sage-2.10.rc3
 
 archive/issues_002001.json:
 ```json
 {
     "body": "Assignee: failure\n\n```\n        sage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t -long devel/sage-main/sage/groups/group.pyx\n        sage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\n        sage -t -long devel/sage-main/sage/crypto/mq/sr.py\n        sage -t -long devel/sage-main/sage/libs/pari/gen.pyx\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n\nI've attached the full test log for this run.  (I'm too tired to do more right now.)  This ticket might get busted up into several smaller ones or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2001\n\n",
+    "closed_at": "2008-02-02T09:52:03Z",
     "created_at": "2008-01-31T06:37:42Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "--long doctests -- seven files have doctst failures in sage-2.10.rc3",
+    "title": "[with patchs, with positive reviews] --long doctests -- seven files have doctest failures in sage-2.10.rc3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2001",
     "user": "https://github.com/williamstein"

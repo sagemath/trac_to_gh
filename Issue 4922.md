@@ -1,15 +1,16 @@
-# Issue 4922: convert sage.monoids.* docstrings to Sphinx
+# Issue 4922: [with patch, needs work] convert sage.monoids.* docstrings to Sphinx
 
 archive/issues_004922.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4922\n\n",
+    "closed_at": "2009-02-24T18:45:38Z",
     "created_at": "2009-01-01T22:54:39Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.monoids.* docstrings to Sphinx",
+    "title": "[with patch, needs work] convert sage.monoids.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4922",
     "user": "https://github.com/mwhansen"

@@ -4,6 +4,7 @@ archive/issues_009256.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nKeywords: Category Sets\n\nTitle says all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9256\n\n",
+    "closed_at": "2010-07-20T10:04:47Z",
     "created_at": "2010-06-17T21:51:22Z",
     "labels": [
         "component: categories",

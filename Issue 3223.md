@@ -1,16 +1,18 @@
-# Issue 3223: notebook -- it is now broken on the iphone
+# Issue 3223: [with patch; positive review] notebook -- it is now broken on the iphone
 
 archive/issues_003223.json:
 ```json
 {
     "body": "Assignee: boothby\n\nNow I think left or right parenthesis sends carriage return.  I think this likely has something to do with updating the keyboard support for the new safari browser.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3223\n\n",
+    "closed_at": "2008-11-18T18:13:04Z",
     "created_at": "2008-05-16T18:45:37Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "notebook -- it is now broken on the iphone",
+    "title": "[with patch; positive review] notebook -- it is now broken on the iphone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3223",
     "user": "https://github.com/williamstein"

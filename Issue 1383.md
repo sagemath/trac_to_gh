@@ -1,16 +1,17 @@
-# Issue 1383: Modular Arithmetic Error
+# Issue 1383: [with patch] Modular Arithmetic Error
 
 archive/issues_001383.json:
 ```json
 {
     "body": "Assignee: trixb4kidz\n\nI recently discovered that the following commands cause a segfault:\n\n```\nz = Mod(2, 256)\nz^8\n```\n\nI have already discovered a solution to this problem, which I will post shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1383\n\n",
+    "closed_at": "2007-12-03T19:58:41Z",
     "created_at": "2007-12-03T17:32:25Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "Modular Arithmetic Error",
+    "title": "[with patch] Modular Arithmetic Error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1383",
     "user": "https://trac.sagemath.org/admin/accounts/users/trixb4kidz"

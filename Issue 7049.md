@@ -1,16 +1,17 @@
-# Issue 7049: [with SPKG, needs review] GLPK, just minor changes
+# Issue 7049: GLPK, just minor changes
 
 archive/issues_007049.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  mvngu\n\nHello !!!\n\nBecause of #7012, some functions in numerical.mip had to be renamed, and this package had to be modified as it uses them.\n\nThese are the only changes contained in the package located on : ~ncohen/glpk-4.38.p2.spkg (sagemath).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7049\n\n",
+    "closed_at": "2009-10-23T09:09:51Z",
     "created_at": "2009-09-28T09:29:21Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with SPKG, needs review] GLPK, just minor changes",
+    "title": "GLPK, just minor changes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7049",
     "user": "https://github.com/nathanncohen"

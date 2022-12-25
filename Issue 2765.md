@@ -1,16 +1,17 @@
-# Issue 2765: [with patch, needs review] bug in graph_isom, Hoffman-Singleton constructor
+# Issue 2765: [with patch, positive review] bug in graph_isom, Hoffman-Singleton constructor
 
 archive/issues_002765.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis fixes a bug in determining the canonical label of different permutations of the Hoffman-Singleton graph. As such, the constructor is included to make for a nice doctest. This bug was discovered by Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2765\n\n",
+    "closed_at": "2008-04-04T03:42:33Z",
     "created_at": "2008-04-01T22:53:37Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] bug in graph_isom, Hoffman-Singleton constructor",
+    "title": "[with patch, positive review] bug in graph_isom, Hoffman-Singleton constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2765",
     "user": "https://github.com/rlmill"

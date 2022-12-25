@@ -1,15 +1,16 @@
-# Issue 1541: [with patch] improve PolyBoRi integration
+# Issue 1541: [with patch, postive review] improve PolyBoRi integration
 
 archive/issues_001541.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nThe attached patch provides:\n* `mq.SR` can now construct PolyBoRi polynomial systems \n* some comments added to `pbori.pyx`\n* `BooleanPolynomial.__hash__`\n* `BooleanPolynomial.variables`\n* coercion of GF(2) elements to `BooleanPolynomialRing`\n* `BooleanPolynomialRing.__call__` accepts strings\n* `_sig_on`/`_sig_off` around `groebner_basis` call\n\nIssue created by migration from https://trac.sagemath.org/ticket/1541\n\n",
+    "closed_at": "2008-01-07T17:11:14Z",
     "created_at": "2007-12-16T21:38:51Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with patch] improve PolyBoRi integration",
+    "title": "[with patch, postive review] improve PolyBoRi integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1541",
     "user": "https://github.com/malb"

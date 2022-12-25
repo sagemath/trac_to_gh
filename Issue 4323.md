@@ -3,10 +3,11 @@
 archive/issues_004323.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @zimmermann6\n\nUnfortunately, there is often no way to doctest such functions directly, and for some re-writing them as lambda functions is impossible or reduces readability. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4323\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6\n\nUnfortunately, there is often no way to doctest such functions directly, and for some re-writing them as lambda functions is impossible or reduces readability. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4323\n\n",
+    "closed_at": "2009-02-10T07:19:08Z",
     "created_at": "2008-10-19T05:41:59Z",
     "labels": [
-        "component: algebra",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_004323.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 CC:  @zimmermann6
 

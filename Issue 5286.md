@@ -3,7 +3,8 @@
 archive/issues_005286.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen merging the python-2.5.4.spkg from #5218 everything goes fine, but -sdist. In that case the .hg repo is copied into the tmp directory in spkg-dist, but it is not copied into the tar.gz created by distutils. Until this is resolved we cannot update to the latest python-2.5.4.spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5286\n\n",
+    "body": "Assignee: @mwhansen\n\nWhen merging the python-2.5.4.spkg from #5218 everything goes fine, but -sdist. In that case the .hg repo is copied into the tmp directory in spkg-dist, but it is not copied into the tar.gz created by distutils. Until this is resolved we cannot update to the latest python-2.5.4.spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5286\n\n",
+    "closed_at": "2009-05-29T13:38:32Z",
     "created_at": "2009-02-16T16:03:38Z",
     "labels": [
         "component: distribution",
@@ -17,7 +18,7 @@ archive/issues_005286.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 When merging the python-2.5.4.spkg from #5218 everything goes fine, but -sdist. In that case the .hg repo is copied into the tmp directory in spkg-dist, but it is not copied into the tar.gz created by distutils. Until this is resolved we cannot update to the latest python-2.5.4.spkg.
 

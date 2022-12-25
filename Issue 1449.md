@@ -1,9 +1,10 @@
-# Issue 1449: very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!
+# Issue 1449: [with bundle, very positive review] very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!
 
 archive/issues_001449.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n\n\nOn Dec 10, 2007 6:08 AM, G. Edgar <edgar@math.ohio-state.edu> wrote:\n> \n> It says to use \"shift enter\" to evaluate an input cell.\n> But it seems this is wrong on Mac, and one should use \"shift return\".\n> Return and Enter are separate keys on the Mac keyboard.\n\nYou're right.  And this is especially bad since right now on a Mac\n\"shift enter\" doesn't work.   I can't believe we missed this, given that\nso many Sage developers (like me) work on Macs!\n\nI think the fix will be to make it so \"shift return\" does work on macs,\nin addition to \"shift enter\".  This will make the documentation stay\nuniform (but we'll also mention shift-enter in the docs). \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1449\n\n",
+    "closed_at": "2008-01-05T02:23:53Z",
     "created_at": "2007-12-10T15:50:19Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_001449.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!",
+    "title": "[with bundle, very positive review] very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1449",
     "user": "https://github.com/williamstein"

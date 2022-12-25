@@ -3,12 +3,11 @@
 archive/issues_007889.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: revolution,plot\n\nAs a continuation of the recent cloning of ploting methods found in mathematica. I've started a clone of Mathematica's [RevolutionPlot3D](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html).\n\nMy version, however, can specify the axis of rotation of the curve, given as a line paralel to the z axis, located in the point of coordinates (x;y). And also, the posibility to display the revolved curve.\n\nThe code so far is:\n\n```\ndef revolution_plot(cur,trange,phirange=None,axis=(0,0),showcurve=False,**kwds):\n   def findvar(expr):\n       try:\n           vart=cur.args()[0]\n       except:\n           vart=var('t')\n       return vart\n\n   if phirange==None:#this if-else provides a phirange\n       phi=var('phi')\n       phirange=(phi,0,2*pi)\n   else:\n       phi=phirange[0]\n       phirange=(phi,phirange[1],phirange[2])\n\n   if str(type(cur)) == \"<type 'tuple'>\":#this if-else provides a vector v to be ploted\n       vart=findvar(cur[0])        \n       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])\n       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))\n   elif str(type(cur))== \"<type 'list'>\":\n       vart=findvar(cur[0])        \n       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])\n       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))\n   else:\n       vart=findvar(cur)\n       R=sqrt((vart-axis[0])^2+(axis[1])^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur)\n       curveplot=parametric_plot3d((vart,0,cur),trange,thickness=2,rgbcolor=(1,0,0))\n       \n   if showcurve:\n       return parametric_plot3d(v,trange,phirange,**kwds)+curveplot\n   return parametric_plot3d(v,trange,phirange,**kwds) \n```\n\nExamples of it are available in [this worksheet](http://www.sagenb.org/home/pub/1342/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7889\n\n",
+    "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: revolution,plot\n\nAs a continuation of the recent cloning of ploting methods found in mathematica. I've started a clone of Mathematica's [RevolutionPlot3D](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html).\n\nMy version, however, can specify the axis of rotation of the curve, given as a line paralel to the z axis, located in the point of coordinates (x;y). And also, the posibility to display the revolved curve.\n\nExamples of it are available in [this worksheet](http://www.sagenb.org/home/pub/1342/)\n\nAlright! I just uploaded a patch and some screenshots!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7889\n\n",
+    "closed_at": "2010-07-20T10:12:23Z",
     "created_at": "2010-01-10T03:28:36Z",
     "labels": [
-        "component: graphics",
-        "minor",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "revolution plot",
@@ -27,46 +26,9 @@ As a continuation of the recent cloning of ploting methods found in mathematica.
 
 My version, however, can specify the axis of rotation of the curve, given as a line paralel to the z axis, located in the point of coordinates (x;y). And also, the posibility to display the revolved curve.
 
-The code so far is:
-
-```
-def revolution_plot(cur,trange,phirange=None,axis=(0,0),showcurve=False,**kwds):
-   def findvar(expr):
-       try:
-           vart=cur.args()[0]
-       except:
-           vart=var('t')
-       return vart
-
-   if phirange==None:#this if-else provides a phirange
-       phi=var('phi')
-       phirange=(phi,0,2*pi)
-   else:
-       phi=phirange[0]
-       phirange=(phi,phirange[1],phirange[2])
-
-   if str(type(cur)) == "<type 'tuple'>":#this if-else provides a vector v to be ploted
-       vart=findvar(cur[0])        
-       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)
-       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])
-       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))
-   elif str(type(cur))== "<type 'list'>":
-       vart=findvar(cur[0])        
-       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)
-       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])
-       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))
-   else:
-       vart=findvar(cur)
-       R=sqrt((vart-axis[0])^2+(axis[1])^2)
-       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur)
-       curveplot=parametric_plot3d((vart,0,cur),trange,thickness=2,rgbcolor=(1,0,0))
-       
-   if showcurve:
-       return parametric_plot3d(v,trange,phirange,**kwds)+curveplot
-   return parametric_plot3d(v,trange,phirange,**kwds) 
-```
-
 Examples of it are available in [this worksheet](http://www.sagenb.org/home/pub/1342/)
+
+Alright! I just uploaded a patch and some screenshots!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7889
 

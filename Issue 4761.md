@@ -1,21 +1,24 @@
-# Issue 4761: [iwth patch, needs review] global cputime (inclusive some subprocesses like Singular)
+# Issue 4761: [with patch, positive review] global cputime (inclusive some subprocesses like Singular)
 
 archive/issues_004761.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nI always found this annoying:\n\n```\nsage: t = cputime()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime(t)\n0.217967\n```\n\nso here's my proposal for a fix:\n\n```\nsage: t = cputime_gobal()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime_global(t)\n5.647973\n```\n\nI am not sure if the design is particularly nice though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4761\n\n",
+    "body": "Assignee: @malb\n\nKeywords: global cputime subprocesses\n\nI always found this annoying:\n\n```\nsage: t = cputime()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime(t)\n0.217967\n```\n\nso here's my proposal for a fix:\n\n```\nsage: t = cputime_gobal()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime_global(t)\n5.647973\n```\n\nI am not sure if the design is particularly nice though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4761\n\n",
+    "closed_at": "2009-06-24T09:49:37Z",
     "created_at": "2008-12-11T15:34:42Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[iwth patch, needs review] global cputime (inclusive some subprocesses like Singular)",
+    "title": "[with patch, positive review] global cputime (inclusive some subprocesses like Singular)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4761",
     "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
+
+Keywords: global cputime subprocesses
 
 I always found this annoying:
 

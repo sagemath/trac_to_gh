@@ -1,17 +1,18 @@
-# Issue 2144: hex constants do not work as expected
+# Issue 2144: [with patch, with positive review] hex constants do not work as expected
 
 archive/issues_002144.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: preparser hex constants\n\nTrying to use hex constants in SAGE as I usually do in Python, I ran into a small issue: the following should work, but does not:\n\n```\nsage: 0x23^0x42\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(0)x23**Integer(0)x42\n                 ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\nI was told on #sage-devel that this is due to the preparser. A work around is to use `0rx23^0rx42` instead. However, according to william_stein, 0x23 should work as well and result in an Integer and 0x23r should be treated as an int.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2144\n\n",
+    "closed_at": "2008-02-15T22:05:48Z",
     "created_at": "2008-02-12T07:35:29Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "hex constants do not work as expected",
+    "title": "[with patch, with positive review] hex constants do not work as expected",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2144",
     "user": "https://trac.sagemath.org/admin/accounts/users/rpw"

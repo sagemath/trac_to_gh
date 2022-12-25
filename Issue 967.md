@@ -3,7 +3,8 @@
 archive/issues_000967.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe attached patches implement inplace operators for `IntegerMod`, `FiniteFieldElement_givaro` and `MPolynomial_libsingular`.\n\nSome timings for GF(q)\n\nBefore:\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 6.79 ms per loop\n```\n\nAfter:\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 2.05 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/967\n\n",
+    "body": "Assignee: @malb\n\nThe attached patches implement inplace operators for `IntegerMod`, `FiniteFieldElement_givaro` and `MPolynomial_libsingular`.\n\nSome timings for GF(q)\n\nBefore:\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 6.79 ms per loop\n```\n\nAfter:\n\n```\nsage: k.<a> = GF(2^15)\nsage: A = [a^i for i in range(k.order())]\nsage: %timeit _ = sum(A)\n100 loops, best of 3: 2.05 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/967\n\n",
+    "closed_at": "2007-10-23T19:55:30Z",
     "created_at": "2007-10-21T22:37:50Z",
     "labels": [
         "component: basic arithmetic"
@@ -15,7 +16,7 @@ archive/issues_000967.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 The attached patches implement inplace operators for `IntegerMod`, `FiniteFieldElement_givaro` and `MPolynomial_libsingular`.
 

@@ -3,7 +3,8 @@
 archive/issues_000710.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nTry this:\n\n```\nsage: n=factor(2^997-1)\n[hit control c]\n---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n\nsage: gp.eval('factor(2^997-1)')\n[hit control c]\nSegmentation fault (core dumped)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/710\n\n",
+    "body": "Assignee: somebody\n\nTry this:\n\n```\nsage: n=factor(2^997-1)\n[hit control c]\n---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n\nsage: gp.eval('factor(2^997-1)')\n[hit control c]\nSegmentation fault (core dumped)\n\n... Do the same with Magma:\n\nsage: magma.eval('Factorization(2^997-1)')\nSegmentation fault (core dumped)\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/710\n\n",
+    "closed_at": "2007-09-21T05:46:08Z",
     "created_at": "2007-09-20T18:13:04Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +30,16 @@ sage: n=factor(2^997-1)
 sage: gp.eval('factor(2^997-1)')
 [hit control c]
 Segmentation fault (core dumped)
+
+... Do the same with Magma:
+
+sage: magma.eval('Factorization(2^997-1)')
+Segmentation fault (core dumped)
+
+
+
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/710
 

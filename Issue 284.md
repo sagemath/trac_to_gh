@@ -4,6 +4,7 @@ archive/issues_000284.json:
 ```json
 {
     "body": "Assignee: martin albrecht\n\nImplement matrices mod 2 in SAGE via Bard's data structure, and use this to get really fast echelon form mod 2 (etc.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/284\n\n",
+    "closed_at": "2007-08-09T21:40:01Z",
     "created_at": "2007-02-24T02:31:33Z",
     "labels": [
         "component: linear algebra"

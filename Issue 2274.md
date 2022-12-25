@@ -1,16 +1,17 @@
-# Issue 2274: guava->python, 1
+# Issue 2274: [with patches, positive review] guava->python, 1
 
 archive/issues_002274.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nFor various reasons, ease of maintenance among others, the coding theory functions in SAGE which are GAP wrappers for GUAVA functions will be moved over to pure Python/SAGE. This is just a \"first installment\". In this patch (to be attached once the testall suite is completed)\n\nHammingCode, CyclicCode, dual_code, put_standard_form,\n\nare moved over and the simple function LinearCodeFromCheckMatrix is added.\nThe amusing utility function \"permutation_action\" is needed, which provides a\n(left) action of SymmetricGroup(n) on a list/vector/sequence/matrix of\nlength n.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2274\n\n",
+    "closed_at": "2008-02-25T02:29:34Z",
     "created_at": "2008-02-23T02:50:35Z",
     "labels": [
         "component: coding theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "guava->python, 1",
+    "title": "[with patches, positive review] guava->python, 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2274",
     "user": "https://github.com/wdjoyner"

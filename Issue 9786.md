@@ -4,6 +4,7 @@ archive/issues_009786.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @miguelmarco\n\n```\nsage: R.<x>=GF(101)[]\nsage: R.lagrange_polynomial([[1,0],[2,0]])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in lagrange_polynomial(self, points, algorithm, previous_row)\n   1481             P = F[n-1]\n   1482             for i in xrange(n-2, -1, -1):\n-> 1483                 P *= (var - points[i][0])\n   1484                 P += F[i]\n   1485             return P\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__imul__ (sage/structure/element.c:11631)()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)()\n\nTypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Univariate Polynomial Ring in x over Finite Field of size 101'\nsage: R.lagrange_polynomial([[1,0],[2,0]],'neville')\n[0, 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9787\n\n",
+    "closed_at": "2015-04-21T00:10:51Z",
     "created_at": "2010-08-23T13:09:53Z",
     "labels": [
         "component: algebra",

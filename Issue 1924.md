@@ -1,24 +1,26 @@
-# Issue 1924: Optimize matrix multiply cache friendliness
+# Issue 1924: [with patch, with positive review] Optimize matrix multiply cache friendliness
 
 archive/issues_001924.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nToday in the sage seminar Cl\u00e9ment Pernet demonstrated that in the naive matrix multiply algorithm (used as a basecase for all others)\n\nSpecifically, for computing C = A*B,\n\n```\nfor i in A.nrows:\n    for j in B.ncols:\n        for k in B.nrows:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\nis bad for the cache as one is iterating over the columns of B in the inner loop. Changing this to \n\n```\nfor i in A.nrows:\n    for k in B.nrows:\n        for j in B.ncols:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\ngives the same result, but much better cache performance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1924\n\n",
+    "body": "Assignee: @robertwb\n\nToday in the sage seminar Cl\u00e9ment Pernet demonstrated that in the naive matrix multiply algorithm (used as a basecase for all others)\nwe have a major inefficiency.\n\nSpecifically, for computing C = A*B,\n\n```\nfor i in A.nrows:\n    for j in B.ncols:\n        for k in B.nrows:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\nis bad for the cache as one is iterating over the columns of B in the inner loop. Changing this to \n\n```\nfor i in A.nrows:\n    for k in B.nrows:\n        for j in B.ncols:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\ngives the same result, but much better cache performance. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1924\n\n",
+    "closed_at": "2008-01-25T17:23:01Z",
     "created_at": "2008-01-25T10:45:12Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Optimize matrix multiply cache friendliness",
+    "title": "[with patch, with positive review] Optimize matrix multiply cache friendliness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1924",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Today in the sage seminar Clément Pernet demonstrated that in the naive matrix multiply algorithm (used as a basecase for all others)
+we have a major inefficiency.
 
 Specifically, for computing C = A*B,
 
@@ -38,7 +40,8 @@ for i in A.nrows:
             C[i,j] += A[i,k] * B[k,j]
 ```
 
-gives the same result, but much better cache performance.
+gives the same result, but much better cache performance. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1924
 

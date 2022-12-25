@@ -1,16 +1,17 @@
-# Issue 5599: density_plot not centered correctly
+# Issue 5599: [with patch, positive review] density_plot not centered correctly
 
 archive/issues_005599.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\n```\nsage: var('x,y')\n(x, y)\nsage: density_plot(1/(x^10+y^10), (x, -10, 10), (y, -10, 10))\n\n```\n\nclearly illustrates this problem\n\nIssue created by migration from https://trac.sagemath.org/ticket/5599\n\n",
+    "closed_at": "2009-06-03T18:38:08Z",
     "created_at": "2009-03-24T10:28:46Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "density_plot not centered correctly",
+    "title": "[with patch, positive review] density_plot not centered correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5599",
     "user": "https://github.com/robertwb"

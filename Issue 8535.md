@@ -4,6 +4,7 @@ archive/issues_008535.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nBisection, plotting, max/min, and some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8535\n\n",
+    "closed_at": "2010-07-20T09:20:18Z",
     "created_at": "2010-03-14T09:12:29Z",
     "labels": [
         "component: basic arithmetic"

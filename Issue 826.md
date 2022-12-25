@@ -1,16 +1,17 @@
-# Issue 826: Coercing rational function elements (i.e. fraction field) to symbolic ring
+# Issue 826: [with patch] [tested by cwitty] Coercing rational function elements (i.e. fraction field) to symbolic ring
 
 archive/issues_000826.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently, there is no coercion from a fraction of polynomials to the symbolic ring, but there is for polynomials.  I added coercion for the fraction field elements in the attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/826\n\n",
+    "closed_at": "2007-10-13T07:30:16Z",
     "created_at": "2007-10-04T19:29:08Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "Coercing rational function elements (i.e. fraction field) to symbolic ring",
+    "title": "[with patch] [tested by cwitty] Coercing rational function elements (i.e. fraction field) to symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/826",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

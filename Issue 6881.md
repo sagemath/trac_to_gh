@@ -1,28 +1,32 @@
-# Issue 6881: Conics
+# Issue 6881: Solving conics over polynomial rings.
 
 archive/issues_006881.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mstreng\n\nKeywords: conic, curve\n\nWe should have a class (or classes) for conic curves, and, more specially diagonal conics.  In particular, one of the methods should be John Cremona's algorithms for finding points on solvable conics, both over Q and over fraction fields of polynomial rings.  Other methods might include getting discriminants, primes of bad reduction, producing parametrized solutions, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6881\n\n",
+    "body": "Assignee: @lennartack\n\nCC:  @mstreng\n\nKeywords: conic, curve, function field\n\nImplement the algorithm of John Cremona and Mark van Hoeij for solving conics over fraction fields of polynomial rings.\n\nThe article [http://www.warwick.ac.uk/~masgaj/papers/conicFT.pdf](http://www.warwick.ac.uk/~masgaj/papers/conicFT.pdf) contains references to implementations in Maple (van Hoeij) and Magma (Cremona-Roberts), but these implementations heavily rely on things specific to these systems.\n\n#727 provides classes for conic curves that this code should build upon\n\nIssue created by migration from https://trac.sagemath.org/ticket/6881\n\n",
+    "closed_at": "2016-02-11T23:26:40Z",
     "created_at": "2009-09-03T22:47:34Z",
     "labels": [
-        "component: algebra",
-        "minor"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
-    "title": "Conics",
+    "title": "Solving conics over polynomial rings.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6881",
     "user": "https://trac.sagemath.org/admin/accounts/users/victor"
 }
 ```
-Assignee: tbd
+Assignee: @lennartack
 
 CC:  @mstreng
 
-Keywords: conic, curve
+Keywords: conic, curve, function field
 
-We should have a class (or classes) for conic curves, and, more specially diagonal conics.  In particular, one of the methods should be John Cremona's algorithms for finding points on solvable conics, both over Q and over fraction fields of polynomial rings.  Other methods might include getting discriminants, primes of bad reduction, producing parametrized solutions, etc.
+Implement the algorithm of John Cremona and Mark van Hoeij for solving conics over fraction fields of polynomial rings.
+
+The article [http://www.warwick.ac.uk/~masgaj/papers/conicFT.pdf](http://www.warwick.ac.uk/~masgaj/papers/conicFT.pdf) contains references to implementations in Maple (van Hoeij) and Magma (Cremona-Roberts), but these implementations heavily rely on things specific to these systems.
+
+#727 provides classes for conic curves that this code should build upon
 
 Issue created by migration from https://trac.sagemath.org/ticket/6881
 

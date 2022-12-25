@@ -1,16 +1,17 @@
-# Issue 4562: clean up a bunch of imports in matrix CDF/RDF code
+# Issue 4562: [with patch, positive review] clean up a bunch of imports in matrix CDF/RDF code
 
 archive/issues_004562.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch cleans up a bunch of unneeded imports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4562\n\n",
+    "closed_at": "2008-11-23T01:59:50Z",
     "created_at": "2008-11-20T06:23:21Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "clean up a bunch of imports in matrix CDF/RDF code",
+    "title": "[with patch, positive review] clean up a bunch of imports in matrix CDF/RDF code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4562",
     "user": "https://github.com/jasongrout"

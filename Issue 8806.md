@@ -4,6 +4,7 @@ archive/issues_008806.json:
 ```json
 {
     "body": "Assignee: mvngu\n\n```\nWith that in mind, you should probably change README.txt.  It is\nwoefully out of date, and not tracked by HG as far as I can tell.\nE.g.,\n\nNOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS\n------------------------------------------\n\nPROCESSOR  OPERATING SYSTEM\nSPARC      Solaris 10 -- nearly works\nx86        Apple Mac OS X 10.6.x (64-bit) -- see trac #7095.\nx86_64     Solaris 10 -- does not work\nx86_64     Apple Mac OS X 10.5.x (64-bit) -- needs 64-bit gFortran\n          instead of g95\n\nIt should also say something about removing /sw from your PATH on Mac.\n\nKarl-Dieter\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8806\n\n",
+    "closed_at": "2010-05-03T07:25:42Z",
     "created_at": "2010-04-28T18:02:08Z",
     "labels": [
         "component: documentation",

@@ -1,16 +1,17 @@
-# Issue 3822: Interact - slider breaks defaulting on too many values
+# Issue 3822: [with patch; positive review] Interact - slider breaks defaulting on too many values
 
 archive/issues_003822.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\n> Unfortunately, as soon as the range of values gets at all large --\n> e.g., a few thousand, -- this causes *major* problems,\n> which lead to the browser spitting out errors, etc.  Basically you\n> exceed hard limits.\n\n\nThe problem is that something like\n\n```\nslider(1, 10^6)\n```\ngenerates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3822\n\n",
+    "closed_at": "2008-08-15T10:32:50Z",
     "created_at": "2008-08-12T20:20:22Z",
     "labels": [
-        "component: notebook",
+        "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Interact - slider breaks defaulting on too many values",
+    "title": "[with patch; positive review] Interact - slider breaks defaulting on too many values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3822",
     "user": "https://github.com/itolkov"

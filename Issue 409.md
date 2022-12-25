@@ -4,6 +4,7 @@ archive/issues_000409.json:
 ```json
 {
     "body": "Assignee: boothby\n\nHere are two notebook bugs or issues:\n\n1. %hide is broken\n2. If you type R.<x,y> = QQ[] \"frequently enough\" in an input cell then click on \"text\", the .<x,y> vanishes.\n3. The notebook root password is allowed to be empty\n\nIssue created by migration from https://trac.sagemath.org/ticket/409\n\n",
+    "closed_at": "2007-07-28T23:06:50Z",
     "created_at": "2007-07-27T19:18:00Z",
     "labels": [
         "component: notebook",

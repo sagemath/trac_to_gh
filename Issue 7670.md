@@ -4,6 +4,7 @@ archive/issues_007670.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nHi,\n\nThere is a password issue with sage notebook account. Please read below:\n\nSameer\n\nOn Fri, Dec 11, 2009 at 1:22 PM, Sameer Regmi <> wrote:\n> On Fri, Dec 11, 2009 at 1:16 PM, Ondrej Certik <> wrote:\n>> On Fri, Dec 11, 2009 at 1:12 PM, Sameer <> wrote:\n>>> Hi I have found a weird issue with FEMhub online lab account. Let's\n>>> say my password is \"nevada\". Then whenever I enter any text (in\n>>> password field) with nevada as the prefix it will login. That means if\n>>> I enter nevada123 (or whatever as the suffix) it will\n>>> login.\n>>\n>> Seems like a bug in the Sage notebook. Could you please try to verify\n>> this against sagenb.org and if the problem is in there as well,\n>> could you please report it to the sage notebook list?\n>\n> Exactly! Its the bug in Sage notebook. The issue is there in sagenb.org too.\n> I even can login with \"nevad\" if the password is of nevada. I am\n> reporting to sage notebook list\n>\n> Sameer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7670\n\n",
+    "closed_at": "2014-09-18T17:58:47Z",
     "created_at": "2009-12-12T00:22:38Z",
     "labels": [
         "component: notebook",

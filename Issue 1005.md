@@ -1,16 +1,17 @@
-# Issue 1005: Make Sage compile in 32 bit mode on OSX 10.5
+# Issue 1005: port Sage to 32 bit OSX 10.5
 
 archive/issues_001005.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: Leopard\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1005\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: Leopard\n\nNOTES:  The remarks below are enough to get Sage to 100% build on OSX 10.5, and *all doctests pass*. \n\n\nThe only anomaly is that doctesting the tutorial results in a bunch of error messages like this:\n\n```\npython(15525) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\n```\n\nThese don't cause any doctests to fail, and I observed this only for tut.tex (nothing else). \n\n\nThis is a meta ticket:\n\n* #1056: Givaro 3.2.6 build fix\n* #1059: lcacl installation fix\n* #1060: flintqs build fix\n* #1061: python build fix\n\nIssue created by migration from https://trac.sagemath.org/ticket/1005\n\n",
+    "closed_at": "2007-11-20T11:34:26Z",
     "created_at": "2007-10-26T20:43:43Z",
     "labels": [
-        "component: distribution",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "Make Sage compile in 32 bit mode on OSX 10.5",
+    "title": "port Sage to 32 bit OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1005",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,7 +21,25 @@ Assignee: mabshoff
 
 Keywords: Leopard
 
+NOTES:  The remarks below are enough to get Sage to 100% build on OSX 10.5, and *all doctests pass*. 
 
+
+The only anomaly is that doctesting the tutorial results in a bunch of error messages like this:
+
+```
+python(15525) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed
+*** set a breakpoint in malloc_error_break to debug
+```
+
+These don't cause any doctests to fail, and I observed this only for tut.tex (nothing else). 
+
+
+This is a meta ticket:
+
+* #1056: Givaro 3.2.6 build fix
+* #1059: lcacl installation fix
+* #1060: flintqs build fix
+* #1061: python build fix
 
 Issue created by migration from https://trac.sagemath.org/ticket/1005
 

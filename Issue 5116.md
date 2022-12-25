@@ -1,15 +1,16 @@
-# Issue 5116: update M4RI to newest upstream release
+# Issue 5116: [with patch, positive review] update M4RI to newest upstream release
 
 archive/issues_005116.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: m4ri\n\nA new version of M4RI is available. \n\nRelease notes: http://bitbucket.org/malb/m4ri/wiki/M4RI-20090105\n\nIssue created by migration from https://trac.sagemath.org/ticket/5116\n\n",
+    "closed_at": "2009-02-04T00:08:29Z",
     "created_at": "2009-01-28T11:43:10Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "update M4RI to newest upstream release",
+    "title": "[with patch, positive review] update M4RI to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5116",
     "user": "https://github.com/malb"

@@ -3,10 +3,12 @@
 archive/issues_005177.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @dandrake\n\nIf you delete a cell, it doesn't delete the directory for the cell, at least not very soon (it does seem that they eventually get deleted).  Should it maybe when you log off the worksheet?  Or maybe immediately.  This is particularly bad when there are large computations or graphics involved, and may contribute to making .sws files rather large even if there are few cells.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5177\n\n",
+    "body": "Assignee: boothby\n\nCC:  @dandrake\n\nIf you delete a cell, it doesn't delete the directory for the cell, at least not very soon (it does seem that they eventually get deleted).  Should it maybe when you log off the worksheet?  Or maybe immediately.  This is particularly bad when there are large computations or graphics involved, and may contribute to making .sws files rather large even if there are few cells.\n\nApply [attachment:trac_5177-delete-cell-dirs.4.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/5177\n\n",
+    "closed_at": "2011-11-30T20:55:08Z",
     "created_at": "2009-02-04T18:05:26Z",
     "labels": [
         "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
@@ -21,6 +23,8 @@ Assignee: boothby
 CC:  @dandrake
 
 If you delete a cell, it doesn't delete the directory for the cell, at least not very soon (it does seem that they eventually get deleted).  Should it maybe when you log off the worksheet?  Or maybe immediately.  This is particularly bad when there are large computations or graphics involved, and may contribute to making .sws files rather large even if there are few cells.
+
+Apply [attachment:trac_5177-delete-cell-dirs.4.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/5177
 

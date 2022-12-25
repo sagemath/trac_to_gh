@@ -4,6 +4,7 @@ archive/issues_009427.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @hemmecke\n\nKeywords: integrate, fricas\n\nThe attached patch adds the option algorithm=\"fricas\" to the integrate\ncommand.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9427\n\n",
+    "closed_at": "2015-02-17T19:28:27Z",
     "created_at": "2010-07-05T08:48:40Z",
     "labels": [
         "component: symbolics"

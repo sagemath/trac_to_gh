@@ -4,6 +4,7 @@ archive/issues_001176.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1176\n\n",
+    "closed_at": "2007-11-18T13:58:27Z",
     "created_at": "2007-11-15T10:07:12Z",
     "labels": [
         "component: documentation",

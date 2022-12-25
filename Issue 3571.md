@@ -1,16 +1,17 @@
-# Issue 3571: ivalue field in integer_mod.pyx shouldn't be public
+# Issue 3571: [with patch, positive review] ivalue field in integer_mod.pyx shouldn't be public
 
 archive/issues_003571.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:\n\n```\nsage: R = Integers(10)\nsage: x = R(2)\nsage: x\n2\nsage: x.ivalue = 33\nsage: x\n33\nsage: R(2)\n33\n```\n\nIt's easy to make this field no longer be public, but lots of things are using the fact that it is, so one needs to go through and make everything work correctly again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3571\n\n",
+    "closed_at": "2009-01-23T09:39:41Z",
     "created_at": "2008-07-06T20:55:32Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "ivalue field in integer_mod.pyx shouldn't be public",
+    "title": "[with patch, positive review] ivalue field in integer_mod.pyx shouldn't be public",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3571",
     "user": "https://github.com/craigcitro"

@@ -1,16 +1,17 @@
-# Issue 4107: [with patch, needs review] trivial typos in tut.tex
+# Issue 4107: [with patch, positive review] trivial typos in tut.tex
 
 archive/issues_004107.json:
 ```json
 {
     "body": "Assignee: somebody\n\n(see the thread of the same name in sage-devel)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4107\n\n",
+    "closed_at": "2008-09-13T00:43:06Z",
     "created_at": "2008-09-12T20:17:24Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] trivial typos in tut.tex",
+    "title": "[with patch, positive review] trivial typos in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4107",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

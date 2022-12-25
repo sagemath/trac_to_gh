@@ -1,9 +1,10 @@
-# Issue 5989: [with patch, needs review] typo in sage-sage
+# Issue 5989: [with patch, positive review] typo in sage-sage
 
 archive/issues_005989.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis fixes a pair of typos in sage-sage.  Apply to the 'scripts' repo.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5989\n\n",
+    "closed_at": "2009-05-12T22:17:12Z",
     "created_at": "2009-05-05T16:49:48Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005989.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] typo in sage-sage",
+    "title": "[with patch, positive review] typo in sage-sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5989",
     "user": "https://github.com/jhpalmieri"

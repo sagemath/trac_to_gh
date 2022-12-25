@@ -3,7 +3,8 @@
 archive/issues_008486.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI think I want, e.g., the following works in Sage notebook.\n\n%latex\n\uc2e4\uc218 $x$\uc5d0 \ub300\ud574\uc11c \ub2e4\uc74c\uc774 \uc131\ub9bd\ud55c\ub2e4.\n\\[\n    \\sqrt{x^2}=|x|\n\\] \n\nDan writes:\n\nI've recently learned about xelatex and think it's awesome -- I can\n*finally* include Hangeul in my documents! We should definitely have a xelatex function, although it would usually be necessary to add stuff to the preamble to get the right fonts set up. But we already have\nlatex.add_to_preamble(), so it should be easy to get xelatex working.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8486\n\n",
+    "body": "Assignee: tbd\n\nI think I want, e.g., the following works in Sage notebook.\n\n%latex \n\n\uc2e4\uc218 $x$\uc5d0 \ub300\ud574\uc11c \ub2e4\uc74c\uc774 \uc131\ub9bd\ud55c\ub2e4. \n\n\\[\n\n  \\sqrt{x<sup>2}=|x|</sup>\n\n\\]\n\nDan writes:\n\nI've recently learned about xelatex and think it's awesome -- I can *finally* include Hangeul in my documents! We should definitely have a xelatex function, although it would usually be necessary to add stuff to the preamble to get the right fonts set up. But we already have latex.add_to_preamble(), so it should be easy to get xelatex working.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8486\n\n",
+    "closed_at": "2010-04-15T23:55:03Z",
     "created_at": "2010-03-10T07:38:38Z",
     "labels": [
         "component: misc",
@@ -20,17 +21,19 @@ Assignee: tbd
 
 I think I want, e.g., the following works in Sage notebook.
 
-%latex
-실수 $x$에 대해서 다음이 성립한다.
+%latex 
+
+실수 $x$에 대해서 다음이 성립한다. 
+
 \[
-    \sqrt{x^2}=|x|
-\] 
+
+  \sqrt{x<sup>2}=|x|</sup>
+
+\]
 
 Dan writes:
 
-I've recently learned about xelatex and think it's awesome -- I can
-*finally* include Hangeul in my documents! We should definitely have a xelatex function, although it would usually be necessary to add stuff to the preamble to get the right fonts set up. But we already have
-latex.add_to_preamble(), so it should be easy to get xelatex working.
+I've recently learned about xelatex and think it's awesome -- I can *finally* include Hangeul in my documents! We should definitely have a xelatex function, although it would usually be necessary to add stuff to the preamble to get the right fonts set up. But we already have latex.add_to_preamble(), so it should be easy to get xelatex working.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8486
 

@@ -1,16 +1,17 @@
-# Issue 6545: sorting of ideal bases
+# Issue 6545: [with patch, positive review] sorting of ideal bases
 
 archive/issues_006545.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n`MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.interreduced_basis()`, also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6545\n\n",
+    "body": "Assignee: @malb\n\n`MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.groebner_basis()` when called on an ideal which has a (not reduced) Groebner basis as set of generator. Also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6545\n\n",
+    "closed_at": "2009-09-09T06:37:38Z",
     "created_at": "2009-07-16T19:23:45Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "sorting of ideal bases",
+    "title": "[with patch, positive review] sorting of ideal bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6545",
     "user": "https://github.com/malb"
@@ -18,7 +19,7 @@ archive/issues_006545.json:
 ```
 Assignee: @malb
 
-`MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.interreduced_basis()`, also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.
+`MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.groebner_basis()` when called on an ideal which has a (not reduced) Groebner basis as set of generator. Also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6545
 

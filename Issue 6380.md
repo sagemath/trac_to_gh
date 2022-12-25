@@ -1,16 +1,17 @@
-# Issue 6380: [with patch, needs review] Allow NTL to build on Solaris with Sun or GNU linker
+# Issue 6380: [with patch, positive review] Allow NTL to build on Solaris with Sun or GNU linker
 
 archive/issues_006380.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nKeywords: solaris ntl makefile GNUism\n\nAlthough the ntl-5.4.2.p7 package would build on Solaris 10 with gcc 4.4.0 if the gcc was configured to use the GNU linker from binutils, the package would not build with the gcc if the compiler was configured to use the Sun linker, with the following options:\n\n--with-ld=/usr/ccs/bin/ld --without-gnu-ld \n\nThe part of the makefile executed when building a shared library would fail if the Sun linker was used. The makefile specified the same output filename twice, but in a way the Sun linker would not tolerate. \n\nThis patch simply removes a very small bit of code (just \"-Wl,-soname,lib`cat DIRNAME`.so \"), which allows NTL to build properly, irrespective of the linker that is being used. \n\nPlease see \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ntl/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6380\n\n",
+    "closed_at": "2009-07-16T21:27:54Z",
     "created_at": "2009-06-21T21:59:34Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Allow NTL to build on Solaris with Sun or GNU linker",
+    "title": "[with patch, positive review] Allow NTL to build on Solaris with Sun or GNU linker",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6380",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

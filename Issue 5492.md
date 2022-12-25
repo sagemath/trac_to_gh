@@ -4,6 +4,7 @@ archive/issues_005492.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: build test\n\nThis was requested by Mike Stillman at Sage Days 14, and sounds like a good idea to me:  have\n\n```\nsage -bt <filename(s)>\n```\n\nas a shortcut for the current\n\n```\nsage -b\nsage -t <filename(s)>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5492\n\n",
+    "closed_at": "2010-11-01T10:05:00Z",
     "created_at": "2009-03-11T22:54:04Z",
     "labels": [
         "component: user interface"

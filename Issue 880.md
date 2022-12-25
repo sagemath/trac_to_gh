@@ -1,9 +1,10 @@
-# Issue 880: 2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux
+# Issue 880: [with patch] 2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux
 
 archive/issues_000880.json:
 ```json
 {
     "body": "Assignee: failure\n\nOn my laptop, many of the doctests crash with SIGSEGV.\nHere's one example:\n\n```\nsage -t  devel/sage-main/sage/categories/category_types.py  \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [1.0 s]\n```\n\nMy laptop is 32-bit x86 Debian testing.  I think probably Jaap Spies is seeing the same thing on Fedora 7 (his report on the mailing list doesn't have enough detail to be positive).\n\nIssue created by migration from https://trac.sagemath.org/ticket/880\n\n",
+    "closed_at": "2007-10-14T22:55:12Z",
     "created_at": "2007-10-13T19:08:48Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_000880.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux",
+    "title": "[with patch] 2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/880",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

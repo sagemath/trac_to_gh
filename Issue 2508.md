@@ -1,73 +1,49 @@
-# Issue 2508: Probkem converting a Laurent Series from pari to Sage
+# Issue 2508: Problem converting a Laurent Series from pari to Sage
 
 archive/issues_002508.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nKeywords: Laurent series, pari\n\nThe elliptic curve function modular_parametrization() returns a list of two pari objects which are Laurent Series in x (of degrees -2, -3).  I wanted to convert these into proper Sage Laurent Series, but that does not work.  However if I invert these (so they have positive degree, i.e. are power series) then I can coerce them into the Laurent series ring, and then invert again!\n\n```\nsage: X = E=EllipticCurve('389a1').modular_parametrization()[0]\nsage: type(X)\n<type 'sage.libs.pari.gen.gen'>\nsage: X\nx^-2 + 2*x^-1 + 4 + 7*x + 13*x^2 + 18*x^3 + 31*x^4 + 49*x^5 + 74*x^6 + 111*x^7 + 173*x^8 + 251*x^9 + 379*x^10 + 560*x^11 + 824*x^12 + 1199*x^13 + 1773*x^14 + O(x^15)\nsage: R=LaurentSeriesRing(QQ,'q')\nsage: R(X)\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/jec/<ipython console> in <module>()\n\n/home/jec/sage-2.10.3/local/lib/python2.5/site-packages/sage/rings/laurent_series_ring.py in __call__(self, x, n)\n    182             return self.gen()**n * x\n    183         else:\n--> 184             return laurent_series_ring_element.LaurentSeries(self, x, n)\n    185\n    186     def _coerce_impl(self, x):\n\n/home/jec/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries.__init__()\n\n/home/jec/sage-2.10.3/local/lib/python2.5/site-packages/sage/rings/power_series_ring.py in __call__(self, f, prec, check)\n    324             v = sage_eval(f.Eltseq())\n    325             return self(v) * (self.gen(0)**f.Valuation())\n--> 326         return self.__power_series_class(self, f, prec, check=check)\n    327\n    328     def construction(self):\n\n/home/jec/power_series_poly.pyx in sage.rings.power_series_poly.PowerSeries_poly.__init__()\n\n/home/jec/sage-2.10.3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)\n    237         elif isinstance(x, pari_gen):\n    238             if x.type() != 't_POL':\n--> 239                 x = x.Polrev()\n    240\n    241         C = self.__polynomial_class\n\n/home/jec/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>:  (8)\nsage: 1/R(1/X)\nq^-2 + 2*q^-1 + 4 + 7*q + 13*q^2 + 18*q^3 + 31*q^4 + 49*q^5 + 74*q^6 + 111*q^7 + 173*q^8 + 251*q^9 + 379*q^10 + 560*q^11 + 824*q^12 + 1199*q^13 + 1773*q^14 + 2365*q^15 + 3463*q^16 + 4508*q^17 + O(q^18)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2508\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @jdemeyer\n\nKeywords: Laurent series, pari\n\nIt seems that PARI laurent series can only be converted to Sage LaurentSeries if the valuation is >= 0.\n\nSimple example:\n\n```\nsage: R = LaurentSeriesRing(QQ, 'q')\nsage: R(pari('1/x'))\n0                       # Very wrong\nsage: R(pari('1/x + O(x^20)'))\nTraceback (most recent call last)\n[...]\nPariError:  (5)\n```\n\nExample from John Cremona:\n\n```\nsage: E = EllipticCurve('11a1')\nsage: R = LaurentSeriesRing(RationalField(),'q')\nsage: XY = E.pari_mincurve().elltaniyama()\nsage: [R(XY[0]),R(XY[1])]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2508\n\n",
+    "closed_at": "2010-08-09T09:50:56Z",
     "created_at": "2008-03-13T18:35:51Z",
     "labels": [
         "component: interfaces",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Probkem converting a Laurent Series from pari to Sage",
+    "title": "Problem converting a Laurent Series from pari to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2508",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @williamstein
+Assignee: @jdemeyer
 
 CC:  @jdemeyer
 
 Keywords: Laurent series, pari
 
-The elliptic curve function modular_parametrization() returns a list of two pari objects which are Laurent Series in x (of degrees -2, -3).  I wanted to convert these into proper Sage Laurent Series, but that does not work.  However if I invert these (so they have positive degree, i.e. are power series) then I can coerce them into the Laurent series ring, and then invert again!
+It seems that PARI laurent series can only be converted to Sage LaurentSeries if the valuation is >= 0.
+
+Simple example:
 
 ```
-sage: X = E=EllipticCurve('389a1').modular_parametrization()[0]
-sage: type(X)
-<type 'sage.libs.pari.gen.gen'>
-sage: X
-x^-2 + 2*x^-1 + 4 + 7*x + 13*x^2 + 18*x^3 + 31*x^4 + 49*x^5 + 74*x^6 + 111*x^7 + 173*x^8 + 251*x^9 + 379*x^10 + 560*x^11 + 824*x^12 + 1199*x^13 + 1773*x^14 + O(x^15)
-sage: R=LaurentSeriesRing(QQ,'q')
-sage: R(X)
----------------------------------------------------------------------------
-<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)
+sage: R = LaurentSeriesRing(QQ, 'q')
+sage: R(pari('1/x'))
+0                       # Very wrong
+sage: R(pari('1/x + O(x^20)'))
+Traceback (most recent call last)
+[...]
+PariError:  (5)
+```
 
-/home/jec/<ipython console> in <module>()
+Example from John Cremona:
 
-/home/jec/sage-2.10.3/local/lib/python2.5/site-packages/sage/rings/laurent_series_ring.py in __call__(self, x, n)
-    182             return self.gen()**n * x
-    183         else:
---> 184             return laurent_series_ring_element.LaurentSeries(self, x, n)
-    185
-    186     def _coerce_impl(self, x):
-
-/home/jec/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries.__init__()
-
-/home/jec/sage-2.10.3/local/lib/python2.5/site-packages/sage/rings/power_series_ring.py in __call__(self, f, prec, check)
-    324             v = sage_eval(f.Eltseq())
-    325             return self(v) * (self.gen(0)**f.Valuation())
---> 326         return self.__power_series_class(self, f, prec, check=check)
-    327
-    328     def construction(self):
-
-/home/jec/power_series_poly.pyx in sage.rings.power_series_poly.PowerSeries_poly.__init__()
-
-/home/jec/sage-2.10.3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)
-    237         elif isinstance(x, pari_gen):
-    238             if x.type() != 't_POL':
---> 239                 x = x.Polrev()
-    240
-    241         C = self.__polynomial_class
-
-/home/jec/gen.pyx in sage.libs.pari.gen._pari_trap()
-
-<class 'sage.libs.pari.gen.PariError'>:  (8)
-sage: 1/R(1/X)
-q^-2 + 2*q^-1 + 4 + 7*q + 13*q^2 + 18*q^3 + 31*q^4 + 49*q^5 + 74*q^6 + 111*q^7 + 173*q^8 + 251*q^9 + 379*q^10 + 560*q^11 + 824*q^12 + 1199*q^13 + 1773*q^14 + 2365*q^15 + 3463*q^16 + 4508*q^17 + O(q^18)
+```
+sage: E = EllipticCurve('11a1')
+sage: R = LaurentSeriesRing(RationalField(),'q')
+sage: XY = E.pari_mincurve().elltaniyama()
+sage: [R(XY[0]),R(XY[1])]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/2508

@@ -1,9 +1,10 @@
-# Issue 5735: delete extended rationals and integers completely
+# Issue 5735: [with patch, positive review] delete extended rationals and integers completely
 
 archive/issues_005735.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nFrom David Roe:\n> And yes, I originally wrote Extended Integers and Extended Rationals when I\n> was writing lazy p-adics.  Since lazy p-adics aren't currently in good\n> enough shape to be turned on, I don't think any part of the sage library\n> uses Extended Integers or Extended Rationals.  Upon further reflection, I'm\n> not sure I even need them for lazy p-adics.  I don't know if it's a good\n> idea to just get rid of extended integers and rationals or not.\n```\n\n\n+1 to getting rid of them both.   Nobody knows what they are really, and they aren't needed, and they are probably partly broken given the bad coverage (at least of integer).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5735\n\n",
+    "closed_at": "2009-04-12T20:41:16Z",
     "created_at": "2009-04-10T17:08:07Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_005735.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "delete extended rationals and integers completely",
+    "title": "[with patch, positive review] delete extended rationals and integers completely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5735",
     "user": "https://github.com/williamstein"

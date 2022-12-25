@@ -1,16 +1,17 @@
-# Issue 5831: [with patch, not ready for review] reducible root system fixes
+# Issue 5831: Reducible root system fixes
 
 archive/issues_005831.json:
 ```json
 {
-    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5831\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch trac_5831.patch supercedes reducible.patch. It goes on top of trac_5751-rebased-3.4.1.rc4.patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5831\n\n",
+    "closed_at": "2009-08-26T21:18:29Z",
     "created_at": "2009-04-20T05:10:13Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, not ready for review] reducible root system fixes",
+    "title": "Reducible root system fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5831",
     "user": "https://github.com/dwbump"
@@ -24,7 +25,7 @@ The methods simple_roots(), fundamental_weights() and simple_coroots() for the a
 
 There are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.
 
-The patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.
+The patch trac_5831.patch supercedes reducible.patch. It goes on top of trac_5751-rebased-3.4.1.rc4.patch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5831
 

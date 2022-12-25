@@ -1,15 +1,16 @@
-# Issue 7010: sanity check key value of the shift cryptosystem
+# Issue 7010: [with patch, positive review] sanity check key value of the shift cryptosystem
 
 archive/issues_007010.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nThis is a follow up to ticket #6841.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7010\n\n",
+    "closed_at": "2009-10-15T10:04:52Z",
     "created_at": "2009-09-25T07:13:23Z",
     "labels": [
         "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "sanity check key value of the shift cryptosystem",
+    "title": "[with patch, positive review] sanity check key value of the shift cryptosystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7010",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

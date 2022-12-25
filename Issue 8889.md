@@ -4,9 +4,10 @@ archive/issues_008889.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nCC:  sage-combinat\n\nI would like a function that takes\nInput: range (a list)\n       dim (a positive integer)\nOutput: a list of vectors or tuples of length dim including all combinations of range, but with replacement\n\nExample: generate the vertices of the centered unit cube [-1/2,1/2]^dim, where dim is variable\n\nThe functions in sage.misc.mrange almost do this, except it seems that they require having dim specified ahead of time, whereas I want a function that I can call in another function where dim will vary.\n\nThe function Arrangements in sage.combinat.permutation almost does what I want, but the list that the digits of the tuple are chosen from must be larger than dim, and Arrangements selects without replacement.  I can solve my example problem using Arrangements as follows:\n\n```\nprelist=[]\nfor i in range(2**d):\n    if i-2**(d-1) >= 0: prelist.append(1)\n        else: prelist.append(-1)\nlist = (1/2)*matrix(Arrangements(prelist,d).list())\n```\nbut it seems like there should be one specific function for this.\n\n(Combinations and Permutations are also related, but don't quite do what I want.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8889\n\n",
+    "closed_at": "2010-06-22T21:57:06Z",
     "created_at": "2010-05-05T15:55:21Z",
     "labels": [
-        "component: misc",
+        "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -1,15 +1,16 @@
-# Issue 3397: [with patch, needs review] Steenrod algebra calculations
+# Issue 3397: [with patch, positive review] Steenrod algebra calculations
 
 archive/issues_003397.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nKeywords: steenrod algebra\n\nThe attached patch adds files to sage.algebras to do Steenrod algebra calculations.  See the files for full documentation.  The only other package for this kind of thing of which I am aware is a Maple package: \n\n[http://math.scranton.edu/monks/software/Steenrod/steen.html](http://math.scranton.edu/monks/software/Steenrod/steen.html)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3397\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: steenrod algebra, editor_craigcitro\n\nThe attached patch adds files to sage.algebras to do Steenrod algebra calculations.  See the files for full documentation.  The only other package for this kind of thing of which I am aware is a Maple package: \n\n[http://math.scranton.edu/monks/software/Steenrod/steen.html](http://math.scranton.edu/monks/software/Steenrod/steen.html)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3397\n\n",
+    "closed_at": "2008-08-10T08:59:00Z",
     "created_at": "2008-06-11T05:49:59Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] Steenrod algebra calculations",
+    "title": "[with patch, positive review] Steenrod algebra calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3397",
     "user": "https://github.com/jhpalmieri"
@@ -17,7 +18,7 @@ archive/issues_003397.json:
 ```
 Assignee: @jhpalmieri
 
-Keywords: steenrod algebra
+Keywords: steenrod algebra, editor_craigcitro
 
 The attached patch adds files to sage.algebras to do Steenrod algebra calculations.  See the files for full documentation.  The only other package for this kind of thing of which I am aware is a Maple package: 
 

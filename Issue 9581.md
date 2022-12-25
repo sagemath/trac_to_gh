@@ -3,7 +3,8 @@
 archive/issues_009581.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  @nathanncohen rmiller\n\nKeywords: graph\n\nCurrently, the edge_incident method of generic graph calls edge_boundary which first take a lot of time and secondly does not work\n\n```\nsage: G = Graph(loops=True)\nsage: G.add_edge(0,0)\nsage: G.edges()\n[(0, 0, None)]\nsage: list(G.edge_iterator(0))\n[(0, 0, None)]\nsage: G.edges_incident(0)\n[]\n```\n\nThe ticket also aims to reduce multiple calls (edge_boundary does not call directly vertex_iterator as it should).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9581\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @nathanncohen rmiller\n\nKeywords: graph\n\nCurrently, the edge_incident method of generic graph calls edge_boundary which first take a lot of time and secondly does not work\n\n```\nsage: G = Graph(loops=True)\nsage: G.add_edge(0,0)\nsage: G.edges()\n[(0, 0, None)]\nsage: list(G.edge_iterator(0))\n[(0, 0, None)]\nsage: G.edges_incident(0)\n[]\n```\n\nThe ticket also aims to reduce multiple calls (edge_boundary does not call directly edge_iterator as it should).\n\nIt is also the occasion to add some doc and correct some typos.\n\nApply first :\n\n* #10043\n* #10101\n* #9698\n\nIssue created by migration from https://trac.sagemath.org/ticket/9581\n\n",
+    "closed_at": "2010-11-01T10:07:22Z",
     "created_at": "2010-07-23T07:13:18Z",
     "labels": [
         "component: graph theory",
@@ -35,7 +36,15 @@ sage: G.edges_incident(0)
 []
 ```
 
-The ticket also aims to reduce multiple calls (edge_boundary does not call directly vertex_iterator as it should).
+The ticket also aims to reduce multiple calls (edge_boundary does not call directly edge_iterator as it should).
+
+It is also the occasion to add some doc and correct some typos.
+
+Apply first :
+
+* #10043
+* #10101
+* #9698
 
 Issue created by migration from https://trac.sagemath.org/ticket/9581
 

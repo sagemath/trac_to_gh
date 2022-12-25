@@ -1,22 +1,23 @@
-# Issue 6125: disable testing in flint, mpir, etc. packages
+# Issue 6125: [with spkgs, positive review] disable testing in flint, mpir, etc. packages
 
 archive/issues_006125.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn 4.0.rc0, at least the FLINT spkg has tests enabled. These should be disabled before the release.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6125\n\n",
+    "body": "Assignee: @mwhansen\n\nIn 4.0.rc0, at least the FLINT spkg has tests enabled. These should be disabled before the release.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6125\n\n",
+    "closed_at": "2009-05-29T17:31:03Z",
     "created_at": "2009-05-24T15:50:12Z",
     "labels": [
         "component: packages: standard",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "disable testing in flint, mpir, etc. packages",
+    "title": "[with spkgs, positive review] disable testing in flint, mpir, etc. packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6125",
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 In 4.0.rc0, at least the FLINT spkg has tests enabled. These should be disabled before the release.
 

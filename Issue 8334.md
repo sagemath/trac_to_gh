@@ -3,7 +3,8 @@
 archive/issues_008334.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nMoves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for 7885 (Tate's algorithm for function fields).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8334\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nMoves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for #7885 (Tate's algorithm for function fields).\n\nDepends on #7883, #9898, #9753, #9764. Prerequisite for #8335.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8334\n\n",
+    "closed_at": "2010-09-28T10:56:59Z",
     "created_at": "2010-02-23T15:16:53Z",
     "labels": [
         "component: algebra"
@@ -19,7 +20,9 @@ Assignee: @aghitza
 
 CC:  @williamstein
 
-Moves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for 7885 (Tate's algorithm for function fields).
+Moves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for #7885 (Tate's algorithm for function fields).
+
+Depends on #7883, #9898, #9753, #9764. Prerequisite for #8335.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8334
 

@@ -1,22 +1,23 @@
-# Issue 1055: Don't factor discriminant for quadratic number fields
+# Issue 1055: [with patch] Don't factor discriminant for quadratic number fields
 
 archive/issues_001055.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. \n\nElements are represented as a+b sqrt(D) / denom. I don't believe that we require D to be the discriminant, but this needs to be verified before a change is made. For efficiency reasons, it might be worth doing trial division to reduce squares of small prime powers from D, as smaller D yields faster arithmetic. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1055\n\n",
+    "body": "Assignee: @robertwb\n\nThe current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. \n\nElements are represented as a+b sqrt(D) / denom. I don't believe that we require D to be the discriminant, but this needs to be verified before a change is made. For efficiency reasons, it might be worth doing trial division to reduce squares of small prime powers from D, as smaller D yields faster arithmetic. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1055\n\n",
+    "closed_at": "2007-11-06T21:56:07Z",
     "created_at": "2007-11-01T20:27:44Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "Don't factor discriminant for quadratic number fields",
+    "title": "[with patch] Don't factor discriminant for quadratic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1055",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 The current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. 
 

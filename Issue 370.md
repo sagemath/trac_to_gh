@@ -4,6 +4,7 @@ archive/issues_000370.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n> One suggestion I have arising from my problems is that the\n> documentation for the show command be improved.  It is a very\n> important function for most users.\n\nAgreed -- the documentation for show now is terrible.  It doesn't\neven mention that it can be used to show the typeset version of\nan object!\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/370\n\n",
+    "closed_at": "2008-04-01T12:25:38Z",
     "created_at": "2007-05-19T04:56:48Z",
     "labels": [
         "component: user interface",

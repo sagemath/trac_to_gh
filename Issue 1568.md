@@ -1,15 +1,16 @@
-# Issue 1568: [with patch] hypellfrob -- faster zeta functions for hyperelliptic curves
+# Issue 1568: [with patch, with positive review] hypellfrob -- faster zeta functions for hyperelliptic curves
 
 archive/issues_001568.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNew version of frobenius; renamed to hypellfrob.\n\nThis depends on `zn_poly`; see #1567.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1568\n\n",
+    "closed_at": "2008-03-20T04:19:41Z",
     "created_at": "2007-12-19T15:20:25Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch] hypellfrob -- faster zeta functions for hyperelliptic curves",
+    "title": "[with patch, with positive review] hypellfrob -- faster zeta functions for hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1568",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

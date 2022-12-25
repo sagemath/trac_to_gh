@@ -1,16 +1,18 @@
-# Issue 9797: Accelerate Polyhedron constructor
+# Issue 9797: Accelerate Polyhedron constructor and fix cddlib output ordering
 
 archive/issues_009797.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt @dimpase drkirkby @nexttime\n\nI've run across some polytopes that can't be constructed in finite time because computing the facet and vertex adjacencies takes forever. Just computing the reduced H/V-representation takes just a few minutes. So I propose to **not** compute the adjacency data in the constructor, but only when needed. This requires patches to the `cddlib` spkg and to `polyhedra.py`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9798\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt @dimpase drkirkby @nexttime\n\nI've run across some polytopes that can't be constructed in finite time because computing the facet and vertex adjacencies takes forever. Just computing the reduced H/V-representation takes just a few minutes. So I propose to **not** compute the adjacency data in the constructor, but only when needed. This requires patches to the `cddlib` spkg and to `polyhedra.py`\n\nAlso, make `cddlib` produce the same output ordering on all platforms (#9926)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9798\n\n",
+    "closed_at": "2010-10-22T07:35:55Z",
     "created_at": "2010-08-24T21:18:32Z",
     "labels": [
         "component: geometry",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Accelerate Polyhedron constructor",
+    "title": "Accelerate Polyhedron constructor and fix cddlib output ordering",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9797",
     "user": "https://github.com/vbraun"
@@ -21,6 +23,8 @@ Assignee: mhampton
 CC:  mhampton @novoselt @dimpase drkirkby @nexttime
 
 I've run across some polytopes that can't be constructed in finite time because computing the facet and vertex adjacencies takes forever. Just computing the reduced H/V-representation takes just a few minutes. So I propose to **not** compute the adjacency data in the constructor, but only when needed. This requires patches to the `cddlib` spkg and to `polyhedra.py`
+
+Also, make `cddlib` produce the same output ordering on all platforms (#9926)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9798
 

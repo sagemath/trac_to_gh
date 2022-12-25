@@ -1,16 +1,17 @@
-# Issue 4123: TOOLCHAIN_ENV script
+# Issue 4123: [with patch, positive review] source $SAGE_ROOT/toolchain/toolchain-env if it exists
 
 archive/issues_004123.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4123\n\n",
+    "closed_at": "2008-09-15T11:45:56Z",
     "created_at": "2008-09-15T01:09:50Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "TOOLCHAIN_ENV script",
+    "title": "[with patch, positive review] source $SAGE_ROOT/toolchain/toolchain-env if it exists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4123",
     "user": "https://github.com/rlmill"

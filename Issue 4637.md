@@ -1,16 +1,17 @@
-# Issue 4637: bug/stupid design of padic_printing.sep print mode stuff
+# Issue 4637: [with patch, with positive review] bug/stupid design of padic_printing.sep print mode stuff (depends on #5499)
 
 archive/issues_004637.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nConsider this session:\n\n```\nbsd:padics was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: padic_printing.sep('][')\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(11, print_mode=\"digits\")(1/3)\n...73737373737373737374\nsage: Qp(17, print_mode=\"digits\")(1/3)\n...B5B5B5B5B5B5B5B5B5B6\nsage: Qp(97, print_mode=\"digits\")(1/3)\n...64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][65\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: padic_printing.sep('|')\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: Qp(997, print_mode=\"digits\")(1/3)\n...664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|665\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(3, print_mode=\"digits\")(1/3)\n....1\nsage: Qp(5, print_mode=\"digits\")(1/3)\n...31313131313131313132\n```\n| Sage Version 3.2.1.alpha2, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nBasically the print separator for p-adic fields depends on what the global padic_printing.sep(...) thing happens to have been set at when that field was first created.  There seems to be absolutely no way to change it later.  The dependence is also totally baffling?  Why the hell does it change for 97 but not 17, 11, 7?  WTF!?!\n\nSolution -- make the frickin' separator a property of the field that must be passed in.  Notice now that isn't even possible.  totally get rid of this stupid padic_printing object. \n\n```\nsage: Qp(5, print_mode=\"digits\", sep='|')\nTypeError: Qp() got an unexpected keyword argument 'sep'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4637\n\n",
+    "closed_at": "2009-04-13T08:47:15Z",
     "created_at": "2008-11-27T06:58:30Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "bug/stupid design of padic_printing.sep print mode stuff",
+    "title": "[with patch, with positive review] bug/stupid design of padic_printing.sep print mode stuff (depends on #5499)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4637",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_002422.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe programming guide should be updated:\n\n1. Instructions about working with trac (posting a patch, the \"[with patch, needs review]\", the review process, etc.)\n\n2. Expectations for patches (doctests and documentation, clean code, can be slow as an initial version, but if it's a naive way to do things when it could be faster, it should probably be mentioned, references for algorithms if it is an algorithm from a paper, etc.)\n\n3. Instructions on creating patches instead of bundles, maybe a short introduction to queues.\n\n4. Say that you really should go ask people to review your patch and then follow up and make sure the patch doesn't fall through the cracks.\n\n5. Instructions for running the doctests to check for failures.\n\n6. Expectations and instructions for creating spkgs\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2422\n\n",
+    "closed_at": "2008-08-31T07:59:04Z",
     "created_at": "2008-03-07T17:29:17Z",
     "labels": [
         "component: documentation"

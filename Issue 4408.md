@@ -1,15 +1,16 @@
-# Issue 4408: magma interface -- change _magma_init_ to take non-optional magma argument
+# Issue 4408: [with patch; not ready for review] magma interface -- change _magma_init_ to take non-optional magma argument
 
 archive/issues_004408.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch touches a lot of files in a trivial automatic way.  They main point is it changes the _magma_init_ signature from \n\n_magma_init_(self)\n\nto \n\n_magma_init_(self, magma)\n\nwhere magma is a magma interface.  Also, it introduces some caching for the magma interface itself.  This means that _magma_init_ has access to and can impact the full state of the magma interpreter.   This makes creating a string representation of an element valid for that interpreter dramatically more powerful and flexible, is conceptually very easy to understand, and works.  The caching helps mediate potential efficiency issues. \n\nNote, whether caching should be on or off by default is unclear, and I think can only be answered by implementing a lot more of this framework and doing some profiling. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4408\n\n",
+    "closed_at": "2008-11-24T03:37:37Z",
     "created_at": "2008-10-31T01:50:04Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "magma interface -- change _magma_init_ to take non-optional magma argument",
+    "title": "[with patch; not ready for review] magma interface -- change _magma_init_ to take non-optional magma argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4408",
     "user": "https://github.com/williamstein"

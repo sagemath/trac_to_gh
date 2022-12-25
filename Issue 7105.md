@@ -4,6 +4,7 @@ archive/issues_007105.json:
 ```json
 {
     "body": "Assignee: boothby\n\nOne way would be to add target=\"_new\" right before href=\"...\". \n\nThe justification for this change is that currently after looking at the docs one hits the backbutton which results in a corrupted view of the worksheet (for now). \n\nIssue created by migration from https://trac.sagemath.org/ticket/7105\n\n",
+    "closed_at": "2011-04-13T07:42:23Z",
     "created_at": "2009-10-04T05:36:58Z",
     "labels": [
         "component: notebook"

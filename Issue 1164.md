@@ -1,9 +1,10 @@
-# Issue 1164: Error in tutorial documentation about %hist
+# Issue 1164: [with patch, with positive review] Error in tutorial documentation about %hist
 
 archive/issues_001164.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn the interactive tutorial for SAGE, page \"3.1 Your SAGE session\", the documentation should make it clear that the %hist command does not work in the SAGE notebook, and that one cannot type in %hist and assume that it will work. It should also be noted that __ and _oh do not work in the notebook (although _ does).\n\nAlso, in the line \"The PATHhastheSAGEbindirectoryatthefront,soifyourungp,gap,singular,maxima,etc.,yougettheversionsincludedwithSAGE. \n\", it looks like an end-maths-environment symbol has been omitted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1164\n\n",
+    "body": "Assignee: @mwhansen\n\nIn the interactive tutorial for SAGE, page \"3.1 Your SAGE session\", the documentation should make it clear that the %hist command does not work in the SAGE notebook, and that one cannot type in %hist and assume that it will work. It should also be noted that __ and _oh do not work in the notebook (although _ does).\n\nAlso, in the line \"The PATHhastheSAGEbindirectoryatthefront,soifyourungp,gap,singular,maxima,etc.,yougettheversionsincludedwithSAGE. \n\", it looks like an end-maths-environment symbol has been omitted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1164\n\n",
+    "closed_at": "2007-12-09T11:58:45Z",
     "created_at": "2007-11-13T22:12:25Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_001164.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Error in tutorial documentation about %hist",
+    "title": "[with patch, with positive review] Error in tutorial documentation about %hist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1164",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 In the interactive tutorial for SAGE, page "3.1 Your SAGE session", the documentation should make it clear that the %hist command does not work in the SAGE notebook, and that one cannot type in %hist and assume that it will work. It should also be noted that __ and _oh do not work in the notebook (although _ does).
 

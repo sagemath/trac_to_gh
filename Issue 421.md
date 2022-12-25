@@ -3,7 +3,8 @@
 archive/issues_000421.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen printing in the notebook the input now is completely missing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/421\n\n",
+    "body": "Assignee: @williamstein\n\nWhen printing in the notebook the input now is completely missing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/421\n\n",
+    "closed_at": "2007-08-12T21:10:34Z",
     "created_at": "2007-08-10T20:21:43Z",
     "labels": [
         "component: notebook",
@@ -20,6 +21,7 @@ archive/issues_000421.json:
 Assignee: @williamstein
 
 When printing in the notebook the input now is completely missing!
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/421
 

@@ -3,10 +3,11 @@
 archive/issues_002389.json:
 ```json
 {
-    "body": "Assignee: @ClementPernet\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\nhttp://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html, may help. \n\nSame issue as #2388, but need a clean fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2389\n\n",
+    "body": "Assignee: mabshoff\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\nhttp://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html, may help. \n\nSame issue as #2388, but need a clean fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2389\n\n",
+    "closed_at": "2008-04-05T18:47:39Z",
     "created_at": "2008-03-04T22:07:30Z",
     "labels": [
-        "component: cygwin",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
@@ -16,7 +17,7 @@ archive/issues_002389.json:
     "user": "https://github.com/ClementPernet"
 }
 ```
-Assignee: @ClementPernet
+Assignee: mabshoff
 
 The proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.
 

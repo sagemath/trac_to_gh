@@ -4,6 +4,7 @@ archive/issues_002976.json:
 ```json
 {
     "body": "Assignee: failure\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2976\n\n",
+    "closed_at": "2008-04-20T23:26:40Z",
     "created_at": "2008-04-20T22:07:38Z",
     "labels": [
         "component: doctest coverage",

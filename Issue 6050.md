@@ -1,21 +1,22 @@
-# Issue 6050: Dynkin diagram ascii art for reducible Cartan types (with patch, needs review)
+# Issue 6050: [with patch, positive review] Dynkin diagram ascii art for reducible Cartan types
 
 archive/issues_006050.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAfter the patch, Dynkin diagram ascii art is available for reducible Cartan types.\n\n```\nsage: DynkinDiagram(\"F4xA2\")\n\nO---O=>=O---O\n1   2   3   4\nO---O\n5   6\nF4xA2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6050\n\n",
+    "body": "Assignee: @dwbump\n\nAfter the patch, Dynkin diagram ascii art is available for reducible Cartan types.\n\n```\nsage: DynkinDiagram(\"F4xA2\")\n\nO---O=>=O---O\n1   2   3   4\nO---O\n5   6\nF4xA2\n\nsage: CartanType(\"B2xC2\").dynkin_diagram()\n\nO=>=O\n1   2\nO=<=O\n3   4\nB2xC2\n```\n\nThe patch `trac_6050.patch` goes on top of `trac_5502-revised.patch` but that has been merged in sage-4.0rc0.\n\nThe second patch `trac_6050-1.patch` corrects a minor misformatting in Type D extended ascii art.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6050\n\n",
+    "closed_at": "2009-06-04T19:01:47Z",
     "created_at": "2009-05-16T22:41:50Z",
     "labels": [
-        "component: algebra"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Dynkin diagram ascii art for reducible Cartan types (with patch, needs review)",
+    "title": "[with patch, positive review] Dynkin diagram ascii art for reducible Cartan types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6050",
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: tbd
+Assignee: @dwbump
 
 After the patch, Dynkin diagram ascii art is available for reducible Cartan types.
 
@@ -27,7 +28,20 @@ O---O=>=O---O
 O---O
 5   6
 F4xA2
+
+sage: CartanType("B2xC2").dynkin_diagram()
+
+O=>=O
+1   2
+O=<=O
+3   4
+B2xC2
 ```
+
+The patch `trac_6050.patch` goes on top of `trac_5502-revised.patch` but that has been merged in sage-4.0rc0.
+
+The second patch `trac_6050-1.patch` corrects a minor misformatting in Type D extended ascii art.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6050
 

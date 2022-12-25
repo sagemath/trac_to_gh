@@ -1,9 +1,10 @@
-# Issue 1463: polymake package has wrong cddlib,gmp versions
+# Issue 1463: [with optional spkg] polymake package has wrong cddlib,gmp versions
 
 archive/issues_001463.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: polymake, cddlib, gmp\n\nIn the spkg-install script for polymake, the versions need to be updated: the correct script variables are:\n\n```\nSAGE_GMP_VERSION=\"4.2.1.p12\"\nCDDLIB_VERSION=\"094b.p0\"\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1463\n\n",
+    "closed_at": "2007-12-12T03:59:48Z",
     "created_at": "2007-12-11T22:33:50Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001463.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "polymake package has wrong cddlib,gmp versions",
+    "title": "[with optional spkg] polymake package has wrong cddlib,gmp versions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1463",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

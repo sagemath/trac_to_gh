@@ -1,16 +1,17 @@
-# Issue 1046: speed regression in mq.SR.polynomial_system()  due to new coercion code?
+# Issue 1046: [with patch, positive review] speed regression in mq.SR.polynomial_system()  due to new coercion code?
 
 archive/issues_001046.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nTry to run this code:\n\n```\nsage: sr = mq.SR(4,4,4,8, aes_mode=True, star=True, allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\n```\n\nand wait for it to terminate (~17s on my 2.33Ghz system) in a fresh SAGE session. The second run takes only 2s.\n\n\nI profiled this with hotshot like this:\n\n```\nsage: import hotshot\nsage: filename = \"pythongrind.prof\"\nsage: prof = hotshot.Profile(filename, lineevents=1)\nsage: prof.run(\"sr.polynomial_system()\")\n<hotshot.Profile instance at 0x414c11ec>\nsage: prof.close()\n```\n\nand converted the result to cachegrind/calltree format\n\n```\nhotshot2calltree -o cachegrind.out.42 pythongrind.prof\n```\n\nto inspect the result with kcachegrind. Apparently, both `sr.round_polynomials` and `sr.key_schedule_polynomials` call `MatrixSpace.get_action_impl` which in turn calls `pushout` which calls `construction_tower`. `construction_tower` creates *7164* polynomial rings and this ring construction takes up 85% of the entire runtime. \n\nSo apparently the most time is spent in coercion (which also explains the better runtime for the second run) and I believe this is due to a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1046\n\n",
+    "closed_at": "2008-10-25T22:04:06Z",
     "created_at": "2007-10-31T23:57:30Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "speed regression in mq.SR.polynomial_system()  due to new coercion code?",
+    "title": "[with patch, positive review] speed regression in mq.SR.polynomial_system()  due to new coercion code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1046",
     "user": "https://github.com/malb"

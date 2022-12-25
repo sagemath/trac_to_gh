@@ -1,9 +1,10 @@
-# Issue 5676: Preparser identifies hex literals as floating point.
+# Issue 5676: [with patch, positive review] Preparser identifies hex literals as floating point.
 
 archive/issues_005676.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n```\n    sage: 0xe\n    Traceback (most recent call last)\n    ...\n    TypeError: Unable to convert x (='0xe') to real number.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5676\n\n",
+    "closed_at": "2009-04-15T23:37:06Z",
     "created_at": "2009-04-03T16:26:19Z",
     "labels": [
         "component: user interface",
@@ -11,7 +12,7 @@ archive/issues_005676.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Preparser identifies hex literals as floating point.",
+    "title": "[with patch, positive review] Preparser identifies hex literals as floating point.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5676",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

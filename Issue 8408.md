@@ -4,6 +4,7 @@ archive/issues_008408.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nOne doctest that fails on Solaris #8400 is solved by updating the version of sqlite to the latest upstream release, which is http://www.sqlite.org/sqlite-amalgamation-3.6.22.tar.gz\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8408\n\n",
+    "closed_at": "2010-03-06T08:23:07Z",
     "created_at": "2010-03-01T13:33:20Z",
     "labels": [
         "component: build",

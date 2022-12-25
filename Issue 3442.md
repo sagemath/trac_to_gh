@@ -1,22 +1,25 @@
-# Issue 3442: is_normal for permutation groups gives wrong answer
+# Issue 3442: [with patch, positive review] is_normal for permutation groups gives wrong answer
 
 archive/issues_003442.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nThe example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.py` in sage-3.0.3.alpha2 is wrong.\n\n```\n\n        Return True if the group self is a normal subgroup of other.\n\n        EXAMPLES:\n            sage: G = PermutationGroup(['(1,2,3)(4,5)'])\n            sage: H = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\n            sage: G.is_normal(H)\n            True\n```\n\n(Aside: isn't it more natural to let H be a subgroup of G instead of the other way around?)\n\nG is not a normal subgroup of H since conjugation by (1,2,3,4,5) does not map G to G.\n\nOther example:\n\n```\nsage: G = SymmetricGroup(3); G.1\n(1,2)\nsage: H = G.subgroup( [ G.1 ] )\nsage: H.is_normal(G)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3442\n\n",
+    "body": "Assignee: joyner\n\nKeywords: editor_mhansen\n\nThe example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.py` in sage-3.0.3.alpha2 is wrong.\n\n```\n\n        Return True if the group self is a normal subgroup of other.\n\n        EXAMPLES:\n            sage: G = PermutationGroup(['(1,2,3)(4,5)'])\n            sage: H = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\n            sage: G.is_normal(H)\n            True\n```\n\n(Aside: isn't it more natural to let H be a subgroup of G instead of the other way around?)\n\nG is not a normal subgroup of H since conjugation by (1,2,3,4,5) does not map G to G.\n\nOther example:\n\n```\nsage: G = SymmetricGroup(3); G.1\n(1,2)\nsage: H = G.subgroup( [ G.1 ] )\nsage: H.is_normal(G)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3442\n\n",
+    "closed_at": "2008-07-03T03:24:23Z",
     "created_at": "2008-06-16T22:37:41Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "is_normal for permutation groups gives wrong answer",
+    "title": "[with patch, positive review] is_normal for permutation groups gives wrong answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3442",
     "user": "https://github.com/wjp"
 }
 ```
 Assignee: joyner
+
+Keywords: editor_mhansen
 
 The example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.py` in sage-3.0.3.alpha2 is wrong.
 

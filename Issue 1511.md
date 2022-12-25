@@ -1,21 +1,22 @@
-# Issue 1511: Export 3d objects in jmol format
+# Issue 1511: [with patch, positive review] Export 3d objects in jmol format
 
 archive/issues_001511.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nhttp://jmol.sourceforge.net/ may be a promising answer to 3d graphics in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1511\n\n",
+    "body": "Assignee: @robertwb\n\nhttp://jmol.sourceforge.net/ may be a promising answer to 3d graphics in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1511\n\n",
+    "closed_at": "2007-12-16T00:56:33Z",
     "created_at": "2007-12-14T19:58:09Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Export 3d objects in jmol format",
+    "title": "[with patch, positive review] Export 3d objects in jmol format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1511",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 http://jmol.sourceforge.net/ may be a promising answer to 3d graphics in Sage. 
 

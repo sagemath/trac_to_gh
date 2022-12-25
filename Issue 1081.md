@@ -4,6 +4,7 @@ archive/issues_001081.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nHi,\n\nIt's very important to update the deps file so that upgrading 10.5 works now.\n\nUse this file:\n\nhttp://sagemath.org/packages/standard/deps\n\nThis ticket is mainly for Michael Abshoff, the release manager for this release. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1081\n\n",
+    "closed_at": "2007-11-06T21:49:52Z",
     "created_at": "2007-11-03T17:26:52Z",
     "labels": [
         "component: packages: standard",

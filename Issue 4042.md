@@ -1,9 +1,10 @@
-# Issue 4042: libm4ri-20080901 fails to build on Itanium Linux
+# Issue 4042: [with spkg, positive review] libm4ri-20080903 fails to build on Itanium Linux
 
 archive/issues_004042.json:
 ```json
 {
     "body": "Assignee: @malb\n\nOne example session:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4042\n\n",
+    "closed_at": "2008-09-03T23:45:52Z",
     "created_at": "2008-09-02T21:00:38Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004042.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "libm4ri-20080901 fails to build on Itanium Linux",
+    "title": "[with spkg, positive review] libm4ri-20080903 fails to build on Itanium Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4042",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

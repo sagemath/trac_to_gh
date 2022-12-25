@@ -3,7 +3,8 @@
 archive/issues_000555.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nIf you have two branches, and you edit libcsage.dylib in one, then sage -b to the other, it doesn't (always? ever?) copy over the appropriate libcsage.dylib to /sage/local/lib.\n\nIssue created by migration from https://trac.sagemath.org/ticket/555\n\n",
+    "body": "Assignee: @craigcitro\n\nIf you have two branches, and you edit libcsage.dylib in one, then sage -b to the other, it doesn't (always? ever?) copy over the appropriate libcsage.dylib to /SAGE_ROOT/local/lib.\n\nIssue created by migration from https://trac.sagemath.org/ticket/555\n\n",
+    "closed_at": "2007-09-03T21:15:21Z",
     "created_at": "2007-09-01T18:18:47Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +19,7 @@ archive/issues_000555.json:
 ```
 Assignee: @craigcitro
 
-If you have two branches, and you edit libcsage.dylib in one, then sage -b to the other, it doesn't (always? ever?) copy over the appropriate libcsage.dylib to /sage/local/lib.
+If you have two branches, and you edit libcsage.dylib in one, then sage -b to the other, it doesn't (always? ever?) copy over the appropriate libcsage.dylib to /SAGE_ROOT/local/lib.
 
 Issue created by migration from https://trac.sagemath.org/ticket/555
 

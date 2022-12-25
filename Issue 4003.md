@@ -1,16 +1,17 @@
-# Issue 4003: [with patch, needs review] increase coverage of sage/interfaces/maple.py
+# Issue 4003: [with patch, positve review] increase coverage of sage/interfaces/maple.py
 
 archive/issues_004003.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4003\n\n",
+    "closed_at": "2008-08-30T18:25:34Z",
     "created_at": "2008-08-30T17:59:12Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] increase coverage of sage/interfaces/maple.py",
+    "title": "[with patch, positve review] increase coverage of sage/interfaces/maple.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4003",
     "user": "https://github.com/mwhansen"

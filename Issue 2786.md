@@ -1,15 +1,16 @@
-# Issue 2786: [with spkg] update zn_poly to 0.8
+# Issue 2786: [with spkg, positive review] update zn_poly to 0.8
 
 archive/issues_002786.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI have made an spkg for `zn_poly` 0.8, please see attached.\n\nCurrently spkg-install runs a test suite (about 10 minutes). This should be disabled in the deployed version. I wasn't quite sure of the right way to do that.\n\nIt may or may not be necessary to touch files in the sage library that depend on `zn_poly` and rebuild:\n\n```\ntouch devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx\ntouch devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob/*.cpp\n```\n\nSo far I have positive build/tune/test reports from mhansen (Ubuntu Gutsy, 64-bit), wstein (osx 10.5.2), ddrake (Ubuntu Hardy, 32 bit), and myself (intel 64 mac OSX 10.4.11, ppc 64 mac OSX 10.4.11, AMD64 linux).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2786\n\n",
+    "closed_at": "2008-04-03T15:55:38Z",
     "created_at": "2008-04-03T02:29:11Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg] update zn_poly to 0.8",
+    "title": "[with spkg, positive review] update zn_poly to 0.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2786",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

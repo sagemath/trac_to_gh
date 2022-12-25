@@ -3,7 +3,8 @@
 archive/issues_009359.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @rishikesha @jdemeyer\n\nKeywords: doctest\n\nThis patch removes the outdated file sage.rings.number_field.totallyreal_dsage (DSage was removed months ago), adds several number field files to the reference manual, and adds a number of missing doctests. Together with the independent but complementary patch at #9336 this gets doctest coverage up to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9359\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @rishikesha @jdemeyer\n\nKeywords: doctest\n\nThis patch does the following:\n\n* Removes the outdated file sage.rings.number_field.totallyreal_dsage (DSage was removed months ago).\n\n* ReSTifies several number field files and adds them to the reference manual.\n\n* Adds doctests to 38 functions and removes 21 functions that are deprecated or duplicate, getting doctest coverage for number fields up to 100%.\n\nDependencies: #7883, #9898, #9753, #9764, #8334\n\nIssue created by migration from https://trac.sagemath.org/ticket/9359\n\n",
+    "closed_at": "2010-09-29T03:49:07Z",
     "created_at": "2010-06-28T16:50:54Z",
     "labels": [
         "component: number fields"
@@ -21,7 +22,15 @@ CC:  @rishikesha @jdemeyer
 
 Keywords: doctest
 
-This patch removes the outdated file sage.rings.number_field.totallyreal_dsage (DSage was removed months ago), adds several number field files to the reference manual, and adds a number of missing doctests. Together with the independent but complementary patch at #9336 this gets doctest coverage up to 100%.
+This patch does the following:
+
+* Removes the outdated file sage.rings.number_field.totallyreal_dsage (DSage was removed months ago).
+
+* ReSTifies several number field files and adds them to the reference manual.
+
+* Adds doctests to 38 functions and removes 21 functions that are deprecated or duplicate, getting doctest coverage for number fields up to 100%.
+
+Dependencies: #7883, #9898, #9753, #9764, #8334
 
 Issue created by migration from https://trac.sagemath.org/ticket/9359
 

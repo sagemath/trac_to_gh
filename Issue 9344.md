@@ -4,6 +4,7 @@ archive/issues_009344.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe is a bug in the matrix constructor. If the entries are given by a method, the output matrix is always square of dimension ncols\n\n```\nsage: matrix(QQ, 1, 3, lambda x,y: x)\n[0 0 0]\n[1 1 1]\n[2 2 2]\nsage: sage: matrix(QQ, 3, 1, lambda x,y: x)\n[0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9344\n\n",
+    "closed_at": "2010-07-20T09:30:38Z",
     "created_at": "2010-06-26T10:13:59Z",
     "labels": [
         "component: algebra",

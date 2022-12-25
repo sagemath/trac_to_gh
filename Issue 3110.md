@@ -1,9 +1,10 @@
-# Issue 3110: [with patch, needs review] rare pbuild dependency bug
+# Issue 3110: [with patch, positive review] rare pbuild dependency bug
 
 archive/issues_003110.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\nThis patch corrects a bug in pbuild dependency checking that does not correctly register the pxd file dependency for a pyx file if no other files cimport the file (rare).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3110\n\n",
+    "closed_at": "2008-05-06T20:02:16Z",
     "created_at": "2008-05-06T04:33:11Z",
     "labels": [
         "component: pbuild",
@@ -11,7 +12,7 @@ archive/issues_003110.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] rare pbuild dependency bug",
+    "title": "[with patch, positive review] rare pbuild dependency bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3110",
     "user": "https://github.com/garyfurnish"

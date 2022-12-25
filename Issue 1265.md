@@ -1,16 +1,17 @@
-# Issue 1265: [with patch] documentation typo
+# Issue 1265: [with patch, with positive review] documentation typo
 
 archive/issues_001265.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1265\n\n",
+    "closed_at": "2007-12-01T18:32:53Z",
     "created_at": "2007-11-25T09:13:49Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] documentation typo",
+    "title": "[with patch, with positive review] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1265",
     "user": "https://github.com/zimmermann6"

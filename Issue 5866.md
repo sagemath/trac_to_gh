@@ -1,22 +1,23 @@
-# Issue 5866: Fix freetype build on systems where make is not GNU make.
+# Issue 5866: [with patch, positive review] Fix freetype build on systems where make is not GNU make.
 
 archive/issues_005866.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nChange 'make' to ${MAKE} - is the recommended way to recursively invoke make to ensure that the subordinate make is the same as the parent make (and also ensures that the two make instances will communicate on things like '-jX').\n\nExplicitly export the parent make into the configure script.\n\nThese changes avoid problems on systems like FreeBSD where make is not GNU make.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5866\n\n",
+    "body": "Assignee: @mwhansen\n\nChange 'make' to ${MAKE} - is the recommended way to recursively invoke make to ensure that the subordinate make is the same as the parent make (and also ensures that the two make instances will communicate on things like '-jX').\n\nExplicitly export the parent make into the configure script.\n\nThese changes avoid problems on systems like FreeBSD where make is not GNU make.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5866\n\n",
+    "closed_at": "2009-07-02T22:08:33Z",
     "created_at": "2009-04-23T06:51:35Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Fix freetype build on systems where make is not GNU make.",
+    "title": "[with patch, positive review] Fix freetype build on systems where make is not GNU make.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5866",
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Change 'make' to ${MAKE} - is the recommended way to recursively invoke make to ensure that the subordinate make is the same as the parent make (and also ensures that the two make instances will communicate on things like '-jX').
 

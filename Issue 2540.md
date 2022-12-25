@@ -1,16 +1,17 @@
-# Issue 2540: dsage doctest fails in 2.10.4.alpha0
+# Issue 2540: [with patch, positive review] add missing #long in dsage/tests/testdoc.py
 
 archive/issues_002540.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nPeople have been reporting dsage doctest failures which have been caused because the necessary \"long time\" flags were not set. \nAttached is a patch which fixes this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2540\n\n",
+    "closed_at": "2008-03-16T02:31:49Z",
     "created_at": "2008-03-16T02:17:22Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "dsage doctest fails in 2.10.4.alpha0",
+    "title": "[with patch, positive review] add missing #long in dsage/tests/testdoc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2540",
     "user": "https://github.com/yqiang"

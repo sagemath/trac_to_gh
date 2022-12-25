@@ -1,22 +1,23 @@
-# Issue 5620: Digraph plotting bug
+# Issue 5620: [with patch, positive review] Digraph plotting bug
 
 archive/issues_005620.json:
 ```json
 {
-    "body": "Assignee: ekirkman\n\nPointed out by rlm-- digraphs can have two paths between a pair of vertices without being multiple edged graphs.  So the graph\n\n```\nsage: G = DiGraph({1:{2: 'h'}, 2:{1:'g'}})\n```\nis drawn with only one straight-line arrow even though there are two edges.  Basically, this will just require a quick check for this case and then treating such a graph the same as a multidigraph.\n\nAlso, need to update multiple_edges and loops function calls in graph_plot.py to match the new function definitions has_multiple_edges and has_loops in graph.py\n\nPretty straightforward stuff... I should have a patch up in 3, 2, 1...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5620\n\n",
+    "body": "Assignee: @rlmill\n\nPointed out by rlm-- digraphs can have two paths between a pair of vertices without being multiple edged graphs.  So the graph\n\n```\nsage: G = DiGraph({1:{2: 'h'}, 2:{1:'g'}})\n```\nis drawn with only one straight-line arrow even though there are two edges.  Basically, this will just require a quick check for this case and then treating such a graph the same as a multidigraph.\n\nAlso, need to update multiple_edges and loops function calls in graph_plot.py to match the new function definitions has_multiple_edges and has_loops in graph.py\n\nPretty straightforward stuff... I should have a patch up in 3, 2, 1...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5620\n\n",
+    "closed_at": "2009-04-01T00:46:13Z",
     "created_at": "2009-03-27T22:34:49Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Digraph plotting bug",
+    "title": "[with patch, positive review] Digraph plotting bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5620",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
-Assignee: ekirkman
+Assignee: @rlmill
 
 Pointed out by rlm-- digraphs can have two paths between a pair of vertices without being multiple edged graphs.  So the graph
 

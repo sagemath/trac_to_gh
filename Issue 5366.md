@@ -1,16 +1,17 @@
-# Issue 5366: graphplot arrowheads are hidden in multi-edge digraphs
+# Issue 5366: [with patch, positive review] graphplot arrowheads are hidden in multi-edge digraphs
 
 archive/issues_005366.json:
 ```json
 {
     "body": "Assignee: ekirkman, rlm\n\nKristin Lauter pointed out that the following input:\n\n```\nsage: S = SupersingularModule(389)\nsage: D = DiGraph(S.hecke_matrix(2))\nsage: D.plot(vertex_size=50).show(figsize=10)\n```\nproduces a graph where the arrowheads of some edges are hidden by the vertex.  (See attachment t2.png for output).\n\nThis is going to be a one-ish line fix that I can post as soon as I'm done building 3.3.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5366\n\n",
+    "closed_at": "2009-02-28T15:57:48Z",
     "created_at": "2009-02-24T23:53:18Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "graphplot arrowheads are hidden in multi-edge digraphs",
+    "title": "[with patch, positive review] graphplot arrowheads are hidden in multi-edge digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5366",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"

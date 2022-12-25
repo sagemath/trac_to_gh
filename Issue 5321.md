@@ -1,15 +1,16 @@
-# Issue 5321: [with patch, needs review] follow up to #5287
+# Issue 5321: [with patch, positive review] follow up to #5287: improve mq.SR usability even more
 
 archive/issues_005321.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @williamstein\n\nThe attached patch addresses some outstanding referee remarks from #5287.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5321\n\n",
+    "closed_at": "2009-06-13T19:35:55Z",
     "created_at": "2009-02-20T11:51:37Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] follow up to #5287",
+    "title": "[with patch, positive review] follow up to #5287: improve mq.SR usability even more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5321",
     "user": "https://github.com/malb"

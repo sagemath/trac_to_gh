@@ -1,16 +1,18 @@
-# Issue 6990: readline tab completion has an extra space appended
+# Issue 6990: [with spkg, positive review] readline tab completion has an extra space appended
 
 archive/issues_006990.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @kcrisman\n\nThis is the same problem we had in #2469, which apparently again crops up with the upgrade to readline-6.0.\n\nI get it with a fresh compile of 4.1.2.alpha2 on ubuntu 9.04.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6990\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kcrisman\n\nThis is the same symtom we had in #2469 (but different problem now), which apparently again crops up with the upgrade to readline-6.0.\n\nI get it with a fresh compile of 4.1.2.alpha2 on ubuntu 9.04.\n\nA new spkg is here: http://sage.math.washington.edu/home/jason/python-2.6.2.p2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6990\n\n",
+    "closed_at": "2009-10-04T18:04:20Z",
     "created_at": "2009-09-22T18:09:11Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "readline tab completion has an extra space appended",
+    "title": "[with spkg, positive review] readline tab completion has an extra space appended",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6990",
     "user": "https://github.com/jasongrout"
@@ -20,9 +22,11 @@ Assignee: mabshoff
 
 CC:  @kcrisman
 
-This is the same problem we had in #2469, which apparently again crops up with the upgrade to readline-6.0.
+This is the same symtom we had in #2469 (but different problem now), which apparently again crops up with the upgrade to readline-6.0.
 
 I get it with a fresh compile of 4.1.2.alpha2 on ubuntu 9.04.
+
+A new spkg is here: http://sage.math.washington.edu/home/jason/python-2.6.2.p2.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6990
 

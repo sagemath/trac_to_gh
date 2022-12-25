@@ -1,16 +1,17 @@
-# Issue 6659: cores() is broken for some digraphs, and is *way* too slow
+# Issue 6659: [with patch, positive review] cores() is broken for some digraphs, and is *way* too slow
 
 archive/issues_006659.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill @rbeezer hartke\n\nHere is a patch, based on the networkx code, which implements some of the optimizations noted in the paper referenced in the networkx documentation.  This leads to what I think are asymptotic speedups.\n\nAs for the bug, before, the doctest added would fail from an error in the networkx code.  Now it does not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6659\n\n",
+    "closed_at": "2009-08-25T03:04:27Z",
     "created_at": "2009-07-30T08:38:51Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cores() is broken for some digraphs, and is *way* too slow",
+    "title": "[with patch, positive review] cores() is broken for some digraphs, and is *way* too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6659",
     "user": "https://github.com/jasongrout"

@@ -1,16 +1,17 @@
-# Issue 7481: upgrade phcpack optional package to version 2.3.51
+# Issue 7481: upgrade phcpack optional package to version 2.3.53
 
 archive/issues_007481.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: phcpack, numerical, polynomials\n\nphcpack has had many improvements since the last sage package was made.  The following spkg upgrades to the latest version, and supports intel binaries on macs for OS X 10.5 and higher. \n\nhttp://sage.math.washington.edu/home/mhampton/phc-2.3.51.p0.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7481\n\n",
+    "closed_at": "2010-01-04T02:05:58Z",
     "created_at": "2009-11-17T18:00:49Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "upgrade phcpack optional package to version 2.3.51",
+    "title": "upgrade phcpack optional package to version 2.3.53",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7481",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

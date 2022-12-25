@@ -1,9 +1,10 @@
-# Issue 6818: [with patch; needs review] maxima interface gets dramatically slower over time
+# Issue 6818: [with patch, positive review] maxima interface gets dramatically slower over time
 
 archive/issues_006818.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you do a few hundred calls to the maxima interface, it gets way way slower.\n\n```\nsage: timeit(\"str(maxima.eval('1+2'))\")\n5 loops, best of 3: 758 \u00b5s per loop\nsage: timeit(\"str(maxima.eval('1+2'))\")\n625 loops, best of 3: 1.22 ms per loop\nsage: timeit(\"str(maxima.eval('1+2'))\")\n125 loops, best of 3: 2.98 ms per loop\nsage: timeit(\"str(maxima.eval('1+2'))\")\n125 loops, best of 3: 3.97 ms per loop\n```\n\nIt turns out that this is caused by computation of the maxima input prompt number, which uses the following \"clever\" algorithm to compute \"n+1\":\n\n```\n(defmfun makelabel (x)\n  (when (and $dskuse (not $nolabels) (> (incf dcount) $filesize))\n    (setq dcount 0)\n    (dsksave))\n  (setq linelable ($concat '|| x $linenum))\n  (unless $nolabels\n    (when (or (null (cdr $labels))\n              (when (member linelable (cddr $labels) :test #'equal)\n                (setf $labels (delete linelable $labels :count 1 :test #'eq)) t)\n              (not (eq linelable (cadr $labels))))\n      (setq $labels (cons (car $labels) (cons linelable (cdr $labels))))))\n  linelable)\n```\n\nMore precisely, this code \"checks\nthat the list containing all labels does not contain the new label\nwhich it generates. After you create 2*35150 labels, this takes longer than when maxima starts.\", according to Andrej Vodopivec who tracked this down and told us a simple fix.  Put:\n\n```\nnolabels:true;\n```\n\nat the beginning of our Maxima session.  This is fine for Sage, since Sage doesn't use the labels in any way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6818\n\n",
+    "body": "Assignee: @williamstein\n\nIf you do a few hundred calls to the maxima interface, it gets way way slower.\n\n```\nsage: timeit(\"str(maxima.eval('1+2'))\")\n5 loops, best of 3: 758 \u00b5s per loop\nsage: timeit(\"str(maxima.eval('1+2'))\")\n625 loops, best of 3: 1.22 ms per loop\nsage: timeit(\"str(maxima.eval('1+2'))\")\n125 loops, best of 3: 2.98 ms per loop\nsage: timeit(\"str(maxima.eval('1+2'))\")\n125 loops, best of 3: 3.97 ms per loop\n```\n\nIt turns out that this is caused by computation of the maxima input prompt number, which uses the following \"clever\" algorithm to compute \"n+1\":\n\n```\n(defmfun makelabel (x)\n  (when (and $dskuse (not $nolabels) (> (incf dcount) $filesize))\n    (setq dcount 0)\n    (dsksave))\n  (setq linelable ($concat '|| x $linenum))\n  (unless $nolabels\n    (when (or (null (cdr $labels))\n              (when (member linelable (cddr $labels) :test #'equal)\n                (setf $labels (delete linelable $labels :count 1 :test #'eq)) t)\n              (not (eq linelable (cadr $labels))))\n      (setq $labels (cons (car $labels) (cons linelable (cdr $labels))))))\n  linelable)\n```\n\nMore precisely, this code \"checks\nthat the list containing all labels does not contain the new label\nwhich it generates. After you create 2*35150 labels, this takes longer than when maxima starts.\", according to Andrej Vodopivec and Robert Dodier who (independently) tracked this down and told us a simple fix.  Put:\n\n```\nnolabels:true;\n```\n\nat the beginning of our Maxima session.  This is fine for Sage, since Sage doesn't use the labels in any way.\n\nNOTE: This is the same problem as #4731, so close that one too when this is closed. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6818\n\n",
+    "closed_at": "2009-08-25T01:17:06Z",
     "created_at": "2009-08-24T14:43:39Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_006818.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch; needs review] maxima interface gets dramatically slower over time",
+    "title": "[with patch, positive review] maxima interface gets dramatically slower over time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6818",
     "user": "https://github.com/williamstein"
@@ -51,13 +52,16 @@ It turns out that this is caused by computation of the maxima input prompt numbe
 
 More precisely, this code "checks
 that the list containing all labels does not contain the new label
-which it generates. After you create 2*35150 labels, this takes longer than when maxima starts.", according to Andrej Vodopivec who tracked this down and told us a simple fix.  Put:
+which it generates. After you create 2*35150 labels, this takes longer than when maxima starts.", according to Andrej Vodopivec and Robert Dodier who (independently) tracked this down and told us a simple fix.  Put:
 
 ```
 nolabels:true;
 ```
 
 at the beginning of our Maxima session.  This is fine for Sage, since Sage doesn't use the labels in any way.
+
+NOTE: This is the same problem as #4731, so close that one too when this is closed. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6818
 

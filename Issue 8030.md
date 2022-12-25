@@ -1,9 +1,10 @@
-# Issue 8030: Strong generating system work only for transitive group
+# Issue 8030: Strong generating system returns heavy error for non transitive group
 
 archive/issues_008030.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  sage-combinat\n\nMy fault from #6647\n\nThe method from Gap work only for transitive group.\n\n```\nsage: G = PermutationGroup([[(3,4)]])\nsage: G.strong_generating_system()\n[[()], [()], [()], [()]]\nsage: G.strong_generating_system(base_of_group=[3,1,2,4])\n[[(), (3,4)], [()], [()], [()]]\n```\n\nIf the first position is not moved by the permutation Group. Errors appears...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8030\n\n",
+    "closed_at": "2010-06-03T04:18:44Z",
     "created_at": "2010-01-21T19:37:01Z",
     "labels": [
         "component: group theory",
@@ -11,7 +12,7 @@ archive/issues_008030.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
-    "title": "Strong generating system work only for transitive group",
+    "title": "Strong generating system returns heavy error for non transitive group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8030",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"

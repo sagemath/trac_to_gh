@@ -4,6 +4,7 @@ archive/issues_008613.json:
 ```json
 {
     "body": "Assignee: somebody\n\nOn the following example, tab completion suggests ``sum``, which is not an attribute of ``R``.\n\n```\nsage: R = QQ['t']\nsage: R.su       \nR.sum                               R.summation\nR.summation_from_element_class_add             \nsage: R.sum                                    \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/marc/co/sage-4.3.4/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5120)()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2638)()                                                                             \n\nAttributeError: 'PolynomialRing_field' object has no attribute 'sum'\nsage: 'sum' in R.__dir__()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8613\n\n",
+    "closed_at": "2011-04-11T14:59:48Z",
     "created_at": "2010-03-26T21:46:19Z",
     "labels": [
         "component: categories",

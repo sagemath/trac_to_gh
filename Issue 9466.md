@@ -3,7 +3,8 @@
 archive/issues_009466.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @koffie ruckers\n\n```\nsage: FiniteField(3)(2).sqrt(all = True)\n[]\n\nsage: 2.sqrt(extend = False, all = True)\nValueError: square root of 2 not an integer\n\nsage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)\nValueError: self must be a square\n\nsage: _.<a>=FiniteField(9)\nsage: a.sqrt(extend = False, all = True)\nValueError: must be a perfect square.\n```\n\nAt sage days 23 we agreed that square root with all=True should not raise an error. If no square roots exist, then it should return an empty list.\n\nRight now, it returns an empty list for elements of small prime finite fields, but raises an error for integers, elements of large prime finite fields, and elements of non-prime finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9466\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @koffie ruckers\n\nKeywords: sd23 sd51 sqrt all\n\nWith Sage 4.4.4 and no relevant patches, I got the following:\n\n```\nsage: FiniteField(3)(2).sqrt(all = True)\n[]\n\nsage: 2.sqrt(extend = False, all = True)\nValueError: square root of 2 not an integer\n\nsage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)\nValueError: self must be a square\n\nsage: _.<a>=FiniteField(9)\nsage: a.sqrt(extend = False, all = True)\nValueError: must be a perfect square.\n```\n\nAt sage days 23 we agreed that square root with all=True should not raise an error. If no square roots exist, then it should return an empty list.\n\nRight now, it returns an empty list for elements of small prime finite fields, but raises an error for integers, elements of large prime finite fields, and elements of non-prime finite fields.\n\napply\n\n* [attachment:9466.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9466\n\n",
+    "closed_at": "2013-08-20T12:57:53Z",
     "created_at": "2010-07-09T13:18:25Z",
     "labels": [
         "component: algebra",
@@ -19,6 +20,10 @@ archive/issues_009466.json:
 Assignee: @aghitza
 
 CC:  @koffie ruckers
+
+Keywords: sd23 sd51 sqrt all
+
+With Sage 4.4.4 and no relevant patches, I got the following:
 
 ```
 sage: FiniteField(3)(2).sqrt(all = True)
@@ -38,6 +43,10 @@ ValueError: must be a perfect square.
 At sage days 23 we agreed that square root with all=True should not raise an error. If no square roots exist, then it should return an empty list.
 
 Right now, it returns an empty list for elements of small prime finite fields, but raises an error for integers, elements of large prime finite fields, and elements of non-prime finite fields.
+
+apply
+
+* [attachment:9466.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9466
 

@@ -3,7 +3,8 @@
 archive/issues_009866.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  simonking\n\nin the thread [How to deal with GAP's machine dependent random generator?] on sage-devel Simon King mentioned that GAP own random source dependes on endianness of the machine.\nWhile Sage sort of takes care of this in misc/randstate.pyx,\nit still does not fix GAP internals. So, to make it good and proper, we essentially add the fix in misc/randstate.pyx to GAPROOT/src/integer.c, and remove it from misc/randstate.pyx\nThe updated gap spkg is here:\n\nhttp://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9867\n\n",
+    "body": "Assignee: joyner\n\nCC:  simonking\n\nin the thread [How to deal with GAP's machine dependent random generator?] on sage-devel Simon King mentioned that GAP own random source dependes on endianness of the machine.\nWhile Sage sort of takes care of this in misc/randstate.pyx,\nit still does not fix GAP internals. So, to make it good and proper, we essentially add the fix in misc/randstate.pyx to GAPROOT/src/integer.c, and remove it from misc/randstate.pyx\nThe updated gap spkg is here:\n\nhttp://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p5.spkg\n\nSo one needs to install this spkg and apply the patch attached to the ticket. I don't seem to have access to a 64-bit big-endian system, so it would be great to test it there, just in case...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9867\n\n",
+    "closed_at": "2012-10-05T08:52:31Z",
     "created_at": "2010-09-07T13:04:14Z",
     "labels": [
         "component: group theory",
@@ -26,6 +27,9 @@ it still does not fix GAP internals. So, to make it good and proper, we essentia
 The updated gap spkg is here:
 
 http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p5.spkg
+
+So one needs to install this spkg and apply the patch attached to the ticket. I don't seem to have access to a 64-bit big-endian system, so it would be great to test it there, just in case...
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9867
 

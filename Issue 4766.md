@@ -4,10 +4,10 @@ archive/issues_004766.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  mvngu\n\n```\n20:11 < wstein> I just noticed that the doctesting for parallel? is very confusing.\n20:11 < wstein> It has no examples, and doesn't even seem right.\n20:12 < wstein> The examples are in the __init__ method.\n20:12 < wstein> Moreover, the docstring doesn't document that one can give an integer\n20:12 < wstein> as input, which defaults to pyprocessing with that many cores.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4766\n\n",
+    "closed_at": "2010-02-01T09:00:04Z",
     "created_at": "2008-12-12T04:16:06Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "parallel? is lame and incomplete",

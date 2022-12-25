@@ -4,6 +4,7 @@ archive/issues_002558.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nunit tests appear to be failing on linux 32/64bit. This seems to be a twisted trial issue and I'm working on a fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2558\n\n",
+    "closed_at": "2008-03-16T21:54:23Z",
     "created_at": "2008-03-16T21:48:00Z",
     "labels": [
         "component: dsage",

@@ -4,6 +4,7 @@ archive/issues_007588.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nReplace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut.\n\nThis would be way more efficient than the current ( well, under review at the moment ) implementation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7588\n\n",
+    "closed_at": "2009-12-04T18:34:28Z",
     "created_at": "2009-12-03T09:02:22Z",
     "labels": [
         "component: graph theory"

@@ -4,6 +4,7 @@ archive/issues_007508.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nReported by Alex Raichev on sage-support:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: X= var('x,y,z')\nsage: f= function('f',*X); f\nf(x, y, z)\nsage: d= {}\nsage: for l in [1..2]:\n....:     for s in UnorderedTuples(X,l):\n....:         print diff(f,s)\n....:         d[diff(f,s)]= 69\n....:\nD[0](f)(x, y, z)\nD[1](f)(x, y, z)\nD[2](f)(x, y, z)\nD[0, 0](f)(x, y, z)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call\nlast)\n...\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/\nexpression_conversions.py in derivative(self, ex, operator)\n    344             NotImplementedError: derivative\n    345         \"\"\"\n--> 346         raise NotImplementedError, \"derivative\"  \n    347\n    348     def arithmetic(self, ex, operator):\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nNotImplementedError: derivative\n```\n\nThis is another form of the problem I couldn't fix in #6243 and #6851.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7508\n\n",
+    "closed_at": "2009-12-10T14:22:35Z",
     "created_at": "2009-11-21T12:56:52Z",
     "labels": [
         "component: symbolics",

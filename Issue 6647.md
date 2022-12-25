@@ -1,15 +1,16 @@
-# Issue 6647: Permutation Group improvements
+# Issue 6647: [with patch, positive review] Permutation Group improvements
 
 archive/issues_006647.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: permutationgroup, orbit, stabilizer, transversal\n\nAdd transversal, orbit, stabilizer to PermutationGroup sage object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6647\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: permutationgroup, orbit, stabilizer, transversal, strong generating system\n\nAdd transversals, orbit, stabilizer and strong generating system methods for PermutationGroup.\n\ndepends on #6620\n\nIssue created by migration from https://trac.sagemath.org/ticket/6647\n\n",
+    "closed_at": "2009-08-25T17:47:53Z",
     "created_at": "2009-07-28T12:10:21Z",
     "labels": [
         "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Permutation Group improvements",
+    "title": "[with patch, positive review] Permutation Group improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6647",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
@@ -19,9 +20,11 @@ Assignee: nborie
 
 CC:  sage-combinat
 
-Keywords: permutationgroup, orbit, stabilizer, transversal
+Keywords: permutationgroup, orbit, stabilizer, transversal, strong generating system
 
-Add transversal, orbit, stabilizer to PermutationGroup sage object.
+Add transversals, orbit, stabilizer and strong generating system methods for PermutationGroup.
+
+depends on #6620
 
 Issue created by migration from https://trac.sagemath.org/ticket/6647
 

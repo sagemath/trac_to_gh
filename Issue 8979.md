@@ -3,10 +3,12 @@
 archive/issues_008979.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThere is a small spelling mistake in the ode documentation:\n\nThe default algorithm if ``rkf45``.\n\nInstead of.\n\nThe default algorithm is ``rkf45``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8979\n\n",
+    "body": "Assignee: tba\n\nThere is a small spelling mistake in the ode documentation:\n\nThe default algorithm if ``rkf45``.\n\nInstead of.\n\nThe default algorithm is ``rkf45``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8979\n\n",
+    "closed_at": "2010-05-19T07:51:11Z",
     "created_at": "2010-05-16T16:57:58Z",
     "labels": [
         "component: documentation",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
@@ -16,7 +18,7 @@ archive/issues_008979.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/Moredread"
 }
 ```
-Assignee: mvngu
+Assignee: tba
 
 There is a small spelling mistake in the ode documentation:
 

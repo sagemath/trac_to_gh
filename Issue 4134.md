@@ -1,17 +1,17 @@
-# Issue 4134: [with patch, needs review] notebook -- user.py has nodoctest flag
+# Issue 4134: [with patch, positive review] notebook -- user.py has nodoctest flag
 
 archive/issues_004134.json:
 ```json
 {
     "body": "Assignee: boothby\n\nuser.py has a number of doctests\n\nIssue created by migration from https://trac.sagemath.org/ticket/4134\n\n",
+    "closed_at": "2008-09-19T03:26:36Z",
     "created_at": "2008-09-16T07:48:29Z",
     "labels": [
         "component: notebook",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] notebook -- user.py has nodoctest flag",
+    "title": "[with patch, positive review] notebook -- user.py has nodoctest flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4134",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

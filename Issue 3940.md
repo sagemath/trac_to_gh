@@ -1,16 +1,16 @@
-# Issue 3940: Add a warnings framework to Sage
+# Issue 3940: [with patch, needs work] Add a warnings framework to Sage
 
 archive/issues_003940.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe builtin python warnings framework allows filtering on subclasses of warnings.  This would be useful to make a sage warnings framework, with different types of sage-specific warnings.\n\nHere, I've added a directory and a basic file with a NumericalPrecisionWarning class that could be triggered, for example, in the eigenvalue computations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3940\n\n",
+    "closed_at": "2021-10-04T23:44:13Z",
     "created_at": "2008-08-24T00:09:30Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Add a warnings framework to Sage",
+    "title": "[with patch, needs work] Add a warnings framework to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3940",
     "user": "https://github.com/jasongrout"

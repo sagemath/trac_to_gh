@@ -4,6 +4,7 @@ archive/issues_008846.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIt currently has many of the same problems as Solaris does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8846\n\n",
+    "closed_at": "2010-05-25T06:16:27Z",
     "created_at": "2010-05-03T04:58:06Z",
     "labels": [
         "component: porting: cygwin",

@@ -1,16 +1,17 @@
-# Issue 6562: [with patch, needs review] Unicode support in TextCells
+# Issue 6562: Unicode support in TextCells
 
 archive/issues_006562.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: textcell unicode\n\nIn a TextCell (shift+click on the blue line) I write some letters:\n\n http://www.math.bme.hu/~morap/sage_textcell1.png\n\nafter I save it. It looks fine:\n\n http://www.math.bme.hu/~morap/sage_textcell2.png\n\nbut when I double click on it to edit, then I get:\n\n http://www.math.bme.hu/~morap/sage_textcell3.png\n\nThat's the problem. I could not find out what (Python or TinyMCE) converts the special characters to html entities (for example \u00e9 to &eacute;), but it does not convert all of them.\n\nThe patch solves the problem. Without it the html code looks like:\n\n http://www.math.bme.hu/~morap/sage_textcell4.png\n\nusing the patch everything's fine. The html code after applying the patch:\n\n http://www.math.bme.hu/~morap/sage_textcell5.png\n\nIssue created by migration from https://trac.sagemath.org/ticket/6562\n\n",
+    "closed_at": "2009-08-26T20:02:49Z",
     "created_at": "2009-07-19T18:54:53Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] Unicode support in TextCells",
+    "title": "Unicode support in TextCells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6562",
     "user": "https://trac.sagemath.org/admin/accounts/users/mora"

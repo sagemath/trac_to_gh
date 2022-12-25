@@ -1,23 +1,23 @@
-# Issue 1800: bug with RealIntervalField / MPFI
+# Issue 1800: [with patch, with positive review] bug with RealIntervalField / MPFI
 
 archive/issues_001800.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\n```\nsage: a = factorial(100)/exp(2)\nsage: bits = 427; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n7.9228162514264337593543950336000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e28\nsage: bits = 428; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1800\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: a = factorial(100)/exp(2)\nsage: bits = 427; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n7.9228162514264337593543950336000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e28\nsage: bits = 428; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1800\n\n",
+    "closed_at": "2008-01-19T19:56:02Z",
     "created_at": "2008-01-17T06:08:25Z",
     "labels": [
         "component: numerical",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "bug with RealIntervalField / MPFI",
+    "title": "[with patch, with positive review] bug with RealIntervalField / MPFI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1800",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: jkantor
+Assignee: cwitty
 
 ```
 sage: a = factorial(100)/exp(2)

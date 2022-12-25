@@ -1,9 +1,10 @@
-# Issue 3643: re-enable dsage/testdoc.py
+# Issue 3643: [with patch, positive review] re-enable dsage/testdoc.py
 
 archive/issues_003643.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nI disabled dsage/testdoc.py for sage-3.0.5, since that system for doctesting dsage is BROKEN.\nFor example\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py\n********************************************************************\nFile \"/home/was/build/sage-3.0.4/tmp/testdoc.py\", line 14:\n   sage: a\nExpected:\n   5\nGot:\n   No output.\n```\nand this is just a typical timing issue.  We have unit tests after all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3643\n\n",
+    "body": "Assignee: @garyfurnish\n\nI disabled dsage/testdoc.py for sage-3.0.5, since that system for doctesting dsage is BROKEN.\nFor example\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py\n********************************************************************\nFile \"/home/was/build/sage-3.0.4/tmp/testdoc.py\", line 14:\n   sage: a\nExpected:\n   5\nGot:\n   No output.\n```\nand this is just a typical timing issue.  We have unit tests after all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3643\n\n",
+    "closed_at": "2008-12-11T15:27:18Z",
     "created_at": "2008-07-11T18:41:37Z",
     "labels": [
         "component: dsage",
@@ -11,13 +12,13 @@ archive/issues_003643.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "re-enable dsage/testdoc.py",
+    "title": "[with patch, positive review] re-enable dsage/testdoc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3643",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @yqiang
+Assignee: @garyfurnish
 
 I disabled dsage/testdoc.py for sage-3.0.5, since that system for doctesting dsage is BROKEN.
 For example

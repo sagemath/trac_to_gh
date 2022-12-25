@@ -1,9 +1,10 @@
-# Issue 889: 2.8.7-alpha0: doctest failure in schemes/elliptic_curves/lseries_ell.py (tiny differences in answer)
+# Issue 889: [with-patch] 2.8.7-alpha0: doctest failure in schemes/elliptic_curves/lseries_ell.py (tiny differences in answer)
 
 archive/issues_000889.json:
 ```json
 {
     "body": "Assignee: failure\n\n```\nFile \"lseries_ell.py\", line 59:\n    sage: L.taylor_series(series_prec=3)\nExpected:\n    -1.28158145691931e-23 + (7.26268290635587e-24)*z + 0.759316500288427*z^2 + O(z^3)\nGot:\n    -2.69129566562797e-23 + (1.52514901968783e-23)*z + 0.759316500288427*z^2 + O(z^3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/889\n\n",
+    "closed_at": "2007-10-14T22:56:41Z",
     "created_at": "2007-10-13T20:39:16Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_000889.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "2.8.7-alpha0: doctest failure in schemes/elliptic_curves/lseries_ell.py (tiny differences in answer)",
+    "title": "[with-patch] 2.8.7-alpha0: doctest failure in schemes/elliptic_curves/lseries_ell.py (tiny differences in answer)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/889",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

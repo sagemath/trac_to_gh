@@ -3,7 +3,7 @@
 archive/issues_009451.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein kevin.stueve @robertwb\n\nKeywords: prime, sieve, range\n\nThe goal of this ticket is to efficiently implement the sieve of atkin. This first version is a step in that direction.\n\nPaper on the sieve can be found at http://bit.ly/sieveatkin\n\nDue to the length of the implementation, I moved `prime_range` from `fast_arith` into a new module.\n\nThe current implementation uses 64-bit ints and hits that barrier at input around `2**56`, so I've capped it at `2**52` (in the future I plan to remove this limitation).\n\nI've changed the default algorithm to atkins, since it is nearly as fast as the pari table, but doesn't use as much storage so it is more viable for large input.\n\nDocstrings are incomplete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9451\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein kevin.stueve @robertwb\n\nKeywords: prime, sieve, range\n\nThe goal of this ticket is to efficiently implement the sieve of atkin. This first version is a step in that direction.\n\nPaper on the sieve can be found at http://bit.ly/sieveatkin\n\nThe implementation is written to be run in parallel, however I am unaware of any good method of making it parallel within cython (it would be nice to get openmp in there sometime).\n\nDue to the length of the implementation, I moved `prime_range` from `fast_arith` into a new module.\n\nThe current implementation uses 64-bit ints and hits that barrier at input around `2**56`, so I've capped it at `2**52` (in the future I plan to remove this limitation).\n\nI've changed the default algorithm to atkins, since it is nearly as fast as the pari table, but doesn't use as much storage so it is more viable for large input.\n\nDocstrings are incomplete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9451\n\n",
     "created_at": "2010-07-08T01:31:21Z",
     "labels": [
         "component: number theory"
@@ -24,6 +24,8 @@ Keywords: prime, sieve, range
 The goal of this ticket is to efficiently implement the sieve of atkin. This first version is a step in that direction.
 
 Paper on the sieve can be found at http://bit.ly/sieveatkin
+
+The implementation is written to be run in parallel, however I am unaware of any good method of making it parallel within cython (it would be nice to get openmp in there sometime).
 
 Due to the length of the implementation, I moved `prime_range` from `fast_arith` into a new module.
 

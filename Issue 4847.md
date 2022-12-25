@@ -1,16 +1,17 @@
-# Issue 4847: [with patch, needs review] Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py
+# Issue 4847: [with patch, positive review] Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py
 
 archive/issues_004847.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @wdjoyner\n\nThe two files in question are ancient (2006 or earlier), not imported and deprecated. So let's get rid of them.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4847\n\n",
+    "closed_at": "2008-12-22T22:19:09Z",
     "created_at": "2008-12-21T15:49:08Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch, needs review] Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py",
+    "title": "[with patch, positive review] Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4847",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

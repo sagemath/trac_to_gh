@@ -1,16 +1,17 @@
-# Issue 3308: [with patch; needs review] Update sage-sbuildhack to work with new sbuild in Debian
+# Issue 3308: [with patch; positive review] Update sage-sbuildhack to work with new sbuild in Debian
 
 archive/issues_003308.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nOne of the two patches to sbuild that we're using was accepted in Debian upstream sbuild, so we no longer need a big piece of SbuildHack.pm.  The other has not yet been accepted, so we don't get to get rid of SbuildHack.pm entirely yet.\n\nI've attached a patch to sage-sbuildhack and SbuildHack.pm to work with current sbuild.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3308\n\n",
+    "closed_at": "2008-05-28T06:38:32Z",
     "created_at": "2008-05-26T05:16:12Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] Update sage-sbuildhack to work with new sbuild in Debian",
+    "title": "[with patch; positive review] Update sage-sbuildhack to work with new sbuild in Debian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3308",
     "user": "https://github.com/timabbott"

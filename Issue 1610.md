@@ -4,9 +4,11 @@ archive/issues_001610.json:
 ```json
 {
     "body": "Assignee: tba\n\nThis tick will be *very* easy for somebody to close. \n\n```\n> I noticed that Mercurial 0.9.5 has a \"record\" extension that mimics the\n> darcs record functionality of interactively asking what changes you want\n> to commit out of a file.  I know there was discussion of this a while ago.\n>\n> Reference:\n>\n> http://www.selenic.com/pipermail/mercurial/2007-October/015150.html\n> under the New extensions heading.  See also\n> http://www.selenic.com/mercurial/wiki/index.cgi/RecordExtension\n>\n> Anyways, I'm just posting this as an FYI.  It might be nice to expose\n> this functionality to sage, if we haven't already.\n>\n\nCool!\n\nAnd, this is already in Sage.   Just put\n\n[extensions]\nrecord=\n\nin your .hgrc file, and do\n\n   hg record\n\nand you'll get to cherry pick.\n\nThis should be documented in the programming guide.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1610\n\n",
+    "closed_at": "2010-02-15T03:45:07Z",
     "created_at": "2007-12-27T09:05:13Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "hg record / cherry picking -- add something to the programming guide",

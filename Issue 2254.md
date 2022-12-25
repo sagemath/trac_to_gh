@@ -3,10 +3,11 @@
 archive/issues_002254.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nLinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.\nRelease candidates can be found at \n\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz)\n\nand\n\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz](http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz)\n\nUpdate sage packages with these new releases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2254\n\n",
+    "body": "Assignee: mabshoff\n\nLinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.\nRelease candidates can be found at \n\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz)\n\nand\n\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz](http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz)\n\nUpdate sage packages with these new releases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2254\n\n",
+    "closed_at": "2008-03-03T04:42:39Z",
     "created_at": "2008-02-22T03:35:34Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Upgrade linbox and givaro spkg to upstream",
@@ -15,7 +16,7 @@ archive/issues_002254.json:
     "user": "https://github.com/ClementPernet"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 LinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.
 Release candidates can be found at 

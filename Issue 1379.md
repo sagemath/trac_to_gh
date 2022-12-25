@@ -1,16 +1,17 @@
-# Issue 1379: "What is Sage" interactive javascript webpage app
+# Issue 1379: [with negative review, will be closed as invalid before 2.10.2] "What is Sage" interactive javascript webpage app
 
 archive/issues_001379.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nApp is live at http://sagemath.timothyclemans.com/whatis/\n\nThe app is a pretty interactive box where users click the three definitions of Sage and see the definitions one at a time.\n\nTo implement on sagemath.org homepage download http://sagemath.timothyclemans.com/whatis/whatis.zip and place in root of sagemath.org \n\nIndex.html is replaced, javascript, css file, images folder added.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1379\n\n",
+    "closed_at": "2008-02-15T23:10:49Z",
     "created_at": "2007-12-03T07:10:23Z",
     "labels": [
         "component: website/wiki",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "\"What is Sage\" interactive javascript webpage app",
+    "title": "[with negative review, will be closed as invalid before 2.10.2] \"What is Sage\" interactive javascript webpage app",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1379",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

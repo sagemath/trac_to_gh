@@ -1,16 +1,17 @@
-# Issue 5405: [with patch, needs review] create a decorator for adding default keyword arguments to a function
+# Issue 5405: create a decorator for adding default keyword arguments to a function
 
 archive/issues_005405.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @mwhansen @jasongrout\n\nThe typical usage of this decorator would be to be applied above a\n:obj:`cached_method` or :obj:`cached_function` decorator so that\nthe correct cached object is returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5405\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mwhansen @jasongrout\n\nThe typical usage of this decorator would be to be applied above a\n:obj:`cached_method` or :obj:`cached_function` decorator so that\nthe correct cached object is returned.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5405\n\n",
+    "closed_at": "2010-05-08T22:05:12Z",
     "created_at": "2009-02-28T23:14:31Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "[with patch, needs review] create a decorator for adding default keyword arguments to a function",
+    "title": "create a decorator for adding default keyword arguments to a function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5405",
     "user": "https://github.com/mwhansen"
@@ -23,6 +24,8 @@ CC:  @mwhansen @jasongrout
 The typical usage of this decorator would be to be applied above a
 :obj:`cached_method` or :obj:`cached_function` decorator so that
 the correct cached object is returned.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5405
 

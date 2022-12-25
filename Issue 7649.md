@@ -3,7 +3,7 @@
 archive/issues_007649.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nHere is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.\n\n -- John Voight\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7649\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHere is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.\n\nThe roundoff error is a bit mystifying to me, but in any case I\nbelieve I fixed it in the patch: just expanding the bounds works, and seems to only slow it down by a small amount.\n\nIn truth, I think the issue has to do with the fact that math.floor\nand math.ceil return float64 not ints, and so I have to coerce these\nints, but I couldn't verify this.\n\n\n -- John Voight\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7649\n\n",
     "created_at": "2009-12-10T01:25:12Z",
     "labels": [
         "component: number theory",
@@ -20,6 +20,14 @@ Assignee: @williamstein
 
 ```
 Here is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.
+
+The roundoff error is a bit mystifying to me, but in any case I
+believe I fixed it in the patch: just expanding the bounds works, and seems to only slow it down by a small amount.
+
+In truth, I think the issue has to do with the fact that math.floor
+and math.ceil return float64 not ints, and so I have to coerce these
+ints, but I couldn't verify this.
+
 
  -- John Voight
 ```

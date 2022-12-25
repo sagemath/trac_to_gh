@@ -1,21 +1,22 @@
-# Issue 1428: add SVD method to matrix_complex_double_dense
+# Issue 1428: [with patch, with positive review] add SVD method to matrix_complex_double_dense
 
 archive/issues_001428.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  dfdeshom@gmail.com\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
+    "closed_at": "2008-01-15T03:01:03Z",
     "created_at": "2007-12-08T14:53:32Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "add SVD method to matrix_complex_double_dense",
+    "title": "[with patch, with positive review] add SVD method to matrix_complex_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1428",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  dfdeshom@gmail.com
 

@@ -1,9 +1,10 @@
-# Issue 5552: plot_slope_field typo
+# Issue 5552: [with patch, positive review] plot_slope_field typo
 
 archive/issues_005552.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nplot_slope_field((f, g), (xvar, xmin, xmax), (yvar, ymin, ymax)) \n```\nshould only have one function, not the two functions left over from plot_vector_field\n\nIssue created by migration from https://trac.sagemath.org/ticket/5552\n\n",
+    "closed_at": "2009-03-23T21:26:54Z",
     "created_at": "2009-03-17T20:45:26Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005552.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "plot_slope_field typo",
+    "title": "[with patch, positive review] plot_slope_field typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5552",
     "user": "https://github.com/kcrisman"

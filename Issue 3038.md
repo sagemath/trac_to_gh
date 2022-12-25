@@ -1,16 +1,17 @@
-# Issue 3038: [with patch; needs review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly
+# Issue 3038: [with patch; positive review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly
 
 archive/issues_003038.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nAttached is the patch needed to get sage to build with a packaged polybori and zn_poly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3038\n\n",
+    "closed_at": "2008-04-27T02:25:27Z",
     "created_at": "2008-04-27T02:15:40Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly",
+    "title": "[with patch; positive review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3038",
     "user": "https://github.com/timabbott"

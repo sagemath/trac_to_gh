@@ -1,9 +1,10 @@
-# Issue 5541: more formatting fixes for quaternion algebra docstring
+# Issue 5541: [with patch, positive review] more formatting fixes for quaternion_algebra.py docstring
 
 archive/issues_005541.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: quaternion_algebra.py, sphinx, docstring\n\nWhile reviewing ticket #5531 I noticed some further formatting issues in the docstring of `quaternion_algebra.py`. The objective is to make the docstring of that module look even prettier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5541\n\n",
+    "closed_at": "2009-04-18T01:07:43Z",
     "created_at": "2009-03-17T03:43:08Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005541.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "more formatting fixes for quaternion algebra docstring",
+    "title": "[with patch, positive review] more formatting fixes for quaternion_algebra.py docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5541",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

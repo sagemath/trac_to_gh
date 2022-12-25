@@ -1,22 +1,23 @@
-# Issue 1619: update cddlib to 0.94d
+# Issue 1619: [with spkg, positive review] update cddlib to 0.94f
 
 archive/issues_001619.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1619\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1619\n\n",
+    "closed_at": "2009-01-29T06:07:44Z",
     "created_at": "2007-12-29T04:34:07Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "update cddlib to 0.94d",
+    "title": "[with spkg, positive review] update cddlib to 0.94f",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1619",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 
 

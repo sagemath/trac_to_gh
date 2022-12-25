@@ -3,10 +3,12 @@
 archive/issues_006323.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/combinat/species/library.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 55:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 62:\n    sage: number, name, sseq = sloane_find(seq)[0]    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 101:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 135:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\n3 items had failures:\n   2 of  12 in __main__.example_1\n   1 of  12 in __main__.example_2\n   1 of   9 in __main__.example_3\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_library.py\n\t [6.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6323\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/combinat/species/library.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 55:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 62:\n    sage: number, name, sseq = sloane_find(seq)[0]    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 101:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 135:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\n3 items had failures:\n   2 of  12 in __main__.example_1\n   1 of  12 in __main__.example_2\n   1 of   9 in __main__.example_3\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_library.py\n [6.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6323\n\n",
+    "closed_at": "2013-08-13T08:46:11Z",
     "created_at": "2009-06-16T14:53:29Z",
     "labels": [
-        "component: packages: optional",
+        "component: combinatorics",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -51,7 +53,7 @@ Got:
    1 of   9 in __main__.example_3
 ***Test Failed*** 4 failures.
 For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_library.py
-	 [6.9 s]
+ [6.9 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6323

@@ -4,6 +4,7 @@ archive/issues_008929.json:
 ```json
 {
     "body": "Assignee: jasonbhill\n\nCC:  wjlaffin @saliola\n\nKeywords: permgroup\n\n- changed is_transitive() to accept options for domain\n- added: is_primitive(), is_regular(), is_semi_regular, and others\n\nIssue created by migration from https://trac.sagemath.org/ticket/8929\n\n",
+    "closed_at": "2010-05-23T19:22:31Z",
     "created_at": "2010-05-07T20:52:45Z",
     "labels": [
         "component: group theory"

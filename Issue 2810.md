@@ -1,22 +1,23 @@
-# Issue 2810: Use new generic code in elliptic_curve_finite_field
+# Issue 2810: [with patch, positive review] Use new generic code in elliptic_curve_finite_field
 
 archive/issues_002810.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAfter merging the new generic group functions (#210) there is no need for the specific versions implemented for elliptic curve groups.  This patch removes those and adjusts the code accordingly.\n\nBased on 3.0.alpha1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2810\n\n",
+    "body": "Assignee: tbd\n\nAfter merging the new generic group functions (#210) there is no need for the specific versions implemented for elliptic curve groups.  This patch removes those and adjusts the code accordingly.\n\nBased on 3.0.alpha1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2810\n\n",
+    "closed_at": "2008-04-05T23:38:55Z",
     "created_at": "2008-04-05T16:47:47Z",
     "labels": [
-        "component: cygwin",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Use new generic code in elliptic_curve_finite_field",
+    "title": "[with patch, positive review] Use new generic code in elliptic_curve_finite_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2810",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: mabshoff
+Assignee: tbd
 
 After merging the new generic group functions (#210) there is no need for the specific versions implemented for elliptic curve groups.  This patch removes those and adjusts the code accordingly.
 

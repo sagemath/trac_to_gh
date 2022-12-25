@@ -4,6 +4,7 @@ archive/issues_000783.json:
 ```json
 {
     "body": "Assignee: somebody\n\ndilog on almost all input gives NotImplementedError:\n\n```\nsage: dilog(-1)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/was/Desktop/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/functions/special.py in dilog(t)\n    743         return t.dilog()\n    744     except AttributeError:\n--> 745         raise NotImplementedError\n    746\n    747 def lngamma(t):\n\n<type 'exceptions.NotImplementedError'>:\nsage:                                     \n```\n\nShould add dilog to RDF, RR, CDF, CC elements, when it makes sense.\n\nThis does work:\n\n```\nsage: dilog(pari(2))\n2.4674011002723396547086227499690377838 - 2.1775860903036021305006888982376139473*I\n```\n\nSee also this from pari-dev (which I don't agree with):\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/783\n\n",
+    "closed_at": "2010-09-15T11:13:45Z",
     "created_at": "2007-10-02T13:26:29Z",
     "labels": [
         "component: basic arithmetic",

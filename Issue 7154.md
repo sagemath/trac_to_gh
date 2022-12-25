@@ -3,7 +3,8 @@
 archive/issues_007154.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: point arrow thickness\n\nThere should be a consistent naming scheme for the \"thickness\" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. \n\nThe current status is:\n\n```\n  sage: point([0,0], pointsize = 5)\n  sage: point3d((0,0,0), thickness=5)                      \n  sage: line2d([[0,0],[1,1]], thickness=5)\n  sage: line3d([[0,0,0],[1,1,0]], thickness=5)\n  sage: arrow([0,0],[1,1], width=5)    \n  sage: arrow3d([0,0,0],[1,1,1], thickness=5)\n  sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      \n  sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7154\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: point arrow thickness, beginner\n\nThere should be a consistent naming scheme for the \"thickness\" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. \n\nThe current status is:\n\n```\n  sage: point([0,0], pointsize = 5)\n  sage: point3d((0,0,0), thickness=5)                      \n  sage: line2d([[0,0],[1,1]], thickness=5)\n  sage: line3d([[0,0,0],[1,1,0]], thickness=5)\n  sage: arrow([0,0],[1,1], width=5)    \n  sage: arrow3d([0,0,0],[1,1,1], thickness=5)\n  sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      \n  sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7154\n\n",
+    "closed_at": "2010-09-15T10:40:41Z",
     "created_at": "2009-10-08T11:07:33Z",
     "labels": [
         "component: graphics",
@@ -21,7 +22,7 @@ Assignee: @williamstein
 
 CC:  @jasongrout @kcrisman
 
-Keywords: point arrow thickness
+Keywords: point arrow thickness, beginner
 
 There should be a consistent naming scheme for the "thickness" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. 
 

@@ -1,16 +1,17 @@
-# Issue 2702: [with patch, needs review] multi_polynomial_libsingular coverage almost 100%
+# Issue 2702: [with patch, positive review] multi_polynomial_libsingular coverage almost 100%
 
 archive/issues_002702.json:
 ```json
 {
     "body": "Assignee: failure\n\n```\n----------------------------------------------------------------------\nsage/rings/polynomial/multi_polynomial_libsingular.pyx\nSCORE sage/rings/polynomial/multi_polynomial_libsingular.pyx: 98% (80 of 81)\n\nMissing doctests:\n         * _macaulay2_set_ring(self, macaulay2)\n\n----------------------------------------------------------------------\n```\n\nI cannot write a doctest for `_macaulay2_set_ring` yet because the optional M2 spkg is not installable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2702\n\n",
+    "closed_at": "2008-03-29T20:30:46Z",
     "created_at": "2008-03-28T17:24:12Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] multi_polynomial_libsingular coverage almost 100%",
+    "title": "[with patch, positive review] multi_polynomial_libsingular coverage almost 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2702",
     "user": "https://github.com/malb"

@@ -3,11 +3,11 @@
 archive/issues_008678.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: homsest\n\nThe upcoming patch in the Sage-Combinat queue will implement:\n- inverses for morphisms of finite dimensional vector spaces\n- tensor products of morphisms\n\nAt this occasion, it will start a bit of cleanup in the category framework for homsets\n\nIssue created by migration from https://trac.sagemath.org/ticket/8678\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: homsets, module morphisms, days64\n\nThis ticket implements:\n- inverses for morphisms of finite dimensional vector spaces\n- tensor products of morphisms\nand improves:\n- triangular morphisms over base rings\n\nDeclares CombinatorialFreeModule indexed by a finite set as being finite dimensional.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8678\n\n",
+    "closed_at": "2015-04-14T19:43:34Z",
     "created_at": "2010-04-12T21:20:15Z",
     "labels": [
-        "component: categories",
-        "bug"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Improvements for morphisms of ModulesWithBasis",
@@ -20,13 +20,15 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-Keywords: homsest
+Keywords: homsets, module morphisms, days64
 
-The upcoming patch in the Sage-Combinat queue will implement:
+This ticket implements:
 - inverses for morphisms of finite dimensional vector spaces
 - tensor products of morphisms
+and improves:
+- triangular morphisms over base rings
 
-At this occasion, it will start a bit of cleanup in the category framework for homsets
+Declares CombinatorialFreeModule indexed by a finite set as being finite dimensional.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8678
 

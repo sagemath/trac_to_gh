@@ -4,6 +4,7 @@ archive/issues_008352.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\ntwisted builds in 32 bit mode on Open Solaris x64.\n\nA fix is coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8352\n\n",
+    "closed_at": "2010-03-02T22:46:56Z",
     "created_at": "2010-02-24T21:07:49Z",
     "labels": [
         "component: porting",

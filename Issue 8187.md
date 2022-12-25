@@ -3,7 +3,8 @@
 archive/issues_008187.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse @videlec @saliola\n\nMore often, when we compare two words, we test their equality and not that one is less than the other. So why not implement the equatlity test!? This ticket does this for datatypes and for math objects. It also improve the comparison function (by removing it!).\n\n1. This patch adds equality test for `WordDatatype_str`, `WordDatatype_list` and `WordDatatype_tuple`  (via `__richcmp__`) usefull when comparing two words represented by the same kind of data. It is now as fast as the python object :\n\n```\nBEFORE:\n\n    sage: w = Word(range(10000))\n    sage: z = Word(range(10000))\n    sage: %timeit w == z\n    125 loops, best of 3: 4.08 ms per loop\n\nAFTER:\n\n    sage: w = Word(range(10000))\n    sage: z = Word(range(10000))\n    sage: %timeit w == z\n    625 loops, best of 3: 422 \u00b5s per loop\n\nPYTHON OBJECT:\n\n    sage: w = range(10000)\n    sage: z = range(10000)\n    sage: %timeit w == z\n    625 loops, best of 3: 442 \u00b5s per loop\n```\n\n```\nBEFORE:\n\n    sage: w = Word(tuple(range(10000)))\n    sage: z = Word(tuple(range(10000)))\n    sage: %timeit w == z\n    125 loops, best of 3: 3.97 ms per loop\n\nAFTER:\n\n    sage: w = Word(tuple(range(10000)))\n    sage: z = Word(tuple(range(10000)))\n    sage: %timeit w == z\n    625 loops, best of 3: 419 \u00b5s per loop\n\nPYTHON OBJECT:\n\n    sage: w = tuple(range(10000))\n    sage: z = tuple(range(10000))\n    sage: %timeit w == z\n    625 loops, best of 3: 420 \u00b5s per loop\n```\n\n```\nBEFORE:\n\n    sage: w = Word('a'*10000)\n    sage: z = Word('a'*10000)\n    sage: %timeit w == z\n    125 loops, best of 3: 3.9 ms per loop\n\nAFTER:\n\n    sage: w = Word('a'*10000)\n    sage: z = Word('a'*10000)\n    sage: %timeit w == z\n    625 loops, best of 3: 2.36 \u00b5s per loop\n\nPYTHON OBJECT:\n\n    sage: w = 'a'*10000\n    sage: z = 'a'*10000\n    sage: %timeit w == z\n    625 loops, best of 3: 2.03 \u00b5s per loop\n\n```\n\n2. Remove the `__cmp__` from `FiniteWord_class` since the same function in `Word_class` does the job anyway and in a cleaner way : it doesn't use the (useless?) coerce function. Surprinsingly, removing it makes it faster :\n\n```\nBEFORE:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.79 ms per loop\n    sage: %timeit w.__cmp__(z)\n    25 loops, best of 3: 13.3 ms per loop\n    sage: %timeit z.__cmp__(w)\n    5 loops, best of 3: 50.1 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n\n\nAFTER:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.89 ms per loop\n    sage: %timeit w.__cmp__(z)\n    125 loops, best of 3: 5.4 ms per loop\n    sage: %timeit z.__cmp__(w)\n    25 loops, best of 3: 35.9 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n```\n\nNOTE : The difference between w and z above is that the parent of w is the alphabet of all python objects which uses the cmp of python to compare the letters whereas z compares its letters relatively to the order of the letters defined by the parent (here 0 < 1 but one could also say 1 < 0) which is slower.\n\n\n3. Add the `__eq__` and `__ne__` for `Word_class` because it is faster than using `__cmp__` (especially when parent alphabet are defined):\n\nno parents :\n\n```\nBEFORE:\n\n    sage: L = range(10000)\n    sage: t = tuple(L)\n    sage: w = Word(L)\n    sage: z = Word(t)\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_tuple'>\n    sage: %timeit w == z\n    125 loops, best of 3: 3.69 ms per loop\n\n\nAFTER:\n\n    sage: L = range(10000)\n    sage: t = tuple(L)\n    sage: w = Word(L)\n    sage: z = Word(t)\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_tuple'>\n    sage: %timeit w == z\n    625 loops, best of 3: 1.44 ms per loop\n```\n\nwith parents (!!):\n\n```\nBEFORE:\n\n    sage: W = Words([0,1,2])\n    sage: w = W([0, 1, 1, 2]*4000)\n    sage: z = W([0, 1, 1, 2]*4000)\n    sage: %timeit w == z\n    5 loops, best of 3: 63 ms per loop\n\nAFTER:\n\n    sage: W = Words([0,1,2])\n    sage: w = W([0, 1, 1, 2]*4000)\n    sage: z = W([0, 1, 1, 2]*4000)\n    sage: %timeit w == z\n    125 loops, best of 3: 2.57 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8187\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse @videlec @saliola\n\nKeywords: words\n\nMore often, when we compare two words, we test their equality and not that one is less than the other. So why not implement the equatlity test!? This ticket does this for datatypes and for math objects.\n\n1. This patch adds equality test for `WordDatatype_str`, `WordDatatype_list` and `WordDatatype_tuple`  (via `__richcmp__`) usefull when comparing two words represented by the same kind of data. It is now as fast as the python object :\n\n```\nBEFORE:\n\n    sage: w = Word(range(10000))\n    sage: z = Word(range(10000))\n    sage: %timeit w == z\n    125 loops, best of 3: 4.08 ms per loop\n\nAFTER:\n\n    sage: w = Word(range(10000))\n    sage: z = Word(range(10000))\n    sage: %timeit w == z\n    625 loops, best of 3: 422 \u00b5s per loop\n\nPYTHON OBJECT:\n\n    sage: w = range(10000)\n    sage: z = range(10000)\n    sage: %timeit w == z\n    625 loops, best of 3: 442 \u00b5s per loop\n```\n\n```\nBEFORE:\n\n    sage: w = Word(tuple(range(10000)))\n    sage: z = Word(tuple(range(10000)))\n    sage: %timeit w == z\n    125 loops, best of 3: 3.97 ms per loop\n\nAFTER:\n\n    sage: w = Word(tuple(range(10000)))\n    sage: z = Word(tuple(range(10000)))\n    sage: %timeit w == z\n    625 loops, best of 3: 419 \u00b5s per loop\n\nPYTHON OBJECT:\n\n    sage: w = tuple(range(10000))\n    sage: z = tuple(range(10000))\n    sage: %timeit w == z\n    625 loops, best of 3: 420 \u00b5s per loop\n```\n\n```\nBEFORE:\n\n    sage: w = Word('a'*10000)\n    sage: z = Word('a'*10000)\n    sage: %timeit w == z\n    125 loops, best of 3: 3.9 ms per loop\n\nAFTER:\n\n    sage: w = Word('a'*10000)\n    sage: z = Word('a'*10000)\n    sage: %timeit w == z\n    625 loops, best of 3: 2.36 \u00b5s per loop\n\nPYTHON OBJECT:\n\n    sage: w = 'a'*10000\n    sage: z = 'a'*10000\n    sage: %timeit w == z\n    625 loops, best of 3: 2.03 \u00b5s per loop\n\n```\n\n2. Add the `__eq__` and `__ne__` for `Word_class` because it is faster than using `__cmp__` (especially when parent alphabet are defined). These functions are used to test the equality of two words represented by different python objects (datatypes).\n\nno parents :\n\n```\nBEFORE:\n\n    sage: L = range(10000)\n    sage: t = tuple(L)\n    sage: w = Word(L)\n    sage: z = Word(t)\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_tuple'>\n    sage: %timeit w == z\n    125 loops, best of 3: 3.69 ms per loop\n\n\nAFTER:\n\n    sage: L = range(10000)\n    sage: t = tuple(L)\n    sage: w = Word(L)\n    sage: z = Word(t)\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_tuple'>\n    sage: %timeit w == z\n    625 loops, best of 3: 1.44 ms per loop\n```\n\nwith parents (!!):\n\n```\nBEFORE:\n\n    sage: W = Words([0,1,2])\n    sage: w = W([0, 1, 1, 2]*4000)\n    sage: z = W([0, 1, 1, 2]*4000)\n    sage: %timeit w == z\n    5 loops, best of 3: 63 ms per loop\n\nAFTER:\n\n    sage: W = Words([0,1,2])\n    sage: w = W([0, 1, 1, 2]*4000)\n    sage: z = W([0, 1, 1, 2]*4000)\n    sage: %timeit w == z\n    125 loops, best of 3: 2.57 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8187\n\n",
+    "closed_at": "2010-03-02T21:19:47Z",
     "created_at": "2010-02-05T03:16:45Z",
     "labels": [
         "component: combinatorics"
@@ -19,7 +20,9 @@ Assignee: sage-combinat
 
 CC:  abmasse @videlec @saliola
 
-More often, when we compare two words, we test their equality and not that one is less than the other. So why not implement the equatlity test!? This ticket does this for datatypes and for math objects. It also improve the comparison function (by removing it!).
+Keywords: words
+
+More often, when we compare two words, we test their equality and not that one is less than the other. So why not implement the equatlity test!? This ticket does this for datatypes and for math objects.
 
 1. This patch adds equality test for `WordDatatype_str`, `WordDatatype_list` and `WordDatatype_tuple`  (via `__richcmp__`) usefull when comparing two words represented by the same kind of data. It is now as fast as the python object :
 
@@ -93,49 +96,7 @@ PYTHON OBJECT:
 
 ```
 
-2. Remove the `__cmp__` from `FiniteWord_class` since the same function in `Word_class` does the job anyway and in a cleaner way : it doesn't use the (useless?) coerce function. Surprinsingly, removing it makes it faster :
-
-```
-BEFORE:
-
-    sage: w = Word([0]*10000)
-    sage: z = Word([0]*10000, alphabet=[0,1])
-    sage: type(w)
-    <class 'sage.combinat.words.word.FiniteWord_list'>
-    sage: type(z)
-    <class 'sage.combinat.words.word.FiniteWord_list'>
-    sage: %timeit w.__cmp__(w)
-    125 loops, best of 3: 3.79 ms per loop
-    sage: %timeit w.__cmp__(z)
-    25 loops, best of 3: 13.3 ms per loop
-    sage: %timeit z.__cmp__(w)
-    5 loops, best of 3: 50.1 ms per loop
-    sage: %timeit z.__cmp__(z)
-    25 loops, best of 3: 35.7 ms per loop
-
-
-AFTER:
-
-    sage: w = Word([0]*10000)
-    sage: z = Word([0]*10000, alphabet=[0,1])
-    sage: type(w)
-    <class 'sage.combinat.words.word.FiniteWord_list'>
-    sage: type(z)
-    <class 'sage.combinat.words.word.FiniteWord_list'>
-    sage: %timeit w.__cmp__(w)
-    125 loops, best of 3: 3.89 ms per loop
-    sage: %timeit w.__cmp__(z)
-    125 loops, best of 3: 5.4 ms per loop
-    sage: %timeit z.__cmp__(w)
-    25 loops, best of 3: 35.9 ms per loop
-    sage: %timeit z.__cmp__(z)
-    25 loops, best of 3: 35.7 ms per loop
-```
-
-NOTE : The difference between w and z above is that the parent of w is the alphabet of all python objects which uses the cmp of python to compare the letters whereas z compares its letters relatively to the order of the letters defined by the parent (here 0 < 1 but one could also say 1 < 0) which is slower.
-
-
-3. Add the `__eq__` and `__ne__` for `Word_class` because it is faster than using `__cmp__` (especially when parent alphabet are defined):
+2. Add the `__eq__` and `__ne__` for `Word_class` because it is faster than using `__cmp__` (especially when parent alphabet are defined). These functions are used to test the equality of two words represented by different python objects (datatypes).
 
 no parents :
 

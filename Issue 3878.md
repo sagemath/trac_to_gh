@@ -1,16 +1,17 @@
-# Issue 3878: Constructing a c_graph from a DiGraph doubles the edges.
+# Issue 3878: [with patch, positive review] Constructing a c_graph from a DiGraph doubles the edges.
 
 archive/issues_003878.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: c_graph\n\n```\nsage: D = DiGraph({0:[1]})\nsage: D.edges()\n[(0, 1, None)]\nsage: DiGraph(D).edges()\n[(0, 1, None)]\nsage: DiGraph(D,implementation=\"c_graph\").edges()\n[(0, 1, None), (1, 0, None)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3878\n\n",
+    "closed_at": "2008-08-16T21:49:26Z",
     "created_at": "2008-08-16T08:30:54Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Constructing a c_graph from a DiGraph doubles the edges.",
+    "title": "[with patch, positive review] Constructing a c_graph from a DiGraph doubles the edges.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3878",
     "user": "https://github.com/saliola"

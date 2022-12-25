@@ -1,16 +1,17 @@
-# Issue 4175: [with patch, needs review] cpdef arithmatic functions
+# Issue 4175: [with patch, positive review] cpdef arithmatic functions
 
 archive/issues_004175.json:
 ```json
 {
     "body": "Assignee: somebody\n\nRather than the `_xxx_, _xxx_c, _xxx_c_impl` stuff we have now. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4175\n\n",
+    "closed_at": "2008-09-24T00:12:32Z",
     "created_at": "2008-09-23T07:17:14Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] cpdef arithmatic functions",
+    "title": "[with patch, positive review] cpdef arithmatic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4175",
     "user": "https://github.com/robertwb"

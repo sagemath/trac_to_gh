@@ -1,16 +1,17 @@
-# Issue 1737: ctl-c doesn't exit job in parametric_plot3d
+# Issue 1737: [with patch at #1833; needs review] ctl-c doesn't exit job in parametric_plot3d
 
 archive/issues_001737.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following paraterization of the Mobius strip\ntakes a very long time and won't quit when ctl-c is\nused:\n\nsage: u,v = var(\"u,v\")\nsage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (-2, 2), (-2, 2)).show()\n^D\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n\nThis error message repeats ever time you proess ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1737\n\n",
+    "body": "Assignee: @williamstein\n\nThe following paraterization of the Mobius strip\ntakes a very long time and won't quit when ctl-c is\nused:\n\n```\nsage: u,v = var(\"u,v\")\nsage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (-2, 2), (-2, 2)).show()\n^D\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\nThis error message repeats ever time you proess ctl-c.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1737\n\n",
+    "closed_at": "2008-01-21T04:13:49Z",
     "created_at": "2008-01-09T17:40:24Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "ctl-c doesn't exit job in parametric_plot3d",
+    "title": "[with patch at #1833; needs review] ctl-c doesn't exit job in parametric_plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1737",
     "user": "https://github.com/wdjoyner"
@@ -22,12 +23,14 @@ The following paraterization of the Mobius strip
 takes a very long time and won't quit when ctl-c is
 used:
 
+```
 sage: u,v = var("u,v")
 sage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (-2, 2), (-2, 2)).show()
 ^D
 ^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...
-
+```
 This error message repeats ever time you proess ctl-c.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1737
 

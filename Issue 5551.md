@@ -1,16 +1,16 @@
-# Issue 5551: Permutation from a pair of standard tableaux
+# Issue 5551: [with patch, positive review] Permutation from a pair of standard tableaux
 
 archive/issues_005551.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nKeywords: robinson schensted\n\n1. In sage 3.4, the Robinson Schensted algorithm is coded for a permutation :\n\n```\nsage: p = Permutation([3, 6, 5, 2, 7, 4, 1])\nsage: p.robinson_schensted()\n[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\n```\n\nSince this algorithm is invertible, it would be nice to allow to construct a permutation from a pair of standard tableaux of the same shape.\n\n2. The Robinson-Schensted is broken on the empty permutation. It should simply return a pair of empty tableaux :\n\n```\nsage: p=Permutation([])\nsage: p.robinson_schensted()\nTraceback (most recent call last):\n...\nValueError: invalid tableau\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5551\n\n",
+    "closed_at": "2009-04-06T00:14:44Z",
     "created_at": "2009-03-17T20:29:32Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Permutation from a pair of standard tableaux",
+    "title": "[with patch, positive review] Permutation from a pair of standard tableaux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5551",
     "user": "https://github.com/seblabbe"

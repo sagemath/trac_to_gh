@@ -1,37 +1,84 @@
-# Issue 8512: database_stein_watkins_mini uses 'cp -v' which fails on Solaris.
+# Issue 8512: Optional database_stein_watkins_mini uses 'cp -v' which fails on Solaris.
 
 archive/issues_008512.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\nThe -v option can simply be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10: \n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem ==\n\n```\ndatabase_stein_watkins_mini/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\ncp: illegal option -- v\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n       cp [-f] [-i] [-p] [-@] f1 ... fn d1\n       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n\nreal    0m0.013s\nuser    0m0.004s\nsys     0m0.009s\nsage: An error occurred while installing database_stein_watkins_mini\n\n```\n\n == The solution ==\nThis is because 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done, it is not important. Consulting rom the 'cp' man page on Linux:\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\nThe -v option can simply be removed. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
+    "closed_at": "2010-06-07T05:06:57Z",
     "created_at": "2010-03-12T23:48:03Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "database_stein_watkins_mini uses 'cp -v' which fails on Solaris.",
+    "title": "Optional database_stein_watkins_mini uses 'cp -v' which fails on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8512",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  @williamstein
 
-The optional package  "database_stein_watkins_mini" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. 
+The optional package  "database_stein_watkins_mini" fails to install on Solaris 10: 
+## Hardware & associated software
+
+* Sun Blade 1000
+* 2 x 900 MHz UltraSPARC III+ CPUs
+* 2 GB RAM
+* Solaris 10 03/2005 (first release of Solaris 10)
+* gcc 4.4.3 (uses Sun linker and assembler)
+
+ == Sage version ==
+* 4.3.4.alpha1
+* Patch #8509 removing the -o option to grep to allow packages to install. 
+
+ == The problem ==
+
+```
+database_stein_watkins_mini/spkg-install
+Finished extraction
+****************************************************
+Host system
+uname -a:
+SunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000
+****************************************************
+****************************************************
+CC Version
+gcc -v
+Using built-in specs.
+Target: sparc-sun-solaris2.10
+Configured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran
+Thread model: posix
+gcc version 4.4.3 (GCC)
+****************************************************
+cp: illegal option -- v
+Usage: cp [-f] [-i] [-p] [-@] f1 f2
+       cp [-f] [-i] [-p] [-@] f1 ... fn d1
+       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
+
+real    0m0.013s
+user    0m0.004s
+sys     0m0.009s
+sage: An error occurred while installing database_stein_watkins_mini
+
+```
+
+ == The solution ==
+This is because 'cp' uses an illegal option -v, which is not defined by POSIX. 
 
 http://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html
 
-Since the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:
+Since the GNU version of 'cp' only uses the -v option to show what is being done, it is not important. Consulting rom the 'cp' man page on Linux:
 
 ```
        -v, --verbose
               explain what is being done
 ```
 
-The -v option can simply be removed.
+The -v option can simply be removed. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8512
 

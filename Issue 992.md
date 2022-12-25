@@ -1,16 +1,17 @@
-# Issue 992: Need an extra "sage -b" after an upgrade
+# Issue 992: [with patch] Need an extra "sage -b" after an upgrade
 
 archive/issues_000992.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen doing sage -ugprade, i.e., running SAGE_ROOT/devel/sage/spkg-install, there should be one extra \"sage -b\"  again at the end to ensure that the new versions of all .pyx files get copied to the build directory.\n\n\nThis is incredibly easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/992\n\n",
+    "closed_at": "2007-10-25T07:56:36Z",
     "created_at": "2007-10-25T02:08:34Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Need an extra \"sage -b\" after an upgrade",
+    "title": "[with patch] Need an extra \"sage -b\" after an upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/992",
     "user": "https://github.com/williamstein"

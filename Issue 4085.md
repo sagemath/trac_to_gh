@@ -1,16 +1,17 @@
-# Issue 4085: [with patch, needs review] high precision real literals
+# Issue 4085: [with patch, positive review] high precision real literals
 
 archive/issues_004085.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nBefore \n\n```\nsage: RealField(256)(1.2)\n1.199999999999999955591079014993738383054733276367187500000000000000000000000\n```\n\nAfter\n\n```\nsage: RealField(256)(1.2)\n1.200000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\nWhile I was in there I made several optimizations. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4085\n\n",
+    "closed_at": "2008-09-13T02:44:18Z",
     "created_at": "2008-09-09T05:46:07Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] high precision real literals",
+    "title": "[with patch, positive review] high precision real literals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4085",
     "user": "https://github.com/robertwb"

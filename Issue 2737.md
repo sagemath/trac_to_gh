@@ -1,16 +1,17 @@
-# Issue 2737: add balanced_sum to Sage
+# Issue 2737: [with patch, positive review] add balanced_sum to Sage
 
 archive/issues_002737.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2737\n\n",
+    "closed_at": "2009-07-25T23:28:22Z",
     "created_at": "2008-03-31T11:49:00Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "add balanced_sum to Sage",
+    "title": "[with patch, positive review] add balanced_sum to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2737",
     "user": "https://github.com/mwhansen"

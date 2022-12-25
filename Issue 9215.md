@@ -4,6 +4,7 @@ archive/issues_009215.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9215\n\n",
+    "closed_at": "2010-07-21T09:55:14Z",
     "created_at": "2010-06-11T11:19:18Z",
     "labels": [
         "component: documentation"

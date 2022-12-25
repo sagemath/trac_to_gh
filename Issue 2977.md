@@ -1,16 +1,17 @@
-# Issue 2977: [with patch, needs review] wronskian is broken on constants
+# Issue 2977: [with patch, positive review] wronskian is broken on constants
 
 archive/issues_002977.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nHi,\n\nHere's something unpleasant that occurs in sage-3.0.rc0:\n\n```\nsage: wronskian(1, e^(-x), e^(2*x))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/root/<ipython console> in <module>()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in wronskian(*args)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n     83             row = lambda n: map(lambda f: f.derivative(n), fs)\n---> 84         return matrix(map(row, range(len(fs)))).determinant()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in <lambda>(n)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n---> 83             row = lambda n: map(lambda f: f.derivative(n), fs)\n     84         return matrix(map(row, range(len(fs)))).determinant()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in <lambda>(f)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n---> 83             row = lambda n: map(lambda f: f.derivative(n), fs)\n     84         return matrix(map(row, range(len(fs)))).determinant()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.integer.Integer' object has no attribute 'derivative'\n```\n\nThere is an easy fix, see the patch.  I have also removed \"differentiate\" as an alias for \"derivative\", since I seem to remember that the consensus on sage-devel was to keep only \"derivative\" and \"diff\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2977\n\n",
+    "closed_at": "2008-04-21T02:48:24Z",
     "created_at": "2008-04-21T00:35:15Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] wronskian is broken on constants",
+    "title": "[with patch, positive review] wronskian is broken on constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2977",
     "user": "https://github.com/aghitza"

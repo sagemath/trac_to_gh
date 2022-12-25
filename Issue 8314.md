@@ -4,9 +4,11 @@ archive/issues_008314.json:
 ```json
 {
     "body": "Assignee: tbd\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/msg/ba90601a2c25291d):\n\n```\nOn 32-bit Suse I get this fuzz:\n\nFile \"/local/jec/sage-4.3.3.alpha1/devel/sage/sage/misc/functional.py\",\nline 705:\n    sage: h.n()\nExpected:\n    0.33944794097891573\nGot:\n    0.33944794097891567 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8314\n\n",
+    "closed_at": "2010-02-22T03:57:49Z",
     "created_at": "2010-02-20T16:26:06Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",

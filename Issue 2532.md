@@ -1,16 +1,17 @@
-# Issue 2532: [with-patch] padic bugfix
+# Issue 2532: [with patch, positive review] padic bugfix
 
 archive/issues_002532.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nFixes a number of bugs in p-adic extensions.\n\n1. changes many object creation functions to pass on exceptions if necessary.\n2. fixes a bug in precision_absolute for capped relative extension elements that causes it to return the wrong answer if the element is not normalized.\n3. Fixes object creation functions so that they do not fail when asked to create an element of precision zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2532\n\n",
+    "body": "Assignee: @roed314\n\nFixes a number of bugs in p-adic extensions.\n\n* changes many object creation functions to pass on exceptions if necessary.\n* fixes a bug in precision_absolute for capped relative extension elements that causes it to return the wrong answer if the element is not normalized.\n* Fixes object creation functions so that they do not fail when asked to create an element of precision zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2532\n\n",
+    "closed_at": "2008-03-17T01:09:25Z",
     "created_at": "2008-03-15T19:05:56Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with-patch] padic bugfix",
+    "title": "[with patch, positive review] padic bugfix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2532",
     "user": "https://github.com/roed314"
@@ -20,9 +21,9 @@ Assignee: @roed314
 
 Fixes a number of bugs in p-adic extensions.
 
-1. changes many object creation functions to pass on exceptions if necessary.
-2. fixes a bug in precision_absolute for capped relative extension elements that causes it to return the wrong answer if the element is not normalized.
-3. Fixes object creation functions so that they do not fail when asked to create an element of precision zero.
+* changes many object creation functions to pass on exceptions if necessary.
+* fixes a bug in precision_absolute for capped relative extension elements that causes it to return the wrong answer if the element is not normalized.
+* Fixes object creation functions so that they do not fail when asked to create an element of precision zero.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2532
 

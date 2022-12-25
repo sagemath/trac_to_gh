@@ -1,16 +1,17 @@
-# Issue 6999: [with patch, needs review] doctest failures on 32-bit systems due to #4948 patches
+# Issue 6999: [with patch, positive review] doctest failures on 32-bit systems due to #4948 patches
 
 archive/issues_006999.json:
 ```json
 {
     "body": "Assignee: flawrence\n\nSome doctests added in the patches for #4948 fail on 32-bit systems:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/expect.py\" \n********************************************************************** \nFile \"/space/wstein/farm/sage-4.1.2.alpha2/devel/sage/sage/interfaces/expect.py\" , \nline 1599: \n    sage: gp(10.^80)._sage_repr() \nExpected nothing \nGot: \n    '1.000000000000000000000000000e80' \n********************************************************************** \n1 items had failures: \n   1 of   3 in __main__.example_45 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file \n/space/wstein/farm/sage-4.1.2.alpha2/tmp/.doctest_expect.py \n         [17.4 s] \nsage -t -long \"devel/sage/sage/interfaces/all.py\" \n         [0.1 s] \nsage -t -long \"devel/sage/sage/interfaces/rubik.py\" \n         [37.8 s] \nsage -t -long \"devel/sage/sage/interfaces/gp.py\" \n********************************************************************** \nFile \"/space/wstein/farm/sage-4.1.2.alpha2/devel/sage/sage/interfaces/gp.py\", \nline 567: \n    sage: repr(gp(10.^80)).replace(gp._exponent_symbol(), 'e') \nExpected nothing \nGot: \n    '1.000000000000000000000000000e80' \n********************************************************************** \n1 items had failures: \n   1 of   4 in __main__.example_26 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file \n/space/wstein/farm/sage-4.1.2.alpha2/tmp/.doctest_gp.py \n         [3.5 s] \n---------------------------------------------------------------------- \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6999\n\n",
+    "closed_at": "2009-09-24T07:18:40Z",
     "created_at": "2009-09-23T04:00:14Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] doctest failures on 32-bit systems due to #4948 patches",
+    "title": "[with patch, positive review] doctest failures on 32-bit systems due to #4948 patches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6999",
     "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"

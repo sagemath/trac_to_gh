@@ -1,15 +1,16 @@
-# Issue 3738: new coercion model
+# Issue 3738: [with patches, with two positive reviews] new coercion model
 
 archive/issues_003738.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nThis set of patches pulls the core coercion infrastructure from the coercion branch, without actually converting any of the Parents over. All Parents now descent from old_parent.Parent, which has a couple of compatibility routines. \n\nWith this in place Parents can be migrated one at a time. Other coercion branch features should be separate tickets. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3738\n\n",
+    "closed_at": "2008-08-14T16:57:44Z",
     "created_at": "2008-07-29T08:49:17Z",
     "labels": [
         "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "new coercion model",
+    "title": "[with patches, with two positive reviews] new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3738",
     "user": "https://github.com/robertwb"

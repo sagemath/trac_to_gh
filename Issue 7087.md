@@ -1,9 +1,10 @@
-# Issue 7087: doctest failure in databases/sloane.py
+# Issue 7087: [with patch, positive review] doctest failure in databases/sloane.py
 
 archive/issues_007087.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: sloane doctest internet\n\nIf doctesting optional tests with option \"internet\", the sloane_find command returns a result different from what's in the file:\n\n```\nFile \"/home/drake/sage-4.1.2.alpha4/devel/sage-main/sage/databases/sloane.py\", line 44:\n    sage: sloane_find([1,2,3,4,5], 2)      # optional - internet\nExpected:\n    Searching Sloane's online database...\n    [[27, 'The natural numbers. Also called the whole numbers, the counting numbers or the positive integers.', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]], [961, 'Prime powers p^k (p prime, k &gt;= 0).', [1, 2, 3, 4, 5, 7, 8, 9, 11, 13, 16, 17, 19, 23, 25, 27, 29, 31, 32, 37, 41, 43, 47, 49, 53, 59, 61, 64, 67, 71, 73, 79, 81, 83, 89, 97, 101, 103, 107, 109, 113, 121, 125, 127, 128, 131, 137, 139, 149, 151, 157, 163, 167, 169, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227]]]\nGot:\n    Searching Sloane's online database...\n    [[27, 'The natural numbers. Also called the whole numbers, the counting numbers or the positive integers.', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]], [7953, 'Digital sum (i.e. sum of digits) of n.', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 8, 9, 10, 11, 12, 13, 14, 15]]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7087\n\n",
+    "body": "Assignee: @dandrake\n\nKeywords: sloane doctest internet\n\nIf doctesting optional tests with option \"internet\", the sloane_find command returns a result different from what's in the file:\n\n```\nFile \"/home/drake/sage-4.1.2.alpha4/devel/sage-main/sage/databases/sloane.py\", line 44:\n    sage: sloane_find([1,2,3,4,5], 2)      # optional - internet\nExpected:\n    Searching Sloane's online database...\n    [[27, 'The natural numbers. Also called the whole numbers, the counting numbers or the positive integers.', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]], [961, 'Prime powers p^k (p prime, k &gt;= 0).', [1, 2, 3, 4, 5, 7, 8, 9, 11, 13, 16, 17, 19, 23, 25, 27, 29, 31, 32, 37, 41, 43, 47, 49, 53, 59, 61, 64, 67, 71, 73, 79, 81, 83, 89, 97, 101, 103, 107, 109, 113, 121, 125, 127, 128, 131, 137, 139, 149, 151, 157, 163, 167, 169, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227]]]\nGot:\n    Searching Sloane's online database...\n    [[27, 'The natural numbers. Also called the whole numbers, the counting numbers or the positive integers.', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]], [7953, 'Digital sum (i.e. sum of digits) of n.', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 8, 9, 10, 11, 12, 13, 14, 15]]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7087\n\n",
+    "closed_at": "2009-10-15T10:03:00Z",
     "created_at": "2009-10-01T02:29:25Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_007087.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "doctest failure in databases/sloane.py",
+    "title": "[with patch, positive review] doctest failure in databases/sloane.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7087",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
 
 Keywords: sloane doctest internet
 

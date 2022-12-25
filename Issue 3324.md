@@ -1,15 +1,16 @@
-# Issue 3324: [with patch, needs review] Matrix_mod2_dense to/from PNG routines
+# Issue 3324: [with patch, positive review] Matrix_mod2_dense to/from PNG routines
 
 archive/issues_003324.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: gd, linear algebra, gf(2)\n\n1-bit PNGs are a pretty sweet storage format for dense GF(2) matrices\n* they are intuitive (you can even look at them)\n* they are small (since the data is compressed for you)\n* other people wrote fast C libraries to deal with them.\n\nSo this patch adds `to_png` and `from_png` functions to  `sage.matrix.matrix_mod2_dense` and uses those to implement pickling/unpickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3324\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: gd, linear algebra, gf(2), editor_malb\n\n1-bit PNGs are a pretty sweet storage format for dense GF(2) matrices\n* they are intuitive (you can even look at them)\n* they are small (since the data is compressed for you)\n* other people wrote fast C libraries to deal with them.\n\nSo this patch adds `to_png` and `from_png` functions to  `sage.matrix.matrix_mod2_dense` and uses those to implement pickling/unpickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3324\n\n",
+    "closed_at": "2008-08-31T00:14:57Z",
     "created_at": "2008-05-28T19:07:24Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Matrix_mod2_dense to/from PNG routines",
+    "title": "[with patch, positive review] Matrix_mod2_dense to/from PNG routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3324",
     "user": "https://github.com/malb"
@@ -17,7 +18,7 @@ archive/issues_003324.json:
 ```
 Assignee: @williamstein
 
-Keywords: gd, linear algebra, gf(2)
+Keywords: gd, linear algebra, gf(2), editor_malb
 
 1-bit PNGs are a pretty sweet storage format for dense GF(2) matrices
 * they are intuitive (you can even look at them)

@@ -1,9 +1,10 @@
-# Issue 3858: [with patch, needs review] 3.1alpha: fix issues with the reference manual
+# Issue 3858: [with patch, positive review] 3.1alpha: fix issues with the reference manual
 
 archive/issues_003858.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: documentation, reference\n\nThis may be premature (and if it is, feel free to ignore/dispose of this ticket), but when I tried to build the reference manual in 3.1alpha, there were a bunch of small errors -- things like `\"\"\"` instead of `r\"\"\"`, immediately followed by a docstring using backslashes.  This patch fixes these.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3858\n\n",
+    "closed_at": "2008-08-15T09:45:53Z",
     "created_at": "2008-08-14T22:05:46Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_003858.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] 3.1alpha: fix issues with the reference manual",
+    "title": "[with patch, positive review] 3.1alpha: fix issues with the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3858",
     "user": "https://github.com/jhpalmieri"

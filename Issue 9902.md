@@ -4,6 +4,7 @@ archive/issues_009902.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe documentation for `Integer.is_prime()` should document the effect of the global proof.arithmetic flag. Similarly for the global `is_prime` function.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9903\n\n",
+    "closed_at": "2015-04-26T02:21:43Z",
     "created_at": "2010-09-13T17:29:07Z",
     "labels": [
         "component: documentation",

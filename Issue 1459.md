@@ -1,9 +1,10 @@
-# Issue 1459: [with patch] make notebook ?? behavior like command line behavior
+# Issue 1459: [with patch, positive review] make notebook ?? behavior like command line behavior
 
 archive/issues_001459.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nOn the command-line, if a class docstring is not found, then the one from __init__ is used.  This does not happen in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1459\n\n",
+    "closed_at": "2007-12-22T18:16:20Z",
     "created_at": "2007-12-11T10:43:44Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_001459.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[with patch] make notebook ?? behavior like command line behavior",
+    "title": "[with patch, positive review] make notebook ?? behavior like command line behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1459",
     "user": "https://github.com/mwhansen"

@@ -4,6 +4,7 @@ archive/issues_004230.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @kcrisman @benjaminfjones\n\nAt the moment, Sage uses Maxima to compute the Bessel Y function.  This is slow and works only with the default 53 bits of precision.  It would be fairly easy to implement this:\n\n* for integer values of the order nu, use the mpfr yn function\n* for non-integer values of nu, use the formula $Y_nu(z) = (J_nu(z)*cos(nu*pi) - J_{-nu}(z))/sin(nu*pi)$, where J is the Bessel J function.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4230\n\n",
+    "closed_at": "2013-02-17T20:10:19Z",
     "created_at": "2008-10-01T10:09:21Z",
     "labels": [
         "component: calculus",

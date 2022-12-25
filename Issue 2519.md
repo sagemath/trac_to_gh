@@ -1,15 +1,16 @@
-# Issue 2519: Add support for posets, semi-lattices, etc. to Sage
+# Issue 2519: [with patch; positive review] Add support for posets, semi-lattices, etc. to Sage
 
 archive/issues_002519.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2519\n\n",
+    "closed_at": "2008-05-23T00:07:04Z",
     "created_at": "2008-03-14T19:49:15Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Add support for posets, semi-lattices, etc. to Sage",
+    "title": "[with patch; positive review] Add support for posets, semi-lattices, etc. to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2519",
     "user": "https://github.com/saliola"

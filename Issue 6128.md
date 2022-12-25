@@ -1,4 +1,4 @@
-# Issue 6128: [with patch; needs review] Bug - sage-cleaner failed due to NULLs in spawned-processes files written by cleaner.py
+# Issue 6128: [with patch; needs work] Bug - sage-cleaner failed due to NULLs in spawned-processes files written by cleaner.py
 
 archive/issues_006128.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_006128.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch; needs review] Bug - sage-cleaner failed due to NULLs in spawned-processes files written by cleaner.py",
+    "title": "[with patch; needs work] Bug - sage-cleaner failed due to NULLs in spawned-processes files written by cleaner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6128",
     "user": "https://github.com/williamstein"

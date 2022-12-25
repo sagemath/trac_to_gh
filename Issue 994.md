@@ -4,6 +4,7 @@ archive/issues_000994.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe `__int__` method on the ntl_GF2X class is quite strange.   It takes the terms of the polynomial from x<sup>0</sup> to x<sup>31</sup> (or x<sup>63</sup>), and treats them as the bits of a machine long (in a non-portable way, depending on the endianness of the processor).\n\nPerhaps it should use all the terms, and return a Python long if necessary (in little-endian format, as documented for the conversion from Integer to GF2X)?  Or maybe the `__int__` method should not be implemented at all?\n\nIssue created by migration from https://trac.sagemath.org/ticket/994\n\n",
+    "closed_at": "2007-10-27T02:48:38Z",
     "created_at": "2007-10-25T05:15:01Z",
     "labels": [
         "component: algebraic geometry",

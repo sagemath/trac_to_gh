@@ -1,4 +1,4 @@
-# Issue 6635: implement more critical Hecke algebra functionality: index in saturation, discriminant
+# Issue 6635: [with patch; not ready for review] implement more critical Hecke algebra functionality: index in saturation, discriminant
 
 archive/issues_006635.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_006635.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "implement more critical Hecke algebra functionality: index in saturation, discriminant",
+    "title": "[with patch; not ready for review] implement more critical Hecke algebra functionality: index in saturation, discriminant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6635",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 3881: [with patch, needs review] Quiet three MPolynomialRing deprecation warnings
+# Issue 3881: [with patch, positive review] Quiet three MPolynomialRing deprecation warnings
 
 archive/issues_003881.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCurrently we have:\n\n```\nsage -t -long devel/sage/sage/rings/fraction_field_element.py\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_fraction_field_element.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n\n\nsage -t -long devel/sage/sage/modules/free_quadratic_module.py\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n```\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3881\n\n",
+    "closed_at": "2008-08-16T21:49:37Z",
     "created_at": "2008-08-16T21:20:17Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] Quiet three MPolynomialRing deprecation warnings",
+    "title": "[with patch, positive review] Quiet three MPolynomialRing deprecation warnings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3881",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

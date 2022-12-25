@@ -1,15 +1,16 @@
-# Issue 7539: primes.p0.spkg with "prime_sieve.c" functionality
+# Issue 7539: primesieve spkg
 
 archive/issues_007539.json:
 ```json
 {
-    "body": "Assignee: @ohanar\n\nCC:  kevin.stueve @robertwb @williamstein victor @nexttime @dimpase\n\nThis ticket was split away from #7013:\n\nLet's create a \"primes.p0.spkg\" (better names appreciated ...) which provides the \"prime_sieve.c\" code/functionality from T. Oliveira e Silva as a library.\n\nPrimary goal: The function \"primes_interval()\" from \"prime_sieve.c\" is accessible from a dynamic library \"libprimes.so\" resp. \"libprimes.dylib\" (resp. \"libprimes.dll\" if Cygwin is in our scope), which in turn compiles (and works correctly ...) on the platforms Sage supports, to be a part of future versions of Sage.\n\nSecondary goal: This spkg also provides (i.e. contains) certain precomputed tables from Kevin Stueve (which in a Sage installation will be installed under \"data/prime_pi_tables/\").\n\nTertiary goal: Provide the LMO code/functionality from Victor Miller in the same way, too. (Eventually outside the scope of this ticket, so potentially another follow-up ticket.)\n\nMaintainers till end 2010: Andrew Rohana, Georg S. Weber\n\nIssue created by migration from https://trac.sagemath.org/ticket/7539\n\n",
+    "body": "Assignee: @ohanar\n\nCC:  kevin.stueve @robertwb @williamstein victor @nexttime @dimpase\n\nThis ticket was split away from #7013:\n\nThe goal of this ticket is to create an spkg for primesieve (http://primesieve.googlecode.com) which provides the functionality of primesieve is a shared library.\n\nThe followup ticket is #25009\n\n\n---\n\nInstallation instructions:\n\n1. Add [https://primesieve.googlecode.com/files/primesieve-4.4.spkg:primesieve-4.4.spkg](https://primesieve.googlecode.com/files/primesieve-4.4.spkg:primesieve-4.4.spkg) to spkg/standard.\n2. Apply [attachment:02_primesieve-sage-main.patch] to the Sage library repository.\n3. Apply [attachment:primesieve-sage-root.patch] to the root repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7539\n\n",
+    "closed_at": "2021-12-03T18:41:01Z",
     "created_at": "2009-11-26T21:48:06Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "primes.p0.spkg with \"prime_sieve.c\" functionality",
+    "title": "primesieve spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7539",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
@@ -21,15 +22,18 @@ CC:  kevin.stueve @robertwb @williamstein victor @nexttime @dimpase
 
 This ticket was split away from #7013:
 
-Let's create a "primes.p0.spkg" (better names appreciated ...) which provides the "prime_sieve.c" code/functionality from T. Oliveira e Silva as a library.
+The goal of this ticket is to create an spkg for primesieve (http://primesieve.googlecode.com) which provides the functionality of primesieve is a shared library.
 
-Primary goal: The function "primes_interval()" from "prime_sieve.c" is accessible from a dynamic library "libprimes.so" resp. "libprimes.dylib" (resp. "libprimes.dll" if Cygwin is in our scope), which in turn compiles (and works correctly ...) on the platforms Sage supports, to be a part of future versions of Sage.
+The followup ticket is #25009
 
-Secondary goal: This spkg also provides (i.e. contains) certain precomputed tables from Kevin Stueve (which in a Sage installation will be installed under "data/prime_pi_tables/").
 
-Tertiary goal: Provide the LMO code/functionality from Victor Miller in the same way, too. (Eventually outside the scope of this ticket, so potentially another follow-up ticket.)
+---
 
-Maintainers till end 2010: Andrew Rohana, Georg S. Weber
+Installation instructions:
+
+1. Add [https://primesieve.googlecode.com/files/primesieve-4.4.spkg:primesieve-4.4.spkg](https://primesieve.googlecode.com/files/primesieve-4.4.spkg:primesieve-4.4.spkg) to spkg/standard.
+2. Apply [attachment:02_primesieve-sage-main.patch] to the Sage library repository.
+3. Apply [attachment:primesieve-sage-root.patch] to the root repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7539
 

@@ -4,6 +4,7 @@ archive/issues_009528.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nIf you have any version of sage < version 4.5, and you try to upgrade to sage-4.5, the addition of a file pipestatus in #8306 means that your upgrade will instantly and totally break.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9528\n\n",
+    "closed_at": "2010-07-19T11:20:55Z",
     "created_at": "2010-07-17T12:24:55Z",
     "labels": [
         "component: build",

@@ -3,7 +3,8 @@
 archive/issues_008078.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @orlitzky\n\nKeywords: solve, inequality\n\nSage with patch #7325 fails to solve some simple ineqaulitites\n\n```\nsage: solve(x^4+2>0,x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\nThis should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8078\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @orlitzky\n\nKeywords: solve, inequality, beginner\n\nSage with patch #7325 fails to solve some simple ineqaulitites\n\n```\nsage: solve(x^4+2>0,x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\nThis should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8078\n\n",
+    "closed_at": "2011-12-22T13:06:21Z",
     "created_at": "2010-01-26T12:37:46Z",
     "labels": [
         "component: symbolics",
@@ -20,7 +21,7 @@ Assignee: @burcin
 
 CC:  @kcrisman @orlitzky
 
-Keywords: solve, inequality
+Keywords: solve, inequality, beginner
 
 Sage with patch #7325 fails to solve some simple ineqaulitites
 

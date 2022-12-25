@@ -3,7 +3,8 @@
 archive/issues_006961.json:
 ```json
 {
-    "body": "From sage-support:\n\n```\nOn Fri, 18 Sep 2009 15:47:45 -0700 (PDT)\nThe_Fool <masterfulet@yahoo.com> wrote:\n\n> While working with the derivative of the Gamma function, the digamma\n> function is obviously involved.  The sage \"diff\" function does show \u0393\n> '(x) == \u0393(x)\u03c8(x) like it should, however, the digamma function (called\n> psi in sage) is not defined whenever I try to do anything with it.  It\n> seems as if only the output of \"diff\" can use this function.\n```\n\n`psi()` is defined in GiNaC, but we don't provide wrappers for it.\n\nDefining a function `psi`, similar to the way `arctan2` is defined in line 422 of `sage/functions/trig.py` should fix this.\n\n\nThe sage-support thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/1ad313c921b7dbc0\n\nIssue created by migration from https://trac.sagemath.org/ticket/6961\n\n",
+    "body": "Keywords: psi, gamma, digamma, polygamma\n\nFrom sage-support:\n\n```\nOn Fri, 18 Sep 2009 15:47:45 -0700 (PDT)\nThe_Fool <masterfulet@yahoo.com> wrote:\n\n> While working with the derivative of the Gamma function, the digamma\n> function is obviously involved.  The sage \"diff\" function does show \u0393\n> '(x) == \u0393(x)\u03c8(x) like it should, however, the digamma function (called\n> psi in sage) is not defined whenever I try to do anything with it.  It\n> seems as if only the output of \"diff\" can use this function.\n```\n\n`psi()` is defined in GiNaC, but we don't provide wrappers for it.\n\nDefining a function `psi`, similar to the way `arctan2` is defined in line 422 of `sage/functions/trig.py` should fix this.\n\n\nThe sage-support thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/1ad313c921b7dbc0\n\nIssue created by migration from https://trac.sagemath.org/ticket/6961\n\n",
+    "closed_at": "2010-02-18T21:57:09Z",
     "created_at": "2009-09-19T15:32:32Z",
     "labels": [
         "component: symbolics"
@@ -15,6 +16,8 @@ archive/issues_006961.json:
     "user": "https://github.com/burcin"
 }
 ```
+Keywords: psi, gamma, digamma, polygamma
+
 From sage-support:
 
 ```

@@ -3,11 +3,11 @@
 archive/issues_003889.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec\n\nNumber field element sqrt should support the extend parameter in analogy with other sqrt functions.\n\n```\nsage: ZZ(4).sqrt(extend=False)\n2\nsage: CyclotomicField(4)(4).sqrt(extend=False)\n...\nTypeError: 'extend' is an invalid keyword argument for this function\n```\n\nIf it would even have the parameter and raise a NotImplementedError if extend==True, that would aid in writing generic code for the present.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3889\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @tscrim @videlec\n\nNumber field element sqrt should support the extend parameter in analogy with other sqrt functions.\n\n```\nsage: ZZ(4).sqrt(extend=False)\n2\nsage: CyclotomicField(4)(4).sqrt(extend=False)\n...\nTypeError: sqrt() got an unexpected keyword argument 'extend'\n```\n\nIf it would even have the parameter and raise a NotImplementedError if extend==True, that would aid in writing generic code for the present.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3889\n\n",
+    "closed_at": "2021-01-24T10:37:53Z",
     "created_at": "2008-08-18T13:50:47Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "extend parameter for number field sqrt method",
@@ -16,7 +16,7 @@ archive/issues_003889.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @tscrim @videlec
 
@@ -27,7 +27,7 @@ sage: ZZ(4).sqrt(extend=False)
 2
 sage: CyclotomicField(4)(4).sqrt(extend=False)
 ...
-TypeError: 'extend' is an invalid keyword argument for this function
+TypeError: sqrt() got an unexpected keyword argument 'extend'
 ```
 
 If it would even have the parameter and raise a NotImplementedError if extend==True, that would aid in writing generic code for the present.

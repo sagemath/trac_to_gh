@@ -1,9 +1,10 @@
-# Issue 1170: Behaviour of the order function for infinite groups
+# Issue 1170: [with patch, positive review] Behaviour of the order function for infinite groups
 
 archive/issues_001170.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen one tries to use the order function on group elements of infinite order, one gets an error:\n\ngl=GL(2,ZZ)\ng=gl.gens()[2]\ng.order()\n\nIn MAGMA, one (often) gets the answer 0 if one calls the Order function on elements of infinite order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1170\n\n",
+    "closed_at": "2008-09-04T23:22:38Z",
     "created_at": "2007-11-14T15:02:07Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_001170.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Behaviour of the order function for infinite groups",
+    "title": "[with patch, positive review] Behaviour of the order function for infinite groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1170",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"

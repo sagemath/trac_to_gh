@@ -3,11 +3,12 @@
 archive/issues_006151.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThe following was reported by kskedl on sage-support.  I can replicate it on the 64-bit fedora 10 vmware machine on boxen.math. \n\nI'll attach a big traceback below.  Note that surprisingly tab completing in \"sage -ipython\" does work. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6151\n\n",
+    "body": "Assignee: @mwhansen\n\nThe following was reported by kskedl on sage-support.  I can replicate it on the 64-bit fedora 10 vmware machine on boxen.math. \n\nI'll attach a big traceback below.  Note that surprisingly tab completing in \"sage -ipython\" does work. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6151\n\n",
+    "closed_at": "2009-05-29T13:38:56Z",
     "created_at": "2009-05-28T17:56:51Z",
     "labels": [
         "component: misc",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
@@ -17,7 +18,7 @@ archive/issues_006151.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
 The following was reported by kskedl on sage-support.  I can replicate it on the 64-bit fedora 10 vmware machine on boxen.math. 
 

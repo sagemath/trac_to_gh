@@ -3,7 +3,8 @@
 archive/issues_006136.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: free modules, categories, tensor, direct sum\n\nSee: http://combinat.sagemath.org/patches/file/tip/categories-freemodule-nt.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/6136\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: free modules, categories, tensor, direct sum\n\n- Deprecates CombinatorialAlgebra\n- Abstracts some of the generic code into ModulesWithBasis, Algebras, ...\n- Implements the functorial constructions: tensor and cartesian product\n- Stronger type checking, use UniqueRepresentation\n- Disabled dangerous conversions (see doc of _element_constructor), strict __contains__\n- Naming cleanup: _term -> term, __repr__ -> _repr_, _element_class -> element_class\n  _combinatorial_class -> _basis_keys\n- New methods: monomial, sum_of_terms, sum_of_monomials, term_or_zero_if_none, from_vector,\n  _repr_term, _repr_option_bracket\n- More interesting an_element, using heuristics\n- Handle non sortable objects in repr\n- Implements sage.categories.poor_man_map.PoorManMap for maps between\n  sets which are not modelled by parents.\n- This is used to make term and sum_of_monomial into maps, with\n  codomain and composition.\n\nDepends on the category patches.\nSee http://trac.sagemath.org/sage_trac/wiki/CategoriesRoadMap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6136\n\n",
+    "closed_at": "2009-11-19T16:59:21Z",
     "created_at": "2009-05-27T05:11:16Z",
     "labels": [
         "component: algebra"
@@ -21,7 +22,24 @@ CC:  sage-combinat
 
 Keywords: free modules, categories, tensor, direct sum
 
-See: http://combinat.sagemath.org/patches/file/tip/categories-freemodule-nt.patch
+- Deprecates CombinatorialAlgebra
+- Abstracts some of the generic code into ModulesWithBasis, Algebras, ...
+- Implements the functorial constructions: tensor and cartesian product
+- Stronger type checking, use UniqueRepresentation
+- Disabled dangerous conversions (see doc of _element_constructor), strict __contains__
+- Naming cleanup: _term -> term, __repr__ -> _repr_, _element_class -> element_class
+  _combinatorial_class -> _basis_keys
+- New methods: monomial, sum_of_terms, sum_of_monomials, term_or_zero_if_none, from_vector,
+  _repr_term, _repr_option_bracket
+- More interesting an_element, using heuristics
+- Handle non sortable objects in repr
+- Implements sage.categories.poor_man_map.PoorManMap for maps between
+  sets which are not modelled by parents.
+- This is used to make term and sum_of_monomial into maps, with
+  codomain and composition.
+
+Depends on the category patches.
+See http://trac.sagemath.org/sage_trac/wiki/CategoriesRoadMap.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6136
 

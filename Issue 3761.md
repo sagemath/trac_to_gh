@@ -1,9 +1,10 @@
-# Issue 3761: don't allow a sage binary to run if the processor instruction set doesn't support everything that was on the machine where sage was built
+# Issue 3761: [with patch; positive review] warning when run sage binary if the processor instruction set doesn't support everything that was on the machine where sage was built
 
 archive/issues_003761.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nHaving this in sage-support nearly *every day* is getting really old:\n\n```\ni get to install sage in my xubuntu (ubuntu with xfce) but when i try\nto do a simple plot, i get this error message\n\nxinelo@chacal:~/packages/sage-3.0.5-i686-Linux$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH\n(\nit at most a few minutes)...\nPlease do not interrupt this.\nSetting permissions of DOT_SAGE directory so only you can read and\nwrit\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nILLEGAL INSTRUCTION...\nsomeone can help me?\nthanks\n```\n\nI propose that on linux systems when the script that\ndoes the \"The SAGE install tree may have moved.\" stuff is run,\nSage also does this:\n\n```\nsage@modular:~$ cat /proc/cpuinfo |grep flags|tail -1\nflags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext lm 3dnowext 3dnow up\n```\nand if there are any flags that were on the system where sage was -bdist'd, but which aren't on the current machine, then a big message that this binary won't work is displayed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3761\n\n",
+    "closed_at": "2008-11-15T04:58:21Z",
     "created_at": "2008-08-02T20:06:01Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_003761.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "don't allow a sage binary to run if the processor instruction set doesn't support everything that was on the machine where sage was built",
+    "title": "[with patch; positive review] warning when run sage binary if the processor instruction set doesn't support everything that was on the machine where sage was built",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3761",
     "user": "https://github.com/williamstein"

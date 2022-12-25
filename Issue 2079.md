@@ -1,16 +1,18 @@
-# Issue 2079: /= does not work for univariate polynomials
+# Issue 2079: [with patch, very positive review] /= does not work for univariate polynomials
 
 archive/issues_002079.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @robertwb\n\n```\nsage: R.<x> = QQ[]\nsage: a = 2*x^2+2; a\n2*x^2 + 2\nsage: a /= 2\nsage: a\n2*x^2 + 2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2079\n\n",
+    "closed_at": "2008-02-19T14:56:10Z",
     "created_at": "2008-02-07T05:24:30Z",
     "labels": [
         "component: basic arithmetic",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "/= does not work for univariate polynomials",
+    "title": "[with patch, very positive review] /= does not work for univariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2079",
     "user": "https://github.com/mwhansen"

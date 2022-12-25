@@ -4,6 +4,7 @@ archive/issues_000286.json:
 ```json
 {
     "body": "Assignee: Bobby Moretti\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/286\n\n",
+    "closed_at": "2007-08-10T19:32:34Z",
     "created_at": "2007-02-24T02:39:00Z",
     "labels": [
         "component: calculus"

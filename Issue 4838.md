@@ -3,7 +3,8 @@
 archive/issues_004838.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: plot complex number\n\nIt would be nice to be able to do:\n\n```\nsage: CC(3-2*I).plot()\n```\n\nwhich would return a plot object of the point 3-2*I.  I guess it just needs to wrap the normal plot of a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4838\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot complex number\n\nIt would be nice to be able to do:\n\n```\nsage: CC(3-2*I).plot()\n```\n\nwhich would return a plot object of the point 3-2*I.  I guess it just needs to wrap the normal plot of a point.\n\nsee also see also [#8082](http://trac.sagemath.org/sage_trac/attachment/ticket/8082/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4838\n\n",
+    "closed_at": "2010-02-11T14:57:13Z",
     "created_at": "2008-12-20T16:47:25Z",
     "labels": [
         "component: graphics",
@@ -27,6 +28,8 @@ sage: CC(3-2*I).plot()
 ```
 
 which would return a plot object of the point 3-2*I.  I guess it just needs to wrap the normal plot of a point.
+
+see also see also [#8082](http://trac.sagemath.org/sage_trac/attachment/ticket/8082/)
 
 Issue created by migration from https://trac.sagemath.org/ticket/4838
 

@@ -3,7 +3,8 @@
 archive/issues_001396.json:
 ```json
 {
-    "body": "Assignee: @malb\n\ne.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1396\n\n",
+    "body": "Assignee: @malb\n\nKeywords: libSingular options\n\ne.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1396\n\n",
+    "closed_at": "2010-07-21T01:46:37Z",
     "created_at": "2007-12-04T15:39:11Z",
     "labels": [
         "component: commutative algebra",
@@ -17,6 +18,8 @@ archive/issues_001396.json:
 }
 ```
 Assignee: @malb
+
+Keywords: libSingular options
 
 e.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).
 

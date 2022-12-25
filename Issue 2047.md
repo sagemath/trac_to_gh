@@ -1,15 +1,16 @@
-# Issue 2047: [with patch] new fast float evaluation framework does not work with multivariate polynomials
+# Issue 2047: [with patch; positive review] new fast float evaluation framework does not work with multivariate polynomials
 
 archive/issues_002047.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nTrying to use fast float evaluation with multivariate polynomials gives error messages like:\n\n```\n    AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute '_fast_float_'\n```\n\nThe attached patch fixes this, so that fast float evaluation works with multivariate polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2047\n\n",
+    "closed_at": "2008-02-07T05:25:42Z",
     "created_at": "2008-02-05T02:42:26Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch] new fast float evaluation framework does not work with multivariate polynomials",
+    "title": "[with patch; positive review] new fast float evaluation framework does not work with multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2047",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

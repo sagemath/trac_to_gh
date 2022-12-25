@@ -1,16 +1,17 @@
-# Issue 1107: [with patch] add minkowski bound function for number fields
+# Issue 1107: [with patch, with positive review] add minkowski bound function for number fields
 
 archive/issues_001107.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAdd computation of Minkowski bound to number fields (very simple). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1107\n\n",
+    "closed_at": "2007-12-01T11:30:21Z",
     "created_at": "2007-11-05T21:29:44Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] add minkowski bound function for number fields",
+    "title": "[with patch, with positive review] add minkowski bound function for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1107",
     "user": "https://github.com/williamstein"

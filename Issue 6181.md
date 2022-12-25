@@ -3,7 +3,8 @@
 archive/issues_006181.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIf you extract r-2.6.1.p22.spkg on Linux with \"tar jxvf\" you'll see lots of stuff like this:\n\n```\nr-2.6.1.p22/src/src/library/grid/man/grid.layout.Rd\nr-2.6.1.p22/src/src/library/grid/man/._grid.lines.Rd\nr-2.6.1.p22/src/src/library/grid/man/grid.lines.Rd\nr-2.6.1.p22/src/src/library/grid/man/._grid.locator.Rd\nr-2.6.1.p22/src/src/library/grid/man/grid.locator.Rd\nr-2.6.1.p22/src/src/library/grid/man/._grid.ls.Rd\nr-2.6.1.p22/src/src/library/grid/man/grid.ls.Rd\n```\n\nThese ._ files are all caused by making the tarball on OS X, and shouldn't be there. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6181\n\n",
+    "body": "Assignee: @jasongrout\n\nIf you extract r-2.6.1.p22.spkg on Linux with \"tar jxvf\" you'll see lots of stuff like this:\n\n```\nr-2.6.1.p22/src/src/library/grid/man/grid.layout.Rd\nr-2.6.1.p22/src/src/library/grid/man/._grid.lines.Rd\nr-2.6.1.p22/src/src/library/grid/man/grid.lines.Rd\nr-2.6.1.p22/src/src/library/grid/man/._grid.locator.Rd\nr-2.6.1.p22/src/src/library/grid/man/grid.locator.Rd\nr-2.6.1.p22/src/src/library/grid/man/._grid.ls.Rd\nr-2.6.1.p22/src/src/library/grid/man/grid.ls.Rd\n```\n\nThese ._ files are all caused by making the tarball on OS X, and shouldn't be there. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6181\n\n",
+    "closed_at": "2009-10-01T05:51:40Z",
     "created_at": "2009-06-02T06:35:41Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_006181.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @jasongrout
 
 If you extract r-2.6.1.p22.spkg on Linux with "tar jxvf" you'll see lots of stuff like this:
 

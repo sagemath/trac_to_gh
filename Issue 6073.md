@@ -1,9 +1,10 @@
-# Issue 6073: Developer guide somewhat wrong about cython extensions
+# Issue 6073: [with patch, positive review] Developer guide somewhat wrong about cython extensions
 
 archive/issues_006073.json:
 ```json
 {
     "body": "Assignee: tba\n\nIn the developer guide, in the \"Coding in other languages\" section, it says that Cython pyx files should be added to setup.py, but they should really be added to module_list.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6073\n\n",
+    "closed_at": "2009-06-24T10:09:43Z",
     "created_at": "2009-05-18T18:09:02Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006073.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Developer guide somewhat wrong about cython extensions",
+    "title": "[with patch, positive review] Developer guide somewhat wrong about cython extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6073",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

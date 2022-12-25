@@ -1,16 +1,17 @@
-# Issue 8168: Keyword option to keep reset() from detaching all attached files
+# Issue 8168: Keyword option to make reset() detach all attached files
 
 archive/issues_008168.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWith this option, one can put `reset(attached=False)` at the top of an attached file.  This resets the global variables and interfaces but not the list of attached files.  Otherwise, the file detaches itself.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7a43d2944dc35674#).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8168\n\n",
+    "body": "Assignee: tbd\n\nWith this option, one can put `reset(attached=False)` at the top of an attached file.  This resets the global variables and interfaces but not the list of attached files.  Otherwise, the file detaches itself.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7a43d2944dc35674#).\n\n**Apply** [attachment:trac_8168-attached_reset.4.patch] (I presume)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8168\n\n",
+    "closed_at": "2011-12-22T13:06:15Z",
     "created_at": "2010-02-03T09:58:21Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
-    "title": "Keyword option to keep reset() from detaching all attached files",
+    "title": "Keyword option to make reset() detach all attached files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8168",
     "user": "https://github.com/qed777"
@@ -21,6 +22,8 @@ Assignee: tbd
 With this option, one can put `reset(attached=False)` at the top of an attached file.  This resets the global variables and interfaces but not the list of attached files.  Otherwise, the file detaches itself.
 
 See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7a43d2944dc35674#).
+
+**Apply** [attachment:trac_8168-attached_reset.4.patch] (I presume)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8168
 

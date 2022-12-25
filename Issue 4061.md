@@ -1,9 +1,10 @@
-# Issue 4061: coercion from torsion subgroup of elliptic curve to elliptic curve is broken
+# Issue 4061: [with new patch, positive review] coercion from torsion subgroup of elliptic curve to elliptic curve is broken
 
 archive/issues_004061.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe traceback at the bottom shouldn't happen, IMHO.\n\n```\nsage: E = EllipticCurve([0,1,0,72,-368]); E\nElliptic Curve defined by y^2  = x^3 + x^2 + 72*x - 368 over Rational Field\nsage: T = E.torsion_subgroup(); T\nTorsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 associated to the Elliptic Curve defined by y^2  = x^3 + x^2 + 72*x - 368 over Rational Field\nsage: [n*T.0 for n in range(6)]\n[(0 : 1 : 0), (36 : 224 : 1), (8 : 28 : 1), (4 : 0 : 1), (8 : -28 : 1), (36 : -224 : 1)]\nsage: [E(z) for z in T]\nTraceback (most recent call last):\n...\nTypeError: v (=(1,)) must have 3 components\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4061\n\n",
+    "closed_at": "2008-12-07T09:59:06Z",
     "created_at": "2008-09-04T14:03:52Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004061.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "coercion from torsion subgroup of elliptic curve to elliptic curve is broken",
+    "title": "[with new patch, positive review] coercion from torsion subgroup of elliptic curve to elliptic curve is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4061",
     "user": "https://github.com/williamstein"

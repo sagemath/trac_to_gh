@@ -1,9 +1,10 @@
-# Issue 3291: [with patch, needs review] pbuild doesn't properly compile mwrank.so on some systems
+# Issue 3291: [with patch, positive review] pbuild doesn't properly compile mwrank.so on some systems
 
 archive/issues_003291.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nOn some systems pbuild seems to leave out wrap.o of mwrank.so, resulting in a undefined symbol error\n\nIssue created by migration from https://trac.sagemath.org/ticket/3291\n\n",
+    "closed_at": "2008-05-24T00:27:43Z",
     "created_at": "2008-05-23T22:38:03Z",
     "labels": [
         "component: pbuild",
@@ -11,7 +12,7 @@ archive/issues_003291.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] pbuild doesn't properly compile mwrank.so on some systems",
+    "title": "[with patch, positive review] pbuild doesn't properly compile mwrank.so on some systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3291",
     "user": "https://github.com/garyfurnish"

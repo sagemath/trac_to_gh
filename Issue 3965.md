@@ -1,16 +1,17 @@
-# Issue 3965: [with patch, needs review] one line fix for PolyBoRi to Magma conversion
+# Issue 3965: [with patch, positive review] one line fix for PolyBoRi to Magma conversion
 
 archive/issues_003965.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nKeywords: polybori\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3965\n\n",
+    "closed_at": "2008-08-27T21:28:21Z",
     "created_at": "2008-08-27T14:49:58Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] one line fix for PolyBoRi to Magma conversion",
+    "title": "[with patch, positive review] one line fix for PolyBoRi to Magma conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3965",
     "user": "https://github.com/malb"

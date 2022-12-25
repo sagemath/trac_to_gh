@@ -1,22 +1,23 @@
-# Issue 4835: pari starts up without inititializing enough primes?
+# Issue 4835: pari starts up without initializing enough primes?
 
 archive/issues_004835.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIn 3.2.2, this looks ok:\n\n```\nsage: pari.default(\"primelimit\")\n500000\n```\nbut nevertheless,\n\n```\nsage: K.<zeta>=CyclotomicField(23)\nsage: K.ideal(2).factor()\n...\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n...\nPariError: not enough precomputed primes, need primelimit ~  (35)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4835\n\n",
+    "body": "Assignee: @williamstein\n\nIn 3.2.2, this looks ok:\n\n```\nsage: pari.default(\"primelimit\")\n500000\n```\nbut nevertheless,\n\n```\nsage: K.<zeta>=CyclotomicField(23)\nsage: K.ideal(2).factor()\n...\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n...\nPariError: not enough precomputed primes, need primelimit ~  (35)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4835\n\n",
+    "closed_at": "2010-09-10T10:50:13Z",
     "created_at": "2008-12-20T12:05:51Z",
     "labels": [
-        "component: algebra",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "pari starts up without inititializing enough primes?",
+    "title": "pari starts up without initializing enough primes?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4835",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 In 3.2.2, this looks ok:
 

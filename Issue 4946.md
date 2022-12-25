@@ -1,9 +1,10 @@
-# Issue 4946: readline on opensuse11 64-bit still doesn't work
+# Issue 4946: [with spkg, positive review] readline on opensuse11 64-bit still doesn't work
 
 archive/issues_004946.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn opensuse64 (a sage.math vmware machine):\n\n```\nOverwriting libreadline.so.5.2 with the system one\ncp: cannot stat `/lib/libreadline.so.5.2': No such file or directory\nReadline's build claims to have finished, but files that should have been built weren't.\n\nreal    3m23.513s\nuser    0m15.741s\nsys     0m23.429s\nsage: An error occurred while installing readline-5.2.p5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/build/opensuse64/build/sage-3.2.3/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wstein/build/opensuse64/build/sage-3.2.3/spkg/build/readline-5.2.p5 and type 'make'.\nInstead type \"/home/wstein/build/opensuse64/build/sage-3.2.3/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/build/opensuse64/build/sage-3.2.3/spkg/build/readline-5.2.p5\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/readline-5.2.p5] Error 1\nmake[1]: Leaving directory `/home/wstein/build/opensuse64/build/sage-3.2.3/spkg'\n\nreal    4m7.156s\nuser    0m16.409s\nsys     0m23.905s\n. local/bin/sage-env && sage-starts && sage-maketest\nTesting that Sage starts...\n/usr/bin/env: sage.bin: No such file or directory\nTraceback (most recent call last):\n  File \"/home/wstein/build/opensuse64/build/sage-3.2.3/local/bin/sage-eval\", line 4, in <module>\n    from sage.all import *\nImportError: No module named sage.all\nSage failed to startup.\nmake: *** [check] Error 1\nwstein@opensuse64:~/build/opensuse64$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4946\n\n",
+    "closed_at": "2009-02-03T01:05:19Z",
     "created_at": "2009-01-07T00:12:43Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004946.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "readline on opensuse11 64-bit still doesn't work",
+    "title": "[with spkg, positive review] readline on opensuse11 64-bit still doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4946",
     "user": "https://github.com/williamstein"

@@ -3,11 +3,12 @@
 archive/issues_008320.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nWe can use Sphinx's [html_short_title setting](http://sphinx.pocoo.org/config.html#confval-html_short_title) to [try to] keep links from overflowing the header and footer.\n\nFor example, instead of \"Sage Reference Manual v4.3.3,\" we can use \"Reference v4.3.3.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/8320\n\n",
+    "body": "Assignee: mvngu\n\nWe can use Sphinx's [html_short_title setting](http://sphinx.pocoo.org/config.html#confval-html_short_title) to [try to] keep links from overflowing the header and footer.\n\nThis could be useful for devices with small-screen or large fonts (e.g., for accessibility).\n\nFor example, instead of \"Sage Reference Manual v4.3.3,\" we can use \"Reference v4.3.3,\" which should help for deeply nested pages.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8320\n\n",
+    "closed_at": "2010-03-02T22:19:42Z",
     "created_at": "2010-02-21T19:59:15Z",
     "labels": [
         "component: documentation",
-        "minor",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
@@ -21,7 +22,9 @@ Assignee: mvngu
 
 We can use Sphinx's [html_short_title setting](http://sphinx.pocoo.org/config.html#confval-html_short_title) to [try to] keep links from overflowing the header and footer.
 
-For example, instead of "Sage Reference Manual v4.3.3," we can use "Reference v4.3.3."
+This could be useful for devices with small-screen or large fonts (e.g., for accessibility).
+
+For example, instead of "Sage Reference Manual v4.3.3," we can use "Reference v4.3.3," which should help for deeply nested pages.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8320
 

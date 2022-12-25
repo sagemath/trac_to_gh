@@ -1,16 +1,17 @@
-# Issue 2813: Add keycodes to split / join cells.
+# Issue 2813: [with patch, positive review] Add keycodes to split / join cells.
 
 archive/issues_002813.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nFrom: Andrey Novoseltsev\nSubject: [sage-devel] Cell splitting/merging in notebook\n\n\nIs it possible to realize some convenient and fast (in the sense of\nkeyboard use) cell splitting/merging? It seems to me that now it\ninvolves manual copying of a part of code and creating/removing a\ncell, or editing the text representation. I really liked the ability\nto do it in Maple (back when I was using it ;-) by pressing some hot\nkeys since it allows you to group cells for executing in one step and\nnicer visual presentation or break them back when you want to interact\nwith intermediate values.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2813\n\n",
+    "closed_at": "2008-04-06T06:54:20Z",
     "created_at": "2008-04-05T19:30:19Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Add keycodes to split / join cells.",
+    "title": "[with patch, positive review] Add keycodes to split / join cells.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2813",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

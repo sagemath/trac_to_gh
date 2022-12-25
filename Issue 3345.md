@@ -1,24 +1,25 @@
-# Issue 3345: trace no longer works in 3.0.2
+# Issue 3345: [with patch, positive review] trace no longer works in 3.0.2
 
 archive/issues_003345.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nKeywords: trace\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: trace('2 + 2')\n> <string>(1)<module>()\n(Pdb) s\n--Return--\n> <string>(1)<module>()->4\n(Pdb) s\n4\n```\nBut now\n| SAGE Version 3.0.1, Release Date: 2008-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: trace('2 + 2')\n> <string>(1)<module>()\n(Pdb) s\nNameError: \"name 'Integer' is not defined\"\n> <string>(1)<module>()\n(Pdb) s\n--Return--\n> <string>(1)<module>()->None\n(Pdb) s\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/mafwc/<ipython console> in <module>()\n\n/Users/mafwc/sage-3.0.2/local/lib/python2.5/site-packages/sage/misc/trace.py in trace(code, preparse)\n     41     \"\"\"\n     42     code = preparser.preparse(code)\n---> 43     return pdb.runeval(code)\n     44 \n     45     # this could also be useful; it drops\n\n/Users/mafwc/sage-3.0.2/local/lib/python2.5/pdb.py in runeval(expression, globals, locals)\n   1144 \n   1145 def runeval(expression, globals=None, locals=None):\n-> 1146     return Pdb().runeval(expression, globals, locals)\n   1147 \n   1148 def runctx(statement, globals, locals):\n\n/Users/mafwc/sage-3.0.2/local/lib/python2.5/bdb.py in runeval(self, expr, globals, locals)\n    383         try:\n    384             try:\n--> 385                 return eval(expr, globals, locals)\n    386             except BdbQuit:\n    387                 pass\n\n/Users/mafwc/<string> in <module>()\n\nNameError: name 'Integer' is not defined\n``` \n\nIt seems that in 3.0.2 nothing is defined inside trace.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3345\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: trace, editor_mhansen\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: trace('2 + 2')\n> <string>(1)<module>()\n(Pdb) s\n--Return--\n> <string>(1)<module>()->4\n(Pdb) s\n4\n```\nBut now\n| SAGE Version 3.0.1, Release Date: 2008-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: trace('2 + 2')\n> <string>(1)<module>()\n(Pdb) s\nNameError: \"name 'Integer' is not defined\"\n> <string>(1)<module>()\n(Pdb) s\n--Return--\n> <string>(1)<module>()->None\n(Pdb) s\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/mafwc/<ipython console> in <module>()\n\n/Users/mafwc/sage-3.0.2/local/lib/python2.5/site-packages/sage/misc/trace.py in trace(code, preparse)\n     41     \"\"\"\n     42     code = preparser.preparse(code)\n---> 43     return pdb.runeval(code)\n     44 \n     45     # this could also be useful; it drops\n\n/Users/mafwc/sage-3.0.2/local/lib/python2.5/pdb.py in runeval(expression, globals, locals)\n   1144 \n   1145 def runeval(expression, globals=None, locals=None):\n-> 1146     return Pdb().runeval(expression, globals, locals)\n   1147 \n   1148 def runctx(statement, globals, locals):\n\n/Users/mafwc/sage-3.0.2/local/lib/python2.5/bdb.py in runeval(self, expr, globals, locals)\n    383         try:\n    384             try:\n--> 385                 return eval(expr, globals, locals)\n    386             except BdbQuit:\n    387                 pass\n\n/Users/mafwc/<string> in <module>()\n\nNameError: name 'Integer' is not defined\n``` \n\nIt seems that in 3.0.2 nothing is defined inside trace.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3345\n\n",
+    "closed_at": "2008-07-21T22:56:34Z",
     "created_at": "2008-05-31T22:01:56Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "trace no longer works in 3.0.2",
+    "title": "[with patch, positive review] trace no longer works in 3.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3345",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
-Keywords: trace
+Keywords: trace, editor_mhansen
 
 ```
 ----------------------------------------------------------------------

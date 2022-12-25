@@ -4,6 +4,7 @@ archive/issues_009877.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nAfter exposing the symbolic zeta function at the top level in #8864, we get:\n\n```\nsage: zeta(1)\nzeta(1)\n```\n\nWe should return unsigned infinity in this case.\n\nSee also #5739.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9878\n\n",
+    "closed_at": "2010-10-06T03:20:07Z",
     "created_at": "2010-09-09T08:19:55Z",
     "labels": [
         "component: symbolics",

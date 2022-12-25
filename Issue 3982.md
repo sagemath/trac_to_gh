@@ -1,16 +1,17 @@
-# Issue 3982: [with patch, needs review] Pipe stdout to /dev/null to help sage_timeit with "print" statements
+# Issue 3982: [with patch, positive review] Pipe stdout to /dev/null to help sage_timeit with "print" statements
 
 archive/issues_003982.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3982\n\n",
+    "closed_at": "2008-08-29T00:18:33Z",
     "created_at": "2008-08-28T23:32:53Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Pipe stdout to /dev/null to help sage_timeit with \"print\" statements",
+    "title": "[with patch, positive review] Pipe stdout to /dev/null to help sage_timeit with \"print\" statements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3982",
     "user": "https://github.com/rlmill"

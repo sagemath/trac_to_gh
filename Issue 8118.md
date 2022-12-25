@@ -3,10 +3,11 @@
 archive/issues_008118.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @williamstein @robertwb @roed314\n\nKeywords: elliptic curve, galois representation, modular parametrization\n\nThe file ell_rational_field.py is huge and should be split up further. This is especially important for the documentation, currently it is not very user-friendy to find a function in the reference.\n\nI propose a first change.\n\n* The modular paratrization class goes into a separate file. (maybe the modular_degree should mover there too ?)\n\n* The functions concerning the Galois representation are moved to a separate field. I changed the functions like `is_surjective` and `is_irreducible` to deprecated. I believe for instance the latter clashes with the irreducibility of the scheme E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8118\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @williamstein @robertwb @roed314\n\nKeywords: elliptic curve, galois representation, modular parametrization\n\nThe file ell_rational_field.py is huge and should be split up further. This is especially important for the documentation, currently it is not very user-friendy to find a function in the reference.\n\nI propose a first change.\n\n* The modular paratrization class goes into a separate file. (maybe the modular_degree should mover there too ?)\n\n* The functions concerning the Galois representation are moved to a separate field. I changed the functions like `is_surjective` and `is_irreducible` to deprecated. I believe for instance the latter clashes with the irreducibility of the scheme E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8118\n\n",
+    "closed_at": "2010-02-18T21:26:29Z",
     "created_at": "2010-01-29T15:05:17Z",
     "labels": [
-        "component: algebra",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -16,7 +17,7 @@ archive/issues_008118.json:
     "user": "https://github.com/categorie"
 }
 ```
-Assignee: @aghitza
+Assignee: @JohnCremona
 
 CC:  @JohnCremona @williamstein @robertwb @roed314
 

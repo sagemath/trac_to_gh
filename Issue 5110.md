@@ -4,6 +4,7 @@ archive/issues_005110.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee the patches at #3704, which rewrite diagonal_matrix.  On that ticket, however, we finally just went with a basic patch that fixed the specific bug mentioned.  There is good code in the other patches that ought to be used, though.  This ticket is here so that we eventually use the cleaner rewrite contained in the first patches at #3704.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5110\n\n",
+    "closed_at": "2019-12-27T22:09:24Z",
     "created_at": "2009-01-27T03:54:59Z",
     "labels": [
         "component: linear algebra"

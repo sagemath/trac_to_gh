@@ -4,6 +4,7 @@ archive/issues_001342.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNotice that the parent of a changes below when you do a*a!!\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: P = K.factor_integer(17)[0][0]\nsage: ff = K.residue_field(P)\nsage: a = ff(z)\nsage: parent(a)\nResidue field of Fractional ideal (17)\nsage: parent(a*a)\nFinite Field in z of size 17^6\n```\n\nThis doesn't happen if 17 is replaced by something much smaller.\nThe problem is an optimization in finite field pari element, which\nhas two separate parent attributes. BAD.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1342\n\n",
+    "closed_at": "2007-12-02T04:53:53Z",
     "created_at": "2007-11-30T09:16:28Z",
     "labels": [
         "component: number theory",

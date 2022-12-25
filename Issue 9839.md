@@ -1,16 +1,17 @@
-# Issue 9839: link-editor thinks ECL library contains non-pic code on *all* 64-bit Solaris/OpenSolaris releases
+# Issue 9839: link-editor thinks ECL library contains non-pic code on *all* Solaris/OpenSolaris releases - causes problems on 64-bit
 
 archive/issues_009839.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nAs noted at #9099, Maxima fails to build properly on OpenSolaris x64. The ticket then went onto discuss specific doctest failures on 32-bit Solaris n x86. \n\nHowever, the reason Maxima was not working on OpenSolaris is totally unrelated and  **much** wider. It has nothing to do with Maxima, but is almost certainly an issue with ECL. \n\nHence it seemed wise to open a ticket specific for this. \n\nThe problem is that the link-editor thinks the ecl shared library contains text relocations, which is why there was an error like \n\n\n```\nld.so.1: ecl: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so: symbol main: value 0x22800097de04 does not fit\n```\n\nThere's a command given on this Sun blog\n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nwhich will show libraries with this problem. \n\n == OpenSolaris on x64 ==\n\nI built the latest ECL snapshot outside of Sage, and run the suggested command on the ECL library. Note, this a different version of ECL built at a later date. \n\n```\ndrkirkby@hawk:/tmp/ecl$ ./configure \ndrkirkby@hawk:/tmp/ecl$ make\n```\n\nthen the all important: \n\n```\ndrkirkby@hawk:/tmp/ecl$ elfdump -d ./build/libecl.so |  fgrep TEXTREL\n      [23]  TEXTREL           0\n      [31]  FLAGS             0x4                 [ TEXTREL ]\n\n```\nwhich indicates a problem - there should be no output from that. \n\nIt's also suggested to compile with some debugging information:\n\n```\n$ export LD_OPTIONS=-Dreloc,detail \n$ unset MAKE\n$ make\n```\n\nA full log is attached of that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9840\n\n",
+    "body": "Assignee: drkirkby\n\nAs noted at #9099, Maxima fails to build properly on OpenSolaris x64. The ticket then went onto discuss specific doctest failures on 32-bit Solaris n x86. \n\nHowever, the reason Maxima was not working on OpenSolaris is totally unrelated and  **much** wider. It has nothing to do with Maxima, but is almost certainly an issue with ECL. \n\nHence it seemed wise to open a ticket specific for this. \n\nThe problem is that the link-editor thinks the ecl shared library contains text relocations, which is why there was an error like \n\n\n```\nld.so.1: ecl: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so: symbol main: value 0x22800097de04 does not fit\n```\n\nThere's a command given on this Sun blog\n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nwhich will show libraries with this problem. \n\n == OpenSolaris on x64 ==\n\nI built the latest ECL snapshot outside of Sage, and run the suggested command on the ECL library. Note, this a different version of ECL built at a later date. \n\n```\ndrkirkby@hawk:/tmp/ecl$ ./configure \ndrkirkby@hawk:/tmp/ecl$ make\n```\n\nthen the all important: \n\n```\ndrkirkby@hawk:/tmp/ecl$ elfdump -d ./build/libecl.so |  fgrep TEXTREL\n      [23]  TEXTREL           0\n      [31]  FLAGS             0x4                 [ TEXTREL ]\n\n```\nwhich indicates a problem - there should be no output from that. \n\nIt's also suggested to compile with some debugging information:\n\n```\n$ export LD_OPTIONS=-Dreloc,detail \n$ unset MAKE\n$ make\n```\n\nA full log is attached of that. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9840\n\n",
+    "closed_at": "2011-04-05T15:55:34Z",
     "created_at": "2010-08-30T12:11:30Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "link-editor thinks ECL library contains non-pic code on *all* 64-bit Solaris/OpenSolaris releases",
+    "title": "link-editor thinks ECL library contains non-pic code on *all* Solaris/OpenSolaris releases - causes problems on 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9839",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -64,7 +65,7 @@ $ unset MAKE
 $ make
 ```
 
-A full log is attached of that.
+A full log is attached of that. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9840
 

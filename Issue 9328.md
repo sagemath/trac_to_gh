@@ -4,6 +4,7 @@ archive/issues_009328.json:
 ```json
 {
     "body": "Assignee: @malb\n\nOnce #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9328\n\n",
+    "closed_at": "2010-06-25T09:00:03Z",
     "created_at": "2010-06-24T12:57:41Z",
     "labels": [
         "component: commutative algebra"

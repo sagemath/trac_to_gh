@@ -4,6 +4,7 @@ archive/issues_007715.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  simonking\n\nKeywords: vector, M4RI, matrix, GF(2)\n\nIn order to resolve the embarrassing situation at #3684, we need faster vectors mod 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7715\n\n",
+    "closed_at": "2009-12-19T22:48:24Z",
     "created_at": "2009-12-16T17:18:14Z",
     "labels": [
         "component: linear algebra"

@@ -1,15 +1,16 @@
-# Issue 5711: [with patch, needs review] Enhanced Typesetting of Symbolic Functions
+# Issue 5711: [with patch, positive review] Enhanced Typesetting of Symbolic Functions
 
 archive/issues_005711.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @burcin @jasongrout @jhpalmieri schymans\n\nKeywords: Enhance Typesetting, LaTeX, Symbolic Functions\n\nHere is a patch that enhances current typesetting capability\nof symbolic functions within sage.\n\nThis issue has been under a long discussion in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c\n\nMain enhancements are:\n\n(1) Symbolics functions with name in Greek letters (with possible\nsuffixes), are typeset nicely in LaTeX.\n\nEx:  psi(x)  =>  \\psi(x)\n\n(2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n\"laplace\", \"inverse_lapse\" are now typeset within Sage itself.\n\nEx:  psi(x).conjugate()  =>    {\\psi}^*(x)\n\n(3) Default (fall-back) typesetting for unknown functions (as\nin Maxima).\n\nEx:  myfn(x)   =>  {\\it myfn}(x)\n\n(4) Allows users to define their own/custom LaTeX expression\nfor any symbolic functions via a new method \"set_latex()\" for\nthe class SymbolicFunctionEvaluation.\n\nEx: \n\n```\nvar('t');\nhubble(t) = function('hubble',t)\nhubble(t).set_latex('\\\\mathcal{H}')\n\n#To reset custom LaTeX expression\nhubble(t).set_latex()\n```\n\n(5)  If the arguments of a symbolic function are all symbolic\nvariables then typesetting will avoid using \\left(, \\right).\n\nEx:  Phi(x,y) => \\Phi(x, y)  (if x,y are symbolic vars)\n\n\nNote: You need to apply a small patch\n\nhttp://trac.sagemath.org/sage_trac/ticket/5678\n\nbefore you apply the attached patch. This patch is\ncreated using sage-3.4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5711\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @burcin @jasongrout @jhpalmieri schymans\n\nKeywords: Enhance Typesetting, LaTeX, Symbolic Functions\n\nHere is a patch that enhances current typesetting capability\nof symbolic functions within sage.\n\nThis issue has been under a long discussion in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c\n\n**Note: Switch to new symbolics has caused some functions to be changed**\n\nMain enhancements are:\n\n(1) Symbolics functions with name in Greek letters (with possible\nsuffixes), are typeset nicely in LaTeX.\n\nEx:  psi(x)  =>  \\psi(x)\n     f0(x)  =>  f_0(x)\n\n\n(2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n\"laplace\", \"inverse_laplace\" are now typeset within Sage itself.\n\nEx:  integrate(f(x),x)  =>    \\int f(x) dx\n\n(3) Default (fall-back) typesetting for unknown functions (as\nin Maxima).\n\nEx:  myfn(x)   =>  {\\it myfn}(x)\n\n(4) **[ This is diasbled in new symbolics. However, equivalent feature will be available in new symbolics ]**\nAllows users to define their own/custom LaTeX expression\nfor any symbolic functions via a new method \"set_latex()\" for\nthe class SymbolicFunctionEvaluation.\n\nEx: \n\n```\nvar('t');\nhubble(t) = function('hubble',t)\nhubble(t).set_latex('\\\\mathcal{H}')\n\n#To reset custom LaTeX expression\nhubble(t).set_latex()\n```\n\n(5) **[ This has been disabled in new Symbolics as SymbolicVariable class has changed ]**\nIf the arguments of a symbolic function are all symbolic\nvariables then typesetting will avoid using \\left(, \\right).\n\nEx:  Phi(x,y) => \\Phi(x, y)  (if x,y are symbolic vars)\n\n\n\n(6) **[New in the rebased patch]** New symbolics uses \"D\" \nformat for derivatives instead of old \"diff\" format. \nThe rebased patch typesets symbolic derivatives in old \"diff\" format by default as in this format typeset version looks similar to those found in text books, journals.\n\nHowever see this thread for known limitations of current conversion between these two formats\n http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n\nOne can switch between two typesetting format as follows\n\n```\nf(x) = function('f',x)\ng = diff(f(x),x)\nlatex(g) \n\\frac{d f\\left(x\\right)}{d x}\n# Switch to D format\nsage.symbolic.pynac.typeset_d_as_diff=False\nlatex(g)\nD[0]f\\left(x\\right)\n```\n\n\n(7) **[New in the rebased patch]**  The rebased patch resolves\nthe issue\n\nhttp://trac.sagemath.org/sage_trac/ticket/6268\n\n\n**[Update: in v3 (4.0.2) ]**\n\nAs suggested by Burcin in his referee report, following changes are made in the patch:\n\n**(1)**  Typesetting of \"diff\" is moved to a new ticket #6344\n\n\n**(2)**  Four helper functions  _limit_latex_(), _integrate_latex_(), _laplace_latex_() and _inverse_laplace_latex_() have been moved to calculus/calculus.py. Then they are hooked to the instances of SFunction class by using dummy functions for better integration with the new symbolics.\n\n\n**(3)**  Four earlier functions latex_symbolic_function(), _symbolic_function_default_latex_(), _args_latex_(), _conjugate_latex() are removed.\n\n\n**(4)**  latex_function_name() is also replaced as the updated latex_variable_name() is augmented to take a new flag \"is_fname\". This will ensure that same typesetting convention is followed for both known functions such as \\sin (:= {\\rm sin}), \\cos (:= {\\rm cos}) and user defined function names such as \"mysin\" (=> {\\rm mysin}).\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5711\n\n",
+    "closed_at": "2009-06-24T09:52:03Z",
     "created_at": "2009-04-08T11:55:14Z",
     "labels": [
-        "component: misc"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] Enhanced Typesetting of Symbolic Functions",
+    "title": "[with patch, positive review] Enhanced Typesetting of Symbolic Functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5711",
     "user": "https://github.com/golam-m-hossain"
@@ -28,24 +29,29 @@ This issue has been under a long discussion in the thread
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c
 
+**Note: Switch to new symbolics has caused some functions to be changed**
+
 Main enhancements are:
 
 (1) Symbolics functions with name in Greek letters (with possible
 suffixes), are typeset nicely in LaTeX.
 
 Ex:  psi(x)  =>  \psi(x)
+     f0(x)  =>  f_0(x)
+
 
 (2) Functions such as "diff", "integrate", "limit", "conjugate",
-"laplace", "inverse_lapse" are now typeset within Sage itself.
+"laplace", "inverse_laplace" are now typeset within Sage itself.
 
-Ex:  psi(x).conjugate()  =>    {\psi}^*(x)
+Ex:  integrate(f(x),x)  =>    \int f(x) dx
 
 (3) Default (fall-back) typesetting for unknown functions (as
 in Maxima).
 
 Ex:  myfn(x)   =>  {\it myfn}(x)
 
-(4) Allows users to define their own/custom LaTeX expression
+(4) **[ This is diasbled in new symbolics. However, equivalent feature will be available in new symbolics ]**
+Allows users to define their own/custom LaTeX expression
 for any symbolic functions via a new method "set_latex()" for
 the class SymbolicFunctionEvaluation.
 
@@ -60,18 +66,60 @@ hubble(t).set_latex('\\mathcal{H}')
 hubble(t).set_latex()
 ```
 
-(5)  If the arguments of a symbolic function are all symbolic
+(5) **[ This has been disabled in new Symbolics as SymbolicVariable class has changed ]**
+If the arguments of a symbolic function are all symbolic
 variables then typesetting will avoid using \left(, \right).
 
 Ex:  Phi(x,y) => \Phi(x, y)  (if x,y are symbolic vars)
 
 
-Note: You need to apply a small patch
 
-http://trac.sagemath.org/sage_trac/ticket/5678
+(6) **[New in the rebased patch]** New symbolics uses "D" 
+format for derivatives instead of old "diff" format. 
+The rebased patch typesets symbolic derivatives in old "diff" format by default as in this format typeset version looks similar to those found in text books, journals.
 
-before you apply the attached patch. This patch is
-created using sage-3.4.
+However see this thread for known limitations of current conversion between these two formats
+ http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2
+
+One can switch between two typesetting format as follows
+
+```
+f(x) = function('f',x)
+g = diff(f(x),x)
+latex(g) 
+\frac{d f\left(x\right)}{d x}
+# Switch to D format
+sage.symbolic.pynac.typeset_d_as_diff=False
+latex(g)
+D[0]f\left(x\right)
+```
+
+
+(7) **[New in the rebased patch]**  The rebased patch resolves
+the issue
+
+http://trac.sagemath.org/sage_trac/ticket/6268
+
+
+**[Update: in v3 (4.0.2) ]**
+
+As suggested by Burcin in his referee report, following changes are made in the patch:
+
+**(1)**  Typesetting of "diff" is moved to a new ticket #6344
+
+
+**(2)**  Four helper functions  _limit_latex_(), _integrate_latex_(), _laplace_latex_() and _inverse_laplace_latex_() have been moved to calculus/calculus.py. Then they are hooked to the instances of SFunction class by using dummy functions for better integration with the new symbolics.
+
+
+**(3)**  Four earlier functions latex_symbolic_function(), _symbolic_function_default_latex_(), _args_latex_(), _conjugate_latex() are removed.
+
+
+**(4)**  latex_function_name() is also replaced as the updated latex_variable_name() is augmented to take a new flag "is_fname". This will ensure that same typesetting convention is followed for both known functions such as \sin (:= {\rm sin}), \cos (:= {\rm cos}) and user defined function names such as "mysin" (=> {\rm mysin}).
+
+
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5711
 

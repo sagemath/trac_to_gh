@@ -1,9 +1,10 @@
-# Issue 7093: fast_eval -- numerical noise on OS X 10.6
+# Issue 7093: [with patch; positive review] fast_eval -- numerical noise on OS X 10.6
 
 archive/issues_007093.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nsage -t -long \"devel/sage/sage/ext/fast_eval.pyx\"\n**********************************************************************\nFile \"/Users/was/build/sage-4.1.2.rc0/devel/sage/sage/ext/fast_eval.pyx\", line 1080:\n    sage: f(0.5)\nExpected:\n    0.5235987755982989...\nGot:\n    0.52359877559829882\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_32\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/was/.sage//tmp/.doctest_fast_eval.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7093\n\n",
+    "closed_at": "2009-10-01T20:01:51Z",
     "created_at": "2009-10-01T19:43:40Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_007093.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "fast_eval -- numerical noise on OS X 10.6",
+    "title": "[with patch; positive review] fast_eval -- numerical noise on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7093",
     "user": "https://github.com/williamstein"

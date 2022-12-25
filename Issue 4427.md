@@ -1,16 +1,17 @@
-# Issue 4427: [with patch, needs review] use RTLD symbols instead of constants in init_singular
+# Issue 4427: [with patch, positive review] use RTLD symbols instead of constants in init_singular
 
 archive/issues_004427.json:
 ```json
 {
     "body": "Assignee: @malb\n\nnot doing so is very, very, **very** bad for portability.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4427\n\n",
+    "closed_at": "2008-11-04T21:33:42Z",
     "created_at": "2008-11-02T19:23:17Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] use RTLD symbols instead of constants in init_singular",
+    "title": "[with patch, positive review] use RTLD symbols instead of constants in init_singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4427",
     "user": "https://github.com/malb"

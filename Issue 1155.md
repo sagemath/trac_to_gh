@@ -1,9 +1,10 @@
-# Issue 1155: PermutationGroup coercion bug
+# Issue 1155: [with patch, with positive review] PermutationGroup coercion bug
 
 archive/issues_001155.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nKeywords: GAP, permutation group\n\nThe patch \nhttp://sage.math.washington.edu/home/wdj/patches/permgp-2007-11-12.hg\nfixes a bug reported by Carlo H. Part of his email is pasted below:\n\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nHi,\n\nI'm doing some work with groups. Using gap.Image() I can get a\npermutation like this:\n\n```\nsage: x\n(1,2)(3,7)(4,6)(5,8)\n```\nBut to make a permutation group out of this element I have to enclose\nthe x in two sets of brackets:\n\n```\nsage: PermutationGroup([[x]])\nPermutation Group with generators [(1,2)(3,7)(4,6)(5,8)]\n```\nOn the other hand, the following command fails (see below for code and output):\n\n```\nsage: PermutationGroup([x])\n```\nIn my mind the second version is clearer - x is a permutation so [x]\nis a list of permutations and I should be able to use that to get a\ngroup.\n\nShould SAGE do a coercion here, or am I doing something in a strange way?\n\nCode and output:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.11, Release Date: 2007-11-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: p = 2\nsage: assert is_prime(p)\nsage:\nsage: F = gap.new(\"FreeGroup(3)\")\nsage:\nsage: a = F.gen(1)\nsage: b = F.gen(2)\nsage: c = F.gen(3)\nsage:\nsage: rels = []\nsage: rels.append( a**Integer(p) )\nsage: rels.append( b**Integer(p) )\nsage: rels.append( c**Integer(p) )\nsage: rels.append( a*b*((b*a*c)**Integer(-1)) )\nsage: rels.append( c*a*((a*c)**Integer(-1)) )\nsage: rels.append( c*b*((b*c)**Integer(-1)) )\nsage:\nsage: N = gap.NormalClosure(F, gap.Subgroup(F, rels))\nsage: niso = gap.NaturalHomomorphismByNormalSubgroupNC(F, N)\nsage:\nsage: x = gap.Image(niso, a)\nsage: x\n(1,2)(3,7)(4,6)(5,8)\nsage: PermutationGroup([[x]])\nPermutation Group with generators [(1,2)(3,7)(4,6)(5,8)]\nsage:\nsage: PermutationGroup([x])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1155\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: GAP, permutation group\n\nThe patch \nhttp://sage.math.washington.edu/home/wdj/patches/permgp-2007-11-12.hg\nfixes a bug reported by Carlo H. Part of his email is pasted below:\n\n+++++++++++++++++++++++++++++++++++++++++++++++\n\nHi,\n\nI'm doing some work with groups. Using gap.Image() I can get a\npermutation like this:\n\n```\nsage: x\n(1,2)(3,7)(4,6)(5,8)\n```\nBut to make a permutation group out of this element I have to enclose\nthe x in two sets of brackets:\n\n```\nsage: PermutationGroup([[x]])\nPermutation Group with generators [(1,2)(3,7)(4,6)(5,8)]\n```\nOn the other hand, the following command fails (see below for code and output):\n\n```\nsage: PermutationGroup([x])\n```\nIn my mind the second version is clearer - x is a permutation so [x]\nis a list of permutations and I should be able to use that to get a\ngroup.\n\nShould SAGE do a coercion here, or am I doing something in a strange way?\n\nCode and output:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.11, Release Date: 2007-11-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: p = 2\nsage: assert is_prime(p)\nsage:\nsage: F = gap.new(\"FreeGroup(3)\")\nsage:\nsage: a = F.gen(1)\nsage: b = F.gen(2)\nsage: c = F.gen(3)\nsage:\nsage: rels = []\nsage: rels.append( a**Integer(p) )\nsage: rels.append( b**Integer(p) )\nsage: rels.append( c**Integer(p) )\nsage: rels.append( a*b*((b*a*c)**Integer(-1)) )\nsage: rels.append( c*a*((a*c)**Integer(-1)) )\nsage: rels.append( c*b*((b*c)**Integer(-1)) )\nsage:\nsage: N = gap.NormalClosure(F, gap.Subgroup(F, rels))\nsage: niso = gap.NaturalHomomorphismByNormalSubgroupNC(F, N)\nsage:\nsage: x = gap.Image(niso, a)\nsage: x\n(1,2)(3,7)(4,6)(5,8)\nsage: PermutationGroup([[x]])\nPermutation Group with generators [(1,2)(3,7)(4,6)(5,8)]\nsage:\nsage: PermutationGroup([x])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1155\n\n",
+    "closed_at": "2008-01-27T02:34:37Z",
     "created_at": "2007-11-12T15:24:03Z",
     "labels": [
         "component: combinatorics",
@@ -11,13 +12,13 @@ archive/issues_001155.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "PermutationGroup coercion bug",
+    "title": "[with patch, with positive review] PermutationGroup coercion bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1155",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: @wdjoyner
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

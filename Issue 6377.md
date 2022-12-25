@@ -1,21 +1,24 @@
-# Issue 6377: exp(x) is broken at x=Infinity and x=-Infinity
+# Issue 6377: [with patch, positive review] exp(x) is broken at x=Infinity and x=-Infinity
 
 archive/issues_006377.json:
 ```json
 {
-    "body": "Keywords: symbolic exp\n\nexponetial function exp(x) is broken at both x=-Infinity\nand x=Infinity\n\n```\nsage: exp(-Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\n\n```\nsage: exp(Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6377\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: symbolic exp\n\nexponetial function exp(x) is broken at both x=-Infinity\nand x=Infinity\n\n```\nsage: exp(-Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\n\n```\nsage: exp(Infinity)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n....\nRuntimeError: x*Infinity with non real x encountered.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6377\n\n",
+    "closed_at": "2009-08-03T00:31:27Z",
     "created_at": "2009-06-21T17:56:25Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "exp(x) is broken at x=Infinity and x=-Infinity",
+    "title": "[with patch, positive review] exp(x) is broken at x=Infinity and x=-Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6377",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Assignee: @burcin
+
 Keywords: symbolic exp
 
 exponetial function exp(x) is broken at both x=-Infinity

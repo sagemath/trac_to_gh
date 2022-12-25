@@ -1,16 +1,17 @@
-# Issue 6978: [patch, needs review] fixes matplotlib to compile in cygwin
+# Issue 6978: fixes matplotlib to compile in cygwin
 
 archive/issues_006978.json:
 ```json
 {
     "body": "Assignee: tbd\n\nHere is a fixed package:\n\nhttp://femhub.googlecode.com/files/matplotlib-0.98.5.3rc0-svn6910.p5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6978\n\n",
+    "closed_at": "2009-09-22T16:59:46Z",
     "created_at": "2009-09-21T16:41:33Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[patch, needs review] fixes matplotlib to compile in cygwin",
+    "title": "fixes matplotlib to compile in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6978",
     "user": "https://github.com/certik"

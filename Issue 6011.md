@@ -1,22 +1,23 @@
-# Issue 6011: Bring plot/arrow.py to 100% coverage
+# Issue 6011: [with patch, positive review] Bring plot/arrow.py to 100% coverage
 
 archive/issues_006011.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nBring plot/arrow.py to 100% coverage\n\nIssue created by migration from https://trac.sagemath.org/ticket/6011\n\n",
+    "body": "Assignee: @kcrisman\n\nBring plot/arrow.py to 100% coverage\n\nIssue created by migration from https://trac.sagemath.org/ticket/6011\n\n",
+    "closed_at": "2009-05-11T09:02:40Z",
     "created_at": "2009-05-09T02:45:35Z",
     "labels": [
-        "component: doctest",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring plot/arrow.py to 100% coverage",
+    "title": "[with patch, positive review] Bring plot/arrow.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6011",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: mabshoff
+Assignee: @kcrisman
 
 Bring plot/arrow.py to 100% coverage
 

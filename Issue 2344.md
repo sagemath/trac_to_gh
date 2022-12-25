@@ -1,15 +1,16 @@
-# Issue 2344: python -- upgrade to version 2.5.2
+# Issue 2344: [with spkg, positive review] python -- upgrade to version 2.5.2
 
 archive/issues_002344.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nCurrently Sage ships with Python 2.5.1, but Python 2.5.2 was released on Feb 22, 2008, so we should try it out. \n\nhttp://python.org/download/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2344\n\n",
+    "closed_at": "2008-04-20T01:38:35Z",
     "created_at": "2008-02-28T06:04:33Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "python -- upgrade to version 2.5.2",
+    "title": "[with spkg, positive review] python -- upgrade to version 2.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2344",
     "user": "https://github.com/williamstein"

@@ -1,15 +1,16 @@
-# Issue 6861: allow users to test Sage script using system-wide Sage installation
+# Issue 6861: [with patch, positive review] allow users to test Sage script using system-wide Sage installation
 
 archive/issues_006861.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAt least in Sage 4.1.1, a regular user cannot run tests on their own Sage scripts using a system-wide installation of Sage. Doing so would result in a permission error:\n\n```\n[mvngu@mod mvngu]$ cat demo.sage \nprint 2\n[mvngu@mod mvngu]$ sage -t demo.sage \nTraceback (most recent call last):\n  File \"/usr/local/sage/local/bin/sage-test\", line 49, in <module>\n    os.makedirs(TMP)\n  File \"/usr/local/sage/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 13] Permission denied: '/usr/local/sage/tmp/tmp'\n```\nThat is due to the testing script writing temporary data to a temporary directory under the system-wide Sage installation. A work around is to have one's own local installation of Sage under one's home directory. But it would be nice if the test script would write temporary data to the user's `DOT_SAGE` directory, i.e. `$HOME/.sage`. This problem was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/af6d95445f76cbe9) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6861\n\n",
+    "closed_at": "2009-09-24T11:02:02Z",
     "created_at": "2009-09-02T04:47:07Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "allow users to test Sage script using system-wide Sage installation",
+    "title": "[with patch, positive review] allow users to test Sage script using system-wide Sage installation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6861",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

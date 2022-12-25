@@ -4,6 +4,7 @@ archive/issues_001669.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nWhen numpy fails to build it prints the following error message which is no longer valid:\n\n```\n Error building numpy.\nTry setting SAGE_ATLAS to the directory that contains lib/libatlas.a ?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1669\n\n",
+    "closed_at": "2008-01-09T01:56:05Z",
     "created_at": "2008-01-03T15:51:27Z",
     "labels": [
         "component: packages: standard",

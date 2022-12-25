@@ -3,7 +3,8 @@
 archive/issues_009400.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9400\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @jdemeyer\n\nKeywords: PARI number field\n\nAlso:\n   \n* ReSTify residue class fields\n\n* massively optimize reduction modulo a prime (e.g., the first interesting example I tried, I got a speedup of a factor of 500,000!  Yes half a million times faster!). \n\nParts of this patch have been moved to #9764.\n\nApply only `9400_combined.patch` and apply it on top of the patches from #9343.  See also [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9400\n\n",
+    "closed_at": "2010-09-15T10:39:38Z",
     "created_at": "2010-07-01T03:43:21Z",
     "labels": [
         "component: number fields"
@@ -15,11 +16,21 @@ archive/issues_009400.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @loefflerd
+Assignee: @jdemeyer
 
 CC:  @jdemeyer
 
+Keywords: PARI number field
 
+Also:
+   
+* ReSTify residue class fields
+
+* massively optimize reduction modulo a prime (e.g., the first interesting example I tried, I got a speedup of a factor of 500,000!  Yes half a million times faster!). 
+
+Parts of this patch have been moved to #9764.
+
+Apply only `9400_combined.patch` and apply it on top of the patches from #9343.  See also [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9400
 

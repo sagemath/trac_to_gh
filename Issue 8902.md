@@ -3,7 +3,8 @@
 archive/issues_008902.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Subsets constructor\n\n```\nsage: S2 = Subsets(2)\nsage: S2([])\n<type 'sage.structure.parent.Set_generic'>\nsage: S2([1])\n<type 'sage.structure.parent.Set_generic'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8902\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Subsets constructor\n\n```\nsage: S2 = Subsets(2)\nsage: S2([])\n<type 'sage.structure.parent.Set_generic'>\nsage: S2([1])\n<type 'sage.structure.parent.Set_generic'>\n```\n\nThe attached patch fixes this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8902\n\n",
+    "closed_at": "2010-06-05T22:18:51Z",
     "created_at": "2010-05-06T02:30:52Z",
     "labels": [
         "component: combinatorics",
@@ -16,7 +17,7 @@ archive/issues_008902.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: sage-combinat
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -29,6 +30,9 @@ sage: S2([])
 sage: S2([1])
 <type 'sage.structure.parent.Set_generic'>
 ```
+
+The attached patch fixes this.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8902
 

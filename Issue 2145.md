@@ -4,10 +4,10 @@ archive/issues_002145.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\nI was looking in the SAGE Tutorial and the SAGE Reference\nManual.  Perhaps something could be put there also?\n\nKate\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2145\n\n",
+    "closed_at": "2010-01-17T05:38:03Z",
     "created_at": "2008-02-12T17:02:26Z",
     "labels": [
-        "component: documentation",
-        "bug"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "doc -- add shift-enter prominently to both the reference manual and tutorial (easy doc fix)",

@@ -1,4 +1,4 @@
-# Issue 2963: make it so that strings pass as arguments and keyword arguments for the expect interfaces are passed down as string.
+# Issue 2963: R interface: fix passing strings
 
 archive/issues_002963.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_002963.json:
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
-    "title": "make it so that strings pass as arguments and keyword arguments for the expect interfaces are passed down as string.",
+    "title": "R interface: fix passing strings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2963",
     "user": "https://github.com/mwhansen"

@@ -1,15 +1,16 @@
-# Issue 8467: move the document "Linear Programming in Sage" to "Sage HOWTOs"
+# Issue 8467: move the document "Linear Programming in Sage" to "Thematic Tutorials"
 
 archive/issues_008467.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nathanncohen @jasongrout\n\nKeywords: linear programming\n\nMove the document \"Linear Programming in Sage\", found [here](http://www.sagemath.org/doc/constructions/linear_programming.html) and [here](http://www-sop.inria.fr/members/Nathann.Cohen/tut/LP/), to the classification \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8467\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nathanncohen @jasongrout\n\nKeywords: linear programming\n\nMove the document \"Linear Programming in Sage\", found [here](http://www.sagemath.org/doc/constructions/linear_programming.html) and [here](http://www-sop.inria.fr/members/Nathann.Cohen/tut/LP/), to the classification \"Thematic Tutorials\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** The current ticket needs to be coordinated with #8470.\n\nDepends on #7311\n\nThe methods detailed in this Howto, along with some features used, makes it dependent also on :\n\n* #2203\n* #7311\n* #7476\n* #7529\n* #8403\n* #8404\n* #8405\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8467\n\n",
+    "closed_at": "2010-09-10T12:50:52Z",
     "created_at": "2010-03-07T02:18:58Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "move the document \"Linear Programming in Sage\" to \"Sage HOWTOs\"",
+    "title": "move the document \"Linear Programming in Sage\" to \"Thematic Tutorials\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8467",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -21,7 +22,25 @@ CC:  @nathanncohen @jasongrout
 
 Keywords: linear programming
 
-Move the document "Linear Programming in Sage", found [here](http://www.sagemath.org/doc/constructions/linear_programming.html) and [here](http://www-sop.inria.fr/members/Nathann.Cohen/tut/LP/), to the classification "Sage HOWTOs". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+Move the document "Linear Programming in Sage", found [here](http://www.sagemath.org/doc/constructions/linear_programming.html) and [here](http://www-sop.inria.fr/members/Nathann.Cohen/tut/LP/), to the classification "Thematic Tutorials". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+
+
+
+**Notes:** The current ticket needs to be coordinated with #8470.
+
+Depends on #7311
+
+The methods detailed in this Howto, along with some features used, makes it dependent also on :
+
+* #2203
+* #7311
+* #7476
+* #7529
+* #8403
+* #8404
+* #8405
+
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/8467
 

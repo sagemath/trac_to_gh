@@ -1,16 +1,17 @@
-# Issue 5052: preparser does not respect leading space in front of "load foo.sage"
+# Issue 5052: [with patch, positive review] preparser does not respect leading space in front of "load foo.sage"
 
 archive/issues_005052.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nIf you have something like the following in a file:\n\n```\ntry:\n    load foo.sage\nexcept:\n    print 'uh oh'\n```\nit gets preparsed to this, and blows up because of the bad indentation:\n\n```\ntry:\nexecfile(\"foo.py\")\nexcept:\n    print 'uh oh'\n```\nThe preparser is not honoring the leading space before the `load` statement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5052\n\n",
+    "closed_at": "2009-01-28T12:35:52Z",
     "created_at": "2009-01-22T09:03:25Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "preparser does not respect leading space in front of \"load foo.sage\"",
+    "title": "[with patch, positive review] preparser does not respect leading space in front of \"load foo.sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5052",
     "user": "https://github.com/dandrake"

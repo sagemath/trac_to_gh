@@ -1,15 +1,16 @@
-# Issue 1089: [with patch] graphs: update subgraph to handle a list of edges
+# Issue 1089: [tested] [with patch] graphs: update subgraph to handle a list of edges
 
 archive/issues_001089.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nHere is an update to the subgraph function to handle a list of edges.  If edges are not specified, then it reverts to the original functionality (returning an induced subgraph).\n\nI also fix a doctest that should have been complaining in transitive_reduction and make the doctests in min_spanning_tree make more sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1089\n\n",
+    "closed_at": "2007-11-19T21:42:51Z",
     "created_at": "2007-11-03T20:48:47Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "[with patch] graphs: update subgraph to handle a list of edges",
+    "title": "[tested] [with patch] graphs: update subgraph to handle a list of edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1089",
     "user": "https://github.com/jasongrout"

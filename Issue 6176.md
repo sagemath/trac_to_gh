@@ -1,16 +1,17 @@
-# Issue 6176: ReSTify modules in sage/numerical and put them in reference manual
+# Issue 6176: [with patch, positive review] ReSTify modules in sage/numerical and put them in reference manual
 
 archive/issues_006176.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: docstring, ReST, Sphinx, optimize.py\n\nThe only module in `sage/numerical/` is `optimize.py`, which is still stuck with the old doc formatting. Change the doc formatting to Sphinx and add the module to the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6176\n\n",
+    "closed_at": "2009-06-04T18:49:42Z",
     "created_at": "2009-06-01T07:48:34Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "ReSTify modules in sage/numerical and put them in reference manual",
+    "title": "[with patch, positive review] ReSTify modules in sage/numerical and put them in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6176",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

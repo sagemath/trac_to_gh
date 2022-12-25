@@ -1,16 +1,17 @@
-# Issue 1833: [with patch; needs review] plot3d and parametric_plot3d can be very slow on some inputs
+# Issue 1833: [with patch; positive review] plot3d and parametric_plot3d can be very slow on some inputs
 
 archive/issues_001833.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (x,-1,1), (y,-1,1))\n```\nis fast, but \n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (-1,1), (-1,1))\n```\nis shockingly slow (and similar remarks for parametric plots).   The attached patch fixes this problem. \n\nThis also fixes trac #1737.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1833\n\n",
+    "closed_at": "2008-01-21T04:13:28Z",
     "created_at": "2008-01-18T16:22:22Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch; needs review] plot3d and parametric_plot3d can be very slow on some inputs",
+    "title": "[with patch; positive review] plot3d and parametric_plot3d can be very slow on some inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1833",
     "user": "https://github.com/williamstein"

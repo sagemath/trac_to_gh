@@ -1,16 +1,17 @@
-# Issue 4977: vector(RR vector) doesn't create a new vector
+# Issue 4977: [with patch, positive review] vector(RR vector) doesn't create a new vector
 
 archive/issues_004977.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nHi,\n\nIs there a reason why, in sage 3.2.2, the following works :\n\nsage: vector(vector((1, 6)))\n(1, 6)\n\nbut the following doesn't :\n\nsage: vector(vector((1, 6.8)))\nTraceback (most recent call last):\n...\nTypeError: _vector_() takes exactly one argument (0 given)\n\n???\n\nThank you,\n\nS\u00e9bastien Labb\u00e9\nUQAM\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4977\n\n",
+    "closed_at": "2009-01-23T08:03:28Z",
     "created_at": "2009-01-14T21:44:34Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "vector(RR vector) doesn't create a new vector",
+    "title": "[with patch, positive review] vector(RR vector) doesn't create a new vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4977",
     "user": "https://github.com/jasongrout"

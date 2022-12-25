@@ -1,16 +1,17 @@
-# Issue 2701: simple bug fixed for linear_codes
+# Issue 2701: [with patch, positive review] simple bug fixed for linear_codes
 
 archive/issues_002701.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThe attached patch fixes two bugs - one in spectrum and one in zeta_polynomial,\nboth of which either failed or behaved badly for codes over non-prime fields.\nI also added som doctests for non-prime fields. \n\nIt passes sage -testall except for plot.py and polynomial_modn_dense_ntl.pyx.\n(I reran sage -t on polynomial_modn_dense_ntl.pyx and it passed the second time.)\nI think these have nothing to do with the patch but here are the details:\n\nsage -t  devel/sage-coding/sage/rings/polynomial/polynomial_modn_dense_ntl.pyx**********************************************************************\nFile \"polynomial_modn_dense_ntl.pyx\", line 495:\n    sage: q == qbar - d\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  37 in __main__.example_10\n***Test Failed*** 1 failures.\n\nsage -t  devel/sage-coding/sage/plot/plot.py                **********************************************************************\nFile \"plot.py\", line 3506:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 100 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  28 in __main__.example_111\n***Test Failed*** 1 failures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2701\n\n",
+    "body": "Assignee: @rlmill\n\nThe attached patch fixes two bugs - one in spectrum and one in zeta_polynomial, both of which either failed or behaved badly for codes over non-prime fields.I also added som doctests for non-prime fields. \n\nIt passes sage -testall except for plot.py and polynomial_modn_dense_ntl.pyx. (I reran sage -t on polynomial_modn_dense_ntl.pyx and it passed the second time.) I think these have nothing to do with the patch but here are the details:\n\n```\nsage -t  devel/sage-coding/sage/rings/polynomial/polynomial_modn_dense_ntl.pyx**********************************************************************\nFile \"polynomial_modn_dense_ntl.pyx\", line 495:\n    sage: q == qbar - d\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  37 in __main__.example_10\n***Test Failed*** 1 failures.\n\nsage -t  devel/sage-coding/sage/plot/plot.py                **********************************************************************\nFile \"plot.py\", line 3506:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 100 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  28 in __main__.example_111\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2701\n\n",
+    "closed_at": "2008-03-29T00:03:22Z",
     "created_at": "2008-03-28T17:22:00Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "simple bug fixed for linear_codes",
+    "title": "[with patch, positive review] simple bug fixed for linear_codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2701",
     "user": "https://github.com/wdjoyner"
@@ -18,14 +19,11 @@ archive/issues_002701.json:
 ```
 Assignee: @rlmill
 
-The attached patch fixes two bugs - one in spectrum and one in zeta_polynomial,
-both of which either failed or behaved badly for codes over non-prime fields.
-I also added som doctests for non-prime fields. 
+The attached patch fixes two bugs - one in spectrum and one in zeta_polynomial, both of which either failed or behaved badly for codes over non-prime fields.I also added som doctests for non-prime fields. 
 
-It passes sage -testall except for plot.py and polynomial_modn_dense_ntl.pyx.
-(I reran sage -t on polynomial_modn_dense_ntl.pyx and it passed the second time.)
-I think these have nothing to do with the patch but here are the details:
+It passes sage -testall except for plot.py and polynomial_modn_dense_ntl.pyx. (I reran sage -t on polynomial_modn_dense_ntl.pyx and it passed the second time.) I think these have nothing to do with the patch but here are the details:
 
+```
 sage -t  devel/sage-coding/sage/rings/polynomial/polynomial_modn_dense_ntl.pyx**********************************************************************
 File "polynomial_modn_dense_ntl.pyx", line 495:
     sage: q == qbar - d
@@ -50,6 +48,8 @@ Got:
 1 items had failures:
    1 of  28 in __main__.example_111
 ***Test Failed*** 1 failures.
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2701
 

@@ -4,6 +4,7 @@ archive/issues_000229.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPLAN\n\n\nMake it so pickled objects can always be reloaded. To do this, ever single class *must* have a couple example pickled objects, and the doctest has to simply load them and make sure it works.   Make this a requirement for all SAGE classes (!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/229\n\n",
+    "closed_at": "2008-08-02T03:04:38Z",
     "created_at": "2007-01-29T19:03:53Z",
     "labels": [
         "component: user interface"

@@ -1,22 +1,24 @@
-# Issue 1766: [with patch] enhancing latex embedding with plots
+# Issue 1766: [with patch, positive review] enhancing latex embedding with plots
 
 archive/issues_001766.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThis is patch for the latex_embed inside the ${SAGE_BASE}/examples directory.\n\nNow embedding plots works and makes it more usable!\n\n\nRead included README.txt for more information and open the included PDF example.pdf to see the result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1766\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: latex, sagetex, latex_embed\n\nThis is patch for the latex_embed inside the ${SAGE_BASE}/examples directory.\n\nNow embedding plots works and makes it more usable!\n\n\nRead included README.txt for more information and open the included PDF example.pdf to see the result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1766\n\n",
+    "closed_at": "2008-04-15T06:35:23Z",
     "created_at": "2008-01-13T22:58:57Z",
     "labels": [
-        "component: documentation",
-        "bug"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch] enhancing latex embedding with plots",
+    "title": "[with patch, positive review] enhancing latex embedding with plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1766",
     "user": "https://github.com/haraldschilly"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
+
+Keywords: latex, sagetex, latex_embed
 
 This is patch for the latex_embed inside the ${SAGE_BASE}/examples directory.
 

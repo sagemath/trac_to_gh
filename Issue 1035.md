@@ -3,7 +3,8 @@
 archive/issues_001035.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nClement wrote on [linbox-devel]:\n\n```\nI forgot to mention that a new version of Givaro has been released, in\norder to comply with the design changes due to gcc-4.2 support.\nYou can get it at the address:\n\nhttp://www.cs.uwaterloo.ca/~cpernet/givaro-3.2.8.tar.gz\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1035\n\n",
+    "body": "Assignee: mabshoff\n\nClement wrote on [linbox-devel]:\n\n```\nI forgot to mention that a new version of Givaro has been released, in\norder to comply with the design changes due to gcc-4.2 support.\nYou can get it at the address:\n\nhttp://www.cs.uwaterloo.ca/~cpernet/givaro-3.2.8.tar.gz\n\nCheers, from Moose Jaw, Saskatchewan!\n\nClement\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1035\n\n",
+    "closed_at": "2008-03-03T05:01:18Z",
     "created_at": "2007-10-30T15:17:16Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_001035.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Clement wrote on [linbox-devel]:
 
@@ -26,6 +27,10 @@ order to comply with the design changes due to gcc-4.2 support.
 You can get it at the address:
 
 http://www.cs.uwaterloo.ca/~cpernet/givaro-3.2.8.tar.gz
+
+Cheers, from Moose Jaw, Saskatchewan!
+
+Clement
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1035

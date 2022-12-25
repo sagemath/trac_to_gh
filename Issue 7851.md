@@ -4,6 +4,7 @@ archive/issues_007851.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of libz zlib-1.2.3.p5 has this:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\nexport CFLAGS\n```\n\nso is almost doomed to a 64-bit build unless one sets CFLAGS externally. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7851\n\n",
+    "closed_at": "2020-09-10T08:01:55Z",
     "created_at": "2010-01-05T19:04:56Z",
     "labels": [
         "component: porting",

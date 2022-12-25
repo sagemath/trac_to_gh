@@ -1,16 +1,17 @@
-# Issue 5077: bug in fibonacci function
+# Issue 5077: [with patch, positive review] bug in fibonacci function
 
 archive/issues_005077.json:
 ```json
 {
     "body": "Assignee: somebody\n\nDelete this line from the docstring.  It is just inconsistent.\n\n```\n  For negative n, define F_{n} = -F_{|n|}.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5077\n\n",
+    "closed_at": "2009-01-24T14:48:29Z",
     "created_at": "2009-01-23T22:22:02Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bug in fibonacci function",
+    "title": "[with patch, positive review] bug in fibonacci function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5077",
     "user": "https://github.com/williamstein"

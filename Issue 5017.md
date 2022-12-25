@@ -1,16 +1,17 @@
-# Issue 5017: graph.automorphism_group(translation=True) gives error in 3.2.3
+# Issue 5017: [with patch, positive review] graph.automorphism_group(translation=True) gives error in 3.2.3
 
 archive/issues_005017.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n```\nNikos Apostolakis wrote:\n> > The \"translation=True\" flag does not work after upgrading to sage 3.2.3\n> > I am not sure when this behaviour was introduced.  In version 2.10.2 it\n> > works fine, unfortunately I don't have a more recent old sage to check.\n> > \n> >   sage: foo = Graph()\n> >   sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n> >   sage: foo.automorphism_group(translation=True)\n\n\nThis worked in sage-3.1.2 and before, giving\n  (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nIn sage-3.2.1 and later this fails.\n\nJaap\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5017\n\n",
+    "closed_at": "2009-01-19T04:15:43Z",
     "created_at": "2009-01-18T18:29:03Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "graph.automorphism_group(translation=True) gives error in 3.2.3",
+    "title": "[with patch, positive review] graph.automorphism_group(translation=True) gives error in 3.2.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5017",
     "user": "https://github.com/jaapspies"

@@ -1,16 +1,17 @@
-# Issue 1185: Coercion trouble
+# Issue 1185: Coercion trouble: reducing a fourier coefficient of a cusp form modulo a prime ideal
 
 archive/issues_001185.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI run into some coercion trouble when I reduce a fourier coefficient\nof a cusp form modulo a prime ideal.\n\nAny idea how I can avoid this?\n\n```\nsage: M = ModularSymbols(77, 2)\n\nsage: s = M.cuspidal_subspace().new_subspace()\n\nsage: N = s.decomposition()\n\nsage: f = N[3].q_eigenform()\n\nsage: R = f.base_ring()\n\nsage: K = R.number_field()\n\nsage: O = K.ring_of_integers()\n\nsage: I = O.ideal(7)\n\nsage: F = O.residue_field(I)\n\nsage: F(f[2])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call\nlast)\n\n/home/burhanud/tau_nov14_07/<ipython console> in <module>()\n\n/home/burhanud/tau_nov14_07/residue_field.pyx in\nsage.rings.residue_field.ResidueFiniteField_givaro.__call__()\n\n/home/burhanud/tau_nov14_07/finite_field_givaro.pyx in\nsage.rings.finite_field_givaro.FiniteField_givaro.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1185\n\n",
+    "closed_at": "2007-12-15T13:44:05Z",
     "created_at": "2007-11-16T10:39:30Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Coercion trouble",
+    "title": "Coercion trouble: reducing a fourier coefficient of a cusp form modulo a prime ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1185",
     "user": "https://trac.sagemath.org/admin/accounts/users/ifti"

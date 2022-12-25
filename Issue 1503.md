@@ -4,6 +4,7 @@ archive/issues_001503.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nBefore this patch if you make a formal function it will\nnot coerce into Mathematica.  E.g..\n\n```\nsage: f = function('Foo', var('x'), var('y'))\nsage: mathematica(f)\nFoo[x, y]\n```\n\nWith this patch it does work. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1503\n\n",
+    "closed_at": "2007-12-16T01:12:49Z",
     "created_at": "2007-12-14T05:50:21Z",
     "labels": [
         "component: calculus",

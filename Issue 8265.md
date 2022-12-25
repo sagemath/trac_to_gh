@@ -4,10 +4,11 @@ archive/issues_008265.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nIt seems the only problem is in\n\n   `sagenb.notebook.worksheet.Worksheet.__init__`\n\nSee #7549.  This is a follow-up to #8167.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8265\n\n",
+    "closed_at": "2010-03-04T22:51:16Z",
     "created_at": "2010-02-14T18:54:03Z",
     "labels": [
         "component: notebook",
-        "minor",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",

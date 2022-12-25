@@ -3,10 +3,10 @@
 archive/issues_003317.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @burcin @novoselt ranosch polybori jakobkroeker\n\nKeywords: citations\n\nSage could use some sort of citation system that identifies what components/packages are used in a given computation or worksheet.  After some discussion, it is unclear what the architecture of that should be.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3317\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @burcin @novoselt ranosch polybori jakobkroeker\n\nKeywords: citations, sd34\n\nThis ticket implements a citation tracking system for Sage which can give fine grained information on the algorithms and implementations used for a specific computation.\nThis is in contrast to the current method in `sage.misc.citation` that relies on running a smaller example through the profiler.\n\nThe new citation module allows developers to add annotations with citation data in the code directly via decorators tuned to minimize performance overhead. Citations can be provided and obtained in several different formats, thanks to the [pybtex](http://pybtex.sourceforge.net/) package. This includes bibtex and plain text output.\n\nSample user session:\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: print citations\n[1] W. Decker, G.-M. Greuel, G. Pfister, and H. Schoenemann. \n{\\sc Singular} {3-1-3} --- {A} computer algebra system for polynomial\ncomputations. 2011, http://www.singular.uni-kl.de.\nsage: p = z^2 + 1; q = z^3 + 2\nsage: I = (p*q^2, y-z^2)*R\nsage: t = I.complete_primary_decomposition()\nsage: print citations\n[1] Takeshi Shimoyama and Kazuhiro Yokoyama. Localization and primary\ndecomposition of polynomial ideals. J. Symb. Comput., 22:247-277,\nSeptember 1996.\n[2] Gerhard Pfister, Wolfram Decker, and Hans Schoenemann. {\\tt\n    primdec.lib}. {A} {\\sc Singular} library for primary decomposition.\nPart of the {\\sc Singular} distribution, May 2001.\n[3] W. Decker, G.-M. Greuel, G. Pfister, and H. Schoenemann. {\\sc\n    Singular} \\{3-1-3} --- {A} computer algebra system for polynomial\n    computations. 2011, http://www.singular.uni-kl.de.\n```\n\nIf a different algorithm is requested, the citations reflect this change:\n\n```\nsage: citations.clear()\nsage: t = I.complete_primary_decomposition(algorithm='gtz')\nsage: print citations\n[1] Patrizia Gianni, Barry Trager, and Gail Zacharias. Groebner bases and\nprimary decomposition of polynomial ideals. J. Symb. Comput., 6:149-167,\nDecember 1988.\n[2] Gerhard Pfister, Wolfram Decker, and Hans Schoenemann. {\\tt\n    primdec.lib}. {A} {\\sc Singular} library for primary decomposition.\nPart of the {\\sc Singular} distribution, May 2001.\n[3] W. Decker, G.-M. Greuel, G. Pfister, and H. Schoenemann. {\\sc\n    Singular} {3-1-3} --- {A} computer algebra system for polynomial\ncomputations. 2011, http://www.singular.uni-kl.de.\n```\n\n\n---\n\nOnly apply:\n* [trac-3317-citation-environment.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-citation-environment.patch)\n* [trac-3317-citation-system.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-citation-system.patch)\n* [trac-3317-bibtex-data.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-bibtex-data.patch)\n* [trac-3317-example-usage.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-example-usage.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3317\n\n",
     "created_at": "2008-05-28T00:20:03Z",
     "labels": [
-        "component: packages: standard"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "a citation system for Sage components",
@@ -19,9 +19,61 @@ Assignee: mhampton
 
 CC:  @burcin @novoselt ranosch polybori jakobkroeker
 
-Keywords: citations
+Keywords: citations, sd34
 
-Sage could use some sort of citation system that identifies what components/packages are used in a given computation or worksheet.  After some discussion, it is unclear what the architecture of that should be.
+This ticket implements a citation tracking system for Sage which can give fine grained information on the algorithms and implementations used for a specific computation.
+This is in contrast to the current method in `sage.misc.citation` that relies on running a smaller example through the profiler.
+
+The new citation module allows developers to add annotations with citation data in the code directly via decorators tuned to minimize performance overhead. Citations can be provided and obtained in several different formats, thanks to the [pybtex](http://pybtex.sourceforge.net/) package. This includes bibtex and plain text output.
+
+Sample user session:
+
+```
+sage: R.<x,y,z> = QQ[]
+sage: print citations
+[1] W. Decker, G.-M. Greuel, G. Pfister, and H. Schoenemann. 
+{\sc Singular} {3-1-3} --- {A} computer algebra system for polynomial
+computations. 2011, http://www.singular.uni-kl.de.
+sage: p = z^2 + 1; q = z^3 + 2
+sage: I = (p*q^2, y-z^2)*R
+sage: t = I.complete_primary_decomposition()
+sage: print citations
+[1] Takeshi Shimoyama and Kazuhiro Yokoyama. Localization and primary
+decomposition of polynomial ideals. J. Symb. Comput., 22:247-277,
+September 1996.
+[2] Gerhard Pfister, Wolfram Decker, and Hans Schoenemann. {\tt
+    primdec.lib}. {A} {\sc Singular} library for primary decomposition.
+Part of the {\sc Singular} distribution, May 2001.
+[3] W. Decker, G.-M. Greuel, G. Pfister, and H. Schoenemann. {\sc
+    Singular} \{3-1-3} --- {A} computer algebra system for polynomial
+    computations. 2011, http://www.singular.uni-kl.de.
+```
+
+If a different algorithm is requested, the citations reflect this change:
+
+```
+sage: citations.clear()
+sage: t = I.complete_primary_decomposition(algorithm='gtz')
+sage: print citations
+[1] Patrizia Gianni, Barry Trager, and Gail Zacharias. Groebner bases and
+primary decomposition of polynomial ideals. J. Symb. Comput., 6:149-167,
+December 1988.
+[2] Gerhard Pfister, Wolfram Decker, and Hans Schoenemann. {\tt
+    primdec.lib}. {A} {\sc Singular} library for primary decomposition.
+Part of the {\sc Singular} distribution, May 2001.
+[3] W. Decker, G.-M. Greuel, G. Pfister, and H. Schoenemann. {\sc
+    Singular} {3-1-3} --- {A} computer algebra system for polynomial
+computations. 2011, http://www.singular.uni-kl.de.
+```
+
+
+---
+
+Only apply:
+* [trac-3317-citation-environment.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-citation-environment.patch)
+* [trac-3317-citation-system.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-citation-system.patch)
+* [trac-3317-bibtex-data.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-bibtex-data.patch)
+* [trac-3317-example-usage.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3317/trac-3317-example-usage.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/3317
 

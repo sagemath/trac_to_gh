@@ -1,4 +1,4 @@
-# Issue 2687: database.py - update to work with sqlalchemy
+# Issue 2687: graph_database.py - update to work with sqlalchemy
 
 archive/issues_002687.json:
 ```json
@@ -6,11 +6,11 @@ archive/issues_002687.json:
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2687\n\n",
     "created_at": "2008-03-27T20:54:22Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "database.py - update to work with sqlalchemy",
+    "title": "graph_database.py - update to work with sqlalchemy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2687",
     "user": "https://github.com/rlmill"

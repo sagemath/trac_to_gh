@@ -4,6 +4,7 @@ archive/issues_007914.json:
 ```json
 {
     "body": "Assignee: @jbandlow\n\nCC:  sage-combinat adrien.boussicault@univ-mlv.fr\n\nTitle says it all\n\nIssue created by migration from https://trac.sagemath.org/ticket/7914\n\n",
+    "closed_at": "2010-04-15T06:00:16Z",
     "created_at": "2010-01-12T20:46:47Z",
     "labels": [
         "component: categories"

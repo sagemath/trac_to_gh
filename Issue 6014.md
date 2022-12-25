@@ -1,16 +1,17 @@
-# Issue 6014: hexads in S(5,6,12) and mathematical blackjack
+# Issue 6014: [with patch, positive review] hexads in S(5,6,12) and mathematical blackjack
 
 archive/issues_006014.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: combinatorics, coding theory\n\nThis patch implements kittens, hexads and mathematical blackjack as explained in\n\n```\n    R. Curtis, ``The Steiner system $S(5,6,12)$, the Mathieu group $M_{12}$, \n    and the kitten,'' in {\\bf Computational group theory}, ed. M. Atkinson, \n    Academic Press, 1984.\n    J. Conway, ``Hexacode and tetracode - MINIMOG and MOG,'' in {\\bf Computational \n    group theory}, ed. M. Atkinson, Academic Press, 1984.\n    J. Conway and N. Sloane, ``Lexicographic codes: error-correcting codes from \n    game theory,'' IEEE Trans. Infor. Theory32(1986)337-348.\n    J. Kahane and A. Ryba, ``The hexad game,'' Electronic Journal of Combinatorics, 8 (2001) \n    http://www.combinatorics.org/Volume_8/Abstracts/v8i2r11.html\n```\n\nIt is used in a book on coding theory I'm writing with Jon-Lark Kim on coding theory, which uses Sage throughout to illustrate error-correcting codes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6014\n\n",
+    "closed_at": "2009-06-13T21:45:34Z",
     "created_at": "2009-05-10T12:56:56Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "hexads in S(5,6,12) and mathematical blackjack",
+    "title": "[with patch, positive review] hexads in S(5,6,12) and mathematical blackjack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6014",
     "user": "https://github.com/wdjoyner"

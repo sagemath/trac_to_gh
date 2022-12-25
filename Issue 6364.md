@@ -1,9 +1,10 @@
-# Issue 6364: error message at end of successful "sage -merge"
+# Issue 6364: [with patch, positive review] error message at end of successful "sage -merge"
 
 archive/issues_006364.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: merge\n\nReported on sage-devel:\n\n```\nAll seemed well with that test (all tests passed, etc), but the final\nlines of output are\n\nAll tests passed! Popping patches from queue ...\ncd \"/home/jec/sage-4.0.2/devel/sage\" && hg qpop -a\ncd \"/home/jec/sage-4.0.2/devel/sage\" && hg qdelete trac_5307.patch\nBuilding failed with SystemExit: 0\n\n-- what's with the \"failed\" in the last line?\n```\n\nCraig suggested:\n\n```\nInteresting ... I've never seen that before. What os/arch are you on?\nCould I ask you to try one thing: go to $SAGE_ROOT/local/bin, and edit\nsage-apply-ticket. On the 5th line from the bottom is \"sys.exit(0)\" --\ncould you try deleting that line and moving it to the very bottom (and\noutdenting it)? I suspect that error will go away. Actually, you could\neven try just deleting that line, and I suspect that will fix it, too.\n```\nand was right:\n\n```\nThat did the trick -- ran fine and no \"failure\" line at the end.  (I\nmoved that line to the end as suggested)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6364\n\n",
+    "closed_at": "2009-07-18T18:22:40Z",
     "created_at": "2009-06-20T13:25:47Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_006364.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "error message at end of successful \"sage -merge\"",
+    "title": "[with patch, positive review] error message at end of successful \"sage -merge\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6364",
     "user": "https://github.com/JohnCremona"

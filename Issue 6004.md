@@ -1,15 +1,16 @@
-# Issue 6004: [with patch, needs review] add odd_degree_model function to hyperelliptic curves
+# Issue 6004: [with patch, positive review] add odd_degree_model function to hyperelliptic curves
 
 archive/issues_006004.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: odd degree model hyperelliptic curves\n\nPatch says it best.  Very simple but I need this all the time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6004\n\n",
+    "closed_at": "2009-05-12T21:20:09Z",
     "created_at": "2009-05-07T20:37:05Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] add odd_degree_model function to hyperelliptic curves",
+    "title": "[with patch, positive review] add odd_degree_model function to hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6004",
     "user": "https://github.com/ncalexan"

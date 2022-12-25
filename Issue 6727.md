@@ -1,16 +1,17 @@
-# Issue 6727: spell-check all modules under sage/plot
+# Issue 6727: [with patch, positive review] spell-check all modules under sage/plot
 
 archive/issues_006727.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6727\n\n",
+    "closed_at": "2009-08-13T07:50:40Z",
     "created_at": "2009-08-10T11:16:44Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/plot",
+    "title": "[with patch, positive review] spell-check all modules under sage/plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6727",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

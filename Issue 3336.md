@@ -1,15 +1,16 @@
-# Issue 3336: DyckWords(n) should use an iterator
+# Issue 3336: [with patch, positive review] DyckWords(n) should use an iterator
 
 archive/issues_003336.json:
 ```json
 {
     "body": "Assignee: @dandrake\n\nCC:  sage-combinat\n\nCurrently, DyckWords(n) creates a list, which uses a lot of memory and is slow. See [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/8b739bb399f2e3d4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3336\n\n",
+    "closed_at": "2008-05-31T05:56:41Z",
     "created_at": "2008-05-30T00:44:34Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "DyckWords(n) should use an iterator",
+    "title": "[with patch, positive review] DyckWords(n) should use an iterator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3336",
     "user": "https://github.com/dandrake"

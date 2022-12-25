@@ -3,7 +3,7 @@
 archive/issues_007771.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: r-project, R\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nApply in this order:\n\n1. [trac_7771-r-restart.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-r-restart.patch)\n2. [trac_7771-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
     "created_at": "2009-12-27T03:58:13Z",
     "labels": [
         "component: interfaces",
@@ -19,6 +19,8 @@ archive/issues_007771.json:
 ```
 Assignee: @williamstein
 
+Keywords: r-project, R
+
 This nearly always happens after installing an R package and then following the directions Sage gives:
 
 ```
@@ -26,6 +28,11 @@ sage: r.restart()
 Error: object 'sage0' not found
 ```
 This seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.
+
+Apply in this order:
+
+1. [trac_7771-r-restart.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-r-restart.patch)
+2. [trac_7771-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7771
 

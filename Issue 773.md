@@ -1,16 +1,17 @@
-# Issue 773: SAGE drops . from path
+# Issue 773: [with patch; positive review] SAGE drops . from path
 
 archive/issues_000773.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nwas@ubuntu:~/sd5/ant$ export PATH=.:$PATH\nwas@ubuntu:~/sd5/ant$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |\n| Type notebook() for the GUI, and license() for information.        |\nos.ensage: os.environ['PATH']\n'/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/773\n\n",
+    "closed_at": "2009-01-28T18:03:55Z",
     "created_at": "2007-10-01T19:05:57Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "SAGE drops . from path",
+    "title": "[with patch; positive review] SAGE drops . from path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/773",
     "user": "https://github.com/williamstein"

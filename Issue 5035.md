@@ -1,16 +1,17 @@
-# Issue 5035: get doctest coverage of matrix_generic_dense.pyx up to 100%
+# Issue 5035: [with patch; positive review] get doctest coverage of matrix_generic_dense.pyx up to 100%
 
 archive/issues_005035.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5035\n\n",
+    "closed_at": "2009-01-23T09:07:35Z",
     "created_at": "2009-01-20T07:14:41Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "get doctest coverage of matrix_generic_dense.pyx up to 100%",
+    "title": "[with patch; positive review] get doctest coverage of matrix_generic_dense.pyx up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5035",
     "user": "https://github.com/williamstein"

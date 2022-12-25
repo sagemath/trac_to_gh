@@ -1,16 +1,17 @@
-# Issue 9823: desolve_system ignores initial conditions
+# Issue 9823: improve desolve_system initial condition documentation
 
 archive/issues_009823.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system apparently ignores initial conditions.  Notice the identical results in the two calls in the following example.\n\n```\nsage: t = var('t')\nsage: epsilon = var('epsilon')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = diff(x1,t) == epsilon\nsage: de2 = diff(x2,t) == -2\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)]\nsage: desolve_system([de1, de2], [x1, x2], ics=[1,1], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)] \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9824\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics, beginner\n\nEdit: See comments for the actual issue.\n\n---\n\n\ndesolve_system apparently ignores initial conditions.  Notice the identical results in the two calls in the following example.\n\n```\nsage: t = var('t')\nsage: epsilon = var('epsilon')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = diff(x1,t) == epsilon\nsage: de2 = diff(x2,t) == -2\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)]\nsage: desolve_system([de1, de2], [x1, x2], ics=[1,1], ivar=t)\n[x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9824\n\n",
+    "closed_at": "2014-12-18T00:57:19Z",
     "created_at": "2010-08-27T16:42:45Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
-    "title": "desolve_system ignores initial conditions",
+    "title": "improve desolve_system initial condition documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9823",
     "user": "https://github.com/rhinton"
@@ -20,7 +21,12 @@ Assignee: @burcin
 
 CC:  @robert-marik
 
-Keywords: calculus, maxima, symbolics
+Keywords: calculus, maxima, symbolics, beginner
+
+Edit: See comments for the actual issue.
+
+---
+
 
 desolve_system apparently ignores initial conditions.  Notice the identical results in the two calls in the following example.
 
@@ -36,6 +42,7 @@ sage: desolve_system([de1, de2], [x1, x2], ivar=t)
 sage: desolve_system([de1, de2], [x1, x2], ics=[1,1], ivar=t)
 [x1(t) == epsilon*t + x1(0), x2(t) == -2*t + x2(0)] 
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9824
 

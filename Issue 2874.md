@@ -1,9 +1,10 @@
-# Issue 2874: add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit
+# Issue 2874: [with patch, positive review] add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit
 
 archive/issues_002874.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis patch was written with Justin Walker, who originally coded the exceptional group root systems based on data from Bourbaki. The patch does 3 things.\n\n(1) Replaces self.dim with self.rank in AmbientLattice_e and corrects some related misinformation in a comment in the file. (The a comment in the file formerly said that E6 had rank 5.)\n\n(2) Adds tests. We checked the dimensions of the fundamental representations against what they are supposed to be (from another source), which is a convincing test that all the root data are correct.\n\n(3) Adds a credit for Justin in the file. This was my idea since I know Justin worked hard on getting the exceptional groups coded but if it is controversial it can be taken down.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2874\n\n",
+    "closed_at": "2008-04-11T01:39:27Z",
     "created_at": "2008-04-11T00:55:08Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002874.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit",
+    "title": "[with patch, positive review] add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2874",
     "user": "https://github.com/dwbump"

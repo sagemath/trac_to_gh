@@ -1,22 +1,23 @@
-# Issue 1338: Symmetrica crashes on big-endian machines
+# Issue 1338: [with spkg, positive review] Solaris: Symmetrica 2.0 crashes due to linker issues
 
 archive/issues_001338.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIt seems that symmetrica doesn't do too well on big endian machines. On Sparc as well as PPC under Linux the sfa doctest segfaults or shows bad things happening under valgrind. Mike Hanson said that there will be a new upstream version of symmetrica soon, so let's see if those fix the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1338\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  sage-combinat\n\nIt seems that symmetrica doesn't do too well on big endian machines. On Sparc as well as PPC under Linux the sfa doctest segfaults or shows bad things happening under valgrind. Mike Hanson said that there will be a new upstream version of symmetrica soon, so let's see if those fix the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1338\n\n",
+    "closed_at": "2009-05-15T14:22:05Z",
     "created_at": "2007-11-29T09:53:13Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Symmetrica crashes on big-endian machines",
+    "title": "[with spkg, positive review] Solaris: Symmetrica 2.0 crashes due to linker issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1338",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @mwhansen
+Assignee: mabshoff
 
 CC:  sage-combinat
 

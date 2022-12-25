@@ -4,6 +4,7 @@ archive/issues_009800.json:
 ```json
 {
     "body": "Assignee: @nathanncohen\n\nKeywords: linear programming, constructions, doc\n\nThe linear programming page in the Sage Constructions document has a few errors. \n\n1.  In the vertex cover example, the objective should be to minimize, not maximize the sum.  Also, the example code is missing the objective function.\n\n2.  The maximal matching example code is also missing the objective function.\n\n3.  I couldn't run the examples even after having installed glpk according to the instructions.  Sage complained that no solver was installed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9801\n\n",
+    "closed_at": "2010-08-27T16:37:52Z",
     "created_at": "2010-08-25T13:48:21Z",
     "labels": [
         "component: documentation",

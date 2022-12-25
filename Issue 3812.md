@@ -1,22 +1,23 @@
-# Issue 3812: add apply_morphism to ideal
+# Issue 3812: [with patch, with positive review] add apply_morphism to ideal
 
 archive/issues_003812.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: ideal apply_morphism morphism apply\n\napply_morphism is so useful on matrices, and I didn't know that psi(J) was valid for ideals -- so here is documentation and tests for both functions for general ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3812\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: ideal apply_morphism morphism apply\n\napply_morphism is so useful on matrices, and I didn't know that psi(J) was valid for ideals -- so here is documentation and tests for both functions for general ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3812\n\n",
+    "closed_at": "2009-04-11T01:04:46Z",
     "created_at": "2008-08-12T05:30:18Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "add apply_morphism to ideal",
+    "title": "[with patch, with positive review] add apply_morphism to ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3812",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @malb
+Assignee: @ncalexan
 
 Keywords: ideal apply_morphism morphism apply
 

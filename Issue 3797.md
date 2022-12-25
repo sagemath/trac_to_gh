@@ -1,16 +1,17 @@
-# Issue 3797: [with patch, needs review] several improvements to graph generation
+# Issue 3797: [with patch, with positive review] several improvements to graph generation
 
 archive/issues_003797.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  ekirkman\n\nThis patch:\n\n1. Fixes a bug in sparse6 strings for n=0.\n2. Implements generation of graphs with loops.\n3. Implements generation of graphs with specified degree sequence.\n\nThe last two have been verified to some extent using Sloane's tables. It's all in the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3797\n\n",
+    "closed_at": "2008-08-10T06:53:45Z",
     "created_at": "2008-08-09T22:25:31Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] several improvements to graph generation",
+    "title": "[with patch, with positive review] several improvements to graph generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3797",
     "user": "https://github.com/rlmill"

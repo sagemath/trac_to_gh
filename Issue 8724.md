@@ -4,6 +4,7 @@ archive/issues_008724.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @qed777\n\nNotebook redirects use status code 301 to redirect to new pages, when they should use code 303 See Other. Because of this, Google Chrome caches the redirect, leading to problems with creating new worksheets, emptying trash, etc. If the redirect is cached, the requested action will not be performed, as the browser will redirect directly to the original url.\n\nFor example, if you are to click the \"New Worksheet\" link twice, you would expect to create two new worksheets. However, the second click redirects you directly to the first created worksheet.\n\nThanks to mpatel for spotting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8724\n\n",
+    "closed_at": "2010-04-29T04:56:39Z",
     "created_at": "2010-04-20T12:10:30Z",
     "labels": [
         "component: notebook",

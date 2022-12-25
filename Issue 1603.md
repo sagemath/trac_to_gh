@@ -1,16 +1,17 @@
-# Issue 1603: upgrade pari to 2.3.3, which was recently released
+# Issue 1603: [with spkg, with positive review] upgrade pari to 2.3.3, which was recently released
 
 archive/issues_001603.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1603\n\n",
+    "body": "Assignee: @williamstein\n\nMerged in 2.9.2.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1603\n\n",
+    "closed_at": "2008-01-03T05:37:09Z",
     "created_at": "2007-12-27T02:05:09Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "upgrade pari to 2.3.3, which was recently released",
+    "title": "[with spkg, with positive review] upgrade pari to 2.3.3, which was recently released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1603",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,7 @@ archive/issues_001603.json:
 ```
 Assignee: @williamstein
 
-
+Merged in 2.9.2.alpha0.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1603
 

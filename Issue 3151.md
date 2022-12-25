@@ -4,6 +4,7 @@ archive/issues_003151.json:
 ```json
 {
     "body": "Assignee: boothby\n\nAnother suggestion is to move the jsMath button from the bottom left corner of the window to the bottom right corner. In its current position, it covers the part of the lowest cell that typing begins at.\n\nTed \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3151\n\n",
+    "closed_at": "2008-09-08T18:01:26Z",
     "created_at": "2008-05-10T21:09:58Z",
     "labels": [
         "component: notebook",

@@ -1,25 +1,26 @@
-# Issue 1322: interactive widgets in the notebook
+# Issue 1322: interact -- interactive functions in the notebook (moved to #2449)
 
 archive/issues_001322.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  jason-sage@creativetrax.com @mwhansen timothyclemans\n\nKeywords: graphs\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jason-sage@creativetrax.com @mwhansen timothyclemans\n\nThis ticket is a total mess, so I've made a new clean #2449.\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
+    "closed_at": "2008-03-09T23:46:43Z",
     "created_at": "2007-11-28T20:16:45Z",
     "labels": [
-        "component: combinatorics"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "interactive widgets in the notebook",
+    "title": "interact -- interactive functions in the notebook (moved to #2449)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1322",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: @williamstein
 
 CC:  jason-sage@creativetrax.com @mwhansen timothyclemans
 
-Keywords: graphs
+This ticket is a total mess, so I've made a new clean #2449.
 
 See mailing list discussions at 
 
@@ -35,6 +36,7 @@ Also, from Robert Miller (to Jason Grout):
 > the notebook underwent its sea change. We (>= you and I) should make
 > this a coding sprint at SD7.
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1322
 

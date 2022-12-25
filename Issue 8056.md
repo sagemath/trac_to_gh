@@ -4,6 +4,7 @@ archive/issues_008056.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @haraldschilly @kcrisman\n\nFrom the sage-devel list:\n\nhttp://groups.google.com/group/sage-devel/t/575627f654d21dd9\n\n```\nsage: t = 1/pi/x\nsage: from sage.ext.fast_callable import ExpressionTreeBuilder\nsage: etb = ExpressionTreeBuilder(vars=[x])\nsage: t._fast_callable_(etb)\n<boom>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8056\n\n",
+    "closed_at": "2010-02-11T15:03:18Z",
     "created_at": "2010-01-25T17:17:02Z",
     "labels": [
         "component: symbolics",

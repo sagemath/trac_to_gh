@@ -1,9 +1,10 @@
-# Issue 3316: Fix a bug and improve documentation in jordan_form
+# Issue 3316: [with patch, positive review] Fix a bug and improve documentation in jordan_form
 
 archive/issues_003316.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\nI submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx\n\n```\nsage: A=Matrix(CDF,[[1,-2],[2,-1]])\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\nAttributeError: 'NoneType' object has no attribute 'is_exact'\n\n``` \n\n(second issue in ticket #3249)\n\nAfter this fix, the behavior will be:\n\n```\n\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20625)()\n\nValueError: cannot compute the transformation matrix due to lack of precision\n\n```\n\nthat it is what it is intendend in the code.\n\n(The bug was that base_ring.is_exact() was used, instead of self.base_ring().is_exact().\n\nBesides that, this patch improves the documentation of this method, by adding\n\"Transformation\" to the list of INPUT parameters\n\nIssue created by migration from https://trac.sagemath.org/ticket/3316\n\n",
+    "closed_at": "2008-09-26T04:47:40Z",
     "created_at": "2008-05-27T23:36:32Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_003316.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Fix a bug and improve documentation in jordan_form",
+    "title": "[with patch, positive review] Fix a bug and improve documentation in jordan_form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3316",
     "user": "https://github.com/pdenapo"

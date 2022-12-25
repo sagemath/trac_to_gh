@@ -1,4 +1,4 @@
-# Issue 3474: Request for improvement in plotting
+# Issue 3474: p-adic plotting enhancement
 
 archive/issues_003474.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_003474.json:
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Request for improvement in plotting",
+    "title": "p-adic plotting enhancement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3474",
     "user": "https://github.com/craigcitro"

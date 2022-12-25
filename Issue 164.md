@@ -4,9 +4,10 @@ archive/issues_000164.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt would be nice if, when one line of a doctest fails, then the doctest doesn't run the rest of that \"example block\". What tends to happen is e.g. one line fails, so then a bunch of variables aren't defined, and then you get tons of garbage in your doctest output, which is hard to sift through. After the first failure, it would be good if it would just stop there, and move onto the next example. (Or at least if there was an option for this behaviour.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/164\n\n",
+    "closed_at": "2013-06-19T12:21:45Z",
     "created_at": "2006-10-29T23:07:46Z",
     "labels": [
-        "component: user interface",
+        "component: doctest framework",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

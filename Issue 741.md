@@ -4,9 +4,11 @@ archive/issues_000741.json:
 ```json
 {
     "body": "Assignee: failure\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/741\n\n",
+    "closed_at": "2007-10-01T00:44:09Z",
     "created_at": "2007-09-23T20:01:57Z",
     "labels": [
         "component: doctest coverage",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",

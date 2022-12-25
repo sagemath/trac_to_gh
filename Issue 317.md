@@ -4,6 +4,7 @@ archive/issues_000317.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe following should obviously fail, but it doesn't:\n\n```\nsage: x = 2^1000000000000000\n```\n\nThe reason is that the `Integer.__pow__` function uses `mpz_pow_ui` which only accepts an unsigned long as the exponent, so the exponent is getting stupidly truncated.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/317\n\n",
+    "closed_at": "2007-03-21T23:05:30Z",
     "created_at": "2007-03-11T05:31:49Z",
     "labels": [
         "component: basic arithmetic",

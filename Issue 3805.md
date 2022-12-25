@@ -1,22 +1,23 @@
-# Issue 3805: sage gets basic arithmetic with sqrt(3) wrong
+# Issue 3805: [with patch, positive review] sage gets basic arithmetic with sqrt(3) wrong
 
 archive/issues_003805.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n```\nsage: t1 = (sqrt(3)-3)*(sqrt(3)+1)/6;\nsage: tt1 = -1/sqrt(3);\nsage: t2 = sqrt(3)/6;\nsage: tt1 == t1\n-1/sqrt(3) == (sqrt(3) - 3)*(sqrt(3) + 1)/6\nsage: bool(tt1 == t1)\nTrue\nsage: float(expand(t1+t2))\n-0.43301270189221941\nsage: float(expand(tt1+t2))\n-0.28867513459481292\n```\nBut it seems that this does not happen in a clean maxima session directly:\n\n```\nsage: !maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) t1 : (sqrt(3)-3)*(sqrt(3)+1)/6;\n                          (sqrt(3) - 3) (sqrt(3) + 1)\n(%o1)                     ---------------------------\n                                       6\n(%i2) tt1 : -1/sqrt(3);\n                                        1\n(%o2)                              - -------\n                                     sqrt(3)\n(%i3) t2 : sqrt(3)/6;\n                                     - 1/2\n                                    3\n(%o3)                               ------\n                                      2\n(%i4) tt1, numer;\n(%o4)                         - .5773502691896258\n(%i5) t1, numer;\n(%o5)                         - .5773502691896258\n(%i6) expand(t1+t2), numer;\n(%o6)                         - .2886751345948129\n(%i7) expand(tt1+t2), numer;\n(%o7)                         - .2886751345948129\n```\n\nSo I'm not sure what is going wrong, but it need not be a bug in Maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3805\n\n",
+    "body": "Assignee: @jicama\n\n```\nsage: t1 = (sqrt(3)-3)*(sqrt(3)+1)/6;\nsage: tt1 = -1/sqrt(3);\nsage: t2 = sqrt(3)/6;\nsage: tt1 == t1\n-1/sqrt(3) == (sqrt(3) - 3)*(sqrt(3) + 1)/6\nsage: bool(tt1 == t1)\nTrue\nsage: float(expand(t1+t2))\n-0.43301270189221941\nsage: float(expand(tt1+t2))\n-0.28867513459481292\n```\nBut it seems that this does not happen in a clean maxima session directly:\n\n```\nsage: !maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) t1 : (sqrt(3)-3)*(sqrt(3)+1)/6;\n                          (sqrt(3) - 3) (sqrt(3) + 1)\n(%o1)                     ---------------------------\n                                       6\n(%i2) tt1 : -1/sqrt(3);\n                                        1\n(%o2)                              - -------\n                                     sqrt(3)\n(%i3) t2 : sqrt(3)/6;\n                                     - 1/2\n                                    3\n(%o3)                               ------\n                                      2\n(%i4) tt1, numer;\n(%o4)                         - .5773502691896258\n(%i5) t1, numer;\n(%o5)                         - .5773502691896258\n(%i6) expand(t1+t2), numer;\n(%o6)                         - .2886751345948129\n(%i7) expand(tt1+t2), numer;\n(%o7)                         - .2886751345948129\n```\n\nSo I'm not sure what is going wrong, but it might not be a bug in Maxima. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3805\n\n",
+    "closed_at": "2008-09-01T02:20:06Z",
     "created_at": "2008-08-11T16:51:43Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "sage gets basic arithmetic with sqrt(3) wrong",
+    "title": "[with patch, positive review] sage gets basic arithmetic with sqrt(3) wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3805",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @garyfurnish
+Assignee: @jicama
 
 ```
 sage: t1 = (sqrt(3)-3)*(sqrt(3)+1)/6;
@@ -64,7 +65,7 @@ provides bug reporting information.
 (%o7)                         - .2886751345948129
 ```
 
-So I'm not sure what is going wrong, but it need not be a bug in Maxima.
+So I'm not sure what is going wrong, but it might not be a bug in Maxima. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3805
 

@@ -1,15 +1,16 @@
-# Issue 4697: change integration error message
+# Issue 4697: [with patch, positive review] change integration error message
 
 archive/issues_004697.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nFix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily \"discover\" what to do.\n\n```\nOn Dec 4, 3:07 pm, \"William Stein\" <wst...@gmail.com> wrote:\n> Do you think it would be better if instead of\n>\n> sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)\n> ... Is  x  positive or negative?\n>\n> one saw:\n> ... Is  x  positive or negative?  (Try using the assume command.)\n\nI think the latter is more intuitive; in fact, I would go as far as to\ndo something like this:\n\n ... Is x positive or negative? (Try the assume(x>0) command before\n integral evaluation)\n\nThanks,\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4697\n\n",
+    "closed_at": "2009-01-29T01:17:30Z",
     "created_at": "2008-12-04T21:55:14Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "change integration error message",
+    "title": "[with patch, positive review] change integration error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4697",
     "user": "https://github.com/williamstein"

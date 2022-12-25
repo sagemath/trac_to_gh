@@ -4,6 +4,7 @@ archive/issues_003394.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\nEmacs prevents pbuild from building.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3394\n\n",
+    "closed_at": "2008-06-11T03:46:53Z",
     "created_at": "2008-06-11T03:45:22Z",
     "labels": [
         "component: pbuild",

@@ -1,16 +1,17 @@
-# Issue 1906: [with patch, needs review] eisenstein_series_qexp does not pay attention to the field parameter
+# Issue 1906: [with patch, with positive review] eisenstein_series_qexp does not pay attention to the field parameter
 
 archive/issues_001906.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe function eisenstein_series_qexp() has a parameter K which is supposed to say what field the coefficients of the series should live in, but it always returns rational coefficients:\n\n```\nsage: eisenstein_series_qexp(10,6,GF(5))\n-1/264 + q + 513*q^2 + 19684*q^3 + 262657*q^4 + 1953126*q^5 + O(q^6)\nsage: eisenstein_series_qexp(10,6,QQ)\n-1/264 + q + 513*q^2 + 19684*q^3 + 262657*q^4 + 1953126*q^5 + O(q^6)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1906\n\n",
+    "closed_at": "2008-01-25T18:13:00Z",
     "created_at": "2008-01-24T03:34:38Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] eisenstein_series_qexp does not pay attention to the field parameter",
+    "title": "[with patch, with positive review] eisenstein_series_qexp does not pay attention to the field parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1906",
     "user": "https://github.com/aghitza"

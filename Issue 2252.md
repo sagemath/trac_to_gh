@@ -1,9 +1,10 @@
-# Issue 2252: sage 2.10.2.rc0: rings/number_field/number_field_ideal.py failure
+# Issue 2252: [with patch, positive review] sage 2.10.2.rc0: rings/number_field/number_field_ideal.py failure
 
 archive/issues_002252.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\n```\nsage -t -long devel/sage-main/sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"number_field_ideal.py\", line 868:\n    sage: I.prime_factors()\nExpected:\n    [Fractional ideal (w)]\nGot:\n    [Fractional ideal (-w)]\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_32\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field_ideal.py\n         [6.6 s]\nexit code: 256\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2252\n\n",
+    "closed_at": "2008-02-22T00:26:16Z",
     "created_at": "2008-02-21T19:33:49Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002252.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage 2.10.2.rc0: rings/number_field/number_field_ideal.py failure",
+    "title": "[with patch, positive review] sage 2.10.2.rc0: rings/number_field/number_field_ideal.py failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2252",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

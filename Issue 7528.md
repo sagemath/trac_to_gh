@@ -1,15 +1,16 @@
-# Issue 7528: Orientation of a graph with bounded out-degree
+# Issue 7528: Orientation of a graph with minimized out-degree
 
 archive/issues_007528.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nGiven an undirected graph and an integer k, it is possible to find through the flow algorithm an orientation of it such that any vertex has an out-degree of at most k ( or say that this is impossible )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7528\n\n",
+    "body": "Assignee: @rlmill\n\nThe function minimum_outdegree_orientation() returns a DiGraph which is an orientation of the current graph, such that the maximum out-degree is minimized.\n\nUses LP !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7528\n\n",
+    "closed_at": "2009-12-19T21:32:22Z",
     "created_at": "2009-11-25T09:56:20Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Orientation of a graph with bounded out-degree",
+    "title": "Orientation of a graph with minimized out-degree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7528",
     "user": "https://github.com/nathanncohen"
@@ -17,7 +18,11 @@ archive/issues_007528.json:
 ```
 Assignee: @rlmill
 
-Given an undirected graph and an integer k, it is possible to find through the flow algorithm an orientation of it such that any vertex has an out-degree of at most k ( or say that this is impossible )
+The function minimum_outdegree_orientation() returns a DiGraph which is an orientation of the current graph, such that the maximum out-degree is minimized.
+
+Uses LP !
+
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/7528
 

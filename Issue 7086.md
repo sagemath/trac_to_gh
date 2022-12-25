@@ -3,7 +3,8 @@
 archive/issues_007086.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @hemmecke\n\nKeywords: hg\n\nVanilla hg accepts something like\n\n  hg commit -m 'some comment'\n\nHowever, if hg is a script that calls \"sage -hg\" (like /usr/local/bin/hg on sage.math.washington.edu), then the above command does not work.\n\nThe following was issued on the above server:\nmkdir a\ncd a\nhg init\necho \"abc def\" > abc\nhg add abc\nhg commit -m 'some comment'\ncomment: No such file or directory\nabort: file comment not found!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7086\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @hemmecke\n\nKeywords: hg\n\nVanilla hg accepts something like\n\n  hg commit -m 'some comment'\n\nHowever, if hg is a script that calls \"sage -hg\" (like /usr/local/bin/hg on sage.math.washington.edu), then the above command does not work.\n\nThe following was issued on the above server:\n\n```\nmkdir a\ncd a\nhg init\necho \"abc def\" > abc\nhg add abc\nhg commit -m 'some comment'\ncomment: No such file or directory\nabort: file comment not found!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7086\n\n",
+    "closed_at": "2010-10-22T09:20:29Z",
     "created_at": "2009-09-30T23:20:20Z",
     "labels": [
         "component: misc",
@@ -29,6 +30,8 @@ Vanilla hg accepts something like
 However, if hg is a script that calls "sage -hg" (like /usr/local/bin/hg on sage.math.washington.edu), then the above command does not work.
 
 The following was issued on the above server:
+
+```
 mkdir a
 cd a
 hg init
@@ -37,6 +40,7 @@ hg add abc
 hg commit -m 'some comment'
 comment: No such file or directory
 abort: file comment not found!
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7086
 

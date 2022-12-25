@@ -1,21 +1,22 @@
-# Issue 5133: improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable
+# Issue 5133: [with patch, positive review] improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable
 
 archive/issues_005133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx\n----------------------------------------------------------------------\nmulti_modular.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE multi_modular.pyx: 0% (0 of 15)\n\nMissing documentation:\n         * _extend_moduli_to_height(self, height):\n         * _extend_moduli(self, count):\n         * precomputation_list(self):\n         * partial_product(self, n):\n         * prod(self):\n         * list(self):\n         * __len__(self):\n         * __iter__(self):\n         * __getitem__(self, ix):\n         * __repr__(self):\n         * next_prime(self):\n         * replace_prime(self, ix):\n\n\nMissing doctests:\n         * __init__(self, height):\n         * _extend_moduli_to_count(self, int count):\n         * crt(self, b):\n\n----------------------------------------------------------------------\n\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5133\n\n",
+    "body": "Assignee: @burcin\n\n```\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx\n----------------------------------------------------------------------\nmulti_modular.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE multi_modular.pyx: 0% (0 of 15)\n\nMissing documentation:\n         * _extend_moduli_to_height(self, height):\n         * _extend_moduli(self, count):\n         * precomputation_list(self):\n         * partial_product(self, n):\n         * prod(self):\n         * list(self):\n         * __len__(self):\n         * __iter__(self):\n         * __getitem__(self, ix):\n         * __repr__(self):\n         * next_prime(self):\n         * replace_prime(self, ix):\n\n\nMissing doctests:\n         * __init__(self, height):\n         * _extend_moduli_to_count(self, int count):\n         * crt(self, b):\n\n----------------------------------------------------------------------\n\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5133\n\n",
+    "closed_at": "2009-07-23T02:47:59Z",
     "created_at": "2009-01-30T01:10:20Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable",
+    "title": "[with patch, positive review] improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5133",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 ```
 wstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx

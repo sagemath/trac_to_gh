@@ -1,16 +1,17 @@
-# Issue 4019: [with patch, needs review] numerator and denominator for QQ[x]
+# Issue 4019: [with patch, positive review] numerator and denominator for QQ[x]
 
 archive/issues_004019.json:
 ```json
 {
     "body": "Assignee: tbd\n\nQQ[x] should have a numerator and denominator method. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4019\n\n",
+    "closed_at": "2008-09-01T21:49:42Z",
     "created_at": "2008-08-31T09:01:46Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] numerator and denominator for QQ[x]",
+    "title": "[with patch, positive review] numerator and denominator for QQ[x]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4019",
     "user": "https://github.com/robertwb"

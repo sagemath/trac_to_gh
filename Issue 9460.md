@@ -4,10 +4,10 @@ archive/issues_009460.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @rlmill @williamstein @nexttime\n\nBuilding Sage 4.5.alphaX with `SAGE_FAT_BINARY=\"yes\"` or `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on sage.math can cause many Maxima-related test failures.\n\nSee [testlong.log](http://sage.math.washington.edu/home/wstein/build/sage-4.5.alpha4/testlong.log) and [comment:ticket:9274:17 this comment] at #9274 for examples.\n\nSo far, it seems that reinstalling the Maxima spkg \"fixes\" the failures.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/1a6359a73d39dac2/4b4aaa26c0e22660#4b4aaa26c0e22660) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9460\n\n",
+    "closed_at": "2014-11-28T18:38:43Z",
     "created_at": "2010-07-09T04:39:23Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

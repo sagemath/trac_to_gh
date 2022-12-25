@@ -4,6 +4,7 @@ archive/issues_007432.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nWhile browsing the doc I found some missing \"` `\" in `modular/hecke/module.py`. I fixed them.\n\nNote: there should be a systematic re-reading for those. But I don't have the time for this.\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7432\n\n",
+    "closed_at": "2009-11-12T06:13:58Z",
     "created_at": "2009-11-11T21:40:57Z",
     "labels": [
         "component: documentation",

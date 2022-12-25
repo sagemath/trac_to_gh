@@ -1,16 +1,17 @@
-# Issue 3500: [with patch, needs review] bug in cyclotomic linear algebra code
+# Issue 3500: [with patch, with positive review] bug in cyclotomic linear algebra code
 
 archive/issues_003500.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nWow, here's an embarrassing bug in the cyclotomic linear algebra code:\n\n```\nsage: cf4 = CyclotomicField(4) ; z4 = cf4.0\nsage: A = Matrix(cf4, 1, 2, [-z4, 1])\nsage: A.echelon_form()\n\n[1 0]\n[0 1]\n```\n\nThe attached patch fixes it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3500\n\n",
+    "closed_at": "2008-06-25T01:09:10Z",
     "created_at": "2008-06-24T06:49:15Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] bug in cyclotomic linear algebra code",
+    "title": "[with patch, with positive review] bug in cyclotomic linear algebra code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3500",
     "user": "https://github.com/craigcitro"

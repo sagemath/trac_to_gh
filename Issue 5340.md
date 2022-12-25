@@ -1,9 +1,10 @@
-# Issue 5340: NTL "context"s can be restored at the wrong time, leading to randomly-wrong answers
+# Issue 5340: [with patch, positive review] NTL "context"s can be restored at the wrong time, leading to randomly-wrong answers
 
 archive/issues_005340.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI should have a fix for this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5340\n\n",
+    "closed_at": "2009-02-24T20:30:23Z",
     "created_at": "2009-02-22T20:03:58Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_005340.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "NTL \"context\"s can be restored at the wrong time, leading to randomly-wrong answers",
+    "title": "[with patch, positive review] NTL \"context\"s can be restored at the wrong time, leading to randomly-wrong answers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5340",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

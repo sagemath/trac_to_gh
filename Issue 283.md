@@ -1,21 +1,24 @@
-# Issue 283: vmware -- create a deluxe SAGE vmware virtual machine
+# Issue 283: Improve the SAGE vmware image
 
 archive/issues_000283.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate the best vmware SAGE virtual machine that can be put on 1 CD.  Include as many\nextra nice options as possible, given the constraint of it fitting on a CD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/283\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a pretty vague enhancement. It might be a good thing to have more concrete suggestions.\n\nCreate the best vmware SAGE virtual machine that can be put on 1 CD.  Include as many\nextra nice options as possible, given the constraint of it fitting on a CD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/283\n\n",
+    "closed_at": "2007-11-03T15:17:01Z",
     "created_at": "2007-02-24T02:27:50Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "vmware -- create a deluxe SAGE vmware virtual machine",
+    "title": "Improve the SAGE vmware image",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/283",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
+
+This is a pretty vague enhancement. It might be a good thing to have more concrete suggestions.
 
 Create the best vmware SAGE virtual machine that can be put on 1 CD.  Include as many
 extra nice options as possible, given the constraint of it fitting on a CD.

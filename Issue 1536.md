@@ -1,21 +1,22 @@
-# Issue 1536: jmol useable from notebook
+# Issue 1536: [with patch, positive review] jmol useable from notebook
 
 archive/issues_001536.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nDepends on #1516\n\nIssue created by migration from https://trac.sagemath.org/ticket/1536\n\n",
+    "body": "Assignee: @robertwb\n\nDepends on #1516\n\nIssue created by migration from https://trac.sagemath.org/ticket/1536\n\n",
+    "closed_at": "2008-01-03T16:23:48Z",
     "created_at": "2007-12-16T10:09:18Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "jmol useable from notebook",
+    "title": "[with patch, positive review] jmol useable from notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1536",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Depends on #1516
 

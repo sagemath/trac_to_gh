@@ -3,10 +3,11 @@
 archive/issues_003250.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @robertwb\n\nParent does has a default hash for python classes, but not for cython classes.  This leads to very subtle bugs where converting a python class to a cython class can result in coercion failing mysteriously.  Either coercion should be more descriptive with its error messages resulting from lack of a hash function or Parent should get a default cdef hash function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3250\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nParent does has a default hash for python classes, but not for cython classes.  This leads to very subtle bugs where converting a python class to a cython class can result in coercion failing mysteriously.  Either coercion should be more descriptive with its error messages resulting from lack of a hash function or Parent should get a default cdef hash function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3250\n\n",
+    "closed_at": "2018-03-08T10:05:34Z",
     "created_at": "2008-05-18T02:33:23Z",
     "labels": [
-        "component: coding theory",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_003250.json:
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: @rlmill
+Assignee: @robertwb
 
 CC:  @robertwb
 

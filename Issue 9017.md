@@ -4,10 +4,10 @@ archive/issues_009017.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9017\n\n",
+    "closed_at": "2010-06-06T01:29:48Z",
     "created_at": "2010-05-22T15:46:55Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Use lowercase i for latex symbolic sqrt(-1)",

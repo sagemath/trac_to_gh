@@ -3,10 +3,12 @@
 archive/issues_001646.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe code \n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
+    "body": "Assignee: joyner\n\nThe code \n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
+    "closed_at": "2008-09-06T22:54:29Z",
     "created_at": "2007-12-31T17:18:19Z",
     "labels": [
-        "component: linear algebra",
+        "component: group theory",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +18,7 @@ archive/issues_001646.json:
     "user": "https://github.com/haraldschilly"
 }
 ```
-Assignee: @williamstein
+Assignee: joyner
 
 The code 
 

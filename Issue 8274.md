@@ -1,38 +1,34 @@
-# Issue 8274: R's spkg-install needs a good overhall.
+# Issue 8274: R's spkg-install needs a good overhaul.
 
 archive/issues_008274.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nCC:  @jasongrout @williamstein @kcrisman @nexttime\n\nThe spkg-install file for R would appear to need a bit of an overhaul, and some thought given to what is actually needed. This is hardly surprising, given the version r-2.6.1 of R reached patch level p22 in Sage! \n\nR was updated by Karl-Dieter Crisman recently, but obviously not checked on Solaris, as R fails to build on Solaris due to a lack of iconv support. But there appear to be several issues, which perhaps need addressing. \n\n* The R installation manual http://cran.r-project.org/doc/manuals/R-admin.pdf documents that fact that there are problems on Linux with early versions of gcc4, but R has been extensively tested with gcc 4.1\n* The configure option --with-iconv=no is used on OS X and Solaris, yet that option is no longer documented. In contrast, the manual says iconv is needed. On Solaris, one gets the message: \n\n```\nconfigure: error: a suitable iconv is essential\n```\n This specific issue is #8272, though an iconv package has been built, and at the time of writing needs testing (#8191)\n* There is a comment the option '--with-libiconv-prefix' is not working on FreeBSD. In fact, this option is not documented at all in the latest R manual, so perhaps that is why it does not work. \n* The check for X support relies on the file /usr/include/X11/Xwindows.h That file does not exist on Solaris, yet it supports X. Perhaps a better test is needed. \n* There is this patch patches/R.sh.in, which does not appear to me do very much at, as the only significant difference between the version in the patches directory and the version in Sage is commented out. \n {{{\n# HACK for Sage to avoid hardcoding.  NOthing\n# else has been changed in this file.\n#R_HOME_DIR=\"${SAGE_LOCAL}/lib/R/\"\n#SAGEHACK#\n }}} \n The only other change this patch appears to make is probably undesirable, as it overwrites a line of code related to documentation. However, I might be wrong on this, as another patch appears to be related to this. \n* #7865 documents an error on OpenSolaris - I've not verified if this is an issue with the latest R. \n* SAGE64 is not used on any platform other than OX X, so prevents a 64-bit build on OpenSolaris, Solaris, or any other platform which supports the building of 64-bit code by addition of the -m64 option. \n* From a quick read of the R manual, it would appear better performance is possible if certainly libraries exist. It would seem sensible that notices are issues that better performance can be obtained, and how one might go about that. \n\nOverall, with a previous version having reached patch level 22, I suspect this package needs a bit of a cleanup followed by proper testing on multiple platforms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8274\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout @williamstein @kcrisman @nexttime\n\nKeywords: r-project\n\nThe spkg-install file for R would appear to need a bit of an overhaul, and some thought given to what is actually needed. This is hardly surprising, given the version r-2.6.1 of R reached patch level p22 in Sage! \n\nThere appear to be several issues, which perhaps need addressing. \n\n* The R installation manual http://cran.r-project.org/doc/manuals/R-admin.pdf documents that fact that there are problems on Linux with early versions of gcc4, but R has been extensively tested with gcc 4.1\n* There is a comment the option '--with-libiconv-prefix' is not working on FreeBSD. In fact, this option is not documented at all in the latest R manual, so perhaps that is why it does not work. \n* There is this patch patches/R.sh.in, which does not appear to me do very much at, as the only significant difference between the version in the patches directory and the version in Sage is commented out. \n {{{\n# HACK for Sage to avoid hardcoding.  NOthing\n# else has been changed in this file.\n#R_HOME_DIR=\"${SAGE_LOCAL}/lib/R/\"\n#SAGEHACK#\n }}} \n The only other change this patch appears to make is probably undesirable, as it overwrites a line of code related to documentation. However, I might be wrong on this, as another patch appears to be related to this. \n* #7865 documents an error on OpenSolaris - I've not verified if this is an issue with the latest R. \n* From a quick read of the R manual, it would appear better performance is possible if certainly libraries exist. It would seem sensible that notices are issues that better performance can be obtained, and how one might go about that. \n\nOverall, with a previous version having reached patch level 22, I suspect this package needs a bit of a cleanup followed by proper testing on multiple platforms. \n\n---\n\nSee (also) #9906 (and some other tickets). The current version in Sage is meanwhile R-2.10.1.p4 (#10016).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8274\n\n",
+    "closed_at": "2011-11-26T13:02:46Z",
     "created_at": "2010-02-15T18:34:02Z",
     "labels": [
-        "component: statistics",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "R's spkg-install needs a good overhall.",
+    "title": "R's spkg-install needs a good overhaul.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8274",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: amhou
+Assignee: tbd
 
 CC:  @jasongrout @williamstein @kcrisman @nexttime
 
+Keywords: r-project
+
 The spkg-install file for R would appear to need a bit of an overhaul, and some thought given to what is actually needed. This is hardly surprising, given the version r-2.6.1 of R reached patch level p22 in Sage! 
 
-R was updated by Karl-Dieter Crisman recently, but obviously not checked on Solaris, as R fails to build on Solaris due to a lack of iconv support. But there appear to be several issues, which perhaps need addressing. 
+There appear to be several issues, which perhaps need addressing. 
 
 * The R installation manual http://cran.r-project.org/doc/manuals/R-admin.pdf documents that fact that there are problems on Linux with early versions of gcc4, but R has been extensively tested with gcc 4.1
-* The configure option --with-iconv=no is used on OS X and Solaris, yet that option is no longer documented. In contrast, the manual says iconv is needed. On Solaris, one gets the message: 
-
-```
-configure: error: a suitable iconv is essential
-```
- This specific issue is #8272, though an iconv package has been built, and at the time of writing needs testing (#8191)
 * There is a comment the option '--with-libiconv-prefix' is not working on FreeBSD. In fact, this option is not documented at all in the latest R manual, so perhaps that is why it does not work. 
-* The check for X support relies on the file /usr/include/X11/Xwindows.h That file does not exist on Solaris, yet it supports X. Perhaps a better test is needed. 
 * There is this patch patches/R.sh.in, which does not appear to me do very much at, as the only significant difference between the version in the patches directory and the version in Sage is commented out. 
  {{{
 # HACK for Sage to avoid hardcoding.  NOthing
@@ -42,10 +38,13 @@ configure: error: a suitable iconv is essential
  }}} 
  The only other change this patch appears to make is probably undesirable, as it overwrites a line of code related to documentation. However, I might be wrong on this, as another patch appears to be related to this. 
 * #7865 documents an error on OpenSolaris - I've not verified if this is an issue with the latest R. 
-* SAGE64 is not used on any platform other than OX X, so prevents a 64-bit build on OpenSolaris, Solaris, or any other platform which supports the building of 64-bit code by addition of the -m64 option. 
 * From a quick read of the R manual, it would appear better performance is possible if certainly libraries exist. It would seem sensible that notices are issues that better performance can be obtained, and how one might go about that. 
 
-Overall, with a previous version having reached patch level 22, I suspect this package needs a bit of a cleanup followed by proper testing on multiple platforms.
+Overall, with a previous version having reached patch level 22, I suspect this package needs a bit of a cleanup followed by proper testing on multiple platforms. 
+
+---
+
+See (also) #9906 (and some other tickets). The current version in Sage is meanwhile R-2.10.1.p4 (#10016).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8274
 

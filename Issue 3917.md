@@ -4,6 +4,7 @@ archive/issues_003917.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt seems that every time I want an HTML cell, I also want to hide the source of the cell.  It would be nice if %html automatically implied %hide (or even %hideall maybe).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3917\n\n",
+    "closed_at": "2009-01-22T06:47:48Z",
     "created_at": "2008-08-20T20:53:55Z",
     "labels": [
         "component: notebook",

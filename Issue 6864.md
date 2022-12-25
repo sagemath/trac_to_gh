@@ -1,23 +1,24 @@
-# Issue 6864: Stop Sage tests from saving things to hard drive
+# Issue 6864: [with patch, positive review] Stop Sage tests from saving things to hard drive
 
 archive/issues_006864.json:
 ```json
 {
-    "body": "Assignee: tba\n\nAs far as I can tell, there are several objects that are saved when you run sage -t.  One example is \n\n```\n    sage: from pylab import *\n    sage: t = arange(0.0, 2.0, 0.01)\n    sage: s = sin(2*pi*t)\n    sage: P = plot(t, s, linewidth=1.0)\n    sage: xl = xlabel('time (s)')\n    sage: yl = ylabel('voltage (mV)')\n    sage: t = title('About as simple as it gets, folks')\n    sage: grid(True)\n    sage: savefig('sage.png')\n```\nin sage/plot/plot.py.  However, there are others, which are unfortunately not anywhere near as easy to find, since they don't have a goofy caption.\n\nThis one seems to do it right:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\nwhich is in the sage/plot/text.py, I think.  \n\nI'm not sure what else there is for sure, but I get at the very least the graphics which are attached.  If you recognize them, post it here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6864\n\n",
+    "body": "Assignee: tbd\n\nAs far as I can tell, there are several objects that are saved when you run sage -t.  One example is \n\n```\n    sage: from pylab import *\n    sage: t = arange(0.0, 2.0, 0.01)\n    sage: s = sin(2*pi*t)\n    sage: P = plot(t, s, linewidth=1.0)\n    sage: xl = xlabel('time (s)')\n    sage: yl = ylabel('voltage (mV)')\n    sage: t = title('About as simple as it gets, folks')\n    sage: grid(True)\n    sage: savefig('sage.png')\n```\nin sage/plot/plot.py.  However, there are others, which are unfortunately not anywhere near as easy to find, since they don't have a goofy caption.  \n\nThe point is these should not be cluttering up one's home directory.  This one seems to do it right:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\nwhich is in the sage/plot/text.py, I think.  It does not show up in my home directory.\n\nI'm not sure what else there is for sure, but I get at the very least the graphics which are attached.  If you recognize them, post it here.  Note also that there is a test.sobj and tmp.sws that get saved.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/6864\n\n",
+    "closed_at": "2009-09-16T04:02:30Z",
     "created_at": "2009-09-02T14:19:01Z",
     "labels": [
-        "component: documentation",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Stop Sage tests from saving things to hard drive",
+    "title": "[with patch, positive review] Stop Sage tests from saving things to hard drive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6864",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tba
+Assignee: tbd
 
 As far as I can tell, there are several objects that are saved when you run sage -t.  One example is 
 
@@ -32,16 +33,16 @@ As far as I can tell, there are several objects that are saved when you run sage
     sage: grid(True)
     sage: savefig('sage.png')
 ```
-in sage/plot/plot.py.  However, there are others, which are unfortunately not anywhere near as easy to find, since they don't have a goofy caption.
+in sage/plot/plot.py.  However, there are others, which are unfortunately not anywhere near as easy to find, since they don't have a goofy caption.  
 
-This one seems to do it right:
+The point is these should not be cluttering up one's home directory.  This one seems to do it right:
 
 ```
 sage: text("sage", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')
 ```
-which is in the sage/plot/text.py, I think.  
+which is in the sage/plot/text.py, I think.  It does not show up in my home directory.
 
-I'm not sure what else there is for sure, but I get at the very least the graphics which are attached.  If you recognize them, post it here.
+I'm not sure what else there is for sure, but I get at the very least the graphics which are attached.  If you recognize them, post it here.  Note also that there is a test.sobj and tmp.sws that get saved.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/6864
 

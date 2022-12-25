@@ -1,16 +1,17 @@
-# Issue 3022: [with patch; needs review] Debian package support for polybori
+# Issue 3022: [with patch; positive review] Debian package support for polybori
 
 archive/issues_003022.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch that adds Debian build support to polybori.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3022\n\n",
+    "closed_at": "2008-04-25T18:56:23Z",
     "created_at": "2008-04-25T15:52:58Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Debian package support for polybori",
+    "title": "[with patch; positive review] Debian package support for polybori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3022",
     "user": "https://github.com/timabbott"

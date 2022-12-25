@@ -3,11 +3,11 @@
 archive/issues_001534.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOnce #1533 is done, we need to remove the files from extcode. This should be done is such a way that the history of the (several MB) jar files is purged, I'm still looking for the best way to do this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1534\n\n",
+    "body": "Assignee: @robertwb\n\nOnce #1533 is done, we need to remove the files from extcode. This should be done is such a way that the history of the (several MB) jar files is purged, I'm still looking for the best way to do this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1534\n\n",
+    "closed_at": "2014-08-29T18:33:34Z",
     "created_at": "2007-12-16T07:24:54Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Purge java3d from extcode",
@@ -16,7 +16,7 @@ archive/issues_001534.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Once #1533 is done, we need to remove the files from extcode. This should be done is such a way that the history of the (several MB) jar files is purged, I'm still looking for the best way to do this. 
 

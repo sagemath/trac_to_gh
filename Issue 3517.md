@@ -4,6 +4,7 @@ archive/issues_003517.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNoticed while reviewing #3472.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3517\n\n",
+    "closed_at": "2012-03-20T22:40:59Z",
     "created_at": "2008-06-27T00:13:12Z",
     "labels": [
         "component: build",

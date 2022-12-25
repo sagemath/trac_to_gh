@@ -1,16 +1,17 @@
-# Issue 2477: 3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)
+# Issue 2477: [with patch, positive review] 3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)
 
 archive/issues_002477.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[a much better looking plot]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2477\n\n",
+    "closed_at": "2008-03-31T13:44:28Z",
     "created_at": "2008-03-11T23:13:24Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)",
+    "title": "[with patch, positive review] 3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2477",
     "user": "https://github.com/williamstein"

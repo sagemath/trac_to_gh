@@ -4,9 +4,10 @@ archive/issues_009626.json:
 ```json
 {
     "body": "Assignee: mvngu, schilly\n\nCC:  @slel\n\nKeywords: SPKG.txt spkgs documentation version release\n\nThe information given at http://wiki.sagemath.org/Sage_Spkg_Tracking is fairly out of date (and incomplete).\n\nPerhaps we could add updating this page to the [release manager's task/check list](http://wiki.sagemath.org/devel/ReleaseManagement) (in case a new release includes updated spkgs).\n\nI also consider adding a column \"Upcoming\" which people creating/updating spkgs can fill with the next version and, if appropriate, a link to the corresponding ticket. An alternative is to add a second *row* for each upcoming spkg, just below the main row for that package, i.e. its current version within Sage.\n\nAnother useful column would be something like \"Valid of\", containing the date and/or Sage version each entry (row) has been updated last.\n\nThe column \"Latest stable (upstream) release\" is subject to change more or less frequently, independent of Sage releases; so if we keep it, it should perhaps continually be updated by the spkg maintainers, or at least carry a date, indicating when this information was entered.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9626\n\n",
+    "closed_at": "2020-08-14T00:54:07Z",
     "created_at": "2010-07-28T17:38:06Z",
     "labels": [
-        "component: website/wiki",
+        "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -3,10 +3,12 @@
 archive/issues_004264.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor consistency with b_invariants, etc., and to emphasize immutability, it would be\ngood for E.a_invariants() to return a tuple.  Changing this could change lots of doctests, etc., so this isn't trivial.\n\nSee trac #4262 for a related ticket\n\nIssue created by migration from https://trac.sagemath.org/ticket/4264\n\n",
+    "body": "For consistency with b_invariants, etc., and to emphasize immutability, it would be\ngood for E.a_invariants() to return a tuple.  Changing this could change lots of doctests, etc., so this isn't trivial.\n\nSee trac #4262 for a related ticket\n\nIssue created by migration from https://trac.sagemath.org/ticket/4264\n\n",
+    "closed_at": "2009-11-05T02:40:01Z",
     "created_at": "2008-10-11T09:46:11Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "change E.a_invariants() for an elliptic curve to return a tuple",
@@ -15,8 +17,6 @@ archive/issues_004264.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
-
 For consistency with b_invariants, etc., and to emphasize immutability, it would be
 good for E.a_invariants() to return a tuple.  Changing this could change lots of doctests, etc., so this isn't trivial.
 

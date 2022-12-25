@@ -3,7 +3,8 @@
 archive/issues_004065.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
+    "body": "Assignee: @jicama\n\nCC:  @jasongrout\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
+    "closed_at": "2008-10-31T19:30:10Z",
     "created_at": "2008-09-05T01:20:27Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_004065.json:
     "user": "https://github.com/jicama"
 }
 ```
-Assignee: @williamstein
+Assignee: @jicama
 
 CC:  @jasongrout
 

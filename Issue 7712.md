@@ -1,16 +1,17 @@
-# Issue 7712: error in polynomial substitution with interval coefficients
+# Issue 7712: error with polynomial with interval coefficients
 
 archive/issues_007712.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  kohel\n\nConsider the following example:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(2))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0\n```\nI do not understand why the result is 0. In fact there are two\nerrors:\n(i) the result is a polynomial of degree 3 in y, thus y**3 should appear\n(ii) the result should \"contain\" the exact result which is 0.125*y**3, thus it should be c*y**3 where c is an interval containing\n0.125. Compare the following with a precision of 10 bits:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(10))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0.12500?*y^3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7712\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  kohel\n\nConsider the following example:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(2))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0\n```\nI do not understand why the result is 0. In fact there are two\nerrors:\n(i) the result is a polynomial of degree 3 in y, thus y<sup>3</sup> should appear\n(ii) the result should \"contain\" the exact result which is 0.125*y<sup>3</sup>, thus it should be c*y<sup>3</sup> where c is an interval containing\n0.125. Compare the following with a precision of 10 bits:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(10))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0.12500?*y^3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7712\n\n",
+    "closed_at": "2012-12-21T22:49:33Z",
     "created_at": "2009-12-16T13:01:54Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "error in polynomial substitution with interval coefficients",
+    "title": "error with polynomial with interval coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7712",
     "user": "https://github.com/zimmermann6"
@@ -31,8 +32,8 @@ sage: C(y/2)
 ```
 I do not understand why the result is 0. In fact there are two
 errors:
-(i) the result is a polynomial of degree 3 in y, thus y**3 should appear
-(ii) the result should "contain" the exact result which is 0.125*y**3, thus it should be c*y**3 where c is an interval containing
+(i) the result is a polynomial of degree 3 in y, thus y<sup>3</sup> should appear
+(ii) the result should "contain" the exact result which is 0.125*y<sup>3</sup>, thus it should be c*y<sup>3</sup> where c is an interval containing
 0.125. Compare the following with a precision of 10 bits:
 
 ```

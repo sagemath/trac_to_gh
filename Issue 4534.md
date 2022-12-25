@@ -1,9 +1,10 @@
-# Issue 4534: Stupid error in odd_part
+# Issue 4534: [with new patch, positive review] Stupid error in odd_part
 
 archive/issues_004534.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI introduced an error in `odd_part` while working on #4443; the attached patch is the obvious fix, along with a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4534\n\n",
+    "closed_at": "2008-11-18T19:39:41Z",
     "created_at": "2008-11-16T13:00:42Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_004534.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Stupid error in odd_part",
+    "title": "[with new patch, positive review] Stupid error in odd_part",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4534",
     "user": "https://github.com/craigcitro"

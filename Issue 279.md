@@ -4,6 +4,7 @@ archive/issues_000279.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: test hg mercurial\n\nI often want to test only files touched by a range of revisions.  It would be nice if there was a 'test revisions' command, so sage -tr branch:tip, sage -tr 1023, etc queried hg for changes and only tested those files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/279\n\n",
+    "closed_at": "2007-02-25T08:57:46Z",
     "created_at": "2007-02-22T23:57:12Z",
     "labels": [
         "component: user interface",

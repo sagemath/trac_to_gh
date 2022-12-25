@@ -4,6 +4,7 @@ archive/issues_009341.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @rlmill @robertwb\n\nKeywords: S_units\n\nHere is a stupid example:\n\n```\nsage: _.<t>=QQ[]\nsage: K.<T>=NumberField(t-1)\nsage: I = K.ideal(2)\nsage: K.S_units([I])\n[2, -1]\nsage: K.S_units([I, I])\n[2, 2, -1]\n```\nLooking at the code, this seems to be an upstream issue with gp as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9341\n\n",
+    "closed_at": "2014-04-25T14:20:50Z",
     "created_at": "2010-06-25T20:54:29Z",
     "labels": [
         "component: number fields",

@@ -1,25 +1,34 @@
-# Issue 7608: update Networkx to version 1.0rc1
+# Issue 7608: upgrade NetworkX to version 1.0.1
 
 archive/issues_007608.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @rbeezer\n\nThis implies a lot of modifications in graph_backends.py to respect the new API.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7608\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @nathanncohen @rbeezer\n\nThis implies a lot of modifications in graph_backends.py to respect the new API.\n\nUpdated spkg is at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/networkx/networkx-1.0.1.spkg\n\nApply only:\n\n* [trac_7608-networkx-mega.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7608/trac_7608-networkx-mega.2.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7608\n\n",
+    "closed_at": "2010-04-29T00:35:25Z",
     "created_at": "2009-12-05T23:01:18Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "update Networkx to version 1.0rc1",
+    "title": "upgrade NetworkX to version 1.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7608",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
-Assignee: @rlmill
+Assignee: @jasongrout
 
 CC:  @nathanncohen @rbeezer
 
 This implies a lot of modifications in graph_backends.py to respect the new API.
+
+Updated spkg is at
+
+http://sage.math.washington.edu/home/mvngu/spkg/standard/networkx/networkx-1.0.1.spkg
+
+Apply only:
+
+* [trac_7608-networkx-mega.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7608/trac_7608-networkx-mega.2.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7608
 

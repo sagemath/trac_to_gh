@@ -1,16 +1,17 @@
-# Issue 7078: SageNB -- Introspection does not format output properly
+# Issue 7078: [with patch; fixed and applied] SageNB -- Introspection does not format output properly
 
 archive/issues_007078.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: sagenb notebook\n\n* LaTeX macros are not applied\n* Sometimes, output is parsed twice.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7078\n\n",
+    "closed_at": "2009-09-30T08:17:09Z",
     "created_at": "2009-09-30T04:51:26Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "SageNB -- Introspection does not format output properly",
+    "title": "[with patch; fixed and applied] SageNB -- Introspection does not format output properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7078",
     "user": "https://github.com/TimDumol"

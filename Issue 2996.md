@@ -4,6 +4,7 @@ archive/issues_002996.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWith KDE 3.5.9, the background color of the window defaults to white, not purple.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2996\n\n",
+    "closed_at": "2008-08-31T05:19:27Z",
     "created_at": "2008-04-22T05:49:13Z",
     "labels": [
         "component: website/wiki",

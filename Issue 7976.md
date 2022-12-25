@@ -3,7 +3,8 @@
 archive/issues_007976.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: ClassCall inheritance\n\nThis patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:\n\n- `__classcall__` which behave as usual and is inherited\n- `__classcall__no_inherits` which is not called by derived classes\n\nIf both exists the latter is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7976\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: ClassCall, inheritance\n\nThis patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:\n\n- `__classcall__` which behaves as usual and is inherited\n- `__classcall_private__` which is not called by derived classes\n\nIf both exists the later is used.\n\nBy the way it does some polishing of the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7976\n\n",
+    "closed_at": "2010-01-22T23:27:17Z",
     "created_at": "2010-01-18T13:03:46Z",
     "labels": [
         "component: categories"
@@ -19,14 +20,16 @@ Assignee: @hivert
 
 CC:  sage-combinat
 
-Keywords: ClassCall inheritance
+Keywords: ClassCall, inheritance
 
 This patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:
 
-- `__classcall__` which behave as usual and is inherited
-- `__classcall__no_inherits` which is not called by derived classes
+- `__classcall__` which behaves as usual and is inherited
+- `__classcall_private__` which is not called by derived classes
 
-If both exists the latter is used.
+If both exists the later is used.
+
+By the way it does some polishing of the code.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7976
 

@@ -1,23 +1,23 @@
-# Issue 1425: wrong automatic simplification of pow
+# Issue 1425: [with patch, positive review] wrong automatic simplification of pow
 
 archive/issues_001425.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following simplification is wrong in my opinion:\n\n```\nsage: pow(pow(z,2),1/3)\nz^(2/3)\n```\nFor example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I\n(it gives currently 1 in sage, which is another bug in my opinion):\n\n```\nsage: pow(-1,2/3)\n1\n```\n\nIndeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the\nprincipal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification\npow(pow(z,1/b),a) -> pow(z, a/b) is valid, but pow(pow(z,a),1/b) -> pow(z,a/b) is not.\nIt suffices to consider the case a=b to understand this:\n\n```\nsage: pow(pow(z,2),1/2)\nabs(z)\nsage: pow(pow(z,3),1/3)\nz\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1425\n\n",
+    "body": "Assignee: @mwhansen\n\nThe following simplification is wrong in my opinion:\n\n```\nsage: pow(pow(z,2),1/3)\nz^(2/3)\n```\nFor example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I\n(it gives currently 1 in sage, which is another bug in my opinion):\n\n```\nsage: pow(-1,2/3)\n1\n```\n\nIndeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the\nprincipal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification\npow(pow(z,1/b),a) -> pow(z, a/b) is valid, but pow(pow(z,a),1/b) -> pow(z,a/b) is not.\nIt suffices to consider the case a=b to understand this:\n\n```\nsage: pow(pow(z,2),1/2)\nabs(z)\nsage: pow(pow(z,3),1/3)\nz\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1425\n\n",
+    "closed_at": "2007-12-15T13:58:35Z",
     "created_at": "2007-12-08T10:07:59Z",
     "labels": [
         "component: calculus",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "wrong automatic simplification of pow",
+    "title": "[with patch, positive review] wrong automatic simplification of pow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1425",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 The following simplification is wrong in my opinion:
 

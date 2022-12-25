@@ -4,9 +4,10 @@ archive/issues_006522.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat @williamstein mvngu alexghitza\n\nSee also #111, where this originates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6522\n\n",
+    "closed_at": "2009-12-20T07:19:08Z",
     "created_at": "2009-07-13T10:22:27Z",
     "labels": [
-        "component: user interface",
+        "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",

@@ -4,6 +4,7 @@ archive/issues_000424.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe GMP development page\n   http://gmplib.org/devel/\nhas some code for fast GCD/XGCD of huge operands. It might not appear for a while in official releases, but they claim it's stable, and I'm interested in patching it into SAGE. I tried to do this and got stuck on configuration problems that a linux/GNU guru could help with.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/424\n\n",
+    "closed_at": "2007-09-09T16:53:03Z",
     "created_at": "2007-08-11T17:16:52Z",
     "labels": [
         "component: basic arithmetic"

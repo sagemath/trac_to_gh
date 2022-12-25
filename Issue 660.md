@@ -1,16 +1,17 @@
-# Issue 660: allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]
+# Issue 660: [with patch] allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]
 
 archive/issues_000660.json:
 ```json
 {
     "body": "Assignee: somebody\n\nLet $e \\in GF(q)$. Then `e.vector()` is implemented in little endian ordering in SAGE. This patch allows to reverse this order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/660\n\n",
+    "closed_at": "2007-09-21T02:39:00Z",
     "created_at": "2007-09-15T13:10:14Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]",
+    "title": "[with patch] allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/660",
     "user": "https://github.com/malb"

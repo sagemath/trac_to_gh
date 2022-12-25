@@ -1,16 +1,17 @@
-# Issue 8057: New boehm-gc-7.1.p3.spkg works with Open Solaris 64 bit
+# Issue 8057: New boehm-gc-7.1.p3.spkg works with Open Solaris x64 as 64-bit
 
 archive/issues_008057.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nI made spkg-install work with SunOS with SAGE64=\"yes\"\n\nThe new spkg can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/boehm_gc-7.1.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/boehm_gc-7.1.p3.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8057\n\n",
+    "closed_at": "2010-02-01T00:41:22Z",
     "created_at": "2010-01-25T18:19:56Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "New boehm-gc-7.1.p3.spkg works with Open Solaris 64 bit",
+    "title": "New boehm-gc-7.1.p3.spkg works with Open Solaris x64 as 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8057",
     "user": "https://github.com/jaapspies"

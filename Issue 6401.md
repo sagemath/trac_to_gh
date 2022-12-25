@@ -1,21 +1,24 @@
-# Issue 6401: Typesettings of real() and imag() are broken
+# Issue 6401: [with patch, positive review] Typesettings of real() and imag() are broken
 
 archive/issues_006401.json:
 ```json
 {
-    "body": "Typesetting of real() and imag() methods are broken due to missing parenthesis.\n\n```\nsage: latex(x.real())\n\\Rex\n```\n\"\\Rex\" is not a valid latex expression. It should be something\nlike \"\\Re\\left(x\\right)\".\n\nSimilar issues are present also for Symbolic functions\n\n```\nsage: f(x) = function('f',x)\nsage: latex( f(x).imag())\n\\Imf\\left(x\\right)\n```\nAgain it should be similar to \"\\Im\\left(f\\left(x\\right)\\right)\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6401\n\n",
+    "body": "Assignee: @burcin\n\nTypesetting of real() and imag() methods are broken due to missing parenthesis.\n\n```\nsage: latex(x.real())\n\\Rex\n```\n\"\\Rex\" is not a valid latex expression. It should be something\nlike \"\\Re\\left(x\\right)\".\n\nSimilar issues are present also for Symbolic functions\n\n```\nsage: f(x) = function('f',x)\nsage: latex( f(x).imag())\n\\Imf\\left(x\\right)\n```\nAgain it should be similar to \"\\Im\\left(f\\left(x\\right)\\right)\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6401\n\n",
+    "closed_at": "2009-08-03T00:30:19Z",
     "created_at": "2009-06-25T11:09:12Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Typesettings of real() and imag() are broken",
+    "title": "[with patch, positive review] Typesettings of real() and imag() are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6401",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Assignee: @burcin
+
 Typesetting of real() and imag() methods are broken due to missing parenthesis.
 
 ```

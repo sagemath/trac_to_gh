@@ -1,16 +1,17 @@
-# Issue 6951: Singular fails to build on t2.math with GCC
+# Issue 6951: [with spkg, positive review] Singular fails to build on t2.math with GCC
 
 archive/issues_006951.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @malb drkirkby\n\nAs the subject says. I have attached an install log of Sage 4.1.2.alpha1, building on t2.math with GCC 4.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6951\n\n",
+    "closed_at": "2009-09-27T04:02:05Z",
     "created_at": "2009-09-17T21:39:42Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Singular fails to build on t2.math with GCC",
+    "title": "[with spkg, positive review] Singular fails to build on t2.math with GCC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6951",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

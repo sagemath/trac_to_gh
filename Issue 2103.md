@@ -1,22 +1,23 @@
-# Issue 2103: equivalence classes of cusps for congruence subgroups
+# Issue 2103: [with patch, with positive review] equivalence classes of cusps for congruence subgroups
 
 archive/issues_002103.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk\n\nGiven a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.\n\nSample wished-for session:\n\n```\nsage: C = Cusps\nsage: G = Gamma0(5)\nsage: C(G)\n[Infinity, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2103\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk\n\nGiven a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.\n\nSample wished-for session:\n\n```\nsage: C = Cusps\nsage: G = Gamma0(5)\nsage: C(G)\n[Infinity, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2103\n\n",
+    "closed_at": "2008-10-29T13:47:45Z",
     "created_at": "2008-02-08T07:46:52Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "equivalence classes of cusps for congruence subgroups",
+    "title": "[with patch, with positive review] equivalence classes of cusps for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2103",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk
 

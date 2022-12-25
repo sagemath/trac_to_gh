@@ -1,21 +1,22 @@
-# Issue 2113: twisted.web2 should be gzip compressing things it sends out to the notebook
+# Issue 2113: [with patch and spkg, positive review] twisted.web2 should be gzip compressing things it sends out to the notebook
 
 archive/issues_002113.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWe ought to check to make sure that twisted has the gzip filter enabled and is sending things in zip encoding when it can.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2113\n\n",
+    "body": "Assignee: @jasongrout\n\nWe ought to check to make sure that twisted has the gzip filter enabled and is sending things in zip encoding when it can.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2113\n\n",
+    "closed_at": "2009-02-07T01:09:32Z",
     "created_at": "2008-02-08T14:32:43Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "twisted.web2 should be gzip compressing things it sends out to the notebook",
+    "title": "[with patch and spkg, positive review] twisted.web2 should be gzip compressing things it sends out to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2113",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 We ought to check to make sure that twisted has the gzip filter enabled and is sending things in zip encoding when it can.
 

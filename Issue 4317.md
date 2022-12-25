@@ -1,22 +1,24 @@
-# Issue 4317: relocation after make install is broken
+# Issue 4317: [with patch; positive review] Fix easy-install.pth after moving Sage
 
 archive/issues_004317.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nTo reproduce:\n\n1) build sage from source, say in /tmp/sage-3.1.4\n\n2) type make install DESTDIR=/usr/local/sage-3.1.4 (for example)\n\n3) modify a file in /usr/local/sage-3.1.4, say integers.pyx (for example change the default base for digits)\n\n4) run /usr/local/sage-3.1.4/bin/sage -br\n\n5) try the modified function: the change has not been taken into account!\n\nThe fix is to rename /tmp/sage-3.1.4 into (say) /tmp/sage-3.1.4-old. It appears the relocation does\nnot work any more, or more precisely that sage first looks into the build directory if it still\nexists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4317\n\n",
+    "body": "Assignee: mabshoff\n\nTo reproduce:\n\n1) build sage from source, say in /tmp/sage-3.1.4\n\n2) type make install DESTDIR=/usr/local/sage-3.1.4 (for example)\n\n3) modify a file in /usr/local/sage-3.1.4, say integers.pyx (for example change the default base for digits)\n\n4) run /usr/local/sage-3.1.4/bin/sage -br\n\n5) try the modified function: the change has not been taken into account!\n\nThe fix is to rename /tmp/sage-3.1.4 into (say) /tmp/sage-3.1.4-old. It appears the relocation does\nnot work any more, or more precisely that sage first looks into the build directory if it still\nexists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4317\n\n",
+    "closed_at": "2008-12-01T08:52:59Z",
     "created_at": "2008-10-18T15:22:07Z",
     "labels": [
         "component: relocation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "relocation after make install is broken",
+    "title": "[with patch; positive review] Fix easy-install.pth after moving Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4317",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 To reproduce:
 

@@ -1,9 +1,10 @@
-# Issue 4106: error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)
+# Issue 4106: [with easy patch, positive review] error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)
 
 archive/issues_004106.json:
 ```json
 {
     "body": "Assignee: tbd\n\nPaul Zimmerman reports that one coercion works, and another natural similar coercion doesn't, as illustrated below:\n\n\n```\nx = var('x')\nR = IntegerModRing(3)\nS = PolynomialRing(R, x)\nS(x)\n///\n\nx\n```\n\n```\nx = var('x')\nR = IntegerModRing(4)\nS = PolynomialRing(R, x)\nS(x)\n///\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/wstein/.sage/sage_notebook/worksheets/admin/1/code/22.py\", line 9, in <module>\n    exec compile(ur'S(x)' + '\\n', '', 'single')\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 1097, in __call__\n    return polynomial_modn_dense_ntl.Polynomial_dense_modn_ntl_zz(self, x, check, is_gen, construct=construct)\n  File \"polynomial_modn_dense_ntl.pyx\", line 574, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modn_ntl_zz.__init__ (sage/rings/polynomial/polynomial_modn_dense_ntl.cpp:7017)\n  File \"polynomial_modn_dense_ntl.pyx\", line 130, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_n.__init__ (sage/rings/polynomial/polynomial_modn_dense_ntl.cpp:3188)\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/rings/integer_mod_ring.py\", line 617, in __call__\n    return integer_mod.IntegerMod(self, x)\n  File \"integer_mod.pyx\", line 132, in sage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:2187)\n  File \"integer_mod.pyx\", line 1430, in sage.rings.integer_mod.IntegerMod_int.__init__ (sage/rings/integer_mod.c:10773)\n  File \"integer_ring.pyx\", line 282, in sage.rings.integer_ring.IntegerRing_class.__call__ (sage/rings/integer_ring.c:4998)\nTypeError: unable to convert x (=x) to an integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4106\n\n",
+    "closed_at": "2008-10-07T22:12:57Z",
     "created_at": "2008-09-12T15:52:42Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_004106.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)",
+    "title": "[with easy patch, positive review] error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4106",
     "user": "https://github.com/williamstein"

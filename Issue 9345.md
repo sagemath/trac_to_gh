@@ -1,16 +1,17 @@
-# Issue 9345: Unhandled SIGFPE is rational_reconstruction if the modulus is zero
+# Issue 9345: Unhandled SIGFPE in rational_reconstruction if the modulus is zero
 
 archive/issues_009345.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nSsage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm\n\n```\nsage: rational_reconstruction(1,0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9345\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nSage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm\n\n```\nsage: rational_reconstruction(1,0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n**Apply:** [attachment:trac_9345.3.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9345\n\n",
+    "closed_at": "2010-11-15T23:26:25Z",
     "created_at": "2010-06-26T10:42:28Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Unhandled SIGFPE is rational_reconstruction if the modulus is zero",
+    "title": "Unhandled SIGFPE in rational_reconstruction if the modulus is zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9345",
     "user": "https://github.com/lftabera"
@@ -20,7 +21,7 @@ Assignee: @aghitza
 
 CC:  @jdemeyer
 
-Ssage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm
+Sage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm
 
 ```
 sage: rational_reconstruction(1,0)
@@ -34,8 +35,9 @@ or is not properly wrapped with _sig_on, _sig_off.
 You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
-
 ```
+
+**Apply:** [attachment:trac_9345.3.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9345
 

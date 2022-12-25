@@ -4,6 +4,7 @@ archive/issues_000189.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis input to a notebook cell:\n\n```\nif gap('1+1 = 3'): \n    print \"it is true\"\nelse:\n    print \"it is false\"\n///\nit is false\n```\n\nClick on \"text\" and get this out, which is wrong:\n\n```\nsage: if gap('1+1 = 3'): \n...    print \"it is true\"\n...\nsage: else:\n...    print \"it is false\"\nit is false\n```\n\nIt should be:\n\n```\n            sage: if gap('1+1 = 3'): \n            ...    print \"it is true\"\n            ... else:\n            ...    print \"it is false\"\n            it is false\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/189\n\n",
+    "closed_at": "2007-01-19T11:22:38Z",
     "created_at": "2007-01-12T22:15:34Z",
     "labels": [
         "component: notebook",

@@ -1,15 +1,16 @@
-# Issue 5816: [with patch; needs review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order
+# Issue 5816: [with patch; positive review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order
 
 archive/issues_005816.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5816\n\n",
+    "closed_at": "2009-04-19T02:08:31Z",
     "created_at": "2009-04-18T21:41:48Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order",
+    "title": "[with patch; positive review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5816",
     "user": "https://github.com/williamstein"

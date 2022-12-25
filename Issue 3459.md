@@ -1,9 +1,10 @@
-# Issue 3459: [with patch, needs review] incorrect coercion in number field ideals
+# Issue 3459: [with patch, with positive review] incorrect coercion in number field ideals
 
 archive/issues_003459.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  ccitro\n\nKeywords: number field ideal coercion\n\nSee the patch for doctests that demonstrate the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3459\n\n",
+    "closed_at": "2008-06-23T09:16:36Z",
     "created_at": "2008-06-18T03:36:18Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_003459.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] incorrect coercion in number field ideals",
+    "title": "[with patch, with positive review] incorrect coercion in number field ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3459",
     "user": "https://github.com/ncalexan"

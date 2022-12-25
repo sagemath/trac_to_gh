@@ -6,8 +6,7 @@ archive/issues_006924.json:
     "body": "Assignee: tbd\n\nCC:  @tscrim\n\nKeywords: supercharacters, combinatorics, q-set partitions\n\nI have implemented the rules for restriction and tensor products found in Thm 4.5 and Cor 4.7 (pages 15 and 18):\n\nhttp://arxiv.org/abs/0812.2268\n\nThe backbone is a recursive algorithm to compute tensor products.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6924\n\n",
     "created_at": "2009-09-11T15:27:09Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Restriction and Tensor Products for Supercharacters of $U_n(2)$",

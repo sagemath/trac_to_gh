@@ -4,6 +4,7 @@ archive/issues_000430.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: RDF factor\n\npolynomial_element.Polynomial.factor doesn't\nknow what to do with the RDF ring.\n\nhttp://www.gnu.org/software/gsl/manual/html_node/Polynomials.html\n\nsage: import numpy\n\nsage:  numpy.roots?\n\nThe values in the rank-1 array p are coefficients of a polynomial. If the length of p is n+1 then the polynomial is\n\np[0] * x**n + p[1] * x**(n-1) + ... + p[n-1]*x + p[n]\n\nsage: a=numpy.array([1,0,1],dtype=float)\nsage: numpy.roots(a) \n\nIssue created by migration from https://trac.sagemath.org/ticket/430\n\n",
+    "closed_at": "2007-08-18T19:15:30Z",
     "created_at": "2007-08-16T03:10:55Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,15 +1,16 @@
-# Issue 2191: [with spkg] Debianize gfan spkg
+# Issue 2191: [with spkg, with positive review] Debianize gfan spkg
 
 archive/issues_002191.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI forgot to include the gfan spkg in the list of spkgs to update last time:\nhttp://sage.math.washington.edu/home/tabbott/gfan-0.2.2.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2191\n\n",
+    "closed_at": "2008-02-17T13:28:49Z",
     "created_at": "2008-02-17T08:17:29Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with spkg] Debianize gfan spkg",
+    "title": "[with spkg, with positive review] Debianize gfan spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2191",
     "user": "https://github.com/timabbott"

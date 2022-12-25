@@ -4,6 +4,7 @@ archive/issues_003886.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nKeywords: digraphs, graphs, graphics\n\nSee the attached images for the results of these commands (images produced by sagenb.org).\n\n```\nDiGraph({0:[1]}).show()\n```\n\n```\nDiGraph({0:[1], 1:[2]}).show()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3886\n\n",
+    "closed_at": "2008-08-19T01:50:21Z",
     "created_at": "2008-08-18T03:53:19Z",
     "labels": [
         "component: graph theory",

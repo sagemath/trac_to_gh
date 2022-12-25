@@ -1,22 +1,23 @@
-# Issue 3855: point3d size default is too small to see
+# Issue 3855: [with patch, positive review] point3d size default is too small to see
 
 archive/issues_003855.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\npoint3d((0,0,0))\n```\nversus\n\n```\npoint3d((0,0,0), size=10)\n```\n\nEasy to fix...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3855\n\n",
+    "body": "Assignee: anakha\n\n```\npoint3d((0,0,0))\n```\nversus\n\n```\npoint3d((0,0,0), size=10)\n```\n\nEasy to fix...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3855\n\n",
+    "closed_at": "2008-09-23T00:35:31Z",
     "created_at": "2008-08-14T19:31:44Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "point3d size default is too small to see",
+    "title": "[with patch, positive review] point3d size default is too small to see",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3855",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @williamstein
+Assignee: anakha
 
 ```
 point3d((0,0,0))

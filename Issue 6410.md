@@ -1,15 +1,16 @@
-# Issue 6410: optimize creation of diagonal matrices
+# Issue 6410: [with patch; needs work] optimize creation of diagonal matrices
 
 archive/issues_006410.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\n\nActually there are two issues.\n\nSure, the determinant issue is fairly easily diagnosed. No wonder that an n!\nalgorithm takes time. I'll try to look into this.\n\nBut it's not the only thing.\n\n> sage: p=3\n> sage: n=1000\n> sage: K=GF(p)\n> sage: KP.<x>=PolynomialRing(K)\n> sage: time xI=diagonal_matrix([x for i in range(n)])\n> CPU times: user 32.18 s, sys: 0.14 s, total: 32.33 s\n> Wall time: 32.34 s\n\nWhile in comparison, doing\nM=matrix(KP,n)\nfor i in range(n): M[i,i]=x\n\nreturns instantly.\n\nTracing it down, it seems that when calling diagonal_matrix:\n\n- The list is converted to a dictionary.\n- Because a dense matrix was requested, this dictionary is in turn converted\nto a flat list of n^2 entries.\n- The base __matrix_class constructor is called, and calls the parent ring\nconversion routine for each entry.\n\nI don't know whether it's reasonable or not to have a million coercions of\nzero take thirty seconds total (quite possibly not), but in any case these\ncan be avoided.\n\nI suggest the attached patch.\n\nEmmanuel.Thome at gmail.com\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6410\n\n",
+    "closed_at": "2014-03-31T12:29:50Z",
     "created_at": "2009-06-25T16:13:11Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "optimize creation of diagonal matrices",
+    "title": "[with patch; needs work] optimize creation of diagonal matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6410",
     "user": "https://github.com/williamstein"

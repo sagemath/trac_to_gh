@@ -4,6 +4,7 @@ archive/issues_007467.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777 @williamstein\n\nCurrently, SageNB makes use of `distutils`. The standard method of package distribution, though, is [setuptools](http://peak.telecommunity.com/DevCenter/setuptools). This has several advantages, the foremost being a `setup.py develop` command, which bypasses the need to reinstall the package in order to propagate a change, as well as the ability to upload the package to PyPI with a single command. There is also additional functionality regards packaging, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7467\n\n",
+    "closed_at": "2009-12-08T07:19:55Z",
     "created_at": "2009-11-15T05:05:48Z",
     "labels": [
         "component: notebook"

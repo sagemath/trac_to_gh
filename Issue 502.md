@@ -4,6 +4,7 @@ archive/issues_000502.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\npexpect is at version 2.1, but SAGE uses 2.0.  Investigate why 2.1 is so much slower.\nAlso, speed everything up more.  Says dropdrive on irc:\n\n```\n\n13:53 < dropdrive> was_: I looked into the pipes being slow thing, and Pexpect is just horrible with large amounts of data\n                   (O(n^2)).  I made a fix (O(n)) that reads 6MB/s.  But pexpect will always be slow if you have to call\n                   .expect many times (twice per line as it stands), because pexpect slices its buffer every time.\n13:55 < dropdrive> was_: So if you read a 4096-byte block from a pipe, and .expect gets called every 80 characters,\n                   pexpect will build buffer[80*n:] for n from 1 to 50\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/502\n\n",
+    "closed_at": "2015-12-04T22:12:33Z",
     "created_at": "2007-08-28T21:07:42Z",
     "labels": [
         "component: interfaces"

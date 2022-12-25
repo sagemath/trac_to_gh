@@ -3,7 +3,8 @@
 archive/issues_007921.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @robertwb @roed314\n\nWith this patch, all parents and elements can inherit code from categories. This is implemented via __getattr__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7921\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @robertwb @roed314\n\nWith this patch, all parents and elements can inherit code from categories, even extension types. This includes in particular\ngeneric tests (see TestSuite(...).run()):\n\n```\nsage: ZZ.category()\nCategory of commutative rings\nsage: TestSuite(ZZ).run(verbose = True)\nrunning ._test_additive_associativity() . . . pass\nrunning ._test_an_element() . . . pass\nrunning ._test_associativity() . . . pass\nrunning ._test_element_pickling() . . . pass\nrunning ._test_not_implemented_methods() . . . pass\nrunning ._test_one() . . . pass\nrunning ._test_pickling() . . . pass\nrunning ._test_prod() . . . pass\nrunning ._test_some_elements() . . . pass\nrunning ._test_zero() . . . pass\n```\n\nIt is to be expected that this will catch bugs in many places in the library. To start with, see #7922, #7929, #7945, #7946\n\nSee patch description for details.\n\nPatch also available on the sage-combinat server, with a +category guard: http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/trac_7921-categories_for_extension_types-nt.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/7921\n\n",
+    "closed_at": "2010-01-22T22:57:33Z",
     "created_at": "2010-01-13T16:05:49Z",
     "labels": [
         "component: categories"
@@ -19,7 +20,30 @@ Assignee: @nthiery
 
 CC:  sage-combinat @mwhansen @robertwb @roed314
 
-With this patch, all parents and elements can inherit code from categories. This is implemented via __getattr__.
+With this patch, all parents and elements can inherit code from categories, even extension types. This includes in particular
+generic tests (see TestSuite(...).run()):
+
+```
+sage: ZZ.category()
+Category of commutative rings
+sage: TestSuite(ZZ).run(verbose = True)
+running ._test_additive_associativity() . . . pass
+running ._test_an_element() . . . pass
+running ._test_associativity() . . . pass
+running ._test_element_pickling() . . . pass
+running ._test_not_implemented_methods() . . . pass
+running ._test_one() . . . pass
+running ._test_pickling() . . . pass
+running ._test_prod() . . . pass
+running ._test_some_elements() . . . pass
+running ._test_zero() . . . pass
+```
+
+It is to be expected that this will catch bugs in many places in the library. To start with, see #7922, #7929, #7945, #7946
+
+See patch description for details.
+
+Patch also available on the sage-combinat server, with a +category guard: http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/trac_7921-categories_for_extension_types-nt.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/7921
 

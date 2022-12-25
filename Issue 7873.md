@@ -4,6 +4,7 @@ archive/issues_007873.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nAs agreed here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\nthere is no need to have variables for very basic commands such as 'rm'. Gap relies on the use of $RM, $LN and $MKDIR, which seems a bit pointless. All are standard Unix commands, defined by POSIX. We should not make make use of any special options some versions might use. \n\nI'm no fan of GNU, but even their coding standards acknowledge one can assume some commands exist, and include all of these. \n\nhttp://www.gnu.org/prep/standards/standards.html#Utilities-in-Makefiles\n\nHence I would replace the use of $LN, $RM and $MKDIR on the spkg-install and anywhere else it may be found in gap. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7873\n\n",
+    "closed_at": "2010-01-14T02:39:08Z",
     "created_at": "2010-01-08T18:11:13Z",
     "labels": [
         "component: build",

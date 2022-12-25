@@ -1,22 +1,23 @@
-# Issue 6023: Bring plot/polygon.py to 100% coverage
+# Issue 6023: [with patch, positive review] Bring plot/polygon.py to 100% coverage
 
 archive/issues_006023.json:
 ```json
 {
-    "body": "Assignee: tba\n\nBring plot/polygon.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6023\n\n",
+    "body": "Assignee: @kcrisman\n\nBring plot/polygon.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6023\n\n",
+    "closed_at": "2009-05-15T07:55:08Z",
     "created_at": "2009-05-12T00:25:25Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring plot/polygon.py to 100% coverage",
+    "title": "[with patch, positive review] Bring plot/polygon.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6023",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tba
+Assignee: @kcrisman
 
 Bring plot/polygon.py to 100% coverage.
 

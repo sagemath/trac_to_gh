@@ -4,6 +4,7 @@ archive/issues_001095.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI made a silly mistake when I was editing sage-coverage -- it will always tell you that a function is \"possibly wrong\" (i.e. function name doesn't occur in doctest) when there is no doctest; this is pretty obvious. This patch fixes it, so that now things only appear in the \"possibly wrong\" list if they *don't* appear in either of the other lists (missing documentation or missing doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1095\n\n",
+    "closed_at": "2007-11-06T22:33:52Z",
     "created_at": "2007-11-04T01:15:24Z",
     "labels": [
         "component: doctest coverage",

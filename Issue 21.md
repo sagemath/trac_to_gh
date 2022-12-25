@@ -3,12 +3,11 @@
 archive/issues_000021.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @kini @saraedum @gvol\n\n`sage -br -notebook` doesn't start the notebook but it should\n\nIssue created by migration from https://trac.sagemath.org/ticket/21\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @kini @saraedum @gvol\n\nWe should improve and/or modernize and/or revise Sage's command-line parsing.\n\nTwo ideas, which could be debated endlessly and could also be implemented independently of each other:\n- use Python's [argparse module](https://docs.python.org/3/library/argparse.html) to handle the parsing, rather than a shell script\n- change Sage's options from flags to subcommands: `sage --package ...` would be changed to `sage package ...`, etc. (comment:56 and comment:57 list some possibilities)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/21\n\n",
     "created_at": "2006-09-12T23:21:18Z",
     "labels": [
-        "component: basic arithmetic",
-        "minor",
-        "bug"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "command line option parsing",
@@ -17,11 +16,16 @@ archive/issues_000021.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @jdemeyer
 
 CC:  @kini @saraedum @gvol
 
-`sage -br -notebook` doesn't start the notebook but it should
+We should improve and/or modernize and/or revise Sage's command-line parsing.
+
+Two ideas, which could be debated endlessly and could also be implemented independently of each other:
+- use Python's [argparse module](https://docs.python.org/3/library/argparse.html) to handle the parsing, rather than a shell script
+- change Sage's options from flags to subcommands: `sage --package ...` would be changed to `sage package ...`, etc. (comment:56 and comment:57 list some possibilities)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/21
 

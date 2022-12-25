@@ -1,9 +1,10 @@
-# Issue 4565: sage-3.2.rc2 -- fix all tex failures
+# Issue 4565: [with patch, positive review] sage-3.2.rc2 -- fix all tex failures
 
 archive/issues_004565.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4565\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4565\n\n",
+    "closed_at": "2008-11-20T19:28:34Z",
     "created_at": "2008-11-20T17:30:38Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_004565.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "sage-3.2.rc2 -- fix all tex failures",
+    "title": "[with patch, positive review] sage-3.2.rc2 -- fix all tex failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4565",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 
 

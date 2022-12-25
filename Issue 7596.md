@@ -3,7 +3,7 @@
 archive/issues_007596.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @slel\n\nHere's an example:\n\n```\nsage: K.<a> = NumberField(x)\nsage: K.ideal(5)\nFractional ideal (5)\nsage: QQ.ideal(5)\nPrincipal ideal (1) of Rational Field\nsage: QQ.number_field().ideal(5)\nPrincipal ideal (1) of Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7596\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @slel\n\nSeveral examples:\n\n```\nsage: K.<a> = NumberField(x)\nsage: K.ideal(5)\nFractional ideal (5)\nsage: QQ.ideal(5)\nPrincipal ideal (1) of Rational Field\nsage: QQ.number_field().ideal(5)\nPrincipal ideal (1) of Rational Field\n```\n\n```\nK = QQ\nI = K.ideal(7)\n```\n\nThis creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have\n\n```\nK.<a> = NumberField(x^2+2)\nI = K.ideal(7)\n```\n\nSimilarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().\n\n```\nQQ.places()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7596\n\n",
     "created_at": "2009-12-03T20:06:43Z",
     "labels": [
         "component: number fields",
@@ -20,7 +20,7 @@ Assignee: @loefflerd
 
 CC:  @slel
 
-Here's an example:
+Several examples:
 
 ```
 sage: K.<a> = NumberField(x)
@@ -30,6 +30,24 @@ sage: QQ.ideal(5)
 Principal ideal (1) of Rational Field
 sage: QQ.number_field().ideal(5)
 Principal ideal (1) of Rational Field
+```
+
+```
+K = QQ
+I = K.ideal(7)
+```
+
+This creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have
+
+```
+K.<a> = NumberField(x^2+2)
+I = K.ideal(7)
+```
+
+Similarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().
+
+```
+QQ.places()
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7596

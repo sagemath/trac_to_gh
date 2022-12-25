@@ -4,6 +4,7 @@ archive/issues_008055.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @haraldschilly mvngu @TimDumol @fchapoton\n\nLet's showcase the many cool features of Sage on the Notebook login page!\n\nFor this we can use a carousel plug-in for jQuery.  Some searches and several experiments indicate that [jCarousel](http://sorgalla.com/projects/jcarousel/) is both featureful and relatively easy-to-use.\n\nNote: We can use the carousel in other ways, too, e.g., for slideshows.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8055\n\n",
+    "closed_at": "2020-09-02T07:48:10Z",
     "created_at": "2010-01-25T13:51:51Z",
     "labels": [
         "component: notebook",

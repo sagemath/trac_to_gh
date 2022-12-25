@@ -1,22 +1,24 @@
-# Issue 2240: Docstrings and Doctests: calculus.py
+# Issue 2240: [with patches, positive review] Docstrings and Doctests: calculus.py
 
 archive/issues_002240.json:
 ```json
 {
-    "body": "Assignee: tba\n\nGoal: Enter all missing docstrings and doctests for functions (not beginning with an underscore \"_\") in the file\n\ncalculus/calculus.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2240\n\n",
+    "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nGoal: Enter all missing docstrings and doctests for functions (not beginning with an underscore \"_\") in the file\n\ncalculus/calculus.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2240\n\n",
+    "closed_at": "2008-02-26T07:39:04Z",
     "created_at": "2008-02-21T00:33:46Z",
     "labels": [
-        "component: documentation",
-        "minor"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Docstrings and Doctests: calculus.py",
+    "title": "[with patches, positive review] Docstrings and Doctests: calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2240",
     "user": "https://github.com/cswiercz"
 }
 ```
-Assignee: tba
+Assignee: @cswiercz
+
+Keywords: docstring, doctest
 
 Goal: Enter all missing docstrings and doctests for functions (not beginning with an underscore "_") in the file
 

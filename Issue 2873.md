@@ -1,21 +1,22 @@
-# Issue 2873: Customize JMOL menu
+# Issue 2873: [with patch and spkg, positive review] Customize JMOL menu
 
 archive/issues_002873.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be nice to shorten the menu quite a bit and pick the options that make sense to us.\n\nSee http://chemapps.stolaf.edu/jmol/docs/examples-11/new4.htm point 13 for how to do this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2873\n\n",
+    "body": "Assignee: @jasongrout\n\nIt would be nice to shorten the menu quite a bit and pick the options that make sense to us.\n\nSee http://chemapps.stolaf.edu/jmol/docs/examples-11/new4.htm point 13 for how to do this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2873\n\n",
+    "closed_at": "2009-02-14T14:51:03Z",
     "created_at": "2008-04-10T22:42:45Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Customize JMOL menu",
+    "title": "[with patch and spkg, positive review] Customize JMOL menu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2873",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 It would be nice to shorten the menu quite a bit and pick the options that make sense to us.
 

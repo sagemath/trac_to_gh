@@ -1,16 +1,17 @@
-# Issue 5931: [with patch, needs review] Greatly speed up sage.combinat.symmetric_group_algebra.e
+# Issue 5931: [with patch, positive review] Greatly speed up sage.combinat.symmetric_group_algebra.e
 
 archive/issues_005931.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nThe old code essentially reimplemented the multiplication in the group algebra.  The new code accumulates the symmetrizers and antisymmetrizers separately, and then does one multiply at the end.  This probably results in the same number of operations, but it avoids creating many intermediate objects, so it is about 10x faster.\n\nAlso update docs for e and e_hat.\n\nTiming on 2.2 GHz Core2Duo running 32-bit Ubuntu 8.04 of\n\nfrom sage.combinat.symmetric_group_algebra import e\n\n\ntime dummy=e([[1,2,3,4],[5,6,7]])\n\nBefore patch:\n\nTime: CPU 3.38 s, Wall: 3.73 s\n\nAfter patch:\n\nTime: CPU 0.26 s, Wall: 0.40 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5931\n\n",
+    "closed_at": "2009-06-04T19:19:14Z",
     "created_at": "2009-04-29T02:01:49Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] Greatly speed up sage.combinat.symmetric_group_algebra.e",
+    "title": "[with patch, positive review] Greatly speed up sage.combinat.symmetric_group_algebra.e",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5931",
     "user": "https://github.com/jdchristensen"

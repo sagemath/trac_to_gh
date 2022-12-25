@@ -4,6 +4,7 @@ archive/issues_009417.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @williamstein justin\n\nKeywords: tamagawa_number local_data\n\nIn 4.4.4 the following Tamagawa number gets evaluated as 2:\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n2\n```\n\nAccording to Magma this should be 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9417\n\n",
+    "closed_at": "2011-04-20T12:51:16Z",
     "created_at": "2010-07-03T03:41:37Z",
     "labels": [
         "component: elliptic curves",

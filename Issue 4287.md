@@ -1,16 +1,17 @@
-# Issue 4287: [with patch, needs review] improve elliptic curve doctest (part 5)
+# Issue 4287: [with patch, positive review] improve elliptic curve doctest (part 5)
 
 archive/issues_004287.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThis is for the file formal_group.py. Note that adding a s == loads(dumps(s)) test revealed a\nfailure:\n\n```\nsage: E = EllipticCurve('11a')\nsage: F = E.formal_group()\nsage: F == loads(dumps(F))\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4287\n\n",
+    "closed_at": "2008-11-23T07:57:00Z",
     "created_at": "2008-10-14T19:58:56Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] improve elliptic curve doctest (part 5)",
+    "title": "[with patch, positive review] improve elliptic curve doctest (part 5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4287",
     "user": "https://github.com/zimmermann6"

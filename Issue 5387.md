@@ -3,7 +3,8 @@
 archive/issues_005387.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nAt least one thing in the installation guide (a table) disappeared in the ReST conversion, and I've changed a few other things: how to build the documentation, a broken link, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5387\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: installation guide\n\nAt least one thing in the installation guide (a table) disappeared in the ReST conversion, and I've changed a few other things: how to build the documentation, a broken link, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5387\n\n",
+    "closed_at": "2009-03-01T04:41:20Z",
     "created_at": "2009-02-26T18:29:41Z",
     "labels": [
         "component: documentation",
@@ -18,6 +19,8 @@ archive/issues_005387.json:
 }
 ```
 Assignee: @jhpalmieri
+
+Keywords: installation guide
 
 At least one thing in the installation guide (a table) disappeared in the ReST conversion, and I've changed a few other things: how to build the documentation, a broken link, etc.
 

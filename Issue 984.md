@@ -4,6 +4,7 @@ archive/issues_000984.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nsage is missing its startup message in 2.8.9.rc1:\n\n```\ncwitty@magnetar:~/sage-2.8.9.rc1$ ./sage\n\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/984\n\n",
+    "closed_at": "2007-10-27T05:17:37Z",
     "created_at": "2007-10-25T00:50:42Z",
     "labels": [
         "component: user interface",

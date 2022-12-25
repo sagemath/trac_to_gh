@@ -4,6 +4,7 @@ archive/issues_008587.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nWe pass a Groebner basis to `vdim()` of Singular but forgot to mention it to Singular.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8587\n\n",
+    "closed_at": "2010-05-08T21:46:13Z",
     "created_at": "2010-03-23T13:46:54Z",
     "labels": [
         "component: commutative algebra",

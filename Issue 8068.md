@@ -3,10 +3,12 @@
 archive/issues_008068.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nLet spkg-install handle SAGE64=\"yes\" on Open Solaris 65 bit.\n\n\nSee here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg)\n\n\n\n```\nPASS: tpow_all\n====================\nAll 148 tests passed\n====================\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\nmake[1]: Nothing to be done for `check-am'.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\n\nreal\t2m15.371s\nuser\t1m22.294s\nsys\t0m54.607s\nSuccessfully installed mpfr-2.4.1.p1\n\n```\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8068\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nLet spkg-install handle SAGE64=\"yes\" on Open Solaris 64 bit.\n\n\nSee here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg)\n\n\n\n```\nPASS: tpow_all\n====================\nAll 148 tests passed\n====================\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\nmake[1]: Nothing to be done for `check-am'.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\n\nreal 2m15.371s\nuser 1m22.294s\nsys 0m54.607s\nSuccessfully installed mpfr-2.4.1.p1\n\n```\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8068\n\n",
+    "closed_at": "2010-02-11T15:17:33Z",
     "created_at": "2010-01-25T23:41:29Z",
     "labels": [
-        "component: porting"
+        "component: porting",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New mpfr-2.4.1.p1.spkg works with Open Solaris 64 bit",
@@ -19,7 +21,7 @@ Assignee: drkirkby
 
 CC:  drkirby @williamstein
 
-Let spkg-install handle SAGE64="yes" on Open Solaris 65 bit.
+Let spkg-install handle SAGE64="yes" on Open Solaris 64 bit.
 
 
 See here:
@@ -38,14 +40,16 @@ make[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/m
 make[1]: Nothing to be done for `check-am'.
 make[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'
 
-real	2m15.371s
-user	1m22.294s
-sys	0m54.607s
+real 2m15.371s
+user 1m22.294s
+sys 0m54.607s
 Successfully installed mpfr-2.4.1.p1
 
 ```
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8068
 

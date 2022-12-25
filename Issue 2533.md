@@ -1,16 +1,17 @@
-# Issue 2533: add "-p" flag to $CP for make install
+# Issue 2533: [with patch, positive review] add "-p" flag to $CP for make install
 
 archive/issues_002533.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nOn Saturday 15 March 2008, Paul Zimmermann wrote:\n>        Hi,\n\n> I wonder why sage -br takes so much time after a fresh build from source\n> and make install. Normally, since everything was just compiled, it should\n> have nothing to do. I guess the reason lies in:\n\n>    bash-3.00$ make install DESTDIR=/usr/local/sage-2.10.3 -n\n>    ...\n>    cp -rv * /usr/local/sage-2.10.3/sage/\n>    ...\n\n> where 'cp' does not preserve the dates of the files, and thus the correct\n> dependencies are lost. Maybe \"mv * /usr/local/sage-2.10.3/sage/\" would\n> solve that problem?\n\nOr use\n    cp -prv * ...\nthe -p option preserve timestamps.\n\nBill\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2533\n\n",
+    "closed_at": "2008-03-15T22:26:04Z",
     "created_at": "2008-03-15T22:15:35Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "add \"-p\" flag to $CP for make install",
+    "title": "[with patch, positive review] add \"-p\" flag to $CP for make install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2533",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,15 +1,16 @@
-# Issue 7527: include graph_coloring in the reference manual.
+# Issue 7527: include graph_coloring in the reference manual
 
 archive/issues_007527.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  mvngu\n\nAs mentionned in #6679 the file graph_coloring is not included in the docstrings. Apply this patch, and this is fixed :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7527\n\n",
+    "closed_at": "2009-12-14T15:57:49Z",
     "created_at": "2009-11-25T08:44:39Z",
     "labels": [
-        "component: graph theory"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "include graph_coloring in the reference manual.",
+    "title": "include graph_coloring in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7527",
     "user": "https://github.com/nathanncohen"

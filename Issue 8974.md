@@ -4,6 +4,7 @@ archive/issues_008974.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nKeywords: eigenvalues\n\nAdded the functions eigenvalues, eigenvectors, eigenspaces and minpoly to the FreeModuleMorphism class (only for endomorphisms of vector spaces).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8974\n\n",
+    "closed_at": "2010-07-20T08:21:51Z",
     "created_at": "2010-05-15T20:50:25Z",
     "labels": [
         "component: linear algebra",

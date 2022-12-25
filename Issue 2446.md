@@ -4,6 +4,7 @@ archive/issues_002446.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: algebras modules\n\nMost files in sage/algebras have little or no docstrings and almost no doctests.  This patch makes a start on remedying this, but there is a lot more to be done.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2446\n\n",
+    "closed_at": "2008-03-09T21:30:26Z",
     "created_at": "2008-03-09T21:22:36Z",
     "labels": [
         "component: commutative algebra",

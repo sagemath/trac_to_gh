@@ -4,6 +4,7 @@ archive/issues_008609.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe patch switches AmbientSpace and Scheme to inherit from Parent rather than old-style classes. I used to get random segfaults in \"sage -testall\" with this patch applied, but with 4.3.3 it seems to be smooth and in anyway the patch is very simple and should not introduce new bugs.\n\nTo \"fix\" broken doctests because of the missing list() method I have just removed them, since they were in functions not directly related to list() anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8609\n\n",
+    "closed_at": "2010-04-16T18:52:33Z",
     "created_at": "2010-03-25T22:39:30Z",
     "labels": [
         "component: algebraic geometry",

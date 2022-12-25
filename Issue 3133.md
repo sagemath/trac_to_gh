@@ -1,21 +1,22 @@
-# Issue 3133: allow parametric_plot and parametric_plot3d to take a vector as input
+# Issue 3133: [with patch, positive review] allow parametric_plot and parametric_plot3d to take a vector as input
 
 archive/issues_003133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jasongrout\n\n```\n\n\nOn Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:\n> I'm teaching ODEs right now and I'd like to plot the usual sort of\n>  solution to a 2-by-2 linear DE system, but the following doesn't work:\n>  \n>   sage: evec = vector([1,2])\n>   sage: var('t')\n>   sage: parametric_plot( exp(-t) * evec, 0, 2)\n>  \n>  The traceback's complaint is \"<type 'exceptions.TypeError'>: function\n>  takes at most 1 positional arguments (2 given)\".\n>  \n>  I know I could manually do (exp(-t), 2*exp(-t)), but the above form\n>  seems so natural. Is there a way to get that to work?\n\nYou could type\n\nsage: parametric_plot( list(exp(-t) * evec), 0, 2)\n\nI think it would be reasonable for us to improve parametric_plot so that it takes a vector \nas input instead of just a list or tuple. \n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3133\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kcrisman @jasongrout\n\n```\n\n\nOn Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:\n> I'm teaching ODEs right now and I'd like to plot the usual sort of\n>  solution to a 2-by-2 linear DE system, but the following doesn't work:\n>  \n>   sage: evec = vector([1,2])\n>   sage: var('t')\n>   sage: parametric_plot( exp(-t) * evec, 0, 2)\n>  \n>  The traceback's complaint is \"<type 'exceptions.TypeError'>: function\n>  takes at most 1 positional arguments (2 given)\".\n>  \n>  I know I could manually do (exp(-t), 2*exp(-t)), but the above form\n>  seems so natural. Is there a way to get that to work?\n\nYou could type\n\nsage: parametric_plot( list(exp(-t) * evec), 0, 2)\n\nI think it would be reasonable for us to improve parametric_plot so that it takes a vector \nas input instead of just a list or tuple. \n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3133\n\n",
+    "closed_at": "2009-09-19T20:07:29Z",
     "created_at": "2008-05-08T13:58:14Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "allow parametric_plot and parametric_plot3d to take a vector as input",
+    "title": "[with patch, positive review] allow parametric_plot and parametric_plot3d to take a vector as input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3133",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @kcrisman @jasongrout
 

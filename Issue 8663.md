@@ -1,24 +1,25 @@
-# Issue 8663: expect-2.0 no longer available for download
+# Issue 8663: pexpect-2.0 no longer available for download
 
 archive/issues_008663.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nsage-4.3.5 ebuild references expect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results\n\nmaybe a newer version will work, too?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8663\n\n",
+    "body": "Assignee: tbd\n\nsage-4.3.5 ebuild references pexpect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results\n\nmaybe a newer version will work, too?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8663\n\n",
+    "closed_at": "2013-05-16T08:01:06Z",
     "created_at": "2010-04-09T03:37:11Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "expect-2.0 no longer available for download",
+    "title": "pexpect-2.0 no longer available for download",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8663",
     "user": "https://trac.sagemath.org/admin/accounts/users/mehrunes_dagon"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
-sage-4.3.5 ebuild references expect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results
+sage-4.3.5 ebuild references pexpect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results
 
 maybe a newer version will work, too?
 

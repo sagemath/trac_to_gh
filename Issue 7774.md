@@ -4,6 +4,7 @@ archive/issues_007774.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nsage 4.3, 32-bit Athlon XP, OS: Debian \"lenny\", this issue appears in a local notebook as well as on www.sagenb.org using firefox 3.0.6 and epiphany\n\nWhen working in the notebook, usually after evaluating the last cell, the result is printed out and the cursor is placed in a newly created empty cell.\n\nThis behaviour changes if \"evaluate all\" is performed on the worksheet:\n\nCreate a new worksheet, type \"1+1\" into the first cell and evaluate it, then go to the menu \"action\" and perform \"evaluate all\", then go to the last empty cell again, type something like \"1+2\" and evaluate the cell (by pressing Shift-Return), the result is printed out, but instead of creating a new empty cell and placing the cursor there, no new cell will be created, the cursor is placed in the beginning of the last evaluated cell.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7774\n\n",
+    "closed_at": "2014-12-11T18:35:00Z",
     "created_at": "2009-12-27T16:10:19Z",
     "labels": [
         "component: notebook",

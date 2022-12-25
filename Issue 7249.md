@@ -4,6 +4,7 @@ archive/issues_007249.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @mwhansen @qed777 @dandrake\n\nWe should switch the notebook's templating system from Jinja to Jinja2. Jinja2, among other things, makes i18n much easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7249\n\n",
+    "closed_at": "2010-01-25T00:50:48Z",
     "created_at": "2009-10-19T08:44:15Z",
     "labels": [
         "component: notebook"

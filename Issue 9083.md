@@ -3,7 +3,8 @@
 archive/issues_009083.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nKeywords: beginner\n\nConventionally 'make distclean' removes all traces of a build process, leaving only the original files. \n\nHowever, at least the following four files or directories are being left after running 'make distclean'.\n\n```\n./.BUILDSTART \ndochtml.log\nspkg/install\nspkg/installed\n```\nThere is a section in the makefile\n\n```\ndistclean:\n        make clean\n        rm -rf local\n        rm -rf spkg/installed/*\n        rm -f install.log\n        rm -f test.log testall.log testlong.log ptest.log ptestlong.log\n        rm -rf data\n        rm -rf dist\n        rm -rf devel\n        rm -rf doc\n        rm -rf examples\n        rm -rf sage-python\n        rm -rf spkg/build\n        rm -rf spkg/archive\n        rm -rf ipython\n        rm -rf matplotlibrc\n        rm -rf tmp\n```\n\nThe two files and two directories need adding to that section. There may be other files created too. The way to find any new files or directories would be to \n\n* Extract the Sage tarball.\n* Build Sage fully. \n* Run the following two commands from the top level Sage directory.\n \n```\n$ 'make distclean'\n$ find . -mtime -2\n```\n\nThat will list any files or directories updated in the last two days. \n\nThe following files\n* sage-README-osx.txt\n* COPYING.txt\n* README.txt\n\nare having their modification times changed. I think that is undesirable, but that is another problem and the subject of #9082. So the changes to the makefile should not remove those 3 files, despite their recent modification times. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9083\n\n",
+    "body": "Assignee: drkirkby\n\nConventionally 'make distclean' removes all traces of a build process, leaving only the original files. \n\nHowever, at least the following four files or directories are being left after running 'make distclean'.\n\n```\n./.BUILDSTART \ndochtml.log\nspkg/install\nspkg/installed\n```\nThere is a section in the makefile\n\n```\ndistclean:\n        make clean\n        rm -rf local\n        rm -rf spkg/installed/*\n        rm -f install.log\n        rm -f test.log testall.log testlong.log ptest.log ptestlong.log\n        rm -rf data\n        rm -rf dist\n        rm -rf devel\n        rm -rf doc\n        rm -rf examples\n        rm -rf sage-python\n        rm -rf spkg/build\n        rm -rf spkg/archive\n        rm -rf ipython\n        rm -rf matplotlibrc\n        rm -rf tmp\n```\n\nThe two files and two directories need adding to that section. There may be other files created too. The way to find any new files or directories would be to \n\n* Extract the Sage tarball.\n* Build Sage fully. \n* Run the following two commands from the top level Sage directory.\n \n```\n$ 'make distclean'\n$ find . -mtime -2\n```\n\nThat will list any files or directories updated in the last two days. \n\nThe following files\n* sage-README-osx.txt\n* COPYING.txt\n* README.txt\n\nare having their modification times changed. I think that is undesirable, but that is another problem and the subject of #9082. So the changes to the makefile should not remove those 3 files, despite their recent modification times. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9083\n\n",
+    "closed_at": "2010-07-22T23:39:40Z",
     "created_at": "2010-05-29T07:30:09Z",
     "labels": [
         "component: build",
@@ -16,9 +17,7 @@ archive/issues_009083.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
-
-Keywords: beginner
+Assignee: drkirkby
 
 Conventionally 'make distclean' removes all traces of a build process, leaving only the original files. 
 

@@ -1,16 +1,17 @@
-# Issue 3254: [with patch, needs review] improvements and doctests for CachedFunction
+# Issue 3254: [with patch, positive review] improvements and doctests for CachedFunction
 
 archive/issues_003254.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCachedFunction now works with class methods.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3254\n\n",
+    "closed_at": "2008-06-04T20:54:04Z",
     "created_at": "2008-05-19T00:49:38Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] improvements and doctests for CachedFunction",
+    "title": "[with patch, positive review] improvements and doctests for CachedFunction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3254",
     "user": "https://github.com/mwhansen"

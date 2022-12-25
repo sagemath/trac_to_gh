@@ -1,22 +1,23 @@
-# Issue 6149: Fix ReST glitches
+# Issue 6149: [with patch, positive review] Fix ReST glitches
 
 archive/issues_006149.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @JohnCremona\n\nBuilding the documentation currently raises something like 50 errors because of incorrect ReST formatting in docstrings (mostly \"unexpected indent\" or similar). We should probably have a policy of not merging patches that cause documentation building errors, just as we don't merge patches that cause doctest failures.\n\nI have found and fixed most of the errors in 4.0.rc1 (some with great difficulty, because the ReST parser is very unreliable at telling you where the error is arising in a given file).\n\nI know this is a bit last-minute, but the patch below doesn't actually change any code at all, so it might not be too late to include it in the final 4.0 release.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6149\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @JohnCremona\n\nBuilding the documentation currently raises something like 50 errors because of incorrect ReST formatting in docstrings (mostly \"unexpected indent\" or similar). We should probably have a policy of not merging patches that cause documentation building errors, just as we don't merge patches that cause doctest failures.\n\nI have found and fixed most of the errors in 4.0.rc1 (some with great difficulty, because the ReST parser is very unreliable at telling you where the error is arising in a given file).\n\nI know this is a bit last-minute, but the patch below doesn't actually change any code at all, so it might not be too late to include it in the final 4.0 release.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6149\n\n",
+    "closed_at": "2009-05-28T17:51:44Z",
     "created_at": "2009-05-28T13:05:02Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Fix ReST glitches",
+    "title": "[with patch, positive review] Fix ReST glitches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6149",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 CC:  @JohnCremona
 

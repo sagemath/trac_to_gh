@@ -1,9 +1,10 @@
-# Issue 4671: [with patch; needs review] sage-3.2.1 startup time: it sucks again
+# Issue 4671: [with patch; positive review] sage-3.2.1 startup time: do not import twisted on startup
 
 archive/issues_004671.json:
 ```json
 {
     "body": "Assignee: boothby\n\nOn OS X the Sage startup time is horrible.  Doing sage -startuptime yields:\n\n```\n## Slowest (including children)\n1.604 sage.all (None)\n0.453 sage.server.all (sage.all)\n0.449 notebook.all (sage.server.all)\n0.445 notebook_object (notebook.all)\n0.441 notebook (notebook_object)\n0.352 worksheet (notebook)\n0.345 twist (worksheet)\n0.329 sage.misc.all (sage.all)\n0.246 twisted.web2 (twist)\n0.125 sage_timeit_class (sage.misc.all)\n0.125 sage_timeit (sage_timeit_class)\n```\n\nI'm pretty suspicious, because the twisted stuff does *not* have to be imported at all for Sage to startup and in fact I put a lot of effort into making sure they don't (it's really annoying that they are suddenly being imported again!)\n\nThe tiny attached patch just moves a few imports and for me on OS X reduces the startup time of Sage from about 1.64 to 1.273.  It also includes a doctest that makes sure twisted will *never* get imported on startup by default.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4671\n\n",
+    "closed_at": "2008-12-21T21:30:58Z",
     "created_at": "2008-12-02T05:24:14Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_004671.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch; needs review] sage-3.2.1 startup time: it sucks again",
+    "title": "[with patch; positive review] sage-3.2.1 startup time: do not import twisted on startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4671",
     "user": "https://github.com/williamstein"

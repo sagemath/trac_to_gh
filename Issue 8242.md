@@ -3,7 +3,8 @@
 archive/issues_008242.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nTicket #7772 resolves these for the English-language tutorial.\n\n```\nbibliography.rst:27: WARNING: duplicate citation Py, other instance in afterword.rst\nbibliography.rst:30: WARNING: duplicate citation PyDev, other instance in afterword.rst\ninteractive_shell.rst:974: WARNING: duplicate citation Py, other instance in bibliography.rst\ninterfaces.rst:357: WARNING: duplicate citation GAPkg, other instance in bibliography.rst\nintroduction.rst:155: WARNING: duplicate citation Dive, other instance in bibliography.rst\nintroduction.rst:158: WARNING: duplicate citation PyT, other instance in bibliography.rst\nprogramming.rst:880: WARNING: duplicate citation PyT, other instance in introduction.rst\ntour_algebra.rst:395: WARNING: duplicate citation GAP, other instance in bibliography.rst\ntour_algebra.rst:397: WARNING: duplicate citation Max, other instance in bibliography.rst\ntour_plotting.rst:187: WARNING: duplicate citation Jmol, other instance in bibliography.rst\ntour_polynomial.rst:340: WARNING: duplicate citation Si, other instance in bibliography.rst\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8242\n\n",
+    "body": "Assignee: @mezzarobba\n\nTicket #7772 resolves these for the English-language tutorial.\n\n```\nbibliography.rst:27: WARNING: duplicate citation Py, other instance in afterword.rst\nbibliography.rst:30: WARNING: duplicate citation PyDev, other instance in afterword.rst\ninteractive_shell.rst:974: WARNING: duplicate citation Py, other instance in bibliography.rst\ninterfaces.rst:357: WARNING: duplicate citation GAPkg, other instance in bibliography.rst\nintroduction.rst:155: WARNING: duplicate citation Dive, other instance in bibliography.rst\nintroduction.rst:158: WARNING: duplicate citation PyT, other instance in bibliography.rst\nprogramming.rst:880: WARNING: duplicate citation PyT, other instance in introduction.rst\ntour_algebra.rst:395: WARNING: duplicate citation GAP, other instance in bibliography.rst\ntour_algebra.rst:397: WARNING: duplicate citation Max, other instance in bibliography.rst\ntour_plotting.rst:187: WARNING: duplicate citation Jmol, other instance in bibliography.rst\ntour_polynomial.rst:340: WARNING: duplicate citation Si, other instance in bibliography.rst\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8242\n\n",
+    "closed_at": "2010-04-15T20:06:18Z",
     "created_at": "2010-02-11T21:19:06Z",
     "labels": [
         "component: documentation",
@@ -17,7 +18,7 @@ archive/issues_008242.json:
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: mvngu
+Assignee: @mezzarobba
 
 Ticket #7772 resolves these for the English-language tutorial.
 

@@ -1,22 +1,23 @@
-# Issue 554: the calculus roots command is totally stupid.
+# Issue 554: [with patch] the calculus roots command is totally stupid.
 
 archive/issues_000554.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider this below -- the output doesn't make any sense at all:\n\n```\nsage: var('x')\nsage: f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\nsage: f\n(2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9) + x^(1/9)\nsage: f.roots()\n[((x^(8/9) - x^(1/9) + 2^(8/9) - 2^(1/9))/(2^(8/9) - 2^(1/9)), 1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/554\n\n",
+    "body": "Assignee: @mwhansen\n\nConsider this below -- the output doesn't make any sense at all:\n\n```\nsage: var('x')\nsage: f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\nsage: f\n(2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9) + x^(1/9)\nsage: f.roots()\n[((x^(8/9) - x^(1/9) + 2^(8/9) - 2^(1/9))/(2^(8/9) - 2^(1/9)), 1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/554\n\n",
+    "closed_at": "2007-11-03T20:03:42Z",
     "created_at": "2007-09-01T17:25:30Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "the calculus roots command is totally stupid.",
+    "title": "[with patch] the calculus roots command is totally stupid.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/554",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Consider this below -- the output doesn't make any sense at all:
 

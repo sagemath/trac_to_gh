@@ -1,16 +1,17 @@
-# Issue 4340: Speed up Victor Miller basis code
+# Issue 4340: [with patch, positive review] Speed up Victor Miller basis code
 
 archive/issues_004340.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe current Victor Miller basis code in Sage is painfully slow. \n\nI've already written much faster code, which I'll submit shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4340\n\n",
+    "closed_at": "2008-10-31T03:53:43Z",
     "created_at": "2008-10-22T18:16:47Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Speed up Victor Miller basis code",
+    "title": "[with patch, positive review] Speed up Victor Miller basis code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4340",
     "user": "https://github.com/craigcitro"

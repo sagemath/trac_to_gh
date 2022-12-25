@@ -1,9 +1,10 @@
-# Issue 5904: [with patch, needs review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py
+# Issue 5904: [with patch, with positive review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py
 
 archive/issues_005904.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: abstract jacobian doctest\n\nThe attached patch improves the doctest coverage of `abstract_jacobian.py` from 0% to 85% (6 of 7).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5904\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: abstract jacobian doctest\n\nThe attached patch improves the doctest coverage of `abstract_jacobian.py` from 0% to 85% (6 of 7).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5904\n\n",
+    "closed_at": "2009-04-30T01:55:18Z",
     "created_at": "2009-04-26T11:34:46Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,13 +12,13 @@ archive/issues_005904.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py",
+    "title": "[with patch, with positive review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5904",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 Keywords: abstract jacobian doctest
 

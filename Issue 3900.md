@@ -1,23 +1,24 @@
-# Issue 3900: make testing an official pickle jar a part of "make check"
+# Issue 3900: [with patch; positive review] make testing an official pickle jar a part of "make check"
 
 archive/issues_003900.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSee #3482 and #3899.\n\nEach copy of Sage should include an official pickle jar that gets tested.  This should go in the data directory. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3900\n\n",
+    "body": "Assignee: mabshoff\n\nSee #3482 and #3899.\n\nEach copy of Sage should include an official pickle jar that gets tested.  This should go in the data directory. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3900\n\n",
+    "closed_at": "2008-11-19T21:43:17Z",
     "created_at": "2008-08-19T17:50:54Z",
     "labels": [
-        "component: algebra",
-        "critical",
+        "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "make testing an official pickle jar a part of \"make check\"",
+    "title": "[with patch; positive review] make testing an official pickle jar a part of \"make check\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3900",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 See #3482 and #3899.
 

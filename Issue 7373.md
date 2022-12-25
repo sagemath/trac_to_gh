@@ -1,16 +1,17 @@
-# Issue 7373: [with spkg; needs review] Disable assembly code in libgcrypt on Solaris x86 & rare platforms.
+# Issue 7373: [with spkg; positive review] Disable assembly code in libgcrypt on risky platforms.
 
 archive/issues_007373.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nOn my Sun Ultra 27, which has a quad core Xeon, running OpenSolaris 06/2009, libgrcypt would not build. The error message indicated it was related to the use of assembly code. \n\nHowever, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly language on all Solaris x86 systems. (It is **not** necessary to do so on Solaris on SPARC)\n\nI also added some tests for other platforms (AIX, HP-UX, Tru64 and IRIX) and disabled assembly language on them too. It is most unlikely assembly code for them will work, and I hope to try at least some of these platforms in the near future. \n\nThe only updates are to spkg-install and SPKG.txt. The revised files will be put into \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4.p1 \n\nwithin 30 minutes of this post. (I thought I'd get the trac ticket in first, so the trac number can go into the SPKG.txt)\n\n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7373\n\n",
+    "body": "Assignee: drkirkby\n\nLibgcrypt is a package which has some assembly code routines. An option to the *configure* script\n\n```\n--disable-asm \n```\n\nwill disable the use of assembly code. This is mandatory on some platforms such as OS X and 64-bit SPARC, and would appear to be desirable on others, unless we can be sure it works. \n\nOn my Sun Ultra 27, which has a quad core Xeon, running OpenSolaris 06/2009, libgrcypt would not build. The error message indicated it was related to the use of assembly code. \n\nHowever, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly code on all Solaris x86 systems. \n\nI disabled the assembly code on 64-bit SPARC too, as I know that is broken - see #7127. Disabling the assembly code does not allow libgcrypt to be built as 64-bit code on Solaris, but the build does get further with the assembly code disabled. (It ultimately fails, as both 32-bit and 64-bit objects are created). \n\nI also added some tests for other platforms (AIX, HP-UX, Tru64 and IRIX) and disabled assembly language on them all except HP-UX, where I could verify it did not cause any problems. \n\n**Hence assembler code is disabled on**\n* OS X          (both 32 and 64-bit)\n* Solaris x86   (both 32 and 64-bit)\n* Solaris SPARC (32-bit only)\n* IRIX          (as a precaution, as untested)\n* AIX           (as a precaution, as untested) \n* Tru64         (as a precaution, as untested)\n'''\nAssembly code is enabled on:'''\n* Linux\n* Solaris SPARC (32-bit only)\n* HP-UX     \n* Anything else, not mentioned above. This would include Cygwin.\n\n**The updated package has been tested on** \n* sage.math\n* bsd.math\n* Sun Ultra 27, Intel Xeon processor, running OpenSolaris (x86)\n* Sun Blade 2000, SPARC processor in 32-bit mode. \n* Sun Blade 2000, SPARC processor in 64-bit mode. The code does not build fully in this case, as explained above. \n* HP C3600 running HP-UX 11.11. The code builds fully.\n\nIt should be noted, the HP C3600 uses a PA-RISC processor. More modern HP-UX machines use the Itanium processor. These would certainly not use the same assembly code. \n\nThe code may be found here. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4.p1 \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7373\n\n",
+    "closed_at": "2009-11-02T05:48:52Z",
     "created_at": "2009-11-02T01:05:58Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with spkg; needs review] Disable assembly code in libgcrypt on Solaris x86 & rare platforms.",
+    "title": "[with spkg; positive review] Disable assembly code in libgcrypt on risky platforms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7373",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -18,21 +19,51 @@ archive/issues_007373.json:
 ```
 Assignee: drkirkby
 
+Libgcrypt is a package which has some assembly code routines. An option to the *configure* script
+
+```
+--disable-asm 
+```
+
+will disable the use of assembly code. This is mandatory on some platforms such as OS X and 64-bit SPARC, and would appear to be desirable on others, unless we can be sure it works. 
+
 On my Sun Ultra 27, which has a quad core Xeon, running OpenSolaris 06/2009, libgrcypt would not build. The error message indicated it was related to the use of assembly code. 
 
-However, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly language on all Solaris x86 systems. (It is **not** necessary to do so on Solaris on SPARC)
+However, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly code on all Solaris x86 systems. 
 
-I also added some tests for other platforms (AIX, HP-UX, Tru64 and IRIX) and disabled assembly language on them too. It is most unlikely assembly code for them will work, and I hope to try at least some of these platforms in the near future. 
+I disabled the assembly code on 64-bit SPARC too, as I know that is broken - see #7127. Disabling the assembly code does not allow libgcrypt to be built as 64-bit code on Solaris, but the build does get further with the assembly code disabled. (It ultimately fails, as both 32-bit and 64-bit objects are created). 
 
-The only updates are to spkg-install and SPKG.txt. The revised files will be put into 
+I also added some tests for other platforms (AIX, HP-UX, Tru64 and IRIX) and disabled assembly language on them all except HP-UX, where I could verify it did not cause any problems. 
+
+**Hence assembler code is disabled on**
+* OS X          (both 32 and 64-bit)
+* Solaris x86   (both 32 and 64-bit)
+* Solaris SPARC (32-bit only)
+* IRIX          (as a precaution, as untested)
+* AIX           (as a precaution, as untested) 
+* Tru64         (as a precaution, as untested)
+'''
+Assembly code is enabled on:'''
+* Linux
+* Solaris SPARC (32-bit only)
+* HP-UX     
+* Anything else, not mentioned above. This would include Cygwin.
+
+**The updated package has been tested on** 
+* sage.math
+* bsd.math
+* Sun Ultra 27, Intel Xeon processor, running OpenSolaris (x86)
+* Sun Blade 2000, SPARC processor in 32-bit mode. 
+* Sun Blade 2000, SPARC processor in 64-bit mode. The code does not build fully in this case, as explained above. 
+* HP C3600 running HP-UX 11.11. The code builds fully.
+
+It should be noted, the HP C3600 uses a PA-RISC processor. More modern HP-UX machines use the Itanium processor. These would certainly not use the same assembly code. 
+
+The code may be found here. 
 
 http://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4.p1 
 
-within 30 minutes of this post. (I thought I'd get the trac ticket in first, so the trac number can go into the SPKG.txt)
-
-
-
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7373
 

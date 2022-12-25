@@ -4,6 +4,7 @@ archive/issues_006057.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIt would be useful if a file was added in the top-level directory with the current state of the Solaris port. i.e. what the known issues are with Solaris, any tips, workarounds etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6057\n\n",
+    "closed_at": "2009-05-17T09:20:14Z",
     "created_at": "2009-05-17T08:45:26Z",
     "labels": [
         "component: porting: solaris",

@@ -1,9 +1,10 @@
-# Issue 2407: Notebook fails without explanation when cookies are disabled
+# Issue 2407: [with patch, positive review] Notebook fails without explanation when cookies are disabled
 
 archive/issues_002407.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis may be more of enhancement, but it would be nice to throw up an error message in the notebook if cookies are disabled in the browser.  \n\nFor example, I jumped on sagenb.org to try things out.  After logging in I started with nothing.  I clicked on \"New Worksheet\" to get started, and I get a \"404 Not Found\" error for the page /new_worksheet.  This seems an easy and natural place to tell the user they need to enable cookies in their browser.  Even better would be to check for the expected cookie in the \"just logged in\" page generation logic.\n\nFor completeness, most of the other links on the \"just logged in\" page just ask me to log in again.  (This is when I figured out the problem.  Originally I assumed the notebook must be broken.)  The \"Upload\" link gives me a corresponding 404 page, and \"Log\" and \"Help\" just open new, empty pages.  (Not particularly helpful when I tried it.)  I am using Firefox 2.0.0.12 on FreeBSD 6.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2407\n\n",
+    "closed_at": "2008-09-30T11:59:04Z",
     "created_at": "2008-03-06T17:19:30Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002407.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Notebook fails without explanation when cookies are disabled",
+    "title": "[with patch, positive review] Notebook fails without explanation when cookies are disabled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2407",
     "user": "https://github.com/rhinton"

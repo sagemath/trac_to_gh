@@ -3,11 +3,11 @@
 archive/issues_009202.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nThis spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).\n\nThe new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9202\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @kcrisman\n\nThis spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).\n\nThe new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg (md5 checksum 2c8660d9d40f6759ece89c074bc0a351)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9202\n\n",
+    "closed_at": "2010-06-25T15:44:52Z",
     "created_at": "2010-06-10T12:17:15Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "update matplotlib",
@@ -16,13 +16,13 @@ archive/issues_009202.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  drkirkby @kcrisman
 
 This spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).
 
-The new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg
+The new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg (md5 checksum 2c8660d9d40f6759ece89c074bc0a351)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9202
 

@@ -1,15 +1,16 @@
-# Issue 6140: Upgrade numpy to 1.3.0
+# Issue 6140: [with patches and spkg, positive review] Upgrade numpy to 1.3.0
 
 archive/issues_006140.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHere is an spkg: http://sage.math.washington.edu/home/jason/numpy-1.3.0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6140\n\n",
+    "closed_at": "2009-06-12T06:56:52Z",
     "created_at": "2009-05-27T21:20:16Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Upgrade numpy to 1.3.0",
+    "title": "[with patches and spkg, positive review] Upgrade numpy to 1.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6140",
     "user": "https://github.com/jasongrout"

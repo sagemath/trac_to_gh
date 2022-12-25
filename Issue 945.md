@@ -4,6 +4,7 @@ archive/issues_000945.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nHere's a test case.  First I define a function:\n\n```\nsage: def foo(x):\n....:     return x+3\n....: \n```\n\nThen I copy/paste the above session:\n\n```\nsage: sage: def foo(x):\n....:     ....:     return x+3\n------------------------------------------------------------\n<type 'exceptions.IndentationError'>: expected an indented block (<ipython console>, line 2)\n\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/945\n\n",
+    "closed_at": "2013-06-03T13:07:55Z",
     "created_at": "2007-10-20T17:15:06Z",
     "labels": [
         "component: user interface",

@@ -1,15 +1,16 @@
-# Issue 221: SageX: generic laurent series over arbitrary ring
+# Issue 221: generic laurent series over arbitrary ring in Cython
 
 archive/issues_000221.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/221\n\n",
+    "closed_at": "2008-11-14T08:44:11Z",
     "created_at": "2007-01-25T19:02:05Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.4.2",
-    "title": "SageX: generic laurent series over arbitrary ring",
+    "title": "generic laurent series over arbitrary ring in Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/221",
     "user": "https://github.com/williamstein"

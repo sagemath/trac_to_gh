@@ -1,22 +1,23 @@
-# Issue 3420: Failure in markov_multifractal (random?)
+# Issue 3420: [with patch, positive review] Failure in markov_multifractal (random?)
 
 archive/issues_003420.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn Fedora 9:\n\n```\nsage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************\nFile \"/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py\", line 56:\n    sage: msm.__cmp__(3)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n1 items had failures:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3420\n\n",
+    "body": "Assignee: mabshoff\n\nOn Fedora 9:\n\n```\nsage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************\nFile \"/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py\", line 56:\n    sage: msm.__cmp__(3)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n1 items had failures:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3420\n\n",
+    "closed_at": "2008-06-15T19:05:07Z",
     "created_at": "2008-06-13T18:55:59Z",
     "labels": [
         "component: finance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "Failure in markov_multifractal (random?)",
+    "title": "[with patch, positive review] Failure in markov_multifractal (random?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3420",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 On Fedora 9:
 

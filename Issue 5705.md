@@ -1,16 +1,17 @@
-# Issue 5705: [with patch, needs review] homogenize() does not respect the rule that parents are unique
+# Issue 5705: [with patch, positive review] homogenize() does not respect the rule that parents are unique
 
 archive/issues_005705.json:
 ```json
 {
     "body": "Assignee: @malb\n\nso far `homogenize()` would always create a new parent if the variable was not in the current parent. It should make sure that it reuses a previously created parent if available.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5705\n\n",
+    "closed_at": "2009-04-09T08:45:36Z",
     "created_at": "2009-04-07T11:33:45Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] homogenize() does not respect the rule that parents are unique",
+    "title": "[with patch, positive review] homogenize() does not respect the rule that parents are unique",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5705",
     "user": "https://github.com/malb"

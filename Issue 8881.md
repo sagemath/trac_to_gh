@@ -3,10 +3,12 @@
 archive/issues_008881.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Functorial construction\n\nAdd functorial construction to categories. Examples include\n   Tensor products, Group/Monoids/*Algebras, Subquotient...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8881\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Functorial constructions\n\nThis patch refactors completely the framework for (covariant)\nfunctorial constructions, improves the existing ones, and adds new ones.\n\nImproved constructions:\n- Cartesian products: generalization to non modules_with_basis,\n  monoid operations, ...\n\nNew constructions:\n- Subquotients, Quotients, Subobjects, IsomorphicObjects\n- DualObjects, Algebras\n\nMiscellaneous category fixes and improvements:\n- is_subcategory now handles properly join categories\n  (courtesy of Florent Hivert)\n- For a field K, Modules(K) returns VectorSpaces(K)\n- As a temporary workaround, Parent._an_element_ calls the\n  _an_element_ method provided by the categories, if available\n- Adds a method Category.or_subcategory\n- Cleans up _repr_ by extracting a _repr_object_names method\n- Cleans up _latex_ by extracting a _short_name method\n\nDepend on #9104\n\nIssue created by migration from https://trac.sagemath.org/ticket/8881\n\n",
+    "closed_at": "2010-06-05T21:44:23Z",
     "created_at": "2010-05-05T02:20:49Z",
     "labels": [
-        "component: categories"
+        "component: categories",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Functorial constructions in categories",
@@ -19,10 +21,30 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-Keywords: Functorial construction
+Keywords: Functorial constructions
 
-Add functorial construction to categories. Examples include
-   Tensor products, Group/Monoids/*Algebras, Subquotient...
+This patch refactors completely the framework for (covariant)
+functorial constructions, improves the existing ones, and adds new ones.
+
+Improved constructions:
+- Cartesian products: generalization to non modules_with_basis,
+  monoid operations, ...
+
+New constructions:
+- Subquotients, Quotients, Subobjects, IsomorphicObjects
+- DualObjects, Algebras
+
+Miscellaneous category fixes and improvements:
+- is_subcategory now handles properly join categories
+  (courtesy of Florent Hivert)
+- For a field K, Modules(K) returns VectorSpaces(K)
+- As a temporary workaround, Parent._an_element_ calls the
+  _an_element_ method provided by the categories, if available
+- Adds a method Category.or_subcategory
+- Cleans up _repr_ by extracting a _repr_object_names method
+- Cleans up _latex_ by extracting a _short_name method
+
+Depend on #9104
 
 Issue created by migration from https://trac.sagemath.org/ticket/8881
 

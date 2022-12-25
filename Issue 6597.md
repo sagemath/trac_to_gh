@@ -1,27 +1,38 @@
-# Issue 6597: [with patch, needs review] SetMorphism: 100% doctest + equality + pickling
+# Issue 6597: [with patch, positive review] SetMorphism: 100% doctest + equality + pickling; depends on #6343
 
 archive/issues_006597.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  sage-combinat cwitty @saliola\n\nKeywords: doctest, SetMorphism, pickling\n\nThis patch raises SetMorphism to 100% doctest, and implements equality and pickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6597\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty @saliola\n\nKeywords: doctest, SetMorphism, pickling\n\nThis patch raises SetMorphism to 100% doctest, and implements equality and pickling.\n\nIt also renames and doctests the following methods in Map, which were\nunused and not doctested:\n\n- test_extra_slots  -> _extra_slots_test\n- update_slots_test -> _update_slots_test\n\nIt depends on #6343 (TestSuite)\n\nThe category patches #5891\n\nIssue created by migration from https://trac.sagemath.org/ticket/6597\n\n",
+    "closed_at": "2009-09-09T08:55:01Z",
     "created_at": "2009-07-23T08:51:13Z",
     "labels": [
         "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] SetMorphism: 100% doctest + equality + pickling",
+    "title": "[with patch, positive review] SetMorphism: 100% doctest + equality + pickling; depends on #6343",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6597",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @robertwb
+Assignee: @nthiery
 
 CC:  sage-combinat cwitty @saliola
 
 Keywords: doctest, SetMorphism, pickling
 
 This patch raises SetMorphism to 100% doctest, and implements equality and pickling.
+
+It also renames and doctests the following methods in Map, which were
+unused and not doctested:
+
+- test_extra_slots  -> _extra_slots_test
+- update_slots_test -> _update_slots_test
+
+It depends on #6343 (TestSuite)
+
+The category patches #5891
 
 Issue created by migration from https://trac.sagemath.org/ticket/6597
 

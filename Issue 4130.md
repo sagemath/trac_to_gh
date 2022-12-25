@@ -1,9 +1,10 @@
-# Issue 4130: #4125 does not work on OS X 10.4
+# Issue 4130: [with patch, positive review] #4125 does not work on OS X 10.4
 
 archive/issues_004130.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIt looks like OS X 10.4.11's version of `which` doesn't behave very well...\n\n```\nhamptonio: nomad66-214:~ mh$ echo $PORTS_PATH\n[1:03pm] hamptonio: no port in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ echo $FINK_PATH\n[1:03pm] hamptonio: no fink in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ if [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ]; then echo \"*\"; fi\n[1:03pm] hamptonio: *\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4130\n\n",
+    "closed_at": "2008-09-16T03:47:09Z",
     "created_at": "2008-09-15T20:11:56Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004130.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "#4125 does not work on OS X 10.4",
+    "title": "[with patch, positive review] #4125 does not work on OS X 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4130",
     "user": "https://github.com/rlmill"

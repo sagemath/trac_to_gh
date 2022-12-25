@@ -1,35 +1,34 @@
-# Issue 7751: Kazhdan-Lusztig polynomials, Bruhat order, and related features [with patch, needs review]
+# Issue 7751: Kazhdan-Lusztig polynomials, Bruhat order, and related features
 
 archive/issues_007751.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: Kazhdan-Lusztig, Bruhat order\n\nThis patch includes algorithms for the Bruhat order, Kazhdan-Lusztig polynomials, improvements to the `__repr__` method of WeylGroup elements, and other enhancements.\n\nSome of the methods should be moved to `coxeter_group.py`.\n\nMike Hansen is working on an interface to coxeter3, which is be able to compute Kazhdan-Lusztig polynomials rather faster. However I think this patch still contains things that are needed.\n\nFor discussion see this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/d324f6fcb6d2a436?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7751\n\n",
+    "body": "CC:  sage-combinat\n\nKeywords: Kazhdan-Lusztig, Bruhat order\n\nThis patch includes algorithms for the Bruhat order, Kazhdan-Lusztig polynomials, improvements to the `__repr__` method of WeylGroup elements, and other enhancements.\n\nMike Hansen is working on an interface to coxeter3, which is be able to compute Kazhdan-Lusztig polynomials rather faster. However I think this patch still contains things that are needed.\n\nFor discussion see this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/d324f6fcb6d2a436?hl=en\n\nThis patch depends on #7753 and #7754.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7751\n\n",
+    "closed_at": "2010-02-14T14:33:11Z",
     "created_at": "2009-12-22T21:56:00Z",
     "labels": [
-        "component: algebra"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Kazhdan-Lusztig polynomials, Bruhat order, and related features [with patch, needs review]",
+    "title": "Kazhdan-Lusztig polynomials, Bruhat order, and related features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7751",
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: @aghitza
-
 CC:  sage-combinat
 
 Keywords: Kazhdan-Lusztig, Bruhat order
 
 This patch includes algorithms for the Bruhat order, Kazhdan-Lusztig polynomials, improvements to the `__repr__` method of WeylGroup elements, and other enhancements.
 
-Some of the methods should be moved to `coxeter_group.py`.
-
 Mike Hansen is working on an interface to coxeter3, which is be able to compute Kazhdan-Lusztig polynomials rather faster. However I think this patch still contains things that are needed.
 
 For discussion see this thread:
 
 http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/d324f6fcb6d2a436?hl=en
+
+This patch depends on #7753 and #7754.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7751
 

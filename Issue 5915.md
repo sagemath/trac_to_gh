@@ -4,6 +4,7 @@ archive/issues_005915.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFor obvious reasons I can't copy and paste any code on the subject here, but Sage LiveCD 3.4 hangs trying to find livecd.sgn\n\nIssue created by migration from https://trac.sagemath.org/ticket/5915\n\n",
+    "closed_at": "2009-04-28T00:31:52Z",
     "created_at": "2009-04-27T23:39:27Z",
     "labels": [
         "component: distribution",

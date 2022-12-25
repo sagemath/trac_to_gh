@@ -4,9 +4,11 @@ archive/issues_007417.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe big public sagenb.org server, after a few days, often suddenly starts outputing this:\n\n```\nILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n```\n\nThis makes a multi-gigabyte logfile, and of course also means that the notebook is down.  This has not been observed on any other notebook server ever, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7417\n\n",
+    "closed_at": "2009-11-12T07:26:10Z",
     "created_at": "2009-11-09T16:38:36Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",

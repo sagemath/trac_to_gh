@@ -1,15 +1,16 @@
-# Issue 1238: update the cremona spkg
+# Issue 1238: [with bundle] update the cremona spkg
 
 archive/issues_001238.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\n\nAttached bundle fixes the point below: now cerr is only used for\nprompts, hence not at all in the library functions.  Instead, the\nfatal error conditions which send output now to cout are followed by a\ncall to abort().  Clearly this should never happen except if there's a\nbug.\n\nRalf -- a lot of those error outputs were in the linalg code which you\nare going to refactor.\n\nSecondly, I fixed the unintended output of \"transposing...\" reported by William.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1238\n\n",
+    "closed_at": "2007-11-24T15:37:37Z",
     "created_at": "2007-11-21T17:30:10Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
-    "title": "update the cremona spkg",
+    "title": "[with bundle] update the cremona spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1238",
     "user": "https://github.com/williamstein"

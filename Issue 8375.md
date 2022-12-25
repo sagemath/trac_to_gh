@@ -4,6 +4,7 @@ archive/issues_008375.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\n == The computer hardware & software ==\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM \n* Solaris 10 03/2005 - the first release of Solaris 10. \n\n == The Sage software ==\nSage 4.3.3 with various patches to get it to compile on Solaris. (The notebook is not working properly though). \n\n == The test failure == \n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/pynac.pyx\", line 1282:\n    sage: py_exp(float(1))\nExpected:\n    2.7182818284590451\nGot:\n    2.7182818284590455\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8375\n\n",
+    "closed_at": "2010-03-06T08:24:15Z",
     "created_at": "2010-02-26T09:00:54Z",
     "labels": [
         "component: porting: solaris",

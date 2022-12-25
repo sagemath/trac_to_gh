@@ -1,16 +1,17 @@
-# Issue 5004: bug in latexing of powers of negative numbers
+# Issue 5004: [with patch, positive review] bug in latexing of powers of negative numbers
 
 archive/issues_005004.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\n>\n> Hello all\n>\n> The command latex(7-(-1)^(1/3))   produces 7 - {-1}^{\\frac{1}{3}}\n> Is it possible to change it into 7 - \\left(-1\\right)^{\\frac{1}{3}}\n>\n> Which function should be redefined to gain this behavior?\n>\n> I think that two minus sign, one following the other, could be\n> confusing (for students of economics, for example :) )\n>\n> Thank you\n> Robert\n\nI would start by doing:\n\nsage: a = (-1)^(1/3)\nsage: a._latex_??\n[... source code in calculus.py...]\n\nThen I would look at the code, and be confused for about an hour, finally probably figure out what is going on, and maybe with luck be able to fix this.\nIIRC the code to get the latex for symbolic expressions is complicated.  I think it was written by Bobby Moretti (and undergrad who used to be a sage developer).\n\nI think this sort of behavior, e.g.,\n\nsage: a = (-1)^(1/4)\nsage: latex(a)\n{-1}^{\\frac{1}{4}} \n\nshould officially be considered a bug in fact.  It's not just confusing, it's wrong. \n\nBy the way, one trick you can use is to convert the expression to maxima first and use its latex.  For some things, e.g., your example above, this works better:\n\nsage: a = 7-(-1)^(1/3)\nsage: latex(a._maxima_())\n7-\\left(-1\\right)^`1}\\over{3`\n\nDon't use maxima(a), since then you'll get a in a session of maxima that has different defaults than the calculus module uses, in particular, roots are always assumed real, which may be bad (though maybe ok for economists):\n\nsage: a = 7-(-1)^(1/3)\nsage: latex(maxima(a))\n8\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5004\n\n",
+    "closed_at": "2009-01-18T15:57:22Z",
     "created_at": "2009-01-17T21:29:04Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bug in latexing of powers of negative numbers",
+    "title": "[with patch, positive review] bug in latexing of powers of negative numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5004",
     "user": "https://github.com/williamstein"

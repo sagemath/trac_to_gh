@@ -3,7 +3,8 @@
 archive/issues_008241.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nIf K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:\n\n```\nsage: K.<a> = Qp(25)\nsage: a.witt_frobenius()\n???\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8241\n\n",
+    "body": "Assignee: @roed314\n\nIf K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:\n\n```\nsage: K.<a> = Qp(25)\nsage: a.witt_frobenius()\n???\n```\n\n---\n\nApply [attachment:trac_8241-frobenius.patch] to the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8241\n\n",
+    "closed_at": "2012-03-21T22:03:40Z",
     "created_at": "2010-02-11T19:54:03Z",
     "labels": [
         "component: padics"
@@ -24,6 +25,11 @@ sage: K.<a> = Qp(25)
 sage: a.witt_frobenius()
 ???
 ```
+
+---
+
+Apply [attachment:trac_8241-frobenius.patch] to the Sage library.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8241
 

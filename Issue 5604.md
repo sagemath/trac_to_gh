@@ -3,7 +3,8 @@
 archive/issues_005604.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nThis would make it easy to create purple, for example, as red+blue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5604\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nThis would make it easy to create purple, for example, as red+blue.\n\nRelated tickets:\n\n* #5601 - predefine colors in Sage.\n* #5602 - make .lighter() and .darker() methods for Sage Color objects.\n* #5603 - make a .mix() method for Sage color objects.\n* #5604 - average Color objects when adding them together.\n* #5605 - Construct Color objects using hsl and hsv values.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5604\n\n",
+    "closed_at": "2010-05-11T20:49:39Z",
     "created_at": "2009-03-24T21:30:49Z",
     "labels": [
         "component: graphics",
@@ -21,6 +22,15 @@ Assignee: @williamstein
 CC:  mvngu
 
 This would make it easy to create purple, for example, as red+blue.
+
+Related tickets:
+
+* #5601 - predefine colors in Sage.
+* #5602 - make .lighter() and .darker() methods for Sage Color objects.
+* #5603 - make a .mix() method for Sage color objects.
+* #5604 - average Color objects when adding them together.
+* #5605 - Construct Color objects using hsl and hsv values.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5604
 

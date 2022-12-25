@@ -1,15 +1,16 @@
-# Issue 2098: [with patch; needs review] rudimentary debian package build support
+# Issue 2098: [with patch; with positive review] rudimentary debian package build support
 
 archive/issues_002098.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nAdd spkg-build-debian, and hook it in to sage-spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2098\n\n",
+    "closed_at": "2008-02-14T15:18:02Z",
     "created_at": "2008-02-08T03:51:37Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch; needs review] rudimentary debian package build support",
+    "title": "[with patch; with positive review] rudimentary debian package build support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2098",
     "user": "https://github.com/timabbott"

@@ -1,15 +1,16 @@
-# Issue 6831: [with patch, needs review] No more maximal dimension requirement for lattice polytopes
+# Issue 6831: No more maximal dimension requirement for lattice polytopes
 
 archive/issues_006831.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nSince PALP requires polytopes to have the same dimension as the ambient space, LatticePolytope class required it as well. This patch drops this requirement by storing an internal copy of the same polytope in some sublattice basis and using it when necessary to call PALP. Quite a few functions had to be updated, I tried to add new doctests to check most of the new branches of code.\n\nThis patch will be a prerequisite for some code for working with nef partitions which I hope to submit in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6831\n\n",
+    "closed_at": "2009-11-02T04:35:25Z",
     "created_at": "2009-08-27T06:29:37Z",
     "labels": [
         "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] No more maximal dimension requirement for lattice polytopes",
+    "title": "No more maximal dimension requirement for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6831",
     "user": "https://github.com/novoselt"

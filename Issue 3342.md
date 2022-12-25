@@ -3,7 +3,8 @@
 archive/issues_003342.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @dandrake\n\nI observed the following in sage-3.0.2 on both Linux and OS X.\nNote the very bizarre output of x.is_zero??\n\n```\nsage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)\nsage: x.is_zero??\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>\nNamespace:\tInteractive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not selfClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3342\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake\n\nI observed the following in sage-3.0.2 on both Linux and OS X.\nNote the very bizarre output of x.is_zero??\n\n```\nsage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)\nsage: x.is_zero??\nType:builtin_function_or_method\nBase Class:<type 'builtin_function_or_method'>\nString Form:<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>\nNamespace:Interactive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not selfClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3342\n\n",
+    "closed_at": "2010-07-27T02:30:23Z",
     "created_at": "2008-05-31T17:44:28Z",
     "labels": [
         "component: documentation",
@@ -27,10 +28,10 @@ Note the very bizarre output of x.is_zero??
 ```
 sage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)
 sage: x.is_zero??
-Type:		builtin_function_or_method
-Base Class:	<type 'builtin_function_or_method'>
-String Form:	<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>
-Namespace:	Interactive
+Type:builtin_function_or_method
+Base Class:<type 'builtin_function_or_method'>
+String Form:<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>
+Namespace:Interactive
 Source:
     def is_zero(self):
         """

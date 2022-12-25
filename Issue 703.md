@@ -1,9 +1,10 @@
-# Issue 703: fixes to the programming guide from jaap
+# Issue 703: [with patch] fixes to the programming guide from jaap
 
 archive/issues_000703.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/703\n\n",
+    "closed_at": "2007-09-21T02:36:04Z",
     "created_at": "2007-09-20T13:38:42Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_000703.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "fixes to the programming guide from jaap",
+    "title": "[with patch] fixes to the programming guide from jaap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/703",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_007329.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @rbeezer @kcrisman\n\nIt would be great if this worked:\n\n```\n            sage: t=var('t')                      \n            sage: r=vector([t,t^2,sin(t)])\n            sage: integrate(r,t)\n            (1/2*t^2, 1/3*t^3, -cos(t))\n            sage: integrate(r,(t,0,1))\n            (1/2, 1/3, -cos(1) + 1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7329\n\n",
+    "closed_at": "2009-10-31T16:48:41Z",
     "created_at": "2009-10-28T02:46:06Z",
     "labels": [
         "component: calculus"

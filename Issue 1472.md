@@ -1,16 +1,17 @@
-# Issue 1472: [with optional spkg] gnuplotpy optional package doesn' t work with numpy
+# Issue 1472: [with optional spkg, with positive review] gnuplotpy optional package doesn' t work with numpy
 
 archive/issues_001472.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe optional gnuplotpy package doesn't work with numpy (requires Numeric). Luckily this is fixed by doing a global search an replace of Numeric with numpy. Having done that \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/gnuplotpy-1.7.p3.spkg\n\nnow works. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1472\n\n",
+    "closed_at": "2007-12-15T05:45:47Z",
     "created_at": "2007-12-12T10:00:35Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with optional spkg] gnuplotpy optional package doesn' t work with numpy",
+    "title": "[with optional spkg, with positive review] gnuplotpy optional package doesn' t work with numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1472",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

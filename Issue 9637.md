@@ -3,7 +3,8 @@
 archive/issues_009637.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @qed777\n\nIt is not critical, but since its the only package not so show such a dependency, it would be nice to add it. The dependency is implied however. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9637\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @qed777\n\nIt is not critical, but since its the only package not so show such a dependency, it would be nice to add it. The dependency is implied however. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9637\n\n",
+    "closed_at": "2010-08-24T02:52:24Z",
     "created_at": "2010-07-29T10:57:00Z",
     "labels": [
         "component: build",
@@ -16,7 +17,7 @@ archive/issues_009637.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 CC:  @qed777
 

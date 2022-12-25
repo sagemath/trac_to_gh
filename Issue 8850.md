@@ -4,6 +4,7 @@ archive/issues_008850.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is the same behavior as in OS X\n\nIssue created by migration from https://trac.sagemath.org/ticket/8850\n\n",
+    "closed_at": "2010-05-25T02:22:03Z",
     "created_at": "2010-05-03T12:23:21Z",
     "labels": [
         "component: porting: cygwin",

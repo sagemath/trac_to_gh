@@ -6,7 +6,7 @@ archive/issues_004742.json:
     "body": "Assignee: somebody\n\nCC:  @jdemeyer\n\nKeywords: elementary divisors\n\nPari has a function (\"nfsnf\" in GP, \"nfsmith\" in the C library) that calculates the generalised elementary divisors (a list of ideals rather than elements) for a matrix over the ring of integers of a number field. In the current pari stable (2.3.4) and testing (2.4.2) this is so broken as to be useless, but Karim Belabas has fixed it in svn, so when we catch up with Pari 2.4.3 it would be worth providing a Sage wrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4742\n\n",
     "created_at": "2008-12-08T17:15:50Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",

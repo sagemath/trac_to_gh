@@ -3,10 +3,10 @@
 archive/issues_004513.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wdjoyner @malb\n\nKeywords: matrix group, action, polynomial ring\n\nA group of n by n matrices over a field K acts on a polynomial ring with n variables over K. However, this is not implemented yet.\n\nOff list, David Joyner suggested to implement it with a `__call__` method in `matrix_group_element.py`. Then, the following should work:\n\n```\nsage: M=Matrix(GF(3),[[1,2],[1,1]])\nsage: G=MatrixGroup([M])\nsage: g=G.0\nsage: p=x*y^2\nsage: g(p)\nx^3 + x^2*y - x*y^2 - y^3\nsage: _==(x+2*y)*(x+y)^2\nTrue\n```\n\nAlthough it concerns `matrix_group_element.py`, I believe this ticket belongs to Commutative Algebra, for two reasons:\n1. An efficient implementation probably requires knowledge of the guts of MPolynomialElement.\n2. My long-term goal is to re-implement my algorithms for the computation of non-modular invariant rings. The current implementation is in the `finvar.lib` library of Singular -- the slow Singular interpreter sometimes is a bottle necks.\n\nOne more general technical question: It is `matrix_group_element.py`, hence seems to be pure python. Is it possible to define an additional method in some `.pyx` file using Cython? I don't know if this would be reasonable to do here, but perhaps this could come in handy at some point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4513\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner @malb\n\nKeywords: matrix group, action, polynomial ring\n\nA group of n by n matrices over a field K acts on a polynomial ring with n variables over K. However, this is not implemented yet.\n\nThe following should work:\n\n```\nsage: M = Matrix(GF(3),[[1,2],[1,1]])\nsage: N = Matrix(GF(3),[[2,2],[2,1]])\nsage: G = MatrixGroup([M,N])\nsage: m = G.0\nsage: n = G.1\nsage: R.<x,y> = GF(3)[]\nsage: m*x\nx + y\nsage: x*m\nx - y\nsage: (n*m)*x == n*(m*x)\nTrue\nsage: x*(n*m) == (x*n)*m\nTrue\n```\n\nOn the other hand, we still want to have the usual action on vectors or matrices:\n\n```\nsage: x = vector([1,1])\nsage: x*m\n(2, 0)\nsage: m*x\n(0, 2)\nsage: (n*m)*x == n*(m*x)\nTrue\nsage: x*(n*m) == (x*n)*m\nTrue\n```\n\n```\nsage: x = matrix([[1,2],[1,1]])\nsage: x*m\n[0 1]\n[2 0]\nsage: m*x\n[0 1]\n[2 0]\nsage: (n*m)*x == n*(m*x)\nTrue\nsage: x*(n*m) == (x*n)*m\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4513\n\n",
     "created_at": "2008-11-13T16:03:53Z",
     "labels": [
-        "component: algebra"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Action of MatrixGroup on a MPolynomialRing",
@@ -15,7 +15,7 @@ archive/issues_004513.json:
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: tbd
+Assignee: @simon-king-jena
 
 CC:  @wdjoyner @malb
 
@@ -23,24 +23,52 @@ Keywords: matrix group, action, polynomial ring
 
 A group of n by n matrices over a field K acts on a polynomial ring with n variables over K. However, this is not implemented yet.
 
-Off list, David Joyner suggested to implement it with a `__call__` method in `matrix_group_element.py`. Then, the following should work:
+The following should work:
 
 ```
-sage: M=Matrix(GF(3),[[1,2],[1,1]])
-sage: G=MatrixGroup([M])
-sage: g=G.0
-sage: p=x*y^2
-sage: g(p)
-x^3 + x^2*y - x*y^2 - y^3
-sage: _==(x+2*y)*(x+y)^2
+sage: M = Matrix(GF(3),[[1,2],[1,1]])
+sage: N = Matrix(GF(3),[[2,2],[2,1]])
+sage: G = MatrixGroup([M,N])
+sage: m = G.0
+sage: n = G.1
+sage: R.<x,y> = GF(3)[]
+sage: m*x
+x + y
+sage: x*m
+x - y
+sage: (n*m)*x == n*(m*x)
+True
+sage: x*(n*m) == (x*n)*m
 True
 ```
 
-Although it concerns `matrix_group_element.py`, I believe this ticket belongs to Commutative Algebra, for two reasons:
-1. An efficient implementation probably requires knowledge of the guts of MPolynomialElement.
-2. My long-term goal is to re-implement my algorithms for the computation of non-modular invariant rings. The current implementation is in the `finvar.lib` library of Singular -- the slow Singular interpreter sometimes is a bottle necks.
+On the other hand, we still want to have the usual action on vectors or matrices:
 
-One more general technical question: It is `matrix_group_element.py`, hence seems to be pure python. Is it possible to define an additional method in some `.pyx` file using Cython? I don't know if this would be reasonable to do here, but perhaps this could come in handy at some point...
+```
+sage: x = vector([1,1])
+sage: x*m
+(2, 0)
+sage: m*x
+(0, 2)
+sage: (n*m)*x == n*(m*x)
+True
+sage: x*(n*m) == (x*n)*m
+True
+```
+
+```
+sage: x = matrix([[1,2],[1,1]])
+sage: x*m
+[0 1]
+[2 0]
+sage: m*x
+[0 1]
+[2 0]
+sage: (n*m)*x == n*(m*x)
+True
+sage: x*(n*m) == (x*n)*m
+True
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/4513
 

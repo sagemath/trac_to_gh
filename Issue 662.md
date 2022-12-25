@@ -1,22 +1,23 @@
-# Issue 662: Start Browser with clean environment
+# Issue 662: [with patch] Start Browser with clean environment
 
 archive/issues_000662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I call `sage -notebook` and Firefox/Iceweasel comes up automatically, it crashes on me with \n\n```\n/usr/lib/iceweasel/firefox-bin: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n```\n\nwhen logging in.\n\nIf I start Iceweasel again afterwards, I can log in and everything works. I suspect that this behaviour is caused by the SAGE environment variables (e.g. `LD_PATH`). A fix would be to start the browser with a clean (as in pre-SAGE) environment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/662\n\n",
+    "body": "Assignee: @malb\n\nIf I call `sage -notebook` and Firefox/Iceweasel comes up automatically, it crashes on me with \n\n```\n/usr/lib/iceweasel/firefox-bin: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n```\n\nwhen logging in.\n\nIf I start Iceweasel again afterwards, I can log in and everything works. I suspect that this behaviour is caused by the SAGE environment variables (e.g. `LD_PATH`). A fix would be to start the browser with a clean (as in pre-SAGE) environment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/662\n\n",
+    "closed_at": "2007-10-13T07:39:29Z",
     "created_at": "2007-09-15T19:08:50Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "Start Browser with clean environment",
+    "title": "[with patch] Start Browser with clean environment",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/662",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 If I call `sage -notebook` and Firefox/Iceweasel comes up automatically, it crashes on me with 
 

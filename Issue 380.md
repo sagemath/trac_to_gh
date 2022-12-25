@@ -4,6 +4,7 @@ archive/issues_000380.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nDimitar Jetchev found the following bug:\n\n```\nsage: k.<a> = NumberField(x^2+1); k\nNumber Field in a with defining polynomial x^2 + 1\nsage: m.<b> = k.extension(y^2+1); m\n```\n\nand it fails .... it says: variable name should be alphanumeric.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/380\n\n",
+    "closed_at": "2007-05-26T02:45:13Z",
     "created_at": "2007-05-26T02:29:56Z",
     "labels": [
         "component: number theory",

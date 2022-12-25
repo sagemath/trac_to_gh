@@ -1,9 +1,10 @@
-# Issue 4383: composition_series() returns no generators for trivial subgroup
+# Issue 4383: [with patch, positive review] composition_series() returns no generators for trivial subgroup
 
 archive/issues_004383.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: composition series, generators\n\nAt the tail end of a composition series of a group, the trivial subgroup has no generators, rather than the identity permutation as a generator.  This appears unacceptable to GAP for subsequent computations.\n\nOn 3.1.4 built from source on x86.\n\n```\nsage: G=CyclicPermutationGroup(2)\nsage: comps\n```\n\n```\n[Permutation Group with generators [(1,2)],\n Permutation Group with generators []]\n```\n\n```\nsage: comps[1].order()\n```\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/5.py\", line 7, in <module>\n    comps[_sage_const_1 ].order()\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\", line 770, in order\n    return Integer(self._gap_().Size())\n  File \"sage_object.pyx\", line 270, in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2442)\n  File \"sage_object.pyx\", line 246, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2186)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 965, in __call__\n    return cls(self, x, name=name)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1283, in __init__\n    raise TypeError, x\nTypeError: Gap produced error output\nError, usage: Group(<gen>,...), Group(<gens>), Group(<gens>,<id>)\n\n   executing $sage6:=Group([]);;\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4383\n\n",
+    "closed_at": "2008-11-29T03:31:41Z",
     "created_at": "2008-10-30T04:02:58Z",
     "labels": [
         "component: group theory",
@@ -11,7 +12,7 @@ archive/issues_004383.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "composition_series() returns no generators for trivial subgroup",
+    "title": "[with patch, positive review] composition_series() returns no generators for trivial subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4383",
     "user": "https://github.com/rbeezer"

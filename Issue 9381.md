@@ -4,6 +4,7 @@ archive/issues_009381.json:
 ```json
 {
     "body": "Assignee: Mariah Lenox\n\nlibm4ri is not respecting SAGE_FAT_BINARY\non x86-Linux, specifically sse3 if available\nwill be used.\n\nA mercurial patch is attached which when\nSAGE_FAT_BINARY=\"yes\", comments out the\nconfigure test for sse3 - so configure reports\nthat sse3 does not exist on the machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9381\n\n",
+    "closed_at": "2010-07-11T19:35:20Z",
     "created_at": "2010-06-29T20:01:18Z",
     "labels": [
         "component: packages: standard",

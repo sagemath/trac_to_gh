@@ -3,7 +3,8 @@
 archive/issues_006803.json:
 ```json
 {
-    "body": "We should have a symbolic Kronecker delta in Sage.\n\nAlso, current implementation of signum (sgn) function \nreturns wrong answer for symbolic input.\n\n```\nsage: sgn(x)\n1\nsage: sgn(-x)\n1\n```\n\nSo we should make sgn() symbolic aware. Given, implementation of \nthese functions in new symbolics should be very similar to the existing generalized function **Dirac delta** and **Heaviside**, I am putting them together here. \n\nAlso, ticket #777 should be closed down as Sign is already in Sage\nand this ticket will further enhance it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6803\n\n",
+    "body": "We should have a symbolic Kronecker delta in Sage.\n\nAlso, current implementation of signum (sgn) function \nreturns wrong answer for symbolic input.\n\n```\nsage: sgn(x)\n1\nsage: sgn(-x)\n1\n```\n\nSo we should make sgn() symbolic aware. Given, implementation of \nthese functions in new symbolics should be very similar to the existing generalized function **Dirac delta** and **Heaviside**, I am putting them together here. \n\nAlso, ticket #777 should be closed down as Sign is already in Sage\nand this ticket will further enhance it.\n\n**Patch:**\n\nApart from implementing these two symbolic functions, attached patch slightly speeds up three other generalized functions by avoiding default `__call__` method of PrimitiveFunction. These functions take explicit value either 0,-1,1 so those checks are not needed.\n\nTiming **before** the patches:\n\n```\nsage: timeit('dirac_delta(1.0)')\n625 loops, best of 3: 179 \u00b5s per loop\nsage: timeit('unit_step(1.0)')\n625 loops, best of 3: 345 \u00b5s per loop\nsage: timeit('heaviside(1.0)')\n625 loops, best of 3: 344 \u00b5s per loop\n```\n\nTiming **after** the patches:\n\n```\nsage: timeit('dirac_delta(1.0)')\n625 loops, best of 3: 159 \u00b5s per loop\nsage: timeit('heaviside(1.0)')\n625 loops, best of 3: 324 \u00b5s per loop\nsage: timeit('unit_step(1.0)')\n625 loops, best of 3: 323 \u00b5s per loop\n```\n\nAlso, it does slight re-arrangements of references.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6803\n\n",
+    "closed_at": "2009-11-17T07:27:19Z",
     "created_at": "2009-08-22T11:34:45Z",
     "labels": [
         "component: symbolics"
@@ -32,6 +33,34 @@ these functions in new symbolics should be very similar to the existing generali
 
 Also, ticket #777 should be closed down as Sign is already in Sage
 and this ticket will further enhance it.
+
+**Patch:**
+
+Apart from implementing these two symbolic functions, attached patch slightly speeds up three other generalized functions by avoiding default `__call__` method of PrimitiveFunction. These functions take explicit value either 0,-1,1 so those checks are not needed.
+
+Timing **before** the patches:
+
+```
+sage: timeit('dirac_delta(1.0)')
+625 loops, best of 3: 179 µs per loop
+sage: timeit('unit_step(1.0)')
+625 loops, best of 3: 345 µs per loop
+sage: timeit('heaviside(1.0)')
+625 loops, best of 3: 344 µs per loop
+```
+
+Timing **after** the patches:
+
+```
+sage: timeit('dirac_delta(1.0)')
+625 loops, best of 3: 159 µs per loop
+sage: timeit('heaviside(1.0)')
+625 loops, best of 3: 324 µs per loop
+sage: timeit('unit_step(1.0)')
+625 loops, best of 3: 323 µs per loop
+```
+
+Also, it does slight re-arrangements of references.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6803
 

@@ -1,16 +1,17 @@
-# Issue 2541: [with patch, needs review] Fixes bugs in binary_codes.pyx
+# Issue 2541: [with patch, positive review] Fixes bugs in binary_code.pyx
 
 archive/issues_002541.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis also makes the automorphism group calculator return the size of the group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2541\n\n",
+    "closed_at": "2008-03-16T04:39:49Z",
     "created_at": "2008-03-16T03:05:25Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] Fixes bugs in binary_codes.pyx",
+    "title": "[with patch, positive review] Fixes bugs in binary_code.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2541",
     "user": "https://github.com/rlmill"

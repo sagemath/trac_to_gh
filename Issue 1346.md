@@ -1,16 +1,17 @@
-# Issue 1346: fpLLL doctests don't test fpLLL
+# Issue 1346: [with patch, positive review] fpLLL doctests don't test fpLLL
 
 archive/issues_001346.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf the next version of fpLLL started returning bogus answers, the doctests in sage/libs/fplll/fplll.pyx would still pass, because they use random input and output.\n\nThere should be at least some doctests where fplll is run on constant input with a known result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1346\n\n",
+    "closed_at": "2008-10-11T06:40:44Z",
     "created_at": "2007-12-01T02:51:13Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "fpLLL doctests don't test fpLLL",
+    "title": "[with patch, positive review] fpLLL doctests don't test fpLLL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1346",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -4,6 +4,7 @@ archive/issues_006719.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is a report of a test failure of elliptic_eu (0.5, 0.1), seen on Sage sage-4.1.1.rc0 with updated Maxima (5.19.0) and ecl (9.8.1)\n\nI don't understand the maths of this, and don't even know how to independently verify this. But I'm just reporting it as a test failure. I don't even know if this should be 'algebra'. Please someone set the 'Component' to something else if this is inappropriate. \n\nFile \"/export/home/drkirkby/sage/sage-4.1.1.rc0/devel/sage/sage/functions/special.py\", line 1259:\n    sage: elliptic_eu (0.5, 0.1)\nExpected:\n    0.496054551287\nGot:\n    0.495848403419\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6719\n\n",
+    "closed_at": "2009-08-11T08:03:43Z",
     "created_at": "2009-08-09T20:28:46Z",
     "labels": [
         "component: algebra",

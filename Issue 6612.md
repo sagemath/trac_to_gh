@@ -1,15 +1,16 @@
-# Issue 6612: sage-update selects a suiteable mirror
+# Issue 6612: [with patch, positive review] sage-update selects a suiteable mirror
 
 archive/issues_006612.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is an enhancement to sage-update, that's triggerd by `sage -upgrade`. It downloads a list of available and up-to-date Sage mirrors, uses some heuristics to select a new one, and uses that instead of the default. This should further distribute the server load across the mirror network and speed up downloads. [>> see sage-devel discussion](http://groups.google.com/group/sage-devel/browse_thread/thread/5fb0ea3a8b396982#)\n\nThings to test:\n\n* script works and selects a mirror, there is a fallback to the current mode, so, it should not make things worse.\n* the actual upgrade process works with the content that is actually mirrored. I've tested this and worked (4.0.2 > 4.1) but maybe someone else should give it a try, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6612\n\n",
+    "closed_at": "2009-09-30T04:05:47Z",
     "created_at": "2009-07-24T13:31:13Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "sage-update selects a suiteable mirror",
+    "title": "[with patch, positive review] sage-update selects a suiteable mirror",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6612",
     "user": "https://github.com/haraldschilly"

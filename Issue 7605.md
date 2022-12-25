@@ -4,6 +4,7 @@ archive/issues_007605.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the function vertex_connectivity for Graphs.\n\nYou could be in need of #7270 and GLPK from  http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7605\n\n",
+    "closed_at": "2009-12-19T20:27:22Z",
     "created_at": "2009-12-04T18:25:28Z",
     "labels": [
         "component: graph theory"

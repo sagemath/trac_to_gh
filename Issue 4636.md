@@ -3,7 +3,8 @@
 archive/issues_004636.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nKeywords: polynomial modn finite field gf\n\nsage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p is very old.\n\nThe attached patch removes (but doesn't yet delete -- could you verify it can be removed, reviewer?) Polynomial_dense_mod_p and implements polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz/ZZ using the newer techniques.\n\nIt makes basic arithmetic faster.  I was finding that arithmetic in GF(next_prime(2^50))['x'] was slower than in Zmod(next_prime(2^50)+1)['x'], but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4636\n\n",
+    "body": "Assignee: @malb\n\nCC:  @craigcitro\n\nKeywords: polynomial modn finite field gf sd40.5\n\nsage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p is very old.\n\nThe attached patch removes (but doesn't yet delete -- could you verify it can be removed, reviewer?) Polynomial_dense_mod_p and implements polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz/ZZ using the newer techniques.\n\nIt makes basic arithmetic faster.  I was finding that arithmetic in `GF(next_prime(2^50))['x']` was slower than in `Zmod(next_prime(2^50)+1)['x']`, but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4636\n\n",
+    "closed_at": "2012-06-02T12:46:13Z",
     "created_at": "2008-11-27T04:44:35Z",
     "labels": [
         "component: number theory",
@@ -16,17 +17,17 @@ archive/issues_004636.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 CC:  @craigcitro
 
-Keywords: polynomial modn finite field gf
+Keywords: polynomial modn finite field gf sd40.5
 
 sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p is very old.
 
 The attached patch removes (but doesn't yet delete -- could you verify it can be removed, reviewer?) Polynomial_dense_mod_p and implements polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz/ZZ using the newer techniques.
 
-It makes basic arithmetic faster.  I was finding that arithmetic in GF(next_prime(2^50))['x'] was slower than in Zmod(next_prime(2^50)+1)['x'], but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].
+It makes basic arithmetic faster.  I was finding that arithmetic in `GF(next_prime(2^50))['x']` was slower than in `Zmod(next_prime(2^50)+1)['x']`, but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].
 
 Issue created by migration from https://trac.sagemath.org/ticket/4636
 

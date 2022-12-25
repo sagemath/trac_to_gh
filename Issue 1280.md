@@ -1,15 +1,16 @@
-# Issue 1280: make Permutation(range(10)).random() fast instead of dog slow.
+# Issue 1280: [with patch, with positive review] make Permutation(range(10)).random() fast instead of dog slow.
 
 archive/issues_001280.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\n[01:06am] williamstein: mhansen -- I wonder if you could make this faster?\n[01:06am] williamstein: p = Permutations(range(9)); p\n[01:06am] williamstein: time p.random()\n[01:06am] williamstein: 5 seconds.\n[01:06am] williamstein: Maybe I'm being naive.\n[01:06am] williamstein: for 10 it takes forever.\n[01:06am] mhansen: Heh, yeah -- I definitely could \n[01:07am] williamstein: Since p = Permutations(10); time p.random() is instant.\n[01:07am] williamstein: I was trying to permute the rows of a matrix and thought your combinatorics stuff would be really nice to use\n[01:07am] mhansen: Yep, I just need to override the default random.  There\n[01:07am] williamstein: and it was trivial to figure out how to use it for that, but since I wanted 0-based I used range(10), which made it insanely slow.\n[01:08am] mhansen: 's all sorts of these things that'd be super-easy for an undergrad to do.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1280\n\n",
+    "closed_at": "2007-12-01T16:16:53Z",
     "created_at": "2007-11-26T09:09:42Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "make Permutation(range(10)).random() fast instead of dog slow.",
+    "title": "[with patch, with positive review] make Permutation(range(10)).random() fast instead of dog slow.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1280",
     "user": "https://github.com/williamstein"

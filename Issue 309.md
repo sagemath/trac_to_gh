@@ -1,22 +1,23 @@
-# Issue 309: rationals enumeration not  monotone in height.
+# Issue 309: [with patches, with positive review] rationals enumeration not  monotone in height
 
 archive/issues_000309.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWhile the new `Rationals().__iter__ method` is really nice and quick, I realized there is one drawback: The enumeration is not completely wrt increasing height:\n\n```\nfrom itertools import islice,imap\n\ndef idifference(iter):\n    B = iter.next()\n    for b in iter:\n      yield b-B\n      B=b\n\ndef height(x):\n  return x.height()\n\n[(n,min(idifference(imap(height,islice(Rationals(),Integer(2)**n))))) for n in range(Integer(1),Integer(19))]\n```\n\nyields\n\n```\n[(1, 0),\n (2, 0),\n (3, 0),\n (4, 0),\n (5, -1),\n (6, -2),\n (7, -3),\n (8, -5),\n (9, -8),\n (10, -13),\n (11, -21),\n (12, -34),\n (13, -55),\n (14, -89),\n (15, -144),\n (16, -233),\n (17, -377),\n (18, -610)]\n```\n\nso the jumps in height actually do get big. Many people will expect that if a certain number occurs in the enumeration, then all numbers of smaller height have also appeared. Therefore, we should perhaps have a choice of algorithm (since the present formula (sage 2.2) is so cool, I think it should be left in, but perhaps not as default enumeration order).\n\nOn the other hand, I realize that nobody will be using this routine anyway, so any change to this routine is essentially a waste of time.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/309\n\n",
+    "body": "Assignee: @aghitza\n\nWhile the new `Rationals().__iter__ method` is really nice and quick, I realized there is one drawback: The enumeration is not completely wrt increasing height:\n\n```\nfrom itertools import islice,imap\n\ndef idifference(iter):\n    B = iter.next()\n    for b in iter:\n      yield b-B\n      B=b\n\ndef height(x):\n  return x.height()\n\n[(n,min(idifference(imap(height,islice(Rationals(),Integer(2)**n))))) for n in range(Integer(1),Integer(19))]\n```\n\nyields\n\n```\n[(1, 0),\n (2, 0),\n (3, 0),\n (4, 0),\n (5, -1),\n (6, -2),\n (7, -3),\n (8, -5),\n (9, -8),\n (10, -13),\n (11, -21),\n (12, -34),\n (13, -55),\n (14, -89),\n (15, -144),\n (16, -233),\n (17, -377),\n (18, -610)]\n```\n\nso the jumps in height actually do get big. Many people will expect that if a certain number occurs in the enumeration, then all numbers of smaller height have also appeared. Therefore, we should perhaps have a choice of algorithm (since the present formula (sage 2.2) is so cool, I think it should be left in, but perhaps not as default enumeration order).\n\nOn the other hand, I realize that nobody will be using this routine anyway, so any change to this routine is essentially a waste of time.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/309\n\n",
+    "closed_at": "2008-09-02T09:36:42Z",
     "created_at": "2007-03-05T18:37:50Z",
     "labels": [
         "component: basic arithmetic",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "rationals enumeration not  monotone in height.",
+    "title": "[with patches, with positive review] rationals enumeration not  monotone in height",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/309",
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: somebody
+Assignee: @aghitza
 
 While the new `Rationals().__iter__ method` is really nice and quick, I realized there is one drawback: The enumeration is not completely wrt increasing height:
 

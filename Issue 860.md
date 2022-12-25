@@ -1,16 +1,17 @@
-# Issue 860: dsage -- update to fix a bunch of "rough edges"
+# Issue 860: [with patch] dsage -- update to fix a bunch of "rough edges"
 
 archive/issues_000860.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nthe rough edges that William mentioned.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nThere is documentation on how to do this here:\n\nhttp://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html\n\nLet me know if you need any help doing this. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/860\n\n",
+    "closed_at": "2007-10-13T01:38:55Z",
     "created_at": "2007-10-12T06:05:46Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "dsage -- update to fix a bunch of \"rough edges\"",
+    "title": "[with patch] dsage -- update to fix a bunch of \"rough edges\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/860",
     "user": "https://github.com/williamstein"

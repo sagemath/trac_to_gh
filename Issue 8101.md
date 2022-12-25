@@ -3,7 +3,8 @@
 archive/issues_008101.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nOn Open Solaris x64 as 64 bit without setting CFLAGS globally build is 32 bit.\n\nA patch is under way.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8101\n\n",
+    "body": "Assignee: drkirkby\n\nOn Open Solaris x64 as 64 bit without setting CFLAGS globally build is 32 bit.\n\nA patch is attached.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8101\n\n",
+    "closed_at": "2010-02-11T15:13:21Z",
     "created_at": "2010-01-27T23:48:53Z",
     "labels": [
         "component: porting: solaris",
@@ -20,9 +21,11 @@ Assignee: drkirkby
 
 On Open Solaris x64 as 64 bit without setting CFLAGS globally build is 32 bit.
 
-A patch is under way.
+A patch is attached.
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8101
 

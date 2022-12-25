@@ -3,11 +3,11 @@
 archive/issues_009407.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nKeywords: Dirichlet characters, abelian fields, class field theory\n\nThere is a correspondance between groups of Dirichlet characters and Galois groups of abelian fields (over Q). We implement here three functions\n\n* the conductor of an abelian field\n\n* the set of Dirichlet characters of an abelian field\n\n* the fixed field of a Dirichlet character\n\nIssue created by migration from https://trac.sagemath.org/ticket/9407\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: Dirichlet characters, abelian fields, class field theory\n\nThere is a correspondance between groups of Dirichlet characters and Galois groups of abelian fields (over Q). We implement here three functions\n\n* the conductor of an abelian field\n\n* the set of Dirichlet characters of an abelian field\n\n* the fixed field of a Dirichlet character\n\nApply [attachment:trac_9407_new.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9407\n\n",
+    "closed_at": "2020-12-05T22:13:24Z",
     "created_at": "2010-07-02T05:16:55Z",
     "labels": [
-        "component: number fields",
-        "minor"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "fixed fields for dirichlet characters and conductors and dirichlet characters for abelian fields",
@@ -27,6 +27,8 @@ There is a correspondance between groups of Dirichlet characters and Galois grou
 * the set of Dirichlet characters of an abelian field
 
 * the fixed field of a Dirichlet character
+
+Apply [attachment:trac_9407_new.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9407
 

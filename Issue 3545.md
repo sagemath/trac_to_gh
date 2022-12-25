@@ -1,15 +1,16 @@
-# Issue 3545: [with patch, needs review] is_vertex_transitive for graphs
+# Issue 3545: [with patch, positive review] is_vertex_transitive for graphs
 
 archive/issues_003545.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  boothby\n\nInspired by #3544.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3545\n\n",
+    "closed_at": "2008-07-07T02:03:32Z",
     "created_at": "2008-07-03T18:22:10Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] is_vertex_transitive for graphs",
+    "title": "[with patch, positive review] is_vertex_transitive for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3545",
     "user": "https://github.com/rlmill"

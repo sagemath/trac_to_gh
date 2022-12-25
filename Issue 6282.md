@@ -1,15 +1,16 @@
-# Issue 6282: document SAGE_CHECK
+# Issue 6282: [with patch, positive review] document SAGE_CHECK
 
 archive/issues_006282.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAdd the following to the SAGE_ROOT/README.txt, since right now the SAGE_CHECK flag is totally undocumented:\n\n```\nIf you want to run the test suite for each individual spkg as it is installed, do\n\n   export SAGE_CHECK=\"yes\"\n\nbefore starting the Sage build.  This will run each test suite, and will raise an error if any failures occur. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6282\n\n",
+    "body": "Assignee: tbd\n\nAdd the following to the SAGE_ROOT/README.txt, since right now the SAGE_CHECK flag is totally undocumented:\n\n```\nIf you want to run the test suite for each individual spkg as it is installed, do\n\n   export SAGE_CHECK=\"yes\"\n\nbefore starting the Sage build.  This will run each test suite, and will raise an error if any failures occur. \n```\n\nThe above should be added to step 3 in MORE DETAILED INSTRUCTIONS in the README.txt:\n\n```\n    3. Extract the sage source tarball, cd into a directory\n       with no spaces in it.  If you have a machine with \n       n processors, say, type  \n             export MAKE=\"make -j4\"\n       To start the build type\n             make\n       If you want to run the test suite for each \n       individual spkg as it is installed, type\n             export SAGE_CHECK=\"yes\"\n       before starting the Sage build.  This will \n       run each test suite, and will raise an error \n       if any failures occur. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6282\n\n",
+    "closed_at": "2009-06-14T22:18:42Z",
     "created_at": "2009-06-14T09:34:44Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "document SAGE_CHECK",
+    "title": "[with patch, positive review] document SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6282",
     "user": "https://github.com/williamstein"
@@ -25,6 +26,23 @@ If you want to run the test suite for each individual spkg as it is installed, d
    export SAGE_CHECK="yes"
 
 before starting the Sage build.  This will run each test suite, and will raise an error if any failures occur. 
+```
+
+The above should be added to step 3 in MORE DETAILED INSTRUCTIONS in the README.txt:
+
+```
+    3. Extract the sage source tarball, cd into a directory
+       with no spaces in it.  If you have a machine with 
+       n processors, say, type  
+             export MAKE="make -j4"
+       To start the build type
+             make
+       If you want to run the test suite for each 
+       individual spkg as it is installed, type
+             export SAGE_CHECK="yes"
+       before starting the Sage build.  This will 
+       run each test suite, and will raise an error 
+       if any failures occur. 
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6282

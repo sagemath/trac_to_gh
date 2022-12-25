@@ -1,15 +1,16 @@
-# Issue 8468: add "Group Theory and Sage: A Primer" to the classification "Sage HOWTOs"
+# Issue 8468: add "Group Theory and Sage: A Primer" to the classification "Thematic Tutorials"
 
 archive/issues_008468.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rbeezer\n\nKeywords: group theory\n\nAdd the document [Group Theory and Sage: A Primer](http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf) to the documentation category \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8468\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rbeezer\n\nKeywords: group theory\n\nAdd the document [Group Theory and Sage: A Primer](http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf) to the documentation category \"Thematic Tutorials\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** The current ticket needs to be coordinated with #8470.\n\n\n\n**Prerequisites:** #8469\n\nIssue created by migration from https://trac.sagemath.org/ticket/8468\n\n",
+    "closed_at": "2010-05-02T07:35:30Z",
     "created_at": "2010-03-07T02:22:36Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "add \"Group Theory and Sage: A Primer\" to the classification \"Sage HOWTOs\"",
+    "title": "add \"Group Theory and Sage: A Primer\" to the classification \"Thematic Tutorials\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8468",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -21,7 +22,15 @@ CC:  @rbeezer
 
 Keywords: group theory
 
-Add the document [Group Theory and Sage: A Primer](http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf) to the documentation category "Sage HOWTOs". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+Add the document [Group Theory and Sage: A Primer](http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf) to the documentation category "Thematic Tutorials". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+
+
+
+**Notes:** The current ticket needs to be coordinated with #8470.
+
+
+
+**Prerequisites:** #8469
 
 Issue created by migration from https://trac.sagemath.org/ticket/8468
 

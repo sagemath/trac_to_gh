@@ -1,16 +1,17 @@
-# Issue 6436: ideal([]) gives unhelpful error message
+# Issue 6436: [with patch, positive review] ideal([]) gives unhelpful error message
 
 archive/issues_006436.json:
 ```json
 {
     "body": "Assignee: tbd\n\nWhen I type \"ideal([])\" in Sage 4.0.1 I get an error message intended for a different case:\n\n```\nsage: ideal([])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to find common ring into which all ideal generators map\n```\n\nThis error message is incorrect since, trivially, the empty set of generators will map into any ring at all. The attached patch changes this to\n\n```\nsage: ideal([])\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: unable to determine which ring to embed the ideal in\n```\n\nBy the way, the function ideal in ideal.py has a documentation section named TESTS with doctests in it. As far as I can determine, these doctests do not get run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6436\n\n",
+    "closed_at": "2009-07-04T01:22:22Z",
     "created_at": "2009-06-27T22:55:50Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "ideal([]) gives unhelpful error message",
+    "title": "[with patch, positive review] ideal([]) gives unhelpful error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6436",
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"

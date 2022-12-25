@@ -1,16 +1,17 @@
-# Issue 6402: Fix bugs + improve documentation for overconvergent modular forms
+# Issue 6402: [with patch, positive review] Fix bugs + improve documentation for overconvergent modular forms
 
 archive/issues_006402.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nThis patch fixes lots of bugs + adds a substantial amount of documentation and examples, based on my talk at Sage Days 16.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6402\n\n",
+    "closed_at": "2009-08-24T12:34:57Z",
     "created_at": "2009-06-25T12:11:59Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Fix bugs + improve documentation for overconvergent modular forms",
+    "title": "[with patch, positive review] Fix bugs + improve documentation for overconvergent modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6402",
     "user": "https://github.com/loefflerd"

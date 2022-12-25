@@ -1,15 +1,16 @@
-# Issue 3455: notebook -- after registration give user login box with congratulations message
+# Issue 3455: [with patch, positive review] notebook -- after registration give user login box with congratulations message
 
 archive/issues_003455.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCurrently a new user just sees a welcome message instead of being automatically logged in or being able to login on the same page as the welcome page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3455\n\n",
+    "closed_at": "2008-06-25T06:24:17Z",
     "created_at": "2008-06-18T01:08:46Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- after registration give user login box with congratulations message",
+    "title": "[with patch, positive review] notebook -- after registration give user login box with congratulations message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3455",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

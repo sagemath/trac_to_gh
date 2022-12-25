@@ -1,16 +1,17 @@
-# Issue 830: SAGE does not install 'gphelp' for extended PARI/GP help
+# Issue 830: [with spkg] SAGE does not install 'gphelp' for extended PARI/GP help
 
 archive/issues_000830.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe summary says it all.\n\nWithout 'gphelp', the ?? and ??? help is not available.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/830\n\n",
+    "closed_at": "2007-11-01T10:41:41Z",
     "created_at": "2007-10-05T06:08:40Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "SAGE does not install 'gphelp' for extended PARI/GP help",
+    "title": "[with spkg] SAGE does not install 'gphelp' for extended PARI/GP help",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/830",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"

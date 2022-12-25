@@ -1,9 +1,10 @@
-# Issue 3688: trivial problems in the sage spkg
+# Issue 3688: [with patch, positive review] trivial problems in the sage spkg
 
 archive/issues_003688.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n# Scripts missing #!/bin/sh lines in sage-3.0.5.spkg:\n\n```\npull\ninstall\n```\n\n# Scripts missing #!/usr/bin/python lines in sage-3.0.5.dpkg:\n\n```\nsage/dsage/misc/hostinfo.py\nsage/dsage/scripts/dsage_setup.py\n```\n\n# Files unnecessarily marked as executable in sage-3.0.5.spkg\n\n```\nsage/graphs/planarity/graphEmbed.c\nsage/graphs/planarity/graphIO.c\nsage/graphs/planarity/graphIsolator.c\nsage/graphs/planarity/graphNonplanar.c\nsage/graphs/planarity/graphPreprocess.c\nsage/graphs/planarity/graphStructure.c\nsage/graphs/planarity/graphTests.c\nsage/graphs/planarity/listcoll.c\nsage/graphs/planarity/planarity.c\nsage/graphs/planarity/stack.c\n```\n\n# Other files unnecessarily marked as executable\n\n```\nsage-README-osx.txt (in the root of the sage distribution)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3688\n\n",
+    "closed_at": "2009-07-24T09:11:34Z",
     "created_at": "2008-07-21T05:48:09Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003688.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "trivial problems in the sage spkg",
+    "title": "[with patch, positive review] trivial problems in the sage spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3688",
     "user": "https://github.com/timabbott"

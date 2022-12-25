@@ -3,7 +3,8 @@
 archive/issues_008172.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @malb @haraldschilly\n\nThis patch enables support for Cplex, when the new package #8171 for CBC is installed. It also includes several lines of documentation to explain how CPLEX can be used, and fixes a bad docstring which I noticed while testing this package :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8172\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @malb @haraldschilly\n\nThis patch enables support for Cplex, when the new package #8171 for CBC is installed. It also includes several lines of documentation to explain how CPLEX can be used, and fixes a bad docstring which I noticed while testing this package :-)\n\nNathann does have access to 't2'. Minh has made it clear the last alpha (4.3.4.alpha1) builds ok on 't2', so testing this should be possible for Nathann. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8172\n\n",
+    "closed_at": "2010-04-29T05:16:38Z",
     "created_at": "2010-02-03T13:04:21Z",
     "labels": [
         "component: numerical"
@@ -21,7 +22,7 @@ CC:  @malb @haraldschilly
 
 This patch enables support for Cplex, when the new package #8171 for CBC is installed. It also includes several lines of documentation to explain how CPLEX can be used, and fixes a bad docstring which I noticed while testing this package :-)
 
-Nathann
+Nathann does have access to 't2'. Minh has made it clear the last alpha (4.3.4.alpha1) builds ok on 't2', so testing this should be possible for Nathann. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8172
 

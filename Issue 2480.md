@@ -3,10 +3,11 @@
 archive/issues_002480.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @robertwb @mwhansen\n\nKeywords: number field order arguments\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @ncalexan @robertwb @mwhansen\n\nKeywords: number field order arguments\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
+    "closed_at": "2010-01-24T03:22:20Z",
     "created_at": "2008-03-12T03:19:59Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "minor",
         "bug"
     ],
@@ -17,7 +18,7 @@ archive/issues_002480.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @ncalexan @robertwb @mwhansen
 

@@ -3,7 +3,8 @@
 archive/issues_008223.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @novoselt\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8223\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @novoselt\n\n```\nsage: P.<x,y> = QQ[]\nsage: dir(P)\nBOOM!\n```\n\nThis is caused by Nick Thiery's patch from trac #7921 which very badly defines a __dir__ method for parents:\n\n```\nchangeset:   13746:6ad207aca83f\nuser:        Nicolas M. Thiery <nthiery@users.sf.net>\ndate:        Fri Jan 22 22:53:29 2010 +0100          \nsummary:     #7921: Categories for extension types via __getattr___\n```\n\nThe problem was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/b559a8a6abf228ed) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8223\n\n",
+    "closed_at": "2010-02-17T20:41:35Z",
     "created_at": "2010-02-09T20:34:02Z",
     "labels": [
         "component: misc",
@@ -17,11 +18,26 @@ archive/issues_008223.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @nthiery
 
 CC:  @novoselt
 
 ```
+sage: P.<x,y> = QQ[]
+sage: dir(P)
+BOOM!
+```
+
+This is caused by Nick Thiery's patch from trac #7921 which very badly defines a __dir__ method for parents:
+
+```
+changeset:   13746:6ad207aca83f
+user:        Nicolas M. Thiery <nthiery@users.sf.net>
+date:        Fri Jan 22 22:53:29 2010 +0100          
+summary:     #7921: Categories for extension types via __getattr___
+```
+
+The problem was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/b559a8a6abf228ed) thread.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8223
 

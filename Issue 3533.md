@@ -1,15 +1,16 @@
-# Issue 3533: [with patch, needs review] better number fields (mostly cyclotomic)
+# Issue 3533: [with patch, with positive  review] better number fields (mostly cyclotomic)
 
 archive/issues_003533.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro @mwhansen\n\nThis attached patch makes several changes to\n`sage/rings/number_field/number_field.py` and\n`sage/rings/number_field/morphism.py` that are mainly concerned with\nimproving performance for cyclotomic fields, but also tidy up various\nother things.  The main changes are summarised below.\n\n\nThere is a serious bug in `roots_of_unity` when applied to relative number \nfields:\n\n```\nsage: K.<a> = NumberField([x^2 + 3, x^2 + 1])\nsage: K.roots_of_unity()\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\n```\nBut\n\n```\nsage: K.absolute_field('b').roots_of_unity()\n[1/8*b^3 + 1/4*b^2 + 3/4*b + 1,\n 1/8*b^3 + 5/4*b + 1/2,\n...\n```\nso it is clear how to deal with the problem.\n\nIn addition, the `roots_of_unity` and `number_of_roots_of_unity` methods can\nrather obviously be made **much** faster for cyclotomic fields.  \n\nSimilarly, I've written a method for listing the embeddings of a cyclotomic field in\na number field which runs much more quickly than at present.\n\nFor the general case of finding embeddings of number fields, at the moment\nSAGE asks PARI to look for roots when a simple degree check indicates that\nthere are none.  It is, of course, very easy to avoid this wasted time.\n\nA method for complex embeddings of cyclotomic fields already exists, but it\nis inadequate in two ways.  First, it handles the default precision in a\ndifferent way from the method for generic complex embeddings.  Second, it\nfails to cache the result.  These faults have been corrected, and the\nchange in respect of precision also applied to `complex_embedding` (in the\nsingular).\n\nThere is also a slight problem with the `embeddings` function (used by\nthe generic `complex_embeddings` and `real_embeddings`).  It caches its\noutput, but the first time it is called it returns something different from\nwhat has been cached (a `list` rather than a `Sequence`).  This has been\nchanged for both the generic field and the relative field methods.  In\naddition the code now avoids the printing of empty lists of field embeddings on\nthree lines.\n\nI've added a method for real embeddings of cyclotomic fields.  Nobody who \nknows what they're doing would use this function, but it might as well be \nefficient.\n\nMany other functions can be speeded up for cyclotomic fields, \nbecause of the vast amount of theory about these fields.  As well as the \nabove, I've implemented `signature`, `discriminant` and `is_isomorphic` \nfor cyclotomic fields.  Probably more could be done.  Galois groups are an \nobvious example, but that had better wait until ticket #133 is sorted out.\n\nSome of the existing doctests have been moved when they apply to \ncyclotomic fields.  Others have been added.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3533\n\n",
+    "closed_at": "2008-07-06T18:08:28Z",
     "created_at": "2008-06-29T09:56:15Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] better number fields (mostly cyclotomic)",
+    "title": "[with patch, with positive  review] better number fields (mostly cyclotomic)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3533",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

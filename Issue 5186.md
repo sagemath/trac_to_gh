@@ -4,6 +4,7 @@ archive/issues_005186.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual machine I get a 32-bit libgmp.so.\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\nconfig.log and cpuinfo available at:\n\n```\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_config.log\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_cpuinfo\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5186\n\n",
+    "closed_at": "2010-01-17T02:10:21Z",
     "created_at": "2009-02-05T08:39:01Z",
     "labels": [
         "component: build",

@@ -3,7 +3,7 @@
 archive/issues_009921.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime mvngu @kcrisman\n\nleif suggested at #9433 that we add release notes to SAGE_ROOT.  Perhaps they could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9922\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime mvngu @kcrisman\n\nleif suggested at #9433 that we add a file to SAGE_ROOT containing release notes\n\nPerhaps the release notes could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.  It might be better to not automate its creation, though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9922\n\n",
     "created_at": "2010-09-16T19:57:55Z",
     "labels": [
         "component: distribution",
@@ -20,7 +20,9 @@ Assignee: tbd
 
 CC:  @nexttime mvngu @kcrisman
 
-leif suggested at #9433 that we add release notes to SAGE_ROOT.  Perhaps they could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.
+leif suggested at #9433 that we add a file to SAGE_ROOT containing release notes
+
+Perhaps the release notes could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.  It might be better to not automate its creation, though.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9922
 

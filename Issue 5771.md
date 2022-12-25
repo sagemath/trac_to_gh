@@ -1,22 +1,23 @@
-# Issue 5771: %latex should issue a warning if latex isn't installed on the system
+# Issue 5771: [with patch, positive review] %latex should issue a warning if latex isn't installed on the system
 
 archive/issues_005771.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @rbeezer\n\nRight now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:\n\n```\nmabshoff@sagenb:~$ latex\nThe program 'latex' is currently not installed.  You can install it by typing:\nsudo apt-get install texlive-latex-base\n-bash: latex: command not found\nmabshoff@sagenb:~$ echo $?\n127\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5771\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer\n\nRight now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:\n\n```\nmabshoff@sagenb:~$ latex\nThe program 'latex' is currently not installed.  You can install it by typing:\nsudo apt-get install texlive-latex-base\n-bash: latex: command not found\nmabshoff@sagenb:~$ echo $?\n127\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5771\n\n",
+    "closed_at": "2009-06-13T21:44:11Z",
     "created_at": "2009-04-13T03:21:10Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "%latex should issue a warning if latex isn't installed on the system",
+    "title": "[with patch, positive review] %latex should issue a warning if latex isn't installed on the system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5771",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: cwitty
+Assignee: @jhpalmieri
 
 CC:  @rbeezer
 

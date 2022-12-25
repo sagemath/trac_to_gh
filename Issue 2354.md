@@ -1,22 +1,24 @@
-# Issue 2354: bug in matrix_real_double_dense  (trivial to fix)
+# Issue 2354: [with patch, with positive review] bug in matrix_real_double_dense  (trivial to fix)
 
 archive/issues_002354.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug\n```\n\nbut should be\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2354\n\n",
+    "body": "Assignee: @dfdeshom\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug\n```\n\nbut should be\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2354\n\n",
+    "closed_at": "2008-03-12T22:09:01Z",
     "created_at": "2008-02-29T17:41:14Z",
     "labels": [
         "component: linear algebra",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "bug in matrix_real_double_dense  (trivial to fix)",
+    "title": "[with patch, with positive review] bug in matrix_real_double_dense  (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2354",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @dfdeshom
 
 ```
         _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug

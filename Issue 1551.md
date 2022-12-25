@@ -1,17 +1,17 @@
-# Issue 1551: Make is_subgraph function
+# Issue 1551: [with patch, with positive review] is_subgraph function
 
 archive/issues_001551.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nShould be easy to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1551\n\n",
+    "closed_at": "2007-12-18T02:15:23Z",
     "created_at": "2007-12-17T14:27:20Z",
     "labels": [
         "component: graph theory",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Make is_subgraph function",
+    "title": "[with patch, with positive review] is_subgraph function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1551",
     "user": "https://github.com/rlmill"

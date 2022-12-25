@@ -1,16 +1,17 @@
-# Issue 2945: [with spkg, needs review] gcc 4.3: libfplll needs small fix to compile
+# Issue 2945: [with spkg, with positive review] gcc 4.3: libfplll needs small fix to compile
 
 archive/issues_002945.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha6/libfplll-2.1.6-20071129.p3.spkg\n\nfixes the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2945\n\n",
+    "closed_at": "2008-04-17T09:50:29Z",
     "created_at": "2008-04-17T08:10:17Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg, needs review] gcc 4.3: libfplll needs small fix to compile",
+    "title": "[with spkg, with positive review] gcc 4.3: libfplll needs small fix to compile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2945",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

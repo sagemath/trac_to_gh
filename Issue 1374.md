@@ -1,22 +1,24 @@
-# Issue 1374: segfault in coercion with matrices and ints
+# Issue 1374: [with patch] segfault in coercion with matrices and ints
 
 archive/issues_001374.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.\n\nHere's a sample session:\n\n```\nsage: M = MatrixSpace(GF(5),2,2)\n\nsage: A = M([1,0,0,1])\n\nsage: A - int(-1)\n \n[2 0]\n[0 2]\n\nsage: B = M([4,0,0,1])\n\nsage: B - int(-1)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1374\n\n",
+    "body": "Assignee: @robertwb\n\nThis is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.\n\nHere's a sample session:\n\n```\nsage: M = MatrixSpace(GF(5),2,2)\n\nsage: A = M([1,0,0,1])\n\nsage: A - int(-1)\n \n[2 0]\n[0 2]\n\nsage: B = M([4,0,0,1])\n\nsage: B - int(-1)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1374\n\n",
+    "closed_at": "2007-12-03T00:28:03Z",
     "created_at": "2007-12-02T19:23:51Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: coercion",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "segfault in coercion with matrices and ints",
+    "title": "[with patch] segfault in coercion with matrices and ints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1374",
     "user": "https://github.com/craigcitro"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 This is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.
 

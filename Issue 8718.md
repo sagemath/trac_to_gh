@@ -3,7 +3,8 @@
 archive/issues_008718.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @dkrenn\n\nKeywords: polynomial, map\n\nComputing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8718\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @dkrenn\n\nKeywords: polynomial, map\n\nComputing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.\n\n---\n\nApply\n\n1. [attachment:trac_8718.patch]\n2. [attachment:trac_8718_codomain.patch]\n3. [attachment:trac_8718_multivariate_codomain.patch]\n\nto the sage repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8718\n\n",
+    "closed_at": "2012-02-27T11:19:40Z",
     "created_at": "2010-04-19T20:15:46Z",
     "labels": [
         "component: algebra",
@@ -23,6 +24,16 @@ CC:  @dkrenn
 Keywords: polynomial, map
 
 Computing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.
+
+---
+
+Apply
+
+1. [attachment:trac_8718.patch]
+2. [attachment:trac_8718_codomain.patch]
+3. [attachment:trac_8718_multivariate_codomain.patch]
+
+to the sage repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8718
 

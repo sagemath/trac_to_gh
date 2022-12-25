@@ -1,16 +1,17 @@
-# Issue 1178: flint in 2.8.12 fails on Solaris 10: u_int16_t undefined
+# Issue 1178: [probably fixed] flint in 2.8.12 fails on Solaris 10: u_int16_t undefined
 
 archive/issues_001178.json:
 ```json
 {
     "body": "Assignee: Bill Hart\n\nHello,\n\nthe problem was reported by Klas Heggemann. See\n\nhttp://groups.google.com/group/sage-devel/t/b35f8758cd98fad6\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1178\n\n",
+    "closed_at": "2008-01-28T05:46:13Z",
     "created_at": "2007-11-15T15:51:45Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "flint in 2.8.12 fails on Solaris 10: u_int16_t undefined",
+    "title": "[probably fixed] flint in 2.8.12 fails on Solaris 10: u_int16_t undefined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1178",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

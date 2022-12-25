@@ -1,22 +1,23 @@
-# Issue 506: add %timeit support to the notebook
+# Issue 506: [with patch; with positive review] add %timeit support to the notebook
 
 archive/issues_000506.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason-sage@creativetrax.com\n\nLike in Ipython, it would be good if the notebook had support for using %timeit to time\nblocks of code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/506\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jason-sage@creativetrax.com\n\nLike in Ipython, it would be good if the notebook had support for using %timeit to time\nblocks of code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/506\n\n",
+    "closed_at": "2008-02-15T22:00:30Z",
     "created_at": "2007-08-29T02:47:47Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "add %timeit support to the notebook",
+    "title": "[with patch; with positive review] add %timeit support to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/506",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 CC:  jason-sage@creativetrax.com
 

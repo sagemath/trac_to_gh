@@ -1,16 +1,17 @@
-# Issue 4082: [with patch, needs review] Sage 3.1.2.rc0: numerical noise on OSX/Intel in schemes/elliptic_curves/ell_number_field.py
+# Issue 4082: [with patch, positive review] Sage 3.1.2.rc0: numerical noise on OSX/Intel in schemes/elliptic_curves/ell_number_field.py
 
 archive/issues_004082.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.2.rc0/tmp/ell_number_field.py\", line 1108:\n    sage: E.period_lattice(embs[0])\nExpected:\n    Period lattice associated to Elliptic Curve defined by y^2  = x^3 + a*x + 2 over Number Field in a with defining polynomial x^2 - 2 with respect to the real embedding Ring morphism:\n    From: Number Field in a with defining polynomial x^2 - 2\n    To:   Real Field with 53 bits of precision\n    Defn: a |--> -1.41421356237310\nGot:\n    Period lattice associated to Elliptic Curve defined by y^2  = x^3 + a*x + 2 over Number Field in a with defining polynomial x^2 - 2 with respect to the real embedding Ring morphism:\n      From: Number Field in a with defining polynomial x^2 - 2\n      To:   Real Field with 53 bits of precision\n      Defn: a |--> -1.41421356237309\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.2.rc0/tmp/ell_number_field.py\", line 1113:\n    sage: E.period_lattice(embs[1])\nExpected:\n    Period lattice associated to Elliptic Curve defined by y^2  = x^3 + a*x + 2 over Number Field in a with defining polynomial x^2 - 2 with respect to the real embedding Ring morphism:\n    From: Number Field in a with defining polynomial x^2 - 2\n    To:   Real Field with 53 bits of precision\n    Defn: a |--> 1.41421356237309\nGot:\n    Period lattice associated to Elliptic Curve defined by y^2  = x^3 + a*x + 2 over Number Field in a with defining polynomial x^2 - 2 with respect to the real embedding Ring morphism:\n      From: Number Field in a with defining polynomial x^2 - 2\n      To:   Real Field with 53 bits of precision\n      Defn: a |--> 1.41421356237310\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4082\n\n",
+    "closed_at": "2008-09-09T02:03:33Z",
     "created_at": "2008-09-09T01:53:21Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Sage 3.1.2.rc0: numerical noise on OSX/Intel in schemes/elliptic_curves/ell_number_field.py",
+    "title": "[with patch, positive review] Sage 3.1.2.rc0: numerical noise on OSX/Intel in schemes/elliptic_curves/ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4082",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

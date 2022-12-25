@@ -1,21 +1,22 @@
-# Issue 5878: Add support for constructing irreducible matrix representations of the symmetric group
+# Issue 5878: [with patch; positive review] Add support for constructing irreducible matrix representations of the symmetric group
 
 archive/issues_005878.json:
 ```json
 {
-    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\nIt would be great to be able to construct the matrices for the irreducible representations of the symmetric group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5878\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\nIt would be great to be able to construct the matrices for the irreducible representations of the symmetric group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5878\n\n",
+    "closed_at": "2009-06-24T09:58:04Z",
     "created_at": "2009-04-23T16:57:53Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Add support for constructing irreducible matrix representations of the symmetric group",
+    "title": "[with patch; positive review] Add support for constructing irreducible matrix representations of the symmetric group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5878",
     "user": "https://github.com/saliola"
 }
 ```
-Assignee: @saliola
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

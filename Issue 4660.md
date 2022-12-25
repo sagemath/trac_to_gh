@@ -1,16 +1,17 @@
-# Issue 4660: mark  inline fortran and inline cython examples optional
+# Issue 4660: [with patch; positive review] mark  inline fortran and inline cython examples optional
 
 archive/issues_004660.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince gcc and fortran compilers are both optional to run sage, mark doctests that use them \n\n```\n  # optional -- gcc\n```\nand\n\n```\n  # optional -- fortran\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4660\n\n",
+    "closed_at": "2008-11-30T08:24:01Z",
     "created_at": "2008-11-30T07:54:45Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "mark  inline fortran and inline cython examples optional",
+    "title": "[with patch; positive review] mark  inline fortran and inline cython examples optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4660",
     "user": "https://github.com/williamstein"

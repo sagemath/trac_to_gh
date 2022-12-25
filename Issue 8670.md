@@ -3,7 +3,8 @@
 archive/issues_008670.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse @videlec @robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.\n\nThe first 1000 points of the Rauzy fractal :\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\n\nSee more examples in doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse @videlec @robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 2 functions to `WordMorphism` and 2 matrix rotation functions to `sage/matrix/constructor.py`.\n\nThe first 1000 points of the Rauzy fractal :\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\nSee more examples in doctests.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
+    "closed_at": "2011-03-17T19:22:34Z",
     "created_at": "2010-04-11T12:10:06Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +22,7 @@ CC:  abmasse @videlec @robertwb tjolivet tmonteil
 
 Nice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).
 
-This patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.
+This patch introduces 3 projection functions for word path. It also adds 2 functions to `WordMorphism` and 2 matrix rotation functions to `sage/matrix/constructor.py`.
 
 The first 1000 points of the Rauzy fractal :
 
@@ -33,8 +34,8 @@ The first 1000 points of the Rauzy fractal :
     sage: w = P(D[:1000])
     sage: w.projected_plot(v)
 ```
-
 See more examples in doctests.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8670
 

@@ -1,16 +1,17 @@
-# Issue 5767: Bring coverage of plot3d/base.pyx up to 100%
+# Issue 5767: [with patch; positive review] Bring coverage of plot3d/base.pyx up to 87%
 
 archive/issues_005767.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jasongrout wcauchois\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5767\n\n",
+    "closed_at": "2009-05-07T07:36:07Z",
     "created_at": "2009-04-12T00:00:11Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring coverage of plot3d/base.pyx up to 100%",
+    "title": "[with patch; positive review] Bring coverage of plot3d/base.pyx up to 87%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5767",
     "user": "https://github.com/robertwb"

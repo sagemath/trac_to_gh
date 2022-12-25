@@ -4,6 +4,7 @@ archive/issues_009146.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe fix involves copying over $SAGE_LOCAL/bin/cygpng12-0.dll to $SAGE_LOCAL/lib/\n\nIssue created by migration from https://trac.sagemath.org/ticket/9146\n\n",
+    "closed_at": "2010-06-06T00:53:14Z",
     "created_at": "2010-06-05T04:53:49Z",
     "labels": [
         "component: porting: cygwin",

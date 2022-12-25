@@ -1,16 +1,17 @@
-# Issue 7159: [with patch, needs review] Graph.merge_vertices, and a bug in edge_boundary
+# Issue 7159: Graph.merge_vertices, and a bug in edge_boundary
 
 archive/issues_007159.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch adds to the Graph class the function merge_vertices.\n\nIt is a very common operation in Graph Theory. In a Graph G, one merges two vertices u and v by deleting them and adding a new vertex, which is linked to any other vertex w such that there was an edge uw or vw in G. This can be done with any number of vertices at a time.\n\nBesides, writing this class I noticed there was an error in function edge_boundary :\n\nthe function Graph.edge_boundary([u,v]) returns a list of edges, BUT :\n* the edges returned do not always contain u or v as their first element. it can be the second one in undirected graphs\n* The edges between u and v are returned, which is not the expected behaviour of this function\n\nThis patch fixes this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7159\n\n",
+    "closed_at": "2009-11-02T04:32:55Z",
     "created_at": "2009-10-08T17:17:02Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] Graph.merge_vertices, and a bug in edge_boundary",
+    "title": "Graph.merge_vertices, and a bug in edge_boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7159",
     "user": "https://github.com/nathanncohen"

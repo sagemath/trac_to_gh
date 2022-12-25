@@ -3,7 +3,8 @@
 archive/issues_007754.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  @dwbump\n\nKeywords: Weyl groups\n\n- faster hash method calling the hash of the underlying matrix\n   (which is set as immutable for that purpose)\n  - new __eq__ method\n  - action on the weight lattice realization:\n   optimization of the matrix multiplication\n\nIssue created by migration from https://trac.sagemath.org/ticket/7754\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @dwbump\n\nKeywords: Weyl groups\n\n- faster hash method calling the hash of the underlying matrix\n  (which is set as immutable for that purpose)\n- new __eq__ method\n- action on the weight lattice realization:\n  optimization of the matrix multiplication\n\nDepends (trivially) on #7753\n\nThis indirectly improve most Weyl group routines:\n\nWithout the patch:\n\n```\nsage: W = WeylGroup([\"F\",4])\nsage: W.cardinality()\n1152\nsage: time l=list(W)\nCPU times: user 12.14 s, sys: 0.06 s, total: 12.20 s Wall time: 12.20 s\n\nsage: W = WeylGroup([\"E\",8])\nsage: time w0 = W.long_element()\nCPU times: user 1.71 s, sys: 0.01 s, total: 1.72 s Wall time: 1.72 s\n```\n\nWith the patch:\n\n```\nsage: W = WeylGroup([\"F\",4])\nsage: W.cardinality()\n1152\nsage: time l=list(W)\nCPU times: user 7.96 s, sys: 0.04 s, total: 8.00 s Wall time: 8.01 s\n\nsage: W = WeylGroup([\"E\",8])\nsage: time w0 = W.long_element()\nCPU times: user 1.40 s, sys: 0.00 s, total: 1.41 s Wall time: 1.42 s\n```\n\nHonestly, this is still ridiculously slow; luckily there still is much room left for improvements by improved caching and optimizations of the underlying tools (CombinatorialFreeModules, ...).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7754\n\n",
+    "closed_at": "2010-01-03T21:45:14Z",
     "created_at": "2009-12-23T23:13:29Z",
     "labels": [
         "component: combinatorics"
@@ -22,10 +23,44 @@ CC:  @dwbump
 Keywords: Weyl groups
 
 - faster hash method calling the hash of the underlying matrix
-   (which is set as immutable for that purpose)
-  - new __eq__ method
-  - action on the weight lattice realization:
-   optimization of the matrix multiplication
+  (which is set as immutable for that purpose)
+- new __eq__ method
+- action on the weight lattice realization:
+  optimization of the matrix multiplication
+
+Depends (trivially) on #7753
+
+This indirectly improve most Weyl group routines:
+
+Without the patch:
+
+```
+sage: W = WeylGroup(["F",4])
+sage: W.cardinality()
+1152
+sage: time l=list(W)
+CPU times: user 12.14 s, sys: 0.06 s, total: 12.20 s Wall time: 12.20 s
+
+sage: W = WeylGroup(["E",8])
+sage: time w0 = W.long_element()
+CPU times: user 1.71 s, sys: 0.01 s, total: 1.72 s Wall time: 1.72 s
+```
+
+With the patch:
+
+```
+sage: W = WeylGroup(["F",4])
+sage: W.cardinality()
+1152
+sage: time l=list(W)
+CPU times: user 7.96 s, sys: 0.04 s, total: 8.00 s Wall time: 8.01 s
+
+sage: W = WeylGroup(["E",8])
+sage: time w0 = W.long_element()
+CPU times: user 1.40 s, sys: 0.00 s, total: 1.41 s Wall time: 1.42 s
+```
+
+Honestly, this is still ridiculously slow; luckily there still is much room left for improvements by improved caching and optimizations of the underlying tools (CombinatorialFreeModules, ...).
 
 Issue created by migration from https://trac.sagemath.org/ticket/7754
 

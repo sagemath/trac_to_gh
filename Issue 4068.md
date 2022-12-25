@@ -1,15 +1,16 @@
-# Issue 4068: determinants for matrices over multivariate polynomial rings slow
+# Issue 4068: [with patch, positive review] determinants for matrices over multivariate polynomial rings slow
 
 archive/issues_004068.json:
 ```json
 {
     "body": "Assignee: @malb\n\nphil <fongpwf__AT__gmail.com> wrote on [sage-devel]\n> I have a matrix that is composed of multivariant polynomial\n> entries.  I want to compute its determinant.  The problem is that it\n> is very slow or runs out of memory.  For example,\n> R.<x,y> = QQ[]\n> C = random_matrix(R,10,10)\n> Cdet = C.determinant()   # this line takes a long time\n\n\nIf you have more variables, it will run out of memory instead (on a 32\nbit installation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4068\n\n",
+    "closed_at": "2008-09-06T00:07:43Z",
     "created_at": "2008-09-05T17:16:22Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "determinants for matrices over multivariate polynomial rings slow",
+    "title": "[with patch, positive review] determinants for matrices over multivariate polynomial rings slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4068",
     "user": "https://github.com/malb"

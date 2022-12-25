@@ -1,16 +1,17 @@
-# Issue 5538: Family does not copy it's input.
+# Issue 5538: [with patch; postiive review] Family does copy its input + various improvement.
 
 archive/issues_005538.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Family, mutable input\n\nWhen family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. \n\n```\nsage: d = {1:\"a\", 3:\"b\", 4:\"c\"}\nsage: f = Family(d)\nsage: f\nFinite family {1: 'a', 3: 'b', 4: 'c'}\nsage: d.\nsage: d[2] = 'DD'\nsage: d\n{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\nsage: f\nFinite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\n```\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5538\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Family, mutable input\n\nWhen family got a dictionary it does not copy it's input so that one can modify it. Before the patch we had the following wrong behavior: \n\n```\nsage: d = {1:\"a\", 3:\"b\", 4:\"c\"}\nsage: f = Family(d); f\nFinite family {1: 'a', 3: 'b', 4: 'c'}\nsage: d[2] = 'DD'\nsage: f\nFinite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\n```\nThis is now corrected. \n\nThe second improvement is that list, and tuple can now be transformed to family indexed by `0..n` with the class TrivialFamily; \n\nThe third improvement is that FiniteCombinatorialClass is now fully compatible with family.\n\nA Fourth improvement is that for lazy family the pickling of the  function or the attrcall is done as far as possible. And example of a case where it is not possible to work has been added.   \n\nFinally since family has noting to do with combinatorics, I moved this to the more sensible sage.set.  \n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5538\n\n",
+    "closed_at": "2009-04-15T22:22:15Z",
     "created_at": "2009-03-16T23:43:12Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Family does not copy it's input.",
+    "title": "[with patch; postiive review] Family does copy its input + various improvement.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5538",
     "user": "https://github.com/hivert"
@@ -22,22 +23,28 @@ CC:  sage-combinat
 
 Keywords: Family, mutable input
 
-When family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. 
+When family got a dictionary it does not copy it's input so that one can modify it. Before the patch we had the following wrong behavior: 
 
 ```
 sage: d = {1:"a", 3:"b", 4:"c"}
-sage: f = Family(d)
-sage: f
+sage: f = Family(d); f
 Finite family {1: 'a', 3: 'b', 4: 'c'}
-sage: d.
 sage: d[2] = 'DD'
-sage: d
-{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}
 sage: f
 Finite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}
 ```
+This is now corrected. 
 
-Florent
+The second improvement is that list, and tuple can now be transformed to family indexed by `0..n` with the class TrivialFamily; 
+
+The third improvement is that FiniteCombinatorialClass is now fully compatible with family.
+
+A Fourth improvement is that for lazy family the pickling of the  function or the attrcall is done as far as possible. And example of a case where it is not possible to work has been added.   
+
+Finally since family has noting to do with combinatorics, I moved this to the more sensible sage.set.  
+
+Author: Florent Hivert
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5538
 

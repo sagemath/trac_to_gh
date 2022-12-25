@@ -3,7 +3,8 @@
 archive/issues_008160.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @qed777\n\nThis patch adds a 'text' option to sphinxify: use `sphinxify(s, format='text')` or `sphinxify(s, format='html')`, where format is optional with default value 'html'.  The intended use is in sage.misc.sagedoc for producing docstrings from the command line.  I'll create another ticket for that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8160\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @qed777\n\nThis patch adds a 'text' option to sphinxify: use `sphinxify(s, format='text')` or `sphinxify(s, format='html')`, where format is optional with default value 'html'.  The intended use is in sage.misc.sagedoc for producing docstrings from the command line.  I'll create another ticket (#8161) for that.\n\nDepends on #8102.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8160\n\n",
+    "closed_at": "2010-02-05T00:37:35Z",
     "created_at": "2010-02-03T02:20:23Z",
     "labels": [
         "component: notebook",
@@ -20,7 +21,12 @@ Assignee: @williamstein
 
 CC:  @qed777
 
-This patch adds a 'text' option to sphinxify: use `sphinxify(s, format='text')` or `sphinxify(s, format='html')`, where format is optional with default value 'html'.  The intended use is in sage.misc.sagedoc for producing docstrings from the command line.  I'll create another ticket for that.
+This patch adds a 'text' option to sphinxify: use `sphinxify(s, format='text')` or `sphinxify(s, format='html')`, where format is optional with default value 'html'.  The intended use is in sage.misc.sagedoc for producing docstrings from the command line.  I'll create another ticket (#8161) for that.
+
+Depends on #8102.
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8160
 

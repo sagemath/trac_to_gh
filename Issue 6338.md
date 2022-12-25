@@ -1,26 +1,36 @@
-# Issue 6338: make sage -sdist and -bdist take an existing tag name and verify that the tag name is valid
+# Issue 6338: Support sage --sdist sage-VERSION
 
 archive/issues_006338.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIt's annoying that one has to hg tag --remove VERSION by hand in a bunch of repos if one wants to rebundle a release.\n\nAlso, sage -sdist sage-VERSION instead of sage -sdist VERSION causes problems.  Check for this and raise an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6338\n\n",
+    "body": "Assignee: @nexttime\n\n```\nsage --sdist sage-VERSION\n```\ninstead of\n\n```\nsage --sdist VERSION\n```\ncauses problems.\n\n**Apply** [attachment:6338_sagedist.patch] to the SCRIPTS repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6338\n\n",
+    "closed_at": "2012-05-23T21:30:58Z",
     "created_at": "2009-06-16T19:00:05Z",
     "labels": [
-        "component: distribution",
+        "component: scripts",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
-    "title": "make sage -sdist and -bdist take an existing tag name and verify that the tag name is valid",
+    "title": "Support sage --sdist sage-VERSION",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6338",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: tbd
+Assignee: @nexttime
 
-It's annoying that one has to hg tag --remove VERSION by hand in a bunch of repos if one wants to rebundle a release.
+```
+sage --sdist sage-VERSION
+```
+instead of
 
-Also, sage -sdist sage-VERSION instead of sage -sdist VERSION causes problems.  Check for this and raise an error.
+```
+sage --sdist VERSION
+```
+causes problems.
+
+**Apply** [attachment:6338_sagedist.patch] to the SCRIPTS repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6338
 

@@ -1,15 +1,16 @@
-# Issue 5222: wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ
+# Issue 5222: [with patch, positive review] wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ
 
 archive/issues_005222.json:
 ```json
 {
     "body": "Assignee: somebody\n\nFlint has a super-fast pseudo-division algorithm over ZZ, but Sage doesn't yet wrap it.  The point of this ticket is to wrap it.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5222\n\n",
+    "closed_at": "2009-02-10T07:17:31Z",
     "created_at": "2009-02-09T19:05:18Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ",
+    "title": "[with patch, positive review] wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5222",
     "user": "https://github.com/williamstein"

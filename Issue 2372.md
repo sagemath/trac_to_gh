@@ -1,9 +1,10 @@
-# Issue 2372: [with patch, needs review] speedup to matrix_from_rows_and_columns
+# Issue 2372: [with patch; positive review] speedup to matrix_from_rows_and_columns
 
 archive/issues_002372.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\nWe make `matrix_from_rows_and_columns` a little faster by using well-known pyrex tricks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2372\n\n",
+    "closed_at": "2008-03-16T00:01:58Z",
     "created_at": "2008-03-03T05:32:28Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_002372.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] speedup to matrix_from_rows_and_columns",
+    "title": "[with patch; positive review] speedup to matrix_from_rows_and_columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2372",
     "user": "https://github.com/dfdeshom"

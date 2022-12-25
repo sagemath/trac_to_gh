@@ -1,16 +1,17 @@
-# Issue 6277: sage -tp a.py a.py will test a.py twice
+# Issue 6277: sage -tp 2 a.py a.py will test a.py twice
 
 archive/issues_006277.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI think this is a bug, but maybe not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6277\n\n",
+    "closed_at": "2009-06-14T09:54:25Z",
     "created_at": "2009-06-13T19:45:17Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "sage -tp a.py a.py will test a.py twice",
+    "title": "sage -tp 2 a.py a.py will test a.py twice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6277",
     "user": "https://github.com/ncalexan"

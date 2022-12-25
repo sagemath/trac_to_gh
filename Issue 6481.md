@@ -4,6 +4,7 @@ archive/issues_006481.json:
 ```json
 {
     "body": "Assignee: @malb\n\nreported by Kwankyu on [sage-support]:\n\n```\nI mean the substitution y:x*y is applied first in the following\n\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\nwhere I think applying x:x+1 first seems intuitive if order ever\nshould be significant.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6481\n\n",
+    "closed_at": "2009-09-09T20:13:29Z",
     "created_at": "2009-07-08T12:58:14Z",
     "labels": [
         "component: commutative algebra",

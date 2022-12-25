@@ -1,16 +1,17 @@
-# Issue 3094: [with patch; needs review] Update to SAGE Debian packaging
+# Issue 3094: [with patch; positive review] Update to SAGE Debian packaging
 
 archive/issues_003094.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThe attached patch updates the SAGE dist/debian/ from the extcode repository to work with polybori and zn_poly as separate packages, include a missing cddlib dependency, set SAGE_TESTDIR in the wrapper script, and various other minor fixes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3094\n\n",
+    "closed_at": "2008-05-03T14:58:24Z",
     "created_at": "2008-05-03T08:28:33Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Update to SAGE Debian packaging",
+    "title": "[with patch; positive review] Update to SAGE Debian packaging",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3094",
     "user": "https://github.com/timabbott"

@@ -3,7 +3,8 @@
 archive/issues_009718.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri @nexttime\n\nUsing the host 'fulvia'\n\n* Dell Optiplex 755\n* 2.4 GHz Quad-Core Intel Core Q6600 \n* 8 GB RAM\n* Solaris 10 x86 (update 5, 5/08)\n* gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. \n* 64-bit build. \n\niconv failed to build. See the attached log file. \n\nAn identical issue was seen on disk.math using OpenSolaris, but I assumed that was because the tool set was rather old on disk.math - see #9405.\n\nI've built iconv both 32-bit and 64-bit on several machines OK.\n\n|            |      |             |            |       |        |          |         |\n|------------|------|-------------|------------|-------|--------|----------|---------|\n|**Hardware**|**OS**|**Processor**|**hostname**|**gcc**|**Bits**|**Result**|**Notes**|\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|32-bit|OK||\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|64-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|32-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|64-bit|OK||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|32-bit|??||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|64-bit|**Fail**|#9405, but old tools|\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|32-bit|OK||\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|64-bit|**Fail**|This ticket|\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|32-bit|OK||\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|64-bit|OK||\nWith only two failures, it's to sure of any pattern, though so far. \n\n* iconv has only failed to build on x86 processors. Always OK on SPARC.\n* iconv has only failed on 64-bit builds.\n* iconv seems to failed on older versions of Solaris/OpenSolaris and not the more recent versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9718\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri @nexttime\n\nUsing the host 'fulvia'\n\n* Dell Optiplex 755\n* 2.4 GHz Quad-Core Intel Core Q6600 \n* 8 GB RAM\n* Solaris 10 x86 (update 5, 5/08)\n* gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. \n* 64-bit build. \n\niconv failed to build. See the attached log file. \n\nAn identical issue was seen on disk.math using OpenSolaris, but I assumed that was because the tool set was rather old on disk.math - see #9405.\n\nI've built iconv both 32-bit and 64-bit on several machines OK.\n\n|            |      |             |            |       |        |          |         |\n|------------|------|-------------|------------|-------|--------|----------|---------|\n|**Hardware**|**OS**|**Processor**|**hostname**|**gcc**|**Bits**|**Result**|**Notes**|\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|32-bit|OK||\n|Sun T5240|Solaris 10 update 7 05/2009|SPARC|t2.math|4.4.1|64-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|32-bit|OK||\n|Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|64-bit|OK||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|32-bit|??||\n|Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|64-bit|**Fail**|#9405, but old tools|\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|32-bit|OK||\n|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|64-bit|**Fail**|This ticket|\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|32-bit|OK||\n|Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|64-bit|OK||\nWith only two failures, it's difficult to be sure of any patterns, though so far: \n\n* iconv has only failed to build on x86 processors. It always works fine on SPARC processors. \n* iconv has only failed on 64-bit builds. So far, the few 32-bit builds have taken place on x86 hardware have all been ok. \n* iconv seems to failed on older versions of Solaris/OpenSolaris and not the more recent versions. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9718\n\n",
+    "closed_at": "2020-06-26T18:50:25Z",
     "created_at": "2010-08-10T14:28:27Z",
     "labels": [
         "component: porting: solaris",
@@ -48,11 +49,13 @@ I've built iconv both 32-bit and 64-bit on several machines OK.
 |Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|64-bit|**Fail**|This ticket|
 |Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|32-bit|OK||
 |Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|64-bit|OK||
-With only two failures, it's to sure of any pattern, though so far. 
+With only two failures, it's difficult to be sure of any patterns, though so far: 
 
-* iconv has only failed to build on x86 processors. Always OK on SPARC.
-* iconv has only failed on 64-bit builds.
-* iconv seems to failed on older versions of Solaris/OpenSolaris and not the more recent versions.
+* iconv has only failed to build on x86 processors. It always works fine on SPARC processors. 
+* iconv has only failed on 64-bit builds. So far, the few 32-bit builds have taken place on x86 hardware have all been ok. 
+* iconv seems to failed on older versions of Solaris/OpenSolaris and not the more recent versions. 
+
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9718
 

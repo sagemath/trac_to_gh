@@ -1,9 +1,10 @@
-# Issue 6257: Minor plot doc issues
+# Issue 6257: [with patch, positive review] Minor plot doc issues
 
 archive/issues_006257.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe opening section for plot/plot.py (which shows up in the reference manual) does not include some of the plot commands.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6257\n\n",
+    "closed_at": "2009-06-13T21:28:16Z",
     "created_at": "2009-06-10T13:34:54Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006257.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Minor plot doc issues",
+    "title": "[with patch, positive review] Minor plot doc issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6257",
     "user": "https://github.com/kcrisman"

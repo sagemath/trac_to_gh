@@ -4,6 +4,7 @@ archive/issues_001347.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt would be nice to display the path to the sage_notebook directory when we start up the notebook server so that people can easily see where the notebooks are being saved.  I think it would be nice either inside the starred box listing the URL or right under that box.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1347\n\n",
+    "closed_at": "2007-12-02T05:18:54Z",
     "created_at": "2007-12-01T07:11:22Z",
     "labels": [
         "component: notebook",

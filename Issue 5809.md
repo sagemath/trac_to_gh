@@ -1,16 +1,17 @@
-# Issue 5809: schemes/generic/hypersurface.py is completely broken
+# Issue 5809: [with patch, positive review] schemes/generic/hypersurface.py is completely broken
 
 archive/issues_005809.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: hypersurface\n\nThe file has zero doctests, imports nonexisting classes and looks like it's never been used.\n\nI'm attaching a patch that implements only the basic constructors and properties of projective and affine hypersurfaces, with 100% doctest coverage (of course :)\n\nI plan to add some more interesting functionality later, but this is a start.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5809\n\n",
+    "closed_at": "2009-04-23T06:47:58Z",
     "created_at": "2009-04-17T10:44:25Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "schemes/generic/hypersurface.py is completely broken",
+    "title": "[with patch, positive review] schemes/generic/hypersurface.py is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5809",
     "user": "https://github.com/aghitza"

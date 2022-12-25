@@ -1,15 +1,16 @@
-# Issue 3835: Make an algebraic closure function
+# Issue 3835: [with patch, positive review] Make an algebraic closure function
 
 archive/issues_003835.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @ncalexan\n\nIt would be nice to be able to construct the algebraic closure of an object.  For example, QQ.algebraic_closure() should return QQbar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3835\n\n",
+    "body": "Assignee: tbd\n\nCC:  @ncalexan\n\nKeywords: fields\n\nIt would be nice to be able to construct the algebraic closure of an object.  For example, QQ.algebraic_closure() should return QQbar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3835\n\n",
+    "closed_at": "2009-09-08T10:17:08Z",
     "created_at": "2008-08-13T15:03:21Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Make an algebraic closure function",
+    "title": "[with patch, positive review] Make an algebraic closure function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3835",
     "user": "https://github.com/jasongrout"
@@ -18,6 +19,8 @@ archive/issues_003835.json:
 Assignee: tbd
 
 CC:  @ncalexan
+
+Keywords: fields
 
 It would be nice to be able to construct the algebraic closure of an object.  For example, QQ.algebraic_closure() should return QQbar.
 

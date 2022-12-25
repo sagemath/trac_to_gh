@@ -4,6 +4,7 @@ archive/issues_008368.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman wcauchois @robert-marik\n\nThis patch adds the option of creating a color bar on a filled contour plot.  See the doctests in the patch for examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8368\n\n",
+    "closed_at": "2010-04-23T17:11:16Z",
     "created_at": "2010-02-25T19:15:12Z",
     "labels": [
         "component: graphics"

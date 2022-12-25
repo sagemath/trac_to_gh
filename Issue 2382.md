@@ -1,9 +1,10 @@
-# Issue 2382: sage-doctest broken by removal of temp files
+# Issue 2382: [with patch, positive review]sage-doctest broken by removal of temp files
 
 archive/issues_002382.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThe removal of temporary files from sage-doctest causes mysterious errors to occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/2382\n\n",
+    "closed_at": "2008-03-04T23:51:48Z",
     "created_at": "2008-03-04T06:25:47Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_002382.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "sage-doctest broken by removal of temp files",
+    "title": "[with patch, positive review]sage-doctest broken by removal of temp files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2382",
     "user": "https://github.com/garyfurnish"

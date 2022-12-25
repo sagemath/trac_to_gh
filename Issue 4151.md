@@ -1,15 +1,16 @@
-# Issue 4151: [with patch, needs review] implementation of Dickman's function
+# Issue 4151: [with patch, with positive review] implementation of Dickman's function
 
 archive/issues_004151.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee \n\nhttp://en.wikipedia.org/wiki/Dickman-de_Bruijn_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/4151\n\n",
+    "closed_at": "2008-09-23T22:07:06Z",
     "created_at": "2008-09-19T09:45:59Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] implementation of Dickman's function",
+    "title": "[with patch, with positive review] implementation of Dickman's function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4151",
     "user": "https://github.com/robertwb"

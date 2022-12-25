@@ -4,6 +4,7 @@ archive/issues_007289.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nTHe multiway cut is a NP-complete problem which could be solved using Linear Programming, or a more efficient algorithm if possible.\n\nhttp://www.d.kth.se/~viggo/wwwcompendium/node92.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7289\n\n",
+    "closed_at": "2010-06-29T16:42:27Z",
     "created_at": "2009-10-25T09:16:07Z",
     "labels": [
         "component: graph theory"

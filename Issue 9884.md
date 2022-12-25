@@ -4,6 +4,7 @@ archive/issues_009884.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\nThis is not:\n\n```\nsage: timeit(\"z = Integer(u)\")\n625 loops, best of 3: 1.27 \u00b5s per loop\n```\n\nWhy is this so much slower? Or how is the user supposed to know which one to use?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9885\n\n",
+    "closed_at": "2014-05-06T22:02:49Z",
     "created_at": "2010-09-09T16:05:47Z",
     "labels": [
         "component: performance",

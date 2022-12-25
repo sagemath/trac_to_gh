@@ -4,6 +4,7 @@ archive/issues_009482.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @kcrisman\n\nWhen you construct an implicit_plot3d that doesn't actually contain any surface, you get a `MemoryError` (because it tries to allocate 0 memory to hold the vertices and faces, gets a NULL pointer, and decides that's an out-of-memory condition).\n\nHere's one example:\n\n```\nsage: implicit_plot3d(x*x + y*y + z*z - 5000, (x, -5, 5), (y, -5, 5), (z, -5, 5))\n```\n... long traceback, ending:\n\n```\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/plot/plot3d/implicit_surface.so in sage.plot.plot3d.implicit_surface.ImplicitSurface.jmol_repr (sage/plot/plot3d/implicit_surface.c:10893)()\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/plot/plot3d/implicit_surface.so in sage.plot.plot3d.implicit_surface.ImplicitSurface.triangulate (sage/plot/plot3d/implicit_surface.c:11290)()\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.realloc (sage/plot/plot3d/index_face_set.c:3662)()\n\nMemoryError: Out of memory allocating triangulation for <type 'sage.plot.plot3d.implicit_surface.ImplicitSurface'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9482\n\n",
+    "closed_at": "2010-08-09T09:42:27Z",
     "created_at": "2010-07-12T17:07:10Z",
     "labels": [
         "component: graphics",

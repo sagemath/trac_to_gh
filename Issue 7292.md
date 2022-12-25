@@ -3,7 +3,8 @@
 archive/issues_007292.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nWith the functions from #6680, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7292\n\n",
+    "body": "Assignee: @rlmill\n\nWith the flow function from #7592, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7292\n\n",
+    "closed_at": "2010-01-13T11:39:11Z",
     "created_at": "2009-10-25T09:23:47Z",
     "labels": [
         "component: graph theory"
@@ -17,7 +18,7 @@ archive/issues_007292.json:
 ```
 Assignee: @rlmill
 
-With the functions from #6680, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.
+With the flow function from #7592, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7292
 

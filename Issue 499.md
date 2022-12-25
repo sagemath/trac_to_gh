@@ -4,6 +4,7 @@ archive/issues_000499.json:
 ```json
 {
     "body": "Assignee: somebody\n\nReported by Ted Kosan in sage-support - see http://groups.google.com/group/sage-support/t/2a46ced7d28116eb\n\n```\nx = 1/2\nx.n()\n\nException (click to the left for traceback):\n...\nAttributeError: 'sage.rings.rational.Rational' object has no attribute 'n' \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/499\n\n",
+    "closed_at": "2007-08-31T21:06:13Z",
     "created_at": "2007-08-28T17:45:59Z",
     "labels": [
         "component: basic arithmetic",

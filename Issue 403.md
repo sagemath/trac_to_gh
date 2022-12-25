@@ -4,9 +4,11 @@ archive/issues_000403.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: polymake, polytope\n\nWhen doing large enough calculations, popen3 deadlocks in the cmd method of the Polytope class.  The attached patch fixes this by using the subprocess module instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/403\n\n",
+    "closed_at": "2007-08-29T01:55:33Z",
     "created_at": "2007-07-12T11:43:48Z",
     "labels": [
         "component: interfaces",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",

@@ -1,16 +1,17 @@
-# Issue 8278: cygwin: cvxopt doesn't work at all
+# Issue 8278: cygwin: cvxopt doesn't build on cygwin/windows due to missing complex.h
 
 archive/issues_008278.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @peterjeremy\n\nUsing either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:\n\n```\nbuilding 'base' extension                                                            \ncreating build/temp.cygwin-1.7.1-i686-2.6                                                                                  \ncreating build/temp.cygwin-1.7.1-i686-2.6/C                                                                                \ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/home/wstein/build/sage-4.3.3.alpha0/local/include/python2.6 -c C/base.c -o build/temp.cygwin-1.7.1-i686-2.6/C/base.o                                                            \nIn file included from C/base.c:23:                                                                                         \nC/cvxopt.h:29:21: error: complex.h: No such file or directory                                                              \nIn file included from C/base.c:24:                                                                                         \nC/misc.h:29: error: expected specifier-qualifier-list before \u2018complex\u2019                                                     \nC/base.c:58: error: \u2018complex\u2019 undeclared here (not in a function)                                                          \nC/base.c: In function \u2018write_znum\u2019:                             \n```\n\nIDEAS:\n\n1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.\n\n2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8278\n\n",
+    "closed_at": "2011-06-20T18:55:37Z",
     "created_at": "2010-02-15T22:44:34Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cygwin: cvxopt doesn't work at all",
+    "title": "cygwin: cvxopt doesn't build on cygwin/windows due to missing complex.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8278",
     "user": "https://github.com/williamstein"

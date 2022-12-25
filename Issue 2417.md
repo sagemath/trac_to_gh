@@ -1,16 +1,17 @@
-# Issue 2417: discriminant method sometimes returns values in the fraction field
+# Issue 2417: [with simple patch, positive review] discriminant method sometimes returns values in the fraction field
 
 archive/issues_002417.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor non-monic polynomials, the discriminant method introduced in #2392 returns values in the fraction field of the base ring, instead of in the base ring.\n\n```\nsage: R.<y> = QQ[]\nsage: S.<x> = R[]\nsage: (x*y+x+y+1).discriminant()\n1\nsage: (x*y+x+y+1).discriminant().parent()\nFraction Field of Univariate Polynomial Ring in y over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2417\n\n",
+    "closed_at": "2008-03-26T22:09:33Z",
     "created_at": "2008-03-07T04:43:09Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "discriminant method sometimes returns values in the fraction field",
+    "title": "[with simple patch, positive review] discriminant method sometimes returns values in the fraction field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2417",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,22 +1,23 @@
-# Issue 4333: bernoulli_python doesn't work
+# Issue 4333: [with patch, positive review] bernoulli_python doesn't work, remove it
 
 archive/issues_004333.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: bernoulli\n\nI was considering adding doctests to sage/rings/bernoulli.py and discovered that the code has probably not been used much and is broken.  For example, bernoulli_python gives different answers starting from the 28th Bernoulli number, and returns errors for some small positive integers (such as 2 and 4).  For example:\n\n```\nq = 28\nprint bernoulli(q, algorithm='gap')   \nprint bernoulli(q, algorithm='gp')\nprint bernoulli(q, algorithm='pari')    \nprint bernoulli(q, algorithm='python')\nprint bernoulli(q, algorithm='bernmm')\n\n-23749461029/870\n-23749461029/870\n-23749461029/870\n-818946929/30\n-23749461029/870\n```\n\nIt seems like it would be easiest to delete this file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4333\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: bernoulli\n\nI was considering adding doctests to sage/rings/bernoulli.py and discovered that the code has probably not been used much and is broken.  For example, bernoulli_python gives different answers starting from the 28th Bernoulli number, and returns errors for some small positive integers (such as 2 and 4).  For example:\n\n```\nq = 28\nprint bernoulli(q, algorithm='gap')   \nprint bernoulli(q, algorithm='gp')\nprint bernoulli(q, algorithm='pari')    \nprint bernoulli(q, algorithm='python')\nprint bernoulli(q, algorithm='bernmm')\n\n-23749461029/870\n-23749461029/870\n-23749461029/870\n-818946929/30\n-23749461029/870\n```\n\nIt seems like it would be easiest to delete this file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4333\n\n",
+    "closed_at": "2008-10-26T00:49:01Z",
     "created_at": "2008-10-21T02:18:19Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "bernoulli_python doesn't work",
+    "title": "[with patch, positive review] bernoulli_python doesn't work, remove it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4333",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: @williamstein
+Assignee: mhampton
 
 Keywords: bernoulli
 

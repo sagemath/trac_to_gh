@@ -1,17 +1,18 @@
-# Issue 652: .sage files destroy existing .py files
+# Issue 652: [with patch, with positive review] .sage files destroy existing .py files
 
 archive/issues_000652.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf files a.sage and a.py exist in a directory, then \n\nsage: load a.sage\n\ndestroys the file a.py and replaces it with an automatically generated file.  Either users should be warned of this \"feature\" or something else should be done.\n\nIssue created by migration from https://trac.sagemath.org/ticket/652\n\n",
+    "closed_at": "2008-01-27T01:40:15Z",
     "created_at": "2007-09-14T04:24:51Z",
     "labels": [
         "component: interfaces",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": ".sage files destroy existing .py files",
+    "title": "[with patch, with positive review] .sage files destroy existing .py files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/652",
     "user": "https://github.com/jvoight"

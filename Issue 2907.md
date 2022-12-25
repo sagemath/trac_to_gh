@@ -4,10 +4,10 @@ archive/issues_002907.json:
 ```json
 {
     "body": "Assignee: somebody\n\nATM, there is no efficient way of getting the content of a polynomial in Sage.\n\n```\ngcd(p.list())\n```\n\nis a workaround, but this can be done much more efficiently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2907\n\n",
+    "closed_at": "2015-01-13T01:15:29Z",
     "created_at": "2008-04-13T17:46:06Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polynomials lack content method",

@@ -3,10 +3,12 @@
 archive/issues_008922.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nThis patch add to Sage the method Graph.induced_subgraph_search which looks for a given graph as an induced subgraph of \"self\".\n\nThis is done through exhaustive search, using a very basic new graph class hand-made to efficiently stand such repetitive operations !\n\nI tried to document the code so that it could be somewhat easy to review, but feel free to ask any question about it ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8922\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nThis patch add to Sage the method Graph.induced_subgraph_search which looks for a given graph as an induced subgraph of \"self\".\n\nThis is done through exhaustive search, using a very basic new graph class hand-made to efficiently stand such repetitive operations !\n\nI tried to document the code so that it could be somewhat easy to review, but feel free to ask any question about it ! :-)\n\n**Apply:**\n\n1. #7529\n2. [trac_8922.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8922/trac_8922.patch)\n3. [trac_8922-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8922/trac_8922-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8922\n\n",
+    "closed_at": "2010-06-06T07:14:21Z",
     "created_at": "2010-05-07T18:58:33Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "induced subgraph search",
@@ -23,7 +25,11 @@ This is done through exhaustive search, using a very basic new graph class hand-
 
 I tried to document the code so that it could be somewhat easy to review, but feel free to ask any question about it ! :-)
 
-Nathann
+**Apply:**
+
+1. #7529
+2. [trac_8922.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8922/trac_8922.patch)
+3. [trac_8922-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8922/trac_8922-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8922
 

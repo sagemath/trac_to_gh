@@ -1,9 +1,10 @@
-# Issue 5376: [with patch, needs review] minor problems with ReST in plot.py
+# Issue 5376: [with patch, positive review] minor problems with ReST in plot.py
 
 archive/issues_005376.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis fixes the last few issues from #4923.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5376\n\n",
+    "closed_at": "2009-02-28T16:25:52Z",
     "created_at": "2009-02-26T00:32:42Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005376.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] minor problems with ReST in plot.py",
+    "title": "[with patch, positive review] minor problems with ReST in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5376",
     "user": "https://github.com/jhpalmieri"

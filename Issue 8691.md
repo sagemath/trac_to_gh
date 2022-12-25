@@ -4,10 +4,11 @@ archive/issues_008691.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @rlmill\n\nThe implementation is already done, I just need a ticket number.\n\nMy fix for #8655 will depend on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8691\n\n",
+    "closed_at": "2010-06-05T22:04:23Z",
     "created_at": "2010-04-15T06:19:19Z",
     "labels": [
         "component: combinatorics",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Implement Plain Change algorithm in cython",

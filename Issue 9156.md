@@ -4,6 +4,7 @@ archive/issues_009156.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis is useful for consistently handling elements of ZZ, QQ, RR, and CC. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9156\n\n",
+    "closed_at": "2010-06-06T19:22:11Z",
     "created_at": "2010-06-06T08:17:05Z",
     "labels": [
         "component: basic arithmetic"

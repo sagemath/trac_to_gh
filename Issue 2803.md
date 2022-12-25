@@ -4,10 +4,10 @@ archive/issues_002803.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n----BEGIN PGP SIGNED MESSAGE-----\nHash: SHA1\n\nProfessor Stein:\nAfter registering for the sage notebook, I noticed that my confirmation\nemail was tagged as spam. looking at the headers I saw\nmath.sage.washington.edu (more accurately its IP 128.208.160.191) was\nblacklisted by XBL:\nhttp://www.spamhaus.org/xbl/\nChecking XBL, I found that the IP was included since it was included in\nanother blacklist, CBL:\nhttp://cbl.abuseat.org/lookup.cgi?ip=128.208.160.191\n\nCBL lists the server for non-RFC2821 compliant HELO host names. Checking\nthe header of the notebook registration confirmed this.\n\nReceived: from localhost.localdomain (sage.math.washington.edu\n[128.208.160.191])\nby mail.erkert.com with SMTP id 97F2E2CB077\nfor <>; Fri,  4 Apr 2008 04:37:23 -0700 (PDT)\n\nTo remove the server from the blacklists CBL&XBL, it should be a pretty\neasy fix and is discussed for numerous MTAs on:\nhttp://cbl.abuseat.org/namingproblems.html\n\n- --Nick Erkert\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2803\n\n",
+    "closed_at": "2013-06-19T12:19:52Z",
     "created_at": "2008-04-05T02:23:27Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- the confirmation email after creating a new account is marked as spam",

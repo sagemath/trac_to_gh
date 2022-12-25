@@ -1,16 +1,17 @@
-# Issue 2290: [with easy patch] typo in calculus.py
+# Issue 2290: [with patch; positive review] typo in calculus.py
 
 archive/issues_002290.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2290\n\n",
+    "closed_at": "2008-02-25T15:14:04Z",
     "created_at": "2008-02-24T09:48:13Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with easy patch] typo in calculus.py",
+    "title": "[with patch; positive review] typo in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2290",
     "user": "https://github.com/zimmermann6"

@@ -1,22 +1,23 @@
-# Issue 5269: coordinate ring of an affine patch on a hyperelliptic curve is broken
+# Issue 5269: [with patch, positive review] coordinate ring of an affine patch on a hyperelliptic curve is broken
 
 archive/issues_005269.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen taking an affine patch of a hyperelliptic curve, the defining polynomial (sometimes?) has the wrong parent:\n\n```\nsage: P.<x> = QQ[]\nsage: f = 4*x^5 - 30*x^3 + 45*x - 22\nsage: C = HyperellipticCurve(f)\nsage: D = C.affine_patch(0); D\nClosed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n  x0^2*x1^3 + 22*x1^5 - 45*x1^4 + 30*x1^2 - 4\nsage: f = D.defining_polynomials()[0]; f\nx0^2*x1^3 + 22*x1^5 - 45*x1^4 + 30*x1^2 - 4\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\nEverything is fine except the last line: the parent of f should be a multivariate polynomial ring in two variables, not three.\n\nThis might be a more generic problem and not necessarily related to hyperelliptic curves.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5269\n\n",
+    "body": "Assignee: @aghitza\n\nWhen taking an affine patch of a hyperelliptic curve, the defining polynomial (sometimes?) has the wrong parent:\n\n```\nsage: P.<x> = QQ[]\nsage: f = 4*x^5 - 30*x^3 + 45*x - 22\nsage: C = HyperellipticCurve(f)\nsage: D = C.affine_patch(0); D\nClosed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n  x0^2*x1^3 + 22*x1^5 - 45*x1^4 + 30*x1^2 - 4\nsage: f = D.defining_polynomials()[0]; f\nx0^2*x1^3 + 22*x1^5 - 45*x1^4 + 30*x1^2 - 4\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\nEverything is fine except the last line: the parent of f should be a multivariate polynomial ring in two variables, not three.\n\nThis might be a more generic problem and not necessarily related to hyperelliptic curves.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5269\n\n",
+    "closed_at": "2009-02-15T07:56:16Z",
     "created_at": "2009-02-14T11:52:33Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "coordinate ring of an affine patch on a hyperelliptic curve is broken",
+    "title": "[with patch, positive review] coordinate ring of an affine patch on a hyperelliptic curve is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5269",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 When taking an affine patch of a hyperelliptic curve, the defining polynomial (sometimes?) has the wrong parent:
 

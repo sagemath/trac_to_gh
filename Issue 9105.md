@@ -3,7 +3,8 @@
 archive/issues_009105.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-algebra\n\nKeywords: category primer\n\nThe attached patch improves the category primer and tutorial, based on feedback from Sage Days 20.\n\nThere is still much work to do, but since this patch tends to conflict with many others, let's get this in as is as a first step.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9105\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-algebra\n\nKeywords: category primer\n\nThe attached patch improves the category primer and tutorial, based on feedback from Sage Days 20.\n\nThere is still much work to do, but since this patch tends to conflict with many others, let's get this in as is as a first step.\n\nDepends on: #9056, #8881\n\nIssue created by migration from https://trac.sagemath.org/ticket/9105\n\n",
+    "closed_at": "2010-06-09T03:34:19Z",
     "created_at": "2010-05-31T16:13:56Z",
     "labels": [
         "component: categories"
@@ -24,6 +25,8 @@ Keywords: category primer
 The attached patch improves the category primer and tutorial, based on feedback from Sage Days 20.
 
 There is still much work to do, but since this patch tends to conflict with many others, let's get this in as is as a first step.
+
+Depends on: #9056, #8881
 
 Issue created by migration from https://trac.sagemath.org/ticket/9105
 

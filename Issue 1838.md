@@ -1,16 +1,17 @@
-# Issue 1838: [with patch] comma in latex lists need a trailing space
+# Issue 1838: [with patch, with preliminary review] comma in latex lists need a trailing space
 
 archive/issues_001838.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nnormally, after writing a \",\" follows a space. latex needs this explicitly as \"\\,\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/1838\n\n",
+    "closed_at": "2008-01-29T00:02:22Z",
     "created_at": "2008-01-18T21:45:02Z",
     "labels": [
         "component: misc",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch] comma in latex lists need a trailing space",
+    "title": "[with patch, with preliminary review] comma in latex lists need a trailing space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1838",
     "user": "https://github.com/haraldschilly"

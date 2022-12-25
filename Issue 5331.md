@@ -1,21 +1,22 @@
-# Issue 5331: [with patch, needs review] update sage_scripts to deal with the new documentation
+# Issue 5331: [with patch, positive review] update sage_scripts to deal with the new documentation
 
 archive/issues_005331.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5331\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5331\n\n",
+    "closed_at": "2009-02-24T19:33:49Z",
     "created_at": "2009-02-21T19:31:02Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] update sage_scripts to deal with the new documentation",
+    "title": "[with patch, positive review] update sage_scripts to deal with the new documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5331",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 
 

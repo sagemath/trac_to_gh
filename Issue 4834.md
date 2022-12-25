@@ -3,7 +3,7 @@
 archive/issues_004834.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nFrom sage-support:\n\n```\n\n> It looks like eigenvectors are returned as the basis vectors of the\n> > eigenspace.  Should they be returned as just plain old vectors instead?\n\nYes, definitely.  Then we don't have create a whole bunch of different\nvector spaces for no reason too.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4834\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @robertwb\n\nFrom sage-support:\n\n```\n\n> It looks like eigenvectors are returned as the basis vectors of the\n> > eigenspace.  Should they be returned as just plain old vectors instead?\n\nYes, definitely.  Then we don't have create a whole bunch of different\nvector spaces for no reason too.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4834\n\n",
     "created_at": "2008-12-19T22:29:12Z",
     "labels": [
         "component: linear algebra",
@@ -16,7 +16,7 @@ archive/issues_004834.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @robertwb
 

@@ -1,16 +1,17 @@
-# Issue 4350: matrix_window -- easy to segfault sage at command line
+# Issue 4350: [with patch; with positive review] matrix_window -- easy to segfault sage at command line
 
 archive/issues_004350.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee trac #4346 first and apply that patch.  \n\n2. In this patch, matrix_window does *not* do bounds checking by default.  This is because there is a bunch of internal usage of matrix_window for strassen algorithms, which actually relies on matrix_window not being bounds checked (it's ok as used by those algorithms).  However, a bunch of code would have to be changed to make bounds checking of matrix_window the default.  That said it is currently easy (even with this patch) to segfault sage interactively:\n\n```\nsage: a = matrix([1]).matrix_window(1,1,1,1)\nsage: a\n\nMatrix window of size 1 x 1 at (1,1):\n[1]\nsage: a[0,0] = 1\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4350\n\n",
+    "closed_at": "2008-10-26T02:26:04Z",
     "created_at": "2008-10-23T19:33:47Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "matrix_window -- easy to segfault sage at command line",
+    "title": "[with patch; with positive review] matrix_window -- easy to segfault sage at command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4350",
     "user": "https://github.com/williamstein"

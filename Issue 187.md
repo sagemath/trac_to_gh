@@ -4,6 +4,7 @@ archive/issues_000187.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI found a small bit of code that gets compiled incorrectly to c.  A sample is:\n\n```\ndef unlist():\n        lst = [1,2]\n        lst,m = lst\n```\n\nThe translated c-code from this will produce an Unindexable exception.  This \nresults from the fact that the variable \"lst\" is bound to the first element \nof the list (the integer 1) before the second element is extracted \nfrom \"lst\".  Hence it tries to unpack from the integer rather than the list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/187\n\n",
+    "closed_at": "2008-01-19T23:29:10Z",
     "created_at": "2006-12-19T02:32:23Z",
     "labels": [
         "component: interfaces",

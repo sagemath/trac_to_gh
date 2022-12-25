@@ -1,15 +1,16 @@
-# Issue 6519: improve the words library code
+# Issue 6519: [with patch, positive review] improve the words library code
 
 archive/issues_006519.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @seblabbe\n\nKeywords: words\n\nThe current words library in Sage needs to be improved (mainly for speed, better code organization, etc.).\n\nWe essentially got a patch ready to do this. I'll post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6519\n\n",
+    "closed_at": "2009-07-18T14:07:07Z",
     "created_at": "2009-07-12T14:33:51Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "improve the words library code",
+    "title": "[with patch, positive review] improve the words library code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6519",
     "user": "https://github.com/saliola"

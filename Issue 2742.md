@@ -1,15 +1,16 @@
-# Issue 2742: add crystals to the main branch of Sage
+# Issue 2742: [with bundle, positive review] add crystals to the main branch of Sage
 
 archive/issues_002742.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2742\n\n",
+    "closed_at": "2008-03-31T20:08:21Z",
     "created_at": "2008-03-31T19:08:04Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "add crystals to the main branch of Sage",
+    "title": "[with bundle, positive review] add crystals to the main branch of Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2742",
     "user": "https://github.com/mwhansen"

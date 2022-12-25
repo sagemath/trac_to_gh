@@ -1,16 +1,17 @@
-# Issue 8459: broken translatin of polylog from Maxima
+# Issue 8459: broken translation of polylog from Maxima
 
 archive/issues_008459.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nKeywords: symbolics\n\nMaixma's li[2](x) translates to polylog2(x) which is not defined in Sage\n\n```\nsage: maxima('li[1](x)').sage().subs(x=2).n() \n-3.14159265358979*I\nsage: maxima('li[2](x)').sage().subs(x=2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: f(x)= integrate(log(1-x^2)/x, x); f(2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\n```\n\npatch comes soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8459\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nKeywords: symbolics\n\nMaixma's li[2](x) translates to polylog2(x) which is not defined in Sage\n\n```\nsage: maxima('li[1](x)').sage().subs(x=2).n() \n-3.14159265358979*I\nsage: maxima('li[2](x)').sage().subs(x=2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: f(x)= integrate(log(1-x^2)/x, x); f(2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: maxima('li[2](x)').sage()\npolylog2(x)\nsage: polylog2?\nObject `polylog2` not found.\n\n```\n\npatch comes soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8459\n\n",
+    "closed_at": "2010-05-08T22:11:44Z",
     "created_at": "2010-03-06T21:41:27Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "broken translatin of polylog from Maxima",
+    "title": "broken translation of polylog from Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8459",
     "user": "https://github.com/robert-marik"
@@ -46,6 +47,11 @@ TypeError                                 Traceback (most recent call last)
 /opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()
 
 TypeError: cannot evaluate symbolic expresssion numerically
+
+sage: maxima('li[2](x)').sage()
+polylog2(x)
+sage: polylog2?
+Object `polylog2` not found.
 
 ```
 

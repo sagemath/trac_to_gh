@@ -1,23 +1,22 @@
-# Issue 743: graphs: simplify interface for accessing vertex objects
+# Issue 743: [with patch, with positive review] graphs: simplify interface for accessing vertex objects
 
 archive/issues_000743.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe functionality for associating any vertex of a graph with an arbitrary object is very nice.  However, it seems like the implementation could be simplified.  Can we implement an interface that does the following?\n\n* Makes it easy to assign an object to a single vertex, multiple vertices, or all vertices.  (Currently, you must assign the entire graph at once).\n\n* Makes it easy to retrieve an object associated with a vertex or multiple objects associated with multiple vertices (currently we can only retrieve one vertex at a time).\n\n* Has symmetry in the get/set functions (currently there is an \"associate\" and a \"obj\" function).\n\nIt seems that the simplest way to deal with multiple vertices is to use a dictionary, as is currently done, to associate a set of vertices with their corresponding objects.\n\nHere's an example of a possible idea:\n\n```\n  sage: g=Graph();\n  sage: g.add_vertices(10);\n  sage: g.set_vertices({0: 'vertex0', 1: 'vertex1'})\n  sage: g.set_vertex({3: 'vertex3'})\n  sage: g.set_vertex(4,'vertex4')\n  sage: g.get_vertices()\n  {0: 'vertex0', 1: 'vertex1', 3: 'vertex3', 4: 'vertex4'}\n  sage: g.get_vertex(0)\n  'vertex0'\n  sage: g.get_vertices([0,1])\n  {0: 'vertex0', 1: 'vertex1'}\n```\n\nOf course, in the above example, the strings could have been replaced with any objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/743\n\n",
+    "body": "Assignee: @rlmill\n\nThe functionality for associating any vertex of a graph with an arbitrary object is very nice.  However, it seems like the implementation could be simplified.  Can we implement an interface that does the following?\n\n* Makes it easy to assign an object to a single vertex, multiple vertices, or all vertices.  (Currently, you must assign the entire graph at once).\n\n* Makes it easy to retrieve an object associated with a vertex or multiple objects associated with multiple vertices (currently we can only retrieve one vertex at a time).\n\n* Has symmetry in the get/set functions (currently there is an \"associate\" and a \"obj\" function).\n\nIt seems that the simplest way to deal with multiple vertices is to use a dictionary, as is currently done, to associate a set of vertices with their corresponding objects.\n\nHere's an example of a possible idea:\n\n```\n  sage: g=Graph();\n  sage: g.add_vertices(10);\n  sage: g.set_vertices({0: 'vertex0', 1: 'vertex1'})\n  sage: g.set_vertex({3: 'vertex3'})\n  sage: g.set_vertex(4,'vertex4')\n  sage: g.get_vertices()\n  {0: 'vertex0', 1: 'vertex1', 3: 'vertex3', 4: 'vertex4'}\n  sage: g.get_vertex(0)\n  'vertex0'\n  sage: g.get_vertices([0,1])\n  {0: 'vertex0', 1: 'vertex1'}\n```\n\nOf course, in the above example, the strings could have been replaced with any objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/743\n\n",
+    "closed_at": "2008-01-27T04:20:08Z",
     "created_at": "2007-09-24T18:12:25Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "graphs: simplify interface for accessing vertex objects",
+    "title": "[with patch, with positive review] graphs: simplify interface for accessing vertex objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/743",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
-
-Keywords: graphs
+Assignee: @rlmill
 
 The functionality for associating any vertex of a graph with an arbitrary object is very nice.  However, it seems like the implementation could be simplified.  Can we implement an interface that does the following?
 

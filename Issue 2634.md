@@ -1,16 +1,17 @@
-# Issue 2634: (easy fix?) Unable to create certain multivariate polynomial rings since libsingular is invoked instead of generic code
+# Issue 2634: [with patches, positive review] Unable to create certain multivariate polynomial rings since libsingular is invoked instead of generic code
 
 archive/issues_002634.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nsage: k = GF(next_prime(2^31)^2,'x')\nsage: k['y,z']\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\nsage: PolynomialRing(k,2,'x,y')\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\n\nThis is caused because Sage is trying to use libsingular\nto create the poly ring, but should be using its own code\nwhen the size of the base ring is too big. \n\nMartin Albrecht will be able to fix this very easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2634\n\n",
+    "closed_at": "2008-03-24T08:35:14Z",
     "created_at": "2008-03-21T18:48:19Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "(easy fix?) Unable to create certain multivariate polynomial rings since libsingular is invoked instead of generic code",
+    "title": "[with patches, positive review] Unable to create certain multivariate polynomial rings since libsingular is invoked instead of generic code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2634",
     "user": "https://github.com/williamstein"

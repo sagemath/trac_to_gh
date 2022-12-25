@@ -1,21 +1,24 @@
-# Issue 5723: sage new symbolics/pynac misbehave when evaluating with CDF elements
+# Issue 5723: [with patch, needs work] sage new symbolics/pynac misbehave when evaluating with CDF elements
 
 archive/issues_005723.json:
 ```json
 {
-    "body": "Keywords: sage symbolics pynac evaluating n CDF\n\n```\nsage: u0 = var('u0', ns=1)\nsage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/pv139196.reshsg.uci.edu/33117/_Users_ncalexan_sage_3_4_rc0_devel_sage_sage_symbolic_test_sage_23.py in <module>()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:6498)()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_float (sage/symbolic/pynac.cpp:3959)()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:5799)()\n\nTypeError: can't convert complex to float; use abs(z)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5723\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: sage symbolics pynac evaluating n CDF\n\n```\nsage: u0 = var('u0', ns=1)\nsage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/pv139196.reshsg.uci.edu/33117/_Users_ncalexan_sage_3_4_rc0_devel_sage_sage_symbolic_test_sage_23.py in <module>()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:6498)()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_float (sage/symbolic/pynac.cpp:3959)()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:5799)()\n\nTypeError: can't convert complex to float; use abs(z)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5723\n\n",
+    "closed_at": "2009-06-05T02:49:36Z",
     "created_at": "2009-04-09T03:10:51Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage new symbolics/pynac misbehave when evaluating with CDF elements",
+    "title": "[with patch, needs work] sage new symbolics/pynac misbehave when evaluating with CDF elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5723",
     "user": "https://github.com/ncalexan"
 }
 ```
+Assignee: @burcin
+
 Keywords: sage symbolics pynac evaluating n CDF
 
 ```

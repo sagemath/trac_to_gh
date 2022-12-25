@@ -4,6 +4,7 @@ archive/issues_009931.json:
 ```json
 {
     "body": "Assignee: tbd\n\nPyWavelets is a Python wavelet transforms module that can do:\n\n* 1D and 2D Forward and Inverse Discrete Wavelet Transform (DWT and IDWT)\n* 1D and 2D Stationary Wavelet Transform (Undecimated Wavelet Transform)\n* 1D and 2D Wavelet Packet decomposition and reconstruction\n* Computing Approximations of wavelet and scaling functions\n* Over seventy built-in wavelet filters and support for custom wavelets\n* Single and double precision calculations\n* Results compatibility with Matlab Wavelet Toolbox (tm)\n\nDocumentation and links to more resources is available online\nat http://www.pybytes.com/pywavelets/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9932\n\n",
+    "closed_at": "2016-02-23T22:59:46Z",
     "created_at": "2010-09-17T10:48:37Z",
     "labels": [
         "component: packages: experimental",

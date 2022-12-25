@@ -4,6 +4,7 @@ archive/issues_008763.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @kcrisman @fchapoton\n\nAs discussed in http://groups.google.com/group/sage-edu/browse_thread/thread/aa651032bb34a285, it would be very nice if published worksheets could include licensing information, so that we could collect, modify, and redistribute excellent worksheets.\n\nSo, when publishing worksheets, there should be a mechanism to choose a license; as a start, maybe just hard-code four choices: CC by-sa-nc, by-sa, GFDL, and no licensing information at all. If a license is chosen, this would put something like this into the worksheet:\n\n```\n<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">\n<img alt=\"Creative Commons License\" style=\"border-width:0\" \nsrc=\"http://i.creativecommons.org/l/by-sa/3.0/us/80x15.png\" \n/></a><br />This worksheet is licensed under a <a rel=\"license\" \nhref=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">Creative \nCommons Attribution-Share Alike 3.0 United States License</a>.\n```\nThe rel=\"license\" bit is a microformat that will make the licensing information computer-readable, so that eventually one could search for worksheets available with a certain license.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8763\n\n",
+    "closed_at": "2020-09-13T07:27:02Z",
     "created_at": "2010-04-25T07:24:53Z",
     "labels": [
         "component: notebook"

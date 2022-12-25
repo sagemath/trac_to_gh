@@ -4,6 +4,7 @@ archive/issues_000078.json:
 ```json
 {
     "body": "Assignee: somebody\n\nTake interfaces/octave.py and modify it so it works with matlab.  There\nare a lot of extra spaces in Matlab output over octave. \n\nIssue created by migration from https://trac.sagemath.org/ticket/78\n\n",
+    "closed_at": "2007-08-24T05:23:47Z",
     "created_at": "2006-09-23T00:21:21Z",
     "labels": [
         "component: basic arithmetic"

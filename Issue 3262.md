@@ -1,16 +1,17 @@
-# Issue 3262: interact selector breaks if there are too many options
+# Issue 3262: [with patch; needs work] interact selector breaks if there are too many options
 
 archive/issues_003262.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: interact, notebook\n\nWhen the lists of values of multiple selectors are too long, the output is truncated, causing nasty bugs.  Here's an example:\n\n```\n@interact\ndef test(q1 = selector(range(100)), q2 = selector(range(1000)+['None'], default ='None'), q3 = selector(['hi']+range(1000)+['None'], default=127)):\n    show([q1,q2,q3])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3262\n\n",
+    "body": "Assignee: somebody\n\nKeywords: interact, notebook, editor_wstein\n\nWhen the lists of values of multiple selectors are too long, the output is truncated, causing nasty bugs.  Here's an example:\n\n```\n@interact\ndef test(q1 = selector(range(100)), q2 = selector(range(1000)+['None'], default ='None'), q3 = selector(['hi']+range(1000)+['None'], default=127)):\n    show([q1,q2,q3])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3262\n\n",
+    "closed_at": "2008-08-30T02:15:26Z",
     "created_at": "2008-05-20T21:07:09Z",
     "labels": [
-        "component: notebook",
+        "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "interact selector breaks if there are too many options",
+    "title": "[with patch; needs work] interact selector breaks if there are too many options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3262",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
@@ -18,7 +19,7 @@ archive/issues_003262.json:
 ```
 Assignee: somebody
 
-Keywords: interact, notebook
+Keywords: interact, notebook, editor_wstein
 
 When the lists of values of multiple selectors are too long, the output is truncated, causing nasty bugs.  Here's an example:
 

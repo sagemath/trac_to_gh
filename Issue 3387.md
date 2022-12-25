@@ -1,22 +1,23 @@
-# Issue 3387: unacceptably slow conversion of rationals from pari to Rational
+# Issue 3387: [with patch; with positive review] unacceptably slow conversion of rationals from pari to Rational
 
 archive/issues_003387.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage: x = (2^1000000 - 1) / (2^1000000)\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time z = Rational(y)\nCPU times: user 11.30 s, sys: 0.02 s, total: 11.32 s\nWall time: 11.33\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3387\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: x = (2^1000000 - 1) / (2^1000000)\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time z = Rational(y)\nCPU times: user 11.30 s, sys: 0.02 s, total: 11.32 s\nWall time: 11.33\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3387\n\n",
+    "closed_at": "2008-06-10T01:21:40Z",
     "created_at": "2008-06-09T22:19:45Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "unacceptably slow conversion of rationals from pari to Rational",
+    "title": "[with patch; with positive review] unacceptably slow conversion of rationals from pari to Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3387",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 ```
 sage: x = (2^1000000 - 1) / (2^1000000)

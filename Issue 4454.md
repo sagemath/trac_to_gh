@@ -3,11 +3,11 @@
 archive/issues_004454.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nsage 3.1.4 on a 32-bit core duo\n\nconsider a file 'time.sage' with the following content:\n\ndef func(time = 5):\n    time = RDF(time)\n    return time\n\nloading this file then yields following error:\n\nsage: load time.sage\n\n---\n   File \"/home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py\", line 7\n     __time__=misc.cputime(); __wall__=misc.walltime();  = RDF(time); print     \"Time: CPU %.2f s, Wall: %.2f s\"%(misc.cputime(__time__), misc.walltime(__wall__))\n                                                         ^\nSyntaxError: invalid syntax\n\nWARNING: Failure executing file: </home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py>\n\n\nIf one quits the space between 'time' and '=' in the second line of 'time.sage' it works as expected.\nDefining this function directly on the sage prompt also works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4454\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nsage 3.1.4 on a 32-bit core duo\n\nconsider a file 'time.sage' with the following content:\n\n```\ndef func(time = 5):\n    time = RDF(time)\n    return time\n```\nloading this file then yields following error:\n\n```\nsage: load time.sage\n------------------------------------------------------------\n   File \"/home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py\", line 7\n     __time__=misc.cputime(); __wall__=misc.walltime();  = RDF(time); print     \"Time: CPU %.2f s, Wall: %.2f s\"%(misc.cputime(__time__), misc.walltime(__wall__))\n                                                         ^\nSyntaxError: invalid syntax\n\nWARNING: Failure executing file: </home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py>\n```\n\nIf one quits the space between 'time' and '=' in the second line of 'time.sage' it works as expected.\nDefining this function directly on the sage prompt also works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4454\n\n",
+    "closed_at": "2009-06-04T23:35:27Z",
     "created_at": "2008-11-06T15:25:38Z",
     "labels": [
         "component: misc",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -25,22 +25,23 @@ sage 3.1.4 on a 32-bit core duo
 
 consider a file 'time.sage' with the following content:
 
+```
 def func(time = 5):
     time = RDF(time)
     return time
-
+```
 loading this file then yields following error:
 
+```
 sage: load time.sage
-
----
+------------------------------------------------------------
    File "/home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py", line 7
      __time__=misc.cputime(); __wall__=misc.walltime();  = RDF(time); print     "Time: CPU %.2f s, Wall: %.2f s"%(misc.cputime(__time__), misc.walltime(__wall__))
                                                          ^
 SyntaxError: invalid syntax
 
 WARNING: Failure executing file: </home/georg/.sage/temp/HILBERT/4119/_home_georg_Daten_Sync_Software_Sage_Experimente_time_time_sage_0.py>
-
+```
 
 If one quits the space between 'time' and '=' in the second line of 'time.sage' it works as expected.
 Defining this function directly on the sage prompt also works as expected.

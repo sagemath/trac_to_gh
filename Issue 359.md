@@ -4,6 +4,7 @@ archive/issues_000359.json:
 ```json
 {
     "body": "Assignee: Robert Miller\n\nCC:  acleone\n\nSee, e.g., \n  http://www.walterzorn.com/jsgraphics/jsgraphics_e.htm\n\nIssue created by migration from https://trac.sagemath.org/ticket/359\n\n",
+    "closed_at": "2010-03-29T21:14:20Z",
     "created_at": "2007-04-26T05:15:16Z",
     "labels": [
         "component: notebook",

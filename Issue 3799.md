@@ -1,16 +1,17 @@
-# Issue 3799: degree sequence should not be a single integer in graph_database
+# Issue 3799: [with patch, positive review] degree sequence should not be a single integer in graph_database
 
 archive/issues_003799.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThis is part of Jason Grout's formatting of his database, but it should be translated to and from a sequence of integers for the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3799\n\n",
+    "closed_at": "2008-09-29T23:29:05Z",
     "created_at": "2008-08-10T10:04:30Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "degree sequence should not be a single integer in graph_database",
+    "title": "[with patch, positive review] degree sequence should not be a single integer in graph_database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3799",
     "user": "https://github.com/rlmill"

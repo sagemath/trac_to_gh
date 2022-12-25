@@ -1,16 +1,17 @@
-# Issue 1694: Update FLINT to 1.04 release
+# Issue 1694: [with spkg] Update FLINT to 1.05 release
 
 archive/issues_001694.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nTo quote Bill Hart:\n\n```\nHi Michael,\n\nI see you are the release manager for the next release of SAGE and\nthat updating spkg's is a priority.\n\nThere are a handful of bug fixes in FLINT 1.0.4 which should probably\nmake their way into SAGE. Some of the fixes repair bugs which affected\ntest code on some 32 bit machines, though the bugs are actually in the\ntest code itself.\n\nThe other bug fixes are in code that doesn't affect SAGE at all, since\nit is not used by SAGE. So this is not an urgent update, but something\nwhich should be done eventually I guess.\n\nBill\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1694\n\n",
+    "closed_at": "2008-01-08T01:28:19Z",
     "created_at": "2008-01-05T20:47:42Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Update FLINT to 1.04 release",
+    "title": "[with spkg] Update FLINT to 1.05 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1694",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,9 +1,10 @@
-# Issue 5703: [with patch; needs review] notebook -- fix major bug introduced by #5687
+# Issue 5703: [with patch; positive review] notebook -- fix major bug introduced by #5687
 
 archive/issues_005703.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5703\n\n",
+    "closed_at": "2009-04-09T01:48:47Z",
     "created_at": "2009-04-07T04:54:54Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005703.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] notebook -- fix major bug introduced by #5687",
+    "title": "[with patch; positive review] notebook -- fix major bug introduced by #5687",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5703",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_001950.json:
 ```json
 {
     "body": "Assignee: boothby\n\nSuggested by Bill Purvis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1950\n\n",
+    "closed_at": "2008-04-21T14:23:41Z",
     "created_at": "2008-01-27T20:27:56Z",
     "labels": [
         "component: notebook",

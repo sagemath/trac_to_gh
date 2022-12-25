@@ -3,11 +3,12 @@
 archive/issues_005100.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jasongrout @mwhansen @williamstein\n\nKeywords: trash, safari\n\nWith Safari on an Intel iMac, sage 3.3.alpha1:\n\nFrom the notebook interface, if I select \"Trash\" to get the list of deleted worksheets, then clicking \"Empty trash\" doesn't actually empty the trash.  It sends me back to the list of active worksheets, but if I click on \"Trash\" again, I see the same list of deleted worksheets.\n\nWith Firefox on the same iMac, emptying the trash works just fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5100\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout @mwhansen @williamstein\n\nKeywords: trash, safari\n\nWith Safari on an Intel iMac, sage 3.3.alpha1:\n\nFrom the notebook interface, if I select \"Trash\" to get the list of deleted worksheets, then clicking \"Empty trash\" doesn't actually empty the trash.  It sends me back to the list of active worksheets, but if I click on \"Trash\" again, I see the same list of deleted worksheets.\n\nWith Firefox on the same iMac, emptying the trash works just fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5100\n\n",
+    "closed_at": "2009-12-08T19:13:03Z",
     "created_at": "2009-01-25T17:01:45Z",
     "labels": [
         "component: notebook",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
@@ -17,7 +18,7 @@ archive/issues_005100.json:
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 CC:  @jasongrout @mwhansen @williamstein
 

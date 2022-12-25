@@ -1,16 +1,17 @@
-# Issue 6670: [with patch, needs work] Port group algebras to the current coercion system
+# Issue 6670: Port group algebras to the current coercion system
 
 archive/issues_006670.json:
 ```json
 {
-    "body": "Assignee: mraum\n\nThis upgrades the group algebras to the current coercion system and fixes some issues of multiplication of group algebras A and B, satisfying A == B but not admitting coercion of elements.\nThis depends on #6669, which concerns homomorphisms from matrix group to other objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6670\n\n",
+    "body": "Assignee: mraum\n\nThis upgrades the group algebras to the current coercion system and fixes some issues of multiplication of group algebras A and B, satisfying A == B but not admitting coercion of elements.\nThis depends on #6669, which concerns homomorphisms from matrix group to other objects.\n\n**Apply:**\n1. [attachment:trac_6670-jhp.patch]\n2. [attachment:trac-6670-functors.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6670\n\n",
+    "closed_at": "2011-08-18T22:01:43Z",
     "created_at": "2009-08-03T20:41:36Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "[with patch, needs work] Port group algebras to the current coercion system",
+    "title": "Port group algebras to the current coercion system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6670",
     "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
@@ -20,6 +21,11 @@ Assignee: mraum
 
 This upgrades the group algebras to the current coercion system and fixes some issues of multiplication of group algebras A and B, satisfying A == B but not admitting coercion of elements.
 This depends on #6669, which concerns homomorphisms from matrix group to other objects.
+
+**Apply:**
+1. [attachment:trac_6670-jhp.patch]
+2. [attachment:trac-6670-functors.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6670
 

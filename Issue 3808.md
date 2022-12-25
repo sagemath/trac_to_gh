@@ -1,16 +1,18 @@
-# Issue 3808: bug in Hom constructor for finite fields
+# Issue 3808: bug in Hom constructor for finite fields --- more a feature
 
 archive/issues_003808.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nReported by Nick Alexander:\n\n```\nsage: K.<a> = FiniteField(7^2)\nsage: a\na\nsage: a^7\n6*a + 1\nsage: K.Hom([a^7])\nSet of field embeddings from Finite Field in a of size 7^2 to [6*a + 1]\nsage: list(K.Hom([a^7]))\n------------------------------------------------------------------------\n---\nAttributeError                            Traceback (most recent call\nlast)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in\n<module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in __getitem__(self, n)\n    169               Defn: a |--> b^9 + b^7 + b^6 + b^5 + b^4]\n    170         \"\"\"\n--> 171         return self.list()[n]\n    172\n    173     def index(self, item):\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in list(self)\n    139         D = self.domain()\n    140         C = self.codomain()\n--> 141         if D.characteristic() == C.characteristic() and\nInteger(D.degree()).divides(Integer(C.degree())):\n    142             f = D.modulus()\n    143             g = C['x'](f)\n\nAttributeError: 'list' object has no attribute 'characteristic'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3808\n\n",
+    "body": "Assignee: somebody\n\nReported by Nick Alexander.  Notice the `Set of field embeddings from Finite Field in a of size 7^2 to [6*a + 1]` below which is idiotic. \n\n```\nsage: K.<a> = FiniteField(7^2)\nsage: a\na\nsage: a^7\n6*a + 1\nsage: K.Hom([a^7])\nSet of field embeddings from Finite Field in a of size 7^2 to [6*a + 1]\nsage: list(K.Hom([a^7]))\n------------------------------------------------------------------------\n---\nAttributeError                            Traceback (most recent call\nlast)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in\n<module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in __getitem__(self, n)\n    169               Defn: a |--> b^9 + b^7 + b^6 + b^5 + b^4]\n    170         \"\"\"\n--> 171         return self.list()[n]\n    172\n    173     def index(self, item):\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in list(self)\n    139         D = self.domain()\n    140         C = self.codomain()\n--> 141         if D.characteristic() == C.characteristic() and\nInteger(D.degree()).divides(Integer(C.degree())):\n    142             f = D.modulus()\n    143             g = C['x'](f)\n\nAttributeError: 'list' object has no attribute 'characteristic'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3808\n\n",
+    "closed_at": "2008-09-02T13:54:03Z",
     "created_at": "2008-08-12T02:03:57Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: algebra",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug in Hom constructor for finite fields",
+    "title": "bug in Hom constructor for finite fields --- more a feature",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3808",
     "user": "https://github.com/williamstein"
@@ -18,7 +20,7 @@ archive/issues_003808.json:
 ```
 Assignee: somebody
 
-Reported by Nick Alexander:
+Reported by Nick Alexander.  Notice the `Set of field embeddings from Finite Field in a of size 7^2 to [6*a + 1]` below which is idiotic. 
 
 ```
 sage: K.<a> = FiniteField(7^2)

@@ -1,9 +1,10 @@
-# Issue 3519: Update clisp to 2.45 release
+# Issue 3519: [with spkg, positive review] Update clisp to 2.46 release
 
 archive/issues_003519.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe current clisp.spkg is broken on SLES 10/Itanium, i.e. does not compile. I could not find a ticket for this, so I am opening a new one.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3519\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: editor_mabshoff\n\nThe current clisp.spkg is broken on SLES 10/Itanium, i.e. does not compile. I could not find a ticket for this, so I am opening a new one.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3519\n\n",
+    "closed_at": "2008-07-07T21:56:29Z",
     "created_at": "2008-06-27T04:13:27Z",
     "labels": [
         "component: packages: standard",
@@ -11,13 +12,15 @@ archive/issues_003519.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Update clisp to 2.45 release",
+    "title": "[with spkg, positive review] Update clisp to 2.46 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3519",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
+
+Keywords: editor_mabshoff
 
 The current clisp.spkg is broken on SLES 10/Itanium, i.e. does not compile. I could not find a ticket for this, so I am opening a new one.
 

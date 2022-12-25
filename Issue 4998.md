@@ -1,16 +1,17 @@
-# Issue 4998: OSX64: build Singulat with "--with-malloc=system"
+# Issue 4998: [with spkg, positive review] OSX64: build Singular with "--with-malloc=system"
 
 archive/issues_004998.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUsing the mmap default leads to segfaults at starup since omalloc is not properly initialized.\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4998\n\n",
+    "closed_at": "2009-01-23T00:26:57Z",
     "created_at": "2009-01-17T15:52:10Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "OSX64: build Singulat with \"--with-malloc=system\"",
+    "title": "[with spkg, positive review] OSX64: build Singular with \"--with-malloc=system\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4998",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_009840.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @novoselt @vbraun mvngu @haraldschilly @mwhansen @jdemeyer\n\nKeywords: polyhedra, qhull, convex, Delaunay, Voronoi\n\nFrom the README.txt of Qhull:\n\nQhull computes convex hulls, Delaunay triangulations, Voronoi diagrams,\nfurthest-site Voronoi diagrams, and halfspace intersections about a point.\nIt runs in 2-d, 3-d, 4-d, or higher.  It implements the Quickhull algorithm\nfor computing convex hulls.   Qhull handles round-off errors from floating\npoint arithmetic.  It can approximate a convex hull.\n\nThe program includes options for hull volume, facet area, partial hulls,\ninput transformations, randomization, tracing, multiple output formats, and\nexecution statistics.\n\nFirst attempt at a spkg is at:\n\n[http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg](http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9841\n\n",
+    "closed_at": "2010-11-01T11:21:53Z",
     "created_at": "2010-08-30T16:52:38Z",
     "labels": [
         "component: geometry",

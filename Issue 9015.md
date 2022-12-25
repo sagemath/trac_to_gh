@@ -4,6 +4,7 @@ archive/issues_009015.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @vbraun\n\nI was looking over the shoulder of a new user as he started Sage for the first time and typed `?` on the command line. This shows the IPython help text which doesn't mention Sage at all.\n\nWe should change this to show the text displayed with `help()`.\n\nPrinting some more information when someone types `help` without the parenthesis would also be nice.\n\n```\nsage: help\n<function help at 0x1d6fc80>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9015\n\n",
+    "closed_at": "2014-12-03T21:56:20Z",
     "created_at": "2010-05-22T11:39:16Z",
     "labels": [
         "component: documentation",

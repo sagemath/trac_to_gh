@@ -1,16 +1,16 @@
-# Issue 9225: Indicate progress and elapsed time when running multiple doctests
+# Issue 9225: New doctesting features
 
 archive/issues_009225.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @wjp @nexttime @rbeezer\n\nWhen we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,\n\n```sh\n$ sage -t monoids/\nsage -t  \"monoids/monoid.py\"\n 1/10    1.9 s / 1.9 s\nsage -t  \"monoids/free_monoid.py\"\n 2/10    2.0 s / 3.9 s\n[...]\n```\nWhat other columns would be useful?  Coverage?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9225\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wjp @nexttime @rbeezer\n\nThis is an umbrella ticket for various improvements to the Sage doctesting framework.  For example:\n\n  When we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,\n\n```sh\n$ sage -t monoids/\nsage -t  \"monoids/monoid.py\"\n 1/10    1.9 s / 1.9 s\nsage -t  \"monoids/free_monoid.py\"\n 2/10    2.0 s / 3.9 s\n[...]\n```\n  What other columns would be useful?  Coverage?\n\nPlease see the comments for more ideas.  Suggestions are welcome!\n\nRelated: #838, #4294, #7493, #8385, #9224, #9739, #10458.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9225\n\n",
+    "closed_at": "2013-03-07T08:18:34Z",
     "created_at": "2010-06-12T10:18:49Z",
     "labels": [
-        "component: doctest coverage",
-        "minor"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Indicate progress and elapsed time when running multiple doctests",
+    "title": "New doctesting features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9225",
     "user": "https://github.com/qed777"
@@ -20,7 +20,9 @@ Assignee: mvngu
 
 CC:  @wjp @nexttime @rbeezer
 
-When we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,
+This is an umbrella ticket for various improvements to the Sage doctesting framework.  For example:
+
+  When we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,
 
 ```sh
 $ sage -t monoids/
@@ -30,7 +32,11 @@ sage -t  "monoids/free_monoid.py"
  2/10    2.0 s / 3.9 s
 [...]
 ```
-What other columns would be useful?  Coverage?
+  What other columns would be useful?  Coverage?
+
+Please see the comments for more ideas.  Suggestions are welcome!
+
+Related: #838, #4294, #7493, #8385, #9224, #9739, #10458.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9225
 

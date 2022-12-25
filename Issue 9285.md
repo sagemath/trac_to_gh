@@ -3,7 +3,7 @@
 archive/issues_009285.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Coxeter groups, Chevie\n\nThe current code for iterating trough all elements of a Coxeter group is currently ridiculously slow. For E8, it should take no more than a couple minutes, as Franck Lubeck's reported was possible in GAP.\n\nThere are several routes to this end, which all deserve to be explored:\n\n* Using GAP's code; this will require at least fixing a `select` issue in GAP's interface (TODO: add ticket), if not using libGAP\n\n* Optimizing the underlying CombinatorialFreeModule's code\n\n* Optimizing the generic Coxeter group code\n\n* Using properly Coxeter 3\n\nIssue created by migration from https://trac.sagemath.org/ticket/9285\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Coxeter groups, Chevie\n\nThe current code for iterating trough all elements of a Coxeter group\nis currently ridiculously slow. For E<sub>8</sub>, it should take no more than a\ncouple minutes as Franck Lubeck's reported was possible in GAP. The\ngoal is not to brag, but to make sure that the infrastructure does not\nimpose unnecessary overhead.\n\nThere are several routes to this end, which all deserve to be explored:\n\n* Using GAP's code; this will require at least fixing a `select`\n  issue in GAP's interface (TODO: add ticket), if not using libGAP,\n  and implementing the iter protocol for gap objects using GAP's\n  Iterator (TODO: add ticket).\n\n Update (09/2014): for finite groups of size>1000, Sage's iterator\n for matrix groups now asks GAP to make the group into a permutation\n group, and asks GAP for an iterator thereupon through\nlibgap. However, for E8, this still can lead to overflowing GAP's\nworkspace. To be investigated.\n\n* Optimizing the underlying CombinatorialFreeModule's arithmetic\n* Ensuring that the permutation arithmetic is as fast as it should be\n* Optimizing the generic Coxeter group code\n* Using properly Coxeter 3.\n\n This is fast for small groups, but uses up memory for E8 on my\n machine:\n\n {{{\n    sage: W = CoxeterGroup([\"E\",6], implementation=\"coxeter3\")\n    sage: %time for w in CoxeterGroups().parent_class.__iter__(W): pass # generic iterator\n    CPU times: user 31.1 s, sys: 31.4 ms, total: 31.1 s\n    Wall time: 31.1 s\n\n    sage: %time for w in W: pass                                        # Coxeter3's iterator\n    CPU times: user 1.61 s, sys: 24.1 ms, total: 1.63 s\n    Wall time: 1.61 s\n\n    sage: W = CoxeterGroup([\"E\",7], implementation=\"coxeter3\")\n    sage: %time for w in W: pass\n    CPU times: user 1min 33s, sys: 336 ms, total: 1min 33s\n    Wall time: 1min 33s\n\n    sage: W = CoxeterGroup([\"E\",8], implementation=\"coxeter3\")\n    sage: %time for w in W: pass\n    sorry, insufficient memory\n }}}\n\n To be investigated, but Coxeter3 probably builds the full group in memory.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9285\n\n",
     "created_at": "2010-06-20T21:05:43Z",
     "labels": [
         "component: combinatorics"
@@ -21,17 +21,55 @@ CC:  sage-combinat
 
 Keywords: Coxeter groups, Chevie
 
-The current code for iterating trough all elements of a Coxeter group is currently ridiculously slow. For E8, it should take no more than a couple minutes, as Franck Lubeck's reported was possible in GAP.
+The current code for iterating trough all elements of a Coxeter group
+is currently ridiculously slow. For E<sub>8</sub>, it should take no more than a
+couple minutes as Franck Lubeck's reported was possible in GAP. The
+goal is not to brag, but to make sure that the infrastructure does not
+impose unnecessary overhead.
 
 There are several routes to this end, which all deserve to be explored:
 
-* Using GAP's code; this will require at least fixing a `select` issue in GAP's interface (TODO: add ticket), if not using libGAP
+* Using GAP's code; this will require at least fixing a `select`
+  issue in GAP's interface (TODO: add ticket), if not using libGAP,
+  and implementing the iter protocol for gap objects using GAP's
+  Iterator (TODO: add ticket).
 
-* Optimizing the underlying CombinatorialFreeModule's code
+ Update (09/2014): for finite groups of size>1000, Sage's iterator
+ for matrix groups now asks GAP to make the group into a permutation
+ group, and asks GAP for an iterator thereupon through
+libgap. However, for E8, this still can lead to overflowing GAP's
+workspace. To be investigated.
 
+* Optimizing the underlying CombinatorialFreeModule's arithmetic
+* Ensuring that the permutation arithmetic is as fast as it should be
 * Optimizing the generic Coxeter group code
+* Using properly Coxeter 3.
 
-* Using properly Coxeter 3
+ This is fast for small groups, but uses up memory for E8 on my
+ machine:
+
+ {{{
+    sage: W = CoxeterGroup(["E",6], implementation="coxeter3")
+    sage: %time for w in CoxeterGroups().parent_class.__iter__(W): pass # generic iterator
+    CPU times: user 31.1 s, sys: 31.4 ms, total: 31.1 s
+    Wall time: 31.1 s
+
+    sage: %time for w in W: pass                                        # Coxeter3's iterator
+    CPU times: user 1.61 s, sys: 24.1 ms, total: 1.63 s
+    Wall time: 1.61 s
+
+    sage: W = CoxeterGroup(["E",7], implementation="coxeter3")
+    sage: %time for w in W: pass
+    CPU times: user 1min 33s, sys: 336 ms, total: 1min 33s
+    Wall time: 1min 33s
+
+    sage: W = CoxeterGroup(["E",8], implementation="coxeter3")
+    sage: %time for w in W: pass
+    sorry, insufficient memory
+ }}}
+
+ To be investigated, but Coxeter3 probably builds the full group in memory.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9285
 

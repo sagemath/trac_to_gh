@@ -3,7 +3,8 @@
 archive/issues_009886.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: timeit(\"z = R(u)\")\n625 loops, best of 3: 6.84 \u00b5s per loop\n```\n\nWhy does it take 18000 cycles to convert a tiny integer to an element of R?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9887\n\n",
+    "body": "Assignee: tbd\n\nKeywords: sd51\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: timeit(\"z = R(u)\")\n625 loops, best of 3: 6.84 \u00b5s per loop\n```\n\nWhy does it take 18000 cycles to convert a tiny integer to an element of R?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9887\n\n",
+    "closed_at": "2013-08-13T08:43:03Z",
     "created_at": "2010-09-09T16:09:17Z",
     "labels": [
         "component: performance",
@@ -17,6 +18,8 @@ archive/issues_009886.json:
 }
 ```
 Assignee: tbd
+
+Keywords: sd51
 
 Sage 4.5.3, 2.6GHz Opteron, Linux
 

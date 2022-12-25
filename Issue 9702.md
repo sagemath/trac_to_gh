@@ -3,7 +3,8 @@
 archive/issues_009702.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby @nathanncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9702\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby @nathanncohen\n\nApply :\n\n* trac_9702-flat.patch\n* trac_9702-smallfixes.2.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/9702\n\n",
+    "closed_at": "2011-01-12T06:32:57Z",
     "created_at": "2010-08-07T03:20:23Z",
     "labels": [
         "component: graph theory"
@@ -19,7 +20,10 @@ Assignee: jason, ncohen, rlm
 
 CC:  boothby @nathanncohen
 
+Apply :
 
+* trac_9702-flat.patch
+* trac_9702-smallfixes.2.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/9702
 

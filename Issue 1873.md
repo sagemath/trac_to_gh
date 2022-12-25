@@ -1,9 +1,10 @@
-# Issue 1873: [with patch] elementary function expansion returns result in the wrong ring
+# Issue 1873: [with patch, with positive review] elementary function expansion returns result in the wrong ring
 
 archive/issues_001873.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI'm using Sage 2.10 now. Expansion for elements in SFAElementary works\ngreat now, but there is another problem: the expansion lies in the\nwrong ring.\n\n```\nsage: e=SFAElementary(QQ)\nsage: f=e([2]).expand(2)\nsage: f\nx0*x1\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\nThe same code but for SFASchur results in:\n\n```\nsage: s=SFASchur(QQ)\nsage: f=s([2]).expand(2)\nsage: f\nx0^2 + x0*x1 + x1^2\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1 over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1873\n\n",
+    "closed_at": "2008-01-23T04:06:25Z",
     "created_at": "2008-01-20T22:22:55Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_001873.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] elementary function expansion returns result in the wrong ring",
+    "title": "[with patch, with positive review] elementary function expansion returns result in the wrong ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1873",
     "user": "https://github.com/mwhansen"

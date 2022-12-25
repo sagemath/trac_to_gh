@@ -1,16 +1,17 @@
-# Issue 6173: atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY
+# Issue 6173: [with spkg; positive review] atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY
 
 archive/issues_006173.json:
 ```json
 {
     "body": "Assignee: tbd\n\nChange the ATLAS spkg-install so that it recognizes the SAGE_FAT_BINARY option-- which is conceptually accurate -- instead of SAGE_SIMD_MODE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6173\n\n",
+    "closed_at": "2009-06-01T02:06:31Z",
     "created_at": "2009-05-31T23:56:49Z",
     "labels": [
         "component: distribution",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY",
+    "title": "[with spkg; positive review] atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6173",
     "user": "https://github.com/williamstein"

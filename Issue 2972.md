@@ -1,9 +1,10 @@
-# Issue 2972: libSingular related segfault in laurent_polynomial_ring.py
+# Issue 2972: [with patch; positive review] libSingular related segfault in laurent_polynomial_ring.py
 
 archive/issues_002972.json:
 ```json
 {
     "body": "Assignee: @malb\n\nRunning of what will be 3.0.rc0 shortly on sage.math leads to:\n\n```\nmabshoff@sage:sage-3.0.rc0$ ./sage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py\nsage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py\n********************************************************************************\nType r at the (gdb) prompt to run the doctests.\nType bt if there is a crash to see a traceback.\n********************************************************************************\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n\n(gdb) r\nStarting program: /scratch/mabshoff/release-cycle/sage-3.0.rc0/local/bin/python /scratch/mabshoff/release-cycle/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py\n[Thread debugging using libthread_db enabled]\n[New Thread 47563467300704 (LWP 11542)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47563467300704 (LWP 11542)]\nnSetChar (r=0x2b424b843880) at numbers.cc:131\n131     numbers.cc: No such file or directory.\n        in numbers.cc\nCurrent language:  auto; currently c++\n(gdb) bt\n#0  nSetChar (r=0x2b424b843880) at numbers.cc:131\n#1  0x00002b424b5a4293 in rChangeCurrRing (r=0x3) at ring.cc:108\n#2  0x00002b424b2c007d in __pyx_tp_dealloc_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomialRing_libsingular (o=0x1fd4e90) at sage/rings/polynomial/multi_polynomial_libsingular.cpp:3333\n#3  0x00000000004b14e3 in collect (generation=<value optimized out>) at Modules/gcmodule.c:714\n#4  0x00000000004b1834 in PyGC_Collect () at Modules/gcmodule.c:1265\n#5  0x00000000004a758d in Py_Finalize () at Python/pythonrun.c:389\n#6  0x00000000004a70db in handle_system_exit () at Python/pythonrun.c:1618\n#7  0x00000000004a72d9 in PyErr_PrintEx (set_sys_last_vars=1) at Python/pythonrun.c:1064\n#8  0x00000000004a7ae7 in PyRun_SimpleFileExFlags (fp=0x0, filename=<value optimized out>, closeit=1, flags=0x7fff6f971740)\n    at Python/pythonrun.c:978\n#9  0x0000000000412160 in Py_Main (argc=<value optimized out>, argv=0x7fff6f971858) at Modules/main.c:523\n#10 0x00002b423b7094ca in __libc_start_main () from /lib/libc.so.6\n#11 0x000000000041169a in _start () at ../sysdeps/x86_64/elf/start.S:113\n(gdb) The program is running.  Exit anyway? (y or n) y\n```\nThis is reproducible. Since I am a mean guy I assign this to malb ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2972\n\n",
+    "closed_at": "2008-04-21T04:15:30Z",
     "created_at": "2008-04-20T07:28:17Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_002972.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "libSingular related segfault in laurent_polynomial_ring.py",
+    "title": "[with patch; positive review] libSingular related segfault in laurent_polynomial_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2972",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

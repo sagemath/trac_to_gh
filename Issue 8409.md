@@ -1,9 +1,10 @@
-# Issue 8409: Fix build and doctest issues for Solaris 10 (SPARC)
+# Issue 8409: Fix build and doctest issues for Solaris 10 (SPARC) in 32-bit mode.
 
 archive/issues_008409.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nAs of Sage 4.3.3, Sage will not build on Solaris 10 (SPARC). This lists all the items which I'm aware are needed to allow Sage to build, and pass all doctests. \n\n == Hardware used for testing ==\n\nSince 't2' is rather slow, a somewhat ancient and low-spec Sun Blade 1000 was used for these tests. \n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Patches needed to build Sage 4.4.3 on Solaris 10 (SPARC) ==\n\nSage will not build without **all** of the following patches. \n\n* #7867 A patch for Python, which solves an issue from #6583.\n* #8191 Addition of iconv, which was needed following an update to R. \n* #8285 Update R's spkg-install to work on Solaris.\n* #8363 Remove a useless check for mpir in cddlib which breaks Solaris build. \n* #8371 Patch to allow pyprocessing to build on Solaris - it failed after python was patched as #7867. (Note #6503 aims to remove pyprocessing completely, so #8371 may be unnecessary). \n\n == Patches needed for Sage to pass all the doctests ==\n\n* #8374 Numerical noise in sage/symbolic/constants_c.pyx\n* #8375 Numerical noise in sage/symbolic/pynac.pyx\n* #8391 Change 'top' to 'prstat' on Solaris, othewise lots of doctests time out.\n* #8408 Update sqlite to the latest version (otherwise #8397, #8398, #8399, #8400 and #8401 all fail).\n\n == Other changes ==\n\nIt was necessary to increase SAGE_TIMEOUT. The longest test is taking 460 s on the Blade 1000. Despite the relative age and cost of the T5240 (t2) and my Blade 1000 (redstart), the T5240 is designed for a very different task to what it is used for, so some of the doctests will take longer on 't2'. I would suggest a minimum timeout of 2000 s would be necessary to be sure of no failures due to the lack of speed in 't2'. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8409\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nAs of Sage 4.3.3, Sage will not build on Solaris 10 (SPARC). This lists all the items which I'm aware are needed to allow Sage to build, and pass all then normal doctests, excluding the long ones.   \n\n == Hardware used for testing ==\n\nSince 't2' is rather slow, a somewhat ancient and low-spec Sun Blade 1000 was used for these tests. \n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Patches needed to build Sage 4.4.3 on Solaris 10 (SPARC) ==\n\nSage will not build without **all** of the following patches. \n\n* #7867 A patch for Python, which solves an issue from #6583.\n* #8191 Addition of iconv, which was needed following an update to R. \n* #8285 Update R's spkg-install to work on Solaris.\n* #8363 Remove a useless check for mpir in cddlib which breaks Solaris build. \n* #8371 Patch to allow pyprocessing to build on Solaris - it failed after python was patched as #7867. (Note #6503 aims to remove pyprocessing completely, so #8371 may be unnecessary). \n\n == Patches needed for Sage to pass all the normal (not long) doctests ==\n\n* #8374 Numerical noise in sage/symbolic/constants_c.pyx\n* #8375 Numerical noise in sage/symbolic/pynac.pyx\n* #8391 Change 'top' to 'prstat' on Solaris, othewise lots of doctests time out.\n* #8408 Update sqlite to the latest version (otherwise #8397, #8398, #8399, #8400 and #8401 all fail).\n\n\n == Long doctests ==\n\nAll long doctests pass, with the exception of the following, which is #8416 \n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.0 s]\n```\n\n == Other changes ==\n\nIt was necessary to increase SAGE_TIMEOUT. The longest test is taking 460 s on the Blade 1000. Despite the relative age and cost of the T5240 (t2) and my Blade 1000 (redstart), the T5240 is designed for a very different task to what it is used for, so some of the doctests will take longer on 't2'. I would suggest a minimum timeout of 2000 s would be necessary to be sure of no failures due to the lack of speed in 't2'. \n\nAlthough I did increase SAGE_TIMEOUT_LONG to 10000 s from the default 1800, this was no absolutely necessary, as all tests completed in less than 1800 s, although the longest took 1764.9 s, so would have been very close to timing out. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8409\n\n",
+    "closed_at": "2010-07-12T22:55:49Z",
     "created_at": "2010-03-01T16:12:56Z",
     "labels": [
         "component: porting: solaris",
@@ -11,7 +12,7 @@ archive/issues_008409.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "Fix build and doctest issues for Solaris 10 (SPARC)",
+    "title": "Fix build and doctest issues for Solaris 10 (SPARC) in 32-bit mode.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8409",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -21,7 +22,7 @@ Assignee: drkirkby
 
 CC:  mvngu
 
-As of Sage 4.3.3, Sage will not build on Solaris 10 (SPARC). This lists all the items which I'm aware are needed to allow Sage to build, and pass all doctests. 
+As of Sage 4.3.3, Sage will not build on Solaris 10 (SPARC). This lists all the items which I'm aware are needed to allow Sage to build, and pass all then normal doctests, excluding the long ones.   
 
  == Hardware used for testing ==
 
@@ -43,18 +44,31 @@ Sage will not build without **all** of the following patches.
 * #8363 Remove a useless check for mpir in cddlib which breaks Solaris build. 
 * #8371 Patch to allow pyprocessing to build on Solaris - it failed after python was patched as #7867. (Note #6503 aims to remove pyprocessing completely, so #8371 may be unnecessary). 
 
- == Patches needed for Sage to pass all the doctests ==
+ == Patches needed for Sage to pass all the normal (not long) doctests ==
 
 * #8374 Numerical noise in sage/symbolic/constants_c.pyx
 * #8375 Numerical noise in sage/symbolic/pynac.pyx
 * #8391 Change 'top' to 'prstat' on Solaris, othewise lots of doctests time out.
 * #8408 Update sqlite to the latest version (otherwise #8397, #8398, #8399, #8400 and #8401 all fail).
 
+
+ == Long doctests ==
+
+All long doctests pass, with the exception of the following, which is #8416 
+
+```
+sage -t  -long "devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py"
+A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
+         [3.0 s]
+```
+
  == Other changes ==
 
 It was necessary to increase SAGE_TIMEOUT. The longest test is taking 460 s on the Blade 1000. Despite the relative age and cost of the T5240 (t2) and my Blade 1000 (redstart), the T5240 is designed for a very different task to what it is used for, so some of the doctests will take longer on 't2'. I would suggest a minimum timeout of 2000 s would be necessary to be sure of no failures due to the lack of speed in 't2'. 
 
-Dave
+Although I did increase SAGE_TIMEOUT_LONG to 10000 s from the default 1800, this was no absolutely necessary, as all tests completed in less than 1800 s, although the longest took 1764.9 s, so would have been very close to timing out. 
+
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8409
 

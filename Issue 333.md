@@ -4,6 +4,7 @@ archive/issues_000333.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWilliam's idea: Notebook splash page should show last cell evaluated.\n\nTom's addition: a \"privacy\" flag should be added to worksheets, so people can prevent their worksheets from broadcasting to the splash page.  This is less important.\n\nIssue created by migration from https://trac.sagemath.org/ticket/333\n\n",
+    "closed_at": "2008-03-18T10:10:26Z",
     "created_at": "2007-03-26T07:03:46Z",
     "labels": [
         "component: notebook",

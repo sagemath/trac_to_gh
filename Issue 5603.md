@@ -3,7 +3,8 @@
 archive/issues_005603.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nWe could also call it .blend() to agree with MMA's terminology:\n\nhttp://reference.wolfram.com/mathematica/ref/Blend.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5603\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nWe could also call it .blend() to agree with MMA's terminology:\n\nhttp://reference.wolfram.com/mathematica/ref/Blend.html\n\nRelated tickets:\n\n* #5601 - predefine colors in Sage.\n* #5602 - make .lighter() and .darker() methods for Sage Color objects.\n* #5603 - make a .mix() method for Sage color objects.\n* #5604 - average Color objects when adding them together.\n* #5605 - Construct Color objects using hsl and hsv values.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5603\n\n",
+    "closed_at": "2010-05-11T20:39:29Z",
     "created_at": "2009-03-24T21:29:56Z",
     "labels": [
         "component: graphics",
@@ -25,6 +26,15 @@ See the end of http://groups.google.com/group/sage-support/browse_thread/thread/
 We could also call it .blend() to agree with MMA's terminology:
 
 http://reference.wolfram.com/mathematica/ref/Blend.html
+
+Related tickets:
+
+* #5601 - predefine colors in Sage.
+* #5602 - make .lighter() and .darker() methods for Sage Color objects.
+* #5603 - make a .mix() method for Sage color objects.
+* #5604 - average Color objects when adding them together.
+* #5605 - Construct Color objects using hsl and hsv values.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5603
 

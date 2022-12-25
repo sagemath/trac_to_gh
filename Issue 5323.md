@@ -3,7 +3,8 @@
 archive/issues_005323.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nThe `./` should not be here:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5323\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nThe `./` should not be here:\n\n```\nsage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5323\n\n",
+    "closed_at": "2012-01-05T13:37:37Z",
     "created_at": "2009-02-20T15:49:37Z",
     "labels": [
         "component: doctest coverage",
@@ -23,7 +24,7 @@ CC:  @orlitzky
 The `./` should not be here:
 
 ```
-mabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py 
+sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py 
 ERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing
 ```
 

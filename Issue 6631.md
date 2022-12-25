@@ -1,16 +1,17 @@
-# Issue 6631: speed up is_lyndon method for words
+# Issue 6631: [with patch, positive review] speed up is_lyndon method for words
 
 archive/issues_006631.json:
 ```json
 {
     "body": "Assignee: Franco Saliola\n\nCC:  @seblabbe\n\nKeywords: words\n\nThe current implementation of the method `is_lyndon` is too slow\n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: c\nLower Christoffel word of slope 380447/34369 over Ordered Alphabet [0, 1]\nsage: c.length()\n414816\nsage: time c.is_lyndon()\nCPU times: user 84.15 s, sys: 0.17 s, total: 84.33 s\nWall time: 84.52 s\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6631\n\n",
+    "closed_at": "2009-08-25T00:43:20Z",
     "created_at": "2009-07-26T22:04:26Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "speed up is_lyndon method for words",
+    "title": "[with patch, positive review] speed up is_lyndon method for words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6631",
     "user": "https://github.com/saliola"

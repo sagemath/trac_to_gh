@@ -3,10 +3,11 @@
 archive/issues_009813.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: padic, p-adic\n\nI've implemented coercion morphisms from ZZ and QQ to Zp and Qp.  This drops item creation time from about 20 microseconds to about 1 microsecond on my machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9814\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: coercion\n\nI've implemented coercion morphisms from ZZ and QQ to Zp and Qp.  This drops item creation time from about 20 microseconds to about 1 microsecond on my machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9814\n\n",
+    "closed_at": "2010-09-28T10:54:51Z",
     "created_at": "2010-08-27T05:29:00Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: padics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -18,7 +19,7 @@ archive/issues_009813.json:
 ```
 Assignee: @aghitza
 
-Keywords: padic, p-adic
+Keywords: coercion
 
 I've implemented coercion morphisms from ZZ and QQ to Zp and Qp.  This drops item creation time from about 20 microseconds to about 1 microsecond on my machine.
 

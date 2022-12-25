@@ -1,16 +1,17 @@
-# Issue 3648: [with patch, needs review] complex(pari(...)) fails
+# Issue 3648: [with patch, positive review] complex(pari(...)) fails
 
 archive/issues_003648.json:
 ```json
 {
     "body": "Assignee: somebody\n\nPari gen objects should have a `__complex__` method, so that complex(...) works on them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3648\n\n",
+    "closed_at": "2008-07-16T04:45:27Z",
     "created_at": "2008-07-12T16:23:14Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch, needs review] complex(pari(...)) fails",
+    "title": "[with patch, positive review] complex(pari(...)) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3648",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -4,9 +4,11 @@ archive/issues_008630.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\n```\nsage: chi = DirichletGroup(109, CyclotomicField(3)).0\nsage: CuspForms(chi, 2, base_ring = CyclotomicField(9))\nCuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6\n```\n\n*facepalm*\n\nIssue created by migration from https://trac.sagemath.org/ticket/8630\n\n",
+    "closed_at": "2010-04-16T18:54:00Z",
     "created_at": "2010-03-30T11:37:41Z",
     "labels": [
         "component: modular forms",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",

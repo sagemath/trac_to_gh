@@ -3,7 +3,8 @@
 archive/issues_009230.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  mvngu\n\nStill those annoying default {} instead of None. This patch was not merged when the fix for {} was written ^^;\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9230\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  mvngu\n\nStill those annoying default {} instead of None. This patch was not merged when the fix for {} was written ^^;\n\n**Prerequisite:** #8781\n\nIssue created by migration from https://trac.sagemath.org/ticket/9230\n\n",
+    "closed_at": "2010-06-29T16:45:47Z",
     "created_at": "2010-06-12T22:09:57Z",
     "labels": [
         "component: graph theory",
@@ -22,7 +23,7 @@ CC:  mvngu
 
 Still those annoying default {} instead of None. This patch was not merged when the fix for {} was written ^^;
 
-Nathann
+**Prerequisite:** #8781
 
 Issue created by migration from https://trac.sagemath.org/ticket/9230
 

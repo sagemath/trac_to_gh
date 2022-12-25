@@ -4,6 +4,7 @@ archive/issues_008882.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nKeywords: Free module\n\n`CombinatorialFreeModules` need some cleanup\n\n 1 - merge `CombinatorialFreeModules` with `CombinatorialFreeModulesInterface`\n\n 2 - make its `classcall` private\n\n 3 - `if isinstance(basis_keys, list)` in `__init__` should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8882\n\n",
+    "closed_at": "2010-05-08T21:42:04Z",
     "created_at": "2010-05-05T02:41:20Z",
     "labels": [
         "component: combinatorics"

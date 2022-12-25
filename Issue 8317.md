@@ -1,17 +1,15 @@
-# Issue 8317: Protecting special names against assignation
+# Issue 8317: Prevent assignments to special names
 
 archive/issues_008317.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nKeywords: assignation,names\n\nI'd like to propose that certain special names should be protected so that they could not become variable names (for example pi, e, and i)\n\nif by accident you assign them like:\n\ne=factorial(10)\n\nand then you need to need to use e with it's standard meaning, like\n\ne^100\n\nyou will have a very hard to spot error ( (factorial(10)^100).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8317\n\n",
+    "body": "Assignee: olazo\n\nKeywords: assignation,names\n\nI'd like to propose that certain special names should be protected so that they could not become variable names (for example pi, e, and i)\n\nif by accident you assign them like:\n\n```\nsage: e=factorial(10)\n```\n\nand then you need to need to use e with it's standard meaning, like\n\n```\nsage: e^100\n```\n\nyou will have a very hard time finding the error ( `factorial(10)^100` ).\n\nthis has been discussed in:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b391ed6bd14cdfd0\n\nand\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a8e1e4ffe24840dc\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8317\n\n",
     "created_at": "2010-02-21T00:19:55Z",
     "labels": [
-        "component: misc",
-        "minor",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "Protecting special names against assignation",
+    "title": "Prevent assignments to special names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8317",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
@@ -25,13 +23,26 @@ I'd like to propose that certain special names should be protected so that they 
 
 if by accident you assign them like:
 
-e=factorial(10)
+```
+sage: e=factorial(10)
+```
 
 and then you need to need to use e with it's standard meaning, like
 
-e^100
+```
+sage: e^100
+```
 
-you will have a very hard to spot error ( (factorial(10)^100).
+you will have a very hard time finding the error ( `factorial(10)^100` ).
+
+this has been discussed in:
+http://groups.google.com/group/sage-support/browse_thread/thread/b391ed6bd14cdfd0
+
+and
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/a8e1e4ffe24840dc
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8317
 

@@ -3,7 +3,8 @@
 archive/issues_005352.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nFix it so that the logs end up in DOT_SAGE since that does not have to be $HOME/.sage as hard coded for the log files.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5352\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nFix it so that the logs end up in DOT_SAGE since that does not have to be $HOME/.sage as hard coded for the log files.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5352\n\n",
+    "closed_at": "2011-12-09T10:21:45Z",
     "created_at": "2009-02-23T22:37:41Z",
     "labels": [
         "component: misc",
@@ -16,7 +17,7 @@ archive/issues_005352.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 CC:  @orlitzky
 

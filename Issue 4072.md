@@ -1,9 +1,10 @@
-# Issue 4072: Fix issue in trait_names in the sage0 interface
+# Issue 4072: [with patch, positive review] Fix issue in trait_names in the sage0 interface
 
 archive/issues_004072.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 164:\n    sage: t = sage0.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        t = sage0.trait_names()###line 164:\n    sage: t = sage0.trait_names()\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 171, in trait_names\n        return eval(self.eval('globals().keys()'))\n      File \"<string>\", line 408\n         'cosh',\n^              \n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 165:\n    sage: len(t) > 100\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        len(t) > Integer(100)###line 165:\n    sage: len(t) > 100\n    NameError: name 't' is not defined\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 167:\n    sage: 'gcd' in t\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        'gcd' in t###line 167:\n    sage: 'gcd' in t\n    NameError: name 't' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_4\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [81.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4072\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 164:\n    sage: t = sage0.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        t = sage0.trait_names()###line 164:\n    sage: t = sage0.trait_names()\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 171, in trait_names\n        return eval(self.eval('globals().keys()'))\n      File \"<string>\", line 408\n         'cosh',\n^              \n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 165:\n    sage: len(t) > 100\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        len(t) > Integer(100)###line 165:\n    sage: len(t) > 100\n    NameError: name 't' is not defined\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 167:\n    sage: 'gcd' in t\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        'gcd' in t###line 167:\n    sage: 'gcd' in t\n    NameError: name 't' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_4\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [81.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4072\n\n",
+    "closed_at": "2008-09-07T23:06:08Z",
     "created_at": "2008-09-07T18:23:43Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_004072.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Fix issue in trait_names in the sage0 interface",
+    "title": "[with patch, positive review] Fix issue in trait_names in the sage0 interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4072",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 File "/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py", line 164:

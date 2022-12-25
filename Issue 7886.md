@@ -1,15 +1,16 @@
-# Issue 7886: [with patch, needs work] Implement conjugacy classes
+# Issue 7886: Implement conjugacy classes
 
 archive/issues_007886.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @wdjoyner @jdemeyer jlopez\n\nGAP has several functions concerning conjugacy classes of groups. It would be nice to have a way to access such functions from Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7886\n\n",
+    "body": "Assignee: joyner\n\nCC:  @wdjoyner @jdemeyer jlopez\n\nGAP has several functions concerning conjugacy classes of groups. This patch include a wrapper for gap conjugacy classes for groups in which they are available and a (kind of) naive fallback method based on TransitiveIdeal for the remaining cases.\n\nApply:\n\n* [attachment:trac_7886_conjugacy_classes_combined.patch]\n* [attachment:trac_7886-conjugacy_classes-review-ts.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7886\n\n",
+    "closed_at": "2013-02-28T10:32:12Z",
     "created_at": "2010-01-09T21:49:27Z",
     "labels": [
         "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.8",
-    "title": "[with patch, needs work] Implement conjugacy classes",
+    "title": "Implement conjugacy classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7886",
     "user": "https://trac.sagemath.org/admin/accounts/users/jlopez"
@@ -19,7 +20,13 @@ Assignee: joyner
 
 CC:  @wdjoyner @jdemeyer jlopez
 
-GAP has several functions concerning conjugacy classes of groups. It would be nice to have a way to access such functions from Sage.
+GAP has several functions concerning conjugacy classes of groups. This patch include a wrapper for gap conjugacy classes for groups in which they are available and a (kind of) naive fallback method based on TransitiveIdeal for the remaining cases.
+
+Apply:
+
+* [attachment:trac_7886_conjugacy_classes_combined.patch]
+* [attachment:trac_7886-conjugacy_classes-review-ts.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7886
 

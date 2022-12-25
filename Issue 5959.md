@@ -4,6 +4,7 @@ archive/issues_005959.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom sage-devel, regarding whether \n\n```\nPrimes()>x^2+x\n```\nor not\n\n\n\n> You should change the doctest to\n> \n> sage: P != x^2 + x\n> True\n> \n> The comparison is completely arbitrary and will be machine specific.\n> However equality or not is not arbitrary.\n\n\n> \n> > sage: cmp(SR(3), x) in [-1,1]\n> > True\n\n> \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5959\n\n",
+    "closed_at": "2009-05-03T01:47:22Z",
     "created_at": "2009-05-01T15:14:17Z",
     "labels": [
         "component: doctest coverage",

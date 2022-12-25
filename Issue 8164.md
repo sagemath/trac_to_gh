@@ -4,6 +4,7 @@ archive/issues_008164.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  wcauchois @kcrisman @alauve @paulmasson\n\nRight now, `plot([x,x^2,log(x)], (x,0,1), fill=True)` does a great job of selecting different colors for the fills.  It would be fantastic if `plot([x,x^2,log(x)], (x,0,1))` also picked a different color for each of the lines.\n\nIt would also be nice if `plot([x,x^2,log(x)], (x,0,1), color=<list of colors>)` worked well, just cycling through the list for each plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8164\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2010-02-03T05:28:45Z",
     "labels": [
         "component: graphics"

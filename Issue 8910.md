@@ -3,7 +3,8 @@
 archive/issues_008910.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nThis is the first step of the cleanup of the combinatorial classes see \n  http://trac.sagemath.org/sage_trac/wiki/SageCombinatRoadMap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8910\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: CombinatorialClass Parent\n\nThis is the first step of the cleanup of the combinatorial classes see\n  http://trac.sagemath.org/sage_trac/wiki/SageCombinatRoadMap\n\nDepend on #8881\n\nApply the two patches:\n\n- [trac_8910-combinatorial_class_parent-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8910/trac_8910-combinatorial_class_parent-fh.patch)\n- [trac_8910-subsets_an_element-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8910/trac_8910-subsets_an_element-fh.patch)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8910\n\n",
+    "closed_at": "2010-06-05T22:21:59Z",
     "created_at": "2010-05-07T12:02:11Z",
     "labels": [
         "component: combinatorics",
@@ -20,8 +21,18 @@ Assignee: @hivert
 
 CC:  sage-combinat
 
-This is the first step of the cleanup of the combinatorial classes see 
+Keywords: CombinatorialClass Parent
+
+This is the first step of the cleanup of the combinatorial classes see
   http://trac.sagemath.org/sage_trac/wiki/SageCombinatRoadMap
+
+Depend on #8881
+
+Apply the two patches:
+
+- [trac_8910-combinatorial_class_parent-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8910/trac_8910-combinatorial_class_parent-fh.patch)
+- [trac_8910-subsets_an_element-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8910/trac_8910-subsets_an_element-fh.patch)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8910
 

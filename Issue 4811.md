@@ -1,9 +1,10 @@
-# Issue 4811: doctesting line numbers in report are now completely broken.  They were fine ins age-3.2.1
+# Issue 4811: [with patch, positive review] Sage 3.2.2.a2: doctesting line numbers in report are now wrong
 
 archive/issues_004811.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nTry breaking any doctest and you get stuff like this:\n\n```\nwas@sage:~/build/sage-3.2.2.alpha2$ ./sage -t devel/sage/sage/matrix/matrix_modn_dense.pyx\nsage -t  \"devel/sage/sage/matrix/matrix_modn_dense.pyx\"     \n**********************************************************************\nFile \"/home/was/build/sage-3.2.2.alpha2/devel/sage/sage/matrix/matrix_modn_dense.pyx\", line 276, in __main__.example_6\nFailed example:\n    m###line 554:_sage_    >>> m\n\n```\n\nNotice the line 276 there.   In the old sage:\n\n```\nwas@sage:~/d/sage/matrix$ sage -t matrix_modn_dense.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix_modn_dense.pyx\"**********************************************************************\nFile \"/home/was/s/devel/sage-main/sage/matrix/matrix_modn_dense.pyx\", line 554:\n    sage: m\nExpected:\n    [19 18 17]\n    [16 15 14]\n    [13 12 11]\nGot:\n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4811\n\n",
+    "body": "Assignee: @garyfurnish\n\nTry breaking any doctest and you get stuff like this:\n\n```\nwas@sage:~/build/sage-3.2.2.alpha2$ ./sage -t devel/sage/sage/matrix/matrix_modn_dense.pyx\nsage -t  \"devel/sage/sage/matrix/matrix_modn_dense.pyx\"     \n**********************************************************************\nFile \"/home/was/build/sage-3.2.2.alpha2/devel/sage/sage/matrix/matrix_modn_dense.pyx\", line 276, in __main__.example_6\nFailed example:\n    m###line 554:_sage_    >>> m\n\n```\n\nNotice the line 276 there.   In the old sage:\n\n```\nwas@sage:~/d/sage/matrix$ sage -t matrix_modn_dense.pyx\nsage -t  \"devel/sage-main/sage/matrix/matrix_modn_dense.pyx\"**********************************************************************\nFile \"/home/was/s/devel/sage-main/sage/matrix/matrix_modn_dense.pyx\", line 554:\n    sage: m\nExpected:\n    [19 18 17]\n    [16 15 14]\n    [13 12 11]\nGot:\n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4811\n\n",
+    "closed_at": "2008-12-17T14:03:15Z",
     "created_at": "2008-12-16T07:25:21Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_004811.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "doctesting line numbers in report are now completely broken.  They were fine ins age-3.2.1",
+    "title": "[with patch, positive review] Sage 3.2.2.a2: doctesting line numbers in report are now wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4811",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 Try breaking any doctest and you get stuff like this:
 

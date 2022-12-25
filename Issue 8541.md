@@ -1,30 +1,46 @@
-# Issue 8541: modular forms / linear algebra issue -- subspace not invariant
+# Issue 8541: Cyclotomic matrix multiplication bug
 
 archive/issues_008541.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n```\nsage: CuspForms(DirichletGroup(5).0,5).0\nsage: f[15]\nBoom!\n``` \n\nThis was reported by Paul Nelson, a grad student at Caltech.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8541\n\n",
+    "body": "Assignee: jason, was\n\nMultiplying matrices over cyclotomic fields sometimes returns wrong answers:\n\n```\nsage: K.<zeta4> = CyclotomicField(4)\nsage: m = matrix(K, [186])\nsage: n = matrix(K, [125])\nsage: m * n\n[-23087]\n```\n\nSimilar errors occur with other cyclotomic fields. Experiments with random 1 x 1 matrices with integer entries up to 10<sup>5</sup>, coerced into the cyclotomic field of order 4, suggest that the answer is wrong about 15-20% of the time. The problem also occurs (less often) for certain examples of multiplying a 2x2 matrix by a 2x2 matrix, and I also found an error in one case of a 1 x 3 multiplied by a 3 x 1.\n\n(This bug first manifested itself in the modular forms code, as was reported by Paul Nelson, a grad student at Caltech: \n\n```\nsage: f = CuspForms(DirichletGroup(5).0,5).0\nsage: f[15] # Boom!\nArithmeticError: subspace is not invariant under matrix (vector is not in free module)\n``` \n)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8541\n\n",
+    "closed_at": "2010-04-16T18:42:12Z",
     "created_at": "2010-03-15T05:20:37Z",
     "labels": [
-        "component: modular forms",
+        "component: linear algebra",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "modular forms / linear algebra issue -- subspace not invariant",
+    "title": "Cyclotomic matrix multiplication bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8541",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @craigcitro
+Assignee: jason, was
+
+Multiplying matrices over cyclotomic fields sometimes returns wrong answers:
 
 ```
-sage: CuspForms(DirichletGroup(5).0,5).0
-sage: f[15]
-Boom!
-``` 
+sage: K.<zeta4> = CyclotomicField(4)
+sage: m = matrix(K, [186])
+sage: n = matrix(K, [125])
+sage: m * n
+[-23087]
+```
 
-This was reported by Paul Nelson, a grad student at Caltech.
+Similar errors occur with other cyclotomic fields. Experiments with random 1 x 1 matrices with integer entries up to 10<sup>5</sup>, coerced into the cyclotomic field of order 4, suggest that the answer is wrong about 15-20% of the time. The problem also occurs (less often) for certain examples of multiplying a 2x2 matrix by a 2x2 matrix, and I also found an error in one case of a 1 x 3 multiplied by a 3 x 1.
+
+(This bug first manifested itself in the modular forms code, as was reported by Paul Nelson, a grad student at Caltech: 
+
+```
+sage: f = CuspForms(DirichletGroup(5).0,5).0
+sage: f[15] # Boom!
+ArithmeticError: subspace is not invariant under matrix (vector is not in free module)
+``` 
+)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8541
 

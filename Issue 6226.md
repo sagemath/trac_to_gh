@@ -1,21 +1,22 @@
-# Issue 6226: developer's guide: sections on formatting docstrings and trac guidelines
+# Issue 6226: [with patch, positive review] developer's guide: sections on formatting docstrings and trac guidelines
 
 archive/issues_006226.json:
 ```json
 {
-    "body": "Assignee: tba\n\nKeywords: developer's guide\n\nWe need to add to the developer's guide some information about docstring formatting in ReST, and how to build the Sage standard documentation. The developer's guide also needs to document further detailed guidelines when working on tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6226\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: developer's guide\n\nWe need to add to the developer's guide some information about docstring formatting in ReST, and how to build the Sage standard documentation. The developer's guide also needs to document further detailed guidelines when working on tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6226\n\n",
+    "closed_at": "2009-06-13T23:03:51Z",
     "created_at": "2009-06-05T15:18:00Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "developer's guide: sections on formatting docstrings and trac guidelines",
+    "title": "[with patch, positive review] developer's guide: sections on formatting docstrings and trac guidelines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6226",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tba
+Assignee: mvngu
 
 Keywords: developer's guide
 

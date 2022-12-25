@@ -1,16 +1,17 @@
-# Issue 2911: [with patch, needs easy review] Use "$@" instead of "$*" in sage-* local/bin
+# Issue 2911: [with patch, with positive review] Use "$@" instead of "$*" in sage-* local/bin
 
 archive/issues_002911.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNick complained about this. Here is a fix.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2911\n\n",
+    "closed_at": "2008-04-13T20:11:49Z",
     "created_at": "2008-04-13T20:06:49Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs easy review] Use \"$@\" instead of \"$*\" in sage-* local/bin",
+    "title": "[with patch, with positive review] Use \"$@\" instead of \"$*\" in sage-* local/bin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2911",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

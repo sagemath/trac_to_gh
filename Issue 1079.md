@@ -1,22 +1,23 @@
-# Issue 1079: DSage improper get_worker_count
+# Issue 1079: [with patch] DSage improper get_worker_count
 
 archive/issues_001079.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen I do D.get_worker_count(), it always tells me that I have 2 workers--even though I have 30 machines connected each with 2 workers so the answer should be 30*2 = 60.  It works OK if I have only one DSage login with, say, 12 workers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1079\n\n",
+    "body": "Assignee: @yqiang\n\nWhen I do D.get_worker_count(), it always tells me that I have 2 workers--even though I have 30 machines connected each with 2 workers so the answer should be 30*2 = 60.  It works OK if I have only one DSage login with, say, 12 workers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1079\n\n",
+    "closed_at": "2007-11-06T21:59:37Z",
     "created_at": "2007-11-03T17:11:50Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "DSage improper get_worker_count",
+    "title": "[with patch] DSage improper get_worker_count",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1079",
     "user": "https://github.com/jvoight"
 }
 ```
-Assignee: @williamstein
+Assignee: @yqiang
 
 When I do D.get_worker_count(), it always tells me that I have 2 workers--even though I have 30 machines connected each with 2 workers so the answer should be 30*2 = 60.  It works OK if I have only one DSage login with, say, 12 workers.
 

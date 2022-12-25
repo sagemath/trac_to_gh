@@ -1,9 +1,10 @@
-# Issue 6996: turn off axes in new contour plots
+# Issue 6996: [with patch, positive review] turn off axes in new contour plots
 
 archive/issues_006996.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\ncontour plots should not have axes lines through by default because they may be confused with the contour lines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6996\n\n",
+    "closed_at": "2009-09-23T23:02:04Z",
     "created_at": "2009-09-22T21:33:23Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_006996.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "turn off axes in new contour plots",
+    "title": "[with patch, positive review] turn off axes in new contour plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6996",
     "user": "https://github.com/jasongrout"

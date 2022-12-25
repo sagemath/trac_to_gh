@@ -1,22 +1,24 @@
-# Issue 7046: Singular fails to build on OS X 10.6 with case sensitive file system
+# Issue 7046: [with spkg and patch, positive review] Singular fails to build on OS X 10.6 with case sensitive file system
 
 archive/issues_007046.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThere is a typo in spkg-install so that a patched file doesn't get copied and building fails.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7046\n\n",
+    "body": "Assignee: mabshoff\n\nThere is a typo in spkg-install so that a patched file doesn't get copied and building fails.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7046\n\n",
+    "closed_at": "2009-09-30T12:32:53Z",
     "created_at": "2009-09-28T08:34:12Z",
     "labels": [
-        "component: build",
+        "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Singular fails to build on OS X 10.6 with case sensitive file system",
+    "title": "[with spkg and patch, positive review] Singular fails to build on OS X 10.6 with case sensitive file system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7046",
     "user": "https://github.com/gvol"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 There is a typo in spkg-install so that a patched file doesn't get copied and building fails.
 

@@ -1,16 +1,16 @@
-# Issue 7121: Make it possible to build Sage but not documentation
+# Issue 7121: Document targets for make, especially doc ones, better
 
 archive/issues_007121.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn slow machines (or even fast ones), building all the documentation for a build which will not be used for general purposes takes a looooong time.  There should be a switch for make and/or sage -upgrade which disables this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7121\n\n",
+    "body": "Assignee: tbd\n\nOn slow machines (or even fast ones), building all the documentation for a build which will not be used for general purposes takes a looooong time.  But even [the install guide part about documentation](http://www.sagemath.org/doc/installation/documentation.html) doesn't mention `make build` to avoid this.\n\nThis ticket is to improve the install guide so that things are documented more fully.  See [here](http://www.sagemath.org/doc/installation/source.html?#section-make) for current make targets documented.\n\n* Install guide for documentation should mention `make doc` and `make build` and `make doc-clean`.\n* Make targets section should include `make clean`, `make install`, `make logs`, `make doc-clean`, `make -k` for ignoring errors, and others not there from [the Makefile](http://git.sagemath.org/sage.git/tree/Makefile) - and if some of those shouldn't be documented, that's okay, but just to say why on this ticket\n* Same section should have a link to the `make ssl` section\n* Be sure to mention in that section `make -jNUM` (it's elsewhere but not there)` and link to how to set `MAKE` to have that standard\n\nIt would also be good to have more links from the developer guide to the installation guide, for instance about this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7121\n\n",
     "created_at": "2009-10-05T13:27:08Z",
     "labels": [
-        "component: build",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Make it possible to build Sage but not documentation",
+    "title": "Document targets for make, especially doc ones, better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7121",
     "user": "https://github.com/kcrisman"
@@ -18,7 +18,16 @@ archive/issues_007121.json:
 ```
 Assignee: tbd
 
-On slow machines (or even fast ones), building all the documentation for a build which will not be used for general purposes takes a looooong time.  There should be a switch for make and/or sage -upgrade which disables this.
+On slow machines (or even fast ones), building all the documentation for a build which will not be used for general purposes takes a looooong time.  But even [the install guide part about documentation](http://www.sagemath.org/doc/installation/documentation.html) doesn't mention `make build` to avoid this.
+
+This ticket is to improve the install guide so that things are documented more fully.  See [here](http://www.sagemath.org/doc/installation/source.html?#section-make) for current make targets documented.
+
+* Install guide for documentation should mention `make doc` and `make build` and `make doc-clean`.
+* Make targets section should include `make clean`, `make install`, `make logs`, `make doc-clean`, `make -k` for ignoring errors, and others not there from [the Makefile](http://git.sagemath.org/sage.git/tree/Makefile) - and if some of those shouldn't be documented, that's okay, but just to say why on this ticket
+* Same section should have a link to the `make ssl` section
+* Be sure to mention in that section `make -jNUM` (it's elsewhere but not there)` and link to how to set `MAKE` to have that standard
+
+It would also be good to have more links from the developer guide to the installation guide, for instance about this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7121
 

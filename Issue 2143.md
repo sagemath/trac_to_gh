@@ -1,16 +1,17 @@
-# Issue 2143: [with patch, needs review] wrap scipy optimization routines and cvxopt linear programming, add gradient/hessian to calculus
+# Issue 2143: [with patch; positive review ] wrap scipy optimization routines and cvxopt linear programming, add gradient/hessian to calculus
 
 archive/issues_002143.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @dfdeshom\n\nhttp://sage.math.washington.edu/home/jkantor/optimize.patch\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2143\n\n",
+    "closed_at": "2008-03-16T02:57:15Z",
     "created_at": "2008-02-12T05:33:27Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] wrap scipy optimization routines and cvxopt linear programming, add gradient/hessian to calculus",
+    "title": "[with patch; positive review ] wrap scipy optimization routines and cvxopt linear programming, add gradient/hessian to calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2143",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

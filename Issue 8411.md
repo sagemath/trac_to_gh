@@ -3,7 +3,8 @@
 archive/issues_008411.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brant@math.ucdavis.edu\n\nThis corrects a minor problem with branching rules in weyl_characters.py.\n\nPreviously branching rules SO(m+n)->SO(m)xSO(n) were implemented using\nrule=\"extended\", and similarly for symplectic groups. However there is one\ncase where this does not meet the definition of the extended rule, namely\nSO(2n+2m+2)->SO(2n+1)xSO(2m+1). Indeed, the extended rule checks\nto see if the ranks are equal, which they are not in this case.\n\nI thought the cleanest fix was to implement a new rule called \"orthogonal_sum\"\nfor such cases.\n\nI also took the chance to revise the documentation since what was said\nbefore about rule=\"symmetric\" was misleading.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8411\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brant@math.ucdavis.edu\n\nKeywords: Branching rules\n\nThis corrects a minor problem with branching rules in weyl_characters.py.\n\nPreviously branching rules SO(m+n)->SO(m)xSO(n) were implemented using\nrule=\"extended\", and similarly for symplectic groups. However there is one\ncase where this does not meet the definition of the extended rule, namely\nSO(2n+2m+2)->SO(2n+1)xSO(2m+1). Indeed, the extended rule checks\nto see if the ranks are equal, which they are not in this case.\n\nI thought the cleanest fix was to implement a new rule called \"orthogonal_sum\"\nfor such cases.\n\nI also took the chance to revise the documentation since what was said\nbefore about rule=\"symmetric\" was misleading.\n\nMinor bugfix in weightring: 0 in weight lattice should coerce to 1 not 0 in weight ring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8411\n\n",
+    "closed_at": "2010-04-23T17:10:54Z",
     "created_at": "2010-03-01T19:42:24Z",
     "labels": [
         "component: combinatorics",
@@ -20,6 +21,8 @@ Assignee: sage-combinat
 
 CC:  sage-combinat brant@math.ucdavis.edu
 
+Keywords: Branching rules
+
 This corrects a minor problem with branching rules in weyl_characters.py.
 
 Previously branching rules SO(m+n)->SO(m)xSO(n) were implemented using
@@ -33,6 +36,9 @@ for such cases.
 
 I also took the chance to revise the documentation since what was said
 before about rule="symmetric" was misleading.
+
+Minor bugfix in weightring: 0 in weight lattice should coerce to 1 not 0 in weight ring.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8411
 

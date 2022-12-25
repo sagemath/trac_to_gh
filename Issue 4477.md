@@ -1,22 +1,23 @@
-# Issue 4477: [with patch; needs review] Allow exp() function for PowerSeriesRing element to compute with valid non-zero constant term
+# Issue 4477: [with patch; positive review] Allow exp() function for PowerSeriesRing element to compute with valid non-zero constant term
 
 archive/issues_004477.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  dmharvey\n\nThe patch posted against this ticket enhances the exp() function for PowerSeriesRing elements and allows it to compute with valid non-zero constant terms in the power series.\n\nPreviously: f.exp() would return an error \"Constant term must be zero\" if f[0] != 0\n\nWith the patch: f.exp() checks if f[0].exp() is at all defined and in the case it is defined, whether f[0].exp() belongs to the base ring of f. If both the conditions are satisfied, f.exp() is returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4477\n\n",
+    "body": "Assignee: sengupta\n\nCC:  dmharvey\n\nThe patch posted against this ticket enhances the exp() function for PowerSeriesRing elements and allows it to compute with valid non-zero constant terms in the power series.\n\nPreviously: f.exp() would return an error \"Constant term must be zero\" if f[0] != 0\n\nWith the patch: f.exp() checks if f[0].exp() is at all defined and in the case it is defined, whether f[0].exp() belongs to the base ring of f. If both the conditions are satisfied, f.exp() is returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4477\n\n",
+    "closed_at": "2008-12-10T07:54:39Z",
     "created_at": "2008-11-09T07:44:08Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch; needs review] Allow exp() function for PowerSeriesRing element to compute with valid non-zero constant term",
+    "title": "[with patch; positive review] Allow exp() function for PowerSeriesRing element to compute with valid non-zero constant term",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4477",
     "user": "https://trac.sagemath.org/admin/accounts/users/sengupta"
 }
 ```
-Assignee: somebody
+Assignee: sengupta
 
 CC:  dmharvey
 

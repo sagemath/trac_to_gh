@@ -1,9 +1,10 @@
-# Issue 5216: Update bzip2 to 1.0.5 release
+# Issue 5216: [with patch, needs review] Update bzip2 to 1.0.5 release
 
 archive/issues_005216.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is a security issue:\n\n```\nVersion 1.0.5 removes a potential security vulnerability (CERT-FI 20469 \nas it applies to bzip2) in versions 1.0.4 and earlier, so all users are \nrecommended to upgrade immediately.\n```\nand we have been shipping an vulnerable bzip2 release for a while. So upgrade :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5216\n\n",
+    "body": "Assignee: @mwhansen\n\nThis is a security issue:\n\n```\nVersion 1.0.5 removes a potential security vulnerability (CERT-FI 20469 \nas it applies to bzip2) in versions 1.0.4 and earlier, so all users are \nrecommended to upgrade immediately.\n```\nand we have been shipping an vulnerable bzip2 release for a while. So upgrade :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5216\n\n",
+    "closed_at": "2009-02-20T14:26:59Z",
     "created_at": "2009-02-09T12:23:44Z",
     "labels": [
         "component: packages: standard",
@@ -11,13 +12,13 @@ archive/issues_005216.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Update bzip2 to 1.0.5 release",
+    "title": "[with patch, needs review] Update bzip2 to 1.0.5 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5216",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 This is a security issue:
 

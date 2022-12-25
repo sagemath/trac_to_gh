@@ -1,22 +1,23 @@
-# Issue 935: remove no longer present files from the sage repo
+# Issue 935: fix problem where some files don't show up in distributions (missing in MANIFEST.in)
 
 archive/issues_000935.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWell, the title says it all. Patch is against 2.8.7.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/935\n\n",
+    "body": "Assignee: cwitty\n\nWell, the title says it all. Patch is against 2.8.7.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/935\n\n",
+    "closed_at": "2007-10-28T21:40:17Z",
     "created_at": "2007-10-19T22:56:39Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "remove no longer present files from the sage repo",
+    "title": "fix problem where some files don't show up in distributions (missing in MANIFEST.in)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/935",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
 Well, the title says it all. Patch is against 2.8.7.
 

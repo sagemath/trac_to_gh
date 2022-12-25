@@ -4,6 +4,7 @@ archive/issues_007704.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  spancratz\n\n```\nsage: matrix(ZZ,4,sparse=True).det()\n...\nTypeError: charpoly() takes at most 1 positional argument (2 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7704\n\n",
+    "closed_at": "2010-01-03T21:32:11Z",
     "created_at": "2009-12-16T08:13:27Z",
     "labels": [
         "component: linear algebra",

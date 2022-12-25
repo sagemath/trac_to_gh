@@ -1,9 +1,10 @@
-# Issue 2123: bug in modular symbols setting sign on subspace
+# Issue 2123: [with patch; positive review] bug in modular symbols setting sign on subspace
 
 archive/issues_002123.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis is wrong:\n\n```\nsage: A = ModularSymbols(1,80,0,base_ring=GF(37))\n\nsage: A.plus_submodule().cuspidal_submodule().sign()\n 0\n\n```\n\nI'll fix it at some point soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2123\n\n",
+    "closed_at": "2008-02-13T07:59:27Z",
     "created_at": "2008-02-09T03:59:11Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_002123.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "bug in modular symbols setting sign on subspace",
+    "title": "[with patch; positive review] bug in modular symbols setting sign on subspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2123",
     "user": "https://github.com/craigcitro"

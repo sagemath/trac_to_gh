@@ -1,16 +1,17 @@
-# Issue 1579: memleak in GSL's ComplexDoubleVector
+# Issue 1579: [with patch] memleak in GSL's ComplexDoubleVector
 
 archive/issues_001579.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nDoctesting numerical.py shows the following leak:\n\n```\n==18034== 6,528 (1,840 direct, 4,688 indirect) bytes in 46 blocks are definitely lost in loss record 7,184 of 7,898\n==18034==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==18034==    by 0xA244297: gsl_vector_complex_alloc (init_source.c:32)\n==18034==    by 0xA244358: gsl_vector_complex_calloc (init_source.c:64)\n==18034==    by 0x16921F0E: __pyx_pf_4sage_7modules_21complex_double_vector_31ComplexDoubleVectorSpaceElement___init__ (comp\nlex_double_vector.c:2529)\n==18034==    by 0x458E40: type_call (typeobject.c:436)\n==18034==    by 0x415542: PyObject_Call (abstract.c:1860)\n==18034==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==18034==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==18034==    by 0x4CE057: function_call (funcobject.c:517)\n==18034==    by 0x415542: PyObject_Call (abstract.c:1860)\n==18034==    by 0x41BC62: instancemethod_call (classobject.c:2497)\n==18034==    by 0x415542: PyObject_Call (abstract.c:1860)\n\n==18034== LEAK SUMMARY:\n==18034==    definitely lost: 1,936 bytes in 50 blocks.\n==18034==    indirectly lost: 4,928 bytes in 106 blocks.\n==18034==      possibly lost: 324,343 bytes in 921 blocks.\n==18034==    still reachable: 30,248,680 bytes in 211,765 blocks.\n==18034==         suppressed: 0 bytes in 0 blocks.\n```\nWith the patch I will attach shortly I get:\n\n```\n==18694== LEAK SUMMARY:\n==18694==    definitely lost: 96 bytes in 4 blocks.\n==18694==    indirectly lost: 240 bytes in 14 blocks.\n==18694==      possibly lost: 324,343 bytes in 921 blocks.\n==18694==    still reachable: 30,248,248 bytes in 211,748 blocks.\n==18694==         suppressed: 0 bytes in 0 blocks.\n```\nSage with the patch passes testall and valgrinding the doctest doesn't show any problems.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1579\n\n",
+    "closed_at": "2007-12-21T22:19:54Z",
     "created_at": "2007-12-21T08:32:45Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "memleak in GSL's ComplexDoubleVector",
+    "title": "[with patch] memleak in GSL's ComplexDoubleVector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1579",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

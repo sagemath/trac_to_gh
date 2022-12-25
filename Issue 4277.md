@@ -1,9 +1,10 @@
-# Issue 4277: [with patch, needs review] improve doctest coverage of ell_point.py
+# Issue 4277: [with patch, positive review] improve doctest coverage of ell_point.py
 
 archive/issues_004277.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe patch improves the doctest coverage of ell_point.py to 100%. However, a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\nAlso, I believe ell_padic.py should be removed, since it is said it is deprecated, and it does\nnot seem to be used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4277\n\n",
+    "closed_at": "2008-10-20T14:02:55Z",
     "created_at": "2008-10-13T19:48:41Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_004277.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] improve doctest coverage of ell_point.py",
+    "title": "[with patch, positive review] improve doctest coverage of ell_point.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4277",
     "user": "https://github.com/zimmermann6"

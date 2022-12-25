@@ -1,15 +1,17 @@
-# Issue 8364: Make Cbc support multithread. Other LP solvers too if available
+# Issue 8364: Forward options like "solver" in all the functions using LP
 
 archive/issues_008364.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @jasongrout @rlmill @wdjoyner\n\nCbc supports multithread, and it is a shame Sage does not tell it to ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8364\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @jasongrout @rlmill @wdjoyner\n\nIt was impossible to force the use of GLPK instead of Cbc or Cplex in all the functions using LP ! \n\nNot anymore !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8364\n\n",
+    "closed_at": "2010-06-03T04:21:32Z",
     "created_at": "2010-02-25T15:47:15Z",
     "labels": [
-        "component: numerical"
+        "component: graph theory",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
-    "title": "Make Cbc support multithread. Other LP solvers too if available",
+    "title": "Forward options like \"solver\" in all the functions using LP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8364",
     "user": "https://github.com/nathanncohen"
@@ -19,7 +21,9 @@ Assignee: jkantor
 
 CC:  @jasongrout @rlmill @wdjoyner
 
-Cbc supports multithread, and it is a shame Sage does not tell it to ! :-)
+It was impossible to force the use of GLPK instead of Cbc or Cplex in all the functions using LP ! 
+
+Not anymore !
 
 Nathann
 

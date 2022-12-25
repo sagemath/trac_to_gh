@@ -1,22 +1,23 @@
-# Issue 6150: numerical noise issues in 4.0.rc1
+# Issue 6150: [with patch, positive review] numerical noise issues in 4.0.rc1
 
 archive/issues_006150.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\n\n       sage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n       sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n\nsage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/matrix/matrix2.pyx\", line 4964:\n    sage: m.change_ring(CDF).eigenvalues() # again for display purposes\nExpected:\n    [10.463115298 - 4.98835989975e-16*I, 7.42365754809 - 5.05298436852e-16*I, 3.36964641458 + 5.59670199836e-17*I, 1.25904669699 + 4.34508443713e-17*I,\n0.00689184179485 - 5.75358699674e-17*I, 0.330700789655 + 5.1816322259e-16*I]\nGot:\n    [10.463115298 - 4.46500755169e-16*I, 7.42365754809 + 1.02246204259e-16*I, 3.36964641458 - 2.25910315504e-16*I, 1.25904669699 + 7.13217318887e-17*I,\n0.00689184179485 - 3.00110164897e-16*I, 0.330700789655 + 1.23712186398e-16*I]\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_81\n\nsage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/symbolic/expression.pyx\", line 4395:\n    sage: maxima('atanh(0.5)')\nExpected:\n    .5493061443340548\nGot:\n    .5493061443340549\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/symbolic/expression.pyx\", line 946:\n    sage: hash(x^y)\nExpected:\n    4043309056\nGot:\n    -251658240\n**********************************************************************\n2 items had failures:\n   1 of   9 in __main__.example_115\n   1 of  14 in __main__.example_33\n***Test Failed*** 2 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6150\n\n",
+    "body": "Assignee: @mwhansen\n\n```\n\n       sage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n       sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n\nsage -t  \"devel/sage/sage/matrix/matrix2.pyx\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/matrix/matrix2.pyx\", line 4964:\n    sage: m.change_ring(CDF).eigenvalues() # again for display purposes\nExpected:\n    [10.463115298 - 4.98835989975e-16*I, 7.42365754809 - 5.05298436852e-16*I, 3.36964641458 + 5.59670199836e-17*I, 1.25904669699 + 4.34508443713e-17*I,\n0.00689184179485 - 5.75358699674e-17*I, 0.330700789655 + 5.1816322259e-16*I]\nGot:\n    [10.463115298 - 4.46500755169e-16*I, 7.42365754809 + 1.02246204259e-16*I, 3.36964641458 - 2.25910315504e-16*I, 1.25904669699 + 7.13217318887e-17*I,\n0.00689184179485 - 3.00110164897e-16*I, 0.330700789655 + 1.23712186398e-16*I]\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_81\n\nsage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/symbolic/expression.pyx\", line 4395:\n    sage: maxima('atanh(0.5)')\nExpected:\n    .5493061443340548\nGot:\n    .5493061443340549\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/symbolic/expression.pyx\", line 946:\n    sage: hash(x^y)\nExpected:\n    4043309056\nGot:\n    -251658240\n**********************************************************************\n2 items had failures:\n   1 of   9 in __main__.example_115\n   1 of  14 in __main__.example_33\n***Test Failed*** 2 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6150\n\n",
+    "closed_at": "2009-05-28T19:12:06Z",
     "created_at": "2009-05-28T15:30:24Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "numerical noise issues in 4.0.rc1",
+    "title": "[with patch, positive review] numerical noise issues in 4.0.rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6150",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 ```
 

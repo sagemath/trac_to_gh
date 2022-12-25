@@ -1,17 +1,18 @@
-# Issue 5943: Sage 3.4.2.a0: prime_pi(2^50) segfaults
+# Issue 5943: Sage 3.4.2.a0: len(prime_range(2^50)) segfaults
 
 archive/issues_005943.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  boothby @orlitzky\n\nThis is *bad*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5943\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  boothby @orlitzky\n\nThis ticket used to be about prime_pi() segfaulting, but due to a mixup of versions used and switching to a new algorithm in 3.4.2.a0 the cause is the following:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.2.final$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: len(prime_range(2^50))\n/scratch/mabshoff/sage-3.4.2.final/local/bin/sage-sage: line 198: 13833 Segmentation fault      sage-ipython \"$@\" -i\n```\n| Sage Version 3.4.2.rc0, Release Date: 2009-04-30                   |\n| Type notebook() for the GUI, and license() for information.        |\nAlex's comments are about the old ticket. This problem with wrong results has been moved to #5963.\n\nCheers,\n\nMichael\n\n---\n\nFixed in #11741.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5943\n\n",
+    "closed_at": "2012-04-22T19:53:54Z",
     "created_at": "2009-04-29T22:45:19Z",
     "labels": [
         "component: number theory",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Sage 3.4.2.a0: prime_pi(2^50) segfaults",
+    "title": "Sage 3.4.2.a0: len(prime_range(2^50)) segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5943",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -21,11 +22,28 @@ Assignee: @williamstein
 
 CC:  boothby @orlitzky
 
-This is *bad*.
+This ticket used to be about prime_pi() segfaulting, but due to a mixup of versions used and switching to a new algorithm in 3.4.2.a0 the cause is the following:
+
+```
+mabshoff@sage:/scratch/mabshoff/sage-3.4.2.final$ ./sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: len(prime_range(2^50))
+/scratch/mabshoff/sage-3.4.2.final/local/bin/sage-sage: line 198: 13833 Segmentation fault      sage-ipython "$@" -i
+```
+| Sage Version 3.4.2.rc0, Release Date: 2009-04-30                   |
+| Type notebook() for the GUI, and license() for information.        |
+Alex's comments are about the old ticket. This problem with wrong results has been moved to #5963.
 
 Cheers,
 
 Michael
+
+---
+
+Fixed in #11741.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5943
 

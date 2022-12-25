@@ -1,9 +1,10 @@
-# Issue 2862: [with patch, needs review] Sage 3.0.alpha2: fix tex problems
+# Issue 2862: [with patch, positive review] Sage 3.0.alpha2: fix tex problems
 
 archive/issues_002862.json:
 ```json
 {
     "body": "Assignee: tba\n\nThere are various new TeX problems when building the documentation. Patches coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2862\n\n",
+    "closed_at": "2008-04-09T08:45:10Z",
     "created_at": "2008-04-09T07:42:35Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002862.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] Sage 3.0.alpha2: fix tex problems",
+    "title": "[with patch, positive review] Sage 3.0.alpha2: fix tex problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2862",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

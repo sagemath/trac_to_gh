@@ -3,7 +3,8 @@
 archive/issues_007759.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @williamstein @dimpase\n\nSince sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. \n\nI'll update the Wili regularly. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7759\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein @dimpase\n\nKeywords: Solaris README\n\nSince sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. \n\nI'll update the Wili regularly. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7759\n\n",
+    "closed_at": "2020-07-14T16:33:33Z",
     "created_at": "2009-12-24T10:20:46Z",
     "labels": [
         "component: porting: solaris",
@@ -19,6 +20,8 @@ archive/issues_007759.json:
 Assignee: drkirkby
 
 CC:  @williamstein @dimpase
+
+Keywords: Solaris README
 
 Since sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. 
 

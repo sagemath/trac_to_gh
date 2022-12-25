@@ -1,16 +1,17 @@
-# Issue 5880: [with patch; needs review] notebook -- greatly reduce the number of actions that trigger taking a snapshot
+# Issue 5880: [with patch; positive review] notebook -- greatly reduce the number of actions that trigger taking a snapshot
 
 archive/issues_005880.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @rbeezer\n\nWith the attached patch, you get snapshots when you click the save button, and that's about it (I hope). \n\nThis patch simply deletes a bunch of calls to save_snapshot that were all over the place.   You'll still get snapshots, but not every time you blink. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5880\n\n",
+    "closed_at": "2009-04-30T09:35:49Z",
     "created_at": "2009-04-23T20:31:10Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch; needs review] notebook -- greatly reduce the number of actions that trigger taking a snapshot",
+    "title": "[with patch; positive review] notebook -- greatly reduce the number of actions that trigger taking a snapshot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5880",
     "user": "https://github.com/williamstein"

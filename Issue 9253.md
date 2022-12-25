@@ -4,6 +4,7 @@ archive/issues_009253.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9247 -- since this ticket still needs work, I'm marking the current ticket as needs work too, although it should be ready to go.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9253\n\n",
+    "closed_at": "2010-08-09T09:50:30Z",
     "created_at": "2010-06-17T18:23:51Z",
     "labels": [
         "component: elliptic curves",

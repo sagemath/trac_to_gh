@@ -3,7 +3,8 @@
 archive/issues_008736.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nFrom #sage-devel:\n<wjp> sage: R.<x> = GF(2)[]\n<wjp> sage: (x^2).radical()\n<wjp> 1\n\nIssue created by migration from https://trac.sagemath.org/ticket/8736\n\n",
+    "body": "Assignee: @aghitza\n\nFrom #sage-devel: \n\n^<wjp> sage: R.<x> = GF(2)[]\n<wjp> sage: (x!^2).radical()\n<wjp> 1^\n\nIssue created by migration from https://trac.sagemath.org/ticket/8736\n\n",
+    "closed_at": "2010-04-29T04:58:22Z",
     "created_at": "2010-04-21T09:43:31Z",
     "labels": [
         "component: algebra",
@@ -19,10 +20,11 @@ archive/issues_008736.json:
 ```
 Assignee: @aghitza
 
-From #sage-devel:
-<wjp> sage: R.<x> = GF(2)[]
-<wjp> sage: (x^2).radical()
-<wjp> 1
+From #sage-devel: 
+
+^<wjp> sage: R.<x> = GF(2)[]
+<wjp> sage: (x!^2).radical()
+<wjp> 1^
 
 Issue created by migration from https://trac.sagemath.org/ticket/8736
 

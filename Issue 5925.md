@@ -1,16 +1,17 @@
-# Issue 5925: [with patch, needs review] Improve speed of CombinatorialAlgebra.multiply()
+# Issue 5925: [with patch, positive review] Improve speed of CombinatorialAlgebra.multiply()
 
 archive/issues_005925.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n- Treat the case where _multiply_basis returns a monomial specially, to avoid creating lots of temporary dictionaries.  Speeds things up significantly.\n- Use z_elt.get(m,ABRzero) to provide a default value.  Faster.\n- Pull left_c * right_c out of inner loop.  Didn't time this, but it must be faster.\n- Replace first use of BR with ABR so that BR isn't used twice in the same function for different rings.\n- Add doctests so the four major cases are all tested locally.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5925\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n- Treat the case where _multiply_basis returns a monomial specially, to avoid creating lots of temporary dictionaries.  Speeds things up significantly.\n\n\n- Use z_elt.get(m,ABRzero) to provide a default value.  Faster.\n\n\n- Pull left_c * right_c out of inner loop.  Didn't time this, but it must be faster.\n\n\n- Replace first use of BR with ABR so that BR isn't used twice in the same function for different rings.\n\n\n- Add doctests so the four major cases are all tested locally.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5925\n\n",
+    "closed_at": "2009-06-04T19:23:05Z",
     "created_at": "2009-04-29T01:04:40Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] Improve speed of CombinatorialAlgebra.multiply()",
+    "title": "[with patch, positive review] Improve speed of CombinatorialAlgebra.multiply()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5925",
     "user": "https://github.com/jdchristensen"
@@ -21,10 +22,19 @@ Assignee: @mwhansen
 CC:  sage-combinat
 
 - Treat the case where _multiply_basis returns a monomial specially, to avoid creating lots of temporary dictionaries.  Speeds things up significantly.
+
+
 - Use z_elt.get(m,ABRzero) to provide a default value.  Faster.
+
+
 - Pull left_c * right_c out of inner loop.  Didn't time this, but it must be faster.
+
+
 - Replace first use of BR with ABR so that BR isn't used twice in the same function for different rings.
+
+
 - Add doctests so the four major cases are all tested locally.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5925
 

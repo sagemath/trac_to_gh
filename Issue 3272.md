@@ -1,16 +1,17 @@
-# Issue 3272: [with patch, needs review] Bug in sparse polynomials over finite fields
+# Issue 3272: [with patch, positive review] Bug in sparse polynomials over finite fields
 
 archive/issues_003272.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nSomeone reported the following bug on `sage-support`:\n\n```\nsage: A.<T> = PolynomialRing(Integers(5),sparse=True)\nsage: f = T^2+1\nsage: B = A.quo(f)\nsage: C.<s> = PolynomialRing(B)\nUnivariate Quotient Polynomial Ring in Tbar over Ring of integers\nmodulo 5 with modulus T^2 + 1\nTraceback (most recent call last):\n...\nTypeError: gen must be of PARI type t_INT\n```\n\nThe problem was two-fold: `polynomial_element_generic.__init__` had two `elif` clauses in the wrong order (so that the code for pari `gen`s was never run), and further the code for pari `gen`s was wrong. This patch fixes both, and adds a doctest.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3272\n\n",
+    "closed_at": "2008-05-23T07:05:08Z",
     "created_at": "2008-05-22T21:49:12Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] Bug in sparse polynomials over finite fields",
+    "title": "[with patch, positive review] Bug in sparse polynomials over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3272",
     "user": "https://github.com/craigcitro"

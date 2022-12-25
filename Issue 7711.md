@@ -4,6 +4,7 @@ archive/issues_007711.json:
 ```json
 {
     "body": "Assignee: @malb\n\nConsider the following example:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z   \nsage: p.integral()\n1/2*y^2 + (x + z)*y\n```\nNote the leading coefficient 1/2 is not reduced mod 2147483647.\n\nFor smaller p this seems to work:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483629))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z\nsage: p.integral()\n-1073741814*y^2 + (x + z)*y\n```\nIt works also when the smaller ring P has only one variable:\n\n```\nsage: P.<x> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y\nsage: p.integral()\n1073741824*y^2 + x*y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7711\n\n",
+    "closed_at": "2012-04-02T15:23:49Z",
     "created_at": "2009-12-16T12:21:31Z",
     "labels": [
         "component: commutative algebra",

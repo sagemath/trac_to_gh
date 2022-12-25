@@ -1,16 +1,17 @@
-# Issue 8270: 'make check' on exits with 0 on a failure.
+# Issue 8270: 'make check' exits with exit code 0 on a failure.
 
 archive/issues_008270.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nThe iconv package, which will soon be added to sage (#8191) has the facility to run \n\n```\nmake check\n```\n\nHowever, despite getting a test failure on Solaris 10 (SPARC), the makefile is still exiting with an exit code of 0, so any scripts which rely on testing iconv by relying on a failure of 'make check' to exit properly with a non-zero exit code will not work as desired. \n\nI'll report this to the iconv developers. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8270\n\n",
+    "closed_at": "2010-02-16T23:30:14Z",
     "created_at": "2010-02-15T10:23:56Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "'make check' on exits with 0 on a failure.",
+    "title": "'make check' exits with exit code 0 on a failure.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8270",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

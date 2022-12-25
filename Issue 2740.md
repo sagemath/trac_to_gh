@@ -1,15 +1,16 @@
-# Issue 2740: Downloading and uploading folders of worksheets
+# Issue 2740: [with patch, positive review] Downloading and uploading folders of worksheets
 
 archive/issues_002740.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTo ease migration between, for example, vmware images, it would be nice to be able to download and upload entire folders of worksheets, instead of just one at a time.  Or even beyond that, download/upload everything related to your notebook account.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2740\n\n",
+    "closed_at": "2009-04-30T07:29:05Z",
     "created_at": "2008-03-31T15:54:01Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Downloading and uploading folders of worksheets",
+    "title": "[with patch, positive review] Downloading and uploading folders of worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2740",
     "user": "https://github.com/jasongrout"

@@ -1,22 +1,23 @@
-# Issue 4368: Create a function which gets an attributed from an object and calls it with specified arguments and keywords
+# Issue 4368: [with patch, positive review] Create a function which gets an attribute from an object and calls it with specified arguments and keywords
 
 archive/issues_004368.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nExample:\n\n```\nsage: f = attrcall('r_core', 3); f\n*.r_core(3)\nsage: [f(p) for p in Partitions(5)]\n[[2], [1, 1], [1, 1], [3, 1, 1], [2], [2], [1, 1]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4368\n\n",
+    "body": "Assignee: @mwhansen\n\nExample:\n\n```\nsage: f = attrcall('r_core', 3); f\n*.r_core(3)\nsage: [f(p) for p in Partitions(5)]\n[[2], [1, 1], [1, 1], [3, 1, 1], [2], [2], [1, 1]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4368\n\n",
+    "closed_at": "2008-10-31T00:24:52Z",
     "created_at": "2008-10-25T21:33:46Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Create a function which gets an attributed from an object and calls it with specified arguments and keywords",
+    "title": "[with patch, positive review] Create a function which gets an attribute from an object and calls it with specified arguments and keywords",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4368",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
 Example:
 

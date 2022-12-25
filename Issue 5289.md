@@ -1,9 +1,10 @@
-# Issue 5289: gdmodule fails to build on Linux/Solaris systems without a system wide libpng
+# Issue 5289: [with spkg, positive review] gdmodule fails to build on Linux/Solaris systems without a system wide libpng
 
 archive/issues_005289.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is fallout from the libpng -> libpng12 transition and trivial to fix:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_LIBGD -DHAVE_LIBZ -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -I/home/mabshoff/build-3.3.rc1/sage-3.3.rc1-cicero-gcc-433/local/include -I/usr/include -I/home/mabshoff/build-3.3.rc1/sage-3.3.rc1-cicero-gcc-433/local/include/python2.5 -c _gdmodule.c -o build/temp.linux-i686-2.5/_gdmodule.o\n_gdmodule.c:152: warning: function declaration isn\u2019t a prototype\n_gdmodule.c:169: warning: function declaration isn\u2019t a prototype\n_gdmodule.c: In function \u2018image_string\u2019:\n_gdmodule.c:993: warning: pointer targets in passing argument 5 of \u2018gdImageString\u2019 differ in signedness\n_gdmodule.c: In function \u2018image_string16\u2019:\n_gdmodule.c:1008: warning: passing argument 5 of \u2018gdImageString16\u2019 from incompatible pointer type\n_gdmodule.c: In function \u2018image_stringup\u2019:\n_gdmodule.c:1022: warning: pointer targets in passing argument 5 of \u2018gdImageStringUp\u2019 differ in signedness\n_gdmodule.c: In function \u2018image_stringup16\u2019:\n_gdmodule.c:1037: warning: passing argument 5 of \u2018gdImageStringUp16\u2019 from incompatible pointer type\ngcc -pthread -shared build/temp.linux-i686-2.5/_gdmodule.o -L/home/mabshoff/build-3.3.rc1/sage-3.3.rc1-cicero-gcc-433/local/lib -L/usr/lib -lgd -lz -lfreetype -lpng -o build/lib.linux-i686-2.5/_gd.so\n/usr/local/binutils-2.19.1/x86-Linux-fc-gcc-4.3.3/bin/ld: cannot find -lpng\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nFailure to build gdmodule\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5289\n\n",
+    "closed_at": "2009-02-17T18:52:02Z",
     "created_at": "2009-02-17T02:16:24Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005289.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "gdmodule fails to build on Linux/Solaris systems without a system wide libpng",
+    "title": "[with spkg, positive review] gdmodule fails to build on Linux/Solaris systems without a system wide libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5289",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

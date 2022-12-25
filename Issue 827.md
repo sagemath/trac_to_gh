@@ -1,16 +1,17 @@
-# Issue 827: nfrootsof1 from Pari
+# Issue 827: [with patch, with positive review] nfrootsof1 from Pari
 
 archive/issues_000827.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nImport nfrootsof1 from Pari so as to count the number of roots of unity in a number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/827\n\n",
+    "closed_at": "2008-01-20T00:42:38Z",
     "created_at": "2007-10-05T00:00:23Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "nfrootsof1 from Pari",
+    "title": "[with patch, with positive review] nfrootsof1 from Pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/827",
     "user": "https://github.com/jvoight"

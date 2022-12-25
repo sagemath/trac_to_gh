@@ -1,16 +1,17 @@
-# Issue 4063: properly escape the titles of worksheets
+# Issue 4063: [with patch, positive review] properly escape the titles of worksheets
 
 archive/issues_004063.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nCurrently the :8102 server has several javascript popups that come up when viewing the list of published worksheets.  Apparently at least one of these worksheets includes javascript code as part of the title.  This is really annoying right now, but could be more dangerous in the future.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4063\n\n",
+    "closed_at": "2008-09-16T06:53:32Z",
     "created_at": "2008-09-04T16:22:52Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "properly escape the titles of worksheets",
+    "title": "[with patch, positive review] properly escape the titles of worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4063",
     "user": "https://github.com/jasongrout"

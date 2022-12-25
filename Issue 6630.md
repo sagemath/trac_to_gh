@@ -1,16 +1,17 @@
-# Issue 6630: The empty species exists !!!
+# Issue 6630: [with patch, positive review] The empty species exists !!!
 
 archive/issues_006630.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nKeywords: species zero\n\nI'm writing a patch which create the empty species. Before the patch I didn't find any way to create it...\nIt is the species which contains no structure at all and as such does not seems very useful. However, it is the zero of the semi-ring of the species and may be needed when you do computation on species, for example to give the default value for the function sum()...\n\nAnd this is yet another patch from me about empty objects :)\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6630\n\n",
+    "closed_at": "2009-09-26T05:10:38Z",
     "created_at": "2009-07-26T20:49:01Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "The empty species exists !!!",
+    "title": "[with patch, positive review] The empty species exists !!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6630",
     "user": "https://github.com/hivert"

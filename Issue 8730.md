@@ -4,9 +4,11 @@ archive/issues_008730.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @dimpase drkirkby\n\nThe current problem with this spkg is that gmp must be in SAGE_LOCAL, and not in /usr/local This stops the thing building on Solaris, see http://groups.google.com/group/sage-release/msg/35b0c600a5ef250f and other messages in this thread. And gmpdir=/usr/local is hardwired in Makefile.am.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8730\n\n",
+    "closed_at": "2010-04-24T00:05:13Z",
     "created_at": "2010-04-20T17:30:50Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",

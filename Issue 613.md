@@ -3,7 +3,8 @@
 archive/issues_000613.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nErrors due to the redefinition of 0^0 in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/613\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nErrors due to the redefinition of 0<sup>0</sup> in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/613\n\n",
+    "closed_at": "2007-09-07T04:29:31Z",
     "created_at": "2007-09-07T04:22:38Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +21,7 @@ Assignee: @mwhansen
 
 CC:  sage-combinat
 
-Errors due to the redefinition of 0^0 in sage.
+Errors due to the redefinition of 0<sup>0</sup> in Sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/613
 

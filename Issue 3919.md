@@ -1,16 +1,17 @@
-# Issue 3919: Selector - do not inset a lone button
+# Issue 3919: [with patch; positive review] Selector - do not inset a lone button
 
 archive/issues_003919.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nIf there is only one button in a selector, such as\n\n```\nr=[\"Reload\"]\n```\nit is not pressed in, as are selected buttons when there is more than one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3919\n\n",
+    "closed_at": "2008-08-21T21:57:26Z",
     "created_at": "2008-08-21T00:20:15Z",
     "labels": [
         "component: interact",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Selector - do not inset a lone button",
+    "title": "[with patch; positive review] Selector - do not inset a lone button",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3919",
     "user": "https://github.com/itolkov"

@@ -1,16 +1,18 @@
-# Issue 8191: Add iconv need for Solaris, and possibly Cygwin too.
+# Issue 8191: Add iconv needed for Solaris, and possibly Cygwin too
 
 archive/issues_008191.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @mwhansen @williamstein\n\nKeywords: iconv solaris cygwin\n\nThe latest version of R in Sage 2.10.1, needs a powerful version of iconv. The version of iconv in Solaris is not sufficiently powerful.  This is documented in the 'R Installation and Administration' manual under the *Solaris* section.\n\nhttp://cran.r-project.org/doc/manuals/R-admin.pdf\n\n\n#3381 added a command line option to the configure script to disable the use of iconv. \n\nFor a long time R has been reporting messages that this option would be removed, and it would be necessary to install iconv. Well that time has come.\n\n```\nchecking for cblas_cdotu_sub in vecLib framework... no\nchecking iconv.h usability... yes\nchecking iconv.h presence... yes\nchecking for iconv.h... yes\nchecking for iconv... yes\nchecking whether iconv accepts \"UTF-8\", \"latin1\" and \"UCS-*\"... no\nconfigure: error: a suitable iconv is essential\nError configuring R.\n\nreal    2m15.532s\nuser    0m47.020s\nsys    1m9.582s\nsage: An error occurred while installing r-2.10.1\n```\n\nSo we must have an inconv package. I will create one. \n\nIt looks as though this will be needed on Cygwin also - see #7319. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8191\n\n",
+    "closed_at": "2010-03-02T22:38:46Z",
     "created_at": "2010-02-05T10:32:33Z",
     "labels": [
-        "component: solaris",
+        "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Add iconv need for Solaris, and possibly Cygwin too.",
+    "title": "Add iconv needed for Solaris, and possibly Cygwin too",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8191",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

@@ -1,15 +1,16 @@
-# Issue 6888: sage-env complain about bad SAGE_ROOT environment variable with no reason
+# Issue 6888: [with patch, positive review] sage-env complain about bad SAGE_ROOT environment variable with no reason
 
 archive/issues_006888.json:
 ```json
 {
     "body": "Assignee: tbd\n\nthe $SAGE_ROOT/local/bin/sage-env has 2 small flaws.\n\n1) the script prints the following message: \n\n```\n    You must set the SAGE_ROOT environment variable or\n    run this script from the SAGE_ROOT or\n    SAGE_ROOT/local/bin/ directory.\n```\neven if SAGE_ROOT is set correctly.\n\n2) if SAGE_ROOT is set to a wrong path, it doesn't stop,\n\nThe attached patch fixes them. \n\nI am not a shell expert, so please test it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6888\n\n",
+    "closed_at": "2009-10-15T09:40:32Z",
     "created_at": "2009-09-04T12:59:01Z",
     "labels": [
         "component: build",
         "bug"
     ],
-    "title": "sage-env complain about bad SAGE_ROOT environment variable with no reason",
+    "title": "[with patch, positive review] sage-env complain about bad SAGE_ROOT environment variable with no reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6888",
     "user": "https://trac.sagemath.org/admin/accounts/users/sbarthelemy"

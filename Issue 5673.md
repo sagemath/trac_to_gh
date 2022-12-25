@@ -1,16 +1,17 @@
-# Issue 5673: [with patch, needs review] Enhanced handling of elliptic curve twists
+# Issue 5673: [with new patch, positive review] Enhanced handling of elliptic curve twists
 
 archive/issues_005673.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @categorie\n\nKeywords: elliptic curve twist\n\nThe patch does the following related things:\n\n1. Implements in ell_generic functions is_quadratic_twist(), is_quartic_twist(), is_sextic_twist(), which detect twists between curves (returning the appropriate twisting paramenter)\n2. Deprecates the EllipticCurve(j) constructor, replacing it with EllipticCurve_from_j(j).  Over Q this gives the minimal twist, i.e. a curve with the correct j and minimal conductor.\n3. Rewrites the function minimal_quadratic_twist() introduced in #4667 to use the previous function, with extra work in case j=0, 1728 since we need the minimal __quadratic__ twist, not the minimal twist.\n\nThere is likely to be a necessary change to documentation (pages 38 and 39 of the tutorial) which have not yet been made.\n\nThe patch is based on 3.4.1.alpha0 + patches at #4667.\nI have tested all files in sage/schemes/elliptic_curves.  There are two failures in sha_tate which I do not understand, so I am posting the patch anyway.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5673\n\n",
+    "closed_at": "2009-04-16T12:06:09Z",
     "created_at": "2009-04-03T11:07:49Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Enhanced handling of elliptic curve twists",
+    "title": "[with new patch, positive review] Enhanced handling of elliptic curve twists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5673",
     "user": "https://github.com/JohnCremona"

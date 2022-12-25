@@ -1,16 +1,18 @@
-# Issue 3593: dsage-interfaces -- error decompressing data
+# Issue 3593: [with patch; positive review] dsage-interfaces -- error decompressing data / errors doctesting (blocker for 3.0.4!)
 
 archive/issues_003593.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nI got this when running the test on a heavily loaded system.   It's probably an issue with reading a file that hasn't been completely written yet.  !\n\n```\nsage -t  devel/sage/sage/dsage/database/sql_functions.py (skipping) -- nodoctest.py file in directory\nsage -t  devel/sage/sage/dsage/interface/sage_interface.py **********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/dsage_interface.py\", line 466:\n    sage: j = d.block_on_jobs(d.map(f, [25,12,25,32,12]))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[10]>\", line 1, in <module>\n        j = d.block_on_jobs(d.map(f, [Integer(25),Integer(12),Integer(25),Integer(32),Integer(12)]))###line 466:\n    sage: j = d.block_on_jobs(d.map(f, [25,12,25,32,12]))\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 476, in block_on_jobs\n        j.get_job()\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 1009, in get_job\n        self._update_job(jdict)\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 820, in _update_job\n        job = expand_job(jdict)\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/database/job.py\", line 177, in expand_job\n        jdict['result'] = zlib.decompress(jdict['result'])\n    error: Error -5 while decompressing data\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/dsage_interface.py\", line 467:\n    sage: print \"ignore this\";  j # random\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[11]>\", line 1, in <module>\n        print \"ignore this\";  j # random###line 467:\n    sage: print \"ignore this\";  j # random\n    NameError: name 'j' is not defined\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_13\n***Test Failed*** 2 failures.\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_dsage_interface.pyUnhandled exception in thread started by <bound method Thread.__bootstrap of <Thread(PoolThread-twisted.internet.reactor-1, stopped)>>\nTraceback (most recent call last):\n  File \"/home/was/build/sage-3.0.4.alpha\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3593\n\n",
+    "closed_at": "2008-07-09T16:20:41Z",
     "created_at": "2008-07-07T22:13:28Z",
     "labels": [
         "component: dsage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "dsage-interfaces -- error decompressing data",
+    "title": "[with patch; positive review] dsage-interfaces -- error decompressing data / errors doctesting (blocker for 3.0.4!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3593",
     "user": "https://github.com/williamstein"

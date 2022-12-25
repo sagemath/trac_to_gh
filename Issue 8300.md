@@ -4,6 +4,7 @@ archive/issues_008300.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nUsing the properties of LLL and a height bound, we can prove (given sufficient precision) that an integer relation of bounded height either doesn't exist or is unique. This is needed, e.g.,  for provable computations of Heegner points though could be useful elsewhere as well. It is also faster.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/8300\n\n",
+    "closed_at": "2010-04-15T20:07:23Z",
     "created_at": "2010-02-19T01:41:38Z",
     "labels": [
         "component: number theory",

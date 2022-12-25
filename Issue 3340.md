@@ -1,15 +1,16 @@
-# Issue 3340: update givaro to 3.2.10 release
+# Issue 3340: [with spkg, positive review] update givaro to 3.2.11 release
 
 archive/issues_003340.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe're currently using the givaro 3.2.10rc3 release candidate; we should update to the actual release.  \n\nThe differences are somewhat substantial:\n\n[tabbott`@`debuild tmp$] diff -ur givaro-3.2.10/ ../givaro-3.2.10~rc3/ | diffstat\n<SNIP>\n 123 files changed, 883 insertions(+), 1413 deletions(-)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3340\n\n",
+    "closed_at": "2008-06-26T03:42:33Z",
     "created_at": "2008-05-30T17:40:22Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "update givaro to 3.2.10 release",
+    "title": "[with spkg, positive review] update givaro to 3.2.11 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3340",
     "user": "https://github.com/timabbott"

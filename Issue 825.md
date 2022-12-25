@@ -4,11 +4,11 @@ archive/issues_000825.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: remainder\n\nCurrently the following gives an error:\n10.23 % 2\nThe % should be extended to handle more types.\n\nIssue created by migration from https://trac.sagemath.org/ticket/825\n\n",
+    "closed_at": "2009-02-02T07:28:25Z",
     "created_at": "2007-10-04T18:42:03Z",
     "labels": [
         "component: numerical",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "extending % to more sage types",

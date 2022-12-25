@@ -1,16 +1,18 @@
-# Issue 37: preparser doesn't parse hex input:
+# Issue 37: [with patch, with positive review] preparser doesn't parse hex input:
 
 archive/issues_000037.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: 0x5\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     ZZ(0)x5\n           ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/37\n\n",
+    "closed_at": "2008-02-28T06:41:24Z",
     "created_at": "2006-09-12T23:30:00Z",
     "labels": [
         "component: basic arithmetic",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "preparser doesn't parse hex input:",
+    "title": "[with patch, with positive review] preparser doesn't parse hex input:",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/37",
     "user": "https://github.com/williamstein"

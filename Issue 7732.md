@@ -4,6 +4,7 @@ archive/issues_007732.json:
 ```json
 {
     "body": "Assignee: tbd\n\nFigure out what these binary files are and if we can remove them:\n\n```\n         ecl-9.10.2-20091105cvs.p0/src/contrib/encodings/\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7732\n\n",
+    "closed_at": "2010-01-03T22:19:55Z",
     "created_at": "2009-12-18T06:19:16Z",
     "labels": [
         "component: distribution",

@@ -1,9 +1,10 @@
-# Issue 4771: notebook -- get rid of these debug log messages I put in: "Dumping ..."
+# Issue 4771: [with patch, positive review] notebook -- get rid of these debug log messages I put in: "Dumping ..."
 
 archive/issues_004771.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe messages:\n\n```\n2008-12-12 10:56:37-0800 [HTTPChannel,53,24.143.70.101] Dumping admin history to 'sage_notebook/worksheets/admin/history.sobj'\n```\nthat the notebook prints out for no good reason should be deleted by commenting out the line in the notebook server code that prints them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4771\n\n",
+    "closed_at": "2008-12-13T09:36:11Z",
     "created_at": "2008-12-12T19:04:12Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_004771.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "notebook -- get rid of these debug log messages I put in: \"Dumping ...\"",
+    "title": "[with patch, positive review] notebook -- get rid of these debug log messages I put in: \"Dumping ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4771",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_007320.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  mvngu\n\nThe functions `search_src`, `search_def`, and `search_src` are case-sensitive and have been for a while.  The documentation says that they're not.  This patch changes the documentation to reflect this, and adds one doctest to verify it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7320\n\n",
+    "closed_at": "2009-10-31T15:50:45Z",
     "created_at": "2009-10-27T05:15:26Z",
     "labels": [
         "component: misc",

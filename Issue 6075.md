@@ -1,9 +1,10 @@
-# Issue 6075: dsage is not yet entirely optional
+# Issue 6075: [with patch, with positive review] dsage is not yet entirely optional
 
 archive/issues_006075.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nCC:  @craigcitro\n\nKeywords: dsage optional spkg\n\nFor 4.0, dsage was made an optional spkg.  However, if I rm -rf build/ and sage -ba, the newly built tree has no dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6075\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @craigcitro\n\nKeywords: dsage optional spkg\n\nFor 4.0, dsage was made an optional spkg.  However, if I rm -rf build/ and sage -ba, the newly built tree has no dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6075\n\n",
+    "closed_at": "2009-05-28T05:07:16Z",
     "created_at": "2009-05-18T21:02:20Z",
     "labels": [
         "component: dsage",
@@ -11,13 +12,13 @@ archive/issues_006075.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "dsage is not yet entirely optional",
+    "title": "[with patch, with positive review] dsage is not yet entirely optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6075",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @yqiang
+Assignee: @mwhansen
 
 CC:  @craigcitro
 

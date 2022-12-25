@@ -1,38 +1,36 @@
-# Issue 9939: Fix CHomP-related doctest errors
+# Issue 9939: Fix equality/inequality for AdditiveAbelianGroup
 
 archive/issues_009939.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @jhpalmieri @rbeezer @loefflerd @novoselt @vbraun\n\nWith the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/cell_complex.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py\", line 470:\n    sage: S2.homology(dim=2, generators=True)  # optional - CHomP\nExpected:\n    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])\nGot:\n    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])\n```\nThese vary from run to run:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/tests.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 10:\n    sage: test_random_chain_complex(trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 4 according to CHomP: C11\n    Homology in dimension 4 according to Sage: C11\n    Chain complex: {4: [], 5: 27 x 29 dense matrix over Integer Ring}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 53567958912087940719696565588289296809\n    ValueError()\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 11:\n    sage: test_random_chain_complex(level=2, trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 36 according to CHomP: 0\n    Homology in dimension 36 according to Sage: 0\n    Chain complex: {36: 58 x 37 sparse matrix over Integer Ring, 37: 0 x 58 dense matrix over Integer Ring}   \n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 194608326129552863405536402610270411271\n    ValueError()\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 12:\n    sage: test_random_chain_complex(level=4, trials=20)  # long time # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 125 according to CHomP: Z^56\n    Homology in dimension 125 according to Sage: Z^56\n    Chain complex: {125: 0 x 173 dense matrix over Integer Ring, 126: 173 x 117 dense matrix over Integer Ring}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 35064267617427002531027772896998931605\n    ValueError()\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 72:\n    sage: test_random_chain_complex(trials=2)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension -43 according to CHomP: 0\n    Homology in dimension -43 according to Sage: 0\n    Chain complex: {-43: 41 x 0 dense matrix over Integer Ring, -42: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 198276055669197070047963781696502632135\n    ValueError()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9940\n\n",
+    "body": "Assignee: joyner\n\nCC:  @jhpalmieri @rbeezer @loefflerd @novoselt @vbraun\n\nInequality for the class `AdditiveAbelianGroup` has a bug:\n\n```\nsage: AdditiveAbelianGroup([0,0]) == AdditiveAbelianGroup([0,0]) \nTrue\nsage: AdditiveAbelianGroup([0,0]) != AdditiveAbelianGroup([0,0]) \nTrue\n```\nThis causes doctest failures as reported by mpatel: with the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures.  These vary from run to run:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/tests.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 10:\n    sage: test_random_chain_complex(trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 4 according to CHomP: C11\n    Homology in dimension 4 according to Sage: C11\n    Chain complex: {4: [], 5: 27 x 29 dense matrix over Integer Ring}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 53567958912087940719696565588289296809\n    ValueError()\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 11:\n    sage: test_random_chain_complex(level=2, trials=20)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 36 according to CHomP: 0\n    Homology in dimension 36 according to Sage: 0\n    Chain complex: {36: 58 x 37 sparse matrix over Integer Ring, 37: 0 x 58 dense matrix over Integer Ring}   \n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 194608326129552863405536402610270411271\n    ValueError()\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 12:\n    sage: test_random_chain_complex(level=4, trials=20)  # long time # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension 125 according to CHomP: Z^56\n    Homology in dimension 125 according to Sage: Z^56\n    Chain complex: {125: 0 x 173 dense matrix over Integer Ring, 126: 173 x 117 dense matrix over Integer Ring}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 35064267617427002531027772896998931605\n    ValueError()\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/tests.py\", line 72:\n    sage: test_random_chain_complex(trials=2)  # optional - CHomP\nExpected nothing\nGot:\n    Homology in dimension -43 according to CHomP: 0\n    Homology in dimension -43 according to Sage: 0\n    Chain complex: {-43: 41 x 0 dense matrix over Integer Ring, -42: []}\n    Random testing has revealed a problem in test_random_chain_complex\n    Please report this bug!  You may be the first\n    person in the world to have seen this problem.\n    Please include this random seed in your bug report:\n    Random seed: 198276055669197070047963781696502632135\n    ValueError()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9940\n\n",
+    "closed_at": "2010-12-02T16:09:42Z",
     "created_at": "2010-09-18T08:29:30Z",
     "labels": [
-        "component: algebraic topology",
+        "component: group theory",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Fix CHomP-related doctest errors",
+    "title": "Fix equality/inequality for AdditiveAbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9939",
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: @jhpalmieri
+Assignee: joyner
 
 CC:  @jhpalmieri @rbeezer @loefflerd @novoselt @vbraun
 
-With the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:
+Inequality for the class `AdditiveAbelianGroup` has a bug:
 
-```python
-sage -t -long -only-optional=chomp "devel/sage/sage/homology/cell_complex.py"
-**********************************************************************
-File "/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py", line 470:
-    sage: S2.homology(dim=2, generators=True)  # optional - CHomP
-Expected:
-    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])
-Got:
-    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])
 ```
-These vary from run to run:
+sage: AdditiveAbelianGroup([0,0]) == AdditiveAbelianGroup([0,0]) 
+True
+sage: AdditiveAbelianGroup([0,0]) != AdditiveAbelianGroup([0,0]) 
+True
+```
+This causes doctest failures as reported by mpatel: with the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures.  These vary from run to run:
 
 ```python
 sage -t -long -only-optional=chomp "devel/sage/sage/homology/tests.py"

@@ -4,6 +4,7 @@ archive/issues_007659.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nAttached patch fixes minor doctest errors in documentation caused by #7406 in 4.3.rc0.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7659\n\n",
+    "closed_at": "2009-12-14T16:05:47Z",
     "created_at": "2009-12-11T13:31:52Z",
     "labels": [
         "component: documentation",

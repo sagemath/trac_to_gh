@@ -4,9 +4,10 @@ archive/issues_006984.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6984\n\n",
+    "closed_at": "2013-04-28T12:46:34Z",
     "created_at": "2009-09-22T06:35:20Z",
     "labels": [
-        "component: build"
+        "component: porting: cygwin"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin port: make lapack into a dummy spkg that requires systemwide lapack",

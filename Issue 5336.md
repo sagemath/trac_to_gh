@@ -1,22 +1,23 @@
-# Issue 5336: make the live documentation in the notebook work with Sphinx
+# Issue 5336: [with patch, needs review] make the live documentation in the notebook work with Sphinx
 
 archive/issues_005336.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nI've got a patch that I'm cleaning up now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5336\n\n",
+    "body": "Assignee: @mwhansen\n\nI've got a patch that I'm cleaning up now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5336\n\n",
+    "closed_at": "2009-02-24T19:29:15Z",
     "created_at": "2009-02-22T15:48:47Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "make the live documentation in the notebook work with Sphinx",
+    "title": "[with patch, needs review] make the live documentation in the notebook work with Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5336",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 I've got a patch that I'm cleaning up now.
 

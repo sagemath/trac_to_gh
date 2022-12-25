@@ -1,15 +1,16 @@
-# Issue 4923: convert sage.plot.* docstrings to Sphinx
+# Issue 4923: [with patch, needs review] convert sage.plot.* docstrings to Sphinx (open issues at #5376)
 
 archive/issues_004923.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4923\n\n",
+    "closed_at": "2009-02-24T19:09:28Z",
     "created_at": "2009-01-01T22:55:12Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.plot.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.plot.* docstrings to Sphinx (open issues at #5376)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4923",
     "user": "https://github.com/mwhansen"

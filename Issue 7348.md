@@ -1,16 +1,16 @@
-# Issue 7348: speed up computation of multiplicative orders of finite field elements
+# Issue 7348: Speed up multiplicative order of finite field elements
 
 archive/issues_007348.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @slel\n\nKeywords: Finite Field\n\nThe function `sage.rings.finite_field_element.multiplicative_order` should use\n`sage.groups.generic.order_from_multiple` (see the example in #7324), and \nthe factorization of the order of the multiplicative group of the field \nshould be cached; see the documentation for `order_from_multiple`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7348\n\n",
+    "body": "Assignee: tbd\n\nCC:  @slel\n\nKeywords: finite field\n\nThe function `sage.rings.finite_rings.element_base.FiniteRingElement.multiplicative_order` should use\n`sage.groups.generic.order_from_multiple` (see the example in #7324), and \nthe factorization of the order of the multiplicative group of the field \nshould be cached; see the documentation for `order_from_multiple`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7348\n\n",
     "created_at": "2009-10-29T10:01:10Z",
     "labels": [
-        "component: algebra",
+        "component: finite rings",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "speed up computation of multiplicative orders of finite field elements",
+    "title": "Speed up multiplicative order of finite field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7348",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
@@ -20,9 +20,9 @@ Assignee: tbd
 
 CC:  @slel
 
-Keywords: Finite Field
+Keywords: finite field
 
-The function `sage.rings.finite_field_element.multiplicative_order` should use
+The function `sage.rings.finite_rings.element_base.FiniteRingElement.multiplicative_order` should use
 `sage.groups.generic.order_from_multiple` (see the example in #7324), and 
 the factorization of the order of the multiplicative group of the field 
 should be cached; see the documentation for `order_from_multiple`.

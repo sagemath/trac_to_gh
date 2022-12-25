@@ -1,15 +1,16 @@
-# Issue 8549: Add a cycle enumerator for Permutation Group
+# Issue 8549: Implements cycle index for permutation groups, toward Polya enumeration
 
 archive/issues_008549.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: permutation, cycle, enumeration\n\nLet G a permutation group. Each permutation of G has a cycle type. The goal of this ticket is to add a method for permutation group which return a dictionary associating for each cycle pattern, the number of permutation in G having this pattern.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8549\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: permutation groups, cycle index, Polya enumeration\n\nLet G a permutation group. Each permutation of G has a cycle type. The goal of this ticket is to add a method for permutation group which returns a symmetric function in the monomial symmetric functions whose terms are the numbers of permutation in G having the cycle type (Partition) indexing the corresponding monomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8549\n\n",
+    "closed_at": "2010-06-05T22:29:25Z",
     "created_at": "2010-03-16T20:07:53Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Add a cycle enumerator for Permutation Group",
+    "title": "Implements cycle index for permutation groups, toward Polya enumeration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8549",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
@@ -19,9 +20,9 @@ Assignee: nborie
 
 CC:  sage-combinat
 
-Keywords: permutation, cycle, enumeration
+Keywords: permutation groups, cycle index, Polya enumeration
 
-Let G a permutation group. Each permutation of G has a cycle type. The goal of this ticket is to add a method for permutation group which return a dictionary associating for each cycle pattern, the number of permutation in G having this pattern.
+Let G a permutation group. Each permutation of G has a cycle type. The goal of this ticket is to add a method for permutation group which returns a symmetric function in the monomial symmetric functions whose terms are the numbers of permutation in G having the cycle type (Partition) indexing the corresponding monomial.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8549
 

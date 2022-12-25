@@ -1,24 +1,27 @@
-# Issue 2339: xmin/xmax now broken in plot()
+# Issue 2339: [with patch, positive review] xmin/xmax now broken in plot()
 
 archive/issues_002339.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  bober mhampton @kcrisman\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
+    "body": "Assignee: somebody\n\nCC:  bober mhampton @kcrisman\n\nKeywords: plot, xmin, xmax, editor_gfurnish\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
+    "closed_at": "2008-10-26T03:18:18Z",
     "created_at": "2008-02-28T02:36:46Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "xmin/xmax now broken in plot()",
+    "title": "[with patch, positive review] xmin/xmax now broken in plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2339",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 CC:  bober mhampton @kcrisman
+
+Keywords: plot, xmin, xmax, editor_gfurnish
 
 ```
 r(t) = 1000 * t * e^(-.5 * t)

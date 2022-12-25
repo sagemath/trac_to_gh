@@ -1,21 +1,22 @@
-# Issue 4371: Add support for lazy attributes via a decorator
+# Issue 4371: [with patch, positive review] Add support for lazy attributes via a decorator
 
 archive/issues_004371.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThe lazy-attribute-...-nt patch on the sage-combinat patch servers is a first implementation of lazy attributes (see the doc in the patch).\nComments and alternative implementations welcome! See the current caveats in the doc\n\nCheers,\n\t\t\t\t\t\t\t\tNicolas\n\nIssue created by migration from https://trac.sagemath.org/ticket/4371\n\n",
+    "body": "Assignee: @nthiery\n\nThe lazy-attribute-...-nt patch on the sage-combinat patch servers is a first implementation of lazy attributes (see the doc in the patch).\nComments and alternative implementations welcome! See the current caveats in the doc\n\nCheers,\n\t\t\t\t\t\t\t\tNicolas\n\nIssue created by migration from https://trac.sagemath.org/ticket/4371\n\n",
+    "closed_at": "2009-02-14T02:29:51Z",
     "created_at": "2008-10-26T13:30:55Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Add support for lazy attributes via a decorator",
+    "title": "[with patch, positive review] Add support for lazy attributes via a decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4371",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: cwitty
+Assignee: @nthiery
 
 The lazy-attribute-...-nt patch on the sage-combinat patch servers is a first implementation of lazy attributes (see the doc in the patch).
 Comments and alternative implementations welcome! See the current caveats in the doc

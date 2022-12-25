@@ -1,16 +1,17 @@
-# Issue 6337: bug in jorder form over symbolic ring
+# Issue 6337: Implement jordan_form over symbolic ring
 
 archive/issues_006337.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: version()\n'Sage Version 4.0.1, Release Date: 2009-06-06'\nsage: var('a d')\n(a, d)\nsage: A = matrix([[a,0],[1,d]])\nsage: A.eigenvalues()\n[d, a]\nsage: A.jordan_form()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call\nlast)\n\n/home/bo198214/.sage/temp/darkdepth/6404/\n_home_bo198214__sage_init_sage_0.py in <module>()\n\n/usr/src/sage-4.0.1-linux-Debian_GNU_Linux_5.0_lenny-sse2-x86_64-Linux/\nlocal/lib/python2.5/site-packages/sage/matrix/matrix2.so in\nsage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:27915)()\n\nRuntimeError: Some eigenvalue does not exist in Symbolic Ring.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6337\n\n",
+    "closed_at": "2015-09-18T19:10:48Z",
     "created_at": "2009-06-16T16:58:27Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
-    "title": "bug in jorder form over symbolic ring",
+    "title": "Implement jordan_form over symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6337",
     "user": "https://github.com/williamstein"

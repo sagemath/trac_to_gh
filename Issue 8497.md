@@ -1,16 +1,17 @@
-# Issue 8497: bug in simplify_rational
+# Issue 8497: bug in simplify_radical
 
 archive/issues_008497.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin @jasongrout @mwhansen\n\nKeywords: simplify, radical, sqrt\n\nthe documentation of `simplify_radical` says:\n\n```\nsage: x.simplify_radical?\n...\n       Simplifies this symbolic expression, which can contain logs,\n       exponentials, and radicals, by converting it into a form which is\n       canonical over a large class of expressions and a given ordering of\n       variables\n```\nhowever if indeed it is able to recognize zero:\n\n```\nsage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3\nsage: a.simplify_radical()\n0\n```\nit does *not* return a canonical expression:\n\n```\nsage: a1=1/(sqrt(5)+sqrt(2))\nsage: a2=(sqrt(5)-sqrt(2))/3\nsage: a1.simplify_radical()\n1/(sqrt(2) + sqrt(5))\nsage: a2.simplify_radical()\n-1/3*sqrt(2) + 1/3*sqrt(5)\nsage: (a1-a2).simplify_radical()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8497\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin @jasongrout @mwhansen\n\nKeywords: simplify, radical, sqrt\n\nthe documentation of `simplify_radical` says:\n\n```\nsage: x.simplify_radical?\n...\n       Simplifies this symbolic expression, which can contain logs,\n       exponentials, and radicals, by converting it into a form which is\n       canonical over a large class of expressions and a given ordering of\n       variables\n```\nhowever if indeed it is able to recognize zero:\n\n```\nsage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3\nsage: a.simplify_radical()\n0\n```\nit does *not* return a canonical expression:\n\n```\nsage: a1=1/(sqrt(5)+sqrt(2))\nsage: a2=(sqrt(5)-sqrt(2))/3\nsage: a1.simplify_radical()\n1/(sqrt(2) + sqrt(5))\nsage: a2.simplify_radical()\n-1/3*sqrt(2) + 1/3*sqrt(5)\nsage: (a1-a2).simplify_radical()\n0\n```\n\n**Apply** only [attachment:8497_fix_doc.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8497\n\n",
+    "closed_at": "2011-10-10T20:19:59Z",
     "created_at": "2010-03-11T10:33:15Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "bug in simplify_rational",
+    "title": "bug in simplify_radical",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8497",
     "user": "https://github.com/zimmermann6"
@@ -51,6 +52,8 @@ sage: a2.simplify_radical()
 sage: (a1-a2).simplify_radical()
 0
 ```
+
+**Apply** only [attachment:8497_fix_doc.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8497
 

@@ -4,6 +4,7 @@ archive/issues_008950.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: desolve\n\nI've done a new function, named desolve_numerical, that solves a system of first order differential equations numerically. It seems to be quite more efficient than the function desolve_system_rk4, included in the same module. It can be seen in the following example (Lotka-Volterra Equations):\n\nsage: x,y,t=var('x,y,t')\u00a0\nsage: des=[x*(1-y),-y*(1-x)]\nsage: ics=[1,0.5] \nsage: times=srange(0,10.1,0.1)\n\nWith the new function we get:\u00a0\n\nsage: timeit('desolve_numerical(des,ics,times,(x,y))') \n125 loops, best of 3: **5.81 ms per loop**\n\nwhile with desolve_system_rk4 the result is:\n\nsage: timeit('desolve_system_rk4(des,[x,y],ics=[0,1,0.5],ivar=t)')\u00a0\n5 loops, best of 3: **558 ms per loop**\n\nIssue created by migration from https://trac.sagemath.org/ticket/8950\n\n",
+    "closed_at": "2010-09-15T11:13:32Z",
     "created_at": "2010-05-11T15:51:19Z",
     "labels": [
         "component: calculus",

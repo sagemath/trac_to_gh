@@ -1,22 +1,24 @@
-# Issue 8491: incorret latex produced for some symbolic expressions
+# Issue 8491: incorrect latex produced for some symbolic expressions
 
 archive/issues_008491.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robert-marik\n\n```\nsage: f = 6.5/x\nsage: latex(f)\n\\frac{1}{x}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8491\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\n```\nsage: f = 6.5/x\nsage: latex(f)\n\\frac{1}{x}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8491\n\n",
+    "closed_at": "2010-03-12T04:52:17Z",
     "created_at": "2010-03-10T17:23:44Z",
     "labels": [
-        "component: algebra",
+        "component: symbolics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "incorret latex produced for some symbolic expressions",
+    "title": "incorrect latex produced for some symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8491",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  @robert-marik
 

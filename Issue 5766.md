@@ -1,16 +1,17 @@
-# Issue 5766: improve coverage of structure/formal_sum.py
+# Issue 5766: [with patch; positive review] improve coverage of structure/formal_sum.py
 
 archive/issues_005766.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5766\n\n",
+    "closed_at": "2009-06-04T18:33:58Z",
     "created_at": "2009-04-11T23:58:16Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "improve coverage of structure/formal_sum.py",
+    "title": "[with patch; positive review] improve coverage of structure/formal_sum.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5766",
     "user": "https://github.com/williamstein"

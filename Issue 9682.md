@@ -1,16 +1,17 @@
-# Issue 9682: fix a bug in message error in perfect mathings
+# Issue 9682: Fix a bug in error message in perfect matchings
 
 archive/issues_009682.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @hivert\n\neverything is in the title\n\n[[[\nsage: PerfectMatching(6)\n...\nNameError: global name 'sage' is not defined\n]]]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9682\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @hivert\n\neverything is in the title\n\n```\nsage: PerfectMatching(6)\n...\nNameError: global name 'sage' is not defined\n```\n\nApply only\n[trac_9682_fix_perfectmatching_error_message_vf.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9682/trac_9682_fix_perfectmatching_error_message_vf.patch)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9682\n\n",
+    "closed_at": "2010-08-09T09:49:22Z",
     "created_at": "2010-08-04T03:59:47Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "fix a bug in message error in perfect mathings",
+    "title": "Fix a bug in error message in perfect matchings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9682",
     "user": "https://trac.sagemath.org/admin/accounts/users/vferay"
@@ -22,11 +23,15 @@ CC:  @hivert
 
 everything is in the title
 
-[[[
+```
 sage: PerfectMatching(6)
 ...
 NameError: global name 'sage' is not defined
-]]]
+```
+
+Apply only
+[trac_9682_fix_perfectmatching_error_message_vf.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9682/trac_9682_fix_perfectmatching_error_message_vf.patch)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9682
 

@@ -1,21 +1,22 @@
-# Issue 1417: update symmetrica
+# Issue 1417: [with spkg and patch] update symmetrica to 2.0
 
 archive/issues_001417.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/symmetrica-2.0.spkg \n\nIssue created by migration from https://trac.sagemath.org/ticket/1417\n\n",
+    "body": "Assignee: @mwhansen\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/symmetrica-2.0.spkg \n\nIssue created by migration from https://trac.sagemath.org/ticket/1417\n\n",
+    "closed_at": "2007-12-09T10:14:21Z",
     "created_at": "2007-12-07T09:54:27Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "update symmetrica",
+    "title": "[with spkg and patch] update symmetrica to 2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1417",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 There is an spkg at http://sage.math.washington.edu/home/mhansen/symmetrica-2.0.spkg 
 

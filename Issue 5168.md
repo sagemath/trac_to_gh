@@ -1,9 +1,10 @@
-# Issue 5168: [with patch, needs review] matrix0.pyx: fix doctest for commutator
+# Issue 5168: [with patch, positive review] matrix0.pyx: fix doctest for commutator
 
 archive/issues_005168.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: matrix0, commutator\n\nHere is the extent of the docstring for the commutator method in matrix0.pyx:\n\n```\n        Return the commutator self*other - other*self.\n\n        EXAMPLES:\n            sage: A = Matrix(QQ[['t']], 2, 2, range(4))\n```\nFix the doctest so that it actually computes a commutator.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5168\n\n",
+    "closed_at": "2009-02-05T11:10:01Z",
     "created_at": "2009-02-03T21:17:52Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005168.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] matrix0.pyx: fix doctest for commutator",
+    "title": "[with patch, positive review] matrix0.pyx: fix doctest for commutator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5168",
     "user": "https://github.com/jhpalmieri"

@@ -4,6 +4,7 @@ archive/issues_001272.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThis has been a while in the making, but PolyBoRi has finally been released to the public.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1272\n\n",
+    "closed_at": "2007-12-16T00:12:57Z",
     "created_at": "2007-11-25T18:33:04Z",
     "labels": [
         "component: packages: standard"

@@ -1,16 +1,17 @@
-# Issue 3821: bernmm shouldn't depend on pyport.h
+# Issue 3821: [with patch, positive review] bernmm shouldn't depend on pyport.h
 
 archive/issues_003821.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI'd rather not have bernmm dependent on pyport.h.\n\nPatch will be up momentarily; should be applied on top of #3807 patch; I've only tested this on my laptop.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3821\n\n",
+    "closed_at": "2008-08-12T21:38:10Z",
     "created_at": "2008-08-12T16:27:35Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "bernmm shouldn't depend on pyport.h",
+    "title": "[with patch, positive review] bernmm shouldn't depend on pyport.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3821",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

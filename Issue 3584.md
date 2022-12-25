@@ -1,9 +1,10 @@
-# Issue 3584: cython.py -- randomness in doctests
+# Issue 3584: [with patch, positive review] cython.py -- randomness in doctests
 
 archive/issues_003584.json:
 ```json
 {
-    "body": "Assignee: failure\n\nOn Debian 64-bit vmware:\n\n```\nsage -t  devel/sage/sage/misc/cython.py                     **********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/cython.py\", line 109:\n    sage: pyx_preparse(\"\")\nExpected:\n    ('\\ninclude \"interrupt.pxi\"  # ctrl-c interrupt block support\\ninclude \"stdsage.pxi\"  # ctrl-c interrupt block support\\n\\ninclude \"cdefs.pxi\"\\n',\n    ['mpfr',\n    'gmp',\n    'gmpxx',\n    'stdc++',\n    'pari',\n    'm',\n    'curvesntl',\n    'g0nntl',\n    'jcntl',\n    'rankntl',\n    'gsl',\n    'cblas',\n    'atlas',\n    'ntl',\n    'csage'],\n    ['.../local/include/csage/',\n    '.../local/include/',\n    '.../local/include/python2.5/',\n    '.../devel/sage/sage/ext/',\n    '.../devel/sage/',\n    '.../devel/sage/sage/gsl/'],\n    'c',\n    [])\nGot:\n    ('\\ninclude \"interrupt.pxi\"  # ctrl-c interrupt block support\\ninclude \"stdsage.pxi\"  # ctrl-c interrupt block support\\n\\ninclude \"cdefs.pxi\"\\n', ['mpfr', 'gmp', 'gmpxx', 'stdc++', 'pari', 'm', 'curvesntl', 'g0nntl', 'jcntl', 'rankntl', 'gsl', 'gslcblas', 'atlas', 'ntl', 'csage'], ['/home/was/build/sage-3.0.4.alpha2/local/include/csage/', '/home/was/build/sage-3.0.4.alpha2/local/include/', '/home/was/build/sage-3.0.4.alpha2/local/include/python2.5/', '/home/was/build/sage-3.0.4.alpha2/devel/sage/sage/ext/', '/home/was/build/sage-3.0.4.alpha2/devel/sage/', '/home/was/build/sage-3.0.4.alpha2/devel/sage/sage/gsl/'], 'c', [])\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/cython.py\", line 138:\n    sage: libs\nExpected:\n    ['foo', 'mpfr',\n    'gmp', 'gmpxx',\n    'stdc++',\n    'pari',\n    'm',\n    'curvesntl', 'g0nntl', 'jcntl', 'rankntl',\n    'gsl', 'cblas', 'atlas',\n    'ntl',\n    'csage']\nGot:\n    ['foo', 'mpfr', 'gmp', 'gmpxx', 'stdc++', 'pari', 'm', 'curvesntl', 'g0nntl', 'jcntl', 'rankntl', 'gsl', 'gslcblas', 'atlas', 'ntl', 'csage']\n**********************************************************************\n1 items had failures:\n   2 of   7 in __main__.example_1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3584\n\n",
+    "body": "Assignee: @craigcitro\n\nOn Debian 64-bit vmware:\n\n```\nsage -t  devel/sage/sage/misc/cython.py                     **********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/cython.py\", line 109:\n    sage: pyx_preparse(\"\")\nExpected:\n    ('\\ninclude \"interrupt.pxi\"  # ctrl-c interrupt block support\\ninclude \"stdsage.pxi\"  # ctrl-c interrupt block support\\n\\ninclude \"cdefs.pxi\"\\n',\n    ['mpfr',\n    'gmp',\n    'gmpxx',\n    'stdc++',\n    'pari',\n    'm',\n    'curvesntl',\n    'g0nntl',\n    'jcntl',\n    'rankntl',\n    'gsl',\n    'cblas',\n    'atlas',\n    'ntl',\n    'csage'],\n    ['.../local/include/csage/',\n    '.../local/include/',\n    '.../local/include/python2.5/',\n    '.../devel/sage/sage/ext/',\n    '.../devel/sage/',\n    '.../devel/sage/sage/gsl/'],\n    'c',\n    [])\nGot:\n    ('\\ninclude \"interrupt.pxi\"  # ctrl-c interrupt block support\\ninclude \"stdsage.pxi\"  # ctrl-c interrupt block support\\n\\ninclude \"cdefs.pxi\"\\n', ['mpfr', 'gmp', 'gmpxx', 'stdc++', 'pari', 'm', 'curvesntl', 'g0nntl', 'jcntl', 'rankntl', 'gsl', 'gslcblas', 'atlas', 'ntl', 'csage'], ['/home/was/build/sage-3.0.4.alpha2/local/include/csage/', '/home/was/build/sage-3.0.4.alpha2/local/include/', '/home/was/build/sage-3.0.4.alpha2/local/include/python2.5/', '/home/was/build/sage-3.0.4.alpha2/devel/sage/sage/ext/', '/home/was/build/sage-3.0.4.alpha2/devel/sage/', '/home/was/build/sage-3.0.4.alpha2/devel/sage/sage/gsl/'], 'c', [])\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/cython.py\", line 138:\n    sage: libs\nExpected:\n    ['foo', 'mpfr',\n    'gmp', 'gmpxx',\n    'stdc++',\n    'pari',\n    'm',\n    'curvesntl', 'g0nntl', 'jcntl', 'rankntl',\n    'gsl', 'cblas', 'atlas',\n    'ntl',\n    'csage']\nGot:\n    ['foo', 'mpfr', 'gmp', 'gmpxx', 'stdc++', 'pari', 'm', 'curvesntl', 'g0nntl', 'jcntl', 'rankntl', 'gsl', 'gslcblas', 'atlas', 'ntl', 'csage']\n**********************************************************************\n1 items had failures:\n   2 of   7 in __main__.example_1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3584\n\n",
+    "closed_at": "2008-07-07T21:49:03Z",
     "created_at": "2008-07-07T15:21:02Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_003584.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "cython.py -- randomness in doctests",
+    "title": "[with patch, positive review] cython.py -- randomness in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3584",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: @craigcitro
 
 On Debian 64-bit vmware:
 

@@ -3,7 +3,8 @@
 archive/issues_007386.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThis generators for the n-dimensional hypercube lacks proper documentation, and may have to be renamed to reflect what it really is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7386\n\n",
+    "body": "Assignee: @rlmill\n\nThis generator for the n-dimensional hypercube lacks proper documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7386\n\n",
+    "closed_at": "2009-12-01T08:39:39Z",
     "created_at": "2009-11-03T23:21:13Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +19,7 @@ archive/issues_007386.json:
 ```
 Assignee: @rlmill
 
-This generators for the n-dimensional hypercube lacks proper documentation, and may have to be renamed to reflect what it really is.
+This generator for the n-dimensional hypercube lacks proper documentation.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7386
 

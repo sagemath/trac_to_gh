@@ -1,15 +1,16 @@
-# Issue 3564: [with patch; needs review] optimize sage startup: don't import sympy by default
+# Issue 3564: [with patch; positive review] optimize sage startup: don't import sympy by default
 
 archive/issues_003564.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThe attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. \n\nNOTE: It is necessary to fix a bug in sympy first.  \n\n```\n11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to\n11:57 < wstein>             try:\n11:57 < wstein>                encoding = sys.stdout.encoding\n11:57 < wstein>             except AttributeError: return\n11:58 < wstein> Yep, that 100% fixes the problem.\n11:58 < ondrej> ok, I'll commit it. thanks\n11:58 < wstein> Maybe you already did that?\n11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3564\n\n",
+    "closed_at": "2008-07-16T06:07:19Z",
     "created_at": "2008-07-06T19:02:13Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch; needs review] optimize sage startup: don't import sympy by default",
+    "title": "[with patch; positive review] optimize sage startup: don't import sympy by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3564",
     "user": "https://github.com/williamstein"

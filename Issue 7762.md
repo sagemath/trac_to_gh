@@ -4,6 +4,7 @@ archive/issues_007762.json:
 ```json
 {
     "body": "Assignee: mvngu\n\njhpalmieri on sage-devel:\n\n```\nAs of 4.3.rc0, it looks like sagenb is perhaps being installed in the\nwrong place, resulting in failures when building the documentation\nwith the \"-j\" option (it can't find some of the relevant javascript):\n\ncopying static files... WARNING: static directory '/Applications/sage/\nlocal/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n\nIn 4.3.alpha1, sagenb was installed in SAGE_ROOT/local/lib/python/site-\npackages/.\n\nIn 4.3.rc0 and 4.3.rc1, sagenb is installed in SAGE_ROOT/local/lib/\npython/site-packages/sagenb-0.4.7-py2.6.egg/\n\n[...]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7762\n\n",
+    "closed_at": "2009-12-24T18:34:01Z",
     "created_at": "2009-12-24T17:25:05Z",
     "labels": [
         "component: documentation",

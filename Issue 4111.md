@@ -1,16 +1,17 @@
-# Issue 4111: [with patch, needs review] move QQ to new coercion model
+# Issue 4111: [with patch, positive review] move basic types to new coercion model
 
 archive/issues_004111.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nThis ticket depends on #4058\n\nIssue created by migration from https://trac.sagemath.org/ticket/4111\n\n",
+    "closed_at": "2008-09-25T00:11:39Z",
     "created_at": "2008-09-14T01:30:08Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] move QQ to new coercion model",
+    "title": "[with patch, positive review] move basic types to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4111",
     "user": "https://github.com/robertwb"

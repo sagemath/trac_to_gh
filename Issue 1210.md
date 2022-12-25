@@ -1,16 +1,17 @@
-# Issue 1210: Cannot create distinct polynomial rings over p-adic rings with different print_modes
+# Issue 1210: [with patch, needs work] Cannot create distinct polynomial rings over p-adic rings with different print_modes
 
 archive/issues_001210.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nKeywords: polynomial p-adic print mode cache caching\n\nThe issue is in the caching:\n\n```\nsage: R = Qp(7, print_mode='val-unit')\nsage: S = Qp(7)\nsage: R(7^2 + 1)\n7^2 * 1 + O(7^22)\nsage: S(7^2)\n7^2 + O(7^22)\nsage: R(7^2 + 1)\n50 + O(7^20)\nsage: S(7^2 + 1)\n1 + 7^2 + O(7^20)\nsage: R is S\nFalse\nsage: R['x'] is S['x']\nTrue\n```\nThe issue manifests itself in polynomial_ring_constructor, which fails because the cache is keyed by ==, not identity, and\n\n```\nsage: R == S\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1210\n\n",
+    "closed_at": "2014-03-11T14:04:15Z",
     "created_at": "2007-11-19T21:54:44Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Cannot create distinct polynomial rings over p-adic rings with different print_modes",
+    "title": "[with patch, needs work] Cannot create distinct polynomial rings over p-adic rings with different print_modes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1210",
     "user": "https://github.com/ncalexan"

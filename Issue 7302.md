@@ -1,15 +1,16 @@
-# Issue 7302: Nowhere wero flow
+# Issue 7302: Nowhere zero flow
 
 archive/issues_007302.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAs we will soon have a Flow function in Sage, the next step could be to write a Nowhere Zero flow function !\n\nMore informations there : http://en.wikipedia.org/wiki/Nowhere-zero_flow\n\nIssue created by migration from https://trac.sagemath.org/ticket/7302\n\n",
+    "body": "Assignee: @rlmill\n\nAs we will soon have a Flow function in Sage, the next step could be to write a Nowhere Zero flow function !\n\nIt should also be possible to define a flow over an abelian group, as they equivalently exist...\n\nMore informations there : http://en.wikipedia.org/wiki/Nowhere-zero_flow\n\nIssue created by migration from https://trac.sagemath.org/ticket/7302\n\n",
+    "closed_at": "2017-12-22T23:29:43Z",
     "created_at": "2009-10-25T19:46:14Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
-    "title": "Nowhere wero flow",
+    "title": "Nowhere zero flow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7302",
     "user": "https://github.com/nathanncohen"
@@ -18,6 +19,8 @@ archive/issues_007302.json:
 Assignee: @rlmill
 
 As we will soon have a Flow function in Sage, the next step could be to write a Nowhere Zero flow function !
+
+It should also be possible to define a flow over an abelian group, as they equivalently exist...
 
 More informations there : http://en.wikipedia.org/wiki/Nowhere-zero_flow
 

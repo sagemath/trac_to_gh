@@ -1,9 +1,10 @@
-# Issue 438: cython -v prints standard help text
+# Issue 438: [reported upstream] cython -v prints standard help text
 
 archive/issues_000438.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nInstead of some version number I get\n\n[mabshoff`@`m940 sage-2.8.1]$ cython -v\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this\nmodule. Emulates the behavior of putting\n                                 \"from <module> import *\" at the top of the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/438\n\n",
+    "body": "Assignee: @robertwb\n\nInstead of some version number I get\n\n```\n[mabshoff@m940 sage-2.8.1]$ cython -v\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this\n                                 module. Emulates the behavior of putting\n                                 \"from <module> import *\" at the top of the file.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/438\n\n",
+    "closed_at": "2008-02-23T06:36:36Z",
     "created_at": "2007-08-18T17:52:27Z",
     "labels": [
         "component: packages: standard",
@@ -11,17 +12,18 @@ archive/issues_000438.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "cython -v prints standard help text",
+    "title": "[reported upstream] cython -v prints standard help text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/438",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Instead of some version number I get
 
-[mabshoff`@`m940 sage-2.8.1]$ cython -v
+```
+[mabshoff@m940 sage-2.8.1]$ cython -v
 Cython (http://cython.org) is a compiler for code written in the
 Cython language.  Cython is based on Pyrex by Greg Ewing.
 
@@ -36,8 +38,9 @@ Options:
   -p, --embed-positions          If specified, the positions in Cython files of each
                                  function definition is embedded in its docstring.
   -z, --pre-import <module>      If specified, assume undeclared names in this
-module. Emulates the behavior of putting
+                                 module. Emulates the behavior of putting
                                  "from <module> import *" at the top of the file.
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/438
 

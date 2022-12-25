@@ -4,6 +4,7 @@ archive/issues_004806.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn sage 3.2:\n\n```\nsage: 1.656e02\n165.600000000000      # ok\nsage: 1.656e-02\n0.0165600000000000     # ok\nsage: 1.656e+02\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/david/<ipython console> in <module>()\n\n/Users/david/sage-3.2/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.create_RealNumber (sage/rings/real_mpfr.c:21490)()\n\n/Users/david/sage-3.2/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealLiteral.__init__ (sage/rings/real_mpfr.c:20706)()\n\n/Users/david/sage-3.2/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber.__init__ (sage/rings/real_mpfr.c:7305)()\n\n/Users/david/sage-3.2/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:7782)()\n\nTypeError: Unable to convert x (='1.656e') to real number.\n```\n\nIn plain python 2.5.2:\n\n```\n>>> 1.656e+02\n165.59999999999999\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4806\n\n",
+    "closed_at": "2009-01-23T22:30:01Z",
     "created_at": "2008-12-15T17:04:37Z",
     "labels": [
         "component: user interface",

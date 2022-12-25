@@ -1,16 +1,17 @@
-# Issue 1350: sage-2.8.15.alpha0 doctest error in plot.py
+# Issue 1350: [wtih patch] sage-2.8.15.alpha0 doctest error in plot.py
 
 archive/issues_001350.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nThis is due to the fact that we now wrap sage.functions.constant.Constants with SymbolicConstant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1350\n\n",
+    "closed_at": "2007-12-01T17:22:28Z",
     "created_at": "2007-12-01T16:38:23Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "sage-2.8.15.alpha0 doctest error in plot.py",
+    "title": "[wtih patch] sage-2.8.15.alpha0 doctest error in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1350",
     "user": "https://github.com/mwhansen"

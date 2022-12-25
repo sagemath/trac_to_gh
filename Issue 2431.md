@@ -1,17 +1,18 @@
-# Issue 2431: [optional spkg] polymake-2.2.p3.spkg fix
+# Issue 2431: [with optional spkg, needs review] polymake-2.2.p3.spkg fix
 
 archive/issues_002431.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nTwo issues: the install script needs to be changed to use cddlib-094b.p1 instead of p0; a version with this change is at:\nhttp://www.d.umn.edu/~mhampton/polymake-2.2.p3.spkg\n\nThe install also fails on a binary installation since its relies on the cddlib spkg being in spkg/standard, instead of the dummy version.  I will try to fix this; I am a little puzzled about it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2431\n\n",
+    "closed_at": "2008-03-19T11:12:19Z",
     "created_at": "2008-03-08T22:59:37Z",
     "labels": [
-        "component: packages",
+        "component: packages: optional",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[optional spkg] polymake-2.2.p3.spkg fix",
+    "title": "[with optional spkg, needs review] polymake-2.2.p3.spkg fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2431",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

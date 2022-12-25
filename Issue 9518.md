@@ -3,11 +3,11 @@
 archive/issues_009518.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @JohnCremona @williamstein @robertwb\n\nJohn Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it. \n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9518\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @JohnCremona @williamstein @robertwb\n\nJohn Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it.\n\nDave \n\nMarked \"duplicate/invalid/wontfix\" because it is now in #9343.  -- Jeroen Demeyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9518\n\n",
+    "closed_at": "2010-09-10T10:47:24Z",
     "created_at": "2010-07-16T17:10:13Z",
     "labels": [
-        "component: spkg-check",
-        "bug"
+        "component: spkg-check"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add an spkg-check file for Pari",
@@ -20,10 +20,11 @@ Assignee: drkirkby
 
 CC:  @JohnCremona @williamstein @robertwb
 
-John Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it. 
+John Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it.
 
+Dave 
 
-Dave
+Marked "duplicate/invalid/wontfix" because it is now in #9343.  -- Jeroen Demeyer
 
 Issue created by migration from https://trac.sagemath.org/ticket/9518
 

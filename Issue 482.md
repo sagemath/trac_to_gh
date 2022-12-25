@@ -1,16 +1,16 @@
-# Issue 482: ideals for improving the SAGE tutorial
+# Issue 482: ideas for improving the SAGE tutorial
 
 archive/issues_000482.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu @kcrisman\n\nHere are some ideas from a user for improving the SAGE tutorial:\n\n* 2nd para of abstract: point reader to the official python tutorial for syntax issues\n* section 5 \"programming\": mention X? and X?? again\n* why doesn't \"print?\" work?  \"attach?\"\n* why does att[tab] give me attr and not \"attach\"?\n* Why does \"time for M in L:\" break. \n* Putting cputime(t) alone by itself in the script doesn't print anything.  Why? (Because you have to put \"print cputime(t)\")\n* In many cases using xrange instead of range can be vastly better\n* nohup sage file.sage > out&   # very useful\n* How to change a .sage file to a .spyx file:\n   1. Profile your file.sage file with %prun -- premature optimization is root of all evil\n   2. Start with file.py instead of file.sage.\n   3. Use \"from sage.all import stuff you need\" at the top\n   4. Consider cdef'ing classes, cdef'ing methods, and cdef'ing variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/482\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @kcrisman\n\nHere are some ideas from a user for improving the SAGE tutorial:\n\n* 2nd para of abstract: point reader to the official python tutorial for syntax issues\n* section 5 \"programming\": mention X? and X?? again\n* why doesn't \"print?\" work?  \"attach?\"\n* why does att[tab] give me attr and not \"attach\"?\n* Why does \"time for M in L:\" break. \n* Putting cputime(t) alone by itself in the script doesn't print anything.  Why? (Because you have to put \"print cputime(t)\")\n* In many cases using xrange instead of range can be vastly better\n* nohup sage file.sage > out&   # very useful\n* even better: use screen instead of nohup - you can reconnect to the session later\n* How to change a .sage file to a .spyx file:\n   1. Profile your file.sage file with %prun -- premature optimization is root of all evil\n   2. Start with file.py instead of file.sage.\n   3. Use \"from sage.all import stuff you need\" at the top\n   4. Consider cdef'ing classes, cdef'ing methods, and cdef'ing variables.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/482\n\n",
     "created_at": "2007-08-23T01:25:54Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "ideals for improving the SAGE tutorial",
+    "title": "ideas for improving the SAGE tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/482",
     "user": "https://github.com/williamstein"
@@ -30,11 +30,13 @@ Here are some ideas from a user for improving the SAGE tutorial:
 * Putting cputime(t) alone by itself in the script doesn't print anything.  Why? (Because you have to put "print cputime(t)")
 * In many cases using xrange instead of range can be vastly better
 * nohup sage file.sage > out&   # very useful
+* even better: use screen instead of nohup - you can reconnect to the session later
 * How to change a .sage file to a .spyx file:
    1. Profile your file.sage file with %prun -- premature optimization is root of all evil
    2. Start with file.py instead of file.sage.
    3. Use "from sage.all import stuff you need" at the top
    4. Consider cdef'ing classes, cdef'ing methods, and cdef'ing variables.
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/482
 

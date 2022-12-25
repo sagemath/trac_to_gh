@@ -4,6 +4,7 @@ archive/issues_006804.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @orlitzky\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
+    "closed_at": "2012-02-02T12:51:52Z",
     "created_at": "2009-08-22T17:16:29Z",
     "labels": [
         "component: combinatorics",

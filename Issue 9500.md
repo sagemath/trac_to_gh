@@ -3,7 +3,8 @@
 archive/issues_009500.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nMake this work:\n\n```\n\n            sage: R.<x,y> = QQ[]\n            sage: I = R.ideal([x^2 + 1, y^3 - 2])\n            sage: S.<i,cuberoot> = R.quotient(I)\n            sage: 1/(1+i)\n            -1/2*i + 1/2\n\n        Confirm via symbolic computation::\n        \n            sage: 1/(1+sqrt(-1))\n            -1/2*I + 1/2\n\n        Another more complicated quotient::\n        \n            sage: b = 1/(i+cuberoot); b\n            1/5*i*cuberoot^2 - 2/5*i*cuberoot + 2/5*cuberoot^2 - 1/5*i + 1/5*cuberoot - 2/5\n            sage: b*(i+cuberoot)\n            1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9500\n\n",
+    "body": "Assignee: @aghitza\n\n***   This ticket depends on #9499    ***\n\nMake this work:\n\n```\n\n            sage: R.<x,y> = QQ[]\n            sage: I = R.ideal([x^2 + 1, y^3 - 2])\n            sage: S.<i,cuberoot> = R.quotient(I)\n            sage: 1/(1+i)\n            -1/2*i + 1/2\n\n        Confirm via symbolic computation::\n        \n            sage: 1/(1+sqrt(-1))\n            -1/2*I + 1/2\n\n        Another more complicated quotient::\n        \n            sage: b = 1/(i+cuberoot); b\n            1/5*i*cuberoot^2 - 2/5*i*cuberoot + 2/5*cuberoot^2 - 1/5*i + 1/5*cuberoot - 2/5\n            sage: b*(i+cuberoot)\n            1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9500\n\n",
+    "closed_at": "2010-07-20T09:32:31Z",
     "created_at": "2010-07-14T17:08:14Z",
     "labels": [
         "component: algebra"
@@ -16,6 +17,8 @@ archive/issues_009500.json:
 }
 ```
 Assignee: @aghitza
+
+***   This ticket depends on #9499    ***
 
 Make this work:
 

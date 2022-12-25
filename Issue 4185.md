@@ -1,16 +1,18 @@
-# Issue 4185: [with spkg, needs review] remove GNUisms from spkg-install of the jmol.spkg
+# Issue 4185: [with spkg, positive review] Solaris 10: fix spkg-install for jmol to not use GNUisms
 
 archive/issues_004185.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt boils down to:\n\n```\n # Insert localize.in after first line of startup script.\n-head -n 1 jmol > \"$DIR/jmol\"\n+head -1 jmol > \"$DIR/jmol\"\n cat ../patches/localize.in >> \"$DIR/jmol\"\n-tail -n +2 jmol >> \"$DIR/jmol\"\n+tail +2 jmol >> \"$DIR/jmol\"\n check\n```\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/jmol-11.6.rc8.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4185\n\n",
+    "body": "Assignee: mabshoff\n\nIt boils down to:\n\n```\n # Insert localize.in after first line of startup script.\n-head -n 1 jmol > \"$DIR/jmol\"\n+head -1 jmol > \"$DIR/jmol\"\n cat ../patches/localize.in >> \"$DIR/jmol\"\n-tail -n +2 jmol >> \"$DIR/jmol\"\n+tail +2 jmol >> \"$DIR/jmol\"\n check\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4185\n\n",
+    "closed_at": "2009-01-19T10:30:35Z",
     "created_at": "2008-09-24T08:27:24Z",
     "labels": [
         "component: porting: solaris",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with spkg, needs review] remove GNUisms from spkg-install of the jmol.spkg",
+    "title": "[with spkg, positive review] Solaris 10: fix spkg-install for jmol to not use GNUisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4185",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -29,10 +31,6 @@ It boils down to:
 +tail +2 jmol >> "$DIR/jmol"
  check
 ```
-The new spkg can be found at
-
-http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/jmol-11.6.rc8.p0.spkg
-
 Cheers,
 
 Michael

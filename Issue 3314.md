@@ -1,22 +1,25 @@
-# Issue 3314: dsage.setup() add_default_client broken
+# Issue 3314: [with patch, Positive review] dsage.setup() add_default_client broken
 
 archive/issues_003314.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\ntwisted changed it's conch interface and I forgot to toString the pubkey object in some instances. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3314\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: editor_gfurnish\n\ntwisted changed it's conch interface and I forgot to toString the pubkey object in some instances. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3314\n\n",
+    "closed_at": "2008-06-18T04:39:31Z",
     "created_at": "2008-05-27T05:43:21Z",
     "labels": [
-        "component: cygwin",
+        "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "dsage.setup() add_default_client broken",
+    "title": "[with patch, Positive review] dsage.setup() add_default_client broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3314",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: mabshoff
+Assignee: @yqiang
+
+Keywords: editor_gfurnish
 
 twisted changed it's conch interface and I forgot to toString the pubkey object in some instances. 
 

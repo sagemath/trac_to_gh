@@ -1,16 +1,17 @@
-# Issue 2637: Patch so that a user can choose encodings in sage scripts.
+# Issue 2637: [with patch, positive review] Patch so that a user can choose encodings in sage scripts.
 
 archive/issues_002637.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: encoding utf-8\n\nThis ticket is related to my question on sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/dab6a0880fa8b942\nand Martin Albrecht's patch.\n\nWith Martin's patch, sage scripts default to utf-8 encoding, which is a good default as ascii is a subset of utf-8, it is compatible with existing sage-scripts.\n\nBut I think that a user should be able to select a coding, if utf-8 is not suitable for him. For example a user with an editor not supporting unicode or a user needing utf-16. So sage should support python encoding hints.  \n \nPlease see the attached patch to sage/misc/interpreter.py, which tries to find out if the first line contains an encoding hint. If true, use the line from the file, else print the utf-8 encoding hint.\n\nWith best regards,\nLars Fischer\n\nIssue created by migration from https://trac.sagemath.org/ticket/2637\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: encoding utf-8, editor_malb\n\nThis ticket is related to my question on sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/dab6a0880fa8b942\nand Martin Albrecht's patch.\n\nWith Martin's patch, sage scripts default to utf-8 encoding, which is a good default as ascii is a subset of utf-8, it is compatible with existing sage-scripts.\n\nBut I think that a user should be able to select a coding, if utf-8 is not suitable for him. For example a user with an editor not supporting unicode or a user needing utf-16. So sage should support python encoding hints.  \n \nPlease see the attached patch to sage/misc/interpreter.py, which tries to find out if the first line contains an encoding hint. If true, use the line from the file, else print the utf-8 encoding hint.\n\nWith best regards,\nLars Fischer\n\nIssue created by migration from https://trac.sagemath.org/ticket/2637\n\n",
+    "closed_at": "2008-12-10T12:36:04Z",
     "created_at": "2008-03-21T21:43:30Z",
     "labels": [
         "component: user interface",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Patch so that a user can choose encodings in sage scripts.",
+    "title": "[with patch, positive review] Patch so that a user can choose encodings in sage scripts.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2637",
     "user": "https://trac.sagemath.org/admin/accounts/users/lars.fischer"
@@ -18,7 +19,7 @@ archive/issues_002637.json:
 ```
 Assignee: @williamstein
 
-Keywords: encoding utf-8
+Keywords: encoding utf-8, editor_malb
 
 This ticket is related to my question on sage-support:
 http://groups.google.com/group/sage-support/browse_thread/thread/dab6a0880fa8b942

@@ -1,16 +1,17 @@
-# Issue 4542: polyhedra bug fix and improvments
+# Issue 4542: [with patch, positive review] polyhedra bug fix and improvments
 
 archive/issues_004542.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: polytopes\n\nThe attached patch fixes some big problems with defining polytopes through inequalities and linearities - defining via vertices has been tested a lot more.  I also added some new functionality for making prisms, pyramids, taking unions and intersections, and a standard 3D polytope, the small rhombicuboctahedron. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4542\n\n",
+    "closed_at": "2008-11-23T06:43:06Z",
     "created_at": "2008-11-17T22:48:10Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "polyhedra bug fix and improvments",
+    "title": "[with patch, positive review] polyhedra bug fix and improvments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4542",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

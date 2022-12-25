@@ -1,16 +1,17 @@
-# Issue 9494: Add a doctest to benchmark.py
+# Issue 9494: marked mpoly_all() as not tested
 
 archive/issues_009494.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nDemo at SD23.5, also increases coverage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9494\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: sd32\n\nDemo at SD23.5, also increases coverage!\n\n---\n\nApply [attachment:trac_9494-doctest_mpoly_all.2.patch] to the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9494\n\n",
+    "closed_at": "2014-02-23T07:46:26Z",
     "created_at": "2010-07-14T09:28:21Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "Add a doctest to benchmark.py",
+    "title": "marked mpoly_all() as not tested",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9494",
     "user": "https://trac.sagemath.org/admin/accounts/users/demosd235"
@@ -18,7 +19,14 @@ archive/issues_009494.json:
 ```
 Assignee: mvngu
 
+Keywords: sd32
+
 Demo at SD23.5, also increases coverage!
+
+---
+
+Apply [attachment:trac_9494-doctest_mpoly_all.2.patch] to the Sage library.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9494
 

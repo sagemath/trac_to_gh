@@ -4,6 +4,7 @@ archive/issues_001836.json:
 ```json
 {
     "body": "Assignee: @malb\n\n... to avoid ambiguousness\n\nIssue created by migration from https://trac.sagemath.org/ticket/1836\n\n",
+    "closed_at": "2008-01-22T00:11:59Z",
     "created_at": "2008-01-18T19:28:42Z",
     "labels": [
         "component: commutative algebra"

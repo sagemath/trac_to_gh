@@ -1,9 +1,10 @@
-# Issue 6845: bad ReST formatted docstring in #6819
+# Issue 6845: [with patch, positive review] bad ReST formatted docstring in #6819
 
 archive/issues_006845.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @rishikesha @nathanncohen\n\nFollow up to #6819 for fixing badly formatted docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6845\n\n",
+    "closed_at": "2009-08-31T07:02:15Z",
     "created_at": "2009-08-30T07:36:49Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006845.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "bad ReST formatted docstring in #6819",
+    "title": "[with patch, positive review] bad ReST formatted docstring in #6819",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6845",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

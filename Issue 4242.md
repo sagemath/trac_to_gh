@@ -1,16 +1,17 @@
-# Issue 4242: Bugfix for dominates() method of partition.py (with patch; needs review)
+# Issue 4242: [with patch, positive reivew] Bugfix for dominates() method of partition.py
 
 archive/issues_004242.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\np.dominates(q) would give the wrong answer (True) if q had more boxes than p, but the first (length of p) parts of q were dominated by p.  Attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4242\n\n",
+    "closed_at": "2008-10-12T19:49:15Z",
     "created_at": "2008-10-04T14:06:47Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Bugfix for dominates() method of partition.py (with patch; needs review)",
+    "title": "[with patch, positive reivew] Bugfix for dominates() method of partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4242",
     "user": "https://github.com/jbandlow"

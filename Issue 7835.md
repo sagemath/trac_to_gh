@@ -4,6 +4,7 @@ archive/issues_007835.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein @qed777 @dandrake\n\n#7483 moves preparsing to the server but does not account for unicode text, i.e., does not have a `# -*- coding: utf-8 -*-` header.\n\nThis patch depends on #7514 and everything it depends on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7835\n\n",
+    "closed_at": "2010-01-19T03:31:30Z",
     "created_at": "2010-01-03T19:15:54Z",
     "labels": [
         "component: notebook",

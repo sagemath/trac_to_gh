@@ -1,15 +1,16 @@
-# Issue 5913: implement graph coloring in sage
+# Issue 5913: [with patch, positive review] expose graph coloring in sage
 
 archive/issues_005913.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  boothby\n\nSage should have some sort of implementation of code for computing a vertex coloring with n colors of a graph, assuming the chromatic number is at most n. \n\nEven a stupid initial greedy algorithm implementation would be a lot faster than what we have now, which is _nothing_. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5913\n\n",
+    "closed_at": "2009-05-12T22:03:57Z",
     "created_at": "2009-04-27T18:38:12Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "implement graph coloring in sage",
+    "title": "[with patch, positive review] expose graph coloring in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5913",
     "user": "https://github.com/williamstein"

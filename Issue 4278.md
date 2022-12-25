@@ -1,16 +1,17 @@
-# Issue 4278: [with patch, needs review] Old parent's don't correctly handle coerce maps from Python's native types.
+# Issue 4278: [with patch, positive review] Old parent's don't correctly handle coerce maps from Python's native types.
 
 archive/issues_004278.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @mwhansen\n\nBefore\n\n```\nsage: QQ['q,t'].coerce_map_from(int)\nsage:\n```\n\nAfter\n\n```\nComposite map:\n  From: Set of Python objects of type 'int'\n  To:   Multivariate Polynomial Ring in q, t over Rational Field\n  Defn:   Native morphism:\n          From: Set of Python objects of type 'int'\n          To:   Integer Ring\n        then\n          Call morphism:\n          From: Integer Ring\n          To:   Multivariate Polynomial Ring in q, t over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4278\n\n",
+    "closed_at": "2008-11-14T18:20:38Z",
     "created_at": "2008-10-13T21:24:42Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Old parent's don't correctly handle coerce maps from Python's native types.",
+    "title": "[with patch, positive review] Old parent's don't correctly handle coerce maps from Python's native types.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4278",
     "user": "https://github.com/mwhansen"

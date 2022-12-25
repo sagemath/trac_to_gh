@@ -4,6 +4,7 @@ archive/issues_009431.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @saliola\n\nWillem explained this one to me. Apparently opencdk is now linking libgcrypt from the wrong place, due to libtools, caused by the addition of `-lgcrypt` in #8658. The short term fix is to make sure that `$SAGE_LOCAL/lib` is included in `LDFLAGS` in the `spkg-install` script, but the longer term fix will be to figure out why libtools is linking against `/usr/lib` in the first place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9431\n\n",
+    "closed_at": "2010-07-06T08:00:03Z",
     "created_at": "2010-07-05T19:40:53Z",
     "labels": [
         "component: build",

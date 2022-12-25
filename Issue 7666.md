@@ -1,15 +1,16 @@
-# Issue 7666: Alphanumeric cell IDs
+# Issue 7666: Alphanumeric cell IDs, resize on paste (#2902), ESC ends introspection (#5644), JSLint for notebook_lib.js
 
 archive/issues_007666.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol boothby @mwhansen\n\nPreparatory work for #6855.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7666\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol boothby @mwhansen\n\nThis ticket\n\n* Makes it possible to assign alphanumeric cell IDs.\n* Should subsume\n  * #2902 - Resize an input cell after a paste event.\n  * #5644 - Make ESC close introspection windows.\n* Runs `notebook_lib.js` \"through\" [JSLint](http://www.jslint.com/).\n\nPatch:\n\n* http://boxen.math.washington.edu/home/mpatel/trac/7666/trac_7666-alphanumeric_cell_ids_B5.patch\n\nSuggested queue, applied to SageNB 0.4.9 + #7269:\n\n```\ntrac_7843-cell_listdir.patch\ntrac_7844-notebook_address.patch\ntrac_7847-empty_trash_ie_ff.patch\ntrac_7846-no_CODE_PY_symlinks_v2.patch\ntrac_7650-sagenb_doctesting_v4.patch    # Possible trivial failed \"hunk\" here.\ntrac_7786-template-jinja-idiomatic.12.patch\ntrac_7871-interact_bgcolor.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\n```\n\n**Or** install this spkg:\n\n* http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7666\n\n",
+    "closed_at": "2010-01-19T03:28:41Z",
     "created_at": "2009-12-11T20:25:16Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Alphanumeric cell IDs",
+    "title": "Alphanumeric cell IDs, resize on paste (#2902), ESC ends introspection (#5644), JSLint for notebook_lib.js",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7666",
     "user": "https://github.com/qed777"
@@ -19,7 +20,37 @@ Assignee: @williamstein
 
 CC:  @williamstein @TimDumol boothby @mwhansen
 
-Preparatory work for #6855.
+This ticket
+
+* Makes it possible to assign alphanumeric cell IDs.
+* Should subsume
+  * #2902 - Resize an input cell after a paste event.
+  * #5644 - Make ESC close introspection windows.
+* Runs `notebook_lib.js` "through" [JSLint](http://www.jslint.com/).
+
+Patch:
+
+* http://boxen.math.washington.edu/home/mpatel/trac/7666/trac_7666-alphanumeric_cell_ids_B5.patch
+
+Suggested queue, applied to SageNB 0.4.9 + #7269:
+
+```
+trac_7843-cell_listdir.patch
+trac_7844-notebook_address.patch
+trac_7847-empty_trash_ie_ff.patch
+trac_7846-no_CODE_PY_symlinks_v2.patch
+trac_7650-sagenb_doctesting_v4.patch    # Possible trivial failed "hunk" here.
+trac_7786-template-jinja-idiomatic.12.patch
+trac_7871-interact_bgcolor.patch
+trac_7858-key_binding_vars_v2.patch
+trac_7863-declare_vars_aux_js_v2.patch
+trac_7874-typeset_interact_labels.patch
+trac_7666-alphanumeric_cell_ids_B5.patch
+```
+
+**Or** install this spkg:
+
+* http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b5.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7666
 

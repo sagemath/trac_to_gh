@@ -1,22 +1,23 @@
-# Issue 6903: Function Word currently prevent the inheritance of Words_over_OrderedAlphabet
+# Issue 6903: [with patch, positive review] Function Word currently prevent the inheritance of Words_over_OrderedAlphabet
 
 archive/issues_006903.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nLet\n\n```\nsage: W = Words('ab')\n```\n\nIn the state of sage-4.1.1, the function `W.__call__` uses the function `Word`....but it should be the inverse. In fact, the code of the function `Word` contains code like :\n\n```\n[...]\n\n    # Construct the word\n    if datatype == 'list':\n        w = FiniteWord_list(parent=parent,data=data)\n    elif datatype == 'str':\n        w = FiniteWord_str(parent=parent,data=data)\n    elif datatype == 'tuple':\n        w = FiniteWord_tuple(parent=parent,data=data)\n    elif datatype == 'callable':\n        if caching:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable_with_caching\n            else:\n                cls = FiniteWord_callable_with_caching\n        else:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable\n            else:\n                cls = FiniteWord_callable\n        w = cls(parent=parent,callable=data,length=length)\n\n[...]\n```\n\nThe problems come when someone wants to inherits the class `Words_over_OrderedAlphabet` to create, let say, a combinatorial classes of all paths (see #5038). Below, we would like the `__call__` function of `WordPaths_all` to creates words paths instances and not the usual words instances. I don't want to rewrite the `__call__` function for `WordPaths_all` since it could be the exact same thing as the one of `Words_over_OrderedAlphabet`.\n\n```\nclass WordPaths_all(Words_over_OrderedAlphabet):\n    r\"\"\"\n    The combinatorial class of all paths, i.e of all words over\n    an alphabet where each letter is mapped to a step (a vector).\n    \"\"\"\n    def __init__(self, alphabet, steps):\n        r\"\"\"\n        INPUT:\n\n        - ``alphabet`` - an ordered alphabet \n\n        - ``steps`` - an iterable (of same length as alphabet) of ordered vectors\n\n        EXAMPLES::\n\n[...]\n```\n\nOne solution is that the current code of `Word` goes to `Words.__call__` and that the function `Word` simply creates the parent from the input alphabet and delegates the creation to the parent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6903\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nLet\n\n```\nsage: W = Words('ab')\n```\n\nIn the state of sage-4.1.1, the function `W.__call__` uses the function `Word`....but it should be the inverse. In fact, the code of the function `Word` contains code like :\n\n```\n[...]\n\n    # Construct the word\n    if datatype == 'list':\n        w = FiniteWord_list(parent=parent,data=data)\n    elif datatype == 'str':\n        w = FiniteWord_str(parent=parent,data=data)\n    elif datatype == 'tuple':\n        w = FiniteWord_tuple(parent=parent,data=data)\n    elif datatype == 'callable':\n        if caching:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable_with_caching\n            else:\n                cls = FiniteWord_callable_with_caching\n        else:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable\n            else:\n                cls = FiniteWord_callable\n        w = cls(parent=parent,callable=data,length=length)\n\n[...]\n```\n\nThe problems come when someone wants to inherits the class `Words_over_OrderedAlphabet` to create, let say, a combinatorial classes of all paths (see #5038). Below, we would like the `__call__` function of `WordPaths_all` to creates words paths instances and not the usual words instances. I don't want to rewrite the `__call__` function for `WordPaths_all` since it could be the exact same thing as the one of `Words_over_OrderedAlphabet`.\n\n```\nclass WordPaths_all(Words_over_OrderedAlphabet):\n    r\"\"\"\n    The combinatorial class of all paths, i.e of all words over\n    an alphabet where each letter is mapped to a step (a vector).\n    \"\"\"\n    def __init__(self, alphabet, steps):\n        r\"\"\"\n        INPUT:\n\n        - ``alphabet`` - an ordered alphabet \n\n        - ``steps`` - an iterable (of same length as alphabet) of ordered vectors\n\n        EXAMPLES::\n\n[...]\n```\n\nOne solution is that the current code of `Word` goes to `Words.__call__` and that the function `Word` simply creates the parent from the input alphabet and delegates the creation to the parent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6903\n\n",
+    "closed_at": "2009-09-18T02:50:06Z",
     "created_at": "2009-09-07T22:44:17Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Function Word currently prevent the inheritance of Words_over_OrderedAlphabet",
+    "title": "[with patch, positive review] Function Word currently prevent the inheritance of Words_over_OrderedAlphabet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6903",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @mwhansen
+Assignee: @seblabbe
 
 CC:  @saliola
 

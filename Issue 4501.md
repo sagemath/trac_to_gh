@@ -4,6 +4,7 @@ archive/issues_004501.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: 1j\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(1)j\n               ^\nSyntaxError: invalid syntax\n```\n\nbut in python:\n\n```\nsage: preparser(False)\nsage: 1j\n1j\nsage: type(1j)\n<type 'complex'>\n```\n\nNote that this does work now:\n\n```\nsage: 1rj\n1j\nsage: 1rj == complex('j')\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4501\n\n",
+    "closed_at": "2009-01-24T11:42:39Z",
     "created_at": "2008-11-12T16:57:58Z",
     "labels": [
         "component: basic arithmetic",

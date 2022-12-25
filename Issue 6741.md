@@ -1,23 +1,27 @@
-# Issue 6741: pil interface
+# Issue 6741: Python Imaging Library interface
 
 archive/issues_006741.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6741\n\n",
+    "body": "Assignee: mabshoff\n\nThe attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.\n\nApply:\n* [attachment:trac_6741-pil.patch\u200b]\n* [attachment:trac_6741_cleanup1.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6741\n\n",
     "created_at": "2009-08-13T23:15:11Z",
     "labels": [
-        "component: interfaces"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "pil interface",
+    "title": "Python Imaging Library interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6741",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 The attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.
+
+Apply:
+* [attachment:trac_6741-pil.patch​]
+* [attachment:trac_6741_cleanup1.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6741
 

@@ -4,6 +4,7 @@ archive/issues_003770.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere seems to be more than one copy of dsage_setup.py, (one in the sage_scripts spkg but not in version control there, and one in the sage spkg).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3770\n\n",
+    "closed_at": "2010-02-02T06:41:21Z",
     "created_at": "2008-08-03T19:32:47Z",
     "labels": [
         "component: packages: standard",

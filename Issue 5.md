@@ -3,10 +3,11 @@
 archive/issues_000005.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCurrently I need to switch between my keyboard and mouse a lot to operate the notebook, especially when using it for development. For example, I would like to be able to restart the server without going for the mouse. There should be a way of assigning keyboard shortcuts.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5\n\n",
+    "body": "Assignee: boothby\n\nCurrently I need to switch between my keyboard and mouse a lot to operate the notebook, especially when using it for development. For example, I would like to be able to restart the server without going for the mouse. There should be a way of assigning keyboard shortcuts.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5\n\n",
+    "closed_at": "2008-03-16T13:49:15Z",
     "created_at": "2006-09-12T00:45:22Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_000005.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: boothby
 
 Currently I need to switch between my keyboard and mouse a lot to operate the notebook, especially when using it for development. For example, I would like to be able to restart the server without going for the mouse. There should be a way of assigning keyboard shortcuts.
 

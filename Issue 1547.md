@@ -1,16 +1,17 @@
-# Issue 1547: Add pre-tuned settings for ATLAS for certain CPUs
+# Issue 1547: [with spkg, needs testing] Add pre-tuned settings for ATLAS for certain CPUs
 
 archive/issues_001547.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWilliam says:\n\n```\nMichael,\n\nCan we add new machines to the ATLAS database of pre-tuned machines?\nI ask, because my Thinkpad laptop -- a Pentium M, is taking literally\nseveral *hours* to build ATLAS, which sucks.\n\nWilliam\n```\n\nI will look into this. I am also afraid that compiling ATLAS on PPC/Linux for example will be a rather long, painful experience, so we ought to get on top of this and submit profiles of those CPUs that are missing upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1547\n\n",
+    "closed_at": "2008-02-02T09:58:49Z",
     "created_at": "2007-12-17T04:11:09Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Add pre-tuned settings for ATLAS for certain CPUs",
+    "title": "[with spkg, needs testing] Add pre-tuned settings for ATLAS for certain CPUs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1547",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

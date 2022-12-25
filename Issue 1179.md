@@ -4,6 +4,7 @@ archive/issues_001179.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is related to Solaris:\n\nKlas writes:\n\n```\n\nI've tried started it from bash and tcsh, if that matters.\nBut please note that on Solaris /bin/sh is not bash, so\nif scripts start with\n\n#!/bin/sh\n\nsome things may not work as expected. \n```\n\nOn neron, i.e. William's Sun we replaced /bin/sh by /bin/bash because the original /bin/sh caused all kinds of problems during the build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1179\n\n",
+    "closed_at": "2007-12-02T04:10:02Z",
     "created_at": "2007-11-15T16:28:49Z",
     "labels": [
         "component: packages: standard",

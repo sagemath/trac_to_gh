@@ -1,16 +1,17 @@
-# Issue 3174: add 64 bit OSX build support to flint
+# Issue 3174: [with spkg, positive review] add 64 bit OSX build support to flint
 
 archive/issues_003174.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3174\n\n",
+    "closed_at": "2008-08-19T01:34:54Z",
     "created_at": "2008-05-13T01:55:32Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "add 64 bit OSX build support to flint",
+    "title": "[with spkg, positive review] add 64 bit OSX build support to flint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3174",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

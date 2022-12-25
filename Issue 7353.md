@@ -1,15 +1,16 @@
-# Issue 7353: French documentation should use Sphinx's French localization
+# Issue 7353: French "Tour of Sage" should use Sphinx's French localization
 
 archive/issues_007353.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThe text on the left bar in Sphinx-generated documents has phrases like \"Table of content\", \"quick search\", and so on. Sphinx includes translations of these phrases, so we should use that for our French documentation.\n\nThis is very easy: just put `language = 'fr'` in conf.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7353\n\n",
+    "body": "Assignee: mvngu\n\nThe text on the left bar in Sphinx-generated documents has phrases like \"Table of content\", \"quick search\", and so on. Sphinx includes translations of these phrases, so we should use that for our French documentation.\n\nThis is very easy: just put `language = 'fr'` in conf.py. This depends on #7190.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7353\n\n",
+    "closed_at": "2009-11-17T07:56:42Z",
     "created_at": "2009-10-30T01:38:46Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "French documentation should use Sphinx's French localization",
+    "title": "French \"Tour of Sage\" should use Sphinx's French localization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7353",
     "user": "https://github.com/dandrake"
@@ -19,7 +20,7 @@ Assignee: mvngu
 
 The text on the left bar in Sphinx-generated documents has phrases like "Table of content", "quick search", and so on. Sphinx includes translations of these phrases, so we should use that for our French documentation.
 
-This is very easy: just put `language = 'fr'` in conf.py.
+This is very easy: just put `language = 'fr'` in conf.py. This depends on #7190.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7353
 

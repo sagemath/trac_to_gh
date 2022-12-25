@@ -1,15 +1,16 @@
-# Issue 6908: programmers' guide --- doctesting and parallel doctesting
+# Issue 6908: [with patch, positive review] programmers' guide --- doctesting and parallel doctesting
 
 archive/issues_006908.json:
 ```json
 {
     "body": "Assignee: tba\n\nAdd a section to the Programmers' Guide, explaining how to perform basic doctesting. Also add some information on how to do parallel doctesting. See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c6508083de9bedc1) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6908\n\n",
+    "closed_at": "2009-09-12T15:46:55Z",
     "created_at": "2009-09-09T09:08:11Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "programmers' guide --- doctesting and parallel doctesting",
+    "title": "[with patch, positive review] programmers' guide --- doctesting and parallel doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6908",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

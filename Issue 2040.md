@@ -1,22 +1,25 @@
-# Issue 2040: 2d graphics -- problems with axes_labels options
+# Issue 2040: [with patches, with positive review] 2d graphics -- problems with axes_labels options
 
 archive/issues_002040.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: show, axes_labels\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
+    "closed_at": "2008-05-25T04:10:38Z",
     "created_at": "2008-02-03T22:37:57Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "2d graphics -- problems with axes_labels options",
+    "title": "[with patches, with positive review] 2d graphics -- problems with axes_labels options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2040",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
+
+Keywords: show, axes_labels
 
 1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless
 

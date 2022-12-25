@@ -3,7 +3,8 @@
 archive/issues_008908.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nTo every composition is associated a Young subgroup. This method returns the Young subgroup associated to the given composition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8908\n\n",
+    "body": "Assignee: joyner\n\nKeywords: symmetric group\n\nTo every composition is associated a Young subgroup. This method returns the Young subgroup associated to the given composition.\n\nApply only [attachment:trac_8908_young_subgroup_folded-2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8908\n\n",
+    "closed_at": "2012-09-26T07:46:49Z",
     "created_at": "2010-05-06T17:58:20Z",
     "labels": [
         "component: group theory",
@@ -18,7 +19,11 @@ archive/issues_008908.json:
 ```
 Assignee: joyner
 
+Keywords: symmetric group
+
 To every composition is associated a Young subgroup. This method returns the Young subgroup associated to the given composition.
+
+Apply only [attachment:trac_8908_young_subgroup_folded-2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8908
 

@@ -3,7 +3,8 @@
 archive/issues_004306.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\n```\nsage: X = SupersingularModule(389)\nsage: X\nModule of supersingular points on X_0(1)/F_389 over Integer Ring\nsage: X.basis()\nTraceback (most recent call last):\n...\nAttributeError: 'SupersingularModule' object has no attribute 'free_module'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4306\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nKeywords: sd51, beginner\n\n```\nsage: X = SupersingularModule(389)\nsage: X\nModule of supersingular points on X_0(1)/F_389 over Integer Ring\nsage: X.basis()\nTraceback (most recent call last):\n...\nAttributeError: 'SupersingularModule' object has no attribute 'free_module'\n```\n\nApply [attachment:trac_4306.patch]\u200b, [attachment:trac_4306-doctest.2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4306\n\n",
+    "closed_at": "2013-08-19T06:45:33Z",
     "created_at": "2008-10-16T09:17:19Z",
     "labels": [
         "component: modular forms",
@@ -20,6 +21,8 @@ Assignee: @craigcitro
 
 CC:  @loefflerd
 
+Keywords: sd51, beginner
+
 ```
 sage: X = SupersingularModule(389)
 sage: X
@@ -29,6 +32,8 @@ Traceback (most recent call last):
 ...
 AttributeError: 'SupersingularModule' object has no attribute 'free_module'
 ```
+
+Apply [attachment:trac_4306.patch]​, [attachment:trac_4306-doctest.2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/4306
 

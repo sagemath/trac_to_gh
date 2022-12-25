@@ -3,7 +3,8 @@
 archive/issues_007984.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\nsage: QQbar(2) == GF(7)(2)\nBOOM\n```\n\nShould be False. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7984\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: QQbar comparison\n\n```\nsage: QQbar(2) == GF(7)(2)\nBOOM\n```\n\nShould be False. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7984\n\n",
+    "closed_at": "2010-03-02T21:06:13Z",
     "created_at": "2010-01-18T20:29:47Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,6 +18,8 @@ archive/issues_007984.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: QQbar comparison
 
 ```
 sage: QQbar(2) == GF(7)(2)

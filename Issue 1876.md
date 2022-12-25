@@ -4,6 +4,7 @@ archive/issues_001876.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe reference manual page at\n\nhttp://www.sagemath.org/doc/html/ref/node44.html\n\nsays\n\n**Note that the character is an escape character in Python, and also a character used by graph6 strings:**\n\nand then later\n\n**In Python, the escaped character is represented by**\n\nProbably there should be a 'slash' and a 'slashslash' there somewhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1876\n\n",
+    "closed_at": "2008-03-16T08:50:06Z",
     "created_at": "2008-01-21T06:22:45Z",
     "labels": [
         "component: documentation",

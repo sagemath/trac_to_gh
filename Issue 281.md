@@ -1,16 +1,16 @@
-# Issue 281: Errors in matrix for extensions of NumberFields
+# Issue 281: [looks fixed] Errors in matrix for extensions of NumberFields
 
 archive/issues_000281.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: extension numberfield matrix polynomial\n\nThe following is incorrect:\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(K['x'].0^2 - 3)\n\nsage: b.matrix()\n \n[0 1]\n[0 0]\n\nsage: M.<c> = NumberField(ZZ['x'].0^2 - 3)\n\nsage: c.matrix()\n \n[0 1]\n[3 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/281\n\n",
+    "closed_at": "2007-10-24T03:38:14Z",
     "created_at": "2007-02-23T20:01:46Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Errors in matrix for extensions of NumberFields",
+    "title": "[looks fixed] Errors in matrix for extensions of NumberFields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/281",
     "user": "https://github.com/ncalexan"

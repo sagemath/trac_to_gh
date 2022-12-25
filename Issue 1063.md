@@ -4,6 +4,7 @@ archive/issues_001063.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAfter the patch, this works:\n\n```\ncwitty@magnetar:~/sage$ ./sage -sh\nStarting subshell with Sage environment variables set:\ncwitty@magnetar:~/sage$ echo $SAGE_LOCAL\n/home/cwitty/sage/local\ncwitty@magnetar:~/sage$ exit\nexit\nExited Sage subshell.\n```\n\nI also patch sage-spkg, to change the error message it prints on failed package installs:\n\n```\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/cwitty/sage/spkg/build/genus2reduction-0.3 and type 'make'.\nInstead type \"/home/cwitty/sage/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/cwitty/sage/spkg/build/genus2reduction-0.3\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1063\n\n",
+    "closed_at": "2007-11-02T02:26:17Z",
     "created_at": "2007-11-02T01:56:46Z",
     "labels": [
         "component: user interface"

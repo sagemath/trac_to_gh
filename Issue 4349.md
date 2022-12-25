@@ -1,16 +1,17 @@
-# Issue 4349: jmol doesn't work on the command-line on OS X 10.5(.5)
+# Issue 4349: [with patch; positive review] jmol doesn't work on the command-line on OS X 10.5(.5)
 
 archive/issues_004349.json:
 ```json
 {
     "body": "Assignee: anakha\n\nIf you plot something in 3D on the command-line, buy default it pops up a jmol applet window showing the graphic (at least it did).  But now java fails to start in the sage environement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4349\n\n",
+    "closed_at": "2008-10-27T02:10:59Z",
     "created_at": "2008-10-23T17:39:38Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "jmol doesn't work on the command-line on OS X 10.5(.5)",
+    "title": "[with patch; positive review] jmol doesn't work on the command-line on OS X 10.5(.5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4349",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

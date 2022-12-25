@@ -3,7 +3,8 @@
 archive/issues_006886.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @categorie shumow\n\nKeywords: elliptic curve isogeny\n\nIn #6384, code was introduced to check whether the kernel polynomial provided by the user was valid, by checking that it divides the appropriate division polynomial.\n\nThis can be too expensive!  I have been working with isogenies of degree 163 over QQ, for which computing the 163-division polynomial takes many hours.  So I want to introduce a check parameter to the isogeny construction, default True, so that users (or other code) can switch off this check (when they \"know\" they are right!).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6886\n\n",
+    "body": "CC:  @categorie shumow\n\nKeywords: elliptic curve isogeny\n\nIn #6384, code was introduced to check whether the kernel polynomial provided by the user was valid, by checking that it divides the appropriate division polynomial.\n\nThis can be too expensive!  I have been working with isogenies of degree 163 over QQ, for which computing the 163-division polynomial takes many hours.  So I want to introduce a check parameter to the isogeny construction, default True, so that users (or other code) can switch off this check (when they \"know\" they are right!).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6886\n\n",
+    "closed_at": "2009-10-19T06:12:27Z",
     "created_at": "2009-09-04T08:58:56Z",
     "labels": [
         "component: elliptic curves",
@@ -17,8 +18,6 @@ archive/issues_006886.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @loefflerd
-
 CC:  @categorie shumow
 
 Keywords: elliptic curve isogeny

@@ -1,16 +1,17 @@
-# Issue 3854: interact needs to use "notruncate"
+# Issue 3854: [with patch; positive review] interact needs to use "notruncate"
 
 archive/issues_003854.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nToo many controls results in output truncated errors, but it's the length of the generated html that's tripping the warning... this should be trivial, just add \"<!--notruncate-->\" to the generated html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3854\n\n",
+    "closed_at": "2008-08-27T00:48:22Z",
     "created_at": "2008-08-14T18:32:40Z",
     "labels": [
         "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "interact needs to use \"notruncate\"",
+    "title": "[with patch; positive review] interact needs to use \"notruncate\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3854",
     "user": "https://github.com/rlmill"

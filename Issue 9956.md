@@ -3,7 +3,7 @@
 archive/issues_009956.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nSee [this ask.sagemath.org](http://ask.sagemath.org/question/136/importing-saved-3d-plot) discussion for background.  Basically,\n\n```\nsage: var('x,y')\n(x, y)\nsage: f(x,y)=x^2+y^2\nsage: p=plot3d(f,(-5,5),(-5,5))\nsage: p # works fine\nsage: p.save('test.sobj')\nsage: q = load('test.sobj')\nsage: q\nERROR: An unexpected error occurred while tokenizing input\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9957\n\n",
+    "body": "Assignee: jason, was\n\nSee [this ask.sagemath.org](http://ask.sagemath.org/question/136/importing-saved-3d-plot) discussion for background.\n\n```\nsage: var('x,y')\n(x, y)\nsage: f(x,y)=x^2+y^2\nsage: p=plot3d(f,(-5,5),(-5,5))\nsage: p # works fine\nsage: p.save('test.sobj')\nsage: q = load('test.sobj')\nsage: q\nERROR: An unexpected error occurred while tokenizing input\n<snip>\nNotImplementedError: You must override the get_grid method.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9957\n\n",
     "created_at": "2010-09-20T19:32:42Z",
     "labels": [
         "component: graphics",
@@ -19,7 +19,7 @@ archive/issues_009956.json:
 ```
 Assignee: jason, was
 
-See [this ask.sagemath.org](http://ask.sagemath.org/question/136/importing-saved-3d-plot) discussion for background.  Basically,
+See [this ask.sagemath.org](http://ask.sagemath.org/question/136/importing-saved-3d-plot) discussion for background.
 
 ```
 sage: var('x,y')
@@ -31,7 +31,10 @@ sage: p.save('test.sobj')
 sage: q = load('test.sobj')
 sage: q
 ERROR: An unexpected error occurred while tokenizing input
+<snip>
+NotImplementedError: You must override the get_grid method.
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9957
 

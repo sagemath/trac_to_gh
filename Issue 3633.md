@@ -1,22 +1,23 @@
-# Issue 3633: [witch patch, needs review] use commands.getoutput in hostinfo
+# Issue 3633: [witch patch, positive review] use commands.getoutput in hostinfo
 
 archive/issues_003633.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nFor some reason twisted trial is not too happy with using os.popen. Switching to commands.getouput to fetch system information on the mac seems to work better.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3633\n\n",
+    "body": "Assignee: @yqiang\n\nFor some reason twisted trial is not too happy with using os.popen. Switching to commands.getouput to fetch system information on the mac seems to work better.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3633\n\n",
+    "closed_at": "2008-08-10T05:13:20Z",
     "created_at": "2008-07-10T16:55:53Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[witch patch, needs review] use commands.getoutput in hostinfo",
+    "title": "[witch patch, positive review] use commands.getoutput in hostinfo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3633",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: @rlmill
+Assignee: @yqiang
 
 For some reason twisted trial is not too happy with using os.popen. Switching to commands.getouput to fetch system information on the mac seems to work better.
 

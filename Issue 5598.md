@@ -1,16 +1,17 @@
-# Issue 5598: allow post-creation (pre-use) declaration of coercions
+# Issue 5598: [with patch, positive review] allow post-creation (pre-use) declaration of coercions
 
 archive/issues_005598.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @nthiery\n\nOne can now do \n\na = A()\nmor = [morphism from X to A]\na.register_coercion(mor)\n\nThis works as long as coercion has not yet been used (otherwise information cached (both here and elsewhere) becomes invalid).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5598\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @nthiery\n\nOne can now do \n\n```\na = A()\nmor = [morphism from X to A]\nA.register_coercion(mor)\n```\n\nThis works as long as coercion has not yet been used (otherwise information cached (both here and elsewhere) becomes invalid). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5598\n\n",
+    "closed_at": "2009-10-19T13:23:22Z",
     "created_at": "2009-03-24T05:12:18Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "allow post-creation (pre-use) declaration of coercions",
+    "title": "[with patch, positive review] allow post-creation (pre-use) declaration of coercions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5598",
     "user": "https://github.com/robertwb"
@@ -22,11 +23,13 @@ CC:  @nthiery
 
 One can now do 
 
+```
 a = A()
 mor = [morphism from X to A]
-a.register_coercion(mor)
+A.register_coercion(mor)
+```
 
-This works as long as coercion has not yet been used (otherwise information cached (both here and elsewhere) becomes invalid).
+This works as long as coercion has not yet been used (otherwise information cached (both here and elsewhere) becomes invalid). 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5598
 

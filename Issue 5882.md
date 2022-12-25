@@ -1,16 +1,16 @@
-# Issue 5882: implement general package for finitely generated not-necessarily free R-modules
+# Issue 5882: [with patch, positive review] implement general package for finitely generated not-necessarily free R-modules
 
 archive/issues_005882.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @loefflerd @antieau\n\nI *really* need this for my research.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5882\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @loefflerd @antieau\n\nI *really* need this for my research.\n\nNote, I only really need the case R=ZZ, and what I'll implement is likely to be this for any R that has a Smith normal form algorithm, e.g., class number 1. \n\nI am finding and fixing some major bugs in basic linear algebra that have to be fixed in order to implement this.  Thus this patch depends on: #5886, #5887, #5972, #5974\n\nIssue created by migration from https://trac.sagemath.org/ticket/5882\n\n",
+    "closed_at": "2009-07-02T23:42:18Z",
     "created_at": "2009-04-24T00:20:20Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "implement general package for finitely generated not-necessarily free R-modules",
+    "title": "[with patch, positive review] implement general package for finitely generated not-necessarily free R-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5882",
     "user": "https://github.com/williamstein"
@@ -21,6 +21,10 @@ Assignee: @williamstein
 CC:  @jhpalmieri @loefflerd @antieau
 
 I *really* need this for my research.
+
+Note, I only really need the case R=ZZ, and what I'll implement is likely to be this for any R that has a Smith normal form algorithm, e.g., class number 1. 
+
+I am finding and fixing some major bugs in basic linear algebra that have to be fixed in order to implement this.  Thus this patch depends on: #5886, #5887, #5972, #5974
 
 Issue created by migration from https://trac.sagemath.org/ticket/5882
 

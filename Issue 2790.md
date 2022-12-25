@@ -1,22 +1,23 @@
-# Issue 2790: very annoying output of new "sage -tp"
+# Issue 2790: [with patch, positive review] very annoying output of new "sage -tp"
 
 archive/issues_002790.json:
 ```json
 {
-    "body": "Assignee: failure\n\nThe new sage -tp has output like this:\n\n```\n\nThe following tests failed:\n\n\tsage -t  devel/sage-modabvar/sage/modular/modform/space.py: 8 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/modform/eisenstein_submodule.py: 1 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/modform/element.py: 1 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/abvar/morphism.py: 8 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/abvar/homspace.py: 8 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1586.7 seconds\nteragon:sage was$ \n```\n\nThis is very annoying because I typically *paste* in the output in order to rerun broken doctests.\n\nEasy fix insert a #, i.e., change : x doctests failed to # : x doctests failed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2790\n\n",
+    "body": "Assignee: mabshoff\n\nThe new sage -tp has output like this:\n\n```\n\nThe following tests failed:\n\nsage -t  devel/sage-modabvar/sage/modular/modform/space.py: 8 doctests failed\nsage -t  devel/sage-modabvar/sage/modular/modform/eisenstein_submodule.py: 1 doctests failed\nsage -t  devel/sage-modabvar/sage/modular/modform/element.py: 1 doctests failed\nsage -t  devel/sage-modabvar/sage/modular/abvar/morphism.py: 8 doctests failed\nsage -t  devel/sage-modabvar/sage/modular/abvar/homspace.py: 8 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1586.7 seconds\nteragon:sage was$ \n```\n\nThis is very annoying because I typically *paste* in the output in order to rerun broken doctests.\n\nEasy fix insert a #, i.e., change : x doctests failed to # : x doctests failed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2790\n\n",
+    "closed_at": "2008-04-03T15:35:37Z",
     "created_at": "2008-04-03T04:19:57Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "very annoying output of new \"sage -tp\"",
+    "title": "[with patch, positive review] very annoying output of new \"sage -tp\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2790",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 The new sage -tp has output like this:
 
@@ -24,11 +25,11 @@ The new sage -tp has output like this:
 
 The following tests failed:
 
-	sage -t  devel/sage-modabvar/sage/modular/modform/space.py: 8 doctests failed
-	sage -t  devel/sage-modabvar/sage/modular/modform/eisenstein_submodule.py: 1 doctests failed
-	sage -t  devel/sage-modabvar/sage/modular/modform/element.py: 1 doctests failed
-	sage -t  devel/sage-modabvar/sage/modular/abvar/morphism.py: 8 doctests failed
-	sage -t  devel/sage-modabvar/sage/modular/abvar/homspace.py: 8 doctests failed
+sage -t  devel/sage-modabvar/sage/modular/modform/space.py: 8 doctests failed
+sage -t  devel/sage-modabvar/sage/modular/modform/eisenstein_submodule.py: 1 doctests failed
+sage -t  devel/sage-modabvar/sage/modular/modform/element.py: 1 doctests failed
+sage -t  devel/sage-modabvar/sage/modular/abvar/morphism.py: 8 doctests failed
+sage -t  devel/sage-modabvar/sage/modular/abvar/homspace.py: 8 doctests failed
 ----------------------------------------------------------------------
 Total time for all tests: 1586.7 seconds
 teragon:sage was$ 
@@ -36,7 +37,7 @@ teragon:sage was$
 
 This is very annoying because I typically *paste* in the output in order to rerun broken doctests.
 
-Easy fix insert a #, i.e., change : x doctests failed to # : x doctests failed.
+Easy fix insert a #, i.e., change : x doctests failed to # : x doctests failed. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2790
 

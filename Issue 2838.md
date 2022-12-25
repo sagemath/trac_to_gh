@@ -1,16 +1,17 @@
-# Issue 2838: _PyList_Extend missing
+# Issue 2838: [with patch, posititive review] _PyList_Extend missing
 
 archive/issues_002838.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nthis function is not included in PyList.pxi\n\nIssue created by migration from https://trac.sagemath.org/ticket/2838\n\n",
+    "closed_at": "2008-04-07T01:20:09Z",
     "created_at": "2008-04-07T01:07:34Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "_PyList_Extend missing",
+    "title": "[with patch, posititive review] _PyList_Extend missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2838",
     "user": "https://github.com/garyfurnish"

@@ -1,16 +1,17 @@
-# Issue 5932: graphs.RandomRegular(3,10) often returns a graph on 0 vertices
+# Issue 5932: [with patch, positive review] graphs.RandomRegular(3,10) often returns a graph on 0 vertices
 
 archive/issues_005932.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe docstring for graphs.RandomRegular says\n\n```\nReturns a random d-regular graph on n vertices, or returns False on\nfailure.\n```\n\nHowever, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:\n\n```\nsage: graphs.RandomRegular(3,10)\nGraph on 0 vertices\n\nsage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)\n232\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5932\n\n",
+    "closed_at": "2009-07-19T12:02:06Z",
     "created_at": "2009-04-29T05:21:23Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "graphs.RandomRegular(3,10) often returns a graph on 0 vertices",
+    "title": "[with patch, positive review] graphs.RandomRegular(3,10) often returns a graph on 0 vertices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5932",
     "user": "https://github.com/williamstein"

@@ -1,22 +1,23 @@
-# Issue 6304: intermittent crash in bernmm (4.0.2.rc0)
+# Issue 6304: [with patch, positive review] intermittent crash in bernmm (4.0.2.rc0)
 
 archive/issues_006304.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nbsd$ uname -a\nDarwin bsd.local 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386\n\n~/sage-4.0.2.rc0\nbsd$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\n/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62412 Illegal instruction     sage-ipython \"$@\" -i\n| Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n~/sage-4.0.2.rc0\nbsd$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\n/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62473 Illegal instruction     sage-ipython \"$@\" -i\n```\n| Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/6304\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nbsd$ uname -a\nDarwin bsd.local 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386\n\n~/sage-4.0.2.rc0\nbsd$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\n/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62412 Illegal instruction     sage-ipython \"$@\" -i\n| Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n~/sage-4.0.2.rc0\nbsd$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\n/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62473 Illegal instruction     sage-ipython \"$@\" -i\n```\n| Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/6304\n\n",
+    "closed_at": "2009-10-15T07:13:44Z",
     "created_at": "2009-06-15T19:04:21Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "intermittent crash in bernmm (4.0.2.rc0)",
+    "title": "[with patch, positive review] intermittent crash in bernmm (4.0.2.rc0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6304",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 ```
 bsd$ uname -a

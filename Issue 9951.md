@@ -4,6 +4,7 @@ archive/issues_009951.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  drkirkby\n\nIf SAGE_CHECK is set, then the spkg-check file in the ATLAS spkg tries to run the test suite.  But if SAGE_ATLAS_LIB is also set, then there is nothing to test, so SAGE_CHECK fails.  The new spkg (based on the one from #9780) fixes this by skipping the test suite if SAGE_CHECK is set.\n\nNote that if SAGE_ATLAS_LIB is set badly, then spkg-install fails before spkg-check is ever run, so in spkg-check we just need to see whether SAGE_ATLAS_LIB is not empty.\n\nGet the new spkg here:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p16.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p16.spkg)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9952\n\n",
+    "closed_at": "2010-09-29T08:40:29Z",
     "created_at": "2010-09-20T01:43:46Z",
     "labels": [
         "component: packages: standard",

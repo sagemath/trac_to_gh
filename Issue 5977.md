@@ -1,21 +1,23 @@
-# Issue 5977: Implement sage -clean-residues
+# Issue 5977: [with patch, positive review] Implement sage -clean-residues
 
 archive/issues_005977.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  sage-combinat\n\nKeywords: cleanup\n\nAdd an option -clean-residues (or any better name) to the sage script to make it compare the list of .pyc files and .so files in the build directory with the list in the source directory.  If a file has been removed in the source directory, delete the corresponding .pyc and .so files (or maybe even: if a file has been removed from version control, then wipe the .pyc/.so files, even if the actual file still exists in the source directory).\n\nOptionally, if the overhead is negligible, call this automatically upon sage -b.\n\nSee discussion 'Test failing on \"ImportError: cannot import name Set\"...' around March 11 on sage-devel.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5977\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: cleanup\n\nAdd an option -clean-residues (or any better name) to the sage script to make it compare the list of .pyc files and .so files in the build directory with the list in the source directory.  If a file has been removed in the source directory, delete the corresponding .pyc and .so files (or maybe even: if a file has been removed from version control, then wipe the .pyc/.so files, even if the actual file still exists in the source directory).\n\nOptionally, if the overhead is negligible, call this automatically upon sage -b.\n\nSee discussion 'Test failing on \"ImportError: cannot import name Set\"...' around March 11 on sage-devel.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5977\n\n",
+    "closed_at": "2009-05-28T06:10:59Z",
     "created_at": "2009-05-04T05:57:56Z",
     "labels": [
-        "component: build"
+        "component: build",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Implement sage -clean-residues",
+    "title": "[with patch, positive review] Implement sage -clean-residues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5977",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

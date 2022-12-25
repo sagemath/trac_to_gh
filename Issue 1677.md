@@ -1,9 +1,10 @@
-# Issue 1677: trivial-to-fix mistake in the rubiks spkg
+# Issue 1677: [with spkg] trivial-to-fix mistake in the rubiks spkg
 
 archive/issues_001677.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere is a pre-built OS X binary of cube in the rubiks spkg\n\n```\nglobals.c    makefile     prntsol.c   setcube.c  sizekoc1.c  trans\nwas@newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ ls -lh\ntotal 196K\n-rwxr-xr-x 1 was was  38K 2007-09-12 03:28 cube\n-rw-r--r-- 1 was was  13K 2007-09-12 03:28 cube.c\n-rw-r--r-- 1 was was  14K 2007-09-12 03:28 Description\n-rw-r--r-- 1 was was  254 2007-09-12 03:28 globals.c\n-rw-r--r-- 1 was was  249 2007-09-12 03:28 globals.h\n-rw-r--r-- 1 was was 1.1K 2007-09-12 03:28 license.txt\n-rw-r--r-- 1 was was  148 2007-09-12 03:28 longtype.h\n-rw-r--r-- 1 was was 2.6K 2007-09-12 03:28 makefile\n-rw-r--r-- 1 was was 2.4K 2007-09-12 03:28 permcube.c\n-rw-r--r-- 1 was was 6.2K 2007-09-12 03:28 phase1.c\n-rw-r--r-- 1 was was 4.1K 2007-09-12 03:28 phase2.c\n-rw-r--r-- 1 was was  338 2007-09-12 03:28 prntsol.c\n-rw-r--r-- 1 was was  306 2007-09-12 03:28 rancube.c\n-rw-r--r-- 1 was was 2.8K 2007-09-12 03:28 README\n-rw-r--r-- 1 was was 7.7K 2007-09-12 03:28 RESULTS\n-rw-r--r-- 1 was was 4.2K 2007-09-12 03:28 setcube.c\n-rw-r--r-- 1 was was 3.3K 2007-09-12 03:28 size222.c\n-rw-r--r-- 1 was was 5.6K 2007-09-12 03:28 size333c.c\n-rw-r--r-- 1 was was 8.9K 2007-09-12 03:28 sizedom.c\n-rw-r--r-- 1 was was 4.6K 2007-09-12 03:28 sizekoc1.c\n-rw-r--r-- 1 was was 5.6K 2007-09-12 03:28 sizekoc2.c\n-rw-r--r-- 1 was was 3.0K 2007-09-12 03:28 sizesquare.c\n-rw-r--r-- 1 was was 5.7K 2007-09-12 03:28 TABLE\ndrwxr-xr-x 2 was was 4.0K 2007-09-12 03:28 trans\nwas@newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ file cube\ncube: Mach-O executable i386\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1677\n\n",
+    "body": "Assignee: @robertwb\n\nThere is a pre-built OS X binary of cube in the rubiks spkg\n\n```\nglobals.c    makefile     prntsol.c   setcube.c  sizekoc1.c  trans\nwas@newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ ls -lh\ntotal 196K\n-rwxr-xr-x 1 was was  38K 2007-09-12 03:28 cube\n-rw-r--r-- 1 was was  13K 2007-09-12 03:28 cube.c\n-rw-r--r-- 1 was was  14K 2007-09-12 03:28 Description\n-rw-r--r-- 1 was was  254 2007-09-12 03:28 globals.c\n-rw-r--r-- 1 was was  249 2007-09-12 03:28 globals.h\n-rw-r--r-- 1 was was 1.1K 2007-09-12 03:28 license.txt\n-rw-r--r-- 1 was was  148 2007-09-12 03:28 longtype.h\n-rw-r--r-- 1 was was 2.6K 2007-09-12 03:28 makefile\n-rw-r--r-- 1 was was 2.4K 2007-09-12 03:28 permcube.c\n-rw-r--r-- 1 was was 6.2K 2007-09-12 03:28 phase1.c\n-rw-r--r-- 1 was was 4.1K 2007-09-12 03:28 phase2.c\n-rw-r--r-- 1 was was  338 2007-09-12 03:28 prntsol.c\n-rw-r--r-- 1 was was  306 2007-09-12 03:28 rancube.c\n-rw-r--r-- 1 was was 2.8K 2007-09-12 03:28 README\n-rw-r--r-- 1 was was 7.7K 2007-09-12 03:28 RESULTS\n-rw-r--r-- 1 was was 4.2K 2007-09-12 03:28 setcube.c\n-rw-r--r-- 1 was was 3.3K 2007-09-12 03:28 size222.c\n-rw-r--r-- 1 was was 5.6K 2007-09-12 03:28 size333c.c\n-rw-r--r-- 1 was was 8.9K 2007-09-12 03:28 sizedom.c\n-rw-r--r-- 1 was was 4.6K 2007-09-12 03:28 sizekoc1.c\n-rw-r--r-- 1 was was 5.6K 2007-09-12 03:28 sizekoc2.c\n-rw-r--r-- 1 was was 3.0K 2007-09-12 03:28 sizesquare.c\n-rw-r--r-- 1 was was 5.7K 2007-09-12 03:28 TABLE\ndrwxr-xr-x 2 was was 4.0K 2007-09-12 03:28 trans\nwas@newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ file cube\ncube: Mach-O executable i386\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1677\n\n",
+    "closed_at": "2008-01-04T10:53:06Z",
     "created_at": "2008-01-04T02:57:10Z",
     "labels": [
         "component: packages: standard",
@@ -11,13 +12,13 @@ archive/issues_001677.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "trivial-to-fix mistake in the rubiks spkg",
+    "title": "[with spkg] trivial-to-fix mistake in the rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1677",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @robertwb
 
 There is a pre-built OS X binary of cube in the rubiks spkg
 

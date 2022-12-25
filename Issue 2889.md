@@ -1,16 +1,17 @@
-# Issue 2889: notebook -- huge output cells crash firefox
+# Issue 2889: [with patch; positive review] notebook -- huge output cells crash firefox
 
 archive/issues_002889.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen the output of the notebook has a huge number of rows, Firefox crashes / becomes unusable. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2889\n\n",
+    "closed_at": "2008-04-12T10:29:04Z",
     "created_at": "2008-04-12T01:43:12Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- huge output cells crash firefox",
+    "title": "[with patch; positive review] notebook -- huge output cells crash firefox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2889",
     "user": "https://github.com/williamstein"

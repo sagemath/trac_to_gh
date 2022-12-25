@@ -1,22 +1,23 @@
-# Issue 6159: Implement real_part for CDF and CC
+# Issue 6159: [with patch, positive review] Implement real_part for CDF and CC
 
 archive/issues_006159.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: CC(I).real_part()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/9440/_home_jason__sage_init_sage_0.py in <module>()\n\nAttributeError: 'sage.rings.complex_number.ComplexNumber' object has no attribute 'real_part'\n\n\nsage: CDF(I).real_part()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/9440/_home_jason__sage_init_sage_0.py in <module>()\n\nAttributeError: 'sage.rings.complex_double.ComplexDoubleElement' object has no attribute 'real_part'\n```\n\nbut \n\n```\nsage: (3+I).real_part()\n3\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6159\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: CC(I).real_part()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/9440/_home_jason__sage_init_sage_0.py in <module>()\n\nAttributeError: 'sage.rings.complex_number.ComplexNumber' object has no attribute 'real_part'\n\n\nsage: CDF(I).real_part()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/9440/_home_jason__sage_init_sage_0.py in <module>()\n\nAttributeError: 'sage.rings.complex_double.ComplexDoubleElement' object has no attribute 'real_part'\n```\n\nbut \n\n```\nsage: (3+I).real_part()\n3\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6159\n\n",
+    "closed_at": "2009-07-18T13:24:44Z",
     "created_at": "2009-05-30T15:46:42Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Implement real_part for CDF and CC",
+    "title": "[with patch, positive review] Implement real_part for CDF and CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6159",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: somebody
+Assignee: @aghitza
 
 ```
 sage: CC(I).real_part()

@@ -1,16 +1,17 @@
-# Issue 6029: [with patch, needs review] bug in floor() for python types
+# Issue 6029: [with patch, positive review] bug in floor() for python types
 
 archive/issues_006029.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nsage: floor(int(10^50))\n100000000000000007629769841091887003294964970946560\n\nIssue created by migration from https://trac.sagemath.org/ticket/6029\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: floor(int(10^50))\n100000000000000007629769841091887003294964970946560\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6029\n\n",
+    "closed_at": "2009-05-20T23:48:14Z",
     "created_at": "2009-05-12T10:15:40Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] bug in floor() for python types",
+    "title": "[with patch, positive review] bug in floor() for python types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6029",
     "user": "https://github.com/robertwb"
@@ -18,8 +19,10 @@ archive/issues_006029.json:
 ```
 Assignee: somebody
 
+```
 sage: floor(int(10^50))
 100000000000000007629769841091887003294964970946560
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6029
 

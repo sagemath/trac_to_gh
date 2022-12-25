@@ -1,9 +1,10 @@
-# Issue 1933: libgpg_error-1.6.spkg borken make install for parallel make
+# Issue 1933: [with spkg] libgpg_error-1.6.spkg broken make install for parallel make
 
 archive/issues_001933.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe issue has only been observed on OSX so far, but the fix is obvious. A new spkg will be up shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1933\n\n",
+    "closed_at": "2008-01-26T10:33:38Z",
     "created_at": "2008-01-26T09:04:37Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001933.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "libgpg_error-1.6.spkg borken make install for parallel make",
+    "title": "[with spkg] libgpg_error-1.6.spkg broken make install for parallel make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1933",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

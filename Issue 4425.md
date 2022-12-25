@@ -1,22 +1,23 @@
-# Issue 4425: sqrt(4) returns a SymbolicComposition instead of the number 2!
+# Issue 4425: [with patch, positive review] sqrt(4) returns a SymbolicComposition instead of the number 2!
 
 archive/issues_004425.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIn Sage-3.1.4 we have this, which I consider wrong:\n\n```\nsage: n = 4\nsage: type(sqrt(n))\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: type(n.sqrt())\n<type 'sage.rings.integer.Integer'>\n```\n\nI think sqrt(foo) should first check if foo has a sqrt method, and\nif so call it.    I realize there is a subtle problem here, because\nthe integer sqrt function calls the symbolic calculus one!  So we\nneed some sort of architecture to fix this right.   This isn't trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4425\n\n",
+    "body": "Assignee: @kcrisman\n\nIn Sage-3.1.4 we have this, which I consider wrong:\n\n```\nsage: n = 4\nsage: type(sqrt(n))\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: type(n.sqrt())\n<type 'sage.rings.integer.Integer'>\n```\n\nI think sqrt(foo) should first check if foo has a sqrt method, and\nif so call it.    I realize there is a subtle problem here, because\nthe integer sqrt function calls the symbolic calculus one!  So we\nneed some sort of architecture to fix this right.   This isn't trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4425\n\n",
+    "closed_at": "2008-11-08T07:12:11Z",
     "created_at": "2008-11-02T17:34:58Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "sqrt(4) returns a SymbolicComposition instead of the number 2!",
+    "title": "[with patch, positive review] sqrt(4) returns a SymbolicComposition instead of the number 2!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4425",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @kcrisman
 
 In Sage-3.1.4 we have this, which I consider wrong:
 

@@ -3,7 +3,8 @@
 archive/issues_002460.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nVarious people worked on factorization.py and unfortunately ignored some implicit \nassumptions in what that code is supposed to do.  In particular, this function\n\n```\n    def base_ring(self):\n        if len(self) > 0:\n            return self[0][0].parent()\n        else:\n            return self.unit().parent()\n```\nassumes that (1) ever element has the same parent, and (2) the parent is a ring.\nNeither assumption need be satisfied.   \n\nThis is_commutative function then relies on base_ring working.  \nHere's an example of this leading to *wrong* answers:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n\nProposal: Simply call Sequence on the list of bases in the factorization\nto get a new list where the basis lie in a common university.  Then refine\nis_commutative to mean that the universe is a commuative ring, and only then\ncommute factors automatically.\n\nSecond, after the above is resolved, the sort function for comparison \nshould call universe() (not base_ring) and use some sensible defaults,\nbefore resorting to that mess of code in the current sort method. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2460\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_wstein\n\nVarious people worked on factorization.py and unfortunately ignored some implicit \nassumptions in what that code is supposed to do.  In particular, this function\n\n```\n    def base_ring(self):\n        if len(self) > 0:\n            return self[0][0].parent()\n        else:\n            return self.unit().parent()\n```\nassumes that (1) ever element has the same parent, and (2) the parent is a ring.\nNeither assumption need be satisfied.   \n\nThis is_commutative function then relies on base_ring working.  \nHere's an example of this leading to *wrong* answers:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n\nProposal: Simply call Sequence on the list of bases in the factorization\nto get a new list where the basis lie in a common university.  Then refine\nis_commutative to mean that the universe is a commuative ring, and only then\ncommute factors automatically.\n\nSecond, after the above is resolved, the sort function for comparison \nshould call universe() (not base_ring) and use some sensible defaults,\nbefore resorting to that mess of code in the current sort method. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2460\n\n",
+    "closed_at": "2008-11-14T08:52:38Z",
     "created_at": "2008-03-10T16:02:43Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,9 @@ archive/issues_002460.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
+
+Keywords: editor_wstein
 
 Various people worked on factorization.py and unfortunately ignored some implicit 
 assumptions in what that code is supposed to do.  In particular, this function

@@ -4,10 +4,11 @@ archive/issues_009512.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  boothby acleone cwitty @fchapoton\n\nAdd an \"Edit this page\" link at the bottom of source files (/src/...) where one can edit the file.\n\nOnly `user_type(username) == 'admin'` can edit the files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9512\n\n",
+    "closed_at": "2020-09-11T10:41:57Z",
     "created_at": "2010-07-15T20:07:12Z",
     "labels": [
         "component: notebook",
-        "trivial"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage Source Editor",

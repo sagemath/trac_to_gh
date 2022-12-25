@@ -1,16 +1,17 @@
-# Issue 532: mkfr leak in RealField (from matrix/strassen.pyx)
+# Issue 532: mpfr leak in RealField (from matrix/strassen.pyx)
 
 archive/issues_000532.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom Sage 2.8.3rc3:\n\n```\n==24738== 16 bytes in 1 blocks are possibly lost in loss record 525 of 2,259\n==24738==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==24738==    by 0x165368BD: mpfr_init2 (in /tmp/Work2/sage-2.8.3.rc3/devel/sage-main/build/sage/rings/real_mpfr.so)\n==24738==    by 0x16503260: __pyx_f_9real_mpfr_9RealField___init__ (real_mpfr.c:1410)\n==24738==    by 0x45A321: type_call (typeobject.c:436)\n==24738==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==24738==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==24738==    by 0x18836269: initpolynomial_element (polynomial_element.c:21764)\n==24738==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)\n==24738==    by 0x49D63E: import_submodule (import.c:2394)\n==24738==    by 0x49DB11: load_next (import.c:2214)\n==24738==    by 0x49DD6E: import_module_level (import.c:2002)\n==24738==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/532\n\n",
+    "closed_at": "2007-10-11T22:02:38Z",
     "created_at": "2007-08-30T18:50:02Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "mkfr leak in RealField (from matrix/strassen.pyx)",
+    "title": "mpfr leak in RealField (from matrix/strassen.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/532",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 8741: Upgrade Twisted to 10.0
+# Issue 8741: Upgrade Twisted to 11.0
 
 archive/issues_008741.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTwisted is now version [10.0](http://twistedmatrix.com/trac/browser/tags/releases/twisted-10.0.0/NEWS?format=raw), bringing a bunch of bug fixes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8741\n\n",
+    "body": "Assignee: tbd\n\nTwisted is now version 11.0, bringing a bunch of bug fixes.\n\nThe new package is at http://sage.math.washington.edu/home/jason/twisted-11.0.0.spkg\n\nThe new sage notebook at http://code.google.com/r/jasongrout-flask-sagenb/ is needed to test this package\n\nIssue created by migration from https://trac.sagemath.org/ticket/8741\n\n",
+    "closed_at": "2013-05-16T07:38:14Z",
     "created_at": "2010-04-21T19:31:17Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Upgrade Twisted to 10.0",
+    "title": "Upgrade Twisted to 11.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8741",
     "user": "https://github.com/TimDumol"
@@ -18,7 +19,11 @@ archive/issues_008741.json:
 ```
 Assignee: tbd
 
-Twisted is now version [10.0](http://twistedmatrix.com/trac/browser/tags/releases/twisted-10.0.0/NEWS?format=raw), bringing a bunch of bug fixes.
+Twisted is now version 11.0, bringing a bunch of bug fixes.
+
+The new package is at http://sage.math.washington.edu/home/jason/twisted-11.0.0.spkg
+
+The new sage notebook at http://code.google.com/r/jasongrout-flask-sagenb/ is needed to test this package
 
 Issue created by migration from https://trac.sagemath.org/ticket/8741
 

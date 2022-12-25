@@ -1,9 +1,10 @@
-# Issue 3270: [with patch, easy review] trivial 100x speedup in coding theory
+# Issue 3270: [with patch, positive review] trivial 100x speedup in coding theory
 
 archive/issues_003270.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nWas:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 2.39 s, sys: 0.58 s, total: 2.97 s\nWall time: 24.32\n```\nNow:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 0.19 s, sys: 0.04 s, total: 0.23 s\nWall time: 0.24\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3270\n\n",
+    "closed_at": "2008-05-22T10:36:46Z",
     "created_at": "2008-05-22T00:26:04Z",
     "labels": [
         "component: coding theory",
@@ -11,7 +12,7 @@ archive/issues_003270.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, easy review] trivial 100x speedup in coding theory",
+    "title": "[with patch, positive review] trivial 100x speedup in coding theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3270",
     "user": "https://github.com/rlmill"

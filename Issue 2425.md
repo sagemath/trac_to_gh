@@ -1,16 +1,17 @@
-# Issue 2425: [with patch; needs review] In multipolynomials, the function jacob() should be called gradient()
+# Issue 2425: [with patch; with positive review] In multipolynomials, the function jacob() should be called gradient()
 
 archive/issues_002425.json:
 ```json
 {
     "body": "Assignee: jbandlow@gmail.com\n\nKeywords: jacob, gradient\n\nOn Fri, Feb 29, 2008 at 1:58 PM, Jason Bandlow <jbandlow`@`gmail.com> wrote:\n\nHi,\n\nCurrently, if f is a multi-polynomial, the call f.jacob() returns the\nlist of partial derivatives of f with respect to the ring generators:\n\n```\n  sage: R.<x,y,z> = PolynomialRing(QQ)\n  sage: f = x^4 + y^3 + z^2 + x*y*z\n  sage: f.jacob()\n  [4*x^3 + y*z, 3*y^2 + x*z, x*y + 2*z]\n```\n\n\n\nI'd like to change the name to gradient. Another possibility is changing\nthe name to 'jacobian', but I think it's likely that more people (eg\ncalculus students) will recognize the term 'gradient' and not 'jacobian'\nthan vice-versa.  And who talks about the Jacobian of a single function\nanyway? :)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2425\n\n",
+    "closed_at": "2008-03-09T19:11:46Z",
     "created_at": "2008-03-07T23:08:54Z",
     "labels": [
-        "component: cygwin",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch; needs review] In multipolynomials, the function jacob() should be called gradient()",
+    "title": "[with patch; with positive review] In multipolynomials, the function jacob() should be called gradient()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2425",
     "user": "https://github.com/jbandlow"

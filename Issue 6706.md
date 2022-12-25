@@ -1,26 +1,27 @@
-# Issue 6706: MPIR can try to unsuccessfully link in gmp on Solaris
+# Issue 6706: MPIR can try to unsuccessfully link in gmp on some Solaris x86 machines
 
 archive/issues_006706.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nI'll post a full lot later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6706\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  david.kirkby@onetel.net\n\nI'll post a full log later. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6706\n\n",
+    "closed_at": "2016-02-23T22:53:10Z",
     "created_at": "2009-08-09T09:51:45Z",
     "labels": [
-        "component: algebra",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "MPIR can try to unsuccessfully link in gmp on Solaris",
+    "title": "MPIR can try to unsuccessfully link in gmp on some Solaris x86 machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6706",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  david.kirkby@onetel.net
 
-I'll post a full lot later.
+I'll post a full log later. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6706
 

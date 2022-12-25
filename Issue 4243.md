@@ -1,15 +1,16 @@
-# Issue 4243: [with spkg, needs review] pynac package version bump to 0.1.1
+# Issue 4243: [with spkg, positive review] pynac package version bump to 0.1.1
 
 archive/issues_004243.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @williamstein @mwhansen\n\nKeywords: pynac, symbolics\n\nThere is a new version of pynac available. :)\n\nThis version allows setting custom python functions to perform evaluation, numeric evaluation, derivation, series expansion, etc. on symbolic functions.\n\nThe new package is available is here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4243\n\n",
+    "closed_at": "2008-10-18T13:05:15Z",
     "created_at": "2008-10-04T20:26:25Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with spkg, needs review] pynac package version bump to 0.1.1",
+    "title": "[with spkg, positive review] pynac package version bump to 0.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4243",
     "user": "https://github.com/burcin"

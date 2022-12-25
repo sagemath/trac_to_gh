@@ -1,15 +1,16 @@
-# Issue 6556: notebook: document keyboard shortcuts
+# Issue 6556: [with patch, positive review] notebook: document keyboard shortcuts
 
 archive/issues_006556.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: notebook, keyboard shortcuts\n\nThis issue was raised in this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/58284efb2a15856e) thread. All key combinations and keyboard shortcuts for the notebook should be documented in the tutorial and the reference manual. The tutorial should also inform readers about the Help link on the notebook. That link contains useful key combinations when using the Sage notebook. The file\n\nSAGE_ROOT/devel/sage-main/sage/server/notebook/config.py\n\ncontains all known key combinations for the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6556\n\n",
+    "closed_at": "2009-08-31T07:00:36Z",
     "created_at": "2009-07-18T20:41:45Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "notebook: document keyboard shortcuts",
+    "title": "[with patch, positive review] notebook: document keyboard shortcuts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6556",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

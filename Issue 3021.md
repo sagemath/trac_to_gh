@@ -1,15 +1,16 @@
-# Issue 3021: add curl and divergence functions to symbolic vectors
+# Issue 3021: add curl and divergence functions to vectors
 
 archive/issues_003021.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @eviatarbach\n\nMake curl work if the vector has 2 or 3 components.  Is there a higher-dimensional analogue for curl?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3021\n\n",
+    "closed_at": "2015-02-17T19:28:29Z",
     "created_at": "2008-04-25T12:17:10Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "add curl and divergence functions to symbolic vectors",
+    "title": "add curl and divergence functions to vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3021",
     "user": "https://github.com/jasongrout"

@@ -1,16 +1,17 @@
-# Issue 1426: new trac view: tickets ***reported by*** given user
+# Issue 1426: [with patch] new trac view: tickets ***reported by*** given user
 
 archive/issues_001426.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI don't know if this is possible, but I wish the possibility to view all tickets \nreported by a user logged in trac (either only active tickets, or active tickets first).\nThis would enable me to see progress made on those tickets.\n\nCurrently it is possible to view ***my tickets***, i.e., tickets ***assigned to me***,\nwhich is quite different :-)\n\nPS: I'm not sure the component \"website/wiki\" is the right one. Maybe one needs a new component\n\"trac\"?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1426\n\n",
+    "closed_at": "2007-12-21T02:28:53Z",
     "created_at": "2007-12-08T10:44:15Z",
     "labels": [
         "component: website/wiki",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "new trac view: tickets ***reported by*** given user",
+    "title": "[with patch] new trac view: tickets ***reported by*** given user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1426",
     "user": "https://github.com/zimmermann6"

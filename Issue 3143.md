@@ -1,16 +1,17 @@
-# Issue 3143: [with patch, needs review] remove references to /home/was
+# Issue 3143: [with patch, positive review] remove references to /home/was
 
 archive/issues_003143.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nSome debugging code was left in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3143\n\n",
+    "closed_at": "2008-05-11T10:51:04Z",
     "created_at": "2008-05-09T10:45:16Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] remove references to /home/was",
+    "title": "[with patch, positive review] remove references to /home/was",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3143",
     "user": "https://github.com/malb"

@@ -1,16 +1,17 @@
-# Issue 2944: [with patch, needs review] add E2 parameter to padic_height_via_multiply
+# Issue 2944: [with patch, with positive review] add E2 parameter to padic_height_via_multiply
 
 archive/issues_002944.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch adds an optional E2 parameter to `padic_height_via_multiply`. The idea is to make it possible to use a precomputed value of E2. Since the E2 computation is very expensive relative to the p-adic height computation, this makes it easier to do profiling work on the p-adic height portion of the computation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2944\n\n",
+    "closed_at": "2008-04-17T06:13:04Z",
     "created_at": "2008-04-16T22:32:27Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] add E2 parameter to padic_height_via_multiply",
+    "title": "[with patch, with positive review] add E2 parameter to padic_height_via_multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2944",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

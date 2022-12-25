@@ -1,9 +1,10 @@
-# Issue 2892: notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case
+# Issue 2892: [with patch; positive review] notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case
 
 archive/issues_002892.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI discovered this but when teaching my class.  It's best explained\nwith a screen shot. \n\nhttp://sage.math.washington.edu/home/was/patches/traceback_shrinking.png\n\nIssue created by migration from https://trac.sagemath.org/ticket/2892\n\n",
+    "closed_at": "2008-04-12T11:27:35Z",
     "created_at": "2008-04-12T03:17:30Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002892.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case",
+    "title": "[with patch; positive review] notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2892",
     "user": "https://github.com/williamstein"

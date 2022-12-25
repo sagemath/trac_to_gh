@@ -1,64 +1,40 @@
-# Issue 5852: [with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively
+# Issue 5852: Properly canonicalize $SAGE_ROOT
 
 archive/issues_005852.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @kini\n\nCurrently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but it should use `readlink -nf` to expand symlinks recursively.\n\nOtherwise, the symlink expansion may not be completely done, and `$SAGE_ROOT` could end up with a non-canonical dirname, which leads to issues with testing.\n\nHere's a way to reproduce an issue with the current script. For the example, my sage-3.4 installation lives in `/home/sage/sage-3.4`, and here's what happened to me:\n\n```\n/home/sage$ md5sum sage-3.4/sage\n4153919efe1edcd34ad7fa193122d679  sage-3.4/sage\n/home/sage$ ln -s sage-3.4 sage-3.4-symlink\n/home/sage$ ln -sf /home/sage/sage-3.4-symlink/sage /home/tornaria/bin/sage\n/home/sage$ type sage\nsage is hashed (/home/tornaria/bin/sage)\n/home/sage$ readlink `type -p sage`\n/home/sage/sage-3.4-symlink/sage\n/home/sage$ readlink -f `type -p sage`\n/home/sage/sage-3.4/sage\n```\n\nAs you can see, `readlink -n` expands once but doesn't cannonicalize the path to the `sage` script. And here's the symptom:\n\n```\n/home/sage$ sage -t sage-3.4/devel/sage-main/sage/all.py\nsage -t  \"sage-3.4/devel/sage-main/sage/all.py\"             \n  File \"./all.py\", line 18\n    from sage-3.4/devel/sage-main/sage/all import *\n             ^\nSyntaxError: invalid syntax\n\n\t [0.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"sage-3.4/devel/sage-main/sage/all.py\"\nTotal time for all tests: 0.3 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5852\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @nexttime @kini\n\nCurrently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but that is broken because\n- It only works when `$0` (the sage executable itself) is a symbolic link\n- If the sage executable is a symbolic link, then `readlink -n` returns the link itself, not the canonicalized name.  Example: if `/usr/local/sage-4.7.1/sage` is a symbolic link to `sagefoo`, then `SAGE_ROOT` would become `sagefoo` when `'/usr/local/sage-4.7.1/sagefoo` is intended.\n- The symlink expansion may not be completely done, and `$SAGE_ROOT` could end up with a non-canonical dirname, which leads to issues with testing.\n- The code to detect `SAGE_ROOT` inside `sage-env` does not canonicalize the pathname at all.  This should be fixed as well. (The only case where `sage-env` is run without `SAGE_ROOT` being set is when testing Sage from the `Makefile`, i.e. when running `make ptest` or similar.)\n\nNote that we should do this in a portable way, without using `realpath`, `readlink -f` or the likes.\n\nSee also #11704, which solves the same problem for `DOT_SAGE`.\n\nApply:\n1. [attachment:5852_sage_root.patch] to `SAGE_ROOT`\n2. [attachment:5852_scripts.patch] to `local/bin`\n3. [attachment:5852_doc.patch] and [attachment:trac_5852-doc-referee.patch] to `devel/sage`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5852\n\n",
+    "closed_at": "2011-11-26T10:31:33Z",
     "created_at": "2009-04-22T12:39:58Z",
     "labels": [
-        "component: algebra",
+        "component: scripts",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
-    "title": "[with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively",
+    "title": "Properly canonicalize $SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5852",
     "user": "https://github.com/tornaria"
 }
 ```
-Assignee: tbd
+Assignee: @jdemeyer
 
 CC:  @nexttime @kini
 
-Currently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but it should use `readlink -nf` to expand symlinks recursively.
+Currently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but that is broken because
+- It only works when `$0` (the sage executable itself) is a symbolic link
+- If the sage executable is a symbolic link, then `readlink -n` returns the link itself, not the canonicalized name.  Example: if `/usr/local/sage-4.7.1/sage` is a symbolic link to `sagefoo`, then `SAGE_ROOT` would become `sagefoo` when `'/usr/local/sage-4.7.1/sagefoo` is intended.
+- The symlink expansion may not be completely done, and `$SAGE_ROOT` could end up with a non-canonical dirname, which leads to issues with testing.
+- The code to detect `SAGE_ROOT` inside `sage-env` does not canonicalize the pathname at all.  This should be fixed as well. (The only case where `sage-env` is run without `SAGE_ROOT` being set is when testing Sage from the `Makefile`, i.e. when running `make ptest` or similar.)
 
-Otherwise, the symlink expansion may not be completely done, and `$SAGE_ROOT` could end up with a non-canonical dirname, which leads to issues with testing.
+Note that we should do this in a portable way, without using `realpath`, `readlink -f` or the likes.
 
-Here's a way to reproduce an issue with the current script. For the example, my sage-3.4 installation lives in `/home/sage/sage-3.4`, and here's what happened to me:
+See also #11704, which solves the same problem for `DOT_SAGE`.
 
-```
-/home/sage$ md5sum sage-3.4/sage
-4153919efe1edcd34ad7fa193122d679  sage-3.4/sage
-/home/sage$ ln -s sage-3.4 sage-3.4-symlink
-/home/sage$ ln -sf /home/sage/sage-3.4-symlink/sage /home/tornaria/bin/sage
-/home/sage$ type sage
-sage is hashed (/home/tornaria/bin/sage)
-/home/sage$ readlink `type -p sage`
-/home/sage/sage-3.4-symlink/sage
-/home/sage$ readlink -f `type -p sage`
-/home/sage/sage-3.4/sage
-```
-
-As you can see, `readlink -n` expands once but doesn't cannonicalize the path to the `sage` script. And here's the symptom:
-
-```
-/home/sage$ sage -t sage-3.4/devel/sage-main/sage/all.py
-sage -t  "sage-3.4/devel/sage-main/sage/all.py"             
-  File "./all.py", line 18
-    from sage-3.4/devel/sage-main/sage/all import *
-             ^
-SyntaxError: invalid syntax
-
-	 [0.3 s]
-exit code: 1024
- 
-----------------------------------------------------------------------
-The following tests failed:
-
-
-	sage -t  "sage-3.4/devel/sage-main/sage/all.py"
-Total time for all tests: 0.3 seconds
-```
+Apply:
+1. [attachment:5852_sage_root.patch] to `SAGE_ROOT`
+2. [attachment:5852_scripts.patch] to `local/bin`
+3. [attachment:5852_doc.patch] and [attachment:trac_5852-doc-referee.patch] to `devel/sage`
 
 Issue created by migration from https://trac.sagemath.org/ticket/5852
 

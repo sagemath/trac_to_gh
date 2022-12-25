@@ -1,16 +1,17 @@
-# Issue 2366: add docstring to sloane_find
+# Issue 2366: [with patch, positive review] add docstring to sloane_find and sloane_sequence
 
 archive/issues_002366.json:
 ```json
 {
     "body": "Assignee: TimothyClemans\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2366\n\n",
+    "closed_at": "2008-08-27T21:28:27Z",
     "created_at": "2008-03-02T07:55:10Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "add docstring to sloane_find",
+    "title": "[with patch, positive review] add docstring to sloane_find and sloane_sequence",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2366",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

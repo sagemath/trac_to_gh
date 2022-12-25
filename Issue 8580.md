@@ -1,22 +1,23 @@
-# Issue 8580: Bug in coercing into a 0-dimensional qotient vector space
+# Issue 8580: bug in matrix_mod2_dense (m4ri wrapper?): exhibited by bug in coercing into a 0-dimensional qotient vector space
 
 archive/issues_008580.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nwstein@boxen:~$ /usr/local/bin/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: V = GF(2)^3\nsage: (V/V)(V.0)\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8580\n\n",
+    "body": "Assignee: @malb\n\n```\nwstein@boxen:~$ /usr/local/bin/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: V = GF(2)^3\nsage: (V/V)(V.0)\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nThis is because of a bug in m4ri (or our wrapper of it), since with p=3 (instead of 2) everything works fine:\n\n```\nsage:  V = GF(3)^3\nsage: (V/V)(V.0)\n()\nsage:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8580\n\n",
+    "closed_at": "2010-04-16T18:48:42Z",
     "created_at": "2010-03-22T21:39:50Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "Bug in coercing into a 0-dimensional qotient vector space",
+    "title": "bug in matrix_mod2_dense (m4ri wrapper?): exhibited by bug in coercing into a 0-dimensional qotient vector space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8580",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 ```
 wstein@boxen:~$ /usr/local/bin/sage
@@ -35,6 +36,15 @@ or is not properly wrapped with _sig_on, _sig_off.
 You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
+```
+
+This is because of a bug in m4ri (or our wrapper of it), since with p=3 (instead of 2) everything works fine:
+
+```
+sage:  V = GF(3)^3
+sage: (V/V)(V.0)
+()
+sage:
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8580

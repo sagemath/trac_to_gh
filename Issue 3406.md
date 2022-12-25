@@ -1,15 +1,16 @@
-# Issue 3406: [with patch, needs review] improve TermOrder class
+# Issue 3406: [with patch, positive review] improve TermOrder class
 
 archive/issues_003406.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @JohnCremona wstein\n\n* doctest coverage 100%\n* improved documentation\n* more Python-ic interface\n* warning issued if an unknown term ordering is used (this addresses parts of #3383)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3406\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona wstein\n\nKeywords: editor_mhansen\n\n* doctest coverage 100%\n* improved documentation\n* more Python-ic interface\n* warning issued if an unknown term ordering is used (this addresses parts of #3383)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3406\n\n",
+    "closed_at": "2008-06-25T00:14:47Z",
     "created_at": "2008-06-12T22:40:27Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] improve TermOrder class",
+    "title": "[with patch, positive review] improve TermOrder class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3406",
     "user": "https://github.com/malb"
@@ -18,6 +19,8 @@ archive/issues_003406.json:
 Assignee: @malb
 
 CC:  @JohnCremona wstein
+
+Keywords: editor_mhansen
 
 * doctest coverage 100%
 * improved documentation

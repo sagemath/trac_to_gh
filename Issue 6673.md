@@ -1,17 +1,17 @@
-# Issue 6673: [with patch, needs review] Set up jsMath extensions, macros, etc., for the documentation
+# Issue 6673: Set up jsMath extensions, macros, etc., for the documentation
 
 archive/issues_006673.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @haraldschilly\n\nCurrently, the documentation uses a \"vanilla\" `easy/load.js` script to load jsMath.  This excludes Sage-specific customizations, including a number of LaTeX macros.  After this ticket is merged, we should be able to build all Sage documentation with `--jsmath` and have no \"ugly-scary\" warnings when browsing the offline documentation.\n\nSee #4714 for background.  That ticket is the \"notebook\" analogue of this one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6673\n\n",
+    "body": "Assignee: tba\n\nCC:  @haraldschilly\n\nCurrently, the documentation uses a stock jsMath loader script.  This excludes Sage-specific customizations, e.g., the notebook's default jsMath macros.  The patch\n\n* [attachment:trac_6673-jsmath_macros_docs_v3.patch]\n\ninserts the settings via a template when the docs are built.  The patch also sets up a 'sage' HTML theme (cf. [Sphinx docs](http://sphinx.pocoo.org/theming.html#creating-themes)) for later customization.\n\nSee #4714 for a \"notebook\" version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6673\n\n",
+    "closed_at": "2009-10-31T15:29:48Z",
     "created_at": "2009-08-04T06:59:38Z",
     "labels": [
         "component: documentation",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] Set up jsMath extensions, macros, etc., for the documentation",
+    "title": "Set up jsMath extensions, macros, etc., for the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6673",
     "user": "https://github.com/qed777"
@@ -21,9 +21,13 @@ Assignee: tba
 
 CC:  @haraldschilly
 
-Currently, the documentation uses a "vanilla" `easy/load.js` script to load jsMath.  This excludes Sage-specific customizations, including a number of LaTeX macros.  After this ticket is merged, we should be able to build all Sage documentation with `--jsmath` and have no "ugly-scary" warnings when browsing the offline documentation.
+Currently, the documentation uses a stock jsMath loader script.  This excludes Sage-specific customizations, e.g., the notebook's default jsMath macros.  The patch
 
-See #4714 for background.  That ticket is the "notebook" analogue of this one.
+* [attachment:trac_6673-jsmath_macros_docs_v3.patch]
+
+inserts the settings via a template when the docs are built.  The patch also sets up a 'sage' HTML theme (cf. [Sphinx docs](http://sphinx.pocoo.org/theming.html#creating-themes)) for later customization.
+
+See #4714 for a "notebook" version.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6673
 

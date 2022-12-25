@@ -1,9 +1,10 @@
-# Issue 5334: libgcrypt.spkg: Disable padlock again unconditionally
+# Issue 5334: [with spkg, positive review] libgcrypt.spkg: Disable padlock again unconditionally
 
 archive/issues_005334.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis was reported in IRC:\n\n```\n\n[02:28am] tringlarido: I had a problem with compiling the sage3-3 sources.\n[02:29am] mabs: hi\n[02:29am] mabs: What platform are you on?\n[02:29am] tringlarido: The install exit exactly at the same step than \nhttp://groups.google.fr/group/sage-devel/browse_thread/thread/9d4b39e961c24e4f/89bfb1cd2822ffd2?lnk=gst&q=rijndael#89bfb1cd2822ffd2\n[02:29am] tringlarido: Linux iml88 2.6.11-6mdk #1 Tue Mar 22 16:04:32 CET 2005 i686 Intel(R) Pentium(R) 4 CPU 2.80GHz unknown GNU/Linux\n[02:30am] mabs: Ok, I see what the problem is.\n```\nI reenabled padlock support in 3.3 since the libgcrypt people claimed that it had been fixed. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.4/alpha0/libgcrypt-1.4.3.p0.spkg\n\ndisables it again and also adds Solaris 64 bit build support while I am in there :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5334\n\n",
+    "closed_at": "2009-02-24T19:34:52Z",
     "created_at": "2009-02-22T10:43:25Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005334.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "libgcrypt.spkg: Disable padlock again unconditionally",
+    "title": "[with spkg, positive review] libgcrypt.spkg: Disable padlock again unconditionally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5334",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

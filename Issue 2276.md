@@ -1,36 +1,39 @@
-# Issue 2276: M.divides(N) gives an error if M and N are monomials in R.<x,y> = PolynomialRing(QQ); ok for R.<x>
+# Issue 2276: [with patch, positive review] M.divides(N) gives an error if M and N are monomials in R.<x,y> = PolynomialRing(QQ); ok for R.<x>
 
 archive/issues_002276.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: M = x*y\nsage: N = x<sup>2*y</sup>3\nsage: M.divides(N)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'\n\nIssue created by migration from https://trac.sagemath.org/ticket/2276\n\n",
+    "body": "Assignee: @malb\n\n```\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: M = x*y\nsage: N = x^2*y^3\nsage: M.divides(N)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/carlson/docs@chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()\n\n/Users/carlson/docs@chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2276\n\n",
+    "closed_at": "2008-03-28T13:27:07Z",
     "created_at": "2008-02-23T08:41:02Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "M.divides(N) gives an error if M and N are monomials in R.<x,y> = PolynomialRing(QQ); ok for R.<x>",
+    "title": "[with patch, positive review] M.divides(N) gives an error if M and N are monomials in R.<x,y> = PolynomialRing(QQ); ok for R.<x>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2276",
     "user": "https://trac.sagemath.org/admin/accounts/users/jxxcarlson"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
+```
 sage: R.<x,y> = PolynomialRing(QQ)
 sage: M = x*y
-sage: N = x<sup>2*y</sup>3
+sage: N = x^2*y^3
 sage: M.divides(N)
-
----
+---------------------------------------------------------------------------
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
-/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()
+/Users/carlson/docs@chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()
 
-/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()
+/Users/carlson/docs@chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()
 
 <type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/2276
 

@@ -1,9 +1,10 @@
-# Issue 4090: polybori-0.5rc1.p4 fails to build on OSX 10.4
+# Issue 4090: [with spkg, positive review] polybori-0.5rc1.p4 fails to build on OSX 10.4
 
 archive/issues_004090.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  polybori\n\nGeorg S. Weber reported that polybori-0.5.rc1.p4 fails to build with\n\n```\n/usr/bin/libtool: unknown option character `d' in: -dylib_install_name \nUsage: /usr/bin/libtool -static [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-sacLT] \nUsage: /usr/bin/libtool -dynamic [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] \n[-compatibility_version #] [-current_version #] [-seg1addr 0x#] [- \nsegs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table \n<filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] \n[-noall_load] \nscons: *** [polybori/libpolybori-0.5.0.dylib.0.0.0] Error 1 \nscons: building terminated because of errors. \nError building PolyBoRi. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4090\n\n",
+    "closed_at": "2008-09-10T03:12:22Z",
     "created_at": "2008-09-09T18:39:40Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004090.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "polybori-0.5rc1.p4 fails to build on OSX 10.4",
+    "title": "[with spkg, positive review] polybori-0.5rc1.p4 fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4090",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

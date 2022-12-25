@@ -3,7 +3,8 @@
 archive/issues_008456.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @rishikesha @jasongrout @rlmill\n\n1) Cythonize for speed.\n2) Insert original object into namespace on resolution\n3) Support import *\n\nIssue created by migration from https://trac.sagemath.org/ticket/8456\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rishikesha @jasongrout @rlmill\n\n1. Cythonize for speed.\n2. Insert original object into namespace on resolution\n3. Support import *\n\nRelated: #7502, #8254.\n\nApply only\n1. [attachment:8456-lazy-import-cython-rebase-4.6.patch]\n2. [attachment:8456-lazy-import-enhancements-4.6.patch]\n3. [attachment:8456-lazy-import-documentation.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8456\n\n",
+    "closed_at": "2011-01-26T22:26:28Z",
     "created_at": "2010-03-06T08:52:13Z",
     "labels": [
         "component: misc"
@@ -19,9 +20,16 @@ Assignee: tbd
 
 CC:  @rishikesha @jasongrout @rlmill
 
-1) Cythonize for speed.
-2) Insert original object into namespace on resolution
-3) Support import *
+1. Cythonize for speed.
+2. Insert original object into namespace on resolution
+3. Support import *
+
+Related: #7502, #8254.
+
+Apply only
+1. [attachment:8456-lazy-import-cython-rebase-4.6.patch]
+2. [attachment:8456-lazy-import-enhancements-4.6.patch]
+3. [attachment:8456-lazy-import-documentation.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8456
 

@@ -1,16 +1,17 @@
-# Issue 3404: graph.automorphism_group returns permutations with the wrong number of elements.
+# Issue 3404: Permutation groups .degree() function misleads.
 
 archive/issues_003404.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nBoth of the graphs below are the path graph on 3 vertices.  The problem is that the first labeling returns a permutation group of degree 2, when it should be of degree 3.\n\n```\nsage: g=Graph('Bo')\nsage: print g.automorphism_group().degree()\n2\nsage: h=Graph('Bg')\nsage: print h.automorphism_group().degree()\n3\nsage: g.is_isomorphic(h)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3404\n\n",
+    "closed_at": "2009-06-04T22:53:53Z",
     "created_at": "2008-06-12T18:09:14Z",
     "labels": [
-        "component: graph theory",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "graph.automorphism_group returns permutations with the wrong number of elements.",
+    "title": "Permutation groups .degree() function misleads.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3404",
     "user": "https://github.com/jasongrout"

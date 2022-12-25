@@ -1,16 +1,17 @@
-# Issue 1898: Sage 2.10: numerical doctest failure for polynomial_element.pyx on Linux/Itanium
+# Issue 1898: [with patch, with positive review] Sage 2.10: numerical doctest failure for polynomial_element.pyx on Linux/Itanium
 
 archive/issues_001898.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/\npolynomial_element.pyx**********************************************************************\nFile \"polynomial_element.pyx\", line 2669:\n    sage: p.roots(ring=CIF)\nExpected:\n    [([-1.4142135623730952 .. -1.4142135623730949], 1),\n([1.4142135623730949 ..\n1.4142135623730952], 1), ([-1.2146389322441827 .. -1.2146389322441821]\n- [0.1414250525823937... .. 0.1414250525823939...]*I, 2),\n([-0.141425052582393... .. -0.1414250525823937...] +\n[1.2146389322441821 .. 1.2146389322441827]*I, 2),\n([0.141425052582393... .. 0.141425052582393...] -\n[1.2146389322441821 .. 1.2146389322441827]*I, 2),\n([1.2146389322441821 .. 1.2146389322441827] + [0.14142505258239376 ..\n0.14142505258239399]*I, 2)]\nGot:\n    [([-1.4142135623730952 .. -1.4142135623730949], 1),\n([1.4142135623730949 ..\n1.4142135623730952], 1), ([-1.2146389322441827 .. -1.2146389322441821]\n- [0.14142505258239371 .. 0.14142505258239397]*I, 2),\n([-0.14142505258239397 .. -0.14142505258239376] +\n[1.2146389322441821 .. 1.2146389322441829]*I, 2),\n([0.14142505258239373 .. 0.14142505258239394] - [1.2146389322441821 ..\n1.2146389322441829]*I, 2), ([1.2146389322441821 .. 1.2146389322441827]\n+ [0.14142505258239376 .. 0.14142505258239399]*I, 2)]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1898\n\n",
+    "closed_at": "2008-01-24T20:48:19Z",
     "created_at": "2008-01-23T21:15:57Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Sage 2.10: numerical doctest failure for polynomial_element.pyx on Linux/Itanium",
+    "title": "[with patch, with positive review] Sage 2.10: numerical doctest failure for polynomial_element.pyx on Linux/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1898",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

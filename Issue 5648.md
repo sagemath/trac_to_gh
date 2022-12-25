@@ -1,16 +1,17 @@
-# Issue 5648: Multiplication for modular forms
+# Issue 5648: [with patch, positive review] Multiplication for modular forms
 
 archive/issues_005648.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nThe attached patch implements !__mul!__ for ModularFormElement objects, so one can say\n\n```\nsage: M = ModularForms(DirichletGroup(3).0, 5)\nsage: f = M.0\nsage: f * f\n```\n\nand get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).\n\nIn order to get this to work, I've made a few small adjustments elsewhere: \n\n* DirichletGroup objects now have a base_extend method\n\n* a bug when multiplying two characters of the same modulus but different zeta orders is fixed\n\n* Dirichlet characters now always compare as unequal unless they have the same modulus (in particular, == for Dirichlet characters is now transitive, which it previously wasn't)\n\n* ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5648\n\n",
+    "closed_at": "2009-03-31T20:17:30Z",
     "created_at": "2009-03-31T12:25:20Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Multiplication for modular forms",
+    "title": "[with patch, positive review] Multiplication for modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5648",
     "user": "https://github.com/loefflerd"

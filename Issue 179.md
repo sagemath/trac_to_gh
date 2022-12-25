@@ -4,6 +4,7 @@ archive/issues_000179.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn the notebook it would be good to be able to see recent worksheets, \nand also *active* worksheets.\n\nRecent: via cookies.\n\nActive: Last 5 worksheets changed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/179\n\n",
+    "closed_at": "2008-03-17T04:21:40Z",
     "created_at": "2006-12-08T23:15:12Z",
     "labels": [
         "component: notebook",

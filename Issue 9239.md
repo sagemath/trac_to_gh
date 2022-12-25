@@ -3,7 +3,8 @@
 archive/issues_009239.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9239\n\n",
+    "body": "Assignee: jason, was\n\n`__copy__` was overloaded, never used.\n\nSee this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/bd4f3088ba73d6a5) for background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9239\n\n",
+    "closed_at": "2010-07-20T08:21:26Z",
     "created_at": "2010-06-14T23:39:58Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +20,9 @@ archive/issues_009239.json:
 ```
 Assignee: jason, was
 
+`__copy__` was overloaded, never used.
 
+See this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/bd4f3088ba73d6a5) for background information.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9239
 

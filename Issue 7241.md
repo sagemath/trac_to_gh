@@ -4,6 +4,7 @@ archive/issues_007241.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: upgrade\n\nThis causes a problem with flaky internet connections since all of the spkgs have to be able to be downloaded all successfully one right after the other.  It shouldn't try to redownload files that are already present.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7241\n\n",
+    "closed_at": "2009-11-07T11:58:16Z",
     "created_at": "2009-10-18T17:41:26Z",
     "labels": [
         "component: build",

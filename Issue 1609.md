@@ -3,10 +3,10 @@
 archive/issues_001609.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1609\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: octave\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1609\n\n",
     "created_at": "2007-12-27T05:41:22Z",
     "labels": [
-        "component: packages"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "create an octave-3.0.0 optional spkg",
@@ -16,6 +16,8 @@ archive/issues_001609.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: octave
 
 
 

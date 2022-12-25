@@ -1,22 +1,23 @@
-# Issue 4214: elliptic_logarithm gives inaccurate answers
+# Issue 4214: [with patch, positive review] elliptic_logarithm gives inaccurate answers
 
 archive/issues_004214.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIt seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:\n\n```\nsage: E = EllipticCurve([1, 0, 1, -85357462, 303528987048]) #18074g1\nsage: P = E([4458713781401/835903744, -64466909836503771/24167649046528, 1])\nsage: P.elliptic_logarithm(precision=54)\nNaN\nsage: P.elliptic_logarithm(precision=55)\n0.2735052671206336\nsage: P.elliptic_logarithm()  # 100 bits\n0.27656204014107100870070982517\n```\n\nNote that, while we ask for a precision of 55 bits (about 16 decimal digits), we seem to only get 2 accurate digits!  Compare this with the following `gp` session:\n\n```\n? \\p 16                                           \n   realprecision = 19 significant digits (16 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);\n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%6 = 0.2765620403\n? \\p 32                                                                       \n   realprecision = 38 significant digits (32 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);                            \n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%8 = 0.27656204014107061464076203097\n```\n\nWith the smaller precision, Pari knows that the result is not accurate to its current 16 displayed decimals, and prints only 10 of them (of which only the last is wrong).  We also see that Sage's result with 100 bits of precision has only 14 accurate decimals (less than half of what we asked for).\n\nPossible solutions:\n\n1. add a flag `algorithm` to `elliptic_logarithm` and set it to \"pari\" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need\n\n2. find where Sage's algorithm loses so much precision and fix it\n\nI tend towards doing 1 right now and working on 2.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4214\n\n",
+    "body": "Assignee: @aghitza\n\nIt seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:\n\n```\nsage: E = EllipticCurve([1, 0, 1, -85357462, 303528987048]) #18074g1\nsage: P = E([4458713781401/835903744, -64466909836503771/24167649046528, 1])\nsage: P.elliptic_logarithm(precision=54)\nNaN\nsage: P.elliptic_logarithm(precision=55)\n0.2735052671206336\nsage: P.elliptic_logarithm()  # 100 bits\n0.27656204014107100870070982517\n```\n\nNote that, while we ask for a precision of 55 bits (about 16 decimal digits), we seem to only get 2 accurate digits!  Compare this with the following `gp` session:\n\n```\n? \\p 16                                           \n   realprecision = 19 significant digits (16 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);\n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%6 = 0.2765620403\n? \\p 32                                                                       \n   realprecision = 38 significant digits (32 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);                            \n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%8 = 0.27656204014107061464076203097\n```\n\nWith the smaller precision, Pari knows that the result is not accurate to its current 16 displayed decimals, and prints only 10 of them (of which only the last is wrong).  We also see that Sage's result with 100 bits of precision has only 14 accurate decimals (less than half of what we asked for).\n\nPossible solutions:\n\n1. add a flag `algorithm` to `elliptic_logarithm` and set it to \"pari\" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need\n\n2. find where Sage's algorithm loses so much precision and fix it\n\nI tend towards doing 1 right now and working on 2.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4214\n\n",
+    "closed_at": "2008-10-10T23:03:59Z",
     "created_at": "2008-09-28T22:47:17Z",
     "labels": [
-        "component: algebra",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "elliptic_logarithm gives inaccurate answers",
+    "title": "[with patch, positive review] elliptic_logarithm gives inaccurate answers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4214",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
 It seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:
 

@@ -4,6 +4,7 @@ archive/issues_008760.json:
 ```json
 {
     "body": "Assignee: jason, was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8760\n\n",
+    "closed_at": "2010-07-11T05:57:55Z",
     "created_at": "2010-04-25T00:07:45Z",
     "labels": [
         "component: notebook",

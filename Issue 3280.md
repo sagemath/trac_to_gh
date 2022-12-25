@@ -1,9 +1,10 @@
-# Issue 3280: Sage 3.0.2.rc0: fix rebuild Sage documentation issues
+# Issue 3280: [with patch, positive review] Sage 3.0.2.rc0: fix rebuild Sage documentation issues
 
 archive/issues_003280.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThere are two small issues in the docstrings. Patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3280\n\n",
+    "body": "Assignee: mabshoff\n\nThere are two small issues in the docstrings. Patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3280\n\n",
+    "closed_at": "2008-05-23T16:41:36Z",
     "created_at": "2008-05-23T15:38:09Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_003280.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Sage 3.0.2.rc0: fix rebuild Sage documentation issues",
+    "title": "[with patch, positive review] Sage 3.0.2.rc0: fix rebuild Sage documentation issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3280",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 There are two small issues in the docstrings. Patch coming up.
 

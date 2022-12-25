@@ -3,7 +3,8 @@
 archive/issues_000003.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nSummary says it all.....\n\nFirefox version string:\n\nMozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.6) Gecko/20060728 Firefox/1.5.0.6\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3\n\n",
+    "body": "Assignee: boothby@u.washington.edu\n\nSummary says it all.....\n\nFirefox version string:\n\nMozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.6) Gecko/20060728 Firefox/1.5.0.6\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3\n\n",
+    "closed_at": "2006-09-14T18:24:53Z",
     "created_at": "2006-09-11T11:22:29Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000003.json:
     "user": "David Harvey <dmharvey@math.harvard.edu>"
 }
 ```
-Assignee: somebody
+Assignee: boothby@u.washington.edu
 
 Summary says it all.....
 

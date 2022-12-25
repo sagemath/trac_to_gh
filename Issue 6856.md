@@ -1,16 +1,17 @@
-# Issue 6856: cancel button in notebook user settings not working
+# Issue 6856: [with patch, positive review] cancel button in notebook user settings not working
 
 archive/issues_006856.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe cancel button in the 'Settings' page of a notebook user is not working because of a missing 'username' template argument to `account_settings.html`. (There's a redirect to a broken path when pressing the button now.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6856\n\n",
+    "closed_at": "2009-09-03T07:03:34Z",
     "created_at": "2009-09-01T15:09:35Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cancel button in notebook user settings not working",
+    "title": "[with patch, positive review] cancel button in notebook user settings not working",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6856",
     "user": "https://github.com/wjp"

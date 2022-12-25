@@ -1,16 +1,17 @@
-# Issue 3269: Improved documentation to combinat/dyck_word.py
+# Issue 3269: [with patch, positive review] Improved documentation to combinat/dyck_word.py
 
 archive/issues_003269.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: dyck words\n\nCleaned up some of the documentation issues in dyck_words that were noted here:\nLink:[http://wiki.sagemath.org/combinat/Weirdness](http://wiki.sagemath.org/combinat/Weirdness)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3269\n\n",
+    "closed_at": "2008-05-22T10:41:55Z",
     "created_at": "2008-05-21T22:30:11Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Improved documentation to combinat/dyck_word.py",
+    "title": "[with patch, positive review] Improved documentation to combinat/dyck_word.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3269",
     "user": "https://github.com/jbandlow"

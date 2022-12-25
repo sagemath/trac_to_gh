@@ -1,21 +1,22 @@
-# Issue 4083: sage.finance - Options pricing implementation
+# Issue 4083: [with patch, needs work] sage.finance - Options pricing implementation
 
 archive/issues_004083.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @cswiercz software@pacificafog.com @slel\n\nKeywords: finance, options, black-scholes\n\nIncludes capabilities for options pricing using the Black-Scholes model. The primary class of this ticket is finance.Option, which uses finance.Stock.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4083\n\n",
+    "body": "Assignee: psinis\n\nCC:  @cswiercz software@pacificafog.com @slel\n\nKeywords: finance, options, black-scholes\n\nIncludes capabilities for options pricing using the Black-Scholes model. The primary class of this ticket is finance.Option, which uses finance.Stock.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4083\n\n",
+    "closed_at": "2021-10-25T15:39:21Z",
     "created_at": "2008-09-09T02:16:17Z",
     "labels": [
         "component: finance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage.finance - Options pricing implementation",
+    "title": "[with patch, needs work] sage.finance - Options pricing implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4083",
     "user": "https://github.com/cswiercz"
 }
 ```
-Assignee: @williamstein
+Assignee: psinis
 
 CC:  @cswiercz software@pacificafog.com @slel
 

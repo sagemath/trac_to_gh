@@ -4,6 +4,7 @@ archive/issues_007842.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: attrcall\n\nThe attached patch allows for the following:\n\n```\n            sage: xseries = attrcall('series', x)\n            sage: xseries(sin(x), 4)\n            1*x + (-1/6)*x^3 + Order(x^4)\n```\n\nThis is used in #7753\n\nIssue created by migration from https://trac.sagemath.org/ticket/7842\n\n",
+    "closed_at": "2010-01-13T07:51:39Z",
     "created_at": "2010-01-04T15:27:08Z",
     "labels": [
         "component: misc"

@@ -1,22 +1,23 @@
-# Issue 5629: refactor dimension() of schemes
+# Issue 5629: [with patch, positive review] refactor dimension() of schemes
 
 archive/issues_005629.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: dimension scheme\n\nThe dimension() method for schemes is confusing and sometimes inconsistent or plain broken when working over bases that are not fields.  The attached patch implements methods dimension_absolute() and dimension_relative() and makes dimension() into an alias for dimension_absolute().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5629\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: dimension scheme\n\nThe dimension() method for schemes is confusing and sometimes inconsistent or plain broken when working over bases that are not fields.  The attached patch implements methods dimension_absolute() and dimension_relative() and makes dimension() into an alias for dimension_absolute().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5629\n\n",
+    "closed_at": "2009-03-31T08:49:57Z",
     "created_at": "2009-03-29T03:58:49Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "refactor dimension() of schemes",
+    "title": "[with patch, positive review] refactor dimension() of schemes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5629",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 Keywords: dimension scheme
 

@@ -3,11 +3,11 @@
 archive/issues_007987.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @mwhansen @jasongrout @nexttime\n\nUnless special libraries or C flags are needed, we can auto-generate almost this whole list, which simplifies the making of new .pyx files in the standard library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7987\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @mwhansen @jasongrout @nexttime\n\nUnless special libraries or C flags are needed, we can auto-generate almost this whole list, which simplifies the making of new .pyx files in the standard library.\n\nI am sure this needs rebasing WRT any new modules that have been added.\n\nSee also #15410.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7987\n\n",
+    "closed_at": "2015-07-17T20:05:59Z",
     "created_at": "2010-01-19T01:49:00Z",
     "labels": [
-        "component: build",
-        "bug"
+        "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Most extensions don't need to be listed in module_list",
@@ -21,6 +21,10 @@ Assignee: GeorgSWeber
 CC:  @williamstein @mwhansen @jasongrout @nexttime
 
 Unless special libraries or C flags are needed, we can auto-generate almost this whole list, which simplifies the making of new .pyx files in the standard library.
+
+I am sure this needs rebasing WRT any new modules that have been added.
+
+See also #15410.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7987
 

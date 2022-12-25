@@ -1,16 +1,17 @@
-# Issue 2793: Bug in the sage preparser!  "\"Yes,\" he said."
+# Issue 2793: [with patch; with positive review] Bug in the sage preparser!  "\"Yes,\" he said."
 
 archive/issues_002793.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nIn the Python tutorial (http://docs.python.org/tut/node5.html#SECTION005120000000000000000)\n there's an example of making a string:\n\n```\n>>> \"\\\"Yes,\\\" he said.\"\n'\"Yes,\" he said.'\n```\n\nThis fails in Sage because of the preparser!\n\n```\nsage: \"\\\"Yes,\\\" he said.\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     \"\\\"Yes,._backslash_()\" he said.\"\n                             ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\nThis is obviously a bug in the _backslash_ or \"in quotes\" part of the preparser.  So it's almost certainly my fault.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2793\n\n",
+    "closed_at": "2008-04-04T21:27:04Z",
     "created_at": "2008-04-04T00:44:28Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Bug in the sage preparser!  \"\\\"Yes,\\\" he said.\"",
+    "title": "[with patch; with positive review] Bug in the sage preparser!  \"\\\"Yes,\\\" he said.\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2793",
     "user": "https://github.com/williamstein"

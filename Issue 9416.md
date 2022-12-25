@@ -3,10 +3,11 @@
 archive/issues_009416.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nFor example, the flag check=False can only be used with E.point()\n\n```\nsage: emb = K2.places()[0]\nsage: E_complex = EllipticCurve(CC,map(emb, E2point.a_invariants()))\nsage: P = L2[-1]\nsage: print 'Exact arithmetic:', P in E2\nExact arithmetic: True\nsage: P_complex = map(emb,P)\nsage: E_complex(P_complex, check=False)\nTypeError: __call__() got an unexpected keyword argument 'check'\n\nsage: E_complex.point(P_complex, check=False)\n(-10.0000000000000 + 5.65685424949238*I : 28.0000000000000 + 25.4558441227157*I : 1.00000000000000)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9416\n\n",
+    "body": "Assignee: @JohnCremona\n\nFor example, the flag check=False can only be used with E.point()\n\n```\nsage: emb = K2.places()[0]\nsage: E_complex = EllipticCurve(CC,map(emb, E2point.a_invariants()))\nsage: P = L2[-1]\nsage: print 'Exact arithmetic:', P in E2\nExact arithmetic: True\nsage: P_complex = map(emb,P)\nsage: E_complex(P_complex, check=False)\nTypeError: __call__() got an unexpected keyword argument 'check'\n\nsage: E_complex.point(P_complex, check=False)\n(-10.0000000000000 + 5.65685424949238*I : 28.0000000000000 + 25.4558441227157*I : 1.00000000000000)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9416\n\n",
     "created_at": "2010-07-03T03:00:44Z",
     "labels": [
-        "component: algebra",
+        "component: elliptic curves",
+        "minor",
         "bug"
     ],
     "title": "elliptic curve E.__call__ is not fully equivalent to E.point, specifically for check flag",
@@ -15,7 +16,7 @@ archive/issues_009416.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/rkirov"
 }
 ```
-Assignee: @aghitza
+Assignee: @JohnCremona
 
 For example, the flag check=False can only be used with E.point()
 

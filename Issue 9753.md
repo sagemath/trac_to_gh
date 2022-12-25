@@ -3,11 +3,11 @@
 archive/issues_009753.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nThe function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9753\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: number field ideal gens_two idealtwoelt\n\nThe function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality. We can also add a new function `gens_two()` which writes a number field ideal using two generators, like PARI's `idealtwoelt()`.\n\nDependencies: #9400, #9898\n\nIssue created by migration from https://trac.sagemath.org/ticket/9753\n\n",
+    "closed_at": "2010-09-28T10:55:54Z",
     "created_at": "2010-08-15T19:56:54Z",
     "labels": [
-        "component: number fields",
-        "bug"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Simplify NumberFieldIdeal.gens_reduced()",
@@ -18,7 +18,11 @@ archive/issues_009753.json:
 ```
 Assignee: @loefflerd
 
-The function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.
+Keywords: number field ideal gens_two idealtwoelt
+
+The function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality. We can also add a new function `gens_two()` which writes a number field ideal using two generators, like PARI's `idealtwoelt()`.
+
+Dependencies: #9400, #9898
 
 Issue created by migration from https://trac.sagemath.org/ticket/9753
 

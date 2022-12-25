@@ -4,6 +4,7 @@ archive/issues_002373.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nHi guys,\nYou have my permission to change the licenses to BSD - all changes are completely fine with me.\n-Alex\n```\n\n```\nboothby@u.washington.edu to me, Alex\n\t\nYou have my permission to change the license on anything I've contributed to the notebook, to whatever suits you.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2373\n\n",
+    "closed_at": "2008-03-16T19:01:23Z",
     "created_at": "2008-03-03T07:36:25Z",
     "labels": [
         "component: notebook"

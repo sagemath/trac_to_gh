@@ -1,15 +1,16 @@
-# Issue 1454: Change the prompt for sage -sh
+# Issue 1454: [with patch, with positive review] Change the prompt for sage -sh
 
 archive/issues_001454.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe sage -sh doesn't change the prompt, which is VERY confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1454\n\n",
+    "body": "Assignee: @williamstein\n\nThe sage -sh doesn't change the prompt, which is VERY confusing.Merged in 2.9.rc0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1454\n\n",
+    "closed_at": "2007-12-15T11:09:10Z",
     "created_at": "2007-12-10T21:40:48Z",
     "labels": [
         "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Change the prompt for sage -sh",
+    "title": "[with patch, with positive review] Change the prompt for sage -sh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1454",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,7 @@ archive/issues_001454.json:
 ```
 Assignee: @williamstein
 
-The sage -sh doesn't change the prompt, which is VERY confusing.
+The sage -sh doesn't change the prompt, which is VERY confusing.Merged in 2.9.rc0.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1454
 

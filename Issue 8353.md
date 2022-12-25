@@ -3,7 +3,8 @@
 archive/issues_008353.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @seblabbe sage-combinat\n\nKeywords: paths, height, width\n\nWhen dealing with word paths on the square grid, it is very useful to know their height and their width.\n\nIn particular, one can compute a bounding box for display purposes. This small ticket adds those two functionalities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8353\n\n",
+    "body": "Assignee: abmasse\n\nCC:  @seblabbe sage-combinat\n\nKeywords: paths, height, width\n\nWhen dealing with 2d word paths, it is very useful to know their height and their width.\n\nIn particular, one can compute a bounding box for a better displaying. The aim of this small ticket is to add those two functionalities.\n\nBy the way, while testing it, I noticed a strange behavior:\n\n```\nsage: Paths = WordPaths('abcABC')\nsage: p = Paths('acABC')\nsage: points = list(p.points())\nsage: points\n[(0, 0), (1, 0), (1/2, 1/2*sqrt3), (-1/2, 1/2*sqrt3), (-1, 0), (-1/2, -1/2*sqrt3)]\nsage: y_coords = map(lambda (_,y):y, points)\nsage: y_coords\n[0, 0, 1/2*sqrt3, 1/2*sqrt3, 0, -1/2*sqrt3]\nsage: max(y_coords)\n-1/2*sqrt3\n```\n\nShouldn't `1/2*sqrt3` be the highest element ? This doesn't make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8353\n\n",
+    "closed_at": "2010-03-06T09:16:42Z",
     "created_at": "2010-02-24T22:34:23Z",
     "labels": [
         "component: combinatorics"
@@ -15,15 +16,32 @@ archive/issues_008353.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
-Assignee: sage-combinat
+Assignee: abmasse
 
 CC:  @seblabbe sage-combinat
 
 Keywords: paths, height, width
 
-When dealing with word paths on the square grid, it is very useful to know their height and their width.
+When dealing with 2d word paths, it is very useful to know their height and their width.
 
-In particular, one can compute a bounding box for display purposes. This small ticket adds those two functionalities.
+In particular, one can compute a bounding box for a better displaying. The aim of this small ticket is to add those two functionalities.
+
+By the way, while testing it, I noticed a strange behavior:
+
+```
+sage: Paths = WordPaths('abcABC')
+sage: p = Paths('acABC')
+sage: points = list(p.points())
+sage: points
+[(0, 0), (1, 0), (1/2, 1/2*sqrt3), (-1/2, 1/2*sqrt3), (-1, 0), (-1/2, -1/2*sqrt3)]
+sage: y_coords = map(lambda (_,y):y, points)
+sage: y_coords
+[0, 0, 1/2*sqrt3, 1/2*sqrt3, 0, -1/2*sqrt3]
+sage: max(y_coords)
+-1/2*sqrt3
+```
+
+Shouldn't `1/2*sqrt3` be the highest element ? This doesn't make sense.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8353
 

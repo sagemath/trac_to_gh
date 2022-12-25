@@ -4,6 +4,7 @@ archive/issues_001299.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCheck to make sure gsl builds against atlas. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1299\n\n",
+    "closed_at": "2007-11-30T05:28:33Z",
     "created_at": "2007-11-28T10:27:20Z",
     "labels": [
         "component: numerical",

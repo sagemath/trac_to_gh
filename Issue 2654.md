@@ -1,9 +1,10 @@
-# Issue 2654: Cyclotomic polynomials -- suggested improvement
+# Issue 2654: [with patch; with positive review] Cyclotomic polynomials speed
 
 archive/issues_002654.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  rlb\n\nKeywords: cyclotomic polynomial\n\nThe current implementation of cyclotomic polynomials in sage/rings/polynomial/cyclotomic.pyx uses the Mobius inversion formula.\n\nI think it would be more efficient to use the recursion\n\n```\n\\Phi_{p*n}(X) = \\Phi_n(X^p) # if p|n\n              = \\Phi_n(X^p)/\\Phi_n(X) # else\n```\n(though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.\n\nSecondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as \"very dumb\" and it is hard to disagree!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2654\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  rlb\n\nKeywords: cyclotomic polynomial\n\nThe current implementation of cyclotomic polynomials in sage/rings/polynomial/cyclotomic.pyx uses the Mobius inversion formula.\n\nI think it would be more efficient to use the recursion\n\n```\n\\Phi_{p*n}(X) = \\Phi_n(X^p) # if p|n\n              = \\Phi_n(X^p)/\\Phi_n(X) # else\n```\n(though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.\n\nSecondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as \"very dumb\" and it is hard to disagree!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2654\n\n",
+    "closed_at": "2008-04-04T19:39:49Z",
     "created_at": "2008-03-23T12:24:24Z",
     "labels": [
         "component: commutative algebra",
@@ -11,13 +12,13 @@ archive/issues_002654.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Cyclotomic polynomials -- suggested improvement",
+    "title": "[with patch; with positive review] Cyclotomic polynomials speed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2654",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @malb
+Assignee: @robertwb
 
 CC:  rlb
 

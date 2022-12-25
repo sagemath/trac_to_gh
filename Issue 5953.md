@@ -1,22 +1,23 @@
-# Issue 5953: sage/modular/modform/vm_basis.py is missing verbatim areas for doctests
+# Issue 5953: [with patch, positive review] sage/modular/modform/vm_basis.py is missing verbatim areas for doctests
 
 archive/issues_005953.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThis is what the ReST documentation looks like:\n\n```\nEXAMPLES:\nsage: victor_miller_basis(1, 6) [] sage: victor_miller_basis(0, 6) [ 1 + O(q^6) ] sage: victor_miller_basis(2, 6) [] sage: victor_miller_basis(4, 6) [ 1 + 240*q + 2160*q^2 + 6720*q^3 + 17520*q^4 + 30240*q^5 + O(q^6) ]\n\nsage: victor_miller_basis(6, 6, var=\u2019w\u2019) [ 1 - 504*w - 16632*w^2 - 122976*w^3 - 532728*w^4 - 1575504*w^5 + O(w^6) ]\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5953\n\n",
+    "body": "Assignee: mabshoff\n\nThis is what the ReST documentation looks like:\n\n```\nEXAMPLES:\nsage: victor_miller_basis(1, 6) [] sage: victor_miller_basis(0, 6) [ 1 + O(q^6) ] sage: victor_miller_basis(2, 6) [] sage: victor_miller_basis(4, 6) [ 1 + 240*q + 2160*q^2 + 6720*q^3 + 17520*q^4 + 30240*q^5 + O(q^6) ]\n\nsage: victor_miller_basis(6, 6, var=\u2019w\u2019) [ 1 - 504*w - 16632*w^2 - 122976*w^3 - 532728*w^4 - 1575504*w^5 + O(w^6) ]\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5953\n\n",
+    "closed_at": "2009-05-01T05:58:09Z",
     "created_at": "2009-05-01T05:03:46Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "sage/modular/modform/vm_basis.py is missing verbatim areas for doctests",
+    "title": "[with patch, positive review] sage/modular/modform/vm_basis.py is missing verbatim areas for doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5953",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 This is what the ReST documentation looks like:
 

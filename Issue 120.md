@@ -4,6 +4,7 @@ archive/issues_000120.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: abs, cyclotomic field\n\nIt seems to me that this behaviour is wrong:\n\n```\nsage: z = CyclotomicField(7).gen()\n\nsage: abs(z)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/wdj/sagefiles/sage-1.4/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: bad operand type for abs(): 'NumberFieldElement'\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/120\n\n",
+    "closed_at": "2007-01-07T19:41:32Z",
     "created_at": "2006-10-08T02:34:43Z",
     "labels": [
         "component: number theory",

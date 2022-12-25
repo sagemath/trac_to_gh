@@ -1,16 +1,17 @@
-# Issue 7933: update copyright years to span 2006--2010
+# Issue 7933: update copyright years to span 2005--2010
 
 archive/issues_007933.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nIt's that time of the year again when the copyright years for Sage need to be updated to reflect the new year. The copyright years should now span 2006--2010. The [Sage wiki](http://wiki.sagemath.org/devel/UpdateCopyright) contains a page that lists file you need to edit in order to update the copyright years.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7933\n\n",
+    "body": "Assignee: mvngu\n\nIt's that time of the year again when the copyright years for Sage need to be updated to reflect the new year. The copyright years should now span 2005--2010. The [Sage wiki](http://wiki.sagemath.org/devel/UpdateCopyright) contains a page that lists file you need to edit in order to update the copyright years.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7933\n\n",
+    "closed_at": "2010-02-02T05:17:16Z",
     "created_at": "2010-01-15T03:58:23Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "update copyright years to span 2006--2010",
+    "title": "update copyright years to span 2005--2010",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7933",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -18,7 +19,7 @@ archive/issues_007933.json:
 ```
 Assignee: mvngu
 
-It's that time of the year again when the copyright years for Sage need to be updated to reflect the new year. The copyright years should now span 2006--2010. The [Sage wiki](http://wiki.sagemath.org/devel/UpdateCopyright) contains a page that lists file you need to edit in order to update the copyright years.
+It's that time of the year again when the copyright years for Sage need to be updated to reflect the new year. The copyright years should now span 2005--2010. The [Sage wiki](http://wiki.sagemath.org/devel/UpdateCopyright) contains a page that lists file you need to edit in order to update the copyright years.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7933
 

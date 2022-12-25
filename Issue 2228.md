@@ -1,9 +1,10 @@
-# Issue 2228: sage-2.10.2.alpha1 -- fractional ideal doctest failure -- output is equivalent
+# Issue 2228: [with patch, positive review] sage-2.10.2.alpha1 -- fractional ideal doctest failure -- output is equivalent
 
 archive/issues_002228.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage -t  devel/sage-main/sage/rings/number_field/number_field_ideal.py**********************************************************************\nFile \"number_field_ideal.py\", line 203:\n    sage: I = K.factor_integer(17)[0][0]; I\nExpected:\n    Fractional ideal (100*a^2 - 730*a + 5329)\nGot:\n    Fractional ideal (-100*a^2 + 730*a - 5329)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctes\n```\n\nThe output above is completely valid.  Just change the output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2228\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage-main/sage/rings/number_field/number_field_ideal.py**********************************************************************\nFile \"number_field_ideal.py\", line 203:\n    sage: I = K.factor_integer(17)[0][0]; I\nExpected:\n    Fractional ideal (100*a^2 - 730*a + 5329)\nGot:\n    Fractional ideal (-100*a^2 + 730*a - 5329)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctes\n```\n\nThe output above is completely valid.  Just change the output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2228\n\n",
+    "closed_at": "2008-02-20T14:37:37Z",
     "created_at": "2008-02-20T07:02:49Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_002228.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage-2.10.2.alpha1 -- fractional ideal doctest failure -- output is equivalent",
+    "title": "[with patch, positive review] sage-2.10.2.alpha1 -- fractional ideal doctest failure -- output is equivalent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2228",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 ```
 sage -t  devel/sage-main/sage/rings/number_field/number_field_ideal.py**********************************************************************

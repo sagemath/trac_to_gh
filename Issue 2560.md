@@ -3,7 +3,8 @@
 archive/issues_002560.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves\n\nIn sage/elliptic_curves/sll_points.py in the function ` EllipticCurvePoint_finite_field.order()` a tiny blunder causes a huge inefficiency.  The BSGS function is used to find a multiple of the order of the point (when the group order is not yet known), and the existing code\n\n```\n                M = self._bsgs(E(0),0,ub)\n```\nshould be\n\n```\n                M = self._bsgs(E(0),lb,ub)\n```\nsince there is a loution in the interval [lb..ub].  This changes the complexity from O(q^1/2) to O(q^1/4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2560\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves\n\nIn sage/elliptic_curves/sll_points.py in the function ` EllipticCurvePoint_finite_field.order()` a tiny blunder causes a huge inefficiency.  The BSGS function is used to find a multiple of the order of the point (when the group order is not yet known), and the existing code\n\n```\n                M = self._bsgs(E(0),0,ub)\n```\nshould be\n\n```\n                M = self._bsgs(E(0),lb,ub)\n```\nsince there is a loution in the interval [lb..ub].  This changes the complexity from `O(q^1/2)` to `O(q^1/4)`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2560\n\n",
+    "closed_at": "2008-03-16T22:36:53Z",
     "created_at": "2008-03-16T22:22:45Z",
     "labels": [
         "component: algebraic geometry",
@@ -30,7 +31,9 @@ should be
 ```
                 M = self._bsgs(E(0),lb,ub)
 ```
-since there is a loution in the interval [lb..ub].  This changes the complexity from O(q^1/2) to O(q^1/4).
+since there is a loution in the interval [lb..ub].  This changes the complexity from `O(q^1/2)` to `O(q^1/4)`.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2560
 

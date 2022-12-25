@@ -1,9 +1,10 @@
-# Issue 2211: [with patch, needs review] another segfault issue in graph_isom
+# Issue 2211: [with patch, positive review] another segfault issue in graph_isom
 
 archive/issues_002211.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis depends on ticket #1961. It fixes a segfault.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2211\n\n",
+    "closed_at": "2008-02-19T22:29:50Z",
     "created_at": "2008-02-19T19:44:06Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_002211.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] another segfault issue in graph_isom",
+    "title": "[with patch, positive review] another segfault issue in graph_isom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2211",
     "user": "https://github.com/rlmill"

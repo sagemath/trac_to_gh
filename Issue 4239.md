@@ -1,16 +1,17 @@
-# Issue 4239: [with patch, needs review] fix for problems with zero kernel and images
+# Issue 4239: [with patch, positive review] fix for problems with zero kernel and images
 
 archive/issues_004239.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: kernel, image\n\nComputation of kernels and images of linear transformations over `GF(p)` (`p` odd) and `CC` fails when the result is zero.\nThe patch solves the problem by adjusting `FreeModule_submodule_with_basis_pid` so that a `tuple` of generators gets changed into a `list` (something that happens anyway if `check == True`).  New doctests have been included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4239\n\n",
+    "closed_at": "2008-10-07T21:00:14Z",
     "created_at": "2008-10-03T07:17:57Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] fix for problems with zero kernel and images",
+    "title": "[with patch, positive review] fix for problems with zero kernel and images",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4239",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

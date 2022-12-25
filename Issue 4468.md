@@ -1,16 +1,17 @@
-# Issue 4468: assertion error when (some) bad color map given
+# Issue 4468: [with patch, positive review] assertion error when (some) bad color map given
 
 archive/issues_004468.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nKeywords: cmap\n\nThe following example works well :\n\n```\nsage: matrix_plot(random_matrix(RDF, 50), cmap='hsv')\n```\n\nBut the next one doesn't which is fine because 'jolies' doesn't correspond to a color map.\n\n```\nsage: matrix_plot(random_matrix(RDF, 50), cmap='jolies')\nverbose 0 (2212: plot.py, _render_on_subplot) The possible color maps include: Spectral, summer, pink_r, Set1, Set2, Set3, Dark2, prism, PuOr_r, PuBuGn_r, RdPu, gist_ncar_r, Dark2_r, YlGnBu, RdYlBu, hot_r, gist_rainbow_r, gist_stern, cool_r, cool, gray, copper_r, Greens_r, GnBu, gist_ncar, spring_r, gist_rainbow, gist_heat_r, summer_r, OrRd_r, bone, gist_stern_r, RdYlGn, Pastel2_r, spring, Accent, YlOrRd_r, Set2_r, PuBu, RdGy_r, spectral, flag_r, jet_r, RdPu_r, gist_yarg, BuGn, Paired_r, hsv_r, YlOrRd, Greens, PRGn, gist_heat, spectral_r, Paired, hsv, Oranges_r, prism_r, Pastel2, Pastel1_r, Pastel1, gray_r, PuRd_r, Spectral_r, BuPu, YlGnBu_r, copper, gist_earth_r, Set3_r, OrRd, PuBu_r, winter_r, RdBu, jet, bone_r, gist_earth, Oranges, RdYlGn_r, PiYG, YlGn, binary_r, gist_gray_r, gist_gray, flag, RdBu_r, BrBG, Reds, GnBu_r, BrBG_r, Reds_r, RdGy, PuRd, Accent_r, Blues, Greys, autumn, PRGn_r, Greys_r, pink, binary, winter, gist_yarg_r, RdYlBu_r, hot, YlOrBr, BuPu_r, Purples_r, PiYG_r, YlGn_r, Blues_r, YlOrBr_r, Purples, autumn_r, BuGn_r, Set1_r, PuOr, PuBuGn\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last):\n...\nRuntimeError: Color map jolies not known\n```\n\nWhat about 'mpl' which as well doesn't correspond to a color map :\n\n```\nsage: matrix_plot(random_matrix(RDF, 50), cmap='mpl')\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last):\n...\nAssertionError: \n```\n\nAn assertion error : why ? Because in plot.py, we test only if the given cmap is a key of a certain dictionary but not *all* the key of this dictionary correspond to a color map. In fact, there are 18 exceptions as shown below.\n\n```\nsage: from matplotlib import cm                                 \nsage: d = cm.__dict__                                           \nsage: from matplotlib.colors import LinearSegmentedColormap as C\nsage: 'mpl' in [x for x in d.keys() if not isinstance(d[x], C)]       \nTrue\nsage: [x for x in d.keys() if not isinstance(d[x], C)]          \n\n['colors',\n 'cmapname_r',\n 'ScalarMappable',\n 'LUTSIZE',\n 'cmapname',\n 'cbook',\n '__file__',\n 'cmapnames',\n 'cmapdat_r',\n '__builtins__',\n '__name__',\n 'get_cmap',\n '__doc__',\n 'revcmap',\n 'ma',\n 'np',\n 'mpl',\n 'datad']\nsage: len(_)\n18\n```\n\na patch to come...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4468\n\n",
+    "closed_at": "2008-11-21T20:22:12Z",
     "created_at": "2008-11-08T06:38:21Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "assertion error when (some) bad color map given",
+    "title": "[with patch, positive review] assertion error when (some) bad color map given",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4468",
     "user": "https://github.com/seblabbe"

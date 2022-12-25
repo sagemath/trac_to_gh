@@ -1,15 +1,16 @@
-# Issue 4741: [with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q
+# Issue 4741: [with patch, positive review] Implement S-integral point finding for elliptic curves over Q
 
 archive/issues_004741.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  mardaus tnagel\n\nThis follows on from #3674, where integral points for elliptic curves over Q were implemented.\n\nThe work here was done (again) by Tobias Nagel and Michael Mardaus, with some necessary backup functionality for elliptic curve local data by me (John Cremona) which has already been merged.\n\nTwo functions are defined:  (1) `padic_elliptic_logarithm()` for points on curves over number fields, in ell_point.py; (2) `S_integral_points()` for curves over Q only (so far!), in ell_rational field.py.\n\nThe patch s_int_pts.patch applies to 3.2.1 + the patches at #4715.  Should be ready for review soon...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4741\n\n",
+    "closed_at": "2008-12-15T17:12:40Z",
     "created_at": "2008-12-08T12:37:24Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q",
+    "title": "[with patch, positive review] Implement S-integral point finding for elliptic curves over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4741",
     "user": "https://github.com/JohnCremona"

@@ -1,21 +1,21 @@
-# Issue 6416: [with spkg and patch, needs review] Frobby for monomial ideals
+# Issue 6416: Use Frobby for monomial ideals
 
 archive/issues_006416.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby\n\nKeywords: monomial ideal, Hilbert series, Alexander dual\n\nThis spkg and patch updates the Frobby library that is already an optional component of Sage, and gives it a Cython interface to a shared library instead of the pexpect interface in the current Frobby spkg. It also exposes more functionality. Functionality not currently in sage:\n\n- Multigraded Hilbert-Poincare series\n- Alexander dual of monomial ideals (already in the previous Frobby spkg)\n- Maximal standard monomials of monomial ideals\n- Irreducible decomposition of monomial ideals\n- Optimization of any linear function over the maximal standard monomials of a monomial ideal using branch-and-bound.\n\nThe patch applies cleanly to Sage 4.0.1, and the spkg is at\n\n  http://www.daimi.au.dk/~bjarke/frobby-0.8.0.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6416\n\n",
+    "body": "Assignee: @malb\n\nCC:  drkirkby\n\nKeywords: monomial ideal, Hilbert series, Alexander dual\n\nThis spkg and patch updates the Frobby library that is already an optional component of Sage, and gives it a Cython interface to a shared library instead of the pexpect interface in the current Frobby spkg. It also exposes more functionality. Functionality not currently in sage:\n\n- Multigraded Hilbert-Poincare series\n- Alexander dual of monomial ideals (already in the previous Frobby spkg)\n- Maximal standard monomials of monomial ideals\n- Irreducible decomposition of monomial ideals\n- Optimization of any linear function over the maximal standard monomials of a monomial ideal using branch-and-bound.\n\nThe patch applies cleanly to Sage 4.0.1, and the spkg is at\n\n  http://www.daimi.au.dk/~bjarke/frobby-0.8.0.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6416\n\n",
     "created_at": "2009-06-25T21:37:20Z",
     "labels": [
-        "component: algebra"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
-    "title": "[with spkg and patch, needs review] Frobby for monomial ideals",
+    "title": "Use Frobby for monomial ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6416",
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
-Assignee: tbd
+Assignee: @malb
 
 CC:  drkirkby
 

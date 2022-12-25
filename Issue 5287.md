@@ -1,15 +1,16 @@
-# Issue 5287: [with patch, needs review] improve mq.SR usability and performance
+# Issue 5287: [with patch, positive review] improve mq.SR usability and performance
 
 archive/issues_005287.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  rpw\n\nKeywords: aes, crypto, mq\n\nThe attached patch contains the following improvements for `mq.SR`:\n* faster polynomial_system generation by pre-computing S-Box polynomials\n* support for finite extension field elements in `mq.SBox` (needed by mq.SR)\n* more module level documentation for `mq.sr`\n* new `sbox()` function which returns AES (or SR) `SBox` object\n* `AllowZeroInversionsContext()` to handle table creation and such\n* more user friendly encryption, i.e. accept more inputs and make sense of them\n* `varstr()` function to return a specific string rather than a list of strings using `varstrs()`\n* `variable_dict()` function which gives fast access to string -> variable mappings\n* ring constructor accepts optional `reverse_variables` parameter now\n* `SR_gf2_2` class as example how to customize things\n* added `constant_coefficient()` function to `BooleanPolynomial`s (needed by `sbox()`)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5287\n\n",
+    "closed_at": "2009-02-20T06:40:22Z",
     "created_at": "2009-02-16T16:33:44Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] improve mq.SR usability and performance",
+    "title": "[with patch, positive review] improve mq.SR usability and performance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5287",
     "user": "https://github.com/malb"

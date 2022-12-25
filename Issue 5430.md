@@ -1,16 +1,17 @@
-# Issue 5430: Coleman integrals of differential forms from different rings
+# Issue 5430: [with patch, positive review] Coleman integrals of differential forms from different rings
 
 archive/issues_005430.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nThe coercion seems to be fine, but the Coleman integral fails:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)            #this is ok\nsage: HK.coleman_integral(b,P,Q)              #this is not\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5430\n\n",
+    "closed_at": "2009-06-01T06:13:09Z",
     "created_at": "2009-03-03T18:10:24Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Coleman integrals of differential forms from different rings",
+    "title": "[with patch, positive review] Coleman integrals of differential forms from different rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5430",
     "user": "https://github.com/jbalakrishnan"

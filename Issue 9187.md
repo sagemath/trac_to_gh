@@ -3,7 +3,8 @@
 archive/issues_009187.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime @jaapspies\n\nTo build ECL with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9187\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @jhpalmieri @nexttime @jaapspies\n\nTo build ECL with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9187\n\n",
+    "closed_at": "2010-07-13T18:38:28Z",
     "created_at": "2010-06-08T08:42:58Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_009187.json:
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  drkirkby @jhpalmieri @nexttime @jaapspies
 

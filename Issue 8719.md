@@ -3,7 +3,8 @@
 archive/issues_008719.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nThis patch makes the following work:\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @rbeezer\n\nThis patch makes the following work:\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n\n            sage: import numpy\n            sage: b=numpy.array(a); b\n            array([[ 0,  1,  2,  3],\n                   [ 4,  5,  6,  7],\n                   [ 8,  9, 10, 11]])\n            sage: b.dtype\n            dtype('int64')\n            sage: b.shape\n            (3, 4)\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
+    "closed_at": "2010-05-08T22:03:13Z",
     "created_at": "2010-04-20T00:07:17Z",
     "labels": [
         "component: linear algebra"
@@ -15,7 +16,7 @@ archive/issues_008719.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: jason, was
+Assignee: @jasongrout
 
 CC:  @rbeezer
 
@@ -39,6 +40,17 @@ This patch makes the following work:
             [ 3.+0.j,  4.+0.j,  5.+0.j]])
             sage: numpy.array(m).dtype            
             dtype('complex128')
+
+            sage: import numpy
+            sage: b=numpy.array(a); b
+            array([[ 0,  1,  2,  3],
+                   [ 4,  5,  6,  7],
+                   [ 8,  9, 10, 11]])
+            sage: b.dtype
+            dtype('int64')
+            sage: b.shape
+            (3, 4)
+
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8719

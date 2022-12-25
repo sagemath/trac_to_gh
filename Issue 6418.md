@@ -1,16 +1,17 @@
-# Issue 6418: [with patch; needs review] ref manual fixes for 4.1.alpha1
+# Issue 6418: [with patch, positive review] ref manual fixes for 4.1.alpha1
 
 archive/issues_006418.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis fixes most of the warnings for building the html version of the reference manual in Sage 4.1.alpha1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6418\n\n",
+    "closed_at": "2009-06-26T17:41:12Z",
     "created_at": "2009-06-26T00:28:48Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch; needs review] ref manual fixes for 4.1.alpha1",
+    "title": "[with patch, positive review] ref manual fixes for 4.1.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6418",
     "user": "https://github.com/jhpalmieri"

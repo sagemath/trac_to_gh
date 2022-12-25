@@ -3,7 +3,8 @@
 archive/issues_008324.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nThe module `sage.misc.sageinspect` is missing several recent changes to `sagenb.misc.sageinspect`.\n\nNote: SageNB has its own `sageinspect` so that it can stand alone.\n\nRelated: #2064.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8324\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nRecent updates to `sage.misc.sageinspect` are missing from `sagenb.misc.sageinspect`.\n\nNote: SageNB has its own `sageinspect` so that it can stand alone.\n\nRelated: #2064.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8324\n\n",
+    "closed_at": "2010-03-04T22:51:07Z",
     "created_at": "2010-02-22T03:50:36Z",
     "labels": [
         "component: notebook",
@@ -21,7 +22,7 @@ Assignee: @williamstein
 
 CC:  @jhpalmieri
 
-The module `sage.misc.sageinspect` is missing several recent changes to `sagenb.misc.sageinspect`.
+Recent updates to `sage.misc.sageinspect` are missing from `sagenb.misc.sageinspect`.
 
 Note: SageNB has its own `sageinspect` so that it can stand alone.
 

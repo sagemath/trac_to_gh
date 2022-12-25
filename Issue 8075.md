@@ -3,10 +3,12 @@
 archive/issues_008075.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe sage/eclib interface is rather old and could be simplified and made more efficient, probably after a major change to eclib to remove the NTL/LiDIA duality which has never been used by Sage and is essentially dead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8075\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nKeywords: eclib\n\nThe sage/eclib interface is rather old and could be simplified and made more efficient, probably after a major change to eclib to remove the NTL/LiDIA duality which has never been used by Sage and is essentially dead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8075\n\n",
+    "closed_at": "2021-02-05T14:58:15Z",
     "created_at": "2010-01-26T09:26:57Z",
     "labels": [
-        "component: number theory"
+        "component: number theory",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Enhance sage/eclib interface",
@@ -18,6 +20,8 @@ archive/issues_008075.json:
 Assignee: @williamstein
 
 CC:  @JohnCremona
+
+Keywords: eclib
 
 The sage/eclib interface is rather old and could be simplified and made more efficient, probably after a major change to eclib to remove the NTL/LiDIA duality which has never been used by Sage and is essentially dead.
 

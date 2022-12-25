@@ -4,6 +4,7 @@ archive/issues_009203.json:
 ```json
 {
     "body": "Assignee: @videlec\n\nCC:  @kcrisman @jasongrout\n\nKeywords: plot, geometry, ellipse\n\nAdding a primitive for plot ellipses that wraps the existing patch of matplotlib.\n\nThis is approximately the same stuff as the patch #9076 for plotting arcs (of circle and ellipse).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9203\n\n",
+    "closed_at": "2010-09-15T10:40:22Z",
     "created_at": "2010-06-10T13:43:14Z",
     "labels": [
         "component: geometry"

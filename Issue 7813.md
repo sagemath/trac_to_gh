@@ -3,7 +3,7 @@
 archive/issues_007813.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nKeywords: docs\n\nTo disable at least temporarily the dead links, for instance, at\n\n1. http://sagemath.org/doc/genindex.html\n2. http://sagemath.org/doc/tutorial/modindex.html\n3. http://sagemath.org/doc/tutorial/genindex.html\n ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7813\n\n",
+    "body": "Assignee: @haraldschilly\n\nKeywords: docs\n\nTo disable the dead links, for instance, at\n\n1. http://sagemath.org/doc/genindex.html\n2. http://sagemath.org/doc/tutorial/modindex.html\n3. http://sagemath.org/doc/tutorial/genindex.html\n ...\n\nThe ticket is based on the decision to improve Sage's docs at [http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg33505.html](http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg33505.html).\n\n\nThe next step is to show Sage developers how to add words to index similarly as Python -project does by the given syntax such as\n\n\n```\n   .. index:: pair: file; byte-code\n```\n\n\nI propose to add a notice about that to Sage's developer manual and to change the command {{{ sage -coverage }} to reflect the need of the index. The manual should also show by examples which words are suitable to the index. \n\nI would like to have function names in the index given for instance by\n\n \n```\n sage -grep \"def [a-zA-Z]*(\"\n```\n \n\n\n\nIn other words, it would be great to have a notice like `Please, consider new keywords to index by adding \".. index:: keyword;\"` above the keyword.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7813\n\n",
     "created_at": "2010-01-02T03:42:43Z",
     "labels": [
         "component: website/wiki"
@@ -19,12 +19,40 @@ Assignee: @haraldschilly
 
 Keywords: docs
 
-To disable at least temporarily the dead links, for instance, at
+To disable the dead links, for instance, at
 
 1. http://sagemath.org/doc/genindex.html
 2. http://sagemath.org/doc/tutorial/modindex.html
 3. http://sagemath.org/doc/tutorial/genindex.html
  ...
+
+The ticket is based on the decision to improve Sage's docs at [http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg33505.html](http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg33505.html).
+
+
+The next step is to show Sage developers how to add words to index similarly as Python -project does by the given syntax such as
+
+
+```
+   .. index:: pair: file; byte-code
+```
+
+
+I propose to add a notice about that to Sage's developer manual and to change the command {{{ sage -coverage }} to reflect the need of the index. The manual should also show by examples which words are suitable to the index. 
+
+I would like to have function names in the index given for instance by
+
+ 
+```
+ sage -grep "def [a-zA-Z]*("
+```
+ 
+
+
+
+In other words, it would be great to have a notice like `Please, consider new keywords to index by adding ".. index:: keyword;"` above the keyword.
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7813
 

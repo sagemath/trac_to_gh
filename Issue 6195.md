@@ -1,16 +1,17 @@
-# Issue 6195: [with patch, needs review] in symbolic Expression.math() return a dictionary with matched values of wildcards
+# Issue 6195: [with patch, positive review] in symbolic Expression.match() return a dictionary with matched values of wildcards
 
 archive/issues_006195.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nWhile matching patterns containing wildcards in symbolic expressions, GiNaC supports returning the sub expressions that match the given wildcards.\n\nAttached patch wraps this interface.\n\nThe current interface for .match() on sage.symbolic.expression.Expression is to return False if there was a match, and True otherwise. The patch changes this to return a dictionary with the wildcards in the pattern as keys. This might result in an empty dictionary being returned. See the doctests in the patch for examples.\n\nI am open to suggestions for improvements on this interface. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6195\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nKeywords: symbolic expression match\n\nWhile matching patterns containing wildcards in symbolic expressions, GiNaC supports returning the sub expressions that match the given wildcards.\n\nAttached patch wraps this interface.\n\nThe current interface for .match() on sage.symbolic.expression.Expression is to return False if there was a match, and True otherwise. The patch changes this to return a dictionary with the wildcards in the pattern as keys. This might result in an empty dictionary being returned. See the doctests in the patch for examples.\n\nI am open to suggestions for improvements on this interface. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6195\n\n",
+    "closed_at": "2009-07-19T13:48:03Z",
     "created_at": "2009-06-03T15:24:16Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] in symbolic Expression.math() return a dictionary with matched values of wildcards",
+    "title": "[with patch, positive review] in symbolic Expression.match() return a dictionary with matched values of wildcards",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6195",
     "user": "https://github.com/burcin"
@@ -19,6 +20,8 @@ archive/issues_006195.json:
 Assignee: @burcin
 
 CC:  @mwhansen
+
+Keywords: symbolic expression match
 
 While matching patterns containing wildcards in symbolic expressions, GiNaC supports returning the sub expressions that match the given wildcards.
 

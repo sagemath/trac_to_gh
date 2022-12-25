@@ -3,7 +3,8 @@
 archive/issues_002025.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNote below that the stupid constant term of the taylor expansion\ninside the matrix keeps getting pushed off to the far right!\n\n```\nsage: m = matrix(1,[-x/(2*x-4)])\nsage: m.apply_map(lambda e: taylor(e,x,0,4))\n[x^4/32 + x^3/16 + x^2/8 + x/4]\nsage: m.apply_map(lambda e: taylor(e,x,0,4))\n[x^4/32 + x^3/16 + x^2/8 + x/4]\nsage: m.apply_map(lambda e: taylor(e,x,1,4))\n[x + (x - 1)^4 + (x - 1)^3 + (x - 1)^2 - 1/2]\nsage: m.apply_map(lambda e: taylor(e,x,2,4))\n[-1/(x - 2) - 1/2]\nsage: m.apply_map(lambda e: taylor(e,x,3,4))\n[x - (x - 3)^4 + (x - 3)^3 - (x - 3)^2 - 9/2]\nsage: m[0,0].taylor(x,3,4)\n-3/2 + x - 3 - (x - 3)^2 + (x - 3)^3 - (x - 3)^4\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2025\n\n",
+    "body": "Assignee: @garyfurnish\n\nNote below that the stupid constant term of the taylor expansion\ninside the matrix keeps getting pushed off to the far right!\n\n```\nsage: m = matrix(1,[-x/(2*x-4)])\nsage: m.apply_map(lambda e: taylor(e,x,0,4))\n[x^4/32 + x^3/16 + x^2/8 + x/4]\nsage: m.apply_map(lambda e: taylor(e,x,0,4))\n[x^4/32 + x^3/16 + x^2/8 + x/4]\nsage: m.apply_map(lambda e: taylor(e,x,1,4))\n[x + (x - 1)^4 + (x - 1)^3 + (x - 1)^2 - 1/2]\nsage: m.apply_map(lambda e: taylor(e,x,2,4))\n[-1/(x - 2) - 1/2]\nsage: m.apply_map(lambda e: taylor(e,x,3,4))\n[x - (x - 3)^4 + (x - 3)^3 - (x - 3)^2 - 9/2]\nsage: m[0,0].taylor(x,3,4)\n-3/2 + x - 3 - (x - 3)^2 + (x - 3)^3 - (x - 3)^4\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2025\n\n",
+    "closed_at": "2009-06-04T21:15:47Z",
     "created_at": "2008-02-01T14:02:18Z",
     "labels": [
         "component: calculus",
@@ -16,7 +17,7 @@ archive/issues_002025.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 Note below that the stupid constant term of the taylor expansion
 inside the matrix keeps getting pushed off to the far right!

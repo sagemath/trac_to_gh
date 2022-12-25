@@ -1,9 +1,10 @@
-# Issue 5071: [with patch, needs review] unit of least precision for RR and RDF
+# Issue 5071: [with patch, positive review] unit of least precision for RR and RDF
 
 archive/issues_005071.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI wrote this while attacking #4746. Didn't turn out to be relevant to that, but it's useful to have on its own anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5071\n\n",
+    "closed_at": "2009-02-07T01:38:34Z",
     "created_at": "2009-01-23T12:23:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_005071.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] unit of least precision for RR and RDF",
+    "title": "[with patch, positive review] unit of least precision for RR and RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5071",
     "user": "https://github.com/robertwb"

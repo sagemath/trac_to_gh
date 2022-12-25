@@ -1,15 +1,16 @@
-# Issue 3813: Improve adaptive rendering in plot()
+# Issue 3813: [with patch, positive review] Improve adaptive rendering in plot()
 
 archive/issues_003813.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWilliam said at Sage Days 9 that he wanted better adaptive rendering.  So I did it.  \n\nIt actually looks much better by default.  Better enough that I don't think users will have to touch plot_points anymore.\n\nAnd it runs just as fast.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3813\n\n",
+    "closed_at": "2008-08-27T00:59:03Z",
     "created_at": "2008-08-12T05:43:05Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Improve adaptive rendering in plot()",
+    "title": "[with patch, positive review] Improve adaptive rendering in plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3813",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

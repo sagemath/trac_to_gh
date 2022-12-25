@@ -3,10 +3,11 @@
 archive/issues_009837.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nThis addresses a bug that was reported here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/252fd7fa0e297214\n\nThe `__call__` method of a Weyl Character ring, when `style=\"coroots\"` is specified, tries to interpret the arguments as the coroots of a weight; that weight\nis then the actual argument. However this is not appropriate if the argument is\nnot a tuple. Therefore this should be tested.\n\nThe patch implements the test.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9838\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nThis addresses a bug that was reported here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/252fd7fa0e297214\n\nThe `__call__` method of a Weyl Character ring, when `style=\"coroots\"` is specified, tries to interpret the arguments as the coroots of a weight; that weight\nis then the actual argument. However this is not appropriate if the argument is\nnot a tuple. Therefore this should be tested.\n\nThe patch implements the test.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9838\n\n",
+    "closed_at": "2010-11-10T22:20:13Z",
     "created_at": "2010-08-29T19:03:03Z",
     "labels": [
-        "component: algebra",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
@@ -16,7 +17,7 @@ archive/issues_009837.json:
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: @aghitza
+Assignee: @dwbump
 
 CC:  sage-combinat
 

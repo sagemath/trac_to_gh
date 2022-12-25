@@ -4,6 +4,7 @@ archive/issues_008299.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nClearly this is undesirable:\n\n```\nsage: 5r + True\n6\nsage: 5 + True\n2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8299\n\n",
+    "closed_at": "2010-03-02T21:15:38Z",
     "created_at": "2010-02-18T22:28:12Z",
     "labels": [
         "component: coercion",

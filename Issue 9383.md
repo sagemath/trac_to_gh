@@ -1,15 +1,16 @@
-# Issue 9383: Adding quadratic_forms Code to the Reference Manual
+# Issue 9383: Add quadratic forms code to the reference manual
 
 archive/issues_009383.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9383\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: quadratic forms\n\n**Apply:**\n\n* [attachment:trac_9383_v4.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9383\n\n",
+    "closed_at": "2010-09-28T09:10:53Z",
     "created_at": "2010-06-29T21:02:50Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Adding quadratic_forms Code to the Reference Manual",
+    "title": "Add quadratic forms code to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9383",
     "user": "https://github.com/annahaensch"
@@ -17,7 +18,11 @@ archive/issues_009383.json:
 ```
 Assignee: mvngu
 
+Keywords: quadratic forms
 
+**Apply:**
+
+* [attachment:trac_9383_v4.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9383
 

@@ -3,7 +3,8 @@
 archive/issues_005761.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5761\n\n",
+    "body": "Assignee: @rbeezer\n\nKeywords: documentation, coverage, latex\n\nApply only [attachment:trac_5761-latex_docstrings-ts.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/5761\n\n",
+    "closed_at": "2013-02-09T12:13:02Z",
     "created_at": "2009-04-11T19:56:35Z",
     "labels": [
         "component: doctest coverage",
@@ -16,9 +17,11 @@ archive/issues_005761.json:
     "user": "https://github.com/rbeezer"
 }
 ```
-Assignee: mabshoff
+Assignee: @rbeezer
 
+Keywords: documentation, coverage, latex
 
+Apply only [attachment:trac_5761-latex_docstrings-ts.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/5761
 

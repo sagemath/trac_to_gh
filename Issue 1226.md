@@ -4,6 +4,7 @@ archive/issues_001226.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSubject says it all, ought to be easily fixed by grepping through the homspace source code.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1226\n\n",
+    "closed_at": "2007-11-21T14:02:56Z",
     "created_at": "2007-11-20T22:59:40Z",
     "labels": [
         "component: doctest coverage",

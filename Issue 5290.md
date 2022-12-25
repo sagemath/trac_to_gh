@@ -1,9 +1,10 @@
-# Issue 5290: Sage 3.3.rc1: Sage fails to start due to dangling missed import in plot.py
+# Issue 5290: [with patch, positive review] Sage 3.3.rc1: Sage fails to start due to dangling missed import in plot.py
 
 archive/issues_005290.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIt wasn't my fault, but patch is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5290\n\n",
+    "closed_at": "2009-02-17T06:58:04Z",
     "created_at": "2009-02-17T02:17:57Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_005290.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Sage 3.3.rc1: Sage fails to start due to dangling missed import in plot.py",
+    "title": "[with patch, positive review] Sage 3.3.rc1: Sage fails to start due to dangling missed import in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5290",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

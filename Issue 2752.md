@@ -1,16 +1,16 @@
-# Issue 2752: Speedup for  all_paths()
+# Issue 2752: [with patch, positive review] Speedup for  all_paths()
 
 archive/issues_002752.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nI speeded up the *all_paths()* function for graphs.\n\nThe improvement is mainly based on 'getting rid of the recursion' :-)\n\n\nOn my machine (Pentium M) it's about 5 times faster, without more memory consumption.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2752\n\n",
+    "closed_at": "2008-04-02T01:36:19Z",
     "created_at": "2008-04-01T13:42:54Z",
     "labels": [
-        "component: graph theory",
-        "minor"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Speedup for  all_paths()",
+    "title": "[with patch, positive review] Speedup for  all_paths()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2752",
     "user": "https://github.com/m-r-k"

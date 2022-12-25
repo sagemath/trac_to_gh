@@ -1,9 +1,10 @@
-# Issue 3411: [with patch; needs review] sage-3.0.3.alpha2 -- finance time_series doctest failure due to numerical precision
+# Issue 3411: [with patch; with positive review] sage-3.0.3.alpha2 -- finance time_series doctest failure due to numerical precision
 
 archive/issues_003411.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3411\n\n",
+    "closed_at": "2008-06-15T16:03:12Z",
     "created_at": "2008-06-13T14:15:29Z",
     "labels": [
         "component: finance",
@@ -11,7 +12,7 @@ archive/issues_003411.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] sage-3.0.3.alpha2 -- finance time_series doctest failure due to numerical precision",
+    "title": "[with patch; with positive review] sage-3.0.3.alpha2 -- finance time_series doctest failure due to numerical precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3411",
     "user": "https://github.com/williamstein"

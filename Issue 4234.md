@@ -1,16 +1,17 @@
-# Issue 4234: typos in programming guide
+# Issue 4234: [with patch, positive review] typos in programming guide
 
 archive/issues_004234.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: programming guide, prog.tex\n\nThis patch fixes various typos and annoying white spaces in the programming guide, i.e. the file prog.tex. Many .tex files contain trailing white spaces, which I personally find annoying when I view/edit them from within a terminal emulator. If other folks also find trailing white spaces annoying, then this patch fixes that annoyance in prog.tex. Otherwise, just leave those trailing white spaces as is and consider the typos.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4234\n\n",
+    "closed_at": "2008-10-02T03:32:24Z",
     "created_at": "2008-10-02T01:41:52Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "typos in programming guide",
+    "title": "[with patch, positive review] typos in programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4234",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

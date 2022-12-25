@@ -1,16 +1,17 @@
-# Issue 6361: elliptic curves -- easy to fix mistake in docs
+# Issue 6361: [with patch, positive review] elliptic curves -- easy to fix mistake in docs
 
 archive/issues_006361.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\neval_modular_form(points, prec) \nEvaluate the L-series of this elliptic curve at points in CC \nINPUT: \n\u2022points - a list of points in the half-plane of convergence \n\u2022prec - precision \nOUTPUT: A list of values L(E,s) for s in points \nNote: Better examples are welcome. \nEXAMPLES: \nsage: E=EllipticCurve(\u201937a1\u2019) \nsage: E.eval_modular_form([1.5+I,2.0+I,2.5+I],0.000001) \n[0, 0, 0] \n```\n\nIt should *NOT* say L-series above.  It should say modular form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6361\n\n",
+    "closed_at": "2009-06-24T10:04:05Z",
     "created_at": "2009-06-19T18:02:44Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "elliptic curves -- easy to fix mistake in docs",
+    "title": "[with patch, positive review] elliptic curves -- easy to fix mistake in docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6361",
     "user": "https://github.com/williamstein"

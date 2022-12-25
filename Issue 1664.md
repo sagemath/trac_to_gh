@@ -4,6 +4,7 @@ archive/issues_001664.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLatest up at \n\nhttp://sage.math.washington.edu/home/robertwb/3d/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1664\n\n",
+    "closed_at": "2008-01-03T13:33:53Z",
     "created_at": "2008-01-03T10:05:54Z",
     "labels": [
         "component: graphics",

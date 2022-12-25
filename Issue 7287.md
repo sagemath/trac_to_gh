@@ -1,21 +1,22 @@
-# Issue 7287: [needs review] Update Maxima spkg to build ECL library
+# Issue 7287: Update Maxima spkg to build ECL library
 
 archive/issues_007287.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  alexghitza @mwhansen\n\nIn order to use Maxima as a library via ECL, we need to have maxima as a lisp library rather than a stand-alone executable.\n\nhttp://sage.math.washington.edu/home/nbruin/maxima-5.19.1.p1.spkg\n\nimplements this change. With this package properly installed, one can have the following session:\n\n```\n$ sage -ecl\nECL (Embeddable Common-Lisp) 9.8.4\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.  \nTop level.\n> (require `maxima)\n\n;;; Loading #P\"/usr/local/sage/4.1.2/local/lib/ecl/maxima.fas\"\n(\"MAXIMA\")\n> (in-package :maxima)\n\n#<\"MAXIMA\" package>\nMAXIMA> #$integrate(cos(x),x)$\n\n((%SIN SIMP) $X)\n```\nAttached is the patch between maxima-5.19.1.p0.spkg and maxima-5.19.1.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7287\n\n",
+    "body": "Assignee: @nbruin\n\nCC:  alexghitza @mwhansen\n\nIn order to use Maxima as a library via ECL, we need to have maxima as a lisp library rather than a stand-alone executable.\n\nhttp://sage.math.washington.edu/home/nbruin/maxima-5.19.1.p1.spkg\n\nimplements this change. With this package properly installed, one can have the following session:\n\n```\n$ sage -ecl\nECL (Embeddable Common-Lisp) 9.8.4\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.  \nTop level.\n> (require `maxima)\n\n;;; Loading #P\"/usr/local/sage/4.1.2/local/lib/ecl/maxima.fas\"\n(\"MAXIMA\")\n> (in-package :maxima)\n\n#<\"MAXIMA\" package>\nMAXIMA> #$integrate(cos(x),x)$\n\n((%SIN SIMP) $X)\n```\nAttached is the patch between maxima-5.19.1.p0.spkg and maxima-5.19.1.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7287\n\n",
+    "closed_at": "2009-12-04T04:27:21Z",
     "created_at": "2009-10-25T07:05:24Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[needs review] Update Maxima spkg to build ECL library",
+    "title": "Update Maxima spkg to build ECL library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7287",
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: mabshoff
+Assignee: @nbruin
 
 CC:  alexghitza @mwhansen
 

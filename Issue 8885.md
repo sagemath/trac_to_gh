@@ -1,16 +1,17 @@
-# Issue 8885: deprecated_functions_alias and sphinx
+# Issue 8885: Add deprecation message to deprecated_functions_alias docstrings
 
 archive/issues_008885.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nKeywords: Depreacation alias documentation\n\nCurrently if a function is a deprecated alias, the doc of the aliased function appears un the reference manual. Nothing shows that the function is deprecated. See for example the doc of\n`sage.combinat.partition.associated`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8885\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: deprecation alias documentation\n\nCurrently if a function is a deprecated alias, the doc of the aliased function appears in the reference manual. Nothing shows that the function is deprecated. See for example the doc of\n`sage.combinat.partition.associated`\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8885\n\n",
+    "closed_at": "2011-07-04T12:02:06Z",
     "created_at": "2010-05-05T11:06:53Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "deprecated_functions_alias and sphinx",
+    "title": "Add deprecation message to deprecated_functions_alias docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8885",
     "user": "https://github.com/hivert"
@@ -18,10 +19,12 @@ archive/issues_008885.json:
 ```
 Assignee: @hivert
 
-Keywords: Depreacation alias documentation
+Keywords: deprecation alias documentation
 
-Currently if a function is a deprecated alias, the doc of the aliased function appears un the reference manual. Nothing shows that the function is deprecated. See for example the doc of
+Currently if a function is a deprecated alias, the doc of the aliased function appears in the reference manual. Nothing shows that the function is deprecated. See for example the doc of
 `sage.combinat.partition.associated`
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8885
 

@@ -1,22 +1,22 @@
-# Issue 2452: heaviside step function needed
+# Issue 2452: [with patch, positive review] Heaviside step function, Dirac delta needed
 
 archive/issues_002452.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @golam-m-hossain\n\nSymbolic heaviside step function is needed for ease of plotting.  Right now you must \n\n```\nsage: def u(x):\n    if(x<0):\n        return 0\n    else:\n        return 1*cos(x)\nsage: plot(u,-5,5)\n```\ninstead of\n\n```\n plot(heaviside(t)*cos(t),t,-5,5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2452\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @golam-m-hossain\n\nSymbolic heaviside step function is needed for ease of plotting.  Right now you must \n\n```\nsage: def u(x):\n    if(x<0):\n        return 0\n    else:\n        return 1*cos(x)\nsage: plot(u,-5,5)\n```\ninstead of\n\n```\n plot(heaviside(t)*cos(t),t,-5,5)\n```\n\n**Update:**  Attached patch adds support for three generalized functions: Dirac delta, Heaviside step and unit step in new pynac-based symbolics.\n\nThe adopted convention is discussed here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5f7de72642b8e568/f226acf9a6331d4d\n\nThese functions can be used in Sage like any other symbolic functions. \n\nA specialized integration algorithm involving generalized functions is under development and will be posted as a separate ticket.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2452\n\n",
+    "closed_at": "2009-07-04T19:54:26Z",
     "created_at": "2008-03-10T07:52:27Z",
     "labels": [
-        "component: calculus",
-        "critical"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "heaviside step function needed",
+    "title": "[with patch, positive review] Heaviside step function, Dirac delta needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2452",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 CC:  @golam-m-hossain
 
@@ -35,6 +35,19 @@ instead of
 ```
  plot(heaviside(t)*cos(t),t,-5,5)
 ```
+
+**Update:**  Attached patch adds support for three generalized functions: Dirac delta, Heaviside step and unit step in new pynac-based symbolics.
+
+The adopted convention is discussed here
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/5f7de72642b8e568/f226acf9a6331d4d
+
+These functions can be used in Sage like any other symbolic functions. 
+
+A specialized integration algorithm involving generalized functions is under development and will be posted as a separate ticket.
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2452
 

@@ -1,15 +1,16 @@
-# Issue 3273: extend isqrt to work for Python int's in addition to Sage integers and objects with an isqrt method
+# Issue 3273: [with patch, positive review] extend isqrt to work for Python int's in addition to Sage integers and objects with an isqrt method
 
 archive/issues_003273.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3273\n\n",
+    "closed_at": "2008-05-23T07:05:01Z",
     "created_at": "2008-05-23T00:04:12Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "extend isqrt to work for Python int's in addition to Sage integers and objects with an isqrt method",
+    "title": "[with patch, positive review] extend isqrt to work for Python int's in addition to Sage integers and objects with an isqrt method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3273",
     "user": "https://github.com/williamstein"

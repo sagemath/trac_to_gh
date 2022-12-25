@@ -1,9 +1,10 @@
-# Issue 5357: typos in library file; Sage 3.3
+# Issue 5357: [with patch; positive review] typos in library files; Sage 3.3
 
 archive/issues_005357.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @mwhansen\n\nA bunch of typos found in Sage 3.3 library files, in particular files under the following directories:\n\n\n* sage/algebras\n* sage/calculus\n* sage/coding\n* sage/combinat\n* sage/crypto\n* sage/databases\n\nThe typos are fairly trivial to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5357\n\n",
+    "closed_at": "2009-02-28T22:32:40Z",
     "created_at": "2009-02-24T08:08:58Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005357.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "typos in library file; Sage 3.3",
+    "title": "[with patch; positive review] typos in library files; Sage 3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5357",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

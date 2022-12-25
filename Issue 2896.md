@@ -1,26 +1,26 @@
-# Issue 2896: Notebook can't handle publishing of Umlauts (UTF-8)
+# Issue 2896: Notebook can't handle Umlauts (UTF-8)
 
 archive/issues_002896.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @haraldschilly\n\nKeywords: utf-8\n\nLars Fischer wrote on [http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support) (and I edited for the bug report):\n\nPlease note that before I published the worksheet the \u00dc in the cells\nwere a \u00dc, after publishing, the \"\u00dc\" look like \"\ufffd\" in the published document.\n\nMy workflow was\n* New worksheet\n* Edit, and I inserted everything in the Edit-Field.\n* Use, and evaluate the first two cells.\n* Then I published.\n\n```\nprint \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n```\nprint \"Ue\" #print \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2896\n\n",
+    "body": "Assignee: tclemans\n\nCC:  @haraldschilly\n\nKeywords: utf-8, notebook, encoding\n\nLars Fischer wrote on [http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support) (and I edited for the bug report):\n\nPlease note that before I published the worksheet the \u00dc in the cells\nwere a \u00dc, after publishing, the \"\u00dc\" look like \"\ufffd\" in the published document.\n\nMy workflow was\n* New worksheet\n* Edit, and I inserted everything in the Edit-Field.\n* Use, and evaluate the first two cells.\n* Then I published.\n\n```\nprint \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n```\nprint \"Ue\" #print \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2896\n\n",
+    "closed_at": "2009-03-23T21:38:16Z",
     "created_at": "2008-04-12T12:05:51Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Notebook can't handle publishing of Umlauts (UTF-8)",
+    "title": "Notebook can't handle Umlauts (UTF-8)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2896",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: boothby
+Assignee: tclemans
 
 CC:  @haraldschilly
 
-Keywords: utf-8
+Keywords: utf-8, notebook, encoding
 
 Lars Fischer wrote on [http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support) (and I edited for the bug report):
 

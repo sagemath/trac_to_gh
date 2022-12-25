@@ -1,21 +1,26 @@
-# Issue 3429: New linbox 1.1.6 spkg
+# Issue 3429: [with patch, positive review] New linbox 1.1.6 spkg
 
 archive/issues_003429.json:
 ```json
 {
-    "body": "Assignee: @ClementPernet\n\nUpgrade linbox to 1.1.6 release.\nThe new release includes the sage interface, so the new spkg should shave out the old linbox_wrap.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3429\n\n",
+    "body": "Assignee: @ClementPernet\n\nKeywords: editor_mabshoff\n\nUpgrade linbox to 1.1.6 release.\nThe new release includes the sage interface, so the new spkg should shave out the old linbox_wrap.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3429\n\n",
+    "closed_at": "2008-06-30T04:58:26Z",
     "created_at": "2008-06-15T20:13:43Z",
     "labels": [
-        "component: linbox"
+        "component: linbox",
+        "blocker",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "New linbox 1.1.6 spkg",
+    "title": "[with patch, positive review] New linbox 1.1.6 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3429",
     "user": "https://github.com/ClementPernet"
 }
 ```
 Assignee: @ClementPernet
+
+Keywords: editor_mabshoff
 
 Upgrade linbox to 1.1.6 release.
 The new release includes the sage interface, so the new spkg should shave out the old linbox_wrap.

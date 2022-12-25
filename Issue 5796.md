@@ -1,21 +1,22 @@
-# Issue 5796: document bitsets and make interface consistent with python sets
+# Issue 5796: [with patch, positive review] document bitsets and make interface consistent with python sets
 
 archive/issues_005796.json:
 ```json
 {
-    "body": "Assignee: rlm, robertwb\n\nCC:  @rlmill @robertwb\n\nThe attached patch adds a lot of documentation to the bitsets in misc/bitset.*.  It also fixes a bug or two dealing with entries that are past the size of the set, but still within the last limb.\n\nThe other major contribution of the patch is to make the bitset interface consistent with the python set interface.  This is to make it very easy to transition from code that is written using python sets to changing it to use this bitset class.  Another advantage to changing the interface is that the language is more set-theoretic instead of demanding the user to understand the implementation details.\n\nThat said, the only big incompatible change in the interface is to make `bitset_clear` empty the set, rather than deallocate the set.  This is because the python set clear() function just empties a set.  To deallocate a bitset, use the `bitset_free` function after this patch.\n\nI grepped through the sage library and changed the uses of bitset to use the more pythonic interface.\n\nAfter this patch, doctests in misc/misc_c.pyx, groups/perm_gps/partn_ref/*.pyx, and coding/binary_code.pyx all pass (those were the places I found using bitsets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5796\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @rlmill @robertwb\n\nThe attached patch adds a lot of documentation to the bitsets in misc/bitset.*.  It also fixes a bug or two dealing with entries that are past the size of the set, but still within the last limb.\n\nThe other major contribution of the patch is to make the bitset interface consistent with the python set interface.  This is to make it very easy to transition from code that is written using python sets to changing it to use this bitset class.  Another advantage to changing the interface is that the language is more set-theoretic instead of demanding the user to understand the implementation details.\n\nThat said, the only big incompatible change in the interface is to make `bitset_clear` empty the set, rather than deallocate the set.  This is because the python set clear() function just empties a set.  To deallocate a bitset, use the `bitset_free` function after this patch.\n\nI grepped through the sage library and changed the uses of bitset to use the more pythonic interface.\n\nAfter this patch, doctests in misc/misc_c.pyx, groups/perm_gps/partn_ref/*.pyx, and coding/binary_code.pyx all pass (those were the places I found using bitsets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5796\n\n",
+    "closed_at": "2009-05-11T11:41:48Z",
     "created_at": "2009-04-16T03:12:06Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "document bitsets and make interface consistent with python sets",
+    "title": "[with patch, positive review] document bitsets and make interface consistent with python sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5796",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: rlm, robertwb
+Assignee: @jasongrout
 
 CC:  @rlmill @robertwb
 

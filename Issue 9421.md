@@ -4,6 +4,7 @@ archive/issues_009421.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman\n\nConsider\n\n```\nsage: var('t')\nsage: x=function('x',t)\nsage: var('c')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4\n```\nHere the first occurrence of `c` is an integration constant,\nwhereas the second one is the parameter in the ODE:\n\n```\nsage: var('d')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4\n```\nIn case the ODE contains `c`, desolve should choose another\nname for the integration constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9421\n\n",
+    "closed_at": "2014-03-31T15:03:53Z",
     "created_at": "2010-07-03T13:56:02Z",
     "labels": [
         "component: calculus",

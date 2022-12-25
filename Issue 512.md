@@ -4,10 +4,10 @@ archive/issues_000512.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nThe package \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.9.p1.spkg\nhas the latest version of guava (guava 3.0, incorporating work\nof Robert Miller and Tom Boothby). \n\nIssue created by migration from https://trac.sagemath.org/ticket/512\n\n",
+    "closed_at": "2007-10-20T20:51:28Z",
     "created_at": "2007-08-29T14:43:30Z",
     "labels": [
-        "component: coding theory",
-        "minor"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "update gap package",

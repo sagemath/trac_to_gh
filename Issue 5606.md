@@ -1,16 +1,17 @@
-# Issue 5606: complex color plotting
+# Issue 5606: [with patch, positive review] color complex plotting
 
 archive/issues_005606.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt's really a shame Sage can't produce graphics like http://commons.wikimedia.org/wiki/User:Jan_Homann/Mathematics yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5606\n\n",
+    "closed_at": "2009-04-11T00:10:59Z",
     "created_at": "2009-03-25T03:50:59Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "complex color plotting",
+    "title": "[with patch, positive review] color complex plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5606",
     "user": "https://github.com/robertwb"

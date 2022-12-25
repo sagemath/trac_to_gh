@@ -1,16 +1,17 @@
-# Issue 2013: crap -- f2c spkg contains precompiled binary
+# Issue 2013: [with spkg] crap -- f2c spkg contains precompiled binary
 
 archive/issues_002013.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/f2c-20070816/src/f2c/xsum\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2013\n\n",
+    "closed_at": "2008-02-01T02:01:50Z",
     "created_at": "2008-01-31T23:25:40Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- f2c spkg contains precompiled binary",
+    "title": "[with spkg] crap -- f2c spkg contains precompiled binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2013",
     "user": "https://github.com/williamstein"

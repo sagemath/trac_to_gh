@@ -1,16 +1,17 @@
-# Issue 806: matrix_integer_dense.elementary_divisors return a mutable object
+# Issue 806: [with patch] matrix_integer_dense.elementary_divisors return a mutable object
 
 archive/issues_000806.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following code causes incorrect output:\n\n```\nsage: M=random_matrix(ZZ,3,2)\n\nsage: M.elementary_divisors()\n [1, 1, 0]\n\nsage: edivs=M.elementary_divisors()\n\nsage: edivs.pop()\n 0\n\nsage: edivs\n [1, 1]\n\nsage: M.elementary_divisors()\n [1, 1]\n```\nThe problem seems to be elementary_divisors() caches the result, but returns a mutable object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/806\n\n",
+    "closed_at": "2007-10-04T18:53:43Z",
     "created_at": "2007-10-03T14:52:20Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "matrix_integer_dense.elementary_divisors return a mutable object",
+    "title": "[with patch] matrix_integer_dense.elementary_divisors return a mutable object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/806",
     "user": "https://github.com/syazdani77"

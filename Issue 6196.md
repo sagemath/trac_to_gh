@@ -1,21 +1,22 @@
-# Issue 6196: mpmath support
+# Issue 6196: [with patch, positive review] mpmath support
 
 archive/issues_006196.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nPatch description:\n\nAdds sage.libs.mpmath which provides wrapper functions and\nmonkey patches some internal mpmath functions for speed. Mpmath\nfunctions can be called from Sage as follows (with forward\nand backward conversions handled automatically):\n\nsage: import sage.libs.mpmath.all as a\nsage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I)\n-0.111907858412569 - 0.536467867510390*I\nsage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I, prec=100)\n-0.11190785841256900204178259859 - 0.53646786751038954277574814099*I\n\nSome partial support for direct conversion from Sage -> mpmath\nis also implemented (this is not completely working yet).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6196\n\n",
+    "body": "Assignee: @mwhansen\n\nPatch description:\n\nAdds sage.libs.mpmath which provides wrapper functions and\nmonkey patches some internal mpmath functions for speed. Mpmath\nfunctions can be called from Sage as follows (with forward\nand backward conversions handled automatically):\n\n```\nsage: import sage.libs.mpmath.all as a\nsage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I)\n-0.111907858412569 - 0.536467867510390*I\nsage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I, prec=100)\n-0.11190785841256900204178259859 - 0.53646786751038954277574814099*I\n```\n\nSome partial support for direct conversion from Sage -> mpmath\nis also implemented (this is not completely working yet).\n\nAlso providing a preliminary spkg (with current mpmath trunk) in this issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6196\n\n",
+    "closed_at": "2009-07-02T21:07:15Z",
     "created_at": "2009-06-03T17:32:58Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "mpmath support",
+    "title": "[with patch, positive review] mpmath support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6196",
     "user": "https://github.com/fredrik-johansson"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Patch description:
 
@@ -24,14 +25,18 @@ monkey patches some internal mpmath functions for speed. Mpmath
 functions can be called from Sage as follows (with forward
 and backward conversions handled automatically):
 
+```
 sage: import sage.libs.mpmath.all as a
 sage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I)
 -0.111907858412569 - 0.536467867510390*I
 sage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I, prec=100)
 -0.11190785841256900204178259859 - 0.53646786751038954277574814099*I
+```
 
 Some partial support for direct conversion from Sage -> mpmath
 is also implemented (this is not completely working yet).
+
+Also providing a preliminary spkg (with current mpmath trunk) in this issue.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6196
 

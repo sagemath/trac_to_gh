@@ -4,6 +4,7 @@ archive/issues_005119.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nImplement a sage.structure.UniqueRepresentation class. \nSubclasses inherit from it a unique representation behavior for its elements.\n\nPatch under construction, starting from sage.categories.category.uniq\n\nIssue created by migration from https://trac.sagemath.org/ticket/5119\n\n",
+    "closed_at": "2009-01-28T19:48:28Z",
     "created_at": "2009-01-28T19:46:56Z",
     "labels": [
         "component: misc",

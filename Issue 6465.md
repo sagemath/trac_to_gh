@@ -3,7 +3,8 @@
 archive/issues_006465.json:
 ```json
 {
-    "body": "In new symbolics, derivative operator does not know \nhow to act on symbolic integration.\n\n```\nsage: f(x) = function('f',x)\nsage: g = integrate(f(x),x)\nsage: g.diff(x)\nD[0](integrate)(f(x), x)*D[0](f)(x) + D[1](integrate)(f(x), x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6465\n\n",
+    "body": "In new symbolics, derivative operator does not know \nhow to act on symbolic integration.\n\n```\nsage: f(x) = function('f',x)\nsage: g = integrate(f(x),x)\nsage: g.diff(x)\nD[0](integrate)(f(x), x)*D[0](f)(x) + D[1](integrate)(f(x), x)\n```\n\n**Patches**:\n\n* Both patches should be applied in order (spkg is already included in sage-4.1.1).\n\nApart from solving this bug it introduces couple\nof new features (by moving it into new symbolics' SFunction sub-class)\n\n (1) Stricter syntax:\n\n  http://groups.google.com/group/sage-devel/browse_thread/thread/3e98841311653d7a\n\n (2) Numerical approximation using .n() method\n\n (3) Updated \"integrate?\" docstring\n \n (4) Graceful handling of situations where integration is specified w.r.t. an expression\n\n  http://groups.google.com/group/sage-devel/browse_thread/thread/cd9f91338635ada9\n\n\n\n (4) Behind the scene it provides a framework to hook up easily new integration algorithm written within sage.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6465\n\n",
+    "closed_at": "2010-02-18T21:51:14Z",
     "created_at": "2009-07-05T02:31:55Z",
     "labels": [
         "component: symbolics",
@@ -26,6 +27,31 @@ sage: g = integrate(f(x),x)
 sage: g.diff(x)
 D[0](integrate)(f(x), x)*D[0](f)(x) + D[1](integrate)(f(x), x)
 ```
+
+**Patches**:
+
+* Both patches should be applied in order (spkg is already included in sage-4.1.1).
+
+Apart from solving this bug it introduces couple
+of new features (by moving it into new symbolics' SFunction sub-class)
+
+ (1) Stricter syntax:
+
+  http://groups.google.com/group/sage-devel/browse_thread/thread/3e98841311653d7a
+
+ (2) Numerical approximation using .n() method
+
+ (3) Updated "integrate?" docstring
+ 
+ (4) Graceful handling of situations where integration is specified w.r.t. an expression
+
+  http://groups.google.com/group/sage-devel/browse_thread/thread/cd9f91338635ada9
+
+
+
+ (4) Behind the scene it provides a framework to hook up easily new integration algorithm written within sage.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6465
 

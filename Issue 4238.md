@@ -1,16 +1,17 @@
-# Issue 4238: option to create local .so file for .spyx modules
+# Issue 4238: [with patch, positive review] option to create local .so file for .spyx modules
 
 archive/issues_004238.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLoading an .spyx file requires a recompile for each new startup of Sage. There should be a way to save the .so file locally and load it like a module. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4238\n\n",
+    "closed_at": "2008-10-07T23:25:25Z",
     "created_at": "2008-10-02T19:33:58Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "option to create local .so file for .spyx modules",
+    "title": "[with patch, positive review] option to create local .so file for .spyx modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4238",
     "user": "https://github.com/robertwb"

@@ -1,16 +1,17 @@
-# Issue 4507: compile warning for planarity code
+# Issue 4507: [with patch, positive review] compile warning for planarity code
 
 archive/issues_004507.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  ekirkman bober\n\nI get the following compile warning:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/jason/sage/local//include -I/home/jason/sage/local//include/csage -I/home/jason/sage/devel//sage/sage/ext -I/home/jason/sage/local/include/python2.5 -c sage/graphs/planarity/graphEmbed.c -o build/temp.linux-i686-2.5/sage/graphs/planarity/graphEmbed.o\nsage/graphs/planarity/graphEmbed.c: In function \u2018_CreateSortedSeparatedDFSChildLists\u2019:\nsage/graphs/planarity/graphEmbed.c:84: warning: implicit declaration of function \u2018memset\u2019\nsage/graphs/planarity/graphEmbed.c:84: warning: incompatible implicit declaration of built-in function \u2018memset\u2019\n\n```\n\nI fixed this by adding #include <string.h> (which declares the memset function) to listcoll.h (where the LCReset macro is defined).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4507\n\n",
+    "closed_at": "2008-11-13T04:50:00Z",
     "created_at": "2008-11-13T01:24:07Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "compile warning for planarity code",
+    "title": "[with patch, positive review] compile warning for planarity code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4507",
     "user": "https://github.com/jasongrout"

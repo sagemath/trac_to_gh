@@ -3,7 +3,8 @@
 archive/issues_006913.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  mvngu\n\nThe classes in numerical.MIP are all missing __eq__ methods.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6913\n\n",
+    "body": "Assignee: jkantor\n\nCC:  mvngu\n\nThe classes in numerical.MIP are all missing __eq__ methods. This is a follow-up to ticket #6869.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6913\n\n",
+    "closed_at": "2009-12-02T10:18:06Z",
     "created_at": "2009-09-10T11:00:13Z",
     "labels": [
         "component: numerical",
@@ -20,7 +21,7 @@ Assignee: jkantor
 
 CC:  mvngu
 
-The classes in numerical.MIP are all missing __eq__ methods.
+The classes in numerical.MIP are all missing __eq__ methods. This is a follow-up to ticket #6869.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6913
 

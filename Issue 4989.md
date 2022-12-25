@@ -4,6 +4,7 @@ archive/issues_004989.json:
 ```json
 {
     "body": "Assignee: tba\n\nDelete the section on chroot's from the install guide.  It is totally out of date, and these days with virtualization being so easy, nobody should use a chroot for \"security\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4989\n\n",
+    "closed_at": "2009-02-24T20:09:36Z",
     "created_at": "2009-01-17T04:37:55Z",
     "labels": [
         "component: documentation",

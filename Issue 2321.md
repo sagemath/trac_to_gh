@@ -4,6 +4,7 @@ archive/issues_002321.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\ndsage switched from using dsage_server.py to using a .tac located in .sage/dsage. When we roll out the next version of sage (2.10.3) we need to remove SAGE_ROOT/local/bin/dsage_server.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2321\n\n",
+    "closed_at": "2008-04-14T00:04:25Z",
     "created_at": "2008-02-26T17:47:20Z",
     "labels": [
         "component: dsage",

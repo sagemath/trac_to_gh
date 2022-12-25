@@ -4,6 +4,7 @@ archive/issues_009590.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @JohnCremona @loefflerd @nexttime @novoselt @vbraun\n\n[Seen by John Cremona and Leif Leonhardy on 32-bit SUSE and 32-bit Ubuntu, respectively](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/6b8cef45c9f5e56c#6b8cef45c9f5e56c):\n\n```\nsage -t -long \"devel/sage/sage/geometry/toric_lattice_element.pyx\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/toric_lattice_element.pyx\",\nline 235:\n    sage: n.set_immutable()\nExpected:\n    2528502973977326415\nGot nothing\n\nsage -t -long \"devel/sage/sage/geometry/cone.py\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/cone.py\", line 559:\n    sage: c = Cone([(1,0), (0,1)])\nExpected:\n    4372618627376133801\nGot nothing\n```\nThese may stem from one or more of #8986, #8987, and #9062.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9590\n\n",
+    "closed_at": "2010-07-26T07:40:42Z",
     "created_at": "2010-07-24T02:56:51Z",
     "labels": [
         "component: geometry",

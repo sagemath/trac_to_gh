@@ -1,16 +1,17 @@
-# Issue 2567: remove limitation on computing digits of pi using mpfr
+# Issue 2567: import MPFR_PREC_MAX from mpfr.h instead of hard coding it to the 32 bit limit
 
 archive/issues_002567.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @kiwifb\n\n```\n> >  CODE:\n>\n> >  s = pi.str(3000000*log(10,2))\n> >  o = open('/Users/ericahls/Desktop/file.txt','w')\n> >  o.write(str(s))\n> >  o.close()\n>\n> >  --- Trying to get out to the farthest decimal point of PI I can.\n>\n> >  Error message:\n>\n> >  Traceback (most recent call last):    o.write(str(s))\n> >   File \"/Applications/sage/local/lib/python2.5/site-packages/sage/\n> >  functions/functions.py\", line 140, in str\n> >     raise ValueError, \"Number of bits must be at most 2^23.\"\n> >  ValueError: Number of bits must be at most 2^23.\n>\n> >  ----If i Put 2000000 instead 0f 3000000 the equation works.  much over\n> >  2 million the equation breaks dwon.\n>\n> I think that 2^23 is a bound in mpfr, and Sage uses mpfr to\n> compute digits of pi.  I don't know if one can compute more than\n> about 2^23 digits using mpfr.\n>\n> William\n\n\nYes we can. The issue was that MPFR used the stack instead of the heap\nfor certain operations [even when told not to use alloca] and would\nsmash it therefore with large number of digits. That has been fixed in\nMPFR 2.3.1 (which we include) and all we need to do is to raise or\nremove the limit in our code and do some testing. Care to open a\nticket?\n\n -- Mabshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2567\n\n",
+    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @kiwifb\n\nThe discussion below is besides the point. The main issue is that we define MPFR_PREC_MAX in Sage's sources instead of pulling it in from mpfr.h. We do hard code the 32 bit value, so on 64 bit boxen we limit the user to much lower precision than is actually technically feasible as pointed out below.\n\nCheers,\n\nMichael\n\n```\n> >  CODE:\n>\n> >  s = pi.str(3000000*log(10,2))\n> >  o = open('/Users/ericahls/Desktop/file.txt','w')\n> >  o.write(str(s))\n> >  o.close()\n>\n> >  --- Trying to get out to the farthest decimal point of PI I can.\n>\n> >  Error message:\n>\n> >  Traceback (most recent call last):    o.write(str(s))\n> >   File \"/Applications/sage/local/lib/python2.5/site-packages/sage/\n> >  functions/functions.py\", line 140, in str\n> >     raise ValueError, \"Number of bits must be at most 2^23.\"\n> >  ValueError: Number of bits must be at most 2^23.\n>\n> >  ----If i Put 2000000 instead 0f 3000000 the equation works.  much over\n> >  2 million the equation breaks dwon.\n>\n> I think that 2^23 is a bound in mpfr, and Sage uses mpfr to\n> compute digits of pi.  I don't know if one can compute more than\n> about 2^23 digits using mpfr.\n>\n> William\n\n\nYes we can. The issue was that MPFR used the stack instead of the heap\nfor certain operations [even when told not to use alloca] and would\nsmash it therefore with large number of digits. That has been fixed in\nMPFR 2.3.1 (which we include) and all we need to do is to raise or\nremove the limit in our code and do some testing. Care to open a\nticket?\n\n -- Mabshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2567\n\n",
+    "closed_at": "2020-12-28T23:34:29Z",
     "created_at": "2008-03-17T07:03:24Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
-    "title": "remove limitation on computing digits of pi using mpfr",
+    "title": "import MPFR_PREC_MAX from mpfr.h instead of hard coding it to the 32 bit limit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2567",
     "user": "https://github.com/williamstein"
@@ -19,6 +20,12 @@ archive/issues_002567.json:
 Assignee: somebody
 
 CC:  @zimmermann6 @kiwifb
+
+The discussion below is besides the point. The main issue is that we define MPFR_PREC_MAX in Sage's sources instead of pulling it in from mpfr.h. We do hard code the 32 bit value, so on 64 bit boxen we limit the user to much lower precision than is actually technically feasible as pointed out below.
+
+Cheers,
+
+Michael
 
 ```
 > >  CODE:

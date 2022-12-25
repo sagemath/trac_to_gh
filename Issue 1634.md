@@ -1,16 +1,17 @@
-# Issue 1634: update zodb to 3.7.2
+# Issue 1634: update zodb to 3.8.1
 
 archive/issues_001634.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1634\n\n",
+    "body": "Assignee: mabshoff\n\nSee instead #10352, or hopefully #10353 (remove zodb altogether).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1634\n\n",
+    "closed_at": "2012-01-05T13:32:40Z",
     "created_at": "2007-12-29T04:45:49Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update zodb to 3.7.2",
+    "title": "update zodb to 3.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1634",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -18,7 +19,7 @@ archive/issues_001634.json:
 ```
 Assignee: mabshoff
 
-
+See instead #10352, or hopefully #10353 (remove zodb altogether).
 
 Issue created by migration from https://trac.sagemath.org/ticket/1634
 

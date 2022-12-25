@@ -1,22 +1,23 @@
-# Issue 61: hanke -- disturbing matrix constructor issue involving rows versus columns
+# Issue 61: [with patch] hanke -- disturbing matrix constructor issue involving rows versus columns
 
 archive/issues_000061.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nHi William,\n \nI just found a disturbing trait about Matrix constructions, and was\nwondering if you could include a rows/columns flag to address it.\n \n\nWhen a matrix is constructed from tuples, it assumes that you want to\nuse these numbers as *rows*, regardless of whether the tuples are\nappropriately sized.  Since there is no way of deciding which is meant\nfor square matrices, it seems reasonable to add an extra (mandatory)\nflag to the constructor for a list of tuples to ask which is meant.\n \n\n\nI hope your semster is going well.   See you,\n \n\t\t\t\t\t\t-Jon (Hanke)\n\t\t\t\t\t\t \n```\n--------------------------------------------------------------------\n \nsage: M2 = MatrixSpace(ZZ,2,4)(range(8)); M2\n[0 1 2 3]\n[4 5 6 7]\n \nsage: M2.columns()\n [(0, 4), (1, 5), (2, 6), (3, 7)]\n \nsage: MatrixSpace(ZZ,2,4)(M2.columns())\n[0 4 1 5]\n[2 6 3 7]\n \nsage: M2 == MatrixSpace(ZZ,2,4)(M2.columns())\n False\n \nsage: M2 == MatrixSpace(ZZ,2,4)(M2.rows())\n True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/61\n\n",
+    "body": "Assignee: @mwhansen\n\nHi William,\n \nI just found a disturbing trait about Matrix constructions, and was\nwondering if you could include a rows/columns flag to address it.\n \n\nWhen a matrix is constructed from tuples, it assumes that you want to\nuse these numbers as *rows*, regardless of whether the tuples are\nappropriately sized.  Since there is no way of deciding which is meant\nfor square matrices, it seems reasonable to add an extra (mandatory)\nflag to the constructor for a list of tuples to ask which is meant.\n \n\n\nI hope your semster is going well.   See you,\n \n\t\t\t\t\t\t-Jon (Hanke)\n\t\t\t\t\t\t \n```\n--------------------------------------------------------------------\n \nsage: M2 = MatrixSpace(ZZ,2,4)(range(8)); M2\n[0 1 2 3]\n[4 5 6 7]\n \nsage: M2.columns()\n [(0, 4), (1, 5), (2, 6), (3, 7)]\n \nsage: MatrixSpace(ZZ,2,4)(M2.columns())\n[0 4 1 5]\n[2 6 3 7]\n \nsage: M2 == MatrixSpace(ZZ,2,4)(M2.columns())\n False\n \nsage: M2 == MatrixSpace(ZZ,2,4)(M2.rows())\n True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/61\n\n",
+    "closed_at": "2007-11-03T23:46:08Z",
     "created_at": "2006-09-14T22:26:29Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "hanke -- disturbing matrix constructor issue involving rows versus columns",
+    "title": "[with patch] hanke -- disturbing matrix constructor issue involving rows versus columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/61",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 Hi William,
  

@@ -1,9 +1,10 @@
-# Issue 1960: bug when reducing Gröbner basis
+# Issue 1960: [with patch, positive review] bug when reducing Gröbner basis
 
 archive/issues_001960.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis bug was reported by James Carlson:\n\n```\nsage: R.<u,v> = PolynomialRing(QQ)\nsage: g = u^4 + v^4 + u^3 + v^3\nsage: I = ideal(g) + ideal(g.jacob())\nsage: I.dimension()\n0\nsage: PD = I.primary_decomposition()\nsage: len(PD)\n1\nsage: P = PD[0]\nsage: I == P\nTrue\nsage: I.vector_space_dimension()\n9 \nsage: P.vector_space_dimension()\n4 # <<<<<<<<<<<<< doesn't match\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1960\n\n",
+    "closed_at": "2008-02-01T00:39:21Z",
     "created_at": "2008-01-28T14:48:54Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_001960.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "bug when reducing Gr\u00f6bner basis",
+    "title": "[with patch, positive review] bug when reducing Gr\u00f6bner basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1960",
     "user": "https://github.com/malb"

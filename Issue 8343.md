@@ -4,9 +4,11 @@ archive/issues_008343.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout @fchapoton\n\nWhile working on #7630, I discovered that even if a user has confirmed an email address, if the user changes it on the Account Settings page, the new address is marked as \"confirmed\" even though no re-confirmation email is sent out.\n\nI don't know if we want to re-send confirmation emails every time a user changes their email address, but at least we should mark the address as unconfirmed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8343\n\n",
+    "closed_at": "2020-09-08T18:00:19Z",
     "created_at": "2010-02-24T03:38:29Z",
     "labels": [
         "component: notebook",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -1,15 +1,16 @@
-# Issue 5454: [with patch, needs review] Add coercion documentation to the reference manual
+# Issue 5454: [with patch, positive review] Add coercion documentation to the reference manual
 
 archive/issues_005454.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5454\n\n",
+    "closed_at": "2009-06-14T21:30:16Z",
     "created_at": "2009-03-07T19:18:38Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Add coercion documentation to the reference manual",
+    "title": "[with patch, positive review] Add coercion documentation to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5454",
     "user": "https://github.com/mwhansen"

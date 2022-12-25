@@ -1,16 +1,18 @@
-# Issue 9760: Adjust spkg/standard/deps to build Python before zn_poly
+# Issue 9760: Adjust spkg/standard/deps to build Python before zn_poly, and make two other dependencies explicit
 
 archive/issues_009760.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @nexttime @peterjeremy\n\nZn_poly's `spkg-install` is not a Python script (cf. #9507), but its build system calls a Python script `zn_poly-*/src/makemakefile.py`.  Updating `spkg/standard/deps` to ensure that Python is built first should prevent build errors in which `spkg/logs/zn_poly-*.log` ends with\n\n```\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\npython: error while loading shared libraries: libpython2.6.so.1.0: cannot open shared object file: No such file or directory\nmake[2]: Entering directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.alpha1-ldd/spkg/build/zn_poly-0.9.p5/src'\nmake[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\nmake[2]: Nothing to be done for `tune'.\nmake[2]: Leaving directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.alpha1-ldd/spkg/build/zn_poly-0.9.p5/src'\n./spkg-install: line 59: tune/tune: No such file or directory\nError running tune program.\n\nreal    0m0.014s\nuser    0m0.010s\nsys     0m0.000s\nsage: An error occurred while installing zn_poly-0.9.p5\n[...]\n```\n\nRelated: [comment:ticket:9368:14 Comment 14ff] at #9368.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9761\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @nexttime @peterjeremy\n\nZn_poly's `spkg-install` is not a Python script (cf. #9507), but its build system calls a Python script `zn_poly-*/src/makemakefile.py`.  Updating `spkg/standard/deps` to ensure that Python is built first should prevent build errors in which `spkg/logs/zn_poly-*.log` ends with\n\n```\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\npython: error while loading shared libraries: libpython2.6.so.1.0: cannot open shared object file: No such file or directory\nmake[2]: Entering directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.alpha1-ldd/spkg/build/zn_poly-0.9.p5/src'\nmake[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\nmake[2]: Nothing to be done for `tune'.\nmake[2]: Leaving directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.alpha1-ldd/spkg/build/zn_poly-0.9.p5/src'\n./spkg-install: line 59: tune/tune: No such file or directory\nError running tune program.\n\nreal    0m0.014s\nuser    0m0.010s\nsys     0m0.000s\nsage: An error occurred while installing zn_poly-0.9.p5\n[...]\n```\n\nRelated: [comment:ticket:9368:14 Comment 14ff] at #9368.\n\n---\n\nThe new `deps` file also adds two dependencies that were implicit before, and therefore also solves #9464 and #9637.\n\n(The former adds Fortran to R's, the latter adds `$BASE` to SageTeX's dependencies.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9761\n\n",
+    "closed_at": "2010-08-24T02:48:57Z",
     "created_at": "2010-08-18T07:54:01Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Adjust spkg/standard/deps to build Python before zn_poly",
+    "title": "Adjust spkg/standard/deps to build Python before zn_poly, and make two other dependencies explicit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9760",
     "user": "https://github.com/qed777"
@@ -41,6 +43,12 @@ sage: An error occurred while installing zn_poly-0.9.p5
 ```
 
 Related: [comment:ticket:9368:14 Comment 14ff] at #9368.
+
+---
+
+The new `deps` file also adds two dependencies that were implicit before, and therefore also solves #9464 and #9637.
+
+(The former adds Fortran to R's, the latter adds `$BASE` to SageTeX's dependencies.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9761
 

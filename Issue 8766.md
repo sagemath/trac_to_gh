@@ -3,7 +3,8 @@
 archive/issues_008766.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @tscrim\n\nI looked in integer.pyx at the two methods _iadd_ and _imul_, which both mutate self, e.g., allow for:\n\n```\nsage: a = 2010\nsage: a._imul_(19)\nsage: a\n38190\n```\nI expected to find a bug exciting docstring about how these methods are unsafe, etc.   Instead, there is *NOTHING* -- not even a doctest or docstring at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8766\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @tscrim\n\nI looked in integer.pyx at the two methods _iadd_ and _imul_, which both mutate self, e.g., allow for:\n\n```\nsage: a = 2010\nsage: a._imul_(19)\nsage: a\n38190\n```\nI expected to find a bug exciting docstring about how these methods are unsafe, etc.   Instead, there is *NOTHING* -- not even a doctest or docstring at all.\n\nI also wish there were versions of these:\n\n```\nsage: a.unsafe_add_inplace\nsage: a.unsafe_mul_inplace\n```\nthat could be used in code, and would make their unsafe nature clear to the reader without having to read any docs. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8766\n\n",
+    "closed_at": "2021-09-10T17:33:19Z",
     "created_at": "2010-04-26T13:47:27Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,6 +30,14 @@ sage: a
 38190
 ```
 I expected to find a bug exciting docstring about how these methods are unsafe, etc.   Instead, there is *NOTHING* -- not even a doctest or docstring at all.
+
+I also wish there were versions of these:
+
+```
+sage: a.unsafe_add_inplace
+sage: a.unsafe_mul_inplace
+```
+that could be used in code, and would make their unsafe nature clear to the reader without having to read any docs. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8766
 

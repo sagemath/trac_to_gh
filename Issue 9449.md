@@ -3,11 +3,11 @@
 archive/issues_009449.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  simonking @jhpalmieri @qed777 @nexttime\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n```\n$ make ptestlong\n```\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
+    "body": "Assignee: mvngu\n\nCC:  simonking @jhpalmieri @qed777 @nexttime\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n```\n$ make ptestlong\n```\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
+    "closed_at": "2013-02-22T21:37:04Z",
     "created_at": "2010-07-07T19:57:20Z",
     "labels": [
         "component: doctest coverage",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -62,8 +62,9 @@ This is pretty damn serious, as it means we can not rely on the doctest results.
 * Solaris 10 update 7 (05/09)
 * t2.math.washtington.edu
 * gcc 4.4.1 configured to use both the Sun linker and assembler.
-* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f
 * 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9449
 

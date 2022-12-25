@@ -1,22 +1,23 @@
-# Issue 508: problem with "sage -c"
+# Issue 508: [with patch; positive review] problem with "sage -c"
 
 archive/issues_000508.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate any script, say test.sage.  The following should work but doesn't:\n\n```\n  # sage -c \"load test.sage\"\nTraceback (most recent call last):\n  File \"/home/was/s/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/home/was/.sage//temp/sage/25215//tmp_0\", line 1\n    load test.sage\n            ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/508\n\n",
+    "body": "Assignee: abergeron\n\nCreate any script, say test.sage.  The following should work but doesn't:\n\n```\n  # sage -c \"load test.sage\"\nTraceback (most recent call last):\n  File \"/home/was/s/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/home/was/.sage//temp/sage/25215//tmp_0\", line 1\n    load test.sage\n            ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/508\n\n",
+    "closed_at": "2009-01-19T06:14:38Z",
     "created_at": "2007-08-29T08:19:22Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "problem with \"sage -c\"",
+    "title": "[with patch; positive review] problem with \"sage -c\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/508",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: abergeron
 
 Create any script, say test.sage.  The following should work but doesn't:
 

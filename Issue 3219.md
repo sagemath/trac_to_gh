@@ -1,16 +1,17 @@
-# Issue 3219: spkg -- upgrad to gmp-4.2.2 while we wait for MPIR
+# Issue 3219: [with patch; positive review] spkg -- upgrad to gmp-4.2.2 while we wait for MPIR
 
 archive/issues_003219.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe upgraded spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/gmp-4.2.2.spkg\n\nThis is needed for both the OS X 64-bit port and Cygwin ports. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3219\n\n",
+    "closed_at": "2008-05-23T02:01:19Z",
     "created_at": "2008-05-16T14:11:45Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "spkg -- upgrad to gmp-4.2.2 while we wait for MPIR",
+    "title": "[with patch; positive review] spkg -- upgrad to gmp-4.2.2 while we wait for MPIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3219",
     "user": "https://github.com/williamstein"

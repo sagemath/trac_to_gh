@@ -1,16 +1,17 @@
-# Issue 2410: parametric_plot and constants
+# Issue 2410: [with patch, positive review] parametric_plot and constants
 
 archive/issues_002410.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is a companion to #2409\n\n```\nsage: parametric_plot((t^2,t),-12,12)\n```\nworks as expected, but \n\n```\nsage: parametric_plot((1,t),-12,12)\n...\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\ndoes not.\n\nMore generally, I would like to see the following syntax supported \n\n```\nsage: parametric_plot((1,t),(t,-12,12))\n```\nwhich is much cleaner mathematically (no hidden reliance on variable name 't') and is also very analogous to \n\n```\nsage: plot(t,(t,-12,12))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2410\n\n",
+    "closed_at": "2008-08-26T03:44:48Z",
     "created_at": "2008-03-06T20:48:30Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "parametric_plot and constants",
+    "title": "[with patch, positive review] parametric_plot and constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2410",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

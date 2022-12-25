@@ -1,16 +1,16 @@
-# Issue 8348: find_root only works in fixed (double) precision
+# Issue 8348: Document that find_root only works in fixed (double) precision
 
 archive/issues_008348.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nHow can one approximate the root of an equation in arbitrary\nprecision? For example I want the root of log(x+2) = x to\n50 digits of precision:\n\n```\nsage: (log(x+2)-x).find_root(1,2)\n1.1461932206205643\nsage: (log(x+2)-x).find_root(1,2,prec=150)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/try/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.find_root (sage/symbolic/expression.cpp:24383)()\n\nTypeError: find_root() got an unexpected keyword argument 'prec'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8348\n\n",
+    "closed_at": "2014-02-01T15:17:03Z",
     "created_at": "2010-02-24T16:23:17Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "find_root only works in fixed (double) precision",
+    "title": "Document that find_root only works in fixed (double) precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8348",
     "user": "https://github.com/zimmermann6"

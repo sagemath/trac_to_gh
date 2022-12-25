@@ -1,16 +1,17 @@
-# Issue 5763: [with patch, needs review] pynac -- add _polynomial_ conversion constructor
+# Issue 5763: [with patch, needs work] pynac -- add _polynomial_ conversion constructor
 
 archive/issues_005763.json:
 ```json
 {
     "body": "CC:  @burcin @mwhansen @williamstein\n\nKeywords: pynac symbolics _polynomial_ constructor\n\nThe attached patch adds conversion to polynomial rings.  Two doctests fail at this time; they rely on being able to convert to CDF and ComplexField(100).  I didn't want them to get forgotten so I left them in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5763\n\n",
+    "closed_at": "2013-07-22T15:07:11Z",
     "created_at": "2009-04-11T21:40:01Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] pynac -- add _polynomial_ conversion constructor",
+    "title": "[with patch, needs work] pynac -- add _polynomial_ conversion constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5763",
     "user": "https://github.com/ncalexan"

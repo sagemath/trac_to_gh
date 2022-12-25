@@ -4,6 +4,7 @@ archive/issues_008925.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nKeywords: Category call\n\nFrom `sets_cat.py`:\n\n```\nFIXME: the above behavior dates back from the first category\nwriteup. It is not consistent with :meth:`Category.__call__`.\nShould we change it to just return ``ZZ`` instead?\n```\nAlso `EnumeratedSets().__call__(...)` is missing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8925\n\n",
+    "closed_at": "2011-01-12T06:32:11Z",
     "created_at": "2010-05-07T20:00:36Z",
     "labels": [
         "component: categories"

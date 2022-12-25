@@ -1,28 +1,31 @@
-# Issue 4699: should be even more easier to change how many threads used for "make ptest" and friends
+# Issue 4699: [with patch, positive review] Rewrite -tp to use pyprocessing
 
 archive/issues_004699.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nFrom http://trac.sagemath.org/sage_trac/ticket/4684#comment:5 :\n\n> This is already closed, but I want to comment that I would vastly prefer if \"make ptest\" were to by default just parse the MAKE environment variable, and if it is \"make -j6\", say, then use 6 threads. This is what \"sage -t\" does now. This way, I just set MAKE in my .bash_profile, and everything works right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4699\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @garyfurnish\n\nCurrently -tp uses Pbuild infrastructure, but it would be vastly better to rewrite it using pyprocessing.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4699\n\n",
+    "closed_at": "2008-12-11T15:07:24Z",
     "created_at": "2008-12-04T23:53:04Z",
     "labels": [
         "component: build",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "should be even more easier to change how many threads used for \"make ptest\" and friends",
+    "title": "[with patch, positive review] Rewrite -tp to use pyprocessing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4699",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 CC:  @garyfurnish
 
-From http://trac.sagemath.org/sage_trac/ticket/4684#comment:5 :
+Currently -tp uses Pbuild infrastructure, but it would be vastly better to rewrite it using pyprocessing.
 
-> This is already closed, but I want to comment that I would vastly prefer if "make ptest" were to by default just parse the MAKE environment variable, and if it is "make -j6", say, then use 6 threads. This is what "sage -t" does now. This way, I just set MAKE in my .bash_profile, and everything works right.
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/4699
 

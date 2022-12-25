@@ -3,7 +3,8 @@
 archive/issues_000354.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: introspection\n\nOffending code:\n\n```\nF = ZZ.quo(2*ZZ)\nR.<x> = F['x']\np = x^2-1\np.root_field?\n```\n\nTraceback:\n\n```\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/home/boothby/sage_notebook/worksheets/hw4/code/4.py\", line 4, in &lt;module&gt;\n    print _support_.docstring(\"p.root_field\", globals())\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 131, in docstring\n    s += 'Definition:  %s\\n'%sageinspect.sage_getdef(obj, obj_name)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 264, in sage_getdef\n    spec = sage_getargspec(obj)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 246, in sage_getargspec\n    return _sage_getargspec_sagex(source)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 200, in _sage_getargspec_sagex\n    raise ValueError, \"Could not parse sagex argspec\"\nValueError: Could not parse sagex argspec\n```\n\nThis is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/354\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: introspection\n\nOffending code:\n\n```\nF = ZZ.quo(2*ZZ)\nR.<x> = F['x']\np = x^2-1\np.root_field?\n```\n\nTraceback:\n\n```\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/home/boothby/sage_notebook/worksheets/hw4/code/4.py\", line 4, in &lt;module&gt;\n    print _support_.docstring(\"p.root_field\", globals())\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 131, in docstring\n    s += 'Definition:  %s\\n'%sageinspect.sage_getdef(obj, obj_name)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 264, in sage_getdef\n    spec = sage_getargspec(obj)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 246, in sage_getargspec\n    return _sage_getargspec_sagex(source)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 200, in _sage_getargspec_sagex\n    raise ValueError, \"Could not parse sagex argspec\"\nValueError: Could not parse sagex argspec\n```\n\nThis is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/354\n\n",
+    "closed_at": "2007-09-05T04:39:20Z",
     "created_at": "2007-04-22T18:23:52Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_000354.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: boothby
+Assignee: @ncalexan
 
 Keywords: introspection
 

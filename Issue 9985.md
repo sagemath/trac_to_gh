@@ -4,6 +4,7 @@ archive/issues_009985.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  cwitty@newtonlabs.com @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1\n\nMPFI fails to build. The important part of the error message is:\n\n```\nchecking for gmp.h... yes\nchecking for valid GMP... yes\nchecking for mpfr.h... yes\nchecking MPFR library... configure: error: /home/users/drkirkby/sage-4.6.alpha1/local/lib/libmpfr.so or libmpfr.dylib not found\nError configuring mpfi\n\nreal    4m28.501s\nuser    0m52.337s\nsys     0m27.257s\nsage: An error occurred while installing mpfi-1.3.4-cvs20071125.p8\n```\n\nThe extension for shared libraries on AIX is .a - not .so or .dylib.\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9986\n\n",
+    "closed_at": "2020-06-25T13:33:47Z",
     "created_at": "2010-09-23T21:00:39Z",
     "labels": [
         "component: porting: aix or hp-ux",

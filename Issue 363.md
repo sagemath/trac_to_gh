@@ -3,7 +3,8 @@
 archive/issues_000363.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n\"Brandon.Barker\nshow details\n\t 8:18 am (20 minutes ago) \n\nIn sage 2.5.0.2 I'm having trouble building maxima's command list\n(tried this on a linux powerpc machine where I compiled SAGE from the\nsource, as well as an x64 machine with precompiled binaries):\n\nsage: maxima.diff\nBuilding Maxima command completion list (this takes\na few seconds only the first time you do it).\nTo force rebuild later, delete /home/brandon/.sage//\nmaxima_commandlist_cache.sobj.\n\nThe file listed is never created, and no matter how long I wait, the\nmessage above will still appear when I try to do tab completion.\nHowever, I can still execute maxima.diff ok, but not some other\ncommands (like maxima.index):\n\nsage: maxima.diff(x^2,x)\n2*x\nsage: maxima.index(x^2)\nindex(x^2)\n\nOf course, this is probably because there is no index call function in\ndevel/sage-main/sage/interfaces/maxima.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/363\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\"Brandon.Barker\nshow details\n 8:18 am (20 minutes ago) \n\nIn sage 2.5.0.2 I'm having trouble building maxima's command list\n(tried this on a linux powerpc machine where I compiled SAGE from the\nsource, as well as an x64 machine with precompiled binaries):\n\nsage: maxima.diff\nBuilding Maxima command completion list (this takes\na few seconds only the first time you do it).\nTo force rebuild later, delete /home/brandon/.sage//\nmaxima_commandlist_cache.sobj.\n\nThe file listed is never created, and no matter how long I wait, the\nmessage above will still appear when I try to do tab completion.\nHowever, I can still execute maxima.diff ok, but not some other\ncommands (like maxima.index):\n\nsage: maxima.diff(x^2,x)\n2*x\nsage: maxima.index(x^2)\nindex(x^2)\n\nOf course, this is probably because there is no index call function in\ndevel/sage-main/sage/interfaces/maxima.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/363\n\n",
+    "closed_at": "2007-05-18T15:53:41Z",
     "created_at": "2007-05-13T15:42:18Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +21,7 @@ Assignee: @williamstein
 ```
 "Brandon.Barker
 show details
-	 8:18 am (20 minutes ago) 
+ 8:18 am (20 minutes ago) 
 
 In sage 2.5.0.2 I'm having trouble building maxima's command list
 (tried this on a linux powerpc machine where I compiled SAGE from the

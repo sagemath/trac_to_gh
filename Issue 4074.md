@@ -1,22 +1,23 @@
-# Issue 4074: [with spkg, needs review] the notebook is totally broken in secure mode with the new twisted spkg
+# Issue 4074: [with spkg, positive review] the notebook is totally broken in secure mode with the new twisted spkg
 
 archive/issues_004074.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is because in the previous spkg the patches were applied directly to src/ rather than going through the standard patches/ mechanism.\n\nThe new spkg can be found here: http://sage.math.washington.edu/home/mhansen/twisted-8.1.0.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4074\n\n",
+    "body": "Assignee: @mwhansen\n\nThis is because in the previous spkg the patches were applied directly to src/ rather than going through the standard patches/ mechanism.\n\nThe new spkg can be found here: http://sage.math.washington.edu/home/mhansen/twisted-8.1.0.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4074\n\n",
+    "closed_at": "2008-09-07T22:59:23Z",
     "created_at": "2008-09-07T20:05:37Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] the notebook is totally broken in secure mode with the new twisted spkg",
+    "title": "[with spkg, positive review] the notebook is totally broken in secure mode with the new twisted spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4074",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 This is because in the previous spkg the patches were applied directly to src/ rather than going through the standard patches/ mechanism.
 

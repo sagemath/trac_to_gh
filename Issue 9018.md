@@ -4,10 +4,10 @@ archive/issues_009018.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nBy default, things could print as a+b\\sqrt{D}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9018\n\n",
+    "closed_at": "2010-06-06T07:25:41Z",
     "created_at": "2010-05-22T16:31:28Z",
     "labels": [
-        "component: number fields",
-        "bug"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Better latex for quadratic fields",

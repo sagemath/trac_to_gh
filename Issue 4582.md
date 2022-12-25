@@ -1,15 +1,16 @@
-# Issue 4582: use Singular's capabilities for computing over fraction fields
+# Issue 4582: [with patch, positive review] use Singular's capabilities for computing over fraction fields
 
 archive/issues_004582.json:
 ```json
 {
     "body": "Assignee: @malb\n\nGuillaume Moroz wrote on [sage-devel]:\n\n\"\nit seems that the sage interface to singular is not aware that Singular handles multivariate polynomial rings with coefficients in a fraction field.\n\n```\nsage: from sage.rings.polynomial.polynomial_singular_interface import\ncan_convert_to_singular\nsage: r=Frac(QQ['a,b'])['x,y']\nsage: can_convert_to_singular(r)\nFalse\n```\n\nHowever, it is possible to define it in Singular: in this case, it would be\n\n```\nring R=(0,a,b),(x,y),dp;\n```\n\n(following the syntax 2. given at http://www.singular.uni-kl.de/Manual/latest/sing_30.htm#SEC40)\n\nIn particular, Gr\u00f6bner basis can be computed by Singular in these polynomial rings more efficiently than the toy algorithm currently used.\n\"\n\n\nI hope this can help!\n\nBest regards,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4582\n\n",
+    "closed_at": "2008-11-30T23:12:04Z",
     "created_at": "2008-11-22T12:01:16Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "use Singular's capabilities for computing over fraction fields",
+    "title": "[with patch, positive review] use Singular's capabilities for computing over fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4582",
     "user": "https://github.com/malb"

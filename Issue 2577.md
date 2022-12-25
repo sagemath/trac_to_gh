@@ -1,26 +1,27 @@
-# Issue 2577: improving diagonal_matrix and vector (iterable) input
+# Issue 2577: [with patches; needs work] improving diagonal_matrix and vector (iterable) input
 
 archive/issues_002577.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: diagonal_matrix vector iterable\n\nI don't like either of these behaviours -- why can't any old iterable thing go into diagonal_matrix?\n\n```\nsage: x = ZZ['x'].gen()\nsage: temp = NumberField(x^4 + x^3 + x^2 + x + 1, 'a')\nsage: diagonal_matrix(vector(1, 2))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.vector()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.prepare()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/structure/sequence.py in __init__(self, x, universe, check, immutable, cr, cr_str)\n    201                  immutable=False, cr=False, cr_str=None):\n    202         if not isinstance(x, (list, tuple)):\n--> 203             x = list(x)\n    204             #raise TypeError, \"x must be a list or tuple\"\n    205         self.__hash = None\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not iterable\nsage: diagonal_matrix(vector(temp(1), temp(2)))\n---------------------------------------------------------------------------\n<type 'exceptions.UnboundLocalError'>     Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/matrix/constructor.py in diagonal_matrix(arg0, arg1, arg2, sparse)\n    565             v = arg2\n    566             \n--> 567     if isinstance(v, list):\n    568         w = {}\n    569         for i in range(len(v)):\n\n<type 'exceptions.UnboundLocalError'>: local variable 'v' referenced before assignment\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2577\n\n",
+    "body": "Assignee: @dfdeshom\n\nCC:  @ncalexan\n\nKeywords: diagonal_matrix vector iterable, editor_mhansen\n\nI don't like either of these behaviours -- why can't any old iterable thing go into diagonal_matrix?\n\n```\nsage: x = ZZ['x'].gen()\nsage: temp = NumberField(x^4 + x^3 + x^2 + x + 1, 'a')\nsage: diagonal_matrix(vector(1, 2))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.vector()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.prepare()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/structure/sequence.py in __init__(self, x, universe, check, immutable, cr, cr_str)\n    201                  immutable=False, cr=False, cr_str=None):\n    202         if not isinstance(x, (list, tuple)):\n--> 203             x = list(x)\n    204             #raise TypeError, \"x must be a list or tuple\"\n    205         self.__hash = None\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not iterable\nsage: diagonal_matrix(vector(temp(1), temp(2)))\n---------------------------------------------------------------------------\n<type 'exceptions.UnboundLocalError'>     Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/matrix/constructor.py in diagonal_matrix(arg0, arg1, arg2, sparse)\n    565             v = arg2\n    566             \n--> 567     if isinstance(v, list):\n    568         w = {}\n    569         for i in range(len(v)):\n\n<type 'exceptions.UnboundLocalError'>: local variable 'v' referenced before assignment\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2577\n\n",
+    "closed_at": "2008-09-02T13:13:31Z",
     "created_at": "2008-03-17T23:16:47Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "improving diagonal_matrix and vector (iterable) input",
+    "title": "[with patches; needs work] improving diagonal_matrix and vector (iterable) input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2577",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @dfdeshom
 
 CC:  @ncalexan
 
-Keywords: diagonal_matrix vector iterable
+Keywords: diagonal_matrix vector iterable, editor_mhansen
 
 I don't like either of these behaviours -- why can't any old iterable thing go into diagonal_matrix?
 

@@ -3,10 +3,12 @@
 archive/issues_009433.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein @dandrake @kcrisman @nexttime\n\nPut the text files in $SAGE_ROOT, and also the text files in spkg, under revision control.  (See the discussion at the end of #9351.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9433\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein @dandrake @kcrisman @nexttime\n\nPut the text files in `$SAGE_ROOT`, and also the text files in spkg, under revision control.  (See the discussion at the end of #9351.)\n\nHere are the instructions:\n\n---\n\n- apply [attachment:trac_9433-sage-repo.2.patch]\n- apply [attachment:trac_9433-scripts.v9.patch] to the scripts repository\n- move the attached file [attachment:hgignore] to `$SAGE_ROOT/.hgignore` (note that this is a *new* file)\n- move the attached file [attachment:root-spkg-install.v4] to `$SAGE_ROOT/spkg/root-spkg-install` (note that this is a *new* file)\n- apply [attachment:9433_install.diff] to `$SAGE_ROOT/spkg/install`\n- apply [attachment:9433_deps.diff] to `$SAGE_ROOT/spkg/standard/deps`\n\nThen **from $SAGE_ROOT**, run the attached script [attachment:9433_hg_script.sh] to create the Mercurial repository.\n\n---\n\n**Testing**: see [http://sage.math.washington.edu/home/release/sage-4.7.alpha0/](http://sage.math.washington.edu/home/release/sage-4.7.alpha0/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9433\n\n",
+    "closed_at": "2011-03-08T21:44:36Z",
     "created_at": "2010-07-06T00:02:39Z",
     "labels": [
-        "component: distribution"
+        "component: distribution",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Put more files under revision control.",
@@ -19,7 +21,24 @@ Assignee: tbd
 
 CC:  @williamstein @dandrake @kcrisman @nexttime
 
-Put the text files in $SAGE_ROOT, and also the text files in spkg, under revision control.  (See the discussion at the end of #9351.)
+Put the text files in `$SAGE_ROOT`, and also the text files in spkg, under revision control.  (See the discussion at the end of #9351.)
+
+Here are the instructions:
+
+---
+
+- apply [attachment:trac_9433-sage-repo.2.patch]
+- apply [attachment:trac_9433-scripts.v9.patch] to the scripts repository
+- move the attached file [attachment:hgignore] to `$SAGE_ROOT/.hgignore` (note that this is a *new* file)
+- move the attached file [attachment:root-spkg-install.v4] to `$SAGE_ROOT/spkg/root-spkg-install` (note that this is a *new* file)
+- apply [attachment:9433_install.diff] to `$SAGE_ROOT/spkg/install`
+- apply [attachment:9433_deps.diff] to `$SAGE_ROOT/spkg/standard/deps`
+
+Then **from $SAGE_ROOT**, run the attached script [attachment:9433_hg_script.sh] to create the Mercurial repository.
+
+---
+
+**Testing**: see [http://sage.math.washington.edu/home/release/sage-4.7.alpha0/](http://sage.math.washington.edu/home/release/sage-4.7.alpha0/)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9433
 

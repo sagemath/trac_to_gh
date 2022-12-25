@@ -1,15 +1,16 @@
-# Issue 1023: add basic omega support to sage-sage
+# Issue 1023: [with patch] add basic omega support to sage-sage
 
 archive/issues_001023.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis patch add basic omega support, it is still missing from sage-test, but that is less of a priority for now.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1023\n\n",
+    "closed_at": "2007-10-28T19:30:15Z",
     "created_at": "2007-10-28T19:09:26Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "add basic omega support to sage-sage",
+    "title": "[with patch] add basic omega support to sage-sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1023",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

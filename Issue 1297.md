@@ -4,6 +4,7 @@ archive/issues_001297.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nNow that we will have atlas by default numpy should link against it without \nSAGE-ATLAS being set.\n\nhttp://sage.math.washington.edu/home/jkantor/numpy-20071020-1.0.3.1.p1.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1297\n\n",
+    "closed_at": "2007-12-02T03:45:32Z",
     "created_at": "2007-11-28T09:42:42Z",
     "labels": [
         "component: numerical",

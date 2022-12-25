@@ -1,16 +1,17 @@
-# Issue 8618: Non standard alphabet
+# Issue 8618: Fix is_identity of WordMorphism to handle non standard alphabet
 
 archive/issues_008618.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: word, substitution\n\nIt seems that some functions that use morphisms of words do not work for not standard alphabet. This ticket follows the bug found in the fixed_point method (#8595).\n\n**pseudo palindrome**\n\n```\nsage: t = WordMorphism({'a1':['a2'], 'a2':['a1']})\nsage: W = Words(['a1','a2'])\nsage: W(['a1','a2']).is_palindrome(t)\nAttributeError Traceback (most recent call last)\n...\nKeyError: 'a'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8618\n\n",
+    "closed_at": "2010-04-16T18:50:38Z",
     "created_at": "2010-03-28T09:12:23Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "Non standard alphabet",
+    "title": "Fix is_identity of WordMorphism to handle non standard alphabet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8618",
     "user": "https://github.com/videlec"

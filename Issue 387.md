@@ -3,7 +3,8 @@
 archive/issues_000387.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  dmharvey@math.harvard.edu\n\nThe following bug was found by Thea Gegenberg. There seems to be in inconsistency in how elements in a ring Integers(D) for a bigger D are represented and there don't seem to be automatic coercions between the different representatives.\n\nThe culprits are IntegerMod_int, IntegerMod_int64 and IntegerMod_gmp (not illustrated here, but with bigger D similar errors arise wrt. gmp.)\n\nThis code illustrates the problem:\n\n```\nA=matrix([(70, 49, -20, -34, 57), (-49, -14, 95, 43, 85), (-95, -63, 68, 52, 12), (11,\n-16, -50, 43, 76), (-55, 83, 55, 40, -14)])\nD=A.determinant()\nR=Integers(D)\nMD=MatrixSpace(R,A.nrows(),A.ncols())\nAD=MD(A)\n# You would expect elements of R and entries of AD to be of exactly the same type.\n# this is not the case, however:\nprint parent(AD.row(1)[1])\nprint parent(R(3))\n# Indeed, the types of these are not the same:\nprint type(AD.row(1)[1])\nprint type(R(3))\n# and this has consequences: You'd expect the following to work, but it gives an error:\nR(3)*AD.row(1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/387\n\n",
+    "body": "Assignee: dmharvey\n\nCC:  dmharvey@math.harvard.edu\n\nThe following bug was found by Thea Gegenberg. There seems to be in inconsistency in how elements in a ring Integers(D) for a bigger D are represented and there don't seem to be automatic coercions between the different representatives.\n\nThe culprits are IntegerMod_int, IntegerMod_int64 and IntegerMod_gmp (not illustrated here, but with bigger D similar errors arise wrt. gmp.)\n\nThis code illustrates the problem:\n\n```\nA=matrix([(70, 49, -20, -34, 57), (-49, -14, 95, 43, 85), (-95, -63, 68, 52, 12), (11,\n-16, -50, 43, 76), (-55, 83, 55, 40, -14)])\nD=A.determinant()\nR=Integers(D)\nMD=MatrixSpace(R,A.nrows(),A.ncols())\nAD=MD(A)\n# You would expect elements of R and entries of AD to be of exactly the same type.\n# this is not the case, however:\nprint parent(AD.row(1)[1])\nprint parent(R(3))\n# Indeed, the types of these are not the same:\nprint type(AD.row(1)[1])\nprint type(R(3))\n# and this has consequences: You'd expect the following to work, but it gives an error:\nR(3)*AD.row(1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/387\n\n",
+    "closed_at": "2007-09-07T04:20:02Z",
     "created_at": "2007-06-12T20:56:32Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000387.json:
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: somebody
+Assignee: dmharvey
 
 CC:  dmharvey@math.harvard.edu
 

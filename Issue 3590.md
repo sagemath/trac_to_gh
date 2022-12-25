@@ -1,9 +1,10 @@
-# Issue 3590: dage_interfaces -- port detection code hangs solid
+# Issue 3590: [with patch; with positive review] dage_interfaces -- port detection code hangs solid
 
 archive/issues_003590.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\n```\nsage -t  devel/sage/sage/dsage/interface/dsage_interface.py *** ***\nError: TIMED OUT! *** ***\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n*** *** Error: TIMED OUT! *** ***\n        [2697.3 s]\n```\n\nThis is at\n\n```\nport = find_open_port().next()\n```\n\nThis happens on *some machines*, e.g., fermat.math.harvard.edu, but not others.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3590\n\n",
+    "closed_at": "2008-07-08T00:20:31Z",
     "created_at": "2008-07-07T20:42:55Z",
     "labels": [
         "component: dsage",
@@ -11,7 +12,7 @@ archive/issues_003590.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "dage_interfaces -- port detection code hangs solid",
+    "title": "[with patch; with positive review] dage_interfaces -- port detection code hangs solid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3590",
     "user": "https://github.com/williamstein"

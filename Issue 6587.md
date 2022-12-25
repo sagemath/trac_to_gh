@@ -1,15 +1,16 @@
-# Issue 6587: Improve doc of partitions.conjugate
+# Issue 6587: [with patch, positive review] Improve doc of partitions.conjugate
 
 archive/issues_006587.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @jbandlow\n\nKeywords: partitions\n\nThe title says it all\n\nIssue created by migration from https://trac.sagemath.org/ticket/6587\n\n",
+    "closed_at": "2009-07-23T05:52:26Z",
     "created_at": "2009-07-22T11:47:57Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Improve doc of partitions.conjugate",
+    "title": "[with patch, positive review] Improve doc of partitions.conjugate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6587",
     "user": "https://github.com/nthiery"

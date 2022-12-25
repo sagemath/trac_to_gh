@@ -1,21 +1,22 @@
-# Issue 2770: plot_region function
+# Issue 2770: [with patch; positive review] plot_region function
 
 archive/issues_002770.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be great to have a plot_region function which would plot a region where a system of equations/inequalities were true.\n\nHere is an initial version:\n\n```\ndef plot_region(funcs, var1_range, var2_range, plot_points=400, **kwds):\n    if not isinstance(funcs, (list, tuple)):\n        funcs = [funcs]\n    hvar, hmin, hmax = var1_range\n    vvar, vmin, vmax = var2_range\n    funcs = prod([f._fast_float_(\"%r\"%hvar, \"%r\"%vvar) for f in funcs])\n    return contour_plot(funcs, var1_range, var2_range, plot_points=plot_points,**kwds)\n```\n\nThis uses an idea from cwitty (to use contour_plot) and the patch from #2768.  A screenshot is attached below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2770\n\n",
+    "body": "Assignee: abergeron\n\nIt would be great to have a plot_region function which would plot a region where a system of equations/inequalities were true.\n\nHere is an initial version:\n\n```\ndef plot_region(funcs, var1_range, var2_range, plot_points=400, **kwds):\n    if not isinstance(funcs, (list, tuple)):\n        funcs = [funcs]\n    hvar, hmin, hmax = var1_range\n    vvar, vmin, vmax = var2_range\n    funcs = prod([f._fast_float_(\"%r\"%hvar, \"%r\"%vvar) for f in funcs])\n    return contour_plot(funcs, var1_range, var2_range, plot_points=plot_points,**kwds)\n```\n\nThis uses an idea from cwitty (to use contour_plot) and the patch from #2768.  A screenshot is attached below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2770\n\n",
+    "closed_at": "2009-01-12T02:00:26Z",
     "created_at": "2008-04-02T07:49:40Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "plot_region function",
+    "title": "[with patch; positive review] plot_region function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2770",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: abergeron
 
 It would be great to have a plot_region function which would plot a region where a system of equations/inequalities were true.
 

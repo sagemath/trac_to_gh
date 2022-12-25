@@ -4,6 +4,7 @@ archive/issues_008184.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nKeywords: eclib\n\nWe provide an upgrade to eclib to patch-level 9, i.e. eclib-20080310.p9.spkg.  This does two things:\n\n1. Fixes a bug (found by Edray Goins and Jamie Wiegandt) in which second descent quartics were not tested for real-solubility, and so sometimes the rank bounds (and related selmer ranks) could be too high.\n\n2. Enhances the data available from the two_descent class so that the rank_bound and selmer_rank are separated, and both available.\n\nThe second item necessitated changes to the interface, which are here included in the patch.  In turn, some changes were needed in sage/schemes/elliptic_curve/\n\nNote that this affects #7575.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8184\n\n",
+    "closed_at": "2010-02-11T14:30:31Z",
     "created_at": "2010-02-04T14:27:17Z",
     "labels": [
         "component: elliptic curves",

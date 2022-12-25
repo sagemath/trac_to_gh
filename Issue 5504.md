@@ -1,16 +1,17 @@
-# Issue 5504: fix shell script "sage"
+# Issue 5504: [duplicate] fix shell script "sage"
 
 archive/issues_005504.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt would be great if the line\n\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n\nin the top level script 'sage' would be changed to\n\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$`@`\"\n\nso it doesn't split up command line arguments that happen to have spaces in them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5504\n\n",
+    "closed_at": "2009-03-27T20:37:41Z",
     "created_at": "2009-03-12T21:03:27Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "fix shell script \"sage\"",
+    "title": "[duplicate] fix shell script \"sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5504",
     "user": "https://github.com/DanGrayson"

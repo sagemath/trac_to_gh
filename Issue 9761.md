@@ -4,6 +4,7 @@ archive/issues_009761.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nAs noted at #9761, although the spkg-install script for zn_poly is a bash script, it actually calls a Python script `zn_poly-*/src/makemakefile.py`. Therefore the SPKG.txt file should indicate this dependency, as it is far from obvious. \n\nClearly this is a minor issue, but one worth fixing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9762\n\n",
+    "closed_at": "2015-04-14T23:03:28Z",
     "created_at": "2010-08-18T11:49:26Z",
     "labels": [
         "component: documentation",

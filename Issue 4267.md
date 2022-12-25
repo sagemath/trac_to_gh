@@ -1,25 +1,28 @@
-# Issue 4267: Make javascript packages spkgs instead of part of the extcode repository
+# Issue 4267: [with patch, positive review] remove javascript code from extcode repository
 
 archive/issues_004267.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nHere are patches and spkgs to make most of the javascript applications we ship into spkgs instead of directories in the extcode repository.  This will facilitate updating these spkgs and makes things cleaner anyways.\n\nI took the opportunity to upgrade each package to the lastest version while I was at it.  This affects the interact look and feel, since the new default theme for jqueryUI is different.  I chose a few colors and things, but of course, things are up for debate.  Let's not let bikeshedding get in the way of these patches, though; we can always make a follow-up patch that changes the theme very easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4267\n\n",
+    "body": "Assignee: @jasongrout\n\nThe scope of this ticket changed significantly over the lifetime of its existence. Note that only the last two comments are relevant. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4267\n\n",
+    "closed_at": "2009-01-19T08:16:27Z",
     "created_at": "2008-10-12T02:15:25Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Make javascript packages spkgs instead of part of the extcode repository",
+    "title": "[with patch, positive review] remove javascript code from extcode repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4267",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
-Here are patches and spkgs to make most of the javascript applications we ship into spkgs instead of directories in the extcode repository.  This will facilitate updating these spkgs and makes things cleaner anyways.
+The scope of this ticket changed significantly over the lifetime of its existence. Note that only the last two comments are relevant. 
 
-I took the opportunity to upgrade each package to the lastest version while I was at it.  This affects the interact look and feel, since the new default theme for jqueryUI is different.  I chose a few colors and things, but of course, things are up for debate.  Let's not let bikeshedding get in the way of these patches, though; we can always make a follow-up patch that changes the theme very easily.
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/4267
 

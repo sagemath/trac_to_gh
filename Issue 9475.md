@@ -3,7 +3,8 @@
 archive/issues_009475.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mariah\n\nKeywords: M4RI, spkg-check\n\nThe new version improves elimination to some extend, comes with a cleaner API and has an option to suppress SSE instructions\n\nIssue created by migration from https://trac.sagemath.org/ticket/9475\n\n",
+    "body": "Assignee: tbd\n\nCC:  mariah\n\nKeywords: M4RI, spkg-check\n\nThe new version improves elimination to some extent, comes with a cleaner API and has an option to suppress SSE instructions.\n\n---\n\n## Note to the release managers\n\n**Apply only [m4ri_new_version.v2.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9475/m4ri_new_version.v2.patch) to the Sage library** when merging the [new M4RI spkg](http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100701.p1.spkg).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9475\n\n",
+    "closed_at": "2010-08-15T08:03:14Z",
     "created_at": "2010-07-11T16:12:22Z",
     "labels": [
         "component: packages: standard"
@@ -21,7 +22,13 @@ CC:  mariah
 
 Keywords: M4RI, spkg-check
 
-The new version improves elimination to some extend, comes with a cleaner API and has an option to suppress SSE instructions
+The new version improves elimination to some extent, comes with a cleaner API and has an option to suppress SSE instructions.
+
+---
+
+## Note to the release managers
+
+**Apply only [m4ri_new_version.v2.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9475/m4ri_new_version.v2.patch) to the Sage library** when merging the [new M4RI spkg](http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100701.p1.spkg).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9475
 

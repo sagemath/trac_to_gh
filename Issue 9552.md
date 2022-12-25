@@ -1,9 +1,10 @@
-# Issue 9552: cython.pyx references the old sage notebook code
+# Issue 9552: cython.py references the old sage notebook code
 
 archive/issues_009552.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @kiwifb\n\nI noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):\n\n```\n import sage.server.support\n    d = {}\n    sage.server.support.cython_import_all(tmpfile, d,\n                                         verbose=verbose, compile_message=compile_message,\n                                         use_cache=use_cache,\n                                         create_local_c_file=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9552\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kiwifb\n\n I noticed to my surprise that misc/cython.py has these lines in it (which should be fixed, of course):\n\n```\n import sage.server.support\n    d = {}\n    sage.server.support.cython_import_all(tmpfile, d,\n                                         verbose=verbose, compile_message=compile_message,\n                                         use_cache=use_cache,\n                                         create_local_c_file=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9552\n\n",
+    "closed_at": "2015-05-30T22:48:30Z",
     "created_at": "2010-07-19T19:59:21Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_009552.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
-    "title": "cython.pyx references the old sage notebook code",
+    "title": "cython.py references the old sage notebook code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9552",
     "user": "https://github.com/williamstein"
@@ -21,7 +22,7 @@ Assignee: @jasongrout
 
 CC:  @kiwifb
 
-I noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):
+ I noticed to my surprise that misc/cython.py has these lines in it (which should be fixed, of course):
 
 ```
  import sage.server.support

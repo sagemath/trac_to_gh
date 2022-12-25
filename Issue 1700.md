@@ -1,16 +1,17 @@
-# Issue 1700: [with patch] Fix doctesting on some file systems
+# Issue 1700: [with patch, with positive review] Fix doctesting on some file systems
 
 archive/issues_001700.json:
 ```json
 {
     "body": "Assignee: failure\n\nThis is a patch by William which fixes doctesting on some unspecified file system. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1700\n\n",
+    "closed_at": "2008-01-06T13:17:34Z",
     "created_at": "2008-01-06T13:16:18Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.3",
-    "title": "[with patch] Fix doctesting on some file systems",
+    "title": "[with patch, with positive review] Fix doctesting on some file systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1700",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

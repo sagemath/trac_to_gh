@@ -4,6 +4,7 @@ archive/issues_000089.json:
 ```json
 {
     "body": "Assignee: dmharvey\n\n```\nsage: (1 + O(5^2)) / (1 + O(5))\n 1 + O(5^2)\n```\n\nClearly the answer should be instead\n\n```\n 1 + O(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/89\n\n",
+    "closed_at": "2006-10-10T23:58:17Z",
     "created_at": "2006-09-27T13:34:52Z",
     "labels": [
         "component: algebraic geometry",

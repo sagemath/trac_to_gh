@@ -1,22 +1,23 @@
-# Issue 673: Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity
+# Issue 673: [with patch; positive review] Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity
 
 archive/issues_000673.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest, real double\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
+    "body": "Assignee: failure\n\nKeywords: Solaris 10, doctest, real double\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
+    "closed_at": "2009-04-09T07:10:22Z",
     "created_at": "2007-09-17T00:34:27Z",
     "labels": [
-        "component: packages",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity",
+    "title": "[with patch; positive review] Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/673",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: failure
 
 Keywords: Solaris 10, doctest, real double
 

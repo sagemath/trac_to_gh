@@ -4,6 +4,7 @@ archive/issues_009787.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @gagern\n\nWhen computing the variety over an extension field L of a zero-dimensional ideal of some polynomial ring K[vars], each point of the variety is returned as a dictionary whose keys are generators of L[vars]. It would be more practical to have the keys be either generators of K[vars] or plain strings.\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = (x+y, x^2+y^2-1)*R\nsage: V = J.variety(QQbar); V\n[{y: -0.7071067811865475?, x: 0.7071067811865475?}, {y: 0.7071067811865475?, x: -0.7071067811865475?}]\nsage: V[0][x]\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: x\nsage: V[0]['x']\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: 'x'\nsage: V[0][QQbar['x,y'].0]\n0.7071067811865475?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9788\n\n",
+    "closed_at": "2015-10-16T18:42:48Z",
     "created_at": "2010-08-23T13:28:40Z",
     "labels": [
         "component: commutative algebra",

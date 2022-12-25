@@ -4,6 +4,7 @@ archive/issues_000891.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/891\n\n",
+    "closed_at": "2007-10-14T05:18:43Z",
     "created_at": "2007-10-13T20:44:34Z",
     "labels": [
         "component: memleak",

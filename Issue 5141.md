@@ -1,22 +1,24 @@
-# Issue 5141: tinymce should be disabled on published worksheets
+# Issue 5141: [with patch, positive review] tinymce should be disabled on published worksheets
 
 archive/issues_005141.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nOtherwise bad things happen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5141\n\n",
+    "body": "Assignee: @jasongrout\n\nOtherwise bad things happen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5141\n\n",
+    "closed_at": "2009-02-04T01:16:59Z",
     "created_at": "2009-01-30T21:51:19Z",
     "labels": [
         "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "tinymce should be disabled on published worksheets",
+    "title": "[with patch, positive review] tinymce should be disabled on published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5141",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 Otherwise bad things happen.
 

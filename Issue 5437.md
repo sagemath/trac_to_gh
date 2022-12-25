@@ -1,16 +1,17 @@
-# Issue 5437: [with patch; needs review] pickle jar -- make it run through in order
+# Issue 5437: [with patch; positive review] pickle jar -- make it run through in order
 
 archive/issues_005437.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCurrent when unpickling the pickle jar the files are run through in whatever order os.listdir gives them.  This patch instead unpickles in order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5437\n\n",
+    "body": "Assignee: mabshoff\n\nCurrent when unpickling the pickle jar the files are run through in whatever order os.listdir gives them.  This patch instead unpickles in order. \n\nThis is motivated by mabshoff's comment that the output of this doctest is \"racy\".  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5437\n\n",
+    "closed_at": "2009-03-04T19:51:50Z",
     "created_at": "2009-03-04T05:32:31Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch; needs review] pickle jar -- make it run through in order",
+    "title": "[with patch; positive review] pickle jar -- make it run through in order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5437",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,9 @@ archive/issues_005437.json:
 ```
 Assignee: mabshoff
 
-Current when unpickling the pickle jar the files are run through in whatever order os.listdir gives them.  This patch instead unpickles in order.
+Current when unpickling the pickle jar the files are run through in whatever order os.listdir gives them.  This patch instead unpickles in order. 
+
+This is motivated by mabshoff's comment that the output of this doctest is "racy".  
 
 Issue created by migration from https://trac.sagemath.org/ticket/5437
 

@@ -4,6 +4,7 @@ archive/issues_001411.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe README.txt file included in Sage is woefully out of date. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1411\n\n",
+    "closed_at": "2007-12-10T05:12:36Z",
     "created_at": "2007-12-06T14:41:15Z",
     "labels": [
         "component: distribution",

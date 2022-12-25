@@ -1,17 +1,17 @@
-# Issue 6512: [with patch, needs review] Link to jsMath's easy/load.js only if the documentation is built with --jsmath
+# Issue 6512: [with patch, positive review] Link to jsMath's easy/load.js only if the documentation is built with --jsmath
 
 archive/issues_006512.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23?#b453af3a0750ba23).\n\n`sage -docbuild tutorial html` renders all mathematics as images, but if the jsMath library is present, its processor hides all display equations.\n\nThis is a follow-up to #5799.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6512\n\n",
+    "body": "Assignee: tba\n\n`sage -docbuild tutorial html` renders all mathematics as images, but if the jsMath library is present, its processor hides all display equations.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23?#b453af3a0750ba23).\n\nThis is a follow-up to #5799.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6512\n\n",
+    "closed_at": "2009-07-17T09:21:27Z",
     "created_at": "2009-07-11T16:21:35Z",
     "labels": [
         "component: documentation",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Link to jsMath's easy/load.js only if the documentation is built with --jsmath",
+    "title": "[with patch, positive review] Link to jsMath's easy/load.js only if the documentation is built with --jsmath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6512",
     "user": "https://github.com/qed777"
@@ -19,9 +19,9 @@ archive/issues_006512.json:
 ```
 Assignee: tba
 
-See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23?#b453af3a0750ba23).
-
 `sage -docbuild tutorial html` renders all mathematics as images, but if the jsMath library is present, its processor hides all display equations.
+
+See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23?#b453af3a0750ba23).
 
 This is a follow-up to #5799.
 

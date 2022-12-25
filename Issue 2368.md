@@ -1,9 +1,10 @@
-# Issue 2368: Compiling Atlas on Powerbook G4, Tuning Information
+# Issue 2368: [with ATLAS tuning info] Compiling Atlas on Powerbook G4, Tuning Information
 
 archive/issues_002368.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCompiling Atlas takes forever on Powerbook G4 running debian lenny. Please make the tuning information a part of sage distribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2368\n\n",
+    "closed_at": "2008-03-20T10:56:47Z",
     "created_at": "2008-03-02T15:49:12Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002368.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Compiling Atlas on Powerbook G4, Tuning Information",
+    "title": "[with ATLAS tuning info] Compiling Atlas on Powerbook G4, Tuning Information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2368",
     "user": "https://github.com/rishikesha"

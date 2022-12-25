@@ -1,16 +1,17 @@
-# Issue 4292: [with patch; needs trivial review] graphics_array -- stupid bug introduced by somebody cleaning up the code
+# Issue 4292: [with patch, positive review] graphics_array -- stupid bug introduced by somebody cleaning up the code
 
 archive/issues_004292.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf you do\n\n```\n   graphics_array([[plot(sin)]]).show(axes=False)\n```\nthe axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. \n\nFortunately, it's a trivial 1-line fix, which I've attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4292\n\n",
+    "closed_at": "2008-10-15T16:21:50Z",
     "created_at": "2008-10-15T11:11:36Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
-    "title": "[with patch; needs trivial review] graphics_array -- stupid bug introduced by somebody cleaning up the code",
+    "title": "[with patch, positive review] graphics_array -- stupid bug introduced by somebody cleaning up the code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4292",
     "user": "https://github.com/williamstein"

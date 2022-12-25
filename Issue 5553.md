@@ -1,17 +1,16 @@
-# Issue 5553: allow vertical vectors in vector field plots
+# Issue 5553: allow vertical slopes in slope field plots
 
 archive/issues_005553.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a followup to #4104, where the following discussion occurs about slope/vector field plots:\n\njoyner: A question for possibly a future patch: it will not plot\n\n```\nplot_slope_field(x/y, (x,-3,3), (y,-3,3)).show(aspect_ratio=1)\n```\nbecause of the problem at y=0. However, should it? A slope of plus or minus infinity has a well-defined meaning. Should one try to trap singularities like that and just plot them as vertical direction fields in the future?\n\njason:  I'm aware of the problem, but decided to post the patch anyway when I saw that plot_vector_field had the same problem: the plot is blank when an evaluation is undefined.  I thought about trapping these things and plotting them as vertical lines, but really we ought to do something in plot_vector_field to take care of things when a vector has an infinite or NaN coordinate.  I ran out of time to fix plot_vector_field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5553\n\n",
+    "body": "Assignee: @williamstein\n\n```\nplot_slope_field(x/y, (x,-2,2), (y,-2,2)).show(aspect_ratio=1)\n```\ncurrently won't show the vertical slopes at y=0, x nonzero, but there is no mathematical reason it shouldn't, so this should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5553\n\n",
     "created_at": "2009-03-17T20:59:17Z",
     "labels": [
         "component: graphics",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "allow vertical vectors in vector field plots",
+    "title": "allow vertical slopes in slope field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5553",
     "user": "https://github.com/kcrisman"
@@ -19,16 +18,10 @@ archive/issues_005553.json:
 ```
 Assignee: @williamstein
 
-This is a followup to #4104, where the following discussion occurs about slope/vector field plots:
-
-joyner: A question for possibly a future patch: it will not plot
-
 ```
-plot_slope_field(x/y, (x,-3,3), (y,-3,3)).show(aspect_ratio=1)
+plot_slope_field(x/y, (x,-2,2), (y,-2,2)).show(aspect_ratio=1)
 ```
-because of the problem at y=0. However, should it? A slope of plus or minus infinity has a well-defined meaning. Should one try to trap singularities like that and just plot them as vertical direction fields in the future?
-
-jason:  I'm aware of the problem, but decided to post the patch anyway when I saw that plot_vector_field had the same problem: the plot is blank when an evaluation is undefined.  I thought about trapping these things and plotting them as vertical lines, but really we ought to do something in plot_vector_field to take care of things when a vector has an infinite or NaN coordinate.  I ran out of time to fix plot_vector_field.
+currently won't show the vertical slopes at y=0, x nonzero, but there is no mathematical reason it shouldn't, so this should be fixed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5553
 

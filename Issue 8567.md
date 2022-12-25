@@ -1,28 +1,29 @@
-# Issue 8567: Specify the location of iconv for 'gd'
+# Issue 8567: Change iconv so it builds on Cygwin and Solaris only
 
 archive/issues_008567.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @kcrisman\n\nSince iconv was added to Sage (#8432) as a standard package (needing due to someone updating R without checking it fully), there have been some problems on Fedora and OpenSuse which look to be related to problems building gd when there are two copies of iconv to be found on the system. Since there is an option to specify the location of the iconv package in gd's configure script, this is probably worth doing, though it needs checking carefully. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8567\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @kcrisman\n\nSince iconv was added to Sage (#8432) as a standard package (needed due to Karl-Dieter Crisman updating R in #6532 whilst overlooking the warning message from the configure script and without testing on Solaris), there have been some problems on Fedora and OpenSuse which look to be related to problems building gd when there are two copies of iconv to be found on the system. Since there is an option to gd's configure script specify the location of the iconv that seemed the most logical option. However, that did not work, so changing iconv to only build on Cygwin and Solaris seemed the most logical. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8567\n\n",
+    "closed_at": "2010-03-29T22:08:20Z",
     "created_at": "2010-03-20T14:21:49Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.5",
-    "title": "Specify the location of iconv for 'gd'",
+    "title": "Change iconv so it builds on Cygwin and Solaris only",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8567",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 CC:  @kcrisman
 
-Since iconv was added to Sage (#8432) as a standard package (needing due to someone updating R without checking it fully), there have been some problems on Fedora and OpenSuse which look to be related to problems building gd when there are two copies of iconv to be found on the system. Since there is an option to specify the location of the iconv package in gd's configure script, this is probably worth doing, though it needs checking carefully. 
+Since iconv was added to Sage (#8432) as a standard package (needed due to Karl-Dieter Crisman updating R in #6532 whilst overlooking the warning message from the configure script and without testing on Solaris), there have been some problems on Fedora and OpenSuse which look to be related to problems building gd when there are two copies of iconv to be found on the system. Since there is an option to gd's configure script specify the location of the iconv that seemed the most logical option. However, that did not work, so changing iconv to only build on Cygwin and Solaris seemed the most logical. 
 
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8567
 

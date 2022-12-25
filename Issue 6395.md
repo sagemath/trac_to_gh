@@ -1,24 +1,25 @@
-# Issue 6395: magma interface: make magma_colon_equals mode work in both command line and notebook
+# Issue 6395: [with patch, positive review] magma interface: make magma_colon_equals mode work in both command line and notebook
 
 archive/issues_006395.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6395\n\n",
+    "body": "Assignee: kohel\n\nThis exposes the magma_colon_equals option in the notebook, which can now be toggled by a function, and the new function is 100% doctested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6395\n\n",
+    "closed_at": "2009-07-16T21:15:25Z",
     "created_at": "2009-06-24T16:34:49Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "magma interface: make magma_colon_equals mode work in both command line and notebook",
+    "title": "[with patch, positive review] magma interface: make magma_colon_equals mode work in both command line and notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6395",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: kohel
 
-
+This exposes the magma_colon_equals option in the notebook, which can now be toggled by a function, and the new function is 100% doctested.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6395
 

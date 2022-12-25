@@ -1,16 +1,17 @@
-# Issue 2861: scripts do not exit with correct exit code when sys.exit() is used
+# Issue 2861: [with patch; positive review] scripts do not exit with correct exit code when sys.exit() is used
 
 archive/issues_002861.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf I call `sys.exit()` from a Sage script, the script exits but not with the correct exit code. For example, the script\n\n```\nimport sys\n\nprint 'exiting!'\nsys.exit(1)\n```\nexits with exit code 0 when run from Sage:\n\n```\n$ sage exitcode.sage \nexiting!\n1\n$ echo $?\n0\n```\n(the 1 gets printed because the preparser turns it into a Sage integer, and Python prints out anything except Python integers.) But the same script works properly when run from Python:\n\n```\n$ python exitcode.sage\nexiting!\n$ echo $?\n1\n```\nI don't know if this is Sage or IPython behavior, but having this work would be really useful.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2861\n\n",
+    "closed_at": "2009-01-24T22:47:59Z",
     "created_at": "2008-04-09T06:42:30Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "scripts do not exit with correct exit code when sys.exit() is used",
+    "title": "[with patch; positive review] scripts do not exit with correct exit code when sys.exit() is used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2861",
     "user": "https://github.com/dandrake"

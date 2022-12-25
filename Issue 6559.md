@@ -3,7 +3,8 @@
 archive/issues_006559.json:
 ```json
 {
-    "body": "In new symbolics, the default symbolic variables are complex.\nHowever, sometime it is useful/desirable to make the domain of\nvariables to be real.\n\n\nCurrently, there are no way to specify the domain of variables\nin Sage although underlying Ginac allows it.  For example: following\nwould to be good to have.\n\n```\nsage: var('x,y,z', domain='real')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6559\n\n",
+    "body": "Keywords: pynac\n\nIn new symbolics, the default symbolic variables are complex.\nHowever, sometime it is useful/desirable to make the domain of\nvariables to be real.\n\n\nCurrently, there are no way to specify the domain of variables\nin Sage although underlying Ginac allows it.  For example: following\nwould to be good to have.\n\n```\nsage: var('x,y,z', domain='real')\n```\n\n\n\n\nInstructions for installing these patches (sage-4.1.1)\n\n**(1) Pynac patch**   \n (a) Get the pynac spkg\n\n http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg\n\n (b) Apply the pynac patch for enhanced symbols\n\n http://www.math.unb.ca/~ghossain/texname-and-domain-of-symbols-pynac.patch\n\n (c) install the patched spkg in Sage.\n\n **OR** if you are feeling lazy, you can directly install my patched copy of pynac from here\n\n http://www.math.unb.ca/~ghossain/pynac-0.1.8.p2-symbols.spkg\n\n\n**(2) Sage patch:**\n\nApply the attached sage patch after modified pynac spkg is installed\n\n**Notes:**\n\n#6403 will also be resolved by this patch\n\n#6340 patch conflicts with this patch. This patch here should supersede the patch at #6340.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6559\n\n",
+    "closed_at": "2010-02-18T21:53:42Z",
     "created_at": "2009-07-19T11:10:52Z",
     "labels": [
         "component: symbolics"
@@ -15,6 +16,8 @@ archive/issues_006559.json:
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Keywords: pynac
+
 In new symbolics, the default symbolic variables are complex.
 However, sometime it is useful/desirable to make the domain of
 variables to be real.
@@ -27,6 +30,38 @@ would to be good to have.
 ```
 sage: var('x,y,z', domain='real')
 ```
+
+
+
+
+Instructions for installing these patches (sage-4.1.1)
+
+**(1) Pynac patch**   
+ (a) Get the pynac spkg
+
+ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg
+
+ (b) Apply the pynac patch for enhanced symbols
+
+ http://www.math.unb.ca/~ghossain/texname-and-domain-of-symbols-pynac.patch
+
+ (c) install the patched spkg in Sage.
+
+ **OR** if you are feeling lazy, you can directly install my patched copy of pynac from here
+
+ http://www.math.unb.ca/~ghossain/pynac-0.1.8.p2-symbols.spkg
+
+
+**(2) Sage patch:**
+
+Apply the attached sage patch after modified pynac spkg is installed
+
+**Notes:**
+
+#6403 will also be resolved by this patch
+
+#6340 patch conflicts with this patch. This patch here should supersede the patch at #6340.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6559
 

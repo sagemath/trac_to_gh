@@ -1,16 +1,16 @@
-# Issue 5745: improve doctest coverage for schemes/generic/projective_space.py
+# Issue 5745: [with patch, positive review] improve doctest coverage for schemes/generic/projective_space.py
 
 archive/issues_005745.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: doctest projective space\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5745\n\n",
+    "closed_at": "2009-04-12T21:24:10Z",
     "created_at": "2009-04-11T03:06:25Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "improve doctest coverage for schemes/generic/projective_space.py",
+    "title": "[with patch, positive review] improve doctest coverage for schemes/generic/projective_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5745",
     "user": "https://github.com/aghitza"

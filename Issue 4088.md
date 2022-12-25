@@ -1,16 +1,17 @@
-# Issue 4088: notebook -- on list of published worksheets if no worksheets, everyone sees welcome message
+# Issue 4088: [with patch, positive review] notebook -- on list of published worksheets if no worksheets, everyone sees welcome message
 
 archive/issues_004088.json:
 ```json
 {
     "body": "Assignee: boothby\n\nMake the welcome message \"Welcome to Sage! You can create a new worksheet, view published worksheets, or read the documentation.\" not appear on the published worksheet listings ever.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4088\n\n",
+    "closed_at": "2008-09-19T04:04:05Z",
     "created_at": "2008-09-09T14:12:18Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "notebook -- on list of published worksheets if no worksheets, everyone sees welcome message",
+    "title": "[with patch, positive review] notebook -- on list of published worksheets if no worksheets, everyone sees welcome message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4088",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

@@ -3,10 +3,12 @@
 archive/issues_008953.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rhinton\n\nCostly, but nice enough for small graphs :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8953\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rhinton\n\nCostly, but nice enough for small graphs :-)\n\nrequires #8927\n\nIssue created by migration from https://trac.sagemath.org/ticket/8953\n\n",
+    "closed_at": "2010-07-21T02:49:18Z",
     "created_at": "2010-05-12T01:38:44Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Perfect graph recognition algorithm",
@@ -20,6 +22,8 @@ Assignee: jason, ncohen, rlm
 CC:  @rhinton
 
 Costly, but nice enough for small graphs :-)
+
+requires #8927
 
 Issue created by migration from https://trac.sagemath.org/ticket/8953
 

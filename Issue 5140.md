@@ -1,17 +1,18 @@
-# Issue 5140: is_irreducible() reports units as irreducible
+# Issue 5140: [with patch, positive review] is_irreducible() reports units as irreducible
 
 archive/issues_005140.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: is_irreducible\n\n# Description of the bug\nThe following happens with\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n| SAGE Version 3.1.2, Release Date: 2008-09-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n**The function is_irreducible returns True on units:**\n\n```\nsage: R.<x>=PolynomialRing( IntegerModRing(13),'x')\nsage: (x^2-2).is_irreducible()\nTrue\nsage: (x^2).is_irreducible()\nFalse\nsage: R(1).is_irreducible()\nTrue\n```\nThe last line should say False or raise an exception as R(0).is_irreducible() does. Because irreducibility of B requires B to be not zero and not a unit. \n\n# Use case where this bug occured to me\n\nIf I want to loop over polynomials in R and count irreducible ones, I need a loop like this:\n\n```\nfor p in R.polynomials(max_degree=3):\n     if not p.is_zero() and not p.is_unit() and p.is_irreducible():\n         # count p\n```\nIt is easy to forget the check if p is a unit. Then the count would be wrong. \n\n# Bug-Fix\nThe bug is in the implementation:\n\n```\ne=R(1)\ne.is_irreducible??\n```\nshows as code after the docstring: \n\n```\nif self.is_zero():\n            raise ValueError, \"self must be nonzero\"\nif self.degree() == 0:\n            return True\n```\n\n**I propose to insert a check**\n\n```\nif self.is_unit():\n            raise ValueError, \"self must not be a unit\"\n```\nbetween the above ifs. I created a file via commit and  bundle with this modification. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5140\n\n",
+    "closed_at": "2009-04-09T09:23:47Z",
     "created_at": "2009-01-30T21:15:34Z",
     "labels": [
         "component: algebra",
-        "trivial",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "is_irreducible() reports units as irreducible",
+    "title": "[with patch, positive review] is_irreducible() reports units as irreducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5140",
     "user": "https://trac.sagemath.org/admin/accounts/users/lars.fischer"

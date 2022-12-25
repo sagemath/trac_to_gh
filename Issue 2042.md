@@ -1,9 +1,10 @@
-# Issue 2042: [with patch, needs review] change is_simplified to has_been_simplified in calculus.py
+# Issue 2042: [with patch] change is_simplified to has_been_simplified in calculus.py (proper subset of #2073)
 
 archive/issues_002042.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSee\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e342c0b1020de8bc\n\nThe point of is_simplified() is to keep track of whether the expression has already been simplified, rather than to check whether the expression is simplified.  The attached patch changes the name to has_been_simplified and adds a doctest.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2042\n\n",
+    "closed_at": "2008-02-07T17:44:39Z",
     "created_at": "2008-02-04T00:39:37Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_002042.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] change is_simplified to has_been_simplified in calculus.py",
+    "title": "[with patch] change is_simplified to has_been_simplified in calculus.py (proper subset of #2073)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2042",
     "user": "https://github.com/aghitza"

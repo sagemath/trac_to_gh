@@ -1,16 +1,17 @@
-# Issue 9424: numerical evaluation of symbolic sums
+# Issue 9424: Provide symbolic sum function with evalf
 
 archive/issues_009424.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  whuss @kcrisman @eviatarbach\n\nSymbolics sums returned from maxima cannot be numerically evaluated, since they don't define an `_evalf_()` method.\n\nThis was reported by dirkd on sage-support:\n\n```\nWhy is evaluating this expression problematical?\n\ny1(x)=x^2;y2(x)=5-x;\na0=1;an=3;Delta=(an-a0)/n;p(k)=a0+(k-1/2)*Delta;\nI(n)=sum(abs(y2(p(k))-y1(p(k)))*Delta,k,1,n);\nN(I(10))\n\nSAGE respons:\n<snipped traceback>\n  File \"expression.pyx\", line 3797, in\nsage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:\n17022)\nTypeError: cannot evaluate symbolic expression numerically\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/t/615b15ca638c9652\n\nIssue created by migration from https://trac.sagemath.org/ticket/9424\n\n",
+    "body": "Assignee: @burcin\n\nCC:  whuss @kcrisman @eviatarbach\n\nSymbolics sums returned from maxima cannot be numerically evaluated, since they don't define an `_evalf_()` method.\n\nThis was reported by dirkd on sage-support:\n\n```\nWhy is evaluating this expression problematical?\n\ny1(x)=x^2;y2(x)=5-x;\na0=1;an=3;Delta=(an-a0)/n;p(k)=a0+(k-1/2)*Delta;\nI(n)=sum(abs(y2(p(k))-y1(p(k)))*Delta,k,1,n);\nN(I(10))\n\nSAGE respons:\n<snipped traceback>\n  File \"expression.pyx\", line 3797, in\nsage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:\n17022)\nTypeError: cannot evaluate symbolic expression numerically\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/t/615b15ca638c9652\n\nSee also #15346\n\nIssue created by migration from https://trac.sagemath.org/ticket/9424\n\n",
+    "closed_at": "2016-05-01T16:30:11Z",
     "created_at": "2010-07-04T13:13:14Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
-    "title": "numerical evaluation of symbolic sums",
+    "title": "Provide symbolic sum function with evalf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9424",
     "user": "https://github.com/burcin"
@@ -43,6 +44,8 @@ TypeError: cannot evaluate symbolic expression numerically
 Here is the thread:
 
 http://groups.google.com/group/sage-support/t/615b15ca638c9652
+
+See also #15346
 
 Issue created by migration from https://trac.sagemath.org/ticket/9424
 

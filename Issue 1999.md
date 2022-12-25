@@ -1,22 +1,23 @@
-# Issue 1999: delete mpl3d code from sage
+# Issue 1999: [with patch, with two positive reviews] delete mpl3d code from sage
 
 archive/issues_001999.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe code in \n\n```\n devel/sage-main/sage/plot/mpl3d\n```\nshould all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1999\n\n",
+    "body": "Assignee: mabshoff\n\nThe code in \n\n```\n devel/sage-main/sage/plot/mpl3d\n```\nshould all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1999\n\n",
+    "closed_at": "2008-02-02T07:58:05Z",
     "created_at": "2008-01-31T05:16:17Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "delete mpl3d code from sage",
+    "title": "[with patch, with two positive reviews] delete mpl3d code from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1999",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 The code in 
 

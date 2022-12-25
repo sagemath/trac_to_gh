@@ -1,16 +1,18 @@
-# Issue 1596: preparser hangs if line starts with ...
+# Issue 1596: [with patch, review/change] preparser hangs if line starts with ...
 
 archive/issues_001596.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAs reported by 'Octoploid' on IRC: The preparser crashes if a line starts with '...'.\n\nThis is caused by a string index in preparse_ellipsis() becoming negative and wrapping to the end of the string.\n\nPatch attached. This makes preparse('...') return 'Ellipsis'. Not sure if that's the desired behaviour. Maybe a syntax error would be better?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1596\n\n",
+    "closed_at": "2008-01-04T21:34:04Z",
     "created_at": "2007-12-24T19:59:37Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: user interface",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "preparser hangs if line starts with ...",
+    "title": "[with patch, review/change] preparser hangs if line starts with ...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1596",
     "user": "https://github.com/wjp"

@@ -1,16 +1,17 @@
-# Issue 2636: notebook -- changing a cell without evaluate should put the red line back to the left
+# Issue 2636: [with patch; positive review] notebook -- changing a cell without evaluate should put the red line back to the left
 
 archive/issues_002636.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf you enter text in a cell but do *not* evaluate, then move the cursor out of the cell, the red line to the left should be put back, to emphasize that the cell has not been evaluated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2636\n\n",
+    "closed_at": "2008-05-12T10:59:25Z",
     "created_at": "2008-03-21T19:27:08Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- changing a cell without evaluate should put the red line back to the left",
+    "title": "[with patch; positive review] notebook -- changing a cell without evaluate should put the red line back to the left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2636",
     "user": "https://github.com/williamstein"

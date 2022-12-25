@@ -1,15 +1,16 @@
-# Issue 1557: notebook -- usability improvement after uploading file
+# Issue 1557: [with patch; positive review] notebook -- usability improvement after uploading file
 
 archive/issues_001557.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n> Just out of curiosity should \"Use\" be replaced by a different name,\n> or should their be a big \"Back to Worksheet\" button on the page\n> after you upload the file?\n\nI like the idea of replacing \"Use\" with something like \"GUI\" and also\nplacing a \"Back to Worksheet\" button on the page after a file has been\nuploaded.\n```\n\nI don't like \"GUI\" since the whole thing is a GUI.  However, \"Worksheet\"\nmight be much better.   \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/1557\n\n",
+    "closed_at": "2008-05-11T08:42:52Z",
     "created_at": "2007-12-18T03:27:01Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- usability improvement after uploading file",
+    "title": "[with patch; positive review] notebook -- usability improvement after uploading file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1557",
     "user": "https://github.com/williamstein"

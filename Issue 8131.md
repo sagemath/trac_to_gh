@@ -3,7 +3,8 @@
 archive/issues_008131.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: Catalan numbers\n\nThe patch makes Sage aware of this fact.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8131\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: catalan\n\nThe patch makes Sage aware of this fact.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8131\n\n",
+    "closed_at": "2010-03-02T21:44:14Z",
     "created_at": "2010-01-30T09:40:20Z",
     "labels": [
         "component: combinatorics",
@@ -19,7 +20,7 @@ archive/issues_008131.json:
 ```
 Assignee: sage-combinat
 
-Keywords: Catalan numbers
+Keywords: catalan
 
 The patch makes Sage aware of this fact.
 

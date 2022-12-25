@@ -3,7 +3,7 @@
 archive/issues_009292.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9292\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: coxeter\n\nPotential interface:\n\n```\n    sage: W = SymmetricGroup(5)\n    sage: P = W.parabolic_subgroup((1,3,4))\n    # TODO: add desired features here\n    sage: TestSuite(P).run()\n```\n\n```\n    sage: P = W.reflection_subgroup(<a list/family of reflections>)\n    sage: TestSuite(P).run()\n```\nProof of concept attached. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9292\n\n",
     "created_at": "2010-06-21T08:28:06Z",
     "labels": [
         "component: combinatorics"
@@ -19,7 +19,22 @@ Assignee: sage-combinat
 
 CC:  sage-combinat
 
+Keywords: coxeter
 
+Potential interface:
+
+```
+    sage: W = SymmetricGroup(5)
+    sage: P = W.parabolic_subgroup((1,3,4))
+    # TODO: add desired features here
+    sage: TestSuite(P).run()
+```
+
+```
+    sage: P = W.reflection_subgroup(<a list/family of reflections>)
+    sage: TestSuite(P).run()
+```
+Proof of concept attached. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9292
 

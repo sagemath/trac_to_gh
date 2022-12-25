@@ -4,10 +4,11 @@ archive/issues_009510.json:
 ```json
 {
     "body": "Assignee: tbd\n\nToward the end of the gfan log file, it says\n\n```\nmake[2]: Leaving directory `/home/palmieri/eno/sage-4.5.alpha4/spkg/build/gfan-0.4plus.p1\\\n/src'\nrm: cannot remove `gfan_*': No such file or directory\n./gfan: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.14' not found (required by ./gfan\\\n)\ngfan links not created correctly\n```\nThe full log file is here:\n\n[http://sage.math.washington.edu/home/palmieri/misc/gfan-0.4plus.p1.log](http://sage.math.washington.edu/home/palmieri/misc/gfan-0.4plus.p1.log)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9510\n\n",
+    "closed_at": "2010-07-15T20:11:32Z",
     "created_at": "2010-07-15T15:49:25Z",
     "labels": [
         "component: packages: standard",
-        "blocker",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

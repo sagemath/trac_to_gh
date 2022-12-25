@@ -3,10 +3,11 @@
 archive/issues_009912.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nfrom sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b36c90f1490eac19#\n\n```\nsage: a=(sqrt(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 48) + 4*sqrt(3))/ (sqrt(3) + 5) \nsage: a.imag().n()\n0.939469338708203*sin(0.500000000000000*pi)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9913\n\n",
+    "body": "Assignee: @burcin\n\nCC:  cwitty\n\nfrom sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b36c90f1490eac19#\n\n```\nsage: a=(sqrt(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 48) + 4*sqrt(3))/ (sqrt(3) + 5) \nsage: a.imag().n()\n0.939469338708203*sin(0.500000000000000*pi)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9913\n\n",
+    "closed_at": "2010-11-01T10:12:30Z",
     "created_at": "2010-09-16T01:57:27Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: symbolics",
         "critical",
         "bug"
     ],
@@ -17,7 +18,7 @@ archive/issues_009912.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  cwitty
 

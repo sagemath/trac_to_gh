@@ -1,16 +1,17 @@
-# Issue 6263: Add __cmp__ method to ClassFunctions (group characters)
+# Issue 6263: [with patch; positive review] Add __cmp__ method to ClassFunctions (group characters)
 
 archive/issues_006263.json:
 ```json
 {
     "body": "Assignee: joyner\n\nThe loads/dumps test for ClassFunction fails because `__cmp__` is not defined.\n\n```\nsage: chi = ClassFunction(CyclicPermutationGroup(4), [1,-1,1,-1])\nsage: loads(dumps(chi)) == chi\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6263\n\n",
+    "closed_at": "2009-06-13T21:13:58Z",
     "created_at": "2009-06-11T20:28:36Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Add __cmp__ method to ClassFunctions (group characters)",
+    "title": "[with patch; positive review] Add __cmp__ method to ClassFunctions (group characters)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6263",
     "user": "https://github.com/saliola"

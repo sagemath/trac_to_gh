@@ -3,11 +3,12 @@
 archive/issues_008943.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: series, taylor\n\nThe function *series* can not give the power series expansion of f(x)=(1+arctan(x))**(1/x) , while *taylor* succeeds. Note that the function f can be continuously extended at 0.\n\n```\nsage: taylor((1+arctan(x))**(1/x), x, 0, 3)\n1/16*x^3*e + 1/8*x^2*e - 1/2*x*e + e\nsage: ((1+arctan(x))**(1/x)).series(x==0, 3)\nRuntimeError: power::eval(): division by zero\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8943\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: series, taylor\n\nThe function *series* can not give the power series expansion of f(x)=(1+arctan(x))**(1/x) , while *taylor* succeeds. Note that the function f can be continuously extended at 0.\n\n```\nsage: taylor((1+arctan(x))**(1/x), x, 0, 3)\n1/16*x^3*e + 1/8*x^2*e - 1/2*x*e + e\nsage: ((1+arctan(x))**(1/x)).series(x==0, 3)\nRuntimeError: power::eval(): division by zero\n```\n\n\nSubsidiary question: why the functions *taylor* and *series* perform similar tasks, but differently? \n\nIssue created by migration from https://trac.sagemath.org/ticket/8943\n\n",
+    "closed_at": "2011-05-27T12:01:14Z",
     "created_at": "2010-05-10T09:42:29Z",
     "labels": [
         "component: calculus",
-        "trivial"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "RuntimeError with series",
@@ -28,6 +29,9 @@ sage: taylor((1+arctan(x))**(1/x), x, 0, 3)
 sage: ((1+arctan(x))**(1/x)).series(x==0, 3)
 RuntimeError: power::eval(): division by zero
 ```
+
+
+Subsidiary question: why the functions *taylor* and *series* perform similar tasks, but differently? 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8943
 

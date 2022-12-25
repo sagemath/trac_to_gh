@@ -1,16 +1,17 @@
-# Issue 8153: [with patch] typo in documentation
+# Issue 8153: typo in documentation
 
 archive/issues_008153.json:
 ```json
 {
     "body": "Assignee: mvngu\n\ntrivial patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/8153\n\n",
+    "closed_at": "2010-02-03T02:42:54Z",
     "created_at": "2010-02-02T16:08:03Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch] typo in documentation",
+    "title": "typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8153",
     "user": "https://github.com/zimmermann6"

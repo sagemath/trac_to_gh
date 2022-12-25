@@ -1,22 +1,23 @@
-# Issue 3268: Fix GAP interface
+# Issue 3268: [with patch, positive review] Fix GAP interface printing
 
 archive/issues_003268.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI might be wrong, but it looks like output isn't getting printed:\n\n```\n# From a pure GAP session:\nGAP4, Version: 4.4.10 of 02-Oct-2007, i686-apple-darwin9.2.2-gcc\ngap> g := Group((1,3,2),(2,4,3));\nGroup([ (1,3,2), (2,4,3) ])\ngap> Stabilizer(g,4);\nGroup([ (1,3,2) ])\ngap> \n\n# From a Sage session:\nsage: %gap\n\n  --> Switching to Gap <-- \n\n''\ngap: g := Group((1,3,2),(2,4,3));\n\ngap: Stabilizer(g,4);\n\ngap: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3268\n\n",
+    "body": "Assignee: @mwhansen\n\nI might be wrong, but it looks like output isn't getting printed:\n\n```\n# From a pure GAP session:\nGAP4, Version: 4.4.10 of 02-Oct-2007, i686-apple-darwin9.2.2-gcc\ngap> g := Group((1,3,2),(2,4,3));\nGroup([ (1,3,2), (2,4,3) ])\ngap> Stabilizer(g,4);\nGroup([ (1,3,2) ])\ngap> \n\n# From a Sage session:\nsage: %gap\n\n  --> Switching to Gap <-- \n\n''\ngap: g := Group((1,3,2),(2,4,3));\n\ngap: Stabilizer(g,4);\n\ngap: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3268\n\n",
+    "closed_at": "2009-01-24T23:00:41Z",
     "created_at": "2008-05-21T16:43:12Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Fix GAP interface",
+    "title": "[with patch, positive review] Fix GAP interface printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3268",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 I might be wrong, but it looks like output isn't getting printed:
 

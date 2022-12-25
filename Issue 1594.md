@@ -4,6 +4,7 @@ archive/issues_001594.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nOn all variants of OSX the new libm4ri doesn't work at all.\n\nI just did some poking around and putting my own \n\nIssue created by migration from https://trac.sagemath.org/ticket/1594\n\n",
+    "closed_at": "2007-12-25T15:10:54Z",
     "created_at": "2007-12-24T18:15:53Z",
     "labels": [
         "component: linear algebra",

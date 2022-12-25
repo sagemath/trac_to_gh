@@ -3,7 +3,8 @@
 archive/issues_008617.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8617\n\n",
+    "body": "Assignee: @loefflerd\n\nThe two data files go in SAGE_ROOT/data/extcode/galrep\n\nIssue created by migration from https://trac.sagemath.org/ticket/8617\n\n",
+    "closed_at": "2010-07-06T03:27:37Z",
     "created_at": "2010-03-27T23:25:24Z",
     "labels": [
         "component: number fields"
@@ -17,7 +18,7 @@ archive/issues_008617.json:
 ```
 Assignee: @loefflerd
 
-
+The two data files go in SAGE_ROOT/data/extcode/galrep
 
 Issue created by migration from https://trac.sagemath.org/ticket/8617
 

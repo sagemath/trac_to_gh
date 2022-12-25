@@ -1,22 +1,25 @@
-# Issue 4568: Dangerous doc test of save_session
+# Issue 4568: [with patch, positive review] Dangerous doc test of save_session
 
 archive/issues_004568.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe doc test of `save_session` does the following:\n\n```\n        EXAMPLES:\n            sage: a = 5\n            sage: save_session('session')\n        \n        ...\n        Clean up the session file we just wrote to disk.\n            sage: os.unlink('session.sobj')\n```\n\nHence, if the user happens to have a file `session.sobj` in the current directory then running the doc test would destroy it.\n\nAccording to a suggestion of Robert Bradshow, using the `tempfile` Python module might help.\n\nUnfortunately I have no idea in what file `save_session` is defined - so, no patch at that point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4568\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: save_session temporary file\n\nThe doc test of `save_session` does the following:\n\n```\n        EXAMPLES:\n            sage: a = 5\n            sage: save_session('session')\n        \n        ...\n        Clean up the session file we just wrote to disk.\n            sage: os.unlink('session.sobj')\n```\n\nHence, if the user happens to have a file `session.sobj` in the current directory then running the doc test would destroy it.\n\nAccording to a suggestion of Robert Bradshow, using the `tempfile` Python module might help.\n\nUnfortunately I have no idea in what file `save_session` is defined - so, no patch at that point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4568\n\n",
+    "closed_at": "2008-11-28T20:51:33Z",
     "created_at": "2008-11-20T20:21:21Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Dangerous doc test of save_session",
+    "title": "[with patch, positive review] Dangerous doc test of save_session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4568",
     "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: mabshoff
+
+Keywords: save_session temporary file
 
 The doc test of `save_session` does the following:
 

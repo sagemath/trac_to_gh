@@ -3,7 +3,8 @@
 archive/issues_001743.json:
 ```json
 {
-    "body": "Assignee: wdjoyner\n\nSubject says it all, but see \n\nhttps://groups.google.com/group/sage-devel/t/c047ab8aee519bf\n\nfor the discussion. Reported initially by Kate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1743\n\n",
+    "body": "Assignee: mabshoff\n\nSubject says it all, but see \n\nhttps://groups.google.com/group/sage-devel/t/c047ab8aee519bf\n\nfor the discussion. Reported initially by Kate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1743\n\n",
+    "closed_at": "2008-01-11T21:03:34Z",
     "created_at": "2008-01-10T06:48:17Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_001743.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: wdjoyner
+Assignee: mabshoff
 
 Subject says it all, but see 
 

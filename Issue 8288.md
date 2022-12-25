@@ -3,7 +3,8 @@
 archive/issues_008288.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @nthiery\n\nKeywords: enumeration depth breadth forest children\n\nThe goal of this patch is to include breadth enumeration method for SearchForest...\n\nThe interested is for enumerated Set defined by a set of roots and a children function. For a finite set of roots but infinite set (infinite depth of the tree), the breadth method is a necessity.\n\nThe breadth method is also a need to define properly indices of infinite Graded algebra (but finite degree by degree). The patch contains method returning iterator of all element of given depth.\n\nUsing extra argument : father and next_brother method, it is possible to enumerate not starting from the roots of trees. a _iter_from_to method build an iterator keeping nothing in memory than the first and the last point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8288\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @nthiery\n\nKeywords: enumeration depth breadth forest children\n\nThe goal of this patch is to include breadth enumeration method for SearchForest, categorify SearchForest and make it very simple for inherit from it.\n\nAdd an example of Parent which inherit from SearchForest should be also fine.\n\nNote to the buildbot / release manager:\napply trac_8288_search_forest_depth_and_breath_improvement-nb.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/8288\n\n",
+    "closed_at": "2011-04-07T13:48:05Z",
     "created_at": "2010-02-16T22:17:26Z",
     "labels": [
         "component: combinatorics"
@@ -21,13 +22,12 @@ CC:  sage-combinat @nthiery
 
 Keywords: enumeration depth breadth forest children
 
-The goal of this patch is to include breadth enumeration method for SearchForest...
+The goal of this patch is to include breadth enumeration method for SearchForest, categorify SearchForest and make it very simple for inherit from it.
 
-The interested is for enumerated Set defined by a set of roots and a children function. For a finite set of roots but infinite set (infinite depth of the tree), the breadth method is a necessity.
+Add an example of Parent which inherit from SearchForest should be also fine.
 
-The breadth method is also a need to define properly indices of infinite Graded algebra (but finite degree by degree). The patch contains method returning iterator of all element of given depth.
-
-Using extra argument : father and next_brother method, it is possible to enumerate not starting from the roots of trees. a _iter_from_to method build an iterator keeping nothing in memory than the first and the last point.
+Note to the buildbot / release manager:
+apply trac_8288_search_forest_depth_and_breath_improvement-nb.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/8288
 

@@ -4,6 +4,7 @@ archive/issues_009010.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nA new biopython package was released May 20, 2010.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9010\n\n",
+    "closed_at": "2010-07-02T22:39:04Z",
     "created_at": "2010-05-21T16:23:37Z",
     "labels": [
         "component: packages: optional"

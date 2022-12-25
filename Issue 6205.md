@@ -1,15 +1,16 @@
-# Issue 6205: add __invert__ to number field morphism
+# Issue 6205: [with patch, with positive review] add __invert__ to number field morphism
 
 archive/issues_006205.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  craigcitro fwclarke\n\nKeywords: number field morphism invert\n\nThis tiny patch does the linear algebra to invert an endomorphism of a number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6205\n\n",
+    "closed_at": "2009-06-13T20:35:28Z",
     "created_at": "2009-06-04T03:42:36Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "add __invert__ to number field morphism",
+    "title": "[with patch, with positive review] add __invert__ to number field morphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6205",
     "user": "https://github.com/ncalexan"

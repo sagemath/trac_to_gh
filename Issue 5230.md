@@ -1,21 +1,22 @@
-# Issue 5230: implement boundary_style parameter for parametric 3d plots
+# Issue 5230: [with patch, positive review] implement boundary_style parameter for parametric 3d plots
 
 archive/issues_005230.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nBasically make it easy to create plots like this but in 1 line:\n\n```\nu, v = var('u,v')\nG = parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi), opacity=0.9)    \nC = parametric_plot3d((cos(0), sin(0) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)    \nD = parametric_plot3d((cos(pi), sin(pi) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)\nE = parametric_plot3d((cos(u), sin(u) + cos(0), sin(0)), (u, 0, pi), color='black', thickness=2)    \nF = parametric_plot3d((cos(u), sin(u) + cos(pi), sin(pi)), (u, 0, pi), color='black', thickness=2)\nK = G + C + D + E + F\n```\n\nInput would probably be like this (dictionary):\n\n```\nu, v = var('u,v')\nparametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi),\n      boundary_style={'color':'black', 'thickness':2})    \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5230\n\n",
+    "body": "Assignee: wcauchois\n\nBasically make it easy to create plots like this but in 1 line:\n\n```\nu, v = var('u,v')\nG = parametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi), opacity=0.9)    \nC = parametric_plot3d((cos(0), sin(0) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)    \nD = parametric_plot3d((cos(pi), sin(pi) + cos(v), sin(v)), (v, 0, pi), color='black', thickness=2)\nE = parametric_plot3d((cos(u), sin(u) + cos(0), sin(0)), (u, 0, pi), color='black', thickness=2)    \nF = parametric_plot3d((cos(u), sin(u) + cos(pi), sin(pi)), (u, 0, pi), color='black', thickness=2)\nK = G + C + D + E + F\n```\n\nInput would probably be like this (dictionary):\n\n```\nu, v = var('u,v')\nparametric_plot3d((cos(u), sin(u) + cos(v), sin(v)), (u, 0, pi), (v, 0, pi),\n      boundary_style={'color':'black', 'thickness':2})    \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5230\n\n",
+    "closed_at": "2009-04-09T08:12:36Z",
     "created_at": "2009-02-10T22:12:41Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "implement boundary_style parameter for parametric 3d plots",
+    "title": "[with patch, positive review] implement boundary_style parameter for parametric 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5230",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: wcauchois
 
 Basically make it easy to create plots like this but in 1 line:
 

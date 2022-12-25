@@ -1,9 +1,10 @@
-# Issue 3776: [with patch, needs review] cookies don't work for admin users
+# Issue 3776: [with patch, positive review] notebook -- cookies don't work for admin users
 
 archive/issues_003776.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe Notebook is unusable for Admin users.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3776\n\n",
+    "closed_at": "2008-08-13T00:03:08Z",
     "created_at": "2008-08-05T18:42:13Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003776.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] cookies don't work for admin users",
+    "title": "[with patch, positive review] notebook -- cookies don't work for admin users",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3776",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

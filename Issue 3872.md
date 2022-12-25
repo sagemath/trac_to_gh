@@ -1,30 +1,38 @@
-# Issue 3872: calculus -- incorporate ginac into without cln
+# Issue 3872: [with patch, positive review] calculus -- incorporate ginac into Sage
 
 archive/issues_003872.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @robertwb\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb\n\nTO USE:\n* \nhttp://sage.math.washington.edu/home/was/pynac/pynac-0.1.spkg\n\n* Apply this bundle to sage-3.1.1:\nhttp://sage.math.washington.edu/home/was/pynac/pynac.hg\n\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a symbolic arithmetic class that works like below in parallel with the existing sage symbolics, but is far from feature complete.\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.  \n\nOnce the above two steps are done and the spkg passes review, this ticket should be closed.  Only then should a more refined attack on the problem be carried out. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
+    "closed_at": "2008-10-18T00:01:20Z",
     "created_at": "2008-08-15T10:11:17Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "calculus -- incorporate ginac into without cln",
+    "title": "[with patch, positive review] calculus -- incorporate ginac into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3872",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @garyfurnish
+Assignee: @williamstein
 
 CC:  @burcin @robertwb
+
+TO USE:
+* 
+http://sage.math.washington.edu/home/was/pynac/pynac-0.1.spkg
+
+* Apply this bundle to sage-3.1.1:
+http://sage.math.washington.edu/home/was/pynac/pynac.hg
+
 
 The goal of this ticket:
 
 1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. 
 
-2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:
+2. Create a symbolic arithmetic class that works like below in parallel with the existing sage symbolics, but is far from feature complete.
 
 ```
 sage: var("x y",ns=1)
@@ -51,7 +59,10 @@ sage: timeit("((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expan
 ```
 
 
-The above would go in *before* any of this replaces the existing symbolic framework.
+The above would go in *before* any of this replaces the existing symbolic framework.  
+
+Once the above two steps are done and the spkg passes review, this ticket should be closed.  Only then should a more refined attack on the problem be carried out. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3872
 

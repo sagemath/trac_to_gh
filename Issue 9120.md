@@ -4,6 +4,7 @@ archive/issues_009120.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  olazo wcauchois\n\nIf a transformation is applied to a plotting function, it may return a function with the wrong parameter names.  This wrecks havoc since there are assumptions about the variables being passed in being the variable names of the function.  This patch corrects and tests for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9120\n\n",
+    "closed_at": "2010-06-06T19:49:00Z",
     "created_at": "2010-06-03T02:55:23Z",
     "labels": [
         "component: graphics",

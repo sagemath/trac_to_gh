@@ -4,6 +4,7 @@ archive/issues_008001.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: TestSuite, Category\n\n- More category tests: _test_category, _test_elements\n- Improvements to TestSuite\n  - Partial support for nested test suites\n  - Support for basic TestSuite(x) for x any Python object\n- Added TestSuite call for Spec and ref to #7946\n- Corresponding doctest updates\n\nDepends on #7921\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8001\n\n",
+    "closed_at": "2010-01-23T14:58:58Z",
     "created_at": "2010-01-19T18:20:02Z",
     "labels": [
         "component: doctest coverage"

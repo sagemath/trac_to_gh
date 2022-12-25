@@ -3,7 +3,8 @@
 archive/issues_004970.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @NathanDunfield\n\nThis is from a sage-support thread:\n\n```\nHi Michael\n\nthanks a lot! Tkinter is now working fine for me and I can use\nmatplotlib with the TkAgg backend\nFor the record, here are the steps I followed to get it working on Mac\nOS (10.4 and 10.5)\n1) Download the Tcl/Tk sources\n2) Compile the unix version (of Tcl and Tk) as follows\n./configure --enable-framework --disable-xft, make, make install\n3) Modify the setup.py file in the src directory of python-2.5.2.p8 by\nputting\n/System/Library  underneath /Library/Frameworks at the top the\nfunction detect_tkinter_darwin\n4) run ./spkg-install in python-2.5.2.p8\n5) reinstall matplotlib: sage -f matplotlib-0.98.3.p4\n\nAs this is the way Apple recommends to do it in the developer\ndocumentation. I suggest that\nthe fix in the function detect_tkinter_darwin of the python-2.5.2.p8\nsetup.py gets included in the official Sage release. People needing\nTkinter on mac would then just need to have Tcl/Tk without\nxft installed before compiling Sage.\n\nBest wishes and thanks for the great job you are doing with the Sage\ndevelopers and maintainers,\nEric\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4970\n\n",
+    "body": "Assignee: @NathanDunfield\n\nCC:  @NathanDunfield\n\nThis is from a sage-support thread:\n\n```\nHi Michael\n\nthanks a lot! Tkinter is now working fine for me and I can use\nmatplotlib with the TkAgg backend\nFor the record, here are the steps I followed to get it working on Mac\nOS (10.4 and 10.5)\n1) Download the Tcl/Tk sources\n2) Compile the unix version (of Tcl and Tk) as follows\n./configure --enable-framework --disable-xft, make, make install\n3) Modify the setup.py file in the src directory of python-2.5.2.p8 by\nputting\n/System/Library  underneath /Library/Frameworks at the top the\nfunction detect_tkinter_darwin\n4) run ./spkg-install in python-2.5.2.p8\n5) reinstall matplotlib: sage -f matplotlib-0.98.3.p4\n\nAs this is the way Apple recommends to do it in the developer\ndocumentation. I suggest that\nthe fix in the function detect_tkinter_darwin of the python-2.5.2.p8\nsetup.py gets included in the official Sage release. People needing\nTkinter on mac would then just need to have Tcl/Tk without\nxft installed before compiling Sage.\n\nBest wishes and thanks for the great job you are doing with the Sage\ndevelopers and maintainers,\nEric\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4970\n\n",
+    "closed_at": "2015-01-13T01:15:46Z",
     "created_at": "2009-01-13T14:12:13Z",
     "labels": [
         "component: build",
@@ -16,7 +17,7 @@ archive/issues_004970.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @NathanDunfield
 
 CC:  @NathanDunfield
 

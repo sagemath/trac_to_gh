@@ -4,6 +4,7 @@ archive/issues_008982.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe jacobian used for the Van der Pol oscillator in the gsl/ode.pyx file has wrong dimensions 3x2. The example runs fine as the last line is ignored. The attached patch corrects that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8982\n\n",
+    "closed_at": "2010-06-06T01:30:18Z",
     "created_at": "2010-05-17T11:33:57Z",
     "labels": [
         "component: calculus",

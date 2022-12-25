@@ -3,10 +3,11 @@
 archive/issues_000404.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSomewhere along the line :-}, we added a requirement that GF(p^r) had to be created with a generator.\nThe code to create PSL(n,q) doesn't do this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/404\n\n",
+    "body": "Assignee: somebody\n\nSomewhere along the line :-}, we added a requirement that GF(p^r) had to be created with a generator.\nThe code to create PSL(n,q) doesn't do this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/404\n\n",
+    "closed_at": "2007-07-27T19:35:48Z",
     "created_at": "2007-07-19T23:57:34Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "Can't create PSL(n,q) for q a prime power",
@@ -15,7 +16,7 @@ archive/issues_000404.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 Somewhere along the line :-}, we added a requirement that GF(p^r) had to be created with a generator.
 The code to create PSL(n,q) doesn't do this.

@@ -3,7 +3,8 @@
 archive/issues_004458.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @kcrisman\n\nPerhaps even a blurb about variables being references (if it's not to complicated). However, at the very least there should be something in the calculus section(s) to the effect of \"If you get a NameError, check to see if you either misspelled something or forgot to define a variable with var(...)\"\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4458\n\n",
+    "body": "Assignee: afleckenstein\n\nCC:  @kcrisman\n\nKeywords: beginner\n\nPerhaps even a blurb about variables being references (if it's not to complicated). However, at the very least there should be something in the calculus section(s) to the effect of \"If you get a NameError, check to see if you either misspelled something or forgot to define a variable with var(...)\"\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4458\n\n",
+    "closed_at": "2015-01-02T15:46:32Z",
     "created_at": "2008-11-07T01:39:27Z",
     "labels": [
         "component: documentation",
@@ -16,9 +17,11 @@ archive/issues_004458.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tba
+Assignee: afleckenstein
 
 CC:  @kcrisman
+
+Keywords: beginner
 
 Perhaps even a blurb about variables being references (if it's not to complicated). However, at the very least there should be something in the calculus section(s) to the effect of "If you get a NameError, check to see if you either misspelled something or forgot to define a variable with var(...)"
 

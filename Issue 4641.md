@@ -1,9 +1,10 @@
-# Issue 4641: [with patch, needs review] "-notebook" commandline option should take trailing options
+# Issue 4641: [with patch, positive review] "-notebook" commandline option should take trailing options
 
 archive/issues_004641.json:
 ```json
 {
-    "body": "Assignee: @kwankyu\n\nKeywords: commandline option\n\nThe commandline option \"-notebook\" is advertised to take trailing options, but does not yet (as of Sage 3.1.2). A patch is included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4641\n\n",
+    "body": "Assignee: somebody\n\nKeywords: commandline option\n\nThe commandline option \"-notebook\" is advertised to take trailing options, but does not yet (as of Sage 3.1.2). A patch is included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4641\n\n",
+    "closed_at": "2008-11-28T23:49:22Z",
     "created_at": "2008-11-28T05:24:45Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_004641.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] \"-notebook\" commandline option should take trailing options",
+    "title": "[with patch, positive review] \"-notebook\" commandline option should take trailing options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4641",
     "user": "https://github.com/kwankyu"
 }
 ```
-Assignee: @kwankyu
+Assignee: somebody
 
 Keywords: commandline option
 

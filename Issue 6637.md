@@ -1,15 +1,16 @@
-# Issue 6637: Follow up on #6000: standardize the interface to TransitiveIdeal and friends
+# Issue 6637: standardize the interface to TransitiveIdeal and friends
 
 archive/issues_006637.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @hivert\n\nKeywords: backtrack, enumerated set, transitive closure\n\nImplement a single entry point:\n\n```\n     TransitiveClosure(roots, operators = ..., children = , acyclic = True, algo = \"DFS\", \"BFS\", internal_nodes = False)\n```\n\nfor all the functions in sage.combinat.backtrack.py SearchForest, TransitiveIdeal, TransitiveIdealGraded\n\nTODO: discuss the names above\n\nIssue created by migration from https://trac.sagemath.org/ticket/6637\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @hivert\n\nKeywords: backtrack, enumerated set, transitive closure, days57\n\n1. Implement a single entry point for recursively enumerated sets:\n\n```\n     RecursivelyEnumeratedSet(seeds, successors, structure=..., enumeration=...)\n```\n\nwhere `structure` takes values in the set `[None, 'forest', 'graded', 'symmetric']` and `enumeration` takes values in the set `[None, 'depth', 'breadth', 'naive']`.\n\n2. Deprecate `TransitiveIdeal`, `TransitiveIdealGraded` and `SearchForest` as entry point.\n\n3. `TransitiveIdeal(succ, seeds)` keeps the same behavior as before and is now the same as `RecursivelyEnumeratedSet(seeds, succ, structure=None, enumeration='naive')`.\n\n4. `TransitiveIdealGraded(succ, seeds, max_depth)` keeps the same behavior as before and is now the same as `RecursivelyEnumeratedSet(seeds, succ, structure=None, enumeration='breadth', max_depth=max_depth)`.\n\nRemarks:\n\nA. For now the code of `SearchForest` is still in `sage/combinat/backtrack.py`. It should be moved in `sage/sets/recursively_enumerated_set.pyx`. See #16351.\n\nB. `TransitiveIdeal` and `TransitiveIealGraded` are used in the code of `sage/combinat`, `sage/categories` and `sage/groups` at least. These should be updated to use `RecursivelyEnumeratedSet` for speed improvements and also to avoid issues explained in C below. See #16352.\n\nC. Note that there were some issues with `TransitiveIdeal` and `TransitiveIdealGraded`, namely:\n\n   - Enumeration of `TransitiveIdeal` is claimed to be depth first search in the top level file `backtrack.py`, but in fact, it is neither breadth first neither depth first. It is what I call a naive search.\n   - Enumeration of `TransitiveIdealGraded` is indeed breadth first as claimed but it does not make use of the graded hypothesis at all because it remembers every generated elements.\n\nSee [my status report at SageDays57](http://www.liafa.univ-paris-diderot.fr/~labbe/blogue/2014/04/my-status-report-at-sage-days-57-recursivelyenumeratedset/) for more info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6637\n\n",
+    "closed_at": "2014-05-13T08:42:15Z",
     "created_at": "2009-07-27T12:10:47Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
-    "title": "Follow up on #6000: standardize the interface to TransitiveIdeal and friends",
+    "title": "standardize the interface to TransitiveIdeal and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6637",
     "user": "https://github.com/nthiery"
@@ -19,17 +20,34 @@ Assignee: @mwhansen
 
 CC:  sage-combinat @hivert
 
-Keywords: backtrack, enumerated set, transitive closure
+Keywords: backtrack, enumerated set, transitive closure, days57
 
-Implement a single entry point:
+1. Implement a single entry point for recursively enumerated sets:
 
 ```
-     TransitiveClosure(roots, operators = ..., children = , acyclic = True, algo = "DFS", "BFS", internal_nodes = False)
+     RecursivelyEnumeratedSet(seeds, successors, structure=..., enumeration=...)
 ```
 
-for all the functions in sage.combinat.backtrack.py SearchForest, TransitiveIdeal, TransitiveIdealGraded
+where `structure` takes values in the set `[None, 'forest', 'graded', 'symmetric']` and `enumeration` takes values in the set `[None, 'depth', 'breadth', 'naive']`.
 
-TODO: discuss the names above
+2. Deprecate `TransitiveIdeal`, `TransitiveIdealGraded` and `SearchForest` as entry point.
+
+3. `TransitiveIdeal(succ, seeds)` keeps the same behavior as before and is now the same as `RecursivelyEnumeratedSet(seeds, succ, structure=None, enumeration='naive')`.
+
+4. `TransitiveIdealGraded(succ, seeds, max_depth)` keeps the same behavior as before and is now the same as `RecursivelyEnumeratedSet(seeds, succ, structure=None, enumeration='breadth', max_depth=max_depth)`.
+
+Remarks:
+
+A. For now the code of `SearchForest` is still in `sage/combinat/backtrack.py`. It should be moved in `sage/sets/recursively_enumerated_set.pyx`. See #16351.
+
+B. `TransitiveIdeal` and `TransitiveIealGraded` are used in the code of `sage/combinat`, `sage/categories` and `sage/groups` at least. These should be updated to use `RecursivelyEnumeratedSet` for speed improvements and also to avoid issues explained in C below. See #16352.
+
+C. Note that there were some issues with `TransitiveIdeal` and `TransitiveIdealGraded`, namely:
+
+   - Enumeration of `TransitiveIdeal` is claimed to be depth first search in the top level file `backtrack.py`, but in fact, it is neither breadth first neither depth first. It is what I call a naive search.
+   - Enumeration of `TransitiveIdealGraded` is indeed breadth first as claimed but it does not make use of the graded hypothesis at all because it remembers every generated elements.
+
+See [my status report at SageDays57](http://www.liafa.univ-paris-diderot.fr/~labbe/blogue/2014/04/my-status-report-at-sage-days-57-recursivelyenumeratedset/) for more info.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6637
 

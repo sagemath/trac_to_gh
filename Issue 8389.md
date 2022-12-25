@@ -1,16 +1,17 @@
-# Issue 8389: Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']
+# Issue 8389: Implement MatrixSpace(...)['x']
 
 archive/issues_008389.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @orlitzky @nthiery\n\nThis makes Sage eat all available memory until it gets interrupted:\n\n```\n$ ./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: MatrixSpace(QQ, 2)['x']\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)  \n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/co/sage-4.3.3/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         \n    792             while True:                                                          \n    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         \n--> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         \n    795\n    796                 weight += 1\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    393             return self(entries.matrix(), copy=False)\n    394\n--> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    396\n    397     def change_ring(self, R):\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)\n   1068             if isinstance(x[0], list):\n   1069                 x = sum(x,[])\n-> 1070             elif hasattr(x[0], \"is_vector\"): # TODO: is this the best way to test that?\n   1071                 e = []\n   1072                 for v in x:\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)\n    114             return cls\n    115\n--> 116     def __call__(cls, *args, **options):\n    117         \"\"\"\n    118         This method implements ``cls(<some arguments>)``.\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n```\n\nNote that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since\n\n```\nDefinition:     PolynomialRing [...]\nDocstring:\n       [...]\n       INPUT:\n\n       * ``base_ring`` -- a commutative ring\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky @nthiery\n\n...and rationalize the implementation of `__getitem__` for rings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
+    "closed_at": "2014-03-03T18:55:36Z",
     "created_at": "2010-02-27T17:22:15Z",
     "labels": [
         "component: algebra",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']",
+    "title": "Implement MatrixSpace(...)['x']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8389",
     "user": "https://github.com/mezzarobba"
@@ -20,73 +21,7 @@ Assignee: @aghitza
 
 CC:  @orlitzky @nthiery
 
-This makes Sage eat all available memory until it gets interrupted:
-
-```
-$ ./sage     
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-sage: MatrixSpace(QQ, 2)['x']
-^C---------------------------------------------------------------------------
-KeyboardInterrupt                         Traceback (most recent call last)  
-| Sage Version 4.3.3, Release Date: 2010-02-21                       |
-| Type notebook() for the GUI, and license() for information.        |
-/home/marc/co/sage-4.3.3/<ipython console> in <module>()
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         
-    792             while True:                                                          
-    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         
---> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         
-    795
-    796                 weight += 1
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)
-    393             return self(entries.matrix(), copy=False)
-    394
---> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)
-    396
-    397     def change_ring(self, R):
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)
-   1068             if isinstance(x[0], list):
-   1069                 x = sum(x,[])
--> 1070             elif hasattr(x[0], "is_vector"): # TODO: is this the best way to test that?
-   1071                 e = []
-   1072                 for v in x:
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)
-    114             return cls
-    115
---> 116     def __call__(cls, *args, **options):
-    117         """
-    118         This method implements ``cls(<some arguments>)``.
-
-/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)
-      7
-      8 def my_sigint(x, n):
-----> 9     raise KeyboardInterrupt
-     10
-     11 def my_sigfpe(x, n):
-```
-
-Note that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since
-
-```
-Definition:     PolynomialRing [...]
-Docstring:
-       [...]
-       INPUT:
-
-       * ``base_ring`` -- a commutative ring
-```
+...and rationalize the implementation of `__getitem__` for rings.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8389
 

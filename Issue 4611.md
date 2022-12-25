@@ -1,9 +1,10 @@
-# Issue 4611: deprecate sqrt_approx
+# Issue 4611: [with patch, positive review] deprecate sqrt_approx
 
 archive/issues_004611.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis is should be folded into the sqrt(...) function by passing a non-None prec. This exists, e.g. in sage.rings.Rational\n\nIssue created by migration from https://trac.sagemath.org/ticket/4611\n\n",
+    "closed_at": "2009-01-24T19:54:56Z",
     "created_at": "2008-11-25T07:11:51Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_004611.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "deprecate sqrt_approx",
+    "title": "[with patch, positive review] deprecate sqrt_approx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4611",
     "user": "https://github.com/robertwb"

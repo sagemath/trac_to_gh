@@ -1,9 +1,10 @@
-# Issue 3824: [with patch, needs review] notebook -- clicking sign out needs to resource not found page
+# Issue 3824: [with patch, positive review] notebook -- clicking sign out needs to resource not found page
 
 archive/issues_003824.json:
 ```json
 {
     "body": "Assignee: boothby\n\nBug caused by http://trac.sagemath.org/sage_trac/attachment/ticket/3591/sage-3591.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/3824\n\n",
+    "closed_at": "2008-08-13T00:11:28Z",
     "created_at": "2008-08-12T21:22:12Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003824.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] notebook -- clicking sign out needs to resource not found page",
+    "title": "[with patch, positive review] notebook -- clicking sign out needs to resource not found page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3824",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

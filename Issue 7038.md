@@ -3,10 +3,11 @@
 archive/issues_007038.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI gather ratpoints is causing problems with it wanting a very recent version of gcc, where here is another issue. Even if the variable CC is set to the Sun compiler, ratpoints ignores that and simply uses gcc anyway. \n\nThe build of ratpoints was attempted using \n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nSo it seems there are two at least two issues to resolve in ratpoints. \n\n```\nratpoints-2.1.2.p2/src/testdata.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/ratpoints-2.1.2.p2/src'\ngcc sift.c -c -o sift.o -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -funroll-loops\ngcc gen_init_sieve_h.c -o gen_init_sieve_h  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib -lgmp -lm\n./gen_init_sieve_h > init_sieve.h\ngcc init.c -c -o init.o -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -funroll-loops -O3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7038\n\n",
+    "body": "Assignee: tbd\n\nI gather ratpoints is causing problems with it wanting a very recent version of gcc, where here is another issue. Even if the variable CC is set to the Sun compiler, ratpoints ignores that and simply uses gcc anyway. \n\nThe build of ratpoints was attempted using \n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021 \n\nSo it seems there are two at least two issues to resolve in ratpoints. \n\n```\nratpoints-2.1.2.p2/src/testdata.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/ratpoints-2.1.2.p2/src'\ngcc sift.c -c -o sift.o -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -funroll-loops\ngcc gen_init_sieve_h.c -o gen_init_sieve_h  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib -lgmp -lm\n./gen_init_sieve_h > init_sieve.h\ngcc init.c -c -o init.o -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -funroll-loops -O3\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7038\n\n",
+    "closed_at": "2012-04-04T13:23:38Z",
     "created_at": "2009-09-27T15:52:54Z",
     "labels": [
-        "component: build",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -25,7 +26,7 @@ The build of ratpoints was attempted using
 * Solaris 10 update 7 on SPARC
 * sage-4.1.2.alpha2
 * Sun Studio 12.1
-* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
+* An updated configure script to allow the Sun compiler to be used #7021 
 
 So it seems there are two at least two issues to resolve in ratpoints. 
 
@@ -48,6 +49,8 @@ gcc gen_init_sieve_h.c -o gen_init_sieve_h  -I/export/home/drkirkby/sage/gcc32/s
 ./gen_init_sieve_h > init_sieve.h
 gcc init.c -c -o init.o -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -funroll-loops -O3
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7038
 

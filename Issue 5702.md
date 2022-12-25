@@ -1,9 +1,10 @@
-# Issue 5702: make "make check" & friends doctest the documentation too
+# Issue 5702: [with patch, with positive review] make "make check" & friends doctest the documentation too
 
 archive/issues_005702.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRight now the various make check targets do not test the documentation. Fix that.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5702\n\n",
+    "closed_at": "2009-04-16T10:20:11Z",
     "created_at": "2009-04-06T23:18:03Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005702.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "make \"make check\" & friends doctest the documentation too",
+    "title": "[with patch, with positive review] make \"make check\" & friends doctest the documentation too",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5702",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

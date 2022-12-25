@@ -1,16 +1,17 @@
-# Issue 2050: disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)
+# Issue 2050: [with patch, positive review] disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)
 
 archive/issues_002050.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nInstead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). \n\n```\nsage: R=RealField(30)\nsage: M=matrix(R,2,[2,1,1,1])\nsage: M.eigenspaces()\n\n[\n(2.6180340, [\n\n]),\n(0.38196601, [\n\n])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2050\n\n",
+    "closed_at": "2008-02-28T00:57:07Z",
     "created_at": "2008-02-05T05:00:28Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)",
+    "title": "[with patch, positive review] disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2050",
     "user": "https://github.com/williamstein"

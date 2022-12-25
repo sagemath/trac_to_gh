@@ -4,6 +4,7 @@ archive/issues_007250.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @craigcitro boothby @rlmill\n\nKeywords: cached function\n\nThis used to work before #6937:\n\n```\n    sage: f = cached_function(sage.structure.element.is_RingElement)\n    sage: f(1)\n    True\n```\n\nThat's used at one spot in the category code (but we can disable it temporarily)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7250\n\n",
+    "closed_at": "2013-07-23T15:41:21Z",
     "created_at": "2009-10-19T21:43:40Z",
     "labels": [
         "component: misc",

@@ -1,9 +1,10 @@
-# Issue 5041: make it so the magma .sig files in extcode don't get written there by magma
+# Issue 5041: [with patch; positive review] make it so the magma .sig files in extcode don't get written there by magma
 
 archive/issues_005041.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf one installs sage sytem wide, and a user tries to run any magma commands, and the .sig files aren't written in data/extcode/magma, then BOOM!  This is a total show stopper for any \"normal users\" to use the sage magma interface for anything serious.  This must be FIXED!\n\nTo fix this, when the magma interface is first run, make sure to copy the .m files over to $DOT_SAGE/magma first and load from there.   One will have to do the copy the first time the magma interface is started in any magma session.   alternatively, one could try: except: the magma.load command, and if it fails, then try to copy and load from /tmp/, say or DOT_SAGE/temp/.  Maybe the second idea is cleaner. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5041\n\n",
+    "closed_at": "2009-01-23T08:03:42Z",
     "created_at": "2009-01-20T23:34:43Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_005041.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "make it so the magma .sig files in extcode don't get written there by magma",
+    "title": "[with patch; positive review] make it so the magma .sig files in extcode don't get written there by magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5041",
     "user": "https://github.com/williamstein"

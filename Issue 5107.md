@@ -4,6 +4,7 @@ archive/issues_005107.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n\nthe last two digits are incorrect\n\ncontinued_fraction(sqrt(109))\n[10, 2, 3, 1, 2, 4, 1, 6, 6, 1, 4, 2, 1, 3, 2, 20, 3]\n\nthe last digit (3) is incorrect\n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/ab840e109863fcf3/c38d571a161b7628\n\nIssue created by migration from https://trac.sagemath.org/ticket/5107\n\n",
+    "closed_at": "2010-01-22T18:27:44Z",
     "created_at": "2009-01-26T19:52:27Z",
     "labels": [
         "component: basic arithmetic",

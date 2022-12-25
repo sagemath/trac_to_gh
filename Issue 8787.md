@@ -4,6 +4,7 @@ archive/issues_008787.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nAmazingly, openssl released version *1.0*! Let's upgrade to this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8787\n\n",
+    "closed_at": "2010-07-08T18:57:45Z",
     "created_at": "2010-04-27T23:02:19Z",
     "labels": [
         "component: packages: optional"

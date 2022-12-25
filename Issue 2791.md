@@ -1,16 +1,17 @@
-# Issue 2791: [with patch; needs review] Build symmetrica with -fPIC on Debian
+# Issue 2791: [with patch; positive review] Build symmetrica with -fPIC on Debian
 
 archive/issues_002791.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nNow that the linbox bug is fixed, I tried to build SAGE itself, and am running into more -fPIC problems.  Attached is a patch to make symmetric build with -fPIC.\n\nThough really, we should fix the symmetrica build system.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2791\n\n",
+    "closed_at": "2008-04-03T11:25:42Z",
     "created_at": "2008-04-03T06:15:23Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] Build symmetrica with -fPIC on Debian",
+    "title": "[with patch; positive review] Build symmetrica with -fPIC on Debian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2791",
     "user": "https://github.com/timabbott"

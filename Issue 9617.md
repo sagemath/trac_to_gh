@@ -3,10 +3,11 @@
 archive/issues_009617.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  @nexttime @jhpalmieri\n\nThis error has been noticed throuugh #9584\n\nAfter taking a look at the corresponding part of the code, *OF COURSE* something needed to be changedm but to be honest I have no inkling why Sage did not report this as an error : I was adding str(k) in a string while k.... was not defined ? O_o\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9617\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nexttime @jhpalmieri\n\nKeywords: CPLEX, GLPK, glpsol, MPS, file\n\nThis error has been noticed throuugh #9584\n\nAfter taking a look at the corresponding part of the code, *OF COURSE* something needed to be changedm but to be honest I have no inkling why Sage did not report this as an error : I was adding str(k) in a string while k.... was not defined ? O_o\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9617\n\n",
+    "closed_at": "2010-11-16T17:58:09Z",
     "created_at": "2010-07-28T03:08:01Z",
     "labels": [
-        "component: numerical",
+        "component: linear programming",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -19,6 +20,8 @@ archive/issues_009617.json:
 Assignee: jason, jkantor
 
 CC:  @nexttime @jhpalmieri
+
+Keywords: CPLEX, GLPK, glpsol, MPS, file
 
 This error has been noticed throuugh #9584
 

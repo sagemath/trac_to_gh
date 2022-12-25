@@ -4,6 +4,7 @@ archive/issues_008919.json:
 ```json
 {
     "body": "Assignee: wjlaffin\n\nThere is a hanging parens.\n\n```\na = Sets.super_categories\na?\n```\n\nA patch is coming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8919\n\n",
+    "closed_at": "2010-05-17T06:50:30Z",
     "created_at": "2010-05-07T16:54:46Z",
     "labels": [
         "component: documentation",

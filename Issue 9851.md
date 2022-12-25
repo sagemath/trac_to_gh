@@ -4,9 +4,11 @@ archive/issues_009851.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis method contains an error, as reported in \nhttp://groups.google.com/group/sage-support/browse_thread/thread/f747663b0b315105/5c1314c9855e0cfb?show_docid=5c1314c9855e0cfb&pli=1\n\nThis (very) short patch fixes it. I do not even understand why it was not like that fromt he beginning. I'm guessing a copy/paste is responsible `:-D`\n\nTo be applied on top of #9350 which is an important update and may be broken if this patch was to be applied first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9852\n\n",
+    "closed_at": "2010-09-15T22:52:22Z",
     "created_at": "2010-09-03T18:24:28Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Error in edge_cut",

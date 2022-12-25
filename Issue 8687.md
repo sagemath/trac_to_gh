@@ -3,7 +3,8 @@
 archive/issues_008687.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nTo generate the certificate required for secure (https) notebooks, openssl is called (in Linux, at least). By default, openssl generates 512bit RSA keys, which are far too weak to be used with any degree of confidence.\n\nThe offending code is in the sagenb module, in the run_notebook.py file, line 100. A simple fix is to change the line to:\n\n  cmd = ['openssl genrsa 2048 > %s' % private_pem]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8687\n\n",
+    "body": "Assignee: jason, was\n\nTo generate the certificate required for secure (https) notebooks, openssl is called (in Linux, at least). By default, openssl generates 512bit RSA keys, which are far too weak to be used with any degree of confidence.\n\nThe offending code is in the sagenb module, in the run_notebook.py file, line 100. A simple fix is to change the line to:\n\n    cmd = ['openssl genrsa 2048 > %s' % private_pem]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8687\n\n",
+    "closed_at": "2014-12-11T18:35:43Z",
     "created_at": "2010-04-14T13:32:34Z",
     "labels": [
         "component: notebook",
@@ -22,7 +23,7 @@ To generate the certificate required for secure (https) notebooks, openssl is ca
 
 The offending code is in the sagenb module, in the run_notebook.py file, line 100. A simple fix is to change the line to:
 
-  cmd = ['openssl genrsa 2048 > %s' % private_pem]
+    cmd = ['openssl genrsa 2048 > %s' % private_pem]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8687
 

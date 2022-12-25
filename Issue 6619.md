@@ -1,26 +1,29 @@
-# Issue 6619: [with patch, needs review] Fix ``inner`` option for integer vectors
+# Issue 6619: [with patch, positive review] Fix ``inner`` option for integer vectors
 
 archive/issues_006619.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat @burcin\n\nKeywords: inner, integer vectors\n\n```\n            sage: IV = IntegerVectors(3,10,inner=[4,1,3], min_part = 2)\n            sage: min_length, max_length, floor, ceiling, min_slope, max_slope = IV._parameters()\n            sage: floor(1), floor(2), floor(3)\n            (4, 2, 3)\n\n            sage: IV = IntegerVectors(3, 10, outer=[4,1,3], max_part = 3)\n            sage: min_length, max_length, floor, ceiling, min_slope, max_slope = IV._parameters()\n            sage: ceiling(1), ceiling(2), ceiling(3)\n            (3, 1, 3)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6619\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @burcin\n\nKeywords: inner, integer vectors\n\nThose examples did not pass due to a typo in the code.\n\n```\n            sage: IV = IntegerVectors(3,10,inner=[4,1,3], min_part = 2)\n            sage: min_length, max_length, floor, ceiling, min_slope, max_slope = IV._parameters()\n            sage: floor(1), floor(2), floor(3)\n            (4, 2, 3)\n\n            sage: IV = IntegerVectors(3, 10, outer=[4,1,3], max_part = 3)\n            sage: min_length, max_length, floor, ceiling, min_slope, max_slope = IV._parameters()\n            sage: ceiling(1), ceiling(2), ceiling(3)\n            (3, 1, 3)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6619\n\n",
+    "closed_at": "2009-07-25T21:16:01Z",
     "created_at": "2009-07-25T15:01:53Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Fix ``inner`` option for integer vectors",
+    "title": "[with patch, positive review] Fix ``inner`` option for integer vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6619",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: tbd
+Assignee: @nthiery
 
 CC:  sage-combinat @burcin
 
 Keywords: inner, integer vectors
+
+Those examples did not pass due to a typo in the code.
 
 ```
             sage: IV = IntegerVectors(3,10,inner=[4,1,3], min_part = 2)

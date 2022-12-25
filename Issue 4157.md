@@ -1,16 +1,17 @@
-# Issue 4157: add introduction to README.txt
+# Issue 4157: [with patch, positive review] add introduction to README.txt
 
 archive/issues_004157.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe SAGE_ROOT/README.txt should make clear that you don't have to do anything if you have the binary package. Include some introduction about that and then the build instructions for the source.\n\nThere are cases where users download the binary package, but do a make and end with a broken sage...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4157\n\n",
+    "closed_at": "2008-09-28T19:19:29Z",
     "created_at": "2008-09-20T10:41:29Z",
     "labels": [
         "component: build",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "add introduction to README.txt",
+    "title": "[with patch, positive review] add introduction to README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4157",
     "user": "https://github.com/haraldschilly"

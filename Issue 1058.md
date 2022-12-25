@@ -1,27 +1,29 @@
-# Issue 1058: the mwrank interface barfs on bad input
+# Issue 1058: [with spkg and patch, positive review] the mwrank interface barfs on bad input
 
 archive/issues_001058.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: mwrank\n\nIf give mwrank any invalid input, the running process quits, and you get a pexpect error, since Sage never restarts mwrank:\n\n# the a-list needs to be all integers\nsage: E = EllipticCurve( [0, 0, 0, 0, -675/4])\nsage: E.rank()\nException (click to the left for traceback):\n...\n# this should be valid\nsage: F = EllipticCurve( [0, 0, 1, 0, -169])\n# ... but calling mwrank again makes everything fail\nsage: F.rank()\nException (click to the left for traceback):\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1058\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: mwrank\n\nIf give mwrank any invalid input, the running process quits, and you get a pexpect error, since Sage never restarts mwrank:\n\n```\n# the a-list needs to be all integers\nsage: E = EllipticCurve( [0, 0, 0, 0, -675/4])\nsage: E.rank()\nException (click to the left for traceback):\n...\n# this should be valid\nsage: F = EllipticCurve( [0, 0, 1, 0, -169])\n# ... but calling mwrank again makes everything fail\nsage: F.rank()\nException (click to the left for traceback):\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1058\n\n",
+    "closed_at": "2008-01-27T20:19:24Z",
     "created_at": "2007-11-02T00:17:02Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "the mwrank interface barfs on bad input",
+    "title": "[with spkg and patch, positive review] the mwrank interface barfs on bad input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1058",
     "user": "https://github.com/bobmoretti"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
 
 Keywords: mwrank
 
 If give mwrank any invalid input, the running process quits, and you get a pexpect error, since Sage never restarts mwrank:
 
+```
 # the a-list needs to be all integers
 sage: E = EllipticCurve( [0, 0, 0, 0, -675/4])
 sage: E.rank()
@@ -33,6 +35,7 @@ sage: F = EllipticCurve( [0, 0, 1, 0, -169])
 sage: F.rank()
 Exception (click to the left for traceback):
 ...
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1058
 

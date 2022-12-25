@@ -3,7 +3,8 @@
 archive/issues_007308.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dkirkby @williamstein\n\nKeywords: cliquer\n\nThe section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exists even if SAGE_PORT is set to yes.\n\n\nI'll post a patch and a new SPKG here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7308\n\n",
+    "body": "Assignee: tbd\n\nCC:  dkirkby @williamstein\n\nKeywords: cliquer\n\nThe section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exits even if SAGE_PORT is set to yes.\n\nThe patch here shows the relevant changes in the spkg, which can be found at http://sage.math.washington.edu/home/mhansen/cliquer-1.2.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7308\n\n",
+    "closed_at": "2010-02-16T04:26:12Z",
     "created_at": "2009-10-26T09:23:36Z",
     "labels": [
         "component: porting: cygwin",
@@ -22,10 +23,9 @@ CC:  dkirkby @williamstein
 
 Keywords: cliquer
 
-The section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exists even if SAGE_PORT is set to yes.
+The section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exits even if SAGE_PORT is set to yes.
 
-
-I'll post a patch and a new SPKG here shortly.
+The patch here shows the relevant changes in the spkg, which can be found at http://sage.math.washington.edu/home/mhansen/cliquer-1.2.p3.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7308
 

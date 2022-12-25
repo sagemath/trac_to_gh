@@ -1,4 +1,4 @@
-# Issue 9788: Add support for degree bounds of Groebner bases
+# Issue 9788: Add support for degree bounds of Groebner bases using M2
 
 archive/issues_009788.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_009788.json:
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Add support for degree bounds of Groebner bases",
+    "title": "Add support for degree bounds of Groebner bases using M2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9788",
     "user": "https://github.com/mwhansen"

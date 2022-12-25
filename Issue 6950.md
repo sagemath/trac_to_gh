@@ -1,15 +1,17 @@
-# Issue 6950: computing algebraic immunity
+# Issue 6950: [with patch, positive review] computing algebraic immunity
 
 archive/issues_006950.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @malb\n\nIt would be nice to have an efficient implementation for computing the algebraic immunity of a Boolean function and finding annihilators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6950\n\n",
+    "closed_at": "2009-09-18T02:10:03Z",
     "created_at": "2009-09-17T19:28:30Z",
     "labels": [
-        "component: cryptography"
+        "component: cryptography",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "computing algebraic immunity",
+    "title": "[with patch, positive review] computing algebraic immunity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6950",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

@@ -1,22 +1,23 @@
-# Issue 1406: bug in coercion of multivariate polynomials (possibly libsingular related)
+# Issue 1406: [with patch] bug in coercion of multivariate polynomials (possibly libsingular related)
 
 archive/issues_001406.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nReducing a polynomial to the libsingular polynomials to GF(p^n) is buggy as the following examples all illustrate. \n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<xx,yy> = GF(5)[]\nsage: S(5*x*y + x + 17*y)\n0*xx*yy + xx + 2*yy\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = GF(5)[]\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = GF(25,'a')[]\nsage: S(5*x*y + x + 17*y)\n0*xx*yy + xx + 2*yy\nsage: type(S(5*x*y + x + 17*y))\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = Integers(5)[]\nsage: S(5*x*y + x + 17*y)\nxx + 2*yy\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1406\n\n",
+    "body": "Assignee: @mwhansen\n\nReducing a polynomial to the libsingular polynomials to GF(p^n) is buggy as the following examples all illustrate. \n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<xx,yy> = GF(5)[]\nsage: S(5*x*y + x + 17*y)\n0*xx*yy + xx + 2*yy\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = GF(5)[]\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = GF(25,'a')[]\nsage: S(5*x*y + x + 17*y)\n0*xx*yy + xx + 2*yy\nsage: type(S(5*x*y + x + 17*y))\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = Integers(5)[]\nsage: S(5*x*y + x + 17*y)\nxx + 2*yy\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1406\n\n",
+    "closed_at": "2007-12-06T20:48:03Z",
     "created_at": "2007-12-06T04:00:21Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "bug in coercion of multivariate polynomials (possibly libsingular related)",
+    "title": "[with patch] bug in coercion of multivariate polynomials (possibly libsingular related)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1406",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 Reducing a polynomial to the libsingular polynomials to GF(p^n) is buggy as the following examples all illustrate. 
 

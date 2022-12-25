@@ -1,15 +1,16 @@
-# Issue 6386: [with patch, needs review] Implement elliptic exponential
+# Issue 6386: [with new patch, with positive review] Implement elliptic exponential
 
 archive/issues_006386.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: elliptic curve\n\nThe elliptic exponential is the inverse to the elliptic log, i.e. it is the Weierstrass parametrization CC/L -> E(CC) for an elliptic curve.\n\nThe patch implements this as a member function of the PeriodLattice_ell class.  It works for all period lattices, real or not.  Currently it is accessible via a member function for elliptic curves over Q;  I'll make it work over number fields too, but ona separate ticket.  [At present it would already work for real embeddings;  shortly a rigorously justified elliptic log for non-real embeddings will also be ready.]\n\nThe hard work is done by pari's ellwp0() function, which was already wrapped, but to get the precision right that had to be slightly changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6386\n\n",
+    "closed_at": "2009-07-03T18:14:43Z",
     "created_at": "2009-06-22T18:09:09Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] Implement elliptic exponential",
+    "title": "[with new patch, with positive review] Implement elliptic exponential",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6386",
     "user": "https://github.com/JohnCremona"

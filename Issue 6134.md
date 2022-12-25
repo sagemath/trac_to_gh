@@ -1,9 +1,10 @@
-# Issue 6134: [with patch, needs review] Fix SR coercion issue with numpy.float128
+# Issue 6134: [with patch, positive review] Fix SR coercion issue with numpy.float128
 
 archive/issues_006134.json:
 ```json
 {
     "body": "On 32-bit boxes, numpy does not build a float128.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6134\n\n",
+    "closed_at": "2009-05-26T20:51:57Z",
     "created_at": "2009-05-26T20:07:41Z",
     "labels": [
         "component: symbolics",
@@ -11,7 +12,7 @@ archive/issues_006134.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] Fix SR coercion issue with numpy.float128",
+    "title": "[with patch, positive review] Fix SR coercion issue with numpy.float128",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6134",
     "user": "https://github.com/mwhansen"

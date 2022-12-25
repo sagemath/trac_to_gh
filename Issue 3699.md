@@ -1,16 +1,17 @@
-# Issue 3699: rewrite free_module.py to use basis matrices everywhere
+# Issue 3699: [with patch, positive review] rewrite free_module.py to use basis matrices everywhere
 
 archive/issues_003699.json:
 ```json
 {
     "body": "Assignee: tbd\n\nYou should only do this on top of patch #3514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3699\n\n",
+    "closed_at": "2009-06-03T18:29:24Z",
     "created_at": "2008-07-21T21:39:05Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "rewrite free_module.py to use basis matrices everywhere",
+    "title": "[with patch, positive review] rewrite free_module.py to use basis matrices everywhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3699",
     "user": "https://github.com/mwhansen"

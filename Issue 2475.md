@@ -1,16 +1,17 @@
-# Issue 2475: doctest -- get coverage of modular/dims.py up to 100%
+# Issue 2475: [with patch; with positive review] doctest -- get coverage of modular/dims.py up to 100%
 
 archive/issues_002475.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen I started this (sage-2.10.3):\n\n```\ndims.py\nSCORE dims.py: 11% (6 of 54)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2475\n\n",
+    "closed_at": "2008-03-15T08:32:39Z",
     "created_at": "2008-03-11T23:06:58Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "doctest -- get coverage of modular/dims.py up to 100%",
+    "title": "[with patch; with positive review] doctest -- get coverage of modular/dims.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2475",
     "user": "https://github.com/williamstein"

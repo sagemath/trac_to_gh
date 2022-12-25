@@ -1,9 +1,10 @@
-# Issue 2569: Add XOR to preparser
+# Issue 2569: [with patch, positive review] Add XOR to preparser
 
 archive/issues_002569.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nSince the preparser replaces \"^\" with \"**\",\nthere should be a way to access the python-buildin-XOR again.\n\nThe discussion is here: [http://groups.google.com/group/sage-devel/browse_thread/thread/a7aaccd2081098bc/de225692ee38f0a5](http://groups.google.com/group/sage-devel/browse_thread/thread/a7aaccd2081098bc/de225692ee38f0a5)\n\nThe conclusion is:\n\n```\nUnless somebody thinks of something better, I like ^^ as well.\n\nWilliam\n```\n\n\n\nSo the preparser should replace \"^^\" with \"^\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/2569\n\n",
+    "body": "Assignee: cwitty\n\nSince the preparser replaces \"^\" with \"**\",\nthere should be a way to access the python-buildin-XOR again.\n\nThe discussion is here: [http://groups.google.com/group/sage-devel/browse_thread/thread/a7aaccd2081098bc/de225692ee38f0a5](http://groups.google.com/group/sage-devel/browse_thread/thread/a7aaccd2081098bc/de225692ee38f0a5)\n\nThe conclusion is:\n\n```\nUnless somebody thinks of something better, I like ^^ as well.\n\nWilliam\n```\n\n\n\nSo the preparser should replace `^^` with `^`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2569\n\n",
+    "closed_at": "2008-08-25T01:13:54Z",
     "created_at": "2008-03-17T09:35:50Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_002569.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Add XOR to preparser",
+    "title": "[with patch, positive review] Add XOR to preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2569",
     "user": "https://github.com/m-r-k"
@@ -34,7 +35,7 @@ William
 
 
 
-So the preparser should replace "^^" with "^".
+So the preparser should replace `^^` with `^`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2569
 

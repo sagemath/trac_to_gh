@@ -1,22 +1,23 @@
-# Issue 962: automatic precision extension for long decimal literals does very strange things
+# Issue 962: [with patch, with positive revew] automatic precision extension for long decimal literals does very strange things
 
 archive/issues_000962.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nLong decimal literals become floating-point numbers whose precision depends on the length of the input literal *in characters*.  See this script for some of the confusing (and, in my opinion, wrong) behavior that results.\n\n```\nsage: (1.10000000000000000000).prec()\n73\nsage: (1.10000000000000000000e0).prec()\n79\nsage: (1e-25).prec()\n53\nsage: (0.0000000000000000000000001).prec()\n89\nsage: (00000000.0000000000000000000000001).prec()\n112\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/962\n\n",
+    "body": "Assignee: @mwhansen\n\nLong decimal literals become floating-point numbers whose precision depends on the length of the input literal *in characters*.  See this script for some of the confusing (and, in my opinion, wrong) behavior that results.\n\n```\nsage: (1.10000000000000000000).prec()\n73\nsage: (1.10000000000000000000e0).prec()\n79\nsage: (1e-25).prec()\n53\nsage: (0.0000000000000000000000001).prec()\n89\nsage: (00000000.0000000000000000000000001).prec()\n112\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/962\n\n",
+    "closed_at": "2007-12-02T03:06:22Z",
     "created_at": "2007-10-21T15:09:21Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "automatic precision extension for long decimal literals does very strange things",
+    "title": "[with patch, with positive revew] automatic precision extension for long decimal literals does very strange things",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/962",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 Long decimal literals become floating-point numbers whose precision depends on the length of the input literal *in characters*.  See this script for some of the confusing (and, in my opinion, wrong) behavior that results.
 

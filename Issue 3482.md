@@ -1,15 +1,16 @@
-# Issue 3482: create a pickle jar
+# Issue 3482: [with patch; with positive review] create a pickle jar
 
 archive/issues_003482.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nThis is easy to use -- so the docstrings at the bottom of sage/structure/sage_object.pyx.\n\n```\nsage.structure.sage_object.picklejar?\n```\nand \n\n```\nsage.structure.sage_object.unpickle_all?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3482\n\n",
+    "closed_at": "2008-07-07T03:34:15Z",
     "created_at": "2008-06-20T06:17:40Z",
     "labels": [
         "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "create a pickle jar",
+    "title": "[with patch; with positive review] create a pickle jar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3482",
     "user": "https://github.com/williamstein"

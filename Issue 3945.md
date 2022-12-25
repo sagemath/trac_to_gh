@@ -1,22 +1,23 @@
-# Issue 3945: sage -gdb doesn't work under OS X 10.5
+# Issue 3945: [with patch, positive review] sage -gdb doesn't work (ipython related?)
 
 archive/issues_003945.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
+    "closed_at": "2008-10-12T20:25:00Z",
     "created_at": "2008-08-24T18:47:11Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "sage -gdb doesn't work under OS X 10.5",
+    "title": "[with patch, positive review] sage -gdb doesn't work (ipython related?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3945",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
 CC:  @mwhansen
 

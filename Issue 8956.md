@@ -4,6 +4,7 @@ archive/issues_008956.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jdemeyer\n\nKeywords: autoevaluate, auto-evaluate\n\nApparently, #auto should be %auto now.  But the help page for the notebook doesn't say so.  As far as I can tell, both work?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8956\n\n",
+    "closed_at": "2011-06-20T18:53:53Z",
     "created_at": "2010-05-12T15:45:09Z",
     "labels": [
         "component: notebook",

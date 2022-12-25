@@ -1,16 +1,17 @@
-# Issue 5092: Primes()?? gets hung in len call
+# Issue 5092: Primes()?? gets hung in len call; also bring coverage to 100% for primes.py
 
 archive/issues_005092.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5092\n\n",
+    "closed_at": "2009-10-21T04:00:22Z",
     "created_at": "2009-01-25T02:11:19Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Primes()?? gets hung in len call",
+    "title": "Primes()?? gets hung in len call; also bring coverage to 100% for primes.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5092",
     "user": "https://github.com/williamstein"

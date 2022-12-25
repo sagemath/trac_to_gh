@@ -1,9 +1,10 @@
-# Issue 2880: Special code for elliptic curve cardinality for j=0 and j=1728
+# Issue 2880: [With revised patch, positive review] Special code for elliptic curve cardinality for j=0 and j=1728
 
 archive/issues_002880.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen the new code for point counting on elliptic curves over arbitrary finite fields was implemented, I left handling the special cases j=0 and j=1728 for a rainy day.  These cases were handled in not too bad a way, but as there are special formulas for these cases it was always going to be a good idea to implement them.\n\nNot having any reference which does everything needed here (especially for the really exceptional cases where the characteristic is 2 or 3 and j=0=1728) I worked it all out from scratch, and here is the result.\n\nThere are copious comments and doctests.  I will write up the full justification in due course.  In the meantime I hope we can merge this patch (based on 3.0.alpha1) quite soon!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2880\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves\n\nWhen the new code for point counting on elliptic curves over arbitrary finite fields was implemented, I left handling the special cases j=0 and j=1728 for a rainy day.  These cases were handled in not too bad a way, but as there are special formulas for these cases it was always going to be a good idea to implement them.\n\nNot having any reference which does everything needed here (especially for the really exceptional cases where the characteristic is 2 or 3 and j=0=1728) I worked it all out from scratch, and here is the result.\n\nThere are copious comments and doctests.  I will write up the full justification in due course.  In the meantime I hope we can merge this patch (based on 3.0.alpha1) quite soon!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2880\n\n",
+    "closed_at": "2008-04-13T16:03:31Z",
     "created_at": "2008-04-11T20:07:20Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,13 +12,15 @@ archive/issues_002880.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Special code for elliptic curve cardinality for j=0 and j=1728",
+    "title": "[With revised patch, positive review] Special code for elliptic curve cardinality for j=0 and j=1728",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2880",
     "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
+
+Keywords: elliptic curves
 
 When the new code for point counting on elliptic curves over arbitrary finite fields was implemented, I left handling the special cases j=0 and j=1728 for a rainy day.  These cases were handled in not too bad a way, but as there are special formulas for these cases it was always going to be a good idea to implement them.
 

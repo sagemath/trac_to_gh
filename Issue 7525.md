@@ -4,6 +4,7 @@ archive/issues_007525.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThere have been a few questions on sage-support and sage-devel recently about which files to edit in the Sage library.  The attached patch tries to address this.  (It also deletes a paragraph which got included twice.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7525\n\n",
+    "closed_at": "2009-11-29T05:46:17Z",
     "created_at": "2009-11-24T18:11:04Z",
     "labels": [
         "component: documentation"

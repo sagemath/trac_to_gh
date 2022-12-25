@@ -1,16 +1,18 @@
-# Issue 4848: [with patch, needs review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py
+# Issue 4848: [with patch, positive review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py
 
 archive/issues_004848.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  wstein\n\nThe file sage/schemes/elliptic_curves/heegner.py is mainly some comments and a bunch of Magma code. I don't see anything useful in there, so let's get rid of it.\n\nLong doctests pass with the file and its copies removed from build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4848\n\n",
+    "closed_at": "2008-12-21T22:13:52Z",
     "created_at": "2008-12-21T16:19:30Z",
     "labels": [
         "component: misc",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch, needs review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py",
+    "title": "[with patch, positive review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4848",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

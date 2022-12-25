@@ -1,15 +1,16 @@
-# Issue 6906: [with spkg, needs review] update Mercurial to version 1.3.1
+# Issue 6906: [with spkg, positive review] update Mercurial to version 1.3.1
 
 archive/issues_006906.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nAs the summary says.  The spkg is here: [http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg).  Please test thoroughly.\n\nThis fixes the problem at #6440, by the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6906\n\n",
+    "closed_at": "2009-10-15T09:44:22Z",
     "created_at": "2009-09-08T23:23:33Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with spkg, needs review] update Mercurial to version 1.3.1",
+    "title": "[with spkg, positive review] update Mercurial to version 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6906",
     "user": "https://github.com/jhpalmieri"

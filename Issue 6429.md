@@ -1,16 +1,17 @@
-# Issue 6429: [with patch; needs review] sagedoc: make search_src and friends less OS dependent
+# Issue 6429: [with patch; positive review] sagedoc: make search_src and friends less OS dependent
 
 archive/issues_006429.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @dandrake @craigcitro\n\nAs discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.\n\nThis patch also adds two new arguments to those functions.  From the docstring:\n\n```\n    - ``path_re`` (optional, default '') - regular expression which\n      the filename (including the path) must match.\n\n    - ``module`` (optional, default 'sage') - the module in which to\n      search.  The default is 'sage', the entire Sage library.\n```\n(Actually, `module` doesn't make sense for search_doc, so it's not available there.)\n\nFor example:\n\n```\nsearch_src(\"matrix\", module=\"sage.calculus\")\n```\nwith tab completion available as you type in \"sage.calculus\", or to accomplish essentially the same thing:\n\n```\nsearch_src(\"matrix\", path_re=\"calc\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6429\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @dandrake @craigcitro\n\nAs discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.\n\nThis patch also adds two new arguments to those functions.  From the docstring:\n\n```\n    - ``path_re`` (optional, default '') - regular expression which\n      the filename (including the path) must match.\n\n    - ``module`` (optional, default 'sage') - the module in which to\n      search.  The default is 'sage', the entire Sage library.\n```\n(Actually, `module` doesn't make sense for search_doc, so it's not available there.)\n\nFor example:\n\n```\nsearch_src(\"matrix\", module=\"sage.calculus\")\n```\nwith tab completion available as you type in \"sage.calculus\", or to accomplish essentially the same thing:\n\n```\nsearch_src(\"matrix\", path_re=\"calc\")\n```\n\nThis depends on the patch at #6418.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6429\n\n",
+    "closed_at": "2009-07-02T20:20:37Z",
     "created_at": "2009-06-27T03:34:20Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch; needs review] sagedoc: make search_src and friends less OS dependent",
+    "title": "[with patch; positive review] sagedoc: make search_src and friends less OS dependent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6429",
     "user": "https://github.com/jhpalmieri"
@@ -43,6 +44,8 @@ with tab completion available as you type in "sage.calculus", or to accomplish e
 ```
 search_src("matrix", path_re="calc")
 ```
+
+This depends on the patch at #6418.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6429
 

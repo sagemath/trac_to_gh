@@ -1,22 +1,23 @@
-# Issue 5145: increase default plot_points value for contour_plot
+# Issue 5145: [with patch, positive review] increase default plot_points value for contour_plot
 
 archive/issues_005145.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nMotivation: Somewhat regularly on sage-support we get emails like this:\n\n```\nHi everyone,\n\nI run into a very strange problem, that looks like critical to me.\nBasically, I plot two functions that I know must be tangent at a given\npoint, and they are not.\n\nFirst, the code:\n\nx,y=var('x,y')\nutility=y*x^2\nbudget = 24-x\ncp=contour_plot(utility,(x,0,24),(y,\n0,24),fill=False,cmap='cool',contours=(100,1000,2048,2700,3500))\nbp=plot(budget,(x,0,24),color='red')\ncp+bp\n\nNow, the plot that comes after calling 'cp+bp' must have the following\nproperty: the straight red line must be tangent to the contour of the\nutility function evaluated at level utility=2048; and they must be\ntangent at the point (16,8). In my system (Sage 3.2.3 on OpenSuse11.1)\nthey are NOT tangent; in fact, the sage plot indicates tangency at a\nlower level, ~1820.\n...\n- Or else is it a calculation problem on the part of sage? I'd find\nthis absolutely strange. And critical: I want to trust Sage to do the\ncalculations correctly.\n\nCan you reproduce it?\n\nThanks,\n```\n\nBut putting plot_points=200 fixes things.   Right now the default is a mere 25, which seems absurdly small.   I think we should change the default plot_points parameter.  It was very low, I think, because evaluation of symbolic expressions used to be slow -- now it's extremely fast -- so we should increase the default number of points to at least 200. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5145\n\n",
+    "body": "Assignee: @williamstein\n\nMotivation: Somewhat regularly on sage-support we get emails like this:\n\n```\nHi everyone,\n\nI run into a very strange problem, that looks like critical to me.\nBasically, I plot two functions that I know must be tangent at a given\npoint, and they are not.\n\nFirst, the code:\n\nx,y=var('x,y')\nutility=y*x^2\nbudget = 24-x\ncp=contour_plot(utility,(x,0,24),(y,\n0,24),fill=False,cmap='cool',contours=(100,1000,2048,2700,3500))\nbp=plot(budget,(x,0,24),color='red')\ncp+bp\n\nNow, the plot that comes after calling 'cp+bp' must have the following\nproperty: the straight red line must be tangent to the contour of the\nutility function evaluated at level utility=2048; and they must be\ntangent at the point (16,8). In my system (Sage 3.2.3 on OpenSuse11.1)\nthey are NOT tangent; in fact, the sage plot indicates tangency at a\nlower level, ~1820.\n...\n- Or else is it a calculation problem on the part of sage? I'd find\nthis absolutely strange. And critical: I want to trust Sage to do the\ncalculations correctly.\n\nCan you reproduce it?\n\nThanks,\n```\n\nBut putting plot_points=200 fixes things.   Right now the default is a mere 25, which seems absurdly small.   I think we should change the default plot_points parameter.  It was very low, I think, because evaluation of symbolic expressions used to be slow -- now it's extremely fast -- so we should increase the default number of points to at least 200. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5145\n\n",
+    "closed_at": "2009-09-15T20:27:25Z",
     "created_at": "2009-01-31T15:19:12Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "increase default plot_points value for contour_plot",
+    "title": "[with patch, positive review] increase default plot_points value for contour_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5145",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 Motivation: Somewhat regularly on sage-support we get emails like this:
 

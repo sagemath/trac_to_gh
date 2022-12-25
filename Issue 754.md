@@ -4,6 +4,7 @@ archive/issues_000754.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/754\n\n",
+    "closed_at": "2008-11-14T09:48:07Z",
     "created_at": "2007-09-25T22:46:40Z",
     "labels": [
         "component: distribution",

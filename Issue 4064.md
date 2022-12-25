@@ -1,16 +1,17 @@
-# Issue 4064: pari precision issues
+# Issue 4064: [with new patch, positive review] pari precision issues
 
 archive/issues_004064.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nJohn Cremona found this:\n\n```\nsage: E = EllipticCurve('37a')                     \nsage: E.period_lattice().basis(prec=30)[0].parent()\nReal Field with 896 bits of precision\nsage: E.period_lattice().basis(prec=100)[0].parent()\nReal Field with 3136 bits of precision\n```\n\nSo we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4064\n\n",
+    "closed_at": "2008-09-08T19:42:18Z",
     "created_at": "2008-09-04T23:34:40Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "pari precision issues",
+    "title": "[with new patch, positive review] pari precision issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4064",
     "user": "https://github.com/aghitza"

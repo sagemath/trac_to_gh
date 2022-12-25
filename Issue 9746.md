@@ -4,10 +4,10 @@ archive/issues_009746.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI went through the \"live\" documentation for plots and found a number of places that computations should be split into separate cells, plots weren't displayed, etc.  This patch fixes these areas.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9746\n\n",
+    "closed_at": "2010-10-03T06:35:58Z",
     "created_at": "2010-08-14T14:15:00Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "documentation for plotting",

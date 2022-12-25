@@ -3,7 +3,7 @@
 archive/issues_008571.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nthiery\n\nKeywords: abstract methods\n\nCurrently, the documentation of abstract methods has two annoying problems:\n- it doesn't appear when asked with \"?\" \n- nothing says that they are abstract method in the doc.\nThis should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8571\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nthiery\n\nKeywords: abstract methods\n\nCurrently, the documentation of abstract methods has the following annoying problem, it doesn't appear when asked with \"?\" from a parent.\n\n```\nsage: P = Parent(category=CoxeterGroups())\nsage: P.index_set?\nObject `P.index_set` not found.\nsage:                                \n``` \nYou have to write:\n\n```\nsage: CG = CoxeterGroups()\nsage: CG.ParentMethods.index_set?\nType:           AbstractMethod\nBase Class:     <class 'sage.misc.abstract_method.AbstractMethod'>\nString Form:    <abstract method index_set at 0x219a320>\nNamespace:      Interactive\nFile:           /usr/local/sage/sage/local/lib/python2.6/site-packages/sage/misc/abstract_method.py\nDefinition:     CG.ParentMethods.index_set(self)\nDocstring:\n       Returns the index set of (the simple reflections of) ``self``, as a\n       list (or iterable).\n\nClass Docstring:\n       Constructor for abstract methods\n[...]\n```\nThis should be fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8571\n\n",
     "created_at": "2010-03-21T18:47:03Z",
     "labels": [
         "component: documentation",
@@ -22,10 +22,35 @@ CC:  @nthiery
 
 Keywords: abstract methods
 
-Currently, the documentation of abstract methods has two annoying problems:
-- it doesn't appear when asked with "?" 
-- nothing says that they are abstract method in the doc.
+Currently, the documentation of abstract methods has the following annoying problem, it doesn't appear when asked with "?" from a parent.
+
+```
+sage: P = Parent(category=CoxeterGroups())
+sage: P.index_set?
+Object `P.index_set` not found.
+sage:                                
+``` 
+You have to write:
+
+```
+sage: CG = CoxeterGroups()
+sage: CG.ParentMethods.index_set?
+Type:           AbstractMethod
+Base Class:     <class 'sage.misc.abstract_method.AbstractMethod'>
+String Form:    <abstract method index_set at 0x219a320>
+Namespace:      Interactive
+File:           /usr/local/sage/sage/local/lib/python2.6/site-packages/sage/misc/abstract_method.py
+Definition:     CG.ParentMethods.index_set(self)
+Docstring:
+       Returns the index set of (the simple reflections of) ``self``, as a
+       list (or iterable).
+
+Class Docstring:
+       Constructor for abstract methods
+[...]
+```
 This should be fixed.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8571
 

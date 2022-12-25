@@ -1,16 +1,17 @@
-# Issue 1255: bug in permutation_automorphism_group
+# Issue 1255: [is invalid.] bug in permutation_automorphism_group
 
 archive/issues_001255.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nI have found a code C which crashes C.permutation_automorphism_group().\nThis function basically is a wrapper for GAP's `MatrixAutomorphisms` \nfunction. The code that causes it to fail is [20,14] in\nhttp://sage.math.washington.edu/home/wdj/research/coding-theory/sd_codes.sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/1255\n\n",
+    "closed_at": "2008-08-31T04:25:18Z",
     "created_at": "2007-11-24T19:33:26Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "bug in permutation_automorphism_group",
+    "title": "[is invalid.] bug in permutation_automorphism_group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1255",
     "user": "https://github.com/wdjoyner"

@@ -1,16 +1,18 @@
-# Issue 3072: sage -i numeric-24.2 (and all other experimental packages) fails
+# Issue 3072: [with patch; positive review] sage -i numeric-24.2 (and all other experimental packages) fails
 
 archive/issues_003072.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe problem is in local/bin/sage-download_package which checks for an error in the download very stupidly.  This needs to be rewritten.  The basic question is how to use urllib to tell whether a URL is valid or is a 404 not found. \n\nThe thing that triggered this problem is that sagemath.org's server configuration somehow changed, which changed the error page displayed on failure. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3072\n\n",
+    "closed_at": "2008-05-02T11:41:40Z",
     "created_at": "2008-05-01T14:20:19Z",
     "labels": [
         "component: packages: optional",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "sage -i numeric-24.2 (and all other experimental packages) fails",
+    "title": "[with patch; positive review] sage -i numeric-24.2 (and all other experimental packages) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3072",
     "user": "https://github.com/williamstein"

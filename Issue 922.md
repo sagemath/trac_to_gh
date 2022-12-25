@@ -1,22 +1,23 @@
-# Issue 922: bug in prime_powers
+# Issue 922: [with patch] bug in prime_powers
 
 archive/issues_000922.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nInconsistent types:\n\n```\nsage: vv = prime_powers(10)\nsage: type(vv[0])\n<type 'int'>\nsage: type(vv[1])\n<type 'sage.rings.integer.Integer'>\n```\n\nFreebie for bug day on Saturday :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/922\n\n",
+    "body": "Assignee: @robertwb\n\nInconsistent types:\n\n```\nsage: vv = prime_powers(10)\nsage: type(vv[0])\n<type 'int'>\nsage: type(vv[1])\n<type 'sage.rings.integer.Integer'>\n```\n\nFreebie for bug day on Saturday :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/922\n\n",
+    "closed_at": "2007-10-21T00:55:34Z",
     "created_at": "2007-10-18T18:35:31Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "bug in prime_powers",
+    "title": "[with patch] bug in prime_powers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/922",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 Inconsistent types:
 

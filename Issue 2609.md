@@ -1,16 +1,17 @@
-# Issue 2609: [with patch, needs review] generators for congruence subgroups
+# Issue 2609: [with patch, with positive review] generators for congruence subgroups
 
 archive/issues_002609.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nGenerators for Gamma0, Gamma1 and GammaH.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2609\n\n",
+    "closed_at": "2008-03-23T20:35:53Z",
     "created_at": "2008-03-20T08:56:45Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] generators for congruence subgroups",
+    "title": "[with patch, with positive review] generators for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2609",
     "user": "https://github.com/rlmill"

@@ -4,6 +4,7 @@ archive/issues_000393.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: real, rational, coerce\n\nThere is something very wrong with this behavior of this code, which tries to convert 1/2 to a 2x2 matrix.  The problem seems not to be in the matrix code, but since it's hard to reproduce it appears in that form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/393\n\n",
+    "closed_at": "2007-08-18T21:40:13Z",
     "created_at": "2007-06-28T15:20:44Z",
     "labels": [
         "component: basic arithmetic",

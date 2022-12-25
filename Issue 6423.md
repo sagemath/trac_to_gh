@@ -1,22 +1,23 @@
-# Issue 6423: Sage not always understanding i=sqrt(-1)  - Maxima bug proably
+# Issue 6423: Sage not always understanding i=sqrt(-1)  - Maxima bug probably
 
 archive/issues_006423.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nVladimir Bondarenko (a developer of software to test computer algebra systems - see [http://www.cas-testing.org/](http://www.cas-testing.org/) ), had been playing with [http://demo.sagenb.org/](http://demo.sagenb.org/) and noted the following:\n\n```\nexp(-x^i).integral(x,0,1)  returns\n\nTraceback (click to the left for traceback)\n...\nIs %i an integer?\n\nOuch! Any Sage comments?\n```\n\nWhen I reported his on sage-devel, William Stein said:\n\n''A large amount of the symbolic functionality that uses Maxima has\nissues like this, but unfortunately there is basically nothing we can do about it, except continue with projects to rewrite the parts of Sage that call Maxima so that they don't call Maxima.  So this class of bugs should be very good motivation to continue to work on\nimplementing symbolic integration ourselves (and/or further improving sympy!).''\n\nHe then went on to say he wanted it reported as a TRAC bug but was busy, so I have done it on his behalf. \n\nI don't feel able to comment much more on this, and personally don't intend trying to fix it (outside my knowledge), so I've just reported it. \n\nCan someone else add appropriate priority, milestones, keywords etc, as this is completely outside my *comfort zone*. \n\nDavid Kirkby\n\nIssue created by migration from https://trac.sagemath.org/ticket/6423\n\n",
+    "body": "Assignee: @aghitza\n\nVladimir Bondarenko (a developer of software to test computer algebra systems - see [http://www.cas-testing.org/](http://www.cas-testing.org/) ), had been playing with [http://demo.sagenb.org/](http://demo.sagenb.org/) and noted the following:\n\n```\nexp(-x^i).integral(x,0,1)  returns\n\nTraceback (click to the left for traceback)\n...\nIs %i an integer?\n\nOuch! Any Sage comments?\n```\n\nWhen I reported his on sage-devel, William Stein said:\n\n''A large amount of the symbolic functionality that uses Maxima has\nissues like this, but unfortunately there is basically nothing we can do about it, except continue with projects to rewrite the parts of Sage that call Maxima so that they don't call Maxima.  So this class of bugs should be very good motivation to continue to work on\nimplementing symbolic integration ourselves (and/or further improving sympy!).''\n\nHe then went on to say he wanted it reported as a TRAC bug but was busy, so I have done it on his behalf. \n\nI don't feel able to comment much more on this, and personally don't intend trying to fix it (outside my knowledge), so I've just reported it. \n\nCan someone else add appropriate priority, milestones, keywords etc, as this is completely outside my *comfort zone*. \n\nDavid Kirkby\n\nIssue created by migration from https://trac.sagemath.org/ticket/6423\n\n",
+    "closed_at": "2010-01-04T03:09:23Z",
     "created_at": "2009-06-26T14:54:37Z",
     "labels": [
-        "component: algebra",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Sage not always understanding i=sqrt(-1)  - Maxima bug proably",
+    "title": "Sage not always understanding i=sqrt(-1)  - Maxima bug probably",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6423",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
 Vladimir Bondarenko (a developer of software to test computer algebra systems - see [http://www.cas-testing.org/](http://www.cas-testing.org/) ), had been playing with [http://demo.sagenb.org/](http://demo.sagenb.org/) and noted the following:
 

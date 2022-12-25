@@ -1,22 +1,24 @@
-# Issue 4990: [with code, needs work] Add code to compute Hilber class polynomials
+# Issue 4990: [with patch, with positive review] Add code to compute Hilbert class polynomials
 
 archive/issues_004990.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached Sage code has been written by\n\n* Eduardo Ocampo Alvarez\n* Andrey Timofeev\n\nfrom the University of Essen in Germany. It needs some integration, but other than that it should be ready to be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4990\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: hilbert class polynomial\n\nThe attached Sage code has been written by\n\n* Eduardo Ocampo Alvarez\n* Andrey Timofeev\n\nfrom the University of Essen in Germany. It needs some integration, but other than that it should be ready to be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4990\n\n",
+    "closed_at": "2009-04-05T23:16:17Z",
     "created_at": "2009-01-17T08:47:24Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with code, needs work] Add code to compute Hilber class polynomials",
+    "title": "[with patch, with positive review] Add code to compute Hilbert class polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4990",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
+
+Keywords: hilbert class polynomial
 
 The attached Sage code has been written by
 

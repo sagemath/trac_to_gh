@@ -3,10 +3,11 @@
 archive/issues_008825.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  nguyenminh2@gmail.com\n\nThe documentation for the function norm currently does not mention that different kinds of norms are used for complex numbers and vectors of complex numbers.\n\nI was very surprised that for a complex number z, \nnorm(z) == norm(vector([z]))<sup>2</sup>, and no hint of this is available from the documentation available through executing \"sage: norm?\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8825\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  nguyenminh2@gmail.com\n\nThe documentation for the function norm currently does not mention that different kinds of norms are used for complex numbers and vectors of complex numbers.\n\nI was very surprised that for a complex number z, \nnorm(z) == norm(vector([z]))<sup>2</sup>, and no hint of this is available from the documentation available through executing \"sage: norm?\".\n\nSee this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191) thread for some background information.\n\nApply patches in this order:\n\n1. #8819\n2. #8831\n3. [trac_8825_norm_docstring.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8825/trac_8825_norm_docstring.patch)\n4. [trac_8825-more-norm-doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8825/trac_8825-more-norm-doc.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8825\n\n",
+    "closed_at": "2010-09-28T09:08:37Z",
     "created_at": "2010-04-29T19:49:58Z",
     "labels": [
-        "component: misc",
+        "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -24,6 +25,15 @@ The documentation for the function norm currently does not mention that differen
 
 I was very surprised that for a complex number z, 
 norm(z) == norm(vector([z]))<sup>2</sup>, and no hint of this is available from the documentation available through executing "sage: norm?".
+
+See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191) thread for some background information.
+
+Apply patches in this order:
+
+1. #8819
+2. #8831
+3. [trac_8825_norm_docstring.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8825/trac_8825_norm_docstring.patch)
+4. [trac_8825-more-norm-doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8825/trac_8825-more-norm-doc.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8825
 

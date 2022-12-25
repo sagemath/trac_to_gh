@@ -1,16 +1,17 @@
-# Issue 6833: use hg for worksheet history
+# Issue 6833: use revision control for worksheet history
 
 archive/issues_006833.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @kini\n\nKeywords: notebook, mercurial, hg\n\nSage ships an excellent revision control software but uses a rather simple approach to worksheet version-ing. It would be nice if a hg repository was used behind the scenes. This would enable diffs, cool sharing (just pull my worksheet) and collaboration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6833\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-08-27T23:21:32Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "use hg for worksheet history",
+    "title": "use revision control for worksheet history",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6833",
     "user": "https://github.com/malb"

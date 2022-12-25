@@ -4,6 +4,7 @@ archive/issues_008008.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein @rbeezer\n\nThis is a resolution to the issues at #3211.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8008\n\n",
+    "closed_at": "2010-03-02T21:52:55Z",
     "created_at": "2010-01-20T05:01:34Z",
     "labels": [
         "component: linear algebra",

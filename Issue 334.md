@@ -4,9 +4,10 @@ archive/issues_000334.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAllow an environment variable SAGE_HG_SERVER to be used in preference \nto SAGE_SERVER for calls to hg_sage.send(filename).\n\nIssue created by migration from https://trac.sagemath.org/ticket/334\n\n",
+    "closed_at": "2007-09-07T04:16:56Z",
     "created_at": "2007-03-27T07:34:16Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Create SAGE_HG_SERVER environment variable",

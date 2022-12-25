@@ -3,7 +3,8 @@
 archive/issues_002693.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec @vinklein\n\nConsider this example, which fails:\n\n```\nR.<x,y> = RR[]\np = x + y\nq = x*y\np.resultant(q)\n```\n(as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)\n\nThis is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.\n\nA workaround for this particular problem (and a possible basis for an improved version) is:\n\n```\np.polynomial(x).resultant(q.polynomial(x)) \n```\nThat is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2693\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec @vinklein\n\nKeywords: resultant\n\nConsider this example, which fails:\n\n```\nR.<x,y> = RR[]\np = x + y\nq = x*y\np.resultant(q)\n```\n(as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)\n\nThis is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.\n\nA workaround for this particular problem (and a possible basis for an improved version) is:\n\n```\np.polynomial(x).resultant(q.polynomial(x)) \n```\nThat is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2693\n\n",
+    "closed_at": "2019-05-12T21:34:19Z",
     "created_at": "2008-03-28T02:21:37Z",
     "labels": [
         "component: algebraic geometry"
@@ -18,6 +19,8 @@ archive/issues_002693.json:
 Assignee: @williamstein
 
 CC:  @tscrim @videlec @vinklein
+
+Keywords: resultant
 
 Consider this example, which fails:
 

@@ -4,6 +4,7 @@ archive/issues_007567.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @nthiery\n\nAs of sage-4.3.alpha0, there's a small typo in the help text you get by running sage -advanced: the line that starts with \"-fixdoctest\" should be \"-fixdoctests\", as the latter is the correct name for the command. This typo was introduced in #6354. The attached patch fixes this (apply to the repository in local/bin).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7567\n\n",
+    "closed_at": "2009-12-01T08:17:24Z",
     "created_at": "2009-12-01T05:56:33Z",
     "labels": [
         "component: doctest coverage",

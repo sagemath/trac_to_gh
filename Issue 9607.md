@@ -4,6 +4,7 @@ archive/issues_009607.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @dandrake @jhpalmieri mvngu @rbeezer\n\nSeen on sage.math and bsd.math with Sage 4.5.2.alpha1:\n\n```python\nsage -t -long  devel/sage/doc/en/tutorial/latex.rst\n**********************************************************************\nFile \"/Users/mpatel/apps/sage-4.5.2.alpha1/devel/sage-main/doc/en/tutorial/latex\n.rst\", line 459:\n    sage: latex.extra_preamble()\nExpected:\n    '\\\\usepackage{tikz}\\n\\\\usepackage{tkz-graph}\\n\\\\usepackage{tkz-berge}\\n'\nGot:\n    '\\\\usepackage{tikz}\\n'\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_11\n***Test Failed*** 1 failures.\n```\n\nThis may be caused by #9027.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9607\n\n",
+    "closed_at": "2010-07-29T04:49:22Z",
     "created_at": "2010-07-27T07:00:47Z",
     "labels": [
         "component: documentation",

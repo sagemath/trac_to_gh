@@ -3,7 +3,8 @@
 archive/issues_007522.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @rbeezer\n\nIt should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: \n\n```\nsage: def orthogonal_complement(space):\n....:     if space.dimension()==0:\n....:         return space.ambient_vector_space()\n....:     else:\n....:         return space.basis_matrix().right_kernel()\n```\nOne would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7522\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @rbeezer\n\nKeywords: sd48\n\nIt should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: \n\n```\nsage: def orthogonal_complement(space):\n....:     if space.dimension()==0:\n....:         return space.ambient_vector_space()\n....:     else:\n....:         return space.basis_matrix().right_kernel()\n```\nOne would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.\n\n---\n\nApply: [attachment:trac_7522-perp-ts.patch] and [attachment:trac_7522-finite.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7522\n\n",
+    "closed_at": "2013-06-20T21:33:49Z",
     "created_at": "2009-11-24T01:27:57Z",
     "labels": [
         "component: linear algebra"
@@ -19,6 +20,8 @@ Assignee: @williamstein
 
 CC:  @jasongrout @rbeezer
 
+Keywords: sd48
+
 It should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: 
 
 ```
@@ -29,6 +32,10 @@ sage: def orthogonal_complement(space):
 ....:         return space.basis_matrix().right_kernel()
 ```
 One would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.
+
+---
+
+Apply: [attachment:trac_7522-perp-ts.patch] and [attachment:trac_7522-finite.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7522
 

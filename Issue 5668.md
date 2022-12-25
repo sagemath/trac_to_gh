@@ -4,6 +4,7 @@ archive/issues_005668.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @kcrisman @jhpalmieri\n\nThe attached screenshot shows the public Sage notebook server (which has about 7000 user accounts) saving state after I pressed control-C.  It uses a huge amount of RAM, but does finish after several minutes.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5668\n\n",
+    "closed_at": "2020-03-28T20:41:42Z",
     "created_at": "2009-04-02T20:06:46Z",
     "labels": [
         "component: notebook",

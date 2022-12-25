@@ -1,16 +1,17 @@
-# Issue 2618: [with patch, needs review] documentation for QuotientRingElement
+# Issue 2618: [with patch, positive review] documentation for QuotientRingElement
 
 archive/issues_002618.json:
 ```json
 {
     "body": "Assignee: @malb\n\n`QuotientRingElement` is almost undocumented (and a mess btw.) this patch\n* adds documentation for the `lc`, `lm`, `lt` methods\n* implements a `reduce()` method \n\nIssue created by migration from https://trac.sagemath.org/ticket/2618\n\n",
+    "closed_at": "2008-03-21T02:22:39Z",
     "created_at": "2008-03-20T21:55:10Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] documentation for QuotientRingElement",
+    "title": "[with patch, positive review] documentation for QuotientRingElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2618",
     "user": "https://github.com/malb"

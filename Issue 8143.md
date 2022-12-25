@@ -3,10 +3,10 @@
 archive/issues_008143.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nAs a Crypto PhD, I enjoy using the many functionalities in SAGE that interface the NTL library, however an important function was left out, namely the Gram-Schmidt Orthogonalization.\n\nThere is an implementation in SAGE which is in pure python and very slow (but exact). I propose to add an option to use NTL for matrices of dimensions > 200.\n\nRichard\n\nIssue created by migration from https://trac.sagemath.org/ticket/8143\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nAs a Crypto PhD, I enjoy using the many functionalities in SAGE that interface the NTL library, however an important function was left out, namely the Gram-Schmidt Orthogonalization.\n\nThere is an implementation in SAGE which is in pure python and very slow (but exact). I propose to add an option to use NTL for matrices of dimensions > 200.\n\nRichard\n\nIssue created by migration from https://trac.sagemath.org/ticket/8143\n\n",
     "created_at": "2010-02-01T17:09:40Z",
     "labels": [
-        "component: algebra"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Efficient Gram-Schmidt",
@@ -15,7 +15,7 @@ archive/issues_008143.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/rlindner"
 }
 ```
-Assignee: @aghitza
+Assignee: jason, was
 
 CC:  @jasongrout
 

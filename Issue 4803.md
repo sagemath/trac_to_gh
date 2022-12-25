@@ -1,15 +1,16 @@
-# Issue 4803: improvements to the polyhedra module documentation
+# Issue 4803: [with patch, positive review] improvements to the polyhedra module documentation
 
 archive/issues_004803.json:
 ```json
 {
     "body": "Assignee: sbarthelemy\n\nCC:  mhampton\n\nThe attached patch corrects some imprecisions in the polyhedra module documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4803\n\n",
+    "closed_at": "2008-12-17T14:37:46Z",
     "created_at": "2008-12-15T09:50:23Z",
     "labels": [
-        "component: algebra"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "improvements to the polyhedra module documentation",
+    "title": "[with patch, positive review] improvements to the polyhedra module documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4803",
     "user": "https://trac.sagemath.org/admin/accounts/users/sbarthelemy"

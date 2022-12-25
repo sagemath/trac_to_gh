@@ -4,6 +4,7 @@ archive/issues_009483.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nHere's an example:\n\n```\nsage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2))\n```\n... VERY long traceback, ending:\n\n```\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1363 \n   1364     \"\"\"\n-> 1365     return FastCallableConverter(ex, etb)()\n   1366 \n   1367 class RingConverter(Converter):\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    216             return self.relation(ex, operator)\n    217         elif isinstance(operator, FDerivativeOperator):\n--> 218             return self.derivative(ex, operator)\n    219         else:\n    220             return self.composition(ex, operator)\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in derivative(self, ex, operator)\n    349             NotImplementedError: derivative\n    350         \"\"\"        \n--> 351         raise NotImplementedError, \"derivative\"\n    352 \n    353     def arithmetic(self, ex, operator):\n\nNotImplementedError: derivative\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9483\n\n",
+    "closed_at": "2011-06-15T20:13:06Z",
     "created_at": "2010-07-12T17:21:32Z",
     "labels": [
         "component: graphics",

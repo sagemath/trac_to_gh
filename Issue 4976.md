@@ -1,15 +1,16 @@
-# Issue 4976: [with patch, needs review] fill option for plot, polar_plot and parametric_plot
+# Issue 4976: [with patch, positive review] fill option for plot, polar_plot and parametric_plot
 
 archive/issues_004976.json:
 ```json
 {
     "body": "Assignee: whuss\n\nThis patch adds the new options \"fill\", \"fillcolor\", and \"fillalpha\" to the plot functions,\nwhich allow to fill the area between two functions in a plot, or to fill the area between \nthe function and the x-axis.\n\nThe syntax for fill is similar to what Mathematica uses.\n\nI also attach a file with some examples for easier testing.\n\nGreetings,\n\nWilfried\n\nIssue created by migration from https://trac.sagemath.org/ticket/4976\n\n",
+    "closed_at": "2009-02-05T13:02:10Z",
     "created_at": "2009-01-14T17:17:39Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] fill option for plot, polar_plot and parametric_plot",
+    "title": "[with patch, positive review] fill option for plot, polar_plot and parametric_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4976",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

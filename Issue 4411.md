@@ -3,7 +3,8 @@
 archive/issues_004411.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: phc, phcpack, numerical, polynomial\n\nphcpack uses a different method and different output for 1-variable problems, which breaks a lot of the assumptions in the interface.  I will ask Jan Verschelde if it is possible to harmonize the output, otherwise I will add some special-casing code to the interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4411\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: phc, phcpack, numerical, polynomial\n\nphcpack uses a different method and different output for 1-variable problems, which breaks some assumptions in the interface.  \n\nAttached patch trac_4411_and_10607_phc_fixes.patch fixes this problem and a recent change in phcpack output that breaks everything in the interface if not addressed.  This patch was added as part of ticket 10607, so that part is done.\n\nApply only the patche\n[attachment:trac_4411-tmpfilename.patch].\n\nand test AFTER installing the optional spkg at #10607.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4411\n\n",
+    "closed_at": "2012-12-27T10:24:36Z",
     "created_at": "2008-10-31T12:54:55Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +21,14 @@ Assignee: mhampton
 
 Keywords: phc, phcpack, numerical, polynomial
 
-phcpack uses a different method and different output for 1-variable problems, which breaks a lot of the assumptions in the interface.  I will ask Jan Verschelde if it is possible to harmonize the output, otherwise I will add some special-casing code to the interface.
+phcpack uses a different method and different output for 1-variable problems, which breaks some assumptions in the interface.  
+
+Attached patch trac_4411_and_10607_phc_fixes.patch fixes this problem and a recent change in phcpack output that breaks everything in the interface if not addressed.  This patch was added as part of ticket 10607, so that part is done.
+
+Apply only the patche
+[attachment:trac_4411-tmpfilename.patch].
+
+and test AFTER installing the optional spkg at #10607.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4411
 

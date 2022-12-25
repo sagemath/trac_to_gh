@@ -1,16 +1,17 @@
-# Issue 2289: [with doc patch, needs review] make the constructions document prettier and more consistent
+# Issue 2289: [with doc patch, positive review] make the constructions document prettier and more consistent
 
 archive/issues_002289.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe patch is somewhat big but most of the changes are cosmetic, aimed at making const.tex more consistent internally (and with the tutorial) and prettier to behold.\n\nI've also exposed a number of examples that were %skip-ped previously, tested them and fixed a few of them that were buggy.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2289\n\n",
+    "closed_at": "2008-02-27T21:25:26Z",
     "created_at": "2008-02-24T04:08:14Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with doc patch, needs review] make the constructions document prettier and more consistent",
+    "title": "[with doc patch, positive review] make the constructions document prettier and more consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2289",
     "user": "https://github.com/aghitza"

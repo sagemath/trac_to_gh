@@ -3,11 +3,11 @@
 archive/issues_002198.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nThis increases compilation time and we need to verify that those packages build everywhere, but it seems like the right thing to do.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2198\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @mwhansen\n\nThis increases compilation time and we need to verify that those packages build everywhere, but it seems like the right thing to do.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2198\n\n",
+    "closed_at": "2010-01-25T21:46:46Z",
     "created_at": "2008-02-17T19:33:50Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Build R with --with-recommended-packages enabled",
@@ -16,7 +16,7 @@ archive/issues_002198.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @jasongrout
 
 CC:  @mwhansen
 

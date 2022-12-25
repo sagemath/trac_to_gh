@@ -4,6 +4,7 @@ archive/issues_003691.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\ncp: cannot open `/home/was/s/local/bin/sage-rebase_sage.sh' for reading: Permission denied\ncp: cannot open `/home/was/s/local/bin/sage-server-web' for reading: Permission denied\ncp: cannot open `/home/was/s/local/bin/phc' for reading: Permission denied\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3691\n\n",
+    "closed_at": "2008-07-21T08:00:46Z",
     "created_at": "2008-07-21T06:03:35Z",
     "labels": [
         "component: build",

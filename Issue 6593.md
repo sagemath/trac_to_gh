@@ -1,16 +1,17 @@
-# Issue 6593: WordMorphism: doctest failure in Fedora
+# Issue 6593: [with patch, positive review] WordMorphism: doctest failure in Fedora
 
 archive/issues_006593.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @jaapspies\n\nKeywords: word morphism\n\nWhen sage-4.1.1.alpha0 was released (see http://groups.google.com/group/sage-devel/browse_thread/thread/267a2cb90085536b?hl=en), the following problem was reported :\n\n```\nSame here on Fedora 10 and Fedora 11, 32 bit.\n\nIn addition both in a fresh install and in an upgrade:\n\nsage -t  \"devel/sage/sage/combinat/words/morphism.py\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.1/devel/sage/sage/combinat/words/morphism.py\", line 616:\n     sage: m.extend_by(n)\nExpected:\n     Morphism from Words over Ordered Alphabet ['a', 'b', 0, 1] to Words over Ordered Alphabet ['a', 'b', 0, 1]\nGot:\n     Morphism from Words over Ordered Alphabet [0, 1, 'a', 'b'] to Words over Ordered Alphabet [0, 1, 'a', 'b']\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.1/devel/sage/sage/combinat/words/morphism.py\", line 618:\n     sage: n.extend_by(m)\nExpected:\n     Morphism from Words over Ordered Alphabet ['a', 'b', 0, 1] to Words over Ordered Alphabet ['a', 'b', 0, 1, 5]\nGot:\n     Morphism from Words over Ordered Alphabet [0, 1, 'a', 'b'] to Words over Ordered Alphabet [0, 1, 5, 'a', 'b']\n**********************************************************************\n1 items had failures:\n    2 of  10 in __main__.example_11\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jaap/Download/sage-4.1/tmp/.doctest_morphism.py\n         [3.2 s]\nexit code: 1024\n\nJaap \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6593\n\n",
+    "closed_at": "2009-07-23T06:04:57Z",
     "created_at": "2009-07-22T16:31:05Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "WordMorphism: doctest failure in Fedora",
+    "title": "[with patch, positive review] WordMorphism: doctest failure in Fedora",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6593",
     "user": "https://github.com/seblabbe"

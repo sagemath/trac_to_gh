@@ -4,6 +4,7 @@ archive/issues_000287.json:
 ```json
 {
     "body": "Assignee: Martin A, Robert B, and David H\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/287\n\n",
+    "closed_at": "2007-08-09T21:10:47Z",
     "created_at": "2007-02-24T02:39:45Z",
     "labels": [
         "component: basic arithmetic"

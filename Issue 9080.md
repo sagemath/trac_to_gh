@@ -4,6 +4,7 @@ archive/issues_009080.json:
 ```json
 {
     "body": "Assignee: amhou\n\nadd the F-distribution to the supported distributions for RealDistribution\n\nIssue created by migration from https://trac.sagemath.org/ticket/9080\n\n",
+    "closed_at": "2011-07-22T12:49:00Z",
     "created_at": "2010-05-29T03:54:56Z",
     "labels": [
         "component: statistics",

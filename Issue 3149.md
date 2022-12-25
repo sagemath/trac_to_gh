@@ -1,22 +1,25 @@
-# Issue 3149: [with patch, needs review] off-by-one error in real_roots on AA coefficients
+# Issue 3149: [with patch, with positive review] off-by-one error in real_roots on AA coefficients
 
 archive/issues_003149.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe code in real_roots.pyx for handling polynomials with AA coefficients had an off-by-one error in the case of integral coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3149\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: editor_craigcitro\n\nThe code in real_roots.pyx for handling polynomials with AA coefficients had an off-by-one error in the case of integral coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3149\n\n",
+    "closed_at": "2008-06-23T05:53:59Z",
     "created_at": "2008-05-10T17:36:20Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] off-by-one error in real_roots on AA coefficients",
+    "title": "[with patch, with positive review] off-by-one error in real_roots on AA coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3149",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @malb
+Assignee: cwitty
+
+Keywords: editor_craigcitro
 
 The code in real_roots.pyx for handling polynomials with AA coefficients had an off-by-one error in the case of integral coefficients.
 

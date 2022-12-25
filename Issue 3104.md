@@ -1,9 +1,10 @@
-# Issue 3104: pbori.pyx: Make some doctest long since it uses a lot of RAM
+# Issue 3104: [with patch; positive review] pbori.pyx: Make some doctest long since it uses a lot of RAM
 
 archive/issues_003104.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  polybori\n\n```\n[13:32] <wstein> Is there a ticket up for pbori.pyx not passing?\n[13:32] <mabshoff> nope.\n[13:33] <wstein> I propose that we put a --long in there to mean \"need more ram\".\n[13:33] <mabshoff> You mean because it uses so much RAM?\n[13:33] <mabshoff> yes\n[13:33] <wstein> Yes.\n[13:33] <wstein> --long meaning \"--big\" or something.\n[13:33] <mabshoff> :)\n[13:33] <wstein> It's annoying that pbori.pyx fails on so many of my test machines.\n[13:33] <mabshoff> yep\n[13:34] <mabshoff> I usually just ignore pbori.pyx failures, which is somewhat dangerous.\n[13:34] <mabshoff> fixed\n[13:34] <wstein> exactly.\n[13:34] <wstein> Can you make a ticket?\n[13:34] <mabshoff> sure\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3104\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori\n\n```\n[13:32] <wstein> Is there a ticket up for pbori.pyx not passing?\n[13:32] <mabshoff> nope.\n[13:33] <wstein> I propose that we put a --long in there to mean \"need more ram\".\n[13:33] <mabshoff> You mean because it uses so much RAM?\n[13:33] <mabshoff> yes\n[13:33] <wstein> Yes.\n[13:33] <wstein> --long meaning \"--big\" or something.\n[13:33] <mabshoff> :)\n[13:33] <wstein> It's annoying that pbori.pyx fails on so many of my test machines.\n[13:33] <mabshoff> yep\n[13:34] <mabshoff> I usually just ignore pbori.pyx failures, which is somewhat dangerous.\n[13:34] <mabshoff> fixed\n[13:34] <wstein> exactly.\n[13:34] <wstein> Can you make a ticket?\n[13:34] <mabshoff> sure\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3104\n\n",
+    "closed_at": "2008-05-21T13:23:01Z",
     "created_at": "2008-05-05T12:16:16Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_003104.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "pbori.pyx: Make some doctest long since it uses a lot of RAM",
+    "title": "[with patch; positive review] pbori.pyx: Make some doctest long since it uses a lot of RAM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3104",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 CC:  polybori
 

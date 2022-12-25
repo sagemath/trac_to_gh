@@ -4,10 +4,10 @@ archive/issues_009385.json:
 ```json
 {
     "body": "Assignee: olazo\n\nCC:  @jaapspies @vbraun alexghitza @rlmill @williamstein\n\nI'm compiling Sage in a fedora 13 Intel Core Duo laptop (1.8 Gb RAM). It normally takes about 6 hours to build previous versions of sage, however, it now seems to enter an infinite loop while building ATLAS (After 28 hours it is still building ATLAS).\n\nSomeone in #archlinux said libreadline is segfaulting or something like that and that it was looping.\n\nI'll compile a previous version of Sage and see if that works for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9385\n\n",
+    "closed_at": "2013-05-24T12:25:25Z",
     "created_at": "2010-06-29T22:26:24Z",
     "labels": [
         "component: build",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

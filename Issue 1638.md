@@ -3,7 +3,8 @@
 archive/issues_001638.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: FreeBSD\n\nOn FreeBSD the default bash installtion location is `/neusr/local`. Hence all our shell scripts with `/bin/bash` will break. The solution is to use `/usr/bin/env bash` instead. The same might apply to python and perl scripts.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1638\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: FreeBSD\n\nOn FreeBSD the default bash installtion location is `/usr/local`. Hence all our shell scripts with `/bin/bash` will break. The solution is to use `/usr/bin/env bash` instead. The same might apply to python and perl scripts.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1638\n\n",
+    "closed_at": "2008-08-25T04:16:36Z",
     "created_at": "2007-12-30T12:57:41Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +21,7 @@ Assignee: mabshoff
 
 Keywords: FreeBSD
 
-On FreeBSD the default bash installtion location is `/neusr/local`. Hence all our shell scripts with `/bin/bash` will break. The solution is to use `/usr/bin/env bash` instead. The same might apply to python and perl scripts.
+On FreeBSD the default bash installtion location is `/usr/local`. Hence all our shell scripts with `/bin/bash` will break. The solution is to use `/usr/bin/env bash` instead. The same might apply to python and perl scripts.
 
 Cheers,
 

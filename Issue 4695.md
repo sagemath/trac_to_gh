@@ -1,15 +1,16 @@
-# Issue 4695: [with patch, needs review] add support for pari's rnfidealdown
+# Issue 4695: [with patch, positive review] add support for pari's rnfidealdown
 
 archive/issues_004695.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  was cc\n\nKeywords: relative rnf ideal down\n\nThe attached patch adds support for pari's rnfidealdown.  This is simple but exposes a weakness in Sage's number field relativize() function, which I address at the same time.  Namely, relativize always constructs a new base number field and embedding rather than (possibly) using an existing one.  The doctests are extensive and reveal (and document!) a bug in the existing code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4695\n\n",
+    "closed_at": "2008-12-10T16:24:04Z",
     "created_at": "2008-12-04T18:43:58Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] add support for pari's rnfidealdown",
+    "title": "[with patch, positive review] add support for pari's rnfidealdown",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4695",
     "user": "https://github.com/ncalexan"

@@ -3,7 +3,8 @@
 archive/issues_008489.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @dandrake @zimmermann6\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @dandrake @zimmermann6\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
+    "closed_at": "2010-07-28T03:23:41Z",
     "created_at": "2010-03-10T15:24:32Z",
     "labels": [
         "component: documentation"
@@ -15,7 +16,7 @@ archive/issues_008489.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: mvngu
+Assignee: @nthiery
 
 CC:  @dandrake @zimmermann6
 

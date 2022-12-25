@@ -1,24 +1,25 @@
-# Issue 6269: Coloring speed up
+# Issue 6269: [with patch, positive review] Coloring odds and ends
 
 archive/issues_006269.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be nice to have faster versions of things like hue() and rainbow(), and to have them in their own submodule of plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6269\n\n",
+    "body": "Assignee: @kcrisman\n\nIt would be nice to have things like hue() and rainbow() be in their own submodule of plot, and there are a few things in complex_plot regarding coloring that need to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6269\n\n",
+    "closed_at": "2009-06-26T17:44:02Z",
     "created_at": "2009-06-12T17:25:52Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Coloring speed up",
+    "title": "[with patch, positive review] Coloring odds and ends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6269",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
-It would be nice to have faster versions of things like hue() and rainbow(), and to have them in their own submodule of plot.
+It would be nice to have things like hue() and rainbow() be in their own submodule of plot, and there are a few things in complex_plot regarding coloring that need to be fixed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6269
 

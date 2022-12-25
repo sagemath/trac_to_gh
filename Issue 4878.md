@@ -1,16 +1,17 @@
-# Issue 4878: [with patch; needs review] Add a density_plot() function
+# Issue 4878: [with patch; positive review] Add a density_plot() function
 
 archive/issues_004878.json:
 ```json
 {
     "body": "Assignee: abergeron\n\nAs was requested a long time ago (in september!), I did the density_plot() function.\n\nI've added as copyright-holders all the copyright-holders from contour_plot since over 80% of density_plot file is copy and paste from that.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4878\n\n",
+    "closed_at": "2009-01-12T01:54:27Z",
     "created_at": "2008-12-25T05:49:42Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch; needs review] Add a density_plot() function",
+    "title": "[with patch; positive review] Add a density_plot() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4878",
     "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"

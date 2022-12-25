@@ -3,7 +3,8 @@
 archive/issues_009747.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nKeywords: matrix assignment slicing __setitem__\n\nAssigment to 1x1 submatrices specified by slices fails:\n\n## Example\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A=matrix([[1,2],[3,4]])\nsage: B=matrix([[1,3],[5,7]])\nsage: A[1:2,1:2]=B[1:2,1:2]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/phil/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:5926)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix._coerce_element (sage/matrix/matrix0.c:7044)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6807)()\n\nTypeError: unable to coerce <type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'> to an integer\n\n```\nThe problem seems to be that the method !__setitem!__ treats 1x1 submatices as elements of the rings over which the matrix is defined, while the method !__getitem!__ treats 1x1 submatices as 1x1 matrices.\n\nBelow I will attach a patch which changes the method !__setitem!__ to treat 1x1 submatices specified by slices as 1x1 matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9747\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nKeywords: matrix assignment slicing __setitem__\n\nAssignment to 1x1 submatrices specified by slices fails:\n\n## Example\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A=matrix([[1,2],[3,4]])\nsage: B=matrix([[1,3],[5,7]])\nsage: A[1:2,1:2]=B[1:2,1:2]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/phil/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:5926)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix._coerce_element (sage/matrix/matrix0.c:7044)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6807)()\n\nTypeError: unable to coerce <type 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'> to an integer\n\n```\nThe problem seems to be that the method !__setitem!__ treats 1x1 submatices as elements of the rings over which the matrix is defined, while the method !__getitem!__ treats 1x1 submatices as 1x1 matrices.\n\nBelow I will attach a patch which changes the method !__setitem!__ to treat 1x1 submatices specified by slices as 1x1 matrices.\n\nAfter applying the patch assignment to submatrixes specified by slices works as expected:\n\n\n## Example\n\n```\nsage: A=matrix([[1,2],[3,4]])\nsage: B=matrix([[1,3],[5,7]])\nsage: A[1:2,1:2]=B[1:2,1:2]\nsage: A\n[1 2]\n[3 7]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9747\n\n",
+    "closed_at": "2011-01-12T06:33:03Z",
     "created_at": "2010-08-14T15:11:51Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +23,7 @@ CC:  @jasongrout
 
 Keywords: matrix assignment slicing __setitem__
 
-Assigment to 1x1 submatrices specified by slices fails:
+Assignment to 1x1 submatrices specified by slices fails:
 
 ## Example
 
@@ -56,6 +57,21 @@ TypeError: unable to coerce <type 'sage.matrix.matrix_integer_dense.Matrix_integ
 The problem seems to be that the method !__setitem!__ treats 1x1 submatices as elements of the rings over which the matrix is defined, while the method !__getitem!__ treats 1x1 submatices as 1x1 matrices.
 
 Below I will attach a patch which changes the method !__setitem!__ to treat 1x1 submatices specified by slices as 1x1 matrices.
+
+After applying the patch assignment to submatrixes specified by slices works as expected:
+
+
+## Example
+
+```
+sage: A=matrix([[1,2],[3,4]])
+sage: B=matrix([[1,3],[5,7]])
+sage: A[1:2,1:2]=B[1:2,1:2]
+sage: A
+[1 2]
+[3 7]
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9747
 

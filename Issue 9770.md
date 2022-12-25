@@ -4,6 +4,7 @@ archive/issues_009770.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: doctests, reviewing\n\nUpdate sections of developer guide about reviewing patches, as discussed at\n\nhttp://ask.sagemath.org/question/31/should-i-_really_-review-trac-tickets\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9771\n\n",
+    "closed_at": "2010-09-15T11:38:16Z",
     "created_at": "2010-08-20T17:15:31Z",
     "labels": [
         "component: documentation"

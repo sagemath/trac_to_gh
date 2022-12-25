@@ -3,7 +3,7 @@
 archive/issues_008361.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: iterator, integer, vector\n\nUsing improvement of SearchForset and the breath_first_search_iterator inside it, implement an iterator over all integers vectors.\n\ndepend on #8288\n\nIssue created by migration from https://trac.sagemath.org/ticket/8361\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: iterator, integer, vector\n\nAdd an iterator for IntegerVectors\n\n\nOld proposition :\nUsing improvement of SearchForset and the breath_first_search_iterator inside it, implement an iterator over all integers vectors.\n\ndepend on #8288\n\nIssue created by migration from https://trac.sagemath.org/ticket/8361\n\n",
     "created_at": "2010-02-25T13:18:32Z",
     "labels": [
         "component: combinatorics",
@@ -20,6 +20,10 @@ Assignee: sage-combinat
 
 Keywords: iterator, integer, vector
 
+Add an iterator for IntegerVectors
+
+
+Old proposition :
 Using improvement of SearchForset and the breath_first_search_iterator inside it, implement an iterator over all integers vectors.
 
 depend on #8288

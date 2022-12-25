@@ -1,15 +1,16 @@
-# Issue 4536: Various number field order and ideal utilities
+# Issue 4536: [with new patch, with positive review] Various number field order and ideal utilities
 
 archive/issues_004536.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  m.t.aranes@warwick.ac.uk dl267@cam.ac.uk\n\nKeywords: number fields, orders, ideals\n\nAdditional methods for (fractional) ideals:\n\n1. Ideals cache their norms\n2. Integral ideals now have a residues() iterator\n3. numerator() and denominator() defined for fractional ideals\n4. is_coprime() defined for a fractional ideal & another (or a field element)\n5. euler_phi() defined for integral ideals\n\nAdditional method for orders:\n\n1. coordinates(x) for x in the field gives a vector of rationals expressing x as a linear combination of the order's Z-basis.\n    \n\nIssue created by migration from https://trac.sagemath.org/ticket/4536\n\n",
+    "closed_at": "2008-11-26T10:30:08Z",
     "created_at": "2008-11-16T20:47:31Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Various number field order and ideal utilities",
+    "title": "[with new patch, with positive review] Various number field order and ideal utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4536",
     "user": "https://github.com/JohnCremona"

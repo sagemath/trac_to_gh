@@ -1,22 +1,24 @@
-# Issue 5189: notebook -- now possible to delete all computation cells
+# Issue 5189: [with patch, positive review] notebook -- now possible to delete all computation cells
 
 archive/issues_005189.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis is a bug in counting the number of cells to make sure the number is >= 2. The counter should only count computation cells.\n\nDeleting all computation cells makes it impossible to create new ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5189\n\n",
+    "body": "Assignee: @jasongrout\n\nThis is a bug in counting the number of cells to make sure the number is >= 2. The counter should only count computation cells.\n\nDeleting all computation cells makes it impossible to create new ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5189\n\n",
+    "closed_at": "2009-02-06T21:53:40Z",
     "created_at": "2009-02-05T22:42:23Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "notebook -- now possible to delete all computation cells",
+    "title": "[with patch, positive review] notebook -- now possible to delete all computation cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5189",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 This is a bug in counting the number of cells to make sure the number is >= 2. The counter should only count computation cells.
 

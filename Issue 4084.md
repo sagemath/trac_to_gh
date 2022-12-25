@@ -1,16 +1,17 @@
-# Issue 4084: plot(1/cos,-1,1) fails
+# Issue 4084: [with patch, positive review] plot(1/cos,-1,1) fails
 
 archive/issues_004084.json:
 ```json
 {
     "body": "Assignee: @jicama\n\nPlot works with symbolic functions, but not compositions or arithmetic involving them.\n\n```\nsage: plot(cos,-1,1) #works\n\nsage: plot(1/cos,-1,1)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4084\n\n",
+    "closed_at": "2008-09-09T04:45:42Z",
     "created_at": "2008-09-09T03:44:08Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "plot(1/cos,-1,1) fails",
+    "title": "[with patch, positive review] plot(1/cos,-1,1) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4084",
     "user": "https://github.com/jicama"

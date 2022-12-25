@@ -4,6 +4,7 @@ archive/issues_007637.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @malb\n\nMartin Albrecht requested this functionality for his code, and it would also simplify mine. For short linear programs, of when some global variables do not require the creation of a new dictionary of variables ( from which only one field would be used ), this trick is good enough !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7637\n\n",
+    "closed_at": "2009-12-14T15:51:31Z",
     "created_at": "2009-12-09T12:27:25Z",
     "labels": [
         "component: numerical"

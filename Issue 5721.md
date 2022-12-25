@@ -1,16 +1,17 @@
-# Issue 5721: [with patch, needs review] speed up irreducible_character_freudenthal
+# Issue 5721: [with patch, positive review] speed up irreducible_character_freudenthal
 
 archive/issues_005721.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @dwbump sage-combinat\n\nBefore:\n\n```\nsage -t  \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n\t [125.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 125.0 seconds\n```\n\nAfter:\n\n```\n\t [22.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 22.8 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5721\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @dwbump sage-combinat\n\nBefore:\n\n```\nsage -t  \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n [125.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 125.0 seconds\n```\n\nAfter:\n\n```\n [22.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 22.8 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5721\n\n",
+    "closed_at": "2009-04-16T09:35:29Z",
     "created_at": "2009-04-09T01:59:42Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] speed up irreducible_character_freudenthal",
+    "title": "[with patch, positive review] speed up irreducible_character_freudenthal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5721",
     "user": "https://github.com/mwhansen"
@@ -24,7 +25,7 @@ Before:
 
 ```
 sage -t  "devel/sage-main/sage/combinat/root_system/weyl_characters.py"
-	 [125.0 s]
+ [125.0 s]
  
 ----------------------------------------------------------------------
 All tests passed!
@@ -34,7 +35,7 @@ Total time for all tests: 125.0 seconds
 After:
 
 ```
-	 [22.8 s]
+ [22.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!

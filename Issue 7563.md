@@ -1,15 +1,16 @@
-# Issue 7563: Interval Graphs : recognition and interval representation
+# Issue 7563: Interval Graphs : recognition
 
 archive/issues_007563.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @dimpase mvngu @rlmill @wdjoyner @jasongrout\n\nRecognition of interval graphs and representation of a given graph as a list of intervals\n\nIssue created by migration from https://trac.sagemath.org/ticket/7563\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @dimpase mvngu @rlmill @wdjoyner @jasongrout\n\nThis ticket implement PQ-Trees, to be used as a recognition algorithm for interval graphs. It also defines the function Graph.is_interval.\n\nFor the moment, PQ-Trees are defined inside of the graph/ folder, as it is where they are useful for the moment, but this may change if someone has a better idea :-)\n\nI tried to document it as much as I could. Tell me if anything is missing !\n\nNathann\n\nDepends on #8284.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7563\n\n",
+    "closed_at": "2010-06-29T16:43:58Z",
     "created_at": "2009-11-30T18:18:46Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "Interval Graphs : recognition and interval representation",
+    "title": "Interval Graphs : recognition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7563",
     "user": "https://github.com/nathanncohen"
@@ -19,7 +20,15 @@ Assignee: @rlmill
 
 CC:  @dimpase mvngu @rlmill @wdjoyner @jasongrout
 
-Recognition of interval graphs and representation of a given graph as a list of intervals
+This ticket implement PQ-Trees, to be used as a recognition algorithm for interval graphs. It also defines the function Graph.is_interval.
+
+For the moment, PQ-Trees are defined inside of the graph/ folder, as it is where they are useful for the moment, but this may change if someone has a better idea :-)
+
+I tried to document it as much as I could. Tell me if anything is missing !
+
+Nathann
+
+Depends on #8284.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7563
 

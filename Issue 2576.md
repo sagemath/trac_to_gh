@@ -1,16 +1,17 @@
-# Issue 2576: preserve docstrings of decorated methods
+# Issue 2576: [with patch, positive review] preserve docstrings of decorated methods in multi_polynomial_ideal.py
 
 archive/issues_002576.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\n\nHi,\n\nHow does one preserve the behavior of docstrings when using\ndecorators?  I just noticed, for example, that I couldn't easily\naccess the docstring of various things in rings/polynomial/\nmulti_polynomial_ideal.py because they have been decorated.  It is\nunclear to me how to easily fix that - does anyone know a simple\nsolution?\n\nThanks,\nM. Hampton\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2576\n\n",
+    "closed_at": "2008-03-18T00:32:49Z",
     "created_at": "2008-03-17T18:50:10Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "preserve docstrings of decorated methods",
+    "title": "[with patch, positive review] preserve docstrings of decorated methods in multi_polynomial_ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2576",
     "user": "https://github.com/williamstein"

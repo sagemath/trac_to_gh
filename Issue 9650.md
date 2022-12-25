@@ -4,6 +4,7 @@ archive/issues_009650.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  mhampton @jasongrout @jdemeyer @qed777 @novoselt @nilesjohnson\n\nKeywords: forms, functions, symbolics\n\nImplements support for differential forms to Sage.  After applying the patch, three new classes are added to sage:\n\n1. `CoordinatePatch` -- an open subset of Rn on which differential forms can be defined\n2. `DifferentialForms` -- a differential forms parent\n3. `DifferentialForm` -- a differential forms class.\n\nPlease see the documentation in the `DifferentialForm` class for more information about syntax, available methods, etc.\n\nThis is a very basic implementation, providing support for exterior differentiation and wedge products of forms, but not much more.  The emphasis is on making sure that the framework is implemented correctly.\n\nSee discussion at\n\n1. http://wiki.sagemath.org/tensorcalc\n2. http://groups.google.be/group/sage-devel/browse_thread/thread/2feef1f0be557585/c2b7095747ebe34d\n\nIssue created by migration from https://trac.sagemath.org/ticket/9650\n\n",
+    "closed_at": "2010-09-15T10:39:29Z",
     "created_at": "2010-07-31T11:48:00Z",
     "labels": [
         "component: symbolics"

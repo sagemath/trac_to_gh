@@ -1,16 +1,17 @@
-# Issue 8177: element_wrapper.py: Sage 4.3.2.alpha1 segfault on Mac OS X 10.6.2
+# Issue 8177: Breaking Integer's invariant can lead to a segfault in Sage 4.3.2.alpha1, Mac OS X 10.6.2
 
 archive/issues_008177.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nthiery mvngu @hivert\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7754a347b837fad6) and also [reported here](http://groups.google.com/group/sage-devel/browse_thread/thread/7c920d26ddad3345):\n\n```\n> built fine on mac 10.6.2 but one failure for sage -testall :\n\n> The following tests failed:\n\n>        sage -t  \"devel/sage/sage/structure/element_wrapper.py\" # Segfault\n\nI get the same result on bsd.math (Mac OS X 10.6.2). Doing a verbose\nlong doctest, I get:\n\nTrying:\n    Integer(1) < l11###line 213:_sage_    >>> 1 < l11\nExpecting:\n    False\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8177\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nthiery mvngu @hivert\n\nInteger assumes the following invariant:\n\n    x.parent() == ZZ     <==>    x.__class__ == Integer\n\nBreaking this invariant (which is easy to do using plain Python) can lead to a segfault.\n\nSee the following discussion for how it was detected:\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7754a347b837fad6) and also [reported here](http://groups.google.com/group/sage-devel/browse_thread/thread/7c920d26ddad3345):\n\n```\n> built fine on mac 10.6.2 but one failure for sage -testall :\n\n> The following tests failed:\n\n>        sage -t  \"devel/sage/sage/structure/element_wrapper.py\" # Segfault\n\nI get the same result on bsd.math (Mac OS X 10.6.2). Doing a verbose\nlong doctest, I get:\n\nTrying:\n    Integer(1) < l11###line 213:_sage_    >>> 1 < l11\nExpecting:\n    False\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\nSee #8200 which improves the doctests of ElementWrapper to not trigger this bug anymore. #8200 does not resolve the issue though!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8177\n\n",
+    "closed_at": "2013-07-22T15:19:59Z",
     "created_at": "2010-02-03T18:45:01Z",
     "labels": [
-        "component: doctest",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "element_wrapper.py: Sage 4.3.2.alpha1 segfault on Mac OS X 10.6.2",
+    "title": "Breaking Integer's invariant can lead to a segfault in Sage 4.3.2.alpha1, Mac OS X 10.6.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8177",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -19,6 +20,14 @@ archive/issues_008177.json:
 Assignee: tbd
 
 CC:  @nthiery mvngu @hivert
+
+Integer assumes the following invariant:
+
+    x.parent() == ZZ     <==>    x.__class__ == Integer
+
+Breaking this invariant (which is easy to do using plain Python) can lead to a segfault.
+
+See the following discussion for how it was detected:
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7754a347b837fad6) and also [reported here](http://groups.google.com/group/sage-devel/browse_thread/thread/7c920d26ddad3345):
 
@@ -46,6 +55,8 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------ 
 ```
+
+See #8200 which improves the doctests of ElementWrapper to not trigger this bug anymore. #8200 does not resolve the issue though!
 
 Issue created by migration from https://trac.sagemath.org/ticket/8177
 

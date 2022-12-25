@@ -1,22 +1,23 @@
-# Issue 5114: something wrong in the initializer for elements of QuaternionAlgebra
+# Issue 5114: [with patch, positive review] something wrong in the initializer for elements of QuaternionAlgebra
 
 archive/issues_005114.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nConsider:\n\n```\nsage: QA = QuaternionAlgebra(QQ, -1, -1)\nsage: foo = QA(3.0); foo\n3.00000000000000\nsage: parent(foo)\nQuaternion algebra with generators (i, j, k) over Rational Field\nsage: parent(foo.vector()[0])\nReal Field with 53 bits of precision\n```\nI don't think the initializer should let you construct an element with RR members but still claim to be over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5114\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nConsider:\n\n```\nsage: QA = QuaternionAlgebra(QQ, -1, -1)\nsage: foo = QA(3.0); foo\n3.00000000000000\nsage: parent(foo)\nQuaternion algebra with generators (i, j, k) over Rational Field\nsage: parent(foo.vector()[0])\nReal Field with 53 bits of precision\n```\nI don't think the initializer should let you construct an element with RR members but still claim to be over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5114\n\n",
+    "closed_at": "2009-06-01T04:25:05Z",
     "created_at": "2009-01-28T03:55:28Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "something wrong in the initializer for elements of QuaternionAlgebra",
+    "title": "[with patch, positive review] something wrong in the initializer for elements of QuaternionAlgebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5114",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
 CC:  @williamstein
 

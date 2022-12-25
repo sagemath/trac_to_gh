@@ -1,21 +1,24 @@
-# Issue 6244: conjugate() in sage-4.0 is broken
+# Issue 6244: [with patch, positive review] conjugate() in sage-4.0 is broken
 
 archive/issues_006244.json:
 ```json
 {
-    "body": "CC:  @ncalexan\n\nKeywords: conjugate, pynac\n\n1) pynac  .conjugate() method returns wrong answer:\n\n```\nf(x) = function('f',x)\nf(x).conjugate()\n\nf(conjugate(x))\n```\n\nAbove is certainly not true. For example: f(x) = I + x implies\nf(x).conjugate() = -I + conjugate(x) which is not equal to\nf(conjugate(x))\n\n\n2)  view() causes SIGSEGV crash\n\n```\nf(x) = function('f',x)\ng(x) = f(x).conjugate()\nview( g(x) )\nboom!!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6244\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @ncalexan\n\nKeywords: conjugate, pynac\n\n1) pynac  .conjugate() method returns wrong answer:\n\n```\nf(x) = function('f',x)\nf(x).conjugate()\n\nf(conjugate(x))\n```\n\nAbove is certainly not true. For example: f(x) = I + x implies\nf(x).conjugate() = -I + conjugate(x) which is not equal to\nf(conjugate(x))\n\n\n2)  view() causes SIGSEGV crash\n\n```\nf(x) = function('f',x)\ng(x) = f(x).conjugate()\nview( g(x) )\nboom!!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6244\n\n",
+    "closed_at": "2009-06-14T21:40:18Z",
     "created_at": "2009-06-08T01:40:44Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "conjugate() in sage-4.0 is broken",
+    "title": "[with patch, positive review] conjugate() in sage-4.0 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6244",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Assignee: @burcin
+
 CC:  @ncalexan
 
 Keywords: conjugate, pynac

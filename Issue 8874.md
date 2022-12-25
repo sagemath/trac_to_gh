@@ -1,16 +1,17 @@
-# Issue 8874: Matrices are missing a is_skew_symmetric method.
+# Issue 8874: Matrices are missing a is_skew_symmetric method
 
 archive/issues_008874.json:
 ```json
 {
     "body": "Assignee: jason, was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8874\n\n",
+    "closed_at": "2010-05-08T21:34:29Z",
     "created_at": "2010-05-04T20:11:22Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "Matrices are missing a is_skew_symmetric method.",
+    "title": "Matrices are missing a is_skew_symmetric method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8874",
     "user": "https://github.com/mwhansen"

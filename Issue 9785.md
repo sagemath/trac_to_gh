@@ -4,6 +4,7 @@ archive/issues_009785.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @hivert brunellus @jasongrout\n\nKeywords: multiset\n\n```\nsage: S = Subsets(['a','a','b','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'b'], ['b', 'b']]\nsage: S = Subsets(['a','b','a','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'a'], ['a', 'a']]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9786\n\n",
+    "closed_at": "2011-12-22T13:06:08Z",
     "created_at": "2010-08-23T12:57:41Z",
     "labels": [
         "component: combinatorics",

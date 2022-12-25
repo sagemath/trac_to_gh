@@ -4,9 +4,10 @@ archive/issues_002044.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-devel/t/e88f02da4c345cb7 Phil reports the following problem:\n\n```\nHello,\n\nI had many troubles getting the upgrade through a caching proxy on\nwhich I've no control.\nWhen running sage -upgrade, the proxy didn't let me getting the latest\nversions, which made troubles with the critical files:\nhttp://www.sagemath.org/packages/standard/list\nhttp://www.sagemath.org/packages/standard/deps\nhttp://www.sagemath.org/packages/standard/newest_version\nhttp://www.sagemath.org/packages/standard/README\nhttp://www.sagemath.org/packages/install\n\nI could get around by providing manually the files and skipping the\ndownload in local/bin/sage-update\n\nBut would it be possible to add some anti-caching headers to the\nofficial sage server for those files?\nIt'd help a lot all people like me with a sage install behind caching\nproxy.\nSth like:\n Expires: Mon, 26 Jul 1997 05:00:00 GMT\"\n Cache-Control: no-store, no-cache, must-revalidate\"\n Cache-Control: post-check=0, pre-check=0\", false\n Pragma: no-cache\n\nPhil \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2044\n\n",
+    "closed_at": "2021-09-02T18:48:47Z",
     "created_at": "2008-02-04T04:39:10Z",
     "labels": [
-        "component: distribution",
+        "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

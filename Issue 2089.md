@@ -1,22 +1,23 @@
-# Issue 2089: major finite field printing (?) bug
+# Issue 2089: [with patch, positive review] major finite field printing bug
 
 archive/issues_002089.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIn sage-2.10.1\n\n```\nsage: sage: F.<u> = GF(2^20)\nsage: sage: F.gens()\n(a,)\nsage: u^3\nu^3\nsage: u\na\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2089\n\n",
+    "body": "Assignee: @malb\n\nIn sage-2.10.1\n\n```\nsage: sage: F.<u> = GF(2^20)\nsage: sage: F.gens()\n(a,)\nsage: u^3\nu^3\nsage: u\na\n```\n\n(from Kate)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2089\n\n",
+    "closed_at": "2008-02-19T15:00:23Z",
     "created_at": "2008-02-07T22:12:40Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "major finite field printing (?) bug",
+    "title": "[with patch, positive review] major finite field printing bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2089",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 In sage-2.10.1
 
@@ -29,6 +30,8 @@ u^3
 sage: u
 a
 ```
+
+(from Kate)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2089
 

@@ -1,22 +1,23 @@
-# Issue 2294: RealDoubleElement _interface_init_ is very poor
+# Issue 2294: [with patch, positive review] RealDoubleElement _interface_init_ is very poor
 
 archive/issues_002294.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.\n\n```\nsage: RR(RDF(sin(1)))\n0.841470984807897\nsage: RR(RDF(sin(1))._interface_init_())\n0.841470984808000\n```\n\nI should have a patch for this very soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2294\n\n",
+    "body": "Assignee: cwitty\n\nWe see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.\n\n```\nsage: RR(RDF(sin(1)))\n0.841470984807897\nsage: RR(RDF(sin(1))._interface_init_())\n0.841470984808000\n```\n\nI should have a patch for this very soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2294\n\n",
+    "closed_at": "2008-02-24T21:28:30Z",
     "created_at": "2008-02-24T19:18:35Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "RealDoubleElement _interface_init_ is very poor",
+    "title": "[with patch, positive review] RealDoubleElement _interface_init_ is very poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2294",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
 We see here that _interface_init_() on RDF loses the last few digits of its value, by truncation.
 

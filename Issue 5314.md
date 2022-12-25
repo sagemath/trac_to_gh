@@ -1,22 +1,23 @@
-# Issue 5314: [with patch, needs review] The empty permutations exists !
+# Issue 5314: [with patch, positive review] The empty permutations exists !
 
 archive/issues_005314.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
+    "closed_at": "2009-02-20T07:24:22Z",
     "created_at": "2009-02-19T19:33:12Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] The empty permutations exists !",
+    "title": "[with patch, positive review] The empty permutations exists !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5314",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @hivert
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

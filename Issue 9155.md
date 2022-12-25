@@ -4,10 +4,11 @@ archive/issues_009155.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @rbeezer @fchapoton\n\ncached_method should not be used with mutable return values\n\n```\nsage: G = SymmetricGroup(2)\nsage: elements = G.list()\nsage: elements.remove(G(\"()\"))\nsage: G.list()\n[(1,2)]\nsage: K = SymmetricGroup(2)\nsage: K.list()\n[(1,2)]\n```\n\nas reported at http://groups.google.com/group/sage-devel/browse_thread/thread/265e134a585cf2bf\n\nIssue created by migration from https://trac.sagemath.org/ticket/9155\n\n",
+    "closed_at": "2016-05-01T16:30:16Z",
     "created_at": "2010-06-06T04:35:30Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: group theory",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "G.list() can be modified",

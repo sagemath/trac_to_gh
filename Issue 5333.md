@@ -4,6 +4,7 @@ archive/issues_005333.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nLeft over pynac libraries in $SAGE_LOCAL/lib cause upgrade trouble from some releases. William reported some as well as John Cremona in \n\nhttp://groups.google.com/group/sage-devel/t/d1105e1b1cd3d057\n\nThe fix is trivial, but very important to get into 3.4.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5333\n\n",
+    "closed_at": "2009-02-26T11:50:46Z",
     "created_at": "2009-02-21T22:54:28Z",
     "labels": [
         "component: packages: standard",

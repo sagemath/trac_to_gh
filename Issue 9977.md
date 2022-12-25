@@ -3,12 +3,12 @@
 archive/issues_009977.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @nthiery\n\nThe 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. \n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libmbx.a\n```\n\nThe maths library is part of the `bos.adt` fileset. Hence a test for the maths library should be added. After installing `bos.adt`, so the maths library exists:\n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libm.a       /usr/lib/libmbx.a     /usr/lib/libm_r.a     /usr/lib/libmsaa.a    /usr/lib/libmsaa_r.a\n```\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9978\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @nthiery\n\nThe 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. This may also be the case on other operating systems, including perhaps some cut-down Linux distributions, though I'm not aware of any system other than AIX where the maths library does not get installed on a basic installation of the operating system. \n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libmbx.a\n```\n\nThe maths library is part of the `bos.adt` fileset. Hence a test for the maths library should be added. After installing `bos.adt`, so the maths library exists:\n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libm.a       /usr/lib/libmbx.a     /usr/lib/libm_r.a     /usr/lib/libmsaa.a    /usr/lib/libmsaa_r.a\n```\n\n## Notes for reviewers\nYou will need to copy the `prereq-0.8.tar` from this ticket and the `prereq-0.8-install` script from #11070 to `$SAGE_ROOT/spkg/base` For the purposes of reviewing this ticket, you only need to look at the changes to configure.ac. \n\n## Notes for the release manager\nThis ticket must be merged with #11070, which also has positive review. Each depends on the other. Some notes about the upgrade process are given on #11070\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9978\n\n",
+    "closed_at": "2011-04-05T11:59:57Z",
     "created_at": "2010-09-23T13:46:47Z",
     "labels": [
-        "component: aix or hp-ux ports",
-        "minor",
-        "bug"
+        "component: build",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Add a test for the maths library in the 'prereq' script.",
@@ -21,7 +21,7 @@ Assignee: drkirkby
 
 CC:  @jhpalmieri @nthiery
 
-The 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. 
+The 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. This may also be the case on other operating systems, including perhaps some cut-down Linux distributions, though I'm not aware of any system other than AIX where the maths library does not get installed on a basic installation of the operating system. 
 
 ```
 -bash-4.1$ ls /usr/lib/libm*
@@ -35,7 +35,13 @@ The maths library is part of the `bos.adt` fileset. Hence a test for the maths l
 /usr/lib/libm.a       /usr/lib/libmbx.a     /usr/lib/libm_r.a     /usr/lib/libmsaa.a    /usr/lib/libmsaa_r.a
 ```
 
-Dave
+## Notes for reviewers
+You will need to copy the `prereq-0.8.tar` from this ticket and the `prereq-0.8-install` script from #11070 to `$SAGE_ROOT/spkg/base` For the purposes of reviewing this ticket, you only need to look at the changes to configure.ac. 
+
+## Notes for the release manager
+This ticket must be merged with #11070, which also has positive review. Each depends on the other. Some notes about the upgrade process are given on #11070
+
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9978
 

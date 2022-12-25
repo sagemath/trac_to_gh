@@ -3,7 +3,8 @@
 archive/issues_006285.json:
 ```json
 {
-    "body": "Description for \"arcsin\" wrongly says it is \"The inverse of the hyperbolic sine function\" !!\n\n```\narcsin?\n\nFile:        /home/golam/foo/sage-4.0.1/local/lib/python2.5/site-packages/sage/functions/trig.py\nType:        <class 'sage.functions.trig.Function_arcsin'>\nDefinition:  arcsin(x, hold='False')\nDocstring: \n\n        The inverse of the hyperbolic sine function.\n\n        EXAMPLES::\n\n            sage: arcsinh(0.5)\n            0.481211825059603\n            sage: arcsinh(1/2)\n            arcsinh(1/2)\n            sage: arcsinh(1 + 1.0*I)\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6285\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: arcsin, wrong description\n\n(1) Description for \"arcsin\" wrongly says it is \"The inverse of the hyperbolic sine function\" !!\n\n```\narcsin?\n\nFile:        /home/golam/foo/sage-4.0.1/local/lib/python2.5/site-packages/sage/functions/trig.py\nType:        <class 'sage.functions.trig.Function_arcsin'>\nDefinition:  arcsin(x, hold='False')\nDocstring: \n\n        The inverse of the hyperbolic sine function.\n\n        EXAMPLES::\n\n            sage: arcsinh(0.5)\n            0.481211825059603\n            sage: arcsinh(1/2)\n            arcsinh(1/2)\n            sage: arcsinh(1 + 1.0*I)\n\n```\n\n(2) Is it also missing \" ginac='acos' \" in conversion dict?\n\nBoth \"arccos\" and \"arctan\" have that conversion defined.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6285\n\n",
+    "closed_at": "2009-06-14T22:20:26Z",
     "created_at": "2009-06-14T11:43:56Z",
     "labels": [
         "component: symbolics",
@@ -16,7 +17,11 @@ archive/issues_006285.json:
     "user": "https://github.com/golam-m-hossain"
 }
 ```
-Description for "arcsin" wrongly says it is "The inverse of the hyperbolic sine function" !!
+Assignee: @burcin
+
+Keywords: arcsin, wrong description
+
+(1) Description for "arcsin" wrongly says it is "The inverse of the hyperbolic sine function" !!
 
 ```
 arcsin?
@@ -37,6 +42,11 @@ Docstring:
             sage: arcsinh(1 + 1.0*I)
 
 ```
+
+(2) Is it also missing " ginac='acos' " in conversion dict?
+
+Both "arccos" and "arctan" have that conversion defined.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6285
 

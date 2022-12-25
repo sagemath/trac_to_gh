@@ -1,22 +1,23 @@
-# Issue 4973: rewrite the function __getitem__ in matrix0.pyx to not explicitly use the python/C api
+# Issue 4973: [with patch, positive review] rewrite the function __getitem__ in matrix0.pyx to support slices better, negative indices, and be faster
 
 archive/issues_004973.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\n`__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4973\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @craigcitro\n\n`__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4973\n\n",
+    "closed_at": "2009-01-18T14:44:33Z",
     "created_at": "2009-01-14T09:30:10Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "rewrite the function __getitem__ in matrix0.pyx to not explicitly use the python/C api",
+    "title": "[with patch, positive review] rewrite the function __getitem__ in matrix0.pyx to support slices better, negative indices, and be faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4973",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @craigcitro
+Assignee: @jasongrout
 
 CC:  @craigcitro
 

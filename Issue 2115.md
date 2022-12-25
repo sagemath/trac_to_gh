@@ -1,9 +1,10 @@
-# Issue 2115: add native python implementation of multiset combinations
+# Issue 2115: [with patch, with positive review] add native python implementation of multiset combinations
 
 archive/issues_002115.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2115\n\n",
+    "closed_at": "2008-02-14T09:38:31Z",
     "created_at": "2008-02-08T15:15:26Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002115.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "add native python implementation of multiset combinations",
+    "title": "[with patch, with positive review] add native python implementation of multiset combinations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2115",
     "user": "https://github.com/mwhansen"

@@ -1,15 +1,16 @@
-# Issue 3445: notebook -- finish implementing e-mail confirmation
+# Issue 3445: [with patch, positive review] notebook -- finish implementing e-mail confirmation
 
 archive/issues_003445.json:
 ```json
 {
     "body": "Assignee: timothyclemans\n\nCurrently an e-mail is sent after registration with a confirmation url. However clicking on that url doesn't mark that the user's e-mail has been confirmed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3445\n\n",
+    "closed_at": "2008-06-25T03:52:38Z",
     "created_at": "2008-06-16T22:56:19Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- finish implementing e-mail confirmation",
+    "title": "[with patch, positive review] notebook -- finish implementing e-mail confirmation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3445",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

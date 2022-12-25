@@ -4,6 +4,7 @@ archive/issues_007031.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @dimpase\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used  (#7021)\n\nCC was set to the Sun C compler, and CXX to the Sun C++ compiler. The singular configure script does not believe the Sun C++ compiler can create executables. This is the same sort of error as seen in quaddouble-2.2.p9 #7030. \n\nThis time the problem is easy to diagnose. The test is used adds the option -fPIC when trying to test the C++ compiler. But -fPIC is a GNU-specific option - it is not acceptable to the Sun C++ compiler. Instead  -xcode=pic32, -KPIC or -PIC would work, but not -fPIC. \n\nIt's clearly dumb to send a GNU specific option to test a C++ compiler unless you are 100% sure the C++ compiler is the GNU C++ compiler. \n\n```\nchecking for c++... /opt/xxxsunstudio12.1/bin/CC\nchecking whether the C++ compiler (/opt/xxxsunstudio12.1/bin/CC  -O3 -g -fPIC ) works... no\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7031\n\n",
+    "closed_at": "2020-07-15T07:18:41Z",
     "created_at": "2009-09-27T14:14:02Z",
     "labels": [
         "component: porting: solaris",

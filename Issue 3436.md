@@ -4,6 +4,7 @@ archive/issues_003436.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nMatrices with prescribed density are not generated correctly:\n\n```\nsage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n940\nsage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n465\n```\n\nTo wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3436\n\n",
+    "closed_at": "2010-01-24T00:28:15Z",
     "created_at": "2008-06-16T04:56:11Z",
     "labels": [
         "component: linear algebra",

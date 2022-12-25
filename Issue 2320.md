@@ -1,22 +1,23 @@
-# Issue 2320: sage -server, sage -worker, sage -dsage broken
+# Issue 2320: [with patch, positive review] sage -server, sage -worker, sage -dsage broken
 
 archive/issues_002320.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nThese shorthands are broken right now because of changes to the dsage scripts. We need to either \n\n1) remove these shorthands\n2) fix them\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2320\n\n",
+    "body": "Assignee: @williamstein\n\nThese shorthands are broken right now because of changes to the dsage scripts. We need to either \n\n1) remove these shorthands\n2) fix them\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2320\n\n",
+    "closed_at": "2008-03-14T17:41:44Z",
     "created_at": "2008-02-26T17:46:08Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "sage -server, sage -worker, sage -dsage broken",
+    "title": "[with patch, positive review] sage -server, sage -worker, sage -dsage broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2320",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: @yqiang
+Assignee: @williamstein
 
 These shorthands are broken right now because of changes to the dsage scripts. We need to either 
 

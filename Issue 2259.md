@@ -1,16 +1,17 @@
-# Issue 2259: [with-patch] Fix doctest in pow_computer
+# Issue 2259: [with patch; positive review] Fix doctest in pow_computer
 
 archive/issues_002259.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nFixes doctests in pow_computer and pow_computer_ext due to functions being evaluated in a different order on different architectures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2259\n\n",
+    "closed_at": "2008-02-22T18:02:27Z",
     "created_at": "2008-02-22T17:02:33Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with-patch] Fix doctest in pow_computer",
+    "title": "[with patch; positive review] Fix doctest in pow_computer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2259",
     "user": "https://github.com/roed314"

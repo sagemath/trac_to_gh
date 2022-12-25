@@ -3,11 +3,11 @@
 archive/issues_005759.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: Zmod(2)(0).divides(Zmod(2)(1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/50691/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.CommutativeRingElement.divides (sage/structure/element.c:12423)()\n\n/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__mod__ (sage/rings/integer_mod.c:17834)()\n   1867     def __mod__(IntegerMod_int self, right):\n   1868         right = int(right)\n-> 1869         if self.__modulus.int32 % right != 0:\n   1870             raise ZeroDivisionError, \"reduction modulo right not defined.\"\n   1871         return integer_mod_ring.IntegerModRing(right)(self)\n\nZeroDivisionError: integer division or modulo by zero\n\nFound by  kilian__ on irc.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5759\n\n",
+    "body": "Assignee: @williamstein\n\nThe function \"divides\" does not work for generic commutative rings.\n\n1. it is not checked that the elements are in the same space, i.e.\n\nZmod(5)(1).divides(Zmod(2)(1)) is \"True\"\n\n2. No division by zero checking is done! This gives for example an error if you type\n\n    -> Zmod(2).zero_ideal() == Zmod(2).zero_ideal() \n\n    -> Zmod(2).zero_ideal() == Zmod(2).unit_ideal()\n\nThis patch should fix this. It may not be able to handle all cases but classes who need a more clever function should do their own implementation anyways.\n\nGreetings,\nKilian. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5759\n\n",
+    "closed_at": "2010-10-04T02:48:22Z",
     "created_at": "2009-04-11T18:37:49Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -17,28 +17,24 @@ archive/issues_005759.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
-```
-sage: Zmod(2)(0).divides(Zmod(2)(1))
----------------------------------------------------------------------------
-ZeroDivisionError                         Traceback (most recent call last)
+The function "divides" does not work for generic commutative rings.
 
-/Users/wstein/.sage/temp/teragon.local/50691/_Users_wstein__sage_init_sage_0.py in <module>()
+1. it is not checked that the elements are in the same space, i.e.
 
-/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.CommutativeRingElement.divides (sage/structure/element.c:12423)()
+Zmod(5)(1).divides(Zmod(2)(1)) is "True"
 
-/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__mod__ (sage/rings/integer_mod.c:17834)()
-   1867     def __mod__(IntegerMod_int self, right):
-   1868         right = int(right)
--> 1869         if self.__modulus.int32 % right != 0:
-   1870             raise ZeroDivisionError, "reduction modulo right not defined."
-   1871         return integer_mod_ring.IntegerModRing(right)(self)
+2. No division by zero checking is done! This gives for example an error if you type
 
-ZeroDivisionError: integer division or modulo by zero
+    -> Zmod(2).zero_ideal() == Zmod(2).zero_ideal() 
 
-Found by  kilian__ on irc.
-```
+    -> Zmod(2).zero_ideal() == Zmod(2).unit_ideal()
+
+This patch should fix this. It may not be able to handle all cases but classes who need a more clever function should do their own implementation anyways.
+
+Greetings,
+Kilian. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5759
 

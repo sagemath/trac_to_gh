@@ -1,9 +1,10 @@
-# Issue 5981: Sage 3.4.2: prime_pi() broken on 32 bit
+# Issue 5981: [with patch, positive review] Sage 3.4.2: prime_pi() broken on 32 bit
 
 archive/issues_005981.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis patch fixes the problem:\n\n```\ndiff -r 8713e0a599f3 sage/functions/prime_pi.pyx\n--- a/sage/functions/prime_pi.pyx\tSun May 03 23:10:56 2009 -0700\n+++ b/sage/functions/prime_pi.pyx\tMon May 04 12:44:03 2009 -0400\n@@ -171,7 +171,7 @@\n             raise ValueError, \"mem_mult must be positive\"\n         if x < 2:\n             return 0\n-        if x > Integer(2**40):\n+        if x > 1099511627776L:\n             raise NotImplementedError, \"computation of prime_pi() greater 2**40 not implemented\"\n         x += x & 1\n         # m_max is the current sieving value, for prime counting - this value is sqrt(x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5981\n\n",
+    "body": "Assignee: mabshoff\n\nThe issue is that `Integer(2^40)` is evaluated to 0 on 32 bit systems (maybe due to Cython folding constants?). The attached patch uses a long constant instead. Tested to work on 32 and 64 bit boxen.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5981\n\n",
+    "closed_at": "2009-05-05T04:20:48Z",
     "created_at": "2009-05-04T16:45:52Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005981.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Sage 3.4.2: prime_pi() broken on 32 bit",
+    "title": "[with patch, positive review] Sage 3.4.2: prime_pi() broken on 32 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5981",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,22 +20,11 @@ archive/issues_005981.json:
 ```
 Assignee: mabshoff
 
-This patch fixes the problem:
+The issue is that `Integer(2^40)` is evaluated to 0 on 32 bit systems (maybe due to Cython folding constants?). The attached patch uses a long constant instead. Tested to work on 32 and 64 bit boxen.
 
-```
-diff -r 8713e0a599f3 sage/functions/prime_pi.pyx
---- a/sage/functions/prime_pi.pyx	Sun May 03 23:10:56 2009 -0700
-+++ b/sage/functions/prime_pi.pyx	Mon May 04 12:44:03 2009 -0400
-@@ -171,7 +171,7 @@
-             raise ValueError, "mem_mult must be positive"
-         if x < 2:
-             return 0
--        if x > Integer(2**40):
-+        if x > 1099511627776L:
-             raise NotImplementedError, "computation of prime_pi() greater 2**40 not implemented"
-         x += x & 1
-         # m_max is the current sieving value, for prime counting - this value is sqrt(x)
-```
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/5981
 

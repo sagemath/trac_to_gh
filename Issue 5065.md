@@ -1,24 +1,23 @@
-# Issue 5065: elliptic curve torsion subgroup doesn't know it's identity
+# Issue 5065: elliptic curve torsion subgroup doesn't know its identity
 
 archive/issues_005065.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe torsion subgroup of an elliptic curve appears to be quite broken -- it barfs when trying to coerce in 0,\n\n```\nsage: E = EllipticCurve(1)\nsage: T = E.torsion_subgroup()\nsage: T(0)\n...\n...\nTypeError: Argument x (= 0) is of wrong type.\n```\n\nfurther, it returns a mysterious 1 when coercing in a 1\n\n```\nsage: a = T(1); a\n1\nsage: b = T.gens()[0]-T.gens()[0]; b\n(0 : 1 : 0)\nsage: a+b\nTypeError: unsupported operand parent(s) for '+': 'Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field' and 'Torsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 x C2 associated to the Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field'\n```\n\nYet, it's all cool with the original curve.\n\n```\nsage: E(0)\n(0 : 1 : 0)\nsage: E(1)\n...\n...\nTypeError: v (=(1,)) must have 3 components\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5065\n\n",
+    "body": "The torsion subgroup of an elliptic curve appears to be quite broken -- it barfs when trying to coerce in 0,\n\n```\nsage: E = EllipticCurve(1)\nsage: T = E.torsion_subgroup()\nsage: T(0)\n...\n...\nTypeError: Argument x (= 0) is of wrong type.\n```\n\nfurther, it returns a mysterious 1 when coercing in a 1\n\n```\nsage: a = T(1); a\n1\nsage: b = T.gens()[0]-T.gens()[0]; b\n(0 : 1 : 0)\nsage: a+b\nTypeError: unsupported operand parent(s) for '+': 'Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field' and 'Torsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 x C2 associated to the Elliptic Curve defined by y^2 + x*y + y = x^3 - 19*x + 26 over Rational Field'\n```\n\nYet, it's all cool with the original curve.\n\n```\nsage: E(0)\n(0 : 1 : 0)\nsage: E(1)\n...\n...\nTypeError: v (=(1,)) must have 3 components\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5065\n\n",
+    "closed_at": "2010-08-14T16:47:11Z",
     "created_at": "2009-01-23T08:29:47Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "elliptic curve torsion subgroup doesn't know it's identity",
+    "title": "elliptic curve torsion subgroup doesn't know its identity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5065",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: @williamstein
-
 The torsion subgroup of an elliptic curve appears to be quite broken -- it barfs when trying to coerce in 0,
 
 ```

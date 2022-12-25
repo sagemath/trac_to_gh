@@ -3,7 +3,8 @@
 archive/issues_009108.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  simonking @JohnCremona\n\nKeywords: time-out, doctest, symmetric ideal, symmetric_ideal\n\nTwo doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9108\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking @JohnCremona\n\nKeywords: time-out, doctest, symmetric ideal, symmetric_ideal\n\nTwo doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).\n\nCan you say which one? Then I'll either try shorter tests (which might actually be quite instructive, like a principal symmetric ideal whose minimal symmetric Groebner basis is formed by quite many polynomials) or mark the offensive tests as long.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9108\n\n",
+    "closed_at": "2010-06-06T08:26:59Z",
     "created_at": "2010-06-01T15:16:01Z",
     "labels": [
         "component: commutative algebra",
@@ -24,6 +25,8 @@ CC:  simonking @JohnCremona
 Keywords: time-out, doctest, symmetric ideal, symmetric_ideal
 
 Two doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).
+
+Can you say which one? Then I'll either try shorter tests (which might actually be quite instructive, like a principal symmetric ideal whose minimal symmetric Groebner basis is formed by quite many polynomials) or mark the offensive tests as long.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9108
 

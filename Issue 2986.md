@@ -1,15 +1,16 @@
-# Issue 2986: [with patch - actually tuning tarball] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)
+# Issue 2986: [with spkg, positive review] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)
 
 archive/issues_002986.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: atlas\n\nTuning information attached to this ticket (took about 3 hours on a 3GHz CPU)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2986\n\n",
+    "closed_at": "2008-04-21T07:33:53Z",
     "created_at": "2008-04-21T05:29:06Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch - actually tuning tarball] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)",
+    "title": "[with spkg, positive review] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2986",
     "user": "https://github.com/tornaria"

@@ -1,15 +1,18 @@
-# Issue 406: notebook -- improve support for other system modes
+# Issue 406: [with patch; positive review] notebook -- make tab completion not stick gap. when using the notebook in gap mode
 
 archive/issues_000406.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\nOn 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:\n> Some other minor issues about using GAP within the notebook, under\n> 2.7.1.  I've put my entire worksheet in GAP mode using the menu at\n> the top.  The following things don't work correctly:\n> \n> 0) If I type something that gives an error in GAP, the error\n> message is buried in a python exception/backtrace.\n> \n> 1) If I type \"?SymmetricGroup\" (which works within GAP), all I see\n> is\n> \n>    Help: Showing `Reference: SymmetricGroup'\n>    Page from 104\n> \n> It's similar with other \"?foo\" commands.\n> \n> 2) If I type \"SymmetricGroup?\" and hit tab, it shows me help about\n> sage's wrapped SymmetricGroup function.  I don't think this will\n> be helpful for functions not wrapped by sage.\n> \n> 3) When I try to use tab completion, it inserts \"gap.\" before the\n> command (and probably ignores functions not wrapper by sage).\n\nI am aware of each of these issues (which also happen with\nthe other interfaces).  They are *not* features in my mind, but\nbugs, and they need to be fixed by somebody (either me or\nsomebody else). \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/406\n\n",
+    "body": "Assignee: boothby\n\n```\nOn 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:\n> 3) When I try to use tab completion, it inserts \"gap.\" before the\n> command (and probably ignores functions not wrapper by sage).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/406\n\n",
+    "closed_at": "2008-05-12T10:59:39Z",
     "created_at": "2007-07-27T03:01:47Z",
     "labels": [
-        "component: notebook"
+        "component: notebook",
+        "blocker",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- improve support for other system modes",
+    "title": "[with patch; positive review] notebook -- make tab completion not stick gap. when using the notebook in gap mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/406",
     "user": "https://github.com/williamstein"
@@ -19,34 +22,8 @@ Assignee: boothby
 
 ```
 On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
-> Some other minor issues about using GAP within the notebook, under
-> 2.7.1.  I've put my entire worksheet in GAP mode using the menu at
-> the top.  The following things don't work correctly:
-> 
-> 0) If I type something that gives an error in GAP, the error
-> message is buried in a python exception/backtrace.
-> 
-> 1) If I type "?SymmetricGroup" (which works within GAP), all I see
-> is
-> 
->    Help: Showing `Reference: SymmetricGroup'
->    Page from 104
-> 
-> It's similar with other "?foo" commands.
-> 
-> 2) If I type "SymmetricGroup?" and hit tab, it shows me help about
-> sage's wrapped SymmetricGroup function.  I don't think this will
-> be helpful for functions not wrapped by sage.
-> 
 > 3) When I try to use tab completion, it inserts "gap." before the
 > command (and probably ignores functions not wrapper by sage).
-
-I am aware of each of these issues (which also happen with
-the other interfaces).  They are *not* features in my mind, but
-bugs, and they need to be fixed by somebody (either me or
-somebody else). 
-
-William
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/406

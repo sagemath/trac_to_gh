@@ -4,6 +4,7 @@ archive/issues_004294.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe title says all: I'd like to run sage -t on a file with %pdb on, so that on the first encountered error it would pop up a debugger to poke around what's the context of the error.\n\nThanks in advance! \n\nIssue created by migration from https://trac.sagemath.org/ticket/4294\n\n",
+    "closed_at": "2013-02-22T21:35:00Z",
     "created_at": "2008-10-15T11:45:49Z",
     "labels": [
         "component: doctest coverage"

@@ -3,10 +3,10 @@
 archive/issues_003354.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: t = QQ[['t']].0\nsage: sqrt(1+t)\n1 + 1/2*t - 1/8*t^2 + 1/16*t^3 - 5/128*t^4 + 7/256*t^5 - 21/1024*t^6 + 33/2048*t^7 - 429/32768*t^8 + 715/65536*t^9 - 2431/262144*t^10 + 4199/524288*t^11 - 29393/4194304*t^12 + 52003/8388608*t^13 - 185725/33554432*t^14 + 334305/67108864*t^15 - 9694845/2147483648*t^16 + 17678835/4294967296*t^17 - 64822395/17179869184*t^18 + 119409675/34359738368*t^19 + O(t^20)\nsage: sqrt(2+t)\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7664, in __call__\n    return x.sqrt(*args, **kwds)\n  File \"power_series_ring_element.pyx\", line 1120, in sage.rings.power_series_ring_element.PowerSeries.sqrt (sage/rings/power_series_ring_element.c:7887)\n<type 'exceptions.ValueError'>: power series does not have a square root since it has odd valuation.\n```\n\nPerhaps the error is just bad, but it should be able to compute this by extending to a field with  sqrt(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3354\n\n",
+    "body": "Assignee: somebody\n\nKeywords: power series\n\n```\nsage: t = QQ[['t']].0\nsage: sqrt(1+t)\n1 + 1/2*t - 1/8*t^2 + 1/16*t^3 - 5/128*t^4 + 7/256*t^5 - 21/1024*t^6 + 33/2048*t^7 - 429/32768*t^8 + 715/65536*t^9 - 2431/262144*t^10 + 4199/524288*t^11 - 29393/4194304*t^12 + 52003/8388608*t^13 - 185725/33554432*t^14 + 334305/67108864*t^15 - 9694845/2147483648*t^16 + 17678835/4294967296*t^17 - 64822395/17179869184*t^18 + 119409675/34359738368*t^19 + O(t^20)\nsage: sqrt(2+t)\n------------------------------------------------------------\nTraceback (most recent call last):\n```\nNow this error is expected because `sqrt()` has an `extend` keyword that allows to extend the base ring, and to give the name of the generator of the quadratic field, but this does not work:\n\n```\nsage: K.<t> = PowerSeriesRing(QQ, 5)\nsage: (t+2).sqrt(extend=True, name='sqrt2')\nsqrt2\n```\nThe expected output would be `sqrt2 + sqrt2*x/4 + sqrt2*x^2/32 +...`\n\nHowever, more convenient would be to make the default of `extend` to be `True` and for square roots of integers `N` the name `sqrtN` provided. Only raise an error for nonintegers if no name is given.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3354\n\n",
     "created_at": "2008-06-03T02:16:22Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.0",
@@ -18,6 +18,8 @@ archive/issues_003354.json:
 ```
 Assignee: somebody
 
+Keywords: power series
+
 ```
 sage: t = QQ[['t']].0
 sage: sqrt(1+t)
@@ -25,14 +27,18 @@ sage: sqrt(1+t)
 sage: sqrt(2+t)
 ------------------------------------------------------------
 Traceback (most recent call last):
-  File "<ipython console>", line 1, in <module>
-  File "/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py", line 7664, in __call__
-    return x.sqrt(*args, **kwds)
-  File "power_series_ring_element.pyx", line 1120, in sage.rings.power_series_ring_element.PowerSeries.sqrt (sage/rings/power_series_ring_element.c:7887)
-<type 'exceptions.ValueError'>: power series does not have a square root since it has odd valuation.
 ```
+Now this error is expected because `sqrt()` has an `extend` keyword that allows to extend the base ring, and to give the name of the generator of the quadratic field, but this does not work:
 
-Perhaps the error is just bad, but it should be able to compute this by extending to a field with  sqrt(2).
+```
+sage: K.<t> = PowerSeriesRing(QQ, 5)
+sage: (t+2).sqrt(extend=True, name='sqrt2')
+sqrt2
+```
+The expected output would be `sqrt2 + sqrt2*x/4 + sqrt2*x^2/32 +...`
+
+However, more convenient would be to make the default of `extend` to be `True` and for square roots of integers `N` the name `sqrtN` provided. Only raise an error for nonintegers if no name is given.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3354
 

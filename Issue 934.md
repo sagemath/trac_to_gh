@@ -4,9 +4,11 @@ archive/issues_000934.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nAn easy one to add to our 2.8.8 count ;-]\n\nIssue created by migration from https://trac.sagemath.org/ticket/934\n\n",
+    "closed_at": "2007-10-21T00:37:08Z",
     "created_at": "2007-10-19T22:24:09Z",
     "labels": [
         "component: linear algebra",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",

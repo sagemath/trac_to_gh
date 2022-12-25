@@ -1,22 +1,25 @@
-# Issue 6699: [with spkg; needs review] Update to Maxima 5.19.0 (particularly important for Solaris support).
+# Issue 6699: [with spkg and patch, positive review] Update to Maxima 5.19.1 (particularly important for Solaris support).
 
 archive/issues_006699.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI've made a new .spkg file for Maxima based on the latest 5.19.0 release. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg\n\nI gather updates to Maxima have caused some issues in the past in Sage, so I don't know how this will go. \n\nI've also created a new .spkg file for ECL, based on the latest 9.8.1 source code (despite the fact the web site shows 9.7.1 as the latest, if you go to the downloads page, you can get 9.8.1). \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.1/ecl-9.8.1.spkg\n\nThis updated ECL resolves Trac #6564, as ECL 9.8.1 works on Solaris SPARC, but ECL 9.7.1 does not.  \n\nIf the updated ECL is applied (so solving #6564), Maxima **must** be updated, as improved type-check in ECL has found a bug that existed in Maxima for 35 years! (confirmed by Maxima developers). \n\nSo in summary\n\n* An update to ECL 9.8.1 is needed for Solaris SPARC, as 9.7.1 will not build. (Track #6564)\n* ECL 9.8.1 refuses to build Maxima due to a Maxima bug.\n* This new .spkg for Maxima is necessary in order that Maxima can be used on Solaris. \n\nThis suggests to me that if there are issues in Sage with this latest Maxima, they should be resolved. There is no point staying with an old version of Maxima, which needs an old version of ECL, which will not build on Solaris. \n\nI appreciate things might not be as simple as that. \n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6699\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: maxima\n\nI've made a new .spkg file for Maxima based on the latest 5.19.0 release. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg\n\nI gather updates to Maxima have caused some issues in the past in Sage, so I don't know how this will go. \n\nI've also created a new .spkg file for ECL, based on the latest 9.8.1 source code (despite the fact the web site shows 9.7.1 as the latest, if you go to the downloads page, you can get 9.8.1). \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.1/ecl-9.8.1.spkg\n\nThis updated ECL resolves Trac #6564, as ECL 9.8.1 works on Solaris SPARC, but ECL 9.7.1 does not.  \n\nIf the updated ECL is applied (so solving #6564), Maxima **must** be updated, as improved type-check in ECL has found a bug that existed in Maxima for 35 years! (confirmed by Maxima developers). \n\nSo in summary\n\n* An update to ECL 9.8.1 is needed for Solaris SPARC, as 9.7.1 will not build. (Track #6564)\n* ECL 9.8.1 refuses to build Maxima due to a Maxima bug.\n* This new .spkg for Maxima is necessary in order that Maxima can be used on Solaris. \n\nThis suggests to me that if there are issues in Sage with this latest Maxima, they should be resolved. There is no point staying with an old version of Maxima, which needs an old version of ECL, which will not build on Solaris. \n\nI appreciate things might not be as simple as that. \n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6699\n\n",
+    "closed_at": "2009-09-02T10:52:22Z",
     "created_at": "2009-08-09T07:53:37Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with spkg; needs review] Update to Maxima 5.19.0 (particularly important for Solaris support).",
+    "title": "[with spkg and patch, positive review] Update to Maxima 5.19.1 (particularly important for Solaris support).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6699",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
+
+Keywords: maxima
 
 I've made a new .spkg file for Maxima based on the latest 5.19.0 release. 
 

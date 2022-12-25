@@ -4,6 +4,7 @@ archive/issues_007745.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @robert-marik @burcin\n\nKeywords: maxima\n\nMaxima is now updated, and that will incorporate a number of our bugfixes as well as things we have reported, not to mention other improvements.   See [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) for the announcement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7745\n\n",
+    "closed_at": "2010-01-04T03:09:34Z",
     "created_at": "2009-12-21T02:07:46Z",
     "labels": [
         "component: packages: standard"

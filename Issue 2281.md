@@ -1,16 +1,17 @@
-# Issue 2281: elliptic_curve_finite_field: order caching problem
+# Issue 2281: [with patch, positive review] elliptic_curve_finite_field: order caching problem
 
 archive/issues_002281.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe problem, caused by the patches to #1130, are that the cached field `elliptic_curve_finite_field.__order` which is python-mangled to `elliptic_curve_finite_field._elliptic_curve_finite_field_order`, was being accessed (and even set) by elements of the `EllipticCurvePoint_finite_field` class.\n\nSolution: rename the field `_order` (with a single underscore) to show that it is intended to be private but can still be accessed easily by \"friendly\" classes which know what they are doing.\n\nPatch (based on 2.10.2) to follow will address some other issues with `elliptic_curve_finite_field`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2281\n\n",
+    "closed_at": "2008-02-28T00:30:20Z",
     "created_at": "2008-02-23T20:57:05Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "elliptic_curve_finite_field: order caching problem",
+    "title": "[with patch, positive review] elliptic_curve_finite_field: order caching problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2281",
     "user": "https://github.com/JohnCremona"

@@ -3,7 +3,8 @@
 archive/issues_008133.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nKeywords: dirichlet characters\n\nThe current representation of Dirichlet characters as something like `[1,zeta6,-1]` is not very helpful, especially because it is not even clear what generator we are taling about in (Z/N)*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8133\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nKeywords: dirichlet characters\n\nThe current representation of Dirichlet characters as something like `[1,zeta6,-1]` is not very helpful, especially because it is not even clear what generator we are talking about in (Z/N)*. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8133\n\n",
+    "closed_at": "2010-04-15T23:39:49Z",
     "created_at": "2010-01-31T01:33:06Z",
     "labels": [
         "component: modular forms",
@@ -22,7 +23,9 @@ CC:  @williamstein
 
 Keywords: dirichlet characters
 
-The current representation of Dirichlet characters as something like `[1,zeta6,-1]` is not very helpful, especially because it is not even clear what generator we are taling about in (Z/N)*.
+The current representation of Dirichlet characters as something like `[1,zeta6,-1]` is not very helpful, especially because it is not even clear what generator we are talking about in (Z/N)*. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8133
 

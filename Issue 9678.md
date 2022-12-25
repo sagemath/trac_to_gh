@@ -3,10 +3,12 @@
 archive/issues_009678.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @nexttime\n\nKeywords: interrupt, error, c, cython\n\nThere are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h, such as:\n\n* using sigaction() instead of signal()\n* having an interface for more general errors which are not signals\n* testing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9678\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @nexttime\n\nKeywords: interrupt, error, c, cython\n\nThere are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h.\n\nMajor changes planned:\n* **DONE**: make `sig_on()` have function syntax so that we can declare it `cdef int sig_on() except 0`.  See #10115 for the syntax changes.\n* **DONE**: do not save signals in `sigsetjmp()` (by giving a second argument of 0 instead of 1).  This speeds up a sig_on/sig_off loop from 382 clock cycles to 30 clock cycles on a Core(TM)2 Duo CPU T5870 `@` 2.00GHz running Linux 2.6.34 glibc 2.11.2.\n* **DONE**: using `sigaction()` instead of `signal()` since that has more well-defined semantics.\n* **DONE**: handle SIGINT differently from other signals (other signals are urgent and cannot be ignored.  SIGINT on the other hand does not need to handled immediately, but we have to be careful for race conditions).\n* **DONE**: allow `sig_on()` and `sig_off()` to be nested.\n* **DONE**: implement `sig_retry()` for retrying failed computations (this is useful for PARI, see #10018).\n* **DONE**: have an interface for more general errors which are not signals.  This can then be used by PARI, NTL and possibly other C libraries (various tickets).\n* **DONE**: clean up old, unused code.\n* **DONE**: testing interrupt handling: #10030.\n* **DONE**: fix breakage because of this patch: #10061.\n* **DONE**: documentation: #10109.\n* **DONE**: Block interrupts during malloc: #10258.\n* **DONE**: eliminate race condition when a SIGINT arrives before `sig_on()` or during `sig_on()`.\n\nOther potentially related tickets:\n* #800 (make _sig_on and _sig_off faster when stacked)\n* #9640 (Change PARI error catching mechanism)\n* #9564 (libsingular exponentiation can not be interrupted)\n* #7879 (Remove unnecessary signal handling for low prec mpfr operations) --- hopefully `sig_on()` and `sig_off()` can be made very fast such that this shouldn't be an issue anymore.\n* #7794 (`PolynomialRing_integral_domain` ignores Ctrl-C and segfaults)\n* #5313 (patch singular so that when it runs out of memory the error message says \"singular\" in it)\n* #7702 (Handle interrupts better in the notebook)\n* #3423 (Make Pari error messages more informative)\n* #10126 (Fix error handing in Matrix_rational_dense._invert_pari())\n* #10818 (EclLib should allow signals to make LISP code interruptable)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9678\n\n",
+    "closed_at": "2011-03-08T21:45:19Z",
     "created_at": "2010-08-03T21:33:54Z",
     "labels": [
-        "component: misc"
+        "component: c_lib",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Rewrite interrupt handling",
@@ -15,17 +17,40 @@ archive/issues_009678.json:
     "user": "https://github.com/jdemeyer"
 }
 ```
-Assignee: @jasongrout
+Assignee: @jdemeyer
 
 CC:  @nexttime
 
 Keywords: interrupt, error, c, cython
 
-There are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h, such as:
+There are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h.
 
-* using sigaction() instead of signal()
-* having an interface for more general errors which are not signals
-* testing!
+Major changes planned:
+* **DONE**: make `sig_on()` have function syntax so that we can declare it `cdef int sig_on() except 0`.  See #10115 for the syntax changes.
+* **DONE**: do not save signals in `sigsetjmp()` (by giving a second argument of 0 instead of 1).  This speeds up a sig_on/sig_off loop from 382 clock cycles to 30 clock cycles on a Core(TM)2 Duo CPU T5870 `@` 2.00GHz running Linux 2.6.34 glibc 2.11.2.
+* **DONE**: using `sigaction()` instead of `signal()` since that has more well-defined semantics.
+* **DONE**: handle SIGINT differently from other signals (other signals are urgent and cannot be ignored.  SIGINT on the other hand does not need to handled immediately, but we have to be careful for race conditions).
+* **DONE**: allow `sig_on()` and `sig_off()` to be nested.
+* **DONE**: implement `sig_retry()` for retrying failed computations (this is useful for PARI, see #10018).
+* **DONE**: have an interface for more general errors which are not signals.  This can then be used by PARI, NTL and possibly other C libraries (various tickets).
+* **DONE**: clean up old, unused code.
+* **DONE**: testing interrupt handling: #10030.
+* **DONE**: fix breakage because of this patch: #10061.
+* **DONE**: documentation: #10109.
+* **DONE**: Block interrupts during malloc: #10258.
+* **DONE**: eliminate race condition when a SIGINT arrives before `sig_on()` or during `sig_on()`.
+
+Other potentially related tickets:
+* #800 (make _sig_on and _sig_off faster when stacked)
+* #9640 (Change PARI error catching mechanism)
+* #9564 (libsingular exponentiation can not be interrupted)
+* #7879 (Remove unnecessary signal handling for low prec mpfr operations) --- hopefully `sig_on()` and `sig_off()` can be made very fast such that this shouldn't be an issue anymore.
+* #7794 (`PolynomialRing_integral_domain` ignores Ctrl-C and segfaults)
+* #5313 (patch singular so that when it runs out of memory the error message says "singular" in it)
+* #7702 (Handle interrupts better in the notebook)
+* #3423 (Make Pari error messages more informative)
+* #10126 (Fix error handing in Matrix_rational_dense._invert_pari())
+* #10818 (EclLib should allow signals to make LISP code interruptable)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9678
 

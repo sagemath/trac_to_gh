@@ -1,16 +1,16 @@
-# Issue 9566: [with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)
+# Issue 9566: Allow sage.libs.mpmath.call(..., parent=something)
 
 archive/issues_009566.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @burcin\n\nThis can simplify code that needs to call mpmath in some places.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9566\n\n",
+    "closed_at": "2010-07-22T23:44:54Z",
     "created_at": "2010-07-21T17:49:51Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "[with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)",
+    "title": "Allow sage.libs.mpmath.call(..., parent=something)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9566",
     "user": "https://github.com/fredrik-johansson"

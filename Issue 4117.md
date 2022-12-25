@@ -4,6 +4,7 @@ archive/issues_004117.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe leak medium to massive amount of memory in a lot of number field related code. This is caused by\n\n```\n     def type(gen self):\n        return str(type_name(typ(self.g)))\n```\nin gen.pyx. The regular and obvious fix causes segfualts in other places (i.e. due to integer.pyx), so I am attaching a workaround fix that has some performance penalty.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4117\n\n",
+    "closed_at": "2008-09-14T11:02:46Z",
     "created_at": "2008-09-14T09:54:26Z",
     "labels": [
         "component: memleak",

@@ -1,22 +1,23 @@
-# Issue 1448: iterate over MatrixSpace
+# Issue 1448: [with patch, with positive review] iterate over MatrixSpace
 
 archive/issues_001448.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
+    "body": "Assignee: @mwhansen\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
+    "closed_at": "2007-12-22T17:55:06Z",
     "created_at": "2007-12-10T14:20:20Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "iterate over MatrixSpace",
+    "title": "[with patch, with positive review] iterate over MatrixSpace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1448",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 This should work:
 

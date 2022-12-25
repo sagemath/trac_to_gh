@@ -4,9 +4,11 @@ archive/issues_009687.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  bwonderly\n\nArticle used in building Tower of Hanoi graphs has been published, so the citation info is updated, and a reference included so the PDF version can link to the bibliography.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9687\n\n",
+    "closed_at": "2010-09-15T11:38:25Z",
     "created_at": "2010-08-05T04:28:53Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Update citation info for Tower of Hanoi graph generator",

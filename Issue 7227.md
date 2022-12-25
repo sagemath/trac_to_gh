@@ -1,15 +1,16 @@
-# Issue 7227: Improving factor complexity of words functions
+# Issue 7227: [with patch] Improving factor complexity of words functions
 
 archive/issues_007227.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  @videlec\n\nKeywords: factor complexity\n\nImproving the word complexity functions by\n- caching palindromic_lacunas_study\n- caching suffix_tree\n- caching suffix_trie\n- allowing factor_set to take an integer as input\n- adding rauzy_graph function for finite word\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7227\n\n",
+    "closed_at": "2009-10-31T15:42:50Z",
     "created_at": "2009-10-15T14:28:38Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "Improving factor complexity of words functions",
+    "title": "[with patch] Improving factor complexity of words functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7227",
     "user": "https://github.com/seblabbe"

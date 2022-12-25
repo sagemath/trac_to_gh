@@ -1,24 +1,25 @@
-# Issue 8880: CPLEX can bi silenced
+# Issue 8880: CPLEX can now be silenced
 
 archive/issues_008880.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nWith this patch CPLEX it not priting the usual screens of output by default :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8880\n\n",
+    "body": "Assignee: @nathanncohen\n\nWith this patch CPLEX is not priting the usual screens of output by default :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8880\n\n",
+    "closed_at": "2010-10-09T08:45:27Z",
     "created_at": "2010-05-05T00:42:02Z",
     "labels": [
-        "component: numerical",
+        "component: linear programming",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "CPLEX can bi silenced",
+    "title": "CPLEX can now be silenced",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8880",
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: jason, jkantor
+Assignee: @nathanncohen
 
-With this patch CPLEX it not priting the usual screens of output by default :-)
+With this patch CPLEX is not priting the usual screens of output by default :-)
 
 Nathann
 

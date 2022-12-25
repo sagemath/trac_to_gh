@@ -1,4 +1,4 @@
-# Issue 1949: rewrite the mwrank interface to get rid of wrap.* and use C++
+# Issue 1949: Rewrite the mwrank interface to get rid of wrap.cpp
 
 archive/issues_001949.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_001949.json:
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
-    "title": "rewrite the mwrank interface to get rid of wrap.* and use C++",
+    "title": "Rewrite the mwrank interface to get rid of wrap.cpp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1949",
     "user": "https://github.com/williamstein"

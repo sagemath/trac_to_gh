@@ -4,6 +4,7 @@ archive/issues_006960.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: a = pari('393')\nsage: a.python()\n393\nsage: a = magma('393')\nsage: a.sage()\n393     \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6960\n\n",
+    "closed_at": "2010-01-19T06:50:00Z",
     "created_at": "2009-09-19T06:13:32Z",
     "labels": [
         "component: interfaces",

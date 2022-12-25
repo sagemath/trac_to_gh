@@ -1,22 +1,23 @@
-# Issue 724: graph6 parsing does not throw an error when the string is the wrong size.
+# Issue 724: [with patch] graph6 parsing does not throw an error when the string is the wrong size.
 
 archive/issues_000724.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graph6, graph\n\nMaking a graph from a graph6 string should check to make sure the string is the right size and throw an error if the string is too long or too short.  I believe now it just silently hands back a graph that is not correct.\n\nThis is bad, especially when your string has an escaped character and you didn't realize it :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/724\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graph6, graph\n\nMaking a graph from a graph6 string should check to make sure the string is the right size and throw an error if the string is too long or too short.  I believe now it just silently hands back a graph that is not correct.\n\nThis is bad, especially when your string has an escaped character and you didn't realize it :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/724\n\n",
+    "closed_at": "2007-10-27T04:53:30Z",
     "created_at": "2007-09-21T00:40:12Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "graph6 parsing does not throw an error when the string is the wrong size.",
+    "title": "[with patch] graph6 parsing does not throw an error when the string is the wrong size.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/724",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @rlmill
 
 Keywords: graph6, graph
 

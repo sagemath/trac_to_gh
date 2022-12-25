@@ -4,6 +4,7 @@ archive/issues_009629.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nI don't have pico installed, and hadn't set $EDITOR, so \"sage -merge\" bombed out; but on Debian-like systems, there's always sensible-editor, which is pretty much what you'd expect. The sage -merge script should look for that before looking for pico.\n\n(Also, uppity free software types would argue that you should look for nano, not pico...)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9629\n\n",
+    "closed_at": "2014-06-23T19:15:58Z",
     "created_at": "2010-07-29T00:32:23Z",
     "labels": [
         "component: misc",

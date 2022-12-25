@@ -1,16 +1,17 @@
-# Issue 2111: [with patch, needs review] Gröbner bases over any field
+# Issue 2111: [with patch, with positive review] Gröbner bases over any field
 
 archive/issues_002111.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @zimmermann6\n\nThis now works (but is very very slow):\n\n```\nsage: R.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nsage: ideal([x^3-2*y^2,3*x+y^4]).groebner_basis()\n[x + 1431655773*y^4, y^12 + 54*y^2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2111\n\n",
+    "closed_at": "2008-02-15T04:54:47Z",
     "created_at": "2008-02-08T12:17:23Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] Gr\u00f6bner bases over any field",
+    "title": "[with patch, with positive review] Gr\u00f6bner bases over any field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2111",
     "user": "https://github.com/malb"

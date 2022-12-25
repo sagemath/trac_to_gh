@@ -3,7 +3,8 @@
 archive/issues_001768.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  cc @kcrisman @embray @slel\n\nFor example, I don't own a certain component, but I am still passionate enough about it to want to know whenever anything happens in it. Right now, \"Settings\" is only name and e-mail...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1768\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  cc @kcrisman @embray @slel\n\nKeywords: Trac\n\nFor example, I don't own a certain component, but I am still passionate enough about it to want to know whenever anything happens in it. Right now, \"Settings\" is only name and e-mail...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1768\n\n",
+    "closed_at": "2018-08-03T17:23:51Z",
     "created_at": "2008-01-14T00:44:56Z",
     "labels": [
         "component: website/wiki"
@@ -18,6 +19,8 @@ archive/issues_001768.json:
 Assignee: @williamstein
 
 CC:  cc @kcrisman @embray @slel
+
+Keywords: Trac
 
 For example, I don't own a certain component, but I am still passionate enough about it to want to know whenever anything happens in it. Right now, "Settings" is only name and e-mail...
 

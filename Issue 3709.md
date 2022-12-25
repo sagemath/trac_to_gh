@@ -1,4 +1,4 @@
-# Issue 3709: QuaternionAlgebraElement.sqrt()
+# Issue 3709: Implement sqrt() for QuaternionAlgebraElement
 
 archive/issues_003709.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_003709.json:
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "QuaternionAlgebraElement.sqrt()",
+    "title": "Implement sqrt() for QuaternionAlgebraElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3709",
     "user": "https://trac.sagemath.org/admin/accounts/users/epotash"

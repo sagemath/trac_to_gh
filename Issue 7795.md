@@ -4,6 +4,7 @@ archive/issues_007795.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: MPolynomialRing_libsingular segfault with high exponents\n\nIn the following example, a segfault occurs. Shouldn't an error be raised instead?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: type(P)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: z^(3^10)\nz^59049\nsage: z^(3^11)\nz^177147\nsage: (z^3 + T*z)^(3^4)\nz^243 + T^81*z^81\nsage: (z^3 + T*z)^(3^7)\nz^6561 + T^2187*z^2187\nsage: (z^3 + T*z)^(3^10)\nz^177147 + T^59049*z^59049\nsage: (z^3 + T*z)^(3^15)\n/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7795\n\n",
+    "closed_at": "2014-03-19T04:36:16Z",
     "created_at": "2009-12-30T11:05:21Z",
     "labels": [
         "component: commutative algebra",

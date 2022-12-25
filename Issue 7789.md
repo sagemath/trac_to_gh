@@ -3,11 +3,11 @@
 archive/issues_007789.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThe help of MixedIntegerLinearProgram.new_variable shows a way to define a default type for new variables, but it uses the argument vtype and pre-defined constants (MixedIntegerLinearProgram.__INTEGER for example) which is really ugly.\n\nWe should accept things like :\n\n```\np.new_variable(boolean=True)\n```\nor\n\n```\np.new_variable(type=\"boolean\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7789\n\n",
+    "body": "Assignee: jkantor\n\nThe help of `MixedIntegerLinearProgram.new_variable` shows a way to define a default type for new variables, but it uses the argument vtype and pre-defined constants (`MixedIntegerLinearProgram.__INTEGER` for example) which is really ugly.\n\nWe should accept things like :\n\n```\np.new_variable(boolean=True)\n```\nor\n\n```\np.new_variable(type=\"boolean\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7789\n\n",
+    "closed_at": "2010-06-07T04:51:52Z",
     "created_at": "2009-12-29T18:14:06Z",
     "labels": [
-        "component: numerical",
-        "bug"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Improve the arguments for the default type of a variable in MixedIntegerLinearProgram",
@@ -18,7 +18,7 @@ archive/issues_007789.json:
 ```
 Assignee: jkantor
 
-The help of MixedIntegerLinearProgram.new_variable shows a way to define a default type for new variables, but it uses the argument vtype and pre-defined constants (MixedIntegerLinearProgram.__INTEGER for example) which is really ugly.
+The help of `MixedIntegerLinearProgram.new_variable` shows a way to define a default type for new variables, but it uses the argument vtype and pre-defined constants (`MixedIntegerLinearProgram.__INTEGER` for example) which is really ugly.
 
 We should accept things like :
 

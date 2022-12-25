@@ -4,9 +4,11 @@ archive/issues_001830.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nwhen running \"DESTDIR=/usr/lib make install\", the file /usr/lib/sage/local/lib/sage-current-location.txt should be updated with the correct new path of $DESTDIR/sage\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1830\n\n",
+    "closed_at": "2008-12-01T08:31:38Z",
     "created_at": "2008-01-18T13:42:02Z",
     "labels": [
         "component: relocation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",

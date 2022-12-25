@@ -1,22 +1,23 @@
-# Issue 1553: Investigate PolyBoRi on 64-bit RHEL5
+# Issue 1553: [with spkg] SCons related build failure of PolyBoRi on 64-bit RHEL5
 
 archive/issues_001553.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e?hl=en at  Dec 17, 8:37 am.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1553\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e?hl=en at  Dec 17, 8:37 am.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1553\n\n",
+    "closed_at": "2008-01-08T01:55:26Z",
     "created_at": "2007-12-17T15:00:38Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Investigate PolyBoRi on 64-bit RHEL5",
+    "title": "[with spkg] SCons related build failure of PolyBoRi on 64-bit RHEL5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1553",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 CC:  @burcin
 

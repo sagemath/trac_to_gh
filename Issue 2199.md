@@ -3,10 +3,12 @@
 archive/issues_002199.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nI'm attaching Mercurial patches for the copyright files for many Debian packages.  The ones I'm not attaching have various verification or missing data issues; I'll be adding separate tickets for those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2199\n\n",
+    "body": "Assignee: mabshoff\n\nI'm attaching Mercurial patches for the copyright files for many Debian packages.  The ones I'm not attaching have various verification or missing data issues; I'll be adding separate tickets for those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2199\n\n",
+    "closed_at": "2008-04-12T17:55:49Z",
     "created_at": "2008-02-17T21:32:17Z",
     "labels": [
-        "component: debian-package"
+        "component: debian-package",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] Copyright files for Debian packages",
@@ -15,7 +17,7 @@ archive/issues_002199.json:
     "user": "https://github.com/timabbott"
 }
 ```
-Assignee: @timabbott
+Assignee: mabshoff
 
 I'm attaching Mercurial patches for the copyright files for many Debian packages.  The ones I'm not attaching have various verification or missing data issues; I'll be adding separate tickets for those.
 

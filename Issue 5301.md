@@ -1,9 +1,10 @@
-# Issue 5301: In sage-3.3.rc2, doing sage -t -long "devel/sage/sage/plot/plot.py" causing a matplotlib GUI window to popup
+# Issue 5301: [with spkg; positive review] In sage-3.3.rc2, doing sage -t -long "devel/sage/sage/plot/plot.py" causing a matplotlib GUI window to popup
 
 archive/issues_005301.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ghtdak @jasongrout\n\nThis happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:\n\n```\n\t [2.5 s]\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py\", line 173:\n    sage: savefig('sage.png')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[61]>\", line 1, in <module>\n        savefig('sage.png')###line 173:\n    sage: savefig('sage.png')\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 346, in savefig\n        return fig.savefig(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 1001, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py\", line 268, in print_figure\n        self.write_bitmap(filename, width, height)\n    ValueError: Unknown file type\n**********************************************************************\n1 items had failures:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ghtdak @jasongrout\n\nThis happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:\n\n```\n [2.5 s]\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py\", line 173:\n    sage: savefig('sage.png')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[61]>\", line 1, in <module>\n        savefig('sage.png')###line 173:\n    sage: savefig('sage.png')\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 346, in savefig\n        return fig.savefig(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 1001, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py\", line 268, in print_figure\n        self.write_bitmap(filename, width, height)\n    ValueError: Unknown file type\n**********************************************************************\n1 items had failures:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5301\n\n",
+    "closed_at": "2009-02-20T16:09:02Z",
     "created_at": "2009-02-18T06:57:29Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005301.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "In sage-3.3.rc2, doing sage -t -long \"devel/sage/sage/plot/plot.py\" causing a matplotlib GUI window to popup",
+    "title": "[with spkg; positive review] In sage-3.3.rc2, doing sage -t -long \"devel/sage/sage/plot/plot.py\" causing a matplotlib GUI window to popup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5301",
     "user": "https://github.com/williamstein"
@@ -24,7 +25,7 @@ CC:  ghtdak @jasongrout
 This happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:
 
 ```
-	 [2.5 s]
+ [2.5 s]
 sage -t -long "devel/sage/sage/plot/plot.py"                
 **********************************************************************
 File "/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py", line 173:

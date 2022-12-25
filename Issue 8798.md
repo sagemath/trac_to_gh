@@ -3,7 +3,8 @@
 archive/issues_008798.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nHere is the problem :\n\n```\n~/sage/sage-doc/sage/graphs$ grep -e \"def.*eedback\" *\ndigraph.py:    def feedback_edge_set(self,value_only=False):\ndigraph.py:    def feedback_vertex_set(self,value_only=False):\ngeneric_graph.py:    def feedback_edge_set(self,value_only=False):\ngeneric_graph.py:    def feedback_vertex_set(self,value_only=False):\n~/sage/sage-doc/sage/graphs$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8798\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nHere is the problem :\n\n```\n~/sage/sage-doc/sage/graphs$ grep -e \"def.*eedback\" *\ndigraph.py:    def feedback_edge_set(self,value_only=False):\ndigraph.py:    def feedback_vertex_set(self,value_only=False):\ngeneric_graph.py:    def feedback_edge_set(self,value_only=False):\ngeneric_graph.py:    def feedback_vertex_set(self,value_only=False):\n~/sage/sage-doc/sage/graphs$ \n```\n\n**Prerequisite:** #8786\n\nApply:\n\n* [trac_8798-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798-rebased.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8798\n\n",
+    "closed_at": "2010-05-08T21:58:54Z",
     "created_at": "2010-04-28T08:08:21Z",
     "labels": [
         "component: graph theory",
@@ -30,6 +31,12 @@ generic_graph.py:    def feedback_edge_set(self,value_only=False):
 generic_graph.py:    def feedback_vertex_set(self,value_only=False):
 ~/sage/sage-doc/sage/graphs$ 
 ```
+
+**Prerequisite:** #8786
+
+Apply:
+
+* [trac_8798-rebased.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8798/trac_8798-rebased.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8798
 

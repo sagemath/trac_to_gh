@@ -1,15 +1,16 @@
-# Issue 5483: [with preliminary patch; not ready for review; request comments] Add explain_pickle module; allow overriding class lookup for unpickling
+# Issue 5483: [with patch; positive review] Add explain_pickle module; allow overriding class lookup for unpickling
 
 archive/issues_005483.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @williamstein\n\nexplain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:\n\n```\nsage: explain_pickle(dumps(3))\n\npg_make_integer = unpickle_global('sage.rings.integer', 'make_integer')\npg_make_integer('3')\nsage: explain_pickle(dumps(3), in_current_sage=True)\n\nfrom sage.rings.integer import make_integer\nmake_integer('3')\n```\n\nI think the code works, but I'm not done writing documentation and doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5483\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @williamstein\n\nKeywords: pickling\n\nexplain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works. For example:\n\n```\nsage: explain_pickle(dumps(3))\n\npg_make_integer = unpickle_global('sage.rings.integer', 'make_integer')\npg_make_integer('3')\nsage: explain_pickle(dumps(3), in_current_sage=True)\n\nfrom sage.rings.integer import make_integer\nmake_integer('3')\n```\n\nI think the code works, but I'm not done writing documentation and doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5483\n\n",
+    "closed_at": "2009-06-03T20:52:01Z",
     "created_at": "2009-03-11T07:12:13Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with preliminary patch; not ready for review; request comments] Add explain_pickle module; allow overriding class lookup for unpickling",
+    "title": "[with patch; positive review] Add explain_pickle module; allow overriding class lookup for unpickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5483",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -19,7 +20,9 @@ Assignee: cwitty
 
 CC:  @williamstein
 
-explain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:
+Keywords: pickling
+
+explain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works. For example:
 
 ```
 sage: explain_pickle(dumps(3))

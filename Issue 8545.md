@@ -4,6 +4,7 @@ archive/issues_008545.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nThe docstring to apply_simple_projection method of CoxeterGroups\ncontains `\\opi` which is not a valid latex symbol.\n\nAs a consequence the pdf version of the reference manual does\nnot build cleanly. Thus \n\n`sage -docbuild reference pdf`\n\neventually halts with the line:\n\n```\n! Undefined control sequence.\n<recently read> \\opi \n                     \nl.185462 projection $\\pi_i$ (resp. $\\opi\n                                        _i$) on self.\n```\n\nEvidently ``\\opi`` is supposed to be ``\\overline\\pi``, as elsewhere in the file around line 379 in coxeter_groups.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8545\n\n",
+    "closed_at": "2010-03-15T22:32:25Z",
     "created_at": "2010-03-15T21:02:37Z",
     "labels": [
         "component: documentation",

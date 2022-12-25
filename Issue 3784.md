@@ -4,6 +4,7 @@ archive/issues_003784.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\n>\n> > On Aug 6, 9:33 am, Rupert <rupert.n...@gmail.com> wrote:\n> >> Hello there,\n>\n> > Hi Rupert,\n>\n> >> I installed sage this morning and am doing some testing. I noticed\n> >> that sage was ignoring some python modules that live in a directory on\n> >> my PYTHONPATH environment variable.\n>\n> >> Looking in $SAGE_ROOT/local/bin/sage-env, I see that it completely\n> >> overrides my $PYTHONPATH, rather than prepending its own directories.\n>\n> > Yes, we do that on purpose.\n\nHi,\n\n> I propose offering a workaround, e.g.,\n>         SAGE_PYTHONPATH\n> which *does* get appended to PYTHONPATH\n> on startup.\n\nThat sounds reasonable to me.\n\n> Note that this is for picking up *user* code, so\n> it makes a huge amount of sense to support this.\n> It's not an issue of system-wide python being\n> different than Sage's at all.\n\nWell, people will use it to have Sage pick up the extensions of the\nsystem Python, but then I get to tell you \"I told you so\" :)\n```\n\nAdd something to sage-env that does what is described above.\nAlso add something to the README.txt that documents this behavior.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3784\n\n",
+    "closed_at": "2014-10-27T16:25:49Z",
     "created_at": "2008-08-06T23:48:53Z",
     "labels": [
         "component: misc"

@@ -4,6 +4,7 @@ archive/issues_000820.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: coverage\n\nThere are situations where functions aren't easy to doctest, and shouldn't have this counted against the file's coverage. Think about the right way to implement this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/820\n\n",
+    "closed_at": "2008-03-29T02:33:18Z",
     "created_at": "2007-10-04T03:27:23Z",
     "labels": [
         "component: documentation",

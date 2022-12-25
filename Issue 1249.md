@@ -1,16 +1,17 @@
-# Issue 1249: [with patch] fixes bug in graph plotting with partitions
+# Issue 1249: [with patch, with positive review] fixes bug in graph plotting with partitions
 
 archive/issues_001249.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1249\n\n",
+    "closed_at": "2007-12-01T19:53:02Z",
     "created_at": "2007-11-23T18:56:47Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] fixes bug in graph plotting with partitions",
+    "title": "[with patch, with positive review] fixes bug in graph plotting with partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1249",
     "user": "https://github.com/rlmill"

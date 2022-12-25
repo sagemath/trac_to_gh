@@ -1,23 +1,26 @@
-# Issue 3081: [with patch; needs review] Added support for Kloosterman sums
+# Issue 3081: [with patch; positive review] Added support for Kloosterman sums
 
 archive/issues_003081.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @ncalexan\n\nThis (nearly trivial patch) adds support for exact and numerical evaluation of \"twisted\" Kloosterman sums. This generalizes Gauss sums, Salie sums and normal Kloosterman sums. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3081\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: editor_craigcitro\n\nThis (nearly trivial patch) adds support for exact and numerical evaluation of \"twisted\" Kloosterman sums. This generalizes Gauss sums, Salie sums and normal Kloosterman sums. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3081\n\n",
+    "closed_at": "2009-04-12T20:53:10Z",
     "created_at": "2008-05-02T15:05:31Z",
     "labels": [
-        "component: cygwin"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] Added support for Kloosterman sums",
+    "title": "[with patch; positive review] Added support for Kloosterman sums",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3081",
     "user": "https://trac.sagemath.org/admin/accounts/users/kkilger"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 CC:  @ncalexan
+
+Keywords: editor_craigcitro
 
 This (nearly trivial patch) adds support for exact and numerical evaluation of "twisted" Kloosterman sums. This generalizes Gauss sums, Salie sums and normal Kloosterman sums. 
 

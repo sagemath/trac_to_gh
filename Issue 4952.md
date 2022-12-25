@@ -1,9 +1,10 @@
-# Issue 4952: modulus issue in sage/rings/finite_field_ntl_gf2e.pyx
+# Issue 4952: [probably fixed] modulus issue in sage/rings/finite_field_ntl_gf2e.pyx
 
 archive/issues_004952.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following was introduced by #4934:\n\n```\ncleo (ia64-Linux-rhel5-clisp-2.41)\n\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.3-ia64-Linux-rhel5-clisp-2.41/devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\",\nline 171:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17 + x^3 + 1\n**********************************************************************\n\neno (x86_64-Linux-fc)\n\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.3-x86_64-Linux-fc/devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\",\nline 171:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17 + x^3 + 1\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4952\n\n",
+    "closed_at": "2009-02-10T07:37:19Z",
     "created_at": "2009-01-07T17:08:47Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004952.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "modulus issue in sage/rings/finite_field_ntl_gf2e.pyx",
+    "title": "[probably fixed] modulus issue in sage/rings/finite_field_ntl_gf2e.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4952",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

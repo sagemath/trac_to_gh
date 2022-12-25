@@ -4,6 +4,7 @@ archive/issues_007101.json:
 ```json
 {
     "body": "Assignee: tbd\n\n      Hi sage developers,\n\nI need to play with polynomials on various kind of coefficients. So I tried\nthe following:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: R=QQ[x]\nsage: R(1+x)\nx + 1\nsage: R=ZZ[x]\nsage: R(1+x)\nx + 1\nsage: R=RealField(200)[x]\nsage: R(1+x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n[...]\nTypeError: x is not a variable of Univariate Polynomial Ring in x over Real Field with 200 bits of precision\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nAs mvngu pointed out on irc: the following works\n\n```\nsage: R.<x> = RealField(20)[\"x\"]\nsage: R(1 + x)\n1.0000*x + 1.0000\n```\nBut this is not very beautiful and worse it is very inconsistent...\nAt least the error message should be more understandable...\n\nWhat should we do about it ?\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7101\n\n",
+    "closed_at": "2009-10-04T03:50:29Z",
     "created_at": "2009-10-03T15:53:26Z",
     "labels": [
         "component: algebra",

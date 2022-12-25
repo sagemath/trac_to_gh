@@ -1,21 +1,22 @@
-# Issue 3937: notebook -- move HTML for account settings page to Jinja template
+# Issue 3937: [with patch, positive review] notebook -- move HTML for account settings page to Jinja template
 
 archive/issues_003937.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nRelies on #3923\n\nIssue created by migration from https://trac.sagemath.org/ticket/3937\n\n",
+    "body": "Assignee: @mwhansen\n\nRelies on #3923\n\nIssue created by migration from https://trac.sagemath.org/ticket/3937\n\n",
+    "closed_at": "2008-10-25T22:55:23Z",
     "created_at": "2008-08-23T20:34:05Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "notebook -- move HTML for account settings page to Jinja template",
+    "title": "[with patch, positive review] notebook -- move HTML for account settings page to Jinja template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3937",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Relies on #3923
 

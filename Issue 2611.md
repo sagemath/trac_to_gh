@@ -1,15 +1,16 @@
-# Issue 2611: [with patch, needs review] add monomial_coefficent to boolean polynomials
+# Issue 2611: [with patch, positive review] add monomial_coefficent to boolean polynomials
 
 archive/issues_002611.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nWith the attached patch this works:\n\n```\nsage: sr = mq.SR(gf2=True)\nsage: sr\nSR(1,1,1,4)\n\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names(),R.term_order())\nsage: F = [B(f) for f in F]\nsage: F = mq.MPolynomialSystem(B,F)\nsage: F\nPolynomial System with 56 Polynomials in 20 Variables\nsage: A,v = F.coefficient_matrix() # this relies on monomial_coefficient\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2611\n\n",
+    "closed_at": "2008-03-28T15:14:39Z",
     "created_at": "2008-03-20T11:53:32Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] add monomial_coefficent to boolean polynomials",
+    "title": "[with patch, positive review] add monomial_coefficent to boolean polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2611",
     "user": "https://github.com/malb"

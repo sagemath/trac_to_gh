@@ -1,16 +1,17 @@
-# Issue 3885: [with patch, needs review and discussion] Bug in free module __call__ method
+# Issue 3885: [with additional patch, positive review] Bug in free module __call__ method
 
 archive/issues_003885.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nSalman Butt ran into the following bug:\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1])\n(2, 1)\n```\n\nFix is attached, but the fact that you can still do the following is possibly worrisome:\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1], check=False) in W\nTrue\n```\n\nI just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3885\n\n",
+    "closed_at": "2008-09-03T00:09:49Z",
     "created_at": "2008-08-17T21:58:14Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review and discussion] Bug in free module __call__ method",
+    "title": "[with additional patch, positive review] Bug in free module __call__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3885",
     "user": "https://github.com/craigcitro"

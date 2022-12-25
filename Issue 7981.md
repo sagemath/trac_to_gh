@@ -3,7 +3,8 @@
 archive/issues_007981.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\nThanks to   \t\nJohann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
+    "body": "Assignee: @novoselt\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\nThanks to Johann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
+    "closed_at": "2011-01-25T08:13:57Z",
     "created_at": "2010-01-18T18:39:50Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_007981.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @novoselt
 
 CC:  wcauchois
 
@@ -28,8 +29,7 @@ sage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e
 sage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()
 ```
 
-Thanks to   	
-Johann Myrkraverk Oskarsson for reporting this.
+Thanks to Johann Myrkraverk Oskarsson for reporting this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7981
 

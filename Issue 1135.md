@@ -4,9 +4,10 @@ archive/issues_001135.json:
 ```json
 {
     "body": "Assignee: @ncalexan\n\nKeywords: preparse generators QuadraticField\n\n```\nsage: K.<a> = QuadraticField(-55, 'a')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/emacs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: QuadraticField() got multiple values for keyword argument 'names'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1135\n\n",
+    "closed_at": "2010-09-28T10:55:02Z",
     "created_at": "2007-11-09T21:03:33Z",
     "labels": [
-        "component: interfaces",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",

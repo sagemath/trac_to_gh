@@ -1,9 +1,10 @@
-# Issue 841: hash() on algebraic reals is not stable
+# Issue 841: [with patch] hash() on algebraic reals is not stable
 
 archive/issues_000841.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThe hash() function applied to a single algebraic real may give different results at different times:\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1289340516\nsage: foo == 2\nTrue\nsage: hash(foo)\n2105051955\n```\n\n(I plan to fix this problem very soon.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/841\n\n",
+    "body": "Assignee: tbd\n\nThe hash() function applied to a single algebraic real may give different results at different times:\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1289340516\nsage: foo == 2\nTrue\nsage: hash(foo)\n2105051955\n```\n\n(I plan to fix this problem very soon.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/841\n\n",
+    "closed_at": "2007-10-13T07:10:03Z",
     "created_at": "2007-10-09T00:42:55Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_000841.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "hash() on algebraic reals is not stable",
+    "title": "[with patch] hash() on algebraic reals is not stable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/841",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: cwitty
+Assignee: tbd
 
 The hash() function applied to a single algebraic real may give different results at different times:
 

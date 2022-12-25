@@ -1,16 +1,17 @@
-# Issue 5271: clean up jmol-11.6.16.spkg from #2873
+# Issue 5271: [with spkg, positive review] clean up jmol-11.6.16.spkg from #2873
 
 archive/issues_005271.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\njmol-11.6.16.spkg from #2873 was **not** based on the latest upstream jmol.spkg. While taking a closer look I found all kind of other odd things, so I moved the updated spkg to a new ticker. The spkg can be found at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/rc1/jmol-11.6.16.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5271\n\n",
+    "closed_at": "2009-02-14T15:16:14Z",
     "created_at": "2009-02-14T14:30:46Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "clean up jmol-11.6.16.spkg from #2873",
+    "title": "[with spkg, positive review] clean up jmol-11.6.16.spkg from #2873",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5271",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

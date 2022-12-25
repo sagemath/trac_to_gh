@@ -4,6 +4,7 @@ archive/issues_000537.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom Sage 2.8.3rc3:\n\n```\n==25034== 48 bytes in 1 blocks are definitely lost in loss record 746 of 2,712\n==25034==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==25034==    by 0x9774DD5: _ntl_gsetlength (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libntl.so)\n==25034==    by 0x9775D6F: _ntl_gmul (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libntl.so)\n==25034==    by 0x1B7908F4: __pyx_f_20number_field_element_18NumberFieldElement__mul_c_impl(__pyx_obj_20number_field_element\n_NumberFieldElement*, __pyx_obj_4sage_9structure_7element_RingElement*) (ZZ.h:384)\n==25034==    by 0xE3C999D: __pyx_f_7element_11RingElement__mul_c (element.c:8340)\n==25034==    by 0xE3BD3E4: __pyx_f_7element_11RingElement___mul__ (element.c:7922)\n==25034==    by 0x41596C: binary_op1 (abstract.c:398)\n==25034==    by 0x418EC3: PyNumber_InPlaceMultiply (abstract.c:744)\n==25034==    by 0x481053: PyEval_EvalFrameEx (ceval.c:1274)\n==25034==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==25034==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==25034==    by 0x4845B3: PyEval_EvalFrameEx (ceval.c:3660)\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/537\n\n",
+    "closed_at": "2010-01-20T06:36:07Z",
     "created_at": "2007-08-30T18:55:16Z",
     "labels": [
         "component: memleak",

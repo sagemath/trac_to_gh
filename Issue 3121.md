@@ -1,15 +1,16 @@
-# Issue 3121: @interact grid control
+# Issue 3121: [with patch, positive review] @interact grid control
 
 archive/issues_003121.json:
 ```json
 {
     "body": "Assignee: boothby\n\nMake a grid control for `@`interact\n\nWith the patch, this is possible:\n\n```\n@interact\ndef _(M=input_grid(3,3, default=identity_matrix(3).list(), input_type=MatrixSpace(RDF,3,3))):\n    decomp = M.SVD()\n    matrices=[latex(mat) for mat in [M,decomp[0],decomp[1],decomp[2].transpose()]]\n    print jsmath(\"%s=%s%s%s\"%(matrices[0], matrices[1], matrices[2], matrices[3]))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3121\n\n",
+    "closed_at": "2008-05-11T09:59:38Z",
     "created_at": "2008-05-07T08:40:04Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "@interact grid control",
+    "title": "[with patch, positive review] @interact grid control",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3121",
     "user": "https://github.com/jasongrout"

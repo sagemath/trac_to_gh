@@ -1,9 +1,10 @@
-# Issue 6656: [with patch, needs review] fix latex method for laurent series element
+# Issue 6656: [with patch, positive review] fix latex method for laurent series element
 
 archive/issues_006656.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nIn the [Sage Notebook Bugreports](http://spreadsheets.google.com/pub?key=pCwvGVwSMxTzT6E2xNdo5fA), there is a report of an error with typesetting Laurent series elements:\n\n```\nsage: R.<a,b>=PolynomialRing(QQ)\nsage: T.<x>=LaurentSeriesRing(R)\nsage: latex(a*x+b*x)\n'a + bx'\n```\nIt ought to be (a+b)x, but the parentheses are missing.  The attached patch should fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6656\n\n",
+    "closed_at": "2009-08-03T02:32:03Z",
     "created_at": "2009-07-29T19:05:01Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_006656.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] fix latex method for laurent series element",
+    "title": "[with patch, positive review] fix latex method for laurent series element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6656",
     "user": "https://github.com/jhpalmieri"

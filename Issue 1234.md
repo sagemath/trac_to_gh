@@ -1,9 +1,10 @@
-# Issue 1234: analytic_rank crashes
+# Issue 1234: [with patch; with positive review] analytic_rank crashes
 
 archive/issues_001234.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nMaybe the following is not feasible, but analytic_rank could crash smoothly.\n\n```\nsage: d=100032426715415089/251987961355200625\nsage: E = EllipticCurve([0, -d^3+5*d^2, 0, -8*d^5+8*d^4, 4*d^8-8*d^7+4*d^6])\nsage: F = E.minimal_model()\nsage: F.analytic_rank(algorithm='cremona')\n<type 'exceptions.RuntimeError'>: Error: '  *** elltors: precision too low in torsell.\n\nsage: F.analytic_rank(algorithm='rubinstein')\n<type 'exceptions.TypeError'>: unable to convert x (= 6.90579e+20 and is too large) to an integer\n\nsage: F.analytic_rank(algorithm='sympow')\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n**ERROR** c4 invariant is too large\n```\n\nFrom John Cremona: the \"cremona\" version just wraps a gp script, which\nneeds to have sufficient precision even for ellinit() to work ok here.\nUnfortunately this call will run in its own gp session, and it is not\npossible for the user to set the precision.  (I found the same while\nrunning a lot of examples through Denis Simon's gp scripts).  The\nsolution is to change the wrapper to have a precision parameter, with\nsome reasonable default for backwards compatibility, which gets passes\nthrough to gp.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1234\n\n",
+    "closed_at": "2009-01-23T10:26:07Z",
     "created_at": "2007-11-21T14:04:25Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_001234.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "analytic_rank crashes",
+    "title": "[with patch; with positive review] analytic_rank crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1234",
     "user": "https://github.com/zimmermann6"

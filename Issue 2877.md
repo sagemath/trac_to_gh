@@ -1,16 +1,16 @@
-# Issue 2877: security risk -- several constructors use eval to parse input
+# Issue 2877: security risk -- restrict the input of eval in CC constructor
 
 archive/issues_002877.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @tscrim @slel @kliem @kwankyu\n\nThere are valid uses for eval() and sage_eval(), it makes it much easier to parse output from  interfaces for example. \n\nIt is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary \n\n```\nsage: CC(\"os.getpid()\")\n10324.0000000000\nsage: CC(\"os.mkdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.rmdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.exec(...)\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2877\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @tscrim @slel @kliem @kwankyu\n\nThere are valid uses for eval() and sage_eval(), it makes it much easier to parse output from  interfaces for example. \n\nIt is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary \n\n```\nsage: CC(\"os.getpid()\")\n10324.0000000000\nsage: CC(\"os.mkdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.rmdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.exec(...)\")\n```\n\nIn this ticket, one introduces restrictions on the text input to CC that prevent most of these terrible examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2877\n\n",
+    "closed_at": "2021-10-28T22:40:01Z",
     "created_at": "2008-04-11T11:39:56Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
-    "title": "security risk -- several constructors use eval to parse input",
+    "title": "security risk -- restrict the input of eval in CC constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2877",
     "user": "https://github.com/robertwb"
@@ -22,7 +22,7 @@ CC:  @tscrim @slel @kliem @kwankyu
 
 There are valid uses for eval() and sage_eval(), it makes it much easier to parse output from  interfaces for example. 
 
-It is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary 
+It is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary 
 
 ```
 sage: CC("os.getpid()")
@@ -33,6 +33,8 @@ sage: CC("os.rmdir('a')")
 NaN - NaN*I
 sage: CC("os.exec(...)")
 ```
+
+In this ticket, one introduces restrictions on the text input to CC that prevent most of these terrible examples.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2877
 

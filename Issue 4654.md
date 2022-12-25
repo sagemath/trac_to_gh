@@ -1,16 +1,17 @@
-# Issue 4654: [with patch, needs review] for 'sage -testall': put sage version in test log
+# Issue 4654: [with patch, positive review] for 'sage -testall': put sage version in test log
 
 archive/issues_004654.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: doctest\n\nEspecially with the improved ability to upgrade sage versions in place (from #4638), when running `sage -testall` it seems helpful to record the sage version in the file SAGE_ROOT/tmp/test.log.  The attached patch does this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4654\n\n",
+    "closed_at": "2008-11-29T21:53:35Z",
     "created_at": "2008-11-29T16:42:31Z",
     "labels": [
         "component: doctest coverage",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] for 'sage -testall': put sage version in test log",
+    "title": "[with patch, positive review] for 'sage -testall': put sage version in test log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4654",
     "user": "https://github.com/jhpalmieri"

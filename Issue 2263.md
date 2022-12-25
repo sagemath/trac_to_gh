@@ -1,22 +1,24 @@
-# Issue 2263: Sage 2.10.2.rc0: numerical noise doctest failure in calculus/calculus.py
+# Issue 2263: [with patch, positive review] Sage 2.10.2.rc0: numerical noise doctest failure in calculus/calculus.py
 
 archive/issues_002263.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCraig Citro reported:\n\n```\n**********************************************************************\nFile \"calculus.py\", line \n    sage: f.find_maximum_on_interval(0,5, tol=0.1, maxfun=10)\nExpected:\n    (0.56109032345808163, 0.857926501456)\nGot:\n    (0.56109032345808174, 0.857926501456)\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2263\n\n",
+    "body": "Assignee: mabshoff\n\nCraig Citro reported:\n\n```\n**********************************************************************\nFile \"calculus.py\", line \n    sage: f.find_maximum_on_interval(0,5, tol=0.1, maxfun=10)\nExpected:\n    (0.56109032345808163, 0.857926501456)\nGot:\n    (0.56109032345808174, 0.857926501456)\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2263\n\n",
+    "closed_at": "2008-02-22T22:14:11Z",
     "created_at": "2008-02-22T19:15:32Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Sage 2.10.2.rc0: numerical noise doctest failure in calculus/calculus.py",
+    "title": "[with patch, positive review] Sage 2.10.2.rc0: numerical noise doctest failure in calculus/calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2263",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 Craig Citro reported:
 

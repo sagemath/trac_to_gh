@@ -3,7 +3,8 @@
 archive/issues_001537.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\nor even\n\n```\nsage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1537\n\n",
+    "body": "Assignee: @robertwb\n\nFor example \n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\nor even\n\n```\nsage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1537\n\n",
+    "closed_at": "2008-04-09T03:43:45Z",
     "created_at": "2007-12-16T10:34:55Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_001537.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 For example 
 

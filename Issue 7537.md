@@ -3,7 +3,8 @@
 archive/issues_007537.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nThis looks like a bug to me:\n\n```\nsage: list(SR('c+1').iterator())\n[c, 1]\nsage: list(SR('c').iterator())\n[]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7537\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nThis looks like a bug to me:\n\n```\nsage: list(SR('c+1').iterator())\n[c, 1]\nsage: list(SR('c').iterator())\n[]\n```\n\nApply trac_7537-iterator.patch\n\nDepends on #9989\n\nIssue created by migration from https://trac.sagemath.org/ticket/7537\n\n",
+    "closed_at": "2011-03-28T07:18:08Z",
     "created_at": "2009-11-26T17:41:35Z",
     "labels": [
         "component: symbolics",
@@ -29,6 +30,10 @@ sage: list(SR('c+1').iterator())
 sage: list(SR('c').iterator())
 []
 ```
+
+Apply trac_7537-iterator.patch
+
+Depends on #9989
 
 Issue created by migration from https://trac.sagemath.org/ticket/7537
 

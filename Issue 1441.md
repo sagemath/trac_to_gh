@@ -1,9 +1,10 @@
-# Issue 1441: latex(x1) -> x_1 might cause problems
+# Issue 1441: [invalid*3] latex(x1) -> x_1 might cause problems
 
 archive/issues_001441.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nConsider the following:\n\n```\nsage: var('x_1,x1');\nsage: x_1 - x1\nx_1 - x1\nsage: latex(x_1 - x1)\nx_{1} - x_{1}\n```\nThe automatic rule latex(x1) -> x_1 might thus cause ambiguities if both x1 and x_1 exist as\nvariables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1441\n\n",
+    "closed_at": "2007-12-19T19:45:02Z",
     "created_at": "2007-12-09T21:32:14Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_001441.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "latex(x1) -> x_1 might cause problems",
+    "title": "[invalid*3] latex(x1) -> x_1 might cause problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1441",
     "user": "https://github.com/zimmermann6"

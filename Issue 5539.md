@@ -1,9 +1,10 @@
-# Issue 5539: "sage -docbuild" could use a better error message
+# Issue 5539: [with patch, positive review] "sage -docbuild" could use a better error message
 
 archive/issues_005539.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\n$ sage -docbuild\nYou must specify the document name and the output format\n```\n\nIt would be nice if it at least gave a list of available documents to build. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5539\n\n",
+    "closed_at": "2009-06-13T22:57:14Z",
     "created_at": "2009-03-17T00:21:15Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005539.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "\"sage -docbuild\" could use a better error message",
+    "title": "[with patch, positive review] \"sage -docbuild\" could use a better error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5539",
     "user": "https://github.com/robertwb"

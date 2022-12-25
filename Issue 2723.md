@@ -1,16 +1,17 @@
-# Issue 2723: [with patch] coercion error in monomial_quotient
+# Issue 2723: [with patch, positive review] coercion error in monomial_quotient
 
 archive/issues_002723.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe monomial_quotient method can give invalid data:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: R.monomial_quotient(2*x*y,y,coeff=True)\n2*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True)\n2/3*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True).parent()\nMultivariate Polynomial Ring in x, y over Integer Ring\n```\n2/3 is *not* an Integer!\n\nThe attached patch gives:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: R.monomial_quotient(2*x*y,y,coeff=True)\n2*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True)\n...\n<type 'exceptions.TypeError'>: no coercion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2723\n\n",
+    "closed_at": "2008-03-29T19:19:35Z",
     "created_at": "2008-03-29T18:49:27Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch] coercion error in monomial_quotient",
+    "title": "[with patch, positive review] coercion error in monomial_quotient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2723",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

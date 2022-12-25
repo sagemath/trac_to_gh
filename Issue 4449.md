@@ -1,9 +1,10 @@
-# Issue 4449: sage-combinat install script doesn't work with 3.2.alpha2
+# Issue 4449: [with patch; positive review] sage-combinat install script doesn't work with 3.2.alpha2
 
 archive/issues_004449.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\n'sage -combinat install' on sage-3.2.alpha2 fails (and not on 'hg qpush -a').\n\nIssue created by migration from https://trac.sagemath.org/ticket/4449\n\n",
+    "closed_at": "2008-11-05T22:34:43Z",
     "created_at": "2008-11-05T22:23:44Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_004449.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "sage-combinat install script doesn't work with 3.2.alpha2",
+    "title": "[with patch; positive review] sage-combinat install script doesn't work with 3.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4449",
     "user": "https://github.com/saliola"

@@ -1,16 +1,17 @@
-# Issue 4861: Update FLINT to 1.0.20 (latest 1.0.x upstream)
+# Issue 4861: [with spkg, positive review] Update FLINT to 1.0.20 (latest 1.0.x upstream)
 
 archive/issues_004861.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee Summary :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4861\n\n",
+    "closed_at": "2008-12-24T14:15:52Z",
     "created_at": "2008-12-24T00:12:04Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Update FLINT to 1.0.20 (latest 1.0.x upstream)",
+    "title": "[with spkg, positive review] Update FLINT to 1.0.20 (latest 1.0.x upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4861",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

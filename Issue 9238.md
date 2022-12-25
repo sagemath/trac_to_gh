@@ -3,7 +3,8 @@
 archive/issues_009238.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @TimDumol @kcrisman rkirov\n\nI believe this drop-in set of javascript files now works.  Need testers!\n\nAttached are replacement javascript files for jmol_lib.js and notebook_lib.js, which are located in sagenb/data/sage/js.  Changes to notebook_lib.js are just some added calls to functions in jmol_lib.js to let the javascript know when applets are closed.  The library jmol_lib.js is a complete rewrite.\n\nAdds the following features to the notebook:\n\n1) No more than 8 Jmols will be active at once.  This prevents running out of memory.  The user is provided with a link to wake up sleeping Jmols that they wish to manipulate.  Sleeping Jmols are replaced with a static image.\n\n2) A spin on/off check box is now provided.\n\n3) The user may choose among a number of display sizes.\n\n4) In the function tab, the user may change function color and mesh color.\n\n5) The \"State\" tab displays the Jmol script to get the Jmol display.  Eventually this will probably be hidden.  If we can get the notebook to store this user views would also transfer across sessions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9238\n\n",
+    "body": "Assignee: @gutow\n\nCC:  @TimDumol @kcrisman rkirov\n\nKeywords: sd31, sd32\n\n**NOTE:** This ticket has been replaced by #12299 \n\nReady for testing.\n\nFor inclusion in new Flask notebook see [enhanced Jmol in Flask](http://code.google.com/r/gutow-flask/). Note that all fixes and enhancements to the Jmol interface from SageDays 31 are in the Flask version and not this ticket. The Jmol changes for the Flask notebook should be included in the Flask spkg soon. See #11080.\n\nSetting this up on your own copy of Sage requires two steps.  Starting with a clean Sage 4.6.2 (for 4.7+ skip step 1): \n\n\n1. Patch for Jmol at the command line (not for 4.7+). See [#9232](http://trac.sagemath.org/sage_trac/ticket/9232).\n2. Apply the .spkg to get the new Jmol ` ./sage -f \"http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.6.spkg\"`\n3. Apply the following patches in order (not necessary for Flask): [attachment:trac_9238_interactive_js.patch], [attachment:trac_9238-add-help.patch] , [attachment:trac_9238_jmol_lib_async.patch],  [attachment:trac_9238_memory_IE.patch] and [attachment:trac_9238_nice_IE_warnings.patch]. These are best applied using the hg_sagenb.apply(...) command within sage.\n4. Apply the patch (not necessary for 4.7+) [attachment:Trac_9238_script_extension.patch] using the hg_sage.apply(...) command within sage.   Exit sage and run a ` ./sage -b`.\n\nI have addressed the following issues (let me know if I've missed anything): \n\n\n* Addition of the ability to hide the \"advanced controls\".\n* Fix so that the advanced controls are hidden when the applet is asleep (no accidental calls to nonexistent applets).\n* Fix to issue of not properly loading all applets when a worksheet  with a lot of applets is reopened (please check this one carefully).\n* Fixes to vocabulary and labels to make things clearer.\n* Hidden the  div with the State in it.  (Still there b/c I hope to be able to  recreate the way the user left it on close, rather than starting fresh  each time.)\n* Fix to loading pages with many Jmols hanging. (FF on MacOS just doesn't work reliably or reproducibly so I put up a warning and suggest they switch to Chrome).\n* Workaround for bug in MacOS Safari that causes hang when trying to get a static image to sleep an applet if more than 9 applets in a worksheet (I believe this is a memory leak problem).\n* Tested extensively on Linux with FF and Chromium and on MacOS with Safari, Chrome and FF.  Works well with both linux browsers and with Chrome on MacOS.  MacOS/Safari is usable, MacOS FF is not.\n* Lowered memory requirements for Jmol.  This improves performance in Safari for many applets.\n* Many advanced controls do not work with IE/win.  Provide warning and suggest using Chrome, which does work.  Those that fail do so quietly.  Sleeping and controlling function color do work.\n\nHappy testing and thank you to those who do test!\n\n**Note**: This ticket has been replaced by #12299.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9238\n\n",
+    "closed_at": "2012-09-05T07:17:05Z",
     "created_at": "2010-06-14T16:06:19Z",
     "labels": [
         "component: notebook"
@@ -15,25 +16,43 @@ archive/issues_009238.json:
     "user": "https://github.com/gutow"
 }
 ```
-Assignee: jason, was
+Assignee: @gutow
 
 CC:  @TimDumol @kcrisman rkirov
 
-I believe this drop-in set of javascript files now works.  Need testers!
+Keywords: sd31, sd32
 
-Attached are replacement javascript files for jmol_lib.js and notebook_lib.js, which are located in sagenb/data/sage/js.  Changes to notebook_lib.js are just some added calls to functions in jmol_lib.js to let the javascript know when applets are closed.  The library jmol_lib.js is a complete rewrite.
+**NOTE:** This ticket has been replaced by #12299 
 
-Adds the following features to the notebook:
+Ready for testing.
 
-1) No more than 8 Jmols will be active at once.  This prevents running out of memory.  The user is provided with a link to wake up sleeping Jmols that they wish to manipulate.  Sleeping Jmols are replaced with a static image.
+For inclusion in new Flask notebook see [enhanced Jmol in Flask](http://code.google.com/r/gutow-flask/). Note that all fixes and enhancements to the Jmol interface from SageDays 31 are in the Flask version and not this ticket. The Jmol changes for the Flask notebook should be included in the Flask spkg soon. See #11080.
 
-2) A spin on/off check box is now provided.
+Setting this up on your own copy of Sage requires two steps.  Starting with a clean Sage 4.6.2 (for 4.7+ skip step 1): 
 
-3) The user may choose among a number of display sizes.
 
-4) In the function tab, the user may change function color and mesh color.
+1. Patch for Jmol at the command line (not for 4.7+). See [#9232](http://trac.sagemath.org/sage_trac/ticket/9232).
+2. Apply the .spkg to get the new Jmol ` ./sage -f "http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.6.spkg"`
+3. Apply the following patches in order (not necessary for Flask): [attachment:trac_9238_interactive_js.patch], [attachment:trac_9238-add-help.patch] , [attachment:trac_9238_jmol_lib_async.patch],  [attachment:trac_9238_memory_IE.patch] and [attachment:trac_9238_nice_IE_warnings.patch]. These are best applied using the hg_sagenb.apply(...) command within sage.
+4. Apply the patch (not necessary for 4.7+) [attachment:Trac_9238_script_extension.patch] using the hg_sage.apply(...) command within sage.   Exit sage and run a ` ./sage -b`.
 
-5) The "State" tab displays the Jmol script to get the Jmol display.  Eventually this will probably be hidden.  If we can get the notebook to store this user views would also transfer across sessions.
+I have addressed the following issues (let me know if I've missed anything): 
+
+
+* Addition of the ability to hide the "advanced controls".
+* Fix so that the advanced controls are hidden when the applet is asleep (no accidental calls to nonexistent applets).
+* Fix to issue of not properly loading all applets when a worksheet  with a lot of applets is reopened (please check this one carefully).
+* Fixes to vocabulary and labels to make things clearer.
+* Hidden the  div with the State in it.  (Still there b/c I hope to be able to  recreate the way the user left it on close, rather than starting fresh  each time.)
+* Fix to loading pages with many Jmols hanging. (FF on MacOS just doesn't work reliably or reproducibly so I put up a warning and suggest they switch to Chrome).
+* Workaround for bug in MacOS Safari that causes hang when trying to get a static image to sleep an applet if more than 9 applets in a worksheet (I believe this is a memory leak problem).
+* Tested extensively on Linux with FF and Chromium and on MacOS with Safari, Chrome and FF.  Works well with both linux browsers and with Chrome on MacOS.  MacOS/Safari is usable, MacOS FF is not.
+* Lowered memory requirements for Jmol.  This improves performance in Safari for many applets.
+* Many advanced controls do not work with IE/win.  Provide warning and suggest using Chrome, which does work.  Those that fail do so quietly.  Sleeping and controlling function color do work.
+
+Happy testing and thank you to those who do test!
+
+**Note**: This ticket has been replaced by #12299.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9238
 

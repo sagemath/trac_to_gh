@@ -1,21 +1,22 @@
-# Issue 2670: matrix cmp expr should return a matrix with True/False entries from mapping the test to the entries
+# Issue 2670: [with patch, positive review] implement a matrix.find() command
 
 archive/issues_002670.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee the numpy where() command or the matlab find() command:\n\nhttp://www.scipy.org/NumPy_for_Matlab_Users\n\nso:\n\n```\nsage: m=matrix([[1,2,],[3,4]])\nsage: m>2\n*returns matrix([[False,True],[True,True]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2670\n\n",
+    "body": "Assignee: @williamstein\n\nSee the numpy where() command or the matlab find() command:\n\nhttp://www.scipy.org/NumPy_for_Matlab_Users\n\nso:\n\n```\nsage: m=matrix([[1,2,],[3,4]])\nsage: m>2\n*returns matrix([[False,True],[True,True]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2670\n\n",
+    "closed_at": "2008-04-04T21:56:41Z",
     "created_at": "2008-03-25T22:27:36Z",
     "labels": [
-        "component: cygwin"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "matrix cmp expr should return a matrix with True/False entries from mapping the test to the entries",
+    "title": "[with patch, positive review] implement a matrix.find() command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2670",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 See the numpy where() command or the matlab find() command:
 

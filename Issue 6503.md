@@ -4,9 +4,11 @@ archive/issues_006503.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nIn sage-4.1 we ship pyprocessing-0.52.p0.spkg, however a newer better version of that same code is standard in Python-2.6.x, which we also ship.  So we need to remove pyprocessing, do a clean build/test cycle, and see what problems arise, then sort them out. \n\nBe sure to test \"sage -tp\", which isn't tested by the test suite unless you do \"make ptest\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6503\n\n",
+    "closed_at": "2010-03-03T01:58:05Z",
     "created_at": "2009-07-09T19:01:10Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",

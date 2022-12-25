@@ -1,21 +1,22 @@
-# Issue 1473: Java3D usable from command line as well as notebook
+# Issue 1473: [with patch, with one positive review] Java3D usable from command line as well as notebook
 
 archive/issues_001473.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nEventually we hope to have many tools (e.g. MayaVi) to help handle this, but Java3D works now and it should be easy to invoke the same code as an app rather than an applet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1473\n\n",
+    "body": "Assignee: @robertwb\n\nEventually we hope to have many tools (e.g. MayaVi) to help handle this, but Java3D works now and it should be easy to invoke the same code as an app rather than an applet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1473\n\n",
+    "closed_at": "2007-12-15T09:56:53Z",
     "created_at": "2007-12-12T10:49:02Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Java3D usable from command line as well as notebook",
+    "title": "[with patch, with one positive review] Java3D usable from command line as well as notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1473",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Eventually we hope to have many tools (e.g. MayaVi) to help handle this, but Java3D works now and it should be easy to invoke the same code as an app rather than an applet. 
 

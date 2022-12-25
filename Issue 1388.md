@@ -3,10 +3,11 @@
 archive/issues_001388.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n\nsage -t  devel/sage-main/sage/calculus/wester.py            **********************************************************************\nFile \"wester.py\", line 399:\n    : print d.factor()\nExpected:\n    (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nGot:\n    (-1) * (-a + b) * (a - c) * (b - c) * (a - d) * (b - d) * (c - d)\n**********************************************************************\n1 items had failures:\n   1 of 188 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_wester.py\n         [9.5 s]\nexit code: 256\n \n\n```\n\n\nThis seems to be a 32 bits issue!?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1388\n\n",
+    "body": "Assignee: failure\n\n\n```\nsage -t  devel/sage-main/sage/calculus/wester.py \n**********************************************************************\nFile \"wester.py\", line 399:\n    : print d.factor()\nExpected:\n    (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nGot:\n    (-1) * (-a + b) * (a - c) * (b - c) * (a - d) * (b - d) * (c - d)\n**********************************************************************\n1 items had failures:\n   1 of 188 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_wester.py\n         [9.5 s]\nexit code: 256\n```\n\n\nThis seems to be a 32 bits issue!?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1388\n\n",
+    "closed_at": "2007-12-04T14:29:20Z",
     "created_at": "2007-12-03T21:13:08Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
@@ -16,11 +17,12 @@ archive/issues_001388.json:
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: @williamstein
+Assignee: failure
+
 
 ```
-
-sage -t  devel/sage-main/sage/calculus/wester.py            **********************************************************************
+sage -t  devel/sage-main/sage/calculus/wester.py 
+**********************************************************************
 File "wester.py", line 399:
     : print d.factor()
 Expected:
@@ -34,12 +36,11 @@ Got:
 For whitespace errors, see the file .doctest_wester.py
          [9.5 s]
 exit code: 256
- 
-
 ```
 
 
 This seems to be a 32 bits issue!?
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1388
 

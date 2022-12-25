@@ -1,16 +1,16 @@
-# Issue 6500: Improve reference manual coverage for polynomial rings
+# Issue 6500: [with patch, positive review] Improve reference manual coverage for polynomial rings
 
 archive/issues_006500.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @jhpalmieri mvngu\n\nAs of 4.1.rc1 very few of the polynomial ring classes are in the reference manual; even the basic constructor function is missing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6500\n\n",
+    "closed_at": "2009-07-20T13:49:51Z",
     "created_at": "2009-07-09T14:39:15Z",
     "labels": [
-        "component: documentation",
-        "bug"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Improve reference manual coverage for polynomial rings",
+    "title": "[with patch, positive review] Improve reference manual coverage for polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6500",
     "user": "https://github.com/loefflerd"

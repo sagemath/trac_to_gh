@@ -4,6 +4,7 @@ archive/issues_001914.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis works in python:\n\n```\n>>> print \"abc \\\"def\\\"\"\nabc \"def\"\n```\n\nbut it's broken in sage:\n\n```\nsage: print \"abc \\\"def\\\"\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     print \"abc \\\"def._backslash_()\"\"\n                                    ^\n<type 'exceptions.SyntaxError'>: EOL while scanning single-quoted string\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1914\n\n",
+    "closed_at": "2008-05-24T09:40:37Z",
     "created_at": "2008-01-24T16:55:08Z",
     "labels": [
         "component: user interface",

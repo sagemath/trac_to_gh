@@ -4,6 +4,7 @@ archive/issues_007516.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is from the \"report a problem\" link in the notebook:\n\nIf you have a vector space, that is a quotient of a subspace of\nanother vector space, then after coercing elements into it, something\ngoes wrong in (un)pickling it.\n\n```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/bosman/sage/<ipython console> in <module>()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.loads\n(sage/structure/sage_object.c:8769)()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/modules/free_module.pyc\nin __hash__(self)\n  4576             True\n  4577         \"\"\"\n-> 4578         return hash(self.__basis)\n  4579\n  4580     def construction(self):\n\nAttributeError: 'FreeModule_submodule_field' object has no attribute\n'_FreeModule_submodule_with_basis_pid__basis'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7516\n\n",
+    "closed_at": "2017-10-15T09:22:01Z",
     "created_at": "2009-11-23T04:56:05Z",
     "labels": [
         "component: linear algebra",

@@ -4,6 +4,7 @@ archive/issues_007974.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n`hg_sage.diff()` silently appends to a preceding patch file of the same name rather than overwriting or warning of appending/overwriting.  This is due to the -o option used in implementing the command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7974\n\n",
+    "closed_at": "2014-02-07T21:31:30Z",
     "created_at": "2010-01-18T09:07:55Z",
     "labels": [
         "component: interfaces",

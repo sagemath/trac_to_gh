@@ -4,6 +4,7 @@ archive/issues_002418.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.\n\n```\nsage: x = polygen(QQ)\nsage: p = (x^50/2^100 + x^10 + x + 1).change_ring(ComplexField(106))\nsage: len(p.roots())\n50\nsage: (p/2^100).roots()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/home/cwitty/my-sage/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: division by zero (46)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2418\n\n",
+    "closed_at": "2010-01-14T08:00:30Z",
     "created_at": "2008-03-07T05:01:20Z",
     "labels": [
         "component: interfaces",

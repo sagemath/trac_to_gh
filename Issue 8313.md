@@ -1,9 +1,10 @@
-# Issue 8313: Misplaced "`" in linear code construction documentation.
+# Issue 8313: Misplaced "`" in linear code construction documentation
 
 archive/issues_008313.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nWhile reading the doc I found the following trivial doc mistake:\nAt the begining of the file Linear Code construction, there is a `denotetheanswerby` which is typeset by LaTeX. I've no time to create the (trivial) patch right now. I'll if no one beats me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8313\n\n",
+    "body": "Assignee: @wdjoyner\n\nKeywords: Typo documentation\n\nWhile reading the doc I found the following trivial doc mistake:\nAt the begining of the file Linear Code construction, there is a `denotetheanswerby` which is typeset by LaTeX. I've no time to create the (trivial) patch right now. I'll if no one beats me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8313\n\n",
+    "closed_at": "2010-04-15T20:08:31Z",
     "created_at": "2010-02-20T14:32:52Z",
     "labels": [
         "component: coding theory",
@@ -11,13 +12,15 @@ archive/issues_008313.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "Misplaced \"`\" in linear code construction documentation.",
+    "title": "Misplaced \"`\" in linear code construction documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8313",
     "user": "https://github.com/hivert"
 }
 ```
 Assignee: @wdjoyner
+
+Keywords: Typo documentation
 
 While reading the doc I found the following trivial doc mistake:
 At the begining of the file Linear Code construction, there is a `denotetheanswerby` which is typeset by LaTeX. I've no time to create the (trivial) patch right now. I'll if no one beats me. 

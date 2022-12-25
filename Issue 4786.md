@@ -1,16 +1,17 @@
-# Issue 4786: fix some bugs / typos in the solve function
+# Issue 4786: [with patch, positive review] fix some bugs / typos in the solve function
 
 archive/issues_004786.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nIs this the right place for suggestions for the function \"solve\" ?\n\n1) The docstring has a typo : \"... solve an equation of system ...\"\nShould be an \"or\" here.\n\n2) The section\n\" solution_dict = True -- return a list of dictionaries containing the\nsolutions. \"\nmade me think that solution_dict defaults to True which is not the case.\nMaybe this could be made more clear.\n\n3) 'solution_dict = True' fails when only a single univariate equation\nis given. The solution is then not a list of lists and the conversion to\ndictionary fails:\n\nsage: var('a')\na\nsage: solve ([a^2-1],a,solution_dict=True)\n-\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/tom/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/equations.pyc\nin solve(f, *args, **kwds)\n  1436         sol_list = string_to_list_of_solutions(a)\n  1437         if 'solution_dict' in kwds and kwds['solution_dict']==True:\n- -> 1438             sol_dict=[dict([[eq.left(),eq.right()] for eq in\nsolution]) for solution in sol_list]\n  1439             return sol_dict\n  1440         else:\n\nAttributeError: 'SymbolicVariable' object has no attribute 'left'\n\n\nThanks for your great work.\nThomas\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4786\n\n",
+    "closed_at": "2009-09-15T19:34:55Z",
     "created_at": "2008-12-13T21:43:31Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "fix some bugs / typos in the solve function",
+    "title": "[with patch, positive review] fix some bugs / typos in the solve function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4786",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_008507.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\n```\n            sage: GF(107)(0).sqrt(all=True)\n            0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8507\n\n",
+    "closed_at": "2010-03-17T06:44:00Z",
     "created_at": "2010-03-12T05:59:18Z",
     "labels": [
         "component: basic arithmetic",

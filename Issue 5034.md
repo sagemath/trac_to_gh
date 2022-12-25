@@ -1,9 +1,10 @@
-# Issue 5034: stupid output of sage -br:  "using n cpus"
+# Issue 5034: [with patch; positive review] stupid output of sage -br:  "using n cpus"
 
 archive/issues_005034.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI just noticed that when we do \"sage -br\" with \"export MAKE='make -j3'\" on a 2-core machine we get:\n\n```\nsteragon-2:sage-3.3.alpha0 wstein$ sage -br\n...\nExecute 4 commands (using 3 cpus)\n```\n\nNote the \"3 cpus\", which looks really dumb, since I have only 1 cpu in my laptop, and it has 2 cores.  To fix this bug change \"cpus\" to \"threads\".  That's it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5034\n\n",
+    "closed_at": "2009-01-23T09:07:19Z",
     "created_at": "2009-01-20T06:13:23Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_005034.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "stupid output of sage -br:  \"using n cpus\"",
+    "title": "[with patch; positive review] stupid output of sage -br:  \"using n cpus\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5034",
     "user": "https://github.com/williamstein"

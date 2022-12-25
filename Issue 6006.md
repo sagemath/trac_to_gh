@@ -1,22 +1,23 @@
-# Issue 6006: Bring plot/point.py to 100% coverage
+# Issue 6006: [with patch, positive review] Bring plot/point.py to 100% coverage
 
 archive/issues_006006.json:
 ```json
 {
-    "body": "Assignee: tba\n\nBring plot/point.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6006\n\n",
+    "body": "Assignee: @kcrisman\n\nBring plot/point.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6006\n\n",
+    "closed_at": "2009-05-15T07:54:47Z",
     "created_at": "2009-05-08T05:09:27Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring plot/point.py to 100% coverage",
+    "title": "[with patch, positive review] Bring plot/point.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6006",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tba
+Assignee: @kcrisman
 
 Bring plot/point.py to 100% coverage.
 

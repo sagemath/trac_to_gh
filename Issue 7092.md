@@ -1,16 +1,18 @@
-# Issue 7092: build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11
+# Issue 7092: [with spkg, positive review] build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11
 
 archive/issues_007092.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: gcc\n\nAs from alpha0 building pari-2.3.3.p1.spkg faild to buil on Fedora 11, 32 bit.\n\n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../src/headers  -o base3.o ../src/basemath/base3.c\ngcc: Internal error: Killed (program cc1)\nPlease submit a full bug report.\nSee <http://bugzilla.redhat.com/bugzilla> for instructions.\nmake[3]: *** [base3.o] Error 1\nmake[3]: Leaving directory `/home/jaap/downloads/sage-4.1.2.rc0/spkg/build/pari-2.3.3.p1/src/Olinux-i686'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/home/jaap/downloads/sage-4.1.2.rc0/spkg/build/pari-2.3.3.p1/src'\nError building GP\n\nreal\t37m26.888s\nuser\t31m48.467s\nsys\t0m33.612s\nsage: An error occurred while installing pari-2.3.3.p1\n\n```\n\n\nWe see this with gcc-4.4,1:\n\n```\n[jaap@paix sage-4.1.2.rc0]$ gcc -v\nUsing built-in specs.\nTarget: i586-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i586 --build=i586-redhat-linux\nThread model: posix\ngcc version 4.4.1 20090725 (Red Hat 4.4.1-2) (GCC) \n\n```\n\nA workaround: change OPTFLAGS=-O3 to OPTFLAGS=-O1 in the file src/config/get_cc\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7092\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: gcc\n\nAs from alpha0 building pari-2.3.3.p1.spkg faild to buil on Fedora 11, 32 bit.\n\n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../src/headers  -o base3.o ../src/basemath/base3.c\ngcc: Internal error: Killed (program cc1)\nPlease submit a full bug report.\nSee <http://bugzilla.redhat.com/bugzilla> for instructions.\nmake[3]: *** [base3.o] Error 1\nmake[3]: Leaving directory `/home/jaap/downloads/sage-4.1.2.rc0/spkg/build/pari-2.3.3.p1/src/Olinux-i686'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/home/jaap/downloads/sage-4.1.2.rc0/spkg/build/pari-2.3.3.p1/src'\nError building GP\n\nreal 37m26.888s\nuser 31m48.467s\nsys 0m33.612s\nsage: An error occurred while installing pari-2.3.3.p1\n\n```\n\n\nWe see this with gcc-4.4,1:\n\n```\n[jaap@paix sage-4.1.2.rc0]$ gcc -v\nUsing built-in specs.\nTarget: i586-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i586 --build=i586-redhat-linux\nThread model: posix\ngcc version 4.4.1 20090725 (Red Hat 4.4.1-2) (GCC) \n\n```\n\nA workaround: change OPTFLAGS=-O3 to OPTFLAGS=-O1 in the file src/config/get_cc\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7092\n\n",
+    "closed_at": "2009-10-04T01:04:09Z",
     "created_at": "2009-10-01T17:13:35Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11",
+    "title": "[with spkg, positive review] build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7092",
     "user": "https://github.com/jaapspies"
@@ -34,9 +36,9 @@ make[2]: *** [gp] Error 2
 make[2]: Leaving directory `/home/jaap/downloads/sage-4.1.2.rc0/spkg/build/pari-2.3.3.p1/src'
 Error building GP
 
-real	37m26.888s
-user	31m48.467s
-sys	0m33.612s
+real 37m26.888s
+user 31m48.467s
+sys 0m33.612s
 sage: An error occurred while installing pari-2.3.3.p1
 
 ```
@@ -57,6 +59,8 @@ gcc version 4.4.1 20090725 (Red Hat 4.4.1-2) (GCC)
 A workaround: change OPTFLAGS=-O3 to OPTFLAGS=-O1 in the file src/config/get_cc
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7092
 

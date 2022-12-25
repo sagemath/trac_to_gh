@@ -3,11 +3,11 @@
 archive/issues_007016.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wstein mabshoff @roed314\n\nKeywords: padic, mod, %\n\nThe operation x % n for p-adic numbers x and integers n currently depends on the creation method of the p-adic number (not just it's equality).  It also does not seem to return meaningful results!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7016\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein mabshoff @roed314\n\nKeywords: padic, mod, %\n\nThe operation x % n for p-adic numbers is confusing. Added a note about it in the documentation of the 'residue' function. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7016\n\n",
+    "closed_at": "2016-11-19T22:10:07Z",
     "created_at": "2009-09-26T01:54:51Z",
     "labels": [
-        "component: algebra",
-        "critical",
+        "component: padics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -23,7 +23,8 @@ CC:  wstein mabshoff @roed314
 
 Keywords: padic, mod, %
 
-The operation x % n for p-adic numbers x and integers n currently depends on the creation method of the p-adic number (not just it's equality).  It also does not seem to return meaningful results!
+The operation x % n for p-adic numbers is confusing. Added a note about it in the documentation of the 'residue' function. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7016
 

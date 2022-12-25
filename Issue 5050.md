@@ -1,16 +1,17 @@
-# Issue 5050: clean up how the percent directives at the top of cells are processed
+# Issue 5050: [with patch, positive review] clean up how the percent directives at the top of cells are processed
 
 archive/issues_005050.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5050\n\n",
+    "closed_at": "2009-01-23T02:55:04Z",
     "created_at": "2009-01-22T06:31:45Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "clean up how the percent directives at the top of cells are processed",
+    "title": "[with patch, positive review] clean up how the percent directives at the top of cells are processed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5050",
     "user": "https://github.com/mwhansen"

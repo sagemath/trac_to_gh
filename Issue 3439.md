@@ -1,16 +1,17 @@
-# Issue 3439: [with patch, easy review] 20% --> 100% coverage for graph_isom
+# Issue 3439: [with patch, with positive review] 20% --> 100% coverage for graph_isom
 
 archive/issues_003439.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3439\n\n",
+    "body": "Assignee: @rlmill\n\nThe last two patches work for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3439\n\n",
+    "closed_at": "2008-06-23T03:26:20Z",
     "created_at": "2008-06-16T18:42:30Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, easy review] 20% --> 100% coverage for graph_isom",
+    "title": "[with patch, with positive review] 20% --> 100% coverage for graph_isom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3439",
     "user": "https://github.com/rlmill"
@@ -18,7 +19,7 @@ archive/issues_003439.json:
 ```
 Assignee: @rlmill
 
-
+The last two patches work for me.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3439
 

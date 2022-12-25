@@ -1,9 +1,10 @@
-# Issue 5066: [with patch, needs review] break out relative number fields into separate file
+# Issue 5066: [with patch, positive review] break out relative number fields into separate file
 
 archive/issues_005066.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: relative number fields files\n\nThis has been some time coming, but let's separate relative number fields from generic/absolute number fields now, while I'm looking at them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5066\n\n",
+    "closed_at": "2009-01-29T05:38:41Z",
     "created_at": "2009-01-23T08:59:32Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_005066.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] break out relative number fields into separate file",
+    "title": "[with patch, positive review] break out relative number fields into separate file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5066",
     "user": "https://github.com/ncalexan"

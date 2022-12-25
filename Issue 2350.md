@@ -1,22 +1,22 @@
-# Issue 2350: The 2.10.2 behavior of show(list) should instead be available via plot(list, array=True)
+# Issue 2350: [with patch, with positive review] The 2.10.2 behavior of show(list) should instead be available via plot(list, array=True)
 
 archive/issues_002350.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nshow changed behavior in 2.10.2, which surprised lots of people.\n\n* revert show to the previous behavior.\n\n* plot(list) does what it currently does (i.e., superimpose the plots)\n\n* plot(list, array=True) does what show does in 2.10.2 (i.e., put the\nplots into an array).\n\n* change the docs to show() to more clearly reflect the purpose of the\nfunction.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2350\n\n",
+    "body": "Assignee: @jasongrout\n\nshow changed behavior in 2.10.2, which surprised lots of people.\n\n* revert show to the previous behavior.\n\n* plot(list) does what it currently does (i.e., superimpose the plots)\n\n* plot(list, array=True) does what show does in 2.10.2 (i.e., put the\nplots into an array).\n\n* change the docs to show() to more clearly reflect the purpose of the\nfunction.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2350\n\n",
+    "closed_at": "2008-03-03T23:38:42Z",
     "created_at": "2008-02-29T01:45:04Z",
     "labels": [
-        "component: user interface",
-        "bug"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "The 2.10.2 behavior of show(list) should instead be available via plot(list, array=True)",
+    "title": "[with patch, with positive review] The 2.10.2 behavior of show(list) should instead be available via plot(list, array=True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2350",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 show changed behavior in 2.10.2, which surprised lots of people.
 

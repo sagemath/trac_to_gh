@@ -1,22 +1,25 @@
-# Issue 3044: phcpack improvements: path tracking
+# Issue 3044: [with patch, positive review] phcpack improvements: path tracking
 
 archive/issues_003044.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nI (Marshall Hampton) and Alex Jokela have added a number of improvements to the phcpack interface, including solution classification, path-tracking, and some utility functions.  This also includes much better doctesting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3044\n\n",
+    "body": "Assignee: somebody\n\nKeywords: phcpack, interfaces, optional packages, editor_cwitty\n\nI (Marshall Hampton) and Alex Jokela have added a number of improvements to the phcpack interface, including solution classification, path-tracking, and some utility functions.  This also includes much better doctesting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3044\n\n",
+    "closed_at": "2008-06-23T11:28:43Z",
     "created_at": "2008-04-27T14:10:00Z",
     "labels": [
         "component: numerical",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "phcpack improvements: path tracking",
+    "title": "[with patch, positive review] phcpack improvements: path tracking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3044",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: jkantor
+Assignee: somebody
+
+Keywords: phcpack, interfaces, optional packages, editor_cwitty
 
 I (Marshall Hampton) and Alex Jokela have added a number of improvements to the phcpack interface, including solution classification, path-tracking, and some utility functions.  This also includes much better doctesting.
 

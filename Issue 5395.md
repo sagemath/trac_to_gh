@@ -1,9 +1,10 @@
-# Issue 5395: [with patch, needs review] a few fixes for the ReST conversion of the reference manual
+# Issue 5395: [with patch, positive review] a few fixes for the ReST conversion of the reference manual
 
 archive/issues_005395.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @mwhansen\n\nWith the new version of the documentation, the first lines of some files in the Sage library got broken into two lines, and this messes up the table of contents in the reference manual.  The attached patch fixes the instances of that that I found, as well as a few other little things.\n\nNote that in order to see my changes, I couldn't just do 'sage -docbuild reference html' -- the file index.html wasn't getting rebuilt.  I ended up building the manual from scratch, but maybe there's an easier way...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5395\n\n",
+    "closed_at": "2009-02-28T16:28:47Z",
     "created_at": "2009-02-27T20:09:38Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005395.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] a few fixes for the ReST conversion of the reference manual",
+    "title": "[with patch, positive review] a few fixes for the ReST conversion of the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5395",
     "user": "https://github.com/jhpalmieri"

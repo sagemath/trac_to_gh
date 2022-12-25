@@ -1,15 +1,17 @@
-# Issue 6972: update the r spkg in sage to 2.9.2
+# Issue 6972: [with patch and spkg, positive review] update the r spkg in sage to 2.9.2
 
 archive/issues_006972.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nStart with \n\nhttp://sage.math.washington.edu/home/jason/r-2.9.2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6972\n\n",
+    "body": "Assignee: mabshoff\n\nI took jason's spkg and checked everything in, plus fixed rpy2 so it worked:\n\n   http://sage.math.washington.edu/home/wstein/patches/r-2.9.2.spkg\n\nI'm now going to test this on a range of systems / review it.\n\nIt looks good!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6972\n\n",
+    "closed_at": "2009-09-27T02:17:39Z",
     "created_at": "2009-09-21T00:24:45Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "update the r spkg in sage to 2.9.2",
+    "title": "[with patch and spkg, positive review] update the r spkg in sage to 2.9.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6972",
     "user": "https://github.com/williamstein"
@@ -17,9 +19,13 @@ archive/issues_006972.json:
 ```
 Assignee: mabshoff
 
-Start with 
+I took jason's spkg and checked everything in, plus fixed rpy2 so it worked:
 
-http://sage.math.washington.edu/home/jason/r-2.9.2.spkg
+   http://sage.math.washington.edu/home/wstein/patches/r-2.9.2.spkg
+
+I'm now going to test this on a range of systems / review it.
+
+It looks good!
 
 Issue created by migration from https://trac.sagemath.org/ticket/6972
 

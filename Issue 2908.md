@@ -4,6 +4,7 @@ archive/issues_002908.json:
 ```json
 {
     "body": "Assignee: somebody\n\nWith 3.0.alpha2 I get the following:\n\n```\nsage: R.<x> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\nsage: R.<x> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x,y> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2908\n\n",
+    "closed_at": "2008-04-13T18:51:35Z",
     "created_at": "2008-04-13T17:47:25Z",
     "labels": [
         "component: basic arithmetic",

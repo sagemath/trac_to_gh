@@ -3,7 +3,8 @@
 archive/issues_000702.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. \n\nIssue created by migration from https://trac.sagemath.org/ticket/702\n\n",
+    "body": "Assignee: @robertwb\n\nThere have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. \n\nIssue created by migration from https://trac.sagemath.org/ticket/702\n\n",
+    "closed_at": "2007-09-25T05:32:12Z",
     "created_at": "2007-09-20T11:00:18Z",
     "labels": [
         "component: user interface"
@@ -15,7 +16,7 @@ archive/issues_000702.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 There have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. 
 

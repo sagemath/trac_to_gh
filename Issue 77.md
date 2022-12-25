@@ -4,6 +4,7 @@ archive/issues_000077.json:
 ```json
 {
     "body": "Assignee: somebody\n\nsage: atta[TAB]ched_files\n\nAnother indication that 'attach' is not a first-class citizen.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/77\n\n",
+    "closed_at": "2006-09-23T01:00:12Z",
     "created_at": "2006-09-22T22:29:27Z",
     "labels": [
         "component: basic arithmetic",

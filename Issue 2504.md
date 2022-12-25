@@ -1,16 +1,17 @@
-# Issue 2504: number field .units() method caches proof=False result and returns it for proof=True
+# Issue 2504: [with patch, with positive review] number field .units() method caches proof=False result and returns it for proof=True
 
 archive/issues_002504.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following was reported by Luis Finotti on sage-support, here: http://groups.google.com/group/sage-support/browse_thread/thread/f01e8661743d36d4#\n\nThe following commands return an error:\n\n```\n   P.<x>=PolynomialRing(QQ)\n   f=x^17+3\n   K=NumberField(f,'a')\n   K.units(proof=True) # default\n```\nbecause Sage is incapable of performing the computation with proof=True.\n(The error ends with \"not enough precomputed primes, need primelimit ~  (35)\".)\n\nIf you then do\n\n```\n   K.units(proof=False)\n```\nyou get an answer immediately; then repeating the original\n\n```\n   K.units(proof=True)\n```\ngives you the unproved answer again even though proof=True is specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2504\n\n",
+    "closed_at": "2008-04-26T21:58:58Z",
     "created_at": "2008-03-13T03:14:46Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "number field .units() method caches proof=False result and returns it for proof=True",
+    "title": "[with patch, with positive review] number field .units() method caches proof=False result and returns it for proof=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2504",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

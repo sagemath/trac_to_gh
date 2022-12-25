@@ -1,22 +1,23 @@
-# Issue 8402: Sanity check for Parent and Elemet
+# Issue 8402: Sanity check for Parents and Elements
 
 archive/issues_008402.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Parent, Element, equality, zero, one\n\nHere is the summary of what was decided on [sage=devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96):\n\n1 - Any Parent or Element must have an equality methods such that\n`self == self` and `self != None`. This is not required for general `SageObject`.\n\n2 - Element construction should be idempotent. More precisely, for any element e within parent P, the equality `P(e) == e` must hold.\n\nCase by case exception such as `RealIntervalField` are possible.\n\n3 - element of a parent in the category `Monoid()` (respectively `CommutativeAdditiveMonoid()`) must have a `__hash__` method,\nwhich may raise an error for mutable element but never on `.one()` (respectively `.zero()`)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8402\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Parent, Element, equality, zero, one\n\nHere is the summary of what was decided on [sage=devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96):\n\n1 - Any Parent or Element must have an equality methods such that\n`self == self` and `self != None`. This is not required for general `SageObject`. I also test that `self != self` and `self == None` both returns `False`. \n\n2 - Element construction should be idempotent. More precisely, for any element e within parent P, the equality `P(e) == e` must hold. This should only be enforced for true parent since it cause some problems for facade parents. \n\nCase by case exception such as `RealIntervalField` are possible.\n\n3 - `_test_hash`: test that the result of hash is an int or that it raises an appropriate exception\n\n3' - element of a parent in the category `Monoid()` (respectively `CommutativeAdditiveMonoid()`) must have a `__hash__` method,\nwhich may raise an error for mutable element but never on `.one()` (respectively `.zero()`)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8402\n\n",
+    "closed_at": "2010-04-29T05:24:19Z",
     "created_at": "2010-02-28T16:45:15Z",
     "labels": [
         "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "Sanity check for Parent and Elemet",
+    "title": "Sanity check for Parents and Elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8402",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @nthiery
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -25,14 +26,17 @@ Keywords: Parent, Element, equality, zero, one
 Here is the summary of what was decided on [sage=devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96):
 
 1 - Any Parent or Element must have an equality methods such that
-`self == self` and `self != None`. This is not required for general `SageObject`.
+`self == self` and `self != None`. This is not required for general `SageObject`. I also test that `self != self` and `self == None` both returns `False`. 
 
-2 - Element construction should be idempotent. More precisely, for any element e within parent P, the equality `P(e) == e` must hold.
+2 - Element construction should be idempotent. More precisely, for any element e within parent P, the equality `P(e) == e` must hold. This should only be enforced for true parent since it cause some problems for facade parents. 
 
 Case by case exception such as `RealIntervalField` are possible.
 
-3 - element of a parent in the category `Monoid()` (respectively `CommutativeAdditiveMonoid()`) must have a `__hash__` method,
+3 - `_test_hash`: test that the result of hash is an int or that it raises an appropriate exception
+
+3' - element of a parent in the category `Monoid()` (respectively `CommutativeAdditiveMonoid()`) must have a `__hash__` method,
 which may raise an error for mutable element but never on `.one()` (respectively `.zero()`)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8402
 

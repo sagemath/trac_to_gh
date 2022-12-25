@@ -4,6 +4,7 @@ archive/issues_008602.json:
 ```json
 {
     "body": "Assignee: @tornaria\n\nCC:  @jonhanke\n\nKeywords: theta series\n\nImplement a counting vectors algorithm for theta series of degree 2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8602\n\n",
+    "closed_at": "2010-04-16T18:52:08Z",
     "created_at": "2010-03-24T19:00:07Z",
     "labels": [
         "component: quadratic forms"

@@ -1,16 +1,17 @@
-# Issue 4693: [with patch, needs review] cleanup work in sage/functions/piecewise.py
+# Issue 4693: [with patch, positive review] cleanup work in sage/functions/piecewise.py
 
 archive/issues_004693.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nAfter looking at #4690, I realized that a lot could be done to \"update\" piecewise.py.  This includes not explicitly using Maxima where we don't need to in order to take advantage of pynac in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4693\n\n",
+    "closed_at": "2008-12-04T15:36:38Z",
     "created_at": "2008-12-04T10:06:23Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] cleanup work in sage/functions/piecewise.py",
+    "title": "[with patch, positive review] cleanup work in sage/functions/piecewise.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4693",
     "user": "https://github.com/mwhansen"

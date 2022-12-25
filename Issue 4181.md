@@ -1,16 +1,18 @@
-# Issue 4181: Mysterious error somewhat related to 16-Bit signed integers on Mac OS X
+# Issue 4181: [with patch, positive review] Singular/omalloc: do use the system's malloc
 
 archive/issues_004181.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nOn both my Mac OS X 10.4 / Xcode 25 boxes, one Intel and one PPC, the following Sage code runs through fine (hit return twice):\n\nsage: for p in prime_range(32768, 100000):  EllipticCurve(GF(p),[0,1,1,10,13]) \n\nPlease note that the length of the interval is almost 70000, so quite some primes are involved.\nBut if the startpoint of the range is lower the 32768, then Sage crashes, e.g. for:\n\nsage: for p in prime_range(31300, 32600):  EllipticCurve(GF(p),[0,1,1,10,13]) \n\n(note that the length of the interval is only 1300) one gets the following message with sage crashed:\n\n\nerror: no more memory\nSystem 8672k:8672k Appl 8233k/438k Malloc 4030k/33k Valloc 4608k/404k Pages 1071/81 Regions 9:9\n\nhalt 14\n\n\nThe problem/bug can't be due to low physical RAM, or due to not enough virtual RAM for processes, since then the first line of code would have to crash, too. Which is not the case.\n\nIt is not related to the mathematical code, since if the length of the interval of primes is only 100 or less, the code runs fine for startpoints above and (!) below 32768.\n\nThe bug is triggered also if consecutively several small intervals (below 32768) are calculated, so it seems to be some caching / stack / heap / whatsoever related issue.\nIt does not seem to occur on platforms other than Mac (OS X 10.4 only?), so I put this under the \"porting\" issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4181\n\n",
+    "body": "Assignee: somebody\n\nOn both my Mac OS X 10.4 / Xcode 25 boxes, one Intel and one PPC, the following Sage code runs through fine (hit return twice):\n\n```\nsage: for p in prime_range(32768, 100000):  EllipticCurve(GF(p),[0,1,1,10,13]) \n```\nPlease note that the length of the interval is almost 70000, so quite some primes are involved.\nBut if the startpoint of the range is lower the 32768, then Sage crashes, e.g. for:\n\n```\nsage: for p in prime_range(31300, 32600):  EllipticCurve(GF(p),[0,1,1,10,13]) \n```\n(note that the length of the interval is only 1300) one gets the following message with sage crashed:\n\n```\nerror: no more memory\nSystem 8672k:8672k Appl 8233k/438k Malloc 4030k/33k Valloc 4608k/404k Pages 1071/81 Regions 9:9\n\nhalt 14\n```\n\nThe problem/bug can't be due to low physical RAM, or due to not enough virtual RAM for processes, since then the first line of code would have to crash, too. Which is not the case.\n\nIt is not related to the mathematical code, since if the length of the interval of primes is only 100 or less, the code runs fine for startpoints above and (!) below 32768.\n\nThe bug is triggered also if consecutively several small intervals (below 32768) are calculated, so it seems to be some caching / stack / heap / whatsoever related issue.\nIt does not seem to occur on platforms other than Mac (OS X 10.4 only?), so I put this under the \"porting\" issues. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4181\n\n",
+    "closed_at": "2009-02-24T19:38:08Z",
     "created_at": "2008-09-23T22:25:28Z",
     "labels": [
-        "component: porting",
+        "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Mysterious error somewhat related to 16-Bit signed integers on Mac OS X",
+    "title": "[with patch, positive review] Singular/omalloc: do use the system's malloc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4181",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
@@ -20,28 +22,30 @@ Assignee: somebody
 
 On both my Mac OS X 10.4 / Xcode 25 boxes, one Intel and one PPC, the following Sage code runs through fine (hit return twice):
 
+```
 sage: for p in prime_range(32768, 100000):  EllipticCurve(GF(p),[0,1,1,10,13]) 
-
+```
 Please note that the length of the interval is almost 70000, so quite some primes are involved.
 But if the startpoint of the range is lower the 32768, then Sage crashes, e.g. for:
 
+```
 sage: for p in prime_range(31300, 32600):  EllipticCurve(GF(p),[0,1,1,10,13]) 
-
+```
 (note that the length of the interval is only 1300) one gets the following message with sage crashed:
 
-
+```
 error: no more memory
 System 8672k:8672k Appl 8233k/438k Malloc 4030k/33k Valloc 4608k/404k Pages 1071/81 Regions 9:9
 
 halt 14
-
+```
 
 The problem/bug can't be due to low physical RAM, or due to not enough virtual RAM for processes, since then the first line of code would have to crash, too. Which is not the case.
 
 It is not related to the mathematical code, since if the length of the interval of primes is only 100 or less, the code runs fine for startpoints above and (!) below 32768.
 
 The bug is triggered also if consecutively several small intervals (below 32768) are calculated, so it seems to be some caching / stack / heap / whatsoever related issue.
-It does not seem to occur on platforms other than Mac (OS X 10.4 only?), so I put this under the "porting" issues.
+It does not seem to occur on platforms other than Mac (OS X 10.4 only?), so I put this under the "porting" issues. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4181
 

@@ -1,16 +1,17 @@
-# Issue 1864: simple notebook bug -- typing ? in a comment yields introspection but shouldn't (easy to fix in worksheet.py, probably)
+# Issue 1864: [with patch; positive review] simple notebook bug -- typing ? in a comment yields introspection but shouldn't (easy to fix in worksheet.py, probably)
 
 archive/issues_001864.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTry this in the notebook\n\n```\n# This is a question?\n```\nand hit shift enter.  You get introspection on the word \"question\".  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1864\n\n",
+    "closed_at": "2008-05-17T19:54:56Z",
     "created_at": "2008-01-20T16:40:44Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "simple notebook bug -- typing ? in a comment yields introspection but shouldn't (easy to fix in worksheet.py, probably)",
+    "title": "[with patch; positive review] simple notebook bug -- typing ? in a comment yields introspection but shouldn't (easy to fix in worksheet.py, probably)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1864",
     "user": "https://github.com/williamstein"

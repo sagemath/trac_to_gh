@@ -3,7 +3,8 @@
 archive/issues_009714.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nWe have\n\n```\nsage: M = matrix(3, [1,2,0, 0,2,0, 0,0,1])\nsage: g = Graph(M, format='adjacency_matrix')\nsage: I = g.incidence_matrix(); I\n[-1 -1  0  0  0  1]\n[ 1  1  0  1  1  0]\n[ 0  0  1  0  0  0]\n```\nBut then:\n\n```\nsage: Graph(I, format='incidence_matrix').show(graph_border=True)\nkaboom!\n```\n\nEither the first .incidence_matrix() should fail, or the second Graph(...) should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9714\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nWe have\n\n```\nsage: M = matrix(3, [1,2,0, 0,2,0, 0,0,1])\nsage: g = Graph(M, format='adjacency_matrix')\nsage: I = g.incidence_matrix(); I\n[-1 -1  0  0  0  1]\n[ 1  1  0  1  1  0]\n[ 0  0  1  0  0  0]\n```\nBut then:\n\n```\nsage: Graph(I, format='incidence_matrix').show(graph_border=True)\nkaboom!\n```\n\nEither the first .incidence_matrix() should fail, or the second Graph(...) should work.\n\nApply:\n\n* [attachment:trac_9714_incidence_checking.patch]\n* [attachment:trac_9714_review.patch]\n* [attachment:trac_9714_review_review.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9714\n\n",
+    "closed_at": "2012-02-22T10:44:18Z",
     "created_at": "2010-08-10T00:16:47Z",
     "labels": [
         "component: graph theory",
@@ -37,6 +38,12 @@ kaboom!
 ```
 
 Either the first .incidence_matrix() should fail, or the second Graph(...) should work.
+
+Apply:
+
+* [attachment:trac_9714_incidence_checking.patch]
+* [attachment:trac_9714_review.patch]
+* [attachment:trac_9714_review_review.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9714
 

@@ -1,16 +1,16 @@
-# Issue 3109: elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer
+# Issue 3109: [with patch;   positive review] elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer
 
 archive/issues_003109.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nImplement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:\n\n1. try to find an explicit point Q defined over the same field as P such that n*Q == P.\n2. If no such Q exists, raise a ValueError.\n\nAlso, implement P.is_divisible_by(n) trivially in terms of the above, and document\nthe connection between the two functions.  Also, have both implemented in terms of\na third function that just finds the polynomial whose root is x(Q), so we\ncan implement is_divisible_by more efficiently. \n\nAn algorithm to do this is described at the end of section 3 of \n    http://wstein.org/papers/kolyconj/\n\nIf you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3109\n\n",
+    "body": "Assignee: @williamstein\n\nImplement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:\n\n1. try to find an explicit point Q defined over the same field as P such that n*Q == P.\n2. If no such Q exists, raise a `ValueError`.\n\nAlso, implement P.is_divisible_by(n) trivially in terms of the above, and document\nthe connection between the two functions.  Also, have both implemented in terms of\na third function that just finds the polynomial whose root is x(Q), so we\ncan implement is_divisible_by more efficiently. \n\nAn algorithm to do this is described at the end of section 3 of \n    http://wstein.org/papers/kolyconj/\n\nIf you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3109\n\n",
+    "closed_at": "2008-05-07T16:09:17Z",
     "created_at": "2008-05-06T02:19:46Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer",
+    "title": "[with patch;   positive review] elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3109",
     "user": "https://github.com/williamstein"
@@ -21,7 +21,7 @@ Assignee: @williamstein
 Implement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:
 
 1. try to find an explicit point Q defined over the same field as P such that n*Q == P.
-2. If no such Q exists, raise a ValueError.
+2. If no such Q exists, raise a `ValueError`.
 
 Also, implement P.is_divisible_by(n) trivially in terms of the above, and document
 the connection between the two functions.  Also, have both implemented in terms of

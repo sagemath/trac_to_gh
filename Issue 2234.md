@@ -1,16 +1,17 @@
-# Issue 2234: [with trivial patch, needs review] typo fix in doctest
+# Issue 2234: [with trivial patch, with positive review] typo fix in doctest
 
 archive/issues_002234.json:
 ```json
 {
     "body": "Assignee: @malb\n\nsee patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/2234\n\n",
+    "closed_at": "2008-02-20T20:19:35Z",
     "created_at": "2008-02-20T20:14:10Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with trivial patch, needs review] typo fix in doctest",
+    "title": "[with trivial patch, with positive review] typo fix in doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2234",
     "user": "https://github.com/malb"

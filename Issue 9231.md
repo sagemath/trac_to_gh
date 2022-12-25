@@ -4,6 +4,7 @@ archive/issues_009231.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently 0/4 functions are tested in interfaces/tachyon.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9231\n\n",
+    "closed_at": "2010-07-21T03:32:06Z",
     "created_at": "2010-06-13T12:40:15Z",
     "labels": [
         "component: interfaces",

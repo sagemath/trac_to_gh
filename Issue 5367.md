@@ -4,6 +4,7 @@ archive/issues_005367.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: power series composition\n\nThe following returns an incorrect answer:\n\n```\nsage: S.<z> = QQ[[]]\nsage: p = 1 + O(z)\nsage: q = 1 + z\nsage: p(q)          # should return O(z^0)\n1\n```\n\nThis was reported via \"report a problem\" from the notebook.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5367\n\n",
+    "closed_at": "2011-07-19T17:37:31Z",
     "created_at": "2009-02-25T01:26:30Z",
     "labels": [
         "component: algebra",

@@ -4,6 +4,7 @@ archive/issues_008780.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @peterjeremy\n\nOn Cygwin, Sage needs c99 complex support which can be provided by the cephes library from netlib.org / www.moshier.net\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/cephes-2.8.spkg\n\n\nWe need to decide the best way to include this since it is only need on Cygwin (and maybe FreeBSD, etc.).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8780\n\n",
+    "closed_at": "2010-05-26T01:15:58Z",
     "created_at": "2010-04-27T06:39:57Z",
     "labels": [
         "component: porting: cygwin",

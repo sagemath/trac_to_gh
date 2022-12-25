@@ -1,16 +1,17 @@
-# Issue 5741: Detect Atom CPUs as Core2 in the ATLAS detection script
+# Issue 5741: Detect Atom CPUs as Core2 in the ATLAS detection script [fixed via spkg at #5219]
 
 archive/issues_005741.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nBuild time on Sage for Atom hardware is insane since ATLAS does not identify Atom CPUs as known hardware and does a full tune, i.e. building Sage takes half a day :(\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5741\n\n",
+    "closed_at": "2009-04-18T23:24:56Z",
     "created_at": "2009-04-11T01:21:48Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Detect Atom CPUs as Core2 in the ATLAS detection script",
+    "title": "Detect Atom CPUs as Core2 in the ATLAS detection script [fixed via spkg at #5219]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5741",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

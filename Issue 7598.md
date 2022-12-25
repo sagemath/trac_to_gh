@@ -4,6 +4,7 @@ archive/issues_007598.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @burcin\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\nIt should give `1j` instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7598\n\n",
+    "closed_at": "2009-12-15T15:16:37Z",
     "created_at": "2009-12-04T05:35:08Z",
     "labels": [
         "component: number fields",

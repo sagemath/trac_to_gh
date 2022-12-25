@@ -3,7 +3,8 @@
 archive/issues_009544.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\nTonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.\n\nThe attached patch makes TonelliShanks.h idempotent on FreeBSD (it probably should be on all architectures but making the patch FreeBSD-specific simplifies testing).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9544\n\n",
+    "body": "Assignee: @peterjeremy\n\nTonelliShanks.h references `int32_t` but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.\n\n**spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/flintqs-20070817.p8.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/flintqs-20070817.p8.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9544\n\n",
+    "closed_at": "2012-06-28T09:36:36Z",
     "created_at": "2010-07-18T20:01:27Z",
     "labels": [
         "component: porting: bsd"
@@ -17,9 +18,9 @@ archive/issues_009544.json:
 ```
 Assignee: @peterjeremy
 
-TonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.
+TonelliShanks.h references `int32_t` but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.
 
-The attached patch makes TonelliShanks.h idempotent on FreeBSD (it probably should be on all architectures but making the patch FreeBSD-specific simplifies testing).
+**spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/flintqs-20070817.p8.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/flintqs-20070817.p8.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9544
 

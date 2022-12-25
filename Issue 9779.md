@@ -1,34 +1,44 @@
-# Issue 9779: Missing symbolic link for liblapack.a, so SAGE_ATLAS_LIB does not work on Solaris.
+# Issue 9779: Check for static libraries libatlas.a, libcblas.a, libf77blas and liblapack.a, so SAGE_ATLAS_LIB works
 
 archive/issues_009779.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jhpalmieri @jaapspies @qed777\n\nAs noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding \n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\nwill work, though this remains to be tested. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9780\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies @qed777\n\nAs noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, the shared library causes problems on Solaris. \n\nAs noted [here](http://groups.google.com/group/sage-devel/msg/6f064c4120fe2f65?hl=en) by Fran\u00e7ois Bissey, liblapack.so often fails to build. (I assume Fran\u00e7ois means on Linux). He also notes that `libcblas.so`, though I think he means `libf77blas.so`. Basically building the shared libraries is problematic in ATLAS, with different issues affecting Solaris, Linux and FreeBSD. In contrast, the static libraries are relieably built. \n\nThe changes to this code only affect the file `system_atlas.py` and make that test for the 4 static libraries and ignore the four shared libraries. Assuming the static libraries exist, links are made. \n\nIt was also necessary to update the messages to indicate that static libraries are needed. \n\nIt should be noted that Mathematica 7 ships with only static libraries related to ATLAS and no shared libraries. Yet Wolfram Research primarily use shared libraries. \n\nIt may be wisest to simply not build the shared libraries at all, but that can be left for another ticket. \n\nAn updated package can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9780\n\n",
+    "closed_at": "2010-09-29T08:40:19Z",
     "created_at": "2010-08-22T07:37:42Z",
     "labels": [
-        "component: algebra",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Missing symbolic link for liblapack.a, so SAGE_ATLAS_LIB does not work on Solaris.",
+    "title": "Check for static libraries libatlas.a, libcblas.a, libf77blas and liblapack.a, so SAGE_ATLAS_LIB works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9779",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @aghitza
+Assignee: drkirkby
 
 CC:  @jhpalmieri @jaapspies @qed777
 
-As noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding 
+As noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, the shared library causes problems on Solaris. 
 
-```
-os.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')
-```
+As noted [here](http://groups.google.com/group/sage-devel/msg/6f064c4120fe2f65?hl=en) by François Bissey, liblapack.so often fails to build. (I assume François means on Linux). He also notes that `libcblas.so`, though I think he means `libf77blas.so`. Basically building the shared libraries is problematic in ATLAS, with different issues affecting Solaris, Linux and FreeBSD. In contrast, the static libraries are relieably built. 
 
-will work, though this remains to be tested. 
+The changes to this code only affect the file `system_atlas.py` and make that test for the 4 static libraries and ignore the four shared libraries. Assuming the static libraries exist, links are made. 
 
-Dave
+It was also necessary to update the messages to indicate that static libraries are needed. 
+
+It should be noted that Mathematica 7 ships with only static libraries related to ATLAS and no shared libraries. Yet Wolfram Research primarily use shared libraries. 
+
+It may be wisest to simply not build the shared libraries at all, but that can be left for another ticket. 
+
+An updated package can be found at 
+
+http://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg
+
+
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9780
 

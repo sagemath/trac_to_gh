@@ -1,21 +1,21 @@
-# Issue 6079: modernize base inclusion morphism of relative number fields
+# Issue 6079: [with patch, needs work] modernize base inclusion morphism of relative number fields
 
 archive/issues_006079.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @craigcitro @williamstein @mstreng\n\nKeywords: base inclusion morphism relative number field\n\nThe patch adds a class for the morphism embedding the base into a relative number field extension, and (much more useful) the partially defined section going back.\n\nIt also adds a verbose(level=4) stack trace whenever nfinit and rnfinit are called.  It's a huge pain trying to work around such calls without a mechanism to see them, so here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6079\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @robertwb @craigcitro @williamstein @mstreng\n\nKeywords: base inclusion morphism relative number field\n\nThe patch adds a class for the morphism embedding the base into a relative number field extension, and (much more useful) the partially defined section going back.\n\nIt also adds a verbose(level=4) stack trace whenever nfinit and rnfinit are called.  It's a huge pain trying to work around such calls without a mechanism to see them, so here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6079\n\n",
     "created_at": "2009-05-19T02:18:22Z",
     "labels": [
-        "component: number theory"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "modernize base inclusion morphism of relative number fields",
+    "title": "[with patch, needs work] modernize base inclusion morphism of relative number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6079",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @robertwb @craigcitro @williamstein @mstreng
 

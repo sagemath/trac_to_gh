@@ -1,23 +1,22 @@
-# Issue 1310: [graphs] calculate max independent set
+# Issue 1310: graphs: calculate max independent set
 
 archive/issues_001310.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1310\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1310\n\n",
+    "closed_at": "2009-07-27T16:38:40Z",
     "created_at": "2007-11-28T20:00:48Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[graphs] calculate max independent set",
+    "title": "graphs: calculate max independent set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1310",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 
 

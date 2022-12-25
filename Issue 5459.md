@@ -1,16 +1,17 @@
-# Issue 5459: Notebook and worksheet autosave intervals, excessive snapshots
+# Issue 5459: Fix notebook and worksheet autosave intervals
 
 archive/issues_005459.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @fchapoton\n\nKeywords: notebook worksheet autosave snapshots\n\nThere is a notebook configuration item indexed by 'save_interval'.  This can be set at the sage command line by instantiating a notebook object (call it \"nb\") and issuing commands like \n`nb.conf()['save_interval'] = int(3600)`   This value seems to be used by server/notebook/twist.py to make backup copies of nb.sobj.  It seems to make a snapshot of a worksheet as a side-effect, without any check if the snapshot is different from previous snapshots.  This is speculation, since I could not decipher what triggers twist.py to check and do such a save.  Also, experimentally, I see that it happens \"automatically\", even if the worksheets and notebook are left untouched.\n\nThere is also a per-user 'autosave_interval'  This can be accessed through code like `nb.user(\"admin\")['autosave_interval']` and can also be set from the drop-down box in the \"Settings\" area of the notebook (to be 1,3,5,7,9 minutes only).  The use of this seems a bit odd.  Any edit (but only edits) in the worksheet triggers a possible snapshot save.  First, the time since the last save is checked against the user autosave_interval.  If not enough time has elapsed, it exits, otherwise it continues towards a snapshot save.  It then checks to see if the worksheet has changed.  But it must have changed, since only edits trigger the routine.  Then it writes a snapshot.\n\nSo in summary, a new snapshot every period given by 'save_interval' which is not obviously user-configurable.  No check on if the snapshot is different.  Every edit triggers a possible snapshot, it happens only if time exceeds user's autosave_interval, which can be set by the user to limited number of values.\n\nThis may be an imperfect understanding of the situation, but I think it is confusing for a user and potentially filling up disk space and/or degrading performance.  So there's some room for improvement in how this works.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5459\n\n",
+    "closed_at": "2020-08-25T15:43:05Z",
     "created_at": "2009-03-09T03:54:45Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Notebook and worksheet autosave intervals, excessive snapshots",
+    "title": "Fix notebook and worksheet autosave intervals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5459",
     "user": "https://github.com/rbeezer"

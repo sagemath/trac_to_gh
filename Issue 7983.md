@@ -3,7 +3,8 @@
 archive/issues_007983.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @darijgr sage-combinat @anneschilling @tscrim\n\nThe 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7983\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @darijgr sage-combinat @anneschilling @tscrim\n\nKeywords: combinat, tableaux, days49\n\nThe 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.\n\n*EDIT* by Darij:\n\nApply:\n\n* [attachment:trac_7983-major_index_and_other_tableau_fixes-dg.patch]\n* [attachment:trac_7983-review-ts.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7983\n\n",
+    "closed_at": "2013-08-02T14:11:45Z",
     "created_at": "2010-01-18T19:39:19Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +21,16 @@ Assignee: sage-combinat
 
 CC:  @darijgr sage-combinat @anneschilling @tscrim
 
+Keywords: combinat, tableaux, days49
+
 The 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.
+
+*EDIT* by Darij:
+
+Apply:
+
+* [attachment:trac_7983-major_index_and_other_tableau_fixes-dg.patch]
+* [attachment:trac_7983-review-ts.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7983
 

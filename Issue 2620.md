@@ -1,16 +1,17 @@
-# Issue 2620: [with patch, needs review] generator generator support for ideal
+# Issue 2620: [with patch, positive review] generator generator support for ideal
 
 archive/issues_002620.json:
 ```json
 {
     "body": "Assignee: @malb\n\nPython has a generator type which is cool and now this works:\n\n```\nP.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nI1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nQ = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nI2 = ideal( Q(f) for f in I1.gens() ) # note we don't construct a list\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2620\n\n",
+    "closed_at": "2008-04-01T14:30:59Z",
     "created_at": "2008-03-20T22:15:35Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] generator generator support for ideal",
+    "title": "[with patch, positive review] generator generator support for ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2620",
     "user": "https://github.com/malb"

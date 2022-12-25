@@ -1,9 +1,10 @@
-# Issue 6433: [with patch, needs review] fix %html
+# Issue 6433: [with patch, positive review] fix %html
 
 archive/issues_006433.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe patch at #4575 seems to have broken %html cells.  The attached patch makes them work again.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6433\n\n",
+    "closed_at": "2009-07-18T19:35:33Z",
     "created_at": "2009-06-27T17:25:58Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_006433.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] fix %html",
+    "title": "[with patch, positive review] fix %html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6433",
     "user": "https://github.com/jhpalmieri"

@@ -1,28 +1,35 @@
-# Issue 5447: upgrade to jquery 1.3 and jqueryui 1.7
+# Issue 5447: [with spkgs and patch, positive review] Upgrade to jQuery 1.3 and jQuery UI 1.7
 
 archive/issues_005447.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nApparently these new releases are much faster (like an order of magnitude for some operations).\n\nhttp://docs.jquery.com/Release:jQuery_1.3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5447\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @jasongrout\n\nUpgrading the jQuery and jQuery UI spkgs in Sage will make available several performance improvements and new features for the notebook.  Release notes: [jQuery 1.3 ](http://docs.jquery.com/Release:jQuery_1.3), [jQuery UI 1.7](http://jqueryui.com/docs/Changelog/1.7).\n\nTo test the new spkgs, please download and install (e.g., via `sage -f`)\n\n* http://sage.math.washington.edu/home/mpatel/trac/5447/jquery-1.3.2.p2.spkg\n* http://sage.math.washington.edu/home/jason/jqueryui-1.7.2.p3.spkg\n\n**and** apply the rebased [attachment:trac_5447-jquery_upgrade_v3.patch v3 patch] below to 4.1.2.alpha1's sage repository.\n\nNote: When \"downgrading\" to the previous versions, it may help to delete `local/notebook/javascript/jquery*` manually, since their `spkg-install`s do not erase existing installations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5447\n\n",
+    "closed_at": "2009-10-17T07:43:09Z",
     "created_at": "2009-03-06T03:19:53Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "upgrade to jquery 1.3 and jqueryui 1.7",
+    "title": "[with spkgs and patch, positive review] Upgrade to jQuery 1.3 and jQuery UI 1.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5447",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tbd
+Assignee: @jasongrout
 
 CC:  @jasongrout
 
-Apparently these new releases are much faster (like an order of magnitude for some operations).
+Upgrading the jQuery and jQuery UI spkgs in Sage will make available several performance improvements and new features for the notebook.  Release notes: [jQuery 1.3 ](http://docs.jquery.com/Release:jQuery_1.3), [jQuery UI 1.7](http://jqueryui.com/docs/Changelog/1.7).
 
-http://docs.jquery.com/Release:jQuery_1.3
+To test the new spkgs, please download and install (e.g., via `sage -f`)
+
+* http://sage.math.washington.edu/home/mpatel/trac/5447/jquery-1.3.2.p2.spkg
+* http://sage.math.washington.edu/home/jason/jqueryui-1.7.2.p3.spkg
+
+**and** apply the rebased [attachment:trac_5447-jquery_upgrade_v3.patch v3 patch] below to 4.1.2.alpha1's sage repository.
+
+Note: When "downgrading" to the previous versions, it may help to delete `local/notebook/javascript/jquery*` manually, since their `spkg-install`s do not erase existing installations.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5447
 

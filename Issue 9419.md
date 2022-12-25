@@ -3,7 +3,8 @@
 archive/issues_009419.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime @jdemeyer @pipedream\n\nAs discussed here\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/c566520374106df3\n\n[GNU patch](http://savannah.gnu.org/projects/patch/) will be added to Sage. This is ticket #9418. \n\nIn order to make use of the command, the developers guide will need to be updated to reflect a new way of making patch commands. We should sort out the details as precisely as possible, so everyone uses the exact same method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9419\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime @jdemeyer @pipedream\n\nKeywords: patch doc howto spkgs diff\n\nAs discussed here\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/c566520374106df3\n\n[GNU patch](http://savannah.gnu.org/projects/patch/) will be added to Sage. This is ticket #9418. \n\nIn order to make use of the command, the developers guide will need to be updated to reflect a new way of making patch commands. We should sort out the details as precisely as possible, so everyone uses the exact same method. \n\n---\n\nApply\n\n- [attachment:trac_9419-use-patch.patch] and [attachment:trac_9419-part2.patch] to the main Sage repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9419\n\n",
+    "closed_at": "2011-12-24T01:03:25Z",
     "created_at": "2010-07-03T08:36:32Z",
     "labels": [
         "component: documentation"
@@ -19,13 +20,21 @@ Assignee: mvngu
 
 CC:  @nexttime @jdemeyer @pipedream
 
+Keywords: patch doc howto spkgs diff
+
 As discussed here
 
 http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c566520374106df3
 
 [GNU patch](http://savannah.gnu.org/projects/patch/) will be added to Sage. This is ticket #9418. 
 
-In order to make use of the command, the developers guide will need to be updated to reflect a new way of making patch commands. We should sort out the details as precisely as possible, so everyone uses the exact same method.
+In order to make use of the command, the developers guide will need to be updated to reflect a new way of making patch commands. We should sort out the details as precisely as possible, so everyone uses the exact same method. 
+
+---
+
+Apply
+
+- [attachment:trac_9419-use-patch.patch] and [attachment:trac_9419-part2.patch] to the main Sage repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9419
 

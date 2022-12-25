@@ -3,7 +3,8 @@
 archive/issues_009918.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nKeywords: decorators\n\nThe `@`wraps decorator from the Python standard library does not work for non-function callables (e.g. methods) in Python versions older than 3.2. It was fixed as Python bug issue 3445. Until Sage upgrades to such a new version of Python, we should have a small work-around.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9919\n\n",
+    "body": "Assignee: @jasongrout\n\nKeywords: decorators\n\nThe `@`update_wrapper decorator from the Python standard library does not work for non-function callables (e.g. methods) in Python versions older than 3.2. It was fixed as Python bug issue 3445. Until Sage upgrades to such a new version of Python, we can put a work-around in sage.misc.misc.sage_wraps which patches this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9919\n\n",
+    "closed_at": "2010-11-11T19:37:29Z",
     "created_at": "2010-09-16T14:07:12Z",
     "labels": [
         "component: misc",
@@ -21,7 +22,7 @@ Assignee: @jasongrout
 
 Keywords: decorators
 
-The `@`wraps decorator from the Python standard library does not work for non-function callables (e.g. methods) in Python versions older than 3.2. It was fixed as Python bug issue 3445. Until Sage upgrades to such a new version of Python, we should have a small work-around.
+The `@`update_wrapper decorator from the Python standard library does not work for non-function callables (e.g. methods) in Python versions older than 3.2. It was fixed as Python bug issue 3445. Until Sage upgrades to such a new version of Python, we can put a work-around in sage.misc.misc.sage_wraps which patches this bug.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9919
 

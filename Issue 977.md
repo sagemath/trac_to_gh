@@ -1,16 +1,17 @@
-# Issue 977: Schubert polynomials send 1 -> wrong polynomial ring
+# Issue 977: [with patch] Schubert polynomials send 1 -> wrong polynomial ring
 
 archive/issues_000977.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIt seems that this is only happening with the identity element. Here's an example:\n\n```\nsage: R = SchubertPolynomialRing(ZZ)\nsage: f = R([1])\nsage: type(f.expand())\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: f = R([1,2])\nsage: type(f.expand())\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\n\n# But all of the polynomials returned should be multi-polynomials\n\nsage: f = R([1,3,2,4])\nsage: type(f.expand())\n<class 'sage.rings.polynomial.multi_polynomial_element.MPolynomial_polydict'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/977\n\n",
+    "closed_at": "2007-10-24T21:48:49Z",
     "created_at": "2007-10-23T21:06:30Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Schubert polynomials send 1 -> wrong polynomial ring",
+    "title": "[with patch] Schubert polynomials send 1 -> wrong polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/977",
     "user": "https://github.com/rlmill"

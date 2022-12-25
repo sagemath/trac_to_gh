@@ -4,9 +4,10 @@ archive/issues_006707.json:
 ```json
 {
     "body": "Assignee: tbd\n\nratpoints needs at least gcc 4.0.1, but the configure script will permit any gcc version of >= 3.0.0 from being used. \n\nSee also trac #6701\n\nIssue created by migration from https://trac.sagemath.org/ticket/6707\n\n",
+    "closed_at": "2009-10-07T15:42:59Z",
     "created_at": "2009-08-09T10:02:38Z",
     "labels": [
-        "component: algebra",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",

@@ -1,17 +1,17 @@
-# Issue 8668: 5.0 press release
+# Issue 8668: Sage 6.0 press release
 
 archive/issues_008668.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  wstein\n\nwrite a formal press release for sage 5.0. \n\npart of [my effords in sage-marketing](http://groups.google.com/group/sage-marketing/browse_thread/thread/67b9302da0f1b941) to promote sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8668\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  wstein\n\nwrite a formal press release for sage 6.0.\n\npart of  our efforts in sage-marketing to promote sage.\n\nrules:\n\n1. write as if you are writing a news story. journalists are overworked and want something that is copy/paste ready.\n\n2. layout: short and useful header, short introduction (less than 80 words? ... i.e. 1-2 sentences summarizing what's going on). then start with the most important and most catchy part, first line starts with a location and a date. after that, expand into more details, later on a general overview of the project, contact info, related material (press kit website)\n\n3. the last line must be \"# # #\". those three signs signal the end, that's a standard.\n\nAlso translations, e.g. German, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8668\n\n",
+    "closed_at": "2012-08-01T12:25:32Z",
     "created_at": "2010-04-10T18:01:31Z",
     "labels": [
         "component: misc",
-        "blocker",
-        "bug"
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "5.0 press release",
+    "title": "Sage 6.0 press release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8668",
     "user": "https://github.com/haraldschilly"
@@ -21,9 +21,19 @@ Assignee: @jasongrout
 
 CC:  wstein
 
-write a formal press release for sage 5.0. 
+write a formal press release for sage 6.0.
 
-part of [my effords in sage-marketing](http://groups.google.com/group/sage-marketing/browse_thread/thread/67b9302da0f1b941) to promote sage.
+part of  our efforts in sage-marketing to promote sage.
+
+rules:
+
+1. write as if you are writing a news story. journalists are overworked and want something that is copy/paste ready.
+
+2. layout: short and useful header, short introduction (less than 80 words? ... i.e. 1-2 sentences summarizing what's going on). then start with the most important and most catchy part, first line starts with a location and a date. after that, expand into more details, later on a general overview of the project, contact info, related material (press kit website)
+
+3. the last line must be "# # #". those three signs signal the end, that's a standard.
+
+Also translations, e.g. German, ...
 
 Issue created by migration from https://trac.sagemath.org/ticket/8668
 

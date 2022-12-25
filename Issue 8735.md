@@ -3,7 +3,8 @@
 archive/issues_008735.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: posets cardinality\n\nThe cardinality of a set was standardized as cardinality. Posets where forgotten when standardization occured.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8735\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: posets cardinality\n\nThe cardinality of a set was standardized as cardinality. Posets where forgotten when standardization ocured. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8735\n\n",
+    "closed_at": "2010-04-29T05:21:49Z",
     "created_at": "2010-04-21T08:13:02Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +23,7 @@ CC:  sage-combinat
 
 Keywords: posets cardinality
 
-The cardinality of a set was standardized as cardinality. Posets where forgotten when standardization occured.
+The cardinality of a set was standardized as cardinality. Posets where forgotten when standardization ocured. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8735
 

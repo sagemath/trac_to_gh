@@ -1,16 +1,17 @@
-# Issue 5010: [with patch, needs review] Solaris 10: rings/real_double.pyx doctests failure: nan vs. NaN
+# Issue 5010: [with patch, with positive review] Solaris 10: rings/real_double.pyx doctests failure: nan vs. NaN
 
 archive/issues_005010.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe are seeing the following doctest failure:\n\n```\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/real_double.pyx\", line 1311:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/real_double.pyx\", line 1313:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n```\nThis is because we are using the C library instead of RDF to create inf and nan.\n\nNote that this is a different issue than #672.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5010\n\n",
+    "closed_at": "2009-01-18T13:57:34Z",
     "created_at": "2009-01-18T06:39:47Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Solaris 10: rings/real_double.pyx doctests failure: nan vs. NaN",
+    "title": "[with patch, with positive review] Solaris 10: rings/real_double.pyx doctests failure: nan vs. NaN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5010",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,16 @@
-# Issue 7922: Pickling fails in WeightRing
+# Issue 7922: Categories for Weyl character rings and weight rings (was: pickling fails in WeightRing)
 
 archive/issues_007922.json:
 ```json
 {
-    "body": "Assignee: @dwbump\n\nCC:  @dwbump sage-combinat\n\nFirst issue caught by #7921:\n\n```\nsage: A2 = WeylCharacterRing(['A',2])\nsage: a2 = WeightRing(A2)\nsage: TestSuite(a2).run()\nFailure in _test_element_pickling:\nTraceback (most recent call last):\n...\nAssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)\n```\n\nIndeed:\n\n```\nsage: x = a2.an_element()\nsage: x == loads(dumps(x))\nFalse\n```\n\nI assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules\nand categories.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7922\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  @dwbump sage-combinat\n\nThis ticket refactors the code of WeylCharacterRing and WeightRing to use categories and (combinatorial) free modules. Along the way, it adds a couple features (Dan: please list them here), and solves a pickling issue which was caught by #7921:\n\n```\nsage: A2 = WeylCharacterRing(['A',2])\nsage: a2 = WeightRing(A2)\nsage: TestSuite(a2).run()\nFailure in _test_element_pickling:\nTraceback (most recent call last):\n...\nAssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)\n```\n\nIndeed:\n\n```\nsage: x = a2.an_element()\nsage: x == loads(dumps(x))\nFalse\n```\n\n\n**Apply** [attachment:trac_7922-rebased-4.7.alpha3.patch]\n\n**Remove** the following pickles from the pickle jar:\n\n```\n_class__sage_combinat_root_system_weyl_characters_WeightRing__.*\n_class__sage_combinat_root_system_weyl_characters_WeylCharacterRing_class__.*\n_class__sage_combinat_root_system_weyl_characters_WeylCharacter__.*\n```\n\n**Copy** the contents of \n[attachment:trac_7922-new_pickles.tar.gz] into `data/ext_code/pickle_jar`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7922\n\n",
+    "closed_at": "2013-06-03T12:54:14Z",
     "created_at": "2010-01-13T16:14:55Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "Pickling fails in WeightRing",
+    "title": "Categories for Weyl character rings and weight rings (was: pickling fails in WeightRing)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7922",
     "user": "https://github.com/nthiery"
@@ -20,7 +20,7 @@ Assignee: @dwbump
 
 CC:  @dwbump sage-combinat
 
-First issue caught by #7921:
+This ticket refactors the code of WeylCharacterRing and WeightRing to use categories and (combinatorial) free modules. Along the way, it adds a couple features (Dan: please list them here), and solves a pickling issue which was caught by #7921:
 
 ```
 sage: A2 = WeylCharacterRing(['A',2])
@@ -40,8 +40,20 @@ sage: x == loads(dumps(x))
 False
 ```
 
-I assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules
-and categories.
+
+**Apply** [attachment:trac_7922-rebased-4.7.alpha3.patch]
+
+**Remove** the following pickles from the pickle jar:
+
+```
+_class__sage_combinat_root_system_weyl_characters_WeightRing__.*
+_class__sage_combinat_root_system_weyl_characters_WeylCharacterRing_class__.*
+_class__sage_combinat_root_system_weyl_characters_WeylCharacter__.*
+```
+
+**Copy** the contents of 
+[attachment:trac_7922-new_pickles.tar.gz] into `data/ext_code/pickle_jar`.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7922
 

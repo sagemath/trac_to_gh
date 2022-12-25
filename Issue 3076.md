@@ -4,6 +4,7 @@ archive/issues_003076.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThe spkg-debian script in the extcode spkg is not marked executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3076\n\n",
+    "closed_at": "2008-05-02T09:50:13Z",
     "created_at": "2008-05-02T01:21:06Z",
     "labels": [
         "component: debian-package",

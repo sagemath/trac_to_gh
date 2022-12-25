@@ -1,9 +1,10 @@
-# Issue 5808: [with patch, needs review] fix most warnings when building the reference manual
+# Issue 5808: [with patch, positive review] fix most warnings when building the reference manual
 
 archive/issues_005808.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nAlong with #5541, this patch fixes most of the warnings when building the reference manual in 3.4.1.rc3.  I still get these:\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.1.rc3/devel/sage-test/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\ndone\npreparing documents... WARNING: html_favicon is not an .ico file\n```\nbut that's it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5808\n\n",
+    "closed_at": "2009-04-18T01:29:52Z",
     "created_at": "2009-04-17T06:04:42Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005808.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] fix most warnings when building the reference manual",
+    "title": "[with patch, positive review] fix most warnings when building the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5808",
     "user": "https://github.com/jhpalmieri"

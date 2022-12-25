@@ -4,6 +4,7 @@ archive/issues_008574.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n```\n\n\n---------- Forwarded message ----------  \nFrom: Timo Jolivet\nDate: 2010/3/20\nSubject: bug WordMorphism ?\n\n\nUn bug bizarre :\n\nsage: s = WordMorphism('0->0,1->%s'%('1'*100))\nsage: s(\nKeyboardInterrupt\nsage: s = WordMorphism('0->000,1->%s'%('1'*100))\nsage: s('0')\nword: 000\nsage: s('1')\nword: 1111111111111111111111111111111111111111...\nsage: len(s('0'))\n3\nsage: len(s('1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n/slabbe_hacked_macbook/<ipython console> in <module>()\nTypeError: an integer is required\n\n\n\nC'est d'autant plus bizarre que le code suivant marche :\n\nsage: len(Word('1'*100))\n100\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8574\n\n",
+    "closed_at": "2010-04-19T05:15:15Z",
     "created_at": "2010-03-22T09:21:10Z",
     "labels": [
         "component: combinatorics",

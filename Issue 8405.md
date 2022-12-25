@@ -3,7 +3,8 @@
 archive/issues_008405.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThis patch implements LP formulations of Linear Arboricity and Acyclic edge coloring\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8405\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch implements LP formulations of Linear Arboricity and Acyclic edge coloring\n\nNathann\n\nThis has spam content and the spammer (mike3050) closed the ticket. Rather than reopen the ticket and result in confusion, I have moved the ticket content to #8748. To see the spam content, view the diff of the ticket description.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8405\n\n",
+    "closed_at": "2010-04-22T22:16:43Z",
     "created_at": "2010-02-28T23:46:35Z",
     "labels": [
         "component: graph theory"
@@ -20,6 +21,8 @@ Assignee: @rlmill
 This patch implements LP formulations of Linear Arboricity and Acyclic edge coloring
 
 Nathann
+
+This has spam content and the spammer (mike3050) closed the ticket. Rather than reopen the ticket and result in confusion, I have moved the ticket content to #8748. To see the spam content, view the diff of the ticket description.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8405
 

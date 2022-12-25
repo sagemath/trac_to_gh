@@ -1,16 +1,17 @@
-# Issue 5212: [with patch, needs review] bug with numbers in names in sage.structure.parent_gens.normalize_names
+# Issue 5212: [with patch, positive review] bug with numbers in names in sage.structure.parent_gens.normalize_names
 
 archive/issues_005212.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: numbers in names normalize_names\n\nTry `PolynomialRing(QQ, 2, 'alpha0')` for hilarity.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5212\n\n",
+    "closed_at": "2009-02-11T06:05:03Z",
     "created_at": "2009-02-09T04:20:51Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] bug with numbers in names in sage.structure.parent_gens.normalize_names",
+    "title": "[with patch, positive review] bug with numbers in names in sage.structure.parent_gens.normalize_names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5212",
     "user": "https://github.com/ncalexan"

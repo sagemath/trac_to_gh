@@ -1,16 +1,17 @@
-# Issue 1258: additions and changes to linear_codes
+# Issue 1258: [with bundle, with positive review] additions and changes to linear_codes
 
 archive/issues_001258.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/linear_codes20071124.hg\ncontains a new functions zeta_polynomial, weight_enumerator, \nchinen_polynomial, is_equivalent (for binary codes); an improved \nbest_known_code; many pythonic revisions (suggested by William Stein \nlong ago). Also, there are some minor docstring improvements. \nNone of these are major improvements but I have a student working\non Duursma zeta functions of self-dual codes and these will be useful \nfor her.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1258\n\n",
+    "closed_at": "2007-12-16T00:31:18Z",
     "created_at": "2007-11-25T04:06:48Z",
     "labels": [
         "component: coding theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "additions and changes to linear_codes",
+    "title": "[with bundle, with positive review] additions and changes to linear_codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1258",
     "user": "https://github.com/wdjoyner"

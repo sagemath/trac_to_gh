@@ -3,7 +3,8 @@
 archive/issues_008359.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Coxeter groups, permutation groups, chevie\n\nPatch in dev on the sage-combinat server\n\nIssue created by migration from https://trac.sagemath.org/ticket/8359\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Coxeter groups, permutation groups, chevie\n\nThis patch adds a function:\n\n```\n    CoxeterGroup(cartan_type, implementation = \"matrix\" / \"permutation\")\n``` \nto construct Coxeter groups. Whenever possible, the Coxeter group is constructed as a permutation group, using data from GAP3/Chevie; otherwise a Weyl group is returned, as a matrix group. An upcoming implementation is by reduced words, using the Coxeter 3 package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8359\n\n",
+    "closed_at": "2013-02-05T08:22:16Z",
     "created_at": "2010-02-25T08:48:26Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +22,12 @@ CC:  sage-combinat
 
 Keywords: Coxeter groups, permutation groups, chevie
 
-Patch in dev on the sage-combinat server
+This patch adds a function:
+
+```
+    CoxeterGroup(cartan_type, implementation = "matrix" / "permutation")
+``` 
+to construct Coxeter groups. Whenever possible, the Coxeter group is constructed as a permutation group, using data from GAP3/Chevie; otherwise a Weyl group is returned, as a matrix group. An upcoming implementation is by reduced words, using the Coxeter 3 package.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8359
 

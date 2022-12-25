@@ -1,21 +1,22 @@
-# Issue 4432: [with patch, needs review] symbolic gamma and factorial
+# Issue 4432: [with patch, positive review] symbolic gamma and factorial
 
 archive/issues_004432.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis patches adds symbolic gamma and factorial functions.\n\nThe symbolic factorial is named fact for now, so it does not clash with sage.rings.arith.factorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/4432\n\n",
+    "body": "Assignee: whuss\n\nThis patches adds symbolic gamma and factorial functions.\n\nThe symbolic factorial is named fact for now, so it does not clash with sage.rings.arith.factorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/4432\n\n",
+    "closed_at": "2008-11-28T08:36:00Z",
     "created_at": "2008-11-03T19:55:10Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] symbolic gamma and factorial",
+    "title": "[with patch, positive review] symbolic gamma and factorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4432",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
-Assignee: @burcin
+Assignee: whuss
 
 This patches adds symbolic gamma and factorial functions.
 

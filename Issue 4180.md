@@ -1,22 +1,23 @@
-# Issue 4180: magic pexpect logging switch
+# Issue 4180: [with patch, positive review] magic pexpect logging switch
 
 archive/issues_004180.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nYeah, I think it would greatly help if users could send an env\nvariable that dumps the pexpect communication to a file. Currently I\nhave to debug some Singular vs. pexpect problems on Solaris, but I\nguess with mhansen's help I will finally learn how to fix those\nissues. But for random users out there a magic switch that gives us\nlogs and helps us hunt down \"random\" problems would be a great thing\nIMHO.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4180\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nYeah, I think it would greatly help if users could send an env\nvariable that dumps the pexpect communication to a file. Currently I\nhave to debug some Singular vs. pexpect problems on Solaris, but I\nguess with mhansen's help I will finally learn how to fix those\nissues. But for random users out there a magic switch that gives us\nlogs and helps us hunt down \"random\" problems would be a great thing\nIMHO.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4180\n\n",
+    "closed_at": "2008-09-24T04:24:27Z",
     "created_at": "2008-09-23T22:16:39Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "magic pexpect logging switch",
+    "title": "[with patch, positive review] magic pexpect logging switch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4180",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 Yeah, I think it would greatly help if users could send an env

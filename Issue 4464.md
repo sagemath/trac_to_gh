@@ -4,6 +4,7 @@ archive/issues_004464.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: test, long\n\nJaap,\n\ncan you please open a ticket for that one. I suspect that we don't\nhave anything tested via long or that the tests aren't properly marked\n\"#long time\". This one has popped up so often that we really ought to\nfix it once and for all since you hit it every time.\n\n[...]\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4464\n\n",
+    "closed_at": "2009-04-18T22:40:25Z",
     "created_at": "2008-11-07T17:58:33Z",
     "labels": [
         "component: doctest coverage",

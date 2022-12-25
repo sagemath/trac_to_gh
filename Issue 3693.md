@@ -1,25 +1,33 @@
-# Issue 3693: upgrade moinmoin to 1.7.1
+# Issue 3693: Upgrade Moin Moin to 1.9.1
 
 archive/issues_003693.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @williamstein @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3693\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @mwhansen\n\nThe latest version of [MoinMoin](http://moinmo.in/) is 1.9.1.  The current version in Sage is 1.5.7.\n\n* Install http://boxen.math.washington.edu/home/mpatel/trac/3693/moin-1.9.1.p1.spkg\n\n* Apply [attachment:trac_3683-upgrade_moinmoin.patch] to the sage repo.\n\nNote: Close #1870 if/when this merges.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3693\n\n",
+    "closed_at": "2010-02-11T14:24:20Z",
     "created_at": "2008-07-21T07:27:31Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "upgrade moinmoin to 1.7.1",
+    "title": "Upgrade Moin Moin to 1.9.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3693",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 CC:  @williamstein @mwhansen
 
+The latest version of [MoinMoin](http://moinmo.in/) is 1.9.1.  The current version in Sage is 1.5.7.
 
+* Install http://boxen.math.washington.edu/home/mpatel/trac/3693/moin-1.9.1.p1.spkg
+
+* Apply [attachment:trac_3683-upgrade_moinmoin.patch] to the sage repo.
+
+Note: Close #1870 if/when this merges.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3693
 

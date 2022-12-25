@@ -1,16 +1,17 @@
-# Issue 2483: [with updated spkg] Currently R help does not work
+# Issue 2483: [with spkg; with postivie review] Currently R help does not work
 
 archive/issues_002483.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nKeywords: R\n\nI was looking into the R pexpect interface and noticed that the R help system is totally broken for us. \n\nHowever, adding \n\nmake vignettes \n\nto the R spkg-install fixed this. According to the R website this is for some reason necessary for \nbuilds based on the subversion source. \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/r-2.6.1.p15.spkg\n\nWith the old package in R, ?mean returned garbage. Now it returns the documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2483\n\n",
+    "closed_at": "2008-03-14T14:52:52Z",
     "created_at": "2008-03-12T08:05:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with updated spkg] Currently R help does not work",
+    "title": "[with spkg; with postivie review] Currently R help does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2483",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

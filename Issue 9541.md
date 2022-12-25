@@ -3,7 +3,7 @@
 archive/issues_009541.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9541\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  cwitty\n\nThis should be broken into smaller tickets.  See:\n\n* #9400 -- discriminant bound\n* #9752 -- sorting\n\nIssue created by migration from https://trac.sagemath.org/ticket/9541\n\n",
     "created_at": "2010-07-18T19:16:41Z",
     "labels": [
         "component: number fields"
@@ -19,7 +19,10 @@ Assignee: @loefflerd
 
 CC:  cwitty
 
+This should be broken into smaller tickets.  See:
 
+* #9400 -- discriminant bound
+* #9752 -- sorting
 
 Issue created by migration from https://trac.sagemath.org/ticket/9541
 

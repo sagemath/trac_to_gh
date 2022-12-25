@@ -4,9 +4,11 @@ archive/issues_003777.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis input to the notebook results in pain:\n\n```\nhtml('<script>alert(\"</script>\");</script>')\n```\n\nThis should only be looked at after #3735 is applied.  Then look at this code in \ncell.py\n\n```\n        if ncols == 0:\n            while True:\n                i = t.lower().find('<script>')\n                if i == -1: break\n                j = t[i:].lower().find('</script>')\n                if j == -1: break\n                t = t[:i] + t[i+j+len('</script>'):]\n                \n```\nand also `function eval_script_tags(text)` in js.py.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3777\n\n",
+    "closed_at": "2010-01-19T06:57:02Z",
     "created_at": "2008-08-05T21:30:45Z",
     "labels": [
         "component: notebook",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",

@@ -4,6 +4,7 @@ archive/issues_005717.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPrinting of subdivisions of matrices mod 2 is broken.  Also, lifting of matrices should preserve subdivision but doesn't, but that's a separate ticket (#5716)\n\n```\nsage: a = random_matrix(GF(2),4)\nsage: a.subdivide(2,2)\nsage: a\n[1 0 1 0]\n[1 0 1 0]\n[1 1 1 1]\n[1 1 0 1]\nsage: b = a.lift()\nsage: b.subdivide(2,2)\nsage: b\n[1 0|1 0]\n[1 0|1 0]\n[---+---]\n[1 1|1 1]\n[1 1|0 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5717\n\n",
+    "closed_at": "2009-04-08T19:20:04Z",
     "created_at": "2009-04-08T19:19:01Z",
     "labels": [
         "component: linear algebra",

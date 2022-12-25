@@ -1,16 +1,17 @@
-# Issue 4722: BUG - number field K.hilbert_class_polynomial() is a *lie*
+# Issue 4722: [with patch; positive review] BUG - number field K.hilbert_class_polynomial() is a *lie*
 
 archive/issues_004722.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI'm in a talk right now, and the speaker (Marco from Holland) just pointed out that\nSage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.\nIt returns a poly that defines that Hilbert class field, but it is *not* the Hilbert Class Polynomial.\n\nObserve:\n\n```\nsage: K.<a> =QuadraticField(-97)\nsage: K.hilbert_class_polynomial()\nx^4 + 9*x^2 - 6*x + 1\nsage: magma(K.discriminant()).HilbertClassPolynomial()\n$.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000\n```\n\nSolution: change the name of this function and add documentation clarifying this, say including the above example.\n\nThe difference is *very* important, given the use of the Hilbert class polynomial in computing elliptic curves with a given number of rational points. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4722\n\n",
+    "closed_at": "2008-12-11T11:10:07Z",
     "created_at": "2008-12-05T23:04:07Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "BUG - number field K.hilbert_class_polynomial() is a *lie*",
+    "title": "[with patch; positive review] BUG - number field K.hilbert_class_polynomial() is a *lie*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4722",
     "user": "https://github.com/williamstein"

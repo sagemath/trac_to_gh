@@ -7,6 +7,7 @@ archive/issues_008596.json:
     "created_at": "2010-03-24T14:58:26Z",
     "labels": [
         "component: algebra",
+        "minor",
         "bug"
     ],
     "title": "Add more doctests for addition tables of additive magmas",

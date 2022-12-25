@@ -1,15 +1,16 @@
-# Issue 3726: stats/finance -- add support for hidden markov models to sage
+# Issue 3726: [with patch, positive review] stats/finance -- add support for hidden markov models to sage
 
 archive/issues_003726.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe spkg:\n\n  http://sage.math.washington.edu/home/was/patches/ghmm-20080725.spkg\n\nbuilds ghmm and doesn't depend on anything not in sage (I hope).  It does not\nbuild the official GHMM bindings.  I am replacing those bindings with cleaner\nCython bindings that have better documentation, but initially expose less\nfunctionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3726\n\n",
+    "body": "Assignee: @williamstein\n\nThe spkg:\n\n  http://sage.math.washington.edu/home/was/patches/ghmm-20080803.spkg\n\nbuilds ghmm and doesn't depend on anything not in sage (I hope).  It does *not* build the official GHMM bindings.  This ticket replaces those bindings with clean new Cython bindings that have much much better documentation, but initially expose much less functionality. \n\nNOTE: This shouldn't actually get added to Sage until it gets formally voted on in sage-devel.\n\nSEE ALSO: #3773\n\nIssue created by migration from https://trac.sagemath.org/ticket/3726\n\n",
+    "closed_at": "2008-08-19T00:12:37Z",
     "created_at": "2008-07-25T16:21:26Z",
     "labels": [
         "component: finance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "stats/finance -- add support for hidden markov models to sage",
+    "title": "[with patch, positive review] stats/finance -- add support for hidden markov models to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3726",
     "user": "https://github.com/williamstein"
@@ -19,12 +20,13 @@ Assignee: @williamstein
 
 The spkg:
 
-  http://sage.math.washington.edu/home/was/patches/ghmm-20080725.spkg
+  http://sage.math.washington.edu/home/was/patches/ghmm-20080803.spkg
 
-builds ghmm and doesn't depend on anything not in sage (I hope).  It does not
-build the official GHMM bindings.  I am replacing those bindings with cleaner
-Cython bindings that have better documentation, but initially expose less
-functionality.
+builds ghmm and doesn't depend on anything not in sage (I hope).  It does *not* build the official GHMM bindings.  This ticket replaces those bindings with clean new Cython bindings that have much much better documentation, but initially expose much less functionality. 
+
+NOTE: This shouldn't actually get added to Sage until it gets formally voted on in sage-devel.
+
+SEE ALSO: #3773
 
 Issue created by migration from https://trac.sagemath.org/ticket/3726
 

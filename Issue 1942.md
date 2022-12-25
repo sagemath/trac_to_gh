@@ -1,9 +1,10 @@
-# Issue 1942: Sage 2.10.1.rc0: sage0.cputime()  broken on 32 bit FC7/8
+# Issue 1942: Sage 2.10.1.rc0: sage0.cputime()  broken on 32 bit FC7
 
 archive/issues_001942.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJaap reports the following on 32 bit FC7/8 with Sage 2.10.1.rc0:\n\n```\n[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py\nsage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************\nFile \"sage0.py\", line 143:\n     sage: _= sage0.cputime()     # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_2[0]>\", line 1, in <module>\n         _= sage0.cputime()     # random output###line 143:\n     sage: _= sage0.cputime()     # random output\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 150, in cputime\n         return eval(self.eval('cputime(%s)'%t))\n       File \"<string>\", line 1\n           1.3517939999999999\n          ^\n      SyntaxError: invalid syntax\n**********************************************************************\nFile \"sage0.py\", line 147:\n     sage: _= sage0.cputime()     # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n         _= sage0.cputime()     # random output###line 147:\n     sage: _= sage0.cputime()     # random output\n       File \"/home/jaap/downloads/sage-2.10.1.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 150, in cputime\n         return eval(self.eval('cputime(%s)'%t))\n       File \"<string>\", line 1\n           1.726736\n          ^\n      SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n    2 of   3 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_sage0.py\n          [6.9 s]\nexit code: 256 \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1942\n\n",
+    "closed_at": "2008-01-28T06:37:04Z",
     "created_at": "2008-01-26T23:10:50Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001942.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Sage 2.10.1.rc0: sage0.cputime()  broken on 32 bit FC7/8",
+    "title": "Sage 2.10.1.rc0: sage0.cputime()  broken on 32 bit FC7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1942",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

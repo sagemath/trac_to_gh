@@ -1,21 +1,22 @@
-# Issue 679: print statistics about the number of failed doctests and exact nature of failures
+# Issue 679: [with patch, positive review] print statistics about the number of failed doctests and exact nature of failures
 
 archive/issues_000679.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCurrently we print something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py\n        sage -t  functions/constants.py\n<SNIP>\n```\nIt would be nice if we get more precise failure reports, something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py: 1 out of 27 tests failed\n        sage -t  functions/constants.py: segfault\n        sage -t  server/notebook/twist.py: CTRL-C invoked\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/679\n\n",
+    "body": "Assignee: @garyfurnish\n\nCurrently we print something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py\n        sage -t  functions/constants.py\n<SNIP>\n```\nIt would be nice if we get more precise failure reports, something like:\n\n```\nfailures:\n\n        sage -t  calculus/calculus.py: 1 out of 27 tests failed\n        sage -t  functions/constants.py: segfault\n        sage -t  server/notebook/twist.py: CTRL-C invoked\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/679\n\n",
+    "closed_at": "2008-03-21T00:20:50Z",
     "created_at": "2007-09-17T05:46:44Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "print statistics about the number of failed doctests and exact nature of failures",
+    "title": "[with patch, positive review] print statistics about the number of failed doctests and exact nature of failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/679",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @mwhansen
+Assignee: @garyfurnish
 
 Currently we print something like:
 

@@ -3,7 +3,8 @@
 archive/issues_008641.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wjp\n\nRight now, if I run doctests with \"sage -t\" and some doctests fail, the exit code is zero -- but it would be very handy to have a nonzero exit code; for example, it would make using Mercurial's bisect command very useful.\n\nIn #7995, it seems like sage-doctest is passing back some useful exit codes, so we just need to pass those on in a reasonable way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8641\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @wjp\n\nRight now, if I run doctests with \"sage -t\" and some doctests fail, the exit code is zero -- but it would be very handy to have a nonzero exit code; for example, it would make using Mercurial's bisect command very useful.\n\nIn #7995, it seems like sage-doctest is passing back some useful exit codes, so we just need to pass those on in a reasonable way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8641\n\n",
+    "closed_at": "2010-07-22T07:39:35Z",
     "created_at": "2010-04-02T02:41:39Z",
     "labels": [
         "component: doctest coverage",
@@ -16,7 +17,7 @@ archive/issues_008641.json:
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
 
 CC:  @wjp
 

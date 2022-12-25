@@ -3,7 +3,8 @@
 archive/issues_008119.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout simonking\n\nFor many objects the hash value is computed from `__repr__`. This is a bad idea since renaming the object change its hash value.\n\n```\nsage: bla = PolynomialRing(ZZ,\"x\")\nsage: hash(bla)\n-1525918542791298668\nsage: bla.rename(\"toto\")\nsage: hash(bla)\n2314052222105390764\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8119\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout simonking\n\nFor many objects the hash value is computed from `__repr__`. This is a bad idea since renaming the object change its hash value.\n\n```\nsage: bla = PolynomialRing(ZZ,\"x\")\nsage: hash(bla)\n-1525918542791298668\nsage: bla.rename(\"toto\")\nsage: hash(bla)\n2314052222105390764\n```\n\n**Apply Only:**\n1. [attachment:8119-parent-hash-final.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8119\n\n",
+    "closed_at": "2012-04-30T09:51:35Z",
     "created_at": "2010-01-29T15:22:48Z",
     "labels": [
         "component: misc",
@@ -30,6 +31,10 @@ sage: bla.rename("toto")
 sage: hash(bla)
 2314052222105390764
 ```
+
+**Apply Only:**
+1. [attachment:8119-parent-hash-final.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8119
 

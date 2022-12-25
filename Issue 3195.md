@@ -1,16 +1,17 @@
-# Issue 3195: add 64 bit OSX build support for polybori
+# Issue 3195: [with spkg, positive review] add 64 bit OSX build support for polybori
 
 archive/issues_003195.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI got a patch and hence a new spkg, but there are certainly some issues left here.\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3195\n\n",
+    "closed_at": "2008-08-20T00:18:25Z",
     "created_at": "2008-05-13T15:36:40Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "add 64 bit OSX build support for polybori",
+    "title": "[with spkg, positive review] add 64 bit OSX build support for polybori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3195",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

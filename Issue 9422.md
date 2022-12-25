@@ -4,6 +4,7 @@ archive/issues_009422.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill mvngu\n\nAs it is implemented at the moment, the method is_forest creates a new graph for each connected component of the graph, then calls the is_tree method for each of them, which checks again that the connected components are....connected !\n\nWe can do it a bit faster :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9422\n\n",
+    "closed_at": "2010-10-21T08:31:16Z",
     "created_at": "2010-07-04T11:45:46Z",
     "labels": [
         "component: graph theory"

@@ -1,9 +1,10 @@
-# Issue 3887: [with patch, needs review] Bug in determinant
+# Issue 3887: [with patch, positive review] Bug in determinant
 
 archive/issues_003887.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @ClementPernet\n\nHere's a crazy bug:\n\n```\nsage: m = diagonal_matrix(ZZ, 68, [2]*66 + [1,1])\nsage: m.det()\n-73786800370889000442\nsage: m.det(proof=False)\n73786976294838206464\n```\n\nAmusingly, the `proof=False` one is correct. Fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3887\n\n",
+    "closed_at": "2008-12-18T00:24:58Z",
     "created_at": "2008-08-18T10:48:28Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_003887.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Bug in determinant",
+    "title": "[with patch, positive review] Bug in determinant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3887",
     "user": "https://github.com/craigcitro"

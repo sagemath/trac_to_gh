@@ -1,16 +1,17 @@
-# Issue 4395: Sage 3.1.4: magma related optional doctest failure in sage/rings/quotient_ring.py
+# Issue 4395: [with patch; positive review] Sage 3.1.4: magma related optional doctest failure in sage/rings/quotient_ring.py
 
 archive/issues_004395.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage -t -long -optional devel/sage/sage/rings/quotient_ring.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/quotient_ring.py\", line 647:\n    sage: Q._magma_() # optional requires Magma\nExpected:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y\n    ]\nGot:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    0,\n    0\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/.doctest_quotient_ring.py\n\t [5.4 s]\nexit code: 1024\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4395\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage -t -long -optional devel/sage/sage/rings/quotient_ring.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/quotient_ring.py\", line 647:\n    sage: Q._magma_() # optional requires Magma\nExpected:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y\n    ]\nGot:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    0,\n    0\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/.doctest_quotient_ring.py\n [5.4 s]\nexit code: 1024\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4395\n\n",
+    "closed_at": "2008-11-09T17:39:42Z",
     "created_at": "2008-10-30T16:56:35Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.1.4: magma related optional doctest failure in sage/rings/quotient_ring.py",
+    "title": "[with patch; positive review] Sage 3.1.4: magma related optional doctest failure in sage/rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4395",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -46,7 +47,7 @@ Got:
    1 of   5 in __main__.example_23
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/.doctest_quotient_ring.py
-	 [5.4 s]
+ [5.4 s]
 exit code: 1024
 ```
 

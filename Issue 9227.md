@@ -4,9 +4,10 @@ archive/issues_009227.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  asjarman@xtra.co.nz\n\na millimeter [mm] is 1/1000 of a meter and very often used by engineers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9227\n\n",
+    "closed_at": "2011-01-25T08:14:40Z",
     "created_at": "2010-06-12T12:55:42Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",

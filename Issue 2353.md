@@ -1,22 +1,23 @@
-# Issue 2353: MPolynomialRing should be deprecated
+# Issue 2353: [with patch, positive review] MPolynomialRing should be deprecated
 
 archive/issues_002353.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nIt seems that the constructors `PolynomialRing` and `MPolynomialRing` are actually the same function.\n\nsage.rings.polynomial.multi_polynomial_ring imports `PolynomialRing` as `MPolynomialRing`, and this gets imported into global scope.\n\nKeeping to the python mantra \"there is only one way to do it\", the alias `MPolynomialRing` should be removed.\n\nSee ticket:2000 about this issue as well, though I don't see creating multivariate polynomial rings with only 1 variable as a valid use case to keep `MPolynomialRing`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2353\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @malb\n\nIt seems that the constructors `PolynomialRing` and `MPolynomialRing` are actually the same function.\n\nsage.rings.polynomial.multi_polynomial_ring imports `PolynomialRing` as `MPolynomialRing`, and this gets imported into global scope.\n\nKeeping to the python mantra \"there is only one way to do it\", the alias `MPolynomialRing` should be removed.\n\nSee ticket:2000 about this issue as well, though I don't see creating multivariate polynomial rings with only 1 variable as a valid use case to keep `MPolynomialRing`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2353\n\n",
+    "closed_at": "2008-06-04T18:22:39Z",
     "created_at": "2008-02-29T10:02:59Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "MPolynomialRing should be deprecated",
+    "title": "[with patch, positive review] MPolynomialRing should be deprecated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2353",
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 CC:  @malb
 

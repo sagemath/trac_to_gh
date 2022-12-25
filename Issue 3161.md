@@ -1,9 +1,10 @@
-# Issue 3161: sdist: #3046 seems to have broken sage-banner
+# Issue 3161: [with patch, positive review] sdist: #3046 seems to have broken sage-banner
 
 archive/issues_003161.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRunning sdist on 3.0.2.alpha1 results in:\n\n```\nrunning install_egg_info\nWriting /scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage-3.0.2.alpha1-py2.5.egg-info\nls: devel/sage: No such file or directory\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/misc/banner.py\", line 56, in banner\n    print banner_text()\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/misc/banner.py\", line 48, in banner_text\n    s += \"\\n| %-66s |\\n\"%version()\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/misc/banner.py\", line 38, in version\n    branch = os.popen(\"ls -l devel/sage\").read().split()[-1][5:]\nIndexError: list index out of range\ncp: cannot stat `ipythonrc': No such file or directory\ncp: cannot stat `spkg/update': No such file or directory\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3161\n\n",
+    "closed_at": "2008-05-19T07:16:13Z",
     "created_at": "2008-05-11T23:41:28Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003161.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "sdist: #3046 seems to have broken sage-banner",
+    "title": "[with patch, positive review] sdist: #3046 seems to have broken sage-banner",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3161",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

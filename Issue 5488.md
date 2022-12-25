@@ -1,22 +1,25 @@
-# Issue 5488: optional polymake package fails to build on OS X
+# Issue 5488: optional polymake package fails to build on OS X, x86_64 Debian (possibly others)
 
 archive/issues_005488.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nUsing sage-3.4.rc0 on bsd.math (a standard OSX 10.5 intel-based mac), the optional polymake spkg totally fails to build:\n\n```\ng++   -I/Users/was/build/sage-3.4.rc0/local/lib  -I/Users/was/build/sage-3.4.rc0/local/lib  -o cdd_ch_float_client cdd_ch_float_client.o libpolytope.a ../../lib/libpoly.a  -lgmp \nld: duplicate symbol _dd_free_global_constants in libpolytope.a(cdd_interface.o) and libpolytope.a(cdd_float_interface.o)\n\ncollect2: ld returned 1 exit status\nmake[3]: *** [cdd_ch_float_client] Error 1\nmake[2]: *** [do_all] Error 2\nmake[1]: *** [all] Error 2\nmake: *** [all] Error 2\nFailed to configure.\n\nreal    2m40.027s\nuser    1m54.830s\nsys     0m13.814s\nsage: An error occurred while installing polymake-2.2.p5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/was/build/sage-3.4.rc0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5 and type 'make'.\nInstead type \"/Users/was/build/sage-3.4.rc0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nwas@bsd:~/build/sage-3.4.rc0$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5488\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: sd40.5\n\nUsing sage-3.4.rc0 on bsd.math (a standard OSX 10.5 intel-based mac), the optional polymake spkg totally fails to build:\n\n```\ng++   -I/Users/was/build/sage-3.4.rc0/local/lib  -I/Users/was/build/sage-3.4.rc0/local/lib  -o cdd_ch_float_client cdd_ch_float_client.o libpolytope.a ../../lib/libpoly.a  -lgmp \nld: duplicate symbol _dd_free_global_constants in libpolytope.a(cdd_interface.o) and libpolytope.a(cdd_float_interface.o)\n\ncollect2: ld returned 1 exit status\nmake[3]: *** [cdd_ch_float_client] Error 1\nmake[2]: *** [do_all] Error 2\nmake[1]: *** [all] Error 2\nmake: *** [all] Error 2\nFailed to configure.\n\nreal    2m40.027s\nuser    1m54.830s\nsys     0m13.814s\nsage: An error occurred while installing polymake-2.2.p5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/was/build/sage-3.4.rc0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5 and type 'make'.\nInstead type \"/Users/was/build/sage-3.4.rc0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nwas@bsd:~/build/sage-3.4.rc0$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5488\n\n",
+    "closed_at": "2014-11-28T18:38:31Z",
     "created_at": "2009-03-11T17:45:15Z",
     "labels": [
-        "component: packages",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "optional polymake package fails to build on OS X",
+    "title": "optional polymake package fails to build on OS X, x86_64 Debian (possibly others)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5488",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
+
+Keywords: sd40.5
 
 Using sage-3.4.rc0 on bsd.math (a standard OSX 10.5 intel-based mac), the optional polymake spkg totally fails to build:
 

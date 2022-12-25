@@ -4,6 +4,7 @@ archive/issues_009709.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: cryptography, lattices\n\nA bugfix/efficiency update for the new lattice basis generator. \n\nSpecifically, the explanations and generation of dual lattices has been improved.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9709\n\n",
+    "closed_at": "2010-09-15T11:13:21Z",
     "created_at": "2010-08-09T14:09:59Z",
     "labels": [
         "component: cryptography"

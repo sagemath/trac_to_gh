@@ -1,16 +1,17 @@
-# Issue 4912: convert sage.geometry.* docstrings to Sphinx
+# Issue 4912: [with patch, needs review] convert sage.geometry.* docstrings to Sphinx (open issues at #5375)
 
 archive/issues_004912.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4912\n\n",
+    "closed_at": "2009-02-24T18:52:49Z",
     "created_at": "2009-01-01T22:51:30Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.geometry.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.geometry.* docstrings to Sphinx (open issues at #5375)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4912",
     "user": "https://github.com/mwhansen"

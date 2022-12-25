@@ -4,6 +4,7 @@ archive/issues_009819.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @dimpase @mkoeppe\n\nIn w3m, I can't log in to the Sage notebook because I can't click the \"Sign in\" button.  Is it a real form button?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9820\n\n",
+    "closed_at": "2020-05-03T11:19:17Z",
     "created_at": "2010-08-27T11:44:35Z",
     "labels": [
         "component: notebook",

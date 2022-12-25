@@ -1,22 +1,23 @@
-# Issue 5320: update Sphinx to 0.5.1
+# Issue 5320: [with spkg, positive review] update Sphinx to 0.5.1, setuptools to 0.6c9
 
 archive/issues_005320.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe spkg can be found at http://sage.math.washington.edu/home/mhansen/sphinx-0.5.1.spkg\n\nThis requires an update to setuptools 0.6c9 as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5320\n\n",
+    "body": "Assignee: @mwhansen\n\nThe spkg can be found at http://sage.math.washington.edu/home/mhansen/sphinx-0.5.1.spkg\n\nThis requires an update to setuptools 0.6c9 as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5320\n\n",
+    "closed_at": "2009-02-20T12:07:55Z",
     "created_at": "2009-02-20T11:20:32Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "update Sphinx to 0.5.1",
+    "title": "[with spkg, positive review] update Sphinx to 0.5.1, setuptools to 0.6c9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5320",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 The spkg can be found at http://sage.math.washington.edu/home/mhansen/sphinx-0.5.1.spkg
 

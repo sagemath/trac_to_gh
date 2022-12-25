@@ -3,7 +3,8 @@
 archive/issues_007574.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThere are a few issues with the MIP code:\n- ``max`` and ``min`` are built-in core functions in Python and shouldn't be used as variable names\n- ``id`` shouldn't be used as a variable name\n- I don't think we should have ``try: foo except: bar`` blocks without a specific ``except ThisandThatError``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7574\n\n",
+    "body": "Assignee: jkantor\n\nKeywords: lp\n\nThere are a few issues with the MIP code:\n* ``max`` and ``min`` are built-in core functions in Python and shouldn't be used as variable names\n* ``id`` shouldn't be used as a variable name\n* I don't think we should have ``try: foo except: bar`` blocks without a specific ``except ThisandThatError``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7574\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2009-12-01T17:33:00Z",
     "labels": [
         "component: numerical"
@@ -17,10 +18,12 @@ archive/issues_007574.json:
 ```
 Assignee: jkantor
 
+Keywords: lp
+
 There are a few issues with the MIP code:
-- ``max`` and ``min`` are built-in core functions in Python and shouldn't be used as variable names
-- ``id`` shouldn't be used as a variable name
-- I don't think we should have ``try: foo except: bar`` blocks without a specific ``except ThisandThatError``.
+* ``max`` and ``min`` are built-in core functions in Python and shouldn't be used as variable names
+* ``id`` shouldn't be used as a variable name
+* I don't think we should have ``try: foo except: bar`` blocks without a specific ``except ThisandThatError``.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7574
 

@@ -1,15 +1,16 @@
-# Issue 793: wrapper for hyperelliptic curve zeta functions
+# Issue 793: [with new patch, positive review] wrapper for hyperelliptic curve zeta functions
 
 archive/issues_000793.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nEven though we have functionality for computing zeta functions of hyperelliptic curves, the `HyperellipticCurve` curve object itself doesn't yet have a method like `zeta_function`. This shouldn't be hard to do (over prime fields at least), using code in `sage/schemes/hyperelliptic_curves/frobenius.pyx` and `sage/schemes/elliptic_curves/monsky_washnitzer.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/793\n\n",
+    "closed_at": "2009-04-01T23:54:00Z",
     "created_at": "2007-10-02T19:32:58Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "wrapper for hyperelliptic curve zeta functions",
+    "title": "[with new patch, positive review] wrapper for hyperelliptic curve zeta functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/793",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

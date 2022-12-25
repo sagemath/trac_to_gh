@@ -3,7 +3,8 @@
 archive/issues_008263.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime\n\nFew if any environment variables are documented fully. #8262 is supposed to do this for MAKE_CHECK, but I'm aware of some others which need documenting. \n \n* SAGE_PORT (Allows one to build on any rare (unsupported) platform, like AIX, FreeBSD, HP-UX, Solaris on x86 hardware etc. \n* SAGE_USE_OLD_GCC (Allows use of gcc 3.4.x) \n* CFLAG64 (Flag to build 64-bit binary, defaults to -m64) \n* SAGE_ATLAS_LIB (I've not much idea, but found it when looking)\n* INCLUDE_MPFR_PATCH - (Adds a patch to MPFR to bypass a bug in the Solaris memset on sun4v machines.  Note, if Sun patch 142542-01 is installed on sun4v machines, this is not needed, as that fixes the bug. Values are: \n  * INCLUDE_MPFR_PATCH=0 will never include the patch - useful if you know any sun4v machines MPFR will be used on, are patched. \n  * INCLUDE_MPFR_PATCH=1 will include, so binary will work on a sun4v machine, even if created on an older sun4u machine.\n  * If unset, will include patch on sun4v machines only.\n \n\nThere are probably others too. Some like CC, are fairly obvious, but in many cases do not work, so in some ways, they might be best either undocumented, or documented with a warning that not all packages accept them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8263\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @nexttime\n\nFew if any environment variables are documented fully. #8262 is supposed to do this for MAKE_CHECK, but I'm aware of some others which need documenting. \n \n* SAGE_PORT (Allows one to build on any rare (unsupported) platform, like AIX, FreeBSD, HP-UX, Solaris on x86 hardware etc. \n* SAGE_USE_OLD_GCC (Allows use of gcc 3.4.x) \n* CFLAG64 (Flag to build 64-bit binary, defaults to -m64) \n* SAGE_ATLAS_LIB (I've not much idea, but found it when looking)\n* INCLUDE_MPFR_PATCH - (Adds a patch to MPFR to bypass a bug in the Solaris memset on sun4v machines.  Note, if Sun patch 142542-01 is installed on sun4v machines, this is not needed, as that fixes the bug. Values are: \n  * INCLUDE_MPFR_PATCH=0 will never include the patch - useful if you know any sun4v machines MPFR will be used on, are patched. \n  * INCLUDE_MPFR_PATCH=1 will include, so binary will work on a sun4v machine, even if created on an older sun4u machine.\n  * If unset, will include patch on sun4v machines only.\n* SAGE_FAT_BINARY\n* Some VALGRIND variable - perhaps SAGE_VALGRIND. \n\nFrom sage-doctest -- these are the times, specified in seconds, used by sage -t, sage -t -long, and sage -t -valgrind (and other similar tools), to determine when a doctest times out:\n\n* SAGE_DOCTEST_ALLOW_TABS --- introduced by #8680\n* SAGE_TIMEOUT, default 360 seconds (6 minutes)\n* SAGE_TIMEOUT_LONG, default 1800 seconds (30 minutes)\n* SAGE_TIMEOUT_VALGRIND, default 1024 * 1024 seconds\n\nThere are probably others too. Some like CC, are fairly obvious, but in many cases do not work, so in some ways, they might be best either undocumented, or documented with a warning that not all packages accept them. \n\nSome, like SAGE_PORT and SAGE_USE_OLD_GCC are sort of self-documenting, as the build of Sage will quickly terminate if these need to be set, and how to set them is fully explained. \n\nPerhaps others can update this list with others. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8263\n\n",
+    "closed_at": "2010-07-05T22:47:13Z",
     "created_at": "2010-02-14T14:00:37Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_008263.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: mvngu
+Assignee: drkirkby
 
 CC:  @nexttime
 
@@ -30,9 +31,21 @@ Few if any environment variables are documented fully. #8262 is supposed to do t
   * INCLUDE_MPFR_PATCH=0 will never include the patch - useful if you know any sun4v machines MPFR will be used on, are patched. 
   * INCLUDE_MPFR_PATCH=1 will include, so binary will work on a sun4v machine, even if created on an older sun4u machine.
   * If unset, will include patch on sun4v machines only.
- 
+* SAGE_FAT_BINARY
+* Some VALGRIND variable - perhaps SAGE_VALGRIND. 
 
-There are probably others too. Some like CC, are fairly obvious, but in many cases do not work, so in some ways, they might be best either undocumented, or documented with a warning that not all packages accept them.
+From sage-doctest -- these are the times, specified in seconds, used by sage -t, sage -t -long, and sage -t -valgrind (and other similar tools), to determine when a doctest times out:
+
+* SAGE_DOCTEST_ALLOW_TABS --- introduced by #8680
+* SAGE_TIMEOUT, default 360 seconds (6 minutes)
+* SAGE_TIMEOUT_LONG, default 1800 seconds (30 minutes)
+* SAGE_TIMEOUT_VALGRIND, default 1024 * 1024 seconds
+
+There are probably others too. Some like CC, are fairly obvious, but in many cases do not work, so in some ways, they might be best either undocumented, or documented with a warning that not all packages accept them. 
+
+Some, like SAGE_PORT and SAGE_USE_OLD_GCC are sort of self-documenting, as the build of Sage will quickly terminate if these need to be set, and how to set them is fully explained. 
+
+Perhaps others can update this list with others. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8263
 

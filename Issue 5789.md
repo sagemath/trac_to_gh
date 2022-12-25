@@ -3,7 +3,8 @@
 archive/issues_005789.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5789\n\n",
+    "body": "Assignee: mabshoff\n\nNOTE: The patches don't apply cleanly. The bundle works perfectly\nagainst sage-3.4.1.rc[1-2] and applies cleanly.\n\nThe authors of this are Mike Hansen and William Stein.\n\nAfter applying the bundle (with hg_sage.apply('bundle_of_it_all.hg'))\nsage should work 100% as usual. However, if in devel/sage/ you type\n\n   ./spkg-distlite\n\nthen the dist directory will contained\n\n   dist/sagelite-3.4.1.tar.gz\n\nYou can take that sagelite-3.4.1.tar.gz and drop it into \"any\" Python\n(extract and do python setup.py install) that has twisted, pexpect,\nIpython and maybe some other easy dependencies, and you should be able\nto do\n\n```\n>>> from sage.server.notebook.notebook_object import notebook\n>>> notebook('test_dir')\n```\nand get the Sage notebook, completely independent of the rest of the\nSage library!\n\nIf you switch the mode to python in the list at the top of the screen,\nyou should be able to compute 2+2.\n\nHere's a link to the sagelite-3.4.1.tar.gz (only 603K!) that the above\ninstructions would produce:\n\n   http://sage.math.washington.edu/home/wstein/patches/sagelite-3.4.1.tar.gz\n\nIssue created by migration from https://trac.sagemath.org/ticket/5789\n\n",
+    "closed_at": "2010-01-06T23:17:34Z",
     "created_at": "2009-04-15T01:07:39Z",
     "labels": [
         "component: distribution"
@@ -17,7 +18,39 @@ archive/issues_005789.json:
 ```
 Assignee: mabshoff
 
+NOTE: The patches don't apply cleanly. The bundle works perfectly
+against sage-3.4.1.rc[1-2] and applies cleanly.
 
+The authors of this are Mike Hansen and William Stein.
+
+After applying the bundle (with hg_sage.apply('bundle_of_it_all.hg'))
+sage should work 100% as usual. However, if in devel/sage/ you type
+
+   ./spkg-distlite
+
+then the dist directory will contained
+
+   dist/sagelite-3.4.1.tar.gz
+
+You can take that sagelite-3.4.1.tar.gz and drop it into "any" Python
+(extract and do python setup.py install) that has twisted, pexpect,
+Ipython and maybe some other easy dependencies, and you should be able
+to do
+
+```
+>>> from sage.server.notebook.notebook_object import notebook
+>>> notebook('test_dir')
+```
+and get the Sage notebook, completely independent of the rest of the
+Sage library!
+
+If you switch the mode to python in the list at the top of the screen,
+you should be able to compute 2+2.
+
+Here's a link to the sagelite-3.4.1.tar.gz (only 603K!) that the above
+instructions would produce:
+
+   http://sage.math.washington.edu/home/wstein/patches/sagelite-3.4.1.tar.gz
 
 Issue created by migration from https://trac.sagemath.org/ticket/5789
 

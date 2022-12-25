@@ -4,6 +4,7 @@ archive/issues_000883.json:
 ```json
 {
     "body": "Assignee: failure\n\nSeveral of the doctests in sloane_functions.py assume that RR->ZZ coercion always fails.\n\nIssue created by migration from https://trac.sagemath.org/ticket/883\n\n",
+    "closed_at": "2007-10-14T05:10:14Z",
     "created_at": "2007-10-13T20:11:56Z",
     "labels": [
         "component: doctest coverage",

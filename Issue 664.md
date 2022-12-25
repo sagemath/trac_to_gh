@@ -4,6 +4,7 @@ archive/issues_000664.json:
 ```json
 {
     "body": "Assignee: was and robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/664\n\n",
+    "closed_at": "2007-09-21T00:14:58Z",
     "created_at": "2007-09-15T21:23:53Z",
     "labels": [
         "component: number theory"

@@ -4,6 +4,7 @@ archive/issues_007435.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  acleone @qed777\n\nSo... delete the section about the DIR variable, or make sure it is defined as explained in the help screen.  What do people prefer?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7435\n\n",
+    "closed_at": "2010-01-25T03:22:56Z",
     "created_at": "2009-11-11T22:30:19Z",
     "labels": [
         "component: notebook",

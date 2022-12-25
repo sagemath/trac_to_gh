@@ -4,6 +4,7 @@ archive/issues_006099.json:
 ```json
 {
     "body": "Assignee: @antieau\n\nCC:  @jhpalmieri\n\nAdd functionality to sage to create morphisms between simplicial complexes, and to associate to these morphisms the chain complex maps on the homological and cohomological chain complexes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6099\n\n",
+    "closed_at": "2009-11-29T04:55:49Z",
     "created_at": "2009-05-21T03:37:46Z",
     "labels": [
         "component: algebraic topology",

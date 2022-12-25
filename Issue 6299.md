@@ -1,9 +1,10 @@
-# Issue 6299: major scoping error introduced by refactoring dsage
+# Issue 6299: [with patch, positive review] major scoping error introduced by refactoring dsage
 
 archive/issues_006299.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nConfiguration of dsage / notebook's secure certificate was completely 100% broken by factoring Dsage out from sage:\n\n```\n----------------------------------------------------------------------\nsage: notebook.setup()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/15047/_scratch_wstein_sage_init_sage_0.py in <module>()\n\nAttributeError: NotebookObject instance has no attribute 'settup'\nsage: notebook.setup()\nUsing dsage certificates.\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/15047/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2.rc0/local/lib/python2.5/site-packages/sage/server/notebook/run_notebook.pyc in notebook_setup(self)\n     39         print \"Using dsage certificates.\"\n     40         dsage = os.path.join(DOT_SAGE, 'dsage')\n---> 41         sage.dsage.all.dsage.setup()\n     42         shutil.copyfile(dsage + '/cacert.pem', private_pem)\n     43         shutil.copyfile(dsage + '/pubcert.pem', public_pem)\n\nNameError: global name 'sage' is not defined\nsage: \n\n----\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6299\n\n",
+    "body": "Assignee: @mwhansen\n\nConfiguration of dsage / notebook's secure certificate was completely 100% broken by factoring Dsage out from sage:\n\n```\n----------------------------------------------------------------------\nsage: notebook.setup()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/15047/_scratch_wstein_sage_init_sage_0.py in <module>()\n\nAttributeError: NotebookObject instance has no attribute 'settup'\nsage: notebook.setup()\nUsing dsage certificates.\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/15047/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2.rc0/local/lib/python2.5/site-packages/sage/server/notebook/run_notebook.pyc in notebook_setup(self)\n     39         print \"Using dsage certificates.\"\n     40         dsage = os.path.join(DOT_SAGE, 'dsage')\n---> 41         sage.dsage.all.dsage.setup()\n     42         shutil.copyfile(dsage + '/cacert.pem', private_pem)\n     43         shutil.copyfile(dsage + '/pubcert.pem', public_pem)\n\nNameError: global name 'sage' is not defined\nsage: \n\n----\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6299\n\n",
+    "closed_at": "2009-06-15T23:18:18Z",
     "created_at": "2009-06-15T15:37:32Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_006299.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "major scoping error introduced by refactoring dsage",
+    "title": "[with patch, positive review] major scoping error introduced by refactoring dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6299",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Configuration of dsage / notebook's secure certificate was completely 100% broken by factoring Dsage out from sage:
 

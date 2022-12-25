@@ -4,6 +4,7 @@ archive/issues_009124.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis patch implements h-vectors for simplicial complexes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9124\n\n",
+    "closed_at": "2011-01-19T22:20:38Z",
     "created_at": "2010-06-03T04:09:50Z",
     "labels": [
         "component: algebraic topology",

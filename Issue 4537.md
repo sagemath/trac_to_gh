@@ -1,15 +1,16 @@
-# Issue 4537: inverse_mod for number field ideals
+# Issue 4537: [with patch, positive review] inverse_mod for number field ideals
 
 archive/issues_004537.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nThe inverse_mod method currently isn't implemented for ideals in rings of integers of number fields. It should be, as it's not difficult.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4537\n\n",
+    "closed_at": "2008-11-28T08:36:03Z",
     "created_at": "2008-11-17T07:51:11Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "inverse_mod for number field ideals",
+    "title": "[with patch, positive review] inverse_mod for number field ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4537",
     "user": "https://github.com/loefflerd"

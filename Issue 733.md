@@ -1,9 +1,10 @@
-# Issue 733: generating docs
+# Issue 733: [probably fixed] generating docs
 
 archive/issues_000733.json:
 ```json
 {
     "body": "Assignee: tba\n\nI updated the reference manual tex files by doing:\n\ncd sage/devel/doc/ref/\n./update\ncd ..\nmake pdf\n\nHowever, it claimed that there was nothing to be done, since everything was up to date.  I had to make clobber before it would build the documentation again.\n\nIs there a way to have the ./update command touch a file which was then a dependency for the make pdf/html/etc commands?  That way, running ./update would force make to rerun the pdf/html/etc generation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/733\n\n",
+    "closed_at": "2008-03-22T05:58:36Z",
     "created_at": "2007-09-21T19:18:07Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_000733.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "generating docs",
+    "title": "[probably fixed] generating docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/733",
     "user": "https://github.com/jasongrout"

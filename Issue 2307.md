@@ -1,16 +1,17 @@
-# Issue 2307: [with patch, needs easy review] has_edge ignores labels
+# Issue 2307: [with patch, with positive review] has_edge ignores labels
 
 archive/issues_002307.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis is pretty self-explanatory...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2307\n\n",
+    "closed_at": "2008-02-26T00:51:54Z",
     "created_at": "2008-02-26T00:32:08Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs easy review] has_edge ignores labels",
+    "title": "[with patch, with positive review] has_edge ignores labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2307",
     "user": "https://github.com/rlmill"

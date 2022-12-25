@@ -4,6 +4,7 @@ archive/issues_008903.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nKeywords: pynac\n\nA new pynac package with several critical fixes is available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\n\nIt contains fixes for:\n\n* #8542: function table for Cygwin\n* #8651: binomial(n, 0) -> 1\n* #8688: extra parenthesis when typesetting fractions\n* #8775: auto evaluation of conjugates\n\nNote that patches from the above tickets need to be applied to test this ticket. Without #8542, you'll get a segfault. The others fix doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8903\n\n",
+    "closed_at": "2010-05-28T19:32:12Z",
     "created_at": "2010-05-06T04:08:57Z",
     "labels": [
         "component: packages: standard",

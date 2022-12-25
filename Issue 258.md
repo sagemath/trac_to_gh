@@ -1,47 +1,28 @@
-# Issue 258: gp2c -- integrate into SAGE
+# Issue 258: Add a gp2c package
 
 archive/issues_000258.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate a command in SAGE based on the gp2c program of Bill Alombert.\n\nI envision something like this:\n\n```\nsage: gp = Gp()   # new instead of gp interacitve interpreter\nsage: gp.ceval(\"\"\"\na block of code\n\"\"\")\n...\n   at this point the gp2c translator is called and the resulting\n   shared object library is loaded into this instance of gp.\n...\nsage: gp('code that uses new functions defined in the above block of code')\n          resulting code runs faster since it is compiled. \n```\n\nThis will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:\n* SageX\n* weave\n* gp2c\n\nThe web page for gp2c:\n\n  http://pari.math.u-bordeaux.fr/download.html#gp2c\n\nIssue created by migration from https://trac.sagemath.org/ticket/258\n\n",
+    "body": "Assignee: @pdenapo\n\nAdd a gp2c package for compiling GP code into PARI library code (it does to GP code what Cython does to Python code)\n\nThe web page for gp2c: http://pari.math.u-bordeaux.fr/pub/pari/manuals/gp2c/gp2c.html\n\n**Upstream**: [http://pari.math.u-bordeaux.fr/pub/pari/GP2C/gp2c-0.0.9pl3.tar.gz](http://pari.math.u-bordeaux.fr/pub/pari/GP2C/gp2c-0.0.9pl3.tar.gz)\n\nIssue created by migration from https://trac.sagemath.org/ticket/258\n\n",
+    "closed_at": "2015-10-23T17:28:08Z",
     "created_at": "2007-02-11T20:51:22Z",
     "labels": [
-        "component: interfaces"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
-    "title": "gp2c -- integrate into SAGE",
+    "title": "Add a gp2c package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/258",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @pdenapo
 
-Create a command in SAGE based on the gp2c program of Bill Alombert.
+Add a gp2c package for compiling GP code into PARI library code (it does to GP code what Cython does to Python code)
 
-I envision something like this:
+The web page for gp2c: http://pari.math.u-bordeaux.fr/pub/pari/manuals/gp2c/gp2c.html
 
-```
-sage: gp = Gp()   # new instead of gp interacitve interpreter
-sage: gp.ceval("""
-a block of code
-""")
-...
-   at this point the gp2c translator is called and the resulting
-   shared object library is loaded into this instance of gp.
-...
-sage: gp('code that uses new functions defined in the above block of code')
-          resulting code runs faster since it is compiled. 
-```
-
-This will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:
-* SageX
-* weave
-* gp2c
-
-The web page for gp2c:
-
-  http://pari.math.u-bordeaux.fr/download.html#gp2c
+**Upstream**: [http://pari.math.u-bordeaux.fr/pub/pari/GP2C/gp2c-0.0.9pl3.tar.gz](http://pari.math.u-bordeaux.fr/pub/pari/GP2C/gp2c-0.0.9pl3.tar.gz)
 
 Issue created by migration from https://trac.sagemath.org/ticket/258
 

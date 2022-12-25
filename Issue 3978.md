@@ -1,9 +1,10 @@
-# Issue 3978: Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures
+# Issue 3978: [with patch, positive review] Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures
 
 archive/issues_003978.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/stats/hmm/hmm.pyx \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha1/tmp/hmm.py\", line 678: \n    sage: a.viterbi([1,0,0,1,0,0,1,1]) \nExpected: \n    ([1, 0, 0, 1, 1, 0, 1, 1], -11.062453224772216) \nGot: \n    ([1, 0, 0, 1, 0, 0, 1, 1], -11.062453224772215) \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha1/tmp/hmm.py\", line 686: \n    sage: a.viterbi([3/4, 'abc', 'abc'] + [3/4]*10) \nExpected: \n    ([0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794) \nGot: \n    ([0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794) \n********************************************************************** \n1 items had failures: \n   2 of   6 in __main__.example_19 \n***Test Failed*** 2 failures. \nFor whitespace errors, see the file \n/home/john/sage-3.1.2.alpha1/tmp/.doctest_hmm.py \n         [1.8 s] \nexit code: 1024 \n```\nWilliam then suggested:\n\n```\nI think the above is just numerical noise.  The Viterbi algorithm\nis an approximate numerical algorithm using double precision numbers,\nand can give slightly different answers on different hardware.\nCan you change the doctest to:\n\n     sage: a.viterbi([1,0,0,1,0,0,1,1])  # numerical instability on\nsome platforms\n    ([1, 0, 0, 1, ..., 0, 1, 1], -11.06245322477221...)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3978\n\n",
+    "body": "Assignee: mabshoff\n\nNOTE: It might be prudent to wait for #3984 being solved before fixing doctests\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/stats/hmm/hmm.pyx \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha1/tmp/hmm.py\", line 678: \n    sage: a.viterbi([1,0,0,1,0,0,1,1]) \nExpected: \n    ([1, 0, 0, 1, 1, 0, 1, 1], -11.062453224772216) \nGot: \n    ([1, 0, 0, 1, 0, 0, 1, 1], -11.062453224772215) \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha1/tmp/hmm.py\", line 686: \n    sage: a.viterbi([3/4, 'abc', 'abc'] + [3/4]*10) \nExpected: \n    ([0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794) \nGot: \n    ([0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794) \n********************************************************************** \n1 items had failures: \n   2 of   6 in __main__.example_19 \n***Test Failed*** 2 failures. \nFor whitespace errors, see the file \n/home/john/sage-3.1.2.alpha1/tmp/.doctest_hmm.py \n         [1.8 s] \nexit code: 1024 \n```\nWilliam then suggested:\n\n```\nI think the above is just numerical noise.  The Viterbi algorithm\nis an approximate numerical algorithm using double precision numbers,\nand can give slightly different answers on different hardware.\nCan you change the doctest to:\n\n     sage: a.viterbi([1,0,0,1,0,0,1,1])  # numerical instability on\nsome platforms\n    ([1, 0, 0, 1, ..., 0, 1, 1], -11.06245322477221...)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3978\n\n",
+    "closed_at": "2008-09-12T23:24:55Z",
     "created_at": "2008-08-28T19:55:32Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,15 @@ archive/issues_003978.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures",
+    "title": "[with patch, positive review] Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3978",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
+
+NOTE: It might be prudent to wait for #3984 being solved before fixing doctests
 
 John Cremona reported:
 

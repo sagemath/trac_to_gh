@@ -4,6 +4,7 @@ archive/issues_007673.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nAs a follow up of #7640.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7673\n\n",
+    "closed_at": "2009-12-15T16:03:23Z",
     "created_at": "2009-12-12T19:51:21Z",
     "labels": [
         "component: graph theory",

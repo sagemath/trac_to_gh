@@ -3,10 +3,11 @@
 archive/issues_008229.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: GAP, GAP packages\n\nI created and tested, together with the \nupdated GAP to 4.4.12 --- see tickets #8150 and #8076 ---\ngap_packages-4.4.12_2.spkg, that is available at \nhttp://boxen.math.washington.edu/home/dima/packages/gap_packages-4.4.12_2.spkg\nalong with  http://boxen.math.washington.edu/home/dima/packages/database_gap-4.4.12.spkg and\nhttp://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg\n\nplease test these (already tested OK on x86, x86_64, ia64, and OSX PPC 10.5)\ntogether, not forgetting to apply the patch \ntrack-8150 available at #8150, \nbut ignoring the other (obsolete) patches there and at #8076.\n\nThis ticket is issued in addition to #8150 and #8076\n\nIssue created by migration from https://trac.sagemath.org/ticket/8229\n\n",
+    "body": "Assignee: tbd\n\nKeywords: GAP, GAP packages\n\nI created and tested, together with the \nupdated GAP to 4.4.12 --- see tickets #8150 and #8076 ---\ngap_packages-4.4.12_2.spkg, that is available at \nhttp://boxen.math.washington.edu/home/dima/packages/gap_packages-4.4.12_2.spkg\nalong with  http://boxen.math.washington.edu/home/dima/packages/database_gap-4.4.12.spkg and\nhttp://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg\n\nplease test these (already tested OK on x86, x86_64, ia64, and OSX PPC 10.5)\ntogether, not forgetting to apply the patch \ntrack-8150 available at #8150, \nbut ignoring the other (obsolete) patches there and at #8076.\n\nCAVEAT: make sure that the file gap-4.4.12.p2.spkg (or any file called like this :)) is physically present in spkg/standard/\nbefore upgrading gap_packages.\n(And certainly, install gap-4.4.12.p2.spkg before gap_packages)\n\nThis ticket is issued in addition to #8150 and #8076\n\nThe spkg `gap_packages-4.4.12` belongs to the optional packages repository, so this ticket belongs to the component \"optional packages\".\n\n**Prerequisites:** #8076, #8150\n\nIssue created by migration from https://trac.sagemath.org/ticket/8229\n\n",
+    "closed_at": "2010-02-17T21:23:40Z",
     "created_at": "2010-02-10T14:31:01Z",
     "labels": [
-        "component: packages",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -32,7 +33,15 @@ together, not forgetting to apply the patch
 track-8150 available at #8150, 
 but ignoring the other (obsolete) patches there and at #8076.
 
+CAVEAT: make sure that the file gap-4.4.12.p2.spkg (or any file called like this :)) is physically present in spkg/standard/
+before upgrading gap_packages.
+(And certainly, install gap-4.4.12.p2.spkg before gap_packages)
+
 This ticket is issued in addition to #8150 and #8076
+
+The spkg `gap_packages-4.4.12` belongs to the optional packages repository, so this ticket belongs to the component "optional packages".
+
+**Prerequisites:** #8076, #8150
 
 Issue created by migration from https://trac.sagemath.org/ticket/8229
 

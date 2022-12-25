@@ -1,9 +1,10 @@
-# Issue 5393: pycrypto 2.0.1: integrate fix for http://www.securityfocus.com/bid/33674/info (security)
+# Issue 5393: [with spkg, positive review] pycrypto 2.0.1: integrate fix for http://www.securityfocus.com/bid/33674/info (security)
 
 archive/issues_005393.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n```\nPyCrypto ARC2 Module Buffer Overflow Vulnerability\n\nPyCrypto (Python Cryptography Toolkit) is prone to a buffer-overflow vulnerability because it fails to adequately verify user-supplied input.\n\nSuccessful exploits may allow attackers to execute arbitrary code in the context of applications using the vulnerable module. Failed attempts may lead to a denial-of-service condition.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5393\n\n",
+    "body": "Assignee: mabshoff\n\n```\nPyCrypto ARC2 Module Buffer Overflow Vulnerability\n\nPyCrypto (Python Cryptography Toolkit) is prone to a \nbuffer-overflow vulnerability because it fails to \nadequately verify user-supplied input.\n\nSuccessful exploits may allow attackers to execute \narbitrary code in the context of applications using \nthe vulnerable module. Failed attempts may lead to a \ndenial-of-service condition.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5393\n\n",
+    "closed_at": "2009-03-03T00:17:38Z",
     "created_at": "2009-02-27T16:38:36Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005393.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "pycrypto 2.0.1: integrate fix for http://www.securityfocus.com/bid/33674/info (security)",
+    "title": "[with spkg, positive review] pycrypto 2.0.1: integrate fix for http://www.securityfocus.com/bid/33674/info (security)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5393",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -22,9 +23,14 @@ Assignee: mabshoff
 ```
 PyCrypto ARC2 Module Buffer Overflow Vulnerability
 
-PyCrypto (Python Cryptography Toolkit) is prone to a buffer-overflow vulnerability because it fails to adequately verify user-supplied input.
+PyCrypto (Python Cryptography Toolkit) is prone to a 
+buffer-overflow vulnerability because it fails to 
+adequately verify user-supplied input.
 
-Successful exploits may allow attackers to execute arbitrary code in the context of applications using the vulnerable module. Failed attempts may lead to a denial-of-service condition.
+Successful exploits may allow attackers to execute 
+arbitrary code in the context of applications using 
+the vulnerable module. Failed attempts may lead to a 
+denial-of-service condition.
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5393

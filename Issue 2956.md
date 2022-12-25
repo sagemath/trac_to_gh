@@ -3,7 +3,8 @@
 archive/issues_002956.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @orlitzky\n\nLong exponents are silently truncated to word-size exponents:\n\n```\nsage: K.<x,y> = AA[]\nsage: x^(2^64 + 12345)\nx^12345\n```\n\nIn one test, I also saw a crash, but I can't reproduce it.\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n...\n```\n(The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2956\n\n",
+    "body": "Assignee: @malb\n\nCC:  @orlitzky\n\nKeywords: sd35.5\n\nLong exponents are silently truncated to word-size exponents:\n\n```\nsage: K.<x,y> = AA[]\nsage: x^(2^64 + 12345)\nx^12345\n```\n\nIn one test, I also saw a crash, but I can't reproduce it.\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n...\n```\n(The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2956\n\n",
+    "closed_at": "2012-01-18T08:07:13Z",
     "created_at": "2008-04-19T15:26:41Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,9 +17,11 @@ archive/issues_002956.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 CC:  @orlitzky
+
+Keywords: sd35.5
 
 Long exponents are silently truncated to word-size exponents:
 

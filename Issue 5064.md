@@ -1,16 +1,18 @@
-# Issue 5064: Steenrod algebras are non-unique
+# Issue 5064: [with patch, positive review] Steenrod algebras are non-unique
 
 archive/issues_005064.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\n```\nsage: A = SteenrodAlgebra(17)\nsage: A(0).parent() is A\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5064\n\n",
+    "closed_at": "2009-01-24T16:28:55Z",
     "created_at": "2009-01-23T02:16:15Z",
     "labels": [
         "component: algebra",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Steenrod algebras are non-unique",
+    "title": "[with patch, positive review] Steenrod algebras are non-unique",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5064",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

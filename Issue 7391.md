@@ -6,8 +6,7 @@ archive/issues_007391.json:
     "body": "Assignee: @williamstein\n\nThis should probably give a warning to the user that the matrix is ill-conditioned and you may get wrong results (like you do in this case).\n\n```\nsage: n = matrix([ [-0.3, 0.2, 0.1],\n                    [0.2, -0.4, 0.4],\n                    [0.1, 0.2, -0.5] ])\n\nsage: n.echelon_form()\n\n[ 1.00000000000000 0.000000000000000 0.000000000000000]\n[0.000000000000000  1.00000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000  1.00000000000000]\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7391\n\n",
     "created_at": "2009-11-04T21:36:06Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Warn the user of incorrect results when an approximate ill-conditioned matrix is used",

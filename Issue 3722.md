@@ -4,6 +4,7 @@ archive/issues_003722.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe fix will be to make it so that the running indicator gets changed when the worksheet process is killed by the server. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3722\n\n",
+    "closed_at": "2009-01-23T13:44:32Z",
     "created_at": "2008-07-25T10:26:49Z",
     "labels": [
         "component: notebook",

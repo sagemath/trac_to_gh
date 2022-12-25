@@ -4,6 +4,7 @@ archive/issues_007726.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nKeywords: biopython\n\nBiopython was released December 15th, 2009.  No major changes were made, so the new package just updates the source and SPKG.txt.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7726\n\n",
+    "closed_at": "2009-12-20T07:29:47Z",
     "created_at": "2009-12-17T19:10:15Z",
     "labels": [
         "component: packages: optional",

@@ -1,15 +1,16 @@
-# Issue 5854: [with patch, with spkg, needs review] Include Michael Stoll's ratpoints in Sage
+# Issue 5854: [with patch, with spkg, with positive review] Include Michael Stoll's ratpoints in Sage
 
 archive/issues_005854.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe spkg is located here:\n\nhttp://sage.math.washington.edu/home/rlmill/ratpoints-2.1.1.spkg\n\n(The final version for review was created 22 April 2009-- there were previous versions by the same file name, but this one can be identified as the one possessing an SPKG.txt file.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5854\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe spkg is located here:\n\nhttp://sage.math.washington.edu/home/rlmill/ratpoints-2.1.2.spkg\n\nVote for standard inclusion is here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/caab63b6dac361c4\n\nIssue created by migration from https://trac.sagemath.org/ticket/5854\n\n",
+    "closed_at": "2009-07-02T22:00:28Z",
     "created_at": "2009-04-22T15:17:52Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, with spkg, needs review] Include Michael Stoll's ratpoints in Sage",
+    "title": "[with patch, with spkg, with positive review] Include Michael Stoll's ratpoints in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5854",
     "user": "https://github.com/rlmill"
@@ -21,9 +22,11 @@ CC:  @JohnCremona
 
 The spkg is located here:
 
-http://sage.math.washington.edu/home/rlmill/ratpoints-2.1.1.spkg
+http://sage.math.washington.edu/home/rlmill/ratpoints-2.1.2.spkg
 
-(The final version for review was created 22 April 2009-- there were previous versions by the same file name, but this one can be identified as the one possessing an SPKG.txt file.)
+Vote for standard inclusion is here:
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/caab63b6dac361c4
 
 Issue created by migration from https://trac.sagemath.org/ticket/5854
 

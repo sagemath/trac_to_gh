@@ -1,9 +1,10 @@
-# Issue 796: Yet another fix for c_lib/scons stuff
+# Issue 796: [with patch] Yet another fix for c_lib/scons stuff
 
 archive/issues_000796.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: c_lib\n\nThe scons setup was still sub-par, and after some discussion, we've come up with what looks like a good solution. Here's the new system ... first, we reorganize $SAGE_ROOT/devel/sage/c_lib into c_lib/src and c_lib/include,  and removed some cruft in the c_lib directory. We now have two symlinks:\n\n$SAGE_ROOT/local/lib/libcsage.[so|dylib] --> $SAGE_ROOT/devel/sage/c_lib/libcsage.[so|dylib]\n\n$SAGE_ROOT/local/include/csage --> $SAGE_ROOT/devel/sage/c_lib/include\n\nNow we've had to make some changes to spkg-install to get this to work well. In particular, *this patch should not be added until the next release*, because getting it via hg_sage.pull() could break your working sage. \n\nThere are patches for both sage-main and scripts-main attached.\n\nEmail me (craig) if you have any issues with this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/796\n\n",
+    "closed_at": "2007-10-04T17:39:31Z",
     "created_at": "2007-10-03T00:04:24Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_000796.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "Yet another fix for c_lib/scons stuff",
+    "title": "[with patch] Yet another fix for c_lib/scons stuff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/796",
     "user": "https://github.com/craigcitro"

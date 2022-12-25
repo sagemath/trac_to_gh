@@ -4,6 +4,7 @@ archive/issues_009588.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: is_prime_power\n\nCurrently, is_prime_power only works on integers.  The attached simple patch will allow rational numbers as input as illustrated below.\n\n```\nsage: is_prime_power(1/2197)\nTrue\nsage: is_prime_power(1/100)\nFalse\nsage: is_prime_power(2/5)\nFalse\n```\n\nThis is also the behavior of Mathematica's PrimePowerQ function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9588\n\n",
+    "closed_at": "2010-07-26T02:24:43Z",
     "created_at": "2010-07-23T14:55:18Z",
     "labels": [
         "component: basic arithmetic",

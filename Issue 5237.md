@@ -4,6 +4,7 @@ archive/issues_005237.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  alexghitza\n\nReported in http://groups.google.com/group/sage-devel/browse_thread/thread/894d29e0bde4550c as well as once by Alex Ghitza:\n\n```\nTrying: \n    qsieve(n)###line 289:_sage_    : qsieve(n) \nExpecting: \n    ([6340271405786663791648052309, \n      46102313108592180286398757159], '') \n*** *** Error: TIMED OUT! PROCESS KILLED! *** *** \n*** *** Error: TIMED OUT! *** *** \n         [360.3 s] \nexit code: 1024 \n```\n\nThis is Bill Hart's quadratic sieve, but an ancient version from 2007. We should really get rid of that code and use the current code in FLINT 1.1.x.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5237\n\n",
+    "closed_at": "2016-02-23T22:52:58Z",
     "created_at": "2009-02-11T22:56:54Z",
     "labels": [
         "component: factorization",

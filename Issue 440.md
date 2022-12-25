@@ -4,6 +4,7 @@ archive/issues_000440.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCurrently `Integer.__index__()` goes via a python long. In most cases the result should be just a python int, and it should be much faster to go directly there.\n\nProbably the best way to implement this is to first call `mpz_size(x.value)` to check the size in words; if the size is one, then construct a python int directly; otherwise go to a long.\n\nEven better might be to write another version of `mpz_get_pylong` which can produce a python int when that's feasible, or a long if it's not.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/440\n\n",
+    "closed_at": "2007-08-18T20:55:25Z",
     "created_at": "2007-08-18T18:25:28Z",
     "labels": [
         "component: basic arithmetic"

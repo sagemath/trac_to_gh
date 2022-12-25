@@ -1,23 +1,23 @@
-# Issue 4363: Do not automatically evaluate interact cells in notebook
+# Issue 4363: [with patch, positive review] Do not automatically evaluate interact cells in notebook
 
 archive/issues_004363.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCurrent behavior is that `@`interact cells automatically evaluate upon opening a worksheet.  This can cause problems if (for instance) the cell depends on other cells which are not automatically evaluated, and also can take a long time if there are lots of them.  \n\nSince other cells do not auto-evaluate, and since this functionality still is easily available by putting #auto in the cell, this ticket calls for the current behavior to be changed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4363\n\n",
+    "body": "Assignee: @mwhansen\n\nCurrent behavior is that `@`interact cells automatically evaluate upon opening a worksheet.  This can cause problems if (for instance) the cell depends on other cells which are not automatically evaluated, and also can take a long time if there are lots of them.  \n\nSince other cells do not auto-evaluate, and since this functionality still is easily available by putting #auto in the cell, this ticket calls for the current behavior to be changed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4363\n\n",
+    "closed_at": "2009-01-19T06:10:52Z",
     "created_at": "2008-10-24T15:15:48Z",
     "labels": [
         "component: notebook",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Do not automatically evaluate interact cells in notebook",
+    "title": "[with patch, positive review] Do not automatically evaluate interact cells in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4363",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Current behavior is that `@`interact cells automatically evaluate upon opening a worksheet.  This can cause problems if (for instance) the cell depends on other cells which are not automatically evaluated, and also can take a long time if there are lots of them.  
 

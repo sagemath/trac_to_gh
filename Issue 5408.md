@@ -1,9 +1,10 @@
-# Issue 5408: Matrix kernel with PARI algorithm passes wrong type
+# Issue 5408: [with patch, positive review] Matrix kernel with PARI algorithm passes wrong type
 
 archive/issues_005408.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nKeywords: kernel, PARI\n\nUsing the PARI kernel algorithm returns a PARI object which is unpacked as a list with the rows given as tuples.  When this is passed to hermite_form() the object is not of the right type.\n\n```\nsage: a = matrix(ZZ, [[1,2],[2,4]])\nsage: a.kernel(algorithm='pari')\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/rob/.sage/temp/wave/8545/_home_rob__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.3/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense.Matrix_integer_dense.kernel (sage/matrix/matrix_integer_dense.c:16256)()\n\nAttributeError: 'list' object has no attribute 'hermite_form'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5408\n\n",
+    "closed_at": "2009-03-08T06:16:41Z",
     "created_at": "2009-03-01T06:26:56Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005408.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Matrix kernel with PARI algorithm passes wrong type",
+    "title": "[with patch, positive review] Matrix kernel with PARI algorithm passes wrong type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5408",
     "user": "https://github.com/rbeezer"

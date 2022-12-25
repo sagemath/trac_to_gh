@@ -1,9 +1,10 @@
-# Issue 5643: [with patch, needs review] trivial doctest patch for steenrod_algebra.py
+# Issue 5643: [with patch, positive review] trivial doctest patch for steenrod_algebra.py
 
 archive/issues_005643.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe summary says it all...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5643\n\n",
+    "closed_at": "2009-03-31T06:44:02Z",
     "created_at": "2009-03-30T20:15:26Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_005643.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] trivial doctest patch for steenrod_algebra.py",
+    "title": "[with patch, positive review] trivial doctest patch for steenrod_algebra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5643",
     "user": "https://github.com/jhpalmieri"

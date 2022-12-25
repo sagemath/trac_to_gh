@@ -1,15 +1,16 @@
-# Issue 4102: Make special functions behave like PrimitiveFunction
+# Issue 4102: make bessel_J symbolic
 
 archive/issues_004102.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach\n\nThe motivation for this is\n\n```\nsage: plot(bessel_J(1, x), (x, 1, 10))\nTraceback (most recent call last):\n...\nTypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.\n```\n\nThe problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot\n\n```\nsage: polylog(1,x),(x,.1,.9) #makes a fine plot\n```\n\nSee discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5\n\nIssue created by migration from https://trac.sagemath.org/ticket/4102\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach\n\nKeywords: sd48\n\nThe motivation for this is\n\n```\nsage: plot(bessel_J(1, x), (x, 1, 10))\nTraceback (most recent call last):\n...\nTypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/88473600*x^10+1/14863564800*x^12-1/3329438515200*x^14+1/958878292377600*x^16+O(x^17)') to real number.\n```\n\nThe problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot\n\n```\nsage: plot(polylog(1,x),(x,.1,.9)) #makes a fine plot\n```\n\nSee discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5\n\n---\n\nRelease manager:\n\nApply: \n* attachment:trac_symbolic_bessel_v7.2.patch,\n* attachment:trac_symbolic_bessel_v7-doctests.patch,\n* attachment:bessel_2.2.patch\n* attachment:trac_4102-bessel_doctest_fixes2.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/4102\n\n",
+    "closed_at": "2013-07-31T12:52:56Z",
     "created_at": "2008-09-12T01:06:09Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "Make special functions behave like PrimitiveFunction",
+    "title": "make bessel_J symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4102",
     "user": "https://github.com/jicama"
@@ -18,6 +19,8 @@ archive/issues_004102.json:
 Assignee: @burcin
 
 CC:  @jasongrout @kcrisman @benjaminfjones dsm @burcin @eviatarbach
+
+Keywords: sd48
 
 The motivation for this is
 
@@ -31,10 +34,20 @@ TypeError: Unable to convert x (='1-1/8*x^2+1/192*x^4-1/9216*x^6+1/737280*x^8-1/
 The problem is that special functions, or at least `bessel_J`, can't currently be partially evaluated--that is, called with a `SymbolicExpression` as an argument.  The model of good behavior is `polylog`, for which the above method produces a perfectly nice plot
 
 ```
-sage: polylog(1,x),(x,.1,.9) #makes a fine plot
+sage: plot(polylog(1,x),(x,.1,.9)) #makes a fine plot
 ```
 
 See discussion at http://groups.google.com/group/sage-support/browse_thread/thread/1b985b080ba2369e/7dee9eed953857f5#7dee9eed953857f5
+
+---
+
+Release manager:
+
+Apply: 
+* attachment:trac_symbolic_bessel_v7.2.patch,
+* attachment:trac_symbolic_bessel_v7-doctests.patch,
+* attachment:bessel_2.2.patch
+* attachment:trac_4102-bessel_doctest_fixes2.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/4102
 

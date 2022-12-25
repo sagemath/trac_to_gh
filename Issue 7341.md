@@ -1,16 +1,18 @@
-# Issue 7341: major tab completion issue in notebook (?)
+# Issue 7341: [with patch, positive review] major tab completion issue in notebook (?)
 
 archive/issues_007341.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTry this in the notebook:\n\n```\nK.<a> = QuadraticField(-7)\nb = K.pari_bnf()\nb.<tab>\n```\n\nThen compare to the command line.  For some reason the last thing, \"b.bnfunit\" is missing in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7341\n\n",
+    "body": "Assignee: boothby\n\nTry this in the notebook:\n\n```\nK.<a> = QuadraticField(-7)\nb = K.pari_bnf()\nb.bnf<tab>\n```\n\nThen compare to the command line.  For some reason the last thing, \"b.bnfunit\" is missing in the notebook.\n\nScreenshot: http://wstein.org/home/wstein/patches/7341.png\n\nIssue created by migration from https://trac.sagemath.org/ticket/7341\n\n",
+    "closed_at": "2009-11-09T17:17:55Z",
     "created_at": "2009-10-28T22:17:40Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "major tab completion issue in notebook (?)",
+    "title": "[with patch, positive review] major tab completion issue in notebook (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7341",
     "user": "https://github.com/williamstein"
@@ -23,10 +25,12 @@ Try this in the notebook:
 ```
 K.<a> = QuadraticField(-7)
 b = K.pari_bnf()
-b.<tab>
+b.bnf<tab>
 ```
 
 Then compare to the command line.  For some reason the last thing, "b.bnfunit" is missing in the notebook.
+
+Screenshot: http://wstein.org/home/wstein/patches/7341.png
 
 Issue created by migration from https://trac.sagemath.org/ticket/7341
 

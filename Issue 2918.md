@@ -3,11 +3,10 @@
 archive/issues_002918.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nScipy can optionally use umfpack for sparse solvers. We currently build umfpack as part of cvxopt. \nWe don't make scipy use umfpack because the wrappers use swig. We need to autogenerate the swig wrappers so scipy can build against them without swig. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2918\n\n",
+    "body": "Assignee: jkantor\n\nScipy can optionally use umfpack for sparse solvers. We currently build umfpack as part of cvxopt. \nWe don't make scipy use umfpack because the wrappers use swig. We need to autogenerate the swig wrappers so scipy can build against them without swig. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2918\n\n",
     "created_at": "2008-04-14T17:01:52Z",
     "labels": [
-        "component: cygwin",
-        "bug"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "make scipy use umfpack",
@@ -16,7 +15,7 @@ archive/issues_002918.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
-Assignee: mabshoff
+Assignee: jkantor
 
 Scipy can optionally use umfpack for sparse solvers. We currently build umfpack as part of cvxopt. 
 We don't make scipy use umfpack because the wrappers use swig. We need to autogenerate the swig wrappers so scipy can build against them without swig. 

@@ -3,10 +3,10 @@
 archive/issues_007240.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori @rwst\n\nFollowing #7239, use the factorization of Cunningham numbers to speed up polynomial primitivity testing and other finite field stuff (for small characteristic).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7240\n\n",
+    "body": "Assignee: @rwst\n\nCC:  jpflori @rwst\n\nFollowing #7239, use the factorization of Cunningham numbers to speed up polynomial primitivity testing and other finite field stuff (for small characteristic).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7240\n\n",
     "created_at": "2009-10-18T10:35:29Z",
     "labels": [
-        "component: algebra"
+        "component: factorization"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-pending",
     "title": "factorization of Cunningham numbers - applications",
@@ -15,7 +15,7 @@ archive/issues_007240.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
-Assignee: tbd
+Assignee: @rwst
 
 CC:  jpflori @rwst
 

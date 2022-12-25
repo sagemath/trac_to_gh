@@ -1,22 +1,23 @@
-# Issue 1946: Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py
+# Issue 1946: [with patches: very positive review, needs rebase] Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py
 
 archive/issues_001946.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI'm sure -- after a bit of a glance, for example, at scale_curve,\nthat lots of this code is broken as a result of having no doctests!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1946\n\n",
+    "body": "Assignee: @JohnCremona\n\nI'm sure -- after a bit of a glance, for example, at scale_curve,\nthat lots of this code is broken as a result of having no doctests!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1946\n\n",
+    "closed_at": "2008-02-21T15:17:45Z",
     "created_at": "2008-01-27T02:36:59Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py",
+    "title": "[with patches: very positive review, needs rebase] Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1946",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
 
 I'm sure -- after a bit of a glance, for example, at scale_curve,
 that lots of this code is broken as a result of having no doctests!

@@ -1,16 +1,17 @@
-# Issue 5651: make it so plot(...) passes extra options to show (maybe only those that makes sense)
+# Issue 5651: [with patch, positive review] make it so plot(...) passes extra options to show (maybe only those that makes sense)
 
 archive/issues_005651.json:
 ```json
 {
     "body": "Assignee: wcauchois\n\nCC:  wcauchois @williamstein @jasongrout\n\nThis works now:\n\n```\nplot(sin(x^2),(x,-3,3)).show(figsize=[8,2])\n```\n\nThis would be nice:\n\n```\nplot(sin(x^2),(x,-3,3),figsize=[2,8])\n```\n\nThe analogue of the above works systematically everywhere for 3d plotting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5651\n\n",
+    "closed_at": "2009-07-19T08:27:20Z",
     "created_at": "2009-03-31T20:33:43Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "make it so plot(...) passes extra options to show (maybe only those that makes sense)",
+    "title": "[with patch, positive review] make it so plot(...) passes extra options to show (maybe only those that makes sense)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5651",
     "user": "https://github.com/williamstein"

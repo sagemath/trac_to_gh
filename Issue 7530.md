@@ -4,6 +4,7 @@ archive/issues_007530.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: Laurent Polynomial\n\nIt is not possible to form a polynomial ring over a Laurent polynomial ring.  This is because the function `is_integral_domain` for Laurent polynomial rings lacks the optional parameter `proof=True` (unlike every other instance of `is_integral_domain`).  The patch corrects this omission, which solves the problem.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7530\n\n",
+    "closed_at": "2009-12-19T21:02:25Z",
     "created_at": "2009-11-25T13:14:29Z",
     "labels": [
         "component: algebra",

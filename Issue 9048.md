@@ -1,16 +1,16 @@
-# Issue 9048: different behaviour of var in notebook and text version
+# Issue 9048: inconsistencies between the terminal version and the notebook
 
 archive/issues_009048.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  eocansey@risc.jku.at\n\nIn the text version of Sage, `var('x');` does not print anything.\nHowever, in the notebook, it prints `x`, even with the `;`\nthat should prevent output. This is quite annoying. Is there a reason for that?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9048\n\n",
+    "body": "Assignee: jason, was\n\nCC:  eocansey@risc.jku.at\n\nIn the text version of Sage, `var('x');` does not print anything.\nHowever, in the notebook, it prints `x`, even with the `;`\nthat should prevent output. This is quite annoying. Is there a reason for that?\n\nAlso, `automatic_names` does not work in the terminal version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9048\n\n",
     "created_at": "2010-05-25T19:59:01Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "different behaviour of var in notebook and text version",
+    "title": "inconsistencies between the terminal version and the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9048",
     "user": "https://github.com/zimmermann6"
@@ -23,6 +23,8 @@ CC:  eocansey@risc.jku.at
 In the text version of Sage, `var('x');` does not print anything.
 However, in the notebook, it prints `x`, even with the `;`
 that should prevent output. This is quite annoying. Is there a reason for that?
+
+Also, `automatic_names` does not work in the terminal version.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9048
 

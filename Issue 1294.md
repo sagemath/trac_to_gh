@@ -1,9 +1,10 @@
-# Issue 1294: v.n() function blows up when v is a vector
+# Issue 1294: [with patch, with positive review] v.n() function blows up when v is a vector
 
 archive/issues_001294.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: v=vector(QQ,[1,2,3])\nsage: v.n()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.Element.n()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/functional.py in numerical_approx(x, prec, digits)\n    731             return sage.rings.real_mpfr.RealField(prec)(x)\n    732         except TypeError:\n--> 733             return sage.rings.complex_field.ComplexField(prec)(x)\n    734\n    735 n = numerical_approx\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py in __call__(self, x, im)\n    179             except AttributeError:\n    180                 pass\n--> 181         return complex_number.ComplexNumber(self, x, im)\n    182\n    183     def _coerce_impl(self, x):\n\n/home/grout/sage/devel/sage-main/sage/graphs/complex_number.pyx in sage.rings.complex_number.ComplexNumber.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce to a ComplexNumber\n```\n\nI'm not sure what it should do, but maybe call n() on each entry would make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1294\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: v=vector(QQ,[1,2,3])\nsage: v.n()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.Element.n()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/functional.py in numerical_approx(x, prec, digits)\n    731             return sage.rings.real_mpfr.RealField(prec)(x)\n    732         except TypeError:\n--> 733             return sage.rings.complex_field.ComplexField(prec)(x)\n    734\n    735 n = numerical_approx\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py in __call__(self, x, im)\n    179             except AttributeError:\n    180                 pass\n--> 181         return complex_number.ComplexNumber(self, x, im)\n    182\n    183     def _coerce_impl(self, x):\n\n/home/grout/sage/devel/sage-main/sage/graphs/complex_number.pyx in sage.rings.complex_number.ComplexNumber.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce to a ComplexNumber\n```\n\nI'm not sure what it should do, but maybe call n() on each entry would make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1294\n\n",
+    "closed_at": "2008-01-21T05:39:25Z",
     "created_at": "2007-11-27T23:13:24Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_001294.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "v.n() function blows up when v is a vector",
+    "title": "[with patch, with positive review] v.n() function blows up when v is a vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1294",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: v=vector(QQ,[1,2,3])

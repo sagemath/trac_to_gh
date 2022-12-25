@@ -1,9 +1,10 @@
-# Issue 6806: typo in patch of ticket #6396: primes_of_degree_one is broken for relative extensions
+# Issue 6806: [with patch, positive review] typo in patch of ticket #6396: primes_of_degree_one is broken for relative extensions
 
 archive/issues_006806.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @loefflerd @ncalexan\n\nThe patch trac_6396-deg1primes.patch at ticket #6396 has this docstring:\n\n```\n201             We test that #6396 is fixed. Note that the doctest is flagged as random\n202             since the string representation of ideals is somewhat unpredictable.::\n203\n204                 sage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\n205                 sage: ids = N.primes_of_degree_one_list(10); a # random\n206                 [Fractional ideal ((-1/2*b + 1/2)*a + 2),\n207                  Fractional ideal (-b*a + 1/2*b + 1/2),\n208                  Fractional ideal ((1/2*b + 3/2)*a - b),\n209                  Fractional ideal ((-1/2*b - 3/2)*a + b - 1),\n210                  Fractional ideal (-b*a - b + 1),\n211                  Fractional ideal (3*a + 1/2*b - 1/2),\n212                  Fractional ideal ((-3/2*b + 1/2)*a + 1/2*b - 1/2),\n213                  Fractional ideal ((-1/2*b - 5/2)*a - b + 1),\n214                  Fractional ideal (2*a - 3/2*b - 1/2),\n215                  Fractional ideal (3*a + 1/2*b + 5/2)]\n```\nIn particular, note line 205:\n\n```\nsage: ids = N.primes_of_degree_one_list(10); a # random\n```\nwhich the docstring flags as random. But I think the \"a\" on that line is a typo, because with Sage 4.1.1 this is what I get:\n\n```\nsage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: ids = N.primes_of_degree_one_list(10)\nsage: ids\n[Fractional ideal (2*a + 1/2*b - 1/2),\n Fractional ideal ((-1/2*b - 1/2)*a - b),\n Fractional ideal (b*a + 1/2*b + 3/2),\n Fractional ideal ((-1/2*b - 3/2)*a + b - 1),\n Fractional ideal ((-b + 1)*a + b),\n Fractional ideal (3*a + 1/2*b - 1/2),\n Fractional ideal ((1/2*b - 1/2)*a + 3/2*b - 1/2),\n Fractional ideal ((-1/2*b - 5/2)*a - b + 1),\n Fractional ideal (2*a - 3/2*b - 1/2),\n Fractional ideal (3*a + 1/2*b + 5/2)]\n```\nThat is, I replaced the \"a\" with \"ids\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6806\n\n",
+    "closed_at": "2009-09-16T01:12:25Z",
     "created_at": "2009-08-22T20:26:11Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006806.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "typo in patch of ticket #6396: primes_of_degree_one is broken for relative extensions",
+    "title": "[with patch, positive review] typo in patch of ticket #6396: primes_of_degree_one is broken for relative extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6806",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

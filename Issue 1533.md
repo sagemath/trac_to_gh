@@ -1,22 +1,23 @@
-# Issue 1533: Finish converting java3d to an spkg
+# Issue 1533: [with patch, spkg, positive review] Finish converting java3d to an spkg
 
 archive/issues_001533.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe java3d code (with the associated, rather large) Sun jar files is now duplicated in extcode and a java3d spkg. The new code from #1473 needs to be merged into the spkg, which installs files in $SAGE_LOCAL/java and the notebook/command line should use the files from there (not extcode). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1533\n\n",
+    "body": "Assignee: @robertwb\n\nThe java3d code (with the associated, rather large) Sun jar files is now duplicated in extcode and a java3d spkg. The new code from #1473 needs to be merged into the spkg, which installs files in $SAGE_LOCAL/java and the notebook/command line should use the files from there (not extcode). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1533\n\n",
+    "closed_at": "2007-12-22T18:58:49Z",
     "created_at": "2007-12-16T07:19:52Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Finish converting java3d to an spkg",
+    "title": "[with patch, spkg, positive review] Finish converting java3d to an spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1533",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 The java3d code (with the associated, rather large) Sun jar files is now duplicated in extcode and a java3d spkg. The new code from #1473 needs to be merged into the spkg, which installs files in $SAGE_LOCAL/java and the notebook/command line should use the files from there (not extcode). 
 

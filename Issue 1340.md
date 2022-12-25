@@ -1,16 +1,17 @@
-# Issue 1340: %cython seriously broken
+# Issue 1340: [with patch, with positive review] %cython broken if directory name contains spaces
 
 archive/issues_001340.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nTry this from the notebook:\n\n```\n%cython\n\ndef foo(e,f):\n  return e*f\n```\n\nand you'll get:\n\n```\nTraceback (most recent call last):    \n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/server/support.py\", line 303, in cython_import_all\n    create_local_c_file=create_local_c_file)\n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/server/support.py\", line 284, in cython_import\n    create_local_c_file=create_local_c_file)\n  File \"/home/malb/SAGE/local/lib/python2.5/site-packages/sage/misc/cython.py\", line 220, in cython\n    raise RuntimeError, \"Error converting %s to C:\\n%s\\n%s\"%(filename, log, err)\nRuntimeError: Error converting /home/malb/Texte/Talks/20071129 - SAGE - Paris/sage_notebook/worksheets/admin/2/code/sage47.spyx to C:\n\nCython (http://cython.org) is a compiler for code written in the\nCython language.  Cython is based on Pyrex by Greg Ewing.\n\nUsage: cython [options] sourcefile.pyx ...\n\nOptions:\n  -v, --version                  Display version number of cython compiler\n  -l, --create-listing           Write error messages to a listing file\n  -I, --include-dir <directory>  Search for include files in named directory\n                                 (multiply include directories are allowed).\n  -o, --output-file <filename>   Specify name of generated C file\n  -p, --embed-positions          If specified, the positions in Cython files of each\n                                 function definition is embedded in its docstring.\n  -z, --pre-import <module>      If specified, assume undeclared names in this \n                                 module. Emulates the behavior of putting \n                                 \"from <module> import *\" at the top of the file. \n  --incref-local-binop           Force local an extra incref on local variables before\n                                 performing any binary operations.\n  -D, --no-docstrings            Remove docstrings.\n  -a, --annotate                 Produce an colorized version of the source.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1340\n\n",
+    "closed_at": "2007-12-14T05:14:38Z",
     "created_at": "2007-11-29T13:27:45Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "%cython seriously broken",
+    "title": "[with patch, with positive review] %cython broken if directory name contains spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1340",
     "user": "https://github.com/malb"

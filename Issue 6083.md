@@ -1,15 +1,16 @@
-# Issue 6083: speedup integer division
+# Issue 6083: [with new patch, with positive review] speedup integer division
 
 archive/issues_006083.json:
 ```json
 {
     "body": "Assignee: somebody\n\nremove _sig_on and _sig_off for small operands, specialize for int divisor\n\nIssue created by migration from https://trac.sagemath.org/ticket/6083\n\n",
+    "closed_at": "2009-07-04T02:09:23Z",
     "created_at": "2009-05-19T07:35:58Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
-    "title": "speedup integer division",
+    "title": "[with new patch, with positive review] speedup integer division",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6083",
     "user": "https://github.com/robertwb"

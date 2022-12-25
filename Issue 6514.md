@@ -1,15 +1,16 @@
-# Issue 6514: Boolean function for cryptography
+# Issue 6514: [with patch, positive review] Boolean function for cryptography
 
 archive/issues_006514.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @malb mvngu\n\nThis module provides a class to study properties such as nonlinearity, resiliency, correlation immunity, algebraic immunity and other cryptographic properties of Boolean functions.\n\nSome of these are still missing, but I think it is a good start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6514\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb mvngu\n\nKeywords: boolean function, cryptography\n\nThis module provides a class to study properties such as nonlinearity, resiliency, correlation immunity, algebraic immunity and other cryptographic properties of Boolean functions.\n\nSome of these are still missing, but I think it is a good start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6514\n\n",
+    "closed_at": "2009-09-02T08:02:06Z",
     "created_at": "2009-07-11T18:09:13Z",
     "labels": [
         "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Boolean function for cryptography",
+    "title": "[with patch, positive review] Boolean function for cryptography",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6514",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
@@ -18,6 +19,8 @@ archive/issues_006514.json:
 Assignee: somebody
 
 CC:  @malb mvngu
+
+Keywords: boolean function, cryptography
 
 This module provides a class to study properties such as nonlinearity, resiliency, correlation immunity, algebraic immunity and other cryptographic properties of Boolean functions.
 

@@ -3,7 +3,8 @@
 archive/issues_007908.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @jvkersch @kcrisman\n\nWorksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.\n\nPlease visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).\n\nCurrently, however, `interact` cells do not work in published worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7908\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @jvkersch @kcrisman\n\nWorksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.  Please visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).  Currently, however, `interact` cells do not work in published worksheets.\n\nTo enable live published `interact`s, apply the patch\n\n* http://boxen.math.washington.edu/home/mpatel/trac/7908/trac_7908-pub_interact_c11.patch\n\n**Note:** it depends on #7666 and its dependencies.  **Or** use this spkg with 4.3.1.alpha2:\n\n* http://boxen.math.washington.edu/home/mpatel/trac/7908/sagenb-0.5-7908c11.spkg\n\nPlease visit the Notebook Settings page to enable live public interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7908\n\n",
+    "closed_at": "2015-01-13T01:16:20Z",
     "created_at": "2010-01-12T13:26:52Z",
     "labels": [
         "component: notebook"
@@ -19,11 +20,17 @@ Assignee: @williamstein
 
 CC:  @williamstein @jvkersch @kcrisman
 
-Worksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.
+Worksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.  Please visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).  Currently, however, `interact` cells do not work in published worksheets.
 
-Please visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).
+To enable live published `interact`s, apply the patch
 
-Currently, however, `interact` cells do not work in published worksheets.
+* http://boxen.math.washington.edu/home/mpatel/trac/7908/trac_7908-pub_interact_c11.patch
+
+**Note:** it depends on #7666 and its dependencies.  **Or** use this spkg with 4.3.1.alpha2:
+
+* http://boxen.math.washington.edu/home/mpatel/trac/7908/sagenb-0.5-7908c11.spkg
+
+Please visit the Notebook Settings page to enable live public interacts.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7908
 

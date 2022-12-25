@@ -1,21 +1,22 @@
-# Issue 1922: change and update lprint
+# Issue 1922: [with patch; positive review] change and update lprint
 
 archive/issues_001922.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is an update for lprint().\n\n* renamed to pretty_print_default()\n* _show_hook is now pretty_print()\n\nBoth functions are smarter now.\n\nSomeone (me?) should go through latex.py and clean it out.  There are lots of other functions like jsMath(), typeset(), etc. that all appear to do the same thing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1922\n\n",
+    "body": "Assignee: boothby\n\nThis is an update for lprint().\n\n* renamed to pretty_print_default()\n* _show_hook is now pretty_print()\n\nBoth functions are smarter now.\n\nSomeone (me?) should go through latex.py and clean it out.  There are lots of other functions like jsMath(), typeset(), etc. that all appear to do the same thing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1922\n\n",
+    "closed_at": "2008-01-27T18:58:16Z",
     "created_at": "2008-01-25T08:03:08Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "change and update lprint",
+    "title": "[with patch; positive review] change and update lprint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1922",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 This is an update for lprint().
 

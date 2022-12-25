@@ -1,9 +1,10 @@
-# Issue 9616: segfault / NFS problems with parallel/decorate.py
+# Issue 9616: Errno 16 / NFS problems with parallel/decorate.py
 
 archive/issues_009616.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nKeywords: fork nfs segfault\n\nIn 4.5.2.alpha1, we have for many people:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 300:\n    sage: g()\nExpected:\n    '10'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_0/.nfs0000000000591f8700069d5c'\n    '10'\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 311:\n    sage: g()\nExpected:\n    'a'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_1/.nfs0000000000591f8d00069d5d'\n    'a'\n**********************************************************************\n```\nand so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.\n\nThis seems related to #9501.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9616\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nKeywords: fork nfs device resource busy\n\nIn 4.5.2.alpha1, we have for many people:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 300:\n    sage: g()\nExpected:\n    '10'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_0/.nfs0000000000591f8700069d5c'\n    '10'\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 311:\n    sage: g()\nExpected:\n    'a'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_1/.nfs0000000000591f8d00069d5d'\n    'a'\n**********************************************************************\n```\nand so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.\n\nThis seems related to #9501.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9616\n\n",
+    "closed_at": "2010-07-29T05:31:02Z",
     "created_at": "2010-07-28T02:51:53Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_009616.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "segfault / NFS problems with parallel/decorate.py",
+    "title": "Errno 16 / NFS problems with parallel/decorate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9616",
     "user": "https://github.com/dandrake"
@@ -21,7 +22,7 @@ Assignee: mvngu
 
 CC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein
 
-Keywords: fork nfs segfault
+Keywords: fork nfs device resource busy
 
 In 4.5.2.alpha1, we have for many people:
 

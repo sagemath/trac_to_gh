@@ -1,9 +1,10 @@
-# Issue 1930: Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs
+# Issue 1930: [with spkg] Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs, remove recommended.tar.gzs
 
 archive/issues_001930.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nsubject says it all, a updated spkg is coming.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1930\n\n",
+    "closed_at": "2008-01-26T10:45:16Z",
     "created_at": "2008-01-26T08:05:42Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001930.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs",
+    "title": "[with spkg] Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs, remove recommended.tar.gzs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1930",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

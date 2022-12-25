@@ -1,9 +1,10 @@
-# Issue 1792: Make Install problem with DESTDIR/sage script
+# Issue 1792: Remove "make install"
 
 archive/issues_001792.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nwhen running \"make install\" a script will be created in $DESTDIR called sage. This is intended to be the main executable for sage. However, SAGE_ROOT is not set correctly in this file. It would be nice if the make install process correctly set SAGE_ROOT=$DESTDIR during its installation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1792\n\n",
+    "body": "Assignee: mabshoff\n\nWith the new binary packaging, `make install` is not supported (and it probably was never really supported anyway).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1792\n\n",
+    "closed_at": "2016-05-24T16:41:17Z",
     "created_at": "2008-01-16T04:56:34Z",
     "labels": [
         "component: relocation",
@@ -11,15 +12,15 @@ archive/issues_001792.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
-    "title": "Make Install problem with DESTDIR/sage script",
+    "title": "Remove \"make install\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1792",
     "user": "https://trac.sagemath.org/admin/accounts/users/pgrinber"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
-when running "make install" a script will be created in $DESTDIR called sage. This is intended to be the main executable for sage. However, SAGE_ROOT is not set correctly in this file. It would be nice if the make install process correctly set SAGE_ROOT=$DESTDIR during its installation.
+With the new binary packaging, `make install` is not supported (and it probably was never really supported anyway).
 
 Issue created by migration from https://trac.sagemath.org/ticket/1792
 

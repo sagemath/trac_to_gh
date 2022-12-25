@@ -1,16 +1,17 @@
-# Issue 2491: Showing source from sloane_functions
+# Issue 2491: [with patch, positive review] Showing source from sloane_functions
 
 archive/issues_002491.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFrom IRC #sage-devel\n\n```\n<mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??\n<jaap> mhansen sage: sloane.A000001??\n<jaap> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n<mhansen> jaap: A bit earlier I had said that  sloane.A000001?? doesn't work because of the way the sloane object works.\n<jaap> ok, but how about the OEIS user who wants to see how things work?\n<mhansen> If it's a bug, then it should be reported.\n<jaap> I think so\n```\n\n\n\n```\nsage: sloane.A000045\n Fibonacci numbers with index n >= 0\n\nsage: sloane.A000045?\n\nsage: sloane.A000045??\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nsage: sage.combinat.sloane_functions.A000045??\n\nworks ok.\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2491\n\n",
+    "closed_at": "2008-08-27T02:17:20Z",
     "created_at": "2008-03-12T14:13:50Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Showing source from sloane_functions",
+    "title": "[with patch, positive review] Showing source from sloane_functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2491",
     "user": "https://github.com/jaapspies"

@@ -1,17 +1,17 @@
-# Issue 4958: MPolynomialIdeal.reduced_basis?? returns decorator source
+# Issue 4958: [with patch, positive review] MPolynomialIdeal.reduced_basis?? returns decorator source
 
 archive/issues_004958.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis problem was solved before in #4672 for another decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4958\n\n",
+    "closed_at": "2009-06-01T04:31:33Z",
     "created_at": "2009-01-09T15:59:40Z",
     "labels": [
         "component: commutative algebra",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "MPolynomialIdeal.reduced_basis?? returns decorator source",
+    "title": "[with patch, positive review] MPolynomialIdeal.reduced_basis?? returns decorator source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4958",
     "user": "https://github.com/malb"

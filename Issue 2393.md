@@ -4,6 +4,7 @@ archive/issues_002393.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIt is very annoying when trying to run hg under a Sage shell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2393\n\n",
+    "closed_at": "2008-10-30T08:45:39Z",
     "created_at": "2008-03-05T06:20:44Z",
     "labels": [
         "component: packages: standard",

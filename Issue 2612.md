@@ -1,16 +1,17 @@
-# Issue 2612: String to Integer Conversion
+# Issue 2612: [with simple patch, positive review] String to Integer Conversion
 
 archive/issues_002612.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSince python does well with a leading sign (+ or -)\n\n```\nsage: int('+1')\n1\nsage: int('-1')\n-1\n```\nthe sage Integers should do the same.\n\n```\nsage: Integer('-1')\n-1\nsage: Integer('+1')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mrk/<ipython console> in <module>()\n\n/home/mrk/integer.pyx in sage.rings.integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to convert x (=+1) to an integer\n```\nSo the case of a leading \"+\" must be fixed\n\nIssue created by migration from https://trac.sagemath.org/ticket/2612\n\n",
+    "closed_at": "2008-03-28T08:37:51Z",
     "created_at": "2008-03-20T12:40:51Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "String to Integer Conversion",
+    "title": "[with simple patch, positive review] String to Integer Conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2612",
     "user": "https://github.com/m-r-k"

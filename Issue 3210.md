@@ -1,21 +1,24 @@
-# Issue 3210: [with patch, needs review] plotting Z_p as a fractal image
+# Issue 3210: [with patch, with positive review] plotting Z_p as a fractal image
 
 archive/issues_003210.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSee:\n\nAlbert A. Cuoco, Visualizing the p-adic Integers, The American Mathematical Monthly, Vol. 98, No. 4 (Apr., 1991), pp. 355-364\n\nhttp://www.jstor.org/stable/2323809?&Search=yes&term=numbers&term=p-adic&list=hide&searchUri=%2Faction%2FdoBasicSearch%3FQuery%3Dp-adic%2Bnumbers%26jc%3Dj100069&item=2&ttl=190&returnArticleService=showArticle\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3210\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_craigcitro\n\nSee:\n\nAlbert A. Cuoco, Visualizing the p-adic Integers, The American Mathematical Monthly, Vol. 98, No. 4 (Apr., 1991), pp. 355-364\n\nhttp://www.jstor.org/stable/2323809?&Search=yes&term=numbers&term=p-adic&list=hide&searchUri=%2Faction%2FdoBasicSearch%3FQuery%3Dp-adic%2Bnumbers%26jc%3Dj100069&item=2&ttl=190&returnArticleService=showArticle\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3210\n\n",
+    "closed_at": "2008-06-23T10:20:58Z",
     "created_at": "2008-05-15T06:45:24Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] plotting Z_p as a fractal image",
+    "title": "[with patch, with positive review] plotting Z_p as a fractal image",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3210",
     "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_craigcitro
 
 See:
 

@@ -1,16 +1,17 @@
-# Issue 3963: [with patch, needs review] bug in converting Sage's rationals to Sympy rationals
+# Issue 3963: [with patch, positive review] bug in converting Sage's rationals to Sympy rationals
 
 archive/issues_003963.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nfrom sympy import Symbol\nQQ(1)+Symbol('x')*QQ(2)\n\nproduces an error:\n\nTypeError                                 Traceback (most recent call\nlast)\n\n/Applications/sage/<ipython console> in <module>()\n\n/Applications/sage/element.pyx in\nsage.structure.element.ModuleElement.__add__ (sage/structure/element.c:\n5606)()\n\n/Applications/sage/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/\ncoerce.c:6288)()\n\nTypeError: unsupported operand parent(s) for '+': 'Rational Field' and\n'<class 'sympy.core.mul.Mul'>'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3963\n\n",
+    "closed_at": "2008-08-27T00:57:21Z",
     "created_at": "2008-08-27T00:52:43Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] bug in converting Sage's rationals to Sympy rationals",
+    "title": "[with patch, positive review] bug in converting Sage's rationals to Sympy rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3963",
     "user": "https://github.com/mwhansen"

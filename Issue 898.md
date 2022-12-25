@@ -3,7 +3,8 @@
 archive/issues_000898.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached patch wraps ntl.GF2. This is quite useless but provided for completeness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/898\n\n",
+    "body": "Assignee: @malb\n\nThe attached patch wraps ntl.GF2. This is quite useless but provided for completeness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/898\n\n",
+    "closed_at": "2007-10-23T21:13:31Z",
     "created_at": "2007-10-14T20:50:49Z",
     "labels": [
         "component: interfaces",
@@ -16,7 +17,7 @@ archive/issues_000898.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 The attached patch wraps ntl.GF2. This is quite useless but provided for completeness.
 

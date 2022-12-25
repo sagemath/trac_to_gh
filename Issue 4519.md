@@ -1,9 +1,10 @@
-# Issue 4519: [with patch, needs review] problem with build code
+# Issue 4519: [with patch, positive review] problem with build code
 
 archive/issues_004519.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere's a problem with the build code that was first introduced by #4377. Here's an example of how to see this: pick your favorite `.pyx` file (I was using `gen.pyx`), and break it -- just make some syntax error, and save. Now do a `sage -br` -- you see that it says there's an error ... but then it still runs sage! Oops.\n\nThe underlying problem is that if we pass back a different exit code (in the case I was running into, it was 256), the `python setup.py install` still returns 0. \n\nThe attached patch fixes the trouble. Is there a way to test something like this?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4519\n\n",
+    "closed_at": "2008-11-15T05:03:00Z",
     "created_at": "2008-11-14T06:26:15Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004519.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] problem with build code",
+    "title": "[with patch, positive review] problem with build code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4519",
     "user": "https://github.com/craigcitro"

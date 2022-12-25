@@ -1,16 +1,17 @@
-# Issue 2832: [with patch; needs review] mistake in tutorial
+# Issue 2832: [with patch; positive review] mistake in tutorial
 
 archive/issues_002832.json:
 ```json
 {
     "body": "Assignee: tba\n\nI just got this email from Geert Heldager Nielsen\n\n```\nIn Sage Tutorial Chapter 5.2 ( Creating compiled code ) the result of\nfactorial(50) is off with a factor 2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2832\n\n",
+    "closed_at": "2008-04-06T22:31:25Z",
     "created_at": "2008-04-06T22:08:43Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] mistake in tutorial",
+    "title": "[with patch; positive review] mistake in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2832",
     "user": "https://github.com/williamstein"

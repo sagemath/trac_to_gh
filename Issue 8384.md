@@ -4,6 +4,7 @@ archive/issues_008384.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nCC:  @jdemeyer\n\nThe web page http://wiki.sagemath.org/SageDays is not coherent with\nhttp://wiki.sagemath.org/MyStartingPage#sagedays: the former only\nmentions SD24 in the upcoming events, and mentions the out-dated\n`Sage Days ?? -- Cambridge, MA (dates TBA, but sometime in fall 2009)`\nwhereas the later mentions up to SD26, and points to yet another\npage http://wiki.sagemath.org/Workshops!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8384\n\n",
+    "closed_at": "2011-04-21T08:45:29Z",
     "created_at": "2010-02-26T23:33:11Z",
     "labels": [
         "component: website/wiki",

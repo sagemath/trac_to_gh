@@ -1,9 +1,10 @@
-# Issue 4324: [with patch, needs review] fix storage of GBs for PolyBoRi
+# Issue 4324: [with patch, positive review] fix storage of GBs for PolyBoRi
 
 archive/issues_004324.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  polybori\n\nThe current code prevents certain GB calculations to finish because it throws a ValueError just before the GB is returned (quit annoying).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4324\n\n",
+    "closed_at": "2008-10-26T14:13:30Z",
     "created_at": "2008-10-19T15:54:13Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_004324.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] fix storage of GBs for PolyBoRi",
+    "title": "[with patch, positive review] fix storage of GBs for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4324",
     "user": "https://github.com/malb"

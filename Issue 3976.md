@@ -1,9 +1,10 @@
-# Issue 3976: [with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py
+# Issue 3976: [with patch, positive review] improve doctests to expect.py, maxima.py, and lie.py
 
 archive/issues_003976.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3976\n\n",
+    "closed_at": "2008-08-28T22:57:14Z",
     "created_at": "2008-08-28T19:39:29Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_003976.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py",
+    "title": "[with patch, positive review] improve doctests to expect.py, maxima.py, and lie.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3976",
     "user": "https://github.com/mwhansen"

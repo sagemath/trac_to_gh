@@ -1,22 +1,23 @@
-# Issue 5561: is_primitive does not belong in Polynomial because its definition varies
+# Issue 5561: [with new patch, positive review] is_primitive does not belong in Polynomial because its definition varies
 
 archive/issues_005561.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @JohnCremona cwitty\n\n(I'm not a mathematician.  Please correct any mistakes!)\n\nThe current `Polynomial` class (`sage/rings/polynomial/polynomial_element.pyx`) includes an `is_primitive` method.  However, field theory and ring theory have different definitions of a \"primitive polynomial.\"  Consequently, this base class for all polynomials is not an appropriate place for this method.  \n\nC.Witty suggested on IRC that one way to resolve the issue is to split up the polynomial classes into \"polynomials over fields\" and \"polynomials over rings.\"  Then these new base classes (and/or their derived classes) can implement `is_primitive` as appropriate.  In other words, create `PolynomialOverField` class and `PolynomialOverRing` classes that derive from `Polynomial`.  The other (univariate) polynomial classes in sage/rings/polynomial/ should then derive from either `PolynomialOverField` or `PolynomialOverRing` to pick up the correct `is_primitive` definition.\n\nThere may be other and possibly better ways to resolve the issue.\n\nJohn Cremona added this comment:\n\n  What Ryan suggest for is_primitive might be a good way to go;  as far\n  as I know the meaning which is relevant here, namely \"irreducible and\n  the root generates the multiplicative group of the extension\" is only\n  relevant over finite fields (and no other fields).  The other meaning\n  (coprime coefficients) is certainly not very useful over fields as it\n  is the same as \"non-zero\", so we are left with the question \"what, if\n  anything, should we take is_primitive() to mean for polynomials in\n  F[x] where F is an infinite field?\"\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5561\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @JohnCremona cwitty\n\n(I'm not a mathematician.  Please correct any mistakes!)\n\nThe current `Polynomial` class (`sage/rings/polynomial/polynomial_element.pyx`) includes an `is_primitive` method.  However, field theory and ring theory have different definitions of a \"primitive polynomial.\"  Consequently, this base class for all polynomials is not an appropriate place for this method.  \n\nC.Witty suggested on IRC that one way to resolve the issue is to split up the polynomial classes into \"polynomials over fields\" and \"polynomials over rings.\"  Then these new base classes (and/or their derived classes) can implement `is_primitive` as appropriate.  In other words, create `PolynomialOverField` class and `PolynomialOverRing` classes that derive from `Polynomial`.  The other (univariate) polynomial classes in sage/rings/polynomial/ should then derive from either `PolynomialOverField` or `PolynomialOverRing` to pick up the correct `is_primitive` definition.\n\nThere may be other and possibly better ways to resolve the issue.\n\nJohn Cremona added this comment:\n\n  What Ryan suggest for is_primitive might be a good way to go;  as far\n  as I know the meaning which is relevant here, namely \"irreducible and\n  the root generates the multiplicative group of the extension\" is only\n  relevant over finite fields (and no other fields).  The other meaning\n  (coprime coefficients) is certainly not very useful over fields as it\n  is the same as \"non-zero\", so we are left with the question \"what, if\n  anything, should we take is_primitive() to mean for polynomials in\n  F[x] where F is an infinite field?\"\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5561\n\n",
+    "closed_at": "2009-04-13T03:36:31Z",
     "created_at": "2009-03-18T17:21:16Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "is_primitive does not belong in Polynomial because its definition varies",
+    "title": "[with new patch, positive review] is_primitive does not belong in Polynomial because its definition varies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5561",
     "user": "https://github.com/rhinton"
 }
 ```
-Assignee: tbd
+Assignee: @rhinton
 
 CC:  @JohnCremona cwitty
 

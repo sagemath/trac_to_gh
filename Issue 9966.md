@@ -3,11 +3,11 @@
 archive/issues_009966.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @burcin @qed777 @jdemeyer @nexttime\n\nThis will be very useful for an automated testing framework (and testbed notebook). \n\nIssue created by migration from https://trac.sagemath.org/ticket/9967\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @burcin @qed777 @jdemeyer @nexttime\n\nThis will be very useful for an automated testing framework (and testbed notebook). \n\nIssue created by migration from https://trac.sagemath.org/ticket/9967\n\n",
+    "closed_at": "2014-01-30T13:41:05Z",
     "created_at": "2010-09-22T05:18:11Z",
     "labels": [
-        "component: doctest",
-        "bug"
+        "component: doctest framework"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Allow concurrent running/testing of multiple sage branches",
@@ -16,7 +16,7 @@ archive/issues_009966.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: mvngu
+Assignee: @dandrake
 
 CC:  @burcin @qed777 @jdemeyer @nexttime
 

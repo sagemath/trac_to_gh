@@ -1,16 +1,17 @@
-# Issue 6454: improve sbox linear and differences matrices computation
+# Issue 6454: [with patch, positive review] improve sbox linear and differences matrices computation
 
 archive/issues_006454.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @malb\n\nIn particular, use walsh transform for linear_approximation_matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6454\n\n",
+    "closed_at": "2009-07-16T21:31:06Z",
     "created_at": "2009-07-01T09:29:14Z",
     "labels": [
         "component: cryptography",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "improve sbox linear and differences matrices computation",
+    "title": "[with patch, positive review] improve sbox linear and differences matrices computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6454",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

@@ -1,25 +1,32 @@
-# Issue 6897: Migrate Notebook to Django
+# Issue 6897: Migrate Notebook to a WSGI Framework (Django, Pylons, Werkzeug,...)
 
 archive/issues_006897.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  rkirov @mwhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- seehttp://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>    (1) getting familiar with Django, if you don't already know it.\n> \n>    (2) reading through the current codenode codebase\n> \n>    (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
+    "body": "Assignee: @TimDumol\n\nCC:  rkirov @mwhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\nPlan:\n\n* Replace `guard.py` and `avatars.py` with Django user authentication.\n* Replace `twist.py` with Django Views.\n* Change `run_notebook.py` to launch Twisted as a WSGI container.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- see http://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>    (1) getting familiar with Django, if you don't already know it.\n> \n>    (2) reading through the current codenode codebase\n> \n>    (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
+    "closed_at": "2013-05-16T07:46:11Z",
     "created_at": "2009-09-06T03:18:54Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Migrate Notebook to Django",
+    "title": "Migrate Notebook to a WSGI Framework (Django, Pylons, Werkzeug,...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6897",
     "user": "https://github.com/TimDumol"
 }
 ```
-Assignee: boothby
+Assignee: @TimDumol
 
 CC:  rkirov @mwhansen
 
 Moving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.
+
+Plan:
+
+* Replace `guard.py` and `avatars.py` with Django user authentication.
+* Replace `twist.py` with Django Views.
+* Change `run_notebook.py` to launch Twisted as a WSGI container.
 
 1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:
 > <SNIP>
@@ -27,7 +34,7 @@ Moving Notebook to Django will abstract the server and  user authentication, and
 > I'm not at all convinced that using twisted in any way (web or web2) is a
 > good idea for the Sage notebook.   I plan to revisit this in late
 > September.    The first thing I plan to do is consider switching from
-> twisted to Django, as is done in codenode -- seehttp://codenode.org/--
+> twisted to Django, as is done in codenode -- see http://codenode.org/--
 > hopefully, even sharing code with that project.   Of course, twisted could
 > still get used at a certain level behind the scenes, but the Sage notebook
 > would then no longer explicitly use it.

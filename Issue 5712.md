@@ -4,6 +4,7 @@ archive/issues_005712.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  acleone @williamstein boothby @qed777\n\nMore precisely, one could keep the alert, but make it so that it can *not* appear if it already appeared in the last 5 seconds (say).  It is so annoying!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5712\n\n",
+    "closed_at": "2010-05-04T04:42:27Z",
     "created_at": "2009-04-08T14:46:55Z",
     "labels": [
         "component: notebook",

@@ -1,15 +1,16 @@
-# Issue 6621: [with patch, needs review] Permutation.inverse too slow
+# Issue 6621: [with patch, positive review] Permutation.inverse too slow
 
 archive/issues_006621.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nThe running time of the current implementation of Permutation.inverse is quadratic in the length of the permutation. The attached small patch is linear.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6621\n\n",
+    "closed_at": "2009-07-25T22:01:52Z",
     "created_at": "2009-07-25T17:31:34Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Permutation.inverse too slow",
+    "title": "[with patch, positive review] Permutation.inverse too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6621",
     "user": "https://trac.sagemath.org/admin/accounts/users/aclaesson"

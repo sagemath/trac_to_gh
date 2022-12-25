@@ -4,6 +4,7 @@ archive/issues_008599.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nFor 3d points, one must use the argument `size`  :\n\n```\nsage: point((2,3,4), size=100)\n```\n\nBut for 2d points, one must use the argument `pointsize`  :\n\n```\nsage: point((2,3), size=100)\nverbose 0 (136: primitive.py, options) WARNING: Ignoring option 'size'=100\nverbose 0 (136: primitive.py, options) \nThe allowed options for Point set defined by 1 point(s) are:\n    alpha          How transparent the line is.                                \n    faceted        If True color the edge of the point.                        \n    hue            The color given as a hue.                                   \n    pointsize      How big the point is.                                       \n    rgbcolor       The color as an RGB tuple.                                  \n    zorder         The layer level in which to draw                            \n\n\nsage: point((2,3), pointsize=100)\n```\n\nI think `pointsize` is kind of redundant and `size` would not be ambiguous. At least, if we keep `pointsize` for backward compatibility reasons, I would like\n\n```\nsage: point((2,3), size=100)\n```\n\nto work.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8599\n\n",
+    "closed_at": "2010-04-16T18:51:09Z",
     "created_at": "2010-03-24T15:30:11Z",
     "labels": [
         "component: graphics",

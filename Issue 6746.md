@@ -4,6 +4,7 @@ archive/issues_006746.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @nathanncohen\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9b8016e17cc81128) thread, Kiran Kedlaya reported a problem with building cliquer under a 64-bit platform:\n\n```\nOn 64-bit Fedora 10, I get a build failure in cliquer. The relevant\nsnippet from the install log is below.\n\nThis looks like a case of 32/64 confusion, which I am no stranger to.\nThis machine runs on a primarily 32-bit network, and in the past we've\ndiscovered various build problems due to this. For instance, the local\ngcc in /usr/bin is 64-bit, but the NFS one in /usr/local/bin is 32-\nbit, so I have to configure my path appropriately. In this case, it's\nsomehow trying to find stubs-32.h instead of stubs-64.h, but I don't\nknow why.\n```\nJohn Palmieri also reported at ticket #6681 a similar problem with 64-bit OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6746\n\n",
+    "closed_at": "2009-09-25T08:07:36Z",
     "created_at": "2009-08-14T17:22:13Z",
     "labels": [
         "component: packages: standard",

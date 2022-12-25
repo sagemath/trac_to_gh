@@ -3,7 +3,8 @@
 archive/issues_002067.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn Section 5.3 of the tutorial, the following string is misformatted:\n\n\"bash ./factor20062*17*59bash \"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2067\n\n",
+    "body": "Assignee: mvngu\n\nIn Section 5.3 of the tutorial, the following string is misformatted:\n\n\"bash ./factor20062*17*59bash \"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2067\n\n",
+    "closed_at": "2008-09-19T22:10:52Z",
     "created_at": "2008-02-05T22:39:43Z",
     "labels": [
         "component: documentation",
@@ -17,7 +18,7 @@ archive/issues_002067.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: tba
+Assignee: mvngu
 
 In Section 5.3 of the tutorial, the following string is misformatted:
 

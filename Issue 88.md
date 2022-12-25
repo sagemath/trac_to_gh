@@ -3,11 +3,11 @@
 archive/issues_000088.json:
 ```json
 {
-    "body": "Assignee: dmharvey\n\nI want to start writing a document on the wiki explaining various ways to make Pyrex code even faster than it already is. Each technique should have examples, including the generated C code and some timing experiments. We've started discovering quite a few things, and it would be helpful for new developers to be able to learn these techniques quickly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/88\n\n",
+    "body": "Assignee: somebody\n\nI want to start writing a document on the wiki explaining various ways to make Pyrex code even faster than it already is. Each technique should have examples, including the generated C code and some timing experiments. We've started discovering quite a few things, and it would be helpful for new developers to be able to learn these techniques quickly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/88\n\n",
+    "closed_at": "2008-02-27T11:08:55Z",
     "created_at": "2006-09-26T22:31:30Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "start writing \"How To Make Pyrex FAST\"",
@@ -16,7 +16,7 @@ archive/issues_000088.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: dmharvey
+Assignee: somebody
 
 I want to start writing a document on the wiki explaining various ways to make Pyrex code even faster than it already is. Each technique should have examples, including the generated C code and some timing experiments. We've started discovering quite a few things, and it would be helpful for new developers to be able to learn these techniques quickly.
 

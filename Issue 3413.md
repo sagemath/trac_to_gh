@@ -1,9 +1,10 @@
-# Issue 3413: [with patch; needs review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest
+# Issue 3413: [with patch; with positive review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest
 
 archive/issues_003413.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTwo of the doctests for time_series.pyx have endianess issues on osxppc.  I fixed them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3413\n\n",
+    "closed_at": "2008-06-16T04:56:15Z",
     "created_at": "2008-06-13T14:21:32Z",
     "labels": [
         "component: finance",
@@ -11,7 +12,7 @@ archive/issues_003413.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest",
+    "title": "[with patch; with positive review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3413",
     "user": "https://github.com/williamstein"

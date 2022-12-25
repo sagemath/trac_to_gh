@@ -4,6 +4,7 @@ archive/issues_006907.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
+    "closed_at": "2010-01-20T14:07:36Z",
     "created_at": "2009-09-09T02:42:38Z",
     "labels": [
         "component: graphics",

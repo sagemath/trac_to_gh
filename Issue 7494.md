@@ -3,7 +3,8 @@
 archive/issues_007494.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nDid you know there is a directory SAGE_ROOT/examples?   Do you care?  Because if nobody seriously cares, I'm going to *delete it* from future versions of Sage, since it is still a mess, and the last nontrivial commit was 1.5 years ago (!):\n\n```\nchangeset:   158:d18dad210d3b\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Mon Apr 14 03:08:48 2008 -0700\nsummary:     Extract sagetex.py and sagetex.sty\n```\nI can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7494\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nKeywords: sd32\n\nDid you know there is a directory SAGE_ROOT/examples?   Do you care?  Because if nobody seriously cares, I'm going to *delete it* from future versions of Sage, since it is still a mess, and the last nontrivial commit was 1.5 years ago (!):\n\n```\nchangeset:   158:d18dad210d3b\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Mon Apr 14 03:08:48 2008 -0700\nsummary:     Extract sagetex.py and sagetex.sty\n```\nI can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares. \n\n**Apply**:\n1. [attachment:trac_7494.patch] to the Sage library repo\n2. [attachment:trac_7494-ref.patch] to the Sage library repo\n3. [attachment:trac_7494-scripts.patch] to the **scripts** repo\n4. [attachment:trac_7494-root-repo.patch] to the **Sage root** repository\n\n**Release Manager:**\n\nDelete `$SAGE_ROOT/examples/` as part of this ticket. \n\n(This should happen automatically, i.e., the directory should vanish, when `sdist`ing.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7494\n\n",
+    "closed_at": "2011-10-05T12:19:11Z",
     "created_at": "2009-11-19T22:55:57Z",
     "labels": [
         "component: misc"
@@ -19,6 +20,8 @@ Assignee: tbd
 
 CC:  @wdjoyner
 
+Keywords: sd32
+
 Did you know there is a directory SAGE_ROOT/examples?   Do you care?  Because if nobody seriously cares, I'm going to *delete it* from future versions of Sage, since it is still a mess, and the last nontrivial commit was 1.5 years ago (!):
 
 ```
@@ -27,7 +30,20 @@ user:        Mike Hansen <mhansen@gmail.com>
 date:        Mon Apr 14 03:08:48 2008 -0700
 summary:     Extract sagetex.py and sagetex.sty
 ```
-I can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares.
+I can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares. 
+
+**Apply**:
+1. [attachment:trac_7494.patch] to the Sage library repo
+2. [attachment:trac_7494-ref.patch] to the Sage library repo
+3. [attachment:trac_7494-scripts.patch] to the **scripts** repo
+4. [attachment:trac_7494-root-repo.patch] to the **Sage root** repository
+
+**Release Manager:**
+
+Delete `$SAGE_ROOT/examples/` as part of this ticket. 
+
+(This should happen automatically, i.e., the directory should vanish, when `sdist`ing.)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7494
 

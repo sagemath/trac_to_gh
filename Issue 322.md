@@ -4,6 +4,7 @@ archive/issues_000322.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCreate a system for adding code to a notebook that can be executed by code in any cell in the worksheet. Before a chuck of code could become global the system would check it to make sure it does overwrite current SAGE functions, variables, and classes. Maybe the system could do that by executing the code and using the name space key in the various dictionaries to then see if a not found error is returned when name space called. It would be also be important for it to be easy to download a code package to be made global. I want this so I can make apps and use them from any cell in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/322\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2007-03-15T09:20:37Z",
     "labels": [
         "component: notebook",

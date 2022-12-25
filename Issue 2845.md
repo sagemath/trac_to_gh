@@ -1,9 +1,10 @@
-# Issue 2845: [with patch, needs review] PolyBoRi assertion errror
+# Issue 2845: [with patch, positive review] PolyBoRi assertion errror
 
 archive/issues_002845.json:
 ```json
 {
     "body": "Assignee: @malb\n\nApparently, PolyBoRi doesn't like to call `lmDeg` on a zero polynomial. The attached patch catches this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2845\n\n",
+    "closed_at": "2008-04-07T20:06:51Z",
     "created_at": "2008-04-07T16:14:50Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_002845.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] PolyBoRi assertion errror",
+    "title": "[with patch, positive review] PolyBoRi assertion errror",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2845",
     "user": "https://github.com/malb"

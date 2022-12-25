@@ -3,7 +3,8 @@
 archive/issues_000130.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you type a loop at the sage prompt:\n\n---\nsage: for i in range(1,3):\n   ...:     print i\n   ...:\n1\n2\n\n---\n\nand then do an \"arrow up\" key, it seems like the loop is recalled. However, it seems only the first line is actually still there:\n\n---\nsage: for i in range(1,3):\n    print i\n   ....:     print \"done\"\n   ....:\ndone\ndone\n\n---\n\nIssue created by migration from https://trac.sagemath.org/ticket/130\n\n",
+    "body": "Assignee: @williamstein\n\nIf you type a loop at the sage prompt:\n\n```\n----------------------------------\nsage: for i in range(1,3):\n   ...:     print i\n   ...:\n1\n2\n----------------------------------\n```\n\nand then do an \"arrow up\" key, it seems like the loop is recalled. However, it seems only the first line is actually still there:\n\n```\n-----------------------------------------\nsage: for i in range(1,3):\n    print i\n   ....:     print \"done\"\n   ....:\ndone\ndone\n-----------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/130\n\n",
+    "closed_at": "2007-01-19T09:38:07Z",
     "created_at": "2006-10-14T05:44:23Z",
     "labels": [
         "component: user interface",
@@ -20,26 +21,29 @@ Assignee: @williamstein
 
 If you type a loop at the sage prompt:
 
----
+```
+----------------------------------
 sage: for i in range(1,3):
    ...:     print i
    ...:
 1
 2
-
----
+----------------------------------
+```
 
 and then do an "arrow up" key, it seems like the loop is recalled. However, it seems only the first line is actually still there:
 
----
+```
+-----------------------------------------
 sage: for i in range(1,3):
     print i
    ....:     print "done"
    ....:
 done
 done
+-----------------------------------------
+```
 
----
 
 Issue created by migration from https://trac.sagemath.org/ticket/130
 

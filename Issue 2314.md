@@ -3,7 +3,8 @@
 archive/issues_002314.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nKeywords: coercion\n\nThis is a place for comments and files on the current coercion rewrite.  See also http://wiki.sagemath.org/days7/coercion\n\nIssue created by migration from https://trac.sagemath.org/ticket/2314\n\n",
+    "body": "Assignee: @robertwb\n\nKeywords: coercion\n\nThis is a place for comments and files on the current coercion rewrite.  See also http://wiki.sagemath.org/days7/coercion and http://cython.org/coercion/hgwebdir.cgi/sage-coerce/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2314\n\n",
+    "closed_at": "2008-10-28T16:45:16Z",
     "created_at": "2008-02-26T11:13:52Z",
     "labels": [
         "component: coercion"
@@ -19,7 +20,7 @@ Assignee: @robertwb
 
 Keywords: coercion
 
-This is a place for comments and files on the current coercion rewrite.  See also http://wiki.sagemath.org/days7/coercion
+This is a place for comments and files on the current coercion rewrite.  See also http://wiki.sagemath.org/days7/coercion and http://cython.org/coercion/hgwebdir.cgi/sage-coerce/
 
 Issue created by migration from https://trac.sagemath.org/ticket/2314
 

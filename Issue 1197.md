@@ -3,7 +3,8 @@
 archive/issues_001197.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nA first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. \n\nA patch bundle that applies cleanly and the corresponding spkg are both\navailable here:\n\n    http://sage.math.washington.edu/home/was/cremona/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1197\n\n",
+    "body": "Assignee: @williamstein\n\nA first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. \n\nA patch bundle that applies cleanly and the corresponding spkg are both available here:\n\n    http://sage.math.washington.edu/home/was/cremona/\n\nThe wrapper code now has 100% doctest coverage, is structured correctly, and provides some useful functionality.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1197\n\n",
+    "closed_at": "2007-11-18T08:25:34Z",
     "created_at": "2007-11-18T06:28:08Z",
     "labels": [
         "component: modular forms"
@@ -19,10 +20,11 @@ Assignee: @williamstein
 
 A first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. 
 
-A patch bundle that applies cleanly and the corresponding spkg are both
-available here:
+A patch bundle that applies cleanly and the corresponding spkg are both available here:
 
     http://sage.math.washington.edu/home/was/cremona/
+
+The wrapper code now has 100% doctest coverage, is structured correctly, and provides some useful functionality.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/1197
 

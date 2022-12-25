@@ -1,16 +1,17 @@
-# Issue 7063: SageNB -- Get SageNB to work seamlessly with old notebook saves
+# Issue 7063: [with patch; positive review] SageNB -- Get SageNB to work seamlessly with old notebook saves
 
 archive/issues_007063.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n[ ] make sure that the old notebook directory \"just works\" with the new notebook:\nproblem -- old notebooks unpickle into the old notebook code!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7063\n\n",
+    "closed_at": "2009-09-29T06:28:34Z",
     "created_at": "2009-09-29T04:37:12Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "SageNB -- Get SageNB to work seamlessly with old notebook saves",
+    "title": "[with patch; positive review] SageNB -- Get SageNB to work seamlessly with old notebook saves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7063",
     "user": "https://github.com/TimDumol"

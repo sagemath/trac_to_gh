@@ -1,16 +1,17 @@
-# Issue 4359: [with patch, needs review] Huge number of small fixes to modular forms code
+# Issue 4359: [with patch, positive review] Huge number of small fixes to modular forms code
 
 archive/issues_004359.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis is just a big bundle of fixes to the modular forms code that I had piled up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4359\n\n",
+    "closed_at": "2008-10-26T01:35:20Z",
     "created_at": "2008-10-24T08:43:50Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Huge number of small fixes to modular forms code",
+    "title": "[with patch, positive review] Huge number of small fixes to modular forms code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4359",
     "user": "https://github.com/craigcitro"

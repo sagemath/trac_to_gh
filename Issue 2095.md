@@ -3,7 +3,8 @@
 archive/issues_002095.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: plot(arcsin(sin(x)))\n```\n\nplots a straight line.\n\n```\nsage: x/x\n1\n```\n\n\n```\nsage: assume(x<0)\nsage: sqrt(x)^2\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2095\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\nsage: plot(arcsin(sin(x)))\n```\n\nplots a straight line.\n\n```\nsage: x/x\n1\n```\n\n\n```\nsage: assume(x<0)\nsage: sqrt(x)^2\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2095\n\n",
+    "closed_at": "2008-03-16T20:56:08Z",
     "created_at": "2008-02-08T01:36:44Z",
     "labels": [
         "component: calculus",
@@ -16,7 +17,7 @@ archive/issues_002095.json:
     "user": "https://github.com/bobmoretti"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 ```
 sage: plot(arcsin(sin(x)))

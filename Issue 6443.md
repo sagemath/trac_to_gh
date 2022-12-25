@@ -1,16 +1,17 @@
-# Issue 6443: A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker
+# Issue 6443: [with patch, positive review] A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker
 
 archive/issues_006443.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nKeywords: GNUism linker flags soname\n\nThe basic problem is seen below. gcc is called with the -Wl,-soname flag, so -soname gets passed to the linker. But if the linker is the Sun linker, this breaks. \n\ngcc -shared -Wl,-soname,libzn_poly-`cat VERSION`.so -o libzn_poly-`cat VERSION`.so src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mulmid_ks.o src/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o src/mul_ks.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/zn_mod.o -L/export/home/drkirkby/sage/sage-4.1.alpha2/local/lib -lgmp -lm\nld: warning: option -o appears more than once, first setting taken\nld: fatal: file libzn_poly-0.9.so: unknown file type\n\nI should be able to fix this without too many problems. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6443\n\n",
+    "closed_at": "2009-07-16T21:26:29Z",
     "created_at": "2009-06-29T01:27:54Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker",
+    "title": "[with patch, positive review] A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6443",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

@@ -1,9 +1,10 @@
-# Issue 3032: minor docstring cleanup in crystals.py and tensor_product.py
+# Issue 3032: [with patch, positive review] minor docstring cleanup in crystals.py and tensor_product.py
 
 archive/issues_003032.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis removes a test in tensor_product.py that is a repetition of a previous test (at line 193).\nIt also removes an obsolete comment in crystals.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3032\n\n",
+    "closed_at": "2008-04-26T21:21:49Z",
     "created_at": "2008-04-26T16:31:36Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_003032.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "minor docstring cleanup in crystals.py and tensor_product.py",
+    "title": "[with patch, positive review] minor docstring cleanup in crystals.py and tensor_product.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3032",
     "user": "https://github.com/dwbump"

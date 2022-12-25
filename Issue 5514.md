@@ -1,15 +1,15 @@
-# Issue 5514: implement exclusions for parametric 3d plots
+# Issue 5514: [with patch, needs work] implement exclusions for parametric 3d plots
 
 archive/issues_005514.json:
 ```json
 {
-    "body": "Assignee: wcauchois\n\nCC:  @jasongrout @rbeezer\n\nThis feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.\n\nThe syntax would look something like this:\n\n```\nvar('u,v')\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)\n```\nThis would draw a paraboloid with a circle cut out of the middle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5514\n\n",
+    "body": "Assignee: wcauchois\n\nCC:  @jasongrout @rbeezer\n\nThis feature would emulate Mathematica's [RegionFunction](http://reference.wolfram.com/mathematica/ref/RegionFunction.html). The user should be able to provide a function to parametric_plot3d which, given a (u,v) coordinate, would return whether to include that point in the overall plot. In this way, the user can specify which region to include in the plot drawn.\n\nThe syntax would look something like this:\n\n```\nvar('u,v')\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)\n```\nThis would draw a paraboloid with a circle cut out of the middle.\n\nAnother thing that would be nice is if you could specify the limits on uv in terms of u and v. Like:\n\n```\nparametric_plot3d([u,v,u^2+v^2], (-2, v), (-2, 2))\n```\nHere u would be bounded above -2 and below v. We could automatically translate this into a region function like simply:\n\n```\nparametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region=lambda u, v: u <= v)\n```\nBut then we would have to automatically choose a concrete upper bound for u somehow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5514\n\n",
     "created_at": "2009-03-13T23:23:11Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "implement exclusions for parametric 3d plots",
+    "title": "[with patch, needs work] implement exclusions for parametric 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5514",
     "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
@@ -28,6 +28,18 @@ var('u,v')
 parametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region_function=lambda u,v: u^2+v^2>1)
 ```
 This would draw a paraboloid with a circle cut out of the middle.
+
+Another thing that would be nice is if you could specify the limits on uv in terms of u and v. Like:
+
+```
+parametric_plot3d([u,v,u^2+v^2], (-2, v), (-2, 2))
+```
+Here u would be bounded above -2 and below v. We could automatically translate this into a region function like simply:
+
+```
+parametric_plot3d([u,v,u^2+v^2], (-2, 2), (-2, 2), region=lambda u, v: u <= v)
+```
+But then we would have to automatically choose a concrete upper bound for u somehow...
 
 Issue created by migration from https://trac.sagemath.org/ticket/5514
 

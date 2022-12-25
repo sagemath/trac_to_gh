@@ -1,15 +1,16 @@
-# Issue 4739: [with patch, not ready for review] Add support for additive abelian groups
+# Issue 4739: [fixed by #6449] Add support for additive abelian groups
 
 archive/issues_004739.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @robertwb\n\nKeywords: abelian group\n\nSee also #1849 and #3999.\n\nThe patch adds code to the AbelianGroups_class so that additive groups can be created, and are output with additive notation.\n\nFurther doctests are required to show examples of both additive and multiplicative type in every case.  Subgroup creation (which interfaces with GAP) does not yet work.\n\nAs an example (more to come), torsion subgroups of elliptic curves over number fields are now additive.\n\nrobertwb asked to have a look at this even though it is not yet finished, so here it is!\n\nNB I still think that the whole abelian group code needs rewriting (as was started in #1849)!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4739\n\n",
+    "closed_at": "2010-08-07T06:03:39Z",
     "created_at": "2008-12-07T22:39:42Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, not ready for review] Add support for additive abelian groups",
+    "title": "[fixed by #6449] Add support for additive abelian groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4739",
     "user": "https://github.com/JohnCremona"

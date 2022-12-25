@@ -4,6 +4,7 @@ archive/issues_004316.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: notebook, %html\n\nIf I type\n\n```\n%html some math: $x<y$.\n```\nin the notebook, then the \"<y\" gets swallowed. (If I \"Edit\" the worksheet, I see\n\n```\n<html><font color='black'>some math: <span class=\"math\">x<y</span>.</font></html>\n```\nbut in the worksheet view I see \"some math: x.\")\n\nPutting a space between \"<\" and \"y\" fixes the problem. Also,\n\n```\n%html some math: $x<6y$.\n``` \nworks just fine, and the same with $x<-y$ and similar things; the problem seems to just be with \"<\" followed by a letter.  The greater than sign seems to present no problems.\n\nIs this related to (or the same problem as) #4245?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4316\n\n",
+    "closed_at": "2009-01-24T07:35:32Z",
     "created_at": "2008-10-17T23:20:57Z",
     "labels": [
         "component: notebook",

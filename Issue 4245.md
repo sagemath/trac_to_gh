@@ -1,23 +1,24 @@
-# Issue 4245: notebook -- error clicking editing when there is a < in the html.
+# Issue 4245: [with patch, positive review] notebook -- error clicking editing when there is a < in the html.
 
 archive/issues_004245.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\n\nOn Sun, Oct 5, 2008 at 3:56 AM, Jo\u00ebl Duet <joel.duet@gmail.com> wrote:\n> Hi,\n> Here is my problem :\n> I want to write \"a<b\" in the HTML part of my worksheet (notebook() style).\n>\n> 1) I click \"Edit\"\n> 2) After a }}} and before a {{{, I type (without quotes) : \" <p> Let\n> <i>a&lt;b</i>.</p>\"\n> 3) I click \"Save Changes\"\n>\n> And it's done but if I click again at \"Edit\", I get (without quotes) : \"<p>\n> Let <i>a<b</i>.</p>\" and it's bad.\n>\n> What can I do if I want to Edit several times ?\n>\n\nThis is definitely a bug, which could be fixed.  In the meantime, as a workround \nyou might just do\n\n\"<p>Let  $a < b$.</p>\"\n\nsince that will look better anyways. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4245\n\n",
+    "body": "Assignee: @jasongrout\n\n```\n\nOn Sun, Oct 5, 2008 at 3:56 AM, Jo\u00ebl Duet <joel.duet@gmail.com> wrote:\n> Hi,\n> Here is my problem :\n> I want to write \"a<b\" in the HTML part of my worksheet (notebook() style).\n>\n> 1) I click \"Edit\"\n> 2) After a }}} and before a {{{, I type (without quotes) : \" <p> Let\n> <i>a&lt;b</i>.</p>\"\n> 3) I click \"Save Changes\"\n>\n> And it's done but if I click again at \"Edit\", I get (without quotes) : \"<p>\n> Let <i>a<b</i>.</p>\" and it's bad.\n>\n> What can I do if I want to Edit several times ?\n>\n\nThis is definitely a bug, which could be fixed.  In the meantime, as a workround \nyou might just do\n\n\"<p>Let  $a < b$.</p>\"\n\nsince that will look better anyways. \n```\n\nThis was reported by Jo\u00ebl Duet on sage-support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4245\n\n",
+    "closed_at": "2009-02-06T21:53:21Z",
     "created_at": "2008-10-05T18:46:04Z",
     "labels": [
         "component: notebook",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "notebook -- error clicking editing when there is a < in the html.",
+    "title": "[with patch, positive review] notebook -- error clicking editing when there is a < in the html.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4245",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 ```
 
@@ -44,6 +45,8 @@ you might just do
 
 since that will look better anyways. 
 ```
+
+This was reported by Joël Duet on sage-support.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4245
 

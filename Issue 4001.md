@@ -1,16 +1,17 @@
-# Issue 4001: [with patch, needs review] ZZ['x'].gen()^(2^20) should work but doesn't
+# Issue 4001: [with patch, with positive  review] ZZ['x'].gen()^(2^20) should work but doesn't
 
 archive/issues_004001.json:
 ```json
 {
     "body": "Assignee: somebody\n\nOn [sage-devel] Bill Hart wrote:\n\n> I don't seem to be able to create large polynomials in SAGE currently.\n> If I try to create a polynomial f(x)=x<sup>2**20</sup> where I am working in a\n>  genuine univariate polynomial ring over ZZ, it just tells me it is out\n> of memory.\n\n\n> It looks like a message from the memory manager from FLINT, but FLINT\n> really has no problem creating polynomials of this size. So I'm a bit\n> puzzled as to what is going on there.\n\n\n> Magma, by the way, can create polynomials up to length about 2<sup>28</sup> and\n> can store polynomials (as a result of a computation) up to about\n> length 2<sup>30</sup>.\n\n\n> I was interested in seeing if SAGE could do better than that. However,\n> not being able to create a polynomial of length 1 million seems really\n> limiting to me. Does someone know why this is?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4001\n\n",
+    "closed_at": "2008-08-30T18:11:16Z",
     "created_at": "2008-08-30T12:36:40Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] ZZ['x'].gen()^(2^20) should work but doesn't",
+    "title": "[with patch, with positive  review] ZZ['x'].gen()^(2^20) should work but doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4001",
     "user": "https://github.com/malb"

@@ -1,16 +1,17 @@
-# Issue 8803: Bring doctest for plot/axes.py to 100% or remove it
+# Issue 8803: remove deprecated module plot/axes.py
 
 archive/issues_008803.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nBring doctest coverage for plot/axes.py to 100% or remove it (since we now use matplotlib axes directly).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8803\n\n",
+    "body": "Assignee: mvngu\n\nThe module `plot/axes.py` has been deprecated for over 18 months. Let's remove it during the Sage 4.7.1 release cycle.\n\nApply only [attachment:trac_8803-remove-axes.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8803\n\n",
+    "closed_at": "2011-05-16T19:36:43Z",
     "created_at": "2010-04-28T15:18:52Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "Bring doctest for plot/axes.py to 100% or remove it",
+    "title": "remove deprecated module plot/axes.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8803",
     "user": "https://github.com/kcrisman"
@@ -18,7 +19,9 @@ archive/issues_008803.json:
 ```
 Assignee: mvngu
 
-Bring doctest coverage for plot/axes.py to 100% or remove it (since we now use matplotlib axes directly).
+The module `plot/axes.py` has been deprecated for over 18 months. Let's remove it during the Sage 4.7.1 release cycle.
+
+Apply only [attachment:trac_8803-remove-axes.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8803
 

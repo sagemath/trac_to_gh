@@ -1,9 +1,10 @@
-# Issue 4143: injvar() docstring should be the same as inject_variables()
+# Issue 4143: [with patch, positive review] injvar() docstring should be the same as inject_variables()
 
 archive/issues_004143.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe `injvar()` command has no docstring. Maybe depreciate it and use the docstring of `inject_variables()` ?\n\n```\nR = PolynomialRing( GF(Integer(2)), ['a%s'%i for i in range(Integer(93))] + ['b%s'%i for i in range(Integer(84))], order='degrevlex' )\n\nR.injvar?\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method injvar of sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular object at 0xb1c32414>\nNamespace:      Interactive\nDocstring:\n    <no docstring>\nClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4143\n\n",
+    "closed_at": "2008-12-12T06:32:13Z",
     "created_at": "2008-09-18T10:23:39Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_004143.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "injvar() docstring should be the same as inject_variables()",
+    "title": "[with patch, positive review] injvar() docstring should be the same as inject_variables()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4143",
     "user": "https://github.com/haraldschilly"

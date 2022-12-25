@@ -1,22 +1,23 @@
-# Issue 1515: ParametricSurface bug
+# Issue 1515: [with patch] ParametricSurface bug
 
 archive/issues_001515.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\ndef f(x,y): return cos(x)*sin(y), sin(x)*sin(y), cos(y)+log(tan(y/2))+0.2*x\nshow(ParametricSurface(f, (srange(0,12.4,0.1), srange(0.1,2,0.1))))\n```\ndoesn't render. Also\n\n```\n[08:48am] williamstein: This should work but doesn't:\n[08:48am] williamstein: S = ParametricSurface(lambda (x,y):(cos(x),\nsin(x), y), domain=(range(10),range(10)))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1515\n\n",
+    "body": "Assignee: @robertwb\n\n```\ndef f(x,y): return cos(x)*sin(y), sin(x)*sin(y), cos(y)+log(tan(y/2))+0.2*x\nshow(ParametricSurface(f, (srange(0,12.4,0.1), srange(0.1,2,0.1))))\n```\ndoesn't render. Also\n\n```\n[08:48am] williamstein: This should work but doesn't:\n[08:48am] williamstein: S = ParametricSurface(lambda (x,y):(cos(x),\nsin(x), y), domain=(range(10),range(10)))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1515\n\n",
+    "closed_at": "2007-12-15T14:03:19Z",
     "created_at": "2007-12-15T01:59:55Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "ParametricSurface bug",
+    "title": "[with patch] ParametricSurface bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1515",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 ```
 def f(x,y): return cos(x)*sin(y), sin(x)*sin(y), cos(y)+log(tan(y/2))+0.2*x

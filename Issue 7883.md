@@ -3,7 +3,8 @@
 archive/issues_007883.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @roed314\n\nAdded some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7883\n\n",
+    "body": "Assignee: @malb\n\nCC:  @roed314\n\nKeywords: ideals\n\nAdded some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_. Number of generators? \n\nPrerequisite for #8333, #8334, #8335, #9887.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7883\n\n",
+    "closed_at": "2010-09-28T10:55:25Z",
     "created_at": "2010-01-09T20:07:10Z",
     "labels": [
         "component: commutative algebra"
@@ -19,7 +20,11 @@ Assignee: @malb
 
 CC:  @roed314
 
-Added some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_.
+Keywords: ideals
+
+Added some functionality to ideals (is_maximal works more often now, and there's a new ideal class for univariate polynomial rings).  Changed the logic on what class is chosen for ideals so that it's easier to override with _ideal_class_. Number of generators? 
+
+Prerequisite for #8333, #8334, #8335, #9887.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7883
 

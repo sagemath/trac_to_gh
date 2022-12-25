@@ -1,16 +1,17 @@
-# Issue 3307: [with patch; needs review] Move genus2reduction to /usr/lib for Debian package
+# Issue 3307: [with patch; positive review] Move genus2reduction to /usr/lib for Debian package
 
 archive/issues_003307.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch that moves genus2reduction to /usr/lib in my Debian package because it's not a program you run directly and doesn't have a man page.  The patch also fixes all the other minor issues with the package I'm aware of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3307\n\n",
+    "closed_at": "2008-05-28T06:41:52Z",
     "created_at": "2008-05-26T04:24:51Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] Move genus2reduction to /usr/lib for Debian package",
+    "title": "[with patch; positive review] Move genus2reduction to /usr/lib for Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3307",
     "user": "https://github.com/timabbott"

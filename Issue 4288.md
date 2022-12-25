@@ -1,16 +1,17 @@
-# Issue 4288: _magma_init_ bug elliptic curve points
+# Issue 4288: [with patch, positive review] _magma_init_ bug elliptic curve points
 
 archive/issues_004288.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\na test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4288\n\n",
+    "closed_at": "2008-10-20T14:03:54Z",
     "created_at": "2008-10-14T21:11:19Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "_magma_init_ bug elliptic curve points",
+    "title": "[with patch, positive review] _magma_init_ bug elliptic curve points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4288",
     "user": "https://github.com/robertwb"

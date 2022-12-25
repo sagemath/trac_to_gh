@@ -1,9 +1,10 @@
-# Issue 5022: Solaris 10: update libgcrypt to 1.4.3
+# Issue 5022: [with spkg, positive review] Solaris 10: update libgcrypt to 1.4.3
 
 archive/issues_005022.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe update fixes two important issues:\n\n* padlock support has been fixed, so we don't need to disable it\n* gcrypt no longer needs huge amounts of entropy which made key generation a pain. The bug was introduced in gcrypt 1.4 and affected Solaris among other platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5022\n\n",
+    "closed_at": "2009-01-19T10:42:20Z",
     "created_at": "2009-01-19T10:16:45Z",
     "labels": [
         "component: porting: solaris",
@@ -11,7 +12,7 @@ archive/issues_005022.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Solaris 10: update libgcrypt to 1.4.3",
+    "title": "[with spkg, positive review] Solaris 10: update libgcrypt to 1.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5022",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

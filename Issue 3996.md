@@ -1,15 +1,16 @@
-# Issue 3996: [with patch, needs review] doctest the Singular interface
+# Issue 3996: [with patch, positive review] doctest the Singular interface
 
 archive/issues_003996.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3996\n\n",
+    "closed_at": "2008-08-30T00:39:17Z",
     "created_at": "2008-08-29T21:57:00Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] doctest the Singular interface",
+    "title": "[with patch, positive review] doctest the Singular interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3996",
     "user": "https://github.com/mwhansen"

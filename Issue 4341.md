@@ -1,16 +1,17 @@
-# Issue 4341: [with patch, needs review] Optimisations + corrections to latin.py
+# Issue 4341: [with patch, positive review] Optimisations + corrections to latin.py
 
 archive/issues_004341.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n* Removed code that used gap.Representative in an unsafe manner (assumed that the ordering would be the same on each execution but the GAP manual says that this may not be the case). Previous code did work but was not safe.\n\n* Replacement tau_to_bitrade uses correct and straightforward combinatorial approach.\n\n* Replacement of p3_group_bitrade_generators is orders of magnitude faster; uses GAP's IsomorphismPermGroup instead of explicitly constructing a natural homomorphism.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4341\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n* Removed code that used gap.Representative in an unsafe manner (assumed that the ordering would be the same on each execution but the GAP manual says that this may not be the case). Previous code did work but was not safe.\n* Replacement tau_to_bitrade uses correct and straightforward combinatorial approach.\n* Replacement of p3_group_bitrade_generators is orders of magnitude faster; uses GAP's IsomorphismPermGroup instead of explicitly constructing a natural homomorphism.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4341\n\n",
+    "closed_at": "2008-11-24T00:19:35Z",
     "created_at": "2008-10-22T19:53:25Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] Optimisations + corrections to latin.py",
+    "title": "[with patch, positive review] Optimisations + corrections to latin.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4341",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
@@ -21,9 +22,7 @@ Assignee: @mwhansen
 CC:  sage-combinat
 
 * Removed code that used gap.Representative in an unsafe manner (assumed that the ordering would be the same on each execution but the GAP manual says that this may not be the case). Previous code did work but was not safe.
-
 * Replacement tau_to_bitrade uses correct and straightforward combinatorial approach.
-
 * Replacement of p3_group_bitrade_generators is orders of magnitude faster; uses GAP's IsomorphismPermGroup instead of explicitly constructing a natural homomorphism.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4341

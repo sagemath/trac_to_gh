@@ -1,21 +1,22 @@
-# Issue 5450: plotting a vector as a point plots a sphere, not a point
+# Issue 5450: [with patch, positive review] plotting a vector as a point plots a sphere, not a point
 
 archive/issues_005450.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPresumably, plotting a point is more efficient.  However, \n\n```\nvector([1,2,3]).plot(plot_type='point')\n```\n\nplots a sphere instead of a point3d (or point2d, if 2-dimensional).  This should be changed to plot a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5450\n\n",
+    "body": "Assignee: @jasongrout\n\nPresumably, plotting a point is more efficient.  However, \n\n```\nvector([1,2,3]).plot(plot_type='point')\n```\n\nplots a sphere instead of a point3d (or point2d, if 2-dimensional).  This should be changed to plot a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5450\n\n",
+    "closed_at": "2009-04-16T11:45:04Z",
     "created_at": "2009-03-06T21:44:22Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "plotting a vector as a point plots a sphere, not a point",
+    "title": "[with patch, positive review] plotting a vector as a point plots a sphere, not a point",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5450",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 Presumably, plotting a point is more efficient.  However, 
 

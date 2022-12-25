@@ -1,16 +1,17 @@
-# Issue 4225: faster sqrt for complex numbers
+# Issue 4225: [with patch, positive review] faster sqrt for complex numbers
 
 archive/issues_004225.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is a followup to #4132.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4225\n\n",
+    "closed_at": "2008-10-08T08:43:46Z",
     "created_at": "2008-09-30T20:51:33Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "faster sqrt for complex numbers",
+    "title": "[with patch, positive review] faster sqrt for complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4225",
     "user": "https://github.com/robertwb"

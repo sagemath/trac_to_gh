@@ -1,15 +1,16 @@
-# Issue 2326: compiled sparse and dense graph datastructures
+# Issue 2326: [with patch, POSITIVE REVIEW!] compiled sparse and dense graph datastructures
 
 archive/issues_002326.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nImplement compiled base classes for graphs, which will be faster than Python based NetworkX classes (especially when accessed from Cython).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2326\n\n",
+    "closed_at": "2008-03-01T23:55:21Z",
     "created_at": "2008-02-27T00:00:40Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "compiled sparse and dense graph datastructures",
+    "title": "[with patch, POSITIVE REVIEW!] compiled sparse and dense graph datastructures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2326",
     "user": "https://github.com/rlmill"

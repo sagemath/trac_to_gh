@@ -3,7 +3,8 @@
 archive/issues_000117.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSubject line says it all.  Is  there a way that I missed?\n\nIssue created by migration from https://trac.sagemath.org/ticket/117\n\n",
+    "body": "Assignee: @williamstein\n\nSubject line says it all.  Is  there a way that I missed?\n\nThis is not a SAGE problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/117\n\n",
+    "closed_at": "2007-01-08T19:04:10Z",
     "created_at": "2006-10-07T20:27:34Z",
     "labels": [
         "component: user interface",
@@ -18,6 +19,8 @@ archive/issues_000117.json:
 Assignee: @williamstein
 
 Subject line says it all.  Is  there a way that I missed?
+
+This is not a SAGE problem.
 
 Issue created by migration from https://trac.sagemath.org/ticket/117
 

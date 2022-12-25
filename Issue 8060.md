@@ -1,16 +1,17 @@
-# Issue 8060: New f2c-20070816.p2.spkg now works with Open Solaris 64 bit
+# Issue 8060: New f2c-20070816.p2.spkg now works with Open Solaris x64 as 64 bit
 
 archive/issues_008060.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nMade SAGE64=\"yes\" also work on Opensolaris.\n\n[http://boxen.math.washington.edu/home/jsp/ports/f2c-20070816.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/f2c-20070816.p2.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8060\n\n",
+    "closed_at": "2010-02-11T15:16:23Z",
     "created_at": "2010-01-25T19:57:56Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "New f2c-20070816.p2.spkg now works with Open Solaris 64 bit",
+    "title": "New f2c-20070816.p2.spkg now works with Open Solaris x64 as 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8060",
     "user": "https://github.com/jaapspies"

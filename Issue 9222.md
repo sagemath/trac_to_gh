@@ -3,7 +3,8 @@
 archive/issues_009222.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu\n\nKeywords: conway polynomial database\n\nAs of sage-4.4.3:\n\n```\n----------------------------------------------------------------------\nconway.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE conway.py: 0% (0 of 7)\n\nMissing documentation:\n\t * _init(self):\n\t * __repr__(self):\n\t * polynomial(self, p, n):\n\t * has_polynomial(self, p, n):\n\t * primes(self):\n\t * degrees(self, p):\n\n\nMissing doctests:\n\t * __init__(self, read_only=True):\n\n----------------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9222\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu\n\nKeywords: conway polynomial database\n\nAs of sage-4.4.3:\n\n```\n----------------------------------------------------------------------\nconway.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE conway.py: 0% (0 of 7)\n\nMissing documentation:\n * _init(self):\n * __repr__(self):\n * polynomial(self, p, n):\n * has_polynomial(self, p, n):\n * primes(self):\n * degrees(self, p):\n\nMissing doctests:\n * __init__(self, read_only=True):\n\n----------------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9222\n\n",
+    "closed_at": "2010-07-22T07:46:53Z",
     "created_at": "2010-06-12T07:09:15Z",
     "labels": [
         "component: doctest coverage",
@@ -31,19 +32,19 @@ ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE conway.py: 0% (0 of 7)
 
 Missing documentation:
-	 * _init(self):
-	 * __repr__(self):
-	 * polynomial(self, p, n):
-	 * has_polynomial(self, p, n):
-	 * primes(self):
-	 * degrees(self, p):
-
+ * _init(self):
+ * __repr__(self):
+ * polynomial(self, p, n):
+ * has_polynomial(self, p, n):
+ * primes(self):
+ * degrees(self, p):
 
 Missing doctests:
-	 * __init__(self, read_only=True):
+ * __init__(self, read_only=True):
 
 ----------------------------------------------------------------------
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9222
 

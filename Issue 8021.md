@@ -4,6 +4,7 @@ archive/issues_008021.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nIn several places in the Sage code, \"\\cross\" is used, and one of those instances causes an error when building the reference manual.  This is not a standard LaTeX command, and I think \"\\times\" is what is intended, so this patch makes that change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8021\n\n",
+    "closed_at": "2010-01-23T16:58:37Z",
     "created_at": "2010-01-21T06:26:45Z",
     "labels": [
         "component: documentation",

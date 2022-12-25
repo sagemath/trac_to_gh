@@ -1,16 +1,17 @@
-# Issue 2924: programming guide section on style is terrible!
+# Issue 2924: [with patch; positive review] programming guide section on style is terrible! (very easy to fix)
 
 archive/issues_002924.json:
 ```json
 {
     "body": "Assignee: tba\n\nJohn Palmieri pointed out that \n\nhttp://sagemath.org/doc/html/prog/node5.html\n\nis completely wrong. In particular, it bizarrely mentions Scipy (??), and tells one to use lowercase for class names.\n\n```\n2.1 Coding Conventions\nFollow the standard Python formatting rules when writing code for SciPy, as explained at http://www.python.org/doc/essays/styleguide.html. In particular,\n\n    * Use 4 spaces for indentation levels. Do not use tabs as they can result in indentation confusion. Most editors have a feature that will insert 4 spaces when the tab key is hit. Also, many editors will automatically search/replace leading tabs with 4 spaces.\n\n    * Use all lowercase function/class names with underscore separated words:\n\n              def set_some_value()\n\n      instead of:\n\n              def setSomeValue()\n\n      There is no differentiation between classes, functions, verbs, nouns, etc.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2924\n\n",
+    "closed_at": "2008-04-15T00:20:15Z",
     "created_at": "2008-04-14T22:05:11Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "programming guide section on style is terrible!",
+    "title": "[with patch; positive review] programming guide section on style is terrible! (very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2924",
     "user": "https://github.com/williamstein"

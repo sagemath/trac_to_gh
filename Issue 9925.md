@@ -4,6 +4,7 @@ archive/issues_009925.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @novoselt @vbraun mhampton\n\nI get this reproducible doctest error with a trial 4.6.alpha1 (32-bit build) on bsd.math (OS X 10.6):\n\n```python\nsage -t -long \"devel/sage/sage/schemes/generic/toric_divisor.py\"\n**********************************************************************\nFile \"/Users/mpatel/tmp/bb/slave/bsd_scratch/build/sage-4.6.alpha1/devel/sage/sage/schemes/generic/toric_divisor.py\", line 1522:\n    sage: supp.Vrepresentation()\nExpected:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (0, -1), A vertex at (3, -1)]\nGot:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9926\n\n",
+    "closed_at": "2010-10-21T08:39:25Z",
     "created_at": "2010-09-17T00:46:23Z",
     "labels": [
         "component: doctest coverage",

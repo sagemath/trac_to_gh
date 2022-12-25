@@ -1,16 +1,17 @@
-# Issue 2903: [with spkg + patch, needs review] make NTL error messages propagate to RuntimeError messages
+# Issue 2903: [with spkg + patch, positive review] make NTL error messages propagate to RuntimeError messages
 
 archive/issues_002903.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe spkg and patch achieve the following:\n\n* add a mechanism to NTL for setting a callback, so that when NTL calls its `Error()` function, the callback is called instead of printing an error message to stderr and abort()-ing\n\n* use this mechanism in Sage to propagate NTL's error messages back to a `RuntimeError` with a message. This means that instead of crashing to the command line, the user lands back at the sage prompt.\n\nIt would be nice if the NTL modifications were accepted upstream.\n\nObviously this solution is suboptimal, since it will very likely cause memory leaks. But memory leaks are better than crashing to the command line (well, that's debatable I suppose....). But the only way to fix this would be a major rewrite of lots of NTL to implement saner error propagation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2903\n\n",
+    "closed_at": "2008-04-17T20:06:50Z",
     "created_at": "2008-04-13T02:55:37Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg + patch, needs review] make NTL error messages propagate to RuntimeError messages",
+    "title": "[with spkg + patch, positive review] make NTL error messages propagate to RuntimeError messages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2903",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

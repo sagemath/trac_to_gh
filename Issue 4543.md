@@ -1,9 +1,10 @@
-# Issue 4543: sage -sh fails to start
+# Issue 4543: [with patch, with positive review] sage -sh fails to start
 
 archive/issues_004543.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @craigcitro\n\nWith 3.2.rc1, I get this:\n\n```\nburcin@karr ~/sage/sage-3.2.rc1 $ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nbasename: invalid option -- a\nTry `basename --help' for more information.\nExited Sage subshell.\n```\n\nOn my system `basename` does not accept a parameter `-a`.\n\n```\nburcin@karr ~/sage/sage-3.2.rc1 $ basename --version\nbasename (GNU coreutils) 6.10\nCopyright (C) 2008 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by FIXME unknown.\n```\n\nThis can be fixed by removing the `-a` parameter on line 375 of the `sage-sage` script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4543\n\n",
+    "closed_at": "2008-11-18T18:46:00Z",
     "created_at": "2008-11-18T08:36:12Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004543.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "sage -sh fails to start",
+    "title": "[with patch, with positive review] sage -sh fails to start",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4543",
     "user": "https://github.com/burcin"

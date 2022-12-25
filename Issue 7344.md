@@ -3,10 +3,11 @@
 archive/issues_007344.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  david.kirkby@onetel.net @kcrisman @nexttime\n\nThis is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.\n\nThe package is here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7344\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  david.kirkby@onetel.net @kcrisman @nexttime\n\nKeywords: sd32\n\nThis is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.\n\nThe latest version of the package is here: http://sage.math.washington.edu/home/timdumol/libjpeg_turbo-1.1.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7344\n\n",
+    "closed_at": "2021-09-01T06:17:10Z",
     "created_at": "2009-10-29T04:24:27Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "New libjpeg package",
@@ -19,9 +20,11 @@ Assignee: mabshoff
 
 CC:  david.kirkby@onetel.net @kcrisman @nexttime
 
+Keywords: sd32
+
 This is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.
 
-The package is here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p0.spkg
+The latest version of the package is here: http://sage.math.washington.edu/home/timdumol/libjpeg_turbo-1.1.1.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7344
 

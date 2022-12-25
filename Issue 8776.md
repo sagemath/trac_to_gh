@@ -4,6 +4,7 @@ archive/issues_008776.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @kcrisman schymans @JohnCremona\n\nI think Cremona's email says it best:\n\n```\nFor the first time, I just tried using the \"Undo\" function on a\nworksheet since I had messed something up.  But all the revisions I\nwas offered, even those from a day ago, look the same as the current\nversion!\n\nThis is 4.3.5 running on a 64-bit ubuntu server.\n\nI have found it very useful that my students can work on something in\na worksheet owned by them, and then share it with me, so that when\nthey come to see me to talk about it we can go through it in detail on\nmy own computer at our meeting.  (This is really a fantastic feature).\n But just now I was having a look at a student's worksheet the day\nbefore our meeting, and made some changed to it which I later\nregretted and tried to revert.  Without success....\n\nAny suggestions welcome!\n\nJohn Cremona\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8776\n\n",
+    "closed_at": "2014-12-11T18:35:56Z",
     "created_at": "2010-04-27T04:38:16Z",
     "labels": [
         "component: notebook",

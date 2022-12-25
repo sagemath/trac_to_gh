@@ -1,16 +1,17 @@
-# Issue 1702: memleak in fplll.[pyx|pxi] in "void ZZ_mat_delete"
+# Issue 1702: [with patch, with positive review] memleak in fplll.pyx
 
 archive/issues_001702.json:
 ```json
 {
     "body": "Assignee: @malb\n\nWhile valgrinding the `fplll.pyx` doctest I came across the following:\n\n```\n==15667== 19,200 (12,800 direct, 6,400 indirect) bytes in 800 blocks are definitely lost in loss record 7,374 of 7,520\n==15667==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==15667==    by 0x1B643D99: __pyx_pf_4sage_4libs_5fplll_5fplll_6FP_LLL___new__(_object*, _object*, _object*) (fplll.cpp:1677\n)\n==15667==    by 0x1B643F24: __pyx_tp_new_4sage_4libs_5fplll_5fplll_FP_LLL(_typeobject*, _object*, _object*) (fplll.cpp:4211)\n==15667==    by 0x458D92: type_call (typeobject.c:422)\n==15667==    by 0x415542: PyObject_Call (abstract.c:1860)\n==15667==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==15667==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==15667==    by 0x4838F4: PyEval_EvalFrameEx (ceval.c:494)\n==15667==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==15667==    by 0x48328C: PyEval_EvalFrameEx (ceval.c:3660)\n==15667==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==15667==    by 0x48328C: PyEval_EvalFrameEx (ceval.c:3660)\n```\nThe problem is in fplll.pxi:\n\n```\n void ZZ_mat_delete \"delete \"(ZZ_mat *mem)\n```\nIt doesn't clear the mpzs allocated in fplll.pyx's `__new__`:\n\n```\n    def __new__(self, Matrix_integer_dense A):\n        cdef int i,j\n        self._lattice = ZZ_mat_new(A._nrows,A._ncols)\n\n        cdef Z_NR *t\n\n        for i from 0 <= i < A._nrows:\n            for j from 0 <= j < A._ncols:\n                t = Z_NR_new()\n                t.set_mpz_t(A._matrix[i][j])\n                self._lattice.Set(i,j,t[0])\n\n    def __dealloc__(self):\n        \"\"\"\n        Destroy internal data.\n        \"\"\"\n        ZZ_mat_delete(self._lattice)\n```\nShould be easy enough to fix.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1702\n\n",
+    "closed_at": "2008-01-07T16:30:06Z",
     "created_at": "2008-01-06T16:25:13Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "memleak in fplll.[pyx|pxi] in \"void ZZ_mat_delete\"",
+    "title": "[with patch, with positive review] memleak in fplll.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1702",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

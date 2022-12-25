@@ -1,15 +1,16 @@
-# Issue 2056: 3d graphics examples [with patch; needs easy review] include two very nice examples from Peter Jipsen in the sage docstrings
+# Issue 2056: [with patch; with positive review] 3d graphics examples: include two very nice examples from Peter Jipsen in the sage docstrings
 
 archive/issues_002056.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2056\n\n",
+    "closed_at": "2008-02-07T05:21:48Z",
     "created_at": "2008-02-05T15:18:56Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "3d graphics examples [with patch; needs easy review] include two very nice examples from Peter Jipsen in the sage docstrings",
+    "title": "[with patch; with positive review] 3d graphics examples: include two very nice examples from Peter Jipsen in the sage docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2056",
     "user": "https://github.com/williamstein"

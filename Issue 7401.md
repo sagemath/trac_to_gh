@@ -4,10 +4,11 @@ archive/issues_007401.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @eviatarbach\n\nKeywords: derivative, at, maxima\n\nAlex reported [http://groups.google.cz/group/sage-support/browse_thread/thread/81b96a7731600ec2](http://groups.google.cz/group/sage-support/browse_thread/thread/81b96a7731600ec2) this bug (see the link for short discussion related to the problem)\n\n```\nHi all:\n\nI found some strange behavior in solve that's related to function\ncomposition.  Check out this short example.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,t')\n(x, t)\nsage: f= function('f',x)\nsage: e= {x:exp(t)}\nsage: ft= f.subs(e); ft\nf(e^t)\nsage: Ft = t^2 + ft^2; Ft\nt^2 + f(e^t)^2\nsage: a= diff(Ft,t); a\n2*e^t*f(e^t)*D[0](f)(e^t) + 2*t\nsage: solve(a==0,diff(f,x).subs(e))\n[D[0](f)(t) == -t*e^(-t)/f(e^t)]\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nDid you spot the strangeness?  Somehow diff(f,x).subs(e) became diff\n(f,x).subs({x:t}) after solving.  Does anybody know how to fix this?\n\nAlex \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7401\n\n",
+    "closed_at": "2014-12-18T00:57:21Z",
     "created_at": "2009-11-06T10:53:17Z",
     "labels": [
         "component: interfaces",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "Derivative at a point is not translated into Maxima",

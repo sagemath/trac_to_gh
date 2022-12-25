@@ -1,15 +1,16 @@
-# Issue 2127: Mod n determinant and LinBox/FFPACK
+# Issue 2127: [with patch, positive review] Mod n determinant and LinBox/FFPACK
 
 archive/issues_002127.json:
 ```json
 {
     "body": "Assignee: @ClementPernet\n\nImprove efficiency of the dense mod n determinant by wrapping directly the LinBox/FFPACK Det.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2127\n\n",
+    "closed_at": "2008-02-17T11:51:45Z",
     "created_at": "2008-02-09T14:43:02Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Mod n determinant and LinBox/FFPACK",
+    "title": "[with patch, positive review] Mod n determinant and LinBox/FFPACK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2127",
     "user": "https://github.com/ClementPernet"

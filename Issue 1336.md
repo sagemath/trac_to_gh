@@ -1,16 +1,17 @@
-# Issue 1336: [with patch] 2.8.14/Linux PPC: rings/polynomial/polynomial_element.pyx doctest failure
+# Issue 1336: [with patch, with positive review] 2.8.14/Linux PPC: rings/polynomial/polynomial_element.pyx doctest failure
 
 archive/issues_001336.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn Linux PPC the following doctest fails due to numerical noise:\n\n```\nFile \"polynomial_element.pyx\", line 2371:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [-1.6772670339941..., 0.199954796285..., 0.200045306115..., 1.5763035161844...]\nGot:\n    [-1.67726703399418, 0.199954796284890, 0.200045306115409, 1.57630351618444]\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1336\n\n",
+    "closed_at": "2007-12-01T11:23:28Z",
     "created_at": "2007-11-29T09:42:06Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] 2.8.14/Linux PPC: rings/polynomial/polynomial_element.pyx doctest failure",
+    "title": "[with patch, with positive review] 2.8.14/Linux PPC: rings/polynomial/polynomial_element.pyx doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1336",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

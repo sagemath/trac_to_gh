@@ -3,7 +3,8 @@
 archive/issues_006624.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nIn twist.py, we have our own json-encoding function, which is no longer necessary now that we use Python 2.6. It should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6624\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @jasongrout\n\nIn twist.py, we have our own json-encoding function, which is no longer necessary now that we use Python 2.6. It should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6624\n\n",
+    "closed_at": "2014-02-21T22:37:57Z",
     "created_at": "2009-07-26T05:38:49Z",
     "labels": [
         "component: notebook"
@@ -15,7 +16,7 @@ archive/issues_006624.json:
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: boothby
+Assignee: @dandrake
 
 CC:  @jasongrout
 

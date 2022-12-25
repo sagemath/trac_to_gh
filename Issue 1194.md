@@ -1,22 +1,23 @@
-# Issue 1194: symbolic arithmetic (calculus) omits required parentheses
+# Issue 1194: [with patch] symbolic arithmetic (calculus) omits required parentheses
 
 archive/issues_001194.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider this:\n\n```\nsage: (-1)^(1/4)\n-1^(1/4)\n```\n\nThis should be printed `(-1)^(1/4)`, instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1194\n\n",
+    "body": "Assignee: @mwhansen\n\nConsider this:\n\n```\nsage: (-1)^(1/4)\n-1^(1/4)\n```\n\nThis should be printed `(-1)^(1/4)`, instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1194\n\n",
+    "closed_at": "2007-11-19T21:17:57Z",
     "created_at": "2007-11-17T19:50:47Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "symbolic arithmetic (calculus) omits required parentheses",
+    "title": "[with patch] symbolic arithmetic (calculus) omits required parentheses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1194",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Consider this:
 

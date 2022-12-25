@@ -1,22 +1,25 @@
-# Issue 4164: [with patch, needs review] Make triangulated_facial_incidences() work in all cases (and decomment render_solid())
+# Issue 4164: [with patch, positive review] Make triangulated_facial_incidences() work better
 
 archive/issues_004164.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached patch switches from random lifting to the fan algorithm for triangularization which work in all cases and should work with all dimensions.\n\nI left some safeguard code in there just in case I made assumptions that aren't always true (or have some bugs).\n\nFor the record the assumptions are:\n* faces are always convex\n* there won't ever be faces with no vertices\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4164\n\n",
+    "body": "Assignee: anakha\n\nKeywords: polyhedra, graphics\n\nThe attached patch switches from random lifting to the fan algorithm for triangularization which work in all cases and should work with all dimensions.\n\nI left some safeguard code in there just in case I made assumptions that aren't always true (or have some bugs).\n\nFor the record the assumptions are:\n* faces are always convex\n* there won't ever be faces with no vertices\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4164\n\n",
+    "closed_at": "2008-10-26T01:07:14Z",
     "created_at": "2008-09-21T20:35:40Z",
     "labels": [
-        "component: graphics",
+        "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Make triangulated_facial_incidences() work in all cases (and decomment render_solid())",
+    "title": "[with patch, positive review] Make triangulated_facial_incidences() work better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4164",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
-Assignee: @williamstein
+Assignee: anakha
+
+Keywords: polyhedra, graphics
 
 The attached patch switches from random lifting to the fan algorithm for triangularization which work in all cases and should work with all dimensions.
 

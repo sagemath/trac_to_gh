@@ -1,22 +1,23 @@
-# Issue 5631: improve doctest coverage for schemes/generic/affine_space.py
+# Issue 5631: [with patch, positive review] improve doctest coverage for schemes/generic/affine_space.py
 
 archive/issues_005631.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: doctest affine space\n\nThe attached patch improves the doctest coverage of `affine_space.py` from 45% (9 of 20) to 80% (16 of 20) and fixes a few tiny bugs along the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5631\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: doctest affine space\n\nThe attached patch improves the doctest coverage of `affine_space.py` from 45% (9 of 20) to 80% (16 of 20) and fixes a few tiny bugs along the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5631\n\n",
+    "closed_at": "2009-04-12T21:33:05Z",
     "created_at": "2009-03-29T07:59:52Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "improve doctest coverage for schemes/generic/affine_space.py",
+    "title": "[with patch, positive review] improve doctest coverage for schemes/generic/affine_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5631",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 Keywords: doctest affine space
 

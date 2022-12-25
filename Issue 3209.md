@@ -6,8 +6,7 @@ archive/issues_003209.json:
     "body": "Assignee: @williamstein\n\nThere should be a way to concatenate a list of Graphics objects without adding them one-by-one (which is quadratic time). \n\nIssue created by migration from https://trac.sagemath.org/ticket/3209\n\n",
     "created_at": "2008-05-15T06:43:08Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "summing graphics elements takes way to long",

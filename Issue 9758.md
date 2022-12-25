@@ -3,7 +3,8 @@
 archive/issues_009758.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @rbeezer @williamstein\n\nAlthough the units module already has a si_prefixes component, it's not very convenient, since you have to do units.si_prefixes.nano*units.mass.gram, and you get something like \"gram*nano\" that doesn't look very well.\nThis ticket is a modification that adds properties named as the components of units.si_prefixes, so that calling something like units.mass.gram.nano will create a units.mass.nanogram element and return it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9759\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @rbeezer @williamstein\n\nKeywords: sd40.5\n\nAlthough the units module already has a si_prefixes component, it's not very convenient, since you have to do units.si_prefixes.nano*units.mass.gram, and you get something like \"gram*nano\" that doesn't look very well.\nThis ticket is a modification that adds properties named as the components of units.si_prefixes, so that calling something like units.mass.gram.nano will create a units.mass.nanogram element and return it.\n\nDuplicate of #9778.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9759\n\n",
+    "closed_at": "2012-06-02T12:47:05Z",
     "created_at": "2010-08-17T22:51:22Z",
     "labels": [
         "component: symbolics",
@@ -20,8 +21,12 @@ Assignee: @burcin
 
 CC:  @rbeezer @williamstein
 
+Keywords: sd40.5
+
 Although the units module already has a si_prefixes component, it's not very convenient, since you have to do units.si_prefixes.nano*units.mass.gram, and you get something like "gram*nano" that doesn't look very well.
 This ticket is a modification that adds properties named as the components of units.si_prefixes, so that calling something like units.mass.gram.nano will create a units.mass.nanogram element and return it.
+
+Duplicate of #9778.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9759
 

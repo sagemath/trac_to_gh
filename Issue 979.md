@@ -1,9 +1,10 @@
-# Issue 979: printing error with small reals
+# Issue 979: [is already fixed] printing error with small reals
 
 archive/issues_000979.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n```\nsage: a = .00000000000000000000001;a\n0.000000000000000000000010000000000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/979\n\n",
+    "closed_at": "2007-12-06T21:32:57Z",
     "created_at": "2007-10-24T03:49:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_000979.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "printing error with small reals",
+    "title": "[is already fixed] printing error with small reals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/979",
     "user": "https://github.com/mwhansen"

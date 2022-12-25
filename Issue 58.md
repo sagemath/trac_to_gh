@@ -1,16 +1,17 @@
-# Issue 58: wanted -- subsets of a set
+# Issue 58: [with patch] wanted -- subsets of a set
 
 archive/issues_000058.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI would like to be able to type\n\n```\nsage: X = Set(range(5))\nsage: X.subsets()  # or X.powerset()\n```\nand get iterator over the power set.  \n\nI wold also like to do \n\n```\nsage: X.subsets(2)\n```\nand get all 2-element subsets.\n\nIt seems that even Python's built-in set type doesn't do these basic operations...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/58\n\n",
+    "closed_at": "2007-10-27T02:47:26Z",
     "created_at": "2006-09-14T10:45:59Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "wanted -- subsets of a set",
+    "title": "[with patch] wanted -- subsets of a set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/58",
     "user": "https://github.com/williamstein"

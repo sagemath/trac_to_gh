@@ -1,16 +1,17 @@
-# Issue 5097: doctest failures in 3.3.alpha2 due to lack of #optional tag
+# Issue 5097: [with patch, positive review] doctest failures in 3.3.alpha2 due to lack of #optional tag
 
 archive/issues_005097.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSeveral doctests in interfaces/octave.py and interfaces/maple.py should be marked optional but aren't.  Trivial patch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5097\n\n",
+    "closed_at": "2009-01-25T21:03:34Z",
     "created_at": "2009-01-25T08:20:07Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "doctest failures in 3.3.alpha2 due to lack of #optional tag",
+    "title": "[with patch, positive review] doctest failures in 3.3.alpha2 due to lack of #optional tag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5097",
     "user": "https://github.com/aghitza"

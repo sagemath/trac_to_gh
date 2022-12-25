@@ -1,21 +1,22 @@
-# Issue 4269: add code to help detect which systems are used in performing a computation
+# Issue 4269: [with patch, positive review] add code to help detect which systems are used in performing a computation
 
 archive/issues_004269.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4269\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4269\n\n",
+    "closed_at": "2008-10-26T02:26:00Z",
     "created_at": "2008-10-12T18:02:57Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "add code to help detect which systems are used in performing a computation",
+    "title": "[with patch, positive review] add code to help detect which systems are used in performing a computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4269",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
 
 

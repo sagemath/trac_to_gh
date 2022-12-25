@@ -4,6 +4,7 @@ archive/issues_007989.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman @rbeezer @mwhansen @hedtke @tscrim\n\nRight now, not all matrices can compute minpolys.  This patch exposes these matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7989\n\n",
+    "closed_at": "2022-05-26T22:49:44Z",
     "created_at": "2010-01-19T02:42:47Z",
     "labels": [
         "component: linear algebra",

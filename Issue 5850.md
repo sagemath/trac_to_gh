@@ -1,28 +1,26 @@
-# Issue 5850: add Creative Commons license to French tutorial
+# Issue 5850: [with patch, positive review] add Creative Commons license to French tutorial
 
 archive/issues_005850.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThe French tutorial doesn't specify a license; to go along with all the other documentation, I think it should have a Creative Commons Attribution-Sharealike license.\n\nI could cut and paste something myself, but I think it would be better if a French-speaking Sage developer got permission from the author and did this, as I would inevitably screw up a breve or grave accent somewhere. :)\n\nTicket #4809 is the English version of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5850\n\n",
+    "body": "Assignee: @mezzarobba\n\nThe French tutorial doesn't specify a license; to go along with all the other documentation, I think it should have a Creative Commons Attribution-Sharealike license. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5850\n\n",
+    "closed_at": "2009-06-24T09:55:46Z",
     "created_at": "2009-04-22T04:18:03Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "add Creative Commons license to French tutorial",
+    "title": "[with patch, positive review] add Creative Commons license to French tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5850",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tba
+Assignee: @mezzarobba
 
-The French tutorial doesn't specify a license; to go along with all the other documentation, I think it should have a Creative Commons Attribution-Sharealike license.
+The French tutorial doesn't specify a license; to go along with all the other documentation, I think it should have a Creative Commons Attribution-Sharealike license. 
 
-I could cut and paste something myself, but I think it would be better if a French-speaking Sage developer got permission from the author and did this, as I would inevitably screw up a breve or grave accent somewhere. :)
-
-Ticket #4809 is the English version of this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5850
 

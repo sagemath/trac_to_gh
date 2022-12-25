@@ -1,22 +1,23 @@
-# Issue 391: Bundle adding apropos to SAGE -- try `conductor**?' for an example.
+# Issue 391: [with patch, needs work] adding apropos to SAGE -- try `conductor**?' for an example.
 
 archive/issues_000391.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: apropos ipython search\n\nThis bundle adds an apropos command to SAGE -- try `conductor**?' for an example.\n\nThe implementation is in sage.misc.apropos.  Some code that needs to be fast is in sage.misc.apropos_internals, a Pyrex module.\n\nThis bundle addresses some annoyances with IPython's introspection module.\n\nSee the hg log for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/391\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: apropos ipython search\n\nThis bundle adds an apropos command to SAGE -- try `conductor**?' for an example.\n\nThe implementation is in sage.misc.apropos.  Some code that needs to be fast is in sage.misc.apropos_internals, a Pyrex module.\n\nThis bundle addresses some annoyances with IPython's introspection module.\n\nSee the hg log for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/391\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2007-06-27T05:31:26Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Bundle adding apropos to SAGE -- try `conductor**?' for an example.",
+    "title": "[with patch, needs work] adding apropos to SAGE -- try `conductor**?' for an example.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/391",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @ncalexan
 
 Keywords: apropos ipython search
 

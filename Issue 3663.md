@@ -3,7 +3,8 @@
 archive/issues_003663.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat bump@match.stanford.edu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3663\n\n",
+    "body": "Assignee: @anneschilling\n\nCC:  sage-combinat bump@match.stanford.edu\n\nKeywords: affine crystals\n\nImplementation of affine crystals from classical crystals:\n- input is a classical crystal\n- an affine crystal can be constructed by providing the methods e0 and f0\n\nImplementation of affine crystals from classical crystal and promotion:\n- input is a classical crystal and a promotion operators which corresponds\n  to a Dynkin diagram automorphism\n- the methods e0 and f0 are computed using the promotion operator\n\nImplementation of Kirillov Reshetikhin crystals:\n\n- Type A_n^{(1)} KR crystals are implemented.\n- Type D_n^{(1)}, B_n^{(1)}, A_{2n-1}^{(2)} KR crystals are implemented using plus-minus diagrams\n  to construct the promotion operator which corresponds to interchanging nodes 0 and 1\n- Type C_n^{(1)} KR crystals are implemented; the methods e0 and f0 are constructed\n  using an embedding into the ambient crystal of type A_{2n+1}^{(2)}\n- Type A_{2n}^{(2)}, D_{n+1}^{(2)} KR crystals are implemented; the methods e0 and f0 are\n  constructed using an embedding into the ambient crystal of type C_n^{(1)} via a similarity\n  of crystals\n\nSome documentation links improvements.\n\nDepends on trac ticket #4326 on root systems.\n\nThis patch is authored by Brant Jones and Anne Schilling.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3663\n\n",
+    "closed_at": "2009-11-19T17:01:55Z",
     "created_at": "2008-07-16T00:41:55Z",
     "labels": [
         "component: combinatorics"
@@ -15,10 +16,37 @@ archive/issues_003663.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @mwhansen
+Assignee: @anneschilling
 
 CC:  sage-combinat bump@match.stanford.edu
 
+Keywords: affine crystals
+
+Implementation of affine crystals from classical crystals:
+- input is a classical crystal
+- an affine crystal can be constructed by providing the methods e0 and f0
+
+Implementation of affine crystals from classical crystal and promotion:
+- input is a classical crystal and a promotion operators which corresponds
+  to a Dynkin diagram automorphism
+- the methods e0 and f0 are computed using the promotion operator
+
+Implementation of Kirillov Reshetikhin crystals:
+
+- Type A_n^{(1)} KR crystals are implemented.
+- Type D_n^{(1)}, B_n^{(1)}, A_{2n-1}^{(2)} KR crystals are implemented using plus-minus diagrams
+  to construct the promotion operator which corresponds to interchanging nodes 0 and 1
+- Type C_n^{(1)} KR crystals are implemented; the methods e0 and f0 are constructed
+  using an embedding into the ambient crystal of type A_{2n+1}^{(2)}
+- Type A_{2n}^{(2)}, D_{n+1}^{(2)} KR crystals are implemented; the methods e0 and f0 are
+  constructed using an embedding into the ambient crystal of type C_n^{(1)} via a similarity
+  of crystals
+
+Some documentation links improvements.
+
+Depends on trac ticket #4326 on root systems.
+
+This patch is authored by Brant Jones and Anne Schilling.
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3663

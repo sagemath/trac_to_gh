@@ -3,10 +3,12 @@
 archive/issues_001188.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider this example from the Magma handbook:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL()\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n864972271\n```\n\nwhich isn't quite right, we expect:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL(algorithm='NTL:LLL')\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n-1\n```\n\nIs this my lack of understanding of LLL reduction or is this a bug?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1188\n\n",
+    "body": "Assignee: @malb\n\nConsider this example from the Magma handbook:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL()\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n864972271\n```\n\nwhich isn't quite right, we expect:\n\n```\n# n integers which's GCD we are interested in\nsage: Q = [ 67015143, 248934363018, 109210, 25590011055, 74631449, 10230248, 709487, 68965012139, 972065, 864972271 ]\nsage: n = len(Q)\nsage: S = 100 \nsage: X = Matrix(IntegerRing(), n, n + 1)\nsage: for i in xrange(n):\n...     X[i,i + 1] = 1\nsage: for i in xrange(n): \n...     X[i,0] = S*Q[i]\nsage: L = X.LLL(algorithm='NTL:LLL')\nsage: show(L)\nsage: M = L[n-1].list()[1:]\nsage: add([Q[i]*M[i] for i in range(n)])\n-1\n```\n\nIs this my lack of understanding of LLL reduction or is this a bug?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1188\n\n",
+    "closed_at": "2007-11-20T15:55:11Z",
     "created_at": "2007-11-16T21:48:40Z",
     "labels": [
         "component: linear algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
@@ -16,7 +18,7 @@ archive/issues_001188.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 Consider this example from the Magma handbook:
 

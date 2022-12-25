@@ -3,7 +3,7 @@
 archive/issues_000687.json:
 ```json
 {
-    "body": "Assignee: somebody\n\ntitle should say it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/687\n\n",
+    "body": "Assignee: @malb\n\ntitle should say it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/687\n\n",
     "created_at": "2007-09-18T12:45:56Z",
     "labels": [
         "component: basic arithmetic"
@@ -15,7 +15,7 @@ archive/issues_000687.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 title should say it all.
 

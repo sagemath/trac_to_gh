@@ -1,23 +1,22 @@
-# Issue 6132: cmp for number field elements
+# Issue 6132: [with patch, needs work] cmp for number field elements
 
 archive/issues_006132.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nSee discussion at http://groups.google.com/group/sage-nt/browse_thread/thread/422606e40805d5d0?hl=en\n\nNote that `cmp(list(a), list(b))` can be slow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6132\n\n",
+    "body": "See discussion at http://groups.google.com/group/sage-nt/browse_thread/thread/422606e40805d5d0?hl=en\n\nNote that `cmp(list(a), list(b))` can be slow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6132\n\n",
+    "closed_at": "2013-07-22T15:02:22Z",
     "created_at": "2009-05-26T18:20:57Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cmp for number field elements",
+    "title": "[with patch, needs work] cmp for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6132",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
-
 See discussion at http://groups.google.com/group/sage-nt/browse_thread/thread/422606e40805d5d0?hl=en
 
 Note that `cmp(list(a), list(b))` can be slow...

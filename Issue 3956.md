@@ -1,21 +1,24 @@
-# Issue 3956: Fast hash for matrices over finite fields
+# Issue 3956: [with patch, positive review] Fast hash for matrices over finite fields
 
 archive/issues_003956.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nIn ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.\n\nCurrently, we have:\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s\nWall time: 14.23 s\n```\nThis, i think, is very slow and ought to be improved as well.\n\n```\nsage: N.set_immutable()\nsage: time N.__hash__()\nCPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s\nWall time: 3.17 s\n21008582\n```\n... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3956\n\n",
+    "body": "Assignee: @malb\n\nKeywords: hash, matrix, finite field\n\nIn ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.\n\nCurrently, we have:\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s\nWall time: 14.23 s\n```\nThis, i think, is very slow and ought to be improved as well.\n\n```\nsage: N.set_immutable()\nsage: time N.__hash__()\nCPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s\nWall time: 3.17 s\n21008582\n```\n... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3956\n\n",
+    "closed_at": "2008-08-30T19:53:10Z",
     "created_at": "2008-08-26T13:24:57Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Fast hash for matrices over finite fields",
+    "title": "[with patch, positive review] Fast hash for matrices over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3956",
     "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @malb
+
+Keywords: hash, matrix, finite field
 
 In ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.
 

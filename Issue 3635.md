@@ -1,16 +1,17 @@
-# Issue 3635: If m is a matrix, then m.plot() should call matrix_plot
+# Issue 3635: [with patch, positive review] If m is a matrix, then m.plot() should call matrix_plot
 
 archive/issues_003635.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently this just puts the text description on an empty set of axes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3635\n\n",
+    "closed_at": "2008-08-27T22:08:24Z",
     "created_at": "2008-07-10T20:41:22Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "If m is a matrix, then m.plot() should call matrix_plot",
+    "title": "[with patch, positive review] If m is a matrix, then m.plot() should call matrix_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3635",
     "user": "https://github.com/jasongrout"

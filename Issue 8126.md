@@ -4,6 +4,7 @@ archive/issues_008126.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nFix typo in documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8126\n\n",
+    "closed_at": "2010-01-31T00:17:03Z",
     "created_at": "2010-01-29T21:49:19Z",
     "labels": [
         "component: documentation",

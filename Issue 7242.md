@@ -4,6 +4,7 @@ archive/issues_007242.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI notice that sage is still including the Python processing module.  It \nseems that in Python 2.6, a version of the processing module was merged   \ninto the Python standard library under the name \"multiprocessing\".  I am  \ntold that it should be possible to convert by just replacing the references to processing with new ones to multiprocessing.\n\nSee <http://www.python.org/dev/peps/pep-0371/>\n\nWe should then be able to drop the \"processing\" spkg.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7242\n\n",
+    "closed_at": "2009-10-19T04:28:25Z",
     "created_at": "2009-10-18T23:46:15Z",
     "labels": [
         "component: packages: standard"

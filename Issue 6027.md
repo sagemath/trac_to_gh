@@ -1,9 +1,10 @@
-# Issue 6027: get_memory_usage() sucks performance wise on OSX
+# Issue 6027: [with patch, positive review] get_memory_usage() sucks performance wise on OSX
 
 archive/issues_006027.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  rdingman\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: timeit('get_memory_usage()')\n5 loops, best of 3: 486 ms per loop\n```\nThis causes sage/rings/tests.py to take forever in -long doctesting mode.\n| Sage Version 3.4.2, Release Date: 2009-05-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nSee http://blog.kuriositaet.de/?p=257 for a more efficient way to get the current memory used.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6027\n\n",
+    "closed_at": "2009-06-24T09:47:46Z",
     "created_at": "2009-05-12T07:13:49Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_006027.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "get_memory_usage() sucks performance wise on OSX",
+    "title": "[with patch, positive review] get_memory_usage() sucks performance wise on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6027",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

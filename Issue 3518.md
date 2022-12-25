@@ -1,16 +1,17 @@
-# Issue 3518: modular symbols -- fix a bug in factorization of modular symbols spaces
+# Issue 3518: [with patch; with positive review] modular symbols -- fix a bug in factorization of modular symbols spaces
 
 archive/issues_003518.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3518\n\n",
+    "closed_at": "2008-06-30T22:10:20Z",
     "created_at": "2008-06-27T01:05:35Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "modular symbols -- fix a bug in factorization of modular symbols spaces",
+    "title": "[with patch; with positive review] modular symbols -- fix a bug in factorization of modular symbols spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3518",
     "user": "https://github.com/williamstein"

@@ -4,10 +4,10 @@ archive/issues_005246.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nfrom [public \"report a problem\" bugtracker in the notebook](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1234453264894000&pt=1234453244894000&diffWidget=true&s=AJVazbUgzUp_UbQ1kyziS_LZuaCZwUhLGA)\n\nInstalling CRAN packages with `r.console()` and then `install.packages()` fails with the error: \n\n\"Can't open /home/was/build/sage-3.1.4/local/lib/R/share/sh/dcf.sh\". **Strange enough, as the Sage version is 3.2.3, not 3.1.4.** This can be \"fixed\" by creating a symlink from /home/was/build/sage-3.1.4 to the real Sage installation, but it would be better if it worked out of the box. R without CRAN is not very useful.\n\n---\n\nNote by me: seems like there is something linked absolutely!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5246\n\n",
+    "closed_at": "2010-01-25T23:24:49Z",
     "created_at": "2009-02-12T15:59:42Z",
     "labels": [
         "component: packages: standard",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

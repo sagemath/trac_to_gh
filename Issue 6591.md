@@ -1,23 +1,26 @@
-# Issue 6591: Implement view(object, viewer='pdf') and view(object, tightpage = True)
+# Issue 6591: [with patch, positive review] Implement view(object, viewer='pdf') and view(object, tightpage = True)
 
 archive/issues_006591.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri\n\nThis small patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\nwhich works even under the notebook.\n\nTypical use cases:\n\n* you prefer your pdf browser to your dvi browser\n* you want to view latex snippets which are not displayed well in dvi viewers or jsmath (e.g. tikzpicture) \n\nPotential extensions: view(object, viewer='png'), view(object, viewer='html') \n\nThis partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)\n\n\nThis patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6591\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri\n\nKeywords: view, pdflatex, tightpage, tikz\n\nThis small patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\nwhich works even under the notebook.\n\nTypical use cases:\n\n* you prefer your pdf browser to your dvi browser\n* you want to view latex snippets which are not displayed well in dvi viewers or jsmath (e.g. tikzpicture) \n\nPotential extensions: view(object, viewer='png'), view(object, viewer='html') \n\nNote: this partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)\n\n\nThis patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.\n\nSuggestions for how to doctest this are welcome.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6591\n\n",
+    "closed_at": "2009-07-24T21:57:46Z",
     "created_at": "2009-07-22T14:38:27Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Implement view(object, viewer='pdf') and view(object, tightpage = True)",
+    "title": "[with patch, positive review] Implement view(object, viewer='pdf') and view(object, tightpage = True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6591",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @williamstein
+Assignee: @nthiery
 
 CC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri
+
+Keywords: view, pdflatex, tightpage, tikz
 
 This small patch implements:
 
@@ -33,10 +36,12 @@ Typical use cases:
 
 Potential extensions: view(object, viewer='png'), view(object, viewer='html') 
 
-This partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)
+Note: this partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)
 
 
 This patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.
+
+Suggestions for how to doctest this are welcome.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6591
 

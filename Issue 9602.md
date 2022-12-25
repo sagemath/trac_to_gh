@@ -4,6 +4,7 @@ archive/issues_009602.json:
 ```json
 {
     "body": "Assignee: @peterjeremy\n\ngap sysfiles.c is very host-dependent.  Current code includes a mixture of SYS_xxx and HAVE_xxx_H tests.  Whilst SYS_BSD might appear logical for FreeBSD, there is no testing for this, and recent FreeBSD variants support termios.h.\n\nThe attached patches (mostly taken from the FreeBSD port) add tests for HAVE_TERMIOS_H to make gap compile on FreeBSD 8.x.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9602\n\n",
+    "closed_at": "2013-03-15T13:02:07Z",
     "created_at": "2010-07-26T11:22:14Z",
     "labels": [
         "component: porting: bsd",

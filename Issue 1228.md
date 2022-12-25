@@ -4,6 +4,7 @@ archive/issues_001228.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe get:\n\n```\nFile \"arith.py\", line 2393:\n     sage: continued_fraction_list(sqrt(4/19))\nExpected:\n     [0, 2, 5, 1, 1, 2, 1, 16, 1, 2, 1, 1, 5, 4, 5, 1, 1, 2, 1, 18]\nGot:\n     [0, 2, 5, 1, 1, 2, 1, 16, 1, 2, 1, 1, 5, 4, 5, 1, 1, 2, 1, 15, 2]\n```\nThis is fallout from #1196:\n\n```\nWith 2.8.12 we get:\n\nsage: n(sqrt(4/19))\n0.458831467741123\n\nWith 2.8.13.rc1 we get:\n\nsage: n(sqrt(4/19))\n0.458831467741124\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1228\n\n",
+    "closed_at": "2007-11-21T13:05:28Z",
     "created_at": "2007-11-20T23:03:57Z",
     "labels": [
         "component: doctest coverage",

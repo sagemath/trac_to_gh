@@ -1,9 +1,10 @@
-# Issue 5722: fast callable pow
+# Issue 5722: [with patch, positive review] fast callable pow
 
 archive/issues_005722.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  cwitty\n\npow(double, double) inconsistent for bad input. See extensive documentation in floatobject.c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5722\n\n",
+    "closed_at": "2009-04-09T18:52:52Z",
     "created_at": "2009-04-09T02:15:41Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_005722.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "fast callable pow",
+    "title": "[with patch, positive review] fast callable pow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5722",
     "user": "https://github.com/robertwb"

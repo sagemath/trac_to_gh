@@ -4,6 +4,7 @@ archive/issues_008636.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nNew spkg here\n\n   http://boxen.math.washington.edu/home/wstein/patches/iconv-1.13.1.p1.spkg\n\nI've already posted this to the sagemath.org website, so people get it when they upgrade.   However, it's critical that it go into sage-4.4, or the problem will just reappear. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8636\n\n",
+    "closed_at": "2010-04-16T17:22:59Z",
     "created_at": "2010-03-31T15:22:15Z",
     "labels": [
         "component: build",

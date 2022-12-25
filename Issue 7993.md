@@ -4,6 +4,7 @@ archive/issues_007993.json:
 ```json
 {
     "body": "Assignee: tbd\n\nWhen doctesting a file `a.sage` containing\n\n```\ndef foo():\n    \"\"\"\n    sage: 1+1\n   2\n    \"\"\"\n    pass\n```\n\n(note the missing space before the 2), you get:\n\n```\n[wjp@issa sage-4.3.1.rc0]$ ./sage -t a.sage\nsage -t  \"a.sage\"                                           \nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [2.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\"\nTotal time for all tests: 2.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7993\n\n",
+    "closed_at": "2010-03-08T20:54:04Z",
     "created_at": "2010-01-19T06:06:55Z",
     "labels": [
         "component: doctest coverage",

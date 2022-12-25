@@ -1,22 +1,23 @@
-# Issue 4060: Polyhedra don't handle real coordinates properly
+# Issue 4060: [with patch, positive review] Polyhedra don't handle real coordinates properly
 
 archive/issues_004060.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: polyhedra\n\nDear All,\n\nI have a question related to the polyhedra module.\nWhen I define a polyhedron using float rather than integer\ncoordinates, I get a weird behavior from the vert_to_ieq function.\nFor example, if I type something like this:\n\np = [[1.1, 2.2], [3.3, 4.4]]\nvert_to_ieq(p, cdd_type=\"real\") \n\nIssue created by migration from https://trac.sagemath.org/ticket/4060\n\n",
+    "body": "Assignee: somebody\n\nKeywords: polyhedra\n\nDear All,\n\nI have a question related to the polyhedra module.\nWhen I define a polyhedron using float rather than integer\ncoordinates, I get a weird behavior from the vert_to_ieq function.\nFor example, if I type something like this:\n\np = [[1.1, 2.2], [3.3, 4.4]]\nvert_to_ieq(p, cdd_type=\"real\") \n\nIssue created by migration from https://trac.sagemath.org/ticket/4060\n\n",
+    "closed_at": "2008-09-19T03:20:08Z",
     "created_at": "2008-09-04T13:44:12Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Polyhedra don't handle real coordinates properly",
+    "title": "[with patch, positive review] Polyhedra don't handle real coordinates properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4060",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: mhampton
+Assignee: somebody
 
 Keywords: polyhedra
 

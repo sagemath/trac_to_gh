@@ -4,6 +4,7 @@ archive/issues_001278.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee emails on sage-devel for details.   I'll post specific notes about what has to be done below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1278\n\n",
+    "closed_at": "2007-12-14T04:11:57Z",
     "created_at": "2007-11-26T06:47:31Z",
     "labels": [
         "component: packages: standard"

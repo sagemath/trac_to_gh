@@ -1,9 +1,10 @@
-# Issue 3358: Improve the building of eclib (shared/static objects) [with patch needs review]
+# Issue 3358: [with patch, needs review] Improve the building of eclib (shared/static objects)
 
 archive/issues_003358.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  tabbott@mit.edu\n\nAfter sitting waiting for some answers on the last thread about this on debian-sage\nI decided to go ahead. This patch do not add versionning for debian as it seems\nto cause problem on other OS. It builds static objects (libraries and executables)\nwithout any pic flag and shared object with pic flag on linux. I respected the earlier\nsetting where the flag is set in spkg-install and it is set to nothing on OS X and\nCYGWIN although I think it should be set as well on this platform.\nI also move executables in a created bin directory for convenience (this directory\nis created by the Makefile).\nI cleaned the spkg-install to accommodate the changes and added a few fix that I\nthought necessary. -fPIC to -fpic, those are 2 slightly different flags, I don't\nthink I should go on the technical differences between them. I also cleaned\na conditional block were linux specific code would be executed on darwin - probably\nwithout harm but still.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3358\n\n",
+    "closed_at": "2012-08-06T13:13:39Z",
     "created_at": "2008-06-03T23:57:53Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003358.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Improve the building of eclib (shared/static objects) [with patch needs review]",
+    "title": "[with patch, needs review] Improve the building of eclib (shared/static objects)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3358",
     "user": "https://github.com/kiwifb"

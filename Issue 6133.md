@@ -1,16 +1,17 @@
-# Issue 6133: [with patch, needs review] remove pbuild files in devel/sage
+# Issue 6133: [with patch, positive review] remove pbuild files in devel/sage
 
 archive/issues_006133.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @mwhansen\n\nThree pbuild files still live in `devel/sage`, but are clearly out of date and need to be removed. The patch just removes all three.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6133\n\n",
+    "closed_at": "2009-05-28T19:59:15Z",
     "created_at": "2009-05-26T18:31:22Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] remove pbuild files in devel/sage",
+    "title": "[with patch, positive review] remove pbuild files in devel/sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6133",
     "user": "https://github.com/craigcitro"

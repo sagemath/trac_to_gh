@@ -4,6 +4,7 @@ archive/issues_008121.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nOn the Sage (=IPython) command line:\n\n```\nsage: time (2+2)/3\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4/3\nsage: time(2+2)/3\n...\nNameError: name 'time' is not defined\n```\n\nIn the notebook\n\n```\nsage: time     (2+2)/3\n...\nNameError: name 'time' is not defined\n```\n\nThis is happening because in some cases Sage treats \"time <foo>\" as a function call, and sometimes not.  In the notebook it is always a function, when <foo> starts with a paren, but on the command line it is a function only if there is no space between time and (.   \n\nFIX: Make the notebook work exactly the same was as the command line, in this instance.  That seems like a reasonable solution or compromise. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8121\n\n",
+    "closed_at": "2020-08-22T08:46:10Z",
     "created_at": "2010-01-29T16:29:52Z",
     "labels": [
         "component: notebook",

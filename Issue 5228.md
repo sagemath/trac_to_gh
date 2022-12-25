@@ -1,15 +1,16 @@
-# Issue 5228: [with patch, needs review] make composite_fields and galois_closure return maps and preserve embeddings
+# Issue 5228: [with patch, positive review] make composite_fields and galois_closure return maps and preserve embeddings
 
 archive/issues_005228.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: number fields composite fields galois closure embedding coercion\n\nThe patches describe and doctest this better, but...\n\n* Extends composite_fields and galois_closure to return maps when asked\n\n* Uses the new coercion embedding to only return \"coherent\" compositions if embeddings are specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5228\n\n",
+    "closed_at": "2009-02-13T03:58:29Z",
     "created_at": "2009-02-10T18:20:38Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] make composite_fields and galois_closure return maps and preserve embeddings",
+    "title": "[with patch, positive review] make composite_fields and galois_closure return maps and preserve embeddings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5228",
     "user": "https://github.com/ncalexan"

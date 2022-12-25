@@ -4,6 +4,7 @@ archive/issues_006640.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Typo combinat\n\nSummary says all. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6640\n\n",
+    "closed_at": "2009-07-29T13:05:50Z",
     "created_at": "2009-07-27T13:56:08Z",
     "labels": [
         "component: combinatorics",

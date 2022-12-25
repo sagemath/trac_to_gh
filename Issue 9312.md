@@ -1,30 +1,36 @@
-# Issue 9312: Fix GLPK spkg for SAGE64
+# Issue 9312: Make GLPK spkg standard
 
 archive/issues_009312.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nathanncohen @qed777\n\nFrom the discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b9429bcb929cda7\n\nThe GLPK spkg ignores the SAGE64 variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9312\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @nathanncohen @qed777\n\n(((\nThis includes a fix for the issue mentioned here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b9429bcb929cda7\n)))\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/ncohen/glpk-4.44.spkg\n\nThis ticket must be merged together with #9351 and #9392.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9312\n\n",
+    "closed_at": "2010-07-05T22:35:30Z",
     "created_at": "2010-06-22T15:39:15Z",
     "labels": [
-        "component: optional packages",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "Fix GLPK spkg for SAGE64",
+    "title": "Make GLPK spkg standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9312",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  @nathanncohen @qed777
 
-From the discussion at
+(((
+This includes a fix for the issue mentioned here:
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/b9429bcb929cda7
+)))
 
-The GLPK spkg ignores the SAGE64 variable.
+The spkg is here:
+
+http://sage.math.washington.edu/home/ncohen/glpk-4.44.spkg
+
+This ticket must be merged together with #9351 and #9392.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9312
 

@@ -1,9 +1,10 @@
-# Issue 4192: is_Blah functions: deprecate and then remove them from top level imports
+# Issue 4192: [with patch, positive review] is_Blah functions: deprecate and then remove them from top level imports
 
 archive/issues_004192.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nKeywords: imports\n\nFunctions like `is_FractionField` should not be imported at the top level, since they don't necessarily make sense mathematically, only programmatically. Thus, situations like\n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\n```\nmight confuse people.  \n\nSee the discussion in #4149. I think the best solution, as propounded there by cremona and robertwb, is to have `is_Blah` *methods* which are, as much as possible, mathematically correct.  In contrast, `is_Blah` *functions* should be data-checks, existing primarily for use in the code.\n\nmhansen has volunteered to do at least some of this work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4192\n\n",
+    "closed_at": "2008-09-26T07:55:23Z",
     "created_at": "2008-09-24T17:04:34Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004192.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "is_Blah functions: deprecate and then remove them from top level imports",
+    "title": "[with patch, positive review] is_Blah functions: deprecate and then remove them from top level imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4192",
     "user": "https://github.com/jhpalmieri"

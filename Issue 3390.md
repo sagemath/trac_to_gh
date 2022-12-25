@@ -1,16 +1,17 @@
-# Issue 3390: update numpy to the 1.1.0 release
+# Issue 3390: [with patch, positive review] update numpy to the 1.1.0 release
 
 archive/issues_003390.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3390\n\n",
+    "closed_at": "2008-08-27T11:29:52Z",
     "created_at": "2008-06-10T19:05:17Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "update numpy to the 1.1.0 release",
+    "title": "[with patch, positive review] update numpy to the 1.1.0 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3390",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

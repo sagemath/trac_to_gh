@@ -4,6 +4,7 @@ archive/issues_004554.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt's possible that a user may not confirm his e-mail address for a long time and will need a new confirmation email. \n\nNote: with #4551 it's now easy to turn on the email system.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4554\n\n",
+    "closed_at": "2020-03-29T02:05:53Z",
     "created_at": "2008-11-19T18:29:51Z",
     "labels": [
         "component: notebook"

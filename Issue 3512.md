@@ -1,22 +1,23 @@
-# Issue 3512: [with spkg, needs review] upgrade to sqlalchemy 0.4.6
+# Issue 3512: [with spkg, positive review] upgrade to sqlalchemy 0.4.6
 
 archive/issues_003512.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nCC:  @jvoight\n\nJohn Voight ran into a problem running dsage that is caused by a bug in the version of sqlalchemy (0.4.3) we ship. The latest upstream stable version is 0.4.6. \nAll dsage unit tests pass with the new sqlalchemy installed, and I think dsage is the only package using sqlalchemy currently.\n\nHere is the new spkg:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/sqlalchemy-0.4.6.p0.spkg\n\nI commented out copying the documentation since it's readily available online, and I saw very little else in $SAGE_ROOT/local/doc. Feel to uncomment that if need be. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3512\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jvoight\n\nJohn Voight ran into a problem running dsage that is caused by a bug in the version of sqlalchemy (0.4.3) we ship. The latest upstream stable version is 0.4.6. \nAll dsage unit tests pass with the new sqlalchemy installed, and I think dsage is the only package using sqlalchemy currently.\n\nHere is the new spkg:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/sqlalchemy-0.4.6.p0.spkg\n\nI commented out copying the documentation since it's readily available online, and I saw very little else in $SAGE_ROOT/local/doc. Feel to uncomment that if need be. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3512\n\n",
+    "closed_at": "2008-06-26T03:10:51Z",
     "created_at": "2008-06-25T21:51:23Z",
     "labels": [
-        "component: dsage",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg, needs review] upgrade to sqlalchemy 0.4.6",
+    "title": "[with spkg, positive review] upgrade to sqlalchemy 0.4.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3512",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: @yqiang
+Assignee: mabshoff
 
 CC:  @jvoight
 

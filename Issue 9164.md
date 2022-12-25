@@ -4,6 +4,7 @@ archive/issues_009164.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\n```\n\nsage: gap.cputime()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in cputime(self, t)\n    429         else:\n    430             self.eval('_r_ := Runtimes();')\n--> 431             r = sum(eval(self.eval('[_r_.user_time, _r_.system_time, _r_.user_time_children, _r_.system_time_children]')))\n    432             return r/1000.0\n    433 \n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in <module>()\n\nNameError: name 'fail' is not defined\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9164\n\n",
+    "closed_at": "2013-03-15T13:02:31Z",
     "created_at": "2010-06-07T04:02:22Z",
     "labels": [
         "component: porting: cygwin",

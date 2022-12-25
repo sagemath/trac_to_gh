@@ -3,7 +3,8 @@
 archive/issues_007560.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  rnelsonchem@gmail.com\n\nKeywords: t_span\n\nFrom: Ryan\n\n```\nHello all,\n\nI've just started using Sage, and I'm currently trying to use the\node_solver class to solve some simple differential equations. I was\nhaving some problems setting up my own program based on this class\nuntil I realized that the number of points in the solution does not\nmatch the number of points requested by the t_span variable. For\nexample, when I run this script:\n_________\n#!/usr/bin/env sage-python\nfrom sage.all import ode_solver\n\ndef f(t, y):\n   return [y[1], -y[0]]\nT = ode_solver()\nT.function=f\nT.y_0=[1, 1]\nT.ode_solve(t_span=[0, 10], num_points=100)\nprint len(T.solution)\nT.ode_solve(t_span=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint len(T.solution)\n_________\n\nI get returned values of 101 and 10, where I would expect 100 and 11.\n\nI don't know about the first case, but for the second case, the\nsolution for the last value (10) is missing. I was able to circumvent\nthis problem by appending a dummy variable to the end of t_span, but\nI'm wondering if this is the expected behavior. Is there something\nabout the solution that I'm missing? I am currently using Sage 4.2.1\nthat I built from source in a Gentoo Linux distro.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7560\n\n",
+    "body": "Assignee: jkantor\n\nCC:  rnelsonchem@gmail.com\n\nKeywords: ode_solver, ode_solve, t_span\n\nFrom: Ryan\n\n```\nHello all,\n\nI've just started using Sage, and I'm currently trying to use the\node_solver class to solve some simple differential equations. I was\nhaving some problems setting up my own program based on this class\nuntil I realized that the number of points in the solution does not\nmatch the number of points requested by the t_span variable. For\nexample, when I run this script:\n_________\n#!/usr/bin/env sage-python\nfrom sage.all import ode_solver\n\ndef f(t, y):\n   return [y[1], -y[0]]\nT = ode_solver()\nT.function=f\nT.y_0=[1, 1]\nT.ode_solve(t_span=[0, 10], num_points=100)\nprint len(T.solution)\nT.ode_solve(t_span=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint len(T.solution)\n_________\n\nI get returned values of 101 and 10, where I would expect 100 and 11.\n\nI don't know about the first case, but for the second case, the\nsolution for the last value (10) is missing. I was able to circumvent\nthis problem by appending a dummy variable to the end of t_span, but\nI'm wondering if this is the expected behavior. Is there something\nabout the solution that I'm missing? I am currently using Sage 4.2.1\nthat I built from source in a Gentoo Linux distro.\n```\n\nApply:\n1. attachment:trac_7560_ode_off-by-one+doc.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/7560\n\n",
+    "closed_at": "2013-01-12T08:51:37Z",
     "created_at": "2009-11-30T16:46:19Z",
     "labels": [
         "component: numerical",
@@ -21,7 +22,7 @@ Assignee: jkantor
 
 CC:  rnelsonchem@gmail.com
 
-Keywords: t_span
+Keywords: ode_solver, ode_solve, t_span
 
 From: Ryan
 
@@ -58,6 +59,9 @@ I'm wondering if this is the expected behavior. Is there something
 about the solution that I'm missing? I am currently using Sage 4.2.1
 that I built from source in a Gentoo Linux distro.
 ```
+
+Apply:
+1. attachment:trac_7560_ode_off-by-one+doc.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/7560
 

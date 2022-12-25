@@ -1,16 +1,17 @@
-# Issue 5834: Improvements to quadratic_forms/extras/py
+# Issue 5834: [with patch, positive review] Improvements to quadratic_forms/extras/py
 
 archive/issues_005834.json:
 ```json
 {
     "body": "Assignee: justin\n\nCC:  @tornaria @jonhanke\n\nKeywords: quadratic forms\n\nAs first raised in #5627, concerning quadratic_forms/extras.py (which contains various utilities written for use in various places in thw quadratic_forms module):\n\nI have added a patch after looking carefully at this, which does the following:\n\n1. I removed hilbert_symbol_rational(), making a trivial change to hilbert_symbol() so that it already works on rationals. I think this will useful outside the quadratic forms module.\n\n2. I moved `IsPadicSquare()` to a member function for rationals, so you now say r.is_padic_square(p) instead of `IsPadicSquare(r,p)`, while at the same time making the function simpler and cleaner. I think this will also be useful outside the quadratic forms module.\n\n3. I removed random_int_upto(n) since it does the same as ZZ.random_element(n).\n\n4. I simplified quadratic_nonresidue() (and changed its name to least_quadratic_nonresidue()) -- by putting in three simple tests for when the answer is 2, 3 or 5 the loop is avoided in 7/8 of the cases. I also changed the loop to \"for r in xsrange(7,p)\", in response to the discussion earlier on this ticket: adding the x gives an iterator instead of making the whole list and iterating through it (bad for large p!), and adding the s makes the iterator yield Sage integers (so it works for p too large to fit into a python int). I also added an is_prime() test on p, since otherwise if you give it a huge composite number there seemed to be a danger that it would run through a loop of length p before realising that the input was invalid. \n\n   5. I simplified sgn().\n\nAll tests in sage/quadratic_forms pass, as do those in arith.py and rational.py which were also touched.\n\nThe patch needs to be applied to (at least) 3.4.1.rc3 + the two patches at #5627.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5834\n\n",
+    "closed_at": "2009-05-04T18:15:24Z",
     "created_at": "2009-04-20T10:04:00Z",
     "labels": [
         "component: quadratic forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Improvements to quadratic_forms/extras/py",
+    "title": "[with patch, positive review] Improvements to quadratic_forms/extras/py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5834",
     "user": "https://github.com/JohnCremona"

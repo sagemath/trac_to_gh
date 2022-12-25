@@ -3,7 +3,8 @@
 archive/issues_008396.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  nborie\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\nNote: this should be caught by setting good categories\n\n```\nsage: s.category()\nCategory of objects\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8396\n\n",
+    "body": "Assignee: giraudo\n\nCC:  nborie\n\nKeywords: Subsets element_class\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\nNote: this should be caught by setting good categories\n\n```\nsage: s.category()\nCategory of objects\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8396\n\n",
+    "closed_at": "2010-03-02T21:40:37Z",
     "created_at": "2010-02-28T15:13:10Z",
     "labels": [
         "component: combinatorics",
@@ -16,9 +17,11 @@ archive/issues_008396.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/giraudo"
 }
 ```
-Assignee: sage-combinat
+Assignee: giraudo
 
 CC:  nborie
+
+Keywords: Subsets element_class
 
 element_class of Subsets is broken
 
@@ -34,7 +37,7 @@ Note: this should be caught by setting good categories
 ```
 sage: s.category()
 Category of objects
-}}
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8396
 

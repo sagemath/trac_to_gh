@@ -4,6 +4,7 @@ archive/issues_004012.json:
 ```json
 {
     "body": "Assignee: boothby\n\nEdit tab gives:\n\n```\n\n\nPrint a & b\nsystem:sage\n\n{{{id=3|\n%latex\nx^2\n///\n}}}\n\n{{{id=0|\nprint \"a\"\n///\na\n}}}\n\n{{{id=1|\nprint \"b\"\n///\nb\n}}}\n\n{{{id=2|\n\n///\n}}}\n\n\n\n```\n\nText tab gives:\n\n```\nsage: %latex\nsage: x^2\nsage: print \"a\"\na\nsage: print \"b\"\nb\n```\n\nThe Text tab should show a textual version similar to that of the Edit tab.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4012\n\n",
+    "closed_at": "2009-01-22T00:47:28Z",
     "created_at": "2008-08-31T02:08:21Z",
     "labels": [
         "component: notebook",

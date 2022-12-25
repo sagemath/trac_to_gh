@@ -1,15 +1,16 @@
-# Issue 5747: improve doctest coverage for schemes/generic/ambient_space.py
+# Issue 5747: [with patch, positive review] improve doctest coverage for schemes/generic/ambient_space.py
 
 archive/issues_005747.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: doctest scheme ambient space\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5747\n\n",
+    "closed_at": "2009-04-12T21:25:24Z",
     "created_at": "2009-04-11T05:19:59Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "improve doctest coverage for schemes/generic/ambient_space.py",
+    "title": "[with patch, positive review] improve doctest coverage for schemes/generic/ambient_space.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5747",
     "user": "https://github.com/aghitza"

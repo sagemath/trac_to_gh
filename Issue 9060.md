@@ -3,7 +3,7 @@
 archive/issues_009060.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nUseless, when looking for a triangle, to test both abc, bca, and cab. The same is true when looking for Cycles, for complete graphs, etc...\n\nThere may be a way to generally deal with those symmetries to improve the speed of subgraph search.\n\nIf not, it is still possible to manually improve it for cycles, complete graphs, and other \"common\" graphs.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9060\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nUseless, when looking for a triangle, to test both abc, bca, and cab. The same is true when looking for Cycles, for complete graphs, etc...\n\nThere may be a way to generally deal with those symmetries to improve the speed of subgraph search. Build complete table of n! symmetries if necessary (optional argument to toggle it).\n\nIf not, it is still possible to manually improve it for cycles, complete graphs, and other \"common\" graphs.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9060\n\n",
     "created_at": "2010-05-26T22:37:24Z",
     "labels": [
         "component: graph theory"
@@ -19,7 +19,7 @@ Assignee: jason, ncohen, rlm
 
 Useless, when looking for a triangle, to test both abc, bca, and cab. The same is true when looking for Cycles, for complete graphs, etc...
 
-There may be a way to generally deal with those symmetries to improve the speed of subgraph search.
+There may be a way to generally deal with those symmetries to improve the speed of subgraph search. Build complete table of n! symmetries if necessary (optional argument to toggle it).
 
 If not, it is still possible to manually improve it for cycles, complete graphs, and other "common" graphs.
 

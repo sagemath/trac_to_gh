@@ -1,16 +1,17 @@
-# Issue 2774: [with patch, needs review] conversion from PolyBoRi to Singular
+# Issue 2774: [with patch, positive review] conversion from PolyBoRi to Singular
 
 archive/issues_002774.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\n```\nsage: B.<x,y> = BooleanPolynomialRing(2)\nsage: B._singular_()\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering lp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2774\n\n",
+    "closed_at": "2008-04-04T22:15:05Z",
     "created_at": "2008-04-02T16:09:06Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] conversion from PolyBoRi to Singular",
+    "title": "[with patch, positive review] conversion from PolyBoRi to Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2774",
     "user": "https://github.com/malb"

@@ -3,11 +3,11 @@
 archive/issues_008713.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: an_element\n\nAs stated in the documentation of Parent._an_element_, this method\nneed not be blazingly fast since an_element is cached anyway. Also,\nhaving it implemented in Parent, rather than in the categories makes\nit impossible for categories to override this default implementation\nwith something more meaningful. Therefore it would be best moved to\nthe ParentMethods of Sets().\n\nThis first patch is a step in that direction. It just makes\n_an_element_ a def method rather than a cpdef method. This little\nchange by itself causes the recompilation of a big part of Sage, which\nmakes it completely impractical to work on a patch containing it (or\nin a patch queue containing it). So it would be nice to have this\npatch merged in Sage 4.4, so that we can start working comfortably on\nthe moving of _an_element_ once it has been merged in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8713\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: an_element\n\nAs stated in the documentation of Parent._an_element_, this method\nneed not be blazingly fast since an_element is cached anyway. Also,\nhaving it implemented in Parent, rather than in the categories makes\nit impossible for categories to override this default implementation\nwith something more meaningful. Therefore it would be best moved to\nthe ParentMethods of Sets().\n\nThis first patch is a step in that direction. It just makes\n_an_element_ a def method rather than a cpdef method. This little\nchange by itself causes the recompilation of a big part of Sage, which\nmakes it completely impractical to work on a patch containing it (or\nin a patch queue containing it). So it would be nice to have this\npatch merged in Sage 4.4, so that we can start working comfortably on\nthe moving of _an_element_ once it has been merged in.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8713\n\n",
+    "closed_at": "2010-04-23T17:08:32Z",
     "created_at": "2010-04-18T21:23:04Z",
     "labels": [
-        "component: categories",
-        "bug"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Prepare the ground for moving Parent._an_element_ to Sets().ParentMethods",
@@ -36,6 +36,7 @@ makes it completely impractical to work on a patch containing it (or
 in a patch queue containing it). So it would be nice to have this
 patch merged in Sage 4.4, so that we can start working comfortably on
 the moving of _an_element_ once it has been merged in.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8713
 

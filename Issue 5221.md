@@ -1,16 +1,17 @@
-# Issue 5221: default cmap for contour plot makes last contour line invisible when fill=False
+# Issue 5221: [with patch, positive review] default cmap for contour_plot makes last contour line invisible when fill=False
 
 archive/issues_005221.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nExamine the output of \n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1], fill=False)\n```\n\n\nThe last contour line (level curve at z=1) is invisible because the default cmap makes it white.  Compare that to a different color map:\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1],cmap='winter',fill=False)\n```\n\nWe should make the default cmap something less confusing when fill=False.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5221\n\n",
+    "closed_at": "2009-09-23T00:21:55Z",
     "created_at": "2009-02-09T16:12:04Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "default cmap for contour plot makes last contour line invisible when fill=False",
+    "title": "[with patch, positive review] default cmap for contour_plot makes last contour line invisible when fill=False",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5221",
     "user": "https://github.com/jasongrout"

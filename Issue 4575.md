@@ -1,15 +1,16 @@
-# Issue 4575: [with patch, needs review] Option to show nestet lists as html tables
+# Issue 4575: [with patch, positive review] Option to show nested lists as html tables
 
 archive/issues_004575.json:
 ```json
 {
     "body": "Assignee: whuss\n\nThe attached patch adds the option table_form to the show() command.\n\nIf table_form = True, nested lists are shown in the notebook as nicely\nformatted html tables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4575\n\n",
+    "closed_at": "2009-06-01T06:26:01Z",
     "created_at": "2008-11-21T09:19:56Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] Option to show nestet lists as html tables",
+    "title": "[with patch, positive review] Option to show nested lists as html tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4575",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

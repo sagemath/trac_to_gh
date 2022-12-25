@@ -3,7 +3,8 @@
 archive/issues_009330.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @jhpalmieri\n\nWhen you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.\n\nMost importantly, several instances of Sha should have ticks, probably.  But are they referring to the mathematical object \n\n```\n`Sha`\n```\nor the computer structure of the class\n\n```\n``Sha``\n```\n?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.\n\nIn line 198, \n\n```\n You can increase the `descent_second_limit` (in the above example\n```\nshould have double ticks.\n\nWe also get the following warning:\n\n```\nsage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\nthis probably refers to \n\n```\n       THEOREM (Kato): Suppose `L(E,1) \\neq 0` and `p \\neq 2, 3` is a prime such that\n            - `E` does not have additive reduction at `p`,\n            - the mod-`p` representation is surjective.\n       Then `{ord}_p(\\#Sha(E))` divides `{ord}_p(L(E,1)\\cdot\\#E(\\QQ)_{tor}^2/(\\Omega_E \\cdot \\prod c_q))`.\n```\nbut I'm not sure.\n\nIn line 756 we have \n\n```\nWe get no information the curve has rank 2.::\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9330\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @jhpalmieri\n\nWhen you look at [this](http://www.sagemath.org/doc/reference/sage/schemes/elliptic_curves/sha_tate.html), there are a number of things wrong or confusing in the documentation.\n\nMost importantly, several instances of Sha should have ticks, probably.  But are they referring to the mathematical object \n\n```\n`Sha`\n```\nor the computer structure of the class\n\n```\n``Sha``\n```\n?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.\n\nIn line 756 we have \n\n```\nWe get no information the curve has rank 2.::\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9330\n\n",
+    "closed_at": "2010-09-15T11:38:11Z",
     "created_at": "2010-06-24T15:55:55Z",
     "labels": [
         "component: elliptic curves",
@@ -34,28 +35,6 @@ or the computer structure of the class
 ``Sha``
 ```
 ?  If I knew what was intended (given that the distinction is quite small), I would do this patch myself.  But it looks like sometimes the group is intended, other times the class object.
-
-In line 198, 
-
-```
- You can increase the `descent_second_limit` (in the above example
-```
-should have double ticks.
-
-We also get the following warning:
-
-```
-sage-4.4.4/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.py:docstring of sage.schemes.elliptic_curves.sha_tate.Sha.bound_kato:12: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
-```
-this probably refers to 
-
-```
-       THEOREM (Kato): Suppose `L(E,1) \neq 0` and `p \neq 2, 3` is a prime such that
-            - `E` does not have additive reduction at `p`,
-            - the mod-`p` representation is surjective.
-       Then `{ord}_p(\#Sha(E))` divides `{ord}_p(L(E,1)\cdot\#E(\QQ)_{tor}^2/(\Omega_E \cdot \prod c_q))`.
-```
-but I'm not sure.
 
 In line 756 we have 
 

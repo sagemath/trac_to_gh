@@ -1,15 +1,16 @@
-# Issue 929: wrap fpLLL-2.0
+# Issue 929: [with patch] wrap fpLLL-2.0
 
 archive/issues_000929.json:
 ```json
 {
     "body": "Assignee: @malb\n\nDamien Stehle published a new and much improved version of his fpLLL package at http://perso.ens-lyon.fr/damien.stehle/english.html . This should be wrapped for SAGE instead of fpLLL-1.3. This makes the fpLLL patch attached to #723 obsolete and should also provide SAGE with a performance comparable to MAGMA for LLL computations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/929\n\n",
+    "closed_at": "2007-10-23T19:39:38Z",
     "created_at": "2007-10-19T17:29:00Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "wrap fpLLL-2.0",
+    "title": "[with patch] wrap fpLLL-2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/929",
     "user": "https://github.com/malb"

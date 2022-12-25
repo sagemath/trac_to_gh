@@ -1,16 +1,17 @@
-# Issue 3244: [with patch, needs review] add support for inner plethysms of symmetric functions
+# Issue 3244: [with patch, positive review] add support for inner plethysms of symmetric functions
 
 archive/issues_003244.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3244\n\n",
+    "closed_at": "2008-05-25T14:13:41Z",
     "created_at": "2008-05-17T20:45:56Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] add support for inner plethysms of symmetric functions",
+    "title": "[with patch, positive review] add support for inner plethysms of symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3244",
     "user": "https://github.com/mwhansen"

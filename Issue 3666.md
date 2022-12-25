@@ -4,9 +4,10 @@ archive/issues_003666.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis looks like `pari(infinity)` works:\n\n```\nsage: pari(infinity)\nInfinity\n```\n\nbut it's actually just creating a Pari variable named Infinity.\n\n```\nsage: (pari(infinity)-1)^2\nInfinity^2 - 2*Infinity + 1\n```\n\nWe should make pari(infinity) raise an exception, instead.  (As far as I can tell, Pari has no built-in notion of infinity, so we can't actually make it work.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3666\n\n",
+    "closed_at": "2009-10-31T05:23:11Z",
     "created_at": "2008-07-16T05:12:04Z",
     "labels": [
-        "component: packages",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",

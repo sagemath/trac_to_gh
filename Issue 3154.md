@@ -4,6 +4,7 @@ archive/issues_003154.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn the notebook we have this, caused by _eval_cmd in worksheet.py:\n\n```\n%python \n2+2\nprint \"'hi\\'\"\n///\n\n'hi\\u0027\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3154\n\n",
+    "closed_at": "2010-05-04T04:42:38Z",
     "created_at": "2008-05-10T22:43:31Z",
     "labels": [
         "component: notebook",

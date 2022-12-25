@@ -4,9 +4,10 @@ archive/issues_008591.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @malb @haraldschilly\n\nYet another solver, which has been reported to be interesting several times...\n\nIt shouldn't be hard to implement as it can be done through Coin's interface, as Cplex and Cbc, so it should mainly consist in a copy of a 15-lines file and a basic update of Cbc's package\n\nhttp://www.gurobi.com/\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8591\n\n",
+    "closed_at": "2012-06-19T13:31:13Z",
     "created_at": "2010-03-23T18:26:56Z",
     "labels": [
-        "component: numerical"
+        "component: linear programming"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Support for Gurobi",

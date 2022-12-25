@@ -1,16 +1,17 @@
-# Issue 1393: is_integral_domain crappy output
+# Issue 1393: [with patch, positive review] is_integral_domain may return incorrect answer
 
 archive/issues_001393.json:
 ```json
 {
     "body": "Assignee: @malb\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/acf5c8cdcec6149f\n\nThe attached patch passes \"testall\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/1393\n\n",
+    "closed_at": "2007-12-15T11:54:11Z",
     "created_at": "2007-12-04T05:24:52Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "is_integral_domain crappy output",
+    "title": "[with patch, positive review] is_integral_domain may return incorrect answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1393",
     "user": "https://github.com/rlmill"

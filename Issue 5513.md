@@ -1,15 +1,16 @@
-# Issue 5513: Enhanced support for number field unit groups
+# Issue 5513: [with patch, positive review] Enhanced support for number field unit groups
 
 archive/issues_005513.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\nKeywords: number field unit group\n\nThe attached patch (based on 3.4) implements a new class UnitGroup for the unit group of a number field.  As before, the units are computed using the pari library, but now it is easier (for example) to obtain all generators of the unit group.  Also, I have added a wrapping for the pari function bnfisunit() which implements a discrete log function to express any unit in terms of the generators.\n\nAs well as all the documented code and examples in unit_group.py there are added functions in number_field.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5513\n\n",
+    "closed_at": "2009-04-03T00:45:04Z",
     "created_at": "2009-03-13T22:02:06Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Enhanced support for number field unit groups",
+    "title": "[with patch, positive review] Enhanced support for number field unit groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5513",
     "user": "https://github.com/JohnCremona"

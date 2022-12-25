@@ -1,15 +1,16 @@
-# Issue 7398: Improved mantra to find whether an object is iterable (and get an iterator out it)
+# Issue 7398: Added is_iterator method and fixes sage to use it.
 
 archive/issues_007398.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat @williamstein\n\nKeywords: iterators\n\nThe following mantra occurs at three places in Sage's code to test whether v is an iterator:\n\n     if hasattr(v, 'next'):\n\nThis patches replaces them with:\n\n     if hasattr(v, '__iter__')\n\nwhich is safer (some sage objects have a next method without being iterable, or with a different semantic)\n\nif not just, when appropriate:\n\n     v = iter(v)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7398\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat @williamstein\n\nKeywords: iterators, itertools\n\nThe following mantra occurs at three places in Sage's code to test whether v is an iterator:\n\n```\n     if hasattr(v, 'next'):\n```\nThis is not quite correct since some sage objects have a next method without being iterable, or with a different semantic. \n\nLet me quote python's doc:\n\n> The iterator objects themselves are required to support the following two methods, which together form the iterator protocol:\n\n \n>  iterator.__iter__()::\n\n> \n     Return the iterator object itself. This is required to allow both containers and iterators to be used with the for and in statements. This method corresponds to the tp_iter slot of the type structure for Python objects in the Python/C API.\n\n> iterator.next()::\n> \n\n    Return the next item from the container. If there are no further items, raise the StopIteration exception. This method corresponds to the tp_iternext slot of the type structure for Python objects in the Python/C API.\n\n\nTherefore here is the good way to test if an element is an iterator:\n\n```\n    try:\n        return it is iter(it)\n    except:\n        return False\n```\nNote: it is not sufficient to check for the existence of the methods since some sage object implement `__iter__` to raise a `NotImplemented` exception !\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7398\n\n",
+    "closed_at": "2009-11-12T06:21:27Z",
     "created_at": "2009-11-05T18:15:27Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "Improved mantra to find whether an object is iterable (and get an iterator out it)",
+    "title": "Added is_iterator method and fixes sage to use it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7398",
     "user": "https://github.com/nthiery"
@@ -19,21 +20,43 @@ Assignee: @hivert
 
 CC:  sage-combinat @williamstein
 
-Keywords: iterators
+Keywords: iterators, itertools
 
 The following mantra occurs at three places in Sage's code to test whether v is an iterator:
 
+```
      if hasattr(v, 'next'):
+```
+This is not quite correct since some sage objects have a next method without being iterable, or with a different semantic. 
 
-This patches replaces them with:
+Let me quote python's doc:
 
-     if hasattr(v, '__iter__')
+> The iterator objects themselves are required to support the following two methods, which together form the iterator protocol:
 
-which is safer (some sage objects have a next method without being iterable, or with a different semantic)
+ 
+>  iterator.__iter__()::
 
-if not just, when appropriate:
+> 
+     Return the iterator object itself. This is required to allow both containers and iterators to be used with the for and in statements. This method corresponds to the tp_iter slot of the type structure for Python objects in the Python/C API.
 
-     v = iter(v)
+> iterator.next()::
+> 
+
+    Return the next item from the container. If there are no further items, raise the StopIteration exception. This method corresponds to the tp_iternext slot of the type structure for Python objects in the Python/C API.
+
+
+Therefore here is the good way to test if an element is an iterator:
+
+```
+    try:
+        return it is iter(it)
+    except:
+        return False
+```
+Note: it is not sufficient to check for the existence of the methods since some sage object implement `__iter__` to raise a `NotImplemented` exception !
+
+Florent
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7398
 

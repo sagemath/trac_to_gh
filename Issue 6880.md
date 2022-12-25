@@ -4,6 +4,7 @@ archive/issues_006880.json:
 ```json
 {
     "body": "Assignee: tba\n\nIf you used the ``@`cached_method` decorator when defining a function in the Sage library, then get help about it (either in the notebook or command line), the File: field lis as follows:\n\n```\nFile:           /.../local/lib/python2.6/site-packages/sage/misc/cachefunc.py\n```\n\nThat's of course technically right, but very wrong/misleading for the user, who maybe wants to know more.  We should add specialized code to IPython and the notebook to correct for this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6880\n\n",
+    "closed_at": "2012-07-04T07:17:21Z",
     "created_at": "2009-09-03T17:22:16Z",
     "labels": [
         "component: documentation",

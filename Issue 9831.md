@@ -3,7 +3,8 @@
 archive/issues_009831.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nThe W3C validator gives errors about missing targets for the <label> elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9832\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @jasongrout\n\nThe W3C validator gives errors about missing targets for the <label> elements.\n\nPatch to be applied to the **sagenb** repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9832\n\n",
+    "closed_at": "2010-11-11T19:37:23Z",
     "created_at": "2010-08-28T13:42:47Z",
     "labels": [
         "component: notebook",
@@ -17,11 +18,13 @@ archive/issues_009831.json:
     "user": "https://github.com/TimDumol"
 }
 ```
-Assignee: jason, was
+Assignee: @jasongrout
 
 CC:  @jasongrout
 
 The W3C validator gives errors about missing targets for the <label> elements.
+
+Patch to be applied to the **sagenb** repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9832
 

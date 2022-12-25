@@ -1,16 +1,17 @@
-# Issue 6060: divmod fails when one argument is Integer and the other is a Python int
+# Issue 6060: [with patch, positive review] divmod fails when one argument is Integer and the other is a Python int
 
 archive/issues_006060.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: divmod(10r,10)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/<ipython console> in <module>()\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.EuclideanDomainElement.__divmod__ (sage/structure/element.c:13777)()\n\nAttributeError: 'int' object has no attribute 'quo_rem'\n```\n\nAttaching a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6060\n\n",
+    "closed_at": "2009-05-19T18:24:51Z",
     "created_at": "2009-05-18T03:18:52Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "divmod fails when one argument is Integer and the other is a Python int",
+    "title": "[with patch, positive review] divmod fails when one argument is Integer and the other is a Python int",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6060",
     "user": "https://github.com/fredrik-johansson"

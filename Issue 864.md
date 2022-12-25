@@ -1,16 +1,17 @@
-# Issue 864: Asymptotically slow pari <--> python long conversions
+# Issue 864: Asymptotically slow PARI --> Python long conversions
 
 archive/issues_000864.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nKeywords: pari\n\nThis is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\nAnd here's the state of affairs after the first patch:\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 1.64 s, sys: 1.09 s, total: 2.73 s\nWall time: 2.79\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 220.90 s, sys: 137.34 s, total: 358.24 s\nWall time: 408.11\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\n```\n\nClearly that third function call needs to be fixed, and it will be within a few days.\n\nIssue created by migration from https://trac.sagemath.org/ticket/864\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: pari\n\nThis is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\nAnd here's the state of affairs after the first patch:\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 1.64 s, sys: 1.09 s, total: 2.73 s\nWall time: 2.79\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 220.90 s, sys: 137.34 s, total: 358.24 s\nWall time: 408.11\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\n```\n\nClearly that third function call needs to be fixed; this is done by the attached patch.\n\nApply: [attachment:trac_864-pari_int_long_conversion.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/864\n\n",
+    "closed_at": "2013-10-31T08:22:28Z",
     "created_at": "2007-10-12T19:47:59Z",
     "labels": [
-        "component: interfaces",
+        "component: performance",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
-    "title": "Asymptotically slow pari <--> python long conversions",
+    "title": "Asymptotically slow PARI --> Python long conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/864",
     "user": "https://github.com/craigcitro"
@@ -102,7 +103,10 @@ Wall time: 0.01
 
 ```
 
-Clearly that third function call needs to be fixed, and it will be within a few days.
+Clearly that third function call needs to be fixed; this is done by the attached patch.
+
+Apply: [attachment:trac_864-pari_int_long_conversion.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/864
 

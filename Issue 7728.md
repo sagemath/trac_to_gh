@@ -4,6 +4,7 @@ archive/issues_007728.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patch (based on 4.3.rc0):\n\n- changes Cholesky (all/most matrices) and SVD, QR and LU factorizations (double_dense only) so that the returned resulting matrices are immutable\n- adds caching for Cholesky, SVD and QR\n- adds pickle-able caching for LU (and it is likely there was a a bug with pickling/unpickling a matrix with a cached factorization which this patch fixes...)\n- improves doctests for SVD and QR (I wanted to more easily check that my changes didn't cause regressions...)\n- adds methods `zero_at` and `round` to dense double matrices (used in said doctests)\n\nI hope the doctest improvements can be accepted as part of the patch even if I didn't bother to split it up.\n\nNote that when dealing with matrix factorization doctesting, just avoiding 0 in the input goes very far with creating readable tests.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7728\n\n",
+    "closed_at": "2010-01-03T21:28:32Z",
     "created_at": "2009-12-17T21:22:36Z",
     "labels": [
         "component: linear algebra",

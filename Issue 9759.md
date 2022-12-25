@@ -4,6 +4,7 @@ archive/issues_009759.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/67feb1b840ff2710/90a82acffe8f10de#90a82acffe8f10de):\n\n```\nOn t2, I'm getting a failure:\n\nsage -t  -long devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.3.alpha1/devel/sage-main/sage/matrix/\nmatrix2.pyx\", line 6406:\n    sage: all(imag(e) < 1e-15 for e in eigs)\nExpected:\n    True\nGot:\n    False\n\nThis looks like numerical noise: if I replace 1e-15 by 1e-14, it passes.  Has anyone else seen this?  Could it possibly be dependent on ATLAS (e.g., the load on the system when it's tuning itself)? \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9760\n\n",
+    "closed_at": "2010-08-24T02:49:17Z",
     "created_at": "2010-08-17T23:46:36Z",
     "labels": [
         "component: porting: solaris",

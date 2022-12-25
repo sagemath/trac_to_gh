@@ -1,9 +1,10 @@
-# Issue 2871: matrix: M[range(2,-1,-1),:] returns junk
+# Issue 2871: [with patch, positive review] matrix: M[range(2,-1,-1),:] returns junk
 
 archive/issues_002871.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\nIn the following example, A should be \"upside down\", but it's not\n\n```\nsage: A = random_matrix(ZZ,3); A\n\n[ 1  3 -1]\n[ 4 -3 -1]\n[-1  0 -1]\n\nsage: A[range(2,-1,-1),:]\n\n[ 1  3 -1]\n[ 4 -3 -1]\n[-1  0 -1]\n\n```\n\nThe problem is with `set()`, which doesn't preserve order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2871\n\n",
+    "closed_at": "2008-04-12T10:01:04Z",
     "created_at": "2008-04-10T18:13:17Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_002871.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "matrix: M[range(2,-1,-1),:] returns junk",
+    "title": "[with patch, positive review] matrix: M[range(2,-1,-1),:] returns junk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2871",
     "user": "https://github.com/dfdeshom"

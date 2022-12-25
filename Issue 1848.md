@@ -6,7 +6,7 @@ archive/issues_001848.json:
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe sha an function:\n\n```\nsage: E = EllipticCurve('37a')\nsage: Sha = E.sha(); Sha\n<class 'sage.schemes.elliptic_curves.sha.Sha'>\nsage: Sha.an()\n1    \n```\nhas help that at the beginning misleadingly suggests that it is provably correct when the analytic rank is 1.  Looking at the code, it is clear that currently it is not provably correct except when the rank is 0 and a Manin constant hypothesis holds (which does hold for Cremona's curves). \n\nFix: \n1. Have a proof=False flag that keeps the current implementation\n2. Have a proof=True flag that fails if the Manin constant isn't known by a theorem to be <=2, and which runs new provably correct code in the case of analytic rank 1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1848\n\n",
     "created_at": "2008-01-19T12:51:26Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",

@@ -4,6 +4,7 @@ archive/issues_008970.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe code to convert elements of integer mod rings into Gap elements is needlessly complicated, and also very broken when the modulus isn't prime. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8970\n\n",
+    "closed_at": "2010-07-20T09:26:03Z",
     "created_at": "2010-05-14T20:57:25Z",
     "labels": [
         "component: algebra",

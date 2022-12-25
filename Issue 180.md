@@ -4,11 +4,11 @@ archive/issues_000180.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n[justin]: Hmmm...it's actually \"-s -i\".  The 'sage' command seems to care about the order of switches; \"-f -i\" works, while \"-i -f\" doesn't.  \"-i -s\" does not save the results, while '-s -i' does.  Is that intentional?\n[11:54am] was389: it's a bug.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/180\n\n",
+    "closed_at": "2008-09-24T02:58:55Z",
     "created_at": "2006-12-10T19:59:06Z",
     "labels": [
         "component: packages: standard",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "-s option to sage issues",

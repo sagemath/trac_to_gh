@@ -1,9 +1,10 @@
-# Issue 3983: [with patch, needs review] get coverage for sage/interfaces/sage0.py up to 100%
+# Issue 3983: [with patch, positive review] get coverage for sage/interfaces/sage0.py up to 100%
 
 archive/issues_003983.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3983\n\n",
+    "closed_at": "2008-08-29T00:18:48Z",
     "created_at": "2008-08-28T23:53:13Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_003983.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] get coverage for sage/interfaces/sage0.py up to 100%",
+    "title": "[with patch, positive review] get coverage for sage/interfaces/sage0.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3983",
     "user": "https://github.com/mwhansen"

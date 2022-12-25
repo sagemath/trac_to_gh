@@ -4,9 +4,10 @@ archive/issues_008134.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nSphinx complains\n\n```\n[...]/sagenb/notebook/config.py:docstring of sagenb.notebook.config:26: (WARNING/2) Inline interpreted text or phrase reference start-string without end-string.\n```\nwhen building the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8134\n\n",
+    "closed_at": "2010-02-10T18:31:56Z",
     "created_at": "2010-01-31T02:28:33Z",
     "labels": [
-        "component: documentation",
+        "component: notebook",
         "minor",
         "bug"
     ],

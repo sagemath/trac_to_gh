@@ -1,29 +1,33 @@
-# Issue 920: integrate doesn't handle divergent case correctly
+# Issue 920: [with patch] integrate doesn't handle divergent case correctly
 
 archive/issues_000920.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following integral should be divergent, but sage (and maxima?) gives an answer.\n\nsage: integrate(1/x^3,x,-1,3)\n4/9\nsage: version()\n'SAGE Version 2.8.7, Release Date: 2007-10-15'\n\nIssue created by migration from https://trac.sagemath.org/ticket/920\n\n",
+    "body": "Assignee: @mwhansen\n\nThe following integral should be divergent, but sage (and maxima?) gives an answer.\n\n```\nsage: integrate(1/x^3,x,-1,3)\n4/9\nsage: version()\n'SAGE Version 2.8.7, Release Date: 2007-10-15'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/920\n\n",
+    "closed_at": "2007-10-24T19:24:49Z",
     "created_at": "2007-10-18T17:18:07Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "integrate doesn't handle divergent case correctly",
+    "title": "[with patch] integrate doesn't handle divergent case correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/920",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 The following integral should be divergent, but sage (and maxima?) gives an answer.
 
+```
 sage: integrate(1/x^3,x,-1,3)
 4/9
 sage: version()
 'SAGE Version 2.8.7, Release Date: 2007-10-15'
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/920
 

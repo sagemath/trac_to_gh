@@ -4,6 +4,7 @@ archive/issues_006626.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @nathanncohen @rlmill\n\nKeywords: cliquer\n\nAs the subject says. This is a follow up to #6355.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6626\n\n",
+    "closed_at": "2009-07-30T15:15:57Z",
     "created_at": "2009-07-26T08:26:02Z",
     "labels": [
         "component: packages: standard",

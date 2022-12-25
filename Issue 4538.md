@@ -6,8 +6,7 @@ archive/issues_004538.json:
     "body": "Assignee: cwitty\n\nCC:  @garyfurnish\n\nCreate a script `sage-walltimekill` SAGE_ROOT/local/bin/ that would run\na subprocess, wait a certain amount of time, then killing it.  \n\n```\nsage-walltimekill 3600 sage\n```\nwould kill the process it starts after 3600 wall seconds.\n\nThis will be useful both for doctesting and the notebook.  It's the sort of\nthing ulimit \"should\" do, but doesn't. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4538\n\n",
     "created_at": "2008-11-17T15:13:40Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "write a python script that runs a subprocess and kills it after a while",

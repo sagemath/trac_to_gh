@@ -4,6 +4,7 @@ archive/issues_006547.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @kini\n\nFor historical reasons, we are using `foo.all.py` instead of `foo.__init__.py`. This is not Pythonic and we should change that (gradually).\n\nAlso, the developer's guide needs an update reflecting this change:\n\nhttp://www.sagemath.org/doc/developer/coding_in_python.html#creating-a-new-directory\n\nThis was discussed on [sage-devel]: http://groups.google.com/group/sage-devel/browse_thread/thread/1112fcc8345ecfd2\n\nIssue created by migration from https://trac.sagemath.org/ticket/6547\n\n",
+    "closed_at": "2021-11-20T23:57:15Z",
     "created_at": "2009-07-17T09:51:16Z",
     "labels": [
         "component: misc",

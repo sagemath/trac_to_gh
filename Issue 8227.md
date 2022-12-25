@@ -3,10 +3,11 @@
 archive/issues_008227.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @seblabbe\n\nKeywords: iterated palindromic closure\n\nThere is a faster way to compute the iterated paindromic closure of a word than using the definition. The problem with the latter is that it needs to compute the longest f-palindromic suffix of the current word at each step, while it is possible to easily deduce this length only by looking at the directive word.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8227\n\n",
+    "body": "Assignee: abmasse\n\nCC:  @seblabbe\n\nKeywords: iterated palindromic closure\n\nThere is a faster way to compute the iterated palindromic closure of a word than using the definition. The problem with the latter is that it needs to compute the longest f-palindromic suffix of the current word at each step, while it is possible to easily deduce this length only by looking at the directive word.\n\nHere is an example:\n\n```\nsage: w = words.RandomWord(10)\nsage: w.iterated_right_palindromic_closure(algorithm='definition')\nword: 0010010001001000100100010010001001001000...\nsage: timeit(\"print w.iterated_right_palindromic_closure(algorithm='definition').length()\")\n5 loops, best of 3: 211 ms per loop\nsage: timeit(\"print w.iterated_right_palindromic_closure(algorithm='recursive').length()\")\n25 loops, best of 3: 9.46 ms per loop\n```\nThe difference is particularly notable for longer words:\n\n```\nsage: w = words.RandomWord(15)\nsage: timeit(\"print w.iterated_right_palindromic_closure(algorithm='definition').length()\")\n5 loops, best of 3: 3.73 s per loop\nsage: timeit(\"print w.iterated_right_palindromic_closure(algorithm='recursive').length()\")\n25 loops, best of 3: 37.4 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8227\n\n",
+    "closed_at": "2010-03-02T21:22:52Z",
     "created_at": "2010-02-10T11:20:10Z",
     "labels": [
-        "component: algebra"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Improving iterated palindromic closure computation",
@@ -15,13 +16,34 @@ archive/issues_008227.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
-Assignee: @aghitza
+Assignee: abmasse
 
 CC:  @seblabbe
 
 Keywords: iterated palindromic closure
 
-There is a faster way to compute the iterated paindromic closure of a word than using the definition. The problem with the latter is that it needs to compute the longest f-palindromic suffix of the current word at each step, while it is possible to easily deduce this length only by looking at the directive word.
+There is a faster way to compute the iterated palindromic closure of a word than using the definition. The problem with the latter is that it needs to compute the longest f-palindromic suffix of the current word at each step, while it is possible to easily deduce this length only by looking at the directive word.
+
+Here is an example:
+
+```
+sage: w = words.RandomWord(10)
+sage: w.iterated_right_palindromic_closure(algorithm='definition')
+word: 0010010001001000100100010010001001001000...
+sage: timeit("print w.iterated_right_palindromic_closure(algorithm='definition').length()")
+5 loops, best of 3: 211 ms per loop
+sage: timeit("print w.iterated_right_palindromic_closure(algorithm='recursive').length()")
+25 loops, best of 3: 9.46 ms per loop
+```
+The difference is particularly notable for longer words:
+
+```
+sage: w = words.RandomWord(15)
+sage: timeit("print w.iterated_right_palindromic_closure(algorithm='definition').length()")
+5 loops, best of 3: 3.73 s per loop
+sage: timeit("print w.iterated_right_palindromic_closure(algorithm='recursive').length()")
+25 loops, best of 3: 37.4 ms per loop
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8227
 

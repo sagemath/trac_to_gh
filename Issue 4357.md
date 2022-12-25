@@ -1,21 +1,22 @@
-# Issue 4357: modualr forms -- new subspace used to work and now broken
+# Issue 4357: [with patch, with positive review] modular forms -- new subspace used to work and now broken
 
 archive/issues_004357.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis used to work and is now broken.  It is used in my modular forms book.\n\n```\nsage: CuspForms(45).new_subspace()\nTraceback (most recent call last):\n...\nNotImplementedError: computation of new submodule not yet implemented\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4357\n\n",
+    "body": "Assignee: @loefflerd\n\nThis used to work and is now broken.  It is used in my modular forms book.\n\n```\nsage: CuspForms(45).new_subspace()\nTraceback (most recent call last):\n...\nNotImplementedError: computation of new submodule not yet implemented\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4357\n\n",
+    "closed_at": "2009-05-11T07:58:56Z",
     "created_at": "2008-10-24T02:04:23Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "modualr forms -- new subspace used to work and now broken",
+    "title": "[with patch, with positive review] modular forms -- new subspace used to work and now broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4357",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @craigcitro
+Assignee: @loefflerd
 
 This used to work and is now broken.  It is used in my modular forms book.
 

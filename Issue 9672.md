@@ -4,6 +4,7 @@ archive/issues_009672.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill\n\nTwo easy improvements can be made to `Graph.genus`:\n\n* When computing local orbit structure of face map, don't compute the entire orbits.\n* Compute blocks and cut vertices, embed the individual blocks, and reconstruct them if the user wants the embedding.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9672\n\n",
+    "closed_at": "2011-01-12T06:32:52Z",
     "created_at": "2010-08-03T01:30:08Z",
     "labels": [
         "component: graph theory",

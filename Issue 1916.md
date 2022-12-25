@@ -4,6 +4,7 @@ archive/issues_001916.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI'm not sure what interface to use; comments welcome. Implementing this on the server side would likely be very very easy.  The hard part is really the design. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1916\n\n",
+    "closed_at": "2009-11-19T21:40:53Z",
     "created_at": "2008-01-24T20:09:30Z",
     "labels": [
         "component: notebook"

@@ -1,9 +1,10 @@
-# Issue 6274: fix formatting of files under sage/plot
+# Issue 6274: [with patch, positive review] fix formatting of files under sage/plot
 
 archive/issues_006274.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @kcrisman @jhpalmieri\n\nThis is a follow-up to #6270.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6274\n\n",
+    "body": "Assignee: tba\n\nCC:  @kcrisman @jhpalmieri\n\nKeywords: docstring, doctest, plot\n\nThis is a follow-up to #6270. Here, we expose more 2-D plotting functions in the reference manual. Patches should be applied in this order:\n1. the patch at #6257\n2. the patch at #6270\n3. and finally the patch on this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6274\n\n",
+    "closed_at": "2009-06-24T10:11:04Z",
     "created_at": "2009-06-13T12:23:07Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006274.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "fix formatting of files under sage/plot",
+    "title": "[with patch, positive review] fix formatting of files under sage/plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6274",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -21,7 +22,12 @@ Assignee: tba
 
 CC:  @kcrisman @jhpalmieri
 
-This is a follow-up to #6270.
+Keywords: docstring, doctest, plot
+
+This is a follow-up to #6270. Here, we expose more 2-D plotting functions in the reference manual. Patches should be applied in this order:
+1. the patch at #6257
+2. the patch at #6270
+3. and finally the patch on this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6274
 

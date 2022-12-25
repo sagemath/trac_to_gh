@@ -4,6 +4,7 @@ archive/issues_002652.json:
 ```json
 {
     "body": "Assignee: boothby\n\nRequested by jpviiva on #sage-devel...\n\nThis could be a new keystroke (Control-Enter perhaps?) that evaluates the current cell without moving the cursor to the next block.  Another possibility (probably less desirable) is to fix it so that if you evaluate a cell, then press backspace, you end up at the same cursor location instead of at the beginning of the block.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2652\n\n",
+    "closed_at": "2020-03-29T02:03:10Z",
     "created_at": "2008-03-22T23:33:41Z",
     "labels": [
         "component: notebook"

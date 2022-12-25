@@ -1,22 +1,23 @@
-# Issue 5412: bug in edit and set_edit_template
+# Issue 5412: [with patch, positive review] bug in edit and set_edit_template
 
 archive/issues_005412.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCheck this out:\n\n```\nsage: edit(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/h70_33_89_223.paws.uga.edu/13827/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/misc/edit_module.pyc in edit(obj, editor, bg)\n    243          set_editor(base,opts=opts)\n    244       except (ValueError, KeyError, IndexError):\n--> 245          raise ValueError, \"Use set_edit_template(<template_string>) to set a default\"\n    246       \n    247    if not(edit_template):\n\nValueError: Use set_edit_template(<template_string>) to set a default\nsage: set_edit_template('e')\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/h70_33_89_223.paws.uga.edu/13827/_Users_wstein__sage_init_sage_0.py in <module>()\n\nNameError: name 'set_edit_template' is not defined\n```\n\nEither the error message should be changed or set_edit_template should be imported at the top level.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5412\n\n",
+    "body": "Assignee: mabshoff\n\nCheck this out:\n\n```\nsage: edit(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/h70_33_89_223.paws.uga.edu/13827/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/misc/edit_module.pyc in edit(obj, editor, bg)\n    243          set_editor(base,opts=opts)\n    244       except (ValueError, KeyError, IndexError):\n--> 245          raise ValueError, \"Use set_edit_template(<template_string>) to set a default\"\n    246       \n    247    if not(edit_template):\n\nValueError: Use set_edit_template(<template_string>) to set a default\nsage: set_edit_template('e')\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/h70_33_89_223.paws.uga.edu/13827/_Users_wstein__sage_init_sage_0.py in <module>()\n\nNameError: name 'set_edit_template' is not defined\n```\n\nEither the error message should be changed or set_edit_template should be imported at the top level.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5412\n\n",
+    "closed_at": "2009-03-02T05:22:00Z",
     "created_at": "2009-03-01T16:10:04Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "bug in edit and set_edit_template",
+    "title": "[with patch, positive review] bug in edit and set_edit_template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5412",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 Check this out:
 

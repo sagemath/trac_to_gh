@@ -1,9 +1,10 @@
-# Issue 3628: [with spkg; needs review] (take 2) building sage on opensuse x86_64 fails with readline detection error
+# Issue 3628: [with spkg; positive review] (take 2) building sage on opensuse x86_64 fails with readline detection error
 
 archive/issues_003628.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is take two of #3597.  We were using --with-readline but should have used --with-readline-prefix, as is clearly stated in ./configure --help. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3628\n\n",
+    "closed_at": "2008-07-10T02:01:54Z",
     "created_at": "2008-07-10T00:36:06Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003628.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg; needs review] (take 2) building sage on opensuse x86_64 fails with readline detection error",
+    "title": "[with spkg; positive review] (take 2) building sage on opensuse x86_64 fails with readline detection error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3628",
     "user": "https://github.com/williamstein"

@@ -1,22 +1,23 @@
-# Issue 1443: cannot define function variables?
+# Issue 1443: [is invalid?] cannot define function variables?
 
 archive/issues_001443.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt seems not possible to create a functional variable in SAGE. This gives strange things:\n\n```\nsage: var('f');\nsage: f(x)\nx\n```\nIdeally one should be able to do the following, to compute the formal derivative of f(g(x)):\n\n```\nsage: var('f,g');\nsage: diff(f(g(x)), x)\n```\n(Currently this gives 1 due to the above strange simplification f(x) -> x.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1443\n\n",
+    "body": "Assignee: @mwhansen\n\nIt seems not possible to create a functional variable in SAGE. This gives strange things:\n\n```\nsage: var('f');\nsage: f(x)\nx\n```\nIdeally one should be able to do the following, to compute the formal derivative of f(g(x)):\n\n```\nsage: var('f,g');\nsage: diff(f(g(x)), x)\n```\n(Currently this gives 1 due to the above strange simplification f(x) -> x.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1443\n\n",
+    "closed_at": "2007-12-15T23:40:36Z",
     "created_at": "2007-12-09T21:49:26Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cannot define function variables?",
+    "title": "[is invalid?] cannot define function variables?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1443",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 It seems not possible to create a functional variable in SAGE. This gives strange things:
 

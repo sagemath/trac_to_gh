@@ -1,62 +1,29 @@
-# Issue 1321: [graphs] an interactive graph editor
+# Issue 1321: graphs: an interactive graph editor
 
 archive/issues_001321.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  boothby @rlmill @rbeezer\n\nKeywords: graphs\n\nThis is most likely a big project.\n\nFrom Chris Godsil's wishlist (replies by Jason Grout and Robert Miller, in that order).\n\n```\n>>> A graph editor. This would allow graphs to be constructed and edited by\n>>> pointing and clicking. It should be able to output ps/pdf files. We\n>>> want to\n>>> be able to save the current state in machine readable form, and to be able\n>>> to input graphs in this form. This means we will have drawings as explicit\n>>> objects. (Thus it would be easy to write programs to generate drawings.)\n>>> If we have a graph displayed in the editor, we should be able to access it\n>>> from sage/python, and compute parameters there. So I would like to be able\n>>> to adjust the graph with the mouse, or from sage.\n>>> Some people will want to be able to use arbitrarily complicated curves\n>>> for the edges, and to place all sorts of text around the drawing. This\n>>> will\n>>> lead to something like xfig rewritten in sage.\n>> Indeed, this does sound like a very ambitious project. We might look at\n>> incorporating other graph editors. There are a few written in Java that\n>> might be useful. As it is, though, do we have any GUI things we can work\n>> with other than Java (like the recent interactive 3d plots) or some sort\n>> of AJAX trickery? We may be able to do something with javascript\n>> draggable objects here, using jquery or some other javascript GUI\n>> library. It seems like at one point someone mentioned another javascript\n>> library for drawing on a web page.\n> Sean Howe wrote a javascript editor, and that is lurking in my email\n> somewhere. I think it was decided against for reasons of notebook\n> security, and in favor of the new Java3d stuff. The problem is that\n> interactive GUIs is a difficult problem for anything in Sage. Also,\n> nothing has been written for the Java3d stuff yet. The problem with a\n> lot of graph visualizers and editors already written is that most of\n> them aren't very high quality, and there are so many low quality\n> ones...\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1321\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby @rlmill @rbeezer\n\nThe patches:\n\n* [attachment:trac_1321-sage_graphed_v3.patch] to the **sage** repo.\n* [attachment:trac_1321-sagenb_graphed.patch] to the **sagenb** repo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1321\n\n",
+    "closed_at": "2010-01-04T06:50:33Z",
     "created_at": "2007-11-28T20:09:51Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "[graphs] an interactive graph editor",
+    "title": "graphs: an interactive graph editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1321",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 CC:  boothby @rlmill @rbeezer
 
-Keywords: graphs
+The patches:
 
-This is most likely a big project.
-
-From Chris Godsil's wishlist (replies by Jason Grout and Robert Miller, in that order).
-
-```
->>> A graph editor. This would allow graphs to be constructed and edited by
->>> pointing and clicking. It should be able to output ps/pdf files. We
->>> want to
->>> be able to save the current state in machine readable form, and to be able
->>> to input graphs in this form. This means we will have drawings as explicit
->>> objects. (Thus it would be easy to write programs to generate drawings.)
->>> If we have a graph displayed in the editor, we should be able to access it
->>> from sage/python, and compute parameters there. So I would like to be able
->>> to adjust the graph with the mouse, or from sage.
->>> Some people will want to be able to use arbitrarily complicated curves
->>> for the edges, and to place all sorts of text around the drawing. This
->>> will
->>> lead to something like xfig rewritten in sage.
->> Indeed, this does sound like a very ambitious project. We might look at
->> incorporating other graph editors. There are a few written in Java that
->> might be useful. As it is, though, do we have any GUI things we can work
->> with other than Java (like the recent interactive 3d plots) or some sort
->> of AJAX trickery? We may be able to do something with javascript
->> draggable objects here, using jquery or some other javascript GUI
->> library. It seems like at one point someone mentioned another javascript
->> library for drawing on a web page.
-> Sean Howe wrote a javascript editor, and that is lurking in my email
-> somewhere. I think it was decided against for reasons of notebook
-> security, and in favor of the new Java3d stuff. The problem is that
-> interactive GUIs is a difficult problem for anything in Sage. Also,
-> nothing has been written for the Java3d stuff yet. The problem with a
-> lot of graph visualizers and editors already written is that most of
-> them aren't very high quality, and there are so many low quality
-> ones...
-
-```
+* [attachment:trac_1321-sage_graphed_v3.patch] to the **sage** repo.
+* [attachment:trac_1321-sagenb_graphed.patch] to the **sagenb** repo.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1321
 

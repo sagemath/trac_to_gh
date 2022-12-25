@@ -4,6 +4,7 @@ archive/issues_003769.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPresumably, dsage should be installed under SAGE_LOCAL like everything else.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3769\n\n",
+    "closed_at": "2010-01-19T10:45:18Z",
     "created_at": "2008-08-03T19:30:17Z",
     "labels": [
         "component: packages: standard",

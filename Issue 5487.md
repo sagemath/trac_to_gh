@@ -1,22 +1,23 @@
-# Issue 5487: Content function for tableaux
+# Issue 5487: [with patch, positive review] Content function for tableaux
 
 archive/issues_005487.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: tableaux content\n\nSimple patch adding a content function for tableaux to tableau.py.\n\n[Mostly just a test to see if I can push a patch to the combinat server.]\n\n---\n\n```\ndiff -r c6382e76a5e5 sage/combinat/tableau.py\n--- a/sage/combinat/tableau.py  Thu Mar 12 01:07:21 2009 +1100\n+++ b/sage/combinat/tableau.py  Thu Mar 12 01:07:52 2009 +1100\n@@ -480,6 +480,21 @@\n             s += [ (i,j) for j in range(len(self[i])) ]\n         return s\n \n+    def content(self, k):\n+        \"\"\"\n+        Returns the content of <k> in <self>. That is, if <k> appears in\n+        row r and column c of the tableau <self> then we return c-r.\n+\n+        EXAMPLES:\n+            sage: Tableau([[1,2],[3,4]]).content(3)\n+            -1\n+\n+        \"\"\"\n+        for r in range(len(self)):\n+          for c in range(len(self[r])):\n+            if self[r][c]==k: return c-r\n+        return False\n+\n     def k_weight(self, k):\n         \"\"\"\n         Returns the k-weight of self.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5487\n\n",
+    "body": "Assignee: @AndrewAtLarge\n\nCC:  sage-combinat\n\nKeywords: tableaux content\n\nSimple patch adding a content function for tableaux to tableau.py.\n\n[Mostly just a test to see if I can push a patch to the combinat server.]\n\n---\n\n```\ndiff -r c6382e76a5e5 sage/combinat/tableau.py\n--- a/sage/combinat/tableau.py  Thu Mar 12 01:07:21 2009 +1100\n+++ b/sage/combinat/tableau.py  Thu Mar 12 01:07:52 2009 +1100\n@@ -480,6 +480,21 @@\n             s += [ (i,j) for j in range(len(self[i])) ]\n         return s\n \n+    def content(self, k):\n+        \"\"\"\n+        Returns the content of <k> in <self>. That is, if <k> appears in\n+        row r and column c of the tableau <self> then we return c-r.\n+\n+        EXAMPLES:\n+            sage: Tableau([[1,2],[3,4]]).content(3)\n+            -1\n+\n+        \"\"\"\n+        for r in range(len(self)):\n+          for c in range(len(self[r])):\n+            if self[r][c]==k: return c-r\n+        return False\n+\n     def k_weight(self, k):\n         \"\"\"\n         Returns the k-weight of self.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5487\n\n",
+    "closed_at": "2009-04-15T00:10:10Z",
     "created_at": "2009-03-11T14:12:29Z",
     "labels": [
         "component: combinatorics",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Content function for tableaux",
+    "title": "[with patch, positive review] Content function for tableaux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5487",
     "user": "https://github.com/AndrewAtLarge"
 }
 ```
-Assignee: @mwhansen
+Assignee: @AndrewAtLarge
 
 CC:  sage-combinat
 

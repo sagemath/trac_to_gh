@@ -1,9 +1,10 @@
-# Issue 1985: is_pseudoprime docstring doesn't wrap
+# Issue 1985: [with trivial patch, positive review] is_pseudoprime docstring doesn't wrap
 
 archive/issues_001985.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nReported by Steve Vonn in https://groups.google.com/group/sage-support/t/ea050f051600e792\n\n```\nis_pseudoprime?\nThe help entry for (is_pseudoprime) has a nonwrapping text bug\n\nINPUT:\n        flag -- int\n                0 (default): checks whether x is a Baillie-Pomerance-Selfridge-Wagstaff pseudo prime (strong Rabin-Miller pseudo prime for base 2, followed by strong Lucas test for the sequence (P,-1), P smallest positive integer such that P^2 - 4 is not a square mod x).\n                > 0: checks whether x is a strong Miller-Rabin pseudo prime for flag randomly chosen bases (with end-matching to catch\nsquare roots of -1). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1985\n\n",
+    "closed_at": "2008-01-30T15:27:53Z",
     "created_at": "2008-01-30T15:01:28Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_001985.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "is_pseudoprime docstring doesn't wrap",
+    "title": "[with trivial patch, positive review] is_pseudoprime docstring doesn't wrap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1985",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,7 +3,8 @@
 archive/issues_007590.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nGiven the sequence of degrees for set A and a sequence of degree for set B, create the corresponding bipartite graph if possible.\n\nUse #7301\n\nIssue created by migration from https://trac.sagemath.org/ticket/7590\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nGiven the sequence of degrees for set A and a sequence of degree for set B, create the corresponding bipartite graph if possible.\n\nThis patch uses #7301 and incidentally the packages GLPK ( or CBC, but this one is under review at the moment ) \n\nIssue created by migration from https://trac.sagemath.org/ticket/7590\n\n",
+    "closed_at": "2010-01-13T09:04:12Z",
     "created_at": "2009-12-03T12:40:23Z",
     "labels": [
         "component: graph theory"
@@ -21,7 +22,7 @@ CC:  @wdjoyner
 
 Given the sequence of degrees for set A and a sequence of degree for set B, create the corresponding bipartite graph if possible.
 
-Use #7301
+This patch uses #7301 and incidentally the packages GLPK ( or CBC, but this one is under review at the moment ) 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7590
 

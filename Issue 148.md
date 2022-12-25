@@ -3,10 +3,12 @@
 archive/issues_000148.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nlinks in a notebook saved to html point to localhost -- they should just be relative anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/148\n\n",
+    "body": "Assignee: boothby\n\nlinks in a notebook saved to html point to localhost -- they should just be relative anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/148\n\n",
+    "closed_at": "2007-01-22T01:43:54Z",
     "created_at": "2006-10-23T16:26:43Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: notebook",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
@@ -16,7 +18,7 @@ archive/issues_000148.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 links in a notebook saved to html point to localhost -- they should just be relative anyway.
 

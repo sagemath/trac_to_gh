@@ -1,9 +1,10 @@
-# Issue 1794: Gram-Schmidt typo
+# Issue 1794: [with patch, with positive review] Gram-Schmidt typo
 
 archive/issues_001794.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSage calls Gram-Schmidt Gramm-Schmidt in some places (including function names). The attached patch fixes the ones I found.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1794\n\n",
+    "closed_at": "2008-01-21T06:08:06Z",
     "created_at": "2008-01-16T17:59:01Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_001794.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Gram-Schmidt typo",
+    "title": "[with patch, with positive review] Gram-Schmidt typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1794",
     "user": "https://github.com/wjp"

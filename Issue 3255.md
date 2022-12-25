@@ -1,16 +1,17 @@
-# Issue 3255: Add support for generic backtracking algorithms
+# Issue 3255: [with patch, positive review] Add support for generic backtracking algorithms
 
 archive/issues_003255.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3255\n\n",
+    "closed_at": "2008-05-26T05:19:53Z",
     "created_at": "2008-05-19T13:31:44Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "Add support for generic backtracking algorithms",
+    "title": "[with patch, positive review] Add support for generic backtracking algorithms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3255",
     "user": "https://github.com/mwhansen"

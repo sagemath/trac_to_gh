@@ -3,7 +3,8 @@
 archive/issues_007926.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan @kedlaya\n\nThere's still lots to do here, but I started plowing through the file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7926\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan @kedlaya\n\nKeywords: ecc2011, rd2\n\nThere's still lots to do here, but I started plowing through the file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7926\n\n",
+    "closed_at": "2012-04-02T15:23:57Z",
     "created_at": "2010-01-14T06:52:08Z",
     "labels": [
         "component: number theory",
@@ -19,6 +20,8 @@ archive/issues_007926.json:
 Assignee: @williamstein
 
 CC:  @jbalakrishnan @kedlaya
+
+Keywords: ecc2011, rd2
 
 There's still lots to do here, but I started plowing through the file. 
 

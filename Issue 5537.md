@@ -1,22 +1,23 @@
-# Issue 5537: [with patch, not ready for review] bug in __cmp__ in permgroup_element.pyx
+# Issue 5537: [with patch, positive review] bug in __cmp__ in permgroup_element.pyx
 
 archive/issues_005537.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @robertwb\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/5dcc22b42a7227d4):\n\n```\nsage: h = PermutationGroupElement('(1,3,2)') \nsage: k = PermutationGroupElement('(1,2,3),(4,5)') \nsage: h\n(1,3,2)\nsage: k^2\n(1,3,2)\nsage: k^2 == h, h == k^2 \n(False, True)\n```\nClearly these comparisons should return the same thing. robertwb pointed out in the thread that, especially since the parents are not explicitly defined here, they should both return True.\n\nI'll post a patch, but I don't know much about this code, and I don't want to slow things down too much.  If anyone else has a faster way, please produce a new patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5537\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/5dcc22b42a7227d4):\n\n```\nsage: h = PermutationGroupElement('(1,3,2)') \nsage: k = PermutationGroupElement('(1,2,3),(4,5)') \nsage: h\n(1,3,2)\nsage: k^2\n(1,3,2)\nsage: k^2 == h, h == k^2 \n(False, True)\n```\nClearly these comparisons should return the same thing. robertwb pointed out in the thread that, especially since the parents are not explicitly defined here, they should both return True.\n\nI'll post a patch, but I don't know much about this code, and I don't want to slow things down too much.  If anyone else has a faster way, please produce a new patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5537\n\n",
+    "closed_at": "2009-03-23T22:13:44Z",
     "created_at": "2009-03-16T23:09:12Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, not ready for review] bug in __cmp__ in permgroup_element.pyx",
+    "title": "[with patch, positive review] bug in __cmp__ in permgroup_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5537",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: joyner
+Assignee: @robertwb
 
 CC:  @robertwb
 

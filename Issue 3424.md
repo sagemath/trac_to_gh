@@ -1,4 +1,4 @@
-# Issue 3424: jordan_form gives incorrect results due to imprecise roots
+# Issue 3424: [with patch, needs work] jordan_form gives incorrect results due to imprecise roots
 
 archive/issues_003424.json:
 ```json
@@ -11,7 +11,7 @@ archive/issues_003424.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "jordan_form gives incorrect results due to imprecise roots",
+    "title": "[with patch, needs work] jordan_form gives incorrect results due to imprecise roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3424",
     "user": "https://trac.sagemath.org/admin/accounts/users/johnwilmes"

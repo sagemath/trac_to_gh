@@ -1,16 +1,17 @@
-# Issue 1150: update documentation from GMP-ECM 6.0.1 to 6.1.3
+# Issue 1150: [with patch] update documentation from GMP-ECM 6.0.1 to 6.1.3
 
 archive/issues_001150.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1150\n\n",
+    "closed_at": "2007-11-19T00:58:43Z",
     "created_at": "2007-11-12T00:06:45Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "update documentation from GMP-ECM 6.0.1 to 6.1.3",
+    "title": "[with patch] update documentation from GMP-ECM 6.0.1 to 6.1.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1150",
     "user": "https://github.com/zimmermann6"

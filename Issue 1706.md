@@ -1,16 +1,17 @@
-# Issue 1706: Eigenspaces bug?
+# Issue 1706: [with patch attached to #2050, postive review] Eigenspaces bug?
 
 archive/issues_001706.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nShouldn't the sum of the dimensions be 2?\n\n```\nsage: M = Matrix(CC, [[1,0],[0,1]])\nsage: M\n\n[1.00000000000000                0]\n[               0 1.00000000000000]\nsage: M.eigenspaces()\n\n[\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n]),\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1706\n\n",
+    "closed_at": "2008-02-28T01:13:16Z",
     "created_at": "2008-01-07T05:11:17Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Eigenspaces bug?",
+    "title": "[with patch attached to #2050, postive review] Eigenspaces bug?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1706",
     "user": "https://github.com/rlmill"

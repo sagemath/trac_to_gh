@@ -1,16 +1,17 @@
-# Issue 4235: [with patch, needs review] typos in and enhancement to installation guide
+# Issue 4235: [with patch, positive review] typos in and enhancement to installation guide
 
 archive/issues_004235.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: installation guide, inst.tex\n\nThis patch fixes various typos in the installation guide. It also expands the section \"Steps to Install from Source\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4235\n\n",
+    "closed_at": "2008-10-02T03:32:18Z",
     "created_at": "2008-10-02T01:53:47Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] typos in and enhancement to installation guide",
+    "title": "[with patch, positive review] typos in and enhancement to installation guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4235",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

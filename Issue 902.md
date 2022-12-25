@@ -1,15 +1,16 @@
-# Issue 902: implement computation of minpoly of symbolics
+# Issue 902: [with patch] implement computation of minpoly of symbolics
 
 archive/issues_000902.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nDo this by numerical approximation, algdep, checking equality.\n\nNOTE: Robert Bradshaw has already done this!! I haven't seen any code, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/902\n\n",
+    "closed_at": "2007-10-19T02:29:45Z",
     "created_at": "2007-10-15T16:54:15Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "implement computation of minpoly of symbolics",
+    "title": "[with patch] implement computation of minpoly of symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/902",
     "user": "https://github.com/williamstein"

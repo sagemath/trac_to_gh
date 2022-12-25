@@ -1,9 +1,10 @@
-# Issue 2529: [with patch, needs review] slightly more preparation for backend switch in graphs
+# Issue 2529: [with patch, positive review] slightly more preparation for backend switch in graphs
 
 archive/issues_002529.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @mwhansen\n\nThis is of a similar vein to #2433, but much smaller. I've rewritten a few more functions to not depend on NX since they definitely don't need to.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2529\n\n",
+    "closed_at": "2008-03-15T21:54:23Z",
     "created_at": "2008-03-15T06:16:12Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_002529.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] slightly more preparation for backend switch in graphs",
+    "title": "[with patch, positive review] slightly more preparation for backend switch in graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2529",
     "user": "https://github.com/rlmill"

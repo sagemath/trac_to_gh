@@ -1,16 +1,16 @@
-# Issue 4097: [with patch, needs review] matrix automorphism groups
+# Issue 4097: [with patch, positive review] matrix automorphism groups
 
 archive/issues_004097.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4097\n\n",
+    "closed_at": "2008-09-15T01:53:59Z",
     "created_at": "2008-09-10T09:29:49Z",
     "labels": [
-        "component: coding theory",
-        "bug"
+        "component: coding theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] matrix automorphism groups",
+    "title": "[with patch, positive review] matrix automorphism groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4097",
     "user": "https://github.com/rlmill"

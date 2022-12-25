@@ -4,6 +4,7 @@ archive/issues_006368.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nRight now, in the notebook, usually shift-tab goes back to the previous input cell.  Since tab goes forward 4 spaces (or if text is highlighted, indents it), and shift-tab unindents highlighted text, it would by far make the most sense if shift-tab when no text is highlighted just goes back 4 spaces.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6368\n\n",
+    "closed_at": "2010-01-25T01:17:47Z",
     "created_at": "2009-06-20T15:27:19Z",
     "labels": [
         "component: notebook",

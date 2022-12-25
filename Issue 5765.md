@@ -1,16 +1,17 @@
-# Issue 5765: improve doctest coverage for schemes/generic/algebraic_scheme.py
+# Issue 5765: [with patch, with positive review] improve doctest coverage for schemes/generic/algebraic_scheme.py
 
 archive/issues_005765.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: doctest algebraic scheme\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5765\n\n",
+    "closed_at": "2009-04-29T23:17:43Z",
     "created_at": "2009-04-11T22:32:56Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "improve doctest coverage for schemes/generic/algebraic_scheme.py",
+    "title": "[with patch, with positive review] improve doctest coverage for schemes/generic/algebraic_scheme.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5765",
     "user": "https://github.com/aghitza"

@@ -1,9 +1,10 @@
-# Issue 2707: [with patch, needs review] clean and better document is_totally_real(), add is_totally_imaginary() to NumberField_generic
+# Issue 2707: [with patch, with positive review] clean and better document is_totally_real(), add is_totally_imaginary() to NumberField_generic
 
 archive/issues_002707.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: number field totally real imaginary\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2707\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: number field totally real imaginary\n\nCraig's ticket request is #2711.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2707\n\n",
+    "closed_at": "2008-03-28T20:48:36Z",
     "created_at": "2008-03-28T20:21:09Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002707.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] clean and better document is_totally_real(), add is_totally_imaginary() to NumberField_generic",
+    "title": "[with patch, with positive review] clean and better document is_totally_real(), add is_totally_imaginary() to NumberField_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2707",
     "user": "https://github.com/ncalexan"
@@ -23,6 +24,7 @@ CC:  @ncalexan
 
 Keywords: number field totally real imaginary
 
+Craig's ticket request is #2711.
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2707

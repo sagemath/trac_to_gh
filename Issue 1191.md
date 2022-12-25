@@ -3,7 +3,8 @@
 archive/issues_001191.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis\n\n```\nmatsolvemod(M,D,B,{flag=0}): one solution of system of congruences \nMX=B mod D (M matrix, B and D column vectors). If (optional) flag is\nnon-null return all solutions.\n```\n\nshould allow to implement A.solve_right for matrices over Z/nZ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1191\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: solve_right, matsolvemod, Zmod\n\nThis\n\n```\nmatsolvemod(M,D,B,{flag=0}): one solution of system of congruences \nMX=B mod D (M matrix, B and D column vectors). If (optional) flag is\nnon-null return all solutions.\n```\n\nshould allow to implement A.solve_right for matrices over Z/nZ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1191\n\n",
+    "closed_at": "2013-04-04T17:38:58Z",
     "created_at": "2007-11-17T15:24:47Z",
     "labels": [
         "component: linear algebra"
@@ -16,6 +17,8 @@ archive/issues_001191.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: solve_right, matsolvemod, Zmod
 
 This
 

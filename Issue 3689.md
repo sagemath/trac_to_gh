@@ -1,9 +1,10 @@
-# Issue 3689: trivial problems in the examples spkg
+# Issue 3689: [with patch, positive review] trivial problems in the examples spkg
 
 archive/issues_003689.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n# Scripts missing #!/bin/sh lines in examples-3.0.5.spkg:\n\n```\nprogramming/standalone_scripts/python/test\n```\n\n# Empty directories in examples-3.0.5.spkg\n\n```\nexamples/misc/\n```\n\n# Scripts that use #!sage or #!sage.bin as their interpreter in examples-3.0.5.spkg\n# You want to use #!/usr/bin/env sage\n\n```\nprogramming/standalone_scripts/python/binom \nprogramming/standalone_scripts/python/factor \nprogramming/standalone_scripts/sage/factor.sage \nprogramming/standalone_scripts/sage/simple.sage\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3689\n\n",
+    "closed_at": "2009-07-23T09:48:39Z",
     "created_at": "2008-07-21T05:48:56Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003689.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "trivial problems in the examples spkg",
+    "title": "[with patch, positive review] trivial problems in the examples spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3689",
     "user": "https://github.com/timabbott"

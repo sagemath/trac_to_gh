@@ -1,9 +1,10 @@
-# Issue 2526: switch charpoly mod p back to linbox as default
+# Issue 2526: [with patch, positive review] switch charpoly mod p back to linbox as default
 
 archive/issues_002526.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nDue to problems with LinBox's charpoly mod p we switched the default implementation to use in 2.10.3 to the native Sage version. Since Linbox is about three times as fast switch back the default.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2526\n\n",
+    "body": "Assignee: mabshoff\n\nDue to problems with LinBox's charpoly mod p we switched the default implementation to use in 2.10.3 to the native Sage version. Since Linbox is about three times as fast switch back the default.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2526\n\n",
+    "closed_at": "2008-04-04T01:09:33Z",
     "created_at": "2008-03-15T02:08:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_002526.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "switch charpoly mod p back to linbox as default",
+    "title": "[with patch, positive review] switch charpoly mod p back to linbox as default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2526",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Due to problems with LinBox's charpoly mod p we switched the default implementation to use in 2.10.3 to the native Sage version. Since Linbox is about three times as fast switch back the default.
 

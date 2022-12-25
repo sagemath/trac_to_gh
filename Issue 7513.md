@@ -1,25 +1,34 @@
-# Issue 7513: Update Mercurial to 1.4
+# Issue 7513: Update Mercurial to 1.6.4
 
 archive/issues_007513.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7513\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @nexttime @jdemeyer\n\nKeywords: hg spkg\n\nUpstream: http://mercurial.selenic.com/\n\nThe current version is **1.6.4**, the version shipped with Sage 4.6 is **1.3.1**.\n\nCool new functionality: `hg qpush --move` allows to push a patch out of order, i.e.\u00a0it can be used to reorder patches.\n\nNew spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/mercurial-1.6.4.p0.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/mercurial-1.6.4.p0.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7513\n\n",
+    "closed_at": "2010-11-10T22:19:28Z",
     "created_at": "2009-11-22T06:23:45Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Update Mercurial to 1.4",
+    "title": "Update Mercurial to 1.6.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7513",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tbd
+Assignee: @nexttime
 
 CC:  @nexttime @jdemeyer
 
+Keywords: hg spkg
 
+Upstream: http://mercurial.selenic.com/
+
+The current version is **1.6.4**, the version shipped with Sage 4.6 is **1.3.1**.
+
+Cool new functionality: `hg qpush --move` allows to push a patch out of order, i.e. it can be used to reorder patches.
+
+New spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/mercurial-1.6.4.p0.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/mercurial-1.6.4.p0.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7513
 

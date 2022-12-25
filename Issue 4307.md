@@ -1,16 +1,18 @@
-# Issue 4307: bad error message in SupersingularModule constructor
+# Issue 4307: [with patch, with positive review] bad error message in SupersingularModule constructor
 
 archive/issues_004307.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\n```\nsage: SupersingularModule(15)\nTraceback (most recent call last):\n...\nValueError: order of finite field must be a prime power\n```\n\nThe error message should say something like:\n\n```\nNotImplementedError: supersingular module of non-prime level not yet implemented\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4307\n\n",
+    "closed_at": "2008-10-26T01:35:16Z",
     "created_at": "2008-10-16T09:21:45Z",
     "labels": [
         "component: modular forms",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "bad error message in SupersingularModule constructor",
+    "title": "[with patch, with positive review] bad error message in SupersingularModule constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4307",
     "user": "https://github.com/williamstein"

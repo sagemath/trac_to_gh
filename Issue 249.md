@@ -1,15 +1,16 @@
-# Issue 249: possible optimization opportunity
+# Issue 249: [with patch, positive review] a much needed preparser optimization -- factor out constants
 
 archive/issues_000249.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nprint preparse(\"\"\"\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+1\n    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]\n\"\"\")\n///\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+Integer(1)\n    for j in range(i+(Integer(1)-n)/Integer(2),i+(n+Integer(1))/Integer(2))] for i in range(n)]\n```\n\n```\ndef m(n):\n  return [[j%n*n+(j+j-i)%n+1\n    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.63 s,  Wall time: 0.65 s\n```\n\n```\ndef m(n):\n  one = 1; two=2\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.60 s,  Wall time: 0.61 s\n```\n\n```\ndef m(n):\n  one = 1r; two=2r\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.75 s,  Wall time: 0.79 s\n```\n\n```\n%python\n\ndef m(n):\n  one = 1; two=2\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201r)\n///\nCPU time: 0.03 s,  Wall time: 0.03 s\n```\n\n```\ndef m(n):\n  one = 1r; two=2r; n=int(n)\n  return [[j%n*n+(j+j-i)%n+one\n    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]\n```\n\n```\ntime a=m(201)\n///\nCPU time: 0.02 s,  Wall time: 0.02 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/249\n\n",
+    "body": "Assignee: somebody\n\nWe could easily make Sage *twice* as fast at certain things\nwith an easy to implement optimization.  See below.  This is \nthe sort of thing Robert Bradshaw or Nick Alexander could likely \ndo in two hours, easily.  That Sage doesn't do this already is\na little surprising (it was because I didn't have time to\nimplement it).   Here is one simple example to illustrate my\npoint:\n\n```\n%time\nfor i in range(10^6):\n    a = 2*3\nCPU time: 0.79 s,  Wall time: 0.80 s\n\n\n%time\ntwo = 2; three = 3\nfor i in range(10^6):\n    a = two*three\nCPU time: 0.41 s,  Wall time: 0.42 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/249\n\n",
+    "closed_at": "2008-09-24T02:09:17Z",
     "created_at": "2007-02-07T06:39:19Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "possible optimization opportunity",
+    "title": "[with patch, positive review] a much needed preparser optimization -- factor out constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/249",
     "user": "https://github.com/williamstein"
@@ -17,82 +18,26 @@ archive/issues_000249.json:
 ```
 Assignee: somebody
 
-```
-print preparse("""
-def m(n):
-  return [[j%n*n+(j+j-i)%n+1
-    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]
-""")
-///
-def m(n):
-  return [[j%n*n+(j+j-i)%n+Integer(1)
-    for j in range(i+(Integer(1)-n)/Integer(2),i+(n+Integer(1))/Integer(2))] for i in range(n)]
-```
+We could easily make Sage *twice* as fast at certain things
+with an easy to implement optimization.  See below.  This is 
+the sort of thing Robert Bradshaw or Nick Alexander could likely 
+do in two hours, easily.  That Sage doesn't do this already is
+a little surprising (it was because I didn't have time to
+implement it).   Here is one simple example to illustrate my
+point:
 
 ```
-def m(n):
-  return [[j%n*n+(j+j-i)%n+1
-    for j in range(i+(1-n)/2,i+(n+1)/2)] for i in range(n)]
-```
+%time
+for i in range(10^6):
+    a = 2*3
+CPU time: 0.79 s,  Wall time: 0.80 s
 
-```
-time a=m(201)
-///
-CPU time: 0.63 s,  Wall time: 0.65 s
-```
 
-```
-def m(n):
-  one = 1; two=2
-  return [[j%n*n+(j+j-i)%n+one
-    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
-```
-
-```
-time a=m(201)
-///
-CPU time: 0.60 s,  Wall time: 0.61 s
-```
-
-```
-def m(n):
-  one = 1r; two=2r
-  return [[j%n*n+(j+j-i)%n+one
-    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
-```
-
-```
-time a=m(201)
-///
-CPU time: 0.75 s,  Wall time: 0.79 s
-```
-
-```
-%python
-
-def m(n):
-  one = 1; two=2
-  return [[j%n*n+(j+j-i)%n+one
-    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
-```
-
-```
-time a=m(201r)
-///
-CPU time: 0.03 s,  Wall time: 0.03 s
-```
-
-```
-def m(n):
-  one = 1r; two=2r; n=int(n)
-  return [[j%n*n+(j+j-i)%n+one
-    for j in range(i+(one-n)/two,i+(n+one)/two)] for i in range(n)]
-```
-
-```
-time a=m(201)
-///
-CPU time: 0.02 s,  Wall time: 0.02 s
+%time
+two = 2; three = 3
+for i in range(10^6):
+    a = two*three
+CPU time: 0.41 s,  Wall time: 0.42 s
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/249

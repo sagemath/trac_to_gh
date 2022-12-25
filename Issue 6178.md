@@ -1,21 +1,22 @@
-# Issue 6178: Hermite normal form over PID's
+# Issue 6178: [with patch, with positive review] Hermite normal form over PIDs
 
 archive/issues_006178.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @ncalexan\n\nKeywords: echelon form\n\nI've written some code that calculates Hermite normal form over a general PID. I wrote this because I needed it for a particular application; I will now go ahead with that as a means of stress-testing the code I've just written, but this ticket is here to remind me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6178\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @ncalexan\n\nKeywords: echelon form\n\nI've written some code that calculates Hermite normal form over a general PID. I wrote this because I needed it for a particular application; I will now go ahead with that as a means of stress-testing the code I've just written, but this ticket is here to remind me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6178\n\n",
+    "closed_at": "2009-06-13T19:35:59Z",
     "created_at": "2009-06-01T14:18:08Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Hermite normal form over PID's",
+    "title": "[with patch, with positive review] Hermite normal form over PIDs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6178",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @williamstein @ncalexan
 

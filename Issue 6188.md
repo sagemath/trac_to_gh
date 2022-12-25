@@ -1,27 +1,28 @@
-# Issue 6188: [with patch, needs review] Add more files in sage/rings/number_field to reference manual
+# Issue 6188: [with new patch, positive review] Add more files in sage/rings/number_field to reference manual
 
 archive/issues_006188.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: documentation\n\nThis patch adds the files {{{\norder.py}}}, `number_field_element_quadratic.pyx`, `number_field_rel.py`, `number_field_ideal_rel.py`, and `unit_group.py` to the reference manual, and makes the necessary ReST formatting fixes to get them to build correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6188\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: documentation\n\nThis patch adds the files `order.py`, `number_field_element_quadratic.pyx`, `number_field_rel.py`, `number_field_ideal_rel.py`, and `unit_group.py` to the reference manual, and makes the necessary ReST formatting fixes to get them to build correctly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6188\n\n",
+    "closed_at": "2009-06-13T19:47:35Z",
     "created_at": "2009-06-02T17:22:41Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Add more files in sage/rings/number_field to reference manual",
+    "title": "[with new patch, positive review] Add more files in sage/rings/number_field to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6188",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 Keywords: documentation
 
-This patch adds the files {{{
-order.py}}}, `number_field_element_quadratic.pyx`, `number_field_rel.py`, `number_field_ideal_rel.py`, and `unit_group.py` to the reference manual, and makes the necessary ReST formatting fixes to get them to build correctly.
+This patch adds the files `order.py`, `number_field_element_quadratic.pyx`, `number_field_rel.py`, `number_field_ideal_rel.py`, and `unit_group.py` to the reference manual, and makes the necessary ReST formatting fixes to get them to build correctly.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6188
 

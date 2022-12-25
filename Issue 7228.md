@@ -1,16 +1,17 @@
-# Issue 7228: [with patch, need review] Generalized Petersen graph generator
+# Issue 7228: Generalized Petersen graph generator
 
 archive/issues_007228.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThis patch introduces a generator for the generalized Petersen graphs.\n\nhttp://mathworld.wolfram.com/GeneralizedPetersenGraph.html\nhttp://en.wikipedia.org/wiki/Petersen_graph#Generalized_Petersen_graphs\n\nThe method used for plotting gives exactly the same result as the Petersen, Desargues, and the Moebius-Kantor graphs, so these functions have been simplified to just call GeneralizedPetersenGraph() with suitable parameter values and then change the graph's name to the named graph in question.\n\nPatch is made against sage 4.1.2\n\nIssue created by migration from https://trac.sagemath.org/ticket/7228\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch introduces a generator for the generalized Petersen graphs.\n\nhttp://mathworld.wolfram.com/GeneralizedPetersenGraph.html \n\nhttp://en.wikipedia.org/wiki/Petersen_graph#Generalized_Petersen_graphs\n\nThe method used for plotting gives exactly the same result as the Petersen, Desargues, and the Moebius-Kantor graphs, so these functions have been simplified to just call GeneralizedPetersenGraph() with suitable parameter values and then change the graph's name to the named graph in question.\n\nPatch is made against sage 4.1.2\n\nIssue created by migration from https://trac.sagemath.org/ticket/7228\n\n",
+    "closed_at": "2009-10-21T04:47:31Z",
     "created_at": "2009-10-15T15:29:31Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, need review] Generalized Petersen graph generator",
+    "title": "Generalized Petersen graph generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7228",
     "user": "https://github.com/haaninjo"
@@ -20,7 +21,8 @@ Assignee: @rlmill
 
 This patch introduces a generator for the generalized Petersen graphs.
 
-http://mathworld.wolfram.com/GeneralizedPetersenGraph.html
+http://mathworld.wolfram.com/GeneralizedPetersenGraph.html 
+
 http://en.wikipedia.org/wiki/Petersen_graph#Generalized_Petersen_graphs
 
 The method used for plotting gives exactly the same result as the Petersen, Desargues, and the Moebius-Kantor graphs, so these functions have been simplified to just call GeneralizedPetersenGraph() with suitable parameter values and then change the graph's name to the named graph in question.

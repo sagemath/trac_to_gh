@@ -3,7 +3,8 @@
 archive/issues_008429.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThe file `word.py` is getting very huge and forces one to create new classes inside of it (see below for explanation) which will get the file `word.py` even more huge in the future...\n\nIf a file contains the following :\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nclass C(A):\n    #huge class\n    pass\n``` \n\none can not create a new class between A and C in another file (because of loops of import) :\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nfrom file2 import B\nclass C(B):\n    #huge class\n    pass\n``` \n\n```\n#file2.py\nfrom file1 import A\nclass B(A)\n    #large intermediate class\n    pass\n```\n\nSo the solution is either to put everything in the same file or to put everything in different files. In this case, I choose the last solution because `word.py` is getting huge.\n\nThis ticket removes `Word_class`, `FiniteWord_class` and `InfiniteWord_class` from `word.py` and put them in new files called respectively `abstrac_word.py`, `finite_word.py` and `infinite_word.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8429\n\n",
+    "body": "Assignee: abmasse\n\nCC:  abmasse\n\nThe file `word.py` is getting very huge and forces one to create new classes inside of it (see below for explanation) which will get the file `word.py` even more huge in the future...\n\nIf a file contains the following :\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nclass C(A):\n    #huge class\n    pass\n``` \n\none can not create a new class between A and C in another file (because of loops of import) :\n\n```\n#file1.py\nclass A:\n    #huge class\n    pass\nfrom file2 import B\nclass C(B):\n    #huge class\n    pass\n``` \n\n```\n#file2.py\nfrom file1 import A\nclass B(A)\n    #large intermediate class\n    pass\n```\n\nSo the solution is either to put everything in the same file or to put everything in different files. In this case, I choose the last solution because `word.py` is getting huge.\n\nThis ticket removes `Word_class`, `FiniteWord_class` and `InfiniteWord_class` from `word.py` and put them in new files called respectively `abstrac_word.py`, `finite_word.py` and `infinite_word.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8429\n\n",
+    "closed_at": "2010-04-15T23:55:29Z",
     "created_at": "2010-03-03T18:18:23Z",
     "labels": [
         "component: combinatorics"
@@ -15,7 +16,7 @@ archive/issues_008429.json:
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: sage-combinat
+Assignee: abmasse
 
 CC:  abmasse
 

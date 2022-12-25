@@ -4,6 +4,7 @@ archive/issues_000092.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI think this was in an older version of SAGE, but now it seems only to\nwork for cyclotomic fields... =(  Was there a reason for dropping it?\nI was using it to build archimedian valuations for an arbitrary number\nfield, and am sad to see it go... =(  Thanks,\n\n\t\t\t\t\t\t-Jon\n\t\t\t\t\t\t =)\n\nIssue created by migration from https://trac.sagemath.org/ticket/92\n\n",
+    "closed_at": "2007-01-13T02:18:11Z",
     "created_at": "2006-09-28T05:45:04Z",
     "labels": [
         "component: basic arithmetic",

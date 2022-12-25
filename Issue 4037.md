@@ -1,9 +1,10 @@
-# Issue 4037: [with trivial patch, needs review] list_of_first_n() broken in interact.py
+# Issue 4037: [with trivial patch, with positive review] list_of_first_n() broken in interact.py
 
 archive/issues_004037.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nIn server/notebook/interact.py, the function list_of_first_n() claims to return n elements, but it returns n+1 of them.  The attached trivial patch fixes the function and the doctests.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4037\n\n",
+    "closed_at": "2008-09-02T09:36:30Z",
     "created_at": "2008-09-02T04:37:21Z",
     "labels": [
         "component: interact",
@@ -11,7 +12,7 @@ archive/issues_004037.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with trivial patch, needs review] list_of_first_n() broken in interact.py",
+    "title": "[with trivial patch, with positive review] list_of_first_n() broken in interact.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4037",
     "user": "https://github.com/aghitza"

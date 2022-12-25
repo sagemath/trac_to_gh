@@ -4,6 +4,7 @@ archive/issues_007623.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @gvol georgsweber\n\nThis was first requested in #5261, but no one is quite sure how to do it yet.   This would be the last thing to make OSX stuff more or less automatic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7623\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2009-12-08T15:29:09Z",
     "labels": [
         "component: distribution",

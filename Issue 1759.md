@@ -1,9 +1,10 @@
-# Issue 1759: Various files still mention GPL V2 [only]
+# Issue 1759: [with patch, positive review] Various files still mention GPL V2 [only]
 
 archive/issues_001759.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following files mention/are under GPL V2 implying V2 only:\n\n* c_lib/src/mpn_pylong.c: License: GPL v2\n* c_lib/src/mpz_pylong.c: License: GPL v2\n* sage/misc/banner.py\n\nThis ought to be fixed before 2.10 since we will merge GPL V3 or later packages. IIRC all the copyright holders agreed to GPL V2 or later, but we should be careful with this and double check.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1759\n\n",
+    "closed_at": "2008-01-15T04:19:43Z",
     "created_at": "2008-01-11T19:54:35Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_001759.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Various files still mention GPL V2 [only]",
+    "title": "[with patch, positive review] Various files still mention GPL V2 [only]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1759",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

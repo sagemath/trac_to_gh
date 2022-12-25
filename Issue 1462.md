@@ -4,6 +4,7 @@ archive/issues_001462.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is a very very simple patch that makes it so \n\n  sage -b\n\ntakes 1 seconds (on my mac laptop) instead of 10 seconds, so long as \nno Cython code has changed.  Otherwise it works just as before.\n\nThis is orthogonal to Bobby Moretti's patch for caching Cython dependencies.\nBoth should be used.\n\nThis is much simpler -- all it does is -- in 1/100th of a second (or so) compute a hash got from all cython-related files in the repo, and if that hasn't changed from last time, skip all cython-ing of code. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1462\n\n",
+    "closed_at": "2007-12-12T15:55:20Z",
     "created_at": "2007-12-11T20:17:38Z",
     "labels": [
         "component: user interface"

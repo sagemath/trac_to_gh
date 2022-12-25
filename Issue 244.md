@@ -3,7 +3,8 @@
 archive/issues_000244.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nBug problems:\n\n1. Find a way to turn off their very verbose output in some cases.  (The documented ways don't work.)\n2. Fix / investigate bug where charpoly hangs (see matrix2.pyx).  Or turn off using linbox by default for charpoly, since it's flake.  Or reimplement myself...\n  \nWhat will be included in the first release:\n* Fast dense echelon over QQ (via multimodular algorithm?)\n* (done) Fast minpoly over QQ\n* (done) Fast charpoly over QQ\n* Fast dense matrix multiply over Z/nZ\n* Fast sparse matrix multiply over Z/nZ\n* Fast minpoly over Z/nZ\n* Fast charpoly over Z/nZ\n\nIssue created by migration from https://trac.sagemath.org/ticket/244\n\n",
+    "body": "Assignee: @williamstein\n\nBug problems:\n\n1. Find a way to turn off their very verbose output in some cases.  (The documented ways don't work.)\n2. Fix / investigate bug where charpoly hangs (see matrix2.pyx).  Or turn off using linbox by default for charpoly, since it's flake.  Or reimplement myself...\n  \nWhat will be included in the first release:\n* (done) Fast minpoly over QQ\n* (done) Fast charpoly over QQ\n* (done) Fast dense echelon over Z/nZ\n* Fast dense matrix multiply over Z/nZ\n* Fast sparse matrix multiply over Z/nZ\n* Fast dense echelon over QQ (via multimodular algorithm?)\n* Fast sparse echelon over QQ (via multimodular algorithm -- might not use linbox...)\n* Fast minpoly over Z/nZ\n* Fast charpoly over Z/nZ\n\nIssue created by migration from https://trac.sagemath.org/ticket/244\n\n",
+    "closed_at": "2007-08-10T19:28:00Z",
     "created_at": "2007-02-05T01:51:04Z",
     "labels": [
         "component: linear algebra"
@@ -22,11 +23,13 @@ Bug problems:
 2. Fix / investigate bug where charpoly hangs (see matrix2.pyx).  Or turn off using linbox by default for charpoly, since it's flake.  Or reimplement myself...
   
 What will be included in the first release:
-* Fast dense echelon over QQ (via multimodular algorithm?)
 * (done) Fast minpoly over QQ
 * (done) Fast charpoly over QQ
+* (done) Fast dense echelon over Z/nZ
 * Fast dense matrix multiply over Z/nZ
 * Fast sparse matrix multiply over Z/nZ
+* Fast dense echelon over QQ (via multimodular algorithm?)
+* Fast sparse echelon over QQ (via multimodular algorithm -- might not use linbox...)
 * Fast minpoly over Z/nZ
 * Fast charpoly over Z/nZ
 

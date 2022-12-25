@@ -1,16 +1,17 @@
-# Issue 3003: Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)
+# Issue 3003: [with patch, positive review] Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)
 
 archive/issues_003003.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: crystals, tableaux\n\nCurrent behaviour:\n    sage: C = CrystalOfTableaux(['A',3],shape=[2,1])\n    sage: h = C.highest_weight_vector()\n    sage: t = h.to_tableau()\n    sage: w = t.to_word(); w\n    [2, 1, 1]\n    sage: type(w[0])\n    <class 'sage.combinat.crystals.letters.Crystal_of_letters_type_A_element'>\n    sage: t.evaluation()\n    <BOOM>\n\nThis patch ensures we get a tableau of integers instead of a tableau of crystal elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3003\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: crystals, tableaux\n\nCurrent behaviour:\n\n```\n    sage: C = CrystalOfTableaux(['A',3],shape=[2,1])\n    sage: h = C.highest_weight_vector()\n    sage: t = h.to_tableau()\n    sage: w = t.to_word(); w\n    [2, 1, 1]\n    sage: type(w[0])\n    <class 'sage.combinat.crystals.letters.Crystal_of_letters_type_A_element'>\n    sage: t.evaluation()\n    <BOOM>\n```\nThis patch ensures we get a tableau of integers instead of a tableau of crystal elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3003\n\n",
+    "closed_at": "2008-04-23T11:42:12Z",
     "created_at": "2008-04-22T17:14:31Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)",
+    "title": "[with patch, positive review] Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3003",
     "user": "https://github.com/jbandlow"
@@ -23,6 +24,8 @@ CC:  sage-combinat
 Keywords: crystals, tableaux
 
 Current behaviour:
+
+```
     sage: C = CrystalOfTableaux(['A',3],shape=[2,1])
     sage: h = C.highest_weight_vector()
     sage: t = h.to_tableau()
@@ -32,7 +35,7 @@ Current behaviour:
     <class 'sage.combinat.crystals.letters.Crystal_of_letters_type_A_element'>
     sage: t.evaluation()
     <BOOM>
-
+```
 This patch ensures we get a tableau of integers instead of a tableau of crystal elements.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3003

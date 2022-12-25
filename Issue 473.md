@@ -4,6 +4,7 @@ archive/issues_000473.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAt the moment the valgrind tool and flags are hardcoded in various scripts. So add checks for environment flag SAGE_VALGRIND_FLAGS to overwrite default.\n\nTo illustrate what you can do with other tools from the valgrind suite have a look at the two attached graphs created by the heap profiler massif.\n\nIt might also be nice to add a -valgrind to \"sage -testall\" to valgrind the whole test suite.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/473\n\n",
+    "closed_at": "2007-09-06T19:44:05Z",
     "created_at": "2007-08-21T01:13:34Z",
     "labels": [
         "component: packages: standard",

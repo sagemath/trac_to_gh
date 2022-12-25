@@ -3,11 +3,12 @@
 archive/issues_003984.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  bober\n\nOn Iras:\n\n```\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/chmm.pyx\nsage -t -long devel/sage/sage/stats/hmm/chmm.pyx            \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [4.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/stats/hmm/chmm.pyx\nTotal time for all tests: 4.4 seconds\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/hmm.pyx\nsage -t -long devel/sage/sage/stats/hmm/hmm.pyx             \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [3.0 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/stats/hmm/hmm.pyx\nTotal time for all tests: 3.0 seconds\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> \n```\n\nAll other doctests for 3.1.2.alpha1 pass on that box.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3984\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  bober\n\nNote: most of the valgrind fix issues have been moved to #4067. Those fixes do not prevent the segfault, so I broke them out.\n\nCheers,\n\nMichael\n\nOn Iras:\n\n```\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/chmm.pyx\nsage -t -long devel/sage/sage/stats/hmm/chmm.pyx            \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [4.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/stats/hmm/chmm.pyx\nTotal time for all tests: 4.4 seconds\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/hmm.pyx\nsage -t -long devel/sage/sage/stats/hmm/hmm.pyx             \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [3.0 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/stats/hmm/hmm.pyx\nTotal time for all tests: 3.0 seconds\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> \n```\n\nAll other doctests for 3.1.2.alpha1 pass on that box.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3984\n\n",
+    "closed_at": "2012-03-21T21:10:26Z",
     "created_at": "2008-08-29T01:10:45Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -20,6 +21,12 @@ archive/issues_003984.json:
 Assignee: mabshoff
 
 CC:  bober
+
+Note: most of the valgrind fix issues have been moved to #4067. Those fixes do not prevent the segfault, so I broke them out.
+
+Cheers,
+
+Michael
 
 On Iras:
 

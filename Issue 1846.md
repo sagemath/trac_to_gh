@@ -4,6 +4,7 @@ archive/issues_001846.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nConsider\n\n```\nlog(a*e^(-a*x-b)).simplify_exp()\n```\n\nThis gets expanded correctly, however\n\n```\nlog(a*e^(-a*x-b)/(1+exp(-a*x-b))^2 ).simplify_exp()\n```\nappears to lose the minus signs on ax and b.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1846\n\n",
+    "closed_at": "2008-01-19T14:42:38Z",
     "created_at": "2008-01-19T09:43:52Z",
     "labels": [
         "component: calculus",

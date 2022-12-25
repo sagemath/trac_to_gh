@@ -3,7 +3,8 @@
 archive/issues_009838.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis patch allows computing dual cones, including non-strictly convex and non-full-dimensional cases. \n\nThe actual work is done in `facet_normals` which now works for non-strictly convex cones as well. The method `base_extend` for quotient lattices was added during one of the implementation attempts and I left it for future use as well (the hope was to create cones in quotient lattices, but it does not work yet).\n\nThere is still a dimension 6 limitation stemming from PALP for computing duals and facet normals. This is still our best option for low dimension, but perhaps it would be nice if `facet_normals` caught the exception when PALP does not work and used polyhedra module in this case. Then computing the dual cone and face lattices should work automatically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9839\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis patch allows computing dual cones, including non-strictly convex and non-full-dimensional cases. \n\nThe actual work is done in `facet_normals` which now works for non-strictly convex cones as well. The method `base_extend` for quotient lattices was added during one of the implementation attempts and I left it for future use as well (the hope was to create cones in quotient lattices, but it does not work yet).\n\nThere is still a dimension 6 limitation stemming from PALP for computing duals and facet normals. This is still our best option for low dimension, but perhaps it would be nice if `facet_normals` caught the exception when PALP does not work and used polyhedra module in this case. Then computing the dual cone and face lattices should work automatically.\n\nSee #9604 for dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9839\n\n",
+    "closed_at": "2010-09-15T09:57:50Z",
     "created_at": "2010-08-30T05:49:07Z",
     "labels": [
         "component: geometry"
@@ -24,6 +25,8 @@ This patch allows computing dual cones, including non-strictly convex and non-fu
 The actual work is done in `facet_normals` which now works for non-strictly convex cones as well. The method `base_extend` for quotient lattices was added during one of the implementation attempts and I left it for future use as well (the hope was to create cones in quotient lattices, but it does not work yet).
 
 There is still a dimension 6 limitation stemming from PALP for computing duals and facet normals. This is still our best option for low dimension, but perhaps it would be nice if `facet_normals` caught the exception when PALP does not work and used polyhedra module in this case. Then computing the dual cone and face lattices should work automatically.
+
+See #9604 for dependencies.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9839
 

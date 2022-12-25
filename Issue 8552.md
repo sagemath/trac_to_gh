@@ -3,7 +3,8 @@
 archive/issues_008552.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nThis is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8552\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nThis is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)\n\n---\n\nApply only [attachment:trac_8552-all-in-one.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8552\n\n",
+    "closed_at": "2011-04-07T08:38:01Z",
     "created_at": "2010-03-17T08:35:51Z",
     "labels": [
         "component: misc",
@@ -21,6 +22,10 @@ Assignee: tbd
 CC:  @jhpalmieri
 
 This is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)
+
+---
+
+Apply only [attachment:trac_8552-all-in-one.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8552
 

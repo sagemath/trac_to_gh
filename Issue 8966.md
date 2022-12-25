@@ -4,10 +4,11 @@ archive/issues_008966.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @malb polybori\n\n```\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R=BooleanPolynomialRing(20,'x','lex')\nsage: a=R.random_element()\nsage: a.reduce([None,None])\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\neno%\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8966\n\n",
+    "closed_at": "2010-06-06T00:59:23Z",
     "created_at": "2010-05-14T18:18:46Z",
     "labels": [
         "component: algebra",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",

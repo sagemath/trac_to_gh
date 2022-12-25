@@ -1,16 +1,18 @@
-# Issue 4159: sage -bdist fails on osx 10.5 ppc with libpng errors
+# Issue 4159: [with patch, positive review] sage -bdist fails on osx 10.5 ppc and intel with libpng errors
 
 archive/issues_004159.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWith sage-3.1.2 if you try to do sage -bdist it fails with weird libpng linking errors\nand missing symbols.  This is when it tries to make a dmg. \n\nFor the 3.1.2 binary, I'm just using tar for now until this is fixed.  The fix will\nprobably be to unset some dynamic library paths right before running the commands\nin the sage-bdist script that create the dmg. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4159\n\n",
+    "closed_at": "2008-10-12T23:39:40Z",
     "created_at": "2008-09-20T15:47:42Z",
     "labels": [
         "component: distribution",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "sage -bdist fails on osx 10.5 ppc with libpng errors",
+    "title": "[with patch, positive review] sage -bdist fails on osx 10.5 ppc and intel with libpng errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4159",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_000584.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nJohn Voight mentioned on sage-devel that he needed a few more functions from PARI's number field setup. This patch provides an interface to those two functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/584\n\n",
+    "closed_at": "2007-09-04T19:19:24Z",
     "created_at": "2007-09-03T21:46:48Z",
     "labels": [
         "component: interfaces",

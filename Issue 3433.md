@@ -4,10 +4,10 @@ archive/issues_003433.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is a major efficiency problem with large notebooks.  The fix is to write custom worksheet __reduce__ and load methods that do not store the actual worksheet text in the object, but instead store it to disk and read it from disk.  That reading from disk should only happen when the worksheet is actually \"activated\", i.e., not when unpickling!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3433\n\n",
+    "closed_at": "2009-11-14T08:21:58Z",
     "created_at": "2008-06-15T22:51:57Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- change it so worksheet text is *not* stored in the notebook/worksheet objects when pickling and unpickling",

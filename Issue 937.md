@@ -4,6 +4,7 @@ archive/issues_000937.json:
 ```json
 {
     "body": "Assignee: failure\n\nDo what the summary says.  Then fix every single .show() related plot doctest to do this in all Sage.\nThere are many cases of either sage.: show's and .save('a.png')'s.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/937\n\n",
+    "closed_at": "2007-10-20T05:04:06Z",
     "created_at": "2007-10-20T03:17:10Z",
     "labels": [
         "component: doctest coverage",

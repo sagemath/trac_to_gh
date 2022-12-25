@@ -1,15 +1,16 @@
-# Issue 5990: [with patch, needs review] developer's guide: more on .spkg files
+# Issue 5990: [with patch, positive review] developer's guide: more on .spkg files
 
 archive/issues_005990.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis is an amalgamation of information from the patch at #4857 and the wiki page [http://wiki.sagemath.org/SPKG_Audit](http://wiki.sagemath.org/SPKG_Audit).  Therefore Georg Weber should get credit for the parts coming from #4857, while Michael Abshoff and Dan Drake should get credit for the parts coming from the wiki page.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5990\n\n",
+    "closed_at": "2009-06-01T05:26:52Z",
     "created_at": "2009-05-05T18:23:20Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] developer's guide: more on .spkg files",
+    "title": "[with patch, positive review] developer's guide: more on .spkg files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5990",
     "user": "https://github.com/jhpalmieri"

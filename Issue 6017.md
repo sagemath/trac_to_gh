@@ -4,6 +4,7 @@ archive/issues_006017.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nCC:  fidelbarrera\n\nUsing the tkz-graph package in latex allows for a variety of customizations in the output.  So methods will allow a graph to set and carry options that can be used by the latex() method.\n\n1.  make set_latex_option(), get_latex_option(), clear_latex_option()  as new methods for a graph\n\n2.  Add a dictionary to a graph that contains the values of these options.\n\n3.  So the latex() method can query the dictionary and act accordingly.\n\nSee #5975\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6017\n\n",
+    "closed_at": "2009-06-13T23:29:07Z",
     "created_at": "2009-05-11T04:34:50Z",
     "labels": [
         "component: graph theory",

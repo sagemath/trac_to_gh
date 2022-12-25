@@ -4,6 +4,7 @@ archive/issues_009440.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @nexttime\n\nIn ticket #8263, we missed these:\n\n- SAGE_DOC_JSMATH - should force docs to be built using jsMath\n\n- SAGE_DOCBUILD_OPTS - passed as an argument to `sage --docbuild` in the main Sage makefile.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9440\n\n",
+    "closed_at": "2014-12-18T15:51:50Z",
     "created_at": "2010-07-06T18:10:50Z",
     "labels": [
         "component: documentation",

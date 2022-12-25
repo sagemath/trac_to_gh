@@ -1,16 +1,16 @@
-# Issue 3932: Should we merge the "generate size n trees in linear time" code from  	  Ryan Dingman
+# Issue 3932: [with patch, positive review] generate size n trees in linear time
 
 archive/issues_003932.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3932\n\n",
+    "closed_at": "2009-05-18T23:14:27Z",
     "created_at": "2008-08-22T18:17:46Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Should we merge the \"generate size n trees in linear time\" code from  \t  Ryan Dingman",
+    "title": "[with patch, positive review] generate size n trees in linear time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3932",
     "user": "https://github.com/jasongrout"

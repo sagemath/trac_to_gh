@@ -4,6 +4,7 @@ archive/issues_007370.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  ylchapuy\n\nThis should work\n\n```\nsage: K = GF(11^5,'a')\nsage: K.list()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7370\n\n",
+    "closed_at": "2009-11-02T04:20:07Z",
     "created_at": "2009-11-01T17:06:29Z",
     "labels": [
         "component: basic arithmetic",

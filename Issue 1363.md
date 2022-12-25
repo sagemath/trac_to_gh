@@ -1,15 +1,16 @@
-# Issue 1363: complex intervals should have a sqrt() method
+# Issue 1363: [with patch, positive review] complex intervals should have a sqrt() method
 
 archive/issues_001363.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere's a patch for this as part of Robert Bradshaw's patch attached to #1275.  I'll split it out and add the docstring warnings, and put the new patch here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1363\n\n",
+    "closed_at": "2007-12-18T20:58:40Z",
     "created_at": "2007-12-02T05:24:51Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "complex intervals should have a sqrt() method",
+    "title": "[with patch, positive review] complex intervals should have a sqrt() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1363",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

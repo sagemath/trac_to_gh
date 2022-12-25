@@ -1,22 +1,25 @@
-# Issue 3107: Triangulation doesn't automatically happen for x3d output of 3d objects
+# Issue 3107: [with patch, with positive review] Triangulation doesn't automatically happen for x3d output of 3d objects
 
 archive/issues_003107.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: P = plot3d(lambda x,y: 4 - x^3 - y^2, (-2,2), (-2,2), color='green')\nprint P.x3d()\n\n<X3D version='3.0' profile='Immersive' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation=' http://www.web3d.org/specifications/x3d-3.0.xsd '>\n<head>\n<meta name='title' content='sage3d'/>\n</head>\n<Scene>\n<Viewpoint position='0 0 6'/>\n<Shape>\n<IndexedFaceSet coordIndex=',-1'>\n  <Coordinate point=''/>\n</IndexedFaceSet>\n<Appearance><Material diffuseColor='0 1.0 0.0' shininess='1' specularColor='0.0 0.0 0.0'/></Appearance></Shape>\n\n</Scene>\n</X3D>\n\n```\n\nNote the empyt vertex data. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3107\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_gfurnish\n\n```\nsage: P = plot3d(lambda x,y: 4 - x^3 - y^2, (-2,2), (-2,2), color='green')\nprint P.x3d()\n\n<X3D version='3.0' profile='Immersive' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation=' http://www.web3d.org/specifications/x3d-3.0.xsd '>\n<head>\n<meta name='title' content='sage3d'/>\n</head>\n<Scene>\n<Viewpoint position='0 0 6'/>\n<Shape>\n<IndexedFaceSet coordIndex=',-1'>\n  <Coordinate point=''/>\n</IndexedFaceSet>\n<Appearance><Material diffuseColor='0 1.0 0.0' shininess='1' specularColor='0.0 0.0 0.0'/></Appearance></Shape>\n\n</Scene>\n</X3D>\n\n```\n\nNote the empyt vertex data. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3107\n\n",
+    "closed_at": "2008-06-15T23:11:40Z",
     "created_at": "2008-05-06T00:47:16Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "Triangulation doesn't automatically happen for x3d output of 3d objects",
+    "title": "[with patch, with positive review] Triangulation doesn't automatically happen for x3d output of 3d objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3107",
     "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_gfurnish
 
 ```
 sage: P = plot3d(lambda x,y: 4 - x^3 - y^2, (-2,2), (-2,2), color='green')

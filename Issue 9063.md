@@ -4,6 +4,7 @@ archive/issues_009063.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nIf you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:\n\n```\nsage: R.<t> = GF(5)['t']\nsage: x = R(0)\nsage: type(x.denominator())\n<type 'int'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9063\n\n",
+    "closed_at": "2011-01-19T22:20:03Z",
     "created_at": "2010-05-27T06:51:35Z",
     "labels": [
         "component: algebra",

@@ -1,16 +1,17 @@
-# Issue 3181: add 64 bit OSX build support to iml
+# Issue 3181: [with spkg, with positive review] add 64 bit OSX build support to iml
 
 archive/issues_003181.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3181\n\n",
+    "closed_at": "2008-05-19T03:25:06Z",
     "created_at": "2008-05-13T12:24:02Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to iml",
+    "title": "[with spkg, with positive review] add 64 bit OSX build support to iml",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3181",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

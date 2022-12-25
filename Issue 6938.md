@@ -4,6 +4,7 @@ archive/issues_006938.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  drkirkby\n\nThe file sage-README-osx.txt is very confusing. If someone downloads the source, the readme file indicates they have downloaded binaries. \n\nThere should perhaps be two README files - one for source, and one for binaries. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6938\n\n",
+    "closed_at": "2010-09-15T11:38:13Z",
     "created_at": "2009-09-15T21:44:18Z",
     "labels": [
         "component: documentation",

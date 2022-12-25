@@ -1,16 +1,18 @@
-# Issue 7059: [with patch, needs review] Stop Sage tests from saving things to hard drive -- really!
+# Issue 7059: [with patch, positive review] Stop Sage tests from saving things to hard drive -- really!
 
 archive/issues_007059.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @kcrisman\n\nThis is a followup to #6864. A few doctests are still writing some files to non-temporary directories.  I think the attached patch fixes this, and it also adds a paragraph to the developer's guide warning about this sort of thing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7059\n\n",
+    "closed_at": "2009-10-02T17:36:45Z",
     "created_at": "2009-09-29T02:59:58Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Stop Sage tests from saving things to hard drive -- really!",
+    "title": "[with patch, positive review] Stop Sage tests from saving things to hard drive -- really!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7059",
     "user": "https://github.com/jhpalmieri"

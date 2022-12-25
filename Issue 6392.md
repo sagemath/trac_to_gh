@@ -4,6 +4,7 @@ archive/issues_006392.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @koffie\n\nThis isn't right:\n\n```\nsage: J = J0(43)\nsage: G,_ = J[0].intersection(J[1])\nsage: J[1]/G\nSimple abelian subvariety 43b(1,43) of dimension 2 of J0(43)\n```\n\nThis is\n\n```\nsage: J[0]/G\n\n(Abelian variety factor of dimension 1 of J0(43),\n Abelian variety morphism:\n  From: Simple abelian subvariety 43a(1,43) of dimension 1 of J0(43)\n  To:   Abelian variety factor of dimension 1 of J0(43))\n```\n\nFor some reason J[1]/G isn't even creating the right output (i.e., pair (abvar, map)). \n\nIssue created by migration from https://trac.sagemath.org/ticket/6392\n\n",
+    "closed_at": "2018-09-21T22:20:29Z",
     "created_at": "2009-06-24T09:53:32Z",
     "labels": [
         "component: modular forms",

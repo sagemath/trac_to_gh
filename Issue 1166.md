@@ -1,16 +1,17 @@
-# Issue 1166: 2D terminal output is inconsistent and corrupted
+# Issue 1166: [with patch; with positive review] 2D terminal output is inconsistent and corrupted
 
 archive/issues_001166.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: f = (exp(x)-1)/(exp(x/2)+1)\nsage: g = exp(x/2)-1\nsage: print f(10.0), g(10.0)\n                               147.4131591025766                               \\\n 147.4131591025766\nsage: print 1, 2\n1 2\nsage: print f(10), g(10)\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1                                     \\\n  5\n                                     e  - 1\n```\n\nThe output of f(10.0), g(10.0) [with many spaces] seems inconsistent with that of 1, 2 [no spaces]. With f(10), g(10) the exponent 5 of g(10) wraps around the terminal line, and is thus\nnot properly aligned with e - 1. (all this in a 80-column xterm)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1166\n\n",
+    "closed_at": "2008-01-21T22:58:49Z",
     "created_at": "2007-11-13T22:44:08Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "2D terminal output is inconsistent and corrupted",
+    "title": "[with patch; with positive review] 2D terminal output is inconsistent and corrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1166",
     "user": "https://github.com/zimmermann6"

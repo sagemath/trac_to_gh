@@ -1,23 +1,23 @@
-# Issue 5184: nonzero_positions is broken for sparse vectors
+# Issue 5184: [with patch, positive review] nonzero_positions is broken for sparse vectors
 
 archive/issues_005184.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere is an illustration:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 0})\nsage: v\n(0, 1, 0, -1)\nsage: w\n(0, -1, 0, 0)\nsage: v+w\n(0, 0, 0, -1)\nsage: (v+w).nonzero_positions()\n[1, 3]\n```\n(I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5184\n\n",
+    "body": "Assignee: @jhpalmieri\n\nHere is an illustration:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 0})\nsage: v\n(0, 1, 0, -1)\nsage: w\n(0, -1, 0, 0)\nsage: v+w\n(0, 0, 0, -1)\nsage: (v+w).nonzero_positions()\n[1, 3]\n```\n(I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5184\n\n",
+    "closed_at": "2009-02-28T21:02:39Z",
     "created_at": "2009-02-05T03:07:15Z",
     "labels": [
         "component: linear algebra",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "nonzero_positions is broken for sparse vectors",
+    "title": "[with patch, positive review] nonzero_positions is broken for sparse vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5184",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @williamstein
+Assignee: @jhpalmieri
 
 Here is an illustration:
 

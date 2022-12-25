@@ -1,16 +1,17 @@
-# Issue 9487: Have an acurate description of what "supported platforms" are, and have one list - not numerous different ones.
+# Issue 9487: List "supported platforms" accurately and in a single place
 
 archive/issues_009487.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @rlmill mariah georgsweber @peterjeremy @nexttime @mkoeppe @slel\n\nAs has been noted several times before, the list of \"supported platforms\" for Sage varies very depending on what particular file/web-page you read. Different sources which include a list of supported platforms include:\n\n* README.txt\n* http://www.sagemath.org/doc/installation/source.html\n* http://wiki.sagemath.org/SupportedPlatforms\n\nA proposal of mine is at \n\nhttp://wiki.sagemath.org/suggested-for-supported-platforms\n\nwhich is based on the method used by Mathworks for MATLAB in their list of [System Requirements for Linux](http://www.mathworks.com/support/sysreq/current_release/linux.html). Mathworks break \"supported\" into two lists. \n* List systems which MATLAB is tested on, and so they can give good support. (In this case, exact version numbers are listed e.g. Ubuntu 8.04, 8.10, 9.04, and 9.10) \n* List systems on which MATLAB should work, but which they don't test. \n\nI generalised that to four for Sage, \n\n* Fully supported (Sage is always tested on **every** system in this list before a release is made) \n* Expected to work \n* Probably will not work, but porting is ongoing \n* Will not work and porting will require substantial effort \n\nThe first two are basically the same as Mathworks use. The last two are applicable to Sage, but not for a closed source system like MATLAB. \n\nIt would be good if the list could be maintained in such a way that there are not several different sources giving a different list of \"supported\" systems. \n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9487\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @rlmill mariah georgsweber @peterjeremy @nexttime @mkoeppe @slel\n\nKeywords: sd32\n\nAs has been noted several times before, the list of \"supported platforms\" for Sage varies depending on what particular file/web-page you read. Different sources which include a list of supported platforms include:\n\n* README.txt\n* http://www.sagemath.org/doc/installation/source.html\n* http://wiki.sagemath.org/SupportedPlatforms\n\nA proposal of mine is at \n\nhttp://wiki.sagemath.org/suggested-for-supported-platforms\n\nwhich is based on the method used by Mathworks for MATLAB in their list of [System Requirements for Linux](http://www.mathworks.com/support/sysreq/current_release/linux.html). Mathworks break \"supported\" into two lists. \n* List systems which MATLAB is tested on, and so they can give good support. (In this case, exact version numbers are listed e.g. Ubuntu 8.04, 8.10, 9.04, and 9.10) \n* List systems on which MATLAB should work, but which they don't test. \n\nI generalised that to four for Sage, \n\n* Fully supported (Sage is always tested on **every** system in this list before a release is made) \n* Expected to work \n* Probably will not work, but porting is ongoing \n* Will not work and porting will require substantial effort \n\nThe first two are basically the same as Mathworks use. The last two are applicable to Sage, but not for a closed source system like MATLAB. \n\nIt would be good if the list could be maintained in such a way that there are not several different sources giving a different list of \"supported\" systems. \n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9487\n\n",
+    "closed_at": "2022-05-13T09:17:31Z",
     "created_at": "2010-07-12T23:58:20Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Have an acurate description of what \"supported platforms\" are, and have one list - not numerous different ones.",
+    "title": "List \"supported platforms\" accurately and in a single place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9487",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -20,7 +21,9 @@ Assignee: mvngu
 
 CC:  @jhpalmieri @rlmill mariah georgsweber @peterjeremy @nexttime @mkoeppe @slel
 
-As has been noted several times before, the list of "supported platforms" for Sage varies very depending on what particular file/web-page you read. Different sources which include a list of supported platforms include:
+Keywords: sd32
+
+As has been noted several times before, the list of "supported platforms" for Sage varies depending on what particular file/web-page you read. Different sources which include a list of supported platforms include:
 
 * README.txt
 * http://www.sagemath.org/doc/installation/source.html
@@ -46,7 +49,7 @@ The first two are basically the same as Mathworks use. The last two are applicab
 It would be good if the list could be maintained in such a way that there are not several different sources giving a different list of "supported" systems. 
 
 
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9487
 

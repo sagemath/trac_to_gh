@@ -1,23 +1,24 @@
-# Issue 5240: Updayte FLINT to 1.1.1 (latest upstream)
+# Issue 5240: [with spkg; positive review] Update FLINT to 1.2.4 (latest upstream)
 
 archive/issues_005240.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @burcin\n\nFrom the flint-devel mailing list:\n\n```\nI've just release FLINT 1.1.1. This is a service release to fix some\nSERIOUS issues in FLINT 1.1.0. I strongly recommend upgrading!\n\nThe issues fixed were as follows:\n\n* fmpz_poly_gcd had a serious bug in it (which was actually in the\nfunction fmpz_poly_gcd_heuristic) which caused it to return the\n****WRONG ANSWER**** in certain cases, specifically when aliasing one\nof the inputs with the output and where the heuristic gcd was not\nsufficient to compute the gcd. In this case the heuristic gcd would\ncorrupt the output (which is aliased with an input) and pass the\ncorrupted inputs to another gcd algorithm, which would then get things\nwrong. This occurs rarely, as the heuristic gcd cannot compute the gcd\nin rare cases. I was unable to get it to return a wrong answer except\nin the case where the inputs both had a Gaussian content whose gcd was\nnon-trivial. However, it may theoretically occur in other cases.\n\n* fmpz_poly_gcd_subresultant needed a special case to deal with length\n1 polynomials. Actually this probably did not cause a bug, but was\nfixed anyway as a precaution (and for performance reasons).\n\n* _fmpz_poly_scalar_mul_fmpz could cause a segmentation fault. This\nwas due to the fact that GMP, when multiplying integers of n1 and n2\nlimbs, automatically takes n1 + n2 limbs to write the result, even if\nthey are not all needed. I changed the interface of the precached FFT\nmultiplication some time ago to use this same semantics, but did not\nadjust the scalar multiplication function accordingly.\n\n* test__fmpz_poly_scalar_div_fmpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\n* test_fmpz_poly_scalar_div_fmpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\n* test_fmpz_poly_scalar_div_mpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\nBill.\n```\nSage is not affected by all of the bugs, but at least some of the crash bugs do affect Sage.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5240\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @burcin\n\nFrom the flint-devel mailing list:\n\n```\nI've just release FLINT 1.1.1. This is a service release to fix some\nSERIOUS issues in FLINT 1.1.0. I strongly recommend upgrading!\n\nThe issues fixed were as follows:\n\n* fmpz_poly_gcd had a serious bug in it (which was actually in the\nfunction fmpz_poly_gcd_heuristic) which caused it to return the\n****WRONG ANSWER**** in certain cases, specifically when aliasing one\nof the inputs with the output and where the heuristic gcd was not\nsufficient to compute the gcd. In this case the heuristic gcd would\ncorrupt the output (which is aliased with an input) and pass the\ncorrupted inputs to another gcd algorithm, which would then get things\nwrong. This occurs rarely, as the heuristic gcd cannot compute the gcd\nin rare cases. I was unable to get it to return a wrong answer except\nin the case where the inputs both had a Gaussian content whose gcd was\nnon-trivial. However, it may theoretically occur in other cases.\n\n* fmpz_poly_gcd_subresultant needed a special case to deal with length\n1 polynomials. Actually this probably did not cause a bug, but was\nfixed anyway as a precaution (and for performance reasons).\n\n* _fmpz_poly_scalar_mul_fmpz could cause a segmentation fault. This\nwas due to the fact that GMP, when multiplying integers of n1 and n2\nlimbs, automatically takes n1 + n2 limbs to write the result, even if\nthey are not all needed. I changed the interface of the precached FFT\nmultiplication some time ago to use this same semantics, but did not\nadjust the scalar multiplication function accordingly.\n\n* test__fmpz_poly_scalar_div_fmpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\n* test_fmpz_poly_scalar_div_fmpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\n* test_fmpz_poly_scalar_div_mpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\nBill.\n```\nSage is not affected by all of the bugs, but at least some of the crash bugs do affect Sage.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5240\n\n",
+    "closed_at": "2009-04-04T05:12:16Z",
     "created_at": "2009-02-12T01:00:34Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Updayte FLINT to 1.1.1 (latest upstream)",
+    "title": "[with spkg; positive review] Update FLINT to 1.2.4 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5240",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 CC:  @burcin
 

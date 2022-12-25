@@ -1,16 +1,17 @@
-# Issue 1490: fix numerical noise doctest failure in numerical/test.py
+# Issue 1490: [with patch] fix numerical noise doctest failure in numerical/test.py
 
 archive/issues_001490.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe new aarpack doctest fails on MacIntel OSX. The attached patch fixes that.\n\nJosh: we might need to look into this if it is more than a numerical stability issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1490\n\n",
+    "closed_at": "2007-12-14T03:48:03Z",
     "created_at": "2007-12-13T19:45:33Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "fix numerical noise doctest failure in numerical/test.py",
+    "title": "[with patch] fix numerical noise doctest failure in numerical/test.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1490",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

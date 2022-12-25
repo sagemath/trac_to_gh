@@ -3,7 +3,8 @@
 archive/issues_005935.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nRight at the top overview of graph theory the ref manual has the line\n\n```\nsage: graphs_query.[tab]             # not tested\n```\n\nhttp://www.sagemath.org/doc/reference/sage/graphs/graph.html\n\nIf it isn't tested it's broken, and that's the case here, since there is no graphs_query object available on the Sage command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5935\n\n",
+    "body": "Assignee: ekirkman\n\nRight at the top overview of graph theory the ref manual has the line\n\n```\nsage: graphs_query.[tab]             # not tested\n```\n\nhttp://www.sagemath.org/doc/reference/sage/graphs/graph.html\n\nIf it isn't tested it's broken, and that's the case here, since there is no graphs_query object available on the Sage command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5935\n\n",
+    "closed_at": "2009-07-08T20:30:52Z",
     "created_at": "2009-04-29T15:49:31Z",
     "labels": [
         "component: graph theory",
@@ -16,7 +17,7 @@ archive/issues_005935.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @rlmill
+Assignee: ekirkman
 
 Right at the top overview of graph theory the ref manual has the line
 

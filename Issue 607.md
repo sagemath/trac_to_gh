@@ -3,7 +3,8 @@
 archive/issues_000607.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n        sage: p = 71; m = 4\n        sage: K = pAdicField(p, m)\n        sage: x = polygen(K)\n        sage: C = HyperellipticCurve(x^5 + 33/16*x^4 + 3/4*x^3 + 3/8*x^2 - 1/4*x + 1/16)\n        sage: P = C(-1, 1); P1 = C(-1, -1)\n        sage: Q = C(0, 1/4); Q1 = C(0, -1/4)\n        sage: x, y = C.monsky_washnitzer_gens()\n        sage: w = C.invariant_differential()\n        sage: w.integrate(P, Q), (x*w).integrate(P, Q)\n        (O(71^4), O(71^4))\n        sage: R, R1 = C.lift_x(4, all=True)\n        sage: w.integrate(P, R)\n        42*71 + 63*71^2 + 55*71^3 + O(71^4)\n        sage: w.integrate(P, R) + w.integrate(P1, R1)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/607\n\n",
+    "body": "Assignee: @robertwb\n\n        sage: p = 71; m = 4\n        sage: K = pAdicField(p, m)\n        sage: x = polygen(K)\n        sage: C = HyperellipticCurve(x^5 + 33/16*x^4 + 3/4*x^3 + 3/8*x^2 - 1/4*x + 1/16)\n        sage: P = C(-1, 1); P1 = C(-1, -1)\n        sage: Q = C(0, 1/4); Q1 = C(0, -1/4)\n        sage: x, y = C.monsky_washnitzer_gens()\n        sage: w = C.invariant_differential()\n        sage: w.integrate(P, Q), (x*w).integrate(P, Q)\n        (O(71^4), O(71^4))\n        sage: R, R1 = C.lift_x(4, all=True)\n        sage: w.integrate(P, R)\n        42*71 + 63*71^2 + 55*71^3 + O(71^4)\n        sage: w.integrate(P, R) + w.integrate(P1, R1)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/607\n\n",
+    "closed_at": "2007-09-07T04:27:20Z",
     "created_at": "2007-09-07T00:29:15Z",
     "labels": [
         "component: algebraic geometry",
@@ -16,7 +17,7 @@ archive/issues_000607.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
         sage: p = 71; m = 4
         sage: K = pAdicField(p, m)

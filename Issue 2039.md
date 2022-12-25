@@ -1,16 +1,17 @@
-# Issue 2039: add sage version const
+# Issue 2039: [with patch, positve review] add sage version const
 
 archive/issues_002039.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nHow does one determine the SAGE version? I can't find any information on this, so I propose that SAGE_VERSION (hex) and SAGE_VERSION_STR constants be added giving current running version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2039\n\n",
+    "closed_at": "2008-10-31T23:26:48Z",
     "created_at": "2008-02-03T20:16:32Z",
     "labels": [
         "component: misc",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "add sage version const",
+    "title": "[with patch, positve review] add sage version const",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2039",
     "user": "https://trac.sagemath.org/admin/accounts/users/benjamin.peterson"

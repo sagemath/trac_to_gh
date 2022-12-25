@@ -4,6 +4,7 @@ archive/issues_007473.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @nthiery @nathanncohen\n\nThis is a follow-up to #6187.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/433ec95cba086551/f4286b67d64a19dd?#f4286b67d64a19dd), [sage-release](http://groups.google.com/group/sage-release/msg/76c956312e4de13d), [#sage-devel log](http://sage.math.washington.edu/home/mpatel/projects/irclogs/logs/sage-devel-2009-10-26.log.html#t21:56).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7473\n\n",
+    "closed_at": "2009-12-06T08:24:12Z",
     "created_at": "2009-11-16T10:20:23Z",
     "labels": [
         "component: documentation",

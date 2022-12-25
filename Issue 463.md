@@ -1,15 +1,16 @@
-# Issue 463: sage -upgrade:  make it more flexible
+# Issue 463: [with patch; positive review] sage -upgrade:  "sage -upgrade URL" will install all *newer* spkg's from the given URL, which can also be a local directory
 
 archive/issues_000463.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n[12:25] <william> interesting feature idea:\n[12:25] <william> extend the \"sage -upgrade\" command so you an give the directory or URL\n[12:26] <william> of any other installed version of SAGE, and it will pull everything from there.\n[12:26] <william> install any newer spkg's and pull from any active repo.\n[12:26] <malb> definitely nice for sysadmins I guess\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/463\n\n",
+    "closed_at": "2008-11-27T03:30:09Z",
     "created_at": "2007-08-19T19:32:14Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "sage -upgrade:  make it more flexible",
+    "title": "[with patch; positive review] sage -upgrade:  \"sage -upgrade URL\" will install all *newer* spkg's from the given URL, which can also be a local directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/463",
     "user": "https://github.com/williamstein"

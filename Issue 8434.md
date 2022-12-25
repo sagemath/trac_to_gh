@@ -1,9 +1,10 @@
-# Issue 8434: sage -g uses user's PYTHONPATH
+# Issue 8434: sage -b uses user's PYTHONPATH
 
 archive/issues_008434.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  alexanderdreyer\n\nHi alltogether,\nI currently work with the sage-4.3.3-linux-64bit-opensuse_11.1_x86_64-x86_64-Linux.tar.gz binary from sagemath.org on SuSE 11.1/x86_64.\n\n```\n./sage\n./sage -b\n```\ninstalls stuff the users PYTHONPATH, not in the corresponding path of sage.\n\nFor instance, see:\n\n```\nbyte-compiling /u/d/dreyer/.local//lib/python2.6/site-packages/sage/ext/gen_interpreters.py to gen_interpreters.pyc\nrunning install_egg_info\nWriting /u/d/dreyer/.local//lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n```\n\nI think, sage should overwrite PYTHONPATH in its own environment, doesn't it?\n\nRegards,\n  Alexander Dreyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/8434\n\n",
+    "closed_at": "2014-03-31T12:30:25Z",
     "created_at": "2010-03-04T09:32:46Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_008434.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage -g uses user's PYTHONPATH",
+    "title": "sage -b uses user's PYTHONPATH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8434",
     "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"

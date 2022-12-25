@@ -1,16 +1,17 @@
-# Issue 4974: make sage.libs.pari.gen._normalize_slice a miscellaneous function for dealing with slices
+# Issue 4974: [with patch, positive review] eliminate normalize_slice in favor of a standard Python idiom
 
 archive/issues_004974.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @jasongrout\n\nAlso, it would be good to optimize it if possible.\n\n```\n[04:21] <craigcitro> yeah, file a ticket for that and assign it to me.\n[04:21] <jason-> (couldn't get cimport to work...)\n[04:22] <craigcitro> well, the pari gen.pyx probably wasn't the best place for that function\n[04:22] <craigcitro> so it needs to be moved anyway\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4974\n\n",
+    "closed_at": "2009-01-18T15:49:40Z",
     "created_at": "2009-01-14T10:27:30Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "make sage.libs.pari.gen._normalize_slice a miscellaneous function for dealing with slices",
+    "title": "[with patch, positive review] eliminate normalize_slice in favor of a standard Python idiom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4974",
     "user": "https://github.com/jasongrout"

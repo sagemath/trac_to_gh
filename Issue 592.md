@@ -4,6 +4,7 @@ archive/issues_000592.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI am hard at work on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/592\n\n",
+    "closed_at": "2007-09-06T09:28:46Z",
     "created_at": "2007-09-05T15:57:14Z",
     "labels": [
         "component: number theory"

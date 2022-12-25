@@ -1,15 +1,16 @@
-# Issue 5081: Make numpy play nice with Sage types
+# Issue 5081: [with patch, positive review] Make numpy play nice with Sage types
 
 archive/issues_005081.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWe should make numpy understand Sage float and complex types, at least the RDF and CDF types.  See the following thread on the numpy list.\n\nhttp://thread.gmane.org/gmane.comp.python.numeric.general/25251/focus=25273\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5081\n\n",
+    "closed_at": "2009-07-29T13:45:52Z",
     "created_at": "2009-01-24T01:26:02Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Make numpy play nice with Sage types",
+    "title": "[with patch, positive review] Make numpy play nice with Sage types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5081",
     "user": "https://github.com/jasongrout"

@@ -4,6 +4,7 @@ archive/issues_009712.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @nexttime @malb\n\nFrom #9472:\n\n \"Since PolyBoRi also uses GD, `$SAGE_ROOT/spkg/standard/deps` should be updated (but there seem to have been no issues with that in the past).\"\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9712\n\n",
+    "closed_at": "2010-08-15T06:57:32Z",
     "created_at": "2010-08-09T22:35:52Z",
     "labels": [
         "component: packages: standard",

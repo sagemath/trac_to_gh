@@ -1,25 +1,26 @@
-# Issue 5827: crypto: subset sum problem for super-increasing sequences
+# Issue 5827: [with patch, positive review] knapsack: subset sum problem for super-increasing sequences
 
 archive/issues_005827.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: knapsack cryptosystem, subset sum\n\nThe Merkle-Hellman knapsack public-key cryptosystem makes use of the subset sum problem for super-increasing sequences. The goal of this ticket is to first implement a class for solving the subset sum problem for super-increasing sequences. The long-term goal is to implement a module for knapsack cryptosystems. So the implementation contained on this ticket would be subsumed within the module.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5827\n\n",
+    "body": "Assignee: jkantor\n\nKeywords: knapsack problems, subset sum\n\nSince all of COIN-OR is covered by licenses that are incompatible with GNU GPL v2+, I've thought of implementing something along the lines of a knapsack problems solver. The goal of this ticket is to first implement a class for solving the subset sum problem for super-increasing sequences. The long-term goal is to implement a module for solving various knapsack problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5827\n\n",
+    "closed_at": "2009-06-04T18:52:15Z",
     "created_at": "2009-04-20T03:15:33Z",
     "labels": [
-        "component: cryptography"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "crypto: subset sum problem for super-increasing sequences",
+    "title": "[with patch, positive review] knapsack: subset sum problem for super-increasing sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5827",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: somebody
+Assignee: jkantor
 
-Keywords: knapsack cryptosystem, subset sum
+Keywords: knapsack problems, subset sum
 
-The Merkle-Hellman knapsack public-key cryptosystem makes use of the subset sum problem for super-increasing sequences. The goal of this ticket is to first implement a class for solving the subset sum problem for super-increasing sequences. The long-term goal is to implement a module for knapsack cryptosystems. So the implementation contained on this ticket would be subsumed within the module.
+Since all of COIN-OR is covered by licenses that are incompatible with GNU GPL v2+, I've thought of implementing something along the lines of a knapsack problems solver. The goal of this ticket is to first implement a class for solving the subset sum problem for super-increasing sequences. The long-term goal is to implement a module for solving various knapsack problems.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5827
 

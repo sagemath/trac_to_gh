@@ -4,9 +4,10 @@ archive/issues_008564.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nHi,\n\nplease apply the attached patch. The corresponding test is in sympy in sympy/test_external/test_sage.py. It'd be cool to execute that file automatically in sage doctests, not sure currently how to do it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8564\n\n",
+    "closed_at": "2010-07-21T03:31:39Z",
     "created_at": "2010-03-20T02:29:43Z",
     "labels": [
-        "component: algebra",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",

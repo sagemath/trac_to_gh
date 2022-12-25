@@ -4,6 +4,7 @@ archive/issues_003714.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFriCAS calls clisp with multiple parameters, i.e. there are spaces involved. Wrapping $`@` in quotes solves the problem. This is required to fix the optional FriCAS 1.0.3.spkg.\n\nThe patch was provided by Waldek Hebisch.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3714\n\n",
+    "closed_at": "2008-07-23T18:44:12Z",
     "created_at": "2008-07-23T18:03:22Z",
     "labels": [
         "component: build",

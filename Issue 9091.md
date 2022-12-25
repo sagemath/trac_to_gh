@@ -4,6 +4,7 @@ archive/issues_009091.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nCC:  @nthiery @jhpalmieri\n\nIn `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9091\n\n",
+    "closed_at": "2010-06-06T07:27:01Z",
     "created_at": "2010-05-30T02:22:52Z",
     "labels": [
         "component: misc",

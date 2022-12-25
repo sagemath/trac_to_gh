@@ -1,15 +1,16 @@
-# Issue 4024: [with spkg, needs review] upgrade M4RI to newest upstream release
+# Issue 4024: [with spkg, positive review] upgrade M4RI to newest upstream release (20080901)
 
 archive/issues_004024.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: spkg\n\nThe newest M4RI upstream release improves performance, has some bug fixes and support for parallel matrix elimination (only makes sense on an Opteron). \n\n## 20080624 (Sage 3.1.2.alpha3)\n\n### Matrix Elimination\n|       |        |        |        |        |\n|-------|--------|--------|--------|--------|\n| Dim   | min    | avg    | med    | max    |\n| 10000 |  1.809 |  1.820 |  1.821 |  1.850 |\n| 16384 |  7.625 |  7.772 |  7.761 |  8.090 |\n| 20000 | 13.746 | 13.932 | 13.899 | 14.370 |\n| 32000 | 45.865 | 46.001 | 46.081 | 46.121 |\n### Matrix Multiplication\n|       |        |        |        |        |\n|-------|--------|--------|--------|--------|\n| Dim   | min    | avg    | med    | max    |\n| 10000 |  1.817 |  1.822 |  1.821 |  1.839 |\n| 16384 |  6.856 |  6.895 |  6.865 |  7.012 |\n| 20000 | 12.690 | 12.703 | 12.699 | 12.761 |\n| 32000 | 52.878 | 53.929 | 53.460 | 58.142 |\n## 20080826 (newest upstream)\n### Matrix Elimination\n|       |        |        |        |        |\n|-------|--------|--------|--------|--------|\n| Dim   | min    | avg    | med    | max    |\n| 10000 |  1.501 |  1.509 |  1.515 |  1.515 |\n| 16384 |  6.468 |  6.670 |  6.801 |  6.990 |\n| 20000 | 11.877 | 11.901 | 11.910 | 11.934 |\n| 32000 | 41.513 | 41.623 | 41.671 | 41.691 |\n### Matrix Multiplication\n\nIssue created by migration from https://trac.sagemath.org/ticket/4024\n\n",
+    "closed_at": "2008-09-01T12:11:08Z",
     "created_at": "2008-08-31T19:21:03Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] upgrade M4RI to newest upstream release",
+    "title": "[with spkg, positive review] upgrade M4RI to newest upstream release (20080901)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4024",
     "user": "https://github.com/malb"

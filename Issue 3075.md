@@ -3,11 +3,11 @@
 archive/issues_003075.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nClick Action ---> Test and all cells will be evaluated and their output compared with the output last time.  Any time the output differs both outputs are shown with the bad one in RED.\n\nOr something like that...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3075\n\n",
+    "body": "Assignee: @mwhansen\n\nClick Action ---> Test and all cells will be evaluated and their output compared with the output last time.  Any time the output differs both outputs are shown with the bad one in RED.\n\nOr something like that...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3075\n\n",
+    "closed_at": "2009-01-22T13:03:19Z",
     "created_at": "2008-05-01T22:28:27Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- add a \"test\" option",
@@ -16,7 +16,7 @@ archive/issues_003075.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Click Action ---> Test and all cells will be evaluated and their output compared with the output last time.  Any time the output differs both outputs are shown with the bad one in RED.
 

@@ -3,7 +3,8 @@
 archive/issues_008986.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8986\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun @loefflerd\n\nThis patch is a part of the following series adding support for cones/fans and toric varieties to Sage:\n\nPrerequisites:\n\n#8675 - Remove `AmbientSpace._constructor` and fix consequences\n\n#8682 - Improve `AlgebraicScheme_subscheme.__init__` and `AmbientSpace._validate`\n\n#8694 - Improve schemes printing and LaTeXing\n\n#8934 - Trivial bug in computing faces of non-full-dimensional lattice polytopes\n\n#8936 - Expose facet inequalities for lattice polytopes\n\n#8941 - `_latex_` and `origin` for lattice polytopes\n\nMain patches adding new modules:\n\n#9062 - Add support for toric lattices\n\n#8986 - Add support for convex rational polyhedral cones\n\n#8987 - Add support for rational polyhedral fans\n\n#8988 - Add support for toric varieties\n\n#8989 - Add support for Fano toric varieties\n\nEverything was tested on sage.math using sage-4.4.2.rc0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8986\n\n",
+    "closed_at": "2010-07-20T08:47:04Z",
     "created_at": "2010-05-18T09:06:31Z",
     "labels": [
         "component: geometry"
@@ -19,7 +20,35 @@ Assignee: mhampton
 
 CC:  @vbraun @loefflerd
 
+This patch is a part of the following series adding support for cones/fans and toric varieties to Sage:
 
+Prerequisites:
+
+#8675 - Remove `AmbientSpace._constructor` and fix consequences
+
+#8682 - Improve `AlgebraicScheme_subscheme.__init__` and `AmbientSpace._validate`
+
+#8694 - Improve schemes printing and LaTeXing
+
+#8934 - Trivial bug in computing faces of non-full-dimensional lattice polytopes
+
+#8936 - Expose facet inequalities for lattice polytopes
+
+#8941 - `_latex_` and `origin` for lattice polytopes
+
+Main patches adding new modules:
+
+#9062 - Add support for toric lattices
+
+#8986 - Add support for convex rational polyhedral cones
+
+#8987 - Add support for rational polyhedral fans
+
+#8988 - Add support for toric varieties
+
+#8989 - Add support for Fano toric varieties
+
+Everything was tested on sage.math using sage-4.4.2.rc0.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8986
 

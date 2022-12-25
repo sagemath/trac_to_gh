@@ -1,23 +1,22 @@
-# Issue 1319: [graphs] calculate the characteristic polynomial
+# Issue 1319: [with patch] calculate the characteristic polynomial of a graph
 
 archive/issues_001319.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1319\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1319\n\n",
+    "closed_at": "2007-12-18T17:32:06Z",
     "created_at": "2007-11-28T20:06:47Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[graphs] calculate the characteristic polynomial",
+    "title": "[with patch] calculate the characteristic polynomial of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1319",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 
 

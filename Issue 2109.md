@@ -1,9 +1,10 @@
-# Issue 2109: the maxima interface doesn't recognize a syntax error (and then hangs)
+# Issue 2109: the maxima interface doesn't recognize a syntax error
 
 archive/issues_002109.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: maxima.eval('sage0: x == x;')\ndisplay2d : false; \n(%o2) false\n\n0; \n(%o4) 0\n```\n\nIt hangs there.  If doing the same thing in Maxima, we get the following results:\n\n```\n(%i1) sage0: x==x;\nIncorrect syntax: = is not a prefix operator\nsage0: x==\n        ^\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2109\n\n",
+    "closed_at": "2010-01-19T00:41:20Z",
     "created_at": "2008-02-08T10:44:29Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_002109.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "the maxima interface doesn't recognize a syntax error (and then hangs)",
+    "title": "the maxima interface doesn't recognize a syntax error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2109",
     "user": "https://github.com/mwhansen"

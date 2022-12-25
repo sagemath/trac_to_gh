@@ -3,7 +3,8 @@
 archive/issues_008095.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nLet us define the following morphism over 3 letters:\n\n```\nsage: substitution=WordMorphism('a->b,b->ac,c->a')\n```\nThen we get\n\n```\nsage: substitution.is_primitive()\nFalse\n```\nbut also\n\n```\nsage: (substitution^2).is_primitive()\nTrue\n```\n\n---\n\nexpected behaviour:\n\nSee the description of \".is_primitive()\":\nReturns True if self is primitive.\nA morphism \u03d5 is primitive if there exists an positive integer k such\nthat for all \u03b1\u2208\u03a3, \u03d5k(\u03b1) contains all the letters of \u03a3.\n\nSo, if a morphism is primitive, so are all its powers. And if there is\na power which is primitive, so is the morphism itself. In the example\nabove, both outputs should be \"True\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8095\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nLet us define the following morphism over 3 letters:\n\n```\nsage: substitution=WordMorphism('a->b,b->ac,c->a')\n```\nThen we get\n\n```\nsage: substitution.is_primitive()\nFalse\n```\nbut also\n\n```\nsage: (substitution^2).is_primitive()\nTrue\n```\n\n---\n\nexpected behaviour:\n\nSee the description of \".is_primitive()\":\nReturns True if self is primitive.\nA morphism \u03d5 is primitive if there exists an positive integer k such\nthat for all \u03b1\u2208\u03a3, \u03d5k(\u03b1) contains all the letters of \u03a3.\n\nSo, if a morphism is primitive, so are all its powers. And if there is\na power which is primitive, so is the morphism itself. In the example\nabove, both outputs should be \"True\".\n\nThis was reported here (via 'Report a problem'):\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ed1186c229e7343?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/8095\n\n",
+    "closed_at": "2010-01-30T23:41:54Z",
     "created_at": "2010-01-27T13:59:46Z",
     "labels": [
         "component: combinatorics",
@@ -50,6 +51,10 @@ that for all α∈Σ, ϕk(α) contains all the letters of Σ.
 So, if a morphism is primitive, so are all its powers. And if there is
 a power which is primitive, so is the morphism itself. In the example
 above, both outputs should be "True".
+
+This was reported here (via 'Report a problem'):
+
+http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ed1186c229e7343?hl=en
 
 Issue created by migration from https://trac.sagemath.org/ticket/8095
 

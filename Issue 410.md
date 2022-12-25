@@ -1,22 +1,23 @@
-# Issue 410: New documentation for Cython and C++
+# Issue 410: [with patch] New documentation for Cython and C++
 
 archive/issues_000410.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere's a patch with a C++ section for the programming manual.  It's stuff that I learned from (re)writing the NTL interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/410\n\n",
+    "body": "Assignee: tba\n\nHere's a patch with a C++ section for the programming manual.  It's stuff that I learned from (re)writing the NTL interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/410\n\n",
+    "closed_at": "2007-10-04T19:32:58Z",
     "created_at": "2007-08-06T17:54:09Z",
     "labels": [
-        "component: packages",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "New documentation for Cython and C++",
+    "title": "[with patch] New documentation for Cython and C++",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/410",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: tba
 
 Here's a patch with a C++ section for the programming manual.  It's stuff that I learned from (re)writing the NTL interface.
 

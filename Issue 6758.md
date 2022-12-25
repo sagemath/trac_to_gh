@@ -1,16 +1,17 @@
-# Issue 6758: visibility.c in libgcrypt attempts to return value from void function.
+# Issue 6758: fix messed up libgcrypt package
 
 archive/issues_006758.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  mvngu drkirkby\n\nI tried to use the Sun compiler to build Sage. Since it's more fussy that gcc, it is showing as an **error** \n\n```\n\nMaking all in src\nmake[4]: Entering directory `/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/libgcrypt-1.4.3.p1/src/src'\nsource='visibility.c' object='libgcrypt_la-visibility.lo' libtool=yes \\\nDEPDIR=.deps depmode=none /bin/bash ../depcomp \\\n/bin/bash ../libtool --tag=CC   --mode=compile /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I..   -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -g -c -o libgcrypt_la-visibility.lo `test -f 'visibility.c' || echo './'`visibility.c\nmkdir .libs\n /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -g -c visibility.c  -KPIC -DPIC -o .libs/libgcrypt_la-visibility.o\n\"visibility.c\", line 702: void function cannot return value\n\"visibility.c\", line 851: void function cannot return value\ncc: acomp failed for visibility.c\n```\nThe dodgy bits of code are:\n\n```\nvoid\ngcry_md_hash_buffer (int algo, void *digest,\n                     const void *buffer, size_t length)\n{\n  return _gcry_md_hash_buffer (algo, digest, buffer, length);\n}\n```\nand \n\n```\nvoid\ngcry_ac_io_init_va (gcry_ac_io_t *ac_io, gcry_ac_io_mode_t mode,\n                    gcry_ac_io_type_t type, va_list ap)\n{\n  return _gcry_ac_io_init_va (ac_io, mode, type, ap);\n}\n```\nThe Sun compiler will not accept this, and so exits, aborting the build of Sage. \n\nNote there are license issues with libgcrypt too - it is GPL 3. See #6757\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6758\n\n",
+    "closed_at": "2009-09-28T01:36:43Z",
     "created_at": "2009-08-16T03:44:32Z",
     "labels": [
         "component: cryptography",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "visibility.c in libgcrypt attempts to return value from void function.",
+    "title": "fix messed up libgcrypt package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6758",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

@@ -1,16 +1,17 @@
-# Issue 2957: Singular multivariate polynomials are buggy on exponent overflow
+# Issue 2957: [with patch, positive review] Singular multivariate polynomials are buggy on exponent overflow
 
 archive/issues_002957.json:
 ```json
 {
     "body": "Assignee: somebody\n\nOn 64-bit x86, exponents truncate to 32 bits:\n\n```\nsage: K.<x,y> = QQ[]\nsage: ((x^12345)^54321)^12345\nx^2065457633\nsage: 12345*54321*12345\n8278467437025\nsage: (12345*54321*12345) % 2^32\n2065457633\n```\n\nOn 32-bit x86, exponents truncate to 16 bits, and overflow from one variable to another (!!!):\n\n```\nsage: K.<x,y> = QQ[]\nsage: (x^12345)^54321\nx^28393*y^10232\nsage: (12345*54321) // 2^16\n10232\nsage: (12345*54321) % 2^16\n28393\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2957\n\n",
+    "closed_at": "2009-01-28T14:11:59Z",
     "created_at": "2008-04-19T15:33:21Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Singular multivariate polynomials are buggy on exponent overflow",
+    "title": "[with patch, positive review] Singular multivariate polynomials are buggy on exponent overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2957",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

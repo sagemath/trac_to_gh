@@ -4,6 +4,7 @@ archive/issues_000983.json:
 ```json
 {
     "body": "Assignee: somebody\n\nHello,\n\n```\n The problem seems to be the abs() command. Take any function like\n f(x)=2*abs(x) with a changing sign. Entering now latex(f) shows me as\n the result:\n x \\ {\\mapsto}\\ {2 \\cdot \\abs \\left( x \\right)}\n```\nreported by marko in sage-support.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/983\n\n",
+    "closed_at": "2007-10-24T17:41:32Z",
     "created_at": "2007-10-24T17:39:29Z",
     "labels": [
         "component: basic arithmetic",

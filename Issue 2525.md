@@ -1,16 +1,17 @@
-# Issue 2525: update Linbox to 1.1.5.rc3 upstream release
+# Issue 2525: [with spkg + patch, positive review] update Linbox to 1.1.5 final upstream release
 
 archive/issues_002525.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe upstream release contains plenty of bugfixes. Since the givaro.spkg at #2524 requires a bump anyway we might as well upgrade this too in unison.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2525\n\n",
+    "closed_at": "2008-04-04T01:09:16Z",
     "created_at": "2008-03-15T01:56:12Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "update Linbox to 1.1.5.rc3 upstream release",
+    "title": "[with spkg + patch, positive review] update Linbox to 1.1.5 final upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2525",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

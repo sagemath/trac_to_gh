@@ -4,6 +4,7 @@ archive/issues_001082.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently, \"sage -upgrade\" automatically checks in code in sage-main (asking you for a commit message, etc.) without explaining what's happening, and what exactly is being checked in.\n\nInstead, \"sage -upgrade\" should either explain what's going on before it checks in the code, or explain what's going on and then exit without doing anything, so the user can use hg_sage.ci().\n\nIssue created by migration from https://trac.sagemath.org/ticket/1082\n\n",
+    "closed_at": "2014-02-11T21:21:19Z",
     "created_at": "2007-11-03T18:08:01Z",
     "labels": [
         "component: user interface",

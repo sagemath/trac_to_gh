@@ -4,10 +4,10 @@ archive/issues_001811.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\n\nOn Jan 17, 2008 12:08 AM, Dan Drake <dr.dan.drake@gmail.com> wrote:\n> Hello,\n> \n> I'd like to unattach a file that is currently attached. The\n\nThe command to do this used to be called \"detach\".  It has mysteriously completely\nvanished from Sage since when I wrote it!  It's in the notebook still, but it isn't available\nfrom the command line anymore.  \n\nAnyway, I've reported this as trac #\n\nIn the meantime you can work around this problem as illustrated below:\n\nsage: sage: attach example.sage\nThis is a simple SAGE example script.\n...\nsage: import sage.misc.interpreter\nsage: sage.misc.interpreter.attached\n{'/home2/sage/build/sage-2.10.alpha4/example.sage': 1197908255.0}\nsage: del sage.misc.interpreter.attached['/home2/sage/build/sage-2.10.alpha4/example.sage']\nsage: attached_files()\n[]\n\n\n\n\n> documentation for attach says that I can remove files from\n> attached_files() to do this, but that doesn't seem to work:\n> \n>   sage: attached_files()\n>   ['/home/drake/code/sage/foo.sage']\n>   sage: attached_files().pop()\n>   '/home/drake/code/sage/foo.sage'\n>   sage: attached_files()\n>   ['/home/drake/code/sage/foo.sage']\n> \n> It doesn't work because I'm accessing the list *returned by*\n> attached_files; I need to access whatever attached_files() looks at to\n> get that list. I used ??attached_files, but I don't seem to have access\n> to the 'attached' variable.\n> \n> What I'd really like, though, is an 'unattach' function!\n> \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1811\n\n",
+    "closed_at": "2010-02-01T01:41:09Z",
     "created_at": "2008-01-17T21:59:31Z",
     "labels": [
-        "component: user interface",
-        "bug"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "command line detach -- completely missing from Sage!?",

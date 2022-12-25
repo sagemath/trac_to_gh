@@ -1,15 +1,16 @@
-# Issue 5621: doctests for calculus.py
+# Issue 5621: [with patch, positive review] doctests for calculus.py
 
 archive/issues_005621.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: doctest, calculus.py\n\nThe objective here is to add more doctests to the file `sage/calculus/calculus.py`, especially documentation for methods/functions that are exposed to readers via the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5621\n\n",
+    "closed_at": "2009-05-21T01:28:49Z",
     "created_at": "2009-03-28T03:55:27Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "doctests for calculus.py",
+    "title": "[with patch, positive review] doctests for calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5621",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

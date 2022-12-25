@@ -4,6 +4,7 @@ archive/issues_007733.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nJust try ::\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.show()\nsage: Graph(g).show()\nsage: DiGraph(g).show()\n```\n\nThe positions are not kept.... Why isn't Graph(g) equivalent to copy(g) ?\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7733\n\n",
+    "closed_at": "2010-03-08T20:57:27Z",
     "created_at": "2009-12-18T08:25:18Z",
     "labels": [
         "component: graph theory",

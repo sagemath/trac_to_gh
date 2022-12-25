@@ -1,15 +1,16 @@
-# Issue 528: write new Integer_mod_dense class that wraps NTL directly
+# Issue 528: [with patch] write new Integer_mod_dense class that wraps NTL directly
 
 archive/issues_000528.json:
 ```json
 {
     "body": "Assignee: dmharvey\n\nCurrently `Integer_mod_dense` wraps the `ZZX` class in `ntl.pyx`. This causes a lot of overhead for small polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/528\n\n",
+    "closed_at": "2007-10-04T18:24:25Z",
     "created_at": "2007-08-30T13:20:50Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "write new Integer_mod_dense class that wraps NTL directly",
+    "title": "[with patch] write new Integer_mod_dense class that wraps NTL directly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/528",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

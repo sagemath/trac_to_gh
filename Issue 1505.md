@@ -1,16 +1,17 @@
-# Issue 1505: make M4RI a shared library
+# Issue 1505: [with spkg, positive review] make M4RI a shared library
 
 archive/issues_001505.json:
 ```json
 {
     "body": "Assignee: @malb\n\nWe are not the only ones anymore who use M4RI, PolyBoRi (which deputs in Sage 2.9) also uses M4RI. Thus we should make M4RI a shared library to not duplicate code/memory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1505\n\n",
+    "closed_at": "2007-12-22T18:53:22Z",
     "created_at": "2007-12-14T12:41:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "make M4RI a shared library",
+    "title": "[with spkg, positive review] make M4RI a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1505",
     "user": "https://github.com/malb"

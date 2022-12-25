@@ -1,22 +1,23 @@
-# Issue 2505: [with patch, needs review] Sage has no Wronskian function
+# Issue 2505: [with patch, positive review] Sage has no Wronskian function
 
 archive/issues_002505.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: wronskian, calculus\n\nThe Wronskian is a basic tool in differential equations. It's used to see if a set of functions is linearly independent. The attached patch adds such a function to calculus.py.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2505\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: wronskian, calculus\n\nThe Wronskian is a basic tool in differential equations. It's used to see if a set of functions is linearly independent. The attached patch adds such a function to calculus.py.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2505\n\n",
+    "closed_at": "2008-03-16T00:04:03Z",
     "created_at": "2008-03-13T07:58:20Z",
     "labels": [
-        "component: cygwin",
+        "component: calculus",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] Sage has no Wronskian function",
+    "title": "[with patch, positive review] Sage has no Wronskian function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2505",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 Keywords: wronskian, calculus
 

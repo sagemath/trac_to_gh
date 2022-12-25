@@ -1,15 +1,16 @@
-# Issue 6954: [with patch, needs review] latex output for dictionaries
+# Issue 6954: [with patch, positive review] latex output for dictionaries
 
 archive/issues_006954.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: latex\n\nThe attached patch implements latex output for dictionaries:\n\n```\nsage: var('x,y')\nsage: latex({x: y^2, y: 1/2})\n\\left\\{y\\rightarrow \\frac{1}{2}, x\\rightarrow y^{2}\\right\\}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6954\n\n",
+    "closed_at": "2009-09-26T08:15:18Z",
     "created_at": "2009-09-18T08:41:21Z",
     "labels": [
         "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] latex output for dictionaries",
+    "title": "[with patch, positive review] latex output for dictionaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6954",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

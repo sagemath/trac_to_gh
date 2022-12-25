@@ -1,16 +1,17 @@
-# Issue 7244: Implement dicyclic groups as permutation groups
+# Issue 7244: [patch included, postitive review] Implement dicyclic groups as permutation groups
 
 archive/issues_007244.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @wdjoyner\n\nKeywords: dicyclic\n\nThe dicyclic groups are nonabelian groups of order 4n, n> 2.\n\nWith these added, it will be possible to easily construct every subgroup of order 8 and 12 as a permutation group, and then every subgroup of size 15 or less will be easy to construct.\n\nDiscussion originated at:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/df6697653527006c\n\nIssue created by migration from https://trac.sagemath.org/ticket/7244\n\n",
+    "closed_at": "2009-10-31T16:37:53Z",
     "created_at": "2009-10-19T04:48:24Z",
     "labels": [
         "component: group theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "Implement dicyclic groups as permutation groups",
+    "title": "[patch included, postitive review] Implement dicyclic groups as permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7244",
     "user": "https://github.com/rbeezer"

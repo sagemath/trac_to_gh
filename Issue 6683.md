@@ -4,6 +4,7 @@ archive/issues_006683.json:
 ```json
 {
     "body": "Assignee: wstein\n\nKeywords: notebook worksheet rating_info error\n\nClicking on a rating_info link in a  list of notebook worksheets produces a blank page titled \"Error | Sage Notebook\".\n\nDiagnosis and suggested solution found in this [thread](http://groups.google.com/group/sage-support/browse_frm/thread/4d2524b7ae5dd26c#) on sage-support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6683\n\n",
+    "closed_at": "2010-01-19T16:12:24Z",
     "created_at": "2009-08-07T09:29:50Z",
     "labels": [
         "component: notebook",

@@ -3,10 +3,11 @@
 archive/issues_006352.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nKeywords: gap\n\nThis is an upgrade optional package for gap-4.4.12, as in #6348.\nThis spkg applies fine to 4.0.2.rc1 and all related failures in sage -testall -optional are fixed in the patch in #6348.\n\nThe command \"newest-version gap\" mentioned in the old spkg-install script is broken. I was unable to locate that script, so I slightly modified the spkg-install so it would compile the binaries correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6352\n\n",
+    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nKeywords: gap\n\nThis is an upgraded optional package for gap-4.4.12, as in #6348.\nThis spkg applies fine to 4.0.2.rc1 and all related failures in sage -testall -optional are fixed in the patch in #6348.\n\nThe command \"newest-version gap\" mentioned in the old spkg-install script is broken. I was unable to locate that script, so I slightly modified the spkg-install so it would compile the binaries correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6352\n\n",
+    "closed_at": "2010-09-21T10:44:53Z",
     "created_at": "2009-06-17T23:06:26Z",
     "labels": [
-        "component: algebra",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -22,7 +23,7 @@ CC:  @maxthemouse
 
 Keywords: gap
 
-This is an upgrade optional package for gap-4.4.12, as in #6348.
+This is an upgraded optional package for gap-4.4.12, as in #6348.
 This spkg applies fine to 4.0.2.rc1 and all related failures in sage -testall -optional are fixed in the patch in #6348.
 
 The command "newest-version gap" mentioned in the old spkg-install script is broken. I was unable to locate that script, so I slightly modified the spkg-install so it would compile the binaries correctly.

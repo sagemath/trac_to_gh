@@ -3,10 +3,11 @@
 archive/issues_009852.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  @nthiery\n\nThis tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`\n\nI also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX. #8880 is not needed either anymore once this patch is merged.\n\nTips for the reviewer :\n\n* Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as \n  {{{\n  from sage.numerical.mip_cplex import [something]\n  }}}\n  to\n  {{{\n  from sage.numerical.mip_osi_cplex import [something]\n  }}}\n  So there is no need to deal with all these - and + lines.\n*  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first \"forgot\" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9853\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nthiery\n\nThis tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`\n\nI also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX, and modified modules_list.py to compile the right files. #8880 is not needed either anymore once this patch is merged.\n\nTips for the reviewer :\n\n* Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as \n  {{{\n  from sage.numerical.mip_cplex import [something]\n  }}}\n  to\n  {{{\n  from sage.numerical.mip_osi_cplex import [something]\n  }}}\n  So there is no need to deal with all these - and + lines.\n*  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first \"forgot\" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`\n\nNathann\n     \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9853\n\n",
+    "closed_at": "2010-10-09T08:46:15Z",
     "created_at": "2010-09-03T18:39:05Z",
     "labels": [
-        "component: numerical"
+        "component: linear programming"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Enumerate Integer solution of a LP through new CPLEX interface",
@@ -21,7 +22,7 @@ CC:  @nthiery
 
 This tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`
 
-I also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX. #8880 is not needed either anymore once this patch is merged.
+I also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX, and modified modules_list.py to compile the right files. #8880 is not needed either anymore once this patch is merged.
 
 Tips for the reviewer :
 
@@ -37,6 +38,8 @@ Tips for the reviewer :
 *  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first "forgot" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`
 
 Nathann
+     
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9853
 

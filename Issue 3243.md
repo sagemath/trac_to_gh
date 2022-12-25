@@ -1,16 +1,17 @@
-# Issue 3243: [with patch; needs review] cygwin -- get it to work on cygwin
+# Issue 3243: [with patch; positive review] cygwin -- get it to work on cygwin
 
 archive/issues_003243.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWrap log2 in a function so it will work in cygwin.  In cygwin log2 is a macro:\n\n```\nsh-3.2$ grep log2 *.h\nmath.h:#define log2(x) (log (x) / M_LOG2_E)\nmath.h:#define log2f(x) (logf (x) / (float) M_LOG2_E)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3243\n\n",
+    "closed_at": "2008-05-18T12:30:52Z",
     "created_at": "2008-05-17T20:44:59Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- get it to work on cygwin",
+    "title": "[with patch; positive review] cygwin -- get it to work on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3243",
     "user": "https://github.com/williamstein"

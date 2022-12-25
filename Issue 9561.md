@@ -4,6 +4,7 @@ archive/issues_009561.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @kcrisman mvngu\n\nThe forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9561\n\n",
+    "closed_at": "2010-07-23T02:29:55Z",
     "created_at": "2010-07-21T10:01:54Z",
     "labels": [
         "component: documentation",

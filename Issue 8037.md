@@ -3,7 +3,8 @@
 archive/issues_008037.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @dandrake\n\nMake changes in the French tutorial corresponding to those in #7617 in the English version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8037\n\n",
+    "body": "Assignee: @mezzarobba\n\nCC:  @dandrake\n\nMake changes in the French tutorial corresponding to those in #7617 in the English version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8037\n\n",
+    "closed_at": "2010-03-02T22:11:42Z",
     "created_at": "2010-01-22T06:18:10Z",
     "labels": [
         "component: documentation",
@@ -17,7 +18,7 @@ archive/issues_008037.json:
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: mvngu
+Assignee: @mezzarobba
 
 CC:  @dandrake
 

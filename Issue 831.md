@@ -4,6 +4,7 @@ archive/issues_000831.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nExporting 'tip' (== 'HEAD' for SVN) should work without looking up the revision number first from within SAGE. The attached patch does this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/831\n\n",
+    "closed_at": "2007-10-13T01:41:51Z",
     "created_at": "2007-10-05T10:11:32Z",
     "labels": [
         "component: packages: standard",

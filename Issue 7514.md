@@ -3,7 +3,8 @@
 archive/issues_007514.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @seblabbe @robertwb @dandrake\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7514\n\n",
+    "body": "Assignee: tbd\n\nCC:  @seblabbe @robertwb @dandrake\n\nDEPENDS ON #7483\n\nThe goal of this ticket is to rewrite the load and attach commands to eliminate a lot of weirdness:\n\n (1) they should both be usable as normal python functions, so people who find the `load <...>` form and `attach <....>` forms weird, can forget they exist.  This also makes comprehensive doctesting way easier. \n\n (2) it should be possible to do `load DIR+'file.sage'` say, and also constructions like \n\n```\nfor i in range(3):\n    load \"setup%s.py\"%i\n```\n\n\nThe patches hopefully do the above and much more.   They refactor all the relevant code, document it way, way better, clean it up, and unify it (there was tons of replication between the notebook and command line).  \n\nThe notebook page (sagenb-7514.patch) is only needed if you use the ntoebook, by the way. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7514\n\n",
+    "closed_at": "2010-01-04T06:41:38Z",
     "created_at": "2009-11-22T08:12:38Z",
     "labels": [
         "component: misc"
@@ -19,7 +20,23 @@ Assignee: tbd
 
 CC:  @seblabbe @robertwb @dandrake
 
+DEPENDS ON #7483
 
+The goal of this ticket is to rewrite the load and attach commands to eliminate a lot of weirdness:
+
+ (1) they should both be usable as normal python functions, so people who find the `load <...>` form and `attach <....>` forms weird, can forget they exist.  This also makes comprehensive doctesting way easier. 
+
+ (2) it should be possible to do `load DIR+'file.sage'` say, and also constructions like 
+
+```
+for i in range(3):
+    load "setup%s.py"%i
+```
+
+
+The patches hopefully do the above and much more.   They refactor all the relevant code, document it way, way better, clean it up, and unify it (there was tons of replication between the notebook and command line).  
+
+The notebook page (sagenb-7514.patch) is only needed if you use the ntoebook, by the way. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7514
 

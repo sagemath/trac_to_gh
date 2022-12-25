@@ -1,16 +1,17 @@
-# Issue 3023: make apply_map deal with empty matrices
+# Issue 3023: [with patch, positive review] make apply_map deal with empty matrices
 
 archive/issues_003023.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: m=matrix([])\nsage: m.apply_map?\nsage: m.apply_map(lambda x: x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/matrix/matrix_dense.pyx in sage.matrix.matrix_dense.Matrix_dense.apply_map (sage/matrix/matrix_dense.c:3098)()\n    307             v = sage.structure.sequence.Sequence(v)\n    308             R = v.universe()\n--> 309         M = sage.matrix.matrix_space.MatrixSpace(R, self._nrows,\n    310                    self._ncols, sparse=False)\n    311         image = M(v)\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in MatrixSpace(base_ring, nrows, ncols, sparse)\n    171     \"\"\"\n    172     if not sage.rings.ring.is_Ring(base_ring):\n--> 173         raise TypeError, \"base_ring (=%s) must be a ring\"%base_ring\n    174\n    175     if ncols is None: ncols = nrows\n\n<type 'exceptions.TypeError'>: base_ring (=Category of objects) must be a ring\n```\n\nm.apply_map(blah) should return an empty matrix in this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3023\n\n",
+    "closed_at": "2008-04-25T18:52:45Z",
     "created_at": "2008-04-25T16:47:26Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "make apply_map deal with empty matrices",
+    "title": "[with patch, positive review] make apply_map deal with empty matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3023",
     "user": "https://github.com/jasongrout"

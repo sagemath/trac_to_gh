@@ -1,23 +1,22 @@
-# Issue 1316: [graphs] evaluate speed of cliques() function
+# Issue 1316: graphs: evaluate speed of cliques() function
 
 archive/issues_001316.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n```\n>> * compare cliques() and related functions with the routine at\n>> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1316\n\n",
+    "body": "Assignee: @rlmill\n\n```\n>> * compare cliques() and related functions with the routine at\n>> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1316\n\n",
+    "closed_at": "2009-06-19T22:23:56Z",
     "created_at": "2007-11-28T20:03:45Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[graphs] evaluate speed of cliques() function",
+    "title": "graphs: evaluate speed of cliques() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1316",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 ```
 >> * compare cliques() and related functions with the routine at

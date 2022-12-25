@@ -4,6 +4,7 @@ archive/issues_006427.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe following occur in sage-4.1.alpha1:\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage/doc/fr/tutorial/programming.rst # 1 doctests failed\n        sage -t -long devel/sage/sage/misc/darwin_utilities.pyx # 3 doctests failed\n----------------------------------------------------------------------\n```\n\nthey're both really easy fixes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6427\n\n",
+    "closed_at": "2010-02-02T06:16:15Z",
     "created_at": "2009-06-26T18:05:01Z",
     "labels": [
         "component: documentation",

@@ -1,15 +1,16 @@
-# Issue 5836: Make show() immediately show an image in the notebook
+# Issue 5836: [with patch, positive review] Make show() immediately show an image in the notebook
 
 archive/issues_005836.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThe patch makes the cell containing:\n\n```\nshow(plot(x^2, (x, -2,2)))\nprint \"hi\"\n```\ndisplay the plot before printing \"hi\".  This makes it much easier to construct nice-looking output.\n\nWilliam should get author credit on this one as well as me, since he showed how it could be done in a demo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5836\n\n",
+    "closed_at": "2009-04-24T07:19:27Z",
     "created_at": "2009-04-20T18:30:27Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Make show() immediately show an image in the notebook",
+    "title": "[with patch, positive review] Make show() immediately show an image in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5836",
     "user": "https://github.com/jasongrout"

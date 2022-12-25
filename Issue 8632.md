@@ -3,7 +3,8 @@
 archive/issues_008632.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\na sage (4.3.3) notebook shows the correct picture of\n\n```\nplot(x^2-5,(x,0,5),ymin=0)\n```\n\n\nThe save method ignores the ymin parameter:\n\n```\nplot(x^2-5,(x,0,5),ymin=0).save(\"/tmp/test.png\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8632\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\na sage (4.3.3) notebook shows the correct picture of\n\n```\nplot(x^2-5,(x,0,5),ymin=0)\n```\n\n\nThe save method ignores the ymin parameter:\n\n```\nplot(x^2-5,(x,0,5),ymin=0).save(\"/tmp/test.png\")\n```\n\n**Dependency**: #7981\n\nIssue created by migration from https://trac.sagemath.org/ticket/8632\n\n",
+    "closed_at": "2011-01-25T08:14:11Z",
     "created_at": "2010-03-30T17:12:08Z",
     "labels": [
         "component: graphics",
@@ -32,6 +33,8 @@ The save method ignores the ymin parameter:
 ```
 plot(x^2-5,(x,0,5),ymin=0).save("/tmp/test.png")
 ```
+
+**Dependency**: #7981
 
 Issue created by migration from https://trac.sagemath.org/ticket/8632
 

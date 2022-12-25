@@ -3,7 +3,8 @@
 archive/issues_009827.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @robertwb @nexttime @jasongrout @craigcitro @TimDumol @qed777\n\n[Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9828\n\n",
+    "body": "Assignee: tbd\n\nCC:  @robertwb @nexttime @jasongrout @craigcitro @TimDumol @qed777\n\n[Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.\n\nApply\n\n* http://sage.math.washington.edu/home/robertwb/cython/cython-0.13.p1.spkg\n\n* http://sage.math.washington.edu/home/mpatel/trac/10036/sagenb-0.8.5.spkg (#10036's SageNB 0.8.5 package).\n\n* [attachment:trac_9828-cython_0_13.patch] to the sage repository.\n\n* [attachment:trac_9828-scripts_hudson.patch] to the scripts repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9828\n\n",
+    "closed_at": "2010-10-07T11:19:25Z",
     "created_at": "2010-08-28T00:36:27Z",
     "labels": [
         "component: packages: standard"
@@ -20,6 +21,16 @@ Assignee: tbd
 CC:  @robertwb @nexttime @jasongrout @craigcitro @TimDumol @qed777
 
 [Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.
+
+Apply
+
+* http://sage.math.washington.edu/home/robertwb/cython/cython-0.13.p1.spkg
+
+* http://sage.math.washington.edu/home/mpatel/trac/10036/sagenb-0.8.5.spkg (#10036's SageNB 0.8.5 package).
+
+* [attachment:trac_9828-cython_0_13.patch] to the sage repository.
+
+* [attachment:trac_9828-scripts_hudson.patch] to the scripts repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9828
 

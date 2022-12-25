@@ -4,6 +4,7 @@ archive/issues_009114.json:
 ```json
 {
     "body": "Assignee: Simon King\n\nKeywords: documentation, infinite polyonomial ring, symmetric reduction\n\nAt #9108, it was reported that the doc tests for symmetric ideals time out on some machines. As a quick solution, it was suggested to simply mark them as 'long'.\n\nHere, I replace the offensive test (it is only one) by something more easy, that is still instructive.\n\nAt this occasion, I tried to improve other aspects of the doc strings as well, e.g., I tried to shorten the lines and to adhere to the standards in describing optional arguments.\n\nThe attached patch is relative to #9108, which already has a positive review. The new patch replaces the doc test that was marked 'long' in #9108.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9114\n\n",
+    "closed_at": "2010-07-21T01:45:27Z",
     "created_at": "2010-06-02T11:01:58Z",
     "labels": [
         "component: commutative algebra",

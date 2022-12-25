@@ -3,7 +3,7 @@
 archive/issues_009402.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @alexjbest\n\nKeywords: Elliptic Curves, L-series,\n\nThis patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9402\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @alexjbest\n\nKeywords: Elliptic Curves, lseries, dokchitser\n\nThis patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series. \n\nLink to purplesage version: https://github.com/williamstein/psage/tree/master/psage/ellcurve/lseries\n\nIssue created by migration from https://trac.sagemath.org/ticket/9402\n\n",
     "created_at": "2010-07-01T16:24:25Z",
     "labels": [
         "component: elliptic curves"
@@ -19,9 +19,11 @@ Assignee: @JohnCremona
 
 CC:  @alexjbest
 
-Keywords: Elliptic Curves, L-series,
+Keywords: Elliptic Curves, lseries, dokchitser
 
-This patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series.
+This patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series. 
+
+Link to purplesage version: https://github.com/williamstein/psage/tree/master/psage/ellcurve/lseries
 
 Issue created by migration from https://trac.sagemath.org/ticket/9402
 

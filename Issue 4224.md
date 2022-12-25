@@ -1,16 +1,17 @@
-# Issue 4224: small error in new question-mark interval printing
+# Issue 4224: [with patch, positive review] small error in new question-mark interval printing
 
 archive/issues_004224.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @jasongrout\n\nSome intervals were printing incorrectly in question-mark style (the printed result didn't always include the lower bound of the interval), as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/844cde94499c42a1#\n\n(Thanks to Pong for reporting the problem, and Jason Grout for bringing it to my attention!)\n\nIt turns out that this is a single-character fix: I had RNDN (round-to-nearest) where I needed RNDD (round-down).  Unfortunately, lots of doctests recorded incorrect printing, so the actual patch is almost entirely doctest fixes.\n\nThis patch against 3.1.2 passes -testall.  I hand-checked several (but not all) of the doctest changes against .str(style='brackets').\n\nIssue created by migration from https://trac.sagemath.org/ticket/4224\n\n",
+    "closed_at": "2008-10-01T11:30:39Z",
     "created_at": "2008-09-30T19:09:41Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "small error in new question-mark interval printing",
+    "title": "[with patch, positive review] small error in new question-mark interval printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4224",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,15 +1,16 @@
-# Issue 6588: Root systems: categorification
+# Issue 6588: Categories for root systems and many misc improvements
 
 archive/issues_006588.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat mshimo@math.vt.edu\n\nKeywords: root systems, categories\n\nReplace the abstract classes in RootSystems (like RootLatticeRealization) by categories.\n\nUse it to implement parabolic sub-rootsystems, and parabolic Weyl subgroups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6588\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat mshimo@math.vt.edu\n\nKeywords: root systems, categories\n\nNew Features:\n\n```\n- Extended weight lattice/space for affine types\n- coxeter_matrix and coxeter_diagram (for crystallographic types)\n- Embeddings of the root lattice/space in root lattice realizations\n- Embeddings of the weight lattice/space in weight lattice realizations\n- Partial conversion from the root space to the root lattice\n- Iterator for any Coxeter group, and weak order ideals thereof\n- Facade option for weak_poset's and bruhat_poset's of finite coxeter groups\n- weak_poset's of finite coxeter groups are lattices; added link weak_lattice -> weak_poset\n  (courtesy of Christian Stump)\n- Enumerated set for grassmannian elements, and is_grasmmannian test\n- Added method register_as_conversion to morphisms\n```\n\nRefactoring:\n\n```\n- RootLatticeRealization and WeightLatticeRealization are now categories\n- Use abstract_methods where appropriate\n- Cleanup of an_element\n- to_coroot_lattice_morphism: renamed to to_coroot_lattice_space, and\n  moved from RootLatticeRealization to RootSpace (it does not make\n  sense for, e.g., the weight lattice).\n- Moved the implementation of associated_coroot in root_lattice_realization to root_space where it belongs\n```\n\nDoc, tests and bug fixes:\n\n```\n- 100% doctests on sage.combinat.root_system, except for weyl_group and weyl_characters\n- 100% doctests on CoxeterGroups\n- Add most modules in sage.combinat.root_system to the reference manual and improved the quickref\n- Misc doc fixes in the above modules\n- Add minimal documentation to AffineWeylGroups\n- Added systematic tests for associated_coroot\n- Fixed further missing features revealed by this test:\n  - reducible Cartan types were not seen as finite/simply laced/crystallographic as appropriate\n  - symmetrizer needed to be generalized to reducible cartan types (including D2)\n  - the relabelling for reducible cartan types was broken for affine types\n- More tests for scalar products\n- Added systematic consistency check between the simple_root and simple_roots methods\n- same thing for fundamental_weight and fundamental_weights\n- Fixed a SL vs GL glitch when obtaining simple roots for reducible cartan types revealed by the above\n- Fixed imports (extraneous ones, and a missing one reported by M. Shimozono and others)\n```\n\nApply: [attachment:trac_6588-categories-root_systems-nt.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6588\n\n",
+    "closed_at": "2012-03-23T15:18:56Z",
     "created_at": "2009-07-22T11:54:48Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Root systems: categorification",
+    "title": "Categories for root systems and many misc improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6588",
     "user": "https://github.com/nthiery"
@@ -21,9 +22,56 @@ CC:  sage-combinat mshimo@math.vt.edu
 
 Keywords: root systems, categories
 
-Replace the abstract classes in RootSystems (like RootLatticeRealization) by categories.
+New Features:
 
-Use it to implement parabolic sub-rootsystems, and parabolic Weyl subgroups.
+```
+- Extended weight lattice/space for affine types
+- coxeter_matrix and coxeter_diagram (for crystallographic types)
+- Embeddings of the root lattice/space in root lattice realizations
+- Embeddings of the weight lattice/space in weight lattice realizations
+- Partial conversion from the root space to the root lattice
+- Iterator for any Coxeter group, and weak order ideals thereof
+- Facade option for weak_poset's and bruhat_poset's of finite coxeter groups
+- weak_poset's of finite coxeter groups are lattices; added link weak_lattice -> weak_poset
+  (courtesy of Christian Stump)
+- Enumerated set for grassmannian elements, and is_grasmmannian test
+- Added method register_as_conversion to morphisms
+```
+
+Refactoring:
+
+```
+- RootLatticeRealization and WeightLatticeRealization are now categories
+- Use abstract_methods where appropriate
+- Cleanup of an_element
+- to_coroot_lattice_morphism: renamed to to_coroot_lattice_space, and
+  moved from RootLatticeRealization to RootSpace (it does not make
+  sense for, e.g., the weight lattice).
+- Moved the implementation of associated_coroot in root_lattice_realization to root_space where it belongs
+```
+
+Doc, tests and bug fixes:
+
+```
+- 100% doctests on sage.combinat.root_system, except for weyl_group and weyl_characters
+- 100% doctests on CoxeterGroups
+- Add most modules in sage.combinat.root_system to the reference manual and improved the quickref
+- Misc doc fixes in the above modules
+- Add minimal documentation to AffineWeylGroups
+- Added systematic tests for associated_coroot
+- Fixed further missing features revealed by this test:
+  - reducible Cartan types were not seen as finite/simply laced/crystallographic as appropriate
+  - symmetrizer needed to be generalized to reducible cartan types (including D2)
+  - the relabelling for reducible cartan types was broken for affine types
+- More tests for scalar products
+- Added systematic consistency check between the simple_root and simple_roots methods
+- same thing for fundamental_weight and fundamental_weights
+- Fixed a SL vs GL glitch when obtaining simple roots for reducible cartan types revealed by the above
+- Fixed imports (extraneous ones, and a missing one reported by M. Shimozono and others)
+```
+
+Apply: [attachment:trac_6588-categories-root_systems-nt.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6588
 

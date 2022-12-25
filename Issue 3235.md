@@ -1,16 +1,17 @@
-# Issue 3235: cygwin -- mpfi; get it to work with Cygwin by fixing configure.ac
+# Issue 3235: [with patch, positive review] cygwin -- mpfi; get it to work with Cygwin by fixing configure.ac
 
 archive/issues_003235.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee also #3188.\n\nThe spkg:\n\n  http://sage.math.washington.edu/home/was/cygwin/mpfi-1.3.4-cvs20071125.p6.spkg\n\nSEE THE NOTES in the log.  Note that src/auto-conf-stuff is also changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3235\n\n",
+    "closed_at": "2008-05-18T17:06:04Z",
     "created_at": "2008-05-17T03:55:33Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "cygwin -- mpfi; get it to work with Cygwin by fixing configure.ac",
+    "title": "[with patch, positive review] cygwin -- mpfi; get it to work with Cygwin by fixing configure.ac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3235",
     "user": "https://github.com/williamstein"

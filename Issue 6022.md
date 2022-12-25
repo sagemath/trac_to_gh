@@ -1,16 +1,17 @@
-# Issue 6022: [with patch, needs review] latex.py: if dvipng fails, use dvips and convert instead
+# Issue 6022: [with patch, positive review] latex.py: if dvipng fails, use dvips and convert instead
 
 archive/issues_006022.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nOn systems where dvipng is installed: If in a %latex cell, dvipng fails to produce a good picture, you get basically nothing.  With this patch, this failure is detected, and dvips and convert are then used instead. The failure is detected by running dvipng with the '--picky' option; with this turned on, if dvipng produces any warnings or errors, no png file is produced.  The code then sees if there is a png file; if not, it runs dvips and convert.\n\nThis patch also fixes a long-standing complaint of William's: now when there is a problem in a %latex cell, the .log file is printed automatically, instead of just printing the message \"An error occurred.\"\n\nApply on top of the patch at #6012.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6022\n\n",
+    "closed_at": "2009-05-13T18:12:51Z",
     "created_at": "2009-05-11T22:50:17Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] latex.py: if dvipng fails, use dvips and convert instead",
+    "title": "[with patch, positive review] latex.py: if dvipng fails, use dvips and convert instead",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6022",
     "user": "https://github.com/jhpalmieri"

@@ -1,15 +1,16 @@
-# Issue 4779: [with patch; not ready for review] make function for creating random rings and running automated testing on them
+# Issue 4779: [with patch, positive review] make function for creating random rings and running automated testing on them
 
 archive/issues_004779.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis will uncover numerous bugs.  It already has. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4779\n\n",
+    "closed_at": "2009-02-20T05:53:07Z",
     "created_at": "2008-12-13T02:57:56Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch; not ready for review] make function for creating random rings and running automated testing on them",
+    "title": "[with patch, positive review] make function for creating random rings and running automated testing on them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4779",
     "user": "https://github.com/williamstein"

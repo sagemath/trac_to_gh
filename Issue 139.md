@@ -1,16 +1,17 @@
-# Issue 139: automatic dependency checking for pyrex files
+# Issue 139: automatic dependency checking for pyrex files  (implemented long ago--closed now)
 
 archive/issues_000139.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAdd code to devel/sage/setup.py so that a Pyrex file is pyrexed if it\nchanges *or* if any pxd file that it cimports changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/139\n\n",
+    "closed_at": "2008-02-27T12:21:18Z",
     "created_at": "2006-10-20T01:08:54Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "automatic dependency checking for pyrex files",
+    "title": "automatic dependency checking for pyrex files  (implemented long ago--closed now)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/139",
     "user": "https://github.com/williamstein"

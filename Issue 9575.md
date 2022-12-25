@@ -4,6 +4,7 @@ archive/issues_009575.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis patch adds the function ``grundy_coloring``, which computes the worst case of a first-fit coloring algorithm. Here are some explanations from the function's help :\n\n    A first-fit coloring is obtained by sequentially coloring the\n    vertices of a graph, assigning them the smallest color not already\n    assigned to one of its neighbors. The result is clearly a proper\n    coloring, which usually requires much more colors than an optimal\n    vertex coloring of the graph, and heavily depends on the ordering\n    of the vertices.\n\n    The number of colors required by the worst-case application of\n    this algorithm on a graph `G` is called the Grundy number, written\n    `\\Gamma (G)`.\n\n    Equivalent formulation :\n\n    Equivalently, a Grundy coloring is a proper vertex coloring such\n    that any vertex colored with `i` has, for every `j<i`, a neighbor\n    colored with `j`. This can define a Linear Program, which is used\n    here to compute the Grundy number of a graph.\n\nNathann\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9575\n\n",
+    "closed_at": "2010-08-09T09:46:18Z",
     "created_at": "2010-07-22T06:58:15Z",
     "labels": [
         "component: graph theory"

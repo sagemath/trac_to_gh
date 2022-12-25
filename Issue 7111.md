@@ -4,6 +4,7 @@ archive/issues_007111.json:
 ```json
 {
     "body": "Assignee: tbd\n\nOn many platforms this times out:\n\n```\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [1800.1 s]\n\nThe test that fails with a timeout is:\n\nsage.groups.perm_gps.partn_ref.refinement_matrices.random_tests(180.0, 100, 200, 40)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7111\n\n",
+    "closed_at": "2009-11-05T03:31:25Z",
     "created_at": "2009-10-04T17:16:56Z",
     "labels": [
         "component: doctest coverage",

@@ -1,15 +1,16 @@
-# Issue 3724: [with patch, depends on other ticket] faster hashs for Matrix_mod2_dense
+# Issue 3724: faster hashs for Matrix_mod2_dense
 
 archive/issues_003724.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  simonking\n\nKeywords: m4ri, hash, matrix\n\nSimon King requested faster hashing for matrices over GF(2). This patch implements it, but depends on #3324 and an updated M4RI.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3724\n\n",
+    "closed_at": "2008-08-27T19:51:18Z",
     "created_at": "2008-07-25T12:08:04Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, depends on other ticket] faster hashs for Matrix_mod2_dense",
+    "title": "faster hashs for Matrix_mod2_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3724",
     "user": "https://github.com/malb"

@@ -1,71 +1,68 @@
-# Issue 5200: [with patch, needs review] subsets and subwords bug fix + improvements.
+# Issue 5200: [with patch, positive review] subsets and subwords bug fix + improvements.
 
 archive/issues_005200.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: subsets, subwords\n\nThis patches deals with several issues concerning subwords and subsets:\n1. It implements subsets for finite multisets (sets with repetitions).\n   Before the patch:\n\n```\nsage: Subsets([2,2,3]).list()\n[{}, {2}, {3}, {2, 3}]\n```\n     After:\n\n```\nsage: Subsets([2,2,3]).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```\n1. It implement `__contains__` which was missing for subsets and subwords:\n   Before:\n\n```\nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n     After:\n\n```\nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st\nTrue\n```\n1. It fixes a bug in smallest_positions:\n   Before:\n\n```\nsage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])\n[4, 4, 4]\n```\n     After:\n\n```\nsage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])\nFalse\n```\n     which means that 113 is not a subword of 243312. \n4. It finally improves the doc and the tests.\n\nSince this is my first trac submission, any comment about this text or the patch is strongly welcome...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5200\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: subsets, subwords\n\nThis patches improves subwords and subsets and deals with several issues: \n1. It implements subsets for finite multisets (sets with repetitions). \n\n``` \nsage: Subsets([2,2,3], multiset=True).list() \n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]] \n``` \n1. It implement `__contains__` which was missing for subsets and subwords: \n   Before: \n\n``` \nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st \n--------------------------------------------------------------------------- \nNotImplementedError                       Traceback (most recent call last) \n``` \n     After: \n\n``` \nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st \nTrue \n``` \n1. It fixes a bug in smallest_positions: \n   Before: \n\n``` \nsage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3]) \n[4, 4, 4] \n``` \n     After: \n\n``` \nsage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3]) \nFalse \n``` \n     which means that 113 is not a subword of 243312.  \n4. It finally improves the doc and the tests. \n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5200\n\n",
+    "closed_at": "2009-03-25T06:51:21Z",
     "created_at": "2009-02-07T14:02:38Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] subsets and subwords bug fix + improvements.",
+    "title": "[with patch, positive review] subsets and subwords bug fix + improvements.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5200",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 
 Keywords: subsets, subwords
 
-This patches deals with several issues concerning subwords and subsets:
-1. It implements subsets for finite multisets (sets with repetitions).
-   Before the patch:
+This patches improves subwords and subsets and deals with several issues: 
+1. It implements subsets for finite multisets (sets with repetitions). 
 
-```
-sage: Subsets([2,2,3]).list()
-[{}, {2}, {3}, {2, 3}]
-```
-     After:
+``` 
+sage: Subsets([2,2,3], multiset=True).list() 
+[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]] 
+``` 
+1. It implement `__contains__` which was missing for subsets and subwords: 
+   Before: 
 
-```
-sage: Subsets([2,2,3]).list()
-[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]
-```
-1. It implement `__contains__` which was missing for subsets and subwords:
-   Before:
+``` 
+sage: st = Subsets([1,2,2,3]); Set([1,2]) in st 
+--------------------------------------------------------------------------- 
+NotImplementedError                       Traceback (most recent call last) 
+``` 
+     After: 
 
-```
-sage: st = Subsets([1,2,2,3]); Set([1,2]) in st
----------------------------------------------------------------------------
-NotImplementedError                       Traceback (most recent call last)
-```
-     After:
+``` 
+sage: st = Subsets([1,2,2,3]); Set([1,2]) in st 
+True 
+``` 
+1. It fixes a bug in smallest_positions: 
+   Before: 
 
-```
-sage: st = Subsets([1,2,2,3]); Set([1,2]) in st
-True
-```
-1. It fixes a bug in smallest_positions:
-   Before:
+``` 
+sage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3]) 
+[4, 4, 4] 
+``` 
+     After: 
 
-```
-sage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])
-[4, 4, 4]
-```
-     After:
+``` 
+sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3]) 
+False 
+``` 
+     which means that 113 is not a subword of 243312.  
+4. It finally improves the doc and the tests. 
 
-```
-sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])
-False
-```
-     which means that 113 is not a subword of 243312. 
-4. It finally improves the doc and the tests.
+Cheers,
 
-Since this is my first trac submission, any comment about this text or the patch is strongly welcome...
+Florent
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5200
 

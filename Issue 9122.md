@@ -4,6 +4,7 @@ archive/issues_009122.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  mhampton\n\nThis patch implements conversions between simplicial and cubical complexes.  It also implements the following: if you call\n\n```\nsage: SimplicialComplex(X)\n```\nit tests to see if X has a `_simplicial_` method, and if it does, it calls that and returns the answer.  So if anyone wants to convert their favorite Sage object to a simplicial complex, they just have to write a `_simplicial_` method for it; then `SimplicialComplex(blah)` will work.  Same for a `_cubical_` method and cubical complexes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9122\n\n",
+    "closed_at": "2011-06-07T08:34:58Z",
     "created_at": "2010-06-03T04:08:25Z",
     "labels": [
         "component: algebraic topology",

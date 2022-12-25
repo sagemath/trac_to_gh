@@ -1,16 +1,17 @@
-# Issue 2058: [with patch, needs review] PolyBoRi evaluation
+# Issue 2058: [with patch,positive review] PolyBoRi evaluation
 
 archive/issues_002058.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nWith the attached patches `8314.patch` (by burcin) and `8315.patch` (by malb) the following now works:\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: x.subs({x:y})\ny\nsage: x.subs({'x':y})\ny\nsage: x.subs(x=y)\ny\n```\n\nThe implementation is far from being perfect but at least the functionality is there now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2058\n\n",
+    "closed_at": "2008-02-26T21:36:32Z",
     "created_at": "2008-02-05T17:05:33Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] PolyBoRi evaluation",
+    "title": "[with patch,positive review] PolyBoRi evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2058",
     "user": "https://github.com/malb"

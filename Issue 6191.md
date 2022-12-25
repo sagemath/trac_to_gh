@@ -1,16 +1,18 @@
-# Issue 6191: atlas -- make it so SAGE_FAT_BINARY only used on x86
+# Issue 6191: [with patch; positive review] atlas -- make it so SAGE_FAT_BINARY only used on x86
 
 archive/issues_006191.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI couldn't build atlas on itanium and was puzzled why.  It turns out I had the SAGE_FAT_BINARY environ variable set.    This update to the atlas spkg fixes it so that environ variable has no impact on itanium.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6191\n\n",
+    "closed_at": "2009-06-04T06:39:05Z",
     "created_at": "2009-06-02T21:31:27Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "atlas -- make it so SAGE_FAT_BINARY only used on x86",
+    "title": "[with patch; positive review] atlas -- make it so SAGE_FAT_BINARY only used on x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6191",
     "user": "https://github.com/williamstein"

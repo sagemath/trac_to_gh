@@ -1,16 +1,17 @@
-# Issue 6671: [with patch, needs review] Speed of Victor Miller basis
+# Issue 6671: Speed of Victor Miller basis
 
 archive/issues_006671.json:
 ```json
 {
     "body": "Assignee: mraum\n\nCC:  @craigcitro\n\nThis cythonfies Eisenstein series and uses FLINT instead of NTL to speed up Victor Miller basis by factor 2 and Eisenstein series even more.\n\nOld\n\n```\nsage: %timeit eisenstein_series_qexp(18, 1000)\n10 loops, best of 3: 19.3 ms per loop\nsage: %timeit victor_miller_basis(18, 1000)\n10 loops, best of 3: 51 ms per loop\nsage: %timeit victor_miller_basis(18, 10000)\n10 loops, best of 3: 711 ms per loop\nsage: %timeit victor_miller_basis(18, 100000)\n10 loops, best of 3: 9.86 s per loop\n```\n\nNew\n\n```\nsage: %timeit eisenstein_series_qexp(18, 1000)\n100 loops, best of 3: 4.17 ms per loop\nsage: %timeit victor_miller_basis(18, 1000)\n10 loops, best of 3: 22.9 ms per loop\nsage: %timeit victor_miller_basis(18, 10000)\n10 loops, best of 3: 263 ms per loop\nsage: %timeit victor_miller_basis(18, 100000)\n10 loops, best of 3: 4.29 s per loop\n```\n\nThis also has some effect on echelon basis of modular forms.\n\nOld\n\n```\nsage: %time h = ModularForms(1, 18).echelon_basis()[0].qexp(10000)\nCPU times: user 5.00 s, sys: 0.12 s, total: 5.12 s\nWall time: 5.13 s\n```\n\nNew\n\n```\nsage: %time h = ModularForms(1, 18).echelon_basis()[0].qexp(10000)\nCPU times: user 4.70 s, sys: 0.09 s, total: 4.79 s\nWall time: 4.80 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6671\n\n",
+    "closed_at": "2010-04-15T05:55:29Z",
     "created_at": "2009-08-03T21:01:37Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "[with patch, needs review] Speed of Victor Miller basis",
+    "title": "Speed of Victor Miller basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6671",
     "user": "https://trac.sagemath.org/admin/accounts/users/mraum"

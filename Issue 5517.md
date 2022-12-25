@@ -1,22 +1,23 @@
-# Issue 5517: cvxopt-0.9.p7: build failure due to missing perl modules
+# Issue 5517: [with patch; positive review] cvxopt-0.9.p7: build failure due to missing perl modules
 
 archive/issues_005517.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe error reported by `cvxopt-0.9.p7` is:\n\n```\nCan't locate File/Copy.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ./spkg-install line 2.\nBEGIN failed--compilation aborted at ./spkg-install line 2.\n```\nI did have perl installed in the system, but only the `perl-base` package (5.10.0-19, debian/lenny).\n\nHowever, the `File/Copy.pm` module is in `perl-modules` package, which wasn't installed in my system (`perl-base` priority is required, and `perl-modules` priority is standard).\n\nThe workaround was to `apt-get install perl-modules`; maybe this issue with `File/Copy.pm` could be checked in the prereq spkg?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5517\n\n",
+    "body": "Assignee: @tornaria\n\nThe error reported by `cvxopt-0.9.p7` is:\n\n```\nCan't locate File/Copy.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ./spkg-install line 2.\nBEGIN failed--compilation aborted at ./spkg-install line 2.\n```\nI did have perl installed in the system, but only the `perl-base` package (5.10.0-19, debian/lenny).\n\nHowever, the `File/Copy.pm` module is in `perl-modules` package, which wasn't installed in my system (`perl-base` priority is required, and `perl-modules` priority is standard).\n\nThe workaround was to `apt-get install perl-modules`; maybe this issue with `File/Copy.pm` could be checked in the prereq spkg?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5517\n\n",
+    "closed_at": "2009-07-02T21:41:59Z",
     "created_at": "2009-03-14T16:08:06Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "cvxopt-0.9.p7: build failure due to missing perl modules",
+    "title": "[with patch; positive review] cvxopt-0.9.p7: build failure due to missing perl modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5517",
     "user": "https://github.com/tornaria"
 }
 ```
-Assignee: mabshoff
+Assignee: @tornaria
 
 The error reported by `cvxopt-0.9.p7` is:
 

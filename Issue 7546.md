@@ -4,6 +4,7 @@ archive/issues_007546.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein @mwhansen\n\nKeywords: icon, launcher\n\nThere are new icons created Harald Schilly, so I thought I would take this opportunity to update the OS X launcher to use them and also make it easier to update in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7546\n\n",
+    "closed_at": "2009-12-09T02:41:13Z",
     "created_at": "2009-11-27T20:43:23Z",
     "labels": [
         "component: user interface",

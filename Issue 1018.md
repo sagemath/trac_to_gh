@@ -1,22 +1,23 @@
-# Issue 1018: Change prod() to used balanced tree
+# Issue 1018: [with patch] Change prod() to used balanced tree
 
 archive/issues_001018.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nComputing a*b*c*d as (a*b)*(c*d) rather than ((a*b)*c)*d can take better advantage of asymptotically fast multiplication. On the other hand the latter can take better advantage of inplace operators and has less overhead. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1018\n\n",
+    "body": "Assignee: @robertwb\n\nComputing a*b*c*d as (a*b)*(c*d) rather than ((a*b)*c)*d can take better advantage of asymptotically fast multiplication. On the other hand the latter can take better advantage of inplace operators and has less overhead. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1018\n\n",
+    "closed_at": "2007-10-28T18:08:31Z",
     "created_at": "2007-10-28T08:09:45Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "Change prod() to used balanced tree",
+    "title": "[with patch] Change prod() to used balanced tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1018",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 Computing a*b*c*d as (a*b)*(c*d) rather than ((a*b)*c)*d can take better advantage of asymptotically fast multiplication. On the other hand the latter can take better advantage of inplace operators and has less overhead. 
 

@@ -1,9 +1,10 @@
-# Issue 3616: flint hangs on itanium
+# Issue 3616: [with spkg, positive review] flint hangs on itanium
 
 archive/issues_003616.json:
 ```json
 {
     "body": "Assignee: somebody\n\nUsing sage-3.0.4.rc0 on ia64 SUSE we have:\n\n```\n            sage: P.<x> = PolynomialRing(ZZ)\n            sage: F = (x^2 + 2)*x^3; G = (x^2+2)*(x-3)\n            sage: g, u, v = F.xgcd(G)\nHANG\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3616\n\n",
+    "closed_at": "2008-07-09T16:22:52Z",
     "created_at": "2008-07-08T19:13:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_003616.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "flint hangs on itanium",
+    "title": "[with spkg, positive review] flint hangs on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3616",
     "user": "https://github.com/williamstein"

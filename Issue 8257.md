@@ -4,6 +4,7 @@ archive/issues_008257.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe gd-2.0.35.p4 spkg fails to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8257\n\n",
+    "closed_at": "2010-05-26T00:55:24Z",
     "created_at": "2010-02-13T20:04:09Z",
     "labels": [
         "component: porting: cygwin",

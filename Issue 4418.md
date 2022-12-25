@@ -1,9 +1,10 @@
-# Issue 4418: typos in files under crypto/mq
+# Issue 4418: [with patch, positive review] typos in files under crypto/mq
 
 archive/issues_004418.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @malb\n\nKeywords: crypto/mq\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4418\n\n",
+    "closed_at": "2008-11-01T21:01:28Z",
     "created_at": "2008-11-01T09:45:42Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004418.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "typos in files under crypto/mq",
+    "title": "[with patch, positive review] typos in files under crypto/mq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4418",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

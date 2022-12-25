@@ -1,16 +1,16 @@
-# Issue 3435: physically delete GSL BLAS so that nothing can link against it
+# Issue 3435: Physically delete GSL BLAS so that nothing can link against it
 
 archive/issues_003435.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @slel\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3435\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @slel\n\nKeywords: blas\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3435\n\n",
+    "closed_at": "2019-02-26T13:58:00Z",
     "created_at": "2008-06-16T00:34:34Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "physically delete GSL BLAS so that nothing can link against it",
+    "title": "Physically delete GSL BLAS so that nothing can link against it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3435",
     "user": "https://github.com/mwhansen"
@@ -19,6 +19,8 @@ archive/issues_003435.json:
 Assignee: mabshoff
 
 CC:  @slel
+
+Keywords: blas
 
 
 

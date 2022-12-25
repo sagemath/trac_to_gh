@@ -3,7 +3,8 @@
 archive/issues_000646.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
+    "body": "Assignee: @robertwb\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
+    "closed_at": "2007-09-13T18:20:18Z",
     "created_at": "2007-09-13T05:42:53Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_000646.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 ```
 ---------- Forwarded message ----------

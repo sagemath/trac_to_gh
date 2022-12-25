@@ -1,16 +1,17 @@
-# Issue 8237: Sage does not recognize Maxima's complex ininity
+# Issue 8237: Sage does not recognize Maxima's complex infinity
 
 archive/issues_008237.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nAs subject says:\n\n```\nsage: maxima('inf').sage()\n+Infinity\nsage: maxima('infinity').sage()\n+Infinity\n```\n\nFrom Maxima manual\n\n```\nConstant: inf\n    inf represents real positive infinity.\n\nConstant: infinity\n    infinity represents complex infinity.\n\nConstant: minf\n    minf represents real minus (i.e., negative) infinity. \n```\nAs a cosequence, Sage fails to evaluate limit of 1/x at x=0. Maxima gives correct result (complex infinity)\n\n```\nsage: maxima('limit(1/x,x,0)')\ninfinity\nsage: maxima('limit(1/x,x,0)').sage()\n+Infinity\nsage: limit(1/x,x=0)\n+Infinity\nsage: maxima('limit(1/x,x,0,plus)')\ninf\nsage: maxima('limit(1/x,x,0,plus)').sage()\n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8237\n\n",
+    "closed_at": "2010-05-08T22:09:54Z",
     "created_at": "2010-02-11T17:09:35Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "Sage does not recognize Maxima's complex ininity",
+    "title": "Sage does not recognize Maxima's complex infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8237",
     "user": "https://github.com/robert-marik"

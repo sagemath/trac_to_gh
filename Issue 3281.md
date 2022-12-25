@@ -1,9 +1,10 @@
-# Issue 3281: libecm fails to pbuild
+# Issue 3281: [with patch, positive review] libecm fails to pbuild
 
 archive/issues_003281.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nlibecm was moved without updating pbuild and thus pbuild fails to compile sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3281\n\n",
+    "closed_at": "2008-05-23T16:36:32Z",
     "created_at": "2008-05-23T16:30:17Z",
     "labels": [
         "component: pbuild",
@@ -11,7 +12,7 @@ archive/issues_003281.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "libecm fails to pbuild",
+    "title": "[with patch, positive review] libecm fails to pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3281",
     "user": "https://github.com/garyfurnish"

@@ -1,15 +1,16 @@
-# Issue 8625: plot_scalar_field (a scalar version of plot_vector_field)
+# Issue 8625: Make contour_plot choose the contour levels avoiding poles
 
 archive/issues_008625.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: scalar,plot\n\nThis should be a function that plots a two variable funtion as a group of isolines along a given place of the xy plane.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8625\n\n",
+    "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: scalar,plot\n\nAt this point contours of a function with poles get too concentrated near the poles. I'm adding a screenshot to exemplify the following code:\n\n```\nvar('x y x0 y0 q')\nR=((x-x0)^2+(y-y0)^2)^(1/2)\nfield=q/R\nq1=field(x0=1,y0=1,q=1)\nq2=field(x0=-1,y0=-1,q=-1)\ncontour_plot(q1+q2,(x,-2,2),(y,-2,2),aspect_ratio=1,fill=False,labels=True,contours=20)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8625\n\n",
     "created_at": "2010-03-29T18:46:11Z",
     "labels": [
-        "component: graphics"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "plot_scalar_field (a scalar version of plot_vector_field)",
+    "title": "Make contour_plot choose the contour levels avoiding poles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8625",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
@@ -21,7 +22,16 @@ CC:  @jasongrout
 
 Keywords: scalar,plot
 
-This should be a function that plots a two variable funtion as a group of isolines along a given place of the xy plane.
+At this point contours of a function with poles get too concentrated near the poles. I'm adding a screenshot to exemplify the following code:
+
+```
+var('x y x0 y0 q')
+R=((x-x0)^2+(y-y0)^2)^(1/2)
+field=q/R
+q1=field(x0=1,y0=1,q=1)
+q2=field(x0=-1,y0=-1,q=-1)
+contour_plot(q1+q2,(x,-2,2),(y,-2,2),aspect_ratio=1,fill=False,labels=True,contours=20)
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8625
 

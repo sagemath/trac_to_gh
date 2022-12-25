@@ -1,16 +1,17 @@
-# Issue 6071: Weight 1 Eisenstein series
+# Issue 6071: [with patch, positive review] Weight 1 Eisenstein series
 
 archive/issues_006071.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nComputing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6071\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nKeywords: eisenstein series\n\nComputing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6071\n\n",
+    "closed_at": "2009-07-23T03:10:04Z",
     "created_at": "2009-05-18T15:20:16Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Weight 1 Eisenstein series",
+    "title": "[with patch, positive review] Weight 1 Eisenstein series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6071",
     "user": "https://github.com/loefflerd"
@@ -19,6 +20,8 @@ archive/issues_006071.json:
 Assignee: @loefflerd
 
 CC:  @williamstein
+
+Keywords: eisenstein series
 
 Computing weight 1 cusp forms is hard (cf. #2330), but computing weight 1 Eisenstein series isn't; only very slight modifications are needed to the code we already have.
 

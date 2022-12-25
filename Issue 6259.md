@@ -1,9 +1,10 @@
-# Issue 6259: [with patch, needs review] Fix spurious file creation in sage/server/support.py
+# Issue 6259: [with patch, positive review] Fix spurious file creation in sage/server/support.py
 
 archive/issues_006259.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @mwhansen @ncalexan\n\nThe file above generates a file in the current directory when running doctests on it; the attached patch just moves that to an appropriate temp directory. (That is, it switches the doctest, not the actual code.) \n\nI'm adding two people to the cc in the hopes that someone can give this a three-second glance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6259\n\n",
+    "closed_at": "2009-06-12T07:55:15Z",
     "created_at": "2009-06-11T09:40:40Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_006259.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Fix spurious file creation in sage/server/support.py",
+    "title": "[with patch, positive review] Fix spurious file creation in sage/server/support.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6259",
     "user": "https://github.com/craigcitro"

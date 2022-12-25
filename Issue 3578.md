@@ -1,16 +1,17 @@
-# Issue 3578: Highlighting selected button in selector
+# Issue 3578: [with patch, positive review] Highlighting selected button in selector
 
 archive/issues_003578.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nButtons in selector (when enabled) are highlighted when selected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3578\n\n",
+    "closed_at": "2008-07-07T02:21:36Z",
     "created_at": "2008-07-07T00:04:28Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Highlighting selected button in selector",
+    "title": "[with patch, positive review] Highlighting selected button in selector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3578",
     "user": "https://github.com/itolkov"

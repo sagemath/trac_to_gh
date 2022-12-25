@@ -3,10 +3,12 @@
 archive/issues_007836.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @rlmill\n\nFrom #7595:\n\nReplying to [comment:10 cremona]:\n> I have some problems with the CRT* functions though.\n> \n> 1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.\n> \n> 2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).\n> \n> Of course, I don't think that these issues should delay the current patch, but deserve a ticket of their own to make sure they are tided up.\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7836\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @rlmill\n\nFrom #7595:\n\n```\n> I have some problems with the CRT* functions though.\n> \n>    1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.\n> \n>    2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).\n> \n> Of course, I don't think that these issues should delay the current patch, but deserve a ticket of their own to make sure they are tided up.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7836\n\n",
+    "closed_at": "2010-01-13T05:22:34Z",
     "created_at": "2010-01-03T21:37:37Z",
     "labels": [
         "component: basic arithmetic",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
@@ -22,16 +24,15 @@ CC:  @JohnCremona @rlmill
 
 From #7595:
 
-Replying to [comment:10 cremona]:
+```
 > I have some problems with the CRT* functions though.
 > 
-> 1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.
+>    1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.
 > 
-> 2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).
+>    2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).
 > 
 > Of course, I don't think that these issues should delay the current patch, but deserve a ticket of their own to make sure they are tided up.
-
-}}}
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7836
 

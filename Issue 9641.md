@@ -3,10 +3,11 @@
 archive/issues_009641.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @craigcitro\n\nAll files are named .sage/tmp/filename. At high parallelism, there are often conflicts (e.g. all.py, proof.py, ...) that result in untested code and spurious errors. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9641\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @craigcitro\n\nAll files are named .sage/tmp/filename. At high parallelism, there are often conflicts (e.g. all.py, proof.py, ...) that result in untested code and spurious errors. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9641\n\n",
+    "closed_at": "2011-01-11T06:17:41Z",
     "created_at": "2010-07-29T21:34:32Z",
     "labels": [
-        "component: algebra",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009641.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @aghitza
+Assignee: mvngu
 
 CC:  @craigcitro
 

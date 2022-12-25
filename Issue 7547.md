@@ -3,7 +3,8 @@
 archive/issues_007547.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nIt seems to be the main bottleneck in graph plotting!\nThis patch cuts down by 30% the time for `sage -t graph.py` on my machine... (and doctests of course still pass)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7547\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis patch cuts down by 30% the time for sage -t graph.py on my machine... (and doctests of course still pass) \n\nIssue created by migration from https://trac.sagemath.org/ticket/7547\n\n",
+    "closed_at": "2009-11-29T06:02:01Z",
     "created_at": "2009-11-28T02:14:34Z",
     "labels": [
         "component: graph theory"
@@ -19,8 +20,7 @@ Assignee: @rlmill
 
 CC:  @nathanncohen
 
-It seems to be the main bottleneck in graph plotting!
-This patch cuts down by 30% the time for `sage -t graph.py` on my machine... (and doctests of course still pass)
+This patch cuts down by 30% the time for sage -t graph.py on my machine... (and doctests of course still pass) 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7547
 

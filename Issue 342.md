@@ -4,6 +4,7 @@ archive/issues_000342.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nFound by: Pablo De Napoli\n> Another problem that i've found is that calling ComplexNumber (for example\n> by)\n> \n> ComplexNumber(2,3)\n> \n> causes a segmentation fault.\n> (using sage-2.4.1.2)\n \nThat's definitely a bug.   It's now trac #342.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/342\n\n",
+    "closed_at": "2007-08-18T19:58:34Z",
     "created_at": "2007-04-01T14:47:38Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,9 +1,10 @@
-# Issue 4595: typos in files under sage/calculus
+# Issue 4595: [with patch, positive review] typos in files under sage/calculus
 
 archive/issues_004595.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: typos, calculus\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4595\n\n",
+    "closed_at": "2008-11-23T07:22:28Z",
     "created_at": "2008-11-23T06:56:52Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004595.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "typos in files under sage/calculus",
+    "title": "[with patch, positive review] typos in files under sage/calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4595",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

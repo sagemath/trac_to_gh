@@ -1,16 +1,17 @@
-# Issue 900: both squarefree_decomposition() and square_free_decomposition() methods exist
+# Issue 900: [with patch] both squarefree_decomposition() and square_free_decomposition() methods exist
 
 archive/issues_000900.json:
 ```json
 {
     "body": "Assignee: somebody\n\n`ZZ['x']` polynomials have a square_free_decomposition() method; all polynomials have a squarefree_decomposition() method (as of 2.8.7).  (Yes, I'm the one who added both of them.  I don't know what I was thinking.)\n\nI have a patch for this which I will attach as soon as -testall is finished.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/900\n\n",
+    "closed_at": "2007-10-21T01:10:34Z",
     "created_at": "2007-10-14T23:14:12Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "both squarefree_decomposition() and square_free_decomposition() methods exist",
+    "title": "[with patch] both squarefree_decomposition() and square_free_decomposition() methods exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/900",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

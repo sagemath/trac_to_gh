@@ -3,7 +3,8 @@
 archive/issues_007601.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the function edge_connectivity for Graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7601\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the function edge_connectivity for Graphs.\n\nYou could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7601\n\n",
+    "closed_at": "2009-12-19T20:35:32Z",
     "created_at": "2009-12-04T08:42:25Z",
     "labels": [
         "component: graph theory"
@@ -18,6 +19,8 @@ archive/issues_007601.json:
 Assignee: @rlmill
 
 As the title says, this patch implements the function edge_connectivity for Graphs.
+
+You could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7601
 

@@ -1,15 +1,16 @@
-# Issue 4627: CRT_list in HNF dominates computation
+# Issue 4627: [with patch, with positive review] CRT_list in HNF dominates computation
 
 archive/issues_004627.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: hermite normal form hnf gcd\n\n```\nOn 4-Sep-08, at 3:57 PM, Clement Pernet wrote:\n\nHi,\n\nNo problem, the patch looks fine, and I will run some testings to check\nit. Nick, are you going to open a ticket?\n\n--\nCl\u00e9ment\n\nWilliam Stein a \u00e9crit :\nOn Wed, Sep 3, 2008 at 4:39 PM, Nick Alexander <ncalexander@gmail.com> wrote:\nHi William,\n\nThe attached patch prevents recomputing a CRT a number of times when doing a\nmulti modular Hermite normal form.  I was finding that this CRT computation\nwas taking *much* longer than the rest of the calculation of a midsize HNF\n(40 x 40).  Has this been addressed?\n\nNo.\n\n Should this be run by Clement and some\nrandomized testing?\n\nYes, definitely.   I've cc'd Clement and included the attachment.\n\n-- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4627\n\n",
+    "closed_at": "2008-11-27T04:48:23Z",
     "created_at": "2008-11-26T19:06:10Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "CRT_list in HNF dominates computation",
+    "title": "[with patch, with positive review] CRT_list in HNF dominates computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4627",
     "user": "https://github.com/ncalexan"

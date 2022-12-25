@@ -1,16 +1,17 @@
-# Issue 4380: Memory Leak in libsingular
+# Issue 4380: [with patch, positive review] fix Memory Leak in libsingular's reduce()
 
 archive/issues_004380.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: memory leak libsingular\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/b997f95c1e2503e0/5db5f9e7d4c8faf2 was discussion about a memory leak. I found a reasonably short bit of code that triggers the leak.\n\nIn `test.pyx`:\n\n```\nfrom sage.all import copy\n\ndef Test(I):\n    R=I.ring()\n    p=R.random_element()\n    J0=list(I.reduced_basis())\n    while(1):\n        J = copy(J0)\n        for i in range(100):\n            q=p.reduce(J)\n            J.append(q)\n```\n\nApparently the memory consumption should not grow, since `J` returns to its original state after finishing the `for` loop. However, the following `Sage` session is leaking (i.e., the memory consumption grows rapidly, and after a few seconds 1GB are filled up):\n\n```\nsage: attach test.pyx\nCompiling /home/king/Projekte/f5/test.pyx...\nsage: from sage.rings.ideal import Cyclic\nsage: R=PolynomialRing(QQ,'x',5)\nsage: I=Cyclic(R).homogenize()\nsage: Test(I)\n```\n\nThe `while` loop comprises\n1. copying of a Sequence (`J0`) of `MPolynomial_libsingular`\n2. reduction of `MPolynomial_libsingular`\n3. appending to a Sequence.\n\nIn one of these three steps must be the leak. I suspect it is the reduction and will try to verify it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4380\n\n",
+    "closed_at": "2008-10-29T12:56:49Z",
     "created_at": "2008-10-29T09:27:48Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Memory Leak in libsingular",
+    "title": "[with patch, positive review] fix Memory Leak in libsingular's reduce()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4380",
     "user": "https://github.com/simon-king-jena"

@@ -1,9 +1,10 @@
-# Issue 4777: Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN
+# Issue 4777: [with patch; with positive review] Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN
 
 archive/issues_004777.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n18:18 < wstein> sage: n = \n3089265681159475043336839581081873360674602365963130114355701114591322241990483812812582393906477998611814245513881\n18:18 < wstein> sage: factor(n)\n18:18 < wstein> 150607571^14\n18:18 < wstein> sage: sage.rings.arith.is_prime_power(n)False\n18:18 < wstein> sage: n.is_prime_power()\n18:18 < wstein> False\n18:18 < wstein> sage: is_prime(150607571)\n18:18 < wstein> True\n18:19 < wstein> Yep, Sage's is_prime_power function is just plain wrong.\n18:19 < wstein> Great.\n18:19 < wstein> I wrote that, I think... :-(\n18:20 < wstein> sage: k = pari(n); k.ispower()\n18:20 < wstein> (2, 1757630701017558763141032341047742794506161527817537960891)\n18:20 < wstein> Oh, it's a bug in pari, actually.\n18:20 < wstein> Since pari's ispower is guaranteed to give the maximal k such that x=n^k according\n18:20 < wstein> to the docs.\n18:20 < wstein> But it doesn't.\n```\n\nPari's docs say this:\n\n```\n    ispower(x,{k},{&n}): true (1) if x is a k-th power, false (0) if not. If n is \n    given and a k-th root was computed in the process, put that in n. If k is \n    omitted, return the maximal k >= 2 such that x = n^k is a perfect power, or 0 \n    if no such k exist.\n```\n\nSo this is a bug in pari.  The short-term solution is to I think just factor that damned number at the end.  This obviously could be slow in general, but at least it will be right.  Plus add a note to the docs and post a bugreport upstream (but check latest svn pari first, since we use an ancient pari).  I've reported bugs in this ispower function in pari before, by the way, so it's a known offender. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4777\n\n",
+    "closed_at": "2008-12-13T10:22:17Z",
     "created_at": "2008-12-13T02:31:36Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_004777.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN",
+    "title": "[with patch; with positive review] Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4777",
     "user": "https://github.com/williamstein"

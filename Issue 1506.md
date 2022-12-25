@@ -1,16 +1,17 @@
-# Issue 1506: ntl spkg -- dumb intentional error during the build
+# Issue 1506: [with spkg] ntl spkg -- dumb intentional error during the build
 
 archive/issues_001506.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is dumb:\n\n```\ndmharvey: i'm building sage-2.9alpha7, and there's a problem in the build log with the NTL build, but the rest of it seems to be going okay (for the moment)\n[06:49am] dmharvey: i686-apple-darwin8-g++-4.0.1: unrecognized option '-shared'\n[06:49am] dmharvey: _main\n[06:49am] dmharvey: ___gmpn_add_n\n[06:49am] dmharvey: ___gmpn_addmul_1\n[06:49am] dmharvey: ___gmpn_divrem_1\n[06:49am] dmharvey: ___gmpn_gcd\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1506\n\n",
+    "closed_at": "2007-12-14T22:28:06Z",
     "created_at": "2007-12-14T17:11:11Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "ntl spkg -- dumb intentional error during the build",
+    "title": "[with spkg] ntl spkg -- dumb intentional error during the build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1506",
     "user": "https://github.com/williamstein"

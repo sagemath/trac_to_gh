@@ -1,22 +1,23 @@
-# Issue 1666: jmol cylinders should use the draw command (rather than be triangulated as a pmesh)
+# Issue 1666: [with patch] jmol cylinders should use the draw command (rather than be triangulated as a pmesh)
 
 archive/issues_001666.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1666\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1666\n\n",
+    "closed_at": "2008-01-03T16:15:41Z",
     "created_at": "2008-01-03T11:30:22Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "jmol cylinders should use the draw command (rather than be triangulated as a pmesh)",
+    "title": "[with patch] jmol cylinders should use the draw command (rather than be triangulated as a pmesh)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1666",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 
 

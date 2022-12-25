@@ -1,16 +1,17 @@
-# Issue 2005: The .sage directory -- adjust permissions
+# Issue 2005: [with patch, with positive review] The .sage directory -- adjust permissions
 
 archive/issues_002005.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2005\n\n",
+    "closed_at": "2008-02-01T02:34:04Z",
     "created_at": "2008-01-31T22:53:47Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "The .sage directory -- adjust permissions",
+    "title": "[with patch, with positive review] The .sage directory -- adjust permissions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2005",
     "user": "https://github.com/williamstein"

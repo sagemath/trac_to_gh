@@ -1,16 +1,17 @@
-# Issue 5422: [with patch, needs review] Quadratic forms polynomial
+# Issue 5422: Quadratic forms polynomial
 
 archive/issues_005422.json:
 ```json
 {
     "body": "Assignee: justin\n\nKeywords: quadratic forms\n\nGiven a quadratic form Q over the ring R of dimension n, this returns the polynomial form in n variables over R.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5422\n\n",
+    "closed_at": "2010-11-11T13:01:38Z",
     "created_at": "2009-03-02T19:25:09Z",
     "labels": [
         "component: quadratic forms",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "[with patch, needs review] Quadratic forms polynomial",
+    "title": "Quadratic forms polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5422",
     "user": "https://github.com/adeines"

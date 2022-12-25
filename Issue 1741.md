@@ -4,6 +4,7 @@ archive/issues_001741.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI have been looking for various problems in zlib that valgrind exposed. Since we do not build with debug info I need to rebuild zlib manually, so fix this in the spkg. An updated spkg with this trivial fix is at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha1/zlib-1.2.3.p3.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1741\n\n",
+    "closed_at": "2008-01-10T06:28:06Z",
     "created_at": "2008-01-10T05:54:59Z",
     "labels": [
         "component: packages: standard",

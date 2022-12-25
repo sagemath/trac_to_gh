@@ -4,6 +4,7 @@ archive/issues_008852.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8852\n\n",
+    "closed_at": "2010-05-25T02:19:11Z",
     "created_at": "2010-05-03T12:27:37Z",
     "labels": [
         "component: porting: cygwin",

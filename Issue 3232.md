@@ -1,21 +1,24 @@
-# Issue 3232: wrap NTL's BKZ
+# Issue 3232: [with patch, positive review] wrap NTL's BKZ
 
 archive/issues_003232.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. \n\n```\n  -- BKZ: Block Korkin-Zolotarev reduction.\n     This is slower, but yields a higher-quality basis,\n     i.e., one with shorter vectors.\n     See the Schnorr-Euchner paper for a description of this.\n     This basically generalizes the LLL reduction condition\n     from blocks of size 2 to blocks of larger size.\n```\n\nIt enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3232\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_malb\n\nThe BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. \n\n```\n  -- BKZ: Block Korkin-Zolotarev reduction.\n     This is slower, but yields a higher-quality basis,\n     i.e., one with shorter vectors.\n     See the Schnorr-Euchner paper for a description of this.\n     This basically generalizes the LLL reduction condition\n     from blocks of size 2 to blocks of larger size.\n```\n\nIt enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3232\n\n",
+    "closed_at": "2008-07-15T03:24:46Z",
     "created_at": "2008-05-16T23:18:54Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "wrap NTL's BKZ",
+    "title": "[with patch, positive review] wrap NTL's BKZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3232",
     "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_malb
 
 The BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. 
 

@@ -4,9 +4,10 @@ archive/issues_007668.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout @fchapoton\n\nThis was requested by a participant at the first Sage Education Day.  I'm putting this in notebook but I really can't think of any appropriate component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7668\n\n",
+    "closed_at": "2020-09-01T15:50:16Z",
     "created_at": "2009-12-11T20:26:54Z",
     "labels": [
-        "component: notebook",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

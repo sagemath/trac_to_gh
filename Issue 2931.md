@@ -1,16 +1,17 @@
-# Issue 2931: [with spkg, needs review] gcc 4.3: fix linbox.spkg compilation
+# Issue 2931: [with spkg, positive review] gcc 4.3: fix linbox.spkg compilation
 
 archive/issues_002931.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nLinbox 1.1.5 is broken with gcc 4.3. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha5/linbox-1.1.5.p3.spkg\n\nfixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2931\n\n",
+    "closed_at": "2008-04-15T10:36:53Z",
     "created_at": "2008-04-15T09:49:36Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg, needs review] gcc 4.3: fix linbox.spkg compilation",
+    "title": "[with spkg, positive review] gcc 4.3: fix linbox.spkg compilation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2931",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

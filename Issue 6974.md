@@ -1,15 +1,17 @@
-# Issue 6974: cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)
+# Issue 6974: [with spkg, positive review] cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)
 
 archive/issues_006974.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe packages are:\n\n   *\n\nIssue created by migration from https://trac.sagemath.org/ticket/6974\n\n",
+    "body": "Assignee: tbd\n\nThe packages are:\n\n* http://wstein.org/home/wstein/patches/libgpg_error-1.6.p2.spkg\n\n* http://wstein.org/home/wstein/patches/gnutls-2.2.1.p3.spkg\n\n* http://wstein.org/home/wstein/patches/python_gnutls-1.1.4.p6.spkg\n\n* http://wstein.org/home/wstein/patches/libgcrypt-1.4.3.p2.spkg\n\n* http://wstein.org/home/wstein/patches/opencdk-0.6.6.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6974\n\n",
+    "closed_at": "2009-09-27T02:58:25Z",
     "created_at": "2009-09-21T02:23:39Z",
     "labels": [
-        "component: porting"
+        "component: porting",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)",
+    "title": "[with spkg, positive review] cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6974",
     "user": "https://github.com/williamstein"
@@ -19,7 +21,15 @@ Assignee: tbd
 
 The packages are:
 
-   *
+* http://wstein.org/home/wstein/patches/libgpg_error-1.6.p2.spkg
+
+* http://wstein.org/home/wstein/patches/gnutls-2.2.1.p3.spkg
+
+* http://wstein.org/home/wstein/patches/python_gnutls-1.1.4.p6.spkg
+
+* http://wstein.org/home/wstein/patches/libgcrypt-1.4.3.p2.spkg
+
+* http://wstein.org/home/wstein/patches/opencdk-0.6.6.p1.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6974
 

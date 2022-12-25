@@ -1,16 +1,17 @@
-# Issue 3130: permgps: added normal_subgroups and fixed image and kernel
+# Issue 3130: [with patch, with positive review, rebased to 3.0.3.a1] permgps: added normal_subgroups and fixed image and kernel
 
 archive/issues_003130.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  cwitty\n\nWhy SAGE doesn't support the computation of normal subgroups has been raised on sage-support. I needed it myself for a research problem so, added it. While constructing an example for the docstring, it dawned on me that image and kernel still only return a string. William Stein and David Kohel suggested that be fixed, maybe 2 years ago now, so I added that. While doctesting, I discovered that derived_series and friends is a random computation. (Very odd that a docstring failure hasn't been triggered until now.) Anyway, some \"# random\" comments were added to fix that.\nFinally, I rearranged the PermutationGroup class methods in a more alphabetical order for easier reading.\n\nPasses sage -testall. The diff file is huge but only because of the reordering of the methods. Really, it is a fairly simple pach.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3130\n\n",
+    "closed_at": "2008-06-09T06:19:34Z",
     "created_at": "2008-05-08T03:57:46Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "permgps: added normal_subgroups and fixed image and kernel",
+    "title": "[with patch, with positive review, rebased to 3.0.3.a1] permgps: added normal_subgroups and fixed image and kernel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3130",
     "user": "https://github.com/wdjoyner"

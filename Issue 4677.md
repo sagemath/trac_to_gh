@@ -3,12 +3,11 @@
 archive/issues_004677.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f(x),(x,-1,1))\n```\nBut this doesn't:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f,(x,-1,1))\nverbose 0 (3633: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3633: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\nThe behavior is the same for f(x)=x^2.\n\nThis is because in the second example \"evaluating\" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4677\n\n",
+    "body": "This works:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f(x),(x,-1,1))\n```\nBut this doesn't:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f,(x,-1,1))\nverbose 0 (3633: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3633: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\nThe behavior is the same for f(x)=x^2.\n\nThis is because in the second example \"evaluating\" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4677\n\n",
     "created_at": "2008-12-02T17:51:07Z",
     "labels": [
         "component: graphics",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Plotting lambda functions",
@@ -17,8 +16,6 @@ archive/issues_004677.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @williamstein
-
 This works:
 
 ```

@@ -4,6 +4,7 @@ archive/issues_001437.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince FLINT builds its test code only once make check is invoked, but the spkg-check script doesn't define a bunch of env variables, the stand alone script fails.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1437\n\n",
+    "closed_at": "2007-12-10T04:14:12Z",
     "created_at": "2007-12-09T16:14:21Z",
     "labels": [
         "component: packages: standard",

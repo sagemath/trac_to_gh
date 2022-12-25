@@ -4,6 +4,7 @@ archive/issues_003958.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\ntry:\n\n```\n@interact\ndef _(a=range_slider(-1,1),b=range_slider(-1,1),c=slider(-1,1),d=slider(-1,1)):\n    pass\n```\nA browser error and a \"truncated output\" error result.  The resulting interact also is missing labels and the \"c\" slider.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3958\n\n",
+    "closed_at": "2008-08-27T00:46:14Z",
     "created_at": "2008-08-26T17:12:49Z",
     "labels": [
         "component: interact",

@@ -1,22 +1,23 @@
-# Issue 3298: Cython warnings for PolyBoRi
+# Issue 3298: [with patch, positive review] Cython warnings for PolyBoRi
 
 archive/issues_003298.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @robertwb @burcin\n\nKeywords: polybori, cython\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.0/devel/sage-main -opbori.pyx\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:40:56: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:41:59: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:200:10: Function signature does not match previous declaration\nFinished updating Cython code (time = 2.520616 seconds)\n```\n\nI couldn't figure out what is wrong. Maybe a false positive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3298\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robertwb @burcin\n\nKeywords: polybori, cython\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.0/devel/sage-main -opbori.pyx\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:40:56: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:41:59: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:200:10: Function signature does not match previous declaration\nFinished updating Cython code (time = 2.520616 seconds)\n```\n\nI couldn't figure out what is wrong. Maybe a false positive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3298\n\n",
+    "closed_at": "2009-01-24T19:13:54Z",
     "created_at": "2008-05-25T13:41:31Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Cython warnings for PolyBoRi",
+    "title": "[with patch, positive review] Cython warnings for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3298",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: cwitty
+Assignee: @burcin
 
 CC:  @robertwb @burcin
 

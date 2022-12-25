@@ -1,22 +1,23 @@
-# Issue 6393: Jacobi sums incorrect when exactly one chacater is trivial
+# Issue 6393: [with patch, positive review] Jacobi sums incorrect when exactly one character is trivial
 
 archive/issues_006393.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nExample:\n\n```\nsage: G=DirichletGroup(5); X=G.list(); Y=X[0]; Z=X[1] \nsage: # Y is trivial and Z is quartic\nsage: sum([Y(x)*Z(1-x) for x in IntegerModRing(5)])\n -1\nsage: # The value -1 above is the correct value of the Jacobi sum J(Y, Z).\nsage: Y.jacobi_sum(Z);    Z.jacobi_sum(Y)\n0\n0\nsage: #The 0 values above are incorrect values of J(Y, Z).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6393\n\n",
+    "body": "Assignee: @craigcitro\n\nExample:\n\n```\nsage: G=DirichletGroup(5); X=G.list(); Y=X[0]; Z=X[1] \nsage: # Y is trivial and Z is quartic\nsage: sum([Y(x)*Z(1-x) for x in IntegerModRing(5)])\n -1\nsage: # The value -1 above is the correct value of the Jacobi sum J(Y, Z).\nsage: Y.jacobi_sum(Z);    Z.jacobi_sum(Y)\n0\n0\nsage: #The 0 values above are incorrect values of J(Y, Z).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6393\n\n",
+    "closed_at": "2009-07-16T21:16:42Z",
     "created_at": "2009-06-24T11:33:13Z",
     "labels": [
-        "component: algebra",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Jacobi sums incorrect when exactly one chacater is trivial",
+    "title": "[with patch, positive review] Jacobi sums incorrect when exactly one character is trivial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6393",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: tbd
+Assignee: @craigcitro
 
 Example:
 

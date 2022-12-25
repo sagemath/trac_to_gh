@@ -1,9 +1,10 @@
-# Issue 6175: [with patch, needs review] change Sage Group to Sage Development Team
+# Issue 6175: [with patch, positive review] change Sage Group to Sage Development Team
 
 archive/issues_006175.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis is a follow-up to #5829; it changes \"The Sage Group\" to \"The Sage Development Team\" in the pdf versions of the various bits of documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6175\n\n",
+    "closed_at": "2009-06-01T02:07:50Z",
     "created_at": "2009-06-01T01:18:54Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006175.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] change Sage Group to Sage Development Team",
+    "title": "[with patch, positive review] change Sage Group to Sage Development Team",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6175",
     "user": "https://github.com/jhpalmieri"

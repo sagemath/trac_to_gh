@@ -4,6 +4,7 @@ archive/issues_009070.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9070\n\n",
+    "closed_at": "2010-05-28T00:59:37Z",
     "created_at": "2010-05-28T00:42:18Z",
     "labels": [
         "component: interfaces",

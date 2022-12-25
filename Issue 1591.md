@@ -1,16 +1,17 @@
-# Issue 1591: cygwin -- immediately terminate the build
+# Issue 1591: cygwin, solaris -- immediately terminate the build
 
 archive/issues_001591.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI thought we already wrote code so building sage on cygwin would *immediately* terminate the build with a \"it won't work\" error.  Same with gcc <= 3.3.  But\nwe keep getting emails like this on sage-support:\n\n```\nI just downloaded sage 2.9 source code tar from http://www.sagemath.org/dist/src/index.html\n\ndid tar xvf on it, then did make.\n\nI get this build error below.\nI am using cygwin\n\n$ uname -a\nCYGWIN_NT-5.1 computer-h20djr 1.5.24(0.156/4/2) 2007-01-31 10:57 i686\nCygwin\n\n$ gcc -v\ngcc version 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)\n\n$ python -v\nPython 2.5 (r25:51908, Mar 13 2007, 08:13:14)\n[GCC 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)] on cygwin\n\n---- part of log file where error occured ---------\n\n gcc -c -DHAVE_CONFIG_H -I. -I. -I.. -D__GMP_WITHIN_GMP -I.. -\nDOPERATION_dive_1\n-m32 -O2 -fomit-frame-pointer -mtune=pentium3 -march=pentium3 tmp-\ndive_1.s -DPIC\n -o .libs/dive_1.o\n/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../i686-pc-cygwin/bin/as:\nBFD 2.17.50\n 20060817 assertion fail /netrel/src/binutils-20060817-1/bfd/coff-\ni386.c:576\ntmp-dive_1.s: Assembler messages:\ntmp-dive_1.s:110: Error: cannot represent relocation type\nBFD_RELOC_386_GOTPC\nmake[4]: *** [dive_1.lo] Error 1\nmake[4]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg/build/gmp-4.2.1.p12/src/mpn'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg/build/gmp-4.2.1.p12/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg/build/gmp-4.2.1.p12/src'\nError building GMP.\n\nreal    1m47.938s\nuser    4m16.002s\nsys     1m1.670s\nsage: An error occurred while installing gmp-4.2.1.p12\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/install.log.\nDescribe you\nr computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/spkg/build/\ngmp-4.2.1.p12 and\ntype 'make'.\nInstead type \"/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/sage -\nsh\"\nin order to set all environment variables correctly, then cd to\n/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/spkg/build/\ngmp-4.2.1.p12\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/gmp-4.2.1.p12] Error 1\nmake[1]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg'\n\nreal    2m4.192s\nuser    4m25.386s\nsys     1m4.705s\n\n\nNasser\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1591\n\n",
+    "closed_at": "2008-01-03T15:21:21Z",
     "created_at": "2007-12-23T14:45:49Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "cygwin -- immediately terminate the build",
+    "title": "cygwin, solaris -- immediately terminate the build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1591",
     "user": "https://github.com/williamstein"

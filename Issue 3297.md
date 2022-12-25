@@ -1,22 +1,25 @@
-# Issue 3297: Make ccdlib produce a shared library
+# Issue 3297: [with proto spkg, needs review, waiting on upstream] Make cddlib produce a shared library
 
 archive/issues_003297.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nTim Abbott made a patch to get cddlib to use libtools and easily\nproduce a shared library. Packaging the change for sage means not \nonly patching several Makefile.am file but also adding a file \nltmain.sh and regenerating configure.in, configure, aclocal.m4\nand several Makefile.in.\nI attach a tarball containing an updated patch folder and also \na patch to spkg-install to use it. The new spkg-install only build\nshared libraries. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3297\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: editor_mabshoff\n\nTim Abbott made a patch to get cddlib to use libtools and easily\nproduce a shared library. Packaging the change for sage means not \nonly patching several Makefile.am file but also adding a file \nltmain.sh and regenerating configure.in, configure, aclocal.m4\nand several Makefile.in.\nI attach a tarball containing an updated patch folder and also \na patch to spkg-install to use it. The new spkg-install only build\nshared libraries. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3297\n\n",
+    "closed_at": "2011-02-24T10:02:30Z",
     "created_at": "2008-05-25T09:19:49Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Make ccdlib produce a shared library",
+    "title": "[with proto spkg, needs review, waiting on upstream] Make cddlib produce a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3297",
     "user": "https://github.com/kiwifb"
 }
 ```
 Assignee: mabshoff
+
+Keywords: editor_mabshoff
 
 Tim Abbott made a patch to get cddlib to use libtools and easily
 produce a shared library. Packaging the change for sage means not 

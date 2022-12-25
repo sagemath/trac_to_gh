@@ -4,6 +4,7 @@ archive/issues_006809.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nImplement a utility abstract_methods_of_class which lists all the optional and mandatory abstract methods of the class.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6809\n\n",
+    "closed_at": "2009-10-19T13:26:02Z",
     "created_at": "2009-08-22T22:57:13Z",
     "labels": [
         "component: misc"

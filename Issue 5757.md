@@ -1,9 +1,10 @@
-# Issue 5757: [with patch, needs review] change nodoctest directive
+# Issue 5757: [with patch, positive review] change nodoctest directive
 
 archive/issues_005757.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nWithout this patch, if the string 'nodoctest' is anywhere in the file, then the file is not doctested.  This changes it to only look at for 'nodoctest' in the first 50 characters of the file.\n\n(This is a patch to the 'scripts' repository.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5757\n\n",
+    "closed_at": "2009-04-13T01:57:07Z",
     "created_at": "2009-04-11T17:47:59Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005757.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] change nodoctest directive",
+    "title": "[with patch, positive review] change nodoctest directive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5757",
     "user": "https://github.com/jhpalmieri"

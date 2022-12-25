@@ -1,15 +1,15 @@
-# Issue 9491: contour plot does not handle transparency
+# Issue 9491: Allow setting alpha (transparency/opacity) for contour_plot
 
 archive/issues_009491.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @slel\n\nThis patch enables an 'opacity' argument to the contour plot function.\n\nDoctesting needs to be done, and a few examples need to be written.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9491\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @slel\n\nKeywords: alpha, transparency, opacity, plot, contour_plot, graphics\n\nThe object of this ticket is to allow an optional argument \"alpha\"\nto set the transparency / opacity for contour_plot, like it exists for\nother types of plots.\n\nAn initial patch enables an 'opacity' argument to the contour_plot function.\nIt should be renamed 'alpha' for consistency with its name elsewhere.\n\nDoctests need to be added, and a few examples need to be written.\n\nRelated tickets and discussions:\n\n- [#23104: implement alpha for streamline plots](https://trac.sagemath.org/ticket/23104)\n- [#21984: Deprecate the opacity argument for plot3d and use alpha](https://trac.sagemath.org/ticket/21984)\n- [Ask Sage question 41457: Fill colors with two contour plots](https://ask.sagemath.org/question/41457/fill-colors-with-two-contour-plots/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9491\n\n",
     "created_at": "2010-07-13T14:43:19Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
-    "title": "contour plot does not handle transparency",
+    "title": "Allow setting alpha (transparency/opacity) for contour_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9491",
     "user": "https://github.com/jasongrout"
@@ -19,9 +19,22 @@ Assignee: jason, was
 
 CC:  @slel
 
-This patch enables an 'opacity' argument to the contour plot function.
+Keywords: alpha, transparency, opacity, plot, contour_plot, graphics
 
-Doctesting needs to be done, and a few examples need to be written.
+The object of this ticket is to allow an optional argument "alpha"
+to set the transparency / opacity for contour_plot, like it exists for
+other types of plots.
+
+An initial patch enables an 'opacity' argument to the contour_plot function.
+It should be renamed 'alpha' for consistency with its name elsewhere.
+
+Doctests need to be added, and a few examples need to be written.
+
+Related tickets and discussions:
+
+- [#23104: implement alpha for streamline plots](https://trac.sagemath.org/ticket/23104)
+- [#21984: Deprecate the opacity argument for plot3d and use alpha](https://trac.sagemath.org/ticket/21984)
+- [Ask Sage question 41457: Fill colors with two contour plots](https://ask.sagemath.org/question/41457/fill-colors-with-two-contour-plots/)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9491
 

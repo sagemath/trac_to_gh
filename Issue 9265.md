@@ -3,7 +3,8 @@
 archive/issues_009265.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nThe `CombinatorialClass` class is being deprecated.  See [Sage Combinat Roadmap](http://trac.sagemath.org/sage_trac/wiki/SageCombinatRoadMap) for more information.  This ticket will handle removing this class from sage.combinat.tableau.  See also some discussion of this on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/1819418007f5157).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9265\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: tableaux, combinatorics\n\nThe `CombinatorialClass` class is being deprecated.  See [Sage Combinat Roadmap](http://trac.sagemath.org/sage_trac/wiki/SageCombinatRoadMap) for more information.  This ticket will handle removing this class from sage.combinat.tableau.  See also some discussion of this on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/1819418007f5157).\n\n**Apply:** [attachment:trac_9265_tableaux_categories_am.patch]\n\nand then\n  \n[attachment:trac_9265--tableaux_categories_pickles-am.patch]\n\n\n(and **don't** update the pickle jar!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9265\n\n",
+    "closed_at": "2012-10-29T21:24:32Z",
     "created_at": "2010-06-18T12:24:14Z",
     "labels": [
         "component: combinatorics"
@@ -17,7 +18,18 @@ archive/issues_009265.json:
 ```
 Assignee: sage-combinat
 
+Keywords: tableaux, combinatorics
+
 The `CombinatorialClass` class is being deprecated.  See [Sage Combinat Roadmap](http://trac.sagemath.org/sage_trac/wiki/SageCombinatRoadMap) for more information.  This ticket will handle removing this class from sage.combinat.tableau.  See also some discussion of this on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/1819418007f5157).
+
+**Apply:** [attachment:trac_9265_tableaux_categories_am.patch]
+
+and then
+  
+[attachment:trac_9265--tableaux_categories_pickles-am.patch]
+
+
+(and **don't** update the pickle jar!)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9265
 

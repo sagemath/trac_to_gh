@@ -1,10 +1,10 @@
-# Issue 602: sage: (1/2)^(2^100)
-serious powering bug / overflow
+# Issue 602: sage: (1/2)^(2^100)serious powering bug / overflow
 
 archive/issues_000602.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nsage: (1/2)^(2^100)\n1\n```\n\nOuch!\n\nIssue created by migration from https://trac.sagemath.org/ticket/602\n\n",
+    "closed_at": "2007-09-07T01:53:24Z",
     "created_at": "2007-09-06T19:24:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -12,7 +12,7 @@ archive/issues_000602.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
-    "title": "sage: (1/2)^(2^100)\nserious powering bug / overflow",
+    "title": "sage: (1/2)^(2^100)serious powering bug / overflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/602",
     "user": "https://github.com/williamstein"

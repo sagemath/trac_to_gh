@@ -4,6 +4,7 @@ archive/issues_007710.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe documentation of rational_reconstruction says that an error\n*ZeroDivisionError* is raised when no solution exists with the given\nbounds, but the code returns an error *ValueError*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7710\n\n",
+    "closed_at": "2014-10-27T16:27:09Z",
     "created_at": "2009-12-16T11:59:05Z",
     "labels": [
         "component: basic arithmetic",

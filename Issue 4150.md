@@ -1,16 +1,17 @@
-# Issue 4150: [with patch, needs review and testing] migrate graphs to new refinement code
+# Issue 4150: [with patch, positive review] migrate graphs to new refinement code
 
 archive/issues_004150.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThis moves the automorphism group and isomorphism functions for graphs over to the new framework. It should be tested on a few different architectures before getting merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4150\n\n",
+    "closed_at": "2008-09-19T23:55:39Z",
     "created_at": "2008-09-19T07:42:32Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review and testing] migrate graphs to new refinement code",
+    "title": "[with patch, positive review] migrate graphs to new refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4150",
     "user": "https://github.com/rlmill"

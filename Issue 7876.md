@@ -3,10 +3,12 @@
 archive/issues_007876.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nIt appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\nsage: f\n-(1/2*I + 1/2)*sqrt(2)\nsage: f+1/2*sqrt(2)\n-(1/2*I + 1)*sqrt(2)\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\nsage: latex(f)\n-\\left(\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7876\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nIt appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.\n\n```\nsage: f=(1/2-1/2*I )*sqrt(2)\nsage: f\n-(1/2*I + 1/2)*sqrt(2)\nsage: f+1/2*sqrt(2)\n-(1/2*I + 1)*sqrt(2)\nsage: f-1/2*sqrt(2)\n-1/2*I*sqrt(2)\nsage: latex(f)\n-\\left(\\frac{1}{2} I + \\frac{1}{2}\\right) \\, \\sqrt{2}\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7876\n\n",
+    "closed_at": "2010-02-18T21:40:47Z",
     "created_at": "2010-01-09T13:57:28Z",
     "labels": [
         "component: symbolics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -17,6 +19,8 @@ archive/issues_007876.json:
 }
 ```
 Assignee: @burcin
+
+Keywords: pynac
 
 It appears that the internal representation is correct since further calculations give correct answers, but the answer is displayed incorrectly.
 

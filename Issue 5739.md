@@ -1,22 +1,23 @@
-# Issue 5739: zeta(CDF(1)) go boom!
+# Issue 5739: changed from zeta(CDF(1)) go boom! + zeta of 1 return value be consistent in different rings
 
 archive/issues_005739.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb fredrik\n\n```\nwstein@bsd:~/build/sage-3.4.1.rc1$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nwstein@bsd:~/build/sage-3.4.1.rc1$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: zeta(CDF(1))\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5739\n\n",
+    "body": "Assignee: fredrik\n\nCC:  @robertwb fredrik\n\n```\nwstein@bsd:~/build/sage-3.4.1.rc1$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nwstein@bsd:~/build/sage-3.4.1.rc1$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: zeta(CDF(1))\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5739\n\n",
+    "closed_at": "2010-09-28T10:54:27Z",
     "created_at": "2009-04-10T23:09:59Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "zeta(CDF(1)) go boom!",
+    "title": "changed from zeta(CDF(1)) go boom! + zeta of 1 return value be consistent in different rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5739",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: fredrik
 
 CC:  @robertwb fredrik
 

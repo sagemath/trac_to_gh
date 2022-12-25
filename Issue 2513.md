@@ -1,9 +1,10 @@
-# Issue 2513: Weird printing issues with cython, caused by LANG environment variable
+# Issue 2513: [with patch, positive review] Weird printing issues with gcc, caused by LANG environment variable
 
 archive/issues_002513.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @robertwb cwitty\n\nSo I've noticed for a little while now that I have the following strange problem: \n\n```\nsage/rings/number_field/totallyreal_data.c: In function \u00e2:\nsage/rings/number_field/totallyreal_data.c:1920: error: \u00e2 undeclared (first use in this function)\n```\n\nBut then, if you comment out the fix for trac ticket #276 (which sets the environment variable `LANG`), that same error becomes:\n\n```\nsage/rings/number_field/totallyreal_data.c: In function '__pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3_c':\nsage/rings/number_field/totallyreal_data.c:1920: error: 'intp' undeclared (first use in this function)\n```\n\nObviously we'd prefer the second. What I think we should do is move setting the `LANG` environment variable somewhere closer in the build & run process to where Maxima gets initialized. I haven't had time to sit down and look at this at all -- I'm assigning it to myself, but if someone else wants to jump in and fix it before me, I definitely won't mind.\n\nI'm also adding robertwb to the cc, because I think I recall him saying he ran into this, too, and he's (1) probably happy to have a workaround, and (2) likely to come up with a fix himself, saving me work. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2513\n\n",
+    "closed_at": "2009-06-14T22:12:56Z",
     "created_at": "2008-03-13T23:22:50Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_002513.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Weird printing issues with cython, caused by LANG environment variable",
+    "title": "[with patch, positive review] Weird printing issues with gcc, caused by LANG environment variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2513",
     "user": "https://github.com/craigcitro"

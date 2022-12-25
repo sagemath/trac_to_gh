@@ -4,6 +4,7 @@ archive/issues_002757.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch that Debianizes the scipy_sandbox spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2757\n\n",
+    "closed_at": "2008-04-01T23:38:33Z",
     "created_at": "2008-04-01T18:43:30Z",
     "labels": [
         "component: debian-package"

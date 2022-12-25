@@ -1,15 +1,16 @@
-# Issue 3416: Weierstrass form for cubics [with patch, with negative review]
+# Issue 3416: Weierstrass form and Jacobian for cubics and certain other genus-one curves
 
 archive/issues_003416.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @novoselt\n\nKeywords: nagell, weierstrass, cubic, elliptic curves\n\nThis code still needs a bit of polishing and testing, but it's nearly ready to go. I am marking this with a negative review since it's not quite release ready, but people can check it out.\n\nThis includes code for finding the transformation maps.\n\n-Bobby\n\nIssue created by migration from https://trac.sagemath.org/ticket/3416\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @novoselt\n\nKeywords: nagell, weierstrass, cubic, elliptic curves, editor_wstein\n\nImplement transformations to put a general cubic (with a point) into Weierstrass form:\n\n```\nsage: R.<u,v,w> = QQ[]\nsage: EllipticCurve(u^3+v^3+w^3, [1,-1,0])   \nElliptic Curve defined by y^2 + 2*x*y - 1/3*y = x^3 - x^2 + 1/3*x - 1/27 over Rational Field\nsage: EllipticCurve_from_cubic(u^3+v^3+w^3, [1,-1,0])\nScheme morphism:\n  From: Closed subscheme of Projective Space of dimension 2 over Rational Field defined by:\n  u^3 + v^3 + w^3\n  To:   Elliptic Curve defined by y^2 + 2*x*y - 1/3*y = x^3 - x^2 + 1/3*x - 1/27 over Rational Field\n  Defn: Defined on coordinates by sending (u : v : w) to\n        (w : -v - w : -3*u - 3*v)\n```\nAlso, Jacobians (without specifying point):\n\n```\nsage: R.<u,v,w> = QQ[]\nsage: Jacobian(u^3+v^3+w^3)\nElliptic Curve defined by y^2 = x^3 - 27/4 over Rational Field\nsage: Jacobian(u^3+v^3+w^3, morphism=True)\nScheme morphism:\n  From: Projective Curve over Rational Field defined by u^3 + v^3 + w^3\n  To:   Elliptic Curve defined by y^2 = x^3 - 27/4 over Rational Field\n  Defn: Defined on coordinates by sending (u : v : w) to\n        (u*v^7*w + u*v^4*w^4 + u*v*w^7 : v^9 + 3/2*v^6*w^3 - 3/2*v^3*w^6 - w^9 : -v^6*w^3 - v^3*w^6)\n```\n\n\nApply:\n\n* [attachment:trac_3416_elliptic_curve_from_cubic_vb.patch]\n* [attachment:trac_3416_jacobians.patch]\n* [attachment:trac_3416_fixes.patch]\n* [attachment:trac_3416_magma.patch]\n\nSee [attachment:cubic_to_weierstrass_documentation.pdf] for details on how the algorithm works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3416\n\n",
+    "closed_at": "2013-08-20T12:58:04Z",
     "created_at": "2008-06-13T16:19:39Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
-    "title": "Weierstrass form for cubics [with patch, with negative review]",
+    "title": "Weierstrass form and Jacobian for cubics and certain other genus-one curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3416",
     "user": "https://github.com/bobmoretti"
@@ -19,13 +20,45 @@ Assignee: @williamstein
 
 CC:  @novoselt
 
-Keywords: nagell, weierstrass, cubic, elliptic curves
+Keywords: nagell, weierstrass, cubic, elliptic curves, editor_wstein
 
-This code still needs a bit of polishing and testing, but it's nearly ready to go. I am marking this with a negative review since it's not quite release ready, but people can check it out.
+Implement transformations to put a general cubic (with a point) into Weierstrass form:
 
-This includes code for finding the transformation maps.
+```
+sage: R.<u,v,w> = QQ[]
+sage: EllipticCurve(u^3+v^3+w^3, [1,-1,0])   
+Elliptic Curve defined by y^2 + 2*x*y - 1/3*y = x^3 - x^2 + 1/3*x - 1/27 over Rational Field
+sage: EllipticCurve_from_cubic(u^3+v^3+w^3, [1,-1,0])
+Scheme morphism:
+  From: Closed subscheme of Projective Space of dimension 2 over Rational Field defined by:
+  u^3 + v^3 + w^3
+  To:   Elliptic Curve defined by y^2 + 2*x*y - 1/3*y = x^3 - x^2 + 1/3*x - 1/27 over Rational Field
+  Defn: Defined on coordinates by sending (u : v : w) to
+        (w : -v - w : -3*u - 3*v)
+```
+Also, Jacobians (without specifying point):
 
--Bobby
+```
+sage: R.<u,v,w> = QQ[]
+sage: Jacobian(u^3+v^3+w^3)
+Elliptic Curve defined by y^2 = x^3 - 27/4 over Rational Field
+sage: Jacobian(u^3+v^3+w^3, morphism=True)
+Scheme morphism:
+  From: Projective Curve over Rational Field defined by u^3 + v^3 + w^3
+  To:   Elliptic Curve defined by y^2 = x^3 - 27/4 over Rational Field
+  Defn: Defined on coordinates by sending (u : v : w) to
+        (u*v^7*w + u*v^4*w^4 + u*v*w^7 : v^9 + 3/2*v^6*w^3 - 3/2*v^3*w^6 - w^9 : -v^6*w^3 - v^3*w^6)
+```
+
+
+Apply:
+
+* [attachment:trac_3416_elliptic_curve_from_cubic_vb.patch]
+* [attachment:trac_3416_jacobians.patch]
+* [attachment:trac_3416_fixes.patch]
+* [attachment:trac_3416_magma.patch]
+
+See [attachment:cubic_to_weierstrass_documentation.pdf] for details on how the algorithm works.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3416
 

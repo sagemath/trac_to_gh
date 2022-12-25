@@ -1,16 +1,17 @@
-# Issue 2776: [with patch, needs review] simplify BooleanPolynomialRing constructor for enduser
+# Issue 2776: [with patch, positive review] simplify BooleanPolynomialRing constructor for enduser
 
 archive/issues_002776.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThis now works:\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2776\n\n",
+    "closed_at": "2008-04-02T19:25:45Z",
     "created_at": "2008-04-02T16:16:47Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] simplify BooleanPolynomialRing constructor for enduser",
+    "title": "[with patch, positive review] simplify BooleanPolynomialRing constructor for enduser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2776",
     "user": "https://github.com/malb"

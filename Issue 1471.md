@@ -1,9 +1,10 @@
-# Issue 1471: moving a sage install breaks clisp
+# Issue 1471: [with spkg, with positive review] moving a sage install breaks clisp
 
 archive/issues_001471.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMoving a Sage install breaks clisp. I moved `sage-2.9.alpha5` to `sage-2.9.alpha5-vg` and it broke clisp:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5-vg$ clisp\nclisp: /tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/clisp/base/lisp.run: No such file or directory\n```\nI have no clue how Maxima still manages to work, but there must be a fix somehow.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1471\n\n",
+    "closed_at": "2008-01-03T07:16:52Z",
     "created_at": "2007-12-12T09:36:13Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_001471.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "moving a sage install breaks clisp",
+    "title": "[with spkg, with positive review] moving a sage install breaks clisp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1471",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

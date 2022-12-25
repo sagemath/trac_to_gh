@@ -1,9 +1,10 @@
-# Issue 833: new coercion model segfault (??)
+# Issue 833: [with patch] new coercion model segfault (??)
 
 archive/issues_000833.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: singular('2')*3\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/833\n\n",
+    "body": "Assignee: @robertwb\n\n```\nsage: singular('2')*3\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/833\n\n",
+    "closed_at": "2007-10-14T17:26:57Z",
     "created_at": "2007-10-06T03:10:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_000833.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "new coercion model segfault (??)",
+    "title": "[with patch] new coercion model segfault (??)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/833",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 ```
 sage: singular('2')*3

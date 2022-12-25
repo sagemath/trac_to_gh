@@ -3,10 +3,12 @@
 archive/issues_009564.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: KeyboardInterrupt libsingular exponentiation\n\nWhen trying to get some timings for #7795, I did\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = R.random_element()\nsage: p\n-x^2 + 1/3*x*y + 7/2*y + 2*z\nsage: timeit('q=p^(2^10)')\n```\nwhich might be stupid. \n\nAnyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9564\n\n",
+    "body": "Assignee: tba\n\nKeywords: KeyboardInterrupt interrupt singular exception cython\n\nWhen trying to get some timings for #7795, I did\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = R.random_element()\nsage: p\n-x^2 + 1/3*x*y + 7/2*y + 2*z\nsage: timeit('q=p^(2^10)')\n```\nwhich might be stupid. \n\nAnyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9564\n\n",
+    "closed_at": "2011-05-04T15:06:16Z",
     "created_at": "2010-07-21T13:50:23Z",
     "labels": [
-        "component: commutative algebra",
+        "component: c_lib",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,9 +18,9 @@ archive/issues_009564.json:
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: @malb
+Assignee: tba
 
-Keywords: KeyboardInterrupt libsingular exponentiation
+Keywords: KeyboardInterrupt interrupt singular exception cython
 
 When trying to get some timings for #7795, I did
 

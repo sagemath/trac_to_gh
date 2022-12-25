@@ -4,10 +4,10 @@ archive/issues_003434.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTry this in the notebook\n\n```\n@interact\ndef test(a=1):\n    print 2^a\n```\n\nFor large a it outputs something massive and very very bad. This should not be aloud. \n\nTo fix this:\n\n1. Look at\n\n```\n            self.interact = input[len('%__sage_interact__')+1]\n```\nin cell.py\n2. Factor out this code from cell.py:\n\n```\n        if 'notruncate' not in output and 'Output truncated!' not in output and \\\n              (len(output) > MAX_OUTPUT or output.count('\\n') > MAX_OUTPUT_LINES) and \\\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3434\n\n",
+    "closed_at": "2020-03-29T02:04:25Z",
     "created_at": "2008-06-15T23:11:35Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- implementin MAX_OUTPUT handling in cell.py for interact.",

@@ -1,16 +1,17 @@
-# Issue 2014: crap -- matplotlib contains an annoying OS X temp file
+# Issue 2014: [with spkg] crap -- matplotlib contains an annoying OS X temp file
 
 archive/issues_002014.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/matplotlib-0.91.1.p2/src/._MANIFEST.in\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2014\n\n",
+    "closed_at": "2008-02-01T02:02:06Z",
     "created_at": "2008-01-31T23:26:20Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- matplotlib contains an annoying OS X temp file",
+    "title": "[with spkg] crap -- matplotlib contains an annoying OS X temp file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2014",
     "user": "https://github.com/williamstein"

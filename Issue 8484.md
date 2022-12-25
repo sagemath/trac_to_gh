@@ -4,9 +4,10 @@ archive/issues_008484.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8484\n\n",
+    "closed_at": "2010-04-15T23:54:34Z",
     "created_at": "2010-03-10T02:19:10Z",
     "labels": [
-        "component: algebra",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",

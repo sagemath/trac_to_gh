@@ -1,9 +1,10 @@
-# Issue 5779: _fast_floats_'s pow returns garbage for non-integral powers left of zero
+# Issue 5779: [with patch, positive review] _fast_floats_'s pow returns garbage for non-integral powers left of zero
 
 archive/issues_005779.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nI thought we had fixed this via fast_callable, but it is still there:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f=x^(1/3)\nsage: f._fast_float_(x)(-1.2)\nnan\nsage: \n```\nThis is exposed via a plotting failure on Solaris where NaNs pop up. Fixing that in the plotting code is a different ticket William will open shortly.\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5779\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  cwitty\n\nI thought we had fixed this via fast_callable, but it is still there:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f=x^(1/3)\nsage: f._fast_float_(x)(-1.2)\nnan\nsage: \n```\nThis is exposed via a plotting failure on Solaris where NaNs pop up. Fixing that in the plotting code is a different ticket William will open shortly.\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5779\n\n",
+    "closed_at": "2009-04-16T07:41:28Z",
     "created_at": "2009-04-13T20:04:51Z",
     "labels": [
         "component: porting: solaris",
@@ -11,13 +12,13 @@ archive/issues_005779.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "_fast_floats_'s pow returns garbage for non-integral powers left of zero",
+    "title": "[with patch, positive review] _fast_floats_'s pow returns garbage for non-integral powers left of zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5779",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @robertwb
 
 CC:  cwitty
 

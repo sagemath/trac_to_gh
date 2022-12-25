@@ -1,15 +1,16 @@
-# Issue 4856: [with patch; needs review] make qasm an optional spkg
+# Issue 4856: [with spkg; needs work] make qasm an optional spkg
 
 archive/issues_004856.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee attached spkg.  This came up at \n\n  http://groups.google.com/group/sage-devel/browse_thread/thread/175e8f515e58d497\n\nIt might be a good example of something, so maybe should become an optional spkg...   It's pretty specialized and very small. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4856\n\n",
+    "closed_at": "2009-01-02T15:42:13Z",
     "created_at": "2008-12-23T07:45:22Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch; needs review] make qasm an optional spkg",
+    "title": "[with spkg; needs work] make qasm an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4856",
     "user": "https://github.com/williamstein"

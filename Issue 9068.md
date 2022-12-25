@@ -4,6 +4,7 @@ archive/issues_009068.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nKeywords: sgn sign\n\nThere is a sgn() function defined in sage/quadratic_forms/extras.py which just duplicates the one in sage/functions/generalized.py, so I have removed it and adjusted imports accordingly.\n\nMay depend on #7828.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9068\n\n",
+    "closed_at": "2010-06-06T01:16:46Z",
     "created_at": "2010-05-27T21:00:41Z",
     "labels": [
         "component: algebra",

@@ -1,16 +1,17 @@
-# Issue 5349: [with patch, needs review] Make extensions linking against libSingular depend on $SAGE_LOCAL/include/libsingular.h
+# Issue 5349: [with patch, positive review] Make extensions linking against libSingular depend on $SAGE_LOCAL/include/libsingular.h
 
 archive/issues_005349.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  georgsweber\n\nThe summary says it all. It causes the extensions to be automatically being rebuild when the singular.spkg has been rebuild.\n\nGeorg: Can you review this?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5349\n\n",
+    "closed_at": "2009-02-24T19:51:53Z",
     "created_at": "2009-02-23T15:07:57Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] Make extensions linking against libSingular depend on $SAGE_LOCAL/include/libsingular.h",
+    "title": "[with patch, positive review] Make extensions linking against libSingular depend on $SAGE_LOCAL/include/libsingular.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5349",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

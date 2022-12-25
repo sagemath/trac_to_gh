@@ -1,15 +1,16 @@
-# Issue 6620: add a method to the Gap class to access elements of records
+# Issue 6620: [with patch, positive review] add a method to the Gap class to access elements of records
 
 archive/issues_006620.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  nborie @wdjoyner\n\nAccessing elements of GAP records should be easier.\n\n```\n            sage: rec = gap('rec( a := 1, b := \"2\" )')\n            sage: gap.get_record_element(rec, 'a')\n            1\n            sage: gap.get_record_element(rec, 'b')\n            2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6620\n\n",
+    "closed_at": "2009-08-24T13:42:21Z",
     "created_at": "2009-07-25T17:11:16Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "add a method to the Gap class to access elements of records",
+    "title": "[with patch, positive review] add a method to the Gap class to access elements of records",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6620",
     "user": "https://github.com/saliola"

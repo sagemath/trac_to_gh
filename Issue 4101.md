@@ -1,9 +1,10 @@
-# Issue 4101: [with spkg, needs review] cpdef horribly broken in last Cython
+# Issue 4101: [with spkg, positive review] cpdef horribly broken in last Cython
 
 archive/issues_004101.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe way cpdef functions were implemented broke in some classes when being used across modules. This came up now because the new coercion uses cpdef much more. This is just the old cython+bug fix rather than a new release for time reasons, and passes sage -testall with the attached (nearly trivial) patch. A sage -ba is required. \n\nhttp://sage.math.washington.edu/home/robertwb/cython/cython-0.9.8.1.1p1.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4101\n\n",
+    "closed_at": "2008-09-13T01:52:10Z",
     "created_at": "2008-09-11T17:14:55Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004101.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] cpdef horribly broken in last Cython",
+    "title": "[with spkg, positive review] cpdef horribly broken in last Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4101",
     "user": "https://github.com/robertwb"

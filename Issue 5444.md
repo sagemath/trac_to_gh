@@ -1,16 +1,17 @@
-# Issue 5444: elipses + float = boom
+# Issue 5444: [with patch, positive review] ellipses + float = boom
 
 archive/issues_005444.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\n   sage: [(1.0)..(2.0)]\n   [1.00000000000000, 2.00000000000000]\n   sage: [1.0..2.0]\n    line 4\n    (ellipsis_range(_sage_const_1p0 ,Ellipsis,_sage_const_2 RealNumber('.0')))\n                                                                     ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5444\n\n",
+    "closed_at": "2009-06-13T21:50:49Z",
     "created_at": "2009-03-05T19:58:26Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "elipses + float = boom",
+    "title": "[with patch, positive review] ellipses + float = boom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5444",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

@@ -3,7 +3,8 @@
 archive/issues_007747.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nWith Sage 4.3.rc0, I get a few doctest failures from sage/doc, at least one of which is related to #7406.  The attached patch fixes them.  It also reinstates some doctests which were disabled until #5338 was fixed.\n\nI'm marking this as a blocker since without it, there are doctest failures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7747\n\n",
+    "body": "Assignee: mvngu\n\nWith Sage 4.3.rc0, I get a few doctest failures from sage/doc, at least one of which is related to #7406.  The attached patch fixes them.  It also reinstates some doctests which were disabled until #5338 was fixed.\n\nOh, and it also changes a `.. math` block to match the actual LaTeX output from Sage.\n\nI'm marking this as a blocker since without it, there are doctest failures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7747\n\n",
+    "closed_at": "2009-12-23T13:28:27Z",
     "created_at": "2009-12-21T22:40:57Z",
     "labels": [
         "component: documentation",
@@ -20,6 +21,8 @@ archive/issues_007747.json:
 Assignee: mvngu
 
 With Sage 4.3.rc0, I get a few doctest failures from sage/doc, at least one of which is related to #7406.  The attached patch fixes them.  It also reinstates some doctests which were disabled until #5338 was fixed.
+
+Oh, and it also changes a `.. math` block to match the actual LaTeX output from Sage.
 
 I'm marking this as a blocker since without it, there are doctest failures.
 

@@ -4,6 +4,7 @@ archive/issues_006777.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @orlitzky\n\nKeywords: polynomial segfault\n\nThis is with a modified\n\n```\n```\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\nMac OS X, Intel hardware.\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nProcess SAGE exited abnormally with code 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6777\n\n",
+    "closed_at": "2012-01-18T08:08:18Z",
     "created_at": "2009-08-19T22:48:53Z",
     "labels": [
         "component: commutative algebra",

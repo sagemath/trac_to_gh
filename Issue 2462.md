@@ -1,22 +1,23 @@
-# Issue 2462: Odd results when adding Laurent series
+# Issue 2462: [with patch, positive review] Odd results when adding Laurent series
 
 archive/issues_002462.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following code, which defines a Laurent series ring over a field extension of QQ, gives a weird error when one tries to add and subract Laurent series, all defined over the same ring.\n\n```\nQx.<xxx>=PolynomialRing(QQ)\n\nK.<w>=NumberField(xxx^2+xxx+1)\n\nR.<y>=PolynomialRing(K)\n\nL.<s>=K.extension(y^6+y^5+y^4+y^3+y^2+y+1)\n\nS.<q>=LaurentSeriesRing(L,\"q\")\n\neta1=1 - q - q^2 + q^5 + q^7 - q^12 - q^15 + q^22 + q^26 - q^35 - q^40 + \\\nq^51+ q^57 - q^70 - q^77 + q^92 + q^100 - q^117 - q^126 + q^145 + q^155 -\\\nq^176 - q^187 + q^210 + q^222 - q^247 - q^260 + \\\nq^287 + q^301 - q^330 -q^345 + q^376 + q^392 - q^425 - q^442 + q^477 + q^495\n\neta7=eta1(q^7 )+O(q^500)\n\neta49=eta1(q^49)+O(q^500)\n\nx=q^(-2)*eta1*eta49^-1\ny=eta7^4*eta49^-4\n\nx+y-x-y\n```\n\nThe error is:\n\n```\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/ljpk/<ipython console> in <module>()\n\n/home/ljpk/element.pyx in sage.structure.element.ModuleElement.__sub__()\n\n/home/ljpk/coerce.pxi in sage.structure.element._sub_c()\n\n/home/ljpk/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries._sub_c_impl()\n\n/home/ljpk/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries.__init__()\n\n/home/ljpk/power_series_poly.pyx in sage.rings.power_series_poly.PowerSeries_poly.valuation()\n\n/home/ljpk/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.valuation()\n\n<type 'exceptions.TypeError'>: The polynomial, p, must have the same parent as self.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2462\n\n",
+    "body": "Assignee: tbd\n\nThe following code, which defines a Laurent series ring over a field extension of QQ, gives a weird error when one tries to add and subract Laurent series, all defined over the same ring.\n\n```\nQx.<xxx>=PolynomialRing(QQ)\n\nK.<w>=NumberField(xxx^2+xxx+1)\n\nR.<y>=PolynomialRing(K)\n\nL.<s>=K.extension(y^6+y^5+y^4+y^3+y^2+y+1)\n\nS.<q>=LaurentSeriesRing(L,\"q\")\n\neta1=1 - q - q^2 + q^5 + q^7 - q^12 - q^15 + q^22 + q^26 - q^35 - q^40 + \\\nq^51+ q^57 - q^70 - q^77 + q^92 + q^100 - q^117 - q^126 + q^145 + q^155 -\\\nq^176 - q^187 + q^210 + q^222 - q^247 - q^260 + \\\nq^287 + q^301 - q^330 -q^345 + q^376 + q^392 - q^425 - q^442 + q^477 + q^495\n\neta7=eta1(q^7 )+O(q^500)\n\neta49=eta1(q^49)+O(q^500)\n\nx=q^(-2)*eta1*eta49^-1\ny=eta7^4*eta49^-4\n\nx+y-x-y\n```\n\nThe error is:\n\n```\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/ljpk/<ipython console> in <module>()\n\n/home/ljpk/element.pyx in sage.structure.element.ModuleElement.__sub__()\n\n/home/ljpk/coerce.pxi in sage.structure.element._sub_c()\n\n/home/ljpk/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries._sub_c_impl()\n\n/home/ljpk/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries.__init__()\n\n/home/ljpk/power_series_poly.pyx in sage.rings.power_series_poly.PowerSeries_poly.valuation()\n\n/home/ljpk/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.valuation()\n\n<type 'exceptions.TypeError'>: The polynomial, p, must have the same parent as self.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2462\n\n",
+    "closed_at": "2008-10-31T02:44:21Z",
     "created_at": "2008-03-10T21:32:53Z",
     "labels": [
-        "component: linear algebra",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Odd results when adding Laurent series",
+    "title": "[with patch, positive review] Odd results when adding Laurent series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2462",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @williamstein
+Assignee: tbd
 
 The following code, which defines a Laurent series ring over a field extension of QQ, gives a weird error when one tries to add and subract Laurent series, all defined over the same ring.
 

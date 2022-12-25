@@ -1,9 +1,10 @@
-# Issue 797: timeit doesn't recognize [1..10] syntax
+# Issue 797: %timeit on command line doesn't recognize [1..10] syntax
 
 archive/issues_000797.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: %time [1..10]\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     [1..10]\n          ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: %timeit [1..10]\n------------------------------------------------------------\n   File \"<magic-timeit>\", line 6\n     [1..10]\n          ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: %timeit xrange(11)\n1000000 loops, best of 3: 392 ns per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/797\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: timeit ipython\n\n```\nsage: %time [1..10]\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     [1..10]\n          ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: %timeit [1..10]\n------------------------------------------------------------\n   File \"<magic-timeit>\", line 6\n     [1..10]\n          ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: %timeit xrange(11)\n1000000 loops, best of 3: 392 ns per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/797\n\n",
+    "closed_at": "2010-01-18T22:39:07Z",
     "created_at": "2007-10-03T00:26:36Z",
     "labels": [
         "component: user interface",
@@ -11,13 +12,15 @@ archive/issues_000797.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "timeit doesn't recognize [1..10] syntax",
+    "title": "%timeit on command line doesn't recognize [1..10] syntax",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/797",
     "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
+
+Keywords: timeit ipython
 
 ```
 sage: %time [1..10]

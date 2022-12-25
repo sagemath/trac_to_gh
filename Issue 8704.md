@@ -3,11 +3,11 @@
 archive/issues_008704.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nThe actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8704\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: integer range\n\nThe actual printing was discussed on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel.\n\nI also took the chance of normalizing the input to improve equality. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8704\n\n",
+    "closed_at": "2010-06-06T08:35:05Z",
     "created_at": "2010-04-17T09:53:05Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Improve the _repr_ of IntegerRange",
@@ -18,7 +18,11 @@ archive/issues_008704.json:
 ```
 Assignee: @hivert
 
-The actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.
+Keywords: integer range
+
+The actual printing was discussed on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel.
+
+I also took the chance of normalizing the input to improve equality. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8704
 

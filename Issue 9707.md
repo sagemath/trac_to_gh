@@ -3,7 +3,8 @@
 archive/issues_009707.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill @dcoudert\n\nWe should have an option to g.laplacian() to return the signless Laplacian, which is attracting attention these days, and which is calculated by `D+A` instead of `D-A` (see p. 12 of http://www.doiserbia.nb.rs/ft.aspx?id=0350-13020795011C, for example).\n\nThanks to Steve Butler for the feature request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9707\n\n",
+    "body": "Assignee: @rajat1433\n\nCC:  @nathanncohen @rlmill @dcoudert\n\nWe should have an option to g.laplacian() to return the signless Laplacian, which is attracting attention these days, and which is calculated by `D+A` instead of `D-A` (see p. 12 of http://www.doiserbia.nb.rs/ft.aspx?id=0350-13020795011C, for example).\n\nThanks to Steve Butler for the feature request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9707\n\n",
+    "closed_at": "2019-03-14T18:14:03Z",
     "created_at": "2010-08-08T00:40:24Z",
     "labels": [
         "component: graph theory"
@@ -15,7 +16,7 @@ archive/issues_009707.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: jason, ncohen, rlm
+Assignee: @rajat1433
 
 CC:  @nathanncohen @rlmill @dcoudert
 

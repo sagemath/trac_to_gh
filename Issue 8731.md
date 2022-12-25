@@ -1,15 +1,16 @@
-# Issue 8731: update maxima to 5.21.0
+# Issue 8731: update/upgrade maxima to latest upstream (5.21.1)
 
 archive/issues_008731.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kcrisman @robert-marik @mwhansen\n\nThis update fixes #8729.  It also includes the fixes noted in #8645 (so this spkg supersedes the maxima spkg at #8645).\n\nThe spkg is up at http://sage.math.washington.edu/home/jason/maxima-5.21.0.spkg\n\nA patch needs to be applied to fix some doctests.  In particular, apparently maxima has gotten better at integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8731\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman @robert-marik @mwhansen\n\nThis update fixes #8729.  It also includes the fixes noted in #8645 (so this spkg supersedes the maxima spkg at #8645).\n\nThe spkg is up at http://sage.math.washington.edu/home/jason/maxima-5.21.1.spkg\n\nA patch needs to be applied to fix some doctests.  In particular, apparently maxima has gotten better at integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8731\n\n",
+    "closed_at": "2010-12-06T11:46:54Z",
     "created_at": "2010-04-20T19:32:25Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update maxima to 5.21.0",
+    "title": "update/upgrade maxima to latest upstream (5.21.1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8731",
     "user": "https://github.com/jasongrout"
@@ -21,7 +22,7 @@ CC:  @kcrisman @robert-marik @mwhansen
 
 This update fixes #8729.  It also includes the fixes noted in #8645 (so this spkg supersedes the maxima spkg at #8645).
 
-The spkg is up at http://sage.math.washington.edu/home/jason/maxima-5.21.0.spkg
+The spkg is up at http://sage.math.washington.edu/home/jason/maxima-5.21.1.spkg
 
 A patch needs to be applied to fix some doctests.  In particular, apparently maxima has gotten better at integration.
 

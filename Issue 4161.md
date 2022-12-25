@@ -1,16 +1,17 @@
-# Issue 4161: [with spkg, needs review] GAP doesn't compile with CXX='ccache g++'
+# Issue 4161: [with spkg, positive review] GAP doesn't compile with CXX='ccache g++'
 
 archive/issues_004161.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is a follow up to #2575 where accidentally we only fixed on problem and not the other. The spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/gap-4.4.10.p10.spkg\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/4161\n\n",
+    "closed_at": "2008-09-20T23:24:10Z",
     "created_at": "2008-09-20T23:01:41Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with spkg, needs review] GAP doesn't compile with CXX='ccache g++'",
+    "title": "[with spkg, positive review] GAP doesn't compile with CXX='ccache g++'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4161",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,9 +1,10 @@
-# Issue 1978: update python-gnutls
+# Issue 1978: [with spkg, needs review] update python-gnutls
 
 archive/issues_001978.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\npython-gnutls needs to be updated to reflect the api changes in gnutls-2.2.1. \n\nAn experimental spkg can be found here:\n\nhttp://sage.math.washington.edu/home/yqiang/python-gnutls-1.1.4.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1978\n\n",
+    "body": "Assignee: @yqiang\n\npython-gnutls needs to be updated to reflect the api changes in gnutls-2.2.1. \n\nAn experimental spkg can be found here:\n\nhttp://sage.math.washington.edu/home/yqiang/python-gnutls-1.1.4.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1978\n\n",
+    "closed_at": "2008-01-30T09:41:41Z",
     "created_at": "2008-01-30T04:40:18Z",
     "labels": [
         "component: packages: standard",
@@ -11,13 +12,13 @@ archive/issues_001978.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update python-gnutls",
+    "title": "[with spkg, needs review] update python-gnutls",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1978",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: mabshoff
+Assignee: @yqiang
 
 python-gnutls needs to be updated to reflect the api changes in gnutls-2.2.1. 
 

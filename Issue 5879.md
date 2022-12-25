@@ -1,15 +1,16 @@
-# Issue 5879: [with patch, needs review] Added crystal of letters for type E
+# Issue 5879: [with patch, positive review] Added crystal of letters for type E
 
 archive/issues_005879.json:
 ```json
 {
-    "body": "Assignee: @anneschilling\n\nCC:  sage-combinat-commits\n\nKeywords: combinat, crystals\n\nThis patch adds crystal of letters for type E corresponding to\nthe highest weight crystal B(\\Lambda_1) and its dual B(\\Lambda_6) (in the sage labeling convention of the Dynkin nodes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5879\n\n",
+    "body": "Assignee: @anneschilling\n\nCC:  sage-combinat-commits\n\nKeywords: combinat, crystals\n\nThis patch adds crystal of letters for type E corresponding to\nthe highest weight crystal B(\\Lambda_1) and its dual B(\\Lambda_6) (in the sage labeling convention of the Dynkin nodes).\n\nThis patch depends on ticket #5120.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5879\n\n",
+    "closed_at": "2009-05-21T00:59:30Z",
     "created_at": "2009-04-23T19:27:33Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] Added crystal of letters for type E",
+    "title": "[with patch, positive review] Added crystal of letters for type E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5879",
     "user": "https://github.com/anneschilling"
@@ -23,6 +24,8 @@ Keywords: combinat, crystals
 
 This patch adds crystal of letters for type E corresponding to
 the highest weight crystal B(\Lambda_1) and its dual B(\Lambda_6) (in the sage labeling convention of the Dynkin nodes).
+
+This patch depends on ticket #5120.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5879
 

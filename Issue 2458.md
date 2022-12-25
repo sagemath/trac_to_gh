@@ -1,16 +1,17 @@
-# Issue 2458: bug in linbox's spkg-install: ${SAGE_LCOAL}
+# Issue 2458: [with spkg, positive review] bug in linbox's spkg-install: ${SAGE_LCOAL}
 
 archive/issues_002458.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrancois noted in http://groups.google.com/group/sage-devel/browse_thread/thread/4a902c07ebb7c45d that\n\n```\nIn linbox in the spkg-install file on line 41 we have an interesting\nreference to ${SAGE_LCOAL}. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2458\n\n",
+    "closed_at": "2008-03-10T17:17:51Z",
     "created_at": "2008-03-10T14:47:59Z",
     "labels": [
         "component: linbox",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "bug in linbox's spkg-install: ${SAGE_LCOAL}",
+    "title": "[with spkg, positive review] bug in linbox's spkg-install: ${SAGE_LCOAL}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2458",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

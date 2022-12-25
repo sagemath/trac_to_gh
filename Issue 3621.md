@@ -1,16 +1,17 @@
-# Issue 3621: [with patch, needs review] Finance -- Fix Stock.historical(), addition of enddate input
+# Issue 3621: [with patch,  positive review] sage.finance - add expand and refine finance.Stock
 
 archive/issues_003621.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nCC:  jkantor\n\nKeywords: finance, historical, stock, Stock\n\nThere was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n\nUses the datetime.date python module.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3621\n\n",
+    "closed_at": "2008-11-28T08:35:56Z",
     "created_at": "2008-07-09T00:34:15Z",
     "labels": [
         "component: finance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] Finance -- Fix Stock.historical(), addition of enddate input",
+    "title": "[with patch,  positive review] sage.finance - add expand and refine finance.Stock",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3621",
     "user": "https://github.com/cswiercz"

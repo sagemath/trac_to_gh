@@ -1,9 +1,10 @@
-# Issue 1104: Ideal() should check arguments better
+# Issue 1104: [with patch, positive review] Ideal() should check arguments better
 
 archive/issues_001104.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: ideal arguments\n\n```\nsage: Ideal(3, 5)\nPrincipal ideal (3) of Integer Ring\n```\n\nMisleading!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1104\n\n",
+    "body": "Assignee: somebody\n\nKeywords: ideal arguments, editor_malb\n\n```\nsage: Ideal(3, 5)\nPrincipal ideal (3) of Integer Ring\n```\n\nMisleading!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1104\n\n",
+    "closed_at": "2008-09-30T11:44:47Z",
     "created_at": "2007-11-05T04:21:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_001104.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Ideal() should check arguments better",
+    "title": "[with patch, positive review] Ideal() should check arguments better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1104",
     "user": "https://github.com/ncalexan"
@@ -19,7 +20,7 @@ archive/issues_001104.json:
 ```
 Assignee: somebody
 
-Keywords: ideal arguments
+Keywords: ideal arguments, editor_malb
 
 ```
 sage: Ideal(3, 5)

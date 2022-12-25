@@ -1,16 +1,17 @@
-# Issue 6594: doctest issue in "r.py" (follow-up to #6379)
+# Issue 6594: [with patch, positive review] doctest issue in "r.py" (follow-up to #6379)
 
 archive/issues_006594.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  mvngu\n\nIf the file \"r_commandlist.sobj\" under $DOT_SAGE is missing, the first time you run a doctest over \"r.py\", you'll get:\n\n```\nsage -t  \"devel/sage/sage/interfaces/r.py\"                  \n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.alpha0/devel/sage/sage/interfaces/r.py\", line 838:\n    sage: r.completions('tes')\nExpected:\n    ['testPlatformEquivalence', 'testVirtual']\nGot:\n    <BLANKLINE>\n    Building R command completion list (this takes\n    a few seconds only the first time you do it).\n    To force rebuild later, delete /Users/georgweber/.sage//r_commandlist.sobj.\n    ['testPlatformEquivalence', 'testVirtual']\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_34\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/Shared/sage/sage-4.1.1.alpha0/tmp/.doctest_r.py\n```\nor some error message closely related. If you run the doctest a second time, the failure vanishes, since the file in $DOT_SAGE had been built. But that is not something one wants to happen during doctesting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6594\n\n",
+    "closed_at": "2009-07-23T02:13:10Z",
     "created_at": "2009-07-22T18:43:24Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "doctest issue in \"r.py\" (follow-up to #6379)",
+    "title": "[with patch, positive review] doctest issue in \"r.py\" (follow-up to #6379)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6594",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

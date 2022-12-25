@@ -6,8 +6,7 @@ archive/issues_009772.json:
     "body": "Assignee: @aghitza\n\nCC:  @loefflerd @JohnCremona @williamstein @nthiery boothby @jasongrout @kcrisman @mwhansen justin alexghitza\n\nThis patch will implement abelian groups, both additive and multiplicative, finite and infinite, under a common abstract class, using machinery for quotients of modules over `ZZ`.  This will make subgroups, intersections of subgroups, isomorphism classes, and quotient groups possible.  Generators may be of any type, so long as they support the minimal operations required.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9773\n\n",
     "created_at": "2010-08-20T22:55:53Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Abelian groups",

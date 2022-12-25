@@ -3,11 +3,12 @@
 archive/issues_009896.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @jdemeyer\n\nOn the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), each using gcc 4.5.1, the PARI spkg in 4.6.alpha0 fails to build:\n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o mpqs.o ../src/modules/mpqs.c\n../src/modules/krasner.c: In function 'GetRamifiedPol': \n../src/modules/krasner.c:878:1: error: unrecognizable insn: \n(insn:TI 7910 7861 7937 509 (parallel [ \n            (set (reg:DI 134 f6) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=&f\") 0 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n            (set (reg:DI 135 f7) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=f\") 1 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n        ]) -1 (nil)) \n../src/modules/krasner.c:878:1: internal compiler error: in \nget_attr_first_insn, at config/ia64/itanium2.md:1909 \nPlease submit a full bug report, \nwith preprocessed source if appropriate. \nSee <http://gcc.gnu.org/bugs.html> for instructions. \nmake[3]: *** [krasner.o] Error 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9897\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jdemeyer\n\nOn the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), the PARI spkg in 4.6.alpha0 triggers a **bug in gcc 4.5.1**:\n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o mpqs.o ../src/modules/mpqs.c\n../src/modules/krasner.c: In function 'GetRamifiedPol': \n../src/modules/krasner.c:878:1: error: unrecognizable insn: \n(insn:TI 7910 7861 7937 509 (parallel [ \n            (set (reg:DI 134 f6) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=&f\") 0 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n            (set (reg:DI 135 f7) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=f\") 1 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n        ]) -1 (nil)) \n../src/modules/krasner.c:878:1: internal compiler error: in \nget_attr_first_insn, at config/ia64/itanium2.md:1909 \nPlease submit a full bug report, \nwith preprocessed source if appropriate. \nSee <http://gcc.gnu.org/bugs.html> for instructions. \nmake[3]: *** [krasner.o] Error 1\n```\n\nReported upstream: [http://gcc.gnu.org/bugzilla/show_bug.cgi?id=46044](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=46044)\n\nFixed by #10572.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9897\n\n",
+    "closed_at": "2010-12-10T14:15:12Z",
     "created_at": "2010-09-11T06:08:39Z",
     "labels": [
         "component: packages: standard",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -21,7 +22,7 @@ Assignee: tbd
 
 CC:  @nexttime @jdemeyer
 
-On the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), each using gcc 4.5.1, the PARI spkg in 4.6.alpha0 fails to build:
+On the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), the PARI spkg in 4.6.alpha0 triggers a **bug in gcc 4.5.1**:
 
 ```
 gcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o mpqs.o ../src/modules/mpqs.c
@@ -60,6 +61,10 @@ with preprocessed source if appropriate.
 See <http://gcc.gnu.org/bugs.html> for instructions. 
 make[3]: *** [krasner.o] Error 1
 ```
+
+Reported upstream: [http://gcc.gnu.org/bugzilla/show_bug.cgi?id=46044](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=46044)
+
+Fixed by #10572.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9897
 

@@ -3,7 +3,8 @@
 archive/issues_004954.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: words alphabet\n\nDo\n\n```\nsage: W=Words('ab')\nsage: W.alphabet?\n```\n\nand you get the following help example :\n\n```\nsage: from sage.combinat.words.words import Words_over_Alphabet\nsage: W = Words_over_Alphabet([1,2,3])\nsage: W.alphabet()\n[1, 2, 3]\nsage: from sage.combinat.words.words import OrderedAlphabet\nsage: W = Words_over_Alphabet(OrderedAlphabet('ab'))\nsage: W.alphabet()\nOrdered Alphabet ['a', 'b']\n```\n\nThe first of the above example is misleading. In fact, it is not usable :\n\n```\nsage: from sage.combinat.words.words import Words_over_Alphabet\nsage: W = Words_over_Alphabet([1,2,3])\nsage: W.alphabet()\n[1, 2, 3]\nsage: W([1,1,1,2,1,3])\nTraceback (most recent call last):\n...\nAttributeError: 'list' object has no attribute 'rank'\n```\n\nThe problem comes from the fact that Words_over_Alphabet doesn't check the input alphabet before asigning it to self._alphabet(). It should either do `alphabet=OrderedAlphabet(alphabet)` before or check the type of the input alphabet with a isinstance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4954\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nKeywords: words alphabet\n\nDo\n\n```\nsage: W=Words('ab')\nsage: W.alphabet?\n```\n\nand you get the following help example :\n\n```\nsage: from sage.combinat.words.words import Words_over_Alphabet\nsage: W = Words_over_Alphabet([1,2,3])\nsage: W.alphabet()\n[1, 2, 3]\nsage: from sage.combinat.words.words import OrderedAlphabet\nsage: W = Words_over_Alphabet(OrderedAlphabet('ab'))\nsage: W.alphabet()\nOrdered Alphabet ['a', 'b']\n```\n\nThe first of the above example is misleading. In fact, it is not usable :\n\n```\nsage: from sage.combinat.words.words import Words_over_Alphabet\nsage: W = Words_over_Alphabet([1,2,3])\nsage: W.alphabet()\n[1, 2, 3]\nsage: W([1,1,1,2,1,3])\nTraceback (most recent call last):\n...\nAttributeError: 'list' object has no attribute 'rank'\n```\n\nThe problem comes from the fact that Words_over_Alphabet doesn't check the input alphabet before asigning it to self._alphabet(). It should either do `alphabet=OrderedAlphabet(alphabet)` before or check the type of the input alphabet with a isinstance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4954\n\n",
+    "closed_at": "2009-07-22T20:53:27Z",
     "created_at": "2009-01-07T21:07:20Z",
     "labels": [
         "component: combinatorics",
@@ -16,7 +17,7 @@ archive/issues_004954.json:
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @mwhansen
+Assignee: @seblabbe
 
 CC:  sage-combinat
 

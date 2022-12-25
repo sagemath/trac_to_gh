@@ -4,6 +4,7 @@ archive/issues_009569.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  bedwards @rlmill\n\nNetworkX is being updated to 1.1 on #9567\n\nSeveral new methods are available, and other should be updated.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9569\n\n",
+    "closed_at": "2010-09-12T19:19:10Z",
     "created_at": "2010-07-22T01:27:02Z",
     "labels": [
         "component: graph theory"

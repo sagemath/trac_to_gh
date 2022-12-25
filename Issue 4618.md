@@ -1,57 +1,31 @@
-# Issue 4618: Request for Puiseux series in SAGE
+# Issue 4618: Puiseux series
 
 archive/issues_004618.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mezzarobba @videlec @dkrenn\n\nIn MAGMA, one can have fractional exponents for power series (which it calls Puiseux series), but SAGE does not seem to support this:\n\n```\nsage: PSR.<q>=PowerSeriesRing(QQ)\nsage: q^(1/5)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/ljpk/.sage/temp/sage/2339/_home_ljpk_Eisenstein_sage_9.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:8866)()\n   1131\n   1132\n-> 1133\n   1134\n   1135\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.generic_power_c (sage/structure/element.c:17789)()\n   2601\n   2602\n-> 2603\n   2604\n   2605\n\nNotImplementedError: non-integral exponents not supported\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4618\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mezzarobba @videlec @dkrenn\n\nKeywords: Puiseux, days100\n\nWe provide an implementation of Puiseux series, that is power series in `x^(1/n)` where `n` is an arbitrary integer.\n\nWhen the base ring is an algebraically closed field, this is an algebraically closed field. In other words, any polynomial in `QQ[X,Y]` has a solution in `Y` as a Puiseux series in `X` over `QQbar`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4618\n\n",
+    "closed_at": "2020-01-25T17:27:32Z",
     "created_at": "2008-11-25T17:04:14Z",
     "labels": [
-        "component: linear algebra",
-        "minor",
-        "bug"
+        "component: algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.1",
-    "title": "Request for Puiseux series in SAGE",
+    "title": "Puiseux series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4618",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 CC:  @mezzarobba @videlec @dkrenn
 
-In MAGMA, one can have fractional exponents for power series (which it calls Puiseux series), but SAGE does not seem to support this:
+Keywords: Puiseux, days100
 
-```
-sage: PSR.<q>=PowerSeriesRing(QQ)
-sage: q^(1/5)
----------------------------------------------------------------------------
-NotImplementedError                       Traceback (most recent call last)
+We provide an implementation of Puiseux series, that is power series in `x^(1/n)` where `n` is an arbitrary integer.
 
-/home/ljpk/.sage/temp/sage/2339/_home_ljpk_Eisenstein_sage_9.py in <module>()
-----> 1
-      2
-      3
-      4
-      5
-
-/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:8866)()
-   1131
-   1132
--> 1133
-   1134
-   1135
-
-/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.generic_power_c (sage/structure/element.c:17789)()
-   2601
-   2602
--> 2603
-   2604
-   2605
-
-NotImplementedError: non-integral exponents not supported
-```
+When the base ring is an algebraically closed field, this is an algebraically closed field. In other words, any polynomial in `QQ[X,Y]` has a solution in `Y` as a Puiseux series in `X` over `QQbar`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4618
 

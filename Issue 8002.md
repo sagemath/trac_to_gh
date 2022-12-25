@@ -4,6 +4,7 @@ archive/issues_008002.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe `sage-ptest` parallel doctesting script has some dead code in it: a function `run` that's unused, and a `-sage` flag that triggers a call to a no longer existing `sage-doctest_tex` script.\n\nI'm attaching a patch that cleans this up, and as a side effect allows `sage-ptest` to test files with a `.sage` extension.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8002\n\n",
+    "closed_at": "2010-01-23T10:23:46Z",
     "created_at": "2010-01-19T19:13:52Z",
     "labels": [
         "component: doctest coverage",

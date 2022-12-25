@@ -1,16 +1,17 @@
-# Issue 4247: plotting -- bug in text and pdf export
+# Issue 4247: [with patch; positive review] plotting -- bug in text and pdf export
 
 archive/issues_004247.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0r,0r,0r)).save(SAGE_TMP + 'a.pdf')\n```\nbut this doesn't (big confusing traceback):\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\n\nThe fix will be to make sure text (or whatever) normalizes the rgb input\nparams to all be of type float. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4247\n\n",
+    "closed_at": "2008-10-07T23:21:27Z",
     "created_at": "2008-10-06T21:25:32Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "plotting -- bug in text and pdf export",
+    "title": "[with patch; positive review] plotting -- bug in text and pdf export",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4247",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 4086: [with spkg, needs review] Fix polybori-0.5rc.p3.spkg build issue from vanilla tarball
+# Issue 4086: [with spkg, positive review] Fix polybori-0.5rc.p3.spkg build issue from vanilla tarball
 
 archive/issues_004086.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIn spkg-install we touch pbori.pyx to force a rebuild. But when building from a vanilla tarball that file does not exist and spkg-install exists with a non-zero status and fails. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc2/polybori-0.5rc.p4.spkg\n\nfixes the issue.\n\nBuild tested on x86, x86-64 and Itanium Linux as well as OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4086\n\n",
+    "closed_at": "2008-09-10T02:39:01Z",
     "created_at": "2008-09-09T10:18:04Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] Fix polybori-0.5rc.p3.spkg build issue from vanilla tarball",
+    "title": "[with spkg, positive review] Fix polybori-0.5rc.p3.spkg build issue from vanilla tarball",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4086",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,7 +3,8 @@
 archive/issues_007301.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe Gale-Ryser theorem is about filling a matrix with 0 and 1 when you know the number of 0 and 1 in each column and in each row. \n\nIt would not be too much work to write in Sage a function filling a matrix with 0 and 1 when the data is correct, and returning an error otherwise...\n\nMore informations there : http://mathworld.wolfram.com/Gale-RyserTheorem.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7301\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe Gale-Ryser theorem is about filling a matrix with 0 and 1 when you know the number of 0 and 1 in each column and in each row. \n\nIt would not be too much work to write in Sage a function filling a matrix with 0 and 1 when the data is correct, and returning an error otherwise...\n\nMore informations there : http://mathworld.wolfram.com/Gale-RyserTheorem.html\n\n********** please set #7590 as needing review when this receives a positive review ! ************\n\nIssue created by migration from https://trac.sagemath.org/ticket/7301\n\n",
+    "closed_at": "2010-01-13T08:56:17Z",
     "created_at": "2009-10-25T19:44:48Z",
     "labels": [
         "component: combinatorics"
@@ -24,6 +25,8 @@ The Gale-Ryser theorem is about filling a matrix with 0 and 1 when you know the 
 It would not be too much work to write in Sage a function filling a matrix with 0 and 1 when the data is correct, and returning an error otherwise...
 
 More informations there : http://mathworld.wolfram.com/Gale-RyserTheorem.html
+
+********** please set #7590 as needing review when this receives a positive review ! ************
 
 Issue created by migration from https://trac.sagemath.org/ticket/7301
 

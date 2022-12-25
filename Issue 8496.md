@@ -3,7 +3,8 @@
 archive/issues_008496.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8496\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8496\n\n",
+    "closed_at": "2010-04-19T05:16:32Z",
     "created_at": "2010-03-11T08:14:07Z",
     "labels": [
         "component: elliptic curves"
@@ -15,7 +16,7 @@ archive/issues_008496.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @JohnCremona
+Assignee: @williamstein
 
 
 

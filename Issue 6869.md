@@ -1,15 +1,16 @@
-# Issue 6869: [with patch, needs work] LP and MIP Solvers in Sage ( with symbolics )
+# Issue 6869: [with patch, positive review] LP and MIP Solvers in Sage ( with symbolics )
 
 archive/issues_006869.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @haraldschilly @wdjoyner mvngu\n\nHello everybody !!!\n\nAfter the work done in #6502 I rewrote the whole class taking into account the fact that some people may want to use this class too, instead of just focusing on the fact I needed it quickly to write Graph-Theoretic functions.\n\nHere is the new numerical.MIP class, using symbolics, I hope sufficiently documented and tested, and everything... Thank you for your help !! This should be the last run ;-)\n\nTo use it, you have to install either GLPK from ticket #6867 or Coin-OR CBC from #6868 ( if you have installed a former version, they won't be compatible ! )\n\nThe class and the doctests, though, should behave peacefully if none of them is installed ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6869\n\n",
+    "closed_at": "2009-09-10T11:36:16Z",
     "created_at": "2009-09-02T17:39:06Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs work] LP and MIP Solvers in Sage ( with symbolics )",
+    "title": "[with patch, positive review] LP and MIP Solvers in Sage ( with symbolics )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6869",
     "user": "https://github.com/nathanncohen"

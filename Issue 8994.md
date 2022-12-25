@@ -3,7 +3,7 @@
 archive/issues_008994.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: convolution, convolve, discrete, continuous\n\nWe have convolution scattered in several places, including\n\n```\nsage.rings.polynomial.convolution\nsage.functions.piecewise.PiecewisePolynomial.convolution\nsage.gsl.dft.IndexedSequence.convolution\n```\nThis should be extended to make it easier to use/find and to support more arbitrary inputs, both discrete and continuous.\n\nSee [http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd](http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd) for background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8994\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: convolution, convolve, discrete, continuous\n\nWe have convolution scattered in several places, including\n\n```\nsage.rings.polynomial.convolution\nsage.functions.piecewise_old.PiecewisePolynomial.convolution\nsage.functions.piecewise.PiecewiseFunction.EvaluationMethods.convolution\nsage.gsl.dft.IndexedSequence.convolution\n```\nThis should be extended to make it easier to use/find and to support more arbitrary inputs, both discrete and continuous.\n\nSee [http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd](http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd) for background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8994\n\n",
     "created_at": "2010-05-19T17:21:31Z",
     "labels": [
         "component: symbolics"
@@ -23,7 +23,8 @@ We have convolution scattered in several places, including
 
 ```
 sage.rings.polynomial.convolution
-sage.functions.piecewise.PiecewisePolynomial.convolution
+sage.functions.piecewise_old.PiecewisePolynomial.convolution
+sage.functions.piecewise.PiecewiseFunction.EvaluationMethods.convolution
 sage.gsl.dft.IndexedSequence.convolution
 ```
 This should be extended to make it easier to use/find and to support more arbitrary inputs, both discrete and continuous.

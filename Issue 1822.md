@@ -1,16 +1,17 @@
-# Issue 1822: update documentation for combinat/partition.py
+# Issue 1822: [with patch, posititve review] update documentation for combinat/partition.py
 
 archive/issues_001822.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1822\n\n",
+    "closed_at": "2008-04-06T22:00:13Z",
     "created_at": "2008-01-18T01:04:14Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "update documentation for combinat/partition.py",
+    "title": "[with patch, posititve review] update documentation for combinat/partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1822",
     "user": "https://github.com/mwhansen"

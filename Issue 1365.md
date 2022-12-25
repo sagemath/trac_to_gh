@@ -3,10 +3,11 @@
 archive/issues_001365.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  donmorrison @robertwb\n\nRobert Bradshaw points out that golden_ratio._algebraic_ might as well synthesize the value, instead of using a special-purpose function in qqbar.py (and there's a patch to do this as part of Robert's patch at #1275).  But I want to make qqbar.py a bit more efficient for that case, before making the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1365\n\n",
+    "body": "Assignee: cwitty\n\nCC:  donmorrison @robertwb\n\nRobert Bradshaw points out that golden_ratio._algebraic_ might as well synthesize the value, instead of using a special-purpose function in qqbar.py (and there's a patch to do this as part of Robert's patch at #1275).  But I want to make qqbar.py a bit more efficient for that case, before making the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1365\n\n",
+    "closed_at": "2011-12-17T20:07:04Z",
     "created_at": "2007-12-02T05:28:02Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "golden_ratio._algebraic_() should synthesize the value",
@@ -15,7 +16,7 @@ archive/issues_001365.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
 CC:  donmorrison @robertwb
 

@@ -1,23 +1,23 @@
-# Issue 4822: Tweak to the error message for EllipticCurve
+# Issue 4822: [with patch, positive review] Tweak to the error message for EllipticCurve
 
 archive/issues_004822.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI was using SAGE with the small version of the CremonaDatabase, and tried the following, which does not work because the conductor is too high:\n\n```\nEllipticCurve(\"10001a1\")\n```\n\nI think it would be useful if the error message not only said \"this curve is not in the database\" (which is indeed true) but also checked to see if one was using the small database of curves, and if so told the user how to access the larger version\nusing the incantation\n\n```\n!sage -i database_cremona_ellcurve-2005.11.03\n```\nor otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4822\n\n",
+    "body": "Assignee: @loefflerd\n\nI was using SAGE with the small version of the CremonaDatabase, and tried the following, which does not work because the conductor is too high:\n\n```\nEllipticCurve(\"10001a1\")\n```\n\nI think it would be useful if the error message not only said \"this curve is not in the database\" (which is indeed true) but also checked to see if one was using the small database of curves, and if so told the user how to access the larger version\nusing the incantation\n\n```\n!sage -i database_cremona_ellcurve-2005.11.03\n```\nor otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4822\n\n",
+    "closed_at": "2009-08-25T03:54:05Z",
     "created_at": "2008-12-17T23:47:58Z",
     "labels": [
-        "component: number theory",
-        "minor",
-        "bug"
+        "component: elliptic curves",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Tweak to the error message for EllipticCurve",
+    "title": "[with patch, positive review] Tweak to the error message for EllipticCurve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4822",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 I was using SAGE with the small version of the CremonaDatabase, and tried the following, which does not work because the conductor is too high:
 

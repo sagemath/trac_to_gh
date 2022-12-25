@@ -1,16 +1,17 @@
-# Issue 2415: update NTL to 5.4.2 (bugfix release)
+# Issue 2415: [with spkg, positive review] update NTL to 5.4.2 (bugfix release)
 
 archive/issues_002415.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nChangelog says:\n\n* Fixed a bug in the sub(ZZ_pEX, ZZ_pE, ZZ_pEX) and sub(zz_pEX, zz_pE, zz_pEX) routines (reported by Charanjit Jutla). Under certain circumstances, these could outout wrong answers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2415\n\n",
+    "closed_at": "2008-03-24T17:17:12Z",
     "created_at": "2008-03-07T03:31:08Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "update NTL to 5.4.2 (bugfix release)",
+    "title": "[with spkg, positive review] update NTL to 5.4.2 (bugfix release)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2415",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

@@ -1,16 +1,17 @@
-# Issue 3208: [with patch, needs review] a bunch of small changes to the tutorial
+# Issue 3208: [with patch, positive review] a bunch of small changes to the tutorial
 
 archive/issues_003208.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: tutorial\n\nI've reworded a bunch of things in the first few sections of the tutorial, plus small changes scattered throughout (like changing Sage to \\sage).  As time permits, and if these changes are acceptable, I may get to the later parts.\n\nAside from random rewordings, I made the following changes and/or have the following comments:\n\n1. at various points, I replaced things like $BLAH$ with \\verb+BLAH+ or \\code{BLAH} or \\emph{BLAH}: when converted to html, these other things behave better than $BLAH$.\n\n2. In section 2.2, there is a sentence \"You do not have to specify the types of any of the input arguments.\"  This implies that it's possible to specify those types, I think, so I've removed the words \"have to\".\n\n3. In section 2.3, one of the examples says\n\n```\n sage: I = ComplexField().0\n```\nWhat does the '.0' do?  I can't find out where this might be documented.  Since it's not documented, I've removed its occurrences from this section.  (Replaced with CC(i), for instance.)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3208\n\n",
+    "closed_at": "2008-05-26T17:32:10Z",
     "created_at": "2008-05-15T01:48:59Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] a bunch of small changes to the tutorial",
+    "title": "[with patch, positive review] a bunch of small changes to the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3208",
     "user": "https://github.com/jhpalmieri"

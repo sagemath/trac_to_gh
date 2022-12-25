@@ -3,7 +3,8 @@
 archive/issues_001773.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst\n\n```\nOn 1/13/08, Hector Villafuerte <> wrote:\n> \n> I defined a piecewise function (specifically, a triangular wave) like this:\n> \n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> \n> One can plot it and it looks very nice:\n> \n> sage: tri_wave.plot()\n> \n> But while calculating this integral I get \"ValueError: Value not\n> defined outside of domain.\"\n> \n> sage: integrate(tri_wave(x)^2, x, -1, 3)\n> \n> Is there a way to integrate piecewise-defined functions?\n> As always, thanks for your help,\n\nThis is clearly broken.  As a band-aide, you can at least\nnumerically integrate as follows:\n\nsage: integral_numerical(lambda x: tri_wave(x)^2, -1, 3)\n(1.3333333333333333, 1.4765966227514582e-14)\n\nThe first output (1.3333...) is the answer, and the second is an error bound.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1773\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst\n\n```\nOn 1/13/08, Hector Villafuerte <> wrote:\n> \n> I defined a piecewise function (specifically, a triangular wave) like this:\n> \n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> \n> One can plot it and it looks very nice:\n> \n> sage: tri_wave.plot()\n> \n> But while calculating this integral I get \"ValueError: Value not\n> defined outside of domain.\"\n> \n> sage: integrate(tri_wave(x)^2, x, -1, 3)\n> \n> Is there a way to integrate piecewise-defined functions?\n> As always, thanks for your help,\n\nThis is clearly broken.  As a band-aide, you can at least\nnumerically integrate as follows:\n\nsage: integral_numerical(lambda x: tri_wave(x)^2, -1, 3)\n(1.3333333333333333, 1.4765966227514582e-14)\n\nThe first output (1.3333...) is the answer, and the second is an error bound.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1773\n\n",
+    "closed_at": "2018-12-23T23:41:12Z",
     "created_at": "2008-01-14T06:02:44Z",
     "labels": [
         "component: calculus",
@@ -16,7 +17,7 @@ archive/issues_001773.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 CC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst
 

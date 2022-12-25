@@ -4,6 +4,7 @@ archive/issues_008248.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nKeywords: isogenies\n\nWhen an isogeny is constructed from a kernel polynomial, by default (unless check=False) it is checked whether the given kernel polynomial divides the appropriate division polynomial.  This is expensive when the degree is large (e.g. 163!).\n\nWe provide a small patch which does this checking more efficiently.\n\nThe example in the patch which now takes 20s, used to take many minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8248\n\n",
+    "closed_at": "2010-02-17T00:12:35Z",
     "created_at": "2010-02-12T11:00:54Z",
     "labels": [
         "component: elliptic curves",

@@ -1,9 +1,10 @@
-# Issue 5152: order of abelian group element is a rational number, but should be an integer
+# Issue 5152: [with patch; positive review] order of abelian group element is a rational number, but should be an integer
 
 archive/issues_005152.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe line commented with \"error here???\" below is frightening:\n\n```\nFile: /sage/groups/abelian_gps/abelian_group_element.py\nSource Code (starting at line 268):\n    def order(self):\n        \"\"\"\n        Returns the (finite) order of this element or Infinity if this element\n        does not have finite order.\n \n        EXAMPLES:\n            sage: F = AbelianGroup(3,[7,8,9]); F\n            Multiplicative Abelian Group isomorphic to C7 x C8 x C9\n            sage: F.gens()[2].order()\n            9\n            sage: a,b,c = F.gens()\n            sage: (b*c).order()\n            72\n        \"\"\"\n        M = self.parent()\n        if self == M(1):\n            return Integer(1)\n        invs = M.invariants()\n        if self in M.gens():\n            o = invs[list(M.gens()).index(self)]\n            if o == 0:\n                return infinity\n            return o\n        L = list(self.list())\n        N = LCM([invs[i]/GCD(invs[i],L[i]) for i in range(len(invs)) if L[i]!=0])   ####### error here????\n        if N == 0:\n            return infinity\n        else:\n            return N\n```\n\n\nBut what bugs me about it is:\n\n```\nsage: G = AbelianGroup(3,[7,8,9])\nsage: type((G.0 * G.1).order())\n<type 'sage.rings.rational.Rational'>\n```\n\na simple coercion to Integer at the end of the function would fix this, or using // instead of /.   And add a doctest that has a type check so this doesn't get re-introduced. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5152\n\n",
+    "closed_at": "2009-02-02T18:20:16Z",
     "created_at": "2009-02-01T22:02:43Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_005152.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "order of abelian group element is a rational number, but should be an integer",
+    "title": "[with patch; positive review] order of abelian group element is a rational number, but should be an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5152",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_007480.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis will ease maintenance of javascript. Also, we can compress these and put them in one file later on, with [Juicer](http://cjohansen.no/en/ruby/juicer_a_css_and_javascript_packaging_tool), [Sprockets](http://getsprockets.com/) or [JSTools](http://pypi.python.org/pypi/JSTools/0.1b).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7480\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-11-17T11:58:03Z",
     "labels": [
         "component: notebook",

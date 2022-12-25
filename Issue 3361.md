@@ -1,16 +1,17 @@
-# Issue 3361: fricas install problem.
+# Issue 3361: [with spkg, positive review] Update optional fricas.spkg to 1.0.3 release - make it use clisp again
 
 archive/issues_003361.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis was reported first by John Cremona and discussed in the thread\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/85bb061c36c57527\nEven though William Stein mentioned someone should create a trac ticket for this issue,\nI could not find one, so made this one.\n\nFrom John C's email:\n\n```\nI tried to install fricas (prompted by an earlier thread -- I wonder\nwhich?) but this happened (with 3.0.2 on linux):\n\n axiom_build_bindir =\n/home/jec/sage-3.0.1/spkg/build/fricas-1.0.2/build-dir/build/x86_64-suse-linux/bin\nchecking for gcl... no\nconfigure: error: GCL and GCL sources missing, see README.wh\n***********************************************************\nFailed to configure Axiom.\n***********************************************************\n\nreal    0m0.546s\nuser    0m0.280s\nsys     0m0.268s\nsage: An error occurred while installing fricas-1.0.2\n...\n```\nThe file 'fricas-1.0.2.spkg' from\nhttp://www.sagemath.org/packages/optional\ncame from Burcin Erocal on April 1, 2008. \n\nI can duplicate this problem on amd64 hardy heron (ubuntu 8.04,\non a phenom processor machine), with gcl and binutils-dev installed. \nA similar problem occurs for the older version made by Bill Page at \nhttp://sage.math.washington.edu/home/page/packages/axiom4sage-0.3.1.spkg\n\n- David Joyner\n\nIssue created by migration from https://trac.sagemath.org/ticket/3361\n\n",
+    "closed_at": "2008-07-31T02:10:30Z",
     "created_at": "2008-06-04T16:04:10Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "fricas install problem.",
+    "title": "[with spkg, positive review] Update optional fricas.spkg to 1.0.3 release - make it use clisp again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3361",
     "user": "https://github.com/wdjoyner"

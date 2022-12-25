@@ -7,8 +7,7 @@ archive/issues_003168.json:
     "created_at": "2008-05-12T19:34:17Z",
     "labels": [
         "component: misc",
-        "trivial",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Source introspection does not work for outside Cython extensions",

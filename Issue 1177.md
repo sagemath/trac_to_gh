@@ -1,16 +1,17 @@
-# Issue 1177: update mpfr.spkg to lates 3.2.0-p4
+# Issue 1177: [with spkg] update mpfr.spkg to latest, i.e. 2.3.0-p4
 
 archive/issues_001177.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSummary says it all, I am currently working on this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1177\n\n",
+    "body": "Assignee: mabshoff\n\nSummary says it all, I am currently working on this. I am planning to apply the patch at\n\nhttp://www.mpfr.org/mpfr-current/patches\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1177\n\n",
+    "closed_at": "2007-11-18T06:16:50Z",
     "created_at": "2007-11-15T14:14:47Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "update mpfr.spkg to lates 3.2.0-p4",
+    "title": "[with spkg] update mpfr.spkg to latest, i.e. 2.3.0-p4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1177",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -18,7 +19,9 @@ archive/issues_001177.json:
 ```
 Assignee: mabshoff
 
-Summary says it all, I am currently working on this.
+Summary says it all, I am currently working on this. I am planning to apply the patch at
+
+http://www.mpfr.org/mpfr-current/patches
 
 Cheers,
 

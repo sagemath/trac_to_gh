@@ -1,9 +1,10 @@
-# Issue 4628: [with patch; needs review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd
+# Issue 4628: [with patch; with positive review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd
 
 archive/issues_004628.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4628\n\n",
+    "closed_at": "2008-11-27T02:02:47Z",
     "created_at": "2008-11-26T22:33:45Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004628.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch; needs review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd",
+    "title": "[with patch; with positive review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4628",
     "user": "https://github.com/williamstein"

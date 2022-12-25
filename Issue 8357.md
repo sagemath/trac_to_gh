@@ -1,16 +1,17 @@
-# Issue 8357: Doctesting ell_rational_field.py leaves a file PRIMES in the current directory
+# Issue 8357: eclib: suppress / delete files left by doctests and check, fix building in parallel
 
 archive/issues_008357.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nFrom [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):\n\n```\nWhen I run doctests on the file ell_rational_field.py, I end up with a\nsmall file called PRIMES in the current directory. This shouldn't\nhappen: running doctests shouldn't produce files in a non-temporary\ndirectory.  However, I can't figure out how this file gets there.  In\nparticular, if I delete the following doctests from the rank method,\nthen the file is not produced:\n\n{{{\ndiff -r 23241bd151e3 sage/schemes/elliptic_curves/\nell_rational_field.py\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Thu\nFeb 18 14:25:25 2010 -0800\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed\nFeb 24 20:37:09 2010 -0800\n@@ -1679,14 +1679,6 @@\n             sage: E.minimal_model().rank()\n             1\n\n-        A large example where mwrank doesn't determine the result\nwith certainty::\n-\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n-            0\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n-            Traceback (most recent call last):\n-            ...\n-            RuntimeError: Rank not provably correct.\n         \"\"\"\n         if proof is None:\n             from sage.structure.proof.proof import get_flag\n\n}}}\n\nIf I run these by hand from the command line, though, I don't see the\nfile PRIMES anywhere.  Can someone familiar with the elliptic curves\ncode open a ticket, chase this down, and fix it?\n```\n\nThis is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8357\n\n",
+    "body": "Assignee: @JohnCremona\n\nFrom [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):\n\n```\nWhen I run doctests on the file ell_rational_field.py, I end up with a\nsmall file called PRIMES in the current directory. This shouldn't\nhappen: running doctests shouldn't produce files in a non-temporary\ndirectory.\n[...]\n```\n\nThis is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.\n\nA new spkg is available at\n\n* http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.spkg\n\nIt includes the `PRIMES`, `1`, and `make check` fixes mentioned below and parallel build fixes (cf. #8306). \n\n**Note to release manager:** Merge only the spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8357\n\n",
+    "closed_at": "2010-03-07T00:23:05Z",
     "created_at": "2010-02-25T06:05:03Z",
     "labels": [
         "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Doctesting ell_rational_field.py leaves a file PRIMES in the current directory",
+    "title": "eclib: suppress / delete files left by doctests and check, fix building in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8357",
     "user": "https://github.com/qed777"
@@ -24,42 +25,19 @@ From [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thr
 When I run doctests on the file ell_rational_field.py, I end up with a
 small file called PRIMES in the current directory. This shouldn't
 happen: running doctests shouldn't produce files in a non-temporary
-directory.  However, I can't figure out how this file gets there.  In
-particular, if I delete the following doctests from the rank method,
-then the file is not produced:
-
-{{{
-diff -r 23241bd151e3 sage/schemes/elliptic_curves/
-ell_rational_field.py
---- a/sage/schemes/elliptic_curves/ell_rational_field.py        Thu
-Feb 18 14:25:25 2010 -0800
-+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed
-Feb 24 20:37:09 2010 -0800
-@@ -1679,14 +1679,6 @@
-             sage: E.minimal_model().rank()
-             1
-
--        A large example where mwrank doesn't determine the result
-with certainty::
--
--            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)
--            0
--            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)
--            Traceback (most recent call last):
--            ...
--            RuntimeError: Rank not provably correct.
-         """
-         if proof is None:
-             from sage.structure.proof.proof import get_flag
-
-}}}
-
-If I run these by hand from the command line, though, I don't see the
-file PRIMES anywhere.  Can someone familiar with the elliptic curves
-code open a ticket, chase this down, and fix it?
+directory.
+[...]
 ```
 
 This is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.
+
+A new spkg is available at
+
+* http://sage.math.washington.edu/home/mpatel/trac/8357/eclib-20080310.p10.spkg
+
+It includes the `PRIMES`, `1`, and `make check` fixes mentioned below and parallel build fixes (cf. #8306). 
+
+**Note to release manager:** Merge only the spkg.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8357
 

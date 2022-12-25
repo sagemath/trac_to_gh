@@ -1,16 +1,17 @@
-# Issue 3067: matrices:  numeric_array() is missing an import
+# Issue 3067: [with patch; positive review] matrices:  numeric_array() is missing an import
 
 archive/issues_003067.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis happens for all matrices:\n\n```\nsage: m = matrix([])\nsage: m.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\nsage: q= random_matrix(ZZ,2)\nsage: q.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3067\n\n",
+    "closed_at": "2008-05-01T05:50:37Z",
     "created_at": "2008-04-30T15:23:45Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "matrices:  numeric_array() is missing an import",
+    "title": "[with patch; positive review] matrices:  numeric_array() is missing an import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3067",
     "user": "https://github.com/dfdeshom"

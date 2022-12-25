@@ -3,10 +3,11 @@
 archive/issues_009478.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: latex\n\nI have just discovered the following:\n\n```\nsage: R1.<xi, x> = QQ[]\nsage: print latex(xi*x)\n\\xi x\nsage: R2.<a> = QQ[]\nsage: R3.<xi, x> = R2[]\nsage: print latex(xi*x)\n\\xix\n```\nNotice no space between variables on the last line. Of course, this gives an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9478\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: latex, sd31, beginner\n\nI have just discovered the following:\n\n```\nsage: R1.<xi, x> = QQ[]\nsage: print latex(xi*x)\n\\xi x\nsage: R2.<a> = QQ[]\nsage: R3.<xi, x> = R2[]\nsage: print latex(xi*x)\n\\xix\n```\nNotice no space between variables on the last line. Of course, this gives an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9478\n\n",
+    "closed_at": "2011-07-04T12:02:20Z",
     "created_at": "2010-07-12T01:45:07Z",
     "labels": [
-        "component: symbolics",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
@@ -16,9 +17,9 @@ archive/issues_009478.json:
     "user": "https://github.com/novoselt"
 }
 ```
-Assignee: @burcin
+Assignee: @aghitza
 
-Keywords: latex
+Keywords: latex, sd31, beginner
 
 I have just discovered the following:
 

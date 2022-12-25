@@ -4,6 +4,7 @@ archive/issues_008098.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  polybori @malb @robertwb\n\nI was just grading papers in my class and one student (Andrew Ohana) pointed out in his solution that Sage's solve_mod is massively broken.  For example:\n\n```\nsage: var('x')\nsage: solve_mod([x^2==1], 9)\n[]         # WTF?\n```\nand:\n\n```\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (4,), (5,), (7,)]\n```\n\nEtc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8098\n\n",
+    "closed_at": "2011-01-14T15:49:05Z",
     "created_at": "2010-01-27T23:13:42Z",
     "labels": [
         "component: basic arithmetic",

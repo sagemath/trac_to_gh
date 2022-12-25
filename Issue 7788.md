@@ -1,15 +1,16 @@
-# Issue 7788: followup patch to #5396
+# Issue 7788: followup  to #5396 (wrapping lcalc library)
 
 archive/issues_007788.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro @JohnCremona ylchapuy @robertwb\n\nI am attaching  patchs which adds to the documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7788\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro @JohnCremona ylchapuy @robertwb\n\nI am attaching  patches which adds to the lcalc wrapping documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.\n(Depends on #5396)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7788\n\n",
+    "closed_at": "2010-07-11T02:49:35Z",
     "created_at": "2009-12-29T16:45:25Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "followup patch to #5396",
+    "title": "followup  to #5396 (wrapping lcalc library)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7788",
     "user": "https://github.com/rishikesha"
@@ -19,7 +20,9 @@ Assignee: @williamstein
 
 CC:  @craigcitro @JohnCremona ylchapuy @robertwb
 
-I am attaching  patchs which adds to the documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.
+I am attaching  patches which adds to the lcalc wrapping documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.
+(Depends on #5396)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7788
 

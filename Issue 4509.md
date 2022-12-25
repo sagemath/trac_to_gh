@@ -3,11 +3,12 @@
 archive/issues_004509.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill @rbeezer\n\nI'm still seeing the same segfault that I worked around in the patch on #4505.  Here is code that triggers it for me.\n\n```\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n```\n\nI've added that as a doctest to the planarity code.\n\nFor me, the segfault usually happens on the second run (the \"b =\" line), but occasionally happens on the first run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4509\n\n",
+    "body": "Assignee: ekirkman\n\nCC:  @rlmill @rbeezer\n\nI'm still seeing the same segfault that I worked around in the patch on #4505.  Here is code that triggers it for me.\n\n```\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n```\n\nI've added that as a doctest to the planarity code.\n\nFor me, the segfault usually happens on the second run (the \"b =\" line), but occasionally happens on the first run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4509\n\n",
+    "closed_at": "2010-04-15T05:19:27Z",
     "created_at": "2008-11-13T06:00:16Z",
     "labels": [
         "component: graph theory",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
@@ -17,7 +18,7 @@ archive/issues_004509.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @rlmill
+Assignee: ekirkman
 
 CC:  @rlmill @rbeezer
 

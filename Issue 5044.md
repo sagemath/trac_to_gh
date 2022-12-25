@@ -1,16 +1,18 @@
-# Issue 5044: on some systems mwrank dumps core and crashes on exit when run under pexpect
+# Issue 5044: [with patch; positive review] on some systems mwrank dumps core and crashes on exit when run under pexpect
 
 archive/issues_005044.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nA workaround is to add\n\n```\ndef quit(self, verbose=False):\n    if self._expect is None: return\n    os.kill(self._expect.pid, 9)\n    self._expect = None\n```\nas the last method to interfaces/mwrank.py to override the builtin quit method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5044\n\n",
+    "closed_at": "2009-01-28T13:48:52Z",
     "created_at": "2009-01-21T05:59:52Z",
     "labels": [
         "component: misc",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "on some systems mwrank dumps core and crashes on exit when run under pexpect",
+    "title": "[with patch; positive review] on some systems mwrank dumps core and crashes on exit when run under pexpect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5044",
     "user": "https://github.com/williamstein"

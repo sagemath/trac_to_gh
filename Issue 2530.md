@@ -1,16 +1,17 @@
-# Issue 2530: interact bug -- drop down menu default doesn't show default value
+# Issue 2530: [with patch; positive review] interact bug -- drop down menu default doesn't show default value
 
 archive/issues_002530.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n@interact\ndef _(f = (33,[1..100])):\n    pass\n```\n\nThe drop down should be set to 33 but isn't. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2530\n\n",
+    "closed_at": "2008-03-16T00:55:37Z",
     "created_at": "2008-03-15T06:28:46Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "interact bug -- drop down menu default doesn't show default value",
+    "title": "[with patch; positive review] interact bug -- drop down menu default doesn't show default value",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2530",
     "user": "https://github.com/williamstein"

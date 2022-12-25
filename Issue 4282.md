@@ -1,21 +1,22 @@
-# Issue 4282: [with patch, needs review] symbolic minpoly
+# Issue 4282: [with patch, positive review] symbolic minpoly
 
 archive/issues_004282.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThe current minpoly algorithm on symbolic objects is slow and often fails. This patch makes it work in many more cases, as well as implementing better conversion into QQbar. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4282\n\n",
+    "body": "Assignee: @robertwb\n\nThe current minpoly algorithm on symbolic objects is slow and often fails. This patch makes it work in many more cases, as well as implementing better conversion into QQbar. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4282\n\n",
+    "closed_at": "2008-12-10T07:56:49Z",
     "created_at": "2008-10-14T14:18:11Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] symbolic minpoly",
+    "title": "[with patch, positive review] symbolic minpoly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4282",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @burcin
+Assignee: @robertwb
 
 The current minpoly algorithm on symbolic objects is slow and often fails. This patch makes it work in many more cases, as well as implementing better conversion into QQbar. 
 

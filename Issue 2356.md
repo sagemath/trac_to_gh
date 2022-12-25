@@ -1,22 +1,23 @@
-# Issue 2356: Bug in discrete_log_generic
+# Issue 2356: [with patch, with positive reviews] Bug in discrete_log_generic
 
 archive/issues_002356.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  marshbuck@gmail.com\n\nMarshall Buck reports (email to sage-support 2008-02-29):\n\nProblem 1.  Fails because the list sizes in the baby step giant step\nmethod are too small.\n\nExample. [NB This particular example does *not* fail with 2.10.2]\n\n```\nF.<w> = GF(121)\nv = w^120\nv.log(w)\n```\nbombs with:\n\n```\nFile \"/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/\narith.py\", line 2164, in discrete_log_generic\n   raise ValueError, \"Log of %s to the base %s does not exist.\"%(a,b)\nValueError: Log of 2*w + 10 to the base w does not exist.\n```\nThis can be fixed by changing the append loop to make \"g\"  to {{{range(m\n+1)}}} instead of `range(m)`.  This makes g m+2 long and S2 m-long.  Then {{{(m\n+2)*m >= ord}}}.\n\n```\n   m = ord.isqrt()\n   g = [a]\n   c = b**(-m)\n   S2 = [1]\n   for i in range(m+1):  # suggested line change   ---  was range(m)\n       g.append(g[i]*c)\n       if i < m-1:\n           S2.append(S2[i]*b)\n   for y in g:\n       if y in S2:\n           x = S2.index(y)\n           return Z(m*(g.index(y)) + x)\n```\n\n2. The other problem is the inefficiency in the lookup \" {{{for y in g:\nif y in S2:}}} \".  The work is proportional to  \"ord\", insead of\nproportional to  \"m\" as intended by BSGS method.  It is quicker to do\na set lookup:\n\n```\n S2set = set(S2)\n for y in g:\n     if y in S2set:\n         x = S2.index(y)...\n```\n\n---\n\nComents by John Cremona:\n\n1. Note that this is related to #277\n\n2. I already suggested using a dict for the lookup instead of using lists or sets\n\nI will post a patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2356\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  marshbuck@gmail.com\n\nMarshall Buck reports (email to sage-support 2008-02-29):\n\nProblem 1.  Fails because the list sizes in the baby step giant step\nmethod are too small.\n\nExample. [NB This particular example does *not* fail with 2.10.2]\n\n```\nF.<w> = GF(121)\nv = w^120\nv.log(w)\n```\nbombs with:\n\n```\nFile \"/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/\narith.py\", line 2164, in discrete_log_generic\n   raise ValueError, \"Log of %s to the base %s does not exist.\"%(a,b)\nValueError: Log of 2*w + 10 to the base w does not exist.\n```\nThis can be fixed by changing the append loop to make \"g\"  to {{{range(m\n+1)}}} instead of `range(m)`.  This makes g m+2 long and S2 m-long.  Then {{{(m\n+2)*m >= ord}}}.\n\n```\n   m = ord.isqrt()\n   g = [a]\n   c = b**(-m)\n   S2 = [1]\n   for i in range(m+1):  # suggested line change   ---  was range(m)\n       g.append(g[i]*c)\n       if i < m-1:\n           S2.append(S2[i]*b)\n   for y in g:\n       if y in S2:\n           x = S2.index(y)\n           return Z(m*(g.index(y)) + x)\n```\n\n2. The other problem is the inefficiency in the lookup \" {{{for y in g:\nif y in S2:}}} \".  The work is proportional to  \"ord\", insead of\nproportional to  \"m\" as intended by BSGS method.  It is quicker to do\na set lookup:\n\n```\n S2set = set(S2)\n for y in g:\n     if y in S2set:\n         x = S2.index(y)...\n```\n\n---\n\nComents by John Cremona:\n\n1. Note that this is related to #277\n\n2. I already suggested using a dict for the lookup instead of using lists or sets\n\nI will post a patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2356\n\n",
+    "closed_at": "2008-03-05T00:19:50Z",
     "created_at": "2008-02-29T21:41:10Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Bug in discrete_log_generic",
+    "title": "[with patch, with positive reviews] Bug in discrete_log_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2356",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: joyner
+Assignee: @JohnCremona
 
 CC:  marshbuck@gmail.com
 

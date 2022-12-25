@@ -4,6 +4,7 @@ archive/issues_009423.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: gap interface number field\n\nOriginally motivated by work on #5618, I found two bugs in the Gap interface for number fields, reported [here](http://groups.google.com/group/sage-devel/browse_thread/thread/6518e7f30c02e534).\n\n#8909 has a positive review and seems partially relevant here, so, I started work with the patch from #8909 applied.\n\nWith the new patch, the following works (and is doctested):\n\n```\nsage: L.<tau> = NumberField(x^3-2)\nsage: gap(tau)^3  # note the exclamation mark used by GAP\n!2\nsage: L(gap(tau)^3) # this used to fail\n2\n```\n\n```\nsage: P.<z> = QQ[]  # Note: The var'name is z, not x\nsage: K.<zeta> = NumberField(z^2 - 2)\nsage: k = gap(K)  # this used to fail, as only var'name x was accepted\n```\n\nFixing the second problem, it is needed to avoid a conflict with an internal variable name of a GAP function, namely \"E\". This tests that the conflict is indeed avoided:\n\n```\nsage: P.<E> = QQ[]\nsage: L.<tau> = NumberField(E^3-2)\nsage: gap(L)\n<algebraic extension over the Rationals of degree 3>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9423\n\n",
+    "closed_at": "2011-01-25T08:14:51Z",
     "created_at": "2010-07-04T12:18:57Z",
     "labels": [
         "component: interfaces",

@@ -1,15 +1,16 @@
-# Issue 6819: multinomial to accept lists as argument too
+# Issue 6819: [with patch, positive review] multinomial to accept lists as argument too
 
 archive/issues_006819.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: arithmetic\n\nI have modified multinomial to accept lists as argument too. It makes programming with it much easier\n\nIssue created by migration from https://trac.sagemath.org/ticket/6819\n\n",
+    "closed_at": "2009-08-30T08:42:46Z",
     "created_at": "2009-08-24T18:23:05Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "multinomial to accept lists as argument too",
+    "title": "[with patch, positive review] multinomial to accept lists as argument too",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6819",
     "user": "https://github.com/rishikesha"

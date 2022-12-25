@@ -3,7 +3,8 @@
 archive/issues_000609.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nEither remove the dependency on curses, or make curses a standard sage package.  Test building on more architectures.\n\nAnd, there should be some sort of voting on this in sage-devel by the people who would maintain it.\n\n```\n18:01 < sage> it's different.\n18:01 < sage> getting it to build is different than moving it into standard.\n18:01 < mabshoff> So we use ncurses for now, but once it becomes standard we should remove the dependency.\n18:01 < sage> moving into standard presupposes removing dependencies, worrying about longterm quality and\n              stability, etc.\n}}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/609\n\n",
+    "body": "Assignee: mabshoff\n\nEither remove the dependency on curses, or make curses a standard sage package.  Test building on more architectures.\n\nAnd, there should be some sort of voting on this in sage-devel by the people who would maintain it.\n\n```\n18:01 < sage> it's different.\n18:01 < sage> getting it to build is different than moving it into standard.\n18:01 < mabshoff> So we use ncurses for now, but once it becomes standard we should remove the dependency.\n18:01 < sage> moving into standard presupposes removing dependencies, worrying about longterm quality and\n              stability, etc.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/609\n\n",
+    "closed_at": "2008-08-03T17:25:16Z",
     "created_at": "2007-09-07T01:04:33Z",
     "labels": [
         "component: packages: standard"
@@ -27,7 +28,7 @@ And, there should be some sort of voting on this in sage-devel by the people who
 18:01 < mabshoff> So we use ncurses for now, but once it becomes standard we should remove the dependency.
 18:01 < sage> moving into standard presupposes removing dependencies, worrying about longterm quality and
               stability, etc.
-}}}}
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/609
 

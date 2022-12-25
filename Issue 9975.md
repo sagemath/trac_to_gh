@@ -3,7 +3,8 @@
 archive/issues_009975.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jasongrout @kcrisman @jhpalmieri @novoselt\n\nKeywords: sphinx, documentation\n\nFunctions or methods that have been decorated by generic decorators such as sage.misc.decorators.options (moved from sage.misc.plot.options with Trac #9907) degrade documentation by reducing the signature for these callables to the generic \"(*args, **kwargs)\".\n\nSee also the following sage.devel discussion: http://groups.google.com/group/sage-devel/browse_thread/thread/cbd888f0e60130ff/f533792113c45c2f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9976\n\n",
+    "body": "Assignee: @johanrosenkilde\n\nCC:  @jasongrout @kcrisman @jhpalmieri @novoselt\n\nKeywords: sphinx, documentation, cython inspection\n\nFunctions or methods that have been decorated by generic decorators such as sage.misc.decorators.options (moved from sage.misc.plot.options with Trac #9907) degrade documentation by reducing the signature for these callables to the generic \"(*args, **kwargs)\".\n\nSee also the following sage.devel discussion: http://groups.google.com/group/sage-devel/browse_thread/thread/cbd888f0e60130ff/f533792113c45c2f\n\nLet's say that the advanced patch is the most useful and scalable. So ignore the first one and:\n\nApply \n\n1. [attachment:trac_9976_decorated_generic_sigs_alternative.patch]\n2. [attachment:9976-inspection_of_cython.patch]\n3. [attachment:9976_doc_fixes_v2.patch] \n4. [attachment:9976_notebook_doc_fixes.patch]\n\nNote that the last patch belongs to a different repository!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9976\n\n",
+    "closed_at": "2011-05-03T12:29:37Z",
     "created_at": "2010-09-23T12:07:21Z",
     "labels": [
         "component: documentation"
@@ -15,15 +16,26 @@ archive/issues_009975.json:
     "user": "https://github.com/johanrosenkilde"
 }
 ```
-Assignee: mvngu
+Assignee: @johanrosenkilde
 
 CC:  @jasongrout @kcrisman @jhpalmieri @novoselt
 
-Keywords: sphinx, documentation
+Keywords: sphinx, documentation, cython inspection
 
 Functions or methods that have been decorated by generic decorators such as sage.misc.decorators.options (moved from sage.misc.plot.options with Trac #9907) degrade documentation by reducing the signature for these callables to the generic "(*args, **kwargs)".
 
 See also the following sage.devel discussion: http://groups.google.com/group/sage-devel/browse_thread/thread/cbd888f0e60130ff/f533792113c45c2f
+
+Let's say that the advanced patch is the most useful and scalable. So ignore the first one and:
+
+Apply 
+
+1. [attachment:trac_9976_decorated_generic_sigs_alternative.patch]
+2. [attachment:9976-inspection_of_cython.patch]
+3. [attachment:9976_doc_fixes_v2.patch] 
+4. [attachment:9976_notebook_doc_fixes.patch]
+
+Note that the last patch belongs to a different repository!
 
 Issue created by migration from https://trac.sagemath.org/ticket/9976
 

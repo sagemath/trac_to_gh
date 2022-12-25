@@ -4,6 +4,7 @@ archive/issues_009537.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSee my talk:\n*  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf\n* http://sagenb.org/home/pub/2256/\n\nBasically, this sucks:\n\n```\nsage: n = 20110000038209\nsage: timeit('trial_division(n)')\n125 loops, best of 3: 2.75 ms per loop\n```\n\nEven in pure python one can easily implement this so it runs in about 650microseconds.  In C, it takes only 6 microseconds!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9537\n\n",
+    "closed_at": "2010-07-20T09:21:50Z",
     "created_at": "2010-07-18T14:31:40Z",
     "labels": [
         "component: basic arithmetic",

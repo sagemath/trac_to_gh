@@ -1,9 +1,10 @@
-# Issue 3312: dsage.setup() -- very serious bug
+# Issue 3312: [with patch, positive review] dsage.setup() -- very serious bug
 
 archive/issues_003312.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nDo \n\n```\nsage: dsage.setup()\n```\nand take all the defaults, then do it again immediately but enter a non-default hostname.\nBOOM!\nSee http://sage.pastebin.com/m1ff54979 for a log of this. \n\nThe error involves sqlalchemy table insertion; somebody messed up:\n\n```\n    739         if not self.non_primary and '_class_state' in self.class_.__dict__ and (self.entity_name in self.class_._class_state.mappers):\n--> 740              raise exceptions.ArgumentError(\"Class '%s' already has a primary mapper defined with entity name '%s'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\" % (self.class_, self.entity_name))\n    741 \n    742         def extra_init(class_, oldinit, instance, args, kwargs):\n\nArgumentError: Class '<class 'sage.dsage.database.job.Job'>' already has a primary mapper defined with entity name 'None'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\nsage: \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3312\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: editor_gfurnish\n\nDo \n\n```\nsage: dsage.setup()\n```\nand take all the defaults, then do it again immediately but enter a non-default hostname.\nBOOM!\nSee http://sage.pastebin.com/m1ff54979 for a log of this. \n\nThe error involves sqlalchemy table insertion; somebody messed up:\n\n```\n    739         if not self.non_primary and '_class_state' in self.class_.__dict__ and (self.entity_name in self.class_._class_state.mappers):\n--> 740              raise exceptions.ArgumentError(\"Class '%s' already has a primary mapper defined with entity name '%s'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\" % (self.class_, self.entity_name))\n    741 \n    742         def extra_init(class_, oldinit, instance, args, kwargs):\n\nArgumentError: Class '<class 'sage.dsage.database.job.Job'>' already has a primary mapper defined with entity name 'None'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\nsage: \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3312\n\n",
+    "closed_at": "2008-06-18T04:39:55Z",
     "created_at": "2008-05-27T04:24:16Z",
     "labels": [
         "component: dsage",
@@ -11,13 +12,15 @@ archive/issues_003312.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "dsage.setup() -- very serious bug",
+    "title": "[with patch, positive review] dsage.setup() -- very serious bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3312",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @yqiang
+
+Keywords: editor_gfurnish
 
 Do 
 

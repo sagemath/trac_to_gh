@@ -1,15 +1,16 @@
-# Issue 5840: update SageTeX spkg to version 2.0.2
+# Issue 5840: [with spkg, positive review] update SageTeX spkg to version 2.1.1
 
 archive/issues_005840.json:
 ```json
 {
-    "body": "Assignee: @dandrake\n\nI've made a new spkg for SageTeX. It now has a proper Mercurial repository layout, improved spkg-check, documentation about TeXShop, and more examples.\n\nThe spkg is available from http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.0.2.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5840\n\n",
+    "body": "Assignee: @dandrake\n\nI've made a new spkg for SageTeX. It now has a proper Mercurial repository layout, improved spkg-check, documentation about TeXShop, and more examples.\n\nSee below for the update spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5840\n\n",
+    "closed_at": "2009-06-01T01:17:41Z",
     "created_at": "2009-04-21T04:16:23Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "update SageTeX spkg to version 2.0.2",
+    "title": "[with spkg, positive review] update SageTeX spkg to version 2.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5840",
     "user": "https://github.com/dandrake"
@@ -19,7 +20,7 @@ Assignee: @dandrake
 
 I've made a new spkg for SageTeX. It now has a proper Mercurial repository layout, improved spkg-check, documentation about TeXShop, and more examples.
 
-The spkg is available from http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.0.2.spkg.
+See below for the update spkg.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5840
 

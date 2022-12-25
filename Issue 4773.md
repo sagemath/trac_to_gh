@@ -1,16 +1,17 @@
-# Issue 4773: determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense
+# Issue 4773: [with patch, positive review] determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense
 
 archive/issues_004773.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: w = random_matrix(GF(3),3,4)\nsage: w.determinant()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4773\n\n",
+    "closed_at": "2008-12-13T09:36:19Z",
     "created_at": "2008-12-12T19:34:29Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense",
+    "title": "[with patch, positive review] determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4773",
     "user": "https://github.com/williamstein"

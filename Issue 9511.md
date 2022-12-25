@@ -1,16 +1,17 @@
-# Issue 9511: Suggestion to upgrade givaro 3.3.1 and 3.3.2 [with patch]
+# Issue 9511: Upgrade Givaro to version 3.7.0
 
 archive/issues_009511.json:
 ```json
 {
-    "body": "Assignee: @ClementPernet\n\nCC:  @zimmermann6 jpflori\n\nIn the Mandriva sagemath package I use the attached patch. It did work with sagemath 4.4 and givaro 3.3.1, and still works with sagemath 4.4.4 and givaro 3.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9511\n\n",
+    "body": "Assignee: @ClementPernet\n\nCC:  @zimmermann6 jpflori\n\nGivaro 3.6.x is a requirement for LinBox 1.3.0.\n\n* **Install** http://sage.math.washington.edu/home/malb/spkgs/givaro-3.7.0.spkg\n* **Apply** [attachment:trac_9511_givaro_3_7_x.2.patch]\n\nSee https://bitbucket.org/malb/givaro-spkg for SPKG Repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9511\n\n",
+    "closed_at": "2012-09-05T09:38:26Z",
     "created_at": "2010-07-15T19:51:16Z",
     "labels": [
         "component: finite rings",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Suggestion to upgrade givaro 3.3.1 and 3.3.2 [with patch]",
+    "title": "Upgrade Givaro to version 3.7.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9511",
     "user": "https://trac.sagemath.org/admin/accounts/users/pcpa"
@@ -20,7 +21,12 @@ Assignee: @ClementPernet
 
 CC:  @zimmermann6 jpflori
 
-In the Mandriva sagemath package I use the attached patch. It did work with sagemath 4.4 and givaro 3.3.1, and still works with sagemath 4.4.4 and givaro 3.3.2.
+Givaro 3.6.x is a requirement for LinBox 1.3.0.
+
+* **Install** http://sage.math.washington.edu/home/malb/spkgs/givaro-3.7.0.spkg
+* **Apply** [attachment:trac_9511_givaro_3_7_x.2.patch]
+
+See https://bitbucket.org/malb/givaro-spkg for SPKG Repository.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9511
 

@@ -1,16 +1,17 @@
-# Issue 5347: divides() may fail for 1 on the rhs.
+# Issue 5347: [with patch, positive review] divides() may fail for 1 on the rhs.
 
 archive/issues_005347.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\n```\nsage: K = GF(7)\nsage: K(3).divides(1)\nFalse\nsage: K(3).divides(K(1))\nTraceback (most recent call last)\n...\nZeroDivisionError: reduction modulo right not defined.\n```\n\nThis is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd\n\n```\ndef divides(self, x):\n    return (x % self) == 0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5347\n\n",
+    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\nKeywords: ring element divides\n\n```\nsage: K = GF(7)\nsage: K(3).divides(1)\nFalse\nsage: K(3).divides(K(1))\nTraceback (most recent call last)\n...\nZeroDivisionError: reduction modulo right not defined.\n```\n\nThis is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd\n\n```\ndef divides(self, x):\n    return (x % self) == 0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5347\n\n",
+    "closed_at": "2009-09-09T04:48:58Z",
     "created_at": "2009-02-23T08:21:33Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "divides() may fail for 1 on the rhs.",
+    "title": "[with patch, positive review] divides() may fail for 1 on the rhs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5347",
     "user": "https://github.com/malb"
@@ -19,6 +20,8 @@ archive/issues_005347.json:
 Assignee: somebody
 
 CC:  @mwhansen
+
+Keywords: ring element divides
 
 ```
 sage: K = GF(7)

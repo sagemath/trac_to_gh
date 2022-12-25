@@ -1,9 +1,10 @@
-# Issue 767: animate has cryptic error message when imagemagick is not installed
+# Issue 767: [with patch, positive review] animate has cryptic error message when imagemagick is not installed
 
 archive/issues_000767.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nwhen creating an animated gif on a system without imagemagick installed, the animate() command  just outputs\n\n\"sh: convert: not found\"\n\ninstead of a more helpful error message (such as, \"please install imagemagick\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/767\n\n",
+    "body": "Assignee: boothby\n\nKeywords: animate, ImageMagick\n\nwhen creating an animated gif on a system without imagemagick installed, the animate() command  just outputs\n\n\"sh: convert: not found\"\n\ninstead of a more helpful error message (such as, \"please install imagemagick\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/767\n\n",
+    "closed_at": "2008-09-30T18:16:58Z",
     "created_at": "2007-09-30T22:11:24Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,15 @@ archive/issues_000767.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "animate has cryptic error message when imagemagick is not installed",
+    "title": "[with patch, positive review] animate has cryptic error message when imagemagick is not installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/767",
     "user": "https://github.com/bobmoretti"
 }
 ```
 Assignee: boothby
+
+Keywords: animate, ImageMagick
 
 when creating an animated gif on a system without imagemagick installed, the animate() command  just outputs
 

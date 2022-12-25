@@ -4,10 +4,10 @@ archive/issues_003993.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @williamstein\n\nIn a notebook cell, do\n\n```\nimplicit_multiplication(True)\n2x\n```\n\nIt returns a syntax error.  Things work fine from the command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3993\n\n",
+    "closed_at": "2010-01-02T08:08:25Z",
     "created_at": "2008-08-29T18:00:58Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "implicit multiplication doesn't work in notebook",

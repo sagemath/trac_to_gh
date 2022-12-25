@@ -1,22 +1,23 @@
-# Issue 1621: updagte gd to 2.0.36
+# Issue 1621: [with spkg, positive review] update gd to 2.0.35/update 64 bit OSX support
 
 archive/issues_001621.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1621\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1621\n\n",
+    "closed_at": "2008-08-20T00:18:05Z",
     "created_at": "2007-12-29T04:35:10Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "updagte gd to 2.0.36",
+    "title": "[with spkg, positive review] update gd to 2.0.35/update 64 bit OSX support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1621",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 
 

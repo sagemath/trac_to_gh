@@ -4,6 +4,7 @@ archive/issues_005884.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @wdjoyner\n\nThis might be a side effect of me screwing up at #5697:\n\n```\nsage -t -long \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1/devel/sage/sage/groups/perm_gps/permgroup.py\", line 914:\n   sage: G.random_element()\nExpected:\n   (1,2)(4,5)\nGot:\n   (2,3)(4,5)\n********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5884\n\n",
+    "closed_at": "2009-05-15T14:32:09Z",
     "created_at": "2009-04-24T00:43:57Z",
     "labels": [
         "component: doctest coverage",

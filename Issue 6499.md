@@ -1,9 +1,10 @@
-# Issue 6499: minor formatting and typo in the script sage-location
+# Issue 6499: [with patch, positive review] minor formatting and typo in the script sage-location
 
 archive/issues_006499.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: sage-location\n\nTake a binary distribution of Sage, uncompress it, and start up Sage for the first time. You should see something similar to the following in your terminal:\n\n```\n[mvngu@sage sage-4.1.rc1-x86_64-Linux]$ ./sage \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\n```\nThe message line starting with \"Regenerating Python.pyo...\" overflows the standard terminal width, which is 80 characters. And the name \"SAGE\" should be changed to \"Sage\". This is no big deal, I know, but it occasional annoys me, especially the said long message line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6499\n\n",
+    "closed_at": "2009-07-16T21:21:04Z",
     "created_at": "2009-07-09T11:26:43Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_006499.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "minor formatting and typo in the script sage-location",
+    "title": "[with patch, positive review] minor formatting and typo in the script sage-location",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6499",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

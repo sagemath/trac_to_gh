@@ -1,16 +1,17 @@
-# Issue 4156: [with patch, needs review] memleak in graph_isom
+# Issue 4156: [with patch, positive review] memleak in graph_isom
 
 archive/issues_004156.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nIt's a small one, which is only part of the doctesting part of the code, and the code will soon be removed entirely, but no point letting it leak...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4156\n\n",
+    "closed_at": "2008-09-20T22:01:46Z",
     "created_at": "2008-09-20T08:35:40Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] memleak in graph_isom",
+    "title": "[with patch, positive review] memleak in graph_isom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4156",
     "user": "https://github.com/rlmill"

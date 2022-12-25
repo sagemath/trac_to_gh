@@ -1,16 +1,17 @@
-# Issue 3667: [with patch; needs (easy) review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)
+# Issue 3667: [with patch; positive review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)
 
 archive/issues_003667.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf the user's command log for some reason can't be loaded from disk, currently the notebook\nsimply fails to ever work for them again.  This is not ideal behavior.  This 1-line patches fixes\nthis problem by making the history log empty in this case. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3667\n\n",
+    "closed_at": "2008-07-16T18:27:12Z",
     "created_at": "2008-07-16T07:44:35Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch; needs (easy) review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)",
+    "title": "[with patch; positive review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3667",
     "user": "https://github.com/williamstein"

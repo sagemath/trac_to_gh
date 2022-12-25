@@ -3,10 +3,11 @@
 archive/issues_009513.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nOn my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: \nnetworkx, mercurial (perhaps more to come))\nIn addition in the spkg of scons --prefix is missing completely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9513\n\n",
+    "body": "Assignee: GeorgSWeber\n\nOn my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: \nnetworkx, mercurial (perhaps more to come))\nIn addition in the spkg of scons --prefix is missing completely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9513\n\n",
+    "closed_at": "2010-08-19T06:47:51Z",
     "created_at": "2010-07-15T21:06:03Z",
     "labels": [
-        "component: algebra",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009513.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
-Assignee: @aghitza
+Assignee: GeorgSWeber
 
 On my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: 
 networkx, mercurial (perhaps more to come))

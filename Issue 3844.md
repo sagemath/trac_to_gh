@@ -4,6 +4,7 @@ archive/issues_003844.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf we do the above then one can upload/attach a .py file and import it in the worksheet, which is really sweet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3844\n\n",
+    "closed_at": "2010-01-25T01:14:50Z",
     "created_at": "2008-08-14T00:58:34Z",
     "labels": [
         "component: notebook"

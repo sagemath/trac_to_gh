@@ -1,16 +1,17 @@
-# Issue 1645: erf doesn't evaluate with intervals
+# Issue 1645: [with patch, with positive review] erf doesn't evaluate with intervals
 
 archive/issues_001645.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nThis should either raise an error or give a result:\n\n\n```\na = RealInterval('2.3')\nerf(a)\n```\n\n\nCPU is at about 0%, so it is doing nothing.\n\n---\nmaybe there are other unsupported functions, should be checked out!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1645\n\n",
+    "closed_at": "2008-01-15T03:21:32Z",
     "created_at": "2007-12-31T12:05:23Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "erf doesn't evaluate with intervals",
+    "title": "[with patch, with positive review] erf doesn't evaluate with intervals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1645",
     "user": "https://github.com/haraldschilly"

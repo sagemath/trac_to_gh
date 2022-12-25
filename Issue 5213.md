@@ -1,9 +1,10 @@
-# Issue 5213: [with patch, needs review] make charpoly/minpoly of number field elements use matrix()
+# Issue 5213: [with patch, positive review] make charpoly/minpoly of number field elements use matrix()
 
 archive/issues_005213.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: number field element minpoly charpoly\n\nSage computes charpoly's of large matrices *much* faster than Pari does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5213\n\n",
+    "closed_at": "2009-02-15T13:33:47Z",
     "created_at": "2009-02-09T04:47:01Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_005213.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] make charpoly/minpoly of number field elements use matrix()",
+    "title": "[with patch, positive review] make charpoly/minpoly of number field elements use matrix()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5213",
     "user": "https://github.com/ncalexan"

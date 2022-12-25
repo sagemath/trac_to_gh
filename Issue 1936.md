@@ -1,16 +1,17 @@
-# Issue 1936: r-2.6.1.p11: sage-check fails on OSX 10.5
+# Issue 1936: r-2.6.1.p13: spkg-check fails on OSX 10.5, Linux
 
 archive/issues_001936.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn bsd the following happens:\n\n```\n     missing link(s):  methods methods\n  zScript                           text    html    latex   example\n  zpackages                         text    html    latex   example\n  zutils                            text    html    latex\n  Signals                           text    html    latex\nmake[5]: *** [test-Examples-Base] Error 2\nmake[4]: *** [test-Examples] Error 2\nmake[3]: *** [test-all-basics] Error 1\nmake[2]: *** [check] Error 2\n*************************************\nError testing package ** r-2.6.1.p11 **\n*************************************\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1936\n\n",
+    "closed_at": "2010-02-02T07:01:46Z",
     "created_at": "2008-01-26T10:41:50Z",
     "labels": [
-        "component: packages",
+        "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "r-2.6.1.p11: sage-check fails on OSX 10.5",
+    "title": "r-2.6.1.p13: spkg-check fails on OSX 10.5, Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1936",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

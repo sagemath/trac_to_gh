@@ -1,24 +1,24 @@
-# Issue 1904: elliptic curves -- many period lattice functions just don't work
+# Issue 1904: elliptic curves -- some period lattice functions are not implemented
 
 archive/issues_001904.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
+    "body": "CC:  @loefflerd\n\nKeywords: ecc2011\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
+    "closed_at": "2011-09-17T05:47:22Z",
     "created_at": "2008-01-24T02:46:27Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "elliptic curves -- many period lattice functions just don't work",
+    "title": "elliptic curves -- some period lattice functions are not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1904",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
-
 CC:  @loefflerd
+
+Keywords: ecc2011
 
 ```
 sage: E = EllipticCurve('37a1')

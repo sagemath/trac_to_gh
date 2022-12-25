@@ -1,9 +1,10 @@
-# Issue 6387: Typo in parent.pyx
+# Issue 6387: [with patch, positive review] Typo in parent.pyx
 
 archive/issues_006387.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nKeywords: coercion, typo\n\nIn two places in the action handling code, \"action_hash\" is mistyped as \"action_list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6387\n\n",
+    "closed_at": "2009-07-03T17:22:02Z",
     "created_at": "2009-06-23T02:49:51Z",
     "labels": [
         "component: coercion",
@@ -11,7 +12,7 @@ archive/issues_006387.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Typo in parent.pyx",
+    "title": "[with patch, positive review] Typo in parent.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6387",
     "user": "https://github.com/roed314"

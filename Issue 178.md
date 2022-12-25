@@ -3,7 +3,8 @@
 archive/issues_000178.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: Sage() expect Pexpect\n\nsage: P = Sage()\nsage: P._send('factor(2^250-1)')\nsage: P._get()\n(True, 'factor(2^250-1)\\r\\n251\\r\\n')\nsage: P._get()\n(False, '')\nsage: \n\nThe output from factor(2^250-1) should be:\nsage: factor(2^250-1)\n3 * 11 * 31 * 251 * 601 * 1801 * 4051 * 229668251 * 269089806001 * 4710883168879506001 * 5519485418336288303251\n\nAny idea why it is dropping off chars left and right?\n\nIssue created by migration from https://trac.sagemath.org/ticket/178\n\n",
+    "body": "Assignee: boothby\n\nKeywords: Sage() expect Pexpect\n\n```\nsage: P = Sage()\nsage: P._send('factor(2^250-1)')\nsage: P._get()\n(True, 'factor(2^250-1)\\r\\n251\\r\\n')\nsage: P._get()\n(False, '')\nsage: \n\nThe output from factor(2^250-1) should be:\nsage: factor(2^250-1)\n3 * 11 * 31 * 251 * 601 * 1801 * 4051 * 229668251 * 269089806001 * 4710883168879506001 * 5519485418336288303251\n\nAny idea why it is dropping off chars left and right?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/178\n\n",
+    "closed_at": "2006-12-08T01:31:33Z",
     "created_at": "2006-12-08T01:17:31Z",
     "labels": [
         "component: notebook",
@@ -20,6 +21,7 @@ Assignee: boothby
 
 Keywords: Sage() expect Pexpect
 
+```
 sage: P = Sage()
 sage: P._send('factor(2^250-1)')
 sage: P._get()
@@ -33,6 +35,7 @@ sage: factor(2^250-1)
 3 * 11 * 31 * 251 * 601 * 1801 * 4051 * 229668251 * 269089806001 * 4710883168879506001 * 5519485418336288303251
 
 Any idea why it is dropping off chars left and right?
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/178
 

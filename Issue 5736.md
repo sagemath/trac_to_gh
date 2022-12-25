@@ -1,16 +1,17 @@
-# Issue 5736: Improve doctest coverage for sage/modular/hecke
+# Issue 5736: [with patch, positive review] Improve doctest coverage for sage/modular/hecke
 
 archive/issues_005736.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nThis patch adds many new doctests (mainly in sage/modular/hecke) and adds Brandt modules to the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5736\n\n",
+    "body": "Assignee: @loefflerd\n\nThis patch adds many new doctests (mainly in sage/modular/hecke); adds new sections to the reference manual for the modules abvar.abvar_newform, abvar.morphism, abvar.lseries, ssmod.ssmod, and quatalg.brandt; and fixes several small bugs discovered in the process.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5736\n\n",
+    "closed_at": "2009-05-04T17:57:43Z",
     "created_at": "2009-04-10T19:43:47Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Improve doctest coverage for sage/modular/hecke",
+    "title": "[with patch, positive review] Improve doctest coverage for sage/modular/hecke",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5736",
     "user": "https://github.com/loefflerd"
@@ -18,7 +19,7 @@ archive/issues_005736.json:
 ```
 Assignee: @loefflerd
 
-This patch adds many new doctests (mainly in sage/modular/hecke) and adds Brandt modules to the reference manual.
+This patch adds many new doctests (mainly in sage/modular/hecke); adds new sections to the reference manual for the modules abvar.abvar_newform, abvar.morphism, abvar.lseries, ssmod.ssmod, and quatalg.brandt; and fixes several small bugs discovered in the process.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5736
 

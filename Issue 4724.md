@@ -1,16 +1,16 @@
-# Issue 4724: expose pari's galois and finer number field interfaces
+# Issue 4724: [with patch, positive review] expose pari's galois and finer number field interfaces
 
 archive/issues_004724.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: pari number field nf galois\n\nI would like to use pari's galois computations (such as nfgaloisconj) and finer number field functions (such as nfroots).  The interface (in sage.libs.pari.gen) needs to be upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4724\n\n",
+    "closed_at": "2009-04-13T09:02:29Z",
     "created_at": "2008-12-06T04:05:45Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "expose pari's galois and finer number field interfaces",
+    "title": "[with patch, positive review] expose pari's galois and finer number field interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4724",
     "user": "https://github.com/ncalexan"

@@ -1,15 +1,16 @@
-# Issue 6648: [with patch, needs review] adds riemann mapping and complex interpolation
+# Issue 6648: adds riemann mapping and complex interpolation
 
 archive/issues_006648.json:
 ```json
 {
-    "body": "Assignee: evanandel\n\nCC:  @robertwb\n\nKeywords: complex\n\nThis patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem\n\nIt can compute numerical maps and has multiple utilities for plotting/visualizing the maps.\n\nIt also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6648\n\n",
+    "body": "Assignee: evanandel\n\nCC:  @robertwb\n\nKeywords: complex\n\nThis patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/wiki/Riemann_mapping_theorem\n\nIt can compute numerical maps and has multiple utilities for plotting/visualizing the maps.\n\nIt also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map. \n\nNOTE: This may require the cython 0.11.2spkg to compile.\n\nEDIT: There was a problem with one of my interpolation equations, fixed it + tests. New patch is below first one.\n\nEDIT: More minor fixes, new patch.\n\nEDIT: Again, new patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/6648\n\n",
+    "closed_at": "2010-04-29T05:32:08Z",
     "created_at": "2009-07-28T17:10:46Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "[with patch, needs review] adds riemann mapping and complex interpolation",
+    "title": "adds riemann mapping and complex interpolation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6648",
     "user": "https://trac.sagemath.org/admin/accounts/users/evanandel"
@@ -25,7 +26,15 @@ This patch add's Riemann mapping functionality to sage: http://en.wikipedia.org/
 
 It can compute numerical maps and has multiple utilities for plotting/visualizing the maps.
 
-It also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map.
+It also includes 2 functions to parametrically interpolate lists of complex points. This makes it far easier for the user to define the boundary of the figure that they wish to Riemann map. 
+
+NOTE: This may require the cython 0.11.2spkg to compile.
+
+EDIT: There was a problem with one of my interpolation equations, fixed it + tests. New patch is below first one.
+
+EDIT: More minor fixes, new patch.
+
+EDIT: Again, new patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/6648
 

@@ -4,6 +4,7 @@ archive/issues_009501.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nCC:  mvngu\n\nSimon King mentioned that sometimes his code crashes/leaks/etc.  So make it so one can do:\n\n```\n@fork\ndef f(x,y,z,...):\n    ...\n```\nand then f gets computed in a blocking forked process, and the result is returned via pickling. This is 100% to thwart mem leaks, segfaults, and guaranteed timeout possibility.   This could be basically just a light wrapper around `@`parallel(1).  Also, make a global flag to turn this off, so `@`fork does nothing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9501\n\n",
+    "closed_at": "2010-07-22T08:32:08Z",
     "created_at": "2010-07-14T22:32:17Z",
     "labels": [
         "component: misc",

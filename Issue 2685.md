@@ -1,16 +1,16 @@
-# Issue 2685: [with patch, needs review] compute the girth of a graph
+# Issue 2685: [with patch, positive review] compute the girth of a graph
 
 archive/issues_002685.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe girth of a graph is the length of a smallest cycle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2685\n\n",
+    "closed_at": "2008-03-28T04:50:05Z",
     "created_at": "2008-03-27T19:55:02Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] compute the girth of a graph",
+    "title": "[with patch, positive review] compute the girth of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2685",
     "user": "https://github.com/rlmill"

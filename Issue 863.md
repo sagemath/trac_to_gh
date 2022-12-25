@@ -4,9 +4,10 @@ archive/issues_000863.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/863\n\n",
+    "closed_at": "2007-10-19T21:00:20Z",
     "created_at": "2007-10-12T19:04:35Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",

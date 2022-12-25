@@ -1,16 +1,17 @@
-# Issue 7814: [with spkg; needs review] eclib ignores SAGE64 if OS is not Darwin
+# Issue 7814: eclib ignores SAGE64 if OS is not Darwin
 
 archive/issues_007814.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\neclib-20080310.p7 suffered the usual problem of many packages - SAGE64 was ignored unless the operating system was OS X. This trivial patch simply ensure SAGE64 is not ignored on any platform. \n\nI've checked in the changes with 'hg' \n\nSee: \nhttp://boxen.math.washington.edu/home/kirkby/portability/eclib-20080310.p8/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7814\n\n",
+    "closed_at": "2010-01-13T06:28:55Z",
     "created_at": "2010-01-02T04:53:07Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "[with spkg; needs review] eclib ignores SAGE64 if OS is not Darwin",
+    "title": "eclib ignores SAGE64 if OS is not Darwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7814",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

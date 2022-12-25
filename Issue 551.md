@@ -1,21 +1,22 @@
-# Issue 551: consider changing python to UCS4
+# Issue 551: [with spkg] consider changing python to UCS4
 
 archive/issues_000551.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nWilliam,\n\nI noticed that the Python that comes with SAGE-2.8.3\nstill has UCS2.\n\nAre you still considering changing to UCS4?\n\nJaap\n\n\n\nOn 8/14/07, Jaap Spies <j.spies@hccnet.nl> wrote:\n> See also\n>\n> > http://mail.python.org/pipermail/distutils-sig/2006-July/006579.html\n>\n> for a discussion of Python and UCS2 vs. UCS4\n>\n> Ubuntu and Fedora distribute Python compiled with UCS4.\n> Maybe the Python version of SAGE should comply with the distribution,\n> so for example libboost_python can be used.\n\nI would definitely consider making this change, at least as long as nobody\nsees any major problems with it in the next few days.   One problem is\nthat doing \"sage -upgrade\" will require rebuilding every Python-related thing\ni SAGE, which will be a bit painful.\n\nAnyway, comments?\ngmane.comp.mathematics.sage.devel\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/551\n\n",
+    "body": "Assignee: mabshoff\n\n```\nWilliam,\n\nI noticed that the Python that comes with SAGE-2.8.3\nstill has UCS2.\n\nAre you still considering changing to UCS4?\n\nJaap\n\n\n\nOn 8/14/07, Jaap Spies <j.spies@hccnet.nl> wrote:\n> See also\n>\n> > http://mail.python.org/pipermail/distutils-sig/2006-July/006579.html\n>\n> for a discussion of Python and UCS2 vs. UCS4\n>\n> Ubuntu and Fedora distribute Python compiled with UCS4.\n> Maybe the Python version of SAGE should comply with the distribution,\n> so for example libboost_python can be used.\n\nI would definitely consider making this change, at least as long as nobody\nsees any major problems with it in the next few days.   One problem is\nthat doing \"sage -upgrade\" will require rebuilding every Python-related thing\ni SAGE, which will be a bit painful.\n\nAnyway, comments?\ngmane.comp.mathematics.sage.devel\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/551\n\n",
+    "closed_at": "2008-01-12T18:50:04Z",
     "created_at": "2007-09-01T16:40:14Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "consider changing python to UCS4",
+    "title": "[with spkg] consider changing python to UCS4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/551",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 ```
 William,

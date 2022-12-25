@@ -1,16 +1,17 @@
-# Issue 2680: Modular forms for Gamma1(N) have wrong Sturm bound
+# Issue 2680: [with patch, positive review] Modular forms for Gamma1(N) have wrong Sturm bound
 
 archive/issues_002680.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere are several issues with modular forms for Gamma1. In particular, this breaks:\n\n```\nsage: ModularForms(Gamma1(22))._q_expansion_module()\n```\n\nIt's happening because the Sturm bound is getting calculated incorrectly (if you look at the code, it just looks at the level and takes the index of Gamma0 for that level, which is clearly wrong). This is probably an easy fix, but I don't want to do this hastily and make a mistake, so I'll look at it next week.\n\nI don't think we're going to produce any wrong answers right now -- I think there are just several places where we'll throw errors instead of producing answers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2680\n\n",
+    "closed_at": "2008-04-06T07:13:58Z",
     "created_at": "2008-03-26T23:00:25Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Modular forms for Gamma1(N) have wrong Sturm bound",
+    "title": "[with patch, positive review] Modular forms for Gamma1(N) have wrong Sturm bound",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2680",
     "user": "https://github.com/craigcitro"

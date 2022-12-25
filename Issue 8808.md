@@ -1,16 +1,16 @@
-# Issue 8808: upgrade ecl from 10.2.1 to 10.4.1 (or whatever is newest upstream)
+# Issue 8808: upgrade ecl from 10.2.1 to 10.4.1
 
 archive/issues_008808.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nbruin\n\nDownload the newest tarball from:\n\n   http://sourceforge.net/projects/ecls/\n\nThis *should* also fix #7690.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8808\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nbruin\n\nDownload the newest tarball from:\n\n   http://sourceforge.net/projects/ecls/\n\nThis *should* also fix #7690.\n\nSee #8731 for upgrading Maxima. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8808\n\n",
+    "closed_at": "2010-05-14T21:30:16Z",
     "created_at": "2010-04-28T18:26:36Z",
     "labels": [
-        "component: packages: standard",
-        "critical"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "upgrade ecl from 10.2.1 to 10.4.1 (or whatever is newest upstream)",
+    "title": "upgrade ecl from 10.2.1 to 10.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8808",
     "user": "https://github.com/williamstein"
@@ -25,6 +25,8 @@ Download the newest tarball from:
    http://sourceforge.net/projects/ecls/
 
 This *should* also fix #7690.
+
+See #8731 for upgrading Maxima. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8808
 

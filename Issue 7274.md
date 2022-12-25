@@ -4,6 +4,7 @@ archive/issues_007274.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis is work from Sage Days 16 in Barcelona.\n\nFirst patch implements Edmonds-Karp and Dinic algorithm for DiGraph. Second one uses this implementation to find maximum matching in bipartite graphs.\n\nI also include worksheet with simple usage example.\n\nPlease review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7274\n\n",
+    "closed_at": "2010-10-09T08:35:20Z",
     "created_at": "2009-10-23T21:15:13Z",
     "labels": [
         "component: graph theory"

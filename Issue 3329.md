@@ -3,7 +3,8 @@
 archive/issues_003329.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because it tries to use Singular to take the gcd of multivariate polynomials over a relative number field, and Singular does not support relative number fields.  However, the error message is quite poor; it would be better if it failed with a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3329\n\n",
+    "body": "Assignee: @malb\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because it tries to use Singular to take the gcd of multivariate polynomials over a relative number field, and Singular does not support relative number fields.  However, the error message is quite poor; it would be better if it failed with a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3329\n\n",
+    "closed_at": "2010-01-18T13:08:29Z",
     "created_at": "2008-05-29T17:32:53Z",
     "labels": [
         "component: interfaces",
@@ -16,7 +17,7 @@ archive/issues_003329.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 Consider this example:
 

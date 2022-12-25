@@ -1,16 +1,17 @@
-# Issue 757: Wrap NTL's zz_pX class
+# Issue 757: [with patch] Wrap NTL's zz_pX class
 
 archive/issues_000757.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: ntl\n\nFor fast arithmetic on Z/pZ with small p. \n\nIssue created by migration from https://trac.sagemath.org/ticket/757\n\n",
+    "closed_at": "2007-10-20T07:37:14Z",
     "created_at": "2007-09-28T11:47:42Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "Wrap NTL's zz_pX class",
+    "title": "[with patch] Wrap NTL's zz_pX class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/757",
     "user": "https://github.com/robertwb"

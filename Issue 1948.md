@@ -1,16 +1,17 @@
-# Issue 1948: K.factor_integer needs a name change, since now it does much more
+# Issue 1948: [with patch, positive review] K.factor_integer needs a name change, since now it does much more
 
 archive/issues_001948.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.factor_integer(1/3)\nFractional ideal (3)^-1\nsage: K.factor_integer(1+a)\nFractional ideal (a + 1)\nsage: K.factor_integer(1+a/5)\n(Fractional ideal (-3*a - 2)) * (Fractional ideal (a + 1)) * (Fractional ideal (-a - 2))^-1 * (Fractional ideal (2*a + 1))^-1\nsage: \n```\n\nSo it needs to be named something else.  Suggestions welcome.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1948\n\n",
+    "closed_at": "2008-04-13T15:01:01Z",
     "created_at": "2008-01-27T15:33:16Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "K.factor_integer needs a name change, since now it does much more",
+    "title": "[with patch, positive review] K.factor_integer needs a name change, since now it does much more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1948",
     "user": "https://github.com/williamstein"

@@ -3,10 +3,11 @@
 archive/issues_006437.json:
 ```json
 {
-    "body": "Assignee: tbd\n\npolybori-0.5rc.p7/patches/\n\nDefaultBuild = Default\nif distribute or rpm_generation or deb_generation:\n    def DefaultBuild(arg):\n        return arg\n\ndefaultenv = Environment()\n\ndef sonameprefix(env):\n    if env['PLATFORM']==\"darwin\":\n        return \"-Wl,-dylib_install_name -Wl,\"\n    else:\n        return '-Wl,-soname,'\n\n\nIt needs modifying if the OS is Solaris and the linker is not GNU, but I don't know how to do it. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6437\n\n",
+    "body": "Assignee: drkirkby\n\nKeywords: solaris GNUism sun linker\n\npolybori-0.5rc.p7/patches/\n\nDefaultBuild = Default\nif distribute or rpm_generation or deb_generation:\n    def DefaultBuild(arg):\n        return arg\n\ndefaultenv = Environment()\n\ndef sonameprefix(env):\n    if env['PLATFORM']==\"darwin\":\n        return \"-Wl,-dylib_install_name -Wl,\"\n    else:\n        return '-Wl,-soname,'\n\n\nIt needs modifying if the OS is Solaris and the linker is not GNU, but I don't know how to do it. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6437\n\n",
+    "closed_at": "2009-07-24T00:53:39Z",
     "created_at": "2009-06-28T03:07:24Z",
     "labels": [
-        "component: algebra",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,9 @@ archive/issues_006437.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
+
+Keywords: solaris GNUism sun linker
 
 polybori-0.5rc.p7/patches/
 

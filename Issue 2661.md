@@ -1,16 +1,17 @@
-# Issue 2661: sage cannot compute floor / ceil of log(8)/log(2)
+# Issue 2661: [with patch, positive review] sage cannot compute floor / ceil of log(8)/log(2)
 
 archive/issues_002661.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis happens because the interval remains centered around an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2661\n\n",
+    "closed_at": "2008-03-25T04:48:35Z",
     "created_at": "2008-03-24T20:13:01Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "sage cannot compute floor / ceil of log(8)/log(2)",
+    "title": "[with patch, positive review] sage cannot compute floor / ceil of log(8)/log(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2661",
     "user": "https://github.com/mwhansen"

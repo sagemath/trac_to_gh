@@ -1,22 +1,25 @@
-# Issue 6450: add generic group functions to the documentation
+# Issue 6450: [with patch, positive review] add generic group functions to the documentation
 
 archive/issues_006450.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThose are the functions in sage/groups/generic.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/6450\n\n",
+    "body": "Assignee: tba\n\nKeywords: generic group documentation\n\nThose are the functions in sage/groups/generic.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/6450\n\n",
+    "closed_at": "2009-07-18T19:20:57Z",
     "created_at": "2009-06-30T15:22:01Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "add generic group functions to the documentation",
+    "title": "[with patch, positive review] add generic group functions to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6450",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: tba
+
+Keywords: generic group documentation
 
 Those are the functions in sage/groups/generic.py
 

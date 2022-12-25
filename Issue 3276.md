@@ -1,15 +1,16 @@
-# Issue 3276: [with patch] more generic assumptions in calculus
+# Issue 3276: [with patch, with positive review] more generic assumptions in calculus
 
 archive/issues_003276.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nFor example: \n\n```\nsage: var('n,m')\n(n, m)\nsage: assume(n, m, 'integer')\nsage: sin(n*m*pi)\n0\nsage: forget()\nsage: sin(n*m*pi)\nsin(pi*m*n)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3276\n\n",
+    "closed_at": "2008-06-25T09:15:16Z",
     "created_at": "2008-05-23T08:13:34Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch] more generic assumptions in calculus",
+    "title": "[with patch, with positive review] more generic assumptions in calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3276",
     "user": "https://github.com/robertwb"

@@ -1,16 +1,17 @@
-# Issue 507: Bad error message when running a script
+# Issue 507: [with patch] Bad error message when running a script
 
 archive/issues_000507.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n1. Create a script test.sage with this 1 line\n\n```\nsolve([x==1], x)\n```\n\n2. Run it like so:\n\n```\n  $ sage test.sage\n  Exception exceptions.AttributeError: \"'NoneType' object has no attribute 'ExceptionPexpect'\" in  ignored\n```\n\n3. If you put instead\n\n```\nprint solve([x==1], x)\n```\nthen everything works fine.\n\nClearly there is a bug there, probably with quitting the pexpect interface to maxima. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/507\n\n",
+    "closed_at": "2007-09-20T19:03:05Z",
     "created_at": "2007-08-29T08:16:40Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "Bad error message when running a script",
+    "title": "[with patch] Bad error message when running a script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/507",
     "user": "https://github.com/williamstein"

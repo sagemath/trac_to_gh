@@ -3,7 +3,8 @@
 archive/issues_008233.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThis concerns word represented by str, tuple and list :\n\n```\nsage: u = Word(range(10))\nsage: type(u)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: type(u*u)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n```\nsage: v = Word('asdgadsf')\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n```\nsage: v = Word((2,3,5,21,34,6))\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_tuple'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8233\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nKeywords: word, concatenation\n\nThis concerns word represented by str, tuple and list. \n\n1. We want the representation of a concatenation of two words u and v to be preserved when u and v are of the same data type.\n\nACTUAL BEHAVIOR:\n\n```\nsage: u = Word(range(10))\nsage: type(u)\n<class 'sage.combinat.words.word.FiniteWord_list'>\nsage: type(u*u)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n```\nsage: v = Word('asdgadsf')\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n```\nsage: v = Word((2,3,5,21,34,6))\nsage: type(v)\n<class 'sage.combinat.words.word.FiniteWord_tuple'>\nsage: type(v*v)\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\n2. Moreover, the empty word could be ignored for concatenation :\n\nACTUAL BEHAVIOR:\n\n```\nsage: type(Word([]) * Word('asdga'))\n<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>\n```\n\nINTENDED BEHAVIOR:\n\n```\nsage: type(Word([]) * Word('asdga'))\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8233\n\n",
+    "closed_at": "2010-03-06T08:52:26Z",
     "created_at": "2010-02-10T16:16:17Z",
     "labels": [
         "component: combinatorics"
@@ -19,7 +20,13 @@ Assignee: sage-combinat
 
 CC:  abmasse
 
-This concerns word represented by str, tuple and list :
+Keywords: word, concatenation
+
+This concerns word represented by str, tuple and list. 
+
+1. We want the representation of a concatenation of two words u and v to be preserved when u and v are of the same data type.
+
+ACTUAL BEHAVIOR:
 
 ```
 sage: u = Word(range(10))
@@ -43,6 +50,22 @@ sage: type(v)
 <class 'sage.combinat.words.word.FiniteWord_tuple'>
 sage: type(v*v)
 <class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>
+```
+
+2. Moreover, the empty word could be ignored for concatenation :
+
+ACTUAL BEHAVIOR:
+
+```
+sage: type(Word([]) * Word('asdga'))
+<class 'sage.combinat.words.word.FiniteWord_callable_with_caching'>
+```
+
+INTENDED BEHAVIOR:
+
+```
+sage: type(Word([]) * Word('asdga'))
+<class 'sage.combinat.words.word.FiniteWord_str'>
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8233

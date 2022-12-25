@@ -1,22 +1,23 @@
-# Issue 6451: Fint uses a non-portable option to 'cp' which fails on Solaris.
+# Issue 6451: [with spkg, positive review] Flint uses a non-portable option to 'cp' which fails on Solaris.
 
 archive/issues_006451.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris GNUism\n\nI noticed a problem when building 'sage-4.1.alpha2.spkg'. It complains\n\n```\nld: fatal: library -lflint: not found\n```\n\nBut the flint package indicates it was installed. However, when I tried to build flint again, I see this error message:\n\n```\nDeleting old FLINT\nInstalling new library file\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n        cp [-f] [-i] [-p] [-@] f1 ... fn d1\n        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n```\n\nIt's clear flint is making use of some GNU-specific option to 'cp' The fact the copy fails means of course the library does not get installed.\n\nI'll post a fix later - it should be trivial \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6451\n\n",
+    "body": "Assignee: drkirkby\n\nKeywords: solaris GNUism\n\nI noticed a problem when building 'sage-4.1.alpha2.spkg'. It complains\n\n```\nld: fatal: library -lflint: not found\n```\n\nBut the flint package indicates it was installed. However, when I tried to build flint again, I see this error message:\n\n```\nDeleting old FLINT\nInstalling new library file\ncp: illegal option -- a\nUsage: cp [-f] [-i] [-p] [-@] f1 f2\n        cp [-f] [-i] [-p] [-@] f1 ... fn d1\n        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn\n```\n\nIt's clear flint is making use of some GNU-specific option to 'cp' The fact the copy fails means of course the library does not get installed.\n\nI'll post a fix later - it should be trivial \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6451\n\n",
+    "closed_at": "2009-07-16T21:12:50Z",
     "created_at": "2009-06-30T16:16:14Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Fint uses a non-portable option to 'cp' which fails on Solaris.",
+    "title": "[with spkg, positive review] Flint uses a non-portable option to 'cp' which fails on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6451",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 Keywords: solaris GNUism
 

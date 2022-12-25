@@ -1,22 +1,23 @@
-# Issue 3454: notebook -- email input box has to be filled in before the other input boxes are processed
+# Issue 3454: [with patch, positive review] notebook -- in registration email input box has to be filled in before the other input boxes are processed
 
 archive/issues_003454.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCurrently a user can have the username and password input boxes filled out but will loose that data without being process if the e-mail box isn't filled in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3454\n\n",
+    "body": "Assignee: TimothyClemans\n\nCurrently a user can have the username and password input boxes filled out but will loose that data without being process if the e-mail box isn't filled in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3454\n\n",
+    "closed_at": "2008-06-25T05:57:06Z",
     "created_at": "2008-06-18T00:36:40Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- email input box has to be filled in before the other input boxes are processed",
+    "title": "[with patch, positive review] notebook -- in registration email input box has to be filled in before the other input boxes are processed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3454",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 Currently a user can have the username and password input boxes filled out but will loose that data without being process if the e-mail box isn't filled in.
 

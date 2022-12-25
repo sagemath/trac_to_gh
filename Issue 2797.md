@@ -1,15 +1,16 @@
-# Issue 2797: [with spkg, needs review] fix memleaks in zn_poly
+# Issue 2797: [with spkg, positive review] fix memleaks in zn_poly
 
 archive/issues_002797.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nA minor update to the `zn_poly` spkg I posted a few days ago. This fixes some memory leaks in the test suite and a read from uninitialised memory picked up by valgrind, and retrospectively renames the previous release to `zn_poly-0.8.alpha0` :-)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2797\n\n",
+    "closed_at": "2008-04-04T16:26:56Z",
     "created_at": "2008-04-04T14:22:29Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg, needs review] fix memleaks in zn_poly",
+    "title": "[with spkg, positive review] fix memleaks in zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2797",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

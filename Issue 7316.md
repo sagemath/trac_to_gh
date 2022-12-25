@@ -4,6 +4,7 @@ archive/issues_007316.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nFrom [sage-notebook](http://groups.google.com/group/sage-notebook/browse_frm/thread/28a506759aac37ae):\n\n```\n> I notice that in Sage 4.2, the version of sageinspect in the notebook \n> doesn't match the one in sage.misc -- the one in sagenb/misc is \n> missing the fix from Trac #6848.  As a result, \n> {{{ \n> RDF.random_element? \n> }}} \n> produces incorrect output, as noted on the ticket.  Should this be \n> fixed, or was the fix intentionally omitted because it uses \"eval\"? \n```\nFor the fix, see the patch at #6848, especially the new lines 269-270 (and the associated doctest fixes).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7316\n\n",
+    "closed_at": "2009-11-11T19:49:27Z",
     "created_at": "2009-10-26T23:31:35Z",
     "labels": [
         "component: notebook",

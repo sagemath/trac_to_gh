@@ -3,11 +3,11 @@
 archive/issues_008703.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  @fchapoton sage-combinat vivianepons @darijgr\n\nPatch in preparation in sage-combinat queue\n\nDepends on #8702\n\nIssue created by migration from https://trac.sagemath.org/ticket/8703\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @fchapoton sage-combinat vivianepons @darijgr\n\nKeywords: trees, Cernay2012\n\nThe patch defines several new classes for dealing with \n\n- rooted recursive ordered trees (labelled and not)\n\n- binary trees (labelled and not)\n\nIt also add the computation of the binary search tree and the decreasing or increasing tree for a permutation\n\nIt finally defines the bijection to Dyck words\n\n**Apply:**\n- [attachment:trac_8703-trees-rebased.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8703\n\n",
+    "closed_at": "2013-04-23T09:40:46Z",
     "created_at": "2010-04-17T09:36:21Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "Combinatorial Rooted Ordered and Binary Trees",
@@ -20,9 +20,21 @@ Assignee: @hivert
 
 CC:  @fchapoton sage-combinat vivianepons @darijgr
 
-Patch in preparation in sage-combinat queue
+Keywords: trees, Cernay2012
 
-Depends on #8702
+The patch defines several new classes for dealing with 
+
+- rooted recursive ordered trees (labelled and not)
+
+- binary trees (labelled and not)
+
+It also add the computation of the binary search tree and the decreasing or increasing tree for a permutation
+
+It finally defines the bijection to Dyck words
+
+**Apply:**
+- [attachment:trac_8703-trees-rebased.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8703
 

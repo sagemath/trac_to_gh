@@ -1,9 +1,10 @@
-# Issue 5898: Plot Field doc
+# Issue 5898: [with patch, positive review] Plot Field doc
 
 archive/issues_005898.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere are a few minor bugs in plot_field.py which should be fixed, e.g. importing math.sqrt when in fact the symbolic square root is imported shortly thereafter (and correctly).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5898\n\n",
+    "closed_at": "2009-04-30T05:37:06Z",
     "created_at": "2009-04-26T02:22:12Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005898.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Plot Field doc",
+    "title": "[with patch, positive review] Plot Field doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5898",
     "user": "https://github.com/kcrisman"

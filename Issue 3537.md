@@ -1,27 +1,44 @@
-# Issue 3537: [with patch, needs review] sage-env breaks makefile RM
+# Issue 3537: Change $RM in sage-env
 
 archive/issues_003537.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mabshoff snark drkirkby @jdemeyer\n\nThe env variable RM is set to rm instead of rm -rf.  This breaks some functionality of make (such as compiling .l files) which breaks the ability to compile M2 with sage-env sourced.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3537\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  mabshoff snark drkirkby @jdemeyer\n\nThe env variable RM is set to `rm` instead of `rm -f`. This breaks newer libtools, for example anything in Fedora 12 or later (libtool 2.2.6, autoconf 2.63, automake 1.11.1). They assume that `$RM` is either unset or `RM=\"rm -f\"`, that is, deleting non-existing files must not cause an error.\n\nOne of the symptoms of this breakage is that configure ends with\n\n```\nrm: cannot remove `libtoolT': No such file or directory\n```\nCompile will break later on...\n\n---\n\nThere are three approaches presented here:\n\n- change $RM from \"rm\" to \"rm -f\": [attachment:trac_3537_scripts.patch]\n- keep $RM as it is, but document it: [attachment:trac_3537-doc.patch] (needs_work)\n- don't set $RM at all: [attachment:trac_3537-unset-RM.patch]\n\nApply [attachment:trac_3537-unset-RM.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/3537\n\n",
+    "closed_at": "2011-05-17T08:47:22Z",
     "created_at": "2008-06-30T03:24:02Z",
     "labels": [
-        "component: build",
-        "blocker",
+        "component: scripts",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "[with patch, needs review] sage-env breaks makefile RM",
+    "title": "Change $RM in sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3537",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 CC:  mabshoff snark drkirkby @jdemeyer
 
-The env variable RM is set to rm instead of rm -rf.  This breaks some functionality of make (such as compiling .l files) which breaks the ability to compile M2 with sage-env sourced.
+The env variable RM is set to `rm` instead of `rm -f`. This breaks newer libtools, for example anything in Fedora 12 or later (libtool 2.2.6, autoconf 2.63, automake 1.11.1). They assume that `$RM` is either unset or `RM="rm -f"`, that is, deleting non-existing files must not cause an error.
+
+One of the symptoms of this breakage is that configure ends with
+
+```
+rm: cannot remove `libtoolT': No such file or directory
+```
+Compile will break later on...
+
+---
+
+There are three approaches presented here:
+
+- change $RM from "rm" to "rm -f": [attachment:trac_3537_scripts.patch]
+- keep $RM as it is, but document it: [attachment:trac_3537-doc.patch] (needs_work)
+- don't set $RM at all: [attachment:trac_3537-unset-RM.patch]
+
+Apply [attachment:trac_3537-unset-RM.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/3537
 

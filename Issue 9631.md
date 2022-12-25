@@ -3,7 +3,8 @@
 archive/issues_009631.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nWe merged #9501 in Sage 4.5.2.alpha1 but backed it out entirely in 4.5.2.rc0 (cf. #9616), because a Network File System (NFS) problem on the Sage cluster gives frequent doctest failures.\n\nPlease see #9501 and #9616 for discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9631\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nWe merged #9501 in Sage 4.5.2.alpha1 but backed it out entirely in 4.5.2.rc0 (cf. #9616), because a Network File System (NFS) problem on the Sage cluster gives frequent doctest failures.\n\nPlease see #9501 and #9616 for discussion.\n\nApply [attachment:trac_9631-fork_decorator.5.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9631\n\n",
+    "closed_at": "2011-08-18T22:01:53Z",
     "created_at": "2010-07-29T05:12:06Z",
     "labels": [
         "component: misc",
@@ -23,6 +24,8 @@ CC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein
 We merged #9501 in Sage 4.5.2.alpha1 but backed it out entirely in 4.5.2.rc0 (cf. #9616), because a Network File System (NFS) problem on the Sage cluster gives frequent doctest failures.
 
 Please see #9501 and #9616 for discussion.
+
+Apply [attachment:trac_9631-fork_decorator.5.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9631
 

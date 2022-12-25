@@ -1,15 +1,16 @@
-# Issue 6438: Upgrade to Cython 0.11.2
+# Issue 6438: [with spkg, positive review] Upgrade to Cython 0.11.2
 
 archive/issues_006438.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAt the very least, native complex support will be valuable. \n\nThe spkg at http://sage.math.washington.edu/home/robertwb/cython/ built and passed all doctests a couple of versions back. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6438\n\n",
+    "closed_at": "2009-07-24T13:41:08Z",
     "created_at": "2009-06-28T09:03:55Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Upgrade to Cython 0.11.2",
+    "title": "[with spkg, positive review] Upgrade to Cython 0.11.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6438",
     "user": "https://github.com/robertwb"

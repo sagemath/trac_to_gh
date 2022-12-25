@@ -3,11 +3,10 @@
 archive/issues_004896.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMake it so all the following work:\n\n```\nsage: magma(QQ['x,y'].0).sage()\n```\n\nNote that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:\n\n```\nsage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()\n```\nafter applying #4779.\n\nWhen the above loop runs for \"a while\" without crashing (after applying #4779), then this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4896\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: magma\n\nMake it so all the following work:\n\n```\nsage: magma(QQ['x,y'].0).sage()\n```\n\nNote that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:\n\n```\nsage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()\n```\nafter applying #4779.\n\nWhen the above loop runs for \"a while\" without crashing (after applying #4779), then this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4896\n\n",
     "created_at": "2008-12-31T02:33:36Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "fill in missing magma --> sage conversions",
@@ -17,6 +16,8 @@ archive/issues_004896.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: magma
 
 Make it so all the following work:
 

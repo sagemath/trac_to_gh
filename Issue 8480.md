@@ -3,7 +3,8 @@
 archive/issues_008480.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nIn preparation for new additions to the Sage standard documentation (cf. #8470), the current ticket first cleans up the web page of the standard documentation. This page lists all the documents that comprise the Sage standard documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8480\n\n",
+    "body": "Assignee: mvngu\n\nIn preparation for new additions to the Sage standard documentation (cf. #8470), the current ticket first cleans up the web page of the standard documentation. This page lists all the documents that comprise the Sage standard documentation.\n\n\n\n**Notes:** This is a prerequisite for #8470.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8480\n\n",
+    "closed_at": "2010-03-12T04:50:15Z",
     "created_at": "2010-03-07T22:02:52Z",
     "labels": [
         "component: documentation"
@@ -18,6 +19,10 @@ archive/issues_008480.json:
 Assignee: mvngu
 
 In preparation for new additions to the Sage standard documentation (cf. #8470), the current ticket first cleans up the web page of the standard documentation. This page lists all the documents that comprise the Sage standard documentation.
+
+
+
+**Notes:** This is a prerequisite for #8470.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8480
 

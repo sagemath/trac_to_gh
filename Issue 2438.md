@@ -3,7 +3,8 @@
 archive/issues_002438.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2438\n\n",
+    "body": "Assignee: tba\n\nwhoops.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2438\n\n",
+    "closed_at": "2008-03-09T18:13:27Z",
     "created_at": "2008-03-09T17:30:49Z",
     "labels": [
         "component: documentation",
@@ -18,7 +19,7 @@ archive/issues_002438.json:
 ```
 Assignee: tba
 
-
+whoops.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2438
 

@@ -3,10 +3,12 @@
 archive/issues_008069.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal\t0m15.129s\nuser\t0m7.916s\nsys\t0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal 0m15.129s\nuser 0m7.916s\nsys 0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
+    "closed_at": "2010-02-11T15:17:40Z",
     "created_at": "2010-01-26T00:01:49Z",
     "labels": [
-        "component: porting"
+        "component: porting",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New mpfi-1.3.4-cvs20071125.p8.spkg works with Open Solaris 64 bit",
@@ -29,9 +31,9 @@ The spkg is here:
 make[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'
 make[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'
 
-real	0m15.129s
-user	0m7.916s
-sys	0m6.259s
+real 0m15.129s
+user 0m7.916s
+sys 0m6.259s
 Successfully installed mpfi-1.3.4-cvs20071125.p8
 You can safely delete the temporary build directory
 /export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8
@@ -44,6 +46,8 @@ jaap@opensolaris:~/Downloads/sage-4.3.1$
 ```
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8069
 

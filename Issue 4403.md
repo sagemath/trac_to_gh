@@ -1,22 +1,23 @@
-# Issue 4403: Fix "Install from Source Code" section in "Sage Installation Guide"
+# Issue 4403: [with patch, positive review] Fix "Install from Source Code" section in "Sage Installation Guide"
 
 archive/issues_004403.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nFix the following issues in section 3:\n\n* We do support gcc 4.3\n* We are not working on SunForte or Intel CC support\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4403\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nFix the following issues in section 3:\n\n* We do support gcc 4.3\n* We are not working on SunForte or Intel CC support\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4403\n\n",
+    "closed_at": "2008-11-21T23:07:12Z",
     "created_at": "2008-10-30T18:12:07Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Fix \"Install from Source Code\" section in \"Sage Installation Guide\"",
+    "title": "[with patch, positive review] Fix \"Install from Source Code\" section in \"Sage Installation Guide\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4403",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 CC:  @mwhansen
 

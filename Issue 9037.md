@@ -4,6 +4,7 @@ archive/issues_009037.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of 'pynac' has:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\nso obviously does not attempt to build 64-bit when SAGE64=\"yes\", unless the operating systems is OS X. \n\nThe build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. \n\n```\nsage: An error occurred while installing pynac-0.1.12\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9037\n\n",
+    "closed_at": "2010-06-03T15:34:36Z",
     "created_at": "2010-05-24T17:04:56Z",
     "labels": [
         "component: porting: solaris",

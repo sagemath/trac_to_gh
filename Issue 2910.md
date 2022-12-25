@@ -4,6 +4,7 @@ archive/issues_002910.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  timothyclemans\n\nThis behavior is inconsistent and could lead to horrible bugs:\n\n```\nsage: int('070')\n70\nsage: Integer('070')\n56\n```\n\nBecause Sage uses Python instead of inventing its own language, there\nare issues like this.   The only options to fix this problem\nare (a) make int('070') return 56 or (b) make Integer('070') return 70.\nIrregardless of what Sage *should* do, (a) is not an option since it\nrequires changing the Python interpreter, and an axiom of Sage development\nis that we will never do that.  So (b) it is.   To resolve this trac tick\none must thus do (b).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2910\n\n",
+    "closed_at": "2009-01-23T10:10:34Z",
     "created_at": "2008-04-13T19:11:36Z",
     "labels": [
         "component: coercion",

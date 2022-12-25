@@ -1,16 +1,17 @@
-# Issue 3178: add 64 bit OSX build support to freetype
+# Issue 3178: [with spkg, with positive review] add 64 bit OSX build support to freetype
 
 archive/issues_003178.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3178\n\n",
+    "closed_at": "2008-05-19T03:16:06Z",
     "created_at": "2008-05-13T11:17:31Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to freetype",
+    "title": "[with spkg, with positive review] add 64 bit OSX build support to freetype",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3178",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 4428: [with patch, needs review] Forgot to close open files in sage/rings/number_field/totallyreal_phc.py
+# Issue 4428: [with patch, positive review] Forgot to close open files in sage/rings/number_field/totallyreal_phc.py
 
 archive/issues_004428.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI forgot to close the file handles opened by `popen2` in my fix for #4386. The attached patch cleans this up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4428\n\n",
+    "closed_at": "2008-11-04T21:33:49Z",
     "created_at": "2008-11-02T22:35:53Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Forgot to close open files in sage/rings/number_field/totallyreal_phc.py",
+    "title": "[with patch, positive review] Forgot to close open files in sage/rings/number_field/totallyreal_phc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4428",
     "user": "https://github.com/craigcitro"

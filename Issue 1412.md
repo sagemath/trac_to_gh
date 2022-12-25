@@ -1,16 +1,17 @@
-# Issue 1412: creating directory in notebook cell #x makes evaluation of cell #x hang
+# Issue 1412: [with patch, with postive review] creating directory in notebook cell #x makes evaluation of cell #x hang
 
 archive/issues_001412.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nExecuting the following in a notebook cell works exactly once.  If one tries to re-evaluate the cell, an OSError is hit by the server, the evaluation never terminates nor does any work.\n\n```\nos.mkdir(\"tmp\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1412\n\n",
+    "closed_at": "2007-12-09T15:08:36Z",
     "created_at": "2007-12-06T19:25:23Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "creating directory in notebook cell #x makes evaluation of cell #x hang",
+    "title": "[with patch, with postive review] creating directory in notebook cell #x makes evaluation of cell #x hang",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1412",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

@@ -4,6 +4,7 @@ archive/issues_003468.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  boothby rpw wstein @burcin\n\nThe Database is here: \n\n   http://www.risc.uni-linz.ac.at/Groebner-Bases-Implementations/\n\nWe were invited to add Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3468\n\n",
+    "closed_at": "2017-12-12T08:23:33Z",
     "created_at": "2008-06-19T03:47:21Z",
     "labels": [
         "component: misc"

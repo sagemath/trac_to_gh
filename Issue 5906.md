@@ -1,16 +1,17 @@
-# Issue 5906: "libpng error: Image width or height is zero in IHDR" when plotting CompleteGraph(2)
+# Issue 5906: [with patch, positive review] "libpng error: Image width or height is zero in IHDR" when plotting CompleteGraph(2)
 
 archive/issues_005906.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g = graphs.CompleteGraph(2)\nsage: g.show()\nlibpng error: Image width or height is zero in IHDR\n<SNIP>\n```\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5906\n\n",
+    "closed_at": "2009-05-04T18:41:04Z",
     "created_at": "2009-04-26T21:47:04Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "\"libpng error: Image width or height is zero in IHDR\" when plotting CompleteGraph(2)",
+    "title": "[with patch, positive review] \"libpng error: Image width or height is zero in IHDR\" when plotting CompleteGraph(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5906",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 6378: make sage -merge more user-friendly
+# Issue 6378: [with second patch, needs review] make sage -merge more user-friendly
 
 archive/issues_006378.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @craigcitro @nexttime\n\nA few features would be nice to add to sage -merge:\n\n1. Ask all questions at the start instead of between tickets (that way, the user can kick off the process and just wait until it finishes, instead of having to check back every 20 minutes)\n2. Display comments with the patches\n3. Email a final report\n\nAlso, sage -merge doesn't properly handle the '-a -f' combination.  Fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6378\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro @nexttime\n\nA few features would be nice to add to sage -merge:\n\n1. Ask all questions at the start instead of between tickets (that way, the user can kick off the process and just wait until it finishes, instead of having to check back every 20 minutes)\n2. Display comments with the patches\n\nAlso, sage -merge doesn't properly handle the '-a -f' combination.  Fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6378\n\n",
+    "closed_at": "2013-05-22T09:24:20Z",
     "created_at": "2009-06-21T19:32:32Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: scripts",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "make sage -merge more user-friendly",
+    "title": "[with second patch, needs review] make sage -merge more user-friendly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6378",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -24,7 +25,6 @@ A few features would be nice to add to sage -merge:
 
 1. Ask all questions at the start instead of between tickets (that way, the user can kick off the process and just wait until it finishes, instead of having to check back every 20 minutes)
 2. Display comments with the patches
-3. Email a final report
 
 Also, sage -merge doesn't properly handle the '-a -f' combination.  Fix that.
 

@@ -3,7 +3,8 @@
 archive/issues_002999.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nPackages which seem to not honor CC environment variable (they use \"gcc\"):\n\n```\nflint-1.06.p2\natlas-3.8.1.p1\nf2c-20070816.p0\nsymmetrica-2.0.p2\npolybori-0.3.1.p1\nrubiks-20070912.p5\nzn_poly-0.8.p0\nsage-3.0.rc1\ngap-4.4.10.p7 // guava3.4\ntachyon-0.98beta.p5\npalp-1.1.p1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2999\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nPackages which seem to not honor the `CC` environment variable (they use \"`gcc`\"):\n\n```\nflint-1.06.p2\natlas-3.8.1.p1\nf2c-20070816.p0\nsymmetrica-2.0.p2\npolybori-0.3.1.p1\nrubiks-20070912.p5\nzn_poly-0.8.p0\nsage-3.0.rc1\ngap-4.4.10.p7 // guava3.4\ntachyon-0.98beta.p5\npalp-1.1.p1\n```\n\n---\n\n## Still not fixed:\n\n* `ratpoints-2.1.3.p2` (see #12682)\n* `zn_poly-0.9.p5` (see #12433)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2999\n\n",
+    "closed_at": "2012-03-04T21:25:51Z",
     "created_at": "2008-04-22T16:42:08Z",
     "labels": [
         "component: build",
@@ -21,7 +22,7 @@ Assignee: mabshoff
 
 CC:  @orlitzky
 
-Packages which seem to not honor CC environment variable (they use "gcc"):
+Packages which seem to not honor the `CC` environment variable (they use "`gcc`"):
 
 ```
 flint-1.06.p2
@@ -36,6 +37,14 @@ gap-4.4.10.p7 // guava3.4
 tachyon-0.98beta.p5
 palp-1.1.p1
 ```
+
+---
+
+## Still not fixed:
+
+* `ratpoints-2.1.3.p2` (see #12682)
+* `zn_poly-0.9.p5` (see #12433)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2999
 

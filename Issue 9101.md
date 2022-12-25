@@ -1,16 +1,17 @@
-# Issue 9101: linbox reports "ERROR: BLAS not found!" on 64-bit SPARC build
+# Issue 9101: linbox reports "ERROR: BLAS not found!" on Solaris 10 SPARC (64-bit build).
 
 archive/issues_009101.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu @jaapspies @jhpalmieri\n\nTrying to compile Sage as 64-bit on SPARC, I get an error with linbox:\n\n```\nchecking whether GMP is 4.0 or greater... yes\nchecking whether GMP was compiled with --enable-cxx... yes\nchecking for NTL >= 5.0... found\nchecking for GIVARO >= 3.2.10... found\nchecking whether to compile the sage interface... yes\nchecking for C interface to BLAS... not found\nchecking for others BLAS... not found\n\n*******************************************************************************\n ERROR: BLAS not found!\n\n BLAS routines are required for this library to compile. Please\n make sure BLAS are installed and specify its location with the option\n --with-blas=<lib> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m32.070s\nuser    0m15.156s\nsys     0m12.915s\nsage: An error occurred while installing linbox-1.1.6.p3\n```\n\nNo such error occurs when building linbox on OpenSolaris in 64-bit mode. \n\nThis looks to me like it might be an error in spkg/standard/deps, as there is nothing there as far as I can see \n\n```\n$(INST)/$(LINBOX): $(BASE) $(INST)/$(MPIR) $(INST)/$(NTL) $(INST)/$(GIVARO) $(INST)/$(GSL) $(INST)/$(ATLAS)\n        $(SAGE_SPKG) $(LINBOX) 2>&1\n\n```\n\nto make linbox dependent on BLAS. The BLAS library is not failing to install - it does not try to install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9101\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu @jaapspies @jhpalmieri\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n## How gcc was configured\n\n```\ndrkirkby@redstart:~$ gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC) \n```\n\n == Sage build process ==\nThis used Sage 4.4.3.alpha0, but with numerous patches to allow a 64-bit build. At that point, only the zlib and fortran packages had changes for 64-bit and were built. SAGE64 exported to \"yes\", so it was a 64-bit build. \n\nThis is the first time I've **seriously** tried a 64-bit build on Solaris 10 SPARC. \n\n## The problem\nI get an error with linbox:\n\n```\nchecking whether GMP is 4.0 or greater... yes\nchecking whether GMP was compiled with --enable-cxx... yes\nchecking for NTL >= 5.0... found\nchecking for GIVARO >= 3.2.10... found\nchecking whether to compile the sage interface... yes\nchecking for C interface to BLAS... not found\nchecking for others BLAS... not found\n\n*******************************************************************************\n ERROR: BLAS not found!\n\n BLAS routines are required for this library to compile. Please\n make sure BLAS are installed and specify its location with the option\n --with-blas=<lib> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m32.070s\nuser    0m15.156s\nsys     0m12.915s\nsage: An error occurred while installing linbox-1.1.6.p3\n```\n\nNo such error occurs when building linbox on OpenSolaris in 64-bit mode. \n\nThis looks to me like it might be an error in spkg/standard/deps, as there is nothing there as far as I can see \n\n```\n$(INST)/$(LINBOX): $(BASE) $(INST)/$(MPIR) $(INST)/$(NTL) $(INST)/$(GIVARO) $(INST)/$(GSL) $(INST)/$(ATLAS)\n        $(SAGE_SPKG) $(LINBOX) 2>&1\n\n```\n\nto make linbox dependent on BLAS. The BLAS library is not failing to install - it does not try to install. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9101\n\n",
+    "closed_at": "2010-09-01T00:05:35Z",
     "created_at": "2010-05-31T03:12:01Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "linbox reports \"ERROR: BLAS not found!\" on 64-bit SPARC build",
+    "title": "linbox reports \"ERROR: BLAS not found!\" on Solaris 10 SPARC (64-bit build).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9101",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -20,7 +21,32 @@ Assignee: drkirkby
 
 CC:  mvngu @jaapspies @jhpalmieri
 
-Trying to compile Sage as 64-bit on SPARC, I get an error with linbox:
+## Hardware & associated software
+
+* Sun Blade 1000
+* 2 x 900 MHz UltraSPARC III+ CPUs
+* 2 GB RAM
+* Solaris 10 03/2005 (first release of Solaris 10)
+* gcc 4.4.3 (uses Sun linker and assembler)
+
+## How gcc was configured
+
+```
+drkirkby@redstart:~$ gcc -v
+Using built-in specs.
+Target: sparc-sun-solaris2.10
+Configured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran
+Thread model: posix
+gcc version 4.4.3 (GCC) 
+```
+
+ == Sage build process ==
+This used Sage 4.4.3.alpha0, but with numerous patches to allow a 64-bit build. At that point, only the zlib and fortran packages had changes for 64-bit and were built. SAGE64 exported to "yes", so it was a 64-bit build. 
+
+This is the first time I've **seriously** tried a 64-bit build on Solaris 10 SPARC. 
+
+## The problem
+I get an error with linbox:
 
 ```
 checking whether GMP is 4.0 or greater... yes
@@ -56,7 +82,10 @@ $(INST)/$(LINBOX): $(BASE) $(INST)/$(MPIR) $(INST)/$(NTL) $(INST)/$(GIVARO) $(IN
 
 ```
 
-to make linbox dependent on BLAS. The BLAS library is not failing to install - it does not try to install.
+to make linbox dependent on BLAS. The BLAS library is not failing to install - it does not try to install. 
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9101
 

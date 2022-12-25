@@ -1,16 +1,17 @@
-# Issue 5574: taking symbolic powers should coerce objects to symbolic expressions
+# Issue 5574: Implement QQbar^QQ as action
 
 archive/issues_005574.json:
 ```json
 {
-    "body": "CC:  @videlec\n\nReported by Alex Raichev on sage-support:\n\n```\nsage: var('n',ns=1)\nn\nsage: (QQbar(2)^3)^n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n<...>\n<...>/sage/rings/qqbar.pyc in __pow__(self, e)\n   2808             1\n   2809         \"\"\"\n-> 2810         e = QQ._coerce_(e)\n   2811         n = e.numerator()\n   2812         d = e.denominator()\n\n<...>/sage/structure/parent_old.so in \nsage.structure.parent_old.Parent._coerce_ (sage/structure\n/parent_old.c:4031)()\n\n<...>/site-packages/sage/structure/parent.so in \nsage.structure.parent.Parent.coerce (sage/structure/parent.c:4185)()\n\nTypeError: no canonical coercion from New Symbolic Ring to Rational\nField\n```\n\nSince pynac supports using arbitrary Sage objects as numeric objects in symbolic expressions, we should return a symbolic expression as a result of the above commands.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5574\n\n",
+    "body": "CC:  @videlec\n\nThis ticket implements powering in `QQbar` and `AA` by `QQ` exponents as an action.\n\nThis will fix the following two bugs:\n\nReported by Alex Raichev on sage-support:\n\n```\nsage: n = SR.var('n'); QQbar(2)^n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-6-01e1c4db05c9> in <module>()\n----> 1 n = SR.var('n'); QQbar(Integer(2))**n\n\n/usr/local/src/sage-config/local/lib/python2.7/site-packages/sage/rings/qqbar.pyc in __pow__(self, e)\n   4106         if self == self.parent().one():\n   4107             return self.parent().one()\n-> 4108         e = QQ._coerce_(e)\n   4109         n = e.numerator()\n   4110         d = e.denominator()\n\n/usr/local/src/sage-config/src/sage/structure/parent_old.pyx in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:5673)()\n    227     def _coerce_(self, x):            # Call this from Python (do not override!)\n    228         if self._element_constructor is not None:\n--> 229             return self.coerce(x)\n    230         check_old_coerce(self)\n    231         return self._coerce_c(x)\n\n/usr/local/src/sage-config/src/sage/structure/parent.pyx in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:10829)()\n   1157                 except Exception:\n   1158                     _record_exception()\n-> 1159             raise TypeError(\"no canonical coercion from %s to %s\" % (parent(x), self))\n   1160         else:\n   1161             return (<map.Map>mor)._call_(x)\n\nTypeError: no canonical coercion from Symbolic Ring to Rational Field\n```\n\n```\nsage: QQbar(2)^1.0\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-7-aba7adf5dc93> in <module>()\n----> 1 QQbar(Integer(2))**RealNumber('1.0')\n\n/usr/local/src/sage-config/local/lib/python2.7/site-packages/sage/rings/qqbar.pyc in __pow__(self, e)\n   4106         if self == self.parent().one():\n   4107             return self.parent().one()\n-> 4108         e = QQ._coerce_(e)\n   4109         n = e.numerator()\n   4110         d = e.denominator()\n\n/usr/local/src/sage-config/src/sage/structure/parent_old.pyx in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:5673)()\n    227     def _coerce_(self, x):            # Call this from Python (do not override!)\n    228         if self._element_constructor is not None:\n--> 229             return self.coerce(x)\n    230         check_old_coerce(self)\n    231         return self._coerce_c(x)\n\n/usr/local/src/sage-config/src/sage/structure/parent.pyx in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:10829)()\n   1157                 except Exception:\n   1158                     _record_exception()\n-> 1159             raise TypeError(\"no canonical coercion from %s to %s\" % (parent(x), self))\n   1160         else:\n   1161             return (<map.Map>mor)._call_(x)\n\nTypeError: no canonical coercion from Real Field with 53 bits of precision to Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5574\n\n",
+    "closed_at": "2018-02-02T12:06:18Z",
     "created_at": "2009-03-20T10:09:12Z",
     "labels": [
-        "component: symbolics",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
-    "title": "taking symbolic powers should coerce objects to symbolic expressions",
+    "title": "Implement QQbar^QQ as action",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5574",
     "user": "https://github.com/burcin"
@@ -18,35 +19,73 @@ archive/issues_005574.json:
 ```
 CC:  @videlec
 
+This ticket implements powering in `QQbar` and `AA` by `QQ` exponents as an action.
+
+This will fix the following two bugs:
+
 Reported by Alex Raichev on sage-support:
 
 ```
-sage: var('n',ns=1)
-n
-sage: (QQbar(2)^3)^n
+sage: n = SR.var('n'); QQbar(2)^n
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
+<ipython-input-6-01e1c4db05c9> in <module>()
+----> 1 n = SR.var('n'); QQbar(Integer(2))**n
 
-<...>
-<...>/sage/rings/qqbar.pyc in __pow__(self, e)
-   2808             1
-   2809         """
--> 2810         e = QQ._coerce_(e)
-   2811         n = e.numerator()
-   2812         d = e.denominator()
+/usr/local/src/sage-config/local/lib/python2.7/site-packages/sage/rings/qqbar.pyc in __pow__(self, e)
+   4106         if self == self.parent().one():
+   4107             return self.parent().one()
+-> 4108         e = QQ._coerce_(e)
+   4109         n = e.numerator()
+   4110         d = e.denominator()
 
-<...>/sage/structure/parent_old.so in 
-sage.structure.parent_old.Parent._coerce_ (sage/structure
-/parent_old.c:4031)()
+/usr/local/src/sage-config/src/sage/structure/parent_old.pyx in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:5673)()
+    227     def _coerce_(self, x):            # Call this from Python (do not override!)
+    228         if self._element_constructor is not None:
+--> 229             return self.coerce(x)
+    230         check_old_coerce(self)
+    231         return self._coerce_c(x)
 
-<...>/site-packages/sage/structure/parent.so in 
-sage.structure.parent.Parent.coerce (sage/structure/parent.c:4185)()
+/usr/local/src/sage-config/src/sage/structure/parent.pyx in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:10829)()
+   1157                 except Exception:
+   1158                     _record_exception()
+-> 1159             raise TypeError("no canonical coercion from %s to %s" % (parent(x), self))
+   1160         else:
+   1161             return (<map.Map>mor)._call_(x)
 
-TypeError: no canonical coercion from New Symbolic Ring to Rational
-Field
+TypeError: no canonical coercion from Symbolic Ring to Rational Field
 ```
 
-Since pynac supports using arbitrary Sage objects as numeric objects in symbolic expressions, we should return a symbolic expression as a result of the above commands.
+```
+sage: QQbar(2)^1.0
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-7-aba7adf5dc93> in <module>()
+----> 1 QQbar(Integer(2))**RealNumber('1.0')
+
+/usr/local/src/sage-config/local/lib/python2.7/site-packages/sage/rings/qqbar.pyc in __pow__(self, e)
+   4106         if self == self.parent().one():
+   4107             return self.parent().one()
+-> 4108         e = QQ._coerce_(e)
+   4109         n = e.numerator()
+   4110         d = e.denominator()
+
+/usr/local/src/sage-config/src/sage/structure/parent_old.pyx in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:5673)()
+    227     def _coerce_(self, x):            # Call this from Python (do not override!)
+    228         if self._element_constructor is not None:
+--> 229             return self.coerce(x)
+    230         check_old_coerce(self)
+    231         return self._coerce_c(x)
+
+/usr/local/src/sage-config/src/sage/structure/parent.pyx in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:10829)()
+   1157                 except Exception:
+   1158                     _record_exception()
+-> 1159             raise TypeError("no canonical coercion from %s to %s" % (parent(x), self))
+   1160         else:
+   1161             return (<map.Map>mor)._call_(x)
+
+TypeError: no canonical coercion from Real Field with 53 bits of precision to Rational Field
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5574
 

@@ -3,7 +3,8 @@
 archive/issues_004318.json:
 ```json
 {
-    "body": "Assignee: tba\n\nMinor output change due in #4285.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4318\n\n",
+    "body": "Assignee: @mwhansen\n\nMinor output change due in #4285.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4318\n\n",
+    "closed_at": "2009-09-09T16:35:58Z",
     "created_at": "2008-10-18T15:57:28Z",
     "labels": [
         "component: documentation",
@@ -17,7 +18,7 @@ archive/issues_004318.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 Minor output change due in #4285.
 

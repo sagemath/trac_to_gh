@@ -1,9 +1,10 @@
-# Issue 4304: [with patch, needs review] split up NTL's decl.pxi
+# Issue 4304: [with patch, positive review] split up NTL's decl.pxi
 
 archive/issues_004304.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4304\n\n",
+    "closed_at": "2008-10-18T00:02:26Z",
     "created_at": "2008-10-15T17:44:13Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004304.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] split up NTL's decl.pxi",
+    "title": "[with patch, positive review] split up NTL's decl.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4304",
     "user": "https://github.com/malb"

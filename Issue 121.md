@@ -4,6 +4,7 @@ archive/issues_000121.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSomeone needs to work out a way to make the imports in SAGE as non-circular as possible. It's sometimes really hard to work out why an import isn't working.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/121\n\n",
+    "closed_at": "2007-09-07T20:32:23Z",
     "created_at": "2006-10-09T01:31:46Z",
     "labels": [
         "component: basic arithmetic"

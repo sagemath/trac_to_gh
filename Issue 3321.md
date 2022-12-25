@@ -1,16 +1,17 @@
-# Issue 3321: Matrix.visualize_structure is too dark/messed up
+# Issue 3321: [with patch, positive review] Matrix.visualize_structure is too dark/messed up
 
 archive/issues_003321.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nConsider this example\n\n```\nsage: A = MatrixSpace(GF(2),2000,2000)(1)\nsage: A.visualize_structure()\n```\n\nI've attached the output to this ticket (hint: the scaling is to blame) Somehow I believe Tom Boothby would have an easy time to fix this so I CC him :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3321\n\n",
+    "closed_at": "2009-01-23T08:34:54Z",
     "created_at": "2008-05-28T13:38:50Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Matrix.visualize_structure is too dark/messed up",
+    "title": "[with patch, positive review] Matrix.visualize_structure is too dark/messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3321",
     "user": "https://github.com/malb"

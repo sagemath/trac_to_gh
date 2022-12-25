@@ -1,9 +1,10 @@
-# Issue 7275: [with patch, needs review] numerical noise in tutorial/tour_algebra.rst
+# Issue 7275: [with patch, positive review] numerical noise in tutorial/tour_algebra.rst
 
 archive/issues_007275.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/d2b922ad4ffba33c):\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n********************************************************************** \nFile \"/home/jaap/downloads/sage-4.2.alpha0/devel/sage/doc/en/tutorial/tour_algeb ra.rst\", line 87: \n     sage: find_root(cos(phi)==sin(phi),0,pi/2) \nExpected: \n     0.78539816339744839 \nGot: \n     0.78539816339744828 \n********************************************************************** \n1 items had failures: \nSame as in alpha0! No ticket yet? \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7275\n\n",
+    "closed_at": "2009-10-24T03:46:38Z",
     "created_at": "2009-10-23T21:43:58Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_007275.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] numerical noise in tutorial/tour_algebra.rst",
+    "title": "[with patch, positive review] numerical noise in tutorial/tour_algebra.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7275",
     "user": "https://github.com/jhpalmieri"

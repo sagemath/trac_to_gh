@@ -4,6 +4,7 @@ archive/issues_007030.json:
 ```json
 {
     "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used\n\nCC was set to the Sun C compler, and CXX to the Sun C++ compiler,\n\nThe 'quaddouble-2.2.p9' package believes the Sun C++ compiler can't create executables. \n\n```\nconfigure: error: C++ compiler cannot create executables\nSee `config.log' for more details.\nerror configuring quad double\n```\n\nBut other configure scripts have found the default output is a.out, so I'm pretty sure the Sun compiler can create executables! Maybe the test used is invalid. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7030\n\n",
+    "closed_at": "2009-10-01T15:35:37Z",
     "created_at": "2009-09-27T13:58:25Z",
     "labels": [
         "component: porting: solaris",

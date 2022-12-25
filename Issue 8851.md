@@ -4,6 +4,7 @@ archive/issues_008851.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIn Cygwin, the newline character is '\\r\\n'.  This is a doctest only fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8851\n\n",
+    "closed_at": "2010-05-03T13:16:28Z",
     "created_at": "2010-05-03T12:26:27Z",
     "labels": [
         "component: porting: cygwin",

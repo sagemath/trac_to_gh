@@ -4,6 +4,7 @@ archive/issues_007534.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nTo avoid confusion, we should add a message to the top of each **old** Sage notebook .py file stating that one should work on [SageNB](http://nb.sagemath.org/) instead.\n\nThis should be a patch to the core Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7534\n\n",
+    "closed_at": "2009-12-14T16:31:20Z",
     "created_at": "2009-11-26T07:20:52Z",
     "labels": [
         "component: notebook",

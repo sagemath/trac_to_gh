@@ -4,6 +4,7 @@ archive/issues_001071.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\ncalling IntegerVectors.list after applying the attached patch is much faster now.\n\nold:\n\n```\nsage: time l1 = map(tuple, IntegerVectors(2, 60).list())\nCPU time: 5.01 s,  Wall time: 5.11 s\n```\n\nnew:\n\n```\nsage: time l1 = map(tuple, IntegerVectors(2, 60).list())\nCPU time: 0.20 s,  Wall time: 0.20 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1071\n\n",
+    "closed_at": "2007-11-06T22:19:50Z",
     "created_at": "2007-11-02T22:48:35Z",
     "labels": [
         "component: combinatorics"

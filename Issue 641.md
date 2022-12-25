@@ -1,21 +1,22 @@
-# Issue 641: from sage.all import * for spyx files/cython notebook cells
+# Issue 641: [with patch] from sage.all import * for spyx files/cython notebook cells
 
 archive/issues_000641.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn spyx files, and cython blocks of the notebook, all names in sage.all are available (one doesn't need to import Integer, et al.) \n\nThis means that miss-spelled/non-existent names will not be caught at compile time though. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/641\n\n",
+    "body": "Assignee: @robertwb\n\nIn spyx files, and cython blocks of the notebook, all names in sage.all are available (one doesn't need to import Integer, et al.) \n\nThis means that miss-spelled/non-existent names will not be caught at compile time though. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/641\n\n",
+    "closed_at": "2007-09-15T21:04:59Z",
     "created_at": "2007-09-12T04:48:59Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "from sage.all import * for spyx files/cython notebook cells",
+    "title": "[with patch] from sage.all import * for spyx files/cython notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/641",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: boothby
+Assignee: @robertwb
 
 In spyx files, and cython blocks of the notebook, all names in sage.all are available (one doesn't need to import Integer, et al.) 
 

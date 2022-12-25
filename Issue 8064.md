@@ -4,6 +4,7 @@ archive/issues_008064.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein @malb\n\nMake iml-1.0.1.p12.spkg install on Open Solaris 64 bit\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8064\n\n",
+    "closed_at": "2010-02-11T15:17:11Z",
     "created_at": "2010-01-25T22:19:26Z",
     "labels": [
         "component: porting",

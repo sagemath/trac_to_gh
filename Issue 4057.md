@@ -1,29 +1,28 @@
-# Issue 4057: Possible improvements to ? and ?? for R functions
+# Issue 4057: [with patch, positive review] Underlines instead of headings in notebook version of docstring for R functions
 
 archive/issues_004057.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThings are different in notebook and console:\n\n* Because of underline trick, in notebook headings in docstring consists of only underline!\n* Source display in console would look better with additional new line char and one empty line after source output and before \"Constructor Docstring\", the docstring in console is better, underline trick works as expected, but there could also be one empty line before \"Constructor Docstring\"\n  * btw - is Constructor Docstring really needed? I think the source is enough and we don't have to include same docstring for every R function, it's already available as docstring for r interpreter itself... it's not included in docstring in notebook so I guess we could live without it, if it is the case, no need to add empty line before it!\n* getting source of R function through notebook by ?? don't work at all...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4057\n\n",
+    "body": "Assignee: aginiewicz\n\nThings are different in notebook and console:\n\n* Because of underline trick, in notebook headings in docstring consists of only underline!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4057\n\n",
+    "closed_at": "2008-11-28T21:52:04Z",
     "created_at": "2008-09-04T03:13:47Z",
     "labels": [
         "component: interfaces",
-        "minor"
+        "minor",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Possible improvements to ? and ?? for R functions",
+    "title": "[with patch, positive review] Underlines instead of headings in notebook version of docstring for R functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4057",
     "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
-Assignee: @williamstein
+Assignee: aginiewicz
 
 Things are different in notebook and console:
 
 * Because of underline trick, in notebook headings in docstring consists of only underline!
-* Source display in console would look better with additional new line char and one empty line after source output and before "Constructor Docstring", the docstring in console is better, underline trick works as expected, but there could also be one empty line before "Constructor Docstring"
-  * btw - is Constructor Docstring really needed? I think the source is enough and we don't have to include same docstring for every R function, it's already available as docstring for r interpreter itself... it's not included in docstring in notebook so I guess we could live without it, if it is the case, no need to add empty line before it!
-* getting source of R function through notebook by ?? don't work at all...
 
 Issue created by migration from https://trac.sagemath.org/ticket/4057
 

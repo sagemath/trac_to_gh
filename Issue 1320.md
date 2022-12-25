@@ -1,25 +1,24 @@
-# Issue 1320: [graphs] planarity testing
+# Issue 1320: [with patch, positive review] planarity testing
 
 archive/issues_001320.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  bober\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\n```\n>>> Someone is eventually going to ask for a routine to test for planarity. I\n>>> believe that there are good ones in existence, but it's going to be\n>>> hard to get\n>>> a good one with an open source licence.\n>> The nauty README has this to say about the new planarity testing feature:\n>> \"New program planarg to test for planarity and find planar embeddings:\n>> planarg -help for details. The planarity code was written by Paulette\n>> Lieby for the Magma project and used with permission.\"\n>>\n>> Does anyone know Paulette Lieby? Can we ask about releasing the code\n>> under GPL? It looks like the source has now been released as a part of\n>> nauty.\n> Emily Kirkman understands a linear time algorithm for testing for\n> planarity. There is one in BOOST, which is GPL, and has been nominated\n> for inclusion in Sage several times.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1320\n\n",
+    "body": "Assignee: ekirkman\n\nCC:  bober\n\nFrom Chris Godsil's wishlist.\n\n```\n>>> Someone is eventually going to ask for a routine to test for planarity. I\n>>> believe that there are good ones in existence, but it's going to be\n>>> hard to get\n>>> a good one with an open source licence.\n>> The nauty README has this to say about the new planarity testing feature:\n>> \"New program planarg to test for planarity and find planar embeddings:\n>> planarg -help for details. The planarity code was written by Paulette\n>> Lieby for the Magma project and used with permission.\"\n>>\n>> Does anyone know Paulette Lieby? Can we ask about releasing the code\n>> under GPL? It looks like the source has now been released as a part of\n>> nauty.\n> Emily Kirkman understands a linear time algorithm for testing for\n> planarity. There is one in BOOST, which is GPL, and has been nominated\n> for inclusion in Sage several times.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1320\n\n",
+    "closed_at": "2008-02-28T06:08:32Z",
     "created_at": "2007-11-28T20:08:11Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[graphs] planarity testing",
+    "title": "[with patch, positive review] planarity testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1320",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: ekirkman
 
 CC:  bober
-
-Keywords: graphs
 
 From Chris Godsil's wishlist.
 

@@ -1,22 +1,23 @@
-# Issue 1015: Free Monoid and Free Algebra Fixes and features
+# Issue 1015: [with patch] Free Monoid and Free Algebra Fixes and features
 
 archive/issues_001015.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached patch does the following:\n\n1)  Adds and improves latex output\n\n2)  Fixes a bad multiplication bug\n\n3)  Adds ability to substitute in values in a free algebra (via __call__)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1015\n\n",
+    "body": "Assignee: somebody\n\nThe attached patch does the following:\n\n1)  Adds and improves latex output\n\n2)  Fixes a bad multiplication bug\n\n3)  Adds ability to substitute in values in a free algebra (via __call__)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1015\n\n",
+    "closed_at": "2007-10-28T18:03:50Z",
     "created_at": "2007-10-27T23:49:18Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "Free Monoid and Free Algebra Fixes and features",
+    "title": "[with patch] Free Monoid and Free Algebra Fixes and features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1015",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 The attached patch does the following:
 

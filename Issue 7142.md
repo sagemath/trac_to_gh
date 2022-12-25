@@ -4,6 +4,7 @@ archive/issues_007142.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSage needs GNU tar (at least I know the Sun tar is not suitable), so we need to check that 'tar' is in fact gnu tar, and not some other version of tar. \n\nOn HP-UX there does not appear to be a version of GNU tar on the system. With Solaris, there  is a version called 'gtar' at /usr/sfw/bin/gtar. \n\nOne way or another, we need to make sure that the tar that Sage files is the GNU version. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7142\n\n",
+    "closed_at": "2009-11-20T06:21:15Z",
     "created_at": "2009-10-06T17:03:53Z",
     "labels": [
         "component: build"

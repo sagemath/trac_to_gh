@@ -1,21 +1,21 @@
-# Issue 4283: [with proto-patch]A Speed-up Patch for NTL's ZZXFactoring.c
+# Issue 4283: [with proto-patch] A Speed-up Patch for NTL's ZZXFactoring.c
 
 archive/issues_004283.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: NTL, LLL, Univariate\n\nThe goal of this patch is to speed-up NTL's factoring algorithm for polynomials in Z[X].  The speed-up comes from using fpLLL rather than NTL's native LLL algorithm.  We do this by converting a ZZ_mat of ZZ's (NTL's multi-precision integers) and passing them into a mat_ZZ<mpz_t> matrix of mpz_t's (fpLLL's native format).  Then run fpLLL on the new matrix and pass the entries back to NTL.  I don't replace NTL's LLL just pass what should be an already reduced basis to NTL's LLL.  (NTL computes extra information that would require a hack into fpLLL to get and might not be worth it.)  This patch allows NTL to beat MAGMA on many examples (it still is a little slower than MAGMA (but faster than SAGE) on irreducible polynomials).  I think that the cross over between Pari's factoring and NTL's factoring should be re-evaluated (currently Pari is used for polynomials of degree 30 through 300) if not just use NTL for all polynomials now.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4283\n\n",
+    "body": "Assignee: anovocin\n\nKeywords: NTL, LLL, Univariate\n\nThe goal of this patch is to speed-up NTL's factoring algorithm for polynomials in Z[X].  The speed-up comes from using fpLLL rather than NTL's native LLL algorithm.  We do this by converting a ZZ_mat of ZZ's (NTL's multi-precision integers) and passing them into a mat_ZZ<mpz_t> matrix of mpz_t's (fpLLL's native format).  Then run fpLLL on the new matrix and pass the entries back to NTL.  I don't replace NTL's LLL just pass what should be an already reduced basis to NTL's LLL.  (NTL computes extra information that would require a hack into fpLLL to get and might not be worth it.)  This patch allows NTL to beat MAGMA on many examples (it still is a little slower than MAGMA (but faster than SAGE) on irreducible polynomials).  I think that the cross over between Pari's factoring and NTL's factoring should be re-evaluated (currently Pari is used for polynomials of degree 30 through 300) if not just use NTL for all polynomials now.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4283\n\n",
     "created_at": "2008-10-14T14:26:40Z",
     "labels": [
         "component: factorization"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with proto-patch]A Speed-up Patch for NTL's ZZXFactoring.c",
+    "title": "[with proto-patch] A Speed-up Patch for NTL's ZZXFactoring.c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4283",
     "user": "https://trac.sagemath.org/admin/accounts/users/anovocin"
 }
 ```
-Assignee: tbd
+Assignee: anovocin
 
 Keywords: NTL, LLL, Univariate
 

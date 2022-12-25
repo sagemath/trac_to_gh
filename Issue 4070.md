@@ -1,16 +1,17 @@
-# Issue 4070: [with spkg, patch: needs review] fix polybori-0.5.rc1 build issues
+# Issue 4070: [with spkg, patch: positive review] fix polybori-0.5.rc1 build issues
 
 archive/issues_004070.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc1/polybori-0.5rc.p3.spkg\n\nfixes a couple issues:\n\n* delete dynamic libs so that the extension is linked statically\n* touch the pbori.pyx extension so that it forces a rebuild\n\nThe attached patch also disables m4ri_destroy_all_codes() in pbori.pyx since it causes double frees on OSX. This is maybe related to #1611.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4070\n\n",
+    "closed_at": "2008-09-07T23:02:01Z",
     "created_at": "2008-09-07T17:22:52Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, patch: needs review] fix polybori-0.5.rc1 build issues",
+    "title": "[with spkg, patch: positive review] fix polybori-0.5.rc1 build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4070",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

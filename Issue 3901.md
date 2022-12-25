@@ -1,16 +1,16 @@
-# Issue 3901: automated doctesting elementary number theory book
+# Issue 3901: [with patch; positive review] automated doctesting elementary number theory book
 
 archive/issues_003901.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n10:49 < cwitty> wstein: You should put a file in Sage with all your code samples from your number theory book as \n                doctests.\n10:49 < cwitty> Then we can't accidentally break your book.\n10:49 < wstein> cwitty -- great idea.\n10:49 < wstein> i'll make a ticket.\n```\n\nSame comments about my modular forms book.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3901\n\n",
+    "closed_at": "2008-10-26T14:13:20Z",
     "created_at": "2008-08-19T17:53:02Z",
     "labels": [
-        "component: doctest coverage",
-        "bug"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "automated doctesting elementary number theory book",
+    "title": "[with patch; positive review] automated doctesting elementary number theory book",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3901",
     "user": "https://github.com/williamstein"

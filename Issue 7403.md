@@ -3,7 +3,8 @@
 archive/issues_007403.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: finite enumerated sets\n\nThis patch adds sage.sets.finite_enumerated_set.FiniteEnumeratedSet\n\ndepends on #5891\n\nIssue created by migration from https://trac.sagemath.org/ticket/7403\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: finite enumerated sets\n\nThis patch adds sage.sets.finite_enumerated_set.FiniteEnumeratedSet\n\ndepends on #5891\n\nIssue created by migration from https://trac.sagemath.org/ticket/7403\n\n",
+    "closed_at": "2009-11-19T16:57:08Z",
     "created_at": "2009-11-06T15:56:12Z",
     "labels": [
         "component: combinatorics"
@@ -15,7 +16,7 @@ archive/issues_007403.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 

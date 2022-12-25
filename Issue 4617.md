@@ -3,7 +3,8 @@
 archive/issues_004617.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: dummy test package\n\nThis is related with ticket #4587\n\nFor doc-testing the installation of packages, there should be some `test-dummy.spkg`\n\nThe purpose of the package is to do *nothing*. William suggested to mark it `optional -- admin`, I am not sure what that means.\n\nAlso, there should be an easy way to get rid of `test-dummy.spkg` after installation.\n\nIdea:\n* `sage -i test-dummy.spkg` should simply result in an entry in the list of installed packages.\n* uninstalling it is done by removing the list entry and deleting the file `test-dummy.spkg`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4617\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: dummy test package\n\nThis is related with ticket #4587\n\nFor doc-testing the installation of packages, there should be some `test-dummy.spkg`\n\nThe purpose of the package is to do *nothing*. William suggested to mark it `optional -- admin`, I am not sure what that means. [it means that it would only be tested when we do sage -t -only_optional=admin, where admin means \"tested by the admin who has write privileges to the sage install]\n\nAlso, there should be an easy way to get rid of `test-dummy.spkg` after installation.\n\nIdea:\n* `sage -i test-dummy.spkg` should simply result in an entry in the list of installed packages.\n* uninstalling it is done by removing the list entry and deleting the file `test-dummy.spkg`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4617\n\n",
+    "closed_at": "2014-11-07T16:49:58Z",
     "created_at": "2008-11-25T12:55:40Z",
     "labels": [
         "component: packages: standard",
@@ -24,13 +25,15 @@ This is related with ticket #4587
 
 For doc-testing the installation of packages, there should be some `test-dummy.spkg`
 
-The purpose of the package is to do *nothing*. William suggested to mark it `optional -- admin`, I am not sure what that means.
+The purpose of the package is to do *nothing*. William suggested to mark it `optional -- admin`, I am not sure what that means. [it means that it would only be tested when we do sage -t -only_optional=admin, where admin means "tested by the admin who has write privileges to the sage install]
 
 Also, there should be an easy way to get rid of `test-dummy.spkg` after installation.
 
 Idea:
 * `sage -i test-dummy.spkg` should simply result in an entry in the list of installed packages.
 * uninstalling it is done by removing the list entry and deleting the file `test-dummy.spkg`.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4617
 

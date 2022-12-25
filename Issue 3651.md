@@ -1,16 +1,17 @@
-# Issue 3651: elliptic curves -- bug in L_ratio()
+# Issue 3651: [with patch, positive review] elliptic curves -- bug in L_ratio()
 
 archive/issues_003651.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  nbruin@cecm.sfu.ca\n\nNils Bruin reports:\n\n\"I ran into the following problem in sage, and I suspect it might be your code:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n[...]\nNameError: global name 'misc' is not defined\n```\nWas this tested at all?\"\n\nIt's a problem in L_ratio().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3651\n\n",
+    "closed_at": "2008-07-16T04:24:26Z",
     "created_at": "2008-07-13T19:35:49Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "elliptic curves -- bug in L_ratio()",
+    "title": "[with patch, positive review] elliptic curves -- bug in L_ratio()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3651",
     "user": "https://github.com/JohnCremona"

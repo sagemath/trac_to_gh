@@ -1,16 +1,17 @@
-# Issue 2667: transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.
+# Issue 2667: [with patch, positive review] transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.
 
 archive/issues_002667.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\nWhen applying the patch for a overhauled matrix() function at \n#2651, I get doctest failures \nfrom sage/plot/plot3d/transform.pyx related to calling \nmatrix() with a list of rows, but specifying a number of rows that \nconflicts.\n\nYou can see these failures by applying the patch and running sage -t \n-long on \ndevel/sage/sage/plot/plot3d/shapes2.py (and the same failures make a \nwhole bunch of other doctests fail too).\n\nFor transform.pyx, the call to matrix on line 44 appears to flatten the \ntrans argument (i.e., list(trans)), but many times what is actually \npassed to Sage is a list containing a single RDF vector instead.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2667\n\n",
+    "closed_at": "2008-03-31T19:47:27Z",
     "created_at": "2008-03-25T21:26:00Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.",
+    "title": "[with patch, positive review] transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2667",
     "user": "https://github.com/jasongrout"

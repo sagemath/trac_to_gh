@@ -3,7 +3,8 @@
 archive/issues_007538.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat nborie\n\nKeywords: posets\n\nIt answer always true if two posets have the same size:\n\n```\nsage: p1 = Posets(2)[0]; p2 = Posets(2)[1]\nsage: p1.cover_relations()\n[]\nsage: p2.cover_relations()\n[[0, 1]]\nsage: p1 == p2\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7538\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat nborie\n\nKeywords: posets\n\nIt answer always true if two posets have the same size:\n\n```\nsage: p1 = Posets(2)[0]; p2 = Posets(2)[1]\nsage: p1.cover_relations()\n[]\nsage: p2.cover_relations()\n[[0, 1]]\nsage: p1 == p2\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7538\n\n",
+    "closed_at": "2010-04-16T17:28:22Z",
     "created_at": "2009-11-26T21:34:36Z",
     "labels": [
         "component: combinatorics",
@@ -16,7 +17,7 @@ archive/issues_007538.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat nborie
 

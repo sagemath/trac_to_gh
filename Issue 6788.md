@@ -1,23 +1,38 @@
-# Issue 6788: 1 doctest timed out in devel/sage/sage/symbolic/assumptions.py
+# Issue 6788: fix doctest timeout in symbolic/assumptions.py due to upgrade to Maxima 5.19.1
 
 archive/issues_006788.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage -t  \"devel/sage/sage/symbolic/assumptions.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [360.3 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6788\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: maxima\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n<SNIP>\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage -t  \"devel/sage/sage/symbolic/assumptions.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [360.3 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6788\n\n",
+    "closed_at": "2010-03-19T23:16:18Z",
     "created_at": "2009-08-20T22:14:12Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "1 doctest timed out in devel/sage/sage/symbolic/assumptions.py",
+    "title": "fix doctest timeout in symbolic/assumptions.py due to upgrade to Maxima 5.19.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6788",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
+Keywords: maxima
+
+On Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1
+
+```
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Aug 20 20:02:37 BST 2009
+dsage-trial tmp directory doesn't exist - creating ...
+This script will run the unit tests for DSage
+```
+<SNIP>
+| Sage Version 4.1.1, Release Date: 2009-08-14                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 sage -t  "devel/sage/sage/symbolic/assumptions.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***

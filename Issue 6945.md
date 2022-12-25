@@ -1,22 +1,23 @@
-# Issue 6945: [with spkg; needs review] Update readline to version 6.0
+# Issue 6945: [with spkg, positive review] Update readline to version 6.0
 
 archive/issues_006945.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThere are a number of issues associated with the readline 5.2 in Sage\n\n* #6933 (readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes)\n* It does not work on OS X 10.6 #6849 William has sorted these issues out. \n* grep was used on /etc/SuSE-release  - even if the file did not exist. #6844\n\nThis spkg hopes to clear them all up. Note its not the first version of readline 6.0 package I've created, hence the directory name. This is an improved version over another. \n\nIt has been tested on \n\n* 64-bit linux (sage.math)\n* Solaris 32-bit SPARC (my box)\n* Solaris 64-bit SPARC (my box)\n* OS X 32-bit (bsd.math)\n* OS X 64-bit (bsd.math)\n\nIt would be good if someone could test on Suse linux, as there are some Suse-specific bits in here. One of which I had to very slightly modify, to avoid a warning on every other platform. \n\nThis alone will not sort out all the OS X 10.6 issues (#6849), but it will allow #6933 and #6844 to be closed. \n\nThe spkg, spkg-install and SPKG.txt can be found here:\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/readline-6.0-2nd-try/\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6945\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\nThere are a number of issues associated with the readline 5.2 in Sage\n\n* #6933 (readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes)\n* It does not work on OS X 10.6 #6849 William has sorted these issues out. \n* grep was used on /etc/SuSE-release  - even if the file did not exist. #6844\n\nThis spkg hopes to clear them all up. Note its not the first version of readline 6.0 package I've created, hence the directory name. This is an improved version over another. \n\nIt has been tested on \n\n* 64-bit linux (sage.math)\n* Solaris 32-bit SPARC (my box)\n* Solaris 64-bit SPARC (my box)\n* OS X 32-bit (bsd.math)\n* OS X 64-bit (bsd.math)\n\nIt would be good if someone could test on Suse linux, as there are some Suse-specific bits in here. One of which I had to very slightly modify, to avoid a warning on every other platform. \n\nThis alone will not sort out all the OS X 10.6 issues (#6849), but it will allow #6933 and #6844 to be closed. \n\nThe spkg, spkg-install and SPKG.txt can be found here:\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/readline-6.0-2nd-try/\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6945\n\n",
+    "closed_at": "2009-09-17T22:01:14Z",
     "created_at": "2009-09-16T08:38:43Z",
     "labels": [
-        "component: build",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with spkg; needs review] Update readline to version 6.0",
+    "title": "[with spkg, positive review] Update readline to version 6.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6945",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 CC:  @williamstein
 

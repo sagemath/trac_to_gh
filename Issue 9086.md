@@ -3,11 +3,12 @@
 archive/issues_009086.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: symbolic fraction, sign, minus, latex\n\nWhen the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):\n\n```\nsage: latex(-1/x)\n\\frac{1}{x}\nsage: latex(1/-x) \n\\frac{1}{x}\n```\n\nOrigin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9086\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: symbolic fraction, sign, minus, latex, pynac\n\nWhen the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):\n\n```\nsage: latex(-1/x) \n\\frac{1}{x}\nsage: latex(1/-x) \n\\frac{1}{x}\n```\n\nOrigin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.\n\n---\n\n**Update:**\n\nActually, though I tested many other cases, the same (still) happens if both the numerator and denominator are (symbolic) variables (see also http://trac.sagemath.org/sage_trac/ticket/9086#comment:12):\n\n```\nsage: var(\"x y\")\n(x, y)\nsage: latex(-x/y)\n\\frac{x}{y}\nsage: latex(x/-y)\n\\frac{x}{y}\n```\n\nBut since it was discovered after the patch that fixes the first issue had been merged, the latter bug is now http://trac.sagemath.org/sage_trac/ticket/9314.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/9086\n\n",
+    "closed_at": "2010-06-22T18:50:05Z",
     "created_at": "2010-05-29T18:44:54Z",
     "labels": [
         "component: symbolics",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
@@ -19,18 +20,36 @@ archive/issues_009086.json:
 ```
 Assignee: @burcin
 
-Keywords: symbolic fraction, sign, minus, latex
+Keywords: symbolic fraction, sign, minus, latex, pynac
 
 When the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):
 
 ```
-sage: latex(-1/x)
+sage: latex(-1/x) 
 \frac{1}{x}
 sage: latex(1/-x) 
 \frac{1}{x}
 ```
 
 Origin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.
+
+---
+
+**Update:**
+
+Actually, though I tested many other cases, the same (still) happens if both the numerator and denominator are (symbolic) variables (see also http://trac.sagemath.org/sage_trac/ticket/9086#comment:12):
+
+```
+sage: var("x y")
+(x, y)
+sage: latex(-x/y)
+\frac{x}{y}
+sage: latex(x/-y)
+\frac{x}{y}
+```
+
+But since it was discovered after the patch that fixes the first issue had been merged, the latter bug is now http://trac.sagemath.org/sage_trac/ticket/9314.
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9086
 

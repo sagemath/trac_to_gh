@@ -4,9 +4,10 @@ archive/issues_000488.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPython2.5.1 is broken on itanium.  The fix in SAGE is also broken in sage-2.8.2.  Fix this for sage-2.8.3. \n \n1. look at old hack from sage-1.5.*\n2. get rid of #else and #ifdef stuff from around line 33\n3. keep the casting stuff around line 670??\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/488\n\n",
+    "closed_at": "2007-08-29T03:49:20Z",
     "created_at": "2007-08-24T07:46:07Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",

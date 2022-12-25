@@ -3,7 +3,8 @@
 archive/issues_002396.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nDan Christensen:\n\n```\n>  \n>  Another nice feature of numpy is *assigning* using numpy-style indexing.\n>  For example, to add a multiple of column j to column i, you can do\n>  \n>   A[:,i] += m*A[:,j]\n>  \n>  And you can zero out a region with\n>  \n>   A[2:4, 3:8] = 0    (broadcasting used here)\n```\n\nThis is currently not implemented in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2396\n\n",
+    "body": "Assignee: @dfdeshom\n\nDan Christensen:\n\n```\n>  \n>  Another nice feature of numpy is *assigning* using numpy-style indexing.\n>  For example, to add a multiple of column j to column i, you can do\n>  \n>   A[:,i] += m*A[:,j]\n>  \n>  And you can zero out a region with\n>  \n>   A[2:4, 3:8] = 0    (broadcasting used here)\n```\n\nThis is currently not implemented in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2396\n\n",
+    "closed_at": "2009-10-01T05:46:11Z",
     "created_at": "2008-03-05T16:35:19Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +18,7 @@ archive/issues_002396.json:
     "user": "https://github.com/dfdeshom"
 }
 ```
-Assignee: @williamstein
+Assignee: @dfdeshom
 
 Dan Christensen:
 

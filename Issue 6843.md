@@ -4,6 +4,7 @@ archive/issues_006843.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen trying to upload a .sws that contains directories with permission 700, the unpacked directories are still 700 and owned by the user running the notebook.\n\nWhen running the notebook with `server_pool=['other_user`@`localhost']`, evaluating the cells then fails with\n\n```\nIOError: [Errno 13] Permission denied:\n'/home/other_user/sage_notebook/worksheets/user/7/code/1.py'\n```\n\nbecause `.../7/code/` is 700.\n\nWhen creating a new worksheet manually this directory is 755 and evaluating cells in that worksheet works properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6843\n\n",
+    "closed_at": "2009-12-08T20:08:35Z",
     "created_at": "2009-08-29T17:21:25Z",
     "labels": [
         "component: notebook",

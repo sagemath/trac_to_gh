@@ -1,15 +1,16 @@
-# Issue 4688: wrap pari functions idealstar and ideallog
+# Issue 4688: [with patch, with positive  review] wrap pari functions idealstar and ideallog
 
 archive/issues_004688.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  m.t.aranes@warwick.ac.uk\n\nIf I is an ideal in the ring of integers R of a number field K, then the pari functions idealstar(K,I) returns the group `(R/I)^*` in the form of an abstract abelian group (order, invariants, and a list of generators).  And ideallog() computes the discrete log with respect to I, i.e. given a in K with valuation 0 at all primes dividing I, returns a vector representing a mod I as an element of that abstract abelian group.\n\nIt would be very useful to have these wrapped in Sage.  They appear in libs/pari/decl.pxi already so that should not be hard.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4688\n\n",
+    "closed_at": "2009-02-20T06:06:40Z",
     "created_at": "2008-12-03T20:54:42Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "wrap pari functions idealstar and ideallog",
+    "title": "[with patch, with positive  review] wrap pari functions idealstar and ideallog",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4688",
     "user": "https://github.com/JohnCremona"

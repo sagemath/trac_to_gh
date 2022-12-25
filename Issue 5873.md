@@ -1,16 +1,17 @@
-# Issue 5873: [with patch, needs review] Fix matplotlib build on FreeBSD
+# Issue 5873: Fix matplotlib build on FreeBSD
 
 archive/issues_005873.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout stephen\n\n1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD.\n\n2) gcc-4.3 on FreeBSD (though not the base gcc4.2) appears to define putchar() in <stdio.h> in a way that breaks the putchar() definitions inside ttconv.  It's not immediately clear what the problem is (since there's no immediately obvious difference in the way putchar() is defined in <stdio.h>) so this patch takes\nthe easy way out and undef's the offending putchar() macro.\n\n3) Individual character bounding boxes in AFM files do not have to be integral so convert each bounding box to a list of floats, rather than a list of ints. This corrects a problem where most of the tests would fail with \"ValueError: invalid literal for int() with base 10: '539.621'\" on FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5873\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout stephen\n\n0) Add support for FreeBSD later than 6.x\n\n1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD - superceded by #9202\n\n2) gcc-4.3 on FreeBSD (though not the base gcc4.2) appears to define putchar() in <stdio.h> in a way that breaks the putchar() definitions inside ttconv.  It's not immediately clear what the problem is (since there's no immediately obvious difference in the way putchar() is defined in <stdio.h>) so this patch takes\nthe easy way out and undef's the offending putchar() macro - no longer needed with gcc-4.5\n\n3) Individual character bounding boxes in AFM files do not have to be integral so convert each bounding box to a list of floats, rather than a list of ints. This corrects a problem where most of the tests would fail with \"ValueError: invalid literal for int() with base 10: '539.621'\" on FreeBSD - now integrated into matplotlib\n\nIssue created by migration from https://trac.sagemath.org/ticket/5873\n\n",
+    "closed_at": "2012-07-04T07:21:33Z",
     "created_at": "2009-04-23T08:43:34Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] Fix matplotlib build on FreeBSD",
+    "title": "Fix matplotlib build on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5873",
     "user": "https://github.com/peterjeremy"
@@ -20,12 +21,14 @@ Assignee: mabshoff
 
 CC:  @jasongrout stephen
 
-1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD.
+0) Add support for FreeBSD later than 6.x
+
+1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD - superceded by #9202
 
 2) gcc-4.3 on FreeBSD (though not the base gcc4.2) appears to define putchar() in <stdio.h> in a way that breaks the putchar() definitions inside ttconv.  It's not immediately clear what the problem is (since there's no immediately obvious difference in the way putchar() is defined in <stdio.h>) so this patch takes
-the easy way out and undef's the offending putchar() macro.
+the easy way out and undef's the offending putchar() macro - no longer needed with gcc-4.5
 
-3) Individual character bounding boxes in AFM files do not have to be integral so convert each bounding box to a list of floats, rather than a list of ints. This corrects a problem where most of the tests would fail with "ValueError: invalid literal for int() with base 10: '539.621'" on FreeBSD.
+3) Individual character bounding boxes in AFM files do not have to be integral so convert each bounding box to a list of floats, rather than a list of ints. This corrects a problem where most of the tests would fail with "ValueError: invalid literal for int() with base 10: '539.621'" on FreeBSD - now integrated into matplotlib
 
 Issue created by migration from https://trac.sagemath.org/ticket/5873
 

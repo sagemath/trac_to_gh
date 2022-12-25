@@ -1,22 +1,23 @@
-# Issue 2388: linbox charpoly crashes on OS X 10.5-intel
+# Issue 2388: [Patch included, with positive review] linbox charpoly crashes on OS X 10.5-intel
 
 archive/issues_002388.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations.\nThe bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\n[http://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html](http://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html), may help.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2388\n\n",
+    "body": "Assignee: @ClementPernet\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations.\nThe bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\n[http://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html](http://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html), may help.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2388\n\n",
+    "closed_at": "2008-03-05T05:52:44Z",
     "created_at": "2008-03-04T21:55:42Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "linbox charpoly crashes on OS X 10.5-intel",
+    "title": "[Patch included, with positive review] linbox charpoly crashes on OS X 10.5-intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2388",
     "user": "https://github.com/ClementPernet"
 }
 ```
-Assignee: mabshoff
+Assignee: @ClementPernet
 
 The proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations.
 The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.

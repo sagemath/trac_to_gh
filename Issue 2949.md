@@ -1,22 +1,23 @@
-# Issue 2949: change slightly the docstring for assume (utterly trivial)
+# Issue 2949: [with patch, positive review] change slightly the docstring for assume (utterly trivial)
 
 archive/issues_002949.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nChange the output of assume? to:\n\n```\nsage: from sage.calculus.calculus import maxima as calcmaxima\nsage: calcmaxima.eval('declare(n,integer)')\n```\n\nto\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(n,integer)')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2949\n\n",
+    "body": "Assignee: @mwhansen\n\nChange the output of assume? to:\n\n```\nsage: from sage.calculus.calculus import maxima as calcmaxima\nsage: calcmaxima.eval('declare(n,integer)')\n```\n\nto\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(n,integer)')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2949\n\n",
+    "closed_at": "2008-04-18T20:19:06Z",
     "created_at": "2008-04-18T00:24:13Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "change slightly the docstring for assume (utterly trivial)",
+    "title": "[with patch, positive review] change slightly the docstring for assume (utterly trivial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2949",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Change the output of assume? to:
 

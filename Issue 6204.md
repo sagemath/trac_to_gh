@@ -1,21 +1,21 @@
-# Issue 6204: make norms for degree 1 relative number fields work; add doctests
+# Issue 6204: [with patch, needs work] make norms for degree 1 relative number fields work; add doctests
 
 archive/issues_006204.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro fwclarke\n\nKeywords: degree 1 relative number field norm\n\nThis small patch makes norms for degree 1 relative number fields avoid pari, which fails (in our old version) in this case.  I also added a doctest or two.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6204\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @craigcitro fwclarke\n\nKeywords: degree 1 relative number field norm\n\nThis small patch makes norms for degree 1 relative number fields avoid pari, which fails (in our old version) in this case.  I also added a doctest or two.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6204\n\n",
     "created_at": "2009-06-04T03:36:11Z",
     "labels": [
-        "component: number theory"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "make norms for degree 1 relative number fields work; add doctests",
+    "title": "[with patch, needs work] make norms for degree 1 relative number fields work; add doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6204",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @craigcitro fwclarke
 

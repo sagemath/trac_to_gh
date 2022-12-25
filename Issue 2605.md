@@ -4,6 +4,7 @@ archive/issues_002605.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn an empty cell, type\n  tab, backspace, and shift-enter\nand it gives a strange bug: Missing output for cell ...  \n\nReported by Andrew Guertin, an undergraduate in my Math 252 class.\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/2605\n\n",
+    "closed_at": "2008-05-10T21:22:53Z",
     "created_at": "2008-03-19T20:39:28Z",
     "labels": [
         "component: notebook",

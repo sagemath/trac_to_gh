@@ -1,9 +1,10 @@
-# Issue 6048: [with patch, needs review] fix non-ASCII character in mpolynomialsystem
+# Issue 6048: [with patch, positive review] fix non-ASCII character in mpolynomialsystem
 
 archive/issues_006048.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis patch changes a non-ASCII hyphen to an ASCII hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6048\n\n",
+    "closed_at": "2009-05-18T18:44:06Z",
     "created_at": "2009-05-16T16:18:50Z",
     "labels": [
         "component: cryptography",
@@ -11,7 +12,7 @@ archive/issues_006048.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] fix non-ASCII character in mpolynomialsystem",
+    "title": "[with patch, positive review] fix non-ASCII character in mpolynomialsystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6048",
     "user": "https://github.com/jhpalmieri"

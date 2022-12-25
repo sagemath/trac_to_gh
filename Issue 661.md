@@ -4,6 +4,7 @@ archive/issues_000661.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTrac comes with its own Wiki and if something like LinBox is found in a user submitted test, it is enhanced with a link to that wiki instance. As we don't use this wiki but have our own at http://wiki.sagemath.org we should change that behavior such that the link points to our wiki instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/661\n\n",
+    "closed_at": "2008-08-23T23:12:29Z",
     "created_at": "2007-09-15T13:12:21Z",
     "labels": [
         "component: website/wiki",

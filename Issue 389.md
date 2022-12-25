@@ -1,16 +1,17 @@
-# Issue 389: bug in mpfi C library
+# Issue 389: [with spkg, patch] bug in mpfi C library
 
 archive/issues_000389.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThere is a bug in the mpfi C library for interval arithmetic, which leads to an infinite loop in SAGE:\n\n```\nwonder if there is something wrong with the interval cosine\ncalculation?  cos seems to loop forever on [-1 .. +1].  Try this:\n\nsage: x = RealInterval(-1.1,1.1)\nsage: x.cos()\n[0.453596121425577307 .. 1.00000000000000000]\nsage: x = RealInterval(-1.0,1.0)\nsage: x.cos()\n---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call\nlast)\n\n/files/home/nholtz/<ipython console> in <module>()\n\n------\n\n\n\nJust as a followup, in case anyone cares ...\n\nThe problem is definitely in libmpfi, as I can duplicate\nthe infinite loop problem in computing mpfi_cos([-1.0,1.0]) in C.\n\nI have notified the maintainers of libmpfi, and we'll see what\nhappens.\n\nneal\n\nOn Jun 19, 11:16 am, neal <nho...@docuweb.ca> wrote:\n> I wonder if there is something wrong with the interval cosine\n> calculation?  cos seems to loop forever on [-1 .. +1].  Try this:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/389\n\n",
+    "closed_at": "2007-11-02T19:41:14Z",
     "created_at": "2007-06-22T11:30:37Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "bug in mpfi C library",
+    "title": "[with spkg, patch] bug in mpfi C library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/389",
     "user": "https://github.com/williamstein"

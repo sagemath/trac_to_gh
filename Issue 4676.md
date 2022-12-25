@@ -1,16 +1,17 @@
-# Issue 4676: Polyhedral improvements
+# Issue 4676: [with patch, positive review] Polyhedral improvements
 
 archive/issues_004676.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: polyhedra, polytopes\n\nThis adds more built-in polytopes (more Archimedean solids) and some new methods such as the Gale transform, bipyramid construction, edge truncation, and perspective projection with (optionally) hidden faces invisible.  The Schlegel projection code has also been somewhat refactored to make it more general in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4676\n\n",
+    "closed_at": "2009-01-12T00:39:29Z",
     "created_at": "2008-12-02T17:17:34Z",
     "labels": [
         "component: geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Polyhedral improvements",
+    "title": "[with patch, positive review] Polyhedral improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4676",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

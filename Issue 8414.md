@@ -1,28 +1,39 @@
-# Issue 8414: lattice -> space in weyl_groups.py
+# Issue 8414: lattice -> domain in weyl_groups.py
 
 archive/issues_008414.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nWeylGroups and WeylGroupElements have a method lattice() and also an attribute _lattice. At one time this pointed to the ambient lattice, but now it points to the ambient space.\n\nFor consistency perhaps the name of the method and attribute should therefore be changed to space(). The patch makes this change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8414\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nKeywords: Weyl groups\n\nWeylGroups and WeylGroupElements have a method lattice() and also an attribute _lattice. At one time this pointed to the ambient lattice, but now it points to the ambient space.\n\nAfter some discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ad0c77557e78313f/9cfd6f09bcd1de2f?#9cfd6f09bcd1de2f\n\nit has been decided that the method and attribute should be called `domain`.\n\nThe patch also makes reflections of the Weyl group a\nfamily and adds methods `inverse_family` and `has_key` to\nthe method family, per Nicolas' suggestion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8414\n\n",
+    "closed_at": "2010-04-19T05:22:06Z",
     "created_at": "2010-03-02T01:36:04Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "lattice -> space in weyl_groups.py",
+    "title": "lattice -> domain in weyl_groups.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8414",
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: @aghitza
+Assignee: @dwbump
 
 CC:  sage-combinat
 
+Keywords: Weyl groups
+
 WeylGroups and WeylGroupElements have a method lattice() and also an attribute _lattice. At one time this pointed to the ambient lattice, but now it points to the ambient space.
 
-For consistency perhaps the name of the method and attribute should therefore be changed to space(). The patch makes this change.
+After some discussion here:
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/ad0c77557e78313f/9cfd6f09bcd1de2f?#9cfd6f09bcd1de2f
+
+it has been decided that the method and attribute should be called `domain`.
+
+The patch also makes reflections of the Weyl group a
+family and adds methods `inverse_family` and `has_key` to
+the method family, per Nicolas' suggestion.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8414
 

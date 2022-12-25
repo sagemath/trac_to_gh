@@ -4,6 +4,7 @@ archive/issues_008253.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIn Sage 4.3.2:\n\n```\nsearch_src('is', 'prime', 'field', ignore_case=True)\nTraceback (most recent call last):\n...\nTypeError: search() takes at most 3 arguments (4 given)\n```\nThis is because of a bug in sage.misc.sagedoc: when calling re.search, flags like re.MULTILINE and re.IGNORECASE should be combined using bit-wise or, not by passing them as separate entries in a list.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8253\n\n",
+    "closed_at": "2010-02-18T22:05:09Z",
     "created_at": "2010-02-12T22:22:10Z",
     "labels": [
         "component: misc",

@@ -1,16 +1,17 @@
-# Issue 2906: notebook -- there is a "sagetex" command; it is untested and completely broken right now.  remove it (i.e., don't export to top level all.py)
+# Issue 2906: [with patch, positive review] notebook -- there is a "sagetex" command; it is untested and completely broken right now.  remove it (i.e., don't export to top level all.py)
 
 archive/issues_002906.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is an easy fix -- make sure sagetex isn't a command in sage:.\nAnother ticket could be about implementing this right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2906\n\n",
+    "closed_at": "2008-09-19T04:03:41Z",
     "created_at": "2008-04-13T08:22:30Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "notebook -- there is a \"sagetex\" command; it is untested and completely broken right now.  remove it (i.e., don't export to top level all.py)",
+    "title": "[with patch, positive review] notebook -- there is a \"sagetex\" command; it is untested and completely broken right now.  remove it (i.e., don't export to top level all.py)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2906",
     "user": "https://github.com/williamstein"

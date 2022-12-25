@@ -1,9 +1,10 @@
-# Issue 7051: latex issues
+# Issue 7051: [with patch, positive review] latex issues
 
 archive/issues_007051.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nHere are several LaTeX issues:\n\n- because of how Python works (I think), if you set `T = type(identity_matrix(3))`, then T has all of the methods of an identity matrix.  In particular, if you run `latex(T)`, the code calls `hasattr(T, '_latex_')`, and this returns True because `hasattr(identity_matrix(3), '_latex_')` is True.  But then `T._latex_()` produces a `TypeError`.  This is the cause of the error reported [here](http://groups.google.com/group/sage-support/browse_frm/thread/498eb1dae179fc3f).\n\nSolution: catch `TypeError`s when calling `T._latex_()` in this sort of situation.\n\n- In the notebook, try \n\n``` \n%latex \n$\\sage{type(35)}$ \n``` \nIn this case, Sage typesets the string `<type 'sage.rings.integer.Integer'>`, but the < and > signs get converted into an upside-down exclamation point and question mark. \n\nSolution: typeset strings differently, using `\\textttt` instead of `\\text`.\n\n- Click the \"Typeset\" button and try \n\n``` \ntype(35) \n``` \nIn this case, jsMath kicks in and tries to typeset `\\text{<type 'sage.rings.integer.Integer'>`}, but the symbols < and > confuse jsMath -- it thinks they're part of an html command.  As a result, there is *no* output at all. \n\nSolution: for typesetting strings in jsMath, replace `\\texttt` with `\\hbox`.\n\n- This comes from a Sage doctest: \n\n``` \nsage: R.<x,y>=QQbar[] \nsage: latex(-x^2-y+1) \n-x^{2} - y + \\text{1} \n``` \nThe `\\text{1`} should not be there.\n\nSolution: The `\\text{1`}  appears because the element 1 in R has no `_latex_` method, so it gets converted to a string, when then gets typeset by enclosing it in `\\text`.  So test strings: if they consist only of digits, just return the string.  If it contains anything else, enclose in `\\textttt`, as mentioned above.\n\nA patch will follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7051\n\n",
+    "body": "Assignee: @jhpalmieri\n\nHere are several LaTeX issues:\n\n- because of how Python works (I think), if you set `T = type(identity_matrix(3))`, then T has all of the methods of an identity matrix.  In particular, if you run `latex(T)`, the code calls `hasattr(T, '_latex_')`, and this returns True because `hasattr(identity_matrix(3), '_latex_')` is True.  But then `T._latex_()` produces a `TypeError`.  This is the cause of the error reported [here](http://groups.google.com/group/sage-support/browse_frm/thread/498eb1dae179fc3f).\n\nSolution: catch `TypeError`s when calling `T._latex_()` in this sort of situation.\n\n- In the notebook, try \n\n``` \n%latex \n$\\sage{type(35)}$ \n``` \nIn this case, Sage typesets the string `<type 'sage.rings.integer.Integer'>`, but the < and > signs get converted into an upside-down exclamation point and question mark. \n\nSolution: typeset strings differently, using `\\texttt` instead of `\\text`.\n\n- Click the \"Typeset\" button and try \n\n``` \ntype(35) \n``` \nIn this case, jsMath kicks in and tries to typeset `\\text{<type 'sage.rings.integer.Integer'>`}, but the symbols < and > confuse jsMath -- it thinks they're part of an html command.  As a result, there is *no* output at all. \n\nSolution: for typesetting strings in jsMath, replace `\\texttt` with `\\hbox`.\n\n- This comes from a Sage doctest: \n\n``` \nsage: R.<x,y>=QQbar[] \nsage: latex(-x^2-y+1) \n-x^{2} - y + \\text{1} \n``` \nThe `\\text{1`} should not be there.\n\nSolution: The `\\text{1`}  appears because the element 1 in R has no `_latex_` method, so it gets converted to a string, when then gets typeset by enclosing it in `\\text`.  So test strings: if they consist only of digits, just return the string.  If they contain anything else, enclose in `\\texttt`, as mentioned above.\n\nA patch will follow soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7051\n\n",
+    "closed_at": "2009-10-15T09:30:51Z",
     "created_at": "2009-09-28T15:27:39Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_007051.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "latex issues",
+    "title": "[with patch, positive review] latex issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7051",
     "user": "https://github.com/jhpalmieri"
@@ -33,7 +34,7 @@ $\sage{type(35)}$
 ``` 
 In this case, Sage typesets the string `<type 'sage.rings.integer.Integer'>`, but the < and > signs get converted into an upside-down exclamation point and question mark. 
 
-Solution: typeset strings differently, using `\textttt` instead of `\text`.
+Solution: typeset strings differently, using `\texttt` instead of `\text`.
 
 - Click the "Typeset" button and try 
 
@@ -53,9 +54,10 @@ sage: latex(-x^2-y+1)
 ``` 
 The `\text{1`} should not be there.
 
-Solution: The `\text{1`}  appears because the element 1 in R has no `_latex_` method, so it gets converted to a string, when then gets typeset by enclosing it in `\text`.  So test strings: if they consist only of digits, just return the string.  If it contains anything else, enclose in `\textttt`, as mentioned above.
+Solution: The `\text{1`}  appears because the element 1 in R has no `_latex_` method, so it gets converted to a string, when then gets typeset by enclosing it in `\text`.  So test strings: if they consist only of digits, just return the string.  If they contain anything else, enclose in `\texttt`, as mentioned above.
 
 A patch will follow soon.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7051
 

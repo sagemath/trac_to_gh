@@ -1,22 +1,23 @@
-# Issue 7054: SageNB -- Minor aesthetic change in Upload or Create File
+# Issue 7054: [with patch, positive review] SageNB -- Minor aesthetic change in Upload or Create File
 
 archive/issues_007054.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n> 16:42 < williamstein> On \"upload a file\" at the bottom it should say \"Upload or Create File\" not just \"Upload\".\n\n\n> 16:42 < williamstein> trivial template change\n\nIssue created by migration from https://trac.sagemath.org/ticket/7054\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n> 16:42 < williamstein> On \"upload a file\" at the bottom it should say \"Upload or Create File\" not just \"Upload\".\n\n\n> 16:42 < williamstein> trivial template change\n\nIssue created by migration from https://trac.sagemath.org/ticket/7054\n\n",
+    "closed_at": "2009-10-25T06:48:46Z",
     "created_at": "2009-09-28T17:56:32Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "SageNB -- Minor aesthetic change in Upload or Create File",
+    "title": "[with patch, positive review] SageNB -- Minor aesthetic change in Upload or Create File",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7054",
     "user": "https://github.com/TimDumol"
 }
 ```
-Assignee: tbd
+Assignee: boothby
 
 CC:  @williamstein
 

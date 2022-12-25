@@ -1,21 +1,22 @@
-# Issue 3207: upgrade jsmath to version 3.5
+# Issue 3207: [with patch, with positive review] upgrade jsmath to version 3.5
 
 archive/issues_003207.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe newest version is 3.5, from March 2008.  The attached patch upgrades the jsmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3207\n\n",
+    "body": "Assignee: somebody\n\nThe newest version is 3.5, from March 2008.  The attached patch upgrades the jsmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3207\n\n",
+    "closed_at": "2008-06-23T06:52:00Z",
     "created_at": "2008-05-14T22:33:14Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "upgrade jsmath to version 3.5",
+    "title": "[with patch, with positive review] upgrade jsmath to version 3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3207",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: somebody
 
 The newest version is 3.5, from March 2008.  The attached patch upgrades the jsmath.
 

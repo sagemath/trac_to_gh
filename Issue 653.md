@@ -4,10 +4,10 @@ archive/issues_000653.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt would be good to port polredabs() from pari--this runs LLL to find a \"small\" generator of a field.\n\nFrom gp:\n\n? ?polredabs\npolredabs(x,{flag=0}): a smallest generating polynomial of the number field for \nthe T2 norm on the roots, with smallest index for the minimal T2 norm. flag is \noptional, whose binary digit mean 1: give the element whose characteristic \npolynomial is the given polynomial. 4: give all polynomials of minimal T2 norm \n(give only one of P(x) and P(-x)). 16: partial reduction.\n\n(Of course, this is part of the larger project of bringing the number fields up to speed...)\n\nIssue created by migration from https://trac.sagemath.org/ticket/653\n\n",
+    "closed_at": "2007-10-26T05:05:13Z",
     "created_at": "2007-09-14T04:28:55Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "Need LLL-optimize from pari",

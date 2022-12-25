@@ -7,6 +7,7 @@ archive/issues_007431.json:
     "created_at": "2009-11-11T19:47:36Z",
     "labels": [
         "component: interact",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",

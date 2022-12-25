@@ -4,6 +4,7 @@ archive/issues_002167.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nYou sage: M = Matrix([[1,0],[x,4]])\nsage: M\n\n[1 0]\n[x 4]\nsage: type(M)\n<type 'sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense'>\nsage: M.echelon_form()\n\n[1 0]\n[0 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2167\n\n",
+    "closed_at": "2008-02-15T00:35:25Z",
     "created_at": "2008-02-15T00:28:45Z",
     "labels": [
         "component: linear algebra",

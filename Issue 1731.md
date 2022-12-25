@@ -1,16 +1,16 @@
-# Issue 1731: SAge mac app
+# Issue 1731: Sage mac app
 
 archive/issues_001731.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom NASA:\n\n```\nHi,\n\nThanks for Sage - it's awesome. I need to convince my coworkers to\nswitch from their proprietary programs to Sage.\n\nI've attached a little script that uses the Platypus program\n(http://www.sveinbjorn.org/software) to bundle the sage directory\ninto a clickable Mac application. It has some code to update the\nSAGE_ROOT variable so that things still work if a user drags the\nprogram around.\n\nMy code is public domain, so feel free to use it if you like it.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1731\n\n",
+    "closed_at": "2009-02-08T03:20:23Z",
     "created_at": "2008-01-09T06:54:44Z",
     "labels": [
-        "component: distribution",
-        "bug"
+        "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "SAge mac app",
+    "title": "Sage mac app",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1731",
     "user": "https://github.com/williamstein"

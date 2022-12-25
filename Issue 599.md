@@ -3,7 +3,8 @@
 archive/issues_000599.json:
 ```json
 {
-    "body": "Assignee: malb or mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/599\n\n",
+    "body": "Assignee: malb or mabshoff\n\nThis is covered by the patches in #473. Closing now.\n\nBut there are bugs in valgrind, some file for cachegrind and massif still end up in $CWD - Oh well, I will report/fix those upstram in vagrind.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/599\n\n",
+    "closed_at": "2007-09-06T18:59:42Z",
     "created_at": "2007-09-06T17:25:55Z",
     "labels": [
         "component: user interface",
@@ -18,7 +19,13 @@ archive/issues_000599.json:
 ```
 Assignee: malb or mabshoff
 
+This is covered by the patches in #473. Closing now.
 
+But there are bugs in valgrind, some file for cachegrind and massif still end up in $CWD - Oh well, I will report/fix those upstram in vagrind.
+
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/599
 

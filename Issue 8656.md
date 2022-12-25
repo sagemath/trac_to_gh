@@ -4,6 +4,7 @@ archive/issues_008656.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nRecent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((0,), (0,)), ((1,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\nThis ray has three faces: empty, vertex, and the whole ray (including the vertex at which it originates). Five are shown, including a face containing the ray, but not the vertex from which it originates.\n\n```\nsage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((1,), (0,)), ((0,), (1,)), ((2,), (0, 1))]\n[((1, 2), (0,)), ((0, 2), (1,))]\n[((0, 1, 2), None)]\n```\nFor the quadrant we have five faces: empty, vertex, two rays, and the whole quadrant. The above output has seven.\n\nThe easiest fix is probably to raise an exception if the polyhedron is unbounded and state in the documentation that face_lattice works only for polytopes, but of course it would be nice to be able to compute correct faces in all cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8656\n\n",
+    "closed_at": "2010-11-10T08:50:06Z",
     "created_at": "2010-04-06T20:26:33Z",
     "labels": [
         "component: geometry",

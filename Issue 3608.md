@@ -4,10 +4,10 @@ archive/issues_003608.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mkoeppe @kcrisman\n\n```\n==21694== Invalid read of size 8\n==21694==    at 0x21C720A0: Matrix_NewFromArrayStruct (dense.c:244)\n==21694==    by 0x21C751EE: matrix_new (dense.c:499)\n==21694==    by 0x45E48A: type_call (typeobject.c:422)\n==21694==    by 0x41B0FA: PyObject_Call (abstract.c:1861)\n==21694==    by 0x4952F3: do_call (ceval.c:3784)\n==21694==    by 0x494BAA: call_function (ceval.c:3596)\n==21694==    by 0x491174: PyEval_EvalFrameEx (ceval.c:2272)\n==21694==    by 0x492E64: PyEval_EvalCodeEx (ceval.c:2836)\n==21694==    by 0x494E7C: fast_function (ceval.c:3669)\n==21694==    by 0x494B91: call_function (ceval.c:3594)\n==21694==    by 0x491174: PyEval_EvalFrameEx (ceval.c:2272)\n==21694==    by 0x492E64: PyEval_EvalCodeEx (ceval.c:2836)\n==21694==  Address 0x57a1be0 is 0 bytes after a block of size 16 alloc'd\n==21694==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==21694==    by 0x44969A: PyMem_Malloc (object.c:2010)\n==21694==    by 0x1D033292: array_struct_get (arrayobject.c:6409)\n==21694==    by 0x4EA584: getset_get (descrobject.c:146)\n==21694==    by 0x448569: PyObject_GenericGetAttr (object.c:1312)\n==21694==    by 0x447F0B: PyObject_GetAttr (object.c:1127)\n==21694==    by 0x447CB3: PyObject_GetAttrString (object.c:1069)\n==21694==    by 0x21C71DCC: Matrix_NewFromArrayStruct (dense.c:191)\n==21694==    by 0x21C751EE: matrix_new (dense.c:499)\n==21694==    by 0x45E48A: type_call (typeobject.c:422)\n==21694==    by 0x41B0FA: PyObject_Call (abstract.c:1861)\n==21694==    by 0x4952F3: do_call (ceval.c:3784)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3608\n\n",
+    "closed_at": "2020-07-02T14:10:00Z",
     "created_at": "2008-07-08T11:53:08Z",
     "labels": [
         "component: memleak",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

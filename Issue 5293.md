@@ -1,22 +1,26 @@
-# Issue 5293: tab-completion menu creates two copies of the choice made
+# Issue 5293: [with patch; positive review] tab-completion menu creates two copies of the choice made
 
 archive/issues_005293.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIn sage-3.3.rc0 (presumable from some patch in an alpha release) tab-completion is somewhat broken in the notebook.  If you tab-complete and there is more than one possible completion, if you choose from the drop-down menu and press enter you get the entire command repeated, for example:\n\nQQ. [press tab, get menu, choose absolute_degree and press enter]\nQQ.absolute_degreeQQ.absolute_degree\n\nThis is currently effecting sagenb's rc0, and has been confirmed on several other installs.\n\nI am not sure where to begin to track this down, or what patch caused it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5293\n\n",
+    "body": "Assignee: boothby\n\nKeywords: tab completion\n\nIn sage-3.3.rc0 (presumable from some patch in an alpha release) tab-completion is somewhat broken in the notebook.  If you tab-complete and there is more than one possible completion, if you choose from the drop-down menu and press enter you get the entire command repeated, for example:\n\nQQ. [press tab, get menu, choose absolute_degree and press enter]\nQQ.absolute_degreeQQ.absolute_degree\n\nThis is currently effecting sagenb's rc0, and has been confirmed on several other installs.\n\nI am not sure where to begin to track this down, or what patch caused it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5293\n\n",
+    "closed_at": "2009-02-20T07:24:02Z",
     "created_at": "2009-02-17T12:57:36Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "tab-completion menu creates two copies of the choice made",
+    "title": "[with patch; positive review] tab-completion menu creates two copies of the choice made",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5293",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: tbd
+Assignee: boothby
+
+Keywords: tab completion
 
 In sage-3.3.rc0 (presumable from some patch in an alpha release) tab-completion is somewhat broken in the notebook.  If you tab-complete and there is more than one possible completion, if you choose from the drop-down menu and press enter you get the entire command repeated, for example:
 

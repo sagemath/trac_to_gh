@@ -1,9 +1,9 @@
-# Issue 1795: [with-patch] Adds support for cdef'd and cpdef'd functions to sage-coverage
+# Issue 1795: [with patch, needs work] Adds support for cdef'd functions to sage-coverage
 
 archive/issues_001795.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  @jasongrout\n\nThe previous version of sage-coverage did not check cdef'd functions, and it incorrectly claimed that cpdef'd functions did not have doctests.  This patch fixes that problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1795\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout\n\nsage-coverage does not check cdef'd functions.  This patch fixes that problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1795\n\n",
     "created_at": "2008-01-16T18:06:01Z",
     "labels": [
         "component: doctest coverage",
@@ -11,17 +11,17 @@ archive/issues_001795.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with-patch] Adds support for cdef'd and cpdef'd functions to sage-coverage",
+    "title": "[with patch, needs work] Adds support for cdef'd functions to sage-coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1795",
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @roed314
+Assignee: @mwhansen
 
 CC:  @jasongrout
 
-The previous version of sage-coverage did not check cdef'd functions, and it incorrectly claimed that cpdef'd functions did not have doctests.  This patch fixes that problem.
+sage-coverage does not check cdef'd functions.  This patch fixes that problem.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1795
 

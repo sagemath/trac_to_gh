@@ -4,6 +4,7 @@ archive/issues_006747.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  sage-combinat @jasongrout myurko\n\nWhen one plots a tree with  `G.plot(layout='tree')`, the result is ugly.  For one thing, a tree plot should never have crossing lines.  I have code that makes a nice tree plot in nearly-linear time, which should be included in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6747\n\n",
+    "closed_at": "2009-10-31T16:44:14Z",
     "created_at": "2009-08-14T18:02:05Z",
     "labels": [
         "component: graph theory",

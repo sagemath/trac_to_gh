@@ -3,7 +3,8 @@
 archive/issues_009667.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/9667\n\n",
+    "body": "Assignee: @williamstein\n\nThe latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx\n\nThis patch has been included in #9764.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9667\n\n",
+    "closed_at": "2010-09-28T11:15:03Z",
     "created_at": "2010-08-02T09:47:20Z",
     "labels": [
         "component: interfaces",
@@ -19,6 +20,8 @@ archive/issues_009667.json:
 Assignee: @williamstein
 
 The latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx
+
+This patch has been included in #9764.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9667
 

@@ -3,7 +3,8 @@
 archive/issues_009250.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  combinat\n\nThis currently breaks:\n\nsage: B=KirillovReshetikhinCrystal(['D',5,1], 3,1)\nsage: B[0].e(0)\n\nThis has to do with the method intermediate_shape for plus/minus diagrams.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9250\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  combinat\n\nKeywords: crystals\n\nThis currently breaks:\n\n```\nsage: B=KirillovReshetikhinCrystal(['D',5,1], 3,1)\nsage: B[0].e(0)\n```\n\nThis has to do with the method intermediate_shape for plus/minus diagrams.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9250\n\n",
+    "closed_at": "2010-07-21T01:44:09Z",
     "created_at": "2010-06-16T21:25:50Z",
     "labels": [
         "component: combinatorics",
@@ -20,10 +21,14 @@ Assignee: sage-combinat
 
 CC:  combinat
 
+Keywords: crystals
+
 This currently breaks:
 
+```
 sage: B=KirillovReshetikhinCrystal(['D',5,1], 3,1)
 sage: B[0].e(0)
+```
 
 This has to do with the method intermediate_shape for plus/minus diagrams.
 

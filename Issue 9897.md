@@ -3,7 +3,8 @@
 archive/issues_009897.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\n* Add a file `sage/libs/pari/declinl.pxi` for declarations of inline functions.\n  * Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions\n\nIssue created by migration from https://trac.sagemath.org/ticket/9898\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\n* Adds a file `sage/libs/pari/declinl.pxi` for declarations of *inline* functions (which is included by `sage/libs/pari/decl.pxi`).\n* Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions.\n* Adds/updates authors sections.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9898\n\n",
+    "closed_at": "2010-09-28T10:55:45Z",
     "created_at": "2010-09-11T13:24:02Z",
     "labels": [
         "component: interfaces"
@@ -19,8 +20,10 @@ Assignee: @williamstein
 
 CC:  @nexttime
 
-* Add a file `sage/libs/pari/declinl.pxi` for declarations of inline functions.
-  * Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions
+* Adds a file `sage/libs/pari/declinl.pxi` for declarations of *inline* functions (which is included by `sage/libs/pari/decl.pxi`).
+* Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions.
+* Adds/updates authors sections.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9898
 

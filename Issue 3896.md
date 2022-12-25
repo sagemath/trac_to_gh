@@ -1,22 +1,23 @@
-# Issue 3896: [with spkg, patch - needs review] Upgrade Cython to 0.9.8.1
+# Issue 3896: [with spkg, patch; positive review] Upgrade Cython to 0.9.8.1
 
 archive/issues_003896.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nLots of new features, including c-speed access to NumPy arrays, a memory leak fix in some cpdef calls, and others. \n\nBuilds and passes all tests with the attached patch. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3896\n\n",
+    "body": "Assignee: @robertwb\n\nLots of new features, including c-speed access to NumPy arrays, a memory leak fix in some cpdef calls, and others. \n\nBuilds and passes all tests with the attached patch. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3896\n\n",
+    "closed_at": "2008-08-23T19:38:25Z",
     "created_at": "2008-08-19T04:32:02Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, patch - needs review] Upgrade Cython to 0.9.8.1",
+    "title": "[with spkg, patch; positive review] Upgrade Cython to 0.9.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3896",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: mabshoff
+Assignee: @robertwb
 
 Lots of new features, including c-speed access to NumPy arrays, a memory leak fix in some cpdef calls, and others. 
 

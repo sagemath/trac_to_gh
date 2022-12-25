@@ -4,6 +4,7 @@ archive/issues_000134.json:
 ```json
 {
     "body": "Assignee: somebody\n\nhttp://www.loria.fr/~gaudry/mpn_AMD64/index.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/134\n\n",
+    "closed_at": "2007-08-09T21:47:54Z",
     "created_at": "2006-10-16T17:37:59Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,9 +1,10 @@
-# Issue 4412: [with patch, needs review] extend the local information function for elliptic curves over number fields
+# Issue 4412: [with patches, positive review] extend the local information function for elliptic curves over number fields
 
 archive/issues_004412.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nKeywords: elliptic curve local data\n\nThis is essentially a continuation of #3897.  I have added functionality to  ell_local_data.py so that for elliptic curves over number fields (and over Q) you can (1) ask about additive vs. split vs. non-split multiplicative reduction at a prime; (2) Ask for the Tamagawa index (which is not always equal to the T. number) and also (3) added some better documentation to the kodaira_symbol code.\n\nThe motivation is that this is used i computing p-adic elliptic logs which in turn in used in the S-integral points code which is coming along nicely.  But this stuff is independent of that so I thought it could be posted separately.\n\nThe patch should apply to 3.2.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4412\n\n",
+    "closed_at": "2008-11-30T07:15:04Z",
     "created_at": "2008-10-31T16:46:51Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004412.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] extend the local information function for elliptic curves over number fields",
+    "title": "[with patches, positive review] extend the local information function for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4412",
     "user": "https://github.com/JohnCremona"

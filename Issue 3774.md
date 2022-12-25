@@ -1,16 +1,17 @@
-# Issue 3774: __radd__ doesn't work when left hand side is an Element
+# Issue 3774: [with patch, positive review] __radd__ doesn't work when left hand side is an Element
 
 archive/issues_003774.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  alexghitza\n\n```\nOn Aug 1, 2008, at 7:05 AM, Nils Skoruppa wrote:\n\n\nIt seems that,  for non elements,  __radd__ is set disfunctional\nby the coercion model. On the other hand, it might be desirable\nto have this enabled for people writing their own classes but having\nreasons to avoid (parts of)  the coercion system (like me :-)\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3774\n\n",
+    "closed_at": "2008-09-24T04:23:27Z",
     "created_at": "2008-08-05T08:24:46Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "__radd__ doesn't work when left hand side is an Element",
+    "title": "[with patch, positive review] __radd__ doesn't work when left hand side is an Element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3774",
     "user": "https://github.com/robertwb"

@@ -4,9 +4,11 @@ archive/issues_001527.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1527\n\n",
+    "closed_at": "2007-12-16T01:01:44Z",
     "created_at": "2007-12-16T00:32:19Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",

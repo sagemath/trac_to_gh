@@ -4,6 +4,7 @@ archive/issues_008584.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8584\n\n",
+    "closed_at": "2010-04-15T23:40:24Z",
     "created_at": "2010-03-23T07:11:27Z",
     "labels": [
         "component: modular forms",

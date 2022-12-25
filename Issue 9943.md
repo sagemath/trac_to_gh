@@ -3,7 +3,8 @@
 archive/issues_009943.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently, they're always just commutative rings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9944\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently, they're always just commutative rings.\n\n**Apply:**\n1. [attachment:9944-poly-cat.patch]\n2. [attachment:trac-9944-poly_cat_doctests.patch]\n3. [attachment:trac-9944-poly-cat-review.patch]\n4. [attachment:trac-9944-polynomial_speedup.patch]\n5. [attachment:trac9944_abvar_endomorphism.patch]\n6. [attachment:trac9944_faster_and_cleaner_coercion.2.patch]\n7. [attachment:trac9944_addendum.patch]\n\n**Note**\n\nThe same result can be obtained with the original patches:\n1. [attachment:9944-poly-cat.patch]\n2. [attachment:trac-9944-poly_cat_doctests.patch]\n3. [attachment:trac-9944-poly-cat-review.patch]\n4. [attachment:trac9944_polynomial_speedup.patch] (Note the name difference to 4. above)\n5. [attachment:trac9944_abvar_endomorphism.patch]\n6. [attachment:trac9944_faster_and_cleaner_coercion.patch] (Note the name difference to 6. above)\n7. [attachment:trac9944_addendum.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9944\n\n",
+    "closed_at": "2011-05-31T09:50:01Z",
     "created_at": "2010-09-18T22:39:23Z",
     "labels": [
         "component: categories",
@@ -21,6 +22,27 @@ Assignee: @nthiery
 CC:  sage-combinat
 
 Currently, they're always just commutative rings.
+
+**Apply:**
+1. [attachment:9944-poly-cat.patch]
+2. [attachment:trac-9944-poly_cat_doctests.patch]
+3. [attachment:trac-9944-poly-cat-review.patch]
+4. [attachment:trac-9944-polynomial_speedup.patch]
+5. [attachment:trac9944_abvar_endomorphism.patch]
+6. [attachment:trac9944_faster_and_cleaner_coercion.2.patch]
+7. [attachment:trac9944_addendum.patch]
+
+**Note**
+
+The same result can be obtained with the original patches:
+1. [attachment:9944-poly-cat.patch]
+2. [attachment:trac-9944-poly_cat_doctests.patch]
+3. [attachment:trac-9944-poly-cat-review.patch]
+4. [attachment:trac9944_polynomial_speedup.patch] (Note the name difference to 4. above)
+5. [attachment:trac9944_abvar_endomorphism.patch]
+6. [attachment:trac9944_faster_and_cleaner_coercion.patch] (Note the name difference to 6. above)
+7. [attachment:trac9944_addendum.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9944
 

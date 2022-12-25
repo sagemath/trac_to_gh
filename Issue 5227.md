@@ -1,16 +1,17 @@
-# Issue 5227: add next batch of 14 people to devmap
+# Issue 5227: [with patches; positive review] add next batch of 14 people to devmap
 
 archive/issues_005227.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @haraldschilly gmoroz\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly. The devmap in question is the site\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5227\n\n",
+    "closed_at": "2009-02-17T13:32:14Z",
     "created_at": "2009-02-10T07:56:34Z",
     "labels": [
         "component: website/wiki",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add next batch of 14 people to devmap",
+    "title": "[with patches; positive review] add next batch of 14 people to devmap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5227",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

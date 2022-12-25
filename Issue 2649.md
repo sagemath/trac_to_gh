@@ -1,16 +1,17 @@
-# Issue 2649: [with patch, needs review] matrix() constructor fails to find ring for empty dict
+# Issue 2649: matrix() constructor fails to find ring for empty dict
 
 archive/issues_002649.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTry the following:\n\n```\nsage: D = {}\nsage: matrix(D)\n```\nCurrently this throws an exception.  With this patch, it returns [0] when it should return [].  I don't know how to fix this, so I will open a separate ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2649\n\n",
+    "closed_at": "2008-03-23T02:17:49Z",
     "created_at": "2008-03-22T19:26:58Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] matrix() constructor fails to find ring for empty dict",
+    "title": "matrix() constructor fails to find ring for empty dict",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2649",
     "user": "https://github.com/rhinton"

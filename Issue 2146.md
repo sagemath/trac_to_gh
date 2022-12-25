@@ -1,22 +1,23 @@
-# Issue 2146: PolyBoRi random_element is broken
+# Issue 2146: [with patch, with positive review] PolyBoRi random_element is broken
 
 archive/issues_002146.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb\n\nSee below. \n\n```\nsage: R.<x,y,z> = BooleanPolynomialRing(3)\nsage: R.random_element()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/multi_polynomial_ring_generic.pyx in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element()\n\n/Users/was/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.__call__()\n\n<type 'exceptions.TypeError'>: cannot convert <type 'dict'> to BooleanPolynomial\nsage: \n\n```\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead\nof `BooleanPolynomialRing`?  I suggest this for two reasons:\n1. It is PolyBoRi, after all, not BoPolyRi.\n2. The other Sage polynomial ring(s) starts with \"Polynomial\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2146\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @malb\n\nSee below. \n\n```\nsage: R.<x,y,z> = BooleanPolynomialRing(3)\nsage: R.random_element()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/multi_polynomial_ring_generic.pyx in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element()\n\n/Users/was/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.__call__()\n\n<type 'exceptions.TypeError'>: cannot convert <type 'dict'> to BooleanPolynomial\nsage: \n\n```\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead\nof `BooleanPolynomialRing`?  I suggest this for two reasons:\n1. It is PolyBoRi, after all, not BoPolyRi.\n2. The other Sage polynomial ring(s) starts with \"Polynomial\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2146\n\n",
+    "closed_at": "2008-02-19T15:02:22Z",
     "created_at": "2008-02-13T03:49:00Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "PolyBoRi random_element is broken",
+    "title": "[with patch, with positive review] PolyBoRi random_element is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2146",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @malb
+Assignee: @burcin
 
 CC:  @malb
 

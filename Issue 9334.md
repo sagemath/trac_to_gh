@@ -1,16 +1,16 @@
-# Issue 9334: hilbert symbols!!!
+# Issue 9334: Implement Hilbert symbols over number fields
 
 archive/issues_009334.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @mstreng @jdemeyer\n\nKeywords: hilbert symbol\n\nhilbert symbol over number fields\n\nIssue created by migration from https://trac.sagemath.org/ticket/9334\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @mstreng @jdemeyer\n\nKeywords: hilbert symbol\n\nPARI has Hilbert symbols for number fields. Hilbert symbols can be implemented by wrapping PARI's function `nfhilbert`.\n\nApply [attachment:trac_9334_nfhilbert.patch] and [attachment:9334_review_jdemeyer.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/9334\n\n",
+    "closed_at": "2011-11-07T10:11:32Z",
     "created_at": "2010-06-25T03:51:53Z",
     "labels": [
-        "component: number fields",
-        "minor"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
-    "title": "hilbert symbols!!!",
+    "title": "Implement Hilbert symbols over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9334",
     "user": "https://github.com/adeines"
@@ -22,7 +22,9 @@ CC:  @mstreng @jdemeyer
 
 Keywords: hilbert symbol
 
-hilbert symbol over number fields
+PARI has Hilbert symbols for number fields. Hilbert symbols can be implemented by wrapping PARI's function `nfhilbert`.
+
+Apply [attachment:trac_9334_nfhilbert.patch] and [attachment:9334_review_jdemeyer.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/9334
 

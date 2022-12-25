@@ -1,47 +1,32 @@
-# Issue 727: find rational points on ternary quadratic forms -- volunteer needed
+# Issue 727: find rational points on plane conic curves
 
 archive/issues_000727.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @ncalexan justin @mstreng @rlmill @pjbruin\n\n```\nJohn Cremona <john.cremona@gmail.com> \t\t hide details\t 1:37 am (2 minutes ago) \n\treply-to\t\tsage-support@googlegroups.com\t \n\tto\t\tsage-support@googlegroups.com\t \n\tdate\t\tSep 21, 2007 1:37 AM\t \n\tsubject\t\t[sage-support] Re: rational solutions to a bivariate polynomial\t \n\tmailed-by\t\tgooglegroups.com\t \n\nIt *is* a ternary quadratic form once you homogenize with a 3rd variable z.\n\nFinding rational points on plane conics (which is what this is) has\nadvanced substantially in the last few years.  My paper with Rusin\n(Mathematics of Computation, 72 (2003), no. 243, pages 1417-1441.)\nworks well for diaginal ones and is behind Magma's first\nimplementations for RationalPoint(Conic());  a different method by\nDenis Simon is better for non-diagonal ones and is (I believe) what\nMagma uses.\n\nMy method is implemented in the C++ code which is already in Sage in\nthe mwrank package, so all tat would be needed would be to write the\nappropriate wrappers!\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/727\n\n",
+    "body": "Assignee: @mstreng\n\nCC:  @ncalexan justin @mstreng @rlmill @pjbruin\n\nKeywords: rational point points conic quadratic form\n\nImplement a Conic class that is able to\n\n* find rational points on plane conic curves over QQ, finite fields, RR, CC.\n\n* given a conic with a point over a field, compute a parametrization.\n\nIssue created by migration from https://trac.sagemath.org/ticket/727\n\n",
+    "closed_at": "2011-01-25T08:13:28Z",
     "created_at": "2007-09-21T08:45:15Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "find rational points on ternary quadratic forms -- volunteer needed",
+    "title": "find rational points on plane conic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/727",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mstreng
 
 CC:  @ncalexan justin @mstreng @rlmill @pjbruin
 
-```
-John Cremona <john.cremona@gmail.com> 		 hide details	 1:37 am (2 minutes ago) 
-	reply-to		sage-support@googlegroups.com	 
-	to		sage-support@googlegroups.com	 
-	date		Sep 21, 2007 1:37 AM	 
-	subject		[sage-support] Re: rational solutions to a bivariate polynomial	 
-	mailed-by		googlegroups.com	 
+Keywords: rational point points conic quadratic form
 
-It *is* a ternary quadratic form once you homogenize with a 3rd variable z.
+Implement a Conic class that is able to
 
-Finding rational points on plane conics (which is what this is) has
-advanced substantially in the last few years.  My paper with Rusin
-(Mathematics of Computation, 72 (2003), no. 243, pages 1417-1441.)
-works well for diaginal ones and is behind Magma's first
-implementations for RationalPoint(Conic());  a different method by
-Denis Simon is better for non-diagonal ones and is (I believe) what
-Magma uses.
+* find rational points on plane conic curves over QQ, finite fields, RR, CC.
 
-My method is implemented in the C++ code which is already in Sage in
-the mwrank package, so all tat would be needed would be to write the
-appropriate wrappers!
-
-```
+* given a conic with a point over a field, compute a parametrization.
 
 Issue created by migration from https://trac.sagemath.org/ticket/727
 

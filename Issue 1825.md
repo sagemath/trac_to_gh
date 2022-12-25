@@ -1,16 +1,17 @@
-# Issue 1825: rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.
+# Issue 1825: [with patch; needs review] rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.
 
 archive/issues_001825.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1825\n\n",
+    "closed_at": "2008-01-18T23:11:13Z",
     "created_at": "2008-01-18T05:05:35Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.",
+    "title": "[with patch; needs review] rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1825",
     "user": "https://github.com/williamstein"

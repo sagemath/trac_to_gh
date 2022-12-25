@@ -1,16 +1,18 @@
-# Issue 3629: givaro-3.2.11 installs its own libgmpxx.{so,a}
+# Issue 3629: [with new spkg, positive review] givaro-3.2.11 installs its own libgmpxx.{so,a}
 
 archive/issues_003629.json:
 ```json
 {
     "body": "Assignee: @ClementPernet\n\nThe title says it all. No ideas on how to fix it apart touching\nthe install phase.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3629\n\n",
+    "closed_at": "2008-07-16T04:04:08Z",
     "created_at": "2008-07-10T04:37:50Z",
     "labels": [
         "component: finite rings",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "givaro-3.2.11 installs its own libgmpxx.{so,a}",
+    "title": "[with new spkg, positive review] givaro-3.2.11 installs its own libgmpxx.{so,a}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3629",
     "user": "https://github.com/kiwifb"

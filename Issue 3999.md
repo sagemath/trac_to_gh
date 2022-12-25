@@ -1,4 +1,4 @@
-# Issue 3999: [with patch, needs review] Wrapper class to treat additive groups as multiplicative goups
+# Issue 3999: [with patch, needs work] Wrapper class to treat additive groups as multiplicative goups
 
 archive/issues_003999.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_003999.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch, needs review] Wrapper class to treat additive groups as multiplicative goups",
+    "title": "[with patch, needs work] Wrapper class to treat additive groups as multiplicative goups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3999",
     "user": "https://github.com/robertwb"

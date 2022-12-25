@@ -1,9 +1,10 @@
-# Issue 3820: notebook -- sometimes published worksheets are listed as being published by pub.
+# Issue 3820: [with patch, positive review] notebook -- sometimes published worksheets are listed as being published by pub.
 
 archive/issues_003820.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nnotebook -- sometimes published worksheets are listed as being published by pub; this should *never* be the case. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3820\n\n",
+    "body": "Assignee: @mwhansen\n\nnotebook -- sometimes published worksheets are listed as being published by pub; this should *never* be the case. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3820\n\n",
+    "closed_at": "2009-03-25T08:35:11Z",
     "created_at": "2008-08-12T16:17:51Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_003820.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "notebook -- sometimes published worksheets are listed as being published by pub.",
+    "title": "[with patch, positive review] notebook -- sometimes published worksheets are listed as being published by pub.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3820",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 notebook -- sometimes published worksheets are listed as being published by pub; this should *never* be the case. 
 

@@ -1,16 +1,18 @@
-# Issue 8356: python is configured with an unreconised option
+# Issue 8356: python 2.6.4 is configured with an unrecognised option
 
 archive/issues_008356.json:
 ```json
 {
     "body": "Assignee: tbd\n\nWhen python is configured, it is showing the following warning:\n\n```\nconfigure: WARNING: unrecognized options: --without-libpng\n```\n\nIt would be good if when people update packages, they actually check things like the options. R recently had --without-iconv, despite that was no longer an option. \n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8356\n\n",
+    "closed_at": "2010-03-07T01:36:05Z",
     "created_at": "2010-02-25T03:58:59Z",
     "labels": [
         "component: packages: standard",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "python is configured with an unreconised option",
+    "title": "python 2.6.4 is configured with an unrecognised option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8356",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

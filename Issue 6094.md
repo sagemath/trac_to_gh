@@ -4,6 +4,7 @@ archive/issues_006094.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nIn a discussion with David, we realized that he's been using \"method\" for \"algorithm\" in several places. This fix will follow up on #5701, and will probably depend on the patches there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6094\n\n",
+    "closed_at": "2010-12-02T16:08:59Z",
     "created_at": "2009-05-20T18:28:10Z",
     "labels": [
         "component: coding theory",

@@ -1,9 +1,10 @@
-# Issue 3359: bug/inconsistency in multivariate polynomial substitution
+# Issue 3359: [with patch, positive review] bug/inconsistency in multivariate polynomial substitution
 
 archive/issues_003359.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nDear Andrey,\n\nOn Jun 4, 7:21 am, Andrey Novoseltsev <novos...@gmail.com> wrote:\n> What is wrong with the code below and how to fix it?\n\nI don't know what precisely is wrong with that code, but a very\nsimilar code works.\n\nFirst, i can reproduce the trouble:\nsage: Rt.<t> = PolynomialRing(QQ,1)\nsage: p = 1+t\nsage: R.<u,v> = PolynomialRing(QQ, 2)\nsage: p(u/v)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n...\n\nThe following works:\nsage: Rt2.<t> = PolynomialRing(QQ)\nsage: p2 = 1+t\nsage: p2(u/v)\n(u + v)/v\n\nThe difference is that Rt is a Multivariate Polynomial Ring (with one\nvariable, though), but Rt2 is a genuine Univariate Polynomial Ring.\n\nSo, at least there is a work-around.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3359\n\n",
+    "closed_at": "2008-08-26T23:17:47Z",
     "created_at": "2008-06-04T15:46:35Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_003359.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug/inconsistency in multivariate polynomial substitution",
+    "title": "[with patch, positive review] bug/inconsistency in multivariate polynomial substitution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3359",
     "user": "https://github.com/williamstein"

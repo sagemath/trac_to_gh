@@ -1,22 +1,23 @@
-# Issue 4932: fix solve_left_LU for matrix_double_dense, which was totally broken forever (?)
+# Issue 4932: Remove solve_left_LU for matrix_double_dense, which was totally broken forever (?)
 
 archive/issues_004932.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4932\n\n",
+    "body": "Assignee: @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4932\n\n",
+    "closed_at": "2015-02-24T00:39:27Z",
     "created_at": "2009-01-03T06:25:33Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.6",
-    "title": "fix solve_left_LU for matrix_double_dense, which was totally broken forever (?)",
+    "title": "Remove solve_left_LU for matrix_double_dense, which was totally broken forever (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4932",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 
 

@@ -1,9 +1,10 @@
-# Issue 4473: [with patch; needs review] loading file.sage that has a line "load foo.py" is broken due to a missing import
+# Issue 4473: [with patch; positive review] loading file.sage that has a line "load foo.py" is broken due to a missing import
 
 archive/issues_004473.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4473\n\n",
+    "closed_at": "2008-11-09T08:25:03Z",
     "created_at": "2008-11-09T03:13:41Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004473.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch; needs review] loading file.sage that has a line \"load foo.py\" is broken due to a missing import",
+    "title": "[with patch; positive review] loading file.sage that has a line \"load foo.py\" is broken due to a missing import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4473",
     "user": "https://github.com/williamstein"

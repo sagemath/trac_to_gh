@@ -4,6 +4,7 @@ archive/issues_001492.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nUpdated to sqlite-3.5.3.\n\nspkg available here:\n\nhttp://sage.math.washington.edu/home/yqiang/sqlite-3.5.3.p1.spkg\n\n\n\nsage -t sage/databases passed on Linux 32bit and OS X 10.5\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1492\n\n",
+    "closed_at": "2007-12-14T02:09:05Z",
     "created_at": "2007-12-13T20:28:05Z",
     "labels": [
         "component: packages: standard",

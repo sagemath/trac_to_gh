@@ -3,7 +3,8 @@
 archive/issues_009640.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime @jdemeyer\n\nCurrently, the exceptions thrown by PARI are rather cryptic, like\n\n```\nTraceback (most recent call last):\n...\nPariError:  (15)\n```\n\nUsing a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.\n\nDependencies: #9343, #9636\n\nIssue created by migration from https://trac.sagemath.org/ticket/9640\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @jdemeyer\n\nKeywords: pari error interrupt\n\nCurrently, the exceptions thrown by PARI are rather cryptic, like\n\n```\nTraceback (most recent call last):\n...\nPariError:  (15)\n```\n\nThis ticket does the following:\n\n- Use `cb_pari_handle_exception()` instead of `err_catch()` to catch PARI exceptions.\n\n- Using a mechanism similar to #9636, catch the full text of the exception and pass it to `PariError`.\n\n- Introduce a new function `sig_error()` to callback to the interrupt/signal handling code to handle errors which aren't signals and use that for PARI.\n\nApply: [attachment:9640-pari_error_callbacks_v2.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9640\n\n",
+    "closed_at": "2013-11-06T12:48:56Z",
     "created_at": "2010-07-29T15:47:12Z",
     "labels": [
         "component: interfaces"
@@ -19,6 +20,8 @@ Assignee: @williamstein
 
 CC:  @nexttime @jdemeyer
 
+Keywords: pari error interrupt
+
 Currently, the exceptions thrown by PARI are rather cryptic, like
 
 ```
@@ -27,9 +30,16 @@ Traceback (most recent call last):
 PariError:  (15)
 ```
 
-Using a mechanism similar to #9636, it should be possible to catch the full text of the exception and use it to throw PariError.  We should change to using cb_pari_handle_exception() instead of err_catch() to catch PARI exceptions.
+This ticket does the following:
 
-Dependencies: #9343, #9636
+- Use `cb_pari_handle_exception()` instead of `err_catch()` to catch PARI exceptions.
+
+- Using a mechanism similar to #9636, catch the full text of the exception and pass it to `PariError`.
+
+- Introduce a new function `sig_error()` to callback to the interrupt/signal handling code to handle errors which aren't signals and use that for PARI.
+
+Apply: [attachment:9640-pari_error_callbacks_v2.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9640
 

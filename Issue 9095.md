@@ -6,8 +6,7 @@ archive/issues_009095.json:
     "body": "Assignee: @williamstein\n\nCC:  @koffie @mstreng @pjbruin\n\nCode at http://wiki.sagemath.org/daysff/lfcn-bsd\n\nIssue created by migration from https://trac.sagemath.org/ticket/9095\n\n",
     "created_at": "2010-05-30T09:53:23Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Elliptic curve over function field heights",

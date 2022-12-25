@@ -3,7 +3,8 @@
 archive/issues_003169.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @slel\n\nIt would be nice if these worked:\n\n```\nsage: m=matrix(3,range(9))\nsage: v=vector([-1,-2,-3])\nsage: m.augment(v)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix1.pyx in sage.matrix.matrix1.Matrix.augment (sage/matrix/matrix1.c:7099)()\n\n<type 'exceptions.TypeError'>: Argument 'other' has incorrect type (expected sage.matrix.matrix1.Matrix, got sage.modules.vector_integer_dense.Vector_integer_dense)\nsage: m.stack(v)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.stack (sage/matrix/matrix_integer_dense.c:24661)()\n\n<type 'exceptions.AttributeError'>: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'ncols'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3169\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel\n\nKeywords: augment\n\nIt would be nice if these worked:\n\n```\nsage: m = matrix(3, range(9))\nsage: v = vector([-1, -2, -3])\nsage: m.augment(v)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix1.pyx in sage.matrix.matrix1.Matrix.augment (sage/matrix/matrix1.c:7099)()\n\n<type 'exceptions.TypeError'>: Argument 'other' has incorrect type (expected sage.matrix.matrix1.Matrix, got sage.modules.vector_integer_dense.Vector_integer_dense)\nsage: m.stack(v)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.stack (sage/matrix/matrix_integer_dense.c:24661)()\n\n<type 'exceptions.AttributeError'>: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'ncols'\n```\n\n---\n\nNote: implemented in #10424 and #10974.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3169\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2008-05-12T22:21:56Z",
     "labels": [
         "component: linear algebra"
@@ -19,11 +20,13 @@ Assignee: @williamstein
 
 CC:  @slel
 
+Keywords: augment
+
 It would be nice if these worked:
 
 ```
-sage: m=matrix(3,range(9))
-sage: v=vector([-1,-2,-3])
+sage: m = matrix(3, range(9))
+sage: v = vector([-1, -2, -3])
 sage: m.augment(v)
 ---------------------------------------------------------------------------
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
@@ -43,6 +46,10 @@ sage: m.stack(v)
 
 <type 'exceptions.AttributeError'>: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'ncols'
 ```
+
+---
+
+Note: implemented in #10424 and #10974.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3169
 

@@ -4,6 +4,7 @@ archive/issues_008367.json:
 ```json
 {
     "body": "Assignee: giraudo\n\nKeywords: Subsets element_class\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\nNote: this should be caught by setting good categories \n\n```\nsage: s.category()\nCategory of objects\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8367\n\n",
+    "closed_at": "2010-03-01T16:39:18Z",
     "created_at": "2010-02-25T17:39:41Z",
     "labels": [
         "component: combinatorics",

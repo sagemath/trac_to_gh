@@ -1,16 +1,17 @@
-# Issue 746: graphs: graph name is not reset using clear()
+# Issue 746: [with patch] graphs: graph name is not reset using clear()
 
 archive/issues_000746.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nSince networkX uses the empty string for an unset name, while the current SAGE code uses None for an unset name, calling _nxg.clear() in the clear() function will not reset the name to None, but to ''.\n\nThere are also other problems with having an unset name represented by None (mostly because networkX assumes that '' is an unset name).\n\nIssue created by migration from https://trac.sagemath.org/ticket/746\n\n",
+    "closed_at": "2007-10-04T19:52:29Z",
     "created_at": "2007-09-24T20:54:44Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "graphs: graph name is not reset using clear()",
+    "title": "[with patch] graphs: graph name is not reset using clear()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/746",
     "user": "https://github.com/jasongrout"

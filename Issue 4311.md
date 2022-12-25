@@ -1,9 +1,10 @@
-# Issue 4311: added documentation for tensor products of crystals
+# Issue 4311: [with patch, positive review] added documentation for tensor products of crystals
 
 archive/issues_004311.json:
 ```json
 {
-    "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat\n\nadded documentation for tensor products of crystals according to Daniel Bump's suggestions (conventions for tensor products in comparison with Kashiwara's conventions; tableaux)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4311\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nadded documentation for tensor products of crystals according to Daniel Bump's suggestions (conventions for tensor products in comparison with Kashiwara's conventions; tableaux)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4311\n\n",
+    "closed_at": "2008-10-18T20:35:56Z",
     "created_at": "2008-10-16T20:00:55Z",
     "labels": [
         "component: combinatorics",
@@ -11,13 +12,13 @@ archive/issues_004311.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "added documentation for tensor products of crystals",
+    "title": "[with patch, positive review] added documentation for tensor products of crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4311",
     "user": "https://github.com/anneschilling"
 }
 ```
-Assignee: Mike Hansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

@@ -1,9 +1,10 @@
-# Issue 5193: [with patch, needs review] maximum allowed matrix size is too big
+# Issue 5193: [with patch, positive review] maximum allowed matrix size is too big
 
 archive/issues_005193.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nOn a 32-bit computer, `MatrixSpace` will let you create a matrix space with up to 2<sup>32</sup>-1 rows or columns.  But we use Py_ssize_t for matrix indices, which can only hold numbers up to 2<sup>31</sup>-1.\n\nPatch attached; all doctests pass on a 64-bit computer, and .../matrix_space.py doctests pass on a 32-bit computer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5193\n\n",
+    "closed_at": "2009-02-06T22:28:39Z",
     "created_at": "2009-02-06T03:11:31Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005193.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] maximum allowed matrix size is too big",
+    "title": "[with patch, positive review] maximum allowed matrix size is too big",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5193",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,16 +1,17 @@
-# Issue 2445: algebras module lacks many docstrings and tests (score 15.7%)
+# Issue 2445: [with patch, positive review] algebras module lacks many docstrings and tests (score 15.7%)
 
 archive/issues_002445.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: algebras modules\n\nMost files in sage/algebras have little or no docstrings and almost no doctests.  This patch makes a start on remedying this, but there is a lot more to be done.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2445\n\n",
+    "closed_at": "2008-03-10T13:50:06Z",
     "created_at": "2008-03-09T21:22:10Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "algebras module lacks many docstrings and tests (score 15.7%)",
+    "title": "[with patch, positive review] algebras module lacks many docstrings and tests (score 15.7%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2445",
     "user": "https://github.com/JohnCremona"

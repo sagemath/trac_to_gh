@@ -1,16 +1,17 @@
-# Issue 4576: biopython optional package upgrade to 1.49beta
+# Issue 4576: [with spkg; positive review] biopython optional package upgrade to 1.49beta
 
 archive/issues_004576.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: biopython, optional packages\n\nBiopython 1.49 beta was released November 7th, 2008.  Its a bigger release than the number indicates - one nice thing was a change from requiring Numeric for some things to using numpy consistently, which makes the install simpler and things are more sage-compatible.\n\nThe install should be tested on something other than what I have available right now which is an intel mac running 10.5.\n\nThe package is at: \n[http://www.d.umn.edu/~mhampton/biopython-1.49b.spkg](http://www.d.umn.edu/~mhampton/biopython-1.49b.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4576\n\n",
+    "closed_at": "2008-11-29T21:43:14Z",
     "created_at": "2008-11-21T14:58:48Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "biopython optional package upgrade to 1.49beta",
+    "title": "[with spkg; positive review] biopython optional package upgrade to 1.49beta",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4576",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

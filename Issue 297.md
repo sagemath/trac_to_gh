@@ -1,22 +1,23 @@
-# Issue 297: polymake -- create a build package for the optional SAGE package polymake-2.3
+# Issue 297: Upgrade polymake and/or make it an optional spkg
 
 archive/issues_000297.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat jpflori\n\nIt seems much has changed since polymake v 2.2, so this might be difficult.\nAlso, they have interactive scripts, which one has to deal with.  Yuck.\n\nI did try just building from scratch and it seemed to work without any funny\nbusiness with GMP, etc. \n\nIf you work on this, email wstein`@`gmail.com\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/297\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  sage-combinat jpflori\n\nIt seems much has changed since polymake v 2.2, so this might be difficult.\nAlso, they have interactive scripts, which one has to deal with.  Yuck.\n\nI did try just building from scratch and it seemed to work without any funny\nbusiness with GMP, etc. \n\nIf you work on this, email wstein`@`gmail.com\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/297\n\n",
+    "closed_at": "2014-11-28T20:58:27Z",
     "created_at": "2007-02-26T22:13:14Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "polymake -- create a build package for the optional SAGE package polymake-2.3",
+    "title": "Upgrade polymake and/or make it an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/297",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 CC:  sage-combinat jpflori
 

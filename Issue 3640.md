@@ -1,16 +1,17 @@
-# Issue 3640: optional spkg polymake is broken with Sage 3.0.3/3.0.4
+# Issue 3640: [with spkg, positive review] optional spkg polymake is broken with Sage 3.0.3/3.0.4
 
 archive/issues_003640.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  mhampton\n\nSee http://math.univ-lyon1.fr/~tdumont/sageproblems/problems\n\nThe issue is that the spkg-install has hard coded spkg versions of cddlib and gmp.\n\nFixed spkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3640\n\n",
+    "closed_at": "2008-12-26T17:09:49Z",
     "created_at": "2008-07-11T12:40:56Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "optional spkg polymake is broken with Sage 3.0.3/3.0.4",
+    "title": "[with spkg, positive review] optional spkg polymake is broken with Sage 3.0.3/3.0.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3640",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,22 +1,22 @@
-# Issue 3767: move jquery into its own spkg
+# Issue 3767: [with patch and spkg, positive review] move jquery into its own spkg
 
 archive/issues_003767.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  wstein @itolkov\n\nWe should move jquery into its own standard spkg (and figure out how to merge the two different copies of it in sage in the process).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3767\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  wstein @itolkov\n\nWe should move jquery into its own standard spkg (and figure out how to merge the two different copies of it in sage in the process).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3767\n\n",
+    "closed_at": "2009-01-19T08:06:40Z",
     "created_at": "2008-08-03T19:27:58Z",
     "labels": [
-        "component: packages: standard",
-        "minor"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "move jquery into its own spkg",
+    "title": "[with patch and spkg, positive review] move jquery into its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3767",
     "user": "https://github.com/timabbott"
 }
 ```
-Assignee: mabshoff
+Assignee: @jasongrout
 
 CC:  wstein @itolkov
 

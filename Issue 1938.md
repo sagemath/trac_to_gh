@@ -1,22 +1,23 @@
-# Issue 1938: Fast (double) function evaluation for plotting, etc.
+# Issue 1938: [with bundle; enthusiastically positive review] Fast (double) function evaluation for plotting, etc.
 
 archive/issues_001938.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWhen one wishes to plot a 3d surface, one ends up evaluating one or more algebraic expressions several hundreds of times. This is especially slow if maxima is involved via the calculus package. Up until now the solution has been to plot lambda expressions, but this is neither intuitive, Sage-like, nor efficient (compared to operating on raw c doubles).\n\nWe need a way to get a quick-to-evaluate version of a symbolic expression (polynomial, ...) I would imagine this would be useful for optimization problems and simulations as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1938\n\n",
+    "body": "Assignee: @robertwb\n\nWhen one wishes to plot a 3d surface, one ends up evaluating one or more algebraic expressions several hundreds of times. This is especially slow if maxima is involved via the calculus package. Up until now the solution has been to plot lambda expressions, but this is neither intuitive, Sage-like, nor efficient (compared to operating on raw c doubles).\n\nWe need a way to get a quick-to-evaluate version of a symbolic expression (polynomial, ...) I would imagine this would be useful for optimization problems and simulations as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1938\n\n",
+    "closed_at": "2008-01-30T09:21:21Z",
     "created_at": "2008-01-26T12:11:19Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Fast (double) function evaluation for plotting, etc.",
+    "title": "[with bundle; enthusiastically positive review] Fast (double) function evaluation for plotting, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1938",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 When one wishes to plot a 3d surface, one ends up evaluating one or more algebraic expressions several hundreds of times. This is especially slow if maxima is involved via the calculus package. Up until now the solution has been to plot lambda expressions, but this is neither intuitive, Sage-like, nor efficient (compared to operating on raw c doubles).
 

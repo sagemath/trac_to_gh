@@ -3,7 +3,8 @@
 archive/issues_008725.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nThis package includes the ff. patches:\n\n#8724 (blocker), #5712, #7501, #6069, #3154, #8249, #8436, #8092, #8038, #693, #7997, #7633, #8369, #8637, #7665\n\nFind it at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8725\n\n",
+    "body": "Assignee: jason, was\n\nThis package includes the ff. patches:\n\n#8724 (blocker), #5712, #7501, #6069, #3154, #8249, #8436, #8092, #8038, #8369, #8637, #8724\n\nFind it at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8725\n\n",
+    "closed_at": "2010-04-29T05:40:48Z",
     "created_at": "2010-04-20T14:33:02Z",
     "labels": [
         "component: notebook"
@@ -19,7 +20,7 @@ Assignee: jason, was
 
 This package includes the ff. patches:
 
-#8724 (blocker), #5712, #7501, #6069, #3154, #8249, #8436, #8092, #8038, #693, #7997, #7633, #8369, #8637, #7665
+#8724 (blocker), #5712, #7501, #6069, #3154, #8249, #8436, #8092, #8038, #8369, #8637, #8724
 
 Find it at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.spkg.
 

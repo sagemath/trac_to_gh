@@ -1,17 +1,17 @@
-# Issue 2565: logging is extremely broken
+# Issue 2565: [with patch, positive review logging is extremely broken
 
 archive/issues_002565.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: log, logging, html, dvi\n\nThe logging facilities in misc/log.py are extremely broken.\n\nThe DVI logger produces a symlink to `$SAGE_ROOT/devel/doc/commontex/macros.tex`. There's no devel/doc directory; there's no doc/commontex directory anywhere in the Sage tree, and there's no file macros.tex anywhere in the Sage tree!\n\nThe optional directory that can be specified in the constructor does not actually accept a directory name. If you try `L.('/tmp')` it will fail, because it tries to create a directory such as `/tmp-2008-blah`, which fails because I'm running Sage as a user and can't create directories in the root directory.\n\nThe HTML logger works a bit better, but when starting it, it does not find the `xdg-open` command, even though that is installed on my system.\n\nThe view() command should allow the user to specify a viewer; it's silly that the only way to tell Sage which viewer to use is with an environment variable.\n\nIt would also be nice if there was a text logger available in log.py. I know there's the IPython logging system, but it would be nice if those text-based logging capabilities were available from log.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2565\n\n",
+    "closed_at": "2008-03-27T07:50:46Z",
     "created_at": "2008-03-17T04:45:21Z",
     "labels": [
         "component: misc",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "logging is extremely broken",
+    "title": "[with patch, positive review logging is extremely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2565",
     "user": "https://github.com/dandrake"

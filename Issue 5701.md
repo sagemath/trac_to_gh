@@ -1,16 +1,17 @@
-# Issue 5701: Remove Guava from standard Sage
+# Issue 5701: [with patch, positive review] Remove Guava from standard Sage
 
 archive/issues_005701.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nWe currently ship Guava per default in the GAP.spkg. But Guava is limited in functionality, i.e. compared to Magma see http://wiki.sagemath.org/magma#CodingTheory for a list by wdj, and tends to crash at exit, too.  \n\nThe following doctests fail when guava is removed from the GAP spkg. \n\n```\n\tsage -t -long \"devel/sage/sage/combinat/combinat.py\"\n\tsage -t -long \"devel/sage/sage/combinat/designs/block_design.py\"\n\tsage -t -long \"devel/sage/sage/coding/linear_code.py\"\n\tsage -t -long \"devel/sage/sage/coding/code_bounds.py\"\n\tsage -t -long \"devel/sage/sage/coding/code_constructions.py\"\n\tsage -t -long \"devel/sage/sage/coding/guava.py\"\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5701\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nWe currently ship Guava per default in the GAP.spkg. But Guava is limited in functionality, i.e. compared to Magma see http://wiki.sagemath.org/magma#CodingTheory for a list by wdj, and tends to crash at exit, too.  \n\nThe following doctests fail when guava is removed from the GAP spkg. \n\n```\nsage -t -long \"devel/sage/sage/combinat/combinat.py\"\nsage -t -long \"devel/sage/sage/combinat/designs/block_design.py\"\nsage -t -long \"devel/sage/sage/coding/linear_code.py\"\nsage -t -long \"devel/sage/sage/coding/code_bounds.py\"\nsage -t -long \"devel/sage/sage/coding/code_constructions.py\"\nsage -t -long \"devel/sage/sage/coding/guava.py\"\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5701\n\n",
+    "closed_at": "2009-06-12T07:34:37Z",
     "created_at": "2009-04-06T21:57:46Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Remove Guava from standard Sage",
+    "title": "[with patch, positive review] Remove Guava from standard Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5701",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -25,12 +26,12 @@ We currently ship Guava per default in the GAP.spkg. But Guava is limited in fun
 The following doctests fail when guava is removed from the GAP spkg. 
 
 ```
-	sage -t -long "devel/sage/sage/combinat/combinat.py"
-	sage -t -long "devel/sage/sage/combinat/designs/block_design.py"
-	sage -t -long "devel/sage/sage/coding/linear_code.py"
-	sage -t -long "devel/sage/sage/coding/code_bounds.py"
-	sage -t -long "devel/sage/sage/coding/code_constructions.py"
-	sage -t -long "devel/sage/sage/coding/guava.py"
+sage -t -long "devel/sage/sage/combinat/combinat.py"
+sage -t -long "devel/sage/sage/combinat/designs/block_design.py"
+sage -t -long "devel/sage/sage/coding/linear_code.py"
+sage -t -long "devel/sage/sage/coding/code_bounds.py"
+sage -t -long "devel/sage/sage/coding/code_constructions.py"
+sage -t -long "devel/sage/sage/coding/guava.py"
 ```
 
 Cheers,

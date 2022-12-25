@@ -4,6 +4,7 @@ archive/issues_005769.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref2\nsage: R.<t> = ZZ[[]]\nsage: f = 1 + 17*t - 4*t^3 + O(t^5)\nsage: f[1] = 10\n...\nIndexError: power series are immutable\n```\nExcept they are mutable:\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage: f *= 2\nsage: f\n2 + 34*t - 8*t^3 + O(t^5)\n```\nBut they shouldn't be!  The _imul_ method needs to be deleted.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5769\n\n",
+    "closed_at": "2010-06-16T08:24:40Z",
     "created_at": "2009-04-12T05:19:59Z",
     "labels": [
         "component: basic arithmetic",

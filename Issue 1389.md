@@ -1,16 +1,17 @@
-# Issue 1389: Citation instructions for Sage
+# Issue 1389: [with patches, positive review] Citation instructions for Sage
 
 archive/issues_001389.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n```\nWilliam Stein writes:\n\nYes to every single one of your questions.\n\nOn Dec 3, 2007 1:29 PM, Jason Grout <jason-sage@creativetrax.com> wrote:\n> >\n> > I'm citing Sage in a paper I'm writing.  After searching (using the\n> > search function at sagemath.org) and clicking around lots of places, I\n> > found the page in the tutorial:\n> >\n> > http://sagemath.org/doc/html/tut/node62.html\n> >\n> > and the more official instructions at:\n> >\n> > http://sagemath.org/pub.html\n> >\n> > A couple of questions:\n> >\n> > 1. The instructions in the two places conflict each other.  Should we\n> > change the tutorial to match http://sagemath.org/pub.html (or point to it?)\n> >\n> > 1. If I remember correctly, a while ago William encouraged people to use\n> > \"Sage\" instead of \"SAGE\", saying that we had outgrown the acronym.  If\n> > so, there are a _lot_ of occurrences of SAGE that need to replaced in\n> > the documentation and website.  Should we change the citing instructions\n> > to use \"Sage\" instead of \"SAGE\"?\n> >\n> > 3. Every time I look for the citation instructions, I spend at least\n> > 15-20 minutes searching and clicking different places.  I think the\n> > publication page is great marketing material (and a great source of\n> > example Sage code in real life).  Can we link to the publication page\n> > from the main page and indicate that the citation instructions are also\n> > there?\n> >\n> > Thanks,\n> >\n> > Jason\n> >\n> >\n>> > >\n> >\n\n\n\n-- William Stein \nAssociate Professor of Mathematics \nUniversity of Washington \nhttp://wstein.org \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1389\n\n",
+    "closed_at": "2008-10-26T13:03:39Z",
     "created_at": "2007-12-03T22:10:33Z",
     "labels": [
         "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Citation instructions for Sage",
+    "title": "[with patches, positive review] Citation instructions for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1389",
     "user": "https://github.com/jasongrout"

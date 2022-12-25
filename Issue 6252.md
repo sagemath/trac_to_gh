@@ -1,21 +1,22 @@
-# Issue 6252: Add 11 people to the development map
+# Issue 6252: [with patch, positive review] Add 11 people to the development map
 
 archive/issues_006252.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @haraldschilly @craigcitro @ncalexan\n\nKeywords: development map, contributors.xml\n\nAdd the following people to the development map:\n1. David M\u00f8ller Hansen\n2. Fredrik Johansson\n3. Glenn Tarbox\n4. Lloyd Kilford\n5. Luis Berlioz\n6. Rob Beezer\n7. Paul Butler\n8. Ron Evans\n9. Ryan Dingman\n10. S\u00e9bastien Barth\u00e9lemy\n11. Tom Draper\n\nIssue created by migration from https://trac.sagemath.org/ticket/6252\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  @haraldschilly @craigcitro @ncalexan\n\nKeywords: development map, contributors.xml\n\nAdd the following people to the development map:\n1. David M\u00f8ller Hansen\n2. Fredrik Johansson\n3. Glenn Tarbox\n4. Lloyd Kilford\n5. Luis Berlioz\n6. Rob Beezer\n7. Paul Butler\n8. Ron Evans\n9. Ryan Dingman\n10. S\u00e9bastien Barth\u00e9lemy\n11. Tom Draper\n\nIssue created by migration from https://trac.sagemath.org/ticket/6252\n\n",
+    "closed_at": "2009-06-14T22:27:16Z",
     "created_at": "2009-06-09T05:53:55Z",
     "labels": [
-        "component: documentation"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Add 11 people to the development map",
+    "title": "[with patch, positive review] Add 11 people to the development map",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6252",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tba
+Assignee: @haraldschilly
 
 CC:  @haraldschilly @craigcitro @ncalexan
 

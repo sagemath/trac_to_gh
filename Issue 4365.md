@@ -4,6 +4,7 @@ archive/issues_004365.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nFrom Kevin Buzzard:\n\n```\nIf I type\n\nlicense()\n\nfrom a window then I get a huge text file. About 12 lines down it says\n\n\"...However, SAGE not have any link to jsmath\"\n\nwhich is probably a grammatical typo. I only mention this because the license file is presumably supposed to be some kind of legal document.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4365\n\n",
+    "closed_at": "2008-10-25T17:20:05Z",
     "created_at": "2008-10-24T19:13:46Z",
     "labels": [
         "component: misc",

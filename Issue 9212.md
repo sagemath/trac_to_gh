@@ -4,6 +4,7 @@ archive/issues_009212.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer florent\n\nAfter #8276, the top-level identity_matrix and zero_matrix functions return immutable matrices, which is a backwards-incompatible change that is inconvenient in many cases (when code starts with those matrices as the base and then modifies them).\n\nThis patch makes these matrices mutable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9212\n\n",
+    "closed_at": "2010-07-20T08:20:50Z",
     "created_at": "2010-06-11T07:15:15Z",
     "labels": [
         "component: linear algebra",

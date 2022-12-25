@@ -4,6 +4,7 @@ archive/issues_001424.json:
 ```json
 {
     "body": "Assignee: somebody\n\nAdd a threaded map function, as requested by Peter Doyle. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1424\n\n",
+    "closed_at": "2007-12-21T00:58:43Z",
     "created_at": "2007-12-08T07:24:57Z",
     "labels": [
         "component: basic arithmetic"

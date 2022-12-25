@@ -4,6 +4,7 @@ archive/issues_007332.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nCurrently, some css id's and classes have illegal values ('admin/0', for example, in `worksheet_listing.html`). This prevents jQuery and Selenium from accessing those attributes.\n\nThis adds a filter to produce legal values from those values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7332\n\n",
+    "closed_at": "2009-11-11T19:43:59Z",
     "created_at": "2009-10-28T13:50:08Z",
     "labels": [
         "component: notebook",

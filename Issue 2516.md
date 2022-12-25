@@ -3,10 +3,11 @@
 archive/issues_002516.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @burcin fstan @kcrisman ktkohl @benjaminfjones dsm @eviatarbach @mezzarobba\n\nSage should have support for [generalized hypergeometric functions](http://mathworld.wolfram.com/GeneralizedHypergeometricFunction.html). They are an important class of special functions. They show up everywhere from differential equations to binomial coefficient identities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2516\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @burcin fstan @kcrisman ktkohl @benjaminfjones dsm @eviatarbach @mezzarobba\n\nKeywords: hypergeometric, special\n\nSage should have support for [generalized hypergeometric functions](http://mathworld.wolfram.com/GeneralizedHypergeometricFunction.html). They are an important class of special functions. They show up everywhere from differential equations to binomial coefficient identities.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2516\n\n",
+    "closed_at": "2014-07-08T18:51:55Z",
     "created_at": "2008-03-14T09:55:34Z",
     "labels": [
-        "component: misc"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "generalized hypergeometric functions should be implemented",
@@ -19,7 +20,10 @@ Assignee: cwitty
 
 CC:  @burcin fstan @kcrisman ktkohl @benjaminfjones dsm @eviatarbach @mezzarobba
 
+Keywords: hypergeometric, special
+
 Sage should have support for [generalized hypergeometric functions](http://mathworld.wolfram.com/GeneralizedHypergeometricFunction.html). They are an important class of special functions. They show up everywhere from differential equations to binomial coefficient identities.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2516
 

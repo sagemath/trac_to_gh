@@ -1,9 +1,10 @@
-# Issue 3897: bug in local_information due to the lack of residue_field for ZZ
+# Issue 3897: [with new patch, positive review] bug in local_information due to the lack of residue_field for ZZ
 
 archive/issues_003897.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n```\nE = EllipticCurve([1,1])\nE.local_information(3)\n```\n\nyields\n\n```\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/local/pmzcw/prog/sage-3.1.1/<ipython console> in <module>()\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in local_information(self, P, proof)\n    375         if isinstance(P, RingElement):\n    376             P = self.base_ring().ideal(P)\n--> 377         return self.integral_model()[0]._tate(P, proof)\n    378\n    379     def local_minimal_model(self, P, proof = None):\n\n/hades/staff/pmzcw/prog/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py in _tate(self, P, proof)\n    517         OK = K.maximal_order()\n    518         t = verbose(\"Running Tate's algorithm with P = %s\"%P, level=1)\n--> 519         F = OK.residue_field(P)\n    520         p = F.characteristic()\n    521         if P.is_principal():\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has no attribute 'residue_field'\n```\n\nThe problem is that ZZ has no object residue_field, while number rings have. Either one should add this function or write local_information separately for curves over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3897\n\n",
+    "closed_at": "2008-09-23T10:24:53Z",
     "created_at": "2008-08-19T15:19:07Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_003897.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "bug in local_information due to the lack of residue_field for ZZ",
+    "title": "[with new patch, positive review] bug in local_information due to the lack of residue_field for ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3897",
     "user": "https://github.com/categorie"

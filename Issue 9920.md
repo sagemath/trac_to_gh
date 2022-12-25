@@ -3,11 +3,11 @@
 archive/issues_009920.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri\n\nSeveral projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.\n\nThis is fairly simple without an spkg:\n\n```\nwget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz\ntar xzvf nose-0.11.2.tar.gz\ncd nose-0.11.2\nsage -python setup.py install  \n```\n\nHowever, it might make sense to have nose be an optional spkg.\n\nMatplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9921\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri\n\nKeywords: sd41\n\nSeveral projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.\n\nThis is fairly simple without an spkg:\n\n```\nwget http://pypi.python.org/packages/source/n/nose/nose-1.1.2.tar.gz # or the latest version at http://pypi.python.org/pypi/nose/\ntar xzvf nose-1.1.2.tar.gz\ncd nose-1.1.2\nsage -python setup.py install  \n```\n\nHowever, it might make sense to have nose be an optional spkg.\n\nMatplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).\n\n---\n\nNew spkg: [version 1.1.2](http://sage.math.washington.edu/home/palmieri/SPKG/nose-1.1.2.spkg).\n\nApply [attachment:trac_9921-nose-scripts.patch] to the scripts repo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9921\n\n",
+    "closed_at": "2013-01-30T16:35:14Z",
     "created_at": "2010-09-16T17:32:19Z",
     "labels": [
-        "component: packages: optional",
-        "bug"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
     "title": "nose testing suite as an optional spkg",
@@ -20,20 +20,28 @@ Assignee: tbd
 
 CC:  drkirkby @jhpalmieri
 
+Keywords: sd41
+
 Several projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.
 
 This is fairly simple without an spkg:
 
 ```
-wget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz
-tar xzvf nose-0.11.2.tar.gz
-cd nose-0.11.2
+wget http://pypi.python.org/packages/source/n/nose/nose-1.1.2.tar.gz # or the latest version at http://pypi.python.org/pypi/nose/
+tar xzvf nose-1.1.2.tar.gz
+cd nose-1.1.2
 sage -python setup.py install  
 ```
 
 However, it might make sense to have nose be an optional spkg.
 
 Matplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).
+
+---
+
+New spkg: [version 1.1.2](http://sage.math.washington.edu/home/palmieri/SPKG/nose-1.1.2.spkg).
+
+Apply [attachment:trac_9921-nose-scripts.patch] to the scripts repo.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9921
 

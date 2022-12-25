@@ -1,21 +1,22 @@
-# Issue 6112: Remove stale file sage/graphs/graph_isom.pyx
+# Issue 6112: [with patch, positive review] Remove stale file sage/graphs/graph_isom.pyx
 
 archive/issues_006112.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThis file has been superseded by those in `sage/groups/perm_gps/partn_ref`. I think its time has come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6112\n\n",
+    "body": "Assignee: @dandrake\n\nThis file has been superseded by those in `sage/groups/perm_gps/partn_ref`. I think its time has come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6112\n\n",
+    "closed_at": "2009-06-24T09:58:25Z",
     "created_at": "2009-05-21T15:03:48Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Remove stale file sage/graphs/graph_isom.pyx",
+    "title": "[with patch, positive review] Remove stale file sage/graphs/graph_isom.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6112",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @rlmill
+Assignee: @dandrake
 
 This file has been superseded by those in `sage/groups/perm_gps/partn_ref`. I think its time has come.
 

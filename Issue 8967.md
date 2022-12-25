@@ -4,6 +4,7 @@ archive/issues_008967.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @mstreng\n\n```\nsage: P.<t> = GF(5)[]\nsage: GF(5).extension(t^2 - 2, name='a')\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 5 with modulus a^2 + 3\nsage: F.<a> = GF(5).extension(t^2 - 2)\nTraceback (most recent call last)\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\nand\n\n```\nsage: GF(5).extension(x^2 - 2, name='a')\nTraceback (most recent call last)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'\n```\nThe patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension(\"not_a_poly\", name='a'),` by  splicing in code from the number field version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8967\n\n",
+    "closed_at": "2010-07-20T09:25:40Z",
     "created_at": "2010-05-14T18:28:12Z",
     "labels": [
         "component: algebra",

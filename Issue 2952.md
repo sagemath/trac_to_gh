@@ -1,17 +1,17 @@
-# Issue 2952: LaurentPolynomialRing coercion error
+# Issue 2952: Multivariate LaurentPolynomial can have coefficients in the wrong ring
 
 archive/issues_002952.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCurrently\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\ngives an error because it PolynomialRing isn't imported categories/pushout.py for the Laurent functor.\n\nOnce, that it is fixed, the above commands give a coercion error between the fraction field of QQ['q'] and the Laurent polynomial ring over QQ['q']\n\nIssue created by migration from https://trac.sagemath.org/ticket/2952\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: laurent polynomials\n\nThis causes an error in the coercion system:\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\nThis is because the coefficients of `f` (which has `L` as its parent) do not lie in `R`, but in its fraction field, due to the `z^-1` and the way `__pow__()` is implemented.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2952\n\n",
+    "closed_at": "2014-06-06T11:00:32Z",
     "created_at": "2008-04-18T21:04:57Z",
     "labels": [
-        "component: coercion",
-        "critical",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
-    "title": "LaurentPolynomialRing coercion error",
+    "title": "Multivariate LaurentPolynomial can have coefficients in the wrong ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2952",
     "user": "https://github.com/mwhansen"
@@ -19,7 +19,9 @@ archive/issues_002952.json:
 ```
 Assignee: @roed314
 
-Currently
+Keywords: laurent polynomials
+
+This causes an error in the coercion system:
 
 ```
 sage: R.<q>=QQ[]
@@ -27,9 +29,8 @@ sage: L.<x,y,z> = LaurentPolynomialRing(R)
 sage: f=(x+y+z^-1)^2
 sage: f.substitute(z=1)
 ```
-gives an error because it PolynomialRing isn't imported categories/pushout.py for the Laurent functor.
+This is because the coefficients of `f` (which has `L` as its parent) do not lie in `R`, but in its fraction field, due to the `z^-1` and the way `__pow__()` is implemented.
 
-Once, that it is fixed, the above commands give a coercion error between the fraction field of QQ['q'] and the Laurent polynomial ring over QQ['q']
 
 Issue created by migration from https://trac.sagemath.org/ticket/2952
 

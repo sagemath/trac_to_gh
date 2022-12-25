@@ -3,7 +3,8 @@
 archive/issues_006369.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTry this:\n\n1. `sage -notebook foo`\n2. Find the pid of the sage -notebook process with `ps ax |grep \"sage -notebook\"`\n3. Kill that process with `kill -9 [pid]`\n4. The notebook server is still going.  And now the only way to kill it is with `ps ax |grep tracd` and start killing things until you hit the right one.\n\nSince people, especially new sage users, often kill the notebook server by, e.g., clicking kill in a terminal or some other silly means, it would be much better if the sage-cleaner could at least step in and kill the notebook server, so it gets shut down cleanly (saving its state), and doesn't stop the notebook from running in the future (if it is always running, it can't run again), hence confusing users.\n\nTo do all this is probably as simple as calling one little register function in sage.misc.cleaner.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6369\n\n",
+    "body": "Assignee: boothby\n\nTry this:\n\n1. `sage -notebook foo`\n\n2. Find the pid of the sage -notebook process with `ps ax |grep \"sage -notebook\"`\n\n3. Kill that process with `kill -9 [pid]`\n\n4. The notebook server is still going.  And now the only way to kill it is with `ps ax |grep tracd` and start killing things until you hit the right one.\n\nSince people, especially new sage users, often kill the notebook server by, e.g., clicking kill in a terminal or some other silly means, it would be much better if the sage-cleaner could at least step in and kill the notebook server, so it gets shut down cleanly (saving its state), and doesn't stop the notebook from running in the future (if it is always running, it can't run again), hence confusing users.\n\nTo do all this is probably as simple as calling one little register function in sage.misc.cleaner.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6369\n\n",
+    "closed_at": "2020-03-29T02:13:09Z",
     "created_at": "2009-06-20T15:34:43Z",
     "labels": [
         "component: notebook",
@@ -21,8 +22,11 @@ Assignee: boothby
 Try this:
 
 1. `sage -notebook foo`
+
 2. Find the pid of the sage -notebook process with `ps ax |grep "sage -notebook"`
+
 3. Kill that process with `kill -9 [pid]`
+
 4. The notebook server is still going.  And now the only way to kill it is with `ps ax |grep tracd` and start killing things until you hit the right one.
 
 Since people, especially new sage users, often kill the notebook server by, e.g., clicking kill in a terminal or some other silly means, it would be much better if the sage-cleaner could at least step in and kill the notebook server, so it gets shut down cleanly (saving its state), and doesn't stop the notebook from running in the future (if it is always running, it can't run again), hence confusing users.

@@ -4,6 +4,7 @@ archive/issues_001674.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe attached patch plugs a small memleak in pAdicCappedRelativeElement.__pow__ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/1674\n\n",
+    "closed_at": "2008-01-03T21:18:03Z",
     "created_at": "2008-01-03T21:07:41Z",
     "labels": [
         "component: memleak",

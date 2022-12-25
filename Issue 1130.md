@@ -1,15 +1,16 @@
-# Issue 1130: [with patch] point counting for elliptic curves over non-prime finite fields
+# Issue 1130: [with patch, with positive review] point counting for elliptic curves over non-prime finite fields
 
 archive/issues_001130.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe user has three new options of finite extension fields:\n1. \"legendre\" - as the name implies: using Legendre symbols\n\n```\nsage: k.<a> = GF(3^10)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: time E.cardinality('legendre')\nCPU times: user 0.39 s, sys: 0.05 s, total: 0.44 s\nWall time: 0.44\n58997\n```\n\n1. \"bsgs\" - using the Baby-Step Giant-Step algorithm\n\n```\nsage: time E.cardinality('bsgs')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\n1. \"heuristic\" - use \"legendre\" if q<100 (as in mwrank) and \"bsgs\" else\n\n```\nsage: time E.cardinality()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\nNeither of these will win any speed records but it is *much* better than the naive algorithm used before.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1130\n\n",
+    "closed_at": "2008-02-16T21:52:06Z",
     "created_at": "2007-11-08T22:16:45Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch] point counting for elliptic curves over non-prime finite fields",
+    "title": "[with patch, with positive review] point counting for elliptic curves over non-prime finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1130",
     "user": "https://github.com/malb"

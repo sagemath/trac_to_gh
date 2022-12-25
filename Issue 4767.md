@@ -1,16 +1,17 @@
-# Issue 4767: [with patch; needs review] magma/sage interface -- speed up conversion of integers and rationals to Magma
+# Issue 4767: [with patch; positive review] magma/sage interface -- speed up conversion of integers and rationals to Magma
 
 archive/issues_004767.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nUse hex very carefully (magma has issues, let's say) to convert large integers and rationals to Magma much much more quickly than before.  E.g., in the example below the conversion is 22 times faster than it was before -- 3.2 seconds versus 71.47 seconds!\n\n```\nsage: n = ZZ.random_element(x=0,y=2^(10^8))\nsage: time k = magma(n)\nCPU time: 1.03 s,  Wall time: 3.20 s\nsage: time j = magma(str(n))\nCPU time: 54.71 s,  Wall time: 71.47 s\nsage: 71.47/3.20\n22.3343750000000\n```\n\nNOTE: The attached patch also speed up is_integral (by a factor of 500!!!) for rational numbers, since I needed that for the rational number conversion speedup.\n \nBEFORE:\n\n```\nsage: n = -485/82847\nsage: n.is_integral()\nFalse\nsage: timeit('n.is_integral()')\n625 loops, best of 3: 160 \u00b5s per loop\n```\nAFTER:\n\n```\nsage: n = -485/82847\nsage: n.is_integral()\nFalse\nsage: timeit('n.is_integral()')\n625 loops, best of 3: 294 ns per loop\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4767\n\n",
+    "closed_at": "2008-12-12T16:04:41Z",
     "created_at": "2008-12-12T06:17:24Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch; needs review] magma/sage interface -- speed up conversion of integers and rationals to Magma",
+    "title": "[with patch; positive review] magma/sage interface -- speed up conversion of integers and rationals to Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4767",
     "user": "https://github.com/williamstein"

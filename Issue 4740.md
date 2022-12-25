@@ -1,16 +1,17 @@
-# Issue 4740: Fix memory leak in finite field coercion
+# Issue 4740: avoid creating unneeded homsets when coercing
 
 archive/issues_004740.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @burcin @robertwb simonking\n\nBurcin reported at #4639:\n\n```\nsage: F = GF(13)\nsage: get_memory_usage()\n708.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n728.15234375\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n932.3125\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n1136.35546875\n```\nSince the patch by RobertWB at that ticket fixes the issue Burcin reported, but not the original one I am moving it over to this ticket.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4740\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @burcin @robertwb simonking\n\nBurcin reported at #4639:\n\n```\nsage: F = GF(13)\nsage: get_memory_usage()\n708.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n728.15234375\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n932.3125\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n1136.35546875\n```\nSince the patch by RobertWB at that ticket fixes the issue Burcin reported, but not the original one I am moving it over to this ticket.\n\nCheers,\n\nMichael\n\n__Apply__\n\n[attachment:trac4740-cache_coerce_from_self.patch\u200b]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4740\n\n",
+    "closed_at": "2013-08-20T12:56:42Z",
     "created_at": "2008-12-08T11:23:21Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
-    "title": "Fix memory leak in finite field coercion",
+    "title": "avoid creating unneeded homsets when coercing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4740",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -47,6 +48,10 @@ Since the patch by RobertWB at that ticket fixes the issue Burcin reported, but 
 Cheers,
 
 Michael
+
+__Apply__
+
+[attachment:trac4740-cache_coerce_from_self.patch​]
 
 Issue created by migration from https://trac.sagemath.org/ticket/4740
 

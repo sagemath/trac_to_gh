@@ -1,16 +1,17 @@
-# Issue 4891: make a command that installs all optional spkg's and reports the ones that don't work.
+# Issue 4891: [with patch; positive review] make a command that installs all optional spkg's and reports the ones that don't work.
 
 archive/issues_004891.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is 100% for testing use.  I've written this and will post a patch soon.\n\nNOTE: Nauty has a stupid interactive license agreement which somewhat messes up this command, since it makes it not 100% automatic.    I hate that.  I've made trac #4890 to get rid of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4891\n\n",
+    "closed_at": "2009-01-28T15:22:59Z",
     "created_at": "2008-12-30T07:28:37Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "make a command that installs all optional spkg's and reports the ones that don't work.",
+    "title": "[with patch; positive review] make a command that installs all optional spkg's and reports the ones that don't work.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4891",
     "user": "https://github.com/williamstein"

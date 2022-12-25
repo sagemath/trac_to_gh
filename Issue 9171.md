@@ -1,16 +1,17 @@
-# Issue 9171: cygwin: some test failures in sagedoc.py
+# Issue 9171: cygwin: Documentation not built, which causes test failures
 
 archive/issues_009171.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  jpflori\n\n```\n\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/sagedoc.py\", line 891:\n    sage: len(search_doc('tree', interact=False).splitlines()) > 2000\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/sagedoc.py\", line 496:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    False\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9171\n\n",
+    "closed_at": "2013-01-31T20:35:55Z",
     "created_at": "2010-06-07T04:36:13Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cygwin: some test failures in sagedoc.py",
+    "title": "cygwin: Documentation not built, which causes test failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9171",
     "user": "https://github.com/williamstein"

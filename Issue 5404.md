@@ -1,16 +1,18 @@
-# Issue 5404: deprecate numerical_sqrt
+# Issue 5404: [with patch, positive review] deprecate numerical_sqrt
 
 archive/issues_005404.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nNow we have sqrt(a, prec=1000). Also, it doesn't even do what it says. \n\n```\nsage: numerical_sqrt(3)\nsqrt(3)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5404\n\n",
+    "closed_at": "2009-06-04T19:10:34Z",
     "created_at": "2009-02-28T21:55:42Z",
     "labels": [
         "component: calculus",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "deprecate numerical_sqrt",
+    "title": "[with patch, positive review] deprecate numerical_sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5404",
     "user": "https://github.com/robertwb"

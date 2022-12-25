@@ -1,15 +1,16 @@
-# Issue 9807: Upgrade numpy to 1.5b and scipy to 0.8
+# Issue 9807: Upgrade numpy to 1.5.0 and scipy to 0.8
 
 archive/issues_009807.json:
 ```json
 {
-    "body": "Assignee: maldun\n\nKeywords: numpy, scipy\n\nSince I really, really need them for my work, I will try to manage it to upgrade the scipy and numpy packages to the latest versions\n\nIssue created by migration from https://trac.sagemath.org/ticket/9808\n\n",
+    "body": "Assignee: maldun\n\nKeywords: numpy, scipy\n\nThis ticket updates two packages, which must be updated together, \n\n\nhttp://sage.math.washington.edu/home/kcrisman/numpy-1.5.0.spkg\n\nhttp://sage.math.washington.edu/home/palmieri/SPKG/scipy-0.8.spkg\n\nIf you are applying these to any version before Sage 4.6.alpha3, then you also have to update the scipy_sandbox package too (#10092).  This has been merged in 4.6.alpha3, though.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/scipy_sandbox-20071020.p7.spkg\n\nAfter installing Numpy, one needs to execute sage -ba, or do \n\n```\ntouch $SAGE_LOCAL/lib/python/site-packages/Cython/Includes/numpy.pxd\n```\nor else one will get runtime warnings. (Or if someone wants less hassle, they can patch sage-4.6.alpha3.spkg before building Sage). \n\ntrac_9808_changed_doctests.patch in the attachment has to be applied, in order to get all doctests running because some of the output has changed.\n\n**For reviewers:** \nchanges.txt holds a summary of all changes with reference to the diffs, and links to other tickets\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9808\n\n",
+    "closed_at": "2010-11-01T10:10:59Z",
     "created_at": "2010-08-26T19:10:38Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Upgrade numpy to 1.5b and scipy to 0.8",
+    "title": "Upgrade numpy to 1.5.0 and scipy to 0.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9807",
     "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
@@ -19,7 +20,29 @@ Assignee: maldun
 
 Keywords: numpy, scipy
 
-Since I really, really need them for my work, I will try to manage it to upgrade the scipy and numpy packages to the latest versions
+This ticket updates two packages, which must be updated together, 
+
+
+http://sage.math.washington.edu/home/kcrisman/numpy-1.5.0.spkg
+
+http://sage.math.washington.edu/home/palmieri/SPKG/scipy-0.8.spkg
+
+If you are applying these to any version before Sage 4.6.alpha3, then you also have to update the scipy_sandbox package too (#10092).  This has been merged in 4.6.alpha3, though.
+
+http://boxen.math.washington.edu/home/kirkby/patches/scipy_sandbox-20071020.p7.spkg
+
+After installing Numpy, one needs to execute sage -ba, or do 
+
+```
+touch $SAGE_LOCAL/lib/python/site-packages/Cython/Includes/numpy.pxd
+```
+or else one will get runtime warnings. (Or if someone wants less hassle, they can patch sage-4.6.alpha3.spkg before building Sage). 
+
+trac_9808_changed_doctests.patch in the attachment has to be applied, in order to get all doctests running because some of the output has changed.
+
+**For reviewers:** 
+changes.txt holds a summary of all changes with reference to the diffs, and links to other tickets
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9808
 

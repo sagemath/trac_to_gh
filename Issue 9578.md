@@ -1,4 +1,4 @@
-# Issue 9578: Add even more customization of ticks in plots
+# Issue 9578: Allow customized tick color
 
 archive/issues_009578.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_009578.json:
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Add even more customization of ticks in plots",
+    "title": "Allow customized tick color",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9578",
     "user": "https://github.com/kcrisman"

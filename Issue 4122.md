@@ -1,16 +1,17 @@
-# Issue 4122: python debug mode, add sleep(2)
+# Issue 4122: [with spkg, positive review] build python without pymalloc for SAGE_VALGRIND, add sleep(3) for parallel make install issue
 
 archive/issues_004122.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4122\n\n",
+    "closed_at": "2008-09-15T02:42:06Z",
     "created_at": "2008-09-15T01:09:07Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "python debug mode, add sleep(2)",
+    "title": "[with spkg, positive review] build python without pymalloc for SAGE_VALGRIND, add sleep(3) for parallel make install issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4122",
     "user": "https://github.com/rlmill"

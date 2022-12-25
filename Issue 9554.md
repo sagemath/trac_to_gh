@@ -4,6 +4,7 @@ archive/issues_009554.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @loefflerd @novoselt @vbraun @TimDumol\n\nThis happens with the patches at #8988, which I've merged in the forthcoming 4.5.2.alpha0:\n\n```\n$ ./sage -t -long  local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.1-rm/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py\", line 997:\n    sage: sage_getvariablename(A)\nExpected:\n    ['A', 'B']\nGot:\n    ['B', 'A']\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_22\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9554\n\n",
+    "closed_at": "2010-07-23T07:19:29Z",
     "created_at": "2010-07-20T08:55:02Z",
     "labels": [
         "component: notebook",

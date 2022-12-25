@@ -6,8 +6,7 @@ archive/issues_005313.json:
     "body": "Assignee: @malb\n\nCC:  @nexttime\n\nWhen looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting\n\n```\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```\nas an error, one gets\n\n```\nSINGULAR error: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n...\nand then an exception is raised!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5313\n\n",
     "created_at": "2009-02-19T19:18:47Z",
     "labels": [
-        "component: commutative algebra",
-        "bug"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "patch singular so that when it runs out of memory the error message says \"singular\" in it",

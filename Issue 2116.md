@@ -1,15 +1,16 @@
-# Issue 2116: is package installed function
+# Issue 2116: [with patch, with positive review] is package installed function
 
 archive/issues_002116.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis implements a an is_package_installed function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2116\n\n",
+    "closed_at": "2008-02-14T09:42:03Z",
     "created_at": "2008-02-08T18:04:57Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "is package installed function",
+    "title": "[with patch, with positive review] is package installed function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2116",
     "user": "https://github.com/jasongrout"

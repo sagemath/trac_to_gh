@@ -4,10 +4,10 @@ archive/issues_000999.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: sloccount sage-dist\n\nsloccount measures the total numbers of lines in a project and estimates the time as well as amount of money needed to create the project. It also creates nice html output - for an example see\n\nhttp://sage.math.washington.edu/home/mabshoff/2.8.9.rc1-sloccount.html\n\nIt would be nice to have an optional script that would automatically create the output for the whole sage project.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/999\n\n",
+    "closed_at": "2013-06-19T12:21:29Z",
     "created_at": "2007-10-25T16:37:13Z",
     "labels": [
-        "component: distribution",
-        "bug"
+        "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add optional sloccount script to sage-dist",

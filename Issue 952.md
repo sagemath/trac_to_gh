@@ -4,6 +4,7 @@ archive/issues_000952.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis must be done now that the gap-4.4.10.spkg will be released.  I'm working on it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/952\n\n",
+    "closed_at": "2007-10-20T23:50:45Z",
     "created_at": "2007-10-20T22:42:16Z",
     "labels": [
         "component: packages: standard"

@@ -1,9 +1,10 @@
-# Issue 3380: Fix large performance regression in ATLAS 3.8.0 and 3.8.1
+# Issue 3380: [with patch; positive review] Fix large performance regression in ATLAS 3.8.0 and 3.8.1
 
 archive/issues_003380.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nThere is a performance bug that causes a fairly large performance drop on\nall architectures.  This bug is present in both ATLAS 3.8.0 and 3.8.1.\nThe explanation and fix is available at:\n   http://math-atlas.sourceforge.net/errata.html#JITcpBug\n\nRegards,\nClint\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3380\n\n",
+    "closed_at": "2008-06-27T03:24:04Z",
     "created_at": "2008-06-06T23:05:43Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003380.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Fix large performance regression in ATLAS 3.8.0 and 3.8.1",
+    "title": "[with patch; positive review] Fix large performance regression in ATLAS 3.8.0 and 3.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3380",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

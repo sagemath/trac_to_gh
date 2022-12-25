@@ -3,11 +3,12 @@
 archive/issues_004983.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI do not like this:\n\n```\nsage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])\nsage: sage: b=a.jordan_form()\nsage: b.subdivisions\n([0, 1, 3, 4], [0, 1, 3, 4])\nsage: b.subdivisions = 10\nsage: b.subdivisions\n10\n```\n\nNotice that you can make the subdivisions nonsense because it can be changed.\nAlso, of course,\n\n```\nsage: b.subdivisions?\n...     The Integer class represents arbitrary precision\n        integers.  It derives from the Element class, so\n[other useless stuff]\n```\n\n\nI don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.\n\n\nThen one would do:\n\n```\n   sage: b.subdivisions?\n   useful stuff (and also it would be in the reference manual)\nand\n   sage: b.subdivisions()\n   ([0, 1, 3, 4], [0, 1, 3, 4])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4983\n\n",
+    "body": "Assignee: @williamstein\n\nI do not like this:\n\n```\nsage: sage: a = matrix(ZZ,4,[1, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, 1, -1, 1, 2])\nsage: sage: b=a.jordan_form()\nsage: b.subdivisions\n([0, 1, 3, 4], [0, 1, 3, 4])\nsage: b.subdivisions = 10\nsage: b.subdivisions\n10\n```\n\nNotice that you can make the subdivisions nonsense because it can be changed.\nAlso, of course,\n\n```\nsage: b.subdivisions?\n...     The Integer class represents arbitrary precision\n        integers.  It derives from the Element class, so\n[other useless stuff]\n```\n\n\nI don't like that at all either.  I wish that subdivisions were a method with a proper docstring, doctests, etc., and that variable were hidden.\n\n\nThen one would do:\n\n```\n   sage: b.subdivisions?\n   useful stuff (and also it would be in the reference manual)\nand\n   sage: b.subdivisions()\n   ([0, 1, 3, 4], [0, 1, 3, 4])\n```\n\n---\n\n**Depends on:**\n1. #10974\n\n**Apply:**\n1. [attachment:trac_4983-subdivisions-rebased.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4983\n\n",
+    "closed_at": "2011-04-05T11:59:51Z",
     "created_at": "2009-01-16T00:30:50Z",
     "labels": [
         "component: linear algebra",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "replace subdivisions attribute for matrices with a function",
@@ -53,6 +54,14 @@ and
    sage: b.subdivisions()
    ([0, 1, 3, 4], [0, 1, 3, 4])
 ```
+
+---
+
+**Depends on:**
+1. #10974
+
+**Apply:**
+1. [attachment:trac_4983-subdivisions-rebased.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/4983
 

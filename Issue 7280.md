@@ -4,9 +4,11 @@ archive/issues_007280.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol @qed777\n\nThis fixes many reported bugs. \n\nhttp://wstein.org/home/wstein/patches/sagenb/sagenb-0.3.7.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7280\n\n",
+    "closed_at": "2009-10-25T02:37:03Z",
     "created_at": "2009-10-24T01:11:05Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",

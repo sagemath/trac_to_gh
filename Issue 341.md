@@ -4,6 +4,7 @@ archive/issues_000341.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nOn 3/31/07, Pablo De Napoli <> wrote:\n> In the process of investigating how rings are defined in sage I've found\n> some \n> inconsistencies: the function multiplicative_order is not consistently\n> defined\n> for all rings.\n> \n> Applying this function to a rational \n> integer which is not a unit raises an exception:\n> \n> sage: a=ZZ(3)\n> sage: a.multiplicative_order()\n> ---------------------------------------------------------------------------\n> <type 'exceptions.ArithmeticError '>       Traceback (most recent call last)\n> \n> /hdc1/pablo.hdc1/sage/sage/<ipython console> in <module>()\n> \n> /hdc1/pablo.hdc1/sage/sage/integer.pyx in\n> integer.Integer.multiplicative_order()\n> \n>  <type 'exceptions.ArithmeticError'>: no power of 3 is a unit\n> \n> (and so does for example the ring ComplexDouble)\n> \n> However, for complex numbers, things are different: (gives +infinity)\n> \n>  b= 2+3*I \n> sage: type(b)\n> <type 'sage.rings.complex_number.ComplexNumber'>\n> sage: b.multiplicative_order()\n> +Infinity\n> \n> Which should be the correct behaviour? (I like more the one that answers\n> +infinity) \n\nThe correct behavior is +infinity, which is more useful and than an error,\nand is technically correct.  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/341\n\n",
+    "closed_at": "2007-08-30T00:12:17Z",
     "created_at": "2007-04-01T14:46:07Z",
     "labels": [
         "component: basic arithmetic",

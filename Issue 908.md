@@ -1,25 +1,27 @@
-# Issue 908: paru/gen.c causes internal compiler error on OpenSuSE 10.2
+# Issue 908: pari/gen.c causes internal compiler error on OpenSuSE 10.2
 
 archive/issues_000908.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen building 2.8.7 on suse 10.2 amd64:\n\n> -I/home/wdj/sagefiles/sage-2.8.7/local/include/python2.5 -c\n> sage/libs/pari/gen.c -o\n> build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w\n> sage/libs/pari/gen.c: In function '__pyx_f_py_3gen_3gen_factor':\n> sage/libs/pari/gen.c:19784: internal compiler error: in\n> merge_alias_info, at tree-ssa-copy.c:235\n> Please submit a full bug report,\n> with preprocessed source if appropriate.\n\n\n\"gcc blows up ...\"\n\nwdj`@`tinah:~/sagefiles/sage-2.8.7> uname -a\nLinux tinah 2.6.16.13-4-default #1 Wed May 3 04:53:23 UTC 2006 x86_64 x86_64 x86_64 GNU/Linux\nwdj`@`tinah:~/sagefiles/sage-2.8.7> gcc -v\nUsing built-in specs.\nTarget: x86_64-suse-linux\nConfigured with: ../configure --enable-threads=posix --prefix=/usr --with-local-prefix=/usr/local --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.1.0 --enable-ssp --disable-libssp --enable-java-awt=gtk --enable-gtk-cairo --disable-libjava-multilib --with-slibdir=/lib64 --with-system-zlib --enable-shared --enable-__cxa_atexit --enable-libstdcxx-allocator=new --without-system-libunwind --with-cpu=generic --host=x86_64-suse-linux\nThread model: posix\ngcc version 4.1.0 (SUSE Linux)\n\nIssue created by migration from https://trac.sagemath.org/ticket/908\n\n",
+    "body": "Assignee: @williamstein\n\nWhen building 2.8.7 on suse 10.2 amd64:\n\n```\n> -I/home/wdj/sagefiles/sage-2.8.7/local/include/python2.5 -c\n> sage/libs/pari/gen.c -o\n> build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w\n> sage/libs/pari/gen.c: In function '__pyx_f_py_3gen_3gen_factor':\n> sage/libs/pari/gen.c:19784: internal compiler error: in\n> merge_alias_info, at tree-ssa-copy.c:235\n> Please submit a full bug report,\n> with preprocessed source if appropriate.\n```\n\"gcc blows up ...\"\n\n```\nwdj@tinah:~/sagefiles/sage-2.8.7> uname -a\nLinux tinah 2.6.16.13-4-default #1 Wed May 3 04:53:23 UTC 2006 x86_64 x86_64 x86_64 GNU/Linux\nwdj@tinah:~/sagefiles/sage-2.8.7> gcc -v\nUsing built-in specs.\nTarget: x86_64-suse-linux\nConfigured with: ../configure --enable-threads=posix --prefix=/usr --with-local-prefix=/usr/local --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.1.0 --enable-ssp --disable-libssp --enable-java-awt=gtk --enable-gtk-cairo --disable-libjava-multilib --with-slibdir=/lib64 --with-system-zlib --enable-shared --enable-__cxa_atexit --enable-libstdcxx-allocator=new --without-system-libunwind --with-cpu=generic --host=x86_64-suse-linux\nThread model: posix\ngcc version 4.1.0 (SUSE Linux)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/908\n\n",
+    "closed_at": "2007-11-02T08:57:29Z",
     "created_at": "2007-10-16T16:07:35Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "paru/gen.c causes internal compiler error on OpenSuSE 10.2",
+    "title": "pari/gen.c causes internal compiler error on OpenSuSE 10.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/908",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 When building 2.8.7 on suse 10.2 amd64:
 
+```
 > -I/home/wdj/sagefiles/sage-2.8.7/local/include/python2.5 -c
 > sage/libs/pari/gen.c -o
 > build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w
@@ -28,18 +30,20 @@ When building 2.8.7 on suse 10.2 amd64:
 > merge_alias_info, at tree-ssa-copy.c:235
 > Please submit a full bug report,
 > with preprocessed source if appropriate.
-
-
+```
 "gcc blows up ..."
 
-wdj`@`tinah:~/sagefiles/sage-2.8.7> uname -a
+```
+wdj@tinah:~/sagefiles/sage-2.8.7> uname -a
 Linux tinah 2.6.16.13-4-default #1 Wed May 3 04:53:23 UTC 2006 x86_64 x86_64 x86_64 GNU/Linux
-wdj`@`tinah:~/sagefiles/sage-2.8.7> gcc -v
+wdj@tinah:~/sagefiles/sage-2.8.7> gcc -v
 Using built-in specs.
 Target: x86_64-suse-linux
 Configured with: ../configure --enable-threads=posix --prefix=/usr --with-local-prefix=/usr/local --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.1.0 --enable-ssp --disable-libssp --enable-java-awt=gtk --enable-gtk-cairo --disable-libjava-multilib --with-slibdir=/lib64 --with-system-zlib --enable-shared --enable-__cxa_atexit --enable-libstdcxx-allocator=new --without-system-libunwind --with-cpu=generic --host=x86_64-suse-linux
 Thread model: posix
 gcc version 4.1.0 (SUSE Linux)
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/908
 

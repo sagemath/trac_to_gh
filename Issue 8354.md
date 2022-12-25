@@ -4,6 +4,7 @@ archive/issues_008354.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe attached patch fixes some ReST formatting issues in the Sage 4.3.3 reference manual, eliminating a few warning messages while building the docs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8354\n\n",
+    "closed_at": "2010-03-06T08:35:31Z",
     "created_at": "2010-02-24T23:04:59Z",
     "labels": [
         "component: documentation",

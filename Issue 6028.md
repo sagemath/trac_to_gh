@@ -4,10 +4,11 @@ archive/issues_006028.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUse /proc/$PID/psinfo instead of top - see\n\n* http://getthegood.com/TechNotes/Papers/ProcStatistics.html\n* http://manpages.unixforum.co.uk/man-pages/unix/solaris-10-11_06/4/proc-man-page.html\n\nget_memory_usage() costs about **1 second** of CPU time per invocation. This makes sage/rings/tests.py time out since that code calls it a couple thousand times.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6028\n\n",
+    "closed_at": "2013-02-08T14:24:22Z",
     "created_at": "2009-05-12T07:32:08Z",
     "labels": [
         "component: porting: solaris",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

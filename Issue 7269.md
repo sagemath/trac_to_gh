@@ -4,11 +4,10 @@ archive/issues_007269.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nKeywords: sagenb notebook\n\nChanging the table layouts to CSS layouts will make it easier to make future edits, and will pave the path to user styling of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7269\n\n",
+    "closed_at": "2010-01-04T23:12:32Z",
     "created_at": "2009-10-23T15:26:53Z",
     "labels": [
-        "component: notebook",
-        "minor",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "SageNB -- Change table layouts to CSS layouts",

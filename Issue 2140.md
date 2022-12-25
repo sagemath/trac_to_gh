@@ -1,15 +1,16 @@
-# Issue 2140: [with bundle, needs review] enhance search_src and add search_def for easier source navigating.
+# Issue 2140: [with patch, with positive review] enhance search_src and add search_def for easier source navigating.
 
 archive/issues_002140.json:
 ```json
 {
     "body": "Assignee: @ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: sage search_src search_def source search grep\n\nThe attached bundle does two things.\n* makes `search_src` accept more extra arguments\n* adds `search_def` to find the definition of a name in the Sage library.\n\nThe ugly patch is the result of a Python 2.6 bug.\n\nThis was all motivated by Craig Citro's post to `sage-devel` at http://groups.google.com/group/sage-devel/msg/82829f101a6e209b.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2140\n\n",
+    "closed_at": "2008-02-13T08:05:54Z",
     "created_at": "2008-02-11T07:30:03Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with bundle, needs review] enhance search_src and add search_def for easier source navigating.",
+    "title": "[with patch, with positive review] enhance search_src and add search_def for easier source navigating.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2140",
     "user": "https://github.com/ncalexan"

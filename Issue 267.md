@@ -4,6 +4,7 @@ archive/issues_000267.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n`sage -bt filename` could run a `sage -b` and then run doctests on the indicated file\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/267\n\n",
+    "closed_at": "2007-02-25T02:48:25Z",
     "created_at": "2007-02-17T20:59:16Z",
     "labels": [
         "component: user interface",

@@ -1,9 +1,10 @@
-# Issue 5628: a little sage-flags.txt issue
+# Issue 5628: [with patch; positive review] work arroud annoying false positive SSE4a sage-flags.txt issue
 
 archive/issues_005628.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nOn Sat, Mar 28, 2009 at 9:05 PM, Gonzalo Tornaria:\n>\n> I did an upgrade from 3.4 as follows:\n>\n> 1. sage -br main  ---> switch to main, which is CLEAN\n> 2. sage -upgrade\n> http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/sage-3.4.1.alpha0\n> 3. once that was finished, I pulled  the new changes into my sage-brandt branch\n> 4. applied the rebased 5520 + my tiny patch\n> 5. sage -br brandt\n>\n> But now, \"sage -br main\" (which is now clean 3.4.1.alpha0) causes the\n> same issue.\n>\n> Gonzalo\n\nJust delete \n   local/lib/sage-flags.txt\n\nAlso, I've opened a blocker ticket about this, since everybody who upgrades will run into exactly the same problem.  \n\nThe problem is that the new version of the script that checks the flags doesn't see sse4_1 anymore (nothing in Sage specifically uses that), but it's still in your old sage-flags.txt file.  Two possible solutions:\n   (1) delete sage-flags.txt as part of \"sage -upgrade\"\n   (2) make it so sse4_1 is specifically ignored.\n\nI like (1). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5628\n\n",
+    "closed_at": "2009-04-11T01:49:58Z",
     "created_at": "2009-03-29T03:29:59Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_005628.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "a little sage-flags.txt issue",
+    "title": "[with patch; positive review] work arroud annoying false positive SSE4a sage-flags.txt issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5628",
     "user": "https://github.com/williamstein"

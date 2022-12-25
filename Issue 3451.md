@@ -1,9 +1,10 @@
-# Issue 3451: inaccurate error message in scheme morphisms
+# Issue 3451: [with patch, with positive  review] inaccurate error message in scheme morphisms
 
 archive/issues_003451.json:
 ```json
 {
-    "body": "Assignee: @bobmoretti\n\nCC:  alexghitza\n\nKeywords: affine, scheme, morphism\n\n```\nR.<x,y> = QQ[]\nA = AffineSpace(R)\nH = A.Hom(A)\nf = H([x-y, x*y])\nf([0,1])\nTraceback (click to the left for traceback)\n...\nTypeError: x (=[0, 1]) must be a projective point given by coordinates\n```\n\nWhen of course the error message should say that x must be an affine point...\n\nThe fix would be trivial, but would it be acceptable to make scheme morphisms try converting their input to elements of their domain, first, so that the above would not raise an error?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3451\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  alexghitza\n\nKeywords: affine, scheme, morphism\n\n```\nR.<x,y> = QQ[]\nA = AffineSpace(R)\nH = A.Hom(A)\nf = H([x-y, x*y])\nf([0,1])\nTraceback (click to the left for traceback)\n...\nTypeError: x (=[0, 1]) must be a projective point given by coordinates\n```\n\nWhen of course the error message should say that x must be an affine point...\n\nThe fix would be trivial, but would it be acceptable to make scheme morphisms try converting their input to elements of their domain, first, so that the above would not raise an error?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3451\n\n",
+    "closed_at": "2008-09-02T11:46:39Z",
     "created_at": "2008-06-17T22:17:24Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,13 +12,13 @@ archive/issues_003451.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "inaccurate error message in scheme morphisms",
+    "title": "[with patch, with positive  review] inaccurate error message in scheme morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3451",
     "user": "https://github.com/bobmoretti"
 }
 ```
-Assignee: @bobmoretti
+Assignee: @aghitza
 
 CC:  alexghitza
 

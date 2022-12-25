@@ -1,22 +1,26 @@
-# Issue 6577: Reference manual build errors in 4.1.1.alpha0
+# Issue 6577: [with patch, positive review] Reference manual build errors in 4.1.1.alpha0
 
 archive/issues_006577.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThis is in 4.1.1.alpha0: \n\n```\nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/databases/jones.py:docstring of sage.databases.jones.JonesDatabase.get:8: (WARNING/2) Inline literal start-string without end-string.                                              \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/databases/jones.py:docstring of sage.databases.jones.JonesDatabase.ramified_at:11: (WARNING/2) Inline literal start-string without end-string.                                     \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/databases/jones.py:docstring of sage.databases.jones.JonesDatabase.unramified_outside:13: (WARNING/2) Inline literal start-string without end-string.                              \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py:docstring of sage.schemes.elliptic_curves.ell_rational_field.ModularParameterization:3: (WARNING/2) Inline interpreted text or phrase reference start-string without end-string.                                                                                 \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py:docstring of sage.schemes.elliptic_curves.ell_rational_field.ModularParameterization:4: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```        \n\nIssue created by migration from https://trac.sagemath.org/ticket/6577\n\n",
+    "body": "Assignee: tba\n\nKeywords: reference manual\n\nThis is in 4.1.1.alpha0: \n\n```\nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/databases/jones.py:docstring of sage.databases.jones.JonesDatabase.get:8: (WARNING/2) Inline literal start-string without end-string.                                              \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/databases/jones.py:docstring of sage.databases.jones.JonesDatabase.ramified_at:11: (WARNING/2) Inline literal start-string without end-string.                                     \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/databases/jones.py:docstring of sage.databases.jones.JonesDatabase.unramified_outside:13: (WARNING/2) Inline literal start-string without end-string.                              \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py:docstring of sage.schemes.elliptic_curves.ell_rational_field.ModularParameterization:3: (WARNING/2) Inline interpreted text or phrase reference start-string without end-string.                                                                                 \nWARNING: /home/david/sage-4.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py:docstring of sage.schemes.elliptic_curves.ell_rational_field.ModularParameterization:4: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```        \n\nIssue created by migration from https://trac.sagemath.org/ticket/6577\n\n",
+    "closed_at": "2009-07-23T01:58:29Z",
     "created_at": "2009-07-21T09:56:01Z",
     "labels": [
         "component: documentation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Reference manual build errors in 4.1.1.alpha0",
+    "title": "[with patch, positive review] Reference manual build errors in 4.1.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6577",
     "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: tba
+
+Keywords: reference manual
 
 This is in 4.1.1.alpha0: 
 

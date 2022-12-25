@@ -3,10 +3,11 @@
 archive/issues_009053.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  minz\n\nThe last output below should obviously be True, but it is False.\n\n```\nsage: R.<x> = GF(7)[]\nsage: A = R^3\nsage: L = A.span([x*A.0 + (x^3 + 1)*A.1, x*A.2]); L\nFree module of degree 3 and rank 2 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[      x x^3 + 1       0]\n[      0       0       x]\nsage: M = A.span([x*L.0]); M\nFree module of degree 3 and rank 1 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[    x^2 x^4 + x       0]\nsage: M.0 in L\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9053\n\n",
+    "body": "Assignee: jason, was\n\nCC:  minz\n\nThe last output below should obviously be True, but it is False.\n\n```\nsage: R.<x> = GF(7)[]\nsage: A = R^3\nsage: L = A.span([x*A.0 + (x^3 + 1)*A.1, x*A.2]); L\nFree module of degree 3 and rank 2 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[      x x^3 + 1       0]\n[      0       0       x]\nsage: M = A.span([x*L.0]); M\nFree module of degree 3 and rank 1 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[    x^2 x^4 + x       0]\nsage: M.0 in L\nFalse\n```\n\nApply trac_9053_fixes_pivots.v2.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/9053\n\n",
+    "closed_at": "2011-04-07T13:48:21Z",
     "created_at": "2010-05-26T08:41:23Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
@@ -16,7 +17,7 @@ archive/issues_009053.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @aghitza
+Assignee: jason, was
 
 CC:  minz
 
@@ -37,6 +38,8 @@ Echelon basis matrix:
 sage: M.0 in L
 False
 ```
+
+Apply trac_9053_fixes_pivots.v2.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/9053
 

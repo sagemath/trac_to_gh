@@ -3,11 +3,11 @@
 archive/issues_001477.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\n\n\nOn Dec 12, 2007 7:48 AM, greg2k4@mail.ru <greg2k4@mail.ru> wrote:\n> \n> Hi all,\n> \n> I need to use non-english characters (in comments) in Notebook\n> worksheet.\n> While working, they're shown w/o problem, but if I save (\"download to\n> file\") worksheet, then close\n> SAGE, then open again and load .sws file, sometimes (!) I see just\n> unicode codes (like %u4041)\n> instead of my chars.\n> Strange, but sometimes they're loaded correctly...\n> I'm using Sage v 2.8.13 (VMware) under winXP Pro.\n> \n> Am I missing something?\n\nNo, more likely I'm missing something in how that functionality\nwas implemened.  You're probably one of the first ever Russian uses of \nSage, and we have had very little testing of Unicode in Sage. \nHopefully fixing the above is for developers just a \nmatter of changing a few lines in \n\n  SAGE_ROOT/devel/sage/sage/server/noteboook\n\nthat relate to loading and saving the file worksheet.txt. \n   \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1477\n\n",
+    "body": "Assignee: boothby\n\n```\n\n\nOn Dec 12, 2007 7:48 AM,  wrote:\n> \n> Hi all,\n> \n> I need to use non-english characters (in comments) in Notebook\n> worksheet.\n> While working, they're shown w/o problem, but if I save (\"download to\n> file\") worksheet, then close\n> SAGE, then open again and load .sws file, sometimes (!) I see just\n> unicode codes (like %u4041)\n> instead of my chars.\n> Strange, but sometimes they're loaded correctly...\n> I'm using Sage v 2.8.13 (VMware) under winXP Pro.\n> \n> Am I missing something?\n\nNo, more likely I'm missing something in how that functionality\nwas implemened.  You're probably one of the first ever Russian uses of \nSage, and we have had very little testing of Unicode in Sage. \nHopefully fixing the above is for developers just a \nmatter of changing a few lines in \n\n  SAGE_ROOT/devel/sage/sage/server/noteboook\n\nthat relate to loading and saving the file worksheet.txt. \n   \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1477\n\n",
+    "closed_at": "2009-03-23T21:38:30Z",
     "created_at": "2007-12-12T16:37:05Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "notebook -- make it unicode aware",
@@ -21,7 +21,7 @@ Assignee: boothby
 ```
 
 
-On Dec 12, 2007 7:48 AM, greg2k4@mail.ru <greg2k4@mail.ru> wrote:
+On Dec 12, 2007 7:48 AM,  wrote:
 > 
 > Hi all,
 > 

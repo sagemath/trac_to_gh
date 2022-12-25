@@ -1,15 +1,16 @@
-# Issue 4308: mpc spackage
+# Issue 4308: [with spkg, positive review] make mpc an optional spkg
 
 archive/issues_004308.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI am planning to add arbitrary precision complex numbers using the MPC library\nhttp://www.multiprecision.org/mpc/.\n\nHere is a sage package based\nhttp://www.loria.fr/~thevenyp/mpc-0.5.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4308\n\n",
+    "closed_at": "2008-11-30T05:35:16Z",
     "created_at": "2008-10-16T15:27:23Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "mpc spackage",
+    "title": "[with spkg, positive review] make mpc an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4308",
     "user": "https://trac.sagemath.org/admin/accounts/users/thevenyp"

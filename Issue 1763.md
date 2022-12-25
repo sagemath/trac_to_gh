@@ -1,15 +1,16 @@
-# Issue 1763: implement norms for matrices
+# Issue 1763: [with patch; positive review] implement norms for matrices
 
 archive/issues_001763.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  harald.schilly@gmail.com\n\nAdd functionality to implement various types of norms on matrices; for starters, see\nhttp://en.wikipedia.org/wiki/Matrix_norm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1763\n\n",
+    "closed_at": "2008-04-15T00:28:57Z",
     "created_at": "2008-01-12T09:30:43Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "implement norms for matrices",
+    "title": "[with patch; positive review] implement norms for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1763",
     "user": "https://github.com/aghitza"

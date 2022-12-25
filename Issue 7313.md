@@ -1,17 +1,17 @@
-# Issue 7313: Very bad thing in the behaviour of search_doc
+# Issue 7313: search_doc does not find phrases across multiple lines
 
 archive/issues_007313.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @dandrake\n\nHello !!!\n\nOut of curiosity, I tried to look for a function I knew in Sage :\n\n```\nsage: search_doc(\"Floyd-Warshall\")\nhtml/en/reference/sage/graphs/graph.html:5797:<dd><p>Uses the Floyd-Warshall algorithm to find a shortest weighted path\nsage: search_doc(\"Floyd-Warshall\",\"pair\")\nsage: Graph.shortest_path_all_pairs?\n```\n\nI understand the current way to look for things in the doc is to grep it, and that for some reason we may need to keep our lines short ( less than 80 characters or so ).. I also understand that finding another way to search the doc ( if there is none available already ) may be some big amount of work. Even though, this really isn't the expected behaviour of the function, and I think we should do something about it.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7313\n\n",
+    "closed_at": "2010-02-11T14:40:56Z",
     "created_at": "2009-10-26T13:44:46Z",
     "labels": [
         "component: documentation",
-        "critical",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Very bad thing in the behaviour of search_doc",
+    "title": "search_doc does not find phrases across multiple lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7313",
     "user": "https://github.com/nathanncohen"

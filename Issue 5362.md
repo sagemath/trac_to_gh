@@ -1,9 +1,10 @@
-# Issue 5362: [with patch, needs review] bug in transpose for matrix_double_dense
+# Issue 5362: [with patch, positive review] bug in transpose for matrix_double_dense
 
 archive/issues_005362.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: transpose\n\nA copy is missing:\n\n```\nsage: m=matrix(RDF,2,2,range(4))\nsage: m2=m.transpose()\nsage: m2\n\n[0.0 2.0]\n[1.0 3.0]\nsage: m[0,0]=1\nsage: m2\n\n[1.0 2.0]\n[1.0 3.0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5362\n\n",
+    "closed_at": "2009-02-28T17:09:14Z",
     "created_at": "2009-02-24T22:27:41Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005362.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] bug in transpose for matrix_double_dense",
+    "title": "[with patch, positive review] bug in transpose for matrix_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5362",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

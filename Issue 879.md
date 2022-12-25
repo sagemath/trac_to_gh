@@ -4,11 +4,11 @@ archive/issues_000879.json:
 ```json
 {
     "body": "Assignee: failure\n\nCC:  @garyfurnish @orlitzky\n\n\"sage -testall\" has at least three parts (DSage unit tests, documentation doctests, library doctests).  If some documentation doctests fail, you have to know to look in the middle of the -testall output to notice; the end of the output may well say that all tests passed (meaning all library doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/879\n\n",
+    "closed_at": "2011-12-09T10:25:41Z",
     "created_at": "2007-10-13T19:05:33Z",
     "labels": [
         "component: doctest coverage",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"sage -testall\" should summarize all failures at the end of the run",

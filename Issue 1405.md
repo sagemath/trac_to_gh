@@ -4,6 +4,7 @@ archive/issues_001405.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ncremona.spkg doens't compile with the current gcc 4.3 snapshot.\n\nThe attached patch fixes that. Credit also goes to Carl Witty \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1405\n\n",
+    "closed_at": "2007-12-06T02:07:59Z",
     "created_at": "2007-12-06T02:06:48Z",
     "labels": [
         "component: algebraic geometry",

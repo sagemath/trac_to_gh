@@ -1,16 +1,17 @@
-# Issue 3966: The ode cython example gives errors
+# Issue 3966: [with patch, positive review] The ode cython example gives errors
 
 archive/issues_003966.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nThe gsl ode_solver Cython/Pyrex example gives errors because the jacobian isn't passed (and doesn't need to be!).  This patch fixes the code and also changes the %pyrex to %cython\n\nIssue created by migration from https://trac.sagemath.org/ticket/3966\n\n",
+    "closed_at": "2008-08-29T03:20:36Z",
     "created_at": "2008-08-27T15:47:56Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "The ode cython example gives errors",
+    "title": "[with patch, positive review] The ode cython example gives errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3966",
     "user": "https://github.com/jasongrout"

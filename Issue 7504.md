@@ -4,6 +4,7 @@ archive/issues_007504.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: magma, boolean context\n\nCompare the following results:\n\n```\nsage: bool(pari(False))\nFalse\nsage: bool(gap(False))\nFalse\nsage: bool(maxima(False))\nFalse\nsage: bool(maple(False))\nFalse\nsage: bool(mathematica(False))\nFalse\nsage: bool(magma(False))\nTrue\n```\nThis is in some sense the inverse problem to #845.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7504\n\n",
+    "closed_at": "2009-11-29T05:43:36Z",
     "created_at": "2009-11-20T13:27:44Z",
     "labels": [
         "component: interfaces",

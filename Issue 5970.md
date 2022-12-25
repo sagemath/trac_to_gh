@@ -1,16 +1,18 @@
-# Issue 5970: [with patch, needs review] Weak references in Polynomial Ring cache
+# Issue 5970: Weak references in Polynomial Ring cache
 
 archive/issues_005970.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  jpflori @zimmermann6 @vbraun\n\nKeywords: polynomial ring cache weak reference\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/ef01dae47c835137 a memory leak was reported.\n\nReason for the leak: Many different polynomial rings are created, but used only once. But since we want to have unique parents, they are all cached and thus prevented from deletion.\n\nAs Robert pointed out, using weak references enables us to both have unique parents and garbage collection.\n\nWith the patch, that should at least apply to sage 3.4.1.rc3, one can do\n\n```\nsage: for p in primes(2,1000000):\n....:     R.<x,y,z> = GF(p)[]\n```\nwithout running into memory problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5970\n\n",
+    "body": "Assignee: @malb\n\nCC:  jpflori @zimmermann6 @vbraun\n\nKeywords: polynomial ring cache weak reference\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/ef01dae47c835137 a memory leak was reported.\n\nReason for the leak: Many different polynomial rings are created, but used only once. But since we want to have unique parents, they are all cached and thus prevented from deletion.\n\nAs Robert pointed out, using weak references enables us to both have unique parents and garbage collection.\n\nWith the patch, that should at least apply to sage 3.4.1.rc3, one can do\n\n```\nsage: for p in primes(2,1000000):\n....:     R.<x,y,z> = GF(p)[]\n```\nwithout running into memory problems.\n\nSee instead #715.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5970\n\n",
+    "closed_at": "2012-01-05T13:34:39Z",
     "created_at": "2009-05-03T07:21:37Z",
     "labels": [
         "component: commutative algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] Weak references in Polynomial Ring cache",
+    "title": "Weak references in Polynomial Ring cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5970",
     "user": "https://github.com/simon-king-jena"
@@ -35,6 +37,8 @@ sage: for p in primes(2,1000000):
 ....:     R.<x,y,z> = GF(p)[]
 ```
 without running into memory problems.
+
+See instead #715.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5970
 

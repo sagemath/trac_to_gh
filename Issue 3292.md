@@ -1,15 +1,16 @@
-# Issue 3292: [with patch, needs review] conversion of FractionFieldElements to magma
+# Issue 3292: [with patch, positive review] conversion of FractionFieldElements to magma
 
 archive/issues_003292.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: magma\n\nAttached patch adds support for converting `FractionFieldElement`s to Magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3292\n\n",
+    "closed_at": "2008-05-25T03:25:48Z",
     "created_at": "2008-05-24T16:43:18Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] conversion of FractionFieldElements to magma",
+    "title": "[with patch, positive review] conversion of FractionFieldElements to magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3292",
     "user": "https://github.com/burcin"

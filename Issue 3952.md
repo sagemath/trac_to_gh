@@ -1,16 +1,17 @@
-# Issue 3952: make plot() and parametric_plot() use fast_float on their functions
+# Issue 3952: [with patch, positive review] make plot() and parametric_plot() use fast_float on their functions
 
 archive/issues_003952.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently we have an error when calling these functions with constants.  Using fast_float will take care of this and presumably make the functions *way* faster to boot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3952\n\n",
+    "closed_at": "2008-08-26T22:16:42Z",
     "created_at": "2008-08-25T21:58:09Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "make plot() and parametric_plot() use fast_float on their functions",
+    "title": "[with patch, positive review] make plot() and parametric_plot() use fast_float on their functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3952",
     "user": "https://github.com/jasongrout"

@@ -4,6 +4,7 @@ archive/issues_001096.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI was overwriting an input parameter with a local variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1096\n\n",
+    "closed_at": "2007-11-06T21:41:21Z",
     "created_at": "2007-11-04T01:31:01Z",
     "labels": [
         "component: basic arithmetic",

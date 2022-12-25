@@ -1,16 +1,17 @@
-# Issue 5057: Add fortran-OSX64-20090120.spkg: to the experimental spkg repo
+# Issue 5057: [with spkg, positive review] Add fortran-OSX64-20090120.spkg: to the experimental spkg repo
 
 archive/issues_005057.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe above spkg has a custom gfortran 4.2.3 set to build a default 64 bit on OSX. This will come in useful until we have revamp Fortran build support properly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5057\n\n",
+    "closed_at": "2009-01-22T23:40:33Z",
     "created_at": "2009-01-22T19:19:36Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Add fortran-OSX64-20090120.spkg: to the experimental spkg repo",
+    "title": "[with spkg, positive review] Add fortran-OSX64-20090120.spkg: to the experimental spkg repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5057",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

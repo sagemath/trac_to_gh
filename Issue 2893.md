@@ -1,16 +1,17 @@
-# Issue 2893: [with patch; needs review] notebook -- make it explicitly clear which systems are optional
+# Issue 2893: [with patch; positive review] notebook -- make it explicitly clear which systems are optional
 
 archive/issues_002893.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI've noticed a lot of confusion by the list of systems in the drop-down menu for Sage, especially between the optional and non-optional systems.  This patch:\n* makes which systems are optional clear\n* Adds an html system (which is pretty funny -- all input gets html'd). \n\nThe html part of this patch relies on #2890.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2893\n\n",
+    "closed_at": "2008-04-12T10:52:30Z",
     "created_at": "2008-04-12T03:28:33Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] notebook -- make it explicitly clear which systems are optional",
+    "title": "[with patch; positive review] notebook -- make it explicitly clear which systems are optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2893",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 5709: singular interface -- use a smaller file size cutoff on solaris
+# Issue 5709: [with patch; positive review] singular interface -- use a smaller file size cutoff on solaris
 
 archive/issues_005709.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5709\n\n",
+    "closed_at": "2009-04-09T06:10:58Z",
     "created_at": "2009-04-08T01:04:28Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "singular interface -- use a smaller file size cutoff on solaris",
+    "title": "[with patch; positive review] singular interface -- use a smaller file size cutoff on solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5709",
     "user": "https://github.com/williamstein"

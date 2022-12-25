@@ -1,15 +1,16 @@
-# Issue 6616: [with patch] higher heegner points
+# Issue 6616: refactor heegner points code out of ell_rational_field and support computing higher heegner points
 
 archive/issues_006616.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @JohnCremona\n\nExtend the heegner point code to compute y_lambda for lambda > 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6616\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @JohnCremona\n\nI made a clean hg bundle against sage-4.1.1 that includes patches 1-16 along with the patches from 6745 and 6751:\n\n\nhttp://sage.math.washington.edu/home/wstein/patches/heegner-1-to-16.hg\n\n\nNOTE: If you apply patches, the code after part 7 depends on #6745, #6751, so make sure you apply those patches!\n\nPLAN:\n\n1. Refactor ell_rational_field, so the Heegner points code (nearly 1000 lines!) is in a new file heegner.py. \n\n2. Extend the heegner point code to compute y_lambda for lambda > 1. \n\n3. Implement first ever algorithm for provable verification of Kolyvagin's conjecture for specific rank 2 curves.\n\n\nI'm doing 1 and 2 together, since 2 is a fairly small change, but to do it right and make it at all fast requires restructuring the code a lot, otherwise one ends up fighting a lot with badly structured code instead of focusing on optimizing algorithms. \n\nAlso, this refactoring is a long time coming!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6616\n\n",
+    "closed_at": "2010-01-14T01:21:13Z",
     "created_at": "2009-07-25T10:23:56Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "[with patch] higher heegner points",
+    "title": "refactor heegner points code out of ell_rational_field and support computing higher heegner points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6616",
     "user": "https://github.com/robertwb"
@@ -19,7 +20,28 @@ Assignee: @williamstein
 
 CC:  @williamstein @JohnCremona
 
-Extend the heegner point code to compute y_lambda for lambda > 1.
+I made a clean hg bundle against sage-4.1.1 that includes patches 1-16 along with the patches from 6745 and 6751:
+
+
+http://sage.math.washington.edu/home/wstein/patches/heegner-1-to-16.hg
+
+
+NOTE: If you apply patches, the code after part 7 depends on #6745, #6751, so make sure you apply those patches!
+
+PLAN:
+
+1. Refactor ell_rational_field, so the Heegner points code (nearly 1000 lines!) is in a new file heegner.py. 
+
+2. Extend the heegner point code to compute y_lambda for lambda > 1. 
+
+3. Implement first ever algorithm for provable verification of Kolyvagin's conjecture for specific rank 2 curves.
+
+
+I'm doing 1 and 2 together, since 2 is a fairly small change, but to do it right and make it at all fast requires restructuring the code a lot, otherwise one ends up fighting a lot with badly structured code instead of focusing on optimizing algorithms. 
+
+Also, this refactoring is a long time coming!
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6616
 

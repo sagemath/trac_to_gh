@@ -1,9 +1,10 @@
-# Issue 3145: documentation and defaults for the 'view' function
+# Issue 3145: [with patch, positive review] documentation and defaults for the 'view' function
 
 archive/issues_003145.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nKeywords: latex, view\n\nI'm attaching a patch with, I suppose, three changes (two of which are minor) to the 'view' function:\n1. longer (and I think clearer) documentation\n2. no 'center' option anymore. I don't think centering things in displayed equations has any effect in LaTeX.\n3. changed default value of 'sep' from '$$ $$' to *.  I have two reasons for this: I think the output looks better this way, and I think that the default value of '$$ $$' is misleading: someone might infer that it's playing the role of the variables 'math_left' and 'math_right' in _latex_file, when in fact it's just adding some vertical space between the output lines.  If you don't like having a default of *, then I would suggest changing it to something like '\\\\vspace{5mm}' which gives a better idea of what 'sep' actually does and even implies how one might change it (by changing the length).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3145\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: latex, view, editor_wstein\n\nI'm attaching a patch with, I suppose, three changes (two of which are minor) to the 'view' function:\n1. longer (and I think clearer) documentation\n2. no 'center' option anymore. I don't think centering things in displayed equations has any effect in LaTeX.\n3. changed default value of 'sep' from '$$ $$' to *.  I have two reasons for this: I think the output looks better this way, and I think that the default value of '$$ $$' is misleading: someone might infer that it's playing the role of the variables 'math_left' and 'math_right' in _latex_file, when in fact it's just adding some vertical space between the output lines.  If you don't like having a default of *, then I would suggest changing it to something like '\\\\vspace{5mm}' which gives a better idea of what 'sep' actually does and even implies how one might change it (by changing the length).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3145\n\n",
+    "closed_at": "2008-06-23T11:09:49Z",
     "created_at": "2008-05-09T19:16:33Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_003145.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "documentation and defaults for the 'view' function",
+    "title": "[with patch, positive review] documentation and defaults for the 'view' function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3145",
     "user": "https://github.com/jhpalmieri"
@@ -19,7 +20,7 @@ archive/issues_003145.json:
 ```
 Assignee: cwitty
 
-Keywords: latex, view
+Keywords: latex, view, editor_wstein
 
 I'm attaching a patch with, I suppose, three changes (two of which are minor) to the 'view' function:
 1. longer (and I think clearer) documentation

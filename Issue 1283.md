@@ -3,7 +3,8 @@
 archive/issues_001283.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCurrently, coercions (and conversions) are defined in many different places in the SAGE codebase. We are going through each parent and consolidating/cleaning up the codebase to conform to the new coercion API, as described in the new programming guide. \n\nThis includes removing all Parent __call__ methods to use a generic __call__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1283\n\n",
+    "body": "Assignee: somebody\n\nCurrently, coercions (and conversions) are defined in many different places in the SAGE codebase. We are going through each parent and consolidating/cleaning up the codebase to conform to the new coercion API, as described in the new programming guide. \n\nThis includes removing all Parent `__call__` methods to use a generic `__call__`. \n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/1283\n\n",
+    "closed_at": "2008-03-04T22:24:05Z",
     "created_at": "2007-11-26T20:48:01Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +21,9 @@ Assignee: somebody
 
 Currently, coercions (and conversions) are defined in many different places in the SAGE codebase. We are going through each parent and consolidating/cleaning up the codebase to conform to the new coercion API, as described in the new programming guide. 
 
-This includes removing all Parent __call__ methods to use a generic __call__.
+This includes removing all Parent `__call__` methods to use a generic `__call__`. 
+
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1283
 

@@ -1,16 +1,17 @@
-# Issue 4033: [with spkg, needs review] disabled libiconv on Solaris for the r.spkg
+# Issue 4033: [with spkg, positive review] disabled libiconv on Solaris for the r.spkg
 
 archive/issues_004033.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe title says it all. The spkg is at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha4/r-2.6.1.p19.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4033\n\n",
+    "closed_at": "2008-09-01T10:30:53Z",
     "created_at": "2008-09-01T09:29:33Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] disabled libiconv on Solaris for the r.spkg",
+    "title": "[with spkg, positive review] disabled libiconv on Solaris for the r.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4033",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

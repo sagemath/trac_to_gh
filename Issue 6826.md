@@ -1,16 +1,17 @@
-# Issue 6826: [with patch, needs review] magma_free interface is broken
+# Issue 6826: [with patch, positive review] magma_free interface is broken
 
 archive/issues_006826.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: magma free internet interface\n\nThe magma free interface has changed slightly.  The attached patch updates the interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6826\n\n",
+    "closed_at": "2009-09-24T06:18:21Z",
     "created_at": "2009-08-26T01:16:34Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] magma_free interface is broken",
+    "title": "[with patch, positive review] magma_free interface is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6826",
     "user": "https://github.com/ncalexan"

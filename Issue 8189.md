@@ -4,6 +4,7 @@ archive/issues_008189.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nIn hg.py, strings like `ssh://[user`@`]host[:port]/[path]` appear in docstrings, and Sphinx turns them into active links in the html documentation (which are obviously broken), and Sphinx produces warnings when producing the latex/pdf documentation:\n\n```\n.../devel/sage/doc/en/reference/sage/misc/hg.rst:: WARNING: unusable reference target found: ssh://[user@]host[:port]/[path\n```\nThis patch puts these links into double backquotes, fixing both of these issues.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8189\n\n",
+    "closed_at": "2010-02-11T15:07:05Z",
     "created_at": "2010-02-05T04:54:39Z",
     "labels": [
         "component: documentation",

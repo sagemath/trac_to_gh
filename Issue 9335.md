@@ -3,10 +3,10 @@
 archive/issues_009335.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nDuring Sage Days 21 (while porting David Roberts' and John Cremona's  implementation of 2-descent for elliptic curves over function fields), we came across the Magma function IsLinearlyIndependent, which does not appear to have an analogue in Sage. \n\nWhat it does is the following: given a list of points on an elliptic curve, it returns true iff the points are linearly independent; else it returns false and a vector of coefficients specifying a linear combination of the points that results in torsion.\n\nWe would like to have a function that does this in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9335\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona\n\nDuring Sage Days 21 (while porting David Roberts' and John Cremona's  implementation of 2-descent for elliptic curves over function fields), we came across the Magma function IsLinearlyIndependent, which does not appear to have an analogue in Sage. \n\nWhat it does is the following: given a list of points on an elliptic curve, it returns true iff the points are linearly independent; else it returns false and a vector of coefficients specifying a linear combination of the points that results in torsion.\n\nWe would like to have a function that does this in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9335\n\n",
     "created_at": "2010-06-25T07:11:16Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "linear independence of points on an elliptic curve",
@@ -15,7 +15,7 @@ archive/issues_009335.json:
     "user": "https://github.com/jbalakrishnan"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
 
 CC:  @JohnCremona
 

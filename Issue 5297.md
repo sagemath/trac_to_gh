@@ -1,9 +1,10 @@
-# Issue 5297: [with patch, needs review] sparse vectors and free module elements: pairwise_product is broken
+# Issue 5297: [with patch, positive review] sparse vectors and free module elements: pairwise_product is broken
 
 archive/issues_005297.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\n```\nsage: v = vector({1: 1, 3: -2})  \nsage: w = vector({3: 3})       \nsage: v\n(0, 1, 0, -2)\nsage: w\n(0, 0, 0, 3)\nsage: v.pairwise_product(w)\n(0, 1, 0, -6)\nsage: v.dense_vector().pairwise_product(w)\n(0, 0, 0, -6)\n```\n(The last line illustrates that dense vectors seem to work okay.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5297\n\n",
+    "closed_at": "2009-02-18T00:17:17Z",
     "created_at": "2009-02-17T20:55:05Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005297.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] sparse vectors and free module elements: pairwise_product is broken",
+    "title": "[with patch, positive review] sparse vectors and free module elements: pairwise_product is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5297",
     "user": "https://github.com/jhpalmieri"

@@ -1,16 +1,17 @@
-# Issue 4905: convert sage.coding.* docstrings to Sphinx
+# Issue 4905: [with patch, positive review] convert sage.coding.* docstrings to Sphinx
 
 archive/issues_004905.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4905\n\n",
+    "body": "Assignee: tba\n\nI've updated the patch to fix the missing less than signs.\n\nThe double colons are ReST's way to denote a verbatim environment.  So, we don't want double colons after AUTHOR.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4905\n\n",
+    "closed_at": "2009-02-24T18:58:39Z",
     "created_at": "2009-01-01T22:46:55Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.coding.* docstrings to Sphinx",
+    "title": "[with patch, positive review] convert sage.coding.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4905",
     "user": "https://github.com/mwhansen"
@@ -18,7 +19,9 @@ archive/issues_004905.json:
 ```
 Assignee: tba
 
+I've updated the patch to fix the missing less than signs.
 
+The double colons are ReST's way to denote a verbatim environment.  So, we don't want double colons after AUTHOR.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4905
 

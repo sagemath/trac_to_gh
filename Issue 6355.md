@@ -1,15 +1,16 @@
-# Issue 6355: [with SPKG, needs review] Cliquer to compute maximum cliques
+# Issue 6355: [with spkg, positive review] Cliquer to compute maximum cliques
 
 archive/issues_006355.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nKeywords: Clique max, Cliquer\n\nHello everybody ! I hope this is the last step for this patch to compute the maximum cliques in a graph.\nHere is the SPKG file with the source code of Cliquer.\nAs for planarity or other modules, the original source code of cliquer is copied, but in this case it is copied in local/lib/cliquer-1.2, I was told planarity was to be an exception to the rule.\n\nYou can download the SPKG file at this address :\nhttp://www-sop.inria.fr/members/Nathann.Cohen/cliquer-1.2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6355\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: Clique max, Cliquer\n\nHello everybody ! I hope this is the last step for this patch to compute the maximum cliques in a graph.\nHere is the SPKG file with the source code of Cliquer.\nAs for planarity or other modules, the original source code of cliquer is copied, but in this case it is copied in local/lib/cliquer-1.2, I was told planarity was to be an exception to the rule.\n\nYou can download the SPKG file at this address :\nhttp://www-sop.inria.fr/members/Nathann.Cohen/cliquer-1.2.spkg\n\nThe vote to include this SPKG can be found here:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b24e7c1603b5f988\n\nThere is also an accompanying patch, at #5793.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6355\n\n",
+    "closed_at": "2009-07-31T23:30:48Z",
     "created_at": "2009-06-18T12:57:35Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with SPKG, needs review] Cliquer to compute maximum cliques",
+    "title": "[with spkg, positive review] Cliquer to compute maximum cliques",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6355",
     "user": "https://github.com/nathanncohen"
@@ -25,6 +26,11 @@ As for planarity or other modules, the original source code of cliquer is copied
 
 You can download the SPKG file at this address :
 http://www-sop.inria.fr/members/Nathann.Cohen/cliquer-1.2.spkg
+
+The vote to include this SPKG can be found here:
+http://groups.google.com/group/sage-devel/browse_thread/thread/b24e7c1603b5f988
+
+There is also an accompanying patch, at #5793.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6355
 

@@ -1,15 +1,16 @@
-# Issue 6177: [with patch, needs work] Update PolyBoRi to newest upstream release
+# Issue 6177: [with patch, positive review] Update PolyBoRi to newest upstream release
 
 archive/issues_006177.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  polybori @burcin @rlmill boothby\n\nKeywords: M4RI, PolyBoRi\n\n```\n2009/04/06 The first release candidate of PolyBoRi 0.6 is available for download. It comes with a PEP8-conforming python interface and new algorithms: FGLM and (experimental) parallel processing of Gr\u00f6bner basis variants. In addition, the documentation was improved considerably: the tutorial is more extensive, and the TeX4ht-Support has been improved. Finally, built-in support for plotting the underlying decision diagrams has been added.\n```\n\nThis version also allows bigger systems to be solved using the M4RI library (due to an updated M4RI) and makes use of M4RI in shared library mode.\n\nThis ticket depends on #5510\n\nIssue created by migration from https://trac.sagemath.org/ticket/6177\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @burcin @rlmill boothby\n\nKeywords: M4RI, PolyBoRi\n\n```\n2009/04/06 The first release candidate of PolyBoRi 0.6 is available \nfor download. It comes with a PEP8-conforming python interface and \nnew algorithms: FGLM and (experimental) parallel processing of \nGr\u00f6bner basis variants. In addition, the documentation was improved \nconsiderably: the tutorial is more extensive, and the TeX4ht-\nSupport has been improved. Finally, built-in support for plotting \nthe underlying decision diagrams has been added.\n```\n\nThis version also allows bigger systems to be solved using the M4RI library (due to an updated M4RI) and makes use of M4RI in shared library mode.\n\nThis ticket depends on #5510\n\nIssue created by migration from https://trac.sagemath.org/ticket/6177\n\n",
+    "closed_at": "2009-09-11T16:33:21Z",
     "created_at": "2009-06-01T09:35:19Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs work] Update PolyBoRi to newest upstream release",
+    "title": "[with patch, positive review] Update PolyBoRi to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6177",
     "user": "https://github.com/malb"
@@ -22,7 +23,13 @@ CC:  polybori @burcin @rlmill boothby
 Keywords: M4RI, PolyBoRi
 
 ```
-2009/04/06 The first release candidate of PolyBoRi 0.6 is available for download. It comes with a PEP8-conforming python interface and new algorithms: FGLM and (experimental) parallel processing of Gröbner basis variants. In addition, the documentation was improved considerably: the tutorial is more extensive, and the TeX4ht-Support has been improved. Finally, built-in support for plotting the underlying decision diagrams has been added.
+2009/04/06 The first release candidate of PolyBoRi 0.6 is available 
+for download. It comes with a PEP8-conforming python interface and 
+new algorithms: FGLM and (experimental) parallel processing of 
+Gröbner basis variants. In addition, the documentation was improved 
+considerably: the tutorial is more extensive, and the TeX4ht-
+Support has been improved. Finally, built-in support for plotting 
+the underlying decision diagrams has been added.
 ```
 
 This version also allows bigger systems to be solved using the M4RI library (due to an updated M4RI) and makes use of M4RI in shared library mode.

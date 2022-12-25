@@ -1,22 +1,23 @@
-# Issue 963: singular attribut getting/setting
+# Issue 963: [with patch] singular attribut getting/setting
 
 archive/issues_000963.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached patches provides more convenient access to attributes of Singular objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/963\n\n",
+    "body": "Assignee: @malb\n\nThe attached patches provides more convenient access to attributes of Singular objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/963\n\n",
+    "closed_at": "2007-10-23T19:45:11Z",
     "created_at": "2007-10-21T15:11:06Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "singular attribut getting/setting",
+    "title": "[with patch] singular attribut getting/setting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/963",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 The attached patches provides more convenient access to attributes of Singular objects.
 

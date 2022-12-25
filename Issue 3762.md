@@ -1,15 +1,16 @@
-# Issue 3762: remove quaddouble from sage -- not used, source of pain, mpfr is better
+# Issue 3762: [with patch, positive review] deprecate quaddouble, switch the number of partitions code to use MPFR all the way
 
 archive/issues_003762.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nNote -- also close #3079.\n\nI wonder -- should quaddouble should be moved to be an optional spkg?  That will be weird, since the actual support for quaddouble is all over the sage install (in all the coercions code, etc.). \n\nIssue created by migration from https://trac.sagemath.org/ticket/3762\n\n",
+    "closed_at": "2009-01-28T13:48:38Z",
     "created_at": "2008-08-02T20:16:11Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "remove quaddouble from sage -- not used, source of pain, mpfr is better",
+    "title": "[with patch, positive review] deprecate quaddouble, switch the number of partitions code to use MPFR all the way",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3762",
     "user": "https://github.com/williamstein"

@@ -1,9 +1,10 @@
-# Issue 5881: __cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)
+# Issue 5881: [with patch, positive review] __cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)
 
 archive/issues_005881.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nThis is happening with gcc 4.3.3:\n\n```\nsage -t  \"devel/sage/sage/combinat/root_system/type_dual.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 43:\n   sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n   [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n   [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 45:\n   sage: sorted(ct)\nExpected:\n   [['A', 4], A1xB2, B2xA1]\nGot:\n   [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5881\n\n",
+    "closed_at": "2009-04-30T09:43:28Z",
     "created_at": "2009-04-23T21:10:28Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005881.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "__cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)",
+    "title": "[with patch, positive review] __cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5881",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

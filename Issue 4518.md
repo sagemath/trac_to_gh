@@ -1,24 +1,25 @@
-# Issue 4518: progress indicator for "sage -br"
+# Issue 4518: Progress indicator for "sage -b"
 
 archive/issues_004518.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nModify the execute_list_of_commands function in setup.py so that it prints somehow the percent of them that have been completed so far every once in a while.  Nothing too complicated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4518\n\n",
+    "body": "Assignee: @craigcitro\n\nUpstream pull request: [https://github.com/cython/cython/pull/382](https://github.com/cython/cython/pull/382) (accepted)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4518\n\n",
+    "closed_at": "2015-06-02T22:09:10Z",
     "created_at": "2008-11-14T00:33:35Z",
     "labels": [
         "component: build",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
-    "title": "progress indicator for \"sage -br\"",
+    "title": "Progress indicator for \"sage -b\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4518",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @craigcitro
 
-Modify the execute_list_of_commands function in setup.py so that it prints somehow the percent of them that have been completed so far every once in a while.  Nothing too complicated.
+Upstream pull request: [https://github.com/cython/cython/pull/382](https://github.com/cython/cython/pull/382) (accepted)
 
 Issue created by migration from https://trac.sagemath.org/ticket/4518
 

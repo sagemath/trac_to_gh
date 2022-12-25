@@ -4,6 +4,7 @@ archive/issues_007339.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jasongrout @williamstein\n\nPlease see [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/e89f816b32f9fd81) for the report.\n\n*Possibly* relevant recent tickets include #7238 and #7254.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7339\n\n",
+    "closed_at": "2009-11-12T00:17:59Z",
     "created_at": "2009-10-28T19:42:33Z",
     "labels": [
         "component: notebook",

@@ -3,7 +3,8 @@
 archive/issues_008488.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nCC:  mhampton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8488\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  mhampton\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/240592d465bd4f84#\n\nIssue created by migration from https://trac.sagemath.org/ticket/8488\n\n",
+    "closed_at": "2010-04-19T05:22:30Z",
     "created_at": "2010-03-10T13:16:54Z",
     "labels": [
         "component: interact"
@@ -15,11 +16,11 @@ archive/issues_008488.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @itolkov
+Assignee: @jasongrout
 
 CC:  mhampton
 
-
+See http://groups.google.com/group/sage-devel/browse_frm/thread/240592d465bd4f84#
 
 Issue created by migration from https://trac.sagemath.org/ticket/8488
 

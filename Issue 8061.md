@@ -1,16 +1,17 @@
-# Issue 8061: New genus2reduction spkg works with Open Solaris 64 bit
+# Issue 8061: New genus2reduction spkg works with Open Solaris x64 as 64 bit
 
 archive/issues_008061.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nMade spkg-install work with Open Solaris with SAGE64=\"yes\".\n\nThe spkg can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8061\n\n",
+    "closed_at": "2010-02-11T15:16:46Z",
     "created_at": "2010-01-25T20:28:01Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "New genus2reduction spkg works with Open Solaris 64 bit",
+    "title": "New genus2reduction spkg works with Open Solaris x64 as 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8061",
     "user": "https://github.com/jaapspies"

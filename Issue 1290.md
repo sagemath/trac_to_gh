@@ -4,6 +4,7 @@ archive/issues_001290.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nDan Drake posted this on sage-devel, and I reformatted it into a proper patch.\n\nI rewrote the patch to avoid using any symbolic computation (e.g., maxima) for speed and to be correct when the input/output is very large. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1290\n\n",
+    "closed_at": "2007-12-02T05:56:13Z",
     "created_at": "2007-11-27T14:43:43Z",
     "labels": [
         "component: combinatorics"

@@ -1,16 +1,17 @@
-# Issue 3756: [with patch; needs review] finance -- fix a bug in fractional brownian motion random walks
+# Issue 3756: [with patch; positive review] finance -- fix a bug in fractional brownian motion random walks
 
 archive/issues_003756.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI stupidly forgot to sum the terms in the random walk.  This patch fixes that bug, updates the doctests, etc.   \n\nThis patch depends on #3755!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3756\n\n",
+    "closed_at": "2008-08-06T01:23:28Z",
     "created_at": "2008-08-02T01:17:43Z",
     "labels": [
         "component: finance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] finance -- fix a bug in fractional brownian motion random walks",
+    "title": "[with patch; positive review] finance -- fix a bug in fractional brownian motion random walks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3756",
     "user": "https://github.com/williamstein"

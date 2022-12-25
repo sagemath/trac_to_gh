@@ -1,9 +1,10 @@
-# Issue 5665: Bug in ShrinkingGeneratorCipher
+# Issue 5665: [with patch, positive review] Bug in ShrinkingGeneratorCipher
 
 archive/issues_005665.json:
 ```json
 {
     "body": "Assignee: kohel\n\nKeywords: stream cipher, shrinking generator\n\nIn class ShrinkingGeneratorCipher, function `__call__` the initialization and update of the initial states is buggy. Namely in the peace of code\n\n```\ng1 = e1.connection_polynomial()\nn1 = g1.degree()\nIS_1 = e1.initial_state()\ng2 = e2.connection_polynomial()\nn2 = g2.degree()\nIS_2 = e1.initial_state()\n```\nthe last line 'IS_2 = e1.initial_state()' should be 'IS_2 = e2.initial_state()'. \nAlso at the end in\n\n```\n  IS_1 = KStream[r-n-1:r-n+n1]\n  IS_2 = KStream[r-n-1:r-n+n2]\n```\nthe last line should be 'IS_2 = DStream[r-n-1:r-n+n2]'\nThe corrected file is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5665\n\n",
+    "closed_at": "2009-07-04T01:31:08Z",
     "created_at": "2009-04-02T07:54:42Z",
     "labels": [
         "component: cryptography",
@@ -11,7 +12,7 @@ archive/issues_005665.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Bug in ShrinkingGeneratorCipher",
+    "title": "[with patch, positive review] Bug in ShrinkingGeneratorCipher",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5665",
     "user": "https://trac.sagemath.org/admin/accounts/users/sbulygin"

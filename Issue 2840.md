@@ -1,16 +1,17 @@
-# Issue 2840: notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function
+# Issue 2840: [with patch, positive review, needs rebase]  notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function
 
 archive/issues_002840.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2840\n\n",
+    "closed_at": "2008-04-07T19:47:15Z",
     "created_at": "2008-04-07T07:46:41Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function",
+    "title": "[with patch, positive review, needs rebase]  notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2840",
     "user": "https://github.com/williamstein"

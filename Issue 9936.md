@@ -3,7 +3,8 @@
 archive/issues_009936.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: pari gp real precision\n\nThe following do not work as they should (try these examples with a freshly started copy of Sage, such that everything is default). \n\n```\n# Default: 2 significant words (while we really should get only 1)\nsage: pari('Pi').debug()\n[&=0000000004fc9620] REAL(lg=4):0400000000000004 (+,expo=1):6000000000000001 c90fdaa22168c234 c4c6628b80dc1cd1\n\n# Change precision and then change it back: we get 1 word\nsage: n = pari.get_real_precision(); pari.set_real_precision(100); pari.set_real_precision(n);\nsage: pari('Pi').debug()\n[&=00000000012bf200] REAL(lg=3):0400000000000003 (+,expo=1):6000000000000001 c90fdaa22168c235\n```\n\n```\n# We cannot compute constants with high precision:\nsage: pari.set_real_precision(1000);\nsage: pari.euler().debug()\n[&=0000000004f75e20] REAL(lg=3):0400000000000003 (+,expo=-1):5fffffffffffffff 93c467e37db0c7a5\n```\n\nDependencies: #9898, #9893\n\nIssue created by migration from https://trac.sagemath.org/ticket/9937\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari gp real precision set_real_precision\n\nThe following do not work as they should (try these examples with a freshly started copy of Sage, such that everything is default). \n\nThis is definately a bug with the initialization of the precision:\n\n```\n# Default: 2 significant words (while we really should get only 1)\nsage: pari('Pi').debug()\n[&=0000000004fc9620] REAL(lg=4):0400000000000004 (+,expo=1):6000000000000001 c90fdaa22168c234 c4c6628b80dc1cd1\n\n# Change precision and then change it back: we get 1 word\nsage: n = pari.get_real_precision(); pari.set_real_precision(100); pari.set_real_precision(n);\nsage: pari('Pi').debug()\n[&=00000000012bf200] REAL(lg=3):0400000000000003 (+,expo=1):6000000000000001 c90fdaa22168c235\n```\n\n`set_real_precision()` seems to affect essentially only the precision for evaluating strings in PARI and not much else:\n\n```\nsage: pari.set_real_precision(50);\nsage: pari('Euler')   # Precision changes\n0.57721566490153286060651209008240243104215933593992\nsage: pari.euler()    # Precision does NOT change\n0.5772156649015328607\n```\n\nThis last behaviour is actually documented in `sage/libs/pari/gen.pyx`:\n> Unless otherwise indicated in the docstring, most Pari functions\n> that return inexact objects use the precision of their arguments to\n> decide the precision of the computation. However, if some of these\n> arguments happen to be exact numbers (integers, rationals, etc.),\n> an optional parameter indicates the precision (in bits) to which\n> these arguments should be converted before the computation. If this\n> precision parameter is missing, the **default precision of 53 bits** is\n> used.\n\n\nIn other words, the default precision is an unchangable 53 bits. I would expect `set_real_precision()` to change this.  This is also trivial to implement since the global variable `prec` is already there (and initialized once and for all to 53).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9937\n\n",
+    "closed_at": "2017-02-21T07:56:21Z",
     "created_at": "2010-09-17T20:48:18Z",
     "labels": [
         "component: interfaces",
@@ -18,9 +19,11 @@ archive/issues_009936.json:
 ```
 Assignee: @williamstein
 
-Keywords: pari gp real precision
+Keywords: pari gp real precision set_real_precision
 
 The following do not work as they should (try these examples with a freshly started copy of Sage, such that everything is default). 
+
+This is definately a bug with the initialization of the precision:
 
 ```
 # Default: 2 significant words (while we really should get only 1)
@@ -33,14 +36,28 @@ sage: pari('Pi').debug()
 [&=00000000012bf200] REAL(lg=3):0400000000000003 (+,expo=1):6000000000000001 c90fdaa22168c235
 ```
 
+`set_real_precision()` seems to affect essentially only the precision for evaluating strings in PARI and not much else:
+
 ```
-# We cannot compute constants with high precision:
-sage: pari.set_real_precision(1000);
-sage: pari.euler().debug()
-[&=0000000004f75e20] REAL(lg=3):0400000000000003 (+,expo=-1):5fffffffffffffff 93c467e37db0c7a5
+sage: pari.set_real_precision(50);
+sage: pari('Euler')   # Precision changes
+0.57721566490153286060651209008240243104215933593992
+sage: pari.euler()    # Precision does NOT change
+0.5772156649015328607
 ```
 
-Dependencies: #9898, #9893
+This last behaviour is actually documented in `sage/libs/pari/gen.pyx`:
+> Unless otherwise indicated in the docstring, most Pari functions
+> that return inexact objects use the precision of their arguments to
+> decide the precision of the computation. However, if some of these
+> arguments happen to be exact numbers (integers, rationals, etc.),
+> an optional parameter indicates the precision (in bits) to which
+> these arguments should be converted before the computation. If this
+> precision parameter is missing, the **default precision of 53 bits** is
+> used.
+
+
+In other words, the default precision is an unchangable 53 bits. I would expect `set_real_precision()` to change this.  This is also trivial to implement since the global variable `prec` is already there (and initialized once and for all to 53).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9937
 

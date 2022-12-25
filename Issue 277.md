@@ -1,23 +1,22 @@
-# Issue 277: Add generic_discrete_logarithm and order computation using Pollard's rho algorithm
+# Issue 277: [with new patches, with positive review] Add generic_discrete_logarithm and order computation using Pollard's rho algorithm
 
 archive/issues_000277.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: discrete log shanks pollard rho order group structure\n\nThe computational cost of Shanks' Baby-Step Giant-Step algorithm and Pollard's rho and lambda algorithms are more or less the same, but the memory costs is much worse for Shanks' algorithm.  It would be nice to have better discrete log algos and group structure computations, ala E. Teske, A Space Efficient Algorithm for Group Structure Computation (1998).\n\nIssue created by migration from https://trac.sagemath.org/ticket/277\n\n",
+    "body": "Keywords: discrete log shanks pollard rho order group structure\n\nThe computational cost of Shanks' Baby-Step Giant-Step algorithm and Pollard's rho and lambda algorithms are more or less the same, but the memory costs is much worse for Shanks' algorithm.  It would be nice to have better discrete log algos and group structure computations, ala E. Teske, A Space Efficient Algorithm for Group Structure Computation (1998).\n\nIssue created by migration from https://trac.sagemath.org/ticket/277\n\n",
+    "closed_at": "2008-03-05T00:21:40Z",
     "created_at": "2007-02-22T23:53:02Z",
     "labels": [
-        "component: number theory",
+        "component: group theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Add generic_discrete_logarithm and order computation using Pollard's rho algorithm",
+    "title": "[with new patches, with positive review] Add generic_discrete_logarithm and order computation using Pollard's rho algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/277",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
-
 Keywords: discrete log shanks pollard rho order group structure
 
 The computational cost of Shanks' Baby-Step Giant-Step algorithm and Pollard's rho and lambda algorithms are more or less the same, but the memory costs is much worse for Shanks' algorithm.  It would be nice to have better discrete log algos and group structure computations, ala E. Teske, A Space Efficient Algorithm for Group Structure Computation (1998).

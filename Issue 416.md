@@ -1,22 +1,23 @@
-# Issue 416: Faster GF(2^n) arithmetic for n >= 16
+# Issue 416: [with patch] faster GF(2^n) arithmetic for n >= 16
 
 archive/issues_000416.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nUsing a Python wrapper around Pari is too slow.  ntl.GF2E on the other hand should be a lot faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/416\n\n",
+    "body": "Assignee: @malb\n\nUsing a Python wrapper around Pari is too slow.  ntl.GF2E on the other hand should be a lot faster.\n\nIssue created by migration from https://trac.sagemath.org/ticket/416\n\n",
+    "closed_at": "2007-10-27T02:48:13Z",
     "created_at": "2007-08-10T14:43:59Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "Faster GF(2^n) arithmetic for n >= 16",
+    "title": "[with patch] faster GF(2^n) arithmetic for n >= 16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/416",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 Using a Python wrapper around Pari is too slow.  ntl.GF2E on the other hand should be a lot faster.
 

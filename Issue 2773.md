@@ -4,6 +4,7 @@ archive/issues_002773.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2773\n\n",
+    "closed_at": "2008-04-02T16:18:47Z",
     "created_at": "2008-04-02T16:07:52Z",
     "labels": [
         "component: commutative algebra",

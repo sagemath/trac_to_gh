@@ -3,10 +3,12 @@
 archive/issues_009073.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @rlmill\n\n```\nsage: G = Graph({0:[1,1]}, multiedges=True)\nsage: G.is_planar()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/<ipython console> in <module>()\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in is_planar(self, on_embedding, kuratowski, set_embedding, set_pos)\n   2217             from sage.graphs.planarity import is_planar\n   2218             G = self.to_undirected()\n-> 2219             planar = is_planar(G,kuratowski=kuratowski,set_pos=set_pos,set_embedding=set_embedding)\n   2220             if kuratowski:\n   2221                 bool_result = planar[0]\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/planarity.so in sage.graphs.planarity.is_planar (sage/graphs/planarity.c:1327)()\n\nKeyError: -1\nsage: G = Graph({0:[1,1,1,1,1,1,1,1,1,1,1,1,1]}, multiedges=True)\nsage: G.is_planar()\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9073\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill\n\nThis is version 4.4.2 with #8756 applied.  Previous versions without #8756 have been observed to segfault.\n\n```\nsage: G = Graph({0:[1,1]}, multiedges=True)\nsage: G.is_planar()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/<ipython console> in <module>()\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in is_planar(self, on_embedding, kuratowski, set_embedding, set_pos)\n   2217             from sage.graphs.planarity import is_planar\n   2218             G = self.to_undirected()\n-> 2219             planar = is_planar(G,kuratowski=kuratowski,set_pos=set_pos,set_embedding=set_embedding)\n   2220             if kuratowski:\n   2221                 bool_result = planar[0]\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/planarity.so in sage.graphs.planarity.is_planar (sage/graphs/planarity.c:1327)()\n\nKeyError: -1\nsage: G = Graph({0:[1,1,1,1,1,1,1,1,1,1,1,1,1]}, multiedges=True)\nsage: G.is_planar()\nFalse\n```\n\nSuggested fix: mirror the recent changes to genus.  That is, if `set_embedding = False`, raise `NotImplementedError`.  Otherwise, call `self.to_simple()` and check if that's planar.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9073\n\n",
+    "closed_at": "2010-06-29T16:48:23Z",
     "created_at": "2010-05-28T03:57:01Z",
     "labels": [
-        "component: algebra",
+        "component: graph theory",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -16,9 +18,11 @@ archive/issues_009073.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: @aghitza
+Assignee: jason, ncohen, rlm
 
 CC:  @rlmill
+
+This is version 4.4.2 with #8756 applied.  Previous versions without #8756 have been observed to segfault.
 
 ```
 sage: G = Graph({0:[1,1]}, multiedges=True)
@@ -42,6 +46,9 @@ sage: G = Graph({0:[1,1,1,1,1,1,1,1,1,1,1,1,1]}, multiedges=True)
 sage: G.is_planar()
 False
 ```
+
+Suggested fix: mirror the recent changes to genus.  That is, if `set_embedding = False`, raise `NotImplementedError`.  Otherwise, call `self.to_simple()` and check if that's planar.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9073
 

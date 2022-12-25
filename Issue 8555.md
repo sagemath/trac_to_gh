@@ -3,10 +3,10 @@
 archive/issues_008555.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  jakobkroeker\n\nConsider the following commands:\n\n```\nsage: x = PolynomialRing(RealField(42), 'x', 2).gens() \nsage: x[0]^2 - x[1]^2 == SR(1)\nx0^2 - x1^2 == 1\nsage: x[0]^2 - x[1]^2 == SR(0)\nFalse\n```\n\nIt seems the symbolic zero is behaving in an unexpected way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8555\n\n",
+    "body": "Assignee: @burcin\n\nCC:  jakobkroeker\n\nConsider the following commands:\n\n```\nsage: x = PolynomialRing(RealField(42), 'x', 2).gens() \nsage: x[0]^2 - x[1]^2 == SR(1)\nx0^2 - x1^2 == 1\nsage: x[0]^2 - x[1]^2 == SR(0)\nFalse\n```\n\nIt seems the symbolic zero is behaving in an unexpected way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8555\n\n",
     "created_at": "2010-03-17T20:17:19Z",
     "labels": [
-        "component: algebra",
+        "component: symbolics",
         "bug"
     ],
     "title": "Unexpected behaviour of symbolic zero.",
@@ -15,7 +15,7 @@ archive/issues_008555.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/lfousse"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  jakobkroeker
 

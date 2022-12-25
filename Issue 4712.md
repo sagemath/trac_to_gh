@@ -1,16 +1,17 @@
-# Issue 4712: Make the doctest timeouts in Sage easily adjustable
+# Issue 4712: [with patch, positive review] Make the doctest timeouts in Sage easily adjustable
 
 archive/issues_004712.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is a left over from #717. The fix here is to define some env variables that can be used to overwrite the default doctesting timeouts. Those are defined in sage-doctest right at the top:\n\n```\n# the default timeout for doctests: 6 minutes (in seconds)\nTIMEOUT      = 20\n# the timeout value for long doctests: 30 minutes (in seconds)\nTIMEOUT_LONG = 30 * 60\n# the timeout for doctests running under valgrind tools: unreasonably long\nTIMEOUT_VALGRIND = 1024*1024\n```\nCanonical names would be IMHO:\n\n```\nSAGE_TIMEOUT\nSAGE_TIMEOUT_LONG\nSAGE_TIMEOUT_VALGRIND\n```\nBonus points for running some performance counter once and then adjusting the timeout by some factor on slower machines.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4712\n\n",
+    "closed_at": "2009-06-26T17:46:55Z",
     "created_at": "2008-12-05T06:49:41Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Make the doctest timeouts in Sage easily adjustable",
+    "title": "[with patch, positive review] Make the doctest timeouts in Sage easily adjustable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4712",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

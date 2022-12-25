@@ -1,16 +1,16 @@
-# Issue 6529: adding doctests to arith.py
+# Issue 6529: [with patch, positive review] adding doctests to arith.py
 
 archive/issues_006529.json:
 ```json
 {
     "body": "Assignee: somebody\n\narith.py currently has quite a few doctests missing.  I (Marshall Hampton) am planning on bringing this up to 100% coverage soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6529\n\n",
+    "closed_at": "2009-07-18T17:05:20Z",
     "created_at": "2009-07-14T04:52:36Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "adding doctests to arith.py",
+    "title": "[with patch, positive review] adding doctests to arith.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6529",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

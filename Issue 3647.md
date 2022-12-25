@@ -1,16 +1,17 @@
-# Issue 3647: [with spkg, needs review] remove "- static-libgcc" from lcalc's CFLAGS
+# Issue 3647: [with spkg, positive review] remove "- static-libgcc" from lcalc's CFLAGS
 
 archive/issues_003647.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAt some point we added \"-static-libgcc\" to lcalc's CFLAGS. I am not so sure why we did it since the reasoning behind it is undocumented and I cannot imagine any reason why we should use it. This is causing trouble on some build platoforms, see\n\nhttps://groups.google.com/group/sage-support/browse_thread/thread/a0e26173803f11d4/92f2602b2c448b59#92f2602b2c448b59\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/lcalc-20080205.p2.spkg\n\nremoves that option.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3647\n\n",
+    "closed_at": "2008-07-16T05:12:41Z",
     "created_at": "2008-07-12T13:44:20Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with spkg, needs review] remove \"- static-libgcc\" from lcalc's CFLAGS",
+    "title": "[with spkg, positive review] remove \"- static-libgcc\" from lcalc's CFLAGS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3647",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

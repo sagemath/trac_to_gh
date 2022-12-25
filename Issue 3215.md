@@ -1,16 +1,17 @@
-# Issue 3215: optional lrs package
+# Issue 3215: [with spkg, positive review] optional lrs package
 
 archive/issues_003215.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: polyhedra, convex hull, polytope, geometry, lrs\n\nlrs (linear reverse search) is an alternate algorithm to cddlib for changing from a vertex to facet/inequality description of a polyhedron.  For some polyhedra, lrs is much faster than cddlib, and for others cddlib is better.  It is difficult to determine in advance which will be better.  Since lrs is a small and easy to compile program, I think it should be included in sage.  Eventually there should be an option in polytope code to use lrs instead of cddlib.  This ticket is only concerned with making the functionality available, not in altering the polyhedral code.\nA candidate spkg is available at: \nhttp://www.d.umn.edu/~mhampton/lrs-4.2b.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3215\n\n",
+    "body": "Assignee: somebody\n\nKeywords: polyhedra, convex hull, polytope, geometry, lrs, editor_mhansen\n\nlrs (linear reverse search) is an alternate algorithm to cddlib for changing from a vertex to facet/inequality description of a polyhedron.  For some polyhedra, lrs is much faster than cddlib, and for others cddlib is better.  It is difficult to determine in advance which will be better.  Since lrs is a small and easy to compile program, I think it should be included in sage.  Eventually there should be an option in polytope code to use lrs instead of cddlib.  This ticket is only concerned with making the functionality available, not in altering the polyhedral code.\nA candidate spkg is available at: \nhttp://www.d.umn.edu/~mhampton/lrs-4.2b.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3215\n\n",
+    "closed_at": "2008-06-25T09:19:00Z",
     "created_at": "2008-05-16T02:34:09Z",
     "labels": [
         "component: geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "optional lrs package",
+    "title": "[with spkg, positive review] optional lrs package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3215",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
@@ -18,7 +19,7 @@ archive/issues_003215.json:
 ```
 Assignee: somebody
 
-Keywords: polyhedra, convex hull, polytope, geometry, lrs
+Keywords: polyhedra, convex hull, polytope, geometry, lrs, editor_mhansen
 
 lrs (linear reverse search) is an alternate algorithm to cddlib for changing from a vertex to facet/inequality description of a polyhedron.  For some polyhedra, lrs is much faster than cddlib, and for others cddlib is better.  It is difficult to determine in advance which will be better.  Since lrs is a small and easy to compile program, I think it should be included in sage.  Eventually there should be an option in polytope code to use lrs instead of cddlib.  This ticket is only concerned with making the functionality available, not in altering the polyhedral code.
 A candidate spkg is available at: 

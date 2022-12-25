@@ -4,6 +4,7 @@ archive/issues_008827.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nI've found myself taking the height of the same points over and over again, and have been starting to wish they were cached (especially over number fields). This patch does it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8827\n\n",
+    "closed_at": "2010-05-08T21:55:03Z",
     "created_at": "2010-04-30T06:38:15Z",
     "labels": [
         "component: elliptic curves",

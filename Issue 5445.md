@@ -1,16 +1,17 @@
-# Issue 5445: [with patch, needs review] coercion is very slow when new coercions are discovered
+# Issue 5445: [with patch, positive review] coercion is very slow when new coercions are discovered
 
 archive/issues_005445.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nConsider the following timings:\n\n```\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\")\n625 loops, best of 3: 888 \u00b5s per loop\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\")\n625 loops, best of 3: 1.45 ms per loop\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\", number=5000)\n5000 loops, best of 3: 2.18 ms per loop\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\")\n125 loops, best of 3: 5.36 ms per loop\n```\n\nThe operation of adding the Integer 0 to the polynomial keeps getting slower and slower.  This is because each time, it adds to the cache of known coercions, and there's a performance bug in the cache data structure.\n\nIn particular, in coerce_dict.pyx, this code:\n\n```\n        if self.threshold and len(self) > len(self.buckets) * self.threshold:\n            self.resize()\n```\ncalls len(self), where len(self) has a slow, O(n) implementation.  So adding n items to a `TripleDict` takes O(n<sup>2</sup>) time.\n\nThe attached patch fixes this by storing the size in the `TripleDict`, instead of always recomputing it.\n\nAfter applying the patch, the timings above become:\n\n```\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\")\n625 loops, best of 3: 690 \u00b5s per loop\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\")\n625 loops, best of 3: 690 \u00b5s per loop\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\", number=5000)\n5000 loops, best of 3: 691 \u00b5s per loop\nsage: timeit(\"polygen(QQ, name='x'+str(ZZ.random_element(2^100)))+0\")\n625 loops, best of 3: 690 \u00b5s per loop\n```\n\nSo the operation is essentially constant time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5445\n\n",
+    "closed_at": "2009-03-08T05:40:06Z",
     "created_at": "2009-03-06T02:01:09Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] coercion is very slow when new coercions are discovered",
+    "title": "[with patch, positive review] coercion is very slow when new coercions are discovered",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5445",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

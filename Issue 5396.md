@@ -3,10 +3,11 @@
 archive/issues_005396.json:
 ```json
 {
-    "body": "Assignee: Rishi\n\nCC:  @craigcitro @JohnCremona bober mrubinst@math.uwaterloo.ca mvngu\n\nKeywords: lcalc\n\nI am wrapping lcalc library. It is working but still needs some work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5396\n\n",
+    "body": "Assignee: @rishikesha\n\nCC:  @craigcitro @JohnCremona bober mrubinst@math.uwaterloo.ca mvngu\n\nKeywords: lcalc\n\nWrapping lcalc library. This patch depends spkg upgrade in #4793\n\nIssue created by migration from https://trac.sagemath.org/ticket/5396\n\n",
+    "closed_at": "2010-07-22T23:49:13Z",
     "created_at": "2009-02-27T20:29:50Z",
     "labels": [
-        "component: algebra"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Wrapping lcalc library",
@@ -15,13 +16,13 @@ archive/issues_005396.json:
     "user": "https://github.com/rishikesha"
 }
 ```
-Assignee: Rishi
+Assignee: @rishikesha
 
 CC:  @craigcitro @JohnCremona bober mrubinst@math.uwaterloo.ca mvngu
 
 Keywords: lcalc
 
-I am wrapping lcalc library. It is working but still needs some work.
+Wrapping lcalc library. This patch depends spkg upgrade in #4793
 
 Issue created by migration from https://trac.sagemath.org/ticket/5396
 

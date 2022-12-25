@@ -1,9 +1,10 @@
-# Issue 6770: typos in two modules of modular form
+# Issue 6770: [with patch, positive review] typos in two modules of modular form
 
 archive/issues_006770.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe typos concern these files:\n\n```\nsage/modular/modform/ambient_g0.py\nsage/modular/modform/hecke_operator_on_qexp.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6770\n\n",
+    "closed_at": "2009-08-25T05:01:55Z",
     "created_at": "2009-08-17T07:42:25Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006770.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "typos in two modules of modular form",
+    "title": "[with patch, positive review] typos in two modules of modular form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6770",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -3,7 +3,8 @@
 archive/issues_009235.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  @nilesjohnson\n\nKeywords: doctest coverage homset\n\nThe doctest coverage for sage.categories.homset was\n\n```\nSCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)\n```\n\nMy patch covers all but two methods:\n\n* get_action_c\n* coerce_map_from_c\n\nThese two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9235\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @nilesjohnson\n\nKeywords: doctest coverage homset, days45\n\nThe doctest coverage for sage.categories.homset was\n\n```\nSCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)\n```\n\nMy patch covers all but two methods:\n\n* get_action_c\n* coerce_map_from_c\n\nThese two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?\n\n## Apply\n\n1. [attachment:9235_doctest_homset.patch]\n2. [attachment:trac_9235-doctest_homset-review-ts.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9235\n\n",
+    "closed_at": "2013-02-19T06:48:23Z",
     "created_at": "2010-06-14T09:59:42Z",
     "labels": [
         "component: categories",
@@ -21,7 +22,7 @@ Assignee: @nthiery
 
 CC:  @nilesjohnson
 
-Keywords: doctest coverage homset
+Keywords: doctest coverage homset, days45
 
 The doctest coverage for sage.categories.homset was
 
@@ -35,6 +36,11 @@ My patch covers all but two methods:
 * coerce_map_from_c
 
 These two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?
+
+## Apply
+
+1. [attachment:9235_doctest_homset.patch]
+2. [attachment:trac_9235-doctest_homset-review-ts.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9235
 

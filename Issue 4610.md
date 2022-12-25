@@ -1,9 +1,10 @@
-# Issue 4610: "sage -tp X"L Move certain long doctests to the start of the list of files to test
+# Issue 4610: [with patch, positive review] "sage -tp X": Move certain long doctests to the start of the list of files to test
 
 archive/issues_004610.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere are various doctests in Sage that take a while, chief among those is\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n\t [630.4 s]\n```\nWhen running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:\n\n```\nTotal time for all tests: 1287.6 seconds\n```\nMoving this and a couple other files to the beginning of the list to doctest in local/bin/sage-ptest would likely result in a more even utilization of the cores. This also annoys me personally since I run -tp 8 -long after each patch merged in sage.math and it would shave probably 4 minutes off the total time of each run.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4610\n\n",
+    "body": "Assignee: @garyfurnish\n\nThere are various doctests in Sage that take a while, chief among those is\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n [630.4 s]\n```\nWhen running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:\n\n```\nTotal time for all tests: 1287.6 seconds\n```\nMoving this and a couple other files to the beginning of the list to doctest in local/bin/sage-ptest would likely result in a more even utilization of the cores. This also annoys me personally since I run -tp 8 -long after each patch merged in sage.math and it would shave probably 4 minutes off the total time of each run.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4610\n\n",
+    "closed_at": "2008-12-05T06:36:21Z",
     "created_at": "2008-11-25T01:06:11Z",
     "labels": [
         "component: doctest coverage",
@@ -11,19 +12,19 @@ archive/issues_004610.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "\"sage -tp X\"L Move certain long doctests to the start of the list of files to test",
+    "title": "[with patch, positive review] \"sage -tp X\": Move certain long doctests to the start of the list of files to test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4610",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 There are various doctests in Sage that take a while, chief among those is
 
 ```
 sage -t -long devel/sage/sage/crypto/mq/sr.py
-	 [630.4 s]
+ [630.4 s]
 ```
 When running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:
 

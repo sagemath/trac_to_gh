@@ -1,9 +1,10 @@
-# Issue 9148: [with patch, needs review] Fix deprecated sha module usage in wiki2html.py
+# Issue 9148: Fix deprecated sha module usage in wiki2html.py
 
 archive/issues_009148.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe following patch replaces the deprecated sha module in sagenb/notebook/wiki2html.py to get rid of the following warning:\n\nDeprecationWarning: the sha module is deprecated; use the hashlib module instead\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9148\n\n",
+    "closed_at": "2010-10-04T01:34:36Z",
     "created_at": "2010-06-05T11:02:03Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_009148.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "[with patch, needs review] Fix deprecated sha module usage in wiki2html.py",
+    "title": "Fix deprecated sha module usage in wiki2html.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9148",
     "user": "https://trac.sagemath.org/admin/accounts/users/cschwan"

@@ -3,10 +3,11 @@
 archive/issues_008672.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  @malb @haraldschilly r.gaia.cs\n\nBased upon Harald Schilly's SPKG for SCIP, here is a patch to enable the use of this solver through the usual interface for LP.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8672\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @malb @haraldschilly r.gaia.cs\n\nBased upon Harald Schilly's SPKG for SCIP, here is a patch to enable the use of this solver through the usual interface for LP.\n\nRequires #8172 (though none of GLPK, CBC or CPLEX needs to be installed)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8672\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2010-04-11T12:32:06Z",
     "labels": [
-        "component: numerical"
+        "component: linear programming"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SCIP support",
@@ -20,6 +21,8 @@ Assignee: jason, jkantor
 CC:  @malb @haraldschilly r.gaia.cs
 
 Based upon Harald Schilly's SPKG for SCIP, here is a patch to enable the use of this solver through the usual interface for LP.
+
+Requires #8172 (though none of GLPK, CBC or CPLEX needs to be installed)
 
 Nathann
 

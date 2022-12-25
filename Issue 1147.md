@@ -1,16 +1,17 @@
-# Issue 1147: change location of valgrind output files to something less obnoxious
+# Issue 1147: [with patch, with positive review] change location of valgrind output files to something less obnoxious
 
 archive/issues_001147.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen running \n\n``` \n  sage -valgrind\n```\n\nthe output files are all over in $HOME/.sage.  They should be put in a file \n\n```\n  $HOME/.sage/valgrind\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1147\n\n",
+    "closed_at": "2008-01-25T19:23:46Z",
     "created_at": "2007-11-11T14:44:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "change location of valgrind output files to something less obnoxious",
+    "title": "[with patch, with positive review] change location of valgrind output files to something less obnoxious",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1147",
     "user": "https://github.com/williamstein"

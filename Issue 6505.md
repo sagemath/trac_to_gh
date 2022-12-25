@@ -1,16 +1,17 @@
-# Issue 6505: [with patch, needs review] Sage banner: include warning if a prerelease
+# Issue 6505: [with patch, positive review] Sage banner: include warning if a prerelease
 
 archive/issues_006505.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  drkirby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/b3e57f934ee83c79):\n\n```\nI just noticed an old thread, where a user had problems on squite, \nmaking his own version of some packages with an alpha, heta or rc \nrelease of Sage. \n\nIt would be good if alpha/beta/rc releases always showed a message that \nthey were pre-release versions for developers and not considered stable. \nIf there was some automatic way of making this happen, it would avoid \nthe risk of someone forgetting to add or delete a file. \n```\nThis patch should do this.  To fully test, make a source distribution of Sage using sage-sdist.  To partially test, in Sage, do\n\n```\nsage: sage.version.version\n'4.1.rc1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage.version.version = '4.1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\nI believe that when a Sage distribution is created, the string from `banner_text()` is printed into the file SAGE_ROOT/local/bin/sage-banner (see SAGE_ROOT/local/bin/sage-sdist).  So I think this patch will do what was requested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6505\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  drkirby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/b3e57f934ee83c79):\n\n```\nI just noticed an old thread, where a user had problems on squite, \nmaking his own version of some packages with an alpha, heta or rc \nrelease of Sage. \n\nIt would be good if alpha/beta/rc releases always showed a message that \nthey were pre-release versions for developers and not considered stable. \nIf there was some automatic way of making this happen, it would avoid \nthe risk of someone forgetting to add or delete a file. \n```\nThis patch should do this.  To fully test, make a source distribution of Sage using sage-sdist.  To partially test, in Sage, do\n\n```\nsage: sage.version.version\n'4.1.rc1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: sage.version.version = '4.1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\nI believe that when a Sage distribution is created, the string from `banner_text()` is printed into the file SAGE_ROOT/local/bin/sage-banner (see SAGE_ROOT/local/bin/sage-sdist).  So I think this patch will do what was requested.\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\n| Type notebook() for the GUI, and license() for information.        |\n| Sage Version 4.1, Release Date: 2009-07-07                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/6505\n\n",
+    "closed_at": "2009-07-27T08:11:36Z",
     "created_at": "2009-07-10T02:39:31Z",
     "labels": [
         "component: misc",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Sage banner: include warning if a prerelease",
+    "title": "[with patch, positive review] Sage banner: include warning if a prerelease",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6505",
     "user": "https://github.com/jhpalmieri"
@@ -40,12 +41,21 @@ sage: sage.version.version
 sage: print sage.misc.banner.banner_text()
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
+**********************************************************************
+*                                                                    *
+* Warning: this is a prerelease version, and it may be unstable.     *
+*                                                                    *
+**********************************************************************
 sage: sage.version.version = '4.1'
 sage: print sage.misc.banner.banner_text()
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 ```
 I believe that when a Sage distribution is created, the string from `banner_text()` is printed into the file SAGE_ROOT/local/bin/sage-banner (see SAGE_ROOT/local/bin/sage-sdist).  So I think this patch will do what was requested.
+| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |
+| Type notebook() for the GUI, and license() for information.        |
+| Sage Version 4.1, Release Date: 2009-07-07                         |
+| Type notebook() for the GUI, and license() for information.        |
 
 Issue created by migration from https://trac.sagemath.org/ticket/6505
 

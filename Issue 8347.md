@@ -1,16 +1,17 @@
-# Issue 8347: Test the positivity of the real part of a number field element
+# Issue 8347: Test the positivity of a number field element
 
 archive/issues_008347.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  sage-combinat\n\nKeywords: test, positivity, real\n\ntest if an element of a number field is positive or negative. \n\nEspecially for real element of a CyclotomicField, we need this test for theory representation of complex reflection groups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8347\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  sage-combinat\n\nKeywords: test, positivity, real\n\ntest if an element of a number field is positive real.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8347\n\n",
+    "closed_at": "2010-03-03T14:34:01Z",
     "created_at": "2010-02-24T15:40:31Z",
     "labels": [
         "component: number fields",
         "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Test the positivity of the real part of a number field element",
+    "title": "Test the positivity of a number field element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8347",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
@@ -22,9 +23,7 @@ CC:  sage-combinat
 
 Keywords: test, positivity, real
 
-test if an element of a number field is positive or negative. 
-
-Especially for real element of a CyclotomicField, we need this test for theory representation of complex reflection groups.
+test if an element of a number field is positive real.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8347
 

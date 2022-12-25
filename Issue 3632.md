@@ -1,9 +1,10 @@
-# Issue 3632: [with patch, needs review] small bug in p-adic heights
+# Issue 3632: [with patch,with positive review] small bug in p-adic heights
 
 archive/issues_003632.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve([37,0])\nsage: E.padic_regulator(5)\n```\n\ngives a Assertion Error.\n\nThe included patch corrects this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3632\n\n",
+    "closed_at": "2008-07-16T01:33:52Z",
     "created_at": "2008-07-10T13:11:05Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_003632.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch, needs review] small bug in p-adic heights",
+    "title": "[with patch,with positive review] small bug in p-adic heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3632",
     "user": "https://github.com/categorie"

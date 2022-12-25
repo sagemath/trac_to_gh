@@ -4,6 +4,7 @@ archive/issues_009139.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSmall change so that PIDs (in particular, p-adic rings) are Noetherian rather than raise NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9139\n\n",
+    "closed_at": "2010-06-06T01:17:52Z",
     "created_at": "2010-06-04T19:29:54Z",
     "labels": [
         "component: algebra",

@@ -4,6 +4,7 @@ archive/issues_003068.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n<type 'exceptions.RuntimeError'>:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3068\n\n",
+    "closed_at": "2008-12-10T11:27:53Z",
     "created_at": "2008-04-30T15:25:30Z",
     "labels": [
         "component: linear algebra",

@@ -4,6 +4,7 @@ archive/issues_001775.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI have just succeeded in creating a personal id on my sage server (as opposed to admin).\nWhen I logged in I wondered what 'search worksheets' might do so I clicked on it\nand found I had been logged out! An error message which left me logged in would be\nmuch better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1775\n\n",
+    "closed_at": "2009-01-23T12:43:32Z",
     "created_at": "2008-01-14T10:44:00Z",
     "labels": [
         "component: notebook",

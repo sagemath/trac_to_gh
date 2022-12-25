@@ -1,22 +1,23 @@
-# Issue 1652: length of DAGs with loops calculation runs infinite
+# Issue 1652: [with patch, with positive review] length of DAGs with loops calculation runs infinite
 
 archive/issues_001652.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nG4 has a loop: 2->4 and 4->2\n\n\n```\nG4 = DiGraph({1:[2,2,3,5], 2:[3,4], 3:[4], 4:[2,5,7], 5:[6]}, multiedges=True)\nG4_path.count()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\n\nThere are related issues calulating *incoming_paths* and possibly more in *sage.combinat.graph_path*!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1652\n\n",
+    "body": "Assignee: @mwhansen\n\nG4 has a loop: 2->4 and 4->2\n\n\n```\nG4 = DiGraph({1:[2,2,3,5], 2:[3,4], 3:[4], 4:[2,5,7], 5:[6]}, multiedges=True)\nG4_path.count()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\n\nThere are related issues calulating *incoming_paths* and possibly more in *sage.combinat.graph_path*!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1652\n\n",
+    "closed_at": "2008-01-21T05:50:01Z",
     "created_at": "2008-01-01T19:23:44Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "length of DAGs with loops calculation runs infinite",
+    "title": "[with patch, with positive review] length of DAGs with loops calculation runs infinite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1652",
     "user": "https://github.com/haraldschilly"
 }
 ```
-Assignee: @rlmill
+Assignee: @mwhansen
 
 G4 has a loop: 2->4 and 4->2
 

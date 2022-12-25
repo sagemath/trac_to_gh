@@ -1,15 +1,16 @@
-# Issue 220: SageX: generic power series over arbitrary ring
+# Issue 220: generic power series over arbitrary ring in Cython
 
 archive/issues_000220.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/220\n\n",
+    "closed_at": "2008-11-14T08:43:33Z",
     "created_at": "2007-01-25T19:01:19Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.4.2",
-    "title": "SageX: generic power series over arbitrary ring",
+    "title": "generic power series over arbitrary ring in Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/220",
     "user": "https://github.com/williamstein"

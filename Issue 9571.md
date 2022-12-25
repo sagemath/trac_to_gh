@@ -4,6 +4,7 @@ archive/issues_009571.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @nathanncohen @wdjoyner\n\nThe forthcoming 4.5.2.alpha0's includes #9249, which yields this docbuild warning:\n\n```\nWarning: Missing title for sage.misc.exceptions\n```\nSphinx substitutes \"MISSING TITLE.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9571\n\n",
+    "closed_at": "2010-07-23T02:32:17Z",
     "created_at": "2010-07-22T02:56:42Z",
     "labels": [
         "component: documentation",

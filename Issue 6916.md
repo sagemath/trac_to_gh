@@ -1,22 +1,23 @@
-# Issue 6916: follow-up to #6749: fix warnings when building reference manual
+# Issue 6916: [with patch, positive review] follow-up to #6749: fix warnings when building reference manual
 
 archive/issues_006916.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\nAs the subject says. This is a follow-up to ticket #6749.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6916\n\n",
+    "body": "Assignee: tba\n\nCC:  @nathanncohen\n\nAs the subject says. This is a follow-up to ticket #6749.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6916\n\n",
+    "closed_at": "2009-09-30T03:53:59Z",
     "created_at": "2009-09-10T11:59:26Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "follow-up to #6749: fix warnings when building reference manual",
+    "title": "[with patch, positive review] follow-up to #6749: fix warnings when building reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6916",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tbd
+Assignee: tba
 
 CC:  @nathanncohen
 

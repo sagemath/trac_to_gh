@@ -1,16 +1,17 @@
-# Issue 5940: graph theory -- bug in is_circular_planar
+# Issue 5940: [with patch, positive review] graph theory -- bug in is_circular_planar
 
 archive/issues_005940.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.is_circular_planar()\nTraceback...\nIndexError: list index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5940\n\n",
+    "closed_at": "2009-05-19T20:13:42Z",
     "created_at": "2009-04-29T17:03:47Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "graph theory -- bug in is_circular_planar",
+    "title": "[with patch, positive review] graph theory -- bug in is_circular_planar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5940",
     "user": "https://github.com/williamstein"

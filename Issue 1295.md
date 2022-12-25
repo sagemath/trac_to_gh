@@ -1,15 +1,16 @@
-# Issue 1295: butterfly graph
+# Issue 1295: [with patch, tested] butterfly graph
 
 archive/issues_001295.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nAdded code to make the butterfly graph:\n\n[http://mathworld.wolfram.com/ButterflyGraph.html](http://mathworld.wolfram.com/ButterflyGraph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1295\n\n",
+    "closed_at": "2007-12-01T11:19:51Z",
     "created_at": "2007-11-28T00:08:49Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "butterfly graph",
+    "title": "[with patch, tested] butterfly graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1295",
     "user": "https://github.com/jasongrout"

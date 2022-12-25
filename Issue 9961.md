@@ -3,7 +3,8 @@
 archive/issues_009961.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  ryan @kcrisman\n\nKeywords: beginner\n\nIt would be really nice if this plotted an arrow from (1,2) to (3,4):\n\n```\nsage: v=vector([1,2])\nsage: u=vector([2,2])\nsage: plot(u,start=v)\n```\n\nor maybe the option should be \"base\" or \"origin\"\n\nTo fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9962\n\n",
+    "body": "Assignee: jason, was\n\nCC:  ryan @kcrisman\n\nKeywords: beginner\n\nIt would be really nice if this plotted an arrow from (1,2) to (3,4):\n\n```\nsage: v=vector([1,2])\nsage: u=vector([2,2])\nsage: plot(u,start=v)\n```\n\nor maybe the option should be \"base\" or \"origin\"\n\nTo fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`\n\n---\n\nApply attachment:trac_9962_vector_start.2.patch and attachment:trac_9962-reviewer.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/9962\n\n",
+    "closed_at": "2011-05-31T17:07:11Z",
     "created_at": "2010-09-21T20:02:44Z",
     "labels": [
         "component: graphics"
@@ -32,6 +33,10 @@ sage: plot(u,start=v)
 or maybe the option should be "base" or "origin"
 
 To fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`
+
+---
+
+Apply attachment:trac_9962_vector_start.2.patch and attachment:trac_9962-reviewer.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/9962
 

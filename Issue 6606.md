@@ -1,16 +1,17 @@
-# Issue 6606: [with patch; needs review] Add a more efficient implementation of index for Gamma(N).
+# Issue 6606: [with patch, positive review] Add a more efficient implementation of index for Gamma(N).
 
 archive/issues_006606.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @roed314\n\nGamma(N).index used the default implementation which was slow. Attached is a new implementation which works for the specific subgroup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6606\n\n",
+    "closed_at": "2009-07-24T22:54:07Z",
     "created_at": "2009-07-23T21:13:12Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch; needs review] Add a more efficient implementation of index for Gamma(N).",
+    "title": "[with patch, positive review] Add a more efficient implementation of index for Gamma(N).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6606",
     "user": "https://trac.sagemath.org/admin/accounts/users/simon"

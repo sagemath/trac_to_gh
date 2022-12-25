@@ -3,7 +3,8 @@
 archive/issues_008647.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8647\n\n",
+    "body": "Assignee: GeorgSWeber\n\nKeywords: maxima\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8647\n\n",
+    "closed_at": "2010-04-16T17:22:26Z",
     "created_at": "2010-04-03T09:26:59Z",
     "labels": [
         "component: build",
@@ -18,6 +19,8 @@ archive/issues_008647.json:
 }
 ```
 Assignee: GeorgSWeber
+
+Keywords: maxima
 
 
 

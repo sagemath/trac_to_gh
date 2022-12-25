@@ -1,16 +1,17 @@
-# Issue 5346: Sage 3.3: schemes/elliptic_curves/ell_rational_field.py fails to doctest with optional database installed
+# Issue 5346: [with patch, positive review] Some doctests in schemes/elliptic_curves/ell_rational_field.py fail with optional database installed
 
 archive/issues_005346.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nReported by Jan Groenewald in http://groups.google.com/group/sage-devel/browse_thread/thread/d5db5c25fbce1e99\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/usr/local/src/sage-3.3/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2675:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5346\n\n",
+    "closed_at": "2009-04-24T08:27:50Z",
     "created_at": "2009-02-23T07:34:07Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Sage 3.3: schemes/elliptic_curves/ell_rational_field.py fails to doctest with optional database installed",
+    "title": "[with patch, positive review] Some doctests in schemes/elliptic_curves/ell_rational_field.py fail with optional database installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5346",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

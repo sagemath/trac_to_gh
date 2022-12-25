@@ -4,6 +4,7 @@ archive/issues_002188.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe current bit-shift operations are straight wrappers for the C bit-shift operators, which means that they are architecture-specific and mathematically very strange.  For instance, currently, on 32-bit x86 with a smallish modulus, `mod(a,n)<<s` evaluates to `mod((a<<(s%32))%2^32%n, n)`.\n\nWilliam, Robert Bradshaw, and I decided on IRC that the best we can do for bit-shift is this:\nif 0<=a<n, then mod(a,n)<<s == mod(a<<s,n); and similarly for right-shift.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2188\n\n",
+    "closed_at": "2010-01-16T08:06:21Z",
     "created_at": "2008-02-17T05:45:40Z",
     "labels": [
         "component: basic arithmetic",

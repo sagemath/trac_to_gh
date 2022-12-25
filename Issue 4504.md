@@ -1,9 +1,10 @@
-# Issue 4504: Sage's .spkg extension
+# Issue 4504: [with patches, positive review] document Sage's .spkg extension better
 
 archive/issues_004504.json:
 ```json
 {
-    "body": "Assignee: tba\n\nKeywords: .spkg extension, Sage packages\n\nAt [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/3b877b874eda9e62), it's suggested that there should be a README.txt file to briefly explain the .spkg extension of Sage packages and pointers to more info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4504\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: .spkg extension, Sage packages\n\nAt [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/3b877b874eda9e62), it's suggested that there should be a README.txt file to briefly explain the .spkg extension of Sage packages and pointers to more info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4504\n\n",
+    "closed_at": "2009-06-01T04:38:09Z",
     "created_at": "2008-11-12T22:52:44Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_004504.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Sage's .spkg extension",
+    "title": "[with patches, positive review] document Sage's .spkg extension better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4504",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tba
+Assignee: @williamstein
 
 Keywords: .spkg extension, Sage packages
 

@@ -1,16 +1,17 @@
-# Issue 4014: remove sage/plot/graph.py from Sage
+# Issue 4014: [with patch, postive review] remove sage/plot/graph.py from Sage
 
 archive/issues_004014.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is probably some of the earliest code in Sage and is not being used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4014\n\n",
+    "closed_at": "2008-08-31T04:21:17Z",
     "created_at": "2008-08-31T04:03:02Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "remove sage/plot/graph.py from Sage",
+    "title": "[with patch, postive review] remove sage/plot/graph.py from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4014",
     "user": "https://github.com/mwhansen"

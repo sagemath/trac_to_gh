@@ -1,9 +1,10 @@
-# Issue 7262: Have multiplcation_by_m() return an EllipticCurveIsogeny object
+# Issue 7262: Have multiplication_by_m() return an EllipticCurveIsogeny object
 
 archive/issues_007262.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona @williamstein @robertwb\n\nKeywords: elliptic curves, isogeny,\n\nCurrently sage returns a pair of rational functions when asked \n\n```\nE = EllipticCurve('11a1')\nE.multiplication_by_n(7)\n```\n\nI would be better if this creates a EllipticCurveIsogeny object from E to E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7262\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona @williamstein @robertwb\n\nKeywords: elliptic curves, isogeny,\n\nCurrently sage returns a pair of rational functions when asked \n\n```\nE = EllipticCurve('11a1')\nE.multiplication_by_n(7)\n```\n\nI would be better if this creates a `EllipticCurveIsogeny` object from E to E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7262\n\n",
+    "closed_at": "2010-01-23T21:27:45Z",
     "created_at": "2009-10-21T09:26:49Z",
     "labels": [
         "component: elliptic curves",
@@ -11,7 +12,7 @@ archive/issues_007262.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "Have multiplcation_by_m() return an EllipticCurveIsogeny object",
+    "title": "Have multiplication_by_m() return an EllipticCurveIsogeny object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7262",
     "user": "https://github.com/categorie"
@@ -30,7 +31,7 @@ E = EllipticCurve('11a1')
 E.multiplication_by_n(7)
 ```
 
-I would be better if this creates a EllipticCurveIsogeny object from E to E.
+I would be better if this creates a `EllipticCurveIsogeny` object from E to E.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7262
 

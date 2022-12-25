@@ -4,6 +4,7 @@ archive/issues_005892.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen Sage gives a warning about SIMD instructions way too many *experts* just delete the file as indicated and then complain about Sage blowing up. Don't give them the chance to do something stupid any more by removing the work around instructions. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5892\n\n",
+    "closed_at": "2009-06-15T23:27:48Z",
     "created_at": "2009-04-25T09:11:58Z",
     "labels": [
         "component: distribution",

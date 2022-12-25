@@ -3,7 +3,8 @@
 archive/issues_007619.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nCurrently pickling doesn't work for finite word defined by iterator and callable :\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\nThis is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nword: abcdefghijkl\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\nThis is more general solution to the problem solved in #7519.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7619\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nKeywords: words\n\nCurrently pickling doesn't work for finite word defined by iterator and callable :\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nTraceback (most recent call last):\n...\nPicklingError: Can't pickle <type 'generator'>: attribute lookup __builtin__.generator failed\n```\n\nThis is not too hard to support. One just have to expand the iterator to a list  (or a tuple?) and save the list instead:\n\n```\nsage: w = Word(iter('abcdefghijkl'))\nsage: loads(dumps(w))\nword: abcdefghijkl\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_list'>\n```\n\nThis is more general solution to the problem solved in #7519.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7619\n\n",
+    "closed_at": "2010-03-03T14:01:40Z",
     "created_at": "2009-12-08T12:45:18Z",
     "labels": [
         "component: combinatorics"
@@ -18,6 +19,8 @@ archive/issues_007619.json:
 Assignee: @seblabbe
 
 CC:  @saliola
+
+Keywords: words
 
 Currently pickling doesn't work for finite word defined by iterator and callable :
 

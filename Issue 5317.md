@@ -4,6 +4,7 @@ archive/issues_005317.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe output of deprecation warnings can vary:\n\n```\nsage -t -long devel/sage/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc3/devel/sage-main/sage/structure/sage_object.pyx\", line 682:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    Successfully unpickled 448 objects.\n    Failed to unpickle 0 objects.\n**********************************************************************\n```\nI have hit this once for literally thousands of doctest runs so far, so I don't think this will be a big problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5317\n\n",
+    "closed_at": "2014-08-20T20:32:54Z",
     "created_at": "2009-02-20T06:38:39Z",
     "labels": [
         "component: doctest coverage",

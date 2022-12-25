@@ -3,7 +3,8 @@
 archive/issues_007152.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mraum@mpim-bonn.mpg.de @malb @wjp\n\nKeywords: monomials, multivariate polynomial ring, coercion\n\nUsing implicite coercion and then calling monomials might cause a segmentation fault. This is a side effect.\n\n```\nK.<rho> = NumberField(x**2 + 1)\nR.<x,y> = QQ[]\np = rho*x\nq = x\np.monomials()\n ...\nq.monomials()\n ...\np.monomials()\n Segmentation Fault\n```\n\nGoing back to line 5 you can avoid this by\n\n```\np.parent()(p).monomials()\n ...\nq.parent()(q).monomials()\n ...\np.parent()(p).monomials()\n ...\n```\nThis might be used as a workaround.\n\nIf no implicite coercion is involved, everything works fine, i.e. use\n\n```\nR.<x,y> = K[]\n```\n\nThis is most probably related to #6160.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7152\n\n",
+    "body": "Assignee: tbd\n\nCC:  mraum@mpim-bonn.mpg.de @malb @wjp\n\nKeywords: monomials, singular\n\nUsing implicite coercion and then calling monomials might cause a segmentation fault. This is a side effect.\n\n```\nK.<rho> = NumberField(x**2 + 1)\nR.<x,y> = QQ[]\np = rho*x\nq = x\np.monomials()\n ...\nq.monomials()\n ...\np.monomials()\n Segmentation Fault\n```\n\nGoing back to line 5 you can avoid this by\n\n```\np.parent()(p).monomials()\n ...\nq.parent()(q).monomials()\n ...\np.parent()(p).monomials()\n ...\n```\nThis might be used as a workaround.\n\nIf no implicite coercion is involved, everything works fine, i.e. use\n\n```\nR.<x,y> = K[]\n```\n\nThis is most probably related to #6160.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7152\n\n",
+    "closed_at": "2010-01-18T23:06:13Z",
     "created_at": "2009-10-08T08:11:11Z",
     "labels": [
         "component: algebra",
@@ -20,7 +21,7 @@ Assignee: tbd
 
 CC:  mraum@mpim-bonn.mpg.de @malb @wjp
 
-Keywords: monomials, multivariate polynomial ring, coercion
+Keywords: monomials, singular
 
 Using implicite coercion and then calling monomials might cause a segmentation fault. This is a side effect.
 

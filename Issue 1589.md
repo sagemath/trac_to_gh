@@ -1,22 +1,23 @@
-# Issue 1589: jmol -- using via https is a pain in the butt
+# Issue 1589: [with patch] jmol -- using via https is a pain in the butt
 
 archive/issues_001589.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you try to use jmol over https, every single time\nyou display an image it displays the following dialog box:\n\n\"Client Authentication: The client is trying to ... Please select\nthe certificate:\"\n\nThen there is a list with no certificates, and a button \"Details\"\nthat when clicked does nothing.    \n\nThis is really annoying.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1589\n\n",
+    "body": "Assignee: @robertwb\n\nIf you try to use jmol over https, every single time\nyou display an image it displays the following dialog box:\n\n\"Client Authentication: The client is trying to ... Please select\nthe certificate:\"\n\nThen there is a list with no certificates, and a button \"Details\"\nthat when clicked does nothing.    \n\nThis is really annoying.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1589\n\n",
+    "closed_at": "2008-01-05T12:10:36Z",
     "created_at": "2007-12-23T06:55:33Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "jmol -- using via https is a pain in the butt",
+    "title": "[with patch] jmol -- using via https is a pain in the butt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1589",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 If you try to use jmol over https, every single time
 you display an image it displays the following dialog box:

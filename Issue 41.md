@@ -3,10 +3,11 @@
 archive/issues_000041.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n* Paisa Seeluangsawat:\n\n```\n> There are typos in the docs.  They tend to get functions'\n> optional arguments mixed up.  For an example, compare\n>\n> \n> http://modular.math.washington.edu/sage/doc/html/ref/module-sage.rings.multi-polynomial-ring.html\n>\n>     MPolynomialRing(base_ring, [n=False], [names=degrevlex],\n>   \t\t    [order=None], [macaulay2=1])\n>\n> with\n>\n>     $SAGE_ROOT/local/lib/python2.4/site-packages/sage/rings/\n>\n>     def MPolynomialRing(base_ring, n=1, names=None,\n>                         order='degrevlex', macaulay2=False):\n```\n\nThat's really weird.  Many thanks for pointing out the problem.\nThat documentation is generated from the source code, so I'll investigate\nthe script that does the generation.  Again, thanks for the bug\nreport.\n\nIssue created by migration from https://trac.sagemath.org/ticket/41\n\n",
+    "body": "Assignee: @williamstein\n\n* Paisa Seeluangsawat:\n\n```\n> There are typos in the docs.  They tend to get functions'\n> optional arguments mixed up.  For an example, compare\n>\n> \n> http://modular.math.washington.edu/sage/doc/html/ref/module-sage.rings.multi-polynomial-ring.html\n>\n>     MPolynomialRing(base_ring, [n=False], [names=degrevlex],\n>       [order=None], [macaulay2=1])\n>\n> with\n>\n>     $SAGE_ROOT/local/lib/python2.4/site-packages/sage/rings/\n>\n>     def MPolynomialRing(base_ring, n=1, names=None,\n>                         order='degrevlex', macaulay2=False):\n```\n\nThat's really weird.  Many thanks for pointing out the problem.\nThat documentation is generated from the source code, so I'll investigate\nthe script that does the generation.  Again, thanks for the bug\nreport. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/41\n\n",
+    "closed_at": "2007-01-25T20:04:41Z",
     "created_at": "2006-09-12T23:31:57Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
@@ -16,7 +17,7 @@ archive/issues_000041.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 * Paisa Seeluangsawat:
 
@@ -28,7 +29,7 @@ Assignee: somebody
 > http://modular.math.washington.edu/sage/doc/html/ref/module-sage.rings.multi-polynomial-ring.html
 >
 >     MPolynomialRing(base_ring, [n=False], [names=degrevlex],
->   		    [order=None], [macaulay2=1])
+>       [order=None], [macaulay2=1])
 >
 > with
 >
@@ -41,7 +42,8 @@ Assignee: somebody
 That's really weird.  Many thanks for pointing out the problem.
 That documentation is generated from the source code, so I'll investigate
 the script that does the generation.  Again, thanks for the bug
-report.
+report. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/41
 

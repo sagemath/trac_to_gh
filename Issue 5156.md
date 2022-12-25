@@ -1,15 +1,16 @@
-# Issue 5156: implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields
+# Issue 5156: [with patch; positive review] implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields
 
 archive/issues_005156.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5156\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch depends on: #5138 (manin constants).\n\nAlso, to work right at level 990, make sure to apply #5149. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5156\n\n",
+    "closed_at": "2009-04-09T02:09:06Z",
     "created_at": "2009-02-02T02:35:56Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields",
+    "title": "[with patch; positive review] implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5156",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,9 @@ archive/issues_005156.json:
 ```
 Assignee: @williamstein
 
+This patch depends on: #5138 (manin constants).
 
+Also, to work right at level 990, make sure to apply #5149. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5156
 

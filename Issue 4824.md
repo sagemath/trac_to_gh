@@ -4,6 +4,7 @@ archive/issues_004824.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is kind of sad, given that pari(...) is done entirely in C-level Cython compiled code in memory, and the magma(...) conversion is done using pexpect and the file system!\n\n```\nsage: a = random_matrix(ZZ,1000,x=-10,y=10)\nsage: time m = magma(a)\nCPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s\nWall time: 0.36 s\nsage: time b= pari(a)\nCPU times: user 21.51 s, sys: 0.72 s, total: 22.23 s\nWall time: 22.24 s\n```\n\nFixing this will help with some algorithms, such as Hermite form. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4824\n\n",
+    "closed_at": "2013-04-10T08:13:20Z",
     "created_at": "2008-12-18T01:25:11Z",
     "labels": [
         "component: linear algebra"

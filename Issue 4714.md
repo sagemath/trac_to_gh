@@ -1,16 +1,18 @@
-# Issue 4714: use easy/load.js when loading jsmath
+# Issue 4714: use easy/load.js when loading jsmath in the notebook
 
 archive/issues_004714.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jhpalmieri @TimDumol @williamstein\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri @TimDumol @williamstein\n\nThe patch\n\n* [attachment:trac_4714-sagenb_jsmath_init_v3.patch]\n\nconsolidates jsMath setup in `/javascript/jsmath.js`. It depends on #6673.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
+    "closed_at": "2009-12-09T01:12:41Z",
     "created_at": "2008-12-05T10:10:42Z",
     "labels": [
         "component: notebook",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "use easy/load.js when loading jsmath",
+    "title": "use easy/load.js when loading jsmath in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4714",
     "user": "https://github.com/jasongrout"
@@ -20,31 +22,11 @@ Assignee: boothby
 
 CC:  @jhpalmieri @TimDumol @williamstein
 
-From http://groups.google.com/group/sage-support/t/178d0bd277044918
+The patch
 
-```
-Yes, that looks correct.  I'm not sure why people are getting the 
-error -7 under these conditions.  It means that something has gone 
-wrong when trying to load the fallback method, and that usually means 
-it can't read the image font definition files.  There are a couple of 
-other possibilities as well:  perhaps the noImageFonts plugin was not 
-able to be read (permission issue?) or the unicode fallback file could 
-not be read.  Given your use of noImageFonts, I suspect it may be the 
-latter.  If the users who are getting error -7 are using Firefox3, 
-that may well be it.  There were changes to the same-origin security 
-policy in Firefox3 that prevent jsMath from loading local files from 
-directories other than the one in which the HTML file is found.  I 
-worked around this in jsMath v3.6 (released Sept. 2008), so those 
-users should update to the latest version of jsMath to avoid that 
-problem. 
-> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). 
+* [attachment:trac_4714-sagenb_jsmath_init_v3.patch]
 
-Probably because it didn't exist when jsMath support was added to 
-sage.  The easy/load.js file was a relatively late addition to jsMath, 
-but certainly makes things easier for people.  You might consider 
-whether you want to use that instead. 
-
-Davide
+consolidates jsMath setup in `/javascript/jsmath.js`. It depends on #6673.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4714
 

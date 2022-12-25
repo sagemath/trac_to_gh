@@ -4,6 +4,7 @@ archive/issues_005300.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt should not be necessary to do any file io at all to do #5291.  Of course, we should also just be storing diffs somehow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5300\n\n",
+    "closed_at": "2014-09-18T17:57:22Z",
     "created_at": "2009-02-18T00:49:30Z",
     "labels": [
         "component: notebook"

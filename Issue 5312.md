@@ -4,6 +4,7 @@ archive/issues_005312.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
+    "closed_at": "2013-07-23T12:21:53Z",
     "created_at": "2009-02-19T08:31:41Z",
     "labels": [
         "component: misc",

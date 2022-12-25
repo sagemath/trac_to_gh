@@ -4,9 +4,11 @@ archive/issues_009456.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  drkirkby\n\nFrom the libpng INSTALL file:\n\n```\nBefore installing libpng, you must first install zlib\n```\nSo fix the file \"deps\" accordingly.  (This issue arose when building spkg's in parallel: the build failed when it reached libpng because zlib wasn't installed yet.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9456\n\n",
+    "closed_at": "2010-07-23T00:00:37Z",
     "created_at": "2010-07-08T15:21:45Z",
     "labels": [
         "component: distribution",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",

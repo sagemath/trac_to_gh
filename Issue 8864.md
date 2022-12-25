@@ -4,9 +4,10 @@ archive/issues_008864.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nConsider:\n\n```\nsage: zeta(3)\n1.20205690315959\n```\nWe expect `zeta(3)` as answer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8864\n\n",
+    "closed_at": "2010-06-06T07:35:03Z",
     "created_at": "2010-05-03T20:58:14Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "make zeta function symbolic",

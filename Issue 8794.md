@@ -3,7 +3,8 @@
 archive/issues_008794.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8794\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nKeywords: beginner doctest documentation\n\nAs the subject says. This needs to be coordinated with #8797.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8794\n\n",
+    "closed_at": "2014-02-19T18:56:24Z",
     "created_at": "2010-04-28T06:51:34Z",
     "labels": [
         "component: documentation"
@@ -19,7 +20,9 @@ Assignee: mvngu
 
 CC:  @rwst
 
-As the subject says.
+Keywords: beginner doctest documentation
+
+As the subject says. This needs to be coordinated with #8797.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8794
 

@@ -4,6 +4,7 @@ archive/issues_005644.json:
 ```json
 {
     "body": "Assignee: boothby\n\nthis was *the* most commonly requested features during Math 480B\n\nIssue created by migration from https://trac.sagemath.org/ticket/5644\n\n",
+    "closed_at": "2010-01-19T03:04:30Z",
     "created_at": "2009-03-30T21:39:54Z",
     "labels": [
         "component: notebook",

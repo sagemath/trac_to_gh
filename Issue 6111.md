@@ -1,9 +1,10 @@
-# Issue 6111: [with patch; needs review] review symbolics in sage-4.0 (switch to pynac)
+# Issue 6111: [with patch; positive review] review symbolics in sage-4.0 (switch to pynac)
 
 archive/issues_006111.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nGet sage-4.0.rc0 from \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/dist/\n\nwhich is stable and has all the new symbolics code in it. \n\nYou can also do:\n\n./sage -upgrade http://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/\n\nNote that the code for symbolics is one big flattened patch.  The only way to referee it is is to read straight through all of devel/sage/sage/symbolics, devel/sage/sage/calculus, and also look at the diff outside of those two directories at the patch to see what else was changed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6111\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\nGet sage-4.0.rc0 from \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/dist/\n\nwhich is stable and has all the new symbolics code in it. \n\nYou can also do:\n\n./sage -upgrade http://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/\n\nNote that the code for symbolics is one big flattened patch.  The only way to referee it is is to read straight through all of devel/sage/sage/symbolics, devel/sage/sage/calculus, and also look at the diff outside of those two directories at the patch to see what else was changed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6111\n\n",
+    "closed_at": "2009-05-28T06:41:30Z",
     "created_at": "2009-05-21T09:44:00Z",
     "labels": [
         "component: calculus",
@@ -11,13 +12,13 @@ archive/issues_006111.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] review symbolics in sage-4.0 (switch to pynac)",
+    "title": "[with patch; positive review] review symbolics in sage-4.0 (switch to pynac)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6111",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @burcin
+Assignee: @mwhansen
 
 CC:  @mwhansen
 

@@ -1,15 +1,16 @@
-# Issue 7395: The enumerated set of non negative integers !
+# Issue 7395: The enumerated set of non negative integers
 
 archive/issues_007395.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Non negative integers\n\nThe following patch implement the set of non-negative integers in the category `EnumeratedSets()`. This is needed when making the unions of a family of enumerated sets such has `Permutations()` being defined as the union of `Permutations(n)` for all `n`. \n\nDepends on the category framework #5891.\n\nFlorent \n\nIssue created by migration from https://trac.sagemath.org/ticket/7395\n\n",
+    "closed_at": "2009-11-19T16:58:17Z",
     "created_at": "2009-11-05T15:28:35Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "The enumerated set of non negative integers !",
+    "title": "The enumerated set of non negative integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7395",
     "user": "https://github.com/hivert"

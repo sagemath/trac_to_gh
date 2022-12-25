@@ -1,16 +1,16 @@
-# Issue 8479: [with patch, needs review] numpy support for more basic functions
+# Issue 8479: numpy support for more basic functions
 
 archive/issues_008479.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nKeywords: numpy\n\nThe attached patch adds numpy support for the functions:\n\ncoth, sech, csch, arccoth, arcsech, arccsch, ceil, floor,\nsqrt, real_part, imag_part, sec, csc, cot, arccot, arccsc,\narcsec\n\nIssue created by migration from https://trac.sagemath.org/ticket/8479\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nKeywords: numpy\n\nThe attached patch adds numpy support for the functions:\n\ncoth, sech, csch, arccoth, arcsech, arccsch, ceil, floor,\nsqrt, real_part, imag_part, sec, csc, cot, arccot, arccsc,\narcsec, atan2\n\nIssue created by migration from https://trac.sagemath.org/ticket/8479\n\n",
+    "closed_at": "2010-05-08T22:13:14Z",
     "created_at": "2010-03-07T21:19:39Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "[with patch, needs review] numpy support for more basic functions",
+    "title": "numpy support for more basic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8479",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
@@ -26,7 +26,7 @@ The attached patch adds numpy support for the functions:
 
 coth, sech, csch, arccoth, arcsech, arccsch, ceil, floor,
 sqrt, real_part, imag_part, sec, csc, cot, arccot, arccsc,
-arcsec
+arcsec, atan2
 
 Issue created by migration from https://trac.sagemath.org/ticket/8479
 

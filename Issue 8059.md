@@ -1,25 +1,29 @@
-# Issue 8059: update Singular SPKG to newest upstream release
+# Issue 8059: Update Singular spkg to release 3-1-1-4
 
 archive/issues_008059.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  polybori drkirkby alexghitza @jaapspies @kiwifb alexanderdreyer\n\nThe Singular team accepted most of our patches upstream. They are in the 3-1-0-9 release, which also is a first step to make things easier for library developers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8059\n\n",
+    "body": "CC:  polybori drkirkby alexghitza @jaapspies @kiwifb alexanderdreyer\n\nThe Singular team accepted most of our patches upstream. They are in the 3-1-0-9 release, which also is a first step to make things easier for library developers.\n\nHow to apply the patches to [sage-4.5.3.alpha0](http://sage.math.washington.edu/home/release/sage-4.5.3.alpha0/sage-4.5.3.alpha0.tar):\n\n* Install the new Singular spkg: [http://sage.math.washington.edu/home/mpatel/trac/8059/singular-3-1-1-4.p0.spkg](http://sage.math.washington.edu/home/mpatel/trac/8059/singular-3-1-1-4.p0.spkg)\n* Apply [singular-3-1-1-4.2.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8059/singular-3-1-1-4.2.patch) to `devel/sage`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8059\n\n",
+    "closed_at": "2010-08-15T08:02:32Z",
     "created_at": "2010-01-25T19:05:12Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "update Singular SPKG to newest upstream release",
+    "title": "Update Singular spkg to release 3-1-1-4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8059",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: tbd
-
 CC:  polybori drkirkby alexghitza @jaapspies @kiwifb alexanderdreyer
 
 The Singular team accepted most of our patches upstream. They are in the 3-1-0-9 release, which also is a first step to make things easier for library developers.
+
+How to apply the patches to [sage-4.5.3.alpha0](http://sage.math.washington.edu/home/release/sage-4.5.3.alpha0/sage-4.5.3.alpha0.tar):
+
+* Install the new Singular spkg: [http://sage.math.washington.edu/home/mpatel/trac/8059/singular-3-1-1-4.p0.spkg](http://sage.math.washington.edu/home/mpatel/trac/8059/singular-3-1-1-4.p0.spkg)
+* Apply [singular-3-1-1-4.2.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8059/singular-3-1-1-4.2.patch) to `devel/sage`
 
 Issue created by migration from https://trac.sagemath.org/ticket/8059
 

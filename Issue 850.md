@@ -1,15 +1,16 @@
-# Issue 850: graphs: create graph by specifying vertices and a function giving adjacencies
+# Issue 850: [with patch] [tested by cwitty] graphs: create graph by specifying vertices and a function giving adjacencies
 
 archive/issues_000850.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nIt would be very useful to be able to create a graph by giving a list of vertices and a function which specified the adjacencies.  See the doc examples in the patch for several examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/850\n\n",
+    "closed_at": "2007-10-13T07:25:44Z",
     "created_at": "2007-10-11T15:33:15Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "graphs: create graph by specifying vertices and a function giving adjacencies",
+    "title": "[with patch] [tested by cwitty] graphs: create graph by specifying vertices and a function giving adjacencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/850",
     "user": "https://github.com/jasongrout"

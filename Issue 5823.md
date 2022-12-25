@@ -1,9 +1,10 @@
-# Issue 5823: Update clisp to 2.47 and introduce noreadline mode dynammically for clisp and maxima
+# Issue 5823: [with spkg, positive review] Update clisp to 2.47 and introduce noreadline mode dynammically for clisp and maxima
 
 archive/issues_005823.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @tornaria\n\nThis is shared credit with Gonzalo and split off from #5662. I have taken on of his patches, integrated it into an updated clisp version and changed his workaround after a clever suggestion by William. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5823\n\n",
+    "closed_at": "2009-04-20T03:48:23Z",
     "created_at": "2009-04-19T07:13:51Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005823.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Update clisp to 2.47 and introduce noreadline mode dynammically for clisp and maxima",
+    "title": "[with spkg, positive review] Update clisp to 2.47 and introduce noreadline mode dynammically for clisp and maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5823",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

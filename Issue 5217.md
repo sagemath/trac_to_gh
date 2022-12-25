@@ -1,9 +1,10 @@
-# Issue 5217: update libpng to 1.2.34
+# Issue 5217: [with spkg, positive review] update libpng to 1.2.34
 
 archive/issues_005217.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is also a security issue and we are shipping quite an outdated libpng. So update it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5217\n\n",
+    "closed_at": "2009-02-16T11:22:25Z",
     "created_at": "2009-02-09T12:25:13Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005217.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "update libpng to 1.2.34",
+    "title": "[with spkg, positive review] update libpng to 1.2.34",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5217",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

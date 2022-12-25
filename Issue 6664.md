@@ -1,9 +1,10 @@
-# Issue 6664: [with patch, needs review] Skip nested classes in docs by Sphinx v0.6.x
+# Issue 6664: [with patch, positive review] Update autodoc-skip-member for Sphinx v0.6.x
 
 archive/issues_006664.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSphinx complains about nested classes when building the reference manual.\n\nThis just tweaks #6419 so that it works with Sphinx v0.6.x's `autodoc` extension.  See [comment:#6586:10 this comment] at #6586 for more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6664\n\n",
+    "body": "Assignee: tba\n\nThis just tweaks #6419 so that it works with Sphinx v0.6.x's `autodoc` extension.  The main change is to defer to Sphinx's decision, if the object is not a nested class.\n\nSee [comment:ticket:6586:10 this comment] at #6586 for more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6664\n\n",
+    "closed_at": "2009-08-29T11:40:20Z",
     "created_at": "2009-08-02T09:39:43Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006664.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Skip nested classes in docs by Sphinx v0.6.x",
+    "title": "[with patch, positive review] Update autodoc-skip-member for Sphinx v0.6.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6664",
     "user": "https://github.com/qed777"
@@ -19,9 +20,9 @@ archive/issues_006664.json:
 ```
 Assignee: tba
 
-Sphinx complains about nested classes when building the reference manual.
+This just tweaks #6419 so that it works with Sphinx v0.6.x's `autodoc` extension.  The main change is to defer to Sphinx's decision, if the object is not a nested class.
 
-This just tweaks #6419 so that it works with Sphinx v0.6.x's `autodoc` extension.  See [comment:#6586:10 this comment] at #6586 for more.
+See [comment:ticket:6586:10 this comment] at #6586 for more.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6664
 

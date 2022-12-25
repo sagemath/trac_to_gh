@@ -1,15 +1,16 @@
-# Issue 5685: enhanced nth_root in ZZ and QQ and related utilities
+# Issue 5685: [with patch, positive review] enhanced nth_root in ZZ and QQ and related utilities
 
 archive/issues_005685.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: nth root rational integer\n\nAs discussed here: http://groups.google.co.uk/group/sage-nt/browse_thread/thread/4c6e60b6a20cabae#\n\nI do not like this inconsistency between ZZ and QQ:\n\n```\nsage: a=ZZ(8)\nsage: a.nth_root(3)\n2\nsage: b=QQ(8)\nsage: b.nth_root(3)\n2\nsage: a.nth_root(2)\n2\nsage: b.nth_root(2)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/13463/_home_masgaj_sage_egros_sage_5.py\nin <module>()\n\n/local/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/rational.so\nin sage.rings.rational.Rational.nth_root\n(sage/rings/rational.c:8888)()\n\nValueError: not a perfect nth power\n```\n\nI cannot think of a reason why we have an nth_root function on\nintegers which silently truncates a real root for positive argument\nand gives a ValueError for negative ones.\n\nThe attached ticket deals with this, and at the same time adds a couple of extra utilities which I needed for rational numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5685\n\n",
+    "closed_at": "2009-04-15T00:33:32Z",
     "created_at": "2009-04-04T20:55:32Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "enhanced nth_root in ZZ and QQ and related utilities",
+    "title": "[with patch, positive review] enhanced nth_root in ZZ and QQ and related utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5685",
     "user": "https://github.com/JohnCremona"

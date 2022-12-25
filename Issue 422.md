@@ -4,6 +4,7 @@ archive/issues_000422.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI discovered live during my SAGE demo at CECM that if the hostname is really weird,\ncomplicated, and has dashes, dots, spaces ? etc., in it, then e.g., \n\n```\n   maple('2+2')\n```\nwon't work.\n\nThe fix is to clean the hostname before using it to construct the relevant\ntemp directory in .sage/temp.  By clean, I mean replace any bad characters\nby underscores, say. \n\nIssue created by migration from https://trac.sagemath.org/ticket/422\n\n",
+    "closed_at": "2008-02-08T07:06:06Z",
     "created_at": "2007-08-10T20:24:06Z",
     "labels": [
         "component: interfaces",

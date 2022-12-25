@@ -1,16 +1,17 @@
-# Issue 4075: bug in BCHCode
+# Issue 4075: [with patch, positive review] bug in BCHCode
 
 archive/issues_004075.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis was reported by Felipe Voloch:\n\n```\nHi,\n\nI am not sure how to report bugs in Sage but I see you are involved\nwith their coding theory. I was playing around with BCH codes and\nin particular I wanted the BCH code over F_5 of length 26 and designed\ndistance 5. Sage reports this code as having dimension 25 (see below)\nbut the dimension should be 10, which Magma computes correctly (see\nbelow also).\n\nThanks \n\nFelipe\n\n---------------------SAGE---------------------------------------------\namd13:~> sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: C = BCHCode(26,5,GF(5)); C\nLinear code of length 26, dimension 25 over Finite Field of size 5\n\n\n---------------------MAGMA--------------------------------------------\nlinux182~> magma\nMagma V2.14-10    Fri Sep  5 2008 14:24:48 on linux182 [Seed = 1390124479]\nType ? for help.  Type <Ctrl>-D to quit.\n> > C:=BCHCode(GF(5),26,5); \n> > Dimension(C);\n10\n```\n\nIncidently, Guava does this correctly. The problem is that I used the wrong element to construct the generator polynomial. \n\nThis is fixed in the attached patch, based on 3.1.2.alpha4. It passes sage -testall and also adds a test in the docstring to include the example reported by Felipe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4075\n\n",
+    "closed_at": "2008-09-08T20:56:24Z",
     "created_at": "2008-09-08T11:15:56Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug in BCHCode",
+    "title": "[with patch, positive review] bug in BCHCode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4075",
     "user": "https://github.com/wdjoyner"

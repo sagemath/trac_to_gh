@@ -4,6 +4,7 @@ archive/issues_006439.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nThis doctest is silently ignored:\n\n```\nSage: 1+1\n45\n```\n\nI.e. no warning is displayed, and doctesting the file it is in produces no failures. This is because I wrote Sage: rather than sage:. I don't now if other capitalizations than \"sage\" should be accepted, but certainly they should not be silently ignored.\n\nI propose to report an error on \"Sage:\" or any other capitalization of that in any context where \"sage:\" would be interpreted as a doctest.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6439\n\n",
+    "closed_at": "2012-01-05T13:37:00Z",
     "created_at": "2009-06-28T09:45:32Z",
     "labels": [
         "component: doctest coverage",

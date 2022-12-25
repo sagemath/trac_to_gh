@@ -1,15 +1,16 @@
-# Issue 4476: [with patch, spkg; needs review] Update to Cython 0.10
+# Issue 4476: [with patch, spkg; positive review] Update to Cython 0.10
 
 archive/issues_004476.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSee http://trac.cython.org/cython_trac/query?group=component&milestone=0.10 (though this is by no means exhaustive). \n\nMost relevant for us are the optimizations, many bugfixes and the ability to use \"cimport *\" for types. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4476\n\n",
+    "closed_at": "2008-11-09T09:46:48Z",
     "created_at": "2008-11-09T06:00:17Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, spkg; needs review] Update to Cython 0.10",
+    "title": "[with patch, spkg; positive review] Update to Cython 0.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4476",
     "user": "https://github.com/robertwb"

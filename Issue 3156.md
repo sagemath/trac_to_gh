@@ -4,10 +4,10 @@ archive/issues_003156.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCurrently there is no easy way to delete a published worksheet.   You can republish an empty version, but that is it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3156\n\n",
+    "closed_at": "2009-02-16T17:29:10Z",
     "created_at": "2008-05-11T05:51:15Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "notebook -- implement way to delete a published worksheet",

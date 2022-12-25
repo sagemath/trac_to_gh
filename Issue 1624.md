@@ -1,16 +1,17 @@
-# Issue 1624: update jsmath to 3.4f
+# Issue 1624: update jsmath to 3.5
 
 archive/issues_001624.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1624\n\n",
+    "closed_at": "2008-12-05T10:03:16Z",
     "created_at": "2007-12-29T04:38:41Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update jsmath to 3.4f",
+    "title": "update jsmath to 3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1624",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

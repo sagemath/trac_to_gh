@@ -1,9 +1,10 @@
-# Issue 6661: Misleading warning message of  _expect_expr() at KeyboardInterrupt
+# Issue 6661: [with patch, positive review] Misleading warning message of  _expect_expr() at KeyboardInterrupt
 
 archive/issues_006661.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: KeyboardInterrupt\n\nWhen there is a `KeyboardInterrupt` while `_expect_expr` talks with some interface, there is *always* the warning message\n\n```\nControl-C pressed.  Interrupting R. Please wait a few seconds...\n```\nbefore the `KeyboardInterrupt` is re-raised -- regardless whether the interface is R or anything else!\n\nThe patch that I am about to post would instead print \n\n```\n\"Control-C pressed.  Interrupting %s. Please wait a few seconds...\"%self\n```\nwhere `self` is the interface.\n\nI know that all bug fixes should be doc tested. But can someone explain to me how one can produce a `KeyboardInterrupt` while `_expect_expr()` is running?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6661\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: KeyboardInterrupt\n\nWhen there is a `KeyboardInterrupt` while `_expect_expr` talks with some interface, there is *always* the warning message\n\n```\nControl-C pressed.  Interrupting R. Please wait a few seconds...\n```\nbefore the `KeyboardInterrupt` is re-raised -- regardless whether the interface is R or anything else!\n\nThe patch that I am about to post would instead print \n\n```\n\"Control-C pressed.  Interrupting %s. Please wait a few seconds...\"%self\n```\nwhere `self` is the interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6661\n\n",
+    "closed_at": "2009-08-03T01:15:12Z",
     "created_at": "2009-07-31T13:32:17Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_006661.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Misleading warning message of  _expect_expr() at KeyboardInterrupt",
+    "title": "[with patch, positive review] Misleading warning message of  _expect_expr() at KeyboardInterrupt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6661",
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: @williamstein
+Assignee: @simon-king-jena
 
 Keywords: KeyboardInterrupt
 
@@ -34,8 +35,6 @@ The patch that I am about to post would instead print
 "Control-C pressed.  Interrupting %s. Please wait a few seconds..."%self
 ```
 where `self` is the interface.
-
-I know that all bug fixes should be doc tested. But can someone explain to me how one can produce a `KeyboardInterrupt` while `_expect_expr()` is running?
 
 Issue created by migration from https://trac.sagemath.org/ticket/6661
 

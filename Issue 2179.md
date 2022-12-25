@@ -1,24 +1,26 @@
-# Issue 2179: [with patch] implementation mpoly factoring with coefficients in ZZ
+# Issue 2179: [with patch, needs work] implementation mpoly factoring with coefficients in ZZ
 
 archive/issues_002179.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nHere's a pure python implementation of an algorithm to factor polynomials over ZZ using kronecker's trick (specializing a variable to a large prime reduces you to a poly of fewer variables).  Note that this also fills in an implementation of factoring over ZZ[x,y] --- we don't have any implementation at all for this currently.  It's also faster than singular (over QQ) for some cases.\n\nHere's an example with my favorite trouble-maker for singular.\n\nthis patch:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=ZZ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.12\n(-1) * (p10^8*X2 - 1) * (p10^8*X1 - 1) * (p10^18*X1*X2 - 1) * (p10^32*X2^4 + p10^24*X2^3 + p10^16*X2^2 + p10^8*X2 + 1) * (p10^32*X1^4 + p10^24*X1^3 + p10^16*X1^2 + p10^8*X1 + 1) * (p10^72*X1^4*X2^4 + p10^54*X1^3*X2^3 + p10^36*X1^2*X2^2 + p10^18*X1*X2 + 1)\n```\n\nsingular:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=QQ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: <longer than I wanted to wait>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2179\n\n",
+    "body": "Assignee: jbmohler\n\nCC:  @ncalexan\n\nKeywords: editor_wstein\n\nHere's a pure python implementation of an algorithm to factor polynomials over ZZ using kronecker's trick (specializing a variable to a large prime reduces you to a poly of fewer variables).  Note that this also fills in an implementation of factoring over ZZ[x,y] --- we don't have any implementation at all for this currently.  It's also faster than singular (over QQ) for some cases.\n\nHere's an example with my favorite trouble-maker for singular.\n\nthis patch:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=ZZ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.12\n(-1) * (p10^8*X2 - 1) * (p10^8*X1 - 1) * (p10^18*X1*X2 - 1) * (p10^32*X2^4 + p10^24*X2^3 + p10^16*X2^2 + p10^8*X2 + 1) * (p10^32*X1^4 + p10^24*X1^3 + p10^16*X1^2 + p10^8*X1 + 1) * (p10^72*X1^4*X2^4 + p10^54*X1^3*X2^3 + p10^36*X1^2*X2^2 + p10^18*X1*X2 + 1)\n```\n\nsingular:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=QQ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: <longer than I wanted to wait>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2179\n\n",
+    "closed_at": "2015-06-19T08:38:11Z",
     "created_at": "2008-02-16T20:45:54Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch] implementation mpoly factoring with coefficients in ZZ",
+    "title": "[with patch, needs work] implementation mpoly factoring with coefficients in ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2179",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: jbmohler
 
 CC:  @ncalexan
+
+Keywords: editor_wstein
 
 Here's a pure python implementation of an algorithm to factor polynomials over ZZ using kronecker's trick (specializing a variable to a large prime reduces you to a poly of fewer variables).  Note that this also fills in an implementation of factoring over ZZ[x,y] --- we don't have any implementation at all for this currently.  It's also faster than singular (over QQ) for some cases.
 

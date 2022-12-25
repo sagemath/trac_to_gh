@@ -4,6 +4,7 @@ archive/issues_007903.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nMixing compilers (say GNU and Sun), should not be permitted. There is code in prereq which carefully checks this for C and C++ compilers, and even checks the version numbers for gcc. But for Fortran the checks are not as well done. \n\nMixing Sun Studio compilers with gfortran is detected in readline, but it should be done earlier. \n\nI'm the one to blame for this, as I've updated 'prereq' a few times. That said, it will catch a lot more errors than it used to do. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7903\n\n",
+    "closed_at": "2010-01-31T22:33:43Z",
     "created_at": "2010-01-12T06:42:07Z",
     "labels": [
         "component: build",

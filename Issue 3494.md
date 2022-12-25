@@ -4,6 +4,7 @@ archive/issues_003494.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nLots of things that are matrix-related in `sage` use `var`, whereas `name` would often be more appropriate. Someone should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3494\n\n",
+    "closed_at": "2021-11-20T23:57:15Z",
     "created_at": "2008-06-23T18:49:35Z",
     "labels": [
         "component: linear algebra"

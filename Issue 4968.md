@@ -1,4 +1,4 @@
-# Issue 4968: switch Matrix_modn_dense from ints to CPU longs
+# Issue 4968: implement fast linear algebra modulo n < 2^31
 
 archive/issues_004968.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_004968.json:
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "switch Matrix_modn_dense from ints to CPU longs",
+    "title": "implement fast linear algebra modulo n < 2^31",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4968",
     "user": "https://github.com/malb"

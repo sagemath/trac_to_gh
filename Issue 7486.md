@@ -6,8 +6,7 @@ archive/issues_007486.json:
     "body": "Assignee: @williamstein\n\nCC:  olazo\n\nSee #7482, which is about doing this in the notebook.  For the command line, see the remarks below by the author of IPython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7486\n\n",
     "created_at": "2009-11-18T09:30:43Z",
     "labels": [
-        "component: user interface",
-        "bug"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement automatic definition of undefined variables in the Sage command line (ipython)",

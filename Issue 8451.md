@@ -3,7 +3,8 @@
 archive/issues_008451.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein @robertwb @rlmill\n\nKeywords: elliptic curves, galois representation, is_surjective\n\nIn #8118, I have moved Galois representation for elliptic curves into a new file and I have modified the output of `is_surjective`. The function does no longer give a reason.\n\nI wish now to reintroduce this as a new function `image_type()` which will give back a string describing the image as a subgroup in GL_2(F_p).\n\nIn the middle of doing this, I noted the severe bug in `is_surjective`. The code does not check for exceptional images A_4, S_4, and A_5 in PGL_2(F_p). Typically currently, sage claims that the mod-5 representation of 324b1 is surjective.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8451\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein @robertwb @rlmill\n\nKeywords: elliptic curves, galois representation, is_surjective\n\nSee also: #8617\n\nIn #8118, I have moved Galois representation for elliptic curves into a new file and I have modified the output of `is_surjective`. The function does no longer give a reason.\n\nI wish now to reintroduce this as a new function `image_type()` which will give back a string describing the image as a subgroup in GL_2(F_p).\n\nIn the middle of doing this, I noted the severe bug in `is_surjective`. The code does not check for exceptional images A_4, S_4, and A_5 in PGL_2(F_p). Typically currently, sage claims that the mod-5 representation of 324b1 is surjective.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8451\n\n",
+    "closed_at": "2010-11-15T23:36:10Z",
     "created_at": "2010-03-05T23:57:00Z",
     "labels": [
         "component: elliptic curves",
@@ -22,11 +23,15 @@ CC:  @williamstein @robertwb @rlmill
 
 Keywords: elliptic curves, galois representation, is_surjective
 
+See also: #8617
+
 In #8118, I have moved Galois representation for elliptic curves into a new file and I have modified the output of `is_surjective`. The function does no longer give a reason.
 
 I wish now to reintroduce this as a new function `image_type()` which will give back a string describing the image as a subgroup in GL_2(F_p).
 
 In the middle of doing this, I noted the severe bug in `is_surjective`. The code does not check for exceptional images A_4, S_4, and A_5 in PGL_2(F_p). Typically currently, sage claims that the mod-5 representation of 324b1 is surjective.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8451
 

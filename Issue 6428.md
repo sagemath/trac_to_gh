@@ -3,10 +3,11 @@
 archive/issues_006428.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nLarge exponents overflow to negative in polydict ring:\n\nsage: from sage.rings.polynomial.multi_polynomial_ring import \\\n...       MPolynomialRing_polydict\nsage: ring = MPolynomialRing_polydict(ZZ, 3, ['a','b','c'], \"lex\")\nsage: a = ring.gens()[0]\n\nsage: a<sup>(2</sup>31-1)\na^2147483647\n\nsage: a<sup>(2</sup>31)\na^-2147483648\n\nsage: a<sup>(2</sup>32)\n1\n\nIssue created by migration from https://trac.sagemath.org/ticket/6428\n\n",
+    "body": "Assignee: tbd\n\nLarge exponents overflow to negative in polydict ring:\n\n\n```\nsage: from sage.rings.polynomial.multi_polynomial_ring import \\\n...       MPolynomialRing_polydict\nsage: ring = MPolynomialRing_polydict(ZZ, 3, ['a','b','c'], \"lex\")\nsage: a = ring.gens()[0]\n\nsage: a^(2^31-1)\na^2147483647\n\nsage: a^(2^31)\na^-2147483648\n\nsage: a^(2^32)\n1\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6428\n\n",
+    "closed_at": "2010-01-23T09:05:39Z",
     "created_at": "2009-06-26T18:26:31Z",
     "labels": [
-        "component: algebra",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
@@ -20,19 +21,24 @@ Assignee: tbd
 
 Large exponents overflow to negative in polydict ring:
 
+
+```
 sage: from sage.rings.polynomial.multi_polynomial_ring import \
 ...       MPolynomialRing_polydict
 sage: ring = MPolynomialRing_polydict(ZZ, 3, ['a','b','c'], "lex")
 sage: a = ring.gens()[0]
 
-sage: a<sup>(2</sup>31-1)
+sage: a^(2^31-1)
 a^2147483647
 
-sage: a<sup>(2</sup>31)
+sage: a^(2^31)
 a^-2147483648
 
-sage: a<sup>(2</sup>32)
+sage: a^(2^32)
 1
+
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6428
 

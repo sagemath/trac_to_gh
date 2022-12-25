@@ -3,7 +3,8 @@
 archive/issues_002273.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nRight now, thanks to #2049, we can (have Maxima) compute the exponential of a symbolic matrix:\n\n```\nsage: var('t')\nsage: A = Matrix(SR, [[t, 0], [0, t]])\nsage: A.exp()\n[e^t   0]\n[  0 e^t]\n```\n\nThis is great, but it would also be nice to have this for numerical matrices.  On a related note, the following is perplexing (to me):\n\n```\nsage: A=Matrix(RDF,[[1,-2],[2,-1]])\nsage: exp(A)\n...\n<type 'exceptions.TypeError'>: cannot coerce type '<type 'sage.matrix.matrix_real_double_dense.Matrix_real_double_dense'>' into a SymbolicExpression.\nsage: exp(1.0*A)\n...\n<type 'exceptions.TypeError'>: cannot coerce type '<type 'sage.matrix.matrix_real_double_dense.Matrix_real_double_dense'>' into a SymbolicExpression.\nsage: exp(pi/(3*sqrt(3))*A)\n[ 1 -1]\n[ 1  0]\n```\n\nYes folks, the last one works (and gives the right answer, btw).  Weird.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2273\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @jasongrout\n\nRight now, thanks to #2049, we can (have Maxima) compute the exponential of a symbolic matrix:\n\n```\nsage: var('t')\nsage: A = Matrix(SR, [[t, 0], [0, t]])\nsage: A.exp()\n[e^t   0]\n[  0 e^t]\n```\n\nThis is great, but it would also be nice to have this for numerical matrices.  On a related note, the following is perplexing (to me):\n\n```\nsage: A=Matrix(RDF,[[1,-2],[2,-1]])\nsage: exp(A)\n...\n<type 'exceptions.TypeError'>: cannot coerce type '<type 'sage.matrix.matrix_real_double_dense.Matrix_real_double_dense'>' into a SymbolicExpression.\nsage: exp(1.0*A)\n...\n<type 'exceptions.TypeError'>: cannot coerce type '<type 'sage.matrix.matrix_real_double_dense.Matrix_real_double_dense'>' into a SymbolicExpression.\nsage: exp(pi/(3*sqrt(3))*A)\n[ 1 -1]\n[ 1  0]\n```\n\nYes folks, the last one works (and gives the right answer, btw).  Weird.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2273\n\n",
+    "closed_at": "2008-12-07T04:57:28Z",
     "created_at": "2008-02-23T01:46:16Z",
     "labels": [
         "component: linear algebra",
@@ -16,7 +17,7 @@ archive/issues_002273.json:
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @jasongrout
 

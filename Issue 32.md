@@ -1,9 +1,10 @@
-# Issue 32: missing coercion functionality
+# Issue 32: missing coercion of polynomials between different bases functionality
 
 archive/issues_000032.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nR.<x,y> = PolynomialRing(QQ,2)\n    S = PolynomialRing(GF(7),2)\n  S(x)\n    Boom!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/32\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: S.<a,b> = PolynomialRing(GF(7),2)\nsage: S(x)\nTraceback (most recent call last):\n...\nTypeError\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/32\n\n",
+    "closed_at": "2007-01-19T11:09:37Z",
     "created_at": "2006-09-12T23:27:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_000032.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
-    "title": "missing coercion functionality",
+    "title": "missing coercion of polynomials between different bases functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/32",
     "user": "https://github.com/williamstein"
@@ -20,11 +21,15 @@ archive/issues_000032.json:
 Assignee: somebody
 
 ```
-R.<x,y> = PolynomialRing(QQ,2)
-    S = PolynomialRing(GF(7),2)
-  S(x)
-    Boom!
+sage: R.<x,y> = PolynomialRing(QQ,2)
+sage: S.<a,b> = PolynomialRing(GF(7),2)
+sage: S(x)
+Traceback (most recent call last):
+...
+TypeError
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/32
 

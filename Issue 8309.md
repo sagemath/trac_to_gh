@@ -4,6 +4,7 @@ archive/issues_008309.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nUses Pari's `NEXT_PRIME_VIADIFF` directly, which avoids the intermediate GEN objects. Also adds a `py_ints` option for a 5x speedup, and is much faster for ranges not starting at 0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8309\n\n",
+    "closed_at": "2010-03-03T14:46:02Z",
     "created_at": "2010-02-20T01:49:28Z",
     "labels": [
         "component: number theory",

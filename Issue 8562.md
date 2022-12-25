@@ -3,11 +3,11 @@
 archive/issues_008562.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of fields\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\nThis is required to use the cool features from #7555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of commutative rings\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\nAnd this makes the cool features from #7555 work for Z/nZ.\n\nPotential conflict with #8218 (which has higher priority)\n\nFor a later ticket, see: running design discussion on:\n\nhttp://groups.google.com/group/sage-devel/t/21e21e1ec9cd21fe\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
+    "closed_at": "2010-07-20T09:23:50Z",
     "created_at": "2010-03-19T21:48:27Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Categories for IntegerMod rings",
@@ -27,7 +27,7 @@ After this patch, IntegerModRing's inherit properly from categories:
 ```
     sage: Z3 = IntegerModRing(3)
     sage: Z3.category()
-    Category of fields
+    Category of commutative rings
     sage: TestSuite(Z3).run(verbose = True)
     running ._test_additive_associativity() . . . pass
     running ._test_an_element() . . . pass
@@ -47,7 +47,14 @@ After this patch, IntegerModRing's inherit properly from categories:
     running ._test_zero() . . . pass
 ```
 
-This is required to use the cool features from #7555.
+And this makes the cool features from #7555 work for Z/nZ.
+
+Potential conflict with #8218 (which has higher priority)
+
+For a later ticket, see: running design discussion on:
+
+http://groups.google.com/group/sage-devel/t/21e21e1ec9cd21fe
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8562
 

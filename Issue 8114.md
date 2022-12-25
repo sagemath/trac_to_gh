@@ -4,9 +4,11 @@ archive/issues_008114.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  aghitza\n\nI forgot to test my fix from #8042 on 32-bit platforms, and the fix causes doctest failures anywhere that `long` is smaller than 64 bits. I'm attaching a simple patch to fix this -- we just don't perform that test on 32-bit platforms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8114\n\n",
+    "closed_at": "2010-01-30T23:44:10Z",
     "created_at": "2010-01-28T22:28:32Z",
     "labels": [
         "component: interfaces",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",

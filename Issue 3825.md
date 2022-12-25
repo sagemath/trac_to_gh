@@ -1,16 +1,16 @@
-# Issue 3825: 2d-plots has no functionality for grid lines
+# Issue 3825: [with patch, positive review] 2d-plots has no functionality for grid lines
 
 archive/issues_003825.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nIt would be nice to be able to add grids to 2d plots in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3825\n\n",
+    "closed_at": "2008-08-15T06:51:43Z",
     "created_at": "2008-08-12T22:11:38Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "2d-plots has no functionality for grid lines",
+    "title": "[with patch, positive review] 2d-plots has no functionality for grid lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3825",
     "user": "https://github.com/saliola"

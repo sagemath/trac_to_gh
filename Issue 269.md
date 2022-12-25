@@ -1,16 +1,16 @@
-# Issue 269: add floordiv, mod, invert, pow to arithmetic architecture (at least in RingElement)
+# Issue 269: Add __mod__ to coercion model
 
 archive/issues_000269.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @videlec\n\nSo far we only have add, sub, neg, various versions of mul, and div.\n\nWe also need floordiv, mod, invert, pow.\n\nThese would be very useful in p-adics, and need to happen for other reasons too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/269\n\n",
+    "body": "Assignee: somebody\n\nCC:  @videlec\n\nAdd `__mod__` to the coercion model for `Element` and change `__mod__` to `_mod_` where applicable.\n\nWe change the behaviour of `__mod__` for integer mod rings: the following (which is mathematically meaningless) is now an error:\n\n```\n             sage: a = next_prime(2**31)\n             sage: b = Integers(a)(100)\n             sage: a % b\n             Traceback (most recent call last):\n             ...\n             ZeroDivisionError: reduction modulo 100 not defined\n```\n\nApart from this, this branch does not change any semantics of remaindering.\n\nAs proof-of-concept for refactoring more generally the arithmetic methods on `Element`, the implementation of `__mod__` is different from the usual implementation:\n1. `_mod_` will be added to `Element` and not `RingElement` or similar.\n2. The prototype is `cpdef _mod_(self, other)` with no typing for the arguments or return value.\n3. We do not implement the in-place `__imod__` which is useless anyway with coercion.\n\nMy intention is that eventually all arithmetic methods should be implemented like `__mod__`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/269\n\n",
+    "closed_at": "2016-07-27T20:24:59Z",
     "created_at": "2007-02-17T22:43:30Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
-    "title": "add floordiv, mod, invert, pow to arithmetic architecture (at least in RingElement)",
+    "title": "Add __mod__ to coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/269",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
@@ -20,11 +20,27 @@ Assignee: somebody
 
 CC:  @videlec
 
-So far we only have add, sub, neg, various versions of mul, and div.
+Add `__mod__` to the coercion model for `Element` and change `__mod__` to `_mod_` where applicable.
 
-We also need floordiv, mod, invert, pow.
+We change the behaviour of `__mod__` for integer mod rings: the following (which is mathematically meaningless) is now an error:
 
-These would be very useful in p-adics, and need to happen for other reasons too.
+```
+             sage: a = next_prime(2**31)
+             sage: b = Integers(a)(100)
+             sage: a % b
+             Traceback (most recent call last):
+             ...
+             ZeroDivisionError: reduction modulo 100 not defined
+```
+
+Apart from this, this branch does not change any semantics of remaindering.
+
+As proof-of-concept for refactoring more generally the arithmetic methods on `Element`, the implementation of `__mod__` is different from the usual implementation:
+1. `_mod_` will be added to `Element` and not `RingElement` or similar.
+2. The prototype is `cpdef _mod_(self, other)` with no typing for the arguments or return value.
+3. We do not implement the in-place `__imod__` which is useless anyway with coercion.
+
+My intention is that eventually all arithmetic methods should be implemented like `__mod__`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/269
 

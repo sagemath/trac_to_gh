@@ -1,15 +1,16 @@
-# Issue 1199: cvxopt fix [with spkg]
+# Issue 1199: [with spkg] cvxopt update to cvxopt-0.9.p1.spkg
 
 archive/issues_001199.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nMinor addition to cvxopt package so that when building with gfortran, sage/local/lib is in the library path. Also stripped out documentation to save some space. \n\ncvxopt-0.9.p1.spkg\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs\n\nThis supercedes the cvxopt versions in 1125 and 1161\n\nIssue created by migration from https://trac.sagemath.org/ticket/1199\n\n",
+    "closed_at": "2007-11-18T08:24:53Z",
     "created_at": "2007-11-18T08:03:11Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "cvxopt fix [with spkg]",
+    "title": "[with spkg] cvxopt update to cvxopt-0.9.p1.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1199",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

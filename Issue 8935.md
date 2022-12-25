@@ -4,6 +4,7 @@ archive/issues_008935.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  georgsweber @kcrisman\n\nAs the subject says. This is a follow-up to #8841. See this [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9b0ed0b58400cc18) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8935\n\n",
+    "closed_at": "2010-05-09T01:14:19Z",
     "created_at": "2010-05-09T00:47:30Z",
     "labels": [
         "component: documentation",

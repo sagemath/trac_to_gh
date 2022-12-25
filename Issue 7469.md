@@ -4,6 +4,7 @@ archive/issues_007469.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777\n\nMore tests is always good, and will be useful in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7469\n\n",
+    "closed_at": "2019-12-19T11:04:02Z",
     "created_at": "2009-11-15T07:32:36Z",
     "labels": [
         "component: notebook"

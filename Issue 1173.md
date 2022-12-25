@@ -1,15 +1,16 @@
-# Issue 1173: implement numerical evaluation of erf at complex arguments
+# Issue 1173: implement numerical evaluation of erf at complex arguments via mpmath algorithm
 
 archive/issues_001173.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @benjaminfjones\n\nWhen implemented, this would work:\n\nsage: a = sqrt(pi)*I*erf(2*I)/2\nsage: CC(a)\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1173\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @benjaminfjones\n\nKeywords: sd35.5\n\nWhen implemented, this would work:\n\n```\nsage: erf(2.0, algorithm='mpmath')\n...\n```\n\n---\n\nApply patch [attachment:trac_1173_complex_erf_v3.patch trac_1173_complex_erf_v3.patch]  attached to this ticket to the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1173\n\n",
+    "closed_at": "2013-06-19T12:16:37Z",
     "created_at": "2007-11-15T07:45:25Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "implement numerical evaluation of erf at complex arguments",
+    "title": "implement numerical evaluation of erf at complex arguments via mpmath algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1173",
     "user": "https://github.com/williamstein"
@@ -19,11 +20,18 @@ Assignee: @williamstein
 
 CC:  @benjaminfjones
 
+Keywords: sd35.5
+
 When implemented, this would work:
 
-sage: a = sqrt(pi)*I*erf(2*I)/2
-sage: CC(a)
+```
+sage: erf(2.0, algorithm='mpmath')
 ...
+```
+
+---
+
+Apply patch [attachment:trac_1173_complex_erf_v3.patch trac_1173_complex_erf_v3.patch]  attached to this ticket to the Sage library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1173
 

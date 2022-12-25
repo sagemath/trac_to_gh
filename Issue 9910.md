@@ -3,7 +3,8 @@
 archive/issues_009910.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  abmasse mvngu\n\nA friend of mine had the good idea to think about the MFAS problem one evening, and told me that the LP formulation given in GLPK's examples was able to return the optimal value of a particular problem in 8ms. It took more (I did not wait) than 2 minutes for Sage.\n\nI looked at the two formulations, and they were so clode that I still do not understand why the second one is faster. I will think about it for a while, though I can already write the corresponding patch `:-)`\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9911\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  abmasse mvngu\n\nA friend of mine had the good idea to think about the MFAS problem one evening, and told me that the LP formulation given in GLPK's examples was able to return the optimal value of a particular problem in 8ms. It took more (I did not wait) than 2 minutes for Sage.\n\nI looked at the two formulations, and they were so clode that I still do not understand why the second one is faster. I will think about it for a while, though I can already write the corresponding patch `:-)`\n\nBefore :\n\n```\nsage: %timeit digraphs.RandomDirectedGNP(10,.3).feedback_edge_set(value_only = True)\n** Killed after 5 minutes **\n```\n\nAfter :\n\n```\nsage: %timeit digraphs.RandomDirectedGNP(10,.3).feedback_edge_set(value_only = True)\n5 loops, best of 3: 21.8 ms per loop\n```\n\nRequires : #10151\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9911\n\n",
+    "closed_at": "2011-01-19T22:21:56Z",
     "created_at": "2010-09-14T20:59:42Z",
     "labels": [
         "component: graph theory"
@@ -22,6 +23,22 @@ CC:  abmasse mvngu
 A friend of mine had the good idea to think about the MFAS problem one evening, and told me that the LP formulation given in GLPK's examples was able to return the optimal value of a particular problem in 8ms. It took more (I did not wait) than 2 minutes for Sage.
 
 I looked at the two formulations, and they were so clode that I still do not understand why the second one is faster. I will think about it for a while, though I can already write the corresponding patch `:-)`
+
+Before :
+
+```
+sage: %timeit digraphs.RandomDirectedGNP(10,.3).feedback_edge_set(value_only = True)
+** Killed after 5 minutes **
+```
+
+After :
+
+```
+sage: %timeit digraphs.RandomDirectedGNP(10,.3).feedback_edge_set(value_only = True)
+5 loops, best of 3: 21.8 ms per loop
+```
+
+Requires : #10151
 
 Nathann
 

@@ -1,9 +1,10 @@
-# Issue 2802: Sage 3.0.alpha1: sage/misc/inline_fortran.py doctest failure
+# Issue 2802: [with patch, positive review] Sage 3.0.alpha1: sage/misc/inline_fortran.py doctest failure
 
 archive/issues_002802.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nI am seeing the following failure with 3.0.alpha1 on sage.math:\n\n```\nsage -t -long devel/sage/sage/misc/inline_fortran.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/inline_fortran.py\", line 28:\n    sage: test_fortran(s)           # -- requires fortran\nExpected nothing\nGot:\n    Found executable /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/bin/sage-g77_shared\n    Found executable /scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/bin/sage_fortran\n    Found executable /usr/bin/ld\n    Found executable /usr/bin/ar\n    Found executable /usr/bin/ranlib\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/inline_fortran.py\", line 31:\n    sage: fib(n,int(10))            # -- requires fortran\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[7]>\", line 1, in <module>\n        fib(n,int(Integer(10)))            # -- requires fortran###line 31:\n    sage: fib(n,int(10))            # -- requires fortran\n    NameError: name 'fib' is not defined\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha1/tmp/inline_fortran.py\", line 32:\n    sage: n                         # -- requires fortran\nExpected:\n    array([  0.,   1.,   1.,   2.,   3.,   5.,   8.,  13.,  21.,  34.])\nGot:\n    array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9.])\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2802\n\n",
+    "closed_at": "2008-04-08T17:54:58Z",
     "created_at": "2008-04-05T00:10:01Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002802.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Sage 3.0.alpha1: sage/misc/inline_fortran.py doctest failure",
+    "title": "[with patch, positive review] Sage 3.0.alpha1: sage/misc/inline_fortran.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2802",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

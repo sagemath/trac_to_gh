@@ -4,6 +4,7 @@ archive/issues_008140.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nThe doc of `words.CharacteristicSturmianWord` says :\n\n```\nINPUT:\n-  ``cf`` - an iterator outputting integers (thought of as a\n               continued fraction)\n```\n\nBut it does not do what it says. In fact the following \n\n```\nsage: cf = CFF(1/golden_ratio^2)\nsage: words.CharacteristicSturmianWord(cf)\nword: 0010001001000100010010001001000100010010...\n```\n\nshould output the same as\n\n```\nsage: words.FibonacciWord()\nword: 0100101001001010010100100101001001010010...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8140\n\n",
+    "closed_at": "2010-02-11T14:47:41Z",
     "created_at": "2010-01-31T23:52:08Z",
     "labels": [
         "component: combinatorics",

@@ -1,22 +1,23 @@
-# Issue 7461: partition_refinement.pyx
+# Issue 7461: Long doctests in partn_ref/refinement_matrices.pyx frequently timing out
 
 archive/issues_007461.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nI have witnessed this on many 32-bit linux machines:\n\n```\n[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nsage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\n[[times out after 1800 seconds]]\n\n^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!\n         [1387.2 s]\n \n```\n\nDoing the same with --verbose dosn't necessarily time out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7461\n\n",
+    "body": "Assignee: @rlmill\n\nI have witnessed this on many 32-bit linux machines:\n\n```\n[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nsage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\n[[times out after 1800 seconds]]\n\n^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!\n         [1387.2 s]\n \n```\n\nDoing the same with --verbose dosn't necessarily time out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7461\n\n",
+    "closed_at": "2009-12-01T04:51:27Z",
     "created_at": "2009-11-14T18:38:48Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "partition_refinement.pyx",
+    "title": "Long doctests in partn_ref/refinement_matrices.pyx frequently timing out",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7461",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 I have witnessed this on many 32-bit linux machines:
 

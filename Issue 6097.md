@@ -1,16 +1,16 @@
-# Issue 6097: Implements a mantra for declaring abstract methods
+# Issue 6097: [with patch, positive review] Implements a mantra for declaring abstract methods
 
 archive/issues_006097.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nThis patch implements a decorator tha can be used to declare a method\nthat should be implemented by derived classes. This declaration should\ntypically include documentation for the specification for this method.\n\nThe purpose is to enforce a consistent and visual mantra for such\ndeclarations. In the long run, this will be used for automated\nsystematic signature checks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6097\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: abstract methods\n\nThis patch implements a decorator tha can be used to declare a method\nthat should be implemented by derived classes. This declaration should\ntypically include documentation for the specification for this method.\n\nThe purpose is to enforce a consistent and visual mantra for such\ndeclarations. This is also used by #5891 for automated tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6097\n\n",
+    "closed_at": "2009-06-26T17:44:25Z",
     "created_at": "2009-05-21T01:19:28Z",
     "labels": [
-        "component: misc",
-        "minor"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Implements a mantra for declaring abstract methods",
+    "title": "[with patch, positive review] Implements a mantra for declaring abstract methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6097",
     "user": "https://github.com/nthiery"
@@ -27,8 +27,7 @@ that should be implemented by derived classes. This declaration should
 typically include documentation for the specification for this method.
 
 The purpose is to enforce a consistent and visual mantra for such
-declarations. In the long run, this will be used for automated
-systematic signature checks.
+declarations. This is also used by #5891 for automated tests.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6097
 

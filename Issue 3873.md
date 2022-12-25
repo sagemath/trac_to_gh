@@ -1,16 +1,17 @@
-# Issue 3873: Doctest should test for warnings
+# Issue 3873: [with patch, positive review] Doctest should test for warnings
 
 archive/issues_003873.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis patch makes it so that warnings are output to stdout and are compared in the doctest framework.  To doctest a warning, do something like:\n\n```\ndef mytest():\n    r\"\"\"\n    EXAMPLES:\n        sage: warnings.warn(\"hi\")\n        /...:1: UserWarning: hi\n        #...\n        \"\"\"\n    pass\n```\n\nThis patch will probably break a few doctests (that gave warnings before, but the warnings were ignored).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3873\n\n",
+    "closed_at": "2008-08-25T01:13:06Z",
     "created_at": "2008-08-15T11:05:50Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Doctest should test for warnings",
+    "title": "[with patch, positive review] Doctest should test for warnings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3873",
     "user": "https://github.com/jasongrout"

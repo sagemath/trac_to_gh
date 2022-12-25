@@ -1,16 +1,18 @@
-# Issue 2075: very serious bug in modules over QQ[x] -- they shouldn't "work" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)
+# Issue 2075: [with patch, positive review] very serious bug in modules over QQ[x] -- they shouldn't "work" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)
 
 archive/issues_002075.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nE.g., this is DEFINITELY WRONG -- it directly contradicts how things work over ZZ, and leads to major bugs in the free module code.   This must be changed ASAP.    There can be a method that returns the echelon form over the fraction field, but it must have a different name. \n\n```\nsage: R.<x> = QQ[]\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form()\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2075\n\n",
+    "closed_at": "2008-02-22T01:15:21Z",
     "created_at": "2008-02-06T09:58:01Z",
     "labels": [
         "component: linear algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "very serious bug in modules over QQ[x] -- they shouldn't \"work\" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)",
+    "title": "[with patch, positive review] very serious bug in modules over QQ[x] -- they shouldn't \"work\" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2075",
     "user": "https://github.com/williamstein"

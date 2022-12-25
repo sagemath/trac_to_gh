@@ -1,22 +1,23 @@
-# Issue 2301: Bug in sage_flattened_str_list
+# Issue 2301: [with patch, positive review] Bug in sage_structured_str_list; [with patch, needs review] Follow-up bug in riemann_roch_basis
 
 archive/issues_002301.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @williamstein\n\nKeywords: ringlist, sage_structured_str_list\n\nWhen playing around with `ringlist`, i found a bug the method `sage_structured_str_list`:\n\n```\nsage: R=singular.ring(0,'(x1,x12,x2)','dp')\nsage: RL=R.ringlist()\nsage: RL\n\n[1]:\n   0\n[2]:\n   [1]:\n      x1\n   [2]:\n      x12\n   [3]:\n      x2\n[3]:\n   [1]:\n      [1]:\n         dp\n      [2]:\n         1,1,1\n   [2]:\n      [1]:\n         C\n      [2]:\n         0\n[4]:\n   _[1]=0\nsage: RL.sage_structured_str_list()\n[[], [], [], [], [], [], [], [], [], [], [], [], ['0']]\nsage: RL.sage_flattened_str_list()\n['0', 'x1', 'x12', 'x2', 'dp', '1,1,1', 'C', '0', '_[1]=0']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: ringlist, sage_structured_str_list\n\nWhen playing around with `ringlist`, i found a bug the method `sage_structured_str_list`:\n\n```\nsage: R=singular.ring(0,'(x1,x12,x2)','dp')\nsage: RL=R.ringlist()\nsage: RL\n\n[1]:\n   0\n[2]:\n   [1]:\n      x1\n   [2]:\n      x12\n   [3]:\n      x2\n[3]:\n   [1]:\n      [1]:\n         dp\n      [2]:\n         1,1,1\n   [2]:\n      [1]:\n         C\n      [2]:\n         0\n[4]:\n   _[1]=0\nsage: RL.sage_structured_str_list()\n[[], [], [], [], [], [], [], [], [], [], [], [], ['0']]\nsage: RL.sage_flattened_str_list()\n['0', 'x1', 'x12', 'x2', 'dp', '1,1,1', 'C', '0', '_[1]=0']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2301\n\n",
+    "closed_at": "2008-02-27T21:28:53Z",
     "created_at": "2008-02-25T11:19:35Z",
     "labels": [
-        "component: commutative algebra",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Bug in sage_flattened_str_list",
+    "title": "[with patch, positive review] Bug in sage_structured_str_list; [with patch, needs review] Follow-up bug in riemann_roch_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2301",
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: @malb
+Assignee: @williamstein
 
 CC:  @williamstein
 

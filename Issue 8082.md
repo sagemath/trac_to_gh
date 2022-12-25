@@ -3,7 +3,8 @@
 archive/issues_008082.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nKeywords: plot\n\nWe have a strange behavior\n\n```\nsage: point(CC(0))  # plot a point with coordinates (0, 0)\nsage: point(CC(1))  # plot a point with coordinates (1, 0)\nsage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)\n```\n\nThis patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing\n\n```\nsage: point([CC(0), CC(1)])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8082\n\n",
+    "body": "Assignee: @videlec\n\nKeywords: plot, complex numbers\n\nWe have a strange behavior\n\n```\nsage: point(CC(0))  # plot a point with coordinates (0, 0)\nsage: point(CC(1))  # plot a point with coordinates (1, 0)\nsage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)\n```\nThe patch add a line in plot.py to correct this and get the two points (0,0) and (1,0) when doing\n\n```\nsage: point([CC(0), CC(1)])\n```\n\nsee also [#4838](http://trac.sagemath.org/sage_trac/attachment/ticket/4838/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8082\n\n",
+    "closed_at": "2010-02-11T14:57:40Z",
     "created_at": "2010-01-26T18:37:49Z",
     "labels": [
         "component: graphics"
@@ -17,7 +18,7 @@ archive/issues_008082.json:
 ```
 Assignee: @videlec
 
-Keywords: plot
+Keywords: plot, complex numbers
 
 We have a strange behavior
 
@@ -26,12 +27,13 @@ sage: point(CC(0))  # plot a point with coordinates (0, 0)
 sage: point(CC(1))  # plot a point with coordinates (1, 0)
 sage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)
 ```
-
-This patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing
+The patch add a line in plot.py to correct this and get the two points (0,0) and (1,0) when doing
 
 ```
 sage: point([CC(0), CC(1)])
 ```
+
+see also [#4838](http://trac.sagemath.org/sage_trac/attachment/ticket/4838/)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8082
 

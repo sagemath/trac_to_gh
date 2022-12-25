@@ -3,7 +3,8 @@
 archive/issues_002175.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nI wrote a Makefile for genus2reduction Debian builds, and made Debian apply it as a quilt patch (so it's available as a patch in dist/debian/patches/ of the genus2reduction spkg).  We should probably move the Makefile into the \"upstream\" eventually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2175\n\n",
+    "body": "Assignee: mabshoff\n\nI wrote a Makefile for genus2reduction Debian builds, and made Debian apply it as a quilt patch (so it's available as a patch in dist/debian/patches/ of the genus2reduction spkg).  We should probably move the Makefile into the \"upstream\" eventually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2175\n\n",
+    "closed_at": "2008-02-21T19:19:21Z",
     "created_at": "2008-02-16T01:41:19Z",
     "labels": [
         "component: debian-package",
@@ -16,7 +17,7 @@ archive/issues_002175.json:
     "user": "https://github.com/timabbott"
 }
 ```
-Assignee: @timabbott
+Assignee: mabshoff
 
 I wrote a Makefile for genus2reduction Debian builds, and made Debian apply it as a quilt patch (so it's available as a patch in dist/debian/patches/ of the genus2reduction spkg).  We should probably move the Makefile into the "upstream" eventually.
 

@@ -3,7 +3,8 @@
 archive/issues_000623.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nUpdate the Cython package to the latest. \n\nIssue created by migration from https://trac.sagemath.org/ticket/623\n\n",
+    "body": "Assignee: @robertwb\n\nUpdate the Cython package to the latest. \n\nIssue created by migration from https://trac.sagemath.org/ticket/623\n\n",
+    "closed_at": "2007-10-20T18:14:55Z",
     "created_at": "2007-09-07T19:43:40Z",
     "labels": [
         "component: packages: standard"
@@ -15,7 +16,7 @@ archive/issues_000623.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Update the Cython package to the latest. 
 

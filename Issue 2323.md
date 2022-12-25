@@ -1,16 +1,17 @@
-# Issue 2323: updated tutorial to include dsage section
+# Issue 2323: [with patch, positive review] updated tutorial to include dsage section
 
 archive/issues_002323.json:
 ```json
 {
     "body": "Assignee: tba\n\nupdated the tutorial to add a section of distributed computing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2323\n\n",
+    "closed_at": "2008-02-28T00:13:27Z",
     "created_at": "2008-02-26T18:15:52Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "updated tutorial to include dsage section",
+    "title": "[with patch, positive review] updated tutorial to include dsage section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2323",
     "user": "https://github.com/yqiang"

@@ -1,9 +1,10 @@
-# Issue 1400: QuadraticFields and ClassGroups
+# Issue 1400: [with patch, with negative review] QuadraticFields and ClassGroups
 
 archive/issues_001400.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:\n\nQF.<x>=QuadraticField(-39)\nCF=QF.class_group()\nCF(QF.ideal(1+x)).order()\n\ngives\n\nNotImplementedErrorTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/ljpk/0/code/6.py\", line 6, in <module>\n    CF(QF.ideal(Integer(1)+x)).order()\n  File \"/home/sage10/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1190, in sage.structure.element.MultiplicativeGroupElement.order\n  File \"element.pyx\", line 1130, in sage.structure.element.MonoidElement.multiplicative_order\nNotImplementedError\n\nIssue created by migration from https://trac.sagemath.org/ticket/1400\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_craigcitro\n\nSAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:\n\n```\nQF.<x>=QuadraticField(-39)\nCF=QF.class_group()\nCF(QF.ideal(1+x)).order()\n```\ngives\n\n```\nNotImplementedErrorTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/ljpk/0/code/6.py\", line 6, in <module>\n    CF(QF.ideal(Integer(1)+x)).order()\n  File \"/home/sage10/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1190, in sage.structure.element.MultiplicativeGroupElement.order\n  File \"element.pyx\", line 1130, in sage.structure.element.MonoidElement.multiplicative_order\nNotImplementedError\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1400\n\n",
+    "closed_at": "2008-08-27T07:37:49Z",
     "created_at": "2007-12-04T23:10:59Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_001400.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "QuadraticFields and ClassGroups",
+    "title": "[with patch, with negative review] QuadraticFields and ClassGroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1400",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
@@ -19,14 +20,18 @@ archive/issues_001400.json:
 ```
 Assignee: @williamstein
 
+Keywords: editor_craigcitro
+
 SAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:
 
+```
 QF.<x>=QuadraticField(-39)
 CF=QF.class_group()
 CF(QF.ideal(1+x)).order()
-
+```
 gives
 
+```
 NotImplementedErrorTraceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/home/server2/sage_notebook/worksheets/ljpk/0/code/6.py", line 6, in <module>
@@ -36,6 +41,7 @@ NotImplementedErrorTraceback (most recent call last):
   File "element.pyx", line 1190, in sage.structure.element.MultiplicativeGroupElement.order
   File "element.pyx", line 1130, in sage.structure.element.MonoidElement.multiplicative_order
 NotImplementedError
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1400
 

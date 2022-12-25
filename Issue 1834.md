@@ -1,22 +1,23 @@
-# Issue 1834: General linear group over ZZ hangs in __call__
+# Issue 1834: [with revised patch, with positive review] General linear group over ZZ hangs in __call__
 
 archive/issues_001834.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nsage: G = GL(3,GF(101))\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\n[1 0 1]\n[0 1 0]\n[0 0 1]\n\nworks fine, but\n\nsage: G = GL(3,ZZ)\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\nThis should not try to find a solution to the word problem.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1834\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  alexghitza\n\nsage: G = GL(3,GF(101))\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\n[1 0 1]\n[0 1 0]\n[0 0 1]\n\nworks fine, but\n\nsage: G = GL(3,ZZ)\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\nThis should not try to find a solution to the word problem.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1834\n\n",
+    "closed_at": "2008-09-02T11:02:34Z",
     "created_at": "2008-01-18T16:42:33Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "General linear group over ZZ hangs in __call__",
+    "title": "[with revised patch, with positive review] General linear group over ZZ hangs in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1834",
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 CC:  alexghitza
 

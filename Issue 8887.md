@@ -3,10 +3,12 @@
 archive/issues_008887.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nTitle says all\n\nIssue created by migration from https://trac.sagemath.org/ticket/8887\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: Documentation Monoids\n\nThis patch fixes a couple ReST typos in the Monoids category\n\nIssue created by migration from https://trac.sagemath.org/ticket/8887\n\n",
+    "closed_at": "2010-06-05T21:54:34Z",
     "created_at": "2010-05-05T11:28:08Z",
     "labels": [
         "component: categories",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
@@ -16,9 +18,11 @@ archive/issues_008887.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @nthiery
+Assignee: @hivert
 
-Title says all
+Keywords: Documentation Monoids
+
+This patch fixes a couple ReST typos in the Monoids category
 
 Issue created by migration from https://trac.sagemath.org/ticket/8887
 

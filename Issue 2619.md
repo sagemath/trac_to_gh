@@ -1,16 +1,17 @@
-# Issue 2619: [with patch, needs review] Gröbner bases over quotient rings
+# Issue 2619: [with patch, positive review] Gröbner bases over quotient rings
 
 archive/issues_002619.json:
 ```json
 {
     "body": "Assignee: @malb\n\nAfter the patch was applied (which depends on #2618) this should work again:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nsage: I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nsage: Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nsage: I2 = ideal([Q(f) for f in I1.gens()])\nsage: I2.groebner_basis()\n[ebar, cbar + 1, bbar + 1, abar + dbar + 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2619\n\n",
+    "closed_at": "2008-03-21T02:23:12Z",
     "created_at": "2008-03-20T21:58:52Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] Gr\u00f6bner bases over quotient rings",
+    "title": "[with patch, positive review] Gr\u00f6bner bases over quotient rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2619",
     "user": "https://github.com/malb"

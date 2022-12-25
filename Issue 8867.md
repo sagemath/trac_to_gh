@@ -3,7 +3,8 @@
 archive/issues_008867.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  evanandel @kcrisman\n\nThis patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in.  This depends on #5572 (patch \"improve_fast_callable.patch\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8867\n\n",
+    "body": "CC:  evanandel @kcrisman\n\nThis patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in.\u00a0\n\n\n---\nApply [attachment:trac-8867-riemann-fastcallable.2.patch].  Depends on  #10792 and #10821.\n\nI believe that it is no longer true that this depends on #5572 (patch \"improve_fast_callable.patch\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8867\n\n",
+    "closed_at": "2011-05-31T17:06:54Z",
     "created_at": "2010-05-04T04:55:56Z",
     "labels": [
         "component: calculus",
@@ -16,11 +17,15 @@ archive/issues_008867.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @burcin
-
 CC:  evanandel @kcrisman
 
-This patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in.  This depends on #5572 (patch "improve_fast_callable.patch")
+This patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in. 
+
+
+---
+Apply [attachment:trac-8867-riemann-fastcallable.2.patch].  Depends on  #10792 and #10821.
+
+I believe that it is no longer true that this depends on #5572 (patch "improve_fast_callable.patch")
 
 Issue created by migration from https://trac.sagemath.org/ticket/8867
 

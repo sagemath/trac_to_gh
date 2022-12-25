@@ -1,9 +1,10 @@
-# Issue 5563: [with patch, needs review] Doctest failure in devel/sage/doc/en/bordeaux_2008/modular_....rst
+# Issue 5563: [with patch, positive review] Doctest failure in devel/sage/doc/en/bordeaux_2008/modular_....rst
 
 archive/issues_005563.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nmodular_forms_and_hecke_operators.rst\ncontains a call to sloane_find() which requires internet access, leading to a failure if you don't\n\nIssue created by migration from https://trac.sagemath.org/ticket/5563\n\n",
+    "closed_at": "2009-03-23T18:39:54Z",
     "created_at": "2009-03-18T23:37:35Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005563.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Doctest failure in devel/sage/doc/en/bordeaux_2008/modular_....rst",
+    "title": "[with patch, positive review] Doctest failure in devel/sage/doc/en/bordeaux_2008/modular_....rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5563",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

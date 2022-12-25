@@ -4,6 +4,7 @@ archive/issues_006116.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: RIF(21/10).diameter()\n2.11471052309554e-16\nsage: RIF(2.1).diameter()\n0.000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6116\n\n",
+    "closed_at": "2018-08-14T17:00:51Z",
     "created_at": "2009-05-21T20:13:01Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,16 +1,17 @@
-# Issue 6694: [with patch, needs review] Live reference manual worksheets
+# Issue 6694: [with patch, positive review] Live reference manual worksheets
 
 archive/issues_006694.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nSage generates live \"docbrowser\" worksheets for the tutorial, developer's guide, and constructions guide, but not for the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6694\n\n",
+    "closed_at": "2009-09-24T09:46:32Z",
     "created_at": "2009-08-09T06:07:47Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Live reference manual worksheets",
+    "title": "[with patch, positive review] Live reference manual worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6694",
     "user": "https://github.com/qed777"

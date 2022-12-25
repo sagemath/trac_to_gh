@@ -1,22 +1,23 @@
-# Issue 4461: fricas-1.0.4 update
+# Issue 4461: fricas-1.0.5 update
 
 archive/issues_004461.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: axiom interface\n\nThe fricas project [http://groups.google.com/group/fricas-devel/t/813c8e04c3052043?hl=en](http://groups.google.com/group/fricas-devel/t/813c8e04c3052043?hl=en) has a new release (1.0.4) which includes enhancements specifically related to the Sage interface. A new version of the optional fricas package (current verson fricas-1.0.3.p0) needs to be created.\n\nThe procedure involves first building fricas on some convenient platform to generate cached lisp code. This might take about 1 - 2 hours on a fast machine.  This generated code can than be included in a new source distribution created by running\n\n  ../fricas/src/scripts/mkdist.sh --copy_lisp\n\nThe contents of the ./dist directory can be moved to the ./src directory of the spkg. The use of cached lisp allows fricas to be built in about 12 minutes or less on a the target machine.\n\nNote: There may be a problem with clisp support of FFI in Sage. A patch to allow fricas to build without FFI is attached (not yet tested with fricas-1.0.4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4461\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: axiom interface\n\nThe fricas project [http://groups.google.com/group/fricas-devel/t/813c8e04c3052043?hl=en](http://groups.google.com/group/fricas-devel/t/813c8e04c3052043?hl=en) has a new release (1.0.4) which includes enhancements specifically related to the Sage interface. A new version of the optional fricas package (current verson fricas-1.0.3.p0) needs to be created.\n\nThe procedure involves first building fricas on some convenient platform to generate cached lisp code. This might take about 1 - 2 hours on a fast machine.  This generated code can than be included in a new source distribution created by running\n\n  ../fricas/src/scripts/mkdist.sh --copy_lisp\n\nThe contents of the ./dist directory can be moved to the ./src directory of the spkg. The use of cached lisp allows fricas to be built in about 12 minutes or less on a the target machine.\n\nNote: There may be a problem with clisp support of FFI in Sage. A patch to allow fricas to build without FFI is attached (not yet tested with fricas-1.0.4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4461\n\n",
+    "closed_at": "2009-08-12T16:48:45Z",
     "created_at": "2008-11-07T16:45:58Z",
     "labels": [
-        "component: packages",
+        "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "fricas-1.0.4 update",
+    "title": "fricas-1.0.5 update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4461",
     "user": "https://trac.sagemath.org/admin/accounts/users/bpage"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Keywords: axiom interface
 

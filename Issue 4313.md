@@ -1,16 +1,17 @@
-# Issue 4313: Add some functionality to matrices in eclib
+# Issue 4313: [with new patch, positive review] Add some functionality to matrices in eclib
 
 archive/issues_004313.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: eclib CremonaModularSymbols\n\nThe attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:\n1. Adds getitem methods to the matric class so i,j entries may be extracted;\n2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of ZZ.\n\nThese were done as part of a hands-on tutorial William gave to John in Bordeaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4313\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: eclib CremonaModularSymbols\n\nThe attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:\n1. Adds getitem methods to the matric class so i,j entries may be extracted;\n2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of QQ.\n\nThese were done as part of a hands-on tutorial William gave to John in Bordeaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4313\n\n",
+    "closed_at": "2009-06-24T10:05:34Z",
     "created_at": "2008-10-17T17:11:47Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Add some functionality to matrices in eclib",
+    "title": "[with new patch, positive review] Add some functionality to matrices in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4313",
     "user": "https://github.com/JohnCremona"
@@ -24,7 +25,7 @@ Keywords: eclib CremonaModularSymbols
 
 The attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:
 1. Adds getitem methods to the matric class so i,j entries may be extracted;
-2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of ZZ.
+2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of QQ.
 
 These were done as part of a hands-on tutorial William gave to John in Bordeaux.
 

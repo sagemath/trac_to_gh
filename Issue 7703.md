@@ -1,15 +1,16 @@
-# Issue 7703: S-units, S-class groups, and selmer groups of etale algebras
+# Issue 7703: S-units, S-class groups, and selmer groups of etale algebras (and number fields)
 
 archive/issues_007703.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @craigcitro @williamstein @robertwb\n\nThis is part of the machinery necessary for the descent method described by Schaefer and Stoll.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7703\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @craigcitro @williamstein @robertwb\n\nKeywords: number fields selmer groups\n\nThis is part of the machinery necessary for the descent method described by Schaefer and Stoll.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7703\n\n",
+    "closed_at": "2010-01-18T22:14:52Z",
     "created_at": "2009-12-16T05:06:57Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "S-units, S-class groups, and selmer groups of etale algebras",
+    "title": "S-units, S-class groups, and selmer groups of etale algebras (and number fields)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7703",
     "user": "https://github.com/rlmill"
@@ -18,6 +19,8 @@ archive/issues_007703.json:
 Assignee: @williamstein
 
 CC:  @JohnCremona @craigcitro @williamstein @robertwb
+
+Keywords: number fields selmer groups
 
 This is part of the machinery necessary for the descent method described by Schaefer and Stoll.
 

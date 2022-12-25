@@ -1,9 +1,10 @@
-# Issue 2126: [with patch, needs review] small fixes to eisenstein_series_qexp()
+# Issue 2126: [with patch, with positive review] small fixes to eisenstein_series_qexp()
 
 archive/issues_002126.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe attached patch fixes a small typo and adds a small clarification to the docstring (specifying which normalization of the Eisenstein series is returned).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2126\n\n",
+    "closed_at": "2008-02-17T21:28:03Z",
     "created_at": "2008-02-09T09:41:48Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_002126.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] small fixes to eisenstein_series_qexp()",
+    "title": "[with patch, with positive review] small fixes to eisenstein_series_qexp()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2126",
     "user": "https://github.com/aghitza"

@@ -1,22 +1,25 @@
-# Issue 3371: bug in uniformiSer for p-adic rings
+# Issue 3371: [with patch, with positive review] bug in uniformiSer for p-adic rings
 
 archive/issues_003371.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\nUniformi Z er\n\n```\nsage : A = Zp(7,10)\nsage : B.<t> = A.ext(x^2+7)\nsage : B.uniformizer()\nt + O(t^21)\n```\n\nversus Uniformi S er\n\n```\nsage : B.uniformiser()\n6*t^2 + t^4 + O(t^22)\n```\n\nwhich is NOT a uniformiser.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3371\n\n",
+    "body": "Assignee: @malb\n\nKeywords: editor_craigcitro\n\n\nUniformi Z er\n\n```\nsage : A = Zp(7,10)\nsage : B.<t> = A.ext(x^2+7)\nsage : B.uniformizer()\nt + O(t^21)\n```\n\nversus Uniformi S er\n\n```\nsage : B.uniformiser()\n6*t^2 + t^4 + O(t^22)\n```\n\nwhich is NOT a uniformiser.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3371\n\n",
+    "closed_at": "2008-06-23T07:06:40Z",
     "created_at": "2008-06-05T14:01:32Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "bug in uniformiSer for p-adic rings",
+    "title": "[with patch, with positive review] bug in uniformiSer for p-adic rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3371",
     "user": "https://github.com/categorie"
 }
 ```
 Assignee: @malb
+
+Keywords: editor_craigcitro
 
 
 Uniformi Z er

@@ -4,9 +4,11 @@ archive/issues_007276.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  georgsweber @williamstein\n\nKeywords: PPC, powerpc, lattice\n\nFrom #7112: I don't think this ended up getting officially logged on trac elsewhere.\n\n```\nsage -t -long devel/sage/sage/rings/number_field/totallyreal_rel.py\n```\nwill still fail however, there is a deeper problem lurking in that one point of a certain lattice sitting in a certain rectangle is missed in the computations on a PPC platform --- but that would be another ticket. Let the doctest fail for the time being, the enhancements by the patch(es) for this ticket here are needed anyway, I guess.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7276\n\n",
+    "closed_at": "2009-11-12T06:09:44Z",
     "created_at": "2009-10-23T23:40:35Z",
     "labels": [
         "component: number fields",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",

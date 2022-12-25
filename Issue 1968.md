@@ -1,9 +1,10 @@
-# Issue 1968: notebook -- remove capability of using live tutorial for users not signed in to the notebook server
+# Issue 1968: [with patch; with positive review] notebook -- remove capability of using live tutorial for users not signed in to the notebook server
 
 archive/issues_001968.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTimothy Clemans points out to me in chat a *major* security issue with the notebook.  If a user visits the live tutorial, e.g., \n\n    https://your_computer:port/doc/live/tut/node5.html\n\nthen they can execute code even if they aren't logged in!\n\nThis is a major security hole if somebody is running their own notebook server.\n\nSolution: by changing about 2 lines in server/notebook/twist.py, one can change it\nso the entire live tutorial is inaccessible accept to users that are logged in.  This should be done. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1968\n\n",
+    "closed_at": "2008-02-01T05:17:18Z",
     "created_at": "2008-01-29T10:20:17Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_001968.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "notebook -- remove capability of using live tutorial for users not signed in to the notebook server",
+    "title": "[with patch; with positive review] notebook -- remove capability of using live tutorial for users not signed in to the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1968",
     "user": "https://github.com/williamstein"

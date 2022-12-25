@@ -1,16 +1,17 @@
-# Issue 6059: speed regresion in hilbert_symbol after #5834
+# Issue 6059: [with patch; with positive review] speed regresion in hilbert_symbol after #5834
 
 archive/issues_006059.json:
 ```json
 {
     "body": "Assignee: @tornaria\n\nCC:  @JohnCremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
+    "closed_at": "2009-05-18T15:54:15Z",
     "created_at": "2009-05-17T22:54:54Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "speed regresion in hilbert_symbol after #5834",
+    "title": "[with patch; with positive review] speed regresion in hilbert_symbol after #5834",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6059",
     "user": "https://github.com/tornaria"

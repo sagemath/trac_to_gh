@@ -1,15 +1,16 @@
-# Issue 7110: [with patch, needs review] SageNB -- Port #4046, #6459, #6694, #6865, #6939
+# Issue 7110: [with patch, needs review] SageNB -- Port #4046, #5447, #6459, #6694, #6865, #6939
 
 archive/issues_007110.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein @jasongrout mhampton @kcrisman mvngu\n\nKeywords: sagenb notebook\n\nPrimary authors and reviewers are at listed at\n\n* #4046\n* #6459\n* #6694\n* #6865\n* #6939\n\nSee #6983 for instructions on getting sagenb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7110\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein @jasongrout mhampton @kcrisman mvngu\n\nKeywords: sagenb notebook\n\nPrimary authors and reviewers are at listed at\n\n* #4046\n* #5447 - See the comment below for this one.\n* #6459\n* #6694\n* #6865\n* #6939\n\nSee #6983 for instructions on getting sagenb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7110\n\n",
+    "closed_at": "2009-10-11T19:27:44Z",
     "created_at": "2009-10-04T13:52:04Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] SageNB -- Port #4046, #6459, #6694, #6865, #6939",
+    "title": "[with patch, needs review] SageNB -- Port #4046, #5447, #6459, #6694, #6865, #6939",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7110",
     "user": "https://github.com/qed777"
@@ -24,6 +25,7 @@ Keywords: sagenb notebook
 Primary authors and reviewers are at listed at
 
 * #4046
+* #5447 - See the comment below for this one.
 * #6459
 * #6694
 * #6865

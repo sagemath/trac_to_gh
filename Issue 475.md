@@ -3,7 +3,7 @@
 archive/issues_000475.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPackages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS=\"-g\", no optimizations,  --without-pymalloc in Python (for valgrind)\n\nIssue created by migration from https://trac.sagemath.org/ticket/475\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: package audit\n\nPackages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS=\"-g\", no optimizations,  --without-pymalloc in Python (for valgrind)\n\nIssue created by migration from https://trac.sagemath.org/ticket/475\n\n",
     "created_at": "2007-08-21T14:10:23Z",
     "labels": [
         "component: packages: standard",
@@ -17,6 +17,8 @@ archive/issues_000475.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: package audit
 
 Packages should check for a flag (i.e. SAGE_DEBUG) on build. If this is set, options suitable for debugging should be used. i.e. CFLAGS="-g", no optimizations,  --without-pymalloc in Python (for valgrind)
 

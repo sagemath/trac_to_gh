@@ -1,23 +1,24 @@
-# Issue 1377: [with patch] technically incorrect code in integer_mod.pyx
+# Issue 1377: [with patch, with positive review] technically incorrect code in integer_mod.pyx
 
 archive/issues_001377.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is code in integer_mod.pyx that coerces a Python int into an int_fast32_t.  This is wrong, since a Python int can hold a C long; so this might truncate if sizeof(int_fast32_t) < sizeof(long).\n\nHowever, the bug has little or no practical effect, since:\n1) on 64-bit x86 Linux, sizeof(int_fast32_t) == sizeof(long);\n2) the problem only occurs if you call `IntegerMod_int` directly (which nobody should); it looks like all the wrappers do the modulo before they create the `IntegerMod_int`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1377\n\n",
+    "body": "Assignee: somebody\n\nThere is code in integer_mod.pyx that coerces a Python int into an int_fast32_t.  This is wrong, since a Python int can hold a C long; so this might truncate if sizeof(int_fast32_t) < sizeof(long).\n\nHowever, the bug has little or no practical effect, since:\n1) on 64-bit x86 Linux, sizeof(int_fast32_t) == sizeof(long);\n2) the problem only occurs if you call `IntegerMod_int` directly (which nobody should); it looks like all the wrappers do the modulo before they create the `IntegerMod_int`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1377\n\n",
+    "closed_at": "2007-12-06T02:15:10Z",
     "created_at": "2007-12-03T00:02:29Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with patch] technically incorrect code in integer_mod.pyx",
+    "title": "[with patch, with positive review] technically incorrect code in integer_mod.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1377",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 There is code in integer_mod.pyx that coerces a Python int into an int_fast32_t.  This is wrong, since a Python int can hold a C long; so this might truncate if sizeof(int_fast32_t) < sizeof(long).
 

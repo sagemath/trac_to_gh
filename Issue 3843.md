@@ -1,16 +1,17 @@
-# Issue 3843: typo in graphs: "edge_labels -- whether to print edgeedge labels. By default, False,                 but"
+# Issue 3843: [with patch, positive review] nice tree plotting - improve graph plotting docs
 
 archive/issues_003843.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nNotice the edgeedge.\n\nAlso a complaint - I tried for 15 minutes and couldn't figure out how to label the edges!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3843\n\n",
+    "body": "Assignee: @rlmill\n\n: \"edge_labels -- whether to print edgeedge labels. By default, False,                 but\"\n\nNotice the edgeedge.\n\nwas: Also a complaint - I tried for 15 minutes and couldn't figure out how to label the edges!\n\nAnyway, the docs need a few extra examples, so I'll post a patch soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3843\n\n",
+    "closed_at": "2008-08-30T22:16:47Z",
     "created_at": "2008-08-13T21:41:36Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "typo in graphs: \"edge_labels -- whether to print edgeedge labels. By default, False,                 but\"",
+    "title": "[with patch, positive review] nice tree plotting - improve graph plotting docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3843",
     "user": "https://github.com/williamstein"
@@ -18,9 +19,13 @@ archive/issues_003843.json:
 ```
 Assignee: @rlmill
 
+: "edge_labels -- whether to print edgeedge labels. By default, False,                 but"
+
 Notice the edgeedge.
 
-Also a complaint - I tried for 15 minutes and couldn't figure out how to label the edges!
+was: Also a complaint - I tried for 15 minutes and couldn't figure out how to label the edges!
+
+Anyway, the docs need a few extra examples, so I'll post a patch soon.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3843
 

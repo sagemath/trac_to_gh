@@ -4,10 +4,10 @@ archive/issues_008238.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @williamstein\n\nResult of a recent conversation with William Stein.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8238\n\n",
+    "closed_at": "2010-06-07T05:24:25Z",
     "created_at": "2010-02-11T19:10:09Z",
     "labels": [
-        "component: elliptic curves",
-        "bug"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "heegner_index_bound may be incorrect for curves with rational torsion",

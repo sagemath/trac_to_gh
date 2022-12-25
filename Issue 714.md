@@ -4,6 +4,7 @@ archive/issues_000714.json:
 ```json
 {
     "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/714\n\n",
+    "closed_at": "2007-09-20T19:05:52Z",
     "created_at": "2007-09-20T18:36:19Z",
     "labels": [
         "component: interfaces",

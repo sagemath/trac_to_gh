@@ -4,6 +4,7 @@ archive/issues_000627.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\npari needs a single line patch to build properly on 32 bit PPC Linux so that the linker doesn't throw a fit. Aside from trivial DSage that makes all doctests pass on that platform and elevates it to a fully supported platform.\n\nThe obvious next step is to get Sage to also build in 64 bit mode.\n\nA patch will be attached to this ticket in the next 12 hours.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/627\n\n",
+    "closed_at": "2007-09-09T14:27:54Z",
     "created_at": "2007-09-09T05:39:28Z",
     "labels": [
         "component: packages: standard",

@@ -1,16 +1,17 @@
-# Issue 5466: [with patch, needs review] Make symbolic variables unpickle uniquely
+# Issue 5466: [with patch, positive review] Make symbolic variables unpickle uniquely
 
 archive/issues_005466.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5466\n\n",
+    "closed_at": "2009-03-10T20:45:30Z",
     "created_at": "2009-03-10T09:35:39Z",
     "labels": [
         "component: calculus",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] Make symbolic variables unpickle uniquely",
+    "title": "[with patch, positive review] Make symbolic variables unpickle uniquely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5466",
     "user": "https://github.com/mwhansen"

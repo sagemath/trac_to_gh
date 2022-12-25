@@ -4,6 +4,7 @@ archive/issues_008208.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @williamstein\n\nFollow-up to #7786.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8208\n\n",
+    "closed_at": "2010-02-10T18:31:12Z",
     "created_at": "2010-02-07T16:20:18Z",
     "labels": [
         "component: notebook",

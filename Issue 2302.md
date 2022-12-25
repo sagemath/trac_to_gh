@@ -4,6 +4,7 @@ archive/issues_002302.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUbunti 6.06 would be the perfect target in this case.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2302\n\n",
+    "closed_at": "2008-04-25T03:33:13Z",
     "created_at": "2008-02-25T21:19:41Z",
     "labels": [
         "component: distribution",

@@ -1,45 +1,27 @@
-# Issue 8373: finite fields constructed with non-primitive defining polynomial
+# Issue 8373: Construct finite fields with primitive defining polynomial
 
 archive/issues_008373.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @pjbruin\n\nConsider the following code:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: K.<a> = GF(16, modulus=x^4+x^3+x^2+x+1)\nsage: a^5\n1\n```\n\nThis is all fine mathematically, as long as the user is clear what a is and isn't (it isn't a generator for the multiplicative group of the finite field). So the options as I see them (in increasing difficulty for implementation):\n\n1)GF already checks modulus for irreducibility, just add check for modulus.is_primitive().\n\n2)Rewrite the help for the GF function to indicate that the function does not return a generator necessarily (like in this specific case).\n\n3)Find an actual generator (that might not be the polynomial x) and return that.\n\n\nOpinions?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8373\n\n",
+    "body": "Assignee: @ClementPernet\n\nCC:  @pjbruin\n\nAdd an argument `modulus=\"primitive\"` to the finite field generator `GF()` such that the chosen generator is guaranteed to be a generator of the multiplicative group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8373\n\n",
+    "closed_at": "2014-09-08T08:48:58Z",
     "created_at": "2010-02-26T06:47:28Z",
     "labels": [
-        "component: basic arithmetic",
-        "minor",
-        "bug"
+        "component: finite rings",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "finite fields constructed with non-primitive defining polynomial",
+    "title": "Construct finite fields with primitive defining polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8373",
     "user": "https://trac.sagemath.org/admin/accounts/users/rkirov"
 }
 ```
-Assignee: @aghitza
+Assignee: @ClementPernet
 
 CC:  @pjbruin
 
-Consider the following code:
-
-```
-sage: R.<x> = PolynomialRing(GF(2))
-sage: K.<a> = GF(16, modulus=x^4+x^3+x^2+x+1)
-sage: a^5
-1
-```
-
-This is all fine mathematically, as long as the user is clear what a is and isn't (it isn't a generator for the multiplicative group of the finite field). So the options as I see them (in increasing difficulty for implementation):
-
-1)GF already checks modulus for irreducibility, just add check for modulus.is_primitive().
-
-2)Rewrite the help for the GF function to indicate that the function does not return a generator necessarily (like in this specific case).
-
-3)Find an actual generator (that might not be the polynomial x) and return that.
-
-
-Opinions?
+Add an argument `modulus="primitive"` to the finite field generator `GF()` such that the chosen generator is guaranteed to be a generator of the multiplicative group.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8373
 

@@ -1,15 +1,16 @@
-# Issue 7157: [with patch, needs review] neighbors_out/in instead of predecessor/successor in DiGraph
+# Issue 7157: neighbors_out/in instead of predecessor/successor in DiGraph
 
 archive/issues_007157.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @rlmill @nthiery\n\nAs the title says, and following the discussion on Sage-devel :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bfeb9b1828a04350/10681dbb1f189b2f\n\nIssue created by migration from https://trac.sagemath.org/ticket/7157\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @rlmill @nthiery\n\nThis patch replaces the names successors/iterators by neighbors_in and neighbors_out.\n\nTHIS PATCH DEPENDS ON #7515 !!!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7157\n\n",
+    "closed_at": "2009-12-01T04:37:12Z",
     "created_at": "2009-10-08T16:31:05Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] neighbors_out/in instead of predecessor/successor in DiGraph",
+    "title": "neighbors_out/in instead of predecessor/successor in DiGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7157",
     "user": "https://github.com/nathanncohen"
@@ -19,8 +20,9 @@ Assignee: @rlmill
 
 CC:  @jasongrout @rlmill @nthiery
 
-As the title says, and following the discussion on Sage-devel :
-http://groups.google.com/group/sage-devel/browse_thread/thread/bfeb9b1828a04350/10681dbb1f189b2f
+This patch replaces the names successors/iterators by neighbors_in and neighbors_out.
+
+THIS PATCH DEPENDS ON #7515 !!!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7157
 

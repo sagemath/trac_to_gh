@@ -1,23 +1,24 @@
-# Issue 5253: Make a jacobian function which computes the jacobian matrix
+# Issue 5253: [with patch, positive review] Make a jacobian function which computes the jacobian matrix
 
 archive/issues_005253.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nAttached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from R^n to R^m.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5253\n\n",
+    "body": "Assignee: @jasongrout\n\nAttached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from `R^n` to `R^m`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5253\n\n",
+    "closed_at": "2009-02-14T09:03:39Z",
     "created_at": "2009-02-13T05:08:19Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Make a jacobian function which computes the jacobian matrix",
+    "title": "[with patch, positive review] Make a jacobian function which computes the jacobian matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5253",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @burcin
+Assignee: @jasongrout
 
-Attached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from R^n to R^m.
+Attached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from `R^n` to `R^m`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5253
 

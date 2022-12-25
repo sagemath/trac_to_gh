@@ -4,6 +4,7 @@ archive/issues_002694.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nHecke algebra basis is not implemented.\nhere is how one can reproduce it:\n\n```\nsage: M=ModularSymbols(431,2,1)\nsage: C=M.cuspidal_submodule()\nsage: TT=C.hecke_algebra()\nsage: TT.basis()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/syazdani/sage-2.11.alpha1/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py in basis(self)\n    145\n    146     def basis(self):\n--> 147         raise NotImplementedError\n    148\n    149     def discriminant(self):\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2694\n\n",
+    "closed_at": "2013-02-17T20:08:12Z",
     "created_at": "2008-03-28T05:02:07Z",
     "labels": [
         "component: modular forms",

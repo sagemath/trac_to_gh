@@ -1,22 +1,23 @@
-# Issue 2915: bug in symbolic integration or "stupid bug in the sage/maxima interface"?
+# Issue 2915: [with patch, positive review] bug in symbolic integration or "stupid bug in the sage/maxima interface"?
 
 archive/issues_002915.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI tried the first integral inthe Axiom book in Sage and get a big boom!\n\n```\nsage: var('a,b')\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\nTraceback (most recent call last):\n...\nTypeError: \nIs  a  \nComputation failed due to a bug in Maxima -- NOTE: Maxima had to be restarted.\n```\n\nTrying maxima interactively shows it is just prompting for\nwhether or not a is positive.  Specifying which makes this work fine:\n\n```\nsage: var('a,b')\nsage: assume(a>0)\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\n2*b^2*arctan((2*(b*x + a)^(1/3) + a^(1/3))/(sqrt(3)*a^(1/3)))/(3*sqrt(3)*a^(7/3)) - b^2*log((b*x + a)^(2/3) + a^(1/3)*(b*x + a)^(1/3) + a^(2/3))/(9*a^(7/3)) + 2*b^2*log((b*x + a)^(1/3) - a^(1/3))/(9*a^(7/3)) + (4*b^2*(b*x + a)^(5/3) - 7*a*b^2*(b*x + a)^(2/3))/(6*a^2*(b*x + a)^2 - 12*a^3*(b*x + a) + 6*a^4)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2915\n\n",
+    "body": "Assignee: @mwhansen\n\nI tried the first integral inthe Axiom book in Sage and get a big boom!\n\n```\nsage: var('a,b')\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\nTraceback (most recent call last):\n...\nTypeError: \nIs  a  \nComputation failed due to a bug in Maxima -- NOTE: Maxima had to be restarted.\n```\n\nTrying maxima interactively shows it is just prompting for\nwhether or not a is positive.  Specifying which makes this work fine:\n\n```\nsage: var('a,b')\nsage: assume(a>0)\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\n2*b^2*arctan((2*(b*x + a)^(1/3) + a^(1/3))/(sqrt(3)*a^(1/3)))/(3*sqrt(3)*a^(7/3)) - b^2*log((b*x + a)^(2/3) + a^(1/3)*(b*x + a)^(1/3) + a^(2/3))/(9*a^(7/3)) + 2*b^2*log((b*x + a)^(1/3) - a^(1/3))/(9*a^(7/3)) + (4*b^2*(b*x + a)^(5/3) - 7*a*b^2*(b*x + a)^(2/3))/(6*a^2*(b*x + a)^2 - 12*a^3*(b*x + a) + 6*a^4)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2915\n\n",
+    "closed_at": "2008-04-15T00:55:21Z",
     "created_at": "2008-04-14T05:27:46Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "bug in symbolic integration or \"stupid bug in the sage/maxima interface\"?",
+    "title": "[with patch, positive review] bug in symbolic integration or \"stupid bug in the sage/maxima interface\"?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2915",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 I tried the first integral inthe Axiom book in Sage and get a big boom!
 

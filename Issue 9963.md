@@ -3,11 +3,10 @@
 archive/issues_009963.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @mwhansen simonking\n\nMany Sage objects have `_pari_` and/or `_pari_init_` member functions. However, it is not at all documented how these are supposed to work. Reading the source code gives some hints, but leaves some things unexplained, for example:\n* what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?\n* Why is `_pari_init_` also used for the GP interpreter `Gp`?\n* Why must `_pari_init_` return a string? Is it only because it is also used for the GP interpreter or is there a deeper reason?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9964\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mwhansen simonking\n\nMany Sage objects have `_pari_` and/or `_pari_init_` member functions. However, it is not at all documented how these are supposed to work. Reading the source code gives some hints, but leaves some things unexplained, for example:\n* what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?\n* Why is `_pari_init_` also used for the GP interpreter `Gp`?\n* Why must `_pari_init_` return a string? Is it only because it is also used for the GP interpreter or is there a deeper reason?\n\nNote also that the patch at #9400 contains important changes to a `_pari_init_` function which are completely not understood by the author.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9964\n\n",
     "created_at": "2010-09-21T21:12:48Z",
     "labels": [
         "component: documentation",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -25,6 +24,8 @@ Many Sage objects have `_pari_` and/or `_pari_init_` member functions. However, 
 * what exactly is the interaction between `_pari_` and `_pari_init_`. Which of these two functions (or both) should be implemented?
 * Why is `_pari_init_` also used for the GP interpreter `Gp`?
 * Why must `_pari_init_` return a string? Is it only because it is also used for the GP interpreter or is there a deeper reason?
+
+Note also that the patch at #9400 contains important changes to a `_pari_init_` function which are completely not understood by the author.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9964
 

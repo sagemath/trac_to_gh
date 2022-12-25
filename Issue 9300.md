@@ -4,6 +4,7 @@ archive/issues_009300.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: french\n\nThe French version of the tutorial needs to be updated, taking at least #8821 and #9027 into account.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9300\n\n",
+    "closed_at": "2013-10-05T09:35:46Z",
     "created_at": "2010-06-21T22:13:33Z",
     "labels": [
         "component: documentation",

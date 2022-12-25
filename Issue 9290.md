@@ -3,7 +3,8 @@
 archive/issues_009290.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9290\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: coxeter\n\nThe root system / coxeter group code is designed from the ground up to allow for this extension.\n\nSteps:\n\n- Double check `CartanType([\"H\",3]).coxeter_diagram()` and friends\n\n- Given a coxeter diagram, construct the dynkin diagram `g`\n  corresponding to the geometric representation; most of the time,\n  this will involve roots of unity, and require e.g. a cyclotomic\n  field (see also #8327)\n\n- Make sure that `L = RootSystem(g).root_space()` accepts such a diagram\n\n- Make sure that `WeylGroup(L)` accepts such a root space\n\n- Fix all the interfaces to properly reflect the generalization\n  (e.g. WeylGroup above should really be CoxeterGroup).\n\nApply:\n\n* [attachment:trac_9290-geometric_coxeter_groups-ts.patch]\n* [attachment:trac-9290-review.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9290\n\n",
+    "closed_at": "2013-10-31T19:15:44Z",
     "created_at": "2010-06-21T07:49:19Z",
     "labels": [
         "component: combinatorics"
@@ -19,7 +20,30 @@ Assignee: sage-combinat
 
 CC:  sage-combinat
 
+Keywords: coxeter
 
+The root system / coxeter group code is designed from the ground up to allow for this extension.
+
+Steps:
+
+- Double check `CartanType(["H",3]).coxeter_diagram()` and friends
+
+- Given a coxeter diagram, construct the dynkin diagram `g`
+  corresponding to the geometric representation; most of the time,
+  this will involve roots of unity, and require e.g. a cyclotomic
+  field (see also #8327)
+
+- Make sure that `L = RootSystem(g).root_space()` accepts such a diagram
+
+- Make sure that `WeylGroup(L)` accepts such a root space
+
+- Fix all the interfaces to properly reflect the generalization
+  (e.g. WeylGroup above should really be CoxeterGroup).
+
+Apply:
+
+* [attachment:trac_9290-geometric_coxeter_groups-ts.patch]
+* [attachment:trac-9290-review.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9290
 

@@ -1,16 +1,17 @@
-# Issue 913: real_roots code fails if polynomial obviously has no roots
+# Issue 913: [with patch] real_roots code fails if polynomial obviously has no roots
 
 archive/issues_000913.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe following test case will loop forever:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + 1).real_root_intervals()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/913\n\n",
+    "closed_at": "2007-10-21T00:49:39Z",
     "created_at": "2007-10-17T15:38:15Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "real_roots code fails if polynomial obviously has no roots",
+    "title": "[with patch] real_roots code fails if polynomial obviously has no roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/913",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

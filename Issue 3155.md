@@ -4,6 +4,7 @@ archive/issues_003155.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen I have just logged in to sage, the URL one is connected to is\n\"https://<sage server>/login\" and the relevant page apparently has post-data on it.\n\nIf I click one of the \"archive\", \"delete\" or \"stop\" buttons, apparently a reload of the page is triggered. The result is that firefox gives me a warning \"The page you are trying to reload contains POSTDATA ...\".\n\nIf I change the URL to \"https://<sage server>\" in the same browser I remain authenticated and everything still works. Now the page does not have POSTDATA on it and the reload is not a problem.\n\nPossible fixes:\n\n- Make sure that the POSTDATA is dumped as quickly as possible, so that reloading does not trigger warnings\n- reprogram the actions of the buttons so that they don't trigger a reload (for instance, force them to do a load of a new page instead)\n- something I cannot think of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3155\n\n",
+    "closed_at": "2008-05-19T06:08:48Z",
     "created_at": "2008-05-11T04:03:00Z",
     "labels": [
         "component: notebook",

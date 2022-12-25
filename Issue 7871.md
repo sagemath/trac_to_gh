@@ -4,6 +4,7 @@ archive/issues_007871.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman @TimDumol\n\nIE 7/8 use a bluish background color for `interact` tables, instead of white.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/d3feb880dcecfcb6#).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7871\n\n",
+    "closed_at": "2010-01-12T21:01:24Z",
     "created_at": "2010-01-08T09:28:36Z",
     "labels": [
         "component: notebook",

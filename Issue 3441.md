@@ -1,16 +1,17 @@
-# Issue 3441: [with patch, needs review] Make binary code words longer.
+# Issue 3441: [with patch, not ready] Make binary code words longer.
 
 archive/issues_003441.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nIncreases length of codes that can be handled to 64 (on most machines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3441\n\n",
+    "closed_at": "2008-08-10T03:42:29Z",
     "created_at": "2008-06-16T21:28:11Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] Make binary code words longer.",
+    "title": "[with patch, not ready] Make binary code words longer.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3441",
     "user": "https://github.com/rlmill"

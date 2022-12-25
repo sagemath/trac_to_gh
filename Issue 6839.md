@@ -1,29 +1,32 @@
-# Issue 6839: Implementation of crystal of letters for type E7
+# Issue 6839: [with patch, positive review] Implementation of crystal of letters for type E7
 
 archive/issues_006839.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, crystals\n\n- Implemented crystal of letters for type E7\n- Added the method that goes to the highest weight element from any crystal element\n  (living in a highest weight crystal)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6839\n\n",
+    "body": "Assignee: @anneschilling\n\nCC:  sage-combinat\n\nKeywords: combinat, crystals\n\n- Implemented crystal of letters for type E7\n\n- Added the method that goes to the highest weight element from any crystal element (living in a highest weight crystal)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6839\n\n",
+    "closed_at": "2009-09-07T17:25:36Z",
     "created_at": "2009-08-29T06:34:56Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Implementation of crystal of letters for type E7",
+    "title": "[with patch, positive review] Implementation of crystal of letters for type E7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6839",
     "user": "https://github.com/anneschilling"
 }
 ```
-Assignee: @mwhansen
+Assignee: @anneschilling
 
 CC:  sage-combinat
 
 Keywords: combinat, crystals
 
 - Implemented crystal of letters for type E7
-- Added the method that goes to the highest weight element from any crystal element
-  (living in a highest weight crystal)
+
+- Added the method that goes to the highest weight element from any crystal element (living in a highest weight crystal)
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6839
 

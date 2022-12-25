@@ -1,24 +1,27 @@
-# Issue 8523: Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC
+# Issue 8523: Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC, as well as Debian Linux x86/x86_64 and MacOSX 10.5 (PPC)
 
 archive/issues_008523.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  simonking\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n\n == The problem with the optional  p_group_cohomology-1.2 ==\nThis looks like being related to #8514, since p_group_cohomology-1.2 needs the gap database. But #8514 seems to be a mess, and might not be easy to sort out. \n\n```\np_group_cohomology-1.2/spkg-check\np_group_cohomology-1.2/spkg-check-quickly\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\nFailed to find SmallGroups library.  Please install the database_gap spkg\n\nreal    0m0.043s\nuser    0m0.014s\nsys     0m0.028s\nsage: An error occurred while installing p_group_cohomology-1.2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8523\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  simonking\n\nKeywords: recognise database_gap, group cohomology\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n\n == The problem with the optional  p_group_cohomology-1.2 ==\nThis looks like being related to #8514, since p_group_cohomology-1.2 needs the gap database. But #8514 seems to be a mess, and might not be easy to sort out. \n\n```\np_group_cohomology-1.2/spkg-check\np_group_cohomology-1.2/spkg-check-quickly\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\nFailed to find SmallGroups library.  Please install the database_gap spkg\n\nreal    0m0.043s\nuser    0m0.014s\nsys     0m0.028s\nsage: An error occurred while installing p_group_cohomology-1.2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8523\n\n",
+    "closed_at": "2010-04-20T22:54:47Z",
     "created_at": "2010-03-13T14:44:23Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC",
+    "title": "Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC, as well as Debian Linux x86/x86_64 and MacOSX 10.5 (PPC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8523",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: @simon-king-jena
 
 CC:  simonking
+
+Keywords: recognise database_gap, group cohomology
 
 ## Hardware & associated software
 

@@ -4,6 +4,7 @@ archive/issues_008649.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: crystals\n\n- For type B_n the to_tableau method in crystals is wrong: 00 in the list should give a column and not a row\n\n- Changed __call__ function in both TensorProductOfCrystals and CrystalOfTableau x to _element_constructor_ to make automatic tests pass (before element constructor was not an idempotent)\n\n- Fixed subsequent bug of empty tableau in CrystalOfTableau and empty highest weight crystal\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8649\n\n",
+    "closed_at": "2010-04-19T05:21:37Z",
     "created_at": "2010-04-03T15:56:10Z",
     "labels": [
         "component: combinatorics",

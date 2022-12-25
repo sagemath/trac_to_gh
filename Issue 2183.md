@@ -1,9 +1,10 @@
-# Issue 2183: scipy and special functions
+# Issue 2183: [with bundle, with positive review] scipy and special functions
 
 archive/issues_002183.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nIn the thread \"[sage-support] Bessel argument order\"\nhttp://blog.gmane.org/gmane.comp.mathematics.sage.support/page=20\nMicheal suggested replacing all \"#random's\" by \"...\" and\nWilliam seconded this. Then William suggested adding the scip option to\nthe functions implemented. This has been done as well.\nThe patch passes \"sage -t\" has some examples added and some\ndocstring typos fixed. The patch is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2183\n\n",
+    "closed_at": "2008-02-18T20:46:22Z",
     "created_at": "2008-02-16T23:14:55Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_002183.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "scipy and special functions",
+    "title": "[with bundle, with positive review] scipy and special functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2183",
     "user": "https://github.com/wdjoyner"

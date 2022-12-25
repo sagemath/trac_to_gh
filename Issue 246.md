@@ -4,6 +4,7 @@ archive/issues_000246.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen I paste a huge string into a notebook cell, the height of the cell\ndoesn't increase appropriately and scrolling through the string using\nmy cursor and maneuvering the tiny scroll bar are painful.\n\nI was wondering if there is any way to increase the height of cells in the\nSAGE notebook. If the answer is negative, it should be a todo.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/246\n\n",
+    "closed_at": "2008-04-15T07:25:26Z",
     "created_at": "2007-02-06T17:45:31Z",
     "labels": [
         "component: notebook",

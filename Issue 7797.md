@@ -1,33 +1,45 @@
-# Issue 7797: basic interface to letterplace from singular
+# Issue 7797: Full interface to letterplace from singular
 
 archive/issues_007797.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  polybori @saliola @malb @jhpalmieri sage-combinat oleksandrmotsak\n\nKeywords: singular\n\nAttached patches add a basic interface to the letterplace [1] component of Singular, which allows computation of Groebner bases (up to a degree bound) of (two-sided) ideals of free algebras.\n\n[1] http://www.singular.uni-kl.de/Manual/latest/sing_425.htm#SEC478\n\nThese patches depend on #7198.\n\nSince Sage only supports ideals over commutative rings for now, writing a better interface to this would take considerably more work. I suggest we review & merge these patches, and hook it up to the right place when it exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7797\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  polybori @saliola @malb @jhpalmieri sage-combinat oleksandrmotsak\n\nKeywords: singular, free algebra, letterplace\n\nThe new aim of this ticket is to add an interface to the [letterplace](http://www.singular.uni-kl.de/Manual/latest/sing_427.htm#SEC480) component of Singular, that actually goes beyond what Singular offers.\n\nThe patch provides\n\n* A new implementation of free algebras with fast arithmetic, but  restricted to weighted homogeneous elements, with positive integral degree weights.\n* Degree-wise Gr\u00f6bner basis computation for twosided weighted homogeneous ideals of free algebras. If a finite complete Gr\u00f6bner basis exists, it can be computed.\n* Normal form computation with respect to such ideals.\n* Quotient rings of such ideals\n\n(Note that the original purpose was merely to compute Groebner bases up to a degree bound of two-sided ideals of free algebras, but without normal form computation etc.)\n\nExamples are below, in the comments.\n\nApply\n\n[attachment:trac7797-full_letterplace_wrapper_combined.patch] and [attachment:trac_7797-ref.patch]\n\nDepends on #11068 #11268 #12641 #12749\n\nIssue created by migration from https://trac.sagemath.org/ticket/7797\n\n",
+    "closed_at": "2012-11-16T21:25:01Z",
     "created_at": "2009-12-30T21:43:47Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
-    "title": "basic interface to letterplace from singular",
+    "title": "Full interface to letterplace from singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7797",
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: @burcin
+Assignee: @jdemeyer
 
 CC:  polybori @saliola @malb @jhpalmieri sage-combinat oleksandrmotsak
 
-Keywords: singular
+Keywords: singular, free algebra, letterplace
 
-Attached patches add a basic interface to the letterplace [1] component of Singular, which allows computation of Groebner bases (up to a degree bound) of (two-sided) ideals of free algebras.
+The new aim of this ticket is to add an interface to the [letterplace](http://www.singular.uni-kl.de/Manual/latest/sing_427.htm#SEC480) component of Singular, that actually goes beyond what Singular offers.
 
-[1] http://www.singular.uni-kl.de/Manual/latest/sing_425.htm#SEC478
+The patch provides
 
-These patches depend on #7198.
+* A new implementation of free algebras with fast arithmetic, but  restricted to weighted homogeneous elements, with positive integral degree weights.
+* Degree-wise Gröbner basis computation for twosided weighted homogeneous ideals of free algebras. If a finite complete Gröbner basis exists, it can be computed.
+* Normal form computation with respect to such ideals.
+* Quotient rings of such ideals
 
-Since Sage only supports ideals over commutative rings for now, writing a better interface to this would take considerably more work. I suggest we review & merge these patches, and hook it up to the right place when it exists.
+(Note that the original purpose was merely to compute Groebner bases up to a degree bound of two-sided ideals of free algebras, but without normal form computation etc.)
+
+Examples are below, in the comments.
+
+Apply
+
+[attachment:trac7797-full_letterplace_wrapper_combined.patch] and [attachment:trac_7797-ref.patch]
+
+Depends on #11068 #11268 #12641 #12749
 
 Issue created by migration from https://trac.sagemath.org/ticket/7797
 

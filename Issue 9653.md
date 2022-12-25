@@ -7,6 +7,7 @@ archive/issues_009653.json:
     "created_at": "2010-08-01T01:19:55Z",
     "labels": [
         "component: graphics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",

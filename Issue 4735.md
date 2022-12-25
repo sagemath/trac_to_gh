@@ -1,15 +1,17 @@
-# Issue 4735: Make e^X try calling X.exp() before trying to coerce X to the symbolic ring
+# Issue 4735: Make e^A for A a generic matrix work
 
 archive/issues_004735.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nFrom sage-devel:\n\n> I'd like to add an exponential function to RDF/CDF matrices (and  \n> > enhance\n> > the existing exp function for SR matrices) so that:\n\n> >\n> > sage: A = matrix(SR, [[1,2],[3,4]])\n> > sage: e^A\n\n> >\n> > gives the same as\n\n> >\n> > sage: A.exp()\n\n> >\n> > (I'd also like this to work for other matrices, like over RDF or CDF,\n> > where the returned matrix would be another RDF/CDF matrix---scipy has\n> > functions that do this).\n\n> >\n> > However, currently for constants (in sage/functions/constants.py), the\n> > __pow__ function automatically converts the exponent to an SR object,\n> > which fails for a matrix.\n\n> >\n> > I have not worked with the constants code before.  Would there be a\n> > problem with, for the E constant, overriding __pow__ so that if the\n> > object had an \"_exp\" method, that was called instead of the default\n> > conversion to SR objects?\n\n\n+1, this was my first though when I started reading your email. I  \ndon't think it makes sense for other constants, but for E it  \ncertainly does. Also, I'd just call exp (not _exp), making sure that  \nit doesn't introduce a recursive call...\n\n> > Would that be the proper way to get the above functionality?  The goal\n> > is also to get exp(A) to work as well; would I get that for free?\n\n\nYes. When you do exp(A) it attempts to return A.exp() before doing  \nanything symbolic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4735\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: sd40.5\n\nFrom sage-devel at http://groups.google.com/group/sage-devel/t/ff6cdb898792d5b3 :\n\n```\n> I'd like to add an exponential function to RDF/CDF matrices (and  \n> > enhance\n> > the existing exp function for SR matrices) so that:\n> >\n> > sage: A = matrix(SR, [[1,2],[3,4]])\n> > sage: e^A\n> >\n> > gives the same as\n> >\n> > sage: A.exp()\n> >\n> > (I'd also like this to work for other matrices, like over RDF or CDF,\n> > where the returned matrix would be another RDF/CDF matrix---scipy has\n> > functions that do this).\n> >\n> > However, currently for constants (in sage/functions/constants.py), the\n> > __pow__ function automatically converts the exponent to an SR object,\n> > which fails for a matrix.\n> >\n> > I have not worked with the constants code before.  Would there be a\n> > problem with, for the E constant, overriding __pow__ so that if the\n> > object had an \"_exp\" method, that was called instead of the default\n> > conversion to SR objects?\n\n+1, this was my first though when I started reading your email. I  \ndon't think it makes sense for other constants, but for E it  \ncertainly does. Also, I'd just call exp (not _exp), making sure that  \nit doesn't introduce a recursive call...\n\n> > Would that be the proper way to get the above functionality?  The goal\n> > is also to get exp(A) to work as well; would I get that for free?\n\nYes. When you do exp(A) it attempts to return A.exp() before doing  \nanything symbolic.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4735\n\n",
+    "closed_at": "2012-06-18T10:21:31Z",
     "created_at": "2008-12-07T04:53:37Z",
     "labels": [
-        "component: calculus"
+        "component: calculus",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
-    "title": "Make e^X try calling X.exp() before trying to coerce X to the symbolic ring",
+    "title": "Make e^A for A a generic matrix work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4735",
     "user": "https://github.com/jasongrout"
@@ -19,38 +21,34 @@ Assignee: @burcin
 
 CC:  @kcrisman
 
-From sage-devel:
+Keywords: sd40.5
 
+From sage-devel at http://groups.google.com/group/sage-devel/t/ff6cdb898792d5b3 :
+
+```
 > I'd like to add an exponential function to RDF/CDF matrices (and  
 > > enhance
 > > the existing exp function for SR matrices) so that:
-
 > >
 > > sage: A = matrix(SR, [[1,2],[3,4]])
 > > sage: e^A
-
 > >
 > > gives the same as
-
 > >
 > > sage: A.exp()
-
 > >
 > > (I'd also like this to work for other matrices, like over RDF or CDF,
 > > where the returned matrix would be another RDF/CDF matrix---scipy has
 > > functions that do this).
-
 > >
 > > However, currently for constants (in sage/functions/constants.py), the
 > > __pow__ function automatically converts the exponent to an SR object,
 > > which fails for a matrix.
-
 > >
 > > I have not worked with the constants code before.  Would there be a
 > > problem with, for the E constant, overriding __pow__ so that if the
 > > object had an "_exp" method, that was called instead of the default
 > > conversion to SR objects?
-
 
 +1, this was my first though when I started reading your email. I  
 don't think it makes sense for other constants, but for E it  
@@ -60,9 +58,9 @@ it doesn't introduce a recursive call...
 > > Would that be the proper way to get the above functionality?  The goal
 > > is also to get exp(A) to work as well; would I get that for free?
 
-
 Yes. When you do exp(A) it attempts to return A.exp() before doing  
 anything symbolic.
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/4735
 

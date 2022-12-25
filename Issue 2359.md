@@ -1,15 +1,16 @@
-# Issue 2359: notebook -- make it so when you send a kill signal to the notebook server it saves state
+# Issue 2359: [with patch; positive review] notebook -- make it so when you send a kill signal to the notebook server it saves state
 
 archive/issues_002359.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKill signal does this\n\n```\n2008/03/01 01:10 -0500 [-] Received SIGTERM, shutting down.\n2008/03/01 01:10 -0500 [-] (Port 8000 Closed)\n2008/03/01 01:10 -0500 [-] Stopping factory <twisted.web2.channel.http.HTTPFactory instance at 0x2a41530>\n2008/03/01 01:10 -0500 [-] Main loop terminated.\n2008/03/01 01:10 -0500 [-] Server Shut Down.\n```\n\nControl C does this\n\n```\n2008/03/01 01:12 -0500 [-] (Notebook cleanly saved. Press control-C again to exit.)\n```\n\nWe should change the notebook so it catches the kill and saves the notebook cleanly.   I have no idea how to do this.  Maybe some sort of \"hook\" into Twisted.  If anybody knows twisted or reads the docs and figures this out, post here!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2359\n\n",
+    "closed_at": "2008-05-12T11:11:32Z",
     "created_at": "2008-03-01T06:18:26Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- make it so when you send a kill signal to the notebook server it saves state",
+    "title": "[with patch; positive review] notebook -- make it so when you send a kill signal to the notebook server it saves state",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2359",
     "user": "https://github.com/williamstein"

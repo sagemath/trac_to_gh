@@ -4,6 +4,7 @@ archive/issues_009272.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nSome doctests in sage/homology/tests.py are marked `# optional - CHomP` (or they should be marked this way: see #9270 and #9271).  Running `sage -t -only-optional=chomp tests.py` runs those tests, but running `sage -t -only-optional=CHomP tests.py` does not.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9272\n\n",
+    "closed_at": "2010-06-25T15:43:15Z",
     "created_at": "2010-06-19T02:54:35Z",
     "labels": [
         "component: doctest coverage",

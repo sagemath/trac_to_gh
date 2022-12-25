@@ -1,16 +1,17 @@
-# Issue 6250: [with patch, needs review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__
+# Issue 6250: [with patch, positive review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__
 
 archive/issues_006250.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat wdjoyner@gmail.com\n\nKeywords: cardinality, __len__, order, groups\n\nFollowup on #5308:\n- cardinality now returns the size of the group (was order)\n- order is a backward compatibility alias for cardinality\n- __len__ raises a deprecation error\n\nIssue created by migration from https://trac.sagemath.org/ticket/6250\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat wdjoyner@gmail.com\n\nKeywords: cardinality, __len__, order, groups\n\nFollowup on #5308:\n- cardinality now returns the size of the group (was order)\n- order is a backward compatibility alias for cardinality\n- __len__ raises a deprecation error\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6250\n\n",
+    "closed_at": "2009-06-13T21:38:17Z",
     "created_at": "2009-06-08T23:23:10Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__",
+    "title": "[with patch, positive review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6250",
     "user": "https://github.com/nthiery"
@@ -26,6 +27,7 @@ Followup on #5308:
 - cardinality now returns the size of the group (was order)
 - order is a backward compatibility alias for cardinality
 - __len__ raises a deprecation error
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6250
 

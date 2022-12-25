@@ -1,16 +1,17 @@
-# Issue 6553: fast slicing of sparse matrices
+# Issue 6553: [with patch, positive review] fast slicing of sparse matrices
 
 archive/issues_006553.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nExtracting a slice from a sparse matrix is insanely slow, as the code effectively treats the matrix as a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6553\n\n",
+    "closed_at": "2009-07-23T04:57:07Z",
     "created_at": "2009-07-18T12:46:30Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "fast slicing of sparse matrices",
+    "title": "[with patch, positive review] fast slicing of sparse matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6553",
     "user": "https://github.com/jasongrout"

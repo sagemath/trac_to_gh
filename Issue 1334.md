@@ -1,22 +1,23 @@
-# Issue 1334: Constant polynomial can't be converted to rational
+# Issue 1334: [with patch, with positive review] Constant polynomial can't be converted to rational
 
 archive/issues_001334.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: R.<x> = QQ['x']\nsage: QQ(R(1/2))\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 1/2 (<type 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense'>) to Rational\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1334\n\n",
+    "body": "Assignee: dmharvey\n\n```\nsage: R.<x> = QQ['x']\nsage: QQ(R(1/2))\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 1/2 (<type 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense'>) to Rational\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1334\n\n",
+    "closed_at": "2007-12-01T18:08:34Z",
     "created_at": "2007-11-29T09:31:42Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "Constant polynomial can't be converted to rational",
+    "title": "[with patch, with positive review] Constant polynomial can't be converted to rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1334",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: dmharvey
 
 ```
 sage: R.<x> = QQ['x']

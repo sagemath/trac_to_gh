@@ -4,6 +4,7 @@ archive/issues_009453.json:
 ```json
 {
     "body": "Assignee: tbd\n\nImplement Aurifeuillian factorization of integers, see\nhttp://mathworld.wolfram.com/AurifeuilleanFactorization.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9453\n\n",
+    "closed_at": "2011-07-22T17:06:00Z",
     "created_at": "2010-07-08T14:12:32Z",
     "labels": [
         "component: factorization",

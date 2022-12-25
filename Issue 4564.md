@@ -1,16 +1,17 @@
-# Issue 4564: [with patch, needs review] implement long long -> mpz_t
+# Issue 4564: [with patch, with positive review] implement long long -> mpz_t
 
 archive/issues_004564.json:
 ```json
 {
     "body": "Assignee: somebody\n\nFor some reason, there is no function to do this shipped with gmp...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4564\n\n",
+    "closed_at": "2008-11-21T05:54:24Z",
     "created_at": "2008-11-20T13:02:49Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] implement long long -> mpz_t",
+    "title": "[with patch, with positive review] implement long long -> mpz_t",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4564",
     "user": "https://github.com/robertwb"

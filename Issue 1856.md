@@ -1,16 +1,17 @@
-# Issue 1856: 3d graphics -- bug in setting options via the show command
+# Issue 1856: [with patch; positive review] 3d graphics -- bug in setting options via the show command
 
 archive/issues_001856.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTry this:\n\n```\nsage: sphere((0,0,0), figsize=2).show(viewer='tachyon', figsize=10)\n```\nA tiny picture of a sphere appears.  It should be that the second figsize overwrites the first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1856\n\n",
+    "closed_at": "2008-01-21T04:19:50Z",
     "created_at": "2008-01-19T23:45:50Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "3d graphics -- bug in setting options via the show command",
+    "title": "[with patch; positive review] 3d graphics -- bug in setting options via the show command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1856",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 2751: [with patch, needs review] multivariate polynomials i_homogeneous
+# Issue 2751: [with patch, positive review] multivariate polynomials is_homogeneous
 
 archive/issues_002751.json:
 ```json
 {
     "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2751\n\n",
+    "closed_at": "2008-04-04T22:15:17Z",
     "created_at": "2008-04-01T13:18:31Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] multivariate polynomials i_homogeneous",
+    "title": "[with patch, positive review] multivariate polynomials is_homogeneous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2751",
     "user": "https://github.com/malb"

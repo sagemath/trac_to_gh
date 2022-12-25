@@ -4,6 +4,7 @@ archive/issues_008607.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis lets people change option names and automatically deprecate the old option name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8607\n\n",
+    "closed_at": "2010-04-23T17:10:12Z",
     "created_at": "2010-03-25T19:05:27Z",
     "labels": [
         "component: graphics"

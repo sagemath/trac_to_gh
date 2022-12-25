@@ -1,9 +1,10 @@
-# Issue 6145: upgrade mpir to 1.1.2
+# Issue 6145: [with spkg; positive review] upgrade mpir to 1.1.2
 
 archive/issues_006145.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAccording to Bill Hart this is a build fix version of mpir specifically for sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6145\n\n",
+    "closed_at": "2009-05-28T06:51:47Z",
     "created_at": "2009-05-28T06:26:11Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_006145.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "upgrade mpir to 1.1.2",
+    "title": "[with spkg; positive review] upgrade mpir to 1.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6145",
     "user": "https://github.com/williamstein"

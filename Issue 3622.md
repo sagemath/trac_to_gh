@@ -1,15 +1,16 @@
-# Issue 3622: numerical fast integration using fast float
+# Issue 3622: [with patch, positive review] numerical fast integration using fast float
 
 archive/issues_003622.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nWhen you create a symbolic expression and numerically integrate it, Sage should use\nthe fast_float framework to do this (a bazzilion times!) faster than it does right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3622\n\n",
+    "closed_at": "2008-09-02T10:11:04Z",
     "created_at": "2008-07-09T00:35:13Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "numerical fast integration using fast float",
+    "title": "[with patch, positive review] numerical fast integration using fast float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3622",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 5003: [with patch, needs review] equality testing in graphs should check "weighted" property
+# Issue 5003: [with patch, positive review] equality testing in graphs should check "weighted" property
 
 archive/issues_005003.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nSee:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d01dd8082da28d52?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/5003\n\n",
+    "closed_at": "2009-01-24T23:00:55Z",
     "created_at": "2009-01-17T19:53:07Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] equality testing in graphs should check \"weighted\" property",
+    "title": "[with patch, positive review] equality testing in graphs should check \"weighted\" property",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5003",
     "user": "https://github.com/rlmill"

@@ -1,9 +1,10 @@
-# Issue 877: "sage -coverage" should not care about functions which are local to other functions/methods
+# Issue 877: [with patch, positive review] "sage -coverage" should not care about functions which are local to other functions/methods
 
 archive/issues_000877.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCurrently, if you have something like:\n\n```\ndef foo():\n    def bar():\n        pass\n    pass\n```\nthen \"sage -coverage\" will complain that bar() has no docstring or doctests.  However, such functions cannot be (directly) doctested, so that warning is invalid.  In my opinion, bar() should not be required to have a docstring either.\n\nIssue created by migration from https://trac.sagemath.org/ticket/877\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCurrently, if you have something like:\n\n```\ndef foo():\n    def bar():\n        pass\n    pass\n```\nthen \"sage -coverage\" will complain that bar() has no docstring or doctests.  However, such functions cannot be (directly) doctested, so that warning is invalid.  In my opinion, bar() should not be required to have a docstring either.\n\nIssue created by migration from https://trac.sagemath.org/ticket/877\n\n",
+    "closed_at": "2009-07-25T19:59:44Z",
     "created_at": "2007-10-13T13:47:23Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_000877.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "\"sage -coverage\" should not care about functions which are local to other functions/methods",
+    "title": "[with patch, positive review] \"sage -coverage\" should not care about functions which are local to other functions/methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/877",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 Currently, if you have something like:
 

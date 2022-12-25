@@ -1,22 +1,23 @@
-# Issue 9263: airy_ai yields wrong results in arbitrary precision
+# Issue 9263: Some special functions don't work with arbitrary precision
 
 archive/issues_009263.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @eviatarbach\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n(airy_ai(1),digits=100)\n0.1352924163128813861423083153567858971655368804931640625000000000000000000000000000000000000000000000\n```\nClearly the last digits are wrong. It looks like Sage only knows how\nto compute Ai(x) in double precision, and then extended the double\nprecision result to 100 digits.\n| Sage Version 4.4.2, Release Date: 2010-05-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThis is a *defect*: an error should be raised if the target precision cannot be attained (or Sage should be able to compute\nAi(x) to arbitrary precision).\n\nI guess this problem concerns other functions than Ai.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9263\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @eviatarbach\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n(airy_ai(1),digits=100)\n0.1352924163128813861423083153567858971655368804931640625000000000000000000000000000000000000000000000\n```\n| Sage Version 4.4.2, Release Date: 2010-05-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nClearly the last digits are wrong. This is due to Maxima; currently we are not giving it bigfloats, and in any case some of the functions don't work with arbitrary precision.\n\nThe following functions should be changed to a different default backend (mpmath probably):\n* `airy_ai` and `airy_bi` (will be fixed with #12455)\n* `spherical_bessel_J` (it also has a SciPy option, but it also truncates the precision)\n* `spherical_bessel_Y` (same as `spherical_bessel_J`)\n* `spherical_harmonic`\n* the elliptic integrals\n* `spherical_hankel1` and `spherical_hankel2`\n* `hypergeometric_U` (PARI is implemented and works with arbitrary precision, but it's not the default)\n* `bessel_K` and `bessel_Y` (now fixed with #4102)\n* `inverse_jacobi`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9263\n\n",
+    "closed_at": "2015-05-19T06:43:17Z",
     "created_at": "2010-06-18T11:33:59Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "airy_ai yields wrong results in arbitrary precision",
+    "title": "Some special functions don't work with arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9263",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @aghitza
+Assignee: jason, jkantor
 
 CC:  @eviatarbach
 
@@ -26,15 +27,20 @@ CC:  @eviatarbach
 sage: n(airy_ai(1),digits=100)
 0.1352924163128813861423083153567858971655368804931640625000000000000000000000000000000000000000000000
 ```
-Clearly the last digits are wrong. It looks like Sage only knows how
-to compute Ai(x) in double precision, and then extended the double
-precision result to 100 digits.
 | Sage Version 4.4.2, Release Date: 2010-05-19                       |
 | Type notebook() for the GUI, and license() for information.        |
-This is a *defect*: an error should be raised if the target precision cannot be attained (or Sage should be able to compute
-Ai(x) to arbitrary precision).
+Clearly the last digits are wrong. This is due to Maxima; currently we are not giving it bigfloats, and in any case some of the functions don't work with arbitrary precision.
 
-I guess this problem concerns other functions than Ai.
+The following functions should be changed to a different default backend (mpmath probably):
+* `airy_ai` and `airy_bi` (will be fixed with #12455)
+* `spherical_bessel_J` (it also has a SciPy option, but it also truncates the precision)
+* `spherical_bessel_Y` (same as `spherical_bessel_J`)
+* `spherical_harmonic`
+* the elliptic integrals
+* `spherical_hankel1` and `spherical_hankel2`
+* `hypergeometric_U` (PARI is implemented and works with arbitrary precision, but it's not the default)
+* `bessel_K` and `bessel_Y` (now fixed with #4102)
+* `inverse_jacobi`
 
 Issue created by migration from https://trac.sagemath.org/ticket/9263
 

@@ -3,7 +3,8 @@
 archive/issues_000538.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSome code duplication appeared as a result of the fix to #411. Remove all of the sage/ext stuff that now appears in `c_lib`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/538\n\n",
+    "body": "Assignee: @craigcitro\n\nSome code duplication appeared as a result of the fix to #411. Remove all of the sage/ext stuff that now appears in `c_lib`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/538\n\n",
+    "closed_at": "2007-09-01T17:45:45Z",
     "created_at": "2007-08-31T01:19:10Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_000538.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 Some code duplication appeared as a result of the fix to #411. Remove all of the sage/ext stuff that now appears in `c_lib`.
 

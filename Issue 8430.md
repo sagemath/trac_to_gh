@@ -1,22 +1,23 @@
-# Issue 8430: three doctest failures with Sage 4.3.4.alpha0
+# Issue 8430: doctest failures with Sage 4.3.4.alpha0
 
 archive/issues_008430.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/99b72f5f27858b53):\n\n```\n* The following tests failed on sage.math:\n\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/notebook/interact.py # 1 doctests failed\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\nsage -t  -long devel/sage/sage/categories/finite_semigroups.py # 2 doctests failed\nsage -t  -long devel/sage/sage/categories/examples/finite_semigroups.py # 1 doctests failed \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8430\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/99b72f5f27858b53):\n\n```\n* The following tests failed on sage.math:\n\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/notebook/interact.py # 1 doctests failed\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\nsage -t  -long devel/sage/sage/categories/finite_semigroups.py # 2 doctests failed\nsage -t  -long devel/sage/sage/categories/examples/finite_semigroups.py # 1 doctests failed \n```\n\nThe doctest\n\n```\nsage -t  -long devel/sage/sage/categories/finite_semigroups.py # 2 doctests failed\n```\nalso failed on SPARC Solaris 10 (the machine t2.math). The failure uncovered another bug relating to kpsewhich. See ticket #8445.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8430\n\n",
+    "closed_at": "2010-03-09T07:44:51Z",
     "created_at": "2010-03-03T18:42:04Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "three doctest failures with Sage 4.3.4.alpha0",
+    "title": "doctest failures with Sage 4.3.4.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8430",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tbd
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -30,6 +31,13 @@ sage -t  -long local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb
 sage -t  -long devel/sage/sage/categories/finite_semigroups.py # 2 doctests failed
 sage -t  -long devel/sage/sage/categories/examples/finite_semigroups.py # 1 doctests failed 
 ```
+
+The doctest
+
+```
+sage -t  -long devel/sage/sage/categories/finite_semigroups.py # 2 doctests failed
+```
+also failed on SPARC Solaris 10 (the machine t2.math). The failure uncovered another bug relating to kpsewhich. See ticket #8445.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8430
 

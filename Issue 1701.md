@@ -1,16 +1,17 @@
-# Issue 1701: attempt to clean up currRing if deallocated
+# Issue 1701: [with patch] attempt to clean up currRing if deallocated
 
 archive/issues_001701.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis patch used to be attached to #1541 but logically doesn't belong there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1701\n\n",
+    "closed_at": "2008-01-07T17:28:14Z",
     "created_at": "2008-01-06T13:23:05Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "attempt to clean up currRing if deallocated",
+    "title": "[with patch] attempt to clean up currRing if deallocated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1701",
     "user": "https://github.com/malb"

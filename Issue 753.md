@@ -1,23 +1,23 @@
-# Issue 753: derivative alias for diff
+# Issue 753: [with patch, with positive review] derivative alias for diff
 
 archive/issues_000753.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor all polynomials and mpolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/753\n\n",
+    "body": "Assignee: dmharvey\n\nFor all polynomials and mpolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/753\n\n",
+    "closed_at": "2008-03-02T18:32:22Z",
     "created_at": "2007-09-25T18:30:04Z",
     "labels": [
         "component: calculus",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "derivative alias for diff",
+    "title": "[with patch, with positive review] derivative alias for diff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/753",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: dmharvey
 
 For all polynomials and mpolynomials
 

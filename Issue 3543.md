@@ -3,11 +3,12 @@
 archive/issues_003543.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @TimDumol\n\nWe currently ship two copies of the jquery javascript library:\n\n* jQuery 1.2.6 - New Wave Javascript - $Rev: 5685 $ in devel/sage-main/sage/dsage/web/static/jquery.js\n* jQuery 1.2.3 - New Wave Javascript - $Rev: 4663 $ in data/extcode/notebook/javascript/jquery/jquery.js\n\nBut we should on ship one copy.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3543\n\n",
+    "body": "CC:  @jasongrout @TimDumol\n\nWe currently ship two copies of the jquery javascript library:\n\n* jQuery 1.2.6 - New Wave Javascript - $Rev: 5685 $ in devel/sage-main/sage/dsage/web/static/jquery.js\n* jQuery 1.2.3 - New Wave Javascript - $Rev: 4663 $ in data/extcode/notebook/javascript/jquery/jquery.js\n\nBut we should on ship one copy.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3543\n\n",
+    "closed_at": "2015-04-23T01:43:16Z",
     "created_at": "2008-07-03T04:29:24Z",
     "labels": [
         "component: build",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Unify jquery libraries in devel/sage and data/extcode",
@@ -16,8 +17,6 @@ archive/issues_003543.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
-
 CC:  @jasongrout @TimDumol
 
 We currently ship two copies of the jquery javascript library:

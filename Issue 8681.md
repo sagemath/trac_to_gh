@@ -3,7 +3,8 @@
 archive/issues_008681.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  @tornaria @williamstein @jonhanke @ncalexan @JohnCremona\n\nThe attached patch implements methods for left and right matrix actions on binary quadratic forms.  It also extends the constructor `BinaryQF` to accept a homogeneous polynomial of degree 2 in 2 variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8681\n\n",
+    "body": "Assignee: justin\n\nCC:  @tornaria @williamstein @jonhanke @ncalexan @JohnCremona\n\nThe attached patch implements methods for left and right matrix actions on binary quadratic forms.  It also extends the constructor `BinaryQF` to accept a homogeneous polynomial of degree 2 in 2 variables.\n\nI'm ccing other people who have worked on this file to see if anyone is up for a quick review.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8681\n\n",
+    "closed_at": "2010-04-29T05:19:31Z",
     "created_at": "2010-04-13T13:05:18Z",
     "labels": [
         "component: quadratic forms"
@@ -20,6 +21,9 @@ Assignee: justin
 CC:  @tornaria @williamstein @jonhanke @ncalexan @JohnCremona
 
 The attached patch implements methods for left and right matrix actions on binary quadratic forms.  It also extends the constructor `BinaryQF` to accept a homogeneous polynomial of degree 2 in 2 variables.
+
+I'm ccing other people who have worked on this file to see if anyone is up for a quick review.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8681
 

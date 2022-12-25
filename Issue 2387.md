@@ -1,21 +1,24 @@
-# Issue 2387: Create a _sage_init_ function for all objects
+# Issue 2387: [with partial patch] Create _sage_init_ functions for all objects
 
 archive/issues_002387.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate a _sage_init_ function that behaves like the _maxima_init_, _magma_init_, etc., functions which returns a string sufficient to construct the given object in Sage.\n\nFor example:\n\n```\nsage: a=matrix([[1,2,3],[4,5,6],[7,8,9]])\nsage: a._sage_init_\n'matrix([[1,2,3],[4,5,6],[7,8,9]])'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2387\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_wstein\n\nCreate a _sage_init_ function that behaves like the _maxima_init_, _magma_init_, etc., functions which returns a string sufficient to construct the given object in Sage.\n\nFor example:\n\n```\nsage: a=matrix([[1,2,3],[4,5,6],[7,8,9]])\nsage: a._sage_init_\n'matrix([[1,2,3],[4,5,6],[7,8,9]])'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2387\n\n",
+    "closed_at": "2008-08-25T19:34:57Z",
     "created_at": "2008-03-04T20:45:45Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Create a _sage_init_ function for all objects",
+    "title": "[with partial patch] Create _sage_init_ functions for all objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2387",
     "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_wstein
 
 Create a _sage_init_ function that behaves like the _maxima_init_, _magma_init_, etc., functions which returns a string sufficient to construct the given object in Sage.
 

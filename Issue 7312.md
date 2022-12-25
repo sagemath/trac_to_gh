@@ -4,6 +4,7 @@ archive/issues_007312.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nAdd a function .st (meaning \"such that\" )which is an alias to .add_constraint. This would shorten the code, as the add_constraint option is the most used, and copy the syntax used in Pymprog\n\nIssue created by migration from https://trac.sagemath.org/ticket/7312\n\n",
+    "closed_at": "2010-01-14T05:54:56Z",
     "created_at": "2009-10-26T13:35:41Z",
     "labels": [
         "component: numerical",

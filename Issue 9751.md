@@ -3,7 +3,8 @@
 archive/issues_009751.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nWhen addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.\n\nWith the addition of integers mod n to the category framework, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9751\n\n",
+    "body": "Assignee: @nthiery\n\nKeywords: additive magma multiplication\n\nWhen addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.\n\nWith the addition of integers mod n to the category framework in ticket #8562, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9751\n\n",
+    "closed_at": "2011-11-26T09:34:41Z",
     "created_at": "2010-08-15T05:37:05Z",
     "labels": [
         "component: categories",
@@ -19,9 +20,11 @@ archive/issues_009751.json:
 ```
 Assignee: @nthiery
 
+Keywords: additive magma multiplication
+
 When addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.
 
-With the addition of integers mod n to the category framework, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.
+With the addition of integers mod n to the category framework in ticket #8562, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9751
 

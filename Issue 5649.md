@@ -1,22 +1,23 @@
-# Issue 5649: plot doesn't work when x-range too small
+# Issue 5649: [with patch, positive review] plot doesn't work when x-range too small
 
 archive/issues_005649.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nHow about:\n\nplot(P(6.403124+x), 0, 0.00001) -> okay\nplot(P(6.403124+x), 0, 0.000001) -> tick marks on both axes are\nmissing\nplot(P(6.403124+x), 0, 0.0000001) -> IndexError: list index out of\nrange\nplot(P(x), 0, 0.0001) -> ZeroDivisionError: float division\n\nThis doesn't look too good...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5649\n\n",
+    "body": "Assignee: @kcrisman\n\n```\nHow about:\n\nplot(P(6.403124+x), 0, 0.00001) -> okay\nplot(P(6.403124+x), 0, 0.000001) -> tick marks on both axes are\nmissing\nplot(P(6.403124+x), 0, 0.0000001) -> IndexError: list index out of\nrange\nplot(P(x), 0, 0.0001) -> ZeroDivisionError: float division\n\nThis doesn't look too good...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5649\n\n",
+    "closed_at": "2009-07-16T22:59:33Z",
     "created_at": "2009-03-31T15:48:08Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "plot doesn't work when x-range too small",
+    "title": "[with patch, positive review] plot doesn't work when x-range too small",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5649",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
 ```
 How about:

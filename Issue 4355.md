@@ -3,7 +3,7 @@
 archive/issues_004355.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat boussica\n\nThe latex method for tableaux was written in a rush during Sage Days 7\nto get the latex output for crystals. This is a partial quick port of\nthe TeX method we use in MuPAD-Combinat in the general case of\n\"ObjectsWith2DBoxedRepresentation\" which includes everything from\npartitions, tableaux, skew tableaux, ribbons tableaux, to rigged\nconfigurations, or other things that can be drawn with symbols in an\narray, and some horizontal and vertical delimiters, like mazes. \n\nA class which inherits from ObjectsWith2DBoxedRepresentation just has\nto implement a method that fills appropriately an array for the\nsymbols, and another for the delimiters, and it gets for free 2D ascii\nart, latex, ... output.  See:\n\nhttp://mupad-combinat.svn.sourceforge.net/viewvc/mupad-combinat/trunk/MuPAD-Combinat/lib/DOMAINS/CATEGORY/CombinatorialClassWith2DBoxedRepresentation.mu?revision=7455&view=markup\n\nFor a few samples of the produced 2d ascii art, you can have a look\nat:\n\nhttp://mupad-combinat.sourceforge.net/doc/en/output_Combinat/asciiArt.html\n\n(note: the pictures are broken unless you use a fixed font).\n\nIt as proven to be a handy tool, for the zillion of tableaux-like\nclasses, so a good candidate for porting.\n\nFirst straightforward step: LaTeX output\n\nSecond step: ascii art output. This may require a bit more thinking,\nsince there is not yet (?) a general framework for ascii art in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4355\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat boussica\n\nThe latex method for tableaux was written in a rush during Sage Days 7\nto get the latex output for crystals. This is a partial quick port of\nthe TeX method we use in MuPAD-Combinat in the general case of\n\"ObjectsWith2DBoxedRepresentation\" which includes everything from\npartitions, tableaux, skew tableaux, ribbons tableaux, to rigged\nconfigurations, or other things that can be drawn with symbols in an\narray, and some horizontal and vertical delimiters, like mazes. \n\nA class which inherits from ObjectsWith2DBoxedRepresentation just has\nto implement a method that fills appropriately an array for the\nsymbols, and another for the delimiters, and it gets for free 2D ascii\nart, latex, ... output.  See:\n\nhttp://mupad-combinat.sourceforge.net/doc/en/Cat_Combinat/CombinatorialClassWith2DBoxedRepresentation.html\n\nhttp://sourceforge.net/p/mupad-combinat/code/HEAD/tree/trunk/MuPAD-Combinat/lib/DOMAINS/CATEGORY/CombinatorialClassWith2DBoxedRepresentation.mu\n\nFor a few samples of the produced 2d ascii art, you can have a look\nat:\n\nhttp://mupad-combinat.sourceforge.net/doc/en/output_Combinat/asciiArt.html\n\n(note: the pictures are broken unless you use a fixed font).\n\nIt as proven to be a handy tool, for the zillion of tableaux-like\nclasses, so a good candidate for porting.\n\nFirst straightforward step: LaTeX output (partitions and cores in ticket #12314)\n\nSecond step: same as above, but making sure the produced LaTeX is compatible with jsmath/mathjax, for display in the notebook.\n\nThird step: ascii art output. This may require a bit more thinking,\nsince there is not yet (?) a general framework for ascii art in Sage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4355\n\n",
     "created_at": "2008-10-24T00:53:04Z",
     "labels": [
         "component: combinatorics"
@@ -32,7 +32,9 @@ to implement a method that fills appropriately an array for the
 symbols, and another for the delimiters, and it gets for free 2D ascii
 art, latex, ... output.  See:
 
-http://mupad-combinat.svn.sourceforge.net/viewvc/mupad-combinat/trunk/MuPAD-Combinat/lib/DOMAINS/CATEGORY/CombinatorialClassWith2DBoxedRepresentation.mu?revision=7455&view=markup
+http://mupad-combinat.sourceforge.net/doc/en/Cat_Combinat/CombinatorialClassWith2DBoxedRepresentation.html
+
+http://sourceforge.net/p/mupad-combinat/code/HEAD/tree/trunk/MuPAD-Combinat/lib/DOMAINS/CATEGORY/CombinatorialClassWith2DBoxedRepresentation.mu
 
 For a few samples of the produced 2d ascii art, you can have a look
 at:
@@ -44,10 +46,13 @@ http://mupad-combinat.sourceforge.net/doc/en/output_Combinat/asciiArt.html
 It as proven to be a handy tool, for the zillion of tableaux-like
 classes, so a good candidate for porting.
 
-First straightforward step: LaTeX output
+First straightforward step: LaTeX output (partitions and cores in ticket #12314)
 
-Second step: ascii art output. This may require a bit more thinking,
+Second step: same as above, but making sure the produced LaTeX is compatible with jsmath/mathjax, for display in the notebook.
+
+Third step: ascii art output. This may require a bit more thinking,
 since there is not yet (?) a general framework for ascii art in Sage.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4355
 

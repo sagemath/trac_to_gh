@@ -1,16 +1,18 @@
-# Issue 8371: Error building pyprocessing on Solaris SPARC after changes to python.
+# Issue 8371: Error building pyprocessing on Solaris SPARC after changes to python
 
 archive/issues_008371.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\n == The computer hardware & software ==\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM \n* Solaris 10 03/2005 - the first release of Solaris 10. \n\n == The Sage software ==\nSage 4.3.3 which comes with python-2.6.4.p5 and pyprocessing-0.52.p0\n \n == The problem ==\nThis is a long story, so I'll keep it short. \n* #6583 \"Implement 2-isogeny descent over QQ natively in Sage using ratpoints\" was integrated into Sage 4.3.1.\n* The above patch, which was not properly checked on Solaris, broke the Solaris build as reported at #7867\n* Jaap Spies found this link http://bugs.python.org/issue1759169  which suggests this is a bug in python, which will be fixed in the next 2.6 release. But a patch is provided on the python web site. \n* #6503 is an 8-month old patch to remove pyprocessing from Sage, as the multiprocessing module, which has a slightly different API, is now part of Python 2.6. \n* The patch at http://bugs.python.org/issue1759169  was integrated into python-2.6.4.p5, but it broke the build of pyprocessing as below \n  {{{\ncopying doc/connection-objects.html -> build/lib.solaris-2.10-sun4u-2.6/processing/doc\ncopying doc/programming-guidelines.html -> build/lib.solaris-2.10-sun4u-2.6/processing/doc\ncopying doc/intro.html -> build/lib.solaris-2.10-sun4u-2.6/processing/doc\ncopying doc/CHANGES.html -> build/lib.solaris-2.10-sun4u-2.6/processing/doc\ncopying doc/html4css1.css -> build/lib.solaris-2.10-sun4u-2.6/processing/doc\ncopying doc/../index.html -> build/lib.solaris-2.10-sun4u-2.6/processing/doc/..\nrunning build_ext\nbuilding 'processing._processing' extension\ncreating build/temp.solaris-2.10-sun4u-2.6\ncreating build/temp.solaris-2.10-sun4u-2.6/src\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SEM_OPEN=1 -DHAVE_FD_TRANSFER=1 -DHAVE_SEM_TIMEDWAIT=1 -I/export/home/drkirkby/sage-4.3.3/local/include/python2.6 -c src/processing.c -o build/temp.solaris-2.10-sun4u-2.6/src/processing.o\nsrc/processing.c: In function 'processing_sendfd':\nsrc/processing.c:158: warning: implicit declaration of function 'CMSG_SPACE'\nsrc/processing.c:168: error: 'struct msghdr' has no member named 'msg_control'\nsrc/processing.c:169: error: 'struct msghdr' has no member named 'msg_controllen'\nsrc/processing.c:172: warning: implicit declaration of function 'CMSG_FIRSTHDR'\nsrc/processing.c:172: warning: assignment makes pointer from integer without a cast\nsrc/processing.c:175: warning: implicit declaration of function 'CMSG_LEN'\nsrc/processing.c:176: error: 'struct msghdr' has no member named 'msg_controllen'\nsrc/processing.c:177: warning: implicit declaration of function 'CMSG_DATA'\nsrc/processing.c: In function 'processing_recvfd':\nsrc/processing.c:203: error: 'struct msghdr' has no member named 'msg_control'\nsrc/processing.c:204: error: 'struct msghdr' has no member named 'msg_controllen'\nsrc/processing.c:207: warning: assignment makes pointer from integer without a cast\nsrc/processing.c:211: error: 'struct msghdr' has no member named 'msg_controllen'\nerror: command 'gcc' failed with exit status 1\n\nreal    0m0.791s\nuser    0m0.532s\nsys     0m0.189s\nsage: An error occurred while installing pyprocessing-0.52.p0\n   }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8371\n\n",
+    "closed_at": "2010-03-03T02:03:51Z",
     "created_at": "2010-02-25T23:25:45Z",
     "labels": [
         "component: porting: solaris",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Error building pyprocessing on Solaris SPARC after changes to python.",
+    "title": "Error building pyprocessing on Solaris SPARC after changes to python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8371",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

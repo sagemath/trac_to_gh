@@ -1,16 +1,17 @@
-# Issue 3832: [with spkg, needs review] add experimental Quantlib.spkg and Quantlib-SWIG.spkg to the repo
+# Issue 3832: [with spkg, positive review] add experimental Quantlib.spkg and Quantlib-SWIG.spkg to the repo
 
 archive/issues_003832.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nQuantlib and its Swig bindings are available at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1/alpha2/quantlib-0.9.6.spkg\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1/alpha2/quantlib-0.9.6-swig.spkg\n\nCaution: Building the spkgs only works on Linux (and potentially Solaris), takes about 2 hours CPUTIME, 1.9+ GB disk space and about 2GB RAM. Not for the faint of heart. This also requires the experimental boost-1.34_1.spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3832\n\n",
+    "closed_at": "2008-08-13T06:36:25Z",
     "created_at": "2008-08-13T04:33:57Z",
     "labels": [
         "component: packages: experimental",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with spkg, needs review] add experimental Quantlib.spkg and Quantlib-SWIG.spkg to the repo",
+    "title": "[with spkg, positive review] add experimental Quantlib.spkg and Quantlib-SWIG.spkg to the repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3832",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

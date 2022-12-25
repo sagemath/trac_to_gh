@@ -4,6 +4,7 @@ archive/issues_000918.json:
 ```json
 {
     "body": "Assignee: failure\n\nsome code in crypto.mq was never doctested and thus didn't work at all. Also, some methods were implemented very slow. The attached patch fixes those issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/918\n\n",
+    "closed_at": "2007-10-19T01:16:49Z",
     "created_at": "2007-10-18T14:05:11Z",
     "labels": [
         "component: doctest coverage",

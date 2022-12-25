@@ -1,16 +1,17 @@
-# Issue 866: [with patch] big NTL patch
+# Issue 866: [with patch] [tested by cwitty] big NTL patch
 
 archive/issues_000866.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: ntl\n\nThis is the big NTL patch that several people were working on during SD5. There's a ton of code in here, due to Joel Mohler, Craig Citro, Robert Bradshaw, David Harvey, and probably several more people I've forgotten. \n\nIssue created by migration from https://trac.sagemath.org/ticket/866\n\n",
+    "closed_at": "2007-10-13T07:34:00Z",
     "created_at": "2007-10-12T21:11:38Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "[with patch] big NTL patch",
+    "title": "[with patch] [tested by cwitty] big NTL patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/866",
     "user": "https://github.com/craigcitro"

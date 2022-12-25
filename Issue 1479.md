@@ -4,6 +4,7 @@ archive/issues_001479.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWilliam Stein did fix all the doctest failures from the merge with #1296.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1479\n\n",
+    "closed_at": "2007-12-12T18:31:55Z",
     "created_at": "2007-12-12T17:28:28Z",
     "labels": [
         "component: doctest coverage",

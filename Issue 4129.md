@@ -1,9 +1,10 @@
-# Issue 4129: [with patch, needs review] add support for ntl.mat_GF2
+# Issue 4129: [with patch, positive review] add support for ntl.mat_GF2
 
 archive/issues_004129.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe wrapped `ntl.GF2` so there is no reason not to wrap `ntl.mat_GF2`. Also, I needed it for comparison.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4129\n\n",
+    "body": "Assignee: @malb\n\nWe wrapped `ntl.GF2` so there is no reason not to wrap `ntl.mat_GF2`. Also, I needed it for comparison.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4129\n\n",
+    "closed_at": "2008-09-24T06:41:16Z",
     "created_at": "2008-09-15T18:42:12Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_004129.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] add support for ntl.mat_GF2",
+    "title": "[with patch, positive review] add support for ntl.mat_GF2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4129",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 We wrapped `ntl.GF2` so there is no reason not to wrap `ntl.mat_GF2`. Also, I needed it for comparison.
 

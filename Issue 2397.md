@@ -1,16 +1,17 @@
-# Issue 2397: speed up matrix_from_rows
+# Issue 2397: [with patch; with positive review] speed up matrix_from_rows and matrix_from_columns
 
 archive/issues_002397.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\nmatrix_from_rows could be made faster by using  PY_TYPE_CHECK or pyrex-style for loops.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2397\n\n",
+    "closed_at": "2008-03-15T08:05:48Z",
     "created_at": "2008-03-05T16:47:07Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "speed up matrix_from_rows",
+    "title": "[with patch; with positive review] speed up matrix_from_rows and matrix_from_columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2397",
     "user": "https://github.com/dfdeshom"

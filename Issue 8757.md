@@ -4,10 +4,10 @@ archive/issues_008757.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nUsing a database engine will be much faster, hopefully lessening the speed issues we have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8757\n\n",
+    "closed_at": "2015-01-13T01:22:41Z",
     "created_at": "2010-04-24T22:42:58Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use SQLAlchemy for storage in SageNB",

@@ -1,17 +1,17 @@
-# Issue 2102: add pull/incoming/outgoing wrappers to HG objects (like hg_sage)
+# Issue 2102: add incoming/outgoing wrappers to HG objects (like hg_sage)
 
 archive/issues_002102.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2102\n\n",
+    "closed_at": "2012-04-04T13:26:04Z",
     "created_at": "2008-02-08T07:14:11Z",
     "labels": [
         "component: distribution",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "add pull/incoming/outgoing wrappers to HG objects (like hg_sage)",
+    "title": "add incoming/outgoing wrappers to HG objects (like hg_sage)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2102",
     "user": "https://github.com/mwhansen"

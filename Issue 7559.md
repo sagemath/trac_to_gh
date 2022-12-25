@@ -7,7 +7,7 @@ archive/issues_007559.json:
     "created_at": "2009-11-30T12:23:50Z",
     "labels": [
         "component: misc",
-        "bug"
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "replace all the deprecation warning using deprecated_function_alias whenever possible",

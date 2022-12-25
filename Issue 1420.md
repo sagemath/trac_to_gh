@@ -1,9 +1,10 @@
-# Issue 1420: [trivial to fix!] documentation typo
+# Issue 1420: [with patch, with positive review] documentation typo
 
 archive/issues_001420.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\nhttp://www.sagemath.org/doc/html/tut/node39.html#sec:notebook\n\nYour worksheet can be emailed to someone else, how can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\nSHOULD READ:\n\nYour worksheet can be emailed to someone else, who can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\n\n\n\nThanks for your efforts.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1420\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nhttp://www.sagemath.org/doc/html/tut/node39.html#sec:notebook\n\nYour worksheet can be emailed to someone else, how can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\nSHOULD READ:\n\nYour worksheet can be emailed to someone else, who can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\n\n\n\nThanks for your efforts.\n \n  -- Jonathan Epstein\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1420\n\n",
+    "closed_at": "2007-12-09T10:31:33Z",
     "created_at": "2007-12-07T18:34:07Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_001420.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[trivial to fix!] documentation typo",
+    "title": "[with patch, with positive review] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1420",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 ```
 http://www.sagemath.org/doc/html/tut/node39.html#sec:notebook
@@ -32,6 +33,8 @@ Your worksheet can be emailed to someone else, who can open it up in their copy 
 
 
 Thanks for your efforts.
+ 
+  -- Jonathan Epstein
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1420

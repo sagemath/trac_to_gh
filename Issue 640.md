@@ -4,6 +4,7 @@ archive/issues_000640.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nwas@ubuntu:~/s/local/lib/python$ ls -l|grep python\nlrwxrwxrwx  1 was was      6 2007-09-03 20:06 python -> python\nlrwxrwxrwx  1 was was      9 2007-09-03 20:06 python2.5 -> python2.5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/640\n\n",
+    "closed_at": "2007-09-13T14:03:20Z",
     "created_at": "2007-09-11T20:25:30Z",
     "labels": [
         "component: packages: standard",

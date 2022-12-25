@@ -1,16 +1,17 @@
-# Issue 6992: rename lngamma to log gamma
+# Issue 6992: [with patch, positive review] rename lngamma to log gamma
 
 archive/issues_006992.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe Sage convention is to use `log` for the natural logarithm. See #6902 for more discussion.\n\nAttached patch renames the `lngamma` functions in the library, and adds deprecation notices where appropriate.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6992\n\n",
+    "closed_at": "2009-09-25T22:47:17Z",
     "created_at": "2009-09-22T19:10:47Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "rename lngamma to log gamma",
+    "title": "[with patch, positive review] rename lngamma to log gamma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6992",
     "user": "https://github.com/burcin"

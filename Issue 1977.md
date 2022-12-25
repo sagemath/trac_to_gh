@@ -1,16 +1,17 @@
-# Issue 1977: valgrind 3.3.0 no longer appends $PID per default to the logs
+# Issue 1977: [with patch, positive review] valgrind 3.3.0 no longer appends $PID per default to the logs
 
 archive/issues_001977.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI read something about this in the release notes, but the `--help` section of the valgrind command seems to be missing any clue how to reenable it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1977\n\n",
+    "closed_at": "2008-02-02T06:31:29Z",
     "created_at": "2008-01-30T04:30:52Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "valgrind 3.3.0 no longer appends $PID per default to the logs",
+    "title": "[with patch, positive review] valgrind 3.3.0 no longer appends $PID per default to the logs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1977",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

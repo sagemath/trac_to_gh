@@ -1,15 +1,16 @@
-# Issue 6911: Faster basis of a Hecke algebra
+# Issue 6911: [with patch, positive review] Faster basis and discriminants of a Hecke algebra
 
 archive/issues_006911.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nFollowup to #6768, uses algorithm at http://wiki.sagemath.org/days17/projects/presagedays/discussion\n\nIssue created by migration from https://trac.sagemath.org/ticket/6911\n\n",
+    "closed_at": "2009-09-19T20:40:25Z",
     "created_at": "2009-09-10T05:48:10Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Faster basis of a Hecke algebra",
+    "title": "[with patch, positive review] Faster basis and discriminants of a Hecke algebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6911",
     "user": "https://github.com/robertwb"

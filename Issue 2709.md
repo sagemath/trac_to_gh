@@ -1,17 +1,17 @@
-# Issue 2709: add a prime_above() function to NumberField_generic for finding prime ideals above other ideals
+# Issue 2709: [with patch, positive review] add a prime_above() function to NumberField_generic for finding prime ideals above other ideals
 
 archive/issues_002709.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan @craigcitro\n\nKeywords: number field prime above\n\nMy research requires reducing curves over number fields modulo prime ideals, so I need to find suitable prime ideals all the time.  The attached function does exactly that, albeit naively.  I imagine this is useful to more people than me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2709\n\n",
+    "closed_at": "2008-03-29T14:36:45Z",
     "created_at": "2008-03-28T21:24:02Z",
     "labels": [
         "component: number theory",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "add a prime_above() function to NumberField_generic for finding prime ideals above other ideals",
+    "title": "[with patch, positive review] add a prime_above() function to NumberField_generic for finding prime ideals above other ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2709",
     "user": "https://github.com/ncalexan"

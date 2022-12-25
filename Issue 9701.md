@@ -4,6 +4,7 @@ archive/issues_009701.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nThe missing conversion from `NumberFieldElement` to float is the cause of this strangeness:\n\n```\nsage: RR(I*I)\n-1.00000000000000\nsage: float(I*I)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/cwitty/svn-ironpython/IronPython_Main/<ipython console> in <module>()\n\n/home/cwitty/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__float__ (sage/symbolic/expression.cpp:5205)()\n\nTypeError: unable to simplify to float approximation\n```\n\n(I'll have a patch posted for this in a few minutes.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9701\n\n",
+    "closed_at": "2010-09-29T04:23:21Z",
     "created_at": "2010-08-07T00:37:10Z",
     "labels": [
         "component: number fields",

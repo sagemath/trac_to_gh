@@ -1,15 +1,16 @@
-# Issue 4203: Make a suboption decorator to complement #4201
+# Issue 4203: [with patch, positive review] Make a suboption decorator to complement #4201
 
 archive/issues_004203.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  anakha\n\n```\n[17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.\n[17:07] <mhansen> @suboption('arrow', color='red', line='+')\n[17:07] <jason-> okay, yeah, even better.\n[17:07] <mhansen> And that would pick up things like arrow_color='blue'.\n[17:07] <jason-> then I don't have to type the dictionary explicitly\n[17:09] <mhansen> I think doing something like that might be a good idea.  It'd at least be a nice consistent way to handle all of these options.\n```\n\nThe idea is that we'd like to get a bunch of options to pass on to, say, an arrow_drawing routine.  It'd be really nice if we could rename the suboptions too, so the original arrow_color argument could be returned as the rgbcolor element of the arrow_options dict.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4203\n\n",
+    "closed_at": "2008-10-25T21:22:41Z",
     "created_at": "2008-09-26T22:45:34Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Make a suboption decorator to complement #4201",
+    "title": "[with patch, positive review] Make a suboption decorator to complement #4201",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4203",
     "user": "https://github.com/jasongrout"

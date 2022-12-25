@@ -1,16 +1,17 @@
-# Issue 4581: Permutation constructor fails with PermutationGroupElement
+# Issue 4581: [with patch, positive review] Permutation constructor fails with PermutationGroupElement
 
 archive/issues_004581.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @rlmill sage-combinat\n\nSince PermutationGroupElement accepts Permutations:\n\n```\nsage: PermutationGroupElement(Permutation([2,1,3]))\n(1,2)\n```\nit would be good if the other direction worked as well:\n\n```\nsage: g = PermutationGroupElement([2,1,3])\nsage: g\n(1,2)\nsage: Permutation(g)\n...\nValueError: l must be a list\n```\nThe following works:\n\n```\nsage: Permutation(g.list())\n[2, 1, 3]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4581\n\n",
+    "closed_at": "2008-12-04T13:35:02Z",
     "created_at": "2008-11-22T01:45:10Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Permutation constructor fails with PermutationGroupElement",
+    "title": "[with patch, positive review] Permutation constructor fails with PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4581",
     "user": "https://github.com/saliola"

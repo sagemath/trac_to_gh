@@ -3,7 +3,8 @@
 archive/issues_007685.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nThe docstring for n.factor (for n a Sage integer) says it returns a list of pairs.  Actually it returns a Factorization (which derives from list, but prints differently, has arithmetic support, etc.).\n\nWe should also have an OUTPUT: block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7685\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nKeywords: sd40.5\n\nThe docstring for n.factor (for n a Sage integer) says it returns a list of pairs.  Actually it returns a Factorization (which derives from list, but prints differently, has arithmetic support, etc.).\n\nWe should also have an OUTPUT: block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7685\n\n",
+    "closed_at": "2012-06-05T06:43:39Z",
     "created_at": "2009-12-15T18:08:01Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,6 +21,8 @@ archive/issues_007685.json:
 Assignee: @aghitza
 
 CC:  @kcrisman
+
+Keywords: sd40.5
 
 The docstring for n.factor (for n a Sage integer) says it returns a list of pairs.  Actually it returns a Factorization (which derives from list, but prints differently, has arithmetic support, etc.).
 

@@ -1,16 +1,17 @@
-# Issue 3053: notebook -- new cell_resize doesn't respect %hide at the beginning of a cell
+# Issue 3053: [with patch; positive review] notebook -- new cell_resize doesn't respect %hide at the beginning of a cell
 
 archive/issues_003053.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf a cell starts with %hide, it should not be shown unless it is in focus.  The new cell_resize code doesn't respect this.  To see this:\n\n1. Load a fresh worksheet with %hide's -- none of them are hidden.  Click on input cells then out  hide them.\n\n2. Resize a web browser window with %hides -- suddenly all %hide inputs are shown.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3053\n\n",
+    "closed_at": "2008-05-12T11:06:35Z",
     "created_at": "2008-04-29T06:23:58Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- new cell_resize doesn't respect %hide at the beginning of a cell",
+    "title": "[with patch; positive review] notebook -- new cell_resize doesn't respect %hide at the beginning of a cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3053",
     "user": "https://github.com/williamstein"

@@ -1,22 +1,23 @@
-# Issue 3682: notebook -- on sagenb.org worksheets 22 days and older are blank
+# Issue 3682: notebook -- on sagenb.org published worksheets 22 days and older are blank
 
 archive/issues_003682.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3682\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3682\n\n",
+    "closed_at": "2009-01-20T04:02:45Z",
     "created_at": "2008-07-19T14:32:34Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "notebook -- on sagenb.org worksheets 22 days and older are blank",
+    "title": "notebook -- on sagenb.org published worksheets 22 days and older are blank",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3682",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 
 

@@ -1,15 +1,16 @@
-# Issue 8420: [work in progress] new feature : class of perfect matching
+# Issue 8420: new feature : class of perfect matching
 
 archive/issues_008420.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nKeywords: perfect matching\n\nI am working on implementing the enumerated set of perfect matchings of a ground set (with, in particular, an iterator), a class of matching and simple methods.\n\nI wrote code about this for my own research and thought it could be useful for other people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8420\n\n",
+    "closed_at": "2010-04-15T23:49:50Z",
     "created_at": "2010-03-02T14:12:00Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "[work in progress] new feature : class of perfect matching",
+    "title": "new feature : class of perfect matching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8420",
     "user": "https://trac.sagemath.org/admin/accounts/users/vferay"

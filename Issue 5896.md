@@ -1,9 +1,10 @@
-# Issue 5896: [with patch, needs trivial review] Documentation fix for lcalc interface.
+# Issue 5896: [with patch, with positive review] Documentation fix for lcalc interface.
 
 archive/issues_005896.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe documentation for `lcalc.twist_values` and `lcalc.twist_zeros` is wrong. It claims that the function computes all twists for `(d/.)` with `dmin <= d <= dmax`, but in fact, it computes it for all `(d/.)` such that the **conductor** lies between `dmin` and `dmax`. \n\nTrivial patch to fix this is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5896\n\n",
+    "closed_at": "2009-04-30T01:48:29Z",
     "created_at": "2009-04-26T00:43:03Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_005896.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs trivial review] Documentation fix for lcalc interface.",
+    "title": "[with patch, with positive review] Documentation fix for lcalc interface.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5896",
     "user": "https://github.com/craigcitro"

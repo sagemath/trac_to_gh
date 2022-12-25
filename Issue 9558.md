@@ -3,10 +3,10 @@
 archive/issues_009558.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nThis is a little vague - should it also be for SR, not just polynomial rings?  But it seems like a reasonable request on sage-support:\n\n```\nHi, \nI would like to know if there are any function that says if a \npolynomial is or not symmetric (like: 'is_symmetric'), so Mathematica \nhave this kind of function. \nhttp://en.wikipedia.org/wiki/Symmetric_polynomial \nThanks! \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9558\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nThis is a little vague - should it also be for SR, not just polynomial rings?  But it seems like a reasonable request on sage-support:\n\n```\nHi, \nI would like to know if there are any function that says if a \npolynomial is or not symmetric (like: 'is_symmetric'), so Mathematica \nhave this kind of function. \nhttp://en.wikipedia.org/wiki/Symmetric_polynomial \nThanks! \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9558\n\n",
     "created_at": "2010-07-21T01:22:52Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,7 +16,7 @@ archive/issues_009558.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @aghitza
+Assignee: sage-combinat
 
 CC:  sage-combinat
 

@@ -1,20 +1,23 @@
-# Issue 6344: Typesetting partial derivatives in new Symbolics
+# Issue 6344: Typesetting partial derivatives in new symbolics
 
 archive/issues_006344.json:
 ```json
 {
-    "body": "CC:  @jasongrout mvngu @robertwb @eviatarbach schymans @pjbruin @nbruin\n\nNew symbolics uses \"D\" format for derivatives instead of old \"diff\" format. \n\nSee the threads below for discussion on various related issues\n\n**[1]**  http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n\n**[2]**  http://groups.google.com/group/sage-devel/browse_thread/thread/2c8068f27c1fb642\n\nThe purpose of this patch to decide the strategy: how to tackle the various issues while typesetting D derivative.\n\nSome part of the code from the patch #5711 should be taken out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6344\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @robertwb @eviatarbach schymans @pjbruin @nbruin\n\nNew symbolics uses \"D\" format for derivatives instead of old \"diff\" format. \n\nSee the threads below for discussion on various related issues\n\n**[1]**  http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n\n**[2]**  http://groups.google.com/group/sage-devel/browse_thread/thread/2c8068f27c1fb642\n\nSome patches attached to #5711 also has code for this.\n \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6344\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2009-06-16T23:47:36Z",
     "labels": [
         "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Typesetting partial derivatives in new Symbolics",
+    "title": "Typesetting partial derivatives in new symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6344",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
+Assignee: @burcin
+
 CC:  @jasongrout mvngu @robertwb @eviatarbach schymans @pjbruin @nbruin
 
 New symbolics uses "D" format for derivatives instead of old "diff" format. 
@@ -25,9 +28,9 @@ See the threads below for discussion on various related issues
 
 **[2]**  http://groups.google.com/group/sage-devel/browse_thread/thread/2c8068f27c1fb642
 
-The purpose of this patch to decide the strategy: how to tackle the various issues while typesetting D derivative.
+Some patches attached to #5711 also has code for this.
+ 
 
-Some part of the code from the patch #5711 should be taken out.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6344
 

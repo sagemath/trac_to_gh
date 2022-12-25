@@ -1,16 +1,17 @@
-# Issue 5341: jsmath broken on wiki
+# Issue 5341: [with patch; needs review] jsmath broken on wiki
 
 archive/issues_005341.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  wstein\n\nApache thinks that the static pages for the wiki should still be handled by moinmoin. E.g.,\n\nhttp://wiki.sagemath.org/moin_static171/jsmath/jsMath.js\n\nThe help pages say that an `Alias` directive should be placed in the config before `ScriptAlias`:\n\nhttp://moinmo.in/HelpOnInstalling/ApacheOnLinux#Configure_Apache\n\n\n```\n<mabs|4666> Yep, make it an issue for all wikis.\n<mabs|4666> or at least mpir, l-functions and sage\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5341\n\n",
+    "closed_at": "2009-06-15T13:36:35Z",
     "created_at": "2009-02-22T20:41:16Z",
     "labels": [
         "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "jsmath broken on wiki",
+    "title": "[with patch; needs review] jsmath broken on wiki",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5341",
     "user": "https://github.com/burcin"

@@ -1,16 +1,17 @@
-# Issue 5727: Improve doctest coverage for sage/modular
+# Issue 5727: [with patch, positive review] Improve doctest coverage for sage/modular
 
 archive/issues_005727.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: doctests\n\nThe attached patch adds doctests for 28 previously undoctested functions in the sage/modular directory, and fixes 2 small bugs uncovered in the process: one in pickling of arithmetic subgroups defined by permutations, and one in dirichlet characters (galois_orbits() returned meaningless garbage when the base ring wasn't an integral domain). \n\nThis brings the doctest coverage to 100% for everything *except* the three big subdirectories modform/, modsym/ and hecke/. I will get to work on these next.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5727\n\n",
+    "closed_at": "2009-04-10T19:39:59Z",
     "created_at": "2009-04-09T18:05:44Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Improve doctest coverage for sage/modular",
+    "title": "[with patch, positive review] Improve doctest coverage for sage/modular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5727",
     "user": "https://github.com/loefflerd"

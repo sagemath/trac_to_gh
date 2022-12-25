@@ -1,22 +1,24 @@
-# Issue 6542: tachyon ouput seems broken in sage-4.1
+# Issue 6542: [with patch, positive review] tachyon ouput seems broken in sage-4.1
 
 archive/issues_006542.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman wstein boothby mvngu\n\nKeywords: graphics, tachyon, raytracer\n\nAs part of tracking this down, I am planning on adding doctests to more of the tachyon related files, which currently have low coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6542\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @kcrisman wstein boothby mvngu\n\nKeywords: graphics, tachyon, raytracer\n\nAs part of tracking this down, I am planning on adding doctests to more of the tachyon related files, which currently have low coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6542\n\n",
+    "closed_at": "2009-07-29T11:12:52Z",
     "created_at": "2009-07-16T11:49:09Z",
     "labels": [
         "component: graphics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "tachyon ouput seems broken in sage-4.1",
+    "title": "[with patch, positive review] tachyon ouput seems broken in sage-4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6542",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: @williamstein
+Assignee: mhampton
 
 CC:  @kcrisman wstein boothby mvngu
 

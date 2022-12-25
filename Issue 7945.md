@@ -3,7 +3,8 @@
 archive/issues_007945.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\n```\nsage: K.<a> = NumberField(x^2 + 23)\nsage: G = K.class_group(); G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^2 + 23\nsage: G.an_element() in G\nFalse\n```\n\nCatched with #7921.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7945\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nsage: K.<a> = NumberField(x^2 + 23)\nsage: G = K.class_group(); G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^2 + 23\nsage: G.an_element() in G\nFalse\n```\n\nCaught with #7921. Fixed by #9244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7945\n\n",
+    "closed_at": "2010-07-20T07:52:02Z",
     "created_at": "2010-01-16T12:28:51Z",
     "labels": [
         "component: number fields",
@@ -26,7 +27,7 @@ sage: G.an_element() in G
 False
 ```
 
-Catched with #7921.
+Caught with #7921. Fixed by #9244.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7945
 

@@ -1,15 +1,16 @@
-# Issue 3939: [with patch, needs review] copyright notice in integer.pyx
+# Issue 3939: [with patch, positive review] copyright notice in integer.pyx
 
 archive/issues_003939.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @robertwb dmharvey wstein @tornaria @dfdeshom\n\nKeywords: legal, IANAL\n\nI'm working on #3905 and want to use `integer.pyx` as a showcase on how to use AUTHORs tags and copyright. Unfortunately, the file only has William as copyright holder although many people touched it a lot. \n\nSo I did something **nasty** and added a bunch of copyright notices. I don't know if I'm legally allowed to do that so I looking for consent/dissent by the the authors. \n\nFeel free to shoot this one down, I'll have to look for a different example then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3939\n\n",
+    "closed_at": "2008-08-25T03:24:06Z",
     "created_at": "2008-08-23T21:27:10Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] copyright notice in integer.pyx",
+    "title": "[with patch, positive review] copyright notice in integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3939",
     "user": "https://github.com/malb"

@@ -1,16 +1,17 @@
-# Issue 4005: [with patch, needs review] sage-coverage screws up with lambda functions as default arguments
+# Issue 4005: [with patch, positive review] sage-coverage screws up with lambda functions as default arguments
 
 archive/issues_004005.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4005\n\n",
+    "closed_at": "2008-08-30T23:59:39Z",
     "created_at": "2008-08-30T18:53:14Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] sage-coverage screws up with lambda functions as default arguments",
+    "title": "[with patch, positive review] sage-coverage screws up with lambda functions as default arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4005",
     "user": "https://github.com/rlmill"

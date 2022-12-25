@@ -1,16 +1,17 @@
-# Issue 6639: Documentation for Lyndon words, with patch, needs review
+# Issue 6639: [with patch, positive review] Documentation for Lyndon words
 
 archive/issues_006639.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow @peter-mcnamara sage-combinat\n\nAdded definition \n\nIssue created by migration from https://trac.sagemath.org/ticket/6639\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow @peter-mcnamara sage-combinat\n\nKeywords: doc\n\nAdded definition \n\nIssue created by migration from https://trac.sagemath.org/ticket/6639\n\n",
+    "closed_at": "2009-07-29T13:24:39Z",
     "created_at": "2009-07-27T13:05:58Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Documentation for Lyndon words, with patch, needs review",
+    "title": "[with patch, positive review] Documentation for Lyndon words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6639",
     "user": "https://github.com/peter-mcnamara"
@@ -19,6 +20,8 @@ archive/issues_006639.json:
 Assignee: @mwhansen
 
 CC:  @jbandlow @peter-mcnamara sage-combinat
+
+Keywords: doc
 
 Added definition 
 

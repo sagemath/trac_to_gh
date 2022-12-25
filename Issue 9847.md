@@ -4,6 +4,7 @@ archive/issues_009847.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nTo run the copy of R bundled with Sage, we can use `sage -R`, but this option is not documented in the help message returned by `sage -advanced`.\n\nThe relevant file is `SAGE_ROOT/local/bin/sage-sage`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9848\n\n",
+    "closed_at": "2011-08-22T08:08:30Z",
     "created_at": "2010-09-01T09:51:49Z",
     "labels": [
         "component: user interface",

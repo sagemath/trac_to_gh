@@ -3,7 +3,8 @@
 archive/issues_008620.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nKeywords: modular symbols\n\nThere is a minus sign in the code for diamond operators which shouldn't be there; what actually gets returned is the diamond operator times the star involution! In particular, ```< 1 >``` really ought to be the identity map. This patch corrects the error and adds a doctest to prove it. (This is needed for some code I wrote with Jared Weinstein at the 2010 Montreal conference, in which it's really vital to work with sign 0 symbols.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8620\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: modular symbols\n\nThere is a minus sign in the code for diamond operators which shouldn't be there; what actually gets returned is the diamond operator times the star involution! In particular, ```<1>``` really ought to be the identity map. This patch corrects the error and adds a doctest to prove it. (This is needed for some code I wrote with Jared Weinstein at the 2010 Montreal conference, in which it's really vital to work with sign 0 symbols.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8620\n\n",
+    "closed_at": "2010-04-16T18:53:30Z",
     "created_at": "2010-03-28T21:46:38Z",
     "labels": [
         "component: modular forms",
@@ -20,7 +21,7 @@ Assignee: @craigcitro
 
 Keywords: modular symbols
 
-There is a minus sign in the code for diamond operators which shouldn't be there; what actually gets returned is the diamond operator times the star involution! In particular, ```< 1 >``` really ought to be the identity map. This patch corrects the error and adds a doctest to prove it. (This is needed for some code I wrote with Jared Weinstein at the 2010 Montreal conference, in which it's really vital to work with sign 0 symbols.)
+There is a minus sign in the code for diamond operators which shouldn't be there; what actually gets returned is the diamond operator times the star involution! In particular, ```<1>``` really ought to be the identity map. This patch corrects the error and adds a doctest to prove it. (This is needed for some code I wrote with Jared Weinstein at the 2010 Montreal conference, in which it's really vital to work with sign 0 symbols.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8620
 

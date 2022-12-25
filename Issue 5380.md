@@ -1,16 +1,17 @@
-# Issue 5380: devmap: allow to search for contributions by trac username
+# Issue 5380: [with patch; positive review] devmap: allow to search for contributions by trac username
 
 archive/issues_005380.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nCC:  @haraldschilly\n\nKeywords: devmap\n\nThe development map (devmap) at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ncurrently supports search of a developer's contributions by her/his real name. For most developers, their real names diff from their trac usernames. The devmap should support search of contributions by trac usernames as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5380\n\n",
+    "closed_at": "2009-03-16T15:59:22Z",
     "created_at": "2009-02-26T03:15:52Z",
     "labels": [
         "component: website/wiki",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "devmap: allow to search for contributions by trac username",
+    "title": "[with patch; positive review] devmap: allow to search for contributions by trac username",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5380",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

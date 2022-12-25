@@ -4,6 +4,7 @@ archive/issues_006566.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: key space, classical cryptosystems\n\nAdd method `key_space()` to the following classes:\n\n* `sage.crypto.classical.HillCryptosystem`\n\n* `sage.crypto.classical.SubstitutionCryptosystem`\n\n* `sage.crypto.classical.TranspositionCryptosystem`\n\n* `sage.crypto.classical.VigenereCryptosystem`\n\nThe new method `key_space()` should output the number of possible keys for each of the above cryptosystems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6566\n\n",
+    "closed_at": "2015-06-19T08:38:33Z",
     "created_at": "2009-07-20T11:56:13Z",
     "labels": [
         "component: cryptography"

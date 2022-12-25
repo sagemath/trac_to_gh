@@ -1,16 +1,17 @@
-# Issue 1548: Sage 2.9: calculus/calculus.py numerical noise doctest
+# Issue 1548: [with patch] Sage 2.9: calculus/calculus.py numerical noise doctest
 
 archive/issues_001548.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage-main/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 2460:\n    sage: v.find_root(0, 0.002)\nExpected:\n    0.0015403270679114178\nGot:\n    0.0015403270679114176\n**********************************************************************\nFile \"calculus.py\", line 2473:\n    sage: a.find_root(0,0.002)\nExpected:\n    0.00041105140493493411\nGot:\n    0.00041105140493493417\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1548\n\n",
+    "closed_at": "2007-12-18T21:24:27Z",
     "created_at": "2007-12-17T13:32:31Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Sage 2.9: calculus/calculus.py numerical noise doctest",
+    "title": "[with patch] Sage 2.9: calculus/calculus.py numerical noise doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1548",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 1986: Numerical noise in fast evaluation code.
+# Issue 1986: [with patch, positive review] Numerical noise in fast evaluation code.
 
 archive/issues_001986.json:
 ```json
 {
     "body": "Assignee: failure\n\nTested on Fedora 7 and 8 32 bits:\n\n```\nsage -t  devel/sage-main/sage/ext/fast_eval.pyx             **********************************************************************\nFile \"fast_eval.pyx\", line 919:\n     sage: f(pi/4)\nExpected:\n     1.00000000000000...\nGot:\n     1.0\n**********************************************************************\nFile \"fast_eval.pyx\", line 1013:\n     sage: f(tanh(0.5))\nExpected:\n     0.5\nGot:\n     0.49999999999999994\n**********************************************************************\n2 items had failures:\n    1 of   3 in __main__.example_29\n    1 of   3 in __main__.example_38\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_fast_eval.pyx\n          [2.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/ext/fast_eval.pyx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1986\n\n",
+    "closed_at": "2008-02-02T08:23:42Z",
     "created_at": "2008-01-30T18:16:24Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Numerical noise in fast evaluation code.",
+    "title": "[with patch, positive review] Numerical noise in fast evaluation code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1986",
     "user": "https://github.com/jaapspies"

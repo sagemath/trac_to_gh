@@ -1,21 +1,22 @@
-# Issue 1859: 3d and 2d graphics -- some unification
+# Issue 1859: [with patch; positive review] 3d and 2d graphics -- some unification
 
 archive/issues_001859.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMake it so that the following sort of thing works:\n\n```\nsage: sphere() + plot(sin(x), (x,0,10))\nsage: plot(sin(x), (x,0,10)).graphic3d()\n```\n\nand\n\n```\nsage: plot(sin(x), (x,0,10)).show(viewer='jmol')\n```\n\nIn each case the plot would be rendered using 3d primitives instead of 2d primitives, when possible -- primitives that aren't implemented in 3d would degrade or be removed.   Basically make a way of *coercing* 2d plots into the world of 3d plots. \n\nThis would make it possible to view whole arrays, groups, whatever of 2d plots all organized in some spatial way in 3d, and also to zoom in very close, etc., on 2d plots.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1859\n\n",
+    "body": "Assignee: @robertwb\n\nMake it so that the following sort of thing works:\n\n```\nsage: sphere() + plot(sin(x), (x,0,10))\nsage: plot(sin(x), (x,0,10)).graphic3d()\n```\n\nand\n\n```\nsage: plot(sin(x), (x,0,10)).show(viewer='jmol')\n```\n\nIn each case the plot would be rendered using 3d primitives instead of 2d primitives, when possible -- primitives that aren't implemented in 3d would degrade or be removed.   Basically make a way of *coercing* 2d plots into the world of 3d plots. \n\nThis would make it possible to view whole arrays, groups, whatever of 2d plots all organized in some spatial way in 3d, and also to zoom in very close, etc., on 2d plots.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1859\n\n",
+    "closed_at": "2008-01-20T05:24:24Z",
     "created_at": "2008-01-20T01:27:25Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "3d and 2d graphics -- some unification",
+    "title": "[with patch; positive review] 3d and 2d graphics -- some unification",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1859",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Make it so that the following sort of thing works:
 

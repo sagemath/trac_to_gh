@@ -1,22 +1,24 @@
-# Issue 6674: only use ASCII characters in patches
+# Issue 6674: [with patch, positive review] only use ASCII characters in patches
 
 archive/issues_006674.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nathanncohen @rlmill\n\nThis is a follow-up to #5793.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6674\n\n",
+    "body": "Assignee: tba\n\nCC:  @nathanncohen @rlmill\n\nThis is a follow-up to #5793.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6674\n\n",
+    "closed_at": "2009-08-07T05:54:35Z",
     "created_at": "2009-08-04T08:22:32Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "only use ASCII characters in patches",
+    "title": "[with patch, positive review] only use ASCII characters in patches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6674",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tbd
+Assignee: tba
 
 CC:  @nathanncohen @rlmill
 

@@ -1,9 +1,10 @@
-# Issue 5700: [with patch, needs review] 3.4.1.rc1: reference manual fixes
+# Issue 5700: [with patch, do not review] 3.4.1.rc1: reference manual fixes
 
 archive/issues_005700.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nSince #5555 is not part of Sage, strings like \\ZZ, \\GF{q}, or \\QQ in docstrings lead to errors when processing the PDF version of the reference manual (and lead to strings like \\ZZ, etc., appearing as is in the html version).  This patch changes \\ZZ to \\mathbf{Z}, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5700\n\n",
+    "closed_at": "2009-04-09T20:53:34Z",
     "created_at": "2009-04-06T20:41:19Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005700.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] 3.4.1.rc1: reference manual fixes",
+    "title": "[with patch, do not review] 3.4.1.rc1: reference manual fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5700",
     "user": "https://github.com/jhpalmieri"

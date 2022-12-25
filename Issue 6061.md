@@ -1,9 +1,10 @@
-# Issue 6061: [with patch; needs review] refresh the pickle jar
+# Issue 6061: [with patch; positive review] refresh the pickle jar
 
 archive/issues_006061.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSage-4.0 has tons  (nearly 100) of objects with doctests that create pickles, which aren't in the pickle jar right now (in sage-3.4.2).  \nThe attached new pickle *adds* all these 100 pickles to the existing pickle jar, and deletes a few from calculus that are no longer supported.  This depends on the pynac switch for the new symbolic pickles to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6061\n\n",
+    "body": "Assignee: mabshoff\n\nSage-4.0 has tons  (nearly 100) of objects with doctests that create pickles, which aren't in the pickle jar right now (in sage-3.4.2).  \nThe attached new pickle *adds* all these 100 pickles to the existing pickle jar, and deletes a few from calculus that are no longer supported.  This depends on the pynac switch for the new symbolic pickles to work. \n\nThe patch is here:\n\n  http://sage.math.washington.edu/home/wstein/patches/pickle_jar.tar.bz2\n\nIssue created by migration from https://trac.sagemath.org/ticket/6061\n\n",
+    "closed_at": "2009-05-20T23:38:04Z",
     "created_at": "2009-05-18T04:00:25Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_006061.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] refresh the pickle jar",
+    "title": "[with patch; positive review] refresh the pickle jar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6061",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,11 @@ archive/issues_006061.json:
 Assignee: mabshoff
 
 Sage-4.0 has tons  (nearly 100) of objects with doctests that create pickles, which aren't in the pickle jar right now (in sage-3.4.2).  
-The attached new pickle *adds* all these 100 pickles to the existing pickle jar, and deletes a few from calculus that are no longer supported.  This depends on the pynac switch for the new symbolic pickles to work.
+The attached new pickle *adds* all these 100 pickles to the existing pickle jar, and deletes a few from calculus that are no longer supported.  This depends on the pynac switch for the new symbolic pickles to work. 
+
+The patch is here:
+
+  http://sage.math.washington.edu/home/wstein/patches/pickle_jar.tar.bz2
 
 Issue created by migration from https://trac.sagemath.org/ticket/6061
 

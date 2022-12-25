@@ -3,7 +3,8 @@
 archive/issues_009559.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  boothby @nathanncohen @kini @dimpase\n\nRight now this ticket is for organization, so I'm leaving it as \"new\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9559\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby @nathanncohen @kini @dimpase\n\nThe basic idea is that one has objects which satisfy the criteria set out in `sage/groups/perm_gps/partn_ref`. In particular, one has implemented a refinement function, a comparison function, and an equivalent-children function. Then one defines the following four functions, and the code which will appear here will do the rest.\n\n1. Given an input object `X`, this function will return a number `k`. This is the number of augmentations from `X` to perform, thought of abstractly as the list `[0, 1, ..., k-1]`. The user will keep the data of what augmentations these actually are.\n\n2. Given a permutation of `X` (acting on `[0, 1, ..., n-1]`), and a number `a` in `[0, 1, ..., k-1]`, outputs a number `b` in the same range, such that the augmentation represented by `a` maps to the one represented by `b` under the permutation.\n\n3. Given a number in `[0, 1, ..., k-1]`, outputs an object `C` which realizes the augmentation.\n\n4. Given a permutation `g`, and an object `C`, applies `g` to `C`, constructs an arbitrary parent object `P` of `C`, and returns `g^(-1)(P)`.\n\nFunction (2) will be optional. If not provided, then the list of augmentations given in (1) will have to be a set of orbit representatives.\n\nNOTE: ticket #11369 should be set to needs_review once this one is ready\n\nIssue created by migration from https://trac.sagemath.org/ticket/9559\n\n",
+    "closed_at": "2013-01-21T21:07:39Z",
     "created_at": "2010-07-21T08:27:52Z",
     "labels": [
         "component: group theory"
@@ -15,11 +16,23 @@ archive/issues_009559.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: joyner
+Assignee: @rlmill
 
 CC:  boothby @nathanncohen @kini @dimpase
 
-Right now this ticket is for organization, so I'm leaving it as "new".
+The basic idea is that one has objects which satisfy the criteria set out in `sage/groups/perm_gps/partn_ref`. In particular, one has implemented a refinement function, a comparison function, and an equivalent-children function. Then one defines the following four functions, and the code which will appear here will do the rest.
+
+1. Given an input object `X`, this function will return a number `k`. This is the number of augmentations from `X` to perform, thought of abstractly as the list `[0, 1, ..., k-1]`. The user will keep the data of what augmentations these actually are.
+
+2. Given a permutation of `X` (acting on `[0, 1, ..., n-1]`), and a number `a` in `[0, 1, ..., k-1]`, outputs a number `b` in the same range, such that the augmentation represented by `a` maps to the one represented by `b` under the permutation.
+
+3. Given a number in `[0, 1, ..., k-1]`, outputs an object `C` which realizes the augmentation.
+
+4. Given a permutation `g`, and an object `C`, applies `g` to `C`, constructs an arbitrary parent object `P` of `C`, and returns `g^(-1)(P)`.
+
+Function (2) will be optional. If not provided, then the list of augmentations given in (1) will have to be a set of orbit representatives.
+
+NOTE: ticket #11369 should be set to needs_review once this one is ready
 
 Issue created by migration from https://trac.sagemath.org/ticket/9559
 

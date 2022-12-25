@@ -1,9 +1,10 @@
-# Issue 3516: [new coercion] libSingular segfault
+# Issue 3516: libSingular segfault
 
 archive/issues_003516.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nCC:  @malb @robertwb\n\nOn sage.math with the coercion branch on top of 3.0.3 from June 26th we get a segfault in libSingular on startup. The valgrind log points to an invalid read in line 267 of multi_polynomial_libsingular.pyx\n\nLine 267 is `self._ring = <ring*>omAlloc0Bin(sip_sring_bin)` in the following code block:\n\n```\n        # from the SINGULAR source code documentation for the rInit function\n        ##  characteristic --------------------------------------------------\n        ##  input: 0 ch=0 : Q     parameter=NULL    ffChar=FALSE   float_len (done)\n        ##         0    1 : Q(a,...)        *names         FALSE             (todo)\n        ##         0   -1 : R               NULL           FALSE  0\n        ##         0   -1 : R               NULL           FALSE  prec. >6\n        ##         0   -1 : C               *names         FALSE  prec. 0..?\n        ##         p    p : Fp              NULL           FALSE             (done)\n        ##         p   -p : Fp(a)           *names         FALSE             (done)\n        ##         q    q : GF(q=p^n)       *names         TRUE              (todo)\n\n        if PY_TYPE_CHECK(base_ring, FiniteField_prime_modn):\n            if base_ring.characteristic() <= 2147483629:\n                characteristic = base_ring.characteristic()\n            else:\n                raise TypeError, \"Characteristic p must be <= 2147483629.\"\n\n        elif PY_TYPE_CHECK(base_ring, RationalField):\n            characteristic = 0\n\n        elif PY_TYPE_CHECK(base_ring, FiniteField_generic):\n            if base_ring.characteristic() <= 2147483629:\n                characteristic = -base_ring.characteristic() # note the negative characteristic\n            else:\n                raise TypeError, \"characteristic must be <= 2147483629.\"\n            k = MPolynomialRing_libsingular(base_ring.prime_subfield(), 1, base_ring.variable_name(), 'lex')\n            minpoly = base_ring.polynomial()(k.gen())\n            is_extension = True\n\n        elif PY_TYPE_CHECK(base_ring, NumberField_generic):\n            raise NotImplementedError, \"Number fields are not fully supported yet.\"\n            characteristic = 1\n            k = MPolynomialRing_libsingular(RationalField(), 1, base_ring.variable_name(), 'lex')\n            minpoly = base_ring.polynomial()(k.gen())\n            is_extension = True\n        else:\n            raise NotImplementedError, \"Only GF(q) and QQ are supported.\"\n\n        self._ring = <ring*>omAlloc0Bin(sip_sring_bin)\n        self._ring.ch = characteristic\n        self._ring.N = n\n        self._ring.names  = _names\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3516\n\n",
+    "closed_at": "2008-09-14T09:40:37Z",
     "created_at": "2008-06-26T22:49:44Z",
     "labels": [
         "component: coercion",
@@ -11,7 +12,7 @@ archive/issues_003516.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[new coercion] libSingular segfault",
+    "title": "libSingular segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3516",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

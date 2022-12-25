@@ -3,10 +3,12 @@
 archive/issues_009314.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nI think #9086 isn't completly fixed:\n\n {{{\n sage: var('x y')\n sage: latex(-x/y) \n \\frac{x}{y}\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9314\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @williamstein\n\nKeywords: latex, sign, minus, pynac\n\nI think #9086 isn't completly fixed:\n\n {{{\n sage: var('x y')\n sage: latex(-x/y) \n \\frac{x}{y}\n sage: latex(x/-y) \n \\frac{x}{y}\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9314\n\n",
+    "closed_at": "2010-07-13T16:33:15Z",
     "created_at": "2010-06-22T18:19:43Z",
     "labels": [
-        "component: algebra",
+        "component: symbolics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -16,15 +18,19 @@ archive/issues_009314.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/damm"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  @williamstein
+
+Keywords: latex, sign, minus, pynac
 
 I think #9086 isn't completly fixed:
 
  {{{
  sage: var('x y')
  sage: latex(-x/y) 
+ \frac{x}{y}
+ sage: latex(x/-y) 
  \frac{x}{y}
  }}}
 

@@ -1,15 +1,16 @@
-# Issue 3159: [with patch; needs review] Patch adding soname to ntl shared library
+# Issue 3159: [with patch; positive review] Patch adding soname to ntl shared library
 
 archive/issues_003159.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  f.r.bissey@massey.ac.nz\n\nFran\u00e7ois Bissey and I merged our patches for adding library versioning and a soname to ntl's shared library and for building the static library without -fPIC and the shared library with -fPIC, and tested that they work for Debian and Gentoo builds.  I believe that if this patch were applied upstream, SAGE would be able to stop patch the ntl makefile as well.  I'm submitting it here so that it can be tested for a standard SAGE build, so we can be sure the patch works before submitting it to Victor Shoup.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3159\n\n",
+    "closed_at": "2008-05-11T22:00:10Z",
     "created_at": "2008-05-11T16:56:36Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] Patch adding soname to ntl shared library",
+    "title": "[with patch; positive review] Patch adding soname to ntl shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3159",
     "user": "https://github.com/timabbott"

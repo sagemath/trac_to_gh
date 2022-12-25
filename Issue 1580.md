@@ -1,16 +1,17 @@
-# Issue 1580: notebook shows graphics out of order
+# Issue 1580: [with patch] notebook shows graphics out of order
 
 archive/issues_001580.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(1).show()\nplot(x^3,xmin=0,xmax=1).show()\n```\n\nshows the plot first and the sphere second on my computer (old 850 Mhz PIII running ubuntu 7.10).  This is confusing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1580\n\n",
+    "closed_at": "2007-12-23T03:20:26Z",
     "created_at": "2007-12-21T08:44:06Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "notebook shows graphics out of order",
+    "title": "[with patch] notebook shows graphics out of order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1580",
     "user": "https://github.com/jasongrout"

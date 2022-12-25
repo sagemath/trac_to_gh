@@ -1,9 +1,10 @@
-# Issue 1913: poles of gamma
+# Issue 1913: [with patch, positive review] poles of gamma
 
 archive/issues_001913.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nSage cannot handle poles of the gamma function. For negative integers and 0, the result of `gamma(x)` should be unsigned infinity.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1913\n\n",
+    "closed_at": "2008-01-25T17:26:35Z",
     "created_at": "2008-01-24T16:37:15Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_001913.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "poles of gamma",
+    "title": "[with patch, positive review] poles of gamma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1913",
     "user": "https://github.com/burcin"

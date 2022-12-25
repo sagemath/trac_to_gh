@@ -3,7 +3,7 @@
 archive/issues_003389.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi!\n\nThe Cartesian Product iterator of infinite sequences doesn't enumerate the\nevery element in the product.\n\nI tried:\n\nfor t in CartesianProduct(QQ,ZZ):\n\n....:     print t\n\n....:     \n\n[0, 0]\n\n[0, 1]\n\n[0, -1]\n\n[0, 2]\n\n\nThis is equivalent to nest for loops, which won't work.\nYou have to enumerate the set in a different way.\n\nSee \nhttp://en.wikipedia.org/wiki/Recursively_enumerable\nhttp://en.wikipedia.org/wiki/Cantor_pairing_function\n\nBest regards,\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3389\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi!\n\nThe Cartesian Product iterator of infinite sequences doesn't enumerate the\nevery element in the product.\n\nI tried:\n\n```\nfor t in CartesianProduct(QQ,ZZ):\n\n....:     print t\n\n....:     \n\n[0, 0]\n\n[0, 1]\n\n[0, -1]\n\n[0, 2]\n```\n\nThis is equivalent to nest for loops, which won't work.\nYou have to enumerate the set in a different way.\n\nSee \nhttp://en.wikipedia.org/wiki/Recursively_enumerable\nhttp://en.wikipedia.org/wiki/Cantor_pairing_function\n\nBest regards,\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3389\n\n",
     "created_at": "2008-06-10T10:15:49Z",
     "labels": [
         "component: combinatorics",
@@ -27,6 +27,7 @@ every element in the product.
 
 I tried:
 
+```
 for t in CartesianProduct(QQ,ZZ):
 
 ....:     print t
@@ -40,7 +41,7 @@ for t in CartesianProduct(QQ,ZZ):
 [0, -1]
 
 [0, 2]
-
+```
 
 This is equivalent to nest for loops, which won't work.
 You have to enumerate the set in a different way.

@@ -1,16 +1,17 @@
-# Issue 2080: notebook -- create eval_asap cells; fix bug in checkbox functionality
+# Issue 2080: [with patch, positive review] notebook -- create eval_asap cells; fix bug in checkbox functionality
 
 archive/issues_002080.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2080\n\n",
+    "closed_at": "2008-02-07T10:23:14Z",
     "created_at": "2008-02-07T06:56:22Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "notebook -- create eval_asap cells; fix bug in checkbox functionality",
+    "title": "[with patch, positive review] notebook -- create eval_asap cells; fix bug in checkbox functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2080",
     "user": "https://github.com/williamstein"

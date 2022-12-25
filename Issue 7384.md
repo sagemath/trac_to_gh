@@ -3,7 +3,8 @@
 archive/issues_007384.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777\n\n`sphinxify.py`'s doctests currently fail. Fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7384\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\n`sphinxify.py`'s doctests currently fail. Fix this.\n\nSee also: #7367.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7384\n\n",
+    "closed_at": "2009-11-12T02:10:41Z",
     "created_at": "2009-11-03T20:46:18Z",
     "labels": [
         "component: notebook",
@@ -21,6 +22,8 @@ Assignee: boothby
 CC:  @qed777
 
 `sphinxify.py`'s doctests currently fail. Fix this.
+
+See also: #7367.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7384
 

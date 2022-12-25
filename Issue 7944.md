@@ -3,7 +3,8 @@
 archive/issues_007944.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7b165be3eb688018):\n\n```\nIt seems to me that developers guide is a bit out of date (e.g. it \nhas guidelines about adding [with patch, needs review] to tickets \non trac)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7944\n\n",
+    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/7b165be3eb688018):\n\n```\nIt seems to me that developers guide is a bit out of date (e.g. it \nhas guidelines about adding [with patch, needs review] to tickets \non trac)\n```\n\nThis ticket is a prerequisite for #8199.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7944\n\n",
+    "closed_at": "2010-02-11T14:43:28Z",
     "created_at": "2010-01-16T09:58:33Z",
     "labels": [
         "component: documentation",
@@ -26,6 +27,8 @@ It seems to me that developers guide is a bit out of date (e.g. it
 has guidelines about adding [with patch, needs review] to tickets 
 on trac)
 ```
+
+This ticket is a prerequisite for #8199.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7944
 

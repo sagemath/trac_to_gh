@@ -4,6 +4,7 @@ archive/issues_007940.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nA triple quote `\"\"\"` in real_mpfr.pyx needs to be converted to `r\"\"\"`.  This patch does that.  Otherwise, the reference manual fails to build.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7940\n\n",
+    "closed_at": "2010-01-16T03:46:32Z",
     "created_at": "2010-01-16T03:17:42Z",
     "labels": [
         "component: algebra",

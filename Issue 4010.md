@@ -1,9 +1,10 @@
-# Issue 4010: notebook -- Renaming worksheet: clicking OK with a blank text box should revert to worksheet's old name not name it to "null"
+# Issue 4010: [with patch, positive review] notebook -- Renaming worksheet: clicking OK with a blank text box should revert to worksheet's old name not name it to "null"
 
 archive/issues_004010.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4010\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4010\n\n",
+    "closed_at": "2009-01-23T10:26:27Z",
     "created_at": "2008-08-31T00:59:35Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_004010.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "notebook -- Renaming worksheet: clicking OK with a blank text box should revert to worksheet's old name not name it to \"null\"",
+    "title": "[with patch, positive review] notebook -- Renaming worksheet: clicking OK with a blank text box should revert to worksheet's old name not name it to \"null\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4010",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 
 

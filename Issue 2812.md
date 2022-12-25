@@ -1,15 +1,16 @@
-# Issue 2812: [with patch; needs review] notebook.py doctests
+# Issue 2812: [with patch, positive review] notebook.py doctests
 
 archive/issues_002812.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2812\n\n",
+    "closed_at": "2008-04-05T22:00:32Z",
     "created_at": "2008-04-05T18:56:51Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] notebook.py doctests",
+    "title": "[with patch, positive review] notebook.py doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2812",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

@@ -4,6 +4,7 @@ archive/issues_004474.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThere is a dangerous hack in preparser.py. Given input file:\n\n```\nload a.sage\nload b.py\n```\n   \nThen b.py will be loaded while the file is being *parsed*, and *before* a.sage is loaded.  That would be very confusing.  See the related #4473 and apply that patch before working on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4474\n\n",
+    "closed_at": "2014-05-06T15:15:25Z",
     "created_at": "2008-11-09T03:16:04Z",
     "labels": [
         "component: misc",

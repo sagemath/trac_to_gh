@@ -1,9 +1,10 @@
-# Issue 5633: [with patch, needs review] add pix to the documentation
+# Issue 5633: [with patch, positive review] add missing picture to the documentation
 
 archive/issues_005633.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThe documentation has been missing a few pictures, and this patch restores them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5633\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe documentation has been missing a few pictures, and this patch restores them.\n\n(The patch is a little large and only includes the four missing pictures -- no changes to the code at all -- so I decided not to upload it here.  It's at [http://sage.math.washington.edu/home/palmieri/patches/pic.patch](http://sage.math.washington.edu/home/palmieri/patches/pic.patch).)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5633\n\n",
+    "closed_at": "2009-04-06T05:32:54Z",
     "created_at": "2009-03-29T16:08:57Z",
     "labels": [
         "component: documentation",
@@ -11,15 +12,17 @@ archive/issues_005633.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] add pix to the documentation",
+    "title": "[with patch, positive review] add missing picture to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5633",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 The documentation has been missing a few pictures, and this patch restores them.
+
+(The patch is a little large and only includes the four missing pictures -- no changes to the code at all -- so I decided not to upload it here.  It's at [http://sage.math.washington.edu/home/palmieri/patches/pic.patch](http://sage.math.washington.edu/home/palmieri/patches/pic.patch).)
 
 Issue created by migration from https://trac.sagemath.org/ticket/5633
 

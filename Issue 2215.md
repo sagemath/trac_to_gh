@@ -1,23 +1,27 @@
-# Issue 2215: if p is a permutation, matrix(p) should call p.to_matrix()
+# Issue 2215: [with patch, needs work] if p is a permutation, matrix(p) should call p.to_matrix()
 
 archive/issues_002215.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nit seems like matrix(thing) should usually work if we can think of \"thing\" as a matrix.  In this case, we even already have a p.to_matrix() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2215\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: editor_mhansen\n\nit seems like matrix(thing) should usually work if we can think of \"thing\" as a matrix.  In this case, we even already have a p.to_matrix() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2215\n\n",
+    "closed_at": "2018-11-08T16:14:09Z",
     "created_at": "2008-02-19T22:37:39Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: combinatorics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "if p is a permutation, matrix(p) should call p.to_matrix()",
+    "title": "[with patch, needs work] if p is a permutation, matrix(p) should call p.to_matrix()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2215",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  sage-combinat
+
+Keywords: editor_mhansen
 
 it seems like matrix(thing) should usually work if we can think of "thing" as a matrix.  In this case, we even already have a p.to_matrix() function.
 

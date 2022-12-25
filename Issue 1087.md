@@ -1,16 +1,17 @@
-# Issue 1087: add combinatorics documentation to the reference manual
+# Issue 1087: [with patch] add combinatorics documentation to the reference manual
 
 archive/issues_001087.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1087\n\n",
+    "closed_at": "2007-11-06T22:41:23Z",
     "created_at": "2007-11-03T20:33:29Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "add combinatorics documentation to the reference manual",
+    "title": "[with patch] add combinatorics documentation to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1087",
     "user": "https://github.com/mwhansen"

@@ -1,9 +1,10 @@
-# Issue 6585: [with patch, needs review] trivial change to a few docstrings in partition.py
+# Issue 6585: [with patch, positive review] trivial change to a few docstrings in partition.py
 
 archive/issues_006585.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  sage-combinat\n\nThis patch changes a few docstrings in partition.py which contain backslashes from\n\n```\n\"\"\"\nblah\n\"\"\"\n```\nto\n\n```\nr\"\"\"\nblah\n\"\"\"\n```\n(I've been playing with version 0.6.2 of Sphinx, and it barfs without making this change.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6585\n\n",
+    "closed_at": "2009-07-24T08:22:34Z",
     "created_at": "2009-07-22T05:04:28Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006585.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] trivial change to a few docstrings in partition.py",
+    "title": "[with patch, positive review] trivial change to a few docstrings in partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6585",
     "user": "https://github.com/jhpalmieri"

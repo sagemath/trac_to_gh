@@ -1,22 +1,23 @@
-# Issue 4590: sage/interfaces/phc.py writes tmp files into cwd
+# Issue 4590: [with patch, positive review] sage/interfaces/phc.py writes tmp files into cwd
 
 archive/issues_004590.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nFrom _output_from_command_list:\n\n```\n        EXAMPLES:\n            sage: from sage.interfaces.phc import *  #optional\n            sage: R2.<x,y> = PolynomialRing(QQ,2)    #optional\n            sage: start_sys = [(x-1)^2+(y-1)-1, x^2+y^2-1]  #optional\n            sage: a = phc._output_from_command_list(['phc -m','4','n','n','n'], start_sys)#optional\n            sage: os.unlink(a)#optional\n```\nThe Sage library might not be writable for the user who is running doctests, so the above doctest needs to be fixed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4590\n\n",
+    "body": "Assignee: @mwhansen\n\nFrom _output_from_command_list:\n\n```\n        EXAMPLES:\n            sage: from sage.interfaces.phc import *  #optional\n            sage: R2.<x,y> = PolynomialRing(QQ,2)    #optional\n            sage: start_sys = [(x-1)^2+(y-1)-1, x^2+y^2-1]  #optional\n            sage: a = phc._output_from_command_list(['phc -m','4','n','n','n'], start_sys)#optional\n            sage: os.unlink(a)#optional\n```\nThe Sage library might not be writable for the user who is running doctests, so the above doctest needs to be fixed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4590\n\n",
+    "closed_at": "2009-01-23T02:35:37Z",
     "created_at": "2008-11-23T04:16:14Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "sage/interfaces/phc.py writes tmp files into cwd",
+    "title": "[with patch, positive review] sage/interfaces/phc.py writes tmp files into cwd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4590",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mhampton
+Assignee: @mwhansen
 
 From _output_from_command_list:
 

@@ -1,9 +1,10 @@
-# Issue 5957: 3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx
+# Issue 5957: [with patch, positive review] 3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx
 
 archive/issues_005957.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis happens with gcc 4.3.3 on iras and cicero:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2.rc0/sage-3.4.2.rc0-ciero-gcc-4.3.3/\ndevel/sage/sage/matrix/matrix_symbolic_dense.pyx\", line 413:\n   sage: M.determinant()\nExpected:\n   4*x - 6\nGot:\n   determinant(sage513)\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5957\n\n",
+    "closed_at": "2009-05-04T05:02:58Z",
     "created_at": "2009-05-01T13:34:36Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005957.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx",
+    "title": "[with patch, positive review] 3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5957",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

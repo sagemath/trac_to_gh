@@ -4,6 +4,7 @@ archive/issues_009384.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  adeines @JohnCremona jeremywest\n\nKeywords: descend, subfield, isomorphic, elliptic curve\n\nGiven a subfield K and an elliptic curve E defined over a field L, this function determines whether there exists an elliptic curve over K which is isomorphic over L to E. If one exists, it finds it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9384\n\n",
+    "closed_at": "2010-07-27T00:51:24Z",
     "created_at": "2010-06-29T22:24:01Z",
     "labels": [
         "component: elliptic curves",

@@ -1,9 +1,10 @@
-# Issue 3793: Some elliptic curve doctests fail when the optional database is installed
+# Issue 3793: [with patch, with positive review] Some elliptic curve doctests fail when the optional database is installed
 
 archive/issues_003793.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nA few of the doctests in `ell_rational_field.py` fail when the optional package database_cremona_ellcurve-20071019 is installed, mainly because for curves in the database the gens() as supplied by the database may differ from those computed on the fly.  (In almost all cases the generators are not uniquely determined, being the generators of a finitely-generated abelian group.  We have put some thought into how to make the generators canonical but have not yet succeeded.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3793\n\n",
+    "closed_at": "2008-08-11T04:59:07Z",
     "created_at": "2008-08-09T12:51:34Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_003793.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Some elliptic curve doctests fail when the optional database is installed",
+    "title": "[with patch, with positive review] Some elliptic curve doctests fail when the optional database is installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3793",
     "user": "https://github.com/JohnCremona"

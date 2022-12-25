@@ -1,22 +1,24 @@
-# Issue 3694: Update FLINT to the 1.0.13 release
+# Issue 3694: [with spkg, positive review] Update FLINT to the 1.0.13 release
 
 archive/issues_003694.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSeveral issues were fixed, among them a bug that could in some rather unlikely cases cause random memory to be accessed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3694\n\n",
+    "body": "Assignee: mabshoff\n\nSeveral issues were fixed, among them a bug that could in some rather unlikely cases cause random memory to be accessed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3694\n\n",
+    "closed_at": "2008-07-21T22:20:39Z",
     "created_at": "2008-07-21T17:58:02Z",
     "labels": [
-        "component: algebra",
+        "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "Update FLINT to the 1.0.13 release",
+    "title": "[with spkg, positive review] Update FLINT to the 1.0.13 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3694",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 Several issues were fixed, among them a bug that could in some rather unlikely cases cause random memory to be accessed.
 

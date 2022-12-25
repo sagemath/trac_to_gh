@@ -4,6 +4,7 @@ archive/issues_009499.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: libsingular\n\n```\nsage: from sage.libs.singular.function import singular_function\nsage: from sage.libs.singular.function import lib as singular_libary\nsage: singular_lib('triang.lib'\nsage: triangL = singular_function(\"triangL\"\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex'\nsage: I = sage.rings.ideal.Cyclic(P\nsage: triangL(I\nTraceback (most recent call last)\n..\nRuntimeError: There has been an error in a Singular function.\n\nsage: G = I.groebner_basis(\nsage: triangL(G,attributes={G:{\"isSB\":1}}\n[[e + d + c + b + a, ...]\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9499\n\n",
+    "closed_at": "2010-07-20T09:31:35Z",
     "created_at": "2010-07-14T16:53:17Z",
     "labels": [
         "component: interfaces",

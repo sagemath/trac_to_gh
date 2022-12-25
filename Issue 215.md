@@ -4,6 +4,7 @@ archive/issues_000215.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: pari, comparison\n\nI'm not sure what the correct outcome of this should be:\n\n```\npari(2.5) > None\n```\nbut it shouldn't crash SAGE, which is what it does now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/215\n\n",
+    "closed_at": "2007-01-25T15:16:43Z",
     "created_at": "2007-01-24T23:49:19Z",
     "labels": [
         "component: interfaces",

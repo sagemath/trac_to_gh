@@ -3,11 +3,12 @@
 archive/issues_009681.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake @qed777 @nexttime @jhpalmieri\n\nThe zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:\n\n```\n/configure --gmp-prefix=\"$SAGE_LOCAL\" --ntl-prefix=\"$SAGE_LOCAL\" \\\n            --prefix=\"$SAGE_LOCAL\" --cflags=\"$CFLAGS\" --ldflags=\"$LDFLAGS\"\n```\n\nLooking at $SAGE_ROOT/spkg/standard/deps, I see: \n\n```\n$(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)\n        $(INSTALL) \"$(SAGE_SPKG) $(ZNPOLY) 2>&1\" \"tee -a $(SAGE_LOGS)/$(ZNPOLY).log\"\n```\n\nthen looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.\n\nI am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. \n\n* #9464 \n* #9637 \n\nThese might as well be fixed at the same time. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9681\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake @qed777 @nexttime @jhpalmieri\n\nThe zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:\n\n```\n/configure --gmp-prefix=\"$SAGE_LOCAL\" --ntl-prefix=\"$SAGE_LOCAL\" \\\n            --prefix=\"$SAGE_LOCAL\" --cflags=\"$CFLAGS\" --ldflags=\"$LDFLAGS\"\n```\n\n**So zn_poly depends on ntl**\n\nLooking at $SAGE_ROOT/spkg/standard/deps, I see: \n\n```\n$(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)\n        $(INSTALL) \"$(SAGE_SPKG) $(ZNPOLY) 2>&1\" \"tee -a $(SAGE_LOGS)/$(ZNPOLY).log\"\n```\n\ni.e. no such dependency is directly listed. \n\nThen looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, **so there is nothing to force ntl to build before zn_poly, despite zn_poly depends on ntl**\n\nI am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. \n\n* #9464 \n* #9637 \n\nThese might as well be fixed at the same time. \n\nDave \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9681\n\n",
+    "closed_at": "2010-08-04T23:50:57Z",
     "created_at": "2010-08-04T00:32:03Z",
     "labels": [
         "component: build",
-        "blocker",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -28,6 +29,8 @@ The zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this 
             --prefix="$SAGE_LOCAL" --cflags="$CFLAGS" --ldflags="$LDFLAGS"
 ```
 
+**So zn_poly depends on ntl**
+
 Looking at $SAGE_ROOT/spkg/standard/deps, I see: 
 
 ```
@@ -35,7 +38,9 @@ $(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)
         $(INSTALL) "$(SAGE_SPKG) $(ZNPOLY) 2>&1" "tee -a $(SAGE_LOGS)/$(ZNPOLY).log"
 ```
 
-then looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.
+i.e. no such dependency is directly listed. 
+
+Then looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, **so there is nothing to force ntl to build before zn_poly, despite zn_poly depends on ntl**
 
 I am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. 
 
@@ -44,7 +49,8 @@ I am aware of two other changes that are desirable in the 'deps' file too, as th
 
 These might as well be fixed at the same time. 
 
-Dave
+Dave 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9681
 

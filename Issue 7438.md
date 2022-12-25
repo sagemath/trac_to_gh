@@ -1,16 +1,17 @@
-# Issue 7438: the graphviz-2.16.1.p0 optional spkg fails to build on ubuntu-9.10 with a sage-4.2.1 install
+# Issue 7438: the graphviz experimental spkg fails to warn about needed dependencies
 
 archive/issues_007438.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nthiery @rlmill @mwhansen @nathanncohen @jdemeyer @dimpase\n\nI installed ubuntu-9.10, sage-4.2.1 and tried to install all optional spkg.  Graphviz fails after a long time with:\n\n```\ngcc -DHAVE_CONFIG_H -I. -I../..  -I../../lib/common -I../../lib/gvc -I../../lib/pathplan -I../../lib/graph -I../../lib/cdt -I/home/sage/sage/local/include -I/home/sage/sage/local/include  -g -O2 -Wno-unknown-pragmas -Wstrict-prototypes -Wpointer-arith -Wall -ffast-math -MT no_demand_loading.o -MD -MP -MF .deps/no_demand_loading.Tpo -c -o no_demand_loading.o `test -f '../../lib/gvc/no_demand_loading.c' || echo './'`../../lib/gvc/no_demand_loading.c\nmv -f .deps/no_demand_loading.Tpo .deps/no_demand_loading.Po\nmake[3]: *** No rule to make target `../../plugin/pango/libgvplugin_pango.la', needed by `dot_builtins'.  Stop.\nmake[3]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd/dot'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src'\nmake: *** [all] Error 2\nError building Graphviz\n\nreal    14m54.042s\nuser    3m50.614s\nsys     10m25.267s\nsage: An error occurred while installing graphviz-2.16.1.p0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7438\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nthiery @rlmill @mwhansen @nathanncohen @jdemeyer @dimpase\n\nI installed ubuntu-9.10, sage-4.2.1 and tried to install all optional spkg.  Graphviz fails after a long time with:\n\n```\ngcc -DHAVE_CONFIG_H -I. -I../..  -I../../lib/common -I../../lib/gvc -I../../lib/pathplan -I../../lib/graph -I../../lib/cdt -I/home/sage/sage/local/include -I/home/sage/sage/local/include  -g -O2 -Wno-unknown-pragmas -Wstrict-prototypes -Wpointer-arith -Wall -ffast-math -MT no_demand_loading.o -MD -MP -MF .deps/no_demand_loading.Tpo -c -o no_demand_loading.o `test -f '../../lib/gvc/no_demand_loading.c' || echo './'`../../lib/gvc/no_demand_loading.c\nmv -f .deps/no_demand_loading.Tpo .deps/no_demand_loading.Po\nmake[3]: *** No rule to make target `../../plugin/pango/libgvplugin_pango.la', needed by `dot_builtins'.  Stop.\nmake[3]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd/dot'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src'\nmake: *** [all] Error 2\nError building Graphviz\n\nreal    14m54.042s\nuser    3m50.614s\nsys     10m25.267s\nsage: An error occurred while installing graphviz-2.16.1.p0\n```\n\n---\n\nIt turns out that graphviz needs pango and maybe libperl-dev.  See discussion below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7438\n\n",
+    "closed_at": "2020-08-22T07:17:48Z",
     "created_at": "2009-11-12T05:24:09Z",
     "labels": [
-        "component: packages: optional",
+        "component: packages: experimental",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "the graphviz-2.16.1.p0 optional spkg fails to build on ubuntu-9.10 with a sage-4.2.1 install",
+    "title": "the graphviz experimental spkg fails to warn about needed dependencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7438",
     "user": "https://github.com/williamstein"
@@ -39,6 +40,10 @@ user    3m50.614s
 sys     10m25.267s
 sage: An error occurred while installing graphviz-2.16.1.p0
 ```
+
+---
+
+It turns out that graphviz needs pango and maybe libperl-dev.  See discussion below.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7438
 

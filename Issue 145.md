@@ -4,6 +4,7 @@ archive/issues_000145.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\npygtk-2.8.4 depends on libpython2.4, which sage-1.4.1.2 doesn't use.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/145\n\n",
+    "closed_at": "2007-01-12T23:37:21Z",
     "created_at": "2006-10-21T20:46:37Z",
     "labels": [
         "component: packages: standard",

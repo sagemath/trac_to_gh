@@ -1,9 +1,10 @@
-# Issue 5742: ATLAS.spkg: parallel make breaks on system with "real" sh
+# Issue 5742: ATLAS.spkg: parallel make breaks on system with "real" sh [fixed via spkg at #5219]
 
 archive/issues_005742.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe spkg-install-$FOO script that actually builds atlas uses `/bin/sh` as shebang and does not export MAKE properly. So if one builds Sage on Solaris or FreeBSD with parallel make where sh is the real shell things blow up since ATLAS does not handle parallel make too well :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5742\n\n",
+    "closed_at": "2009-04-18T23:24:50Z",
     "created_at": "2009-04-11T01:23:52Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005742.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "ATLAS.spkg: parallel make breaks on system with \"real\" sh",
+    "title": "ATLAS.spkg: parallel make breaks on system with \"real\" sh [fixed via spkg at #5219]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5742",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

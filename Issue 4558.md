@@ -1,15 +1,16 @@
-# Issue 4558: please update to sympy-0.6.3.spkg
+# Issue 4558: [with spkg, positive review] update to sympy-0.6.3.spkg (latest upstream)
 
 archive/issues_004558.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe spkg is here:\n\nhttp://sage.math.washington.edu/home/ondrej/spkg/sympy-0.6.3.spkg\n\nand also apply the attached patch, that fixes one failing test in test_sympy.py.\n\nThe Sage tests are still running, I'll report if all pass.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4558\n\n",
+    "closed_at": "2008-11-23T00:58:22Z",
     "created_at": "2008-11-20T00:21:33Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "please update to sympy-0.6.3.spkg",
+    "title": "[with spkg, positive review] update to sympy-0.6.3.spkg (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4558",
     "user": "https://github.com/certik"

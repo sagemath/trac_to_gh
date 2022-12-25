@@ -3,10 +3,11 @@
 archive/issues_009372.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nNow that we have canonical heights over number fields, the regulator_of_points code can be moved up from ell_rational_field to ell_number_field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9372\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb\n\nNow that we have canonical heights over number fields, the regulator_of_points code can be moved up from ell_rational_field to ell_number_field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9372\n\n",
+    "closed_at": "2010-07-20T07:17:21Z",
     "created_at": "2010-06-29T04:58:30Z",
     "labels": [
-        "component: algebra"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "implement regulator function for elliptic curves over number fields",
@@ -15,7 +16,7 @@ archive/issues_009372.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @aghitza
+Assignee: @JohnCremona
 
 CC:  @robertwb
 

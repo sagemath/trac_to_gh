@@ -3,7 +3,8 @@
 archive/issues_000587.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis was found by Markus Fraczek:\n\n```\nsage: 1e8\n100000000.000000\nsage: 1e8*I\nboom -- typeerror\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/587\n\n",
+    "body": "Assignee: @mwhansen\n\nThis was found by Markus Fraczek:\n\n```\nsage: 1e8\n100000000.000000\nsage: 1e8*I\nboom -- typeerror\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/587\n\n",
+    "closed_at": "2007-09-04T21:51:29Z",
     "created_at": "2007-09-04T15:16:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000587.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 This was found by Markus Fraczek:
 

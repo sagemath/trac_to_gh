@@ -3,7 +3,7 @@
 archive/issues_003048.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rbeezer @rishikesha @yuan-zhou\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3048\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @rbeezer @rishikesha @yuan-zhou\n\nAdd a generic LU decomposition and modify associated functions (solve_right, __invert__, determinant)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3048\n\n",
     "created_at": "2008-04-27T21:40:02Z",
     "labels": [
         "component: linear algebra",
@@ -16,11 +16,11 @@ archive/issues_003048.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @rbeezer @rishikesha @yuan-zhou
 
-
+Add a generic LU decomposition and modify associated functions (solve_right, __invert__, determinant)
 
 Issue created by migration from https://trac.sagemath.org/ticket/3048
 

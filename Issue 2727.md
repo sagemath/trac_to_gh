@@ -1,16 +1,17 @@
-# Issue 2727: [with patch; needs review] uninitialized cdef in multi_polynomial_libsingular.pyx
+# Issue 2727: [with patch; positive review] uninitialized cdef in multi_polynomial_libsingular.pyx
 
 archive/issues_002727.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThe mysterious libsingular.dll errors in the Debian SAGE port were caused by an uninitialized variable masking the real error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2727\n\n",
+    "closed_at": "2008-03-29T23:06:25Z",
     "created_at": "2008-03-29T22:32:55Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch; needs review] uninitialized cdef in multi_polynomial_libsingular.pyx",
+    "title": "[with patch; positive review] uninitialized cdef in multi_polynomial_libsingular.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2727",
     "user": "https://github.com/timabbott"

@@ -1,22 +1,23 @@
-# Issue 2029: adjust TIMEOUT for long and valgrinded doctests
+# Issue 2029: [with patch, with positive review] adjust TIMEOUT for long and valgrinded doctests
 
 archive/issues_002029.json:
 ```json
 {
-    "body": "Assignee: failure\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.1.rc4$ ./sage -t -valgrind -long devel/sage/sage/calculus/calculus.py\nsage -t -valgrind -long devel/sage-main/sage/calculus/calculus.py\nRaising timeout to 1800 seconds due to '-long' option\n\nRaising timeout to 1048576 seconds due to valgrind\n```\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2029\n\n",
+    "body": "Assignee: mabshoff\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.1.rc4$ ./sage -t -valgrind -long devel/sage/sage/calculus/calculus.py\nsage -t -valgrind -long devel/sage-main/sage/calculus/calculus.py\nRaising timeout to 1800 seconds due to '-long' option\n\nRaising timeout to 1048576 seconds due to valgrind\n```\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2029\n\n",
+    "closed_at": "2008-02-02T05:22:47Z",
     "created_at": "2008-02-02T04:30:56Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "adjust TIMEOUT for long and valgrinded doctests",
+    "title": "[with patch, with positive review] adjust TIMEOUT for long and valgrinded doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2029",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 ```
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.1.rc4$ ./sage -t -valgrind -long devel/sage/sage/calculus/calculus.py

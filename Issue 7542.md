@@ -4,6 +4,7 @@ archive/issues_007542.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  david.kirkby@onetel.net\n\nAccording to the Simon Josefsson, there are security issues with version 2.2.1. \n\n*\"Unless you back-port security fixes to 2.2.x, you want to use the 2.8.x release to get proper security fixes.\"*\n\nThere are two other issues with 2.2.1 I am aware of. \n* #7387 gnutls not building on OpenSolaris (x86)\n* #7511 gnutls-2.2.1 fails to build on HP-UX \n\nI do not know exactly what the bug is, but I'm told there are security issues with this release.\n\nI tried to create a .spkg from the latest release, but that failed to build on Solaris 10 (SPARC) so was worst than the older release, though the developers tell me it should be ok. \n\ndave \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7542\n\n",
+    "closed_at": "2012-10-05T09:13:38Z",
     "created_at": "2009-11-27T14:11:52Z",
     "labels": [
         "component: cryptography",

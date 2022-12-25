@@ -3,10 +3,11 @@
 archive/issues_000501.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThese are all from Ifti:\n\n\nThe original code at\n\nhttp://www.sagemath.org:9002/sage_trac/ticket/274\n\n```\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n'281M'\n```\n\nnow only leaks about 0.1MB, but extending the for loop range from 10**3\nto 10**5 leaks about 6.3MB!\n\nAlso the following code\n\n```\ndef Supercomp():\n   p=ZZ(10**5).next_prime()\n   szfilename = \"timings100k.txt\"\n   mem_szfilename = \"memory100k.txt\"\n   while true:\n       t = cputime()\n       M = get_memory_usage()\n       X = SupersingularModule(p)\n       X.hecke_matrix(2)\n       f = open(szfilename, 'a')\n       f.write(str([p, cputime(t)]) + \", \")\n       f.close()\n       g = open(mem_szfilename, 'a')\n       g.write(str([p, get_memory_usage()-M]) + \", \")\n       g.close()\n       X.save('X' + str(p))\n       p = ZZ(p).next_prime()\n\nSupercomp()\n```\n\nhad consumed 20% of memory on sage.math after a day of computation and I\nhad to kill it.\n\n### PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND\n24320 burhanud  39  19 12.2g  11g  15m R  100 18.9   1453:36 sage-ipython\n### I'll have to spend some time to pin down where the leaks are.\n\nRegards,\nIfti\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/501\n\n",
+    "body": "Assignee: mabshoff\n\nThese are all from Ifti:\n\n\nThe original code at\n\nhttp://www.sagemath.org:9002/sage_trac/ticket/274\n\n```\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n   s = K.random_element(); t = K.random_element()\n   poly = s + t*X\n....:\nsage: get_memory_usage()\n'281M'\n```\n\nnow only leaks about 0.1MB, but extending the for loop range from 10**3\nto 10**5 leaks about 6.3MB!\n\nAlso the following code\n\n```\ndef Supercomp():\n   p=ZZ(10**5).next_prime()\n   szfilename = \"timings100k.txt\"\n   mem_szfilename = \"memory100k.txt\"\n   while true:\n       t = cputime()\n       M = get_memory_usage()\n       X = SupersingularModule(p)\n       X.hecke_matrix(2)\n       f = open(szfilename, 'a')\n       f.write(str([p, cputime(t)]) + \", \")\n       f.close()\n       g = open(mem_szfilename, 'a')\n       g.write(str([p, get_memory_usage()-M]) + \", \")\n       g.close()\n       X.save('X' + str(p))\n       p = ZZ(p).next_prime()\n\nSupercomp()\n```\n\nhad consumed 20% of memory on sage.math after a day of computation and I\nhad to kill it.\n\n### PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND\n24320 burhanud  39  19 12.2g  11g  15m R  100 18.9   1453:36 sage-ipython\n### I'll have to spend some time to pin down where the leaks are.\n\nRegards,\nIfti\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/501\n\n",
+    "closed_at": "2007-08-30T20:13:10Z",
     "created_at": "2007-08-28T19:53:02Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
@@ -16,7 +17,7 @@ archive/issues_000501.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: mabshoff
 
 These are all from Ifti:
 

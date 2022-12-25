@@ -1,16 +1,17 @@
-# Issue 600: sage -t --optional multi_polynomial_element.py takes *way* too  ram
+# Issue 600: sage -t --optional multi_polynomial_element.py takes *way* too much ram
 
 archive/issues_000600.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt takes nearly a gig at some points, which is bad on a system like my laptop.  This is quite painful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/600\n\n",
+    "closed_at": "2009-01-22T14:37:04Z",
     "created_at": "2007-09-06T17:48:58Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage -t --optional multi_polynomial_element.py takes *way* too  ram",
+    "title": "sage -t --optional multi_polynomial_element.py takes *way* too much ram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/600",
     "user": "https://github.com/williamstein"

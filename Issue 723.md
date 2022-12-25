@@ -1,15 +1,16 @@
-# Issue 723: Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.
+# Issue 723: [with patch] Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.
 
 archive/issues_000723.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMagma's LLL is... way way way faster than the one in LLL.  E.g., (this requires patch #325)\n\n```\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 8.74 s, sys: 0.08 s, total: 8.83 s\nWall time: 8.85\n\nsage: m = magma(a)\nsage: time c=m.LLL()\nWall time: 1.02\n\nsage: a = random_matrix(ZZ,400)\nsage: time b=a.lll()\nCPU times: user 202.89 s, sys: 1.54 s, total: 204.44 s\nWall time: 206.16\nsage: time c=magma(a)\nCPU times: user 0.24 s, sys: 0.02 s, total: 0.26 s\nWall time: 0.38\nsage: time d=c.LLL()\nWall time: 13.23\n\n\n```\n\nIt would also be good to benchmark PARI's LLL and compare.\nMake sure to use the 1 option, so it knows the matrix is integral:\n\n```\nsage: a = random_matrix(ZZ,100)\nsage: time b=a.lll()\nCPU times: user 0.53 s, sys: 0.00 s, total: 0.53 s\nWall time: 0.53\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 0.47 s, sys: 0.00 s, total: 0.47 s\nWall time: 0.47\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 9.02 s, sys: 0.06 s, total: 9.08 s\nWall time: 9.14\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 9.88 s, sys: 0.05 s, total: 9.93 s\nWall time: 9.95\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/723\n\n",
+    "body": "Assignee: @williamstein\n\nMagma's LLL is... way way way faster than the one in NTL.  E.g., (this requires patch #325)\n\n```\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 8.74 s, sys: 0.08 s, total: 8.83 s\nWall time: 8.85\n\nsage: m = magma(a)\nsage: time c=m.LLL()\nWall time: 1.02\n\nsage: a = random_matrix(ZZ,400)\nsage: time b=a.lll()\nCPU times: user 202.89 s, sys: 1.54 s, total: 204.44 s\nWall time: 206.16\nsage: time c=magma(a)\nCPU times: user 0.24 s, sys: 0.02 s, total: 0.26 s\nWall time: 0.38\nsage: time d=c.LLL()\nWall time: 13.23\n\n\n```\n\nIt would also be good to benchmark PARI's LLL and compare.\nMake sure to use the 1 option, so it knows the matrix is integral:\n\n```\nsage: a = random_matrix(ZZ,100)\nsage: time b=a.lll()\nCPU times: user 0.53 s, sys: 0.00 s, total: 0.53 s\nWall time: 0.53\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 0.47 s, sys: 0.00 s, total: 0.47 s\nWall time: 0.47\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 9.02 s, sys: 0.06 s, total: 9.08 s\nWall time: 9.14\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 9.88 s, sys: 0.05 s, total: 9.93 s\nWall time: 9.95\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/723\n\n",
+    "closed_at": "2007-10-19T17:32:05Z",
     "created_at": "2007-09-20T23:28:12Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.",
+    "title": "[with patch] Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/723",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,7 @@ archive/issues_000723.json:
 ```
 Assignee: @williamstein
 
-Magma's LLL is... way way way faster than the one in LLL.  E.g., (this requires patch #325)
+Magma's LLL is... way way way faster than the one in NTL.  E.g., (this requires patch #325)
 
 ```
 sage: a = random_matrix(ZZ,200)

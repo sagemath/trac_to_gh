@@ -4,6 +4,7 @@ archive/issues_007822.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nAfter changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:\n\n```\nsage: from sage.functions.log import function_log\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/16530/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:5305)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3560)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_log (sage/symbolic/pynac.cpp:10778)()\n\nValueError: math domain error\n```\n\nAttached patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7822\n\n",
+    "closed_at": "2010-02-18T21:38:13Z",
     "created_at": "2010-01-03T01:10:54Z",
     "labels": [
         "component: symbolics",

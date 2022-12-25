@@ -1,16 +1,17 @@
-# Issue 4563: polar plot does not accept (t, 0, 2*pi) syntax for the interval
+# Issue 4563: [with patch, positive review] polar plot does not accept (t, 0, 2*pi) syntax for the interval
 
 archive/issues_004563.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis does not work:\n\n```\nsage: polar_plot(x, (x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: polar_plot() takes exactly 3 arguments (2 given)\n```\n\nBut this does:\n\n```\nsage: polar_plot(x,0, 1)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4563\n\n",
+    "closed_at": "2009-01-23T08:34:36Z",
     "created_at": "2008-11-20T08:19:26Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "polar plot does not accept (t, 0, 2*pi) syntax for the interval",
+    "title": "[with patch, positive review] polar plot does not accept (t, 0, 2*pi) syntax for the interval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4563",
     "user": "https://github.com/jasongrout"

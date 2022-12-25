@@ -1,16 +1,16 @@
-# Issue 7326: html.table should run jsmath on the resulting table
+# Issue 7326: html.table should automatically typeset math inside of strings
 
 archive/issues_007326.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  whuss @rbeezer @kcrisman\n\nIt would be *really* nice if you could include latex code in a table, like this:\n\n```\nvar('t')\ndensity=t^2\nhtml.table([\n[\"Density $\\delta(x,y)$\", density]\n])\n```\n\nand have it do the jsmath magic on the $\\delta(x,y)$ part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7326\n\n",
+    "closed_at": "2009-10-31T15:57:29Z",
     "created_at": "2009-10-27T22:02:22Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "html.table should run jsmath on the resulting table",
+    "title": "html.table should automatically typeset math inside of strings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7326",
     "user": "https://github.com/jasongrout"

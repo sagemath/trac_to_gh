@@ -1,17 +1,18 @@
-# Issue 769: Matrix_mod2_dense._echelon_strassen gives fals results sometimes
+# Issue 769: Matrix_mod2_dense._echelon_strassen gives false results sometimes
 
 archive/issues_000769.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nEven though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(2),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nFalse\nTrue\nTrue\nFalse\nTrue\nFalse\nTrue\nTrue\nTrue\nFalse\n```\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(7),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nTrue\nTrue\nTrue\nFalse\nTrue\nTrue\nTrue\nTrue\nTrue\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/769\n\n",
+    "closed_at": "2007-10-05T02:16:07Z",
     "created_at": "2007-10-01T04:21:25Z",
     "labels": [
-        "component: algebraic geometry",
-        "minor",
+        "component: linear algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "Matrix_mod2_dense._echelon_strassen gives fals results sometimes",
+    "title": "Matrix_mod2_dense._echelon_strassen gives false results sometimes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/769",
     "user": "https://github.com/malb"

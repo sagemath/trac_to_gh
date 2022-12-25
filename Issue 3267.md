@@ -1,9 +1,10 @@
-# Issue 3267: Sage 3.0.2.alpha1: doctest failure in sage/server/support.py
+# Issue 3267: [with patch, positive review] Sage 3.0.2.alpha1: doctest failure in sage/server/support.py
 
 archive/issues_003267.json:
 ```json
 {
-    "body": "Assignee: failure\n\n```\nsage -t -long devel/sage/sage/server/support.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/support.py\", line 85:\n    sage: sage.server.support.help(numpy.linalg.norm)\nExpected:\n    <html><table notruncate notracebacks bgcolor=\"#386074\" cellpadding=10 cellspacing=10><tr><td bgcolor=\"#f5f5f5\"><font color=\"#37546d\">\n    Help on function norm in module numpy.linalg.linalg:\n    ...\n    For values ord < 0, the result is, strictly speaking, not a\n    mathematical 'norm', but it may still be useful for numerical purposes.\n    </font></tr></td></table></html>\nGot:\n    <html><table notracebacks bgcolor=\"#386074\" cellpadding=10 cellspacing=10><tr><td bgcolor=\"#f5f5f5\"><font color=\"#37546d\">\n    &nbsp;&nbsp;&nbsp;<a target='_new' href='cell://docs-1.html'>Click to open help window</a>&nbsp;&nbsp;&nbsp;\n    <br></font></tr></td></table></html>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/.doctest_support.py\n         [2.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/server/support.py\nTotal time for all tests: 2.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3267\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t -long devel/sage/sage/server/support.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/support.py\", line 85:\n    sage: sage.server.support.help(numpy.linalg.norm)\nExpected:\n    <html><table notruncate notracebacks bgcolor=\"#386074\" cellpadding=10 cellspacing=10><tr><td bgcolor=\"#f5f5f5\"><font color=\"#37546d\">\n    Help on function norm in module numpy.linalg.linalg:\n    ...\n    For values ord < 0, the result is, strictly speaking, not a\n    mathematical 'norm', but it may still be useful for numerical purposes.\n    </font></tr></td></table></html>\nGot:\n    <html><table notracebacks bgcolor=\"#386074\" cellpadding=10 cellspacing=10><tr><td bgcolor=\"#f5f5f5\"><font color=\"#37546d\">\n    &nbsp;&nbsp;&nbsp;<a target='_new' href='cell://docs-1.html'>Click to open help window</a>&nbsp;&nbsp;&nbsp;\n    <br></font></tr></td></table></html>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/.doctest_support.py\n         [2.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/server/support.py\nTotal time for all tests: 2.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3267\n\n",
+    "closed_at": "2008-05-23T06:08:28Z",
     "created_at": "2008-05-21T13:55:51Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_003267.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Sage 3.0.2.alpha1: doctest failure in sage/server/support.py",
+    "title": "[with patch, positive review] Sage 3.0.2.alpha1: doctest failure in sage/server/support.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3267",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 ```
 sage -t -long devel/sage/sage/server/support.py             

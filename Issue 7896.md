@@ -4,6 +4,7 @@ archive/issues_007896.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI upgraded sagenb.org to  sagenb-0.5 and am having the above problem.  ARgh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7896\n\n",
+    "closed_at": "2010-01-16T23:18:15Z",
     "created_at": "2010-01-11T18:14:58Z",
     "labels": [
         "component: notebook",

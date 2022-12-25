@@ -4,6 +4,7 @@ archive/issues_009031.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe algebraic_dependency function currently calls Pari/GP.\nFor big problems fpLLL should be faster, thus there should be\nan option to call fpLLL instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9031\n\n",
+    "closed_at": "2014-11-07T14:56:25Z",
     "created_at": "2010-05-24T07:53:30Z",
     "labels": [
         "component: basic arithmetic"

@@ -1,17 +1,17 @@
-# Issue 3704: diagonal_matrix does not accept vectors
+# Issue 3704: [with patch, positive review] make diagonal_matrix accept much more general arguments
 
 archive/issues_003704.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSo I think this is a bug \n\n```\nsage: w=vector(RR,[1,2,3])\nsage: d=diagonal_matrix(w)\nUnboundLocalError: local variable 'v' referenced before assignment\n```\nThe following fails as well\n\n```\nsage: d=diagonal_matrix(RR,w) \n```\nthe only thing that works is \n\n```\nsage: d=diagonal_matrix(RR,list(w))\n```\nA stupid but easy fix is to try to turn any argument to diagonal_matrix into a list before bailing out (its in matrix/constructor.py), but there should probably be logic actually expecting vectors and analyzing the parents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3704\n\n",
+    "closed_at": "2009-01-28T14:12:34Z",
     "created_at": "2008-07-22T04:35:52Z",
     "labels": [
         "component: linear algebra",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "diagonal_matrix does not accept vectors",
+    "title": "[with patch, positive review] make diagonal_matrix accept much more general arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3704",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

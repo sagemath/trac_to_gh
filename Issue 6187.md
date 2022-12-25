@@ -1,15 +1,16 @@
-# Issue 6187: After making a clone, the reference manual (and other docs) should not have to be completely rebuilt.
+# Issue 6187: [with patch, positive review] Fix post-cloning docbuild problems and add new command-line options
 
 archive/issues_006187.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen mvngu @loefflerd\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):\n\n```\n> What does force a complete rebuild is making a new branch with \"sage - \n> clone\". This is annoying; I don't know enough about the build \n> machinery to know if this can be changed. \n\nI agree.  If I have built the docs in the main branch and make a \nclone, it would be great of the docs were clones too, as then we would \nonly need to build the docs once per release. \nI imagine this is easily doable by adapting the clone script.  If \npeople agree, could someone  make a ticket? \n```\nNote that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen mvngu @loefflerd\n\nCurrently, `sage -clone` requires a rebuild of the Sage documentation.  This ticket attempts to fix this and a few related problems with the \"docbuild\" system.  It also includes some features added in the course of fixing the problems:\n\n* Lots of new command-line options. For a list and examples, try, e.g., `sage -docbuild -H`.  The old options and syntax should still work.\n\n* Progress updates with Python's powerful logging framework, which we may wish to adopt later for the Sage library.\n\nThe only patches to apply are\n\n* [attachment:ticket:6187:trac_6187-new_scripts_v5.patch] to the scripts repository\n* [attachment:ticket:6187:trac_6187-builder_v5.patch] to the sage repository\n\nAll but one of the other patches are earlier versions of these.  Please do not review the remaining, completely optional patch:\n\n* [attachment:ticket:6187:trac_6187_testreference.patch] (apply to the sage repository)\n\nThis adds a test document similar to the reference manual.  It covers only algebras, so it builds much more quickly and may facilitate experimentation with Sphinx, say.  To build it, try `sage -docbuild testreference html -jv3`.\n\nRelated tickets:  #5350, #6605, #6614, #6653, #6673, #6488. \n\nPlease visit the \"diff\" links below to view earlier ticket descriptions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
+    "closed_at": "2009-10-15T16:32:52Z",
     "created_at": "2009-06-02T17:00:10Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "After making a clone, the reference manual (and other docs) should not have to be completely rebuilt.",
+    "title": "[with patch, positive review] Fix post-cloning docbuild problems and add new command-line options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6187",
     "user": "https://github.com/jhpalmieri"
@@ -19,20 +20,26 @@ Assignee: tba
 
 CC:  @mwhansen mvngu @loefflerd
 
-From [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):
+Currently, `sage -clone` requires a rebuild of the Sage documentation.  This ticket attempts to fix this and a few related problems with the "docbuild" system.  It also includes some features added in the course of fixing the problems:
 
-```
-> What does force a complete rebuild is making a new branch with "sage - 
-> clone". This is annoying; I don't know enough about the build 
-> machinery to know if this can be changed. 
+* Lots of new command-line options. For a list and examples, try, e.g., `sage -docbuild -H`.  The old options and syntax should still work.
 
-I agree.  If I have built the docs in the main branch and make a 
-clone, it would be great of the docs were clones too, as then we would 
-only need to build the docs once per release. 
-I imagine this is easily doable by adapting the clone script.  If 
-people agree, could someone  make a ticket? 
-```
-Note that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.
+* Progress updates with Python's powerful logging framework, which we may wish to adopt later for the Sage library.
+
+The only patches to apply are
+
+* [attachment:ticket:6187:trac_6187-new_scripts_v5.patch] to the scripts repository
+* [attachment:ticket:6187:trac_6187-builder_v5.patch] to the sage repository
+
+All but one of the other patches are earlier versions of these.  Please do not review the remaining, completely optional patch:
+
+* [attachment:ticket:6187:trac_6187_testreference.patch] (apply to the sage repository)
+
+This adds a test document similar to the reference manual.  It covers only algebras, so it builds much more quickly and may facilitate experimentation with Sphinx, say.  To build it, try `sage -docbuild testreference html -jv3`.
+
+Related tickets:  #5350, #6605, #6614, #6653, #6673, #6488. 
+
+Please visit the "diff" links below to view earlier ticket descriptions.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6187
 

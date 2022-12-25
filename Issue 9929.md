@@ -3,7 +3,8 @@
 archive/issues_009929.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nThis bug has been reported in #9925, and fixed by #9420. We just want to make sure it does not appear again ! `:-)`\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9930\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nThis bug has been reported in #9925, and fixed by #9420. We just want to make sure it does not appear again ! `:-)`\n\nRequires :\n\n* #9925\n* #9420\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9930\n\n",
+    "closed_at": "2010-09-29T08:39:33Z",
     "created_at": "2010-09-17T08:08:52Z",
     "labels": [
         "component: graph theory",
@@ -19,6 +20,11 @@ archive/issues_009929.json:
 Assignee: jason, ncohen, rlm
 
 This bug has been reported in #9925, and fixed by #9420. We just want to make sure it does not appear again ! `:-)`
+
+Requires :
+
+* #9925
+* #9420
 
 Nathann
 

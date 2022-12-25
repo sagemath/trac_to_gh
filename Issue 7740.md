@@ -1,16 +1,17 @@
-# Issue 7740: Spped up MixedIntegerLinearProgram
+# Issue 7740: Speed up MixedIntegerLinearProgram
 
 archive/issues_007740.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @rlmill\n\nFrom Robert Miller :\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: vertex_coloring(g)\n```\n\nIt takes longer to set up the constraint than to solve the problem, on my laptop. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7740\n\n",
+    "closed_at": "2010-01-13T11:39:54Z",
     "created_at": "2009-12-19T08:43:58Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Spped up MixedIntegerLinearProgram",
+    "title": "Speed up MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7740",
     "user": "https://github.com/nathanncohen"

@@ -3,10 +3,11 @@
 archive/issues_005482.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following code works:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: f = x^2-1\nsage: S = R.quotient_by_principal_ideal(f)\n```\nbut then this fails:\n\n```\nsage: S\n ---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...[snip]\n/Users/tmp/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject.variable_names (sage/structure/category_object.c:3530)()\n\nValueError: variable names have not yet been set using self._assign_names(...)\n```\nThe routine should require that the name(s) be provided.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5482\n\n",
+    "body": "Assignee: justin\n\nThe following code works:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: f = x^2-1\nsage: S = R.quotient_by_principal_ideal(f)\n```\nbut then this fails:\n\n```\nsage: S\n ---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...[snip]\n/Users/tmp/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject.variable_names (sage/structure/category_object.c:3530)()\n\nValueError: variable names have not yet been set using self._assign_names(...)\n```\nThe routine should require that the name(s) be provided.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5482\n\n",
+    "closed_at": "2009-11-17T08:03:08Z",
     "created_at": "2009-03-11T06:44:39Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
@@ -16,7 +17,7 @@ archive/issues_005482.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: justin
 
 The following code works:
 

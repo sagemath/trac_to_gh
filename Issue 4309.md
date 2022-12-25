@@ -1,22 +1,23 @@
-# Issue 4309: Kerberos authentification for SAGE notebook
+# Issue 4309: [with patch, needs work] Kerberos authentification for SAGE notebook
 
 archive/issues_004309.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @embray @jdemeyer @kiwifb\n\nThis patch adds Kerberos authentification support for the SAGE notebook. It also adds the options krb_srv, krb_realm for the notebook() command.\n\nThis patch however depends on pykerberos which depends on kerberos which depends on a couple of other libraries all in all a little less size than SAGE itself and all not in SAGE :-). Nevertheless ... \n\nGreetings, \nKilian. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4309\n\n",
+    "body": "Assignee: kkilger\n\nCC:  @embray @jdemeyer @kiwifb\n\nThis patch adds Kerberos authentification support for the SAGE notebook. It also adds the options krb_srv, krb_realm for the notebook() command.\n\nThis patch however depends on pykerberos which depends on kerberos which depends on a couple of other libraries all in all a little less size than SAGE itself and all not in SAGE :-). Nevertheless ... \n\nGreetings, \nKilian. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4309\n\n",
+    "closed_at": "2019-06-16T20:08:07Z",
     "created_at": "2008-10-16T17:30:31Z",
     "labels": [
-        "component: user interface",
+        "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Kerberos authentification for SAGE notebook",
+    "title": "[with patch, needs work] Kerberos authentification for SAGE notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4309",
     "user": "https://trac.sagemath.org/admin/accounts/users/kkilger"
 }
 ```
-Assignee: @williamstein
+Assignee: kkilger
 
 CC:  @embray @jdemeyer @kiwifb
 

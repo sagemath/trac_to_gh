@@ -1,9 +1,10 @@
-# Issue 4650: matrix_modn_sparse needs cleanup
+# Issue 4650: [with patch, positive review] make density() in matrix_modn_sparse much faster
 
 archive/issues_004650.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: sparse\n\nmatrix_modn_sparse needs some housecleaning.  One gem, in particular:\n\n```\n    cdef Py_ssize_t i, j, k\n    k = 0\n    for i from 0 <= i < self._nrows:\n        for j from 0 <= j < self.rows[i].num_nonzero:\n            k+=1\n    return QQ(k)/QQ(self.nrows()*self.ncols()) \n```\n\nalso, it could use some fast nonzero_positions, getitem, etc. methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/4650\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: sparse\n\nmatrix_modn_sparse needs some housecleaning.  One gem, in particular:\n\n```\n    cdef Py_ssize_t i, j, k\n    k = 0\n    for i from 0 <= i < self._nrows:\n        for j from 0 <= j < self.rows[i].num_nonzero:\n            k+=1\n    return QQ(k)/QQ(self.nrows()*self.ncols()) \n```\n\nalso, it could use some fast nonzero_positions, getitem, etc. methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/4650\n\n",
+    "closed_at": "2009-01-18T04:50:41Z",
     "created_at": "2008-11-29T02:35:02Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_004650.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "matrix_modn_sparse needs cleanup",
+    "title": "[with patch, positive review] make density() in matrix_modn_sparse much faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4650",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: boothby
+Assignee: @craigcitro
 
 Keywords: sparse
 

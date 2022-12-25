@@ -1,9 +1,10 @@
-# Issue 5198: apply_map skips zeroes in sparse vectors and matrices
+# Issue 5198: [with patch, positive review] apply_map skips zeroes in sparse vectors and matrices
 
 archive/issues_005198.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nConsider:\n\n```\nsage: vector(ZZ, range(3)).apply_map(lambda x: x+1)\n(1, 2, 3)\nsage: vector(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)\n(0, 2, 3)\n```\n\nand\n\n```\nsage: matrix(ZZ, range(3)).apply_map(lambda x: x+1)\n[1 2 3]\nsage: matrix(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)\n[0 2 3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5198\n\n",
+    "closed_at": "2009-02-08T01:59:33Z",
     "created_at": "2009-02-07T00:39:36Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005198.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "apply_map skips zeroes in sparse vectors and matrices",
+    "title": "[with patch, positive review] apply_map skips zeroes in sparse vectors and matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5198",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

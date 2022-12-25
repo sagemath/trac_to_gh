@@ -4,6 +4,7 @@ archive/issues_001097.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R.<x> = PolynomialRing(ZZ)\nsage: x.discriminant()\n1\n\nsage: R.<x> = PolynomialRing(Zp(5))\nsage: x.discriminant()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/temp/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'Polynomial_padic_capped_relative_dense' object has no attribute 'discriminant'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1097\n\n",
+    "closed_at": "2008-04-06T21:50:21Z",
     "created_at": "2007-11-04T02:00:08Z",
     "labels": [
         "component: basic arithmetic",

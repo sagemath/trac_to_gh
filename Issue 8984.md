@@ -3,7 +3,8 @@
 archive/issues_008984.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brant@math.ucdavis.edu @rlmill\n\nThis is an implementation of the Lenart--Postnikov alcove path model as described in:\n\nA combinatorial model for crystals of Kac-Moody algebras. Trans. Amer. Math. Soc.  360  (2008).\n\nIt also implements to_coroot_lattice_morphism() and associated_coroot() in root_lattice_realization.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8984\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brant@math.ucdavis.edu @rlmill\n\nKeywords: combinat, crystals\n\nThis is an implementation of the Lenart--Postnikov alcove path model as described in:\n\nA combinatorial model for crystals of Kac-Moody algebras. Trans. Amer. Math. Soc.  360  (2008).\n\nIt also implements to_coroot_lattice_morphism() and associated_coroot() in root_lattice_realization.py.\n\nDepends on #8911 (trac_8911_categorification_crystals-as.patch).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8984\n\n",
+    "closed_at": "2010-07-21T01:55:28Z",
     "created_at": "2010-05-18T00:26:22Z",
     "labels": [
         "component: combinatorics"
@@ -19,11 +20,16 @@ Assignee: sage-combinat
 
 CC:  sage-combinat brant@math.ucdavis.edu @rlmill
 
+Keywords: combinat, crystals
+
 This is an implementation of the Lenart--Postnikov alcove path model as described in:
 
 A combinatorial model for crystals of Kac-Moody algebras. Trans. Amer. Math. Soc.  360  (2008).
 
 It also implements to_coroot_lattice_morphism() and associated_coroot() in root_lattice_realization.py.
+
+Depends on #8911 (trac_8911_categorification_crystals-as.patch).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8984
 

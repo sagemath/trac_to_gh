@@ -3,7 +3,8 @@
 archive/issues_008046.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThe source file `matrix/matrix_double_dense.py` is not included in the documentation.  It appears that it should be, since it has functions that are of interest to users.  Patch simply adds it to the right place in the documentation tree.\n\nThe file itself needs some love.  After #4756 goes in, the following four functions should be in good shape.  The remainder needs work.\n\n```\nleft_eigenvectors()\nright_eigenvectors()\neigenspaces_left()\neigenspaces_right()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8046\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: beginner sd35.5\n\nThe source file `matrix/matrix_double_dense.py` is not included in the documentation.  It appears that it should be, since it has functions that are of interest to users.  Patch simply adds it to the right place in the documentation tree.\n\nThe file itself needs some love.  After #4756 goes in, the following four functions should be in good shape.  The remainder needs work.\n\n```\nleft_eigenvectors()\nright_eigenvectors()\neigenspaces_left()\neigenspaces_right()\n```\n\n---\n\nApply [attachment:trac_8046_matrix_double_dense.patch] and [attachment:trac_8046-ref.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8046\n\n",
+    "closed_at": "2012-01-18T08:14:49Z",
     "created_at": "2010-01-23T23:03:56Z",
     "labels": [
         "component: documentation",
@@ -18,6 +19,8 @@ archive/issues_008046.json:
 ```
 Assignee: mvngu
 
+Keywords: beginner sd35.5
+
 The source file `matrix/matrix_double_dense.py` is not included in the documentation.  It appears that it should be, since it has functions that are of interest to users.  Patch simply adds it to the right place in the documentation tree.
 
 The file itself needs some love.  After #4756 goes in, the following four functions should be in good shape.  The remainder needs work.
@@ -28,6 +31,10 @@ right_eigenvectors()
 eigenspaces_left()
 eigenspaces_right()
 ```
+
+---
+
+Apply [attachment:trac_8046_matrix_double_dense.patch] and [attachment:trac_8046-ref.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8046
 

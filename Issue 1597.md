@@ -4,6 +4,7 @@ archive/issues_001597.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI forgot to when I added jmol in 2.9.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1597\n\n",
+    "closed_at": "2007-12-26T02:42:17Z",
     "created_at": "2007-12-25T20:37:08Z",
     "labels": [
         "component: graphics",

@@ -3,7 +3,8 @@
 archive/issues_002291.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  jbandlow@gmail.com\n\nJason Bandlow requested Laurent polynomial rings.  I've implemented them.  They need doctests, and need to have some NotImplementedErrors implemented.  :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2291\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  jbandlow@gmail.com\n\nJason Bandlow requested Laurent polynomial rings.  I've implemented them.  They need doctests, and need to have some NotImplementedErrors implemented.  :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2291\n\n",
+    "closed_at": "2008-04-12T12:38:06Z",
     "created_at": "2008-02-24T10:24:07Z",
     "labels": [
         "component: commutative algebra"
@@ -15,7 +16,7 @@ archive/issues_002291.json:
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @roed314
+Assignee: @mwhansen
 
 CC:  jbandlow@gmail.com
 

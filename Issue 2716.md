@@ -1,22 +1,25 @@
-# Issue 2716: convex hulls and polyhedral functions
+# Issue 2716: [with patch, positive review, review addressed] convex hulls and polyhedral functions
 
 archive/issues_002716.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe patch adds functions to compute convex hulls and change back and forth from vertices to inequality descriptions of polytopes/polyhedra, using only cddlib and not polymake.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2716\n\n",
+    "body": "Assignee: somebody\n\nKeywords: polyhedra, convex hull, polytope, gfan\n\nThe patch adds functions to compute convex hulls and change back and forth from vertices to inequality descriptions of polytopes/polyhedra, using only cddlib and not polymake.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2716\n\n",
+    "closed_at": "2008-04-29T00:18:48Z",
     "created_at": "2008-03-29T13:49:51Z",
     "labels": [
-        "component: cygwin",
-        "bug"
+        "component: geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "convex hulls and polyhedral functions",
+    "title": "[with patch, positive review, review addressed] convex hulls and polyhedral functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2716",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: mabshoff
+Assignee: somebody
+
+Keywords: polyhedra, convex hull, polytope, gfan
 
 The patch adds functions to compute convex hulls and change back and forth from vertices to inequality descriptions of polytopes/polyhedra, using only cddlib and not polymake.
 

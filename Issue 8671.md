@@ -4,6 +4,7 @@ archive/issues_008671.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nsage: P.<n> = QQ[]\nsage: F = P.fraction_field()\nsage: P.one_element()//F.one_element()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n.../sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.__floordiv__ (sage/rings/polynomial/polynomial_element.c:14608)()\n\n.../sage/structure/element.so in sage.structure.element.NamedBinopMethod.__call__ (sage/structure/element.c:22812)()\n\n.../sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:16670)()\n\n...\nAttributeError: 'sage.rings.fraction_field_element.FractionFieldElement' object has no attribute '_parent'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8671\n\n",
+    "closed_at": "2010-06-06T01:20:33Z",
     "created_at": "2010-04-11T12:19:05Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,9 +1,10 @@
-# Issue 5740: typo in docstring for taylor series (really easy!)
+# Issue 5740: [with patch, positive review] typo in docstring for taylor series (really easy!)
 
 archive/issues_005740.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\n        -  ``taylor`` - (default: False); if True, use Taylor\n           series, which allows more integrals to be computed (but may also\n           crash in some obscure cases due to bugs in Maxima).\n\nintegrals --> \"limits\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5740\n\n",
+    "closed_at": "2009-06-26T23:12:08Z",
     "created_at": "2009-04-11T00:59:53Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_005740.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "typo in docstring for taylor series (really easy!)",
+    "title": "[with patch, positive review] typo in docstring for taylor series (really easy!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5740",
     "user": "https://github.com/williamstein"

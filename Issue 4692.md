@@ -3,10 +3,10 @@
 archive/issues_004692.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nDepends on #4276\n\nIssue created by migration from https://trac.sagemath.org/ticket/4692\n\n",
+    "body": "Assignee: @loefflerd\n\nDepends on #4276\n\nIssue created by migration from https://trac.sagemath.org/ticket/4692\n\n",
     "created_at": "2008-12-04T07:04:27Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "embeddings not implemented for relative number fields",
@@ -15,7 +15,7 @@ archive/issues_004692.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @loefflerd
 
 Depends on #4276
 

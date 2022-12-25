@@ -1,16 +1,17 @@
-# Issue 3575: [with patch; needs review] delete random crap from the bottom of complex_double.pyx
+# Issue 3575: [with patch; positive review] delete random crap from the bottom of complex_double.pyx
 
 archive/issues_003575.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3575\n\n",
+    "closed_at": "2008-07-07T01:45:22Z",
     "created_at": "2008-07-06T22:04:22Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] delete random crap from the bottom of complex_double.pyx",
+    "title": "[with patch; positive review] delete random crap from the bottom of complex_double.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3575",
     "user": "https://github.com/williamstein"

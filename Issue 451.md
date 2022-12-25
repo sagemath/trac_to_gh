@@ -4,6 +4,7 @@ archive/issues_000451.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nflintqs-20070505 uses linux-ism for types. In lanzos.h add\n\n#ifdef __sun\n#define u_int32_t unsigned int\n#define u_int64_t unsigned long long\n#endif \n\nIssue created by migration from https://trac.sagemath.org/ticket/451\n\n",
+    "closed_at": "2007-09-04T11:51:45Z",
     "created_at": "2007-08-19T07:55:51Z",
     "labels": [
         "component: packages: standard",

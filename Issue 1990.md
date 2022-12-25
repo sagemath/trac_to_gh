@@ -1,16 +1,17 @@
-# Issue 1990: ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings
+# Issue 1990: [with patch, with positive review] ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings
 
 archive/issues_001990.json:
 ```json
 {
     "body": "Assignee: somebody\n\n1. ZZ.random_element() never returns 0. This is a bug.\n\n2. \"ZZ.random_element() -- return an integer over the natrual distribution $Pr(n) = 1/2|n|(|n|+1)$.\"  This contains a typo \"natrual\".  Also the formula doesn't make any sense.  What's in the numerator / denominator?  What does it mean at 0?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1990\n\n",
+    "closed_at": "2008-03-29T19:18:54Z",
     "created_at": "2008-01-31T03:45:39Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings",
+    "title": "[with patch, with positive review] ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1990",
     "user": "https://github.com/williamstein"

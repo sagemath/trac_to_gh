@@ -4,6 +4,7 @@ archive/issues_007825.json:
 ```json
 {
     "body": "Assignee: @peterjeremy\n\nCC:  drkirkby @williamstein @craigcitro\n\nFreeBSD refers to the x86_64 architecture under its original name of 'amd64' so use this as an alias for x86_64.  The `-fPIC' fix is needed to correct:\n\n```\ngcc  -o libpari-gmp.so.2.3.3 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -Wl,-shared,-soname=libpari-gmp.so.2 mp.o mpinl.o Flx.o Qfb.o RgX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bibli1.o bibli2.o buch1.o buch2.o buch3.o buch4.o galconj.o gen1.o gen2.o gen3.o ifactor1.o perm.o polarit1.o polarit2.o polarit3.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o default.o errmsg.o es.o init.o intnum.o members.o sumiter.o aprcl.o elldata.o elliptic.o galois.o groupid.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o -lc -lm -L/home/peter/sage/sage-4.3/local/lib -lgmp \n/usr/bin/ld: mp.o: relocation R_X86_64_32S can not be used when making a shared object; recompile with -fPIC\nmp.o: could not read symbols: Bad value\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/pari-2.3.3.p5/src/Ofreebsd-amd64.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7825\n\n",
+    "closed_at": "2010-01-04T07:14:28Z",
     "created_at": "2010-01-03T02:26:54Z",
     "labels": [
         "component: porting: bsd",

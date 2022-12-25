@@ -1,16 +1,17 @@
-# Issue 4040: Update biopython optional package to 1.47
+# Issue 4040: [with spkg, positive review] Update biopython optional package to 1.47
 
 archive/issues_004040.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: biopython, optional packages\n\nJust keeping this package up to date.  Actually 1.48 will be out pretty soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4040\n\n",
+    "closed_at": "2008-09-04T02:48:07Z",
     "created_at": "2008-09-02T20:32:45Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Update biopython optional package to 1.47",
+    "title": "[with spkg, positive review] Update biopython optional package to 1.47",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4040",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

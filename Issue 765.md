@@ -4,6 +4,7 @@ archive/issues_000765.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following isn't implemented in a useful way anyway, but the fact that crtl-C does not work properly is a bad sign:\n\n```\nP.<x>=QQ[]\nf=x^6+x^2+1\nC=HyperellipticCurve(f)\nJ=C.jacobian()\nK=J.kummer_surface()\nK.rational_points(bound=100)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/765\n\n",
+    "closed_at": "2007-11-03T18:11:08Z",
     "created_at": "2007-09-30T20:25:27Z",
     "labels": [
         "component: algebraic geometry",

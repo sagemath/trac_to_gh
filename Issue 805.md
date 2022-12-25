@@ -1,22 +1,23 @@
-# Issue 805: is_trivial() does not work for fractional ideals of number field
+# Issue 805: [with patch] is_trivial() does not work for fractional ideals of number field
 
 archive/issues_000805.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: F.<a> = QuadraticField(-5)\nsage: I = F.ideal(3)\nsage: I.is_trivial()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/local/lib/python2.5/site-packages/sage/rings/ideal.py in is_trivial(self)\n    229             return True\n    230         elif self.is_principal():\n--> 231             return self.gen().is_unit()\n    232         raise NotImplementedError\n    233 \n\n<type 'exceptions.AttributeError'>: 'NumberFieldIdeal' object has no attribute 'gen'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/805\n\n",
+    "body": "Assignee: @robertwb\n\n```\nsage: F.<a> = QuadraticField(-5)\nsage: I = F.ideal(3)\nsage: I.is_trivial()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/local/lib/python2.5/site-packages/sage/rings/ideal.py in is_trivial(self)\n    229             return True\n    230         elif self.is_principal():\n--> 231             return self.gen().is_unit()\n    232         raise NotImplementedError\n    233 \n\n<type 'exceptions.AttributeError'>: 'NumberFieldIdeal' object has no attribute 'gen'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/805\n\n",
+    "closed_at": "2007-11-19T22:32:40Z",
     "created_at": "2007-10-03T14:12:24Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "is_trivial() does not work for fractional ideals of number field",
+    "title": "[with patch] is_trivial() does not work for fractional ideals of number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/805",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 ```
 sage: F.<a> = QuadraticField(-5)

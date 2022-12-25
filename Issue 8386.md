@@ -1,16 +1,17 @@
-# Issue 8386: iet alphabet bug and rebased datatype
+# Issue 8386: move iet from sage.combinat to sage.dynamics
 
 archive/issues_008386.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: iet combinatoric\n\nThere was a bug for iet.Permutation comparisons. We have the following\n\n```\nsage: p = iet.Permutation('a b','b a')\nsage: q = iet.Permutation('b a','a b')\nsage: p == q\nTrue\n```\n\nThe patch correct this feature (we get wrong) and rebased the datatype used for iet.Permutations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8386\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: iet, combinatorics\n\nThe library for iet is moved from sage.combinat.iet to sage.dynamics.interval_exchanges which seems more natural.\n\nApply \n* [attachment:trac_8386_really_just_moving-fc.patch]\n* [attachment:trac_8386_big_clean_fc.patch]\n* [attachment:trac_8386_assert_removal.patch]\n\nFollow-up: #14683\n\nIssue created by migration from https://trac.sagemath.org/ticket/8386\n\n",
+    "closed_at": "2013-08-02T14:14:06Z",
     "created_at": "2010-02-27T13:06:33Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
-    "title": "iet alphabet bug and rebased datatype",
+    "title": "move iet from sage.combinat to sage.dynamics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8386",
     "user": "https://github.com/videlec"
@@ -20,18 +21,16 @@ Assignee: @videlec
 
 CC:  sage-combinat tmonteil
 
-Keywords: iet combinatoric
+Keywords: iet, combinatorics
 
-There was a bug for iet.Permutation comparisons. We have the following
+The library for iet is moved from sage.combinat.iet to sage.dynamics.interval_exchanges which seems more natural.
 
-```
-sage: p = iet.Permutation('a b','b a')
-sage: q = iet.Permutation('b a','a b')
-sage: p == q
-True
-```
+Apply 
+* [attachment:trac_8386_really_just_moving-fc.patch]
+* [attachment:trac_8386_big_clean_fc.patch]
+* [attachment:trac_8386_assert_removal.patch]
 
-The patch correct this feature (we get wrong) and rebased the datatype used for iet.Permutations.
+Follow-up: #14683
 
 Issue created by migration from https://trac.sagemath.org/ticket/8386
 

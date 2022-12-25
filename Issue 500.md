@@ -4,6 +4,7 @@ archive/issues_000500.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nhttp://maxima.sourceforge.net/\n\nIssue created by migration from https://trac.sagemath.org/ticket/500\n\n",
+    "closed_at": "2007-08-28T23:17:34Z",
     "created_at": "2007-08-28T17:58:58Z",
     "labels": [
         "component: packages: standard"

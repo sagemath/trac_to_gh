@@ -4,6 +4,7 @@ archive/issues_000509.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: sage-scripts, ipython, gdb\n\nAttached patch adds option to run SAGE's IPython with gdb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/509\n\n",
+    "closed_at": "2007-09-09T15:07:04Z",
     "created_at": "2007-08-29T10:37:01Z",
     "labels": [
         "component: distribution"

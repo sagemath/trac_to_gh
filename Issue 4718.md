@@ -1,21 +1,22 @@
-# Issue 4718: notebook -- move source code and help window html to template
+# Issue 4718: [with patch, positive review] notebook -- move source code, upload, and help window html to template
 
 archive/issues_004718.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4718\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4718\n\n",
+    "closed_at": "2009-01-19T09:51:52Z",
     "created_at": "2008-12-05T18:45:52Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "notebook -- move source code and help window html to template",
+    "title": "[with patch, positive review] notebook -- move source code, upload, and help window html to template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4718",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 CC:  @mwhansen
 

@@ -1,16 +1,17 @@
-# Issue 824: update linbox package
+# Issue 824: update linbox package to 1.1.4 (+fixes)
 
 archive/issues_000824.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/824\n\n",
+    "closed_at": "2008-02-22T03:41:29Z",
     "created_at": "2007-10-04T15:56:48Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update linbox package",
+    "title": "update linbox package to 1.1.4 (+fixes)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/824",
     "user": "https://github.com/williamstein"

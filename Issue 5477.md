@@ -4,6 +4,7 @@ archive/issues_005477.json:
 ```json
 {
     "body": "Assignee: @malb\n\nFrom a Sage Days 14 user (see below).\n\nIn short, in the univariate over-a-field case, `R.quotient_ring(I)` should normalize the generator of the ideal before forming the quotient. \n\n```\nIn each case below \"I\" and \"J\" are defined by different choices of\ngenerators and are recognized as the same ideal.  In case 1 the\nquotients are considered equal and in case 2 they are considered\nunequal.\n\n(I checked this with the latest version)\n\nCase 1:\n----------\n\nsage: R.<x> = PolynomialRing(QQ)\nsage: I = R.ideal([x + x^2, x])\nsage: J = R.ideal([2*x + 2*x^2, x])\nsage: S = R.quotient_ring(I)\nsage: U = R.quotient_ring(J)\nsage: I==J\nTrue\nsage: S==U\nTrue\n\nCase 2:\n----------\n\nsage: R.<x> = PolynomialRing(QQ)\nsage: I = R.ideal([x + x^2])\nsage: J = R.ideal([2*x + 2*x^2])\nsage: S = R.quotient_ring(I)\nsage: U = R.quotient_ring(J)\nsage: I==J\nTrue\nsage: S==U\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5477\n\n",
+    "closed_at": "2010-01-23T08:39:45Z",
     "created_at": "2009-03-11T03:19:20Z",
     "labels": [
         "component: commutative algebra",

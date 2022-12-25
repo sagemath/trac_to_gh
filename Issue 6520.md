@@ -3,11 +3,11 @@
 archive/issues_006520.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat @roed314 simonking\n\nKeywords: cached function, weakref\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6520\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314 simonking\n\nKeywords: cached function, weakref\n\nThe preliminary attached patch (taken from the Sage-Combinat patch server) implements a variant of cached_function where the cache uses weak references. Again: preliminary: the test do not pass, ...\n\nFeedback welcome!\n\nThe first planned application is for homsets, after the category stuff #5985 will be in.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6520\n\n",
+    "closed_at": "2014-02-11T21:21:39Z",
     "created_at": "2009-07-13T06:16:28Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs work] Implement cached_function with weakref cache",
@@ -16,11 +16,17 @@ archive/issues_006520.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: cwitty
+Assignee: @nthiery
 
 CC:  sage-combinat @roed314 simonking
 
 Keywords: cached function, weakref
+
+The preliminary attached patch (taken from the Sage-Combinat patch server) implements a variant of cached_function where the cache uses weak references. Again: preliminary: the test do not pass, ...
+
+Feedback welcome!
+
+The first planned application is for homsets, after the category stuff #5985 will be in.
 
 
 

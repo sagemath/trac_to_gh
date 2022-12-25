@@ -1,15 +1,16 @@
-# Issue 4915: convert sage.interfaces.* docstrings to Sphinx
+# Issue 4915: [with patch, needs review] convert sage.interfaces.* docstrings to Sphinx
 
 archive/issues_004915.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4915\n\n",
+    "closed_at": "2009-02-24T18:25:23Z",
     "created_at": "2009-01-01T22:52:21Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.interfaces.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.interfaces.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4915",
     "user": "https://github.com/mwhansen"

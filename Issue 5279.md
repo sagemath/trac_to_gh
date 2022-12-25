@@ -1,16 +1,17 @@
-# Issue 5279: Experimental ParaView Package
+# Issue 5279: [with spkg, needs work] Experimental ParaView Package
 
 archive/issues_005279.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nKeywords: 3D, Data Vizualization\n\nParaview is based on VTK, comes with it's own implementation of vtk.\n\n[http://www.paraview.org/Wiki/ParaView](http://www.paraview.org/Wiki/ParaView)\n\nFrom the wiki web site:\n\n```\nParaView is an open-source, multi-platform application designed to visualize\ndata sets of size varying from small to very large. The goals of\nthe ParaView project include developing an open-source, multi-platform visualization\napplication that support distributed computational models to process\nlarge data sets.\nIt has an open, flexible, and intuitive user interface.\nFurthermore, ParaView is built on an extensible architecture based on open standards.\nParaView runs on distributed and shared memory parallel as well as single processor\nsystems and has been succesfully tested on Windows, Linux, Mac OS X, IBM Blue Gene,\nCray XT3 and various Unix workstations and clusters.\nUnder the hood, ParaView uses the Visualization Toolkit as the data processing\nand rendering engine and has a user interface written using the\nQt cross-platform application framework.\n```\n\nDependencies:\n\nOpenGL\n\nQt4\n\nopenmpi for multi processor usage.\n\nTry it! See:\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg)\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5279\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nKeywords: 3D, Data Vizualization\n\nParaview is based on VTK, comes with it's own implementation of vtk.\n\n[http://www.paraview.org/Wiki/ParaView](http://www.paraview.org/Wiki/ParaView)\n\nFrom the wiki web site:\n\n```\nParaView is an open-source, multi-platform application designed to visualize\ndata sets of size varying from small to very large. The goals of\nthe ParaView project include developing an open-source, multi-platform visualization\napplication that support distributed computational models to process\nlarge data sets.\nIt has an open, flexible, and intuitive user interface.\nFurthermore, ParaView is built on an extensible architecture based on open standards.\nParaView runs on distributed and shared memory parallel as well as single processor\nsystems and has been succesfully tested on Windows, Linux, Mac OS X, IBM Blue Gene,\nCray XT3 and various Unix workstations and clusters.\nUnder the hood, ParaView uses the Visualization Toolkit as the data processing\nand rendering engine and has a user interface written using the\nQt cross-platform application framework.\n```\n\nDependencies:\n\ncmake-2.4.8 or higher\n\nOpenGL\n\nQt4\n\nopenmpi for multi processor usage.\n\nTry it! See:\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/paraview-3.4.0.spkg)\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png)\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-258.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-258.png)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5279\n\n",
+    "closed_at": "2022-04-21T15:28:35Z",
     "created_at": "2009-02-15T21:25:24Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Experimental ParaView Package",
+    "title": "[with spkg, needs work] Experimental ParaView Package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5279",
     "user": "https://github.com/jaapspies"
@@ -46,6 +47,8 @@ Qt cross-platform application framework.
 
 Dependencies:
 
+cmake-2.4.8 or higher
+
 OpenGL
 
 Qt4
@@ -58,7 +61,11 @@ Try it! See:
 
 [http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-257.png)
 
+[http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-258.png](http://sage.math.washington.edu/home/jsp/SPKGS/ParaView/Screenshot-258.png)
+
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5279
 

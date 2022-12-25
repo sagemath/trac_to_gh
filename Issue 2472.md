@@ -4,6 +4,7 @@ archive/issues_002472.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: floor truncate ceil ceiling parent integer\n\nI think `floor` and `ceil` and `truncate` should return integers.\n\n```\nsage: floor(2).parent()\nInteger Ring\nsage: floor(2.0).parent()\nInteger Ring\nsage: floor(RIF(2.0)).parent()\nReal Interval Field with 53 bits of precision\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2472\n\n",
+    "closed_at": "2014-09-09T14:53:36Z",
     "created_at": "2008-03-11T20:58:33Z",
     "labels": [
         "component: basic arithmetic",

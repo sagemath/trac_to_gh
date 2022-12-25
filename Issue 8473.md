@@ -1,34 +1,44 @@
-# Issue 8473: Make .sws files clickable
+# Issue 8473: notebook option to upload a .sws file
 
 archive/issues_008473.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be great for those of us who have installed Sage to be able\nto double click on these files and have sage open them in the\nnotebook.\n\nSupoorting a command on the likes of\n\n```\nsage -notebook /path/to/worksheet.sws\n```\n\nwould be a very good step in this direction\n\nIssue created by migration from https://trac.sagemath.org/ticket/8473\n\n",
+    "body": "Assignee: @gvol\n\nIt would be great for those of us who have installed Sage to be able\nto double click on these files and have sage open them in the\nnotebook.\n\nSuporting a command on the likes of:\n\n```\nsage -notebook /path/to/worksheet.sws\n```\n\nwould be a very good step in this direction.\n\nNo patches need to be applied.  There is an [upstream pull request on github](https://github.com/sagemath/sagenb/pull/31), merged in #13121.\n\nSyntax is \n\n```\nsage -notebook upload=\"/path/to/worksheet.sws\"\n```\n\nThe changes to extcode (specifically for the Mac app) have been moved to #11026.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8473\n\n",
+    "closed_at": "2012-07-09T20:12:10Z",
     "created_at": "2010-03-07T04:15:40Z",
     "labels": [
-        "component: notebook",
-        "minor"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Make .sws files clickable",
+    "title": "notebook option to upload a .sws file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8473",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
-Assignee: @williamstein
+Assignee: @gvol
 
 It would be great for those of us who have installed Sage to be able
 to double click on these files and have sage open them in the
 notebook.
 
-Supoorting a command on the likes of
+Suporting a command on the likes of:
 
 ```
 sage -notebook /path/to/worksheet.sws
 ```
 
-would be a very good step in this direction
+would be a very good step in this direction.
+
+No patches need to be applied.  There is an [upstream pull request on github](https://github.com/sagemath/sagenb/pull/31), merged in #13121.
+
+Syntax is 
+
+```
+sage -notebook upload="/path/to/worksheet.sws"
+```
+
+The changes to extcode (specifically for the Mac app) have been moved to #11026.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8473
 

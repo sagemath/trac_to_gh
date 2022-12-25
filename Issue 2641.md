@@ -1,17 +1,17 @@
-# Issue 2641: replace guava 3.1 by guava 3.3
+# Issue 2641: [with new spkg, positive review] GAP: replace guava 3.1 by guava 3.3
 
 archive/issues_002641.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThere is a significantly improved version of GUAVA (a GAP package) available.\nThe new tarball is at\nhttp://sage.math.washington.edu/home/wdj/guava/guava3.3.tar.gz\nThis new version has a new C code function for (quickly) computing the\nminimum distance of binary and ternary codes (accessed via the new GUAVA function MinimumWeight), and also includes Brouwer's patch which (I'm told) fixes some or all the memory problems which Leon's code suffered. The GUAVA part also has many new functions, especially new code constructions.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2641\n\n",
+    "closed_at": "2008-03-31T14:06:31Z",
     "created_at": "2008-03-22T01:29:55Z",
     "labels": [
         "component: coding theory",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "replace guava 3.1 by guava 3.3",
+    "title": "[with new spkg, positive review] GAP: replace guava 3.1 by guava 3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2641",
     "user": "https://github.com/wdjoyner"

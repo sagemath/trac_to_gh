@@ -4,6 +4,7 @@ archive/issues_006356.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: doctest, notebook\n\nThe title says it all.\nSee http://groups.google.com/group/sage-devel/msg/636fda60ff2f4d1c\n\nAlso, it would be nice to have a button when using notebook that would\nlaunch sage -t on it and display the result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6356\n\n",
+    "closed_at": "2009-06-18T19:05:19Z",
     "created_at": "2009-06-18T16:55:04Z",
     "labels": [
         "component: doctest coverage",

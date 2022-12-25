@@ -3,11 +3,11 @@
 archive/issues_001385.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCurrently the base NumberFieldElement class requires NTL. However, the quadratic number field elements, and (in the future) FLINT-based number field classes won't use NTL at all, but things need to be split out to make this clean. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1385\n\n",
+    "body": "Assignee: @loefflerd\n\nCurrently the base NumberFieldElement class requires NTL. However, the quadratic number field elements, and (in the future) FLINT-based number field classes won't use NTL at all, but things need to be split out to make this clean. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1385\n\n",
+    "closed_at": "2011-10-09T20:43:32Z",
     "created_at": "2007-12-03T20:32:39Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Re-organize number field element inheritance hierarchy",
@@ -16,7 +16,7 @@ archive/issues_001385.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 Currently the base NumberFieldElement class requires NTL. However, the quadratic number field elements, and (in the future) FLINT-based number field classes won't use NTL at all, but things need to be split out to make this clean. 
 

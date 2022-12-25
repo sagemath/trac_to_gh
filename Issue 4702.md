@@ -1,15 +1,16 @@
-# Issue 4702: improve magma interface coverage
+# Issue 4702: [with patch, positive review] improve magma interface coverage
 
 archive/issues_004702.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: magma interface\n\nA drop in the bucket, but a useful drop.  Vectors and modules, inexact fields, conversions from sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4702\n\n",
+    "closed_at": "2008-12-05T09:37:21Z",
     "created_at": "2008-12-05T00:39:40Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "improve magma interface coverage",
+    "title": "[with patch, positive review] improve magma interface coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4702",
     "user": "https://github.com/ncalexan"

@@ -1,16 +1,17 @@
-# Issue 1820: update documentation for combinat/skew_partition.py
+# Issue 1820: [with patch, with positive review] update documentation for combinat/skew_partition.py
 
 archive/issues_001820.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1820\n\n",
+    "closed_at": "2008-01-21T06:05:40Z",
     "created_at": "2008-01-18T00:55:20Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update documentation for combinat/skew_partition.py",
+    "title": "[with patch, with positive review] update documentation for combinat/skew_partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1820",
     "user": "https://github.com/mwhansen"

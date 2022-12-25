@@ -1,16 +1,17 @@
-# Issue 4526: Can't multiply symmetric functions by 0
+# Issue 4526: [with patch, positive review] Can't multiply symmetric functions by 0
 
 archive/issues_004526.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nThe following, which should just return 0 in SFASchur(QQ), is really nasty:\n\nsage: s = SFASchur(QQ)\nsage: 0 * s([1])\nsage.bin: : Unknown error 155689240\n\nand sage quits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4526\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nThe following, which should just return 0 in SFASchur(QQ), is really nasty:\n\n```\nsage: s = SFASchur(QQ)\nsage: 0 * s([1])\nsage.bin: : Unknown error 155689240\n```\nand sage quits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4526\n\n",
+    "closed_at": "2008-11-15T04:48:42Z",
     "created_at": "2008-11-14T20:00:43Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Can't multiply symmetric functions by 0",
+    "title": "[with patch, positive review] Can't multiply symmetric functions by 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4526",
     "user": "https://github.com/jbandlow"
@@ -24,10 +25,11 @@ Keywords: symmetric functions
 
 The following, which should just return 0 in SFASchur(QQ), is really nasty:
 
+```
 sage: s = SFASchur(QQ)
 sage: 0 * s([1])
 sage.bin: : Unknown error 155689240
-
+```
 and sage quits.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4526

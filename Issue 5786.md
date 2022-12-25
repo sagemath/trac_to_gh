@@ -4,6 +4,7 @@ archive/issues_005786.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen boothby\n\nIf you print a large amount, but interrupt while the cell is evaluating, then you can't see the middle, because the output is truncated but the link to see it isn't there yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5786\n\n",
+    "closed_at": "2010-01-19T03:11:19Z",
     "created_at": "2009-04-14T18:47:45Z",
     "labels": [
         "component: notebook",

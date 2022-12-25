@@ -1,16 +1,17 @@
-# Issue 6206: move algebraic_closure method from RLF to LazyField
+# Issue 6206: [with patch, positive review] move algebraic_closure method from RLF to LazyField
 
 archive/issues_006206.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  craigcitro fwclarke robertwb\n\nKeywords: number field lazy field algebraic_closure\n\nTiny patch moves algebraic_closure method up the tree; I claim this is \"obviously\" the correct place for it to be, but you only hit this bug (missing method) when you are using strange embeddings of number fields and I don't have a good example at hand.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6206\n\n",
+    "closed_at": "2009-06-04T18:25:44Z",
     "created_at": "2009-06-04T03:45:24Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "move algebraic_closure method from RLF to LazyField",
+    "title": "[with patch, positive review] move algebraic_closure method from RLF to LazyField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6206",
     "user": "https://github.com/ncalexan"

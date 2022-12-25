@@ -1,15 +1,16 @@
-# Issue 6464: notebook: Unicode in notebook worksheets
+# Issue 6464: [with patch, positive review] notebook: Unicode in notebook worksheets
 
 archive/issues_006464.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: Unicode, notebook\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e3b8dce14b6375bf) thread, there is a patch to fix a Unicode problem related to typesetting Korean in notebook worksheets. Here's an essential snippet:\n\n```\nSo I find the python code and modify it.\n\nsageroot/devel/sage/sage/server/notebook/cell.py:211\n\n211 : </script>\"\"\"%(self.__id,self.__id,self.__text)\n\n=>\n\n211 : </script>\"\"\"%(self.__id,self.__id,((self.__text).decode\n('utf-8')).encode('ascii', 'xmlcharrefreplace'))\n```\nThis might be related to #6417.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6464\n\n",
+    "closed_at": "2009-08-26T21:15:40Z",
     "created_at": "2009-07-05T02:06:05Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "notebook: Unicode in notebook worksheets",
+    "title": "[with patch, positive review] notebook: Unicode in notebook worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6464",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

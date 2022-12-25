@@ -1,16 +1,17 @@
-# Issue 2657: [with patch; needs review] Debian package cleanups
+# Issue 2657: [with patch; positive review] Debian fplll cleanup
 
 archive/issues_002657.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI had an unnecessary and already wrong dependency on fplll for Debian.  I've attached a patch to fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2657\n\n",
+    "closed_at": "2008-03-24T10:19:45Z",
     "created_at": "2008-03-24T01:26:18Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch; needs review] Debian package cleanups",
+    "title": "[with patch; positive review] Debian fplll cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2657",
     "user": "https://github.com/timabbott"

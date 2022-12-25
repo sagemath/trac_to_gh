@@ -1,16 +1,17 @@
-# Issue 3995: [with patch, needs review] improve and doctest the MuPAD interface
+# Issue 3995: [with patch, positive review] improve and doctest the MuPAD interface
 
 archive/issues_003995.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3995\n\n",
+    "closed_at": "2008-08-30T01:15:18Z",
     "created_at": "2008-08-29T21:55:40Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] improve and doctest the MuPAD interface",
+    "title": "[with patch, positive review] improve and doctest the MuPAD interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3995",
     "user": "https://github.com/mwhansen"

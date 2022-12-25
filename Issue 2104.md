@@ -1,16 +1,17 @@
-# Issue 2104: missing dependency: lcalc on mpfr
+# Issue 2104: [with patch; with positive review] missing dependency: lcalc on mpfr
 
 archive/issues_002104.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nlcalc seems to link against mpfr, but doesn't depend on it in the spkg/standard/deps.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2104\n\n",
+    "closed_at": "2008-02-10T01:46:33Z",
     "created_at": "2008-02-08T08:27:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "missing dependency: lcalc on mpfr",
+    "title": "[with patch; with positive review] missing dependency: lcalc on mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2104",
     "user": "https://github.com/timabbott"

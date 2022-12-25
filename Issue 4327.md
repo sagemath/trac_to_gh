@@ -1,16 +1,17 @@
-# Issue 4327: Root systems plots
+# Issue 4327: Refactor and extend root systems plots
 
 archive/issues_004327.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat alubovsky\n\nPort from MuPAD-Combinat the plotting facilities for (affine) root systems.\n\nThis will require in particular the port of:\n- row/column annihilator\n- a,acheck,c coeffs\n- translation factors\n\nIssue created by migration from https://trac.sagemath.org/ticket/4327\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat alubovsky\n\nThe attached patch refactors in depth the root sytem plotting facilities of Sage.\nIn particular it contains all the features provided in MuPAD-Combinat and many more.\n\nSome of those features came up during discussions with Reda Chaibi, Arthur Lubovski and Christopher Hanusa. Thanks to them!\n\nSee: http://wiki.sagemath.org/combinat/CoolPictures?action=AttachFile&do=get&target=root-system-plots.pdf for a (slightly outdated) version of the enclosed tutorial with all the pictures shown. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4327\n\n",
+    "closed_at": "2013-05-17T06:33:19Z",
     "created_at": "2008-10-20T08:40:33Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
-    "title": "Root systems plots",
+    "title": "Refactor and extend root systems plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4327",
     "user": "https://github.com/nthiery"
@@ -20,12 +21,12 @@ Assignee: @mwhansen
 
 CC:  sage-combinat alubovsky
 
-Port from MuPAD-Combinat the plotting facilities for (affine) root systems.
+The attached patch refactors in depth the root sytem plotting facilities of Sage.
+In particular it contains all the features provided in MuPAD-Combinat and many more.
 
-This will require in particular the port of:
-- row/column annihilator
-- a,acheck,c coeffs
-- translation factors
+Some of those features came up during discussions with Reda Chaibi, Arthur Lubovski and Christopher Hanusa. Thanks to them!
+
+See: http://wiki.sagemath.org/combinat/CoolPictures?action=AttachFile&do=get&target=root-system-plots.pdf for a (slightly outdated) version of the enclosed tutorial with all the pictures shown. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4327
 

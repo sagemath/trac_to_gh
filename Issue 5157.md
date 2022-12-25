@@ -1,9 +1,10 @@
-# Issue 5157: if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session
+# Issue 5157: [with patch; positive review] if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session
 
 archive/issues_005157.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis has been driving me nuts for a while.  If you do \n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n[[press control-c]]\nsage: EllipticCurve([1,3]).gens(use_database=False)\nTraceback (most recent call last):\n...\nRuntimeError: [Errno 9] Bad file descriptor\nError evaluating [0, 0, 0, 1, 3] in Mwrank\n```\n\nThis is from the notebook.  The same sequence works correctly from the command line (no bad file descriptor). \n\nI think the problem is that the notebook sends multiple control-c's and ends up killing sage properly restarting mwrank.  On the command line one has:\n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n...\nKeyboardInterrupt: Restarting Mwrank (WARNING: all variables defined in previous session are now invalid)\nsage: EllipticCurve([1,3]).gens(use_database=False)\n[(-1 : 1 : 1)]\n```\n\nBUT, if you hit control-c twice in rapid succession, then mwrank gets broken even on the command line (I just verified this).\n\nThe fix is to make it so the mwrank interface recovers automatically if it gets left in this state. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5157\n\n",
+    "closed_at": "2009-02-02T18:53:21Z",
     "created_at": "2009-02-02T06:09:32Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_005157.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session",
+    "title": "[with patch; positive review] if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5157",
     "user": "https://github.com/williamstein"

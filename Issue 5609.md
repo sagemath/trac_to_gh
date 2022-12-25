@@ -1,15 +1,16 @@
-# Issue 5609: [with patch, needs review] some functions for BooleanPolynomialIdeal
+# Issue 5609: [with patch, positive review] some functions for BooleanPolynomialIdeal
 
 archive/issues_005609.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  polybori @burcin rpw\n\nKeywords: polybori\n\nAdded `interreduced_basis()` and `__cmp__()` functions to `BooleanPolynomialIdeal`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5609\n\n",
+    "closed_at": "2009-05-12T21:50:10Z",
     "created_at": "2009-03-25T16:00:22Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] some functions for BooleanPolynomialIdeal",
+    "title": "[with patch, positive review] some functions for BooleanPolynomialIdeal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5609",
     "user": "https://github.com/malb"

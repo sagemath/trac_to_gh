@@ -1,16 +1,17 @@
-# Issue 5995: Membership testing for modular forms subspaces is hopeless
+# Issue 5995: [with patch, with positive review] Membership testing for modular forms subspaces is hopeless
 
 archive/issues_005995.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\nThis is pretty poor, IMHO:\n\n```\nsage: M = ModularForms(17, 4)\nsage: S = M.cuspidal_submodule()\nsage: M.0 == S.0\nTrue\nsage: M.0 in S\nFalse\n```\n\nAs far as I can tell at a glance this is happening because `S.__call__(x)` tests whether or not the parent of x has a canonical inclusion map to S; it should probably be testing whether the parent of x has a canonical inclusion map to the *ambient space* of S.\n\nOnce the above is fixed we should also have a method `is_cuspidal()` for modular forms objects, which would be secretly just `self in self.parent().cuspidal_submodule()`. A corresponding `is_eisenstein()` would be good, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5995\n\n",
+    "closed_at": "2009-06-01T06:16:22Z",
     "created_at": "2009-05-06T10:01:31Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Membership testing for modular forms subspaces is hopeless",
+    "title": "[with patch, with positive review] Membership testing for modular forms subspaces is hopeless",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5995",
     "user": "https://github.com/loefflerd"

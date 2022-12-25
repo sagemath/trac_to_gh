@@ -1,15 +1,16 @@
-# Issue 6098: 3d bezier path plotting
+# Issue 6098: [with patch, positive review] 3d bezier path plotting
 
 archive/issues_006098.json:
 ```json
 {
     "body": "Assignee: ekirkman\n\nCC:  @rlmill @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6098\n\n",
+    "closed_at": "2009-07-16T21:18:09Z",
     "created_at": "2009-05-21T02:19:19Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "3d bezier path plotting",
+    "title": "[with patch, positive review] 3d bezier path plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6098",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"

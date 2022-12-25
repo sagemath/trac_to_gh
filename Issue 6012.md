@@ -1,15 +1,16 @@
-# Issue 6012: [with patch, needs review] allow use of pdflatex instead of latex
+# Issue 6012: [with patch, positive review] allow use of pdflatex instead of latex
 
 archive/issues_006012.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nWith this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call\n\n```\nlatex.pdflatex(True)\n```\nafter which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.\n\nThis way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6012\n\n",
+    "closed_at": "2009-05-13T18:12:35Z",
     "created_at": "2009-05-09T17:45:19Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] allow use of pdflatex instead of latex",
+    "title": "[with patch, positive review] allow use of pdflatex instead of latex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6012",
     "user": "https://github.com/jhpalmieri"

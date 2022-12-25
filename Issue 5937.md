@@ -4,6 +4,7 @@ archive/issues_005937.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nHere is *yet another* example of non-tested code being totally broken.  Try this in the notebook.\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],\n   num_edges=['<=',5],min_degree=1)\n\nQ.show(with_picture=True)\n```\n\nthis silently outputs absolutely nothing. \n\nThe doctests don't test this -- they only test that this fails (with a message) on the command line. \n\nShorterm fix: completely remove this option from the documentation and code.\n\nLonterm fix: actually track down and fix the bug -- this would be nice, since I know the output looks good (I've seen Emily demo it).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5937\n\n",
+    "closed_at": "2009-07-13T21:40:46Z",
     "created_at": "2009-04-29T16:05:22Z",
     "labels": [
         "component: graph theory",

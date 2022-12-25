@@ -1,15 +1,16 @@
-# Issue 3665: add initial species code
+# Issue 3665: [with patch, positive review] add initial species code
 
 archive/issues_003665.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3665\n\n",
+    "closed_at": "2008-10-08T08:43:55Z",
     "created_at": "2008-07-16T00:44:45Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "add initial species code",
+    "title": "[with patch, positive review] add initial species code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3665",
     "user": "https://github.com/mwhansen"

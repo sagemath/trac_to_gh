@@ -1,16 +1,17 @@
-# Issue 2434: [with patch, easy review] fix doctest in plot.py
+# Issue 2434: [with patch, positive review] fix doctest in plot.py
 
 archive/issues_002434.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor 2.10.3.rc2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2434\n\n",
+    "closed_at": "2008-03-09T05:18:03Z",
     "created_at": "2008-03-09T05:11:59Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, easy review] fix doctest in plot.py",
+    "title": "[with patch, positive review] fix doctest in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2434",
     "user": "https://github.com/rlmill"

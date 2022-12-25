@@ -1,15 +1,16 @@
-# Issue 6164: Phan's Mini-AES for educational purposes
+# Issue 6164: [with patch, positive review] Phan's Mini-AES for educational purposes
 
 archive/issues_006164.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @malb\n\nKeywords: Mini-AES, AES, cryptography\n\nTo facilitate the learning of cryptography (in particular the Advanced Encryption Standard), it's a good idea to add a class to allow students to explore the working of a block cipher. The goal here is to implement the Mini-AES block cipher of Phan as described in the paper:\n\nR. C.-W. Phan. Mini advanced encryption standard (mini-AES): a testbed for cryptanalysis students. Cryptologia, 26(4):283--306, 2002.\n\nThis is a simplified variant of the AES to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6164\n\n",
+    "closed_at": "2009-06-26T17:45:53Z",
     "created_at": "2009-05-31T04:21:30Z",
     "labels": [
         "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Phan's Mini-AES for educational purposes",
+    "title": "[with patch, positive review] Phan's Mini-AES for educational purposes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6164",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

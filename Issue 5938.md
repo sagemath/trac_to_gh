@@ -3,7 +3,8 @@
 archive/issues_005938.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nWant to see some truly hideous plotting output?  Try this:\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)\n\nv = Q.get_graphs_list(); v\n\ngraphics_array([g.plot() for g in v], 3, len(v)//3).show()\n```\n\nI guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?\n\nFix?  make it so the edges aren't cropped wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5938\n\n",
+    "body": "Assignee: @rlmill\n\nWant to see some truly hideous plotting output?  Try this:\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)\n\nv = Q.get_graphs_list(); v\n\ngraphics_array([g.plot() for g in v], 3, len(v)//3).show()\n```\n\nI guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?\n\nFixed by #9211.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5938\n\n",
+    "closed_at": "2012-01-05T13:34:15Z",
     "created_at": "2009-04-29T16:11:45Z",
     "labels": [
         "component: graph theory",
@@ -30,7 +31,7 @@ graphics_array([g.plot() for g in v], 3, len(v)//3).show()
 
 I guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?
 
-Fix?  make it so the edges aren't cropped wrong.
+Fixed by #9211.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5938
 

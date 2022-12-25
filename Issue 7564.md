@@ -1,16 +1,17 @@
-# Issue 7564: graph theory: examples on degree sequences
+# Issue 7564: graph theory: degree sequence function
 
 archive/issues_007564.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe degree sequence of a graph is a basic property that is studied in an introductory course on graph theory. There should be examples explaining how to compute the degree sequence of a given graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7564\n\n",
+    "closed_at": "2009-12-01T08:23:36Z",
     "created_at": "2009-11-30T20:07:28Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "graph theory: examples on degree sequences",
+    "title": "graph theory: degree sequence function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7564",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

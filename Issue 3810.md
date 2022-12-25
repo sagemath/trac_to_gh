@@ -1,16 +1,17 @@
-# Issue 3810: make abelian group list/iter and classgroup list/iter more modern
+# Issue 3810: [with patch, positive review] make abelian group list/iter and classgroup list/iter more modern
 
 archive/issues_003810.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nlist/iter on abelian groups does not agree with .list().\n\nAlso, list on classgroups returned abstract group elements -- essentially useless:\n\n```\nsage: x = QQ['x'].0\nsage: K.<a> = NumberField(x^4 + 23)\nsage: G = K.class_group()\nsage: G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^4 + 23\nsage: list(G)\n[1, c, c^2]\n```\n\nThis actually lists representatives in the class group.\n\nApply abelian group patch before classgroup patch.\n\nPasses relevant tests:\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*\n\nreal\t0m1.610s\nuser\t0m0.958s\nsys\t0m0.623s\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py\n\t [5.3 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py\n\t [3.6 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py\n\t [3.0 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      \n\t [2.2 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py\n\t [3.9 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py\n\t [3.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.9 seconds\n```\n\nand\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*\n\nreal\t0m1.672s\nuser\t0m0.959s\nsys\t0m0.618s\nsage -t  devel/sage-nca/sage/rings/number_field/all.py      \n\t [2.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/class_group.py\n\t [4.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/galois_group.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/maps.py     \n\t [2.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/morphism.py \n\t [4.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [28.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx\n\t [3.7 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx\n\t [9.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx\n\t [4.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py\n\t [6.6 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py\n\t [3.4 s]\nsage -t  devel/sage-nca/sage/rings/number_field/order.py    \n\t [10.2 s]\nsage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/todo.py     \n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py\n\t [3.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py\n\t [4.3 s]\nsage -t  devel/sage-nca/sage/rings/number_field/unit_group.py\n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 102.5 seconds\n\nsage-test finished (all test passed) at Mon Aug 11 21:53:13\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3810\n\n",
+    "body": "Assignee: @williamstein\n\nlist/iter on abelian groups does not agree with .list().\n\nAlso, list on classgroups returned abstract group elements -- essentially useless:\n\n```\nsage: x = QQ['x'].0\nsage: K.<a> = NumberField(x^4 + 23)\nsage: G = K.class_group()\nsage: G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^4 + 23\nsage: list(G)\n[1, c, c^2]\n```\n\nThis actually lists representatives in the class group.\n\nApply abelian group patch before classgroup patch.\n\nPasses relevant tests:\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*\n\nreal    0m1.610s\nuser    0m0.958s\nsys    0m0.623s\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py\n     [5.3 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py\n     [3.6 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py\n     [3.0 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      \n     [2.2 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py\n     [3.9 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py\n     [3.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.9 seconds\n```\n\nand\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*\n\nreal    0m1.672s\nuser    0m0.959s\nsys    0m0.618s\nsage -t  devel/sage-nca/sage/rings/number_field/all.py      \n     [2.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/class_group.py\n     [4.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/galois_group.py\n     [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/maps.py     \n     [2.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/morphism.py \n     [4.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n     [28.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx\n     [3.7 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx\n     [9.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx\n     [4.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py\n     [6.6 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py\n     [3.4 s]\nsage -t  devel/sage-nca/sage/rings/number_field/order.py    \n     [10.2 s]\nsage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py\n     [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/todo.py     \n     [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py\n     [3.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx\n     [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py\n     [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py\n     [4.3 s]\nsage -t  devel/sage-nca/sage/rings/number_field/unit_group.py\n     [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 102.5 seconds\n\nsage-test finished (all test passed) at Mon Aug 11 21:53:13\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3810\n\n",
+    "closed_at": "2008-12-08T10:58:58Z",
     "created_at": "2008-08-12T04:56:23Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "make abelian group list/iter and classgroup list/iter more modern",
+    "title": "[with patch, positive review] make abelian group list/iter and classgroup list/iter more modern",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3810",
     "user": "https://github.com/ncalexan"
@@ -41,21 +42,21 @@ Passes relevant tests:
 ```
 /Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*
 
-real	0m1.610s
-user	0m0.958s
-sys	0m0.623s
+real    0m1.610s
+user    0m0.958s
+sys    0m0.623s
 sage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py
-	 [5.3 s]
+     [5.3 s]
 sage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py
-	 [3.6 s]
+     [3.6 s]
 sage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py
-	 [3.0 s]
+     [3.0 s]
 sage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      
-	 [2.2 s]
+     [2.2 s]
 sage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py
-	 [3.9 s]
+     [3.9 s]
 sage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py
-	 [3.0 s]
+     [3.0 s]
  
 ----------------------------------------------------------------------
 All tests passed!
@@ -67,50 +68,50 @@ and
 ```
 /Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*
 
-real	0m1.672s
-user	0m0.959s
-sys	0m0.618s
+real    0m1.672s
+user    0m0.959s
+sys    0m0.618s
 sage -t  devel/sage-nca/sage/rings/number_field/all.py      
-	 [2.0 s]
+     [2.0 s]
 sage -t  devel/sage-nca/sage/rings/number_field/class_group.py
-	 [4.9 s]
+     [4.9 s]
 sage -t  devel/sage-nca/sage/rings/number_field/galois_group.py
-	 [3.5 s]
+     [3.5 s]
 sage -t  devel/sage-nca/sage/rings/number_field/maps.py     
-	 [2.9 s]
+     [2.9 s]
 sage -t  devel/sage-nca/sage/rings/number_field/morphism.py 
-	 [4.1 s]
+     [4.1 s]
 sage -t  devel/sage-nca/sage/rings/number_field/number_field.py
   ***   Warning: large Minkowski bound: certification will be VERY long.
   ***   Warning: large Minkowski bound: certification will be VERY long.
 
-	 [28.9 s]
+     [28.9 s]
 sage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx
-	 [3.7 s]
+     [3.7 s]
 sage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx
-	 [9.0 s]
+     [9.0 s]
 sage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx
-	 [4.0 s]
+     [4.0 s]
 sage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py
-	 [6.6 s]
+     [6.6 s]
 sage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py
-	 [3.4 s]
+     [3.4 s]
 sage -t  devel/sage-nca/sage/rings/number_field/order.py    
-	 [10.2 s]
+     [10.2 s]
 sage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py
-	 [3.5 s]
+     [3.5 s]
 sage -t  devel/sage-nca/sage/rings/number_field/todo.py     
-	 [2.1 s]
+     [2.1 s]
 sage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py
-	 [3.1 s]
+     [3.1 s]
 sage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx
-	 [2.1 s]
+     [2.1 s]
 sage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py
-	 [2.1 s]
+     [2.1 s]
 sage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py
-	 [4.3 s]
+     [4.3 s]
 sage -t  devel/sage-nca/sage/rings/number_field/unit_group.py
-	 [2.0 s]
+     [2.0 s]
  
 ----------------------------------------------------------------------
 All tests passed!

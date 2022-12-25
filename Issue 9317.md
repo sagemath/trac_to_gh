@@ -4,6 +4,7 @@ archive/issues_009317.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona rkirov\n\nKeywords: S_part\n\nThis contains the functions prime_to_S_part, is_S_unit, is_S_integral for number field ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9317\n\n",
+    "closed_at": "2010-07-20T07:53:32Z",
     "created_at": "2010-06-23T05:46:39Z",
     "labels": [
         "component: number fields",

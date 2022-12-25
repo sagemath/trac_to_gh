@@ -1,16 +1,17 @@
-# Issue 3247: [with patch, needs review] add skew and generalized Hall-Littlewood creation operators to symmetric functions
+# Issue 3247: [with patch, positive review] add skew and generalized Hall-Littlewood creation operators to symmetric functions
 
 archive/issues_003247.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nOriginal code by Mike Zabrocki.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3247\n\n",
+    "closed_at": "2008-05-25T14:13:34Z",
     "created_at": "2008-05-17T20:53:26Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] add skew and generalized Hall-Littlewood creation operators to symmetric functions",
+    "title": "[with patch, positive review] add skew and generalized Hall-Littlewood creation operators to symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3247",
     "user": "https://github.com/mwhansen"

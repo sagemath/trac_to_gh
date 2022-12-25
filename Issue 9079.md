@@ -4,6 +4,7 @@ archive/issues_009079.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nsage: PolynomialRing(QQ,'u_ba')._singular_init_()\n...\nRuntimeError: Singular error:\n   ? error occurred in STDIN line 33: `if(defined(_b)>0){kill _b;};`\n   ? last reserved name was `defined`\n   skipping text from `)`\n```\n\nThis is because the function _singular_init_ incorrectly defines _vars.  The attached patch fixes this. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9079\n\n",
+    "closed_at": "2010-06-03T04:27:16Z",
     "created_at": "2010-05-29T00:47:18Z",
     "labels": [
         "component: commutative algebra",

@@ -1,16 +1,17 @@
-# Issue 8328: clisp rather than ecl mentioned on web page.
+# Issue 8328: clisp rather than ecl mentioned on web page
 
 archive/issues_008328.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nhttp://www.sagemath.org/doc/tutorial/interfaces.html\nsays:\n\n\"Maxima is included with Sage, as is clisp (a version of the Lisp language).\"\n\nClearly this is wrong. \n\nIt would be worth going over the web site with a recursive grep, to see if there are any other mentions of clisp or Vmware, as I believe there are a few points where VMware is mentioned, despite the fact there is a shift to VirtualBox. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8328\n\n",
+    "closed_at": "2010-03-02T22:06:42Z",
     "created_at": "2010-02-22T19:20:49Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "clisp rather than ecl mentioned on web page.",
+    "title": "clisp rather than ecl mentioned on web page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8328",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

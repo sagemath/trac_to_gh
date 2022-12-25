@@ -4,6 +4,7 @@ archive/issues_006041.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout\n\nAs the subject says. This is a follow-up to #5934.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6041\n\n",
+    "closed_at": "2009-12-05T23:29:54Z",
     "created_at": "2009-05-15T06:14:08Z",
     "labels": [
         "component: graph theory"

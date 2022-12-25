@@ -1,15 +1,16 @@
-# Issue 2155: [with patch; needs review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!
+# Issue 2155: [with patch; needs additional review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!; speed up changing base rings (architecture); hadamard bound
 
 archive/issues_002155.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nBefore:\n\n```\nsage: a = matrix(QQ, 2, [1, 5, 17, 3]); a\n[ 1  5]\n[17  3]\nsage: time for _ in xrange(10^4): b = a.invert()\nCPU times: user 5.74 s, sys: 0.13 s, total: 5.87 s\nWall time: 5.94\n```\n\nAfter:\n\n```\nsage: time for _ in xrange(10^4): b = a.invert()\nCPU times: user 0.22 s, sys: 0.04 s, total: 0.26 s\nWall time: 0.29\n```\n\nThis also does not leak memory:\n\n```\nsage: get_memory_usage()\n'122M+'\nsage: time for _ in xrange(10^5): b = a.invert()\nCPU times: user 2.33 s, sys: 0.36 s, total: 2.69 s\nWall time: 2.70\nsage: get_memory_usage()\n'122M+'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2155\n\n",
+    "closed_at": "2008-03-05T00:46:12Z",
     "created_at": "2008-02-14T02:10:20Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch; needs review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!",
+    "title": "[with patch; needs additional review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!; speed up changing base rings (architecture); hadamard bound",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2155",
     "user": "https://github.com/williamstein"

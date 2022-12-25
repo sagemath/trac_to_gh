@@ -1,9 +1,10 @@
-# Issue 2947: [with patch; needs review] block_matrix([]) fails
+# Issue 2947: [with patch; positive review] block_matrix([]) fails
 
 archive/issues_002947.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhile debugging #2946 on IRC, Jason found that `block_matrix()` doesn't properly handle an empty list.\n\nThe attached patch makes `block_matrix([])` return a 0x0 matrix over ZZ. If nrows and ncols are also specified, and subdivide isn't false, this 0x0 matrix will be further subdivided into nrows x ncols 0x0 matrices. This subdivision might be overkill, but it's probably the most consistent return value. Other opinions are welcome, of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2947\n\n",
+    "closed_at": "2008-04-18T06:18:10Z",
     "created_at": "2008-04-17T22:19:05Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_002947.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] block_matrix([]) fails",
+    "title": "[with patch; positive review] block_matrix([]) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2947",
     "user": "https://github.com/wjp"

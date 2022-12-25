@@ -4,6 +4,7 @@ archive/issues_001742.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNTL is currently build without debug symbols. This makes debugging or valgrinding harder and forces me to rebuild NTL manually. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha1/ntl-5.4.1.p10.spkg\n\nadds debug flags to the appropriate CFLAGS and CXXFLAGS.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1742\n\n",
+    "closed_at": "2008-01-10T06:28:11Z",
     "created_at": "2008-01-10T06:22:40Z",
     "labels": [
         "component: packages: standard",

@@ -1,15 +1,16 @@
-# Issue 6298: create an experimental libcocoa spkg
+# Issue 6298: [with spkg; with positive review] create an experimental libcocoa spkg
 
 archive/issues_006298.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6298\n\n",
+    "body": "Assignee: mabshoff\n\nThe spkg is here:\n\n   http://sage.math.washington.edu/home/wstein/patches/libcocoa-0.9930.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6298\n\n",
+    "closed_at": "2009-06-15T16:57:16Z",
     "created_at": "2009-06-15T13:01:04Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "create an experimental libcocoa spkg",
+    "title": "[with spkg; with positive review] create an experimental libcocoa spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6298",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,9 @@ archive/issues_006298.json:
 ```
 Assignee: mabshoff
 
+The spkg is here:
 
+   http://sage.math.washington.edu/home/wstein/patches/libcocoa-0.9930.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6298
 

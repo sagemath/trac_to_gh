@@ -1,9 +1,10 @@
-# Issue 5839: [with patch, needs review] MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash
+# Issue 5839: [with patch, positive review] MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash
 
 archive/issues_005839.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @malb\n\nIn `__dealloc__`, if currRing is NULL on entry, then currRing will be the ring we just deleted on exit.  The patch fixes this bug, so that currRing never points to freed memory.\n\nIt took me quite a while to come up with a small reproducible test case for the problem; here it is.  (This test case is also in the patch, as a doctest.)\n\n```\nimport gc\nfrom sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\nR1 = MPolynomialRing_libsingular(GF(5), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR2 = MPolynomialRing_libsingular(GF(11), 2, ('x', 'y'), TermOrder('degrevlex', 2))\nR3 = MPolynomialRing_libsingular(GF(13), 2, ('x', 'y'), TermOrder('degrevlex', 2))\ngc.collect()\nfoo = R1.gen(0)\ndel foo\ndel R1\ngc.collect()\ndel R2\ngc.collect()\ndel R3\ngc.collect()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5839\n\n",
+    "closed_at": "2009-05-14T05:16:49Z",
     "created_at": "2009-04-20T22:22:09Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_005839.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash",
+    "title": "[with patch, positive review] MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5839",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -4,6 +4,7 @@ archive/issues_007888.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently passing \"pure comments\" to Macaulay2 locks the interface since Macaulay2 does not print a new input prompts. Evaluating whitespace lines locks it as well and while there is some stripping code in Expect, it does not work if whitespace lines appear in the middle of a block.\n\nThe attached patch replaces all such lines with empty ones before passing to Macaulay2. This may break string constants occupying several lines, however, as far as I understand, they have no chance of working without substantial modification of Expect.eval, which currently executes code line by line. (In particular, they hang up now.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7888\n\n",
+    "closed_at": "2010-01-11T20:59:39Z",
     "created_at": "2010-01-10T01:53:39Z",
     "labels": [
         "component: interfaces",

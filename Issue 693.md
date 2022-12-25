@@ -3,7 +3,8 @@
 archive/issues_000693.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777 @wjp acleone @mwhansen @jdemeyer mvngu\n\nI've had an icon sitting on my desktop for about a week now.  When I click on it, and it starts a notebook in a background terminal and spawns a browser.  I'd like to be able to click it a second time, and open another browser window, instead of the current behavior of attempting to start another notebook.\n\nShould work something like this:\n\n```\nif not notebook_is_running:\n    notebook(settings from commandline, open_browser=True)\nelse:\n    open_browser(settings from commandline)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/693\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777 @wjp acleone @mwhansen @jdemeyer mvngu\n\nI've had an icon sitting on my desktop for about a week now.  When I click on it, and it starts a notebook in a background terminal and spawns a browser.  I'd like to be able to click it a second time, and open another browser window, instead of the current behavior of attempting to start another notebook.\n\nShould work something like this:\n\n```\nif not notebook_is_running:\n    notebook(settings from commandline, open_browser=True)\nelse:\n    open_browser(settings from commandline)\n```\n\n---\n\nApply [attachment:trac_693-spawn_notebook.3.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/693\n\n",
+    "closed_at": "2011-03-28T07:17:55Z",
     "created_at": "2007-09-19T17:39:28Z",
     "labels": [
         "component: notebook"
@@ -29,6 +30,10 @@ if not notebook_is_running:
 else:
     open_browser(settings from commandline)
 ```
+
+---
+
+Apply [attachment:trac_693-spawn_notebook.3.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/693
 

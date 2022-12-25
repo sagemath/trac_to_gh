@@ -3,7 +3,8 @@
 archive/issues_009247.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nThese are some of the things I did while working on my thesis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9247\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nThese are some of the things I did while working on my thesis. Dependencies, in order:\n\n#9441 (patch)\n\n#9476 (patch and eclib spkg!)\n\nApply the patches in this order:\n\ntrac_9247.patch\n\ntrac_9247-saturation.patch\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9247\n\n",
+    "closed_at": "2010-08-09T09:50:15Z",
     "created_at": "2010-06-15T20:32:55Z",
     "labels": [
         "component: elliptic curves"
@@ -19,7 +20,18 @@ Assignee: @JohnCremona
 
 CC:  @categorie
 
-These are some of the things I did while working on my thesis.
+These are some of the things I did while working on my thesis. Dependencies, in order:
+
+#9441 (patch)
+
+#9476 (patch and eclib spkg!)
+
+Apply the patches in this order:
+
+trac_9247.patch
+
+trac_9247-saturation.patch
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9247
 

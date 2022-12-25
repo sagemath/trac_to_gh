@@ -1,16 +1,16 @@
-# Issue 1069: find a way to savely enable inplace optimizations
+# Issue 1069: find a way to safely enable inplace optimizations
 
 archive/issues_001069.json:
 ```json
 {
-    "body": "Assignee: rbradshaw\n\nSee #1068 and also \n\nhttp://groups.google.com/group/sage-devel/t/175e1796069fd33c\n\nThe short version: if we enable in-place optimizations we cause problems with numpy and potentially other libraries.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1069\n\n",
+    "body": "Assignee: rbradshaw\n\nSee #1068 and also \n\nhttp://groups.google.com/group/sage-devel/t/175e1796069fd33c\n\nThe short version: if we enable in-place optimizations we cause problems with numpy and potentially other libraries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1069\n\n",
+    "closed_at": "2015-07-17T20:05:45Z",
     "created_at": "2007-11-02T19:10:13Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: cython"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "find a way to savely enable inplace optimizations",
+    "title": "find a way to safely enable inplace optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1069",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -23,10 +23,6 @@ See #1068 and also
 http://groups.google.com/group/sage-devel/t/175e1796069fd33c
 
 The short version: if we enable in-place optimizations we cause problems with numpy and potentially other libraries.
-
-Cheers,
-
-Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/1069
 

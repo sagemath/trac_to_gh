@@ -1,15 +1,16 @@
-# Issue 8154: Enhencement for crystals
+# Issue 8154: Enhancement for crystals
 
 archive/issues_008154.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: combinatorics, crystals, KR crystals\n\nNew features for crystals:\n\n- Started framework for general highest weight crystals in /combinat/crystals/highest_weight.py\n  - Implementation of finite dimensional highest weight crystals for type E6 and E7\n- Added new class for direct sums of crystals in /combinat/crystals/direct_sum.py\n- Added a new crystal morphism function for acyclic crystals\n- Added the Demazure operators on crystals\n- Added Demazure characters for finite crystals in the ambient weight lattice\n- Added _test_fast_iter method to compare two different ways of creating list of classical crystals\n\nNew features for Kirillov-Reshetikhin crystals:\n\n- Implementation of Kirillov-Reshetikhin crystals B^{r,s} of type E_6^{(1)} for r=1,2,6\n- Pointer to KirillovReshetikhin crystals given in /combinat/crystals/affine.py (as requested by Dan Bump)\n- Added R-matrix for tensor product of two KR crystals\n\nBug fix:\n\n- Fixed whitespace problems in\n/combinat/crystals/crystals.py\n/combinat/crystals/kirillov_reshetikhin.py\n/combinat/crystals/affine.py\n/combinat/crystals/spins.py\n/combinat/crystals/tensor_products.py\n/combinat/crystals/fast_crystals.py\n/combinat/crystals/letters.py\n\nDepends on trac ticket #7978 (trac_7978_crystal_cleanup-as.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8154\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: combinatorics, crystals, KR crystals\n\nNew features for crystals:\n\n- Started framework for general highest weight crystals in /combinat/crystals/highest_weight.py (with contributions from Nicolas M. Thiery)\n- Implementation of finite dimensional highest weight crystals for type E6 and E7\n- Added new class for direct sums of crystals in /combinat/crystals/direct_sum.py\n- Added a new crystal morphism function for acyclic crystals\n- Added the Demazure operators on crystals\n- Added Demazure characters for finite crystals in the ambient weight lattice\n- Added _test_fast_iter method to compare two different ways of creating list of classical crystals\n\nNew features for Kirillov-Reshetikhin crystals:\n\n- Implementation of Kirillov-Reshetikhin crystals B^{r,s} of type E_6^{(1)} for r=1,2,6\n- Pointer to KirillovReshetikhin crystals given in /combinat/crystals/affine.py (as requested by Dan Bump)\n- Added R-matrix for tensor product of two KR crystals\n\nBug fix:\n\n- Fixed whitespace problems in\n  /combinat/crystals/crystals.py\n  /combinat/crystals/kirillov_reshetikhin.py\n  /combinat/crystals/affine.py\n  /combinat/crystals/spins.py\n  /combinat/crystals/tensor_products.py\n  /combinat/crystals/fast_crystals.py\n  /combinat/crystals/letters.py\n\nDepends on trac ticket #7978 (trac_7978_crystal_cleanup-as.patch)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8154\n\n",
+    "closed_at": "2010-02-14T14:34:40Z",
     "created_at": "2010-02-02T16:31:40Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Enhencement for crystals",
+    "title": "Enhancement for crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8154",
     "user": "https://github.com/anneschilling"
@@ -23,8 +24,8 @@ Keywords: combinatorics, crystals, KR crystals
 
 New features for crystals:
 
-- Started framework for general highest weight crystals in /combinat/crystals/highest_weight.py
-  - Implementation of finite dimensional highest weight crystals for type E6 and E7
+- Started framework for general highest weight crystals in /combinat/crystals/highest_weight.py (with contributions from Nicolas M. Thiery)
+- Implementation of finite dimensional highest weight crystals for type E6 and E7
 - Added new class for direct sums of crystals in /combinat/crystals/direct_sum.py
 - Added a new crystal morphism function for acyclic crystals
 - Added the Demazure operators on crystals
@@ -40,15 +41,16 @@ New features for Kirillov-Reshetikhin crystals:
 Bug fix:
 
 - Fixed whitespace problems in
-/combinat/crystals/crystals.py
-/combinat/crystals/kirillov_reshetikhin.py
-/combinat/crystals/affine.py
-/combinat/crystals/spins.py
-/combinat/crystals/tensor_products.py
-/combinat/crystals/fast_crystals.py
-/combinat/crystals/letters.py
+  /combinat/crystals/crystals.py
+  /combinat/crystals/kirillov_reshetikhin.py
+  /combinat/crystals/affine.py
+  /combinat/crystals/spins.py
+  /combinat/crystals/tensor_products.py
+  /combinat/crystals/fast_crystals.py
+  /combinat/crystals/letters.py
 
 Depends on trac ticket #7978 (trac_7978_crystal_cleanup-as.patch)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8154
 

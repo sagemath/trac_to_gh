@@ -1,16 +1,17 @@
-# Issue 3944: replace "sage -upgrade" by "sage -expert_upgrade" and upgrade() by "expert_upgrade()"
+# Issue 3944: [with patch; positive review; some debate] replace "sage -upgrade" by "sage -expert_upgrade" and upgrade() by "expert_upgrade()"
 
 archive/issues_003944.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI'm sick of people thinking \"sage -upgrade\" is supposed to work if you're a newbie user.  That was absolutely never the intention with the current design, and there's no way we should suggest it is.\nNew users, or those not familiar with building from source, should have to redownload rather than upgrade.   Maybe someday we'll have binary upgrades, but \"sage -upgrade\" certainly isn't that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3944\n\n",
+    "closed_at": "2008-11-22T22:51:28Z",
     "created_at": "2008-08-24T16:15:35Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "replace \"sage -upgrade\" by \"sage -expert_upgrade\" and upgrade() by \"expert_upgrade()\"",
+    "title": "[with patch; positive review; some debate] replace \"sage -upgrade\" by \"sage -expert_upgrade\" and upgrade() by \"expert_upgrade()\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3944",
     "user": "https://github.com/williamstein"

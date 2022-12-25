@@ -4,9 +4,10 @@ archive/issues_004782.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTry this carefully with your finger on kill -9:\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n```\n\nOn sage.math top shows pretty quickly over 6.9GB memory usage!\n\n```\n15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    \n```\n\nThe discriminants aren't very big:\n\n```\nsage: R.<x> = QQ[]\nsage: disc(x^2 + 79*x-60)\n6481\nsage: disc(x^2 - 69*x + 38)\n4609\n```\n\nSame behavior with Proof false:\n\n```\nsage: proof.all(False)\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n...hell....\n```\n\nGiving both polys at once (which maybe use polcompositum) works:\n\n```\nsage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')\n\n  ***   Warning: insufficient precision for fundamental units, not given.\nNumber Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field\n```\n\nBasically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4782\n\n",
+    "closed_at": "2010-12-04T19:40:27Z",
     "created_at": "2008-12-13T03:48:49Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

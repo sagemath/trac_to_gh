@@ -1,16 +1,18 @@
-# Issue 2238: [with trivial patch, needs review] doctest failure in sage 2.10.2.alpha1: const.tex
+# Issue 2238: [with new patches, with positive review] doctest failure in sage 2.10.2.alpha1: const.tex
 
 archive/issues_002238.json:
 ```json
 {
     "body": "Assignee: tba\n\nHi,\n\nComputing the points on elliptic curves over finite fields goes through finding the structure of the corresponding abelian group, and the code picks random generators for this.  Therefore the particular generators displayed, and the order in which the set of points is listed, vary from run to run.\n\nThis sometimes causes doctest failures on the examples in const.tex; I added comments containing the word \"random\" so that this doesn't happen.\n\nAlex\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2238\n\n",
+    "closed_at": "2008-02-21T03:05:09Z",
     "created_at": "2008-02-20T23:00:49Z",
     "labels": [
         "component: documentation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with trivial patch, needs review] doctest failure in sage 2.10.2.alpha1: const.tex",
+    "title": "[with new patches, with positive review] doctest failure in sage 2.10.2.alpha1: const.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2238",
     "user": "https://github.com/aghitza"

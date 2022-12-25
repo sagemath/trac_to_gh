@@ -1,16 +1,17 @@
-# Issue 3318: improve 64 bit osx python 2.5.2 build
+# Issue 3318: [with spkg, with positive review] improve 64 bit osx python 2.5.2 build
 
 archive/issues_003318.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere are are two issues that need to be fixed with the current python.spkg:\n\n* we need to pass OPT flags to configure since otherwise we end up missing \"-m64\"\n* Instead of \"--enable-toolbox-glue=false\" we need to use \"--disable-toolbox-glue\" to avoid building the Mac specific extensions that do not work in 64 bit mode anyway since there is no 64 bit Carbon\n* we need to slightly patch pymactoolbox.h so that twisted-8.0.1 work in 64 bit mode, see #3193\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3318\n\n",
+    "closed_at": "2008-05-28T13:19:39Z",
     "created_at": "2008-05-28T09:10:46Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "improve 64 bit osx python 2.5.2 build",
+    "title": "[with spkg, with positive review] improve 64 bit osx python 2.5.2 build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3318",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

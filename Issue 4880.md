@@ -1,16 +1,17 @@
-# Issue 4880: [with spkg, needs review] Improved experimental spkg vtk-5.2
+# Issue 4880: [with spkg, positive review] Improved experimental spkg vtk-5.2.1
 
 archive/issues_004880.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\nMade vtk-5.2 more fashionable:\n\n* moved VTK and VTKData to src/\n\n* test for the installation of cmake-2.4.8 If it is not installed, we install it.\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg)\n\nNo changes IN VTK and VTKData\n\nSomebody should look into spkg-install and make it work on OSX.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4880\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\nMade vtk-5.2 more fashionable:\n\n* moved VTK and VTKData to src/\n\n* test for the installation of cmake-2.4.8 or higher\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg)\n\nNo changes IN VTK and VTKData\n\nSomebody should look into spkg-install and make it work on OSX.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4880\n\n",
+    "closed_at": "2009-04-01T05:29:49Z",
     "created_at": "2008-12-26T15:15:28Z",
     "labels": [
         "component: packages: experimental",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with spkg, needs review] Improved experimental spkg vtk-5.2",
+    "title": "[with spkg, positive review] Improved experimental spkg vtk-5.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4880",
     "user": "https://github.com/jaapspies"
@@ -24,7 +25,7 @@ Made vtk-5.2 more fashionable:
 
 * moved VTK and VTKData to src/
 
-* test for the installation of cmake-2.4.8 If it is not installed, we install it.
+* test for the installation of cmake-2.4.8 or higher
 
 [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg)
 
@@ -33,6 +34,8 @@ No changes IN VTK and VTKData
 Somebody should look into spkg-install and make it work on OSX.
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4880
 

@@ -1,16 +1,17 @@
-# Issue 2498: PARI's is_irreducible being used inappropriately
+# Issue 2498: [with patch, with positive review] PARI's is_irreducible being used inappropriately
 
 archive/issues_002498.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  malb@informatik.uni-bremen.de\n\nPARI's polynomial irreducibility and factoring routines are being used incorrectly for certain base rings. Here is an example:\n\n```\nsage: R.<x> = PolynomialRing(Integers(35))\nsage: f = (x^2+2*x+2)*(x^2+3*x+9)\nsage: f\nx^4 + 5*x^3 + 17*x^2 + 24*x + 18\nsage: factor(f)\nx^4 + 5*x^3 + 17*x^2 + 24*x + 18\nsage: f.is_irreducible()\nTrue\n```\n\nThe PARI documentation for `polisirreducible` says: \"Irreducibility is checked over the smallest base field over which pol seems to be defined\", whatever that means.\n\nWe should put in some checking to make sure this crazy behaviour doesn't happen, or at the very least put in big fat warnings in the documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2498\n\n",
+    "closed_at": "2008-03-23T20:37:23Z",
     "created_at": "2008-03-12T16:24:48Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "PARI's is_irreducible being used inappropriately",
+    "title": "[with patch, with positive review] PARI's is_irreducible being used inappropriately",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2498",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

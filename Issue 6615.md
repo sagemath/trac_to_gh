@@ -3,7 +3,8 @@
 archive/issues_006615.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nIt may take only two lines, but I do not know which ones (I got a bit lost reading graph_plot.py) and it may take half a second to who wrote it in the first place.\n\ng=graphs.PetersenGraph()\ng.plot(edge_colors={\"red\":[(0,1)]})\ng.plot(vertex_colors={\"red\":[1]})\n\nWhen you plot a graph and want some edges to have a different color, the first plot is perfect. In the second case, though, I think it would be better to assign the others vertices a default color ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6615\n\n",
+    "body": "Assignee: @rlmill\n\nIt may take only two lines, but I do not know which ones (I got a bit lost reading graph_plot.py) and it may take half a second to who wrote it in the first place.\n\ng=graphs.PetersenGraph()\n\ng.plot(edge_colors={\"red\":[(0,1)]})\n\ng.plot(vertex_colors={\"red\":[1]})\n\nWhen you plot a graph and want some edges to have a different color, the first plot is perfect. In the second case, though, I think it would be better to assign the others vertices a default color ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6615\n\n",
+    "closed_at": "2010-01-13T05:38:58Z",
     "created_at": "2009-07-24T18:00:05Z",
     "labels": [
         "component: graph theory",
@@ -21,7 +22,9 @@ Assignee: @rlmill
 It may take only two lines, but I do not know which ones (I got a bit lost reading graph_plot.py) and it may take half a second to who wrote it in the first place.
 
 g=graphs.PetersenGraph()
+
 g.plot(edge_colors={"red":[(0,1)]})
+
 g.plot(vertex_colors={"red":[1]})
 
 When you plot a graph and want some edges to have a different color, the first plot is perfect. In the second case, though, I think it would be better to assign the others vertices a default color ;-)

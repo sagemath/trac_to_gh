@@ -1,30 +1,25 @@
-# Issue 3947: readline and ipython
+# Issue 3947: [with spkg, positive review] build python against Sage's readline
 
 archive/issues_003947.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen built with --enable-framework, python doesn't produce a file \n` local/lib/python2.5/lib-dynload/readline.so `\nbecause it doesn't find libreadline.dylib.\n\nThe reason for that is that with enable-framework, python doesn't look in the SAGE_LOCAL/include and SAGE_LOCAL/lib directories.  mabshoff reckons this is a generic issue.\n\nspkg-install requires the following:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3947\n\n",
+    "body": "Assignee: mabshoff\n\nBecause we do not set some env variables at the moment we do not build Python against the readline we are building.  spkg-install requires the following:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3947\n\n",
+    "closed_at": "2008-08-25T20:05:44Z",
     "created_at": "2008-08-25T07:04:19Z",
     "labels": [
-        "component: algebra",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "readline and ipython",
+    "title": "[with spkg, positive review] build python against Sage's readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3947",
     "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
-When built with --enable-framework, python doesn't produce a file 
-` local/lib/python2.5/lib-dynload/readline.so `
-because it doesn't find libreadline.dylib.
-
-The reason for that is that with enable-framework, python doesn't look in the SAGE_LOCAL/include and SAGE_LOCAL/lib directories.  mabshoff reckons this is a generic issue.
-
-spkg-install requires the following:
+Because we do not set some env variables at the moment we do not build Python against the readline we are building.  spkg-install requires the following:
 
 ```
 LDFLAGS="-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS"

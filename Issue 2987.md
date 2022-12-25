@@ -1,16 +1,17 @@
-# Issue 2987: [with patch; needs review] Debian build support for zn_poly
+# Issue 2987: [with patch; positive review] Debian build support for zn_poly
 
 archive/issues_002987.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've made a Debian package for zn_poly.  Patch is attached.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2987\n\n",
+    "closed_at": "2008-04-22T03:43:38Z",
     "created_at": "2008-04-21T06:32:09Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] Debian build support for zn_poly",
+    "title": "[with patch; positive review] Debian build support for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2987",
     "user": "https://github.com/timabbott"

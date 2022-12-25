@@ -1,9 +1,10 @@
-# Issue 1222: cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0
+# Issue 1222: [with spkg ] cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0
 
 archive/issues_001222.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/numerical/test.py\nsage -t  devel/sage-main/sage/numerical/test.py\n**********************************************************************\nFile \"test.py\", line 4:\n    : from cvxopt.base import *\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[0]>\", line 1, in <module>\n        from cvxopt.base import *###line 4:\n    : from cvxopt.base import *\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so, 2): Symbol not found:\n__g95_ioparm\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n\n**********************************************************************\nFile \"test.py\", line 5:\n    : from cvxopt import umfpack\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[1]>\", line 1, in <module>\n        from cvxopt import umfpack###line 5:\n    : from cvxopt import umfpack\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so, 2): Symbol not found:\n__g95_st_write_done\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so\n      Expected in: dynamic lookup\n\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_test.py\n         [13.2 s]\nexit code: 256\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1222\n\n",
+    "closed_at": "2007-12-01T22:39:07Z",
     "created_at": "2007-11-20T22:51:10Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_001222.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0",
+    "title": "[with spkg ] cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1222",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

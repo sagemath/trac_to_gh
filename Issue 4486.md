@@ -6,8 +6,7 @@ archive/issues_004486.json:
     "body": "Assignee: @tornaria\n\nThese files need audited. In particular, `partitions_c.cc` should depend on `partitions_c.h`, and shouldn't duplicate the code there. Someone familiar with C should go ahead and clean these files up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4486\n\n",
     "created_at": "2008-11-09T23:22:58Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Clean up partitions_c.cc and partitions_c.h",

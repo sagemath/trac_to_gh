@@ -4,6 +4,7 @@ archive/issues_000605.json:
 ```json
 {
     "body": "Assignee: was, dmharvey\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/605\n\n",
+    "closed_at": "2007-09-07T07:22:40Z",
     "created_at": "2007-09-06T22:17:26Z",
     "labels": [
         "component: packages: standard",

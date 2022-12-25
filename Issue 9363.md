@@ -4,6 +4,7 @@ archive/issues_009363.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nConsider the following files and what sage\ndoes with each when they are loaded:\n\n---- foo1.sage ------\ndef add(a,b):\n return a+b\n------------------------\n\n--- foo2.py---\ndef add(a,b):\n return a+b\n# this is a comment\n---------------------\n\n--- foo3.sage---\ndef add(a,b):\n return a+b\n# this is a comment\n---------------------\n\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: load \"foo1.sage\"\nsage: load \"foo2.py\"\nsage: load \"foo3.sage\"\n------------------------------------------------------------\n  File \"<string>\", line 3\n    # this is a comment\n                      ^\nSyntaxError: invalid syntax\n| Sage Version 4.4.4, Release Date: 2010-06-23                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage:\n\nIs the inability to load foo3.sage a bug or a feature?\n\nAccording to William Stein: \n\n> It's a bug.   Please make a trac ticket for this. \n> Note that adding a newline to the end of the file is enough to \n> fix the problem... \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9363\n\n",
+    "closed_at": "2011-01-19T22:20:55Z",
     "created_at": "2010-06-28T19:38:07Z",
     "labels": [
         "component: misc",

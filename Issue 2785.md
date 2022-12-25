@@ -1,22 +1,25 @@
-# Issue 2785: The glitelib ticket
+# Issue 2785: [with spkg, needs work] The glitelib ticket
 
 archive/issues_002785.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThis is the ticket for the glitelib spkg.  It requires an extcode patch.  Obtain at http://sage.math.washington.edu/home/gfurnish/spkg/glitelib-2.15.6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2785\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: editor_wstein\n\nThis is the ticket for the glitelib spkg.  It requires an extcode patch.  Obtain at http://sage.math.washington.edu/home/gfurnish/spkg/glitelib-2.15.6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2785\n\n",
+    "closed_at": "2009-01-22T23:05:33Z",
     "created_at": "2008-04-03T01:15:56Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "The glitelib ticket",
+    "title": "[with spkg, needs work] The glitelib ticket",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2785",
     "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
+
+Keywords: editor_wstein
 
 This is the ticket for the glitelib spkg.  It requires an extcode patch.  Obtain at http://sage.math.washington.edu/home/gfurnish/spkg/glitelib-2.15.6.spkg
 

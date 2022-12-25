@@ -4,6 +4,7 @@ archive/issues_008108.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu @nexttime\n\nNewcomers to Sage development could use more comprehensive guidance on getting started.\n\nA rough draft of possible new content is attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8108\n\n",
+    "closed_at": "2010-02-02T04:23:31Z",
     "created_at": "2010-01-28T05:46:50Z",
     "labels": [
         "component: documentation"

@@ -1,16 +1,17 @@
-# Issue 5567: [with patch, needs review] bug in region_plot
+# Issue 5567: [with patch, positive review] bug in region_plot
 
 archive/issues_005567.json:
 ```json
 {
     "body": "Assignee: whuss\n\n```\nHello, this command produces one half of a cirle, not 1/4 as excepted.\nI think that this is a bug in sage 3.4\n\nRobert\n\nregion_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\nThe attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5567\n\n",
+    "closed_at": "2009-04-23T07:33:19Z",
     "created_at": "2009-03-19T16:29:16Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] bug in region_plot",
+    "title": "[with patch, positive review] bug in region_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5567",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

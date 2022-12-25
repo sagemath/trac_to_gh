@@ -1,22 +1,23 @@
-# Issue 2495: Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only
+# Issue 2495: [with spkg, two positive reviews] Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only
 
 archive/issues_002495.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nUpdated to the latest release of Mayavi2.\n\nNow uses vtk-5.0.4 with GL2EPS enabled, so picures can be saved as eps, ps and pdf files!\n\nSee:\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/mayavi_2.1.1-20080307.spkg\n\nwith dependencies:\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/vtk-5.0.4.spkg \n\nnew version of setuptools (will be in sage-2.10.4 standard): http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/setuptools-0.6c8.spkg\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2495\n\n",
+    "body": "Assignee: mabshoff\n\nUpdated to the latest release of Mayavi2.\n\nNow uses vtk-5.0.4 with GL2EPS enabled, so picures can be saved as eps, ps and pdf files!\n\nSee:\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/mayavi_2.1.1-20080307.spkg\n\nwith dependencies:\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/vtk-5.0.4.spkg \n\nnew version of setuptools (will be in sage-2.10.4 standard): http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/setuptools-0.6c8.spkg\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2495\n\n",
+    "closed_at": "2008-03-31T11:27:25Z",
     "created_at": "2008-03-12T15:14:59Z",
     "labels": [
-        "component: graphics",
+        "component: packages: experimental",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only",
+    "title": "[with spkg, two positive reviews] Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2495",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Updated to the latest release of Mayavi2.
 
@@ -33,7 +34,7 @@ http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/vtk-5.0.4.spkg
 
 new version of setuptools (will be in sage-2.10.4 standard): http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/setuptools-0.6c8.spkg
 
-http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)
+http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)  
 
 Issue created by migration from https://trac.sagemath.org/ticket/2495
 

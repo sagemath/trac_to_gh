@@ -1,9 +1,10 @@
-# Issue 2811: make check is broken due to #2746
+# Issue 2811: [with patch, positive review] make check is broken due to #2746
 
 archive/issues_002811.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nSAGE build/upgrade complete!\n. local/bin/sage-env && sage-maketest\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 3: [: argument expected\nmkdir: `': No such file or directory\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 11: /test.log: Permission denied\n/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/bin/sage-maketest: line 12: /test.log: Permission denied\ntee: /test.log: Permission denied\nTesting of examples currently not implemented.\nTesting SAGE documentation\nTesting SAGE tutorial\ntee: /test.log: Permission denied\nsage -t  devel/doc/tut/tut.tex                              Testing SAGE programming guide\ntee: /test.log: Permission denied\nsage -t  devel/doc/prog/prog.tex\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2811\n\n",
+    "closed_at": "2008-04-07T01:33:28Z",
     "created_at": "2008-04-05T18:10:14Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_002811.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "make check is broken due to #2746",
+    "title": "[with patch, positive review] make check is broken due to #2746",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2811",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

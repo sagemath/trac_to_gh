@@ -1,16 +1,17 @@
-# Issue 1818: [with patch] include AES polynomial system generator in reference manual
+# Issue 1818: [with patch, with positive review] include AES polynomial system generator in reference manual
 
 archive/issues_001818.json:
 ```json
 {
     "body": "Assignee: tba\n\nSee patches.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1818\n\n",
+    "closed_at": "2008-01-23T04:16:15Z",
     "created_at": "2008-01-18T00:27:55Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] include AES polynomial system generator in reference manual",
+    "title": "[with patch, with positive review] include AES polynomial system generator in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1818",
     "user": "https://github.com/malb"

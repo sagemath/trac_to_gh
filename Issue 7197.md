@@ -3,7 +3,8 @@
 archive/issues_007197.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: statistics, mean, median, mode, standard deviation\n\nBasic statistics functions for a new class in Sage. Only descriptive statistics right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7197\n\n",
+    "body": "Assignee: amhou\n\nKeywords: statistics, mean, median, mode, standard deviation\n\nBasic statistics functions for a new class in Sage. Only descriptive statistics right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7197\n\n",
+    "closed_at": "2009-11-29T05:07:20Z",
     "created_at": "2009-10-12T23:26:09Z",
     "labels": [
         "component: statistics",
@@ -16,7 +17,7 @@ archive/issues_007197.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/amhou"
 }
 ```
-Assignee: mhampton
+Assignee: amhou
 
 Keywords: statistics, mean, median, mode, standard deviation
 

@@ -1,9 +1,10 @@
-# Issue 6469: sage-4.1.rc0: numerical noise in graph.py
+# Issue 6469: [with patch, positive review] sage-4.1.rc0: numerical noise in graph.py
 
 archive/issues_006469.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nsage -t  \"devel/sage/sage/graphs/graph.py\"\n**********************************************************************\nFile \"/home/jaap/downloads/sage-4.1.alpha2/devel/sage/sage/graphs/graph.py\", line 7144:\n     sage: T.spectrum()\nExpected:\n     [1, -0.500000000000000? + 0.866025403784439?*I, -0.500000000000000? - 0.866025403784439?*I]\nGot:\n     [1, -0.50000000000000000? + 0.866025403784439?*I, -0.500000000000000? - 0.866025403784439?*I]\n**********************************************************************\nFile \"/home/jaap/downloads/sage-4.1.alpha2/devel/sage/sage/graphs/graph.py\", line 7272:\n     sage: T.eigenvectors()\nExpected:\n     [(1, [\n     (1, 1, 1)\n     ], 1), (-0.500000000000000? - 0.866025403784439?*I, [(1, -0.500000000000000? - 0.866025403784439?*I, -0.500000000000000? + 0.866025403784439?*I)], 1),\n(-0.500000000000000? + 0.866025403784439?*I, [(1, -0.500000000000000? + 0.866025403784439?*I, -0.500000000000000? - 0.866025403784439?*I)], 1)]\nGot:\n     [(1, [\n     (1, 1, 1)\n     ], 1), (-0.500000000000000? - 0.866025403784439?*I, [(1, -0.500000000000000? - 0.866025403784439?*I, -0.500000000000000? + 0.866025403784439?*I)], 1),\n(-0.50000000000000000? + 0.866025403784439?*I, [(1, -0.50000000000000000? + 0.866025403784439?*I, -0.50000000000000000? - 0.866025403784439?*I)], 1)]\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6469\n\n",
+    "closed_at": "2009-07-07T19:57:45Z",
     "created_at": "2009-07-06T17:33:15Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_006469.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "sage-4.1.rc0: numerical noise in graph.py",
+    "title": "[with patch, positive review] sage-4.1.rc0: numerical noise in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6469",
     "user": "https://github.com/rlmill"

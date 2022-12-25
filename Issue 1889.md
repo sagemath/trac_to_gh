@@ -1,16 +1,17 @@
-# Issue 1889: 2.10.1.alpha2 doctest failure in crypto/mq/sr.py
+# Issue 1889: [with patch, with positive review] 2.10.1.alpha2 doctest failure in crypto/mq/sr.py
 
 archive/issues_001889.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis is probably related to merging #1817:\n\n```\nsage -t  devel/sage-main/sage/crypto/mq/sr.py\n**********************************************************************\nFile \"sr.py\", line 1364:\n    sage: F.groebner_basis()[:4]\nExpected:\n    [k003 + 1, k001, k000 + k001 + 1, s003 + k002]\nGot:\n    [k003 + 1, k001, k000 + 1, s003 + k002]\n**********************************************************************\nFile \"sr.py\", line 1500:\n    sage: _= A = sr.random_state_array(); A\nExpected nothing\nGot:\n    [a^3 + 1]\n**********************************************************************\nFile \"sr.py\", line 1874:\n    sage: _= A = sr.random_state_array(); A\nExpected nothing\nGot:\n    [a^3]\n**********************************************************************\n3 items had failures:\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1889\n\n",
+    "closed_at": "2008-01-23T22:12:39Z",
     "created_at": "2008-01-23T07:47:30Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "2.10.1.alpha2 doctest failure in crypto/mq/sr.py",
+    "title": "[with patch, with positive review] 2.10.1.alpha2 doctest failure in crypto/mq/sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1889",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

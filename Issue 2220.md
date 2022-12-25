@@ -3,10 +3,11 @@
 archive/issues_002220.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan ccitro @orlitzky\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\n\n```\n> Is the following output for b.gens() correct?\n\n> sage: NumberField([x,x^2-3],'a')\n> Number Field in a0 with defining polynomial x over its base field\n> sage: b=NumberField([x,x^2-3],'a')\n> sage: b.gens()\n> (0, 0)\n\n> To contrast:\n\n> sage: c=NumberField([x^2-3, x^2-2],'a')\n> sage: c.gens()\n> (a0, a1)\n\n> Also, this blows up:\n\n> sage: c=NumberField([x^2-3, x],'a')\n\nThe problem here is that x is triggering a an error in the\nirreducibility test, which is a little bizarre since of course x is\nirreducible.\n\nSo the real issue is: why is x allowed to determine an absolute number\nfield (base Q) but not a relative one?  My guess is that this is a\nside-effect of the differing code being used to test irreducibility in\nthe two cases,\n\nPersonally, I think that trivial extensions should be allowed and\ntreated just as non-trivial ones.  I have recently had to define\nextensions of the ring ZZ, and find this awkward:\n\nsage: R=ZZ.extension(x^2+5,'a')\nsage: R.gens()\n[1, a]\nsage: S=ZZ.extension(x+5,'b')\nsage: S.gens()\n[1]\n\nIn the latter case I need S to remember the polynomial used to\ngeneraite it and would expect its gens() to include (in this case) -5.\n\nOn the same topic, R and S above have no defining_polynomial() method.\n I'll try to fix that if it looks easy. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2220\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @ncalexan ccitro @orlitzky\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\n\n```\n> Is the following output for b.gens() correct?\n\n> sage: NumberField([x,x^2-3],'a')\n> Number Field in a0 with defining polynomial x over its base field\n> sage: b=NumberField([x,x^2-3],'a')\n> sage: b.gens()\n> (0, 0)\n\n> To contrast:\n\n> sage: c=NumberField([x^2-3, x^2-2],'a')\n> sage: c.gens()\n> (a0, a1)\n\n> Also, this blows up:\n\n> sage: c=NumberField([x^2-3, x],'a')\n\nThe problem here is that x is triggering a an error in the\nirreducibility test, which is a little bizarre since of course x is\nirreducible.\n\nSo the real issue is: why is x allowed to determine an absolute number\nfield (base Q) but not a relative one?  My guess is that this is a\nside-effect of the differing code being used to test irreducibility in\nthe two cases,\n\nPersonally, I think that trivial extensions should be allowed and\ntreated just as non-trivial ones.  I have recently had to define\nextensions of the ring ZZ, and find this awkward:\n\nsage: R=ZZ.extension(x^2+5,'a')\nsage: R.gens()\n[1, a]\nsage: S=ZZ.extension(x+5,'b')\nsage: S.gens()\n[1]\n\nIn the latter case I need S to remember the polynomial used to\ngeneraite it and would expect its gens() to include (in this case) -5.\n\nOn the same topic, R and S above have no defining_polynomial() method.\n I'll try to fix that if it looks easy. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2220\n\n",
+    "closed_at": "2011-12-22T13:06:33Z",
     "created_at": "2008-02-20T03:54:04Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
@@ -16,7 +17,7 @@ archive/issues_002220.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @ncalexan ccitro @orlitzky
 

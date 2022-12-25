@@ -4,6 +4,7 @@ archive/issues_000106.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is especially a problem in the SAGE notebook.   Probably the same problem happens for Mathematica.\n\nIssue created by migration from https://trac.sagemath.org/ticket/106\n\n",
+    "closed_at": "2007-09-06T18:45:27Z",
     "created_at": "2006-10-03T03:50:03Z",
     "labels": [
         "component: user interface",

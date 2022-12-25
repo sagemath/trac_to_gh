@@ -3,7 +3,8 @@
 archive/issues_008995.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @dimpase\n\nSee the thread by Dennis Watson here:\n\nhttp://groups.google.com/group/sage-support/browse_frm/thread/2acd499a566efce1\n\nIn particular, some tinymce javascript files were trying to download from a URL that included the username, like:\n\nhttp://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js\n\nIssue created by migration from https://trac.sagemath.org/ticket/8995\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @dimpase\n\nSee the thread by Dennis Watson here:\n\nhttp://groups.google.com/group/sage-support/browse_frm/thread/2acd499a566efce1\n\nIn particular, some tinymce javascript files were trying to download from a URL that included the username, like:\n\nhttp://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js\n\nSee #11343.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8995\n\n",
+    "closed_at": "2011-10-05T08:10:09Z",
     "created_at": "2010-05-19T23:35:25Z",
     "labels": [
         "component: notebook",
@@ -27,6 +28,8 @@ http://groups.google.com/group/sage-support/browse_frm/thread/2acd499a566efce1
 In particular, some tinymce javascript files were trying to download from a URL that included the username, like:
 
 http://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js
+
+See #11343.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8995
 

@@ -3,7 +3,8 @@
 archive/issues_007879.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n`_sig_on` and {{{_sig_off}} are more expensive than computing the result itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7879\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: sd32\n\n`_sig_on` and `_sig_off` are more expensive than computing the result itself.\n\n---\n\nApply only [attachment:trac_7879-RR-signal.2.rebased_to_4.7.2.alpha2.patch] to the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7879\n\n",
+    "closed_at": "2011-09-13T12:16:11Z",
     "created_at": "2010-01-09T19:31:01Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +19,13 @@ archive/issues_007879.json:
 ```
 Assignee: @aghitza
 
-`_sig_on` and {{{_sig_off}} are more expensive than computing the result itself.
+Keywords: sd32
+
+`_sig_on` and `_sig_off` are more expensive than computing the result itself.
+
+---
+
+Apply only [attachment:trac_7879-RR-signal.2.rebased_to_4.7.2.alpha2.patch] to the Sage library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7879
 

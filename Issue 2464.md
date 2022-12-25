@@ -1,16 +1,17 @@
-# Issue 2464: slight change to coverage script to avoid functions named "_"
+# Issue 2464: [with patch] slight change to coverage script to avoid functions named "_"
 
 archive/issues_002464.json:
 ```json
 {
     "body": "Assignee: failure\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2464\n\n",
+    "closed_at": "2008-03-11T02:12:51Z",
     "created_at": "2008-03-11T01:25:17Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "slight change to coverage script to avoid functions named \"_\"",
+    "title": "[with patch] slight change to coverage script to avoid functions named \"_\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2464",
     "user": "https://github.com/williamstein"

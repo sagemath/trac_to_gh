@@ -3,11 +3,11 @@
 archive/issues_008899.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat chrisjamesberg @zabrocki @anneschilling\n\nPatch under dev. on the sage-combinat patch server\n\nIssue created by migration from https://trac.sagemath.org/ticket/8899\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat chrisjamesberg @zabrocki @anneschilling\n\nKeywords: sd40, days38\n\nThis patch includes quasi symmetric functions as well (see #11929).\n\nEach algebra is implemented as a Hopf algebra with realizations (the realizations being the various bases of the algebras).\n\n- Bases implemented for NCSF, and change of bases between them:\n\n    - Complete\n    - Ribbon\n    - Elementary\n    - Psi (power sums)\n    - Phi (power sums)\n\n- Bases implemented for QSym, and change of bases between them:\n\n    - Monomial\n    - Fundamental\n\nThere is also a method a_realization that returns a particular realization of the algebra. Computations that are not yet implemented in basis are performed by converting to a_realization(). Current implementation:\n\n- NCSF.a_realization() returns the Complete basis\n- QSym.a_realization() returns the Monomial basis\n\nDependencies:\n\n- #12959 : provides the machinery for converting to a_realization for default implementations\n- #13238 : integer matrices (required for the internal product in NCSF)\n- #13243 : new methods for compositions\n\n**Apply**:\n* [attachment:trac_11929_8899-ncsf-qsym-final.patch]\n* [attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8899\n\n",
+    "closed_at": "2012-09-08T08:59:04Z",
     "created_at": "2010-05-05T23:39:46Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Implement non commutative symmetric functions",
@@ -20,7 +20,39 @@ Assignee: sage-combinat
 
 CC:  sage-combinat chrisjamesberg @zabrocki @anneschilling
 
-Patch under dev. on the sage-combinat patch server
+Keywords: sd40, days38
+
+This patch includes quasi symmetric functions as well (see #11929).
+
+Each algebra is implemented as a Hopf algebra with realizations (the realizations being the various bases of the algebras).
+
+- Bases implemented for NCSF, and change of bases between them:
+
+    - Complete
+    - Ribbon
+    - Elementary
+    - Psi (power sums)
+    - Phi (power sums)
+
+- Bases implemented for QSym, and change of bases between them:
+
+    - Monomial
+    - Fundamental
+
+There is also a method a_realization that returns a particular realization of the algebra. Computations that are not yet implemented in basis are performed by converting to a_realization(). Current implementation:
+
+- NCSF.a_realization() returns the Complete basis
+- QSym.a_realization() returns the Monomial basis
+
+Dependencies:
+
+- #12959 : provides the machinery for converting to a_realization for default implementations
+- #13238 : integer matrices (required for the internal product in NCSF)
+- #13243 : new methods for compositions
+
+**Apply**:
+* [attachment:trac_11929_8899-ncsf-qsym-final.patch]
+* [attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8899
 

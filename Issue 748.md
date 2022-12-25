@@ -1,32 +1,29 @@
-# Issue 748: iml autohell
+# Issue 748: update iml to the 1.0.3 release + our patches
 
 archive/issues_000748.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  jpflori\n\n```\n\n2. For iml-1.0.1.p8, there is some autotools problem\nthat I have not been able to track down.  Is\neverything up-to-date with configure, etc.\nfor this package?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/748\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  jpflori\n\nKeywords: spkg upgrade iml sd40.5\n\n**spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/iml-1.0.3.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/iml-1.0.3.p0.spkg) ([attachment:iml-1.0.3.p0.diff spkg diff])\n\nIssue created by migration from https://trac.sagemath.org/ticket/748\n\n",
+    "closed_at": "2013-06-19T12:24:23Z",
     "created_at": "2007-09-24T20:58:43Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "iml autohell",
+    "title": "update iml to the 1.0.3 release + our patches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/748",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 CC:  jpflori
 
-```
+Keywords: spkg upgrade iml sd40.5
 
-2. For iml-1.0.1.p8, there is some autotools problem
-that I have not been able to track down.  Is
-everything up-to-date with configure, etc.
-for this package?
-```
+**spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/iml-1.0.3.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/iml-1.0.3.p0.spkg) ([attachment:iml-1.0.3.p0.diff spkg diff])
 
 Issue created by migration from https://trac.sagemath.org/ticket/748
 

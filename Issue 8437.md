@@ -4,10 +4,11 @@ archive/issues_008437.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @emmanuelthome\n\nsee #1240 for the description (I was told not to reopen tickets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8437\n\n",
+    "closed_at": "2012-10-05T09:47:47Z",
     "created_at": "2010-03-04T19:12:41Z",
     "labels": [
         "component: distribution",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",

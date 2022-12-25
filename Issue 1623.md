@@ -1,22 +1,23 @@
-# Issue 1623: update gsl to 1.10
+# Issue 1623: [with spkg] update gsl to 1.10
 
 archive/issues_001623.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1623\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1623\n\n",
+    "closed_at": "2008-01-26T00:19:12Z",
     "created_at": "2007-12-29T04:36:48Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update gsl to 1.10",
+    "title": "[with spkg] update gsl to 1.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1623",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 
 

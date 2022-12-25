@@ -1,16 +1,17 @@
-# Issue 2063: sage -q is broken
+# Issue 2063: [with patch, with positive review] sage -q is broken
 
 archive/issues_002063.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2063\n\n",
+    "closed_at": "2008-02-17T23:51:35Z",
     "created_at": "2008-02-05T19:11:39Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage -q is broken",
+    "title": "[with patch, with positive review] sage -q is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2063",
     "user": "https://github.com/williamstein"

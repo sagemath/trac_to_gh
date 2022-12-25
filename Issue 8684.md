@@ -4,6 +4,7 @@ archive/issues_008684.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis is a follow-up to #8513.  The graph theory in the reference manual needs to be organized in some sensible fashion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8684\n\n",
+    "closed_at": "2010-11-27T21:04:17Z",
     "created_at": "2010-04-14T05:22:36Z",
     "labels": [
         "component: graph theory",

@@ -1,23 +1,24 @@
-# Issue 4689: Documentation documenting the wrong thing
+# Issue 4689: save method for graphics objects does not have an example explicitly using "save"
 
 archive/issues_004689.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nThe examples in the documentation for the save method seems to be broken. If I try\n\n```\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\nthen I get\n\n``` \nEXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n\n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\nwhich never mentions \"save\" at all. Presumably there should be an extra line, something like\n\n```\nsage: c.save(\"example.png\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4689\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nThe examples in the documentation for the save method seems to be broken. If I try\n\n```\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\nthen I get\n\n``` \nEXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n\n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\nwhich never mentions \"save\" at all. Presumably there should be an extra line, something like\n\n```\nsage: c.save(\"example.png\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4689\n\n",
+    "closed_at": "2010-01-23T15:25:43Z",
     "created_at": "2008-12-03T22:37:41Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "Documentation documenting the wrong thing",
+    "title": "save method for graphics objects does not have an example explicitly using \"save\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4689",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: tbd
+Assignee: tba
 
 CC:  @mwhansen
 

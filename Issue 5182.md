@@ -1,17 +1,17 @@
-# Issue 5182: Strange Symmetrica segfault
+# Issue 5182: Strange Symmetrica segfault - Please close
 
 archive/issues_005182.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetrica\n\nThis is from sagenb running sage 3.3.alpha3:\n\n```\nsage: dd = { Partition([1]) : 1 } ; ee = { Partition([1]) : int(1) } ; s = SFASchur(QQ)\nsage: (s._from_dict(dd), s._from_dict(ee)) # This is fine\n(s[1], s[1])\nsage: 1 * s._from_dict(dd) # This is fine\ns[1]\nsage: 1 * s._from_dict(ee) # This fails\nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1) \npython: \ufffd73x\ufffd\ufffd\nConnection to localhost closed.\n```\n\n\nThis is a low priority for me, since the obvious workaround is not to put 'int's in this kind of dictionary, but I wanted to report it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5182\n\n",
+    "closed_at": "2011-03-14T21:43:05Z",
     "created_at": "2009-02-04T22:49:42Z",
     "labels": [
         "component: combinatorics",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Strange Symmetrica segfault",
+    "title": "Strange Symmetrica segfault - Please close",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5182",
     "user": "https://github.com/jbandlow"

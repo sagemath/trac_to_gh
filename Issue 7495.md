@@ -1,17 +1,18 @@
-# Issue 7495: notebook: get rid of all possible "internal server errors" when doing "Data --> Upload or attach file"
+# Issue 7495: notebook: fix massive security vulnerability and get rid of all possible "internal server errors" when doing "Data --> Upload or attach file"
 
 archive/issues_007495.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUploading or attaching an empty file or a file that doesn't exist, etc. can cause internal server errors instead of a proper error message.\n\nMoreover, notice these lines in twist.py:\n\n```\nclass Worksheet_do_upload_data\n...\n        dest = os.path.join(self.worksheet.data_directory(), name)\n        if os.path.exists(dest):\n            os.unlink(dest)\n```\n\nWith a properly crafted URL I bet name could contain .. and hence one could make the notebook *server* delete any file it has access to!  This is a critical security vulnerability. \n\nSee also #3849 for similar issues when uploading a worksheet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7495\n\n",
+    "closed_at": "2009-12-07T16:47:07Z",
     "created_at": "2009-11-20T00:34:35Z",
     "labels": [
         "component: notebook",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "notebook: get rid of all possible \"internal server errors\" when doing \"Data --> Upload or attach file\"",
+    "title": "notebook: fix massive security vulnerability and get rid of all possible \"internal server errors\" when doing \"Data --> Upload or attach file\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7495",
     "user": "https://github.com/williamstein"

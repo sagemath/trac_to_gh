@@ -4,6 +4,7 @@ archive/issues_009087.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  kohel alexghitza\n\nKeywords: super singular ordinary elliptic curves\n\nI have implemented methods is_ordinary() and is_supersingular() for elliptic curves over finite fields, together with functions supersingular_j_polynomial(p) returning a polynomial over GF(p) whose roots are the supersingular j-invariants in characteristic p, a dict storing the precomputed output of this for p<300, and a function is_j_supersingular(j) testing whether a finite field element j is a supersingular j-invariant.\n\nA patch will be ready shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9087\n\n",
+    "closed_at": "2010-07-20T07:13:05Z",
     "created_at": "2010-05-29T19:30:54Z",
     "labels": [
         "component: elliptic curves"

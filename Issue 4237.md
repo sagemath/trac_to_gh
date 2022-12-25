@@ -1,15 +1,16 @@
-# Issue 4237: magma -- finite field matrix conversions
+# Issue 4237: [with patch; positive review] magma -- finite field matrix conversions
 
 archive/issues_004237.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n2) Converting matrices (over finite fields) is very slow for the dimensions\nI'm interested in (the smallest dimension is 10000x10000) because it each\nelement is converted individually. Also, the conversion eats a lot of RAM due\nto the large string that is created.\n```\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4237\n\n",
+    "closed_at": "2008-12-17T15:12:40Z",
     "created_at": "2008-10-02T16:29:16Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "magma -- finite field matrix conversions",
+    "title": "[with patch; positive review] magma -- finite field matrix conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4237",
     "user": "https://github.com/williamstein"

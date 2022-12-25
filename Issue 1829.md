@@ -1,16 +1,17 @@
-# Issue 1829: [with patch] small improvements for term ordering module
+# Issue 1829: [with patch, with positive review] small improvements for term ordering module
 
 archive/issues_001829.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1829\n\n",
+    "closed_at": "2008-01-21T06:10:21Z",
     "created_at": "2008-01-18T13:38:27Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] small improvements for term ordering module",
+    "title": "[with patch, with positive review] small improvements for term ordering module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1829",
     "user": "https://github.com/malb"

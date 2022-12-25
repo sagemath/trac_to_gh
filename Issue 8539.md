@@ -1,26 +1,35 @@
-# Issue 8539: EllipticCurve('6006j1').sha().p_primary_bound(3) ignores CTRL-C
+# Issue 8539: Matrix(ZZ, sparse=True)._mod_int(p) has the wrong parent
 
 archive/issues_008539.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @williamstein\n\nWhen reproducing this, make sure to wait about 10 seconds before trying to interrupt, as it takes time earlier in the function elsewhere, which handles the interruption properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8539\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @williamstein\n\n```\nsage: M = Matrix(ZZ, 300, 300, sparse=True)\nsage: B = M._mod_int(7)\nsage: B\n300 x 300 sparse matrix over Ring of integers modulo 7 (type 'print B.str()' to see all of the entries)\nsage: B.parent()\nFull MatrixSpace of 300 by 300 dense matrices over Ring of integers modulo 7\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8539\n\n",
+    "closed_at": "2010-03-29T22:08:01Z",
     "created_at": "2010-03-15T04:01:18Z",
     "labels": [
-        "component: elliptic curves",
+        "component: linear algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.5",
-    "title": "EllipticCurve('6006j1').sha().p_primary_bound(3) ignores CTRL-C",
+    "title": "Matrix(ZZ, sparse=True)._mod_int(p) has the wrong parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8539",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @JohnCremona
+Assignee: @williamstein
 
 CC:  @robertwb @williamstein
 
-When reproducing this, make sure to wait about 10 seconds before trying to interrupt, as it takes time earlier in the function elsewhere, which handles the interruption properly.
+```
+sage: M = Matrix(ZZ, 300, 300, sparse=True)
+sage: B = M._mod_int(7)
+sage: B
+300 x 300 sparse matrix over Ring of integers modulo 7 (type 'print B.str()' to see all of the entries)
+sage: B.parent()
+Full MatrixSpace of 300 by 300 dense matrices over Ring of integers modulo 7
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8539
 

@@ -1,16 +1,17 @@
-# Issue 1529: update install_scripts to also install R script.
+# Issue 1529: [with trivial patch] update install_scripts to also install R script.
 
 archive/issues_001529.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1529\n\n",
+    "closed_at": "2007-12-16T03:08:03Z",
     "created_at": "2007-12-16T00:54:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "update install_scripts to also install R script.",
+    "title": "[with trivial patch] update install_scripts to also install R script.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1529",
     "user": "https://github.com/williamstein"

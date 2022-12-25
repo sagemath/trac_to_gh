@@ -1,15 +1,16 @@
-# Issue 8888: Returns the frontier of a partition
+# Issue 8888: Rim and outer rim for integer partitions
 
 archive/issues_008888.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Partitions border rim\n\nThe name of the actual method is being discussed on [sage-combinat](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/27e68b86cf8e0578/1869144ca150bda6?hl=en&lnk=gst&q=frontier#1869144ca150bda6)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8888\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Partitions border rim\n\nAdded two methods to compute rim and outer rim for partitions. \n\nDepends on #6655\n\nApply patches in this order:\n\n1. [trac_8888_partition_rim-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8888/trac_8888_partition_rim-fh.patch)\n2. [trac_8888_reviewer_jb.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8888/trac_8888_reviewer_jb.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8888\n\n",
+    "closed_at": "2010-06-05T22:23:55Z",
     "created_at": "2010-05-05T11:33:20Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Returns the frontier of a partition",
+    "title": "Rim and outer rim for integer partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8888",
     "user": "https://github.com/hivert"
@@ -21,7 +22,14 @@ CC:  sage-combinat
 
 Keywords: Partitions border rim
 
-The name of the actual method is being discussed on [sage-combinat](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/27e68b86cf8e0578/1869144ca150bda6?hl=en&lnk=gst&q=frontier#1869144ca150bda6)
+Added two methods to compute rim and outer rim for partitions. 
+
+Depends on #6655
+
+Apply patches in this order:
+
+1. [trac_8888_partition_rim-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8888/trac_8888_partition_rim-fh.patch)
+2. [trac_8888_reviewer_jb.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8888/trac_8888_reviewer_jb.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8888
 

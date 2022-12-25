@@ -1,30 +1,27 @@
-# Issue 8542: Pynac does not build a DLL on Cygwin
+# Issue 8542: Pynac should use a function pointer table
 
 archive/issues_008542.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHowever, if I go into src/ginac/.libs and run\n\n```\ngcc -shared -L/home/mhansen/sage-4.3.3.alpha0/local//lib -L/home/mhansen/sage-4.3.3.alpha0/local/lib/python2.6/config -o libpynac.dll *.o -lstdc++ -lpython2.6\n```\n\na working DLL gets built.  The trick would be to figure out how to get autotools to do this for us.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8542\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nIt also needs to be configured to build a DLL in Cygwin. There are some automake macros that will help with this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8542\n\n",
+    "closed_at": "2010-05-28T19:31:10Z",
     "created_at": "2010-03-15T05:27:50Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
-    "title": "Pynac does not build a DLL on Cygwin",
+    "title": "Pynac should use a function pointer table",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8542",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tbd
+Assignee: @burcin
 
-However, if I go into src/ginac/.libs and run
+Keywords: pynac
 
-```
-gcc -shared -L/home/mhansen/sage-4.3.3.alpha0/local//lib -L/home/mhansen/sage-4.3.3.alpha0/local/lib/python2.6/config -o libpynac.dll *.o -lstdc++ -lpython2.6
-```
-
-a working DLL gets built.  The trick would be to figure out how to get autotools to do this for us.
+It also needs to be configured to build a DLL in Cygwin. There are some automake macros that will help with this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8542
 

@@ -4,6 +4,7 @@ archive/issues_009560.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  cwitty @mstreng @kcrisman\n\nIt's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:\n\n```\nsage: SR(5) + True; SR(5) * True; SR(5) - True\n2\n1\n0\nsage: 5 + True; 5 * True; 5 - True\n6\n5\n4\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9560\n\n",
+    "closed_at": "2011-06-14T21:08:10Z",
     "created_at": "2010-07-21T09:06:17Z",
     "labels": [
         "component: symbolics",

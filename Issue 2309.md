@@ -1,22 +1,23 @@
-# Issue 2309: [with patch, needs review] #2267 introduced spurious linebreak commands '\\'
+# Issue 2309: [with patch, positive review] #2267 introduced spurious linebreak commands '\\'
 
 archive/issues_002309.json:
 ```json
 {
-    "body": "Assignee: tba\n\nmabshoff changed `\\&` to `\\\\&`; the correct fix is to change to `&`.  I rebuilt the manual, and verified that it does rebuild and that the spurious linebreaks are gone (although the formatting in the second relevant section is still pretty bad).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2309\n\n",
+    "body": "Assignee: mabshoff\n\nmabshoff changed `\\&` to `\\\\&`; the correct fix is to change to `&`.  I rebuilt the manual, and verified that it does rebuild and that the spurious linebreaks are gone (although the formatting in the second relevant section is still pretty bad).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2309\n\n",
+    "closed_at": "2008-02-26T04:27:05Z",
     "created_at": "2008-02-26T03:45:18Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] #2267 introduced spurious linebreak commands '\\\\'",
+    "title": "[with patch, positive review] #2267 introduced spurious linebreak commands '\\\\'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2309",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 mabshoff changed `\&` to `\\&`; the correct fix is to change to `&`.  I rebuilt the manual, and verified that it does rebuild and that the spurious linebreaks are gone (although the formatting in the second relevant section is still pretty bad).
 

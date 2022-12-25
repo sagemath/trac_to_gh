@@ -1,58 +1,46 @@
-# Issue 9603: Force iconv to build on HP-UX in addition to Solaris and Cygwin.
+# Issue 9603: Build iconv in parallel, install it on HP-UX and make it work properly on Solaris 64-bit.
 
 archive/issues_009603.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @peterjeremy mvngu @qed777\n\nCurrently iconv builds only on Solaris and Cygwin, as it caused problems on some linux distributions. \n\nIt would be good if this would build on HP-UX too, as then some other packages could be checked on HP-UX to aid testing on different platforms. This ticket makes 3 changes. \n\n* Changes `#!/bin/bash` to `#!/usr/bin/env bash` in spkg-check. This in in conformance with the [Sage Developers Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg) and is necessary on HP-UX as 'bash' is not installed in /bin.\n\n```\n-#!/bin/bash\n+#!/usr/bin/env bash\n```\n\n* Force install on HP-UX, instead of just Cygwin and Solaris. The relevant bit of the patch is:\n\n```\n-# Only build iconv on Solaris and Cygwin\n-if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xCYGWIN ] ; then  \n+# Only build iconv on Solaris, HP-UX and Cygwin\n+if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xHP-UX ] && [ \"x$UNAME\" != xCYGWIN ] ; then\n```\n* Force iconv to be checked only HP-UX, in addition to Solaris and Cygwin on which it was previously checked. \n\n```\n-if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xCYGWIN ] ; then  \n+if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xHP-UX ] && [ \"x$UNAME\" != xCYGWIN ] ; then\n```\n\n* Print all tests have pass if they have done. The relevant bit of the patch is \n\n```\n+echo \"All the tests for iconv passed\"\n+exit 0 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9603\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @peterjeremy mvngu @qed777\n\nThis patch, which started out with the sole intension of building iconv on HP-UX, with a very trivial change, now has a number of  changes to generally improve the package. \n\n* Use `$MAKE` instead of `make` to permit parallel builds. \n* Install `iconv` on HP-UX in addition to Solaris and Cygwin.\n* Make this build properly 64-bit on all versions of Solaris and OpenSolaris - prior to this, there was a problem on some systems - see #9718.\n* A cleanup of spkg-install, spkg-check and SPKG.txt was also undertaken. \n\nDave\n\n---\n\n**Final spkg: http://spkg-upload.googlecode.com/files/iconv-1.13.1.p3.spkg**\n\n(All three reviewer patches applied.)\n\n```sh\n$ md5sum iconv-1.13.1.p3.spkg\naa4fd0c04699b806f8a60da64812d792  iconv-1.13.1.p3.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9603\n\n",
+    "closed_at": "2010-09-16T00:48:49Z",
     "created_at": "2010-07-26T13:33:05Z",
     "labels": [
         "component: build",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Force iconv to build on HP-UX in addition to Solaris and Cygwin.",
+    "title": "Build iconv in parallel, install it on HP-UX and make it work properly on Solaris 64-bit.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9603",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 CC:  @peterjeremy mvngu @qed777
 
-Currently iconv builds only on Solaris and Cygwin, as it caused problems on some linux distributions. 
+This patch, which started out with the sole intension of building iconv on HP-UX, with a very trivial change, now has a number of  changes to generally improve the package. 
 
-It would be good if this would build on HP-UX too, as then some other packages could be checked on HP-UX to aid testing on different platforms. This ticket makes 3 changes. 
+* Use `$MAKE` instead of `make` to permit parallel builds. 
+* Install `iconv` on HP-UX in addition to Solaris and Cygwin.
+* Make this build properly 64-bit on all versions of Solaris and OpenSolaris - prior to this, there was a problem on some systems - see #9718.
+* A cleanup of spkg-install, spkg-check and SPKG.txt was also undertaken. 
 
-* Changes `#!/bin/bash` to `#!/usr/bin/env bash` in spkg-check. This in in conformance with the [Sage Developers Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg) and is necessary on HP-UX as 'bash' is not installed in /bin.
+Dave
 
-```
--#!/bin/bash
-+#!/usr/bin/env bash
-```
+---
 
-* Force install on HP-UX, instead of just Cygwin and Solaris. The relevant bit of the patch is:
+**Final spkg: http://spkg-upload.googlecode.com/files/iconv-1.13.1.p3.spkg**
 
-```
--# Only build iconv on Solaris and Cygwin
--if [ "x$UNAME" != xSunOS ] && [ "x$UNAME" != xCYGWIN ] ; then  
-+# Only build iconv on Solaris, HP-UX and Cygwin
-+if [ "x$UNAME" != xSunOS ] && [ "x$UNAME" != xHP-UX ] && [ "x$UNAME" != xCYGWIN ] ; then
-```
-* Force iconv to be checked only HP-UX, in addition to Solaris and Cygwin on which it was previously checked. 
+(All three reviewer patches applied.)
 
-```
--if [ "x$UNAME" != xSunOS ] && [ "x$UNAME" != xCYGWIN ] ; then  
-+if [ "x$UNAME" != xSunOS ] && [ "x$UNAME" != xHP-UX ] && [ "x$UNAME" != xCYGWIN ] ; then
+```sh
+$ md5sum iconv-1.13.1.p3.spkg
+aa4fd0c04699b806f8a60da64812d792  iconv-1.13.1.p3.spkg
 ```
 
-* Print all tests have pass if they have done. The relevant bit of the patch is 
-
-```
-+echo "All the tests for iconv passed"
-+exit 0 
-```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9603
 

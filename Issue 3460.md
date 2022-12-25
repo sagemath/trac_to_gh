@@ -1,16 +1,17 @@
-# Issue 3460: [with patch, needs review] add power_basis() to number fields
+# Issue 3460: [with patch, with positive review] add power_basis() to number fields
 
 archive/issues_003460.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  ccitro\n\nKeywords: number field power basis\n\nThe patch describes it best.  Very useful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3460\n\n",
+    "closed_at": "2008-08-10T20:21:19Z",
     "created_at": "2008-06-18T03:40:55Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] add power_basis() to number fields",
+    "title": "[with patch, with positive review] add power_basis() to number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3460",
     "user": "https://github.com/ncalexan"

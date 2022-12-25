@@ -4,6 +4,7 @@ archive/issues_005234.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nwith 3.3.rc0, on gentoo running on an amd64:\n\n```\n./sage -t -verbose  \"devel/sage/sage/rings/real_lazy.pyx\"\n[...]\nTrying:\n    a = RLF(pi) + RLF(sqrt(Integer(1)/Integer(2)))###line 650:_sage_    >>> a = RLF(pi) + RLF(sqrt(1/2))\nExpecting nothing\nok\nTrying:\n    loads(dumps(a)) == a###line 651:_sage_    >>> loads(dumps(a)) == a\nExpecting:\n    True\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n[...]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5234\n\n",
+    "closed_at": "2009-03-01T02:21:36Z",
     "created_at": "2009-02-11T20:32:00Z",
     "labels": [
         "component: doctest coverage",

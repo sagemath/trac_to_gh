@@ -1,15 +1,16 @@
-# Issue 6010: [with patch, needs review] implement various invariants for genus 2 hyperelliptic curves
+# Issue 6010: [with patch, positive review] implement various invariants for genus 2 hyperelliptic curves
 
 archive/issues_006010.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  kohel\n\nKeywords: genus 2 hyperelliptic igusa invariants\n\nPatch says it best -- Igusa and related invariants for hyperelliptic curves of genus 2 (equivalently, quintic/sexitc binary forms).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6010\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  kohel\n\nKeywords: genus 2 hyperelliptic igusa invariants\n\nPatch says it best -- Igusa and related invariants for hyperelliptic curves of genus 2 (equivalently, quintic/sextic binary forms).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6010\n\n",
+    "closed_at": "2009-05-12T06:42:00Z",
     "created_at": "2009-05-08T21:58:26Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] implement various invariants for genus 2 hyperelliptic curves",
+    "title": "[with patch, positive review] implement various invariants for genus 2 hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6010",
     "user": "https://github.com/ncalexan"
@@ -21,7 +22,7 @@ CC:  kohel
 
 Keywords: genus 2 hyperelliptic igusa invariants
 
-Patch says it best -- Igusa and related invariants for hyperelliptic curves of genus 2 (equivalently, quintic/sexitc binary forms).
+Patch says it best -- Igusa and related invariants for hyperelliptic curves of genus 2 (equivalently, quintic/sextic binary forms).
 
 Issue created by migration from https://trac.sagemath.org/ticket/6010
 

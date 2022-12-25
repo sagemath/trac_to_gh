@@ -1,16 +1,17 @@
-# Issue 619: memleak in Matrix_integer_dense__zero_out_matrix
+# Issue 619: [with patch] memleak in Matrix_integer_dense__zero_out_matrix
 
 archive/issues_000619.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is caused when running Sage 2.8.3.6+malb's fix for #566:\n\n```\nfor i in range(3):\n    get_memory_usage()\n    m = ModularSymbols(501,2).decomposition(3); \n    del m; ModularSymbols_clear_cache(); \n    get_memory_usage()\n```\nand results in \n\n```\n==8920== LEAK SUMMARY:\n==8920==    definitely lost: 1,518,830 bytes in 183,739 blocks.\n==8920==    indirectly lost: 288,408 bytes in 610 blocks.\n==8920==      possibly lost: 489,439 bytes in 1,002 blocks.\n==8920==    still reachable: 160,311,066 bytes in 872,845 blocks.\n==8920==         suppressed: 0 bytes in 0 blocks.\n```\nThe exact problem:\n\n```\n==8920== 1,435,632 bytes in 179,454 blocks are definitely lost in loss record 2,365 of 2,372\n==8920==    at 0x4A05A66: malloc (vg_replace_malloc.c:207)\n==8920==    by 0x95A4697: __gmpz_init (in /tmp/Work2/sage-2.8.3.6-clean/local/lib/libgmp.so.3.4.1)\n==8920==    by 0x205E040F: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__zero_out_matrix (matrix_integer_dense.c:46\n49)\n==8920==    by 0x2060E1E4: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense___init__ (matrix_integer_dense.c:3769)\n==8920==    by 0x45A321: type_call (typeobject.c:436)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==8920==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==8920==    by 0x4845B3: PyEval_EvalFrameEx (ceval.c:3660)\n==8920==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==8920==    by 0x4CFED0: function_call (funcobject.c:517)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/619\n\n",
+    "closed_at": "2007-10-20T19:16:01Z",
     "created_at": "2007-09-07T16:56:00Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "memleak in Matrix_integer_dense__zero_out_matrix",
+    "title": "[with patch] memleak in Matrix_integer_dense__zero_out_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/619",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 3495: [with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices
+# Issue 3495: [with patch, positive review] bug in cyclotomic charpoly for 1x1 matrices
 
 archive/issues_003495.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThe following will crash in sage:\n\n```\nsage: Matrix(CyclotomicField(3), 1, [0]).charpoly()\n```\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3495\n\n",
+    "closed_at": "2008-06-23T23:10:22Z",
     "created_at": "2008-06-23T18:53:49Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices",
+    "title": "[with patch, positive review] bug in cyclotomic charpoly for 1x1 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3495",
     "user": "https://github.com/craigcitro"

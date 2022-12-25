@@ -3,10 +3,11 @@
 archive/issues_007205.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\n1. If I go to http://sagemath.org/src/ there is only the last release.\n\n   2. If I click on \"up one directory level\", I'm just dumped to\nhttp://sagemath.org, which makes no sense.\n\n3. Clicking on changelogs gives\nhttp://sagemath.org/src/changelogs/index.html which does indeed list\nchangelogs.  But it also lists  a file \"OLD_VERSIONS_HERE.txt\",\nrandomly right in the middle.  Looking at that file I find the\ncompletely wrong statement: \"These are archived old versions.  For the\nnew versions see the main SAGE website. http://modular.ucsd.edu/sage\".\n\n4. There is a random \"README.txt\" for no reason also in the middle\nof http://sagemath.org/src/changelogs/\n\n5. Finally, logging into the server I find that\nhttp://sagemath.org/src-old/ has the old versions.  But how could I\nfind that otherwise?   Also, the description at the top of src-old\ndoesn't explain what it is accurately.  It would be better to say\n\"Here you can download the source code for any past version of Sage so\nyou can build it from source.\"\n\n6. This listing at http://sagemath.org/src-old/ also has various\nrandom files like README.txt.in and install.html mixed in.\n\nIt would also be worth mentioning that we have many old sage install on sage.math. \n\nI wonder if it would also be good to archive bdists for one specific Linux release, e.g., 32-bit x86 Ubuntu 8.04 LTS?  Since then one can easily get a virtual machine and drop our binary in it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7205\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\n1. If I go to http://sagemath.org/src/ there is only the last release.\n\n2. If I click on \"up one directory level\", I'm just dumped to\nhttp://sagemath.org, which makes no sense.\n\n3. Clicking on changelogs gives\nhttp://sagemath.org/src/changelogs/index.html which does indeed list\nchangelogs.  But it also lists  a file \"OLD_VERSIONS_HERE.txt\",\nrandomly right in the middle.  Looking at that file I find the\ncompletely wrong statement: \"These are archived old versions.  For the\nnew versions see the main SAGE website. http://modular.ucsd.edu/sage\".\n\n4. There is a random \"README.txt\" for no reason also in the middle\nof http://sagemath.org/src/changelogs/\n\n5. Finally, logging into the server I find that\nhttp://sagemath.org/src-old/ has the old versions.  But how could I\nfind that otherwise?   Also, the description at the top of src-old\ndoesn't explain what it is accurately.  It would be better to say\n\"Here you can download the source code for any past version of Sage so\nyou can build it from source.\"\n\n6. This listing at http://sagemath.org/src-old/ also has various\nrandom files like README.txt.in and install.html mixed in.\n\nIt would also be worth mentioning that we have many old sage install on sage.math. \n\nI wonder if it would also be good to archive bdists for one specific Linux release, e.g., 32-bit x86 Ubuntu 8.04 LTS?  Since then one can easily get a virtual machine and drop our binary in it.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7205\n\n",
+    "closed_at": "2012-05-21T08:06:18Z",
     "created_at": "2009-10-14T02:40:54Z",
     "labels": [
-        "component: distribution",
+        "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -22,7 +23,7 @@ CC:  @haraldschilly
 
 1. If I go to http://sagemath.org/src/ there is only the last release.
 
-   2. If I click on "up one directory level", I'm just dumped to
+2. If I click on "up one directory level", I'm just dumped to
 http://sagemath.org, which makes no sense.
 
 3. Clicking on changelogs gives
@@ -47,7 +48,7 @@ random files like README.txt.in and install.html mixed in.
 
 It would also be worth mentioning that we have many old sage install on sage.math. 
 
-I wonder if it would also be good to archive bdists for one specific Linux release, e.g., 32-bit x86 Ubuntu 8.04 LTS?  Since then one can easily get a virtual machine and drop our binary in it.
+I wonder if it would also be good to archive bdists for one specific Linux release, e.g., 32-bit x86 Ubuntu 8.04 LTS?  Since then one can easily get a virtual machine and drop our binary in it.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/7205
 

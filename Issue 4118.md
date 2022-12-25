@@ -1,16 +1,17 @@
-# Issue 4118: [with patch, needs review] fix various Pari-related issues
+# Issue 4118: [with patch, positive review] fix various Pari-related issues
 
 archive/issues_004118.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis patch fixes two things:\n\n1. In various places, we used something like `x.type() == 't_INT'` in Cython code, and with Pari already linked in. In this case, it's much faster to use `typ(x.g) == t_INT`. \n2. Several `_sig_on`s were missing, so I've gone through and added the ones I saw missing. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4118\n\n",
+    "closed_at": "2008-09-14T13:32:59Z",
     "created_at": "2008-09-14T11:49:11Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] fix various Pari-related issues",
+    "title": "[with patch, positive review] fix various Pari-related issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4118",
     "user": "https://github.com/craigcitro"

@@ -4,6 +4,7 @@ archive/issues_006844.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe spkg-install for readline does a lot of silly things. \n\n* It does a grep on /etc/SuSE-release even if the file does not exist. \n* It adds  -m64 only on OS X if SAGE64 is set to 'yes'\n* It adds -m64 as a linker flag, even though no such linker flags exists on any linker I can find. \n\nIt needs a cleanup. I'll do this. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6844\n\n",
+    "closed_at": "2009-09-17T22:12:08Z",
     "created_at": "2009-08-30T07:15:51Z",
     "labels": [
         "component: algebra",

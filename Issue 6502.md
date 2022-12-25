@@ -1,15 +1,16 @@
-# Issue 6502: [with Patch, needs review] Linear Program Solver and Mixed Integer Program Solver in SAGE
+# Issue 6502: Linear Program Solver and Mixed Integer Program Solver in Sage
 
 archive/issues_006502.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @haraldschilly\n\nFollowing this message on SAGE-devel :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f\n\nThis is the class sage.numerical.mip which is meant to be the common interface between SAGE and 3 different LP solvers : GLPK, Coin-Or, and CPLEX.\n\nFor the moment, I only wrote the interface with Coin-Or, which I needed and which seems to work for simple problems. I will improve it over time, but it can already be used and I hope you will like it :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6502\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @haraldschilly\n\nFollowing this message on SAGE-devel :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f\n\nThis is the class sage.numerical.mip which is meant to be the common interface between SAGE and 3 different LP solvers : GLPK, Coin-Or, and CPLEX.\n\nTrac ticket for GLPK : http://trac.sagemath.org/sage_trac/ticket/6602\nTrac ticker for COIN : http://trac.sagemath.org/sage_trac/ticket/6603\n\nIssue created by migration from https://trac.sagemath.org/ticket/6502\n\n",
+    "closed_at": "2009-09-02T17:44:51Z",
     "created_at": "2009-07-09T16:34:48Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with Patch, needs review] Linear Program Solver and Mixed Integer Program Solver in SAGE",
+    "title": "Linear Program Solver and Mixed Integer Program Solver in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6502",
     "user": "https://github.com/nathanncohen"
@@ -24,7 +25,8 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f
 
 This is the class sage.numerical.mip which is meant to be the common interface between SAGE and 3 different LP solvers : GLPK, Coin-Or, and CPLEX.
 
-For the moment, I only wrote the interface with Coin-Or, which I needed and which seems to work for simple problems. I will improve it over time, but it can already be used and I hope you will like it :-)
+Trac ticket for GLPK : http://trac.sagemath.org/sage_trac/ticket/6602
+Trac ticker for COIN : http://trac.sagemath.org/sage_trac/ticket/6603
 
 Issue created by migration from https://trac.sagemath.org/ticket/6502
 

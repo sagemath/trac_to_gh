@@ -4,6 +4,7 @@ archive/issues_009784.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nUsing the Simple Server API I tried the following (after logging in of course):\n\nAt first I sent the code \"`sleep(10);5`\" to the server using the following URL:\n`http://localhost:port/simple/compute?session=theID&code=sleep(10)%3B5`\n\nThen, immediatly afterwards (this means command one was still computing) I sent the code \"`4+5`\" to the server using the URL\n`http://localhost:port/simple/compute?session=theID&code=4%2B5`\n\nThen, after 10 seconds, I looked at the results of both commands using\n`http://localhost:port/simple/status?session=theID&cell=2`\nand\n`http://localhost:port/simple/status?session=theID&cell=3`\n\nBoth cells had `5` as result, which should be only the result of the first\ncell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9785\n\n",
+    "closed_at": "2014-09-18T17:59:16Z",
     "created_at": "2010-08-23T10:45:49Z",
     "labels": [
         "component: notebook",

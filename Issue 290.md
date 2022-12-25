@@ -3,7 +3,8 @@
 archive/issues_000290.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nQQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))\n<type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational\n```\n\n(Reported by cwitty)\n\nIssue created by migration from https://trac.sagemath.org/ticket/290\n\n",
+    "body": "Assignee: @malb\n\n```\nQQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))\n<type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational\n```\n\n(Reported by cwitty)\n\nIssue created by migration from https://trac.sagemath.org/ticket/290\n\n",
+    "closed_at": "2007-08-31T20:43:56Z",
     "created_at": "2007-02-24T05:04:12Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000290.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 ```
 QQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))

@@ -1,15 +1,16 @@
-# Issue 6596: [with patch, needs review] Singular refactoring and Groebner Strategy objects
+# Issue 6596: [with patch, positive review] Singular refactoring and Groebner Strategy objects
 
 archive/issues_006596.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  polybori @burcin\n\nKeywords: singular\n\nThe attached patch factors out some commonly called code for dealing with libsingular to make it more accessible.\n\nAlso, the attached patch wraps Singular's Gr\u00f6bner strategy objects which allow much faster normal form computations.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6596\n\n",
+    "closed_at": "2009-09-03T05:34:03Z",
     "created_at": "2009-07-23T07:57:04Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Singular refactoring and Groebner Strategy objects",
+    "title": "[with patch, positive review] Singular refactoring and Groebner Strategy objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6596",
     "user": "https://github.com/malb"

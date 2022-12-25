@@ -3,7 +3,8 @@
 archive/issues_007647.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @fchapoton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7647\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @fchapoton\n\nI think this would be a very nice option - could it perhaps be implemented in new notebooks?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7647\n\n",
+    "closed_at": "2020-09-11T10:42:14Z",
     "created_at": "2009-12-10T01:12:45Z",
     "labels": [
         "component: notebook",
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 CC:  @jasongrout @fchapoton
 
-
+I think this would be a very nice option - could it perhaps be implemented in new notebooks?
 
 Issue created by migration from https://trac.sagemath.org/ticket/7647
 

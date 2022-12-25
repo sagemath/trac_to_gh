@@ -4,6 +4,7 @@ archive/issues_000958.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nReported by Paul Zimmerman:\n\n```\n\n- in case one redefines DESTDIR in make install, one gets strange paths:\n $ make install -n DESTDIR=/usr/local/sage-2.8.7\n ...\n cp /usr/local/sage-2.8.7/usr/local/sage/sage /usr/local/sage-2.8.7/usr/bin/\n (I would expect at least 'usr' to disappear.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/958\n\n",
+    "closed_at": "2007-10-27T18:43:39Z",
     "created_at": "2007-10-21T12:40:04Z",
     "labels": [
         "component: packages: standard",

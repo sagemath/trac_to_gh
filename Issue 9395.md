@@ -4,6 +4,7 @@ archive/issues_009395.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @williamstein @JohnCremona ylchapuy\n\nThe attached patch includes a new doctest for a book (in french) some\npeople are writing about Sage (see the README file for the list of\nauthors).\n\nThis book will be available under a CC-by-sa license.\n\nThis patch contains only the doctests for one chapter (about number\ntheory). Some more doctests will follow, one per chapter, but we\nalready submit that one to see if some things need to be fixed.\n\nThis doctest was tested successfully with Sage 4.4.2 under Fedora 12.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9395\n\n",
+    "closed_at": "2010-09-15T10:40:52Z",
     "created_at": "2010-06-30T13:14:12Z",
     "labels": [
         "component: doctest coverage"

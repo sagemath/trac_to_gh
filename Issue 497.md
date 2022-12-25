@@ -3,7 +3,8 @@
 archive/issues_000497.json:
 ```json
 {
-    "body": "Assignee: pablo\n\nMake it so a.minpoly() works when a is in a finite field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/497\n\n",
+    "body": "Assignee: @pdenapo\n\nMake it so a.minpoly() works when a is in a finite field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/497\n\n",
+    "closed_at": "2007-09-02T05:49:22Z",
     "created_at": "2007-08-27T22:15:51Z",
     "labels": [
         "component: basic arithmetic"
@@ -15,7 +16,7 @@ archive/issues_000497.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: pablo
+Assignee: @pdenapo
 
 Make it so a.minpoly() works when a is in a finite field.
 

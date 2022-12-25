@@ -3,7 +3,8 @@
 archive/issues_008750.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nI'm getting noise on doctests on Solaris.  One is straightforward to fix (chmm.pyx).  For the other (time_series.pyx), on Solaris I get\n\n```\nsage -t  -long devel/sage/sage/finance/time_series.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/finance/time_series.pyx\", line 691:\n    sage: finance.TimeSeries([1,0,3]).log()\nExpected:\n    [0.0000, -inf, 1.0986]\nGot:\n    [0.0000, -Inf, 1.0986]\n**********************************************************************\n```\nSo instead of `-inf`, it's printing `-Inf`.  However, if I do\n\n```\n   sage: finance.TimeSeries([1,0,3]).log()[1]\n```\nthen I see `-inf`.  So I've changed the doctest to use this instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8750\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nI'm getting noise on doctests on Solaris.  One is straightforward to fix (chmm.pyx).  For the other (time_series.pyx), on Solaris I get\n\n```\nsage -t  -long devel/sage/sage/finance/time_series.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/finance/time_series.pyx\", line 691:\n    sage: finance.TimeSeries([1,0,3]).log()\nExpected:\n    [0.0000, -inf, 1.0986]\nGot:\n    [0.0000, -Inf, 1.0986]\n**********************************************************************\n```\nSo instead of `-inf`, it's printing `-Inf`.  However, if I do\n\n```\n   sage: finance.TimeSeries([1,0,3]).log()[1]\n```\nthen I see `-inf`.  So I've changed the doctest to use this instead.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8750\n\n",
+    "closed_at": "2010-04-23T17:07:31Z",
     "created_at": "2010-04-23T05:18:46Z",
     "labels": [
         "component: porting: solaris",
@@ -40,6 +41,7 @@ So instead of `-inf`, it's printing `-Inf`.  However, if I do
    sage: finance.TimeSeries([1,0,3]).log()[1]
 ```
 then I see `-inf`.  So I've changed the doctest to use this instead.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8750
 

@@ -1,16 +1,17 @@
-# Issue 6016: factoring rational functions
+# Issue 6016: [with patch, with positive review] factoring rational functions
 
 archive/issues_006016.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIt would be nice to be able to factor rational functions. The implementation is trivial, and the enclosed patch tries to do that.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6016\n\n",
+    "closed_at": "2009-06-01T04:59:57Z",
     "created_at": "2009-05-11T02:15:12Z",
     "labels": [
         "component: algebra",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "factoring rational functions",
+    "title": "[with patch, with positive review] factoring rational functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6016",
     "user": "https://github.com/syazdani77"

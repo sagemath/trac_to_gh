@@ -1,9 +1,10 @@
-# Issue 3071: Using pbuild does not create site-packages sage symlink
+# Issue 3071: [with patch, positive review] Using pbuild does not create site-packages sage symlink
 
 archive/issues_003071.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: pbuild\n\nIf you use pbuild during the initial setup, it does not create the sage symlink in site-packages.  This can be fixed by performing:\nln -s devel/sage/build/sage/ local/lib/python/site-packages/sage\nduring the install process.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3071\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\nIf you use pbuild during the initial setup, it does not create the sage symlink in site-packages.  This can be fixed by performing:\nln -s devel/sage/build/sage/ local/lib/python/site-packages/sage\nduring the install process.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3071\n\n",
+    "closed_at": "2008-05-02T12:02:16Z",
     "created_at": "2008-05-01T10:26:22Z",
     "labels": [
         "component: build",
@@ -11,13 +12,13 @@ archive/issues_003071.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Using pbuild does not create site-packages sage symlink",
+    "title": "[with patch, positive review] Using pbuild does not create site-packages sage symlink",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3071",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 Keywords: pbuild
 

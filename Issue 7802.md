@@ -4,6 +4,7 @@ archive/issues_007802.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @robertwb mvngu\n\nThe IEEE754 standard has two versions of \"round to nearest\".  It appears that ours is the \"ties toward even\" version (see http://www.mpfr.org/mpfr-current/mpfr.html#MPFR-Basics).  We ought to mention this in the docs to RealField when it talks about the rounding modes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7802\n\n",
+    "closed_at": "2010-01-23T16:57:39Z",
     "created_at": "2010-01-01T10:52:06Z",
     "labels": [
         "component: documentation",

@@ -3,10 +3,11 @@
 archive/issues_001108.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFrom rpw:\n\n```\nAll my tests so far have shown that devel/sage-main/sage/combinat/\nsfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  \n10.4). Is this a known problem? I haven't been able to find any ticket  \nabout this in the TRAC.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1108\n\n",
+    "body": "Assignee: failure\n\nFrom rpw:\n\n```\nAll my tests so far have shown that devel/sage-main/sage/combinat/\nsfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  \n10.4 [when running the binary from 10.5]). Is this a known problem? I haven't been able to find any ticket  \nabout this in the TRAC.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1108\n\n",
+    "closed_at": "2007-11-24T15:38:39Z",
     "created_at": "2007-11-05T23:17:05Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
@@ -16,14 +17,14 @@ archive/issues_001108.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: failure
 
 From rpw:
 
 ```
 All my tests so far have shown that devel/sage-main/sage/combinat/
 sfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  
-10.4). Is this a known problem? I haven't been able to find any ticket  
+10.4 [when running the binary from 10.5]). Is this a known problem? I haven't been able to find any ticket  
 about this in the TRAC.
 ```
 

@@ -6,7 +6,7 @@ archive/issues_003504.json:
     "body": "Assignee: @williamstein\n\nI've found a way to somewhat reproducibly leave a matlab process eating 100% cpu time.\n\nI log on to sage.math, start Sage, and run the following commands:\n\n```\nsage: m = matlab(matrix(RR, [[1]]))\nsage: m.det()\n```\nThen I kill my local ssh client with \"kill -9\" (to make a non-clean ssh shutdown).\n\nOften (not always, but I think more than half the time) this leaves a matlab process eating 100% of the cpu time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3504\n\n",
     "created_at": "2008-06-24T20:47:54Z",
     "labels": [
-        "component: interfaces",
+        "component: interfaces: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",

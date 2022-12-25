@@ -4,6 +4,7 @@ archive/issues_003352.json:
 ```json
 {
     "body": "Assignee: tba\n\nIn Section 16.2 of the Reference Manual, the command DSage for Distributed Sage is out of date; the new command seems to be dsage (all lower case).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3352\n\n",
+    "closed_at": "2010-02-02T06:21:08Z",
     "created_at": "2008-06-02T21:57:44Z",
     "labels": [
         "component: documentation",

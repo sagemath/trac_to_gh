@@ -1,9 +1,10 @@
-# Issue 3527: Build python with "-O2" instead of "-O3" on Itanium
+# Issue 3527: [with spkg, positive review] Disable "-fwrapv" on Itanium when building python
 
 archive/issues_003527.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen building Sage's pyhton and extensions with gcc 4.3 on Itanium we get some doctest failures that disappear with \"-O2\"\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3527\n\n",
+    "body": "Assignee: mabshoff\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/python-2.5.2.p3.spkg\n\ndisables \"-fwrapv\" on Itanium and OSX. This fixes a number of doctest failures on at least Itanium. \"-fwrapv\" enables some seemingly sketchy floating point optimizations that are not part of \"-O3\", so good riddance for them.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3527\n\n",
+    "closed_at": "2008-07-09T16:09:25Z",
     "created_at": "2008-06-28T09:32:34Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003527.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Build python with \"-O2\" instead of \"-O3\" on Itanium",
+    "title": "[with spkg, positive review] Disable \"-fwrapv\" on Itanium when building python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3527",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,7 +20,11 @@ archive/issues_003527.json:
 ```
 Assignee: mabshoff
 
-When building Sage's pyhton and extensions with gcc 4.3 on Itanium we get some doctest failures that disappear with "-O2"
+The spkg at 
+
+http://sage.math.washington.edu/home/mabshoff/python-2.5.2.p3.spkg
+
+disables "-fwrapv" on Itanium and OSX. This fixes a number of doctest failures on at least Itanium. "-fwrapv" enables some seemingly sketchy floating point optimizations that are not part of "-O3", so good riddance for them.
 
 Cheers,
 

@@ -1,9 +1,10 @@
-# Issue 3926: [with spkg, needs review] fix Macaulay2 building
+# Issue 3926: [with spkg, positive review] fix Macaulay2 building
 
 archive/issues_003926.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI've uploaded a new SPKG for M2 to:\n\n  http://sage.math.washington.edu/home/malb/spkgs/macaulay2-1.1-r7210.p1.spkg\n\nwhich fixes a couple of compilation problems:\n\n* UNAME might not be defined\n* some standard headers are not included in `overflow.hpp`\n\nIssue created by migration from https://trac.sagemath.org/ticket/3926\n\n",
+    "closed_at": "2008-08-25T04:59:53Z",
     "created_at": "2008-08-22T12:29:12Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003926.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] fix Macaulay2 building",
+    "title": "[with spkg, positive review] fix Macaulay2 building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3926",
     "user": "https://github.com/malb"

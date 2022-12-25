@@ -1,21 +1,22 @@
-# Issue 1516: jmol spkg, use from notebook and command line
+# Issue 1516: [with patch, spkg, needs review] jmol spkg, useable from command line
 
 archive/issues_001516.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1516\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1516\n\n",
+    "closed_at": "2008-01-05T14:29:46Z",
     "created_at": "2007-12-15T02:18:58Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "jmol spkg, use from notebook and command line",
+    "title": "[with patch, spkg, needs review] jmol spkg, useable from command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1516",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 
 

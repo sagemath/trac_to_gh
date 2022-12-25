@@ -3,7 +3,8 @@
 archive/issues_003052.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRobert Bradshaw has mostly solved this:\n\n```\nI've looked into this some more and it looks like we can completely\nreconstruct a repository from the export of all its keywords. The\ntrick is to use the --exact keyword when importing. This forces it to\napply the given patch to the correct parent (sometimes creating a new\nhead) and will also correctly import merge patches (removing heads).\nSome scripts to do this are up at\n\nhttp://sage.math.washington.edu/home/robertwb/hg/\n\nI've successfully exported and re-created simple repositories (with\nbranching) with these scripts, and it works great and preserves all\nthe history. The only issue is that I can't seem to get it to work\nwith any repositories older than a certain date. I think the issue is\nthat mercurial changed the way nodeid's are calculated (and I keep\ngetting an error \"abort: patch is damaged or loses information\" which\nis thrown when the newly computed nodeid does not match the one in\nthe patch (command.py:1632 in 0.9.5)). Matt Mackall, any suggestions\non how to cleanly get around this/get the old node-id numbers instead?\n\n- Robert Bradshaw\n```\n\nBut there are issues.  See the complete thread here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/79da4852b8e20851/c4b8e87260f08f96?#c4b8e87260f08f96\n\nIssue created by migration from https://trac.sagemath.org/ticket/3052\n\n",
+    "body": "Assignee: mabshoff\n\nRobert Bradshaw has mostly solved this:\n\n```\nI've looked into this some more and it looks like we can completely\nreconstruct a repository from the export of all its keywords. The\ntrick is to use the --exact keyword when importing. This forces it to\napply the given patch to the correct parent (sometimes creating a new\nhead) and will also correctly import merge patches (removing heads).\nSome scripts to do this are up at\n\nhttp://sage.math.washington.edu/home/robertwb/hg/\n\nI've successfully exported and re-created simple repositories (with\nbranching) with these scripts, and it works great and preserves all\nthe history. The only issue is that I can't seem to get it to work\nwith any repositories older than a certain date. I think the issue is\nthat mercurial changed the way nodeid's are calculated (and I keep\ngetting an error \"abort: patch is damaged or loses information\" which\nis thrown when the newly computed nodeid does not match the one in\nthe patch (command.py:1632 in 0.9.5)). Matt Mackall, any suggestions\non how to cleanly get around this/get the old node-id numbers instead?\n\n- Robert Bradshaw\n```\n\nBut there are issues.  See the complete thread here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/79da4852b8e20851/c4b8e87260f08f96?#c4b8e87260f08f96\n\n---\n\nApply [attachment:trac_3052-makefile.patch] or [attachment:trac_3052-makefile-rebased.patch] to the **Sage root** repository (in `$SAGE_ROOT/`).\n\nApply [attachment:trac_3052-textify.patch] to the **base repository** (in `$SAGE_ROOT/spkg/base/`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3052\n\n",
+    "closed_at": "2011-09-27T17:40:17Z",
     "created_at": "2008-04-29T05:18:58Z",
     "labels": [
         "component: distribution",
@@ -46,6 +47,13 @@ on how to cleanly get around this/get the old node-id numbers instead?
 But there are issues.  See the complete thread here:
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/79da4852b8e20851/c4b8e87260f08f96?#c4b8e87260f08f96
+
+---
+
+Apply [attachment:trac_3052-makefile.patch] or [attachment:trac_3052-makefile-rebased.patch] to the **Sage root** repository (in `$SAGE_ROOT/`).
+
+Apply [attachment:trac_3052-textify.patch] to the **base repository** (in `$SAGE_ROOT/spkg/base/`).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3052
 

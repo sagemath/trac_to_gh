@@ -4,6 +4,7 @@ archive/issues_000323.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nUbuntu Edgy uses dash to provide /bin/sh. However the/some SAGE build scripts seem to assume that /bin/sh is provided by bash which is not necessarily true. Consequently, make and upgrade fail on Ubuntu Edgy (6.10). This bug was reported to me by Ralf Weinmann and I cannot personally confirm this as I don't have access to a Ubuntu Edgy install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/323\n\n",
+    "closed_at": "2007-03-21T22:44:01Z",
     "created_at": "2007-03-16T10:01:22Z",
     "labels": [
         "component: packages: standard",

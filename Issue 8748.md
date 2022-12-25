@@ -4,6 +4,7 @@ archive/issues_008748.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis patch implements LP formulations of Linear Arboricity and Acyclic edge coloring\n\nNathann Thank you.I got it.\n\nThis ticket is the same as #8405. The latter got spam content and the spammer closed the ticket. It would be more trouble and result in confusion to reopen the ticket. So I have moved the ticket over to this one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8748\n\n",
+    "closed_at": "2010-06-29T16:44:16Z",
     "created_at": "2010-04-23T01:04:32Z",
     "labels": [
         "component: graph theory"

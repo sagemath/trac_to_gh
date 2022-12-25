@@ -1,32 +1,34 @@
-# Issue 9869: Clean up Cliquer's Makefile and spkg-install
+# Issue 9869: Clean up Cliquer's spkg-install
 
 archive/issues_009869.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nathanncohen mvngu\n\nThe `Makefile` and `spkg-install` for Cliquer could do with a lot of cleaning up. Some examples of the problems are:\n\n* There are flags set for the C++ and Fortran compilers, though the code is only C. \n* There's code to check for a mix of Sun and GNU compilers, when better tests now exists as `$SAGE_LOCAL/bin/testcc.sh`\n* Lots of unnecessary environment variables are set. \n* Many, many other problems. \n\n**None of these issues are currently causing any problems, but should be resolved at some point**\n\nIssue created by migration from https://trac.sagemath.org/ticket/9870\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @nathanncohen mvngu\n\nThe `spkg-install` file for Cliquer could do with a lot of cleaning up. Some examples of the problems are:\n\n* There are flags set for the C++ and Fortran compilers, though the code is only C. \n* There's code to check for a mix of Sun and GNU compilers, which is pointless since there is only 1 compiler used.\n* Lots of unnecessary environment variables are set.\n* Use `make` instead of `$MAKE`.\n* Runs tests in `spkg-install` instead of `spkg-check`.\n\n**None of these issues are currently causing any problems, but should be resolved at some point**\n\nIssue created by migration from https://trac.sagemath.org/ticket/9870\n\n",
+    "closed_at": "2014-02-22T06:45:28Z",
     "created_at": "2010-09-07T21:20:38Z",
     "labels": [
-        "component: build",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "Clean up Cliquer's Makefile and spkg-install",
+    "title": "Clean up Cliquer's spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9869",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: @nexttime
 
 CC:  @nathanncohen mvngu
 
-The `Makefile` and `spkg-install` for Cliquer could do with a lot of cleaning up. Some examples of the problems are:
+The `spkg-install` file for Cliquer could do with a lot of cleaning up. Some examples of the problems are:
 
 * There are flags set for the C++ and Fortran compilers, though the code is only C. 
-* There's code to check for a mix of Sun and GNU compilers, when better tests now exists as `$SAGE_LOCAL/bin/testcc.sh`
-* Lots of unnecessary environment variables are set. 
-* Many, many other problems. 
+* There's code to check for a mix of Sun and GNU compilers, which is pointless since there is only 1 compiler used.
+* Lots of unnecessary environment variables are set.
+* Use `make` instead of `$MAKE`.
+* Runs tests in `spkg-install` instead of `spkg-check`.
 
 **None of these issues are currently causing any problems, but should be resolved at some point**
 

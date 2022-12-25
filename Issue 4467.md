@@ -1,16 +1,17 @@
-# Issue 4467: clean up or delete the (unused?) hanke extension
+# Issue 4467: [with patch, positive review] removed unused hanke library code
 
 archive/issues_004467.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nsetup.py contains\n\n```\nhanke = Extension(name = \"sage.libs.hanke.hanke\",\n              sources = [\"sage/libs/hanke/hanke.pyx\",\n                         \"sage/libs/hanke/wrap.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Matrix_mpz.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/CountLocal2.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/CountLocal.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Constants.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Density_Front.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Density_Congruence.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Normal.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Invariants.cc\",\n                         \"sage/libs/hanke/Utilities/string_utils.cc\",\n                         \"sage/libs/hanke/GMP_class_extras/mpz_class_extras.cc\",\n                         \"sage/libs/hanke/GMP_class_extras/vectors.cc\" ],\n                   libraries = [\"gmp\", \"gmpxx\", \"stdc++\"])\n```\n\nIt looks like dead code to me, so it should be deleted IMHO. In case John wants to use it for something he should be given the chance to rescue it.\n\nCheers,\n\nMcihael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4467\n\n",
+    "closed_at": "2008-11-10T09:06:47Z",
     "created_at": "2008-11-08T05:51:58Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "clean up or delete the (unused?) hanke extension",
+    "title": "[with patch, positive review] removed unused hanke library code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4467",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

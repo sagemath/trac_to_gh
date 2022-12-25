@@ -4,6 +4,7 @@ archive/issues_005131.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf A is a free module and r a ring element then r*A and A*r used to work fine. But somebody broke them.\n\nIn the good ol days:\n\n```\nwstein@sage:/disk/scratch/mabshoff-sage-releases/sage-0.10.0$ ./sage\n[...]\nsage: A = ZZ^3\nsage: A\n _5 = Ambient free module of rank 3 over the principal ideal domain Integer Ring\nsage: 2*A\n _6 = \nFree module of degree 3 and rank 3 over Integer Ring\nEchelon basis matrix:\n[2 0 0]\n[0 2 0]\n[0 0 2]\n```\n\nNow:\n\n```\nsage: A = ZZ^3\nsage: 2*A\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.modules.free_module.FreeModule_ambient_pid'>'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5131\n\n",
+    "closed_at": "2014-07-21T17:38:08Z",
     "created_at": "2009-01-29T23:05:17Z",
     "labels": [
         "component: linear algebra",

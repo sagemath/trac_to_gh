@@ -1,22 +1,23 @@
-# Issue 2839: bug in conversion from symmetrica's longint
+# Issue 2839: [with patch, positive review] bug in conversion from symmetrica's longint
 
 archive/issues_002839.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  sage-combinat\n\nThis was reported here: http://groups.google.com/group/sage-devel/tree/browse_frm/thread/718d1d2853988d13/beece4dabd2d84c8?rnum=1&_done=%2Fgroup%2Fsage-devel%2Fbrowse_frm%2Fthread%2F718d1d2853988d13%3F#doc_909abc517bb7eeb6\n\nIssue created by migration from https://trac.sagemath.org/ticket/2839\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis was reported here: http://groups.google.com/group/sage-devel/tree/browse_frm/thread/718d1d2853988d13/beece4dabd2d84c8?rnum=1&_done=%2Fgroup%2Fsage-devel%2Fbrowse_frm%2Fthread%2F718d1d2853988d13%3F#doc_909abc517bb7eeb6\n\nIssue created by migration from https://trac.sagemath.org/ticket/2839\n\n",
+    "closed_at": "2008-04-07T14:22:58Z",
     "created_at": "2008-04-07T07:15:33Z",
     "labels": [
-        "component: cygwin",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "bug in conversion from symmetrica's longint",
+    "title": "[with patch, positive review] bug in conversion from symmetrica's longint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2839",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

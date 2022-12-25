@@ -1,22 +1,24 @@
-# Issue 1525: Bipartite graphs
+# Issue 1525: [with patch and spkg, with positive review] NetworkX upgraded spkg, Bipartite graphs
 
 archive/issues_001525.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is a bug in the NetworkX function is_bipartite, which sometimes gives False positives. Due to this, a few examples in graph_generators.py give possibly bad output. I have labeled them with # random, and the following URL:\n\nhttps://networkx.lanl.gov/ticket/132\n\nOnce this bug is fixed, and NX updated in Sage, someone needs to go fix those docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1525\n\n",
+    "body": "Assignee: @rlmill\n\nThere is a bug in the NetworkX function is_bipartite, which sometimes gives False positives. Due to this, a few examples in graph_generators.py give possibly bad output. I have labeled them with # random, and the following URL:\n\nhttps://networkx.lanl.gov/ticket/132\n\nOnce this bug is fixed, and NX updated in Sage, someone needs to go fix those docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1525\n\n",
+    "closed_at": "2008-01-19T19:53:10Z",
     "created_at": "2007-12-15T20:28:49Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: graph theory",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Bipartite graphs",
+    "title": "[with patch and spkg, with positive review] NetworkX upgraded spkg, Bipartite graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1525",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @williamstein
+Assignee: @rlmill
 
 There is a bug in the NetworkX function is_bipartite, which sometimes gives False positives. Due to this, a few examples in graph_generators.py give possibly bad output. I have labeled them with # random, and the following URL:
 

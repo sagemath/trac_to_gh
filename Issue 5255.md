@@ -1,16 +1,17 @@
-# Issue 5255: [with patch, needs review] Deprecating the use of iterator in CombinatorialClass
+# Issue 5255: [with patch, positive review] Deprecating the use of iterator in CombinatorialClass
 
 archive/issues_005255.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: __iter__, iterator\n\nRight now, when one want's to iterate along a combinatorial class C, there is at least three solution:\n\n```\n[ x for x in C.iterator() ]\n[ x for x in C.__iter__() ]\n[ x for x in C ]\n```\nThere is no semantic differences beetween these three and there should not be any mesurable speedup for any. The latter solution is sintactically better and perfectly python/Sage idiomatic. So the goal of this patch is to mark the use of `C.iterator()` as deprecated *ASAP* (there are already 96 definition and something close to 400 uses in sage-combinat). \n\nA subsequent series of patches should apply this rule trough all combinatorial classes. Right now to avoid breaking doctests the raising of the deprecation warning is commented out. I'll uncomment it after the series of patches. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5255\n\n",
+    "closed_at": "2009-02-15T08:04:53Z",
     "created_at": "2009-02-13T16:16:17Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Deprecating the use of iterator in CombinatorialClass",
+    "title": "[with patch, positive review] Deprecating the use of iterator in CombinatorialClass",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5255",
     "user": "https://github.com/hivert"

@@ -1,16 +1,17 @@
-# Issue 4600: followup issue on sage -only_optional
+# Issue 4600: [with patch; positive review] followup issue on sage -only_optional
 
 archive/issues_004600.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n16:47 < wstein> mabshoff -- there is definitely an \"issue\" with only-optional.\n16:48 < mabshoff> ok\n16:48 < mabshoff> What is it?\n16:48 < wstein> e.g., if you do\n16:48 < wstein> sage: x = 5\n16:48 < wstein> sage: y = x + 2 # optional - gap\n16:48 < wstein> sage: y   # optional -gap\n16:48 < wstein> 7\n16:49 < wstein> Then if you don't include the gap tag it will actually doctest:\n16:49 < wstein> sage: x = 5\n16:49 < wstein> 7\n16:49 < mabshoff> Yes, that is why it should run the block\n16:49 < wstein> which will fail.\n16:49 < mabshoff> ok\n16:49 < wstein> The problem is that it is including output when it shouldn't.\n16:49 < mabshoff> true\n16:49 < wstein> i'll make another ticket.\n16:49 < wstein> I have to fix this to manage working on the magma interface.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4600\n\n",
+    "closed_at": "2008-11-24T22:43:25Z",
     "created_at": "2008-11-24T00:52:26Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "followup issue on sage -only_optional",
+    "title": "[with patch; positive review] followup issue on sage -only_optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4600",
     "user": "https://github.com/williamstein"

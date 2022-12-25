@@ -4,6 +4,7 @@ archive/issues_007077.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nwith 4.1.1:\n\n```\nsage: x,y,z=polygens(QQ,'x,y,z')\nsage: (x^2).variables()\n[x]\nsage: x=polygen(QQ)\nsage: (x^2).variables()\n(x,)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7077\n\n",
+    "closed_at": "2009-10-21T04:21:37Z",
     "created_at": "2009-09-29T19:51:09Z",
     "labels": [
         "component: algebra",

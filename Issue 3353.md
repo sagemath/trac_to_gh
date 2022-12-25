@@ -1,16 +1,17 @@
-# Issue 3353: bug in MatrixGroup iterator
+# Issue 3353: [with patch; positive review] MatrixGroup iterator for GL(2,p) very slow (GAP pexpect overhead)
 
 archive/issues_003353.json:
 ```json
 {
     "body": "Assignee: joyner\n\n\nHere's a problem with the iterator for GL(2,p):\n\n```\nsage: p = 5\nsage: G = GL(2,p)\nsage: z = iter(G)\nsage: z\n<iterator object at 0x3c737d0>\nsage: z.next()\n[0 1]\n[1 0]\nsage: z.next()\n[0 1]\n[1 1]\n```\nIt takes quite a bit of time to do each .next().\n\nThis is a serious issue for someone trying to compute orbits of matrix group actions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3353\n\n",
+    "closed_at": "2008-06-04T20:36:19Z",
     "created_at": "2008-06-03T01:49:52Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "bug in MatrixGroup iterator",
+    "title": "[with patch; positive review] MatrixGroup iterator for GL(2,p) very slow (GAP pexpect overhead)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3353",
     "user": "https://github.com/wdjoyner"

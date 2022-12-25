@@ -1,22 +1,23 @@
-# Issue 791: ugly absprec parameter in Polynomial constructor
+# Issue 791: [with patch, positive review] ugly absprec parameter in Polynomial constructor
 
 archive/issues_000791.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI'm not happy with the profusion of code to deal with the absprec parameter in Polynomial-related code (for example, search for the string \"absprec\" in sage/rings/polynomial/polynomial_element.pyx). Something feels wrong with this design; the code keeps splitting into branches to deal with \"absprec\" or \"no absprec\" cases. I believe the \"absprec\" parameter has something to do with polynomials over p-adics. There has to be a cleaner way to deal with this issue. Please add comments below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/791\n\n",
+    "body": "Assignee: somebody\n\nI'm not happy with the profusion of code to deal with the absprec parameter in Polynomial-related code (for example, search for the string \"absprec\" in sage/rings/polynomial/polynomial_element.pyx). Something feels wrong with this design; the code keeps splitting into branches to deal with \"absprec\" or \"no absprec\" cases. I believe the \"absprec\" parameter has something to do with polynomials over p-adics. There has to be a cleaner way to deal with this issue. Please add comments below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/791\n\n",
+    "closed_at": "2009-01-28T12:59:11Z",
     "created_at": "2007-10-02T18:38:47Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "ugly absprec parameter in Polynomial constructor",
+    "title": "[with patch, positive review] ugly absprec parameter in Polynomial constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/791",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 I'm not happy with the profusion of code to deal with the absprec parameter in Polynomial-related code (for example, search for the string "absprec" in sage/rings/polynomial/polynomial_element.pyx). Something feels wrong with this design; the code keeps splitting into branches to deal with "absprec" or "no absprec" cases. I believe the "absprec" parameter has something to do with polynomials over p-adics. There has to be a cleaner way to deal with this issue. Please add comments below.
 

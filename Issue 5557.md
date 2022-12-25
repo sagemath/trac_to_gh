@@ -1,16 +1,17 @@
-# Issue 5557: implement ridiculously fast 4x4 determinant
+# Issue 5557: [with patch, positive review] implement ridiculously fast 4x4 determinant
 
 archive/issues_005557.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n#5520 calls M.det() for M a 4x4 matrix a huge number of times.  So, let's optimize the heck out of it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5557\n\n",
+    "closed_at": "2009-05-11T13:35:09Z",
     "created_at": "2009-03-18T11:48:08Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "implement ridiculously fast 4x4 determinant",
+    "title": "[with patch, positive review] implement ridiculously fast 4x4 determinant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5557",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

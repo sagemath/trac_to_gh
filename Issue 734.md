@@ -1,22 +1,23 @@
-# Issue 734: combinatorics problems on fedora core 7 with sage-2.8.5
+# Issue 734: [with patch] combinatorics problems on fedora core 7 with sage-2.8.5
 
 archive/issues_000734.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n```\n> >\n> > NOTE: Since this is such a major release, there will likely be problems\n> > and a 2.8.5.1 release shortly to fix them.  Please report!\n> >\n> \n> Builds on Fedora 7,\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>          sage -t  devel/sage-main/sage/combinat/skew_tableau.py\n>          sage -t  devel/sage-main/sage/combinat/ribbon.py\n> Total time for all tests: 1838.3 seconds\n> [jaap@paix sage-2.8.5]$\n\nThis is from mike Hansen's new combinatorics code, I think.\nI *am* able to replicate this on my Fedora Core machine,\nand on none of my other 10 or so machines.  Mike, any\ncomments -- I can give you an account on the machine if\nnecessary.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/734\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\n> >\n> > NOTE: Since this is such a major release, there will likely be problems\n> > and a 2.8.5.1 release shortly to fix them.  Please report!\n> >\n> \n> Builds on Fedora 7,\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>          sage -t  devel/sage-main/sage/combinat/skew_tableau.py\n>          sage -t  devel/sage-main/sage/combinat/ribbon.py\n> Total time for all tests: 1838.3 seconds\n> [jaap@paix sage-2.8.5]$\n\nThis is from mike Hansen's new combinatorics code, I think.\nI *am* able to replicate this on my Fedora Core machine,\nand on none of my other 10 or so machines.  Mike, any\ncomments -- I can give you an account on the machine if\nnecessary.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/734\n\n",
+    "closed_at": "2007-09-23T21:32:28Z",
     "created_at": "2007-09-21T21:09:48Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
-    "title": "combinatorics problems on fedora core 7 with sage-2.8.5",
+    "title": "[with patch] combinatorics problems on fedora core 7 with sage-2.8.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/734",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

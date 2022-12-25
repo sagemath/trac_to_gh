@@ -4,6 +4,7 @@ archive/issues_004450.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein acleone @qed777\n\nIn the notebook, hold down the down arrow in the last cell.  It doesn't just stop, but wraps around. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4450\n\n",
+    "closed_at": "2010-01-25T00:53:26Z",
     "created_at": "2008-11-05T23:16:38Z",
     "labels": [
         "component: notebook",

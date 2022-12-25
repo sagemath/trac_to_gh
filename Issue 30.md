@@ -4,6 +4,7 @@ archive/issues_000030.json:
 ```json
 {
     "body": "Assignee: somebody\n\nthere is currently no easy way for people to implement \n    vectors with left multiplication.  In fact, left multiplication\n    doesn't even work right now. \n\nIssue created by migration from https://trac.sagemath.org/ticket/30\n\n",
+    "closed_at": "2007-08-30T00:00:09Z",
     "created_at": "2006-09-12T23:26:40Z",
     "labels": [
         "component: basic arithmetic",

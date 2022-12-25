@@ -1,9 +1,10 @@
-# Issue 2642: doctest failure in polynomial_modn_dense_ntl.pyx: .small_roots()
+# Issue 2642: [with patch, positive review] doctest failure in polynomial_modn_dense_ntl.pyx: .small_roots()
 
 archive/issues_002642.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe doctest for .small_roots() randomly fails in 2.11.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2642\n\n",
+    "closed_at": "2008-03-28T07:43:23Z",
     "created_at": "2008-03-22T01:44:36Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_002642.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "doctest failure in polynomial_modn_dense_ntl.pyx: .small_roots()",
+    "title": "[with patch, positive review] doctest failure in polynomial_modn_dense_ntl.pyx: .small_roots()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2642",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

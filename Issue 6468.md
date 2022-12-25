@@ -1,22 +1,23 @@
-# Issue 6468: FiniteField_prime_modn.__call__ should raise an error, rather than return an error
+# Issue 6468: [with patch, positive review] FiniteField_prime_modn.__call__ should raise an error, rather than return an error
 
 archive/issues_006468.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: Finite field, call\n\nThe `__call__` method of `FiniteField_prime_modn` reads like this:\n\n```\n    def __call__(self, x):\n        try:\n            return integer_mod.IntegerMod(self, x)\n        except (NotImplementedError, PariError):\n            return TypeError, \"error coercing to finite field\"\n        except TypeError:\n            if sage.interfaces.all.is_GapElement(x):\n                from sage.interfaces.gap import gfq_gap_to_sage\n                try:\n                    return gfq_gap_to_sage(x, self)\n                except (ValueError, IndexError, TypeError), msg:\n                    raise TypeError, \"%s\\nerror coercing to finite field\"%msg\n            else:\n                raise\n```\n\nSo, in the fourth line of the function body, an error is not raised but returned.\n\nActually I met this when calling `GF(2)` with one of my extension types. Unfortunately I did not find anything in Sage that would trigger it as well.\n\nAnyway, I think it should be obvious that \n\n```\n            return TypeError, \"error coercing to finite field\"\n```\nshould be changed into\n\n```\n            raise TypeError, \"error coercing to finite field\"\n```\n\nThis is what my patch does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6468\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: Finite field, call\n\nThe `__call__` method of `FiniteField_prime_modn` reads like this:\n\n```\n    def __call__(self, x):\n        try:\n            return integer_mod.IntegerMod(self, x)\n        except (NotImplementedError, PariError):\n            return TypeError, \"error coercing to finite field\"\n        except TypeError:\n            if sage.interfaces.all.is_GapElement(x):\n                from sage.interfaces.gap import gfq_gap_to_sage\n                try:\n                    return gfq_gap_to_sage(x, self)\n                except (ValueError, IndexError, TypeError), msg:\n                    raise TypeError, \"%s\\nerror coercing to finite field\"%msg\n            else:\n                raise\n```\n\nSo, in the fourth line of the function body, an error is not raised but returned.\n\nActually I met this when calling `GF(2)` with one of my extension types. Unfortunately I did not find anything in Sage that would trigger it as well.\n\nAnyway, I think it should be obvious that \n\n```\n            return TypeError, \"error coercing to finite field\"\n```\nshould be changed into\n\n```\n            raise TypeError, \"error coercing to finite field\"\n```\n\nThis is what my patch does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6468\n\n",
+    "closed_at": "2009-07-17T08:09:52Z",
     "created_at": "2009-07-06T13:10:08Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "FiniteField_prime_modn.__call__ should raise an error, rather than return an error",
+    "title": "[with patch, positive review] FiniteField_prime_modn.__call__ should raise an error, rather than return an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6468",
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: somebody
+Assignee: @simon-king-jena
 
 Keywords: Finite field, call
 

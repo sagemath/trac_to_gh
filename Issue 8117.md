@@ -3,7 +3,8 @@
 archive/issues_008117.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nIf CFLAGS not contains -m64 zodb3-3.7.0.2 fails to build on Open Solaris x64. This works only on OSX 64 bit.\n\nA patch is coming up.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8117\n\n",
+    "body": "Assignee: drkirkby\n\nIf CFLAGS not contains -m64 zodb3-3.7.0.2 fails to build on Open Solaris x64. This works only on OSX 64 bit.\n\nA patch is coming up.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8117\n\n",
+    "closed_at": "2010-02-11T15:18:13Z",
     "created_at": "2010-01-29T13:36:51Z",
     "labels": [
         "component: porting",
@@ -22,7 +23,12 @@ If CFLAGS not contains -m64 zodb3-3.7.0.2 fails to build on Open Solaris x64. Th
 
 A patch is coming up.
 
+The spkg is here:
+[http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg)
+
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8117
 

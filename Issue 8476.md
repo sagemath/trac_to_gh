@@ -4,6 +4,7 @@ archive/issues_008476.json:
 ```json
 {
     "body": "Assignee: mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8476\n\n",
+    "closed_at": "2010-04-15T23:53:32Z",
     "created_at": "2010-03-07T15:29:59Z",
     "labels": [
         "component: cryptography",

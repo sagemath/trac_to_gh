@@ -1,21 +1,22 @@
-# Issue 2743: make symbolic equalities and inequalities callable
+# Issue 2743: [with patch, positive review] make symbolic equalities and inequalities callable
 
 archive/issues_002743.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt would be nice if the following worked:\n\n```\nsage: f = x>3\nsage: f(2)\nFalse\nsage: f(4)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2743\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be nice if the following worked:\n\n```\nsage: f = x>3\nsage: f(2)\nFalse\nsage: f(4)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2743\n\n",
+    "closed_at": "2008-04-06T06:37:33Z",
     "created_at": "2008-03-31T20:36:25Z",
     "labels": [
-        "component: cygwin"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "make symbolic equalities and inequalities callable",
+    "title": "[with patch, positive review] make symbolic equalities and inequalities callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2743",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 It would be nice if the following worked:
 

@@ -1,16 +1,17 @@
-# Issue 1577: .coefficients() and .monomials() differ in order in multivariate polynomial rings
+# Issue 1577: [with patch, with positive review] .coefficients() and .monomials() differ in order in multivariate polynomial rings
 
 archive/issues_001577.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  jbmohler\n\nKeywords: multi polynomial rings coefficients monomials\n\nA small annoyance -- the ordering on the lists below is different:\n\n```\nsage: R.<fx,fy,gx,gy> = ZZ[]\nsage: F = ((fx*gy - fy*gx)^3)\nsage: F\n-1*fy^3*gx^3 + 3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3\nsage: F.monomials()\n[fx^2*fy*gx*gy^2, fy^3*gx^3, fx*fy^2*gx^2*gy, fx^3*gy^3]\nsage: F.coefficients()\n[-3, -1, 3, 1]\n```\n\n`F.coefficients?` says\n\"The order the coefficients appear in depends on the ordering used on self's parent.\"\n`F.monomials?` says\n\"Returns list of all monomials which occure in this multivariate polynomial.\"\n\nI think the latter should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1577\n\n",
+    "closed_at": "2008-01-21T05:47:04Z",
     "created_at": "2007-12-21T01:34:55Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": ".coefficients() and .monomials() differ in order in multivariate polynomial rings",
+    "title": "[with patch, with positive review] .coefficients() and .monomials() differ in order in multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1577",
     "user": "https://github.com/ncalexan"

@@ -1,9 +1,10 @@
-# Issue 3581: The new pbuild pyhon files are not copied on sdist
+# Issue 3581: [with patch; postive review] The new pbuild pyhon files are not copied on sdist
 
 archive/issues_003581.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.alpha2/spkg/standard/sage-3.0.4.alpha2$ hg status\n! build.py\n! clib.py\n! sagebuild.py\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3581\n\n",
+    "closed_at": "2008-07-07T22:33:13Z",
     "created_at": "2008-07-07T06:33:59Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003581.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "The new pbuild pyhon files are not copied on sdist",
+    "title": "[with patch; postive review] The new pbuild pyhon files are not copied on sdist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3581",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

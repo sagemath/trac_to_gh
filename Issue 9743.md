@@ -4,6 +4,7 @@ archive/issues_009743.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nPressing control-enter should split a notebook cell at the cursor.  This does not happen if you are in the last cell of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9743\n\n",
+    "closed_at": "2020-08-19T12:33:53Z",
     "created_at": "2010-08-14T09:04:58Z",
     "labels": [
         "component: notebook",

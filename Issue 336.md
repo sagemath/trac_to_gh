@@ -1,16 +1,17 @@
-# Issue 336: Create an option to clear all cell output
+# Issue 336: [with patch; positive review] Create an option to clear all cell output
 
 archive/issues_000336.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI am homeschooled and doing programming in the notebook for credit. I would like to clear all of the output on my worksheets so I can print the code for the worksheet without the computer generated output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/336\n\n",
+    "closed_at": "2008-05-11T07:25:47Z",
     "created_at": "2007-03-27T18:20:31Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Create an option to clear all cell output",
+    "title": "[with patch; positive review] Create an option to clear all cell output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/336",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

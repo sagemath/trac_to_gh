@@ -1,16 +1,17 @@
-# Issue 832: [with patch] MPolynomialIdeal.vector_space_dimension
+# Issue 832: [with patch] [tested by cwitty] MPolynomialIdeal.vector_space_dimension
 
 archive/issues_000832.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis method is added via the attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/832\n\n",
+    "closed_at": "2007-10-13T07:50:09Z",
     "created_at": "2007-10-05T10:13:37Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "[with patch] MPolynomialIdeal.vector_space_dimension",
+    "title": "[with patch] [tested by cwitty] MPolynomialIdeal.vector_space_dimension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/832",
     "user": "https://github.com/malb"

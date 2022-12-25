@@ -1,9 +1,10 @@
-# Issue 1593: m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported
+# Issue 1593: [with doc patch, with positive review] m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported
 
 archive/issues_001593.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1593\n\n",
+    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1593\n\n",
+    "closed_at": "2008-01-25T17:34:21Z",
     "created_at": "2007-12-24T17:36:31Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_001593.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported",
+    "title": "[with doc patch, with positive review] m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1593",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: @malb
 
 
 

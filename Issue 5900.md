@@ -1,15 +1,16 @@
-# Issue 5900: [with patches, needs review] Add support for system python != Sage python
+# Issue 5900: [with patches, positive review] Add support for system python != Sage python
 
 archive/issues_005900.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nOn Ubuntu jaunty, the system Python is 2.6 but Sage is built with Python 2.5.  This results in problems in a few places where Sage directly invokes a python program rather than running it via python.  For example, running \"trial\" rather than \"python $(which trial)\" would result in \"trial\" being started with Python 2.6.\n\nI've attached the set of patches that I applied in order to deal with this issue in Jaunty.  I believe they should be harmless for Sage, since it puts $SAGE_LOCAL at the start of PATH, ahead of any system copies of trial/twistd/etc. that might exist.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5900\n\n",
+    "closed_at": "2009-09-08T11:07:03Z",
     "created_at": "2009-04-26T05:43:42Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patches, needs review] Add support for system python != Sage python",
+    "title": "[with patches, positive review] Add support for system python != Sage python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5900",
     "user": "https://github.com/timabbott"

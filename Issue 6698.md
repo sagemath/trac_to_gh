@@ -1,16 +1,17 @@
-# Issue 6698: spell-check all modules under sage/games
+# Issue 6698: [with patch, positive review] spell-check all modules under sage/games
 
 archive/issues_006698.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6698\n\n",
+    "closed_at": "2009-08-12T05:24:56Z",
     "created_at": "2009-08-09T07:38:01Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/games",
+    "title": "[with patch, positive review] spell-check all modules under sage/games",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6698",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

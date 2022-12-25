@@ -1,27 +1,29 @@
-# Issue 3538: [with patch; not ready for review] create a sage <--> Ruby interface
+# Issue 3538: Create a Sage-Ruby interface
 
 archive/issues_003538.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate an interface between Sage and Ruby. \n\nJosh Kantor and I wrote the attached one in 5 minutes and it worked the first try. \n\nWe haven't added any doctests and haven't implemented completions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3538\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: Ruby\n\nCreate an interface between Sage and Ruby. \n\nJosh Kantor and I wrote the attached one in 5 minutes and it worked the first try. \n\nWe have not added any doctests and have not implemented completions.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3538\n\n",
     "created_at": "2008-06-30T14:20:06Z",
     "labels": [
-        "component: interfaces"
+        "component: interfaces: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",
-    "title": "[with patch; not ready for review] create a sage <--> Ruby interface",
+    "title": "Create a Sage-Ruby interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3538",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
+
+Keywords: Ruby
 
 Create an interface between Sage and Ruby. 
 
 Josh Kantor and I wrote the attached one in 5 minutes and it worked the first try. 
 
-We haven't added any doctests and haven't implemented completions.
+We have not added any doctests and have not implemented completions.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/3538
 

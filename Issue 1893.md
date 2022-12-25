@@ -1,16 +1,16 @@
-# Issue 1893: Added graphical plotting to discrete random variables.
+# Issue 1893: [with bundle, needs additional review] Added graphical plotting to discrete random variables.
 
 archive/issues_001893.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis example explains the functionality for the new function 'plot':\nsage: import urllib2\nsage: S = AlphabeticStrings()\nsage: ISARC = 'http://iml.univ-mrs.fr/~kohel/tch/ISARC/'\nsage: en = S.encoding(urllib2.urlopen(ISARC + 'blackcat.txt').read())\nsage: F_en = en.frequency_distribution()\nsage: F_en.plot()\nsage: fr = S.encoding(urllib2.urlopen(ISARC + 'chapitre.1.txt').read())\nsage: F_fr = fr.frequency_distribution()\nsage: F_fr.plot()\n\nUnfortunately, I did not include such an example in the function \nsince it hard-codes an external web address, and would otherwise \nrequire a reasonably sized sample text for a proper demonstration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1893\n\n",
+    "body": "Assignee: boothby\n\nThis example explains the functionality for the new function 'plot':\n\n```\nsage: import urllib2\nsage: S = AlphabeticStrings()\nsage: ISARC = 'http://iml.univ-mrs.fr/~kohel/tch/ISARC/'\nsage: en = S.encoding(urllib2.urlopen(ISARC + 'blackcat.txt').read())\nsage: F_en = en.frequency_distribution()\nsage: F_en.plot()\nsage: fr = S.encoding(urllib2.urlopen(ISARC + 'chapitre.1.txt').read())\nsage: F_fr = fr.frequency_distribution()\nsage: F_fr.plot()\n```\nUnfortunately, I did not include such an example in the function \nsince it hard-codes an external web address, and would otherwise \nrequire a reasonably sized sample text for a proper demonstration.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1893\n\n",
     "created_at": "2008-01-23T14:14:36Z",
     "labels": [
-        "component: notebook",
+        "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Added graphical plotting to discrete random variables.",
+    "title": "[with bundle, needs additional review] Added graphical plotting to discrete random variables.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1893",
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
@@ -19,6 +19,8 @@ archive/issues_001893.json:
 Assignee: boothby
 
 This example explains the functionality for the new function 'plot':
+
+```
 sage: import urllib2
 sage: S = AlphabeticStrings()
 sage: ISARC = 'http://iml.univ-mrs.fr/~kohel/tch/ISARC/'
@@ -28,10 +30,11 @@ sage: F_en.plot()
 sage: fr = S.encoding(urllib2.urlopen(ISARC + 'chapitre.1.txt').read())
 sage: F_fr = fr.frequency_distribution()
 sage: F_fr.plot()
-
+```
 Unfortunately, I did not include such an example in the function 
 since it hard-codes an external web address, and would otherwise 
 require a reasonably sized sample text for a proper demonstration.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1893
 

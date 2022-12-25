@@ -3,7 +3,8 @@
 archive/issues_009604.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis bug tracks the current status of the toric varieties code and the interdependence of new patches. The prerequisites are Sage 4.5.2.alpha0 (which should be equivalent to the 4.5.2 release).\n\n* #9470: Switch toric varieties to enhanced fans\n* #9326: Add cohomology of toric varieties\n* #9502: Basis parent bug in FreeModule\n* #9504: Add support for toric sublattices\n* #9296: Add lattice computations for convex polyhedral cones\n* #9337: Toric divisors\n\nWe expect the above to be ready for inclusion in Sage 5.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9604\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nKeywords: toric geometry\n\nThis bug tracks the current status of the toric varieties code and the interdependence of new patches.\n\nGroups separated by blank lines may be applied independently.\n\n* #11559: Speed up Posets and toric Chow group\n\n* #15153: Check embedding morphism when comparing two toric varieties\n\n* #15280: Extensions of PALP normal form, affine normal form and isomorphisms\n\n* #16012: Sublattice fan isomorphism bug\n\n* #16334: Toric divisors from fans in sublattices\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9604\n\n",
+    "closed_at": "2019-02-26T13:58:00Z",
     "created_at": "2010-07-26T17:21:42Z",
     "labels": [
         "component: algebraic geometry"
@@ -19,16 +20,22 @@ Assignee: @aghitza
 
 CC:  @novoselt
 
-This bug tracks the current status of the toric varieties code and the interdependence of new patches. The prerequisites are Sage 4.5.2.alpha0 (which should be equivalent to the 4.5.2 release).
+Keywords: toric geometry
 
-* #9470: Switch toric varieties to enhanced fans
-* #9326: Add cohomology of toric varieties
-* #9502: Basis parent bug in FreeModule
-* #9504: Add support for toric sublattices
-* #9296: Add lattice computations for convex polyhedral cones
-* #9337: Toric divisors
+This bug tracks the current status of the toric varieties code and the interdependence of new patches.
 
-We expect the above to be ready for inclusion in Sage 5.0.
+Groups separated by blank lines may be applied independently.
+
+* #11559: Speed up Posets and toric Chow group
+
+* #15153: Check embedding morphism when comparing two toric varieties
+
+* #15280: Extensions of PALP normal form, affine normal form and isomorphisms
+
+* #16012: Sublattice fan isomorphism bug
+
+* #16334: Toric divisors from fans in sublattices
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9604
 

@@ -3,11 +3,11 @@
 archive/issues_002330.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKevin Buzzard and I intend to do this ASAP based on algorithms he designed in 2002.\n\nIf you see this and are interested in helping, send me an email (wstein`@`gmail.com).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2330\n\n",
+    "body": "Assignee: @craigcitro\n\nKevin Buzzard and I intend to do this ASAP based on algorithms he designed in 2002.\n\nIf you see this and are interested in helping, send me an email (wstein`@`gmail.com).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2330\n\n",
+    "closed_at": "2017-12-11T01:04:08Z",
     "created_at": "2008-02-27T11:02:54Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "modforms -- implement computation of weight 1 forms in Sage",
@@ -16,7 +16,7 @@ archive/issues_002330.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 Kevin Buzzard and I intend to do this ASAP based on algorithms he designed in 2002.
 

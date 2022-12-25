@@ -4,9 +4,10 @@ archive/issues_000448.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nspkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible \"make check\" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/448\n\n",
+    "closed_at": "2007-08-21T13:11:42Z",
     "created_at": "2007-08-19T05:34:57Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "add spkg-check to all packages",

@@ -1,16 +1,17 @@
-# Issue 1972: programming guide -- fix a confusing typo
+# Issue 1972: [with patch; with positive review] programming guide -- fix a confusing typo
 
 archive/issues_001972.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1972\n\n",
+    "closed_at": "2008-01-29T13:17:17Z",
     "created_at": "2008-01-29T12:58:36Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "programming guide -- fix a confusing typo",
+    "title": "[with patch; with positive review] programming guide -- fix a confusing typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1972",
     "user": "https://github.com/williamstein"

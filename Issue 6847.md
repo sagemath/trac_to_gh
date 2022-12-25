@@ -4,6 +4,7 @@ archive/issues_006847.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @eviatarbach\n\nCurrently, images included in the Sage documentation must be generated separately from the docbuild process itself (cf. #6685).  For the sake of consistency, convenience, testing, etc., we should have an option to automate this process, particularly for the reference manual.\n\nPlease see the discussion at #6685.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6847\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2009-08-30T13:00:09Z",
     "labels": [
         "component: documentation",

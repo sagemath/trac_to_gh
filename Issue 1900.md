@@ -1,17 +1,17 @@
-# Issue 1900: [with patch, needs review] Clean up adjacency matrix functions for graphs
+# Issue 1900: [with patch, positive review] Clean up adjacency matrix functions for graphs
 
 archive/issues_001900.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThere were several options available to graphs but not digraphs, so I factored the code out to generic graphs, and made sure all functionality was available there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1900\n\n",
+    "closed_at": "2008-01-24T21:17:39Z",
     "created_at": "2008-01-24T00:25:27Z",
     "labels": [
         "component: graph theory",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] Clean up adjacency matrix functions for graphs",
+    "title": "[with patch, positive review] Clean up adjacency matrix functions for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1900",
     "user": "https://github.com/rlmill"

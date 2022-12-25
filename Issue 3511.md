@@ -1,16 +1,17 @@
-# Issue 3511: make laplacian_matrix a synonym for kirchoff_matrix
+# Issue 3511: [with patch, positive review] make laplacian_matrix a synonym for kirchoff_matrix
 
 archive/issues_003511.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nIn my education, this matrix was always referred to as the laplacian of the graph; I think the term may be more common.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3511\n\n",
+    "closed_at": "2008-06-26T23:04:21Z",
     "created_at": "2008-06-25T17:32:51Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "make laplacian_matrix a synonym for kirchoff_matrix",
+    "title": "[with patch, positive review] make laplacian_matrix a synonym for kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3511",
     "user": "https://github.com/jasongrout"

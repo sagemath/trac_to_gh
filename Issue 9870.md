@@ -1,9 +1,10 @@
-# Issue 9870: Update Cliquer to 1.21 and get the library buiilding properly on Solaris.
+# Issue 9870: Change Cliquer compiler flags on Solaris to build without text relocations.
 
 archive/issues_009870.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nathanncohen @qed777 @jhpalmieri\n\nAs documented at #9833, the Cliquer library is causing problems on 64-bit Solaris and 64-bit OpenSolaris. This needs **urgently** resolving, as it is the first problem hit when building a 64-bit version of Sage on Solaris or OpenSolaris. \n\nAs documented at #9521, the test suite for Cliquer is not run correctly. It should generally be run from `spkg-install`, but given it takes only a few seconds to run on even slow hardware, it makes sense to run the tests each time Sage is built. \n\nThe upstream source code has modifications too. Given the latest version is a bug-fix only release, it is wise to update this. (Rather confusingly, the version currently in Sage is 1.2, but the bug-fix release is 1.21. I believe the authors should have called it 1.2.1) See http://users.tkk.fi/pat/cliquer.html\n\n**There are a number of other issues with Cliquer's spkg-install and Makefile. These are the subject of ticket #9870 and will NOT be addressed here to save time, and allow the critical Solaris fix to be integrated as soon as possible.**\n\nThe changes which are made are:\n* Change the compiler options for Solaris from \n\n `-G -Bdynamic`\n\n to \n\n `-shared`\n\n as this avoid the fatal relocation error documented at #9833. \n* Update the source code to the latest version. \n* Run the test cases every time Sage is built, as they take only a few seconds to run. Since the exit code of `make test` is always zero, even if tests fail, it was decided to save the output of `make test` into a file, then check for the word \"ERROR\" in that file. If it exists, a test has failed. If not, all tests have passed. \n* Add correct compiler flags for AIX and HP-UX. These have not been checked, but should work. \n* Add an `spkg-check` file which prints a message that the self-tests are run each time Sage is built. \n* Copy the shared library to the filename `libcliquer.sl` on HP-UX, as that is the extension HP use for shared libraries. (The package currently always builds this as `libcliquer.so` on all platforms), despite that is wrong for several platforms. Most cases are already covered in `spkg-install`, but HP-UX was not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9871\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nathanncohen @qed777 @jhpalmieri\n\nAs documented at #9833, the Cliquer library is causing problems on 64-bit Solaris and 64-bit OpenSolaris. This needs **urgently** resolving, as it is the first problem hit when building a 64-bit version of Sage on Solaris or OpenSolaris. \n\nSince #9870 will clean up the page completely, the changes are primarily limited to those necessary to get this building on Solaris without text relocations. The only exception to this is the addition of the -ztext flag to the linker, which will make it easier to detect similar problems in future, as they will cause a build failure. \n\nThe package can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/cliquer-1.2.p7.spkg\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9871\n\n",
+    "closed_at": "2010-09-16T00:49:42Z",
     "created_at": "2010-09-07T22:05:09Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_009870.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Update Cliquer to 1.21 and get the library buiilding properly on Solaris.",
+    "title": "Change Cliquer compiler flags on Solaris to build without text relocations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9870",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -23,27 +24,14 @@ CC:  @nathanncohen @qed777 @jhpalmieri
 
 As documented at #9833, the Cliquer library is causing problems on 64-bit Solaris and 64-bit OpenSolaris. This needs **urgently** resolving, as it is the first problem hit when building a 64-bit version of Sage on Solaris or OpenSolaris. 
 
-As documented at #9521, the test suite for Cliquer is not run correctly. It should generally be run from `spkg-install`, but given it takes only a few seconds to run on even slow hardware, it makes sense to run the tests each time Sage is built. 
+Since #9870 will clean up the page completely, the changes are primarily limited to those necessary to get this building on Solaris without text relocations. The only exception to this is the addition of the -ztext flag to the linker, which will make it easier to detect similar problems in future, as they will cause a build failure. 
 
-The upstream source code has modifications too. Given the latest version is a bug-fix only release, it is wise to update this. (Rather confusingly, the version currently in Sage is 1.2, but the bug-fix release is 1.21. I believe the authors should have called it 1.2.1) See http://users.tkk.fi/pat/cliquer.html
+The package can be found at
 
-**There are a number of other issues with Cliquer's spkg-install and Makefile. These are the subject of ticket #9870 and will NOT be addressed here to save time, and allow the critical Solaris fix to be integrated as soon as possible.**
+http://boxen.math.washington.edu/home/kirkby/patches/cliquer-1.2.p7.spkg
 
-The changes which are made are:
-* Change the compiler options for Solaris from 
 
- `-G -Bdynamic`
 
- to 
-
- `-shared`
-
- as this avoid the fatal relocation error documented at #9833. 
-* Update the source code to the latest version. 
-* Run the test cases every time Sage is built, as they take only a few seconds to run. Since the exit code of `make test` is always zero, even if tests fail, it was decided to save the output of `make test` into a file, then check for the word "ERROR" in that file. If it exists, a test has failed. If not, all tests have passed. 
-* Add correct compiler flags for AIX and HP-UX. These have not been checked, but should work. 
-* Add an `spkg-check` file which prints a message that the self-tests are run each time Sage is built. 
-* Copy the shared library to the filename `libcliquer.sl` on HP-UX, as that is the extension HP use for shared libraries. (The package currently always builds this as `libcliquer.so` on all platforms), despite that is wrong for several platforms. Most cases are already covered in `spkg-install`, but HP-UX was not.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9871
 

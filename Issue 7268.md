@@ -1,15 +1,16 @@
-# Issue 7268: GLPK : named constraints and variables, export functions ...
+# Issue 7268: GLPK: named constraints and variables, export functions
 
 archive/issues_007268.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHello everybody !\n\nThis is an update of the GLPK package to match the changes in ``numerical.mip``. Here is the list of changes :\n\n* Names for the objective function, the whole problem, variables and constraints can be set through the newly exposed GLPK functions\n* A problem can be exported to MPS or LP files\n* GLPK now returns Exceptions when it fails ( it used to silently return the 0 solution ).\n* As solveGLPK, write_mps and write_lp all need the problem to be built as a GLPK structure, a new function  ``build_glp_prob`` does this job and is used by the three of them.\n\nComments have also been added when felt necessary. The code should be more efficient (and Cythonized) in this version ( this was the whole purpose of redefining the structure of ``numerical.mip`` )\n\nThe spkg is available on sagemath at : ~ncohen/glpk-4.38.p3.spkg\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7268\n\n",
+    "body": "Assignee: tbd\n\nHello everybody !\n\nThis is an update of the GLPK package to match the changes in ``numerical.mip``. Here is the list of changes :\n\n* Names for the objective function, the whole problem, variables and constraints can be set through the newly exposed GLPK functions\n* A problem can be exported to MPS or LP files\n* GLPK now returns Exceptions when it fails ( it used to silently return the 0 solution ).\n* As solveGLPK, write_mps and write_lp all need the problem to be built as a GLPK structure, a new function  ``build_glp_prob`` does this job and is used by the three of them.\n\nComments have also been added when felt necessary. The code should be more efficient (and Cythonized) in this version ( this was the whole purpose of redefining the structure of ``numerical.mip`` )\n\nThe spkg is available on sagemath at : ~ncohen/glpk-4.38.p4.spkg or at http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p4.spkg or http://sage.math.washington.edu/home/malb/spkgs/glpk-4.38.p4.spkg\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7268\n\n",
+    "closed_at": "2009-12-02T07:32:21Z",
     "created_at": "2009-10-23T15:26:10Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "GLPK : named constraints and variables, export functions ...",
+    "title": "GLPK: named constraints and variables, export functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7268",
     "user": "https://github.com/nathanncohen"
@@ -28,7 +29,7 @@ This is an update of the GLPK package to match the changes in ``numerical.mip``.
 
 Comments have also been added when felt necessary. The code should be more efficient (and Cythonized) in this version ( this was the whole purpose of redefining the structure of ``numerical.mip`` )
 
-The spkg is available on sagemath at : ~ncohen/glpk-4.38.p3.spkg
+The spkg is available on sagemath at : ~ncohen/glpk-4.38.p4.spkg or at http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p4.spkg or http://sage.math.washington.edu/home/malb/spkgs/glpk-4.38.p4.spkg
 
 Nathann
 

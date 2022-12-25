@@ -1,16 +1,17 @@
-# Issue 3462: modular symbols -- fix use_cache not being properly respected
+# Issue 3462: [with patch; with positive review] modular symbols -- fix use_cache not being properly respected
 
 archive/issues_003462.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3462\n\n",
+    "closed_at": "2008-06-23T11:06:05Z",
     "created_at": "2008-06-18T18:21:19Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "modular symbols -- fix use_cache not being properly respected",
+    "title": "[with patch; with positive review] modular symbols -- fix use_cache not being properly respected",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3462",
     "user": "https://github.com/williamstein"

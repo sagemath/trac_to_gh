@@ -1,21 +1,24 @@
-# Issue 3479: [with patch, needs review] update dsage portion of tut.tex
+# Issue 3479: [with patch, positive review] update dsage portion of tut.tex
 
 archive/issues_003479.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThis patch provides 2 more examples on how to use the distributed map() function in dsage as well as the `@`parallel decorator.\n\nTo get the tutorial to build correctly I needed to remove all the temporary files and run the 'build_pdf' script twice to generate the index. \n\nThis patch depends on #3467 and the `@`parallel decorator patches going in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3479\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: editor_mhansen\n\nThis patch provides 2 more examples on how to use the distributed map() function in dsage as well as the `@`parallel decorator.\n\nTo get the tutorial to build correctly I needed to remove all the temporary files and run the 'build_pdf' script twice to generate the index. \n\nThis patch depends on #3467 and the `@`parallel decorator patches going in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3479\n\n",
+    "closed_at": "2009-02-24T17:54:50Z",
     "created_at": "2008-06-19T22:29:22Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] update dsage portion of tut.tex",
+    "title": "[with patch, positive review] update dsage portion of tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3479",
     "user": "https://github.com/yqiang"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
+
+Keywords: editor_mhansen
 
 This patch provides 2 more examples on how to use the distributed map() function in dsage as well as the `@`parallel decorator.
 

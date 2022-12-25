@@ -1,16 +1,17 @@
-# Issue 5416: [with patch, needs review] miscellaneous documentation fixes
+# Issue 5416: [with patch, positive review] miscellaneous documentation fixes
 
 archive/issues_005416.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nAs I was reviewing sphinxification patches, I noticed a lot of pre-existing issues in the documentation.  Instead of trying to fix these issues as part of sphinxification, I made notes to take care of things later.\n\nThis patch covers many of those defects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5416\n\n",
+    "closed_at": "2009-03-04T22:30:04Z",
     "created_at": "2009-03-01T23:53:17Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] miscellaneous documentation fixes",
+    "title": "[with patch, positive review] miscellaneous documentation fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5416",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -4,6 +4,7 @@ archive/issues_007213.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nwhen doing an upgrade:\n\n```\nln: target `ecl' is not a directory\nFailed to create ecl library symbolic link ... exiting\n\nreal    1m55.950s\nuser    1m38.540s\nsys     0m12.430s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7213\n\n",
+    "closed_at": "2009-10-19T04:55:24Z",
     "created_at": "2009-10-14T20:28:16Z",
     "labels": [
         "component: build",

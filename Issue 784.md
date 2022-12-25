@@ -1,15 +1,16 @@
-# Issue 784: quotient spaces of vector spaces
+# Issue 784: [with patch] quotient spaces of vector spaces
 
 archive/issues_000784.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf V is a subspace of W then W.quotient(V) should give the quotient space U=W/V.\n\nLeft TODO:\n- overload \"/\" constructor ?\n- provide a section map U->W ?\n- install appropriate coercions ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/784\n\n",
+    "closed_at": "2007-10-02T13:46:02Z",
     "created_at": "2007-10-02T13:38:11Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "quotient spaces of vector spaces",
+    "title": "[with patch] quotient spaces of vector spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/784",
     "user": "https://github.com/nbruin"

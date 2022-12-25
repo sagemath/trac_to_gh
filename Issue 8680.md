@@ -4,9 +4,10 @@ archive/issues_008680.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nCC:  @dandrake mvngu\n\nThere are two patches: one removes tabs from all files except symbolic/expression.pyx -- see [#3852](http://trac.sagemath.org/sage_trac/ticket/3852#comment:20).  The second patches sage-doctest so that files with tabs in them will fail doctesting.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8680\n\n",
+    "closed_at": "2010-07-02T22:40:19Z",
     "created_at": "2010-04-13T04:09:49Z",
     "labels": [
-        "component: misc"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "untabify Sage again, and make it stick",

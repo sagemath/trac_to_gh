@@ -3,11 +3,12 @@
 archive/issues_009739.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  drkirkby @jhpalmieri @nexttime @robertwb @jdemeyer\n\nWhen we test\n\n`/path/to/foo.py`\n\n`sage-doctest` writes\n\n`SAGE_TESTDIR/.doctest_foo.py`\n\nruns the new file through `python`, and deletes it.  This can cause\ncollisions when we test in parallel multiple files with the same\nbasename, e.g., `__init__`, `all`, `misc`, `conf`, `constructor`, `morphism`, `index`, `tests`, `homset`, `element`, `twist`, `tutorial`, `sagetex`, `crystals`, `cartesian_product`, `template`, `ring`, etc.\n\nThere's a similar problem with testing non-library files, which `sage-doctest` first effectively copies to `SAGE_TESTDIR`.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/367bfc0d83c0e9b8#367bfc0d83c0e9b8) for background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9739\n\n",
+    "body": "Assignee: mvngu\n\nCC:  drkirkby @jhpalmieri @nexttime @robertwb @jdemeyer\n\nKeywords: doctest scripts race condition unique filenames ptestlong -tp\n\nWhen we test\n\n`/path/to/foo.py`,\n\n`sage-doctest` writes\n\n`SAGE_TESTDIR/.doctest_foo.py`,\n\nruns the new file through `python`, and deletes it.  This can cause collisions when we test in parallel multiple files with the same basename, e.g., `__init__`, `all`, `misc`, `conf`, `constructor`, `morphism`, `index`, `tests`, `homset`, `element`, `twist`, `tutorial`, `sagetex`, `crystals`, `cartesian_product`, `template`, `ring`, etc.\n\nThere's a similar problem with testing non-library files, which `sage-doctest` first effectively copies to `SAGE_TESTDIR`.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/367bfc0d83c0e9b8#367bfc0d83c0e9b8) for background.\n\nThis ticket may help with some of the doctesting problems discussed on the Sage mailing lists.  Related tickets: #9224, #9225, #9449.\n\n---\n\nThere's now a meta-ticket for all doctest-related issues / tickets, #11337.\n\n---\n\nI don't know much about this, so don't feel able to work on it. \n\nBut for those that do, perhaps a sub-optimal solution is a better temporary measure than a complete industrial strength bullet-proof solution. \n\nNormally I don't like \"quick fixes\" that don't do the job properly, but in this case it seems if something is not done, then the problem will remain open forever, as nothing has actually been done on it for 7 months. \n\nSometimes I feel that trac tickets get held up for unnecessary long periods due to a reviewer being over pedantic and wanting things outside the scope of the original ticket, which would be better put on another ticket. \n\n(Dave)\n\n---\n\nApply \n\n- [attachment:trac_9739.v3.patch], [attachment:trac_9739-extra.patch] to the scripts repository\n- [attachment:trac_9739-graphviz.patch] to the Sage library\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9739\n\n",
+    "closed_at": "2011-09-12T18:00:27Z",
     "created_at": "2010-08-13T01:27:24Z",
     "labels": [
-        "component: doctest",
-        "critical",
+        "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
@@ -21,21 +22,47 @@ Assignee: mvngu
 
 CC:  drkirkby @jhpalmieri @nexttime @robertwb @jdemeyer
 
+Keywords: doctest scripts race condition unique filenames ptestlong -tp
+
 When we test
 
-`/path/to/foo.py`
+`/path/to/foo.py`,
 
 `sage-doctest` writes
 
-`SAGE_TESTDIR/.doctest_foo.py`
+`SAGE_TESTDIR/.doctest_foo.py`,
 
-runs the new file through `python`, and deletes it.  This can cause
-collisions when we test in parallel multiple files with the same
-basename, e.g., `__init__`, `all`, `misc`, `conf`, `constructor`, `morphism`, `index`, `tests`, `homset`, `element`, `twist`, `tutorial`, `sagetex`, `crystals`, `cartesian_product`, `template`, `ring`, etc.
+runs the new file through `python`, and deletes it.  This can cause collisions when we test in parallel multiple files with the same basename, e.g., `__init__`, `all`, `misc`, `conf`, `constructor`, `morphism`, `index`, `tests`, `homset`, `element`, `twist`, `tutorial`, `sagetex`, `crystals`, `cartesian_product`, `template`, `ring`, etc.
 
 There's a similar problem with testing non-library files, which `sage-doctest` first effectively copies to `SAGE_TESTDIR`.
 
 See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/367bfc0d83c0e9b8#367bfc0d83c0e9b8) for background.
+
+This ticket may help with some of the doctesting problems discussed on the Sage mailing lists.  Related tickets: #9224, #9225, #9449.
+
+---
+
+There's now a meta-ticket for all doctest-related issues / tickets, #11337.
+
+---
+
+I don't know much about this, so don't feel able to work on it. 
+
+But for those that do, perhaps a sub-optimal solution is a better temporary measure than a complete industrial strength bullet-proof solution. 
+
+Normally I don't like "quick fixes" that don't do the job properly, but in this case it seems if something is not done, then the problem will remain open forever, as nothing has actually been done on it for 7 months. 
+
+Sometimes I feel that trac tickets get held up for unnecessary long periods due to a reviewer being over pedantic and wanting things outside the scope of the original ticket, which would be better put on another ticket. 
+
+(Dave)
+
+---
+
+Apply 
+
+- [attachment:trac_9739.v3.patch], [attachment:trac_9739-extra.patch] to the scripts repository
+- [attachment:trac_9739-graphviz.patch] to the Sage library
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9739
 

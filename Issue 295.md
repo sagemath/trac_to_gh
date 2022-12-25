@@ -3,7 +3,8 @@
 archive/issues_000295.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nA file with this content (w/o the \"===\"'s) shows the problem:\n\n```\ndef Foo(x)\n    x = 1\n```\n\nAfter load/attaching this file, typing \"??Foo\" prints only the 'def' line.\n\nIf the file looks like this (i.e., with an 'extra' blank line):\n\n```\ndef Foo(x)\n    x = 1\n\n```\n\nthen '??' works properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/295\n\n",
+    "body": "Assignee: @ncalexan\n\nA file with this content (w/o the \"===\"'s) shows the problem:\n\n```\ndef Foo(x)\n    x = 1\n```\n\nAfter load/attaching this file, typing \"??Foo\" prints only the 'def' line.\n\nIf the file looks like this (i.e., with an 'extra' blank line):\n\n```\ndef Foo(x)\n    x = 1\n\n```\n\nthen '??' works properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/295\n\n",
+    "closed_at": "2007-02-28T20:33:49Z",
     "created_at": "2007-02-25T18:49:28Z",
     "labels": [
         "component: algebraic geometry",
@@ -15,7 +16,7 @@ archive/issues_000295.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: @ncalexan
 
 A file with this content (w/o the "==="'s) shows the problem:
 

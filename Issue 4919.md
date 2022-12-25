@@ -1,15 +1,16 @@
-# Issue 4919: convert sage.misc.* docstrings to Sphinx
+# Issue 4919: [with patch, needs review] convert sage.misc.* docstrings to Sphinx (open issues at #5374)
 
 archive/issues_004919.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4919\n\n",
+    "body": "Assignee: tba\n\nI've posted a patch which addresses these issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4919\n\n",
+    "closed_at": "2009-02-24T18:17:09Z",
     "created_at": "2009-01-01T22:53:45Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.misc.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.misc.* docstrings to Sphinx (open issues at #5374)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4919",
     "user": "https://github.com/mwhansen"
@@ -17,7 +18,7 @@ archive/issues_004919.json:
 ```
 Assignee: tba
 
-
+I've posted a patch which addresses these issues.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4919
 

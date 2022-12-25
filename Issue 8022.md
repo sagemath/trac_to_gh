@@ -3,7 +3,8 @@
 archive/issues_008022.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nWhen building the reference manual, I get this warning (among others):\n\n```\n.../devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\nThe fix is easy: delete (by hand) the file `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst`.  (This file is not under revision control, so can't be removed by a patch.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8022\n\n",
+    "body": "Assignee: mvngu\n\nWhen building the reference manual, I get these warnings (among others):\n\n```\n.../devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n.../devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n```\nThe fix is easy: delete (by hand) the files `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst` and `SAGE_ROOT/devel/sage/doc/en/reference/sage/geometry/polytope.rst`.  (These files are not under revision control, so can't be removed by a patch.)\n\n(polytope.rst was removed from the reference manual in #7109.  I'm not sure what happened to attach.rst: #7514, maybe?)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8022\n\n",
+    "closed_at": "2010-02-01T22:31:49Z",
     "created_at": "2010-01-21T06:31:45Z",
     "labels": [
         "component: documentation",
@@ -19,12 +20,16 @@ archive/issues_008022.json:
 ```
 Assignee: mvngu
 
-When building the reference manual, I get this warning (among others):
+When building the reference manual, I get these warnings (among others):
 
 ```
 .../devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree
+.../devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree
 ```
-The fix is easy: delete (by hand) the file `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst`.  (This file is not under revision control, so can't be removed by a patch.)
+The fix is easy: delete (by hand) the files `SAGE_ROOT/devel/sage/doc/en/reference/sage/misc/attach.rst` and `SAGE_ROOT/devel/sage/doc/en/reference/sage/geometry/polytope.rst`.  (These files are not under revision control, so can't be removed by a patch.)
+
+(polytope.rst was removed from the reference manual in #7109.  I'm not sure what happened to attach.rst: #7514, maybe?)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8022
 

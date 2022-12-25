@@ -4,6 +4,7 @@ archive/issues_006979.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nwe add ad hoc methods in matrix_sparse.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/6979\n\n",
+    "closed_at": "2010-09-29T04:23:31Z",
     "created_at": "2009-09-21T19:01:46Z",
     "labels": [
         "component: linear algebra"

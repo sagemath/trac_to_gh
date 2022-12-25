@@ -1,9 +1,10 @@
-# Issue 2131: disable "padlock" support in libgcrypt
+# Issue 2131: [with spkg] disable "padlock" support in libgcrypt
 
 archive/issues_002131.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn some OS/compiler variants, the \"Padlock\" support fails to compile.\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/9d4b39e961c24e4f/89bfb1cd2822ffd2?lnk=gst&q=rijndael#89bfb1cd2822ffd2 for details.\n\nThe easy fix is to add \"--disable-padlock-support\" in the call to configure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2131\n\n",
+    "closed_at": "2008-02-14T11:21:30Z",
     "created_at": "2008-02-09T20:39:06Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002131.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "disable \"padlock\" support in libgcrypt",
+    "title": "[with spkg] disable \"padlock\" support in libgcrypt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2131",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

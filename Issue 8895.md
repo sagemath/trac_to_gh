@@ -4,9 +4,10 @@ archive/issues_008895.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nThis seems wrong to me:\n\n```\nsage: (x * units.length.meter).convert(units.length.mile)\nTraceback (most recent call last):\n...\nValueError: Incompatible units\nsage: (10 * units.length.meter).convert(units.length.mile)\n625/100584*mile\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8895\n\n",
+    "closed_at": "2013-03-29T18:55:41Z",
     "created_at": "2010-05-05T19:59:18Z",
     "labels": [
-        "component: calculus",
+        "component: symbolics",
         "minor",
         "bug"
     ],

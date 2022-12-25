@@ -3,7 +3,8 @@
 archive/issues_000966.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe attached patches implement a partial rewrite of ntl.GF2X to reflect the design decisions made for the ntl interface.\n\nThis patch depends on #898 to be applied. Then apply the attached patches in order as they are numbered.\n\nIssue created by migration from https://trac.sagemath.org/ticket/966\n\n",
+    "body": "Assignee: @malb\n\nThe attached patches implement a partial rewrite of ntl.GF2X to reflect the design decisions made for the ntl interface.\n\nThis patch depends on #898 to be applied. Then apply the attached patches in order as they are numbered.\n\nIssue created by migration from https://trac.sagemath.org/ticket/966\n\n",
+    "closed_at": "2007-10-23T21:13:00Z",
     "created_at": "2007-10-21T21:19:07Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000966.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 The attached patches implement a partial rewrite of ntl.GF2X to reflect the design decisions made for the ntl interface.
 

@@ -3,10 +3,11 @@
 archive/issues_007477.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @kcrisman yomcat\n\nMatroids in Sage could be interesting from the educational point of view, as there are not so many ways to play with matroids on a computer, but also from the algorithmic point of view, as the Graph Theory section could use some help from the Matroid Union and Matroid Intersection Theorems... ( see #7476 )\n\nMacek is a GPL+C implementation of them http://www.fi.muni.cz/~hlineny/MACEK/ which I never tried but may be a good starting point !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7477\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @kcrisman yomcat\n\nKeywords: sd48\n\nMatroids in Sage could be interesting from the educational point of view, as there are not so many ways to play with matroids on a computer, but also from the algorithmic point of view, as the Graph Theory section could use some help from the Matroid Union and Matroid Intersection Theorems... ( see #7476 )\n\nMacek is a GPL+C implementation of them http://www.fi.muni.cz/~hlineny/MACEK/ which I never tried but may be a good starting point !\n\nNathann\n\nApply:\n\n* [attachment:trac_7477_setup_doc_load.patch] -- changes to module_list.py, all.py, and reference manual\n* [attachment:trac_7477_code.patch] -- code for the sage.matroids package\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7477\n\n",
+    "closed_at": "2013-08-16T21:10:24Z",
     "created_at": "2009-11-17T06:37:48Z",
     "labels": [
-        "component: numerical"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "Matroids",
@@ -19,11 +20,19 @@ Assignee: jkantor
 
 CC:  @kcrisman yomcat
 
+Keywords: sd48
+
 Matroids in Sage could be interesting from the educational point of view, as there are not so many ways to play with matroids on a computer, but also from the algorithmic point of view, as the Graph Theory section could use some help from the Matroid Union and Matroid Intersection Theorems... ( see #7476 )
 
 Macek is a GPL+C implementation of them http://www.fi.muni.cz/~hlineny/MACEK/ which I never tried but may be a good starting point !
 
 Nathann
+
+Apply:
+
+* [attachment:trac_7477_setup_doc_load.patch] -- changes to module_list.py, all.py, and reference manual
+* [attachment:trac_7477_code.patch] -- code for the sage.matroids package
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7477
 

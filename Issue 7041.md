@@ -3,7 +3,8 @@
 archive/issues_007041.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dimpase @ohanar\n\nKeywords: gap solaris cc\n\nThe spkg-install for gap-4.4.10.p12\n\necho \"*WARNING*: Unsetting CC since that tends to break GAP building\"\nunset CC\necho \"*WARNING*: Unsetting CXX since that tends to break GAP building\"\nunset CXX\n\nThis appears to be done by Michael Abshoff as SPKG.txt shows:\n\n### gap-4.4.10.p8 (Michael Abshoff, June 16th, 2008)\n* unset CC in spkg-install (work around for #2575)\n\n\nLooking at http://sagetrac.org/sage_trac/ticket/2575 I can't help feel there must be a better solution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7041\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @dimpase @ohanar\n\nKeywords: gap solaris cc CXX compiler hardcoded hard-coded sd40.5\n\n`spkg-install` for `gap-4.4.10.p12`:\n\n```\necho \"*WARNING*: Unsetting CC since that tends to break GAP building\"\nunset CC\necho \"*WARNING*: Unsetting CXX since that tends to break GAP building\"\nunset CXX\n```\n\nThis appears to be done by Michael Abshoff as `SPKG.txt` shows:\n\n```\n### gap-4.4.10.p8 (Michael Abshoff, June 16th, 2008)\n * unset CC in spkg-install (work around for #2575)\n```\n\nLooking at #2575 I can't help feel there must be a better solution.\n\n---\n\n**New spkg:** [http://boxen.math.washington.edu/home/leif/Sage/spkgs/gap-4.4.12.p7.spkg](http://boxen.math.washington.edu/home/leif/Sage/spkgs/gap-4.4.12.p7.spkg)\n\n**md5sum:** `3461058e66fd53d6d53f07acccc8d0c7  gap-4.4.12.p7.spkg`\n\n\n### gap-4.4.12.p7 (Leif Leonhardy, March 22nd 2012)\n* #7041: Only unset `CC` and `CXX` if really necessary (i.e., if they\n  contain spaces, which is what currently would break the build).\n* Clean up `spkg-install`.  Some things seem still weird, see comments.\n* Added \"Special Update/Build Instructions\" section above.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7041\n\n",
+    "closed_at": "2012-06-06T19:10:05Z",
     "created_at": "2009-09-27T16:30:04Z",
     "labels": [
         "component: build",
@@ -16,26 +17,44 @@ archive/issues_007041.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: @nexttime
 
 CC:  @dimpase @ohanar
 
-Keywords: gap solaris cc
+Keywords: gap solaris cc CXX compiler hardcoded hard-coded sd40.5
 
-The spkg-install for gap-4.4.10.p12
+`spkg-install` for `gap-4.4.10.p12`:
 
+```
 echo "*WARNING*: Unsetting CC since that tends to break GAP building"
 unset CC
 echo "*WARNING*: Unsetting CXX since that tends to break GAP building"
 unset CXX
+```
 
-This appears to be done by Michael Abshoff as SPKG.txt shows:
+This appears to be done by Michael Abshoff as `SPKG.txt` shows:
 
+```
 ### gap-4.4.10.p8 (Michael Abshoff, June 16th, 2008)
-* unset CC in spkg-install (work around for #2575)
+ * unset CC in spkg-install (work around for #2575)
+```
+
+Looking at #2575 I can't help feel there must be a better solution.
+
+---
+
+**New spkg:** [http://boxen.math.washington.edu/home/leif/Sage/spkgs/gap-4.4.12.p7.spkg](http://boxen.math.washington.edu/home/leif/Sage/spkgs/gap-4.4.12.p7.spkg)
+
+**md5sum:** `3461058e66fd53d6d53f07acccc8d0c7  gap-4.4.12.p7.spkg`
 
 
-Looking at http://sagetrac.org/sage_trac/ticket/2575 I can't help feel there must be a better solution.
+### gap-4.4.12.p7 (Leif Leonhardy, March 22nd 2012)
+* #7041: Only unset `CC` and `CXX` if really necessary (i.e., if they
+  contain spaces, which is what currently would break the build).
+* Clean up `spkg-install`.  Some things seem still weird, see comments.
+* Added "Special Update/Build Instructions" section above.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7041
 

@@ -1,22 +1,23 @@
-# Issue 2262: Move the debian directory from the sage to the ext repo
+# Issue 2262: [with patches, with positive review] Move the debian directory from the sage to the ext repo
 
 archive/issues_002262.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nIn retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2262\n\n",
+    "body": "Assignee: mabshoff\n\nIn retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2262\n\n",
+    "closed_at": "2008-03-19T09:27:50Z",
     "created_at": "2008-02-22T18:35:55Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Move the debian directory from the sage to the ext repo",
+    "title": "[with patches, with positive review] Move the debian directory from the sage to the ext repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2262",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @timabbott
+Assignee: mabshoff
 
 In retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.
 

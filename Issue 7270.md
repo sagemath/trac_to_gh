@@ -1,15 +1,16 @@
-# Issue 7270: numerical.MIP : named constraints and variables, methods, structure, etc ...
+# Issue 7270: numerical.MIP: named constraints and variables, methods, structure, etc
 
 archive/issues_007270.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nHello everybody !!!\n\nThis is the last \"fundamental\" modification of class numerical.MIP. From now on, the methods' names should not change anymore, and the patches based upon this class should not have to be updated each time an update is sent for numerical.mip.\n\nThis patch changes mainly comports changes of structure in this class. Here is the list of what is includes :\n\n* {{{ \n  from sage.numerical.mip import * \n  }}}\n  has been replaced by \n  {{{\n  from sage.numerical.mip import MixedIntegerLinearProgram\n  }}}\n  as asked in #7012\n\n* Private variables have been renamed with a '_' in front of their names. The user is not interested in them\n    * ``x`` to ``_x``\n    * ``values`` to ``_values``\n    * all the variables defining the Linear Program ( variables types, bounds, name, objective, etc ) have been renamed. The new structure is easier to understand, and the code includes as a comment a Tree of these variables to explain it better.\n       \n* The ``__eq__``  method has been added ( asked in #6913 )\n* Names in the Linear Program \n    * Methods have been added to define names for :\n        * The whole problem : ``set_problem_same``\n  * The objective function : ``set_objective_name``\n    * Methods have been modified to define names for :\n        * The variables : ``new_variable`` now can take a ``name`` as part of its input\n  * The constraints : similarly for ``add_constraint``\n* A function ``_update_variables_name``. The name of variables are only computed before\n  the LP is written to a file. They are obviously useless in the solving process.\n* A function ``constraints`` to list the constraints of the LP.\n* Function ``write_mps`` and ``write_lp`` to export the problem to MPS and LP file format ( see the docstrings for more information )\n* Class ``MIPSolverException`` includes doctests of exceptions for GLPK ( CBC will follow )\n\nSome comments have been added to the code to ease reviews :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7270\n\n",
+    "body": "Assignee: jkantor\n\nHello everybody !!!\n\nThis is the last \"fundamental\" modification of class numerical.MIP. From now on, the methods' names should not change anymore, and the patches based upon this class should not have to be updated each time an update is sent for numerical.mip.\n\nThis patch changes mainly comports changes of structure in this class. Here is the list of what is includes :\n\n* The line \n  {{{ \n  from sage.numerical.mip import * \n  }}}\n  has been replaced by \n  {{{\n  from sage.numerical.mip import MixedIntegerLinearProgram\n  }}}\n  as asked in #7012\n\n* Private variables have been renamed with a '_' in front of their names. The user is not interested in them\n    * ``x`` to ``_x``\n    * ``values`` to ``_values``\n    * all the variables defining the Linear Program ( variables types, bounds, name, objective, etc ) have been renamed. The new structure is easier to understand, and the code includes as a comment a Tree of these variables to explain it better.\n       \n* The ``__eq__``  method has been added ( asked in #6913 )\n* Names in the Linear Program \n    * Methods have been added to define names for :\n        * The whole problem : ``set_problem_same``\n        * The objective function : ``set_objective_name``\n    * Methods have been modified to define names for :\n        * The variables : ``new_variable`` now can take a ``name`` as part of its input\n        * The constraints : similarly for ``add_constraint``\n* A function ``_update_variables_name``. The name of variables are only computed before\n  the LP is written to a file. They are obviously useless in the solving process.\n* A function ``constraints`` to list the constraints of the LP.\n* Function ``write_mps`` and ``write_lp`` to export the problem to MPS and LP file format ( see the docstrings for more information )\n* Class ``MIPSolverException`` includes doctests of exceptions for GLPK ( CBC will follow )\n* Some comments have been added to the code to ease reviews :-)\n\nWarnings :\n\n* To use this code you will need to have the new version of the GLPK spkg installed. It is available at ticket #7268.\n\nThank you for your help !!!\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7270\n\n",
+    "closed_at": "2009-12-02T08:00:34Z",
     "created_at": "2009-10-23T15:28:31Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "numerical.MIP : named constraints and variables, methods, structure, etc ...",
+    "title": "numerical.MIP: named constraints and variables, methods, structure, etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7270",
     "user": "https://github.com/nathanncohen"
@@ -23,7 +24,8 @@ This is the last "fundamental" modification of class numerical.MIP. From now on,
 
 This patch changes mainly comports changes of structure in this class. Here is the list of what is includes :
 
-* {{{ 
+* The line 
+  {{{ 
   from sage.numerical.mip import * 
   }}}
   has been replaced by 
@@ -41,17 +43,22 @@ This patch changes mainly comports changes of structure in this class. Here is t
 * Names in the Linear Program 
     * Methods have been added to define names for :
         * The whole problem : ``set_problem_same``
-  * The objective function : ``set_objective_name``
+        * The objective function : ``set_objective_name``
     * Methods have been modified to define names for :
         * The variables : ``new_variable`` now can take a ``name`` as part of its input
-  * The constraints : similarly for ``add_constraint``
+        * The constraints : similarly for ``add_constraint``
 * A function ``_update_variables_name``. The name of variables are only computed before
   the LP is written to a file. They are obviously useless in the solving process.
 * A function ``constraints`` to list the constraints of the LP.
 * Function ``write_mps`` and ``write_lp`` to export the problem to MPS and LP file format ( see the docstrings for more information )
 * Class ``MIPSolverException`` includes doctests of exceptions for GLPK ( CBC will follow )
+* Some comments have been added to the code to ease reviews :-)
 
-Some comments have been added to the code to ease reviews :-)
+Warnings :
+
+* To use this code you will need to have the new version of the GLPK spkg installed. It is available at ticket #7268.
+
+Thank you for your help !!!
 
 Nathann
 

@@ -1,4 +1,4 @@
-# Issue 9628: Live tutorial docs missing some equations
+# Issue 9628: typesetting error in live tutorial docs
 
 archive/issues_009628.json:
 ```json
@@ -7,10 +7,10 @@ archive/issues_009628.json:
     "created_at": "2010-07-28T21:07:39Z",
     "labels": [
         "component: documentation",
-        "minor",
+        "trivial",
         "bug"
     ],
-    "title": "Live tutorial docs missing some equations",
+    "title": "typesetting error in live tutorial docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9628",
     "user": "https://trac.sagemath.org/admin/accounts/users/mikexstudios"

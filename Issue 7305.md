@@ -4,6 +4,7 @@ archive/issues_007305.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nAdd the Higman-Sims graph to the graph generators collection.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7305\n\n",
+    "closed_at": "2009-11-12T08:14:38Z",
     "created_at": "2009-10-26T04:14:49Z",
     "labels": [
         "component: graph theory",

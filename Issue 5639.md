@@ -3,7 +3,8 @@
 archive/issues_005639.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\n```\nsage: m = matrix(2,[1,sqrt(2), 3, -5/2])\nsage: m.minpoly()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5639\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @kcrisman\n\n```\nsage: m = matrix(2,[1,sqrt(2), 3, -5/2])\nsage: m.minpoly()\nTraceback (click to the left for traceback)\n...\nAttributeError: 'SymbolicArithmetic' object has no attribute\n'is_squarefree'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5639\n\n",
+    "closed_at": "2009-11-12T07:15:55Z",
     "created_at": "2009-03-30T03:03:04Z",
     "labels": [
         "component: calculus",
@@ -16,13 +17,17 @@ archive/issues_005639.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @burcin
+Assignee: @mwhansen
 
 CC:  @kcrisman
 
 ```
 sage: m = matrix(2,[1,sqrt(2), 3, -5/2])
 sage: m.minpoly()
+Traceback (click to the left for traceback)
+...
+AttributeError: 'SymbolicArithmetic' object has no attribute
+'is_squarefree'
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5639

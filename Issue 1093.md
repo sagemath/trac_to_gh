@@ -1,16 +1,17 @@
-# Issue 1093: small memleaks exposed by ntl_ZZ_pX.py (from 2.8.12.alpha0)
+# Issue 1093: [with patch, needs review] small memleaks exposed by ntl_ZZ_pX.py (from 2.8.12.alpha0)
 
 archive/issues_001093.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nntl_ZZ_pX.py\n\n```\n==4504== 504 (72 direct, 432 indirect) bytes in 9 blocks are definitely lost in loss record 305 of 1,918\n==4504==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4504==    by 0x6041C2A: ZZ_pX_linear_roots (in /tmp/Work-mabshoff/sage-2.8.11/devel/sage-main/c_lib/libcsage.so)\n==4504==    by 0xCC4DB97: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pX_9ntl_ZZ_pX_linear_roots(_object*, _object*) (ntl_ZZ_pX.cpp:35\n95)\n==4504==    by 0x482FE8: PyEval_EvalFrameEx (ceval.c:3548)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n\n==4504== 880 (48 direct, 832 indirect) bytes in 6 blocks are definitely lost in loss record 470 of 1,918\n==4504==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4504==    by 0x6041D65: ZZ_pX_factor (in /tmp/Work-mabshoff/sage-2.8.11/devel/sage-main/c_lib/libcsage.so)\n==4504==    by 0xCC4C380: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pX_9ntl_ZZ_pX_factor(_object*, _object*, _object*) (ntl_ZZ_pX.cp\np:3407)\n==4504==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==4504==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4504==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n```\nI believe those leaks are actually in NTL itself. Shoup has stated that there are some issues, but that he is not going to fix them, but I might be totally wrong here :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1093\n\n",
+    "closed_at": "2008-01-08T02:07:12Z",
     "created_at": "2007-11-04T00:05:03Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "small memleaks exposed by ntl_ZZ_pX.py (from 2.8.12.alpha0)",
+    "title": "[with patch, needs review] small memleaks exposed by ntl_ZZ_pX.py (from 2.8.12.alpha0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1093",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

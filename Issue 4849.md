@@ -4,10 +4,10 @@ archive/issues_004849.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee #4848 for a motivation. Attached is some Magma code, but note that according to William\n\n```\nThen the file heegner.py should be attached to that ticket, since to do that \nticket, one might want to port some of what's in there to Sage. That said, it's \nnot so simple, since better algorithms for computing Heegner points were found \nafter that code was written.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4849\n\n",
+    "closed_at": "2009-07-20T15:52:03Z",
     "created_at": "2008-12-21T22:08:10Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "add functionality for computing Heegner points to Sage",

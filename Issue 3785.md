@@ -1,22 +1,23 @@
-# Issue 3785: upgrade atlas in sage to version 3.8.2
+# Issue 3785: [with spkg, positive review] upgrade atlas in sage to version 3.8.2
 
 archive/issues_003785.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a non-negotiable blocker for Sage-3.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3785\n\n",
+    "body": "Assignee: mabshoff\n\nThis is a non-negotiable blocker for Sage-3.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3785\n\n",
+    "closed_at": "2009-01-02T21:52:06Z",
     "created_at": "2008-08-06T23:58:10Z",
     "labels": [
         "component: linear algebra",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "upgrade atlas in sage to version 3.8.2",
+    "title": "[with spkg, positive review] upgrade atlas in sage to version 3.8.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3785",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 This is a non-negotiable blocker for Sage-3.1.
 

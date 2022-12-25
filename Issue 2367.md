@@ -1,16 +1,16 @@
-# Issue 2367: [with patch, needs review] Extend invariant_generators to the case of Matrix Groups over number fields
+# Issue 2367: [with patch, positive review] Extend invariant_generators to the case of Matrix Groups over number fields
 
 archive/issues_002367.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @wdjoyner\n\nKeywords: invariant ring, matrix group\n\nThis ticket is strongly related with ticket #2348. I fix here a doc test failure that is introduced by the patch from #2348, and the new functionality that i introduce here relies on the patch from #2348.\n\nProblem: Let G be a finite matrix group. So far, G.invariant_generators() worked only if G was defined over the rationals or over GF(prime). \nSolution: Singular also provides simple algebraic extensions over these fields, so, it just requires a more careful definition of a singular ring inside the function.\n\nAfter first applying the patch from #2348 and then applying the new patch, the doc tests of matrix_group.py should pass, and the following should work:\n\n```\nsage: F=CyclotomicField(8)\nsage: z=F.gen()\nsage: a=z+1/z\nsage: b=z^2\nsage: MS=MatrixSpace(F,2,2)\nsage: g1=MS([[1/a,1/a],[1/a,-1/a]])\nsage: g2=MS([[1,0],[0,b]])\nsage: g3=MS([[b,0],[0,1]])\nsage: G=MatrixGroup([g1,g2,g3])\nsage: G.invariant_generators()\n[x1^8 + 14*x1^4*x2^4 + x2^8,\n x1^24 + 10626/1025*x1^20*x2^4 + 735471/1025*x1^16*x2^8 + 2704156/1025*x1^12*x2^12 + 735471/1025*x1^8*x2^16 + 10626/1025*x1^4*x2^20 + x2^24]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2367\n\n",
+    "closed_at": "2008-03-05T10:43:58Z",
     "created_at": "2008-03-02T14:06:04Z",
     "labels": [
-        "component: group theory",
-        "bug"
+        "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] Extend invariant_generators to the case of Matrix Groups over number fields",
+    "title": "[with patch, positive review] Extend invariant_generators to the case of Matrix Groups over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2367",
     "user": "https://github.com/simon-king-jena"

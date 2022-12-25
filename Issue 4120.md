@@ -3,10 +3,11 @@
 archive/issues_004120.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  justin @jonhanke tornaria@math.utexas.edu\n\nThe code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality, and relies on Magma and Pari.  The patch in this ticket provides the following changes:\n- tests for equivalence, normal, positive and negative definite, indefinite, primitive forms\n- normalize a form\n- action of matrix on a form\n- find content; factor indefinite forms\nIn addition: \n- reduce() no longer calls Pari\n- some cleanup: is_reduced() is rewritten; polynomial() replaced with an instance variable (poly)\n\nDoctests are in place for the new code, so the file remains at 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4120\n\n",
+    "body": "Assignee: justin\n\nCC:  justin @jonhanke tornaria@math.utexas.edu\n\nThe code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality.  The patch in this ticket provides the following changes:\n- better support for indefinite forms\n- tests for equivalence, positive and negative definite, indefinite, primitive forms\n- action of matrix on a form\n- find content\n- is_reduced() is rewritten\n- polynomial() now uses an instance variable (poly)\n- some general cleaning up\n\nDoctests are in place for the new code, so the file remains at 100% coverage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4120\n\n",
+    "closed_at": "2018-06-14T07:41:15Z",
     "created_at": "2008-09-14T19:31:00Z",
     "labels": [
-        "component: algebra"
+        "component: quadratic forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.3",
     "title": "New code for binary quadratic forms",
@@ -15,20 +16,21 @@ archive/issues_004120.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: tbd
+Assignee: justin
 
 CC:  justin @jonhanke tornaria@math.utexas.edu
 
-The code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality, and relies on Magma and Pari.  The patch in this ticket provides the following changes:
-- tests for equivalence, normal, positive and negative definite, indefinite, primitive forms
-- normalize a form
+The code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality.  The patch in this ticket provides the following changes:
+- better support for indefinite forms
+- tests for equivalence, positive and negative definite, indefinite, primitive forms
 - action of matrix on a form
-- find content; factor indefinite forms
-In addition: 
-- reduce() no longer calls Pari
-- some cleanup: is_reduced() is rewritten; polynomial() replaced with an instance variable (poly)
+- find content
+- is_reduced() is rewritten
+- polynomial() now uses an instance variable (poly)
+- some general cleaning up
 
 Doctests are in place for the new code, so the file remains at 100% coverage.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4120
 

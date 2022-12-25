@@ -1,16 +1,17 @@
-# Issue 5871: [with patch; needs review] solaris x86 3.4.1 -- code_bounds.py fails some plot doctests
+# Issue 5871: [with patch; positive review] solaris x86 3.4.1 -- code_bounds.py fails some plot doctests
 
 archive/issues_005871.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5871\n\n",
+    "closed_at": "2009-04-23T07:47:23Z",
     "created_at": "2009-04-23T07:23:13Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch; needs review] solaris x86 3.4.1 -- code_bounds.py fails some plot doctests",
+    "title": "[with patch; positive review] solaris x86 3.4.1 -- code_bounds.py fails some plot doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5871",
     "user": "https://github.com/williamstein"

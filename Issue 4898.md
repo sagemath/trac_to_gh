@@ -1,15 +1,16 @@
-# Issue 4898: [with patch; needs review] Add style and labels to contour_plot()
+# Issue 4898: Add style and labels to contour_plot()
 
 archive/issues_004898.json:
 ```json
 {
     "body": "Assignee: abergeron\n\nCC:  wcauchois @jasongrout\n\nThis patch add the option of styling lines, either individually or all at once, and adding contour level labels.\n\nAnother one is coming to support this in combination with #2770.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4898\n\n",
+    "closed_at": "2009-11-12T06:53:24Z",
     "created_at": "2008-12-31T21:49:27Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch; needs review] Add style and labels to contour_plot()",
+    "title": "Add style and labels to contour_plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4898",
     "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"

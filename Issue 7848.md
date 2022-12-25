@@ -4,6 +4,7 @@ archive/issues_007848.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\nFrom sage-support:\n\n```\nThe directive given in the help doesn't work: \nShift click between cells to create a new HTML cell. Double click on \nexisting HTML to edit it. \nUse $...$ and $$...$$ to include typeset math in the HTML block. \n```\nThere is no mention of the horizontal blue line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7848\n\n",
+    "closed_at": "2010-01-25T00:59:47Z",
     "created_at": "2010-01-05T04:12:35Z",
     "labels": [
         "component: notebook",

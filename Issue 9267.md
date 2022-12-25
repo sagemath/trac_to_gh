@@ -3,7 +3,8 @@
 archive/issues_009267.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: words, charge, cocharge\n\nThe following behavior is currently in sage:\n\n```\nsage: w = Word([1,2,3,1,2])\nsage: w.charge()\n0\n```\nThis is inconsistent with the definition one usually finds in the\nliterature, which would give the charge of this word as 2. (see\nMacdonald's book, for example).\n\nThe goal of this ticket is to fix this bug, add a cocharge statistic, and extend the definition to words without partition content.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9267\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: words, charge, cocharge\n\nThe following behavior is currently in sage:\n\n```\nsage: w = Word([1,2,3,1,2])\nsage: w.charge()\n0\n```\nThis is inconsistent with the definition one usually finds in the\nliterature, which would give the charge of this word as 2. (see\nMacdonald's book, for example).\n\nThe goal of this ticket is to fix this bug, add a cocharge statistic, and extend the definition to words without partition content.\n\nSee [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/e7c2fd6abb9dd6df) on sage-combinat-devel for discussion of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9267\n\n",
+    "closed_at": "2010-07-21T01:44:28Z",
     "created_at": "2010-06-18T18:40:13Z",
     "labels": [
         "component: combinatorics",
@@ -32,6 +33,8 @@ literature, which would give the charge of this word as 2. (see
 Macdonald's book, for example).
 
 The goal of this ticket is to fix this bug, add a cocharge statistic, and extend the definition to words without partition content.
+
+See [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/e7c2fd6abb9dd6df) on sage-combinat-devel for discussion of this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9267
 

@@ -4,6 +4,7 @@ archive/issues_008009.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  wcauchois @kcrisman\n\nHere's a patch which fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8009\n\n",
+    "closed_at": "2010-01-23T23:19:28Z",
     "created_at": "2010-01-20T05:53:32Z",
     "labels": [
         "component: graphics",

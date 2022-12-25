@@ -1,15 +1,16 @@
-# Issue 5863: [with patch, needs review] remove some files from sage/algebras
+# Issue 5863: [with patch, positive review] remove some files from sage/algebras
 
 archive/issues_005863.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCoverage of some files in algebras:\n\n```\nalgebra_ideal.py: 0% (0 of 19)\nalgebra_ideal_element.py: 0% (0 of 1)\nalgebra_order.py: 0% (0 of 16)\nalgebra_order_element.py: 0% (0 of 13)\nalgebra_order_frac_ideal.py: 0% (0 of 17)\nalgebra_order_ideal.py: 0% (0 of 21)\nalgebra_order_ideal_element.py: 0% (0 of 1)\n```\nFurthermore, these don't seem to be used by any of the rest of the Sage code, so let's delete them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5863\n\n",
+    "closed_at": "2009-04-23T07:04:47Z",
     "created_at": "2009-04-23T06:07:02Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] remove some files from sage/algebras",
+    "title": "[with patch, positive review] remove some files from sage/algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5863",
     "user": "https://github.com/jhpalmieri"

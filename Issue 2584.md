@@ -1,17 +1,18 @@
-# Issue 2584: printing bug with show()
+# Issue 2584: [with patch, positive review] printing bug with list_function()
 
 archive/issues_002584.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nThis causes a bug when printing:\n\n```\nshow([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n```\n\nNotice the extra \",\". A list of one element doesn't have the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2584\n\n",
+    "closed_at": "2008-03-19T00:32:35Z",
     "created_at": "2008-03-18T11:51:35Z",
     "labels": [
         "component: graphics",
-        "minor",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "printing bug with show()",
+    "title": "[with patch, positive review] printing bug with list_function()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2584",
     "user": "https://github.com/craigcitro"

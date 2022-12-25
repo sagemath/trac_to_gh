@@ -1,22 +1,23 @@
-# Issue 2571: problem with copy() on sage.rings.integer_mod.IntegerMod_gmp
+# Issue 2571: [with additional patch, with positive review] problem with copy() on sage.rings.integer_mod.IntegerMod_gmp
 
 archive/issues_002571.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nJohn Cremona:\n\n```\nsage: a=[Mod(2,next_prime(2^n)) for n in range(28,35)]\nsage: [type(x) for x in a]\n\n[<type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>]\n\nsage: [copy(x) for x in a]\n[2, 2, 2, None, None, None, None]\n\nsage: [deepcopy(x) for x in a]\n[2, 2, 2, 2, 2, 2, 2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2571\n\n",
+    "body": "Assignee: @JohnCremona\n\nJohn Cremona:\n\n```\nsage: a=[Mod(2,next_prime(2^n)) for n in range(28,35)]\nsage: [type(x) for x in a]\n\n[<type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>]\n\nsage: [copy(x) for x in a]\n[2, 2, 2, None, None, None, None]\n\nsage: [deepcopy(x) for x in a]\n[2, 2, 2, 2, 2, 2, 2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2571\n\n",
+    "closed_at": "2008-03-19T00:36:59Z",
     "created_at": "2008-03-17T12:55:24Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "problem with copy() on sage.rings.integer_mod.IntegerMod_gmp",
+    "title": "[with additional patch, with positive review] problem with copy() on sage.rings.integer_mod.IntegerMod_gmp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2571",
     "user": "https://github.com/dfdeshom"
 }
 ```
-Assignee: somebody
+Assignee: @JohnCremona
 
 John Cremona:
 

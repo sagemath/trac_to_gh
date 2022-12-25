@@ -1,16 +1,17 @@
-# Issue 4707: magma/sage interface -- another trivial easy-to-fix failure hopefully
+# Issue 4707: [with patch; positive review] magma/sage interface -- another trivial easy-to-fix failure hopefully
 
 archive/issues_004707.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve(GF(25,'a'), [0,0,1,4,0])\nsage: magma(E)\nboom\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4707\n\n",
+    "closed_at": "2008-12-11T11:09:55Z",
     "created_at": "2008-12-05T02:28:26Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "magma/sage interface -- another trivial easy-to-fix failure hopefully",
+    "title": "[with patch; positive review] magma/sage interface -- another trivial easy-to-fix failure hopefully",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4707",
     "user": "https://github.com/williamstein"

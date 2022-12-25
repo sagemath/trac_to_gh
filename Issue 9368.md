@@ -3,11 +3,12 @@
 archive/issues_009368.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  justin @qed777 @jhpalmieri\n\n#9346 which corrects a problem with the variable has a problem, because SAGE64 is ignored on any plaform other than OS X. \n\nThis needs correcting urgently. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9368\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  justin @qed777 @jhpalmieri\n\n#9346 which corrects a problem with the variable SAGE64 has a problem, because SAGE64 is ignored on any platform other than Solaris/OpenSolaris. The flag is useful on OS X too and potentially on other platforms like HP-UX.  \n\nThis needs correcting urgently as it will mess up peoples OS X builds. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9368\n\n",
+    "closed_at": "2010-07-15T13:18:58Z",
     "created_at": "2010-06-28T23:25:39Z",
     "labels": [
         "component: build",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -21,11 +22,11 @@ Assignee: GeorgSWeber
 
 CC:  justin @qed777 @jhpalmieri
 
-#9346 which corrects a problem with the variable has a problem, because SAGE64 is ignored on any plaform other than OS X. 
+#9346 which corrects a problem with the variable SAGE64 has a problem, because SAGE64 is ignored on any platform other than Solaris/OpenSolaris. The flag is useful on OS X too and potentially on other platforms like HP-UX.  
 
-This needs correcting urgently. 
+This needs correcting urgently as it will mess up peoples OS X builds. 
 
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9368
 

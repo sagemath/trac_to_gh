@@ -1,16 +1,17 @@
-# Issue 2082: plot loops
+# Issue 2082: [with patch, positive review] plot loops
 
 archive/issues_002082.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  boothby\n\nplot loops\n\nIssue created by migration from https://trac.sagemath.org/ticket/2082\n\n",
+    "closed_at": "2008-02-07T10:30:46Z",
     "created_at": "2008-02-07T08:23:02Z",
     "labels": [
         "component: graph theory",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "plot loops",
+    "title": "[with patch, positive review] plot loops",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2082",
     "user": "https://github.com/rlmill"

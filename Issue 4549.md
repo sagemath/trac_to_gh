@@ -1,26 +1,40 @@
-# Issue 4549: New method horizontal_border_strip using new IntegerListsLex combinatorial class
+# Issue 4549: [with patch, positive review] New class IntegerListLex for generating integer lists => much improved partition iterators
 
 archive/issues_004549.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nSee the title. Patch integer_lists_lex-nt in development in sage-combinat.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4549\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nIntegerListsLex refactoring, and application to Partitions\n\n- Reworked the integer lists lexicographic generator into a full\n  featured combinatorial class IntegerListsLex\n- support for n in a set (or any iterable `I` implementing `n in I`)\n\nApplications to Partitions:\n- Systematic use of IntegerListsLex to get constant amortized time\n  iterators (huge efficiency improvement).\n- This includes PartitionsGreatestEQ and PartitionsGreatestLE which\n  were previously implemented in GAP. This was inefficient due to\n  the communication overhead, and not using an iterator.\n  (backward compatible unpickling)\n- Implements horizontal_border_strip.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4549\n\n",
+    "closed_at": "2009-04-04T23:56:30Z",
     "created_at": "2008-11-19T16:24:29Z",
     "labels": [
-        "component: combinatorics",
-        "minor"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "New method horizontal_border_strip using new IntegerListsLex combinatorial class",
+    "title": "[with patch, positive review] New class IntegerListLex for generating integer lists => much improved partition iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4549",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @mwhansen
+Assignee: @nthiery
 
 CC:  sage-combinat
 
-See the title. Patch integer_lists_lex-nt in development in sage-combinat.
+IntegerListsLex refactoring, and application to Partitions
+
+- Reworked the integer lists lexicographic generator into a full
+  featured combinatorial class IntegerListsLex
+- support for n in a set (or any iterable `I` implementing `n in I`)
+
+Applications to Partitions:
+- Systematic use of IntegerListsLex to get constant amortized time
+  iterators (huge efficiency improvement).
+- This includes PartitionsGreatestEQ and PartitionsGreatestLE which
+  were previously implemented in GAP. This was inefficient due to
+  the communication overhead, and not using an iterator.
+  (backward compatible unpickling)
+- Implements horizontal_border_strip.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4549
 

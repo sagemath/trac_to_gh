@@ -1,24 +1,32 @@
-# Issue 2666: ncalexan's enhancements to emacs sage mode
+# Issue 2666: Make sage-mode a standard spkg
 
 archive/issues_002666.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @gvol\n\nncalexan has been talking about his sage-mode.el enhancements---it'd be great to include his great wizardry into the sage distribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2666\n\n",
+    "body": "Assignee: @ncalexan\n\nCC:  @gvol\n\nKeywords: sage-mode\n\nSage-mode is currently an optional spkg.  This ticket would make it a standard skpg.\n\n\n### Old\nncalexan has been talking about his sage-mode.el enhancements---it'd be great to include his great wizardry into the sage distribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2666\n\n",
+    "closed_at": "2014-06-14T13:18:12Z",
     "created_at": "2008-03-25T20:43:45Z",
     "labels": [
-        "component: interfaces"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "ncalexan's enhancements to emacs sage mode",
+    "title": "Make sage-mode a standard spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2666",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @ncalexan
 
 CC:  @gvol
 
+Keywords: sage-mode
+
+Sage-mode is currently an optional spkg.  This ticket would make it a standard skpg.
+
+
+### Old
 ncalexan has been talking about his sage-mode.el enhancements---it'd be great to include his great wizardry into the sage distribution.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2666

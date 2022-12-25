@@ -1,22 +1,23 @@
-# Issue 5259: invalid array elements sent to matplotlib quiver, causing blank plot
+# Issue 5259: [with patch, positive review] invalid array elements sent to matplotlib quiver, causing blank plot
 
 archive/issues_005259.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nA student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:\n\n```\nplot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n```\n\nnow plots (before it was a blank plot, now it just skips the problematic vectors).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5259\n\n",
+    "body": "Assignee: @jasongrout\n\nA student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:\n\n```\nplot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n```\n\nnow plots (before it was a blank plot, now it just skips the problematic vectors).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5259\n\n",
+    "closed_at": "2009-02-14T09:03:46Z",
     "created_at": "2009-02-13T20:50:21Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "invalid array elements sent to matplotlib quiver, causing blank plot",
+    "title": "[with patch, positive review] invalid array elements sent to matplotlib quiver, causing blank plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5259",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 A student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:
 

@@ -3,7 +3,8 @@
 archive/issues_009295.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nDespite the pivotal roles Python plays in Sage, the Python package is not tested by running \"make test\" even if the variable SAGE_CHECK is set to yes. This patch ensures it does get checked in such cases, by adding the file spkg-check, which gets run if and only if SAGE_CHECK is set to yes. \n\nThe ticket is based on that at #9041, which has already received positive review, and includes some other python fixes. Since that is not merged, I've just left the patch level unchanged at .p9, but added another entry to the SPKG.txt file under .p9\n\nThank you to Fran\u00e7ois Bissey who bought to my attention that 'make test' would test the python package. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9295\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nDespite the pivotal roles Python plays in Sage, the Python package is not tested by running \"make test\" even if the variable SAGE_CHECK is set to yes. This patch ensures it does get checked in such cases, by adding the file spkg-check, which gets run if and only if SAGE_CHECK is set to yes. \n\nThe ticket is based on that at #9041, which has already received positive review, and includes some other python fixes. Since that is not merged, I've just left the patch level unchanged at .p9, but added another entry to the SPKG.txt file under .p9\n\nThank you to Fran\u00e7ois Bissey who bought to my attention that 'make test' would test the python package. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9295\n\n",
+    "closed_at": "2010-06-25T15:52:24Z",
     "created_at": "2010-06-21T11:01:52Z",
     "labels": [
         "component: spkg-check",
@@ -16,7 +17,7 @@ archive/issues_009295.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  @jaapspies
 

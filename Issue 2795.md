@@ -1,15 +1,16 @@
-# Issue 2795: [with patch,needs review] QuotientRing -> Magma
+# Issue 2795: [with patch, positive review] QuotientRing -> Magma
 
 archive/issues_002795.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: magma\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2))\nsage: Q = P.quotient(sage.rings.ideal.FieldIdeal(P))\nsage: xbar, ybar = Q.gens()\nsage: xbar._magma_() # optional requires magma\nx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2795\n\n",
+    "closed_at": "2008-04-05T20:28:24Z",
     "created_at": "2008-04-04T11:21:03Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch,needs review] QuotientRing -> Magma",
+    "title": "[with patch, positive review] QuotientRing -> Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2795",
     "user": "https://github.com/malb"

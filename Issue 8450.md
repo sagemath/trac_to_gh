@@ -1,16 +1,18 @@
-# Issue 8450: contour_plot chokes on function which involves imaginary numbers
+# Issue 8450: intermediate complex expression in real functions make many plot functions fail
 
 archive/issues_008450.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @egourgoulhon @jungmath\n\nThis gives an error:\n\n```\ncontour_plot(real_part(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)\n```\n\nbut this works:\n\n```\na(x,y)=real(log(x+y*I+.001))\nf=fast_callable(a,domain=CC)\ncontour_plot(f, (x,-3,3),(y,-3,3),fill=False)\n```\n\nand this works:\n\n```\ncontour_plot(imag(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8450\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @egourgoulhon @jungmath\n\nAll of the following plots fail\n\n```\nx, y = SR.var('x y')\ncontour_plot(abs(x+i*y), (x,-1,1), (y,-1,1))\ndensity_plot(abs(x+i*y), (x,-1,1), (y,-1,1))\nplot3d(abs(x+i*y), (x,-1,1),(y,-1,1))\nstreamline_plot(abs(x+i*y), (x,-1,1),(y,-1,1))\n```\nwith\n\n```\nTypeError: unable to coerce to a real number\n```\nThe culprit is the call to `setup_for_eval_on_grid` (from `sage/plot/misc.py`) that tries to compile the symbolic expression with `fast_float`. But since the expression involves an intermediate complex number the compilation fails. This can be tested with any of the two\n\n```\nfast_float(abs(x + i*y), x, y)\nfast_callable(abs(x + i*y), vars=[x,y])\n```\nThe function compilation succeeds if we ask for a complex function instead\n\n```\nfast_callable(abs(x + i*y), vars=[x,y], domain=complex)\n```\n\nSee also [this question on ask.sagemath.org](https://ask.sagemath.org/question/46275/typeerror-unable-to-coerce-to-a-real-number/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8450\n\n",
+    "closed_at": "2022-01-31T23:32:07Z",
     "created_at": "2010-03-05T22:01:42Z",
     "labels": [
         "component: graphics",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.6",
-    "title": "contour_plot chokes on function which involves imaginary numbers",
+    "title": "intermediate complex expression in real functions make many plot functions fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8450",
     "user": "https://github.com/jasongrout"
@@ -20,25 +22,33 @@ Assignee: @williamstein
 
 CC:  @orlitzky @egourgoulhon @jungmath
 
-This gives an error:
+All of the following plots fail
 
 ```
-contour_plot(real_part(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)
+x, y = SR.var('x y')
+contour_plot(abs(x+i*y), (x,-1,1), (y,-1,1))
+density_plot(abs(x+i*y), (x,-1,1), (y,-1,1))
+plot3d(abs(x+i*y), (x,-1,1),(y,-1,1))
+streamline_plot(abs(x+i*y), (x,-1,1),(y,-1,1))
 ```
-
-but this works:
-
-```
-a(x,y)=real(log(x+y*I+.001))
-f=fast_callable(a,domain=CC)
-contour_plot(f, (x,-3,3),(y,-3,3),fill=False)
-```
-
-and this works:
+with
 
 ```
-contour_plot(imag(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)
+TypeError: unable to coerce to a real number
 ```
+The culprit is the call to `setup_for_eval_on_grid` (from `sage/plot/misc.py`) that tries to compile the symbolic expression with `fast_float`. But since the expression involves an intermediate complex number the compilation fails. This can be tested with any of the two
+
+```
+fast_float(abs(x + i*y), x, y)
+fast_callable(abs(x + i*y), vars=[x,y])
+```
+The function compilation succeeds if we ask for a complex function instead
+
+```
+fast_callable(abs(x + i*y), vars=[x,y], domain=complex)
+```
+
+See also [this question on ask.sagemath.org](https://ask.sagemath.org/question/46275/typeerror-unable-to-coerce-to-a-real-number/).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8450
 

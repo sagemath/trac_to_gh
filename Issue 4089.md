@@ -1,16 +1,16 @@
-# Issue 4089: notebook -- no active worksheets should show up on "archived" tab
+# Issue 4089: [with patch, positive review] notebook -- no active worksheets should show up on "archived" tab
 
 archive/issues_004089.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4089\n\n",
+    "closed_at": "2008-12-04T14:55:21Z",
     "created_at": "2008-09-09T16:43:39Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "notebook -- no active worksheets should show up on \"archived\" tab",
+    "title": "[with patch, positive review] notebook -- no active worksheets should show up on \"archived\" tab",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4089",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

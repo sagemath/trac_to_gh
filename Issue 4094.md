@@ -1,24 +1,26 @@
-# Issue 4094: evaluate all causes massive browser hang
+# Issue 4094: [with patch, positive review] evaluate all causes massive browser hang
 
 archive/issues_004094.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n#4078 was done wrong.  Any reference to eval_bool should be removed.  Non-async calls *must never be used*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4094\n\n",
+    "body": "Assignee: boothby\n\n#4078 was done wrong.  Any reference to async_bool should be removed.  Non-async calls *must never be used*.  Press \"evaluate all\" while using a slow network connection.  Try to do anything else while the evaluation is running.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4094\n\n",
+    "closed_at": "2008-09-10T01:11:01Z",
     "created_at": "2008-09-09T20:52:27Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "evaluate all causes massive browser hang",
+    "title": "[with patch, positive review] evaluate all causes massive browser hang",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4094",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: tbd
+Assignee: boothby
 
-#4078 was done wrong.  Any reference to eval_bool should be removed.  Non-async calls *must never be used*.
+#4078 was done wrong.  Any reference to async_bool should be removed.  Non-async calls *must never be used*.  Press "evaluate all" while using a slow network connection.  Try to do anything else while the evaluation is running.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4094
 

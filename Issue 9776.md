@@ -4,6 +4,7 @@ archive/issues_009776.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @tscrim @slel @kliem\n\nKeywords: random testing, rings\n\np-adics should be included, perhaps at \"level 0\"?\n\nThe following \"level 1\" rings are not included in `sage.rings.tests`:\n\n* power series rings\n\n* Laurent series rings\n\n* multivariate power series rings (implemented in #1956)\n\n* infinite polynomial rings\n\nAlso, it's not clear that \"level n\" testing occurs for `n > 1`; e.g. multivariate polynomial ring in 3 variables over Laurent series ring over finite field of size 29, etc.\n\nQuotient rings are also not included, but should be.  There are probably more to be included than this list indicates.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9777\n\n",
+    "closed_at": "2021-09-07T20:52:28Z",
     "created_at": "2010-08-21T19:47:56Z",
     "labels": [
         "component: algebra"

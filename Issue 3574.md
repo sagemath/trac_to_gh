@@ -1,15 +1,16 @@
-# Issue 3574: [with patch; needs review] optimize startup time by not importing mwrank library until needed
+# Issue 3574: [with patch; positive review] optimize startup time by not importing mwrank library until needed
 
 archive/issues_003574.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nBEFORE, with caching, on OS X:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.013 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\nteragon-2:mwrank was$ \n```\n\nAFTER:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.001 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3574\n\n",
+    "closed_at": "2008-07-07T02:35:13Z",
     "created_at": "2008-07-06T22:00:40Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] optimize startup time by not importing mwrank library until needed",
+    "title": "[with patch; positive review] optimize startup time by not importing mwrank library until needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3574",
     "user": "https://github.com/williamstein"

@@ -1,9 +1,10 @@
-# Issue 5023: typo in calculus.py
+# Issue 5023: [with patch, positive review] typo in calculus.py
 
 archive/issues_005023.json:
 ```json
 {
     "body": "Assignee: tba\n\nat line 1372, algorithim should be algorithm\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5023\n\n",
+    "closed_at": "2009-02-06T22:28:10Z",
     "created_at": "2009-01-19T10:34:11Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005023.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "typo in calculus.py",
+    "title": "[with patch, positive review] typo in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5023",
     "user": "https://github.com/zimmermann6"

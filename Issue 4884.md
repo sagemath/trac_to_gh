@@ -1,15 +1,16 @@
-# Issue 4884: Make colormap handling better
+# Issue 4884: [with patch; positive review] Make colormap handling better
 
 archive/issues_004884.json:
 ```json
 {
     "body": "Assignee: abergeron\n\nThe colormap code is currently ad hoc and copied in all GraphicsPrimitive subclasses that need it.\n\nThis patch fixes this by introducing a get_cmap() function in sage.plot.misc that the graphic primitives can call to make sense of what they are passed.\n\nIt also adds the option to specify a sequence of colors and use that as the colormap.\n\nFor the documentation I added a cmap_help() function which is imported in the global namespace that the docstrings can point to and that will explain what are the possible options, the valid names and everything since the names change rather often.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4884\n\n",
+    "closed_at": "2009-01-24T02:17:44Z",
     "created_at": "2008-12-27T23:02:04Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Make colormap handling better",
+    "title": "[with patch; positive review] Make colormap handling better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4884",
     "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"

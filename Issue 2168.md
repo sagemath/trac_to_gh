@@ -1,9 +1,10 @@
-# Issue 2168: add native implementation for PartitionTuples
+# Issue 2168: [with patch, with positive review] add native implementation for PartitionTuples
 
 archive/issues_002168.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2168\n\n",
+    "closed_at": "2008-02-15T05:32:06Z",
     "created_at": "2008-02-15T00:43:15Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002168.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "add native implementation for PartitionTuples",
+    "title": "[with patch, with positive review] add native implementation for PartitionTuples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2168",
     "user": "https://github.com/mwhansen"

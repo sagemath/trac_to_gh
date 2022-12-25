@@ -4,6 +4,7 @@ archive/issues_000314.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhile this may just simply be impossible, it would be nice if I could create interactive programs in SAGE that worked both in the command line interface and the notebook interface. The purpose of this enhancement would be for games, quizzes, wizards, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/314\n\n",
+    "closed_at": "2007-03-21T23:10:04Z",
     "created_at": "2007-03-10T23:18:05Z",
     "labels": [
         "component: notebook",

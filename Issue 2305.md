@@ -1,9 +1,10 @@
-# Issue 2305: Docstrings and doctests for rings/ideal.py
+# Issue 2305: [with patch; positive review] Docstrings and doctests for rings/ideal.py
 
 archive/issues_002305.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for all non-\"_\" functions in rings/ideal.py. These include:\n\nid_Ideal(x)\nbase_ring(self)\nis_maximal(self)\nis_prime(self)\nis_principal(self)\nis_principal(self)\ngen(self)\ngcd(self, other)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2305\n\n",
+    "closed_at": "2008-03-07T20:09:40Z",
     "created_at": "2008-02-25T21:48:54Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002305.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Docstrings and doctests for rings/ideal.py",
+    "title": "[with patch; positive review] Docstrings and doctests for rings/ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2305",
     "user": "https://github.com/cswiercz"

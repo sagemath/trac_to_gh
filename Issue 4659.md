@@ -1,9 +1,10 @@
-# Issue 4659: remove an extra 'cdef class Integer' line from integer.pyx
+# Issue 4659: [with patch, positive review] remove an extra 'cdef class Integer' line from integer.pyx
 
 archive/issues_004659.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @robertwb\n\nKeywords: integer\n\nIn the file sage/rings/integer.pyx, line 288 says \n\n```\n    cdef class Integer (sage.structure.element.EuclideanDomainElement): \n```\nfollowed by documentation and the various methods for this class.  But earlier in the file, line 137 says \n\n```\n    cdef class Integer(sage.structure.element.EuclideanDomainElement) \n```\nThe attached patch removes line 137.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4659\n\n",
+    "closed_at": "2008-11-30T05:39:02Z",
     "created_at": "2008-11-30T00:44:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_004659.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "remove an extra 'cdef class Integer' line from integer.pyx",
+    "title": "[with patch, positive review] remove an extra 'cdef class Integer' line from integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4659",
     "user": "https://github.com/jhpalmieri"

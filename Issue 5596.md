@@ -1,16 +1,17 @@
-# Issue 5596: [with patch, needs review] refactor coercion to catch fewer exceptions
+# Issue 5596: [with patch, positive review] refactor coercion to catch fewer exceptions
 
 archive/issues_005596.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber\n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/d2145cd313f92bb8/c3049a540f91bab3?hl=en&lnk=gst&q=coercion#c3049a540f91bab3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5596\n\n",
+    "closed_at": "2009-10-21T05:22:32Z",
     "created_at": "2009-03-24T05:06:32Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] refactor coercion to catch fewer exceptions",
+    "title": "[with patch, positive review] refactor coercion to catch fewer exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5596",
     "user": "https://github.com/robertwb"

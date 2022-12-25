@@ -3,10 +3,11 @@
 archive/issues_006113.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  jcremona\n\nKeywords: segfault division points torsion polynomial\n\nJohn Cremona reports:\n\nIn 4.0.alpha0, this causes a segmentation fault:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a>=NumberField(x^2-x+22)\nsage: w=-13*a-14\nsage: E=EllipticCurve([0,0,0,0,-1728*w])\nsage: P1 = E.lift_x(-3*a-66)\nsage: P2 = E.lift_x((-21*a-93)/4)\nsage: P2.division_points(19)\n```\n| Sage Version 4.0.alpha0, Release Date: 2009-05-15                  |\n| Type notebook() for the GUI, and license() for information.        |\nIt works fine to do\n\n```\nsage: g = P2.division_points(19, poly_only=True)\n```\nwhich defines a polynomial of degree 361 over Q(sqrt(-87)), but then\ng.roots() goes Boom.\n\nncalexan verified this on Mac OS X; it looks like the crash is in an NTL function:\n\n```\n(gdb) bt\n#0  0x01293247 in modii ()\n#1  0x014278bc in FpX_red ()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6113\n\n",
+    "body": "CC:  jcremona\n\nKeywords: segfault division points torsion polynomial\n\nJohn Cremona reports:\n\nIn 4.0.alpha0, this causes a segmentation fault:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a>=NumberField(x^2-x+22)\nsage: w=-13*a-14\nsage: E=EllipticCurve([0,0,0,0,-1728*w])\nsage: P1 = E.lift_x(-3*a-66)\nsage: P2 = E.lift_x((-21*a-93)/4)\nsage: P2.division_points(19)\n```\n| Sage Version 4.0.alpha0, Release Date: 2009-05-15                  |\n| Type notebook() for the GUI, and license() for information.        |\nIt works fine to do\n\n```\nsage: g = P2.division_points(19, poly_only=True)\n```\nwhich defines a polynomial of degree 361 over Q(sqrt(-87)), but then\ng.roots() goes Boom.\n\nncalexan verified this on Mac OS X; it looks like the crash is in an NTL function:\n\n```\n(gdb) bt\n#0  0x01293247 in modii ()\n#1  0x014278bc in FpX_red ()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6113\n\n",
+    "closed_at": "2010-10-03T16:27:00Z",
     "created_at": "2009-05-21T15:41:55Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,8 +17,6 @@ archive/issues_006113.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
-
 CC:  jcremona
 
 Keywords: segfault division points torsion polynomial

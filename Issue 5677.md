@@ -4,6 +4,7 @@ archive/issues_005677.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: underscore repeat output\n\nWhen creating a function with a statement like\n\n`f(x,y) = x<sup>2+y</sup>2`\n\nthe preparser creates a command to declare the variables and assigns it to underscore.  This renders the underscore unusable for repeating the previous output.\n\nA workaround is to use  \n\n`del _` \n\nto restore the functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5677\n\n",
+    "closed_at": "2013-07-23T12:56:14Z",
     "created_at": "2009-04-03T21:39:51Z",
     "labels": [
         "component: user interface",

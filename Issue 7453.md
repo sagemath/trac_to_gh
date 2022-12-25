@@ -3,7 +3,8 @@
 archive/issues_007453.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @wdjoyner\n\nKeywords: sandpile\n\nDavid Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html#projective\nfor his documentation of it.\nThis ticket makes an experimental spkg for the module.  It installs glpk and 4ti2 which are required for the full functionality.\nFirst attempt is up at:\nhttp://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7453\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @wdjoyner\n\nKeywords: sandpile\n\nDavid Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html\nfor his documentation of it.\nThis ticket makes an experimental spkg for the module.  It installs glpk and 4ti2 which are required for the full functionality.\nFirst attempt is up at:\nhttp://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7453\n\n",
+    "closed_at": "2010-02-07T05:37:48Z",
     "created_at": "2009-11-13T18:13:08Z",
     "labels": [
         "component: algebraic geometry",
@@ -22,11 +23,12 @@ CC:  @wdjoyner
 
 Keywords: sandpile
 
-David Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html#projective
+David Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html
 for his documentation of it.
 This ticket makes an experimental spkg for the module.  It installs glpk and 4ti2 which are required for the full functionality.
 First attempt is up at:
 http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7453
 

@@ -1,16 +1,17 @@
-# Issue 6561: Trivial bug with cartesian product of an empty list of iterators
+# Issue 6561: [with patch, positive review] Trivial bug with cartesian product of an empty list of iterators
 
 archive/issues_006561.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @williamstein\n\nThe function cartesian_product_iterator (which takes a list of iterators as input) gets the wrong answer when given an empty list. It returns an empty list; but the cartesian product of an empty list of iterators should be *the list containing the empty tuple*. \n\nThe current behaviour means as a consequence that listing the elements of the zero finitely-presented module returns an empty list, rather than [0] which is clearly the right answer.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6561\n\n",
+    "closed_at": "2009-08-24T05:51:20Z",
     "created_at": "2009-07-19T18:11:06Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Trivial bug with cartesian product of an empty list of iterators",
+    "title": "[with patch, positive review] Trivial bug with cartesian product of an empty list of iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6561",
     "user": "https://github.com/loefflerd"

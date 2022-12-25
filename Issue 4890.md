@@ -1,16 +1,17 @@
-# Issue 4890: get rid of nauty's stupid interactive license agreement in the optional spkg install
+# Issue 4890: [with spkg; needs review] get rid of nauty's stupid interactive license agreement in the optional spkg install
 
 archive/issues_004890.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI hate stuff like this:\n\n```\n*     B. D. McKay, nauty User's Guide (Version 2.4),\n*         http://cs.anu.edu.au/~bdm/nauty/.\nDo you accept nauty's license agreement, listed above? (y/n)\n```\n\nand as an argument against it note that a _lot_ of stuff in optional isn't gpl compatible, is binary only, etc., but we never have any explicit agreements like the above for anything else. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4890\n\n",
+    "closed_at": "2009-03-15T22:57:41Z",
     "created_at": "2008-12-30T07:28:07Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "get rid of nauty's stupid interactive license agreement in the optional spkg install",
+    "title": "[with spkg; needs review] get rid of nauty's stupid interactive license agreement in the optional spkg install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4890",
     "user": "https://github.com/williamstein"

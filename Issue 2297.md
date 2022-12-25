@@ -1,16 +1,17 @@
-# Issue 2297: Tensor product of matrices [with patch, needs review]
+# Issue 2297: [with patch, with positive review] Tensor product of matrices
 
 archive/issues_002297.json:
 ```json
 {
     "body": "Assignee: @simon-king-jena\n\nKeywords: tensor product\n\nI was missing a tensor product for matrices in Sage. While this is easy to obtain using `block_matrix`, it might be nicer to customize this as a method of `Matrix`. Example:\n\n```\nsage: M1=Matrix(QQ,[[-1,0],[-1/2,-1]])\nsage: M2=Matrix(ZZ,[[1,-1,2],[-2,4,8]])\nsage: M1.tensor_product(M2)\n\n[  -1    1   -2|   0    0    0]\n[   2   -4   -8|   0    0    0]\n[--------------+--------------]\n[-1/2  1/2   -1|  -1    1   -2]\n[   1   -2   -4|   2   -4   -8]\nsage: M2.tensor_product(M1)\n\n[  -1    0|   1    0|  -2    0]\n[-1/2   -1| 1/2    1|  -1   -2]\n[---------+---------+---------]\n[   2    0|  -4    0|  -8    0]\n[   1    2|  -2   -4|  -4   -8]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2297\n\n",
+    "closed_at": "2008-02-26T05:07:05Z",
     "created_at": "2008-02-24T20:48:15Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Tensor product of matrices [with patch, needs review]",
+    "title": "[with patch, with positive review] Tensor product of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2297",
     "user": "https://github.com/simon-king-jena"

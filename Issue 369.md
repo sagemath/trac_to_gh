@@ -4,6 +4,7 @@ archive/issues_000369.json:
 ```json
 {
     "body": "Assignee: boothby\n\nType\n\n# is this blah?\n\nshift-enter in the notebook.  The ? isn't ignored as it should be.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/369\n\n",
+    "closed_at": "2008-01-20T19:49:11Z",
     "created_at": "2007-05-18T19:20:05Z",
     "labels": [
         "component: notebook",

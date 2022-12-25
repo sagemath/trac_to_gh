@@ -4,6 +4,7 @@ archive/issues_005305.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nCC:  @qed777\n\n[http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e](http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e)\n\nIt would be\ngreat if somebody added one, especially one that was built using the\njquery javascript library.  There currently isn't a date picker\ninteract in sage yet. \n\nThere actually is a datepicker in jQuery.\n[http://docs.jquery.com/UI/Datepicker#overview](http://docs.jquery.com/UI/Datepicker#overview)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5305\n\n",
+    "closed_at": "2017-03-21T11:19:59Z",
     "created_at": "2009-02-18T13:20:57Z",
     "labels": [
         "component: interact"

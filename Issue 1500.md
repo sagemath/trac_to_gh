@@ -1,15 +1,16 @@
-# Issue 1500: solve_mod -- implement solving modulo n in sage
+# Issue 1500: [with patch, positive review] solve_mod -- implement solving modulo n in sage
 
 archive/issues_001500.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI've already had two requests just today to solve simple equations modulo n.\n\nHere is code to be pasted into the notebook that can do it:\n\n```\ndef solve_mod(eqns, modulus):\n    \"\"\"\n    Return all solutions to an equation or lists of equations modulo \n    the given integer modulus.  Each equation must involve only \n    polynomials in 1 or many variables. \n\n    The solutions are returned as n-tuples, where n is the \n    number of variables appearing anywhere in the given equations.  \n    The variables are in alphabetical order. \n\n\n    INPUT:\n        eqns -- equation or list of equations\n        modulus -- an integer \n\n    EXAMPLES:\n        sage: var('x,y')\n        (x, y)\n        sage: solve_mod([x^2 + 2 == x, x^2 + y == y^2], 14)\n        [(2, 4), (6, 4), (9, 4), (13, 4)]\n\n    Fermat's equation modulo 3 with exponent 5:\n        sage: var('x,y,z')\n        (x, y, z)\n        sage: time solve_mod([x^5 + y^5 == z^5], 3)\n        [(0, 0, 0), (0, 1, 1), (0, 2, 2), (1, 0, 1), (1, 1, 2), (1, 2, 0), (2, 0, 2), (2, 1, 0), (2, 2, 1)]\n        \n    WARNING:\n        Currently this naively enumerates all possible solutions.\n        The interface is good, but the algorithm is horrible if the\n        modulus is at all large!   Sage *does* have the ability to do\n        something much faster in certain cases at least by using\n        the Chinese Remainder Theorem, Groebner basis, linear algebra\n        techniques, etc.  But for a lot of toy problems this function\n        as is might be useful.  At least it establishes an interface.\n    \"\"\"\n    if not isinstance(eqns, (list, tuple)):\n        eqns = [eqns]\n    vars = list(set(sum([list(e.variables()) for e in eqns], [])))\n    vars.sort()\n    n = len(vars)\n    R = Integers(modulus)\n    S = PolynomialRing(R, vars)\n    eqns_mod = [S(eq) if is_SymbolicExpression(eq) else \\\n                  S(eq.lhs() - eq.rhs()) for eq in eqns]\n    ans = []\n    for t in cartesian_product_iterator([R]*len(vars)):\n        is_soln = True\n        for e in eqns_mod:\n            if e(t) != 0:\n                is_soln = False\n                break\n        if is_soln:\n            ans.append(t)\n\n    return ans\n```\n\nI'll incorporate this into sage as a patch in a moment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1500\n\n",
+    "body": "Assignee: @williamstein\n\nI've already had two requests just today to solve simple equations modulo n.\n\nHere is code to be pasted into the notebook that can do it:\n\n```\ndef solve_mod(eqns, modulus):\n    \"\"\"\n    Return all solutions to an equation or lists of equations modulo \n    the given integer modulus.  Each equation must involve only \n    polynomials in 1 or many variables. \n\n    The solutions are returned as n-tuples, where n is the \n    number of variables appearing anywhere in the given equations.  \n    The variables are in alphabetical order. \n\n\n    INPUT:\n        eqns -- equation or list of equations\n        modulus -- an integer \n\n    EXAMPLES:\n        sage: var('x,y')\n        (x, y)\n        sage: solve_mod([x^2 + 2 == x, x^2 + y == y^2], 14)\n        [(2, 4), (6, 4), (9, 4), (13, 4)]\n        sage: solve_mod([x^2 == 1, 4*x  == 11], 15)\n        [(14,)]\n\n    Fermat's equation modulo 3 with exponent 5:\n        sage: var('x,y,z')\n        (x, y, z)\n        sage: time solve_mod([x^5 + y^5 == z^5], 3)\n        [(0, 0, 0), (0, 1, 1), (0, 2, 2), (1, 0, 1), (1, 1, 2), (1, 2, 0), (2, 0, 2), (2, 1, 0), (2, 2, 1)]\n        \n    WARNING:\n        Currently this naively enumerates all possible solutions.\n        The interface is good, but the algorithm is horrible if the\n        modulus is at all large!   Sage *does* have the ability to do\n        something much faster in certain cases at least by using\n        the Chinese Remainder Theorem, Groebner basis, linear algebra\n        techniques, etc.  But for a lot of toy problems this function\n        as is might be useful.  At least it establishes an interface.\n    \"\"\"\n    if not isinstance(eqns, (list, tuple)):\n        eqns = [eqns]\n    modulus = Integer(modulus)\n    if modulus < 1:\n         raise ValueError, \"the modulus must be a positive integer\"\n    vars = list(set(sum([list(e.variables()) for e in eqns], [])))\n    vars.sort()\n    n = len(vars)\n    R = Integers(modulus)\n    S = MPolynomialRing(R, len(vars), vars)\n    eqns_mod = [S(eq) if is_SymbolicExpression(eq) else \\\n                  S(eq.lhs() - eq.rhs()) for eq in eqns]\n    ans = []\n    for t in cartesian_product_iterator([R]*len(vars)):\n        is_soln = True\n        for e in eqns_mod:\n            if e(t) != 0:\n                is_soln = False\n                break\n        if is_soln:\n            ans.append(t)\n\n    return ans\n```\n\nI'll incorporate this into sage as a patch in a moment. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1500\n\n",
+    "closed_at": "2007-12-14T05:09:28Z",
     "created_at": "2007-12-14T00:25:25Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "solve_mod -- implement solving modulo n in sage",
+    "title": "[with patch, positive review] solve_mod -- implement solving modulo n in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1500",
     "user": "https://github.com/williamstein"
@@ -42,6 +43,8 @@ def solve_mod(eqns, modulus):
         (x, y)
         sage: solve_mod([x^2 + 2 == x, x^2 + y == y^2], 14)
         [(2, 4), (6, 4), (9, 4), (13, 4)]
+        sage: solve_mod([x^2 == 1, 4*x  == 11], 15)
+        [(14,)]
 
     Fermat's equation modulo 3 with exponent 5:
         sage: var('x,y,z')
@@ -60,11 +63,14 @@ def solve_mod(eqns, modulus):
     """
     if not isinstance(eqns, (list, tuple)):
         eqns = [eqns]
+    modulus = Integer(modulus)
+    if modulus < 1:
+         raise ValueError, "the modulus must be a positive integer"
     vars = list(set(sum([list(e.variables()) for e in eqns], [])))
     vars.sort()
     n = len(vars)
     R = Integers(modulus)
-    S = PolynomialRing(R, vars)
+    S = MPolynomialRing(R, len(vars), vars)
     eqns_mod = [S(eq) if is_SymbolicExpression(eq) else \
                   S(eq.lhs() - eq.rhs()) for eq in eqns]
     ans = []
@@ -80,7 +86,7 @@ def solve_mod(eqns, modulus):
     return ans
 ```
 
-I'll incorporate this into sage as a patch in a moment.
+I'll incorporate this into sage as a patch in a moment. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1500
 

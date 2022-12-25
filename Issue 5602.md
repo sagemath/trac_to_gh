@@ -3,10 +3,12 @@
 archive/issues_005602.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nFor reference, here is what MMA does: \n\nhttp://reference.wolfram.com/mathematica/ref/Darker.html\n\nhttp://reference.wolfram.com/mathematica/ref/Lighter.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5602\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nFor reference, here is what MMA does: \n\nhttp://reference.wolfram.com/mathematica/ref/Darker.html\n\nhttp://reference.wolfram.com/mathematica/ref/Lighter.html\n\nRelated tickets:\n\n* #5601 - predefine colors in Sage.\n* #5602 - make .lighter() and .darker() methods for Sage Color objects.\n* #5603 - make a .mix() method for Sage color objects.\n* #5604 - average Color objects when adding them together.\n* #5605 - Construct Color objects using hsl and hsv values.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5602\n\n",
+    "closed_at": "2010-05-11T20:35:37Z",
     "created_at": "2009-03-24T21:28:09Z",
     "labels": [
-        "component: graphics"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "make .lighter() and .darker() methods for Sage Color objects",
@@ -26,6 +28,15 @@ For reference, here is what MMA does:
 http://reference.wolfram.com/mathematica/ref/Darker.html
 
 http://reference.wolfram.com/mathematica/ref/Lighter.html
+
+Related tickets:
+
+* #5601 - predefine colors in Sage.
+* #5602 - make .lighter() and .darker() methods for Sage Color objects.
+* #5603 - make a .mix() method for Sage color objects.
+* #5604 - average Color objects when adding them together.
+* #5605 - Construct Color objects using hsl and hsv values.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5602
 

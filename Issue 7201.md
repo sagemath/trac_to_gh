@@ -4,6 +4,7 @@ archive/issues_007201.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nEvery now and then, the auto-expansion of code cells doesn't quite get all of the code, which leads to frustration because you can't see the last line or two of your code in a cell.  I think this has happened when the code on a line wraps to the next line maybe (I don't have an example of it happening right now).\n\nAnyways, putting scroll bars on the code cells using the overflow attribute (so they're only there when they are needed) is an easy way to guard against errors in the auto-expansion code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7201\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-10-13T14:41:07Z",
     "labels": [
         "component: notebook",

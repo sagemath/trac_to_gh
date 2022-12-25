@@ -1,16 +1,17 @@
-# Issue 7826: [with spkg] mpfi ignores SAGE64
+# Issue 7826: mpfi ignores SAGE64
 
 archive/issues_007826.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nmpfi like many packages ignores the setting of SAGE64. mpfi clears CFLAGS, so even setting environment variables will not allow this to build. Hence spkg-install needed updating. \n\nI left some remarks for the package maintainer, on how to get rid of the SAGE64 junk. \n\nAn updated package can be found at the following address. All changes are checked in. \n\nSee:\nhttp://boxen.math.washington.edu/home/kirkby/portability/mpfi-1.3.4-cvs20071125.p8/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7826\n\n",
+    "closed_at": "2010-06-05T19:29:16Z",
     "created_at": "2010-01-03T03:05:51Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "[with spkg] mpfi ignores SAGE64",
+    "title": "mpfi ignores SAGE64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7826",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

@@ -1,9 +1,10 @@
-# Issue 3721: [with patch; needs review] Use SAGE_TESTDIR for dsage unit tests
+# Issue 3721: [with patch, positive review] Use SAGE_TESTDIR for dsage unit tests
 
 archive/issues_003721.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\ndsage tests currently ignore the SAGE_TESTDIR environment variable, resulting in permission denied errors for users who don't have write access to their Sage install.\n\nI've attached a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3721\n\n",
+    "closed_at": "2008-07-31T00:58:36Z",
     "created_at": "2008-07-25T05:31:34Z",
     "labels": [
         "component: dsage",
@@ -11,7 +12,7 @@ archive/issues_003721.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] Use SAGE_TESTDIR for dsage unit tests",
+    "title": "[with patch, positive review] Use SAGE_TESTDIR for dsage unit tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3721",
     "user": "https://github.com/timabbott"

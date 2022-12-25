@@ -3,7 +3,8 @@
 archive/issues_001819.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  sbulygin mhampton\n\nThough it is motivated by cryptography it is not specific to it, maybe move it to `sage.rings.polynomial` after all ideals are there as well?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1819\n\n",
+    "body": "Assignee: @malb\n\nCC:  sbulygin mhampton\n\n`mq.MPolynomialSystem` is more general than its position in the tree suggests. I should be moved to `sage.rings.polynomial.multi_polynomial_sequence` and used as a special case of `Sequence` if the members are all multivariate polynomials.\n\n**Depends on #10600**\n\nIssue created by migration from https://trac.sagemath.org/ticket/1819\n\n",
+    "closed_at": "2011-03-08T21:45:01Z",
     "created_at": "2008-01-18T00:29:31Z",
     "labels": [
         "component: commutative algebra"
@@ -19,7 +20,9 @@ Assignee: @malb
 
 CC:  sbulygin mhampton
 
-Though it is motivated by cryptography it is not specific to it, maybe move it to `sage.rings.polynomial` after all ideals are there as well?
+`mq.MPolynomialSystem` is more general than its position in the tree suggests. I should be moved to `sage.rings.polynomial.multi_polynomial_sequence` and used as a special case of `Sequence` if the members are all multivariate polynomials.
+
+**Depends on #10600**
 
 Issue created by migration from https://trac.sagemath.org/ticket/1819
 

@@ -3,7 +3,7 @@
 archive/issues_004748.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis works\n\n```\nsage: sqrt(1+x+O(x^5))\n1 + 1/2*x - 1/8*x^2 + 1/16*x^3 - 5/128*x^4 + O(x^5)\n```\n\nOne would expect this to work: \n\n```\nsage: R.<x> = ZZ[[]]\nsage: exp(x+O(x^5))\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 8415, in __call__\n    return x.exp()\n  File \"power_series_ring_element.pyx\", line 1383, in sage.rings.power_series_ring_element.PowerSeries.exp (sage/rings/power_series_ring_element.c:9850)\n  File \"power_series_ring_element.pyx\", line 1305, in sage.rings.power_series_ring_element.PowerSeries.solve_linear_de (sage/rings/power_series_ring_element.c:9707)\n  File \"power_series_ring_element.pyx\", line 1648, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11103)\n  File \"power_series_ring_element.pyx\", line 1650, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11124)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 252, in __call__\n    return C(self, x, check, is_gen, construct=construct)\n  File \"polynomial_integer_dense_flint.pyx\", line 224, in sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint.__init__ (sage/rings/polynomial/polynomial_integer_dense_flint.cpp:4981)\n  File \"parent.pyx\", line 293, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3828)\n  File \"parent.pyx\", line 284, in sage.structure.parent.__call__ (sage/structure/parent.c:3712)\n  File \"rational.pyx\", line 2288, in sage.rings.rational.Q_to_Z._call_ (sage/rings/rational.c:14682)\nTypeError: no conversion of this rational to integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4748\n\n",
+    "body": "Assignee: somebody\n\nThis works\n\n```\nsage: R.<x> = ZZ[]\nsage: sqrt(1+x+O(x^5))\n1 + 1/2*x - 1/8*x^2 + 1/16*x^3 - 5/128*x^4 + O(x^5)\n```\n\nOne would expect this to work: \n\n```\nsage: R.<x> = ZZ[[]]\nsage: exp(x+O(x^5))\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 8415, in __call__\n    return x.exp()\n  File \"power_series_ring_element.pyx\", line 1383, in sage.rings.power_series_ring_element.PowerSeries.exp (sage/rings/power_series_ring_element.c:9850)\n  File \"power_series_ring_element.pyx\", line 1305, in sage.rings.power_series_ring_element.PowerSeries.solve_linear_de (sage/rings/power_series_ring_element.c:9707)\n  File \"power_series_ring_element.pyx\", line 1648, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11103)\n  File \"power_series_ring_element.pyx\", line 1650, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11124)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 252, in __call__\n    return C(self, x, check, is_gen, construct=construct)\n  File \"polynomial_integer_dense_flint.pyx\", line 224, in sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint.__init__ (sage/rings/polynomial/polynomial_integer_dense_flint.cpp:4981)\n  File \"parent.pyx\", line 293, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3828)\n  File \"parent.pyx\", line 284, in sage.structure.parent.__call__ (sage/structure/parent.c:3712)\n  File \"rational.pyx\", line 2288, in sage.rings.rational.Q_to_Z._call_ (sage/rings/rational.c:14682)\nTypeError: no conversion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4748\n\n",
     "created_at": "2008-12-10T00:08:49Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,6 +22,7 @@ Assignee: somebody
 This works
 
 ```
+sage: R.<x> = ZZ[]
 sage: sqrt(1+x+O(x^5))
 1 + 1/2*x - 1/8*x^2 + 1/16*x^3 - 5/128*x^4 + O(x^5)
 ```
@@ -47,6 +48,7 @@ Traceback (most recent call last):
   File "rational.pyx", line 2288, in sage.rings.rational.Q_to_Z._call_ (sage/rings/rational.c:14682)
 TypeError: no conversion of this rational to integer
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4748
 

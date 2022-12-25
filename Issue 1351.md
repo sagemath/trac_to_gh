@@ -4,6 +4,7 @@ archive/issues_001351.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt would save a lot of time and confusion if\n\n sage: notebook()\n\ndidn't require the user to read crazy output and figure out that they should use\n\"admin\" as the login.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/1351\n\n",
+    "closed_at": "2008-05-10T21:07:24Z",
     "created_at": "2007-12-01T18:05:05Z",
     "labels": [
         "component: notebook"

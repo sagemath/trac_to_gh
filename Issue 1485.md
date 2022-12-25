@@ -1,23 +1,24 @@
-# Issue 1485: wrapper for invariant_ring and invariant_algebra_reynolds in Singular
+# Issue 1485: [with bundle, with posititve review] wrapper for invariant_ring and invariant_algebra_reynolds in Singular
 
 archive/issues_001485.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nWraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]^G, where G in GL(n,F) is a finite matrix group.\n\nIn the \"good characteristic\" case the polynomials returned form a minimal generating set for the algebra of G-invariant polynomials. In the \"bad\" case, the polynomials returned are primary and secondary invariants, forming a not necessarily minimal generating set for the algebra of G-invariant polynomials.\n\nPatch is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group20071213.hg\nand file is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/1485\n\n",
+    "body": "Assignee: @wdjoyner\n\nWraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]<sup>G</sup>, where G in GL(n,F) is a finite matrix group.\n\nIn the \"good characteristic\" case the polynomials returned form a minimal generating set for the algebra of G-invariant polynomials. In the \"bad\" case, the polynomials returned are primary and secondary invariants, forming a not necessarily minimal generating set for the algebra of G-invariant polynomials.\n\nPatch is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group20071213.hg\nand file is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/1485\n\n",
+    "closed_at": "2008-01-19T17:08:07Z",
     "created_at": "2007-12-13T12:30:16Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "wrapper for invariant_ring and invariant_algebra_reynolds in Singular",
+    "title": "[with bundle, with posititve review] wrapper for invariant_ring and invariant_algebra_reynolds in Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1485",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: @malb
+Assignee: @wdjoyner
 
-Wraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]^G, where G in GL(n,F) is a finite matrix group.
+Wraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]<sup>G</sup>, where G in GL(n,F) is a finite matrix group.
 
 In the "good characteristic" case the polynomials returned form a minimal generating set for the algebra of G-invariant polynomials. In the "bad" case, the polynomials returned are primary and secondary invariants, forming a not necessarily minimal generating set for the algebra of G-invariant polynomials.
 

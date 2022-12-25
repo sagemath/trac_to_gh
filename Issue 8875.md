@@ -1,9 +1,10 @@
-# Issue 8875: Problem with Set created from iterator.
+# Issue 8875: Problem with Set created from iterator
 
 archive/issues_008875.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nA Set_object gets created instead of an Set_object_enumerated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8875\n\n",
+    "body": "Assignee: sage-combinat\n\nA Set_object gets created instead of an Set_object_enumerated when calling the Set function with an iterator as argument.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8875\n\n",
+    "closed_at": "2010-05-08T21:43:31Z",
     "created_at": "2010-05-04T20:43:08Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_008875.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "Problem with Set created from iterator.",
+    "title": "Problem with Set created from iterator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8875",
     "user": "https://trac.sagemath.org/admin/accounts/users/mrobado"
@@ -19,7 +20,7 @@ archive/issues_008875.json:
 ```
 Assignee: sage-combinat
 
-A Set_object gets created instead of an Set_object_enumerated.
+A Set_object gets created instead of an Set_object_enumerated when calling the Set function with an iterator as argument.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8875
 

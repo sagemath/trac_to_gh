@@ -3,11 +3,11 @@
 archive/issues_007052.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nPlaying around with some graphs I noticed that even though the graph below (the McGee graph) not is bipartite, it is claimed to have chromatic number 2 (This should be 3).\n\nThe error seems to be in the calculation of the chromatic polynomial, as there is no chromatic root (x-2) in the factorization of the chromatic polynomial, which is then used to say that there exists 2-colorings of the graph.\n\n\nCode to reproduce:\n\n```\nG = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\\\n            5:[4,6,22], 6:[5,7,18], 7:[6,8,14], 8:[1,7,9], 9:[8,10,21], 10:[9,11,17],\\\n            11:[4,10,12], 12:[0,11,13], 13:[12,14,20], 14:[7,13,15],\\\n            15:[3,14,16], 16:[15,17,23], 17:[10,16,18], 18:[6,17,19], 19:[2,18,20], 20:[13,19,21],\\\n            21:[9,20,22], 22:[5,21,23], 23:[0,16,22]})\nprint G.is_bipartite()\nprint G.chromatic_number()\nprint G.chromatic_polynomial().factor()\n```\nOutput from code above:\n\n```\nFalse\n2\n(x - 1) * x * (x^22 - 35*x^21 + 595*x^20 - 6545*x^19 + 52360*x^18 -\n324632*x^17 + 1623128*x^16 - 6723558*x^15 + 23521860*x^14 -\n70477280*x^13 + 182703380*x^12 - 412698250*x^11 + 815778984*x^10 +\n2881630536*x^9 + 2143156981*x^8 + 1464159543*x^7 + 3227470630*x^6 +\n1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -\n257225680*x + 42167160)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7052\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nPlaying around with some graphs I noticed that even though the graph below (the McGee graph) not is bipartite, it is claimed to have chromatic number 2 (This should be 3).\n\nThe error seems to be in the calculation of the chromatic polynomial, as there is no chromatic root (x-2) in the factorization of the chromatic polynomial, which is then used to say that there exists 2-colorings of the graph.\n\n\nCode to reproduce:\n\n```\nG = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\\\n            5:[4,6,22], 6:[5,7,18], 7:[6,8,14], 8:[1,7,9], 9:[8,10,21], 10:[9,11,17],\\\n            11:[4,10,12], 12:[0,11,13], 13:[12,14,20], 14:[7,13,15],\\\n            15:[3,14,16], 16:[15,17,23], 17:[10,16,18], 18:[6,17,19], 19:[2,18,20], 20:[13,19,21],\\\n            21:[9,20,22], 22:[5,21,23], 23:[0,16,22]})\nprint G.is_bipartite()\nprint G.chromatic_number()\nprint G.chromatic_polynomial().factor()\n```\nOutput from code above:\n\n```\nFalse\n2\n(x - 1) * x * (x^22 - 35*x^21 + 595*x^20 - 6545*x^19 + 52360*x^18 -\n324632*x^17 + 1623128*x^16 - 6723558*x^15 + 23521860*x^14 -\n70477280*x^13 + 182703380*x^12 - 412698250*x^11 + 815778984*x^10 +\n2881630536*x^9 + 2143156981*x^8 + 1464159543*x^7 + 3227470630*x^6 +\n1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -\n257225680*x + 42167160)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7052\n\n",
+    "closed_at": "2009-11-05T02:17:23Z",
     "created_at": "2009-09-28T15:43:21Z",
     "labels": [
         "component: graph theory",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
@@ -50,6 +50,7 @@ False
 1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -
 257225680*x + 42167160)
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7052
 

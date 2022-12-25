@@ -1,16 +1,17 @@
-# Issue 2927: [with spkg, needs review] gcc 4.3: make Singular.spkg compile
+# Issue 2927: [with spkg, with positive review] gcc 4.3: make Singular.spkg compile
 
 archive/issues_002927.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHe current Singular.spkg foes not compile with gcc 4.3. We need three small patches to make it work. The updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha5/singular-3-0-4-2-20080405.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2927\n\n",
+    "closed_at": "2008-04-15T06:07:38Z",
     "created_at": "2008-04-15T05:23:56Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg, needs review] gcc 4.3: make Singular.spkg compile",
+    "title": "[with spkg, with positive review] gcc 4.3: make Singular.spkg compile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2927",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

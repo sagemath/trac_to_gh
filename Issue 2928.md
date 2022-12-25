@@ -1,9 +1,10 @@
-# Issue 2928: another p-adic extension segfault
+# Issue 2928: [with patch; positive review] another p-adic extension segfaul
 
 archive/issues_002928.json:
 ```json
 {
     "body": "Assignee: @roed314\n\n```\nK.<b> = Qp(13).extension(x^2+x-1)\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort\ntrap              python \"$@\"\n```\n\nApplying the patches from #2843 didn't fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2928\n\n",
+    "closed_at": "2008-04-21T00:37:10Z",
     "created_at": "2008-04-15T05:49:17Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002928.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "another p-adic extension segfault",
+    "title": "[with patch; positive review] another p-adic extension segfaul",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2928",
     "user": "https://github.com/robertwb"

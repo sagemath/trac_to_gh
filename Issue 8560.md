@@ -4,6 +4,7 @@ archive/issues_008560.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLatest Magma v2.16-6 fails to load under Sage 4.3.3, with \n  the following error message: \n\n\nsage: magma_console() \n  dyld: Library not loaded: `@`executable_path/libgmp.3.dylib \n \u00a0  Referenced from: /Applications/Magma/bin/magma.exe \n \u00a0 Reason:  Incompatible library version: magma.exe requires version \n 9.0.0 or  later, but libgmp.3.dylib provides version 8.0.0 \n /usr/bin/magma:  line 72: 16880 Trace/BPT trap \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\"${ROOT}/bin/ \n magma.exe\" $* \n\n\nThe reason of the failure is  that Sage defines the variable DYLD_LIBRARY_PATH when it executes  Magma. If you undefine it or define it to point to the right place,  then there is no problem\n\nThe solution is to use sage-native-execute in Magma interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8560\n\n",
+    "closed_at": "2010-04-16T18:47:14Z",
     "created_at": "2010-03-19T09:14:06Z",
     "labels": [
         "component: interfaces",

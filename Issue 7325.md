@@ -4,6 +4,7 @@ archive/issues_007325.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nKeywords: relation, symbolics, inequality, solve\n\nThere is no interface to solvers of inequalities available in Maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7325\n\n",
+    "closed_at": "2010-01-30T23:39:14Z",
     "created_at": "2009-10-27T21:47:53Z",
     "labels": [
         "component: algebra"

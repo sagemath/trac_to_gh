@@ -1,16 +1,17 @@
-# Issue 5858: Octave library linking problems
+# Issue 5858: [with patch, positive review] use sage-native-execute to start octave
 
 archive/issues_005858.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: octave, library linking\n\nEmail from sage-support describes the problem and Michael Abshoff's comments about what needs to be done:\n\nOn Apr 22, 12:46 am, Ajay Rawat <ajay.rawa...`@`gmail.com> wrote:\n\n> Well i tried the command\n> sage:octave_version()\n> sage:3.0.0\n> but when i tried octave_console\n> it replied...................\n\n\n> octave:\n> /usr/local/sage-3.2.3-Ubuntu8.04LTS-64bit-Intel-x86_64-Linux/local/lib/l\\\n> ibz.so.1: no version information available (required by\n> /usr/lib/octave-3.0.0/liboctinterp.so)\n\n\nThe problem is that the libz shipped by Sage and the one used by the\nsystem (and which was linked by Octave) do not play nicely together.\n\nTo work around this write a script called octave (I assume that is the\nname of the octave start script/binary\n\n#!/bin/sh\nLD_LIBRARY_PATH=SAGE_ORIG_LD_LIBRARY_PATH; export LD_LIBRARY_PATH\nexec octave \"$`@`\"\n\nI didn't try this, so you might need to adjust something.\n\nTo fix this once and for all in sage we should use native execute -\nwould someone open a ticket since I am about to go offline for the\nnight :)\n\nCheers,\n\nMichael \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5858\n\n",
+    "closed_at": "2009-09-15T23:28:51Z",
     "created_at": "2009-04-22T17:57:18Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Octave library linking problems",
+    "title": "[with patch, positive review] use sage-native-execute to start octave",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5858",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

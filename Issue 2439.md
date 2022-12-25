@@ -1,9 +1,10 @@
-# Issue 2439: ZZ.random_element() crashes Sage with probability 2^-31
+# Issue 2439: [with patch, positive review] ZZ.random_element() crashes Sage with probability 2^-31
 
 archive/issues_002439.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nZZ.random_element() does an integer divide by zero once every 2<sup>31</sup> calls.\n\nI'll make a patch as soon as my rc3 build finishes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2439\n\n",
+    "closed_at": "2008-03-09T19:04:00Z",
     "created_at": "2008-03-09T17:40:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_002439.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "ZZ.random_element() crashes Sage with probability 2^-31",
+    "title": "[with patch, positive review] ZZ.random_element() crashes Sage with probability 2^-31",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2439",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

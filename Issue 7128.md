@@ -4,6 +4,7 @@ archive/issues_007128.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nAn inspection of spkg-install for zlib shows that the -m64 flag is only added on OS X, and not on Solaris. \n\n```\n# The -fPIC is needed otherwise builing libpng fails later\n# (at least on a Debian 64-bit opteron).\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```\n\nThere are several things wrong with this\n* -fPIC is not a universally used flag. The correct flag to use on Solaris is -KPIC, though -fPIC will be accepted. On other compilers, such as those on AIX or HP-UX, there is no guarantee that -fPIC is the correct flag. \n* The -m64 flag to build 64-bit code is only used on OS X. It is not used on Solaris, despite the fact we are supposed to be supporting Solaris. On some compilers, **the correct flag to produce 64-bit code is not -m64**. IBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7128\n\n",
+    "closed_at": "2011-04-05T15:53:41Z",
     "created_at": "2009-10-05T22:49:47Z",
     "labels": [
         "component: porting",

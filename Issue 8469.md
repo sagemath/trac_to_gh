@@ -1,15 +1,16 @@
-# Issue 8469: add "Number Theory and the RSA Public Key Cryptosystem" to "Sage HOWTOs"
+# Issue 8469: add "Number Theory and the RSA Public Key Cryptosystem" to "Thematic Tutorials"
 
 archive/issues_008469.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @malb\n\nKeywords: RSA, public-key cryptosystem\n\nAdd the document [Number Theory and the RSA Public Key Cryptosystem](http://sites.google.com/site/nguyenminh2/numtheory-crypto-sage.pdf) to the documentation category \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8469\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @malb\n\nKeywords: RSA, public-key cryptosystem, sd32\n\nAdd the document [Number Theory and the RSA Public Key Cryptosystem](http://sites.google.com/site/nguyenminh2/numtheory-crypto-sage.pdf) to the documentation category \"Thematic Tutorials\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** The current ticket needs to be coordinated with #8470.\n\n\n\n**Prerequisites:** #8465\n\n**Apply:**\n\n1. [attachment:trac_8469-rsa-rebase.patch]\n2. [attachment:trac_8469-review-rebased.patch]\n3. [attachment:trac_8469-rsa-bibliography.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8469\n\n",
+    "closed_at": "2011-09-12T19:35:15Z",
     "created_at": "2010-03-07T02:25:47Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "add \"Number Theory and the RSA Public Key Cryptosystem\" to \"Sage HOWTOs\"",
+    "title": "add \"Number Theory and the RSA Public Key Cryptosystem\" to \"Thematic Tutorials\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8469",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -19,9 +20,23 @@ Assignee: mvngu
 
 CC:  @malb
 
-Keywords: RSA, public-key cryptosystem
+Keywords: RSA, public-key cryptosystem, sd32
 
-Add the document [Number Theory and the RSA Public Key Cryptosystem](http://sites.google.com/site/nguyenminh2/numtheory-crypto-sage.pdf) to the documentation category "Sage HOWTOs". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+Add the document [Number Theory and the RSA Public Key Cryptosystem](http://sites.google.com/site/nguyenminh2/numtheory-crypto-sage.pdf) to the documentation category "Thematic Tutorials". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+
+
+
+**Notes:** The current ticket needs to be coordinated with #8470.
+
+
+
+**Prerequisites:** #8465
+
+**Apply:**
+
+1. [attachment:trac_8469-rsa-rebase.patch]
+2. [attachment:trac_8469-review-rebased.patch]
+3. [attachment:trac_8469-rsa-bibliography.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8469
 

@@ -4,6 +4,7 @@ archive/issues_005399.json:
 ```json
 {
     "body": "Assignee: psinis\n\nKeywords: finance, date\n\nFinanceDate class extends datetime.date in the Python Standard Lib. The goal is to introduce business-day calculations in Sage, and to give the user an easy API for coding futures & options expiries, generating swap & bond payment dates, and calculating holidays in all the major markets.\n\nTo be attached soon:\nFinanceDate.py\neaster.py\nrelativedelta.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/5399\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2009-02-28T03:34:23Z",
     "labels": [
         "component: finance"

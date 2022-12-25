@@ -1,16 +1,17 @@
-# Issue 3630: [with spkg, needs review] twisted 8.1.0
+# Issue 3630: [with spkg, positive review] twisted 8.1.0
 
 archive/issues_003630.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSPKG here:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/twisted-8.1.0.p0.spkg\n\n8.1.0 fixes a major trial issue thats important for the dsage doctests. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3630\n\n",
+    "closed_at": "2008-08-28T23:57:38Z",
     "created_at": "2008-07-10T06:16:25Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] twisted 8.1.0",
+    "title": "[with spkg, positive review] twisted 8.1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3630",
     "user": "https://github.com/yqiang"

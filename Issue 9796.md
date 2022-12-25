@@ -4,6 +4,7 @@ archive/issues_009796.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nSee \n\n   http://ask.sagemath.org/question/42/is-there-a-way-to-make-an-audible-noise-when-a-computation-is-complete\n\nIssue created by migration from https://trac.sagemath.org/ticket/9797\n\n",
+    "closed_at": "2020-08-19T12:34:02Z",
     "created_at": "2010-08-24T21:07:14Z",
     "labels": [
         "component: notebook"

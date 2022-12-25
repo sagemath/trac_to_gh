@@ -1,16 +1,16 @@
-# Issue 6121: use metaclasses to support nested class pickling
+# Issue 6121: [with patch, positive review] use metaclasses to support nested class pickling
 
 archive/issues_006121.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  sage-combinat cwitty\n\nKeywords: pickling, nested classes\n\nWe can work around this by shipping and always using a custom cPickle, and hopefully this will eventually be fixed in Python itself, but a metaclass seems to be a less hackish solution. \n\nAnother solution is decorators, but this requires a decorator on every use. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6121\n\n",
+    "closed_at": "2009-06-13T21:54:19Z",
     "created_at": "2009-05-22T23:06:34Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "use metaclasses to support nested class pickling",
+    "title": "[with patch, positive review] use metaclasses to support nested class pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6121",
     "user": "https://github.com/robertwb"

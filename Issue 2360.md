@@ -1,22 +1,23 @@
-# Issue 2360: Strange Polynomial substitution problem
+# Issue 2360: [with patch, positive review] Strange Polynomial substitution problem
 
 archive/issues_002360.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: P.<a>=ZZ[]\nsage: e=[x^2,y^3]\nsage: f=6*a^4\nsage: f(x)\n6*x^4\nsage: f(e)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(x)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n\nNotice that the plugging in the list seemed to ruin the polynomial good and proper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2360\n\n",
+    "body": "Assignee: somebody\n\nI made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: P.<a>=ZZ[]\nsage: e=[x^2,y^3]\nsage: f=6*a^4\nsage: f(x)\n6*x^4\nsage: f(e)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(x)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n\nNotice that the plugging in the list seemed to ruin the polynomial good and proper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2360\n\n",
+    "closed_at": "2009-01-24T23:00:31Z",
     "created_at": "2008-03-01T16:52:49Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Strange Polynomial substitution problem",
+    "title": "[with patch, positive review] Strange Polynomial substitution problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2360",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 I made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:
 

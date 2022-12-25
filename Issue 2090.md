@@ -4,6 +4,7 @@ archive/issues_002090.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nMarshall Buck to sage-support\n\n(sage 2.10 on X86 linux.)\n\nSuppose you define the ring of polynomials over GF(2):\n\nR.<x> = GF(2)[]\n\nThen a simple polynomial like\n\nf = x^32000\n\ntakes time quadratic in the degree to construct.\nMeanwhile, the left shift operator will construct the polynomial\nalmost instantly:\n\nf = x << (32000 - 1)\n\nAlso, constructing from a list of coefficients takes quadratic time if\nmost of the coefficients are zero.\n\nFor example\n\nf = R( [1]+ 32000*[0] + [1])\n\nis very slow, but a dense list is fast:\n\nf = R(32000*[1])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2090\n\n",
+    "closed_at": "2010-11-22T20:22:40Z",
     "created_at": "2008-02-07T22:14:38Z",
     "labels": [
         "component: basic arithmetic"

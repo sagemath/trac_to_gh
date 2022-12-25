@@ -1,15 +1,16 @@
-# Issue 3132: [PATCH] Add computation of multinomial coefficients
+# Issue 3132: [with patch, positive review] Add computation of multinomial coefficients
 
 archive/issues_003132.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  sage-combinat\n\nThe attached code computes multinomial coefficients using products of binomial coefficients, which is reasonably fast even for large inputs.\n\n(However, MMA is about 3-4x times faster on my machine.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3132\n\n",
+    "body": "Assignee: somebody\n\nCC:  sage-combinat\n\nKeywords: editor_cwitty\n\nThe attached code computes multinomial coefficients using products of binomial coefficients, which is reasonably fast even for large inputs.\n\n(However, MMA is about 3-4x times faster on my machine.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3132\n\n",
+    "closed_at": "2008-06-23T06:43:04Z",
     "created_at": "2008-05-08T13:16:47Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[PATCH] Add computation of multinomial coefficients",
+    "title": "[with patch, positive review] Add computation of multinomial coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3132",
     "user": "https://trac.sagemath.org/admin/accounts/users/gebner"
@@ -18,6 +19,8 @@ archive/issues_003132.json:
 Assignee: somebody
 
 CC:  sage-combinat
+
+Keywords: editor_cwitty
 
 The attached code computes multinomial coefficients using products of binomial coefficients, which is reasonably fast even for large inputs.
 

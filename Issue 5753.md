@@ -1,16 +1,17 @@
-# Issue 5753: [with patch and package, needs review] update to pynac 0.1.4
+# Issue 5753: [with patch and package, positive review] update to pynac 0.1.4
 
 archive/issues_005753.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @ncalexan\n\nPynac 0.1.4 is out! :)\n\nChanges from 0.1.3 are:\n* Add support for arithmetic with infinity.\n* Use python repr function for printing numeric objects.\n* Print paranthesis in latex mode with \\left and \\right.\n* Call python for latex names of symbols.\n* Support calling user specified python functions to print function instances.\n* Call python for printing function and fderivative.\n\n\nAttached patches corresponding to the above changes should be applied to the Sage library. Patches below depend on #5546 and #5737, in particular trac_5546-2-pynac_derivative.patch and trac_5737-02-real_imag.patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5753\n\n",
+    "closed_at": "2009-05-20T23:46:09Z",
     "created_at": "2009-04-11T15:50:38Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch and package, needs review] update to pynac 0.1.4",
+    "title": "[with patch and package, positive review] update to pynac 0.1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5753",
     "user": "https://github.com/burcin"

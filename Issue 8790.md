@@ -3,7 +3,8 @@
 archive/issues_008790.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nAs the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:\n\n```\n[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/logic/logic.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)\n\nMissing documentation:\n\t * combine(self, statement1, statement2):\n\t * simplify(self, table):\n\t * prove(self, statement):\n\n\nMissing doctests:\n\t * get_bit(x, c):\n\t * eval(toks):\n\t * eval_ltor_toks(lrtoks):\n\t * reduce_bins(lrtoks):\n\t * reduce_monos(lrtoks):\n\t * eval_mon_op(args):\n\t * eval_bin_op(args):\n\t * eval_and_op(lval, rval):\n\t * eval_or_op(lval, rval):\n\t * eval_ifthen_op(lval, rval):\n\t * eval_iff_op(lval, rval):\n\t * tokenize(s, toks):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8790\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nKeywords: beginner doctest documentation\n\nAs the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:\n\n```\n[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/logic/logic.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)\n\nMissing documentation:\n * combine(self, statement1, statement2):   see #15262\n * simplify(self, table):\n * prove(self, statement):\n\n\nMissing doctests:\n * get_bit(x, c):\n * eval(toks):\n * eval_ltor_toks(lrtoks):\n * reduce_bins(lrtoks):\n * reduce_monos(lrtoks):\n * eval_mon_op(args):\n * eval_bin_op(args):\n * eval_and_op(lval, rval):\n * eval_or_op(lval, rval):\n * eval_ifthen_op(lval, rval):\n * eval_iff_op(lval, rval):\n * tokenize(s, toks):\n```\nThis needs to be coordinated with #8797.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8790\n\n",
+    "closed_at": "2014-06-23T19:16:25Z",
     "created_at": "2010-04-28T04:35:34Z",
     "labels": [
         "component: documentation"
@@ -19,6 +20,8 @@ Assignee: mvngu
 
 CC:  @rwst
 
+Keywords: beginner doctest documentation
+
 As the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:
 
 ```
@@ -29,25 +32,26 @@ ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)
 
 Missing documentation:
-	 * combine(self, statement1, statement2):
-	 * simplify(self, table):
-	 * prove(self, statement):
+ * combine(self, statement1, statement2):   see #15262
+ * simplify(self, table):
+ * prove(self, statement):
 
 
 Missing doctests:
-	 * get_bit(x, c):
-	 * eval(toks):
-	 * eval_ltor_toks(lrtoks):
-	 * reduce_bins(lrtoks):
-	 * reduce_monos(lrtoks):
-	 * eval_mon_op(args):
-	 * eval_bin_op(args):
-	 * eval_and_op(lval, rval):
-	 * eval_or_op(lval, rval):
-	 * eval_ifthen_op(lval, rval):
-	 * eval_iff_op(lval, rval):
-	 * tokenize(s, toks):
+ * get_bit(x, c):
+ * eval(toks):
+ * eval_ltor_toks(lrtoks):
+ * reduce_bins(lrtoks):
+ * reduce_monos(lrtoks):
+ * eval_mon_op(args):
+ * eval_bin_op(args):
+ * eval_and_op(lval, rval):
+ * eval_or_op(lval, rval):
+ * eval_ifthen_op(lval, rval):
+ * eval_iff_op(lval, rval):
+ * tokenize(s, toks):
 ```
+This needs to be coordinated with #8797.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8790
 

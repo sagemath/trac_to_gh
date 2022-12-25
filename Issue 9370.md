@@ -3,7 +3,8 @@
 archive/issues_009370.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nThe attached patch allows customization of printing of elements in the class `CombinatorialFreeModuleElement`.  It also adds documentation to `CombinatorialFreeModule` spelling out these options (and all of the other options, I think).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9370\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nThe attached patch allows customization of printing of elements in the class `CombinatorialFreeModuleElement`.  It also adds documentation to `CombinatorialFreeModule` spelling out these options (and all of the other options, I think).\n\nApply only trac_9370-module-elt-repr-all-in-one.patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9370\n\n",
+    "closed_at": "2011-04-07T13:49:58Z",
     "created_at": "2010-06-29T04:09:11Z",
     "labels": [
         "component: combinatorics"
@@ -20,6 +21,8 @@ Assignee: sage-combinat
 CC:  sage-combinat
 
 The attached patch allows customization of printing of elements in the class `CombinatorialFreeModuleElement`.  It also adds documentation to `CombinatorialFreeModule` spelling out these options (and all of the other options, I think).
+
+Apply only trac_9370-module-elt-repr-all-in-one.patch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9370
 

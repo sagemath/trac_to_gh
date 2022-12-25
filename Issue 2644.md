@@ -1,9 +1,10 @@
-# Issue 2644: doctest failures in matrix_real_double_dense
+# Issue 2644: [with patch, positive review] doctest failures in matrix_real_double_dense
 
 archive/issues_002644.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn 2.11alpha0, the doctest for `__invert__` randomly fails\n\nIssue created by migration from https://trac.sagemath.org/ticket/2644\n\n",
+    "body": "Assignee: @dfdeshom\n\nOn 2.11alpha0, the doctest for `__invert__` randomly fails\n\nIssue created by migration from https://trac.sagemath.org/ticket/2644\n\n",
+    "closed_at": "2008-03-22T19:14:21Z",
     "created_at": "2008-03-22T14:39:47Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_002644.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "doctest failures in matrix_real_double_dense",
+    "title": "[with patch, positive review] doctest failures in matrix_real_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2644",
     "user": "https://github.com/dfdeshom"
 }
 ```
-Assignee: @williamstein
+Assignee: @dfdeshom
 
 On 2.11alpha0, the doctest for `__invert__` randomly fails
 

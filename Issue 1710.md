@@ -3,7 +3,8 @@
 archive/issues_001710.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you use trac's RSS feed or the e-mails sent out by the trac server you always end up with URLs involving http://www.sagemath.org:9002/sage_trac/ which the firewall at my university doesn't like ... i.e. it is blocked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1710\n\n",
+    "body": "Assignee: mabshoff\n\nIf you use trac's RSS feed or the e-mails sent out by the trac server you always end up with URLs involving http://www.sagemath.org:9002/sage_trac/ which the firewall at my university doesn't like ... i.e. it is blocked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1710\n\n",
+    "closed_at": "2008-01-19T17:59:15Z",
     "created_at": "2008-01-07T11:15:24Z",
     "labels": [
         "component: website/wiki"
@@ -15,7 +16,7 @@ archive/issues_001710.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 If you use trac's RSS feed or the e-mails sent out by the trac server you always end up with URLs involving http://www.sagemath.org:9002/sage_trac/ which the firewall at my university doesn't like ... i.e. it is blocked.
 

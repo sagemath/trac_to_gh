@@ -4,6 +4,7 @@ archive/issues_000149.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: EllipticCurve([0,-432*6^2]).sha_an()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Volumes/HOME/<ipython console> in <module>()\n\n/Volumes/HOME/sage-stable/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in sha_an(self, use_database)\n   2588             if not arith.is_square(Sha):\n   2589                 raise RuntimeError, \\\n-> 2590                       \"There is a bug in sha_an, since the computed conjectural order of Sha is %s, which is not a square.\"%Sha\n   2591             self.__sha_an = Sha\n   2592             return Sha\n\n<type 'exceptions.RuntimeError'>: There is a bug in sha_an, since the computed conjectural order of Sha is 2, which is not a square.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/149\n\n",
+    "closed_at": "2007-01-22T03:01:48Z",
     "created_at": "2006-10-23T21:02:32Z",
     "labels": [
         "component: number theory",

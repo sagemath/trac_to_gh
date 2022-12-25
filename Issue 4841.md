@@ -3,7 +3,8 @@
 archive/issues_004841.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen @certik\n\nThere is a new Maxima spgk at\n\nhttp://sage.math.washington.edu/home/mabshoff/maxima-5.17.1.spkg\n\nbut there are issues. It will probably (hopefully?) not be the final stable release of 5.17.x.\n\nIssues coming up in the comment section next.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4841\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen @certik\n\nThere is a new Maxima spgk at\n\nhttp://sage.math.washington.edu/home/mabshoff/maxima-5.17.1.spkg\n\nbut there are issues. It will probably (hopefully?) not be the final stable release of 5.17.x.\n\nIssues coming up in the comment section next.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4841\n\n",
+    "closed_at": "2008-12-26T18:13:45Z",
     "created_at": "2008-12-20T22:24:20Z",
     "labels": [
         "component: calculus",
@@ -16,7 +17,7 @@ archive/issues_004841.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @burcin
+Assignee: mabshoff
 
 CC:  @mwhansen @certik
 

@@ -3,7 +3,8 @@
 archive/issues_007223.json:
 ```json
 {
-    "body": "Assignee: tba\n\nFrom: tutorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/7223\n\n",
+    "body": "Assignee: @pdenapo\n\nKeywords: spanish\n\nFrom: tutorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/7223\n\n",
+    "closed_at": "2014-11-14T11:12:21Z",
     "created_at": "2009-10-15T02:36:58Z",
     "labels": [
         "component: documentation"
@@ -15,7 +16,9 @@ archive/issues_007223.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/Loufer"
 }
 ```
-Assignee: tba
+Assignee: @pdenapo
+
+Keywords: spanish
 
 From: tutorial
 

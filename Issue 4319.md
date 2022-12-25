@@ -4,6 +4,7 @@ archive/issues_004319.json:
 ```json
 {
     "body": "Assignee: tba\n\nMinor output change due in #4285.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4319\n\n",
+    "closed_at": "2012-09-12T07:48:21Z",
     "created_at": "2008-10-18T15:58:05Z",
     "labels": [
         "component: documentation",

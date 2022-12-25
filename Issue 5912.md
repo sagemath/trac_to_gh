@@ -1,16 +1,17 @@
-# Issue 5912: %fortran mode is broken in the notebook
+# Issue 5912: [with patch; positive review] %fortran mode is broken in the notebook
 
 archive/issues_005912.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5912\n\n",
+    "closed_at": "2009-04-30T07:02:44Z",
     "created_at": "2009-04-27T18:10:34Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "%fortran mode is broken in the notebook",
+    "title": "[with patch; positive review] %fortran mode is broken in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5912",
     "user": "https://github.com/williamstein"

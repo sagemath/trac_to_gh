@@ -1,16 +1,17 @@
-# Issue 9322: bug in simon_two_descent for elliptic curves
+# Issue 9322: long time in simon_two_descent for elliptic curves
 
 archive/issues_009322.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @categorie jeremywest\n\n[NB This is a different bug from the one on #5153]\n\nChris Wuthrich reports:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)\nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])\nsage: E.local_data()\n[]\nsage: E.simon_two_descent(verbose=2)\nbooom.\n```\n\nThe same example runs fine in gp using the same version of the script ell.gp that Sage has (in version 4.4.4) and the same version of gp.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9322\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @categorie jeremywest\n\nKeywords: simon_two_descent ecc2011\n\n[See #15608 for a list of open simon_two_descent tickets]\n\n[NB This is a different problem from the one on #5153]\n\nChris Wuthrich reports:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)\nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])\nsage: E.local_data()\n[]\nsage: E.simon_two_descent(verbose=2)\n```\nThis takes about 2.5 minutes with Sage 4.7.1 on a 1.6Ghz Core 2 Duo.\n\nThe same example runs fine in gp using the same version of the script ell.gp that Sage has (in version 4.4.4) and the same version of gp.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9322\n\n",
+    "closed_at": "2014-03-31T14:57:12Z",
     "created_at": "2010-06-24T03:00:39Z",
     "labels": [
-        "component: algebra",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "bug in simon_two_descent for elliptic curves",
+    "title": "long time in simon_two_descent for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9322",
     "user": "https://github.com/JohnCremona"
@@ -20,7 +21,11 @@ Assignee: @aghitza
 
 CC:  @categorie jeremywest
 
-[NB This is a different bug from the one on #5153]
+Keywords: simon_two_descent ecc2011
+
+[See #15608 for a list of open simon_two_descent tickets]
+
+[NB This is a different problem from the one on #5153]
 
 Chris Wuthrich reports:
 
@@ -30,8 +35,8 @@ sage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])
 sage: E.local_data()
 []
 sage: E.simon_two_descent(verbose=2)
-booom.
 ```
+This takes about 2.5 minutes with Sage 4.7.1 on a 1.6Ghz Core 2 Duo.
 
 The same example runs fine in gp using the same version of the script ell.gp that Sage has (in version 4.4.4) and the same version of gp.
 

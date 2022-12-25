@@ -1,22 +1,25 @@
-# Issue 3550: notebook -- make saving and loading state of the notebook vastly faster and scale better
+# Issue 3550: [with patch; positive review] notebook -- make saving and loading state of the notebook vastly faster and scale better
 
 archive/issues_003550.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis is an alternative to #3456.  It takes the view that the notebook is more like a web page -- lots of pages as text files -- than a database.    \n\nThis is a simple solution that is completely implemented in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3550\n\n",
+    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nThis is an alternative to #3456.  It takes the view that the notebook is more like a web page -- lots of pages as text files -- than a database.    \n\nThis is a simple solution that is completely implemented in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3550\n\n",
+    "closed_at": "2008-07-06T20:18:18Z",
     "created_at": "2008-07-04T09:01:50Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- make saving and loading state of the notebook vastly faster and scale better",
+    "title": "[with patch; positive review] notebook -- make saving and loading state of the notebook vastly faster and scale better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3550",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
+
+Keywords: editor_wstein
 
 This is an alternative to #3456.  It takes the view that the notebook is more like a web page -- lots of pages as text files -- than a database.    
 

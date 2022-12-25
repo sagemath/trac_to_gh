@@ -1,21 +1,24 @@
-# Issue 3446: notebook -- implement basic account recovery
+# Issue 3446: [with patch, positive review] notebook -- implement basic account recovery
 
 archive/issues_003446.json:
 ```json
 {
-    "body": "Assignee: timothyclemans\n\nMake a forgot password page.\n\nUser enters username. The Notebook checks if the user's e-mail has been confirmed.\n\nIf the e-mail has been confirmed then a new password is generated in the form of a numeral. That password is e-mailed to the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3446\n\n",
+    "body": "Assignee: timothyclemans\n\nKeywords: editor_wstein\n\nMake a forgot password page.\n\nUser enters username. The Notebook checks if the user's e-mail has been confirmed.\n\nIf the e-mail has been confirmed then a new password is generated in the form of a numeral. That password is e-mailed to the user.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3446\n\n",
+    "closed_at": "2008-06-25T03:56:43Z",
     "created_at": "2008-06-17T03:01:30Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- implement basic account recovery",
+    "title": "[with patch, positive review] notebook -- implement basic account recovery",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3446",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: timothyclemans
+
+Keywords: editor_wstein
 
 Make a forgot password page.
 

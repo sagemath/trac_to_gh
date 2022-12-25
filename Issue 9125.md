@@ -3,7 +3,8 @@
 archive/issues_009125.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nThis patch adds more examples of simplicial complexes: real projective spaces (that is, RP<sup>d</sup> for any positive d), CP<sup>2</sup>, and the Poincare homology sphere.  Some of these are the minimal triangulations, some are not; see the documentation.\n\nThese are important test cases for homology and other computations which I hope will be implemented soon -- see tickets #6102 and #6103, for instance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9125\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis patch adds more examples of simplicial complexes: real projective spaces (that is, RP<sup>d</sup> for any positive d), CP<sup>2</sup>, and the Poincare homology sphere.  Some of these are the minimal triangulations, some are not; see the documentation.\n\nThese are important test cases for homology and other computations which I hope will be implemented soon -- see tickets #6102 and #6103, for instance.\n\nApply:\n\ntrac_9125-projective-space.patch\n\ntrac_9125-cumulative-doctest.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/9125\n\n",
+    "closed_at": "2011-04-07T19:55:46Z",
     "created_at": "2010-06-03T04:13:48Z",
     "labels": [
         "component: algebraic topology",
@@ -21,6 +22,12 @@ Assignee: @jhpalmieri
 This patch adds more examples of simplicial complexes: real projective spaces (that is, RP<sup>d</sup> for any positive d), CP<sup>2</sup>, and the Poincare homology sphere.  Some of these are the minimal triangulations, some are not; see the documentation.
 
 These are important test cases for homology and other computations which I hope will be implemented soon -- see tickets #6102 and #6103, for instance.
+
+Apply:
+
+trac_9125-projective-space.patch
+
+trac_9125-cumulative-doctest.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/9125
 

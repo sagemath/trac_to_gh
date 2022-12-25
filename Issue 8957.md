@@ -4,6 +4,7 @@ archive/issues_008957.json:
 ```json
 {
     "body": "Assignee: joyner\n\nThe method \"word_problem\" in the matrix groups class is broken in two separate ways. Firstly, it's supposed to allow you to specify a custom set of generators but it silently ignores them and uses the default ones. Secondly, it returns a Factorization object which assumes (!) that the group is commutative, and hence the results are complete junk for nonabelian groups.\n\nI have a rough patch for this but it needs some polishing (mainly adding tests and docstrings).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8957\n\n",
+    "closed_at": "2010-06-06T20:11:53Z",
     "created_at": "2010-05-12T18:17:43Z",
     "labels": [
         "component: group theory",

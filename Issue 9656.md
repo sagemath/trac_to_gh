@@ -1,16 +1,17 @@
-# Issue 9656: Code blocks in the notebook's interactive help get code overlaping it'self
+# Issue 9656: Code blocks in the notebook's interactive help get code overlaping itself
 
 archive/issues_009656.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  acleone @williamstein @qed777 @jasongrout\n\nThis was reported some time ago in sage-support. As the reporter said, a picture is worth a thousand words, so here's a screenshot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9656\n\n",
+    "body": "Assignee: olazo\n\nCC:  acleone @williamstein @qed777 @jasongrout\n\nThis was reported some time ago in sage-support. As the reporter said, a picture is worth a thousand words, so here's a screenshot.\n\nThis is easily corrected (in firefox) by increasing and decreasiing the resolution using Ctrl++ and Ctrl+- .\n\nIssue created by migration from https://trac.sagemath.org/ticket/9656\n\n",
+    "closed_at": "2018-08-10T09:46:06Z",
     "created_at": "2010-08-01T02:32:38Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Code blocks in the notebook's interactive help get code overlaping it'self",
+    "title": "Code blocks in the notebook's interactive help get code overlaping itself",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9656",
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
@@ -21,6 +22,8 @@ Assignee: olazo
 CC:  acleone @williamstein @qed777 @jasongrout
 
 This was reported some time ago in sage-support. As the reporter said, a picture is worth a thousand words, so here's a screenshot.
+
+This is easily corrected (in firefox) by increasing and decreasiing the resolution using Ctrl++ and Ctrl+- .
 
 Issue created by migration from https://trac.sagemath.org/ticket/9656
 

@@ -1,15 +1,15 @@
-# Issue 7013: prime_pi and nth_prime
+# Issue 7013: table based prime_pi and nth_prime
 
 archive/issues_007013.json:
 ```json
 {
-    "body": "Assignee: kevin.stueve\n\nCC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime\n\nKeywords: primes, sieve, table,LMO\n\nComputes the prime counting and nth prime function.  This is my first Sage contribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7013\n\n",
+    "body": "Assignee: kevin.stueve\n\nCC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime\n\nKeywords: primes, sieve, table,LMO\n\nThe goal of this ticket is to add an implementation of Andrew Booker's table-based prime counting algorithm to Sage.  An optional spkg with the largest and densest available tables of counts of primes and prime k-tuplets will be made available.  Smaller tables may be made available in a standard spkg.\n\nCurrently you can download the newest code and tables from http://sage.math.washington.edu/home/kstueve/prime_pi_tables/table_based_prime_pi_31Dec2011.  You have to apply the patch to Sage-4.7.2 and manually move the tables to SAGE_ROOT/data.  Currently the code doesn't work on all systems because of trouble enabling OpenMP, but it does work on Macs.\n\nOlder code: \n\n23 July 2011 \n\nThe code in attachment table_based_prime_pi_23_July_2011.zip uses the tables at http://sage.math.washington.edu/home/kstueve/prime_pi_tables/prime_counting_tables23-July-2011.zip \n\nSummer 2009 \n\nhttp://sage.math.washington.edu/home/kstueve/KevinStueve.zip\n\nPaper: \n\nhttp://docs.google.com/View?id=df9q29vh_42dwz388hp\n\nIssue created by migration from https://trac.sagemath.org/ticket/7013\n\n",
     "created_at": "2009-09-25T10:26:36Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "prime_pi and nth_prime",
+    "title": "table based prime_pi and nth_prime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7013",
     "user": "https://trac.sagemath.org/admin/accounts/users/kevin.stueve"
@@ -21,7 +21,23 @@ CC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime
 
 Keywords: primes, sieve, table,LMO
 
-Computes the prime counting and nth prime function.  This is my first Sage contribution.
+The goal of this ticket is to add an implementation of Andrew Booker's table-based prime counting algorithm to Sage.  An optional spkg with the largest and densest available tables of counts of primes and prime k-tuplets will be made available.  Smaller tables may be made available in a standard spkg.
+
+Currently you can download the newest code and tables from http://sage.math.washington.edu/home/kstueve/prime_pi_tables/table_based_prime_pi_31Dec2011.  You have to apply the patch to Sage-4.7.2 and manually move the tables to SAGE_ROOT/data.  Currently the code doesn't work on all systems because of trouble enabling OpenMP, but it does work on Macs.
+
+Older code: 
+
+23 July 2011 
+
+The code in attachment table_based_prime_pi_23_July_2011.zip uses the tables at http://sage.math.washington.edu/home/kstueve/prime_pi_tables/prime_counting_tables23-July-2011.zip 
+
+Summer 2009 
+
+http://sage.math.washington.edu/home/kstueve/KevinStueve.zip
+
+Paper: 
+
+http://docs.google.com/View?id=df9q29vh_42dwz388hp
 
 Issue created by migration from https://trac.sagemath.org/ticket/7013
 

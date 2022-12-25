@@ -3,7 +3,8 @@
 archive/issues_009106.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nThere are some missing \"::\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9106\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: UniqueRepresentation\n\nThere are some missing \"::\" and also some dandling hyperlinks.\n\nApply only [trac_9106-UniqueRep_sphinx_fix-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9106/trac_9106-UniqueRep_sphinx_fix-fh.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9106\n\n",
+    "closed_at": "2010-06-05T22:49:44Z",
     "created_at": "2010-05-31T19:06:21Z",
     "labels": [
         "component: documentation",
@@ -19,7 +20,11 @@ archive/issues_009106.json:
 ```
 Assignee: @hivert
 
-There are some missing "::"
+Keywords: UniqueRepresentation
+
+There are some missing "::" and also some dandling hyperlinks.
+
+Apply only [trac_9106-UniqueRep_sphinx_fix-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9106/trac_9106-UniqueRep_sphinx_fix-fh.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9106
 

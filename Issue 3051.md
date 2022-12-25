@@ -1,15 +1,16 @@
-# Issue 3051: Weyl Characters
+# Issue 3051: [with patch, positive review] Weyl Characters
 
 archive/issues_003051.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: Weyl characters, branching rules\n\nThis was announced here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/74ed91d5153e6022?hl=en\n\nSee also:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f713ed4bf3df8c22?hl=en\n\nAt Mike Hansen and Nicolas Thiery's suggestions the default separator is now \",\" and the separator is configurable. \n\nI believe all branching rules to maximal subgroups of compact Lie groups are implemented with two (large) exceptions: reducible subgroups like A1 x A1, and branching rules involving the exceptional groups. Mike requested that the branching be made a method, and the new syntax is something like\nchi.branch(B3,rule=\"symmetric\"). However I left Branch as a standalone program and the\nmain docstring is Branch? This of course can be changed. \n\nAn issue is that the caching is a substantial speedup but at a potentially large cost in memory. I hesitated to make it the default so cache=False is the default. But the user will be happier with cache=True.\n\nIt is possible to cache more aggressively. I have not implemented but know how to implement caching the results of multiplications instead of just the characters themselves.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3051\n\n",
+    "closed_at": "2008-05-18T00:13:47Z",
     "created_at": "2008-04-28T22:52:26Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Weyl Characters",
+    "title": "[with patch, positive review] Weyl Characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3051",
     "user": "https://github.com/dwbump"

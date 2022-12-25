@@ -1,9 +1,10 @@
-# Issue 5670: documentation for isogeny_class in EllipticCurve
+# Issue 5670: [with patch; positive review] documentation for isogeny_class in EllipticCurve
 
 archive/issues_005670.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe docstring says at the end:\n\n See http://modular.ucsd.edu/Tables/nature/ for more interesting\n        examples of isogeny structures.\n\nThe URL should be changed to\n\nhttp://math.harvard.edu/~elkies/nature.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5670\n\n",
+    "closed_at": "2009-04-02T20:45:01Z",
     "created_at": "2009-04-02T20:16:58Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005670.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "documentation for isogeny_class in EllipticCurve",
+    "title": "[with patch; positive review] documentation for isogeny_class in EllipticCurve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5670",
     "user": "https://trac.sagemath.org/admin/accounts/users/victor"

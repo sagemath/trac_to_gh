@@ -1,16 +1,17 @@
-# Issue 6118: integer shifting slow
+# Issue 6118: [with (new) second patch, positive review] integer shifting slow
 
 archive/issues_006118.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6118\n\n",
+    "closed_at": "2009-10-15T08:48:57Z",
     "created_at": "2009-05-22T00:38:29Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "integer shifting slow",
+    "title": "[with (new) second patch, positive review] integer shifting slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6118",
     "user": "https://github.com/robertwb"

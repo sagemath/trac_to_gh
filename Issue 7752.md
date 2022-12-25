@@ -4,6 +4,7 @@ archive/issues_007752.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein acleone @qed777\n\nTotal RAM use does not decrease after deleting a worksheet. In the Trash section, it appears as (running).\n\nI suggest the page is stopped, then deleted, as usually someone deleting a worksheet does not plan on working on it further.\n\nWhen I have to correct a lot of worksheets from the students, I upload one, correct it, save it, and delete it, but RAM eventually gets collapsed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7752\n\n",
+    "closed_at": "2010-01-25T01:01:58Z",
     "created_at": "2009-12-23T14:16:30Z",
     "labels": [
         "component: notebook",

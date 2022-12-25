@@ -1,15 +1,16 @@
-# Issue 9773: Upgrade the notebook to use MathJax instead of jsMath
+# Issue 9773: Use MathJax instead of jsMath
 
 archive/issues_009773.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @rbeezer @robert-marik @jhpalmieri rkirov @kcrisman @kini\n\n[MathJax](http://www.mathjax.org/) is the successor to [jsMath](http://www.math.union.edu/~dpvc/jsMath/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9774\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @robert-marik @jhpalmieri rkirov @kcrisman @kini\n\nKeywords: sd41\n\n[MathJax](http://www.mathjax.org/) is the successor to [jsMath](http://www.math.union.edu/~dpvc/jsMath/).\n\n**apply**: \n* [attachment:trac_9774-scripts-mathjax.patch] to the scripts repository\n* [attachment:trac_9774-mathjax-try7.patch] to the sage library repository\n\nAlso install the new notebook from #13121\n\nIssue created by migration from https://trac.sagemath.org/ticket/9774\n\n",
+    "closed_at": "2012-09-05T18:05:17Z",
     "created_at": "2010-08-21T09:36:05Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
-    "title": "Upgrade the notebook to use MathJax instead of jsMath",
+    "title": "Use MathJax instead of jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9773",
     "user": "https://github.com/qed777"
@@ -19,7 +20,15 @@ Assignee: jason, was
 
 CC:  @rbeezer @robert-marik @jhpalmieri rkirov @kcrisman @kini
 
+Keywords: sd41
+
 [MathJax](http://www.mathjax.org/) is the successor to [jsMath](http://www.math.union.edu/~dpvc/jsMath/).
+
+**apply**: 
+* [attachment:trac_9774-scripts-mathjax.patch] to the scripts repository
+* [attachment:trac_9774-mathjax-try7.patch] to the sage library repository
+
+Also install the new notebook from #13121
 
 Issue created by migration from https://trac.sagemath.org/ticket/9774
 

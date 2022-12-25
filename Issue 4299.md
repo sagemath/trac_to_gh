@@ -1,16 +1,17 @@
-# Issue 4299: sha bound totally busted for rank 0 curves
+# Issue 4299: [with patch; needs review] sha bound totally busted for rank 0 curves
 
 archive/issues_004299.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve('11a1')\nsage: Sha = E.sha()\nsage: Sha.bound()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/wstein/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/sha.py in bound(self)\n    698         B of primes such that any divisor of Sha is in this list.\n    699         \"\"\"\n--> 700         if self.L1_vanishes():\n    701             B = self.bound_kolyvagin()\n    702         else:\n\nAttributeError: 'Sha' object has no attribute 'L1_vanishes'\nsage:\n                                        \n```\n\nThis is likely easy to fix and was caused by refactoring without enough doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4299\n\n",
+    "closed_at": "2008-10-15T15:22:01Z",
     "created_at": "2008-10-15T15:09:34Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "sha bound totally busted for rank 0 curves",
+    "title": "[with patch; needs review] sha bound totally busted for rank 0 curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4299",
     "user": "https://github.com/williamstein"

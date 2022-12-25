@@ -1,16 +1,16 @@
-# Issue 1888: 3d graphics -- cool plots of space curves (examples for docstrings)
+# Issue 1888: [with code] 3d graphics -- cool plots of space curves (examples for docstrings)
 
 archive/issues_001888.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThese need to be nicely test, sped up, etc., then\nmade into docstrings:\n\n```\nHere are a few cool space curves.\nI'd like to make more from\nhttp://www.math.umd.edu/research/bianchi/Gifspacecurves/spcu.html\nand\nhttp://virtualmathmuseum.org/SpaceCurves/\nIf anyone knows of some parametric equations for them, I'd appreciate it.\n\n#trefoil knot\n#http://en.wikipedia.org/wiki/Trefoil_knot\nsage: fx = 0.01*(41*cos(t) - 18*sin(t) - 83*cos(2*t)-83*sin(2*t) -\n11*cos(3*t) + 27*sin(3*t))\nsage: fy = 0.01*(36*cos(t) + 27*sin(t) - 113*cos(2*t)+30*sin(2*t) +\n11*cos(3*t) - 27*sin(3*t))\nsage: fz = 0.01*(45*sin(t) - 30*cos(2*t) + 113*sin(2*t)-11*cos(3*t) +\n27*sin(3*t))\nsage: parametric_plot3d( (fx, fy, fz), (t, 0, 6*pi), plot_points =\n500, frame=False)\n\n\n#figure-eight knot\n#http://en.wikipedia.org/wiki/Figure-eight_knot_%28mathematics%29\nsage: fx = (2 + cos(2*t))*cos(3*t)\nsage: fy = (2 + cos(2*t))*sin(3*t)\nsage: fz = sin(4*t)\nsage: parametric_plot3d( (fx, fy, fz), (t, 0, 6*pi), plot_points =\n500, frame=False)\n\n\n#Cinquefoil Knot (a=2 is this one):\n#http://en.wikipedia.org/wiki/Skein_relation\n#http://virtualmathmuseum.org/SpaceCurves/index.html#Classic\nfx = cos(t)*(2 - cos(2a*t/(2*a + 1)))\nfy = sin(t)*(2 - cos(2*t/(2*a + 1)))\nfz = - sin(2*t/(2*a + 1))\nsage: parametric_plot3d( (fx, fy, fz), (t, 0, 20*pi), plot_points =\n500, frame=False)\n\n\n#3-leafed space curve\nsage: a = 1; b = 1; c = 1; d = 3; e = 2\nsage: fx = (a + b*cos(d*t))*cos(e*t)\nsage: fy = (a + b*cos(d*t))*sin(e*t)\nsage: fz = c*sin(d*t)\nsage: parametric_plot3d( (fx, fy, fz), (t, 0, 4*pi), plot_points =\n100, frame=False)\n\n\n#    The Viviani Curve\n#http://en.wikipedia.org/wiki/Viviani's_curve\nsage: a = 1\nsage: fx = a*2*sin(t/2)\nsage: fy = a*sin(t)\nsage: fz = a*(1 + cos(t))\nsage: parametric_plot3d( (fx, fy, fz), (t, 0, 4*pi), plot_points =\n100, frame=False)\n\n#loxodrome\n#http://en.wikipedia.org/wiki/Loxodrome\nsage: fx = sin(t)/sqrt(1+t^2)\nsage: fy = cos(t)/sqrt(1+t^2)\nsage: fz = t/sqrt(1+t^2)\nsage: parametric_plot3d( (fx, fy, fz), (t, -4*pi, 4*pi), plot_points =\n100, frame=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1888\n\n",
+    "closed_at": "2009-10-19T18:25:57Z",
     "created_at": "2008-01-23T01:49:19Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "3d graphics -- cool plots of space curves (examples for docstrings)",
+    "title": "[with code] 3d graphics -- cool plots of space curves (examples for docstrings)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1888",
     "user": "https://github.com/williamstein"

@@ -3,7 +3,8 @@
 archive/issues_005982.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb\n\n---\nthe GUI, and license() for information.  |\n| Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for\n---\n\nsage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R\nsage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial\nRing in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:\nQ.fraction_field()\n\n---\nNotImplementedError Traceback (most recent call last)\n\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5982\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x, y> = PolynomialRing(QQ, 2) \nsage: I = (x^2 + y^2 - 1)*R\nsage: Q = R.quotient(I); Q\nQuotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 + y^2 - 1)\nsage: Q.fraction_field()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<SNIP>\n```\n| Sage Version 3.4.2, Release Date: 2009-05-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nApply\n\n* [attachment:trac_5982-ncalexan-with-check2.patch]\n\n* [attachment:trac_5982-reviewer.patch]\n\n* [attachment:trac_5982_review2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/5982\n\n",
+    "closed_at": "2011-05-03T12:28:22Z",
     "created_at": "2009-05-04T23:19:45Z",
     "labels": [
         "component: algebra",
@@ -20,20 +21,27 @@ Assignee: tbd
 
 CC:  @malb
 
----
-the GUI, and license() for information.  |
-| Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for
----
+```
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: R.<x, y> = PolynomialRing(QQ, 2) 
+sage: I = (x^2 + y^2 - 1)*R
+sage: Q = R.quotient(I); Q
+Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 + y^2 - 1)
+sage: Q.fraction_field()
+---------------------------------------------------------------------------
+NotImplementedError                       Traceback (most recent call last)
+<SNIP>
+```
+| Sage Version 3.4.2, Release Date: 2009-05-04                       |
+| Type notebook() for the GUI, and license() for information.        |
+Apply
 
-sage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R
-sage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial
-Ring in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:
-Q.fraction_field()
+* [attachment:trac_5982-ncalexan-with-check2.patch]
 
----
-NotImplementedError Traceback (most recent call last)
+* [attachment:trac_5982-reviewer.patch]
 
-...
+* [attachment:trac_5982_review2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/5982
 

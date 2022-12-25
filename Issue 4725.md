@@ -1,22 +1,23 @@
-# Issue 4725: bug in number field conjugate function
+# Issue 4725: [fixed, positive review] bug in number field conjugate function, now dealt with
 
 archive/issues_004725.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is totally wrong!\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j.conjugate()\n0\n```\n\nMuch better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4725\n\n",
+    "body": "Assignee: @loefflerd\n\nThis is totally wrong!\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j.conjugate()\n0\n```\n\nMuch better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4725\n\n",
+    "closed_at": "2009-07-22T16:28:36Z",
     "created_at": "2008-12-06T18:37:26Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "bug in number field conjugate function",
+    "title": "[fixed, positive review] bug in number field conjugate function, now dealt with",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4725",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 This is totally wrong!
 

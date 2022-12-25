@@ -1,16 +1,17 @@
-# Issue 5435: [with patch, needs review] sage-ptest "Using cached timings." message could be better
+# Issue 5435: [with patch, positive review] sage-ptest "Using cached timings." message could be better
 
 archive/issues_005435.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe attached patch changes the message from\n\n```\nUsing cached timings.\n```\nto\n\n```\nUsing cached timings to run slower doctests first.\n```\n\nHopefully this is enough to explain the otherwise surprising long pause at the beginning of parallel testing runs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5435\n\n",
+    "closed_at": "2009-03-10T23:13:45Z",
     "created_at": "2009-03-04T04:07:39Z",
     "labels": [
         "component: doctest coverage",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] sage-ptest \"Using cached timings.\" message could be better",
+    "title": "[with patch, positive review] sage-ptest \"Using cached timings.\" message could be better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5435",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,23 +1,23 @@
-# Issue 3426: bessel_K function is broken (with patch, needs review)
+# Issue 3426: bessel_K function is broken
 
 archive/issues_003426.json:
 ```json
 {
-    "body": "Assignee: bober\n\nCC:  @burcin @kcrisman @benjaminfjones\n\nKeywords: bessel, bessel_K\n\nCurrently we have\n\n```\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\n```\n\nIn this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3426\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @kcrisman @benjaminfjones\n\nKeywords: bessel, bessel_K\n\nCurrently we have\n\n```\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\n```\n\nIn this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3426\n\n",
+    "closed_at": "2013-02-17T20:10:42Z",
     "created_at": "2008-06-14T22:10:12Z",
     "labels": [
-        "component: misc",
-        "minor",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "bessel_K function is broken (with patch, needs review)",
+    "title": "bessel_K function is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3426",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"
 }
 ```
-Assignee: bober
+Assignee: @garyfurnish
 
 CC:  @burcin @kcrisman @benjaminfjones
 

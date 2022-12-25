@@ -1,15 +1,16 @@
-# Issue 3659: [with spkg and patches, needs review] Upgrade IPython to 0.8.4
+# Issue 3659: [with spkg and patches, positive review] Upgrade IPython to 0.8.4
 
 archive/issues_003659.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3659\n\n",
+    "closed_at": "2008-09-28T01:40:15Z",
     "created_at": "2008-07-15T21:15:03Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with spkg and patches, needs review] Upgrade IPython to 0.8.4",
+    "title": "[with spkg and patches, positive review] Upgrade IPython to 0.8.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3659",
     "user": "https://github.com/mwhansen"

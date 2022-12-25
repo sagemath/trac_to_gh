@@ -1,22 +1,23 @@
-# Issue 6899: weird bug taking float of real part of a symbolic
+# Issue 6899: [with patch, positive review] weird bug taking float of real part of a symbolic
 
 archive/issues_006899.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
+    "body": "Assignee: @mwhansen\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
+    "closed_at": "2009-10-15T09:49:03Z",
     "created_at": "2009-09-07T03:21:53Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "weird bug taking float of real part of a symbolic",
+    "title": "[with patch, positive review] weird bug taking float of real part of a symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6899",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @burcin
+Assignee: @mwhansen
 
 Here's a simple example:
 

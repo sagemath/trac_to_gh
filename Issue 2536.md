@@ -1,16 +1,16 @@
-# Issue 2536: get rid of SageObject.db and SageObject.version everywhere -- these turned out to "not catch on"
+# Issue 2536: Deprecate SageObject.db and SageObject.version
 
 archive/issues_002536.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @mkoeppe\n\nHi,\n\nI wrote db and version methods that all SageObjects have.  It seemed like a good idea at the time.  They didn't catch on -- nobody finds this interesting, etc.  I vote for completely removing them from Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2536\n\n",
+    "closed_at": "2015-02-17T19:28:31Z",
     "created_at": "2008-03-16T00:57:20Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
-    "title": "get rid of SageObject.db and SageObject.version everywhere -- these turned out to \"not catch on\"",
+    "title": "Deprecate SageObject.db and SageObject.version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2536",
     "user": "https://github.com/williamstein"

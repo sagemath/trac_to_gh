@@ -1,16 +1,17 @@
-# Issue 4745: [with patch, needs review] Dsage performance is poor
+# Issue 4745: [with patch, positive review] Dsage performance is poor
 
 archive/issues_004745.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nCC:  @mwhansen\n\nDSage latency is poor, this patch seeks to improve this by a combination of pushing jobs and improving the speed of which new results are detected.  This is the first of many patches that could be made to organically improve DSage, so this is a small patch which should have big results (but there is still plenty of work to be done on DSage.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4745\n\n",
+    "closed_at": "2008-12-11T15:27:40Z",
     "created_at": "2008-12-09T07:23:01Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] Dsage performance is poor",
+    "title": "[with patch, positive review] Dsage performance is poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4745",
     "user": "https://github.com/garyfurnish"

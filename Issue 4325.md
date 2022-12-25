@@ -4,6 +4,7 @@ archive/issues_004325.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: mathematica\n\nUsing 3.1.2 on sage.math:\n\n```\nsage: mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]')\n         -0.105203133241753451256 + 0.017589014615189905553 I\n```\nNow say I want to get a CC element out of that:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]'))\n------------------------------------------------------------\n   File \"<string>\", line 1\n     -RealNumber('0.105203133241753451256')+RealNumber('0.017589014615189905553')I\n                                                                                 ^\nSyntaxError: unexpected EOF while parsing\n\n```\nIt's confused because Mathematica uses a space between the number and I; a workaround is to put in an asterisk:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]').replace(' I', '*I'))\n-0.105203133241753 + 0.0175890146151899*I\n```\nI understand that this kind of parsing can get difficult and complicated, but it seems like something we should aim for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4325\n\n",
+    "closed_at": "2009-04-22T07:34:52Z",
     "created_at": "2008-10-20T02:17:29Z",
     "labels": [
         "component: interfaces",

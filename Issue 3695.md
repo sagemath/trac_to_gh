@@ -1,15 +1,16 @@
-# Issue 3695: factor?? improved
+# Issue 3695: [with patch; positive review] factor?? improved
 
 archive/issues_003695.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nSee the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3695\n\n",
+    "closed_at": "2008-07-21T18:59:01Z",
     "created_at": "2008-07-21T18:37:49Z",
     "labels": [
         "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "factor?? improved",
+    "title": "[with patch; positive review] factor?? improved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3695",
     "user": "https://github.com/certik"

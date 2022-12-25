@@ -1,9 +1,10 @@
-# Issue 7088: factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper
+# Issue 7088: [with patch, positive review] factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper
 
 archive/issues_007088.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nHi all,\n\nFound this simple bug in a simple Z[x] factoring example.\n\nR.<x>=PolynomialRing(ZZ)\nf = 12*x^10 + x^9 + 432*x^3 + 9011\ng = 13*x^11 + 89*x^3 + 1\nF = f^2 * g^3\nG = F.factor()\nshould_be_zero = F - G.prod()\nshould_be_zero == 0\n\nThe problem was that F.factor returns\n\n2028 * (12*x^10 + x^9 + 432*x^3 + 9011)^2 * (13*x^11 + 89*x^3 + 1)^3\n\nNot 1 * (12*x^10 + x^9 + 432*x^3 + 9011)^2 * (13*x^11 + 89*x^3 + 1)^3\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7088\n\n",
+    "body": "Assignee: @robertwb\n\n```\nHi all,\n\nFound this simple bug in a simple Z[x] factoring example.\n\nR.<x>=PolynomialRing(ZZ)\nf = 12*x^10 + x^9 + 432*x^3 + 9011\ng = 13*x^11 + 89*x^3 + 1\nF = f^2 * g^3\nG = F.factor()\nshould_be_zero = F - G.prod()\nshould_be_zero == 0\n\nThe problem was that F.factor returns\n\n2028 * (12*x^10 + x^9 + 432*x^3 + 9011)^2 * (13*x^11 + 89*x^3 + 1)^3\n\nNot 1 * (12*x^10 + x^9 + 432*x^3 + 9011)^2 * (13*x^11 + 89*x^3 + 1)^3\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7088\n\n",
+    "closed_at": "2009-10-02T17:47:15Z",
     "created_at": "2009-10-01T03:23:39Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_007088.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper",
+    "title": "[with patch, positive review] factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7088",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 ```
 Hi all,

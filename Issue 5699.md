@@ -1,9 +1,10 @@
-# Issue 5699: notebook -- %r mode is completely broken (trivial to fix)
+# Issue 5699: [with patch; positive review] notebook -- %r mode is completely broken (trivial to fix)
 
 archive/issues_005699.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn the notebook\n\n```\n%r\n2+5\n///\nTraceback (most recent call last):\n...\nTypeError: eval() got multiple values for keyword argument 'synchronize'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5699\n\n",
+    "closed_at": "2009-04-11T00:00:10Z",
     "created_at": "2009-04-06T19:28:16Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005699.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "notebook -- %r mode is completely broken (trivial to fix)",
+    "title": "[with patch; positive review] notebook -- %r mode is completely broken (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5699",
     "user": "https://github.com/williamstein"

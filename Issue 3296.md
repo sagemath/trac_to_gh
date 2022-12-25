@@ -4,6 +4,7 @@ archive/issues_003296.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: polymake, cddlib\n\nThe short summary describes both the problem and solution.  I could post a new spkg but its almost easier to change that one line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3296\n\n",
+    "closed_at": "2008-07-31T01:27:36Z",
     "created_at": "2008-05-25T02:34:07Z",
     "labels": [
         "component: packages: optional",

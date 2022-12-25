@@ -4,6 +4,7 @@ archive/issues_008261.json:
 ```json
 {
     "body": "Assignee: tbd\n\nUpon building mpfr-2.4.1.p1 on cygwin we get one test failure:\n\n```\n...\nPASS: tprintf.exe\nError in mpfr_sprintf (s, \"%'30Re\", x);\nexpected: \"      1,899347461279296875e+07\"\ngot:      \"      1.899347461279296875e+07\"\nFAIL: tsprintf.exe\nPASS: tfprintf.exe\nPASS: trec_sqrt.exe\nPASS: tpow_all.exe\n=====================\n1 of 148 tests failed\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8261\n\n",
+    "closed_at": "2010-03-06T08:18:20Z",
     "created_at": "2010-02-14T06:55:25Z",
     "labels": [
         "component: porting: cygwin",

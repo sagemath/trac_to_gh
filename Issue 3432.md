@@ -1,9 +1,10 @@
-# Issue 3432: MPolynomial_libsingular does not have a degrees method.
+# Issue 3432: [with patch, positive review] MPolynomial_libsingular does not have a degrees method.
 
 archive/issues_003432.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSee http://groups.google.com/group/sage-combinat-devel/browse_frm/thread/3d048be6e156a877#\n\nIssue created by migration from https://trac.sagemath.org/ticket/3432\n\n",
+    "closed_at": "2008-08-25T02:30:02Z",
     "created_at": "2008-06-15T22:44:23Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_003432.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "MPolynomial_libsingular does not have a degrees method.",
+    "title": "[with patch, positive review] MPolynomial_libsingular does not have a degrees method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3432",
     "user": "https://github.com/mwhansen"

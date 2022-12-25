@@ -4,6 +4,7 @@ archive/issues_007314.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nHello !!\n\nThis patch defines :\n* The average distance between vertices : Graph.average_distance\n* The Szeged Index of a graph : Graph.szeged_index\n* The Wiener Index of a graph : Graph.wiener_index\n\nEverything this patch adds (except the average distance) is documented in :\nhttp://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TY9-3VVCHY8-9&_user=10&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=6d22be39b064af51023439c3bb59c459\n\nThis reference is mentioned in the docstrings.\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7314\n\n",
+    "closed_at": "2009-12-15T17:29:02Z",
     "created_at": "2009-10-26T16:09:59Z",
     "labels": [
         "component: graph theory"

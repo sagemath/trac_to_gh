@@ -4,6 +4,7 @@ archive/issues_008619.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\n```\nSELINUX\n--------\n\nOn Linux, if you get this error message:\n\n    \" restore segment prot after reloc: Permission denied \"\n\nthe problem is probably related to SELinux. See the following URL for\nfurther information:\n\n```\n\n    http://www.ittvis.com/services/techtip.asp?ttid=3092\n\nIt would be better if the prereq script when sage first builds were to check for selinux.   This could be done possibly following the above link which says to look at /etc/sysconfig/selinux.  \n\nThere are some relevant emails in late March 2010 from John Bussoletti in sage-support about this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8619\n\n",
+    "closed_at": "2014-01-04T02:37:19Z",
     "created_at": "2010-03-28T19:09:54Z",
     "labels": [
         "component: build",

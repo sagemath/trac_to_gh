@@ -1,22 +1,24 @@
-# Issue 9210: pkg-config prefix statements in SAGE_LOCAL/lib/pkg-config not changed upon Sage move
+# Issue 9210: pkg-config's prefix statements in SAGE_LOCAL/lib/pkgconfig not changed upon Sage move
 
 archive/issues_009210.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @kcrisman\n\nThe attached patch fixes the above issue which causes matplotlib to pick up the system freetype2 after moving Sage (even after #9208).  One thing led to another and I ended up restructuring and rewriting lots of the code in the file too.  I hope it's cleaner and has less portability issues (I changed a lot of things to use os.path.join, for example).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9210\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @kcrisman\n\nThe attached patch fixes the above issue which causes matplotlib to pick up the system freetype2 after moving Sage (even after #9208).  One thing led to another and I ended up restructuring and rewriting lots of the code in the file too.  I hope it's cleaner and has less portability issues (I changed a lot of things to use os.path.join, for example).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9210\n\n",
+    "closed_at": "2010-10-21T10:07:28Z",
     "created_at": "2010-06-11T04:12:13Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "pkg-config prefix statements in SAGE_LOCAL/lib/pkg-config not changed upon Sage move",
+    "title": "pkg-config's prefix statements in SAGE_LOCAL/lib/pkgconfig not changed upon Sage move",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9210",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: GeorgSWeber
+Assignee: drkirkby
 
 CC:  drkirkby @kcrisman
 

@@ -4,6 +4,7 @@ archive/issues_009742.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis patch adds a \"key\" argument to allow custom sorting of the output of the graph method edges(). It adds to the documentation to make it clear that vertices will not always have a default sort order and thus edges may not always sort properly or as expected.\n\nSee:\n\n#9741 \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/40ac90ee3f28d723/ \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5adbb850f787373c/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9742\n\n",
+    "closed_at": "2010-09-15T22:52:42Z",
     "created_at": "2010-08-13T17:22:10Z",
     "labels": [
         "component: graph theory",

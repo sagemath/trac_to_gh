@@ -4,9 +4,11 @@ archive/issues_007992.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\n`A 2-descent didn't not complete successfully`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7992\n\n",
+    "closed_at": "2010-01-19T20:32:18Z",
     "created_at": "2010-01-19T04:46:19Z",
     "labels": [
         "component: elliptic curves",
+        "minor",
         "bug"
     ],
     "title": "typo in sage/libs/mwrank/interface.py",

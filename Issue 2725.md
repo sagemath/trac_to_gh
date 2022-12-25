@@ -1,16 +1,17 @@
-# Issue 2725: [with patch, needs review] MPolynomial_polydict doc-tests and some refactoring
+# Issue 2725: [with patch, positive review] MPolynomial_polydict doc-tests and some refactoring
 
 archive/issues_002725.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe attached patch adds a number of features and refactorings:\n\n1. A new degrees method which returns the degrees of all the variables in one swoop (and has other useful purposes)\n\n2. More doc-tests\n\n3. ETuple helper function to eliminate fragile duplicate code\n\n4. Fix some latex/repr bugs with -1 (continuation of #291)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2725\n\n",
+    "closed_at": "2008-03-29T22:15:30Z",
     "created_at": "2008-03-29T19:54:16Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] MPolynomial_polydict doc-tests and some refactoring",
+    "title": "[with patch, positive review] MPolynomial_polydict doc-tests and some refactoring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2725",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

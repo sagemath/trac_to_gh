@@ -1,22 +1,25 @@
-# Issue 1684: Intelligent indentation when user presses "enter".
+# Issue 1684: [with bundle, needs work] Intelligent indentation when user presses "enter".
 
 archive/issues_001684.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCommon IDE feature:  \n\n1. if the cursor is in an indented block, pressing \"enter\" should add a line which has the same indentaion as the previous line.\n2. if the cursor is in a line with, for example, an \"if\" statement, pressing enter should increase indentation on the next line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1684\n\n",
+    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nCommon IDE feature:  \n\n1. if the cursor is in an indented block, pressing \"enter\" should add a line which has the same indentaion as the previous line.\n2. if the cursor is in a line with, for example, an \"if\" statement, pressing enter should increase indentation on the next line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1684\n\n",
+    "closed_at": "2009-01-22T00:02:08Z",
     "created_at": "2008-01-04T23:24:15Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Intelligent indentation when user presses \"enter\".",
+    "title": "[with bundle, needs work] Intelligent indentation when user presses \"enter\".",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1684",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
+
+Keywords: editor_wstein
 
 Common IDE feature:  
 

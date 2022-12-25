@@ -4,9 +4,11 @@ archive/issues_008927.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nTests whether a graph is triangle-free\n\nrequires #8922\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8927\n\n",
+    "closed_at": "2010-06-29T16:47:42Z",
     "created_at": "2010-05-07T20:39:59Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "is_triangle_free",

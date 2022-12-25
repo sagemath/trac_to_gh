@@ -1,9 +1,10 @@
-# Issue 2448: [with patch, needs review] add docstrings, clean code in quadratic_forms
+# Issue 2448: [with patch, positive review] add docstrings, clean code in quadratic_forms
 
 archive/issues_002448.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: quadratic forms doc days docstring doctest\n\nI can't improve anything with the 2-adic genera stuff, unfo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2448\n\n",
+    "closed_at": "2008-03-16T00:58:59Z",
     "created_at": "2008-03-09T23:34:03Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002448.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] add docstrings, clean code in quadratic_forms",
+    "title": "[with patch, positive review] add docstrings, clean code in quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2448",
     "user": "https://github.com/ncalexan"

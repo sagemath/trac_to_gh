@@ -4,10 +4,10 @@ archive/issues_003930.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  mvngu\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3930\n\n",
+    "closed_at": "2010-05-29T17:44:32Z",
     "created_at": "2008-08-22T18:13:03Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Check to see if we should merge the bipartite matching code from Susan Massey",

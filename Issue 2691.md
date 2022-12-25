@@ -1,16 +1,16 @@
-# Issue 2691: [with patch, needs review] generate digraphs
+# Issue 2691: [with patch, positive review] generate digraphs
 
 archive/issues_002691.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2691\n\n",
+    "closed_at": "2008-03-29T00:04:08Z",
     "created_at": "2008-03-28T00:27:18Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] generate digraphs",
+    "title": "[with patch, positive review] generate digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2691",
     "user": "https://github.com/rlmill"

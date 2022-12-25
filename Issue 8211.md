@@ -4,6 +4,7 @@ archive/issues_008211.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: RealField, PolynomialRing\n\nas reported on sage-devel [Segfault: Polynomials over RealField]\nsage: P.<x> = PolynomialRing(RealField()) \nsage: P(0)*P(0)+P(0) \nProgram received signal SIGSEGV, Segmentation fault. \n\nit can be traced down to a bug in _mul_ that computes the degree\nof the polynomial P(0)*P(0) wrongly (-2 istead of -1 !)\nPatch is trivial, and attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8211\n\n",
+    "closed_at": "2010-02-11T14:44:14Z",
     "created_at": "2010-02-08T05:32:29Z",
     "labels": [
         "component: commutative algebra",

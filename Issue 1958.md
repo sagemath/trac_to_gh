@@ -1,9 +1,10 @@
-# Issue 1958: [with patch, needs review] fix problems with ANSI codes in sage0.py
+# Issue 1958: [with patch, with positive review] fix problems with ANSI codes in sage0.py
 
 archive/issues_001958.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere were some annoying doctest failures in sage0.py in 2.10.1.rc1, which are due to weird issues with ANSI codes ending up in the result of eval(). This parses them to get the correct answer.\n\nI think there's possibly a deeper readline issue here, but that's mostly wild speculation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1958\n\n",
+    "closed_at": "2008-01-29T12:43:52Z",
     "created_at": "2008-01-28T04:36:50Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_001958.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] fix problems with ANSI codes in sage0.py",
+    "title": "[with patch, with positive review] fix problems with ANSI codes in sage0.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1958",
     "user": "https://github.com/craigcitro"

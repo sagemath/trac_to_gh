@@ -1,22 +1,23 @@
-# Issue 4807: bug in exponential integral
+# Issue 4807: [with patch, positive review] bug in exponential integral
 
 archive/issues_004807.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis was reported by M. Yurko in an email to sage-support:\n\nhere are some examples of what I did:\n#First, an example of the bug\n\n```\nEi(20)\nOutput: 25615646.4145 + 6.28318530718*I \n```\nit should instead be just 25615646.4145\n\n```\nEi(19)\nOutput: 9950907.25105 \n```\nthe error doesn't occur here\n\n```\n-exponential_integral_1(-20).n(digits=50)\nOutput: 25615652.664056588 \n```\nhere the bug doesn't occur, although the\ncode for exponential_integral_1  loses a lot \nof accuracy by converting the number returned \nfrom PARI into a float, so it has much less\naccuracy\n\n```\n-pari(-20).eint1().n(digits = 50)\nOutput: 2.5615652664056588773746625520288944244384765625000e7 }}}\nhere the full accuracy from PARI is preserved\nthe following shows the difference in the speed \nof the two methods \n\nthe current implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = Ei(10)\nOutput: CPU time: 51.64 s,  Wall time: 51.81 s\n}}}\nthe time of PARI's implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = pari(-i).eint1()\nOutput: CPU time: 20.12 s,  Wall time: 20.32 s\n}}}\nPARI's implementation seems to be more than twice as fast\n\nWilliam Stein added this:\n\nA quick remark: The Pari Ei only works with *real* input, whereas the scipy one works with complex input.\nThe Sage function will have to fixed in the meantime or\nat least as a bare minimum have a big comment at the top explaining that there is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4807\n\n",
+    "body": "Assignee: fredrik\n\nThis was reported by M. Yurko in an email to sage-support:\n\nhere are some examples of what I did:\n#First, an example of the bug\n\n```\nEi(20)\nOutput: 25615646.4145 + 6.28318530718*I \n```\nit should instead be just 25615646.4145\n\n```\nEi(19)\nOutput: 9950907.25105 \n```\nthe error doesn't occur here\n\n```\n-exponential_integral_1(-20).n(digits=50)\nOutput: 25615652.664056588 \n```\nhere the bug doesn't occur, although the\ncode for exponential_integral_1  loses a lot \nof accuracy by converting the number returned \nfrom PARI into a float, so it has much less\naccuracy\n\n```\n-pari(-20).eint1().n(digits = 50)\nOutput: 2.5615652664056588773746625520288944244384765625000e7 }}}\nhere the full accuracy from PARI is preserved\nthe following shows the difference in the speed \nof the two methods \n\nthe current implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = Ei(10)\nOutput: CPU time: 51.64 s,  Wall time: 51.81 s\n}}}\nthe time of PARI's implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = pari(-i).eint1()\nOutput: CPU time: 20.12 s,  Wall time: 20.32 s\n}}}\nPARI's implementation seems to be more than twice as fast\n\nWilliam Stein added this:\n\nA quick remark: The Pari Ei only works with *real* input, whereas the scipy one works with complex input.\nThe Sage function will have to fixed in the meantime or\nat least as a bare minimum have a big comment at the top explaining that there is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4807\n\n",
+    "closed_at": "2009-10-15T05:24:53Z",
     "created_at": "2008-12-16T04:49:43Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "bug in exponential integral",
+    "title": "[with patch, positive review] bug in exponential integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4807",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: @burcin
+Assignee: fredrik
 
 This was reported by M. Yurko in an email to sage-support:
 

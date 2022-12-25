@@ -1,9 +1,10 @@
-# Issue 4763: [with patch, needs review] fixes to build reference manual in 3.2.2.alpha1
+# Issue 4763: [with patch, positive review] fixes to build reference manual in 3.2.2.alpha1
 
 archive/issues_004763.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @loefflerd\n\nKeywords: reference, documentation\n\nAs reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/1e5f8fa4c33ef622), there are some problems trying to build the reference manual.  I think the attached patch fixes them.\n\ndavidloeffler should get partial credit for this, since he reported several of these...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4763\n\n",
+    "closed_at": "2008-12-12T06:00:32Z",
     "created_at": "2008-12-11T21:47:49Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004763.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] fixes to build reference manual in 3.2.2.alpha1",
+    "title": "[with patch, positive review] fixes to build reference manual in 3.2.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4763",
     "user": "https://github.com/jhpalmieri"

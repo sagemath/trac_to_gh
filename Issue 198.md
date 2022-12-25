@@ -4,6 +4,7 @@ archive/issues_000198.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n*  Some algorithms haven't been completely implemented.  (Some do things I never implemented in MAGMA.)\n    - finish modular forms algorithms\n    - enable modular forms doctests and test and fix\n    - finish implementing modular symbols factorization in general (eisenstein part is currently not fully implemented)\n    - computation of period mapping\n    - more testing, examples, etc., for modular symbos for GammaH\n     \n\nIssue created by migration from https://trac.sagemath.org/ticket/198\n\n",
+    "closed_at": "2007-10-24T02:54:08Z",
     "created_at": "2007-01-19T09:59:59Z",
     "labels": [
         "component: modular forms"

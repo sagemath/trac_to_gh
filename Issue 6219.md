@@ -1,9 +1,10 @@
-# Issue 6219: [with spkg, needs review] Fix the silly fpmz.c typo in the flint spkg.
+# Issue 6219: [with spkg, positive review] Fix the silly fpmz.c typo in the flint spkg.
 
 archive/issues_006219.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/flint-1.2.5.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6219\n\n",
+    "closed_at": "2009-06-05T07:29:09Z",
     "created_at": "2009-06-05T00:58:13Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_006219.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with spkg, needs review] Fix the silly fpmz.c typo in the flint spkg.",
+    "title": "[with spkg, positive review] Fix the silly fpmz.c typo in the flint spkg.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6219",
     "user": "https://github.com/mwhansen"

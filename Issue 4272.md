@@ -1,17 +1,18 @@
-# Issue 4272: add the files from new coercion to the reference manual
+# Issue 4272: [with patch, positive review] add the files from new coercion to the reference manual
 
 archive/issues_004272.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nAs the title says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4272\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nRobert suggests adding the following files to the manual:\n\n* sage/structure/parent.pyx\n* sage/structure/coerce.pyx\n* sage/structure/coerce_actions.pyx\n* sage/structure/coerce_maps.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/4272\n\n",
+    "closed_at": "2008-10-14T15:54:04Z",
     "created_at": "2008-10-13T10:08:47Z",
     "labels": [
-        "component: doctest",
+        "component: documentation",
         "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "add the files from new coercion to the reference manual",
+    "title": "[with patch, positive review] add the files from new coercion to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4272",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -21,11 +22,12 @@ Assignee: mabshoff
 
 CC:  @robertwb
 
-As the title says :)
+Robert suggests adding the following files to the manual:
 
-Cheers,
-
-Michael
+* sage/structure/parent.pyx
+* sage/structure/coerce.pyx
+* sage/structure/coerce_actions.pyx
+* sage/structure/coerce_maps.pyx
 
 Issue created by migration from https://trac.sagemath.org/ticket/4272
 

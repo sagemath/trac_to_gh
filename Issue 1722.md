@@ -1,21 +1,22 @@
-# Issue 1722: Symbolic Matrices should be callable.
+# Issue 1722: [with patch, with positive review] Symbolic Matrices should be callable.
 
 archive/issues_001722.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMatrices of symbolic objects should either be callable, or support substitution, per user request at conference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1722\n\n",
+    "body": "Assignee: @mwhansen\n\nMatrices of symbolic objects should either be callable, or support substitution, per user request at conference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1722\n\n",
+    "closed_at": "2008-02-28T00:43:14Z",
     "created_at": "2008-01-08T19:11:43Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Symbolic Matrices should be callable.",
+    "title": "[with patch, with positive review] Symbolic Matrices should be callable.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1722",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Matrices of symbolic objects should either be callable, or support substitution, per user request at conference.
 

@@ -1,16 +1,17 @@
-# Issue 2901: rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)
+# Issue 2901: [with patch; with positive review] rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)
 
 archive/issues_002901.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nBasically, I know a lot more about how to write Python/Cython code than I used to, so i can write these functions in a way that is (1) vastly better, and (2) will be easily doctested, and (3) work in (almost) the same way in the notebook or command line. \n\nThis depends on the patch up at #2883.  #2883 should be applied then the code attached to this patch, once this patch is accepted.\n\nI've separated this out from #2883, since #2883 really *must* get applied, and the code here should be, but it's really a separate issue, and more nontrivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2901\n\n",
+    "closed_at": "2008-04-13T16:35:19Z",
     "created_at": "2008-04-13T01:42:04Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)",
+    "title": "[with patch; with positive review] rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2901",
     "user": "https://github.com/williamstein"

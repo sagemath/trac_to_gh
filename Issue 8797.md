@@ -3,7 +3,8 @@
 archive/issues_008797.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAs the subject says. Currently, the modules under `sage/logic/` are not in the reference manual. Clean up the documentation of all modules under `sage/logic/` and get those modules in the reference manual. But before adding them to the reference manual, first we need to clean up their documentation. This clean-up task is spread across the following tickets:\n\n* #8790 --- improve doctest coverage of logic/logic.py\n* #8792 --- clean up documentation of logic/booleval.py\n* #8793 --- clean up documentation of logic/boolformula.py\n* #8794 --- clean up documentation of logic/logicparser.py\n* #8795 --- clean up documentation of logic/logictable.py\n* #8796 --- clean up documentation of logic/propcalc.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/8797\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: beginner doctest documentation\n\nAs the subject says. Currently, the modules under `sage/logic/` are not in the reference manual. Clean up the documentation of all modules under `sage/logic/` and get those modules in the reference manual. But before adding them to the reference manual, first we need to clean up their documentation. This clean-up task is spread across the following tickets:\n\n* #8790 --- improve doctest coverage of logic/logic.py\n* #8792 --- clean up documentation of logic/booleval.py\n* #8793 --- clean up documentation of logic/boolformula.py\n* #8794 --- clean up documentation of logic/logicparser.py\n* #8795 --- clean up documentation of logic/logictable.py\n* #8796 --- clean up documentation of logic/propcalc.py\n* #15768 --- clean up documentation of logic/* (which also takes care of #8790, #8794 and #8795)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8797\n\n",
+    "closed_at": "2014-08-12T13:20:09Z",
     "created_at": "2010-04-28T06:57:11Z",
     "labels": [
         "component: documentation"
@@ -17,6 +18,8 @@ archive/issues_008797.json:
 ```
 Assignee: mvngu
 
+Keywords: beginner doctest documentation
+
 As the subject says. Currently, the modules under `sage/logic/` are not in the reference manual. Clean up the documentation of all modules under `sage/logic/` and get those modules in the reference manual. But before adding them to the reference manual, first we need to clean up their documentation. This clean-up task is spread across the following tickets:
 
 * #8790 --- improve doctest coverage of logic/logic.py
@@ -25,6 +28,7 @@ As the subject says. Currently, the modules under `sage/logic/` are not in the r
 * #8794 --- clean up documentation of logic/logicparser.py
 * #8795 --- clean up documentation of logic/logictable.py
 * #8796 --- clean up documentation of logic/propcalc.py
+* #15768 --- clean up documentation of logic/* (which also takes care of #8790, #8794 and #8795)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8797
 

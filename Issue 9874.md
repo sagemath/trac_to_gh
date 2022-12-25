@@ -3,7 +3,8 @@
 archive/issues_009874.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nTrying to upload using the dialogue and feeding a link to a sage notebook directory (such as `x.sagenb.org/home/username/3/` causes an error - you can only upload sws files.  I think this should be considered a bug, though, since it means you have to actually click on the file instead of just the link in `/pub/`.  \n\nAlternately, creating a link directly to the .sws on each worksheet list (including `/pub/`) would be ok, but I think that's inferior and less elegant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9875\n\n",
+    "body": "Assignee: jason, was\n\nUsing the 'upload' dialogue in the notebook, where it says to put in a URL, currently it must be a link to a .sws file (which is said).  \n\nBut since the links in `/pub/` when you click on Published are given in the form `http://www.sagenb.org/home/pub/2423`, you should really be able to just give this as a link instead of a .sws file, which requires the additional step of clicking on the link and then copying the 'Download' link for use in the 'upload' dialogue.  But this causes an error currently.\n\nAlternately, creating a link directly to the .sws on each worksheet list (including `/pub/`) would be ok, but I think that's inferior and less elegant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9875\n\n",
+    "closed_at": "2013-06-19T12:17:02Z",
     "created_at": "2010-09-08T15:12:26Z",
     "labels": [
         "component: notebook",
@@ -18,7 +19,9 @@ archive/issues_009874.json:
 ```
 Assignee: jason, was
 
-Trying to upload using the dialogue and feeding a link to a sage notebook directory (such as `x.sagenb.org/home/username/3/` causes an error - you can only upload sws files.  I think this should be considered a bug, though, since it means you have to actually click on the file instead of just the link in `/pub/`.  
+Using the 'upload' dialogue in the notebook, where it says to put in a URL, currently it must be a link to a .sws file (which is said).  
+
+But since the links in `/pub/` when you click on Published are given in the form `http://www.sagenb.org/home/pub/2423`, you should really be able to just give this as a link instead of a .sws file, which requires the additional step of clicking on the link and then copying the 'Download' link for use in the 'upload' dialogue.  But this causes an error currently.
 
 Alternately, creating a link directly to the .sws on each worksheet list (including `/pub/`) would be ok, but I think that's inferior and less elegant.
 

@@ -1,16 +1,17 @@
-# Issue 8515: Optional package frobby-0.7.6  fails to install on Solaris 10 SPARC
+# Issue 8515: Experimental package frobby-0.7.6  fails to install on Solaris 10 SPARC
 
 archive/issues_008515.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @slel @fchapoton\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional frobby-0.7.6 ==\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /export/home/drkirkby/sage-4.3.4.alpha1/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function 'int main(int, const char**)':\nsrc/main.cpp:30: error: 'srand' was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m2.093s\nuser    0m1.446s\nsys     0m0.156s\nsage: An error occurred while installing frobby-0.7.6\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8515\n\n",
+    "body": "Assignee: tbd\n\nCC:  @slel @fchapoton\n\nKeywords: frobby, solaris\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow optional packages to install. \n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional frobby-0.7.6 ==\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /export/home/drkirkby/sage-4.3.4.alpha1/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function 'int main(int, const char**)':\nsrc/main.cpp:30: error: 'srand' was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m2.093s\nuser    0m1.446s\nsys     0m0.156s\nsage: An error occurred while installing frobby-0.7.6\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8515\n\n",
+    "closed_at": "2020-06-24T06:30:01Z",
     "created_at": "2010-03-13T01:18:43Z",
     "labels": [
-        "component: packages: optional",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Optional package frobby-0.7.6  fails to install on Solaris 10 SPARC",
+    "title": "Experimental package frobby-0.7.6  fails to install on Solaris 10 SPARC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8515",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -19,6 +20,8 @@ archive/issues_008515.json:
 Assignee: tbd
 
 CC:  @slel @fchapoton
+
+Keywords: frobby, solaris
 
 ## Hardware & associated software
 
@@ -30,6 +33,7 @@ CC:  @slel @fchapoton
 
  == Sage version ==
 * 4.3.4.alpha1
+* Patch #8509 removing the -o option to grep to allow optional packages to install. 
 
 This builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. 
 
@@ -64,6 +68,7 @@ user    0m1.446s
 sys     0m0.156s
 sage: An error occurred while installing frobby-0.7.6
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8515
 

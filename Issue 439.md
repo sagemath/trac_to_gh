@@ -1,16 +1,17 @@
-# Issue 439: Interace with remote programs allowing for as many hops as needed
+# Issue 439: Interface with remote programs allowing for as many hops as needed
 
 archive/issues_000439.json:
 ```json
 {
     "body": "Assignee: pdehaye\n\nsee\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b7215f69359ff4c2\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/439\n\n",
+    "closed_at": "2007-08-23T01:47:01Z",
     "created_at": "2007-08-18T18:02:27Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
-    "title": "Interace with remote programs allowing for as many hops as needed",
+    "title": "Interface with remote programs allowing for as many hops as needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/439",
     "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"

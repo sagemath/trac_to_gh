@@ -1,16 +1,17 @@
-# Issue 1826: cdefs.pxi and stdsage.pxi were missing some function declarations
+# Issue 1826: [with patch, positive review] cdefs.pxi and stdsage.pxi were missing some function declarations
 
 archive/issues_001826.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis is a small patch, but forces a re-compile of almost the whole library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1826\n\n",
+    "closed_at": "2008-01-20T00:49:44Z",
     "created_at": "2008-01-18T05:25:16Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "cdefs.pxi and stdsage.pxi were missing some function declarations",
+    "title": "[with patch, positive review] cdefs.pxi and stdsage.pxi were missing some function declarations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1826",
     "user": "https://github.com/robertwb"

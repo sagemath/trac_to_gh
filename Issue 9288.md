@@ -4,6 +4,7 @@ archive/issues_009288.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\n```\n    sage: ComplexReflectionGroup(1,1,5)\n    WeylGroup of type A4\n\n    sage: W = ComplexReflectionGroup(33); W\n    returns the 33 rd exceptional group\n\n    sage: W.diagram()\n```\n\nNote: the current implementation of Coxeter groups is in principle\ndesigned to open the door for such generalizations; see in particular\nthe WeylGroup code for Coxeter groups implemented in terms of matrix\ngroups.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9288\n\n",
+    "closed_at": "2015-06-05T19:20:01Z",
     "created_at": "2010-06-21T07:26:13Z",
     "labels": [
         "component: algebra"

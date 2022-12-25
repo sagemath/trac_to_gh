@@ -4,6 +4,7 @@ archive/issues_002101.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nWe started with NTL:\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG-Debian/ntl-5.4.1.p11.spkg\n\nMore to come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2101\n\n",
+    "closed_at": "2008-02-14T23:21:40Z",
     "created_at": "2008-02-08T05:54:41Z",
     "labels": [
         "component: debian-package",

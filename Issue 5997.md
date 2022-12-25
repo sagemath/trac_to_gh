@@ -1,16 +1,17 @@
-# Issue 5997: deprecate the "order" method on elements of rings.
+# Issue 5997: [with patch, positive review] deprecate the "order" method on elements of rings.
 
 archive/issues_005997.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThere was a vote in sage-devel in the thread entitled \"order of elements in the field\" to deprecate the order method on ring elements, and keep just the additive_order and multiplicative_order methods.  The order method is too ambiguous in the context of rings, and does cause regular confusion.  \n\nThis should be officially deprecated, and only removed after >= 6 months. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5997\n\n",
+    "closed_at": "2009-05-13T18:27:56Z",
     "created_at": "2009-05-06T17:55:43Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "deprecate the \"order\" method on elements of rings.",
+    "title": "[with patch, positive review] deprecate the \"order\" method on elements of rings.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5997",
     "user": "https://github.com/williamstein"

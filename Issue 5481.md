@@ -1,23 +1,24 @@
-# Issue 5481: devel/doc/output/* should be filtered from the list of files to doctest
+# Issue 5481: [with patch, positive review] devel/doc/output/* should be filtered from the list of files to doctest
 
 archive/issues_005481.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nThere can be many rst files under devel/doc/output - those should be filtered from the list of files to doctest since they are duplicate doctests from the main Sage library in many cases.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5481\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\nThere can be many rst files under devel/doc/output - those should be filtered from the list of files to doctest since they are duplicate doctests from the main Sage library in many cases.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5481\n\n",
+    "closed_at": "2009-06-26T17:43:01Z",
     "created_at": "2009-03-11T06:31:10Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "devel/doc/output/* should be filtered from the list of files to doctest",
+    "title": "[with patch, positive review] devel/doc/output/* should be filtered from the list of files to doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5481",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 CC:  @mwhansen
 

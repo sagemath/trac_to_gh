@@ -1,16 +1,17 @@
-# Issue 2336: hermite -- this function in sage is broken in more ways than it has lines of code
+# Issue 2336: [with patch, positive review] hermite -- this function in sage is broken in more ways than it has lines of code
 
 archive/issues_002336.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2336\n\n",
+    "body": "Assignee: @williamstein\n\n```\n- Hide quoted text -\nOn Wed, Feb 27, 2008 at 12:03 PM, Jason Bandlow <jbandlow@gmail.com> wrote:\n>\n>  Hi all,\n>\n>  Can someone explain the following error?  I can create a Hermite\n>  polynomial over QQ...\n>\n>\n>  sage: R.<x> = PolynomialRing(QQ)\n>  sage: rat_herm = hermite(3,x); rat_herm\n>  8*x^3 - 12*x\n>\n>\n>  But the same construction fails over RR:\n>\n>  sage: S.<y> = PolynomialRing(RR)\n>  sage: real_herm = hermite(3,y)\n>  ---------------------------------------------------------------------------\n>  <type 'exceptions.NameError'>             Traceback (most recent call last)\n>\n>  /home/jason/<ipython console> in <module>()\n>\n>  /home/jason/sage-2.8.13-i686-Linux/local/lib/python2.5/site-packages/sage/functions/orthogonal_polys.py in hermite(n, x)\n>     449     R = x.parent()\n>     450     y = R.gen()\n>  --> 451     return sage_eval(maxima.eval(\"hermite(%s,%s)\"%(n0,y)),locals={str(y):y})\n>     452\n>     453 def jacobi_P(n,a,b,x):\n>\n>  /home/jason/sage-2.8.13-i686-Linux/local/lib/python2.5/site-packages/sage/misc/sage_eval.py in sage_eval(source, locals)\n>     108     p = preparse(source)\n>     109     try:\n>  --> 110         return eval(p, sage.all.__dict__, locals)\n>     111     except SyntaxError, msg:\n>     112         raise SyntaxError, \"%s\\nError using SAGE to evaluate '%s'\"%(msg, p)\n>\n>  /home/jason/<string> in <module>()\n>\n>  <type 'exceptions.NameError'>: name 'y' is not defined\n>\n>\n>  For what I'm doing, I've found a simple work around:\n>\n>  sage: real_herm = S(rat_herm.subs({x:y}))\n>  sage: real_herm\n>  8.00000000000000*y^3 - 12.0000000000000*y\n>\n>\n>\n>  But this certainly isn't the \"natural\" way to do things.  Any thoughts?\n>\n\nThis in sage/functions/orthogonal_polys.py is just wrong in multiple ways:\n\nR = x.parent()\n y = R.gen()\n return sage_eval(maxima.eval(\"hermite(%s,%s)\"%(n0,y)),locals={str(y):y})\n\n(1) str(y) results in\n '1.00000000000000*y'\n\nWhen R is QQ it results in 'y', which works, but in general there is no\nguarantee that str(R.gen()) is the variable name.   One could do\n\n  ystr = R.variable_name()\n\ninstead of str(y), which would work if R happens to be a univariate polynomial\nring, and would break otherwise.\n\n(2) As suggested above the hermite function is broken if it doesn't\nhappen to be that the first variable of a poly ring is being substituted in.\nE.g.,\nsage: R.<x,y> = QQ[]\nsage: hermite(3,y)\nBOOM!\n\nIt also fails if x is symbolic:\nsage: x = var('x')\nsage: hermite(3,x)\n\n(3)The function is also buggy, because:\nsage: R.<x> = QQ[]\nsage: hermite(3,x)\n8*x^3 - 12*x\nsage: hermite(3,x^2)\n8*x^3 - 12*x\n\nIn the second case, one would expect to get either 8*x^6 - 12*x^2 or\nan error message.\n\n----\n\nSo this function hermite is buggy as hell. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2336\n\n",
+    "closed_at": "2008-02-28T00:51:48Z",
     "created_at": "2008-02-27T20:28:31Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "hermite -- this function in sage is broken in more ways than it has lines of code",
+    "title": "[with patch, positive review] hermite -- this function in sage is broken in more ways than it has lines of code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2336",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,102 @@ archive/issues_002336.json:
 ```
 Assignee: @williamstein
 
+```
+- Hide quoted text -
+On Wed, Feb 27, 2008 at 12:03 PM, Jason Bandlow <jbandlow@gmail.com> wrote:
+>
+>  Hi all,
+>
+>  Can someone explain the following error?  I can create a Hermite
+>  polynomial over QQ...
+>
+>
+>  sage: R.<x> = PolynomialRing(QQ)
+>  sage: rat_herm = hermite(3,x); rat_herm
+>  8*x^3 - 12*x
+>
+>
+>  But the same construction fails over RR:
+>
+>  sage: S.<y> = PolynomialRing(RR)
+>  sage: real_herm = hermite(3,y)
+>  ---------------------------------------------------------------------------
+>  <type 'exceptions.NameError'>             Traceback (most recent call last)
+>
+>  /home/jason/<ipython console> in <module>()
+>
+>  /home/jason/sage-2.8.13-i686-Linux/local/lib/python2.5/site-packages/sage/functions/orthogonal_polys.py in hermite(n, x)
+>     449     R = x.parent()
+>     450     y = R.gen()
+>  --> 451     return sage_eval(maxima.eval("hermite(%s,%s)"%(n0,y)),locals={str(y):y})
+>     452
+>     453 def jacobi_P(n,a,b,x):
+>
+>  /home/jason/sage-2.8.13-i686-Linux/local/lib/python2.5/site-packages/sage/misc/sage_eval.py in sage_eval(source, locals)
+>     108     p = preparse(source)
+>     109     try:
+>  --> 110         return eval(p, sage.all.__dict__, locals)
+>     111     except SyntaxError, msg:
+>     112         raise SyntaxError, "%s\nError using SAGE to evaluate '%s'"%(msg, p)
+>
+>  /home/jason/<string> in <module>()
+>
+>  <type 'exceptions.NameError'>: name 'y' is not defined
+>
+>
+>  For what I'm doing, I've found a simple work around:
+>
+>  sage: real_herm = S(rat_herm.subs({x:y}))
+>  sage: real_herm
+>  8.00000000000000*y^3 - 12.0000000000000*y
+>
+>
+>
+>  But this certainly isn't the "natural" way to do things.  Any thoughts?
+>
 
+This in sage/functions/orthogonal_polys.py is just wrong in multiple ways:
+
+R = x.parent()
+ y = R.gen()
+ return sage_eval(maxima.eval("hermite(%s,%s)"%(n0,y)),locals={str(y):y})
+
+(1) str(y) results in
+ '1.00000000000000*y'
+
+When R is QQ it results in 'y', which works, but in general there is no
+guarantee that str(R.gen()) is the variable name.   One could do
+
+  ystr = R.variable_name()
+
+instead of str(y), which would work if R happens to be a univariate polynomial
+ring, and would break otherwise.
+
+(2) As suggested above the hermite function is broken if it doesn't
+happen to be that the first variable of a poly ring is being substituted in.
+E.g.,
+sage: R.<x,y> = QQ[]
+sage: hermite(3,y)
+BOOM!
+
+It also fails if x is symbolic:
+sage: x = var('x')
+sage: hermite(3,x)
+
+(3)The function is also buggy, because:
+sage: R.<x> = QQ[]
+sage: hermite(3,x)
+8*x^3 - 12*x
+sage: hermite(3,x^2)
+8*x^3 - 12*x
+
+In the second case, one would expect to get either 8*x^6 - 12*x^2 or
+an error message.
+
+----
+
+So this function hermite is buggy as hell. 
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/2336
 

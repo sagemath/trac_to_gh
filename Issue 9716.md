@@ -4,6 +4,7 @@ archive/issues_009716.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  mhampton\n\nThis looks like crap:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(viewer='tachyon')\n```\nbut this looks good:\n\n```\ng = graphs.DodecahedralGraph()\nshow(g.plot3d(engine='tachyon'))\n```\nAlso, this doesn't work (show a plot) at all:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(engine='tachyon')\n```\n\nThat's at least 2 bugs / sloppinesses. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9716\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2010-08-10T04:28:12Z",
     "labels": [
         "component: graph theory",

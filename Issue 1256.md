@@ -3,7 +3,8 @@
 archive/issues_001256.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe code in the new cremona* package contains all of what was in the mwrank* package.  So the latter can be abandoned as soon as the wrappings for mwrank functions have been migrated.  This will only be really serious when I next fix a bug in mwrank -- since from now on I'll only be editing the version which is part of cremona*.\n\nI'm sure this is an easy job for someone who is familiar with the mwrank wrappings (not me, alas, though I suppose I should be).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1256\n\n",
+    "body": "Assignee: mabshoff\n\nThe code in the new cremona* package contains all of what was in the mwrank* package.  So the latter can be abandoned as soon as the wrappings for mwrank functions have been migrated.  This will only be really serious when I next fix a bug in mwrank -- since from now on I'll only be editing the version which is part of cremona*.\n\nI'm sure this is an easy job for someone who is familiar with the mwrank wrappings (not me, alas, though I suppose I should be).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1256\n\n",
+    "closed_at": "2007-12-06T02:04:33Z",
     "created_at": "2007-11-24T21:22:42Z",
     "labels": [
         "component: algebraic geometry",
@@ -16,7 +17,7 @@ archive/issues_001256.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 The code in the new cremona* package contains all of what was in the mwrank* package.  So the latter can be abandoned as soon as the wrappings for mwrank functions have been migrated.  This will only be really serious when I next fix a bug in mwrank -- since from now on I'll only be editing the version which is part of cremona*.
 

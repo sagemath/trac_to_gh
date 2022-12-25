@@ -1,29 +1,81 @@
-# Issue 6495: Break up the PDF reference manual into smaller pieces
+# Issue 6495: Build the reference manual incrementally
 
 archive/issues_006495.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @jhpalmieri @nexttime @nilesjohnson @hivert @mguaypaq @mwhansen\n\nIs the logical division at the module level, with the non-auto-generated `.rst` files as guides?\n\nRelated: Should the indices be single-column?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6495\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @jhpalmieri @nexttime @nilesjohnson @hivert @mguaypaq @mwhansen\n\nKeywords: days38\n\nBuilding the Sage reference manual can take a significant amount of time. Decreasing this time could speed up Sage development.\n\nThe patch is large, but most of it consists of moving files from one location to another, as described below.  A summary of the changes:\n\nChanges in `doc/en/reference` \u2014 this is where the size of the patch comes from, although the changes are pretty simple:\n\n- rearrange the directory doc/en/reference: for each file like algebras.rst, create a subdirectory `algebras` and move `algebras.rst` to `algebras/index.rst`.  Also create a file `algebras/conf.py` for the build configuration.  All of these new conf.py files are identical.  Deal with the contents of the directory `reference/media` similarly, moving the pictures to the appropriate subdirectory.\n- modify `reference/index.rst` to point to these new files.\n- reorganize `reference/index.rst` so it is arranged, at least somewhat, by topic.\n- add intersphinx to `conf.py` \u2014 see below.  Also add the new subdirectories to the list `exclude_trees`.\n- new file `conf_sub.py`, configuration for the pieces of the documentation (as opposed to the main `conf.py`, which is for building `reference/index.rst`).  This file is imported by each of the files `SUBDIRECTORY/conf.py`.\n\nChanges to `doc/common/builder.py`:\n\n- add code to build the reference manual in sections, and also to build the sections in parallel.  The reference manual ought to be built twice to resolve references now, so typing \"sage -docbuild all html\" will build it twice (along with all of the other documents, of course).  \"sage -docbuild reference html\" will just build it once.  You can also run \"sage -docbuild reference/combinat html\", for example, to just build one part of the manual.\n- the different parts of the manual are separate documents as far as sphinx is concerned, so allow them to reference each other using the \"intersphinx\" extension.  (This is why we need to build it twice: the first pass assembles the intersphinx databases, the second pass uses the databases to create the references correctly.)\n- to accomodate the changes in #11251, which don't seem to be easily compatible with intersphinx, search through the output files looking for \"todo\" items, and accumulate them in one master \"todo\" list.\n- for pdf format, since it now produces 30 different pdf files, write an html file which links to each of them.\n\nOther changes:\n\n- `doc/common/conf.py`: add the intersphinx extension to the build process.\n- `doc/common/themes/sage/layout.html`: fix a bug where clicking the Sage logo in the upper left corner of the docs wouldn't take you to the right place, at least in the local documentation.\n- `doc/common/themes/sageref/`: add a new theme for the pieces of the reference manual.  This is almost identical to the \"sage\" theme, except for a little tinkering to the links along the top and bottom lines.\n- in the main Sage library, change a few pathnames to media files in the reference manual, since those files have been moved.\n- make the necessary changes to .hgignore and MANIFEST.in to deal with the relocated files.\n\n---\n\nThe html docs for Sage 5.4.rc2,\n[html without MathJax](http://sage.math.washington.edu/home/palmieri/misc/6495/html/),\n[html with MathJax](http://sage.math.washington.edu/home/palmieri/misc/6495-jsmath/html/), and \n[pdf](http://sage.math.washington.edu/home/palmieri/misc/6495/pdf/),\nbuilt after applying the patches here.\n\n---\n\n**Apply**:\n- [attachment:trac_6495-part1-moving-files-link.patch] (or run [attachment:trac_6495-script-jhp-link.sh])\n- [attachment:trac_6495-part2-everything-else.patch]\n- [attachment:trac_6495-part3-the-remaining-vs-5.7.beta4.patch]\n- [attachment:trac_6495-part4-interrupts.patch]\n- [attachment:trac-6495_silence_warning-fh.v2.patch].\n- [attachment:trac_6495-redirect_html.2.patch].\n- [attachment:trac_6495-docstrings.patch].\n- [attachment:trac_6495_separate_inventory.patch]\n- [attachment:trac_6495_fixes.patch]\n- [attachment:trac_6495-filtering.patch]\n\n- new Sphinx spkg: http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-1.1.2.p2.spkg\n\n---\n\nBefore building the docs, you should delete the documentation output directory: `rm -rf SAGE_ROOT/devel/sage/doc/output`. To test this, you should run `sage --docbuild all html` and `sage --docbuild all pdf`. (Note: just running `sage --docbuild reference html` will probably produce many warnings. If you run it a second time, the warnings should go away.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6495\n\n",
+    "closed_at": "2013-02-17T22:41:24Z",
     "created_at": "2009-07-09T08:29:32Z",
     "labels": [
-        "component: documentation",
-        "minor",
-        "bug"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.8",
-    "title": "Break up the PDF reference manual into smaller pieces",
+    "title": "Build the reference manual incrementally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6495",
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: tba
+Assignee: @jdemeyer
 
 CC:  @jhpalmieri @nexttime @nilesjohnson @hivert @mguaypaq @mwhansen
 
-Is the logical division at the module level, with the non-auto-generated `.rst` files as guides?
+Keywords: days38
 
-Related: Should the indices be single-column?
+Building the Sage reference manual can take a significant amount of time. Decreasing this time could speed up Sage development.
+
+The patch is large, but most of it consists of moving files from one location to another, as described below.  A summary of the changes:
+
+Changes in `doc/en/reference` — this is where the size of the patch comes from, although the changes are pretty simple:
+
+- rearrange the directory doc/en/reference: for each file like algebras.rst, create a subdirectory `algebras` and move `algebras.rst` to `algebras/index.rst`.  Also create a file `algebras/conf.py` for the build configuration.  All of these new conf.py files are identical.  Deal with the contents of the directory `reference/media` similarly, moving the pictures to the appropriate subdirectory.
+- modify `reference/index.rst` to point to these new files.
+- reorganize `reference/index.rst` so it is arranged, at least somewhat, by topic.
+- add intersphinx to `conf.py` — see below.  Also add the new subdirectories to the list `exclude_trees`.
+- new file `conf_sub.py`, configuration for the pieces of the documentation (as opposed to the main `conf.py`, which is for building `reference/index.rst`).  This file is imported by each of the files `SUBDIRECTORY/conf.py`.
+
+Changes to `doc/common/builder.py`:
+
+- add code to build the reference manual in sections, and also to build the sections in parallel.  The reference manual ought to be built twice to resolve references now, so typing "sage -docbuild all html" will build it twice (along with all of the other documents, of course).  "sage -docbuild reference html" will just build it once.  You can also run "sage -docbuild reference/combinat html", for example, to just build one part of the manual.
+- the different parts of the manual are separate documents as far as sphinx is concerned, so allow them to reference each other using the "intersphinx" extension.  (This is why we need to build it twice: the first pass assembles the intersphinx databases, the second pass uses the databases to create the references correctly.)
+- to accomodate the changes in #11251, which don't seem to be easily compatible with intersphinx, search through the output files looking for "todo" items, and accumulate them in one master "todo" list.
+- for pdf format, since it now produces 30 different pdf files, write an html file which links to each of them.
+
+Other changes:
+
+- `doc/common/conf.py`: add the intersphinx extension to the build process.
+- `doc/common/themes/sage/layout.html`: fix a bug where clicking the Sage logo in the upper left corner of the docs wouldn't take you to the right place, at least in the local documentation.
+- `doc/common/themes/sageref/`: add a new theme for the pieces of the reference manual.  This is almost identical to the "sage" theme, except for a little tinkering to the links along the top and bottom lines.
+- in the main Sage library, change a few pathnames to media files in the reference manual, since those files have been moved.
+- make the necessary changes to .hgignore and MANIFEST.in to deal with the relocated files.
+
+---
+
+The html docs for Sage 5.4.rc2,
+[html without MathJax](http://sage.math.washington.edu/home/palmieri/misc/6495/html/),
+[html with MathJax](http://sage.math.washington.edu/home/palmieri/misc/6495-jsmath/html/), and 
+[pdf](http://sage.math.washington.edu/home/palmieri/misc/6495/pdf/),
+built after applying the patches here.
+
+---
+
+**Apply**:
+- [attachment:trac_6495-part1-moving-files-link.patch] (or run [attachment:trac_6495-script-jhp-link.sh])
+- [attachment:trac_6495-part2-everything-else.patch]
+- [attachment:trac_6495-part3-the-remaining-vs-5.7.beta4.patch]
+- [attachment:trac_6495-part4-interrupts.patch]
+- [attachment:trac-6495_silence_warning-fh.v2.patch].
+- [attachment:trac_6495-redirect_html.2.patch].
+- [attachment:trac_6495-docstrings.patch].
+- [attachment:trac_6495_separate_inventory.patch]
+- [attachment:trac_6495_fixes.patch]
+- [attachment:trac_6495-filtering.patch]
+
+- new Sphinx spkg: http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-1.1.2.p2.spkg
+
+---
+
+Before building the docs, you should delete the documentation output directory: `rm -rf SAGE_ROOT/devel/sage/doc/output`. To test this, you should run `sage --docbuild all html` and `sage --docbuild all pdf`. (Note: just running `sage --docbuild reference html` will probably produce many warnings. If you run it a second time, the warnings should go away.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/6495
 

@@ -3,10 +3,11 @@
 archive/issues_007345.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.\n\nThe package is here:  http://sage.math.washington.edu/home/timdumol/libtiff-3.9.1.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7345\n\n",
+    "body": "Assignee: @TimDumol\n\nKeywords: sd32\n\nThis is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.\n\nThe package is here:  http://sage.math.washington.edu/home/timdumol/libtiff-3.9.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7345\n\n",
+    "closed_at": "2021-09-01T06:16:58Z",
     "created_at": "2009-10-29T04:25:27Z",
     "labels": [
-        "component: notebook"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "New libtiff package",
@@ -15,11 +16,13 @@ archive/issues_007345.json:
     "user": "https://github.com/TimDumol"
 }
 ```
-Assignee: boothby
+Assignee: @TimDumol
+
+Keywords: sd32
 
 This is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.
 
-The package is here:  http://sage.math.washington.edu/home/timdumol/libtiff-3.9.1.p0.spkg
+The package is here:  http://sage.math.washington.edu/home/timdumol/libtiff-3.9.5.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7345
 

@@ -4,6 +4,7 @@ archive/issues_006894.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen plotting a list of functions, it would be nice that each of them gets a different color.\n\nExample: plot([lambda x: x,lambda x: -x], (-5,5)) should plot x->x and x->-x in two different colors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6894\n\n",
+    "closed_at": "2011-11-15T09:21:04Z",
     "created_at": "2009-09-05T21:15:04Z",
     "labels": [
         "component: graphics",

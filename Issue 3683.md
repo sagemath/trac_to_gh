@@ -1,16 +1,16 @@
-# Issue 3683: meataxe interface [with patch, not ready for review]
+# Issue 3683: [with patch, with positive review] meataxe interface
 
 archive/issues_003683.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @wdjoyner\n\nThis is a start for anyone interested in G-module decompositions using GAP's Meataxe implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3683\n\n",
+    "closed_at": "2008-08-22T20:01:08Z",
     "created_at": "2008-07-20T03:02:11Z",
     "labels": [
-        "component: group theory",
-        "bug"
+        "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "meataxe interface [with patch, not ready for review]",
+    "title": "[with patch, with positive review] meataxe interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3683",
     "user": "https://github.com/wdjoyner"

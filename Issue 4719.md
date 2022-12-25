@@ -1,22 +1,23 @@
-# Issue 4719: Doctests report mysterious errors instead of ordinary failures
+# Issue 4719: [with patch, positive review] Doctests report mysterious errors instead of ordinary failures
 
 archive/issues_004719.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nKeywords: doctests\n\nThe doctest module in 3.2.2.alpha0 seems to report *all* failed doctests as \"A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\" This occurs even when the failure is a very simple one:\n\n```\ndef bad_docstring():\n        r\"\"\" A function with a bogus docstring.\n\n        EXAMPLES:\n                sage: 2\n                1\n        \"\"\"\n        pass\n```\n\nRunning \"sage -t\" on a file containing only the above code returns a \"mysterious error\", both on 32-bit SuSE (upgraded from 3.2.1) and on the sage.math binary. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4719\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @garyfurnish\n\nKeywords: doctests\n\nThe doctest module in 3.2.2.alpha0 seems to report *all* failed doctests as \"A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\" This occurs even when the failure is a very simple one:\n\n```\ndef bad_docstring():\n        r\"\"\" A function with a bogus docstring.\n\n        EXAMPLES:\n                sage: 2\n                1\n        \"\"\"\n        pass\n```\n\nRunning \"sage -t\" on a file containing only the above code returns a \"mysterious error\", both on 32-bit SuSE (upgraded from 3.2.1) and on the sage.math binary. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4719\n\n",
+    "closed_at": "2008-12-06T05:08:23Z",
     "created_at": "2008-12-05T21:00:20Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Doctests report mysterious errors instead of ordinary failures",
+    "title": "[with patch, positive review] Doctests report mysterious errors instead of ordinary failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4719",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 CC:  @garyfurnish
 

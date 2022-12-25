@@ -1,16 +1,17 @@
-# Issue 7007: generator of RR['t'] has a float attached
+# Issue 7007: [with patch, positive review] variables() method for polynomial rings returns the constant as well as the variable.
 
 archive/issues_007007.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\n[20:22] <jason-> here's something funny:\n[20:22] <jason-> sage: QQ['t'].gen()\n[20:22] <jason-> t\n[20:22] <jason-> sage: RR['t'].gen()\n[20:22] <jason-> 1.00000000000000*t\n[20:23] <jason-> what's the extra 1.0000000 in there for?\n[20:24] <jason-> that means that I get a very funny variables() function:\n[20:24] <jason-> sage: R.<t>=RR[]\n[20:24] <jason-> sage: (t^2).variables()\n[20:24] <jason-> (1.00000000000000*t,)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7007\n\n",
+    "body": "Assignee: tbd\n\n```\n[20:22] <jason-> here's something funny:\n[20:22] <jason-> sage: QQ['t'].gen()\n[20:22] <jason-> t\n[20:22] <jason-> sage: RR['t'].gen()\n[20:22] <jason-> 1.00000000000000*t\n[20:24] <jason-> that means that I get a very funny variables() function:\n[20:24] <jason-> sage: R.<t>=RR[]\n[20:24] <jason-> sage: (t^2).variables()\n[20:24] <jason-> (1.00000000000000*t,)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7007\n\n",
+    "closed_at": "2009-10-15T07:10:49Z",
     "created_at": "2009-09-25T01:29:49Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "generator of RR['t'] has a float attached",
+    "title": "[with patch, positive review] variables() method for polynomial rings returns the constant as well as the variable.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7007",
     "user": "https://github.com/jasongrout"
@@ -24,7 +25,6 @@ Assignee: tbd
 [20:22] <jason-> t
 [20:22] <jason-> sage: RR['t'].gen()
 [20:22] <jason-> 1.00000000000000*t
-[20:23] <jason-> what's the extra 1.0000000 in there for?
 [20:24] <jason-> that means that I get a very funny variables() function:
 [20:24] <jason-> sage: R.<t>=RR[]
 [20:24] <jason-> sage: (t^2).variables()

@@ -4,6 +4,7 @@ archive/issues_009069.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @burcin @koffie minz\n\nImplement weak Popov form for a matrix over a rational function field k(t)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9069\n\n",
+    "closed_at": "2010-07-20T08:20:29Z",
     "created_at": "2010-05-28T00:25:47Z",
     "labels": [
         "component: linear algebra",

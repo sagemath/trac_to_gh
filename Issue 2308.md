@@ -1,22 +1,23 @@
-# Issue 2308: remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!
+# Issue 2308: [with patch, positive review] remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!
 
 archive/issues_002308.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2308\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2308\n\n",
+    "closed_at": "2008-02-26T01:57:06Z",
     "created_at": "2008-02-26T01:40:07Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!",
+    "title": "[with patch, positive review] remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2308",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: mabshoff
 
 
 

@@ -1,16 +1,17 @@
-# Issue 4108: [with patch, needs review] disable hmm.pyx and chmm.pyx doctests
+# Issue 4108: [with patch, positive review] disable hmm.pyx and chmm.pyx doctests
 
 archive/issues_004108.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nDue to a bug in ghmm (tracked at #3984) the doctests in chmm.pyx and hmm.pyx segfault all over the map. So disabled them globally for now until that issue is resolved.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4108\n\n",
+    "closed_at": "2008-09-12T23:26:05Z",
     "created_at": "2008-09-12T23:23:15Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] disable hmm.pyx and chmm.pyx doctests",
+    "title": "[with patch, positive review] disable hmm.pyx and chmm.pyx doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4108",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

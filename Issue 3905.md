@@ -1,15 +1,16 @@
-# Issue 3905: [with patch, needs review] revision of programming guide
+# Issue 3905: [with patch, positive review] revision of programming guide
 
 archive/issues_003905.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @robertwb @mwhansen\n\nKeywords: programming guide\n\nI've edited the programming guide; this has involved a fair amount of reorganization, some rewriting, some deleting, and some new stuff.  I hope I haven't removed anyone's favorite part.\n\nThe coercion section is unchanged, because of comments by craigcitro in #3738: I hope he produces a new coercion section for this document.\n\nThe section after coercion, on mutability, is unchanged, although it needs to be expanded.  I don't really understand the issues involved, so I don't think I'm the right person to do this.\n\nThe new version also has nothing on benchmarking or profiling.  Feel free to write something and produce a patch.\n\nMeanwhile, in addition to the patch, you can look at a PDF version of the guide here:\n[http://www.math.washington.edu/~palmieri/Sage/prog.pdf](http://www.math.washington.edu/~palmieri/Sage/prog.pdf)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3905\n\n",
+    "body": "Assignee: tba\n\nCC:  @robertwb @mwhansen\n\nKeywords: programming guide\n\nI've edited the programming guide; this has involved a fair amount of reorganization, some rewriting, some deleting, and some new stuff.  I hope I haven't removed anyone's favorite part.\n\nThe coercion section is unchanged, because of comments by craigcitro in #3738: I hope he produces a new coercion section for this document.\n\nThe section after coercion, on mutability, is unchanged, although it needs to be expanded.  I don't really understand the issues involved, so I don't think I'm the right person to do this.\n\nThe new version also has nothing on benchmarking or profiling.  Feel free to write something and produce a patch.\n\nMeanwhile, in addition to the patch, you can look at a PDF version of the guide here:\n[http://www.math.washington.edu/~palmieri/Sage/prog.pdf](http://www.math.washington.edu/~palmieri/Sage/prog.pdf)\n\nOnce this ticket is merged we can close:\n* #1647\n* #1648\n* #2078\n* #2422\n* #3393\n\nIssue created by migration from https://trac.sagemath.org/ticket/3905\n\n",
+    "closed_at": "2008-08-31T07:54:40Z",
     "created_at": "2008-08-20T00:35:45Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] revision of programming guide",
+    "title": "[with patch, positive review] revision of programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3905",
     "user": "https://github.com/jhpalmieri"
@@ -31,6 +32,13 @@ The new version also has nothing on benchmarking or profiling.  Feel free to wri
 
 Meanwhile, in addition to the patch, you can look at a PDF version of the guide here:
 [http://www.math.washington.edu/~palmieri/Sage/prog.pdf](http://www.math.washington.edu/~palmieri/Sage/prog.pdf)
+
+Once this ticket is merged we can close:
+* #1647
+* #1648
+* #2078
+* #2422
+* #3393
 
 Issue created by migration from https://trac.sagemath.org/ticket/3905
 

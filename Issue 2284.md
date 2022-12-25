@@ -1,9 +1,10 @@
-# Issue 2284: CallableSymbolicExpression._latex_() has some odd behavior
+# Issue 2284: [with patch, positive review] CallableSymbolicExpression._latex_() has some odd behavior
 
 archive/issues_002284.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: f(x,y,z) = 2*x + 3*z^3 - sin(y)\nsage: f._latex_()\n'\\\\left((x, y, z) \\\\right)\\\\ {\\\\mapsto}\\\\ {3 {z}^{3} } - \\\\sin \\\\left( y\n\\\\right) + {2 x}'\n```\n(note the extra parens on the left of the arrow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2284\n\n",
+    "closed_at": "2008-02-28T06:50:17Z",
     "created_at": "2008-02-24T00:01:19Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_002284.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "CallableSymbolicExpression._latex_() has some odd behavior",
+    "title": "[with patch, positive review] CallableSymbolicExpression._latex_() has some odd behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2284",
     "user": "https://github.com/bobmoretti"

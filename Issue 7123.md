@@ -3,7 +3,8 @@
 archive/issues_007123.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7123\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nKeywords: cryptanalysis shift\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7123\n\n",
+    "closed_at": "2009-10-19T13:31:50Z",
     "created_at": "2009-10-05T15:56:07Z",
     "labels": [
         "component: cryptography"
@@ -18,6 +19,8 @@ archive/issues_007123.json:
 Assignee: somebody
 
 CC:  @rbeezer
+
+Keywords: cryptanalysis shift
 
 As the subject says.
 

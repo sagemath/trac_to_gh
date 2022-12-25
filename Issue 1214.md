@@ -1,22 +1,23 @@
-# Issue 1214: error in polynomial ideal membership testing
+# Issue 1214: [with patch, with positive review] error in polynomial ideal membership testing
 
 archive/issues_001214.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
+    "closed_at": "2007-12-01T18:47:33Z",
     "created_at": "2007-11-20T05:33:53Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "error in polynomial ideal membership testing",
+    "title": "[with patch, with positive review] error in polynomial ideal membership testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1214",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @malb
+Assignee: @mwhansen
 
 ```
 sage: x^2 in I

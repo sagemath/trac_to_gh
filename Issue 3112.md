@@ -1,15 +1,16 @@
-# Issue 3112: [with patch, needs review] Generate self-orthogonal binary codes
+# Issue 3112: [with patch, positive review] Generate self-orthogonal binary codes
 
 archive/issues_003112.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @wdjoyner @mwhansen\n\n```\nsage: for B in self_orthogonal_binary_codes(8,3):\n....:     print B.gen_mat()\n....:     print\n....:     \n[1 1]\n\n[1 1 0 0]\n[0 0 1 1]\n\n[1 0 1 0 0 0]\n[0 1 0 1 0 0]\n[0 0 0 0 1 1]\n\n[1 1 1 1]\n\n[1 1 1 1 0 0]\n[0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 1 0 1 0 1 1]\n\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n\n[1 1 1 1 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 1 0 0 0 1 1 1]\n\n[1 1 1 1 1 1 1 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3112\n\n",
+    "closed_at": "2008-05-22T23:12:40Z",
     "created_at": "2008-05-06T18:57:03Z",
     "labels": [
         "component: coding theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] Generate self-orthogonal binary codes",
+    "title": "[with patch, positive review] Generate self-orthogonal binary codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3112",
     "user": "https://github.com/rlmill"

@@ -1,15 +1,16 @@
-# Issue 3764: notebook -- notebook.py coverage to
+# Issue 3764: [with patch, positive review] notebook -- notebook.py coverage to 17%
 
 archive/issues_003764.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3764\n\n",
+    "closed_at": "2008-08-10T04:29:19Z",
     "created_at": "2008-08-03T14:03:57Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "notebook -- notebook.py coverage to",
+    "title": "[with patch, positive review] notebook -- notebook.py coverage to 17%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3764",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

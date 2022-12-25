@@ -1,9 +1,10 @@
-# Issue 3609: Update eclib to eclib-20080310.p5.spkg
+# Issue 3609: [with spkg, positive review] Update eclib to eclib-20080310.p5.spkg
 
 archive/issues_003609.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nA slightly updated spkg is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p5.spkg\n\nAccording to John:\n\n```\nThere's a new version with that file deleted (and the mercurial logs\nup to date) in the same place as before, called eclib-20080310.p5.spkg\n\nJohn\n```\n\nJohn is talking about src/procs/ressol.c which is copyrighted by \"Copyright (c) 1994, 1995 by the LiDIA Group\". LiDIA is now GPL, but since the file is no longer used it was completely deleted.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3609\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: editor_mabshoff\n\nA slightly updated spkg is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p5.spkg\n\nAccording to John:\n\n```\nThere's a new version with that file deleted (and the mercurial logs\nup to date) in the same place as before, called eclib-20080310.p5.spkg\n\nJohn\n```\n\nJohn is talking about src/procs/ressol.c which is copyrighted by \"Copyright (c) 1994, 1995 by the LiDIA Group\". LiDIA is now GPL, but since the file is no longer used it was completely deleted.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3609\n\n",
+    "closed_at": "2008-07-31T01:51:49Z",
     "created_at": "2008-07-08T11:56:38Z",
     "labels": [
         "component: build",
@@ -11,13 +12,15 @@ archive/issues_003609.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Update eclib to eclib-20080310.p5.spkg",
+    "title": "[with spkg, positive review] Update eclib to eclib-20080310.p5.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3609",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @JohnCremona
+
+Keywords: editor_mabshoff
 
 A slightly updated spkg is at
 

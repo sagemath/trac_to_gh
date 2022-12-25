@@ -1,22 +1,25 @@
-# Issue 6273: Improve random_element for number field orders and ideals (easy)
+# Issue 6273: [with patch, positive review] Improve random_element for number field orders and ideals
 
 archive/issues_006273.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAt the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. \n\nMore generally, one could ask for the same functionality for fractional ideals (and the above would be the special case for the ideal (1).)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6273\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field ideal order\n\nAt the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. \n\nMore generally, one could ask for the same functionality for fractional ideals (and the above would be the special case for the ideal (1).)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6273\n\n",
+    "closed_at": "2009-06-24T09:59:13Z",
     "created_at": "2009-06-13T10:36:05Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Improve random_element for number field orders and ideals (easy)",
+    "title": "[with patch, positive review] Improve random_element for number field orders and ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6273",
     "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: @williamstein
+
+Keywords: number field ideal order
 
 At the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. 
 

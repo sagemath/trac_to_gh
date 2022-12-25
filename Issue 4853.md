@@ -1,9 +1,10 @@
-# Issue 4853: Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx
+# Issue 4853: [with patch, positive review] Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx
 
 archive/issues_004853.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is cicero on SkyNet with gcc 4.3.2:\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_morphisms.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.2-x86-Linux-fc/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 44:\n    sage: sigma_a = K.polynomial().change_ring(CC).roots()[1][0]; sigma_a\nExpected:\n    -0.629960524947436 + 1.09112363597172*I\nGot:\n    -0.629960524947437 + 1.09112363597172*I\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.2.2-x86-Linux-fc/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 47:\n    sage: g(a+1)\nExpected:\n    0.370039475052564 + 1.09112363597172*I\nGot:\n    0.370039475052563 + 1.09112363597172*I\n**********************************************************************\n```\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4853\n\n",
+    "closed_at": "2008-12-23T23:19:24Z",
     "created_at": "2008-12-22T18:50:02Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004853.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx",
+    "title": "[with patch, positive review] Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4853",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

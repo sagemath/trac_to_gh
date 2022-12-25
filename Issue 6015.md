@@ -1,16 +1,17 @@
-# Issue 6015: bring doctest coverage of set.py to 96%
+# Issue 6015: [with patch, positive review] bring doctest coverage of set.py to 96%
 
 archive/issues_006015.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: set, doctest\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6015\n\n",
+    "closed_at": "2009-05-11T09:03:01Z",
     "created_at": "2009-05-11T01:01:20Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "bring doctest coverage of set.py to 96%",
+    "title": "[with patch, positive review] bring doctest coverage of set.py to 96%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6015",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

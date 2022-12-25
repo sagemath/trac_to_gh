@@ -4,6 +4,7 @@ archive/issues_008853.json:
 ```json
 {
     "body": "Assignee: tbd\n\nApparently, it is not picked up from math.h.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8853\n\n",
+    "closed_at": "2010-05-25T02:09:41Z",
     "created_at": "2010-05-03T12:29:15Z",
     "labels": [
         "component: porting: cygwin",

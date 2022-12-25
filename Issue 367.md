@@ -4,6 +4,7 @@ archive/issues_000367.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis text output is confusing!\n\n```\nsage: def sum_of_two_squares_naive(n): \n...    for i in range(int(sqrt(n))): \n...        if is_square(n \n\nIssue created by migration from https://trac.sagemath.org/ticket/367\n\n",
+    "closed_at": "2007-05-18T15:42:54Z",
     "created_at": "2007-05-17T23:14:09Z",
     "labels": [
         "component: notebook",

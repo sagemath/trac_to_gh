@@ -1,9 +1,10 @@
-# Issue 5171: Bugs in the Graph constructor when input an adjacency matrix.
+# Issue 5171: [with patch, positive review] Overhaul the Graph and DiGraph initialization functions.
 
 archive/issues_005171.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n1. The adjacency matrix of a graph constructed from an adjacency matrix should either be the same or one should get an error when constructing the graph:\n\n```\nsage: a = matrix(2,2,[1,0,0,1])\nsage: Graph(a)\nGraph on 2 vertices\nsage: Graph(a).adjacency_matrix()  # I think Graph(a) should work or given an error\n[0 0]\n[0 0]\nsage: Graph(a, loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\nAnother example -- this is WRONG, since multiple loops should not be ignored.\n\n```\nsage: a = matrix(2,2,[2,0,0,1])\nsage: Graph(a,loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\nWhy not just make a graph with loops and multiple edges (or at least weighted edges) if and only if the adjacency matrix has diagonal entries or non-1 entries?  I'm guessing the Graph constructor just grew from a time when these constructions weren't allowed or that networkx is just poorly designed.  Either way, this needs to be fixed for Sage. \n\n2. When the input matrix is non-square, the error message is wrong in multiple ways:\n\n```\nsage: a = matrix([1,0,0,1])\nsage: Graph(a)\nTraceback (most recent call last):\n...\nAttributeError: Incidence Matrix must have one 1 and one -1 per column.\n```\n\n* it should be \"adjacency matrix\". \n\n* The exception should be ValueError, not AttributeError\n\n* The Graph constructor doesn't take only 1's or -1's as input (but see above)\n\n* The Graph constructor is perfectly fine with having multiple 1's per column!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5171\n\n",
+    "closed_at": "2009-02-18T00:08:15Z",
     "created_at": "2009-02-04T02:53:08Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_005171.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Bugs in the Graph constructor when input an adjacency matrix.",
+    "title": "[with patch, positive review] Overhaul the Graph and DiGraph initialization functions.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5171",
     "user": "https://github.com/williamstein"

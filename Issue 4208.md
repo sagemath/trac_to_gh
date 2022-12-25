@@ -1,16 +1,17 @@
-# Issue 4208: [with spkg, needs review] Update mpfr to 2.3.2 release
+# Issue 4208: [with spkg, positive review] Update mpfr to 2.3.2 release
 
 archive/issues_004208.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere is a new upstream release of mpfr. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha2/mpfr-2.3.2.spkg\n\nupdates to that release.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4208\n\n",
+    "closed_at": "2008-09-27T21:40:19Z",
     "created_at": "2008-09-27T20:10:12Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with spkg, needs review] Update mpfr to 2.3.2 release",
+    "title": "[with spkg, positive review] Update mpfr to 2.3.2 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4208",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

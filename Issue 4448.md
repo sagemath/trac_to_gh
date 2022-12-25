@@ -1,16 +1,17 @@
-# Issue 4448: easy-to-fix (?) bug in interact with matrices
+# Issue 4448: [with patch, positive review] easy-to-fix (?) bug in interact with matrices
 
 archive/issues_004448.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nTry this interact in the notebook:\n\n```\n@interact\ndef f(n=matrix([[pi^2]])):\n    print n\n```\n\nNotice that the matrix input appears empty.  What is happening, I think, is that\nstr(...) is being called on each entry instead of repr(...) which causes uses of ASCII art.   It seems this is a problem only for matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4448\n\n",
+    "closed_at": "2008-11-08T07:10:15Z",
     "created_at": "2008-11-05T20:06:02Z",
     "labels": [
         "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "easy-to-fix (?) bug in interact with matrices",
+    "title": "[with patch, positive review] easy-to-fix (?) bug in interact with matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4448",
     "user": "https://github.com/williamstein"

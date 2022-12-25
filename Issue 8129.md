@@ -3,7 +3,8 @@
 archive/issues_008129.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein @jasongrout @jhpalmieri\n\nKeywords: notebook, jsmath, fonts\n\nInstalling the jsMath image fonts in `SAGE_LOCAL/lib/jsmath/fonts`, say, should make it easier to upgrade to new SageNB versions.\n\nNote: Both the notebook and the command-line can use jsMath (e.g., `browse_sage_doc(identity_matrix)`).  We could detect and check the relevant paths and make a symbolic link in `sage.all`.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/53157b4e21f4ef86), #7467, #7778.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8129\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein @jasongrout @jhpalmieri\n\nKeywords: notebook, jsmath, fonts\n\nInstalling the jsMath image fonts in `SAGE_LOCAL/lib/jsmath/fonts`, say, should make it easier to upgrade to new SageNB versions.\n\nNote: Both the notebook and the command-line can use jsMath (e.g., `browse_sage_doc(identity_matrix)`).\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/53157b4e21f4ef86), #7467, #7778.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8129\n\n",
+    "closed_at": "2013-05-21T07:24:43Z",
     "created_at": "2010-01-30T04:06:57Z",
     "labels": [
         "component: packages: optional",
@@ -24,9 +25,10 @@ Keywords: notebook, jsmath, fonts
 
 Installing the jsMath image fonts in `SAGE_LOCAL/lib/jsmath/fonts`, say, should make it easier to upgrade to new SageNB versions.
 
-Note: Both the notebook and the command-line can use jsMath (e.g., `browse_sage_doc(identity_matrix)`).  We could detect and check the relevant paths and make a symbolic link in `sage.all`.
+Note: Both the notebook and the command-line can use jsMath (e.g., `browse_sage_doc(identity_matrix)`).
 
 See [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/53157b4e21f4ef86), #7467, #7778.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8129
 

@@ -1,9 +1,10 @@
-# Issue 5784: [with patch, needs review] CSS typos
+# Issue 5784: [with patch, positive review] CSS typos
 
 archive/issues_005784.json:
 ```json
 {
     "body": "Assignee: @qed777\n\nTwo typos in the main notebook cascading stylesheet:\n\nhttp://localhost:8000/css/main.css\n\nThese were reported on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9a5262dfaada469e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5784\n\n",
+    "closed_at": "2009-04-15T06:14:51Z",
     "created_at": "2009-04-14T09:46:50Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005784.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] CSS typos",
+    "title": "[with patch, positive review] CSS typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5784",
     "user": "https://github.com/qed777"

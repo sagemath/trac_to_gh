@@ -4,6 +4,7 @@ archive/issues_007360.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCurrently (sage-4.2):\n\n```\nsage: S = KleinFourGroup()\nsage: S.isomorphism_type_info_simple_group()\n(<type 'exceptions.TypeError'>, 'Group must be simple.')\n```\n\nThe attached patch fixes this and adds a doctest.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7360\n\n",
+    "closed_at": "2009-11-12T06:50:30Z",
     "created_at": "2009-10-31T13:04:24Z",
     "labels": [
         "component: group theory",

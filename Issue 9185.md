@@ -4,6 +4,7 @@ archive/issues_009185.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime @mwhansen\n\nTo build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9185\n\n",
+    "closed_at": "2010-06-25T15:46:50Z",
     "created_at": "2010-06-08T08:40:36Z",
     "labels": [
         "component: packages: standard",

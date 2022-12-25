@@ -4,6 +4,7 @@ archive/issues_000235.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNeed to do \n\n    ranlib $SAGE_ROOT/local/lib/*.a \n\nin some cases when move sage. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/235\n\n",
+    "closed_at": "2007-08-18T09:55:48Z",
     "created_at": "2007-01-31T01:15:25Z",
     "labels": [
         "component: algebraic geometry",

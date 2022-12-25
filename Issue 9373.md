@@ -3,7 +3,8 @@
 archive/issues_009373.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nThe database of common graph generators maintains two separate lists of such generators. This entails a lot of work when updating that database as one would need to update two separate lists. Not only that, but having two lists that contain essentially the same information is information duplication. One could update a list and then forgot to update the other list. Better to have one list with links to corresponding generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9373\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nThe database of common graph generators maintains two separate lists of such generators. This entails a lot of work when updating that database as one would need to update two separate lists. Not only that, but having two lists that contain essentially the same information is information duplication. One could update a list and then forgot to update the other list. Better to have one list with links to corresponding generators.\n\n**Apply:**\n\n* [trac_9373.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9373/trac_9373.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9373\n\n",
+    "closed_at": "2010-07-21T02:48:17Z",
     "created_at": "2010-06-29T15:48:05Z",
     "labels": [
         "component: graph theory"
@@ -18,6 +19,10 @@ archive/issues_009373.json:
 Assignee: jason, ncohen, rlm
 
 The database of common graph generators maintains two separate lists of such generators. This entails a lot of work when updating that database as one would need to update two separate lists. Not only that, but having two lists that contain essentially the same information is information duplication. One could update a list and then forgot to update the other list. Better to have one list with links to corresponding generators.
+
+**Apply:**
+
+* [trac_9373.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9373/trac_9373.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9373
 

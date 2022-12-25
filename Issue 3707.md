@@ -1,15 +1,16 @@
-# Issue 3707: Make all common Sage classes convertible to SymPy
+# Issue 3707: [with patch, positive review] Make all common Sage classes convertible to SymPy
 
 archive/issues_003707.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThe attached patch is here like a request for comments. \n\nWe are about to release a new sympy that contains thorough tests for Sage <-> SymPy conversion:\n\nhttp://hg.sympy.org/sympy/file/16cfc09420ee/sympy/test_external/test_sage.py\n\nWhen sage 3.0.6 gets released, I'll create a new sympy spkg and expand tests in Sage too, so that we are sure things work in Sage environment too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3707\n\n",
+    "closed_at": "2008-08-22T19:36:43Z",
     "created_at": "2008-07-22T11:19:25Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Make all common Sage classes convertible to SymPy",
+    "title": "[with patch, positive review] Make all common Sage classes convertible to SymPy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3707",
     "user": "https://github.com/certik"

@@ -1,22 +1,23 @@
-# Issue 5716: lifting a subdivided matrix should preserve the subdivision, but doesn't.
+# Issue 5716: [with patch, positive review] lifting a subdivided matrix should preserve the subdivision, but doesn't.
 
 archive/issues_005716.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: a = random_matrix(GF(3),4)\nsage: a.subdivide(2,2)\nsage: a\n[2 0|0 2]\n[2 1|1 0]\n[---+---]\n[1 2|1 0]\n[1 0|0 1]\nsage: a.lift()\n[2 0 0 2]\n[2 1 1 0]\n[1 2 1 0]\n[1 0 0 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5716\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @jasongrout\n\n```\nsage: a = random_matrix(GF(3),4)\nsage: a.subdivide(2,2)\nsage: a\n[2 0|0 2]\n[2 1|1 0]\n[---+---]\n[1 2|1 0]\n[1 0|0 1]\nsage: a.lift()\n[2 0 0 2]\n[2 1 1 0]\n[1 2 1 0]\n[1 0 0 1]\n```\n\nSee also #5717.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5716\n\n",
+    "closed_at": "2009-05-31T23:47:34Z",
     "created_at": "2009-04-08T19:18:52Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "lifting a subdivided matrix should preserve the subdivision, but doesn't.",
+    "title": "[with patch, positive review] lifting a subdivided matrix should preserve the subdivision, but doesn't.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5716",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @jhpalmieri
 
 CC:  @jasongrout
 
@@ -35,6 +36,8 @@ sage: a.lift()
 [1 2 1 0]
 [1 0 0 1]
 ```
+
+See also #5717.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5716
 

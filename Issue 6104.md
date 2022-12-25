@@ -1,16 +1,17 @@
-# Issue 6104: [with spkg, needs review] Fix Solaris specific build issue for libfplll.spkg
+# Issue 6104: [with spkg, positive review] Fix Solaris specific build issue for libfplll.spkg
 
 archive/issues_006104.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ndpe.h was not including some headers for finite() and also due to system header differences there are template scope issues with NAN. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-4.0/rc0/libfplll-3.0.12.p0.spkg\n\nworks around that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6104\n\n",
+    "closed_at": "2009-05-28T06:49:30Z",
     "created_at": "2009-05-21T04:26:44Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with spkg, needs review] Fix Solaris specific build issue for libfplll.spkg",
+    "title": "[with spkg, positive review] Fix Solaris specific build issue for libfplll.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6104",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

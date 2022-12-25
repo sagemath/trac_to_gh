@@ -1,16 +1,17 @@
-# Issue 5098: [with patch, needs review] Pollard rho algorithm for generic discrete logarithm
+# Issue 5098: Pollard rho algorithm for generic discrete logarithm
 
 archive/issues_005098.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nFirst attempt to provide an algorithm using less memory than the \"baby step giant step\" algorithm for generic discrete logarithm.\n\nThis algorithm uses only (small) constant memory. It is about 3 times slower than bsgs on the examples I tested.\n\nI also added an unused optional argument to bsgs to simplify the call in discrete_log.\n\nProposed patch attached, with doctests.\n\n(the attached patch needs #5088 to be applied first)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5098\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nFirst attempt to provide an algorithm using less memory than the \"baby step giant step\" algorithm for generic discrete logarithm.\n\nThis algorithm uses only (small) constant memory.\n\nProposed patch attached, with doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5098\n\n",
+    "closed_at": "2009-12-20T07:23:32Z",
     "created_at": "2009-01-25T15:17:41Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] Pollard rho algorithm for generic discrete logarithm",
+    "title": "Pollard rho algorithm for generic discrete logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5098",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
@@ -22,13 +23,9 @@ CC:  @JohnCremona
 
 First attempt to provide an algorithm using less memory than the "baby step giant step" algorithm for generic discrete logarithm.
 
-This algorithm uses only (small) constant memory. It is about 3 times slower than bsgs on the examples I tested.
-
-I also added an unused optional argument to bsgs to simplify the call in discrete_log.
+This algorithm uses only (small) constant memory.
 
 Proposed patch attached, with doctests.
-
-(the attached patch needs #5088 to be applied first)
 
 Issue created by migration from https://trac.sagemath.org/ticket/5098
 

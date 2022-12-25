@@ -1,15 +1,16 @@
-# Issue 3408: [with spkg] Cython 0.9.8 released
+# Issue 3408: [with spkg, Positive review with rebase] Cython 0.9.8 released
 
 archive/issues_003408.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/\n\nIssue created by migration from https://trac.sagemath.org/ticket/3408\n\n",
+    "closed_at": "2008-06-23T23:40:33Z",
     "created_at": "2008-06-12T23:50:10Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg] Cython 0.9.8 released",
+    "title": "[with spkg, Positive review with rebase] Cython 0.9.8 released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3408",
     "user": "https://github.com/robertwb"

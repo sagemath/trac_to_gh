@@ -1,15 +1,16 @@
-# Issue 1049: [with patch] graphs: transitive reduction function
+# Issue 1049: [with patch] [tested] graphs: transitive reduction function
 
 archive/issues_001049.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1049\n\n",
+    "closed_at": "2007-11-01T10:02:50Z",
     "created_at": "2007-11-01T03:08:15Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "[with patch] graphs: transitive reduction function",
+    "title": "[with patch] [tested] graphs: transitive reduction function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1049",
     "user": "https://github.com/jasongrout"

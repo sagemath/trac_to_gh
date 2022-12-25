@@ -1,22 +1,21 @@
-# Issue 6958: [with patch, not ready] prove_BSD function for elliptic curves over QQ
+# Issue 6958: [with patch, positive review] prove_BSD function for elliptic curves over QQ
 
 archive/issues_006958.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nComments welcome!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6958\n\n",
+    "body": "CC:  @williamstein\n\nComments welcome!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6958\n\n",
+    "closed_at": "2009-10-15T16:13:41Z",
     "created_at": "2009-09-19T03:13:09Z",
     "labels": [
         "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, not ready] prove_BSD function for elliptic curves over QQ",
+    "title": "[with patch, positive review] prove_BSD function for elliptic curves over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6958",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @loefflerd
-
 CC:  @williamstein
 
 Comments welcome!

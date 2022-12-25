@@ -1,22 +1,25 @@
-# Issue 2171: [with patch; needs review] followup to #2169 -- (magma/sage interface) some further optimizations and fixes
+# Issue 2171: [with patch; positive review] followup to #2169 -- (magma/sage interface) some further optimizations and fixes
 
 archive/issues_002171.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nApply the patches from #2169, then apply both these patches.  To test do\n\n```\nsage -t --optional SAGE_ROOT/devel/sage/sage/interfaces/magma.py\n```\n\nConversion of Magma matrices over ZZ back to Sage should also be much faster now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2171\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_craigcitro\n\nApply the patches from #2169, then apply both these patches.  To test do\n\n```\nsage -t --optional SAGE_ROOT/devel/sage/sage/interfaces/magma.py\n```\n\nConversion of Magma matrices over ZZ back to Sage should also be much faster now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2171\n\n",
+    "closed_at": "2008-10-27T04:20:06Z",
     "created_at": "2008-02-15T08:11:04Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch; needs review] followup to #2169 -- (magma/sage interface) some further optimizations and fixes",
+    "title": "[with patch; positive review] followup to #2169 -- (magma/sage interface) some further optimizations and fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2171",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_craigcitro
 
 Apply the patches from #2169, then apply both these patches.  To test do
 

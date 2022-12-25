@@ -1,16 +1,17 @@
-# Issue 3485: [with patch, request comments, not ready for review] new sage_input function gives a sequence of commands to reproduce sage values
+# Issue 3485: [with patch, positive review] new sage_input function gives a sequence of commands to reproduce sage values
 
 archive/issues_003485.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nThis patch creates a new sage_input function, that does things like this:\n\n```\nsage: sage_input((polygen(GF(3))+1)^4)\n\nR.<x> = GF(3)[]\nx^4 + x^3 + x + 1\n```\n\nI am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked \"complicated\" types, so I think the underlying framework is ready to go.)\n\nThis patch depends on #3484.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3485\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nKeywords: editor_mabshoff\n\nThis patch creates a new sage_input function, that does things like this:\n\n```\nsage: sage_input((polygen(GF(3))+1)^4)\n\nR.<x> = GF(3)[]\nx^4 + x^3 + x + 1\n```\n\nsage_input is implemented for only a few types; but I picked \"complicated\" types, so I think the underlying framework is ready to go.  Once this patch has been accepted, I plan to go through and add support for many more types.\n\nThis patch depends on #3484.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3485\n\n",
+    "closed_at": "2008-08-13T18:57:18Z",
     "created_at": "2008-06-20T08:18:11Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, request comments, not ready for review] new sage_input function gives a sequence of commands to reproduce sage values",
+    "title": "[with patch, positive review] new sage_input function gives a sequence of commands to reproduce sage values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3485",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -19,6 +20,8 @@ archive/issues_003485.json:
 Assignee: cwitty
 
 CC:  @ncalexan wstein
+
+Keywords: editor_mabshoff
 
 This patch creates a new sage_input function, that does things like this:
 
@@ -29,7 +32,7 @@ R.<x> = GF(3)[]
 x^4 + x^3 + x + 1
 ```
 
-I am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked "complicated" types, so I think the underlying framework is ready to go.)
+sage_input is implemented for only a few types; but I picked "complicated" types, so I think the underlying framework is ready to go.  Once this patch has been accepted, I plan to go through and add support for many more types.
 
 This patch depends on #3484.
 

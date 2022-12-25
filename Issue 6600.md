@@ -1,16 +1,17 @@
-# Issue 6600: typos in "bordeaux_2008" document
+# Issue 6600: [with patch, positive review] typos in "bordeaux_2008" document
 
 archive/issues_006600.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  revans@ucsd.edu\n\nAs the subject says. This was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/34d39786e4aed6c3) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6600\n\n",
+    "closed_at": "2009-07-24T22:13:54Z",
     "created_at": "2009-07-23T11:08:21Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "typos in \"bordeaux_2008\" document",
+    "title": "[with patch, positive review] typos in \"bordeaux_2008\" document",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6600",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

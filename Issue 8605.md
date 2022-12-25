@@ -4,6 +4,7 @@ archive/issues_008605.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI've made a couple improvements to SageTeX in the last few months, and it's time for an upgrade. The new version automatically falls back to making PNGs if making EPS or PDF files fails, and includes Nicolas Thi\u00e9ry's sageexample environment. Please review and test!\n\nspkg available at http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.2.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8605\n\n",
+    "closed_at": "2010-04-23T17:12:56Z",
     "created_at": "2010-03-25T12:43:19Z",
     "labels": [
         "component: packages: standard"

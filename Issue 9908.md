@@ -4,6 +4,7 @@ archive/issues_009908.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @fchapoton\n\nFrom a user who found it difficult to uninvite Share people:\n\n```\nI wouldn't call it a bug either, but it just wasn't obvious that to remove a collaborator, you would click \"invite collaborators.\" \u00a0I had tried deleting the name and then clicking \"save and quit\" in the upper right.\n```\nThis should be clarified.  Perhaps it should be \"update collaborator list\" or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9909\n\n",
+    "closed_at": "2020-09-08T18:00:01Z",
     "created_at": "2010-09-14T13:19:38Z",
     "labels": [
         "component: notebook",

@@ -3,10 +3,11 @@
 archive/issues_001145.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer jpflori\n\nI propose the following strategy for factor(integer):\n\n1) do trial division by all primes up to say 1000. This can be done efficiently by a single\n   gcd with the product of all those primes.\n2) use GMP-ECM, starting from say B1=100, and increasing B1 by sqrt(B1) at each step, until\n   one reaches the _recommended_B1_list value which corresponds to 1/3 of the size of the\n   number to be factored. Thus for a 90-digit input, one will stop at B1=250000.\n3) try GMP-ECM P-1 and P+1 with respectively 9*B1 and 3*B1 where B1 is the last value tried\n   for ECM. The corresponding cost of those runs will be approximately the same as the last\n   ECM curve, thus this will not slow down the average computation, and might find a few factors.\n4) run MPQS or GNFS. You might want to issue a warning to the user (if called from toplevel) at\n   that time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1145\n\n",
+    "body": "Assignee: @a-andre\n\nCC:  @jdemeyer jpflori\n\nI propose the following strategy for factor(integer):\n\n1. do trial division by all primes up to say 1000. This can be done efficiently by a single gcd with the product of all those primes.\n2. use GMP-ECM, starting from say B1=100, and increasing B1 by sqrt(B1) at each step, until one reaches the _recommended_B1_list value which corresponds to 1/3 of the size of the number to be factored. Thus for a 90-digit input, one will stop at B1=250000.\n3. try GMP-ECM P-1 and P+1 with respectively 9*B1 and 3*B1 where B1 is the last value tried for ECM. The corresponding cost of those runs will be approximately the same as the last ECM curve, thus this will not slow down the average computation, and might find a few factors.\n4. run MPQS or GNFS. You might want to issue a warning to the user (if called from toplevel) at that time.\n\n## Apply\n1. #5310\n2. #5945\n3. #10623\n4. [attachment:trac_1145_integer_factorization.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1145\n\n",
+    "closed_at": "2010-02-05T20:44:31Z",
     "created_at": "2007-11-11T13:26:17Z",
     "labels": [
-        "component: number theory",
+        "component: factorization",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,22 +17,23 @@ archive/issues_001145.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @williamstein
+Assignee: @a-andre
 
 CC:  @jdemeyer jpflori
 
 I propose the following strategy for factor(integer):
 
-1) do trial division by all primes up to say 1000. This can be done efficiently by a single
-   gcd with the product of all those primes.
-2) use GMP-ECM, starting from say B1=100, and increasing B1 by sqrt(B1) at each step, until
-   one reaches the _recommended_B1_list value which corresponds to 1/3 of the size of the
-   number to be factored. Thus for a 90-digit input, one will stop at B1=250000.
-3) try GMP-ECM P-1 and P+1 with respectively 9*B1 and 3*B1 where B1 is the last value tried
-   for ECM. The corresponding cost of those runs will be approximately the same as the last
-   ECM curve, thus this will not slow down the average computation, and might find a few factors.
-4) run MPQS or GNFS. You might want to issue a warning to the user (if called from toplevel) at
-   that time.
+1. do trial division by all primes up to say 1000. This can be done efficiently by a single gcd with the product of all those primes.
+2. use GMP-ECM, starting from say B1=100, and increasing B1 by sqrt(B1) at each step, until one reaches the _recommended_B1_list value which corresponds to 1/3 of the size of the number to be factored. Thus for a 90-digit input, one will stop at B1=250000.
+3. try GMP-ECM P-1 and P+1 with respectively 9*B1 and 3*B1 where B1 is the last value tried for ECM. The corresponding cost of those runs will be approximately the same as the last ECM curve, thus this will not slow down the average computation, and might find a few factors.
+4. run MPQS or GNFS. You might want to issue a warning to the user (if called from toplevel) at that time.
+
+## Apply
+1. #5310
+2. #5945
+3. #10623
+4. [attachment:trac_1145_integer_factorization.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1145
 

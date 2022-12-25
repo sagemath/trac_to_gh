@@ -3,10 +3,11 @@
 archive/issues_001236.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona mariah @adeines @jdemeyer\n\n```\n\nHi, I needed some calculation period benchmark for pairings. I could\nnot find anything build in, but the following implementation solved my\nproblem:\n\nhttp://maths.straylight.co.uk/archives/104\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1236\n\n",
+    "body": "CC:  @JohnCremona mariah @adeines @jdemeyer\n\n```\n\nHi, I needed some calculation period benchmark for pairings. I could\nnot find anything build in, but the following implementation solved my\nproblem:\n\nhttp://maths.straylight.co.uk/archives/104\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1236\n\n",
+    "closed_at": "2011-11-26T13:03:32Z",
     "created_at": "2007-11-21T16:22:42Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "tate pairings on elliptic curves -- add to sage",
@@ -15,8 +16,6 @@ archive/issues_001236.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
-
 CC:  @JohnCremona mariah @adeines @jdemeyer
 
 ```

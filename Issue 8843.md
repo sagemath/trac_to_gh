@@ -4,6 +4,7 @@ archive/issues_008843.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  wstein\n\nCygwin can't load shared libraries via symlinks.  Therefore, we have to actually copy libcsage.so/csage.dll over to $SAGE_LOCAL/lib/.  Note that currently the \"install\" target in SConstruct does nothing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8843\n\n",
+    "closed_at": "2010-05-26T01:00:10Z",
     "created_at": "2010-05-03T04:50:09Z",
     "labels": [
         "component: porting: cygwin",

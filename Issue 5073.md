@@ -1,9 +1,10 @@
-# Issue 5073: [with spkg, needs review] Update IPython to 0.9.1
+# Issue 5073: [with spkg, positive] Update IPython to 0.9.1
 
 archive/issues_005073.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAn spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.9.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5073\n\n",
+    "body": "Assignee: @mwhansen\n\nAn spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.9.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5073\n\n",
+    "closed_at": "2009-01-25T01:49:59Z",
     "created_at": "2009-01-23T13:20:45Z",
     "labels": [
         "component: packages: standard",
@@ -11,13 +12,13 @@ archive/issues_005073.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with spkg, needs review] Update IPython to 0.9.1",
+    "title": "[with spkg, positive] Update IPython to 0.9.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5073",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 An spkg can be found at http://sage.math.washington.edu/home/mhansen/ipython-0.9.1.spkg
 

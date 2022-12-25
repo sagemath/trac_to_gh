@@ -3,7 +3,8 @@
 archive/issues_008847.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nMany systems such as cygwin don't have the long double version.  Plus, they are being applied to floats/doubles so the extra precision doesn't buy much.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8847\n\n",
+    "body": "Assignee: tbd\n\nKeywords: pynac\n\nMany systems such as cygwin don't have the long double version.  Plus, they are being applied to floats/doubles so the extra precision doesn't buy much.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8847\n\n",
+    "closed_at": "2010-05-26T02:52:08Z",
     "created_at": "2010-05-03T12:18:24Z",
     "labels": [
         "component: porting: cygwin",
@@ -17,6 +18,8 @@ archive/issues_008847.json:
 }
 ```
 Assignee: tbd
+
+Keywords: pynac
 
 Many systems such as cygwin don't have the long double version.  Plus, they are being applied to floats/doubles so the extra precision doesn't buy much.
 

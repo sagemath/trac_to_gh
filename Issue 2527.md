@@ -3,10 +3,11 @@
 archive/issues_002527.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nStart:\n\n```\nteragon:modular was$ sage -coverage congroup.py congroup_element.py \nSCORE congroup.py: 20% (14 of 68)\nSCORE congroup_element.py: 0% (0 of 10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2527\n\n",
+    "body": "Assignee: @craigcitro\n\nStart:\n\n```\nteragon:modular was$ sage -coverage congroup.py congroup_element.py \nSCORE congroup.py: 20% (14 of 68)\nSCORE congroup_element.py: 0% (0 of 10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2527\n\n",
+    "closed_at": "2008-08-12T23:46:47Z",
     "created_at": "2008-03-15T02:40:26Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
@@ -16,7 +17,7 @@ archive/issues_002527.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 Start:
 

@@ -1,16 +1,17 @@
-# Issue 2246: [with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc
+# Issue 2246: [with patch; with positive review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc
 
 archive/issues_002246.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. \n\nI also fixed a problem with const.tex caused by Cremona's #1946.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2246\n\n",
+    "closed_at": "2008-02-21T17:02:18Z",
     "created_at": "2008-02-21T16:17:48Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc",
+    "title": "[with patch; with positive review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2246",
     "user": "https://github.com/williamstein"

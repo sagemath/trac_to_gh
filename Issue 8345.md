@@ -3,7 +3,8 @@
 archive/issues_008345.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nFrom sage-devel:\n\n```\nOn Mon, 22 Feb 2010 07:02:21 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> Typesetting conjugates of variables (that has been passed to\n> Maxima and back?) is strange. In e.g. Sage 4.2 this did not\n> happen.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.3, Release Date: 2010-02-21                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: assume(x,'complex')\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().factor())\n> {\\rm conjugate}\\left(x\\right)\n```\n\nSomehow we don't recognize the conjugate function in the string we get back from maxima, and create a new one. The last line above is the default latex typesetting for symbolic functions.\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/cd43a14bee6e9be\n\nIssue created by migration from https://trac.sagemath.org/ticket/8345\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nFrom sage-devel:\n\n```\nOn Mon, 22 Feb 2010 07:02:21 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> Typesetting conjugates of variables (that has been passed to\n> Maxima and back?) is strange. In e.g. Sage 4.2 this did not\n> happen.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.3, Release Date: 2010-02-21                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: assume(x,'complex')\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().factor())\n> {\\rm conjugate}\\left(x\\right)\n```\n\nSomehow we don't recognize the conjugate function in the string we get back from maxima, and create a new one. The last line above is the default latex typesetting for symbolic functions.\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/cd43a14bee6e9be\n\n---\nApply [attachment:trac_8345-doctest.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8345\n\n",
+    "closed_at": "2011-06-15T20:12:38Z",
     "created_at": "2010-02-24T11:36:28Z",
     "labels": [
         "component: interfaces",
@@ -47,6 +48,9 @@ Somehow we don't recognize the conjugate function in the string we get back from
 The thread is here:
 
 http://groups.google.com/group/sage-devel/t/cd43a14bee6e9be
+
+---
+Apply [attachment:trac_8345-doctest.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8345
 

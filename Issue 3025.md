@@ -1,16 +1,17 @@
-# Issue 3025: Sparse vector spaces don't cast on assignment.
+# Issue 3025: [with patch; positive review] Sparse vector spaces don't cast on assignment.
 
 archive/issues_003025.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: V = VectorSpace(GF(2),10, sparse=True)\nsage: w = V(0)\nsage: w[0] = 2\nsage: print w[0]\n2\nsage: print type(w[0])\n<type 'sage.rings.integer.Integer'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3025\n\n",
+    "closed_at": "2008-04-25T23:32:07Z",
     "created_at": "2008-04-25T20:57:56Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Sparse vector spaces don't cast on assignment.",
+    "title": "[with patch; positive review] Sparse vector spaces don't cast on assignment.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3025",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

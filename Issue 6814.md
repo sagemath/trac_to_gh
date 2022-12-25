@@ -4,9 +4,10 @@ archive/issues_006814.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: jordan, precision, matrix, transformation\n\nThere is an example for a lack of precision exception in the doc of jordan_form\n\n```\nsage: b = matrix(ZZ,3,3,range(9))\nsage: jf, p = b.jordan_form(RealField(15), transformation=True)\n...\nValueError: cannot compute the transformation matrix due to lack of precision\n```\nBut if one increases the precision to the maximum still the same error occurs\n\n```\nsage: b = matrix(ZZ,3,3,range(9))\nsage: jf, p = b.jordan_form(RealField(16777216), transformation=True)\n...\nValueError: cannot compute the transformation matrix due to lack of precision\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6814\n\n",
+    "closed_at": "2010-01-19T12:26:25Z",
     "created_at": "2009-08-23T12:45:16Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

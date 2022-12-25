@@ -3,7 +3,8 @@
 archive/issues_006538.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  brunellus\n\nKeywords: partitions\n\nLooks like there is a bug in Partitions.  Partitions(n, max_slope=-1)  should give the partitions of n with distinct parts, right?\n\n```\nsage: Partitions(2, max_slope=-1).list()\n[[2]]\nsage: Partitions(4, max_slope=-1).list()\n[[4], [3, 1]]\n```\nBut if you add the \"length\" keyword, it doesn't work anymore, at least not completely:\n\n```\nsage: Partitions(2, max_slope=-1, length=2).list()  # doesn't work\n[[1, 1]]\nsage: Partitions(4, max_slope=-1, length=2).list()  # works\n[[3, 1]]\nsage: Partitions(4, max_slope=-1, length=3).list()  # doesn't work\n[[2, 1, 1]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6538\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  brunellus\n\nKeywords: partitions, days38\n\nLooks like there is a bug in Partitions.  Partitions(n, max_slope=-1)  should give the partitions of n with distinct parts, right?\n\n```\nsage: Partitions(2, max_slope=-1).list()\n[[2]]\nsage: Partitions(4, max_slope=-1).list()\n[[4], [3, 1]]\n```\nBut if you add the \"length\" keyword, it doesn't work anymore, at least not completely:\n\n```\nsage: Partitions(2, max_slope=-1, length=2).list()  # doesn't work\n[[1, 1]]\nsage: Partitions(4, max_slope=-1, length=2).list()  # works\n[[3, 1]]\nsage: Partitions(4, max_slope=-1, length=3).list()  # doesn't work\n[[2, 1, 1]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6538\n\n",
+    "closed_at": "2012-08-14T07:02:06Z",
     "created_at": "2009-07-15T18:55:17Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +21,7 @@ Assignee: @mwhansen
 
 CC:  brunellus
 
-Keywords: partitions
+Keywords: partitions, days38
 
 Looks like there is a bug in Partitions.  Partitions(n, max_slope=-1)  should give the partitions of n with distinct parts, right?
 

@@ -4,10 +4,10 @@ archive/issues_004358.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @jdemeyer\n\nThis:\n\n```\nsage: EllipticCurve('37a').sha().an_numerical()\n```\n\nspawn a new gp process every time it is computed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4358\n\n",
+    "closed_at": "2013-08-16T11:12:22Z",
     "created_at": "2008-10-24T05:17:34Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage spawn too many gp processes",

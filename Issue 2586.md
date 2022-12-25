@@ -1,9 +1,10 @@
-# Issue 2586: latex products need to be space separated
+# Issue 2586: [with patch, positive review] latex products need to be space separated
 
 archive/issues_002586.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: latex product polynomial\n\nI'm sure this is a dupe, but couldn't find a ticket.  It might need fixing at an awful lot of places... but polynomials are a start:\n\n```\nsage: ZZ['a']['b']([0, ZZ['a'].0])\na*b\nsage: latex(ZZ['a']['b']([0, ZZ['a'].0]))\nab\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2586\n\n",
+    "closed_at": "2008-03-21T04:17:19Z",
     "created_at": "2008-03-18T17:01:07Z",
     "labels": [
         "component: user interface",
@@ -11,7 +12,7 @@ archive/issues_002586.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "latex products need to be space separated",
+    "title": "[with patch, positive review] latex products need to be space separated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2586",
     "user": "https://github.com/ncalexan"

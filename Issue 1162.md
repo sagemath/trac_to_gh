@@ -1,15 +1,16 @@
-# Issue 1162: [with patch] fix issues in RealField <-> RQDF conversions
+# Issue 1162: [with patch, positive review] fix issues in RealField <-> RQDF conversions
 
 archive/issues_001162.json:
 ```json
 {
     "body": "Assignee: jkantor\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1162\n\n",
+    "closed_at": "2007-12-15T11:45:28Z",
     "created_at": "2007-11-13T00:04:53Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with patch] fix issues in RealField <-> RQDF conversions",
+    "title": "[with patch, positive review] fix issues in RealField <-> RQDF conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1162",
     "user": "https://github.com/zimmermann6"

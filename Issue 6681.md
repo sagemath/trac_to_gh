@@ -1,22 +1,24 @@
-# Issue 6681: cliquer doesn't work in 64-bit OS X
+# Issue 6681: [with spkg, positive review] cliquer doesn't work in 64-bit OS X
 
 archive/issues_006681.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nIf I try a [64-bit build](http://wiki.sagemath.org/osx64) of Sage (4.1.1.rc1) on an Intel Mac running OS X 10.5, cliquer seems to install fine: I get a message saying,\n\"Successfully installed cliquer-1.2\".  However, starting Sage gives me an `ImportError`:\n\n```\nImportError: dlopen(/Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so, 2): Symbol not found:\n_graph_new\n  Referenced from: /Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so\n  Expected in: dynamic lookup\n\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6681\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @nathanncohen\n\nIf I try a [64-bit build](http://wiki.sagemath.org/osx64) of Sage (4.1.1.rc1) on an Intel Mac running OS X 10.5, cliquer seems to install fine: I get a message saying,\n\"Successfully installed cliquer-1.2\".  However, starting Sage gives me an `ImportError`:\n\n```\nImportError: dlopen(/Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so, 2): Symbol not found:\n_graph_new\n  Referenced from: /Applications/sage_builds/sage-4.1.1.rc1/local/lib/\npython2.6/site-packages/sage/graphs/cliquer.so\n  Expected in: dynamic lookup\n\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed. \n```\nWhen this ticket is closed, #6746 and #6852 should be closed as duplicates of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6681\n\n",
+    "closed_at": "2009-10-05T03:01:34Z",
     "created_at": "2009-08-06T19:13:39Z",
     "labels": [
-        "component: graph theory",
+        "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cliquer doesn't work in 64-bit OS X",
+    "title": "[with spkg, positive review] cliquer doesn't work in 64-bit OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6681",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @rlmill
+Assignee: mabshoff
 
 CC:  @nathanncohen
 
@@ -34,6 +36,7 @@ python2.6/site-packages/sage/graphs/cliquer.so
 Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed. 
 ```
+When this ticket is closed, #6746 and #6852 should be closed as duplicates of this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6681
 

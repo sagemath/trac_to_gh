@@ -1,23 +1,34 @@
-# Issue 4220: include Sphinx, Docutils, Jinja, and Pygments in Sage
+# Issue 4220: [with spkg, needs review] include Sphinx, Docutils, Jinja, and Pygments in Sage
 
 archive/issues_004220.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4220\n\n",
+    "body": "Assignee: @mwhansen\n\nSee the thread here: http://groups.google.com/group/sage-devel/browse_thread/thread/553bb4503dec6d9\n\nSpkgs can be found here:\n\nhttp://sage.math.washington.edu/home/mhansen/doc-sphinx/pygments-0.11.1.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/doc-sphinx/sphinx-0.5.0svn66624.p0.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/doc-sphinx/jinja-1.2.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/doc-sphinx/docutils-0.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4220\n\n",
+    "closed_at": "2008-10-02T09:41:10Z",
     "created_at": "2008-09-30T10:33:05Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "include Sphinx, Docutils, Jinja, and Pygments in Sage",
+    "title": "[with spkg, needs review] include Sphinx, Docutils, Jinja, and Pygments in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4220",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
+See the thread here: http://groups.google.com/group/sage-devel/browse_thread/thread/553bb4503dec6d9
 
+Spkgs can be found here:
+
+http://sage.math.washington.edu/home/mhansen/doc-sphinx/pygments-0.11.1.spkg
+
+http://sage.math.washington.edu/home/mhansen/doc-sphinx/sphinx-0.5.0svn66624.p0.spkg
+
+http://sage.math.washington.edu/home/mhansen/doc-sphinx/jinja-1.2.spkg
+
+http://sage.math.washington.edu/home/mhansen/doc-sphinx/docutils-0.5.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/4220
 

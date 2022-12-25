@@ -1,16 +1,17 @@
-# Issue 4644: No new prompt when doing a ./sage -sh
+# Issue 4644: [with patch, positive review] No new prompt when doing a ./sage -sh
 
 archive/issues_004644.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWe used to have:\n\n```\n[jaap@paix sage-3.1.1]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nSage subshell$ exit\nexit\nExited Sage subshell.\n[jaap@paix sage-3.1.1]$ \n\n```\n\nBut in sage-3.2:\n\n```\n[jaap@paix sage-3.2]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[jaap@paix sage-3.2]$ \n\n```\n\nI've been bitten by this once more!\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4644\n\n",
+    "closed_at": "2009-10-13T20:17:46Z",
     "created_at": "2008-11-28T18:24:42Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "No new prompt when doing a ./sage -sh",
+    "title": "[with patch, positive review] No new prompt when doing a ./sage -sh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4644",
     "user": "https://github.com/jaapspies"

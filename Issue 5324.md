@@ -3,7 +3,8 @@
 archive/issues_005324.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIf you create a block like this:\n\n```\n%time \n2+2\n```\nin the notebook, then you get the following output:\n\n```\nTraceback (click to the left for traceback)\n...\nNameError: name 'time' is not defined\n```\n\nIMPORTANT: There is a single space right immediately after %time in the input!  Without the space things are fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5324\n\n",
+    "body": "Assignee: @mwhansen\n\nIf you create a block like this:\n\n```\n%time \n2+2\n```\nin the notebook, then you get the following output:\n\n```\nTraceback (click to the left for traceback)\n...\nNameError: name 'time' is not defined\n```\n\nIMPORTANT: There is a single space right immediately after %time in the input!  Without the space things are fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5324\n\n",
+    "closed_at": "2009-11-09T17:19:03Z",
     "created_at": "2009-02-20T20:00:08Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_005324.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 If you create a block like this:
 

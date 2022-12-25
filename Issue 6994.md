@@ -1,16 +1,17 @@
-# Issue 6994: [with spkg, needs review] upgrade matplotlib to 0.99.1
+# Issue 6994: [with spkg, positive review] upgrade matplotlib to 0.99.1
 
 archive/issues_006994.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nThe new matplotlib fixes *lots* of bugs, and incorporates some of our patches upstream too.  The new spkg is:\n\nhttp://sage.math.washington.edu/home/jason/matplotlib-0.99.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6994\n\n",
+    "closed_at": "2009-10-15T09:41:56Z",
     "created_at": "2009-09-22T19:44:25Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with spkg, needs review] upgrade matplotlib to 0.99.1",
+    "title": "[with spkg, positive review] upgrade matplotlib to 0.99.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6994",
     "user": "https://github.com/jasongrout"

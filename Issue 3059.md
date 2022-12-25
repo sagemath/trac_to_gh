@@ -1,16 +1,17 @@
-# Issue 3059: notebook -- rewrite notebook(...) function to *not* use SSL by default
+# Issue 3059: [with patch; positive review] notebook -- rewrite notebook(...) function to *not* use SSL by default
 
 archive/issues_003059.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3059\n\n",
+    "closed_at": "2008-04-30T04:53:30Z",
     "created_at": "2008-04-30T00:13:03Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "notebook -- rewrite notebook(...) function to *not* use SSL by default",
+    "title": "[with patch; positive review] notebook -- rewrite notebook(...) function to *not* use SSL by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3059",
     "user": "https://github.com/williamstein"

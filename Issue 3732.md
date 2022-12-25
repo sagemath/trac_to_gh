@@ -1,15 +1,15 @@
-# Issue 3732: calculus -- some examples of sage integration failing
+# Issue 3732: Unnecessary Maxima interactions in integration
 
 archive/issues_003732.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThese should be integrated into the doctest framework for sage's calculus. See attached.  This is by Elliot Brossard.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3732\n\n",
+    "body": "Assignee: @garyfurnish\n\nHere are a variety of integrals for which Maxima should not have to interact to ask about assumptions, but does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3732\n\n",
     "created_at": "2008-07-28T04:11:23Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "calculus -- some examples of sage integration failing",
+    "title": "Unnecessary Maxima interactions in integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3732",
     "user": "https://github.com/williamstein"
@@ -17,7 +17,7 @@ archive/issues_003732.json:
 ```
 Assignee: @garyfurnish
 
-These should be integrated into the doctest framework for sage's calculus. See attached.  This is by Elliot Brossard.
+Here are a variety of integrals for which Maxima should not have to interact to ask about assumptions, but does.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3732
 

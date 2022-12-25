@@ -1,16 +1,17 @@
-# Issue 5758: weird "hello" bug in homset coerce!
+# Issue 5758: [with patch, positive review] weird "hello" bug in homset coerce!
 
 archive/issues_005758.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nWith a 100% clean sage-3.4.1.rc2:\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref\nsage: Zmod(8).lift() == 1\ninit_coerce() for  <class 'sage.categories.homset.Homset'>\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/4833/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__richcmp__ (sage/rings/integer.c:7457)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:5714)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:7434)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9262)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11046)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:9337)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.init_coerce (sage/structure/parent.c:3085)()\n\nZeroDivisionError: hello\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5758\n\n",
+    "closed_at": "2009-09-09T05:09:53Z",
     "created_at": "2009-04-11T18:03:27Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "weird \"hello\" bug in homset coerce!",
+    "title": "[with patch, positive review] weird \"hello\" bug in homset coerce!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5758",
     "user": "https://github.com/williamstein"

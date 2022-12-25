@@ -1,22 +1,23 @@
-# Issue 1267: documentation for piecewise does not show up in notebook
+# Issue 1267: [with patch] documentation for piecewise does not show up in notebook
 
 archive/issues_001267.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the public notebook (on www.sagenb.org), when I evaluate a cell with `piecewise?`, I get this:\n\n```\nFile:        /usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/functions/piecewise.py\nType:        <type 'classobj'>\nDefinition:  piecewise(x0)\nDocstring:\n```\nwith no actual docstring.  (Doing the same thing from the command line does give a useful docstring.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1267\n\n",
+    "body": "Assignee: @mwhansen\n\nIn the public notebook (on www.sagenb.org), when I evaluate a cell with `piecewise?`, I get this:\n\n```\nFile:        /usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/functions/piecewise.py\nType:        <type 'classobj'>\nDefinition:  piecewise(x0)\nDocstring:\n```\nwith no actual docstring.  (Doing the same thing from the command line does give a useful docstring.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1267\n\n",
+    "closed_at": "2007-12-09T13:13:17Z",
     "created_at": "2007-11-25T15:09:41Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "documentation for piecewise does not show up in notebook",
+    "title": "[with patch] documentation for piecewise does not show up in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1267",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 In the public notebook (on www.sagenb.org), when I evaluate a cell with `piecewise?`, I get this:
 

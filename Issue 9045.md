@@ -4,6 +4,7 @@ archive/issues_009045.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nsee http://groups.google.com/group/sage-devel/browse_thread/thread/95f583e4b8bdfeb9\n\nIssue created by migration from https://trac.sagemath.org/ticket/9045\n\n",
+    "closed_at": "2010-06-06T07:16:44Z",
     "created_at": "2010-05-25T08:26:43Z",
     "labels": [
         "component: graph theory",

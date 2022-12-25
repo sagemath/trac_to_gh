@@ -1,15 +1,16 @@
-# Issue 851: [with patch] graphs: line_graph function
+# Issue 851: [with patch] [tested by cwitty] graphs: line_graph function
 
 archive/issues_000851.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nHere's a function to compute the line graph of a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/851\n\n",
+    "closed_at": "2007-10-13T07:26:32Z",
     "created_at": "2007-10-11T21:51:36Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "[with patch] graphs: line_graph function",
+    "title": "[with patch] [tested by cwitty] graphs: line_graph function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/851",
     "user": "https://github.com/jasongrout"

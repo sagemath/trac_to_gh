@@ -1,16 +1,17 @@
-# Issue 1384: 2.8.15.rc0: fix numerical doctest fallout on PCC
+# Issue 1384: [with patch] 2.8.15.rc0: fix numerical doctest fallout on PCC
 
 archive/issues_001384.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere are various doctest failures related to numerical noise and different order of result on PPC for\n\ndevel/sage-main/sage/rings/polynomial/complex_roots.py\ndevel/sage-main/sage/rings/polynomial/polynomial_element.pyx\ndevel/sage-main/sage/rings/qqbar.py\n\nPatch coming shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1384\n\n",
+    "body": "Assignee: mabshoff\n\nThere are various doctest failures related to numerical noise and different order of result on PPC for\n\n```\ndevel/sage-main/sage/rings/polynomial/complex_roots.py\ndevel/sage-main/sage/rings/polynomial/polynomial_element.pyx\ndevel/sage-main/sage/rings/qqbar.py\n```\nPatch coming shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1384\n\n",
+    "closed_at": "2007-12-03T19:28:51Z",
     "created_at": "2007-12-03T19:10:19Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "2.8.15.rc0: fix numerical doctest fallout on PCC",
+    "title": "[with patch] 2.8.15.rc0: fix numerical doctest fallout on PCC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1384",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,10 +21,11 @@ Assignee: mabshoff
 
 There are various doctest failures related to numerical noise and different order of result on PPC for
 
+```
 devel/sage-main/sage/rings/polynomial/complex_roots.py
 devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
 devel/sage-main/sage/rings/qqbar.py
-
+```
 Patch coming shortly.
 
 Cheers,

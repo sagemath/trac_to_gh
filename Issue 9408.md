@@ -3,7 +3,8 @@
 archive/issues_009408.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nKeywords: relativize\n\nDoes not work due to (maybe) denominators\n\n```\nsage: K.<a> = NumberField(x^4-4*x^3+12*x^2-16*x+8)\nsage: L.<u,v> = K.relativize(3*a**3 - 9*a**2 + 24*a -16)\nsage:#This seems OK\nsage: L2.<u2,v2> = K.relativize((3/4)*a**3 - (9/4)*a**2 + 6*a -4)\n```\nPariError:  (8)\n\nSimpler example\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) #Ok\nsage: L.<a,b> = QQ[i].relativize(1/2) #PariError\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9408\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: relativize\n\nDoes not work due to denominators:\n\n```\nsage: K.<a> = NumberField(x^4-4*x^3+12*x^2-16*x+8)\nsage: L.<u,v> = K.relativize(3*a**3 - 9*a**2 + 24*a -16)  # OK\nsage: L2.<u2,v2> = K.relativize((3/4)*a**3 - (9/4)*a**2 + 6*a -4)\n```\n\nSimpler example:\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) # OK\nsage: L.<a,b> = QQ[i].relativize(1/2)\n...\nTypeError: Unable to coerce number field defined by non-integral polynomial to PARI.\n```\n\nThis is in some sense a duplicate of #252.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9408\n\n",
+    "closed_at": "2011-11-15T09:21:27Z",
     "created_at": "2010-07-02T16:04:23Z",
     "labels": [
         "component: number fields",
@@ -20,22 +21,24 @@ Assignee: @loefflerd
 
 Keywords: relativize
 
-Does not work due to (maybe) denominators
+Does not work due to denominators:
 
 ```
 sage: K.<a> = NumberField(x^4-4*x^3+12*x^2-16*x+8)
-sage: L.<u,v> = K.relativize(3*a**3 - 9*a**2 + 24*a -16)
-sage:#This seems OK
+sage: L.<u,v> = K.relativize(3*a**3 - 9*a**2 + 24*a -16)  # OK
 sage: L2.<u2,v2> = K.relativize((3/4)*a**3 - (9/4)*a**2 + 6*a -4)
 ```
-PariError:  (8)
 
-Simpler example
+Simpler example:
 
 ```
-sage: L.<a,b> = QQ[i].relativize(1) #Ok
-sage: L.<a,b> = QQ[i].relativize(1/2) #PariError
+sage: L.<a,b> = QQ[i].relativize(1) # OK
+sage: L.<a,b> = QQ[i].relativize(1/2)
+...
+TypeError: Unable to coerce number field defined by non-integral polynomial to PARI.
 ```
+
+This is in some sense a duplicate of #252.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9408
 

@@ -1,16 +1,17 @@
-# Issue 4352: add support for weight vectors to gran/groebner_fan
+# Issue 4352: [with patch, positive review] add support for weight vectors to gran/groebner_fan
 
 archive/issues_004352.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: gfan, groebner_fan, weight vectors\n\nThis should be pretty straightforward.\n\nsage-support request from Ursula Whitcher:\nI asked Anders Jensen, \"I would like to compute the weight vectors\ncorresponding to each reduced Groebner basis in gfan's output.  Is\nthere a way to tell gfan to do this?\"\n\nHe replied:\n\n\"There is a command \"weightvector\" that does exactly this. The command\nis hidden (does not show up in the manual or the file system). To run\nit type \"gfan _weightvector\" in your shell. MIND THE SPACE BEFORE '_'.\nAccording to the --help text the correct thing to do would be to run\n\"gfan _weightvector -m\" with the gfan output as input.\n\nFor example\ngfan | gfan _weightvector -m\nQ[x,y]\n{x-y}\n\nwill produce a list of two vectors.\nI hope this works out for you.\nBest regards,\nAnders\"\n\nIs there a way to access the weightvector command from the Sage\nimplementation of gfan?\n\nThanks!\nUrsula \n\nIssue created by migration from https://trac.sagemath.org/ticket/4352\n\n",
+    "closed_at": "2008-11-30T23:11:55Z",
     "created_at": "2008-10-23T21:23:08Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "add support for weight vectors to gran/groebner_fan",
+    "title": "[with patch, positive review] add support for weight vectors to gran/groebner_fan",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4352",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

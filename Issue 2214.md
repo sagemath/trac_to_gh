@@ -4,6 +4,7 @@ archive/issues_002214.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nIf a job has a memory leak, it is not reclaimed when the worker resets itself. If the memory after reset does not go down to \"normal\" (or, say, twice normal) then it should warn the user that the job leaked memory and actually restart the worker. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2214\n\n",
+    "closed_at": "2008-03-24T16:49:35Z",
     "created_at": "2008-02-19T22:05:09Z",
     "labels": [
         "component: dsage",

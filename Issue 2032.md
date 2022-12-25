@@ -1,16 +1,17 @@
-# Issue 2032: bug in bundle script for sage hg repo
+# Issue 2032: [with patch; with positive review] bug in bundle script for sage hg repo
 
 archive/issues_002032.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2032\n\n",
+    "closed_at": "2008-02-04T05:02:57Z",
     "created_at": "2008-02-02T10:14:19Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "bug in bundle script for sage hg repo",
+    "title": "[with patch; with positive review] bug in bundle script for sage hg repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2032",
     "user": "https://github.com/williamstein"

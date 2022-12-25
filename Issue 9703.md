@@ -1,16 +1,18 @@
-# Issue 9703: Doctest failures caused by non-working sympow on Solaris x86
+# Issue 9703: Doctest failures caused by non-working sympow on 32-bit Solaris x86 and  32-bit OpenSolaris
 
 archive/issues_009703.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri @jaapspies @nexttime @peterjeremy @kiwifb @williamstein @JohnCremona @mwhansen\n\nJohn Palmieri has built most of Sage on the host fulvia, but there are a number of tests related to sympow that are failing. The summary at the end shows:\n\n\n```\nThe following tests failed:\n<snip>\n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\n<snip>\nTotal time for all tests: 7305.2 seconds\n```\n\nLooking at the source code, it is not valid C, so it's quite possible the code gets mis-compiled. In fact, IMHO, gcc should reject the code - just as the Sun compiler does. \n\nI'll try to work out what was intended and see if the code can be re-written in a way that compiles with the Sun compiler, in which case gcc should have more chance of generating correct code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9703\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri @jaapspies @nexttime @peterjeremy @kiwifb @williamstein @JohnCremona @mwhansen\n\nJohn Palmieri has built most of Sage on the host fulvia, but there are a number of tests related to sympow that are failing. The summary at the end shows:\n\n```\nThe following tests failed:\nsage -t  -long devel/sage/sage/modular/hecke/submodule.py # 1 doctests failed\nsage -t  -long devel/sage/sage/modular/abvar/abvar.py # 1 doctests failed\nsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\nsage -t  -long devel/sage/sage/stats/hmm/chmm.pyx # 3 doctests failed\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 17 doctests failed\nsage -t  -long devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\nTotal time for all tests: 7305.2 seconds\n```\n\nof these test failures, the following three are attributed to SYMPOW\n\n```\nsage -t  -long devel/sage/sage/modular/abvar/abvar.py # 1 doctests failed\nsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 17 doctests failed\n```\nLooking at the source code, it is not valid C, so it's quite possible the code gets mis-compiled. In fact, IMHO, gcc should reject the code - just as the Sun compiler does. \n\nI'll try to work out what was intended and see if the code can be re-written in a way that compiles with the Sun compiler, in which case gcc should have more chance of generating correct code. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9703\n\n",
+    "closed_at": "2010-08-24T02:50:34Z",
     "created_at": "2010-08-07T16:17:42Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Doctest failures caused by non-working sympow on Solaris x86",
+    "title": "Doctest failures caused by non-working sympow on 32-bit Solaris x86 and  32-bit OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9703",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -22,18 +24,28 @@ CC:  @jhpalmieri @jaapspies @nexttime @peterjeremy @kiwifb @williamstein @JohnCr
 
 John Palmieri has built most of Sage on the host fulvia, but there are a number of tests related to sympow that are failing. The summary at the end shows:
 
-
 ```
 The following tests failed:
-<snip>
-	sage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed
-<snip>
+sage -t  -long devel/sage/sage/modular/hecke/submodule.py # 1 doctests failed
+sage -t  -long devel/sage/sage/modular/abvar/abvar.py # 1 doctests failed
+sage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed
+sage -t  -long devel/sage/sage/stats/hmm/chmm.pyx # 3 doctests failed
+sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 17 doctests failed
+sage -t  -long devel/sage/sage/symbolic/expression.pyx # 2 doctests failed
 Total time for all tests: 7305.2 seconds
 ```
 
+of these test failures, the following three are attributed to SYMPOW
+
+```
+sage -t  -long devel/sage/sage/modular/abvar/abvar.py # 1 doctests failed
+sage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed
+sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 17 doctests failed
+```
 Looking at the source code, it is not valid C, so it's quite possible the code gets mis-compiled. In fact, IMHO, gcc should reject the code - just as the Sun compiler does. 
 
-I'll try to work out what was intended and see if the code can be re-written in a way that compiles with the Sun compiler, in which case gcc should have more chance of generating correct code.
+I'll try to work out what was intended and see if the code can be re-written in a way that compiles with the Sun compiler, in which case gcc should have more chance of generating correct code. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9703
 

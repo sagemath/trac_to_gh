@@ -1,16 +1,17 @@
-# Issue 6738: typo in spkg-install for atlas spkg
+# Issue 6738: [with spkg, positive review] typo in spkg-install for atlas spkg
 
 archive/issues_006738.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI just noticed this in an error message:\n\n```\nBuilding shared ATLAS libraris failed\n```\n\nSee the typo in the word \"libraris\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6738\n\n",
+    "closed_at": "2009-08-12T00:59:35Z",
     "created_at": "2009-08-11T22:45:21Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "typo in spkg-install for atlas spkg",
+    "title": "[with spkg, positive review] typo in spkg-install for atlas spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6738",
     "user": "https://github.com/williamstein"

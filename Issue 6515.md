@@ -4,6 +4,7 @@ archive/issues_006515.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThis has been brought up several times on the mailing lists. As a specific example \n\n```\nsage: assume(x>0)\nsage: solve([x^2-1],x)\n[x == -1, x == 1]\n```\n\nAt the very least, we could probably filter out the \"solutions\" that violate the assumptions. \n\n\n```\nsage: [all(a.subs(s) for a in assumptions()) for s in solve(x^2-1==0, x)]\n[False, True]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6515\n\n",
+    "closed_at": "2010-02-11T15:02:41Z",
     "created_at": "2009-07-12T04:22:28Z",
     "labels": [
         "component: calculus",

@@ -1,9 +1,10 @@
-# Issue 5280: problem with a subposet coming from an order_filter
+# Issue 5280: [with patch, positive review] problem with a subposet coming from an order_filter
 
 archive/issues_005280.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  sage-combinat\n\nWith sage-3.3.rc0:\n\n```\nsage: B = BooleanLattice(3)\nsage: 4 in B\nTrue\nsage: B.principal_order_filter(4)  # all elements >= 4\n[4, 5, 6, 7]\nsage: B.subposet(B.principal_order_filter(4))\nFinite poset containing 4 elements\nsage: show(B.subposet(B.principal_order_filter(4)))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: BUG: sort algorithm for elements of 'Finite lattice containing 8 elements' not implemented\n```\n\nI get the same problem with 'order_filter' instead of 'principal_order_filter', and also for 'order_ideal' (e.g., `show(B.subposet(B.order_ideal([2, 4])))` produces a similar message).  Note, though, that `show(B.subposet(B.principal_order_ideal(4)))` works just fine.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5280\n\n",
+    "closed_at": "2009-06-24T10:14:11Z",
     "created_at": "2009-02-15T23:44:24Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_005280.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "problem with a subposet coming from an order_filter",
+    "title": "[with patch, positive review] problem with a subposet coming from an order_filter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5280",
     "user": "https://github.com/jhpalmieri"

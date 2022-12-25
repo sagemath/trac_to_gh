@@ -1,16 +1,17 @@
-# Issue 1042: reset() doesn't do what's claimed -- in particular the symbolic x is gone after doing reset() but shouldn't be
+# Issue 1042: [with patch] reset() doesn't restore anything in all_cmdline or all_notebook
 
 archive/issues_001042.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe reset command is supposed to reset all variables etc., back to their defaults.  This is currently slightly broken, since the symbolic x doesn't get reset:\n\n```\nsage: reset()\nsage: x\nTraceback (most recent call last):\n...\nNameError: name 'x' is not defined\nsage: factor(90823048)\n2^3 * 11352881\n```\n\nI seem to recall implementing the symbolic being imported slightly differently, which is surely responsible for this bug. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1042\n\n",
+    "closed_at": "2007-11-03T21:07:26Z",
     "created_at": "2007-10-31T20:52:56Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "reset() doesn't do what's claimed -- in particular the symbolic x is gone after doing reset() but shouldn't be",
+    "title": "[with patch] reset() doesn't restore anything in all_cmdline or all_notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1042",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 6051: [with patch, needs some work] Enable Singular's coefficient rings which are not fields
+# Issue 6051: [with patch, positive review] Enable Singular's coefficient rings which are not fields
 
 archive/issues_006051.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSingular 3-1-0 supports coefficient rings which are not fields. In particular, it supports ZZ and ZZ/nZZ now. We should support those natively too.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6051\n\n",
+    "closed_at": "2009-06-12T08:02:22Z",
     "created_at": "2009-05-17T01:05:00Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs some work] Enable Singular's coefficient rings which are not fields",
+    "title": "[with patch, positive review] Enable Singular's coefficient rings which are not fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6051",
     "user": "https://github.com/malb"

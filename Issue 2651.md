@@ -1,15 +1,16 @@
-# Issue 2651: rewrite matrix() constructor
+# Issue 2651: [with patch, positive review] rewrite matrix() constructor
 
 archive/issues_002651.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently the code in matrix() is pretty convoluted.  This patch is an attempt to make that code much more organized and make it easier to tackle adding features to matrix() and fixing bugs.\n\nAdditionally, this patch has quite a few more doctests testing corner casesof matrix().\n\nI am going to run testall on this to make sure that it doesn't mess anything major up.  Right now it should pretty much be a drop-in replacement, except that some corner cases are handled more consistently.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2651\n\n",
+    "closed_at": "2008-03-31T19:15:31Z",
     "created_at": "2008-03-22T22:58:36Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "rewrite matrix() constructor",
+    "title": "[with patch, positive review] rewrite matrix() constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2651",
     "user": "https://github.com/jasongrout"

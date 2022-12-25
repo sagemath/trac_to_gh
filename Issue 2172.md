@@ -1,22 +1,23 @@
-# Issue 2172: sage -sdist loses debian build infrastructure
+# Issue 2172: [with patch, with positive review] sage -sdist loses debian build infrastructure
 
 archive/issues_002172.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\n$SAGE_ROOT/devel/sage/spkg-dist currently does not copy the debian directory as well as `spkg-debian-maybe`. It is easily fixed in `spkg-dist`, patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2172\n\n",
+    "body": "Assignee: mabshoff\n\n$SAGE_ROOT/devel/sage/spkg-dist currently does not copy the debian directory as well as `spkg-debian-maybe`. It is easily fixed in `spkg-dist`, patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2172\n\n",
+    "closed_at": "2008-02-17T04:35:28Z",
     "created_at": "2008-02-15T17:50:39Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage -sdist loses debian build infrastructure",
+    "title": "[with patch, with positive review] sage -sdist loses debian build infrastructure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2172",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @timabbott
+Assignee: mabshoff
 
 $SAGE_ROOT/devel/sage/spkg-dist currently does not copy the debian directory as well as `spkg-debian-maybe`. It is easily fixed in `spkg-dist`, patch coming up.
 

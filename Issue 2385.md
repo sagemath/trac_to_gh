@@ -1,22 +1,23 @@
-# Issue 2385: [with patch, needs review] Multivariate Polynomial coefficients
+# Issue 2385: [with patch, with positive review] Multivariate Polynomial coefficients
 
 archive/issues_002385.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis patch adds a polynomial_coefficient method which aims to replace the coefficient method for mpolynomials.\n\nSome problems with the coefficient function are:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\n2\nsage: f.coefficient(x^2)\ny - 1\nsage: f.polynomial_coefficient({x:0})\n-2*y + 2\n```\nNote that ZZ and QQ are not consistent in this either:\n\n```\nsage: R.<x,y,z>=QQ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\nx^2*y - x^2 - 2*y + 2\n```\n\nSome of the problems are that there is no way to state that I want all the terms which do not have x.  The polynomial_coefficient method fixes that by taking a dictionary with degrees.\n\nI don't think the patch I posted is the end of the story on this.  I believe that the coefficient method should be a synomyn for polynomial_coefficient or monomial_coefficient.  I'm not sure which.  I'm also not sure what the best parameters are for polynomial_coefficient.  The dictionary syntax is my preferred, but I'm aware that some people may not like dictionaries quite as much as I do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2385\n\n",
+    "body": "Assignee: @malb\n\nThis patch adds a polynomial_coefficient method which aims to replace the coefficient method for mpolynomials.\n\nSome problems with the coefficient function are:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\n2\nsage: f.coefficient(x^2)\ny - 1\nsage: f.polynomial_coefficient({x:0})\n-2*y + 2\n```\nNote that ZZ and QQ are not consistent in this either:\n\n```\nsage: R.<x,y,z>=QQ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\nx^2*y - x^2 - 2*y + 2\n```\n\nSome of the problems are that there is no way to state that I want all the terms which do not have x.  The polynomial_coefficient method fixes that by taking a dictionary with degrees.\n\nI don't think the patch I posted is the end of the story on this.  I believe that the coefficient method should be a synomyn for polynomial_coefficient or monomial_coefficient.  I'm not sure which.  I'm also not sure what the best parameters are for polynomial_coefficient.  The dictionary syntax is my preferred, but I'm aware that some people may not like dictionaries quite as much as I do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2385\n\n",
+    "closed_at": "2008-03-12T22:04:40Z",
     "created_at": "2008-03-04T16:19:35Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] Multivariate Polynomial coefficients",
+    "title": "[with patch, with positive review] Multivariate Polynomial coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2385",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 This patch adds a polynomial_coefficient method which aims to replace the coefficient method for mpolynomials.
 

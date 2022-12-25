@@ -1,16 +1,17 @@
-# Issue 6820: [with patch, needs review] browse sage docs
+# Issue 6820: Easy command-line access to HTML documentation and docstrings
 
 archive/issues_006820.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @qed777\n\nThe attached patch introduces the command `browse_sage_doc`.  It lets you do the following from either the command-line or the notebook:\n\n```\nbrowse_sage_doc.tutorial()   # open the tutorial in a browser window\nbrowse_sage_doc.reference()\nbrowse_sage_doc.developer()\nbrowse_sage_doc.constructions()\n```\nand also\n\n```\nbrowse_sage_doc(identity_matrix)\n```\nopens up the docstring for `identity_matrix` in a browser window.  It doesn't look very pretty, but it's legible.  You can also do\n\n```\nbrowse_sage_doc(identity_matrix, output='rst)\n```\nto output (as a string) the reST version of the docstring, and\n\n```\nbrowse_sage_doc(identity_matrix, view=False)\n```\nto output (as a string) the html version of the docstring\n\nIssue created by migration from https://trac.sagemath.org/ticket/6820\n\n",
+    "body": "Assignee: tba\n\nCC:  @qed777\n\nKeywords: documentation\n\nThe attached patch introduces the command `browse_sage_doc`.  It lets you do the following from either the command-line or the notebook:\n\n```\nbrowse_sage_doc.tutorial()   # open the tutorial in a browser window\nbrowse_sage_doc.reference()\nbrowse_sage_doc.developer()\nbrowse_sage_doc.constructions()\n```\nand also\n\n```\nbrowse_sage_doc(identity_matrix)\n```\nopens up the docstring for `identity_matrix` in a browser window.  It doesn't look very pretty, but it's legible.  You can also do\n\n```\nbrowse_sage_doc(identity_matrix, output='rst')\n```\nto output (as a string) the reST version of the docstring, and\n\n```\nbrowse_sage_doc(identity_matrix, view=False)\n```\nto output (as a string) the html version of the docstring.\n\nNew: following cremona's suggestion, this also adds the following top-level commands:\n\n```\ntutorial()\nreference()\nmanual()  # synonym for \"reference\"\ndeveloper()\nconstructions()\n```\nThese open the corresponding document.  The new command `python_help` does what the old command `help` did.  The new command help does the following: with an argument, it acts like the old help -- that is, it calls `python_help(arg)`.  With no argument, it prints this message:\n\n```\nWelcome to Sage %s!  To view the Sage tutorial in your web browser,\ntype 'tutorial()', and to view the (very detailed) Sage reference\nmanual, type 'manual()'.  For help on any Sage function, for example\n'matrix_plot', type 'matrix_plot?' to see a help message, type\n'help(matrix_plot)' to see a very similar message, type\n'browse_sage_doc(matrix_plot)' to view a message in a web browser, and\ntype 'matrix_plot??' to look at the function's source code.\n\nTo enter Python's interactive online help utility, type 'python_help()'.\nTo get help on a Python function, module or package, type 'help(MODULE)' or\n'python_help(MODULE)'.\n```\n(with the \"%s\" in the first line replaced by the version number).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6820\n\n",
+    "closed_at": "2010-01-03T22:03:51Z",
     "created_at": "2009-08-24T20:05:18Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "[with patch, needs review] browse sage docs",
+    "title": "Easy command-line access to HTML documentation and docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6820",
     "user": "https://github.com/jhpalmieri"
@@ -19,6 +20,8 @@ archive/issues_006820.json:
 Assignee: tba
 
 CC:  @qed777
+
+Keywords: documentation
 
 The attached patch introduces the command `browse_sage_doc`.  It lets you do the following from either the command-line or the notebook:
 
@@ -36,14 +39,40 @@ browse_sage_doc(identity_matrix)
 opens up the docstring for `identity_matrix` in a browser window.  It doesn't look very pretty, but it's legible.  You can also do
 
 ```
-browse_sage_doc(identity_matrix, output='rst)
+browse_sage_doc(identity_matrix, output='rst')
 ```
 to output (as a string) the reST version of the docstring, and
 
 ```
 browse_sage_doc(identity_matrix, view=False)
 ```
-to output (as a string) the html version of the docstring
+to output (as a string) the html version of the docstring.
+
+New: following cremona's suggestion, this also adds the following top-level commands:
+
+```
+tutorial()
+reference()
+manual()  # synonym for "reference"
+developer()
+constructions()
+```
+These open the corresponding document.  The new command `python_help` does what the old command `help` did.  The new command help does the following: with an argument, it acts like the old help -- that is, it calls `python_help(arg)`.  With no argument, it prints this message:
+
+```
+Welcome to Sage %s!  To view the Sage tutorial in your web browser,
+type 'tutorial()', and to view the (very detailed) Sage reference
+manual, type 'manual()'.  For help on any Sage function, for example
+'matrix_plot', type 'matrix_plot?' to see a help message, type
+'help(matrix_plot)' to see a very similar message, type
+'browse_sage_doc(matrix_plot)' to view a message in a web browser, and
+type 'matrix_plot??' to look at the function's source code.
+
+To enter Python's interactive online help utility, type 'python_help()'.
+To get help on a Python function, module or package, type 'help(MODULE)' or
+'python_help(MODULE)'.
+```
+(with the "%s" in the first line replaced by the version number).
 
 Issue created by migration from https://trac.sagemath.org/ticket/6820
 

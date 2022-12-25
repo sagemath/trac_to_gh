@@ -1,17 +1,18 @@
-# Issue 8540: ** BLOCKER ** very simple basic sqrt simplification totally broken bad
+# Issue 8540: very simple basic sqrt simplification totally broken
 
 archive/issues_008540.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robertwb @mwhansen\n\n```\nsage: a = 3/4\nsage: b = a^(-1/2)\nsage: b^2\n12\n```\n\nBut it should be 4/3.  \n\nReported by Paul Nelson, a grad student at Caltech.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8540\n\n",
+    "closed_at": "2010-03-17T06:42:41Z",
     "created_at": "2010-03-15T05:17:30Z",
     "labels": [
-        "component: symbolics",
+        "component: basic arithmetic",
         "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "** BLOCKER ** very simple basic sqrt simplification totally broken bad",
+    "title": "very simple basic sqrt simplification totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8540",
     "user": "https://github.com/williamstein"

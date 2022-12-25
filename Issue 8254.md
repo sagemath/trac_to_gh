@@ -1,24 +1,29 @@
-# Issue 8254: sage takes way too long to startup
+# Issue 8254: Use lazy imports to speed up sage startup time
 
 archive/issues_008254.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage still takes too long.  20 seconds, 30 seconds, 5 seconds, on various places... and it is all so painful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8254\n\n",
+    "body": "Keywords: sd32\n\nSage still takes too long.  20 seconds, 30 seconds, 5 seconds, on various places... and it is all so painful.  This patch attempts to speed up the startup time using lazy imports.\n\nSpecific patches at \n\n* #11040 - sage.schemes\n* #11043 - sage.plot\n\nIssue created by migration from https://trac.sagemath.org/ticket/8254\n\n",
     "created_at": "2010-02-13T00:27:52Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.5",
-    "title": "sage takes way too long to startup",
+    "title": "Use lazy imports to speed up sage startup time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8254",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Keywords: sd32
 
-Sage still takes too long.  20 seconds, 30 seconds, 5 seconds, on various places... and it is all so painful.
+Sage still takes too long.  20 seconds, 30 seconds, 5 seconds, on various places... and it is all so painful.  This patch attempts to speed up the startup time using lazy imports.
+
+Specific patches at 
+
+* #11040 - sage.schemes
+* #11043 - sage.plot
 
 Issue created by migration from https://trac.sagemath.org/ticket/8254
 

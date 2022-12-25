@@ -1,16 +1,17 @@
-# Issue 2580: [with patch, needs review] Implement backends for graphs
+# Issue 2580: [with patch, positive review] Implement backends for graphs
 
 archive/issues_002580.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis abstracts the layer between NetworkX and Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2580\n\n",
+    "closed_at": "2008-03-18T11:04:05Z",
     "created_at": "2008-03-18T01:56:35Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] Implement backends for graphs",
+    "title": "[with patch, positive review] Implement backends for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2580",
     "user": "https://github.com/rlmill"

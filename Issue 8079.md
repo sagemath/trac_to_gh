@@ -1,15 +1,16 @@
-# Issue 8079: Better documentation for patching spgk's
+# Issue 8079: Better documentation for patching spkg's
 
 archive/issues_008079.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mvngu\n\nIt would be great if the best-practices for patching sage packages were better (at all) documented. The following blog post should be definitely included into the developer manual:\n\nhttp://mvngu.wordpress.com/2010/01/20/how-to-patch-a-sage-package/\n\nIn addition, I'd like to know how to deal with updated configure scripts. Some issues are:\n* The automake sources (configure.ac, Makefile.am, more?) are small and their changes need to be recorded in case upstream makes a new release.\n* The automake sources might be automake-version dependent.\n* Not everyone has all versions of automake installed, so spkg-install can't call automake.\n* Running autoconf/automake generates big shell scripts (configure, makefile). Differences in these need not be recorded.   \n* But different versions of automake will produce different scripts, which would clutter up naive patches.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8079\n\n",
+    "body": "Assignee: mvngu\n\nCC:  mvngu\n\nKeywords: Developer's Guide patching spkg\n\nIt would be great if the best-practices for patching sage packages were better (at all) documented. The following blog post should be definitely included into the developer manual:\n\nhttp://mvngu.wordpress.com/2010/01/20/how-to-patch-a-sage-package/\n\nSee also [this discussion](http://groups.google.com/group/sage-devel/browse_thread/thread/e599fd37de909264) on sage-devel for an example on how not to patch an spkg. The blog post [Evil spkgs?](http://wdjoyner.wordpress.com/2009/08/01/evil-spkgs/) lists some actions that an spkg must never do.\n\nIn addition, I'd like to know how to deal with updated configure scripts. Some issues are:\n* The automake sources (configure.ac, Makefile.am, more?) are small and their changes need to be recorded in case upstream makes a new release.\n* The automake sources might be automake-version dependent.\n* Not everyone has all versions of automake installed, so spkg-install can't call automake.\n* Running autoconf/automake generates big shell scripts (configure, makefile). Differences in these need not be recorded.   \n* But different versions of automake will produce different scripts, which would clutter up naive patches.\n\n**Prerequisites:** #8199\n\n**Related tickets:** #8104, #3882\n\nIssue created by migration from https://trac.sagemath.org/ticket/8079\n\n",
+    "closed_at": "2010-02-14T14:36:51Z",
     "created_at": "2010-01-26T14:41:10Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "Better documentation for patching spgk's",
+    "title": "Better documentation for patching spkg's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8079",
     "user": "https://github.com/vbraun"
@@ -19,9 +20,13 @@ Assignee: mvngu
 
 CC:  mvngu
 
+Keywords: Developer's Guide patching spkg
+
 It would be great if the best-practices for patching sage packages were better (at all) documented. The following blog post should be definitely included into the developer manual:
 
 http://mvngu.wordpress.com/2010/01/20/how-to-patch-a-sage-package/
+
+See also [this discussion](http://groups.google.com/group/sage-devel/browse_thread/thread/e599fd37de909264) on sage-devel for an example on how not to patch an spkg. The blog post [Evil spkgs?](http://wdjoyner.wordpress.com/2009/08/01/evil-spkgs/) lists some actions that an spkg must never do.
 
 In addition, I'd like to know how to deal with updated configure scripts. Some issues are:
 * The automake sources (configure.ac, Makefile.am, more?) are small and their changes need to be recorded in case upstream makes a new release.
@@ -29,6 +34,10 @@ In addition, I'd like to know how to deal with updated configure scripts. Some i
 * Not everyone has all versions of automake installed, so spkg-install can't call automake.
 * Running autoconf/automake generates big shell scripts (configure, makefile). Differences in these need not be recorded.   
 * But different versions of automake will produce different scripts, which would clutter up naive patches.
+
+**Prerequisites:** #8199
+
+**Related tickets:** #8104, #3882
 
 Issue created by migration from https://trac.sagemath.org/ticket/8079
 

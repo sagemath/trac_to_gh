@@ -3,10 +3,11 @@
 archive/issues_007192.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mforets @kcrisman\n\n================\nUn Tour Por SAGE\n================\n\nEste es un tour por SAGE que sigue de cerca al Tour Por Mathematica\nque est\u00e1 al comienzo de el Libro de Mathematica.\n\n\nSAGE Como Una Calculadora\n=========================\n\nLa l\u00ednea de comandos de SAGE tiene un prompt ``sage:``; no necesitas agregarlo.\nSi utilizas el Notebook de SAGE, entonces coloca todo despu\u00e9s del \nprompt ``sage:``  en una celda de entrada de datos, y presiona shift-enter para computar la\nsalida correspondiente.\n\n::\n\n    sage: 3 + 5\n    8\n\nEl acento circunflejo ``^`` significa \"elevar a la potencia\".\n\n::\n\n    sage: 57.1 ^ 100\n    4.60904368661396e175\n\nComputamos el inverso de una matr\u00edz de :math:`2 \\times 2` en SAGE.\n\n::\n\n    sage: matrix([[1,2], [3,4]])^(-1)\n    [  -2    1]\n    [ 3/2 -1/2]\n\nAqu\u00ed integramos una funci\u00f3n simple.\n\n::\n\n    sage: x = var('x')   # crea una variable simb\u00f3lica\n    sage: integrate(sqrt(x)*sqrt(1+x), x)\n    1/4*((x + 1)<sup>(3/2)/x</sup>(3/2) + sqrt(x + 1)/sqrt(x))/((x + 1)<sup>2/x</sup>2 - 2*(x + 1)/x + 1) + 1/8*log(sqrt(x + 1)/sqrt(x) - 1) - 1/8*log(sqrt(x + 1)/sqrt(x) + 1)\n\nEsto le pide a SAGE que resuelva una ecuaci\u00f3n cuadr\u00e1tica. El simbolo ``==``\nrepresenta igualdad en SAGE.\n\n::\n\n    sage: a = var('a')\n    sage: S = solve(x^2 + x == a, x); S\n    [x == -1/2*sqrt(4*a + 1) - 1/2, x == 1/2*sqrt(4*a + 1) - 1/2]\n\nEl resultado es una lista de igualdades.\n\n.. link\n\n::\n\n    sage: S[0].rhs()\n    -1/2*sqrt(4*a + 1) - 1/2\n    sage: show(plot(sin(x) + sin(1.6*x), 0, 40))\n\n.. image:: sin_plot.*\n\n\nC\u00f3mputos Poderosos Con SAGE\n===========================\n\nPrimero creamos una matr\u00edz de :math:`500 \\times 500` con n\u00fameros\naleatorios.\n\n::\n\n    sage: m = random_matrix(RDF,500)\n\nLe lleva unos cuantos segundos a SAGE para computar los eigenvalores de la\nmatr\u00edz y trazarlos.\n\n.. link\n\n::\n\n    sage: e = m.eigenvalues()  #alrededor de 2 segundos\n    sage: w = [(i, abs(e[i])) for i in range(len(e))]\n    sage: show(points(w))\n\n.. image:: eigen_plot.*\n\n\nGr\u00e1cias a la Biblioteca GNU de Multiprecisi\u00f3n (GMP), SAGE puede manejar \nn\u00fameros muy grandes, hasta n\u00fameros con millones o billones de\nd\u00edgitos.\n\n::\n\n    sage: factorial(100)\n    93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000\n    sage: n = factorial(1000000)  #alrededor de 2.5 seconds\n\nEsto calcula al menos 100 digitos de :math:`\\pi`.\n\n::\n\n    sage: N(pi, digits=100)\n    3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068\n\nEsto le pide a SAGE que factorice un polinomio en dos variables.\n\n::\n\n    sage: R.<x,y> = QQ[]\n    sage: F = factor(x^99 + y^99)\n    sage: F\n    (x + y) * (x^2 - x*y + y^2) * (x^6 - x<sup>3*y</sup>3 + y^6) * \n    (x^10 - x^9*y + x<sup>8*y</sup>2 - x<sup>7*y</sup>3 + x<sup>6*y</sup>4 - x<sup>5*y</sup>5 +\n     x<sup>4*y</sup>6 - x<sup>3*y</sup>7 + x<sup>2*y</sup>8 - x*y^9 + y^10) * \n    (x^20 + x^19*y - x<sup>17*y</sup>3 - x<sup>16*y</sup>4 + x<sup>14*y</sup>6 + x<sup>13*y</sup>7 -\n     x<sup>11*y</sup>9 - x<sup>10*y</sup>10 - x<sup>9*y</sup>11 + x<sup>7*y</sup>13 + x<sup>6*y</sup>14 - \n     x<sup>4*y</sup>16 - x<sup>3*y</sup>17 + x*y^19 + y^20) * (x^60 + x<sup>57*y</sup>3 -\n     x<sup>51*y</sup>9 - x<sup>48*y</sup>12 + x<sup>42*y</sup>18 + x<sup>39*y</sup>21 - x<sup>33*y</sup>27 - \n     x<sup>30*y</sup>30 - x<sup>27*y</sup>33 + x<sup>21*y</sup>39 + x<sup>18*y</sup>42 - x<sup>12*y</sup>48 -\n     x<sup>9*y</sup>51 + x<sup>3*y</sup>57 + y^60)\n    sage: F.expand()\n    x^99 + y^99\n\nA SAGE tan solo le lleva m\u00e9nos de 5 segundos para computar el n\u00famero de maneras de\nrepartir cien milliones como una suma de enteros positivos.\n\n::\n\n    sage: z = Partitions(10^8).cardinality() #alrededor de 4.5 seconds\n    sage: str(z)[:40]\n    '1760517045946249141360373894679135204009'\n\nAccesando Algoritmos en Sage\n============================\n\nCada vez que usas SAGE, estas accesando una de las m\u00e1s grandes\ncolecciones de algoritmos computacionales de c\u00f3digo abierto de el mundo entero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7192\n\n",
+    "body": "Assignee: tba\n\nCC:  @mforets @kcrisman\n\nKeywords: spanish\n\nFolder:  .../es/a_tour_of_sage\nFile:       index.rst\n\n(See also #10165 and #10180.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7192\n\n",
+    "closed_at": "2017-09-02T09:34:15Z",
     "created_at": "2009-10-12T03:30:28Z",
     "labels": [
-        "component: documentation"
+        "component: translations"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "Translation of \"A Tour Of Sage\" to Spanish",
@@ -19,146 +20,12 @@ Assignee: tba
 
 CC:  @mforets @kcrisman
 
-================
-Un Tour Por SAGE
-================
+Keywords: spanish
 
-Este es un tour por SAGE que sigue de cerca al Tour Por Mathematica
-que está al comienzo de el Libro de Mathematica.
+Folder:  .../es/a_tour_of_sage
+File:       index.rst
 
-
-SAGE Como Una Calculadora
-=========================
-
-La línea de comandos de SAGE tiene un prompt ``sage:``; no necesitas agregarlo.
-Si utilizas el Notebook de SAGE, entonces coloca todo después del 
-prompt ``sage:``  en una celda de entrada de datos, y presiona shift-enter para computar la
-salida correspondiente.
-
-::
-
-    sage: 3 + 5
-    8
-
-El acento circunflejo ``^`` significa "elevar a la potencia".
-
-::
-
-    sage: 57.1 ^ 100
-    4.60904368661396e175
-
-Computamos el inverso de una matríz de :math:`2 \times 2` en SAGE.
-
-::
-
-    sage: matrix([[1,2], [3,4]])^(-1)
-    [  -2    1]
-    [ 3/2 -1/2]
-
-Aquí integramos una función simple.
-
-::
-
-    sage: x = var('x')   # crea una variable simbólica
-    sage: integrate(sqrt(x)*sqrt(1+x), x)
-    1/4*((x + 1)<sup>(3/2)/x</sup>(3/2) + sqrt(x + 1)/sqrt(x))/((x + 1)<sup>2/x</sup>2 - 2*(x + 1)/x + 1) + 1/8*log(sqrt(x + 1)/sqrt(x) - 1) - 1/8*log(sqrt(x + 1)/sqrt(x) + 1)
-
-Esto le pide a SAGE que resuelva una ecuación cuadrática. El simbolo ``==``
-representa igualdad en SAGE.
-
-::
-
-    sage: a = var('a')
-    sage: S = solve(x^2 + x == a, x); S
-    [x == -1/2*sqrt(4*a + 1) - 1/2, x == 1/2*sqrt(4*a + 1) - 1/2]
-
-El resultado es una lista de igualdades.
-
-.. link
-
-::
-
-    sage: S[0].rhs()
-    -1/2*sqrt(4*a + 1) - 1/2
-    sage: show(plot(sin(x) + sin(1.6*x), 0, 40))
-
-.. image:: sin_plot.*
-
-
-Cómputos Poderosos Con SAGE
-===========================
-
-Primero creamos una matríz de :math:`500 \times 500` con números
-aleatorios.
-
-::
-
-    sage: m = random_matrix(RDF,500)
-
-Le lleva unos cuantos segundos a SAGE para computar los eigenvalores de la
-matríz y trazarlos.
-
-.. link
-
-::
-
-    sage: e = m.eigenvalues()  #alrededor de 2 segundos
-    sage: w = [(i, abs(e[i])) for i in range(len(e))]
-    sage: show(points(w))
-
-.. image:: eigen_plot.*
-
-
-Grácias a la Biblioteca GNU de Multiprecisión (GMP), SAGE puede manejar 
-números muy grandes, hasta números con millones o billones de
-dígitos.
-
-::
-
-    sage: factorial(100)
-    93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
-    sage: n = factorial(1000000)  #alrededor de 2.5 seconds
-
-Esto calcula al menos 100 digitos de :math:`\pi`.
-
-::
-
-    sage: N(pi, digits=100)
-    3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068
-
-Esto le pide a SAGE que factorice un polinomio en dos variables.
-
-::
-
-    sage: R.<x,y> = QQ[]
-    sage: F = factor(x^99 + y^99)
-    sage: F
-    (x + y) * (x^2 - x*y + y^2) * (x^6 - x<sup>3*y</sup>3 + y^6) * 
-    (x^10 - x^9*y + x<sup>8*y</sup>2 - x<sup>7*y</sup>3 + x<sup>6*y</sup>4 - x<sup>5*y</sup>5 +
-     x<sup>4*y</sup>6 - x<sup>3*y</sup>7 + x<sup>2*y</sup>8 - x*y^9 + y^10) * 
-    (x^20 + x^19*y - x<sup>17*y</sup>3 - x<sup>16*y</sup>4 + x<sup>14*y</sup>6 + x<sup>13*y</sup>7 -
-     x<sup>11*y</sup>9 - x<sup>10*y</sup>10 - x<sup>9*y</sup>11 + x<sup>7*y</sup>13 + x<sup>6*y</sup>14 - 
-     x<sup>4*y</sup>16 - x<sup>3*y</sup>17 + x*y^19 + y^20) * (x^60 + x<sup>57*y</sup>3 -
-     x<sup>51*y</sup>9 - x<sup>48*y</sup>12 + x<sup>42*y</sup>18 + x<sup>39*y</sup>21 - x<sup>33*y</sup>27 - 
-     x<sup>30*y</sup>30 - x<sup>27*y</sup>33 + x<sup>21*y</sup>39 + x<sup>18*y</sup>42 - x<sup>12*y</sup>48 -
-     x<sup>9*y</sup>51 + x<sup>3*y</sup>57 + y^60)
-    sage: F.expand()
-    x^99 + y^99
-
-A SAGE tan solo le lleva ménos de 5 segundos para computar el número de maneras de
-repartir cien milliones como una suma de enteros positivos.
-
-::
-
-    sage: z = Partitions(10^8).cardinality() #alrededor de 4.5 seconds
-    sage: str(z)[:40]
-    '1760517045946249141360373894679135204009'
-
-Accesando Algoritmos en Sage
-============================
-
-Cada vez que usas SAGE, estas accesando una de las más grandes
-colecciones de algoritmos computacionales de código abierto de el mundo entero.
+(See also #10165 and #10180.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7192
 

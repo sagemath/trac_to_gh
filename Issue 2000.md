@@ -1,16 +1,16 @@
-# Issue 2000: bug either in polynomial factorization or polynomial ring constructor
+# Issue 2000: [with patch, positive review] fall back to univariate factoring if possible
 
 archive/issues_002000.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\n> ----------------------------------------------------------------------\n> | SAGE Version 2.10, Release Date: 2008-01-18                        |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> \n> sage: R.<z> = PolynomialRing(CC,1)\n> sage: f = z^4 - 6*z + 3\n> sage: f.factor()\n\nBOOM!\n\n\nThis is a bug.  Fortunately, there is an easy workaround (see below). \nDon't put PolynomialRing(CC, 1); instead put PolynomialRing(CC).\n\nsage: R.<z> = PolynomialRing(CC)\nsage: f = z^4 - 6*z + 3\nsage: f.factor()\n(1.00000000000000*z - 1.60443920904349) * (1.00000000000000*z - 0.511399619393097) * (1.00000000000000*z + 1.05791941421830 - 1.59281852704435*I) * (1.00000000000000*z + 1.05791941421830 + 1.59281852704435*I)\n\nThe problem is that PolynomialRing(CC,1) creates a *multivariate polynomial ring*\nwhich happens to be in 1 variable, whereas PolynomialRing(CC) creates a \nunivariate polynomial ring (which is implemented under the hood differently\nthan a multivariate polynomial ring).\n\nThe bug is that PolynomialRing(CC,1) should create a univariate ring,\nwhereas MPolynomialRing(CC,1) should be how one creates a multivariate\npoly ring in 1 variable.   (I think.)\n\nAlternatively, the bug is that factoring a multivariate polynomial in 1 variable\nuses Singular instead of other better univariate code that we have. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2000\n\n",
+    "closed_at": "2008-08-25T00:42:01Z",
     "created_at": "2008-01-31T06:25:40Z",
     "labels": [
-        "component: commutative algebra",
-        "bug"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug either in polynomial factorization or polynomial ring constructor",
+    "title": "[with patch, positive review] fall back to univariate factoring if possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2000",
     "user": "https://github.com/williamstein"

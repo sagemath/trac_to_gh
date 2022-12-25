@@ -1,9 +1,10 @@
-# Issue 3128: PolynomialRing's behaviour does not match docstring
+# Issue 3128: [with patch, positive review] PolynomialRing's behaviour does not match docstring
 
 archive/issues_003128.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe docstring for the function PolynomialRing states\n\n```\n    OUTPUT:\n        PolynomialRing(base_ring, name, sparse=False) returns a univariate\n        polynomial ring; all other input formats return a multivariate\n        polynomial ring.\n```\nwhich is not what PolynomialRing actually does, since\n\n```\nsage: PolynomialRing(QQ, names=['x'])\nUnivariate Polynomial Ring in x over Rational Field\n```\nEither PolynomialRing has a bug or the docstring should be corrected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3128\n\n",
+    "closed_at": "2009-11-05T02:29:02Z",
     "created_at": "2008-05-07T22:31:00Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_003128.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "PolynomialRing's behaviour does not match docstring",
+    "title": "[with patch, positive review] PolynomialRing's behaviour does not match docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3128",
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"

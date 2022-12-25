@@ -1,16 +1,17 @@
-# Issue 5654: [with patch, needs review] Boundary/interior points of vertices were computed wrong.
+# Issue 5654: [with patch, positive review] Boundary/interior points of vertices were computed wrong.
 
 archive/issues_005654.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nThis is wrong:\n\n```\nsage: ReflexivePolytope(2,0).faces(dim=0)[0].nboundary_points()\n1\n```\nbecause vertices do not have boundary points. \n\nThe patch fixes the function that caused this error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5654\n\n",
+    "closed_at": "2009-04-15T00:55:17Z",
     "created_at": "2009-04-01T02:00:01Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Boundary/interior points of vertices were computed wrong.",
+    "title": "[with patch, positive review] Boundary/interior points of vertices were computed wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5654",
     "user": "https://github.com/novoselt"

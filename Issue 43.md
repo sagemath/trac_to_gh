@@ -4,6 +4,7 @@ archive/issues_000043.json:
 ```json
 {
     "body": "Assignee: somebody\n\n(KiranKedlaya) GAP boolean values do not automatically coerce back to SAGE, e.g.,\n\n```\nsage: if gap(\"2+2=4\"):\n   .....:     pass\n```\nreturns an error, whereas\n\n```\nsage: if sage_eval(gap(\"2+2=4\")):\n   .....:     pass\n```\ndoes not. A more serious instance of this is:\n\n```\nsage: G = SymmetricGroup(8)\nsage: A = AlternatingGroup(8)\nsage: if (G._gap_().IsSubgroup(A)):\n   .....:     print 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/43\n\n",
+    "closed_at": "2007-01-12T22:12:37Z",
     "created_at": "2006-09-12T23:32:43Z",
     "labels": [
         "component: basic arithmetic",

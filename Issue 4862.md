@@ -1,9 +1,10 @@
-# Issue 4862: two trivial-to-fix issues with the macaulay2 spkg
+# Issue 4862: [with spkg, positive review] macaulay2 optional spkg is broken with parallel make
 
 archive/issues_004862.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\n1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg\n\n2. If you do `export MAKE=\"make -j4\"` then the build fails as follows:\n\n```\nchecking for gmake... make -j20\nchecking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found\nconfigure: make -j20: GNU make is required\n```\n\nThis could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4862\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\n```\nchecking for strip... strip\nchecking whether strip accepts the remove-section option... yes\nchecking \"checking whether make -j8 is GNU make\"... ../../configure: line 2361: make -j8: command not found\nconfigure: error: \"GNU make is required: make -j8\"\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4862\n\n",
+    "closed_at": "2008-12-26T17:18:07Z",
     "created_at": "2008-12-24T02:16:14Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004862.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "two trivial-to-fix issues with the macaulay2 spkg",
+    "title": "[with spkg, positive review] macaulay2 optional spkg is broken with parallel make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4862",
     "user": "https://github.com/williamstein"
@@ -21,17 +22,16 @@ Assignee: mabshoff
 
 CC:  @haraldschilly
 
-1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg
-
-2. If you do `export MAKE="make -j4"` then the build fails as follows:
-
 ```
-checking for gmake... make -j20
-checking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found
-configure: make -j20: GNU make is required
+checking for strip... strip
+checking whether strip accepts the remove-section option... yes
+checking "checking whether make -j8 is GNU make"... ../../configure: line 2361: make -j8: command not found
+configure: error: "GNU make is required: make -j8"
 ```
 
-This could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/4862
 

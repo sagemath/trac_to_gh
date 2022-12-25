@@ -1,16 +1,17 @@
-# Issue 5829: copyright on standard documentation
+# Issue 5829: [with patch, positive review] copyright on standard documentation
 
 archive/issues_005829.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: copyright\n\nA few months ago, William Stein officially adopted the title \"The Sage Development Team\" as part of the referencing format for Sage. But the Sage standard documentation still has \"The Sage Group\" in the copyright notice. This must be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5829\n\n",
+    "closed_at": "2009-04-22T00:14:36Z",
     "created_at": "2009-04-20T04:49:14Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "copyright on standard documentation",
+    "title": "[with patch, positive review] copyright on standard documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5829",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

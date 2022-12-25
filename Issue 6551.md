@@ -3,7 +3,8 @@
 archive/issues_006551.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\nor even\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\nor even\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2009-07-18T00:25:01Z",
     "labels": [
         "component: algebra"
@@ -15,7 +16,7 @@ archive/issues_006551.json:
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
 CC:  @malb
 

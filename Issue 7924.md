@@ -4,6 +4,7 @@ archive/issues_007924.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTry\n\n```\nprint \"___x___\"\n```\n\nIn a notebook cell. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7924\n\n",
+    "closed_at": "2010-01-19T03:15:53Z",
     "created_at": "2010-01-14T04:16:48Z",
     "labels": [
         "component: notebook",

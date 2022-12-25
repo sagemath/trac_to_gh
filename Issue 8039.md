@@ -1,16 +1,17 @@
-# Issue 8039: [with spkg, needs review] ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64
+# Issue 8039: ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64
 
 archive/issues_008039.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nKeywords: building\n\nin src/CONFIG/src/SpewMakeInc.c LDFLAGS are set for inclusion in Make.inc. This file is included in all Makefiles.\n\nAs a workaround I changed -melf_x86_64 in -64 in Make.inc in the directory where the libraries are built.\n\nThis is SunOS with SAGE64=\"yes\" only.\n\nAn spkg can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p11.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8039\n\n",
+    "body": "Assignee: drkirkby\n\nKeywords: building\n\nin src/CONFIG/src/SpewMakeInc.c LDFLAGS are set for inclusion in Make.inc. This file is included in all Makefiles.\n\nAs a workaround I changed -melf_x86_64 in -64 in Make.inc in the directory where the libraries are built.\n\nThis is SunOS with SAGE64=\"yes\" only.\n\nAn spkg can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8039\n\n",
+    "closed_at": "2010-03-02T23:08:09Z",
     "created_at": "2010-01-22T13:11:49Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "[with spkg, needs review] ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64",
+    "title": "ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8039",
     "user": "https://github.com/jaapspies"
@@ -27,7 +28,7 @@ As a workaround I changed -melf_x86_64 in -64 in Make.inc in the directory where
 This is SunOS with SAGE64="yes" only.
 
 An spkg can be found here:
-[http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p11.spkg)
+[http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8039
 

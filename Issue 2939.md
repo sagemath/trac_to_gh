@@ -1,16 +1,17 @@
-# Issue 2939: piecewise.py improvements (docstring and laplace fixes)
+# Issue 2939: [with patch, positive review] piecewise.py improvements (docstring and laplace fixes)
 
 archive/issues_002939.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nJim Morrow reported by private email some nonsense in the docstrings of several piecewise.py functions. These are now fixed. Also, I added 2 lines to the laplace function which allows it to compute with functions which are defined over an infinite interval. These 2 lines were the only code changes in this patch, the rest of the changes are docstring fixes and additions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2939\n\n",
+    "closed_at": "2008-04-24T03:42:16Z",
     "created_at": "2008-04-16T02:24:18Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "piecewise.py improvements (docstring and laplace fixes)",
+    "title": "[with patch, positive review] piecewise.py improvements (docstring and laplace fixes)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2939",
     "user": "https://github.com/wdjoyner"

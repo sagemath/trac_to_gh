@@ -1,9 +1,10 @@
-# Issue 3085: [with patch, needs *really* easy review] identity matrix docs
+# Issue 3085: [with patch, with positive review] identity matrix docs
 
 archive/issues_003085.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe docs for identity matrix contain a \"\\t\", so the string should be a raw string so \\t doesn't expand to a tab.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3085\n\n",
+    "closed_at": "2008-05-03T13:34:55Z",
     "created_at": "2008-05-02T22:08:38Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_003085.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch, needs *really* easy review] identity matrix docs",
+    "title": "[with patch, with positive review] identity matrix docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3085",
     "user": "https://github.com/jasongrout"

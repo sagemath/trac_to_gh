@@ -1,25 +1,87 @@
-# Issue 6743: port Sage to Microsoft Windows (via Cygwin)
+# Issue 6743: cygwin metaticket: port Sage to Microsoft Windows (via Cygwin): stage 1 -- make building Sage automatic
 
 archive/issues_006743.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dimpase @mwhansen jpflori @kcrisman simonking\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6743\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @dimpase @mwhansen jpflori @kcrisman simonking\n\nKeywords: sd31 sd32\n\nThe goal of this ticket is that a person can:\n\n1. Install Cygwin and certain standard Cygwin packages (listed below).\n\n2. Extract the Sage tarball and type \"`make`\"\n\nand have everything build automatically with no errors.   \n\nThe goal is **not** that the resulting build works or Sage starts up (this is #13841), but if that happens as well, this will be great.  Adding checks for all these prereqs, if necessary, will also be part of a future ticket.\n\n---\n\n## More info\nMost recent trials and a lot more archived status detail is at http://trac.sagemath.org/sage_trac/wiki/CygwinPort\n\n## Current instructions (work on Windows XP and Windows 7 with latest Cygwin)\nAs below with Sage 5.9.beta0\n\n### Cygwin prereqs\nHere is what to install from Cygwin - use the usual stable binaries.\n* `make`, `perl`, `m4`, `binutils`\n* either `gcc4-core`  alone and then use the optional gcc-4.7.2 spkg (the standard gcc-4.6.3 spkg won't be able to compile ecl) or `gcc4-core` and `gcc4-g++` and `gcc4-fortran` whose versions **must** match\n  * Currently, we also need to pull `libmpfr4` for obscure reasons upstream that will likely be fixed soon - we hope\n* `lapack`, `liblapack-devel` (this should automatically pull liblapack0, in fact, just installing liblapack-devel should already) - though we should be able to build ATLAS\n\nOther instructions:\n* Just to make sure, avoid building in home directories of Windows domain users, as they are treated in a special way by Windows (and Cygwin). \n* It's a good idea that all the pathnames do not contain capital letters (Windows is case-insensitive in this way, unlike Unices), spaces, etc., see #13343\n* Similarly, do not *test* without making sure that `SAGE_TESTDIR` does not contain spaces.\n* Also, **don't forget to** `export SAGE_PORT=yes` (only needed the first time you issue make though, not after failures (memleak, rebase...) and relaunching the build)!\n\n### Spkgs\nInstall the following spkgs ahead of time, e.g. in `SAGE_ROOT/spkg/standard/` before compiling\n* Currently none\n\n### Patches\nYou may have to add patches during the build of the Sage library.  Once it fails, do (assuming you are in `SAGE_ROOT`)\n\n```\n./sage -sh\ncd devel/sage\n<import the patches - you may need to make ~/.hgrc>\ncd ../..\n./sage -b\n<assuming all goes well here>\ntouch spkg/installed/sage-5.6.rc0 # or whatever the version number is\nexit\n```\n  which will bring you back to your normal shell.\n\nPatches currently needed for:\n* Currently none\n\nThis should then work 'out of the box', modulo rebasing issues (see [CygwinPort](CygwinPort)).  See [the wiki](CygwinPort) for other details as well.\n\n---\n\nThere is (or was) a very old binary of Cygwin available here:\n\nhttp://sage.math.washington.edu/home/wstein/tmp/sage-4.1-cygwin-i686-CYGWIN_NT-5.1.tar.gz\n\nIssue created by migration from https://trac.sagemath.org/ticket/6743\n\n",
+    "closed_at": "2013-05-22T12:30:20Z",
     "created_at": "2009-08-14T06:41:45Z",
     "labels": [
-        "component: porting"
+        "component: porting: cygwin"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
-    "title": "port Sage to Microsoft Windows (via Cygwin)",
+    "title": "cygwin metaticket: port Sage to Microsoft Windows (via Cygwin): stage 1 -- make building Sage automatic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6743",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @dimpase @mwhansen jpflori @kcrisman simonking
 
+Keywords: sd31 sd32
 
+The goal of this ticket is that a person can:
+
+1. Install Cygwin and certain standard Cygwin packages (listed below).
+
+2. Extract the Sage tarball and type "`make`"
+
+and have everything build automatically with no errors.   
+
+The goal is **not** that the resulting build works or Sage starts up (this is #13841), but if that happens as well, this will be great.  Adding checks for all these prereqs, if necessary, will also be part of a future ticket.
+
+---
+
+## More info
+Most recent trials and a lot more archived status detail is at http://trac.sagemath.org/sage_trac/wiki/CygwinPort
+
+## Current instructions (work on Windows XP and Windows 7 with latest Cygwin)
+As below with Sage 5.9.beta0
+
+### Cygwin prereqs
+Here is what to install from Cygwin - use the usual stable binaries.
+* `make`, `perl`, `m4`, `binutils`
+* either `gcc4-core`  alone and then use the optional gcc-4.7.2 spkg (the standard gcc-4.6.3 spkg won't be able to compile ecl) or `gcc4-core` and `gcc4-g++` and `gcc4-fortran` whose versions **must** match
+  * Currently, we also need to pull `libmpfr4` for obscure reasons upstream that will likely be fixed soon - we hope
+* `lapack`, `liblapack-devel` (this should automatically pull liblapack0, in fact, just installing liblapack-devel should already) - though we should be able to build ATLAS
+
+Other instructions:
+* Just to make sure, avoid building in home directories of Windows domain users, as they are treated in a special way by Windows (and Cygwin). 
+* It's a good idea that all the pathnames do not contain capital letters (Windows is case-insensitive in this way, unlike Unices), spaces, etc., see #13343
+* Similarly, do not *test* without making sure that `SAGE_TESTDIR` does not contain spaces.
+* Also, **don't forget to** `export SAGE_PORT=yes` (only needed the first time you issue make though, not after failures (memleak, rebase...) and relaunching the build)!
+
+### Spkgs
+Install the following spkgs ahead of time, e.g. in `SAGE_ROOT/spkg/standard/` before compiling
+* Currently none
+
+### Patches
+You may have to add patches during the build of the Sage library.  Once it fails, do (assuming you are in `SAGE_ROOT`)
+
+```
+./sage -sh
+cd devel/sage
+<import the patches - you may need to make ~/.hgrc>
+cd ../..
+./sage -b
+<assuming all goes well here>
+touch spkg/installed/sage-5.6.rc0 # or whatever the version number is
+exit
+```
+  which will bring you back to your normal shell.
+
+Patches currently needed for:
+* Currently none
+
+This should then work 'out of the box', modulo rebasing issues (see [CygwinPort](CygwinPort)).  See [the wiki](CygwinPort) for other details as well.
+
+---
+
+There is (or was) a very old binary of Cygwin available here:
+
+http://sage.math.washington.edu/home/wstein/tmp/sage-4.1-cygwin-i686-CYGWIN_NT-5.1.tar.gz
 
 Issue created by migration from https://trac.sagemath.org/ticket/6743
 

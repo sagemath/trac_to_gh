@@ -1,22 +1,23 @@
-# Issue 1240: wrong unix rights of some files
+# Issue 1240: wrong unix rights/permissions of some files after make dist
 
 archive/issues_001240.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n[This was reported to me by Emmanuel Thome.]\n\nWhen installing SAGE 2.8.13 on a multi-user site (make dist), the Unix rights of some files are wrong:\n\n```\nhelene% find . ! -perm +004 | xargs ls -lLd\n-rwx--x--x 1 zimmerma spaces    414 2007-11-22 08:56 ./local/bin/sage-rebase_sage.sh\n-rwx--x--x 1 zimmerma spaces    702 2007-11-22 10:13 ./local/bin/sage-server-web\n-rw------- 1 zimmerma spaces   5292 2007-11-22 09:09 ./local/include/cremona/cperiods.h\n...\n-rw-r----- 1 zimmerma spaces   1360 2006-10-26 20:26 ./local/share/moin/underlay/pages/SystemPagesSetup/attachments/all_languages.zip\n...\n```\n\nShouldn't all files be at least readable (r) by everybody?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1240\n\n",
+    "body": "Assignee: mvngu\n\n[This was reported to me by Emmanuel Thome.]\n\nWhen installing SAGE 2.8.13 on a multi-user site (make dist), the Unix rights of some files are wrong:\n\n```\nhelene% find . ! -perm +004 | xargs ls -lLd\n-rwx--x--x 1 zimmerma spaces    414 2007-11-22 08:56 ./local/bin/sage-rebase_sage.sh\n-rwx--x--x 1 zimmerma spaces    702 2007-11-22 10:13 ./local/bin/sage-server-web\n-rw------- 1 zimmerma spaces   5292 2007-11-22 09:09 ./local/include/cremona/cperiods.h\n...\n-rw-r----- 1 zimmerma spaces   1360 2006-10-26 20:26 ./local/share/moin/underlay/pages/SystemPagesSetup/attachments/all_languages.zip\n...\n```\n\nShouldn't all files be at least readable (r) by everybody?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1240\n\n",
+    "closed_at": "2010-03-04T16:43:32Z",
     "created_at": "2007-11-22T12:12:52Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "wrong unix rights of some files",
+    "title": "wrong unix rights/permissions of some files after make dist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1240",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: mabshoff
+Assignee: mvngu
 
 [This was reported to me by Emmanuel Thome.]
 

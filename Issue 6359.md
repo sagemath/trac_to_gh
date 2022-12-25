@@ -1,26 +1,36 @@
-# Issue 6359: update to Python 2.6.2
+# Issue 6359: [with patch and spkgs, positive review] update to Python 2.6.2
 
 archive/issues_006359.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  sage-combinat @nthiery\n\nThis requires updating a few other spkgs as well as some fixes in the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6359\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @nthiery\n\nThis requires updating a few other spkgs as well as some fixes in the Sage library. They can be found at\n\nhttp://sage.math.washington.edu/home/mhansen/python-2.6.2.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/twisted-8.2.0.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/pynac-0.1.8.p1.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/scons-1.2.0.spkg\n\nhttp://sage.math.washington.edu/home/mhansen/ipython-0.9.1.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6359\n\n",
+    "closed_at": "2009-06-25T17:16:04Z",
     "created_at": "2009-06-18T23:44:09Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "update to Python 2.6.2",
+    "title": "[with patch and spkgs, positive review] update to Python 2.6.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6359",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 CC:  sage-combinat @nthiery
 
-This requires updating a few other spkgs as well as some fixes in the Sage library.
+This requires updating a few other spkgs as well as some fixes in the Sage library. They can be found at
+
+http://sage.math.washington.edu/home/mhansen/python-2.6.2.spkg
+
+http://sage.math.washington.edu/home/mhansen/twisted-8.2.0.spkg
+
+http://sage.math.washington.edu/home/mhansen/pynac-0.1.8.p1.spkg
+
+http://sage.math.washington.edu/home/mhansen/scons-1.2.0.spkg
+
+http://sage.math.washington.edu/home/mhansen/ipython-0.9.1.p0.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6359
 

@@ -3,7 +3,8 @@
 archive/issues_006317.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mkoeppe\n\nEvidently the maple interface is even completely broken on sage.math right now!\n\n```\nsage -t -long --optional devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/calculus/calculus.py\", line 479:\n    sage: g = maple(f); g                             # optional -- requires maple\nExpected:\n    sin(x^2)+y^z\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/calculus/calculus.py\", line 481:\n    sage: g.integrate(x)                              # optional -- requires maple\nExpected:\n    1/2*2^(1/2)*Pi^(1/2)*FresnelS(2^(1/2)/Pi^(1/2)*x)+y^z*x\nGot:\n    read \"/scratch/wstein/sage//temp/sage.math.washington.edu/2399//interface//tmp2399\";\n    read \"/scratch/wstein/sage//temp/sage.math.washington.edu/2399//interface//tmp2399\";\n    read \"/scratch/wstein/sage//temp/sage.math.washington.edu/2399//interface//tmp2399\";\n    sage2\n**********************************************************************\n1 items had failures:\n   2 of  56 in __main__.example_1\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_calculus.py\n\t [13.3 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6317\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mkoeppe\n\nKeywords: maple\n\nEvidently the maple interface is even completely broken on sage.math right now!\n\n```\nsage -t -long --optional devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/calculus/calculus.py\", line 479:\n    sage: g = maple(f); g                             # optional -- requires maple\nExpected:\n    sin(x^2)+y^z\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/calculus/calculus.py\", line 481:\n    sage: g.integrate(x)                              # optional -- requires maple\nExpected:\n    1/2*2^(1/2)*Pi^(1/2)*FresnelS(2^(1/2)/Pi^(1/2)*x)+y^z*x\nGot:\n    read \"/scratch/wstein/sage//temp/sage.math.washington.edu/2399//interface//tmp2399\";\n    read \"/scratch/wstein/sage//temp/sage.math.washington.edu/2399//interface//tmp2399\";\n    read \"/scratch/wstein/sage//temp/sage.math.washington.edu/2399//interface//tmp2399\";\n    sage2\n**********************************************************************\n1 items had failures:\n   2 of  56 in __main__.example_1\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_calculus.py\n [13.3 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6317\n\n",
+    "closed_at": "2022-10-08T07:33:02Z",
     "created_at": "2009-06-16T14:46:05Z",
     "labels": [
         "component: packages: optional",
@@ -19,6 +20,8 @@ archive/issues_006317.json:
 Assignee: tbd
 
 CC:  @mkoeppe
+
+Keywords: maple
 
 Evidently the maple interface is even completely broken on sage.math right now!
 
@@ -46,7 +49,7 @@ Got:
    2 of  56 in __main__.example_1
 ***Test Failed*** 2 failures.
 For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_calculus.py
-	 [13.3 s]
+ [13.3 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6317

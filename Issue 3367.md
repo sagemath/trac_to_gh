@@ -4,6 +4,7 @@ archive/issues_003367.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nI wrote over at #3254:\nIs CachedFunction the right name though? Shouldn't it be cached_function? I think there is a different style convention for the persistent and the cached functions which is a bummer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3367\n\n",
+    "closed_at": "2009-02-04T21:35:04Z",
     "created_at": "2008-06-04T21:06:05Z",
     "labels": [
         "component: misc",

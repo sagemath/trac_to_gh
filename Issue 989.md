@@ -1,16 +1,17 @@
-# Issue 989: Stripping $ from documentation
+# Issue 989: [with patch] Stripping $ from documentation
 
 archive/issues_000989.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\nsage: edit?\n```\npresently yields\n\n```\n ...\n          sage: import sage.misc.edit_module as m\n          sage: m.set_edit_template(\"vi -c {line} {file}\")\n ...\n```\nwhereas the last line should read\n\n```\n         sage: m.set_edit_template(\"vi -c ${line} ${file}\")\n```\ni.e., $ gets stripped from EXAMPLE text where it should not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/989\n\n",
+    "closed_at": "2007-11-06T21:35:27Z",
     "created_at": "2007-10-25T01:14:24Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "Stripping $ from documentation",
+    "title": "[with patch] Stripping $ from documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/989",
     "user": "https://github.com/nbruin"

@@ -1,22 +1,23 @@
-# Issue 3365: [with patch; needs review] add a %c mode to the notebook (like %fortran)
+# Issue 3365: [with patch; under review by tclemans before 6/27] add a %c mode to the notebook (like %fortran)
 
 archive/issues_003365.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nMichael Schmitz -- a student in Math 480 -- created this code.  It makes it so you can do %c in a notebook cell and write pure C functions.  Very fun.  E.g., \n\n```\n%c\nint foo(int a, int b) { return(a*b);}\n```\n\n```\nfoo(2r,3r)\n///\n6\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3365\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: editor_wstein\n\nMichael Schmitz -- a student in Math 480 -- created this code.  It makes it so you can do %c in a notebook cell and write pure C functions.  Very fun.  E.g., \n\n```\n%c\nint foo(int a, int b) { return(a*b);}\n```\n\n```\nfoo(2r,3r)\n///\n6\n```\n\nTO INSTALL:\n\n1. apply the patch\n2. install py_inline:\n\n```\ntar jxvf py_inline-0.03.tar.bz2\ncd py_inline-0.03\nsage -python setup.py install\n```\n    \n\nNOTE: py_inline will be a new spkg.  This needs to get into sage before this ticket can be closed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3365\n\n",
     "created_at": "2008-06-04T18:39:54Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch; needs review] add a %c mode to the notebook (like %fortran)",
+    "title": "[with patch; under review by tclemans before 6/27] add a %c mode to the notebook (like %fortran)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3365",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
+
+Keywords: editor_wstein
 
 Michael Schmitz -- a student in Math 480 -- created this code.  It makes it so you can do %c in a notebook cell and write pure C functions.  Very fun.  E.g., 
 
@@ -30,6 +31,20 @@ foo(2r,3r)
 ///
 6
 ```
+
+TO INSTALL:
+
+1. apply the patch
+2. install py_inline:
+
+```
+tar jxvf py_inline-0.03.tar.bz2
+cd py_inline-0.03
+sage -python setup.py install
+```
+    
+
+NOTE: py_inline will be a new spkg.  This needs to get into sage before this ticket can be closed. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3365
 

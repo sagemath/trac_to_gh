@@ -1,16 +1,16 @@
-# Issue 7980: Move 'Category with concrete representation' code into Sage
+# Issue 7980: Implement generic support for parents with (multiple) realizations
 
 archive/issues_007980.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nThis code currently exists on the sage-combinat queue, in the ncsf patch.  It should be put in a more natural place in the category code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7980\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Cernay2012\n\nThis patch implement generic support for parents with (multiple) realizations\nSee:\n\n```\n    Sets().WithRealizations().example()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7980\n\n",
+    "closed_at": "2012-03-28T10:02:39Z",
     "created_at": "2010-01-18T18:04:02Z",
     "labels": [
-        "component: categories",
-        "bug"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Move 'Category with concrete representation' code into Sage",
+    "title": "Implement generic support for parents with (multiple) realizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7980",
     "user": "https://github.com/jbandlow"
@@ -20,7 +20,15 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-This code currently exists on the sage-combinat queue, in the ncsf patch.  It should be put in a more natural place in the category code.
+Keywords: Cernay2012
+
+This patch implement generic support for parents with (multiple) realizations
+See:
+
+```
+    Sets().WithRealizations().example()
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7980
 

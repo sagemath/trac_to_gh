@@ -3,11 +3,11 @@
 archive/issues_001975.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n\nThey definitely very useful sometimes.  E.g., there is something\ncalled the elliptic curve factorization method that is a brilliant trick\nto factor integers.  You want to factor an integer N so you pretend\nthat it is prime, do a bunch of arithmetic with N, and if something goes\nwrong, the error message gives just the information you need to factor N.\nBut it's important that the error message be an exception that you can\ncatch and that can contain some interesting Python data in it.  Custom\nexceptions work very nicely for that. \n\n(This used to be trivial to implement in Sage, but for some reason\nSage changed and now it is isn't... :-(\n\nsage: E = EllipticCurve(Integers(15),[1,-1])\nsage: P = E.point([1,0,1], check=False)\ngoes boom but didn't used to...\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1975\n\n",
+    "body": "```\n\nThey definitely very useful sometimes.  E.g., there is something\ncalled the elliptic curve factorization method that is a brilliant trick\nto factor integers.  You want to factor an integer N so you pretend\nthat it is prime, do a bunch of arithmetic with N, and if something goes\nwrong, the error message gives just the information you need to factor N.\nBut it's important that the error message be an exception that you can\ncatch and that can contain some interesting Python data in it.  Custom\nexceptions work very nicely for that. \n\n(This used to be trivial to implement in Sage, but for some reason\nSage changed and now it is isn't... :-(\n\nsage: E = EllipticCurve(Integers(15),[1,-1])\nsage: P = E.point([1,0,1], check=False)\ngoes boom but didn't used to...\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1975\n\n",
+    "closed_at": "2010-06-05T21:35:04Z",
     "created_at": "2008-01-30T03:38:42Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "elliptic curve method -- one should trivially be able to implement a toy version, but can't anymore, which sucks",
@@ -16,8 +16,6 @@ archive/issues_001975.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
-
 ```
 
 They definitely very useful sometimes.  E.g., there is something

@@ -1,16 +1,17 @@
-# Issue 1602: latex2html or other problem with html version of Section 2.10.3 "Euler's Method" of tutorial
+# Issue 1602: [probably fixed] latex2html or other problem with html version of Section 2.10.3 "Euler's Method" of tutorial
 
 archive/issues_001602.json:
 ```json
 {
     "body": "Assignee: wdjoyner\n\n```\n\non this page\n\nhttp://www.sagemath.org/doc/html/tut/node24.html\n\nin the table there is what appears to be raw latex rather than\ntypeset material.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1602\n\n",
+    "closed_at": "2008-04-25T16:54:43Z",
     "created_at": "2007-12-27T01:19:06Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "latex2html or other problem with html version of Section 2.10.3 \"Euler's Method\" of tutorial",
+    "title": "[probably fixed] latex2html or other problem with html version of Section 2.10.3 \"Euler's Method\" of tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1602",
     "user": "https://github.com/williamstein"

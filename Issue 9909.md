@@ -3,7 +3,8 @@
 archive/issues_009909.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  fidelbarrera mvngu\n\nThis method computes a longest path in a graph/digraph... This ticket has to be coordinated with #9698.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9910\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  fidelbarrera mvngu\n\nThis method computes a longest path in a graph/digraph... \n\nApply after :\n\n* #9698\n* #10043\n\n**Apply:**\n\n1. [attachment:trac_9910.patch]\n2. [attachment:trac-9910_reviewer.patch]\n3. [attachment:trac_9910-fixing_documentation.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9910\n\n",
+    "closed_at": "2011-01-12T06:33:09Z",
     "created_at": "2010-09-14T19:18:22Z",
     "labels": [
         "component: graph theory"
@@ -19,9 +20,18 @@ Assignee: jason, ncohen, rlm
 
 CC:  fidelbarrera mvngu
 
-This method computes a longest path in a graph/digraph... This ticket has to be coordinated with #9698.
+This method computes a longest path in a graph/digraph... 
 
-Nathann
+Apply after :
+
+* #9698
+* #10043
+
+**Apply:**
+
+1. [attachment:trac_9910.patch]
+2. [attachment:trac-9910_reviewer.patch]
+3. [attachment:trac_9910-fixing_documentation.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9910
 

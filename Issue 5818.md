@@ -3,7 +3,8 @@
 archive/issues_005818.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee #5516 for the motivation for this. It should be something like SAGE_MPIR_CPU and SAGE_MPIR_ABI to pass either a CPU type or an ABI to MPIR. This allows special configs without the need to change the spkg every time one builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5818\n\n",
+    "body": "Assignee: mabshoff\n\nSee #5516 for the motivation for this. It should be something like SAGE_MPIR_CPU and SAGE_MPIR_ABI to pass either a CPU type or an ABI to MPIR. This allows special configs without the need to change the spkg every time one builds.\n\nSee also #6172.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5818\n\n",
+    "closed_at": "2021-12-03T18:41:01Z",
     "created_at": "2009-04-19T01:00:24Z",
     "labels": [
         "component: packages: standard"
@@ -19,9 +20,7 @@ Assignee: mabshoff
 
 See #5516 for the motivation for this. It should be something like SAGE_MPIR_CPU and SAGE_MPIR_ABI to pass either a CPU type or an ABI to MPIR. This allows special configs without the need to change the spkg every time one builds.
 
-Cheers,
-
-Michael
+See also #6172.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5818
 

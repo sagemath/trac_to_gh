@@ -1,22 +1,23 @@
-# Issue 1805: improve doctest coverage for structure/factorization.py
+# Issue 1805: [with patch; Positive review] improve doctest coverage for Factorization; fix several critical bugs
 
 archive/issues_001805.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1805\n\n",
+    "body": "Assignee: @ncalexan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1805\n\n",
+    "closed_at": "2008-03-02T20:34:50Z",
     "created_at": "2008-01-17T19:58:11Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "improve doctest coverage for structure/factorization.py",
+    "title": "[with patch; Positive review] improve doctest coverage for Factorization; fix several critical bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1805",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: @ncalexan
 
 
 

@@ -1,16 +1,17 @@
-# Issue 4375: [with patch, needs review] building reference manual in 3.2.alpha1
+# Issue 4375: [with patch, positive review] building reference manual in 3.2.alpha1
 
 archive/issues_004375.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: reference, documentation\n\nThis patch fixes two small bugs which keep the reference manual from building in 3.2.alpha1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4375\n\n",
+    "closed_at": "2008-10-28T13:09:46Z",
     "created_at": "2008-10-27T22:56:06Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] building reference manual in 3.2.alpha1",
+    "title": "[with patch, positive review] building reference manual in 3.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4375",
     "user": "https://github.com/jhpalmieri"

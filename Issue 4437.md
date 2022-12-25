@@ -1,16 +1,17 @@
-# Issue 4437: Sage 3.2.a2: numerical noise in sage/graphs/graph.py
+# Issue 4437: [with patch, positive review] Sage 3.2.a2: numerical noise in sage/graphs/graph.py
 
 archive/issues_004437.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn an x86:\n\n```\nsage -t  devel/sage/sage/graphs/graph.py                    **********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/graph.py\", line 5802:\n    sage: P.spectrum(laplacian=True)\nExpected:\n    [...e-16, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]\nGot:\n    [4.89153937105e-17, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4437\n\n",
+    "closed_at": "2008-11-05T23:13:27Z",
     "created_at": "2008-11-04T13:53:58Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.a2: numerical noise in sage/graphs/graph.py",
+    "title": "[with patch, positive review] Sage 3.2.a2: numerical noise in sage/graphs/graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4437",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

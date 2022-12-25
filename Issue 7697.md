@@ -4,6 +4,7 @@ archive/issues_007697.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n      sage-4.3.rc0/spkg/standard/gfan-0.3.p4/src/.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7697\n\n",
+    "closed_at": "2010-01-03T22:24:03Z",
     "created_at": "2009-12-16T01:13:31Z",
     "labels": [
         "component: distribution",

@@ -3,10 +3,12 @@
 archive/issues_007650.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @mwhansen @jasongrout\n\n`sage -t sagenb/` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @mwhansen @jasongrout\n\nWe have not been doctesting SageNB files as often as we test Sage files.\n\nPlease apply\n\n* [attachment:trac_7650-scripts_doctest_force_lib_v5.patch] to the scripts repository.  This adds two options to `sage -t`: `-sagenb` tests all SageNB files and `-force_lib` tests files *as if* they live in `SAGE_ROOT/devel/sage`, i.e., in the Sage library.\n\n* [attachment:trac_7650-sagenb_doctesting_v6.patch] **and** [attachment:trac_7650-reviewer_v2.patch] to the sagenb repository.  This fixes broken SageNB tests.\n\nand replace `SAGE_ROOT/makefile` with\n\n* [attachment:makefile].  This makes `make test` and `make ptest` test all SageNB files, too.\n\nDependencies: Sage 4.3.1.alpha1, #7269.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
+    "closed_at": "2010-01-19T02:55:28Z",
     "created_at": "2009-12-10T03:12:15Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
@@ -20,11 +22,19 @@ Assignee: @williamstein
 
 CC:  @williamstein @TimDumol @mwhansen @jasongrout
 
-`sage -t sagenb/` yields several
+We have not been doctesting SageNB files as often as we test Sage files.
 
-```
-A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
-```
+Please apply
+
+* [attachment:trac_7650-scripts_doctest_force_lib_v5.patch] to the scripts repository.  This adds two options to `sage -t`: `-sagenb` tests all SageNB files and `-force_lib` tests files *as if* they live in `SAGE_ROOT/devel/sage`, i.e., in the Sage library.
+
+* [attachment:trac_7650-sagenb_doctesting_v6.patch] **and** [attachment:trac_7650-reviewer_v2.patch] to the sagenb repository.  This fixes broken SageNB tests.
+
+and replace `SAGE_ROOT/makefile` with
+
+* [attachment:makefile].  This makes `make test` and `make ptest` test all SageNB files, too.
+
+Dependencies: Sage 4.3.1.alpha1, #7269.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7650
 

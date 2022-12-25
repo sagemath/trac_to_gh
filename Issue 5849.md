@@ -1,16 +1,18 @@
-# Issue 5849: Update MPIR to 1.1.1
+# Issue 5849: [with spkg, positive review] Update MPIR to 1.1.1
 
 archive/issues_005849.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nMPIR 1.1.1 is about to be released fixing a couple small issues that in rare circumstances can cause trouble, i.e. when a pathscale compiler is installed on x86-64. \n\nWhile we are at it: Make sure to select generic x86-64 code since right now we build code using lahf on sage.math that some early P4s did not have as mentioned on #5284. Use the SAGE_SIMD_FLAG flag to decide what to do.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5849\n\n",
+    "body": "Assignee: mabshoff\n\nMPIR 1.1.1 is about to be released fixing a couple small issues that in rare circumstances can cause trouble, i.e. when a pathscale compiler is installed on x86-64. \n\nWhile we are at it: Make sure to select generic x86-64 code since right now we build code using lahf on sage.math that some early P4s did not have as mentioned on #5284. Use the SAGE_SIMD_MODE flag to decide what to do.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5849\n\n",
+    "closed_at": "2009-05-01T00:41:20Z",
     "created_at": "2009-04-22T03:56:58Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Update MPIR to 1.1.1",
+    "title": "[with spkg, positive review] Update MPIR to 1.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5849",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,7 +22,7 @@ Assignee: mabshoff
 
 MPIR 1.1.1 is about to be released fixing a couple small issues that in rare circumstances can cause trouble, i.e. when a pathscale compiler is installed on x86-64. 
 
-While we are at it: Make sure to select generic x86-64 code since right now we build code using lahf on sage.math that some early P4s did not have as mentioned on #5284. Use the SAGE_SIMD_FLAG flag to decide what to do.
+While we are at it: Make sure to select generic x86-64 code since right now we build code using lahf on sage.math that some early P4s did not have as mentioned on #5284. Use the SAGE_SIMD_MODE flag to decide what to do.
 
 Cheers,
 

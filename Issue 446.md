@@ -3,7 +3,8 @@
 archive/issues_000446.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nGo to any help window, and the worksheet there is completely disabled.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/446\n\n",
+    "body": "Assignee: @williamstein\n\nGo to any help window, and the worksheet there is completely disabled.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/446\n\n",
+    "closed_at": "2007-08-22T06:58:13Z",
     "created_at": "2007-08-18T21:31:44Z",
     "labels": [
         "component: notebook",
@@ -17,7 +18,7 @@ archive/issues_000446.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 Go to any help window, and the worksheet there is completely disabled.
 

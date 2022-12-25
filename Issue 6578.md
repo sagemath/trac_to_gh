@@ -1,16 +1,17 @@
-# Issue 6578: fast subgraphs by building the graph instead of deleting things
+# Issue 6578: [with patch, positive review] fast subgraphs by building the graph instead of deleting things
 
 archive/issues_006578.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nCurrently, to create a subgraph, Sage copies the graph and then deletes everything not specified.  This is very slow if you just want a small part of a large graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6578\n\n",
+    "closed_at": "2009-07-23T05:38:08Z",
     "created_at": "2009-07-21T11:08:27Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "fast subgraphs by building the graph instead of deleting things",
+    "title": "[with patch, positive review] fast subgraphs by building the graph instead of deleting things",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6578",
     "user": "https://github.com/jasongrout"

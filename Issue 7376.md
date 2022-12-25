@@ -4,6 +4,7 @@ archive/issues_007376.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nIt would be really nice if the \"Search\" function in the upper left of the published worksheet listing also searched for the username (e.g., I could search for \"jason3\" and get all of my published worksheets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7376\n\n",
+    "closed_at": "2009-12-09T01:12:02Z",
     "created_at": "2009-11-02T17:59:56Z",
     "labels": [
         "component: notebook",

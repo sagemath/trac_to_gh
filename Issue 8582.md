@@ -4,6 +4,7 @@ archive/issues_008582.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/658b0fe8413b86f8):\n\n```\nBut I want to make a comment, also from this documentation. It says\nsum(1/(1+k^2), k, -oo, oo, algorithm = 'mathematica')     # optional\n-- requires mathematica\n\nOK, I understand that sage do not kown how to evaluate\nsum(1/(1+k^2), k, -oo, oo)\n\nBut it answer     0      , that is wrong!!!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8582\n\n",
+    "closed_at": "2010-12-06T11:56:39Z",
     "created_at": "2010-03-23T04:13:54Z",
     "labels": [
         "component: symbolics",

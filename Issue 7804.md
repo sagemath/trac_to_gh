@@ -1,16 +1,17 @@
-# Issue 7804: Move mipCoin and mipGlpk to Sage
+# Issue 7804: Move mip_coin and mip_glpk to Sage
 
 archive/issues_007804.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  mvngu\n\nHello !!\n\nThis patches moves the files mipCoin and mipGlpk to Sage. They are currently included in the packages CBC and GLPK and are a lot harder to work on because of this.\n\nThis patch copies them in sage/numerical/ and adds several lines to modules_list so that they will only be compiled if the corresponding packages are installed.\n\nFor the moment, the copies of these files included in the packages will not be removed, in order to preserve backward-compatibility : the users of earlier versions of Sage will then be able to keep using the same packages. \n\n*Only the changes to file modules_list need to be reviewed -- mipCoin and mipGLPK are copies of what is included in the spkg and have already been checked ! This should be a short review :-) *\n\nIssue created by migration from https://trac.sagemath.org/ticket/7804\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mvngu\n\nHello !!\n\nThis patches moves the files mip_coin and mip_glpk to Sage. They are currently included in the packages CBC and GLPK and are a lot harder to work on because of this.\n\nThis patch copies them in sage/numerical/ and adds several lines to modules_list so that they will only be compiled if the corresponding packages are installed.\n\nFor the moment, the copies of these files included in the packages will not be removed, in order to preserve backward-compatibility : the users of earlier versions of Sage will then be able to keep using the same packages. \n\n*Only the changes to file modules_list need to be reviewed -- mip_coin and mip_glpk are copies of what is included in the spkg and have already been checked ! This should be a short review :-) *\n\nIssue created by migration from https://trac.sagemath.org/ticket/7804\n\n",
+    "closed_at": "2010-01-13T11:37:45Z",
     "created_at": "2010-01-01T13:36:52Z",
     "labels": [
-        "component: algebra",
+        "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Move mipCoin and mipGlpk to Sage",
+    "title": "Move mip_coin and mip_glpk to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7804",
     "user": "https://github.com/nathanncohen"
@@ -22,13 +23,13 @@ CC:  mvngu
 
 Hello !!
 
-This patches moves the files mipCoin and mipGlpk to Sage. They are currently included in the packages CBC and GLPK and are a lot harder to work on because of this.
+This patches moves the files mip_coin and mip_glpk to Sage. They are currently included in the packages CBC and GLPK and are a lot harder to work on because of this.
 
 This patch copies them in sage/numerical/ and adds several lines to modules_list so that they will only be compiled if the corresponding packages are installed.
 
 For the moment, the copies of these files included in the packages will not be removed, in order to preserve backward-compatibility : the users of earlier versions of Sage will then be able to keep using the same packages. 
 
-*Only the changes to file modules_list need to be reviewed -- mipCoin and mipGLPK are copies of what is included in the spkg and have already been checked ! This should be a short review :-) *
+*Only the changes to file modules_list need to be reviewed -- mip_coin and mip_glpk are copies of what is included in the spkg and have already been checked ! This should be a short review :-) *
 
 Issue created by migration from https://trac.sagemath.org/ticket/7804
 

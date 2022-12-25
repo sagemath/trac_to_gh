@@ -1,16 +1,17 @@
-# Issue 9768: Coercon problems to symbolic ring
+# Issue 9768: symbolic function do not work with numpy.int64 arguments
 
 archive/issues_009768.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThere seems to be some problems with the coercion of some datatypes to the symbolic ring:\n\nsage: cos(MatrixSpace(ZZ, 2)([1, 2, -4, 7]))\n\n---\nTypeError                                 Traceback (most recent call last)\n.......\nTypeError: cannot coerce arguments: no canonical coercion from Full MatrixSpace of 2 by 2 dense matrices over Integer Ring to Symbolic Ring\n\nsage: import numpy\nsage: vec = numpy.array([1,2])\nsage: sin(vec)\narray([ 0.84147098,  0.90929743])\nsage: sin(vec[0])\n\n---\nTypeError                                 Traceback (most recent call last)\n....\nTypeError: cannot coerce arguments: no canonical coercion from <type 'numpy.int64'> to Symbolic Ring\n\n---\n\nsage: x = PolynomialRing(QQ, 'x').gen()\nsage: sin(x)\nsin(x)\nsage: x = PolynomialRing(RR, 'x').gen()\nsage: sin(x)\n\n---\nTypeError                                 Traceback (most recent call last)\n.....\nTypeError: cannot coerce arguments: __call__() takes exactly 1 positional argument (0 given)\nsage: x = PolynomialRing(CC, 'x').gen()\nsage: sin(x)\nsin(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9769\n\n",
+    "body": "Assignee: @burcin\n\nThere seems to be some problems with the coercion of some datatypes to the symbolic ring:\n\n\n```\nsage: cos(MatrixSpace(ZZ, 2)([1, 2, -4, 7]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n.......\nTypeError: cannot coerce arguments: no canonical coercion from Full MatrixSpace of 2 by 2 dense matrices over Integer Ring to Symbolic Ring\n\nsage: import numpy\nsage: vec = numpy.array([1,2])\nsage: sin(vec)\narray([ 0.84147098,  0.90929743])\nsage: sin(vec[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n....\nTypeError: cannot coerce arguments: no canonical coercion from <type 'numpy.int64'> to Symbolic Ring\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9769\n\n",
+    "closed_at": "2015-04-23T14:51:46Z",
     "created_at": "2010-08-19T23:47:28Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Coercon problems to symbolic ring",
+    "title": "symbolic function do not work with numpy.int64 arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9768",
     "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
@@ -20,9 +21,10 @@ Assignee: @burcin
 
 There seems to be some problems with the coercion of some datatypes to the symbolic ring:
 
-sage: cos(MatrixSpace(ZZ, 2)([1, 2, -4, 7]))
 
----
+```
+sage: cos(MatrixSpace(ZZ, 2)([1, 2, -4, 7]))
+---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 .......
 TypeError: cannot coerce arguments: no canonical coercion from Full MatrixSpace of 2 by 2 dense matrices over Integer Ring to Symbolic Ring
@@ -32,27 +34,11 @@ sage: vec = numpy.array([1,2])
 sage: sin(vec)
 array([ 0.84147098,  0.90929743])
 sage: sin(vec[0])
-
----
+---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 ....
 TypeError: cannot coerce arguments: no canonical coercion from <type 'numpy.int64'> to Symbolic Ring
 
----
-
-sage: x = PolynomialRing(QQ, 'x').gen()
-sage: sin(x)
-sin(x)
-sage: x = PolynomialRing(RR, 'x').gen()
-sage: sin(x)
-
----
-TypeError                                 Traceback (most recent call last)
-.....
-TypeError: cannot coerce arguments: __call__() takes exactly 1 positional argument (0 given)
-sage: x = PolynomialRing(CC, 'x').gen()
-sage: sin(x)
-sin(x)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9769
 

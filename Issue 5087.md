@@ -1,9 +1,10 @@
-# Issue 5087: purge "cannonical" typos
+# Issue 5087: [with patch, positive review] purge "cannonical" typos
 
 archive/issues_005087.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @mwhansen\n\nThere are about 20 instances of \"cannonical\" instead of \"canonical\" in various places in the Sage library (including an error message).  Trivial patch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5087\n\n",
+    "closed_at": "2009-01-24T13:18:35Z",
     "created_at": "2009-01-24T07:53:51Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005087.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "purge \"cannonical\" typos",
+    "title": "[with patch, positive review] purge \"cannonical\" typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5087",
     "user": "https://github.com/aghitza"

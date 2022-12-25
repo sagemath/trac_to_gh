@@ -1,22 +1,23 @@
-# Issue 5630: improve doctest coverage for schemes/generic/spec.py
+# Issue 5630: [with patch, positive review] improve doctest coverage for schemes/generic/spec.py
 
 archive/issues_005630.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: spec doctest latex\n\nThe attached patch adds a `_latex_()` method for Spec's of rings and improves the doctest coverage of `spec.py` from 42% (3 of 7) to 75% (6 of 8).\n\nThe two remaining methods are currently involved in other tickets that will also take care of adding doctests: see #5629 for `dimension()` and #5479 for `__call__()`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5630\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: spec doctest latex\n\nThe attached patch adds a `_latex_()` method for Spec's of rings and improves the doctest coverage of `spec.py` from 42% (3 of 7) to 75% (6 of 8).\n\nThe two remaining methods are currently involved in other tickets that will also take care of adding doctests: see #5629 for `dimension()` and #5479 for `__call__()`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5630\n\n",
+    "closed_at": "2009-03-31T06:41:31Z",
     "created_at": "2009-03-29T04:55:42Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "improve doctest coverage for schemes/generic/spec.py",
+    "title": "[with patch, positive review] improve doctest coverage for schemes/generic/spec.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5630",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 Keywords: spec doctest latex
 

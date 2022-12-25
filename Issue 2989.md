@@ -4,6 +4,7 @@ archive/issues_002989.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI made very minor harmless change to how the notebook twisted daemon is started, which makes it more robust.   Also, it was completely broken on my system until I made this change.  This is probably related to us updating to a new version of twistd.\n\nThe change is just to cd into the notebook directory before starting the tracd server.  That's it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2989\n\n",
+    "closed_at": "2008-04-22T04:57:59Z",
     "created_at": "2008-04-21T14:41:26Z",
     "labels": [
         "component: notebook",

@@ -1,15 +1,16 @@
-# Issue 7194: extended singular functions interface, needs work
+# Issue 7194: extended singular functions interface
 
 archive/issues_007194.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb @burcin hannes@mathematik.uni-kl.de\n\nKeywords: singular\n\nwrapped list, use intvec as input, wrapped ring (RingWrap for return)...\nThis can wrap a lot more of Singular functions now.\n\nThis needs the header file lists.h, which is not installed by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7194\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb @burcin hannes@mathematik.uni-kl.de\n\nKeywords: singular\n\nwrapped list, use intvec as input, wrapped ring (RingWrap for return)...\nThis can wrap a lot more of Singular functions now.\n\nThis needs the header file lists.h, which is not installed by default.\n\nDepends on #6909.\nAfter getting a new singular spkg, which includes the header, I consider this patch ready for review.\n\nCheers,\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/7194\n\n",
+    "closed_at": "2009-12-02T11:39:21Z",
     "created_at": "2009-10-12T12:23:23Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "extended singular functions interface, needs work",
+    "title": "extended singular functions interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7194",
     "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
@@ -25,6 +26,12 @@ wrapped list, use intvec as input, wrapped ring (RingWrap for return)...
 This can wrap a lot more of Singular functions now.
 
 This needs the header file lists.h, which is not installed by default.
+
+Depends on #6909.
+After getting a new singular spkg, which includes the header, I consider this patch ready for review.
+
+Cheers,
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/7194
 

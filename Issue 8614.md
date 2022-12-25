@@ -3,7 +3,8 @@
 archive/issues_008614.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  alexghitza\n\n* The attached patch speeds up a creating ModularSymbols spaces a bunch by removing a bottleneck -- quotienting by 2-term relations -- by moving it to Cython. \n\n* Also the coverage for the modsym directory is improved to 100% by adding one trivial missing doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8614\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  alexghitza\n\n* The attached patch speeds up a creating ModularSymbols spaces a bunch by removing a bottleneck -- quotienting by 2-term relations -- by moving it to Cython. \n\n* Also the coverage for the modular/modsym directory is improved to 100% by adding one trivial missing doctest. \n\n* Likewise, the coverage for the modular/modform directory is improved to 100% by adding another trivial doctest.\n\n**Depends on:**\n1. #10709\n\n**Apply:**\n1. [attachment:trac-8614-optimize-modular-symbol-relations-rebase.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8614\n\n",
+    "closed_at": "2011-04-13T07:42:29Z",
     "created_at": "2010-03-27T03:29:42Z",
     "labels": [
         "component: modular forms"
@@ -21,7 +22,15 @@ CC:  alexghitza
 
 * The attached patch speeds up a creating ModularSymbols spaces a bunch by removing a bottleneck -- quotienting by 2-term relations -- by moving it to Cython. 
 
-* Also the coverage for the modsym directory is improved to 100% by adding one trivial missing doctest.
+* Also the coverage for the modular/modsym directory is improved to 100% by adding one trivial missing doctest. 
+
+* Likewise, the coverage for the modular/modform directory is improved to 100% by adding another trivial doctest.
+
+**Depends on:**
+1. #10709
+
+**Apply:**
+1. [attachment:trac-8614-optimize-modular-symbol-relations-rebase.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8614
 

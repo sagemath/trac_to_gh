@@ -1,21 +1,22 @@
-# Issue 1296: Fast permutation arithmatic
+# Issue 1296: [with patch] Fast permutation arithmatic
 
 archive/issues_001296.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nWhile patching CubeGroup, I noticed that permutation group arithmetic is was extremely slow (every operation passed through the GAP interface for instance). \n\nIt makes sense to re-implement these simple operations in a fast Cython class. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1296\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nWhile patching CubeGroup, I noticed that permutation group arithmetic is was extremely slow (every operation passed through the GAP interface for instance). \n\nIt makes sense to re-implement these simple operations in a fast Cython class. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1296\n\n",
+    "closed_at": "2007-12-14T06:58:06Z",
     "created_at": "2007-11-28T05:44:18Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Fast permutation arithmatic",
+    "title": "[with patch] Fast permutation arithmatic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1296",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @mwhansen
+Assignee: @robertwb
 
 CC:  sage-combinat
 

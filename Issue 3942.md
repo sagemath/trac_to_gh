@@ -1,16 +1,17 @@
-# Issue 3942: Sage interfaces vs. pyprocessing
+# Issue 3942: [with patch, positive review] Sage interfaces vs. pyprocessing
 
 archive/issues_003942.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  cwitty\n\nWhen using pyprocessing, if you use an interface to some external function, such as GAP, sometimes the separate subprocesses will collide, since they all share the same temporary file.\n\nA temporary fix (due to cwitty) was to add\n\n`sage.interfaces.expect.tmp_expect_interface_local = '/tmp/interface' + str(os.getpid())`\n\nto the beginning of the function succeeding the ``@`parallel` decorator. This way, the temp files are separate. This should probably be part of the `parallel` function itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3942\n\n",
+    "closed_at": "2008-08-25T03:52:14Z",
     "created_at": "2008-08-24T05:16:36Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Sage interfaces vs. pyprocessing",
+    "title": "[with patch, positive review] Sage interfaces vs. pyprocessing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3942",
     "user": "https://github.com/rlmill"

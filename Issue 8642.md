@@ -4,6 +4,7 @@ archive/issues_008642.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: notebook, cygwin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8642\n\n",
+    "closed_at": "2010-04-29T05:03:27Z",
     "created_at": "2010-04-02T05:40:42Z",
     "labels": [
         "component: porting: cygwin",

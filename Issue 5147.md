@@ -1,16 +1,17 @@
-# Issue 5147: make plot output file in DOCTEST_MODE changeable for sage-mode.el
+# Issue 5147: [with patch, positive review] make plot output file in DOCTEST_MODE changeable for sage-mode.el
 
 archive/issues_005147.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: doctest plot output filename\n\nWhilst incorporating sage-view.el into sage-mode.el, I needed to be able to change the output filename while in DOCTEST_MODE.  This tiny patches adds a module scope variable name with the output file name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5147\n\n",
+    "closed_at": "2009-02-02T02:57:51Z",
     "created_at": "2009-02-01T02:42:56Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "make plot output file in DOCTEST_MODE changeable for sage-mode.el",
+    "title": "[with patch, positive review] make plot output file in DOCTEST_MODE changeable for sage-mode.el",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5147",
     "user": "https://github.com/ncalexan"

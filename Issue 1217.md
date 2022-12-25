@@ -1,22 +1,23 @@
-# Issue 1217: libfplll error codes - leftover from #1188
+# Issue 1217: [with patch, positive review] libfplll error codes - leftover from #1188
 
 archive/issues_001217.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
+    "body": "Assignee: @wjp\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
+    "closed_at": "2008-01-21T05:34:56Z",
     "created_at": "2007-11-20T15:54:11Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "libfplll error codes - leftover from #1188",
+    "title": "[with patch, positive review] libfplll error codes - leftover from #1188",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1217",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @malb
+Assignee: @wjp
 
 On IRC:
 

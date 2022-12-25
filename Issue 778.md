@@ -1,16 +1,17 @@
-# Issue 778: Finite Field __call__ doesn't accept polynomials over F_p
+# Issue 778: [with patch, positive review] Finite Field __call__ doesn't accept polynomials over F_p
 
 archive/issues_000778.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  alexghitza\n\nKeywords: finite fields\n\nNeither Givaro nor pari finite fields accept polynomial arguments.\n\nIssue created by migration from https://trac.sagemath.org/ticket/778\n\n",
+    "closed_at": "2008-04-04T22:29:41Z",
     "created_at": "2007-10-02T01:42:34Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Finite Field __call__ doesn't accept polynomials over F_p",
+    "title": "[with patch, positive review] Finite Field __call__ doesn't accept polynomials over F_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/778",
     "user": "https://github.com/roed314"

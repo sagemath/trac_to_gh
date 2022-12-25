@@ -1,15 +1,16 @@
-# Issue 6185: [with patch, needs review] Add SBox -> CNF Conversion
+# Issue 6185: [with patch, positive review] Add SBox -> CNF Conversion
 
 archive/issues_006185.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  mvngu rpw @burcin\n\nKeywords: crypto, cnf\n\nWhile not really complicated it is nice to have a direct conversion from S-Boxes to CNF since SAT-solves enjoy some attention right now in crypto.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6185\n\n",
+    "closed_at": "2009-06-13T20:43:33Z",
     "created_at": "2009-06-02T13:56:38Z",
     "labels": [
         "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Add SBox -> CNF Conversion",
+    "title": "[with patch, positive review] Add SBox -> CNF Conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6185",
     "user": "https://github.com/malb"

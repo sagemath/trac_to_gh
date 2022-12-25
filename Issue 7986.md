@@ -4,6 +4,7 @@ archive/issues_007986.json:
 ```json
 {
     "body": "Assignee: @TimDumol\n\nCC:  boothby @kcrisman @jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7986\n\n",
+    "closed_at": "2020-03-30T06:23:30Z",
     "created_at": "2010-01-19T01:35:20Z",
     "labels": [
         "component: notebook",

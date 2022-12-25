@@ -3,7 +3,8 @@
 archive/issues_008520.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional gap_packages-4.4.12_2 ==\n\n```\ngap_packages-4.4.12_2/SPKG.txt\ngap_packages-4.4.12_2/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.010s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing gap_packages-4.4.12_2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8520\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional gap_packages-4.4.12_2 ==\n\n```\ngap_packages-4.4.12_2/SPKG.txt\ngap_packages-4.4.12_2/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.010s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing gap_packages-4.4.12_2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8520\n\n",
+    "closed_at": "2010-04-20T22:52:25Z",
     "created_at": "2010-03-13T14:19:37Z",
     "labels": [
         "component: packages: optional",
@@ -16,7 +17,7 @@ archive/issues_008520.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  @dimpase
 

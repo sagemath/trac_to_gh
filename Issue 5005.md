@@ -1,16 +1,17 @@
-# Issue 5005: polynomial_template __init__ from list horribly innefficient
+# Issue 5005: polynomial_template __init__ from list horribly inefficient
 
 archive/issues_005005.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n            for e in x:\n                # r += parent(e)*power\n                celement_pow(&monomial, &gen, deg, NULL, parent)\n                coeff = (<Polynomial_template>parent(e)).x\n                celement_mul(&monomial, &coeff, &monomial, parent)\n                celement_add(&self.x, &self.x, &monomial, parent)\n                deg += 1\n```\n\nThere should be a celement_set(self, x, i). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5005\n\n",
+    "closed_at": "2010-01-17T09:45:30Z",
     "created_at": "2009-01-17T23:58:30Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "polynomial_template __init__ from list horribly innefficient",
+    "title": "polynomial_template __init__ from list horribly inefficient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5005",
     "user": "https://github.com/robertwb"

@@ -1,22 +1,23 @@
-# Issue 4895: bug in pattern avoiding permutations
+# Issue 4895: [with patch; positive review] bug in pattern avoiding permutations
 
 archive/issues_004895.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: pattern avoiding permutations\n\nThe following behavior is clearly bad:\n\n```\nsage: [p for p in Permutations(4,avoiding=[2,3,1]) if p.has_pattern([2,3,1])]               \n[[2, 3, 1, 4], [4, 2, 3, 1]]\n```\n\nSimilar behavior occurs when avoiding [1,3,2], [2,1,3], and [3,1,2].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4895\n\n",
+    "body": "Assignee: @jbandlow\n\nCC:  @jbandlow sage-combinat\n\nKeywords: pattern avoiding permutations\n\nThe following behavior is clearly bad:\n\n```\nsage: [p for p in Permutations(4,avoiding=[2,3,1]) if p.has_pattern([2,3,1])]               \n[[2, 3, 1, 4], [4, 2, 3, 1]]\n```\n\nSimilar behavior occurs when avoiding [1,3,2], [2,1,3], and [3,1,2].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4895\n\n",
+    "closed_at": "2009-01-25T02:20:55Z",
     "created_at": "2008-12-31T01:54:19Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bug in pattern avoiding permutations",
+    "title": "[with patch; positive review] bug in pattern avoiding permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4895",
     "user": "https://github.com/jbandlow"
 }
 ```
-Assignee: @mwhansen
+Assignee: @jbandlow
 
 CC:  @jbandlow sage-combinat
 

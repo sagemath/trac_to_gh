@@ -1,16 +1,17 @@
-# Issue 5638: [with patch, needs review] deprecate jsmath from the command line
+# Issue 5638: [with patch, positive review] deprecate jsmath from the command line
 
 archive/issues_005638.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nFrom the command line, jsmath is kind of broken and is also superfluous: `jsmath('blah', mode='inline')` is basically equivalent to `html('$blah$')`, and similarly if mode='display': just use '$$blah$$'.  This patch removes jsmath from import into the global name space at the command line, rewrites the code to make it just call html, and adds a deprecation warning.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5638\n\n",
+    "closed_at": "2009-03-31T08:32:07Z",
     "created_at": "2009-03-30T01:02:42Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] deprecate jsmath from the command line",
+    "title": "[with patch, positive review] deprecate jsmath from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5638",
     "user": "https://github.com/jhpalmieri"

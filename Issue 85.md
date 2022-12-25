@@ -1,15 +1,16 @@
-# Issue 85: p-adic coercion incorrect for negative numbers
+# Issue 85: incorrect p-adic arithmetic for negative numbers with infinite precision
 
 archive/issues_000085.json:
 ```json
 {
     "body": "Assignee: dmharvey\n\n```\nsage: pAdicField(5, 3)(-1)\n 4 + 4*5 + 4*5^2 + O(5^Infinity)\n```\n\nI know where the bug is.... it's all my fault....\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/85\n\n",
+    "closed_at": "2006-10-10T23:57:26Z",
     "created_at": "2006-09-26T19:23:17Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
-    "title": "p-adic coercion incorrect for negative numbers",
+    "title": "incorrect p-adic arithmetic for negative numbers with infinite precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/85",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

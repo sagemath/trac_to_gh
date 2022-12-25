@@ -1,21 +1,22 @@
-# Issue 1401: deprecate A[n] for n a matrix (easy to implement usability improvement)
+# Issue 1401: [with patch, positive review that is a patch itself] deprecate A[n] for n a matrix (easy to implement usability improvement)
 
 archive/issues_001401.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\nInstead Sage should do this:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
+    "body": "Assignee: @mwhansen\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\nInstead Sage should do this:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
+    "closed_at": "2007-12-15T13:32:06Z",
     "created_at": "2007-12-04T23:57:36Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "deprecate A[n] for n a matrix (easy to implement usability improvement)",
+    "title": "[with patch, positive review that is a patch itself] deprecate A[n] for n a matrix (easy to implement usability improvement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1401",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Sage currently works this way:
 

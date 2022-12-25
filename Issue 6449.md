@@ -3,7 +3,8 @@
 archive/issues_006449.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @jhpalmieri @mwhansen\n\nThis is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.\n\nThis relies on all of the patches at #5882.\n\nThe new functionality:\n\n- A new class for additive abelian groups. This is very similar to the finitely presented modules class, but with a slightly different print representation. This is mostly finished (although the string representation of morphisms needs a little work).\n\n- A class for \"additive abelian groups embedded in an arbitrary parent\". Think rational points on an elliptic curve, for instance, which should be able to derive from this class and transparently inherit code for things like morphisms and subgroups. This is a lot less complete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6449\n\n",
+    "body": "Assignee: joyner\n\nCC:  @jhpalmieri @mwhansen\n\nKeywords: abelian group\n\nThis is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.\n\nThis relies on all of the patches at #5882.\n\nThe new functionality:\n\n- A new class for additive abelian groups. This is very similar to the finitely presented modules class, but with a slightly different print representation. This is mostly finished (although the string representation of morphisms needs a little work).\n\n- A class for \"additive abelian groups embedded in an arbitrary parent\". Think rational points on an elliptic curve, for instance, which should be able to derive from this class and transparently inherit code for things like morphisms and subgroups. This is a lot less complete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6449\n\n",
+    "closed_at": "2010-07-20T07:09:01Z",
     "created_at": "2009-06-30T12:10:53Z",
     "labels": [
         "component: group theory",
@@ -19,6 +20,8 @@ archive/issues_006449.json:
 Assignee: joyner
 
 CC:  @jhpalmieri @mwhansen
+
+Keywords: abelian group
 
 This is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.
 

@@ -1,15 +1,15 @@
-# Issue 9193: Proveable computation of L-functions
+# Issue 9193: Provable computation of L-functions (Dokchitser procedure)
 
 archive/issues_009193.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rishikesha @jbalakrishnan\n\nThis is related to #4475.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9193\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rishikesha @jbalakrishnan\n\nThis is related to #4475.\n\nSee also this psage ticket:\u00a0http://code.google.com/p/purplesage/issues/detail?id=14\n\nIssue created by migration from https://trac.sagemath.org/ticket/9193\n\n",
     "created_at": "2010-06-09T05:42:19Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Proveable computation of L-functions",
+    "title": "Provable computation of L-functions (Dokchitser procedure)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9193",
     "user": "https://github.com/robertwb"
@@ -20,6 +20,8 @@ Assignee: @williamstein
 CC:  @rishikesha @jbalakrishnan
 
 This is related to #4475.
+
+See also this psage ticket: http://code.google.com/p/purplesage/issues/detail?id=14
 
 Issue created by migration from https://trac.sagemath.org/ticket/9193
 

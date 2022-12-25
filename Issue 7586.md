@@ -1,16 +1,16 @@
-# Issue 7586: develoers' guide: document features of attach, load, iload, ed, %ed, %edit, edit()
+# Issue 7586: developers' guide: document features of attach, load, iload, ed, %ed, %edit, edit()
 
 archive/issues_007586.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c0543314ff9c15cb) thread:\n\n```\nBy the way, I discovered accidentally that from the command line (not\nthe notebook) if you type:\n\nsage: ed   # or %ed or %edit\n\nthen it opens up your favorite editor (whatever is set by the $EDITOR\nshell variable).  Then in the editor you can type\n\ndef FF(x):\n    long definition here\n    which would be really annoying\n    to type on the command line\n\nthen save it -- it gets written to a temporary file -- and the code\ngets executed and you have thus redefined FF.  Then later you can do\n\nsage: ed FF\n\nand it will let you modify your code.  This is an ipython feature, it\nseems.  Should it be described somewhere in the Sage documentation?\n```\nThe following commands should at least be documented in the Developers' Guide together with explanation on how to use them for interactive development:\n\n1. `load`\n2. `attach`\n3. `iload`\n4. `ed`\n5. `%ed`\n6. `%edit`\n7. `edit()`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7586\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c0543314ff9c15cb) thread:\n\n```\nBy the way, I discovered accidentally that from the command line (not\nthe notebook) if you type:\n\nsage: ed   # or %ed or %edit\n\nthen it opens up your favorite editor (whatever is set by the $EDITOR\nshell variable).  Then in the editor you can type\n\ndef FF(x):\n    long definition here\n    which would be really annoying\n    to type on the command line\n\nthen save it -- it gets written to a temporary file -- and the code\ngets executed and you have thus redefined FF.  Then later you can do\n\nsage: ed FF\n\nand it will let you modify your code.  This is an ipython feature, it\nseems.  Should it be described somewhere in the Sage documentation?\n```\nThe following commands should at least be documented in the Developers' Guide together with explanation on how to use them for interactive development:\n\n1. `load` --- see `sage.misc.interpreter`\n2. `attach --- see `sage.misc.interpreter``\n3. `iload` --- see `sage.misc.interpreter`\n4. `ed`\n5. `%ed`\n6. `%edit` --- see the [IPython manual](http://ipython.scipy.org/doc/manual/html/config/editors.html)\n7. `edit()` --- see `sage.misc.edit_module.edit`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7586\n\n",
     "created_at": "2009-12-02T20:33:17Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "develoers' guide: document features of attach, load, iload, ed, %ed, %edit, edit()",
+    "title": "developers' guide: document features of attach, load, iload, ed, %ed, %edit, edit()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7586",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -46,13 +46,13 @@ seems.  Should it be described somewhere in the Sage documentation?
 ```
 The following commands should at least be documented in the Developers' Guide together with explanation on how to use them for interactive development:
 
-1. `load`
-2. `attach`
-3. `iload`
+1. `load` --- see `sage.misc.interpreter`
+2. `attach --- see `sage.misc.interpreter``
+3. `iload` --- see `sage.misc.interpreter`
 4. `ed`
 5. `%ed`
-6. `%edit`
-7. `edit()`
+6. `%edit` --- see the [IPython manual](http://ipython.scipy.org/doc/manual/html/config/editors.html)
+7. `edit()` --- see `sage.misc.edit_module.edit`
 
 Issue created by migration from https://trac.sagemath.org/ticket/7586
 

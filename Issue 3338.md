@@ -4,6 +4,7 @@ archive/issues_003338.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  alexghitza mhampton\n\nThe gfan sources in SAGE are not quite the upstream sources:\n\n[tabbott`@`debuild export$] diff -ur tmp/gfan0.3 tmp/gfan-0.3/ | diffstat\n gfan-0.3//.DS_Store         |only\n gfan-0.3//Makefile.orig03   |only\n gfan-0.3//Makefile2.2       |only\n gfan-0.3//Makefile2.2anders |only\n gfan-0.3//SAGE.txt          |only\n gfan-0.3//debian            |only\n gfan-0.3//oldsageMakefile   |only\n gfan-0.3/Makefile           |   55 ++++++++++++++------------------------------\n gfan0.3/doc                 |only\n gfan0.3/examples            |only\n gfan0.3/homepage            |only\n 11 files changed, 18 insertions(+), 37 deletions(-)\n\nI actually think that the SAGE changes may be mostly unecessary; the changes to the install target don't seem to be used, and the other changes aside from the removal of app_construction.o seem like they could be implemented via\n\nmake ADDTIONALINCLUDEOPTIONS=-I$(SAGE_LOCAL)/include ADDITIONALLINKOPTIONS=-lcddgmp -lgmp\n\nIf we can figure out how to fig the compilation problems related to app_construction.o (I don't see this problem on Debian with gfan 0.3), then we can stop modifying gfan at all.  But having a makefile patch isn't a big deal either.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3338\n\n",
+    "closed_at": "2010-01-25T14:15:40Z",
     "created_at": "2008-05-30T17:32:39Z",
     "labels": [
         "component: packages: standard",

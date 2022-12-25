@@ -1,9 +1,10 @@
-# Issue 4478: delete spkg-debian-maybe
+# Issue 4478: [with patch, positive review] delete spkg-debian-maybe
 
 archive/issues_004478.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nHow can this file be serious?\n\n```\nwstein@one:~/devel/sage$ more spkg-debian-maybe\n#!/bin/sh -x\nBUILD_ROOT=../../../\nmv dist/debian $BUILD_ROOT\ncd $BUILD_ROOT/..\necho \"Starting Debian build\"\ndasource ./sage-2.10.1\nsbuildhack \"$DEBIAN_RELEASE\" *.dsc\necho \"Debian Build complete\"\n```\n\nSee for example the \"sage-2.10.1\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/4478\n\n",
+    "body": "Assignee: @craigcitro\n\nHow can this file be serious?\n\n```\nwstein@one:~/devel/sage$ more spkg-debian-maybe\n#!/bin/sh -x\nBUILD_ROOT=../../../\nmv dist/debian $BUILD_ROOT\ncd $BUILD_ROOT/..\necho \"Starting Debian build\"\ndasource ./sage-2.10.1\nsbuildhack \"$DEBIAN_RELEASE\" *.dsc\necho \"Debian Build complete\"\n```\n\nSee for example the \"sage-2.10.1\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/4478\n\n",
+    "closed_at": "2009-05-28T20:07:54Z",
     "created_at": "2008-11-09T08:13:11Z",
     "labels": [
         "component: debian-package",
@@ -11,13 +12,13 @@ archive/issues_004478.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "delete spkg-debian-maybe",
+    "title": "[with patch, positive review] delete spkg-debian-maybe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4478",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @timabbott
+Assignee: @craigcitro
 
 How can this file be serious?
 

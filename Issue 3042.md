@@ -1,16 +1,17 @@
-# Issue 3042: [with patch; do not review yet] cyclolinalg -- make a new type for cyclotomic linear algebra
+# Issue 3042: [with patch; positive review] cyclolinalg -- make a new type for cyclotomic linear algebra
 
 archive/issues_003042.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3042\n\n",
+    "closed_at": "2008-06-08T22:26:31Z",
     "created_at": "2008-04-27T06:59:53Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; do not review yet] cyclolinalg -- make a new type for cyclotomic linear algebra",
+    "title": "[with patch; positive review] cyclolinalg -- make a new type for cyclotomic linear algebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3042",
     "user": "https://github.com/williamstein"

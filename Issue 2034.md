@@ -1,24 +1,35 @@
-# Issue 2034: {{{__floordiv__}}} should be part of coercion modell
+# Issue 2034: __floordiv__ should be part of coercion model
 
 archive/issues_002034.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nbut it isn't\n\nIssue created by migration from https://trac.sagemath.org/ticket/2034\n\n",
+    "body": "Assignee: @robertwb\n\nAdd `__floordiv__` to the coercion model for `RingElement` and change `__floordiv__` to `_floordiv_` where applicable.\n\nThis does not change any semantics of floor division, but it does fix floor division in a few cases where coercion is involved. It also fixes various segmentation faults like\n\n```\nsage: R.<x> = QQbar[]\nsage: int(1) // x\n...\n```\n\nFinally, we also implement `__itruediv__`, which was forgotten when adding `__truediv__`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2034\n\n",
+    "closed_at": "2016-01-23T20:42:41Z",
     "created_at": "2008-02-02T13:52:56Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
-    "title": "{{{__floordiv__}}} should be part of coercion modell",
+    "title": "__floordiv__ should be part of coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2034",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
-but it isn't
+Add `__floordiv__` to the coercion model for `RingElement` and change `__floordiv__` to `_floordiv_` where applicable.
+
+This does not change any semantics of floor division, but it does fix floor division in a few cases where coercion is involved. It also fixes various segmentation faults like
+
+```
+sage: R.<x> = QQbar[]
+sage: int(1) // x
+...
+```
+
+Finally, we also implement `__itruediv__`, which was forgotten when adding `__truediv__`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2034
 

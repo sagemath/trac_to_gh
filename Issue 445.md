@@ -4,6 +4,7 @@ archive/issues_000445.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n1. Start a hard calc in magma, e.g., ask if polynomial is irreducible.\n2. interrupt in notebook.\n3. OK get sage back, but magma is not really interupted!  it's still running.\n\nThis is BAD.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/445\n\n",
+    "closed_at": "2007-09-20T18:19:57Z",
     "created_at": "2007-08-18T21:09:45Z",
     "labels": [
         "component: interfaces",

@@ -1,22 +1,23 @@
-# Issue 4099: Fix documentation for point2d, line2d, ...
+# Issue 4099: [with patch, positive review] Fix documentation for point2d, line2d, ...
 
 archive/issues_004099.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSince #3853, the documentation for the *2d functions in plot/plot.py is outdated.  \n\nIt refers to things like point.options and line.reset which are gone and produce errors when you try to access them.\n\nIf I had the time I would do a patch for this, but I am currently swamped with other work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4099\n\n",
+    "body": "Assignee: @jicama\n\nSince #3853, the documentation for the *2d functions in plot/plot.py is outdated.  \n\nIt refers to things like point.options and line.reset which are gone and produce errors when you try to access them.\n\nIf I had the time I would do a patch for this, but I am currently swamped with other work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4099\n\n",
+    "closed_at": "2008-09-19T03:19:32Z",
     "created_at": "2008-09-11T02:41:34Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Fix documentation for point2d, line2d, ...",
+    "title": "[with patch, positive review] Fix documentation for point2d, line2d, ...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4099",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
-Assignee: tba
+Assignee: @jicama
 
 Since #3853, the documentation for the *2d functions in plot/plot.py is outdated.  
 

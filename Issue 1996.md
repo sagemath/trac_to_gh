@@ -1,16 +1,17 @@
-# Issue 1996: [with patch, needs review] doctest failure on 2.10.1.rc3: libecm.pyx
+# Issue 1996: [with patch, with positive review] doctest failure on 2.10.1.rc3: libecm.pyx
 
 archive/issues_001996.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere's an incorrect doctest in sage/interfaces/libecm.pyx. The attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1996\n\n",
+    "closed_at": "2008-01-31T04:49:51Z",
     "created_at": "2008-01-31T04:44:52Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] doctest failure on 2.10.1.rc3: libecm.pyx",
+    "title": "[with patch, with positive review] doctest failure on 2.10.1.rc3: libecm.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1996",
     "user": "https://github.com/craigcitro"

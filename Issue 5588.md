@@ -1,16 +1,17 @@
-# Issue 5588: [with patch, needs review] developer's guide: more information about docstrings
+# Issue 5588: [with patch, with positive review] developer's guide: more information about docstrings
 
 archive/issues_005588.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nKeywords: developer\n\nThe attachment does the following things:\n\n1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\n2. It discusses trying to achieve a balance between the appearance of the docstring in interactive help vs. in the reference manual.\n\n3. In the paragraph starting \"Finally\", it mentions some nonstandard macros available for use in docstrings.  This part depends on #5555.\n\n4. It mentions that methods which start with an underscore don't appear in the reference manual, and this should be taken into consideration when writing documentation. The example in this part depends on #5529.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5588\n\n",
+    "closed_at": "2009-04-30T00:59:35Z",
     "created_at": "2009-03-23T04:35:58Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] developer's guide: more information about docstrings",
+    "title": "[with patch, with positive review] developer's guide: more information about docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5588",
     "user": "https://github.com/jhpalmieri"

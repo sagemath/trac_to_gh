@@ -4,6 +4,7 @@ archive/issues_003877.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLook at the differences between\n\n```\nsage: arrow((0,0), (100, 100))\n```\n\nand\n\n```\nsage: arrow((0,0), (1/1000, 1/1000))\n```\n\nThis depends on #3806.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3877\n\n",
+    "closed_at": "2008-09-04T02:04:43Z",
     "created_at": "2008-08-15T21:35:54Z",
     "labels": [
         "component: graphics",

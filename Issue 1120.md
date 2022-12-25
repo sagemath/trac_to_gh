@@ -4,6 +4,7 @@ archive/issues_001120.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf possible #E is computed over the prime subfield now.\n\n```\nsage: EllipticCurve(GF(4,'a'),[1,2,3,4,5]).cardinality()\n8\nsage: k.<a> = GF(3^3)\nsage: l = [a^2 + 1, 2*a^2 + 2*a + 1, a^2 + a + 1, 2, 2*a]\nsage: EllipticCurve(k,l).cardinality()\nWARNING: Using very very stupid algorithm for counting\npoints over non-prime finite field. Please rewrite.\nSee the file ell_finite_field.py.\n29\n\nsage: l = [1, 1, 0, 2, 0]\nsage: EllipticCurve(k,l).cardinality()\n38\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1120\n\n",
+    "closed_at": "2007-11-19T21:27:21Z",
     "created_at": "2007-11-07T15:51:26Z",
     "labels": [
         "component: number theory",

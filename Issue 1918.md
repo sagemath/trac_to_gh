@@ -4,10 +4,10 @@ archive/issues_001918.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @hivert @nthiery\n\nThe rows of matrices in a list right now do not line up when printed, even though carriage returns are inserted as if they should line up.  That means all the matrices look *very* messed up when printing a list of matrices.\n\nIn the command line:\n\n```\nsage: list(MatrixSpace(GF(2),2))\n\n[[0 0]\n[0 0],\n [1 0]\n[0 0],\n [0 1]\n[0 0],\n [0 0]\n[1 0],\n [0 0]\n[0 1],\n [1 1]\n[0 0],\n [1 0]\n[1 0],\n [1 0]\n[0 1],\n [0 1]\n[1 0],\n [0 1]\n[0 1],\n [0 0]\n[1 1],\n [1 1]\n[1 0],\n [1 1]\n[0 1],\n [1 0]\n[1 1],\n [0 1]\n[1 1],\n [1 1]\n[1 1]]\n```\n\nIn the notebook, it's worse.  Each matrix is chopped in half and continues at the start of the next line.  This gives the appearance of matrices that are not part of the list (one row of one matrix and another row from a different matrix).\n\n```\n[[0 0]\n[0 0], [1 0]\n[0 0], [0 1]\n[0 0], [0 0]\n[1 0], [0 0]\n[0 1], [1 1]\n[0 0], [1 0]\n[1 0], [1 0]\n[0 1], [0 1]\n[1 0], [0 1]\n[0 1], [0 0]\n[1 1], [1 1]\n[1 0], [1 1]\n[0 1], [1 0]\n[1 1], [0 1]\n[1 1], [1 1]\n[1 1]]\n```\n\nAn example of better output would be:\n\n```\nsage: list(MatrixSpace(GF(2),2))\n\n[\n[0 0]\n[0 0],\n\n[1 0]\n[0 0],\n\n[0 1]\n[0 0],\n\n[0 0]\n[1 0],\n\n[0 0]\n[0 1],\n\n[1 1]\n[0 0],\n\n[1 0]\n[1 0],\n\n[1 0]\n[0 1],\n\n[0 1]\n[1 0],\n\n[0 1]\n[0 1],\n\n[0 0]\n[1 1],\n\n[1 1]\n[1 0],\n\n[1 1]\n[0 1],\n\n[1 0]\n[1 1],\n\n[0 1]\n[1 1],\n\n[1 1]\n[1 1]]\n```\n\nOr even better:\n\n```\n[\n[0 0]  [1 0]  [0 1]  [0 0]  [0 0]  [1 1]  \n[0 0], [0 0], [0 0], [1 0], [0 1], [0 0], \n\n[1 0]  [1 0]  [0 1]  [0 1]  [0 0]  [1 1]\n[1 0], [0 1], [1 0], [0 1], [1 1], [1 0],\n\n[1 1]  [1 0]  [0 1]  [1 1]\n[0 1], [1 1], [1 1], [1 1]\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1918\n\n",
+    "closed_at": "2009-12-06T09:20:03Z",
     "created_at": "2008-01-25T01:27:06Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Matrices that are printed are not aligned",

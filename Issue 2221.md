@@ -1,9 +1,10 @@
-# Issue 2221: Silent failure of sage-env
+# Issue 2221: [with patch, with positive review] Silent failure of sage-env
 
 archive/issues_002221.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nsource sage-env currently fails silently to change $SAGE_ROOT if it is already set to a different directory.  This patch prints a warning message if sage-env should have changed $SAGE_ROOT but did not.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2221\n\n",
+    "closed_at": "2008-02-20T10:22:58Z",
     "created_at": "2008-02-20T06:29:55Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002221.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Silent failure of sage-env",
+    "title": "[with patch, with positive review] Silent failure of sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2221",
     "user": "https://github.com/garyfurnish"

@@ -4,9 +4,10 @@ archive/issues_008454.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nThe docstring for notebook has out of date information for the accounts option; see http://groups.google.com/group/sage-support/browse_thread/thread/c99e566a55c21ba5. The instructions for adding a user are now wrong, and don't mention that it's possible to use the notebook itself to add users.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8454\n\n",
+    "closed_at": "2021-08-26T13:04:04Z",
     "created_at": "2010-03-06T07:28:48Z",
     "labels": [
-        "component: notebook",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

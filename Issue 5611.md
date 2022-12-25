@@ -1,15 +1,16 @@
-# Issue 5611: [with spkg; needs review] blackboard bold font for jsMath
+# Issue 5611: [with spkg and patch; positive review] blackboard bold font for jsMath
 
 archive/issues_005611.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @jasongrout\n\nTo create this spkg, I took the file [http://www.math.union.edu/~dpvc/jsMath/download/extra-fonts/bbold10/bbold10.zip](http://www.math.union.edu/~dpvc/jsMath/download/extra-fonts/bbold10/bbold10.zip) and unzipped it.  The resulting directory gets installed into SAGE_LOCAL/notebook/javascript/jsMath/fonts; thus jsMath must be installed first.\n\nI've never submitted an spkg before, so let me know what I need to fix.  (For example, there is no mercurial repository here; does it need one?)\n\nThis is intended to be a required part of the Sage install; it is necessary for #5610.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5611\n\n",
+    "closed_at": "2009-04-16T10:39:07Z",
     "created_at": "2009-03-25T21:54:28Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with spkg; needs review] blackboard bold font for jsMath",
+    "title": "[with spkg and patch; positive review] blackboard bold font for jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5611",
     "user": "https://github.com/jhpalmieri"

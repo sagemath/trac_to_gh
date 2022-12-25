@@ -1,16 +1,17 @@
-# Issue 3521: Atkin-Lehner operator doesn't square to 1
+# Issue 3521: [with patch; with positive review] Atkin-Lehner operator doesn't square to 1
 
 archive/issues_003521.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: modular symbols, atkin-lehner\n\nThe following should produce the identity matrix:\n\n```\nsage: e = (DirichletGroup(13).0)^2\nsage: M = ModularSymbols(e, 2)\nsage: M.atkin_lehner_operator().matrix()^2\n[         1          0          0          0]\n[         0          1          0          0]\n[-zeta6 - 1          0          1  zeta6 + 1]\n[ zeta6 + 1          0          0     -zeta6]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3521\n\n",
+    "closed_at": "2008-07-02T19:30:33Z",
     "created_at": "2008-06-27T14:02:05Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Atkin-Lehner operator doesn't square to 1",
+    "title": "[with patch; with positive review] Atkin-Lehner operator doesn't square to 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3521",
     "user": "https://github.com/roed314"

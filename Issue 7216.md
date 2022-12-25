@@ -3,7 +3,8 @@
 archive/issues_007216.json:
 ```json
 {
-    "body": "Assignee: tba\n\nFrom: bordeaux_2008\n\nIssue created by migration from https://trac.sagemath.org/ticket/7216\n\n",
+    "body": "Assignee: tba\n\nKeywords: spanish\n\nFrom: bordeaux_2008\n\nIssue created by migration from https://trac.sagemath.org/ticket/7216\n\n",
+    "closed_at": "2014-11-14T11:11:30Z",
     "created_at": "2009-10-15T02:13:12Z",
     "labels": [
         "component: documentation"
@@ -16,6 +17,8 @@ archive/issues_007216.json:
 }
 ```
 Assignee: tba
+
+Keywords: spanish
 
 From: bordeaux_2008
 

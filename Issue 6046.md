@@ -1,15 +1,16 @@
-# Issue 6046: [with patch, needs review] Implement local and global heights for number field elements
+# Issue 6046: [with new patch, positive review] Implement local and global heights for number field elements
 
 archive/issues_006046.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: number field height\n\nThis patch implements local (archimedean non) and global heights for elements of number fields, and also rationals.\n\nThis will be used in an eventual implementation of #360 (which must be one of the oldest outstanding tickets, mea culpa).\n\nIt's all in rings/rational.pyx and rings/number_field/number_field_element.pyx and no other files should be affected.\n\nThe second patch was added after 64-bit testing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6046\n\n",
+    "closed_at": "2009-06-15T06:30:52Z",
     "created_at": "2009-05-15T16:16:04Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Implement local and global heights for number field elements",
+    "title": "[with new patch, positive review] Implement local and global heights for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6046",
     "user": "https://github.com/JohnCremona"

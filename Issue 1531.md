@@ -1,9 +1,10 @@
-# Issue 1531: Sage 2.9.rc2: doctest failure sage/calculus/calculus.py
+# Issue 1531: [positive review] Sage 2.9.rc2: doctest failure sage/calculus/calculus.py
 
 archive/issues_001531.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nFile \"calculus.py\", line 6144:\n    sage: maxima(f(sqrt(2), theta+3))\nExpected:\n    'Gamma(theta+3,sqrt(2))\nGot:\n    'Gamma(sqrt(2),theta+3)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1531\n\n",
+    "closed_at": "2007-12-16T03:03:23Z",
     "created_at": "2007-12-16T02:08:14Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_001531.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Sage 2.9.rc2: doctest failure sage/calculus/calculus.py",
+    "title": "[positive review] Sage 2.9.rc2: doctest failure sage/calculus/calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1531",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

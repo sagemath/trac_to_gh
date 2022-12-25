@@ -1,15 +1,16 @@
-# Issue 2698: [with patch, needs review] Small improvements to integer lcm, gcd on lists and a new xlcm function
+# Issue 2698: [with patch, positive review] Small improvements to integer lcm, gcd on lists and a new xlcm function
 
 archive/issues_002698.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe patch does the following:\n\n* gcd of a list returns as soon as the current gcd is 1\n* gcd and lcm of empty lists return 1 as a Sage Integer not a python integer\n* gcd and lcm of lists of length 1 apply abs():  before, we had\n\n```\nsage: l=(-3,)\nsage: lcm(l)\n-3\nsage: gcd(l)\n-3\n```\n\nwhile now we have\n\n```\nsage: l=(-3,)\nsage: lcm(l)\n3\nsage: gcd(l)\n3\n```\n\n* A new extended xlcm funtion has been added to sage/rings/arith.py.  Under the name tidy_lcm() this has been stuck in sage/schemes/elliptic_curves/sll_finite_field.py but I moved it and renamed it since I need it for work I am doing on a whole lot of generic group algorithms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2698\n\n",
+    "closed_at": "2008-04-01T14:05:49Z",
     "created_at": "2008-03-28T12:21:13Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] Small improvements to integer lcm, gcd on lists and a new xlcm function",
+    "title": "[with patch, positive review] Small improvements to integer lcm, gcd on lists and a new xlcm function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2698",
     "user": "https://github.com/JohnCremona"

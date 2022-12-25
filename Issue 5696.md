@@ -1,9 +1,10 @@
-# Issue 5696: Update libpng to 1.2.35
+# Issue 5696: [with spkg, positive review] Update libpng to 1.2.35
 
 archive/issues_005696.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n1.2.35 is a security release, so we should really upgrade in 3.4.1.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5696\n\n",
+    "closed_at": "2009-04-11T00:28:10Z",
     "created_at": "2009-04-06T18:47:32Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005696.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Update libpng to 1.2.35",
+    "title": "[with spkg, positive review] Update libpng to 1.2.35",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5696",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

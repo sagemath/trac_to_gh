@@ -1,17 +1,18 @@
-# Issue 7471: update the patches in the mpir spkg
+# Issue 7471: update the patches in the mpir spkg -- update to mpir 1.2.2 vanilla
 
 archive/issues_007471.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n\n> 2009/11/15 Jason Moxham <>:\n>>\n>> Solved???\n>>\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  config.guess\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/config.guess\n>> 660c660\n>> < i?86-*-*|x86_64-*-*|amd64-*-*)\n>> ---\n>>> i?86-*-*|x86_64-*-*)\n>> 755c755\n>> <   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy ${dummy}.exe\n>> ---\n>>>   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  mpn/x86/fat/fat.c\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/mpn/x86/fat/fat.c\n>> 141d140\n>> <   __MPN(divrem_euclidean_qr_2_init),\n>>\n>> and perhaps some others ?\n>> Please update sage mpir-1.2 with current mpir-1.2\n\nExcellent, thanks for tracking this down!   \n\nNow, I wonder what idiot messed up Sage's mpir-1.2 spkg by not updating the patches properly?\n\n[... checks SPKG.txt ...]\n\n### mpir-1.2 (William Stein, May 31, 2009)\n * Update to the latest MPIR 1.2 pre-release\n * Change \"GMP\" --> \"MPIR\" in various places.\n\nDoh.  \n\n\n\n2009/11/15 Bill Hart <>:\n>\n> I probably should put mpir-1.2.2 up actually, as it contained a\n> FreeBSD fix specifically for Sage.\n>\n> I'll have to update the gplv3.txt and license info for mpf/set_str.c though.\n>\n> Give me a few minutes and I'll do it.\n\nThanks.   I can't work on this further until tonight because my internet connection is so horrible.  \n\n> Bill.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/7471\n\n",
+    "closed_at": "2009-12-07T08:19:01Z",
     "created_at": "2009-11-15T18:02:44Z",
     "labels": [
         "component: packages: standard",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "update the patches in the mpir spkg",
+    "title": "update the patches in the mpir spkg -- update to mpir 1.2.2 vanilla",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7471",
     "user": "https://github.com/williamstein"

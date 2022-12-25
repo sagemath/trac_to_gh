@@ -3,7 +3,8 @@
 archive/issues_008303.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: spaces filenames\n\nScripts with spaces in their names defeat Sage:\n\n```\n$ sage \"my script.sage\" \n/opt/sage/local/bin/sage-sage: line 147: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 150: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 200: [: too many arguments\n[...]\n/opt/sage/local/bin/sage-sage: line 892: [: too many arguments\n/opt/sage/local/bin/sage-preparse: File my is missing\n/opt/sage/local/bin/sage-preparse: File script.sage is missing\npython: can't open file 'my': [Errno 2] No such file or directory\n```\nTicket #4354 claimed to fix this, but it's still broken on 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8303\n\n",
+    "body": "Assignee: @dandrake\n\nKeywords: spaces filenames\n\nScripts with spaces in their names defeat Sage:\n\n```\n$ sage \"my script.sage\" \n/opt/sage/local/bin/sage-sage: line 147: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 150: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 200: [: too many arguments\n[...]\n/opt/sage/local/bin/sage-sage: line 892: [: too many arguments\n/opt/sage/local/bin/sage-preparse: File my is missing\n/opt/sage/local/bin/sage-preparse: File script.sage is missing\npython: can't open file 'my': [Errno 2] No such file or directory\n```\nTicket #4354 claimed to fix this, but it's still broken on 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8303\n\n",
+    "closed_at": "2010-04-29T05:17:07Z",
     "created_at": "2010-02-19T02:32:06Z",
     "labels": [
         "component: user interface",
@@ -16,7 +17,7 @@ archive/issues_008303.json:
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: @williamstein
+Assignee: @dandrake
 
 Keywords: spaces filenames
 

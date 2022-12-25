@@ -4,6 +4,7 @@ archive/issues_008054.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @rbeezer\n\nConsider the following example:\n\n```\nsage: R.<x> = PolynomialRing(ComplexField(3322))\nsage: p=x^4+54*x^2+154\nsage: z=p.roots(algorithm='pari')\nsage: e=p-mul([x-z[i][0] for i in range(4)])\nsage: n(max(abs(e.coeffs()[i]) for i in range(0,e.degree()+1)))\n6.08883742371831e-999\n```\nThis is ok. Compare now with:\n\n```\nsage: R.<x> = PolynomialRing(ComplexField(3322))\nsage: p=x^4+54*x^2+154\nsage: z=p.roots(algorithm='numpy')\nsage: e=p-mul([x-z[i][0] for i in range(4)])\nsage: n(max(abs(e.coeffs()[i]) for i in range(0,e.degree()+1)))\n6.06533797844328e-14\n```\nClearly the precision given by numpy is only 14 digits, not 1000\ndigits as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8054\n\n",
+    "closed_at": "2010-09-28T09:11:15Z",
     "created_at": "2010-01-25T12:08:01Z",
     "labels": [
         "component: numerical",

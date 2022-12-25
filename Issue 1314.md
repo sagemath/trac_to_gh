@@ -1,27 +1,28 @@
-# Issue 1314: [graphs] calculate tutte polynomial
+# Issue 1314: graphs: calculate tutte polynomial
 
 archive/issues_001314.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  mvngu lkeough @sdenton4 @nathanncohen stefan azi simonking @nbruin\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1314\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  mvngu lkeough @sdenton4 @nathanncohen stefan azi simonking @nbruin\n\nKeywords: tutte, graph\n\nImplements a `Graph.tutte_polynomial` method\n\nIssue created by migration from https://trac.sagemath.org/ticket/1314\n\n",
+    "closed_at": "2014-01-11T14:56:12Z",
     "created_at": "2007-11-28T20:02:44Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
-    "title": "[graphs] calculate tutte polynomial",
+    "title": "graphs: calculate tutte polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1314",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 CC:  mvngu lkeough @sdenton4 @nathanncohen stefan azi simonking @nbruin
 
-Keywords: graphs
+Keywords: tutte, graph
 
-
+Implements a `Graph.tutte_polynomial` method
 
 Issue created by migration from https://trac.sagemath.org/ticket/1314
 

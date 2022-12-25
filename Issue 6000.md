@@ -1,15 +1,16 @@
-# Issue 6000: Sets enumerated by exploring a search space with a (lazy) tree or graph structure
+# Issue 6000: [with patch, positive review] Sets enumerated by exploring a search space with a (lazy) tree or graph structure
 
 archive/issues_006000.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: enumerate sets, depth first search, ideal of a relation\n\nThis patches extend the sage.combinat.backtrack library with other\ngeneric tools for constructing large sets whose elements can be\nenumerated by exploring a search space with a (lazy) tree or graph\nstructure.\n\n- SearchForest:\n  Depth first search through a tree descrived by a `child` function\n- GenericBacktracker: (was readilly there)\n  Depth first search through a tree descrived by a `child` function, with branch pruning, ...\n- TransitiveIdeal:\n  Depth first search through a graph described by a `neighbours` relation\n- TransitiveIdealGraded:\n  Breath first search through a graph described by a `neighbours` relation\n\nTodo: the names are crappy and inconsistent, because they come from\ndifferent point of views. We need to find a good naming scheme!!! \n\nDo we want to emphasize the underlying graph/tree structure?  The\nbranch&bound aspect? The transitive closure of a relation point of\nview?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6000\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: enumerate sets, depth first search, ideal of a relation\n\nThis patches extend the sage.combinat.backtrack library with other\ngeneric tools for constructing large sets whose elements can be\nenumerated by exploring a search space with a (lazy) tree or graph\nstructure.\n\n- SearchForest:\n  Depth first search through a tree descrived by a `child` function\n- GenericBacktracker: (was readilly there)\n  Depth first search through a tree descrived by a `child` function, with branch pruning, ...\n- TransitiveIdeal:\n  Depth first search through a graph described by a `neighbours` relation\n- TransitiveIdealGraded:\n  Breath first search through a graph described by a `neighbours` relation\n\nTodo: the names are crappy and inconsistent, because they come from\ndifferent point of views. We need to find a good naming scheme!!! \n\nDo we want to emphasize the underlying graph/tree structure?  The\nbranch&bound aspect? The transitive closure of a relation point of\nview?\n\nTodo: which interface do we want:\n- TransitiveIdeal(relation, generators)\n- TransitiveIdeal(generators, relation)\nThe code needs to be standardized once the choice is done.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6000\n\n",
+    "closed_at": "2009-06-01T00:02:26Z",
     "created_at": "2009-05-06T19:31:56Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Sets enumerated by exploring a search space with a (lazy) tree or graph structure",
+    "title": "[with patch, positive review] Sets enumerated by exploring a search space with a (lazy) tree or graph structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6000",
     "user": "https://github.com/nthiery"
@@ -41,6 +42,12 @@ different point of views. We need to find a good naming scheme!!!
 Do we want to emphasize the underlying graph/tree structure?  The
 branch&bound aspect? The transitive closure of a relation point of
 view?
+
+Todo: which interface do we want:
+- TransitiveIdeal(relation, generators)
+- TransitiveIdeal(generators, relation)
+The code needs to be standardized once the choice is done.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6000
 

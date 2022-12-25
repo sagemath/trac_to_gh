@@ -1,15 +1,16 @@
-# Issue 9957: Upgrade python to 2.7
+# Issue 9957: Upgrade python to 2.7.x
 
 archive/issues_009957.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @nexttime @jasongrout @kcrisman @kini\n\nFrom the release notes:\n\nPython 2.7 was released on July 3rd, 2010.\n\nPython 2.7 is scheduled to be the last major version in the 2.x series before it moves into an extended maintenance period. This release contains many of the features that were first released in Python 3.1. Improvements in this release include:\n\n* An ordered dictionary type\n* New unittest features including test skipping, new assert methods, and test discovery\n* A much faster io module\n* Automatic numbering of fields in the str.format() method\n* Float repr improvements backported from 3.x\n* Tile support for Tkinter\n* A backport of the memoryview object from 3.x\n* Set literals\n* Set and dictionary comprehensions\n* Dictionary views\n* New syntax for nested with statements\n* The sysconfig module\n\nIssue created by migration from https://trac.sagemath.org/ticket/9958\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @nexttime @jasongrout @kcrisman @kini\n\nFrom the release notes:\n\nPython 2.7.2 was released on June 11th, 2011.\n\nThe Python 2.7 series is scheduled to be the last major version in the 2.x series before 2.x moves into an extended maintenance period. The 2.7 series contains many of the features that were first released in Python 3.1. Improvements in this release include:\n\n* An ordered dictionary type\n* New unittest features including test skipping, new assert methods, and test discovery\n* A much faster io module\n* Automatic numbering of fields in the str.format() method\n* Float repr improvements backported from 3.x\n* Tile support for Tkinter\n* A backport of the memoryview object from 3.x\n* Set literals\n* Set and dictionary comprehensions\n* Dictionary views\n* New syntax for nested with statements\n* The sysconfig module\n\nFixes #1159\n\n**New spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg) (diffs for reviewing (without deleted files): [attachment:python-2.7.2.p0.diff] and [attachment:python-2.7.2.p0-p1.diff])\n\n**Apply**:\n\n* [attachment:9958_float_printing.patch]\n* [attachment:9958_exceptions.patch]\n* [attachment:9958_combinat.patch]\n* [attachment:9958_misc.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9958\n\n",
+    "closed_at": "2012-01-15T21:55:53Z",
     "created_at": "2010-09-20T20:01:06Z",
     "labels": [
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Upgrade python to 2.7",
+    "title": "Upgrade python to 2.7.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9957",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
@@ -21,9 +22,9 @@ CC:  @jhpalmieri @nexttime @jasongrout @kcrisman @kini
 
 From the release notes:
 
-Python 2.7 was released on July 3rd, 2010.
+Python 2.7.2 was released on June 11th, 2011.
 
-Python 2.7 is scheduled to be the last major version in the 2.x series before it moves into an extended maintenance period. This release contains many of the features that were first released in Python 3.1. Improvements in this release include:
+The Python 2.7 series is scheduled to be the last major version in the 2.x series before 2.x moves into an extended maintenance period. The 2.7 series contains many of the features that were first released in Python 3.1. Improvements in this release include:
 
 * An ordered dictionary type
 * New unittest features including test skipping, new assert methods, and test discovery
@@ -37,6 +38,17 @@ Python 2.7 is scheduled to be the last major version in the 2.x series before it
 * Dictionary views
 * New syntax for nested with statements
 * The sysconfig module
+
+Fixes #1159
+
+**New spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/python-2.7.2.p1.spkg) (diffs for reviewing (without deleted files): [attachment:python-2.7.2.p0.diff] and [attachment:python-2.7.2.p0-p1.diff])
+
+**Apply**:
+
+* [attachment:9958_float_printing.patch]
+* [attachment:9958_exceptions.patch]
+* [attachment:9958_combinat.patch]
+* [attachment:9958_misc.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9958
 

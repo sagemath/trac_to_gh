@@ -1,15 +1,16 @@
-# Issue 4887: [with patch, needs review] notebook -- make worksheet autosave inveral configurable from notebook settings
+# Issue 4887: notebook -- make worksheet autosave inveral configurable from notebook settings
 
 archive/issues_004887.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @wjp\n\nDepends on #4886\n\nIssue created by migration from https://trac.sagemath.org/ticket/4887\n\n",
+    "closed_at": "2009-12-09T14:27:37Z",
     "created_at": "2008-12-29T08:34:46Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] notebook -- make worksheet autosave inveral configurable from notebook settings",
+    "title": "notebook -- make worksheet autosave inveral configurable from notebook settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4887",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

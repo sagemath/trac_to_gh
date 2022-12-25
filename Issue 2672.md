@@ -1,9 +1,10 @@
-# Issue 2672: Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2
+# Issue 2672: [with spkgs, positive review] Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2
 
 archive/issues_002672.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe latest OSX 10.5.2 identifies itself as \n\n```\n$ uname -a\nDarwin zippo 9.2.2 Darwin Kernel Version 9.2.2: Tue Mar  4 21:17:34\nPST 2008; root:xnu-1228.4.31~1/RELEASE_I386 i386\n```\nThis makes the following detection code fail:\n\n```\n$ uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/\n9.2.2\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2672\n\n",
+    "closed_at": "2008-03-28T21:54:24Z",
     "created_at": "2008-03-26T07:31:30Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_002672.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2",
+    "title": "[with spkgs, positive review] Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2672",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

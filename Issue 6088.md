@@ -1,16 +1,17 @@
-# Issue 6088: LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code
+# Issue 6088: [with patch, positive review] LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code
 
 archive/issues_006088.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: lattice polytope, exceptions\n\nThis try catch made it hard to discover a trivial bug in Sequences\nbecause it was catching the corresponding exception.\n\nIts purpose was just to test if some data had already been\ncached. This is not on a critical section, so testing on the existence\nof an attribute is as good, clearer, and safer.\n\nBy the way, I would recommend not to use Sequence for this kind of\napplications, as the overhead in speed and complexity is non trivial,\nwhereas the specific features of Sequence do not seem to be very much\nused here. Plain tuples should probably work as well.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6088\n\n",
+    "closed_at": "2009-05-21T00:33:00Z",
     "created_at": "2009-05-20T01:06:58Z",
     "labels": [
         "component: geometry",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code",
+    "title": "[with patch, positive review] LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6088",
     "user": "https://github.com/nthiery"

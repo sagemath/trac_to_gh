@@ -3,7 +3,8 @@
 archive/issues_006548.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  wcauchois mvngu\n\nImprove tasteful ticks documentation in plot/axes.py.  See #5469.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6548\n\n",
+    "body": "Assignee: tba\n\nCC:  wcauchois mvngu\n\nImprove tasteful ticks documentation in plot/axes.py.  See #5649.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6548\n\n",
+    "closed_at": "2009-09-29T16:04:41Z",
     "created_at": "2009-07-17T12:58:24Z",
     "labels": [
         "component: documentation",
@@ -20,7 +21,7 @@ Assignee: tba
 
 CC:  wcauchois mvngu
 
-Improve tasteful ticks documentation in plot/axes.py.  See #5469.
+Improve tasteful ticks documentation in plot/axes.py.  See #5649.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6548
 

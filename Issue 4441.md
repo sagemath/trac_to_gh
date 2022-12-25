@@ -1,17 +1,18 @@
-# Issue 4441: [with patch, needs review] fixes to the doc repo
+# Issue 4441: [with patch, positive review] remove two obsolete entries from modabvar documentation
 
 archive/issues_004441.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nSplitted away from #4370 as the reviewer requested.\nThe patch is identical and was just renamed.\nFrom #4370:\n  After applying the patch to devel/doc, you have to do there once:\n\n  chmod a+x needed_additions_Sage-3.2.alpha2_doc-repository\n\n  ./needed_additions_Sage-3.2.alpha2_doc-repository\n\n  (Writing that script was faster than trying to explain what to do with words.)\n\nI was tempted to give this ticket the priority \"blocker\" :-)\n\nNow seriously, this should be taken in ASAP for two reasons.\nFirstly, it removes the build of two obsolete chapters of no-more-existing modules in the documentation (sage.modular.abvar.torsion_point, sage.modular.abvar.hecke_operator), whose contents are currently doubled (the contents being currently also in sage.modular.abvar.finite_subgroup resp. sage.modular.abvar.morphism).\nSecondly, and much more importantly, it puts the doc repo in a clean state, in order to start with the ReST integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4441\n\n",
+    "closed_at": "2008-11-05T20:24:08Z",
     "created_at": "2008-11-04T21:15:17Z",
     "labels": [
         "component: documentation",
-        "critical",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] fixes to the doc repo",
+    "title": "[with patch, positive review] remove two obsolete entries from modabvar documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4441",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

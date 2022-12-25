@@ -4,6 +4,7 @@ archive/issues_009649.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nIn c_lib/include/interrupt.h, there is\n\n```\n#ifndef FOO_H\n#define FOO_H\n```\nto protect the header.  This FOO_H should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9649\n\n",
+    "closed_at": "2010-08-09T09:41:41Z",
     "created_at": "2010-07-31T08:23:54Z",
     "labels": [
         "component: misc",

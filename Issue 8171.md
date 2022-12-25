@@ -3,7 +3,8 @@
 archive/issues_008171.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb @haraldschilly\n\nThis new spkg for Cbc includes several new lines in spkg-install to activate CPLEX support in the Coin Library.\n\nIt is to be found at : ~ncohen/cbc-2.3.p2.spkg\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8171\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb @haraldschilly\n\nThis new spkg for Cbc includes several new lines in spkg-install to activate CPLEX support in the Coin Library.\n\nIt is to be found at : ~ncohen/cbc-2.3.p2.spkg\n\nThis functionality can be used with the corresponding patch #8172\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8171\n\n",
+    "closed_at": "2010-04-20T22:55:26Z",
     "created_at": "2010-02-03T13:04:07Z",
     "labels": [
         "component: packages: optional"
@@ -22,6 +23,8 @@ CC:  @malb @haraldschilly
 This new spkg for Cbc includes several new lines in spkg-install to activate CPLEX support in the Coin Library.
 
 It is to be found at : ~ncohen/cbc-2.3.p2.spkg
+
+This functionality can be used with the corresponding patch #8172
 
 Nathann
 

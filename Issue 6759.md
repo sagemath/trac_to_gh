@@ -1,22 +1,23 @@
-# Issue 6759: [with spkg; needs review] Update sqlite to latest release - needed for Sun's compiler
+# Issue 6759: [with spkg, positive review] Update sqlite to latest release - needed for Sun's compiler
 
 archive/issues_006759.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @dandrake\n\nI tried to build Sage using Sun's compiler suite, based on Sun Studio 12 update 1. This is of course good for Solaris, but will also find other issues. Since the Sun compiler is a lot stricter than the GNU one, it will find bad code. (It has for example already found code in libgcrypt where the code attempts to return an integer from a function declared with a return type of void). \n\nThe version of sqlite in Sage (3.5.3) is the first package I found which failed to build with Sun's compiler. I downloaded the latest (3.6.17) source, and with the addition of \n\"-I $SAGE_LOCAL/include\" to CPPFLAGS, sqlite 3.6.17 will build with Sun's compiler. (I made many other changes to the spkg-install to, to generally improve it, but I think that was the only mandatory change).\n\nHere's the update spkg and associated files. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.17/\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6759\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @dandrake\n\nI tried to build Sage using Sun's compiler suite, based on Sun Studio 12 update 1. This is of course good for Solaris, but will also find other issues. Since the Sun compiler is a lot stricter than the GNU one, it will find bad code. (It has for example already found code in libgcrypt where the code attempts to return an integer from a function declared with a return type of void). \n\nThe version of sqlite in Sage (3.5.3) is the first package I found which failed to build with Sun's compiler. I downloaded the latest (3.6.17) source, and with the addition of \n\"-I $SAGE_LOCAL/include\" to CPPFLAGS, sqlite 3.6.17 will build with Sun's compiler. (I made many other changes to the spkg-install to, to generally improve it, but I think that was the only mandatory change).\n\nHere's the update spkg and associated files. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.17/\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6759\n\n",
+    "closed_at": "2009-10-31T05:24:48Z",
     "created_at": "2009-08-16T08:22:40Z",
     "labels": [
-        "component: solaris",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with spkg; needs review] Update sqlite to latest release - needed for Sun's compiler",
+    "title": "[with spkg, positive review] Update sqlite to latest release - needed for Sun's compiler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6759",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 CC:  @dandrake
 

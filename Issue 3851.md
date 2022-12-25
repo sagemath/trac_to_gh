@@ -1,16 +1,17 @@
-# Issue 3851: [with patch, needs review] Steenrod algebra doctest patch: small coercion issue with 3.1alpha
+# Issue 3851: [with patch, positive review] Steenrod algebra doctest patch: small coercion issue with 3.1alpha
 
 archive/issues_003851.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: algebra, steenrod, coercion\n\nI think because of #3744, there was a doctesting error in steenrod_algebra_element.  This patch fixes it (and changes an explanatory sentence, as well).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3851\n\n",
+    "closed_at": "2008-08-15T00:37:33Z",
     "created_at": "2008-08-14T16:48:42Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] Steenrod algebra doctest patch: small coercion issue with 3.1alpha",
+    "title": "[with patch, positive review] Steenrod algebra doctest patch: small coercion issue with 3.1alpha",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3851",
     "user": "https://github.com/jhpalmieri"

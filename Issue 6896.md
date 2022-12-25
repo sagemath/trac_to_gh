@@ -1,16 +1,17 @@
-# Issue 6896: update README.txt about GCC versions
+# Issue 6896: [with patch, positive review] update README.txt about GCC versions
 
 archive/issues_006896.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe README.txt file in SAGE_ROOT should be updated on the supported versions of GCC. See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/804f2c21b070902b) thread for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6896\n\n",
+    "closed_at": "2009-09-07T17:58:18Z",
     "created_at": "2009-09-06T02:50:22Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "update README.txt about GCC versions",
+    "title": "[with patch, positive review] update README.txt about GCC versions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6896",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

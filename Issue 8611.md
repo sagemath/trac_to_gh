@@ -3,7 +3,8 @@
 archive/issues_008611.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @novoselt @williamstein\n\nThere are a number of inefficiencies in the critical path (i.e., the code path when values have already been cached) that are addressed in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8611\n\n",
+    "body": "Assignee: tbd\n\nCC:  @novoselt @williamstein\n\nKeywords: cached method\n\nThere are a number of inefficiencies in the critical path (i.e., the code path when values have already been cached) that are addressed in this patch.\n\nPS:\nThe latest patch does in fact much more: Both the critical and the non-critical path are improved, using various tricks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8611\n\n",
+    "closed_at": "2011-01-25T08:14:05Z",
     "created_at": "2010-03-26T03:48:06Z",
     "labels": [
         "component: misc"
@@ -19,7 +20,12 @@ Assignee: tbd
 
 CC:  @novoselt @williamstein
 
+Keywords: cached method
+
 There are a number of inefficiencies in the critical path (i.e., the code path when values have already been cached) that are addressed in this patch.
+
+PS:
+The latest patch does in fact much more: Both the critical and the non-critical path are improved, using various tricks.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8611
 

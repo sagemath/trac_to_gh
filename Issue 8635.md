@@ -4,6 +4,7 @@ archive/issues_008635.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nFixes some trivial typos. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8635\n\n",
+    "closed_at": "2010-04-16T18:55:01Z",
     "created_at": "2010-03-31T09:37:56Z",
     "labels": [
         "component: combinatorics",

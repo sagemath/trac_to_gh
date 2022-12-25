@@ -3,7 +3,7 @@
 archive/issues_009670.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kohel @pelegm pang\n\nCurrently, this file is pretty woeful.\n\n```\nprobability/random_variable.py: 3% (1 of 29)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9670\n\n",
+    "body": "Assignee: mvngu\n\nCC:  kohel @pelegm pang\n\nCurrently, this file is pretty woeful.\n\n```\nprobability/random_variable.py: 3% (1 of 29)\n```\n\nAlso, there is at least one *enormous* bug in this code.  Since this is literally the first thing I tried, I'm guessing there may be many, many others. \n\n```\nsage: n=6; P = dict([(i,1/n) for i in [1..n]])\nsage: X = DiscreteProbabilitySpace(P.keys(), P)\nsage: X.expectation()   # WHAT?\n0.166666666666667\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9670\n\n",
     "created_at": "2010-08-02T19:55:09Z",
     "labels": [
         "component: documentation"
@@ -23,6 +23,15 @@ Currently, this file is pretty woeful.
 
 ```
 probability/random_variable.py: 3% (1 of 29)
+```
+
+Also, there is at least one *enormous* bug in this code.  Since this is literally the first thing I tried, I'm guessing there may be many, many others. 
+
+```
+sage: n=6; P = dict([(i,1/n) for i in [1..n]])
+sage: X = DiscreteProbabilitySpace(P.keys(), P)
+sage: X.expectation()   # WHAT?
+0.166666666666667
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9670

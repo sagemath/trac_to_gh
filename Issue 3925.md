@@ -1,4 +1,4 @@
-# Issue 3925: Wrap Bernstein 's primegen
+# Issue 3925: [with SPKG, needs work] Wrap Bernstein 's primegen
 
 archive/issues_003925.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_003925.json:
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Wrap Bernstein 's primegen",
+    "title": "[with SPKG, needs work] Wrap Bernstein 's primegen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3925",
     "user": "https://github.com/robertwb"

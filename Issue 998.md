@@ -1,16 +1,17 @@
-# Issue 998: segmentation fault doctesting crypto/mq/sr.py
+# Issue 998: [with patch] segmentation fault doctesting crypto/mq/sr.py
 
 archive/issues_000998.json:
 ```json
 {
     "body": "Assignee: somebody\n\nOn sage.math the following happens:\n\n```\nsage -t -long devel/sage-main/sage/crypto/mq/sr.py\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [30.3 s]    \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/998\n\n",
+    "closed_at": "2007-11-25T05:49:11Z",
     "created_at": "2007-10-25T07:15:00Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
-    "title": "segmentation fault doctesting crypto/mq/sr.py",
+    "title": "[with patch] segmentation fault doctesting crypto/mq/sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/998",
     "user": "https://github.com/williamstein"

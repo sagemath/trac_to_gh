@@ -4,6 +4,7 @@ archive/issues_000631.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\n...which is more or less what I had done before:  it's at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/\n\n(and you may also like to note that from now on my home page is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona\n)\n\nFor the future I guess I need to do \"hg push\" to somwhere.\n\nPS the changed files are gpslave.h/cc, parifact.h/cc, marith.cc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/631\n\n",
+    "closed_at": "2007-09-13T16:18:11Z",
     "created_at": "2007-09-09T19:39:23Z",
     "labels": [
         "component: packages: standard",

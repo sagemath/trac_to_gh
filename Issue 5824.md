@@ -1,9 +1,10 @@
-# Issue 5824: Move DSage to its own spkg
+# Issue 5824: [with patch; positive review] Move DSage to its own spkg
 
 archive/issues_005824.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nDSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. \n\nNote the effect on coverage for 3.4.1.rc4:\n\nBefore:\n\n```\nOverall weighted coverage score:  68.2%\nTotal number of functions:  22947\nWe need  401 more function to get to 70% coverage.\nWe need 1549 more function to get to 75% coverage.\nWe need 2696 more function to get to 80% coverage.\n```\nAfter:\n\n```\nOverall weighted coverage score:  69.8%\nTotal number of functions:  22432\nWe need   45 more function to get to 70% coverage.\nWe need 1166 more function to get to 75% coverage.\nWe need 2288 more function to get to 80% coverage.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5824\n\n",
+    "body": "Assignee: @yqiang\n\nDSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%):\n\n```\nOverall weighted coverage score:  0.7%\nTotal number of functions:  515\nWe need  346 more function to get to 68% coverage.\nWe need  356 more function to get to 70% coverage.\nWe need  382 more function to get to 75% coverage.\n```\nMove it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. Hopefully someone can be found to maintain it and eventually improve it, otherwise we should look for some alternative rpc mechanism. \n\nTo do the move one must also pay careful attention to the unit tests, -sdist, -bdist and setup.py.\n\nNote the effect on coverage for 3.4.1.rc4:\n\nBefore:\n\n```\nOverall weighted coverage score:  68.2%\nTotal number of functions:  22947\nWe need  401 more function to get to 70% coverage.\nWe need 1549 more function to get to 75% coverage.\nWe need 2696 more function to get to 80% coverage.\n```\nAfter:\n\n```\nOverall weighted coverage score:  69.8%\nTotal number of functions:  22432\nWe need   45 more function to get to 70% coverage.\nWe need 1166 more function to get to 75% coverage.\nWe need 2288 more function to get to 80% coverage.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5824\n\n",
+    "closed_at": "2009-04-30T10:25:57Z",
     "created_at": "2009-04-19T07:46:30Z",
     "labels": [
         "component: dsage",
@@ -11,7 +12,7 @@ archive/issues_005824.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Move DSage to its own spkg",
+    "title": "[with patch; positive review] Move DSage to its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5824",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,7 +20,18 @@ archive/issues_005824.json:
 ```
 Assignee: @yqiang
 
-DSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. 
+DSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%):
+
+```
+Overall weighted coverage score:  0.7%
+Total number of functions:  515
+We need  346 more function to get to 68% coverage.
+We need  356 more function to get to 70% coverage.
+We need  382 more function to get to 75% coverage.
+```
+Move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. Hopefully someone can be found to maintain it and eventually improve it, otherwise we should look for some alternative rpc mechanism. 
+
+To do the move one must also pay careful attention to the unit tests, -sdist, -bdist and setup.py.
 
 Note the effect on coverage for 3.4.1.rc4:
 

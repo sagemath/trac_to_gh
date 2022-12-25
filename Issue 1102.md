@@ -4,10 +4,10 @@ archive/issues_001102.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1102\n\n",
+    "closed_at": "2007-11-19T21:45:35Z",
     "created_at": "2007-11-04T23:24:09Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "[with patch] Bounded norm ideals",

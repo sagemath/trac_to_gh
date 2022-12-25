@@ -3,7 +3,8 @@
 archive/issues_006567.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: primitive roots\n\nCurrently, the function `primitive_root()` finds a primitive root modulo n. Ticket #6467 proposes to find all primitive roots modulo a fixed n. We should also implement a function to determine whether or not some integer is a primitive root modulo n. A good way is to do this without first having to generate all primitive roots mod n.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6567\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: primitive roots\n\nCurrently, the function `primitive_root()` finds a primitive root modulo n. Ticket #6467 proposes to find all primitive roots modulo a fixed n. We should also implement a function to determine whether or not some integer is a primitive root modulo n. A good way is to do this without first having to generate all primitive roots mod n.\n\n**Apply** [attachment:6567_2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6567\n\n",
+    "closed_at": "2013-03-06T10:26:19Z",
     "created_at": "2009-07-20T12:11:43Z",
     "labels": [
         "component: number theory"
@@ -22,6 +23,8 @@ CC:  @kcrisman
 Keywords: primitive roots
 
 Currently, the function `primitive_root()` finds a primitive root modulo n. Ticket #6467 proposes to find all primitive roots modulo a fixed n. We should also implement a function to determine whether or not some integer is a primitive root modulo n. A good way is to do this without first having to generate all primitive roots mod n.
+
+**Apply** [attachment:6567_2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6567
 

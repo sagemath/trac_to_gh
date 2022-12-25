@@ -1,9 +1,10 @@
-# Issue 2958: twist.py -- doctest failures in sage-3.0.alpha6 on some test machines
+# Issue 2958: [with patch; positive review] twist.py -- doctest failures in sage-3.0.alpha6 on some test machines
 
 archive/issues_002958.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2958\n\n",
+    "closed_at": "2008-04-19T23:10:59Z",
     "created_at": "2008-04-19T21:19:08Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002958.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "twist.py -- doctest failures in sage-3.0.alpha6 on some test machines",
+    "title": "[with patch; positive review] twist.py -- doctest failures in sage-3.0.alpha6 on some test machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2958",
     "user": "https://github.com/williamstein"

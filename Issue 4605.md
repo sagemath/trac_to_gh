@@ -1,16 +1,17 @@
-# Issue 4605: Update Cython to 0.10.2 (latest stable upstream)
+# Issue 4605: [with spkg, positive review] Update Cython to 0.10.2 (latest stable upstream)
 
 archive/issues_004605.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCython 0.10.2 fixes a important bug that resolves an issue so that #4206 can be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4605\n\n",
+    "closed_at": "2008-11-26T07:14:43Z",
     "created_at": "2008-11-24T20:49:40Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Update Cython to 0.10.2 (latest stable upstream)",
+    "title": "[with spkg, positive review] Update Cython to 0.10.2 (latest stable upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4605",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

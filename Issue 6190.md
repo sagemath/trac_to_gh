@@ -1,9 +1,10 @@
-# Issue 6190: Fix documentation in sage/combinat/backtrack.py
+# Issue 6190: [with patch, positive review] Fix documentation in sage/combinat/backtrack.py
 
 archive/issues_006190.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nCC:  @loefflerd\n\nFour doctests introduced in #6000 need proper indentations, plus some lists, and some spelling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6190\n\n",
+    "closed_at": "2009-06-03T20:25:30Z",
     "created_at": "2009-06-02T20:04:48Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_006190.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Fix documentation in sage/combinat/backtrack.py",
+    "title": "[with patch, positive review] Fix documentation in sage/combinat/backtrack.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6190",
     "user": "https://github.com/rbeezer"

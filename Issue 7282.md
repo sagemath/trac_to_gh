@@ -4,6 +4,7 @@ archive/issues_007282.json:
 ```json
 {
     "body": "Assignee: tbd\n\nRight now the jinja spkg segfaults when being installed on cygwin.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7282\n\n",
+    "closed_at": "2010-02-17T11:28:24Z",
     "created_at": "2009-10-25T01:28:02Z",
     "labels": [
         "component: porting: cygwin",

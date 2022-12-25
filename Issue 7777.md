@@ -4,6 +4,7 @@ archive/issues_007777.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @jbandlow\n\nKeywords: symmetric functions, inject\n\nThe title says it all. Depends on #7776\n\nIssue created by migration from https://trac.sagemath.org/ticket/7777\n\n",
+    "closed_at": "2010-01-14T01:45:05Z",
     "created_at": "2009-12-27T22:29:20Z",
     "labels": [
         "component: combinatorics",

@@ -1,15 +1,16 @@
-# Issue 4826: change return type of G.cusps() for G a congruence subgroup
+# Issue 4826: [with patch, positive review] change return type of G.cusps() for G a congruence subgroup
 
 archive/issues_004826.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nAs pointed out on [this](http://groups.google.com/group/sage-nt/browse_thread/thread/f0a95b54181ba6c5) thread on sage-nt, it might be more reasonable to have `G.cusps()` return a list instead of a set (for `G` a congruence subgroup). In particular, seeing an ordered list as output makes it easier to look through.\n\nThe attached patch changes this return type, as well as making a few small fixes so that this is just as fast as before (or faster, in some cases). \n\nThis patch depends on #4747.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4826\n\n",
+    "closed_at": "2008-12-21T11:45:21Z",
     "created_at": "2008-12-18T10:42:22Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "change return type of G.cusps() for G a congruence subgroup",
+    "title": "[with patch, positive review] change return type of G.cusps() for G a congruence subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4826",
     "user": "https://github.com/craigcitro"

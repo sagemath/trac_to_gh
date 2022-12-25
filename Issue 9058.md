@@ -1,15 +1,16 @@
-# Issue 9058: Compute cores to improve subgraph_search
+# Issue 9058: Computing the k-core of a graph
 
 archive/issues_009058.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nIf one is looking for H in G, then we may assume the minimum degree of G is larger than the minimum degree of H. We can assume the same for the complement when computing an induced subgraph. Take care of directed graphs.\n\nrequires #8922\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9058\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nThis patch adds an option to the ``cores`` method, so that it returns both the k-core of a graph and a valid elimination ordering on the vertices out of it (such that their degree is less than k when they are removed)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9058\n\n",
+    "closed_at": "2010-10-08T22:31:35Z",
     "created_at": "2010-05-26T22:30:27Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Compute cores to improve subgraph_search",
+    "title": "Computing the k-core of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9058",
     "user": "https://github.com/nathanncohen"
@@ -19,9 +20,7 @@ Assignee: jason, ncohen, rlm
 
 CC:  mvngu
 
-If one is looking for H in G, then we may assume the minimum degree of G is larger than the minimum degree of H. We can assume the same for the complement when computing an induced subgraph. Take care of directed graphs.
-
-requires #8922
+This patch adds an option to the ``cores`` method, so that it returns both the k-core of a graph and a valid elimination ordering on the vertices out of it (such that their degree is less than k when they are removed)
 
 Nathann
 

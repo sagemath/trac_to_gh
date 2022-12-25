@@ -1,22 +1,23 @@
-# Issue 6166: [with patch, needs review] strip 'nodetex' from the reference manual
+# Issue 6166: [with patch, positive review] strip 'nodetex' from the reference manual
 
 archive/issues_006166.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer @mwhansen\n\nThe patch is supposed to remove 'nodetex' (and any other directives in the same line) from  the reference manual; these are already stripped from interactive docstrings by #6122.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6166\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @rbeezer @mwhansen\n\nThe patch is supposed to remove 'nodetex' (and any other directives in the same line) from  the reference manual; these are already stripped from interactive docstrings by #6122.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6166\n\n",
+    "closed_at": "2009-06-01T05:28:35Z",
     "created_at": "2009-05-31T04:58:37Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] strip 'nodetex' from the reference manual",
+    "title": "[with patch, positive review] strip 'nodetex' from the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6166",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @jhpalmieri
+Assignee: @mwhansen
 
 CC:  @rbeezer @mwhansen
 

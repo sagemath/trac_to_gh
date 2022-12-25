@@ -1,16 +1,17 @@
-# Issue 6687: spell-check all modules under sage/algebras
+# Issue 6687: [with patch, positive review] spell-check all modules under sage/algebras
 
 archive/issues_006687.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6687\n\n",
+    "closed_at": "2009-08-12T02:08:14Z",
     "created_at": "2009-08-08T16:36:00Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/algebras",
+    "title": "[with patch, positive review] spell-check all modules under sage/algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6687",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

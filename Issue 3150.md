@@ -1,16 +1,17 @@
-# Issue 3150: Memory leak in combinat/matrices/dancing_links.pyx
+# Issue 3150: [with patch, positive review] Memory leak in combinat/matrices/dancing_links.pyx
 
 archive/issues_003150.json:
 ```json
 {
     "body": "Assignee: carlohamalainen\n\nCC:  sage-combinat\n\nThe wrapper for the C++ class dancing_links in dancing_links.pyx does not deallocate all memory resulting in a leak.\n\n\nRunning valgrind on dlxcpp.py:\n\n```\n==23234== LEAK SUMMARY:\n==23234==    definitely lost: 64 bytes in 2 blocks.\n==23234==    indirectly lost: 368 bytes in 12 blocks.\n==23234==      possibly lost: 201,979 bytes in 708 blocks.\n==23234==    still reachable: 28,370,716 bytes in 19,122 blocks.\n==23234==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter applying the patch:\n\n```\n==26826== LEAK SUMMARY:\n==26826==    definitely lost: 0 bytes in 0 blocks.\n==26826==      possibly lost: 202,323 bytes in 709 blocks.\n==26826==    still reachable: 28,370,372 bytes in 19,121 blocks.\n==26826==         suppressed: 0 bytes in 0 blocks.\n```\n\nAs another test I ran the following Sage program and watched the memory usage in top. Before the memory usage of the python process would grow rapidly, with the patch it seems to stabilise quickly (about 10% memory on my 2Gb laptop).\n\n```\nfrom sage.combinat.matrices.dancing_links import dlx_solver\n\nrows = [[0,1,2]]\nrows+= [[0,2]]\nrows+= [[1]]\nrows+= [[3]]\n\nfor _ in range(10000000):\n    x = sage.combinat.matrices.dancing_links.dlx_solver(rows) \n    x.search()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3150\n\n",
+    "closed_at": "2008-05-11T10:44:47Z",
     "created_at": "2008-05-10T19:10:02Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Memory leak in combinat/matrices/dancing_links.pyx",
+    "title": "[with patch, positive review] Memory leak in combinat/matrices/dancing_links.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3150",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"

@@ -1,9 +1,10 @@
-# Issue 1543: rpy build fails if "tail -1" doesn't work
+# Issue 1543: [with new spkg] rpy build fails if "tail -1" doesn't work
 
 archive/issues_001543.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nAgain, the title says it all -- on some systems (like mine), tail -1 produces an error (since this is supposedly \"deprecated\" behavior), recommending that the user use tail -n 1 instead. rpy fails after that; fixing this, everything works fine. I've added one more file to the patches/ directory, and one more line to the spkg-install (namely, copying that file over). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1543\n\n",
+    "closed_at": "2007-12-18T02:04:50Z",
     "created_at": "2007-12-17T02:56:50Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001543.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "rpy build fails if \"tail -1\" doesn't work",
+    "title": "[with new spkg] rpy build fails if \"tail -1\" doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1543",
     "user": "https://github.com/craigcitro"

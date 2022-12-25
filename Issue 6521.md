@@ -1,16 +1,17 @@
-# Issue 6521: replace .copy() with .__copy__() in matrix/matrix0.pyx
+# Issue 6521: [with patch, positive review] replace .copy() with .__copy__() in matrix/matrix0.pyx
 
 archive/issues_006521.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee also #111, where this originates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6521\n\n",
+    "closed_at": "2009-09-17T10:08:16Z",
     "created_at": "2009-07-13T10:20:55Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "replace .copy() with .__copy__() in matrix/matrix0.pyx",
+    "title": "[with patch, positive review] replace .copy() with .__copy__() in matrix/matrix0.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6521",
     "user": "https://github.com/aghitza"

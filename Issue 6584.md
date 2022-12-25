@@ -4,6 +4,7 @@ archive/issues_006584.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @loefflerd @ncalexan\n\nKeywords: ideal, intersecton, pari\n\nAs an addendum to #6457, I propose reworking the code to use the pari function `idealintersect`.   The patch does this.  The result is a significantly faster function. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6584\n\n",
+    "closed_at": "2010-01-19T00:56:17Z",
     "created_at": "2009-07-21T21:33:28Z",
     "labels": [
         "component: number fields",

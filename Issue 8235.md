@@ -3,10 +3,12 @@
 archive/issues_008235.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis ticket is related to #7985. There's another doctest in base.pyx (on line 1308) that uses the output of texture_set(), which is inconsistent across machines since the order of Texture objects in a set is not well defined. This should be a trivial fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8235\n\n",
+    "body": "Assignee: @aghitza\n\nThis ticket is related to #7985. There's another doctest in base.pyx (on line 1308) that uses the output of texture_set(), which is inconsistent across machines since the order of Texture objects in a set is not well defined. This should be a trivial fix.\n\nRelated:\u00a0#2872.\u00a0\n\nIssue created by migration from https://trac.sagemath.org/ticket/8235\n\n",
+    "closed_at": "2010-02-11T15:04:07Z",
     "created_at": "2010-02-11T00:40:23Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -19,6 +21,8 @@ archive/issues_008235.json:
 Assignee: @aghitza
 
 This ticket is related to #7985. There's another doctest in base.pyx (on line 1308) that uses the output of texture_set(), which is inconsistent across machines since the order of Texture objects in a set is not well defined. This should be a trivial fix.
+
+Related: #2872. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8235
 

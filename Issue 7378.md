@@ -3,7 +3,8 @@
 archive/issues_007378.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nIt is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.\n\nWhen an edge e between u and v is subdivided in a DiGraph, perhaps the best thing to do would be to name the new vertices as (e, 0), (e, 1), (e, 2), etc ...\n\nWe are left with a similar problem concerning the Graphs and here I have to admit I do not know which name to use without inducing some orientation..\n\nThis being said, it has to be done ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7378\n\n",
+    "body": "Assignee: @jasongrout\n\nIt is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.\n\nWhen an edge e between u and v is subdivided in a DiGraph, perhaps the best thing to do would be to name the new vertices as (e, 0), (e, 1), (e, 2), etc ...\n\nWe are left with a similar problem concerning the Graphs and here I have to admit I do not know which name to use without inducing some orientation..\n\nThis being said, it has to be done ! :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7378\n\n",
+    "closed_at": "2010-06-29T16:43:03Z",
     "created_at": "2009-11-03T09:26:13Z",
     "labels": [
         "component: graph theory"
@@ -15,7 +16,7 @@ archive/issues_007378.json:
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: @rlmill
+Assignee: @jasongrout
 
 It is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.
 
@@ -24,8 +25,6 @@ When an edge e between u and v is subdivided in a DiGraph, perhaps the best thin
 We are left with a similar problem concerning the Graphs and here I have to admit I do not know which name to use without inducing some orientation..
 
 This being said, it has to be done ! :-)
-
-Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/7378
 

@@ -4,6 +4,7 @@ archive/issues_004079.json:
 ```json
 {
     "body": "Assignee: boothby\n\nRedirect user to login page then redirect to original page after successful login.\n\nRelies on #3949 and #2407.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4079\n\n",
+    "closed_at": "2009-05-05T14:37:18Z",
     "created_at": "2008-09-08T17:42:06Z",
     "labels": [
         "component: notebook"

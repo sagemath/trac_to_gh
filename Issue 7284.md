@@ -4,6 +4,7 @@ archive/issues_007284.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nDavid Harvey wants to use GMP instead of MPIR, or want to check that they get the same answers with both libraries.  Let's make that really easy for him. \n\n http://sage.math.washington.edu/home/wstein/patches/mpir-gmp-4.3.1.spkg\n\nI named the package mpir-gmp-4.3.1.spkg, so one can drop it into sage-x.y.z.tar and just build with no other changes needed. \n\nI have tested this and several doctests fail due to different xgcd behavior.  This is expected. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7284\n\n",
+    "closed_at": "2009-11-14T03:48:04Z",
     "created_at": "2009-10-25T02:46:36Z",
     "labels": [
         "component: packages: standard"

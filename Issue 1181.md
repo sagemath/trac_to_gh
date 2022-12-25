@@ -1,16 +1,17 @@
-# Issue 1181: polynomial/fraction field __hash__ re-write
+# Issue 1181: [with patch+review] polynomial/fraction field __hash__ re-write
 
 archive/issues_001181.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attached patch has a number of goals.\n1.  Allow shared members of ZZ and ZZ[x] to be used interchangeably in a dictionary.\n2.  Replace ZZ in !#1 by QQ, IntegerModRing(p) and probably a bunch of other things.\n3.  Replace ZZ[x] in !#1 by ZZ[x,y,...]\n4.  Allow shared members of FractionFields and their base rings to be used interchangeably in a dictionary.\n5.  Make the __hash__ function faster in polynomial rings\n\nGoal !#5 was achieved very nicely for univariate poly rings, but __hash__ in QQ[x,y] was extremely fast in the original code.  Unfortunately, that very fast __hash__ violated all good things of the goals above.  It also wasn't asymptotically fast (think huge numerical coefficients).\n\nThe goals 1-4 above result in a fix for the subs method:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: (x/y).subs({x:1})\n1/y  # produced x/y in the old version\n```\n\nA bad thing about this patch is that the results of hash(x) changing reorders the output of things that come from a dictionary.  There is a number of doc-tests output changes which are only a matter of order in the list.  I think this is probably bad style in doc-tests and in real life.  At least some of those outputs have a very natural order (to the human mind if not mathematically).\n\nThe attached patch entirely supersedes #1075 and I'm going to go close it right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1181\n\n",
+    "closed_at": "2007-12-02T20:27:25Z",
     "created_at": "2007-11-15T22:07:38Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "polynomial/fraction field __hash__ re-write",
+    "title": "[with patch+review] polynomial/fraction field __hash__ re-write",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1181",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

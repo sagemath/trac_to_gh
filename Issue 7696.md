@@ -4,6 +4,7 @@ archive/issues_007696.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nzlib-1.2.3.p4/src/contrib/masmx86/inffas32.obj: 80386 COFF\nzlib-1.2.3.p4/src/contrib/masmx86/gvmat32.obj: 80386 COFF\nzlib-1.2.3.p4/src/contrib/masmx64/inffasx64.obj: ACB archive data\nzlib-1.2.3.p4/src/contrib/masmx64/gvmat64.obj: ACB archive data\n```\n\nDelete the above and it builds fine.  Similar directories don't have obj files.\n\nNote that the above is for Microsoft Windows anyways, so it's especially important we don't distribute their binary stuff!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7696\n\n",
+    "closed_at": "2010-01-03T22:23:23Z",
     "created_at": "2009-12-16T00:54:45Z",
     "labels": [
         "component: packages: standard",

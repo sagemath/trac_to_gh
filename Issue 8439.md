@@ -3,10 +3,12 @@
 archive/issues_008439.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @fchapoton\n\nThis is a possible problem when using an external maxima, that uses a backend other then ecl.\n\nclisp has some peculiar ways to figure out there is an associated pty, that is created by pty.py from pexpect interface.\n\ngcl hangs due to an \"unexcaped\" ecl specific command at the start of maxima interface; this took quite some time to find, as I was thinking it was a clisp like related issue, and tried to correct the problem in gcl and/or sage-maxima.lisp.\n\nAlso, probably not related, or a know issue, any lisp backend will hang with a command as simple as:\n\n    sage: maxima.eval('1+1;;')\n\nthat is, two sequential semicolons will apparently confuse the expect interface.\n\nWith the attached patch, going to be used in mandriva rpm, all currently maxima backends works in sage. (When installing sagemath, unless using --auto-select, the installation process will ask what package that provides maxima-backend the user wants, and the options are sbcl, clisp, gcl and ecl).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8439\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @fchapoton\n\nThis is a possible problem when using an external maxima, that uses a backend other then ecl.\n\nclisp has some peculiar ways to figure out there is an associated pty, that is created by pty.py from pexpect interface.\n\ngcl hangs due to an \"unexcaped\" ecl specific command at the start of maxima interface; this took quite some time to find, as I was thinking it was a clisp like related issue, and tried to correct the problem in gcl and/or sage-maxima.lisp.\n\nWith the attached patch, going to be used in mandriva rpm, all currently maxima backends works in sage. (When installing sagemath, unless using --auto-select, the installation process will ask what package that provides maxima-backend the user wants, and the options are sbcl, clisp, gcl and ecl).\n\n[The first chunk of the patch is not applicable to sage, as I use a modified clisp and maxima, that checks the --disable-readline option]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8439\n\n",
+    "closed_at": "2020-06-28T19:29:53Z",
     "created_at": "2010-03-04T22:37:40Z",
     "labels": [
         "component: interfaces",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -26,13 +28,10 @@ clisp has some peculiar ways to figure out there is an associated pty, that is c
 
 gcl hangs due to an "unexcaped" ecl specific command at the start of maxima interface; this took quite some time to find, as I was thinking it was a clisp like related issue, and tried to correct the problem in gcl and/or sage-maxima.lisp.
 
-Also, probably not related, or a know issue, any lisp backend will hang with a command as simple as:
-
-    sage: maxima.eval('1+1;;')
-
-that is, two sequential semicolons will apparently confuse the expect interface.
-
 With the attached patch, going to be used in mandriva rpm, all currently maxima backends works in sage. (When installing sagemath, unless using --auto-select, the installation process will ask what package that provides maxima-backend the user wants, and the options are sbcl, clisp, gcl and ecl).
+
+[The first chunk of the patch is not applicable to sage, as I use a modified clisp and maxima, that checks the --disable-readline option]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8439
 

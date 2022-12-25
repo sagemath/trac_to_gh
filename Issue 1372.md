@@ -1,16 +1,17 @@
-# Issue 1372: 2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)
+# Issue 1372: [with patch] 2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)
 
 archive/issues_001372.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJaap reports on Linux FC7, 32 bit:\n\n```\nFile \"dokchitser.py\", line 384:\n     sage: L.taylor_series(1,3)\nExpected:\n     6.2239725530250970363983975962696997888173850098274602272589e-73 + (-3.5271062035449946049211903242820246129524508593200000161038e-73)*z + \n0.75931650028842677023019260789472201907809751649492435158581*z^2 + O(z^3)\nGot:\n     6.2239725530250970363983975962696997888173850098274602272589e-73 + (-3.5271062035449946049211903242820246129524508593201400619235e-73)*z + \n0.75931650028842677023019260789472201907809751649492435158581*z^2 + O(z^3)\n**********************************************************************\n1 items had failures:\n    1 of   8 in __main__.example_7\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1372\n\n",
+    "closed_at": "2007-12-02T22:10:27Z",
     "created_at": "2007-12-02T16:34:43Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)",
+    "title": "[with patch] 2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1372",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

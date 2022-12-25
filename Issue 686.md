@@ -1,21 +1,22 @@
-# Issue 686: write MPolynomial_libsingular over number fields
+# Issue 686: [with patch, positive review] write MPolynomial_libsingular over number fields
 
 archive/issues_000686.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nthis requires writing a conversion route from/to number field elements to liBSINGULAR's native format.\n\nIssue created by migration from https://trac.sagemath.org/ticket/686\n\n",
+    "body": "Assignee: @malb\n\nthis requires writing a conversion route from/to number field elements to liBSINGULAR's native format.\n\nIssue created by migration from https://trac.sagemath.org/ticket/686\n\n",
+    "closed_at": "2008-09-28T18:15:11Z",
     "created_at": "2007-09-18T12:45:09Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "write MPolynomial_libsingular over number fields",
+    "title": "[with patch, positive review] write MPolynomial_libsingular over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/686",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 this requires writing a conversion route from/to number field elements to liBSINGULAR's native format.
 

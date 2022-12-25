@@ -3,7 +3,8 @@
 archive/issues_004545.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nAs noted on #4312, ``@`parallel` and the new preprocessing of constants don't play together very well. The fix at #4312 provides **a** fix, but a better fix is needed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4545\n\n",
+    "body": "Assignee: cwitty\n\nThe problem in #4312 got resolved along the way, we provide a doctest.\n\nOriginal description:\n\nAs noted on #4312, ``@`parallel` and the new preprocessing of constants don't play together very well. The fix at #4312 provides **a** fix, but a better fix is needed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4545\n\n",
+    "closed_at": "2021-10-09T11:10:12Z",
     "created_at": "2008-11-18T09:37:40Z",
     "labels": [
         "component: misc",
@@ -17,6 +18,10 @@ archive/issues_004545.json:
 }
 ```
 Assignee: cwitty
+
+The problem in #4312 got resolved along the way, we provide a doctest.
+
+Original description:
 
 As noted on #4312, ``@`parallel` and the new preprocessing of constants don't play together very well. The fix at #4312 provides **a** fix, but a better fix is needed.
 

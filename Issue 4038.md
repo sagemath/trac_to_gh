@@ -1,16 +1,17 @@
-# Issue 4038: Problem in factor() and roots() for p-adic polynomials
+# Issue 4038: [with patch, positive review] Problem in factor() and roots() for p-adic polynomials
 
 archive/issues_004038.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @categorie\n\nKeywords: polynomial p-adic\n\nThis was reported by Chris Wuthrich while reviewing #3377:\n\n```\nsage: E = EllipticCurve('37a1')\nsage: K =Qp(7,10)                 \nsage: EK = E.base_extend(K)\nsage: E = EllipticCurve('37a1')\nsage: K = Qp(7,10)             \nsage: EK = E.base_extend(K)    \nsage: g = EK.division_polynomial_0(3)\nsage: type(g)\n<class 'sage.rings.polynomial.padics.polynomial_padic_capped_relative_dense.Polynomial_padic_capped_relative_dense'>\nsage: g.factor()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/john/sage-3.1.2.alpha3/<ipython console> in <module>()\n\n/home/john/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py in factor(self)\n   1009         R = ZpCA(base.prime(), prec = m)\n   1010         S = PolynomialRing(R, self.parent().variable_name())\n-> 1011         F = S(self).factor()\n   1012         return Factorization([(self.parent()(a), b) for (a, b) in F], base(F.unit()))\n   1013 \n\n/home/john/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/rings/polynomial/padics/polynomial_padic_flat.py in factor(self, absprec)\n    133             lval = F[i][0].leading_coefficient().valuation()\n    134             if upart != 1:\n--> 135                 F[i] = (F[i][0] // upart, F[i][1])\n    136                 u *= upart ** F[i][1]\n    137             c -= lval * F[i][1]\n\n/home/john/sage-3.1.2.alpha3/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__floordiv__ (sage/rings/polynomial/polynomial_element.c:28101)()\n\nAttributeError: 'Polynomial_padic_flat' object has no attribute '__coeffs'\n```\n\nSomewhere in the polynomial hierarchy, this particular type of polynomial is not having its `__coeffs` field set.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4038\n\n",
+    "closed_at": "2008-12-23T21:14:17Z",
     "created_at": "2008-09-02T13:37:32Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Problem in factor() and roots() for p-adic polynomials",
+    "title": "[with patch, positive review] Problem in factor() and roots() for p-adic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4038",
     "user": "https://github.com/JohnCremona"

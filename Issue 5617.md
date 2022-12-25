@@ -1,22 +1,23 @@
-# Issue 5617: Delete the reference to solve_linear
+# Issue 5617: [with patch, positive review] Delete the reference to solve_linear
 
 archive/issues_005617.json:
 ```json
 {
-    "body": "Assignee: tba\n\nDelete the reference to solve_linear in http://sagemath.org/doc/constructions/linear_algebra.html#solving-systems-of-linear-equations since there is no such function.  Instead, as the example points out, it should probably just be a reference to solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5617\n\n",
+    "body": "Assignee: @jhpalmieri\n\nDelete the reference to solve_linear in http://sagemath.org/doc/constructions/linear_algebra.html#solving-systems-of-linear-equations since there is no such function.  Instead, as the example points out, it should probably just be a reference to solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5617\n\n",
+    "closed_at": "2009-07-23T02:50:12Z",
     "created_at": "2009-03-26T14:49:03Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Delete the reference to solve_linear",
+    "title": "[with patch, positive review] Delete the reference to solve_linear",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5617",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 Delete the reference to solve_linear in http://sagemath.org/doc/constructions/linear_algebra.html#solving-systems-of-linear-equations since there is no such function.  Instead, as the example points out, it should probably just be a reference to solve.
 

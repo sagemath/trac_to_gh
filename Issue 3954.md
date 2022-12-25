@@ -1,16 +1,17 @@
-# Issue 3954: bug in elliptic curve period_lattice
+# Issue 3954: [with patch, with positive review] bug in elliptic curve period_lattice
 
 archive/issues_003954.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n```\nHi,\n\nIs this a bug or am I doing something stupid? I get different\nprecisions the first and second time I run the same command.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E = EllipticCurve('37a')\nsage: E.period_lattice().basis(prec=30)\n\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987,\n\n2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: E.period_lattice().basis(prec=30)\n\n(2.9934586462319596298320099794525081777975837913701329853405233785632503569866829041203940673970514734358405271049472881941443872373720252543753766710932613753043332505965246252164473069072694510749057806365610445781725817135182427934263132488980086942438020870431669315,\n\n2.4513893819867900608542248318665252253496172891447966146564714061291528999992568928911321280291810887126842188696618479754751998666167558016789381647830306324546902881738259304962523119593946698932473794558796569481958707269691493740581897037588157844669302474334546641*I)\n\n\nBest regards,\n\nH\u00e5kan\n```\n\nThis is definitely a bug.  The output precision should be as given by the prec option.  The bug is caused by a mistake in the caching code, surely.   This will likely be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3954\n\n",
+    "closed_at": "2008-09-04T01:31:35Z",
     "created_at": "2008-08-26T09:03:39Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "bug in elliptic curve period_lattice",
+    "title": "[with patch, with positive review] bug in elliptic curve period_lattice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3954",
     "user": "https://github.com/williamstein"

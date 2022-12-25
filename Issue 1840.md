@@ -1,16 +1,17 @@
-# Issue 1840: Hill cipher addition to crypto package
+# Issue 1840: [with bundle, positive review] Hill cipher addition to crypto package
 
 archive/issues_001840.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis adds functionality for Hill ciphers as in the following example:\n\nsage: S = AlphabeticStrings()\nsage: E = HillCryptosystem(S,7)\nsage: E.random_key()\n\n[13  1 23  4 14 15  0]\n[11  4  4 12  0 23 14]\n[18  4 25 13 10  7 10]\n[ 9 14 13 11  1 12 10]\n[13  8 10 19 24 13 24]\n[ 8  7 12 12 25  2 10]\n[ 2  7  1 10 13 12  5]\nsage: e = E(E.random_key())\nsage: e\n\n[ 1  9  8 17 16  2 13]\n[11 12 12 24 12 25  2]\n[18 21 20  2 16  7 17]\n[17 17  8 19 14 23 19]\n[15 11 24  6  5  7  4]\n[17 20 18  6 16 13 13]\n[ 2 12 17  4 23  4  4]\nsage: pt = S([ randint(0,25) for i in range(7*16) ])\nsage: pt\nQWTWCUQMBMTGDSGTHNJLBNDEXYWGJKHZGAPRFKMPGJDXDLYYGZVTXHLJIMOGKERMWCMOOJKHGCTXAOVIJCXBIGRSLVCBZAXJBCDAEHUZUGCEYCLA\nsage: e(pt)\nYBQWKZZLXQLKVACTPHEFPHAWYSSUKFVQJGJVGVNYWXDRYMYHXZIBOGJISSTQTOQYQPYNKIVPAQZNJDXJRNPKQUWYRRGRLGERSLXUAWAMXXGSQETD\nsage: c = e.inverse()\nsage: c(e(pt)) == pt\nTrue\nsage: e.key()\n\n[ 1  9  8 17 16  2 13]\n[11 12 12 24 12 25  2]\n[18 21 20  2 16  7 17]\n[17 17  8 19 14 23 19]\n[15 11 24  6  5  7  4]\n[17 20 18  6 16 13 13]\n[ 2 12 17  4 23  4  4]\nsage: type(e.key())\n<type 'sage.matrix.matrix_modn_dense.Matrix_modn_dense'>\nsage: type(e)\n<class 'sage.crypto.classical_cipher.HillCipher'>\nsage: A = e.key()\nsage: A.det()\n17\n\nIssue created by migration from https://trac.sagemath.org/ticket/1840\n\n",
+    "body": "Assignee: cwitty\n\nThis adds functionality for Hill ciphers as in the following example:\n\n```\nsage: S = AlphabeticStrings()\nsage: E = HillCryptosystem(S,7)\nsage: E.random_key()\n\n[13  1 23  4 14 15  0]\n[11  4  4 12  0 23 14]\n[18  4 25 13 10  7 10]\n[ 9 14 13 11  1 12 10]\n[13  8 10 19 24 13 24]\n[ 8  7 12 12 25  2 10]\n[ 2  7  1 10 13 12  5]\nsage: e = E(E.random_key())\nsage: e\n\n[ 1  9  8 17 16  2 13]\n[11 12 12 24 12 25  2]\n[18 21 20  2 16  7 17]\n[17 17  8 19 14 23 19]\n[15 11 24  6  5  7  4]\n[17 20 18  6 16 13 13]\n[ 2 12 17  4 23  4  4]\nsage: pt = S([ randint(0,25) for i in range(7*16) ])\nsage: pt\nQWTWCUQMBMTGDSGTHNJLBNDEXYWGJKHZGAPRFKMPGJDXDLYYGZVTXHLJIMOGKERMWCMOOJKHGCTXAOVIJCXBIGRSLVCBZAXJBCDAEHUZUGCEYCLA\nsage: e(pt)\nYBQWKZZLXQLKVACTPHEFPHAWYSSUKFVQJGJVGVNYWXDRYMYHXZIBOGJISSTQTOQYQPYNKIVPAQZNJDXJRNPKQUWYRRGRLGERSLXUAWAMXXGSQETD\nsage: c = e.inverse()\nsage: c(e(pt)) == pt\nTrue\nsage: e.key()\n\n[ 1  9  8 17 16  2 13]\n[11 12 12 24 12 25  2]\n[18 21 20  2 16  7 17]\n[17 17  8 19 14 23 19]\n[15 11 24  6  5  7  4]\n[17 20 18  6 16 13 13]\n[ 2 12 17  4 23  4  4]\nsage: type(e.key())\n<type 'sage.matrix.matrix_modn_dense.Matrix_modn_dense'>\nsage: type(e)\n<class 'sage.crypto.classical_cipher.HillCipher'>\nsage: A = e.key()\nsage: A.det()\n17\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1840\n\n",
+    "closed_at": "2008-01-21T06:22:00Z",
     "created_at": "2008-01-18T23:08:19Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Hill cipher addition to crypto package",
+    "title": "[with bundle, positive review] Hill cipher addition to crypto package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1840",
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
@@ -20,6 +21,7 @@ Assignee: cwitty
 
 This adds functionality for Hill ciphers as in the following example:
 
+```
 sage: S = AlphabeticStrings()
 sage: E = HillCryptosystem(S,7)
 sage: E.random_key()
@@ -65,6 +67,7 @@ sage: type(e)
 sage: A = e.key()
 sage: A.det()
 17
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1840
 

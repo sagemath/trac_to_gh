@@ -1,16 +1,17 @@
-# Issue 1926: [with patch, needs review] fixes for the maple interface
+# Issue 1926: [with positive patch] fixes for the maple interface
 
 archive/issues_001926.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nAttached patch includes the following fixes:\n\n* Maple uses = as the equality test operator\n* Use . as multiplication operator\n* Print using printf(\"%q\",var)\n* Add code to convert Sage matrices to Maple\n* Add code to convert Sage vectors to Maple\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1926\n\n",
+    "closed_at": "2008-02-01T03:48:36Z",
     "created_at": "2008-01-25T13:53:08Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] fixes for the maple interface",
+    "title": "[with positive patch] fixes for the maple interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1926",
     "user": "https://github.com/burcin"

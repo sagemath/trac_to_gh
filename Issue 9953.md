@@ -4,6 +4,7 @@ archive/issues_009953.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nFor a polytope whose dimension is less than its ambient dimension, the f_vector outputs an extra top-dimensional cell. For example, a triangle in 3-space:\n\nINPUT\n\n```\nPolyhedron(vertices=[[0,0,0],[1,0,0],[0,1,0]]).f_vector()\n```\n\nOUTPUT\n\n```\n[1, 3, 3, 1, 1]\n```\n\nExpected Output\n\n```\n[1, 3, 3, 1]\n```\n\nNote, this was reported by the \"report a problem\" form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9954\n\n",
+    "closed_at": "2010-11-11T13:02:28Z",
     "created_at": "2010-09-20T18:17:56Z",
     "labels": [
         "component: geometry",

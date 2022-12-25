@@ -1,15 +1,16 @@
-# Issue 2771: [with patch, needs review] PolyBoRi doctest coverage at 54%
+# Issue 2771: [with patch, postitive review] PolyBoRi doctest coverage at 54%
 
 archive/issues_002771.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: coverage, polybori\n\n... working towards 100% :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2771\n\n",
+    "closed_at": "2008-04-03T21:14:33Z",
     "created_at": "2008-04-02T13:41:42Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] PolyBoRi doctest coverage at 54%",
+    "title": "[with patch, postitive review] PolyBoRi doctest coverage at 54%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2771",
     "user": "https://github.com/malb"

@@ -1,16 +1,17 @@
-# Issue 938: graph_database.py has some mysterious problems.
+# Issue 938: [with patch] graph_database.py has some mysterious problems.
 
 archive/issues_000938.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe graph_database.py file has lots of problems now that I've removed the sage.:'s.  This needs to be fixed, and I don't know enough about the code to fix it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/938\n\n",
+    "closed_at": "2007-10-27T02:42:49Z",
     "created_at": "2007-10-20T06:44:05Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "graph_database.py has some mysterious problems.",
+    "title": "[with patch] graph_database.py has some mysterious problems.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/938",
     "user": "https://github.com/williamstein"

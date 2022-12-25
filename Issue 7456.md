@@ -4,6 +4,7 @@ archive/issues_007456.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nKeywords: rest citation\n\nAs Martin Albrecht pointed out at #7450, there is a proper way of marking up references and citations, see \nhttp://sphinx.pocoo.org/rest.html#citations\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7456\n\n",
+    "closed_at": "2009-12-09T02:52:54Z",
     "created_at": "2009-11-13T22:17:55Z",
     "labels": [
         "component: documentation",

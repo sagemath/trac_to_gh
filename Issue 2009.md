@@ -1,16 +1,17 @@
-# Issue 2009: crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directories
+# Issue 2009: [with spkg] crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directorie
 
 archive/issues_002009.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/scripts/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/readwrite/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/generators/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/drawing/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/data/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/readwrite/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/generators/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/drawing/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/NEP/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/examples/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/.svn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2009\n\n",
+    "closed_at": "2008-02-01T02:01:01Z",
     "created_at": "2008-01-31T23:20:41Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directories",
+    "title": "[with spkg] crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directorie",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2009",
     "user": "https://github.com/williamstein"

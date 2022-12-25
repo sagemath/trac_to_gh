@@ -1,16 +1,17 @@
-# Issue 4993: OSX 64 bit: add 64 bit build support for r
+# Issue 4993: [with spkg, positive review] OSX 64 bit: add 64 bit build support for r
 
 archive/issues_004993.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4993\n\n",
+    "closed_at": "2009-01-23T00:19:43Z",
     "created_at": "2009-01-17T15:35:08Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "OSX 64 bit: add 64 bit build support for r",
+    "title": "[with spkg, positive review] OSX 64 bit: add 64 bit build support for r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4993",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,9 +4,11 @@ archive/issues_008316.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  alexghitza cwitty @mwhansen @robertwb @TimDumol\n\nWith #7249 merged, it now seems that no Sage component depends on the \"slightly outdated version\" of [Jinja](http://jinja.pocoo.org/).  If this is indeed true, we can remove `jinja-*.spkg` from the Sage distribution.\n\nOf course, we'll keep the \"awesome version\", `jinja2-*.spkg`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8316\n\n",
+    "closed_at": "2010-08-09T09:52:55Z",
     "created_at": "2010-02-20T21:25:03Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Remove the Jinja (not Jinja2) package",

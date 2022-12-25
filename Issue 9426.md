@@ -3,11 +3,11 @@
 archive/issues_009426.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jdemeyer\n\n`devel/sage/doc/common/builder.py`:\n\nIn `builder_helper.f()`:\n\n```\n...\n        logger.warning(build_command)\n        subprocess.call(build_command, shell=True)\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", output_dir)\n...\n```\n\nIn `class DocBuilder`:\n\n```\n    def pdf(self):\n        \"\"\"\n        Builds the PDF files for this document.  This is done by first\n        (re)-building the LaTeX output, going into that LaTeX\n        directory, and running 'make all-pdf' there.\n\n        EXAMPLES::\n\n            sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n            sage: b = builder.DocBuilder('tutorial')\n            sage: b.pdf() #not tested\n        \"\"\"\n        self.latex()\n        os.chdir(self._output_dir('latex'))\n        subprocess.call('make all-pdf', shell=True)\n\n        pdf_dir = self._output_dir('pdf')\n        for pdf_file in glob.glob('*.pdf'):\n            shutil.move(pdf_file, os.path.join(pdf_dir, pdf_file))\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", pdf_dir)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9426\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jdemeyer\n\nKeywords: Sphinx documentation builder error\n\n`devel/sage/doc/common/builder.py`:\n\nIn `builder_helper.f()`:\n\n```\n...\n        logger.warning(build_command)\n        subprocess.call(build_command, shell=True)\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", output_dir)\n...\n```\n\nIn `class DocBuilder`:\n\n```\n    def pdf(self):\n        \"\"\"\n        Builds the PDF files for this document.  This is done by first\n        (re)-building the LaTeX output, going into that LaTeX\n        directory, and running 'make all-pdf' there.\n\n        EXAMPLES::\n\n            sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n            sage: b = builder.DocBuilder('tutorial')\n            sage: b.pdf() #not tested\n        \"\"\"\n        self.latex()\n        os.chdir(self._output_dir('latex'))\n        subprocess.call('make all-pdf', shell=True)\n\n        pdf_dir = self._output_dir('pdf')\n        for pdf_file in glob.glob('*.pdf'):\n            shutil.move(pdf_file, os.path.join(pdf_dir, pdf_file))\n\n        logger.warning(\"Build finished.  The built documents can be found in %s\", pdf_dir)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9426\n\n",
+    "closed_at": "2010-11-09T09:31:19Z",
     "created_at": "2010-07-04T22:05:00Z",
     "labels": [
         "component: documentation",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -20,6 +20,8 @@ archive/issues_009426.json:
 Assignee: mvngu
 
 CC:  @jdemeyer
+
+Keywords: Sphinx documentation builder error
 
 `devel/sage/doc/common/builder.py`:
 

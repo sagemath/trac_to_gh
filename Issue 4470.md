@@ -1,22 +1,23 @@
-# Issue 4470: Merge Jon Hanke's qudratic forms code into Sage
+# Issue 4470: [with patch, positive review] Merge Jon Hanke's qudratic forms code into Sage
 
 archive/issues_004470.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  justin @JohnCremona @tornaria\n\nJon Hanke wrote some substantial amount of code that is still based on Sage 2.8.14. Get the code ready for review and merge it \n\n#4120 is relevant here since Justin works on binary quadratic forms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4470\n\n",
+    "body": "Assignee: @tornaria\n\nCC:  justin @JohnCremona @tornaria\n\nJon Hanke wrote some substantial amount of code that is still based on Sage 2.8.14. Get the code ready for review and merge it \n\n#4120 is relevant here since Justin works on binary quadratic forms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4470\n\n",
+    "closed_at": "2009-02-26T14:41:27Z",
     "created_at": "2008-11-08T21:29:34Z",
     "labels": [
-        "component: algebra",
+        "component: quadratic forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Merge Jon Hanke's qudratic forms code into Sage",
+    "title": "[with patch, positive review] Merge Jon Hanke's qudratic forms code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4470",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tbd
+Assignee: @tornaria
 
 CC:  justin @JohnCremona @tornaria
 

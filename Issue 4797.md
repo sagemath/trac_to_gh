@@ -1,17 +1,17 @@
-# Issue 4797: upgrade -- if upgrading Cython run -ba instead of -b
+# Issue 4797: Run sage -ba instead of sage -b after upgrading Cython
 
 archive/issues_004797.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nWhen upgrading Cython like at #4639 we should really run a -ba on upgrade and not just a -b since the new Cython version in this case does fix some fundamental issues the way exceptions are handled. In general I would be sleep much better if we do this in general since many potentially odd Heisenbugs that disappear after either a partial -b or a -ba would be avoided that way.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4797\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nKeywords: upgrade cython\n\nWe should really run `sage -ba` when we upgrade Cython and not just `sage -b`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4797\n\n",
+    "closed_at": "2012-10-05T08:56:48Z",
     "created_at": "2008-12-14T14:44:14Z",
     "labels": [
-        "component: packages",
-        "blocker",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "upgrade -- if upgrading Cython run -ba instead of -b",
+    "title": "Run sage -ba instead of sage -b after upgrading Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4797",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -21,11 +21,9 @@ Assignee: mabshoff
 
 CC:  @robertwb
 
-When upgrading Cython like at #4639 we should really run a -ba on upgrade and not just a -b since the new Cython version in this case does fix some fundamental issues the way exceptions are handled. In general I would be sleep much better if we do this in general since many potentially odd Heisenbugs that disappear after either a partial -b or a -ba would be avoided that way.
+Keywords: upgrade cython
 
-Cheers,
-
-Michael
+We should really run `sage -ba` when we upgrade Cython and not just `sage -b`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4797
 

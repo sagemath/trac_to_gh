@@ -4,6 +4,7 @@ archive/issues_008438.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  nborie\n\nKeywords: skew partitions\n\n```\nsage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()\n         ###\n        #\n       ##\n       ##\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8438\n\n",
+    "closed_at": "2010-04-15T23:52:13Z",
     "created_at": "2010-03-04T20:42:23Z",
     "labels": [
         "component: combinatorics"

@@ -1,16 +1,17 @@
-# Issue 3225: add 64 bit OSX build support for cddlib
+# Issue 3225: [with spkg, positive review] add 64 bit OSX build support for cddlib
 
 archive/issues_003225.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3225\n\n",
+    "closed_at": "2008-05-18T23:54:56Z",
     "created_at": "2008-05-16T19:39:32Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support for cddlib",
+    "title": "[with spkg, positive review] add 64 bit OSX build support for cddlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3225",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

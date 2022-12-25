@@ -1,16 +1,17 @@
-# Issue 8112: flint fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set
+# Issue 8112: flint fails to build in Open Solaris x64 as 64 bit since FLINT_TUNE is not set
 
 archive/issues_008112.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nflint-1.5.0.p3 fails to build if SAGE64=yes and no CFLAGS and CFLAG64 are set globally due to a 32/64 bit issue.\n\nA patch is on it's way.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8112\n\n",
+    "body": "Assignee: drkirkby\n\nflint-1.5.0.p3 fails to build if SAGE64=yes and no CFLAGS and CFLAG64 are set globally due to a 32/64 bit issue.\n\nA patch is on it's way.\n\n[http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)\n\nJaap\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8112\n\n",
+    "closed_at": "2010-03-06T08:39:31Z",
     "created_at": "2010-01-28T16:02:28Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "flint fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
+    "title": "flint fails to build in Open Solaris x64 as 64 bit since FLINT_TUNE is not set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8112",
     "user": "https://github.com/jaapspies"
@@ -22,7 +23,13 @@ flint-1.5.0.p3 fails to build if SAGE64=yes and no CFLAGS and CFLAG64 are set gl
 
 A patch is on it's way.
 
+[http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/flint-1.5.0.p4.spkg)
+
 Jaap
+
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8112
 

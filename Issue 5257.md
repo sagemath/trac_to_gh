@@ -1,22 +1,23 @@
-# Issue 5257: Clicking on "Log" in the notebook (bringing you to the /history page) gives errors
+# Issue 5257: [with patch, positive review] Clicking on "Log" in the notebook (bringing you to the /history page) gives errors
 
 archive/issues_005257.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the browser, I get:\n\n```\nInternal Server Error\nAn error occurred rendering the requested page. More information is available in the server log.\n```\n\nand I get a traceback as well:\n\n```\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Exception rendering:\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 186, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 289, in _continue\n\t    self.unpause()\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 285, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 1633, in render\n\t    s = notebook.user_history_html(self.username)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 842, in user_history_html\n\t    \"\"\"%(username, self.html_worksheet_list_top(username, actions=False), t)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 1318, in html_worksheet_list_top\n\t    s += self.html_new_or_upload()\n\texceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5257\n\n",
+    "body": "Assignee: @mwhansen\n\nIn the browser, I get:\n\n```\nInternal Server Error\nAn error occurred rendering the requested page. More information is available in the server log.\n```\n\nand I get a traceback as well:\n\n```\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Exception rendering:\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Unhandled Error\nTraceback (most recent call last):\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 186, in addCallbacks\n    self._runCallbacks()\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n    self.result = callback(self.result, *args, **kw)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 289, in _continue\n    self.unpause()\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 285, in unpause\n    self._runCallbacks()\n--- <exception caught here> ---\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n    self.result = callback(self.result, *args, **kw)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/server.py\", line 296, in <lambda>\n    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n    return method(request)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 202, in http_GET\n    return super(Resource, self).http_GET(request)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 128, in http_GET\n    return self.render(request)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 1633, in render\n    s = notebook.user_history_html(self.username)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 842, in user_history_html\n    \"\"\"%(username, self.html_worksheet_list_top(username, actions=False), t)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 1318, in html_worksheet_list_top\n    s += self.html_new_or_upload()\nexceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5257\n\n",
+    "closed_at": "2009-02-20T11:12:56Z",
     "created_at": "2009-02-13T18:48:32Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Clicking on \"Log\" in the notebook (bringing you to the /history page) gives errors",
+    "title": "[with patch, positive review] Clicking on \"Log\" in the notebook (bringing you to the /history page) gives errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5257",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 In the browser, I get:
 
@@ -30,34 +31,35 @@ and I get a traceback as well:
 ```
 2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Exception rendering:
 2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Unhandled Error
-	Traceback (most recent call last):
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 186, in addCallbacks
-	    self._runCallbacks()
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 328, in _runCallbacks
-	    self.result = callback(self.result, *args, **kw)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 289, in _continue
-	    self.unpause()
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 285, in unpause
-	    self._runCallbacks()
-	--- <exception caught here> ---
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 328, in _runCallbacks
-	    self.result = callback(self.result, *args, **kw)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/server.py", line 296, in <lambda>
-	    d.addCallback(lambda res, req: res.renderHTTP(req), self)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py", line 85, in renderHTTP
-	    return method(request)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py", line 202, in http_GET
-	    return super(Resource, self).http_GET(request)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py", line 128, in http_GET
-	    return self.render(request)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 1633, in render
-	    s = notebook.user_history_html(self.username)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py", line 842, in user_history_html
-	    """%(username, self.html_worksheet_list_top(username, actions=False), t)
-	  File "/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py", line 1318, in html_worksheet_list_top
-	    s += self.html_new_or_upload()
-	exceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'
+Traceback (most recent call last):
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 186, in addCallbacks
+    self._runCallbacks()
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 328, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 289, in _continue
+    self.unpause()
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 285, in unpause
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py", line 328, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/server.py", line 296, in <lambda>
+    d.addCallback(lambda res, req: res.renderHTTP(req), self)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py", line 85, in renderHTTP
+    return method(request)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py", line 202, in http_GET
+    return super(Resource, self).http_GET(request)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py", line 128, in http_GET
+    return self.render(request)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 1633, in render
+    s = notebook.user_history_html(self.username)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py", line 842, in user_history_html
+    """%(username, self.html_worksheet_list_top(username, actions=False), t)
+  File "/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py", line 1318, in html_worksheet_list_top
+    s += self.html_new_or_upload()
+exceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5257
 

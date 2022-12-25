@@ -4,6 +4,7 @@ archive/issues_008403.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nHere is a patch containing the function Graph.steiner_tree.\n\nIt consists in finding in a graph, given a set S of vertices, a tree in G of minimum weight/cardinality containing the vertices from S. \n\nEverything is explained in the docstrings anyway :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8403\n\n",
+    "closed_at": "2010-06-29T16:49:24Z",
     "created_at": "2010-02-28T17:57:45Z",
     "labels": [
         "component: graph theory"

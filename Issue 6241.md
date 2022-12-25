@@ -1,9 +1,10 @@
-# Issue 6241: numerical noise (very easy to fix) on cicero (redhat 9) i686 32-bit
+# Issue 6241: [with patch, with positive review] numerical noise (very easy to fix) on cicero (redhat 9) i686 32-bit
 
 archive/issues_006241.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNotice the 7 real part instead of 6 below:\n\n```\nPlease see /home/wstein/build/cicero/sage-4.0.1/tmp/test.log for the complete log from this test.\n[wstein@cicero sage-4.0.1]$ ./sage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\nsage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/home/wstein/build/cicero/sage-4.0.1/devel/sage/sage/rings/number_field/number_field.py\", line 7295:\n    sage: e = K.embeddings(CC)[0]; e\nExpected:\n    Ring morphism:\n    From: Number Field in a with defining polynomial x^3 - 2\n    To:   Complex Field with 53 bits of precision\n    Defn: a |--> -0.629960524947436 - 1.09112363597172*I\nGot:\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 - 1.09112363597172*I\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n**********************************************************************\n1 items had failures:\n   1 of  19 in __main__.example_180\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/cicero/sage-4.0.1/tmp/.doctest_number_field.py\n         [37.9 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field.py\"\nTotal time for all tests: 37.9 seconds\n[wstein@cicero sage-4.0.1]$ cat /etc/issue\nFedora release 9 (Sulphur)\nKernel \\r on an \\m (\\l)\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6241\n\n",
+    "closed_at": "2009-06-16T05:20:57Z",
     "created_at": "2009-06-07T13:35:32Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_006241.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "numerical noise (very easy to fix) on cicero (redhat 9) i686 32-bit",
+    "title": "[with patch, with positive review] numerical noise (very easy to fix) on cicero (redhat 9) i686 32-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6241",
     "user": "https://github.com/williamstein"

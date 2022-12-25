@@ -1,16 +1,17 @@
-# Issue 2858: parametric_plot3d doesn't like "-u"
+# Issue 2858: [with patch; positive review] parametric_plot3d throws an error when the sum of the components cancels a variable
 
 archive/issues_002858.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following two plots should give the same thing.\n\n```\nsage: parametric_plot3d((u,-u,v), (-10,10),(-10,10))\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/43/code/101.py\", line 6, in <module>\n    parametric_plot3d((u,-u,v), (-Integer(10),Integer(10)),(-Integer(10),Integer(10)))\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sympy/plotting/\", line 1, in <module>\n    \n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 362, in parametric_plot3d\n    G = parametric_plot3d_surface(f, urange, vrange, plot_points, **kwds)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 423, in parametric_plot3d_surface\n    g, (u,v) = adapt_to_callable(f, 2)\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.py\", line 492, in adapt_to_callable\n    return fast_float(f, *vars), vars\n  File \"fast_eval.pyx\", line 1276, in sage.ext.fast_eval.fast_float\n  File \"fast_eval.pyx\", line 1288, in sage.ext.fast_eval.fast_float\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5102, in _fast_float_\n    raise ValueError, \"free variable: %s\" % self._name\nValueError: free variable: u\n\nsage: parametric_plot3d((u,(-2*u+2)/2-1,v), (-10,10),(-10,10))\n(this works)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2858\n\n",
+    "closed_at": "2009-01-28T14:11:00Z",
     "created_at": "2008-04-08T21:08:25Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "parametric_plot3d doesn't like \"-u\"",
+    "title": "[with patch; positive review] parametric_plot3d throws an error when the sum of the components cancels a variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2858",
     "user": "https://github.com/jasongrout"

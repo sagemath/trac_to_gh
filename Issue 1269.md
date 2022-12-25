@@ -1,16 +1,17 @@
-# Issue 1269: [with patch] sage -t --omega does not work
+# Issue 1269: [with patch, with positive review] sage -t --omega does not work
 
 archive/issues_001269.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAfter this patch, sage -t --omega should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1269\n\n",
+    "closed_at": "2007-12-01T21:28:47Z",
     "created_at": "2007-11-25T15:44:13Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] sage -t --omega does not work",
+    "title": "[with patch, with positive review] sage -t --omega does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1269",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

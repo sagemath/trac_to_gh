@@ -1,23 +1,23 @@
-# Issue 5105: behaviour of the norm function in the p-adic ring
+# Issue 5105: [with patch; positive review] behaviour of the norm function in the p-adic ring
 
 archive/issues_005105.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe p-adic norm seems to be defined differently in SAGE to the standard textbook definition, in which it is usually normalized so that $|p|=1/p$, but this is what SAGE does:\n\n```\nsage: Q11=pAdicField(11)\nsage: n=Q11(11)\nsage: n.norm()\n11 + O(11^21)\n```\nWould it be possible to swap it round so that the norm of 11 is given as 1/11?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5105\n\n",
+    "body": "Assignee: @roed314\n\nThe p-adic norm seems to be defined differently in SAGE to the standard textbook definition, in which it is usually normalized so that $|p|=1/p$, but this is what SAGE does:\n\n```\nsage: Q11=pAdicField(11)\nsage: n=Q11(11)\nsage: n.norm()\n11 + O(11^21)\n```\nWould it be possible to swap it round so that the norm of 11 is given as 1/11?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5105\n\n",
+    "closed_at": "2009-05-11T10:33:37Z",
     "created_at": "2009-01-26T18:16:35Z",
     "labels": [
-        "component: number theory",
-        "minor",
-        "bug"
+        "component: padics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "behaviour of the norm function in the p-adic ring",
+    "title": "[with patch; positive review] behaviour of the norm function in the p-adic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5105",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @williamstein
+Assignee: @roed314
 
 The p-adic norm seems to be defined differently in SAGE to the standard textbook definition, in which it is usually normalized so that $|p|=1/p$, but this is what SAGE does:
 

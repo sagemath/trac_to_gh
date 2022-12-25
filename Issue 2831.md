@@ -1,16 +1,17 @@
-# Issue 2831: plot taking a very, very long time
+# Issue 2831: [with patch; with positive review] speed up plotting when using floor()
 
 archive/issues_002831.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn the notebook of sage-2.11:\n\ntime plot(1.0 - x * floor(1/x), (x,0.00001,1.0)\n\nCPU time: 143.77 s,  Wall time: 1660.39 s\n\nwith a correct image.\n\nMaple is almost immediate.\n\n\nEven worse:\n\ntime plot(1.0 - x * floor(1/x), (x, 0.0, 1.0), plot_points=1000)\n\n        \t\nCPU time: 244.71 s,  Wall time: 5155.23 s\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/2831\n\n",
+    "body": "Assignee: @williamstein\n\nIn the notebook of sage-2.11:\n\n```\ntime plot(1.0 - x * floor(1/x), (x,0.00001,1.0)\n\nCPU time: 143.77 s,  Wall time: 1660.39 s\n```\nwith a correct image.\n\nMaple is almost immediate.\n\n\nEven worse:\n\n```\ntime plot(1.0 - x * floor(1/x), (x, 0.0, 1.0), plot_points=1000)\n\nCPU time: 244.71 s,  Wall time: 5155.23 s\n```\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2831\n\n",
+    "closed_at": "2008-04-06T20:01:38Z",
     "created_at": "2008-04-06T16:40:19Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "plot taking a very, very long time",
+    "title": "[with patch; with positive review] speed up plotting when using floor()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2831",
     "user": "https://github.com/jaapspies"
@@ -20,10 +21,11 @@ Assignee: @williamstein
 
 In the notebook of sage-2.11:
 
+```
 time plot(1.0 - x * floor(1/x), (x,0.00001,1.0)
 
 CPU time: 143.77 s,  Wall time: 1660.39 s
-
+```
 with a correct image.
 
 Maple is almost immediate.
@@ -31,12 +33,13 @@ Maple is almost immediate.
 
 Even worse:
 
+```
 time plot(1.0 - x * floor(1/x), (x, 0.0, 1.0), plot_points=1000)
 
-        	
 CPU time: 244.71 s,  Wall time: 5155.23 s
-
+```
 Jaap
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2831
 

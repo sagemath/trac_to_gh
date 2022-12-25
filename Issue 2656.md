@@ -4,6 +4,7 @@ archive/issues_002656.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf you use \"sage -hg\" with arguments containing spaces, like:\n\n```\n  sage -hg commit -m \"This is my great new code.\"\n```\nthen the argument gets split up, so Mercurial sees something more like\n\n```\n  hg commit -m This is my great new code.\n```\n(and tries to check in files named is,my,great,new,code., with a commit message of \"This\").\n\nIssue created by migration from https://trac.sagemath.org/ticket/2656\n\n",
+    "closed_at": "2010-10-22T09:32:49Z",
     "created_at": "2008-03-23T17:40:40Z",
     "labels": [
         "component: user interface",

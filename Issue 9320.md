@@ -3,7 +3,7 @@
 archive/issues_009320.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein cturner beankao @pjbruin @JohnCremona\n\nKeywords: root number\n\nRoot numbers for elliptic curves are currently only implemented via Pari (pari(E).ellrootno()) and only over the rational numbers.\n\nWe (Tim Dokchitser's group at Sage Days 22) intend to add the possibility to compute local and global root numbers for elliptic curves over number fields.  A first patch may not fully implement the case of additive reduction over primes dividing 2 or 3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9320\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein cturner beankao @pjbruin @JohnCremona\n\nKeywords: root number\n\nRoot numbers for elliptic curves are currently only implemented via Pari (pari(E).ellrootno()) and only over the rational numbers.\n\nWe (Tim Dokchitser's group at Sage Days 22) intend to add the possibility to compute local and global root numbers for elliptic curves over number fields.  A first patch may not fully implement the case of additive reduction over primes dividing 2 or 3.\n\nUpdate: Attached is a first implementation which allows for instance:\n\n```\nsage: K.<a>=NumberField(x^4+2)\nsage: E = EllipticCurve(K, [1, a, 0, 1+a, 0])\nsage: E.root_number()\n1\nsage: E.root_number(K.ideal(a+1))\n1\n```\n\nNote that the implementation needs the patches #9334 (Hilbert symbol) and #9684 (\"dirty model\") to be applied.\n\nTo prevent incorrect results in some cases as well as crashes, the tickets #9389 and #9417 need to be addressed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9320\n\n",
     "created_at": "2010-06-23T22:14:38Z",
     "labels": [
         "component: elliptic curves",
@@ -24,6 +24,21 @@ Keywords: root number
 Root numbers for elliptic curves are currently only implemented via Pari (pari(E).ellrootno()) and only over the rational numbers.
 
 We (Tim Dokchitser's group at Sage Days 22) intend to add the possibility to compute local and global root numbers for elliptic curves over number fields.  A first patch may not fully implement the case of additive reduction over primes dividing 2 or 3.
+
+Update: Attached is a first implementation which allows for instance:
+
+```
+sage: K.<a>=NumberField(x^4+2)
+sage: E = EllipticCurve(K, [1, a, 0, 1+a, 0])
+sage: E.root_number()
+1
+sage: E.root_number(K.ideal(a+1))
+1
+```
+
+Note that the implementation needs the patches #9334 (Hilbert symbol) and #9684 ("dirty model") to be applied.
+
+To prevent incorrect results in some cases as well as crashes, the tickets #9389 and #9417 need to be addressed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9320
 

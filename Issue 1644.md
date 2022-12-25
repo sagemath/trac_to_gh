@@ -4,6 +4,7 @@ archive/issues_001644.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  michael.abshoff@googlemail.com\n\nKeywords: trac\n\nI think it would a real improvement to enable email notifications of trac tickets you are watching ala bugzilla style.  This makes it much easier to keep track of tickets you are interested in and prevents you from forgetting about them.  Also, it will allow us to set up a mailing list which keeps track of all changes to all trac tickets.  For more information on how to set this up, consult \n\nhttp://trac.edgewall.org/wiki/TracNotification\n\nIssue created by migration from https://trac.sagemath.org/ticket/1644\n\n",
+    "closed_at": "2007-12-31T09:39:42Z",
     "created_at": "2007-12-31T08:01:20Z",
     "labels": [
         "component: website/wiki"

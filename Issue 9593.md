@@ -4,6 +4,7 @@ archive/issues_009593.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill @fchapoton\n\nTry the following in 4.5.2.alpha0 (or after applying #9532):\n\n```\nsage: G = graphs.PetersenGraph()\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10000)\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10001)\n```\nI get very different-looking graphs.  (If you go back and try with iterations=10000 again, you get the same graph again, showing that #9532 did make it reproducible, at least.)\n\nMaybe some constants need tweaking?\n\nI think this may be causing the problem reported in the first comment on #9584.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9593\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2010-07-24T18:32:43Z",
     "labels": [
         "component: graph theory",

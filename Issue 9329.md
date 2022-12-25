@@ -1,15 +1,15 @@
-# Issue 9329: Make it easy to access expression tree of a symbolic expression
+# Issue 9329: Improve documentation of how to access parts of the expression tree of a symbolic expression
 
 archive/issues_009329.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  rossk @mforets @slel\n\n```\nsage: var('n')\nn\nsage: g=e^((n*pi-pi*2))\n```\nBut there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9329\n\n",
+    "body": "Assignee: @burcin\n\nCC:  rossk @mforets @slel\n\nKeywords: expression tree, symbolic expression\n\n```\nsage: var('n')\nn\nsage: g=e^((n*pi-pi*2))\n```\nThe desire is to have clear documentation on how to apply (e.g.) factor() to just some piece of this, such as the exponent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9329\n\n",
     "created_at": "2010-06-24T13:03:40Z",
     "labels": [
         "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "Make it easy to access expression tree of a symbolic expression",
+    "title": "Improve documentation of how to access parts of the expression tree of a symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9329",
     "user": "https://github.com/kcrisman"
@@ -19,12 +19,14 @@ Assignee: @burcin
 
 CC:  rossk @mforets @slel
 
+Keywords: expression tree, symbolic expression
+
 ```
 sage: var('n')
 n
 sage: g=e^((n*pi-pi*2))
 ```
-But there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.
+The desire is to have clear documentation on how to apply (e.g.) factor() to just some piece of this, such as the exponent.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9329
 

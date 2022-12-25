@@ -1,9 +1,10 @@
-# Issue 1953: [with patch] fix problems found by Jason while reviewing #1945
+# Issue 1953: [with patch; positive review] fix problems found by Jason while reviewing #1945
 
 archive/issues_001953.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nJason found a couple of problems with calculus.py while reviewing #1945: a one-character typo and a duplicate method.  The attached patch fixes both problems.\n\nDoctests pass in sage/calculus/.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1953\n\n",
+    "closed_at": "2008-01-27T22:25:45Z",
     "created_at": "2008-01-27T22:05:53Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_001953.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] fix problems found by Jason while reviewing #1945",
+    "title": "[with patch; positive review] fix problems found by Jason while reviewing #1945",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1953",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

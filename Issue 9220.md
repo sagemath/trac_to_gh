@@ -1,16 +1,17 @@
-# Issue 9220: Upredictable parent for polynomial evaluation
+# Issue 9220: Unpredictable parent for polynomial evaluation
 
 archive/issues_009220.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nI doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nMultivariate Polynomial Ring in x, y over Rational Field\n\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nUnivariate Polynomial Ring in x over Rational Field \n```\nI would expect the result of the second example in both cases.\n\nIn\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1\n\nJohn Cremona mentions #8502 as fixing a different but similar issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9220\n\n",
+    "body": "Assignee: @robertwb\n\nI doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nMultivariate Polynomial Ring in x, y over Rational Field\n\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nUnivariate Polynomial Ring in x over Rational Field \n```\nI would expect the result of the second example in both cases.\n\nIn\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1\n\nJohn Cremona mentions #8502 as fixing a different but similar issue.\n\n---\n\nApply:\n\n[attachment:9220-poly-evaluation-coerce-5.4.rebase.patch]\n[attachment:trac_9220-poly_evaluation-review-ts.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9220\n\n",
+    "closed_at": "2013-02-05T08:17:24Z",
     "created_at": "2010-06-11T21:06:02Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
-    "title": "Upredictable parent for polynomial evaluation",
+    "title": "Unpredictable parent for polynomial evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9220",
     "user": "https://github.com/nbruin"
@@ -40,6 +41,13 @@ In
 http://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1
 
 John Cremona mentions #8502 as fixing a different but similar issue.
+
+---
+
+Apply:
+
+[attachment:9220-poly-evaluation-coerce-5.4.rebase.patch]
+[attachment:trac_9220-poly_evaluation-review-ts.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9220
 

@@ -1,16 +1,17 @@
-# Issue 1116: sage -sdist recreates certain empty files in local/bin
+# Issue 1116: [fixed] sage -sdist recreates certain empty files in local/bin
 
 archive/issues_001116.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status\n? sage-cleaner.orig\n? sage-clone.orig\n? sage-lo\n? sage-make\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1116\n\n",
+    "closed_at": "2008-02-17T04:37:32Z",
     "created_at": "2007-11-06T22:26:03Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage -sdist recreates certain empty files in local/bin",
+    "title": "[fixed] sage -sdist recreates certain empty files in local/bin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1116",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

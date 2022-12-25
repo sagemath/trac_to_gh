@@ -4,6 +4,7 @@ archive/issues_000012.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe following behaviour, while strictly speaking not incorrect, is quite confusing:\n\n```\nsage: K = pAdicField(5, series_print=False)\nsage:  K(37, prec=1)\n 5^0 * (37 + O(5^1))\n```\n\nReally, it should be reducing 37 mod 5 when you do the conversion, or at the very least when you print it out, otherwise you don't realise that 37 + O(5) and 7 + O(5) are really the same thing. (This caused me a few hours of head-scratching today because I thought that two things didn't agree when actually they did.)\n\nIf you use the default series_print=True, then this doesn't happen:\n\n```\nsage: K = pAdicField(5)\nsage:  K(37, prec=1)\n 2 + O(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/12\n\n",
+    "closed_at": "2007-01-13T01:59:20Z",
     "created_at": "2006-09-12T20:15:57Z",
     "labels": [
         "component: basic arithmetic",

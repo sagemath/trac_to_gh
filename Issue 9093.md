@@ -4,9 +4,11 @@ archive/issues_009093.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\n```\nsage: R.<x> = QQ[]\nsage: R(1).is_square()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9093\n\n",
+    "closed_at": "2010-06-03T04:33:11Z",
     "created_at": "2010-05-30T08:37:36Z",
     "labels": [
         "component: algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",

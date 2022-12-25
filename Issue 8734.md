@@ -3,7 +3,8 @@
 archive/issues_008734.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein acleone @kcrisman @robert-marik @burcin @saliola\n\nThis patch prepends a unique string, \"_SAGE_VAR_\", to each variable name in maxima, to avoid conflicts with existing variables in maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8734\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @williamstein acleone @kcrisman @robert-marik @burcin @saliola\n\nThis patch prepends a unique string, \"_SAGE_VAR_\", to each variable name in maxima, to avoid conflicts with existing variables in maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8734\n\n",
+    "closed_at": "2014-07-06T17:55:56Z",
     "created_at": "2010-04-21T05:45:14Z",
     "labels": [
         "component: interfaces",
@@ -16,7 +17,7 @@ archive/issues_008734.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @williamstein acleone @kcrisman @robert-marik @burcin @saliola
 

@@ -1,9 +1,10 @@
-# Issue 345: Safari bugs
+# Issue 345: [invalid?] Safari bugs
 
 archive/issues_000345.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn Safari:\n* Hitting up at top of a cell does not go to cell above and hitting down at the bottom of a cell does not go to the next cell.\n* Sometimes cells are impossible to focus\n* Clicking on a cell moves page to top\n\nBugs reported by Nikos Apostolakis\n\nIssue created by migration from https://trac.sagemath.org/ticket/345\n\n",
+    "closed_at": "2008-10-26T16:21:00Z",
     "created_at": "2007-04-03T15:53:24Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_000345.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Safari bugs",
+    "title": "[invalid?] Safari bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/345",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

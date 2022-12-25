@@ -3,7 +3,8 @@
 archive/issues_009652.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @mstreng @lftabera\n\nThis code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:\n\n```\ndef valuation(m, p):\n    if hasattr(m, 'valuation'):\n        return m.valuation(p)\n    if is_FractionFieldElement(m):  \n        return valuation(m.numerator()) - valuation(m.denominator())\n    if m == 0:\n        import sage.rings.all\n        return sage.rings.all.infinity\n    r = 0\n    power = p\n    while not (m % power): # m % power == 0\n        r += 1\n        power *= p\n    return r\n```\n\nPutting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable \"p\" as it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9652\n\n",
+    "body": "Assignee: @koffie\n\nCC:  @mstreng @lftabera\n\nThis code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:\n\n```\ndef valuation(m, p):\n    if hasattr(m, 'valuation'):\n        return m.valuation(p)\n    if is_FractionFieldElement(m):  \n        return valuation(m.numerator()) - valuation(m.denominator())\n    if m == 0:\n        import sage.rings.all\n        return sage.rings.all.infinity\n    r = 0\n    power = p\n    while not (m % power): # m % power == 0\n        r += 1\n        power *= p\n    return r\n```\n\nPutting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable \"p\" as it should.\n\nPatches to apply in order:\n\n1. smallfix1-arith_valuation.2.3.patch\n\n2. smallfix1-arith_valuation-doctest.2.3.patch \n\nIssue created by migration from https://trac.sagemath.org/ticket/9652\n\n",
+    "closed_at": "2010-09-15T11:14:02Z",
     "created_at": "2010-07-31T20:35:45Z",
     "labels": [
         "component: algebra",
@@ -17,7 +18,7 @@ archive/issues_009652.json:
     "user": "https://github.com/koffie"
 }
 ```
-Assignee: @aghitza
+Assignee: @koffie
 
 CC:  @mstreng @lftabera
 
@@ -41,6 +42,12 @@ def valuation(m, p):
 ```
 
 Putting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable "p" as it should.
+
+Patches to apply in order:
+
+1. smallfix1-arith_valuation.2.3.patch
+
+2. smallfix1-arith_valuation-doctest.2.3.patch 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9652
 

@@ -1,16 +1,17 @@
-# Issue 3055: creating subgraph does not delete _pos entries
+# Issue 3055: [with patch, positive review] creating subgraph does not delete _pos entries
 
 archive/issues_003055.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis means that later, a call to relabel fails.  This affects, for example, the graph isomorphism code (which was how the error was originally found).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3055\n\n",
+    "closed_at": "2008-04-30T02:17:29Z",
     "created_at": "2008-04-29T20:42:56Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "creating subgraph does not delete _pos entries",
+    "title": "[with patch, positive review] creating subgraph does not delete _pos entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3055",
     "user": "https://github.com/jasongrout"

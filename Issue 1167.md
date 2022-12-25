@@ -1,9 +1,10 @@
-# Issue 1167: Spelling errors in documentation
+# Issue 1167: [with patch, with positive review] Spelling errors in documentation
 
 archive/issues_001167.json:
 ```json
 {
-    "body": "Assignee: tba\n\nOn page 2.4.1 of the Sage Tutorial (\"Univariate Polynomials\"), the word \"interderminant\" should be \"indeterminate\".\n\nOn page 2.4.2 of the Tutorial \"Next lets do some arithmetic\" should be \"Next let's do some arithmetic\".\n\nOn page 2.5 of the Tutorial \"the Euler's \\phi-function\" should be \"Euler's \\phi function\".\n\nOn page 2.5.1 of the Tutorial \"we construct the group of Dirichlet character mod 20\" should read \"we construct the group of Dirichlet characters mod 20\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/1167\n\n",
+    "body": "Assignee: @mwhansen\n\nOn page 2.4.1 of the Sage Tutorial (\"Univariate Polynomials\"), the word \"interderminant\" should be \"indeterminate\".\n\nOn page 2.4.2 of the Tutorial \"Next lets do some arithmetic\" should be \"Next let's do some arithmetic\".\n\nOn page 2.5 of the Tutorial \"the Euler's \\phi-function\" should be \"Euler's \\phi function\".\n\nOn page 2.5.1 of the Tutorial \"we construct the group of Dirichlet character mod 20\" should read \"we construct the group of Dirichlet characters mod 20\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/1167\n\n",
+    "closed_at": "2007-12-09T10:26:46Z",
     "created_at": "2007-11-13T22:56:08Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_001167.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Spelling errors in documentation",
+    "title": "[with patch, with positive review] Spelling errors in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1167",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 On page 2.4.1 of the Sage Tutorial ("Univariate Polynomials"), the word "interderminant" should be "indeterminate".
 

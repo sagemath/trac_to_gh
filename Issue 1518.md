@@ -1,15 +1,16 @@
-# Issue 1518: [with trivial patch] cache computing order of elliptic curve over finite field
+# Issue 1518: [with trivial patch, with positive review] cache computing order of elliptic curve over finite field
 
 archive/issues_001518.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1518\n\n",
+    "closed_at": "2007-12-15T09:37:44Z",
     "created_at": "2007-12-15T05:41:50Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with trivial patch] cache computing order of elliptic curve over finite field",
+    "title": "[with trivial patch, with positive review] cache computing order of elliptic curve over finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1518",
     "user": "https://github.com/williamstein"

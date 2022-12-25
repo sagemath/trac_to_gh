@@ -4,6 +4,7 @@ archive/issues_008201.json:
 ```json
 {
     "body": "Assignee: Martin Raum\n\nCC:  mvngu\n\nKeywords: fortran\n\nThe spkg-install script on Linux first checks \"which gfortran\" and if no instance is found it aborts. This is a problem if for example the binary is gfortran-4.3. Then sage won't build.\n\nEven then scipy won't build, because as soon as compiler flags are passed in scipy's setup.py, the fortran compiler is not found anymore. This happens because \"sage_fortran\" is our binary/script but it should be a stardard name. Scipy will have to care for the -fPIC flags.\n\nThis is related to #8049 !\n\nIssue created by migration from https://trac.sagemath.org/ticket/8201\n\n",
+    "closed_at": "2010-02-22T17:46:12Z",
     "created_at": "2010-02-06T19:09:33Z",
     "labels": [
         "component: build",

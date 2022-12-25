@@ -4,6 +4,7 @@ archive/issues_009403.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  ebeyerstedt fwclarke @loefflerd\n\nKeywords: number field, embedding, homomorphism, preimage\n\nI am adding a preimage method in the NumberFieldHomomorphism_im_gens class. There may be a better or more general place to put this, but we need it for the descend_to method in EllipticCurve so I am putting it there for now.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9403\n\n",
+    "closed_at": "2010-07-27T00:50:45Z",
     "created_at": "2010-07-01T23:18:22Z",
     "labels": [
         "component: algebra"

@@ -4,6 +4,7 @@ archive/issues_000138.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: documentation\n\nThere seems to be a problem with the SAGE reference manual (at least the one that is on the web).\n\nWhen I go to:\nhttp://sage.math.washington.edu/SAGE/doc/html/ref/index.html\n\nAnd click on, for example, the link called \"Matrices and Spaces of Matrices\", I am brought instead to the root page for \"Algebras\":\nhttp://sage.math.washington.edu/SAGE/doc/html/ref/node214.html\n\nClicking on other links results in arriving at similarly undersired pages.\n\nIssue created by migration from https://trac.sagemath.org/ticket/138\n\n",
+    "closed_at": "2007-01-12T23:25:07Z",
     "created_at": "2006-10-19T03:07:07Z",
     "labels": [
         "component: user interface",

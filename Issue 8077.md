@@ -4,6 +4,7 @@ archive/issues_008077.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nNow SAGE64=\"yes\" works for Open Solaris too.\n\nThe package can de found here:\n[http://boxen.math.washington.edu/home/jsp/ports/python_gnutls-1.1.4.p7.spkg](http://boxen.math.washington.edu/home/jsp/ports/python_gnutls-1.1.4.p7.spkg)\n\n\n```\nWriting /export/home/jaap/Downloads/sage-4.3.1/local/lib/python2.6/site-packages/python_gnutls-1.1.4-py2.6.egg-info\n\nreal\t0m6.243s\nuser\t0m0.188s\nsys\t0m0.245s\nSuccessfully installed python_gnutls-1.1.4.p7\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/python_gnutls-1.1.4.p7\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing python_gnutls-1.1.4.p7.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ touch spkg/installed/gnutls-1.1.4.p6\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8077\n\n",
+    "closed_at": "2010-02-11T15:17:53Z",
     "created_at": "2010-01-26T12:25:32Z",
     "labels": [
         "component: porting"

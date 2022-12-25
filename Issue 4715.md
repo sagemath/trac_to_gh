@@ -1,16 +1,17 @@
-# Issue 4715: Small bug in KodairaSymbol
+# Issue 4715: [with patch; positive review] Two small bugs in KodairaSymbol
 
 archive/issues_004715.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  tnagel\n\n#4412 had a buglet:  for Kodaira Class Im the _roman field was not being set (it should be 1).  This is only currently used in the tamagawa_exponent() function for elliptic curves over number fields.\n\nOne-line patch coming up, plus a corresponding doctest.\n\nThis was reported by Tobias Nagel:\n\n```\nsage: E=EllipticCurve('117a3');                        \nsage: E.tamagawa_exponent(13)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/tobi/test_Sint/<ipython console> in <module>()\n\n/home/tobi/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in tamagawa_exponent(self, p)\n 2190             return cp\n 2191         ks = self.kodaira_type(p)\n-> 2192         if ks._roman==1 and ks._n%2==0 and ks._starred:\n 2193             return 2\n 2194         return 4\n\nAttributeError: 'KodairaSymbol_class' object has no attribute '_roman'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4715\n\n",
+    "closed_at": "2008-12-07T09:07:17Z",
     "created_at": "2008-12-05T11:58:25Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Small bug in KodairaSymbol",
+    "title": "[with patch; positive review] Two small bugs in KodairaSymbol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4715",
     "user": "https://github.com/JohnCremona"

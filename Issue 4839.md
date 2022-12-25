@@ -4,10 +4,10 @@ archive/issues_004839.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen @jdemeyer\n\nMake it so that the following works:\n\n```\nsage: var('t')\nt\nsage: x=function('x', t)\nsage: soln=desolve_laplace(diff(x,t)+x==1, x, ics=[0,2]) \nsage: soln(3) \ne^-3 + 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4839\n\n",
+    "closed_at": "2010-11-04T19:30:45Z",
     "created_at": "2008-12-20T20:12:20Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "update desolve_laplace like #4285 did for desolve",

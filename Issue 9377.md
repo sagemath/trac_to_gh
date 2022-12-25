@@ -4,9 +4,11 @@ archive/issues_009377.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: F.<a>=GF(4)\nsage: m=matrix(2,[F(1),2,3,4])\nsage: magma(m) \n---------------------------------------------------------------------------\nTypeError  \n...\nTypeError: unable to coerce element into magma\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9377\n\n",
+    "closed_at": "2010-07-22T08:21:35Z",
     "created_at": "2010-06-29T18:16:05Z",
     "labels": [
         "component: interfaces",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",

@@ -1,16 +1,17 @@
-# Issue 9543: Enable cephes on FreeBSD
+# Issue 9543: Enable cephes on FreeBSD and disable it on Cygwin
 
 archive/issues_009543.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\nCC:  @mwhansen jpflori\n\nFreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, removes a reference to a non-existent test package and enables error checking.  The latter two components are needed on Cygwin as well as FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9543\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  @mwhansen jpflori\n\nKeywords: cephes spkg cygwin freebsd\n\nFreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, enables error checking and renames the long double gamma() functions in line with C99.  The latter two components are applicable to Cygwin as well as FreeBSD.\n\nSpkg at http://boxen.math.washington.edu/home/jpflori/cephes-2.8.p1.spkg\n\n\n---\n\nAdditional comments for perusal in the future:\n\nA number of areas still need work - in particular some of the cephes self tests have been removed and some of the other self tests fail (at least some of the failures reflect bugs in cephes).  Suitable self-tests and a spkg-check script need to be developed.  It's possible mpfr could be used as a reference library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9543\n\n",
+    "closed_at": "2013-01-12T08:52:00Z",
     "created_at": "2010-07-18T19:57:13Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
-    "title": "Enable cephes on FreeBSD",
+    "title": "Enable cephes on FreeBSD and disable it on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9543",
     "user": "https://github.com/peterjeremy"
@@ -20,7 +21,19 @@ Assignee: @peterjeremy
 
 CC:  @mwhansen jpflori
 
-FreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, removes a reference to a non-existent test package and enables error checking.  The latter two components are needed on Cygwin as well as FreeBSD.
+Keywords: cephes spkg cygwin freebsd
+
+FreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, enables error checking and renames the long double gamma() functions in line with C99.  The latter two components are applicable to Cygwin as well as FreeBSD.
+
+Spkg at http://boxen.math.washington.edu/home/jpflori/cephes-2.8.p1.spkg
+
+
+---
+
+Additional comments for perusal in the future:
+
+A number of areas still need work - in particular some of the cephes self tests have been removed and some of the other self tests fail (at least some of the failures reflect bugs in cephes).  Suitable self-tests and a spkg-check script need to be developed.  It's possible mpfr could be used as a reference library.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9543
 

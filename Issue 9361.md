@@ -1,17 +1,18 @@
-# Issue 9361: Maxima timeout when creating tab completion list on Mac PPC
+# Issue 9361: Maxima timeout on Mac OS X 10.4 (Tiger)
 
 archive/issues_009361.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  georgsweber @kcrisman\n\nThis has been reported on more than one Mac running OSX 10.4 Tiger.\n\n```\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \u00a0 \u00a0 \u00a0 \u00a0 sage -t \u00a0-long\n> \"rro/sage-4.4.4.alpha1/devel/sage/sage/interfaces/maxima.py\" #\n> Killed/crashed\n```\nThis is due to the commands in this file which create the tab completion list for use with Sage's Maxima; for some reason even when done 'by hand' they often time out, and since they happen a few different times in this file it will nearly always time out (even with huge `SAGE_TIMEOUT` set)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9361\n\n",
+    "body": "Assignee: tbd\n\nCC:  georgsweber @kcrisman\n\nThis has been reported on more than one Mac running OSX 10.4 Tiger:\n\n```\n$ ./sage -t devel/sage/sage/interfaces/maxima.py\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n\n         [361.3 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\" # Time out\nTotal time for all tests: 361.3 seconds\n```\nThis is because on OS X 10.4, maxima takes a long time (a few seconds to a minute) to process an interrupt.  Sage only waits 2 seconds for an interrupt and thinks that Maxima is stuck.  It naively sends more interrupts which totally lock up Maxima.  The work-around is simply to send only 1 interrupt and wait...\n\nWith the patch:\n\n```\n$ ./sage -t devel/sage/sage/interfaces/maxima.py\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n         [129.5 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 130.0 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9361\n\n",
+    "closed_at": "2012-01-20T08:37:11Z",
     "created_at": "2010-06-28T18:24:34Z",
     "labels": [
         "component: packages: standard",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Maxima timeout when creating tab completion list on Mac PPC",
+    "title": "Maxima timeout on Mac OS X 10.4 (Tiger)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9361",
     "user": "https://github.com/kcrisman"
@@ -21,18 +22,35 @@ Assignee: tbd
 
 CC:  georgsweber @kcrisman
 
-This has been reported on more than one Mac running OSX 10.4 Tiger.
+This has been reported on more than one Mac running OSX 10.4 Tiger:
 
 ```
-> 
-> ----------------------------------------------------------------------
-> The following tests failed:
-> 
->         sage -t  -long
-> "rro/sage-4.4.4.alpha1/devel/sage/sage/interfaces/maxima.py" #
-> Killed/crashed
+$ ./sage -t devel/sage/sage/interfaces/maxima.py
+sage -t  "devel/sage/sage/interfaces/maxima.py"
+*** *** Error: TIMED OUT! PROCESS KILLED! *** ***
+
+         [361.3 s]
+
+----------------------------------------------------------------------
+The following tests failed:
+
+
+        sage -t  "devel/sage/sage/interfaces/maxima.py" # Time out
+Total time for all tests: 361.3 seconds
 ```
-This is due to the commands in this file which create the tab completion list for use with Sage's Maxima; for some reason even when done 'by hand' they often time out, and since they happen a few different times in this file it will nearly always time out (even with huge `SAGE_TIMEOUT` set)
+This is because on OS X 10.4, maxima takes a long time (a few seconds to a minute) to process an interrupt.  Sage only waits 2 seconds for an interrupt and thinks that Maxima is stuck.  It naively sends more interrupts which totally lock up Maxima.  The work-around is simply to send only 1 interrupt and wait...
+
+With the patch:
+
+```
+$ ./sage -t devel/sage/sage/interfaces/maxima.py
+sage -t  "devel/sage/sage/interfaces/maxima.py"
+         [129.5 s]
+
+----------------------------------------------------------------------
+All tests passed!
+Total time for all tests: 130.0 seconds
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9361
 

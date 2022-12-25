@@ -3,7 +3,7 @@
 archive/issues_009883.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: f = S([R.random_element() for i in range(100)])\nsage: timeit(\"L = f.list()\")\n125 loops, best of 3: 1.13 ms per loop\n```\n\nThat's about 29000 cycles per coefficient conversion. See also #9883.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9884\n\n",
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: f = S([R.random_element() for i in range(100)])\nsage: timeit(\"L = f.list()\")\n125 loops, best of 3: 1.13 ms per loop\n```\n\n\nThat's about 29000 cycles per coefficient conversion. See also #9883.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9884\n\n",
     "created_at": "2010-09-09T16:03:04Z",
     "labels": [
         "component: performance",
@@ -27,7 +27,9 @@ sage: timeit("L = f.list()")
 125 loops, best of 3: 1.13 ms per loop
 ```
 
+
 That's about 29000 cycles per coefficient conversion. See also #9883.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9884
 

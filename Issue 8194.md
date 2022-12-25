@@ -1,15 +1,16 @@
-# Issue 8194: SageNB 0.8.x
+# Issue 8194: SageNB 0.7.5
 
 archive/issues_008194.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  acleone @jhpalmieri @robert-marik\n\nThe trial spkg at\n\n* \n\nHas the queue\n\nIssue created by migration from https://trac.sagemath.org/ticket/8194\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  acleone @jhpalmieri @robert-marik\n\nThe new spkg is at\n\n* http://boxen.math.washington.edu/home/mpatel/trac/8194/sagenb-0.7.5.spkg\n\nMerged in 0.7.5: #8208, #8100, #8165, #8033, #8134, #8202, #7506, #8161.\n\nNote: We need to synchronize with 4.3.3.alpha0 on #7506, #8161.\n\nTo test the spkg with 4.3.2, please apply #8161's sage repository patch.  Or you can test with 4.3.3.alpha0, which includes 0.7.5, the patch, and several other merged tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8194\n\n",
+    "closed_at": "2010-02-14T03:39:30Z",
     "created_at": "2010-02-05T15:58:45Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "SageNB 0.8.x",
+    "title": "SageNB 0.7.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8194",
     "user": "https://github.com/qed777"
@@ -19,11 +20,15 @@ Assignee: @williamstein
 
 CC:  acleone @jhpalmieri @robert-marik
 
-The trial spkg at
+The new spkg is at
 
-* 
+* http://boxen.math.washington.edu/home/mpatel/trac/8194/sagenb-0.7.5.spkg
 
-Has the queue
+Merged in 0.7.5: #8208, #8100, #8165, #8033, #8134, #8202, #7506, #8161.
+
+Note: We need to synchronize with 4.3.3.alpha0 on #7506, #8161.
+
+To test the spkg with 4.3.2, please apply #8161's sage repository patch.  Or you can test with 4.3.3.alpha0, which includes 0.7.5, the patch, and several other merged tickets.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8194
 

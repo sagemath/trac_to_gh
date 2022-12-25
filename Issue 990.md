@@ -3,7 +3,8 @@
 archive/issues_000990.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAdd support for inverse hyperbolic functions in Sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/990\n\n",
+    "body": "Assignee: @mwhansen\n\nAdd support for inverse hyperbolic functions in Sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/990\n\n",
+    "closed_at": "2007-11-30T23:34:28Z",
     "created_at": "2007-10-25T01:17:12Z",
     "labels": [
         "component: calculus"
@@ -15,7 +16,7 @@ archive/issues_000990.json:
     "user": "https://github.com/bobmoretti"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Add support for inverse hyperbolic functions in Sage
 

@@ -1,9 +1,10 @@
-# Issue 1688: fortran -- give option to set the libgfortran.so
+# Issue 1688: [with spkg, positive review] fortran -- give option to set the libgfortran.so
 
 archive/issues_001688.json:
 ```json
 {
     "body": "Assignee: jkantor\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1688\n\n",
+    "closed_at": "2008-01-05T00:40:23Z",
     "created_at": "2008-01-05T00:29:07Z",
     "labels": [
         "component: numerical",
@@ -11,7 +12,7 @@ archive/issues_001688.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "fortran -- give option to set the libgfortran.so",
+    "title": "[with spkg, positive review] fortran -- give option to set the libgfortran.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1688",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 4599: sage/schemes/elliptic_curves/ell_rational_field.py doctest failure due to missing "#optional"
+# Issue 4599: [with patch, with positive review] sage/schemes/elliptic_curves/ell_rational_field.py doctest failure due to missing "#optional"
 
 archive/issues_004599.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJaap reported:\n\n```\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n************** ******************************************************** \nFile \"/home/jaap/downloads/sage-3.2.1.alpha0/devel/sage/sage/schemes/elliptic_cu rves/ell_rational_field.py\", line 1183: \n     sage: EllipticCurve('14a1').three_selmer_rank() \nException raised: \n[...] \n     TypeError: Unable to start magma because the command 'magma -n' failed. \n********************************************************************** \n1 items had failures: \n    1 of   3 in __main__.example_29 \n***Test Failed*** 1 failures. \nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.1.alpha0/tmp/.doctest_ell_rational_field.py \n         [79.8 s] \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4599\n\n",
+    "closed_at": "2008-11-24T23:36:35Z",
     "created_at": "2008-11-23T22:12:06Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "sage/schemes/elliptic_curves/ell_rational_field.py doctest failure due to missing \"#optional\"",
+    "title": "[with patch, with positive review] sage/schemes/elliptic_curves/ell_rational_field.py doctest failure due to missing \"#optional\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4599",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,9 +1,10 @@
-# Issue 5772: notebook -- typo in twist.py causes Internal Server Error
+# Issue 5772: [with patch; positive review] notebook -- typo in twist.py causes Internal Server Error
 
 archive/issues_005772.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\n\t  File \"/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 379, in callback\n\t    return HTMLRespone(stream = message(s, '/'))\n\texceptions.NameError: global name 'HTMLRespone' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5772\n\n",
+    "body": "Assignee: boothby\n\n```\n    File \"/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 379, in callback\n    return HTMLRespone(stream = message(s, '/'))\nexceptions.NameError: global name 'HTMLRespone' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5772\n\n",
+    "closed_at": "2009-04-13T05:49:39Z",
     "created_at": "2009-04-13T04:10:42Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005772.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "notebook -- typo in twist.py causes Internal Server Error",
+    "title": "[with patch; positive review] notebook -- typo in twist.py causes Internal Server Error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5772",
     "user": "https://github.com/williamstein"
@@ -20,9 +21,9 @@ archive/issues_005772.json:
 Assignee: boothby
 
 ```
-	  File "/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 379, in callback
-	    return HTMLRespone(stream = message(s, '/'))
-	exceptions.NameError: global name 'HTMLRespone' is not defined
+    File "/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 379, in callback
+    return HTMLRespone(stream = message(s, '/'))
+exceptions.NameError: global name 'HTMLRespone' is not defined
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5772

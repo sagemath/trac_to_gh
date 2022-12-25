@@ -1,16 +1,17 @@
-# Issue 80: Clarify: version.py versus sage-version
+# Issue 80: Clarify: version.py versus sage-version (probably easy to implement)
 
 archive/issues_000080.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nOn Sat, 23 Sep 2006 07:55:20 -0700, David Joyner <wdjoyner@gmail.com> wrote:\n\n>> To try it out in the latest SAGE (1.3.7.3.3 and not earlier!),\n>> type (from <SAGE_ROOT>/deve/sage)\n>>\n>> sage -hg pull http://sage.math.washington.edu/sage/hg/sage-main\n>> sage -hg merge    # if necessary\n>> sage -hg update\n>>\n>>\n>\n> wdj@wooster:~/sagefiles/sage-1.2.0/devel/sage$ ../../sage -hg update\n> remote changed .hgtags which local deleted\n> (k)eep or (d)elete?   k\n> remote changed export which local deleted\n> (k)eep or (d)elete? k\n> merging sage/version.py\n>\n> Now kdiff3 (which I mistook for a browser window) opens with some text\n> highlighted\n> in yellow and red. The bar at the bottom says \"Number of remaining\n> unsolved conflicts: 1\".\n> The conflict appears to be in version.py. I clicked on \"merge\" on the\n> top bar and then\n> picked \"line 1 from C\", which was one of the options in the pop-down  \n> menu,\n> then then clicked on \"save\" and quit. If memory serves (which is iffy),\n> line C\n> indicated the version was 1.3.7.3.3. However, when I start sage I get:\n>\n> --------------------------------------------------------\n> | SAGE Version 1.3.7.3, Build Date: 2006-09-21-0448    |\n> | Distributed under the GNU General Public License V2. |\n> --------------------------------------------------------\n>\n> sage: version()\n>  'SAGE Version 1.3.7.3, Build Date: 2006-09-21-0448'\n>\n> This is different than what\n> /home/wdj/sagefiles/sage-1.2.0/devel/sage-main/sage/version.py\n> indicates: version='1.3.7.3.3'; date='2006-09-21'\n>\n> This seems funny to me. Is there a mistake here?\n\nThe banner is not the output of version().   The banner is the output\nof <SAGE_ROOT>/local/bin/sage-banner, which gets updated when you\nupgrade sage_scripts.    In contrast, the version() function outputs\nthe version number of the SAGE library, i.e., what is in version.py,\nwhich you just upgraded (correctly).    I should make the output\nof version() much different.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/80\n\n",
+    "closed_at": "2008-10-31T21:08:00Z",
     "created_at": "2006-09-23T15:50:59Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Clarify: version.py versus sage-version",
+    "title": "Clarify: version.py versus sage-version (probably easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/80",
     "user": "https://github.com/williamstein"

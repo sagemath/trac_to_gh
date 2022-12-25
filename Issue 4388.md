@@ -1,16 +1,17 @@
-# Issue 4388: elliptic curves: basis_matrix command totally broken
+# Issue 4388: [with patch, with positive review] elliptic curves: basis_matrix command totally broken
 
 archive/issues_004388.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: EllipticCurve('11a').period_lattice().basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 0.634604652139777 + 1.45881661693850*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4388\n\n",
+    "closed_at": "2008-11-04T14:05:18Z",
     "created_at": "2008-10-30T05:15:58Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "elliptic curves: basis_matrix command totally broken",
+    "title": "[with patch, with positive review] elliptic curves: basis_matrix command totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4388",
     "user": "https://github.com/williamstein"

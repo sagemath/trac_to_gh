@@ -1,16 +1,17 @@
-# Issue 3558: [with patch, needs review] make  "% cells" work in the notebook when the mode is not set to "sage"
+# Issue 3558: [with patch, positive review] make  "% cells" work in the notebook when the mode is not set to "sage
 
 archive/issues_003558.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3558\n\n",
+    "closed_at": "2008-07-31T00:48:09Z",
     "created_at": "2008-07-06T02:03:51Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] make  \"% cells\" work in the notebook when the mode is not set to \"sage\"",
+    "title": "[with patch, positive review] make  \"% cells\" work in the notebook when the mode is not set to \"sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3558",
     "user": "https://github.com/mwhansen"

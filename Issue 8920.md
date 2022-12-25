@@ -3,7 +3,8 @@
 archive/issues_008920.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @videlec @staroste\n\nKeywords: Words, Sets\n\nThere is a lot of common code....\n\nIssue created by migration from https://trac.sagemath.org/ticket/8920\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @videlec @staroste\n\nKeywords: Words, Sets, Cernay2012, days45\n\nCreate a class `TotallyOrderedFiniteSet` in sage.sets. Delete the different classes for alphabets (in sage.combinat.words.alphabet) and use the one in Sage (included the freshly created `TotallyOrderedFiniteSet`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8920\n\n",
+    "closed_at": "2013-02-28T10:30:47Z",
     "created_at": "2010-05-07T17:04:04Z",
     "labels": [
         "component: combinatorics",
@@ -20,9 +21,9 @@ Assignee: sage-combinat
 
 CC:  sage-combinat @videlec @staroste
 
-Keywords: Words, Sets
+Keywords: Words, Sets, Cernay2012, days45
 
-There is a lot of common code....
+Create a class `TotallyOrderedFiniteSet` in sage.sets. Delete the different classes for alphabets (in sage.combinat.words.alphabet) and use the one in Sage (included the freshly created `TotallyOrderedFiniteSet`).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8920
 

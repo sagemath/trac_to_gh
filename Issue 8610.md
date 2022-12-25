@@ -4,6 +4,7 @@ archive/issues_008610.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThere is a bug in caching, which this fixes.  Also, I add a missing doctest to get coverage to 100% on that file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8610\n\n",
+    "closed_at": "2010-04-16T18:53:02Z",
     "created_at": "2010-03-26T02:00:35Z",
     "labels": [
         "component: modular forms",

@@ -3,7 +3,8 @@
 archive/issues_008537.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage has an Open MPI optional package, which uses version 1.1.4 of Open MPI. This was released on Jan 30, 2007, so is more than 3 years old. It fails to build on Solaris - see #8522.\n\nThe optional package is very different to most other Sage packages, which shows its age. \n\n* No SPKG.txt\n* No Mercurial repository\n* Sources sit in top-level directory, not in a 'src' subdirectory. \n\nI'll create a package based on the latest version of Open MPI, which is version 1.4.1, which was released 15th January 2010.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8537\n\n",
+    "body": "Assignee: tbd\n\nSage has an Open MPI optional package, which uses version 1.1.4 of Open MPI. This was released on Jan 30, 2007, so is more than 3 years old. It fails to build on Solaris - see #8522.\n\nThe optional package is very different to most other Sage packages, which shows its age. \n\n* No SPKG.txt\n* No Mercurial repository\n* Sources sit in top-level directory, not in a 'src' subdirectory. \n\nI'll create a package based on the latest version of Open MPI, which is version 1.4.1, which was released 15th January 2010. \n\n**Update:** A new spkg can be found under http://www.stp.dias.ie/~vbraun/Sage/spkg/openmpi-1.4.3.spkg\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8537\n\n",
+    "closed_at": "2011-02-06T09:58:23Z",
     "created_at": "2010-03-14T21:53:51Z",
     "labels": [
         "component: packages: optional",
@@ -26,7 +27,13 @@ The optional package is very different to most other Sage packages, which shows 
 * No Mercurial repository
 * Sources sit in top-level directory, not in a 'src' subdirectory. 
 
-I'll create a package based on the latest version of Open MPI, which is version 1.4.1, which was released 15th January 2010.
+I'll create a package based on the latest version of Open MPI, which is version 1.4.1, which was released 15th January 2010. 
+
+**Update:** A new spkg can be found under http://www.stp.dias.ie/~vbraun/Sage/spkg/openmpi-1.4.3.spkg
+
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8537
 

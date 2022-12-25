@@ -4,6 +4,7 @@ archive/issues_009574.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nIn the forthcoming 4.5.2.alpha0, I get\n\n```sh\n$ cd sage-4.5.2.alpha0/local/bin\n$ hg stat\n? zope-testrunner\n```\nin the scripts repository.\n\nShould we add `zope-testrunner` to `.hgignore`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9574\n\n",
+    "closed_at": "2010-07-26T01:18:22Z",
     "created_at": "2010-07-22T05:10:00Z",
     "labels": [
         "component: misc",

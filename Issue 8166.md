@@ -3,11 +3,11 @@
 archive/issues_008166.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  ylchapuy @jasongrout mvngu\n\nSince the new version of NetworkX is being merged into Sage, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :\n\nThe efficiency of these two algorithms have to be compared !\n\nBased upon this, the default behaviour could be :\n* To always use NetworkX\n* Only use it if there is no LP available\n* Not to use it if not asked explicitely\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8166\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ylchapuy @jasongrout mvngu\n\nSince the new version of NetworkX is being merged into Sage #7608, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :\n\nThe efficiency of these two algorithms have to be compared !\n\nBased upon this, the default behaviour could be :\n* To always use NetworkX\n* Only use it if there is no LP available\n* Not to use it if not asked explicitely\n\n**Apply:**\n\n1. #8364\n2. [trac_8166-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8166/trac_8166-rebase.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8166\n\n",
+    "closed_at": "2010-06-06T00:41:55Z",
     "created_at": "2010-02-03T08:45:32Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Expose max_weight_matching from NetworkX",
@@ -20,7 +20,7 @@ Assignee: @rlmill
 
 CC:  ylchapuy @jasongrout mvngu
 
-Since the new version of NetworkX is being merged into Sage, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :
+Since the new version of NetworkX is being merged into Sage #7608, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :
 
 The efficiency of these two algorithms have to be compared !
 
@@ -29,7 +29,10 @@ Based upon this, the default behaviour could be :
 * Only use it if there is no LP available
 * Not to use it if not asked explicitely
 
-Nathann
+**Apply:**
+
+1. #8364
+2. [trac_8166-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8166/trac_8166-rebase.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8166
 

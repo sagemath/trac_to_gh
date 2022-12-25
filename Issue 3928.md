@@ -1,16 +1,17 @@
-# Issue 3928: multiedge graphs create an edge for each character of a label
+# Issue 3928: additional docs for creating multiedge graphs
 
 archive/issues_003928.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nSay, I want to define a multigraph with selfloops, and edge labels..\nOne way to do this is:\n\nimport networkx\nG=networkx.XDiGraph(selfloops=True,multiedges=True)\nfor i in range(3): G.add_node(i)\nfor i in [(1,1,'hola'),(1,1,'hi'),(1,2,'two'),(1,2,'dos'),\n(2,1,'one')]: G.add_edge(i)\nG=DiGraph(G)\n\nNow, I would be tempted to just do the following:\nG=DiGraph({1:{1:'hola',1:'hi',2:'two',2:'dos'},2:{1:'one'}},\nloops=True, multiedges=True)\n\nor trying\n\nimport networkx\nG=networkx.XDiGraph({1:{1:'hola',1:'hi',2:'two',2:'dos'},2:{1:'one'}},\nselfloops=True, multiedges=True)\n\nBut in each case  I get:\n\nG.edges()\n\n(1, 1, 'h'), (1, 1, 'i'), (1, 2, 'd'), (1, 2, 'o'), (1, 2, 's'), (2,\n1,\n'o'), (2, 1, 'n'), (2, 1, 'e')]\n\n\nWhich is not as intended for two reasons:  One is that the labels are\nwrong, and the other one is that it created three edges from 1 to 2.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3928\n\n",
+    "closed_at": "2008-08-26T16:53:15Z",
     "created_at": "2008-08-22T17:58:49Z",
     "labels": [
         "component: graph theory",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "multiedge graphs create an edge for each character of a label",
+    "title": "additional docs for creating multiedge graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3928",
     "user": "https://github.com/jasongrout"

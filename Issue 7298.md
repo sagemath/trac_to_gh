@@ -3,11 +3,11 @@
 archive/issues_007298.json:
 ```json
 {
-    "body": "Assignee: whuss\n\nCC:  mhampton @nilesjohnson @novoselt\n\nKeywords: animation, video\n\nThe attached patch adds support for creating Ogg Theora videos from\nanimation objects.\n\nThe resulting video files are embedded into the notebook using the\nhtml5 video tag.\n\nThe show method of animations now works more like the one of\nGraphics objects. Animations can now be embeddend in html fragments,\nfor example using html.table().\n\nBy default animations are still created as animated gifs. To get\na Theora video from an animation \"a\" use:\n\n```\na.show(format = 'ogv')\n```\n\nDepends on libtheora and libogg spkg's (Trac: #7297).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7298\n\n",
+    "body": "Assignee: whuss\n\nCC:  mhampton @nilesjohnson @novoselt\n\nKeywords: animation, video\n\nThis ticket is about adding support for creating Ogg Theora or WebM videos from animation objects. The resulting video files are embedded into the notebook using the HTML 5 video tag.\n\nThe show method of animations now works more like the one of Graphics objects. Animations can now be embeddend in html fragments, for example using html.table(). By default animations are still created as animated GIFs. To get a modern video from an animation \"a\" use one of these:\n\n```\na.show(mimetype=\"video/ogg\")\na.show(format=\"webm\")\n```\n\nThe original ticket was designed to use libtheora and libogg from #7297 and only supported Theora. The currently attached branch builds on FFmpeg and supports a variety of formats, including Theora and WebM. Support for calling FFmpeg is already in place, so the focus here is on user interface, mainly integration with the `show` method and using HTML 5 video tags.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7298\n\n",
+    "closed_at": "2015-08-27T14:04:29Z",
     "created_at": "2009-10-25T16:00:45Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "use html5 video tag for animations",
@@ -22,24 +22,16 @@ CC:  mhampton @nilesjohnson @novoselt
 
 Keywords: animation, video
 
-The attached patch adds support for creating Ogg Theora videos from
-animation objects.
+This ticket is about adding support for creating Ogg Theora or WebM videos from animation objects. The resulting video files are embedded into the notebook using the HTML 5 video tag.
 
-The resulting video files are embedded into the notebook using the
-html5 video tag.
-
-The show method of animations now works more like the one of
-Graphics objects. Animations can now be embeddend in html fragments,
-for example using html.table().
-
-By default animations are still created as animated gifs. To get
-a Theora video from an animation "a" use:
+The show method of animations now works more like the one of Graphics objects. Animations can now be embeddend in html fragments, for example using html.table(). By default animations are still created as animated GIFs. To get a modern video from an animation "a" use one of these:
 
 ```
-a.show(format = 'ogv')
+a.show(mimetype="video/ogg")
+a.show(format="webm")
 ```
 
-Depends on libtheora and libogg spkg's (Trac: #7297).
+The original ticket was designed to use libtheora and libogg from #7297 and only supported Theora. The currently attached branch builds on FFmpeg and supports a variety of formats, including Theora and WebM. Support for calling FFmpeg is already in place, so the focus here is on user interface, mainly integration with the `show` method and using HTML 5 video tags.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7298
 

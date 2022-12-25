@@ -3,7 +3,8 @@
 archive/issues_004344.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4344\n\n",
+    "body": "Assignee: TimothyClemans\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4344\n\n",
+    "closed_at": "2008-10-23T17:45:55Z",
     "created_at": "2008-10-23T02:46:05Z",
     "labels": [
         "component: notebook"
@@ -15,7 +16,7 @@ archive/issues_004344.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 
 

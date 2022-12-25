@@ -4,6 +4,7 @@ archive/issues_001611.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  polybori\n\nPolyBoRi comes with its own copy of m4ri libraries. After #1505, Sage provides these libraries through a package.\n\nThe PolyBoRi build process should be changed to use the library and headers provided by libm4ri-*.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1611\n\n",
+    "closed_at": "2009-09-29T08:08:56Z",
     "created_at": "2007-12-27T10:54:50Z",
     "labels": [
         "component: packages: standard"

@@ -1,9 +1,10 @@
-# Issue 4930: [with spkg, needs review] 3.2.3.final: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs
+# Issue 4930: [with spkg, positive review] 3.2.3.rc0: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs
 
 archive/issues_004930.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUnfortunately the spkg at #3785 contained a buglet: the patches Make.top isn't copied into the right directory, so \"make install\" doesn't copy over libatlas.so, libcblas.so and libf77blas.so. Due to that on some machines rpy won't load due to a missing libatlas.so.\n\nAn spkg with that fixed is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4930\n\n",
+    "closed_at": "2009-01-03T05:58:40Z",
     "created_at": "2009-01-03T03:19:47Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004930.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with spkg, needs review] 3.2.3.final: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs",
+    "title": "[with spkg, positive review] 3.2.3.rc0: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4930",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

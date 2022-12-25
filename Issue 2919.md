@@ -1,16 +1,17 @@
-# Issue 2919: [with patch, needs review] gcc 4.3: compilation issues in partitions_c.cc
+# Issue 2919: [with patch, positive review] gcc 4.3: compilation issues in partitions_c.cc
 
 archive/issues_002919.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\npartitions_c.cc does not build with gcc 4.3 since it dislikes \n\n```\ntemplate <> static inline dd_real pi() { return dd_pi; }\n```\nThe attached patch fixes those issues, compile tested with gcc 4.3, 4.1 and 4.0\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/2919\n\n",
+    "closed_at": "2008-04-14T19:57:35Z",
     "created_at": "2008-04-14T19:28:37Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] gcc 4.3: compilation issues in partitions_c.cc",
+    "title": "[with patch, positive review] gcc 4.3: compilation issues in partitions_c.cc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2919",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

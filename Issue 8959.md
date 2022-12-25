@@ -4,6 +4,7 @@ archive/issues_008959.json:
 ```json
 {
     "body": "Assignee: itolkov, jason\n\nCC:  @williamstein @TimDumol mhampton\n\nThe layout argument of an interact should also accept a string, maybe a string in the format of either standard python formats (i.e., \"<table><tr><td>{a}</td></tr></table>\"), or using the simple template classes that come with python (i.e., \"<table><tr><td>$a</td></tr></table>\").  Whichever convention is chosen, the string is given the dictionary of {'variable name': 'html for variable control'}, or maybe {'variable name': {'label': HTML label, 'control': 'html for control'}}, so you could do \"<td>{a.label}</td><td>{a.control}</td>\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8959\n\n",
+    "closed_at": "2010-07-11T06:06:38Z",
     "created_at": "2010-05-13T09:05:55Z",
     "labels": [
         "component: interact"

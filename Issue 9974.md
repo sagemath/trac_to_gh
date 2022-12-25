@@ -3,7 +3,8 @@
 archive/issues_009974.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime drkirkby\n\nThe current version of GnuTLS in Sage has multiple issues, not all of which will probably be solved by this ticket, but at least of subset of them will be. \n* The current version in Sage is very old. \n* There are security issues with the current version - see #7542\n* There's no `spkg-check` file - see #9308\n* It fails to build on AIX - see #9974\n* It fails to build on HP-UX - see  #7511\n* `make` is used instead of `$MAKE`\n* `-m64` is hard-coded as the compiler flag needed for 64-bit builds\n* `SPKG.txt` lacks the `Special Update/Build Instructions` section.\n* There's an incomplete list of dependencies in `SKG.txt`, with a remark to `FIXME`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9975\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime drkirkby\n\nKeywords: sd32\n\nThe current version of GnuTLS in Sage has multiple issues, not all of which will probably be solved by this ticket, but at least of subset of them will be. \n* The current version in Sage is very old. \n* There are security issues with the current version - see #7542\n* There's no `spkg-check` file - see #9308\n* It fails to build on AIX - see #9974\n* It fails to build on HP-UX - see  #7511\n* `make` is used instead of `$MAKE`\n* `-m64` is hard-coded as the compiler flag needed for 64-bit builds\n* `SPKG.txt` lacks the `Special Update/Build Instructions` section.\n* There's an incomplete list of dependencies in `SKG.txt`, with a remark to `FIXME`\n\nAn upgrade and attempt to clean up this package is [http://boxen.math.washington.edu/home/mariah/spkg/gnutls-2.12.3.spkg](http://boxen.math.washington.edu/home/mariah/spkg/gnutls-2.12.3.spkg)\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9975\n\n",
+    "closed_at": "2012-10-05T09:11:57Z",
     "created_at": "2010-09-23T09:54:59Z",
     "labels": [
         "component: packages: standard",
@@ -20,6 +21,8 @@ Assignee: tbd
 
 CC:  @nexttime drkirkby
 
+Keywords: sd32
+
 The current version of GnuTLS in Sage has multiple issues, not all of which will probably be solved by this ticket, but at least of subset of them will be. 
 * The current version in Sage is very old. 
 * There are security issues with the current version - see #7542
@@ -30,6 +33,9 @@ The current version of GnuTLS in Sage has multiple issues, not all of which will
 * `-m64` is hard-coded as the compiler flag needed for 64-bit builds
 * `SPKG.txt` lacks the `Special Update/Build Instructions` section.
 * There's an incomplete list of dependencies in `SKG.txt`, with a remark to `FIXME`
+
+An upgrade and attempt to clean up this package is [http://boxen.math.washington.edu/home/mariah/spkg/gnutls-2.12.3.spkg](http://boxen.math.washington.edu/home/mariah/spkg/gnutls-2.12.3.spkg)
+  
 
 Issue created by migration from https://trac.sagemath.org/ticket/9975
 

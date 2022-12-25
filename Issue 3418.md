@@ -1,9 +1,10 @@
-# Issue 3418: added new combinatorial functions for tableaux and crystals
+# Issue 3418: [with patch, positive review] added new combinatorial functions for tableaux and crystals
 
 archive/issues_003418.json:
 ```json
 {
     "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat\n\nKeywords: promotion; reflection\n\nI added a two new functions \npromotion and promotion_inverse\nfor rectangular tableaux.\n\nI also added a reflection operator\nfor the crystal library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3418\n\n",
+    "closed_at": "2008-06-15T22:27:13Z",
     "created_at": "2008-06-13T18:30:06Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_003418.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "added new combinatorial functions for tableaux and crystals",
+    "title": "[with patch, positive review] added new combinatorial functions for tableaux and crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3418",
     "user": "https://github.com/anneschilling"

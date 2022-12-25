@@ -4,6 +4,7 @@ archive/issues_001642.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe do not have binaries on less common platforms. If SAGE_FORTRAN isn't set we just fail, but we should check for common Fortran compilers and set them then instead of failing. Preference should be:\n* gfotran\n* g95\n* g77\n* f77 - on BSD the g77 is commonly called f77\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1642\n\n",
+    "closed_at": "2008-04-20T06:31:21Z",
     "created_at": "2007-12-30T18:50:22Z",
     "labels": [
         "component: packages: standard",

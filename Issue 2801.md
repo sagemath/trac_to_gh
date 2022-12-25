@@ -3,10 +3,11 @@
 archive/issues_002801.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2801\n\n",
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2801\n\n",
+    "closed_at": "2012-06-02T12:45:01Z",
     "created_at": "2008-04-04T23:00:21Z",
     "labels": [
-        "component: cygwin",
+        "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_002801.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: mabshoff
+Assignee: boothby
 
 
 

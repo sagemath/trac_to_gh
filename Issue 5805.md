@@ -1,22 +1,24 @@
-# Issue 5805: numerical noise in "devel/sage/sage/modular/dirichlet.py"
+# Issue 5805: [with patch, with positive review] Sage 3.4.1.rc3: numerical noise in "devel/sage/sage/modular/dirichlet.py"
 
 archive/issues_005805.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nOn Fedora 9, 32 bit:\n\n\n```\nsage -t  \"devel/sage/sage/modular/dirichlet.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/modular/dirichlet.py\", line 1044:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_29\n***Test Failed*** 1 failures.\n\n```\n\n\nCheers,\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5805\n\n",
+    "body": "Assignee: mabshoff\n\nOn Fedora 9, 32 bit:\n\n\n```\nsage -t  \"devel/sage/sage/modular/dirichlet.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/modular/dirichlet.py\", line 1044:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_29\n***Test Failed*** 1 failures.\n\n```\n\n\nCheers,\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5805\n\n",
+    "closed_at": "2009-04-18T23:12:22Z",
     "created_at": "2009-04-16T21:02:12Z",
     "labels": [
-        "component: modular forms",
+        "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "numerical noise in \"devel/sage/sage/modular/dirichlet.py\"",
+    "title": "[with patch, with positive review] Sage 3.4.1.rc3: numerical noise in \"devel/sage/sage/modular/dirichlet.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5805",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: @craigcitro
+Assignee: mabshoff
 
 On Fedora 9, 32 bit:
 

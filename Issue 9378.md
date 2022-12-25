@@ -3,7 +3,8 @@
 archive/issues_009378.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  freetonik@gmail.com @haraldschilly @kcrisman @novoselt\n\nAs the subject says. Get a Russian translation of the [Sage tutorial](http://www.sagemath.org/doc/tutorial/) into the Sage standard documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9378\n\n",
+    "body": "Assignee: mvngu\n\nCC:  freetonik@gmail.com @haraldschilly @kcrisman @novoselt\n\nKeywords: sd31\n\nAs the subject says. Get a Russian translation of the [Sage tutorial](http://www.sagemath.org/doc/tutorial/) into the Sage standard documentation.\n\n**Apply:**\n1. [attachment:9378_russian_tutorial_translation.2.patch]\n2. [attachment:trac_9378_reviewer.patch]\n3. [attachment:9378_TESTDIRS.patch] to SAGE_ROOT\n\nIssue created by migration from https://trac.sagemath.org/ticket/9378\n\n",
+    "closed_at": "2011-06-16T11:54:09Z",
     "created_at": "2010-06-29T18:36:33Z",
     "labels": [
         "component: documentation"
@@ -19,7 +20,14 @@ Assignee: mvngu
 
 CC:  freetonik@gmail.com @haraldschilly @kcrisman @novoselt
 
+Keywords: sd31
+
 As the subject says. Get a Russian translation of the [Sage tutorial](http://www.sagemath.org/doc/tutorial/) into the Sage standard documentation.
+
+**Apply:**
+1. [attachment:9378_russian_tutorial_translation.2.patch]
+2. [attachment:trac_9378_reviewer.patch]
+3. [attachment:9378_TESTDIRS.patch] to SAGE_ROOT
 
 Issue created by migration from https://trac.sagemath.org/ticket/9378
 

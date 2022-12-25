@@ -1,16 +1,17 @@
-# Issue 5446: [with patch, needs review] RealIntervalField creates non-unique RealFields
+# Issue 5446: [with patch, with positive review] RealIntervalField creates non-unique RealFields
 
 archive/issues_005446.json:
 ```json
 {
     "body": "Assignee: somebody\n\n`real_mpfi.pyx` uses the wrong function to create `RealField`s, so it creates new ones instead of using the previously-cached ones.\n\nFixed in the attached patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5446\n\n",
+    "closed_at": "2009-03-23T20:35:14Z",
     "created_at": "2009-03-06T02:16:10Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] RealIntervalField creates non-unique RealFields",
+    "title": "[with patch, with positive review] RealIntervalField creates non-unique RealFields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5446",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

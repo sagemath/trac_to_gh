@@ -3,7 +3,8 @@
 archive/issues_006001.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nAs mentioned in [this message](http://groups.google.com/group/sage-devel/msg/d021522accd00e81), it might be useful to tear/pop/pull/rip out/off/up at least some notebook introspection window(s) into a separate window(s) [1].\n\nThis ticket, which builds on #5653 (see comments [comment:ticket:5653:19 19ff]), is currently a ~~disaster~~ test area for variations on this theme.\n\nIn the near future, I'm hoping to send a message to sage-devel to gauge interest, get more suggestions, etc., about similar potential improvements.\n\nRelated: #4714, #5644, #5653. [2]\n\n[1] Nevertheless, they're all fine docstrings.\n[2] Almost surely, this is far from exhaustive or even representative.  Feel free to add to the list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6001\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nAs mentioned in [this message](http://groups.google.com/group/sage-devel/msg/d021522accd00e81), it might be useful to tear/pop/pull/rip out/off/up at least some notebook introspection window(s) into a separate window(s) [1].\n\nThis ticket, which builds on #5653 (see comments [comment:ticket:5653:19 19ff]), is currently a ~~disaster~~ test area for variations on this theme.\n\nRelated: #4714, #5644, #5447, #5653, #6307.\n\n[1] Nevertheless, they're all fine docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6001\n\n",
+    "closed_at": "2015-01-13T01:18:10Z",
     "created_at": "2009-05-06T23:14:40Z",
     "labels": [
         "component: notebook",
@@ -24,12 +25,9 @@ As mentioned in [this message](http://groups.google.com/group/sage-devel/msg/d02
 
 This ticket, which builds on #5653 (see comments [comment:ticket:5653:19 19ff]), is currently a ~~disaster~~ test area for variations on this theme.
 
-In the near future, I'm hoping to send a message to sage-devel to gauge interest, get more suggestions, etc., about similar potential improvements.
-
-Related: #4714, #5644, #5653. [2]
+Related: #4714, #5644, #5447, #5653, #6307.
 
 [1] Nevertheless, they're all fine docstrings.
-[2] Almost surely, this is far from exhaustive or even representative.  Feel free to add to the list.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6001
 

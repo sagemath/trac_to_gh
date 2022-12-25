@@ -4,6 +4,7 @@ archive/issues_008023.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nDoctests in Sage should only create files in temporary directories, like SAGE_TMP.  The attached patch fixes a doctest in sage/combinat/words/morphism.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8023\n\n",
+    "closed_at": "2010-01-21T21:54:14Z",
     "created_at": "2010-01-21T06:34:37Z",
     "labels": [
         "component: combinatorics",

@@ -1,15 +1,16 @@
-# Issue 2805: Add maximal parameter to Graph genus computation
+# Issue 2805: [with patch, positive review] Add maximal parameter to Graph genus computation
 
 archive/issues_002805.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nOption to compute the maximal genus of a graph instead of just minimal or current.  This should also store the embedding found with maximal genus.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2805\n\n",
+    "closed_at": "2008-04-05T14:25:01Z",
     "created_at": "2008-04-05T03:11:31Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Add maximal parameter to Graph genus computation",
+    "title": "[with patch, positive review] Add maximal parameter to Graph genus computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2805",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"

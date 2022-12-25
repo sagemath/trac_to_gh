@@ -1,16 +1,17 @@
-# Issue 3382: Compute Newton polytopes without polymake
+# Issue 3382: [with patch, positive review] Compute Newton polytopes without polymake
 
 archive/issues_003382.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: polytope, polyhedra, polynomials\n\nCurrently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3382\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: polytope, polyhedra, polynomials, editor_mhansen\n\nCurrently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3382\n\n",
+    "closed_at": "2008-06-23T09:34:21Z",
     "created_at": "2008-06-08T12:50:15Z",
     "labels": [
         "component: geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Compute Newton polytopes without polymake",
+    "title": "[with patch, positive review] Compute Newton polytopes without polymake",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3382",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
@@ -18,7 +19,7 @@ archive/issues_003382.json:
 ```
 Assignee: @mwhansen
 
-Keywords: polytope, polyhedra, polynomials
+Keywords: polytope, polyhedra, polynomials, editor_mhansen
 
 Currently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  
 

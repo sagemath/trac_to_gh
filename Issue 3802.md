@@ -3,7 +3,8 @@
 archive/issues_003802.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\n\t\n2008-08-10 16:25:31-0700 [HTTPChannel,133,127.0.0.1] Exception rendering:\n2008-08-10 16:25:31-0700 [HTTPChannel,133,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 185, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 284, in _continue\n\t    self.unpause()\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 280, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 2139, in render\n\t    return http.Response(stream =  login_page_template(notebook.get_accounts(), notebook.default_user()))\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py\", line 59, in login_page_template\n\t    return login_template(register = reg, default=default_user, username_error=u_e, password_error=p_e, welcome=welcome)\n\t  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py\", line 34, in __call__\n\t    return self.__template.substitute(kwds)\n\t  File \"/Users/was/s/local/lib/python2.5/string.py\", line 170, in substitute\n\t    return self.pattern.sub(convert, self.template)\n\t  File \"/Users/was/s/local/lib/python2.5/string.py\", line 160, in convert\n\t    val = mapping[named]\n\texceptions.KeyError: 'forgot_pass'\n\t\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3802\n\n",
+    "body": "Assignee: boothby\n\n```\n\n2008-08-10 16:25:31-0700 [HTTPChannel,133,127.0.0.1] Exception rendering:\n2008-08-10 16:25:31-0700 [HTTPChannel,133,127.0.0.1] Unhandled Error\nTraceback (most recent call last):\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 185, in addCallbacks\n    self._runCallbacks()\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n    self.result = callback(self.result, *args, **kw)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 284, in _continue\n    self.unpause()\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 280, in unpause\n    self._runCallbacks()\n--- <exception caught here> ---\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n    self.result = callback(self.result, *args, **kw)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/server.py\", line 296, in <lambda>\n    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n    return method(request)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py\", line 202, in http_GET\n    return super(Resource, self).http_GET(request)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py\", line 128, in http_GET\n    return self.render(request)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 2139, in render\n    return http.Response(stream =  login_page_template(notebook.get_accounts(), notebook.default_user()))\n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py\", line 59, in login_page_template\n    return login_template(register = reg, default=default_user, username_error=u_e, password_error=p_e, welcome=welcome)\n  File \"/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py\", line 34, in __call__\n    return self.__template.substitute(kwds)\n  File \"/Users/was/s/local/lib/python2.5/string.py\", line 170, in substitute\n    return self.pattern.sub(convert, self.template)\n  File \"/Users/was/s/local/lib/python2.5/string.py\", line 160, in convert\n    val = mapping[named]\nexceptions.KeyError: 'forgot_pass'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3802\n\n",
+    "closed_at": "2009-11-19T23:36:56Z",
     "created_at": "2008-08-10T23:29:52Z",
     "labels": [
         "component: notebook",
@@ -19,43 +20,40 @@ archive/issues_003802.json:
 Assignee: boothby
 
 ```
-	
+
 2008-08-10 16:25:31-0700 [HTTPChannel,133,127.0.0.1] Exception rendering:
 2008-08-10 16:25:31-0700 [HTTPChannel,133,127.0.0.1] Unhandled Error
-	Traceback (most recent call last):
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 185, in addCallbacks
-	    self._runCallbacks()
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 323, in _runCallbacks
-	    self.result = callback(self.result, *args, **kw)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 284, in _continue
-	    self.unpause()
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 280, in unpause
-	    self._runCallbacks()
-	--- <exception caught here> ---
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 323, in _runCallbacks
-	    self.result = callback(self.result, *args, **kw)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/server.py", line 296, in <lambda>
-	    d.addCallback(lambda res, req: res.renderHTTP(req), self)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py", line 85, in renderHTTP
-	    return method(request)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py", line 202, in http_GET
-	    return super(Resource, self).http_GET(request)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py", line 128, in http_GET
-	    return self.render(request)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 2139, in render
-	    return http.Response(stream =  login_page_template(notebook.get_accounts(), notebook.default_user()))
-	  File "/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py", line 59, in login_page_template
-	    return login_template(register = reg, default=default_user, username_error=u_e, password_error=p_e, welcome=welcome)
-	  File "/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py", line 34, in __call__
-	    return self.__template.substitute(kwds)
-	  File "/Users/was/s/local/lib/python2.5/string.py", line 170, in substitute
-	    return self.pattern.sub(convert, self.template)
-	  File "/Users/was/s/local/lib/python2.5/string.py", line 160, in convert
-	    val = mapping[named]
-	exceptions.KeyError: 'forgot_pass'
-	
-
-
+Traceback (most recent call last):
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 185, in addCallbacks
+    self._runCallbacks()
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 323, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 284, in _continue
+    self.unpause()
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 280, in unpause
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/internet/defer.py", line 323, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/server.py", line 296, in <lambda>
+    d.addCallback(lambda res, req: res.renderHTTP(req), self)
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py", line 85, in renderHTTP
+    return method(request)
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py", line 202, in http_GET
+    return super(Resource, self).http_GET(request)
+  File "/Users/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-macosx-10.3-i386.egg/twisted/web2/resource.py", line 128, in http_GET
+    return self.render(request)
+  File "/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/twist.py", line 2139, in render
+    return http.Response(stream =  login_page_template(notebook.get_accounts(), notebook.default_user()))
+  File "/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py", line 59, in login_page_template
+    return login_template(register = reg, default=default_user, username_error=u_e, password_error=p_e, welcome=welcome)
+  File "/Users/was/s/local/lib/python2.5/site-packages/sage/server/notebook/template.py", line 34, in __call__
+    return self.__template.substitute(kwds)
+  File "/Users/was/s/local/lib/python2.5/string.py", line 170, in substitute
+    return self.pattern.sub(convert, self.template)
+  File "/Users/was/s/local/lib/python2.5/string.py", line 160, in convert
+    val = mapping[named]
+exceptions.KeyError: 'forgot_pass'
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3802

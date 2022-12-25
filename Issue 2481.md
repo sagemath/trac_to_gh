@@ -1,9 +1,10 @@
-# Issue 2481: setuptools spkg
+# Issue 2481: [with spkg, with positive review] setuptools spkg
 
 archive/issues_002481.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is needed for SQLAlchemy and Yi's latest dsage patch, and jaap has made an spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2481\n\n",
+    "closed_at": "2008-03-14T16:03:32Z",
     "created_at": "2008-03-12T05:30:01Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002481.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "setuptools spkg",
+    "title": "[with spkg, with positive review] setuptools spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2481",
     "user": "https://github.com/rlmill"

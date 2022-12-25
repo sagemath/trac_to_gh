@@ -1,16 +1,17 @@
-# Issue 2046: [with patch] save(srange(3), './foo') fails
+# Issue 2046: [with patch; positive review] save(srange(3), './foo') fails
 
 archive/issues_002046.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis bug was reported by Georg here: http://groups.google.com/group/sage-support/browse_thread/thread/a1c5910c053abc90/28f1b635fba382a4#28f1b635fba382a4\n\n```\nsage: save(srange(3), './foo')\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/cwitty/<ipython console> in <module>()\n\n/home/cwitty/sage_object.pyx in sage.structure.sage_object.save()\n\n<type 'exceptions.AttributeError'>: 'list' object has no attribute 'save'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2046\n\n",
+    "closed_at": "2008-02-07T05:27:00Z",
     "created_at": "2008-02-05T01:51:21Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch] save(srange(3), './foo') fails",
+    "title": "[with patch; positive review] save(srange(3), './foo') fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2046",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

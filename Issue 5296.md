@@ -1,23 +1,24 @@
-# Issue 5296: Update the OS X Readme
+# Issue 5296: [with file] Update the OS X Readme
 
 archive/issues_005296.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mabshoff\n\nWith the switch to an app bundle distribution for Mac OS X, the file \"$SAGE_ROOT/sage-README-osx.txt\" contains obsolete parts (the \"steps 4 - 6\", and the last lines right at the end).\n\nA -bdist'ed OS X .dmg contains another README.txt file of the same outdated content, probably it is just the first one copied during creation of the .dmg. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5296\n\n",
+    "body": "Assignee: @gvol\n\nCC:  mabshoff\n\nWith the switch to an app bundle distribution for Mac OS X, the file \"$SAGE_ROOT/sage-README-osx.txt\" contains obsolete parts (the \"steps 4 - 6\", and the last lines right at the end).\n\nA -bdist'ed OS X .dmg contains another README.txt file of the same outdated content, probably it is just the first one copied during creation of the .dmg. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5296\n\n",
+    "closed_at": "2010-09-29T23:17:48Z",
     "created_at": "2009-02-17T20:19:04Z",
     "labels": [
         "component: distribution",
-        "critical",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Update the OS X Readme",
+    "title": "[with file] Update the OS X Readme",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5296",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
-Assignee: mabshoff
+Assignee: @gvol
 
 CC:  mabshoff
 

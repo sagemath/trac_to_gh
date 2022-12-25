@@ -1,16 +1,18 @@
-# Issue 8296: tab completion broken in emacs
+# Issue 8296: getattr hack not failing graciously on descriptors / tab completion broken in emacs
 
 archive/issues_008296.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: tab completion, dir, getattr\n\nThis is caused by #7981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8296\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: tab completion, dir, getattr\n\nThe getattr hack of #7921 to let extension types \"inherit\" from category does not fail graciously on descriptors.\n\nVisible effect: tab completion is broken under emacs:\n\n```\n   sage: n=1\n   sage: n.<tab>  # gives nothing\n```\n\nThis is a variant of #8223. Emacs does not use dir straight away, but instead calls _ip.IP.magic_psearch which is conservative and does not trust dir. So it actually tries to get all advertised attributes, and in particular the descriptor __weakref__ which failed on 1 and confused getattr.\n\nThe attached patch makes the getattr fail graciously in such situations.  It probably would be better for __weakref__ to not appear in dir in the first place, but at least this should fix the bug and variants thereof.\n\nAgain, better implementations of the getattr hack are most welcome. See comments in the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8296\n\n",
+    "closed_at": "2010-03-08T20:54:25Z",
     "created_at": "2010-02-17T21:12:53Z",
     "labels": [
         "component: misc",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "tab completion broken in emacs",
+    "title": "getattr hack not failing graciously on descriptors / tab completion broken in emacs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8296",
     "user": "https://github.com/nthiery"
@@ -22,7 +24,20 @@ CC:  sage-combinat
 
 Keywords: tab completion, dir, getattr
 
-This is caused by #7981.
+The getattr hack of #7921 to let extension types "inherit" from category does not fail graciously on descriptors.
+
+Visible effect: tab completion is broken under emacs:
+
+```
+   sage: n=1
+   sage: n.<tab>  # gives nothing
+```
+
+This is a variant of #8223. Emacs does not use dir straight away, but instead calls _ip.IP.magic_psearch which is conservative and does not trust dir. So it actually tries to get all advertised attributes, and in particular the descriptor __weakref__ which failed on 1 and confused getattr.
+
+The attached patch makes the getattr fail graciously in such situations.  It probably would be better for __weakref__ to not appear in dir in the first place, but at least this should fix the bug and variants thereof.
+
+Again, better implementations of the getattr hack are most welcome. See comments in the code.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8296
 

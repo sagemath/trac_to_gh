@@ -1,16 +1,17 @@
-# Issue 4286: [with patch, needs review] minor improvements to old integer code
+# Issue 4286: [with patch, positive review] minor improvements to old integer code
 
 archive/issues_004286.json:
 ```json
 {
     "body": "Assignee: somebody\n\njust cleaning up some cruft\n\nIssue created by migration from https://trac.sagemath.org/ticket/4286\n\n",
+    "closed_at": "2008-10-18T20:32:35Z",
     "created_at": "2008-10-14T19:49:00Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] minor improvements to old integer code",
+    "title": "[with patch, positive review] minor improvements to old integer code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4286",
     "user": "https://github.com/robertwb"

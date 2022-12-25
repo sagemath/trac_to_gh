@@ -3,10 +3,10 @@
 archive/issues_004738.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: base ring relative number field order\n\nI think that the last ring should be the ring of integers of the relative number field.\n\n```\nsage: K = NumberField([x^2 + 2, x^2 + 3], 'a')\nsage: K.base_ring()\nNumber Field in a1 with defining polynomial x^2 + 3\nsage: K.maximal_order()\nRelative Order in Number Field in a0 with defining polynomial x^2 + 2 over its base field\nsage: K.maximal_order().base_ring()\nInteger Ring\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4738\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nKeywords: base ring relative number field order\n\nI think that the last ring should be the ring of integers of the relative number field.\n\n```\nsage: K = NumberField([x^2 + 2, x^2 + 3], 'a')\nsage: K.base_ring()\nNumber Field in a1 with defining polynomial x^2 + 3\nsage: K.maximal_order()\nRelative Order in Number Field in a0 with defining polynomial x^2 + 2 over its base field\nsage: K.maximal_order().base_ring()\nInteger Ring\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4738\n\n",
     "created_at": "2008-12-07T20:03:53Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,7 +16,7 @@ archive/issues_004738.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @williamstein
 

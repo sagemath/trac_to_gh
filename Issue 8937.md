@@ -3,7 +3,7 @@
 archive/issues_008937.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: AES\n\nThis class implements the full Advanced Encryption Standard, as described in \n\nhttp://csrc.nist.gov/publications/fips/fips197/fips-197.pdf \n\nIt includes encryption with a 128 bit plaintext block, and keys of either 128, 196 or 256 bits, which are the only block and key sizes allowed by the standard.  It includes decryption by either the Inverse Cipher method, or the Equivalent Inverse Cipher method.  There are also methods to print out all the intermediate steps in either an encryption or decryption.\n\nThe various \"layers\": mixcolumns, shiftrows, subbytes and their inverses, are available to the user for experimentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8937\n\n",
+    "body": "Assignee: amca01\n\nKeywords: AES\n\nThis class implements the full Advanced Encryption Standard, as described in \n\nhttp://csrc.nist.gov/publications/fips/fips197/fips-197.pdf \n\nIt includes encryption with a 128 bit plaintext block, and keys of either 128, 196 or 256 bits, which are the only block and key sizes allowed by the standard.  It includes decryption by either the Inverse Cipher method, or the Equivalent Inverse Cipher method.  There are also methods to print out all the intermediate steps in either an encryption or decryption.\n\nThe various \"layers\": mixcolumns, shiftrows, subbytes and their inverses, are available to the user for experimentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8937\n\n",
     "created_at": "2010-05-09T05:00:43Z",
     "labels": [
         "component: cryptography",
@@ -16,7 +16,7 @@ archive/issues_008937.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/amca01"
 }
 ```
-Assignee: mvngu
+Assignee: amca01
 
 Keywords: AES
 

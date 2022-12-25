@@ -3,7 +3,8 @@
 archive/issues_009615.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer\n\nKeywords: lcalc\n\nDoctest failures in alpha1: https://groups.google.com/group/sage-release/msg/8807ed7073c6793f :\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.alpha1/devel/sage/sage/\nlibs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5)\nExpected:\n    0\nGot:\n    -1.28235854574334e-17\n----------------------------------------------- \n```\nThis is related to #5396.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9615\n\n",
+    "body": "Assignee: @rishikesha\n\nCC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer\n\nKeywords: lcalc\n\nDoctest failures in alpha1: https://groups.google.com/group/sage-release/msg/8807ed7073c6793f :\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.alpha1/devel/sage/sage/\nlibs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5)\nExpected:\n    0\nGot:\n    -1.28235854574334e-17\n----------------------------------------------- \n```\nThis is related to #5396.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9615\n\n",
+    "closed_at": "2010-07-29T05:57:13Z",
     "created_at": "2010-07-28T02:41:49Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +18,7 @@ archive/issues_009615.json:
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: mvngu
+Assignee: @rishikesha
 
 CC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer
 

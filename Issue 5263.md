@@ -4,6 +4,7 @@ archive/issues_005263.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @kcrisman @williamstein @qed777\n\nWhen I publish a worksheet on sagenb.org, it says I can find the sheet at: http://:8000/home/pub/243\n\nOf course, this is silly nonsense.\n\nIt might have to do with starting the notebook with address='', maybe?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5263\n\n",
+    "closed_at": "2010-01-25T00:52:12Z",
     "created_at": "2009-02-14T02:16:51Z",
     "labels": [
         "component: notebook",

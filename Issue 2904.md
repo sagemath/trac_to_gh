@@ -1,9 +1,10 @@
-# Issue 2904: sage/matrix/matrix_misc.py has no copyright info
+# Issue 2904: [with patch; positive review] sage/matrix/matrix_misc.py has no copyright info
 
 archive/issues_002904.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2904\n\n",
+    "closed_at": "2008-04-13T15:16:06Z",
     "created_at": "2008-04-13T04:51:25Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002904.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "sage/matrix/matrix_misc.py has no copyright info",
+    "title": "[with patch; positive review] sage/matrix/matrix_misc.py has no copyright info",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2904",
     "user": "https://github.com/dfdeshom"

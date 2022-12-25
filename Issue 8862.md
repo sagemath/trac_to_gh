@@ -1,4 +1,4 @@
-# Issue 8862: failing resolution of a nonlinear system by solve
+# Issue 8862: solve misses some solutions in a certain nonlinear system
 
 archive/issues_008862.json:
 ```json
@@ -7,10 +7,10 @@ archive/issues_008862.json:
     "created_at": "2010-05-03T19:55:59Z",
     "labels": [
         "component: calculus",
-        "minor"
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "failing resolution of a nonlinear system by solve",
+    "title": "solve misses some solutions in a certain nonlinear system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8862",
     "user": "https://trac.sagemath.org/admin/accounts/users/casamayou"

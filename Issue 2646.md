@@ -4,6 +4,7 @@ archive/issues_002646.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman @rbeezer\n\nHere is an initial version.\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=5, **kwds):\n    xvar, xmin, xmax = xrange\n    yvar, ymin, ymax = yrange\n    zvar, zmin, zmax = zrange\n    ff = SR(vec[0])._fast_float_(xvar, yvar, zvar)\n    gg = SR(vec[1])._fast_float_(xvar, yvar, zvar)\n    hh = SR(vec[2])._fast_float_(xvar, yvar, zvar)\n    xpoints = [xmin..xmax, step=float(xmax-xmin)/(plot_points-1)][0:plot_points]\n    ypoints = [ymin..ymax, step=float(ymax-ymin)/(plot_points-1)][0:plot_points]\n    zpoints = [zmin..zmax, step=float(zmax-zmin)/(plot_points-1)][0:plot_points]\n    points = [(i,j,k) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [(ff(i,j,k), gg(i,j,k), hh(i,j,k)) for i,j,k in points]\n    max_len = max([math.sqrt(i^2+j^2+k^2) for i,j,k in vectors])\n    scaled_vectors = [(i/max_len, j/max_len, k/max_len) for i,j,k in vectors] \n    return sum([arrow3d( point, (point[0]+vector[0], point[1]+vector[1], point[2]+vector[2]), **kwds) for point,vector in zip(points, scaled_vectors)])\n```\n\nIt is used similar to the plot_vector_field function:\n\n```\nsage: var('x y z')\nsage: plot_vector_field3d((sin(x),cos(y), x*z), (x,0,3), (y,0,3), (z,0,3), plot_points=6)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2646\n\n",
+    "closed_at": "2009-10-31T05:18:14Z",
     "created_at": "2008-03-22T15:58:11Z",
     "labels": [
         "component: graphics"

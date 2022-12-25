@@ -3,10 +3,11 @@
 archive/issues_002671.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee http://www.scipy.org/NumPy_for_Matlab_Users\n\nIssue created by migration from https://trac.sagemath.org/ticket/2671\n\n",
+    "body": "Assignee: @williamstein\n\nSee http://www.scipy.org/NumPy_for_Matlab_Users\n\nIssue created by migration from https://trac.sagemath.org/ticket/2671\n\n",
+    "closed_at": "2008-04-14T16:59:31Z",
     "created_at": "2008-03-25T22:36:22Z",
     "labels": [
-        "component: cygwin"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "implement matrix/vector function similar to numpy's where or matlab's find",
@@ -15,7 +16,7 @@ archive/issues_002671.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 See http://www.scipy.org/NumPy_for_Matlab_Users
 

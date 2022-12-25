@@ -1,21 +1,24 @@
-# Issue 3554: [with patch, needs review] improve M2 pexpect interface.
+# Issue 3554: [with patch, with positive review] improve M2 pexpect interface.
 
 archive/issues_003554.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3554\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_gfurnish\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3554\n\n",
+    "closed_at": "2008-07-15T00:29:21Z",
     "created_at": "2008-07-05T21:09:00Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch, needs review] improve M2 pexpect interface.",
+    "title": "[with patch, with positive review] improve M2 pexpect interface.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3554",
     "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_gfurnish
 
 
 

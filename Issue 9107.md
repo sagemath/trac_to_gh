@@ -3,7 +3,8 @@
 archive/issues_009107.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  simonking @zabrocki\n\nIn the following class tree:\n\n```\nclass Bla(UniqueRepresentation):\n    class Bla1(UniqueRepresentation):\n        class Bla11:\n\t    Pass\n    class Bla2:\n        class Bla21:\n\t    Pass\n```\nThe names are set to\n\n```\n        sage: Bla.Bla1.__name__\n        'Bla.Bla1'\n        sage: Bla.Bla2.__name__\n        'Bla.Bla2'\n        sage: Bla.Bla2.Bla21.__name__\n        'Bla.Bla2.Bla21'\n```\nBut\n\n```\n        sage: Bla.Bla1.Bla11.__name__\n        'Bla1.Bla11'\n```\nwhereas one would expect `'Bla.Bla1.Bla11'`\nThis breaks a lot of doc in categories and in particular in functorial constructions.\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/9107\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  simonking @zabrocki\n\nIn the following class tree:\n\n```\nclass Bla(UniqueRepresentation):\n    class Bla1(UniqueRepresentation):\n        class Bla11:\n            Pass\n    class Bla2:\n        class Bla21:\n            Pass\n```\nThe names are set to\n\n```\n        sage: Bla.Bla1.__name__\n        'Bla.Bla1'\n        sage: Bla.Bla2.__name__\n        'Bla.Bla2'\n        sage: Bla.Bla2.Bla21.__name__\n        'Bla.Bla2.Bla21'\n```\nBut\n\n```\n        sage: Bla.Bla1.Bla11.__name__\n        'Bla1.Bla11'\n```\nwhereas one would expect `'Bla.Bla1.Bla11'`\nThis breaks a lot of doc in categories and in particular in functorial constructions.\n\n__Apply__\n\n- [attachment:trac9107_nesting_nested_classes.patch]\n- [attachment:trac_9107_fix_cross_reference.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9107\n\n",
+    "closed_at": "2014-06-18T14:11:28Z",
     "created_at": "2010-05-31T20:52:31Z",
     "labels": [
         "component: categories",
@@ -26,10 +27,10 @@ In the following class tree:
 class Bla(UniqueRepresentation):
     class Bla1(UniqueRepresentation):
         class Bla11:
-	    Pass
+            Pass
     class Bla2:
         class Bla21:
-	    Pass
+            Pass
 ```
 The names are set to
 
@@ -50,7 +51,10 @@ But
 whereas one would expect `'Bla.Bla1.Bla11'`
 This breaks a lot of doc in categories and in particular in functorial constructions.
 
-Florent
+__Apply__
+
+- [attachment:trac9107_nesting_nested_classes.patch]
+- [attachment:trac_9107_fix_cross_reference.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9107
 

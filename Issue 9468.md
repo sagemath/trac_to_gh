@@ -4,6 +4,7 @@ archive/issues_009468.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nCC:  sage-combinat\n\nFrom the doc:\n\n```\n        Let ``cls`` be a class in :class:`ClasscallMetaclass`, and consider\n        a call of the form:\n\n            ``x in cls``\n\n        If ``cls`` defines a method ``__classcontains__``, then this\n        results in a call to::\n\n         - ``cls.__classcontains__(cls, x)``\n\n        EXAMPLES:\n\n        We construct a class which implements membership testing, and\n        which contains ``1`` and no other x::\n\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo(object):\n            ...       __metaclass__ = ClasscallMetaclass\n            ...       @staticmethod\n            ...       def __classcontains__(cls, x):\n            ...           return x == 1\n            sage: 1 in Foo\n            True\n            sage: 2 in Foo\n            False\n```\n\nThis patch also fixes some typos and such in the documentation of ClassCallMetaclass\n\nIssue created by migration from https://trac.sagemath.org/ticket/9468\n\n",
+    "closed_at": "2011-06-08T07:12:25Z",
     "created_at": "2010-07-10T02:38:16Z",
     "labels": [
         "component: misc"

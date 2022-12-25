@@ -1,9 +1,10 @@
-# Issue 7083: Improve a few special functions
+# Issue 7083: [with patch, positive review review] Improve a few special functions
 
 archive/issues_007083.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nA few functions in functions/special.py need a little help to actually accept valid input.  Also, exp_int is duplicated in its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7083\n\n",
+    "closed_at": "2009-10-31T15:31:28Z",
     "created_at": "2009-09-30T15:03:10Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_007083.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "Improve a few special functions",
+    "title": "[with patch, positive review review] Improve a few special functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7083",
     "user": "https://github.com/kcrisman"

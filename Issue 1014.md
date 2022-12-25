@@ -1,16 +1,17 @@
-# Issue 1014: there should be an Integer.number_of_digits() function
+# Issue 1014: [with patch, with positive review] there should be an Integer.number_of_digits() function
 
 archive/issues_001014.json:
 ```json
 {
     "body": "Assignee: bober\n\nBoth `log(x,10)` and `len(str(x))` are bad ways to calculate the number of digits of an integer, but there doesn't appear to be a better way to do it right now in sage.\n\nProbably, it would be nice if there were a number_of_digits() (or maybe there is a better name) function in `sage.rings.integer.Integer` that wraps the relevant gmp function to return the number of digits of the integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1014\n\n",
+    "closed_at": "2008-02-15T05:17:39Z",
     "created_at": "2007-10-27T23:06:26Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "there should be an Integer.number_of_digits() function",
+    "title": "[with patch, with positive review] there should be an Integer.number_of_digits() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1014",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"

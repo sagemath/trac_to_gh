@@ -4,9 +4,10 @@ archive/issues_006618.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri @fchapoton\n\nKeywords: view, pdflatex, tightpage, tikz\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6618\n\n",
+    "closed_at": "2020-09-15T15:58:55Z",
     "created_at": "2009-07-25T14:52:25Z",
     "labels": [
-        "component: interfaces",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

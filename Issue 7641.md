@@ -1,4 +1,4 @@
-# Issue 7641: symbolic expression plots
+# Issue 7641: symbolic expression plots do not use the generic variable processing pipeline
 
 archive/issues_007641.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_007641.json:
         "component: graphics",
         "bug"
     ],
-    "title": "symbolic expression plots",
+    "title": "symbolic expression plots do not use the generic variable processing pipeline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7641",
     "user": "https://github.com/jasongrout"

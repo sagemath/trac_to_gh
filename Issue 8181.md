@@ -1,16 +1,17 @@
-# Issue 8181: cannot coerce residue field back to p-adic ring
+# Issue 8181: cannot convert residue field elements back to p-adic ring
 
 archive/issues_008181.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  @roed314 @orlitzky\n\nI should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\n---------------------------------------------------------------------------\nTypeError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8181\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314 @orlitzky\n\nKeywords: days71\n\nI should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\n---------------------------------------------------------------------------\nTypeError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8181\n\n",
+    "closed_at": "2016-12-01T22:32:49Z",
     "created_at": "2010-02-03T23:35:50Z",
     "labels": [
         "component: padics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
-    "title": "cannot coerce residue field back to p-adic ring",
+    "title": "cannot convert residue field elements back to p-adic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8181",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
@@ -19,6 +20,8 @@ archive/issues_008181.json:
 Assignee: @roed314
 
 CC:  @roed314 @orlitzky
+
+Keywords: days71
 
 I should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:
 

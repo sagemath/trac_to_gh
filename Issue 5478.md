@@ -1,16 +1,17 @@
-# Issue 5478: RestrictedPartitions is very slow and a huge memory hog
+# Issue 5478: [with patch, positive review] RestrictedPartitions is very slow and a huge memory hog
 
 archive/issues_005478.json:
 ```json
 {
     "body": "Assignee: @dandrake\n\nCC:  sage-combinat\n\nKeywords: combinat, partitions, gap\n\nI have code that does the same as\n\n```\nRestrictedPartitions(3000, [1000, 500, 100, 50, 10])\n```\nbut about 5.5 times faster...and on my system,\n\n```\nRestrictedPartitions(5000, [1000, 500, 100, 50, 10])\n```\nuses over two gigabytes of memory, whereas my code takes about 9.2 seconds with minimal memory usage.\n\nI need to fiddle with my code so that it's a drop-in replacement for RestrictedPartitions, but I should have a patch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5478\n\n",
+    "closed_at": "2009-04-13T02:55:47Z",
     "created_at": "2009-03-11T03:46:36Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "RestrictedPartitions is very slow and a huge memory hog",
+    "title": "[with patch, positive review] RestrictedPartitions is very slow and a huge memory hog",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5478",
     "user": "https://github.com/dandrake"

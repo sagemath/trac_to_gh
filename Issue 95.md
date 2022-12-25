@@ -4,6 +4,7 @@ archive/issues_000095.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nKeywords: GAP\n\nThis was reported by David Loeffler on 9-28-2006:\n\nI'm running SAGE 1.3.7.3.3 on one of Imperial College's public RedHat Linux boxes.\n\nIf I load the interpreter and type:\n\nM=MatrixSpace(QQ,3)\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1])])\nG.order()\n\nit works fine, and returns the obvious answer 6.\n\nIf I say instead\n\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0,0,1])])\n\nthen whenever I call any methods on G, it dies:\n\nsage: G.order()\n\n---\nexceptions.TypeError                                 Traceback (most recent call last)\n\nIssue created by migration from https://trac.sagemath.org/ticket/95\n\n",
+    "closed_at": "2007-01-12T22:39:48Z",
     "created_at": "2006-09-28T23:57:56Z",
     "labels": [
         "component: combinatorics",

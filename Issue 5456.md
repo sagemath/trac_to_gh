@@ -3,10 +3,10 @@
 archive/issues_005456.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThis is a follow-up ticket to #5428.\n\nSee the discussion there, I'll attach a preliminary patch (untested) for the \"root cause\". However, this change will break many doctests (see #5428). These are easy to fix, but make necessary a much larger patch (touching more than a dozen files) than the preliminary one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5456\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nThis is a follow-up ticket to #5428.\n\nSee the discussion there, I'll attach a preliminary patch (untested) for the \"root cause\". However, this change will break many doctests (see #5428). These are easy to fix, but make necessary a much larger patch (touching more than a dozen files) than the preliminary one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5456\n\n",
     "created_at": "2009-03-08T10:05:57Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,7 +16,7 @@ archive/issues_005456.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @williamstein
 

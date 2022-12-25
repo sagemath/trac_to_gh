@@ -1,16 +1,17 @@
-# Issue 2960: remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.
+# Issue 2960: [with patch; positive review] remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.
 
 archive/issues_002960.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2960\n\n",
+    "closed_at": "2008-04-19T22:08:41Z",
     "created_at": "2008-04-19T22:01:05Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.",
+    "title": "[with patch; positive review] remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2960",
     "user": "https://github.com/williamstein"

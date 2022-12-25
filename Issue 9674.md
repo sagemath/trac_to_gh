@@ -1,16 +1,17 @@
-# Issue 9674: Please revert sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e]
+# Issue 9674: fix SBox __init__ (again)
 
 archive/issues_009674.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @malb\n\nRevision sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e] (explacing log_b() by exact_log()) causes the following problems:\n\n* difference_distribution_matrix() (in crypto/mq/sbox.py) crashes when an n-to-m bit S-box does not contain the element 2<sup>m-1</sup> (the wrong calculation of m results in an array index going out of bounds).\n\n* the statement length != int(length) is never executed, because exact_log() always outputs an integer\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9674\n\n",
+    "closed_at": "2010-09-15T11:13:27Z",
     "created_at": "2010-08-03T12:17:53Z",
     "labels": [
         "component: cryptography",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Please revert sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e]",
+    "title": "fix SBox __init__ (again)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9674",
     "user": "https://trac.sagemath.org/admin/accounts/users/nmouha"

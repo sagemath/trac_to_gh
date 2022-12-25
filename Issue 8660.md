@@ -3,10 +3,11 @@
 archive/issues_008660.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bblochl@arcor.de @nexttime @haraldschilly minz @hedtke\n\nA German translation of the Sage installation guide is complete. See [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/cc2232f6cba3386f) for background information. What needs to be done now is to use Sphinx for the markup so that the translated guide could be included in the Sage standard documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8660\n\n",
+    "body": "Assignee: @hedtke\n\nCC:  bblochl@arcor.de @nexttime @haraldschilly minz @hedtke\n\nKeywords: installation guide, German\n\nA German translation of the Sage installation guide is complete. See [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/cc2232f6cba3386f) for background information. What needs to be done now is to use Sphinx for the markup so that the translated guide could be included in the Sage standard documentation. Attached is the ODF version of the German translation.\n\nIt's very likely that #8698 would be merged first, prior to merging the current ticket. In that case, the patch on this ticket would need to be rebased against #8698.\n\n---\n\n**Apply**\n1. [attachment:trac_8660_restart.2.patch]\n2. [attachment:trac_8660_restart_p1.2.patch]\n3. [attachment:trac_8660_restart_p2.2.patch]\nto the **Sage library**.\n\nFor Sage versions prior to 4.7.1.alpha2, you'll also have to apply the patches from #9725.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8660\n\n",
+    "closed_at": "2021-09-02T18:48:47Z",
     "created_at": "2010-04-08T15:12:54Z",
     "labels": [
-        "component: documentation"
+        "component: translations"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "German translation of installation guide",
@@ -15,11 +16,26 @@ archive/issues_008660.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: mvngu
+Assignee: @hedtke
 
 CC:  bblochl@arcor.de @nexttime @haraldschilly minz @hedtke
 
-A German translation of the Sage installation guide is complete. See [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/cc2232f6cba3386f) for background information. What needs to be done now is to use Sphinx for the markup so that the translated guide could be included in the Sage standard documentation.
+Keywords: installation guide, German
+
+A German translation of the Sage installation guide is complete. See [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/cc2232f6cba3386f) for background information. What needs to be done now is to use Sphinx for the markup so that the translated guide could be included in the Sage standard documentation. Attached is the ODF version of the German translation.
+
+It's very likely that #8698 would be merged first, prior to merging the current ticket. In that case, the patch on this ticket would need to be rebased against #8698.
+
+---
+
+**Apply**
+1. [attachment:trac_8660_restart.2.patch]
+2. [attachment:trac_8660_restart_p1.2.patch]
+3. [attachment:trac_8660_restart_p2.2.patch]
+to the **Sage library**.
+
+For Sage versions prior to 4.7.1.alpha2, you'll also have to apply the patches from #9725.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8660
 

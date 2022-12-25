@@ -3,7 +3,8 @@
 archive/issues_007679.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAdd a section to the [Constructions](http://www.sagemath.org/doc/constructions/) document with tips on Python functional programming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7679\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: functional programming, constructions document\n\nAdd a section to the [Constructions](http://www.sagemath.org/doc/constructions/) document with tips on Python functional programming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7679\n\n",
+    "closed_at": "2009-12-14T16:09:57Z",
     "created_at": "2009-12-14T02:21:25Z",
     "labels": [
         "component: documentation"
@@ -16,6 +17,8 @@ archive/issues_007679.json:
 }
 ```
 Assignee: mvngu
+
+Keywords: functional programming, constructions document
 
 Add a section to the [Constructions](http://www.sagemath.org/doc/constructions/) document with tips on Python functional programming.
 

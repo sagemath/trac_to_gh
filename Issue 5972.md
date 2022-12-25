@@ -1,9 +1,10 @@
-# Issue 5972: [with patch; needs review] segfault in degenerate matrix multiply
+# Issue 5972: [with patch; positive review] segfault in degenerate matrix multiply
 
 archive/issues_005972.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nOUCH:\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nmatrix(QQ,2,0)sage: matrix(QQ,2,0)*matrix(QQ,0,2)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5972\n\n",
+    "closed_at": "2009-05-04T04:19:00Z",
     "created_at": "2009-05-04T03:45:14Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005972.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch; needs review] segfault in degenerate matrix multiply",
+    "title": "[with patch; positive review] segfault in degenerate matrix multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5972",
     "user": "https://github.com/williamstein"

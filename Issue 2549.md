@@ -3,11 +3,11 @@
 archive/issues_002549.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nI'd like to be able to create a vector space over a symbolic function ring:\n\n```\nvar('x,y,z');VS=VectorSpace(CallableSymbolicExpressionRing((x,y,z)),2)\n    raise TypeError, \"K must be a field\"\n<type 'exceptions.NotImplementedError'>:\n```\nI suppose the result of calling an element of K may be a field element or not, depending on what arguments are passed. Note that this is glossed-over in the case or SR, since `VectorSpace(SR,2)` works.\n\nPerhaps what is needed is a new type of object, a symbolic mapping whose signature is explicit, like:\n\n```\nf(x,y,z, RR)\n}}} or {{{\ng(x,y,z, (RR, RR, ZZ))\n```\nwhere the first syntax defines a mapping whose arguments are all in RR, the second a mapping with the last argument in ZZ.\n\nThis specifies the domain of the mapping but not the range. I suppose you could validate the output of the mapping to make sure that it was in (or coerced to?) the specified range (say RR or ZZ). Perhaps something like this is on the horizon, since it seems like a fairly deep architectural change?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2549\n\n",
+    "body": "Assignee: cwitty\n\nI'd like to be able to create a vector space over a symbolic function ring:\n\n```\nvar('x,y,z');VS=VectorSpace(CallableSymbolicExpressionRing((x,y,z)),2)\n    raise TypeError, \"K must be a field\"\n<type 'exceptions.NotImplementedError'>:\n```\nI suppose the result of calling an element of K may be a field element or not, depending on what arguments are passed. Note that this is glossed-over in the case or SR, since `VectorSpace(SR,2)` works.\n\nPerhaps what is needed is a new type of object, a symbolic mapping whose signature is explicit, like:\n\n```\nf(x,y,z, RR)\n```\nor\n\n```\ng(x,y,z, (RR, RR, ZZ))\n```\nwhere the first syntax defines a mapping whose arguments are all in RR, the second a mapping with the last argument in ZZ.\n\nThis specifies the domain of the mapping but not the range. I suppose you could validate the output of the mapping to make sure that it was in (or coerced to?) the specified range (say RR or ZZ). Perhaps something like this is on the horizon, since it seems like a fairly deep architectural change?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2549\n\n",
+    "closed_at": "2014-03-19T04:35:24Z",
     "created_at": "2008-03-16T17:26:41Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement VectorSpace over symbolic function ring",
@@ -31,12 +31,17 @@ Perhaps what is needed is a new type of object, a symbolic mapping whose signatu
 
 ```
 f(x,y,z, RR)
-}}} or {{{
+```
+or
+
+```
 g(x,y,z, (RR, RR, ZZ))
 ```
 where the first syntax defines a mapping whose arguments are all in RR, the second a mapping with the last argument in ZZ.
 
 This specifies the domain of the mapping but not the range. I suppose you could validate the output of the mapping to make sure that it was in (or coerced to?) the specified range (say RR or ZZ). Perhaps something like this is on the horizon, since it seems like a fairly deep architectural change?
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2549
 

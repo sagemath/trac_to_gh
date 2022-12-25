@@ -4,9 +4,10 @@ archive/issues_001796.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nthe very first time a user runs sage, they are asked for the Admin password. It would be nice is there was a programmatic approach to setting that password from the command line. This would greatly simplify the installation of SAGE from an RPM (or a DEB) package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1796\n\n",
+    "closed_at": "2021-10-11T07:02:20Z",
     "created_at": "2008-01-16T21:45:07Z",
     "labels": [
-        "component: distribution",
+        "component: notebook",
         "minor",
         "bug"
     ],

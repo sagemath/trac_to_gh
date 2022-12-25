@@ -1,16 +1,17 @@
-# Issue 6649: doctest failure in decorate.py (on OS X only)
+# Issue 6649: [with patch, positive review] doctest failure in decorate.py (on OS X only)
 
 archive/issues_006649.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nIt is a Python 2.6 issue:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.alpha1/devel/sage/sage/parallel/\ndecorate.py\", line 64:\n    sage: @parallel()\n    def f(N): return N**Integer(2)\nExpected nothing\nGot:\n    doctest:49: DeprecationWarning: os.popen2 is deprecated.  Use the\nsubprocess module.\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_3\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6649\n\n",
+    "closed_at": "2009-08-03T06:21:51Z",
     "created_at": "2009-07-28T18:06:40Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "doctest failure in decorate.py (on OS X only)",
+    "title": "[with patch, positive review] doctest failure in decorate.py (on OS X only)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6649",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

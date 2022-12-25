@@ -1,9 +1,10 @@
-# Issue 6289: [with patch, needs review] minor ref manual issue with calculus stuff
+# Issue 6289: [with patch, positive review] minor ref manual issue with calculus stuff
 
 archive/issues_006289.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis adds a title to the symbolic ring section, and also moves it so it's not the very first thing in the calculus chapter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6289\n\n",
+    "closed_at": "2009-06-24T10:11:24Z",
     "created_at": "2009-06-14T21:42:47Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006289.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] minor ref manual issue with calculus stuff",
+    "title": "[with patch, positive review] minor ref manual issue with calculus stuff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6289",
     "user": "https://github.com/jhpalmieri"

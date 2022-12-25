@@ -3,10 +3,11 @@
 archive/issues_006390.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @rlmill\n\nKeywords: elliptic curve logarithm\n\nAs of 4.0.2 we only have elliptic logs for curves defined over the reals (including curves over number fields with a real embedding).  We also need the complex case, which can be implemented using the complex AGM.  I expect to be adding this during June/July 2009.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6390\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill\n\nKeywords: elliptic curve logarithm\n\nAs of 4.0.2 we only have elliptic logs for curves defined over the reals (including curves over number fields with a real embedding).  We also need the complex case, which can be implemented using the complex AGM.  I expect to be adding this during June/July 2009.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6390\n\n",
+    "closed_at": "2010-04-15T05:20:56Z",
     "created_at": "2009-06-23T19:59:32Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Implement elliptic logarithms (complex case)",
@@ -15,7 +16,7 @@ archive/issues_006390.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
 
 CC:  @robertwb @rlmill
 

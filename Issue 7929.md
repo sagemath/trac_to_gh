@@ -3,7 +3,8 @@
 archive/issues_007929.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCatched with #7921:\n\n```\nsage: K.<a> = NumberField(x^3-17)\nsage: P = K.ideal(29).factor()[0][0]\nsage: k = K.residue_field(P) # indirect doctest\nsage: F = ZZ.residue_field(17)  # indirect doctest\nsage: loads(dumps(k))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(k.an_element()))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(F))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(F.an_element()))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7929\n\n",
+    "body": "Assignee: @loefflerd\n\nCaught with #7921; please write patch on top of it to avoid conflicts.\n\n```\nsage: K.<a> = NumberField(x^3-17)\nsage: P = K.ideal(29).factor()[0][0]\nsage: k = K.residue_field(P) # indirect doctest\nsage: F = ZZ.residue_field(17)  # indirect doctest\nsage: loads(dumps(k))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(k.an_element()))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(F))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(F.an_element()))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7929\n\n",
+    "closed_at": "2011-11-26T13:07:22Z",
     "created_at": "2010-01-14T14:09:55Z",
     "labels": [
         "component: number fields",
@@ -18,7 +19,7 @@ archive/issues_007929.json:
 ```
 Assignee: @loefflerd
 
-Catched with #7921:
+Caught with #7921; please write patch on top of it to avoid conflicts.
 
 ```
 sage: K.<a> = NumberField(x^3-17)
@@ -57,6 +58,7 @@ Traceback (most recent call last):
   File "ring.pyx", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)
 TypeError: 'NoneType' object is unsubscriptable
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7929
 

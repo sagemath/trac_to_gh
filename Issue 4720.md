@@ -1,22 +1,25 @@
-# Issue 4720: Numerical noise in test sage/rings/number_field/number_field_morphisms.pyx
+# Issue 4720: [with patch, positive review] Numerical noise in test sage/rings/number_field/number_field_morphisms.pyx
 
 archive/issues_004720.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Fedora 10, 32 bits in sage-3.2.2.alpha0 the following test failed:\n\n\n```\nExpecting:\n     -0.500000000000000 + 0.866025403784439*I\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.2.1.rc0/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 210, in __main__.example_10\nFailed example:\n     closest_root(x**Integer(3)-Integer(1), CDF.gen(0))###line\n223:_sage_    >>> closest_root(x^3-1, CDF.0)\nExpected:\n     -0.500000000000000 + 0.866025403784439*I\nGot:\n     -0.500000000000000 + 0.866025403784438*I\n\n\n```\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4720\n\n",
+    "body": "Assignee: tbd\n\nKeywords: numerical noise, number_field_morphism\n\nOn Fedora 10, 32 bits in sage-3.2.2.alpha0 the following test failed:\n\n\n```\nExpecting:\n     -0.500000000000000 + 0.866025403784439*I\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.2.1.rc0/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\",\nline 210, in __main__.example_10\nFailed example:\n     closest_root(x**Integer(3)-Integer(1), CDF.gen(0))###line\n223:_sage_    >>> closest_root(x^3-1, CDF.0)\nExpected:\n     -0.500000000000000 + 0.866025403784439*I\nGot:\n     -0.500000000000000 + 0.866025403784438*I\n\n\n```\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4720\n\n",
+    "closed_at": "2008-12-10T09:19:16Z",
     "created_at": "2008-12-05T21:57:48Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Numerical noise in test sage/rings/number_field/number_field_morphisms.pyx",
+    "title": "[with patch, positive review] Numerical noise in test sage/rings/number_field/number_field_morphisms.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4720",
     "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: tbd
+
+Keywords: numerical noise, number_field_morphism
 
 On Fedora 10, 32 bits in sage-3.2.2.alpha0 the following test failed:
 

@@ -3,7 +3,8 @@
 archive/issues_008526.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nCC:  @hivert\n\nIn a number of emails I get from trac, I see lines like this:\n\n```\nChanges (by newvalueoldvalue): \n```\n\nThe `newvalueoldvalue` should instead be an actual username. I'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).\n\nThis came up on the following sage-devel thread: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945#\n\nIssue created by migration from https://trac.sagemath.org/ticket/8526\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  @hivert\n\nIn a number of emails I get from trac, I see lines like this:\n\n```\nChanges (by {'newvalue': u'Fr\\xe9d\\xe9ric Chapoton', 'oldvalue': ''}):\n```\n\nThis should be an actual username instead. The problem seems to appear only when non-ASCII characters are involved.\n\nI'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).\n\nThis came up on the following sage-devel thread: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945\n\nIssue created by migration from https://trac.sagemath.org/ticket/8526\n\n",
+    "closed_at": "2017-01-21T18:03:11Z",
     "created_at": "2010-03-13T18:10:45Z",
     "labels": [
         "component: website/wiki",
@@ -23,14 +24,16 @@ CC:  @hivert
 In a number of emails I get from trac, I see lines like this:
 
 ```
-Changes (by newvalueoldvalue): 
+Changes (by {'newvalue': u'Fr\xe9d\xe9ric Chapoton', 'oldvalue': ''}):
 ```
 
-The `newvalueoldvalue` should instead be an actual username. I'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).
+This should be an actual username instead. The problem seems to appear only when non-ASCII characters are involved.
+
+I'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).
 
 This came up on the following sage-devel thread: 
 
-http://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945#
+http://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945
 
 Issue created by migration from https://trac.sagemath.org/ticket/8526
 

@@ -1,16 +1,17 @@
-# Issue 2713: [with patch, needs review] sage-doctest applies backslash handling to expected outputs
+# Issue 2713: [with patch, positive review] sage-doctest applies backslash handling to expected outputs
 
 archive/issues_002713.json:
 ```json
 {
     "body": "Assignee: failure\n\nsage-doctest applies \"backslash handling\" to doctests, where a line that ends with a single backslash is merged with the next line (with the backslash removed).  As far as I can tell, this makes it impossible to doctest something with an expected output having a line ending with a backslash.\n\nThis patch to the \"hg_scripts\" repository removes the behavior for expected outputs (but keeps backslash handling for inputs; that is, for lines beginning \"sage:\").  There was one doctest in Sage that depended on the previous behavior; the second patch modifies that doctest to pass with the new sage-doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2713\n\n",
+    "closed_at": "2008-04-04T21:54:07Z",
     "created_at": "2008-03-29T01:02:51Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] sage-doctest applies backslash handling to expected outputs",
+    "title": "[with patch, positive review] sage-doctest applies backslash handling to expected outputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2713",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

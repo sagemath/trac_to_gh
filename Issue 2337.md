@@ -1,16 +1,17 @@
-# Issue 2337: [with patch; needs review] fix typo in save_session
+# Issue 2337: [with patch, positive review] fix typo in save_session
 
 archive/issues_002337.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: save_session?\n\n[stuff deleted]\n\n       Save all variables that can be saved wto the given filename.\nThe\n\n^\n\n******\nChange \"wto\" to \"to\".\n\nKate\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2337\n\n",
+    "closed_at": "2008-02-27T23:37:42Z",
     "created_at": "2008-02-27T20:35:44Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch; needs review] fix typo in save_session",
+    "title": "[with patch, positive review] fix typo in save_session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2337",
     "user": "https://github.com/williamstein"

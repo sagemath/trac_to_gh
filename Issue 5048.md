@@ -3,11 +3,11 @@
 archive/issues_005048.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\nKeywords: congruence subgroup coercion\n\n```\nsage: Gamma0(10).1 * Gamma0(5).2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/4030/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7375)()\n    849 \n    850 \n--> 851 \n    852 \n    853 \n\nTypeError: unsupported operand parent(s) for '*': 'Congruence Subgroup Gamma0(10)' and 'Congruence Subgroup Gamma0(5)'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5048\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  georgsweber\n\nKeywords: congruence subgroup coercion, sd35\n\n```\nsage: Gamma0(10).1 * Gamma0(5).2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/4030/_home_ncalexan__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/scratch/nca/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7375)()\n    849 \n    850 \n--> 851 \n    852 \n    853 \n\nTypeError: unsupported operand parent(s) for '*': 'Congruence Subgroup Gamma0(10)' and 'Congruence Subgroup Gamma0(5)'\n```\nApply \n* [attachment:trac_5048-rebased_for_11422.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/5048\n\n",
+    "closed_at": "2012-01-15T21:55:36Z",
     "created_at": "2009-01-21T08:00:00Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "congruence subgroups are not integrated into the coercion model",
@@ -16,11 +16,11 @@ archive/issues_005048.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 CC:  georgsweber
 
-Keywords: congruence subgroup coercion
+Keywords: congruence subgroup coercion, sd35
 
 ```
 sage: Gamma0(10).1 * Gamma0(5).2
@@ -43,6 +43,8 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand parent(s) for '*': 'Congruence Subgroup Gamma0(10)' and 'Congruence Subgroup Gamma0(5)'
 ```
+Apply 
+* [attachment:trac_5048-rebased_for_11422.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/5048
 

@@ -1,16 +1,17 @@
-# Issue 7015: [with patch; needs review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)
+# Issue 7015: [with patch; positive review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)
 
 archive/issues_007015.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nthe ratpoints spkg builds an executable we just throw away.  On Cygwin it fails though changing the link order from\n\n```\n\t    -lgmp -lm -lratpoints\n\tto\n\t    -lm -lratpoints -lgmp\n```\nwould fix the problem. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7015\n\n",
+    "closed_at": "2009-10-16T08:53:26Z",
     "created_at": "2009-09-25T22:15:09Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch; needs review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)",
+    "title": "[with patch; positive review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7015",
     "user": "https://github.com/williamstein"

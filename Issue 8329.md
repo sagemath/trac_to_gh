@@ -3,7 +3,8 @@
 archive/issues_008329.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph is missing a copy() method.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: type(bg)\n<class 'sage.graphs.bipartite_graph.BipartiteGraph'>\nsage: bg2 = bg.copy()\nsage: type(bg2)\n<class 'sage.graphs.graph.Graph'>\n```\n\nThe result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8329\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph, copy\n\nBipartiteGraph is missing a copy() method.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: type(bg)\n<class 'sage.graphs.bipartite_graph.BipartiteGraph'>\nsage: bg2 = bg.copy()\nsage: type(bg2)\n<class 'sage.graphs.graph.Graph'>\n```\n\nThe result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8329\n\n",
+    "closed_at": "2010-04-15T20:09:01Z",
     "created_at": "2010-02-22T19:51:40Z",
     "labels": [
         "component: graph theory",
@@ -20,7 +21,7 @@ Assignee: @rhinton
 
 CC:  @rlmill @jasongrout
 
-Keywords: BipartiteGraph
+Keywords: BipartiteGraph, copy
 
 BipartiteGraph is missing a copy() method.
 

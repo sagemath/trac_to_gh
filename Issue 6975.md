@@ -4,6 +4,7 @@ archive/issues_006975.json:
 ```json
 {
     "body": "Assignee: tbd\n\nfixed package is here:\n\nhttp://wstein.org/home/ondrej/patches/flint-1.3.0.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6975\n\n",
+    "closed_at": "2009-09-28T04:39:50Z",
     "created_at": "2009-09-21T05:19:03Z",
     "labels": [
         "component: algebra",

@@ -4,6 +4,7 @@ archive/issues_008085.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nIt would be nice to have a single number line plot.\u00a0 I pass it a list of numbers, or maybe intervals, and it plots the points or intervals on the single axis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8085\n\n",
+    "closed_at": "2011-09-12T20:21:26Z",
     "created_at": "2010-01-27T01:53:37Z",
     "labels": [
         "component: graphics"

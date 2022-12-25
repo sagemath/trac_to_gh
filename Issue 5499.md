@@ -1,16 +1,17 @@
-# Issue 5499: Wrong precision when creating p-adic field element
+# Issue 5499: [with patch; positive review] Wrong precision when creating p-adic field element
 
 archive/issues_005499.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis was originally reported on ticket #5076 but seems to be a separate issue.\n\n```\nsage: K = Qp(11,8)\nsage: a = 11^-2 + O(11^5)\nsage: a\n11^-2 + O(11^3)\n```\nBy contrast:\n\n```\nsage: K = Qp(11,8)\nsage: 11^(-2) + K(O(11^5))\n11^-2 + O(11^5)\n```\nNote that\n\n```\nsage: O(11^5).parent()\n11-adic Ring with capped relative precision 5\nsage: O(11^5).parent() == K\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5499\n\n",
+    "closed_at": "2009-04-13T08:47:29Z",
     "created_at": "2009-03-12T05:18:12Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Wrong precision when creating p-adic field element",
+    "title": "[with patch; positive review] Wrong precision when creating p-adic field element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5499",
     "user": "https://github.com/kedlaya"

@@ -1,15 +1,16 @@
-# Issue 4924: convert sage.probability.* docstrings to Sphinx
+# Issue 4924: [with patch, needs review] convert sage.probability.* docstrings to Sphinx
 
 archive/issues_004924.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4924\n\n",
+    "closed_at": "2009-02-24T18:41:25Z",
     "created_at": "2009-01-01T22:55:32Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.probability.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.probability.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4924",
     "user": "https://github.com/mwhansen"

@@ -3,7 +3,7 @@
 archive/issues_009699.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby\n\nPositions of vertices returned by planar_layout can be set to have the vertices of an equilateral triangle as exterior vertices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9699\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby\n\nPositions of vertices returned by planar_layout can be set to have the vertices of an equilateral triangle as exterior vertices.\n\nApply only [attachment:trac_9699_4.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9699\n\n",
     "created_at": "2010-08-06T19:24:42Z",
     "labels": [
         "component: graph theory"
@@ -20,6 +20,8 @@ Assignee: jason, ncohen, rlm
 CC:  @rlmill boothby
 
 Positions of vertices returned by planar_layout can be set to have the vertices of an equilateral triangle as exterior vertices.
+
+Apply only [attachment:trac_9699_4.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9699
 

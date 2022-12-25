@@ -1,16 +1,17 @@
-# Issue 1685: restructuring symmetric functions and misc. combinatorics updates.
+# Issue 1685: [with patch, with causiously positive review] restructuring symmetric functions and misc. combinatorics updates.
 
 archive/issues_001685.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1685\n\n",
+    "closed_at": "2008-01-13T12:14:32Z",
     "created_at": "2008-01-04T23:35:55Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "restructuring symmetric functions and misc. combinatorics updates.",
+    "title": "[with patch, with causiously positive review] restructuring symmetric functions and misc. combinatorics updates.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1685",
     "user": "https://github.com/mwhansen"

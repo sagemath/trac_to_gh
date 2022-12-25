@@ -1,16 +1,17 @@
-# Issue 4657: OSXL: gnuplot doesn't start due to dreaded libpng conflict
+# Issue 4657: [with patch, positive review] OSX: gnuplot doesn't start due to dreaded libpng conflict
 
 archive/issues_004657.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/9b61a7cf8fbfac7a Wayne reported:\n\n```\n/WW/Projects/Heart/bash$sage \n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: gnuplot_console() \ndyld: Symbol not found: __cg_png_create_info_struct \n  Referenced from: /System/Library/Frameworks/ \nApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/ \nVersions/A/ImageIO \n  Expected in: /Users/ww/Applications/Scientific/sage/local/lib// \nlibpng12.0.dylib \nsage: \n```\n| Sage Version 3.2, Release Date: 2008-11-20                         | \n| Type notebook() for the GUI, and license() for information.        | \nThe fix should be obvious by now.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4657\n\n",
+    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/9b61a7cf8fbfac7a Wayne reported:\n\n```\n/WW/Projects/Heart/bash$sage \n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: gnuplot_console() \ndyld: Symbol not found: __cg_png_create_info_struct \n  Referenced from: /System/Library/Frameworks/ \nApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/ \nVersions/A/ImageIO \n  Expected in: /Users/ww/Applications/Scientific/sage/local/lib// \nlibpng12.0.dylib \nsage: \n```\n| Sage Version 3.2, Release Date: 2008-11-20                         | \n| Type notebook() for the GUI, and license() for information.        | \nThe fix should be obvious by now, i.e. use sage-native-execute\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4657\n\n",
+    "closed_at": "2008-11-30T05:40:33Z",
     "created_at": "2008-11-29T22:13:41Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "OSXL: gnuplot doesn't start due to dreaded libpng conflict",
+    "title": "[with patch, positive review] OSX: gnuplot doesn't start due to dreaded libpng conflict",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4657",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -35,7 +36,7 @@ sage:
 ```
 | Sage Version 3.2, Release Date: 2008-11-20                         | 
 | Type notebook() for the GUI, and license() for information.        | 
-The fix should be obvious by now.
+The fix should be obvious by now, i.e. use sage-native-execute
 
 Cheers,
 

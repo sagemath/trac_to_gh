@@ -1,21 +1,22 @@
-# Issue 5242: [with patch, needs review] generic_power can now handle semi-groups
+# Issue 5242: [with patch, positive review] generic_power can now handle semi-groups
 
 archive/issues_005242.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nKeywords: generic power\n\nThe former implementation of generic_power_c made two assumptions\n- `not a` is well defined for any element a\n- There is a one\nThese two assumptions do not always always hold. So I reorganized the initial code which handle particular cases so that:\n- it does not call \"not a\" when the exponent n is different from zero\n- it delegates to ~a the responsability of raising an error when the exponent n is negative and a is not invertible. This allows for monoids with partialy defined inversion (e.g. the multiplicative monoid of Z/12Z).\n\nThis modification revealed a problem in matrices: the empty matrix 0x0 modulo 2 was tested to be non invertible! I changed the test to the correct value. \n\nInvestigating this revealled many other inconsistencies with matrices; those will\nbe taken care of in a subsequent patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5242\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: generic power\n\nThe former implementation of generic_power_c made two assumptions\n- `not a` is well defined for any element a\n- There is a one\nThese two assumptions do not always always hold. So I reorganized the initial code which handle particular cases so that:\n- it does not call \"not a\" when the exponent n is different from zero\n- it delegates to ~a the responsibility of raising an error when the exponent n is negative and a is not invertible. This allows for monoids with partially defined inversion (e.g. the multiplicative monoid of Z/12Z).\n\nThis modification revealed a problem in matrices: the empty matrix 0x0 modulo 2 was tested to be non invertible! I changed the test to the correct value. \n\nInvestigating this revealed many other inconsistencies with matrices; those will be taken care of in a subsequent patch.   \n\nIssue created by migration from https://trac.sagemath.org/ticket/5242\n\n",
+    "closed_at": "2009-02-15T07:17:26Z",
     "created_at": "2009-02-12T13:20:31Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] generic_power can now handle semi-groups",
+    "title": "[with patch, positive review] generic_power can now handle semi-groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5242",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: tbd
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -26,12 +27,11 @@ The former implementation of generic_power_c made two assumptions
 - There is a one
 These two assumptions do not always always hold. So I reorganized the initial code which handle particular cases so that:
 - it does not call "not a" when the exponent n is different from zero
-- it delegates to ~a the responsability of raising an error when the exponent n is negative and a is not invertible. This allows for monoids with partialy defined inversion (e.g. the multiplicative monoid of Z/12Z).
+- it delegates to ~a the responsibility of raising an error when the exponent n is negative and a is not invertible. This allows for monoids with partially defined inversion (e.g. the multiplicative monoid of Z/12Z).
 
 This modification revealed a problem in matrices: the empty matrix 0x0 modulo 2 was tested to be non invertible! I changed the test to the correct value. 
 
-Investigating this revealled many other inconsistencies with matrices; those will
-be taken care of in a subsequent patch.
+Investigating this revealed many other inconsistencies with matrices; those will be taken care of in a subsequent patch.   
 
 Issue created by migration from https://trac.sagemath.org/ticket/5242
 

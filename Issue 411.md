@@ -4,9 +4,11 @@ archive/issues_000411.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  dmharvey@math.harvard.edu\n\nThe attached mercurial bundle has the c_lib moved into the tree and some other enhancements as well:\n\n1)  Many modifications to .hgignore to make it ignore c_lib junk and keep it from ignore .h files and .c files only under sage/\n2)  setup.py misc improvements\n3)  setup.py checks for recursive dependencies on .pyx files.  So if you have a deep includes -- i.e. a .pxi included from a .pxi, it will now include this in the age comparisons.  Unfortunately, this approximately doubles the time on a no-op build.  I don't know what other people think about this, but I'm rather freakish about knowing that my builds are reliable so I think it is worth it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/411\n\n",
+    "closed_at": "2007-08-30T00:58:04Z",
     "created_at": "2007-08-09T02:26:12Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",

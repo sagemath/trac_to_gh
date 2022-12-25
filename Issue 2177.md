@@ -1,16 +1,17 @@
-# Issue 2177: [with patch; needs review] debianized jmol spkg
+# Issue 2177: [with patch; with positive review] debianized jmol spkg
 
 archive/issues_002177.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nFor some reason the jmol directory shipped with SAGE does not contain the doc/ directory, which causes it to fail to build on Debian (or anything else, I'm pretty sure).  The current spkg-install script just copies the pre-built jmol jars, but presumably it'd be better to build our own (certainly Debian will want me to do this).\n\nThe doc/ directory is not large, so I'm not sure why it is missing, so I've obtained a copy of the doc directory from the jmol-11.5.2 upstream.  \n\nI also move the \"jmol/\" directory to \"src/\" for compliance with our new spkg format standards.\n\nI'll post a new SPKG later tonight.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2177\n\n",
+    "closed_at": "2008-02-16T17:53:25Z",
     "created_at": "2008-02-16T04:33:51Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch; needs review] debianized jmol spkg",
+    "title": "[with patch; with positive review] debianized jmol spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2177",
     "user": "https://github.com/timabbott"

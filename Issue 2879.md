@@ -1,16 +1,17 @@
-# Issue 2879: [with patch, needs review] Bug fix in totallyreal_rel
+# Issue 2879: [with patch, with positive review] Bug fix in totallyreal_rel
 
 archive/issues_002879.json:
 ```json
 {
     "body": "Assignee: citro\n\nThere was an bug in the enumeration of relative totally real fields: if the extension was constant (coming from Q), it was ignored by a resultant calculation.  Also, some exceptional cases were unintentionally ignored.  The fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2879\n\n",
+    "closed_at": "2008-04-15T10:57:54Z",
     "created_at": "2008-04-11T18:09:32Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] Bug fix in totallyreal_rel",
+    "title": "[with patch, with positive review] Bug fix in totallyreal_rel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2879",
     "user": "https://github.com/jvoight"

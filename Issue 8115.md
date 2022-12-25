@@ -3,7 +3,8 @@
 archive/issues_008115.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @vbraun mhampton\n\nKeywords: cddlib, polyhedra\n\nA problem with cddlib-094f.p2.spkg is that it patches upstream source using a patch file, rather than copying a patched file over to the appropriate place under the src/ directory. Consequently, there is no clean separation between upstream source and patches that we apply to cddlib-094f. Looking at spkg-install of cddlib-094f.p2.spkg, you get these two lines for applying Sage-specific patches:\n\n```\ncp patches/allfaces.c src/src/\n\npatch -p0 < patches/cdd_both_reps-make.patch\n```\nThe first line is the preferred way to patch an upstream source because it copies the patched file patches/allfaces.c over to src/src/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8115\n\n",
+    "body": "Assignee: tbd\n\nCC:  @vbraun mhampton\n\nKeywords: cddlib, polyhedra\n\nA problem with cddlib-094f.p2.spkg is that it patches upstream source using a patch file, rather than copying a patched file over to the appropriate place under the src/ directory. Consequently, there is no clean separation between upstream source and patches that we apply to cddlib-094f. Looking at spkg-install of cddlib-094f.p2.spkg, you get these two lines for applying Sage-specific patches:\n\n```\ncp patches/allfaces.c src/src/\n\npatch -p0 < patches/cdd_both_reps-make.patch\n```\nThe first line is the preferred way to patch an upstream source because it copies the patched file patches/allfaces.c over to src/src/. This issue is reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e599fd37de909264).\n\n\n\n\nThis depends on #8179.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8115\n\n",
+    "closed_at": "2010-02-17T20:58:34Z",
     "created_at": "2010-01-29T09:51:05Z",
     "labels": [
         "component: packages: standard",
@@ -29,7 +30,12 @@ cp patches/allfaces.c src/src/
 
 patch -p0 < patches/cdd_both_reps-make.patch
 ```
-The first line is the preferred way to patch an upstream source because it copies the patched file patches/allfaces.c over to src/src/.
+The first line is the preferred way to patch an upstream source because it copies the patched file patches/allfaces.c over to src/src/. This issue is reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e599fd37de909264).
+
+
+
+
+This depends on #8179.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8115
 

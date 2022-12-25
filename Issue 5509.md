@@ -1,9 +1,10 @@
-# Issue 5509: Make a parametric_plot.pyx docstring a raw string because of a \times in it.
+# Issue 5509: [with patch, positive review] Make a parametric_plot.pyx docstring a raw string because of a \times in it.
 
 archive/issues_005509.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following documentation looks weird because the \\t in the \\times in the string gets converted to a tab.\n\n```\nsage: p.triangulate?\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method triangulate of sage.plot.plot3d.parametric_surface.ParametricSurface object at 0xbb0cdec>\nNamespace:\tInteractive\nDocstring:\n    \n            Call self.eval() for all (u,v) in urange \times vrange\n            to construct this surface. \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5509\n\n",
+    "body": "Assignee: @williamstein\n\nThe following documentation looks weird because the \\t in the \\times in the string gets converted to a tab.\n\n```\nsage: p.triangulate?\nType:builtin_function_or_method\nBase Class:<type 'builtin_function_or_method'>\nString Form:<built-in method triangulate of sage.plot.plot3d.parametric_surface.ParametricSurface object at 0xbb0cdec>\nNamespace:Interactive\nDocstring:\n\n            Call self.eval() for all (u,v) in urange times vrange\n            to construct this surface. \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5509\n\n",
+    "closed_at": "2009-03-20T20:35:06Z",
     "created_at": "2009-03-13T14:39:51Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005509.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Make a parametric_plot.pyx docstring a raw string because of a \\times in it.",
+    "title": "[with patch, positive review] Make a parametric_plot.pyx docstring a raw string because of a \\times in it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5509",
     "user": "https://github.com/jasongrout"
@@ -23,13 +24,13 @@ The following documentation looks weird because the \t in the \times in the stri
 
 ```
 sage: p.triangulate?
-Type:		builtin_function_or_method
-Base Class:	<type 'builtin_function_or_method'>
-String Form:	<built-in method triangulate of sage.plot.plot3d.parametric_surface.ParametricSurface object at 0xbb0cdec>
-Namespace:	Interactive
+Type:builtin_function_or_method
+Base Class:<type 'builtin_function_or_method'>
+String Form:<built-in method triangulate of sage.plot.plot3d.parametric_surface.ParametricSurface object at 0xbb0cdec>
+Namespace:Interactive
 Docstring:
-    
-            Call self.eval() for all (u,v) in urange 	imes vrange
+
+            Call self.eval() for all (u,v) in urange times vrange
             to construct this surface. 
 
 ```

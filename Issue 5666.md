@@ -4,6 +4,7 @@ archive/issues_005666.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIt is impossible to create ideals in rings of the form Integers mod n:\n\n```\nsage: R = Integers(10)\nsage: R.ideal(1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/5831/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\n/local/jec/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc\nin ideal(self, *gens, **kwds)\n   487             gens = gens[0]\n   488         from\nsage.rings.polynomial.multi_polynomial_libsingular import\nMPolynomialRing_libsingular\n--> 489         if not\nisinstance(self.__R,MPolynomialRing_libsingular) and not\nself.__R._has_singular:\n   490             # pass through\n   491             MPolynomialRing_generic.ideal(self,gens,**kwds)\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has\nno attribute '_has_singular'\nsage: R.ideal([2,4])\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n(as above)\n```\n\nIt looks as if the ideal() method for class  `QuotientRing_generic ` is\nonly really geared to polynomial ring quotients.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5666\n\n",
+    "closed_at": "2010-01-18T22:41:43Z",
     "created_at": "2009-04-02T15:41:15Z",
     "labels": [
         "component: algebra",

@@ -1,16 +1,17 @@
-# Issue 1970: [with tiny patch; needs easy review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it
+# Issue 1970: [with tiny patch; positive review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it
 
 archive/issues_001970.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1970\n\n",
+    "closed_at": "2008-01-29T16:19:33Z",
     "created_at": "2008-01-29T11:56:32Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with tiny patch; needs easy review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it",
+    "title": "[with tiny patch; positive review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1970",
     "user": "https://github.com/williamstein"

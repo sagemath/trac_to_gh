@@ -1,9 +1,10 @@
-# Issue 5104: setup.py dependency checking issues
+# Issue 5104: [with patch, positive review] setup.py dependency checking issues
 
 archive/issues_005104.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  sbarthelemy @robertwb\n\nIn addition to the problems fixed on trac #5060, we also have the following, reported by `sbarthelemy`:\n\nHello,\n\nreading the code, I see another problem if ones has the following line in its `.pyx`:\n\n`cimport mod#mycomment`\n\nIn such a case, we'll look for a dependency `mod#mycomment.pxd` instead of `mod.pxd`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5104\n\n",
+    "closed_at": "2009-02-20T13:07:15Z",
     "created_at": "2009-01-26T16:47:03Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_005104.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "setup.py dependency checking issues",
+    "title": "[with patch, positive review] setup.py dependency checking issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5104",
     "user": "https://github.com/craigcitro"

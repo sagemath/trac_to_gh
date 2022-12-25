@@ -1,16 +1,17 @@
-# Issue 6106: [with patch, need review] Addition Indefinite Binary Quadratic Forms
+# Issue 6106: Extra doctests for indefinite binary quadratic forms
 
 archive/issues_006106.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  @ncalexan\n\nKeywords: binary quadratic forms\n\nI added functions to check for the reducibility of an indefinite binary quadratic form and reduce it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6106\n\n",
+    "body": "Assignee: justin\n\nCC:  @ncalexan\n\nKeywords: binary quadratic forms\n\nExtra doctests for indefinite binary quadratic forms\n\nIssue created by migration from https://trac.sagemath.org/ticket/6106\n\n",
+    "closed_at": "2018-08-25T11:01:36Z",
     "created_at": "2009-05-21T05:22:11Z",
     "labels": [
         "component: quadratic forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
-    "title": "[with patch, need review] Addition Indefinite Binary Quadratic Forms",
+    "title": "Extra doctests for indefinite binary quadratic forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6106",
     "user": "https://trac.sagemath.org/admin/accounts/users/aliashamieh"
@@ -22,7 +23,7 @@ CC:  @ncalexan
 
 Keywords: binary quadratic forms
 
-I added functions to check for the reducibility of an indefinite binary quadratic form and reduce it.
+Extra doctests for indefinite binary quadratic forms
 
 Issue created by migration from https://trac.sagemath.org/ticket/6106
 

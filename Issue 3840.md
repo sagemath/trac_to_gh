@@ -1,16 +1,17 @@
-# Issue 3840: [with patch, needs review] conversion of 0 from MV polynomial rings broken
+# Issue 3840: [with patch, positive review to the second patch] conversion of 0 from MV polynomial rings broken
 
 archive/issues_003840.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe following (and all similar conversions) fail:\n\n```\nRR(RR[x,y](0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/<ipython console> in <module>()\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3408)()\n\n/home/gfurnish/sage-3.1.alpha0-sage.math-only-x86_64-Linux/multi_polynomial.pyx in sage.rings.polynomial.multi_polynomial.MPolynomial._mpfr_ (sage/rings/polynomial/multi_polynomial.c:1656)()\n```\nThe attached patch provides doctests and fixes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3840\n\n",
+    "closed_at": "2008-08-13T21:05:29Z",
     "created_at": "2008-08-13T17:30:25Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] conversion of 0 from MV polynomial rings broken",
+    "title": "[with patch, positive review to the second patch] conversion of 0 from MV polynomial rings broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3840",
     "user": "https://github.com/garyfurnish"

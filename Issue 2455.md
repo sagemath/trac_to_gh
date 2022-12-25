@@ -1,22 +1,23 @@
-# Issue 2455: [with patch, needs review] improve documentation for multivariate polynomial ideals
+# Issue 2455: [with patch, with positive review] improve documentation for multivariate polynomial ideals
 
 archive/issues_002455.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @ncalexan\n\nAfter the patch was applied:\n\n```\nSCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)\n\nMissing doctests:\n         * redSB(func)\n         * wrapper(*args, **kwds)\n         * _variety(T, V, v=None)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\nI cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.\n\nOld:\n\n```\n----------------------------------------------------------------------\ndevel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nSCORE devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py: 68% (32 of 47)\n\nMissing documentation:\n         * is_MPolynomialIdeal(x)\n         * __enter__(self)\n         * __exit__(self, type, value, tb)\n         * wrapper(*args, **kwds)\n         * f(x,y)\n         * _singular_groebner_basis(self)\n         * _variety(T, V, v=None)\n\n\nMissing doctests:\n         * __init__(self, singular=singular_default)\n         * redSB(func)\n         * dimension(self)\n         * genus(self)\n         * syzygy_module(self)\n         * reduced_basis(self)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _magma_groebner_basis(self)\n         * _contains_(self, f)\n         * _macaulay2_groebner_basis(self)\n\n----------------------------------------------------------------------\n```\n\nThis patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2455\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nAfter the patch was applied:\n\n```\nSCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)\n\nMissing doctests:\n         * redSB(func)\n         * wrapper(*args, **kwds)\n         * _variety(T, V, v=None)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\nI cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.\n\nOld:\n\n```\n----------------------------------------------------------------------\ndevel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nSCORE devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py: 68% (32 of 47)\n\nMissing documentation:\n         * is_MPolynomialIdeal(x)\n         * __enter__(self)\n         * __exit__(self, type, value, tb)\n         * wrapper(*args, **kwds)\n         * f(x,y)\n         * _singular_groebner_basis(self)\n         * _variety(T, V, v=None)\n\n\nMissing doctests:\n         * __init__(self, singular=singular_default)\n         * redSB(func)\n         * dimension(self)\n         * genus(self)\n         * syzygy_module(self)\n         * reduced_basis(self)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _magma_groebner_basis(self)\n         * _contains_(self, f)\n         * _macaulay2_groebner_basis(self)\n\n----------------------------------------------------------------------\n```\n\nThis patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2455\n\n",
+    "closed_at": "2008-03-15T19:23:02Z",
     "created_at": "2008-03-10T12:07:54Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] improve documentation for multivariate polynomial ideals",
+    "title": "[with patch, with positive review] improve documentation for multivariate polynomial ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2455",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: tba
+Assignee: @malb
 
 CC:  @ncalexan
 

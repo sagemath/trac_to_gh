@@ -4,6 +4,7 @@ archive/issues_003692.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUsing notebook mode.\n\n```\nProblem:\ncell input: '\\''\noutput: '\\\\u0027'\nexpected output: '\\u0027'\n```\n\nSincerely,\nMats\n\nIssue created by migration from https://trac.sagemath.org/ticket/3692\n\n",
+    "closed_at": "2008-07-21T20:01:55Z",
     "created_at": "2008-07-21T07:07:29Z",
     "labels": [
         "component: notebook",

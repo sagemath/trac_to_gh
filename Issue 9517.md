@@ -4,6 +4,7 @@ archive/issues_009517.json:
 ```json
 {
     "body": "Assignee: @malb\n\nBelow is an example of the strange behavior in sage 4.4.4.\n\n```\nsage: PR1=PolynomialRing(QQ,'x');PR2=PolynomialRing(QQ,1,'x')\nsage: PR1;PR2\nUnivariate Polynomial Ring in x over Rational Field\nMultivariate Polynomial Ring in x over Rational Field\n```\n\nI've searched for similar problems but only #9220 seems vagely related but is a real different problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9517\n\n",
+    "closed_at": "2010-07-16T10:30:12Z",
     "created_at": "2010-07-16T10:20:32Z",
     "labels": [
         "component: commutative algebra",

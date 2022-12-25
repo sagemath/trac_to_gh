@@ -4,6 +4,7 @@ archive/issues_004154.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere ought to be a way to set defaults for the options to show.  Even just a dictionary in sage.plot.plot would be nice.\n\nA use-case would be setting the default aspect ratio to 1 so that if you are plotting lots of circles, it looks okay.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4154\n\n",
+    "closed_at": "2010-11-21T08:59:19Z",
     "created_at": "2008-09-19T22:28:23Z",
     "labels": [
         "component: graphics"

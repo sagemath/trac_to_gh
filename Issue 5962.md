@@ -4,6 +4,7 @@ archive/issues_005962.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap comparison\n\nOn sage.math with sage-3.4.1, one has\n\n```\nsage: gap('DihedralGroup(8)')==gap('DihedralGroup(8)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage1 < $sage2;\n```\n\nThe problem seems to be that Gap is unable to compare:\n\n```\nsage: gap('DihedralGroup(8)=DihedralGroup(8)')\nfalse\n```\n\nPerhaps it would make sense to try and implement a `__cmp__` method that is more sophisticated than what is done in Gap? \n\nAt least it should be made sure that the `__cmp__` method of the Gap interface does not raise an error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5962\n\n",
+    "closed_at": "2011-03-28T07:18:01Z",
     "created_at": "2009-05-02T17:31:46Z",
     "labels": [
         "component: interfaces",

@@ -3,11 +3,10 @@
 archive/issues_003941.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\nand the results:\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
+    "body": "Assignee: @jasongrout\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\nand the results:\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
     "created_at": "2008-08-24T05:13:27Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "threading diff over lists to give the jacobian",
@@ -16,7 +15,7 @@ archive/issues_003941.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @garyfurnish
+Assignee: @jasongrout
 
 In MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  
 

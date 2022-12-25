@@ -3,7 +3,8 @@
 archive/issues_000465.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHello, \n\nthe lround fix we applied to the LinBox spkg also fixes the Strassen-Winograd optimization test:\n\nchecking best threshold for Strassen-Winograd matrix multiplication...\nfgemm 300x300: 0.45 s, 120 Mffops\n1Wino 300x300: 0.31 s, 174.194 Mffops\n\nfgemm 300x300: 0.45 s, 120 Mffops\n1Wino 300x300: 0.31 s, 174.194 Mffops\n\nfgemm 44x44: 0 s, Inf Mffops\n1Wino 44x44: 0 s, Inf Mffops\n\nfgemm 172x172: 0.09 s, 113.077 Mffops\n1Wino 172x172: 0.05 s, 203.538 Mffops\n\nfgemm 172x172: 0.09 s, 113.077 Mffops\n1Wino 172x172: 0.06 s, 169.615 Mffops\ndone\n\nThis was from the compile test I ran on Neron.\n\nFor the updated spkg have a look at \n\nhttp://sage.math.washington.edu/home/mabshoff/spkg-install-LinBox-enable-SWO\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/465\n\n",
+    "body": "Assignee: mabshoff\n\nHello, \n\nthe lround fix we applied to the LinBox spkg also fixes the Strassen-Winograd optimization test:\n\n```\nchecking best threshold for Strassen-Winograd matrix multiplication...\nfgemm 300x300: 0.45 s, 120 Mffops\n1Wino 300x300: 0.31 s, 174.194 Mffops\n\nfgemm 300x300: 0.45 s, 120 Mffops\n1Wino 300x300: 0.31 s, 174.194 Mffops\n\nfgemm 44x44: 0 s, Inf Mffops\n1Wino 44x44: 0 s, Inf Mffops\n\nfgemm 172x172: 0.09 s, 113.077 Mffops\n1Wino 172x172: 0.05 s, 203.538 Mffops\n\nfgemm 172x172: 0.09 s, 113.077 Mffops\n1Wino 172x172: 0.06 s, 169.615 Mffops\ndone\n```\nThis was from the compile test I ran on Neron.\n\nFor the updated spkg have a look at \n\nhttp://sage.math.washington.edu/home/mabshoff/spkg-install-LinBox-enable-SWO\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/465\n\n",
+    "closed_at": "2008-08-25T01:20:50Z",
     "created_at": "2007-08-19T22:57:53Z",
     "labels": [
         "component: packages: standard",
@@ -23,6 +24,7 @@ Hello,
 
 the lround fix we applied to the LinBox spkg also fixes the Strassen-Winograd optimization test:
 
+```
 checking best threshold for Strassen-Winograd matrix multiplication...
 fgemm 300x300: 0.45 s, 120 Mffops
 1Wino 300x300: 0.31 s, 174.194 Mffops
@@ -39,7 +41,7 @@ fgemm 172x172: 0.09 s, 113.077 Mffops
 fgemm 172x172: 0.09 s, 113.077 Mffops
 1Wino 172x172: 0.06 s, 169.615 Mffops
 done
-
+```
 This was from the compile test I ran on Neron.
 
 For the updated spkg have a look at 

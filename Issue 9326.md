@@ -3,7 +3,8 @@
 archive/issues_009326.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis patch adds a cohomology ring to toric varieties. This is then used for characteristic classes.\n\nI'm using the usual description of the rational cohomology ring via the Stanley-Reisner ideal of the fan. This does not work for singular varities with worse than orbifold singularities. I don't have any good candidate for the \"space where the Chern classes live\" in that case. \n\nApplies on top of \n* #9245: trac_9245_named_toric_varieties.py\n* #8988: trac_8988_Kahlercone_lattice.patch\n* #9296: trac_9296_lattice_computations_for_cones.patch\nand their prerequisites...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9326\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis patch adds a cohomology ring to toric varieties. This is then used for characteristic classes.\n\nI'm using the usual description of the rational cohomology ring via the Stanley-Reisner ideal of the fan. This does not work for singular varities with worse than orbifold singularities. I don't have any good candidate for the \"space where the Chern classes live\" in that case. \n\nFor prerequisites, see the tracker bug at #9604\n     \n\nIssue created by migration from https://trac.sagemath.org/ticket/9326\n\n",
+    "closed_at": "2010-08-09T09:48:47Z",
     "created_at": "2010-06-24T10:46:02Z",
     "labels": [
         "component: algebraic geometry"
@@ -23,11 +24,8 @@ This patch adds a cohomology ring to toric varieties. This is then used for char
 
 I'm using the usual description of the rational cohomology ring via the Stanley-Reisner ideal of the fan. This does not work for singular varities with worse than orbifold singularities. I don't have any good candidate for the "space where the Chern classes live" in that case. 
 
-Applies on top of 
-* #9245: trac_9245_named_toric_varieties.py
-* #8988: trac_8988_Kahlercone_lattice.patch
-* #9296: trac_9296_lattice_computations_for_cones.patch
-and their prerequisites...
+For prerequisites, see the tracker bug at #9604
+     
 
 Issue created by migration from https://trac.sagemath.org/ticket/9326
 

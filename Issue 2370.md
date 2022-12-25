@@ -1,9 +1,10 @@
-# Issue 2370: unable to coerce bool types to Sage integers
+# Issue 2370: [with patch; with positve review] unable to coerce bool types to Sage integers
 
 archive/issues_002370.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nsage: ZZ(True)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\nsage: ZZ(False)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n\n---\nAble to coerce bool types to Python integers\n\n---\n\nsage: int(True)\n1\nsage: int(False)\n0\n\nIssue created by migration from https://trac.sagemath.org/ticket/2370\n\n",
+    "body": "Assignee: @dfdeshom\n\n```\nsage: ZZ(True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\nsage: ZZ(False)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n\n--------------------------------------------\nAble to coerce bool types to Python integers\n--------------------------------------------\n\nsage: int(True)\n1\nsage: int(False)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2370\n\n",
+    "closed_at": "2008-03-05T06:27:36Z",
     "created_at": "2008-03-02T20:13:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,17 +12,17 @@ archive/issues_002370.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "unable to coerce bool types to Sage integers",
+    "title": "[with patch; with positve review] unable to coerce bool types to Sage integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2370",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: somebody
+Assignee: @dfdeshom
 
+```
 sage: ZZ(True)
-
----
+---------------------------------------------------------------------------
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
 /home/tclemans/<ipython console> in <module>()
@@ -30,8 +31,7 @@ sage: ZZ(True)
 
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 sage: ZZ(False)
-
----
+---------------------------------------------------------------------------
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
 /home/tclemans/<ipython console> in <module>()
@@ -40,15 +40,16 @@ sage: ZZ(False)
 
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 
----
+--------------------------------------------
 Able to coerce bool types to Python integers
-
----
+--------------------------------------------
 
 sage: int(True)
 1
 sage: int(False)
 0
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2370
 

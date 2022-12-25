@@ -1,22 +1,23 @@
-# Issue 4138: [with patch, needs review] Sage 3.1.2.rc5: fix documentation build issues
+# Issue 4138: [with patch, positive review] Sage 3.1.2.rc5: fix documentation build issues
 
 archive/issues_004138.json:
 ```json
 {
-    "body": "Assignee: tba\n\nTwo patches, one for the documentation, one for the Sage library.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4138\n\n",
+    "body": "Assignee: mabshoff\n\nTwo patches, one for the documentation, one for the Sage library.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4138\n\n",
+    "closed_at": "2008-09-17T03:52:08Z",
     "created_at": "2008-09-17T03:39:34Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Sage 3.1.2.rc5: fix documentation build issues",
+    "title": "[with patch, positive review] Sage 3.1.2.rc5: fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4138",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 Two patches, one for the documentation, one for the Sage library.
 

@@ -3,7 +3,8 @@
 archive/issues_007001.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap interface recursion depth trap\n\nIt seems to me that it is forgotten to quit GAP's break loop before continuing. By consequence, GAP runs into a recursion depth trap (by default, GAP throws an error if a recursion of depth 5000 occurs) if there are too many errors.\n\nExample:\n\n```\nsage: def bugtrigger(n):\n....:     a = gap(1)\n....:     for i in range(n):\n....:         try:\n....:             b = gap.eval('Name(%s)'%a.name())\n....:             a += 1\n....:         except Exception, msg:\n....:             if 'recursion depth' in str(msg):\n....:                 return i,msg\n....:\nsage: bugtrigger(10000)\n\n(4998,\n RuntimeError('Gap produced error output\\nrecursion depth trap (5000)\\n\\n\\n   executing Name($sage1);',))\n```\n\n__Explanation:__\n\n\"Name\" is not defined for a, so, an error occurs, that we catch and continue. If this is done 4998 times then we have 4998 break loops inside the main loop, and then call `\"Name(%s)\"%a.name()`  -- this is a total of 5000 nested loops (main loop, 4998 break loops, function call).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7001\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner\n\nKeywords: gap interface recursion depth trap\n\nIt seems to me that it is forgotten to quit GAP's break loop before continuing. By consequence, GAP runs into a recursion depth trap (by default, GAP throws an error if a recursion of depth 5000 occurs) if there are too many errors.\n\nExample:\n\n```\nsage: def bugtrigger(n):\n....:     a = gap(1)\n....:     for i in range(n):\n....:         try:\n....:             b = gap.eval('Name(%s)'%a.name())\n....:             a += 1\n....:         except Exception, msg:\n....:             if 'recursion depth' in str(msg):\n....:                 return i,msg\n....:\nsage: bugtrigger(10000)\n\n(4998,\n RuntimeError('Gap produced error output\\nrecursion depth trap (5000)\\n\\n\\n   executing Name($sage1);',))\n```\n\n__Explanation:__\n\n\"Name\" is not defined for a, so, an error occurs, that we catch and continue. If this is done 4998 times then we have 4998 break loops inside the main loop, and then call `\"Name(%s)\"%a.name()`  -- this is a total of 5000 nested loops (main loop, 4998 break loops, function call).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7001\n\n",
+    "closed_at": "2009-09-24T10:36:07Z",
     "created_at": "2009-09-23T09:41:46Z",
     "labels": [
         "component: interfaces",
@@ -16,7 +17,7 @@ archive/issues_007001.json:
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: @williamstein
+Assignee: @simon-king-jena
 
 CC:  @wdjoyner
 

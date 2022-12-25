@@ -4,6 +4,7 @@ archive/issues_006479.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  hamptonio@gmail.com\n\n```\nsage: y(x) = function('y',x)\nsage: desolve( y(x).diff(x,2) == 0, y(x))\nk2*x + k1\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,0,1])\nx + y(0)\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])\nx + y(0)\n```\n\nIt seems desolve instead of using the given initial\nvalue of y at x=0,  it literally passes \"y(0)\" to maxima.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6479\n\n",
+    "closed_at": "2009-11-29T10:10:24Z",
     "created_at": "2009-07-08T11:08:56Z",
     "labels": [
         "component: calculus",

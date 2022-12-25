@@ -4,6 +4,7 @@ archive/issues_005174.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n[09:30] <jason-> on the other hand, I always get frustrated trying to see a 30x30 matrix in Sage\n[09:30] <wstein> print a.str()\n[09:30] <jason-> yeah, I never remember it.\n[09:30] <wstein> That will show you any matrix in sage of any size.\n[09:31] <wstein> Well then the output of a._repr_() should mention it so you can remember it.  make a ticket.\n[09:31] <jason-> good point.\n[09:31] <jason-> I think I usually end up doing a.rows()\n[09:32] <jason-> or list(a)\n[09:32] <jason-> so you're saying print a should do:\n[09:32] <jason-> 30 x 30 dense matrix over Integer Ring (to see the entries, do print a.str())\n[09:33] <wstein> Yep.\n[09:33] <jason-> 30 x 30 dense matrix over Integer Ring (to see the entries, type \"print a.str()\")\n[09:33] <wstein> Of course it's possibly confusing since \"a.str()\" is really \"yourvar.str()\"\n[09:33] <wstein> but hopefully people can understand that.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5174\n\n",
+    "closed_at": "2010-01-03T21:51:32Z",
     "created_at": "2009-02-04T15:38:28Z",
     "labels": [
         "component: linear algebra"

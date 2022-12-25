@@ -1,9 +1,10 @@
-# Issue 899: minor error in inst.tex
+# Issue 899: [with patch] minor error in inst.tex
 
 archive/issues_000899.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nThe installation manual says\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.0-base\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install gcc\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\nI think this should be corrected (changes on 2 lines) to say\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.2-base      # or the latest version available\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\nIn fact, in 7.10 \"sudo apt-get install gcc-4.0-base\" yields\n\"E: Package gcc-4.0-base has no installation candidate\"\nand \"sudo apt-get install gcc\" is redundant.\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/inst.tex.hg\n\nIssue created by migration from https://trac.sagemath.org/ticket/899\n\n",
+    "closed_at": "2007-10-27T04:54:55Z",
     "created_at": "2007-10-14T21:02:10Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_000899.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "minor error in inst.tex",
+    "title": "[with patch] minor error in inst.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/899",
     "user": "https://github.com/wdjoyner"

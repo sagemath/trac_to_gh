@@ -1,22 +1,23 @@
-# Issue 8495: Regression: Many mathematica doctests fail
+# Issue 8495: Regression: Many mathematica doctests now fail
 
 archive/issues_008495.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin @jasongrout\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
+    "body": "Assignee: flawrence\n\nCC:  @burcin @jasongrout\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\napply only [attachment:trac_8495-rewrite-_sage_.2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
+    "closed_at": "2011-03-25T12:31:01Z",
     "created_at": "2010-03-11T06:33:47Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
-    "title": "Regression: Many mathematica doctests fail",
+    "title": "Regression: Many mathematica doctests now fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8495",
     "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
-Assignee: @williamstein
+Assignee: flawrence
 
 CC:  @burcin @jasongrout
 
@@ -34,6 +35,8 @@ Mathematica output:
 0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i 
 
 ```
+
+apply only [attachment:trac_8495-rewrite-_sage_.2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8495
 

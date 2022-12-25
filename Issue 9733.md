@@ -3,10 +3,11 @@
 archive/issues_009733.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  polybori drkirkby @malb @burcin @nexttime\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
+    "body": "Assignee: @alexanderdreyer\n\nCC:  polybori drkirkby @malb @burcin @nexttime\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\n## Release manager\nMerge just this package:\n\n http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
+    "closed_at": "2010-09-17T21:32:29Z",
     "created_at": "2010-08-12T12:18:45Z",
     "labels": [
-        "component: algebra",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -16,7 +17,7 @@ archive/issues_009733.json:
     "user": "https://github.com/alexanderdreyer"
 }
 ```
-Assignee: @aghitza
+Assignee: @alexanderdreyer
 
 CC:  polybori drkirkby @malb @burcin @nexttime
 
@@ -28,6 +29,12 @@ http://www.singular.uni-kl.de:8002/trac/ticket/250, see
 ```
 svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/
 ```
+
+## Release manager
+Merge just this package:
+
+ http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9733
 

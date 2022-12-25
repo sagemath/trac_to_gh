@@ -1,16 +1,17 @@
-# Issue 3066: empty matrices: gram_schmidt() throws a NameError
+# Issue 3066: [with patch; positive review] empty matrices: gram_schmidt() throws a NameError
 
 archive/issues_003066.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLooks like an explicit import is the only thing missing on this one:\n\n```\nsage: a = matrix([])\nsage: m.gram_schmidt()\n<type 'exceptions.NameError'>: global name 'ZZ' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3066\n\n",
+    "closed_at": "2008-05-01T05:47:16Z",
     "created_at": "2008-04-30T15:20:39Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "empty matrices: gram_schmidt() throws a NameError",
+    "title": "[with patch; positive review] empty matrices: gram_schmidt() throws a NameError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3066",
     "user": "https://github.com/dfdeshom"

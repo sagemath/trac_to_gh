@@ -4,10 +4,10 @@ archive/issues_000016.json:
 ```json
 {
     "body": "Assignee: somebody\n\n* Building optional packages under OS X Intel (status report on 08-25-06 by William Stein)\n   Everything works except the following --\n      * dvipng doesn't build (but shouldn't be needed, since this comes with tex)\n      * RealLib3 -- fails with \"LongFloat.cpp:6:20: error: malloc.h: No such file or directory\"\n      * numpy-2006-08-16.spkg -- fails with \"KeyError: 'linker_exe'\"\n      * scipy-2006-08-16.spkg -- depends on numpy\n      * soya-0.11.2.p0.spkg -- fails to find GL/glew.h  (soya is probably very hard to build in OSX...)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/16\n\n",
+    "closed_at": "2007-08-09T21:52:26Z",
     "created_at": "2006-09-12T23:17:16Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "title": "failures building optional packages",
     "type": "issue",

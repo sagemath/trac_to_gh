@@ -4,6 +4,7 @@ archive/issues_008147.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu rossk jpalmieri @nexttime\n\nThis is a follow-on to #8108 expanding on basic use of Mercurial queues for Sage development.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8147\n\n",
+    "closed_at": "2010-02-03T07:14:21Z",
     "created_at": "2010-02-02T03:05:26Z",
     "labels": [
         "component: documentation",

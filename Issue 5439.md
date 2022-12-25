@@ -3,11 +3,10 @@
 archive/issues_005439.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nProgressively fix all quirks and weirdness in sage.combinat listed on http://wiki.sagemath.org/combinat/Weirdness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5439\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nProgressively fix all quirks and weirdness in sage.combinat listed on http://wiki.sagemath.org/combinat/Weirdness.\n\n- #13605 (Travis Scrimshaw) - Partition options and partitions cleanup.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5439\n\n",
     "created_at": "2009-03-04T21:21:19Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Cleanup quirks and weirdnesses in sage.combinat",
@@ -21,6 +20,9 @@ Assignee: @mwhansen
 CC:  sage-combinat
 
 Progressively fix all quirks and weirdness in sage.combinat listed on http://wiki.sagemath.org/combinat/Weirdness.
+
+- #13605 (Travis Scrimshaw) - Partition options and partitions cleanup.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5439
 

@@ -3,11 +3,12 @@
 archive/issues_002141.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCurrently the Notebook produces a list of files it doesn't know how to handle at the bottom of cell output. Sometimes it would be useful to be able to grab the files that are rendered as well (e.g. see  http://groups.google.com/group/sage-newbie/browse_thread/thread/859e20cc33a29930 )\n\nIssue created by migration from https://trac.sagemath.org/ticket/2141\n\n",
+    "body": "Assignee: boothby\n\nCurrently the Notebook produces a list of files it doesn't know how to handle at the bottom of cell output. Sometimes it would be useful to be able to grab the files that are rendered as well like Jmol files or graphics png files (e.g. see  http://groups.google.com/group/sage-newbie/browse_thread/thread/859e20cc33a29930 ) \n\nIssue created by migration from https://trac.sagemath.org/ticket/2141\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2008-02-11T20:43:28Z",
     "labels": [
         "component: notebook",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Access to file list on notebook.",
@@ -18,7 +19,7 @@ archive/issues_002141.json:
 ```
 Assignee: boothby
 
-Currently the Notebook produces a list of files it doesn't know how to handle at the bottom of cell output. Sometimes it would be useful to be able to grab the files that are rendered as well (e.g. see  http://groups.google.com/group/sage-newbie/browse_thread/thread/859e20cc33a29930 )
+Currently the Notebook produces a list of files it doesn't know how to handle at the bottom of cell output. Sometimes it would be useful to be able to grab the files that are rendered as well like Jmol files or graphics png files (e.g. see  http://groups.google.com/group/sage-newbie/browse_thread/thread/859e20cc33a29930 ) 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2141
 

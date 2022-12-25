@@ -1,22 +1,23 @@
-# Issue 5258: escape html strings with cgi.escape instead of custom (and lacking) regexp
+# Issue 5258: [with patch, positive review] escape html strings with cgi.escape instead of custom (and lacking) regexp
 
 archive/issues_005258.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/3fd6f52b4b04108d for the discussion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5258\n\n",
+    "body": "Assignee: @jasongrout\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/3fd6f52b4b04108d for the discussion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5258\n\n",
+    "closed_at": "2009-02-14T02:13:46Z",
     "created_at": "2009-02-13T19:06:54Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "escape html strings with cgi.escape instead of custom (and lacking) regexp",
+    "title": "[with patch, positive review] escape html strings with cgi.escape instead of custom (and lacking) regexp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5258",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/3fd6f52b4b04108d for the discussion.
 

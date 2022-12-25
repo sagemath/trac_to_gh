@@ -3,7 +3,8 @@
 archive/issues_007315.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom [ this thread]: \n\n```\nsage: var('m')\nm\nsage: var('n')\nn\nsage: assume(n, 'integer'); assume(m, 'integer')\nsage: sin(n*pi).simplify()\n0\nsage: sin(m*pi).simplify()\n0\nsage: forget()\nsage: sin(m*pi).simplify()\n0\nsage: sin(n*pi).simplify()\nsin(pi*n)\n```\nThe problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7315\n\n",
+    "body": "Assignee: @burcin\n\nFrom [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/862e9bfd7c6c999e#): \n\n```\nsage: var('m')\nm\nsage: var('n')\nn\nsage: assume(n, 'integer'); assume(m, 'integer')\nsage: sin(n*pi).simplify()\n0\nsage: sin(m*pi).simplify()\n0\nsage: forget()\nsage: sin(m*pi).simplify()\n0\nsage: sin(n*pi).simplify()\nsin(pi*n)\n```\nThe problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7315\n\n",
+    "closed_at": "2009-10-31T16:46:14Z",
     "created_at": "2009-10-26T19:56:08Z",
     "labels": [
         "component: calculus",
@@ -18,7 +19,7 @@ archive/issues_007315.json:
 ```
 Assignee: @burcin
 
-From [ this thread]: 
+From [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/862e9bfd7c6c999e#): 
 
 ```
 sage: var('m')

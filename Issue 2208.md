@@ -1,22 +1,23 @@
-# Issue 2208: implement is_field for rings of integers
+# Issue 2208: [with patch, with positive review] implement is_field for rings of integers
 
 archive/issues_002208.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: R = CyclotomicField(4).ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>: \n```\n\nAlso\n\n```\nsage: R = NumberField(x^3 + 2, 'a').ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2208\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: R = CyclotomicField(4).ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>: \n```\n\nAlso\n\n```\nsage: R = NumberField(x^3 + 2, 'a').ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2208\n\n",
+    "closed_at": "2008-02-25T01:51:22Z",
     "created_at": "2008-02-19T02:29:00Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "implement is_field for rings of integers",
+    "title": "[with patch, with positive review] implement is_field for rings of integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2208",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 ```
 sage: R = CyclotomicField(4).ring_of_integers()

@@ -1,9 +1,10 @@
-# Issue 1175: circular link in sage/local/lib/python2.5
+# Issue 1175: [with spkg] circular link in sage/local/lib/python2.5
 
 archive/issues_001175.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen building sage-2.8.12, there are two circular links in sage/local/lib/python2.5:\n\n```\nachille% pwd\n/net/achille/localdisk/zimmerma/sage-2.8.12/local/lib/python2.5\nachille% ls -l pyt*\nlrwxrwxrwx 1 zimmerma spaces 6 2007-11-14 09:53 python -> python\nlrwxrwxrwx 1 zimmerma spaces 9 2007-11-14 09:53 python2.5 -> python2.5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1175\n\n",
+    "closed_at": "2007-12-19T19:08:01Z",
     "created_at": "2007-11-15T08:27:09Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_001175.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "circular link in sage/local/lib/python2.5",
+    "title": "[with spkg] circular link in sage/local/lib/python2.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1175",
     "user": "https://github.com/zimmermann6"

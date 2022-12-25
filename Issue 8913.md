@@ -3,7 +3,8 @@
 archive/issues_008913.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @rbeezer\n\nThis patch reinstates appropriate labeling of the edges for two sided cayley graphs::\n\n```\n   sage: S = FiniteSemigroups().example(alphabet=('a','b'))\n   sage: g = S.cayley_graph(side=\"twosided\")\n   sage: g.edges()\n   [('a', 'a', (0, 'left')), ('a', 'a', (0, 'right')), ('a', 'ab', (1, 'right')), ('a', 'ba', (1, 'left')), ('ab', 'ab', (0, 'left')), ('ab', 'ab', (0, 'right')), ('ab', 'ab', (1, 'right')), ('ab', 'ba', (1, 'left')), ('b', 'ab', (0, 'left')), ('b', 'b', (1, 'left')), ('b', 'b', (1, 'right')), ('b', 'ba', (0, 'right')), ('ba', 'ab', (0, 'left')), ('ba', 'ba', (0, 'right')), ('ba', 'ba', (1, 'left')), ('ba', 'ba', (1, 'right'))]\n```\n\nThis was inadvertently broken by #8044 which discarded the `left` / `right` info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8913\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @rbeezer\n\nKeywords: cayley graph\n\nThis patch reinstates appropriate labeling of the edges for two sided cayley graphs::\n\n```\n   sage: S = FiniteSemigroups().example(alphabet=('a','b'))\n   sage: g = S.cayley_graph(side=\"twosided\")\n   sage: g.edges()\n   [('a', 'a', (0, 'left')), ('a', 'a', (0, 'right')), ('a', 'ab', (1, 'right')), ('a', 'ba', (1, 'left')), ('ab', 'ab', (0, 'left')), ('ab', 'ab', (0, 'right')), ('ab', 'ab', (1, 'right')), ('ab', 'ba', (1, 'left')), ('b', 'ab', (0, 'left')), ('b', 'b', (1, 'left')), ('b', 'b', (1, 'right')), ('b', 'ba', (0, 'right')), ('ba', 'ab', (0, 'left')), ('ba', 'ba', (0, 'right')), ('ba', 'ba', (1, 'left')), ('ba', 'ba', (1, 'right'))]\n```\n\nThis was inadvertently broken by #8044 which discarded the `left` / `right` info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8913\n\n",
+    "closed_at": "2010-06-06T01:12:36Z",
     "created_at": "2010-05-07T15:10:43Z",
     "labels": [
         "component: algebra",
@@ -19,6 +20,8 @@ archive/issues_008913.json:
 Assignee: @nthiery
 
 CC:  sage-combinat @rbeezer
+
+Keywords: cayley graph
 
 This patch reinstates appropriate labeling of the edges for two sided cayley graphs::
 

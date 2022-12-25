@@ -1,16 +1,17 @@
-# Issue 2156: [with spkg, needs review] Cython 0.9.6.12
+# Issue 2156: [with spkg, with positive review] Cython 0.9.6.12
 
 archive/issues_002156.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nGet the spkg in http://sage.math.washington.edu/home/robertwb/cython/ \n\nsage -ba; sage -testall works on intel OS X 10.4. \n\nThe most significant change is more flexible c(p)def functions and overriding. Specifically, c(p)def functions can now:\n* have optional arguments (which may grow)\n* be defined in the module scope\n* are always cimport-able if defined in the .pxd (i.e. \"api\" by default)\n* declare narrower return types than the superclass\n* cpdef can override cdef\n\nThere are also better conversions (<type?> does a type-checked cast, <int>x does the right thing), and numerous optimizations (especially with regard to tuple unpacking) and bugfixes. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2156\n\n",
+    "closed_at": "2008-02-14T21:29:08Z",
     "created_at": "2008-02-14T04:32:28Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with spkg, needs review] Cython 0.9.6.12",
+    "title": "[with spkg, with positive review] Cython 0.9.6.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2156",
     "user": "https://github.com/robertwb"

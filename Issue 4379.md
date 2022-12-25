@@ -1,9 +1,10 @@
-# Issue 4379: [with patch, needs review] typo in tutorial
+# Issue 4379: [with patch, positive review] typo in tutorial
 
 archive/issues_004379.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @mwhansen\n\nKeywords: tutorial, documentation\n\nFix one typo in the tutorial.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4379\n\n",
+    "closed_at": "2008-10-29T11:54:18Z",
     "created_at": "2008-10-28T21:51:46Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004379.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] typo in tutorial",
+    "title": "[with patch, positive review] typo in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4379",
     "user": "https://github.com/jhpalmieri"

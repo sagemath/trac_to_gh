@@ -1,15 +1,15 @@
-# Issue 6119: implement taylor series without maxima
+# Issue 6119: deprecate taylor() in favor of series()
 
 archive/issues_006119.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @rwst\n\nGinac has series about zero, it should be easy to shift to get the series about any point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6119\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @rwst\n\nSymbolic expressions have two methods to obtain series expansions. The `taylor()` method is a wrapper around maxima's `taylor` command. The result of this is not always a Taylor series, which leads to confusions.\n\nThe `series()` method was introduced in the pynac-based symbolics. ATM, it is a thin wrapper around GiNaC series expansions. This also plays well with the symbolic functions, etc. introduced based on Pynac/GiNaC.\n\nWe should deprecate the `taylor()` method and add an `algorith=` argument to `series()`. The default behavior can be to call GiNaC and fall back to maxima if that fails.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6119\n\n",
     "created_at": "2009-05-22T02:38:25Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "implement taylor series without maxima",
+    "title": "deprecate taylor() in favor of series()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6119",
     "user": "https://github.com/robertwb"
@@ -19,7 +19,11 @@ Assignee: @burcin
 
 CC:  @kcrisman @rwst
 
-Ginac has series about zero, it should be easy to shift to get the series about any point.
+Symbolic expressions have two methods to obtain series expansions. The `taylor()` method is a wrapper around maxima's `taylor` command. The result of this is not always a Taylor series, which leads to confusions.
+
+The `series()` method was introduced in the pynac-based symbolics. ATM, it is a thin wrapper around GiNaC series expansions. This also plays well with the symbolic functions, etc. introduced based on Pynac/GiNaC.
+
+We should deprecate the `taylor()` method and add an `algorith=` argument to `series()`. The default behavior can be to call GiNaC and fall back to maxima if that fails.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6119
 

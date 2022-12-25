@@ -4,6 +4,7 @@ archive/issues_006490.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nGet the new tar ball like so:\n\nwget http://downloads.sourceforge.net/sourceforge/ecls/ecl-9.6.2.tar.gz?use_mirror=superb-west\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6490\n\n",
+    "closed_at": "2009-08-18T18:05:26Z",
     "created_at": "2009-07-09T00:31:18Z",
     "labels": [
         "component: packages: standard"

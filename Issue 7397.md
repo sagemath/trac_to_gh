@@ -1,15 +1,16 @@
-# Issue 7397: Updated Primes to the category system.
+# Issue 7397: Updated Primes to the category system
 
 archive/issues_007397.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Prime numbers, categories\n\nThe set of prime number is now in the category `EnumeratedSets`. \n\nCheers, \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7397\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Prime numbers, categories\n\nThe set of prime number is now in the category `EnumeratedSets`. \n\nDepend on the category framework #5891 and #7398.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7397\n\n",
+    "closed_at": "2009-11-19T16:58:57Z",
     "created_at": "2009-11-05T16:09:22Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Updated Primes to the category system.",
+    "title": "Updated Primes to the category system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7397",
     "user": "https://github.com/hivert"
@@ -23,9 +24,8 @@ Keywords: Prime numbers, categories
 
 The set of prime number is now in the category `EnumeratedSets`. 
 
-Cheers, 
+Depend on the category framework #5891 and #7398.
 
-Florent
 
 Issue created by migration from https://trac.sagemath.org/ticket/7397
 

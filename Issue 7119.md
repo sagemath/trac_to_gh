@@ -1,9 +1,10 @@
-# Issue 7119: Redundant minus sign in PolyDict polynomial
+# Issue 7119: [with patch, positive review] Redundant minus sign in PolyDict polynomial
 
 archive/issues_007119.json:
 ```json
 {
-    "body": "Assignee: Kwankyu Lee\n\nThere is a tiny bug in the polydict implementation of multivariate\npolynomial ring. \n\n```\nsage: from sage.rings.polynomial.multi_polynomial_ring import MPolynomialRing_polydict\nsage: R.<x,y>=MPolynomialRing_polydict(GF(2),2,order='lex')\nsage: R\nMultivariate Polynomial Ring in x, y over Finite Field of size 2\nsage: f=x+y\nsage: f.lt()\n-x\nsage: f.lm()\n-x\n```\n\nThe minus sign in \"-x\" is redundant\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7119\n\n",
+    "body": "Assignee: @kwankyu\n\nThere is a tiny bug in the polydict implementation of multivariate\npolynomial ring. \n\n```\nsage: from sage.rings.polynomial.multi_polynomial_ring import MPolynomialRing_polydict\nsage: R.<x,y>=MPolynomialRing_polydict(GF(2),2,order='lex')\nsage: R\nMultivariate Polynomial Ring in x, y over Finite Field of size 2\nsage: f=x+y\nsage: f.lt()\n-x\nsage: f.lm()\n-x\n```\n\nThe minus sign in \"-x\" is redundant\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7119\n\n",
+    "closed_at": "2009-10-15T15:33:32Z",
     "created_at": "2009-10-05T04:49:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_007119.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Redundant minus sign in PolyDict polynomial",
+    "title": "[with patch, positive review] Redundant minus sign in PolyDict polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7119",
     "user": "https://github.com/kwankyu"
 }
 ```
-Assignee: Kwankyu Lee
+Assignee: @kwankyu
 
 There is a tiny bug in the polydict implementation of multivariate
 polynomial ring. 

@@ -1,21 +1,22 @@
-# Issue 1285: implement substitution of subexpression  in calculus
+# Issue 1285: [is duplicate of #1461] implement substitution of subexpression  in calculus
 
 archive/issues_001285.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\ne.subs(x, y) needs to work, where \"x\" is an expression and \"y\" is an expression.\nand it substitutes x for y.\n\nsome tests from SymPy:\n\nhttp://hg.sympy.org/sympy/file/d77f6c3b50bb/sympy/core/tests/test_subs.py\n\nThis is needed for the limit algorithm to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1285\n\n",
+    "body": "Assignee: @mwhansen\n\ne.subs(x, y) needs to work, where \"x\" is an expression and \"y\" is an expression.\nand it substitutes x for y.\n\nsome tests from SymPy:\n\nhttp://hg.sympy.org/sympy/file/d77f6c3b50bb/sympy/core/tests/test_subs.py\n\nThis is needed for the limit algorithm to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1285\n\n",
+    "closed_at": "2007-12-22T18:28:05Z",
     "created_at": "2007-11-26T22:36:21Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "implement substitution of subexpression  in calculus",
+    "title": "[is duplicate of #1461] implement substitution of subexpression  in calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1285",
     "user": "https://github.com/certik"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 e.subs(x, y) needs to work, where "x" is an expression and "y" is an expression.
 and it substitutes x for y.

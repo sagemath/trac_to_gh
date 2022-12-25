@@ -3,7 +3,8 @@
 archive/issues_002686.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nHoffman-Singleton, Paley graphs, Higman Sims, Johnson, Kneser, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2686\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nContains code for the following graphs\n* Paley (done)\n* Higman Sims (done)\n* Johnson (done)\n* Kneser (done)\n* Coxeter (done)\n* Schlaefli (done)\n* Clebsch (done)\n* Hoffman Singleton (done)\n* 600-cell\n* 120-cell\n* 200-cell\n* etc\n\nSee also ticket #9136.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2686\n\n",
+    "closed_at": "2014-05-06T22:02:53Z",
     "created_at": "2008-03-27T20:53:32Z",
     "labels": [
         "component: graph theory"
@@ -17,7 +18,23 @@ archive/issues_002686.json:
 ```
 Assignee: @rlmill
 
-Hoffman-Singleton, Paley graphs, Higman Sims, Johnson, Kneser, etc.
+Keywords: graphs
+
+Contains code for the following graphs
+* Paley (done)
+* Higman Sims (done)
+* Johnson (done)
+* Kneser (done)
+* Coxeter (done)
+* Schlaefli (done)
+* Clebsch (done)
+* Hoffman Singleton (done)
+* 600-cell
+* 120-cell
+* 200-cell
+* etc
+
+See also ticket #9136.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2686
 

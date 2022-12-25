@@ -1,16 +1,17 @@
-# Issue 1159: Bug in python range
+# Issue 1159: [reported upstream] Bug in python range
 
 archive/issues_001159.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n%python\nclass MyInt:\n    def __init__(self, n):\n        self.n = int(n)\n    def __int__(self):\n        return self.n\n\nprint range(MyInt(2**3), MyInt(2**3+10))\nprint \"here\"\nprint range(MyInt(2**34), MyInt(2**34+10))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1159\n\n",
+    "body": "Assignee: @williamstein\n\n```\n%python\nclass MyInt:\n    def __init__(self, n):\n        self.n = int(n)\n    def __int__(self):\n        return self.n\n\nprint range(MyInt(2**3), MyInt(2**3+10))\nprint \"here\"\nprint range(MyInt(2**34), MyInt(2**34+10))\n```\n\nFixed by #9958.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1159\n\n",
+    "closed_at": "2012-01-13T08:58:35Z",
     "created_at": "2007-11-12T22:12:49Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Bug in python range",
+    "title": "[reported upstream] Bug in python range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1159",
     "user": "https://github.com/robertwb"
@@ -18,6 +19,7 @@ archive/issues_001159.json:
 ```
 Assignee: @williamstein
 
+```
 %python
 class MyInt:
     def __init__(self, n):
@@ -28,6 +30,9 @@ class MyInt:
 print range(MyInt(2**3), MyInt(2**3+10))
 print "here"
 print range(MyInt(2**34), MyInt(2**34+10))
+```
+
+Fixed by #9958.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1159
 

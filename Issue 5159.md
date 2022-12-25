@@ -1,15 +1,16 @@
-# Issue 5159: Add functionality to Galois groups
+# Issue 5159: [with patches, with positive review] Add functionality to Galois groups
 
 archive/issues_005159.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nKeywords: galois groups, number theory\n\nIt would be nice to unify Sage's two ways of handling Galois groups: as abstract transitive groups, and as sets of explicit automorphisms with no group structure. This can be done by using Pari's galoisinit, galoispoltoperm and galoisapply functions.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5159\n\n",
+    "closed_at": "2009-03-31T09:35:38Z",
     "created_at": "2009-02-02T17:51:14Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Add functionality to Galois groups",
+    "title": "[with patches, with positive review] Add functionality to Galois groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5159",
     "user": "https://github.com/loefflerd"

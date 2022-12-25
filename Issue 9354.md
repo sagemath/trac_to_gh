@@ -4,9 +4,10 @@ archive/issues_009354.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  mvngu @williamstein\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricas-1.0.9.spkg\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.0.9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9354\n\n",
+    "closed_at": "2010-08-07T06:39:37Z",
     "created_at": "2010-06-27T20:06:19Z",
     "labels": [
-        "component: algebra",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",

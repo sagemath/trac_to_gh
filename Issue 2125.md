@@ -1,16 +1,17 @@
-# Issue 2125: bober's name is spelled wrong (with patch) (ready for review)
+# Issue 2125: [with patch, with positive review] bober's name is spelled wrong
 
 archive/issues_002125.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached fixes this spelling in two files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2125\n\n",
+    "closed_at": "2008-02-10T00:57:11Z",
     "created_at": "2008-02-09T06:35:57Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "bober's name is spelled wrong (with patch) (ready for review)",
+    "title": "[with patch, with positive review] bober's name is spelled wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2125",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"

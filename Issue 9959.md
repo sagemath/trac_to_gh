@@ -3,7 +3,8 @@
 archive/issues_009959.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  drkirkby @kcrisman @nexttime @qed777 @jdemeyer\n\nRight now, setting SAGE_CHECK to any nonempty string (e.g., \"no\") runs the test suite.  The documentation actually says that SAGE_CHECK should be \"yes\" for this to happen.  Fix this.\n\nWhile we're at it, fix something else: in the script SAGE_ROOT/local/bin/sage-env, SAGE64 is required to be \"yes\", \"no\", or unset:\n\n```\nif [ \"$SAGE64\" != \"yes\" -a \"$SAGE64\" != \"no\" ]; then\n    echo \"The environment variable SAGE64 (=$SAGE64) must be either unset, yes or no.\"\n    exit 1\nfi\n```\nThe problem is, whenever sage-env is run, output is redirected to /dev/null, so this error message isn't printed.  So for example:\n\n```\n$ export SAGE64='maybe'\n$ sage\n$\n```\nSage fails to run and is completely silent as to why.  Fix this, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9960\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  drkirkby @kcrisman @nexttime @qed777 @jdemeyer\n\nRight now, setting SAGE_CHECK to any nonempty string (e.g., \"no\") runs the test suite.  The documentation actually says that SAGE_CHECK should be \"yes\" for this to happen.  Fix this.\n\nWhile we're at it, fix something else: in the script SAGE_ROOT/local/bin/sage-env, SAGE64 is required to be \"yes\", \"no\", or unset:\n\n```\nif [ \"$SAGE64\" != \"yes\" -a \"$SAGE64\" != \"no\" ]; then\n    echo \"The environment variable SAGE64 (=$SAGE64) must be either unset, yes or no.\"\n    exit 1\nfi\n```\nThe problem is, whenever sage-env is run, output is redirected to /dev/null, so this error message isn't printed.  So for example:\n\n```\n$ export SAGE64='maybe'\n$ sage\n$\n```\nSage fails to run and is completely silent as to why.  Fix this, too.  \n\n---\n\nAlso, due to a bug in `sage-spkg`, successful test suite runs never get logged in `spkg/installed/<package-name>` as they should (or is intended); this is fixed by the reviewer patch.\n\n(Note that test suite **failures** cannot be logged in these files as they get deleted on non-successful builds, which [currently] includes successful builds with failing self-tests.)\n\n---\n\nApply only [attachment:trac_9960-scripts-SAGE_CHECK.v2.patch] (to the scripts repo).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9960\n\n",
+    "closed_at": "2011-05-12T20:27:20Z",
     "created_at": "2010-09-21T16:39:37Z",
     "labels": [
         "component: user interface",
@@ -37,7 +38,17 @@ $ export SAGE64='maybe'
 $ sage
 $
 ```
-Sage fails to run and is completely silent as to why.  Fix this, too.
+Sage fails to run and is completely silent as to why.  Fix this, too.  
+
+---
+
+Also, due to a bug in `sage-spkg`, successful test suite runs never get logged in `spkg/installed/<package-name>` as they should (or is intended); this is fixed by the reviewer patch.
+
+(Note that test suite **failures** cannot be logged in these files as they get deleted on non-successful builds, which [currently] includes successful builds with failing self-tests.)
+
+---
+
+Apply only [attachment:trac_9960-scripts-SAGE_CHECK.v2.patch] (to the scripts repo).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9960
 

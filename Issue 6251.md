@@ -1,22 +1,23 @@
-# Issue 6251: LogoutResource in sage/server/simple/twist.py doesn't really log you out
+# Issue 6251: [with patch, positive review] LogoutResource in sage/server/simple/twist.py doesn't really log you out
 
 archive/issues_006251.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
+    "closed_at": "2009-07-29T12:11:56Z",
     "created_at": "2009-06-09T01:20:04Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "LogoutResource in sage/server/simple/twist.py doesn't really log you out",
+    "title": "[with patch, positive review] LogoutResource in sage/server/simple/twist.py doesn't really log you out",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6251",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: boothby
+Assignee: @dandrake
 
 CC:  @robertwb
 

@@ -1,16 +1,17 @@
-# Issue 2447: lfunctions modules scores low on doctests
+# Issue 2447: [with patch, with positive review] lfunctions modules scores low on doctests
 
 archive/issues_002447.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: lfunctions\n\nThe three modules in sage/lfunctions have extremely good documentation in their source files but not in way which gives good scores in --coverage tests.  A little more has been added (though nothing which gives more essential information than before).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2447\n\n",
+    "closed_at": "2008-03-12T19:37:03Z",
     "created_at": "2008-03-09T21:46:59Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "lfunctions modules scores low on doctests",
+    "title": "[with patch, with positive review] lfunctions modules scores low on doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2447",
     "user": "https://github.com/JohnCremona"

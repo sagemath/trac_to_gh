@@ -1,17 +1,18 @@
-# Issue 7311: Change min/max arguments
+# Issue 7311: Improve the add_constraint method from MixedIntegerLinearProgram
 
 archive/issues_007311.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  abmasse\n\nInstead of None when a variable or a constraint of a MixedIntegerLinearProgram is not bounded, it may be more correct to set it to infinity.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7311\n\n",
+    "body": "Assignee: jkantor\n\nCC:  abmasse\n\nThe min and max arguments should accept variables too, and not just real values or None. This is now possible, along with more complex expressions inside of add_constraint and without even using min/max ( which are still the most efficient way to define constraints )\n\nAlso fixes an important bug (copy was used instead of deepcopy, which produced wrong results)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7311\n\n",
+    "closed_at": "2010-04-15T23:41:28Z",
     "created_at": "2009-10-26T13:33:33Z",
     "labels": [
         "component: numerical",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "Change min/max arguments",
+    "title": "Improve the add_constraint method from MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7311",
     "user": "https://github.com/nathanncohen"
@@ -21,7 +22,9 @@ Assignee: jkantor
 
 CC:  abmasse
 
-Instead of None when a variable or a constraint of a MixedIntegerLinearProgram is not bounded, it may be more correct to set it to infinity.
+The min and max arguments should accept variables too, and not just real values or None. This is now possible, along with more complex expressions inside of add_constraint and without even using min/max ( which are still the most efficient way to define constraints )
+
+Also fixes an important bug (copy was used instead of deepcopy, which produced wrong results)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7311
 

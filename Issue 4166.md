@@ -1,4 +1,4 @@
-# Issue 4166: Separate resource for @interact
+# Issue 4166: [with patch; needs work] Separate resource for @interact
 
 archive/issues_004166.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_004166.json:
         "component: interact"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Separate resource for @interact",
+    "title": "[with patch; needs work] Separate resource for @interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4166",
     "user": "https://github.com/itolkov"

@@ -1,23 +1,24 @@
-# Issue 6183: Quaternion algebra latexification
+# Issue 6183: [with patch, needs work] Quaternion algebra latexification
 
 archive/issues_006183.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nQuaternion algebra elements don't have a nice latexification. This should be easy for someone to add. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6183\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: quaternion latex\n\nQuaternion algebra elements don't have a nice latexification. This should be easy for someone to add. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6183\n\n",
     "created_at": "2009-06-02T07:28:18Z",
     "labels": [
         "component: algebra",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Quaternion algebra latexification",
+    "title": "[with patch, needs work] Quaternion algebra latexification",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6183",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
+
+Keywords: quaternion latex
 
 Quaternion algebra elements don't have a nice latexification. This should be easy for someone to add. 
 

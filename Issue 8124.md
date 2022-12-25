@@ -4,6 +4,7 @@ archive/issues_008124.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nI forgot to include this function in my big S-units and S-class groups patch.\n\nI've tested on my laptop and on sage.math, so I think this passes on 32 and 64 bit systems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8124\n\n",
+    "closed_at": "2010-02-11T14:31:43Z",
     "created_at": "2010-01-29T21:04:44Z",
     "labels": [
         "component: number fields"

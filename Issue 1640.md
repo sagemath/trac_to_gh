@@ -1,23 +1,24 @@
-# Issue 1640: missing documentation Elliptic Curve - heegner_discriminants
+# Issue 1640: [with patch, positive review] missing documentation Elliptic Curve - heegner_discriminants
 
 archive/issues_001640.json:
 ```json
 {
-    "body": "Assignee: tba\n\nDocumentation missing:\n\n```\nE = EllipticCurve('5077a')\nE.heegner_discriminants?\n```\n\n\nsays\n\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\nType:        <type 'instancemethod'>\nDefinition:  E.heegner_discriminants(bound)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\nbut\n\n\n```\nE.heegner_index?\n```\n\n\nis ok.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1640\n\n",
+    "body": "Assignee: @williamstein\n\nDocumentation missing:\n\n```\nE = EllipticCurve('5077a')\nE.heegner_discriminants?\n```\n\n\nsays\n\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\nType:        <type 'instancemethod'>\nDefinition:  E.heegner_discriminants(bound)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\nbut\n\n\n```\nE.heegner_index?\n```\n\n\nis ok.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1640\n\n",
+    "closed_at": "2008-01-16T17:05:16Z",
     "created_at": "2007-12-30T14:27:11Z",
     "labels": [
-        "component: documentation",
+        "component: algebraic geometry",
         "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "missing documentation Elliptic Curve - heegner_discriminants",
+    "title": "[with patch, positive review] missing documentation Elliptic Curve - heegner_discriminants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1640",
     "user": "https://github.com/haraldschilly"
 }
 ```
-Assignee: tba
+Assignee: @williamstein
 
 Documentation missing:
 

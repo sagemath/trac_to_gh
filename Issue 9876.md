@@ -3,7 +3,8 @@
 archive/issues_009876.json:
 ```json
 {
-    "body": "Assignee: tmonteil\n\nCC:  sage-combinat abmasse @seblabbe\n\nAdd 3 methods to the `sage/combinat/words/finite_word.py`:\n\n1. sturmian_desubstitute_as_possible\n2. is_sturmian_factor\n3. is_tangent\n\n```\nsage: w = Word('01110110110111011101',alphabet='01')\nsage: w.is_tangent()                  \nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9877\n\n",
+    "body": "Assignee: tmonteil\n\nCC:  sage-combinat abmasse @seblabbe\n\nKeywords: sturmian word, tangent word\n\nAdd 3 methods to `sage/combinat/words/finite_word.py`:\n\n1. sturmian_desubstitute_as_possible\n2. is_sturmian_factor\n3. is_tangent\n\nAdd a protecting `is_tangent` method to `sage/combinat/words/paths.py`.\n\n```\nsage: w = Word('01110110110111011101',alphabet='01')\nsage: w.is_tangent()                  \nTrue\n```\nDepends on #8739.\n\nApply:\n* [attachment:trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch] \n* [attachment:trac_9777-sturm-review-fc.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9877\n\n",
+    "closed_at": "2013-03-20T14:43:23Z",
     "created_at": "2010-09-08T21:05:26Z",
     "labels": [
         "component: combinatorics"
@@ -19,17 +20,26 @@ Assignee: tmonteil
 
 CC:  sage-combinat abmasse @seblabbe
 
-Add 3 methods to the `sage/combinat/words/finite_word.py`:
+Keywords: sturmian word, tangent word
+
+Add 3 methods to `sage/combinat/words/finite_word.py`:
 
 1. sturmian_desubstitute_as_possible
 2. is_sturmian_factor
 3. is_tangent
+
+Add a protecting `is_tangent` method to `sage/combinat/words/paths.py`.
 
 ```
 sage: w = Word('01110110110111011101',alphabet='01')
 sage: w.is_tangent()                  
 True
 ```
+Depends on #8739.
+
+Apply:
+* [attachment:trac_9877_words_sturmian_desubstitution_attempt_2-tm.patch] 
+* [attachment:trac_9777-sturm-review-fc.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9877
 

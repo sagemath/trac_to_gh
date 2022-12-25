@@ -1,15 +1,16 @@
-# Issue 3062: implement __oct__ special method for the integers
+# Issue 3062: [with patch; positive review] implement __oct__ special method for the integers
 
 archive/issues_003062.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n>  oct(2345) fails in Sage (but works in Python)\n>  oct(int(2345)) works\n>  hex(2345) works\n>  \n>  Irc said it was the preparser. Why would the input of oct be preparsed\n>  correctly and not that of hex ?\n\nI think you asked this question backwards.  Anyway, the problem\nis that nobody implemented __oct__ for Sage integers, but they\ndid implement __hex__.  Note that oct(...) calls __oct__:\n\nsage: a = 2345\nsage: a.__hex__()\n'929'\nsage: a.__oct__()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.integer.Integer' object has no attribute '__oct__'\n\nIn the meantime you can do either\n\nsage: oct(int(a))\n'04451'\n\nor\n\nsage: a.digits(8)\n[1, 5, 4, 4]\n\nor\n\nsage: a.str(base=8)\n'4451'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3062\n\n",
+    "closed_at": "2008-05-02T12:57:11Z",
     "created_at": "2008-04-30T14:35:57Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "implement __oct__ special method for the integers",
+    "title": "[with patch; positive review] implement __oct__ special method for the integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3062",
     "user": "https://github.com/williamstein"

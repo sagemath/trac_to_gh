@@ -1,22 +1,25 @@
-# Issue 3065: empty matrices: frobenius() throws  RuntimeError
+# Issue 3065: [with patch; positive review] empty matrices: frobenius() throws  RuntimeError
 
 archive/issues_003065.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
+    "closed_at": "2008-05-05T20:36:23Z",
     "created_at": "2008-04-30T15:16:35Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "empty matrices: frobenius() throws  RuntimeError",
+    "title": "[with patch; positive review] empty matrices: frobenius() throws  RuntimeError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3065",
     "user": "https://github.com/dfdeshom"
 }
 ```
 Assignee: @williamstein
+
+Keywords: pari
 
 This happens for frobenius(0) and frobenius(2) only. 
 

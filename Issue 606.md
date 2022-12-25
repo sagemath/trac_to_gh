@@ -3,11 +3,11 @@
 archive/issues_000606.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFrom the notebook,\n\n```\n%sh\ncat > hello.pyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n```\nload \"hello.pyx\"\nLoading of file\n\"/opt/sage-2.8.3.rc3/sage_notebook/worksheets/admin/0/cells/0/hello.pyx\"\nhas type not implemented.\n```\n\nThere is a function that currently just checks to see if the filename extension is .py or .sage before it tries to load the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/606\n\n",
+    "body": "Assignee: @mwhansen\n\nFrom the notebook,\n\n```\n%sh\ncat > hello.pyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n```\nload \"hello.pyx\"\nLoading of file\n\"/opt/sage-2.8.3.rc3/sage_notebook/worksheets/admin/0/cells/0/hello.pyx\"\nhas type not implemented.\n```\n\nThere is a function that currently just checks to see if the filename extension is .py or .sage before it tries to load the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/606\n\n",
+    "closed_at": "2007-09-07T02:38:16Z",
     "created_at": "2007-09-07T00:02:17Z",
     "labels": [
-        "component: notebook",
-        "minor"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "add notebook support for loading of spyx and pyx files",
@@ -16,7 +16,7 @@ archive/issues_000606.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 From the notebook,
 

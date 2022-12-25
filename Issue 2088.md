@@ -4,6 +4,7 @@ archive/issues_002088.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere should be a way of building optional cython interfaces for optional spkgs in a way that is very easy for the user.  For example, it would be nice to have optional spkg cython things automatically built in the sage -b process.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2088\n\n",
+    "closed_at": "2013-08-16T11:11:39Z",
     "created_at": "2008-02-07T19:52:08Z",
     "labels": [
         "component: distribution"

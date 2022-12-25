@@ -4,6 +4,7 @@ archive/issues_007691.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLong, long ago I randomly decided that the pexpect interfaces (to maxima, gp, etc.) should timeout if the subprocess takes more than 30 seconds to startup.  This is completely arbitrary, and really makes no sense, especially since randomly loaded systems (especially heavy NFS load) can easily and reasonably increase the startup time to > 30 seconds.  \n\nLet's change it so that there is *no* timeout.  If you type\n\n```\n sage: gp('2+2')\n```\nthen Sage should simply wait until gp starts, no matter how long that takes.   That's just like typing \n\n```\n bash$ gp\n```\non the command line and the command line not killing gp because it takes > 30 seconds to start.\n\nThis will also sort out many doctest issues on highly loaded machines. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7691\n\n",
+    "closed_at": "2009-12-16T02:28:54Z",
     "created_at": "2009-12-15T19:46:14Z",
     "labels": [
         "component: interfaces",

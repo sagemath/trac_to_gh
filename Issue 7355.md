@@ -1,16 +1,17 @@
-# Issue 7355: Allow sage -i/-f to install packages without stating version number.
+# Issue 7355: Allow sage -i/-f to install packages without stating version number
 
 archive/issues_007355.json:
 ```json
 {
     "body": "Assignee: tbd\n\nHaving to state the version number of a package all the time is annoying. This fixes that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7355\n\n",
+    "closed_at": "2009-11-17T06:11:03Z",
     "created_at": "2009-10-30T08:34:55Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Allow sage -i/-f to install packages without stating version number.",
+    "title": "Allow sage -i/-f to install packages without stating version number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7355",
     "user": "https://github.com/TimDumol"

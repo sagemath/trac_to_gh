@@ -1,17 +1,17 @@
-# Issue 4147: Upgrade to linbox-1.1.6
+# Issue 4147: [with spkg, positive review] Upgrade to linbox-1.1.6
 
 archive/issues_004147.json:
 ```json
 {
     "body": "Assignee: @ClementPernet\n\nUpgrade the linbox spkg to upstream latest version, that will be released as v1.1.6.\nThis is a defect since the current 1.1.6rc1 version does not compile under cygwin (linker and gcc-3.4 related issues).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4147\n\n",
+    "closed_at": "2008-09-20T02:46:22Z",
     "created_at": "2008-09-19T00:37:38Z",
     "labels": [
         "component: linbox",
-        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Upgrade to linbox-1.1.6",
+    "title": "[with spkg, positive review] Upgrade to linbox-1.1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4147",
     "user": "https://github.com/ClementPernet"

@@ -3,7 +3,8 @@
 archive/issues_008490.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  sage-combinat\n\nKeywords: word\n\nThe method is_square_free of sage.combinat.words.word.Word returns the wrong value in special case (including squares !)\n\n```\nsage: Word(\"aa\").is_square_free()  # the most funny\nTrue\nsage: Word(\"baa\").is_square_free()\nTrue\nsage: Word(\"cbaa\").is_square_free()\nTrue\nsage: Word(\"dcbaa\").is_square_free()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8490\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat\n\nKeywords: word\n\nThe method is_square_free of sage.combinat.words.word.Word returns the wrong value in special cases (including squares !)\n\n```\nsage: Word(\"aa\").is_square_free()  # the funniest\nTrue\nsage: Word(\"baa\").is_square_free()\nTrue\nsage: Word(\"cbaa\").is_square_free()\nTrue\nsage: Word(\"dcbaa\").is_square_free()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8490\n\n",
+    "closed_at": "2010-06-05T22:30:25Z",
     "created_at": "2010-03-10T16:38:46Z",
     "labels": [
         "component: combinatorics",
@@ -22,10 +23,10 @@ CC:  sage-combinat
 
 Keywords: word
 
-The method is_square_free of sage.combinat.words.word.Word returns the wrong value in special case (including squares !)
+The method is_square_free of sage.combinat.words.word.Word returns the wrong value in special cases (including squares !)
 
 ```
-sage: Word("aa").is_square_free()  # the most funny
+sage: Word("aa").is_square_free()  # the funniest
 True
 sage: Word("baa").is_square_free()
 True

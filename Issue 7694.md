@@ -4,6 +4,7 @@ archive/issues_007694.json:
 ```json
 {
     "body": "Assignee: tbd\n\nChange the pickle jar doctest in devel/sage/sage/structure/sage_object.pyx to:\n\n```\nsage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nx...\nFailed to unpickle 0 objects.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7694\n\n",
+    "closed_at": "2010-06-03T04:09:49Z",
     "created_at": "2009-12-15T23:47:06Z",
     "labels": [
         "component: doctest coverage",

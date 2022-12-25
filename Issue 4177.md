@@ -1,16 +1,17 @@
-# Issue 4177: Put Sage version in Notebook
+# Issue 4177: [with patch, positive review] Put Sage version in Notebook
 
 archive/issues_004177.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUnder the \"Sage notebook\" on the upper left in the home page as well as in the individual worksheets, it might be nice to have the Sage version number of that installation in a small font, to remember - as well as to enhance bug reports coming from non-installing users.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4177\n\n",
+    "closed_at": "2008-10-18T19:13:59Z",
     "created_at": "2008-09-23T18:18:17Z",
     "labels": [
         "component: notebook",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Put Sage version in Notebook",
+    "title": "[with patch, positive review] Put Sage version in Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4177",
     "user": "https://github.com/kcrisman"

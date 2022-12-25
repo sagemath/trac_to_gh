@@ -3,7 +3,8 @@
 archive/issues_007555.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout @dimpase @nthiery\n\nKeywords: cayley table, operation table\n\nCayley tables for permutation groups are broken, see #7340.\n\nFor other finite algebraic structures, it would be useful for educational purposes to have tables for whatever operation(s) may be present.\n\nText file included here provides a class that creates a Cayley table object, it can be generalized to provide a similar table for any object with an addition or multiplication - general groups and rings would be the first places to use it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7555\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout @dimpase @nthiery\n\nKeywords: cayley table, operation table\n\nCayley tables for permutation groups are broken, see #7340.\n\nFor other finite algebraic structures, it would be useful for educational purposes to have tables for whatever operation(s) may be present.\n\nText file included here provides a class that creates a Cayley table object, it can be generalized to provide a similar table for any object with an addition or multiplication - general groups and rings would be the first places to use it.\n\nDepends on #8579.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7555\n\n",
+    "closed_at": "2010-04-15T20:14:34Z",
     "created_at": "2009-11-29T18:55:58Z",
     "labels": [
         "component: algebra",
@@ -27,6 +28,8 @@ Cayley tables for permutation groups are broken, see #7340.
 For other finite algebraic structures, it would be useful for educational purposes to have tables for whatever operation(s) may be present.
 
 Text file included here provides a class that creates a Cayley table object, it can be generalized to provide a similar table for any object with an addition or multiplication - general groups and rings would be the first places to use it.
+
+Depends on #8579.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7555
 

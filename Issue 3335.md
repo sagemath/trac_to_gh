@@ -4,6 +4,7 @@ archive/issues_003335.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIPython 0.8.3 has been released. For changes check out\n\nhttp://ipython.scipy.org/moin/WhatsNew083\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3335\n\n",
+    "closed_at": "2008-07-31T02:13:01Z",
     "created_at": "2008-05-29T23:08:19Z",
     "labels": [
         "component: packages: standard",

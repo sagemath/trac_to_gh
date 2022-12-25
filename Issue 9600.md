@@ -3,10 +3,11 @@
 archive/issues_009600.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\nCC:  @jhpalmieri stephen @dimpase\n\nliblapack.so includes undefined references to __powidf2 and __powisf2, which are defined in libgcc (no other Sage shared libraries appear to rely on libgcc helper functions). Unfortunately, for reasons I don't fully understand, linking liblapack.so against libgcc.a fails, even when building a normal executable. The symptom is a message like:\n\nusr/local/bin/ld: _configtest: hidden symbol `__powidf2' in /usr/local/lib/gcc45/gcc/x86_64-portbld-freebsd8.1/4.5.1/libgcc.a(_powidf2.o) is referenced by DSO\n/usr/local/bin/ld: final link failed: Nonrepresentable section on output\n\nThe fix is to add a dependency on libgcc_s.so when (re-)building \nliblapack.so in make_correct_shared.sh.\n\nIt's not clear whether this is a defect in atlas or not - the liblapack.so used in Sage is custom-built for Sage and so this particular fix cannot be reported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9600\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri stephen @dimpase\n\nliblapack.so includes undefined references to __powidf2 and __powisf2, which are defined in libgcc (no other Sage shared libraries appear to rely on libgcc helper functions). Unfortunately, for reasons I don't fully understand, linking liblapack.so against libgcc.a fails, even when building a normal executable. The symptom is a message like:\n\nusr/local/bin/ld: _configtest: hidden symbol `__powidf2' in /usr/local/lib/gcc45/gcc/x86_64-portbld-freebsd8.1/4.5.1/libgcc.a(_powidf2.o) is referenced by DSO\n/usr/local/bin/ld: final link failed: Nonrepresentable section on output\n\nThe fix is to add a dependency on libgcc_s.so when (re-)building \nliblapack.so in make_correct_shared.sh.\n\nIt's not clear whether this is a defect in atlas or not - the liblapack.so used in Sage is custom-built for Sage and so this particular fix cannot be reported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9600\n\n",
+    "closed_at": "2020-09-27T13:06:22Z",
     "created_at": "2010-07-26T10:56:43Z",
     "labels": [
-        "component: freebsd",
+        "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009600.json:
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: @peterjeremy
+Assignee: GeorgSWeber
 
 CC:  @jhpalmieri stephen @dimpase
 

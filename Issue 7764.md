@@ -4,6 +4,7 @@ archive/issues_007764.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nA block to take care of when the 4.3.1 merge cycle starts is that mhansen did some merging in I think\n\n   /scratch/mhansen/release/4.3/4.3.rc1\n\nwhich might not have been reflected in the final 4.3 release.  This could have resulted in tickets marked as closed when they weren't closed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7764\n\n",
+    "closed_at": "2010-01-18T00:36:19Z",
     "created_at": "2009-12-24T20:19:11Z",
     "labels": [
         "component: misc",

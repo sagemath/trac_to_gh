@@ -3,11 +3,11 @@
 archive/issues_001944.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn what should be a very small subsection of the reference manual, the Visualizing Graphs section contains the documentation for *every* function in graph.py.\n\nSee\nhttp://sagemath.org/doc/html/ref/node48.html currently to see this.\n\nA consequence of this is that it is very hard to find the documentation for a graph function when browsing the source because the table of contents does not indicate that all these are hidden under a sub section.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1944\n\n",
+    "body": "Assignee: @mwhansen\n\nIn what should be a very small subsection of the reference manual, the Visualizing Graphs section contains the documentation for *every* function in graph.py.\n\nSee\nhttp://sagemath.org/doc/html/ref/node48.html currently to see this.\n\nA consequence of this is that it is very hard to find the documentation for a graph function when browsing the source because the table of contents does not indicate that all these are hidden under a sub section.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1944\n\n",
+    "closed_at": "2009-02-28T04:20:37Z",
     "created_at": "2008-01-26T23:43:16Z",
     "labels": [
         "component: documentation",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
@@ -17,7 +17,7 @@ archive/issues_001944.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 In what should be a very small subsection of the reference manual, the Visualizing Graphs section contains the documentation for *every* function in graph.py.
 

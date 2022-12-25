@@ -3,7 +3,8 @@
 archive/issues_003600.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nKeywords: dsage\n\nThis patch gets rid of the old dsage worker behavior. Specifically, it does the following things:\n\n1. Workers no longer poll the server for new jobs.\n2. Workers no longer poll sage for when the job finishes.\n3. Doctests run much more reliably now, and in much less time (no need for # long time now)\n4. The worker, as well as the server use twistd now, this make things like running them under a profile\n    trivial.\n\nIt's a rather big patch so right now I'd like people to apply it and run the doc/unittests. To run the unittests, do\n\n```\nsage: !trial sage.dsage\n```\n\nRun doctests as normal. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3600\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: dsage, editor_gfurnish\n\nThis patch gets rid of the old dsage worker behavior. Specifically, it does the following things:\n\n1. Workers no longer poll the server for new jobs.\n2. Workers no longer poll sage for when the job finishes.\n3. Doctests run much more reliably now, and in much less time (no need for # long time now)\n4. The worker, as well as the server use twistd now, this make things like running them under a profile\n    trivial.\n\nIt's a rather big patch so right now I'd like people to apply it and run the doc/unittests. To run the unittests, do\n\n```\nsage: !trial sage.dsage\n```\n\nRun doctests as normal. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3600\n\n",
+    "closed_at": "2008-12-11T14:54:14Z",
     "created_at": "2008-07-08T01:29:03Z",
     "labels": [
         "component: dsage",
@@ -18,7 +19,7 @@ archive/issues_003600.json:
 ```
 Assignee: @yqiang
 
-Keywords: dsage
+Keywords: dsage, editor_gfurnish
 
 This patch gets rid of the old dsage worker behavior. Specifically, it does the following things:
 

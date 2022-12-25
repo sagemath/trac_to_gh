@@ -1,9 +1,10 @@
-# Issue 1668: fix polybori's variable names: _P->PB_P
+# Issue 1668: [with patch, with positive review] fix polybori's variable names: _P->PB_P
 
 archive/issues_001668.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nVariable names like `_[A-Z]` cause trouble on Cygwin and Solaris. The polybori wrapper uses a couple of those. The renamed variables could be in some other for, but `_PP` also won't work. I have a patch, but since there are a bunch of other patches that touch the code and would need to be fixed wait for those to be merged before redoing this. burcin has volunteered to do this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1668\n\n",
+    "closed_at": "2008-01-13T18:03:54Z",
     "created_at": "2008-01-03T15:35:10Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_001668.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "fix polybori's variable names: _P->PB_P",
+    "title": "[with patch, with positive review] fix polybori's variable names: _P->PB_P",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1668",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

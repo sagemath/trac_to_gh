@@ -3,7 +3,8 @@
 archive/issues_004775.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nAfter a few hours using dsage dist factoring I have a few GB of log files.  This is too verbose and should be reduced.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4775\n\n",
+    "body": "Assignee: @garyfurnish\n\nAfter a few hours using dsage dist factoring I have a few GB of log files.  This is too verbose and should be reduced.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4775\n\n",
+    "closed_at": "2010-01-19T07:40:49Z",
     "created_at": "2008-12-13T01:21:03Z",
     "labels": [
         "component: dsage",
@@ -16,7 +17,7 @@ archive/issues_004775.json:
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: @yqiang
+Assignee: @garyfurnish
 
 After a few hours using dsage dist factoring I have a few GB of log files.  This is too verbose and should be reduced.  
 

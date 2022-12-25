@@ -1,16 +1,17 @@
-# Issue 4067: [with patch, needs review] hmm.pyx and ghmm.pyx valgrind issues
+# Issue 4067: [with patch, positive review] hmm.pyx and ghmm.pyx valgrind issues
 
 archive/issues_004067.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is a broken out patch from #3984. It does not fix the doctest, but numerous issues valgrind picks up. Someone needs to remember that C strings are NULL terminated :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4067\n\n",
+    "closed_at": "2008-09-05T11:05:13Z",
     "created_at": "2008-09-05T10:10:37Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] hmm.pyx and ghmm.pyx valgrind issues",
+    "title": "[with patch, positive review] hmm.pyx and ghmm.pyx valgrind issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4067",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

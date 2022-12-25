@@ -3,7 +3,8 @@
 archive/issues_007253.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOne can take advantage of the fact that (a+b)<sup>p</sup> = a<sup>p</sup> + b<sup>p</sup> to quickly expand f<sup>n</sup> = f<sup>qp</sup> * f<sup>r</sup> (where r<p, so one can literally write out the resulting monomials). \n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/38c3d619a7684a90\n\nIssue created by migration from https://trac.sagemath.org/ticket/7253\n\n",
+    "body": "Assignee: tbd\n\nOne can take advantage of the fact that (a+b)<sup>p</sup> = a<sup>p</sup> + b<sup>p</sup> to quickly expand f<sup>n</sup> = f<sup>qp</sup> * f<sup>r</sup> (as r<p, and f^p is sparse, the resulting product is easy to compute). \n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/38c3d619a7684a90\n\nIssue created by migration from https://trac.sagemath.org/ticket/7253\n\n",
+    "closed_at": "2017-12-12T08:23:33Z",
     "created_at": "2009-10-20T06:07:13Z",
     "labels": [
         "component: algebra",
@@ -18,7 +19,7 @@ archive/issues_007253.json:
 ```
 Assignee: tbd
 
-One can take advantage of the fact that (a+b)<sup>p</sup> = a<sup>p</sup> + b<sup>p</sup> to quickly expand f<sup>n</sup> = f<sup>qp</sup> * f<sup>r</sup> (where r<p, so one can literally write out the resulting monomials). 
+One can take advantage of the fact that (a+b)<sup>p</sup> = a<sup>p</sup> + b<sup>p</sup> to quickly expand f<sup>n</sup> = f<sup>qp</sup> * f<sup>r</sup> (as r<p, and f^p is sparse, the resulting product is easy to compute). 
 
 See http://groups.google.com/group/sage-support/browse_thread/thread/38c3d619a7684a90
 

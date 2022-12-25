@@ -3,7 +3,7 @@
 archive/issues_006756.json:
 ```json
 {
-    "body": "CC:  @ncalexan @mwhansen @kcrisman\n\nImplement diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ff10f99729a74eea/73308bf626ae06b3\n\nfor rationale behind it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6756\n\n",
+    "body": "CC:  @ncalexan @mwhansen @kcrisman\n\nImplement a diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ff10f99729a74eea/73308bf626ae06b3\n\nfor rationale behind it.\n\n**Implementation:**\n\nInstructions for installing these patches (sage-4.1.1)\n\n**(1) Pynac patch**   \n (a) Get the pynac spkg\n\n http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg\n\n (b) Apply the pynac patch implementing diff derivative from\n\n http://www.math.unb.ca/~ghossain/diff-derivative-pynac.patch\n\n (c) install the patched spkg in Sage.\n\n **OR** if you are feeling lazy, you can directly install my patched copy of pynac from here\n\n http://www.math.unb.ca/~ghossain/pynac-0.1.8.p2-with-diff.spkg\n\n\n\n**(2) Sage patch:**\n\n Apply the attached patch in Sage and build the changes (\"sage -b\").\n If everything goes smoothly then you are ready for testing.\n\n**Testing:**\n\nAbove, patches will provide two new user accessible functions\n (a) ``set_diff_derivative_level``\n\n (b) ``symbolic_diff``\n\nPlease see the docs for usage of these functions:\n\nIt would be good to thoroughly test the following features:\n\n (1) Substitution of the function\n\n (2) Derivative with or without chain rule\n\n (3) Explicit evaluation of derivative even for some situation where chain rule has been applied and derivative is specified w.r.t. an expression\n\n (4) Symbolic n-th derivative\n\n (5) Typesetting \n\nPlease test diff implementation against some related bugs\n\n#6376, #6523, #6480\n\nas new diff implementation should avoid these.\n\n\n**Speed Test:**\n\n```\nsage: f(x) = function('f',x);\nsage: f(x).diff(x)\nD[0](f)(x)\nsage: timeit('f(x).diff(x)')\n625 loops, best of 3: 124 \u00b5s per loop\nsage: timeit('f(x).diff(x,100)')\n125 loops, best of 3: 5.58 ms per loop\n\nsage: set_diff_derivative_level(1)\nsage: f(x).diff(x)\ndiff(f(x), x, 1)\nsage: timeit('f(x).diff(x)')\n625 loops, best of 3: 116 \u00b5s per loop\nsage: timeit('f(x).diff(x,100)')\n625 loops, best of 3: 1.01 ms per loop\n\nsage: set_diff_derivative_level(2)\nsage: f(x).diff(x)\ndiff(f(x), x, 1)\nsage: timeit('f(x).diff(x)')\n625 loops, best of 3: 130 \u00b5s per loop\nsage: timeit('f(x).diff(x,100)')\n125 loops, best of 3: 1.85 ms per loop\n```\n\n\n***** This patch removes old \"dummy_diff\" from \n\"calculus/calculus\" as we now have a _real_ diff.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6756\n\n",
     "created_at": "2009-08-16T02:02:23Z",
     "labels": [
         "component: symbolics"
@@ -17,11 +17,99 @@ archive/issues_006756.json:
 ```
 CC:  @ncalexan @mwhansen @kcrisman
 
-Implement diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread
+Implement a diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/ff10f99729a74eea/73308bf626ae06b3
 
 for rationale behind it.
+
+**Implementation:**
+
+Instructions for installing these patches (sage-4.1.1)
+
+**(1) Pynac patch**   
+ (a) Get the pynac spkg
+
+ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg
+
+ (b) Apply the pynac patch implementing diff derivative from
+
+ http://www.math.unb.ca/~ghossain/diff-derivative-pynac.patch
+
+ (c) install the patched spkg in Sage.
+
+ **OR** if you are feeling lazy, you can directly install my patched copy of pynac from here
+
+ http://www.math.unb.ca/~ghossain/pynac-0.1.8.p2-with-diff.spkg
+
+
+
+**(2) Sage patch:**
+
+ Apply the attached patch in Sage and build the changes ("sage -b").
+ If everything goes smoothly then you are ready for testing.
+
+**Testing:**
+
+Above, patches will provide two new user accessible functions
+ (a) ``set_diff_derivative_level``
+
+ (b) ``symbolic_diff``
+
+Please see the docs for usage of these functions:
+
+It would be good to thoroughly test the following features:
+
+ (1) Substitution of the function
+
+ (2) Derivative with or without chain rule
+
+ (3) Explicit evaluation of derivative even for some situation where chain rule has been applied and derivative is specified w.r.t. an expression
+
+ (4) Symbolic n-th derivative
+
+ (5) Typesetting 
+
+Please test diff implementation against some related bugs
+
+#6376, #6523, #6480
+
+as new diff implementation should avoid these.
+
+
+**Speed Test:**
+
+```
+sage: f(x) = function('f',x);
+sage: f(x).diff(x)
+D[0](f)(x)
+sage: timeit('f(x).diff(x)')
+625 loops, best of 3: 124 µs per loop
+sage: timeit('f(x).diff(x,100)')
+125 loops, best of 3: 5.58 ms per loop
+
+sage: set_diff_derivative_level(1)
+sage: f(x).diff(x)
+diff(f(x), x, 1)
+sage: timeit('f(x).diff(x)')
+625 loops, best of 3: 116 µs per loop
+sage: timeit('f(x).diff(x,100)')
+625 loops, best of 3: 1.01 ms per loop
+
+sage: set_diff_derivative_level(2)
+sage: f(x).diff(x)
+diff(f(x), x, 1)
+sage: timeit('f(x).diff(x)')
+625 loops, best of 3: 130 µs per loop
+sage: timeit('f(x).diff(x,100)')
+125 loops, best of 3: 1.85 ms per loop
+```
+
+
+***** This patch removes old "dummy_diff" from 
+"calculus/calculus" as we now have a _real_ diff.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6756
 

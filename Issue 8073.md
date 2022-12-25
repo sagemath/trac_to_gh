@@ -4,6 +4,7 @@ archive/issues_008073.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe docs to misc/misc.py, deprecation() say to put the current version of Sage, but the message that is printed says that the function has been deprecated \"Since Sage <version>\".  The \"since\" can be construed as >=, instead of just >.  I suggest we change \"Since\" to \"After\" to make the meaning more clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8073\n\n",
+    "closed_at": "2012-06-28T08:34:36Z",
     "created_at": "2010-01-26T07:42:16Z",
     "labels": [
         "component: misc",

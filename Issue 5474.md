@@ -1,16 +1,17 @@
-# Issue 5474: [with patch, needs review] delimiters for LaTeX representation of matrices
+# Issue 5474: [with patch, positive review] delimiters for LaTeX representation of matrices
 
 archive/issues_005474.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThere was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:\n\n```\nHow about adding a function to matrix0.pyx that sets a global variable\nin that file to the left and right delimiters for matrices?\n\nsage.matrix.matrix0.set_latex_delimiters('[',']')\n\nwould set them.  That's minimally intrusive.  Later on somebody could\ncome up with some grand scheme for customizing latex output, but\nplease don't until there are a few more use cases. \n```\nThe attached patch implements \"set_matrix_latex_delimiters\". (I changed the name slightly.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5474\n\n",
+    "closed_at": "2009-03-11T00:13:04Z",
     "created_at": "2009-03-10T21:23:00Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] delimiters for LaTeX representation of matrices",
+    "title": "[with patch, positive review] delimiters for LaTeX representation of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5474",
     "user": "https://github.com/jhpalmieri"

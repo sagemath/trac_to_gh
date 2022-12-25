@@ -1,16 +1,17 @@
-# Issue 3184: broken p-adic getslice
+# Issue 3184: [with patch, with positive review] broken p-adic getslice
 
 archive/issues_003184.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @craigcitro\n\n(This ticket was split off from #2943)\n\nThis is okay:\n\n```\nsage: K = Qp(13,7)\nsage: R.<t> = K[]       \nsage: a = 13^7*t^3 + K(169,4)*t - 13^4\nsage: a[1:2]\n(13^2 + O(13^4))*t\n```\n\nThis dies:\n\n```\nsage: t[0:1]\n[boom]\n```\n\nThe original context for this bug was along the lines of (see #2943 for more examples):\n\n```\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z * z\n[boom]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3184\n\n",
+    "closed_at": "2009-03-20T20:34:56Z",
     "created_at": "2008-05-13T13:00:20Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "broken p-adic getslice",
+    "title": "[with patch, with positive review] broken p-adic getslice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3184",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

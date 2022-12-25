@@ -4,6 +4,7 @@ archive/issues_009096.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Sphinx\n\nThe file `disjoint_union_enumerated_sets.py` contains the following wrong line\n\n```\n        Normalization of arguments; see :cls:`UniqueRepresentation`.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9096\n\n",
+    "closed_at": "2010-06-06T00:45:59Z",
     "created_at": "2010-05-30T18:52:00Z",
     "labels": [
         "component: documentation",

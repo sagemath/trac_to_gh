@@ -1,9 +1,10 @@
-# Issue 5390: install_package, optional_package etc might pick the wrong sage installation
+# Issue 5390: [with patch, needs work, probably invalid] install_package, optional_package etc might pick the wrong sage installation
 
 archive/issues_005390.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: package installation\n\n`package.py` provides various functions for obtaining a list of installed packages or installing new ones. In all these functions, `os.popen('sage')` is called.\n\nBut wouldn't this always try to call a system-wide sage installation? Then it would result in an error, if the running sage instance is from a local installation, and it may install packages in a wrong location if there is both a system wide and a local version of sage.\n\nIf this is really the case, then it might be better to give the full path to the currently running sage version, hence\n\n```\nos.popen('%s/sage'%(SAGE_ROOT))\n```\n\nThis is what the attached patch does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5390\n\n",
+    "closed_at": "2009-02-27T22:58:37Z",
     "created_at": "2009-02-27T09:45:02Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005390.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "install_package, optional_package etc might pick the wrong sage installation",
+    "title": "[with patch, needs work, probably invalid] install_package, optional_package etc might pick the wrong sage installation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5390",
     "user": "https://github.com/simon-king-jena"

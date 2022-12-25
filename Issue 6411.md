@@ -4,6 +4,7 @@ archive/issues_006411.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nWilliam was complaining about being unable to reproduce this, so here's an easy way to reproduce it:\n\nTake sage-4.1.alpha1, do an sdist, and try running sage. Boom.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6411\n\n",
+    "closed_at": "2010-01-18T22:20:09Z",
     "created_at": "2009-06-25T17:28:23Z",
     "labels": [
         "component: distribution",

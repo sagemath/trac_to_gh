@@ -1,4 +1,4 @@
-# Issue 1947: Implement homomorphisms between vector spaces
+# Issue 1947: Implement homomorphisms between vector spaces *over different fields*
 
 archive/issues_001947.json:
 ```json
@@ -7,10 +7,10 @@ archive/issues_001947.json:
     "created_at": "2008-01-27T10:46:59Z",
     "labels": [
         "component: linear algebra",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "Implement homomorphisms between vector spaces",
+    "title": "Implement homomorphisms between vector spaces *over different fields*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1947",
     "user": "https://github.com/craigcitro"

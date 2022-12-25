@@ -4,6 +4,7 @@ archive/issues_007468.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777\n\nThis package will be used for future testing. Adding another package to a package was also done with the Trac package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7468\n\n",
+    "closed_at": "2010-01-04T06:59:11Z",
     "created_at": "2009-11-15T07:26:48Z",
     "labels": [
         "component: notebook",

@@ -1,16 +1,17 @@
-# Issue 5862: os x libsingular -- sage/libsingular segfaults on first creation of a ring
+# Issue 5862: [with patch, positive review] OSX 64 bit libsingular -- sage/libsingular segfaults on first creation of a ring
 
 archive/issues_005862.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5862\n\n",
+    "body": "Assignee: @malb\n\nSage 3.4.1 or similar segault on startup once the first mv polynomial ring via libSingular is created. This is bad ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5862\n\n",
+    "closed_at": "2009-05-12T06:35:30Z",
     "created_at": "2009-04-23T04:55:58Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "os x libsingular -- sage/libsingular segfaults on first creation of a ring",
+    "title": "[with patch, positive review] OSX 64 bit libsingular -- sage/libsingular segfaults on first creation of a ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5862",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,11 @@ archive/issues_005862.json:
 ```
 Assignee: @malb
 
+Sage 3.4.1 or similar segault on startup once the first mv polynomial ring via libSingular is created. This is bad ;)
 
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/5862
 

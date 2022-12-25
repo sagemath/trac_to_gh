@@ -4,6 +4,7 @@ archive/issues_000278.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: clone\n\nI often say sage -clone sage-main sage-ncalexan instead of sage -b main ; sage -clone ncalexan.  It would be nice if this was parsed automagically, and if I was alerted that sage-blah is almost certainly not correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/278\n\n",
+    "closed_at": "2007-02-25T09:04:00Z",
     "created_at": "2007-02-22T23:55:05Z",
     "labels": [
         "component: user interface",

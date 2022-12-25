@@ -1,16 +1,17 @@
-# Issue 2544: modabvar -- rewrite of modular abelian varieties rewrite
+# Issue 2544: [with patches, positive review] modabvar -- rewrite of modular abelian varieties rewrite
 
 archive/issues_002544.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2544\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nWiki at http://wiki.sagemath.org/modabvar\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2544\n\n",
+    "closed_at": "2008-04-04T17:12:24Z",
     "created_at": "2008-03-16T08:51:56Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "modabvar -- rewrite of modular abelian varieties rewrite",
+    "title": "[with patches, positive review] modabvar -- rewrite of modular abelian varieties rewrite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2544",
     "user": "https://github.com/williamstein"
@@ -19,6 +20,8 @@ archive/issues_002544.json:
 Assignee: @williamstein
 
 CC:  @robertwb
+
+Wiki at http://wiki.sagemath.org/modabvar
 
 
 

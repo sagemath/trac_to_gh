@@ -1,22 +1,25 @@
-# Issue 5612: docs for solving a system of linear equations symbolically using symbolic matrices
+# Issue 5612: example of solving a system of linear equations symbolically using symbolic matrices
 
 archive/issues_005612.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should go into some docs somewhere.  Maybe under solve_right or in a primer?\n\nIt's to solve the linear system a*x+b*y=3, c*x+d*y=5.\n\n```\nsage: var('a,b,c,d,x,y')\n(a, b, c, d, x, y)\nsage: A=matrix(2,[a,b,c,d]); A\n[a b]\n[c d]\nsage: result=vector([3,5]); result\n(3, 5)\nsage: soln=A.solve_right(result) # you could also do soln=A\\result\nsage: soln\n(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a)), (5 - 3*c/a)/(d - b*c/a))\n\n\nNow, checking our answers:\n\n\nsage: (a*x+b*y).subs(x=soln[0],y=soln[1]).simplify_full()\n3\nsage: (c*x+d*y).subs(x=soln[0],y=soln[1]).simplify_full()\n5\n\n\nOr just checking it with matrix multiplication:\n\nsage: A*soln\n(a*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + b*(5 - 3*c/a)/(d - b*c/a), \nc*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + (5 - 3*c/a)*d/(d - b*c/a))\n\nLet's simplify each entry by applying the \"simplify_full\" function to \neach entry:\n\nsage: (A*soln).apply_map(lambda x: x.simplify_full())\n(3, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5612\n\n",
+    "body": "Assignee: @mmasdeu\n\nKeywords: beginner\n\nThis should go into some docs somewhere.  Maybe under solve_right or in a primer?\n\nIt's to solve the linear system a*x+b*y=3, c*x+d*y=5.\n\n```\nsage: var('a,b,c,d,x,y')\n(a, b, c, d, x, y)\nsage: A=matrix(2,[a,b,c,d]); A\n[a b]\n[c d]\nsage: result=vector([3,5]); result\n(3, 5)\nsage: soln=A.solve_right(result) # you could also do soln=A\\result\nsage: soln\n(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a)), (5 - 3*c/a)/(d - b*c/a))\n\n\nNow, checking our answers:\n\n\nsage: (a*x+b*y).subs(x=soln[0],y=soln[1]).simplify_full()\n3\nsage: (c*x+d*y).subs(x=soln[0],y=soln[1]).simplify_full()\n5\n\n\nOr just checking it with matrix multiplication:\n\nsage: A*soln\n(a*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + b*(5 - 3*c/a)/(d - b*c/a), \nc*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + (5 - 3*c/a)*d/(d - b*c/a))\n\nLet's simplify each entry by applying the \"simplify_full\" function to \neach entry:\n\nsage: (A*soln).apply_map(lambda x: x.simplify_full())\n(3, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5612\n\n",
+    "closed_at": "2012-08-01T12:09:03Z",
     "created_at": "2009-03-25T23:42:55Z",
     "labels": [
         "component: linear algebra",
-        "minor"
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.3",
-    "title": "docs for solving a system of linear equations symbolically using symbolic matrices",
+    "title": "example of solving a system of linear equations symbolically using symbolic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5612",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mmasdeu
+
+Keywords: beginner
 
 This should go into some docs somewhere.  Maybe under solve_right or in a primer?
 

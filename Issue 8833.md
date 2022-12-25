@@ -4,6 +4,7 @@ archive/issues_008833.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nA new patch introduced some new noise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8833\n\n",
+    "closed_at": "2010-05-01T19:18:59Z",
     "created_at": "2010-05-01T06:01:55Z",
     "labels": [
         "component: calculus",

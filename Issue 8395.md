@@ -3,7 +3,8 @@
 archive/issues_008395.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @nathanncohen\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):\n\n```\n[mvngu@sage mvngu]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G = Graph({1:[1]}); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True, multiedges=True); G\nLooped multi-graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe size of G is 1 because there is one edge, i.e. the single\nself-loop. As shown by the above session, Sage reports the size of G\nas 0. I believe this is a bug. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8395\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @nathanncohen\n\n**Note:** When this ticket is closed, make sure to also close ticket #9809.\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):\n\n```\n[mvngu@sage mvngu]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G = Graph({1:[1]}); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True, multiedges=True); G\nLooped multi-graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe size of G is 1 because there is one edge, i.e. the single\nself-loop. As shown by the above session, Sage reports the size of G\nas 0. I believe this is a bug. \n```\n\nSee also the discussion at this [other sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/63b3c775da0421a8) thread. This also happens in the C graph backends for sparse and dense graphs:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: from sage.graphs.base.sparse_graph import SparseGraphBackend\nsage: S = SparseGraphBackend(7)\nsage: S.loops(True)\nsage: S.add_edge(1, 1, None, directed=False)\nsage: S.has_edge(1, 1, None)\nTrue\nsage: list(S.iterator_edges(range(7), None))\n[(1, 1)]\nsage: S.degree(1, directed=False)\n1\nsage: \nsage: reset()\nsage: \nsage: \nsage: from sage.graphs.base.dense_graph import DenseGraphBackend\nsage: D = DenseGraphBackend(78)\nsage: D = DenseGraphBackend(7)\nsage: D.loops(True)\nsage: D.add_edge(1, 1, None, directed=False)\nsage: D.has_edge(1, 1, None)\nTrue\nsage: list(D.iterator_edges(range(7), None))\n[(1, 1)]\nsage: D.degree(1, directed=False)\n1\n```\n| Sage Version 4.3.5, Release Date: 2010-03-28                       |\n| Type notebook() for the GUI, and license() for information.        |\nNotice that `degree()` reports the degree of a self-loop as one, when in fact it should be 2. That's because both `SparseGraphBackend` and `DenseGraphBackend` inherit the same `degree()` function from `CGraphBackend`. I think the implementation of `degree()` in `CGraphBackend` needs to take into account the existence of self-loops.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8395\n\n",
+    "closed_at": "2011-01-12T06:31:26Z",
     "created_at": "2010-02-28T14:52:11Z",
     "labels": [
         "component: graph theory",
@@ -20,6 +21,8 @@ archive/issues_008395.json:
 Assignee: @rlmill
 
 CC:  @jasongrout @nathanncohen
+
+**Note:** When this ticket is closed, make sure to also close ticket #9809.
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):
 
@@ -51,6 +54,42 @@ The size of G is 1 because there is one edge, i.e. the single
 self-loop. As shown by the above session, Sage reports the size of G
 as 0. I believe this is a bug. 
 ```
+
+See also the discussion at this [other sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/63b3c775da0421a8) thread. This also happens in the C graph backends for sparse and dense graphs:
+
+```
+[mvngu@sage ~]$ sage
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+sage: from sage.graphs.base.sparse_graph import SparseGraphBackend
+sage: S = SparseGraphBackend(7)
+sage: S.loops(True)
+sage: S.add_edge(1, 1, None, directed=False)
+sage: S.has_edge(1, 1, None)
+True
+sage: list(S.iterator_edges(range(7), None))
+[(1, 1)]
+sage: S.degree(1, directed=False)
+1
+sage: 
+sage: reset()
+sage: 
+sage: 
+sage: from sage.graphs.base.dense_graph import DenseGraphBackend
+sage: D = DenseGraphBackend(78)
+sage: D = DenseGraphBackend(7)
+sage: D.loops(True)
+sage: D.add_edge(1, 1, None, directed=False)
+sage: D.has_edge(1, 1, None)
+True
+sage: list(D.iterator_edges(range(7), None))
+[(1, 1)]
+sage: D.degree(1, directed=False)
+1
+```
+| Sage Version 4.3.5, Release Date: 2010-03-28                       |
+| Type notebook() for the GUI, and license() for information.        |
+Notice that `degree()` reports the degree of a self-loop as one, when in fact it should be 2. That's because both `SparseGraphBackend` and `DenseGraphBackend` inherit the same `degree()` function from `CGraphBackend`. I think the implementation of `degree()` in `CGraphBackend` needs to take into account the existence of self-loops.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8395
 

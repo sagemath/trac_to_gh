@@ -1,16 +1,15 @@
-# Issue 8558: Make gcd use pari for univariate polynomial rings over number fields
+# Issue 8558: add a fast gcd algorithm for univariate polynomials over absolute number fields
 
 archive/issues_008558.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @slel\n\nKeywords: gcd, pari, number field\n\nQuestion arised here,\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/0f5b029970e1a4e2/fcec7d0e35474fbd#fcec7d0e35474fbd\n\nunivariate gcd is performed using euclidean algorithm, which causes explosion of coefficients and is slow but for trivial examples. Instead we should use pari that performs better.\n\n1.- Add a _pari_ function for absolute number fields taht work\n\n2.- Add gcd using pari for absolute number fields\n\n3.- For relative number fields, pass to an absolute representation. This may be slow. But for the cases where this is slow the current implementation may be unfeasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8558\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @slel\n\nKeywords: gcd, pari, ntl, number field, days94\n\nQuestion arised here,\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/0f5b029970e1a4e2/fcec7d0e35474fbd#fcec7d0e35474fbd\n\nunivariate gcd is performed using euclidean algorithm, which causes explosion of coefficients and is slow but for trivial examples.\n\nFor relative number fields, pass to an absolute representation. This may be slow. But for the cases where this is slow the current implementation may be unfeasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8558\n\n",
     "created_at": "2010-03-18T17:14:43Z",
     "labels": [
-        "component: algebra",
-        "minor"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "Make gcd use pari for univariate polynomial rings over number fields",
+    "title": "add a fast gcd algorithm for univariate polynomials over absolute number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8558",
     "user": "https://github.com/lftabera"
@@ -20,19 +19,15 @@ Assignee: @aghitza
 
 CC:  @slel
 
-Keywords: gcd, pari, number field
+Keywords: gcd, pari, ntl, number field, days94
 
 Question arised here,
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/0f5b029970e1a4e2/fcec7d0e35474fbd#fcec7d0e35474fbd
 
-univariate gcd is performed using euclidean algorithm, which causes explosion of coefficients and is slow but for trivial examples. Instead we should use pari that performs better.
+univariate gcd is performed using euclidean algorithm, which causes explosion of coefficients and is slow but for trivial examples.
 
-1.- Add a _pari_ function for absolute number fields taht work
-
-2.- Add gcd using pari for absolute number fields
-
-3.- For relative number fields, pass to an absolute representation. This may be slow. But for the cases where this is slow the current implementation may be unfeasible.
+For relative number fields, pass to an absolute representation. This may be slow. But for the cases where this is slow the current implementation may be unfeasible.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8558
 

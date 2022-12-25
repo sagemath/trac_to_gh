@@ -1,23 +1,24 @@
-# Issue 7743: Piecewise integration fixes [with patch; needs review]
+# Issue 7743: Piecewise integration fixes
 
 archive/issues_007743.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: integration\n\nThis patch fixes two issues with the piecewise class, brought up in this sage-support thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/18d830ece7826898/86c401e4d6b8f3dd\n\nThe first issue is that when a piece of the function belongs to the Integer ring, integration doesn't work. This is fixed by coercing each piece to the symbolic expression ring.\n\nThe second issue is that there are cases where maxima needs to be given assumptions about the domain of x for the piece being integrated. This is fixed with the assume and forget functions.\n\nAdditional unit tests have been added (or existing tests modified) for each issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7743\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: integration\n\nThis patch fixes two issues with the piecewise class, brought up in this sage-support thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/18d830ece7826898/86c401e4d6b8f3dd\n\nThe first issue is that when a piece of the function belongs to the Integer ring, integration doesn't work. This is fixed by coercing each piece to the symbolic expression ring.\n\nThe second issue is that there are cases where maxima needs to be given assumptions about the domain of x for the piece being integrated. This is fixed with the assume and forget functions.\n\nAdditional unit tests have been added (or existing tests modified) for each issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7743\n\n",
+    "closed_at": "2010-01-13T09:12:43Z",
     "created_at": "2009-12-19T22:52:08Z",
     "labels": [
-        "component: algebra",
+        "component: calculus",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Piecewise integration fixes [with patch; needs review]",
+    "title": "Piecewise integration fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7743",
     "user": "https://trac.sagemath.org/admin/accounts/users/pbutler"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 Keywords: integration
 

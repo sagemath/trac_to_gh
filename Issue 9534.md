@@ -3,7 +3,8 @@
 archive/issues_009534.json:
 ```json
 {
-    "body": "Assignee: jasonbhill\n\nKeywords: base\n\nPatch to add a (working) base method for permutation groups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9534\n\n",
+    "body": "Assignee: jasonbhill\n\nKeywords: base\n\nPatch to add a (working) base method for permutation groups.\n\n---\n\nApply [attachment:trac_9534-permgroup_base.patch] to the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9534\n\n",
+    "closed_at": "2011-10-07T19:11:06Z",
     "created_at": "2010-07-17T23:33:27Z",
     "labels": [
         "component: group theory"
@@ -20,6 +21,10 @@ Assignee: jasonbhill
 Keywords: base
 
 Patch to add a (working) base method for permutation groups.
+
+---
+
+Apply [attachment:trac_9534-permgroup_base.patch] to the Sage library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9534
 

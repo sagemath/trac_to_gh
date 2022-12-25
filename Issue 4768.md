@@ -1,16 +1,17 @@
-# Issue 4768: magma -- speed up conversion of integer, rational and modn matrices from sage to magma
+# Issue 4768: [with patch; positive review] magma -- speed up conversion of integer and rational matrices from sage to magma by an order of magnitude
 
 archive/issues_004768.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nBy writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4768\n\n",
+    "body": "Assignee: @williamstein\n\nBy writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise. \n\nThis relates to #4676 and #4237.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4768\n\n",
+    "closed_at": "2008-12-12T16:04:31Z",
     "created_at": "2008-12-12T06:59:56Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "magma -- speed up conversion of integer, rational and modn matrices from sage to magma",
+    "title": "[with patch; positive review] magma -- speed up conversion of integer and rational matrices from sage to magma by an order of magnitude",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4768",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,9 @@ archive/issues_004768.json:
 ```
 Assignee: @williamstein
 
-By writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise.
+By writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise. 
+
+This relates to #4676 and #4237.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4768
 

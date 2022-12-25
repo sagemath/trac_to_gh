@@ -3,10 +3,12 @@
 archive/issues_007363.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/9d58693356e11947\n\nIssue created by migration from https://trac.sagemath.org/ticket/7363\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nKeywords: pynac, symbolic, print\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/9d58693356e11947\n\nIssue created by migration from https://trac.sagemath.org/ticket/7363\n\n",
+    "closed_at": "2010-02-18T21:43:31Z",
     "created_at": "2009-10-31T14:44:49Z",
     "labels": [
         "component: symbolics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
@@ -19,6 +21,8 @@ archive/issues_007363.json:
 Assignee: @burcin
 
 CC:  @burcin
+
+Keywords: pynac, symbolic, print
 
 See http://groups.google.com/group/sage-devel/browse_frm/thread/9d58693356e11947
 

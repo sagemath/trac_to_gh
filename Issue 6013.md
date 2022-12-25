@@ -1,15 +1,16 @@
-# Issue 6013: rewrite number field relativize to be much faster
+# Issue 6013: [with patch; positive review] rewrite number field relativize to be much faster
 
 archive/issues_006013.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  was craigcitro\n\nKeywords: number field relativize speed\n\nPatch says it best.  Avoid an nfinit at all costs; allows to relativize over large number fields.\n\nThis also fixes longstanding degree one relativize bugs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6013\n\n",
+    "closed_at": "2009-05-12T05:52:52Z",
     "created_at": "2009-05-10T07:59:13Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "rewrite number field relativize to be much faster",
+    "title": "[with patch; positive review] rewrite number field relativize to be much faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6013",
     "user": "https://github.com/ncalexan"

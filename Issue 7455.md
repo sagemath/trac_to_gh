@@ -1,22 +1,23 @@
-# Issue 7455: SageNB - Searching on Log page does not work.
+# Issue 7455: SageNB - Searching on Log page does not work
 
 archive/issues_007455.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nSearching for anything on the Log page does not work due to missing javascript libraries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7455\n\n",
+    "body": "Assignee: boothby\n\nSearching for anything on the Log page does not work due to missing javascript libraries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7455\n\n",
+    "closed_at": "2009-12-09T06:32:16Z",
     "created_at": "2009-11-13T20:28:26Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "SageNB - Searching on Log page does not work.",
+    "title": "SageNB - Searching on Log page does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7455",
     "user": "https://github.com/TimDumol"
 }
 ```
-Assignee: @aghitza
+Assignee: boothby
 
 Searching for anything on the Log page does not work due to missing javascript libraries.
 

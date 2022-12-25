@@ -3,10 +3,11 @@
 archive/issues_005127.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @roed314 @tscrim @mkoeppe\n\nKeywords: relative number fields names coercion\n\nA naming one issue: in relative number fields, the family of functions coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5127\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @roed314 @tscrim @mkoeppe\n\nKeywords: relative number fields names coercion\n\nA naming one issue: in relative number fields, the family of functions coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5127\n\n",
+    "closed_at": "2020-07-02T14:05:22Z",
     "created_at": "2009-01-29T05:09:02Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_005127.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @roed314 @tscrim @mkoeppe
 

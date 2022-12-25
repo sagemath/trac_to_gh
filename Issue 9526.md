@@ -1,4 +1,4 @@
-# Issue 9526: implement some general improvements to modular abelian varieties, needed for my research
+# Issue 9526: implement Atkin-Lehner operators on modular abelian varieties
 
 archive/issues_009526.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_009526.json:
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "implement some general improvements to modular abelian varieties, needed for my research",
+    "title": "implement Atkin-Lehner operators on modular abelian varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9526",
     "user": "https://github.com/williamstein"

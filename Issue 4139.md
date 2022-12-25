@@ -1,16 +1,17 @@
-# Issue 4139: [with patch, needs review] Improvements to permutation groups
+# Issue 4139: [with patch, positive review] Improvements to permutation groups
 
 archive/issues_004139.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  boothby\n\nThe primary purpose of this patch was to make it so that calls to GAP aren't needed to construct permutation group elements and symmetric groups.\n\nThis has a unintended benefit of fixing #4105.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4139\n\n",
+    "body": "Assignee: joyner\n\nCC:  boothby\n\nThe primary purpose of this patch was to make it so that calls to GAP aren't needed to construct permutation group elements and symmetric groups.\n\nThis has an unintended benefit of fixing #4105.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4139\n\n",
+    "closed_at": "2008-09-19T14:48:39Z",
     "created_at": "2008-09-17T07:59:44Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] Improvements to permutation groups",
+    "title": "[with patch, positive review] Improvements to permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4139",
     "user": "https://github.com/mwhansen"
@@ -22,7 +23,7 @@ CC:  boothby
 
 The primary purpose of this patch was to make it so that calls to GAP aren't needed to construct permutation group elements and symmetric groups.
 
-This has a unintended benefit of fixing #4105.
+This has an unintended benefit of fixing #4105.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4139
 

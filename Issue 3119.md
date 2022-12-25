@@ -1,21 +1,24 @@
-# Issue 3119: elliptic curves -- implement gens function for non-integral models
+# Issue 3119: [with patch, with positive review] elliptic curves -- implement gens function for non-integral models
 
 archive/issues_003119.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. \n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/edu/2007-2008/sage/homework/5/<ipython console> in <module>()\n\n/Users/was/build/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in gens(self, verbose, rank1_search, algorithm, only_use_mwrank, proof)\n   1349         # end if (not_use_mwrank)\n   1350         if not self.is_integral():\n-> 1351             raise NotImplementedError, \"gens via mwrank only implemented for curves with integer coefficients.\"\n   1352         if algorithm == \"mwrank_lib\":\n   1353             misc.verbose(\"Calling mwrank C++ library.\")\n\n<type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.\n```\n\nSee how trivial this will now be to implement:\n\n```\nsage: F = E.minimal_model()\nsage: phi = F.isomorphism_to(E)\nsage: [phi(z) for z in F.gens()]\n[(10/9 : 29/54 : 1)]\n```\n\nWhat could be easier?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3119\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_wstein\n\nThe following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. \n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/edu/2007-2008/sage/homework/5/<ipython console> in <module>()\n\n/Users/was/build/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in gens(self, verbose, rank1_search, algorithm, only_use_mwrank, proof)\n   1349         # end if (not_use_mwrank)\n   1350         if not self.is_integral():\n-> 1351             raise NotImplementedError, \"gens via mwrank only implemented for curves with integer coefficients.\"\n   1352         if algorithm == \"mwrank_lib\":\n   1353             misc.verbose(\"Calling mwrank C++ library.\")\n\n<type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.\n```\n\nSee how trivial this will now be to implement:\n\n```\nsage: F = E.minimal_model()\nsage: phi = F.isomorphism_to(E)\nsage: [phi(z) for z in F.gens()]\n[(10/9 : 29/54 : 1)]\n```\n\nWhat could be easier?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3119\n\n",
+    "closed_at": "2008-08-11T02:05:02Z",
     "created_at": "2008-05-07T04:23:04Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "elliptic curves -- implement gens function for non-integral models",
+    "title": "[with patch, with positive review] elliptic curves -- implement gens function for non-integral models",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3119",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_wstein
 
 The following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. 
 

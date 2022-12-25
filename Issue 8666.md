@@ -4,6 +4,7 @@ archive/issues_008666.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nDavid Loeffler ran into this bug:\n\n```\nsage: K.<zeta4> = CyclotomicField(4) \nsage: m = matrix(K, [186]) \nsage: n = matrix(K, [125]) \nsage: m * n \n[-23087] \n```\n\n(See http://groups.google.com/group/sage-devel/browse_thread/thread/4f8633d6acf1c4ef# for the full thread.)\n\nThe issue is that the bound for what modulus the entries can be computed modulo is off by a factor of 2, because it doesn't take the sign into consideration. (Amusingly, this was basically the same fix as in #4823.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/8666\n\n",
+    "closed_at": "2010-04-16T18:41:06Z",
     "created_at": "2010-04-09T22:11:38Z",
     "labels": [
         "component: algebra",

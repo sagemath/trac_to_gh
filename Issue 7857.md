@@ -4,6 +4,7 @@ archive/issues_007857.json:
 ```json
 {
     "body": "Assignee: spancratz\n\nCC:  @robertwb\n\nKeywords: fraction field\n\nTo implement Henrici's algorithms (or the Henrici--Brown algorithms) for arithmetic operations in fraction fields.\n\nSee:\n    http://groups.google.com/group/sage-devel/browse_thread/thread/65064ad496db9c75\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7857\n\n",
+    "closed_at": "2010-01-13T08:10:46Z",
     "created_at": "2010-01-06T16:12:12Z",
     "labels": [
         "component: algebra"

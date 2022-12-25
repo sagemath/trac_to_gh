@@ -4,6 +4,7 @@ archive/issues_009563.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe file `SAGE_DOC/en/tutorial/Makefile` appears to be superfluous.  If this is correct, we can remove it.\n\nSee [comment:ticket:9323:7 this comment] at #9323.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9563\n\n",
+    "closed_at": "2012-04-07T15:10:00Z",
     "created_at": "2010-07-21T10:54:50Z",
     "labels": [
         "component: documentation",

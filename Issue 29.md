@@ -3,10 +3,11 @@
 archive/issues_000029.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: E=EllipticCurve(GF(37),range(5))\n   sage: len(E)\n   Traceback (most recent call last):\n   ...\n   TypeError: len() of unsized object\n```\n\n(also should have trace of frob, charpoly, ap, etc.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/29\n\n",
+    "body": "Assignee: dmharvey\n\n```\nsage: E=EllipticCurve(GF(37),range(5))\n   sage: len(E)\n   Traceback (most recent call last):\n   ...\n   TypeError: len() of unsized object\n```\n\n(also should have trace of frob, charpoly, ap, etc.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/29\n\n",
+    "closed_at": "2008-02-16T21:50:29Z",
     "created_at": "2006-09-12T23:26:11Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
@@ -16,7 +17,7 @@ archive/issues_000029.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: dmharvey
 
 ```
 sage: E=EllipticCurve(GF(37),range(5))

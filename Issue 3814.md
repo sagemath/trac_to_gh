@@ -1,16 +1,17 @@
-# Issue 3814: [with patch, needs quick review] Bug introduced in trac #3800 fix
+# Issue 3814: [with patch, with positive review] Bug introduced in trac #3800 fix
 
 archive/issues_003814.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI introduced a small bug in trac #3800, which John Cremona ran into while running doctests. Here's a chunk of code that illustrates the failure:\n\n```\nsage: chi = DirichletGroup(20).1**3 ; M = ModularSymbols(chi, weight=3, sign=1)\n\nsage: M.cuspidal_subspace()\n```\n\nThis raises an exception, but shouldn't be a problem. Patch coming up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3814\n\n",
+    "closed_at": "2008-08-15T01:33:59Z",
     "created_at": "2008-08-12T11:58:09Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs quick review] Bug introduced in trac #3800 fix",
+    "title": "[with patch, with positive review] Bug introduced in trac #3800 fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3814",
     "user": "https://github.com/craigcitro"

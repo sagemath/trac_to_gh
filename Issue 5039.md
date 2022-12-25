@@ -1,23 +1,26 @@
-# Issue 5039: Create a class for SetPartition (with no s)
+# Issue 5039: Improve DisjointSet documentation
 
 archive/issues_005039.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe Elements of `SetPartitions` of a set A are actually Sets of Sets. But there are specific functionalities I would like for those \"Sets of Sets\". For example : merge the classes of a an b and ask what is the representant of a, where a, b are in A.\n\nRight now, Arnaud Bergeron and I coded and named it as `DisjointSet` and it is available in the sage-combinat tree. The implementation is inspired from :\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\nSee also this thread :\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f\n\nIssue created by migration from https://trac.sagemath.org/ticket/5039\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nPrevious title: Create a class for SetPartition (with no s)\n\nThe Elements of `SetPartitions` of a set A are actually Sets of Sets. But there are specific functionalities I would like for those \"Sets of Sets\". For example : merge the classes of a an b and ask what is the representant of a, where a, b are in A.\n\nRight now, Arnaud Bergeron and I coded and named it as `DisjointSet` and it is available in the sage-combinat tree. The implementation is inspired from :\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\nSee also this thread :\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f\n\nSince this has already been done in #6775, I've recycled this ticket to improve the documentation for `DisjointSet`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5039\n\n",
+    "closed_at": "2013-04-01T10:37:53Z",
     "created_at": "2009-01-20T20:17:01Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
-    "title": "Create a class for SetPartition (with no s)",
+    "title": "Improve DisjointSet documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5039",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @mwhansen
+Assignee: @seblabbe
 
 CC:  sage-combinat
+
+Previous title: Create a class for SetPartition (with no s)
 
 The Elements of `SetPartitions` of a set A are actually Sets of Sets. But there are specific functionalities I would like for those "Sets of Sets". For example : merge the classes of a an b and ask what is the representant of a, where a, b are in A.
 
@@ -27,6 +30,9 @@ http://en.wikipedia.org/wiki/Disjoint_set_data_structure
 
 See also this thread :
 http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f
+
+Since this has already been done in #6775, I've recycled this ticket to improve the documentation for `DisjointSet`.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5039
 

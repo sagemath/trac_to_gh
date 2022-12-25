@@ -6,8 +6,7 @@ archive/issues_004673.json:
     "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nThis is a substitution for #2930 since the idea is good, but the implementation was not the way to go. \n\nThe general idea is that we should have pools for certain objects like CDF to make the creation quicker. Code like that exists for Integers, so it would be nice to generalize them.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4673\n\n",
     "created_at": "2008-12-02T12:59:06Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Introduce generic pools just like for the Integer class",

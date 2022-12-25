@@ -1,9 +1,10 @@
-# Issue 2002: creating a fresh new notebook in sage-2.10.1.rc3 is broken
+# Issue 2002: [with patch, with positive review] creating a fresh new notebook in sage-2.10.1.rc3 is broken
 
 archive/issues_002002.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n[02:20am] william_stein: the notebook doesn't even work in rc3!!\n[02:21am] william_stein: sage: notebook(address=\"sage.math.washington.edu\", port=8389, directory=\"notebook\")\n[02:21am] william_stein: ...\n[02:21am] william_stein: <type 'exceptions.AttributeError'>: 'Notebook' object has no attribute 'set_prettyprint'\n[02:21am] william_stein: This is what happens when making a NEW NOTEBOOK not loading an existing one.\n[02:21am] william_stein: I'm glad I caught this!!\n[02:21am] william_stein: trac ticket coming up\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2002\n\n",
+    "closed_at": "2008-02-01T06:02:19Z",
     "created_at": "2008-01-31T07:25:06Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002002.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "creating a fresh new notebook in sage-2.10.1.rc3 is broken",
+    "title": "[with patch, with positive review] creating a fresh new notebook in sage-2.10.1.rc3 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2002",
     "user": "https://github.com/williamstein"

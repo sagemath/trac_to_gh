@@ -1,9 +1,10 @@
-# Issue 1542: R package doesn't notice if rpy fails to build
+# Issue 1542: [with patch] R package doesn't notice if rpy fails to build
 
 archive/issues_001542.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI think the title says it all; the issue is that no return value is checked, so R doesn't know that anything is wrong. The attached patch just adds a check in spkg-install to make sure everything went okay with the rpy install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1542\n\n",
+    "closed_at": "2007-12-18T02:04:29Z",
     "created_at": "2007-12-17T02:49:05Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001542.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "R package doesn't notice if rpy fails to build",
+    "title": "[with patch] R package doesn't notice if rpy fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1542",
     "user": "https://github.com/craigcitro"

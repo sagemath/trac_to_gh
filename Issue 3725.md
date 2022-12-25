@@ -1,15 +1,16 @@
-# Issue 3725: [with patch, needs trivial review] tiny doc improvement for mq.SR
+# Issue 3725: [with patch, positive review] tiny doc improvement for mq.SR
 
 archive/issues_003725.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  rpw\n\nAdd documentation what the variables in the SR equation systems stand for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3725\n\n",
+    "closed_at": "2008-07-31T03:50:24Z",
     "created_at": "2008-07-25T12:10:06Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs trivial review] tiny doc improvement for mq.SR",
+    "title": "[with patch, positive review] tiny doc improvement for mq.SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3725",
     "user": "https://github.com/malb"

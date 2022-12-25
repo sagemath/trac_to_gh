@@ -1,16 +1,17 @@
-# Issue 4434: [with patch; needs review] hgmerge massively broken on os x
+# Issue 4434: [with patch; positive review] hgmerge massively broken on os x
 
 archive/issues_004434.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen doing a graphical 3-way merge under OS X, hgmerge is missing so one gets infinite loops or errors.  This is a major problem.\n\nThe spkg here:\n\nhttp://sage.math.washington.edu/home/was/patches/mercurial-1.01.p2.spkg\n\ndoes the following:\n\n* Added custom hgmerge script for OS X. For some reason no script at all was \n  copied over, which lead to (1) hg merge silently failing painfully for most\n  users, and (2) for users that run install_scripts, they would get a fork\n  bomb, since hgmerge would call sage -hgmerge which would call hgmerge \n  ad infintum.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4434\n\n",
+    "closed_at": "2008-11-04T13:34:54Z",
     "created_at": "2008-11-04T04:41:23Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch; needs review] hgmerge massively broken on os x",
+    "title": "[with patch; positive review] hgmerge massively broken on os x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4434",
     "user": "https://github.com/williamstein"

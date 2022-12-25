@@ -4,6 +4,7 @@ archive/issues_008506.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nThis ends up affecting, in particular, hashing of elliptic curves and their point sets. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8506\n\n",
+    "closed_at": "2010-04-16T18:45:26Z",
     "created_at": "2010-03-12T01:39:09Z",
     "labels": [
         "component: elliptic curves",

@@ -1,9 +1,10 @@
-# Issue 2440: Doctests for rings/quotient_ring.py
+# Issue 2440: [with patch, with positive review] Doctests for rings/quotient_ring.py
 
 archive/issues_002440.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for rings/quotient_ring.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2440\n\n",
+    "closed_at": "2008-03-09T21:04:33Z",
     "created_at": "2008-03-09T18:38:38Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002440.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Doctests for rings/quotient_ring.py",
+    "title": "[with patch, with positive review] Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2440",
     "user": "https://github.com/cswiercz"

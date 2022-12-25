@@ -1,16 +1,17 @@
-# Issue 1268: [with spkg] new version of MPFI
+# Issue 1268: [with spkg, tested] new version of MPFI
 
 archive/issues_001268.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.\n\nThe new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.spkg\n\ntestall passes on 32-bit x86 linux with the new spkg.\n\nBy the way, if you're going to test it, you can't just install the new spkg, because the old library will still be statically linked in to the relevant extension modules.  You also need to do:\n\n```\ntouch devel/sage/sage/rings/mpfi.pxi\nsage -b\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1268\n\n",
+    "body": "Assignee: @williamstein\n\nI've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.\n\nThe new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.p1.spkg\n\ntestall passes on 32-bit x86 linux with the new spkg.\n\nBy the way, if you're going to test it, you can't just install the new spkg, because the old library will still be statically linked in to the relevant extension modules.  You also need to do:\n\n```\ntouch devel/sage/sage/rings/mpfi.pxi\nsage -b\n```\n\n[EDITED 2007-11-29 to point to new version of spkg]\n\nIssue created by migration from https://trac.sagemath.org/ticket/1268\n\n",
+    "closed_at": "2007-12-01T11:03:23Z",
     "created_at": "2007-11-25T15:26:58Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with spkg] new version of MPFI",
+    "title": "[with spkg, tested] new version of MPFI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1268",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 I've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.
 
-The new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.spkg
+The new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.p1.spkg
 
 testall passes on 32-bit x86 linux with the new spkg.
 
@@ -30,6 +31,8 @@ By the way, if you're going to test it, you can't just install the new spkg, bec
 touch devel/sage/sage/rings/mpfi.pxi
 sage -b
 ```
+
+[EDITED 2007-11-29 to point to new version of spkg]
 
 Issue created by migration from https://trac.sagemath.org/ticket/1268
 

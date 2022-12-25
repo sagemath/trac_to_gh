@@ -4,6 +4,7 @@ archive/issues_007549.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @hivert @jhpalmieri @nthiery mvngu @jasongrout\n\nIn the Sage reference manual, it might be useful to\n\n* List the base classes for a class.\n* List inherited members but not their docstrings.\n* Include docstrings for \"private\" variables (e.g., `__init__`, `_foo`).\n* Include inheritance diagrams.\n\nSphinx extensions of interest: [autodoc](http://sphinx.pocoo.org/ext/autodoc.html), [inheritance_diagram](http://sphinx.pocoo.org/ext/inheritance.html).\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some discussions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7549\n\n",
+    "closed_at": "2010-04-15T05:59:07Z",
     "created_at": "2009-11-28T13:42:38Z",
     "labels": [
         "component: documentation",

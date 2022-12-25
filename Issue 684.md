@@ -3,11 +3,11 @@
 archive/issues_000684.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl.ntl_ZZ'>\nsage: Integer(x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/dmharvey/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/684\n\n",
+    "body": "Assignee: dmharvey\n\n```\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl.ntl_ZZ'>\nsage: Integer(x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/dmharvey/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/684\n\n",
+    "closed_at": "2007-10-19T01:10:20Z",
     "created_at": "2007-09-18T00:49:08Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "NTL integers do not coerce to SAGE integers",
@@ -16,7 +16,7 @@ archive/issues_000684.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: dmharvey
 
 ```
 sage: x = ntl.ZZ(5)

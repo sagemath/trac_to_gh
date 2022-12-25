@@ -1,21 +1,22 @@
-# Issue 1605: conversion of sage vectors to magma vectors not implemented.
+# Issue 1605: [with patch, positive review] conversion of sage vectors to magma vectors not implemented.
 
 archive/issues_001605.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: v = vector([1,2,3])\nsage: magma(v)\nboom ...\n\nIN:_sage_[2] := (1, 2, 3);\nOUT:\n>> _sage_[2] := (1, 2, 3);\n                ^\nRuntime error in elt< ... >: No permutation group context in which to create cycle\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1605\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: v = vector([1,2,3])\nsage: magma(v)\nboom ...\n\nIN:_sage_[2] := (1, 2, 3);\nOUT:\n>> _sage_[2] := (1, 2, 3);\n                ^\nRuntime error in elt< ... >: No permutation group context in which to create cycle\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1605\n\n",
+    "closed_at": "2008-05-25T04:11:58Z",
     "created_at": "2007-12-27T02:45:23Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "conversion of sage vectors to magma vectors not implemented.",
+    "title": "[with patch, positive review] conversion of sage vectors to magma vectors not implemented.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1605",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 ```
 sage: v = vector([1,2,3])

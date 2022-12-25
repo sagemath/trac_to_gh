@@ -4,6 +4,7 @@ archive/issues_009771.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nMake sure that the commands for doctesting the entire Sage library test the same files, in particular when including `long` and `parallel` options.\n\n\nFrom William, at\n\nhttp://ask.sagemath.org/question/35/does-sage-testall-test-long-doctests\n\nLooking at `SAGE_ROOT/local/bin/sage-sage` we see that `sage -testall` calls the script `sage-maketest` which passes all of its options on to `sage -t`. [and thus cannot handle a parallel option]\n\n\nIf you look in `SAGEROOT/makefile` you'll see that `make test` just calls `sage-maketest`. Note that `make testlong` on the other hand has a specific list of directories it tests, defined in `SAGEROOT/makefile`. Right now they match the list in `SAGE_ROOT/local/bin/sage-maketest`. However, if these ever get out of sync, bad things will happen in that `make test` and `make testlong` would suddenly test different code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9772\n\n",
+    "closed_at": "2013-03-07T08:18:49Z",
     "created_at": "2010-08-20T18:12:45Z",
     "labels": [
         "component: doctest coverage",

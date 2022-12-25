@@ -3,7 +3,8 @@
 archive/issues_008533.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri\n\nTicket #8470 adds a collection of thematic tutorials to the Sage standard documentation. We should be able to browse such tutorials from the Sage command line or within the Sage notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8533\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri\n\nTicket #8470 adds a collection of thematic tutorials to the Sage standard documentation. We should be able to browse such tutorials from the Sage command line or within the Sage notebook.\n\n**Notes:** The current ticket needs to be coordinated with #8470. \n\n**Apply:**\n\n* [attachment:trac_8533-browse-doc-take3.patch]\n \nWith the above patch, you should be able to read the documentation from the command line as follows:\n\n```\nsage: faq()\nsage: thematic_tutorials() \nsage: funcprogramming_tutorial() \nsage: sage.groups.tutorial()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8533\n\n",
+    "closed_at": "2022-02-12T18:02:50Z",
     "created_at": "2010-03-14T00:01:21Z",
     "labels": [
         "component: documentation"
@@ -20,6 +21,21 @@ Assignee: mvngu
 CC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri
 
 Ticket #8470 adds a collection of thematic tutorials to the Sage standard documentation. We should be able to browse such tutorials from the Sage command line or within the Sage notebook.
+
+**Notes:** The current ticket needs to be coordinated with #8470. 
+
+**Apply:**
+
+* [attachment:trac_8533-browse-doc-take3.patch]
+ 
+With the above patch, you should be able to read the documentation from the command line as follows:
+
+```
+sage: faq()
+sage: thematic_tutorials() 
+sage: funcprogramming_tutorial() 
+sage: sage.groups.tutorial()
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8533
 

@@ -1,28 +1,47 @@
-# Issue 1470: upgrade maxima.spkg to 5.14.0
+# Issue 1470: [with spkg, positive review] upgrade maxima.spkg to 5.16.2
 
 archive/issues_001470.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMaxima is currently at 5.14.rc1. Once it is release update the spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1470\n\n",
+    "body": "Assignee: mabshoff\n\nMaxima is currently at 5.14.rc1. Once it is release update the spkg.\n\nCheers,\n\nMichael\n\nAnd add a doctest illustrating this:\n\n```\n\nLooks like this is fixed in more recent versions of Maxima.\nWith current 5.16.2:\n\nlimit (log (2 + sqrt (atan (x) * sin (1/x))), x, 0);\n => log(2)\n\n(No questions asked.)\n\nWe can probably thank Dan Gildea for this, as he has done\na lot of extremely valuable bug-fixing work on Maxima.\n\nFWIW\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1470\n\n",
+    "closed_at": "2008-08-22T18:27:03Z",
     "created_at": "2007-12-12T09:27:32Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "upgrade maxima.spkg to 5.14.0",
+    "title": "[with spkg, positive review] upgrade maxima.spkg to 5.16.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1470",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Maxima is currently at 5.14.rc1. Once it is release update the spkg.
 
 Cheers,
 
 Michael
+
+And add a doctest illustrating this:
+
+```
+
+Looks like this is fixed in more recent versions of Maxima.
+With current 5.16.2:
+
+limit (log (2 + sqrt (atan (x) * sin (1/x))), x, 0);
+ => log(2)
+
+(No questions asked.)
+
+We can probably thank Dan Gildea for this, as he has done
+a lot of extremely valuable bug-fixing work on Maxima.
+
+FWIW
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1470
 

@@ -1,15 +1,16 @@
-# Issue 6917: [with patch] Minkowsky sum sould work with polyhedra and not only with polytopes
+# Issue 6917: Minkowsky sum should work with polyhedra and not only with polytopes
 
 archive/issues_006917.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nThe attached patch makes Minkowsky sum handle unbounded polyhedra.\n\nHowever, as a side effect, it makes bug #6915 blatant, thus doctests don't pass anymore.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6917\n\n",
+    "closed_at": "2010-04-03T14:43:09Z",
     "created_at": "2009-09-10T12:48:39Z",
     "labels": [
         "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "[with patch] Minkowsky sum sould work with polyhedra and not only with polytopes",
+    "title": "Minkowsky sum should work with polyhedra and not only with polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6917",
     "user": "https://trac.sagemath.org/admin/accounts/users/sbarthelemy"

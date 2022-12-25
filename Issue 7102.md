@@ -1,22 +1,23 @@
-# Issue 7102: R.py doctest fails for non-english locale
+# Issue 7102: [with patch, positive review] R.py doctest fails for non-english locale
 
 archive/issues_007102.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTesting Sage-4.1.2-alpha4, I saw that the old failure from #6379 somehow was resurrected (probably by using some new version of the R package that has changed its internationalized warning messages). To reproduce the failure, do something (or nothing, see also #6379) like\n\n```\nexport LANG=de_DE.UTF-8\n```\nfrom a (sage -sh) shell and then you'll get:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/r.py\"             \n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.2.alpha4/devel/sage/sage/interfaces/r.py\", line 549:\n    sage: r.library('foobar')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ImportError: ...\nGot nothing\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.2.alpha4/devel/sage/sage/interfaces/r.py\", line 839:\n    sage: r.completions('tes')\nExpected:\n    ['testInheritedMethods', 'testPlatformEquivalence', 'testVirtual']\nGot:\n    ['testInheritedMethods', 'testInheritedMethods', 'testPlatformEquivalence', 'testPlatformEquivalence', 'testVirtual', 'testVirtual']\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_17\n   1 of   4 in __main__.example_34\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/georgweber/.sage//tmp/.doctest_r.py\n         [7.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/interfaces/r.py\"\n```\nFortunately, I fiddled around with this file and this bug more than once (see also #6594, #6646), so I knew where to look. Hopefully, this zombie is put down to rest ... \n\nIssue created by migration from https://trac.sagemath.org/ticket/7102\n\n",
+    "body": "Assignee: GeorgSWeber\n\nTesting Sage-4.1.2-alpha4, I saw that the old failure from #6379 somehow was resurrected (probably by using some new version of the R package that has changed its internationalized warning messages). To reproduce the failure, do something (or nothing, see also #6379) like\n\n```\nexport LANG=de_DE.UTF-8\n```\nfrom a (sage -sh) shell and then you'll get:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/r.py\"             \n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.2.alpha4/devel/sage/sage/interfaces/r.py\", line 549:\n    sage: r.library('foobar')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ImportError: ...\nGot nothing\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.2.alpha4/devel/sage/sage/interfaces/r.py\", line 839:\n    sage: r.completions('tes')\nExpected:\n    ['testInheritedMethods', 'testPlatformEquivalence', 'testVirtual']\nGot:\n    ['testInheritedMethods', 'testInheritedMethods', 'testPlatformEquivalence', 'testPlatformEquivalence', 'testVirtual', 'testVirtual']\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_17\n   1 of   4 in __main__.example_34\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/georgweber/.sage//tmp/.doctest_r.py\n         [7.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/interfaces/r.py\"\n```\nFortunately, I fiddled around with this file and this bug more than once (see also #6594, #6646), so I knew where to look. Hopefully, this zombie is put down to rest ... \n\nIssue created by migration from https://trac.sagemath.org/ticket/7102\n\n",
+    "closed_at": "2009-10-05T03:00:57Z",
     "created_at": "2009-10-03T19:14:40Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "R.py doctest fails for non-english locale",
+    "title": "[with patch, positive review] R.py doctest fails for non-english locale",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7102",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
-Assignee: tbd
+Assignee: GeorgSWeber
 
 Testing Sage-4.1.2-alpha4, I saw that the old failure from #6379 somehow was resurrected (probably by using some new version of the R package that has changed its internationalized warning messages). To reproduce the failure, do something (or nothing, see also #6379) like
 

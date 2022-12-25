@@ -4,6 +4,7 @@ archive/issues_008993.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: polynomial quotient ring, singular\n\nCurrently there is no representation of univariate polynomial quotient rings in the Singular interface; it was only implemented for the multivariate case.\n\nThe attached patch implements it:\n\n```\nsage: P.<x> = QQ[]\nsage: Q.<xi> = P.quo([(x^2+1)])\nsage: singular(xi)\nxi\nsage: singular(Q)\n//   characteristic : 0\n//   number of vars : 1\n//        block   1 : ordering lp\n//                  : names    xi\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=xi^2+1\nsage: (singular(xi)*singular(xi)).NF('std(0)')\n-1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8993\n\n",
+    "closed_at": "2010-07-22T23:51:19Z",
     "created_at": "2010-05-19T16:48:31Z",
     "labels": [
         "component: interfaces"

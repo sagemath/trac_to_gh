@@ -3,7 +3,8 @@
 archive/issues_009598.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\nThe convex optimization Python module cvxopt and the linear programming library GLPK are both standard packages in Sage 4.5.  The module cvxopt includes a python interface to GLPK, but currently cvxopt is unaware of the presence of GLPK and does not compile or include that submodule: \n\n```\nsage: from cvxopt import glpk\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9598\n\n",
+    "body": "Assignee: @NathanDunfield\n\nCC:  @nathanncohen\n\nThe convex optimization Python module cvxopt and the linear programming library GLPK are both standard packages in Sage 4.5.  The module cvxopt includes a python interface to GLPK, but currently cvxopt is unaware of the presence of GLPK and does not compile or include that submodule: \n\n```\nsage: from cvxopt import glpk\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9598\n\n",
+    "closed_at": "2010-12-03T15:20:16Z",
     "created_at": "2010-07-26T00:25:33Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_009598.json:
     "user": "https://github.com/NathanDunfield"
 }
 ```
-Assignee: tbd
+Assignee: @NathanDunfield
 
 CC:  @nathanncohen
 

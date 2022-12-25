@@ -4,6 +4,7 @@ archive/issues_009941.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @qed777\n\nWith the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/cell_complex.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py\", line 470:\n    sage: S2.homology(dim=2, generators=True)  # optional - CHomP\nExpected:\n    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])\nGot:\n    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9942\n\n",
+    "closed_at": "2011-01-19T22:22:01Z",
     "created_at": "2010-09-18T18:04:01Z",
     "labels": [
         "component: algebraic topology",

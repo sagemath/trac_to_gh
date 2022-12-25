@@ -1,22 +1,24 @@
-# Issue 4781: creation of relative number fields when defining polynomial not integral is broken
+# Issue 4781: creation of relative number fields when defining polynomial not integral no longer broken
 
 archive/issues_004781.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: L.<b> = NumberField(K['y'].0^2 + 1/2)\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in NumberField(polynomial, name, check, names, cache, embedding)\n    374 \n    375     if isinstance(R, NumberField_generic):\n--> 376         S = R.extension(polynomial, name, check=check)\n    377         if cache:\n    378             _nf_cache[key] = weakref.ref(S)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in extension(self, poly, name, names, check, embedding)\n   2570         if name is None:\n   2571             raise TypeError, \"the variable name must be specified.\"\n-> 2572         return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n   2573 \n   2574     def factor(self, n):\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in __init__(self, base, polynomial, name, latex_name, names, check, embedding)\n   4567 \n   4568         self.__pari_relative_polynomial = pari(str(polynomial_y))\n-> 4569         self.__rnf = self.__base_nf.rnfinit(self.__pari_relative_polynomial)\n   4570         \n   4571         self.__base_field = base\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\nPariError: impossible inverse modulo:  (36)\n> /Users/wstein/sage/build/sage-3.2.2.alpha0/gen.pyx(8050)sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4781\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: L.<b> = NumberField(K['y'].0^2 + 1/2)\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in NumberField(polynomial, name, check, names, cache, embedding)\n    374 \n    375     if isinstance(R, NumberField_generic):\n--> 376         S = R.extension(polynomial, name, check=check)\n    377         if cache:\n    378             _nf_cache[key] = weakref.ref(S)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in extension(self, poly, name, names, check, embedding)\n   2570         if name is None:\n   2571             raise TypeError, \"the variable name must be specified.\"\n-> 2572         return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n   2573 \n   2574     def factor(self, n):\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in __init__(self, base, polynomial, name, latex_name, names, check, embedding)\n   4567 \n   4568         self.__pari_relative_polynomial = pari(str(polynomial_y))\n-> 4569         self.__rnf = self.__base_nf.rnfinit(self.__pari_relative_polynomial)\n   4570         \n   4571         self.__base_field = base\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\nPariError: impossible inverse modulo:  (36)\n> /Users/wstein/sage/build/sage-3.2.2.alpha0/gen.pyx(8050)sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4781\n\n",
+    "closed_at": "2009-07-22T18:20:55Z",
     "created_at": "2008-12-13T03:16:45Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "creation of relative number fields when defining polynomial not integral is broken",
+    "title": "creation of relative number fields when defining polynomial not integral no longer broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4781",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 ```
 sage: K.<a> = NumberField(x^2 + 1)

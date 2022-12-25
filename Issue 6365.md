@@ -3,7 +3,8 @@
 archive/issues_006365.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: F = GF(2)\nsage: P.<x> = F[]\nsage: f = 1+x+x^4\nsage: K.<a> = F.extension(f)\nTraceback (most recent call last):\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6365\n\n",
+    "body": "Assignee: somebody\n\nKeywords: rd2\n\n```\nsage: F = GF(2)\nsage: P.<x> = F[]\nsage: f = 1+x+x^4\nsage: K.<a> = F.extension(f)\nTraceback (most recent call last):\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6365\n\n",
+    "closed_at": "2012-03-21T11:33:48Z",
     "created_at": "2009-06-20T15:00:13Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,6 +18,8 @@ archive/issues_006365.json:
 }
 ```
 Assignee: somebody
+
+Keywords: rd2
 
 ```
 sage: F = GF(2)

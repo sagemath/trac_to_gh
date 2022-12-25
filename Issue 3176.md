@@ -1,16 +1,17 @@
-# Issue 3176: add 64 bit OSX build support to sqlite
+# Issue 3176: [with spkg, with positivereview] add 64 bit OSX build support to sqlite
 
 archive/issues_003176.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3176\n\n",
+    "closed_at": "2008-05-19T03:00:14Z",
     "created_at": "2008-05-13T02:21:33Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to sqlite",
+    "title": "[with spkg, with positivereview] add 64 bit OSX build support to sqlite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3176",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

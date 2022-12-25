@@ -1,9 +1,10 @@
-# Issue 2988: notebook -- issues with the CSS for the print display
+# Issue 2988: [with patch; emphatic positive review] notebook -- issues with the CSS for the print display
 
 archive/issues_002988.json:
 ```json
 {
     "body": "Assignee: boothby\n\nMabshoff -- sorry I have to put this in as a 3.0 block (and fix it now).  It won't affect anything doctested.  I've had several professors (including me!) complain about issues with the notebook css and printing.  And, I told them I would fix this for 3.0.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2988\n\n",
+    "closed_at": "2008-04-22T04:36:56Z",
     "created_at": "2008-04-21T14:24:04Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002988.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- issues with the CSS for the print display",
+    "title": "[with patch; emphatic positive review] notebook -- issues with the CSS for the print display",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2988",
     "user": "https://github.com/williamstein"

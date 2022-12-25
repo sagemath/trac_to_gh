@@ -1,50 +1,29 @@
-# Issue 6327: optional doctest failure -- failure using pari C library
+# Issue 6327: Document PARI's ellpow() function for CM curves
 
 archive/issues_006327.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhat's up with this?\n\n```\nsage -t -long --optional devel/sage/sage/libs/pari/gen.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/libs/pari/gen.pyx\", line 5801:\n    sage: e.ellpow([0,0], I+1) # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_177[4]>\", line 1, in <module>\n        e.ellpow([Integer(0),Integer(0)], I+Integer(1)) # optional###line 5801:\n    sage: e.ellpow([0,0], I+1) # optional\n      File \"gen.pyx\", line 9170, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44129)\n        raise PariError, errno\n    PariError: sorry, (15)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_177\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wst\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6327\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: pari ellpow complex multiplication elliptic curve\n\nThe `ellpow` function from PARI also works for CM curves, but it is documented that it doesn't.\n\nDependency: #9931\n\nIssue created by migration from https://trac.sagemath.org/ticket/6327\n\n",
+    "closed_at": "2010-09-29T04:24:51Z",
     "created_at": "2009-06-16T15:04:26Z",
     "labels": [
-        "component: optional packages",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "optional doctest failure -- failure using pari C library",
+    "title": "Document PARI's ellpow() function for CM curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6327",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: mvngu
 
-What's up with this?
+Keywords: pari ellpow complex multiplication elliptic curve
 
-```
-sage -t -long --optional devel/sage/sage/libs/pari/gen.pyx
-**********************************************************************
-File "/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/libs/pari/gen.pyx", line 5801:
-    sage: e.ellpow([0,0], I+1) # optional
-Exception raised:
-    Traceback (most recent call last):
-      File "/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py", line 1231, in run_one_test
-        self.run_one_example(test, example, filename, compileflags)
-      File "/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py", line 38, in run_one_example
-        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)
-      File "/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py", line 1172, in run_one_example
-        compileflags, 1) in test.globs
-      File "<doctest __main__.example_177[4]>", line 1, in <module>
-        e.ellpow([Integer(0),Integer(0)], I+Integer(1)) # optional###line 5801:
-    sage: e.ellpow([0,0], I+1) # optional
-      File "gen.pyx", line 9170, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44129)
-        raise PariError, errno
-    PariError: sorry, (15)
-**********************************************************************
-1 items had failures:
-   1 of   5 in __main__.example_177
-***Test Failed*** 1 failures.
-For whitespace errors, see the file /home/wst
-```
+The `ellpow` function from PARI also works for CM curves, but it is documented that it doesn't.
+
+Dependency: #9931
 
 Issue created by migration from https://trac.sagemath.org/ticket/6327
 

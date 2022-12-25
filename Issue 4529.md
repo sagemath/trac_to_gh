@@ -3,7 +3,8 @@
 archive/issues_004529.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: plot log scale\n\nCurrently plot() has no option to use logarithmic scales.\n\nOne workaround is to use matplotlib directly, with its semilogy(), semilogx() and loglog() functions, but that wouldn't produce plots with the customisations implemented in sage.\nAnother workaround is messing with the plot figure like:\n\n```python\nimport pylab\np=plot(x,marker='.')\nf=pylab.figure()\nf.gca().set_xscale('log')\np.save(figure=f)\n```\n\nBut that creates two problems:\n\n* The first problem is that the adaptive choosing of points just considers linear scale, so the points get too much spaced apart in the beginning of the plot and too close in the end.\n* The second problem relates to the axis, which, for the same reason, isn't located right.\n\nAlso, this requires the user to know how to deal with figures, which is not directly exposed by sage.\n\nThere are some possibilities to fix that:\n1. Make plot() detect if the figure changes the scales and modify the adaptive algorithm and the axis codes accordingly\n2. Create a kwarg to tell plot() to implement the scale-change internally\n3. Create other functions to use loglog(), semilogx() and semilogy()\n4. Many (or all) of the above together, since they aren't mutually exclusive\n\nFrom what I noticed, Mathematica implements the separate functions way, but it may be better to fix the issue in plot() itself and if the other functions are wanted, just make it so that they call plot() with the correct arguments\n\nIssue created by migration from https://trac.sagemath.org/ticket/4529\n\n",
+    "body": "Assignee: ronanpaixao\n\nKeywords: plot log scale\n\nAttached is a patch which introduces log scale to `Graphics()` class.\n\nDepends on #12974.\n\nApply \n* [attachment:trac_4529-patch1.patch]\n* [attachment:trac_4529-patch2.patch]\n* [attachment:trac_4529-patch3.patch]\n* [attachment:trac_4529-patch4.patch]\n* [attachment:trac_4529-patch5.patch]\n* [attachment:trac_4529-patch6.patch]\n\n---\n**OLD DISCUSSION BELOW :)**\n\nCurrently plot() has no option to use logarithmic scales.\n\nOne workaround is to use matplotlib directly, with its semilogy(), semilogx() and loglog() functions, but that wouldn't produce plots with the customisations implemented in sage.\nAnother workaround is messing with the plot figure like:\n\n```python\nimport pylab\np=plot(x,marker='.')\nf=pylab.figure()\nf.gca().set_xscale('log')\np.save(figure=f)\n```\n\nBut that creates two problems:\n\n* The first problem is that the adaptive choosing of points just considers linear scale, so the points get too much spaced apart in the beginning of the plot and too close in the end.\n* The second problem relates to the axis, which, for the same reason, isn't located right.\n\nAlso, this requires the user to know how to deal with figures, which is not directly exposed by sage.\n\nThere are some possibilities to fix that:\n1. Make plot() detect if the figure changes the scales and modify the adaptive algorithm and the axis codes accordingly\n2. Create a kwarg to tell plot() to implement the scale-change internally\n3. Create other functions to use loglog(), semilogx() and semilogy()\n4. Many (or all) of the above together, since they aren't mutually exclusive\n\nFrom what I noticed, Mathematica implements the separate functions way, but it may be better to fix the issue in plot() itself and if the other functions are wanted, just make it so that they call plot() with the correct arguments\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4529\n\n",
+    "closed_at": "2012-07-07T22:28:35Z",
     "created_at": "2008-11-15T18:59:14Z",
     "labels": [
         "component: graphics"
@@ -15,9 +16,24 @@ archive/issues_004529.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ronanpaixao"
 }
 ```
-Assignee: somebody
+Assignee: ronanpaixao
 
 Keywords: plot log scale
+
+Attached is a patch which introduces log scale to `Graphics()` class.
+
+Depends on #12974.
+
+Apply 
+* [attachment:trac_4529-patch1.patch]
+* [attachment:trac_4529-patch2.patch]
+* [attachment:trac_4529-patch3.patch]
+* [attachment:trac_4529-patch4.patch]
+* [attachment:trac_4529-patch5.patch]
+* [attachment:trac_4529-patch6.patch]
+
+---
+**OLD DISCUSSION BELOW :)**
 
 Currently plot() has no option to use logarithmic scales.
 
@@ -46,6 +62,8 @@ There are some possibilities to fix that:
 4. Many (or all) of the above together, since they aren't mutually exclusive
 
 From what I noticed, Mathematica implements the separate functions way, but it may be better to fix the issue in plot() itself and if the other functions are wanted, just make it so that they call plot() with the correct arguments
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4529
 

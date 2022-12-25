@@ -1,9 +1,10 @@
-# Issue 993: Pari's gp interpreter has built-in library search path, defeating Sage mechanisms
+# Issue 993: [with spkg] Pari's gp interpreter has built-in library search path, defeating Sage mechanisms
 
 archive/issues_000993.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPari uses \"-rpath\" (or its equivalent) when building gp, to hardcode a library search path.  This search path is used before the $LD_LIBRARY_PATH set by Sage.  The hardcoded search path includes $SAGE_ROOT/local/lib:/usr/lib .\n\nNormally, this is harmless (and perhaps slightly beneficial, since it means you can run $SAGE_ROOT/local/bin/gp directly, without having the SAGE environment variables set).  However, if you move your Sage installation tree, the hardcoded search path ensures that gp will search /usr/lib before the Sage libraries.  If your /usr/lib has libgmp or libpari-gmp libraries, these will be used instead of Sage's versions, leading (in my case) to one actual doctest failure (where the value of gp(log2), as tested in constants.py, was rounded correctly, rather than the slightly incorrect rounding enshrined in the doctest).\n\nIssue created by migration from https://trac.sagemath.org/ticket/993\n\n",
+    "body": "Assignee: cwitty\n\nPari uses \"-rpath\" (or its equivalent) when building gp, to hardcode a library search path.  This search path is used before the $LD_LIBRARY_PATH set by Sage.  The hardcoded search path includes $SAGE_ROOT/local/lib:/usr/lib .\n\nNormally, this is harmless (and perhaps slightly beneficial, since it means you can run $SAGE_ROOT/local/bin/gp directly, without having the SAGE environment variables set).  However, if you move your Sage installation tree, the hardcoded search path ensures that gp will search /usr/lib before the Sage libraries.  If your /usr/lib has libgmp or libpari-gmp libraries, these will be used instead of Sage's versions, leading (in my case) to one actual doctest failure (where the value of gp(log2), as tested in constants.py, was rounded correctly, rather than the slightly incorrect rounding enshrined in the doctest).\n\nIssue created by migration from https://trac.sagemath.org/ticket/993\n\n",
+    "closed_at": "2007-11-01T10:41:21Z",
     "created_at": "2007-10-25T05:01:15Z",
     "labels": [
         "component: packages: standard",
@@ -11,13 +12,13 @@ archive/issues_000993.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "Pari's gp interpreter has built-in library search path, defeating Sage mechanisms",
+    "title": "[with spkg] Pari's gp interpreter has built-in library search path, defeating Sage mechanisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/993",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
 Pari uses "-rpath" (or its equivalent) when building gp, to hardcode a library search path.  This search path is used before the $LD_LIBRARY_PATH set by Sage.  The hardcoded search path includes $SAGE_ROOT/local/lib:/usr/lib .
 

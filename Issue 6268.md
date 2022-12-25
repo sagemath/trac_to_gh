@@ -1,22 +1,23 @@
-# Issue 6268: Typesetting of sec(x), csc(x), cot(x) are broken
+# Issue 6268: [with patch, positive review] Typesetting of sec(x), csc(x), cot(x) are broken
 
 archive/issues_006268.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @ncalexan\n\nTypesettings of sec(x), csc(x), cot(x) are broken. It puts an\nextra \"\\mbox\" around them. However, typesetting for sin(x), \ncos(x), tan(x) works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6268\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @ncalexan\n\nTypesettings of sec(x), csc(x), cot(x) are broken. It puts an\nextra \"\\mbox\" around them. However, typesetting for sin(x), \ncos(x), tan(x) works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6268\n\n",
+    "closed_at": "2009-06-14T22:21:33Z",
     "created_at": "2009-06-12T15:25:27Z",
     "labels": [
-        "component: misc",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Typesetting of sec(x), csc(x), cot(x) are broken",
+    "title": "[with patch, positive review] Typesetting of sec(x), csc(x), cot(x) are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6268",
     "user": "https://github.com/golam-m-hossain"
 }
 ```
-Assignee: cwitty
+Assignee: @burcin
 
 CC:  @ncalexan
 

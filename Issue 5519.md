@@ -1,15 +1,16 @@
-# Issue 5519: Irreducibility test is slow for polynomials over GF(2)
+# Issue 5519: [with patch, positive review] Irreducibility test is slow for polynomials over GF(2)
 
 archive/issues_005519.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @malb @zimmermann6\n\nThe patch calls the NTL irreducibility test directly instead of depending on a generic algorithm.  It's not blazingly fast (e.g. Magma), but it's an improvement.\n\n  R.<x> = GF(2)[]\n  timeit('R.random_element(100).is_irreducible()')\n  # before the change\n  # 25 loops, best of 3: 16.2 ms per loop\n  # after the change\n  # 25 loops, best of 3: 3.36 ms per loop\n\n  timeit('R.random_element(512).is_irreducible()')\n  # before the change\n  # 5 loops, best of 3: 323 ms per loop\n  # after the change\n  # 25 loops, best of 3: 18.7 ms per loop\n\nIssue created by migration from https://trac.sagemath.org/ticket/5519\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @malb @zimmermann6\n\nThe patch calls the NTL irreducibility test directly instead of depending on a generic algorithm.  It's not blazingly fast (e.g. Magma), but it's an improvement.\n\n```\n  R.<x> = GF(2)[]\n  timeit('R.random_element(100).is_irreducible()')\n  # before the change\n  # 25 loops, best of 3: 16.2 ms per loop\n  # after the change\n  # 25 loops, best of 3: 3.36 ms per loop\n\n  timeit('R.random_element(512).is_irreducible()')\n  # before the change\n  # 5 loops, best of 3: 323 ms per loop\n  # after the change\n  # 25 loops, best of 3: 18.7 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5519\n\n",
+    "closed_at": "2009-03-23T20:17:40Z",
     "created_at": "2009-03-14T20:43:10Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Irreducibility test is slow for polynomials over GF(2)",
+    "title": "[with patch, positive review] Irreducibility test is slow for polynomials over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5519",
     "user": "https://github.com/rhinton"
@@ -21,6 +22,7 @@ CC:  @malb @zimmermann6
 
 The patch calls the NTL irreducibility test directly instead of depending on a generic algorithm.  It's not blazingly fast (e.g. Magma), but it's an improvement.
 
+```
   R.<x> = GF(2)[]
   timeit('R.random_element(100).is_irreducible()')
   # before the change
@@ -33,6 +35,8 @@ The patch calls the NTL irreducibility test directly instead of depending on a g
   # 5 loops, best of 3: 323 ms per loop
   # after the change
   # 25 loops, best of 3: 18.7 ms per loop
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5519
 

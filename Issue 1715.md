@@ -1,15 +1,16 @@
-# Issue 1715: [with patch, needs review] PolyBoRi pickling/hasing
+# Issue 1715: [with patch, positive review] PolyBoRi pickling/hashing
 
 archive/issues_001715.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin mabshoff\n\nPickling and hashing of PolyBori rings and polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1715\n\n",
+    "closed_at": "2008-01-17T14:28:21Z",
     "created_at": "2008-01-07T15:41:40Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] PolyBoRi pickling/hasing",
+    "title": "[with patch, positive review] PolyBoRi pickling/hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1715",
     "user": "https://github.com/malb"

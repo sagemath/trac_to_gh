@@ -1,27 +1,29 @@
-# Issue 644: (sin + cos)(1) does not work
+# Issue 644: [with patch] (sin + cos)(1) does not work
 
 archive/issues_000644.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nBoth sin and cos are functions of one (undetermined) variable, and can be called, but when one performs arithmetic on them this changes. \n\nMaybe there should be a CallableSymbolicExpressionRing with an unnamed variable that coerces into any CallableSymbolicExpressionRing with a specified variable name? \n\nsage: f = sin\nsage: g = cos\nsage: f(1)\nsin(1)\nsage: g(1)\ncos(1)\nsage: h = f+g\nsage: h(1)\nsin + cos # should be sin(1)+cos(1)\nsage: f = 3*sin\nsage: f(1)\n3*sin # should be 3*sin(1)\n\nIssue created by migration from https://trac.sagemath.org/ticket/644\n\n",
+    "body": "Assignee: @mwhansen\n\nBoth sin and cos are functions of one (undetermined) variable, and can be called, but when one performs arithmetic on them this changes. \n\nMaybe there should be a CallableSymbolicExpressionRing with an unnamed variable that coerces into any CallableSymbolicExpressionRing with a specified variable name? \n\n```\nsage: f = sin\nsage: g = cos\nsage: f(1)\nsin(1)\nsage: g(1)\ncos(1)\nsage: h = f+g\nsage: h(1)\nsin + cos # should be sin(1)+cos(1)\nsage: f = 3*sin\nsage: f(1)\n3*sin # should be 3*sin(1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/644\n\n",
+    "closed_at": "2007-12-01T16:16:45Z",
     "created_at": "2007-09-12T19:00:58Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "(sin + cos)(1) does not work",
+    "title": "[with patch] (sin + cos)(1) does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/644",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Both sin and cos are functions of one (undetermined) variable, and can be called, but when one performs arithmetic on them this changes. 
 
 Maybe there should be a CallableSymbolicExpressionRing with an unnamed variable that coerces into any CallableSymbolicExpressionRing with a specified variable name? 
 
+```
 sage: f = sin
 sage: g = cos
 sage: f(1)
@@ -34,6 +36,7 @@ sin + cos # should be sin(1)+cos(1)
 sage: f = 3*sin
 sage: f(1)
 3*sin # should be 3*sin(1)
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/644
 

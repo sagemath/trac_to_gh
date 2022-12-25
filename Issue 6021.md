@@ -1,15 +1,16 @@
-# Issue 6021: Implement period lattices for elliptic curves over CC
+# Issue 6021: [with patch, positive review] Implement period lattices for elliptic curves over CC
 
 archive/issues_006021.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: elliptic curve periods\n\nFor elliptic curves over number fields we currently only support the period lattice for real embeddings.  here we will implement the same for complex embeddings too (using the complex AGM method to compute the basis).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6021\n\n",
+    "closed_at": "2009-06-03T20:56:34Z",
     "created_at": "2009-05-11T14:10:05Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Implement period lattices for elliptic curves over CC",
+    "title": "[with patch, positive review] Implement period lattices for elliptic curves over CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6021",
     "user": "https://github.com/JohnCremona"

@@ -1,22 +1,23 @@
-# Issue 788: a doctest change: random low order bits
+# Issue 788: [with patch; needs review] fix "random low order bits" doctests to use "..."
 
 archive/issues_000788.json:
 ```json
 {
-    "body": "Assignee: failure\n\nAll doctests in sage like this\n\n```\n sage: numerical thing   # random low order bits\n 1.234283409283408238 + 19190.9393*I\n```\nshould be changed to\n\n```\n sage: numerical thing\n 1.234283409283408... + 19190.93...*I\n```\nwhere the ... goes for the ambiguity in low order bits. \n\nThere are 44 such cases (at least).  See them by typing\n\n```\nsage: search_src('random low')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/788\n\n",
+    "body": "Assignee: anakha\n\nAll doctests in sage like this\n\n```\n sage: numerical thing   # random low order bits\n 1.234283409283408238 + 19190.9393*I\n```\nshould be changed to\n\n```\n sage: numerical thing\n 1.234283409283408... + 19190.93...*I\n```\nwhere the ... goes for the ambiguity in low order bits. \n\nThere are 44 such cases (at least).  See them by typing\n\n```\nsage: search_src('random low')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/788\n\n",
+    "closed_at": "2008-10-30T04:26:53Z",
     "created_at": "2007-10-02T14:23:57Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "a doctest change: random low order bits",
+    "title": "[with patch; needs review] fix \"random low order bits\" doctests to use \"...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/788",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: anakha
 
 All doctests in sage like this
 

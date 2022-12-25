@@ -1,22 +1,23 @@
-# Issue 1119: EllipticCurve.random_element for char=2
+# Issue 1119: [with patch, positive review] EllipticCurve.random_element for char=2
 
 archive/issues_001119.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: k.<a> = GF(2^5)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: E\nElliptic Curve defined by y^2 + (a^3+1)*x*y + (a^4+a^3+a)*y = x^3 +\n(a^4+a^3+a^2+a)*x^2 + (a^4+a^2+a+1)*x + a^2 over Finite Field in a of\nsize 2^5\nsage: E.random_element()\nException (click to the left for traceback):\n...\nZeroDivisionError: division by zero in finite field.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1119\n\n",
+    "body": "Assignee: @malb\n\nThis should work:\n\n```\nsage: k.<a> = GF(2^5)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: E\nElliptic Curve defined by y^2 + (a^3+1)*x*y + (a^4+a^3+a)*y = x^3 +\n(a^4+a^3+a^2+a)*x^2 + (a^4+a^2+a+1)*x + a^2 over Finite Field in a of\nsize 2^5\nsage: E.random_element()\nException (click to the left for traceback):\n...\nZeroDivisionError: division by zero in finite field.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1119\n\n",
+    "closed_at": "2007-12-15T05:50:13Z",
     "created_at": "2007-11-07T15:46:20Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "EllipticCurve.random_element for char=2",
+    "title": "[with patch, positive review] EllipticCurve.random_element for char=2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1119",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 This should work:
 

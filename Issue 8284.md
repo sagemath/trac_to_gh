@@ -3,10 +3,12 @@
 archive/issues_008284.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nHello !!!\n\nThis very small patch creates an independent generator for IntervalGraph, which is then called by the old RandomIntervalGraph function... The function is_chordal is fixed, as it was not exploring the whole graph when it was not connected.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8284\n\n",
+    "body": "Assignee: @nathanncohen\n\nHello !!!\n\nThis very small patch creates an independent generator for IntervalGraph, which is then called by the old RandomIntervalGraph function... The function is_chordal is fixed, as it was not exploring the whole graph when it was not connected.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8284\n\n",
+    "closed_at": "2010-06-29T16:42:09Z",
     "created_at": "2010-02-16T18:11:03Z",
     "labels": [
         "component: graph theory",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -16,7 +18,7 @@ archive/issues_008284.json:
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: @rlmill
+Assignee: @nathanncohen
 
 Hello !!!
 

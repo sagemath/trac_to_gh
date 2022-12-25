@@ -3,7 +3,7 @@
 archive/issues_009587.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nLet Sage schedule all the talks at a conference (or sage days) via an object oriented framework using the MILP solver infrastructure. I.e. specify dependencies between the talks when they build upon each other and pay attention to avoid scheduling talks of the same topic at the same time if there is more than one session room.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9587\n\n",
+    "body": "Assignee: jason, jkantor\n\nLet Sage schedule all the talks at a conference (or sage days) via an object oriented framework using the MILP solver infrastructure. I.e. specify dependencies between the talks when they build upon each other and pay attention to avoid scheduling talks of the same topic at the same time if there is more than one session room.\n\nDepends on #9586\n\nIssue created by migration from https://trac.sagemath.org/ticket/9587\n\n",
     "created_at": "2010-07-23T10:25:11Z",
     "labels": [
         "component: numerical"
@@ -18,6 +18,8 @@ archive/issues_009587.json:
 Assignee: jason, jkantor
 
 Let Sage schedule all the talks at a conference (or sage days) via an object oriented framework using the MILP solver infrastructure. I.e. specify dependencies between the talks when they build upon each other and pay attention to avoid scheduling talks of the same topic at the same time if there is more than one session room.
+
+Depends on #9586
 
 Issue created by migration from https://trac.sagemath.org/ticket/9587
 

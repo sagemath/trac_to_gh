@@ -1,9 +1,10 @@
-# Issue 4481: Fix cached_function to accept functions without func_doc or func_name (with patch)
+# Issue 4481: [with patch, positive review] Fix cached_function to accept functions without func_doc or func_name
 
 archive/issues_004481.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nFix cached_function to accept functions without func_doc or func_name (with patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4481\n\n",
+    "body": "Assignee: @nthiery\n\nFix cached_function to accept functions without func_doc or func_name (with patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4481\n\n",
+    "closed_at": "2008-11-29T04:18:38Z",
     "created_at": "2008-11-09T14:13:04Z",
     "labels": [
         "component: misc",
@@ -11,13 +12,13 @@ archive/issues_004481.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Fix cached_function to accept functions without func_doc or func_name (with patch)",
+    "title": "[with patch, positive review] Fix cached_function to accept functions without func_doc or func_name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4481",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: cwitty
+Assignee: @nthiery
 
 Fix cached_function to accept functions without func_doc or func_name (with patch)
 

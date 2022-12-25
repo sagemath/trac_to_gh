@@ -4,6 +4,7 @@ archive/issues_007500.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUpload or create a data file named, e.g., `foo & bar`.  The name is truncated to  `foo ` on the file's \"download or delete\" page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7500\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-11-20T07:08:19Z",
     "labels": [
         "component: notebook",

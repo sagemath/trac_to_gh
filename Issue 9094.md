@@ -1,16 +1,16 @@
-# Issue 9094: is_square and sqrt for fraction fields
+# Issue 9094: is_square and sqrt for polynomials and fraction fields
 
 archive/issues_009094.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @koffie @pjbruin @mstreng minz\n\nDepends on #9093 for correctness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9094\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @koffie @pjbruin @mstreng minz\n\nImplement is_square and sqrt for polynomials and fraction fields.\n\nOnly apply: [attachment:trac_9094-sqrt-mderickx.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9094\n\n",
+    "closed_at": "2011-04-13T07:42:45Z",
     "created_at": "2010-05-30T08:45:39Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
-    "title": "is_square and sqrt for fraction fields",
+    "title": "is_square and sqrt for polynomials and fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9094",
     "user": "https://github.com/robertwb"
@@ -20,7 +20,9 @@ Assignee: @aghitza
 
 CC:  @koffie @pjbruin @mstreng minz
 
-Depends on #9093 for correctness.
+Implement is_square and sqrt for polynomials and fraction fields.
+
+Only apply: [attachment:trac_9094-sqrt-mderickx.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9094
 

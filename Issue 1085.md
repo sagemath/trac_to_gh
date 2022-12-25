@@ -1,15 +1,16 @@
-# Issue 1085: include John Voight's code for enumerating totally real fields
+# Issue 1085: [with patch, with referee's positive review] include John Voight's code for enumerating totally real fields
 
 archive/issues_001085.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nJohn Voight has written some code for enumerating totally real fields; this needs to be added into SAGE. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1085\n\n",
+    "closed_at": "2008-02-13T13:07:09Z",
     "created_at": "2007-11-03T20:16:55Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "include John Voight's code for enumerating totally real fields",
+    "title": "[with patch, with referee's positive review] include John Voight's code for enumerating totally real fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1085",
     "user": "https://github.com/craigcitro"

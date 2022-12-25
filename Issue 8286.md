@@ -4,6 +4,7 @@ archive/issues_008286.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: mat = matrix(ZZ, 0, 1, sparse=True)\nsage: mat.nrows()\n0\nsage: mat.rows()\n[(0)]\nsage: mat = matrix(ZZ, 0, 1, sparse=False)\nsage: mat.nrows()\n0\nsage: mat.rows()\n[]\n```\nThe `rows` method should act the same regardless of the sparsity of the matrix, and when there are no rows, it should return an empty list.\n\nThe same thing happens with matrices defined over QQ or GF(2), so I'm guessing that the problem is with `sparse_rows` and `sparse_columns` in sage/matrix/matrix1.pyx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8286\n\n",
+    "closed_at": "2011-02-24T06:15:14Z",
     "created_at": "2010-02-16T21:37:28Z",
     "labels": [
         "component: linear algebra",

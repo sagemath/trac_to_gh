@@ -1,16 +1,17 @@
-# Issue 3806: improvements to plot.py
+# Issue 3806: [with patch, three positive reviews] improvements to plot.py
 
 archive/issues_003806.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf you do\n\n```\nsage: plot(sin(x), 100, 120))\n```\n\nyou get a plot which goes from -1 to 120 which is mostly empty space.  The is due to the behavior of Graphics() and _extend_axes.  Many of the other graphics objects suffer this same problem.  This patch fixes that and cleans up some of the useless code factoring in plot.py which hopefully makes it easier to understand.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3806\n\n",
+    "closed_at": "2008-08-12T06:30:51Z",
     "created_at": "2008-08-11T19:57:07Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "improvements to plot.py",
+    "title": "[with patch, three positive reviews] improvements to plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3806",
     "user": "https://github.com/mwhansen"

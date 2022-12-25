@@ -4,6 +4,7 @@ archive/issues_009801.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer @wdjoyner\n\nThis depends on #9720, so first apply the v3 patch from there.  This method generates random diagonalizable matrices whose eigenvectors, if computed by hand, have only integer values. This routine is designed as educational tool, generating exam and homework problems, and problem generating interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9802\n\n",
+    "closed_at": "2010-09-15T09:53:42Z",
     "created_at": "2010-08-25T18:45:05Z",
     "labels": [
         "component: linear algebra"

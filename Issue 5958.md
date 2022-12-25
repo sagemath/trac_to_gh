@@ -1,16 +1,17 @@
-# Issue 5958: [with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter
+# Issue 5958: [with patch, positive review] MPolynomial_polydict.factor() should accept proof parameter
 
 archive/issues_005958.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nKeywords: singular, factor\n\nThe parameter should be ignored, but for compatibility it is necessary.\n\nE.g. this should work:\n\n```\nsage: R.<x,y> = CC[]\nsage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: I.variety()\n```\n\nbut it raises an except in 3.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5958\n\n",
+    "closed_at": "2009-08-30T12:09:06Z",
     "created_at": "2009-05-01T15:09:53Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter",
+    "title": "[with patch, positive review] MPolynomial_polydict.factor() should accept proof parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5958",
     "user": "https://github.com/malb"

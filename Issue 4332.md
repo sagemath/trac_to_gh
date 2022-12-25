@@ -1,15 +1,16 @@
-# Issue 4332: notebook() docstring needs improvement
+# Issue 4332: [with patch, positive review] notebook() docstring needs improvement
 
 archive/issues_004332.json:
 ```json
 {
     "body": "Assignee: @dandrake\n\nCC:  @jasongrout\n\nThe docstring for notebook() could use a bit of improvement. In particular, the `directory` option should be clearer. I also think we should *not* say \"do a web search for more details\"; if the information is too much for the docstring, we should make a page on the wiki and point users to that.\n\nAlso, given the recent forkbomb on sage.math, the `-u` flag for ulimit should be documented.\n\nI plan to work on this during this week's Bug Day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4332\n\n",
+    "closed_at": "2008-10-26T03:25:14Z",
     "created_at": "2008-10-21T00:28:35Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "notebook() docstring needs improvement",
+    "title": "[with patch, positive review] notebook() docstring needs improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4332",
     "user": "https://github.com/dandrake"

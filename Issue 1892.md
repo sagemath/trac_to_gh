@@ -1,16 +1,17 @@
-# Issue 1892: notebook -- uploading a data file should give some help about the DATA variable
+# Issue 1892: [with patch; positive review] notebook -- uploading a data file should give some help about the DATA variable
 
 archive/issues_001892.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n> The other option which some students tried was the upload a file\n> using Data.  It indeed uploads the file to a text cell, but we were\n> unable to find out how one accesses it. \n\nUpload it then access it by typing\n\nopen(DATA + 'chapitre.1.txt').read()\n\nThis DATA variable is documented in line three if you click on the Help button\nin the upper right of the worksheet.  It would also be good if it appeared any\ntime you upload a file in the confirmation message -- it doesn't right now.  I'll\nmake a ticket to add this (which will be very easy). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1892\n\n",
+    "closed_at": "2008-05-12T11:22:04Z",
     "created_at": "2008-01-23T14:02:10Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- uploading a data file should give some help about the DATA variable",
+    "title": "[with patch; positive review] notebook -- uploading a data file should give some help about the DATA variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1892",
     "user": "https://github.com/williamstein"

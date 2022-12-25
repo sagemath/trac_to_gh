@@ -3,7 +3,8 @@
 archive/issues_008654.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nJust like \"sage -gap\", we should have \"sage -sqlite3\" to run the command line sqlite3 database included with Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8654\n\n",
+    "body": "Assignee: @jasongrout\n\nJust like \"sage -gap\", we should have \"sage -sqlite3\" to run the command line sqlite3 database included with Sage.\n\nApply [attachment:8654_test.patch] to the Sage **library** and [attachment:trac_8654.patch] to Sage **scripts**.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8654\n\n",
+    "closed_at": "2011-11-03T08:51:31Z",
     "created_at": "2010-04-06T16:49:12Z",
     "labels": [
         "component: misc",
@@ -19,6 +20,8 @@ archive/issues_008654.json:
 Assignee: @jasongrout
 
 Just like "sage -gap", we should have "sage -sqlite3" to run the command line sqlite3 database included with Sage.
+
+Apply [attachment:8654_test.patch] to the Sage **library** and [attachment:trac_8654.patch] to Sage **scripts**.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8654
 

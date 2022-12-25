@@ -1,16 +1,17 @@
-# Issue 5018: lrs optional package improvements
+# Issue 5018: [with spkg, positive review] lrs optional package improvements
 
 archive/issues_005018.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: lrs, polyhedra, polytopes\n\nIn order to move the lrs package closer to being included as a standard package, I have added a couple of tests to the makefile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5018\n\n",
+    "closed_at": "2009-02-02T06:32:47Z",
     "created_at": "2009-01-18T20:22:03Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "lrs optional package improvements",
+    "title": "[with spkg, positive review] lrs optional package improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5018",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

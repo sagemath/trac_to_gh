@@ -1,22 +1,23 @@
-# Issue 4910: convert sage.functions.* docstrings to Sphinx
+# Issue 4910: [with patch, positive review after a fast re-reading] convert sage.functions.* docstrings to Sphinx
 
 archive/issues_004910.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4910\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4910\n\n",
+    "closed_at": "2009-02-24T18:14:08Z",
     "created_at": "2009-01-01T22:50:50Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.functions.* docstrings to Sphinx",
+    "title": "[with patch, positive review after a fast re-reading] convert sage.functions.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4910",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 
 

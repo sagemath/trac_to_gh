@@ -3,7 +3,8 @@
 archive/issues_002138.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nsage: G = AbelianGroup(2,[2,3], names=\"xy\")\nsage: x,y = G.gens()\nsage: x.word_problem([x,y],display=False)\n[This is the Trac macro *x, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x, 1-macro)\nsage: x.word_problem([x,y],display=True)\n\n---\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-2.9.alpha4/<ipython console> in <module>()\n\n/home/wdj/wdj/sagefiles/sage-2.9.alpha4/local/lib/python2.5/site-packages/sage/groups/abelian_gps/abelian_group_element.py in word_problem(self, words, display)\n    341         #print LL1,LL2\n    342         if display:\n--> 343             s = str(g)+\" = \"+add([\"(\"+str(words[LL2[i]-1])+\")^\"+str(LL1[i])+\"*\" for i in range(nn)])\n    344             m = len(s)\n    345             #print \"      \",s[:m-1]\n\n<type 'exceptions.NameError'>: global name 'add' is not defined\n\n\nThis is obviously a problem. Also, the docstring should be written better. The first\nexample is hard to understand.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2138\n\n",
+    "body": "Assignee: joyner\n\n```\nsage: G = AbelianGroup(2,[2,3], names=\"xy\")\nsage: x,y = G.gens()\nsage: x.word_problem([x,y],display=False)\n[[x, 1]]\nsage: x.word_problem([x,y],display=True)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-2.9.alpha4/<ipython console> in <module>()\n\n/home/wdj/wdj/sagefiles/sage-2.9.alpha4/local/lib/python2.5/site-packages/sage/groups/abelian_gps/abelian_group_element.py in word_problem(self, words, display)\n    341         #print LL1,LL2\n    342         if display:\n--> 343             s = str(g)+\" = \"+add([\"(\"+str(words[LL2[i]-1])+\")^\"+str(LL1[i])+\"*\" for i in range(nn)])\n    344             m = len(s)\n    345             #print \"      \",s[:m-1]\n\n<type 'exceptions.NameError'>: global name 'add' is not defined\n\n```\nThis is obviously a problem. Also, the docstring should be written better. The first example is hard to understand.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2138\n\n",
+    "closed_at": "2008-04-09T15:20:00Z",
     "created_at": "2008-02-11T00:42:10Z",
     "labels": [
         "component: group theory",
@@ -18,13 +19,13 @@ archive/issues_002138.json:
 ```
 Assignee: joyner
 
+```
 sage: G = AbelianGroup(2,[2,3], names="xy")
 sage: x,y = G.gens()
 sage: x.word_problem([x,y],display=False)
-[This is the Trac macro *x, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x, 1-macro)
+[[x, 1]]
 sage: x.word_problem([x,y],display=True)
-
----
+---------------------------------------------------------------------------
 <type 'exceptions.NameError'>             Traceback (most recent call last)
 
 /mnt/drive_hda1/sagefiles/sage-2.9.alpha4/<ipython console> in <module>()
@@ -38,9 +39,9 @@ sage: x.word_problem([x,y],display=True)
 
 <type 'exceptions.NameError'>: global name 'add' is not defined
 
+```
+This is obviously a problem. Also, the docstring should be written better. The first example is hard to understand.
 
-This is obviously a problem. Also, the docstring should be written better. The first
-example is hard to understand.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2138
 

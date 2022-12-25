@@ -3,7 +3,8 @@
 archive/issues_007485.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7485\n\n",
+    "body": "Assignee: @williamstein\n\nThe package fortran-20071120.p9 has Fortran compilers for various systems. William Stein said:\n\nhttp://groups.google.com/group/sage-devel/msg/b4cf0f10ed040d5d\n\n\"I think in sage-4.3 on, we should *only* include fortran compilers for OS X, and *nothing* else.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/7485\n\n",
+    "closed_at": "2010-01-19T20:27:55Z",
     "created_at": "2009-11-18T07:14:59Z",
     "labels": [
         "component: build",
@@ -19,7 +20,11 @@ archive/issues_007485.json:
 ```
 Assignee: @williamstein
 
+The package fortran-20071120.p9 has Fortran compilers for various systems. William Stein said:
 
+http://groups.google.com/group/sage-devel/msg/b4cf0f10ed040d5d
+
+"I think in sage-4.3 on, we should *only* include fortran compilers for OS X, and *nothing* else."
 
 Issue created by migration from https://trac.sagemath.org/ticket/7485
 

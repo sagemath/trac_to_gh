@@ -1,16 +1,17 @@
-# Issue 5582: Coercion from float to QQ is missing
+# Issue 5582: [with patch, positive review] Coercion from float to QQ is missing
 
 archive/issues_005582.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @jbandlow\n\n```\n\tsage: a = float(1.0)\n \tsage: QQ(a)\n \tTypeError: Unable to coerce 1.0 (<type 'float'>) to Rational\n```\nNote that the following works:\n\n```\n \tsage: a = float(1.0)\n \tsage: QQ(RR(a))\n \t1\n```\n\n> Yes, this conversion is missing. It should be easy to implement.\n> \n> - Robert\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5582\n\n",
+    "closed_at": "2009-05-21T01:27:33Z",
     "created_at": "2009-03-21T20:00:18Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Coercion from float to QQ is missing",
+    "title": "[with patch, positive review] Coercion from float to QQ is missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5582",
     "user": "https://github.com/jbandlow"

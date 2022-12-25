@@ -1,16 +1,17 @@
-# Issue 7782: cliquer build fails on HP-UX
+# Issue 7782: Cliquer build fails on HP-UX
 
 archive/issues_007782.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @nathanncohen\n\ncliquer is failing on HP-UX 11.11 on a HP C3600 workstation. The spkg-install has code which applies different flags to build the shared library on different platforms, but does not have any for HP-UX. The spkg-install exits with a message saying: \n\n**Cannot determine your platform or it is not supported... exiting**\n\nThis needs to be changed. Once the files testcc.sh and testcxx.sh at #7505 are included in Sage, doing this will be a lot easier. \n\n```\ncliquer-1.2.p2/src/cliquerconf.h\ncliquer-1.2.p2/src/testcase-large-w-60-64-mxml.h\ncliquer-1.2.p2/src/testcase-large.b\ncliquer-1.2.p2/src/set.h\ncliquer-1.2.p2/src/graph.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa1.1-hp-hpux11.11\nConfigured with: /tmp/gcc-4.3.3.tar.gz/gcc-4.3.3/configure --host=hppa1.1-hp-hpux11.11 --target=hppa1.1-hp-hpux11.11 --build=hppa1.1-hp-hpux11.11 --prefix=/opt/hp-gcc-4.3.3 --with-gnu-as --without-gnu-ld --enable-threads=posix --enable-languages=c,c++ --with-gmp=/proj/opensrc/be/hppa1.1-hp-hpux11.11 --with-mpfr=/proj/opensrc/be/hppa1.1-hp-hpux11.11\nThread model: posix\ngcc version 4.3.3 (GCC) \n****************************************************\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC \nUsing CXXFLAGS= -O2  -g  -Wall \nUsing FCFLAGS= -O2  -g  -Wall \nUsing F77FLAGS= -O2  -g  -Wall \nUsing CPPFLAGS= -I/home/drkirkby/sage-4.3/local/include \nUsing LDFLAGS= -L/home/drkirkby/sage-4.3/local/lib \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \nCannot determine your platform or it is not supported... exiting\n\nreal\t0m0.076s\nuser\t0m0.050s\nsys\t0m0.020s\nsage: An error occurred while installing cliquer-1.2.p2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7782\n\n",
+    "closed_at": "2013-02-08T13:22:59Z",
     "created_at": "2009-12-29T06:22:11Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cliquer build fails on HP-UX",
+    "title": "Cliquer build fails on HP-UX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7782",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

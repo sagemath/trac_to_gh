@@ -1,9 +1,10 @@
-# Issue 5316: some elements of NumberField_quadratic are NumberFieldElement_absolute --> segfault
+# Issue 5316: [with patch, positive review] some elements of NumberField_quadratic are NumberFieldElement_absolute --> segfault
 
 archive/issues_005316.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nBased on a question from Alex Raichev (http://groups.google.com/group/sage-support/browse_thread/thread/71483789bc7fefb7#), I discovered this:\n\n```\nsage: var('t')\nt\nsage: F = NumberField(t^2+1, 'a')\nsage: R.<x,y> = F[]\nsage: type(x.coefficients()[0])\n<type 'sage.rings.number_field.number_field_element.NumberFieldElement_absolute'>\nsage: F(1) + x.coefficients()[0]\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5316\n\n",
+    "closed_at": "2009-02-20T07:58:34Z",
     "created_at": "2009-02-20T06:15:51Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_005316.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "some elements of NumberField_quadratic are NumberFieldElement_absolute --> segfault",
+    "title": "[with patch, positive review] some elements of NumberField_quadratic are NumberFieldElement_absolute --> segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5316",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

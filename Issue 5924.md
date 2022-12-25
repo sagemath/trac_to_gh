@@ -1,22 +1,23 @@
-# Issue 5924: Proposed new method for the OverconvergentModularForms class
+# Issue 5924: [with patch, positive review] Slopes of U_p operator acting on a space of overconvergent modular forms
 
 archive/issues_005924.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nI would like to propose the addition of a method which will give the slopes of the U_p operator acting on a space of overconvergent modular forms. Here is my suggested code:\n\n```\n def slopes(self, n, use_recurrence=False):\n        r\"\"\"\n        Compute the slopes of the `U_p` operator acting on self, using an n x n matrix.\n\n        EXAMPLES::\n             sage: OverconvergentModularForms(5,2,1/3,base_ring=Qp(5),prec=100).slopes(5)\n             [0, 2, 5, 6, 9]\n             sage: sage: OverconvergentModularForms(2,1,1/3,char=DirichletGroup(4,QQ).0)\n             [0, 2, 4, 6, 8]\n        \"\"\" \n        if self.base_ring() == QQ:\n             slopelist=self.cps_u(n).truncate().newton_slopes(self.prime())\n        elif is_pAdicField(self.base_ring()):\n             slopelist=self.cps_u(n).truncate().newton_slopes()\n        else:\n             print \"slopes are only defined for base field QQ or a p-adic field\"\n        return [-i for i in slopelist]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5924\n\n",
+    "body": "Assignee: @loefflerd\n\nI would like to propose the addition of a method which will give the slopes of the U_p operator acting on a space of overconvergent modular forms. Here is my suggested code:\n\n```\n def slopes(self, n, use_recurrence=False):\n        r\"\"\"\n        Compute the slopes of the `U_p` operator acting on self, using an n x n matrix.\n\n        EXAMPLES::\n             sage: OverconvergentModularForms(5,2,1/3,base_ring=Qp(5),prec=100).slopes(5)\n             [0, 2, 5, 6, 9]\n             sage: sage: OverconvergentModularForms(2,1,1/3,char=DirichletGroup(4,QQ).0)\n             [0, 2, 4, 6, 8]\n        \"\"\" \n        if self.base_ring() == QQ:\n             slopelist=self.cps_u(n).truncate().newton_slopes(self.prime())\n        elif is_pAdicField(self.base_ring()):\n             slopelist=self.cps_u(n).truncate().newton_slopes()\n        else:\n             print \"slopes are only defined for base field QQ or a p-adic field\"\n        return [-i for i in slopelist]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5924\n\n",
+    "closed_at": "2009-05-12T22:15:26Z",
     "created_at": "2009-04-28T22:55:05Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Proposed new method for the OverconvergentModularForms class",
+    "title": "[with patch, positive review] Slopes of U_p operator acting on a space of overconvergent modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5924",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @craigcitro
+Assignee: @loefflerd
 
 I would like to propose the addition of a method which will give the slopes of the U_p operator acting on a space of overconvergent modular forms. Here is my suggested code:
 

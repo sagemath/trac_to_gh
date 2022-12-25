@@ -4,6 +4,7 @@ archive/issues_005339.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  drkirkby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5339\n\n",
+    "closed_at": "2010-08-07T10:15:40Z",
     "created_at": "2009-02-22T18:52:08Z",
     "labels": [
         "component: distribution"

@@ -3,10 +3,11 @@
 archive/issues_000105.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nIt would be very useful to have a feature in the notebook, where you\ncould get the entire thing as one big html tarball.  E.g., I have a bunch\nof worksheets in a notebook I made with Barry Mazur, and I want to\nmake them very easy for him to browse \"offline\" without SAGE.  I\nhave to go through each individually and save the .html.   We should\nthink of a nice design for this...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/105\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nIt would be very useful to have a feature in the notebook, where you\ncould get the entire thing as one big html tarball.  E.g., I have a bunch\nof worksheets in a notebook I made with Barry Mazur, and I want to\nmake them very easy for him to browse \"offline\" without SAGE.  I\nhave to go through each individually and save the .html.   We should\nthink of a nice design for this...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/105\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2006-10-03T02:44:39Z",
     "labels": [
-        "component: user interface",
+        "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_000105.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 CC:  @jasongrout
 

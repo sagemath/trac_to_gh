@@ -1,9 +1,10 @@
-# Issue 5443: [with patch, needs review] Segfault in congruence subgroup element code
+# Issue 5443: [with patch, positive review] Segfault in congruence subgroup element code
 
 archive/issues_005443.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nDavid Loeffler ran into the following segfault earlier:\n\n```\nsage: r,s,t,u = Gamma0(2).gens()\nsage: r**(-1)*u**(-1) == t\nBOOM\n```\n\nThe attached patch fixes this, and adds a doctest. There's more work to be done: `matrix_integer_2x2` should inherit from `matrix_integer_dense`, but it doesn't yet. I have 98% of the code to do it done, but it needs to get cleaned up and submitted.\n\n**HOWEVER**: I don't have a copy of sage-3.3 on my machine, so the patch is against sage-3.2.3. I\n\nIssue created by migration from https://trac.sagemath.org/ticket/5443\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nDavid Loeffler ran into the following segfault earlier:\n\n```\nsage: r,s,t,u = Gamma0(2).gens()\nsage: r**(-1)*u**(-1) == t\nBOOM\n```\n\nThe attached patch fixes this, and adds a doctest. There's more work to be done: `matrix_integer_2x2` should inherit from `matrix_integer_dense`, but it doesn't yet. I have 98% of the code to do it done, but it needs to get cleaned up and submitted.\n\n**HOWEVER**: I don't have a copy of sage-3.3 on my machine, so the patch is against sage-3.2.3. I can either clean this up myself if someone points me to a build of `3.3.rc?` on sage.math, or someone else could do it ... `:)`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5443\n\n",
+    "closed_at": "2009-03-08T07:13:10Z",
     "created_at": "2009-03-05T17:32:30Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_005443.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] Segfault in congruence subgroup element code",
+    "title": "[with patch, positive review] Segfault in congruence subgroup element code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5443",
     "user": "https://github.com/craigcitro"
@@ -31,7 +32,7 @@ BOOM
 
 The attached patch fixes this, and adds a doctest. There's more work to be done: `matrix_integer_2x2` should inherit from `matrix_integer_dense`, but it doesn't yet. I have 98% of the code to do it done, but it needs to get cleaned up and submitted.
 
-**HOWEVER**: I don't have a copy of sage-3.3 on my machine, so the patch is against sage-3.2.3. I
+**HOWEVER**: I don't have a copy of sage-3.3 on my machine, so the patch is against sage-3.2.3. I can either clean this up myself if someone points me to a build of `3.3.rc?` on sage.math, or someone else could do it ... `:)`
 
 Issue created by migration from https://trac.sagemath.org/ticket/5443
 

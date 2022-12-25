@@ -3,7 +3,8 @@
 archive/issues_007725.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @roed314\n\nIn Sage 4.3.rc0 it is possible to cause a segmentation fault as described in this message:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/35fd7617cf3c89a5?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7725\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  @roed314\n\nIn Sage 4.3.rc0 it is possible to cause a segmentation fault as described in this message:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/35fd7617cf3c89a5?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7725\n\n",
+    "closed_at": "2009-12-20T19:01:58Z",
     "created_at": "2009-12-17T17:54:29Z",
     "labels": [
         "component: coercion",
@@ -16,7 +17,7 @@ archive/issues_007725.json:
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: @robertwb
+Assignee: @dwbump
 
 CC:  @roed314
 

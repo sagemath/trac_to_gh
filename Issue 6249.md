@@ -6,7 +6,8 @@ archive/issues_006249.json:
     "body": "Assignee: @rlmill\n\nCC:  ekirkman @rlmill @kcrisman\n\nKeywords: graph plot z order overlay\n\nLet G1 and G2 be arbitrary graphs.  G1.plot() + G2.plot() and G2.plot() + G1.plot() (notice the ordering) look the same for me, ie I cannot make one graph appear above the other.  What seems to happen is that the vertices are brought forward in the zorder, but it appears that this is done globally, not locally for the individual plot.  I claim this is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6249\n\n",
     "created_at": "2009-06-08T16:25:31Z",
     "labels": [
-        "component: graph theory",
+        "component: graphics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",

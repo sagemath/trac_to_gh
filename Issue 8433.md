@@ -3,10 +3,11 @@
 archive/issues_008433.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout @robertwb drkirkby mhampton @jdemeyer mvngu\n\nThe following plot command fails (tachyon gets all CPU usage and no picture is shown)\n\n```\ny=var('y')\nB=plot3d(sqrt(sin(x)*sin(y)),(x,-2*pi,2*pi),(y,-2*pi,2*pi),viewer='tachyon')\nB.show()\n```\nThis works fine\n\n```\ny=var('y')\nB=plot3d(sqrt(sin(x)*sin(y)),(x,0,2),(y,0,2), viewer='tachyon')\nB.show()\n```\nand this does not work\n\n```\ny=var('y')\nB=plot3d(sqrt(sin(x)*sin(y)),(x,-2,2),(y,-2,2), viewer='tachyon')\nB.show()\n```\nRelated trac is #8424, but the problem seems to be independent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8433\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @robertwb drkirkby mhampton @jdemeyer mvngu\n\nKeywords: tachyon\n\nThe following plot command fails (tachyon gets all CPU usage and no picture is shown)\n\n```\ny=var('y')\nB=plot3d(sqrt(sin(x)*sin(y)),(x,-2*pi,2*pi),(y,-2*pi,2*pi),viewer='tachyon')\nB.show()\n```\nThis works fine\n\n```\ny=var('y')\nB=plot3d(sqrt(sin(x)*sin(y)),(x,0,2),(y,0,2), viewer='tachyon')\nB.show()\n```\nand this does not work\n\n```\ny=var('y')\nB=plot3d(sqrt(sin(x)*sin(y)),(x,-2,2),(y,-2,2), viewer='tachyon')\nB.show()\n```\nRelated trac is #8424, but the problem seems to be independent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8433\n\n",
+    "closed_at": "2021-08-26T02:08:43Z",
     "created_at": "2010-03-04T08:08:52Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,9 +17,11 @@ archive/issues_008433.json:
     "user": "https://github.com/robert-marik"
 }
 ```
-Assignee: @aghitza
+Assignee: @williamstein
 
 CC:  @jasongrout @robertwb drkirkby mhampton @jdemeyer mvngu
+
+Keywords: tachyon
 
 The following plot command fails (tachyon gets all CPU usage and no picture is shown)
 

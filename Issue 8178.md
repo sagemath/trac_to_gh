@@ -4,6 +4,7 @@ archive/issues_008178.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nSetting SAGE64=yes has only effect in this package in OSX Darwin.\n\nTo let this work on Open Solaris and evt. other platforms we changed\nspkg-install and patches/makemakefile.py a little bit.\n\nA patch is coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8178\n\n",
+    "closed_at": "2010-03-02T23:16:32Z",
     "created_at": "2010-02-03T18:58:37Z",
     "labels": [
         "component: porting",

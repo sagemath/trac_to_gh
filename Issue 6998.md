@@ -1,23 +1,24 @@
-# Issue 6998: wrong error for powerseries sqrt
+# Issue 6998: [with patch, positive review] wrong error for powerseries sqrt
 
 archive/issues_006998.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: R.<x> = QQ[[]]\nsage: (x^10/2).sqrt()\nTraceback (click to the left for traceback)\n...\nValueError: power series does not have a square root since it has odd\nvaluation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6998\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: R.<x> = QQ[[]]\nsage: (x^10/2).sqrt()\nTraceback (click to the left for traceback)\n...\nValueError: power series does not have a square root since it has odd\nvaluation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6998\n\n",
+    "closed_at": "2009-10-15T09:35:11Z",
     "created_at": "2009-09-22T23:19:05Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: algebra",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "wrong error for powerseries sqrt",
+    "title": "[with patch, positive review] wrong error for powerseries sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6998",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 ```
 sage: R.<x> = QQ[[]]

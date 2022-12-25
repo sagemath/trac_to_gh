@@ -1,15 +1,16 @@
-# Issue 3204: [with spkg, needs review] update M4RI to version 20080514
+# Issue 3204: [with spkg, positive review] update M4RI to newest upstream release
 
 archive/issues_003204.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: linear algebra, gf(2), m4ri\n\nA new version of M4RI is available at:\n\n   http://sage.math.washington.edu/home/malb/m4ri/\n\nThe matching SPKG is at:\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080514.p0.spkg\n\nThis SPKG needs a patch which is attached to this ticket.\n\nThe new version has quite a new features:\n* Strassen-Winograd matrix multiplication (though not used by default yet),\n* Native support for Solaris and Windows,\n* SSE2 support,\n* Much improved documentation,\n* Nicer calling conventions.\n\nThe SSE2 support could cause trouble but I've successfully built the library on 32 and 64-bit Linux, OSX (Intel and PPC), OpenSolaris 2008.05 and Windows XP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3204\n\n",
+    "body": "Assignee: @malb\n\nKeywords: linear algebra, gf(2), m4ri\n\nA new version of M4RI is available at:\n\n   http://m4ri.sagemath.org\n\nThe matching SPKG is at:\n\n  http://sage.math.washington.edu/home/malb/spkgs/\n\nThis SPKG needs a patch which is attached to this ticket.\n\nThe new version has quite a new features:\n* Strassen-Winograd matrix multiplication (though not used by default yet),\n* Native support for Solaris and Windows,\n* SSE2 support,\n* Much improved documentation,\n* Nicer calling conventions.\n\nThe SSE2 support could cause trouble but I've successfully built the library on 32 and 64-bit Linux, OSX (Intel and PPC), OpenSolaris 2008.05 and Windows XP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3204\n\n",
+    "closed_at": "2008-05-28T19:06:30Z",
     "created_at": "2008-05-14T20:35:58Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with spkg, needs review] update M4RI to version 20080514",
+    "title": "[with spkg, positive review] update M4RI to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3204",
     "user": "https://github.com/malb"
@@ -21,11 +22,11 @@ Keywords: linear algebra, gf(2), m4ri
 
 A new version of M4RI is available at:
 
-   http://sage.math.washington.edu/home/malb/m4ri/
+   http://m4ri.sagemath.org
 
 The matching SPKG is at:
 
-  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080514.p0.spkg
+  http://sage.math.washington.edu/home/malb/spkgs/
 
 This SPKG needs a patch which is attached to this ticket.
 

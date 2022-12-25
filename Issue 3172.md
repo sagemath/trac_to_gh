@@ -1,16 +1,17 @@
-# Issue 3172: add 64 bit OSX build support to prereq and bzip2
+# Issue 3172: [with patches, positive review] add 64 bit OSX build support to prereq and bzip
 
 archive/issues_003172.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\npatch coming up\n\nIssue created by migration from https://trac.sagemath.org/ticket/3172\n\n",
+    "closed_at": "2008-05-19T00:10:30Z",
     "created_at": "2008-05-13T00:02:17Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to prereq and bzip2",
+    "title": "[with patches, positive review] add 64 bit OSX build support to prereq and bzip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3172",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

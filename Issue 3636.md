@@ -1,16 +1,17 @@
-# Issue 3636: Text control, no label
+# Issue 3636: [with patch; positive review] Text control, no label
 
 archive/issues_003636.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nAllows adding text among the controls:\n\n```\n@interact\ndef _(t1=text_control(\"Factors an integer.\"), n=\"1\"):\n    print factor(Integer(n))\n```\n\nAdditionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3636\n\n",
+    "closed_at": "2008-07-30T23:40:46Z",
     "created_at": "2008-07-10T21:07:58Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Text control, no label",
+    "title": "[with patch; positive review] Text control, no label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3636",
     "user": "https://github.com/itolkov"

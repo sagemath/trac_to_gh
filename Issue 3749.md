@@ -1,9 +1,10 @@
-# Issue 3749: Request for a method "is_cyclic" for groups in SAGE
+# Issue 3749: [with patch; with positive review] Request for a method "is_cyclic" for groups in SAGE
 
 archive/issues_003749.json:
 ```json
 {
     "body": "Assignee: joyner\n\nIt appears that there is no method is_cyclic for groups in SAGE; this is a command that MAGMA does have, and one which I think is fairly basic. It would be nice if this was included in a version of SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3749\n\n",
+    "closed_at": "2009-01-19T06:28:32Z",
     "created_at": "2008-07-31T14:01:47Z",
     "labels": [
         "component: group theory",
@@ -11,7 +12,7 @@ archive/issues_003749.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Request for a method \"is_cyclic\" for groups in SAGE",
+    "title": "[with patch; with positive review] Request for a method \"is_cyclic\" for groups in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3749",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"

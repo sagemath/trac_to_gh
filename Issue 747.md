@@ -4,6 +4,7 @@ archive/issues_000747.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n1.  For flint-0.2.p2, I had to remove the CFLAG\noption \"-funroll-loops\" in order to get it to build.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/747\n\n",
+    "closed_at": "2007-10-04T17:14:30Z",
     "created_at": "2007-09-24T20:58:26Z",
     "labels": [
         "component: packages: standard",

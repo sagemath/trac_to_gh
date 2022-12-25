@@ -1,47 +1,28 @@
-# Issue 7520: Improving word construction and datatype handling
+# Issue 7520: Improving word construction
 
 archive/issues_007520.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nThe `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :\n\nBEFORE:\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 2.60 s, sys: 0.09 s, total: 2.69 s\nWall time: 2.71 s\n```\n\nAFTER:\n\n```\nsage: W = Words([0,1])\nsage: time l = list(W.iterate_by_length(15))\nCPU times: user 1.99 s, sys: 0.06 s, total: 2.05 s\nWall time: 2.08 s\n```\n\n\nCreation of a word from a word when the parent changes doesn't work well :\n\n```\nsage: w = Word('abab')\nsage: P = WordPaths('abcd')\nsage: P(w)\nword: abab\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(P(w))\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\nCreation of a word represented by list from a word represented as str doesn't work well and could work easily:\n\n```\nsage: w = Word('aababababab')\nsage: Word(w, datatype='list')\nword: aababababab\nsage: type(_)\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7520\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nImprove the creation of a word from a word when the parent changes :\n\nBEFORE:\n\n```\nsage: w = Word('abab')\nsage: P = WordPaths('abcd')\nsage: P(w)\nword: abab\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(P(w))\n<class 'sage.combinat.words.word.FiniteWord_str'>\n```\n\nAFTER:\n\n```\nsage: w = Word('abab')\nsage: P = WordPaths('abcd')\nsage: P(w)\nPath: abab\nsage: type(w)\n<class 'sage.combinat.words.word.FiniteWord_str'>\nsage: type(P(w))\n<class 'sage.combinat.words.paths.FiniteWordPath_square_grid_str'>\n```\n\nThe following construction gets also faster with the patch applied :\n\nBEFORE:\n\n```\nsage: w = Word([0,1]*10000)\nsage: %timeit z = Words([2,0,1])(w)\n1000 loops, best of 3: 586 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: w = Word([0,1]*10000)\nsage: %timeit z = Words([2,0,1])(w)\n1000 loops, best of 3: 343 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7520\n\n",
+    "closed_at": "2010-03-03T13:58:55Z",
     "created_at": "2009-11-23T15:54:48Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Improving word construction and datatype handling",
+    "title": "Improving word construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7520",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @mwhansen
+Assignee: @seblabbe
 
 CC:  @saliola
 
-The `_check` function of the Combinatorial class of all words (checking that the 40 first letters of the word are in the parent) is called for each word created by the user ....and by any other function. It would be good to add a check parameter (True or False) whether to do the checking. For example, for internal function, it could be turned off. Here is a example of what can be gained from this modification when generating all words of a given length :
+Improve the creation of a word from a word when the parent changes :
 
 BEFORE:
-
-```
-sage: W = Words([0,1])
-sage: time l = list(W.iterate_by_length(15))
-CPU times: user 2.60 s, sys: 0.09 s, total: 2.69 s
-Wall time: 2.71 s
-```
-
-AFTER:
-
-```
-sage: W = Words([0,1])
-sage: time l = list(W.iterate_by_length(15))
-CPU times: user 1.99 s, sys: 0.06 s, total: 2.05 s
-Wall time: 2.08 s
-```
-
-
-Creation of a word from a word when the parent changes doesn't work well :
 
 ```
 sage: w = Word('abab')
@@ -54,15 +35,37 @@ sage: type(P(w))
 <class 'sage.combinat.words.word.FiniteWord_str'>
 ```
 
-Creation of a word represented by list from a word represented as str doesn't work well and could work easily:
+AFTER:
 
 ```
-sage: w = Word('aababababab')
-sage: Word(w, datatype='list')
-word: aababababab
-sage: type(_)
+sage: w = Word('abab')
+sage: P = WordPaths('abcd')
+sage: P(w)
+Path: abab
+sage: type(w)
 <class 'sage.combinat.words.word.FiniteWord_str'>
+sage: type(P(w))
+<class 'sage.combinat.words.paths.FiniteWordPath_square_grid_str'>
 ```
+
+The following construction gets also faster with the patch applied :
+
+BEFORE:
+
+```
+sage: w = Word([0,1]*10000)
+sage: %timeit z = Words([2,0,1])(w)
+1000 loops, best of 3: 586 µs per loop
+```
+
+AFTER:
+
+```
+sage: w = Word([0,1]*10000)
+sage: %timeit z = Words([2,0,1])(w)
+1000 loops, best of 3: 343 µs per loop
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7520
 

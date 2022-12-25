@@ -3,7 +3,8 @@
 archive/issues_008810.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nThis patch implements (affine) Stanley symmetric functions for type A,B,C,D.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8810\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n#8810: Implementation of Stanley symmetric functions for types A,B and A/B/C/D affine\n\nDepends on #8811.\n\nBased on the combinatorics of Pieri factors (sage/combinat/root_systems/pieri_factors.py)\n\nCurrently, there are two implementations of the maximal Pieri factors:\na combinatorial implementation and a type-free implementation using translations in the affine Weyl group.  Type D affine Stanley symmetric functions are still conjectural, but type D affine Pieri factors have been established rigorously.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8810\n\n",
+    "closed_at": "2010-07-21T10:27:51Z",
     "created_at": "2010-04-28T22:20:45Z",
     "labels": [
         "component: combinatorics"
@@ -19,7 +20,15 @@ Assignee: sage-combinat
 
 CC:  sage-combinat
 
-This patch implements (affine) Stanley symmetric functions for type A,B,C,D.
+#8810: Implementation of Stanley symmetric functions for types A,B and A/B/C/D affine
+
+Depends on #8811.
+
+Based on the combinatorics of Pieri factors (sage/combinat/root_systems/pieri_factors.py)
+
+Currently, there are two implementations of the maximal Pieri factors:
+a combinatorial implementation and a type-free implementation using translations in the affine Weyl group.  Type D affine Stanley symmetric functions are still conjectural, but type D affine Pieri factors have been established rigorously.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8810
 

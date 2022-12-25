@@ -1,15 +1,16 @@
-# Issue 2051: [with doc patch, needs review] added documentation for parameters of groebner_basis method of boolean ideals
+# Issue 2051: [with doc patch, positive review] added documentation for parameters of groebner_basis method of boolean ideals
 
 archive/issues_002051.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nSee patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2051\n\n",
+    "closed_at": "2008-02-07T05:18:54Z",
     "created_at": "2008-02-05T11:53:47Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with doc patch, needs review] added documentation for parameters of groebner_basis method of boolean ideals",
+    "title": "[with doc patch, positive review] added documentation for parameters of groebner_basis method of boolean ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2051",
     "user": "https://github.com/malb"

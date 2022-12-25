@@ -4,6 +4,7 @@ archive/issues_009899.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nAdd doctests to test enhancements to conjugates of some special functions in pynac/GiNaC.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9900\n\n",
+    "closed_at": "2010-10-06T03:20:24Z",
     "created_at": "2010-09-12T09:52:40Z",
     "labels": [
         "component: symbolics",

@@ -4,6 +4,7 @@ archive/issues_005503.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  jakobkroeker\n\nKeywords: universal comparison, transitivity, coercion\n\nThe following piece of code loads the pickle jar and tries to compare each pair of members. In my 3.4, it currently segfaults.\n\nIf sage is to have universal comparison, these comparisons should all occur without error. The next step would be to ensure that results are consistent with transitivity.\n\n```\nL=[]\nM=[]\n#change this location to point to your own pickle jar\npath=\"/usr/local/sage/default/tmp/pickle_jar-3.4\"\n\nfor n in sorted(os.listdir(path)):\n  if n.endswith(\".sobj\") and not(n in M):\n    print n\n    L.append(load(path+\"/\"+n))\n\nfor i in [1..len(L)-1]:\n    for j in range(i):\n        try:\n            _=cmp(L[i],L[j])\n        except:\n            print [i,j]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5503\n\n",
+    "closed_at": "2017-03-08T13:19:48Z",
     "created_at": "2009-03-12T20:23:26Z",
     "labels": [
         "component: misc",

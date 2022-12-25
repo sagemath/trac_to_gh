@@ -1,15 +1,16 @@
-# Issue 3698: [with patch; needs review] add multinomial_coefficients and binomial_coefficients to sage.
+# Issue 3698: [with patch; positive review] add multinomial_coefficients and binomial_coefficients to sage.
 
 archive/issues_003698.json:
 ```json
 {
     "body": "Assignee: somebody\n\nPearu Peterson (sympycore guy) wrote some really fast pure python code for computing multinomial coefficients, e.g.,\n\n```\n14:20 < wstein> sage: R.<x,y,z> = QQ[]\n14:20 < wstein> sage: timeit('(x+y+z)^50')\n14:20 < wstein> 25 loops, best of 3: 20.8 ms per loop\n14:20 < wstein> sage: timeit('w = multinomial_coefficients(3r,50r)')\n14:20 < wstein> 25 loops, best of 3: 10.3 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3698\n\n",
+    "closed_at": "2008-07-31T00:04:12Z",
     "created_at": "2008-07-21T21:28:22Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] add multinomial_coefficients and binomial_coefficients to sage.",
+    "title": "[with patch; positive review] add multinomial_coefficients and binomial_coefficients to sage.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3698",
     "user": "https://github.com/williamstein"

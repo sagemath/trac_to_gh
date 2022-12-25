@@ -1,16 +1,17 @@
-# Issue 4888: laplacian_matrix() broken for DiGraphs
+# Issue 4888: [with patch, positive review] laplacian_matrix() broken for DiGraphs
 
 archive/issues_004888.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nDavid reports in http://groups.google.com/group/sage-devel/t/51fdef25ed45ceee\n\n```\nI am running Sage 3.1.4 under Fedora 9 and have found a bug in the \nfile graph.py. \n------------------------------------------------------------------- \nsage: G = DiGraph({0:{}, 1:{0:1}, 2:{0:1}}, weighted = True) \nsage: G.weighted_adjacency_matrix() \n[0] \n[1] \n[1] \nsage: G.adjacency_matrix() \n[0 0 0] \n[1 0 0] \n[1 0 0] \nsage: G.laplacian_matrix() \n--------------------------------------------------------------------------- \nIndexError                                Traceback (most recent call \nlast) \n/home/davidp/.sage/temp/xyzzy/16886/ \n_home_davidp_math_sandpile_sage_sandpile_sage_14.py in <module>() \n----> 1 \n      2 \n      3 \n      4 \n      5 \n/usr/local/sage-3.1.4-fc8-i686-Linux/local/lib/python2.5/site-packages/ \nsage/graphs/graph.pyc in kirchhoff_matrix(self, weighted, \nboundary_first) \n    904         S = [sum(M.row(i)) for i in range(M.nrows())] \n    905         for i in range(len(A)): \n--> 906             A[i][i] = S[i] \n    907         return M.parent()(A) \n    908 \n/usr/local/sage-3.1.4-fc8-i686-Linux/local/lib/python2.5/site-packages/ \nsage/modules/free_module_element.so in \nsage.modules.free_module_element.FreeModuleElement_generic_sparse.__setitem __ \n(sage/modules/free_module_element.c:15074)() \n   1765 \n   1766 \n-> 1767 \n   1768 \n   1769 \nIndexError: index (i=1) must be between 0 and 0 \nsage: \n--------------------------------------------------------------------------- --------- \nThe laplacian_matrix function is not working because \nweighted_adjacency matrix is not returning a square matrix.  A \nsuggested fix is to change line 845 (in the graph.py code for \nweighted_adjacency_matrix) from \nM = matrix(D, sparse=sparse) \nto \nM = matrix(self.num_verts(), D, sparse=sparse) \nDavid \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4888\n\n",
+    "closed_at": "2009-01-18T05:53:27Z",
     "created_at": "2008-12-29T21:56:16Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "laplacian_matrix() broken for DiGraphs",
+    "title": "[with patch, positive review] laplacian_matrix() broken for DiGraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4888",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

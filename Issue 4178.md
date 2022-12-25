@@ -4,6 +4,7 @@ archive/issues_004178.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nOn my PPC Power Book 550 MHz, 768 MB RAM, Mac OS X 10.4.11, Xcode 2.5, the \"long\" doctest fails because the timeout is too small.\n\nAs soon as I have checked how big it should be (on that box) to make it run through, I'll add the info here. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4178\n\n",
+    "closed_at": "2008-09-23T22:04:21Z",
     "created_at": "2008-09-23T21:58:17Z",
     "labels": [
         "component: doctest coverage",

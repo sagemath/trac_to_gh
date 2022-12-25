@@ -1,22 +1,23 @@
-# Issue 2426: inst.tex claims that OSX 10.5 is not supported
+# Issue 2426: [with patch, positive review] inst.tex - update compiler and operating system support
 
 archive/issues_002426.json:
 ```json
 {
-    "body": "Assignee: tba\n\nEvidently whoever closed #1005 didn't notice the 2nd comment :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2426\n\n",
+    "body": "Assignee: mabshoff\n\nEvidently whoever closed #1005 didn't notice the 2nd comment :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2426\n\n",
+    "closed_at": "2008-03-20T06:34:51Z",
     "created_at": "2008-03-08T02:49:11Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "inst.tex claims that OSX 10.5 is not supported",
+    "title": "[with patch, positive review] inst.tex - update compiler and operating system support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2426",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 Evidently whoever closed #1005 didn't notice the 2nd comment :)
 

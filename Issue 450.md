@@ -3,7 +3,8 @@
 archive/issues_000450.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere is a bug in clisp's spkg-install that causes compilation\nfailures on Solaris:\n\nThe initial configure run has \"--without-dynamic-ffi\", the makemake\njob doesn't, this leads to the following definitions in clisp.h:\n\n  #define uint64_to_I(val)  uint64_to_I(val)\n  #define sint64_to_I(val)  sint64_to_I(val)\n\nAs you can imagine that doesn't go over too well at link-time. This\nshould also fix the compilation failure of clisp on Nexenta OS that\nDidier reported. With the added flag to makemake clisp builds, but\ncrashes in \"make check\". Even with the fix clisp doesn't compile with\ngcc 4.2.1 on Solaris, at the moment we use gcc 3.4.6.\n\nWe also have to make sure that we don't have \"-g\" in the build flags. \nThis is due to  due to an interaction between gcc's gas and the Sun\n ld when using dwarf2 debugging symbols are used.\n\nA detailed explainaition can be found at\nhttp://www.mail-archive.com/bug-binut...`@`gnu.org/msg00615.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/450\n\n",
+    "body": "Assignee: mabshoff\n\nThere is a bug in clisp's spkg-install that causes compilation\nfailures on Solaris:\n\nThe initial configure run has \"--without-dynamic-ffi\", the makemake\njob doesn't, this leads to the following definitions in clisp.h:\n\n```\n  #define uint64_to_I(val)  uint64_to_I(val)\n  #define sint64_to_I(val)  sint64_to_I(val)\n```\nAs you can imagine that doesn't go over too well at link-time. This\nshould also fix the compilation failure of clisp on Nexenta OS that\nDidier reported. With the added flag to makemake clisp builds, but\ncrashes in \"make check\". Even with the fix clisp doesn't compile with\ngcc 4.2.1 on Solaris, at the moment we use gcc 3.4.6.\n\nWe also have to make sure that we don't have \"-g\" in the build flags. This is due to  due to an interaction between gcc's gas and the Sun ld when using dwarf2 debugging symbols are used.\n\nA detailed explainaition can be found at\nhttp://www.mail-archive.com/bug-binut...`@`gnu.org/msg00615.html \n\nIssue created by migration from https://trac.sagemath.org/ticket/450\n\n",
+    "closed_at": "2008-03-22T21:07:24Z",
     "created_at": "2007-08-19T07:54:42Z",
     "labels": [
         "component: packages: standard",
@@ -24,21 +25,20 @@ failures on Solaris:
 The initial configure run has "--without-dynamic-ffi", the makemake
 job doesn't, this leads to the following definitions in clisp.h:
 
+```
   #define uint64_to_I(val)  uint64_to_I(val)
   #define sint64_to_I(val)  sint64_to_I(val)
-
+```
 As you can imagine that doesn't go over too well at link-time. This
 should also fix the compilation failure of clisp on Nexenta OS that
 Didier reported. With the added flag to makemake clisp builds, but
 crashes in "make check". Even with the fix clisp doesn't compile with
 gcc 4.2.1 on Solaris, at the moment we use gcc 3.4.6.
 
-We also have to make sure that we don't have "-g" in the build flags. 
-This is due to  due to an interaction between gcc's gas and the Sun
- ld when using dwarf2 debugging symbols are used.
+We also have to make sure that we don't have "-g" in the build flags. This is due to  due to an interaction between gcc's gas and the Sun ld when using dwarf2 debugging symbols are used.
 
 A detailed explainaition can be found at
-http://www.mail-archive.com/bug-binut...`@`gnu.org/msg00615.html
+http://www.mail-archive.com/bug-binut...`@`gnu.org/msg00615.html 
 
 Issue created by migration from https://trac.sagemath.org/ticket/450
 

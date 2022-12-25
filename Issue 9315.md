@@ -1,16 +1,17 @@
-# Issue 9315: Basic pickling bug in finite fields
+# Issue 9315: sage-4.4.3, 4.4.4: Basic pickling bug in finite fields
 
 archive/issues_009315.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\n```\n\nwstein@redhawk:~/db/modsym-2010$ sage modp.sage \ndata/000000/gamma0-aplist-mod2-000002-0008-10000.sobj\ndata/000000/gamma0-aplist-mod2-000003-0004-10000.sobj\ndata/000000/gamma0-aplist-mod2-000077-0002-10000.sobj\nTraceback (most recent call last):\n  File \"modp.py\", line 57, in <module>\n    go()\n  File \"modp.py\", line 52, in go\n    all(Integer(0),Integer(2))\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/decorate.py\", line 101, in g\n    return f(*args, **kwds)\n  File \"modp.py\", line 48, in all\n    modp(d + '/' + name, p)\n  File \"modp.py\", line 27, in modp\n    save(X, name)\n  File \"sage_object.pyx\", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)\n  File \"finite_field_base.pyx\", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)\nTypeError: 'NoneType' object is unsubscriptable\nwstein@redhawk:~/db/modsym-2010$ \n```\n\nMore details to come!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9315\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nIf you try to pickle *any* residue class field, then it breaks!\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: F = K.factor(3)[0][0].residue_field()\nsage: dumps(F)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/wstein/db/modsym-2010/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8367)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/finite_rings/finite_field_base.so in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)()\n\nTypeError: 'NoneType' object is unsubscriptable\n> /home/wstein/db/modsym-2010/finite_field_base.pyx(674)sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)()\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9315\n\n",
+    "closed_at": "2010-09-15T11:13:50Z",
     "created_at": "2010-06-22T18:58:02Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Basic pickling bug in finite fields",
+    "title": "sage-4.4.3, 4.4.4: Basic pickling bug in finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9315",
     "user": "https://github.com/williamstein"
@@ -20,30 +21,27 @@ Assignee: @aghitza
 
 CC:  @JohnCremona
 
-```
+If you try to pickle *any* residue class field, then it breaks!
 
-wstein@redhawk:~/db/modsym-2010$ sage modp.sage 
-data/000000/gamma0-aplist-mod2-000002-0008-10000.sobj
-data/000000/gamma0-aplist-mod2-000003-0004-10000.sobj
-data/000000/gamma0-aplist-mod2-000077-0002-10000.sobj
-Traceback (most recent call last):
-  File "modp.py", line 57, in <module>
-    go()
-  File "modp.py", line 52, in go
-    all(Integer(0),Integer(2))
-  File "/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/decorate.py", line 101, in g
-    return f(*args, **kwds)
-  File "modp.py", line 48, in all
-    modp(d + '/' + name, p)
-  File "modp.py", line 27, in modp
-    save(X, name)
-  File "sage_object.pyx", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)
-  File "finite_field_base.pyx", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)
+```
+sage: K.<a> = NumberField(x^2 + 1)
+sage: F = K.factor(3)[0][0].residue_field()
+sage: dumps(F)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+
+/home/wstein/db/modsym-2010/<ipython console> in <module>()
+
+/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8367)()
+
+/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/finite_rings/finite_field_base.so in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)()
+
 TypeError: 'NoneType' object is unsubscriptable
-wstein@redhawk:~/db/modsym-2010$ 
+> /home/wstein/db/modsym-2010/finite_field_base.pyx(674)sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)()
+
 ```
 
-More details to come!
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9315
 

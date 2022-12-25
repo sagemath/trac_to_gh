@@ -1,16 +1,17 @@
-# Issue 1198: scipy-20071020 fails to build
+# Issue 1198: new scipy-20071020.spkg and numpy-20071020.spkg
 
 archive/issues_001198.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\n```\n    self.finalize_options()\n  File \"/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/local/lib/python2.5/site-packages/numpy/distutils/command/config.py\", line 28, in finalize_options\n    f = self.distribution.get_command_obj('config_fc')\n  File \"/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/local/lib/python2.5/distutils/dist.py\", line 863, in get_command_obj\n    if not cmd_obj and create:\n  File \"/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/local/lib/python2.5/distutils/cmd.py\", line 105, in __getattr__\n    if attr == 'dry_run':\nRuntimeError: maximum recursion depth exceeded in cmp\nError building scipy.\n\nreal    0m2.319s\nuser    0m0.440s\nsys     0m0.152s\nsage: An error occurred while installing scipy-20071020\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/spkg/build/scipy-20071020 and type 'make'.\nInstead type \"/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/spkg/build/scipy-20071020\n(When you are done debugging, you can type \"exit\" to leave the\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1198\n\n",
+    "body": "Assignee: jkantor\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy-20071020.spkg\nhttp://sage.math.washington.edu/home/jkantor/spkgs/numpy-20071020.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1198\n\n",
+    "closed_at": "2007-11-18T23:21:35Z",
     "created_at": "2007-11-18T06:40:34Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "scipy-20071020 fails to build",
+    "title": "new scipy-20071020.spkg and numpy-20071020.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1198",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -18,35 +19,8 @@ archive/issues_001198.json:
 ```
 Assignee: jkantor
 
-```
-    self.finalize_options()
-  File "/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/local/lib/python2.5/site-packages/numpy/distutils/command/config.py", line 28, in finalize_options
-    f = self.distribution.get_command_obj('config_fc')
-  File "/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/local/lib/python2.5/distutils/dist.py", line 863, in get_command_obj
-    if not cmd_obj and create:
-  File "/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/local/lib/python2.5/distutils/cmd.py", line 105, in __getattr__
-    if attr == 'dry_run':
-RuntimeError: maximum recursion depth exceeded in cmp
-Error building scipy.
-
-real    0m2.319s
-user    0m0.440s
-sys     0m0.152s
-sage: An error occurred while installing scipy-20071020
-Please email sage-devel http://groups.google.com/group/sage-devel
-explaining the problem and send the relevant part of
-of /tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/install.log.  Describe your computer, operating system, etc.
-If you want to try to fix the problem, yourself *don't* just cd to
-/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/spkg/build/scipy-20071020 and type 'make'.
-Instead type "/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/sage -sh"
-in order to set all environment variables correctly, then cd to
-/tmp/Work-mabshoff/release-cycles/sage-2.8.13-build/spkg/build/scipy-20071020
-(When you are done debugging, you can type "exit" to leave the
-```
-
-Cheers,
-
-Michael
+http://sage.math.washington.edu/home/jkantor/spkgs/scipy-20071020.spkg
+http://sage.math.washington.edu/home/jkantor/spkgs/numpy-20071020.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/1198
 

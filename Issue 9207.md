@@ -4,6 +4,7 @@ archive/issues_009207.json:
 ```json
 {
     "body": "Assignee: @malb\n\nrandom_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,\n\n```\nsage: n = 2\nsage: S = BooleanPolynomialRing(n,'y','lex')\nsage: S.random_element()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9207\n\n",
+    "closed_at": "2010-07-21T01:45:41Z",
     "created_at": "2010-06-10T20:03:45Z",
     "labels": [
         "component: commutative algebra",

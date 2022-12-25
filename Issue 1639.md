@@ -1,23 +1,24 @@
-# Issue 1639: missing documentation P.completion()
+# Issue 1639: [with patch, positive review] missing documentation P.completion()
 
 archive/issues_001639.json:
 ```json
 {
-    "body": "Assignee: tba\n\nHow works completion?\n\n\n```\nP.<x> = PolynomialRing(QQ); P.completion?\n```\n\n\ntells me\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\nType:        <type 'instancemethod'>\nDefinition:  P.completion(p, prec, extras)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\nwhat's the p and examples are missing...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1639\n\n",
+    "body": "Assignee: failure\n\nHow works completion?\n\n\n```\nP.<x> = PolynomialRing(QQ); P.completion?\n```\n\n\ntells me\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\nType:        <type 'instancemethod'>\nDefinition:  P.completion(p, prec, extras)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\nwhat's the p and examples are missing...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1639\n\n",
+    "closed_at": "2008-02-28T06:52:34Z",
     "created_at": "2007-12-30T13:35:00Z",
     "labels": [
-        "component: documentation",
+        "component: doctest coverage",
         "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "missing documentation P.completion()",
+    "title": "[with patch, positive review] missing documentation P.completion()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1639",
     "user": "https://github.com/haraldschilly"
 }
 ```
-Assignee: tba
+Assignee: failure
 
 How works completion?
 

@@ -1,16 +1,18 @@
-# Issue 6069: Blank notebook page when loading URL for published sheet that is AWOL
+# Issue 6069: Make error message for nonexistent published page more informative
 
 archive/issues_006069.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  acleone @robert-marik\n\nIf someone attempts to access a URL for a published worksheet that no longer exists (perhaps because the URL changed when the worksheet went through a published to unpublished to published cycle), or the URL was mistyped, they get a blank page titled \"Error | Sage Notebook\", with no hint on what to do to resolve the problem.\n\nIf they are trying to access a published worksheet that cannot be found, it is probably useful to redirect to the page with the list of published worksheets, perhaps after showing an error message like \"There is no worksheet currently available at this URL. You will be redirected to the <a href='URL of published worksheets index'>index of published worksheets</a> in 15 seconds.\"\n\nThis may be related to ticket 5988:\n\nhttp://trac.sagemath.org/sage_trac/ticket/5988\n\nIssue created by migration from https://trac.sagemath.org/ticket/6069\n\n",
+    "closed_at": "2010-05-04T04:42:50Z",
     "created_at": "2009-05-18T13:16:06Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "Blank notebook page when loading URL for published sheet that is AWOL",
+    "title": "Make error message for nonexistent published page more informative",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6069",
     "user": "https://trac.sagemath.org/admin/accounts/users/khorton"

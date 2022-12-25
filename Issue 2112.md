@@ -1,9 +1,10 @@
-# Issue 2112: __contains__ sometimes fails with SR elements due to == returning an equation
+# Issue 2112: [with patch, with positive review] __contains__ sometimes fails with SR elements due to == returning an equation
 
 archive/issues_002112.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: SR(2) in ZZ\nFalse\n```\n\nThis is easy to fix by having __contains__ use bool(foo==bar) rather than just foo == bar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2112\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: SR(2) in ZZ\nFalse\n```\n\nThis is easy to fix by having __contains__ use bool(foo==bar) rather than just foo == bar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2112\n\n",
+    "closed_at": "2008-02-15T04:51:38Z",
     "created_at": "2008-02-08T13:02:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_002112.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "__contains__ sometimes fails with SR elements due to == returning an equation",
+    "title": "[with patch, with positive review] __contains__ sometimes fails with SR elements due to == returning an equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2112",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 ```
 sage: SR(2) in ZZ

@@ -1,21 +1,25 @@
-# Issue 3526: notebook -- change favicon to the new one seen at the new sagemath.org web site
+# Issue 3526: [with patch, positive review] notebook -- change favicon to the new one seen at the new sagemath.org web site
 
 archive/issues_003526.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3526\n\n",
+    "body": "Assignee: TimothyClemans\n\nKeywords: editor_wstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3526\n\n",
+    "closed_at": "2008-07-06T02:38:43Z",
     "created_at": "2008-06-28T09:01:55Z",
     "labels": [
-        "component: notebook"
+        "component: notebook",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- change favicon to the new one seen at the new sagemath.org web site",
+    "title": "[with patch, positive review] notebook -- change favicon to the new one seen at the new sagemath.org web site",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3526",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
+
+Keywords: editor_wstein
 
 
 

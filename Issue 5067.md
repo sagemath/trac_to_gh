@@ -1,17 +1,17 @@
-# Issue 5067: linear_code -- four doctest failures in specture method='leon' exposed by #4588
+# Issue 5067: [with patch, positive review] linear_code -- four doctest failures in spectrum method='leon' exposed by #4588
 
 archive/issues_005067.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nWhen doing #4588 to fix some \"doctests never got run\" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. \n\nThey are in linear_code.py:\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1984:\n    sage: C.spectrum(method=\"leon\")\nExpected:\n    [1, 0, 0, 7, 7, 0, 0, 1]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0]\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1988:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1993:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1998:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot: \n    False\n**********************************************************************\n1 items had failures:\n   4 of  17 in __main__.example_44\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5067\n\n",
+    "closed_at": "2009-01-24T15:29:36Z",
     "created_at": "2009-01-23T09:26:08Z",
     "labels": [
         "component: coding theory",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "linear_code -- four doctest failures in specture method='leon' exposed by #4588",
+    "title": "[with patch, positive review] linear_code -- four doctest failures in spectrum method='leon' exposed by #4588",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5067",
     "user": "https://github.com/williamstein"

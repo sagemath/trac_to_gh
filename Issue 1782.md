@@ -3,7 +3,8 @@
 archive/issues_001782.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: test doctest multi polynomial ideal reporducible\n\nIn multi_polynomial_ideal.py, the doctests for\n\n* complete_primary_decomposition\n* groebner_basis\n* primary_decomposition\n\nwork under `sage -t` but do not work from the `sage:` prompt.  Presumably there is some singular initialization that is not being reproduced at the prompt?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1782\n\n",
+    "body": "Assignee: @malb\n\nKeywords: test doctest multi polynomial ideal reproducible\n\nIn multi_polynomial_ideal.py, the doctests for\n\n* complete_primary_decomposition\n* groebner_basis\n* primary_decomposition\n\nwork under `sage -t` but do not work from the `sage:` prompt.  Presumably there is some singular initialization that is not being reproduced at the prompt?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1782\n\n",
+    "closed_at": "2008-04-01T12:23:38Z",
     "created_at": "2008-01-15T18:55:47Z",
     "labels": [
         "component: commutative algebra",
@@ -19,7 +20,7 @@ archive/issues_001782.json:
 ```
 Assignee: @malb
 
-Keywords: test doctest multi polynomial ideal reporducible
+Keywords: test doctest multi polynomial ideal reproducible
 
 In multi_polynomial_ideal.py, the doctests for
 

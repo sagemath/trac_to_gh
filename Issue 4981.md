@@ -1,15 +1,16 @@
-# Issue 4981: [with patch, needs review] clean up polynomial_ring.py
+# Issue 4981: [with patch, positive review] clean up polynomial_ring.py
 
 archive/issues_004981.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @malb\n\nThe way element classes are chosen in `sage/rings/polynomial/polynomial_ring.py` goes very much against object oriented design, and is basically ugly. :)\n\nAttached patch tries to clean up this file, moves the decision of element classes to the immediate parents, adds some tests, and unifies the `__call__` methods. This also makes it much easier to add support for specialized polynomial classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4981\n\n",
+    "closed_at": "2009-01-24T17:45:36Z",
     "created_at": "2009-01-15T13:17:33Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] clean up polynomial_ring.py",
+    "title": "[with patch, positive review] clean up polynomial_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4981",
     "user": "https://github.com/burcin"

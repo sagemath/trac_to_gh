@@ -1,31 +1,59 @@
-# Issue 71: Secret transation of .sage to .py causes confusion
+# Issue 71: Better tracebacks
 
 archive/issues_000071.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWhen a .sage file is \"load\"ed or \"attach\"ed, it gets translated to a .py file before being processed; the result is a file with different structure than the original.  Any errors are described in terms of the .py file, not the .sage file.  I realize this is a kind of Catch-22, but is there a way to (as the C preprocessor does) keep the .sage line numbers?\n\nOf course this requires that Python have that ability, because it reports the errors.\n\nI suppose the proper solution, given this, is to document the issue.\n\nI think this points up an aspect of a fundamental issue: SAGE is a programming language/system; SAGE is a computer system for mathematicians to use.  I'm not sure how good it can be at both.\n\nIssue created by migration from https://trac.sagemath.org/ticket/71\n\n",
+    "body": "Assignee: cwitty\n\nWhen a .sage file is \"load\"ed or \"attach\"ed, it gets translated to a .py file before being processed; the result is a file with different structure than the original.  Any errors are described in terms of the .py file, not the .sage file.\n\nOne working solution is to monkey-patch `traceback.extract_tb()` to undo preparsing.\n\nThe traceback below was generated with this patch. It shows the unpreparsed `1/0` and it also shows the Cython source (see #17382):\n\n```\nsage: 1/0\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n<ipython-input-1-3cdd7c9e2324> in <module>()\n----> 1 1/0\n\n/usr/local/src/sage-config/sage/structure/element.pyx in sage.structure.element.RingElement.__div__ (build/cythonized/sage/structure/element.c:17829)()\n   1891                 return (<RingElement>self)._idiv_(<RingElement>right)\n   1892             else:\n-> 1893                 return (<RingElement>self)._div_(<RingElement>right)\n   1894         global coercion_model\n   1895         return coercion_model.bin_op(self, right, div)\n\n/usr/local/src/sage-config/sage/rings/integer.pyx in sage.rings.integer.Integer._div_ (build/cythonized/sage/rings/integer.c:12964)()\n   1795         # This is vastly faster than doing it here, since here\n   1796         # we can't cimport rationals.\n-> 1797         return the_integer_ring._div(self, right)\n   1798 \n   1799     def __floordiv__(x, y):\n\n/usr/local/src/sage-config/sage/rings/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div (build/cythonized/sage/rings/integer_ring.c:4578)()\n    443         cdef rational.Rational x = PY_NEW(rational.Rational)\n    444         if mpz_sgn(right.value) == 0:\n--> 445             raise ZeroDivisionError, 'Rational division by zero'\n    446         mpz_set(mpq_numref(x.value), left.value)\n    447         mpz_set(mpq_denref(x.value), right.value)\n\nZeroDivisionError: Rational division by zero\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/71\n\n",
     "created_at": "2006-09-20T21:40:01Z",
     "labels": [
-        "component: basic arithmetic",
-        "minor",
-        "bug"
+        "component: misc",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
-    "title": "Secret transation of .sage to .py causes confusion",
+    "title": "Better tracebacks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/71",
     "user": "Justin Walker (justin@mac.com)"
 }
 ```
-Assignee: somebody
+Assignee: cwitty
 
-When a .sage file is "load"ed or "attach"ed, it gets translated to a .py file before being processed; the result is a file with different structure than the original.  Any errors are described in terms of the .py file, not the .sage file.  I realize this is a kind of Catch-22, but is there a way to (as the C preprocessor does) keep the .sage line numbers?
+When a .sage file is "load"ed or "attach"ed, it gets translated to a .py file before being processed; the result is a file with different structure than the original.  Any errors are described in terms of the .py file, not the .sage file.
 
-Of course this requires that Python have that ability, because it reports the errors.
+One working solution is to monkey-patch `traceback.extract_tb()` to undo preparsing.
 
-I suppose the proper solution, given this, is to document the issue.
+The traceback below was generated with this patch. It shows the unpreparsed `1/0` and it also shows the Cython source (see #17382):
 
-I think this points up an aspect of a fundamental issue: SAGE is a programming language/system; SAGE is a computer system for mathematicians to use.  I'm not sure how good it can be at both.
+```
+sage: 1/0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-1-3cdd7c9e2324> in <module>()
+----> 1 1/0
+
+/usr/local/src/sage-config/sage/structure/element.pyx in sage.structure.element.RingElement.__div__ (build/cythonized/sage/structure/element.c:17829)()
+   1891                 return (<RingElement>self)._idiv_(<RingElement>right)
+   1892             else:
+-> 1893                 return (<RingElement>self)._div_(<RingElement>right)
+   1894         global coercion_model
+   1895         return coercion_model.bin_op(self, right, div)
+
+/usr/local/src/sage-config/sage/rings/integer.pyx in sage.rings.integer.Integer._div_ (build/cythonized/sage/rings/integer.c:12964)()
+   1795         # This is vastly faster than doing it here, since here
+   1796         # we can't cimport rationals.
+-> 1797         return the_integer_ring._div(self, right)
+   1798 
+   1799     def __floordiv__(x, y):
+
+/usr/local/src/sage-config/sage/rings/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div (build/cythonized/sage/rings/integer_ring.c:4578)()
+    443         cdef rational.Rational x = PY_NEW(rational.Rational)
+    444         if mpz_sgn(right.value) == 0:
+--> 445             raise ZeroDivisionError, 'Rational division by zero'
+    446         mpz_set(mpq_numref(x.value), left.value)
+    447         mpz_set(mpq_denref(x.value), right.value)
+
+ZeroDivisionError: Rational division by zero
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/71
 

@@ -4,9 +4,11 @@ archive/issues_000167.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n(1) put the date of each SAGE release in the source download list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/167\n\n",
+    "closed_at": "2007-08-22T19:49:54Z",
     "created_at": "2006-11-07T09:51:07Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "sage web site fixes",

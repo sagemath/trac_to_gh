@@ -4,6 +4,7 @@ archive/issues_009438.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: log finite field pari\n\nMotivated by a bug hunt for #2420, I found:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()\nb\nsage: GF(7)(5).log()\n5\nsage: b._pari_()\nMod(3, 7)\n```\n\nThe reason is that in the `log` method, the string\n\n```\n'b=Mod(%s,%s); if(znorder(b)!=eulerphi(%s),-1,znlog(%s,b))'%(b, self.__modulus.sageInteger,\n                                                                           self.__modulus.sageInteger, self)\n```\nis evaluated in `pari`, so that afterwards `pari('b')` isn't doing what it should.\n\nSince this bug is triggered whenever a GAP representation of a finite field element is created, I mark this ticket \"critical\". I hope \"basic arithmetic\" is the right component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9438\n\n",
+    "closed_at": "2010-07-20T09:17:28Z",
     "created_at": "2010-07-06T15:34:02Z",
     "labels": [
         "component: basic arithmetic",

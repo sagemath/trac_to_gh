@@ -4,6 +4,7 @@ archive/issues_005969.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  boothby\n\nThis will depend on #5882.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5969\n\n",
+    "closed_at": "2010-04-29T05:13:21Z",
     "created_at": "2009-05-03T05:49:30Z",
     "labels": [
         "component: number theory"

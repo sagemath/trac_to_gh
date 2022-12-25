@@ -3,7 +3,7 @@
 archive/issues_008822.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: combinat, family\n\n```\nsage: f = Family(Zmod(3), lambda i: 2*i, lazy=False)\nsage: f\nLazy family (<lambda>(i))_{i in Ring of integers modulo 3}\n```\n\nShould we really just silently ignore the intent here, or should\n\n`Family(S, f, lazy=False)` always return `Family([i for i in S], f)`\n\n(I guess the default for lazy should then be made 'None' so that 'True',\n'False' and 'None' could all have different behaviors.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8822\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: combinat, family\n\n```\nsage: f = Family(Zmod(3), lambda i: 2*i, lazy=False)\nsage: f\nLazy family (<lambda>(i))_{i in Ring of integers modulo 3}\n```\n\nShould we really just silently ignore the intent here, or should\n\n`Family(S, f, lazy=False)` always return `Family([i for i in S], f)`\n\n(I guess the default for lazy should then be made 'None' so that 'True',\n'False' and 'None' could all have different behaviors.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8822\n\n",
     "created_at": "2010-04-29T12:25:31Z",
     "labels": [
         "component: combinatorics",
@@ -16,7 +16,7 @@ archive/issues_008822.json:
     "user": "https://github.com/jbandlow"
 }
 ```
-Assignee: sage-combinat
+Assignee: @hivert
 
 CC:  sage-combinat
 

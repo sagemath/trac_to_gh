@@ -3,7 +3,8 @@
 archive/issues_008155.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nOtherwise a KeyboardInterrupt will be ignored during the call to ratpoints.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8155\n\n",
+    "body": "Assignee: @JohnCremona\n\nOtherwise a `KeyboardInterrupt` will be ignored during the call to ratpoints.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8155\n\n",
+    "closed_at": "2010-02-11T14:30:53Z",
     "created_at": "2010-02-02T19:02:30Z",
     "labels": [
         "component: elliptic curves",
@@ -18,7 +19,7 @@ archive/issues_008155.json:
 ```
 Assignee: @JohnCremona
 
-Otherwise a KeyboardInterrupt will be ignored during the call to ratpoints.
+Otherwise a `KeyboardInterrupt` will be ignored during the call to ratpoints.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8155
 

@@ -1,4 +1,4 @@
-# Issue 3862: axes in plot3d broken
+# Issue 3862: axes in jmol in the wrong place
 
 archive/issues_003862.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_003862.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "axes in plot3d broken",
+    "title": "axes in jmol in the wrong place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3862",
     "user": "https://trac.sagemath.org/admin/accounts/users/mclean"

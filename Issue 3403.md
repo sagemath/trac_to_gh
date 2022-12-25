@@ -1,16 +1,17 @@
-# Issue 3403: [with patch; needs review] get doctest coverage for rational up to 100%
+# Issue 3403: [with patch; with positive review] get doctest coverage for rational up to 100%
 
 archive/issues_003403.json:
 ```json
 {
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3403\n\n",
+    "closed_at": "2008-06-26T03:27:14Z",
     "created_at": "2008-06-12T15:14:25Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] get doctest coverage for rational up to 100%",
+    "title": "[with patch; with positive review] get doctest coverage for rational up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3403",
     "user": "https://github.com/williamstein"

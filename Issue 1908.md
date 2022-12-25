@@ -1,15 +1,16 @@
-# Issue 1908: Make it so that show plots a list as a grid
+# Issue 1908: [with patch, positive review] Make it so that show plots a list as a grid
 
 archive/issues_001908.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  ekirkman\n\nThis patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?\n\n\n```\n        sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(graphs(4), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show([plot(sin(i*x)) for i in range(30)]) # Two pages of images\n        sage: show([sin(i*x) for i in range(2)])\n        sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1908\n\n",
+    "closed_at": "2008-02-14T18:37:13Z",
     "created_at": "2008-01-24T03:56:49Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Make it so that show plots a list as a grid",
+    "title": "[with patch, positive review] Make it so that show plots a list as a grid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1908",
     "user": "https://github.com/jasongrout"

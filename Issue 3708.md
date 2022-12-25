@@ -1,22 +1,25 @@
-# Issue 3708: something screwy in the reference manual -- coding theory
+# Issue 3708: [with patch, positive review] something screwy in the reference manual -- very easy to fix!
 
 archive/issues_003708.json:
 ```json
 {
-    "body": "Assignee: wdjoyner\n\n```\n39. Coding Theory\n\n    * 39.1 Linear Codes\n    * 39.2 AUTHOR: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3708\n\n",
+    "body": "Assignee: wdjoyner\n\nIn the reference manual see the \"AUTHOR:\"\n\n```\n39. Coding Theory\n\n    * 39.1 Linear Codes\n    * 39.2 AUTHOR: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3708\n\n",
+    "closed_at": "2008-07-31T03:54:22Z",
     "created_at": "2008-07-22T14:17:04Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "something screwy in the reference manual -- coding theory",
+    "title": "[with patch, positive review] something screwy in the reference manual -- very easy to fix!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3708",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: wdjoyner
+
+In the reference manual see the "AUTHOR:"
 
 ```
 39. Coding Theory

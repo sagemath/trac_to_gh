@@ -4,6 +4,7 @@ archive/issues_004959.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu\n\nSee, e.g., this from sage-devel\n\n```\nI had a similar failure today, trying to:\n\nr.install_packages(\"adapt\")\n\nafter some fussing, runing ./sage as root, and using the notebook\ninterface I could get through the download phase, but same sorts of\nfailures in just as the gcc kicks in.  Seems several of the key R\nscripts have \"/home/wstein/...\"  hard wired in to R_HOME_XXX, which\nobviously will fail.  I tried editing the R startup scripts (among\nothers) but couldn't get it to work.\n\nBTW, I installed from the latest Debian tarball into a Debian/VMWARE\nmachine just today.  So installing R packages is still an issue.\n```\n\nSince most of the value of R is the huge list of third party packages, it's very important that this get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4959\n\n",
+    "closed_at": "2010-01-25T23:26:12Z",
     "created_at": "2009-01-09T16:36:50Z",
     "labels": [
         "component: packages: standard",

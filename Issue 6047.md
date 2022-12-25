@@ -4,6 +4,7 @@ archive/issues_006047.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThreading causes trouble when building ecl against boehm since we need to link threading libraries into ecl, so just don't enable them in boehm. \n\nWhile I am in there also remove all the OSX crap from some finder indexing run.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6047\n\n",
+    "closed_at": "2009-05-16T00:18:04Z",
     "created_at": "2009-05-15T21:21:09Z",
     "labels": [
         "component: packages: standard",

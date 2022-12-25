@@ -3,7 +3,7 @@
 archive/issues_008623.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro @williamstein @robertwb ylchapuy\n\nI am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8623\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro @williamstein @robertwb ylchapuy\n\nKeywords: lcalc\n\nI am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented. Depends on #5396 and #8621\n\nIssue created by migration from https://trac.sagemath.org/ticket/8623\n\n",
     "created_at": "2010-03-29T12:54:49Z",
     "labels": [
         "component: number theory"
@@ -18,7 +18,9 @@ Assignee: @williamstein
 
 CC:  bober @JohnCremona @craigcitro @williamstein @robertwb ylchapuy
 
-I am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.
+Keywords: lcalc
+
+I am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented. Depends on #5396 and #8621
 
 Issue created by migration from https://trac.sagemath.org/ticket/8623
 

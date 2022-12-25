@@ -4,6 +4,7 @@ archive/issues_000855.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt would be very helpful if \"sage -optional\" and \"sage -experimental\" listed one- or two-sentence descriptions of each package.  (Several of the packages I had to look up using Google.  Also, it was only by accident that I discovered that \"axiom4sage\" was the complete axiom distribution, rather than just an axiom interface.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/855\n\n",
+    "closed_at": "2009-12-18T06:02:08Z",
     "created_at": "2007-10-12T01:06:43Z",
     "labels": [
         "component: user interface",

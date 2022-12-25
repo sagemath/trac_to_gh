@@ -1,22 +1,23 @@
-# Issue 2149: Rename BooleanPolynomialRing
+# Issue 2149: [with patch, needs review] Rename BooleanPolynomialRing
 
 archive/issues_002149.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nWilliam Stein wrote in #2146:\n\n\"\"\"\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead of `BooleanPolynomialRing` I suggest this for two reasons: \n* It is `PolyBoRi`, after all, not `BoPolyRi`. \n* The other Sage polynomial ring(s) starts with \"Polynomial\" \n\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2149\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @burcin\n\nKeywords: polybori\n\nWilliam Stein wrote in #2146:\n\n\"\"\"\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead of `BooleanPolynomialRing` I suggest this for two reasons: \n* It is `PolyBoRi`, after all, not `BoPolyRi`. \n* The other Sage polynomial ring(s) starts with \"Polynomial\" \n\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2149\n\n",
+    "closed_at": "2008-03-29T00:09:37Z",
     "created_at": "2008-02-13T13:11:35Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Rename BooleanPolynomialRing",
+    "title": "[with patch, needs review] Rename BooleanPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2149",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @malb
+Assignee: @mwhansen
 
 CC:  @burcin
 

@@ -1,16 +1,17 @@
-# Issue 2542: [with patch, needs review] implement right_kernel() and right_nullity() for matrices
+# Issue 2542: [with patch, positive review] implement right_kernel() and right_nullity() for matrices
 
 archive/issues_002542.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI implemented right_kernel() and right_nullity() for matrices in the simplest possible way (calling the left_ functions on the transpose of self).  This is a tiny little step in the direction of #1607.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2542\n\n",
+    "closed_at": "2008-03-16T07:06:50Z",
     "created_at": "2008-03-16T03:49:14Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] implement right_kernel() and right_nullity() for matrices",
+    "title": "[with patch, positive review] implement right_kernel() and right_nullity() for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2542",
     "user": "https://github.com/aghitza"

@@ -4,6 +4,7 @@ archive/issues_008504.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis is an easy fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8504\n\n",
+    "closed_at": "2010-04-16T18:44:50Z",
     "created_at": "2010-03-11T23:39:13Z",
     "labels": [
         "component: algebra",

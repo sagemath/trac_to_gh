@@ -1,9 +1,10 @@
-# Issue 6943: Make @parallel work for callable objects
+# Issue 6943: Make @parallel more robust
 
 archive/issues_006943.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @craigcitro @rlmill\n\nThe following should work:\n\n```\n@parallel\n@cached_function\ndef foo(x):\n    return x+1\n```\n\nhowever, when we attempt to evaluate foo...\n\n```\nsage: for k in foo(range(200)):\n...       print k\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/boothby/.sage/sage_notebook/worksheets/admin/69/code/995.py\", line 7, in <module>\n    for k in foo(range(_sage_const_200 )):\\u000a    print k\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/boothby/sage/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 63, in parallel_iter\n    fp = pickle_function(f)\n  File \"fpickle.pyx\", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)\nAttributeError: 'CachedFunction' object has no attribute 'func_code'\n```\n\nIf any callable object is picklable, it should work with the parallel decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6943\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @craigcitro @rlmill\n\nAt the present, `@`parallel calls pickle_function() on its argument.  However, the documentation claims that it should work with any callable object.  Additionally, it should be possible to stop computations after a certain amount of time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6943\n\n",
+    "closed_at": "2010-01-31T18:21:20Z",
     "created_at": "2009-09-16T02:07:16Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_006943.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "Make @parallel work for callable objects",
+    "title": "Make @parallel more robust",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6943",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -21,33 +22,7 @@ Assignee: boothby
 
 CC:  @williamstein @craigcitro @rlmill
 
-The following should work:
-
-```
-@parallel
-@cached_function
-def foo(x):
-    return x+1
-```
-
-however, when we attempt to evaluate foo...
-
-```
-sage: for k in foo(range(200)):
-...       print k
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/boothby/.sage/sage_notebook/worksheets/admin/69/code/995.py", line 7, in <module>
-    for k in foo(range(_sage_const_200 )):\u000a    print k
-  File "", line 1, in <module>
-    
-  File "/scratch/boothby/sage/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py", line 63, in parallel_iter
-    fp = pickle_function(f)
-  File "fpickle.pyx", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)
-AttributeError: 'CachedFunction' object has no attribute 'func_code'
-```
-
-If any callable object is picklable, it should work with the parallel decorator.
+At the present, `@`parallel calls pickle_function() on its argument.  However, the documentation claims that it should work with any callable object.  Additionally, it should be possible to stop computations after a certain amount of time.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6943
 

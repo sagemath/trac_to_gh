@@ -1,16 +1,17 @@
-# Issue 3328: minor fix rpy
+# Issue 3328: [with patch, positive review] set correct RHOME for rpy
 
 archive/issues_003328.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nA problem was reported to me a month or two ago and I was hit by it\nwhen I built sage-3.0.2 from scratch (rather than by sage -upgrade).\nrpy didn't build because RHOME was not defined. This may be required \nbecause I have not only sage version of R but also a system provided\nversion. After adding a line in rpy spkg-install pointing RHOME to \nSAGE_LOCAL/lib/R it did build without problem.\nHowever a test failed:\nsage -t  devel/sage/sage/stats/test.py                      **********************************************************************\nFile \"/home/francois/Work/SAGE/tmp/test.py\", line 5:\n    sage: import rpy\nException raised:\n    Traceback (most recent call last):\n      File \"/home/francois/Work/SAGE/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[1]>\", line 1, in <module>\n        import rpy###line 5:\n    sage: import rpy\n      File \"/home/francois/Work/SAGE/local/lib/python2.5/site-packages/rpy.py\", line 58, in <module>\n        RVERSION = rpy_tools.get_R_VERSION(RHOME)\n      File \"/home/francois/Work/SAGE/local/lib/python2.5/site-packages/rpy_tools.py\", line 99, in get_R_VERSION\n        \" `%s'.\\n\" % rexec )\n    RuntimeError: Couldn't execute the R interpreter `/usr/lib/R/bin/R'.\n\n================\nAs one can see sage's rpy was trying to use the system provided R rather\nthan sage's own. An extra line in sage-env  took care of that.\n2 small patch attached to cover this corner case. Note that the patches\nwon't make any difference to people not affected by this issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3328\n\n",
+    "closed_at": "2008-05-29T14:42:27Z",
     "created_at": "2008-05-29T09:38:16Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "minor fix rpy",
+    "title": "[with patch, positive review] set correct RHOME for rpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3328",
     "user": "https://github.com/kiwifb"

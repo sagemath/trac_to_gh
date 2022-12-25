@@ -1,9 +1,10 @@
-# Issue 2799: matrix's __getitem__ doesn't respect slice object's step attribute
+# Issue 2799: [with patch, positive review ]matrix's __getitem__ doesn't respect slice object's step attribute
 
 archive/issues_002799.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\nEx: ` A[:,0:4:2]` should return the 0th and 2nd column of A, if possible:\n\n```\nage: A = matrix(ZZ,3,4, [3, 2, -5, 0, 1, -1, 1, -4, 1, 0, 1, -3]); A\n[ 3  2 -5  0]\n[ 1 -1  1 -4]\n[ 1  0  1 -3]\n\nsage: A[:,0:4:2]\n[ 3  2 -5  0]\n[ 1 -1  1 -4]\n[ 1  0  1 -3]\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2799\n\n",
+    "closed_at": "2008-04-05T16:56:53Z",
     "created_at": "2008-04-04T19:09:31Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_002799.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "matrix's __getitem__ doesn't respect slice object's step attribute",
+    "title": "[with patch, positive review ]matrix's __getitem__ doesn't respect slice object's step attribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2799",
     "user": "https://github.com/dfdeshom"

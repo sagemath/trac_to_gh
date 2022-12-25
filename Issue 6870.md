@@ -1,9 +1,10 @@
-# Issue 6870: [with patch, needs review] Bug in binomial
+# Issue 6870: [with patch, positive review] Bug in binomial
 
 archive/issues_006870.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: binomial\n\nHere are two cases where binomial fails. I think it is not\nproperly converting its arguments to Integers in all cases where\nit should.\n\n```\nsage: binomial(1/2,1/1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/hakan/.sage/temp/joker/27910/_home_hakan__sage_init_sage_0.py in <module>()\n\n/media/megadisk/sage-4.1.1/local/lib/python2.6/site-packages/sage/rings/arith.py in binomial(x, m)\n   2602             except AttributeError:\n   2603                 pass\n-> 2604             raise TypeError, 'Either m or x-m must be an integer'\n   2605     if isinstance(x, (int, long, integer.Integer)):\n   2606         if x >= 0 and (m < 0 or m > x):\n\nTypeError: Either m or x-m must be an integer\n```\n\n```\nsage: binomial(10^20+1/1,10^20) \n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/hakan/.sage/temp/joker/27910/_home_hakan__sage_init_sage_0.py in <module>()\n\n/media/megadisk/sage-4.1.1/local/lib/python2.6/site-packages/sage/rings/arith.py in binomial(x, m)\n   2625         from sage.functions.all import gamma\n   2626         return gamma(x+1)/gamma(P(m+1))/gamma(x-m+1)\n-> 2627     return misc.prod([x-i for i in xrange(m)]) / P(factorial(m))\n   2628 \n   2629 def multinomial(*ks):\n\nOverflowError: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6870\n\n",
+    "closed_at": "2009-09-30T08:26:28Z",
     "created_at": "2009-09-02T20:20:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_006870.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Bug in binomial",
+    "title": "[with patch, positive review] Bug in binomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6870",
     "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"

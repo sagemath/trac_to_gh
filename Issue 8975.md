@@ -3,7 +3,8 @@
 archive/issues_008975.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe class sage.combinat.root_system.type_reducible.CartanType\nis missing an is_crystalographic and is_simply_laced\n\n```\n sage: R = CartanType(\"D4xA5\")\n sage: R.is_crystalographic()\n sage: R.is_simply_laced()\n```\n\nThese both give False which is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8975\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: days38\n\nThe class sage.combinat.root_system.type_reducible.CartanType\nis missing an is_crystalographic and is_simply_laced\n\n```\n sage: R = CartanType(\"D4xA5\")\n sage: R.is_crystalographic()\n sage: R.is_simply_laced()\n```\n\nThese both give False which is incorrect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8975\n\n",
+    "closed_at": "2012-05-21T08:06:48Z",
     "created_at": "2010-05-15T21:25:22Z",
     "labels": [
         "component: algebra",
@@ -17,6 +18,8 @@ archive/issues_008975.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: days38
 
 The class sage.combinat.root_system.type_reducible.CartanType
 is missing an is_crystalographic and is_simply_laced

@@ -3,7 +3,8 @@
 archive/issues_008380.json:
 ```json
 {
-    "body": "Assignee: Franco Saliola\n\nCC:  sage-combinat joyner @seblabbe jmichel@math.jussieu.fr\n\nKeywords: gap3, chevie, specht, gap, sage-combinat\n\nIt would be great to have an interface to GAP3 so that one can use GAP3 packages that have not been ported to GAP4. Of particular interest are the packages (sage-devel occasionally receives questions about integrating these packages):\n\n* CHEVIE: Finite reflection groups and their root systems, braid groups, Iwahori-Hecke algebras, and Kazhdan-Lusztig polynomials. \n* Specht: Specht: Decomposition matrices for the Hecke algebras of type A.\n\nFor a list of other GAP3 packages, check out [http://www.gap-system.org/Gap3/Packages3/packages.html](http://www.gap-system.org/Gap3/Packages3/packages.html).\n\nTo be clear, I am not suggesting distributing GAP3 with Sage. This would be just an to GAP3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8380\n\n",
+    "body": "Assignee: Franco Saliola\n\nCC:  sage-combinat joyner @seblabbe jmichel@math.jussieu.fr\n\nKeywords: gap3, chevie, specht, gap, sage-combinat\n\nIt would be great to have an interface to GAP3 so that one can use GAP3 packages that have not been ported to GAP4. Of particular interest are the packages (sage-devel occasionally receives questions about integrating these packages):\n\n* CHEVIE: Finite reflection groups and their root systems, braid groups, Iwahori-Hecke algebras, and Kazhdan-Lusztig polynomials. \n* Specht: Specht: Decomposition matrices for the Hecke algebras of type A.\n\nFor a list of other GAP3 packages, check out\n\n  [http://www.gap-system.org/Gap3/Packages3/packages.html](http://www.gap-system.org/Gap3/Packages3/packages.html)\n\nTo use the interface implemented in this ticket, you need to have GAP3 installed on your machine.\n\nTo this end, you can use Jean Michel's GAP3 distribution\nhttp://www.math.jussieu.fr/~jmichel/gap3/gap3-jm4.tar.gz\n(instructions: http://www.math.jussieu.fr/~jmichel/gap3), which\nincludes a bunch of GAP3 packages (including Chevie, Specht, ...),\n\nA simple alternative is to install the following Sage package\nbased on a slightly outdated version of the above.\n\n```\n    sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8380\n\n",
+    "closed_at": "2010-06-09T02:23:31Z",
     "created_at": "2010-02-26T17:20:39Z",
     "labels": [
         "component: interfaces"
@@ -26,9 +27,24 @@ It would be great to have an interface to GAP3 so that one can use GAP3 packages
 * CHEVIE: Finite reflection groups and their root systems, braid groups, Iwahori-Hecke algebras, and Kazhdan-Lusztig polynomials. 
 * Specht: Specht: Decomposition matrices for the Hecke algebras of type A.
 
-For a list of other GAP3 packages, check out [http://www.gap-system.org/Gap3/Packages3/packages.html](http://www.gap-system.org/Gap3/Packages3/packages.html).
+For a list of other GAP3 packages, check out
 
-To be clear, I am not suggesting distributing GAP3 with Sage. This would be just an to GAP3.
+  [http://www.gap-system.org/Gap3/Packages3/packages.html](http://www.gap-system.org/Gap3/Packages3/packages.html)
+
+To use the interface implemented in this ticket, you need to have GAP3 installed on your machine.
+
+To this end, you can use Jean Michel's GAP3 distribution
+http://www.math.jussieu.fr/~jmichel/gap3/gap3-jm4.tar.gz
+(instructions: http://www.math.jussieu.fr/~jmichel/gap3), which
+includes a bunch of GAP3 packages (including Chevie, Specht, ...),
+
+A simple alternative is to install the following Sage package
+based on a slightly outdated version of the above.
+
+```
+    sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8380
 

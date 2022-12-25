@@ -1,15 +1,17 @@
-# Issue 6489: [with patch, work in progress ...] Allow Sage to call R (statistics)
+# Issue 6489: Allow Sage to call R (statistics)
 
 archive/issues_006489.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: statistics, R,\n\nHere we have the start of a \"bridge\" between Sage and R.\n\nThe R c language api is used to call R functions from Python.\n\nThis code mostly handles converting between Sage (Python) and R types.\n\nThe way it works is Python calls the callTypedArgs function defined in this module, passing in the name of the R function to call, a string specifying types of the parameters the function expects and what the function returns, then a list of Python Objects (such Sage integers, or vectors or matrices) for the parameters. R_bridge then creates the equivalent simple expressions in R for the passed Python objects, calls the given function in R, and then converts back from the returned R simple expression to a Python Object.\n\nThe way to expose R's functionality nicely in Sage using this is then to create a Sage file (like statistics.py) that uses R_bridge to call R functions. This file would wrap up the ugly parameter and return type specifier string.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6489\n\n",
+    "closed_at": "2013-07-23T15:01:05Z",
     "created_at": "2009-07-08T20:27:49Z",
     "labels": [
-        "component: statistics"
+        "component: statistics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, work in progress ...] Allow Sage to call R (statistics)",
+    "title": "Allow Sage to call R (statistics)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6489",
     "user": "https://trac.sagemath.org/admin/accounts/users/sjanke"

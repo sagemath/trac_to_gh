@@ -1,15 +1,16 @@
-# Issue 6044: Enhanced reduction modulo ideals of number fields
+# Issue 6044: [with patch, positive review] Enhanced reduction modulo ideals of number fields
 
 archive/issues_006044.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\nKeywords: number fields, ideals\n\n1. Modify \"residues\" function so that it returns a canonical set of coset representatives.\n\n2. New \"reduce\" function for number field ideals that returns the canonical reduced representative of a given integral element: I.reduce(f) is an element of the set of representatives returned by I.residues(). \n\n3. Have \"inverse_mod\" working for integral elements of a number field without having to coerce to the ring of integers (using existing  functionality for order elements)\n\n\nPatch based on 3.4.2 to follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6044\n\n",
+    "closed_at": "2009-06-13T20:46:05Z",
     "created_at": "2009-05-15T09:24:14Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Enhanced reduction modulo ideals of number fields",
+    "title": "[with patch, positive review] Enhanced reduction modulo ideals of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6044",
     "user": "https://trac.sagemath.org/admin/accounts/users/mtaranes"

@@ -3,7 +3,7 @@
 archive/issues_007664.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout @gvol\n\nKeywords: latex, R, jsmath\n\njsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.\n\n```\nsage: r.data('Cars93')\n[1] \"sage0\"\nsage: a._latex_()\n\n% latex.default(sage3, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{l}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\nsage0\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7664\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout @gvol\n\nKeywords: latex, R, jsmath, r-project\n\njsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.\n\n```\nsage: r.data('Cars93')\n[1] \"sage0\"\nsage: a._latex_()\n\n% latex.default(sage3, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{l}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\nsage0\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7664\n\n",
     "created_at": "2009-12-11T20:11:23Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,7 @@ Assignee: tbd
 
 CC:  @jasongrout @gvol
 
-Keywords: latex, R, jsmath
+Keywords: latex, R, jsmath, r-project
 
 jsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.
 

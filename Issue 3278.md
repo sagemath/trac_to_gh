@@ -1,9 +1,10 @@
-# Issue 3278: [with patch, needs review] update the crystal iterator to use the new backtracking code
+# Issue 3278: [with patch, positive review] update the crystal iterator to use the new backtracking code
 
 archive/issues_003278.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3278\n\n",
+    "closed_at": "2008-05-26T06:19:40Z",
     "created_at": "2008-05-23T10:12:49Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_003278.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] update the crystal iterator to use the new backtracking code",
+    "title": "[with patch, positive review] update the crystal iterator to use the new backtracking code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3278",
     "user": "https://github.com/mwhansen"

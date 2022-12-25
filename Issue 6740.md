@@ -1,15 +1,16 @@
-# Issue 6740: upgrade mpmath to 0.13
+# Issue 6740: [with spkg, positive review] upgrade mpmath to 0.13
 
 archive/issues_006740.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @fredrik-johansson\n\nThe latest version of mpmath is now 0.13. Upgrade Sage to use that latest version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6740\n\n",
+    "closed_at": "2009-09-02T09:44:53Z",
     "created_at": "2009-08-13T19:24:19Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "upgrade mpmath to 0.13",
+    "title": "[with spkg, positive review] upgrade mpmath to 0.13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6740",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -1,15 +1,16 @@
-# Issue 2187: [with patch, needs review] improve refman autogeneration; add and rewrite much reference manual text
+# Issue 2187: [with patch, with positive review] improve refman autogeneration; add and rewrite much reference manual text
 
 archive/issues_002187.json:
 ```json
 {
     "body": "Assignee: tba\n\nI have two patches.  One, for hg_doc, improves the consistency between the formatting of module docstrings, class docstrings, and function docstrings.  The main effect of this is that \"AUTHORS:\" blocks are now specially translated in class docstrings, to match the behavior of module and function docstrings.\n\nThe other patch, for hg_sage, adds and rewrites a fair bit of text: fixing typos, adding LaTeX formatting, etc.\n\nI also snuck in a bugfix: `IntegerMod_gmp` and `IntegerMod_int` had an `__index__` method, so that values could be used as array indices; but the method was missing from `IntegerMod_int64`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2187\n\n",
+    "closed_at": "2008-02-17T13:04:56Z",
     "created_at": "2008-02-17T05:35:37Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] improve refman autogeneration; add and rewrite much reference manual text",
+    "title": "[with patch, with positive review] improve refman autogeneration; add and rewrite much reference manual text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2187",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

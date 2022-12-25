@@ -4,6 +4,7 @@ archive/issues_006324.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/combinat/sloane_functions.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/sloane_functions.py\", line 354:\n    sage: sloane.A000001._eval(51) #optional requires database_gap\nExpected nothing\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_13\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6324\n\n",
+    "closed_at": "2015-07-17T20:05:53Z",
     "created_at": "2009-06-16T14:54:36Z",
     "labels": [
         "component: packages: optional",

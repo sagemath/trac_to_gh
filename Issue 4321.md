@@ -1,16 +1,18 @@
-# Issue 4321: wrong Unix permissions
+# Issue 4321: [with spkg, with positive review] wrong Unix permissions in some PolyBoRi files
 
 archive/issues_004321.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  polybori\n\nThe Unix permissions are too restrictive in sage-3.1.4, they don't allow installation on a\nmulti-user system:\n\n```\ndrwx------ 12 zimmerma cacao 4096 2008-10-17 10:13 /usr/local/sage-3.1.4/sage/local/include/boost\n-rw-------  1 zimmerma cacao 2664 2008-09-01 15:36 /usr/local/sage-3.1.4/sage/local/man/man1/ipbori.1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4321\n\n",
+    "closed_at": "2008-12-01T08:16:47Z",
     "created_at": "2008-10-18T20:33:42Z",
     "labels": [
         "component: distribution",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "wrong Unix permissions",
+    "title": "[with spkg, with positive review] wrong Unix permissions in some PolyBoRi files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4321",
     "user": "https://github.com/zimmermann6"

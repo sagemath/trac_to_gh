@@ -1,22 +1,25 @@
-# Issue 6828: [with patch, needs review] Random Bipartite Graph
+# Issue 6828: [with patch, positive review] Random Bipartite Graph
 
 archive/issues_006828.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nI needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)\n\nI used the position dictionary from CompleteBipartiteGraph, so we should be out of trouble on this point ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6828\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: bipartite graph generator\n\nI needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)\n\nI used the position dictionary from CompleteBipartiteGraph, so we should be out of trouble on this point ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6828\n\n",
+    "closed_at": "2009-10-15T10:11:12Z",
     "created_at": "2009-08-26T13:36:17Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] Random Bipartite Graph",
+    "title": "[with patch, positive review] Random Bipartite Graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6828",
     "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
+
+Keywords: bipartite graph generator
 
 I needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)
 

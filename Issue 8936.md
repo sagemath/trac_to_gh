@@ -4,10 +4,10 @@ archive/issues_008936.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nWhile lattice polytopes compute and store facet normals and shifts internally, there were no functions to access them. This patch adds functions facet_normal and facet_constant to fix the situation.\n\nI have also fixed a typo in the docstring of ReflexivePolytope, which has probably occurred during automatic conversion of docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8936\n\n",
+    "closed_at": "2010-06-07T05:18:45Z",
     "created_at": "2010-05-09T04:24:47Z",
     "labels": [
-        "component: geometry",
-        "bug"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Expose facet inequalities for lattice polytopes",

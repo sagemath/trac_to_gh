@@ -4,6 +4,7 @@ archive/issues_004331.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @slel\n\nChange the sage vmware image so there is another login option:\n\n```\nlogin: keyboard\n```\n\nThis would run `dpkg-reconfigure console-setup`\nas suggested by Martin Rubey in email:\n\n```\n>\n> Sorry, I meant, of all the things you tried was\n> just typing\n>\n>    dpkg-reconfigure console-setup\n>\n> the one and only thing you did, and that it worked?\n\nNearly: you will then be asked some simple questions which are obvious to\nanswer if you do not have an english keyboard.\n\n-- Martin Rubey\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4331\n\n",
+    "closed_at": "2021-09-01T07:08:45Z",
     "created_at": "2008-10-20T16:26:21Z",
     "labels": [
         "component: distribution",

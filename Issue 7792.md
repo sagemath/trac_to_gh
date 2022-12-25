@@ -1,9 +1,9 @@
-# Issue 7792: Improved docs and added Width and Height at /interfaces/povray.py
+# Issue 7792: Improved docs and INI support at /interfaces/povray.py
 
 archive/issues_007792.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: povray\n\nTo improve docs of Povray.\nTo have width and height parameters in Povray.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7792\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: povray\n\nTo improve docs of Povray, support for inifile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7792\n\n",
     "created_at": "2009-12-29T23:01:38Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +11,7 @@ archive/issues_007792.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Improved docs and added Width and Height at /interfaces/povray.py",
+    "title": "Improved docs and INI support at /interfaces/povray.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7792",
     "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
@@ -21,8 +21,7 @@ Assignee: @williamstein
 
 Keywords: povray
 
-To improve docs of Povray.
-To have width and height parameters in Povray.
+To improve docs of Povray, support for inifile.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7792
 

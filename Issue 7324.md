@@ -1,15 +1,16 @@
-# Issue 7324: improve order_from_multiple
+# Issue 7324: [with patch, positive review] improve order_from_multiple
 
 archive/issues_007324.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @JohnCremona @rhinton\n\nThis function is used in many places, and can be greatly improved.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7324\n\n",
+    "closed_at": "2009-11-07T12:15:14Z",
     "created_at": "2009-10-27T19:40:00Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "improve order_from_multiple",
+    "title": "[with patch, positive review] improve order_from_multiple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7324",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

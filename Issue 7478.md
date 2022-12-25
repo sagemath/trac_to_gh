@@ -1,43 +1,48 @@
-# Issue 7478: Remove "..." in the output of TestSuite.
+# Issue 7478: TestSuite improvements
 
 archive/issues_007478.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nKeywords: TestSuite\n\nWhen testing something in verbose mode the typical output of sage is:\n\n```\n\u00a0 \u00a0sage: P = Sets().example(\"inherits\")\n\u00a0 \u00a0sage: TestSuite(P).run(verbose=True)\n\u00a0 \u00a0running ._test_an_element() ... done\n\u00a0 \u00a0running ._test_element_pickling() ... done\n\u00a0 \u00a0running ._test_not_implemented_methods() ... done\n\u00a0 \u00a0running ._test_pickling() ... done\n\u00a0 \u00a0running ._test_some_elements() ... done\n```\nAnd there is some risks that the \"...\" match something they should'nt I change them to \"..\"\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7478\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: TestSuite\n\n- Changes \"... done\" to \". . . pass\" in the output of TestSuite().run(verbose = True) to avoid unintentional matches\n- Fix the doctests accordingly.\n- Adds skip option; use it in sage/combinat/sf/jack.py and orthotriang.py\n- In case of failure, execute the following tests after printing out a traceback, and write a summary at the end\n- Only use verbose=True in the doctests when useful (category examples)\n\n\nRationale for the ...: when testing something in verbose mode the typical output of sage is:\n\n```\n   sage: P = Sets().example(\"inherits\")\n   sage: TestSuite(P).run(verbose=True)\n   running ._test_an_element() ... done\n   running ._test_element_pickling() ... done\n   running ._test_not_implemented_methods() ... done\n   running ._test_pickling() ... done\n   running ._test_some_elements() ... done\n```\nAnd there is some risks that the \"...\" match something they should'nt I change them to \". . .\"\n\nSee discussion on sage-devel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7478\n\n",
+    "closed_at": "2009-11-19T17:01:35Z",
     "created_at": "2009-11-17T08:03:23Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Remove \"...\" in the output of TestSuite.",
+    "title": "TestSuite improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7478",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: tbd
+Assignee: @hivert
 
 CC:  sage-combinat
 
 Keywords: TestSuite
 
-When testing something in verbose mode the typical output of sage is:
+- Changes "... done" to ". . . pass" in the output of TestSuite().run(verbose = True) to avoid unintentional matches
+- Fix the doctests accordingly.
+- Adds skip option; use it in sage/combinat/sf/jack.py and orthotriang.py
+- In case of failure, execute the following tests after printing out a traceback, and write a summary at the end
+- Only use verbose=True in the doctests when useful (category examples)
+
+
+Rationale for the ...: when testing something in verbose mode the typical output of sage is:
 
 ```
-   sage: P = Sets().example("inherits")
-   sage: TestSuite(P).run(verbose=True)
-   running ._test_an_element() ... done
-   running ._test_element_pickling() ... done
-   running ._test_not_implemented_methods() ... done
-   running ._test_pickling() ... done
-   running ._test_some_elements() ... done
+   sage: P = Sets().example("inherits")
+   sage: TestSuite(P).run(verbose=True)
+   running ._test_an_element() ... done
+   running ._test_element_pickling() ... done
+   running ._test_not_implemented_methods() ... done
+   running ._test_pickling() ... done
+   running ._test_some_elements() ... done
 ```
-And there is some risks that the "..." match something they should'nt I change them to ".."
+And there is some risks that the "..." match something they should'nt I change them to ". . ."
 
-Cheers,
-
-Florent
+See discussion on sage-devel
 
 Issue created by migration from https://trac.sagemath.org/ticket/7478
 

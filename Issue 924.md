@@ -1,16 +1,18 @@
-# Issue 924: the matplotlib spkg patches break underlying functionality
+# Issue 924: [with spkg and with patch] the matplotlib spkg patches break underlying functionality
 
 archive/issues_000924.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe matplotlib spkg overwrites lib/matplotlib/ticker.py with its own version.  This breaks \"tick\" formatting (the numbers displayed on the X and Y axis); the result is that these numbers display in scientific notation far more often than is reasonable.  (Note that this does not affect most Sage usage, since Sage turns off the matplotlib axes and draws its own.  However, Sage users should still be able to use the matplotlib package with its documented interface if they prefer.)\n\nNote that fixing this (restoring the original ticker.py), and making no other changes, will break plotting for people who have old versions of .sage/matplotlibrc, because their matplotlibrc will not specify values for axes.formatter.limits (which is read by line 271 of ticker.py).  This should be fixed either by figuring out how to safely upgrade people's matplotlibrc (possibly hard), or by changing matplotlib so that default values for axes.formatter.limits are used if the matplotlibrc does not specify values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/924\n\n",
+    "closed_at": "2007-12-22T00:43:55Z",
     "created_at": "2007-10-18T21:43:22Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "the matplotlib spkg patches break underlying functionality",
+    "title": "[with spkg and with patch] the matplotlib spkg patches break underlying functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/924",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

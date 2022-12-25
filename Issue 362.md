@@ -4,6 +4,7 @@ archive/issues_000362.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nType this\n\n```\n  sage: search_src(\", str)\")\n```\nIn most cases change isinstance(..., str) to isinstance(..., basestring),\nsince unicode is getting more and more standard, and things break otherwise. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/362\n\n",
+    "closed_at": "2007-05-31T15:10:41Z",
     "created_at": "2007-05-10T16:58:33Z",
     "labels": [
         "component: user interface",

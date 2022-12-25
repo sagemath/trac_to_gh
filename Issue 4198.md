@@ -1,16 +1,17 @@
-# Issue 4198: [with patch, needs review] matrix_cyclo_dense.pyx leaks in _get_unsafe
+# Issue 4198: [with patch, positive review] matrix_cyclo_dense.pyx leaks in _get_unsafe
 
 archive/issues_004198.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n#3502 added (or exposed?) a small memory leak in matrix_cyclo_dense.pyx's _get_unsafe method. We do not deallocate a tmp mpz in the quick return patch. The attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4198\n\n",
+    "closed_at": "2008-09-26T02:23:13Z",
     "created_at": "2008-09-26T02:02:06Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] matrix_cyclo_dense.pyx leaks in _get_unsafe",
+    "title": "[with patch, positive review] matrix_cyclo_dense.pyx leaks in _get_unsafe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4198",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

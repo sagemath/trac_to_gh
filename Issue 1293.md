@@ -4,6 +4,7 @@ archive/issues_001293.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI was told that SAGE did use less memory than Maple or Mathematica. I did check on sage.math.washington.edu:\n\n```\nzimmerma@sage:~$ du -s /usr/local/maple10\n388908  /usr/local/maple10\n\nzimmerma@sage:~$ du -s /usr/local/mathematica-5.2\n641016  /usr/local/mathematica-5.2\n\nsage:/tmp/zimmerma/sage-2.8.14> make install DESTDIR=/tmp/zimmerma/sage-2.8.14-\\\ninstall\nsage:/tmp/zimmerma/sage-2.8.14> du -s /tmp/zimmerma/sage-2.8.14-install\n1237280 /tmp/zimmerma/sage-2.8.14-install\n```\nI can understand that the SAGE developers need all the source and binaries installed, but I wish a minimal\nversion for the simple user that would use at most the same amount of memory than Maple or Mathematica,\nnot 2 times or 3 times more!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1293\n\n",
+    "closed_at": "2010-02-05T20:31:56Z",
     "created_at": "2007-11-27T17:40:01Z",
     "labels": [
         "component: distribution"

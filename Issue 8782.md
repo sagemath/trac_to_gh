@@ -3,7 +3,8 @@
 archive/issues_008782.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWe need to do the same fix with paripriv.h as we do on Solaris.\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/pari-2.3.3.p9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8782\n\n",
+    "body": "Assignee: tbd\n\nWe need to do the same fix with paripriv.h as we do on Solaris.\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/pari-2.3.5.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8782\n\n",
+    "closed_at": "2010-05-26T00:45:14Z",
     "created_at": "2010-04-27T16:04:30Z",
     "labels": [
         "component: porting: cygwin",
@@ -20,7 +21,7 @@ Assignee: tbd
 
 We need to do the same fix with paripriv.h as we do on Solaris.
 
-There is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/pari-2.3.3.p9.spkg
+There is an spkg at http://sage.math.washington.edu/home/mhansen/pari-2.3.5.p1.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/8782
 

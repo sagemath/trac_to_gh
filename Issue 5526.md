@@ -1,9 +1,10 @@
-# Issue 5526: get rid of including sse4_1 in local/lib/sage-flags.txt
+# Issue 5526: [with patch; positive review] get rid of including sse4_1 in local/lib/sage-flags.txt
 
 archive/issues_005526.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5526\n\n",
+    "body": "Assignee: mabshoff\n\nJustification: evidently we don't use this and it's on our box that builds binaries. \n\nThe attached patch refactors the code in sage-location slightly to only *include* known flags we care about. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5526\n\n",
+    "closed_at": "2009-03-24T23:30:04Z",
     "created_at": "2009-03-15T17:40:32Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_005526.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "get rid of including sse4_1 in local/lib/sage-flags.txt",
+    "title": "[with patch; positive review] get rid of including sse4_1 in local/lib/sage-flags.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5526",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,9 @@ archive/issues_005526.json:
 ```
 Assignee: mabshoff
 
+Justification: evidently we don't use this and it's on our box that builds binaries. 
 
+The attached patch refactors the code in sage-location slightly to only *include* known flags we care about. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5526
 

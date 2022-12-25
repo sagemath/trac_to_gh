@@ -1,15 +1,16 @@
-# Issue 7333: CBC spkg
+# Issue 7333: CBC spkg updated because of modifications in sage.numerical.mip
 
 archive/issues_007333.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSince the new version of sage.numerical.mip, which is now in the standard distribution of Sage, the old CBC spkg was not working anymore because of many changes in the structure of class MIP. This patch fixes this, by mainly changing some variables' names to the new ones, and Cythonizing part of the code when it was possible !\n\nThe spkg is available in two locations :\n* On sage.math at ~ncohen/cbc-2.3.p1.spkg\n* At http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.p1.spkg\n\nThank you for your help !!!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7333\n\n",
+    "closed_at": "2009-12-09T02:54:50Z",
     "created_at": "2009-10-28T17:14:38Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "CBC spkg",
+    "title": "CBC spkg updated because of modifications in sage.numerical.mip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7333",
     "user": "https://github.com/nathanncohen"

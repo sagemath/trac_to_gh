@@ -4,6 +4,7 @@ archive/issues_000964.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe code is attached to this ticket and is GPL'd now. \n\n\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/964\n\n",
+    "closed_at": "2007-10-21T20:48:22Z",
     "created_at": "2007-10-21T20:33:29Z",
     "labels": [
         "component: number theory"

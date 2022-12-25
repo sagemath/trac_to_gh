@@ -4,6 +4,7 @@ archive/issues_000495.json:
 ```json
 {
     "body": "Assignee: boothby\n\nPort the SAGE notebook to run in Internet Explorer. \n\nIssue created by migration from https://trac.sagemath.org/ticket/495\n\n",
+    "closed_at": "2008-02-29T02:22:15Z",
     "created_at": "2007-08-27T21:02:28Z",
     "labels": [
         "component: notebook"

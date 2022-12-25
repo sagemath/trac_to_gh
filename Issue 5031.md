@@ -1,15 +1,16 @@
-# Issue 5031: get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving a "gem"
+# Issue 5031: [with patch; positive review] get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving it
 
 archive/issues_005031.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5031\n\n",
+    "body": "Assignee: @williamstein\n\nAlso move some function from matrix/misc.pyx to where they belong. \nmisc.pyx exists only because of bugs in the *old* Cython that messed up circular imports.  Now circular imports work so that's no longer a problem.   This ticket gets doctest coverage and does part of getting rid of misc.pyx.  More will come in a later ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5031\n\n",
+    "closed_at": "2009-01-23T09:06:40Z",
     "created_at": "2009-01-20T05:46:23Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving a \"gem\"",
+    "title": "[with patch; positive review] get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5031",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,8 @@ archive/issues_005031.json:
 ```
 Assignee: @williamstein
 
-
+Also move some function from matrix/misc.pyx to where they belong. 
+misc.pyx exists only because of bugs in the *old* Cython that messed up circular imports.  Now circular imports work so that's no longer a problem.   This ticket gets doctest coverage and does part of getting rid of misc.pyx.  More will come in a later ticket. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5031
 

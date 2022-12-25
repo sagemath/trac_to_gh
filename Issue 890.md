@@ -4,6 +4,7 @@ archive/issues_000890.json:
 ```json
 {
     "body": "Assignee: failure\n\nSeveral failures; the following is typical:\n\n```\nFile \"ec_database.py\", line 21:\n    sage: elliptic_curves.rank(n=5, rank=3, tors=2, labels=True)\nExpected:\n    ['59450i1', '59450i2', '61376c1', '61376c2', '65481c1']\nGot:\n    []\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/890\n\n",
+    "closed_at": "2007-10-14T05:11:46Z",
     "created_at": "2007-10-13T20:40:42Z",
     "labels": [
         "component: doctest coverage",

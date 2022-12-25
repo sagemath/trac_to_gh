@@ -1,9 +1,10 @@
-# Issue 885: 2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)
+# Issue 885: [with patch] 2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)
 
 archive/issues_000885.json:
 ```json
 {
     "body": "Assignee: failure\n\nOn sage.math:\n\n```\nFile \"morphism.pyx\", line 312:\n    sage: c == loads(dumps(c))\nExpected:\n    True\nGot:\n    False\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/885\n\n",
+    "closed_at": "2007-10-14T22:56:00Z",
     "created_at": "2007-10-13T20:23:36Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_000885.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)",
+    "title": "[with patch] 2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/885",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

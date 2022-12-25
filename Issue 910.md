@@ -1,15 +1,16 @@
-# Issue 910: [with bundle][tested by ekirkman] Circulant Graph Constructor Docstrings
+# Issue 910: [with bundle] Circulant Graph Constructor Docstrings
 
 archive/issues_000910.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: circulant graph generators documentation\n\nJason's patch (ticket:871) to graph_generators has been refereed and is ready for inclusion in 2.8.8.  The bundle includes changes to documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/910\n\n",
+    "closed_at": "2007-10-21T03:20:23Z",
     "created_at": "2007-10-16T22:56:21Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "[with bundle][tested by ekirkman] Circulant Graph Constructor Docstrings",
+    "title": "[with bundle] Circulant Graph Constructor Docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/910",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"

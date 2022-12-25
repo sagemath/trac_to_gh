@@ -3,7 +3,8 @@
 archive/issues_001680.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @mwhansen mvngu\n\nSAGE has a built-in copy of the complex numbers, so it knows what I is. However, one gets slightly odd behaviour from this:\n\n`sage: (1+I)^2 - 2*I`\n\n`(1+I)^2 - 2*I`\n\nand one has to use the .expand() command to get the correct answer 2*I. This is not the behaviour of a user-defined quadratic field, which automatically evaluates such things. I think that the computation should resolve to 0 without having to be expanded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1680\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @mwhansen mvngu\n\nSAGE has a built-in copy of the complex numbers, so it knows what I is. However, one gets slightly odd behaviour from this:\n\n`sage: (1+I)^2 - 2*I`\n\n`(1+I)^2 - 2*I`\n\nand one has to use the .expand() command to get the correct answer 2*I. This is not the behaviour of a user-defined quadratic field, which automatically evaluates such things. I think that the computation should resolve to 0 without having to be expanded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1680\n\n",
+    "closed_at": "2009-10-07T04:03:58Z",
     "created_at": "2008-01-04T17:17:29Z",
     "labels": [
         "component: commutative algebra",
@@ -17,7 +18,7 @@ archive/issues_001680.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @malb
+Assignee: @robertwb
 
 CC:  @mwhansen mvngu
 

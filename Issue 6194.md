@@ -1,16 +1,17 @@
-# Issue 6194: [with patch, needs review] fixes for sage.symbolic.pynac.py_mod
+# Issue 6194: [with patch, positive review] fixes for sage.symbolic.pynac.py_mod
 
 archive/issues_006194.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nOur version of GiNaC's mod function doesn't match the behavior of the original and fails silently when there is an error. This stops some simplifications such as `exp(2*pi*I) -> 1` to work.\n\nAttached patch fixes these issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6194\n\n",
+    "closed_at": "2009-06-05T02:03:22Z",
     "created_at": "2009-06-03T15:16:05Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] fixes for sage.symbolic.pynac.py_mod",
+    "title": "[with patch, positive review] fixes for sage.symbolic.pynac.py_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6194",
     "user": "https://github.com/burcin"

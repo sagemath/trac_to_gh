@@ -4,6 +4,7 @@ archive/issues_008669.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @nexttime\n\nIf you run `sage-spkg PKG_NAME` and hit ctrl-c during downloading, you end up with a partial spkg file.  Then if you run `sage-spkg PKG_NAME` again, it just opens up that file and then crashes because the file is incomplete.\n\nThe attached patch attempts to fix this.  It seems to work, deleting the partially downloaded file, but for reasons I don't understand, it's not printing any of the accompanying messages.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8669\n\n",
+    "closed_at": "2010-04-19T05:20:51Z",
     "created_at": "2010-04-10T18:56:51Z",
     "labels": [
         "component: packages: optional",

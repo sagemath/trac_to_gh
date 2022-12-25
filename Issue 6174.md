@@ -1,15 +1,16 @@
-# Issue 6174: Modify README.txt in the top level of the Sage install to describe the SAGE_FAT_BINARY build flag
+# Issue 6174: [with patch; positive review] Add to README.txt note about the SAGE_FAT_BINARY build flag; also update sage-location to use SAGE_FAT_BINARY
 
 archive/issues_006174.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6174\n\n",
+    "body": "Assignee: tba\n\nWhile adding something about SAGE_FAT_BINARY, I ended up rewriting most of the README.txt, which was absolutely *massively* out of date, misleading, full of wrong information, and generally a total mess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6174\n\n",
+    "closed_at": "2009-06-01T00:41:25Z",
     "created_at": "2009-06-01T00:07:16Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Modify README.txt in the top level of the Sage install to describe the SAGE_FAT_BINARY build flag",
+    "title": "[with patch; positive review] Add to README.txt note about the SAGE_FAT_BINARY build flag; also update sage-location to use SAGE_FAT_BINARY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6174",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,7 @@ archive/issues_006174.json:
 ```
 Assignee: tba
 
-
+While adding something about SAGE_FAT_BINARY, I ended up rewriting most of the README.txt, which was absolutely *massively* out of date, misleading, full of wrong information, and generally a total mess.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6174
 

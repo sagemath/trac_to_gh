@@ -1,16 +1,17 @@
-# Issue 7045: [with spkg; needs review] update libgcrypt to the latest version 1.4.4
+# Issue 7045: [with spkg; positive review] update libgcrypt to the latest version 1.4.4
 
 archive/issues_007045.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  mvngu\n\nThe current libgcrypt in Sage will not build with Sun Studio. I managed to mess up an update #6758, but Minh's correction ignores my fixes to the C source code, so that will not build on Sun Studio. \n\nHere is an spkg with the latest upstream version. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4/\n\nIt's been tested on\n\n* Sun Studio 12.1 on my own SPARC running Solaris 10 update 7 in 32-bit mode\n* sage.math (64-bit)\n* bsd.math in 32-bit mode only \n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7045\n\n",
+    "closed_at": "2009-10-16T09:20:57Z",
     "created_at": "2009-09-28T01:11:08Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with spkg; needs review] update libgcrypt to the latest version 1.4.4",
+    "title": "[with spkg; positive review] update libgcrypt to the latest version 1.4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7045",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

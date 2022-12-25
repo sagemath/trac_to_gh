@@ -1,16 +1,17 @@
-# Issue 2834: [with patch, needs review] PyLint import cleanup for sage.rings.polynomial
+# Issue 2834: [with patch, positive review] PyLint import cleanup for sage.rings.polynomial
 
 archive/issues_002834.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: pylint\n\nI ran `pylint --enable-checker=imports` on `sage.rings.polynomial` and attempted to fix what it reported\n* relative imports\n* double imports\n* circular imports\n\nThe patch could be considered controversial, please check carefully.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2834\n\n",
+    "closed_at": "2008-04-07T16:08:35Z",
     "created_at": "2008-04-06T22:18:51Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] PyLint import cleanup for sage.rings.polynomial",
+    "title": "[with patch, positive review] PyLint import cleanup for sage.rings.polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2834",
     "user": "https://github.com/malb"

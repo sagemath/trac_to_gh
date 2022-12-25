@@ -4,6 +4,7 @@ archive/issues_009940.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nWith the attached patch multinomial_coefficients(m,n) becomes faster\nthan the unpatched version as m increases\n\nSage-4.5.1\nsage: %timeit w = multinomial_coefficients(int(20),int(5))\n5 loops, best of 3: 4.91 s per loop\n\nwith patch:\nsage: %timeit w = multinomial_coefficients(int(20),int(5))\n5 loops, best of 3: 1.05 s per loop\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9941\n\n",
+    "closed_at": "2011-01-12T06:33:15Z",
     "created_at": "2010-09-18T15:43:36Z",
     "labels": [
         "component: basic arithmetic",

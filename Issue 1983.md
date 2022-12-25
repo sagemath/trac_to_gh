@@ -1,16 +1,17 @@
-# Issue 1983: [with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.
+# Issue 1983: [with patch; positive review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.
 
 archive/issues_001983.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nAs justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:\n\n```\n\nsage: gp('0^0')\n1\nsage: magma('0^0')\n1\nsage: mathematica('0^0')\n...\nMathematica ERROR:\n\t                                        0\nPower::indet: Indeterminate expression 0  encountered.\nsage: maple('0^0')\n1\nsage: int(0)^int(0)\n1\nsage: float(0)^float(0)\n1.0\nsage: 0.0^0.0\n1.00000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1983\n\n",
+    "body": "Assignee: somebody\n\nAs justification that this is for *consistency*, everybody defines 0<sup>0</sup> to be 1, except Mathematica:\n\n```\n\nsage: gp('0^0')\n1\nsage: magma('0^0')\n1\nsage: mathematica('0^0')\n...\nMathematica ERROR:\nPower::indet: Indeterminate expression 0  encountered.\nsage: maple('0^0')\n1\nsage: int(0)^int(0)\n1\nsage: float(0)^float(0)\n1.0\nsage: 0.0^0.0\n1.00000000000000\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1983\n\n",
+    "closed_at": "2008-02-01T05:02:43Z",
     "created_at": "2008-01-30T13:35:24Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.",
+    "title": "[with patch; positive review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1983",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,7 @@ archive/issues_001983.json:
 ```
 Assignee: somebody
 
-As justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:
+As justification that this is for *consistency*, everybody defines 0<sup>0</sup> to be 1, except Mathematica:
 
 ```
 
@@ -29,7 +30,6 @@ sage: magma('0^0')
 sage: mathematica('0^0')
 ...
 Mathematica ERROR:
-	                                        0
 Power::indet: Indeterminate expression 0  encountered.
 sage: maple('0^0')
 1
@@ -40,6 +40,8 @@ sage: float(0)^float(0)
 sage: 0.0^0.0
 1.00000000000000
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1983
 

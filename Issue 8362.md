@@ -3,7 +3,8 @@
 archive/issues_008362.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  nborie @nthiery\n\nThere is a typo in the doc of `cardinality` function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8362\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  nborie @nthiery\n\nThere is a typo in the doc of `cardinality` function.\n\nThis patch was used as a demo during Sage Days 20, February 25th : How to contribute to sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8362\n\n",
+    "closed_at": "2010-03-02T22:22:29Z",
     "created_at": "2010-02-25T13:31:02Z",
     "labels": [
         "component: documentation",
@@ -22,6 +23,8 @@ Assignee: @seblabbe
 CC:  nborie @nthiery
 
 There is a typo in the doc of `cardinality` function.
+
+This patch was used as a demo during Sage Days 20, February 25th : How to contribute to sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8362
 

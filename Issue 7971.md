@@ -4,6 +4,7 @@ archive/issues_007971.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nCC:  @wdjoyner\n\nThis is a follow-on to #6094.  More places where the keyword argument \"method=\" should be changed to \"algorithm=\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7971\n\n",
+    "closed_at": "2010-11-09T11:06:03Z",
     "created_at": "2010-01-18T04:37:28Z",
     "labels": [
         "component: coding theory",

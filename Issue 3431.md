@@ -1,16 +1,16 @@
-# Issue 3431: [with patch, needs review] QEPCAD interface
+# Issue 3431: [with patch, positive review] QEPCAD interface
 
 archive/issues_003431.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nKeywords: editor_cwitty\n\nThis provides an extensive Sage interface to QEPCAD.  (The patch was formerly posted on #772; we're moving it here to keep one issue per ticket.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3431\n\n",
+    "closed_at": "2008-08-28T02:54:29Z",
     "created_at": "2008-06-15T21:46:21Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] QEPCAD interface",
+    "title": "[with patch, positive review] QEPCAD interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3431",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

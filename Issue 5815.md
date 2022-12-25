@@ -1,9 +1,10 @@
-# Issue 5815: [with patch, needs review] Disable TinyMCE in the live documentation
+# Issue 5815: [with patch, positive review] Disable TinyMCE in the live documentation
 
 archive/issues_005815.json:
 ```json
 {
     "body": "Assignee: boothby\n\nDouble-clicking on a text cell in the live documentation --- I've done this accidentally several times --- fires up TinyMCE, which acts strangely.  More importantly, no changes will be saved, as Jason Grout pointed out on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8c8fe7c5d0c0f725\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5815\n\n",
+    "closed_at": "2009-04-24T09:46:25Z",
     "created_at": "2009-04-18T09:32:47Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005815.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] Disable TinyMCE in the live documentation",
+    "title": "[with patch, positive review] Disable TinyMCE in the live documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5815",
     "user": "https://github.com/qed777"

@@ -3,7 +3,8 @@
 archive/issues_009765.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe URL was missing from the SPKG.txt file, and CJ Fearnley requested it to be changed to work on a debian package of Sage.\n\nThe package is located on ~ncohen/cliquer-1.2.p6.spkg \n\nor at \n\nhttp://www-sop.inria.fr/members/Nathann.Cohen/cliquer-1.2.p6.spkg\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9766\n\n",
+    "body": "Assignee: drkirkby\n\nThe URL was missing from the SPKG.txt file, and CJ Fearnley requested it to be changed to work on a debian package of Sage.\n\nPackage at\n\n http://boxen.math.washington.edu/home/kirkby/patches/cliquer-1.2.p6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9766\n\n",
+    "closed_at": "2010-08-31T03:20:40Z",
     "created_at": "2010-08-19T07:46:25Z",
     "labels": [
         "component: packages: standard",
@@ -16,17 +17,13 @@ archive/issues_009765.json:
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 The URL was missing from the SPKG.txt file, and CJ Fearnley requested it to be changed to work on a debian package of Sage.
 
-The package is located on ~ncohen/cliquer-1.2.p6.spkg 
+Package at
 
-or at 
-
-http://www-sop.inria.fr/members/Nathann.Cohen/cliquer-1.2.p6.spkg
-
-Nathann
+ http://boxen.math.washington.edu/home/kirkby/patches/cliquer-1.2.p6.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/9766
 

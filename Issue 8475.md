@@ -1,16 +1,17 @@
-# Issue 8475: Pickling of _python_object_alphabet is broken.
+# Issue 8475: Pickling of _python_object_alphabet is broken
 
 archive/issues_008475.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nKeywords: pickling nested classes\n\nThanks to #7448 and #8452, on can trace unpicklable class throughout sage. Here is one:\n\n```\nsage: sage: W = Words()\nsage: sage: A = W._python_object_alphabet()\nsage: TestSuite(A).run(verbose=True)\nrunning ._test_pickling() . . . fail\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/hivert/sage-4.3.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/misc/sage_unittest.py\", line 268, in run\n    test_method(tester = tester)\n  File \"/mnt/usb1/scratch/hivert/sage-4.3.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/misc/sage_unittest.py\", line 484, in _test_pickling\n    tester.assertEqual(loads(dumps(self._instance)), self._instance)\n  File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8367)\nPicklingError: Can't pickle <class 'sage.combinat.words.words._python_object_alphabet'>: attribute lookup sage.combinat.words.words._python_object_alphabet failed\n------------------------------------------------------------\nThe following tests failed: _test_pickling\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8475\n\n",
+    "closed_at": "2010-03-11T04:47:39Z",
     "created_at": "2010-03-07T09:14:12Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Pickling of _python_object_alphabet is broken.",
+    "title": "Pickling of _python_object_alphabet is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8475",
     "user": "https://github.com/hivert"

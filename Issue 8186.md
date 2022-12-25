@@ -4,6 +4,7 @@ archive/issues_008186.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\n```\nLe 5 f\u00e9vrier 2010 00:33, Alexandre Blondin Mass\u00e9 a \u00e9crit :\n> Salut, Seb !\n> C'est bizarre, j'obtiens ceci dans Sage:\n>\n> sage: w = Word('abaabababababab')\n> sage: u = w.iterated_right_palindromic_closure()\n> sage: print u.length()\n> None\n> sage: len(u)\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n>\n> /Users/alexandre/<ipython console> in <module>()\n>\n> TypeError: an integer is required\n> sage:\n>\n> J'imagine que c'est d\u00fb au fait que c'est un mot impl\u00e9ment\u00e9 par un it\u00e9rateur\n> avec cache, mais ce n'est pas tr\u00e8s pratique, on devrait pouvoir savoir la\n> longueur d'un tel mot. Y a-t-il moyen de le faire ? Peut-on forcer\n> l'\u00e9valuation ? Merci !\n> Alex\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8186\n\n",
+    "closed_at": "2010-02-11T14:48:02Z",
     "created_at": "2010-02-05T01:06:23Z",
     "labels": [
         "component: combinatorics",

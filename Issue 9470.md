@@ -3,7 +3,8 @@
 archive/issues_009470.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nAs indicated in #9326, it is desirable for fans and cones associated to toric varieties to know these toric varieties. The framework for such an association was already designed (with a view towards morphisms), this patch puts it to work.\n\nI have written it on top of #9245, which is the last patch in the chain with positive review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9470\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nAs indicated in #9326, it is desirable for fans and cones associated to toric varieties to know these toric varieties. The framework for such an association was already designed (with a view towards morphisms), this patch puts it to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9470\n\n",
+    "closed_at": "2010-08-09T09:48:32Z",
     "created_at": "2010-07-10T05:52:15Z",
     "labels": [
         "component: algebraic geometry"
@@ -20,8 +21,6 @@ Assignee: @aghitza
 CC:  @vbraun
 
 As indicated in #9326, it is desirable for fans and cones associated to toric varieties to know these toric varieties. The framework for such an association was already designed (with a view towards morphisms), this patch puts it to work.
-
-I have written it on top of #9245, which is the last patch in the chain with positive review.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9470
 

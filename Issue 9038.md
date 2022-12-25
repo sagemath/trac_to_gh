@@ -3,7 +3,8 @@
 archive/issues_009038.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nClient: Ubuntu Karmic 9.10 with jsmath 3.5.9, jsmath-fonts 1.3-2, ttf-jsmath, and Firefox 3.5.9.\n\nServer: Either http://www.sagebn.org or Debian Lenny with Sage 4.4.2 compiled from source\n\nWhen displaying a formula containing \"pi\" with \"Typeset\" checked, the character \u00da (capital U with accent) is displayed instead of the pi character.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9038\n\n",
+    "body": "Assignee: jason, was\n\nClient: Ubuntu Karmic 9.10 with jsmath 3.5.9, jsmath-fonts 1.3-2, ttf-jsmath, and Firefox 3.5.9.\n\nServer: Either http://www.sagenb.org or Debian Lenny with Sage 4.4.2 compiled from source\n\nWhen displaying a formula containing \"pi\" with \"Typeset\" checked, the character \u00da (capital U with accent) is displayed instead of the pi character.\n\nUpdate: Workaround: Works with manually installed Fonts from http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9038\n\n",
+    "closed_at": "2010-05-28T22:47:24Z",
     "created_at": "2010-05-24T19:42:07Z",
     "labels": [
         "component: notebook",
@@ -20,9 +21,11 @@ Assignee: jason, was
 
 Client: Ubuntu Karmic 9.10 with jsmath 3.5.9, jsmath-fonts 1.3-2, ttf-jsmath, and Firefox 3.5.9.
 
-Server: Either http://www.sagebn.org or Debian Lenny with Sage 4.4.2 compiled from source
+Server: Either http://www.sagenb.org or Debian Lenny with Sage 4.4.2 compiled from source
 
 When displaying a formula containing "pi" with "Typeset" checked, the character Ú (capital U with accent) is displayed instead of the pi character.
+
+Update: Workaround: Works with manually installed Fonts from http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
 
 Issue created by migration from https://trac.sagemath.org/ticket/9038
 

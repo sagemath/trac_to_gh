@@ -1,16 +1,17 @@
-# Issue 4552: notebook -- when email system on, registration is broken
+# Issue 4552: [with patch, positive review] notebook -- when email system on, registration is broken
 
 archive/issues_004552.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @wjp\n\nDepends on #4551\n\nIssue created by migration from https://trac.sagemath.org/ticket/4552\n\n",
+    "closed_at": "2009-09-07T17:45:16Z",
     "created_at": "2008-11-19T18:00:43Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "notebook -- when email system on, registration is broken",
+    "title": "[with patch, positive review] notebook -- when email system on, registration is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4552",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

@@ -1,22 +1,23 @@
-# Issue 306: switch running branches without building
+# Issue 306: [with bundle] switch running branches without building
 
 archive/issues_000306.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: run build\n\nremember that devel conversation some time ago? the request is that\n$sage -r <branch>\nwill switch the running repo to <branch> without building, and just run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/306\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: run build\n\nremember that devel conversation some time ago? the request is that\n$sage -r <branch>\nwill switch the running repo to <branch> without building, and just run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/306\n\n",
+    "closed_at": "2008-03-08T00:05:38Z",
     "created_at": "2007-03-03T23:47:13Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "switch running branches without building",
+    "title": "[with bundle] switch running branches without building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/306",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 Keywords: run build
 

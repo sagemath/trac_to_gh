@@ -3,7 +3,8 @@
 archive/issues_006667.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nKeywords: newton polygon\n\nThis is as simple as I can make it at the moment:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: K = Qp(2, prec=5)\nsage: P.<x> = K[]\nsage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)\nsage: f.newton_polygon()\n[(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]\n```\n| Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:\n\n```\nsage: f.newton_slopes()\n[16, 8, 10, 3]\n```\n\nThis should be [16, 9, 9, 3].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6667\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: newton polygon\n\nThis is as simple as I can make it at the moment:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: K = Qp(2, prec=5)\nsage: P.<x> = K[]\nsage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)\nsage: f.newton_polygon()\n[(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]\n```\n| Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:\n\n```\nsage: f.newton_slopes()\n[16, 8, 10, 3]\n```\n\nThis should be [16, 9, 9, 3].\n\n**Apply** [attachment:trac_6667_caruso_revised.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6667\n\n",
+    "closed_at": "2013-10-01T07:17:35Z",
     "created_at": "2009-08-03T08:00:58Z",
     "labels": [
         "component: padics",
@@ -46,6 +47,8 @@ sage: f.newton_slopes()
 ```
 
 This should be [16, 9, 9, 3].
+
+**Apply** [attachment:trac_6667_caruso_revised.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6667
 

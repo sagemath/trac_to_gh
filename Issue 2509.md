@@ -1,9 +1,10 @@
-# Issue 2509: [with patch, needs review] showstopper in xgcd(f, 0)
+# Issue 2509: [with patch, with positive review] showstopper in xgcd(f, 0)
 
 archive/issues_002509.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nThis is an absolute showstopper, but it's a little tricky to hit the right piece of code.\n\n```\nsage: x = GF(37**4, 'a')['x'].gen()\nsage: x.xgcd\n<built-in method xgcd of Polynomial_generic_dense_field object at 0xca59298>\nsage: x.xgcd(0)\n(1, 0, x)\nsage: 0.xgcd(x)\n(x, 0, 1)\nsage: x.xgcd(x)\n(x, 0, 1)\n```\n\nObserve that the first `xgcd` has the outputs in the wrong order.  This cost me hours of debugging the Cantor reduction algorithms in the hyperelliptic curves code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2509\n\n",
+    "closed_at": "2008-03-14T01:46:37Z",
     "created_at": "2008-03-13T20:25:55Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_002509.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] showstopper in xgcd(f, 0)",
+    "title": "[with patch, with positive review] showstopper in xgcd(f, 0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2509",
     "user": "https://github.com/ncalexan"

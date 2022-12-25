@@ -1,23 +1,22 @@
-# Issue 1313: [graphs] calculate chromatic polynomial
+# Issue 1313: [is implemented in #1311] graphs: calculate chromatic polynomial
 
 archive/issues_001313.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1313\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1313\n\n",
+    "closed_at": "2008-02-25T20:47:17Z",
     "created_at": "2007-11-28T20:02:14Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[graphs] calculate chromatic polynomial",
+    "title": "[is implemented in #1311] graphs: calculate chromatic polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1313",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 
 

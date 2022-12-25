@@ -1,22 +1,25 @@
-# Issue 3428: [with patch, needs review] univariate polynomial quo_rem 0 trouble
+# Issue 3428: [with patch, with positive review] univariate polynomial quo_rem 0 trouble
 
 archive/issues_003428.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nAttached patch fixes this:\n\n```\nsage: R.<x> = ZZ[]\nsage: 0//(2*x)\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n...\n/home/burcin/work/sage/sage-3.0.2/polynomial_integer_dense_ntl.pyx in sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl.quo_rem (sage/rings/polynomial/polynomial_integer_dense_ntl.cpp:4638)()\n\nArithmeticError: division not exact in Z[x] (consider coercing to Q[x] first) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3428\n\n",
+    "body": "Assignee: somebody\n\nKeywords: editor_craigcitro\n\nAttached patch fixes this:\n\n```\nsage: R.<x> = ZZ[]\nsage: 0//(2*x)\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n...\n/home/burcin/work/sage/sage-3.0.2/polynomial_integer_dense_ntl.pyx in sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl.quo_rem (sage/rings/polynomial/polynomial_integer_dense_ntl.cpp:4638)()\n\nArithmeticError: division not exact in Z[x] (consider coercing to Q[x] first) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3428\n\n",
+    "closed_at": "2008-06-23T10:00:53Z",
     "created_at": "2008-06-15T19:34:54Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] univariate polynomial quo_rem 0 trouble",
+    "title": "[with patch, with positive review] univariate polynomial quo_rem 0 trouble",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3428",
     "user": "https://github.com/burcin"
 }
 ```
 Assignee: somebody
+
+Keywords: editor_craigcitro
 
 Attached patch fixes this:
 

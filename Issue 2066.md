@@ -1,16 +1,17 @@
-# Issue 2066: [with patch; needs review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user
+# Issue 2066: [with patch; with positive review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user
 
 archive/issues_002066.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2066\n\n",
+    "closed_at": "2008-03-14T13:48:21Z",
     "created_at": "2008-02-05T22:26:56Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch; needs review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user",
+    "title": "[with patch; with positive review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2066",
     "user": "https://github.com/williamstein"

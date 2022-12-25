@@ -1,15 +1,16 @@
-# Issue 60: notebook cuts output of latex view
+# Issue 60: latex view does not print to notebook
 
 archive/issues_000060.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: notebook, latex\n\nThis may be related to ticket #38.\n\nEnter\n\nf = maxima(\"%e<sup>(k*x)+sin(b*x)+x</sup>3\")\n\ng = f.diff(\"x\")\n\nview(f)\n\nview(g)\n\ninto a cell and hit \"shift-enter\". Only the latexed\ndisplay of g is shown.\n\nIssue created by migration from https://trac.sagemath.org/ticket/60\n\n",
+    "closed_at": "2006-10-15T17:49:21Z",
     "created_at": "2006-09-14T15:15:34Z",
     "labels": [
         "component: basic arithmetic",
-        "bug"
+        "trivial"
     ],
-    "title": "notebook cuts output of latex view",
+    "title": "latex view does not print to notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/60",
     "user": "https://github.com/wdjoyner"

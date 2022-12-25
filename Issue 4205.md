@@ -1,9 +1,10 @@
-# Issue 4205: [with patch, needs review] Fix deprecation warnings from numpy 1.2
+# Issue 4205: [with patch, in limbo] Fix deprecation warnings from numpy 1.2
 
 archive/issues_004205.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nApparently we use the numpy C API in the RDF/CDF vector classes, which causes deprecation warnings with numpy 1.2.  This patch updates this code to use current functions in numpy 1.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4205\n\n",
+    "closed_at": "2009-06-12T06:57:41Z",
     "created_at": "2008-09-27T07:19:13Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_004205.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] Fix deprecation warnings from numpy 1.2",
+    "title": "[with patch, in limbo] Fix deprecation warnings from numpy 1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4205",
     "user": "https://github.com/jasongrout"

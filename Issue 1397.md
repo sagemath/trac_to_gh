@@ -4,10 +4,10 @@ archive/issues_001397.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\"sage -uprgrade\" should print brief release notes when it is done upgrading (or before it starts upgrading, and give the chance to abort the upgrade).\n\nThis is inspired by the following, from IRC:\n\n```\n did the notebook change location 2.8.14 --> 2.8.15?\n```\n...\n\n```\nok, i just panicked for a second...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1397\n\n",
+    "closed_at": "2021-09-10T16:29:21Z",
     "created_at": "2007-12-04T19:39:01Z",
     "labels": [
-        "component: user interface",
-        "bug"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"sage -upgrade\" should print release notes",

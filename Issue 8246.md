@@ -4,6 +4,7 @@ archive/issues_008246.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @wdjoyner\n\nAdd a new function to calculate the Carmichael lambda function of a positive integer n. The Carmichael lambda function is related to the Blum-Blum-Shub pseudorandom bit generator. See [Wikipedia](http://en.wikipedia.org/wiki/Carmichael_function) for a definition, and [Mathematica documentation center](http://reference.wolfram.com/mathematica/ref/CarmichaelLambda.html) for examples.\n\n**Prerequisites:** #7746\n\nIssue created by migration from https://trac.sagemath.org/ticket/8246\n\n",
+    "closed_at": "2010-02-15T03:43:55Z",
     "created_at": "2010-02-12T05:25:55Z",
     "labels": [
         "component: cryptography"

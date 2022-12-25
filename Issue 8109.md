@@ -3,7 +3,7 @@
 archive/issues_008109.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis should fasten polynomial arithmetic over finite fields of small characteristic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8109\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: ntl\n\nThis should fasten polynomial arithmetic over finite fields of small characteristic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8109\n\n",
     "created_at": "2010-01-28T08:02:42Z",
     "labels": [
         "component: algebra"
@@ -16,6 +16,8 @@ archive/issues_008109.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: ntl
 
 This should fasten polynomial arithmetic over finite fields of small characteristic.
 

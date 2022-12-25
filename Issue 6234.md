@@ -1,15 +1,16 @@
-# Issue 6234: make parallel GCC'ing of Sage library not experimental
+# Issue 6234: [with patch, positive review] make parallel GCC'ing of Sage library not experimental
 
 archive/issues_006234.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @mwhansen @ncalexan\n\nJust get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:\n\n```\n        # See if we're trying out the experimental parallel build\n        # code.\n        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6234\n\n",
+    "closed_at": "2009-06-12T08:07:11Z",
     "created_at": "2009-06-06T16:47:27Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "make parallel GCC'ing of Sage library not experimental",
+    "title": "[with patch, positive review] make parallel GCC'ing of Sage library not experimental",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6234",
     "user": "https://github.com/williamstein"

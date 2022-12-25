@@ -1,15 +1,16 @@
-# Issue 5510: [with patch, not ready for review] update M4RI interface
+# Issue 5510: [with patch, positive review] update M4RI interface
 
 archive/issues_005510.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @rhinton\n\nKeywords: m4ri, linear algebra\n\nThe attached patch(es) update Sage's interface to work with the HG version of M4RI available at: http://bitbucket.org/malb/m4ri/\n\nAlso, a dedicated (faster) `rank()` function was added for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5510\n\n",
+    "closed_at": "2009-06-13T23:25:29Z",
     "created_at": "2009-03-13T15:38:21Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, not ready for review] update M4RI interface",
+    "title": "[with patch, positive review] update M4RI interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5510",
     "user": "https://github.com/malb"

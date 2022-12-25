@@ -4,6 +4,7 @@ archive/issues_007507.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @kcrisman @robert-marik\n\nKeywords: maxima, assume\n\nReported by Mike Witt on sage-support:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n=var('n')\nsage: assumptions()\n[]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n-sin(pi*n)\nsage: assume(n, 'odd')\nsage: assumptions()\n[n is odd]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n0\nsage: forget(n, 'odd')\nsage: assumptions()\n[]\nsage: foo=sin((-1)*n*pi)\nsage: foo.simplify()\n0\n```\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nRobert Dodier's comments:\n\n```\nI'm guessing that Sage punts to Maxima for this stuff.\nFor better or worse (mostly worse) there are different ways\nto declare & undeclare stuff in Maxima.\nFor the \"odd\" declaration, it's declare(n, odd) and remove(n, odd).\nI guess assume(n, 'odd') was translated to declare(n, odd) but\nforget(n, 'odd') was not translated to remove(n, odd).\nI don't know much about Sage so I could be way off here.\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/9db67c2df781966b\n\nIssue created by migration from https://trac.sagemath.org/ticket/7507\n\n",
+    "closed_at": "2011-05-25T12:51:51Z",
     "created_at": "2009-11-21T12:21:56Z",
     "labels": [
         "component: symbolics",

@@ -1,15 +1,16 @@
-# Issue 4347: generalized bernoulli numbers -- massively optimize
+# Issue 4347: [with patch; positive review] generalized bernoulli numbers -- massively optimize
 
 archive/issues_004347.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere is a simple algorithm to massively optimize computation of generalized bernoulli numbers.  This needs to be in Sage and replace the current stupid algorithm.\n\n```\nAlready in sage for any character chi you can do\n\n        chi.bernoulli(k)\n\nAmusingly since the B_k (no character) are so fast, and\nthere is a relation between them and the B_{k,chi}, there\nis a 5-line algorithm (see below) for computing B_{k,chi}\nthat with the worst implementation is still way faster than\nSage's built-in chi.bernoulli(k).\n\nFrom page 656 of Cohen:\n\ndef S(n,chi):\n return sum(chi(r)*r^n for r in [0..chi.modulus()-1])\n\ndef bern(k,chi):\n m = chi.modulus()\n return sum([binomial(k,j) * bernoulli(j)*m^(j-1)*S(k-j,chi) for j\nin [0..k]])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4347\n\n",
+    "closed_at": "2008-10-27T01:41:01Z",
     "created_at": "2008-10-23T16:25:31Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "generalized bernoulli numbers -- massively optimize",
+    "title": "[with patch; positive review] generalized bernoulli numbers -- massively optimize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4347",
     "user": "https://github.com/williamstein"

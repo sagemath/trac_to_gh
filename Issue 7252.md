@@ -1,16 +1,17 @@
-# Issue 7252: [with patch, needs review] fix spkg/install
+# Issue 7252: fix spkg/install
 
 archive/issues_007252.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is a followup to #6986: spkg/install has a typo, so the pil spkg never gets built or installed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7252\n\n",
+    "closed_at": "2009-10-20T06:10:20Z",
     "created_at": "2009-10-20T05:36:28Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] fix spkg/install",
+    "title": "fix spkg/install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7252",
     "user": "https://github.com/jhpalmieri"

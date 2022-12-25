@@ -3,10 +3,12 @@
 archive/issues_008938.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: Multivariate polynomials latex\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: Multivariate polynomials latex\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\n**Apply:**\n1. [attachment:trac_8938_latex_test_for_cyclotomic_fields.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
+    "closed_at": "2011-08-03T14:36:28Z",
     "created_at": "2010-05-09T20:46:29Z",
     "labels": [
         "component: algebra",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
@@ -29,6 +31,9 @@ sage: f
 sage: latex(f)
 z^{2} + z s
 ```
+
+**Apply:**
+1. [attachment:trac_8938_latex_test_for_cyclotomic_fields.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8938
 

@@ -3,7 +3,7 @@
 archive/issues_008965.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @williamstein\n\nClarify documentation, add some doctests, and slightly simplify the implementation of Parallel.__call__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8965\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @williamstein\n\nClarify documentation and add some doctests.\n\n**Apply:**\n\n1. [trac_8965_decorate.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8965/trac_8965_decorate.patch)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8965\n\n",
     "created_at": "2010-05-14T18:01:22Z",
     "labels": [
         "component: documentation",
@@ -21,7 +21,12 @@ Assignee: mvngu
 
 CC:  @williamstein
 
-Clarify documentation, add some doctests, and slightly simplify the implementation of Parallel.__call__.
+Clarify documentation and add some doctests.
+
+**Apply:**
+
+1. [trac_8965_decorate.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8965/trac_8965_decorate.patch)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8965
 

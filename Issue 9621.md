@@ -3,7 +3,8 @@
 archive/issues_009621.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nKeywords: GAP string representation\n\nThe following was reported by [Kenny Brown](http://groups.google.com/group/sage-support/browse_thread/thread/9fbca4e4dbadbe37):\n\n```\nsage: n = 3^2 * 7^2\nsage: G = CyclicPermutationGroup(n)\nsage: G.sylow_subgroup(3)\nTraceback (most recent call last):\n...\n```\n\nThe problem is that in the sylow_subgroup method, it is attempted to get the string presentation of a permutation in GAP by calling gap.eval(...). However, GAP truncates the output. So, better use gap.eval('Print(...)') instead.\n\nMoreover, the method uses quite generic variable names in the GAP interface. This is dangerous, as the use of variable names that any average user might choose as well can have nasty side effects.\n\nThe attached patch fixes both problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9621\n\n",
+    "body": "Assignee: joyner\n\nKeywords: GAP string representation\n\nThe following was reported by [Kenny Brown](http://groups.google.com/group/sage-support/browse_thread/thread/9fbca4e4dbadbe37):\n\n```\nsage: n = 3^2 * 7^2\nsage: G = CyclicPermutationGroup(n)\nsage: G.sylow_subgroup(3)\nTraceback (most recent call last):\n...\n```\n\nThe problem is that in the sylow_subgroup method, it is attempted to get the string presentation of a permutation in GAP by calling gap.eval(...). However, GAP truncates the output. So, better use gap.eval('Print(...)') instead.\n\nMoreover, the method uses quite generic variable names in the GAP interface. This is dangerous, as the use of variable names that any average user might choose as well can have nasty side effects.\n\nFixed by #10334.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9621\n\n",
+    "closed_at": "2012-05-21T08:02:48Z",
     "created_at": "2010-07-28T08:18:22Z",
     "labels": [
         "component: group theory",
@@ -34,7 +35,7 @@ The problem is that in the sylow_subgroup method, it is attempted to get the str
 
 Moreover, the method uses quite generic variable names in the GAP interface. This is dangerous, as the use of variable names that any average user might choose as well can have nasty side effects.
 
-The attached patch fixes both problems.
+Fixed by #10334.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9621
 

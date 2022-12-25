@@ -1,21 +1,21 @@
-# Issue 2662: simplify_full function
+# Issue 2662: support Mathematica options for simplify_full function
 
 archive/issues_002662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate a simplify_full function that (somewhat intelligently?) applies a battery simplifications to try to get a function to be simpler.  \n\nIt would be nice to support some of the options that FullSimplify in Mma has (see http://reference.wolfram.com/mathematica/ref/FullSimplify.html?q=fullsimplify&lang=en ):\n\n* user can pass in a \"complexity function\" which determines how simple an expression is\n* user can pass in a time limit for the simplification\n* user can pass in a list of things that won't be simplified\n* etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2662\n\n",
+    "body": "Assignee: @garyfurnish\n\nCreate a simplify_full function that (somewhat intelligently?) applies a battery simplifications to try to get a function to be simpler.  \n\nIt would be nice to support some of the options that FullSimplify in Mma has (see http://reference.wolfram.com/mathematica/ref/FullSimplify.html?q=fullsimplify&lang=en ):\n\n* user can pass in a \"complexity function\" which determines how simple an expression is\n* user can pass in a time limit for the simplification\n* user can pass in a list of things that won't be simplified\n* etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2662\n\n",
     "created_at": "2008-03-24T21:18:35Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "simplify_full function",
+    "title": "support Mathematica options for simplify_full function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2662",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 Create a simplify_full function that (somewhat intelligently?) applies a battery simplifications to try to get a function to be simpler.  
 

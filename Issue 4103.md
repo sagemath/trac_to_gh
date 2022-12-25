@@ -1,9 +1,10 @@
-# Issue 4103: Delete the cmap option for vector field plots
+# Issue 4103: [with patch, positive review] Delete the cmap option for vector field plots
 
 archive/issues_004103.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe cmap argument for vector field plots is not used.  Does anyone know why it's there?  I don't think it's even valid matplotlib code.\n\nThis patch deletes the option.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4103\n\n",
+    "closed_at": "2008-09-19T03:13:52Z",
     "created_at": "2008-09-12T04:03:03Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_004103.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Delete the cmap option for vector field plots",
+    "title": "[with patch, positive review] Delete the cmap option for vector field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4103",
     "user": "https://github.com/jasongrout"

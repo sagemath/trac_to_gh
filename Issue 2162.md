@@ -1,15 +1,16 @@
-# Issue 2162: [with patch; needs review] pari stack -- ability to resize at runtime
+# Issue 2162: [with patch; positive review] pari stack -- ability to resize at runtime
 
 archive/issues_002162.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2162\n\n",
+    "closed_at": "2008-02-14T23:18:32Z",
     "created_at": "2008-02-14T22:21:30Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch; needs review] pari stack -- ability to resize at runtime",
+    "title": "[with patch; positive review] pari stack -- ability to resize at runtime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2162",
     "user": "https://github.com/williamstein"

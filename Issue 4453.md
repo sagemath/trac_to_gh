@@ -3,10 +3,11 @@
 archive/issues_004453.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor any elliptic curve over QQ of rank >= 2 the heegner_index command must always give 0 as output.   So the following 1 at the end is just wrong.\n\n```\nsage: E = EllipticCurve('389a')\nsage: D = E.heegner_discriminants_list(1)[0]\nsage: D\n-7\nsage: E.heegner_index(D)\n1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4453\n\n",
+    "body": "For any elliptic curve over QQ of rank >= 2 the heegner_index command must always give +Infinity as output.   So the following 1 at the end is just wrong.\n\n```\nsage: E = EllipticCurve('389a')\nsage: D = E.heegner_discriminants_list(1)[0]\nsage: D\n-7\nsage: E.heegner_index(D)\n1\n```\n\nApply trac_4453-rebased.patch and 4453-doctest-fix.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/4453\n\n",
+    "closed_at": "2012-11-01T12:01:54Z",
     "created_at": "2008-11-06T14:47:03Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "minor",
         "bug"
     ],
@@ -17,9 +18,7 @@ archive/issues_004453.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
-
-For any elliptic curve over QQ of rank >= 2 the heegner_index command must always give 0 as output.   So the following 1 at the end is just wrong.
+For any elliptic curve over QQ of rank >= 2 the heegner_index command must always give +Infinity as output.   So the following 1 at the end is just wrong.
 
 ```
 sage: E = EllipticCurve('389a')
@@ -29,6 +28,8 @@ sage: D
 sage: E.heegner_index(D)
 1
 ```
+
+Apply trac_4453-rebased.patch and 4453-doctest-fix.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/4453
 

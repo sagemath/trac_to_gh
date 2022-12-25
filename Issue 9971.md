@@ -1,15 +1,16 @@
-# Issue 9971: Add toric lattice morphisms
+# Issue 9971: Add fan morphisms
 
 archive/issues_009971.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis patch adds classes for toric lattices homspaces and homomorphisms and allows checking fan compatibility and automatic subdivision to achieve this compatibility.\n\nSee #9604 for prerequisites.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9972\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis ticket adds a module for fan morphisms - morphisms between lattices with specified fans in the domain and codomain, which are compatible with this morphism. Compatibility check and automatic construction of the codomain fan or refinement of the domain fan are implemented.\n\nPatch order (applies cleanly to sage-4.6.rc0):\n1. [attachment:trac_9972_add_cone_embedding.patch]\n2. [attachment:trac_9972_improve_element_constructors.patch]\n3. [attachment:trac_9972_remove_enhanced_cones_and_fans.patch]\n4. [attachment:trac_9972_add_fan_morphisms.patch]\n5. [attachment:trac_9972_fix_fan_warning.patch]\n\nSee #9604 for dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9972\n\n",
+    "closed_at": "2011-01-12T06:33:42Z",
     "created_at": "2010-09-23T02:05:09Z",
     "labels": [
         "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "Add toric lattice morphisms",
+    "title": "Add fan morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9971",
     "user": "https://github.com/novoselt"
@@ -19,9 +20,16 @@ Assignee: mhampton
 
 CC:  @vbraun
 
-This patch adds classes for toric lattices homspaces and homomorphisms and allows checking fan compatibility and automatic subdivision to achieve this compatibility.
+This ticket adds a module for fan morphisms - morphisms between lattices with specified fans in the domain and codomain, which are compatible with this morphism. Compatibility check and automatic construction of the codomain fan or refinement of the domain fan are implemented.
 
-See #9604 for prerequisites.
+Patch order (applies cleanly to sage-4.6.rc0):
+1. [attachment:trac_9972_add_cone_embedding.patch]
+2. [attachment:trac_9972_improve_element_constructors.patch]
+3. [attachment:trac_9972_remove_enhanced_cones_and_fans.patch]
+4. [attachment:trac_9972_add_fan_morphisms.patch]
+5. [attachment:trac_9972_fix_fan_warning.patch]
+
+See #9604 for dependencies.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9972
 

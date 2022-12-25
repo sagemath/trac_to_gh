@@ -4,6 +4,7 @@ archive/issues_002630.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nFrom #311, \n  a Python API so testing is integrated into the SAGE shell (and into the notebook, although this is not particularly powerful at this time)\nThis ought to be easy to do now that sage-ptest is written in python.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2630\n\n",
+    "closed_at": "2013-03-15T13:01:18Z",
     "created_at": "2008-03-21T16:02:10Z",
     "labels": [
         "component: doctest coverage",

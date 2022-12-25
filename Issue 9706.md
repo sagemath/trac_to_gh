@@ -1,35 +1,33 @@
-# Issue 9706: New Version of orthogonal Polynomials
+# Issue 9706: Symbolic Chebyshev polynomials
 
 archive/issues_009706.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @fredrik-johansson fstan @kcrisman\n\nKeywords: orthogonal polynomials, symbolics\n\nThe current implementation of orthogonal polynomials is just a wrapper around maxima. (see http://wiki.sagemath.org/symbolics/)\nThere are the following improvements planed:\n\n-using of the pynac class for symbolic functions.\n-faster evaluation in general\n-evaluation of special values\n-mpmath for numeric evaluation\n\nIssue created by migration from https://trac.sagemath.org/ticket/9706\n\n",
+    "body": "Assignee: burcin, maldun\n\nCC:  @fredrik-johansson fstan @kcrisman\n\nKeywords: orthogonal polynomials, symbolics\n\nApply:\n\n* [attachment:trac_9706_chebyshev_collection.patch]\n* [attachment:9706_review.patch]\n* [attachment:trac_9706_new_base_classes.patch]\n* [attachment:trac_9706-review-ts.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9706\n\n",
+    "closed_at": "2013-12-21T18:43:54Z",
     "created_at": "2010-08-08T00:37:05Z",
     "labels": [
-        "component: symbolics",
-        "minor",
-        "bug"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
-    "title": "New Version of orthogonal Polynomials",
+    "title": "Symbolic Chebyshev polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9706",
     "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
-Assignee: @burcin
+Assignee: burcin, maldun
 
 CC:  @fredrik-johansson fstan @kcrisman
 
 Keywords: orthogonal polynomials, symbolics
 
-The current implementation of orthogonal polynomials is just a wrapper around maxima. (see http://wiki.sagemath.org/symbolics/)
-There are the following improvements planed:
+Apply:
 
--using of the pynac class for symbolic functions.
--faster evaluation in general
--evaluation of special values
--mpmath for numeric evaluation
+* [attachment:trac_9706_chebyshev_collection.patch]
+* [attachment:9706_review.patch]
+* [attachment:trac_9706_new_base_classes.patch]
+* [attachment:trac_9706-review-ts.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9706
 

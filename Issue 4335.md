@@ -1,9 +1,10 @@
-# Issue 4335: Labelling of newforms
+# Issue 4335: [with patch, positive review] Labelling of newforms
 
 archive/issues_004335.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nGiven a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:\n\n```\nsage: S=CuspForms(23)\nsage: S.newforms('b')\n[q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]\n```\n\nI think that the newforms code should be changed to something like:\n\n```\ndef newforms(self, names=None):\n        \"\"\"\n        Return all cusp forms in the cuspidal subspace of self.\n        \n        EXAMPLES:\n        \n        sage: CuspForms(23).newforms('b')\n        [q + b0*q^2 + (-2*b0 - 1)*q^3 + (-b0 - 1)*q^4 + 2*b0*q^5 + O(q^6)]\n        \"\"\"\n        M = self.modular_symbols(sign=1)\n        factors = M.cuspidal_subspace().new_subspace().decomposition()\n        large_dims = [ X.dimension() for X in factors if X.dimension() != 1 ]\n        if len(large_dims) > 0 and names is None:            \n            names = 'a'\n        return [ element.Newform(self, factors[i], names=(names+str(i)) )\n                 for i in range(len(factors)) ]\n```\n(removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4335\n\n",
+    "closed_at": "2008-10-26T12:05:24Z",
     "created_at": "2008-10-21T19:15:07Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_004335.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Labelling of newforms",
+    "title": "[with patch, positive review] Labelling of newforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4335",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"

@@ -4,6 +4,7 @@ archive/issues_001352.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n```\nsage: R.<x> = QQ[]; S.<y> = R[]\nsage: f = x+y*x+y^2\nsage: f(x=sqrt(2))\n...\nIndexError: tuple index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1352\n\n",
+    "closed_at": "2007-12-01T19:05:15Z",
     "created_at": "2007-12-01T18:32:53Z",
     "labels": [
         "component: calculus",

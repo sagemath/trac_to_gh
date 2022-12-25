@@ -1,9 +1,10 @@
-# Issue 1681: serious bug when raising complex(0,1) to the power of the Sage integer 2.
+# Issue 1681: [with patch, with positive review] serious bug when raising complex(0,1) to the power of the Sage integer 2.
 
 archive/issues_001681.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nNotice getting +1 instead of -1:\n\n```\nsage: z = complex(0,1)\nsage: z\n1j\nsage: z*z\n(-1+0j)\nsage: z^2\n(1+1.973601453121677e-310j)\nsage: z^float(2)\n(-1+0j)\nsage: z^int(2)\n(-1+0j)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1681\n\n",
+    "body": "Assignee: @robertwb\n\nNotice getting +1 instead of -1:\n\n```\nsage: z = complex(0,1)\nsage: z\n1j\nsage: z*z\n(-1+0j)\nsage: z^2\n(1+1.973601453121677e-310j)\nsage: z^float(2)\n(-1+0j)\nsage: z^int(2)\n(-1+0j)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1681\n\n",
+    "closed_at": "2008-01-05T02:36:58Z",
     "created_at": "2008-01-04T17:42:31Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_001681.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "serious bug when raising complex(0,1) to the power of the Sage integer 2.",
+    "title": "[with patch, with positive review] serious bug when raising complex(0,1) to the power of the Sage integer 2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1681",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 Notice getting +1 instead of -1:
 

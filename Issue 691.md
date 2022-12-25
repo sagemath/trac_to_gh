@@ -1,22 +1,23 @@
-# Issue 691: .coefficients() for EisensteinSeries does not return requested coefficients
+# Issue 691: [with patch] .coefficients() for EisensteinSeries does not return requested coefficients
 
 archive/issues_000691.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: e = G.gen()\nsage: E = EisensteinForms(e, 3)\nsage: v = E.eisenstein_series()\nsage: f = v[0]\nsage: f\n15/11*zeta10^3 - 9/11*zeta10^2 - 26/11*zeta10 - 10/11 + q + (4*zeta10 + 1)*q^2 + (-9*zeta10^3 + 1)*q^3 + (16*zeta10^2 + 4*zeta10 + 1)*q^4 + (25*zeta10^3 - 25*zeta10^2 + 25*zeta10 - 24)*q^5 + O(q^6)\nsage: f.coefficients([0,1,2,3,4])\n\n[15/11*zeta10^3 - 9/11*zeta10^2 - 26/11*zeta10 - 10/11,\n 1,\n 4*zeta10 + 1,\n -9*zeta10^3 + 1,\n 16*zeta10^2 + 4*zeta10 + 1]\nsage: f.coefficients([0,1,2,3,4])\n[15/11*zeta10^3 - 9/11*zeta10^2 - 26/11*zeta10 - 10/11]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/691\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: e = G.gen()\nsage: E = EisensteinForms(e, 3)\nsage: v = E.eisenstein_series()\nsage: f = v[0]\nsage: f\n15/11*zeta10^3 - 9/11*zeta10^2 - 26/11*zeta10 - 10/11 + q + (4*zeta10 + 1)*q^2 + (-9*zeta10^3 + 1)*q^3 + (16*zeta10^2 + 4*zeta10 + 1)*q^4 + (25*zeta10^3 - 25*zeta10^2 + 25*zeta10 - 24)*q^5 + O(q^6)\nsage: f.coefficients([0,1,2,3,4])\n\n[15/11*zeta10^3 - 9/11*zeta10^2 - 26/11*zeta10 - 10/11,\n 1,\n 4*zeta10 + 1,\n -9*zeta10^3 + 1,\n 16*zeta10^2 + 4*zeta10 + 1]\nsage: f.coefficients([0,1,2,3,4])\n[15/11*zeta10^3 - 9/11*zeta10^2 - 26/11*zeta10 - 10/11]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/691\n\n",
+    "closed_at": "2007-09-21T00:28:16Z",
     "created_at": "2007-09-18T22:11:56Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": ".coefficients() for EisensteinSeries does not return requested coefficients",
+    "title": "[with patch] .coefficients() for EisensteinSeries does not return requested coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/691",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: e = G.gen()

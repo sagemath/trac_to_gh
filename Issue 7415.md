@@ -1,21 +1,22 @@
-# Issue 7415: improve cycle decomposition
+# Issue 7415: cycle decomposition and random element are now much faster.
 
 archive/issues_007415.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nLet's continue using binary search to improve the permutation methods.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7415\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nLet's continue using binary search to improve the permutation methods.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7415\n\n",
+    "closed_at": "2009-11-12T06:50:09Z",
     "created_at": "2009-11-08T22:38:16Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "improve cycle decomposition",
+    "title": "cycle decomposition and random element are now much faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7415",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 

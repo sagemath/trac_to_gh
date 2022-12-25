@@ -1,16 +1,17 @@
-# Issue 4572: [with patch, needs review] maxima output has misleading precision
+# Issue 4572: [with patch, positive review] maxima output has misleading precision
 
 archive/issues_004572.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nInternally, maxima uses floating point numbers internally unless explicitly told to use bigfloats (which we don't, and there's only one global precision in maxima so it will be non-trivial to try and do this consistantly). This patch changes the parsing code to use RDF instead, which is a better reflection of the underlying precision.\n\nIn addition, this has the benefit of removing the trailing zeros in calculus expressions involving real numbers (as they didn't really contain any information). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4572\n\n",
+    "closed_at": "2008-11-25T12:29:26Z",
     "created_at": "2008-11-20T22:00:37Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] maxima output has misleading precision",
+    "title": "[with patch, positive review] maxima output has misleading precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4572",
     "user": "https://github.com/robertwb"

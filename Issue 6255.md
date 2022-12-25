@@ -1,22 +1,23 @@
-# Issue 6255: update doc system to latex sphinx and improve build system
+# Issue 6255: update doc system to jsmath and improve build system (parallel doc builds)
 
 archive/issues_006255.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen @craigcitro\n\nKeywords: documentation build sphinx parallel\n\nThis is a reminder ticket for mhansen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6255\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen @craigcitro\n\nKeywords: documentation build sphinx parallel\n\nThis is a reminder ticket for mhansen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6255\n\n",
+    "closed_at": "2013-08-13T08:41:09Z",
     "created_at": "2009-06-10T00:32:33Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update doc system to latex sphinx and improve build system",
+    "title": "update doc system to jsmath and improve build system (parallel doc builds)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6255",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 CC:  @mwhansen @craigcitro
 

@@ -1,9 +1,10 @@
-# Issue 2699: scipy fails to build
+# Issue 2699: matplotlibm scipy fails to build on Ubuntu LTS
 
 archive/issues_002699.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ndoing a `make` in a fresh install of 2.10.4:\n\nsystem is linux, kubuntu 6.06 LTS\n\n```\ncreating build/temp.linux-i686-2.5/scipy/sparse\ncreating build/temp.linux-i686-2.5/scipy/sparse/sparsetools\ncompile options: '-Iscipy/sparse/sparsetools -I/local/scratch/schilly/sage/local/lib/python2.5/site-packages/numpy/core/include -I/local/scratch/schilly/sage/local/include/python2.5 -c'\ng++: scipy/sparse/sparsetools/sparsetools_wrap.cxx\ng++ gcc -pthread -shared build/temp.linux-i686-2.5/scipy/sparse/sparsetools/sparsetools_wrap.o -Lbuild/temp.linux-i686-2.5 -o build/lib.linux-i686-2.5/scipy/sparse/_sparsetools.so\ng++: gcc: No such file or directory\ng++: gcc: No such file or directory\nerror: Command \"g++ gcc -pthread -shared build/temp.linux-i686-2.5/scipy/sparse/sparsetools/sparsetools_wrap.o -Lbuild/temp.linux-i686-2.5 -o build/lib.linux-i686-2.5/scipy/sparse/_sparsetools.so\" failed with exit status 1\nError building scipy.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2699\n\n",
+    "closed_at": "2008-05-12T18:53:15Z",
     "created_at": "2008-03-28T14:07:06Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_002699.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "scipy fails to build",
+    "title": "matplotlibm scipy fails to build on Ubuntu LTS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2699",
     "user": "https://github.com/haraldschilly"

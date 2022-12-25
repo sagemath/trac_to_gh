@@ -1,16 +1,18 @@
-# Issue 2205: new spkg -- sqlalchemy
+# Issue 2205: [with updated spkg, positive review] sqlalchemy.spkg
 
 archive/issues_002205.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nKeywords: dsage, database, sqlite, sql\n\nspkg can be found here:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/SQLAlchemy-0.4.3.p0.spkg\n\ntested on OSX (10.5), Linux\n\ndsage is going to be using sqlalchemy from now on for the database backend since it will make switching database engines seamless and also prevent me from writing crappy sql. I think other parts of SAGE that have a database component could benefit significantly from this package, especially if they are able to use an ORM pattern.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2205\n\n",
+    "closed_at": "2008-03-15T08:35:05Z",
     "created_at": "2008-02-18T18:18:12Z",
     "labels": [
         "component: dsage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "new spkg -- sqlalchemy",
+    "title": "[with updated spkg, positive review] sqlalchemy.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2205",
     "user": "https://github.com/yqiang"

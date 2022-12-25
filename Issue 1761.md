@@ -1,16 +1,17 @@
-# Issue 1761: Graphviz output for graphs
+# Issue 1761: [with patch, positive review] Graphviz output for graphs
 
 archive/issues_001761.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @ncalexan\n\nAdd functionality to use graphviz for graph display.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1761\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @ncalexan\n\nKeywords: graph visualization dot graphviz\n\nAdd functionality to use graphviz for graph display.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1761\n\n",
+    "closed_at": "2008-04-08T15:28:58Z",
     "created_at": "2008-01-12T04:16:39Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Graphviz output for graphs",
+    "title": "[with patch, positive review] Graphviz output for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1761",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -19,6 +20,8 @@ archive/issues_001761.json:
 Assignee: @rlmill
 
 CC:  @ncalexan
+
+Keywords: graph visualization dot graphviz
 
 Add functionality to use graphviz for graph display.
 

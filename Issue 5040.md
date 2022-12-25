@@ -1,9 +1,10 @@
-# Issue 5040: Bug in NTL's ./configure
+# Issue 5040: [with spkg, positive review] NTL's DoConfig errors out when NTL is build with dependencies in a directory containing [-h|help|-help|--help]
 
 archive/issues_005040.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIf you build sage and the directory path contains a \"-h\" anywhere in it, then NTL's perl DoConfig script displays a help message and exists.  This totally breaks building sage.  The code at fault is:\n\n```\n\n   if ($arg =~ '-h|help|-help|--help') {\n      system(\"more ../doc/config.txt\");\n      exit;\n   }\n```\n\nIn particular, PREFIX will get passed in and if your directory were, e.g,. build-sage-help-me-foobar then Sage won't work.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5040\n\n",
+    "closed_at": "2009-01-29T04:04:33Z",
     "created_at": "2009-01-20T22:37:46Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_005040.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Bug in NTL's ./configure",
+    "title": "[with spkg, positive review] NTL's DoConfig errors out when NTL is build with dependencies in a directory containing [-h|help|-help|--help]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5040",
     "user": "https://github.com/williamstein"

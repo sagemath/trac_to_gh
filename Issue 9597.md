@@ -1,9 +1,10 @@
-# Issue 9597: Crap in pari-2.3.5.p1's spkg-install
+# Issue 9597: Fix first line of pari-2.3.5.p1's spkg-install
 
 archive/issues_009597.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nFrom `#sage-devel`:\n\n```\n<peter-}> Has anyone looked at the top line of pari-2.3.5.p1/spkg-install lately?\n```\n\n```sh\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head\ndiff -r d622871cde08 -r eb10b79a288a spkg-install\n--- a/spkg-install\tFri Mar 05 22:12:34 2010 -0800\n+++ b/spkg-install\tTue Apr 27 09:04:49 2010 -0700\n@@ -1,4 +1,4 @@\n-#!/bin/sh\n+B1;2000;0c#!/bin/sh\n ###########################################\n ## PARI\n ###########################################\n@@ -163,7 +163,11 @@\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg blame spkg-install | head -n 1  \n20: B1;2000;0c#!/bin/sh\n```\n(This has been introduced with #8782, which was merged into Sage 4.4.3.alpha0.)\n \nThe first line should be\n\n```sh\n#!/usr/bin/env bash\n```\nanyway. Other clean-ups should perhaps be on another ticket, s.t. this gets fixed immediately before someone runs into problems. \n\nThe behavior is somewhat unpredictable and depends on the user's system configuration, the following is **just luck**:\n\n```\n...\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.3.5 (STABLE)\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9597\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nFrom `#sage-devel`:\n\n```\n<peter-}> Has anyone looked at the top line of pari-2.3.5.p1/spkg-install lately?\n```\n\n```sh\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head\ndiff -r d622871cde08 -r eb10b79a288a spkg-install\n--- a/spkg-install Fri Mar 05 22:12:34 2010 -0800\n+++ b/spkg-install Tue Apr 27 09:04:49 2010 -0700\n@@ -1,4 +1,4 @@\n-#!/bin/sh\n+B1;2000;0c#!/bin/sh\n ###########################################\n ## PARI\n ###########################################\n@@ -163,7 +163,11 @@\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg blame spkg-install | head -n 1  \n20: B1;2000;0c#!/bin/sh\n```\n(This has been introduced with #8782, which was merged into Sage 4.4.3.alpha0.)\n \nThe first line should be\n\n```sh\n#!/usr/bin/env bash\n```\nanyway. Other clean-ups should perhaps be on another ticket, s.t. this gets fixed immediately before someone runs into problems. \n\nThe behavior is somewhat unpredictable and depends on the user's system configuration, the following is **just luck**:\n\n```\n...\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.3.5 (STABLE)\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9597\n\n",
+    "closed_at": "2010-07-26T07:47:27Z",
     "created_at": "2010-07-25T20:55:00Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_009597.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "Crap in pari-2.3.5.p1's spkg-install",
+    "title": "Fix first line of pari-2.3.5.p1's spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9597",
     "user": "https://github.com/nexttime"
@@ -30,8 +31,8 @@ From `#sage-devel`:
 ```sh
 leif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head
 diff -r d622871cde08 -r eb10b79a288a spkg-install
---- a/spkg-install	Fri Mar 05 22:12:34 2010 -0800
-+++ b/spkg-install	Tue Apr 27 09:04:49 2010 -0700
+--- a/spkg-install Fri Mar 05 22:12:34 2010 -0800
++++ b/spkg-install Tue Apr 27 09:04:49 2010 -0700
 @@ -1,4 +1,4 @@
 -#!/bin/sh
 +B1;2000;0c#!/bin/sh
@@ -62,6 +63,7 @@ The behavior is somewhat unpredictable and depends on the user's system configur
 Configuring pari-2.3.5 (STABLE)
 ...
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9597
 

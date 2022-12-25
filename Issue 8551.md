@@ -3,7 +3,8 @@
 archive/issues_008551.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nthe gap version 4.4.10 is hardwired there, and few other things are wrong, e.g no SPKG.txt\nA new version with these fixes installs and on Sage >=4.3.3, can be found here:\nhttp://sage.math.washington.edu/home/dima/packages/ace-5.0.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8551\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nthe gap version 4.4.10 is hardwired there, and few other things are wrong, e.g no SPKG.txt\n\nA new version, with these fixes installs and runs on Sage >=4.3.3, can be found here:\nhttp://sage.math.washington.edu/home/dima/packages/ace-5.0.p1.spkg\n\nlicense status unclear, waiting for a reply from upstream\n\nIssue created by migration from https://trac.sagemath.org/ticket/8551\n\n",
+    "closed_at": "2015-04-09T12:13:57Z",
     "created_at": "2010-03-17T06:33:10Z",
     "labels": [
         "component: packages: optional",
@@ -21,8 +22,11 @@ Assignee: tbd
 CC:  @wdjoyner
 
 the gap version 4.4.10 is hardwired there, and few other things are wrong, e.g no SPKG.txt
-A new version with these fixes installs and on Sage >=4.3.3, can be found here:
+
+A new version, with these fixes installs and runs on Sage >=4.3.3, can be found here:
 http://sage.math.washington.edu/home/dima/packages/ace-5.0.p1.spkg
+
+license status unclear, waiting for a reply from upstream
 
 Issue created by migration from https://trac.sagemath.org/ticket/8551
 

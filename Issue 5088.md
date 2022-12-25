@@ -1,21 +1,24 @@
-# Issue 5088: [with patch, needs review] use Pohlig-Hellman for generic discrete logarithm
+# Issue 5088: [with patch, positive review] use Pohlig-Hellman for generic discrete logarithm
 
 archive/issues_005088.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nAlgorithm summary:\nhttp://en.wikipedia.org/wiki/Pohlig-Hellman_algorithm\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5088\n\n",
+    "body": "Assignee: somebody\n\nKeywords: discrete logarithm, speedup\n\nAlgorithm summary:\nhttp://en.wikipedia.org/wiki/Pohlig-Hellman_algorithm\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5088\n\n",
+    "closed_at": "2009-01-24T18:07:59Z",
     "created_at": "2009-01-24T15:16:29Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] use Pohlig-Hellman for generic discrete logarithm",
+    "title": "[with patch, positive review] use Pohlig-Hellman for generic discrete logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5088",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: somebody
+
+Keywords: discrete logarithm, speedup
 
 Algorithm summary:
 http://en.wikipedia.org/wiki/Pohlig-Hellman_algorithm

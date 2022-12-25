@@ -1,15 +1,16 @@
-# Issue 3141: [with patch, needs review] Doctest coverage 100% for crypto.mq.mpolynomialsystem
+# Issue 3141: [with patch, positive review] Doctest coverage 100% for crypto.mq.mpolynomialsystem
 
 archive/issues_003141.json:
 ```json
 {
     "body": "Assignee: failure\n\nSome small mostly simple fixes are also included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3141\n\n",
+    "closed_at": "2008-06-24T01:29:45Z",
     "created_at": "2008-05-09T10:42:39Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] Doctest coverage 100% for crypto.mq.mpolynomialsystem",
+    "title": "[with patch, positive review] Doctest coverage 100% for crypto.mq.mpolynomialsystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3141",
     "user": "https://github.com/malb"

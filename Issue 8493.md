@@ -4,6 +4,7 @@ archive/issues_008493.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: Galois groups\n\nThe attached patch contains some simple code which will return the element of the Galois group of a number field corresponding to complex conjugation (at a specified complex place, or the \"default\" complex embedding where that exists).\n\nThe code also uses embeddings into QQbar, so I've moved QQbar over to the new coercion model (a simple case of renaming the ``__call__`` method to ``_element_constructor_``).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8493\n\n",
+    "closed_at": "2010-04-19T05:13:40Z",
     "created_at": "2010-03-10T21:20:09Z",
     "labels": [
         "component: number fields",

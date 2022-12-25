@@ -1,73 +1,62 @@
-# Issue 9791: kernel and inverse_image of (polynomial) ring maps
+# Issue 9791: kernel and inverse_image of (polynomial) ring homomorphisms
 
 archive/issues_009791.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @dimpase\n\nIt would be nice if kernels and inverse images of ring maps were implemented:\n\n```\nsage: R.<s,t>=PolynomialRing(QQ);R\nMultivariate Polynomial Ring in s, t over Rational Field\nsage: S.<x,y,z,w>=PolynomialRing(QQ);S\nMultivariate Polynomial Ring in x, y, z, w over Rational Field\nsage: f=S.hom([s^4,s^3*t,s*t^3,t^4],R);f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y, z, w over Rational Field\n  To:   Multivariate Polynomial Ring in s, t over Rational Field\n  Defn: x |--> s^4\n        y |--> s^3*t\n        z |--> s*t^3\n        w |--> t^4\nsage: f.inverse_image(0)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/morphism.so in sage.rings.morphism.RingHomomorphism.inverse_image (sage/rings/morphism.c:4168)()\n\nNotImplementedError: \nsage: kernel(f)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in kernel(x)\n    907         ]\n    908     \"\"\"\n--> 909     return x.kernel()\n    910 \n    911 def krull_dimension(x):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'\n```\nHere is the corresponding Singular computation:\n\n```\nsage: sage: singular.eval('''\n....:         ring R=0,(s,t),dp;\n....:         ring S=0,(x,y,z,w),dp;\n....:         setring R;\n....:         map f=S,ideal(s^4,s^3*t,s*t^3,t^4);\n....:         setring S;\n....:         ideal ker=kernel(R,f)\n....:       ''');\nsage: sage: singular.get('ker')\n'yz-xw,\\nz3-yw2,\\nxz2-y2w,\\ny3-x2z'\nsage: sage: print(_)\nyz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9792\n\n",
+    "body": "CC:  @dimpase\n\nFor polynomial ring homomorphisms, this ticket implements the methods\n\n- `inverse_image` (of both ideals and individual elements)\n- `kernel`\n- `is_injective`\n- `_graph_ideal`\n\n(This also works for homomorphisms of polynomial quotient rings, number fields and Galois fields.)\n\n---\n\nThe implementation is based on the following:\n\nGiven a homomorphism `f: K[x] -> K[y]` of (multivariate) polynomial rings that respects the `K`-algebra structure, we can find preimages of `y` by computing normal forms modulo the graph ideal `(x-f(x))` in `K[y,x]` with respect to an elimination order. More generally, this works for morphisms of quotient rings `K[x]/I -> K[y]/J`, which allows to handle many types of ring homomorphisms in Sage.\n\nReferences: e.g. [BW1993] Propositions 6.44, 7.71; or [Decker-Schreyer](https://www.math.uni-sb.de/ag/schreyer/images/PDFs/teaching/ws1617ag/book.pdf), Proposition 2.5.12 and Exercise 2.5.13.\n\nSee also #29723 (inverses of ring homomorphisms) and related posts on the [mailing list](https://groups.google.com/forum/#!topic/sage-support/aJn0T0jIfwU) and at [Ask-Sagemath](https://ask.sagemath.org/question/51336/implicitization-by-symmetric-polynomials/).\n\n---\n\nExample:\n\n```\nsage: R.<s,t> = PolynomialRing(QQ)\nsage: S.<x,y,z,w> = PolynomialRing(QQ)\nsage: f = S.hom([s^4, s^3*t, s*t^3, t^4],R)\nsage: f.inverse_image(R.ideal(0))\nIdeal (y*z - x*w, z^3 - y*w^2, x*z^2 - y^2*w, y^3 - x^2*z) of Multivariate Polynomial Ring in x, y, z, w over Rational Field\nsage: f.inverse_image(s^3*t^4*(s+t))\nx*w + y*w\n```\n\n---\n\nNote that the inverse image of ideals (but not of elements) could also be computed using Singular as follows:\n\n```\nsage: singular.eval('''\n....:         ring R=0,(s,t),dp;\n....:         ring S=0,(x,y,z,w),dp;\n....:         setring R;\n....:         map f=S,ideal(s^4,s^3*t,s*t^3,t^4);\n....:         setring S;\n....:         ideal ker=kernel(R,f)\n....:       ''');\nsage: singular.get('ker')\n'yz-xw,\\nz3-yw2,\\nxz2-y2w,\\ny3-x2z'\nsage: print(_)\nyz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9792\n\n",
+    "closed_at": "2020-06-22T22:34:42Z",
     "created_at": "2010-08-24T12:04:19Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.2",
-    "title": "kernel and inverse_image of (polynomial) ring maps",
+    "title": "kernel and inverse_image of (polynomial) ring homomorphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9791",
     "user": "https://github.com/vbraun"
 }
 ```
-Assignee: @aghitza
-
 CC:  @dimpase
 
-It would be nice if kernels and inverse images of ring maps were implemented:
+For polynomial ring homomorphisms, this ticket implements the methods
+
+- `inverse_image` (of both ideals and individual elements)
+- `kernel`
+- `is_injective`
+- `_graph_ideal`
+
+(This also works for homomorphisms of polynomial quotient rings, number fields and Galois fields.)
+
+---
+
+The implementation is based on the following:
+
+Given a homomorphism `f: K[x] -> K[y]` of (multivariate) polynomial rings that respects the `K`-algebra structure, we can find preimages of `y` by computing normal forms modulo the graph ideal `(x-f(x))` in `K[y,x]` with respect to an elimination order. More generally, this works for morphisms of quotient rings `K[x]/I -> K[y]/J`, which allows to handle many types of ring homomorphisms in Sage.
+
+References: e.g. [BW1993] Propositions 6.44, 7.71; or [Decker-Schreyer](https://www.math.uni-sb.de/ag/schreyer/images/PDFs/teaching/ws1617ag/book.pdf), Proposition 2.5.12 and Exercise 2.5.13.
+
+See also #29723 (inverses of ring homomorphisms) and related posts on the [mailing list](https://groups.google.com/forum/#!topic/sage-support/aJn0T0jIfwU) and at [Ask-Sagemath](https://ask.sagemath.org/question/51336/implicitization-by-symmetric-polynomials/).
+
+---
+
+Example:
 
 ```
-sage: R.<s,t>=PolynomialRing(QQ);R
-Multivariate Polynomial Ring in s, t over Rational Field
-sage: S.<x,y,z,w>=PolynomialRing(QQ);S
-Multivariate Polynomial Ring in x, y, z, w over Rational Field
-sage: f=S.hom([s^4,s^3*t,s*t^3,t^4],R);f
-Ring morphism:
-  From: Multivariate Polynomial Ring in x, y, z, w over Rational Field
-  To:   Multivariate Polynomial Ring in s, t over Rational Field
-  Defn: x |--> s^4
-        y |--> s^3*t
-        z |--> s*t^3
-        w |--> t^4
-sage: f.inverse_image(0)
----------------------------------------------------------------------------
-NotImplementedError                       Traceback (most recent call last)
-
-/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()
-
-/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/morphism.so in sage.rings.morphism.RingHomomorphism.inverse_image (sage/rings/morphism.c:4168)()
-
-NotImplementedError: 
-sage: kernel(f)
----------------------------------------------------------------------------
-AttributeError                            Traceback (most recent call last)
-
-/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()
-
-/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in kernel(x)
-    907         ]
-    908     """
---> 909     return x.kernel()
-    910 
-    911 def krull_dimension(x):
-
-/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()
-
-/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()
-
-/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()
-
-AttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'
+sage: R.<s,t> = PolynomialRing(QQ)
+sage: S.<x,y,z,w> = PolynomialRing(QQ)
+sage: f = S.hom([s^4, s^3*t, s*t^3, t^4],R)
+sage: f.inverse_image(R.ideal(0))
+Ideal (y*z - x*w, z^3 - y*w^2, x*z^2 - y^2*w, y^3 - x^2*z) of Multivariate Polynomial Ring in x, y, z, w over Rational Field
+sage: f.inverse_image(s^3*t^4*(s+t))
+x*w + y*w
 ```
-Here is the corresponding Singular computation:
+
+---
+
+Note that the inverse image of ideals (but not of elements) could also be computed using Singular as follows:
 
 ```
-sage: sage: singular.eval('''
+sage: singular.eval('''
 ....:         ring R=0,(s,t),dp;
 ....:         ring S=0,(x,y,z,w),dp;
 ....:         setring R;
@@ -75,9 +64,9 @@ sage: sage: singular.eval('''
 ....:         setring S;
 ....:         ideal ker=kernel(R,f)
 ....:       ''');
-sage: sage: singular.get('ker')
+sage: singular.get('ker')
 'yz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z'
-sage: sage: print(_)
+sage: print(_)
 yz-xw,
 z3-yw2,
 xz2-y2w,

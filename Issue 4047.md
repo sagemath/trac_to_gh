@@ -1,16 +1,17 @@
-# Issue 4047: [with patch, needs review] automorphism groups/canonical labels for hypergraphs
+# Issue 4047: [with patch, positive review] automorphism groups/canonical labels for hypergraphs
 
 archive/issues_004047.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nAlso known as nonlinear binary codes. This patch sets up the framework needed for matrix automorphism groups, and automorphism groups of nonbinary linear codes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4047\n\n",
+    "closed_at": "2008-09-06T00:52:16Z",
     "created_at": "2008-09-03T17:40:41Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] automorphism groups/canonical labels for hypergraphs",
+    "title": "[with patch, positive review] automorphism groups/canonical labels for hypergraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4047",
     "user": "https://github.com/rlmill"

@@ -1,16 +1,17 @@
-# Issue 6622: substitution of a dict into a symbolic expression modifies the dict
+# Issue 6622: [with patch, positive review] substitution of a dict into a symbolic expression modifies the dict
 
 archive/issues_006622.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: D = {v: 2}\nsage: f(D, t=3)\n6\nsage: D\n{v: 2, t: 3}\n```\n\nAfter the call above, D should *not* be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6622\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: D = {v: 2}\nsage: f(D, t=3)\n6\nsage: D\n{v: 2, t: 3}\n```\n\nAfter the call above, D should *not* be changed. This issue was raised at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/23ee185c8f5c992d) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6622\n\n",
+    "closed_at": "2009-08-03T06:34:40Z",
     "created_at": "2009-07-25T20:05:50Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "substitution of a dict into a symbolic expression modifies the dict",
+    "title": "[with patch, positive review] substitution of a dict into a symbolic expression modifies the dict",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6622",
     "user": "https://github.com/williamstein"
@@ -28,7 +29,7 @@ sage: D
 {v: 2, t: 3}
 ```
 
-After the call above, D should *not* be changed.
+After the call above, D should *not* be changed. This issue was raised at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/23ee185c8f5c992d) thread.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6622
 

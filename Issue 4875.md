@@ -1,22 +1,23 @@
-# Issue 4875: Polyhedron.show(fill=True) fails
+# Issue 4875: [with patch, positive review] Polyhedron.show(fill=True) fails
 
 archive/issues_004875.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
+    "body": "Assignee: mhampton\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
+    "closed_at": "2009-05-21T02:06:59Z",
     "created_at": "2008-12-24T18:51:50Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Polyhedron.show(fill=True) fails",
+    "title": "[with patch, positive review] Polyhedron.show(fill=True) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4875",
     "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
-Assignee: @williamstein
+Assignee: mhampton
 
 CC:  wcauchois abergeron mhampton
 

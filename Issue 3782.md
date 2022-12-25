@@ -4,6 +4,7 @@ archive/issues_003782.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3782\n\n",
+    "closed_at": "2008-08-08T23:47:12Z",
     "created_at": "2008-08-06T19:40:42Z",
     "labels": [
         "component: combinatorics",

@@ -3,7 +3,8 @@
 archive/issues_009249.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  mvngu\n\nis_hamiltonian always returned False when no LP solver was installed.\n\nFixed !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9249\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  mvngu\n\nis_hamiltonian always returned False when no LP solver was installed (as reported by Minh http://groups.google.com/group/sage-devel/browse_frm/thread/66b6459477590590)\n\nThis is fixed by the current patch. It also introduces a new module defining special Sage exceptions, as discussed in the same thread.\n\nrequires #9230\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9249\n\n",
+    "closed_at": "2010-06-29T16:46:41Z",
     "created_at": "2010-06-16T13:15:47Z",
     "labels": [
         "component: graph theory",
@@ -20,9 +21,11 @@ Assignee: jason, mvngu, ncohen, rlm
 
 CC:  mvngu
 
-is_hamiltonian always returned False when no LP solver was installed.
+is_hamiltonian always returned False when no LP solver was installed (as reported by Minh http://groups.google.com/group/sage-devel/browse_frm/thread/66b6459477590590)
 
-Fixed !
+This is fixed by the current patch. It also introduces a new module defining special Sage exceptions, as discussed in the same thread.
+
+requires #9230
 
 Nathann
 

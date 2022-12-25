@@ -1,9 +1,10 @@
-# Issue 7112: os x 10.5 powerpc -- there are many many doctest failures all over
+# Issue 7112: [with patch; positive review] os x 10.5 powerpc -- there are many many doctest failures all over
 
 archive/issues_007112.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/misc/latex.py\"\n        sage -t -long \"devel/sage/sage/rings/number_field/totallyreal_rel.py\"\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n        sage -t -long \"devel/sage/sage/server/notebook/notebook.py\"\n        sage -t -long \"devel/sage/sage/server/simple/twist.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 23343.5 seconds\npdlc424:~ wstein$  \n```\n\nThe complete testlog is here:\n\nhttp://sage.math.washington.edu/home/wstein/patches/testlong-os10.5-ppc.log\n\nIssue created by migration from https://trac.sagemath.org/ticket/7112\n\n",
+    "closed_at": "2009-10-14T16:11:20Z",
     "created_at": "2009-10-04T17:28:34Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_007112.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "os x 10.5 powerpc -- there are many many doctest failures all over",
+    "title": "[with patch; positive review] os x 10.5 powerpc -- there are many many doctest failures all over",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7112",
     "user": "https://github.com/williamstein"

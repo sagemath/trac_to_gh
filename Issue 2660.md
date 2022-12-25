@@ -1,16 +1,17 @@
-# Issue 2660: copy work around stdint.h on Solaris 9
+# Issue 2660: [with patch, positive review] copy work around stdint.h on Solaris 9
 
 archive/issues_002660.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSolaris 9 only supports a draft standard of the C99 spec, so it is missing stdint.h. This patch adds a workaround fix that for now is 32 bits only.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2660\n\n",
+    "closed_at": "2008-03-24T12:58:42Z",
     "created_at": "2008-03-24T12:40:10Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "copy work around stdint.h on Solaris 9",
+    "title": "[with patch, positive review] copy work around stdint.h on Solaris 9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2660",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

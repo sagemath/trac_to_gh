@@ -1,15 +1,16 @@
-# Issue 7684: Create a doctest that runs only on sage.math and ensures that startuptime is < 1.5 second.
+# Issue 7684: Create a doctest that runs only on sage.math and ensures that startuptime is < 1.5 second
 
 archive/issues_007684.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7684\n\n",
+    "closed_at": "2009-12-15T13:00:14Z",
     "created_at": "2009-12-15T08:34:02Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Create a doctest that runs only on sage.math and ensures that startuptime is < 1.5 second.",
+    "title": "Create a doctest that runs only on sage.math and ensures that startuptime is < 1.5 second",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7684",
     "user": "https://github.com/williamstein"

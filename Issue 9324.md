@@ -4,6 +4,7 @@ archive/issues_009324.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill\n\n```\nsage: K.<a> = NumberField(x^2-x+6)\nsage: K.disc()\n-23\nsage: E = EllipticCurve([0,0,0,-53160*a-43995,-5067640*a+19402006])\nsage: E.conductor()\n[boom!]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9324\n\n",
+    "closed_at": "2010-07-20T07:13:36Z",
     "created_at": "2010-06-24T05:39:36Z",
     "labels": [
         "component: elliptic curves",

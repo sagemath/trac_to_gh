@@ -1,15 +1,16 @@
-# Issue 6143: Upgrade tinyMCE to 3.2.4.1
+# Issue 6143: [with spkg, positive review] Upgrade tinyMCE to 3.2.4.1
 
 archive/issues_006143.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @rlmill boothby tclemans @williamstein @robertwb mhampton\n\nAn spkg is up at http://sage.math.washington.edu/home/jason/tinyMCE-3.2.4.1.spkg\n\nThe new version has lots and lots of bugfixes, including lots of fixes for Safari.  It also has a greatly improved paste-from-word functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6143\n\n",
+    "closed_at": "2009-08-03T02:19:52Z",
     "created_at": "2009-05-28T04:56:22Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Upgrade tinyMCE to 3.2.4.1",
+    "title": "[with spkg, positive review] Upgrade tinyMCE to 3.2.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6143",
     "user": "https://github.com/jasongrout"

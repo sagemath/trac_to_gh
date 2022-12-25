@@ -1,16 +1,17 @@
-# Issue 2087: make the final output of "sage -i" more user friendly (easy to fix)
+# Issue 2087: [with patch, positive review] make the final output of "sage -i" more user friendly (easy to fix)
 
 archive/issues_002087.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nWhen I install an optional package via\n\n ./sage -i [optional package]\n\nthe last line of output is \"Making script relocatable\".\n\nI frequently do the install in the background, redirecting\nthe output to a file\nand then use \"tail -f\" to monitor the output (and then go off\nand do something else).   When I come back, it is unclear\nto me whether the install has finished.  Perhaps something\nlike \"install finished\" could be added as a last line.\n\nJust a suggestion.\nKate\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2087\n\n",
+    "closed_at": "2008-02-25T19:49:42Z",
     "created_at": "2008-02-07T18:58:42Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "make the final output of \"sage -i\" more user friendly (easy to fix)",
+    "title": "[with patch, positive review] make the final output of \"sage -i\" more user friendly (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2087",
     "user": "https://github.com/williamstein"

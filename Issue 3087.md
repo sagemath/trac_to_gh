@@ -1,9 +1,10 @@
-# Issue 3087: [with patch; needs review] Stupid mistakes in Debian palp copyright files
+# Issue 3087: [with patch; positive review] Stupid mistakes in Debian palp copyright files
 
 archive/issues_003087.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nMy new copyright file for palp doesn't quite have the right format.  Attached is a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3087\n\n",
+    "closed_at": "2008-05-03T14:13:44Z",
     "created_at": "2008-05-03T04:41:21Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003087.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Stupid mistakes in Debian palp copyright files",
+    "title": "[with patch; positive review] Stupid mistakes in Debian palp copyright files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3087",
     "user": "https://github.com/timabbott"

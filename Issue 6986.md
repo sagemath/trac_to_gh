@@ -1,16 +1,16 @@
-# Issue 6986: [with spkg, needs review] Make PIL standard
+# Issue 6986: [with spkg, positive review] Make PIL standard
 
 archive/issues_006986.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nA while ago, on http://groups.google.com/group/sage-devel/browse_thread/thread/caac9691d6fb0160, it was voted to move PIL from optional to standard.  However, this was never done.\n\nThe spkg lives in the optional repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6986\n\n",
+    "closed_at": "2009-10-16T09:18:40Z",
     "created_at": "2009-09-22T15:25:48Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with spkg, needs review] Make PIL standard",
+    "title": "[with spkg, positive review] Make PIL standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6986",
     "user": "https://github.com/jasongrout"

@@ -1,16 +1,17 @@
-# Issue 5992: [with spkg, needs review] Set stack size in Maxima.spkg to 32kb for clisp
+# Issue 5992: [with spkg, positive review] Set stack size in Maxima.spkg to 32kb for clisp
 
 archive/issues_005992.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nclisp needs a stack larger than many systems provide, i.e. 8kb. If the stacksize isn't raised Maxima can randomly fail to build.\n\nThe spkg at \n\n  http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.2/post-final/maxima-5.16.3.p2.spkg\n\nfixes that issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5992\n\n",
+    "closed_at": "2009-05-06T06:27:23Z",
     "created_at": "2009-05-06T05:26:28Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with spkg, needs review] Set stack size in Maxima.spkg to 32kb for clisp",
+    "title": "[with spkg, positive review] Set stack size in Maxima.spkg to 32kb for clisp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5992",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

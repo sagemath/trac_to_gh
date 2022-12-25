@@ -4,6 +4,7 @@ archive/issues_007919.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  @nthiery\n\nThere's a doctest in `sage/misc/test_class_pickling.py` that doesn't actually test anything. I was a reviewer for this patch, which means it's my bad for letting it through. Of course, this code gets tested anyway, so it's not so serious, but we should fix it anyway. Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7919\n\n",
+    "closed_at": "2010-01-14T06:52:38Z",
     "created_at": "2010-01-13T09:40:22Z",
     "labels": [
         "component: categories",

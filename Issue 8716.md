@@ -4,6 +4,7 @@ archive/issues_008716.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nWe have code for modular symbols on GammaH groups but the code for modular forms is little more than stubs. Here's a patch that should fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8716\n\n",
+    "closed_at": "2011-01-25T08:14:18Z",
     "created_at": "2010-04-19T16:53:25Z",
     "labels": [
         "component: modular forms"

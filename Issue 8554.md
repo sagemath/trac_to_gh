@@ -4,6 +4,7 @@ archive/issues_008554.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @jasongrout\n\nKeywords: hexadecimal, string conversion\n\n```\nsage: RealNumber(\"1ffef\", base=16)  \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/opt/sage-4.3.3/<ipython console> in <module>()\n\n/opt/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.create_RealNumber (sage/rings/real_mpfr.c:25128)()\n\nValueError: invalid literal for int() with base 10: 'f'\n```\n\nThe problem arises because 'e' is incorrectly parsed as the mantissa/exponent delimiter. If Sage wants to follow MPFR in this regard, '`@`' should be used as a delimiter for base > 10.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8554\n\n",
+    "closed_at": "2014-02-11T21:21:58Z",
     "created_at": "2010-03-17T20:04:11Z",
     "labels": [
         "component: numerical",

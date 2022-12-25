@@ -4,6 +4,7 @@ archive/issues_000383.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI'm looking at the polynomial function quo_rem and I see that it does it's own\ncoercion manually.  This feels a little wrong to me.  I think it should go\nthrough the standard coercion routines.  Here's a \"bug\" that results:\n\n```\nsage: x=ZZ['x'].0\nsage: y=QQ['x'].0\nsage: (y+1).quo_rem(1/2*x)\n(2, 1)\nsage: (x+1).quo_rem(1/2*y)\n...\n<type 'exceptions.TypeError'>: no coercion of this rational to integer\n```\n\nThe bug is that I don't see why these two things are treated substantially\ndifferently.  The reason I found this is because the simple \"TypeError\"\nexception did not provide the usual message about parents being\nmis-matched -- I think this is a bug in itself\n\nThe fix for all that is to make the quo_rem stuff use canonical coercion model.\n\nAll of the quo_rem instances in sage/rings/polynomial/polynomial_element_generic.py suffer from some sort of coercion impropriety.\n\nIssue created by migration from https://trac.sagemath.org/ticket/383\n\n",
+    "closed_at": "2010-01-19T20:26:08Z",
     "created_at": "2007-06-01T15:24:59Z",
     "labels": [
         "component: basic arithmetic",

@@ -4,9 +4,11 @@ archive/issues_008144.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @dandrake\n\nKeywords: sagetex\n\nTicket #7617 adds SageTeX as a standard spkg. However, despite modifying the spkg dependency rules in `SAGE_ROOT/spkg/install` and `SAGE_ROOT/spkg/standard/deps` to account for this new package, SageTeX isn't actually installed at all in Sage 4.3.2.alpha1. This was reported on [sage-devel](http://groups.google.com/group/sage-devel/msg/fa6ed48cba5037e0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8144\n\n",
+    "closed_at": "2010-02-02T20:55:29Z",
     "created_at": "2010-02-01T18:14:12Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",

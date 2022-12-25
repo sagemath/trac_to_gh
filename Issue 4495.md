@@ -1,22 +1,23 @@
-# Issue 4495: [with algorithm, needs implementation] weight distribution for binary codes
+# Issue 4495: [with patch, positive review] weight distribution for binary codes
 
 archive/issues_004495.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nUsing Robert Bradshaw's bitsets, which include hamming weight functions, it should be trivial to implement a weight distribution algorithm for binary codes in pure Cython.\n\nEssential ingredients:\n1. A list of bitsets representing the basis.\n2. A zeroed array to store the weight distribution.\n3. A gray code traversal of the span of the list.\n4. Hamming weight functions.\n\nThis should be nearly trivial to implement, and would remove the dependence (unmerged) ticket #4320 has on Guava, which will make the Windows port even harder...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4495\n\n",
+    "body": "Assignee: @rlmill\n\nUsing Robert Bradshaw's bitsets, which include hamming weight functions, it should be trivial to implement a weight distribution algorithm for binary codes in pure Cython.\n\nEssential ingredients:\n1. A list of bitsets representing the basis.\n2. A zeroed array to store the weight distribution.\n3. A gray code traversal of the span of the list.\n4. Hamming weight functions.\n\nThis should be nearly trivial to implement, and would remove the dependence (unmerged) ticket #4320 has on Guava, which will make the Windows port even harder...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4495\n\n",
+    "closed_at": "2009-01-12T01:12:41Z",
     "created_at": "2008-11-11T21:14:53Z",
     "labels": [
-        "component: algebra",
+        "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with algorithm, needs implementation] weight distribution for binary codes",
+    "title": "[with patch, positive review] weight distribution for binary codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4495",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: tbd
+Assignee: @rlmill
 
 Using Robert Bradshaw's bitsets, which include hamming weight functions, it should be trivial to implement a weight distribution algorithm for binary codes in pure Cython.
 

@@ -4,6 +4,7 @@ archive/issues_000023.json:
 ```json
 {
     "body": "Assignee: somebody\n\nmaybe adding elements of (Z/nZ)^k is broken if one isn't in there.\n   See line 66 of free_module_element.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/23\n\n",
+    "closed_at": "2007-01-13T02:02:02Z",
     "created_at": "2006-09-12T23:22:28Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,15 +1,16 @@
-# Issue 1661: click-to-evaluate button
+# Issue 1661: [with bundle, needs review] click-to-evaluate button
 
 archive/issues_001661.json:
 ```json
 {
     "body": "Assignee: boothby\n\nAdd a button that users can click to evaluate a cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1661\n\n",
+    "closed_at": "2008-01-05T02:14:34Z",
     "created_at": "2008-01-02T22:47:18Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "click-to-evaluate button",
+    "title": "[with bundle, needs review] click-to-evaluate button",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1661",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

@@ -1,15 +1,16 @@
-# Issue 7184: [with patch, needs review] Implement counting of spanning trees for graphs and digraphs
+# Issue 7184: Implement counting of spanning trees for graphs and digraphs
 
 archive/issues_007184.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nThis patch allows us to count the number of spanning trees in a simple graph, as well as the spanning out-trees from a user-defined root node in a digraph.\n\nMethod used: Kirchhoff's matrix tree theorem [1] and the Laplacian matrix for the simple graphs, and a variation of the same [2] in the directed case.\n\n\n[1] http://en.wikipedia.org/wiki/Kirchhoff%27s_theorem\n[2] corollary 4.4 in http://books.google.se/books?id=vbxdqhDKOSYC&printsec=frontcover&hl=en&source=gbs_navlinks_s\n\nIssue created by migration from https://trac.sagemath.org/ticket/7184\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nThis patch allows us to count the number of spanning trees in a simple graph, as well as the spanning out-trees from a user-defined root node in a digraph.\n\nMethod used: Kirchhoff's matrix tree theorem [1] and the Laplacian matrix for the simple graphs, and a variation of the same [2] in the directed case.\n\n\n[1] http://en.wikipedia.org/wiki/Kirchhoff%27s_theorem \n\n[2] corollary 4.4 in http://books.google.se/books?id=vbxdqhDKOSYC&printsec=frontcover&hl=en&source=gbs_navlinks_s\n\nIssue created by migration from https://trac.sagemath.org/ticket/7184\n\n",
+    "closed_at": "2009-12-07T08:47:33Z",
     "created_at": "2009-10-10T17:59:38Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] Implement counting of spanning trees for graphs and digraphs",
+    "title": "Implement counting of spanning trees for graphs and digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7184",
     "user": "https://github.com/haaninjo"
@@ -24,7 +25,8 @@ This patch allows us to count the number of spanning trees in a simple graph, as
 Method used: Kirchhoff's matrix tree theorem [1] and the Laplacian matrix for the simple graphs, and a variation of the same [2] in the directed case.
 
 
-[1] http://en.wikipedia.org/wiki/Kirchhoff%27s_theorem
+[1] http://en.wikipedia.org/wiki/Kirchhoff%27s_theorem 
+
 [2] corollary 4.4 in http://books.google.se/books?id=vbxdqhDKOSYC&printsec=frontcover&hl=en&source=gbs_navlinks_s
 
 Issue created by migration from https://trac.sagemath.org/ticket/7184

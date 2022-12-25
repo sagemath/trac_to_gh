@@ -1,16 +1,17 @@
-# Issue 4516: make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515
+# Issue 4516: [with patch; positive review] make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515
 
 archive/issues_004516.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4516\n\n",
+    "closed_at": "2008-11-15T05:04:50Z",
     "created_at": "2008-11-13T22:59:26Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515",
+    "title": "[with patch; positive review] make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4516",
     "user": "https://github.com/williamstein"

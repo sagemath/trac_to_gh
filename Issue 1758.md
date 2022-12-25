@@ -4,6 +4,7 @@ archive/issues_001758.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAgain from the MAGMA 2.14 changelog: \"Simon's variant of LLL reduction for indefinite forms has been efficiently implemented in Magma as part of a new package of Damien Stehl\u00e9, and works readily in dimensions greater than 100.\" ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )\n\nIssue created by migration from https://trac.sagemath.org/ticket/1758\n\n",
+    "closed_at": "2015-01-29T15:47:57Z",
     "created_at": "2008-01-11T18:37:58Z",
     "labels": [
         "component: linear algebra"

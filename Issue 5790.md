@@ -1,17 +1,17 @@
-# Issue 5790: Updating some quirks in partition.py
+# Issue 5790: [with patch, positive review] Updating some quirks in partition.py
 
 archive/issues_005790.json:
 ```json
 {
-    "body": "Assignee: @AndrewAtLarge\n\nCC:  sage-combinat @jbandlow @saliola\n\nKeywords: partitions, cores, quotients\n\nDear All,\n\nI have just pushed a patch to the combinat server which:\n* deprecates *r_core*, *r_quotient* (and *k_core*) in favour of *core* and *quotient*, respectively. I also made *core* return a partition rather than a list.\n* rewrite the Partition() calling function to use keywords rather than named arguments. In the process I deprecated the 'core_and_quotient' argument.\n* deprecated *partition_sign* in favour of *sign* and replaced the previous call to gap with plus or minus one as required.\n\nAlmost all of the changes are to partition.py, however, the  patch affects the following four files as they all called *r_core* or *r_quotient*::\n    sage/combinat/ktableau.py\n    sage/combinat/partition.py\n    sage/combinat/ribbon_tableau.py\n    sage/combinat/skew_partition.py\n\nNot all of the doc tests pass, however, the problems seem to be caused elsewhere.\n\nAndrew\n\nIssue created by migration from https://trac.sagemath.org/ticket/5790\n\n",
+    "body": "Assignee: @AndrewAtLarge\n\nCC:  sage-combinat @jbandlow @saliola\n\nKeywords: partitions, cores, quotients\n\nDear All,\n\nI have just pushed a patch to the combinat server which:\n* deprecates *r_core*, *r_quotient* (and *k_core*) in favour of *core* and *quotient*, respectively. I also made *core* return a partition rather than a list.\n* rewrites the Partition() calling function to use keywords rather than named arguments. In the process I deprecated the *core_and_quotient* argument replacing it with *Partition(core=?,quotient=?)*.\n* deprecated *partition_sign* in favour of *sign* and replaced the previous call to gap with plus or minus one as required.\n\nAlmost all of the changes are to partition.py, however, the  patch affects the following four files as they all called *r_core* or *r_quotient*:\n- sage/combinat/ktableau.py\n- sage/combinat/partition.py\n- sage/combinat/ribbon_tableau.py\n- sage/combinat/skew_partition.py\n\nNot all of the doc tests pass, however, the problems seem to be caused elsewhere -- please let me know if I am wrong!\n\nAndrew\n\nIssue created by migration from https://trac.sagemath.org/ticket/5790\n\n",
+    "closed_at": "2009-07-18T15:44:46Z",
     "created_at": "2009-04-15T06:41:27Z",
     "labels": [
-        "component: algebra",
-        "minor",
-        "bug"
+        "component: combinatorics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Updating some quirks in partition.py",
+    "title": "[with patch, positive review] Updating some quirks in partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5790",
     "user": "https://github.com/AndrewAtLarge"
@@ -27,16 +27,16 @@ Dear All,
 
 I have just pushed a patch to the combinat server which:
 * deprecates *r_core*, *r_quotient* (and *k_core*) in favour of *core* and *quotient*, respectively. I also made *core* return a partition rather than a list.
-* rewrite the Partition() calling function to use keywords rather than named arguments. In the process I deprecated the 'core_and_quotient' argument.
+* rewrites the Partition() calling function to use keywords rather than named arguments. In the process I deprecated the *core_and_quotient* argument replacing it with *Partition(core=?,quotient=?)*.
 * deprecated *partition_sign* in favour of *sign* and replaced the previous call to gap with plus or minus one as required.
 
-Almost all of the changes are to partition.py, however, the  patch affects the following four files as they all called *r_core* or *r_quotient*::
-    sage/combinat/ktableau.py
-    sage/combinat/partition.py
-    sage/combinat/ribbon_tableau.py
-    sage/combinat/skew_partition.py
+Almost all of the changes are to partition.py, however, the  patch affects the following four files as they all called *r_core* or *r_quotient*:
+- sage/combinat/ktableau.py
+- sage/combinat/partition.py
+- sage/combinat/ribbon_tableau.py
+- sage/combinat/skew_partition.py
 
-Not all of the doc tests pass, however, the problems seem to be caused elsewhere.
+Not all of the doc tests pass, however, the problems seem to be caused elsewhere -- please let me know if I am wrong!
 
 Andrew
 

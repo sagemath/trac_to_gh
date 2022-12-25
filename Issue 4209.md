@@ -1,16 +1,17 @@
-# Issue 4209: [with spkg, needs review] upgrade maxima.spkg to 5.16.3
+# Issue 4209: [with spkg, positive review] upgrade maxima.spkg to 5.16.3
 
 archive/issues_004209.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe latest upstream is maxima 5.16.3. That upgraded spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha2/maxima-5.16.3.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4209\n\n",
+    "closed_at": "2008-09-27T21:40:08Z",
     "created_at": "2008-09-27T20:25:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with spkg, needs review] upgrade maxima.spkg to 5.16.3",
+    "title": "[with spkg, positive review] upgrade maxima.spkg to 5.16.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4209",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

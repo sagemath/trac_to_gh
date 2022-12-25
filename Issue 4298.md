@@ -1,16 +1,17 @@
-# Issue 4298: [with patch, needs trivial review] fix typos
+# Issue 4298: [with patch, positive review] fix typos
 
 archive/issues_004298.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4298\n\n",
+    "closed_at": "2008-10-26T00:47:45Z",
     "created_at": "2008-10-15T15:03:09Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs trivial review] fix typos",
+    "title": "[with patch, positive review] fix typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4298",
     "user": "https://github.com/zimmermann6"

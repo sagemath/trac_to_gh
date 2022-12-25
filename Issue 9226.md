@@ -3,10 +3,12 @@
 archive/issues_009226.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThe title pretty much says it all. There is no way Sage will build with any gcc <= 4.0.1. The 'prereq' script will stop any attempt and even if you bypass that stop (by setting the appropiate environment variable), Sage will not build \n\nI've attached a revised README.txt, which addresses this and\n\n* The fact gcc, g++ and gfortran need to be the same versions. \n* Spelling change of Sparc -> SPARC. \n* Better information about what does and does not work on Solaris.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9226\n\n",
+    "body": "Assignee: mvngu\n\nThe title pretty much says it all. There is no way Sage will build with any gcc < 4.0.1. The 'prereq' script will stop any attempt and even if you bypass that stop (by setting the appropriate environment variable), Sage will not build \n\nI've attached a revised README.txt, which addresses this and\n\n* The fact gcc, g++ and gfortran need to be the same versions. \n* Spelling change of Sparc -> SPARC. \n* Better information about what does and does not work on Solaris. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9226\n\n",
+    "closed_at": "2010-08-05T10:59:07Z",
     "created_at": "2010-06-12T11:51:57Z",
     "labels": [
         "component: documentation",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
@@ -18,13 +20,13 @@ archive/issues_009226.json:
 ```
 Assignee: mvngu
 
-The title pretty much says it all. There is no way Sage will build with any gcc <= 4.0.1. The 'prereq' script will stop any attempt and even if you bypass that stop (by setting the appropiate environment variable), Sage will not build 
+The title pretty much says it all. There is no way Sage will build with any gcc < 4.0.1. The 'prereq' script will stop any attempt and even if you bypass that stop (by setting the appropriate environment variable), Sage will not build 
 
 I've attached a revised README.txt, which addresses this and
 
 * The fact gcc, g++ and gfortran need to be the same versions. 
 * Spelling change of Sparc -> SPARC. 
-* Better information about what does and does not work on Solaris.
+* Better information about what does and does not work on Solaris. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9226
 

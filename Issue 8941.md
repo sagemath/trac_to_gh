@@ -4,10 +4,10 @@ archive/issues_008941.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nThis patch adds two simple functions to LatticePolytope class for pretty and compact typesetting and a convenient access to the origin of the polytope, if it is one of its points.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8941\n\n",
+    "closed_at": "2010-06-07T05:15:14Z",
     "created_at": "2010-05-10T05:37:17Z",
     "labels": [
-        "component: geometry",
-        "bug"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "_latex_ and origin for lattice polytopes",

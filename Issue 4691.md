@@ -1,16 +1,17 @@
-# Issue 4691: Minor docstring change for timeout on notebook
+# Issue 4691: [with patch, positive review] Minor docstring change for timeout on notebook
 
 archive/issues_004691.json:
 ```json
 {
     "body": "Assignee: boothby\n\nFrom sage-support:\n\n> > c) could easily. Did you set the timeout parameter for the server? \n> >       timeout       -- (default: 0) seconds until idle worksheet sessions \n> >                              automatically timeout, i.e., the corresponding \n> >                              Sage session terminates.  0 means 'never timeout'. \n\n\n> That seems to have been the other main problem, and we fixed it. \n\n\n\nCare to open a ticket to update the docstring? I think it would be \ngood to mention that on low memory systems one should set some timeout \nsince otherwise Sage will gobble up all available memory if there are \nmany users. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4691\n\n",
+    "closed_at": "2008-12-04T14:10:42Z",
     "created_at": "2008-12-04T01:38:59Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Minor docstring change for timeout on notebook",
+    "title": "[with patch, positive review] Minor docstring change for timeout on notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4691",
     "user": "https://github.com/kcrisman"

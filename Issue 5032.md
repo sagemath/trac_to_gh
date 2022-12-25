@@ -1,16 +1,17 @@
-# Issue 5032: dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one
+# Issue 5032: [with patch, positive review] dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one
 
 archive/issues_005032.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is a bug:\n\n```\nsage: A = matrix(ZZ, 2, [1..4], sparse=True)\nsage: type(A*1)\n<type 'sage.matrix.matrix_integer_sparse.Matrix_integer_sparse'>\nsage: type(A/1)\n<type 'sage.matrix.matrix_rational_dense.Matrix_rational_dense'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5032\n\n",
+    "closed_at": "2009-01-24T14:31:31Z",
     "created_at": "2009-01-20T05:59:45Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one",
+    "title": "[with patch, positive review] dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5032",
     "user": "https://github.com/williamstein"

@@ -3,11 +3,12 @@
 archive/issues_001964.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nThis illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). \n\n```\nteragon:tmp was$ touch a.sage b.sage\nteragon:tmp was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = d\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1964\n\n",
+    "body": "Assignee: @ncalexan\n\nCC:  ncalexander@gmail.com\n\nThis illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). \n\n```\nteragon:tmp was$ touch a.sage b.sage\nteragon:tmp was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = d\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1964\n\n",
+    "closed_at": "2010-01-16T21:07:48Z",
     "created_at": "2008-01-29T02:38:26Z",
     "labels": [
         "component: user interface",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "attaching multiple files should work but is broken (or never implemented?)",
@@ -16,7 +17,7 @@ archive/issues_001964.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @ncalexan
 
 CC:  ncalexander@gmail.com
 

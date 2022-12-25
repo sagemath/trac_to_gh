@@ -1,16 +1,16 @@
-# Issue 3861: automatic line smoothing shouldn't be automatic, or should at least be documented
+# Issue 3861: Prevent or document automatic line3d smoothing
 
 archive/issues_003861.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @slel\n\nKeywords: line3d, Line, smoothing, corner_cutoff\n\nline3d for instance calls Line in \n\n/usr/local/sage/3.0.6/devel/sage/sage/plot/plot3d/shapes2.py\n\nWhich automatically applies some smoothing using corner_cutoff, which is buggy and poorly documented as in Ticket 3859:\nhttp://trac.sagemath.org/sage_trac/ticket/3859\n\n(See above Ticket for an example of how this can be bad.)\n\nIt is important that I plot lines directly, and automatic smoothing should either not be automatic, or should be documented,\neven for functions that do not reference the smoothing directly like in Line3d.  Perhaps a 'smooth' keyword is more informative than the undocumented corner_cutoff.\n\nThe smoothing is done in the Line class object, and not in pmol, so it can (and should!) be selectively applied.\n\nFixing the referenced ticket is a workaround (set corner_cutoff = 1), but is very clunky, and currently does not even work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3861\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @slel\n\nKeywords: line3d, Line, smoothing, corner_cutoff\n\nline3d for instance calls Line in `src/sage/plot/plot3d/shapes2.py`\n\nWhich automatically applies some smoothing using corner_cutoff, which is buggy and poorly documented as in #3859\n\n(See above Ticket for an example of how this can be bad.)\n\nIt is important that I plot lines directly, and automatic smoothing should either not be automatic, or should be documented,\neven for functions that do not reference the smoothing directly like in Line3d.  Perhaps a 'smooth' keyword is more informative than the undocumented corner_cutoff.\n\nThe smoothing is done in the Line class object, and not in pmol, so it can (and should!) be selectively applied.\n\nFixing the referenced ticket is a workaround (set corner_cutoff = 1), but is very clunky, and currently does not even work.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3861\n\n",
     "created_at": "2008-08-14T22:19:12Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "automatic line smoothing shouldn't be automatic, or should at least be documented",
+    "title": "Prevent or document automatic line3d smoothing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3861",
     "user": "https://trac.sagemath.org/admin/accounts/users/mclean"
@@ -22,12 +22,9 @@ CC:  @kcrisman @slel
 
 Keywords: line3d, Line, smoothing, corner_cutoff
 
-line3d for instance calls Line in 
+line3d for instance calls Line in `src/sage/plot/plot3d/shapes2.py`
 
-/usr/local/sage/3.0.6/devel/sage/sage/plot/plot3d/shapes2.py
-
-Which automatically applies some smoothing using corner_cutoff, which is buggy and poorly documented as in Ticket 3859:
-http://trac.sagemath.org/sage_trac/ticket/3859
+Which automatically applies some smoothing using corner_cutoff, which is buggy and poorly documented as in #3859
 
 (See above Ticket for an example of how this can be bad.)
 
@@ -37,6 +34,7 @@ even for functions that do not reference the smoothing directly like in Line3d. 
 The smoothing is done in the Line class object, and not in pmol, so it can (and should!) be selectively applied.
 
 Fixing the referenced ticket is a workaround (set corner_cutoff = 1), but is very clunky, and currently does not even work.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3861
 

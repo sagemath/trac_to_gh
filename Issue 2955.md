@@ -1,9 +1,10 @@
-# Issue 2955: GFortran autodection on Linux/Itanium
+# Issue 2955: [with spkg, positive review] GFortran autodection on Linux/Itanium
 
 archive/issues_002955.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe do not ship any Fortran compiler for Linux/Itanium. Since any reasonable distribution on Itanium ships GFortran automate detection for that special case. With this ticket, #2953 and 2954 Sage 3.0 should build out of the box on SageNet's RHEL 5 and SLES 10 Itanium test boxen.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2955\n\n",
+    "closed_at": "2008-04-20T10:51:21Z",
     "created_at": "2008-04-19T04:03:42Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002955.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "GFortran autodection on Linux/Itanium",
+    "title": "[with spkg, positive review] GFortran autodection on Linux/Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2955",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

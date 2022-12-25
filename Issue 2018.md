@@ -1,16 +1,17 @@
-# Issue 2018: crap -- scipy sandbox has a bunch of .svn directories.  Delete them
+# Issue 2018: [with spkg] crap -- scipy sandbox has a bunch of .svn directories.  Delete them
 
 archive/issues_002018.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/delaunay/tests/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/tests/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/UTIL/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/SRC/.svn\nsage-2.10.1.rc3/spkg/standard/scipy_sandbox-20071020.p1/arpack/ARPACK/LAPACK/.svn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2018\n\n",
+    "closed_at": "2008-02-01T02:02:29Z",
     "created_at": "2008-01-31T23:29:23Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- scipy sandbox has a bunch of .svn directories.  Delete them",
+    "title": "[with spkg] crap -- scipy sandbox has a bunch of .svn directories.  Delete them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2018",
     "user": "https://github.com/williamstein"

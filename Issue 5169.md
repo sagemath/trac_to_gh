@@ -4,10 +4,10 @@ archive/issues_005169.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis was requested by nihilalienumcredo in sage-support.  He wants to be able to do\n\n```\nsage: set_attach_path('/foo/bar/')\nsage: attach file.sage\n```\nand have it work from any location so long as /foo/bar/file.sage exists. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5169\n\n",
+    "closed_at": "2010-02-16T00:05:05Z",
     "created_at": "2009-02-03T23:34:10Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make it possible to set the default search path for the attach and load commands",

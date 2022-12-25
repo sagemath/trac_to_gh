@@ -1,16 +1,17 @@
-# Issue 2497: crash in polynomial remainder
+# Issue 2497: [with patch, positive review] crash in polynomial remainder
 
 archive/issues_002497.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R.<x> = PolynomialRing(Integers(4))\nsage: f = x^2 + 3\nsage: f % 2\nInvMod: inverse undefined\n/Users/david/sage/local/bin/sage-sage: line 222: 11351 Abort trap              sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\nThis is an NTL error message, which is not being trapped or something.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2497\n\n",
+    "closed_at": "2008-04-07T03:46:51Z",
     "created_at": "2008-03-12T16:15:01Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "crash in polynomial remainder",
+    "title": "[with patch, positive review] crash in polynomial remainder",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2497",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

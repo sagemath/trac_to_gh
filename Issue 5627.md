@@ -1,9 +1,10 @@
-# Issue 5627: Trivial typo in quadratic_nonresidue
+# Issue 5627: [with patch, with positive review] Trivial typo in quadratic_nonresidue
 
 archive/issues_005627.json:
 ```json
 {
     "body": "Assignee: justin\n\nCC:  @jonhanke\n\nAn \"l\" was missing.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5627\n\n",
+    "closed_at": "2009-04-24T09:54:12Z",
     "created_at": "2009-03-29T02:58:53Z",
     "labels": [
         "component: quadratic forms",
@@ -11,7 +12,7 @@ archive/issues_005627.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Trivial typo in quadratic_nonresidue",
+    "title": "[with patch, with positive review] Trivial typo in quadratic_nonresidue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5627",
     "user": "https://github.com/kcrisman"

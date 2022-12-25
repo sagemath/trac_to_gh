@@ -1,15 +1,16 @@
-# Issue 2170: sage's integer.pyx digits function sucks in the base 10 case
+# Issue 2170: [with patch, with negative review] sage's integer.pyx digits function sucks in the base 10 case
 
 archive/issues_002170.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe digits function should be rewritten to have a special\ncase in the base 10 case, since as illustrated below\nit is currently **WAY** slower than just doing str(...) on \nthe input number!\n\n```\nsage: a = 3^100000\nsage: time w = a.digits(base=10)\nCPU times: user 1.00 s, sys: 0.01 s, total: 1.01 s\nWall time: 1.01\nsage: time v = list(reversed(str(a)))\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\nsage: v[:10]\n['1', '0', '0', '0', '0', '0', '2', '2', '5', '5']\nsage: w[:10]\n[1, 0, 0, 0, 0, 0, 2, 2, 5, 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2170\n\n",
+    "closed_at": "2008-04-03T19:25:33Z",
     "created_at": "2008-02-15T07:59:32Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "sage's integer.pyx digits function sucks in the base 10 case",
+    "title": "[with patch, with negative review] sage's integer.pyx digits function sucks in the base 10 case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2170",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_009132.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\n```\nOn Thu, Jun 3, 2010 at 8:44 AM, John Palmieri\n wrote:\n> Should .hgignore include a line like\n>\n> \\.rej$\n\nDefinitely not.  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9132\n\n",
+    "closed_at": "2014-03-19T04:37:16Z",
     "created_at": "2010-06-03T15:58:09Z",
     "labels": [
         "component: misc",

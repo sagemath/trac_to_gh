@@ -4,6 +4,7 @@ archive/issues_009077.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9077\n\n",
+    "closed_at": "2010-05-28T21:01:24Z",
     "created_at": "2010-05-28T20:40:44Z",
     "labels": [
         "component: calculus",

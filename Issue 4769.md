@@ -1,16 +1,16 @@
-# Issue 4769: add 5 people to devmap; update info for 2 people
+# Issue 4769: [with patch, positive review] add 5 people to devmap; update info for 2 people
 
 archive/issues_004769.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  mabshoff @haraldschilly\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4769\n\n",
+    "closed_at": "2008-12-12T10:25:10Z",
     "created_at": "2008-12-12T08:04:27Z",
     "labels": [
-        "component: website/wiki",
-        "bug"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "add 5 people to devmap; update info for 2 people",
+    "title": "[with patch, positive review] add 5 people to devmap; update info for 2 people",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4769",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

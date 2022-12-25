@@ -4,6 +4,7 @@ archive/issues_008097.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nWith no CFLAGS set the build is 32 bit\n\n\n```\ngcc -std=gnu99 -O2 -g -m64 -D_REENTRANT -D_THREAD_SAFE -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -O2 -g -m64 -D_REENTRANT -D_THREAD_SAFE -Wno-pointer-sign -o .libs/certtool certtool-gaa.o certtool.o prime.o certtool-cfg.o cfg+.o cfgfile.o cmdline.o parse.o props.o shared.o dynfgets.o strctype.o strdyn.o strplus.o  ../lib/.libs/libgnutls.so -L/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/lib -lz ../gl/.libs/libgnu.a /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/lib/libgcrypt.so /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/lib/libgpg-error.so -lreadline -ltermcap -lnsl -lsocket  -R/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/lib\nld: warning: file /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/lib/libtermcap.a(termcap.o): wrong ELF class: ELFCLASS32\n\n```\n\n\nA patch is ready.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8097\n\n",
+    "closed_at": "2010-02-11T15:13:08Z",
     "created_at": "2010-01-27T20:55:21Z",
     "labels": [
         "component: porting: solaris",

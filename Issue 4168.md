@@ -1,16 +1,17 @@
-# Issue 4168: native mpfr polynomials
+# Issue 4168: [with patch, positive review] native mpfr polynomials
 
 archive/issues_004168.json:
 ```json
 {
     "body": "Assignee: tbd\n\n#4151 implements these, should be used by default for RR['x']\n\nIssue created by migration from https://trac.sagemath.org/ticket/4168\n\n",
+    "closed_at": "2008-11-21T20:19:41Z",
     "created_at": "2008-09-22T17:59:42Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "native mpfr polynomials",
+    "title": "[with patch, positive review] native mpfr polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4168",
     "user": "https://github.com/robertwb"

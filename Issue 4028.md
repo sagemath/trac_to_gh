@@ -1,16 +1,17 @@
-# Issue 4028: doctest and improve sage/interfaces/axiom.py
+# Issue 4028: [with patch, positive review] doctest and improve sage/interfaces/axiom.py
 
 archive/issues_004028.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4028\n\n",
+    "closed_at": "2008-09-01T04:13:41Z",
     "created_at": "2008-09-01T02:40:26Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "doctest and improve sage/interfaces/axiom.py",
+    "title": "[with patch, positive review] doctest and improve sage/interfaces/axiom.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4028",
     "user": "https://github.com/mwhansen"

@@ -1,16 +1,17 @@
-# Issue 3396: [with patch, needs review] new function in misc/latex.py: print_or_typeset
+# Issue 3396: [with patch, positive review] new function in misc/latex.py: print_or_typeset
 
 archive/issues_003396.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: latex, view, print\n\nThis patch defines a function in sage.misc.latex, print_or_typeset, which runs 'view' if in notebook mode with the typeset box, and runs 'print' otherwise.  See the discussion toward the end of this thread:\n\n[http://groups.google.com/group/sage-support/browse_frm/thread/9698e83a1d1b22ac](http://groups.google.com/group/sage-support/browse_frm/thread/9698e83a1d1b22ac)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3396\n\n",
+    "closed_at": "2008-06-15T20:07:54Z",
     "created_at": "2008-06-11T04:31:55Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] new function in misc/latex.py: print_or_typeset",
+    "title": "[with patch, positive review] new function in misc/latex.py: print_or_typeset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3396",
     "user": "https://github.com/jhpalmieri"

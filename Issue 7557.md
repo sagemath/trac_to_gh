@@ -3,7 +3,8 @@
 archive/issues_007557.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nReported on sage-support:\n\n```\nvar('y', domain='real')\nassume(y, 'real')\n\nabs(exp(y*I)).simplify()\n    1\n\nabs(exp(1.1*y*I)).simplify()\n    e^(1.1*I*y)\n\nThe last result is incorrect. It seems simplify() doesn't like\nfloating point?\n```\n\nIn this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/c6d4c757cef8cc4a\n\n\nMore evidence:\n\n```\nsage: t = abs(exp(y*I)); t\nabs(e^(I*y))\nsage: t._maxima_init_()\n'abs(exp((y)*(0+%i*1)))'\n\nsage: u = abs(exp(1.1*y*I)); u\nabs(e^(1.10000000000000*I*y))\nsage: u._maxima_init_()\n'abs(exp((y)*(1.1000000000000001*I)))'\n```\n\nThis might be the reason:\n\n```\nsage: t.operands()[0].operands()[0].operands()[1].pyobject()\nI\nsage: type(t.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic'>\n\nsage: u.operands()[0].operands()[0].operands()[1].pyobject()\n1.10000000000000*I\nsage: type(u.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.complex_number.ComplexNumber'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7557\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: interfaces\n\nReported on sage-support:\n\n```\nvar('y', domain='real')\nassume(y, 'real')\n\nabs(exp(y*I)).simplify()\n    1\n\nabs(exp(1.1*y*I)).simplify()\n    e^(1.1*I*y)\n\nThe last result is incorrect. It seems simplify() doesn't like\nfloating point?\n```\n\nIn this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/c6d4c757cef8cc4a\n\n\nMore evidence:\n\n```\nsage: t = abs(exp(y*I)); t\nabs(e^(I*y))\nsage: t._maxima_init_()\n'abs(exp((y)*(0+%i*1)))'\n\nsage: u = abs(exp(1.1*y*I)); u\nabs(e^(1.10000000000000*I*y))\nsage: u._maxima_init_()\n'abs(exp((y)*(1.1000000000000001*I)))'\n```\n\nThis might be the reason:\n\n```\nsage: t.operands()[0].operands()[0].operands()[1].pyobject()\nI\nsage: type(t.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic'>\n\nsage: u.operands()[0].operands()[0].operands()[1].pyobject()\n1.10000000000000*I\nsage: type(u.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.complex_number.ComplexNumber'>\n```\n\n**Apply** [attachment:trac_7557-maxima_complex_number_conversion.2.patch], [attachment:trac_7557-fix_doctest_precision.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7557\n\n",
+    "closed_at": "2013-01-21T21:07:48Z",
     "created_at": "2009-11-30T09:58:16Z",
     "labels": [
         "component: symbolics",
@@ -19,6 +20,8 @@ archive/issues_007557.json:
 Assignee: @burcin
 
 CC:  @kcrisman
+
+Keywords: interfaces
 
 Reported on sage-support:
 
@@ -68,6 +71,8 @@ sage: u.operands()[0].operands()[0].operands()[1].pyobject()
 sage: type(u.operands()[0].operands()[0].operands()[1].pyobject())
 <type 'sage.rings.complex_number.ComplexNumber'>
 ```
+
+**Apply** [attachment:trac_7557-maxima_complex_number_conversion.2.patch], [attachment:trac_7557-fix_doctest_precision.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7557
 

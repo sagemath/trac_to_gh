@@ -1,22 +1,23 @@
-# Issue 6658: digits() claims it defaults to base 2, but it defaults to base 10
+# Issue 6658: [with patch, positive review] digits() claims it defaults to base 2, but it defaults to base 10
 
 archive/issues_006658.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: x = 1729\nsage: x.digits()\n[9, 2, 7, 1]\n```\nbut the docstring for `digits()` claims it defaults to base 2. The attached patch fixes this; thanks to Yasuhide NUMATA at the *-combinat meeting for noticing this. I would have shown him how to make a patch and upload it to trac, but their wireless network was down at the time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6658\n\n",
+    "body": "Assignee: @dandrake\n\n```\nsage: x = 1729\nsage: x.digits()\n[9, 2, 7, 1]\n```\nbut the docstring for `digits()` claims it defaults to base 2. The attached patch fixes this; thanks to Yasuhide NUMATA at the *-combinat meeting for noticing this. I would have shown him how to make a patch and upload it to trac, but their wireless network was down at the time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6658\n\n",
+    "closed_at": "2009-08-03T06:08:20Z",
     "created_at": "2009-07-30T03:03:24Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "digits() claims it defaults to base 2, but it defaults to base 10",
+    "title": "[with patch, positive review] digits() claims it defaults to base 2, but it defaults to base 10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6658",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: somebody
+Assignee: @dandrake
 
 ```
 sage: x = 1729

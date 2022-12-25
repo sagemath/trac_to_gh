@@ -1,16 +1,17 @@
-# Issue 4897: integral_points() misses some points
+# Issue 4897: [with patch, positive review] integral_points() misses some points
 
 archive/issues_004897.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve integral points\n\nFrancois Glineur reported to me that for the elliptic curve \"20160bg2\" not all integral points are found.\n\n```\nsage: E=EllipticCurve('20160bg2')\nsage: [P[0] for P in E.integral_points()]\n[-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186, 1476, 2034, 67246]\n```\nwhile Magma gives\n\n```\n> E:=EllipticCurve([0, 0, 0, -468, 2592]);\n> Sort([P[1] : P in IntegralPoints(E)]);\n[ -24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, \n1476, 2034, 67246 ]\n```\nso we are missing x=168 and x=381.\n\nThe curve has rank 2 and full 2-torsion.\nThe point Q=(168,2160) is the unique integral point its coset modulo torsion and I think that is why it is being missed.  In fact it seems incredible that this has not been seen before in all the testing which was done!\n\nI therefore think that the function  integral_points_with_bounded_mw_coeffs() is at fault, and will fix it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4897\n\n",
+    "closed_at": "2009-01-12T11:08:08Z",
     "created_at": "2008-12-31T10:42:46Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "integral_points() misses some points",
+    "title": "[with patch, positive review] integral_points() misses some points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4897",
     "user": "https://github.com/JohnCremona"

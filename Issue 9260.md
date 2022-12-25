@@ -3,7 +3,8 @@
 archive/issues_009260.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nThe documentation from `RealIntervalField` says:\n\n```\n       See the documentation for ``RealIntervalField_class`` for many more\n       examples.\n```\nHowever there is no documentation for `RealIntervalField_class`:\n\n```\nsage: RealIntervalField_class?\nObject `RealIntervalField_class` not found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9260\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nKeywords: sd40.5\n\nThe documentation from `RealIntervalField` says:\n\n```\n       See the documentation for ``RealIntervalField_class`` for many more\n       examples.\n```\nHowever there is no documentation for `RealIntervalField_class`:\n\n```\nsage: RealIntervalField_class?\nObject `RealIntervalField_class` not found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9260\n\n",
+    "closed_at": "2012-06-18T10:22:07Z",
     "created_at": "2010-06-18T09:52:05Z",
     "labels": [
         "component: documentation",
@@ -20,6 +21,8 @@ archive/issues_009260.json:
 Assignee: mvngu
 
 CC:  @kcrisman
+
+Keywords: sd40.5
 
 The documentation from `RealIntervalField` says:
 

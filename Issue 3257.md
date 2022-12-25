@@ -1,9 +1,10 @@
-# Issue 3257: Pbuild ignores gcc specific default settings
+# Issue 3257: [with patch, positve review] Pbuild ignores gcc specific default settings
 
 archive/issues_003257.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nFor most arguments to GCC_Compiler, gccc will completely ignore them and use the enviromental defaults instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3257\n\n",
+    "closed_at": "2008-05-21T13:27:35Z",
     "created_at": "2008-05-19T18:53:19Z",
     "labels": [
         "component: pbuild",
@@ -11,7 +12,7 @@ archive/issues_003257.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Pbuild ignores gcc specific default settings",
+    "title": "[with patch, positve review] Pbuild ignores gcc specific default settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3257",
     "user": "https://github.com/garyfurnish"

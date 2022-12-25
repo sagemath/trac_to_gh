@@ -3,7 +3,8 @@
 archive/issues_007024.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori\n\nFlitn 1.3.0.p2 is one of several programs which ignores the settings of CC and CXX and users a gcc and g++ that it finds. \n\n\n```\n\nflint-1.3.0.p2/src/profiler.h\nflint-1.3.0.p2/src/mpn_extras-test.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nFound gcc 4 or later\nTurning off loop unrolling on Solaris/Sparc\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/flint-1.3.0.p2/src'\ngcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/ -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include  -fPIC  -O2  -DNDEBUG -o zn_mod.o -c zn_poly/src/zn_mod.c\n```\n\nThis needs fixing to add support for the Sun Studio compilers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7024\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\nFlitn 1.3.0.p2 is one of several programs which ignores the settings of CC and CXX and users a gcc and g++ that it finds. \n\n\n```\n\nflint-1.3.0.p2/src/profiler.h\nflint-1.3.0.p2/src/mpn_extras-test.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nFound gcc 4 or later\nTurning off loop unrolling on Solaris/Sparc\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/flint-1.3.0.p2/src'\ngcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/ -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include  -fPIC  -O2  -DNDEBUG -o zn_mod.o -c zn_poly/src/zn_mod.c\n```\n\nThis needs fixing to add support for the Sun Studio compilers.\n\n**spkg**:\n[http://wstein.org/home/ohanar/clang-port/sage-5.0.beta1-src/spkg/standard/flint-1.5.0.p11.spkg](http://wstein.org/home/ohanar/clang-port/sage-5.0.beta1-src/spkg/standard/flint-1.5.0.p11.spkg)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7024\n\n",
+    "closed_at": "2013-11-23T10:36:33Z",
     "created_at": "2009-09-27T10:57:28Z",
     "labels": [
         "component: build",
@@ -45,6 +46,10 @@ gcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/
 ```
 
 This needs fixing to add support for the Sun Studio compilers.
+
+**spkg**:
+[http://wstein.org/home/ohanar/clang-port/sage-5.0.beta1-src/spkg/standard/flint-1.5.0.p11.spkg](http://wstein.org/home/ohanar/clang-port/sage-5.0.beta1-src/spkg/standard/flint-1.5.0.p11.spkg)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7024
 

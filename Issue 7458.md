@@ -1,22 +1,25 @@
-# Issue 7458: [with patch, needs review] Sylvester matrix for polynomials
+# Issue 7458: Sylvester matrix for polynomials
 
 archive/issues_007458.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nSmall patch to add Sylvester matrix calculation for univariate and multivariate polynomials.\n\nI think that my patch is a bit more general (and has doctests) compared to didier deshommes' patch here, which seems to have never been merged:\n\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/sylveste...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7458\n\n",
+    "body": "Assignee: @malb\n\nKeywords: Sylvester matrix\n\nSmall patch to add Sylvester matrix calculation for univariate and multivariate polynomials.\n\nI think that my patch is a bit more general (and has doctests) compared to didier deshommes' patch here, which seems to have never been merged:\n\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/sylveste...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7458\n\n",
+    "closed_at": "2011-01-26T22:26:11Z",
     "created_at": "2009-11-14T13:00:01Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "[with patch, needs review] Sylvester matrix for polynomials",
+    "title": "Sylvester matrix for polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7458",
     "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
 }
 ```
 Assignee: @malb
+
+Keywords: Sylvester matrix
 
 Small patch to add Sylvester matrix calculation for univariate and multivariate polynomials.
 

@@ -1,16 +1,17 @@
-# Issue 3497: [with patch, needs review] ignore git
+# Issue 3497: [with patch, positive] ignore git
 
 archive/issues_003497.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: git\n\nupdated .hgignore and added .gitignore\n\nthe rules to determine the specific file cases included may be generalizable\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3497\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: git, editor_mabshoff\n\nupdated .hgignore and added .gitignore\n\nthe rules to determine the specific file cases included may be generalizable\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3497\n\n",
+    "closed_at": "2008-07-31T02:57:54Z",
     "created_at": "2008-06-23T21:27:35Z",
     "labels": [
         "component: distribution",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] ignore git",
+    "title": "[with patch, positive] ignore git",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3497",
     "user": "https://trac.sagemath.org/admin/accounts/users/ghtdak"
@@ -18,7 +19,7 @@ archive/issues_003497.json:
 ```
 Assignee: mabshoff
 
-Keywords: git
+Keywords: git, editor_mabshoff
 
 updated .hgignore and added .gitignore
 

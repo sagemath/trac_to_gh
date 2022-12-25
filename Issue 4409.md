@@ -1,16 +1,17 @@
-# Issue 4409: ellipsis_range throws exception
+# Issue 4409: [with patch, with positive review] ellipsis_range throws exception
 
 archive/issues_004409.json:
 ```json
 {
     "body": "Assignee: somebody\n\nIt works fine, but the traceback gets expensive. Turns out 1 == Ellipsis throws an exception...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4409\n\n",
+    "closed_at": "2008-10-31T14:49:39Z",
     "created_at": "2008-10-31T06:18:03Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "ellipsis_range throws exception",
+    "title": "[with patch, with positive review] ellipsis_range throws exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4409",
     "user": "https://github.com/robertwb"

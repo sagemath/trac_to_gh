@@ -1,9 +1,10 @@
-# Issue 3096: [with patch, needs review] Fix documentation rebuild issues for Sage 3.0.1.final
+# Issue 3096: [with patch, positive review] Fix documentation rebuild issues for Sage 3.0.1.final
 
 archive/issues_003096.json:
 ```json
 {
-    "body": "Assignee: failure\n\nAs usual at the end of a release cycle we have to fix some LaTeX issues from the docstring. The upcoming patch fixes the issues for 3.0.1.rc0 for me.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3096\n\n",
+    "body": "Assignee: mabshoff\n\nAs usual at the end of a release cycle we have to fix some LaTeX issues from the docstring. The upcoming patch fixes the issues for 3.0.1.rc0 for me.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3096\n\n",
+    "closed_at": "2008-05-03T19:42:11Z",
     "created_at": "2008-05-03T15:15:28Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_003096.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch, needs review] Fix documentation rebuild issues for Sage 3.0.1.final",
+    "title": "[with patch, positive review] Fix documentation rebuild issues for Sage 3.0.1.final",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3096",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 As usual at the end of a release cycle we have to fix some LaTeX issues from the docstring. The upcoming patch fixes the issues for 3.0.1.rc0 for me.
 

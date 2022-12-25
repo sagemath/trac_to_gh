@@ -1,9 +1,10 @@
-# Issue 3974: [with patch, needs review] renaming of integral_weierstrass_model to integral_short_weierstrass_model
+# Issue 3974: [with patch, with positive review] renaming of integral_weierstrass_model to integral_short_weierstrass_model
 
 archive/issues_003974.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI propose a trivial change in the name of integral_weierstrass_model. According to ell_generic.py the terminology is chosen as\n\n> Elliptic curves are always represented by `Weierstass Models' with\n> five coefficients $[a_1,a_2,a_3,a_4,a_6]$ in standard notation.  In\n> Magma, `Weierstrass Model' means a model with a1=a2=a3=0, which is\n> called `Short Weierstrass Model' in Sage; \n\n\nso consequently the integral_weierstrass_model which gives back a Short Weierstrass Model should be called integral_short_weierstrass_model.\n\nThat is maybe pedantic and a matter of taste, but I believe it would be better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3974\n\n",
+    "closed_at": "2008-09-02T11:47:50Z",
     "created_at": "2008-08-28T12:10:36Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_003974.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] renaming of integral_weierstrass_model to integral_short_weierstrass_model",
+    "title": "[with patch, with positive review] renaming of integral_weierstrass_model to integral_short_weierstrass_model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3974",
     "user": "https://github.com/categorie"

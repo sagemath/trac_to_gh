@@ -1,25 +1,26 @@
-# Issue 9968: Update extension code for mpmath-0.16
+# Issue 9968: Update extension code for mpmath-0.17
 
 archive/issues_009968.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe patch adds fast Cython version of some more mpmath functions to sage.libs.mpmath.\n\nThis should wait to be merged until mpmath 0.16 gets released (I will do this soon). Right now, it can be tested with an svn trunk checkout of mpmath.\n\nIt can be tested with:\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9969\n\n",
+    "body": "The patch adds fast Cython version of some more mpmath functions to sage.libs.mpmath.\n\nThis ticket contains a new spkg for mpmath-0.17 and two patches\nthat need to be applied to sage itself. First mpmath_update_fixed_4.6.1.patch, then truediv_fix.patch.\n\nIt can be tested with:\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\nNew SPKG: [http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg)\n\nApply:\n* [attachment:mpmath_update_fixed_4.6.1.patch]\n* [attachment:truediv_fix.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9969\n\n",
+    "closed_at": "2011-05-06T07:19:20Z",
     "created_at": "2010-09-22T13:16:04Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
-    "title": "Update extension code for mpmath-0.16",
+    "title": "Update extension code for mpmath-0.17",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9968",
     "user": "https://github.com/fredrik-johansson"
 }
 ```
-Assignee: tbd
-
 The patch adds fast Cython version of some more mpmath functions to sage.libs.mpmath.
 
-This should wait to be merged until mpmath 0.16 gets released (I will do this soon). Right now, it can be tested with an svn trunk checkout of mpmath.
+This ticket contains a new spkg for mpmath-0.17 and two patches
+that need to be applied to sage itself. First mpmath_update_fixed_4.6.1.patch, then truediv_fix.patch.
 
 It can be tested with:
 
@@ -28,6 +29,11 @@ sage: import mpmath
 sage: mpmath.runtests()
 sage: mpmath.doctests()
 ```
+New SPKG: [http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg)
+
+Apply:
+* [attachment:mpmath_update_fixed_4.6.1.patch]
+* [attachment:truediv_fix.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9969
 

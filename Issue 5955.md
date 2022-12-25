@@ -1,9 +1,10 @@
-# Issue 5955: Sage 3.4.2.rc0: Set stacksize for clisp.spkg to 32kb
+# Issue 5955: [with spkg, positive review] Sage 3.4.2.rc0: Set stacksize during clisp.spkg build to 32kb
 
 archive/issues_005955.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nVarious boxen have too little stacksapce, i.e. FC 10 and RHEL 10 for example use 10k. This makes clisp blow up during the build, so raise the limit to 32k on linux in general.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5955\n\n",
+    "closed_at": "2009-05-04T09:16:02Z",
     "created_at": "2009-05-01T06:39:31Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005955.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Sage 3.4.2.rc0: Set stacksize for clisp.spkg to 32kb",
+    "title": "[with spkg, positive review] Sage 3.4.2.rc0: Set stacksize during clisp.spkg build to 32kb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5955",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

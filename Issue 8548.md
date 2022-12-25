@@ -3,7 +3,8 @@
 archive/issues_008548.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nObviously, the instructions\n\n```\npp = Permutation([3, 1, 2])\npp.hyperoctahedral_double_coset_type()\n```\nlead to an error because the permutation has an odd size. However, there is an error in the raised error message : \n\n```\nNameError: global name 'p' is not defined\n```\nThe string should be\n\n```\nValueError: pp is a permutation of odd size and has no coset-type\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8548\n\n",
+    "body": "Assignee: sage-combinat\n\nObviously, the instructions\n\n```\npp = Permutation([3, 1, 2])\npp.hyperoctahedral_double_coset_type()\n```\nlead to an error because the permutation has an odd size. However, there is an error in the raised error message : \n\n```\nNameError: global name 'p' is not defined\n```\nThe string should be\n\n```\nValueError: [3, 1, 2] is a permutation of odd size and has no coset-type\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8548\n\n",
+    "closed_at": "2010-04-19T03:07:59Z",
     "created_at": "2010-03-16T16:21:26Z",
     "labels": [
         "component: combinatorics",
@@ -33,8 +34,10 @@ NameError: global name 'p' is not defined
 The string should be
 
 ```
-ValueError: pp is a permutation of odd size and has no coset-type
+ValueError: [3, 1, 2] is a permutation of odd size and has no coset-type
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8548
 

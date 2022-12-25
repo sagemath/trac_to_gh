@@ -4,6 +4,7 @@ archive/issues_003438.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen building Gap with CC set to an absolute path, i.e. `CC=/usr/bin/gcc`, configure fails. This needs to be fixed in their m4 macros and/or reported upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3438\n\n",
+    "closed_at": "2021-12-03T18:41:01Z",
     "created_at": "2008-06-16T18:38:06Z",
     "labels": [
         "component: packages: standard",

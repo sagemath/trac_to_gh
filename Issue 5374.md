@@ -1,17 +1,18 @@
-# Issue 5374: [with patch, needs review] minor problem with ReST in misc/hg.py
+# Issue 5374: [with patch, positive review] minor problem with ReST in misc/hg.py
 
 archive/issues_005374.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis fixes the one problem remaining from ticket #4919.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5374\n\n",
+    "closed_at": "2009-02-28T16:23:42Z",
     "created_at": "2009-02-26T00:17:28Z",
     "labels": [
-        "component: misc",
+        "component: documentation",
         "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] minor problem with ReST in misc/hg.py",
+    "title": "[with patch, positive review] minor problem with ReST in misc/hg.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5374",
     "user": "https://github.com/jhpalmieri"

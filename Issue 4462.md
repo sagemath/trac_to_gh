@@ -1,9 +1,10 @@
-# Issue 4462: contour_plot defaults changed to fill, affects implicit_plot
+# Issue 4462: [with patch, positive review] contour_plot defaults changed to fill, affects implicit_plot
 
 archive/issues_004462.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn Sage 3.1.1,\n\n```\nimplicit_plot(x^2+y^2-1,(x,-1.1,1.1),(y,-1.1,1.1),plot_points=100).show(aspect_ratio=1)\n```\nproduces a very nice circle.\n\nIn Sage 3.1.4, the same code produces a filled-in disc. Likewise, implicit_plot tries to fill in all curves;\n\n```\nimplicit_plot(5*x^4-x^2-y^2,(x,-5,5),(y,-5,5))\n```\nlooks odd.\n\nThe cause is contour_plot (called by implicit_plot): the default for the fill option is True. Feeding fill=False to implicit_plot produces the desired behavior:\n\n```\nimplicit_plot(x^2+y^2-1,(x,-1.1,1.1),(y,-1.1,1.1),plot_points=100,fill=False).show(aspect_ratio=1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4462\n\n",
+    "closed_at": "2008-11-08T07:13:31Z",
     "created_at": "2008-11-07T16:48:30Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_004462.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "contour_plot defaults changed to fill, affects implicit_plot",
+    "title": "[with patch, positive review] contour_plot defaults changed to fill, affects implicit_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4462",
     "user": "https://github.com/johnperry-math"

@@ -4,6 +4,7 @@ archive/issues_007995.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe `sage-doctest` script returns some status info in its exit code, like if it was aborted with a `KeyboardInterrupt`. The `sage-ptest` script interprets this information, but `sage-test` mostly ignores it.\n\nOne symptom is that Ctrl-C-ing a `sage -t` run of multiple files doesn't work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7995\n\n",
+    "closed_at": "2010-01-23T09:58:40Z",
     "created_at": "2010-01-19T07:38:35Z",
     "labels": [
         "component: doctest coverage",

@@ -4,6 +4,7 @@ archive/issues_009319.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime\n\nTwo issues and/or suggestions for \"sage -merge\":\n\n- if a ticket (like #9278) *removes* a file from the Sage library, then 'sage -merge' runs 'sage -tp 2 -long' with no argument, and this doesn't succeed.  So we should catch this case and deal with it.\n\n- 'sage -merge' should detect whether each patch file has a properly formatted commit message, and either automatically prepend \"#NUM\" to it, or allow the release manager to edit it, before applying it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9319\n\n",
+    "closed_at": "2013-05-21T07:22:55Z",
     "created_at": "2010-06-23T21:22:54Z",
     "labels": [
         "component: build",

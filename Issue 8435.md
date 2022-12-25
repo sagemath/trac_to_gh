@@ -1,16 +1,17 @@
-# Issue 8435: SageNB 0.7.5.2
+# Issue 8435: SageNB 0.7.5.3
 
 archive/issues_008435.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @mwhansen mvngu @robert-marik acleone\n\nCandidates: #5601, #7911, #8141, #8324, #8265, #8387.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8435\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @mwhansen mvngu @robert-marik acleone\n\nNew package available at\n\n* http://sage.math.washington.edu/home/mpatel/trac/8435/sagenb-0.7.5.3.spkg\n\nMerged in 0.7.5.3: #8221, #8225, #8325, #8443.\n\nMerged in 0.7.5.2: #5601, #7911, #8141, #8324, #8265, #8387.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8435\n\n",
+    "closed_at": "2010-03-09T08:04:38Z",
     "created_at": "2010-03-04T11:11:52Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "SageNB 0.7.5.2",
+    "title": "SageNB 0.7.5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8435",
     "user": "https://github.com/qed777"
@@ -20,7 +21,13 @@ Assignee: @williamstein
 
 CC:  @jhpalmieri @mwhansen mvngu @robert-marik acleone
 
-Candidates: #5601, #7911, #8141, #8324, #8265, #8387.
+New package available at
+
+* http://sage.math.washington.edu/home/mpatel/trac/8435/sagenb-0.7.5.3.spkg
+
+Merged in 0.7.5.3: #8221, #8225, #8325, #8443.
+
+Merged in 0.7.5.2: #5601, #7911, #8141, #8324, #8265, #8387.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8435
 

@@ -4,6 +4,7 @@ archive/issues_007082.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: sagenb notebook\n\nWorksheetProcess in `worksheet_process.py` does not inherit from `object`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7082\n\n",
+    "closed_at": "2009-11-15T14:15:41Z",
     "created_at": "2009-09-30T10:21:43Z",
     "labels": [
         "component: notebook",

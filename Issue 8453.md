@@ -4,6 +4,7 @@ archive/issues_008453.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/pari-2.3.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8453\n\n",
+    "closed_at": "2010-04-28T19:32:51Z",
     "created_at": "2010-03-06T06:21:58Z",
     "labels": [
         "component: packages: standard",

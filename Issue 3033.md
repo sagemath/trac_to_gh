@@ -4,6 +4,7 @@ archive/issues_003033.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf sage is compiled without the --incref-local-binop for Cython, calculus/equations.py segfaults.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3033\n\n",
+    "closed_at": "2008-04-26T22:24:23Z",
     "created_at": "2008-04-26T22:15:19Z",
     "labels": [
         "component: calculus",

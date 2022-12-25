@@ -1,16 +1,17 @@
-# Issue 5671: Create a spkg for minisat
+# Issue 5671: Create a documented minimal useful Cython wrapper for miniSAT along with an spkg
 
 archive/issues_005671.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  fichtejo\n\nWe want miniSAT.  spkg it up!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5671\n\n",
+    "body": "Assignee: boothby\n\nCC:  fichtejo\n\nSage lacks a SAT solver.  First step, lets make a spkg and wrap it.  In the future, we should add boolean functions, etc., but one step at a time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5671\n\n",
+    "closed_at": "2014-03-19T04:41:52Z",
     "created_at": "2009-04-02T22:10:41Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Create a spkg for minisat",
+    "title": "Create a documented minimal useful Cython wrapper for miniSAT along with an spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5671",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -20,7 +21,7 @@ Assignee: boothby
 
 CC:  fichtejo
 
-We want miniSAT.  spkg it up!
+Sage lacks a SAT solver.  First step, lets make a spkg and wrap it.  In the future, we should add boolean functions, etc., but one step at a time.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5671
 

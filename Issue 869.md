@@ -1,15 +1,16 @@
-# Issue 869: [with patch] graphs: bipartite graph functions
+# Issue 869: [with patch] [tested by cwitty] graphs: bipartite graph functions
 
 archive/issues_000869.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nHere are a few functions wrapped from the bipartite functions in networkx.\n\nIssue created by migration from https://trac.sagemath.org/ticket/869\n\n",
+    "closed_at": "2007-10-13T06:26:42Z",
     "created_at": "2007-10-13T00:45:10Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "[with patch] graphs: bipartite graph functions",
+    "title": "[with patch] [tested by cwitty] graphs: bipartite graph functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/869",
     "user": "https://github.com/jasongrout"

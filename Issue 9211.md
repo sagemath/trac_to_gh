@@ -3,7 +3,8 @@
 archive/issues_009211.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  @rbeezer @kcrisman @kini\n\nThough #7299 helped, graph vertices are still cut off.\n\nWith the updated matplotlib spkg at #9210, we can turn off clipping of the matplotlib scatterplot, or with a more recent (SVN right now) version of matplotlib, we could probably add some bbox_extra_artists to the savefig which takes those artists into account when calculating the bounding box (when bbox_inches='tight').\n\nEither way, a real fix should be possible soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9211\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  @rbeezer @kcrisman @kini\n\nThough #7299 helped, graph vertices are still cut off.\n\nWe can turn off clipping of the matplotlib scatterplot and add some bbox_extra_artists to the savefig which takes those artists into account when calculating the bounding box (when bbox_inches='tight').\n\n---\nFirst apply [attachment:trac-9211-fix_cut_vertices_in_graphs.patch] and then apply [attachment:trac_9211_digraph_clipping.patch] to `$SAGE_ROOT/devel/sage`. Finally apply [attachment:trac_9211-fix_doctests.patch] to `$SAGE_ROOT/devel/sage`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9211\n\n",
+    "closed_at": "2011-11-07T10:10:28Z",
     "created_at": "2010-06-11T06:48:32Z",
     "labels": [
         "component: graph theory",
@@ -22,9 +23,10 @@ CC:  @rbeezer @kcrisman @kini
 
 Though #7299 helped, graph vertices are still cut off.
 
-With the updated matplotlib spkg at #9210, we can turn off clipping of the matplotlib scatterplot, or with a more recent (SVN right now) version of matplotlib, we could probably add some bbox_extra_artists to the savefig which takes those artists into account when calculating the bounding box (when bbox_inches='tight').
+We can turn off clipping of the matplotlib scatterplot and add some bbox_extra_artists to the savefig which takes those artists into account when calculating the bounding box (when bbox_inches='tight').
 
-Either way, a real fix should be possible soon.
+---
+First apply [attachment:trac-9211-fix_cut_vertices_in_graphs.patch] and then apply [attachment:trac_9211_digraph_clipping.patch] to `$SAGE_ROOT/devel/sage`. Finally apply [attachment:trac_9211-fix_doctests.patch] to `$SAGE_ROOT/devel/sage`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9211
 

@@ -1,9 +1,10 @@
-# Issue 6374: [with patch, needs review] Fix race condition in sage build process
+# Issue 6374: [with patch, positive review] Fix race condition in sage build process
 
 archive/issues_006374.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @ncalexan georgsweber\n\nSo on #6234, there was a second patch to fix a race condition that Nick saw during the 4.0.2 release cycle. Someone else just ran into this, and I noticed that the second patch from that ticket somehow didn't make it into Sage. (Oops.)\n\nI'm attaching the patch here, with the same filename -- see #6234 (at the bottom) for an example of the bad behavior and an explanation for the fix. It's already been reviewed at least once, but a second review wouldn't hurt. ;)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6374\n\n",
+    "closed_at": "2009-07-23T01:43:50Z",
     "created_at": "2009-06-20T20:41:41Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_006374.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Fix race condition in sage build process",
+    "title": "[with patch, positive review] Fix race condition in sage build process",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6374",
     "user": "https://github.com/craigcitro"

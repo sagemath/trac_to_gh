@@ -4,6 +4,7 @@ archive/issues_007430.json:
 ```json
 {
     "body": "Assignee: boothby\n\nAs soon as sagenb-0.4.2 is released at \n\n  http://sage.math.washington.edu/home/wstein/patches/sagenb/\n\nit needs to be included in sage-4.2.1.*\n\nIssue created by migration from https://trac.sagemath.org/ticket/7430\n\n",
+    "closed_at": "2009-11-12T07:51:42Z",
     "created_at": "2009-11-11T19:19:59Z",
     "labels": [
         "component: notebook",

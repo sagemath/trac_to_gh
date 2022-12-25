@@ -1,16 +1,17 @@
-# Issue 5928: multiplication of factorisations should coerce factors into a common universe
+# Issue 5928: [with patch, positive review] binary operations on factorisations should coerce factors into a common universe
 
 archive/issues_005928.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: multiplication factorization coercion\n\nThis was uncovered at #5921.  Observe:\n\n```\nsage: P.<x> = ZZ\nsage: f = 2*x + 2\nsage: c = f.content()\nsage: g = f//c\nsage: F1 = c.factor(); [type(a[0]) for a in F1]\n[<type 'sage.rings.integer.Integer'>]\nsage: F2 = g.factor(); [type(a[0]) for a in F2]\n[<type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]\nsage: F1*F2\n2 * (x + 1)\nsage: [type(a[0]) for a in F1*F2]\n[<type 'sage.rings.integer.Integer'>,\n <type 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'>]\n```\n\nI think that multiplying two factorisations should make sure that the factors can be coerced into a common universe, so that all factors have the same parent.  If that's impossible, then an error should be thrown.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5928\n\n",
+    "closed_at": "2009-04-30T06:01:28Z",
     "created_at": "2009-04-29T01:43:08Z",
     "labels": [
         "component: factorization",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "multiplication of factorisations should coerce factors into a common universe",
+    "title": "[with patch, positive review] binary operations on factorisations should coerce factors into a common universe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5928",
     "user": "https://github.com/aghitza"

@@ -3,10 +3,10 @@
 archive/issues_001048.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBoost has a nice concept of \"filters\" of a graph.  They provide views into subsets of the vertices and/or edges of the graph, based on predicate functions.  That would be nice to have.\n\nSee [http://www.boost.org/libs/graph/doc/filtered_graph.html](http://www.boost.org/libs/graph/doc/filtered_graph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1048\n\n",
+    "body": "Assignee: @williamstein\n\nBoost has a nice concept of \"filters\" of a graph.  They provide views into subsets of the vertices and/or edges of the graph, based on predicate functions.  That would be nice to have.\n\nSee [http://www.boost.org/libs/graph/doc/filtered_graph.html](http://www.boost.org/libs/graph/doc/filtered_graph.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1048\n\n",
     "created_at": "2007-11-01T00:11:33Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "graphs: Create filtered views of graphs",
@@ -16,8 +16,6 @@ archive/issues_001048.json:
 }
 ```
 Assignee: @williamstein
-
-Keywords: graphs
 
 Boost has a nice concept of "filters" of a graph.  They provide views into subsets of the vertices and/or edges of the graph, based on predicate functions.  That would be nice to have.
 

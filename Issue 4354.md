@@ -1,22 +1,23 @@
-# Issue 4354: loading a file with spaces in the filename doesn't work
+# Issue 4354: [with patch; positive review] loading a file with spaces in the filename doesn't work
 
 archive/issues_004354.json:
 ```json
 {
-    "body": "Assignee: tbd\n\ntry it at home:\n\n```\n$ echo 'print \"ok\"' > 'test file.sage'\n$ sage \"test file.sage\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4354\n\n",
+    "body": "Assignee: abergeron\n\ntry it at home:\n\n```\n$ echo 'print \"ok\"' > 'test file.sage'\n$ sage \"test file.sage\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4354\n\n",
+    "closed_at": "2009-02-15T14:05:16Z",
     "created_at": "2008-10-24T00:41:49Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "loading a file with spaces in the filename doesn't work",
+    "title": "[with patch; positive review] loading a file with spaces in the filename doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4354",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
-Assignee: tbd
+Assignee: abergeron
 
 try it at home:
 

@@ -1,16 +1,17 @@
-# Issue 4964: Add Weil pairing to Sage
+# Issue 4964: [with patch, with positive review] Add Weil pairing to Sage
 
 archive/issues_004964.json:
 ```json
 {
     "body": "Assignee: mollerhansen\n\nKeywords: pairing, elliptic curve\n\nAdd at first (mollerhansen's) Weil pairing implementation on EC points and in this way laying out a framework for pairings in general. \n\nIn future: \n* this Weil pairing implementation should be replaced by a more effective implementation.\n* other pairings could be implemented/wrapped using same framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4964\n\n",
+    "closed_at": "2009-02-08T02:00:54Z",
     "created_at": "2009-01-11T17:54:28Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Add Weil pairing to Sage",
+    "title": "[with patch, with positive review] Add Weil pairing to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4964",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmhansen"

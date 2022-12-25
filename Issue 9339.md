@@ -4,6 +4,7 @@ archive/issues_009339.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nConsider the following two notebook cells. Semantically, the input is the same in both examples. The only difference is that the second one has a line break inside a bracket.\n\nFirst one prints the result of the last expression (line) in the cell:\n\n```\n(x+1)\n///\nx + 1\n```\n\nBut the second one doesn't:\n\n```\n(x+\n1)\n///\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9339\n\n",
+    "closed_at": "2015-01-13T01:17:18Z",
     "created_at": "2010-06-25T20:04:50Z",
     "labels": [
         "component: notebook",

@@ -1,9 +1,10 @@
-# Issue 5497: notebook: make sure each worksheet can only run once
+# Issue 5497: notebook: make sure a worksheet handles being run multiple times gracefully
 
 archive/issues_005497.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nCurrently the user can edit/start the same worksheet multiple times. This is bad.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5497\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nCurrently the user can edit/start the same worksheet multiple times. But there is no synchronization, this is bad.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5497\n\n",
+    "closed_at": "2009-11-15T13:48:51Z",
     "created_at": "2009-03-12T04:18:37Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005497.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "notebook: make sure each worksheet can only run once",
+    "title": "notebook: make sure a worksheet handles being run multiple times gracefully",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5497",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -21,7 +22,7 @@ Assignee: boothby
 
 CC:  @williamstein @mwhansen
 
-Currently the user can edit/start the same worksheet multiple times. This is bad.
+Currently the user can edit/start the same worksheet multiple times. But there is no synchronization, this is bad.
 
 Cheers,
 

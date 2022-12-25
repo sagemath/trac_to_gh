@@ -1,16 +1,17 @@
-# Issue 9567: Networkx-1.1 spkg
+# Issue 9567: Networkx-1.2 spkg
 
 archive/issues_009567.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen\n\nKeywords: networkx spkg graph theory\n\nThis is the updated networkx package. It includes new features, bug fixes, and a couple of API changes. More information can be found here:\n\nhttp://networkx.lanl.gov/reference/news.html\n\nPackage:\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.1.spkg\n\nMD5 Sum\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.1.spkg.md5\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9567\n\n",
+    "closed_at": "2010-08-15T08:02:08Z",
     "created_at": "2010-07-21T21:07:33Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Networkx-1.1 spkg",
+    "title": "Networkx-1.2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9567",
     "user": "https://trac.sagemath.org/admin/accounts/users/bedwards"

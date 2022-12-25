@@ -1,28 +1,31 @@
-# Issue 9906: Move generally usable decorators from plot.misc to misc.decorators
+# Issue 9906: Move generally usable decorators to misc.decorators
 
 archive/issues_009906.json:
 ```json
 {
-    "body": "Assignee: tdb\n\nCC:  @jasongrout @mwhansen\n\nKeywords: generality, decorators\n\nIn plot.misc there are some generally usable decorators for various nice stuff. These should be moved to a general library so other modules can use them without illogically depending on plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9907\n\n",
+    "body": "Assignee: @johanrosenkilde\n\nCC:  @jasongrout @mwhansen\n\nKeywords: generality, decorators\n\nThe decorators in sage.misc.misc should be moved to sage.misc.decorators.\n\nIn plot.misc there are also some generally usable decorators for various nice stuff. These should be moved to a general library so other modules can use them without illogically depending on plot. Simultaneously, they should be patched to use sage_wraps instead of the Python \"wraps\" to accommodate for Sage-specific things; e.g. the fix of Trac #9917.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9907\n\n",
+    "closed_at": "2010-11-16T08:20:15Z",
     "created_at": "2010-09-14T06:28:56Z",
     "labels": [
         "component: relocation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Move generally usable decorators from plot.misc to misc.decorators",
+    "title": "Move generally usable decorators to misc.decorators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9906",
     "user": "https://github.com/johanrosenkilde"
 }
 ```
-Assignee: tdb
+Assignee: @johanrosenkilde
 
 CC:  @jasongrout @mwhansen
 
 Keywords: generality, decorators
 
-In plot.misc there are some generally usable decorators for various nice stuff. These should be moved to a general library so other modules can use them without illogically depending on plot.
+The decorators in sage.misc.misc should be moved to sage.misc.decorators.
+
+In plot.misc there are also some generally usable decorators for various nice stuff. These should be moved to a general library so other modules can use them without illogically depending on plot. Simultaneously, they should be patched to use sage_wraps instead of the Python "wraps" to accommodate for Sage-specific things; e.g. the fix of Trac #9917.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9907
 

@@ -1,9 +1,10 @@
-# Issue 5203: [with spkg, needs review] Update mpir to 0.9.rc3 release [latest upstream]
+# Issue 5203: [with spkg, positive review] Update mpir to 0.9.rc3 release (latest upstream)
 
 archive/issues_005203.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe spkg at\n\n \nupdates the gmp-mpir.spkg to latest upstream. For now the test suite is invoked automatically. It passes on\n\nSkyNet:\n\n* eno (x86_64, FC9)\n* mark (Sparc, Solaris)\n* fulvia (x86, Solaris)\n* cicero (x86, FC9)\n* menas (x86_64, OpenSUSE 10.3)\n* iras (Itanium, SLES 10)\n* cleo (Itanium, RHEL 5.2)\n* varro (PPC, OSX 10.4)\n\nMisc machines:\n\n* bsd (x86, OSX 10.5)\n* sage.math (x86_64, Ubuntu LTS 8.04)\n* sprocketer (x86-64, OSX 10.5)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5203\n\n",
+    "body": "Assignee: mabshoff\n\nThe spkg at\n\n  http://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha6/gmp-mpir-0.9.rc3.spkg\n \nupdates the gmp-mpir.spkg to latest upstream. For now the test suite is invoked automatically. It passes on\n\nSkyNet:\n\n* eno (x86_64, FC9)\n* mark (Sparc, Solaris)\n* fulvia (x86, Solaris)\n* cicero (x86, FC9)\n* menas (x86_64, OpenSUSE 10.3)\n* iras (Itanium, SLES 10)\n* cleo (Itanium, RHEL 5.2)\n* varro (PPC, OSX 10.4)\n\nMisc machines:\n\n* bsd (x86, OSX 10.5)\n* sage.math (x86_64, Ubuntu LTS 8.04)\n* sprocketer (x86-64, OSX 10.5)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5203\n\n",
+    "closed_at": "2009-02-08T01:58:34Z",
     "created_at": "2009-02-08T01:10:15Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005203.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with spkg, needs review] Update mpir to 0.9.rc3 release [latest upstream]",
+    "title": "[with spkg, positive review] Update mpir to 0.9.rc3 release (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5203",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -21,6 +22,7 @@ Assignee: mabshoff
 
 The spkg at
 
+  http://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha6/gmp-mpir-0.9.rc3.spkg
  
 updates the gmp-mpir.spkg to latest upstream. For now the test suite is invoked automatically. It passes on
 

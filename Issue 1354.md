@@ -4,6 +4,7 @@ archive/issues_001354.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe are currently only compiling Solaris in 32 bit mode. Then a 64 int has to be a long long. Fix that so that all the modp doctests pass.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1354\n\n",
+    "closed_at": "2007-12-01T21:25:49Z",
     "created_at": "2007-12-01T21:22:23Z",
     "labels": [
         "component: linear algebra",

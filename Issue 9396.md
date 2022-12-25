@@ -4,6 +4,7 @@ archive/issues_009396.json:
 ```json
 {
     "body": "Assignee: Mariah Lenox\n\nCC:  david.kirkby@onetel.net\n\nThe statistical package r fails to run if the \nlibicuuc library (frequently in /usr/lib) is not\npresent.\n\nlibicuuc is from the International Components for Unicode\nproject (http://site.icu-project.org/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9396\n\n",
+    "closed_at": "2010-08-09T09:38:26Z",
     "created_at": "2010-06-30T15:34:57Z",
     "labels": [
         "component: packages: standard",

@@ -1,16 +1,17 @@
-# Issue 5020: auto-cells do not automaticall evaluate (or at least update)
+# Issue 5020: [with patch, positive review] auto-cells do not automaticall evaluate (or at least update)
 
 archive/issues_005020.json:
 ```json
 {
     "body": "Assignee: boothby\n\nNotebook cells that start with \"#auto\" do not automatically evaluate on the when a worksheet is opened.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5020\n\n",
+    "closed_at": "2009-01-19T06:09:54Z",
     "created_at": "2009-01-19T04:17:47Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "auto-cells do not automaticall evaluate (or at least update)",
+    "title": "[with patch, positive review] auto-cells do not automaticall evaluate (or at least update)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5020",
     "user": "https://github.com/mwhansen"

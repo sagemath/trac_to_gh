@@ -1,9 +1,10 @@
-# Issue 2784: Doctests for rings/complex_number.pyx
+# Issue 2784: [with patch, positive review] Doctests for rings/complex_number.pyx
 
 archive/issues_002784.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: doctest, docstring, documentation\n\nProvide missing documentation and missing doctests for rings/complex_number.pyx: SCORE complex_number.pyx: 63% (40 of 63).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2784\n\n",
+    "closed_at": "2008-04-04T23:41:33Z",
     "created_at": "2008-04-02T22:24:13Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002784.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Doctests for rings/complex_number.pyx",
+    "title": "[with patch, positive review] Doctests for rings/complex_number.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2784",
     "user": "https://github.com/cswiercz"

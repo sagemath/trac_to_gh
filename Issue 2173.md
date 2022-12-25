@@ -1,15 +1,16 @@
-# Issue 2173: [with patch; needs review] SAGE setup.py should run cython as "python2.5 cython"
+# Issue 2173: [with patch; positive review] SAGE setup.py should run cython as "python2.5 cython" and other debian fixes
 
 archive/issues_002173.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nthe cython in debian runs as #!/usr/bin/python, and /usr/bin/python is python2.4 by default in Debian.  Thus, the SAGE setup.py should explicitly run \"python2.5 cython\" to get python2.5.\n\nI'm submitting in non-mercurial format since I get the following error when I try to:\n\n[tabbott`@`mega-man sage$] hg diff\nabort: index 00changelog.i invalid format 2!\n[tabbott`@`mega-man sage$] cat .hg/00changelog.i ; echo\n\ufffd dummy changelog to prevent using the old repo layout\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2173\n\n",
+    "closed_at": "2008-03-29T23:05:03Z",
     "created_at": "2008-02-16T01:06:23Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch; needs review] SAGE setup.py should run cython as \"python2.5 cython\"",
+    "title": "[with patch; positive review] SAGE setup.py should run cython as \"python2.5 cython\" and other debian fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2173",
     "user": "https://github.com/timabbott"

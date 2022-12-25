@@ -4,6 +4,7 @@ archive/issues_007502.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is something I came up with when trying to reduce sage start up time. \n\n```\n2.033 sage.all (None)\n0.407 sage.server.all (sage.all)\n0.404 notebook.all (sage.server.all)\n0.365 sage.server.notebook.notebook (notebook.all)\n...\n```\n\nNow notebook() needs to be in the global namespace, but usually the entire notebook server does not need to be loaded. I'm sure there's other trimming we could do here as well. \n\nIt's unclear what level to put this in, but I would think sage.server.notebook.all would be a good place (e.g. we could lazily import interact.*, sage_email.*, and lazily import notebook and inotebook). That could cut down startup time by 25%. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7502\n\n",
+    "closed_at": "2010-01-30T23:54:04Z",
     "created_at": "2009-11-20T09:20:53Z",
     "labels": [
         "component: user interface"

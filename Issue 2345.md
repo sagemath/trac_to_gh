@@ -1,22 +1,23 @@
-# Issue 2345: negative indicies in vectors
+# Issue 2345: [with patch, with positive review] negative indicies in vectors
 
 archive/issues_002345.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
+    "closed_at": "2008-03-03T02:55:16Z",
     "created_at": "2008-02-28T08:47:58Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "negative indicies in vectors",
+    "title": "[with patch, with positive review] negative indicies in vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2345",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: vector(RR,range(3))[2]

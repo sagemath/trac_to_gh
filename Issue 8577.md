@@ -4,6 +4,7 @@ archive/issues_008577.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nThis should return `True` not `False` (reported by\nMichael Bachtold)\n\n```python\nsage: from sage.rings.polynomial.polydict import ETuple\nsage: ETuple([0,1]).eadd_p(1, 0)==ETuple([1,1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8577\n\n",
+    "closed_at": "2012-04-19T06:43:57Z",
     "created_at": "2010-03-22T11:51:35Z",
     "labels": [
         "component: basic arithmetic",

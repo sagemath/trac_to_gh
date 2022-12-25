@@ -4,6 +4,7 @@ archive/issues_007676.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nEverything is explained there :\n\nhttp://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm\n\nIssue created by migration from https://trac.sagemath.org/ticket/7676\n\n",
+    "closed_at": "2021-12-12T15:09:08Z",
     "created_at": "2009-12-13T16:33:51Z",
     "labels": [
         "component: graph theory"

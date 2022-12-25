@@ -1,22 +1,23 @@
-# Issue 4882: ./sage -t sage/sage/rings/polynomial/multi_polynomial_ideal.py M2 failure
+# Issue 4882: [with patch, positive review] M2 related doctest failure in sage/rings/polynomial/multi_polynomial_ideal.py
 
 archive/issues_004882.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Fedora 9, 32 bits:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 58:\n    sage: S.<a,b> = R.quotient((x^2 + y^2, 17))\nExpected:\n    verbose 0 ... Warning: falling back to very slow toy implementation.\nGot nothing\n**********************************************************************\n1 items had failures:\n   1 of  47 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py\n\t [44.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 44.6 seconds\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4882\n\n",
+    "body": "Assignee: mabshoff\n\nOn Fedora 9, 32 bits:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 58:\n    sage: S.<a,b> = R.quotient((x^2 + y^2, 17))\nExpected:\n    verbose 0 ... Warning: falling back to very slow toy implementation.\nGot nothing\n**********************************************************************\n1 items had failures:\n   1 of  47 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py\n [44.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\nsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 44.6 seconds\n\n```\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4882\n\n",
+    "closed_at": "2008-12-26T22:45:45Z",
     "created_at": "2008-12-26T17:39:31Z",
     "labels": [
-        "component: algebra",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "./sage -t sage/sage/rings/polynomial/multi_polynomial_ideal.py M2 failure",
+    "title": "[with patch, positive review] M2 related doctest failure in sage/rings/polynomial/multi_polynomial_ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4882",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 On Fedora 9, 32 bits:
 
@@ -33,20 +34,22 @@ Got nothing
    1 of  47 in __main__.example_0
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/jaap/downloads/sage-3.2.2/tmp/.doctest_multi_polynomial_ideal.py
-	 [44.6 s]
+ [44.6 s]
 exit code: 1024
  
 ----------------------------------------------------------------------
 The following tests failed:
 
 
-	sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
+sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
 Total time for all tests: 44.6 seconds
 
 ```
 
 
 Jaap
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4882
 

@@ -4,6 +4,7 @@ archive/issues_000330.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nA couple of functions to aid benchmarking etc. from within SAGE would be helpful. These do not need to be very feature rich or fast as the data to be dealt with is probably quite small. E.g.\n\n* 2D/3D data plotting including a legend (matplotlib ?)\n* curve fitting\n\ncould be useful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/330\n\n",
+    "closed_at": "2008-03-28T12:19:41Z",
     "created_at": "2007-03-22T14:22:01Z",
     "labels": [
         "component: user interface",

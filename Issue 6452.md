@@ -1,15 +1,15 @@
-# Issue 6452: codes over rings
+# Issue 6452: Submodules of (ZZ/nZZ)^r
 
 archive/issues_006452.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  cesarnda@gmail.com dlucas @johanrosenkilde\n\nThis module constructs codes over rings of the form ZZ/mZZ, that is, submodules of FreeModule(IntegerModRing(m), n).\nThe main authors are Cesar Agustin Garcia-Vazquez (who was an undergrad in Mexico when he wrote this) and Carlos A. Lopez-Andrade (his advisor). I made some changes to make it more consistent with LinearCode. (It still has some hidden differences - the basic problem being that FreeModule has no submodule or span method analogous that of VectorSpace.)\n\nIt is in Cython, which I confess I don't really understand well. My role is simply to take Cesar's code (which he emailed to me), tweek it a bit, and create a patch. He has explicitly agreed to distributing it under GPLv2+.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6452\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  cesarnda@gmail.com dlucas @johanrosenkilde\n\nThis ticket add some support to submodules of `(ZZ/mZZ)^r` (e.g. containment, iteration). There is no new algorithm, we just use the code available for submodules of `ZZ^r` and the Schmidt normal form of integer matrix.\n\nFollow up: #19345\n\nIssue created by migration from https://trac.sagemath.org/ticket/6452\n\n",
     "created_at": "2009-07-01T01:05:53Z",
     "labels": [
-        "component: coding theory"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "codes over rings",
+    "title": "Submodules of (ZZ/nZZ)^r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6452",
     "user": "https://github.com/wdjoyner"
@@ -19,10 +19,9 @@ Assignee: @rlmill
 
 CC:  cesarnda@gmail.com dlucas @johanrosenkilde
 
-This module constructs codes over rings of the form ZZ/mZZ, that is, submodules of FreeModule(IntegerModRing(m), n).
-The main authors are Cesar Agustin Garcia-Vazquez (who was an undergrad in Mexico when he wrote this) and Carlos A. Lopez-Andrade (his advisor). I made some changes to make it more consistent with LinearCode. (It still has some hidden differences - the basic problem being that FreeModule has no submodule or span method analogous that of VectorSpace.)
+This ticket add some support to submodules of `(ZZ/mZZ)^r` (e.g. containment, iteration). There is no new algorithm, we just use the code available for submodules of `ZZ^r` and the Schmidt normal form of integer matrix.
 
-It is in Cython, which I confess I don't really understand well. My role is simply to take Cesar's code (which he emailed to me), tweek it a bit, and create a patch. He has explicitly agreed to distributing it under GPLv2+.
+Follow up: #19345
 
 Issue created by migration from https://trac.sagemath.org/ticket/6452
 

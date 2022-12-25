@@ -1,23 +1,22 @@
-# Issue 1312: [graphs] find hamiltonian cycles and paths
+# Issue 1312: graphs: find hamiltonian cycles and paths
 
 archive/issues_001312.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1312\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1312\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2007-11-28T20:01:49Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[graphs] find hamiltonian cycles and paths",
+    "title": "graphs: find hamiltonian cycles and paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1312",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 
 

@@ -4,6 +4,7 @@ archive/issues_002490.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nmatrix_from_rows_and_columns could be made faster by using PY_TYPE_CHECK and pyrex-style for loops.\n\nSee also trac ticket #2397\n\nIssue created by migration from https://trac.sagemath.org/ticket/2490\n\n",
+    "closed_at": "2008-03-12T12:47:23Z",
     "created_at": "2008-03-12T11:58:03Z",
     "labels": [
         "component: linear algebra",

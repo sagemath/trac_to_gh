@@ -1,16 +1,17 @@
-# Issue 6281: [with patch; needs review] enable parallel make for rubiks spkg
+# Issue 6281: [with patch; positive review] enable parallel make for rubiks spkg
 
 archive/issues_006281.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6281\n\n",
+    "body": "Assignee: tbd\n\nThe patched spkg is here:\n\n http://sage.math.washington.edu/home/wstein/patches/rubiks-20070912.p9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6281\n\n",
+    "closed_at": "2009-07-02T23:28:35Z",
     "created_at": "2009-06-14T09:28:27Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch; needs review] enable parallel make for rubiks spkg",
+    "title": "[with patch; positive review] enable parallel make for rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6281",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,9 @@ archive/issues_006281.json:
 ```
 Assignee: tbd
 
+The patched spkg is here:
 
+ http://sage.math.washington.edu/home/wstein/patches/rubiks-20070912.p9.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6281
 

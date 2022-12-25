@@ -1,16 +1,17 @@
-# Issue 2027: PolyBoRi.spkg: add one line patch to fix memleak
+# Issue 2027: [with spkg, positive review] PolyBoRi.spkg: update to current CVS - fix memleak and remove joke patent claim
 
 archive/issues_002027.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRPW applied Michael Brickenstein's patch to\n\nhttp://coderpunks.org/tmp/polybori-0.1-r7.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2027\n\n",
+    "closed_at": "2008-02-02T05:20:50Z",
     "created_at": "2008-02-02T03:36:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "PolyBoRi.spkg: add one line patch to fix memleak",
+    "title": "[with spkg, positive review] PolyBoRi.spkg: update to current CVS - fix memleak and remove joke patent claim",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2027",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

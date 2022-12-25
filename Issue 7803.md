@@ -4,6 +4,7 @@ archive/issues_007803.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  sage-combinat\n\nKeywords: warnings\n\nI read this warning everytime I start Sage, so I have prepared a simple patch which replaces \"Set\" with the built-in type set. The patch must be applied inside sage-4.3.spkg and changes the file sage/combinat/matrices/latin.py.\n\nI should mention that I did not built Sage from Sage's makefile alone but from a gentoo ebuild written by myself - using upstream Sage does not yield this warning. Anyway, since \"sets\" was deprecated since Python 2.6 this should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7803\n\n",
+    "closed_at": "2010-06-06T08:33:46Z",
     "created_at": "2010-01-01T12:24:11Z",
     "labels": [
         "component: build",

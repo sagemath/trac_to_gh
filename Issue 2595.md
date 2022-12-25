@@ -1,9 +1,10 @@
-# Issue 2595: rubiks and polymake both have a cube binary
+# Issue 2595: [with patch, with positive review] rubiks and polymake both have a cube binary
 
 archive/issues_002595.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen one installs the optional polymake.spkg the cube doctest fails since somehow polymake's cube is in $PATH before rubik's cube:\n\n```\n./local/bin/cube\n./local/polymake/bin/cube\n```\n\nI would suggest changing the name of the binary from rubiks.spkg.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2595\n\n",
+    "closed_at": "2008-03-21T12:36:25Z",
     "created_at": "2008-03-19T12:44:32Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002595.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "rubiks and polymake both have a cube binary",
+    "title": "[with patch, with positive review] rubiks and polymake both have a cube binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2595",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

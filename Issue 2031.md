@@ -4,6 +4,7 @@ archive/issues_002031.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @orlitzky\n\nIt would be fair to argue that this is pretty sucky behavior in Sage:\n\n```\nteragon:~ was$ build/sage-2.10.1.rc4/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1.rc4, Release Date: 2008-01-31                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time 2 + 2     # can Sage add 2 and 2?\nObject `time Integer(2) + Integer(2)     # can Sage add 2 and 2` not found.\nsage: time 2 + 2     # Sage can add 2 and 2\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     Integer(2) + Integer(2)     \\# Sage can add 2 and 2\n                                                       ^\n<type 'exceptions.SyntaxError'>: unexpected character after line continuation character\n\n```\n\nI'm to blame for both bugs, of course... :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2031\n\n",
+    "closed_at": "2013-07-22T16:04:19Z",
     "created_at": "2008-02-02T08:36:25Z",
     "labels": [
         "component: user interface",

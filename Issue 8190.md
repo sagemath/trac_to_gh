@@ -4,9 +4,11 @@ archive/issues_008190.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8190\n\n",
+    "closed_at": "2010-02-11T14:29:55Z",
     "created_at": "2010-02-05T07:48:00Z",
     "labels": [
         "component: documentation",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",

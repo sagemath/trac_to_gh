@@ -1,9 +1,10 @@
-# Issue 845: Can't pass boolean as parameter to Magma
+# Issue 845: [with patch] can't pass boolean as parameter to Magma
 
 archive/issues_000845.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nsage: magma('false')\nfalse\nsage: f = magma('Polynomial([-2,0,1])')\nsage: f.NumberField(Check = false)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/jvoight/totallyreal/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/magma.py in __call__(self, *args, **kwds)\n    552                                [self._obj.name()] + list(args),\n    553                                params = kwds,\n--> 554                                nvals = nvals)\n    555\n    556     def _sage_doc_(self):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/magma.py in function_call(self, function, args, params, nvals)\n    405             ans = None\n    406         elif nvals == 1:\n--> 407             return self(fun)\n    408         else:\n    409             v = [self._next_var_name() for _ in range(nvals)]\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/magma.py in __call__(self, x, gens)\n    315         \"\"\"\n    316         if gens is None:\n--> 317             return Expect.__call__(self, x)\n    318         return self.objgens(x, gens)\n    319\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    679             return x\n    680         if isinstance(x, basestring):\n--> 681             return cls(self, x)\n    682         try:\n    683             return self._coerce_from_special_method(x)\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n    920             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n    921                 self._session_number = -1\n--> 922                 raise TypeError, x\n    923         self._session_number = parent._session_number\n    924\n\n<type 'exceptions.TypeError'>: Error evaluation Magma code.\nIN:_sage_[5] := NumberField(_sage_[4] : Check:=False);\nOUT:\n>> _sage_[5] := NumberField(_sage_[4] : Check:=False);\n\n                                               ^\nUser error: Identifier 'False' has not been declared or assigned\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/845\n\n",
+    "body": "Assignee: @malb\n\nsage: magma('false')\nfalse\nsage: f = magma('Polynomial([-2,0,1])')\nsage: f.NumberField(Check = false)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/jvoight/totallyreal/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/magma.py in __call__(self, *args, **kwds)\n    552                                [self._obj.name()] + list(args),\n    553                                params = kwds,\n--> 554                                nvals = nvals)\n    555\n    556     def _sage_doc_(self):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/magma.py in function_call(self, function, args, params, nvals)\n    405             ans = None\n    406         elif nvals == 1:\n--> 407             return self(fun)\n    408         else:\n    409             v = [self._next_var_name() for _ in range(nvals)]\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/magma.py in __call__(self, x, gens)\n    315         \"\"\"\n    316         if gens is None:\n--> 317             return Expect.__call__(self, x)\n    318         return self.objgens(x, gens)\n    319\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    679             return x\n    680         if isinstance(x, basestring):\n--> 681             return cls(self, x)\n    682         try:\n    683             return self._coerce_from_special_method(x)\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n    920             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n    921                 self._session_number = -1\n--> 922                 raise TypeError, x\n    923         self._session_number = parent._session_number\n    924\n\n<type 'exceptions.TypeError'>: Error evaluation Magma code.\nIN:_sage_[5] := NumberField(_sage_[4] : Check:=False);\nOUT:\n>> _sage_[5] := NumberField(_sage_[4] : Check:=False);\n\n                                               ^\nUser error: Identifier 'False' has not been declared or assigned\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/845\n\n",
+    "closed_at": "2007-11-01T23:22:54Z",
     "created_at": "2007-10-10T06:56:01Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_000845.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "Can't pass boolean as parameter to Magma",
+    "title": "[with patch] can't pass boolean as parameter to Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/845",
     "user": "https://github.com/jvoight"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 sage: magma('false')
 false

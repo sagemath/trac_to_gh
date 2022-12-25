@@ -1,16 +1,17 @@
-# Issue 4073: disable colors in sage0
+# Issue 4073: [with patch, positive review] disable colors in sage0
 
 archive/issues_004073.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis is related to #4072\n\n```\n[20:42] <mhansen> malb: How do you have your ipython colors set up?\n[20:43] <malb> I had: colors LightBG \n[20:43] <malb> now I have colors NoColor\n[20:43] <mhansen> And it sage0 fails with them and passes without them?\n[20:44] <malb> yep\n[20:44] <malb> I think the child process should be started with some option not to use colors\n[20:44] <mhansen> Yep\n[20:44] <malb> maybe by passing in an alternative ipythonrc\n[20:45] <mhansen> I think you can also do it by just evaluating something at the command line.\n[20:46] <malb> %colors NoColor\n[20:47] <malb> I'll open a ticket\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4073\n\n",
+    "closed_at": "2009-05-26T14:19:27Z",
     "created_at": "2008-09-07T19:51:57Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "disable colors in sage0",
+    "title": "[with patch, positive review] disable colors in sage0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4073",
     "user": "https://github.com/malb"

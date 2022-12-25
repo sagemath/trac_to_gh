@@ -1,52 +1,47 @@
-# Issue 5155: Sage 3.3.a3: fix doctests that want write access to $SAGE_LOCAL
+# Issue 5155: Fix doctests that want write access to $SAGE_ROOT
 
 archive/issues_005155.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @lftabera @nexttime\n\nAll doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.\n\n```\nexport SAGE_TESTDIR=/scratch/mabshoff/tmp\n```\nand run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 1 doctests failed\n\tsage -t -long devel/doc/tut/tut.tex # 5 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/qepcad.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/plot/plot.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/databases/database.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/misc/package.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n\tsage -t -long devel/sage/sage/server/support.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed\n```\nThis ticket might need to be split up since it covers a rather large number of doctest failures.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5155\n\n",
+    "body": "Assignee: @jdemeyer\n\nCC:  @lftabera @nexttime\n\nAll doctests in Sage should pass when they are run as a user that does not have write access to the Sage install. To do that, run the doctests on a Sage install that isn't owned by the user:\n\n```\n$ ./sage -tp 4 --long devel/sage/doc/common devel/sage/doc/en devel/sage/sage\n```\n\nOn sage-5.4.beta1, this causes:\n\n```\nThe following tests failed:\n\n        sage -t --long devel/sage/sage/interfaces/qepcad.py # 3 doctests failed\n        sage -t --long devel/sage/sage/misc/inline_fortran.py # 3 doctests failed\n        sage -t --long devel/sage/sage/tests/cmdline.py # 2 doctests failed\n```\n\n**Apply**:\n1. [attachment:5155_sage_location.patch] to the scripts repository.\n2. [attachment:5155_root.patch] to the `SAGE_ROOT` repository.\n3. [attachment:5155_sagelib.patch] to the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5155\n\n",
+    "closed_at": "2013-01-21T21:06:24Z",
     "created_at": "2009-02-02T01:25:42Z",
     "labels": [
-        "component: doctest",
+        "component: scripts",
         "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
-    "title": "Sage 3.3.a3: fix doctests that want write access to $SAGE_LOCAL",
+    "title": "Fix doctests that want write access to $SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5155",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @jdemeyer
 
 CC:  @lftabera @nexttime
 
-All doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.
+All doctests in Sage should pass when they are run as a user that does not have write access to the Sage install. To do that, run the doctests on a Sage install that isn't owned by the user:
 
 ```
-export SAGE_TESTDIR=/scratch/mabshoff/tmp
+$ ./sage -tp 4 --long devel/sage/doc/common devel/sage/doc/en devel/sage/sage
 ```
-and run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:
+
+On sage-5.4.beta1, this causes:
 
 ```
-	sage -t -long devel/sage/sage/matrix/matrix2.pyx # 1 doctests failed
-	sage -t -long devel/doc/tut/tut.tex # 5 doctests failed
-	sage -t -long devel/sage/sage/interfaces/qepcad.py # 2 doctests failed
-	sage -t -long devel/sage/sage/plot/plot.py # 6 doctests failed
-	sage -t -long devel/sage/sage/databases/database.py # 1 doctests failed
-	sage -t -long devel/sage/sage/calculus/calculus.py # 1 doctests failed
-	sage -t -long devel/sage/sage/misc/package.py # 1 doctests failed
-	sage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed
-	sage -t -long devel/sage/sage/server/support.py # 1 doctests failed
-	sage -t -long devel/sage/sage/server/notebook/notebook.py # 1 doctests failed
-	sage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed
-	sage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed
+The following tests failed:
+
+        sage -t --long devel/sage/sage/interfaces/qepcad.py # 3 doctests failed
+        sage -t --long devel/sage/sage/misc/inline_fortran.py # 3 doctests failed
+        sage -t --long devel/sage/sage/tests/cmdline.py # 2 doctests failed
 ```
-This ticket might need to be split up since it covers a rather large number of doctest failures.
 
-Cheers,
-
-Michael
+**Apply**:
+1. [attachment:5155_sage_location.patch] to the scripts repository.
+2. [attachment:5155_root.patch] to the `SAGE_ROOT` repository.
+3. [attachment:5155_sagelib.patch] to the Sage library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5155
 

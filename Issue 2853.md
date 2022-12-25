@@ -1,9 +1,10 @@
-# Issue 2853: A correction to the weight of crystal elements for type A and a speedup for all types
+# Issue 2853: [with patch, positive review] A correction to the weight of crystal elements for type A and a speedup for all types
 
 archive/issues_002853.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFor Cartan Types 'A' a problem with the weight function of crystals was described here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/7cdfe075257ba963?hl=en\n\nThe method of correcting this problem was to hard-code the weight in the crystals of letters, \nand to have the crystals of tensors get the weight of a tensor element by summing the weights \nof its constituents. This alters the weight for Type A (correcting the defect) and returns the\nsame weight as the old algorithm for other Cartan types.\n\nWhen the patch was implemented it was found to be 2-3 times faster than the old algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2853\n\n",
+    "closed_at": "2008-04-09T00:11:46Z",
     "created_at": "2008-04-08T05:55:37Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002853.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "A correction to the weight of crystal elements for type A and a speedup for all types",
+    "title": "[with patch, positive review] A correction to the weight of crystal elements for type A and a speedup for all types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2853",
     "user": "https://github.com/dwbump"

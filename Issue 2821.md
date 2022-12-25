@@ -1,16 +1,17 @@
-# Issue 2821: get rid of anything "about this document" sections of any sage docs that say "send email to stein"
+# Issue 2821: [with patch, positive review] get rid of anything "about this document" sections of any sage docs that say "send email to stein"
 
 archive/issues_002821.json:
 ```json
 {
     "body": "Assignee: tba\n\nI'm tired of getting personal emails that are much better put on list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2821\n\n",
+    "closed_at": "2008-04-25T04:14:23Z",
     "created_at": "2008-04-06T04:04:03Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "get rid of anything \"about this document\" sections of any sage docs that say \"send email to stein\"",
+    "title": "[with patch, positive review] get rid of anything \"about this document\" sections of any sage docs that say \"send email to stein\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2821",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 4002: raise coverage of sage.graphs to 100%
+# Issue 4002: [with patch, positive review] raise coverage of sage.graphs to 100%
 
 archive/issues_004002.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nIn progress...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4002\n\n",
+    "closed_at": "2008-08-31T04:22:17Z",
     "created_at": "2008-08-30T17:43:32Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "raise coverage of sage.graphs to 100%",
+    "title": "[with patch, positive review] raise coverage of sage.graphs to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4002",
     "user": "https://github.com/rlmill"

@@ -3,7 +3,8 @@
 archive/issues_009283.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nWhen I start sage notebook and it start the default page with link:\u00a0http://localhost:8000/?startup_token=bc78dfa581c408ffb65ce4d556960690, i get error:\n\n2010-06-20 !16:02:21+0300 [HTTPChannel,1,127.0.0.1] /opt/sagemath/local/lib/python2.6/site-packages/twisted/internet/!defer.py:262: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).\n\n\n\n2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Exception rendering:\n\n2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Unhandled Error\u00a0\u00a0 \u00a0 \u00a0 \u00a0Traceback (most recent call last):\u00a0\u00a0 \u00a0 \u00a0 \u00a0Failure: twisted.python.failure.DefaultException: Bad tokenMy browser opens up with with text:\n\n# Internal Server Error\nAn error occurred rendering the requested  page. More information is available in the server log.\n\nIf i delete the startup token part, everything works correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9283\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nWhen I start sage notebook and it starts the default page with link: http://localhost:8000/?startup_token=bc78dfa581c408ffb65ce4d556960690, i get error:\n\n2010-06-20 !16:02:21+0300 [HTTPChannel,1,127.0.0.1] /opt/sagemath/local/lib/python2.6/site-packages/twisted/internet/!defer.py:262: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).\n\n2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Exception rendering:\n\n2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Unhandled Error        Traceback (most recent call last):        Failure: twisted.python.failure.DefaultException: Bad token\n\nMy browser opens up with with text:\n\n# ---\n# Internal Server Error\nAn error occurred rendering the requested  page. More information is available in the server log.\n\n---\n\nIf i delete the startup token part, everything works correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9283\n\n",
+    "closed_at": "2020-08-22T08:43:53Z",
     "created_at": "2010-06-20T13:06:39Z",
     "labels": [
         "component: notebook",
@@ -21,18 +22,21 @@ Assignee: jason, was
 
 CC:  @fchapoton
 
-When I start sage notebook and it start the default page with link: http://localhost:8000/?startup_token=bc78dfa581c408ffb65ce4d556960690, i get error:
+When I start sage notebook and it starts the default page with link: http://localhost:8000/?startup_token=bc78dfa581c408ffb65ce4d556960690, i get error:
 
 2010-06-20 !16:02:21+0300 [HTTPChannel,1,127.0.0.1] /opt/sagemath/local/lib/python2.6/site-packages/twisted/internet/!defer.py:262: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).
 
-
-
 2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Exception rendering:
 
-2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Unhandled Error        Traceback (most recent call last):        Failure: twisted.python.failure.DefaultException: Bad tokenMy browser opens up with with text:
+2010-06-20 !16:00:21+0300 [HTTPChannel,1,127.0.0.1] Unhandled Error        Traceback (most recent call last):        Failure: twisted.python.failure.DefaultException: Bad token
 
+My browser opens up with with text:
+
+# ---
 # Internal Server Error
 An error occurred rendering the requested  page. More information is available in the server log.
+
+---
 
 If i delete the startup token part, everything works correctly.
 

@@ -4,6 +4,7 @@ archive/issues_000321.json:
 ```json
 {
     "body": "Assignee: boothby\n\nExecute button broken on worksheets with %hideall and #auto in a code block.\n\nIssue created by migration from https://trac.sagemath.org/ticket/321\n\n",
+    "closed_at": "2007-08-19T02:03:44Z",
     "created_at": "2007-03-14T17:05:55Z",
     "labels": [
         "component: notebook",

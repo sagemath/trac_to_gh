@@ -1,22 +1,23 @@
-# Issue 1852: Configure R to use Atlas / other improvements to R package
+# Issue 1852: [with spkg; positive review] Configure R to use Atlas / other improvements to R package
 
 archive/issues_001852.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCurrenty R in Sage is configured to use its own implementation of BLAS, it would\nbe better to configure it to use ATLAS (wich has better performance, I think)\n\nA parameter --with-blas can be pased to configure, to tell it wich BLAS we \nwant to use.\n\nA comenet:\nSee also ticket #1721, we should avoid hardcoding the location of \nthe BLAS library . If that thicket is implemented, perhaps an enviroment \nvariable should be setto the BLAS library that we want to use (in sage-env?) \n(or a symlink from $SAGE_LOCAL/libblas.so to the system version)\n\nOther questions:\n- why is R configured with --with-reccomended-packages=no ?\n(perhaps it would be possible to offer the recommended packages as an optional\npackage?)\n\n- why is the whoule source code of R installed in $SAGE_LOCAL/lib/r ? \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1852\n\n",
+    "body": "Assignee: mabshoff\n\nCurrenty R in Sage is configured to use its own implementation of BLAS, it would\nbe better to configure it to use ATLAS (wich has better performance, I think)\n\nA parameter --with-blas can be pased to configure, to tell it wich BLAS we \nwant to use.\n\nA comenet:\nSee also ticket #1721, we should avoid hardcoding the location of \nthe BLAS library . If that thicket is implemented, perhaps an enviroment \nvariable should be setto the BLAS library that we want to use (in sage-env?) \n(or a symlink from $SAGE_LOCAL/libblas.so to the system version)\n\nOther questions:\n- why is R configured with --with-reccomended-packages=no ?\n(perhaps it would be possible to offer the recommended packages as an optional\npackage?)\n\n- why is the whoule source code of R installed in $SAGE_LOCAL/lib/r ? \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1852\n\n",
+    "closed_at": "2008-01-25T17:28:32Z",
     "created_at": "2008-01-19T21:39:37Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Configure R to use Atlas / other improvements to R package",
+    "title": "[with spkg; positive review] Configure R to use Atlas / other improvements to R package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1852",
     "user": "https://github.com/pdenapo"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Currenty R in Sage is configured to use its own implementation of BLAS, it would
 be better to configure it to use ATLAS (wich has better performance, I think)

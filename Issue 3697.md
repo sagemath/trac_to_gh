@@ -1,21 +1,22 @@
-# Issue 3697: [with patch, needs review] Adds is_primitive() method to polynomials over Finite Fields
+# Issue 3697: [with patch, with positive review] Adds is_primitive() method to polynomials over Finite Fields
 
 archive/issues_003697.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3697\n\n",
+    "body": "Assignee: @SmoothDragon\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3697\n\n",
+    "closed_at": "2008-07-31T17:56:47Z",
     "created_at": "2008-07-21T21:18:08Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] Adds is_primitive() method to polynomials over Finite Fields",
+    "title": "[with patch, with positive review] Adds is_primitive() method to polynomials over Finite Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3697",
     "user": "https://github.com/SmoothDragon"
 }
 ```
-Assignee: tbd
+Assignee: @SmoothDragon
 
 
 

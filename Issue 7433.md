@@ -4,6 +4,7 @@ archive/issues_007433.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nThis is a really weird bug. \n\n1. Create a worksheet W and publish it to make a published worksheet P.  Do *not* check \"Automatically re-publish when changes are made\". \n\n2. Change the title of W and something in the body of W.  Notice that in the list of published worksheets the title of P doesn't change.  However, click on P in that list, and notice that the title *does* change at the top of the worksheet.  The body doesn't change, fortunately. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7433\n\n",
+    "closed_at": "2009-12-09T01:07:13Z",
     "created_at": "2009-11-11T22:14:15Z",
     "labels": [
         "component: notebook",

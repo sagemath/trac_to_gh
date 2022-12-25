@@ -4,6 +4,7 @@ archive/issues_004947.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  timothyclemans\n\nKeywords: notebook, interact\n\nNote: this is NOT a duplicate of #4363.\n\nSince 3.2.2 (possibly 3.2.1?), worksheets which contain `@`interact cells auto-launch when the notebook is started.  This is an extremely serious problem for notebooks with many such worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4947\n\n",
+    "closed_at": "2009-01-19T06:11:58Z",
     "created_at": "2009-01-07T03:42:39Z",
     "labels": [
         "component: notebook",

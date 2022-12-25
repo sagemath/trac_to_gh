@@ -4,6 +4,7 @@ archive/issues_004944.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  robertwb was\n\nKeywords: roots number field embedding\n\n```\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n```\n\nDoesn't terminate in reasonable time on sage.math or my Mac OS X box.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4944\n\n",
+    "closed_at": "2009-01-18T15:48:44Z",
     "created_at": "2009-01-06T00:48:32Z",
     "labels": [
         "component: number theory",

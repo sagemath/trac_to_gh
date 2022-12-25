@@ -4,6 +4,7 @@ archive/issues_006922.json:
 ```json
 {
     "body": "Assignee: Somebody\n\nCC:  @novoselt\n\nKeywords: term order\n\nIn Sage, I am trying to construct a polynomial ring with matrix\nordering. \n....\nAFAIK, it is not implemented, but I think that some people were\nworking on it.\n\nIt is in fact one of the things that I miss in Sage's polynomial rings\n(the other thing are supercommutative rings), so that I need to use\nthe Singular interface rather than libsingular. \n....\nAnyway it will be great that the matrix ordering is included in Sage\nnatively. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6922\n\n",
+    "closed_at": "2010-07-20T09:21:03Z",
     "created_at": "2009-09-11T04:47:10Z",
     "labels": [
         "component: basic arithmetic",

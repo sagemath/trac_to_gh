@@ -1,9 +1,10 @@
-# Issue 2076: Inconsistent coloring of plotted points
+# Issue 2076: [with patch, positive review] Inconsistent coloring of plotted points
 
 archive/issues_002076.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: color hue point plot 3\n\nWhen I call, \n\nsage: point(((1,1), (2,2), (3,3)), rgbcolor=hue(1), pointsize=30)\n\nI expect to get a plot of 3 red points, but (1,1) is plotted as dark red and the other two points are blue.  So far I've only been able to recreate this issue when only three points are in the tuple.  The rgbcolor value doesn't seem to affect the color of the three plotted points.\n\nI hope to look at the code soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2076\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: color hue point plot 3\n\nWhen I call, \n\nsage: point(((1,1), (2,2), (3,3)), rgbcolor=hue(1), pointsize=30)\n\nI expect to get a plot of 3 red points, but (1,1) is plotted as dark red and the other two points are blue.  So far I've only been able to recreate this issue when only three points are in the tuple.  The rgbcolor value doesn't seem to affect the color of the three plotted points.\n\nI hope to look at the code soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2076\n\n",
+    "closed_at": "2008-09-23T01:18:26Z",
     "created_at": "2008-02-06T20:04:23Z",
     "labels": [
         "component: graphics",
@@ -11,13 +12,13 @@ archive/issues_002076.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Inconsistent coloring of plotted points",
+    "title": "[with patch, positive review] Inconsistent coloring of plotted points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2076",
     "user": "https://trac.sagemath.org/admin/accounts/users/jmitchell"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Keywords: color hue point plot 3
 

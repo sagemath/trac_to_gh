@@ -1,22 +1,25 @@
-# Issue 3513: modular symbols -- remove the compute_dual option to decomposition
+# Issue 3513: [with patch, with positive review] modular symbols -- remove the compute_dual option to decomposition
 
 archive/issues_003513.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis is broken and shouldn't be used anyways.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3513\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: editor_craigcitro\n\nThis is broken and shouldn't be used anyways.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3513\n\n",
+    "closed_at": "2008-07-07T01:38:33Z",
     "created_at": "2008-06-26T03:14:28Z",
     "labels": [
-        "component: algebra",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "modular symbols -- remove the compute_dual option to decomposition",
+    "title": "[with patch, with positive review] modular symbols -- remove the compute_dual option to decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3513",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @craigcitro
+
+Keywords: editor_craigcitro
 
 This is broken and shouldn't be used anyways.
 

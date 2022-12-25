@@ -1,15 +1,16 @@
-# Issue 3662: separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra
+# Issue 3662: [with patch, positive review] separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra
 
 archive/issues_003662.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3662\n\n",
+    "closed_at": "2008-08-08T22:19:26Z",
     "created_at": "2008-07-16T00:38:32Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra",
+    "title": "[with patch, positive review] separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3662",
     "user": "https://github.com/mwhansen"

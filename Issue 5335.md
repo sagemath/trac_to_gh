@@ -4,9 +4,10 @@ archive/issues_005335.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nAttached is draft1 of the release notes. These need to be spell checked as well as read over to make sure there are no other problems.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5335\n\n",
+    "closed_at": "2009-02-22T19:29:15Z",
     "created_at": "2009-02-22T12:25:30Z",
     "labels": [
-        "component: doctest",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",

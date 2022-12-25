@@ -4,6 +4,7 @@ archive/issues_007450.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: prime ideal\n\nThe attached patch implements a generic primality testing method for ideals.  It is based on the computation of the associated primes of an ideal, and so at the moment will only work for ideals that have this implemented (e.g. ideals in multivariate polynomial rings that Singular can handle).\n\nThere are also a few related methods such as `is_primary()` and `embedded_primes()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7450\n\n",
+    "closed_at": "2009-11-17T05:59:06Z",
     "created_at": "2009-11-13T12:30:17Z",
     "labels": [
         "component: commutative algebra"

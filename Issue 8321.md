@@ -3,7 +3,7 @@
 archive/issues_008321.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  maldun @fredrik-johansson @kcrisman mariah bober @eviatarbach @mforets\n\nFrom the sage-devel:\n\n```\nOn Feb 20, 2010, at 12:40 PM, John H Palmieri wrote:\n...\n> I was curious about this, so I tried specifying the number of digits:\n>\n> sage: h = integral(sin(x)/x^2, (x, 1, pi/2)); h\n> integrate(sin(x)/x^2, x, 1, 1/2*pi)\n> sage: h.n()\n> 0.33944794097891573\n> sage: h.n(digits=14)\n> 0.33944794097891573\n> sage: h.n(digits=600)\n> 0.33944794097891573\n> sage: h.n(digits=600) == h.n(digits=14)\n> True\n> sage: h.n(prec=50) == h.n(prec=1000)\n> True\n>\n> Is there an inherit limit in Sage on the accuracy of numerical\n> integrals?  \n```\n\nThe `_evalf_` function defined on line 179 of `sage/symbolic/integration/integral.py` calls the gsl `numerical_integral()` function and ignores the precision.\n\nWe should raise a `NotImplementedError` for high precision, or find a way to do arbitrary precision numerical integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8321\n\n",
+    "body": "CC:  maldun @fredrik-johansson @kcrisman mariah bober @eviatarbach @mforets\n\nKeywords: numerics,integration, sd32\n\nFrom the sage-devel:\n\n```\nOn Feb 20, 2010, at 12:40 PM, John H Palmieri wrote:\n...\n> I was curious about this, so I tried specifying the number of digits:\n>\n> sage: h = integral(sin(x)/x^2, (x, 1, pi/2)); h\n> integrate(sin(x)/x^2, x, 1, 1/2*pi)\n> sage: h.n()\n> 0.33944794097891573\n> sage: h.n(digits=14)\n> 0.33944794097891573\n> sage: h.n(digits=600)\n> 0.33944794097891573\n> sage: h.n(digits=600) == h.n(digits=14)\n> True\n> sage: h.n(prec=50) == h.n(prec=1000)\n> True\n>\n> Is there an inherit limit in Sage on the accuracy of numerical\n> integrals?  \n```\n\nThe `_evalf_` function defined on line 179 of `sage/symbolic/integration/integral.py` calls the gsl `numerical_integral()` function and ignores the precision.\n\nWe should raise a `NotImplementedError` for high precision, or find a way to do arbitrary precision numerical integration.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8321\n\n",
     "created_at": "2010-02-21T21:26:32Z",
     "labels": [
         "component: symbolics",
@@ -16,9 +16,9 @@ archive/issues_008321.json:
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: @burcin
-
 CC:  maldun @fredrik-johansson @kcrisman mariah bober @eviatarbach @mforets
+
+Keywords: numerics,integration, sd32
 
 From the sage-devel:
 
@@ -47,6 +47,7 @@ On Feb 20, 2010, at 12:40 PM, John H Palmieri wrote:
 The `_evalf_` function defined on line 179 of `sage/symbolic/integration/integral.py` calls the gsl `numerical_integral()` function and ignores the precision.
 
 We should raise a `NotImplementedError` for high precision, or find a way to do arbitrary precision numerical integration.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8321
 

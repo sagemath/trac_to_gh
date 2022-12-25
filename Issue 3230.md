@@ -1,16 +1,17 @@
-# Issue 3230: [with patch; needs review] cygwin -- new givaro spkg that works around stupidity in cygwin
+# Issue 3230: [with patch; positive review] cygwin -- new givaro spkg that works around stupidity in cygwin
 
 archive/issues_003230.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCygwin forgot this line in math.h: \n\n```\nextern double logb _PARAMS((double));\n```\n\nI put that line in the relevant file (see spkg-install) and now the build works fine. \n\nThe new spkg is here:\n\nhttp://sage.math.washington.edu/home/was/cygwin/givaro-3.2.10.rc3.p2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3230\n\n",
+    "closed_at": "2008-05-18T17:12:46Z",
     "created_at": "2008-05-16T22:29:05Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] cygwin -- new givaro spkg that works around stupidity in cygwin",
+    "title": "[with patch; positive review] cygwin -- new givaro spkg that works around stupidity in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3230",
     "user": "https://github.com/williamstein"

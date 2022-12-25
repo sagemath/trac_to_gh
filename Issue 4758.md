@@ -1,22 +1,24 @@
-# Issue 4758: eigenvalues of matrices over CDF is embarassingly frickin' slow!!!!!!!!!!!! (at least 100 times too slow!)
+# Issue 4758: [with patch, positive review] eigenvalues of matrices over CDF is embarassingly frickin' slow!!!!!!!!!!!! (at least 100 times too slow!)
 
 archive/issues_004758.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nBelow we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. \n\n```\nsage: a = random_matrix(CDF, 100)\nsage: time v = a.eigenvalues()\nCPU times: user 9.32 s, sys: 0.05 s, total: 9.37 s\nWall time: 9.56 s\nsage: a = random_matrix(CDF, 100)\nsage: time w = a.left_eigenvectors()[0]\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4758\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout\n\nBelow we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. \n\n```\nsage: a = random_matrix(CDF, 100)\nsage: time v = a.eigenvalues()\nCPU times: user 9.32 s, sys: 0.05 s, total: 9.37 s\nWall time: 9.56 s\nsage: a = random_matrix(CDF, 100)\nsage: time w = a.left_eigenvectors()[0]\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4758\n\n",
+    "closed_at": "2008-12-13T09:05:50Z",
     "created_at": "2008-12-11T05:21:06Z",
     "labels": [
         "component: linear algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "eigenvalues of matrices over CDF is embarassingly frickin' slow!!!!!!!!!!!! (at least 100 times too slow!)",
+    "title": "[with patch, positive review] eigenvalues of matrices over CDF is embarassingly frickin' slow!!!!!!!!!!!! (at least 100 times too slow!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4758",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  @jasongrout
 

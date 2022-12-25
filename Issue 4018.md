@@ -1,16 +1,17 @@
-# Issue 4018: casting of non t_INT pari integers
+# Issue 4018: [with patch, positive review] casting of non t_INT pari integers
 
 archive/issues_004018.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nsage: t = pari(0*ZZ[x].0); t\n 0\n\nsage: ZZ(t)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/robertwb/<ipython console> in <module>()\n\n/home/robertwb/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__ (sage/rings/integer_ring.c:4902)()\n\n/home/robertwb/integer.pyx in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5812)()\n\n/home/robertwb/gen.pyx in sage.libs.pari.gen.gen.__hex__ (sage/libs/pari/gen.c:5840)()\n\nTypeError: gen must be of PARI type t_INT\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4018\n\n",
+    "closed_at": "2008-09-01T13:02:04Z",
     "created_at": "2008-08-31T08:28:22Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "casting of non t_INT pari integers",
+    "title": "[with patch, positive review] casting of non t_INT pari integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4018",
     "user": "https://github.com/robertwb"

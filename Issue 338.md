@@ -3,7 +3,8 @@
 archive/issues_000338.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFor example:\nOn page http://sagenb.com/doc_browser?/const/?node72.html, reference to sage/modular/dims.py would be a hyper link to the actual code.\nOn page http://sagenb.com/doc_browser?/prog/?node15.html, reference to SAGE_ROOT/devel/sage/sage/graphs/graph.py would be a hyper link to the actual code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/338\n\n",
+    "body": "Assignee: TimothyClemans\n\nFor example:\nOn page http://sagenb.com/doc_browser?/const/?node72.html, reference to sage/modular/dims.py would be a hyper link to the actual code.\nOn page http://sagenb.com/doc_browser?/prog/?node15.html, reference to SAGE_ROOT/devel/sage/sage/graphs/graph.py would be a hyper link to the actual code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/338\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2007-03-31T17:42:35Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_000338.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 For example:
 On page http://sagenb.com/doc_browser?/const/?node72.html, reference to sage/modular/dims.py would be a hyper link to the actual code.

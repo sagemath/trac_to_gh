@@ -4,9 +4,11 @@ archive/issues_000118.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI'd like to see TAB completion work more like 'bash': if I type \"foo[TAB]\", the system should complete up to ambiguity:\n\n```\nfoo[TAB]b\n```\nfor example (assuming 'foobar' and 'fooble' are both known).  If I hit tab twice (with no completion), I get the display of the alternatives:\n\n```\nsage: foo[TAB]b[TAB][TAB]\nfoobar  fooble  \nsage: foob\n```\nAs it is now, an inadvertent TAB will blow unwanted bits all over my screen.\n\nIs this under SAGE control, or is it an iPython thing?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/118\n\n",
+    "closed_at": "2006-10-16T05:00:41Z",
     "created_at": "2006-10-07T20:38:24Z",
     "labels": [
         "component: user interface",
+        "minor",
         "bug"
     ],
     "title": "Tab completion is too noisy",

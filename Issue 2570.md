@@ -4,6 +4,7 @@ archive/issues_002570.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nOne could add functionality to `hg_sage` to make it take a list of patches or bundles, apply each and rollback (but not revert!) until either (1) no patches are left, or (2) an error occurs. This would allow one to flatten patches and bundles by using this, then commiting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2570\n\n",
+    "closed_at": "2014-03-19T04:41:14Z",
     "created_at": "2008-03-17T10:36:02Z",
     "labels": [
         "component: interfaces",

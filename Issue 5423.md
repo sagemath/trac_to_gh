@@ -1,16 +1,17 @@
-# Issue 5423: Move calculus to new coercion model
+# Issue 5423: [with patch, needs work] Move calculus to new coercion model
 
 archive/issues_005423.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5423\n\n",
+    "body": "Assignee: @robertwb\n\nI went through and included all of the changes that Robert made in the symbolics branch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5423\n\n",
+    "closed_at": "2009-05-18T22:01:44Z",
     "created_at": "2009-03-03T09:23:07Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Move calculus to new coercion model",
+    "title": "[with patch, needs work] Move calculus to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5423",
     "user": "https://github.com/robertwb"
@@ -18,7 +19,7 @@ archive/issues_005423.json:
 ```
 Assignee: @robertwb
 
-
+I went through and included all of the changes that Robert made in the symbolics branch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5423
 

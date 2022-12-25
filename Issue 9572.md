@@ -3,7 +3,8 @@
 archive/issues_009572.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  acleone @nexttime @TimDumol\n\nThis should include #9554 and perhaps other positively reviewed notebook tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9572\n\n",
+    "body": "Assignee: jason, was\n\nCC:  acleone @nexttime @TimDumol\n\nNew spkg here:\n\n http://sage.math.washington.edu/home/mpatel/trac/9572/sagenb-0.8.2.spkg\n\nMerged in SageNB 0.8.2: #3342, #9554, #9580.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9572\n\n",
+    "closed_at": "2010-07-26T07:49:08Z",
     "created_at": "2010-07-22T03:40:26Z",
     "labels": [
         "component: notebook",
@@ -21,7 +22,11 @@ Assignee: jason, was
 
 CC:  acleone @nexttime @TimDumol
 
-This should include #9554 and perhaps other positively reviewed notebook tickets.
+New spkg here:
+
+ http://sage.math.washington.edu/home/mpatel/trac/9572/sagenb-0.8.2.spkg
+
+Merged in SageNB 0.8.2: #3342, #9554, #9580.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9572
 

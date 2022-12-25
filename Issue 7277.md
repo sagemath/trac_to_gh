@@ -4,6 +4,7 @@ archive/issues_007277.json:
 ```json
 {
     "body": "Assignee: joyner\n\nPermutahedra are very useful in a lot of contexts, and they have the interesting property that their symmetry group is a semidirect product of the cyclic group of order two and the symmetric group. These should be in the permgroup_named file, so they are easy to access and compare.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7277\n\n",
+    "closed_at": "2015-01-13T01:18:24Z",
     "created_at": "2009-10-23T23:45:09Z",
     "labels": [
         "component: group theory",

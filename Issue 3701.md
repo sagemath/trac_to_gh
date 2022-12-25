@@ -1,9 +1,10 @@
-# Issue 3701: [with spkg, needs review] Solaris: fix polybori build due to bashism
+# Issue 3701: [with spkg, positive review] Solaris: fix polybori build due to bashism
 
 archive/issues_003701.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPolybori.spkg contains some bashism that cause trouble on Solaris. So change the shebang to use \"#1/usr/bin/env bash\". That is the only change in the spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.6/alpha1/polybori-0.3.1.p4.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3701\n\n",
+    "closed_at": "2008-07-21T22:12:32Z",
     "created_at": "2008-07-21T21:55:21Z",
     "labels": [
         "component: porting: solaris",
@@ -11,7 +12,7 @@ archive/issues_003701.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with spkg, needs review] Solaris: fix polybori build due to bashism",
+    "title": "[with spkg, positive review] Solaris: fix polybori build due to bashism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3701",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

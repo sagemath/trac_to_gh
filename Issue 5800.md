@@ -1,21 +1,22 @@
-# Issue 5800: Nice wrapper for bitset
+# Issue 5800: [with patch, positive review] Nice wrapper for bitset
 
 archive/issues_005800.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @robertwb @mwhansen @rlmill mvngu\n\nbitset.pxi provides a set of inline functions for dealing with bitsets. It would be nice to wrap this in a C class with automatic memory management for ease of use as well as testing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5800\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @robertwb @mwhansen @rlmill mvngu\n\nbitset.pxi provides a set of inline functions for dealing with bitsets. It would be nice to wrap this in a C class with automatic memory management for ease of use as well as testing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5800\n\n",
+    "closed_at": "2009-10-31T05:33:55Z",
     "created_at": "2009-04-16T05:01:03Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "Nice wrapper for bitset",
+    "title": "[with patch, positive review] Nice wrapper for bitset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5800",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: cwitty
+Assignee: @jasongrout
 
 CC:  @robertwb @mwhansen @rlmill mvngu
 

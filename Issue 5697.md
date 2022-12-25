@@ -1,9 +1,10 @@
-# Issue 5697: Sage 3.4.1.rc1: Downgrade GAP to 4.4.10
+# Issue 5697: [with patch, spkg, positive review] Sage 3.4.1.rc1: Downgrade GAP to 4.4.10
 
 archive/issues_005697.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nGAP 4.4.12 on Itanium is horribly broken again, i.e. loading packages seems to be completely broken. Downgrade it!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5697\n\n",
+    "closed_at": "2009-04-20T03:30:48Z",
     "created_at": "2009-04-06T18:48:49Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005697.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Sage 3.4.1.rc1: Downgrade GAP to 4.4.10",
+    "title": "[with patch, spkg, positive review] Sage 3.4.1.rc1: Downgrade GAP to 4.4.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5697",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

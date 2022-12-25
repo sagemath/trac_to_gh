@@ -1,9 +1,10 @@
-# Issue 7474: [with patch, needs review]Expose some more functionality of fmz_poly
+# Issue 7474: Expose some more functionality of fmz_poly
 
 archive/issues_007474.json:
 ```json
 {
     "body": "Assignee: mraum\n\nKeywords: flint, fmpz_poly, integers\n\nThis makes the FLINT wrapper in sage.libs.flint.fmpz_poly handle big integers correctly and exposes shifts and derivatives.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7474\n\n",
+    "closed_at": "2009-11-17T07:41:26Z",
     "created_at": "2009-11-16T17:15:41Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_007474.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review]Expose some more functionality of fmz_poly",
+    "title": "Expose some more functionality of fmz_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7474",
     "user": "https://trac.sagemath.org/admin/accounts/users/mraum"

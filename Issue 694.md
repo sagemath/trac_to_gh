@@ -1,21 +1,22 @@
-# Issue 694: SAGE's multivariate gcd sucks over QQ and/or ZZ
+# Issue 694: [with patch] SAGE's multivariate gcd sucks over QQ and/or ZZ
 
 archive/issues_000694.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  =\n\n```\n\nI think those timings are way out of date, since Singular 3 seems\nto be *very* fast at mod p multivariate GCD computation, even\nthough it sucks over QQ.   Check out this paper:\n\n          http://www.cecm.sfu.ca/CAG/papers/brown.ps\n\nIt on exactly the problem of GCD over QQ (or equiv ZZ),\nand section 2 has a complete description of a gcd algorithm \nthat reduces gcd over ZZ to doing gcd's mod p.\n\nWho wants to be a hero -- like Jon Bober and number of partitions -- \nand implement this for Sage, so that multivariate GCD's aren't \nembarrassingly slow in Sage anymore?   This slowness *has* \nbeen something reported to me on several occasions during \nthe last 2 years. \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/694\n\n",
+    "body": "Assignee: @malb\n\nCC:  =\n\n```\n\nI think those timings are way out of date, since Singular 3 seems\nto be *very* fast at mod p multivariate GCD computation, even\nthough it sucks over QQ.   Check out this paper:\n\n          http://www.cecm.sfu.ca/CAG/papers/brown.ps\n\nIt on exactly the problem of GCD over QQ (or equiv ZZ),\nand section 2 has a complete description of a gcd algorithm \nthat reduces gcd over ZZ to doing gcd's mod p.\n\nWho wants to be a hero -- like Jon Bober and number of partitions -- \nand implement this for Sage, so that multivariate GCD's aren't \nembarrassingly slow in Sage anymore?   This slowness *has* \nbeen something reported to me on several occasions during \nthe last 2 years. \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/694\n\n",
+    "closed_at": "2007-10-04T03:24:24Z",
     "created_at": "2007-09-19T20:23:41Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "SAGE's multivariate gcd sucks over QQ and/or ZZ",
+    "title": "[with patch] SAGE's multivariate gcd sucks over QQ and/or ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/694",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 CC:  =
 

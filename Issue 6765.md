@@ -1,15 +1,16 @@
-# Issue 6765: [with patch, needs review] Linear Programming in Tutorial's Tour !
+# Issue 6765: Linear Programming in Tutorial's Tour !
 
 archive/issues_006765.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mvngu\n\nHello !!!\n\nFollowing http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9 , here is the requested Tutorial page for Linear Programming.\n\n.... Even if until now, the Linear Programming patch is still waiting to be merged, and GLPK is not even included in Sage ;-)\n\nI hope you will like it !!! And thanks to Minh for helping me with Sphinx !\n\nIssue created by migration from https://trac.sagemath.org/ticket/6765\n\n",
+    "body": "Assignee: tba\n\nCC:  mvngu\n\nHello !!!\n\nFollowing http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9 , here is the requested Tutorial page for Linear Programming.\n\nTo doctest it, you will need the spkg GLPK from #6867 and numerical.MIP from #6869\n\nI hope you will like it !!! And thanks to Minh for helping me with Sphinx !\n\nIssue created by migration from https://trac.sagemath.org/ticket/6765\n\n",
+    "closed_at": "2009-11-20T01:51:42Z",
     "created_at": "2009-08-16T18:50:02Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] Linear Programming in Tutorial's Tour !",
+    "title": "Linear Programming in Tutorial's Tour !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6765",
     "user": "https://github.com/nathanncohen"
@@ -23,7 +24,7 @@ Hello !!!
 
 Following http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9 , here is the requested Tutorial page for Linear Programming.
 
-.... Even if until now, the Linear Programming patch is still waiting to be merged, and GLPK is not even included in Sage ;-)
+To doctest it, you will need the spkg GLPK from #6867 and numerical.MIP from #6869
 
 I hope you will like it !!! And thanks to Minh for helping me with Sphinx !
 

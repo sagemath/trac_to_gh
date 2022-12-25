@@ -1,17 +1,18 @@
-# Issue 6036: a bug in polynomial()
+# Issue 6036: [with patch, positive review] a bug in polynomial() for PolynomialRing(GF(5),2)
 
 archive/issues_006036.json:
 ```json
 {
-    "body": "Assignee: Somebody\n\nThis works:\n\n```\nsage: R.<x,y>=PolynomialRing(QQ,2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nx^2 + y*x + y\n```\n\nBut this does not work:\n\n```\nsage: R.<x,y>=PolynomialRing(GF(5),2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index \n```\n\nThe bug is essentially in:\n\n```\nsage: B=QQ[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\n2*x + 1\nsage: B=GF(5)[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index\n}}\n\nI think the second form is not acceptable. Then the function\nremove_from_tuple() in sage.rings.polynomial.multi_polynomial.pyx\nshould be revised as it output (1,) from (1,2) for example\n\nIssue created by migration from https://trac.sagemath.org/ticket/6036\n\n",
+    "body": "Assignee: Somebody\n\nThis works:\n\n```\nsage: R.<x,y>=PolynomialRing(QQ,2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nx^2 + y*x + y\n\nBut this does not work:\n\nsage: R.<x,y>=PolynomialRing(GF(5),2)\nsage: a=x^2+x*y+y\nsage: a.polynomial(x)\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index \n```\n\nI traced this bug, and found that\n\n```\nsage: B=QQ[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\n2*x + 1\nsage: B=GF(5)[x]\nsage: print B({0:1,1:2})\n2*x + 1\nsage: print B({(0,):1,(1,):2})\nTraceback (most recent call last):\n...\nTypeError: 'tuple' object cannot be interpreted as an index\n```\nI think the second form is not acceptable. Then the function\nremove_from_tuple() in sage.rings.polynomial.multi_polynomial.pyx\nshould be revised as it output (1,) from (1,2) for example. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6036\n\n",
+    "closed_at": "2009-05-19T18:51:35Z",
     "created_at": "2009-05-14T02:16:55Z",
     "labels": [
-        "component: algebra",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "a bug in polynomial()",
+    "title": "[with patch, positive review] a bug in polynomial() for PolynomialRing(GF(5),2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6036",
     "user": "https://github.com/kwankyu"
@@ -26,11 +27,9 @@ sage: R.<x,y>=PolynomialRing(QQ,2)
 sage: a=x^2+x*y+y
 sage: a.polynomial(x)
 x^2 + y*x + y
-```
 
 But this does not work:
 
-```
 sage: R.<x,y>=PolynomialRing(GF(5),2)
 sage: a=x^2+x*y+y
 sage: a.polynomial(x)
@@ -39,7 +38,7 @@ Traceback (most recent call last):
 TypeError: 'tuple' object cannot be interpreted as an index 
 ```
 
-The bug is essentially in:
+I traced this bug, and found that
 
 ```
 sage: B=QQ[x]
@@ -54,11 +53,10 @@ sage: print B({(0,):1,(1,):2})
 Traceback (most recent call last):
 ...
 TypeError: 'tuple' object cannot be interpreted as an index
-}}
-
+```
 I think the second form is not acceptable. Then the function
 remove_from_tuple() in sage.rings.polynomial.multi_polynomial.pyx
-should be revised as it output (1,) from (1,2) for example
+should be revised as it output (1,) from (1,2) for example. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6036
 

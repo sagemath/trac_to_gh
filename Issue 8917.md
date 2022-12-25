@@ -4,6 +4,7 @@ archive/issues_008917.json:
 ```json
 {
     "body": "Assignee: mrobado\n\nCC:  mrobado\n\nKeywords: documentation\n\n```\nS =Semigroups()\ng = S.example()\ng.product_from_element_class_mul?\n```\nNot all examples display as code.\n\nPatch is coming soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8917\n\n",
+    "closed_at": "2010-05-09T04:16:10Z",
     "created_at": "2010-05-07T16:26:36Z",
     "labels": [
         "component: documentation",

@@ -4,9 +4,11 @@ archive/issues_009195.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis patch implements Graph.is_split() :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9195\n\n",
+    "closed_at": "2010-06-29T16:49:00Z",
     "created_at": "2010-06-09T12:12:21Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Recognition of split graphs (5 lines)",

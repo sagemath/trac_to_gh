@@ -1,9 +1,10 @@
-# Issue 9803: Remove unnecessary dependy for cliquer in spkg/standard/deps
+# Issue 9803: Remove unnecessary dependency for cliquer in spkg/standard/deps
 
 archive/issues_009803.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu @qed777 @nathanncohen\n\ncliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9804\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu @qed777 @nathanncohen\n\nCliquer used to use SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacement, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built. \n\nSee\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b4b3cd38f7c5e473/1bfcc79ef1e721dc?q=cliquer+scons+group:sage-devel#1bfcc79ef1e721dc\n\nSee also #6681 and #7057. \n\nDave \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9804\n\n",
+    "closed_at": "2010-09-15T22:47:41Z",
     "created_at": "2010-08-26T01:17:47Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_009803.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Remove unnecessary dependy for cliquer in spkg/standard/deps",
+    "title": "Remove unnecessary dependency for cliquer in spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9803",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -21,7 +22,16 @@ Assignee: GeorgSWeber
 
 CC:  mvngu @qed777 @nathanncohen
 
-cliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.
+Cliquer used to use SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacement, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built. 
+
+See
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/b4b3cd38f7c5e473/1bfcc79ef1e721dc?q=cliquer+scons+group:sage-devel#1bfcc79ef1e721dc
+
+See also #6681 and #7057. 
+
+Dave 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9804
 

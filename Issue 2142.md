@@ -1,15 +1,16 @@
-# Issue 2142: product of two subdivided matrices should yield a subdivided matrix if it makes sense
+# Issue 2142: [with patch, with positive review] product of two subdivided matrices should yield a subdivided matrix if it makes sense
 
 archive/issues_002142.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf you multiply two subdivided matrices so that the product can be thought of as a product of partitioned matrices, it would be nice if the resulting matrix had the natural subdivision introduced by thinking of the product as a block matrix multiplication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2142\n\n",
+    "closed_at": "2008-03-07T03:15:39Z",
     "created_at": "2008-02-12T04:16:22Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "product of two subdivided matrices should yield a subdivided matrix if it makes sense",
+    "title": "[with patch, with positive review] product of two subdivided matrices should yield a subdivided matrix if it makes sense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2142",
     "user": "https://github.com/jasongrout"

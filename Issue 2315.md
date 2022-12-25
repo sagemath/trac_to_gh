@@ -1,16 +1,17 @@
-# Issue 2315: Union of Graphs
+# Issue 2315: [with patch, positive review] Union of Graphs
 
 archive/issues_002315.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe union function of graphs doesn't do what its docstring says.\n\nDocstring:\n\n\"union(self, other)\n\nReturns the union of self and other.\nIf there are common vertices to both, they will be renamed.\"\n\nExecuting the example from the docstring shows that the description is wrong. Here are the graphs:\n\n```\nsage: D = graphs.DodecahedralGraph();D\nDodecahedron: Graph on 20 vertices\nsage: P = graphs.PetersenGraph();P\nPetersen graph: Graph on 10 vertices\n```\nBut the union returns a graph on 20 vertices\n\n```\nsage: D.union(P)\nGraph on 20 vertices\n```\nbut i expect it should return a graph on 30 vertices.\n\nSo either the function or the dostring is wrong.\n\nThere are two possible ways to deal with this problem:\n\n1.) Keep this one but rename it to \"nondisjoint_union\" (and correct the docstring of course),\nand code the right \"union\" function.\n\n2.) Correct the docstring of this one, and code a \"disjoint_union\".\n\nIn #sage-devel mhansen and i agreed that this union function is supposed to do a disjoint union, so 1.) should be the way. But that's maybe up to discussion.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2315\n\n",
+    "closed_at": "2008-02-28T06:17:33Z",
     "created_at": "2008-02-26T12:34:23Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Union of Graphs",
+    "title": "[with patch, positive review] Union of Graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2315",
     "user": "https://github.com/m-r-k"

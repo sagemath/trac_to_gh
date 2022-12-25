@@ -1,16 +1,17 @@
-# Issue 7625: include new version of sagenb (0.4.5)
+# Issue 7625: include new version of sagenb (0.4.6)
 
 archive/issues_007625.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt's here:\n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7625\n\n",
+    "body": "Assignee: @williamstein\n\nIt's here:\n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.5.spkg\n\n(and now updated to 0.4.6 here):\n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7625\n\n",
+    "closed_at": "2009-12-11T02:51:03Z",
     "created_at": "2009-12-08T18:03:08Z",
     "labels": [
         "component: notebook",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "include new version of sagenb (0.4.5)",
+    "title": "include new version of sagenb (0.4.6)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7625",
     "user": "https://github.com/williamstein"
@@ -21,6 +22,10 @@ Assignee: @williamstein
 It's here:
 
   http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.5.spkg
+
+(and now updated to 0.4.6 here):
+
+  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.6.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7625
 

@@ -4,11 +4,11 @@ archive/issues_003457.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: database\n\nWe need this for #3456 and #2318\n\nhttp://code.google.com/p/sqlalchemy-migrate/\n\nit provides tools to migrate databases / tables between versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3457\n\n",
+    "closed_at": "2015-01-13T01:19:50Z",
     "created_at": "2008-06-18T01:30:18Z",
     "labels": [
         "component: misc",
-        "blocker",
-        "bug"
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Install sqlalchemy_migrate",

@@ -1,16 +1,16 @@
-# Issue 2655: [with patch, needs review] Cython circular cdef imports
+# Issue 2655: [with patch, merged upstream] Cython circular cdef imports
 
 archive/issues_002655.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nCC:  @robertwb\n\nThis patch allows circular cdef imports in Cython.\nIt also modifies cython exceptions to also print the line number in the C code.\nFurthermore the patch begins modifications to seperate module creation from module global execution, which will potentially be useful as Cython starts to employ more optimizations.   \nThis patch is required for the symbolics overhaul.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2655\n\n",
+    "closed_at": "2008-04-04T21:24:00Z",
     "created_at": "2008-03-23T16:09:37Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] Cython circular cdef imports",
+    "title": "[with patch, merged upstream] Cython circular cdef imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2655",
     "user": "https://github.com/garyfurnish"

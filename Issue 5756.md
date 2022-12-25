@@ -1,15 +1,16 @@
-# Issue 5756: improve coverage of rings/morphism.pyx
+# Issue 5756: [with patch; positive review] improve coverage of rings/morphism.pyx (and fix 5 bugs in morphism.pyx)
 
 archive/issues_005756.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5756\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nFix the coverage of morphism.pyx, which is bad.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5756\n\n",
+    "closed_at": "2009-04-16T02:54:51Z",
     "created_at": "2009-04-11T17:24:57Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "improve coverage of rings/morphism.pyx",
+    "title": "[with patch; positive review] improve coverage of rings/morphism.pyx (and fix 5 bugs in morphism.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5756",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,7 @@ Assignee: mabshoff
 
 CC:  @robertwb
 
-
+Fix the coverage of morphism.pyx, which is bad.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5756
 

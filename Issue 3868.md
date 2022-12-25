@@ -1,16 +1,18 @@
-# Issue 3868: matrix_modn_dense -- numerical noise
+# Issue 3868: [with patch, positive review] matrix_modn_dense -- numerical noise
 
 archive/issues_003868.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3868\n\n",
+    "closed_at": "2008-08-15T08:26:02Z",
     "created_at": "2008-08-15T08:09:59Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "matrix_modn_dense -- numerical noise",
+    "title": "[with patch, positive review] matrix_modn_dense -- numerical noise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3868",
     "user": "https://github.com/williamstein"

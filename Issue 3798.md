@@ -1,16 +1,17 @@
-# Issue 3798: [with patch, needs review] some docstrings for sage.graphs
+# Issue 3798: [with patch, with positive review] some docstrings for sage.graphs
 
 archive/issues_003798.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3798\n\n",
+    "closed_at": "2008-08-10T09:53:01Z",
     "created_at": "2008-08-10T09:28:17Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] some docstrings for sage.graphs",
+    "title": "[with patch, with positive review] some docstrings for sage.graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3798",
     "user": "https://github.com/rlmill"

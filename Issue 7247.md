@@ -4,6 +4,7 @@ archive/issues_007247.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\ncreating locale\ncreating locale/da\ncreating locale/da/LC_MESSAGES\ngenerating locale/da/LC_MESSAGES/hg.mo from i18n/da.po\nmsgfmt -v -o locale/da/LC_MESSAGES/hg.mo i18n/da.po -c\ndyld: Library not loaded: /usr/local/lib/libgettextsrc-0.14.5.dylib\n  Referenced from: /usr/local/bin/msgfmt\n  Reason: image not found\nerror: command 'msgfmt' terminated by signal 5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7247\n\n",
+    "closed_at": "2009-10-20T21:15:12Z",
     "created_at": "2009-10-19T07:17:28Z",
     "labels": [
         "component: packages: standard",

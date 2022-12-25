@@ -3,7 +3,8 @@
 archive/issues_008381.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @burcin\n\n```\nsage: rational_reconstruction?\n...\n            `(x,y)=(|v2|,v3*mathrm{sign}(v2))` is then the unique\n```\nThe `mathrm` should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8381\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @burcin\n\nKeywords: beginner\n\n```\nsage: rational_reconstruction?\n...\n            `(x,y)=(|v2|,v3*mathrm{sign}(v2))` is then the unique\n```\nThe `mathrm` should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8381\n\n",
+    "closed_at": "2011-05-31T09:21:56Z",
     "created_at": "2010-02-26T23:00:00Z",
     "labels": [
         "component: documentation",
@@ -20,6 +21,8 @@ archive/issues_008381.json:
 Assignee: mvngu
 
 CC:  @burcin
+
+Keywords: beginner
 
 ```
 sage: rational_reconstruction?

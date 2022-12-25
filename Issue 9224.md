@@ -3,7 +3,8 @@
 archive/issues_009224.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cwitty @dandrake drkirkby @jhpalmieri @nexttime @wjp\n\nWe currently have separate single and multi-threaded Sage doctest scripts.  In particular, `sage -t ...` invokes `SAGE_ROOT/local/bin/sage-test` and `sage -tp ...` invokes `sage-ptest`.  These files share many lines of almost functionally identical identical code.  Unifying these scripts should make it easier to maintain and extend the Sage doctest system.\n\nRelated: #2379, #7993, #7995, #8641.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9224\n\n",
+    "body": "Assignee: mvngu\n\nCC:  cwitty @dandrake drkirkby @jhpalmieri @nexttime @wjp\n\nKeywords: testlong maketest parallel race condition unique doctest directories\n\nWe currently have separate single and multi-threaded Sage doctest scripts.  In particular, `sage -t ...` invokes `SAGE_ROOT/local/bin/sage-test` and `sage -tp ...` invokes `sage-ptest`.  These files share many lines of almost functionally identical identical code.  Unifying these scripts should make it easier to maintain and extend the Sage doctest system.\n\nRelated: #2379, #7993, #7995, #8641, #9225, #9243, #9316, #9739.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9224\n\n",
+    "closed_at": "2013-02-22T21:34:00Z",
     "created_at": "2010-06-12T09:55:23Z",
     "labels": [
         "component: doctest coverage",
@@ -20,9 +21,11 @@ Assignee: mvngu
 
 CC:  cwitty @dandrake drkirkby @jhpalmieri @nexttime @wjp
 
+Keywords: testlong maketest parallel race condition unique doctest directories
+
 We currently have separate single and multi-threaded Sage doctest scripts.  In particular, `sage -t ...` invokes `SAGE_ROOT/local/bin/sage-test` and `sage -tp ...` invokes `sage-ptest`.  These files share many lines of almost functionally identical identical code.  Unifying these scripts should make it easier to maintain and extend the Sage doctest system.
 
-Related: #2379, #7993, #7995, #8641.
+Related: #2379, #7993, #7995, #8641, #9225, #9243, #9316, #9739.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9224
 

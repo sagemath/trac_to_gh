@@ -1,22 +1,23 @@
-# Issue 2363: [with patch, needs review]
+# Issue 2363: [with patch, with positive review] Integer.pyx mpz structure fix
 
 archive/issues_002363.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee 1337. This patch fixes a wrong ordering in a mpz structure used by the integer.pyx memory manager. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2363\n\n",
+    "body": "Assignee: @garyfurnish\n\nSee 1337. This patch fixes a wrong ordering in a mpz structure used by the integer.pyx memory manager. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2363\n\n",
+    "closed_at": "2008-03-01T22:39:52Z",
     "created_at": "2008-03-01T20:25:50Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review]",
+    "title": "[with patch, with positive review] Integer.pyx mpz structure fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2363",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 See 1337. This patch fixes a wrong ordering in a mpz structure used by the integer.pyx memory manager. 
 

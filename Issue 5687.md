@@ -1,16 +1,17 @@
-# Issue 5687: [with patch; needs review] notebook -- only save snapshot when worksheet.txt has changed.
+# Issue 5687: [with patch; positive review] notebook -- only save snapshot when worksheet.txt has changed.
 
 archive/issues_005687.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5687\n\n",
+    "closed_at": "2009-04-05T22:59:06Z",
     "created_at": "2009-04-05T05:38:54Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] notebook -- only save snapshot when worksheet.txt has changed.",
+    "title": "[with patch; positive review] notebook -- only save snapshot when worksheet.txt has changed.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5687",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 1962: set_edge_label creates edges when multiple edges are allowed
+# Issue 1962: [with patch, with positive review] set_edge_label creates edges when multiple edges are allowed
 
 archive/issues_001962.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: g = Graph({0: [0,1,1,2]}, loops=True, multiedges=True)\nsage: g.set_edge_label(0,0,'test')\nsage: g.edges()\n\n[(0, 0, 'e'),\n (0, 0, 's'),\n (0, 0, 't'),\n (0, 0, 't'),\n (0, 1, None),\n (0, 1, None),\n (0, 2, None)]\n```\n\nI suggest that set_edge_labels should *never* create an edge or the function name should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1962\n\n",
+    "closed_at": "2008-02-26T01:08:26Z",
     "created_at": "2008-01-28T19:49:16Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "set_edge_label creates edges when multiple edges are allowed",
+    "title": "[with patch, with positive review] set_edge_label creates edges when multiple edges are allowed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1962",
     "user": "https://github.com/jasongrout"

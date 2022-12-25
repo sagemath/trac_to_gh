@@ -1,16 +1,17 @@
-# Issue 5675: notebook with address="" option should set the address to something useful
+# Issue 5675: Auto browser open of notebook does not open to a valid url when interface=""
 
 archive/issues_005675.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  acleone\n\n```\nOn Thu, 02 Apr 2009 at 11:53PM -0700, Ondrej Certik wrote:\n>\n> Hi,\n>\n[...]\n> sage: notebook(secure=False, address=\"\")\n> [...]\n>\n> and it starts firefox on the local machine with this address:\n>\n> http://[www.:8000.com]/?startup_token=41e2a34e89e40139333a8113e9be2a50\n>\n> which obviously fails. This also happens with sage 3.2.3 (I didn't try\n> other versions).\n\nThis has been around for a while; I haven't filed a ticket for it, since\nI just retype the URL.\n```\n\nIt used to be in the notebook that address=\"\" was an error.  Then when we switched to twisted, it suddenly meant \"listen on all interfaces\".  Now it's a common option to give.  \n\nThe two places I know of where the address is given are: (1) when popping up a web browser pointed at the notebook, and (2) when publishing a worksheet and it shows the URL where people can get the published version.\n\nIdeas:\n* If one gives address=\"\", everywhere else, set the address to the fully qualified domain name.  How to get that in Python?\n* If one gives address=\"\", simply never automatically pop up a viewer, and doesn't display the URL for published worksheets (since it is wrong).  If people want proper URL's they shouldn't be lazy with their address= option.\n* Make address=\"\" an error, and require the user to give a proper fully qualified name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5675\n\n",
+    "body": "Assignee: boothby\n\nCC:  acleone\n\n```\nOn Thu, 02 Apr 2009 at 11:53PM -0700, Ondrej Certik wrote:\n>\n> Hi,\n>\n[...]\n> sage: notebook(secure=False, address=\"\")\n> [...]\n>\n> and it starts firefox on the local machine with this address:\n>\n> http://[www.:8000.com]/?startup_token=41e2a34e89e40139333a8113e9be2a50\n>\n> which obviously fails. This also happens with sage 3.2.3 (I didn't try\n> other versions).\n\nThis has been around for a while; I haven't filed a ticket for it, since\nI just retype the URL.\n```\n\nIt used to be in the notebook that address=\"\" was an error.  Then when we switched to twisted, it suddenly meant \"listen on all interfaces\".  Now it's a common option to give.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5675\n\n",
+    "closed_at": "2010-01-25T01:03:31Z",
     "created_at": "2009-04-03T13:27:21Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "notebook with address=\"\" option should set the address to something useful",
+    "title": "Auto browser open of notebook does not open to a valid url when interface=\"\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5675",
     "user": "https://github.com/williamstein"
@@ -41,13 +42,6 @@ I just retype the URL.
 ```
 
 It used to be in the notebook that address="" was an error.  Then when we switched to twisted, it suddenly meant "listen on all interfaces".  Now it's a common option to give.  
-
-The two places I know of where the address is given are: (1) when popping up a web browser pointed at the notebook, and (2) when publishing a worksheet and it shows the URL where people can get the published version.
-
-Ideas:
-* If one gives address="", everywhere else, set the address to the fully qualified domain name.  How to get that in Python?
-* If one gives address="", simply never automatically pop up a viewer, and doesn't display the URL for published worksheets (since it is wrong).  If people want proper URL's they shouldn't be lazy with their address= option.
-* Make address="" an error, and require the user to give a proper fully qualified name.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5675
 

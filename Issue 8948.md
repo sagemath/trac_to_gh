@@ -4,6 +4,7 @@ archive/issues_008948.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nThis patch adds a thin space between vector entries, which helps distinguish the entries from each other, especially when there are symbolic expressions, so the entries already may have thin spaces in them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8948\n\n",
+    "closed_at": "2011-01-26T22:26:33Z",
     "created_at": "2010-05-11T06:29:05Z",
     "labels": [
         "component: linear algebra",

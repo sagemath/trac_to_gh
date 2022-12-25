@@ -1,15 +1,16 @@
-# Issue 5056: rename Ideal.reduced_basis to Ideal.interreduced_basis
+# Issue 5056: [with patch, positive review] rename Ideal.reduced_basis to Ideal.interreduced_basis
 
 archive/issues_005056.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nIt seems like people get confused by the name and assume the function returns the reduced **Gr\u00f6bner** basis. Thus `reduced_basis()` should be deprecated and `interreduced_basis()` should take its place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5056\n\n",
+    "closed_at": "2009-01-25T02:21:05Z",
     "created_at": "2009-01-22T18:34:52Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "rename Ideal.reduced_basis to Ideal.interreduced_basis",
+    "title": "[with patch, positive review] rename Ideal.reduced_basis to Ideal.interreduced_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5056",
     "user": "https://github.com/malb"

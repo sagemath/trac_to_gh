@@ -1,9 +1,10 @@
-# Issue 8369: sagenb: notebook mistake in
+# Issue 8369: Mistake in text on data file upload page
 
 archive/issues_008369.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe sentence: \"Or enter the url of a worksheet file on the web:\" at \"Upload or Create Data File to attach to worksheet \"image histogram\"\" in the notebook is wrong.  It should be: \"Or enter the url of a file on the web:\".  This is the page you get by clicking Data --> Upload from a worksheet.  \n\nThis is a really easy bug to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8369\n\n",
+    "closed_at": "2010-07-22T17:14:30Z",
     "created_at": "2010-02-25T20:15:48Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_008369.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
-    "title": "sagenb: notebook mistake in",
+    "title": "Mistake in text on data file upload page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8369",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_007558.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAs discussed in #7515 it could be a good idea to replace these empty functions by deprecated_function_alias in Sage. It may be possible to script it !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7558\n\n",
+    "closed_at": "2009-11-30T12:24:39Z",
     "created_at": "2009-11-30T12:23:35Z",
     "labels": [
         "component: misc"

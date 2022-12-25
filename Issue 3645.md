@@ -1,16 +1,17 @@
-# Issue 3645: tutorial: make documentation for .n() more prominent
+# Issue 3645: [with patch; positive review] tutorial: make documentation for .n() more prominent
 
 archive/issues_003645.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: tutorial, editor_mhansen\n\nIn response to the discussion in the thread\n\n[http://groups.google.com/group/sage-support/browse_frm/thread/3c6972e69d1b80d8](http://groups.google.com/group/sage-support/browse_frm/thread/3c6972e69d1b80d8)\n\nI've tried to make the documentation for the .n() method more prominent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3645\n\n",
+    "closed_at": "2008-07-30T23:21:27Z",
     "created_at": "2008-07-11T22:00:04Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "tutorial: make documentation for .n() more prominent",
+    "title": "[with patch; positive review] tutorial: make documentation for .n() more prominent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3645",
     "user": "https://github.com/jhpalmieri"

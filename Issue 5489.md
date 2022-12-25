@@ -1,15 +1,16 @@
-# Issue 5489: add a non library level interface to 4ti2 to Sage
+# Issue 5489: Add an interface for 4ti2 to Sage
 
 archive/issues_005489.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5489\n\n",
+    "body": "Assignee: @williamstein\n\nAdds an interface to the (currently optional) 4ti2 package.\n\n4ti2 is necessary for full functionality of the sandpiles module.  In the near future it would be nice to have 4ti2 as a standard component of Sage. \n\nApply only: [attachment:trac_5489_4ti2_interface-reviewer.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/5489\n\n",
+    "closed_at": "2012-09-03T12:51:12Z",
     "created_at": "2009-03-11T18:05:10Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
-    "title": "add a non library level interface to 4ti2 to Sage",
+    "title": "Add an interface for 4ti2 to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5489",
     "user": "https://github.com/mwhansen"
@@ -17,7 +18,11 @@ archive/issues_005489.json:
 ```
 Assignee: @williamstein
 
+Adds an interface to the (currently optional) 4ti2 package.
 
+4ti2 is necessary for full functionality of the sandpiles module.  In the near future it would be nice to have 4ti2 as a standard component of Sage. 
+
+Apply only: [attachment:trac_5489_4ti2_interface-reviewer.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/5489
 

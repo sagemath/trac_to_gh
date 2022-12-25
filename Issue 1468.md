@@ -4,6 +4,7 @@ archive/issues_001468.json:
 ```json
 {
     "body": "Assignee: boothby\n\nnotebook -- create a global option so that word wrap is on or off by default always\n\nIssue created by migration from https://trac.sagemath.org/ticket/1468\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2007-12-12T06:24:37Z",
     "labels": [
         "component: notebook"

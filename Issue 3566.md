@@ -1,15 +1,16 @@
-# Issue 3566: dsage -- get rid of uuid import
+# Issue 3566: [with patch, positive review] dsage -- get rid of uuid import
 
 archive/issues_003566.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nThis is to optimize startup time.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3566\n\n",
+    "closed_at": "2008-07-06T20:07:37Z",
     "created_at": "2008-07-06T19:41:57Z",
     "labels": [
         "component: dsage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "dsage -- get rid of uuid import",
+    "title": "[with patch, positive review] dsage -- get rid of uuid import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3566",
     "user": "https://github.com/williamstein"

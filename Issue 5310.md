@@ -1,29 +1,25 @@
-# Issue 5310: addition to Sage for Msieve factoring program
+# Issue 5310: Add an spkg to Sage for Msieve factoring program
 
 archive/issues_005310.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6 wstein boothby @nexttime jpflori\n\nKeywords: msieve, factorization\n\nThis addition of Msieve will hopefully enhance Sage's Integer Factorization ability for all integers of a reasonable size, and provide the opportunity for users to utilize the Number Field Sieve.\n\nspkg located:  \n\nhttp://309codesign.com/code/\n\nAn explanation of Msieve from its documentation:\n\"There are plenty of algorithms for performing integer factorization. \nThe Msieve library implements most of them from scratch, and relies on\noptional external libraries for the rest of them. Trial division and\nPollard Rho is used on all inputs; if the result is less than 25 digits \nin size, tiny custom routines do the factoring. For larger numbers, the code\nswitches to the GMP-ECM library and runs the P-1, P+1 and ECM algorithms,\nexpending a user-configurable amount of effort to do so. If these do not \ncompletely factor the input number, the library switches to the heavy  \nartillery. Unless told otherwise, Msieve runs the self-initializing quadratic\nsieve algorithm, and if this doesn't factor the input number then you've\nfound a library problem. If you know what you're doing, Msieve also contains\na complete implementation of the number field sieve, that has helped complete\nsome of the largest public factorization efforts known.\"\nand\n\"To be as fast as possible. I claim (without proof) that for\n          completely factoring general inputs between 40 and 100 digits\n          in size, Msieve is faster than any other code implementing any\n          other algorithm.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/5310\n\n",
+    "body": "CC:  @zimmermann6 wstein boothby @nexttime jpflori\n\nKeywords: msieve, factorization\n\nThis addition of Msieve will hopefully enhance Sage's Integer Factorization ability for all integers of a reasonable size, and provide the opportunity for users to utilize the Number Field Sieve.\n\nhttp://309codesign.com/code/\n\nAn explanation of Msieve from its documentation:\n\"There are plenty of algorithms for performing integer factorization. \nThe Msieve library implements most of them from scratch, and relies on\noptional external libraries for the rest of them. Trial division and\nPollard Rho is used on all inputs; if the result is less than 25 digits \nin size, tiny custom routines do the factoring. For larger numbers, the code\nswitches to the GMP-ECM library and runs the P-1, P+1 and ECM algorithms,\nexpending a user-configurable amount of effort to do so. If these do not \ncompletely factor the input number, the library switches to the heavy  \nartillery. Unless told otherwise, Msieve runs the self-initializing quadratic\nsieve algorithm, and if this doesn't factor the input number then you've\nfound a library problem. If you know what you're doing, Msieve also contains\na complete implementation of the number field sieve, that has helped complete\nsome of the largest public factorization efforts known.\"\nand\n\"To be as fast as possible. I claim (without proof) that for\n          completely factoring general inputs between 40 and 100 digits\n          in size, Msieve is faster than any other code implementing any\n          other algorithm.\"\n\n---\n\nUpstream tarball: http://downloads.sourceforge.net/msieve/msieve149.tar.gz\n\n(rename to msieve-1.49.tar.gz)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5310\n\n",
     "created_at": "2009-02-19T04:25:19Z",
     "labels": [
-        "component: interfaces"
+        "component: packages: experimental"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "addition to Sage for Msieve factoring program",
+    "title": "Add an spkg to Sage for Msieve factoring program",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5310",
     "user": "https://trac.sagemath.org/admin/accounts/users/jblakeslee"
 }
 ```
-Assignee: mabshoff
-
 CC:  @zimmermann6 wstein boothby @nexttime jpflori
 
 Keywords: msieve, factorization
 
 This addition of Msieve will hopefully enhance Sage's Integer Factorization ability for all integers of a reasonable size, and provide the opportunity for users to utilize the Number Field Sieve.
-
-spkg located:  
 
 http://309codesign.com/code/
 
@@ -46,6 +42,12 @@ and
           completely factoring general inputs between 40 and 100 digits
           in size, Msieve is faster than any other code implementing any
           other algorithm."
+
+---
+
+Upstream tarball: http://downloads.sourceforge.net/msieve/msieve149.tar.gz
+
+(rename to msieve-1.49.tar.gz)
 
 Issue created by migration from https://trac.sagemath.org/ticket/5310
 

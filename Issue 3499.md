@@ -1,16 +1,17 @@
-# Issue 3499: [with patch, needs review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails
+# Issue 3499: [with patch, positive review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails
 
 archive/issues_003499.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis fails:\n\n```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1])\nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0\nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1])\nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\n```\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3499\n\n",
+    "closed_at": "2008-06-24T03:39:14Z",
     "created_at": "2008-06-24T00:23:31Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails",
+    "title": "[with patch, positive review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3499",
     "user": "https://github.com/craigcitro"

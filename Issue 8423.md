@@ -1,16 +1,17 @@
-# Issue 8423: fractals: add code to plot julia sets
+# Issue 8423: Add code to plot Julia sets
 
 archive/issues_008423.json:
 ```json
 {
-    "body": "Assignee: sdietzel\n\nCC:  @nathanncohen brunellus @bhutz atowsley\n\nAdd code to sage for plotting Julia sets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8423\n\n",
+    "body": "Assignee: sdietzel\n\nCC:  @nathanncohen brunellus @bhutz atowsley\n\nKeywords: complexdynamics, gcoc2017\n\nAdd code to sage for plotting Julia sets. This ticket is now a part of my Google Summer of Code project that is intended to improve the complex dynamics functionality in Sage. Please note that this ticket is now dependent upon #23257 (Plotting the Mandelbrot set in Sage). For more information on my project, please visit my blog: [https://benbarros.wordpress.com](https://benbarros.wordpress.com)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8423\n\n",
+    "closed_at": "2017-08-11T18:17:22Z",
     "created_at": "2010-03-02T18:37:36Z",
     "labels": [
-        "component: fractals",
+        "component: dynamics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
-    "title": "fractals: add code to plot julia sets",
+    "title": "Add code to plot Julia sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8423",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,9 @@ Assignee: sdietzel
 
 CC:  @nathanncohen brunellus @bhutz atowsley
 
-Add code to sage for plotting Julia sets.
+Keywords: complexdynamics, gcoc2017
+
+Add code to sage for plotting Julia sets. This ticket is now a part of my Google Summer of Code project that is intended to improve the complex dynamics functionality in Sage. Please note that this ticket is now dependent upon #23257 (Plotting the Mandelbrot set in Sage). For more information on my project, please visit my blog: [https://benbarros.wordpress.com](https://benbarros.wordpress.com)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8423
 

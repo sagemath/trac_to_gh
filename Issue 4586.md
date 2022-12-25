@@ -1,16 +1,17 @@
-# Issue 4586: delete sage/rings/number_field/todo.py
+# Issue 4586: [with patch, with positive review] delete sage/rings/number_field/todo.py
 
 archive/issues_004586.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe file sage/rings/number_field/todo.py is a todo list of William that made it into the official library. William has confirmed in IRC that it should be deleted.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4586\n\n",
+    "closed_at": "2008-11-23T00:04:48Z",
     "created_at": "2008-11-22T23:44:34Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "delete sage/rings/number_field/todo.py",
+    "title": "[with patch, with positive review] delete sage/rings/number_field/todo.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4586",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

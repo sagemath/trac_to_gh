@@ -3,7 +3,8 @@
 archive/issues_007375.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net drkirkby\n\nKeywords: M4RI, linear algebra\n\nImprovements in the most recent versions:\n* switched to LQUP instead of PLUQ for better performance\n* because of this and other improvements much better handling of sparse-ish matrices\n* overall better performance for elimination\n* better performance for mzd_transpose\n* dropped the check for the numer of CPUs from configure which was unused and not cross platform\n* optional tuning code to calculate cache sizes (not enabled by default)\n  + some refactoring\n  + mzd_row_add_offset() fixed a segfault\n\nIssue created by migration from https://trac.sagemath.org/ticket/7375\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net drkirkby\n\nKeywords: M4RI, linear algebra\n\nImprovements in the most recent versions:\n* switched to LQUP instead of PLUQ for better performance\n* because of this and other improvements much better handling of sparse-ish matrices\n* overall better performance for elimination\n* better performance for mzd_transpose\n* dropped the check for the numer of CPUs from configure which was unused and not cross platform\n* optional tuning code to calculate cache sizes (not enabled by default)\n  + some refactoring\n  + mzd_row_add_offset() fixed a segfault\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7375\n\n",
+    "closed_at": "2009-11-29T05:26:55Z",
     "created_at": "2009-11-02T11:17:39Z",
     "labels": [
         "component: packages: standard"
@@ -30,6 +31,8 @@ Improvements in the most recent versions:
 * optional tuning code to calculate cache sizes (not enabled by default)
   + some refactoring
   + mzd_row_add_offset() fixed a segfault
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7375
 

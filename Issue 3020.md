@@ -1,28 +1,28 @@
-# Issue 3020: Finite Fields of characteristic 2 slow to construct
+# Issue 3020: [With another additional patch, positive review] Finite Fields of characteristic 2 slow to construct
 
 archive/issues_003020.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb cwitty\n\nKeywords: finite fields\n\nConstruction of GF(2^n) is very slow for n>=16 (out of the givaro range), owing to slow search for suitable defining irreducible polynomials over GF(2).  Also the polynomials produced are dense.\n\nA new function GF2X_sparse_irreducible() has been added, using a precomputed lookup table for degrees up to 2048 (taken from NTL's source code) and otherwise looking for tri- and pentanomials first.\n\nPatch attached, based on 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3020\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @malb cwitty\n\nKeywords: finite fields\n\nConstruction of GF(2<sup>n</sup>) is very slow for n>=16 (out of the givaro range), owing to slow search for suitable defining irreducible polynomials over GF(2).  Also the polynomials produced are dense.\n\nA new function GF2X_sparse_irreducible() has been added, using a precomputed lookup table for degrees up to 2048 (taken from NTL's source code) and otherwise looking for tri- and pentanomials first.\n\nPatch attached, based on 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3020\n\n",
+    "closed_at": "2008-05-06T19:28:04Z",
     "created_at": "2008-04-24T21:40:17Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Finite Fields of characteristic 2 slow to construct",
+    "title": "[With another additional patch, positive review] Finite Fields of characteristic 2 slow to construct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3020",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: tbd
+Assignee: @JohnCremona
 
 CC:  @malb cwitty
 
 Keywords: finite fields
 
-Construction of GF(2^n) is very slow for n>=16 (out of the givaro range), owing to slow search for suitable defining irreducible polynomials over GF(2).  Also the polynomials produced are dense.
+Construction of GF(2<sup>n</sup>) is very slow for n>=16 (out of the givaro range), owing to slow search for suitable defining irreducible polynomials over GF(2).  Also the polynomials produced are dense.
 
 A new function GF2X_sparse_irreducible() has been added, using a precomputed lookup table for degrees up to 2048 (taken from NTL's source code) and otherwise looking for tri- and pentanomials first.
 

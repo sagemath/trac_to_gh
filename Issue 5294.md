@@ -3,7 +3,8 @@
 archive/issues_005294.json:
 ```json
 {
-    "body": "Assignee: tba\n\nKeywords: picklejar, documentation\n\nOn sage-combinat-devel Michael wrote:\n\n \"The pickle jar is not in the documentation AFAIK and it definitely should be. So someone who thinks this is a good idea please open a ticket.\"\n\nI definitely think this is a good idea.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5294\n\n",
+    "body": "Assignee: @AndrewAtLarge\n\nKeywords: picklejar, documentation, beginner\n\nOn sage-combinat-devel Michael wrote:\n\n \"The pickle jar is not in the documentation AFAIK and it definitely should be. So someone who thinks this is a good idea please open a ticket.\"\n\nI definitely think this is a good idea.\n\n---\n\nThe intention of the attached patch is to help developers know what to do when they come across an unpickling error in the pickle_jar due to the automated test\n\n```\nsage -t structure/sage_object.pyx\n```\n\nWhat the patch actually does is:\n* briefly explains what the purpose of the pickle_jar is\n* embellishes the error message of unpickle_all() so that when it is run on the pickle_jar it says that pickles should not be removed from the pickle_jar and that unpickling errors can be fixed using register_unpickle_override\n* expands on the documentation to register_unpickle_override() and, in particular, adds two examples to the show how to use register_unpickle_override to fix unpickling issues\n* adds two sections to the developers manual: the first is a brief account of the pickle_jar in the sage coding conventions section and the section is a brief note about unpickling cycthon code in the cython section.\n\nNote that the documentation changes affect both the developers guide and the reference manual.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5294\n\n",
+    "closed_at": "2013-01-26T09:52:13Z",
     "created_at": "2009-02-17T18:08:39Z",
     "labels": [
         "component: documentation",
@@ -16,15 +17,33 @@ archive/issues_005294.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: tba
+Assignee: @AndrewAtLarge
 
-Keywords: picklejar, documentation
+Keywords: picklejar, documentation, beginner
 
 On sage-combinat-devel Michael wrote:
 
  "The pickle jar is not in the documentation AFAIK and it definitely should be. So someone who thinks this is a good idea please open a ticket."
 
 I definitely think this is a good idea.
+
+---
+
+The intention of the attached patch is to help developers know what to do when they come across an unpickling error in the pickle_jar due to the automated test
+
+```
+sage -t structure/sage_object.pyx
+```
+
+What the patch actually does is:
+* briefly explains what the purpose of the pickle_jar is
+* embellishes the error message of unpickle_all() so that when it is run on the pickle_jar it says that pickles should not be removed from the pickle_jar and that unpickling errors can be fixed using register_unpickle_override
+* expands on the documentation to register_unpickle_override() and, in particular, adds two examples to the show how to use register_unpickle_override to fix unpickling issues
+* adds two sections to the developers manual: the first is a brief account of the pickle_jar in the sage coding conventions section and the section is a brief note about unpickling cycthon code in the cython section.
+
+Note that the documentation changes affect both the developers guide and the reference manual.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5294
 

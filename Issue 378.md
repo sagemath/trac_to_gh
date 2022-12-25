@@ -1,16 +1,16 @@
-# Issue 378: user-specified sage load path
+# Issue 378: User-specified path for load and attach
 
 archive/issues_000378.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  rossk\n\n```\nUtpal Sarkar <doetoe@gmail.com> \t\nto sage-support\n\t\nshow details\n\t 9:17 am (7 minutes ago) \n\nI thought it could work something like this:\nAs a command line option it could be like an include path or a library\npath to gcc, i.e. every option \"-I path\" (or any other name of the\nswitch, this is the one for includes in gcc) is added to the existing\ndefault list of paths. This could be useful e.g. when calling sage\nfrom a launcher, in which case you could put these options in the\nlauncher so that it will always be called with these paths when ran\nfrom the launcher.\nAs an environment variable it could work just like LD_LIBRARY_PATH,\nPYTHONPATH or MAGMA_PATH: a list of paths separated by colons (or some\nother separator) whose constituents are also added to the existing\nlist of paths. For reasons of implementation, maybe it is easier to\njust use PYTHONPATH for sage files as well.\nIf this list would be directly accessible from sage, as in python\nwhere it is stored in sys.path (which is read/write), and moreover\nthere were the possibility to specify a startup script which would be\nexecuted just before entering the session (like in magma when called\nwith -s, or in bash and many other linux programs where it is a\nstandard file .bashrc), then you could also append your paths to the\nstandard list in the startup script.\nWhen calling \"load\" or \"attach\" from sage with a non-absolute path, it\nwould cycle through this list, concatenating the paths with the string\npassed to load or attach, until it finds the file.\nIf you consider this useful, and you could implement any of these in\nsage, that would be great!\n\nThanks,\n\nUtpal\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/378\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  rossk\n\nThe patch allows\n\n```python\nsage: load_attach_path()\n['.']\nsage: load_attach_path('/path/to/my/sage/scripts')\nsage: load_attach_path()\n['.', '/path/to/my/sage/scripts']\nsage: attach('nifty_script1.sage')\nsage: attached_files()\n['/path/to/my/sage/scripts/nifty_script1.sage']\n```\nYou can also set an environment variable:\n\n```sh\n$ export SAGE_LOAD_ATTACH_PATH=\"$HOME/foo:$HOME/bar\"\n$ sage\nsage: load_attach_path()\n['.', '/home/mpatel/foo', '/home/mpatel/bar']\n```\nNote:  We now use the full path in the attached files dictionary.\n\nIssue created by migration from https://trac.sagemath.org/ticket/378\n\n",
+    "closed_at": "2010-11-10T22:19:14Z",
     "created_at": "2007-05-25T16:28:34Z",
     "labels": [
-        "component: user interface",
-        "minor"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "user-specified sage load path",
+    "title": "User-specified path for load and attach",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/378",
     "user": "https://github.com/williamstein"
@@ -20,45 +20,27 @@ Assignee: @williamstein
 
 CC:  rossk
 
+The patch allows
+
+```python
+sage: load_attach_path()
+['.']
+sage: load_attach_path('/path/to/my/sage/scripts')
+sage: load_attach_path()
+['.', '/path/to/my/sage/scripts']
+sage: attach('nifty_script1.sage')
+sage: attached_files()
+['/path/to/my/sage/scripts/nifty_script1.sage']
 ```
-Utpal Sarkar <doetoe@gmail.com> 	
-to sage-support
-	
-show details
-	 9:17 am (7 minutes ago) 
+You can also set an environment variable:
 
-I thought it could work something like this:
-As a command line option it could be like an include path or a library
-path to gcc, i.e. every option "-I path" (or any other name of the
-switch, this is the one for includes in gcc) is added to the existing
-default list of paths. This could be useful e.g. when calling sage
-from a launcher, in which case you could put these options in the
-launcher so that it will always be called with these paths when ran
-from the launcher.
-As an environment variable it could work just like LD_LIBRARY_PATH,
-PYTHONPATH or MAGMA_PATH: a list of paths separated by colons (or some
-other separator) whose constituents are also added to the existing
-list of paths. For reasons of implementation, maybe it is easier to
-just use PYTHONPATH for sage files as well.
-If this list would be directly accessible from sage, as in python
-where it is stored in sys.path (which is read/write), and moreover
-there were the possibility to specify a startup script which would be
-executed just before entering the session (like in magma when called
-with -s, or in bash and many other linux programs where it is a
-standard file .bashrc), then you could also append your paths to the
-standard list in the startup script.
-When calling "load" or "attach" from sage with a non-absolute path, it
-would cycle through this list, concatenating the paths with the string
-passed to load or attach, until it finds the file.
-If you consider this useful, and you could implement any of these in
-sage, that would be great!
-
-Thanks,
-
-Utpal
-
-
+```sh
+$ export SAGE_LOAD_ATTACH_PATH="$HOME/foo:$HOME/bar"
+$ sage
+sage: load_attach_path()
+['.', '/home/mpatel/foo', '/home/mpatel/bar']
 ```
+Note:  We now use the full path in the attached files dictionary.
 
 Issue created by migration from https://trac.sagemath.org/ticket/378
 

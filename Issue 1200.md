@@ -3,7 +3,8 @@
 archive/issues_001200.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1200\n\n",
+    "body": "Assignee: tba\n\nMerged in 2.8.13.alpha0.\n\nThere we 3 rejects in arith.py from an earlier patch, but I fixed those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1200\n\n",
+    "closed_at": "2007-11-18T14:13:02Z",
     "created_at": "2007-11-18T09:33:47Z",
     "labels": [
         "component: documentation",
@@ -18,7 +19,13 @@ archive/issues_001200.json:
 ```
 Assignee: tba
 
+Merged in 2.8.13.alpha0.
 
+There we 3 rejects in arith.py from an earlier patch, but I fixed those.
+
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/1200
 

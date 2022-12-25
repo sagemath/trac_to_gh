@@ -3,7 +3,8 @@
 archive/issues_008358.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @categorie\n\nThere is an example in number_field.py which says it factors Gaussian integers however units are not considered, which might confuse the\nuser.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8358\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @categorie\n\nKeywords: Gaussian integers\n\nThere is an example in number_field.py which says it factors Gaussian integers however units are not considered, which might confuse the\nuser. The attached patch documents that feature. See also #7545.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8358\n\n",
+    "closed_at": "2010-03-06T09:18:59Z",
     "created_at": "2010-02-25T08:22:30Z",
     "labels": [
         "component: number fields",
@@ -20,8 +21,10 @@ Assignee: @loefflerd
 
 CC:  @williamstein @categorie
 
+Keywords: Gaussian integers
+
 There is an example in number_field.py which says it factors Gaussian integers however units are not considered, which might confuse the
-user.
+user. The attached patch documents that feature. See also #7545.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8358
 

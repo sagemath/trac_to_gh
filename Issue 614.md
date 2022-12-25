@@ -4,6 +4,7 @@ archive/issues_000614.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nBad doctest:\nsage: 2r**(SR(2)-1-1r)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/614\n\n",
+    "closed_at": "2007-09-07T04:34:45Z",
     "created_at": "2007-09-07T04:32:11Z",
     "labels": [
         "component: basic arithmetic",

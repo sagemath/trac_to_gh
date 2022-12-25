@@ -4,6 +4,7 @@ archive/issues_007426.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe attached patched spkg change the OS X 10.6 detection to the following:\n\n```\n            if [ `uname -r | sed 's/\\..*//'` != \"10\" ]; then\n```\n\nBefore, I just had it do\n\n```\n              if [ `uname -r` != \"10.0.0\" ]; then\n```\nwhich is silly, given that 10.6.2 is called 10.0.2.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7426\n\n",
+    "closed_at": "2009-11-13T06:32:45Z",
     "created_at": "2009-11-11T01:39:28Z",
     "labels": [
         "component: build",

@@ -3,11 +3,11 @@
 archive/issues_001801.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nhttp://sage.math.washington.edu/home/robertwb/cython/\n\neverything passes with sage -testall \n\nMain improvements:\n* `PyObject_CallObject -> PyObject_Call` (up to 5% speed increase for python function calls)\n* More correct .pyx file annotation (the click-able yellow lines)\n* Better support for non-GC objects\n* Optimized tp_new/dealloc/traverse/clear slots (similar to our first attempt to speed up  integers, but globally)\n* Re-enable pre-import (e.g. from sage.all import *)\n* `__cinit__` (a.k.a `__new__`) can have optimized signature `__new__(self)` regardless of `__init__` params\n* correct overflow error handling for all c int types (before just long was handled correctly)\n* (optional) for i in range(...) -> for i from ... conversion\n* several minor bug fixes\n* cleaned up spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1801\n\n",
+    "body": "Assignee: @robertwb\n\nhttp://sage.math.washington.edu/home/robertwb/cython/\n\neverything passes with sage -testall \n\nMain improvements:\n* `PyObject_CallObject -> PyObject_Call` (up to 5% speed increase for python function calls)\n* More correct .pyx file annotation (the click-able yellow lines)\n* Better support for non-GC objects\n* Optimized tp_new/dealloc/traverse/clear slots (similar to our first attempt to speed up  integers, but globally)\n* Re-enable pre-import (e.g. from sage.all import *)\n* `__cinit__` (a.k.a `__new__`) can have optimized signature `__new__(self)` regardless of `__init__` params\n* correct overflow error handling for all c int types (before just long was handled correctly)\n* (optional) for i in range(...) -> for i from ... conversion\n* several minor bug fixes\n* cleaned up spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1801\n\n",
+    "closed_at": "2008-01-19T18:03:13Z",
     "created_at": "2008-01-17T18:52:55Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with spkg] Update cython package to 0.9.6.11",
@@ -16,7 +16,7 @@ archive/issues_001801.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: mabshoff
+Assignee: @robertwb
 
 http://sage.math.washington.edu/home/robertwb/cython/
 

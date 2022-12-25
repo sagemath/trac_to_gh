@@ -1,22 +1,24 @@
-# Issue 3097: pbuild: make sure the files from setup.py's scripts section are copied
+# Issue 3097: [with patch, positive review] pbuild: make sure the files from setup.py's scripts section are copied
 
 archive/issues_003097.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIf one uses pbuild to build the Sage library the files from the scripts section are not copied into $SAGE_ROOT/local/bin:\n\n```\n      scripts = ['sage/dsage/scripts/dsage_worker.py',\n                 'sage/dsage/scripts/dsage_setup.py',\n                 'spkg-debian-maybe',\n                ],\n```\nErgo DSage's doctest just hang at 0% CPU use.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3097\n\n",
+    "body": "Assignee: @garyfurnish\n\nIf one uses pbuild to build the Sage library the files from the scripts section are not copied into $SAGE_ROOT/local/bin:\n\n```\n      scripts = ['sage/dsage/scripts/dsage_worker.py',\n                 'sage/dsage/scripts/dsage_setup.py',\n                 'spkg-debian-maybe',\n                ],\n```\nErgo DSage's doctest just hang at 0% CPU use.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3097\n\n",
+    "closed_at": "2008-05-23T06:23:30Z",
     "created_at": "2008-05-03T15:18:09Z",
     "labels": [
-        "component: build",
+        "component: pbuild",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "pbuild: make sure the files from setup.py's scripts section are copied",
+    "title": "[with patch, positive review] pbuild: make sure the files from setup.py's scripts section are copied",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3097",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 If one uses pbuild to build the Sage library the files from the scripts section are not copied into $SAGE_ROOT/local/bin:
 

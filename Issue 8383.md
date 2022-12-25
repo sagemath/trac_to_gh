@@ -1,4 +1,4 @@
-# Issue 8383: should sigma(x) produce an error?
+# Issue 8383: Make symbolic versions of moebius, sigma, and euler_phi functions
 
 archive/issues_008383.json:
 ```json
@@ -6,11 +6,11 @@ archive/issues_008383.json:
     "body": "Assignee: @burcin\n\nCC:  @nexttime @benjaminfjones @eviatarbach @slel\n\nI hit the following problem:\n\n```\nsage: f(x) = sigma(x)-x\n...\nTypeError: unable to convert x (=x) to an integer\n```\nWouldn't it better to keep sigma(x) unevaluated for x not an integer?\nNote that `f = lambda(x):sigma(x)-x` works but it less nice.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8383\n\n",
     "created_at": "2010-02-26T23:10:51Z",
     "labels": [
-        "component: calculus",
+        "component: symbolics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "should sigma(x) produce an error?",
+    "title": "Make symbolic versions of moebius, sigma, and euler_phi functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8383",
     "user": "https://github.com/zimmermann6"

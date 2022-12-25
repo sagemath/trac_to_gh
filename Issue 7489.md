@@ -3,7 +3,8 @@
 archive/issues_007489.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @kcrisman\n\nKeywords: geogebra java education teaching interactive\n\n[GeoGebra](http://www.geogebra.org/cms/) is free, interactive program for learning and teaching mathematics.  It can run as an [unsigned](http://www.geogebra.org/en/wiki/index.php/Unsigned_GeoGebra_Applets) Java applet in a capable web browser.  It also has a [JavaScript API](http://www.geogebra.org/en/wiki/index.php/GeoGebra_Applet_Methods).  Some links:\n\n* [Screenshots](http://www.geogebra.org/cms/index.php?option=com_content&task=blogcategory&id=72&Itemid=58).\n* [Examples](http://www.geogebra.org/cms/index.php?option=com_content&task=blogcategory&id=69&Itemid=56), [more (En)](http://www.geogebra.org/en/wiki/index.php/English), [more (Fr)](http://www.geogebra.org/en/wiki/index.php/French).\n* [Documentation](http://www.geogebra.org/cms/index.php?option=com_content&task=blogcategory&id=75&Itemid=61), [Know How](http://www.geogebra.org/en/wiki/index.php/GeoGebra_Know_How).\n* [Forums](http://www.geogebra.org/forum/).\n* [Wiki](http://www.geogebra.org/en/wiki/index.php/Main_Page).\n\n\nGiven its features, maturity, and popularity, we should consider integrating GeoGebra into [Sage](http://www.sagemath.org/).\n\nSee, e.g., [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e791fb1c8665c862/f10f8eb92919ad8f?#f10f8eb92919ad8f).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7489\n\n",
+    "body": "Assignee: boothby\n\nCC:  @kcrisman\n\nKeywords: geogebra java education teaching interactive sd31\n\n[GeoGebra](http://www.geogebra.org/cms/) is free, interactive program for learning and teaching mathematics.  It can run as an [unsigned](http://www.geogebra.org/en/wiki/index.php/Unsigned_GeoGebra_Applets) Java applet in a capable web browser.  It also has a [JavaScript API](http://www.geogebra.org/en/wiki/index.php/GeoGebra_Applet_Methods).  Some links:\n\n* [Screenshots](http://www.geogebra.org/cms/index.php?option=com_content&task=blogcategory&id=72&Itemid=58).\n* [Examples](http://www.geogebra.org/cms/index.php?option=com_content&task=blogcategory&id=69&Itemid=56), [more (En)](http://www.geogebra.org/en/wiki/index.php/English), [more (Fr)](http://www.geogebra.org/en/wiki/index.php/French).\n* [Documentation](http://www.geogebra.org/cms/index.php?option=com_content&task=blogcategory&id=75&Itemid=61), [Know How](http://www.geogebra.org/en/wiki/index.php/GeoGebra_Know_How).\n* [Forums](http://www.geogebra.org/forum/).\n* [Wiki](http://www.geogebra.org/en/wiki/index.php/Main_Page).\n\n\nGiven its features, maturity, and popularity, we should consider integrating GeoGebra into [Sage](http://www.sagemath.org/).\n\nSee, e.g., [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e791fb1c8665c862/f10f8eb92919ad8f?#f10f8eb92919ad8f).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7489\n\n",
+    "closed_at": "2020-02-16T18:27:03Z",
     "created_at": "2009-11-18T22:05:36Z",
     "labels": [
         "component: notebook"
@@ -19,7 +20,7 @@ Assignee: boothby
 
 CC:  @kcrisman
 
-Keywords: geogebra java education teaching interactive
+Keywords: geogebra java education teaching interactive sd31
 
 [GeoGebra](http://www.geogebra.org/cms/) is free, interactive program for learning and teaching mathematics.  It can run as an [unsigned](http://www.geogebra.org/en/wiki/index.php/Unsigned_GeoGebra_Applets) Java applet in a capable web browser.  It also has a [JavaScript API](http://www.geogebra.org/en/wiki/index.php/GeoGebra_Applet_Methods).  Some links:
 

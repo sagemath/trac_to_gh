@@ -3,7 +3,8 @@
 archive/issues_008365.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8365\n\n",
+    "body": "Assignee: mvngu\n\nThe attached patch tries to make the outline of Chapter 32 (Polynomial Rings) of the reference manual more consistent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8365\n\n",
+    "closed_at": "2010-03-02T22:27:13Z",
     "created_at": "2010-02-25T16:25:37Z",
     "labels": [
         "component: documentation",
@@ -18,7 +19,7 @@ archive/issues_008365.json:
 ```
 Assignee: mvngu
 
-
+The attached patch tries to make the outline of Chapter 32 (Polynomial Rings) of the reference manual more consistent.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8365
 

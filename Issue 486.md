@@ -1,16 +1,17 @@
-# Issue 486: number_of_partitions() could be faster.
+# Issue 486: [with patch] number_of_partitions() could be faster.
 
 archive/issues_000486.json:
 ```json
 {
     "body": "Assignee: bober\n\nCC:  sage-combinat\n\nKeywords: partitions, number_of_partitions, partitions_c.cc\n\nThe implementation of `number_of_partitions()` in `partition_c.cc` should use `quaddoubles `and `doubledoubles`, and should also select the necessary precision more carefully.\n\nAlso, number_of_partitions() should have more tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/486\n\n",
+    "closed_at": "2007-10-13T07:47:59Z",
     "created_at": "2007-08-24T01:37:08Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "number_of_partitions() could be faster.",
+    "title": "[with patch] number_of_partitions() could be faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/486",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"

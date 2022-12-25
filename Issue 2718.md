@@ -1,9 +1,10 @@
-# Issue 2718: increase the default doctest timeout to 360 seconds
+# Issue 2718: [with patch, positive review] increase the default doctest timeout to 360 seconds
 
 archive/issues_002718.json:
 ```json
 {
-    "body": "Assignee: failure\n\nE.g., issues like this:\n\n```\nThe athlon 32-bit linux box has the most files failing:\n   http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log\n\n\tsage -t  devel/sage-main/sage/interfaces/psage.py\n\tsage -t  devel/sage-main/sage/interfaces/sage0.py\n\tsage -t  devel/sage-main/sage/dsage/tests/testdoc.py\n\tsage -t  devel/sage-main/sage/calculus/calculus.py\n\nAlso tut.tex fails due to the timeout. \n\nWe should raise the timeout, since calculus is a timeout issue, and\nit should be possible to test Sage even on a mere 2.1Ghz machine.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2718\n\n",
+    "body": "Assignee: mabshoff\n\nE.g., issues like this:\n\n```\nThe athlon 32-bit linux box has the most files failing:\n   http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log\n\nsage -t  devel/sage-main/sage/interfaces/psage.py\nsage -t  devel/sage-main/sage/interfaces/sage0.py\nsage -t  devel/sage-main/sage/dsage/tests/testdoc.py\nsage -t  devel/sage-main/sage/calculus/calculus.py\n\nAlso tut.tex fails due to the timeout. \n\nWe should raise the timeout, since calculus is a timeout issue, and\nit should be possible to test Sage even on a mere 2.1Ghz machine.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2718\n\n",
+    "closed_at": "2008-03-29T17:33:36Z",
     "created_at": "2008-03-29T16:28:51Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_002718.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "increase the default doctest timeout to 360 seconds",
+    "title": "[with patch, positive review] increase the default doctest timeout to 360 seconds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2718",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 E.g., issues like this:
 
@@ -25,16 +26,17 @@ E.g., issues like this:
 The athlon 32-bit linux box has the most files failing:
    http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log
 
-	sage -t  devel/sage-main/sage/interfaces/psage.py
-	sage -t  devel/sage-main/sage/interfaces/sage0.py
-	sage -t  devel/sage-main/sage/dsage/tests/testdoc.py
-	sage -t  devel/sage-main/sage/calculus/calculus.py
+sage -t  devel/sage-main/sage/interfaces/psage.py
+sage -t  devel/sage-main/sage/interfaces/sage0.py
+sage -t  devel/sage-main/sage/dsage/tests/testdoc.py
+sage -t  devel/sage-main/sage/calculus/calculus.py
 
 Also tut.tex fails due to the timeout. 
 
 We should raise the timeout, since calculus is a timeout issue, and
 it should be possible to test Sage even on a mere 2.1Ghz machine.
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2718
 

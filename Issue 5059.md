@@ -1,16 +1,17 @@
-# Issue 5059: [with patch, needs review] Fix a bunch of broken pickles
+# Issue 5059: [with patch, positive review] Fix a bunch of broken pickles
 
 archive/issues_005059.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nAt a workshop in Seattle last June, a **massive** number of spaces of modular symbols were computed. However, the pickles were broken in shortly thereafter by a refactoring of some code in Sage. \n\nThe attached patch fixes this -- now the old pickles can be loaded, and new pickles still work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5059\n\n",
+    "closed_at": "2009-01-23T10:02:22Z",
     "created_at": "2009-01-22T23:57:16Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Fix a bunch of broken pickles",
+    "title": "[with patch, positive review] Fix a bunch of broken pickles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5059",
     "user": "https://github.com/craigcitro"

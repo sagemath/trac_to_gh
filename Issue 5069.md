@@ -1,22 +1,23 @@
-# Issue 5069: Move polynomial rings to new coercion model
+# Issue 5069: [with patch, positive review] Move univariate polynomial rings to new coercion model
 
 archive/issues_005069.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5069\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5069\n\n",
+    "closed_at": "2009-01-25T01:46:04Z",
     "created_at": "2009-01-23T10:46:36Z",
     "labels": [
-        "component: algebra",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Move polynomial rings to new coercion model",
+    "title": "[with patch, positive review] Move univariate polynomial rings to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5069",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: @robertwb
 
 
 

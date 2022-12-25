@@ -1,16 +1,16 @@
-# Issue 1115: Sha_an either fails or lies when prec isn't the default 53
+# Issue 1115: [with new patch, positive review] Sha_an either fails or lies when prec isn't the default 53
 
 archive/issues_001115.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis example illustrates the problem:\n\n```\nsage: E = EllipticCurve('389a')\nsage: sha = E.sha()\nsage: sha.an_numerical(200)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '/': 'Complex Field with 200 bits of precision' and 'Real Field with 53 bits of precision'\nsage: sha.an_numerical()\n0.999999999999998\nsage: sha.an_numerical(200)\n0.999999999999998\nsage: sha.an_numerical(300)\n0.999999999999998\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1115\n\n",
+    "closed_at": "2008-09-03T16:16:24Z",
     "created_at": "2007-11-06T21:54:49Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Sha_an either fails or lies when prec isn't the default 53",
+    "title": "[with new patch, positive review] Sha_an either fails or lies when prec isn't the default 53",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1115",
     "user": "https://github.com/williamstein"

@@ -1,15 +1,16 @@
-# Issue 2887: notebook -- greatly optimize by implementing a cached version of get_element
+# Issue 2887: [with patch; positive review] notebook -- greatly optimize something in the notebook by implementing a cached version of get_element
 
 archive/issues_002887.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTom Boothby just did this and here's his code. \n\n```\nvar cell_element_cache = [];\nfunction get_cell2(id) {\n   var v = cell_element_cache[id];\n   if(v == undefined)\n       v = cell_element_cache[id] = get_cell(id)\n   return v;\n}\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2887\n\n",
+    "closed_at": "2008-04-12T09:58:26Z",
     "created_at": "2008-04-12T00:20:11Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- greatly optimize by implementing a cached version of get_element",
+    "title": "[with patch; positive review] notebook -- greatly optimize something in the notebook by implementing a cached version of get_element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2887",
     "user": "https://github.com/williamstein"

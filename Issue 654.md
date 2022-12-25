@@ -1,15 +1,16 @@
-# Issue 654: [with patch] all callgrind support for vagrinding sage
+# Issue 654: [with patch] add callgrind support for vagrinding sage
 
 archive/issues_000654.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCallgrind is quite usefull and was the only of the four major valgrind tools not yet supported. The patch at \n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-add-callgrind-support.patch\n\nchanges that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/654\n\n",
+    "closed_at": "2007-09-14T18:56:47Z",
     "created_at": "2007-09-14T06:30:01Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "[with patch] all callgrind support for vagrinding sage",
+    "title": "[with patch] add callgrind support for vagrinding sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/654",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

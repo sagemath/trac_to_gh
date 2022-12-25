@@ -1,17 +1,18 @@
-# Issue 1774: potential very serious problems with SEA and PARI-2.3.3
+# Issue 1774: [with patch] potential very serious problems with SEA and PARI-2.3.3
 
 archive/issues_001774.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI just received this off-list from Bill Alombert:\n\n```\nAs you much probably already now, we released PARI/GP 2.3.3 in December.\n\nFurthermore, I started to review the GP script for SEA and we fixed\nseveral problems that could lead to wrong results being returned,\nso I would suggest you update the copy in SAGE to the current CVS\nversion of SEA.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1774\n\n",
+    "closed_at": "2008-01-15T19:46:26Z",
     "created_at": "2008-01-14T06:14:31Z",
     "labels": [
         "component: number theory",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "potential very serious problems with SEA and PARI-2.3.3",
+    "title": "[with patch] potential very serious problems with SEA and PARI-2.3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1774",
     "user": "https://github.com/williamstein"

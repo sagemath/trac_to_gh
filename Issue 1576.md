@@ -1,21 +1,22 @@
-# Issue 1576: implicit multiplication -- sage needs to have *some* way to do this (even if not by default)
+# Issue 1576: [with patch; very positive review] implicit multiplication -- sage needs to have *some* way to do this (even if not by default)
 
 archive/issues_001576.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere are some examples that should probably work (from somebody named amscopub-travel)\n\nAs per an irc conversation last week, here is a list of math\nexpressions using implicit multiplication. Sorry for the delay:\n\n```\na b c(a^2 + b^2 + c^2)\na b + c^2 == y\n(z/(2sin(y z/55))+y+x)^(z/(2sin(y z/55))+y+x)\n2(x/2)^2+4(2x)^2\n0==-16x^2+48x\n(x+2)(x-1)\nx^2-4x+4\n2(x+3)(x-4)\n2x^2-2x-25<=0\n-16x^2+132x\n2(x+3)(x-4)\nx^2-5x+4\n3(x-5)(x-5)\n(x-1)(x-2)x\n(a-b)(a-b)(a-b)\n\nTake any usual python expression and drop the multiplication operator\n(or really make it *optional*). So for example, 2*x would be 2x.\nHowever, when ambiguity would result in variable names, use * or a\nspace. For example, a*b*c would be a b c (to distinguish from the\nvariable \"abc\").\n```\n\nA first version of this could simply be a function\n\n```\n  implicit_mul\n```\nthat takes a string as input, and outputs \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1576\n\n",
+    "body": "Assignee: @robertwb\n\nHere are some examples that should probably work (from somebody named amscopub-travel)\n\nAs per an irc conversation last week, here is a list of math\nexpressions using implicit multiplication. Sorry for the delay:\n\n```\na b c(a^2 + b^2 + c^2)\na b + c^2 == y\n(z/(2sin(y z/55))+y+x)^(z/(2sin(y z/55))+y+x)\n2(x/2)^2+4(2x)^2\n0==-16x^2+48x\n(x+2)(x-1)\nx^2-4x+4\n2(x+3)(x-4)\n2x^2-2x-25<=0\n-16x^2+132x\n2(x+3)(x-4)\nx^2-5x+4\n3(x-5)(x-5)\n(x-1)(x-2)x\n(a-b)(a-b)(a-b)\n\nTake any usual python expression and drop the multiplication operator\n(or really make it *optional*). So for example, 2*x would be 2x.\nHowever, when ambiguity would result in variable names, use * or a\nspace. For example, a*b*c would be a b c (to distinguish from the\nvariable \"abc\").\n```\n\nA first version of this could simply be a function\n\n```\n  implicit_mul\n```\nthat takes a string as input, and outputs \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1576\n\n",
+    "closed_at": "2008-01-04T21:30:47Z",
     "created_at": "2007-12-21T00:18:46Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "implicit multiplication -- sage needs to have *some* way to do this (even if not by default)",
+    "title": "[with patch; very positive review] implicit multiplication -- sage needs to have *some* way to do this (even if not by default)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1576",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Here are some examples that should probably work (from somebody named amscopub-travel)
 

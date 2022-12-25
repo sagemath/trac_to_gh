@@ -1,9 +1,10 @@
-# Issue 3779: inconsistency for variables method, leads to errors in differentiation
+# Issue 3779: [with patch, positive review] inconsistency for variables method, leads to errors in differentiation
 
 archive/issues_003779.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n```\n\nHi William:\n\nI was running Sage 3.0.2 on Linux when the error occurred.  Just now i\nupgraded to 'sage-3.0.6-i686-Linux-debian-intel' without problems, ran\nthe same code (in a notebook and on the command line), and got the\nsame error.  Hmm, i don't understand why Sage can do 'diff(f*SR(2),x)'\nbut not 'diff(f*SR(1),x)'.\n\nAlex\n```\n\nThis boils down to the fact that some symbolic objects take an extra argument in their `variables` method. It is unclear what the meaning of this argument is (couldn't find any examples) and if it should be removed, or added, to make things consistent. (I'd guess removed, but I don't want to break things.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/3779\n\n",
+    "body": "Assignee: @mwhansen\n\n```\n\nHi William:\n\nI was running Sage 3.0.2 on Linux when the error occurred.  Just now i\nupgraded to 'sage-3.0.6-i686-Linux-debian-intel' without problems, ran\nthe same code (in a notebook and on the command line), and got the\nsame error.  Hmm, i don't understand why Sage can do 'diff(f*SR(2),x)'\nbut not 'diff(f*SR(1),x)'.\n\nAlex\n```\n\nThis boils down to the fact that some symbolic objects take an extra argument in their `variables` method. It is unclear what the meaning of this argument is (couldn't find any examples) and if it should be removed, or added, to make things consistent. (I'd guess removed, but I don't want to break things.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/3779\n\n",
+    "closed_at": "2008-08-10T06:33:25Z",
     "created_at": "2008-08-06T04:29:22Z",
     "labels": [
         "component: calculus",
@@ -11,13 +12,13 @@ archive/issues_003779.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "inconsistency for variables method, leads to errors in differentiation",
+    "title": "[with patch, positive review] inconsistency for variables method, leads to errors in differentiation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3779",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @garyfurnish
+Assignee: @mwhansen
 
 ```
 

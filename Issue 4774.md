@@ -1,21 +1,23 @@
-# Issue 4774: Upgrade matplotlib to 0.98.4
+# Issue 4774: [with patch and with spkg, positive review] Upgrade matplotlib to 0.98.5.3-svn6910
 
 archive/issues_004774.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ekirkman @mwhansen\n\nNice things include very nice arrow functionality, new legend functionality, and a fill_between keyword:\n\nhttp://matplotlib.sourceforge.net/users/whats_new.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4774\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  ekirkman @mwhansen\n\nNice things include very nice arrow functionality, new legend functionality, and a fill_between keyword:\n\nhttp://matplotlib.sourceforge.net/users/whats_new.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4774\n\n",
+    "closed_at": "2009-02-14T12:55:03Z",
     "created_at": "2008-12-12T21:47:52Z",
     "labels": [
-        "component: algebra"
+        "component: packages: standard",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Upgrade matplotlib to 0.98.4",
+    "title": "[with patch and with spkg, positive review] Upgrade matplotlib to 0.98.5.3-svn6910",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4774",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tbd
+Assignee: @jasongrout
 
 CC:  ekirkman @mwhansen
 

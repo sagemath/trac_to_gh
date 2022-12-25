@@ -1,15 +1,16 @@
-# Issue 7634: switch default Sage graphs over to c_graph
+# Issue 7634: switch default Sage graphs over to c_graph, and split up graph.py and graph_generators.py
 
 archive/issues_007634.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout\n\nThis is currently under discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5/c584929f270b2de3\n\nI realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:\n\nBEFORE:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [113.1 s]\n```\nAFTER:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [78.5 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7634\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout\n\nThis is currently under discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5\n\nI realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:\n\nBEFORE:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n [113.1 s]\n```\nAFTER:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n [78.5 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7634\n\n",
+    "closed_at": "2010-01-13T04:35:52Z",
     "created_at": "2009-12-09T02:07:02Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "switch default Sage graphs over to c_graph",
+    "title": "switch default Sage graphs over to c_graph, and split up graph.py and graph_generators.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7634",
     "user": "https://github.com/rlmill"
@@ -21,7 +22,7 @@ CC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout
 
 This is currently under discussion here:
 
-http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5/c584929f270b2de3
+http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5
 
 I realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:
 
@@ -29,13 +30,13 @@ BEFORE:
 
 ```
 sage -t  "devel/sage-main/sage/graphs/graph.py"             
-	 [113.1 s]
+ [113.1 s]
 ```
 AFTER:
 
 ```
 sage -t  "devel/sage-main/sage/graphs/graph.py"             
-	 [78.5 s]
+ [78.5 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7634

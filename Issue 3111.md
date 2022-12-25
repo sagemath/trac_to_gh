@@ -1,16 +1,18 @@
-# Issue 3111: sage's new baby-step giant step evidently needs additional polish
+# Issue 3111: [with new patches, with positive review]  Two bug fixes for elliptic curve abelian_group()
 
 archive/issues_003111.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nPaste this code into a Sage session:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(10000):\n    if p != 389:\n       try:\n           G = E.change_ring(GF(p)).abelian_group()\n       except Exception, msg:\n           print \"p = %s fails\"%p\n           print msg\n```\n\nThe output varies on run and computer.  Typical output looks like this:\n\n```\np = 7 fails\nNo solution in bsgs()\np = 1901 fails\n\np = 4273 fails\n\np = 5101 fails\n\np = 7177 fails\n\np = 7433 fails\n\np = 9013 fails\n\np = 9049 fails\n\np = 9749 fails\n```\n\nThe actual failures are assertion failures in the baby-step giant-step implementation.\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/3111\n\n",
+    "closed_at": "2008-06-04T18:54:32Z",
     "created_at": "2008-05-06T16:07:05Z",
     "labels": [
         "component: number theory",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "sage's new baby-step giant step evidently needs additional polish",
+    "title": "[with new patches, with positive review]  Two bug fixes for elliptic curve abelian_group()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3111",
     "user": "https://github.com/williamstein"

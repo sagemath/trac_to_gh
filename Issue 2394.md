@@ -1,16 +1,17 @@
-# Issue 2394: Wrap Cremona's newforms class
+# Issue 2394: [with patch, positive review (issues have been addressed)] Wrap Cremona's newforms class
 
 archive/issues_002394.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWrap the newforms class in eclib\n\nIssue created by migration from https://trac.sagemath.org/ticket/2394\n\n",
+    "body": "Assignee: boothby\n\nWrap the newforms class in eclib.  Patches will depend upon an updated eclib.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2394\n\n",
+    "closed_at": "2008-04-12T00:10:46Z",
     "created_at": "2008-03-05T07:19:41Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Wrap Cremona's newforms class",
+    "title": "[with patch, positive review (issues have been addressed)] Wrap Cremona's newforms class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2394",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -18,7 +19,7 @@ archive/issues_002394.json:
 ```
 Assignee: boothby
 
-Wrap the newforms class in eclib
+Wrap the newforms class in eclib.  Patches will depend upon an updated eclib.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2394
 

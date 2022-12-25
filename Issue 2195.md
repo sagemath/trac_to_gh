@@ -3,10 +3,12 @@
 archive/issues_002195.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nJohn Cremona reported this crash:\n\n```\nsage:  E=EllipticCurve(GF(5),[1,1])\nsage:  E1=E.base_extend(GF(125,'a'))\nsage:  E2=E1.base_extend(GF(125^2,'b'))\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\nI got a backtrace for the crash, which looks like this:\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0xb7dfb8c0 (LWP 15819)]\n0xb5443782 in\n__pyx_f_4sage_5rings_19finite_field_givaro_25FiniteField_givaroElement__add_c_impl\n(__pyx_v_self=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at /home/cwitty/sage/local//include/givaro/givgfq.inl:292\n292     { _GIVARO_GFQ_ADD(r, a, b, GFqDom<TT>::_qm1,\nGFqDom<TT>::_plus1) ; return r; }\n(gdb) bt\n#0  0xb5443782 in\n__pyx_f_4sage_5rings_19finite_field_givaro_25FiniteField_givaroElement__add_c_impl\n(__pyx_v_self=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at /home/cwitty/sage/local//include/givaro/givgfq.inl:292\n#1  0xb71eac7f in\n__pyx_pf_4sage_9structure_7element_13ModuleElement___add__ (\n    __pyx_v_left=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at sage/structure/element.c:15976\n#2  0x0805ce33 in binary_op1 (v=0x9e10d74, w=0xbfb53d64, op_slot=0)\n    at Objects/abstract.c:398\n#3  0x0805d310 in PyNumber_Add (v=0x9e10d74, w=0x9e10f7c)\n    at Objects/abstract.c:638 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2195\n\n",
+    "body": "Assignee: @ClementPernet\n\nJohn Cremona reported this crash:\n\n```\nsage:  E=EllipticCurve(GF(5),[1,1])\nsage:  E1=E.base_extend(GF(125,'a'))\nsage:  E2=E1.base_extend(GF(125^2,'b'))\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\nI got a backtrace for the crash, which looks like this:\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0xb7dfb8c0 (LWP 15819)]\n0xb5443782 in\n__pyx_f_4sage_5rings_19finite_field_givaro_25FiniteField_givaroElement__add_c_impl\n(__pyx_v_self=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at /home/cwitty/sage/local//include/givaro/givgfq.inl:292\n292     { _GIVARO_GFQ_ADD(r, a, b, GFqDom<TT>::_qm1,\nGFqDom<TT>::_plus1) ; return r; }\n(gdb) bt\n#0  0xb5443782 in\n__pyx_f_4sage_5rings_19finite_field_givaro_25FiniteField_givaroElement__add_c_impl\n(__pyx_v_self=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at /home/cwitty/sage/local//include/givaro/givgfq.inl:292\n#1  0xb71eac7f in\n__pyx_pf_4sage_9structure_7element_13ModuleElement___add__ (\n    __pyx_v_left=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at sage/structure/element.c:15976\n#2  0x0805ce33 in binary_op1 (v=0x9e10d74, w=0xbfb53d64, op_slot=0)\n    at Objects/abstract.c:398\n#3  0x0805d310 in PyNumber_Add (v=0x9e10d74, w=0x9e10f7c)\n    at Objects/abstract.c:638 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2195\n\n",
+    "closed_at": "2008-04-14T20:53:54Z",
     "created_at": "2008-02-17T18:57:35Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: finite rings",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
@@ -16,7 +18,7 @@ archive/issues_002195.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: somebody
+Assignee: @ClementPernet
 
 John Cremona reported this crash:
 

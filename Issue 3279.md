@@ -1,9 +1,10 @@
-# Issue 3279: Sage 3.0.2.rc0: Copy dsage_* scripts from the scrips.spkg
+# Issue 3279: [with patch, positive review] Sage 3.0.2.rc0: Copy dsage_* scripts from the scrips.spkg
 
 archive/issues_003279.json:
 ```json
 {
-    "body": "Assignee: failure\n\nDue to a bug not caught in #3097 we end up with an inconsistent repo in $SAGE_LOCAL/bin:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/local/bin$ hg status\n! dsage_setup.py\n! dsage_worker.py\n```\nThe files are in the scripts.spkg:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/spkg/standard/sage_scripts-3.0.2.rc0$ ls -al dsage_*\n-rwxr-xr-x 1 mabshoff 1090  7479 2008-05-22 23:19 dsage_setup.py\n-rwxr-xr-x 1 mabshoff 1090 35459 2008-05-22 23:19 dsage_worker.py\n```\nWhen those two scripts are missing the DSage tests just hang.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3279\n\n",
+    "body": "Assignee: mabshoff\n\nDue to a bug not caught in #3097 we end up with an inconsistent repo in $SAGE_LOCAL/bin:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/local/bin$ hg status\n! dsage_setup.py\n! dsage_worker.py\n```\nThe files are in the scripts.spkg:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/spkg/standard/sage_scripts-3.0.2.rc0$ ls -al dsage_*\n-rwxr-xr-x 1 mabshoff 1090  7479 2008-05-22 23:19 dsage_setup.py\n-rwxr-xr-x 1 mabshoff 1090 35459 2008-05-22 23:19 dsage_worker.py\n```\nWhen those two scripts are missing the DSage tests just hang.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3279\n\n",
+    "closed_at": "2008-05-23T16:41:46Z",
     "created_at": "2008-05-23T15:15:55Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_003279.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Sage 3.0.2.rc0: Copy dsage_* scripts from the scrips.spkg",
+    "title": "[with patch, positive review] Sage 3.0.2.rc0: Copy dsage_* scripts from the scrips.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3279",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 Due to a bug not caught in #3097 we end up with an inconsistent repo in $SAGE_LOCAL/bin:
 

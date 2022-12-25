@@ -1,22 +1,23 @@
-# Issue 3547: create a polygon3d function
+# Issue 3547: [with patch; positive review] create a polygon3d function
 
 archive/issues_003547.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should be the 3d analogue of the polygon function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3547\n\n",
+    "body": "Assignee: abergeron\n\nThis should be the 3d analogue of the polygon function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3547\n\n",
+    "closed_at": "2009-01-28T16:17:32Z",
     "created_at": "2008-07-03T21:28:47Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "create a polygon3d function",
+    "title": "[with patch; positive review] create a polygon3d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3547",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: abergeron
 
 This should be the 3d analogue of the polygon function.
 

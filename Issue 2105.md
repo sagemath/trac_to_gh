@@ -1,22 +1,23 @@
-# Issue 2105: Constructor for ntl.GF2X polynomials does not take Polynomials over  GF(2) as advertised by docstring
+# Issue 2105: [with patch, positive review] Constructor for ntl.GF2X polynomials does not take Polynomials over GF(2)
 
 archive/issues_002105.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nMarshall Buck on [sage-support] writes:\n\n```\nsage: R.<x> = GF(2)[]\nsage: f = x^5+x^2+1\nsage: fx = ntl.GF2X(f)\n```\ngives error:\n\n```\nTraceback (most recent call last):    fx\n  File \"ntl_GF2X.pyx\", line 141, in\nsage.libs.ntl.ntl_GF2X.ntl_GF2X.__init__\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute '_Polynomial_dense_mod_n__poly'\n```\n\n`fx = ntl.GF2X(f.list())` works, as well as `fx = ntl.GF2X(f.ntl_ZZ_pX())`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2105\n\n",
+    "body": "Assignee: @malb\n\nMarshall Buck on [sage-support] writes:\n\n```\nsage: R.<x> = GF(2)[]\nsage: f = x^5+x^2+1\nsage: fx = ntl.GF2X(f)\n```\ngives error:\n\n```\nTraceback (most recent call last):    fx\n  File \"ntl_GF2X.pyx\", line 141, in\nsage.libs.ntl.ntl_GF2X.ntl_GF2X.__init__\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute '_Polynomial_dense_mod_n__poly'\n```\n\n`fx = ntl.GF2X(f.list())` works, as well as `fx = ntl.GF2X(f.ntl_ZZ_pX())`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2105\n\n",
+    "closed_at": "2008-02-28T00:06:04Z",
     "created_at": "2008-02-08T09:42:46Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Constructor for ntl.GF2X polynomials does not take Polynomials over  GF(2) as advertised by docstring",
+    "title": "[with patch, positive review] Constructor for ntl.GF2X polynomials does not take Polynomials over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2105",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 Marshall Buck on [sage-support] writes:
 

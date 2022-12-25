@@ -1,9 +1,10 @@
-# Issue 5593: [with patch; needs review or throwing away] CremonaDB.conductor_range does not give a Python style range
+# Issue 5593: [with patch; positive review] CremonaDB.conductor_range does not give a Python style range
 
 archive/issues_005593.json:
 ```json
 {
     "body": "Assignee: @nbruin\n\nCremonaDB().conductor_range() gives an inclusive upper bound, so that\nsrange(*CremonaDB().conductor_range()) may miss a conductor.\n\nFix attached\n\nIssue created by migration from https://trac.sagemath.org/ticket/5593\n\n",
+    "closed_at": "2009-03-23T21:17:10Z",
     "created_at": "2009-03-23T19:02:14Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_005593.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review or throwing away] CremonaDB.conductor_range does not give a Python style range",
+    "title": "[with patch; positive review] CremonaDB.conductor_range does not give a Python style range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5593",
     "user": "https://github.com/nbruin"

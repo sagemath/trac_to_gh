@@ -3,7 +3,8 @@
 archive/issues_009636.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime @robertwb\n\nThe output from print() functions in libpari is directly written to stdout and is not caught by Sage.  For example, the following doctest fails:\n\n```\ndef printhello():\n    \"\"\"\n    sage: printhello()\n    hello\n    \"\"\"\n    pari('print(\"hello\")')\n```\nIt gives\n\n```\nFile \"/home/jdemeyer/paritest.sage\", line 3:\n    sage: printhello()\nExpected:\n    hello\nGot nothing\n```\n\nLuckily, libpari provides ways to redirect the output.  There should a small Cython wrapper to direct the PARI output to sys.stdout.write().\n\nI will try to implement this (using #9343 as starting point). -- Jeroen Demeyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9636\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @robertwb\n\nThe output from `print()` functions in `libpari` is directly written to `stdout` and is not caught by Sage.  For example, the following doctest fails:\n\n```\ndef printhello():\n    \"\"\"\n    sage: printhello()\n    hello\n    \"\"\"\n    pari('print(\"hello\")')\n```\nIt gives\n\n```\nFile \"/home/jdemeyer/paritest.sage\", line 3:\n    sage: printhello()\nExpected:\n    hello\nGot nothing\n```\n\nLuckily, `libpari` provides ways to redirect the output.  There should be a small Cython wrapper to direct the PARI output to Python's `sys.stdout.write()`.\n\nDependencies: #9661, #9343\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9636\n\n",
+    "closed_at": "2010-09-10T10:44:51Z",
     "created_at": "2010-07-29T07:56:00Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 CC:  @nexttime @robertwb
 
-The output from print() functions in libpari is directly written to stdout and is not caught by Sage.  For example, the following doctest fails:
+The output from `print()` functions in `libpari` is directly written to `stdout` and is not caught by Sage.  For example, the following doctest fails:
 
 ```
 def printhello():
@@ -40,9 +41,10 @@ Expected:
 Got nothing
 ```
 
-Luckily, libpari provides ways to redirect the output.  There should a small Cython wrapper to direct the PARI output to sys.stdout.write().
+Luckily, `libpari` provides ways to redirect the output.  There should be a small Cython wrapper to direct the PARI output to Python's `sys.stdout.write()`.
 
-I will try to implement this (using #9343 as starting point). -- Jeroen Demeyer
+Dependencies: #9661, #9343
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9636
 

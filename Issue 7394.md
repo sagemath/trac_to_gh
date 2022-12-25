@@ -3,10 +3,11 @@
 archive/issues_007394.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nmultiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:\n\n```\n2*sqrt(e)\n```\n\ntested with source compile i686 and sagenb.org\n\nIssue created by migration from https://trac.sagemath.org/ticket/7394\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nmultiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:\n\n```\n2*sqrt(e)\n```\n\ntested with source compile i686 and sagenb.org\n\nIssue created by migration from https://trac.sagemath.org/ticket/7394\n\n",
+    "closed_at": "2009-11-22T18:02:37Z",
     "created_at": "2009-11-05T07:07:06Z",
     "labels": [
-        "component: algebra",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_007394.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/edrex"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  @jasongrout
 

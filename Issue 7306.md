@@ -4,6 +4,7 @@ archive/issues_007306.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nWhile working on a different graph generator, I noticed that the second example for the new Generalized Petersen Graph was not being formatted right in the HTML docs.  And in the stock 4.2 docs it is also not coming through right.\n\nI'm not sure why it wasn't working, but a bit of editing seems to have set it right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7306\n\n",
+    "closed_at": "2009-10-31T15:54:39Z",
     "created_at": "2009-10-26T04:49:51Z",
     "labels": [
         "component: graph theory",

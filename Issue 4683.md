@@ -4,6 +4,7 @@ archive/issues_004683.json:
 ```json
 {
     "body": "Assignee: somebody\n\nUsing sage 3.2 (compiled from sources) on a 32-bit Core Duo machine running Debian Etch,\nwhen performing\n\n```\ngeorg@HILBERT:~/Daten/Sync/Phd/Code/sde$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: v = [CDF(i)^2 for n in range(50000)]\n```\nmemory consumption increases about 70Mb which each command (at least on my machine),\nthis does not happen if one writes\n\n```\nsage: v = [CDF(i^2.) for n in range(50000)]\n```\n, however, results are the same,\n\nGeorg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4683\n\n",
+    "closed_at": "2010-01-17T23:19:09Z",
     "created_at": "2008-12-03T01:12:51Z",
     "labels": [
         "component: basic arithmetic",

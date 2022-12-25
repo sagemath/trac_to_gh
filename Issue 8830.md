@@ -3,7 +3,8 @@
 archive/issues_008830.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nPer the discussion on #8192, the polybori spkg there caused crashes and valgrind errors on exit.\n\nThe new spkg to fix this created by Alexander Dreyer and Minh Nguyen is at:\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/polybori/polybori-0.6.4.p0.spkg\n\nI tested it, and it gets rid of the valgrind errors and crashes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8830\n\n",
+    "body": "Assignee: tbd\n\nPer the discussion on #8192, the polybori spkg there caused crashes and valgrind errors on exit.\n\nThe new spkg to fix this created by Alexander Dreyer and Minh Van Nguyen is at:\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/polybori/polybori-0.6.4.p0.spkg\n\nI tested it, and it gets rid of the valgrind errors and crashes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8830\n\n",
+    "closed_at": "2010-05-01T05:02:58Z",
     "created_at": "2010-04-30T12:53:29Z",
     "labels": [
         "component: packages: standard",
@@ -21,7 +22,7 @@ Assignee: tbd
 
 Per the discussion on #8192, the polybori spkg there caused crashes and valgrind errors on exit.
 
-The new spkg to fix this created by Alexander Dreyer and Minh Nguyen is at:
+The new spkg to fix this created by Alexander Dreyer and Minh Van Nguyen is at:
 
 http://sage.math.washington.edu/home/mvngu/spkg/standard/polybori/polybori-0.6.4.p0.spkg
 

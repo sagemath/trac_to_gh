@@ -3,7 +3,8 @@
 archive/issues_001195.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCurrently, the method to obtain the length of a list or sequence is:\n\n{{my_list=Sequence([1,2,3,4])\nlen(my_list)}}\n\nThis is not consistent with either MAGMA or PARI, and there is no method attached to the sequence or list which gives the length.\n\nI would like to suggest that a method be added so that\n\n{{my_list.length()}}\n\nwould give the answer ``4''.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1195\n\n",
+    "body": "Assignee: cwitty\n\nCurrently, the method to obtain the length of a list or sequence is:\n\n```\nmy_list=Sequence([1,2,3,4])\nlen(my_list)\n```\n\nThis is not consistent with either MAGMA or PARI, and there is no method attached to the sequence or list which gives the length.\n\nI would like to suggest that a method be added so that\n\n```\nmy_list.length()\n```\n\nwould give the answer ``4''.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1195\n\n",
+    "closed_at": "2008-02-27T12:19:20Z",
     "created_at": "2007-11-17T23:01:18Z",
     "labels": [
         "component: misc",
@@ -20,14 +21,18 @@ Assignee: cwitty
 
 Currently, the method to obtain the length of a list or sequence is:
 
-{{my_list=Sequence([1,2,3,4])
-len(my_list)}}
+```
+my_list=Sequence([1,2,3,4])
+len(my_list)
+```
 
 This is not consistent with either MAGMA or PARI, and there is no method attached to the sequence or list which gives the length.
 
 I would like to suggest that a method be added so that
 
-{{my_list.length()}}
+```
+my_list.length()
+```
 
 would give the answer ``4''.
 

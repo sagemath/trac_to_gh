@@ -1,15 +1,16 @@
-# Issue 4420: [with patch, needs review] sort Gröbner bases
+# Issue 4420: [with patch, positive review] sort Gröbner bases
 
 archive/issues_004420.json:
 ```json
 {
     "body": "Assignee: @malb\n\nTo make the answer returned by `Ideal.groebner_basis` truely canonical, sort it. The attach patch also fixes some doctest failures in `rings/polynomial` and replaces #4035.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4420\n\n",
+    "closed_at": "2008-11-02T16:15:05Z",
     "created_at": "2008-11-02T01:41:57Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] sort Gr\u00f6bner bases",
+    "title": "[with patch, positive review] sort Gr\u00f6bner bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4420",
     "user": "https://github.com/malb"

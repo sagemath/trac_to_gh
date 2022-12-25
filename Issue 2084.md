@@ -3,10 +3,12 @@
 archive/issues_002084.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @roed314\n\nThis should probably be factored out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2084\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314\n\nThis should probably be factored out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2084\n\n",
+    "closed_at": "2010-01-24T12:45:26Z",
     "created_at": "2008-02-07T10:40:41Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: padics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
@@ -16,7 +18,7 @@ archive/issues_002084.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @roed314
 
 CC:  @roed314
 

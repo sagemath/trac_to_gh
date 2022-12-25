@@ -4,6 +4,7 @@ archive/issues_000441.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIntegrate valgrind into sage so people can conveniently attempt to debug. This requires Sage's python to be build with the configure flag \"--without-pymalloc\" to prevent valgrind from reporting false positives because pymalloc mallocs large chunks of memory and returns fractions of the memory when the python interpreter requests memory.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/441\n\n",
+    "closed_at": "2007-08-19T07:04:27Z",
     "created_at": "2007-08-18T18:50:23Z",
     "labels": [
         "component: packages: standard",

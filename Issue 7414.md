@@ -1,16 +1,17 @@
-# Issue 7414: improve {from,to}_inversion_vector
+# Issue 7414: improve {from,to}_inversion_vector and to_lehmer_code
 
 archive/issues_007414.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe method to_inversion_vector can be greatly improved by using a divide-and-conquer strategy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7414\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: permutations, inversion vector, lehmer code\n\nThe method to_inversion_vector can be greatly improved by using a divide-and-conquer strategy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7414\n\n",
+    "closed_at": "2009-11-12T06:40:17Z",
     "created_at": "2009-11-08T20:31:45Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "improve {from,to}_inversion_vector",
+    "title": "improve {from,to}_inversion_vector and to_lehmer_code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7414",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
@@ -19,6 +20,8 @@ archive/issues_007414.json:
 Assignee: @mwhansen
 
 CC:  sage-combinat
+
+Keywords: permutations, inversion vector, lehmer code
 
 The method to_inversion_vector can be greatly improved by using a divide-and-conquer strategy.
 

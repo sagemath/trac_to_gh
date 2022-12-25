@@ -1,15 +1,16 @@
-# Issue 9599: re-merge #1396 and insure that Sage starts on t2.math
+# Issue 9599: re-merge #1396 and insure that Sage starts + passes doc tests on t2.math
 
 archive/issues_009599.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @wjp simonking @malb @jhpalmieri\n\nA patch at #1396 was merged in 4.5.2.alpha0, but that caused Sage to segfault when starting on t2.math. That ticket was backed out in 4.5.2.alpha1, and should be re-merged. See #9583 for discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9599\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @wjp simonking @malb @jhpalmieri\n\nA patch at #1396 was merged in 4.5.2.alpha0, but that caused Sage to segfault when starting on t2.math. That ticket was backed out in 4.5.2.alpha1, and should be re-merged. See #9583 for discussion.\n\nIn order to be of help for anyone looking at this ticket in some months or years time, the following description of t2.math may be useful.\n\n## Hardware and software configuration of t2.math.washington.edu\n* [Sun SPARC Enterprise T5240 Server](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm) \n* 2 x 1167 MHz [UltraSPARC T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors. (16 cores and 128 hardware threads in total). \n* 32 GB RAM\n* No swap devices configured. \n* Solaris 10 update 7 (5/09)\n* gcc 4.4.1 configured to use the Sun linker and Sun assembler. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9599\n\n",
+    "closed_at": "2011-01-27T13:14:39Z",
     "created_at": "2010-07-26T08:14:06Z",
     "labels": [
         "component: porting: solaris"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "re-merge #1396 and insure that Sage starts on t2.math",
+    "title": "re-merge #1396 and insure that Sage starts + passes doc tests on t2.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9599",
     "user": "https://github.com/dandrake"
@@ -20,6 +21,18 @@ Assignee: drkirkby
 CC:  @wjp simonking @malb @jhpalmieri
 
 A patch at #1396 was merged in 4.5.2.alpha0, but that caused Sage to segfault when starting on t2.math. That ticket was backed out in 4.5.2.alpha1, and should be re-merged. See #9583 for discussion.
+
+In order to be of help for anyone looking at this ticket in some months or years time, the following description of t2.math may be useful.
+
+## Hardware and software configuration of t2.math.washington.edu
+* [Sun SPARC Enterprise T5240 Server](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm) 
+* 2 x 1167 MHz [UltraSPARC T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors. (16 cores and 128 hardware threads in total). 
+* 32 GB RAM
+* No swap devices configured. 
+* Solaris 10 update 7 (5/09)
+* gcc 4.4.1 configured to use the Sun linker and Sun assembler. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9599
 

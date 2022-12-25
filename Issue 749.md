@@ -1,21 +1,22 @@
-# Issue 749: graphs: enum() functionality duplicated in relabel()
+# Issue 749: [with patch, is fixed] graphs: enum() functionality duplicated in relabel()
 
 archive/issues_000749.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe enum() code is duplicated in relabel() for the quick option.  It sure would be nice to factor that out so that the enum() code was all in one place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/749\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nThe enum() code is duplicated in relabel() for the quick option.  It sure would be nice to factor that out so that the enum() code was all in one place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/749\n\n",
+    "closed_at": "2007-10-27T04:52:27Z",
     "created_at": "2007-09-24T22:02:34Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "graphs: enum() functionality duplicated in relabel()",
+    "title": "[with patch, is fixed] graphs: enum() functionality duplicated in relabel()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/749",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @rlmill
 
 Keywords: graphs
 

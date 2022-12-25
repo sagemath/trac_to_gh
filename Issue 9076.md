@@ -3,10 +3,11 @@
 archive/issues_009076.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  sage-combinat @kcrisman @jasongrout\n\nKeywords: plot, arc, ellipse, circle\n\nImplementation of arc plot \n\nThis just wraps the matplotlib functionnality Arc\nhttp://matplotlib.sourceforge.net/api/artist_api.html#matplotlib.patches.Arc\n\nthere is not yet fill capabilities (due to matplotlib).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9076\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat @kcrisman @jasongrout\n\nKeywords: plot, arc, ellipse, circle\n\nImplementation of arc plot \n\nThis just wraps the matplotlib functionnality Arc\nhttp://matplotlib.sourceforge.net/api/artist_api.html#matplotlib.patches.Arc\n\nThis can be reviewd together with the ticket #9203 for plotting ellipse. On the latter ticket there is an attached worksheet that does some nice pictures and performs tests for the get_minmax_data function.\n\nRk: there is not yet fill capabilities (due to matplotlib).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9076\n\n",
+    "closed_at": "2010-09-15T10:40:26Z",
     "created_at": "2010-05-28T20:12:41Z",
     "labels": [
-        "component: geometry",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -27,7 +28,9 @@ Implementation of arc plot
 This just wraps the matplotlib functionnality Arc
 http://matplotlib.sourceforge.net/api/artist_api.html#matplotlib.patches.Arc
 
-there is not yet fill capabilities (due to matplotlib).
+This can be reviewd together with the ticket #9203 for plotting ellipse. On the latter ticket there is an attached worksheet that does some nice pictures and performs tests for the get_minmax_data function.
+
+Rk: there is not yet fill capabilities (due to matplotlib).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9076
 

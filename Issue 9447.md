@@ -3,10 +3,11 @@
 archive/issues_009447.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n312\n\n\nThis number should be much lower.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9447\n\n",
+    "body": "Assignee: @jasongrout\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n312\n\n\nThis number should be much lower.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9447\n\n",
+    "closed_at": "2013-04-03T15:12:26Z",
     "created_at": "2010-07-07T09:48:31Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009447.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
-Assignee: @aghitza
+Assignee: @jasongrout
 
 sage: len(search_src("except:",interact=False).splitlines())
 312

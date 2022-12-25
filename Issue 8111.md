@@ -3,11 +3,12 @@
 archive/issues_008111.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). \n\n```\nK.<k>= QQ[];\nprint gcd(64,256)\nprint gcd(K(64),K(256))\nprint gcd(64*k^2+128,64*k^3+256)\nfrac = (64*k^2+128)/(64*k^3+256)\nfrac.reduce()\nprint frac\n```\ngives\n\n```\n64\n1\n1\n(64*k^2 + 128)/(64*k^3 + 256)\n```\nThe last line in particular is false, according to me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8111\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: sd109\n\nThe following was solved along the way. We add a doctest.\n\nThe GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). \n\n```\nK.<k>= QQ[];\nprint(gcd(64,256))\nprint(gcd(K(64),K(256)))\nprint(gcd(64*k^2+128,64*k^3+256))\nfrac = (64*k^2+128)/(64*k^3+256)\nfrac.reduce()\nprint(frac)\n```\ngives\n\n```\n64\n1\n1\n(64*k^2 + 128)/(64*k^3 + 256)\n```\nThe last line in particular is false, according to me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8111\n\n",
+    "closed_at": "2020-07-08T19:32:46Z",
     "created_at": "2010-01-28T15:04:16Z",
     "labels": [
         "component: basic arithmetic",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.2",
     "title": "gcd of rationals is trouble",
@@ -18,16 +19,20 @@ archive/issues_008111.json:
 ```
 Assignee: @aghitza
 
+Keywords: sd109
+
+The following was solved along the way. We add a doctest.
+
 The GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). 
 
 ```
 K.<k>= QQ[];
-print gcd(64,256)
-print gcd(K(64),K(256))
-print gcd(64*k^2+128,64*k^3+256)
+print(gcd(64,256))
+print(gcd(K(64),K(256)))
+print(gcd(64*k^2+128,64*k^3+256))
 frac = (64*k^2+128)/(64*k^3+256)
 frac.reduce()
-print frac
+print(frac)
 ```
 gives
 

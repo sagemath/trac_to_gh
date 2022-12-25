@@ -1,16 +1,17 @@
-# Issue 3763: [with patch, needs review] add conversions from AA/QQbar to standard types
+# Issue 3763: [with patch, with positive review] add conversions from AA/QQbar to standard types
 
 archive/issues_003763.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis was triggered by a comment from Jason Grout on IRC a couple of weeks ago.\n\nCurrently several of the conversions that \"ought to be there\", like CDF(QQbar(3)), are missing.\n\nThis patch adds conversions and tests, so that all of the conversions from AA/QQbar to float,complex,RDF,CDF,RR,CC,RIF,CIF,ZZ,QQ do the right thing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3763\n\n",
+    "closed_at": "2008-08-08T22:40:48Z",
     "created_at": "2008-08-03T00:28:15Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] add conversions from AA/QQbar to standard types",
+    "title": "[with patch, with positive review] add conversions from AA/QQbar to standard types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3763",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

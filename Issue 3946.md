@@ -1,16 +1,17 @@
-# Issue 3946: Tidier BinaryQF reductions
+# Issue 3946: [with patch; with positive review] Tidier BinaryQF reductions
 
 archive/issues_003946.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nCremona writes:\n>However, there are some things I really do not like about this implementation:\n\n\n>   1. self.reduce() computes (if necessary) caches and returns the reduced form equivalent to        \n  \n>self. I would expect it to change self into the reduced form, and have a different function   \n>self.reduced_form() to do what this function does. \n\n\n>  2. The function is_reduced() actually reduces self and tests if the result is the same as \n  \n>self. This is potentially very expensive! To test is_reduced() you should just test that the \n>usual inequalities are satisfied. \n\n\nI have attached a patch which I believe fixes these issues. I have also altered the reduction methods to throw more enlightening exceptions when given negative definite forms and indefinite forms.\n\nIt would be nice to implement the the handling of indefinite and negative definite forms at some point in the future, however I don't think Pari can deal with negative definite forms currently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3946\n\n",
+    "closed_at": "2008-08-25T20:17:28Z",
     "created_at": "2008-08-25T02:35:02Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Tidier BinaryQF reductions",
+    "title": "[with patch; with positive review] Tidier BinaryQF reductions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3946",
     "user": "https://trac.sagemath.org/admin/accounts/users/choldsworth"

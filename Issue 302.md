@@ -1,17 +1,17 @@
-# Issue 302: Improved error reporting for notebook
+# Issue 302: Report server errors to online notebook users
 
 archive/issues_000302.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf the notebook server gets messed up, the notebook server should display a web page in place of any other pages. \n\nIssue created by migration from https://trac.sagemath.org/ticket/302\n\n",
+    "closed_at": "2008-07-04T21:40:22Z",
     "created_at": "2007-03-01T06:04:32Z",
     "labels": [
         "component: notebook",
-        "critical",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Improved error reporting for notebook",
+    "title": "Report server errors to online notebook users",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/302",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

@@ -1,23 +1,23 @@
-# Issue 467: asymptotically slow pari integer conversions
+# Issue 467: [with patch] asymptotically slow pari integer conversions
 
 archive/issues_000467.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe conversion function from PARI integers to python longs is asymptotically slow (apparantly quadratic time). This shows up when doing something like `int(some_pari_object)`. Similarly from SAGE integers to PARI integers.\n\nThere are also inconsistencies like (on my machine at home):\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n```\n\nnow see the quadratic time:\n\n```\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/467\n\n",
+    "body": "Assignee: @craigcitro\n\nThe conversion function from PARI integers to python longs is asymptotically slow (apparantly quadratic time). This shows up when doing something like `int(some_pari_object)`. Similarly from SAGE integers to PARI integers.\n\nThere are also inconsistencies like (on my machine at home):\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n```\n\nnow see the quadratic time:\n\n```\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/467\n\n",
+    "closed_at": "2007-10-13T06:40:11Z",
     "created_at": "2007-08-20T10:40:55Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "asymptotically slow pari integer conversions",
+    "title": "[with patch] asymptotically slow pari integer conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/467",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: @craigcitro
 
 The conversion function from PARI integers to python longs is asymptotically slow (apparantly quadratic time). This shows up when doing something like `int(some_pari_object)`. Similarly from SAGE integers to PARI integers.
 

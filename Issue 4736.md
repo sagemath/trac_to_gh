@@ -1,16 +1,17 @@
-# Issue 4736: The doctesting doesn't always report segfaults properly
+# Issue 4736: [with patch, positive review] The doctesting doesn't always report segfaults properly
 
 archive/issues_004736.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nWhen reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/kschur.py\"           \nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1)\n       [3.1 s]\n```\nWhen running \"-tp 8 -long\" the failure is reported as:\n\n```\n sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4736\n\n",
+    "closed_at": "2008-12-10T08:56:38Z",
     "created_at": "2008-12-07T05:46:15Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "The doctesting doesn't always report segfaults properly",
+    "title": "[with patch, positive review] The doctesting doesn't always report segfaults properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4736",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_005549.json:
 ```json
 {
     "body": "Assignee: tba\n\nAt the command line,\n\n```\nimport scipy\nscipy.sin??\n```\nfalls back to just giving the docstring (like `scipy.sin?`), plus an additional notation that says `[source file open failed]`.  In the notebook, the same thing only gives \n\n```\nNo object scipy.sin\n```\nThe notebook should fall back to ? help when ?? help fails, like the command line does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5549\n\n",
+    "closed_at": "2018-08-10T09:37:11Z",
     "created_at": "2009-03-17T14:44:44Z",
     "labels": [
         "component: documentation"

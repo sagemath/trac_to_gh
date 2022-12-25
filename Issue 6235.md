@@ -4,10 +4,11 @@ archive/issues_006235.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @nexttime @qed777 justin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6235\n\n",
+    "closed_at": "2010-10-21T10:07:34Z",
     "created_at": "2009-06-06T19:45:56Z",
     "labels": [
         "component: misc",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",

@@ -1,15 +1,16 @@
-# Issue 5600: Cleanup of integer compositions
+# Issue 5600: [with patch, positive review] Cleanup of integer compositions
 
 archive/issues_005600.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nFix  some weirdness of http://wiki.sagemath.org/combinat/Weirdness:\nSee compositions-cleanup-....-nt.patch\n\nAccept any iterable as input\nAdds concatenation of compositions\n\nIssue created by migration from https://trac.sagemath.org/ticket/5600\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nKeywords: integer compositions\n\n- Documentation improvements\n- Fixes some of http://wiki.sagemath.org/combinat/Weirdness\n- Composition(l) accepts any iterable l, and in particular a tuple\n- New functionalities:\n   - concatenation (as __add__ and sum)\n   - size\n   - fatter, finer, fatten (refinement of compositions)\n- Uses IntegerListsLex (fast iteration, ...) instead of not any better specific code\n  Note: this changes the iteration order to inverse lexicographic,\n  and iteration changes the iteration order for set partitions, skew\n  partitions, and skew tableaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5600\n\n",
+    "closed_at": "2009-08-23T01:04:10Z",
     "created_at": "2009-03-24T21:10:07Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Cleanup of integer compositions",
+    "title": "[with patch, positive review] Cleanup of integer compositions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5600",
     "user": "https://github.com/nthiery"
@@ -19,11 +20,19 @@ Assignee: @nthiery
 
 CC:  sage-combinat @jbandlow
 
-Fix  some weirdness of http://wiki.sagemath.org/combinat/Weirdness:
-See compositions-cleanup-....-nt.patch
+Keywords: integer compositions
 
-Accept any iterable as input
-Adds concatenation of compositions
+- Documentation improvements
+- Fixes some of http://wiki.sagemath.org/combinat/Weirdness
+- Composition(l) accepts any iterable l, and in particular a tuple
+- New functionalities:
+   - concatenation (as __add__ and sum)
+   - size
+   - fatter, finer, fatten (refinement of compositions)
+- Uses IntegerListsLex (fast iteration, ...) instead of not any better specific code
+  Note: this changes the iteration order to inverse lexicographic,
+  and iteration changes the iteration order for set partitions, skew
+  partitions, and skew tableaux.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5600
 

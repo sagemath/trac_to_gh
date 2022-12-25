@@ -1,15 +1,16 @@
-# Issue 4783: [with patch; needs review] email -- create an "email" command, so users can easily notify themselves when their sage programs have completed some task
+# Issue 4783: [with patch; positive review] email -- create an "email" command, so users can easily notify themselves when their sage programs have completed some task
 
 archive/issues_004783.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis was inspired by three things:\n\n1. I want a little script that will automatically email me whenever sagenb.org or any other website I manage stops responding for a certain amount of time.  \n\n2. Users every so often complain that sage.math doesn't have sendmail installed, so they can't put in code like `os.system('mail ...')`.  I.e., also, often people start a big computation, and it would be useful for them to get an email when it finishes.\n\n3. When I run the sage buildbot, it might be nice if the buildbot script could use sage to email me a summary of all failed tests (?).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4783\n\n",
+    "body": "Assignee: cwitty\n\nThis was inspired by three things:\n\n1. I want a little script that will automatically email me whenever sagenb.org or any other website I manage stops responding for a certain amount of time.  \n\n2. Users every so often complain that sage.math doesn't have sendmail installed, so they can't put in code like `os.system('mail ...')`.  I.e., also, often people start a big computation, and it would be useful for them to get an email when it finishes.\n\n3. When I run the sage buildbot, it might be nice if the buildbot script could use sage to email me a summary of all failed tests (?). \n\n4. This could be useful for creating an automatic bug reporting command, which would make it trivial for users of sage to type bug('stuff'), and have Sage send an email to sagebugs`@`gmail.com (or whatever, say) and have their remarks plus tons of internal state info sent.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4783\n\n",
+    "closed_at": "2008-12-14T05:47:20Z",
     "created_at": "2008-12-13T16:22:34Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch; needs review] email -- create an \"email\" command, so users can easily notify themselves when their sage programs have completed some task",
+    "title": "[with patch; positive review] email -- create an \"email\" command, so users can easily notify themselves when their sage programs have completed some task",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4783",
     "user": "https://github.com/williamstein"
@@ -23,7 +24,10 @@ This was inspired by three things:
 
 2. Users every so often complain that sage.math doesn't have sendmail installed, so they can't put in code like `os.system('mail ...')`.  I.e., also, often people start a big computation, and it would be useful for them to get an email when it finishes.
 
-3. When I run the sage buildbot, it might be nice if the buildbot script could use sage to email me a summary of all failed tests (?).
+3. When I run the sage buildbot, it might be nice if the buildbot script could use sage to email me a summary of all failed tests (?). 
+
+4. This could be useful for creating an automatic bug reporting command, which would make it trivial for users of sage to type bug('stuff'), and have Sage send an email to sagebugs`@`gmail.com (or whatever, say) and have their remarks plus tons of internal state info sent.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4783
 

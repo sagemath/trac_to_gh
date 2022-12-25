@@ -1,16 +1,17 @@
-# Issue 2627: Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer
+# Issue 2627: [with patch, positive review] Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer
 
 archive/issues_002627.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: gamma function, factorial\n\n`Integer(abs(gamma(n+1))) - factorial(n)` should be zero for all positive integers, but on 2.10.3, I get:\n\n```\nsage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n\n[0,\n 0,\n 0,\n 1572864,\n -29360128,\n 71303168,\n 14738784256,\n -220528115712,\n 11417398804480,\n -55923527647232]\n```\n\nI'm guessing this is due to some numerical noise. There should be some type-checking done in the gamma function.\n\nI would also like to see, for instance, gamma(1/2) return sqrt(pi) instead of a floating point number, although I think the above issue is more pressing and easier to deal with.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2627\n\n",
+    "closed_at": "2008-03-27T09:00:29Z",
     "created_at": "2008-03-21T06:59:01Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer",
+    "title": "[with patch, positive review] Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2627",
     "user": "https://github.com/dandrake"

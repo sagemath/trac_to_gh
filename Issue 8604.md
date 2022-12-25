@@ -3,7 +3,8 @@
 archive/issues_008604.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse jleroy\n\nAdd a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.\n\nIt also adds some method about left,right and bi special words:\n\n```\n    sage: f = words.FibonacciWord()[:30]\n    sage: f.number_of_left_special_factors(7)\n    8\n```\n\nThe new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8604\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse jleroy\n\nKeywords: Words, factors, enumeration\n\nAdd a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.\n\nIt also adds some method about left,right and bi special words:\n\n```\n    sage: f = words.FibonacciWord()[:30]\n    sage: f.number_of_left_special_factors(7)\n    8\n```\n\nThe new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8604\n\n",
+    "closed_at": "2010-07-21T01:43:16Z",
     "created_at": "2010-03-25T12:00:26Z",
     "labels": [
         "component: combinatorics"
@@ -18,6 +19,8 @@ archive/issues_008604.json:
 Assignee: @seblabbe
 
 CC:  abmasse jleroy
+
+Keywords: Words, factors, enumeration
 
 Add a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.
 

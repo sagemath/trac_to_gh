@@ -4,11 +4,11 @@ archive/issues_001206.json:
 ```json
 {
     "body": "Assignee: failure\n\nThe current way in which doc tests of numerical computations that produce randomish output are performed is not sufficient to actually detect regressions. \n\nCurrently if the word #random follows the test, it is run but the output is not compared, this only tests that there was no failure doing something but not that what was computed was in any way correct or what was expected.\n\nFor computations with randomish output, what should be checked is that the difference between all the floating values in what is computed and in the doc string are less than some bound 1e-8 or something, or maybe the bound should be specified, so that\n\n#random 1e-8 would check that the the computation differs from the output in the doc string by 1e-8.\n\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1206\n\n",
+    "closed_at": "2012-05-21T08:03:41Z",
     "created_at": "2007-11-19T06:42:59Z",
     "labels": [
         "component: doctest coverage",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doc testing support for numerical computations with randomish output is insufficient",

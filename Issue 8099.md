@@ -4,6 +4,7 @@ archive/issues_008099.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nWithout setting CFLAGS=-m64 globally build is 32 bit.\n\nA patch is on its way.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8099\n\n",
+    "closed_at": "2010-02-11T15:13:15Z",
     "created_at": "2010-01-27T23:19:34Z",
     "labels": [
         "component: porting: solaris",

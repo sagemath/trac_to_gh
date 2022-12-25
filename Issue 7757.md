@@ -4,6 +4,7 @@ archive/issues_007757.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere is an absolutely critical bugfix #7556 which will be in sagenb-0.4.8. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7757\n\n",
+    "closed_at": "2010-01-04T07:09:36Z",
     "created_at": "2009-12-24T06:58:31Z",
     "labels": [
         "component: notebook",

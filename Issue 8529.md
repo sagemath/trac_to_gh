@@ -3,7 +3,8 @@
 archive/issues_008529.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: plot default color\n\nWhen plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8529\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: plot default color beginner\n\nWhen plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8529\n\n",
+    "closed_at": "2010-11-01T10:05:49Z",
     "created_at": "2010-03-13T22:34:10Z",
     "labels": [
         "component: graphics",
@@ -21,7 +22,7 @@ Assignee: @williamstein
 
 CC:  @kcrisman
 
-Keywords: plot default color
+Keywords: plot default color beginner
 
 When plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.
 

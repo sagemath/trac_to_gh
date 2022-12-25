@@ -3,11 +3,11 @@
 archive/issues_008961.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @qed777 @nexttime\n\n`zope.testbrowser` is no longer needed by sagenb but is still listed as a requirement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8961\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @qed777 @nexttime\n\n`zope.testbrowser` is no longer needed by sagenb but is still listed as a requirement.\n\nThis also fixes the problem regarding the online access during install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8961\n\n",
+    "closed_at": "2010-07-11T06:06:27Z",
     "created_at": "2010-05-14T11:27:14Z",
     "labels": [
         "component: notebook",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -22,6 +22,8 @@ Assignee: jason, was
 CC:  @qed777 @nexttime
 
 `zope.testbrowser` is no longer needed by sagenb but is still listed as a requirement.
+
+This also fixes the problem regarding the online access during install.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8961
 

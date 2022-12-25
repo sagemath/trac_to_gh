@@ -1,16 +1,16 @@
-# Issue 1562: Inverse trig functions
+# Issue 1562: [with bundle] Inverse trig functions
 
 archive/issues_001562.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nImplement acot, asin, etc. in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1562\n\n",
+    "closed_at": "2007-12-21T01:40:46Z",
     "created_at": "2007-12-19T03:20:27Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "Inverse trig functions",
+    "title": "[with bundle] Inverse trig functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1562",
     "user": "https://github.com/robertwb"

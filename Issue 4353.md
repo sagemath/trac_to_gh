@@ -1,16 +1,17 @@
-# Issue 4353: [with patch, needs review] make sure garbage collection is reenabled after an exception in timeit.
+# Issue 4353: [with patch, positive review] make sure garbage collection is reenabled after an exception in timeit.
 
 archive/issues_004353.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4353\n\n",
+    "closed_at": "2008-10-26T03:18:41Z",
     "created_at": "2008-10-23T21:38:38Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] make sure garbage collection is reenabled after an exception in timeit.",
+    "title": "[with patch, positive review] make sure garbage collection is reenabled after an exception in timeit.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4353",
     "user": "https://github.com/mwhansen"

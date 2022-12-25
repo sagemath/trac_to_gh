@@ -4,6 +4,7 @@ archive/issues_009246.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nAs the subject says. This arises from this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/711e0208c01f5fe5).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9246\n\n",
+    "closed_at": "2010-07-21T10:10:21Z",
     "created_at": "2010-06-15T16:06:20Z",
     "labels": [
         "component: documentation",

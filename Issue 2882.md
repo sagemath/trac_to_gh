@@ -1,9 +1,10 @@
-# Issue 2882: resize cells on window resize
+# Issue 2882: [with patch, positive review] resize cells on window resize
 
 archive/issues_002882.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCells are often the wrong size if the window is resized.  Fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2882\n\n",
+    "closed_at": "2008-04-12T11:25:52Z",
     "created_at": "2008-04-11T22:59:11Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002882.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "resize cells on window resize",
+    "title": "[with patch, positive review] resize cells on window resize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2882",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

@@ -3,7 +3,8 @@
 archive/issues_008572.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @qed777\n\nKeywords: Poset, sphinx\n\nTry\n\n```\nPoset?\n```\nunder the console and nothing appear.\nSee\n\n```\nhttp://groups.google.com/group/sage-devel/t/b9baaa6943fc0df4\n```\nfor a discussion: It is not clear if it's a sphinx bug or a Poset doc bug. I haven't been able to reproduce it from any other file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8572\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @jhpalmieri @qed777\n\nKeywords: Poset, sphinx\n\nTry\n\n```\nPoset?\n```\nunder the console and nothing appear.\nSee\nhttp://groups.google.com/group/sage-devel/t/b9baaa6943fc0df4\nfor a discussion. Finally, it was a bug in poset but we should investigate further to let sphinx raise proper warning in such situation. I'm opening a ticket for this (see #8575).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8572\n\n",
+    "closed_at": "2010-04-16T18:48:07Z",
     "created_at": "2010-03-21T19:52:16Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_008572.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: mvngu
+Assignee: @hivert
 
 CC:  @jhpalmieri @qed777
 
@@ -29,11 +30,9 @@ Poset?
 ```
 under the console and nothing appear.
 See
-
-```
 http://groups.google.com/group/sage-devel/t/b9baaa6943fc0df4
-```
-for a discussion: It is not clear if it's a sphinx bug or a Poset doc bug. I haven't been able to reproduce it from any other file.
+for a discussion. Finally, it was a bug in poset but we should investigate further to let sphinx raise proper warning in such situation. I'm opening a ticket for this (see #8575).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8572
 

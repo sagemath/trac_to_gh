@@ -4,6 +4,7 @@ archive/issues_005550.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe web page produced for \"all the documentation\" at .../doc/output/html/en/index.html doesn't work when browsing the documentation locally with `file:///` URLs, because the \".../\" -> \".../index.html\" redirect is done by the web server, and there's no web server involved for `file:///`.  So clicking on \"Reference Manual\" brings you to a directory listing for the reference manual, not to the index.html that lets you actually read the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5550\n\n",
+    "closed_at": "2009-07-18T20:15:37Z",
     "created_at": "2009-03-17T15:04:43Z",
     "labels": [
         "component: documentation",

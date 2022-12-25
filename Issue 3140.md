@@ -4,10 +4,10 @@ archive/issues_003140.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPeople want to upgrade Sage they installed as a binary. That doesn't work too well if they don't have the needed devtools.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3140\n\n",
+    "closed_at": "2014-01-04T02:23:50Z",
     "created_at": "2008-05-09T10:32:07Z",
     "labels": [
         "component: build",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

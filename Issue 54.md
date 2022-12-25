@@ -4,6 +4,7 @@ archive/issues_000054.json:
 ```json
 {
     "body": "Assignee: somebody\n\nIn a current project, I often want to know the largest power of a prime p that is less than or equal to a given integer n. I used int(log(n, p)) in these cases, but I'm concerned that there might be precision issues in this floating point calculation. It would be nice to have some function that was guaranteed to return the correct result for floor(log(n, p)), where n and p are integers. Perhaps call it floor_log or something.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/54\n\n",
+    "closed_at": "2006-09-22T01:21:33Z",
     "created_at": "2006-09-13T20:40:38Z",
     "labels": [
         "component: basic arithmetic",

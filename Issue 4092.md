@@ -1,9 +1,10 @@
-# Issue 4092: libm4ri-20080904 fails to build on OSX 10.4
+# Issue 4092: [with spkg, positive review] libm4ri-20080904 fails to build on OSX 10.4
 
 archive/issues_004092.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  anakha\n\nI thought we fixed that:\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c \nchecking mm_malloc.h usability... no \nchecking mm_malloc.h presence... no \nchecking for mm_malloc.h... no \nchecking for a sed that does not truncate output... /usr/bin/sed \nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown \nchecking for the processor vendor... Unknown \n262144 \n32768 \nsecond level name l1cachesize in hw.l1cachesize is invalid \nsecond level name l1cachesize in hw.l1cachesize is invalid \n./configure: line 21633: / 1024: syntax error: operand expected (error \ntoken is \"/ 1024\") \nError configuring libm4ri \n```\n\nMalb: any chance we missed a patch that did not make it in?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4092\n\n",
+    "closed_at": "2008-09-10T02:47:28Z",
     "created_at": "2008-09-09T18:52:10Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004092.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "libm4ri-20080904 fails to build on OSX 10.4",
+    "title": "[with spkg, positive review] libm4ri-20080904 fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4092",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,22 +1,23 @@
-# Issue 2610: emacs -- fix typo in sagemath.org website
+# Issue 2610: [with fixed website, with positive review] emacs -- fix typo in sagemath.org website
 
 archive/issues_002610.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\nHello,\n\nI think on\nhttp://www.sagemath.org/emacs/\na line, which connects the \".sage\" file-extension with python-mode,\nlike\n\n(setq auto-mode-alist (cons '(\"\\\\.sage\\\\'\" . python-mode) auto-mode-\nalist))\n\nis missing.\n\nWith best regards,\nLars Fischer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2610\n\n",
+    "body": "Assignee: mabshoff\n\n```\nHello,\n\nI think on\nhttp://www.sagemath.org/emacs/\na line, which connects the \".sage\" file-extension with python-mode,\nlike\n\n(setq auto-mode-alist (cons '(\"\\\\.sage\\\\'\" . python-mode) auto-mode-\nalist))\n\nis missing.\n\nWith best regards,\nLars Fischer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2610\n\n",
+    "closed_at": "2008-03-20T11:13:12Z",
     "created_at": "2008-03-20T10:34:06Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "emacs -- fix typo in sagemath.org website",
+    "title": "[with fixed website, with positive review] emacs -- fix typo in sagemath.org website",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2610",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: mabshoff
 
 ```
 Hello,

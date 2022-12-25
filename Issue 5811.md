@@ -1,9 +1,10 @@
-# Issue 5811: Sage 3.4.1.rc3: Fedora 10/64 - type_reducible.py doctest failure due to '__cmp__"
+# Issue 5811: [with patch, positive review] Sage 3.4.1.rc3: Fedora 10/64 - type_reducible.py doctest failure due to '__cmp__"
 
 archive/issues_005811.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @dwbump sage-combinat\n\nThis is also observable with FC9/64 bit with gcc 4.3.3 on SkyNet\n\n```\nsage -t -long \"devel/sage/sage/combinat/root_system/type_reducible.py\"\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 53:\n    sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n    [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n    [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 55:\n    sage: sorted(ct)\nExpected:\n    [['A', 4], A1xB2, B2xA1]\nGot:\n    [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\nMaybe '__cmp__' is broken?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5811\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @dwbump sage-combinat\n\nThis is also observable with FC9/64 bit with gcc 4.3.3 on SkyNet\n\n```\nsage -t -long \"devel/sage/sage/combinat/root_system/type_reducible.py\"\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 53:\n    sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n    [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n    [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/space/wstein/farm/sage-3.4.1.rc3/devel/sage/sage/combinat/root_system/type_reducible.py\", line 55:\n    sage: sorted(ct)\nExpected:\n    [['A', 4], A1xB2, B2xA1]\nGot:\n    [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\nMaybe '__cmp__' is broken?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5811\n\n",
+    "closed_at": "2009-04-19T00:12:50Z",
     "created_at": "2009-04-17T11:29:02Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_005811.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Sage 3.4.1.rc3: Fedora 10/64 - type_reducible.py doctest failure due to '__cmp__\"",
+    "title": "[with patch, positive review] Sage 3.4.1.rc3: Fedora 10/64 - type_reducible.py doctest failure due to '__cmp__\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5811",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 CC:  @dwbump sage-combinat
 

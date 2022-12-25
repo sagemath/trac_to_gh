@@ -1,15 +1,16 @@
-# Issue 2004: [with patch, needs review] padic_height_via_multiply
+# Issue 2004: [with patch, one positive review] padic_height_via_multiply
 
 archive/issues_002004.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPatches implement new algorithm for computing (good ordinary) p-adic heights, with improved asymptotics for the high precision case:\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\n\nsage: time E2 = E.padic_E2(5, 500)\nCPU times: user 7.00 s, sys: 0.74 s, total: 7.74 s\nWall time: 7.76\n\nsage: time h1 = E.padic_height(5, 500)(P)\nCPU times: user 9.34 s, sys: 0.86 s, total: 10.19 s\nWall time: 10.22\nsage: 10.22 - 7.76\n2.46000000000000\n\nsage: time h2 = E.padic_height_via_multiply(5, 500)(P)\nCPU times: user 7.36 s, sys: 0.74 s, total: 8.10 s\nWall time: 8.12\nsage: 8.12 - 7.76\n0.359999999999999\n\nsage: h1 == h2\nTrue\n```\n\nSo it's pretty much dominated by the computation of E2 now.\n\nIt's still fast for low precision too:\n\n```\nsage: time h1 = E.padic_height(5, 10)(P)\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: time h2 = E.padic_height_via_multiply(5, 10)(P)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: h1 == h2\nTrue\n```\n\nI wrote the code a few weeks ago, but the patches are still okay against 2.10.1.rc1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2004\n\n",
+    "closed_at": "2008-02-17T23:39:22Z",
     "created_at": "2008-01-31T20:35:36Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] padic_height_via_multiply",
+    "title": "[with patch, one positive review] padic_height_via_multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2004",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

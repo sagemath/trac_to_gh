@@ -4,11 +4,11 @@ archive/issues_003473.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @embray\n\n`sage` should have better error messages when the `$SAGE_ROOT/devel/sage` symlink doesn't exist. I'll fix this soon if no one beats me to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3473\n\n",
+    "closed_at": "2018-08-14T16:56:33Z",
     "created_at": "2008-06-19T21:20:16Z",
     "labels": [
         "component: misc",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage has bad error messages when sage link doesn't exist.",

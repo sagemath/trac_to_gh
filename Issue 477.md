@@ -4,6 +4,7 @@ archive/issues_000477.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is done to avoid confusion (i.e. where is gnutls.spkg ? I can't fint it), but also to catch build errors. For details see also http://groups.google.com/group/sage-devel/browse_thread/thread/af701e5f8d428ad2\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/477\n\n",
+    "closed_at": "2007-08-29T03:09:45Z",
     "created_at": "2007-08-22T06:46:50Z",
     "labels": [
         "component: packages: standard"

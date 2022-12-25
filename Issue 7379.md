@@ -3,7 +3,8 @@
 archive/issues_007379.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777 @robert-marik @TimDumol @mwhansen @williamstein mhampton\n\nA user should be able to specify a layout for interact controls.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7379\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @qed777 @robert-marik @TimDumol @mwhansen @williamstein mhampton\n\nA user should be able to specify a layout for interact controls.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7379\n\n",
+    "closed_at": "2010-07-11T06:05:46Z",
     "created_at": "2009-11-03T09:54:31Z",
     "labels": [
         "component: notebook"
@@ -15,7 +16,7 @@ archive/issues_007379.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 CC:  @qed777 @robert-marik @TimDumol @mwhansen @williamstein mhampton
 

@@ -1,21 +1,22 @@
-# Issue 3541: graph multiedge plotting
+# Issue 3541: [with patch, positive review] graph multiedge plotting
 
 archive/issues_003541.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill mabshoff\n\nWanted:  New code to make a pretty plot of graphs with multiedges.  I'm working on a patch now and will post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3541\n\n",
+    "body": "Assignee: ekirkman\n\nCC:  @rlmill mabshoff\n\nWanted:  New code to make a pretty plot of graphs with multiedges.  I'm working on a patch now and will post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3541\n\n",
+    "closed_at": "2009-02-14T13:31:16Z",
     "created_at": "2008-07-01T21:57:08Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "graph multiedge plotting",
+    "title": "[with patch, positive review] graph multiedge plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3541",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
-Assignee: @rlmill
+Assignee: ekirkman
 
 CC:  @rlmill mabshoff
 

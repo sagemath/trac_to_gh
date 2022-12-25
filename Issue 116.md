@@ -3,11 +3,11 @@
 archive/issues_000116.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNeed text format for worksheets.  Have them in directory, with output included, and\ndo tests of all input blocks and verify that output agrees.\n\nIssue created by migration from https://trac.sagemath.org/ticket/116\n\n",
+    "body": "Assignee: tbd\n\nNeed text format for worksheets.  Have them in directory, with output included, and\ndo tests of all input blocks and verify that output agrees.\n\nIssue created by migration from https://trac.sagemath.org/ticket/116\n\n",
+    "closed_at": "2011-01-11T06:16:28Z",
     "created_at": "2006-10-07T17:58:52Z",
     "labels": [
-        "component: user interface",
-        "minor"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook doctest -- should be able to doctest a worksheet, so we can distribute worksheets with SAGE",
@@ -16,7 +16,7 @@ archive/issues_000116.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: tbd
 
 Need text format for worksheets.  Have them in directory, with output included, and
 do tests of all input blocks and verify that output agrees.

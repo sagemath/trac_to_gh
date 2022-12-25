@@ -1,22 +1,24 @@
-# Issue 5266: plot_vector_field does not plot the end of the range when given plot_points argument
+# Issue 5266: [with patch, positive review] plot_vector_field does not plot the end of the range when given plot_points argument
 
 archive/issues_005266.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nvar('x,y')\nplot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)\n```\n\npicks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5266\n\n",
+    "body": "Assignee: @jasongrout\n\n```\nvar('x,y')\nplot_vector_field( (-1,y), (x, -1, 1), (y, -1, 1), plot_points=4)\n```\n\npicks the 4 points at x=-1, -0.5,0, and 0.5, but doesn't get x=1!  The points it should pick are x=-1, -1/3, 1/3, and 1 (so we hit the end of the x-range).  The same applies to y.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5266\n\n",
+    "closed_at": "2009-02-14T16:09:22Z",
     "created_at": "2009-02-14T10:22:25Z",
     "labels": [
         "component: graphics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "plot_vector_field does not plot the end of the range when given plot_points argument",
+    "title": "[with patch, positive review] plot_vector_field does not plot the end of the range when given plot_points argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5266",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 ```
 var('x,y')

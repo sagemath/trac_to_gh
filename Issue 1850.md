@@ -1,22 +1,23 @@
-# Issue 1850: graphics -- serious bug in parametric plotting of curves.
+# Issue 1850: [with patch; positive review] graphics -- serious bug in parametric plotting of curves.
 
 archive/issues_001850.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis works fine\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))\n```\n\nThis is missing half of the parametric plot!!\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)\n```\n\nI suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1850\n\n",
+    "body": "Assignee: @robertwb\n\nThis works fine\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))\n```\n\nThis is missing half of the parametric plot!!\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)\n```\n\nI suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1850\n\n",
+    "closed_at": "2008-01-20T01:53:55Z",
     "created_at": "2008-01-19T20:26:06Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "graphics -- serious bug in parametric plotting of curves.",
+    "title": "[with patch; positive review] graphics -- serious bug in parametric plotting of curves.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1850",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 This works fine
 

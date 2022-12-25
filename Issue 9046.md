@@ -1,17 +1,18 @@
-# Issue 9046: missing documentation and bug in collect
+# Issue 9046: bug in collect and/or term ordering in symbolics
 
 archive/issues_009046.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nthe documentation from `collect` does not say what this function\ndoes. It should be documented.\n\nAlso, if it does what its name suggests, i.e., collect terms with\nsame exponent in 's', the following example shows that it seems that\nthe user should call `expand` before, since terms in `x^3`\nare not properly collected:\n\n```\nsage: (x^2+(y-x^2)*(y+x)).collect(x)\n-(x + y - 1)*x^2 + x^3 - (x^2 - y)*x + y^2\nsage: (x^2+(y-x^2)*(y+x)).expand().collect(x)\n-(y - 1)*x^2 - x^3 + x*y + y^2\n```\n\nFinally this seems a bug (note the instances of `-x^2` and\n`x^2`):\n\n```\nvar('a b x y z')\nsage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x\nsage: p.collect(x)\n-a*x^3 + (2*b*y + z + 1)*x^2 - x^2 - (a*y^2 - a)*x + x^2 + 2*y^3 + y^2*z + y^2\n\nIssue created by migration from https://trac.sagemath.org/ticket/9046\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: pynac\n\nThis seems a bug (note the instances of `-x^2` and `x^2`):\n\n```\nvar('a b x y z')\nsage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x\nsage: p.collect(x)\n-a*x^3 + (2*b*y + z + 1)*x^2 - x^2 - (a*y^2 - a)*x + x^2 + 2*y^3 + y^2*z + y^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9046\n\n",
+    "closed_at": "2013-06-19T12:17:29Z",
     "created_at": "2010-05-25T12:02:04Z",
     "labels": [
-        "component: calculus",
-        "critical",
+        "component: symbolics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "missing documentation and bug in collect",
+    "title": "bug in collect and/or term ordering in symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9046",
     "user": "https://github.com/zimmermann6"
@@ -21,29 +22,16 @@ Assignee: @burcin
 
 CC:  @kcrisman
 
-the documentation from `collect` does not say what this function
-does. It should be documented.
+Keywords: pynac
 
-Also, if it does what its name suggests, i.e., collect terms with
-same exponent in 's', the following example shows that it seems that
-the user should call `expand` before, since terms in `x^3`
-are not properly collected:
-
-```
-sage: (x^2+(y-x^2)*(y+x)).collect(x)
--(x + y - 1)*x^2 + x^3 - (x^2 - y)*x + y^2
-sage: (x^2+(y-x^2)*(y+x)).expand().collect(x)
--(y - 1)*x^2 - x^3 + x*y + y^2
-```
-
-Finally this seems a bug (note the instances of `-x^2` and
-`x^2`):
+This seems a bug (note the instances of `-x^2` and `x^2`):
 
 ```
 var('a b x y z')
 sage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x
 sage: p.collect(x)
 -a*x^3 + (2*b*y + z + 1)*x^2 - x^2 - (a*y^2 - a)*x + x^2 + 2*y^3 + y^2*z + y^2
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9046
 

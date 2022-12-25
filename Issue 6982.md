@@ -1,16 +1,17 @@
-# Issue 6982: cygwin port: atlas and linbox
+# Issue 6982: [with spkg, positive review] cygwin port: atlas and linbox
 
 archive/issues_006982.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n* atlas --  require systemwide lapack installed\n\n  * linbox -- use systemwide lapack\n\nIssue created by migration from https://trac.sagemath.org/ticket/6982\n\n",
+    "body": "Assignee: tbd\n\n* atlas --  require systemwide lapack installed\n\n* linbox -- use systemwide lapack\n\nIssue created by migration from https://trac.sagemath.org/ticket/6982\n\n",
+    "closed_at": "2009-09-27T03:26:27Z",
     "created_at": "2009-09-22T05:01:18Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cygwin port: atlas and linbox",
+    "title": "[with spkg, positive review] cygwin port: atlas and linbox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6982",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,7 @@ Assignee: tbd
 
 * atlas --  require systemwide lapack installed
 
-  * linbox -- use systemwide lapack
+* linbox -- use systemwide lapack
 
 Issue created by migration from https://trac.sagemath.org/ticket/6982
 

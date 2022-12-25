@@ -3,11 +3,11 @@
 archive/issues_008894.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nUsing #8893\n\nIssue created by migration from https://trac.sagemath.org/ticket/8894\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nGraph.topological_minor ! \n\nI hope it will be useful, though the performances of GLPK are veeeery bad on this kind of problem... CPLEX can solve immediately problems GLPK can not handle (find there is no topological K5 minor in a Petersen Graph for example, or the same in a Grid2d graph). \n\nI mentionned it in the docstring.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8894\n\n",
+    "closed_at": "2011-01-19T22:19:49Z",
     "created_at": "2010-05-05T18:24:48Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "topological minor",
@@ -18,7 +18,13 @@ archive/issues_008894.json:
 ```
 Assignee: jason, ncohen, rlm
 
-Using #8893
+Graph.topological_minor ! 
+
+I hope it will be useful, though the performances of GLPK are veeeery bad on this kind of problem... CPLEX can solve immediately problems GLPK can not handle (find there is no topological K5 minor in a Petersen Graph for example, or the same in a Grid2d graph). 
+
+I mentionned it in the docstring.
+
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/8894
 

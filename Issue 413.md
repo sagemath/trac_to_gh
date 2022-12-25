@@ -4,6 +4,7 @@ archive/issues_000413.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nOn 8/6/07, Ted Kosan <ted.kosan@gmail.com> wrote:\n> I am in the process of developing a standard format that typical\n> students can follow when using the Sage notebook.  Part of this\n> pattern consists of creating cells which contain only comments, like\n> the description of a problem that is being solved.  Since comments are\n> not executable code, a person would not normally think to press\n> <shift><enter> in these cells.\n> \n> Unfortunately, if text is entered into a cell without pressing\n> <shift><enter>, this text is lost even after the \"Save\" or \"Save and\n> close\" buttons are pressed.\n> \n> Can the behavior of these buttons be changed so that all text in all\n> cells is saved when they are pressed?\n\nYes, definitely.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/413\n\n",
+    "closed_at": "2008-03-17T04:17:30Z",
     "created_at": "2007-08-09T07:45:41Z",
     "labels": [
         "component: notebook"

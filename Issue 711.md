@@ -4,6 +4,7 @@ archive/issues_000711.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: P = PolynomialRing(QQ,10,'x')\nsage:  I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nInterrupting Singular...\nInterrupting Singular...\n\n<type 'exceptions.TypeError'>: Restarting Singular (WARNING: all variables defined in previous session are now invalid)\n```\nbut singular is still running!\n\nIssue created by migration from https://trac.sagemath.org/ticket/711\n\n",
+    "closed_at": "2007-09-21T01:01:07Z",
     "created_at": "2007-09-20T18:19:40Z",
     "labels": [
         "component: interfaces",

@@ -1,9 +1,10 @@
-# Issue 846: Split cdefs.pxi
+# Issue 846: [with patch, positive review] Split cdefs.pxi
 
 archive/issues_000846.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nThis should probably go into several different files. At least the gmp stuff could be moved to a different file (perhaps the current gmp.pxi should be renamed?) \n\nIssue created by migration from https://trac.sagemath.org/ticket/846\n\n",
+    "closed_at": "2008-11-23T06:01:44Z",
     "created_at": "2007-10-10T10:53:06Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_000846.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Split cdefs.pxi",
+    "title": "[with patch, positive review] Split cdefs.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/846",
     "user": "https://github.com/robertwb"

@@ -1,26 +1,32 @@
-# Issue 5783: [with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods
+# Issue 5783: [with patch, positive review]  Lazy attribute fixes and improvements
 
 archive/issues_005783.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat\n\nThe summary says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5783\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\n- fix infinite recursion bug\n- adds support for cpdefs methods\n- fix ReST doc (indentation, ::, ...)\n- fix introspection (hopefuly)\n- adds a hook for this in sage.misc.sageinspect.sage_getsourcelines\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5783\n\n",
+    "closed_at": "2009-05-19T19:21:58Z",
     "created_at": "2009-04-14T06:55:25Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods",
+    "title": "[with patch, positive review]  Lazy attribute fixes and improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5783",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: cwitty
+Assignee: @nthiery
 
 CC:  sage-combinat
 
-The summary says it all.
+- fix infinite recursion bug
+- adds support for cpdefs methods
+- fix ReST doc (indentation, ::, ...)
+- fix introspection (hopefuly)
+- adds a hook for this in sage.misc.sageinspect.sage_getsourcelines
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5783
 

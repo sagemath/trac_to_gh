@@ -1,9 +1,10 @@
-# Issue 650: serious modular forms bug
+# Issue 650: [with patch] serious modular forms bug
 
 archive/issues_000650.json:
 ```json
 {
-    "body": "Assignee: was or craigcitro\n\n```\nsage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()\nsage: d\n\n[\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field,\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field\n]\nsage: for a in d: print a.q_eigenform(10)\n....:\nq - 2*q^2 - 2*q^3 + 2*q^4 - 4*q^5 + 4*q^6 + q^9 + O(q^10)\nq + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*alpha*q^8 + -q^9 + O(q^10)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/650\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()\nsage: d\n\n[\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field,\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field\n]\nsage: for a in d: print a.q_eigenform(10)\n....:\nq - 2*q^2 - 2*q^3 + 2*q^4 - 4*q^5 + 4*q^6 + q^9 + O(q^10)\nq + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*alpha*q^8 + -q^9 + O(q^10)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/650\n\n",
+    "closed_at": "2007-10-19T01:48:40Z",
     "created_at": "2007-09-13T18:47:19Z",
     "labels": [
         "component: modular forms",
@@ -11,13 +12,13 @@ archive/issues_000650.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "serious modular forms bug",
+    "title": "[with patch] serious modular forms bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/650",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: was or craigcitro
+Assignee: @craigcitro
 
 ```
 sage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()

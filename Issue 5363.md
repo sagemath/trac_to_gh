@@ -1,9 +1,10 @@
-# Issue 5363: Sage 3.4.alpha0: -sdist issue: MANIFEST.in needs to add the missing 186 files
+# Issue 5363: [with patch, positive review] Sage 3.4.alpha0: -sdist issue: MANIFEST.in needs to add the missing 186 files
 
 archive/issues_005363.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nFor 3.4.alpha0 -sdist does not include any of the new doc repo code, i.e. if one runs \"hg update -C\" in devel/sage after building you will see\n\n```\n 186 files updated, 0 files merged, 0 files removed, 0 files unresolved\n```\nI corrected this in the official 3.4.alpha0.tar, but this needs fixing before the final 3.4 release, so this is a blocker.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5363\n\n",
+    "closed_at": "2009-03-02T02:17:08Z",
     "created_at": "2009-02-24T22:57:35Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_005363.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Sage 3.4.alpha0: -sdist issue: MANIFEST.in needs to add the missing 186 files",
+    "title": "[with patch, positive review] Sage 3.4.alpha0: -sdist issue: MANIFEST.in needs to add the missing 186 files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5363",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 7027: f2c ignores CC and uses gcc anyway
+# Issue 7027: clean up f2c spkg
 
 archive/issues_007027.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing \n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used.\n\n```\nf2c-20070816.p1/src/libf2c/._z_sqrt.c\nf2c-20070816.p1/src/libf2c/z_sqrt.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/f2c-20070816.p1/src/libf2c'\ngcc -c f77vers.c\ngcc -c i77vers.c\n\n```\n\n\nf2c is far from the only program which ignores CC.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7027\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nf2c ignores CC, CFLAGS, and MAKE variables:\nOn sage.math using\n\n```\n  CC=clang\n  CFLAGS=-O3\n  MAKE=\"make -j6\"\n```\n\n```\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Fri Feb 11 18:08:32 UTC 2011 x86_64 Intel(R) Xeon(R) CPU X7460 @ 2.66GHz GenuineIntel GNU/Linux\n****************************************************\n****************************************************\nCC Version\nclang -v\nclang version 3.0 (tags/RELEASE_30/final)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\n****************************************************\ngcc -c f77vers.c\ngcc -c i77vers.c\ngcc -c -DSkip_f2c_Undefs -O -fPIC main.c\nld -r -o main.xxx main.o\nmv main.xxx main.o\ngcc -c -DSkip_f2c_Undefs -O -fPIC s_rnge.c\nld -r -o s_rnge.xxx s_rnge.o\nmv s_rnge.xxx s_rnge.o\ngcc -c -DSkip_f2c_Undefs -O -fPIC abort_.c\n\n```\n\nAlso, there are left over files from development on OSX:\n\n```\nhg status\n? ._.hg\n? ._.hgignore\n? ._SPKG.txt\n? ._spkg-install\n? patches/._f2c.makefile\n```\n\nFinally, there are unnecessary files in the patch directory, we only need one of the patches, and neither of the makefiles.\n\n**spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/f2c-20070816.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/f2c-20070816.p3.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7027\n\n",
+    "closed_at": "2012-02-27T11:19:29Z",
     "created_at": "2009-09-27T11:40:58Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "f2c ignores CC and uses gcc anyway",
+    "title": "clean up f2c spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7027",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -20,35 +21,54 @@ Assignee: tbd
 
 CC:  @orlitzky
 
-Using 
-
-* Solaris 10 update 7 on SPARC
-* sage-4.1.2.alpha2
-* Sun Studio 12.1
-* An updated configure script to allow the Sun compiler to be used.
+f2c ignores CC, CFLAGS, and MAKE variables:
+On sage.math using
 
 ```
-f2c-20070816.p1/src/libf2c/._z_sqrt.c
-f2c-20070816.p1/src/libf2c/z_sqrt.c
-Finished extraction
+  CC=clang
+  CFLAGS=-O3
+  MAKE="make -j6"
+```
+
+```
 ****************************************************
 Host system
 uname -a:
-SunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000
+Linux sage.math.washington.edu 2.6.24-28-server #1 SMP Fri Feb 11 18:08:32 UTC 2011 x86_64 Intel(R) Xeon(R) CPU X7460 @ 2.66GHz GenuineIntel GNU/Linux
 ****************************************************
 ****************************************************
 CC Version
-/opt/xxxsunstudio12.1/bin/cc -v
-usage: cc [ options] files.  Use 'cc -flags' for details
+clang -v
+clang version 3.0 (tags/RELEASE_30/final)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
 ****************************************************
-make[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/f2c-20070816.p1/src/libf2c'
 gcc -c f77vers.c
 gcc -c i77vers.c
+gcc -c -DSkip_f2c_Undefs -O -fPIC main.c
+ld -r -o main.xxx main.o
+mv main.xxx main.o
+gcc -c -DSkip_f2c_Undefs -O -fPIC s_rnge.c
+ld -r -o s_rnge.xxx s_rnge.o
+mv s_rnge.xxx s_rnge.o
+gcc -c -DSkip_f2c_Undefs -O -fPIC abort_.c
 
 ```
 
+Also, there are left over files from development on OSX:
 
-f2c is far from the only program which ignores CC.
+```
+hg status
+? ._.hg
+? ._.hgignore
+? ._SPKG.txt
+? ._spkg-install
+? patches/._f2c.makefile
+```
+
+Finally, there are unnecessary files in the patch directory, we only need one of the patches, and neither of the makefiles.
+
+**spkg**: [http://boxen.math.washington.edu/home/jdemeyer/spkg/f2c-20070816.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/f2c-20070816.p3.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7027
 

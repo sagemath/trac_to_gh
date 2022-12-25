@@ -3,7 +3,8 @@
 archive/issues_009112.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @hughrthomas\n\nKeywords: semistandard tableaux\n\nSage-4.4.2, combinat/tableau.py:\n\nCurrently, the function SemistandardTableaux(p=None, mu=None) has a default maximum entry of sum(p) if p is a partition and p if p is an integer. I want to add the option to specify a maximum entry.\n\nSemistandardTableaux(mu=[...]) returns all semistandard tableaux when it should return semistandard tableaux with content mu.\n\nAlso, the representation of the SST classes should state the maximum entry.\n\nEric\n\nIssue created by migration from https://trac.sagemath.org/ticket/9112\n\n",
+    "body": "Assignee: QuantumKing\n\nCC:  @hughrthomas\n\nKeywords: semistandard tableaux\n\nSage-4.4.2, combinat/tableau.py:\n\nCurrently, the function SemistandardTableaux(p=None, mu=None) has a default maximum entry of sum(p) if p is a partition and p if p is an integer. I want to add the option to specify a maximum entry.\n\nSemistandardTableaux(mu=[...]) returns all semistandard tableaux when it should return semistandard tableaux with content mu.\n\nAlso, the representation of the SST classes should state the maximum entry.\n\nRelease manager: Apply only [trac_9112_folded.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9112/trac_9112_folded.patch)\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/9112\n\n",
+    "closed_at": "2010-07-21T01:43:57Z",
     "created_at": "2010-06-01T22:45:57Z",
     "labels": [
         "component: combinatorics"
@@ -15,7 +16,7 @@ archive/issues_009112.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/QuantumKing"
 }
 ```
-Assignee: sage-combinat
+Assignee: QuantumKing
 
 CC:  @hughrthomas
 
@@ -29,7 +30,8 @@ SemistandardTableaux(mu=[...]) returns all semistandard tableaux when it should 
 
 Also, the representation of the SST classes should state the maximum entry.
 
-Eric
+Release manager: Apply only [trac_9112_folded.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9112/trac_9112_folded.patch)
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9112
 

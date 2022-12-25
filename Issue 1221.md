@@ -1,21 +1,22 @@
-# Issue 1221: Use Mathematica syntax for integration
+# Issue 1221: Consider using Mathematica syntax for integration
 
 archive/issues_001221.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nI think we should use this syntax for integration:\n\n```\n>>> integrate(x**3, (x, -1, 1))\n0\n>>> integrate(sin(x), (x, 0, pi/2))\n1\n>>> integrate(cos(x), (x, -pi/2, pi/2))\n2\n```\n\ninstead of\n\n```\nsage: integral(x/(x^2+1), x, 0, 1)\n     log(2)/2\n```\n\nas in SAGE currently, to be close to Mathematica. Because then you can\nuse the syntax:\n\nintegrate(cos(x*y), (x, -pi/2, pi/2), (y, 0, pi))\n\nfor multiple integrals.\n\nSee also [1], how we discussed this in SymPy.\n\n[1] http://code.google.com/p/sympy/issues/detail?id=25\n\nIssue created by migration from https://trac.sagemath.org/ticket/1221\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout\n\nI think we should use this syntax for integration:\n\n```\n>>> integrate(x**3, (x, -1, 1))\n0\n>>> integrate(sin(x), (x, 0, pi/2))\n1\n>>> integrate(cos(x), (x, -pi/2, pi/2))\n2\n```\n\ninstead of\n\n```\nsage: integral(x/(x^2+1), x, 0, 1)\n     log(2)/2\n```\n\nas in SAGE currently, to be close to Mathematica. Because then you can\nuse the syntax:\n\nintegrate(cos(x*y), (x, -pi/2, pi/2), (y, 0, pi))\n\nfor multiple integrals.\n\nSee also [1], how we discussed this in SymPy.\n\n[1] http://code.google.com/p/sympy/issues/detail?id=25\n\nIssue created by migration from https://trac.sagemath.org/ticket/1221\n\n",
+    "closed_at": "2010-09-08T12:29:13Z",
     "created_at": "2007-11-20T22:22:35Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Use Mathematica syntax for integration",
+    "title": "Consider using Mathematica syntax for integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1221",
     "user": "https://github.com/certik"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  @jasongrout
 

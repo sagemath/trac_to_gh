@@ -1,9 +1,10 @@
-# Issue 3875: matrix/matrix_cyclo_dense.pyx segfault
+# Issue 3875: [with patch; positive review] matrix/matrix_cyclo_dense.pyx segfault
 
 archive/issues_003875.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\njec@host-57-29%./sage -t  devel/sage/sage/matrix/matrix_cyclo_dense.pyx \nsage -t  devel/sage/sage/matrix/matrix_cyclo_dense.pyx      sh: line \n1: 16845 Segmentation fault \n/home/jec/sage-3.1.rc0/local/bin/python \n/home/jec/sage-3.1.rc0/tmp/.doctest_matrix_cyclo_dense.py \n>/tmp/tmp8q1GmM 2>/tmp/tmpHrJVlH \n\nA mysterious error (perphaps a memory error?) occurred, which may have \ncrashed doctest. \n         [6.5 s] \nexit code: 768 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3875\n\n",
+    "closed_at": "2008-08-16T21:49:17Z",
     "created_at": "2008-08-15T17:38:27Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_003875.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "matrix/matrix_cyclo_dense.pyx segfault",
+    "title": "[with patch; positive review] matrix/matrix_cyclo_dense.pyx segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3875",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

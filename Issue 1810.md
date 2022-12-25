@@ -1,15 +1,16 @@
-# Issue 1810: [with patch] refactoring to improve finite field reference manual
+# Issue 1810: [with patch, positive review] refactoring to improve finite field reference manual
 
 archive/issues_001810.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe patch removes `FiniteField_prime_modn` from `finite_field.py` because it was odd that this implementation was the only showing up in the reference manual. Also, `GF` is now defined in `rings.all` rather than in `rings.finite_field` to avoid that the documentation for it shows up twice. Finally, a more verbose description of the finite field module is given at the top of the `finite_field.py` file and some doctests were added to `FiniteField_prime_modn`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1810\n\n",
+    "closed_at": "2008-03-02T22:51:10Z",
     "created_at": "2008-01-17T21:29:21Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch] refactoring to improve finite field reference manual",
+    "title": "[with patch, positive review] refactoring to improve finite field reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1810",
     "user": "https://github.com/malb"

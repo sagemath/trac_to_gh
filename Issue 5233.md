@@ -1,25 +1,40 @@
-# Issue 5233: [with patch, needs review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix
+# Issue 5233: [with patch, positive review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix
 
 archive/issues_005233.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5233\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @rlmill\n\nBefore:\n\n```\nsage: %time m = graphs.GridGraph([50,50]).laplacian_matrix()\nCPU times: user 38.42 s, sys: 0.24 s, total: 38.66 s\nWall time: 39.02 s\n```\n\nAfter:\n\n```\nsage: %time m = graphs.GridGraph([50,50]).laplacian_matrix()\nCPU times: user 0.63 s, sys: 0.06 s, total: 0.69 s\nWall time: 0.89 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5233\n\n",
+    "closed_at": "2009-02-11T06:53:28Z",
     "created_at": "2009-02-11T06:14:54Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix",
+    "title": "[with patch, positive review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5233",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @rlmill
+Assignee: @mwhansen
 
 CC:  @rlmill
 
+Before:
 
+```
+sage: %time m = graphs.GridGraph([50,50]).laplacian_matrix()
+CPU times: user 38.42 s, sys: 0.24 s, total: 38.66 s
+Wall time: 39.02 s
+```
+
+After:
+
+```
+sage: %time m = graphs.GridGraph([50,50]).laplacian_matrix()
+CPU times: user 0.63 s, sys: 0.06 s, total: 0.69 s
+Wall time: 0.89 s
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5233
 

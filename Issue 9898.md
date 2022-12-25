@@ -3,7 +3,8 @@
 archive/issues_009898.json:
 ```json
 {
-    "body": "Assignee: @nexttime\n\nCC:  @jdemeyer\n\nKeywords: mathilbert SAGE_TUNE SAGE_CHECK\n\nOn Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3) I get the following when (re)installing PARI 2.4.3.svn-12577.p5 with `SAGE_TUNE_PARI=yes` and `SAGE_CHECK=yes`:\n\n```\n...\n==========================================================================\nBuilding and tuning PARI (this may take a while)\n...\nBye !\nBuilding and installing PARI/GP...\nMaking gp in Olinux-i686\n...\nreal\t20m58.068s\nuser\t20m28.501s\nsys\t0m20.849s\nSuccessfully installed pari-2.4.3.svn-12577.p5\nRunning the test suite.\nMaking test-all in Olinux-i686\n...\n* Testing analyz \tfor gp-sta..TIME=28\tfor gp-dyn..TIME=36\n* Testing apply \tfor gp-sta..TIME=0\tfor gp-dyn..TIME=8\n* Testing aurifeuille \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing bezout \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing bnfisintnorm \tfor gp-sta..TIME=1124\tfor gp-dyn..TIME=1164\n* Testing bnr \tfor gp-sta..TIME=36\tfor gp-dyn..TIME=44\n* Testing charpoly \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing combinat \tfor gp-sta..TIME=36\tfor gp-dyn..TIME=12\n* Testing compat \tfor gp-sta..TIME=448\tfor gp-dyn..TIME=432\n* Testing contfrac \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing debugger \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=4\n* Testing ell \tfor gp-sta..TIME=18781\tfor gp-dyn..TIME=18869\n* Testing elliptic \tfor gp-sta..TIME=44\tfor gp-dyn..TIME=36\n* Testing ellsea \tfor gp-sta..TIME=27077\tfor gp-dyn..TIME=27025\n* Testing ellweilpairing \tfor gp-sta..TIME=128\tfor gp-dyn..TIME=108\n* Testing err \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=4\n* Testing exact0 \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=4\n* Testing extract \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=8\n* Testing ff \tfor gp-sta..TIME=884\tfor gp-dyn..TIME=820\n* Testing ffisom \tfor gp-sta..TIME=700\tfor gp-dyn..TIME=684\n* Testing galois \tfor gp-sta..TIME=25029\tfor gp-dyn..TIME=25569\n* Testing galoisinit \tfor gp-sta..TIME=7304\tfor gp-dyn..TIME=7276\n* Testing graph \tfor gp-sta..TIME=24\tfor gp-dyn..TIME=32\n* Testing ideal \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=4\n* Testing idealappr \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing idealramgroups \tfor gp-sta..TIME=3576\tfor gp-dyn..TIME=3580\n* Testing intformal \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing intnum \tfor gp-sta..TIME=30797\tfor gp-dyn..TIME=31073\n* Testing ispower \tfor gp-sta..TIME=7604\tfor gp-dyn..TIME=7632\n* Testing krasner \tfor gp-sta..TIME=6996\tfor gp-dyn..TIME=7000\n* Testing linear \tfor gp-sta..BUG [20]\tfor gp-dyn..BUG [36]\n* Testing list \tfor gp-sta..TIME=96\tfor gp-dyn..TIME=60\n* Testing lll \tfor gp-sta..TIME=0\tfor gp-dyn..TIME=4\n* Testing mat \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing matsnf \tfor gp-sta..TIME=816\tfor gp-dyn..TIME=760\n* Testing member \tfor gp-sta..TIME=136\tfor gp-dyn..TIME=108\n* Testing modpr \tfor gp-sta..TIME=0\tfor gp-dyn..TIME=4\n* Testing multivar-mul \tfor gp-sta..TIME=17417\tfor gp-dyn..TIME=19153\n* Testing nf \tfor gp-sta..TIME=4128\tfor gp-dyn..TIME=4072\n* Testing nffactor \tfor gp-sta..TIME=20721\tfor gp-dyn..TIME=20745\n* Testing nfhilbert \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=12\n* Testing nfields \tfor gp-sta..TIME=248\tfor gp-dyn..TIME=216\n* Testing nfrootsof1 \tfor gp-sta..TIME=45166\tfor gp-dyn..TIME=45766\n* Testing number \tfor gp-sta..TIME=76\tfor gp-dyn..TIME=48\n* Testing objets \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=4\n* Testing partition \tfor gp-sta..TIME=60831\tfor gp-dyn..TIME=62931\n* Testing polchebyshev \tfor gp-sta..TIME=16\tfor gp-dyn..TIME=20\n* Testing polmod \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing polred \tfor gp-sta..TIME=6104\tfor gp-dyn..TIME=6136\n* Testing polyser \tfor gp-sta..TIME=16\tfor gp-dyn..TIME=28\n* Testing printf \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=16\n* Testing program \tfor gp-sta..TIME=44\tfor gp-dyn..TIME=28\n* Testing qf \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=4\n* Testing qfbsolve \tfor gp-sta..TIME=3576\tfor gp-dyn..TIME=3756\n* Testing quad \tfor gp-sta..TIME=0\tfor gp-dyn..TIME=8\n* Testing quadclassunit \tfor gp-sta..TIME=17357\tfor gp-dyn..TIME=18169\n* Testing quadray \tfor gp-sta..TIME=1232\tfor gp-dyn..TIME=1256\n* Testing random \tfor gp-sta..TIME=12\tfor gp-dyn..TIME=12\n* Testing resultant \tfor gp-sta..TIME=22545\tfor gp-dyn..TIME=23341\n* Testing rfrac \tfor gp-sta..TIME=6680\tfor gp-dyn..TIME=7128\n* Testing rnf \tfor gp-sta..TIME=564\tfor gp-dyn..TIME=548\n* Testing rnfkummer \tfor gp-sta..TIME=87353\tfor gp-dyn..TIME=87361\n* Testing round4 \tfor gp-sta..TIME=13872\tfor gp-dyn..TIME=13904\n* Testing select \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=4\n* Testing stark \tfor gp-sta..TIME=47794\tfor gp-dyn..TIME=47862\n* Testing subcyclo \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=8\n* Testing subfields \tfor gp-sta..TIME=24165\tfor gp-dyn..TIME=24129\n* Testing sumiter \tfor gp-sta..TIME=52\tfor gp-dyn..TIME=44\n* Testing thue \tfor gp-sta..TIME=3756\tfor gp-dyn..TIME=3932\n* Testing trans \tfor gp-sta..TIME=112\tfor gp-dyn..TIME=84\n* Testing zetak \tfor gp-sta..TIME=5560\tfor gp-dyn..TIME=5520\n* Testing zn \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=8\n+++ [BUG] Total bench for gp-sta is 521185\n+++ [BUG] Total bench for gp-dyn is 528713\n\nPROBLEMS WERE NOTED. The following files list them in diff format: \nDirectory: /home/leif/Sage/sage-4.6.prealpha4/spkg/build/pari-2.4.3.svn-12577.p5/src/Olinux-i686\n\tlinear-sta.dif\n\tlinear-dyn.dif\nmake[1]: *** [test-all] Error 1\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.prealpha4/spkg/build/pari-2.4.3.svn-12577.p5/src/Olinux-i686'\nmake: *** [test-all] Error 2\nError: PARI failed the self-tests when running 'make -j8 test-all'\n*************************************\nError testing package ** pari-2.4.3.svn-12577.p5 **\n*************************************\nsage: An error occurred while testing pari-2.4.3.svn-12577.p5\n...\n```\n\nThe attached diffs generated by PARI look weird since PARI breaks the output into fixed width lines (and compares these) - even **within numbers** that would fit on a single line. \n\nI've reformatted both the expected and the actual output s.t. the differences are more readable; now more obviously this is just **numerical noise**:\n\n```diff\n--- pari-test-linear.should.reformatted.txt\t2010-09-11 21:13:22.000000000 +0200\n+++ pari-test-linear.is.reformatted.txt\t2010-09-11 23:25:41.000000000 +0200\n@@ -1,7 +1,7 @@\n ? (1.*mathilbert(7))^(-1)\n \n [       49.000000000000000000000000000001579425\n-     -1176.0000000000000000000000000000621879\n+     -1176.0000000000000000000000000000621902\n       8820.0000000000000000000000000005948011\n     -29400.000000000000000000000000002301748\n      48510.000000000000000000000000004207809\n@@ -9,7 +9,7 @@\n      12012.000000000000000000000000001189528]\n \n [    -1176.0000000000000000000000000000626175\n-     37632.000000000000000000000000002469695\n+     37632.000000000000000000000000002469681\n    -317520.00000000000000000000000002364675\n    1128960.0000000000000000000000000915946\n   -1940400.0000000000000000000000001675308\n@@ -17,7 +17,7 @@\n    -504504.00000000000000000000000004740575]\n \n [     8820.0000000000000000000000000006015186\n-   -317520.00000000000000000000000002375151\n+   -317520.00000000000000000000000002375139\n    2857680.0000000000000000000000002275919\n  -10584000.000000000000000000000000882085\n   18711000.000000000000000000000001614074\n@@ -25,7 +25,7 @@\n    5045040.0000000000000000000000004570220]\n \n [   -29400.000000000000000000000000002335330\n-   1128960.0000000000000000000000000922894\n+   1128960.0000000000000000000000000922890\n  -10584000.000000000000000000000000884843\n   40320000.000000000000000000000003430862\n  -72765000.000000000000000000000006279937\n@@ -33,7 +33,7 @@\n  -20180160.000000000000000000000001778972]\n \n [    48510.000000000000000000000000004278611\n-  -1940400.0000000000000000000000001691936\n+  -1940400.0000000000000000000000001691929\n   18711000.000000000000000000000001622888\n  -72765000.000000000000000000000006294553\n  133402500.00000000000000000000001152452\n@@ -41,7 +41,7 @@\n   37837800.000000000000000000000003265792]\n \n [   -38808.000000000000000000000000003696181\n-   1596672.0000000000000000000000001462360\n+   1596672.0000000000000000000000001462353\n  -15717240.000000000000000000000001403167\n   62092800.000000000000000000000005443713\n -115259760.00000000000000000000000996866\n@@ -49,7 +49,7 @@\n  -33297264.000000000000000000000002825670]\n \n [    12012.000000000000000000000000001213544\n-   -504504.00000000000000000000000004803250\n+   -504504.00000000000000000000000004803228\n    5045040.0000000000000000000000004610120\n  -20180160.000000000000000000000001788903\n   37837800.000000000000000000000003276393\n```\n\nAt least in Sage 4.6.alpha0 the slight deviation doesn't affect `ptestlong`, i.e. all tests passed regardless of PARI's self-tuning being enabled or not.\n\nNevertheless it's odd PARI's test suite fails with tuning enabled, since\n* Sage will reject to install the package when `SAGE_CHECK=yes`,\n* analyzing the failures is quite tedious, and\n* disabling the self-tests is potentially dangerous.\n\n---\n\nOn the same machine running Fedora 13 x86 (gcc 4.4.4) PARI's self-tuning hangs when tuning `REMIIMUL_LIMIT`, i.e. the output stops, but `tune` doesn't terminate. This should be reported upstream as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9899\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @jdemeyer\n\nKeywords: mathilbert SAGE_TUNE SAGE_CHECK\n\nOn Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3) I get the following when (re)installing PARI 2.4.3.svn-12577.p5 with `SAGE_TUNE_PARI=yes` and `SAGE_CHECK=yes`:\n\n```\n...\n==========================================================================\nBuilding and tuning PARI (this may take a while)\n...\nBye !\nBuilding and installing PARI/GP...\nMaking gp in Olinux-i686\n...\nreal    20m58.068s\nuser    20m28.501s\nsys    0m20.849s\nSuccessfully installed pari-2.4.3.svn-12577.p5\nRunning the test suite.\nMaking test-all in Olinux-i686\n...\n* Testing analyz     for gp-sta..TIME=28    for gp-dyn..TIME=36\n* Testing apply     for gp-sta..TIME=0    for gp-dyn..TIME=8\n* Testing aurifeuille     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing bezout     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing bnfisintnorm     for gp-sta..TIME=1124    for gp-dyn..TIME=1164\n* Testing bnr     for gp-sta..TIME=36    for gp-dyn..TIME=44\n* Testing charpoly     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing combinat     for gp-sta..TIME=36    for gp-dyn..TIME=12\n* Testing compat     for gp-sta..TIME=448    for gp-dyn..TIME=432\n* Testing contfrac     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing debugger     for gp-sta..TIME=8    for gp-dyn..TIME=4\n* Testing ell     for gp-sta..TIME=18781    for gp-dyn..TIME=18869\n* Testing elliptic     for gp-sta..TIME=44    for gp-dyn..TIME=36\n* Testing ellsea     for gp-sta..TIME=27077    for gp-dyn..TIME=27025\n* Testing ellweilpairing     for gp-sta..TIME=128    for gp-dyn..TIME=108\n* Testing err     for gp-sta..TIME=4    for gp-dyn..TIME=4\n* Testing exact0     for gp-sta..TIME=4    for gp-dyn..TIME=4\n* Testing extract     for gp-sta..TIME=8    for gp-dyn..TIME=8\n* Testing ff     for gp-sta..TIME=884    for gp-dyn..TIME=820\n* Testing ffisom     for gp-sta..TIME=700    for gp-dyn..TIME=684\n* Testing galois     for gp-sta..TIME=25029    for gp-dyn..TIME=25569\n* Testing galoisinit     for gp-sta..TIME=7304    for gp-dyn..TIME=7276\n* Testing graph     for gp-sta..TIME=24    for gp-dyn..TIME=32\n* Testing ideal     for gp-sta..TIME=8    for gp-dyn..TIME=4\n* Testing idealappr     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing idealramgroups     for gp-sta..TIME=3576    for gp-dyn..TIME=3580\n* Testing intformal     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing intnum     for gp-sta..TIME=30797    for gp-dyn..TIME=31073\n* Testing ispower     for gp-sta..TIME=7604    for gp-dyn..TIME=7632\n* Testing krasner     for gp-sta..TIME=6996    for gp-dyn..TIME=7000\n* Testing linear     for gp-sta..BUG [20]    for gp-dyn..BUG [36]\n* Testing list     for gp-sta..TIME=96    for gp-dyn..TIME=60\n* Testing lll     for gp-sta..TIME=0    for gp-dyn..TIME=4\n* Testing mat     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing matsnf     for gp-sta..TIME=816    for gp-dyn..TIME=760\n* Testing member     for gp-sta..TIME=136    for gp-dyn..TIME=108\n* Testing modpr     for gp-sta..TIME=0    for gp-dyn..TIME=4\n* Testing multivar-mul     for gp-sta..TIME=17417    for gp-dyn..TIME=19153\n* Testing nf     for gp-sta..TIME=4128    for gp-dyn..TIME=4072\n* Testing nffactor     for gp-sta..TIME=20721    for gp-dyn..TIME=20745\n* Testing nfhilbert     for gp-sta..TIME=8    for gp-dyn..TIME=12\n* Testing nfields     for gp-sta..TIME=248    for gp-dyn..TIME=216\n* Testing nfrootsof1     for gp-sta..TIME=45166    for gp-dyn..TIME=45766\n* Testing number     for gp-sta..TIME=76    for gp-dyn..TIME=48\n* Testing objets     for gp-sta..TIME=4    for gp-dyn..TIME=4\n* Testing partition     for gp-sta..TIME=60831    for gp-dyn..TIME=62931\n* Testing polchebyshev     for gp-sta..TIME=16    for gp-dyn..TIME=20\n* Testing polmod     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing polred     for gp-sta..TIME=6104    for gp-dyn..TIME=6136\n* Testing polyser     for gp-sta..TIME=16    for gp-dyn..TIME=28\n* Testing printf     for gp-sta..TIME=4    for gp-dyn..TIME=16\n* Testing program     for gp-sta..TIME=44    for gp-dyn..TIME=28\n* Testing qf     for gp-sta..TIME=4    for gp-dyn..TIME=4\n* Testing qfbsolve     for gp-sta..TIME=3576    for gp-dyn..TIME=3756\n* Testing quad     for gp-sta..TIME=0    for gp-dyn..TIME=8\n* Testing quadclassunit     for gp-sta..TIME=17357    for gp-dyn..TIME=18169\n* Testing quadray     for gp-sta..TIME=1232    for gp-dyn..TIME=1256\n* Testing random     for gp-sta..TIME=12    for gp-dyn..TIME=12\n* Testing resultant     for gp-sta..TIME=22545    for gp-dyn..TIME=23341\n* Testing rfrac     for gp-sta..TIME=6680    for gp-dyn..TIME=7128\n* Testing rnf     for gp-sta..TIME=564    for gp-dyn..TIME=548\n* Testing rnfkummer     for gp-sta..TIME=87353    for gp-dyn..TIME=87361\n* Testing round4     for gp-sta..TIME=13872    for gp-dyn..TIME=13904\n* Testing select     for gp-sta..TIME=8    for gp-dyn..TIME=4\n* Testing stark     for gp-sta..TIME=47794    for gp-dyn..TIME=47862\n* Testing subcyclo     for gp-sta..TIME=4    for gp-dyn..TIME=8\n* Testing subfields     for gp-sta..TIME=24165    for gp-dyn..TIME=24129\n* Testing sumiter     for gp-sta..TIME=52    for gp-dyn..TIME=44\n* Testing thue     for gp-sta..TIME=3756    for gp-dyn..TIME=3932\n* Testing trans     for gp-sta..TIME=112    for gp-dyn..TIME=84\n* Testing zetak     for gp-sta..TIME=5560    for gp-dyn..TIME=5520\n* Testing zn     for gp-sta..TIME=8    for gp-dyn..TIME=8\n+++ [BUG] Total bench for gp-sta is 521185\n+++ [BUG] Total bench for gp-dyn is 528713\n\nPROBLEMS WERE NOTED. The following files list them in diff format: \nDirectory: /home/leif/Sage/sage-4.6.prealpha4/spkg/build/pari-2.4.3.svn-12577.p5/src/Olinux-i686\n    linear-sta.dif\n    linear-dyn.dif\nmake[1]: *** [test-all] Error 1\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.prealpha4/spkg/build/pari-2.4.3.svn-12577.p5/src/Olinux-i686'\nmake: *** [test-all] Error 2\nError: PARI failed the self-tests when running 'make -j8 test-all'\n*************************************\nError testing package ** pari-2.4.3.svn-12577.p5 **\n*************************************\nsage: An error occurred while testing pari-2.4.3.svn-12577.p5\n...\n```\n\nThe attached diffs generated by PARI look weird since PARI breaks the output into fixed width lines (and compares these) - even **within numbers** that would fit on a single line. \n\nI've reformatted both the expected and the actual output s.t. the differences are more readable; now more obviously this is just **numerical noise**:\n\n```diff\n--- pari-test-linear.should.reformatted.txt    2010-09-11 21:13:22.000000000 +0200\n+++ pari-test-linear.is.reformatted.txt    2010-09-11 23:25:41.000000000 +0200\n@@ -1,7 +1,7 @@\n ? (1.*mathilbert(7))^(-1)\n \n [       49.000000000000000000000000000001579425\n-     -1176.0000000000000000000000000000621879\n+     -1176.0000000000000000000000000000621902\n       8820.0000000000000000000000000005948011\n     -29400.000000000000000000000000002301748\n      48510.000000000000000000000000004207809\n@@ -9,7 +9,7 @@\n      12012.000000000000000000000000001189528]\n \n [    -1176.0000000000000000000000000000626175\n-     37632.000000000000000000000000002469695\n+     37632.000000000000000000000000002469681\n    -317520.00000000000000000000000002364675\n    1128960.0000000000000000000000000915946\n   -1940400.0000000000000000000000001675308\n@@ -17,7 +17,7 @@\n    -504504.00000000000000000000000004740575]\n \n [     8820.0000000000000000000000000006015186\n-   -317520.00000000000000000000000002375151\n+   -317520.00000000000000000000000002375139\n    2857680.0000000000000000000000002275919\n  -10584000.000000000000000000000000882085\n   18711000.000000000000000000000001614074\n@@ -25,7 +25,7 @@\n    5045040.0000000000000000000000004570220]\n \n [   -29400.000000000000000000000000002335330\n-   1128960.0000000000000000000000000922894\n+   1128960.0000000000000000000000000922890\n  -10584000.000000000000000000000000884843\n   40320000.000000000000000000000003430862\n  -72765000.000000000000000000000006279937\n@@ -33,7 +33,7 @@\n  -20180160.000000000000000000000001778972]\n \n [    48510.000000000000000000000000004278611\n-  -1940400.0000000000000000000000001691936\n+  -1940400.0000000000000000000000001691929\n   18711000.000000000000000000000001622888\n  -72765000.000000000000000000000006294553\n  133402500.00000000000000000000001152452\n@@ -41,7 +41,7 @@\n   37837800.000000000000000000000003265792]\n \n [   -38808.000000000000000000000000003696181\n-   1596672.0000000000000000000000001462360\n+   1596672.0000000000000000000000001462353\n  -15717240.000000000000000000000001403167\n   62092800.000000000000000000000005443713\n -115259760.00000000000000000000000996866\n@@ -49,7 +49,7 @@\n  -33297264.000000000000000000000002825670]\n \n [    12012.000000000000000000000000001213544\n-   -504504.00000000000000000000000004803250\n+   -504504.00000000000000000000000004803228\n    5045040.0000000000000000000000004610120\n  -20180160.000000000000000000000001788903\n   37837800.000000000000000000000003276393\n```\n\nAt least in Sage 4.6.alpha0 the slight deviation doesn't affect `ptestlong`, i.e. all tests passed regardless of PARI's self-tuning being enabled or not.\n\nNevertheless it's odd PARI's test suite fails with tuning enabled, since\n* Sage will reject to install the package when `SAGE_CHECK=yes`,\n* analyzing the failures is quite tedious, and\n* disabling the self-tests is potentially dangerous.\n\n---\n\nOn the same machine running Fedora 13 x86 (gcc 4.4.4) PARI's self-tuning hangs when tuning `REMIIMUL_LIMIT`, i.e. the output stops, but `tune` doesn't terminate. This should be reported upstream as well.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9899\n\n",
+    "closed_at": "2013-10-05T09:39:56Z",
     "created_at": "2010-09-11T22:35:44Z",
     "labels": [
         "component: packages: standard",
@@ -34,92 +35,92 @@ Bye !
 Building and installing PARI/GP...
 Making gp in Olinux-i686
 ...
-real	20m58.068s
-user	20m28.501s
-sys	0m20.849s
+real    20m58.068s
+user    20m28.501s
+sys    0m20.849s
 Successfully installed pari-2.4.3.svn-12577.p5
 Running the test suite.
 Making test-all in Olinux-i686
 ...
-* Testing analyz 	for gp-sta..TIME=28	for gp-dyn..TIME=36
-* Testing apply 	for gp-sta..TIME=0	for gp-dyn..TIME=8
-* Testing aurifeuille 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing bezout 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing bnfisintnorm 	for gp-sta..TIME=1124	for gp-dyn..TIME=1164
-* Testing bnr 	for gp-sta..TIME=36	for gp-dyn..TIME=44
-* Testing charpoly 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing combinat 	for gp-sta..TIME=36	for gp-dyn..TIME=12
-* Testing compat 	for gp-sta..TIME=448	for gp-dyn..TIME=432
-* Testing contfrac 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing debugger 	for gp-sta..TIME=8	for gp-dyn..TIME=4
-* Testing ell 	for gp-sta..TIME=18781	for gp-dyn..TIME=18869
-* Testing elliptic 	for gp-sta..TIME=44	for gp-dyn..TIME=36
-* Testing ellsea 	for gp-sta..TIME=27077	for gp-dyn..TIME=27025
-* Testing ellweilpairing 	for gp-sta..TIME=128	for gp-dyn..TIME=108
-* Testing err 	for gp-sta..TIME=4	for gp-dyn..TIME=4
-* Testing exact0 	for gp-sta..TIME=4	for gp-dyn..TIME=4
-* Testing extract 	for gp-sta..TIME=8	for gp-dyn..TIME=8
-* Testing ff 	for gp-sta..TIME=884	for gp-dyn..TIME=820
-* Testing ffisom 	for gp-sta..TIME=700	for gp-dyn..TIME=684
-* Testing galois 	for gp-sta..TIME=25029	for gp-dyn..TIME=25569
-* Testing galoisinit 	for gp-sta..TIME=7304	for gp-dyn..TIME=7276
-* Testing graph 	for gp-sta..TIME=24	for gp-dyn..TIME=32
-* Testing ideal 	for gp-sta..TIME=8	for gp-dyn..TIME=4
-* Testing idealappr 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing idealramgroups 	for gp-sta..TIME=3576	for gp-dyn..TIME=3580
-* Testing intformal 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing intnum 	for gp-sta..TIME=30797	for gp-dyn..TIME=31073
-* Testing ispower 	for gp-sta..TIME=7604	for gp-dyn..TIME=7632
-* Testing krasner 	for gp-sta..TIME=6996	for gp-dyn..TIME=7000
-* Testing linear 	for gp-sta..BUG [20]	for gp-dyn..BUG [36]
-* Testing list 	for gp-sta..TIME=96	for gp-dyn..TIME=60
-* Testing lll 	for gp-sta..TIME=0	for gp-dyn..TIME=4
-* Testing mat 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing matsnf 	for gp-sta..TIME=816	for gp-dyn..TIME=760
-* Testing member 	for gp-sta..TIME=136	for gp-dyn..TIME=108
-* Testing modpr 	for gp-sta..TIME=0	for gp-dyn..TIME=4
-* Testing multivar-mul 	for gp-sta..TIME=17417	for gp-dyn..TIME=19153
-* Testing nf 	for gp-sta..TIME=4128	for gp-dyn..TIME=4072
-* Testing nffactor 	for gp-sta..TIME=20721	for gp-dyn..TIME=20745
-* Testing nfhilbert 	for gp-sta..TIME=8	for gp-dyn..TIME=12
-* Testing nfields 	for gp-sta..TIME=248	for gp-dyn..TIME=216
-* Testing nfrootsof1 	for gp-sta..TIME=45166	for gp-dyn..TIME=45766
-* Testing number 	for gp-sta..TIME=76	for gp-dyn..TIME=48
-* Testing objets 	for gp-sta..TIME=4	for gp-dyn..TIME=4
-* Testing partition 	for gp-sta..TIME=60831	for gp-dyn..TIME=62931
-* Testing polchebyshev 	for gp-sta..TIME=16	for gp-dyn..TIME=20
-* Testing polmod 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing polred 	for gp-sta..TIME=6104	for gp-dyn..TIME=6136
-* Testing polyser 	for gp-sta..TIME=16	for gp-dyn..TIME=28
-* Testing printf 	for gp-sta..TIME=4	for gp-dyn..TIME=16
-* Testing program 	for gp-sta..TIME=44	for gp-dyn..TIME=28
-* Testing qf 	for gp-sta..TIME=4	for gp-dyn..TIME=4
-* Testing qfbsolve 	for gp-sta..TIME=3576	for gp-dyn..TIME=3756
-* Testing quad 	for gp-sta..TIME=0	for gp-dyn..TIME=8
-* Testing quadclassunit 	for gp-sta..TIME=17357	for gp-dyn..TIME=18169
-* Testing quadray 	for gp-sta..TIME=1232	for gp-dyn..TIME=1256
-* Testing random 	for gp-sta..TIME=12	for gp-dyn..TIME=12
-* Testing resultant 	for gp-sta..TIME=22545	for gp-dyn..TIME=23341
-* Testing rfrac 	for gp-sta..TIME=6680	for gp-dyn..TIME=7128
-* Testing rnf 	for gp-sta..TIME=564	for gp-dyn..TIME=548
-* Testing rnfkummer 	for gp-sta..TIME=87353	for gp-dyn..TIME=87361
-* Testing round4 	for gp-sta..TIME=13872	for gp-dyn..TIME=13904
-* Testing select 	for gp-sta..TIME=8	for gp-dyn..TIME=4
-* Testing stark 	for gp-sta..TIME=47794	for gp-dyn..TIME=47862
-* Testing subcyclo 	for gp-sta..TIME=4	for gp-dyn..TIME=8
-* Testing subfields 	for gp-sta..TIME=24165	for gp-dyn..TIME=24129
-* Testing sumiter 	for gp-sta..TIME=52	for gp-dyn..TIME=44
-* Testing thue 	for gp-sta..TIME=3756	for gp-dyn..TIME=3932
-* Testing trans 	for gp-sta..TIME=112	for gp-dyn..TIME=84
-* Testing zetak 	for gp-sta..TIME=5560	for gp-dyn..TIME=5520
-* Testing zn 	for gp-sta..TIME=8	for gp-dyn..TIME=8
+* Testing analyz     for gp-sta..TIME=28    for gp-dyn..TIME=36
+* Testing apply     for gp-sta..TIME=0    for gp-dyn..TIME=8
+* Testing aurifeuille     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing bezout     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing bnfisintnorm     for gp-sta..TIME=1124    for gp-dyn..TIME=1164
+* Testing bnr     for gp-sta..TIME=36    for gp-dyn..TIME=44
+* Testing charpoly     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing combinat     for gp-sta..TIME=36    for gp-dyn..TIME=12
+* Testing compat     for gp-sta..TIME=448    for gp-dyn..TIME=432
+* Testing contfrac     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing debugger     for gp-sta..TIME=8    for gp-dyn..TIME=4
+* Testing ell     for gp-sta..TIME=18781    for gp-dyn..TIME=18869
+* Testing elliptic     for gp-sta..TIME=44    for gp-dyn..TIME=36
+* Testing ellsea     for gp-sta..TIME=27077    for gp-dyn..TIME=27025
+* Testing ellweilpairing     for gp-sta..TIME=128    for gp-dyn..TIME=108
+* Testing err     for gp-sta..TIME=4    for gp-dyn..TIME=4
+* Testing exact0     for gp-sta..TIME=4    for gp-dyn..TIME=4
+* Testing extract     for gp-sta..TIME=8    for gp-dyn..TIME=8
+* Testing ff     for gp-sta..TIME=884    for gp-dyn..TIME=820
+* Testing ffisom     for gp-sta..TIME=700    for gp-dyn..TIME=684
+* Testing galois     for gp-sta..TIME=25029    for gp-dyn..TIME=25569
+* Testing galoisinit     for gp-sta..TIME=7304    for gp-dyn..TIME=7276
+* Testing graph     for gp-sta..TIME=24    for gp-dyn..TIME=32
+* Testing ideal     for gp-sta..TIME=8    for gp-dyn..TIME=4
+* Testing idealappr     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing idealramgroups     for gp-sta..TIME=3576    for gp-dyn..TIME=3580
+* Testing intformal     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing intnum     for gp-sta..TIME=30797    for gp-dyn..TIME=31073
+* Testing ispower     for gp-sta..TIME=7604    for gp-dyn..TIME=7632
+* Testing krasner     for gp-sta..TIME=6996    for gp-dyn..TIME=7000
+* Testing linear     for gp-sta..BUG [20]    for gp-dyn..BUG [36]
+* Testing list     for gp-sta..TIME=96    for gp-dyn..TIME=60
+* Testing lll     for gp-sta..TIME=0    for gp-dyn..TIME=4
+* Testing mat     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing matsnf     for gp-sta..TIME=816    for gp-dyn..TIME=760
+* Testing member     for gp-sta..TIME=136    for gp-dyn..TIME=108
+* Testing modpr     for gp-sta..TIME=0    for gp-dyn..TIME=4
+* Testing multivar-mul     for gp-sta..TIME=17417    for gp-dyn..TIME=19153
+* Testing nf     for gp-sta..TIME=4128    for gp-dyn..TIME=4072
+* Testing nffactor     for gp-sta..TIME=20721    for gp-dyn..TIME=20745
+* Testing nfhilbert     for gp-sta..TIME=8    for gp-dyn..TIME=12
+* Testing nfields     for gp-sta..TIME=248    for gp-dyn..TIME=216
+* Testing nfrootsof1     for gp-sta..TIME=45166    for gp-dyn..TIME=45766
+* Testing number     for gp-sta..TIME=76    for gp-dyn..TIME=48
+* Testing objets     for gp-sta..TIME=4    for gp-dyn..TIME=4
+* Testing partition     for gp-sta..TIME=60831    for gp-dyn..TIME=62931
+* Testing polchebyshev     for gp-sta..TIME=16    for gp-dyn..TIME=20
+* Testing polmod     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing polred     for gp-sta..TIME=6104    for gp-dyn..TIME=6136
+* Testing polyser     for gp-sta..TIME=16    for gp-dyn..TIME=28
+* Testing printf     for gp-sta..TIME=4    for gp-dyn..TIME=16
+* Testing program     for gp-sta..TIME=44    for gp-dyn..TIME=28
+* Testing qf     for gp-sta..TIME=4    for gp-dyn..TIME=4
+* Testing qfbsolve     for gp-sta..TIME=3576    for gp-dyn..TIME=3756
+* Testing quad     for gp-sta..TIME=0    for gp-dyn..TIME=8
+* Testing quadclassunit     for gp-sta..TIME=17357    for gp-dyn..TIME=18169
+* Testing quadray     for gp-sta..TIME=1232    for gp-dyn..TIME=1256
+* Testing random     for gp-sta..TIME=12    for gp-dyn..TIME=12
+* Testing resultant     for gp-sta..TIME=22545    for gp-dyn..TIME=23341
+* Testing rfrac     for gp-sta..TIME=6680    for gp-dyn..TIME=7128
+* Testing rnf     for gp-sta..TIME=564    for gp-dyn..TIME=548
+* Testing rnfkummer     for gp-sta..TIME=87353    for gp-dyn..TIME=87361
+* Testing round4     for gp-sta..TIME=13872    for gp-dyn..TIME=13904
+* Testing select     for gp-sta..TIME=8    for gp-dyn..TIME=4
+* Testing stark     for gp-sta..TIME=47794    for gp-dyn..TIME=47862
+* Testing subcyclo     for gp-sta..TIME=4    for gp-dyn..TIME=8
+* Testing subfields     for gp-sta..TIME=24165    for gp-dyn..TIME=24129
+* Testing sumiter     for gp-sta..TIME=52    for gp-dyn..TIME=44
+* Testing thue     for gp-sta..TIME=3756    for gp-dyn..TIME=3932
+* Testing trans     for gp-sta..TIME=112    for gp-dyn..TIME=84
+* Testing zetak     for gp-sta..TIME=5560    for gp-dyn..TIME=5520
+* Testing zn     for gp-sta..TIME=8    for gp-dyn..TIME=8
 +++ [BUG] Total bench for gp-sta is 521185
 +++ [BUG] Total bench for gp-dyn is 528713
 
 PROBLEMS WERE NOTED. The following files list them in diff format: 
 Directory: /home/leif/Sage/sage-4.6.prealpha4/spkg/build/pari-2.4.3.svn-12577.p5/src/Olinux-i686
-	linear-sta.dif
-	linear-dyn.dif
+    linear-sta.dif
+    linear-dyn.dif
 make[1]: *** [test-all] Error 1
 make[1]: Leaving directory `/home/leif/Sage/sage-4.6.prealpha4/spkg/build/pari-2.4.3.svn-12577.p5/src/Olinux-i686'
 make: *** [test-all] Error 2
@@ -136,8 +137,8 @@ The attached diffs generated by PARI look weird since PARI breaks the output int
 I've reformatted both the expected and the actual output s.t. the differences are more readable; now more obviously this is just **numerical noise**:
 
 ```diff
---- pari-test-linear.should.reformatted.txt	2010-09-11 21:13:22.000000000 +0200
-+++ pari-test-linear.is.reformatted.txt	2010-09-11 23:25:41.000000000 +0200
+--- pari-test-linear.should.reformatted.txt    2010-09-11 21:13:22.000000000 +0200
++++ pari-test-linear.is.reformatted.txt    2010-09-11 23:25:41.000000000 +0200
 @@ -1,7 +1,7 @@
  ? (1.*mathilbert(7))^(-1)
  
@@ -213,6 +214,7 @@ Nevertheless it's odd PARI's test suite fails with tuning enabled, since
 ---
 
 On the same machine running Fedora 13 x86 (gcc 4.4.4) PARI's self-tuning hangs when tuning `REMIIMUL_LIMIT`, i.e. the output stops, but `tune` doesn't terminate. This should be reported upstream as well.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9899
 

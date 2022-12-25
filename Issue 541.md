@@ -4,6 +4,7 @@ archive/issues_000541.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  michael.abshoff@googlemail.com\n\nGet mpfr-2.3.0 into SAGE\n\nIssue created by migration from https://trac.sagemath.org/ticket/541\n\n",
+    "closed_at": "2007-09-14T21:46:43Z",
     "created_at": "2007-08-31T19:30:00Z",
     "labels": [
         "component: packages: standard"

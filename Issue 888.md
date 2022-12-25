@@ -1,23 +1,23 @@
-# Issue 888: 2.8.7-alpha0: doctest failure in dsage/tests/testdoc.py (requires previous dsage setup)
+# Issue 888: 2.8.8-alpha0: doctest failure in dsage/tests/testdoc.py (requires previous dsage setup)
 
 archive/issues_000888.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nFile \"testdoc.py\", line 12:\n    age: d = DSage(port=port, ssl=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        d = DSage(port=port, ssl=False)###line 12:\n    age: d = DSage(port=port, ssl=False)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/all.py\", line 52, in DSage\n        ssl=ssl)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/interface/dsage_interface.py\", line 392, in __init__\n        self.pubkey_str = keys.getPublicKeyString(filename=self.pubkey_file)\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/site-packages/twisted/conch/ssh/keys.py\", line 48, in getPublicKeyString\n        lines = open(filename).readlines()\n    IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'\n```\n\n(The last line is the most interesting.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/888\n\n",
+    "body": "Assignee: @yqiang\n\n```\nFile \"testdoc.py\", line 12:\n    age: d = DSage(port=port, ssl=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        d = DSage(port=port, ssl=False)###line 12:\n    age: d = DSage(port=port, ssl=False)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/all.py\", line 52, in DSage\n        ssl=ssl)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/interface/dsage_interface.py\", line 392, in __init__\n        self.pubkey_str = keys.getPublicKeyString(filename=self.pubkey_file)\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/site-packages/twisted/conch/ssh/keys.py\", line 48, in getPublicKeyString\n        lines = open(filename).readlines()\n    IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'\n```\n\n(The last line is the most interesting.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/888\n\n",
+    "closed_at": "2008-03-21T23:39:49Z",
     "created_at": "2007-10-13T20:36:32Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "2.8.7-alpha0: doctest failure in dsage/tests/testdoc.py (requires previous dsage setup)",
+    "title": "2.8.8-alpha0: doctest failure in dsage/tests/testdoc.py (requires previous dsage setup)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/888",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @yqiang
 
 ```
 File "testdoc.py", line 12:

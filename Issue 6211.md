@@ -1,16 +1,17 @@
-# Issue 6211: typesetting symbolic integrals broken
+# Issue 6211: [with patch, positive review] typesetting exp sometimes broken
 
 archive/issues_006211.json:
 ```json
 {
-    "body": "CC:  @mwhansen\n\nReported by Ricardo on sage-support:\n\n```\nI had installed sage 3.4.1 in my Ubuntu machine, and every time I did\nsomething like:\n\nf=function(\"f\",x)\nintegrate(f,x,0,1)\n\nin a notebook, sage showed me the equation using an integral symbol. I\njust installed sage 4.0, and when I do the same, I get:\n\nintegrate(f(x), x, 0, 1)\n\n\nno matter if I check the Typeset Box. It happens also with\nderivatives.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6211\n\n",
+    "body": "CC:  @mwhansen\n\nTypesetting e.g. e^sqrt(kappa) doesn't currently work.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/6211\n\n",
+    "closed_at": "2009-06-14T21:41:01Z",
     "created_at": "2009-06-04T20:06:11Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "typesetting symbolic integrals broken",
+    "title": "[with patch, positive review] typesetting exp sometimes broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6211",
     "user": "https://github.com/burcin"
@@ -18,24 +19,7 @@ archive/issues_006211.json:
 ```
 CC:  @mwhansen
 
-Reported by Ricardo on sage-support:
-
-```
-I had installed sage 3.4.1 in my Ubuntu machine, and every time I did
-something like:
-
-f=function("f",x)
-integrate(f,x,0,1)
-
-in a notebook, sage showed me the equation using an integral symbol. I
-just installed sage 4.0, and when I do the same, I get:
-
-integrate(f(x), x, 0, 1)
-
-
-no matter if I check the Typeset Box. It happens also with
-derivatives.
-```
+Typesetting e.g. e^sqrt(kappa) doesn't currently work.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/6211
 

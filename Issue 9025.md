@@ -3,7 +3,8 @@
 archive/issues_009025.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nAttempting a 64-bit build of Sage on OpenSolaris I noticed several files are built 32-bit, even though SAGE64 is set to yes. This includes the following files. \n\n```\nrkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x | grep 32\nlocal/bin/class.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/cws.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/nef.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/poly.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n\n```\n\nwhich are all part of 'PALP' There is nothing in the Makefile to force a 64-bit build on any platform, so I would not be surprised if only 32-bit objects were built on OS X or anywhere else where SAGE64 needs to be set to \"yes\" to get a 64-bit build.\n\nFixing this should be quite easy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9025\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nAttempting a 64-bit build of Sage on OpenSolaris I noticed several files are built 32-bit, even though SAGE64 is set to yes. This includes the following files. \n\n```\nrkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x | grep 32\nlocal/bin/class.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/cws.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/nef.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/poly.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n```\n\nwhich are all part of 'PALP' There is nothing in the Makefile to force a 64-bit build on any platform, so I would not be surprised if only 32-bit objects were built on OS X or anywhere else where SAGE64 needs to be set to \"yes\" to get a 64-bit build.\n\nFixing this should be quite easy. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9025\n\n",
+    "closed_at": "2010-06-25T15:48:14Z",
     "created_at": "2010-05-23T23:57:34Z",
     "labels": [
         "component: porting: solaris",
@@ -24,16 +25,15 @@ Attempting a 64-bit build of Sage on OpenSolaris I noticed several files are bui
 
 ```
 rkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x | grep 32
-local/bin/class.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
-local/bin/cws.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
-local/bin/nef.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
-local/bin/poly.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
-
+local/bin/class.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
+local/bin/cws.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
+local/bin/nef.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
+local/bin/poly.x: ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
 ```
 
 which are all part of 'PALP' There is nothing in the Makefile to force a 64-bit build on any platform, so I would not be surprised if only 32-bit objects were built on OS X or anywhere else where SAGE64 needs to be set to "yes" to get a 64-bit build.
 
-Fixing this should be quite easy.
+Fixing this should be quite easy. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9025
 

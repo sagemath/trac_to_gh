@@ -1,23 +1,22 @@
-# Issue 1099: graphs: consolidating delete functionality
+# Issue 1099: [with patch, not quite ready for review] graphs: consolidating delete functionality
 
 archive/issues_001099.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nCurrently there are four different functions to delete things from a graph: delete_edge, delete_edges, delete_vertex, and delete_vertices.  How about we consolidate these into one function, \"delete\", that looks like this:\n\ndelete(vertices=list_of_vertices, edges=list_of_edges) deletes the vertices specified, then the edges specified.\n\nSo:\n\n* delete_vertex(v) == delete(vertices=[v])\n\n* delete_vertices(list) == delete(vertices=list)\n\n* delete_edge(e) == delete(edges=[e])\n\n* delete_edges(list) == delete(edges=list)\n\n* deleting vertices and edges is accomplished by passing both parameters in.\n\nThis idea may be completely irrational, but I thought I'd throw it out in an effort to consolidate functions and make the interface simpler to remember.  What do you think?\n\n(I'm ignoring delete_multiedge here, though we could probably include that in as an option to delete).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1099\n\n",
+    "body": "Assignee: @rlmill\n\nCurrently there are four different functions to delete things from a graph: delete_edge, delete_edges, delete_vertex, and delete_vertices.  How about we consolidate these into one function, \"delete\", that looks like this:\n\ndelete(vertices=list_of_vertices, edges=list_of_edges) deletes the vertices specified, then the edges specified.\n\nSo:\n\n* delete_vertex(v) == delete(vertices=[v])\n\n* delete_vertices(list) == delete(vertices=list)\n\n* delete_edge(e) == delete(edges=[e])\n\n* delete_edges(list) == delete(edges=list)\n\n* deleting vertices and edges is accomplished by passing both parameters in.\n\nThis idea may be completely irrational, but I thought I'd throw it out in an effort to consolidate functions and make the interface simpler to remember.  What do you think?\n\n(I'm ignoring delete_multiedge here, though we could probably include that in as an option to delete).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1099\n\n",
+    "closed_at": "2008-08-30T21:50:29Z",
     "created_at": "2007-11-04T03:30:51Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "graphs: consolidating delete functionality",
+    "title": "[with patch, not quite ready for review] graphs: consolidating delete functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1099",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 Currently there are four different functions to delete things from a graph: delete_edge, delete_edges, delete_vertex, and delete_vertices.  How about we consolidate these into one function, "delete", that looks like this:
 

@@ -3,7 +3,8 @@
 archive/issues_007239.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu\n\nA small spkg to provide factorization of Cunningham numbers.\n\nThe raw data is from http://cage.ugent.be/~jdemeyer/cunningham\n\nIssue created by migration from https://trac.sagemath.org/ticket/7239\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu\n\nKeywords: integer factorization Cunningham\n\nA small spkg to provide factorization of Cunningham numbers.\n\nThe raw data is from http://cage.ugent.be/~jdemeyer/cunningham\n\nSome applications are in ticket #7240\n\nIssue created by migration from https://trac.sagemath.org/ticket/7239\n\n",
+    "closed_at": "2010-01-13T10:02:28Z",
     "created_at": "2009-10-18T10:27:05Z",
     "labels": [
         "component: factorization"
@@ -19,9 +20,13 @@ Assignee: tbd
 
 CC:  mvngu
 
+Keywords: integer factorization Cunningham
+
 A small spkg to provide factorization of Cunningham numbers.
 
 The raw data is from http://cage.ugent.be/~jdemeyer/cunningham
+
+Some applications are in ticket #7240
 
 Issue created by migration from https://trac.sagemath.org/ticket/7239
 

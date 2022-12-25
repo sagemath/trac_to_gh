@@ -1,15 +1,16 @@
-# Issue 3259: [with patch; needs review] shared library versioning for flint
+# Issue 3259: [with patch; positive review] shared library versioning for flint
 
 archive/issues_003259.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  f.r.bissey@massey.ac.nz\n\nI've attached a patch which should add shared library versioning to libflint.so.\n\nIt includes the relevant patch for the Debian package and spkg-install, and also the relevant change s to the Debian packaging.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3259\n\n",
+    "closed_at": "2008-05-28T08:25:13Z",
     "created_at": "2008-05-19T22:26:53Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] shared library versioning for flint",
+    "title": "[with patch; positive review] shared library versioning for flint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3259",
     "user": "https://github.com/timabbott"

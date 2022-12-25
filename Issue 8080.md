@@ -4,6 +4,7 @@ archive/issues_008080.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nTicket #7485 removes Linux Fortran binaries, so as of Sage 4.3.1 only Fortran binaries for Mac OS X are shipped with Sage. Ticket #7484 updates the README.txt to require Fortran as a pre-requisite for compiling Sage on Linux. Another likely candidate for documentation update is the [Installation Guide](http://www.sagemath.org/doc/installation). Let's update that guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8080\n\n",
+    "closed_at": "2010-02-18T21:58:59Z",
     "created_at": "2010-01-26T16:32:25Z",
     "labels": [
         "component: documentation",

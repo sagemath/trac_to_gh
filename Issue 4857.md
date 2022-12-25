@@ -1,16 +1,17 @@
-# Issue 4857: [with spkg, needs discussion] Example C Library
+# Issue 4857: script to create spkg template
 
 archive/issues_004857.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\n(see also the respective thread at sage-devel)\n\nAlthough this spkg is pretty small, putting it in a trac ticket is probably not the best idea. But currently, I haven't got access to any other web space where I could place it.\n\nInstall with \"sage -i exampleclib-1.0.0.spkg\"; the documentation is the under\n\n$SAGE_ROOT/devel/exampleclib/src/README.txt\n\n$SAGE_ROOT/devel/exampleclib/src/doc/*\n\nIssue created by migration from https://trac.sagemath.org/ticket/4857\n\n",
+    "closed_at": "2014-09-09T14:53:46Z",
     "created_at": "2008-12-23T10:07:43Z",
     "labels": [
-        "component: experimental package",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with spkg, needs discussion] Example C Library",
+    "title": "script to create spkg template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4857",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"

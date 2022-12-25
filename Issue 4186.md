@@ -1,16 +1,17 @@
-# Issue 4186: [with patch, needs review] speed up default __call__
+# Issue 4186: [with patch, positive review] speed up default __call__
 
 archive/issues_004186.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nAs this is used everywhere, I added a couple more optimizations. Cython generates less then optimal code here too, which I will fix. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4186\n\n",
+    "closed_at": "2008-09-24T10:04:03Z",
     "created_at": "2008-09-24T08:41:15Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] speed up default __call__",
+    "title": "[with patch, positive review] speed up default __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4186",
     "user": "https://github.com/robertwb"

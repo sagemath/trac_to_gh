@@ -1,16 +1,16 @@
-# Issue 2186: [with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search
+# Issue 2186: [with patch, postive review] verbosity for graph_isom - visualize the tree that is traversed during search
 
 archive/issues_002186.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis allows one to see what the tree that is traversed actually looks like.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2186\n\n",
+    "closed_at": "2008-02-19T22:14:56Z",
     "created_at": "2008-02-17T00:00:30Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search",
+    "title": "[with patch, postive review] verbosity for graph_isom - visualize the tree that is traversed during search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2186",
     "user": "https://github.com/rlmill"

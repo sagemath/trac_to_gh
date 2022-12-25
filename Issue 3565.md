@@ -3,7 +3,8 @@
 archive/issues_003565.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  @TimDumol @qed777\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3565\n\n",
+    "body": "Assignee: failure\n\nCC:  @TimDumol @qed777\n\nBefore:\n\n```\nteragon-2:notebook was$ sage -coverage worksheet.py\n----------------------------------------------------------------------\nworksheet.py\nSCORE worksheet.py: 35% (68 of 193)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3565\n\n",
+    "closed_at": "2012-06-02T12:39:19Z",
     "created_at": "2008-07-06T19:05:49Z",
     "labels": [
         "component: doctest coverage"
@@ -19,7 +20,14 @@ Assignee: failure
 
 CC:  @TimDumol @qed777
 
+Before:
 
+```
+teragon-2:notebook was$ sage -coverage worksheet.py
+----------------------------------------------------------------------
+worksheet.py
+SCORE worksheet.py: 35% (68 of 193)
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3565
 

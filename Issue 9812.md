@@ -1,15 +1,17 @@
-# Issue 9812: parametric plot aspect ratio
+# Issue 9812: parametric plot  and polar plot aspect ratio
 
 archive/issues_009812.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman @rbeezer\n\nI think parametric_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.\n\nBesides, it seems like mma does this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9813\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @rbeezer\n\nKeywords: beginner\n\nI think parametric_plot and polar_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.\n\nIn my tests, mma also gives an aspect_ratio of 1 for these sorts of plots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9813\n\n",
+    "closed_at": "2010-09-15T10:40:44Z",
     "created_at": "2010-08-27T01:39:32Z",
     "labels": [
-        "component: graphics"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "parametric plot aspect ratio",
+    "title": "parametric plot  and polar plot aspect ratio",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9812",
     "user": "https://github.com/jasongrout"
@@ -19,9 +21,11 @@ Assignee: jason, was
 
 CC:  @kcrisman @rbeezer
 
-I think parametric_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.
+Keywords: beginner
 
-Besides, it seems like mma does this too.
+I think parametric_plot and polar_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.
+
+In my tests, mma also gives an aspect_ratio of 1 for these sorts of plots.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9813
 

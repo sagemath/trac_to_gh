@@ -1,17 +1,18 @@
-# Issue 873: sage -clone is rebuilding everything !
+# Issue 873: [with patch] sage -clone is rebuilding everything !
 
 archive/issues_000873.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nDoing \"sage -clone foo\" rebuild all the pyx files, which is terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/873\n\n",
+    "closed_at": "2007-10-13T07:14:33Z",
     "created_at": "2007-10-13T05:49:12Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: user interface",
         "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "sage -clone is rebuilding everything !",
+    "title": "[with patch] sage -clone is rebuilding everything !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/873",
     "user": "https://github.com/williamstein"

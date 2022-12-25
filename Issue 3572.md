@@ -1,4 +1,4 @@
-# Issue 3572: optimize sage startup time by not importing any modules that import linbox by default.
+# Issue 3572: [with patch; needs work] optimize sage startup time by not importing any modules that import linbox by default.
 
 archive/issues_003572.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_003572.json:
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "optimize sage startup time by not importing any modules that import linbox by default.",
+    "title": "[with patch; needs work] optimize sage startup time by not importing any modules that import linbox by default.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3572",
     "user": "https://github.com/williamstein"

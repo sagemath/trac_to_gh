@@ -3,7 +3,8 @@
 archive/issues_006484.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @tscrim @hivert @avirmaux\n\nKeywords: rank, unrank\n\nsage.combinat.ranker needs improvements:\n-  With:\n   {{{\n   sage: f = sage.combinat.ranker.rank_from_list([...]) \n   }}}\n\n   f uses list.index, and is therefore O(n). This should be made O(1) with a hash table.\n\n- The rank / unrank objects produced by this library should be picklable.\n\n- ...?\n\npatch under construction on the sage-combinat patch server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6484\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @tscrim @hivert @avirmaux\n\nKeywords: rank, unrank\n\nsage.combinat.ranker needs improvements:\n-  With:\n   {{{\n   sage: f = sage.combinat.ranker.rank_from_list([...]) \n   }}}\n\n   f uses `list.index`, and is therefore `O(n)`. This should be made `O(1)` with a hash table.\n\nFurther potential improvement (for a later ticket?):\n\n- make the rank / unrank objects produced by this library picklable.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6484\n\n",
+    "closed_at": "2015-05-06T21:03:26Z",
     "created_at": "2009-07-08T16:48:08Z",
     "labels": [
         "component: combinatorics"
@@ -27,13 +28,12 @@ sage.combinat.ranker needs improvements:
    sage: f = sage.combinat.ranker.rank_from_list([...]) 
    }}}
 
-   f uses list.index, and is therefore O(n). This should be made O(1) with a hash table.
+   f uses `list.index`, and is therefore `O(n)`. This should be made `O(1)` with a hash table.
 
-- The rank / unrank objects produced by this library should be picklable.
+Further potential improvement (for a later ticket?):
 
-- ...?
+- make the rank / unrank objects produced by this library picklable.
 
-patch under construction on the sage-combinat patch server.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6484
 

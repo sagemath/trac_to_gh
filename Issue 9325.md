@@ -3,10 +3,10 @@
 archive/issues_009325.json:
 ```json
 {
-    "body": "Assignee: @ncalexan\n\nKeywords: preparse docstring\n\nI found (and fixed) a few Bugs in the file local/bin/sage-preparse.\n\nThese are the things I fixed:\n\n* The module docstrings disappeared when preparsing because the\npreparse_file function inserted those numeric_literals definitions before\nthe docstrings.\n\n* Now also unicode-docstrings (e.g. u\"\"\"foo\"\"\") are recognized as\ndocstrings. Also raw docstrings may now use an upper case R as string\nmodifier (R\"\"\"foo\"\"\" would work now) which is allowed in Python.\n\n* Now all coding-comments as specified by Python are found and excluded\nfrom preparsing.\n\n* I did not fix a bug that occurs when a statement is on the same line\nwhere the docstring ends (e.g. \"\"\"foo\"\"\"; print 2^5). It will not be\npreparsed! I added a TODO-comment on the according line. \n\ngreetings,\nDavid Poetzsch-Heffter\n\nIssue created by migration from https://trac.sagemath.org/ticket/9325\n\n",
+    "body": "Assignee: @jasongrout\n\nKeywords: preparse docstring\n\nI found (and fixed) a few Bugs in the file local/bin/sage-preparse.\n\nThese are the things I fixed:\n\n* The module docstrings disappeared when preparsing because the\npreparse_file function inserted those numeric_literals definitions before\nthe docstrings.\n\n* Now also unicode-docstrings (e.g. u\"\"\"foo\"\"\") are recognized as\ndocstrings. Also raw docstrings may now use an upper case R as string\nmodifier (R\"\"\"foo\"\"\" would work now) which is allowed in Python.\n\n* Now all coding-comments as specified by Python are found and excluded\nfrom preparsing.\n\n* I did not fix a bug that occurs when a statement is on the same line\nwhere the docstring ends, e.g.\n\n```\n\"\"\"foo\"\"\"; print 2^5\n```\nIt will not be preparsed! I added a TODO-comment on the according line. \n\ngreetings,\nDavid Poetzsch-Heffter\n\nIssue created by migration from https://trac.sagemath.org/ticket/9325\n\n",
     "created_at": "2010-06-24T10:02:02Z",
     "labels": [
-        "component: sage-mode",
+        "component: misc",
         "bug"
     ],
     "title": "Bugs concerning coding comments and docstrings in sage-preparse",
@@ -15,7 +15,7 @@ archive/issues_009325.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dpoetzsch"
 }
 ```
-Assignee: @ncalexan
+Assignee: @jasongrout
 
 Keywords: preparse docstring
 
@@ -35,8 +35,12 @@ modifier (R"""foo""" would work now) which is allowed in Python.
 from preparsing.
 
 * I did not fix a bug that occurs when a statement is on the same line
-where the docstring ends (e.g. """foo"""; print 2^5). It will not be
-preparsed! I added a TODO-comment on the according line. 
+where the docstring ends, e.g.
+
+```
+"""foo"""; print 2^5
+```
+It will not be preparsed! I added a TODO-comment on the according line. 
 
 greetings,
 David Poetzsch-Heffter

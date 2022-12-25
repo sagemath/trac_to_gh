@@ -1,16 +1,17 @@
-# Issue 4522: [with patch, needs review] polynomial interface improvements
+# Issue 4522: [with patch, positive review] polynomial interface improvements
 
 archive/issues_004522.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nAttached patch makes the following changes to improve the user interface of the polynomial classes:\n\n* Remove .name() method, since .variable_name() already provides same functionality.\n* make the .degree() function of univariate polynomials accept one argument,\n  the generator, to be consistent with the .degree() of multivariate\n  polynomials.\n* Add an .is_monomial() method to univariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4522\n\n",
+    "closed_at": "2008-11-28T20:51:15Z",
     "created_at": "2008-11-14T09:17:02Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] polynomial interface improvements",
+    "title": "[with patch, positive review] polynomial interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4522",
     "user": "https://github.com/burcin"

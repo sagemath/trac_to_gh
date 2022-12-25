@@ -3,7 +3,8 @@
 archive/issues_009662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n```\ngp> kill(x)   /* No output */\n```\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n```\ngp> kill(x)   /* No output */\n```\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
+    "closed_at": "2013-07-24T12:23:34Z",
     "created_at": "2010-08-01T17:37:29Z",
     "labels": [
         "component: interfaces",
@@ -17,6 +18,8 @@ archive/issues_009662.json:
 }
 ```
 Assignee: @williamstein
+
+Keywords: pari
 
 When executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
 

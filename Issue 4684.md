@@ -1,15 +1,16 @@
-# Issue 4684: should be easier to change how many threads used for "make ptest" and friends
+# Issue 4684: [with patch, positive review] should be easier to change how many threads used for "make ptest" and friends
 
 archive/issues_004684.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI just ran a `make ptest` and was surprised to see my 4-core machine overwhelmed. Of course, that's because the makefile in $SAGE_ROOT defaults to \"`-tp 12`\" for all the parallel testing.\n\nI added a variable at the top of the makefile so that the, uh, tiny minority of Sage users with fewer than 16 cores can easily edit the makefile so that parallel testing doesn't kill their machines. :)\n\nSince $SAGE_ROOT isn't under version control, I'm just uploading the entire new makefile. The changes are really simple.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4684\n\n",
+    "closed_at": "2008-12-03T06:55:02Z",
     "created_at": "2008-12-03T05:53:28Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "should be easier to change how many threads used for \"make ptest\" and friends",
+    "title": "[with patch, positive review] should be easier to change how many threads used for \"make ptest\" and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4684",
     "user": "https://github.com/dandrake"

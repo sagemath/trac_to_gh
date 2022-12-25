@@ -1,9 +1,10 @@
-# Issue 5173: Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots
+# Issue 5173: [with patch, positive review] Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots
 
 archive/issues_005173.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nObserved on cleo and iras:\n\n```\nsage -t -long \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha5/sage-3.3.alpha5-cleo/devel/sage/sage/rings/polynomial/polynomial_element.pyx\", line 3418:\n    sage: p.roots(ring=ComplexIntervalField(200))\nExpected:\n    [(1.167303978261418684256045899854842180720560371525489039140082?, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? - \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? + \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? - \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? + \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1)]\nGot:\n    [(1.167303978261418684256045899854842180720560371525489039140082?, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? - \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? - \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? + \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? + \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1)]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5173\n\n",
+    "closed_at": "2009-02-05T10:49:24Z",
     "created_at": "2009-02-04T14:12:13Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005173.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots",
+    "title": "[with patch, positive review] Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5173",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

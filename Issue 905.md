@@ -1,25 +1,26 @@
-# Issue 905: update the version of ipython included in sage
+# Issue 905: [with package, positive review] update ipython to 0.8.2
 
 archive/issues_000905.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/905\n\n",
+    "body": "Assignee: @burcin\n\nCC:  mabshoff\n\nthis can wait.\n\nIssue created by migration from https://trac.sagemath.org/ticket/905\n\n",
+    "closed_at": "2008-05-11T19:40:47Z",
     "created_at": "2007-10-16T01:39:38Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "update the version of ipython included in sage",
+    "title": "[with package, positive review] update ipython to 0.8.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/905",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 CC:  mabshoff
 
-
+this can wait.
 
 Issue created by migration from https://trac.sagemath.org/ticket/905
 

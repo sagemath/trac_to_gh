@@ -3,7 +3,8 @@
 archive/issues_009380.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nThe patch here implements Kaehler and Mori cones, but needs some further work.\n\nIt is moved from #8988 and should probably be incorporated after #9337.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9380\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nThe patch here implements Kaehler and Mori cones, but was incorporated in patches for #9337, so this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9380\n\n",
+    "closed_at": "2010-09-15T09:58:49Z",
     "created_at": "2010-06-29T19:32:14Z",
     "labels": [
         "component: algebraic geometry"
@@ -19,9 +20,7 @@ Assignee: @aghitza
 
 CC:  @vbraun
 
-The patch here implements Kaehler and Mori cones, but needs some further work.
-
-It is moved from #8988 and should probably be incorporated after #9337.
+The patch here implements Kaehler and Mori cones, but was incorporated in patches for #9337, so this ticket can be closed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9380
 

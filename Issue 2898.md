@@ -1,22 +1,25 @@
-# Issue 2898: Coerce float and RDF to Integers
+# Issue 2898: [with patch, positive review] Coerce integral float and RDF to Integers
 
 archive/issues_002898.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n>  That said, William, is there a reason why this doesn't work?  This is\n> >  what is necessitating the two type conversions above.\n> >\n> >  sage: Integer(float(2))\n> >\n> > ---------------------------------------------------------------------------\n> >  <type 'exceptions.TypeError'>             Traceback (most recent call last)\n> >\n> >  /home/grout/<ipython console> in <module>()\n> >\n> >  /home/grout/integer.pyx in sage.rings.integer.Integer.__init__()\n> >\n> >  <type 'exceptions.TypeError'>: unable to coerce element to an integer\n> >\n> >\n> >  sage: Integer(RDF(2))\n> >\n> > ---------------------------------------------------------------------------\n> >  <type 'exceptions.TypeError'>             Traceback (most recent call last)\n> >\n> >  /home/grout/<ipython console> in <module>()\n> >\n> >  /home/grout/integer.pyx in sage.rings.integer.Integer.__init__()\n> >\n> >  <type 'exceptions.TypeError'>: unable to coerce element to an integer\n> >\n> >\n> >  I guess I would think it was a design decision to not convert floating\n> >  points to ints automatically.  However, the following does work:\n> >\n> >  sage: Integer(RR(2))\n> >  2\n> >\n> >\n> >  This seems inconsistent.\n\nYep.  I think it's just a NotImplementedError.  Please implement it\nand post a patch.  Make sure that it only succeeds if\n\n   Integer(k(a)) == a\n\nand otherwise fails.  I.e., Integer(k(a)) should *not* truncate k(a).\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2898\n\n",
+    "body": "Assignee: @robertwb\n\nKeywords: editor_mhansen\n\n```\n>  That said, William, is there a reason why this doesn't work?  This is\n> >  what is necessitating the two type conversions above.\n> >\n> >  sage: Integer(float(2))\n> >\n> > ---------------------------------------------------------------------------\n> >  <type 'exceptions.TypeError'>             Traceback (most recent call last)\n> >\n> >  /home/grout/<ipython console> in <module>()\n> >\n> >  /home/grout/integer.pyx in sage.rings.integer.Integer.__init__()\n> >\n> >  <type 'exceptions.TypeError'>: unable to coerce element to an integer\n> >\n> >\n> >  sage: Integer(RDF(2))\n> >\n> > ---------------------------------------------------------------------------\n> >  <type 'exceptions.TypeError'>             Traceback (most recent call last)\n> >\n> >  /home/grout/<ipython console> in <module>()\n> >\n> >  /home/grout/integer.pyx in sage.rings.integer.Integer.__init__()\n> >\n> >  <type 'exceptions.TypeError'>: unable to coerce element to an integer\n> >\n> >\n> >  I guess I would think it was a design decision to not convert floating\n> >  points to ints automatically.  However, the following does work:\n> >\n> >  sage: Integer(RR(2))\n> >  2\n> >\n> >\n> >  This seems inconsistent.\n\nYep.  I think it's just a NotImplementedError.  Please implement it\nand post a patch.  Make sure that it only succeeds if\n\n   Integer(k(a)) == a\n\nand otherwise fails.  I.e., Integer(k(a)) should *not* truncate k(a).\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2898\n\n",
+    "closed_at": "2009-02-09T08:53:42Z",
     "created_at": "2008-04-12T16:08:08Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Coerce float and RDF to Integers",
+    "title": "[with patch, positive review] Coerce integral float and RDF to Integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2898",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
+
+Keywords: editor_mhansen
 
 ```
 >  That said, William, is there a reason why this doesn't work?  This is

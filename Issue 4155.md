@@ -1,16 +1,17 @@
-# Issue 4155: [with patch, needs review] Speed up totally real field enumeration code
+# Issue 4155: [with patch, positive review] Speed up totally real field enumeration code
 
 archive/issues_004155.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  alexghitza\n\nThe attached patch provides a significant speedup of John Voight's totally real field enumeration code. The patch moves `enumerate_totallyreal_fields_prim` into Cython (and thus `totallyreal.py` becomes `totallyreal.pyx`). Most of the speedup comes from explicitly declaring and being careful about types. A few small improvements to the Pari interface are thrown in, since they were written in the process of speeding up this code.\n\nWhile I haven't performed any sort of systematic test, it seems that this code offers a factor of at least 2X speedup for enumerating fields of degree 5 or 6. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4155\n\n",
+    "closed_at": "2008-09-23T00:09:03Z",
     "created_at": "2008-09-20T08:18:45Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] Speed up totally real field enumeration code",
+    "title": "[with patch, positive review] Speed up totally real field enumeration code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4155",
     "user": "https://github.com/craigcitro"

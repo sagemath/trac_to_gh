@@ -1,15 +1,16 @@
-# Issue 1274: modify singular interface to allow for verbose output
+# Issue 1274: [with patch, with positive review] modify singular interface to allow for verbose output
 
 archive/issues_001274.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSimon King:\n Now, another question on the Singular interface:\nIn Singular, doing\n`matrix P,S,IS = invariant_ring(A,1);`\nwould make Singular to additionally print information about the\nprogress of computations (which, in big examples, might be nice to\nhave).\nHowever, when i use the Singular interface, i can not see such\ninformations. Where are they gone?\n\nMartin Albrecht:\nThe information is printed but ignored because pexpect expects\nSingular 'output' and ignores the rest. I am no pexpect expert so I don't\nknow how to fix it. It would very very useful though. Anyone else has any\nidea?\n\nWilliam Stein:\nI think this would be possible to implement, by modifying\ninterfaces/singular.py. It's easiest if we just have it print out\nthe result of all the verbose output, rather than all of it along the way as it is\noutput by singular, though the latter would also be possible.   With pseudo-tty's it is\npossible to do anything you could really imagine doing by hand while physically using\na terminal to interact with singular.  Anything.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1274\n\n",
+    "closed_at": "2008-01-21T05:36:05Z",
     "created_at": "2007-11-25T22:21:04Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "modify singular interface to allow for verbose output",
+    "title": "[with patch, with positive review] modify singular interface to allow for verbose output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1274",
     "user": "https://github.com/wdjoyner"

@@ -1,16 +1,17 @@
-# Issue 4145: [with patch, needs review] linear codes list function is slow
+# Issue 4145: [with patch, positive review] linear codes list function is slow
 
 archive/issues_004145.json:
 ```json
 {
     "body": "Assignee: tbd\n\nBefore:\n\n```\nsage: G = ExtendedBinaryGolayCode()\nsage: time L = G.list()\nCPU times: user 16.24 s, sys: 0.32 s, total: 16.57 s\nWall time: 17.14 s\n```\n\nAfter:\n\n```\nsage: G = ExtendedBinaryGolayCode()\nsage: time L = G.list()\nCPU times: user 3.65 s, sys: 0.04 s, total: 3.68 s\nWall time: 3.71 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4145\n\n",
+    "closed_at": "2008-09-19T00:48:07Z",
     "created_at": "2008-09-18T15:05:53Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] linear codes list function is slow",
+    "title": "[with patch, positive review] linear codes list function is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4145",
     "user": "https://github.com/rlmill"

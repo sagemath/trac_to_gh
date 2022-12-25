@@ -1,16 +1,16 @@
-# Issue 4623: x^2 is wrong in RealIntervalField
+# Issue 4623: [with patch, positive review] x^2 is wrong in RealIntervalField
 
 archive/issues_004623.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R=RealIntervalField(53)\nsage: x=R(-1,2)\nsage: xx=x^2\nsage: xx.lower(), xx.upper()\n(-2.00000000000000, 4.00000000000000)\n```\nThe result should be (0, 4) instead, since for -1 <= x <= 2, we have 0 <= x^2 <= 4.\n(Of course (-2, 4) is a correct enclosure, but any specialist of interval arithmetic\nwill consider that as a real bug.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4623\n\n",
+    "closed_at": "2009-01-24T17:14:10Z",
     "created_at": "2008-11-26T14:04:05Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "x^2 is wrong in RealIntervalField",
+    "title": "[with patch, positive review] x^2 is wrong in RealIntervalField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4623",
     "user": "https://github.com/zimmermann6"

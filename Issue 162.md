@@ -1,15 +1,16 @@
-# Issue 162: Integer.exact_log causes segfault
+# Issue 162: high precision log calls seg fault
 
 archive/issues_000162.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis code (which I noticed in `Integer.exact_log`) causes a segfault:\n\n```\nsage: x = 3**10000000\nsage: bits = 31699256\nsage: R = RealField(bits)\nsage: y = x._mpfr_(R)\nsage: z = y.log()\n```\n\nI haven't investigated the underlying cause.\n\nIssue created by migration from https://trac.sagemath.org/ticket/162\n\n",
+    "body": "Assignee: somebody\n\nThis code (which I noticed in `Integer.exact_log`) causes a segfault:\n\n```\nsage: x = 3\nsage: bits = 31699256\nsage: R = RealField(bits)\nsage: y = R(x)\nsage: z = y.log()\n```\n\nI haven't investigated the underlying cause.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/162\n\n",
+    "closed_at": "2007-08-16T10:23:49Z",
     "created_at": "2006-10-29T21:56:58Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
-    "title": "Integer.exact_log causes segfault",
+    "title": "high precision log calls seg fault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/162",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
@@ -20,14 +21,16 @@ Assignee: somebody
 This code (which I noticed in `Integer.exact_log`) causes a segfault:
 
 ```
-sage: x = 3**10000000
+sage: x = 3
 sage: bits = 31699256
 sage: R = RealField(bits)
-sage: y = x._mpfr_(R)
+sage: y = R(x)
 sage: z = y.log()
 ```
 
 I haven't investigated the underlying cause.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/162
 

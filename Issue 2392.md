@@ -1,16 +1,17 @@
-# Issue 2392: [with patch, needs review] generic univariate polynomial has no discriminant function
+# Issue 2392: [with patch, positive review] generic univariate polynomial has no discriminant function
 
 archive/issues_002392.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @ncalexan\n\nKeywords: univariate polynomial discriminant\n\nAs it says: generic univariate polynomial has no discriminant function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2392\n\n",
+    "closed_at": "2008-03-05T13:29:27Z",
     "created_at": "2008-03-05T02:00:14Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] generic univariate polynomial has no discriminant function",
+    "title": "[with patch, positive review] generic univariate polynomial has no discriminant function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2392",
     "user": "https://github.com/ncalexan"

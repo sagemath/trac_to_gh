@@ -4,6 +4,7 @@ archive/issues_008351.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nratpoints builds in 32 bit mode on Solaris x64.\n\nA patch is coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8351\n\n",
+    "closed_at": "2010-06-06T07:31:10Z",
     "created_at": "2010-02-24T19:52:47Z",
     "labels": [
         "component: porting",

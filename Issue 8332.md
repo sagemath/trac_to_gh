@@ -3,7 +3,8 @@
 archive/issues_008332.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nResidue fields and others would like to be able to multiply inherit from finite field parents.  This is the first of the two switches needed to enable that (the other being sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e).\n\nThis depends on 8218.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8332\n\n",
+    "body": "Assignee: @loefflerd\n\nResidue fields and others would like to be able to multiply inherit from finite field parents.  This is the first of the two switches needed to enable that (the other being sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e).\n\nThis depends on #8218.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8332\n\n",
+    "closed_at": "2010-04-15T23:40:56Z",
     "created_at": "2010-02-23T14:48:18Z",
     "labels": [
         "component: algebra"
@@ -15,11 +16,11 @@ archive/issues_008332.json:
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @aghitza
+Assignee: @loefflerd
 
 Residue fields and others would like to be able to multiply inherit from finite field parents.  This is the first of the two switches needed to enable that (the other being sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e).
 
-This depends on 8218.
+This depends on #8218.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8332
 

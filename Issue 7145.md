@@ -1,21 +1,22 @@
-# Issue 7145: [with patch, needs review] Interval exchange transformations
+# Issue 7145: Interval exchange transformations
 
 archive/issues_007145.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @seblabbe\n\nThis module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:\n\n- Special kinds of permutations\n- Rauzy diagrams (oriented graph)\n- Strata of differentials\n\nThere are different class of permuttations associated to iet, but all are constructed within a class factory:\n\n```\nsage: p = PermutationIET('a b c d','d c b a')\nsage: p\na b c d\nd c b a\nsage: p.stratum()\nH(2)\n```\n\nThe object which links those permutations to the dynamic of strata of differentials is the Rauzy diagram:\n\n```\nsage: p = PermutationIET('a b c','c b a')\nsage: d = p.rauzy_diagram()\nRauzy diagram with 3 permutations\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7145\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @seblabbe\n\nThis module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:\n\n- Special kinds of permutations\n- Rauzy diagrams (oriented graph)\n- Strata of differentials\n\nThere are different class of permutations associated to iet, but all are constructed within a class factory:\n\n```\nsage: p = iet.Permutation('a b c d','d c b a')\nsage: p\na b c d\nd c b a\nsage: p.stratum()\nH(2)\n```\n\nThe object which links those permutations to the dynamic (Teichm\u00fcller flow) of strata of differentials is the Rauzy diagram:\n\n```\nsage: p = iet.Permutation('a b c','c b a')\nsage: d = p.rauzy_diagram()\nRauzy diagram with 3 permutations\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7145\n\n",
+    "closed_at": "2010-01-14T07:01:05Z",
     "created_at": "2009-10-07T11:48:19Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "[with patch, needs review] Interval exchange transformations",
+    "title": "Interval exchange transformations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7145",
     "user": "https://github.com/videlec"
 }
 ```
-Assignee: somebody
+Assignee: @videlec
 
 CC:  @seblabbe
 
@@ -25,10 +26,10 @@ This module implement Interval exchange transformations (iet) (and linear involu
 - Rauzy diagrams (oriented graph)
 - Strata of differentials
 
-There are different class of permuttations associated to iet, but all are constructed within a class factory:
+There are different class of permutations associated to iet, but all are constructed within a class factory:
 
 ```
-sage: p = PermutationIET('a b c d','d c b a')
+sage: p = iet.Permutation('a b c d','d c b a')
 sage: p
 a b c d
 d c b a
@@ -36,10 +37,10 @@ sage: p.stratum()
 H(2)
 ```
 
-The object which links those permutations to the dynamic of strata of differentials is the Rauzy diagram:
+The object which links those permutations to the dynamic (Teichmüller flow) of strata of differentials is the Rauzy diagram:
 
 ```
-sage: p = PermutationIET('a b c','c b a')
+sage: p = iet.Permutation('a b c','c b a')
 sage: d = p.rauzy_diagram()
 Rauzy diagram with 3 permutations
 ```

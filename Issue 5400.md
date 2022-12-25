@@ -1,22 +1,23 @@
-# Issue 5400: parser error
+# Issue 5400: conversion error
 
 archive/issues_005400.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mvngu\n\nUsing Sage 3.4.alpha0:\n\n```\nsage: RDF(e^(1j))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1535, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\n(then a TypeError is thrown since I don't have an RDF value)\n\n```\n\nNow, of course, the above gives a TypeError, but there still shouldn't be the scary preparser error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5400\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  mvngu\n\nUsing Sage 3.4.alpha0:\n\n```\nsage: RDF(e^(1j))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1535, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\n(then a TypeError is thrown since I don't have an RDF value)\n\n```\n\nNow, of course, the above gives a TypeError, but there still shouldn't be the scary preparser error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5400\n\n",
+    "closed_at": "2010-05-11T21:01:20Z",
     "created_at": "2009-02-28T16:29:19Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "parser error",
+    "title": "conversion error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5400",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: cwitty
+Assignee: @robertwb
 
 CC:  mvngu
 

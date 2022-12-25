@@ -1,16 +1,17 @@
-# Issue 5493: [with patch, needs review]
+# Issue 5493: [with patch, positive review] improve Sphinx documentation of sr.py
 
 archive/issues_005493.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: sphinx, crypto\n\nThe attached patch makes the Sphinx output for `mq.SR` look much nicer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5493\n\n",
+    "closed_at": "2009-03-20T20:50:41Z",
     "created_at": "2009-03-11T23:03:38Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review]",
+    "title": "[with patch, positive review] improve Sphinx documentation of sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5493",
     "user": "https://github.com/malb"

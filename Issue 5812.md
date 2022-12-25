@@ -1,9 +1,10 @@
-# Issue 5812: option zorder has no effect for point() and polygon()
+# Issue 5812: [with patch, positive review] option zorder has no effect for point() and polygon()
 
 archive/issues_005812.json:
 ```json
 {
     "body": "Assignee: whuss\n\nCurrently setting the zorder for points and polygons has no effect although zorder is listed as an allowed option.\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 1)\nsage: g.show()\n```\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 1)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 0)\nsage: g.show()\n```\n\nBoth of the above commands currently give the same output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5812\n\n",
+    "closed_at": "2009-10-15T16:17:18Z",
     "created_at": "2009-04-17T16:38:25Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005812.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "option zorder has no effect for point() and polygon()",
+    "title": "[with patch, positive review] option zorder has no effect for point() and polygon()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5812",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

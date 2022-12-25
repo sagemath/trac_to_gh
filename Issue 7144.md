@@ -3,7 +3,8 @@
 archive/issues_007144.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThe following code fails\n\n```\ny=function('y',x)\neqn=x*diff(y,x)^2-(1+x*y)*diff(y,x)+y == 0\ndesolve(eqn,y)\n```\nHowever, Maxima is able to produce the solution using contrib_ode command. If ode2 fails, Sage should call contrib_ode\n\nmaxima commands\n\n```\nload('contrib_ode)$\neqn:x*'diff(y,x)^2-(1+x*y)*'diff(y,x)+y=0;\ncontrib_ode(eqn,y,x);\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7144\n\n",
+    "body": "Assignee: @burcin\n\nThe following code fails\n\n```\ny=function('y',x)\neqn=x*diff(y,x)^2-(1+x*y)*diff(y,x)+y == 0\ndesolve(eqn,y)\n```\nHowever, Maxima is able to produce the solution using contrib_ode command. If ode2 fails, Sage should call contrib_ode\n\nmaxima commands\n\n```\nload('contrib_ode)$\neqn:x*'diff(y,x)^2-(1+x*y)*'diff(y,x)+y=0;\ncontrib_ode(eqn,y,x);\n```\n\nwill (hope) solved in few days together with 6479 which was supposed to be fixed, but needs more work.\nhttp://trac.sagemath.org/sage_trac/ticket/6479\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7144\n\n",
+    "closed_at": "2009-10-07T11:43:08Z",
     "created_at": "2009-10-06T20:18:17Z",
     "labels": [
         "component: calculus",
@@ -34,6 +35,10 @@ load('contrib_ode)$
 eqn:x*'diff(y,x)^2-(1+x*y)*'diff(y,x)+y=0;
 contrib_ode(eqn,y,x);
 ```
+
+will (hope) solved in few days together with 6479 which was supposed to be fixed, but needs more work.
+http://trac.sagemath.org/sage_trac/ticket/6479
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7144
 

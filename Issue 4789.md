@@ -3,10 +3,10 @@
 archive/issues_004789.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @ClementPernet @slel\n\nI think this message might be useful:\n\nhttp://projects.scipy.org/pipermail/scipy-user/2008-December/019064.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4789\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @ClementPernet @slel\n\nI think this message might be useful:\n\nhttp://projects.scipy.org/pipermail/scipy-user/2008-December/019064.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4789\n\n",
     "created_at": "2008-12-14T01:57:58Z",
     "labels": [
-        "component: algebra"
+        "component: linear algebra"
     ],
     "title": "numerically stable computation of nullspace of RDF/CDF matrices",
     "type": "issue",
@@ -14,7 +14,7 @@ archive/issues_004789.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tbd
+Assignee: @jasongrout
 
 CC:  @ClementPernet @slel
 

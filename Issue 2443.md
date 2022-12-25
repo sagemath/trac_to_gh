@@ -1,15 +1,16 @@
-# Issue 2443: [with patch, needs review] add LaTeX macros like \Singular
+# Issue 2443: [with patch, with positive review] add LaTeX macros like \Singular
 
 archive/issues_002443.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2443\n\n",
+    "closed_at": "2008-03-09T21:08:27Z",
     "created_at": "2008-03-09T20:42:56Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] add LaTeX macros like \\Singular",
+    "title": "[with patch, with positive review] add LaTeX macros like \\Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2443",
     "user": "https://github.com/malb"

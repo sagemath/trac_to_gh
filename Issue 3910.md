@@ -1,16 +1,17 @@
-# Issue 3910: [with patch,  needs review] adjust interval printing: precise integers print as integers
+# Issue 3910: [with patch,  with positive review] adjust interval printing: precise integers print as integers
 
 archive/issues_003910.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis patch adjusts interval printing so that sufficiently small precise integers print as integers.  (It also fixes a loss-of-precision bug when one endpoint is tiny and the other endpoint is zero.)\n\nBefore:\n\n```\nsage: RIF(0)\n0.?e-17\nsage: RIF(1)\n1.0000000000000000?\nsage: RIF(0, 2^-256)\n1.?e-17\n```\n\nAfter:\n\n```\nsage: RIF(0)\n0\nsage: RIF(1)\n1\nsage: RIF(0, 2^-256)\n1.?e-77\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3910\n\n",
+    "closed_at": "2008-08-25T01:43:02Z",
     "created_at": "2008-08-20T14:22:59Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch,  needs review] adjust interval printing: precise integers print as integers",
+    "title": "[with patch,  with positive review] adjust interval printing: precise integers print as integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3910",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

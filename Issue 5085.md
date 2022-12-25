@@ -3,10 +3,11 @@
 archive/issues_005085.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThese functions were borrowed from quad-double, which is now slated for deprecation. #3762. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5085\n\n",
+    "body": "Assignee: mabshoff\n\nThese functions were borrowed from quad-double, which is now slated for deprecation. #3762. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5085\n\n",
+    "closed_at": "2013-05-16T07:53:25Z",
     "created_at": "2009-01-24T03:09:18Z",
     "labels": [
-        "component: algebra"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix_fpu for real_roots",
@@ -15,7 +16,7 @@ archive/issues_005085.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 These functions were borrowed from quad-double, which is now slated for deprecation. #3762. 
 

@@ -1,21 +1,22 @@
-# Issue 3949: notebook -- move all HTML in twist.py to templates
+# Issue 3949: [with patch, positive review] notebook -- move all HTML in twist.py to templates
 
 archive/issues_003949.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nMove the HTML in twist.py in the classes/functions ` ForgotPassPage, ListOfUsers, message, Worksheet_rating_info, and RegConfirmation. `\n\nRelies on #3937\n\nIssue created by migration from https://trac.sagemath.org/ticket/3949\n\n",
+    "body": "Assignee: @mwhansen\n\nMove the HTML in twist.py in the classes/functions ` ForgotPassPage, ListOfUsers, message, Worksheet_rating_info, and RegConfirmation. `\n\nRelies on #3937\n\nIssue created by migration from https://trac.sagemath.org/ticket/3949\n\n",
+    "closed_at": "2008-10-25T23:01:13Z",
     "created_at": "2008-08-25T16:10:35Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "notebook -- move all HTML in twist.py to templates",
+    "title": "[with patch, positive review] notebook -- move all HTML in twist.py to templates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3949",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 Move the HTML in twist.py in the classes/functions ` ForgotPassPage, ListOfUsers, message, Worksheet_rating_info, and RegConfirmation. `
 

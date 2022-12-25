@@ -1,9 +1,10 @@
-# Issue 2280: DistributedFactor doesn't return an instance of sage.structure.factorization.Factorization
+# Issue 2280: [with patch, positive review] DistributedFactor doesn't return an instance of sage.structure.factorization.Factorization
 
 archive/issues_002280.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2280\n\n",
+    "closed_at": "2008-03-14T17:50:02Z",
     "created_at": "2008-02-23T20:45:41Z",
     "labels": [
         "component: dsage",
@@ -11,7 +12,7 @@ archive/issues_002280.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "DistributedFactor doesn't return an instance of sage.structure.factorization.Factorization",
+    "title": "[with patch, positive review] DistributedFactor doesn't return an instance of sage.structure.factorization.Factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2280",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

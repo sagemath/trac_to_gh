@@ -4,6 +4,7 @@ archive/issues_007457.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe attached patch makes a few improvements in `rings/quotient_ring.py`: implement `is_noetherian`, fix a todo in `cover_ring`, and minor docstring fixes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7457\n\n",
+    "closed_at": "2009-11-29T05:33:53Z",
     "created_at": "2009-11-14T12:29:00Z",
     "labels": [
         "component: algebra",

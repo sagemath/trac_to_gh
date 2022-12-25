@@ -4,10 +4,10 @@ archive/issues_009738.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @robertwb @williamstein @jdemeyer\n\nWith Sage 4.5.3.alpha0 on sage.math:\n\n```sh\n$ cd SAGE_ROOT\n$ find -name core -type f\n$ ulimit -c unlimited\n$ ./sage -t -long devel/sage/sage/interfaces/genus2reduction.py \nsage -t -long \"devel/sage/sage/interfaces/genus2reduction.py\"\n         [3.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.1 seconds\n$ find -name core -type f\n./data/extcode/genus2reduction/core\n$\n```\nFor background see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/239f712a39fce4a).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9738\n\n",
+    "closed_at": "2010-09-10T10:54:31Z",
     "created_at": "2010-08-12T22:58:35Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

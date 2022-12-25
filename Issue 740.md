@@ -1,22 +1,22 @@
-# Issue 740: Implement standard transformations for elliptic curves & points
+# Issue 740: [with patch, with positive review] Implement standard transformations for elliptic curves & points
 
 archive/issues_000740.json:
 ```json
 {
-    "body": "Assignee: John Cremona\n\nKeywords: elliptic curve point\n\nImplement standard transformations for elliptic curves & points similar to pari's ellchangecurve()/ellchangepoint() with the following functionality, to apply to class EllipticCurve_generic and class EllipticCurvePoint().\n\nFunctionality:\n(1) basic operations on transformations coded as [u,r,s,t] with u!=0, including composition and inversion (since they form a group)\n(2) apply transform to a curve to get a new curve\n(3) apply transform to a point to get a new point (since points belong to curves this would create the transformed curve too, which seems a waste)\n(4) given two curves, test whether they are isomorphic and return either \"false\" or \"true, [u,r,s,t]\", probably only in characteristic>3 at first.\n\nThis should be very easy (and in fact is contained in the functionality provided by /extcode/pari/cremona/ell_utils.gp  but the intention is to do it in python as a simple thing for me to practice on before I try to do something more substantial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/740\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve point\n\nImplement standard transformations for elliptic curves & points similar to pari's ellchangecurve()/ellchangepoint() with the following functionality, to apply to class EllipticCurve_generic and class EllipticCurvePoint().\n\nFunctionality:\n(1) basic operations on transformations coded as [u,r,s,t] with u!=0, including composition and inversion (since they form a group)\n(2) apply transform to a curve to get a new curve\n(3) apply transform to a point to get a new point (since points belong to curves this would create the transformed curve too, which seems a waste)\n(4) given two curves, test whether they are isomorphic and return either \"false\" or \"true, [u,r,s,t]\", probably only in characteristic>3 at first.\n\nThis should be very easy (and in fact is contained in the functionality provided by /extcode/pari/cremona/ell_utils.gp  but the intention is to do it in python as a simple thing for me to practice on before I try to do something more substantial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/740\n\n",
+    "closed_at": "2008-01-29T12:29:06Z",
     "created_at": "2007-09-23T18:04:16Z",
     "labels": [
-        "component: algebraic geometry",
-        "minor"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Implement standard transformations for elliptic curves & points",
+    "title": "[with patch, with positive review] Implement standard transformations for elliptic curves & points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/740",
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: John Cremona
+Assignee: @JohnCremona
 
 Keywords: elliptic curve point
 

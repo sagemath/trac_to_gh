@@ -1,15 +1,16 @@
-# Issue 6685: include pictures in the reference manual and notebook introspection
+# Issue 6685: [with patch, positive review] include pictures in the reference manual and notebook introspection
 
 archive/issues_006685.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @qed777\n\nIncluding pictures in the documentation is easy: a new \"pictures\" directory in doc/en/reference and a quick patch to MANIFEST.in to make sure the contents of that directory are included in distributions.  Then in a docstring, a line like\n\n```\n.. image:: /pictures/sine.png\n```\nwill include that file when the reference manual is built.\n\nGetting those pictures included in docstrings in the notebook is trickier.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/60074982a58f1166?tvc=2) for some discussion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6685\n\n",
+    "closed_at": "2009-08-30T10:28:47Z",
     "created_at": "2009-08-07T17:35:35Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "include pictures in the reference manual and notebook introspection",
+    "title": "[with patch, positive review] include pictures in the reference manual and notebook introspection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6685",
     "user": "https://github.com/jhpalmieri"

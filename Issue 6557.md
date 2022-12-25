@@ -1,22 +1,25 @@
-# Issue 6557: fix bug in number field caching
+# Issue 6557: [with patch, positive review] fix bug in number field caching
 
 archive/issues_006557.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nHere are two independent Sage 4.1 sessions which demonstrate that the\nconstruction of NumberField's is context dependent:\n\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1 over its base field\n\n       sage: W1 = NumberField(x^2+1,'a')\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1\n\nIn fact:\n\n       sage: W1 is W0\n       True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6557\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Number fields\n\n```\nHere are two independent Sage 4.1 sessions which demonstrate that the\nconstruction of NumberField's is context dependent:\n\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1 over its base field\n\n       sage: W1 = NumberField(x^2+1,'a')\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1\n\nIn fact:\n\n       sage: W1 is W0\n       True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6557\n\n",
+    "closed_at": "2009-07-19T14:19:47Z",
     "created_at": "2009-07-18T22:07:13Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "fix bug in number field caching",
+    "title": "[with patch, positive review] fix bug in number field caching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6557",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
+
+Keywords: Number fields
 
 ```
 Here are two independent Sage 4.1 sessions which demonstrate that the

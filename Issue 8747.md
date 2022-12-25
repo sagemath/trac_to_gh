@@ -3,7 +3,8 @@
 archive/issues_008747.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nThanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8747\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: testsuite, lazy format strings\n\nThanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8747\n\n",
+    "closed_at": "2010-06-09T02:22:44Z",
     "created_at": "2010-04-22T19:58:57Z",
     "labels": [
         "component: categories"
@@ -16,6 +17,8 @@ archive/issues_008747.json:
 }
 ```
 Assignee: @hivert
+
+Keywords: testsuite, lazy format strings
 
 Thanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. 
 

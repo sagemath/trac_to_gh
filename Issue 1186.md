@@ -1,16 +1,17 @@
-# Issue 1186: Charpoly of a matrix of polynomials sometimes breaks
+# Issue 1186: [with patch, positive review] Charpoly of a matrix of polynomials sometimes breaks
 
 archive/issues_001186.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following:\n\n```\nP.<a,b,c> = PolynomialRing(Integers())\nu = MatrixSpace(P,3)([[0,0,a],[1,0,b],[0,1,c]])\nQ.<x> = PolynomialRing(P)\nu.charpoly('x')\n```\nreturns as intended:\n\n```\nx^3 + (-1*c)*x^2 + (-1*b)*x - a\n```\nbut the following code:\n\n```\nP.<a,b,c> = PolynomialRing(Rationals())\nu = MatrixSpace(P,3)([[0,0,a],[1,0,b],[0,1,c]])\nQ.<x> = PolynomialRing(P)\nu.charpoly('x')\n```\ndoes not, instead returning the traceback:\n\n```\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/kedlaya/<ipython console> in <module>()\n\n/home/kedlaya/matrix2.pyx in sage.matrix.matrix2.Matrix.charpoly()\n\n/home/kedlaya/matrix2.pyx in sage.matrix.matrix2.Matrix._charpoly_hessenberg()\n\n/home/kedlaya/sage-complete/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)\n    240         C = self.__polynomial_class\n    241         if absprec is None:\n--> 242             return C(self, x, check, is_gen, construct=construct)\n    243         else:\n    244             return C(self, x, check, is_gen, construct=construct, absprec = absprec)\n\n/home/kedlaya/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__()\n\n/home/kedlaya/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__()\n\n/home/kedlaya/sage-complete/local/lib/python2.5/site-packages/sage/rings/rational_field.py in __call__(self, x, base)\n    180         if isinstance(x, sage.rings.rational.Rational):\n    181             return x\n--> 182         return sage.rings.rational.Rational(x, base)\n    183 \n    184     def construction(self):\n\n/home/kedlaya/rational.pyx in sage.rings.rational.Rational.__init__()\n\n/home/kedlaya/rational.pyx in sage.rings.rational.Rational.__set_value()\n\n/home/kedlaya/sage-complete/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.py in _rational_(self)\n    270         Z = integer_ring.IntegerRing()\n    271         try:\n--> 272             return Z(self.__numerator) / Z(self.__denominator)\n    273         except AttributeError:\n    274             pass\n\n/home/kedlaya/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: lift() takes exactly one argument (0 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1186\n\n",
+    "closed_at": "2008-02-28T00:24:02Z",
     "created_at": "2007-11-16T13:31:17Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Charpoly of a matrix of polynomials sometimes breaks",
+    "title": "[with patch, positive review] Charpoly of a matrix of polynomials sometimes breaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1186",
     "user": "https://github.com/kedlaya"

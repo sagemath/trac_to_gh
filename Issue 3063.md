@@ -1,16 +1,17 @@
-# Issue 3063: empty matrices: norm() returns a ValueError
+# Issue 3063: [with patch; positive review] empty matrices: norm() returns a ValueError
 
 archive/issues_003063.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: a = matrix([])\n\nsage: a.norm()\n---------------------------------------------------------------------------\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\nI think the answer in this case should be 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3063\n\n",
+    "closed_at": "2008-05-01T05:46:36Z",
     "created_at": "2008-04-30T15:10:44Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "empty matrices: norm() returns a ValueError",
+    "title": "[with patch; positive review] empty matrices: norm() returns a ValueError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3063",
     "user": "https://github.com/dfdeshom"

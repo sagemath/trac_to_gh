@@ -3,7 +3,7 @@
 archive/issues_008701.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  nilsskoruppa mraum @tornaria @williamstein @novoselt @ncalexan @mstreng\n\nKeywords: siegel modular forms\n\nAt Sage Days 20.25 in Montreal, we have decided to submit an initial version of the Siegel modular forms code by Friday 16 April 2010.\n\nIt's now a few minutes before midnight, and lest I turn into a pumpkin, I am uploading a patch with what we have so far.\n\nI'm marking it as \"needs work\" since there are still a number of issues to be resolved.  I'll list these in the comments soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8701\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  nilsskoruppa mraum @tornaria @williamstein @novoselt @ncalexan @mstreng\n\nKeywords: siegel modular forms\n\nAt Sage Days 20.25 in Montreal, we have decided to submit an initial version of the Siegel modular forms code by Friday 16 April 2010.\n\nIt's now a few minutes before midnight, and lest I turn into a pumpkin, I am uploading a patch with what we have so far.\n\nI'm marking it as \"needs work\" since there are still a number of issues to be resolved.  I'll list these in the comments soon.\n\nTo clarify: I submitted this just before midnight Seattle time, so one could argue that it was before the deadline :)\n\nThe patch applies cleanly to sage-4.4.3 and sage-4.4.4.alpha0, and passes all tests.  The doctest coverage is 98.8% (81 out of 82 functions).  The patch will not work with earlier versions of Sage since it depends on patches at #8602 and #8681 which have now been  merged.\n\nI believe that the objective of this first submission is to have something that works perfectly in the case of scalar-valued forms on `Sp(4,Z)`.  Here are the issues that I am aware of and are still blocking this:\n\n1. We need top-level documentation in `siegel_modular_form.py` that explains in detail how the code is meant to be used, what the interesting features are, etc.  We also need to explain how precisions work (either in the main file or in `siegel_modular_form_prec.py`\n2. The computation of the generators for `weights='all'` breaks at the fifth generator\n3. The argument `degree` in `_siegel_modular_forms_generators` should be properly documented, and there should be a doctest for it (I don't like the name \"degree\" BTW, because it already has a meaning for Siegel modular forms)\n4. The argument `default_prec` in `SiegelModularFormsAlgebra` should be documented\n5. We should put copyright headers in all the source files in the directory.\n\nIf you want to add to or modify these, please feel free to do this by editing the description on this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8701\n\n",
     "created_at": "2010-04-17T07:01:23Z",
     "labels": [
         "component: modular forms"
@@ -26,6 +26,20 @@ At Sage Days 20.25 in Montreal, we have decided to submit an initial version of 
 It's now a few minutes before midnight, and lest I turn into a pumpkin, I am uploading a patch with what we have so far.
 
 I'm marking it as "needs work" since there are still a number of issues to be resolved.  I'll list these in the comments soon.
+
+To clarify: I submitted this just before midnight Seattle time, so one could argue that it was before the deadline :)
+
+The patch applies cleanly to sage-4.4.3 and sage-4.4.4.alpha0, and passes all tests.  The doctest coverage is 98.8% (81 out of 82 functions).  The patch will not work with earlier versions of Sage since it depends on patches at #8602 and #8681 which have now been  merged.
+
+I believe that the objective of this first submission is to have something that works perfectly in the case of scalar-valued forms on `Sp(4,Z)`.  Here are the issues that I am aware of and are still blocking this:
+
+1. We need top-level documentation in `siegel_modular_form.py` that explains in detail how the code is meant to be used, what the interesting features are, etc.  We also need to explain how precisions work (either in the main file or in `siegel_modular_form_prec.py`
+2. The computation of the generators for `weights='all'` breaks at the fifth generator
+3. The argument `degree` in `_siegel_modular_forms_generators` should be properly documented, and there should be a doctest for it (I don't like the name "degree" BTW, because it already has a meaning for Siegel modular forms)
+4. The argument `default_prec` in `SiegelModularFormsAlgebra` should be documented
+5. We should put copyright headers in all the source files in the directory.
+
+If you want to add to or modify these, please feel free to do this by editing the description on this ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8701
 

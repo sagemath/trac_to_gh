@@ -4,6 +4,7 @@ archive/issues_007702.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nInterrupting the notebook is less robust than it used to be.  The attached worksheet is an example where the notebook fails to interrupt.  When this happens, the notebook acts as though it's interrupted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7702\n\n",
+    "closed_at": "2011-05-07T11:26:22Z",
     "created_at": "2009-12-16T03:17:24Z",
     "labels": [
         "component: notebook",

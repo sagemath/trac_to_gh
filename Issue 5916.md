@@ -1,16 +1,17 @@
-# Issue 5916: [with patch, needs review] show mathematica expression using jsmath
+# Issue 5916: [with patch, positive review] show mathematica expression using jsmath
 
 archive/issues_005916.json:
 ```json
 {
     "body": "Assignee: whuss\n\nCC:  @jasongrout\n\nShow mathematica expressions in the notebook using jsmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5916\n\n",
+    "closed_at": "2009-06-01T01:09:49Z",
     "created_at": "2009-04-28T08:35:25Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] show mathematica expression using jsmath",
+    "title": "[with patch, positive review] show mathematica expression using jsmath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5916",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

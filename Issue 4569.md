@@ -1,9 +1,10 @@
-# Issue 4569: problems with the Permutation constructor function
+# Issue 4569: [with patch; positive review] problems with the Permutation constructor function
 
 archive/issues_004569.json:
 ```json
 {
-    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nwdj pointed out in the comments to #4419:\n\n```\n{{{\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation('()'))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\nValueError: invalid literal for int() with base 10: ''\n}}}\n\nand this:\n\n{{{\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n}}}\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n{{{\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n}}}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4569\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nwdj pointed out in the comments to #4419:\n\n```\n{{{\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation('()'))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\nValueError: invalid literal for int() with base 10: ''\n}}}\n\nand this:\n\n{{{\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n}}}\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n{{{\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n}}}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4569\n\n",
+    "closed_at": "2008-11-21T23:43:27Z",
     "created_at": "2008-11-20T20:47:04Z",
     "labels": [
         "component: combinatorics",
@@ -11,13 +12,13 @@ archive/issues_004569.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "problems with the Permutation constructor function",
+    "title": "[with patch; positive review] problems with the Permutation constructor function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4569",
     "user": "https://github.com/saliola"
 }
 ```
-Assignee: @saliola
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

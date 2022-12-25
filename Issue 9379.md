@@ -1,9 +1,10 @@
-# Issue 9379: is64-Linux binary fails "devel/sage/sage/plot/plot3d/tachyon.py"
+# Issue 9379: ia64-Linux binary fails "devel/sage/sage/plot/plot3d/tachyon.py"
 
 archive/issues_009379.json:
 ```json
 {
     "body": "Assignee: Mariah Lenox\n\nCC:  @jasongrout jeroen\n\nSage built on skynet/cleo (ia64-Linux-rhel) \nfails the following test when run on \nskynet/iras (ia64-Linux-suse):\n\n./sage -t -long \"devel/sage/sage/plot/plot3d/tachyon.py\"\n\nThe reason is because tachyon is being\nbuilt with cc rather than gcc.\n\nThe attached mercurial patch causes tachyon \nto be built with gcc rather than cc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9379\n\n",
+    "closed_at": "2011-02-16T09:56:52Z",
     "created_at": "2010-06-29T19:18:51Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_009379.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "is64-Linux binary fails \"devel/sage/sage/plot/plot3d/tachyon.py\"",
+    "title": "ia64-Linux binary fails \"devel/sage/sage/plot/plot3d/tachyon.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9379",
     "user": "https://trac.sagemath.org/admin/accounts/users/mariah"

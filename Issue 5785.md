@@ -1,22 +1,23 @@
-# Issue 5785: bug in norm of vectors over CDF
+# Issue 5785: [with patch, positive review] RDF(0)^(1/2) is NaN
 
 archive/issues_005785.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: CDF vector norm\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
+    "body": "Assignee: somebody\n\nKeywords: CDF vector norm\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
+    "closed_at": "2009-04-18T00:56:07Z",
     "created_at": "2009-04-14T15:55:27Z",
     "labels": [
-        "component: linear algebra",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "bug in norm of vectors over CDF",
+    "title": "[with patch, positive review] RDF(0)^(1/2) is NaN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5785",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: somebody
 
 Keywords: CDF vector norm
 

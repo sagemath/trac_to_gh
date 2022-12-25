@@ -1,22 +1,23 @@
-# Issue 4196: write a new coercion section for the developer's/programmer's guide
+# Issue 4196: [with patch, positive review] write a new coercion section for the developer's/programmer's guide
 
 archive/issues_004196.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: coercion, documentation\n\nThe coercion section of the developer's guide is completely out of date and needs to be rewritten.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4196\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: coercion, documentation\n\nThe coercion section of the developer's guide is completely out of date and needs to be rewritten.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4196\n\n",
+    "closed_at": "2009-06-24T09:48:50Z",
     "created_at": "2008-09-25T21:58:29Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "write a new coercion section for the developer's/programmer's guide",
+    "title": "[with patch, positive review] write a new coercion section for the developer's/programmer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4196",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: somebody
+Assignee: @jhpalmieri
 
 Keywords: coercion, documentation
 

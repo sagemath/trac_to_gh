@@ -4,6 +4,7 @@ archive/issues_007463.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAdd documentation to magma.py explaining memory management for this interface. \n\nThe attached patch will -- if tested using \n\n```\ncd devel/sage/sage/interfaces/\nsage -t --only_optional=magma magma.py\n```\nhave doctest failures.  This isn't because of this patch.  See #7462. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7463\n\n",
+    "closed_at": "2009-11-17T06:01:57Z",
     "created_at": "2009-11-14T18:55:29Z",
     "labels": [
         "component: interfaces",

@@ -1,15 +1,16 @@
-# Issue 5138: implement computing manin constants of elliptic curves
+# Issue 5138: [with patch; positive review] implement computing manin constants of elliptic curves
 
 archive/issues_005138.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5138\n\n",
+    "closed_at": "2009-02-02T02:46:25Z",
     "created_at": "2009-01-30T15:59:11Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "implement computing manin constants of elliptic curves",
+    "title": "[with patch; positive review] implement computing manin constants of elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5138",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 5368: plot3d is broken when variables not given
+# Issue 5368: [with patch, positive review] plot3d is broken when variables not given
 
 archive/issues_005368.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis gives an infinite loop in the command line or notebook:\n\n```\nvar('x,y')\nplot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n```\n\nPretty bad!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5368\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nIn released sage-3.3, this gives an infinite loop in the command line or notebook in OS X and Linux (sagenb.org):\n\n```\nvar('x,y')\nplot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n```\n\nPretty bad!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5368\n\n",
+    "closed_at": "2009-03-05T00:45:59Z",
     "created_at": "2009-02-25T04:08:50Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "plot3d is broken when variables not given",
+    "title": "[with patch, positive review] plot3d is broken when variables not given",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5368",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 CC:  wcauchois
 
-This gives an infinite loop in the command line or notebook:
+In released sage-3.3, this gives an infinite loop in the command line or notebook in OS X and Linux (sagenb.org):
 
 ```
 var('x,y')

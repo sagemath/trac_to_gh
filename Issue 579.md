@@ -4,6 +4,7 @@ archive/issues_000579.json:
 ```json
 {
     "body": "Assignee: somebody\n\nFor example, you may print finite field elements as integers via the Givaro implementation. But the constructor parameter to allow this is not passed to the actual implementation so far.\n\nAfter the attached patch is applied, this works:\n\n```\nsage: k.<a> = GF(2^8,repr='int')\nsage: a\n2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/579\n\n",
+    "closed_at": "2007-09-05T05:00:50Z",
     "created_at": "2007-09-03T15:17:47Z",
     "labels": [
         "component: basic arithmetic",

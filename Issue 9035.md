@@ -4,6 +4,7 @@ archive/issues_009035.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nAttached patch adds a `degree` argument to the `reverse()` method of univariate polynomials and wraps the methods provided by FLINT in `polynomial_zmod_flint` and `polynomial_integer_dense_flint` classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9035\n\n",
+    "closed_at": "2010-06-06T01:24:27Z",
     "created_at": "2010-05-24T13:06:18Z",
     "labels": [
         "component: basic arithmetic",

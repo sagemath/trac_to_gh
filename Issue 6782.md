@@ -1,22 +1,25 @@
-# Issue 6782: Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/calculus.rst
+# Issue 6782: doctest failure in doc/en/constructions/calculus.rst due to upgrade to Maxima 5.19.1
 
 archive/issues_006782.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nOn Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/calculus.rst\", line 117:\n    sage: maxima(f).powerseries(x,0)\nExpected:\n    ('sum((-1)^i2*2^(2*i2)*bern(2*i2)*x^(2*i2)/(i2*(2*i2)!),i2,1,inf))/2\nGot:\n    'sum((-1)^i2*2^(2*i2-1)*bern(2*i2)*x^(2*i2)/(i2*(2*i2)!),i2,1,inf)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6782\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: maxima\n\nOn Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/calculus.rst\", line 117:\n    sage: maxima(f).powerseries(x,0)\nExpected:\n    ('sum((-1)^i2*2^(2*i2)*bern(2*i2)*x^(2*i2)/(i2*(2*i2)!),i2,1,inf))/2\nGot:\n    'sum((-1)^i2*2^(2*i2-1)*bern(2*i2)*x^(2*i2)/(i2*(2*i2)!),i2,1,inf)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6782\n\n",
+    "closed_at": "2009-09-02T10:56:09Z",
     "created_at": "2009-08-20T21:29:19Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/calculus.rst",
+    "title": "doctest failure in doc/en/constructions/calculus.rst due to upgrade to Maxima 5.19.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6782",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @burcin
+Assignee: @aghitza
+
+Keywords: maxima
 
 On Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1
 

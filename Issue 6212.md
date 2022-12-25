@@ -4,6 +4,7 @@ archive/issues_006212.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jasongrout jthurber\n\nKeywords: sage upgrade applied hg queue\n\nIt would be nice if sage -upgrade aborted if are applied hg queue patches, in the same way it aborts if there are local changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6212\n\n",
+    "closed_at": "2014-03-19T04:35:53Z",
     "created_at": "2009-06-04T20:40:01Z",
     "labels": [
         "component: distribution",

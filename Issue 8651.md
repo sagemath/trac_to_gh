@@ -3,7 +3,8 @@
 archive/issues_008651.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nKeywords: symbolic, binomial\n\nWe all know binomial(n,0) should be 1.  But we're not getting that answer in the following case.\n\n```\nsage: var('n, k')\n(n, k)\nsage: binomial(n, 0)  # this is OK\n1\nsage: binomial(n, k).subs(k=0)  # this is a problem!\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8651\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nKeywords: pynac, binomial\n\nWe all know binomial(n,0) should be 1.  But we're not getting that answer in the following case.\n\n```\nsage: var('n, k')\n(n, k)\nsage: binomial(n, 0)  # this is OK\n1\nsage: binomial(n, k).subs(k=0)  # this is a problem!\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8651\n\n",
+    "closed_at": "2010-06-06T07:37:40Z",
     "created_at": "2010-04-05T12:31:30Z",
     "labels": [
         "component: symbolics",
@@ -20,7 +21,7 @@ Assignee: @burcin
 
 CC:  @jasongrout
 
-Keywords: symbolic, binomial
+Keywords: pynac, binomial
 
 We all know binomial(n,0) should be 1.  But we're not getting that answer in the following case.
 

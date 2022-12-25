@@ -4,9 +4,10 @@ archive/issues_004258.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @ClementPernet @burcin @jasongrout simonking\n\nKeywords: linbox, linear algebra\n\n```\nsage: A = random_matrix(GF(3),2000,2000)\nsage: %time A*A\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 14.69 s,  Wall time: 15.08 s\n```\n\n```\nsage: %time A._multiply_linbox(A)\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 2.47 s,  Wall time: 2.55 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4258\n\n",
+    "closed_at": "2012-03-02T13:55:20Z",
     "created_at": "2008-10-10T08:50:02Z",
     "labels": [
-        "component: linear algebra"
+        "component: linbox"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "switch multiplication of dense matrices over finite prime fields to LinBox",

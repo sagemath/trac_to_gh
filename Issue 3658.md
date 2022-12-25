@@ -1,9 +1,10 @@
-# Issue 3658: A PARI bug results in an unreliable prime_pi
+# Issue 3658: [with patch, positive review] A PARI bug results in an unreliable prime_pi
 
 archive/issues_003658.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 45056, 41581]\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 41581, 41581]\n```\n\nThe problem lies with pari/gp:\n\n```\nsage: %gp\n\n  --> Switching to GP/PARI interpreter <-- \n\n''\ngp: for(n=500508, 500510, print(primepi(n)))\n\n41580\n45056\n  *** primepi: not enough precomputed primes, need primelimit ~ 500510.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3658\n\n",
+    "body": "Assignee: @craigcitro\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 45056, 41581]\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 41581, 41581]\n```\n\nThe problem lies with pari/gp:\n\n```\nsage: %gp\n\n  --> Switching to GP/PARI interpreter <-- \n\n''\ngp: for(n=500508, 500510, print(primepi(n)))\n\n41580\n45056\n  *** primepi: not enough precomputed primes, need primelimit ~ 500510.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3658\n\n",
+    "closed_at": "2009-01-24T23:00:49Z",
     "created_at": "2008-07-15T20:50:50Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_003658.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "A PARI bug results in an unreliable prime_pi",
+    "title": "[with patch, positive review] A PARI bug results in an unreliable prime_pi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3658",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 ```
 ----------------------------------------------------------------------

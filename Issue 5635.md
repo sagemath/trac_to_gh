@@ -1,16 +1,17 @@
-# Issue 5635: plot method on lattice polytopes gives something ridiculous
+# Issue 5635: [with patch, positive review] plot method on lattice polytopes gives something ridiculous
 
 archive/issues_005635.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe plot method on an object should return either a 2d plot or raise NotImplementedError (or not be defined).  On LatticePolytope's it returns a 3d Tachyon object.\n\n```\nsage: p = LatticePolytope(random_matrix(ZZ, 3,6, x=7)).plot()\nsage: type(p)\n<class 'sage.plot.tachyon.Tachyon'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5635\n\n",
+    "closed_at": "2009-04-01T01:02:10Z",
     "created_at": "2009-03-29T20:25:02Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "plot method on lattice polytopes gives something ridiculous",
+    "title": "[with patch, positive review] plot method on lattice polytopes gives something ridiculous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5635",
     "user": "https://github.com/williamstein"

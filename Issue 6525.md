@@ -1,4 +1,4 @@
-# Issue 6525: Enabling some GraphLatex options that were hard coded.
+# Issue 6525: [with patch, needs work] Enabling some GraphLatex options that were hard coded.
 
 archive/issues_006525.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_006525.json:
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
-    "title": "Enabling some GraphLatex options that were hard coded.",
+    "title": "[with patch, needs work] Enabling some GraphLatex options that were hard coded.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6525",
     "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"

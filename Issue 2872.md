@@ -3,7 +3,8 @@
 archive/issues_002872.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe bug is described below.  To fix this and close this ticket, just slightly\nrefactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image\nsaves the tachyon rendered file, gives an sobj on an sobj or no extension, and \ngives an error on all other extension.   This will be all one gets initially.\n\nAnother *later* ticket should -- if possible -- make it possible to get the static\nimage from jmol (if possible).\n\n```\nOn Thu, Apr 10, 2008 at 11:42 AM, Hector Villafuerte wrote:\n> \n>  Hi,\n>  I noticed the following (inconsistent?) behavior: saving 2D plots\n>  works as expected (a graphic file is stored), but saving 3D plots\n>  gives .sobj files instead (see sample code below). Is there a way to\n>  save 3D plots from the Notebook? By the way, I know how to save them\n>  using jMol's GUI (as reached from Sage terminal), but the idea is to\n>  be able to script this.\n>\n\nThis is a bug.  There's currently no easy nice way to script\nsaving 3d graphics using Tachyon.   If you do the following\n\n  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n  sage: p.show(filename='a', viewer='tachyon')\n\nthen the file a.png will be produced but unfortunately a browser window\nwill also appear showing this file.\n\n\n>  --\n>   Hector\n>  \n>  \n>  sage: p = point([(k,k^2) for k in [0..10]])\n>  sage: p.save(DATA+'plot2d.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot.Graphics'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5)\n>  sage: p.save(DATA+'plot3d-1.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n>  sage: p.save(DATA+'plot3d-2.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2872\n\n",
+    "body": "Assignee: @williamstein\n\nThe bug is described below.  To fix this and close this ticket, just slightly refactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image saves the tachyon rendered file, gives an sobj on an sobj or no extension, and  gives an error on all other extension.   This will be all one gets initially.\n\nAnother *later* ticket should -- if possible -- make it possible to get the static image from jmol (if possible).\n\n```\nOn Thu, Apr 10, 2008 at 11:42 AM, Hector Villafuerte wrote:\n> \n>  Hi,\n>  I noticed the following (inconsistent?) behavior: saving 2D plots\n>  works as expected (a graphic file is stored), but saving 3D plots\n>  gives .sobj files instead (see sample code below). Is there a way to\n>  save 3D plots from the Notebook? By the way, I know how to save them\n>  using jMol's GUI (as reached from Sage terminal), but the idea is to\n>  be able to script this.\n>\n\nThis is a bug.  There's currently no easy nice way to script\nsaving 3d graphics using Tachyon.   If you do the following\n\n  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n  sage: p.show(filename='a', viewer='tachyon')\n\nthen the file a.png will be produced but unfortunately a browser window\nwill also appear showing this file.\n\n\n>  --\n>   Hector\n>  \n>  \n>  sage: p = point([(k,k^2) for k in [0..10]])\n>  sage: p.save(DATA+'plot2d.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot.Graphics'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5)\n>  sage: p.save(DATA+'plot3d-1.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n>  sage: p.save(DATA+'plot3d-2.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n\n```\nDepends on\u00a0#8235.\u00a0\n\nIssue created by migration from https://trac.sagemath.org/ticket/2872\n\n",
+    "closed_at": "2010-02-11T15:03:54Z",
     "created_at": "2008-04-10T20:14:29Z",
     "labels": [
         "component: graphics",
@@ -18,13 +19,9 @@ archive/issues_002872.json:
 ```
 Assignee: @williamstein
 
-The bug is described below.  To fix this and close this ticket, just slightly
-refactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image
-saves the tachyon rendered file, gives an sobj on an sobj or no extension, and 
-gives an error on all other extension.   This will be all one gets initially.
+The bug is described below.  To fix this and close this ticket, just slightly refactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image saves the tachyon rendered file, gives an sobj on an sobj or no extension, and  gives an error on all other extension.   This will be all one gets initially.
 
-Another *later* ticket should -- if possible -- make it possible to get the static
-image from jmol (if possible).
+Another *later* ticket should -- if possible -- make it possible to get the static image from jmol (if possible).
 
 ```
 On Thu, Apr 10, 2008 at 11:42 AM, Hector Villafuerte wrote:
@@ -67,8 +64,8 @@ will also appear showing this file.
 >  sage: type(p)
 >  <class 'sage.plot.plot3d.base.Graphics3dGroup'>
 
-
 ```
+Depends on #8235. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2872
 

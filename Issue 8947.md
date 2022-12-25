@@ -4,6 +4,7 @@ archive/issues_008947.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer @williamstein @robertwb\n\nThis patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector\n\n```\nsage: f(x,y)=[3*x,e^x,2*x*y]\nsage: f\n(x, y) |--> (3*x, e^x, 2*x*y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8947\n\n",
+    "closed_at": "2010-07-20T08:20:13Z",
     "created_at": "2010-05-11T06:25:01Z",
     "labels": [
         "component: linear algebra"

@@ -1,31 +1,32 @@
-# Issue 4672: plot functions do not work with ?? because they are wrapped in @options
+# Issue 4672: [with patch, needs review] plot functions do not work with ?? because they are wrapped in @options
 
 archive/issues_004672.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: bar_chart??\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function bar_chart at 0x88b4b1c>\nNamespace:\tInteractive\nFile:\t\t/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:\tbar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: bar_chart??\nType:function\nBase Class:<type 'function'>\nString Form:<function bar_chart at 0x88b4b1c>\nNamespace:Interactive\nFile:/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:bar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
+    "closed_at": "2008-12-04T14:11:12Z",
     "created_at": "2008-12-02T05:43:05Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "plot functions do not work with ?? because they are wrapped in @options",
+    "title": "[with patch, needs review] plot functions do not work with ?? because they are wrapped in @options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4672",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: bar_chart??
-Type:		function
-Base Class:	<type 'function'>
-String Form:	<function bar_chart at 0x88b4b1c>
-Namespace:	Interactive
-File:		/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py
-Definition:	bar_chart(*args, **kwds)
+Type:function
+Base Class:<type 'function'>
+String Form:<function bar_chart at 0x88b4b1c>
+Namespace:Interactive
+File:/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py
+Definition:bar_chart(*args, **kwds)
 Source:
         @wraps(func)
         def wrapper(*args, **kwds):
@@ -35,6 +36,7 @@ Source:
             options.update(kwds)
             return func(*args, **options)
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4672
 

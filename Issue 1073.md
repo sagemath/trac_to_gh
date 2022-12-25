@@ -1,16 +1,16 @@
-# Issue 1073: right after "sage -pkg" creates a package, print out some useful information
+# Issue 1073: [with patch, with positive review] right after "sage -pkg" creates a package, print out some useful information
 
 archive/issues_001073.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis would save people a lot of confusion.\n\n```\n$ sage -pkg foo-bar-2.3\n...\n\nCreated package foo-bar-2.3.spkg, \n\nNAME: foo\nVERSION: bar-2.3      (not version number looks suspicious)\nSIZE: 2.3MB\nHG REPO: Unchecked in changes (!)\nSPKG.txt: File is missing.\n\nPlease test this package using\n    sage -f foo-bar-2.3.spkg\nimmediately.   Also, note that you can use \n    sage -pkg_nc foo-bar-2.3\nto make an uncompressed version of the package (useful if the\npackage is full of compressed data).\n\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1073\n\n",
+    "closed_at": "2008-01-10T06:31:08Z",
     "created_at": "2007-11-02T23:49:55Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "right after \"sage -pkg\" creates a package, print out some useful information",
+    "title": "[with patch, with positive review] right after \"sage -pkg\" creates a package, print out some useful information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1073",
     "user": "https://github.com/williamstein"

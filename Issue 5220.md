@@ -1,16 +1,17 @@
-# Issue 5220: Weird or non-appearance of default in input_box in interact
+# Issue 5220: [with patch, positive review] Weird or non-appearance of default in input_box in interact
 
 archive/issues_005220.json:
 ```json
 {
     "body": "Assignee: boothby\n\nFrom sage-support:\n\n```\nOn sagenb.org, try making an interact with an input box explicitly \ndefined, e.g. \n@interact \ndef plotfunction(f=input_box(x^2)): \n    P=plot(f,0,1) \n    show(P) \nIt works fine in the sense that whatever you type in does what it \nshould.  But what's up with how the input box appears?  It's even \nworse on my box (PPC OSX.4) - the initial input does not show up *at \nall* in the box, though again the plot is fine and once you type \nsomething in it behaves normally. \n```\n\n\n```\nI'm able to reproduce this on sagenb.org on a Mac with FF3. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5220\n\n",
+    "closed_at": "2009-03-08T06:49:19Z",
     "created_at": "2009-02-09T15:35:45Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Weird or non-appearance of default in input_box in interact",
+    "title": "[with patch, positive review] Weird or non-appearance of default in input_box in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5220",
     "user": "https://github.com/kcrisman"

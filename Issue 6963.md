@@ -1,9 +1,10 @@
-# Issue 6963: follow up to #3133: fix ReST formatting
+# Issue 6963: [with patch, positive review] follow up to #3133: fix ReST formatting
 
 archive/issues_006963.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @jasongrout @kcrisman\n\nThis is a follow up to #3133 to fix some ReST formatting issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6963\n\n",
+    "closed_at": "2009-09-22T22:07:55Z",
     "created_at": "2009-09-19T20:01:53Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006963.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "follow up to #3133: fix ReST formatting",
+    "title": "[with patch, positive review] follow up to #3133: fix ReST formatting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6963",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

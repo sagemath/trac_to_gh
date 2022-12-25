@@ -4,10 +4,10 @@ archive/issues_009445.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nIt's possible these are related.  In tests of 4.5.a4, the following doctests fail:\n\n1)       File \"wrapper.pyx\", line 171, in sage.libs.galrep.wrapper.GalRep.non_surjective_primes (sage/libs/galrep/wrapper.c:2602)\n    ValueError: min and max must be <= 59\n\n2) File \"/Users/Sage/sage-4.5.alpha4/devel/sage/sage/libs/galrep/wrapper.pyx\", line 163:\n    sage: galrep.GalRep().non_surjective_primes(-432,8208,7,59)\nExpected:\n    []\nGot:\n    [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]\n\nSeems to be a failure on Mac OS X, 10.5.8, and has not been reported elsewhere.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9445\n\n",
+    "closed_at": "2010-11-10T14:01:53Z",
     "created_at": "2010-07-07T05:43:03Z",
     "labels": [
         "component: elliptic curves",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",

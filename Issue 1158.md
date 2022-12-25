@@ -3,10 +3,11 @@
 archive/issues_001158.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSome mathematical functions automatically evaluate to floating-point, even for a symbolic input\n(integer or variable):\n\n```\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/gmp-4.2.2/tune/<ipython console> in <module>()\n\n/usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_J(nu, z, alg, prec)\n    492         else:\n    493             K,a = _setup(prec)\n--> 494         b = K(nu.besselj(z))\n    495         pari.set_real_precision(a)\n    496         return b\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set()\n\n<type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.\n```\n\nIn my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1158\n\n",
+    "body": "Assignee: @garyfurnish\n\nSome mathematical functions automatically evaluate to floating-point, even for a symbolic input\n(integer or variable):\n\n```\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/gmp-4.2.2/tune/<ipython console> in <module>()\n\n/usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_J(nu, z, alg, prec)\n    492         else:\n    493             K,a = _setup(prec)\n--> 494         b = K(nu.besselj(z))\n    495         pari.set_real_precision(a)\n    496         return b\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set()\n\n<type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.\n```\n\nIn my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1158\n\n",
+    "closed_at": "2012-01-31T09:37:13Z",
     "created_at": "2007-11-12T22:07:27Z",
     "labels": [
-        "component: calculus",
+        "component: symbolics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_001158.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 Some mathematical functions automatically evaluate to floating-point, even for a symbolic input
 (integer or variable):

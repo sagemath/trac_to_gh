@@ -3,7 +3,8 @@
 archive/issues_000628.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCurrently binomial(x,m) works for symbolic expressions if m is integer, for example\n\n[[[ \nsage: n=var('n')\nsage: binomial(n,2)\n(n - 1)*n/2 \n]]]\n \nbut binomial (n,n-2) or binomial(n+1,n-1) does not work. \n\nI'm submitting a patch for making this work, by defining \n\nbinomial(x,m) = binomial (x,x-m)\n\nwhen x-m is an integer. \n\nThis would be consistent with the way  in which maxima handles the binomial function\n(see http://maxima.sourceforge.net/docs/manual/en/maxima_31.html#SEC126)\n\nNote that the proposed rule makes sense when x is an integer. However, Sage does not have\na way to specify a domain for a symbolic variable (as for example Axiom does).\n\nIssue created by migration from https://trac.sagemath.org/ticket/628\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently binomial(x,m) works for symbolic expressions if m is integer, for example\n\n```\nsage: n=var('n')\nsage: binomial(n,2)\n(n - 1)*n/2 \n```\n \nbut binomial (n,n-2) or binomial(n+1,n-1) does not work. \n\nI'm submitting a patch for making this work, by defining \n\nbinomial(x,m) = binomial (x,x-m)\n\nwhen x-m is an integer. \n\nThis would be consistent with the way  in which maxima handles the binomial function\n(see http://maxima.sourceforge.net/docs/manual/en/maxima_31.html#SEC126)\n\nNote that the proposed rule makes sense when x is an integer. However, Sage does not have\na way to specify a domain for a symbolic variable (as for example Axiom does).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/628\n\n",
+    "closed_at": "2007-09-12T18:36:03Z",
     "created_at": "2007-09-09T14:57:10Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,15 +17,15 @@ archive/issues_000628.json:
     "user": "https://github.com/pdenapo"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 Currently binomial(x,m) works for symbolic expressions if m is integer, for example
 
-[[[ 
+```
 sage: n=var('n')
 sage: binomial(n,2)
 (n - 1)*n/2 
-]]]
+```
  
 but binomial (n,n-2) or binomial(n+1,n-1) does not work. 
 
@@ -39,6 +40,7 @@ This would be consistent with the way  in which maxima handles the binomial func
 
 Note that the proposed rule makes sense when x is an integer. However, Sage does not have
 a way to specify a domain for a symbolic variable (as for example Axiom does).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/628
 

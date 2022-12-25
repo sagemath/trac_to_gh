@@ -1,9 +1,10 @@
-# Issue 1057: Order elements do not have Z as a (proper) basering
+# Issue 1057: [with patch] Order elements do not have Z as a (proper) basering
 
 archive/issues_001057.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: sage: K.<a> = NumberField(x^2 - 5)\nsage: sage: B = K.maximal_order().basis();\nsage: B[1].parent().base_ring() # this is bad\nRational Field\nsage: B[1].parent().base()\nInteger Ring\n```\n\nAlso, _rmul_, etc needs to be re-implemented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1057\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage: sage: K.<a> = NumberField(x^2 - 5)\nsage: sage: B = K.maximal_order().basis();\nsage: B[1].parent().base_ring() # this is bad\nRational Field\nsage: B[1].parent().base()\nInteger Ring\n```\n\nAlso, _rmul_, etc needs to be re-implemented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1057\n\n",
+    "closed_at": "2007-11-03T14:55:59Z",
     "created_at": "2007-11-01T21:14:29Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_001057.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "Order elements do not have Z as a (proper) basering",
+    "title": "[with patch] Order elements do not have Z as a (proper) basering",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1057",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 ```
 sage: sage: K.<a> = NumberField(x^2 - 5)

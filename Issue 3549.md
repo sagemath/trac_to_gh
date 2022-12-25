@@ -1,15 +1,15 @@
-# Issue 3549: change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division
+# Issue 3549: Add an interface to PARI's addprimes()
 
 archive/issues_003549.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThis is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3549\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nPARI has a function \"addprimes\" which can be used to add to the list of precomputed primes that are used for trial division.  We need to add an interface so Sage can use that function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3549\n\n",
     "created_at": "2008-07-04T04:22:14Z",
     "labels": [
-        "component: number theory"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division",
+    "title": "Add an interface to PARI's addprimes()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3549",
     "user": "https://github.com/williamstein"
@@ -19,7 +19,7 @@ Assignee: @williamstein
 
 CC:  @jdemeyer
 
-This is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.
+PARI has a function "addprimes" which can be used to add to the list of precomputed primes that are used for trial division.  We need to add an interface so Sage can use that function.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3549
 

@@ -4,6 +4,7 @@ archive/issues_000843.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis patch fixes several bugs in Robert's fast quadratic field element code, and SWITCHES THEM ON.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/843\n\n",
+    "closed_at": "2007-10-13T06:35:26Z",
     "created_at": "2007-10-10T01:16:43Z",
     "labels": [
         "component: basic arithmetic"

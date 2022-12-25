@@ -1,9 +1,10 @@
-# Issue 730: graphs: fickle equality testing
+# Issue 730: [with patch] graphs: fickle equality testing
 
 archive/issues_000730.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBecause the order returned by iterkeys is not guaranteed, enum, and therefore, `__cmp__` do not seem to behave well.  This could possibly be fixed by sorting the boundary vertices in the vertices() function.\n\n```\nsage: g=Graph({0:[1,2],'a':[1],1:[0,2],2:[0,1]})\nsage: h=Graph({'a':[1],0:[1,2],1:[0,2],2:[0,1]})\nsage: enum(g)\n9174\nsage: enum(h)\n9174\nsage: g.set_boundary([0,'a'])\nsage: h.set_boundary([0,'a'])\nsage: enum(g)\n13018\nsage: enum(h)\n9174\nsage: g==h\nFalse\nsage: g.vertices()\n[0, 'a', 1, 2]\nsage: h.vertices()\n['a', 0, 1, 2]\n```\n\nIt seems that since the graphs are the same, with the same labels and everything, the equality test should return True.  However, the boundary vertices are not sorted, so g.vertices() and h.vertices() return in a non-specified order.\n\nWhy do we return the boundary vertices first anyway?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/730\n\n",
+    "body": "Assignee: rlmiller\n\nKeywords: graphs\n\nBecause the order returned by iterkeys is not guaranteed, enum, and therefore, `__cmp__` do not seem to behave well.  This could possibly be fixed by sorting the boundary vertices in the vertices() function.\n\n```\nsage: g=Graph({0:[1,2],'a':[1],1:[0,2],2:[0,1]})\nsage: h=Graph({'a':[1],0:[1,2],1:[0,2],2:[0,1]})\nsage: enum(g)\n9174\nsage: enum(h)\n9174\nsage: g.set_boundary([0,'a'])\nsage: h.set_boundary([0,'a'])\nsage: enum(g)\n13018\nsage: enum(h)\n9174\nsage: g==h\nFalse\nsage: g.vertices()\n[0, 'a', 1, 2]\nsage: h.vertices()\n['a', 0, 1, 2]\n```\n\nIt seems that since the graphs are the same, with the same labels and everything, the equality test should return True.  However, the boundary vertices are not sorted, so g.vertices() and h.vertices() return in a non-specified order.\n\nWhy do we return the boundary vertices first anyway?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/730\n\n",
+    "closed_at": "2007-10-04T19:53:27Z",
     "created_at": "2007-09-21T18:42:54Z",
     "labels": [
         "component: combinatorics",
@@ -11,13 +12,13 @@ archive/issues_000730.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "graphs: fickle equality testing",
+    "title": "[with patch] graphs: fickle equality testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/730",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: rlmiller
 
 Keywords: graphs
 

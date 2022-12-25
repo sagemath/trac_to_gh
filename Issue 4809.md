@@ -1,21 +1,22 @@
-# Issue 4809: the installation guide and constructions guide should be CC licensed
+# Issue 4809: [with patch, positive review] the installation guide and constructions guide should be CC licensed
 
 archive/issues_004809.json:
 ```json
 {
-    "body": "Assignee: tba\n\nOur documentation should be clearly licensed.\n\n```\n15:09 < hampton|home> what is the license of the sage documentation?\n15:09 < hampton|home> is it a type of creative commons?\n15:11 < ddrake> hrm, I dunno. It should be, I think.\n15:13 < ddrake> yep: by-sa\n15:13 < ddrake> http://sagemath.org/doc/tut/node1.html\n15:14 < hampton|home> that's the tutorial - are they are under that?\n15:14 < hampton|home> the others don't have a notice I think\n15:14 < ddrake> the installation guide and constructions don't have a notice\n15:15 < ddrake> ref manual is attribution-sharealike\n15:15 < ddrake> programming guide too\n15:15 < hampton|home> cool, thanks\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4809\n\n",
+    "body": "Assignee: @dandrake\n\nOur documentation should be clearly licensed.\n\n```\n15:09 < hampton|home> what is the license of the sage documentation?\n15:09 < hampton|home> is it a type of creative commons?\n15:11 < ddrake> hrm, I dunno. It should be, I think.\n15:13 < ddrake> yep: by-sa\n15:13 < ddrake> http://sagemath.org/doc/tut/node1.html\n15:14 < hampton|home> that's the tutorial - are they are under that?\n15:14 < hampton|home> the others don't have a notice I think\n15:14 < ddrake> the installation guide and constructions don't have a notice\n15:15 < ddrake> ref manual is attribution-sharealike\n15:15 < ddrake> programming guide too\n15:15 < hampton|home> cool, thanks\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4809\n\n",
+    "closed_at": "2009-04-24T04:55:08Z",
     "created_at": "2008-12-16T06:22:54Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "the installation guide and constructions guide should be CC licensed",
+    "title": "[with patch, positive review] the installation guide and constructions guide should be CC licensed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4809",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tba
+Assignee: @dandrake
 
 Our documentation should be clearly licensed.
 

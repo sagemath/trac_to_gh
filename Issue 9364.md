@@ -4,6 +4,7 @@ archive/issues_009364.json:
 ```json
 {
     "body": "Assignee: mvngu\n\ntest if a given Boolean function is invariant under permutation of its inputs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9364\n\n",
+    "closed_at": "2010-07-20T10:07:21Z",
     "created_at": "2010-06-28T20:15:19Z",
     "labels": [
         "component: cryptography",

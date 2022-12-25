@@ -1,16 +1,17 @@
-# Issue 6859: Add more graph generators
+# Issue 6859: [with patch, positive review] Add more graph generators
 
 archive/issues_006859.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch add graph generators for the hyper star, (n,k)-star, n-star, and bubble sort graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6859\n\n",
+    "closed_at": "2009-09-24T10:55:52Z",
     "created_at": "2009-09-02T01:42:16Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Add more graph generators",
+    "title": "[with patch, positive review] Add more graph generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6859",
     "user": "https://trac.sagemath.org/admin/accounts/users/myurko"

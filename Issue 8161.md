@@ -4,6 +4,7 @@ archive/issues_008161.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe attached patch uses Sphinx to produce docstrings from the command line.  The docstrings are still plain text, but among other things, all double colons should be turned into single colons.  The patch also (by hand) changes ```text``` to `\"text\"`, which I think looks better and conveys the same information.\n\nIt also no longer replaces `\\\\` with `\\\\\\\\` for docstrings in the notebook, since there is a line in sphinxify that just undoes this.\n\nThis depends on #8160.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8161\n\n",
+    "closed_at": "2010-02-11T14:53:50Z",
     "created_at": "2010-02-03T02:34:04Z",
     "labels": [
         "component: documentation"

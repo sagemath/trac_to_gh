@@ -1,23 +1,24 @@
-# Issue 2914: integers are immutable but set_str breaks that -- having this function is a *major* bug.
+# Issue 2914: [with patch, with positive review] integers are immutable but set_str breaks that -- having this function is a *major* bug.
 
 archive/issues_002914.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is *terrible*\n\n```\nsage: n = 10\nsage: n.set_str('15')\nsage: n\n15\n```\n\nThe set_str function must be made __ or removed.\n\nLook at what evil can occur:\n\n```\nsage: a = matrix(ZZ,2,[1,2,3,4]); d = a.det(); d\n-2\nsage: d.set_str('10')\nsage: a.det()\n10\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2914\n\n",
+    "body": "Assignee: somebody\n\nThis is *terrible*\n\n```\nsage: n = 10\nsage: n.set_str('15')\nsage: n\n15\n```\n\nThe set_str function must be made __ or removed.\n\nLook at what evil can occur:\n\n```\nsage: a = matrix(ZZ,2,[1,2,3,4]); d = a.det(); d\n-2\nsage: d.set_str('10')\nsage: a.det()\n10\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2914\n\n",
+    "closed_at": "2008-04-14T17:04:27Z",
     "created_at": "2008-04-14T04:01:26Z",
     "labels": [
-        "component: cygwin",
+        "component: basic arithmetic",
         "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "integers are immutable but set_str breaks that -- having this function is a *major* bug.",
+    "title": "[with patch, with positive review] integers are immutable but set_str breaks that -- having this function is a *major* bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2914",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: somebody
 
 This is *terrible*
 

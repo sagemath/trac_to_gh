@@ -1,9 +1,10 @@
-# Issue 5089: [with patch, needs review] add kernel method for sparse integer matrices
+# Issue 5089: [with patch, positive review] add kernel method for sparse integer matrices
 
 archive/issues_005089.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: sparse integer matrix kernel\n\n```\nsage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6])\nsage: M.kernel()\n```\nworks fine, while\n\n```\nsage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6], sparse=True)\nsage: M.kernel()\n```\ngives an error, `TypeError: Argument K (= Integer Ring) must be a field.`\n\nThe attached patch fixes this -- it adds a kernel method for sparse integer matrices, which just calls `self.dense_matrix().kernel(...)`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5089\n\n",
+    "closed_at": "2009-01-24T18:08:22Z",
     "created_at": "2009-01-24T16:29:12Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005089.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] add kernel method for sparse integer matrices",
+    "title": "[with patch, positive review] add kernel method for sparse integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5089",
     "user": "https://github.com/jhpalmieri"

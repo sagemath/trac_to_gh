@@ -1,16 +1,17 @@
-# Issue 2213: [with patch, needs review] Referee suggestions for graph patches
+# Issue 2213: [with patch, positive review] misc graph theory fixes
 
 archive/issues_002213.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2213\n\n",
+    "closed_at": "2008-02-19T22:36:02Z",
     "created_at": "2008-02-19T21:53:22Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] Referee suggestions for graph patches",
+    "title": "[with patch, positive review] misc graph theory fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2213",
     "user": "https://github.com/rlmill"

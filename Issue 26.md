@@ -1,22 +1,23 @@
-# Issue 26: add docs to eigenvectors function.
+# Issue 26: [is invalid or fixed?] add docs to eigenvectors function.
 
 archive/issues_000026.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/26\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/26\n\n",
+    "closed_at": "2007-12-22T18:35:41Z",
     "created_at": "2006-09-12T23:24:32Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "add docs to eigenvectors function.",
+    "title": "[is invalid or fixed?] add docs to eigenvectors function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/26",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 
 

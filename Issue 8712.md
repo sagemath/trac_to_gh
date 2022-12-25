@@ -4,6 +4,7 @@ archive/issues_008712.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nUsing `optparse` will, at the very least, show a proper usage message, which displays all the options.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8712\n\n",
+    "closed_at": "2010-06-25T15:41:33Z",
     "created_at": "2010-04-18T08:52:59Z",
     "labels": [
         "component: build"

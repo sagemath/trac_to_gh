@@ -1,22 +1,25 @@
-# Issue 239: x^(3/4) rounding issue
+# Issue 239: x^(3/4) powering/coercion issue
 
 archive/issues_000239.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n> Can someone please add support for evaluating say 2^(3/4) or 7^(5/3).\n>  \n> > \n>  \n \nAbout this I just found this bug:\n \nsage: x=maxima('x')\n \nsage: x^(3/4)\n x^3/4\n \nsage: x=maxima('2')\n \nsage: x^150\n 1427247692705959881058285969449495136382746624\n \nsage: x^(3/4)\n 2\n \nsage: maxima(3/4)\n 3/4\n \nGreg\n```\n\nGreg's problem is that the exponent is rounded maybe, since x^(3/4) should be the same as x^(maxima('3/4')).\n\nIssue created by migration from https://trac.sagemath.org/ticket/239\n\n",
+    "body": "Assignee: somebody\n\n\n\n```\n> Can someone please add support for evaluating say 2^(3/4) or 7^(5/3).\n>  \n> > \n>  \n \nAbout this I just found this bug:\n \nsage: x=maxima('x')\n \nsage: x^(3/4)\n x^3/4\n \nsage: x=maxima('2')\n \nsage: x^150\n 1427247692705959881058285969449495136382746624\n \nsage: x^(3/4)\n 2\n \nsage: maxima(3/4)\n 3/4\n \nGreg\n```\n\nGreg's problem is that the exponent is rounded maybe, since `x^(3/4)` should be the same as `x^(maxima('3/4'))`. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/239\n\n",
+    "closed_at": "2007-02-03T17:33:16Z",
     "created_at": "2007-02-03T10:13:33Z",
     "labels": [
         "component: basic arithmetic",
         "minor",
         "bug"
     ],
-    "title": "x^(3/4) rounding issue",
+    "title": "x^(3/4) powering/coercion issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/239",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
+
+
 
 ```
 > Can someone please add support for evaluating say 2^(3/4) or 7^(5/3).
@@ -45,7 +48,8 @@ sage: maxima(3/4)
 Greg
 ```
 
-Greg's problem is that the exponent is rounded maybe, since x^(3/4) should be the same as x^(maxima('3/4')).
+Greg's problem is that the exponent is rounded maybe, since `x^(3/4)` should be the same as `x^(maxima('3/4'))`. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/239
 

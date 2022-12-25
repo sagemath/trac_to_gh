@@ -1,15 +1,16 @@
-# Issue 3743: notebook -- allow admin user to view any worksheet
+# Issue 3743: [with patch; positive review] notebook -- allow admin user to view any worksheet
 
 archive/issues_003743.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUser \"admin\" will be able to go to hostname/users and click on any listed user and have complete access to that user's worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3743\n\n",
+    "closed_at": "2008-08-06T01:29:40Z",
     "created_at": "2008-07-29T18:09:08Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "notebook -- allow admin user to view any worksheet",
+    "title": "[with patch; positive review] notebook -- allow admin user to view any worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3743",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

@@ -1,9 +1,10 @@
-# Issue 4966: Switch gmp to eMPIRe svn1555
+# Issue 4966: [with spkg, patch, positive review] Switch gmp to eMPIRe svn1555
 
 archive/issues_004966.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nThe eMPIRe.spkg is nearly a drop in for the old gmp-4.2.1.spkg. There are a couple doctests to fix (see upcoming patches) and the ecmgmp.spkg also needs a bump since it requires a recompile. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4966\n\n",
+    "closed_at": "2009-01-19T02:09:59Z",
     "created_at": "2009-01-12T06:19:49Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004966.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Switch gmp to eMPIRe svn1555",
+    "title": "[with spkg, patch, positive review] Switch gmp to eMPIRe svn1555",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4966",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

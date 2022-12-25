@@ -4,6 +4,7 @@ archive/issues_008151.json:
 ```json
 {
     "body": "Assignee: tbd\n\nsome file permissions are  wrong (600 or 700) in 4.3.1, \nnamely \nsrc/README \nsrc/box/\n \n(so they become unreadable to the world when the thing is installed as root) \n\nIssue created by migration from https://trac.sagemath.org/ticket/8151\n\n",
+    "closed_at": "2012-06-15T09:11:24Z",
     "created_at": "2010-02-02T09:25:20Z",
     "labels": [
         "component: packages: standard",

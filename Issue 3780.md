@@ -1,15 +1,16 @@
-# Issue 3780: [with patch, depends on #3324
+# Issue 3780: [with patch, positive review] add fast col_swap method for dense matrices over GF(2).
 
 archive/issues_003780.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: m4ri\n\nadd fast col_swap method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3780\n\n",
+    "body": "Assignee: @malb\n\nKeywords: m4ri\n\ndepends on #3324\n\nIssue created by migration from https://trac.sagemath.org/ticket/3780\n\n",
+    "closed_at": "2008-08-31T00:53:39Z",
     "created_at": "2008-08-06T16:28:22Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, depends on #3324",
+    "title": "[with patch, positive review] add fast col_swap method for dense matrices over GF(2).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3780",
     "user": "https://github.com/malb"
@@ -19,7 +20,7 @@ Assignee: @malb
 
 Keywords: m4ri
 
-add fast col_swap method for dense matrices over GF(2).
+depends on #3324
 
 Issue created by migration from https://trac.sagemath.org/ticket/3780
 

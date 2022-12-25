@@ -3,7 +3,7 @@
 archive/issues_004483.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n## Define a newform (up to conjugation)\n`time nf = ModularSymbols(100,2,1).cuspidal_subspace().new_subspace().decomposition()[0]`\n\n`nf.coefficient_field()` -- should return the field of definition of the newform.  (This appears to be accomplished with `nf.eigenvalue(1).parent()`.  It would be nice to know that this really does give the field of definition.)\n\n`nf.degree()` -- should return the degree of the coefficient field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4483\n\n",
+    "body": "Assignee: @craigcitro\n\nDefine a newform (up to conjugation)\n\n```\ntime nf = ModularSymbols(100,2,1).cuspidal_subspace().new_subspace().decomposition()[0]\n```\n\n`nf.coefficient_field()` -- should return the field of definition of the newform.  (This appears to be accomplished with `nf.eigenvalue(1).parent()`.  It would be nice to know that this really does give the field of definition.)\n\n`nf.degree()` -- should return the degree of the coefficient field.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4483\n\n",
     "created_at": "2008-11-09T22:43:46Z",
     "labels": [
         "component: modular forms",
@@ -18,12 +18,16 @@ archive/issues_004483.json:
 ```
 Assignee: @craigcitro
 
-## Define a newform (up to conjugation)
-`time nf = ModularSymbols(100,2,1).cuspidal_subspace().new_subspace().decomposition()[0]`
+Define a newform (up to conjugation)
+
+```
+time nf = ModularSymbols(100,2,1).cuspidal_subspace().new_subspace().decomposition()[0]
+```
 
 `nf.coefficient_field()` -- should return the field of definition of the newform.  (This appears to be accomplished with `nf.eigenvalue(1).parent()`.  It would be nice to know that this really does give the field of definition.)
 
 `nf.degree()` -- should return the degree of the coefficient field.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4483
 

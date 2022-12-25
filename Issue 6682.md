@@ -3,7 +3,8 @@
 archive/issues_006682.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu @kini\n\nThis involves at least fixing the documentation build process and trac to support utf-8. Possibly other components as well. \n\nDiscussion at http://groups.google.com/group/sage-devel/browse_thread/thread/ff129ae1c62d5a78\n\nIssue created by migration from https://trac.sagemath.org/ticket/6682\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu @kini\n\nThis involves at least fixing the documentation build process and trac to support utf-8. Possibly other components as well. \n\nDiscussion in [August 2009](http://groups.google.com/group/sage-devel/browse_thread/thread/ff129ae1c62d5a78).\n\nMore recent discussion [here](http://groups.google.com/group/sage-devel/browse_thread/thread/4b408b6e240f40a).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6682\n\n",
+    "closed_at": "2014-02-19T18:56:05Z",
     "created_at": "2009-08-07T07:03:17Z",
     "labels": [
         "component: build",
@@ -22,7 +23,10 @@ CC:  mvngu @kini
 
 This involves at least fixing the documentation build process and trac to support utf-8. Possibly other components as well. 
 
-Discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/ff129ae1c62d5a78
+Discussion in [August 2009](http://groups.google.com/group/sage-devel/browse_thread/thread/ff129ae1c62d5a78).
+
+More recent discussion [here](http://groups.google.com/group/sage-devel/browse_thread/thread/4b408b6e240f40a).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6682
 

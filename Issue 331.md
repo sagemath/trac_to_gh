@@ -4,6 +4,7 @@ archive/issues_000331.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  dmharvey@math.harvard.edu\n\nSAGE needs a compiled, well-optimised implementation of dense univariate polynomial arithmetic over a *generic* commutative base ring.\n\nThe current implementation is the python class `Polynomial_generic_dense` in `sage/rings/polynomial_element.py`.\n\nThe new implementation would probably use a python list to store the coefficients (maybe a C array? I'm not sure...), and would have optimised code for at least the following:\n\n* addition, subtraction\n* multiplication: classical algorithm, also karatsuba (but this should be optional, since it doesn't work well over certain base rings, especially where numerical stability is an issue)\n* division, at least when the base ring is a field (or for monic divisors), using classical, divide-and-conquer, possibly newton's method\n* polynomial evaluation\n* retrieval of coefficients and conversion to/from python lists\n* comparison, hashing\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/331\n\n",
+    "closed_at": "2008-09-23T20:45:32Z",
     "created_at": "2007-03-22T14:55:28Z",
     "labels": [
         "component: basic arithmetic"

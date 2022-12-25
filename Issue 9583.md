@@ -3,7 +3,8 @@
 archive/issues_009583.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby @jhpalmieri @johnperry-math @malb simonking @nexttime\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\nt2.math: seems to build successfully, but I get the following when I\ntry to start sage:\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\nI haven't tried to debug this.  I don't know how to use gdb, in any\ncase.  Any suggestions about what the problem might be?  You can find\nthe build in /scratch/palmieri/.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9583\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @jhpalmieri @johnperry-math @malb simonking @nexttime\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\nt2.math: seems to build successfully, but I get the following when I\ntry to start sage:\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\nI haven't tried to debug this.  I don't know how to use gdb, in any\ncase.  Any suggestions about what the problem might be?  You can find\nthe build in /scratch/palmieri/.\n```\n## Hardware and software configuration of t2.math.washington.edu\n* [Sun SPARC Enterprise T5240 Server](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm) \n* 2 x 1167 MHz [UltraSPARC T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors. (16 cores and 128 hardware threads in total). \n* 32 GB RAM\n* No swap devices configured. \n* Solaris 10 update 7 (5/09)\n* gcc 4.4.1 configured to use the Sun linker and Sun assembler. \n* Sage was built in on a local ZFS file system (/scratch) as a 32-bit application.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9583\n\n",
+    "closed_at": "2010-07-27T00:43:46Z",
     "created_at": "2010-07-23T08:01:49Z",
     "labels": [
         "component: porting: solaris",
@@ -40,6 +41,14 @@ I haven't tried to debug this.  I don't know how to use gdb, in any
 case.  Any suggestions about what the problem might be?  You can find
 the build in /scratch/palmieri/.
 ```
+## Hardware and software configuration of t2.math.washington.edu
+* [Sun SPARC Enterprise T5240 Server](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm) 
+* 2 x 1167 MHz [UltraSPARC T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors. (16 cores and 128 hardware threads in total). 
+* 32 GB RAM
+* No swap devices configured. 
+* Solaris 10 update 7 (5/09)
+* gcc 4.4.1 configured to use the Sun linker and Sun assembler. 
+* Sage was built in on a local ZFS file system (/scratch) as a 32-bit application.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9583
 

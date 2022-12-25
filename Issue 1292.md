@@ -1,9 +1,10 @@
-# Issue 1292: bug in polynomial root finding mod n
+# Issue 1292: [with patch] bug in polynomial root finding mod n
 
 archive/issues_001292.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis was reported by michael to sage-devel on Nov 27, 2007.   It's a genuine\nbug which gives incorrect mathematical results (hence the critical marking). \n\n```\nR=IntegerModRing(3^2)\nA=PolynomialRing(R,'y')\ny=A.gen()\nf=10*y^2 - y^3 - 9;\nf.roots(multiplicities=false)\n///\n[1, 0]\n```\n\n```\nprint [k for k in R if f(k) == 0]\n///\n[0, 1, 3, 6]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1292\n\n",
+    "body": "Assignee: cwitty\n\nThis was reported by michael to sage-devel on Nov 27, 2007.   It's a genuine\nbug which gives incorrect mathematical results (hence the critical marking). \n\n```\nR=IntegerModRing(3^2)\nA=PolynomialRing(R,'y')\ny=A.gen()\nf=10*y^2 - y^3 - 9;\nf.roots(multiplicities=false)\n///\n[1, 0]\n```\n\n```\nprint [k for k in R if f(k) == 0]\n///\n[0, 1, 3, 6]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1292\n\n",
+    "closed_at": "2007-12-02T05:57:42Z",
     "created_at": "2007-11-27T15:18:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_001292.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "bug in polynomial root finding mod n",
+    "title": "[with patch] bug in polynomial root finding mod n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1292",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: cwitty
 
 This was reported by michael to sage-devel on Nov 27, 2007.   It's a genuine
 bug which gives incorrect mathematical results (hence the critical marking). 

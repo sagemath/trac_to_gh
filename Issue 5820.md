@@ -1,24 +1,25 @@
-# Issue 5820: bug in comparison of ring morphisms
+# Issue 5820: [with patch, positive review] implement comparison of ring coercion morphisms
 
 archive/issues_005820.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: morphism ring comparison loads dumps\n\nAs discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:\n\n```\nsage: f = ZZ.hom(QQ)\nsage: g = loads(dumps(f))\nsage: f == g\nFalse\n```\n\n(It should return True.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5820\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: ring coercion morphism comparison loads dumps\n\nAs discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:\n\n```\nsage: f = ZZ.hom(QQ)\nsage: g = loads(dumps(f))\nsage: f == g\nFalse\n```\n\n(It should return True.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5820\n\n",
+    "closed_at": "2009-04-30T01:27:40Z",
     "created_at": "2009-04-19T02:54:39Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "bug in comparison of ring morphisms",
+    "title": "[with patch, positive review] implement comparison of ring coercion morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5820",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
-Keywords: morphism ring comparison loads dumps
+Keywords: ring coercion morphism comparison loads dumps
 
 As discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:
 

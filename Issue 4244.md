@@ -1,15 +1,16 @@
-# Issue 4244: [with patch, needs review] pynac interface enhancements, symbolic functions
+# Issue 4244: [with patch, positive review] pynac interface enhancements, symbolic functions
 
 archive/issues_004244.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @williamstein @mwhansen\n\nKeywords: pynac, symbolics\n\nThe patches attached contain various enhancements to the pynac interface:\n* variables.patch - adds a .variables() method to sage.symbolic.expression.Expression\n* custom_eval_func.patch - allows the user to set custom python functions to perform evaluation, numeric evaluation, derivation, series expansion etc. on the given function (sage.symbolic.function.SFunction).\n\nChanges in custom_eval_func.patch depend on the package at #4243, which in turn depends on #3872.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4244\n\n",
+    "closed_at": "2008-10-18T13:05:28Z",
     "created_at": "2008-10-04T20:36:40Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] pynac interface enhancements, symbolic functions",
+    "title": "[with patch, positive review] pynac interface enhancements, symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4244",
     "user": "https://github.com/burcin"

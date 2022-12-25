@@ -1,9 +1,10 @@
-# Issue 6632: Bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex
+# Issue 6632: [with patch, positive review] bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex
 
 archive/issues_006632.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nThere is a bug in the blocks_and_cut_vertices() function for graphs such that an incorrect result is returned if the vertex 0 is a cut vertex.\n\n```\nsage: G=Graph()\nsage: G.add_vertices(range(5))\nsage: G.add_edges([(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)])\nsage: print G.blocks_and_cut_vertices()\n([[0, 1, 2]], [])\n```\n\nThe bug arises because the algorithm as presented in the referenced book uses 0 to indicate a vertex not in the graph.  However, in Sage, we number the vertices of a graph starting at 0.\n\nA patch will be attached below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6632\n\n",
+    "closed_at": "2009-08-03T02:02:00Z",
     "created_at": "2009-07-26T22:10:42Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_006632.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex",
+    "title": "[with patch, positive review] bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6632",
     "user": "https://trac.sagemath.org/admin/accounts/users/hartke"

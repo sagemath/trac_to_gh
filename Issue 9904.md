@@ -3,7 +3,7 @@
 archive/issues_009904.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime\n\nPut timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.\n\nThis aids both in debugging problems with the build and with evaluating performance issues in the build.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9905\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime\n\nPut timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.\n\nThis aids both in debugging problems with the build and with evaluating performance issues in the build.\n\n\nSee also: #7183, #7188, #8385\n\nIssue created by migration from https://trac.sagemath.org/ticket/9905\n\n",
     "created_at": "2010-09-13T20:49:39Z",
     "labels": [
         "component: build",
@@ -23,6 +23,9 @@ CC:  @nexttime
 Put timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.
 
 This aids both in debugging problems with the build and with evaluating performance issues in the build.
+
+
+See also: #7183, #7188, #8385
 
 Issue created by migration from https://trac.sagemath.org/ticket/9905
 

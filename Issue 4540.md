@@ -1,16 +1,18 @@
-# Issue 4540: Symmetrica segfault converting Schur functions to k-Schurs
+# Issue 4540: [with patch; positive review] Symmetrica segfault converting Schur functions to k-Schurs
 
 archive/issues_004540.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: kschur, symmetrica, segfault\n\nExample:\n\n```\nsage: ks3 = kSchurFunctions(QQ,3,1)  # k-Schur functions without a 't' variable\nsage: s = SFASchur(base_ring())\nsage: ks3(s([3]))\n\nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in 'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1) \npython: mult(1): Unknown error 3052408646\n```\n\nI don't know if the definition of ks3 above was ever intended to be supported.  I just tried it because I wanted k-Schur functions without a 't' and it seemed the natural thing to do.  Conversions the other way (i.e., s(ks3([3])) ) do seem to work.  And, whether it's intended to be supported or not, segfaults are bad.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4540\n\n",
+    "closed_at": "2008-11-21T23:06:46Z",
     "created_at": "2008-11-17T19:01:51Z",
     "labels": [
         "component: combinatorics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Symmetrica segfault converting Schur functions to k-Schurs",
+    "title": "[with patch; positive review] Symmetrica segfault converting Schur functions to k-Schurs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4540",
     "user": "https://github.com/jbandlow"

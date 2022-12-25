@@ -1,9 +1,10 @@
-# Issue 4290: stopgap function to turn plane curves of genus one into elliptic curves
+# Issue 4290: [with patch, positive review] function to construct an Elliptic Curve from a plane curve of genus one (using Magma)
 
 archive/issues_004290.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:\n\n```\nsage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional\nsage: C=Curve(x^4+x^2*y^2-z^4) \nsage: P=C(1,0,1) \nsage: E=EllipticCurve_from_plane_curve(C,P) \nsage: E \nElliptic Curve defined by y^2  = x^3 + 4*x over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4290\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:\n\n```\nsage: x,y,z=MPolynomialRing(QQ,Integer(3),'xyz').gens() # optional\nsage: C=Curve(x^4+x^2*y^2-z^4) \nsage: P=C(1,0,1) \nsage: E=EllipticCurve_from_plane_curve(C,P) \nsage: E \nElliptic Curve defined by y^2  = x^3 + 4*x over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4290\n\n",
+    "closed_at": "2009-06-24T10:04:23Z",
     "created_at": "2008-10-14T22:39:08Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,13 +12,13 @@ archive/issues_004290.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "stopgap function to turn plane curves of genus one into elliptic curves",
+    "title": "[with patch, positive review] function to construct an Elliptic Curve from a plane curve of genus one (using Magma)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4290",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 This is a function to turn plane curves of genus 1 with a known point into objects of type EllipticCurve. It relies on MAGMA (as does EllipticCurve_from_cubic) but will add a little functionality. Here is an example of how it works:
 

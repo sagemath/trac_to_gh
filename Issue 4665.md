@@ -1,9 +1,10 @@
-# Issue 4665: sage/misc/cython.py creates file sage/misc/hello.spyx in tree while doctesting
+# Issue 4665: [with patch; needs review] sage/misc/cython.py creates file sage/misc/hello.spyx in tree while doctesting
 
 archive/issues_004665.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n#4660 exposed a bug in sage/misc/cython.py: hello.spyx is created in tree, but that file should be created in the Sage tmp directory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4665\n\n",
+    "closed_at": "2009-01-24T13:16:50Z",
     "created_at": "2008-11-30T10:04:17Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004665.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "sage/misc/cython.py creates file sage/misc/hello.spyx in tree while doctesting",
+    "title": "[with patch; needs review] sage/misc/cython.py creates file sage/misc/hello.spyx in tree while doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4665",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

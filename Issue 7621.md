@@ -4,6 +4,7 @@ archive/issues_007621.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nI have two small usability issues to report for the MIP interface:\n\n* Why is `p_mipvariables` a semi-private variable? There should be a method to get the variables defined so far (e.g. `p.get_mip_variables`).\n\n* Why are `p.__INTEGER`,`p.__BINARY`,`p.__REAL` private? This way the user needs to remember the integer assignment, which is unnecessary. Just rename them `p.INTEGER` etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7621\n\n",
+    "closed_at": "2010-10-09T08:46:44Z",
     "created_at": "2009-12-08T13:49:57Z",
     "labels": [
         "component: numerical",

@@ -1,23 +1,26 @@
-# Issue 5856: elliptic curves over Z/pZ are treated totally differently than elliptic curves over GF(p)
+# Issue 5856: [with patch, positive review] elliptic curves over Z/pZ are treated totally differently than elliptic curves over GF(p)
 
 archive/issues_005856.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nWe have\n\n```\nsage: type(EllipticCurve(Zmod(11), [1,2]))\n<class 'sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic'>\nsage: type(EllipticCurve(GF(11), [1,2]))\n<class 'sage.schemes.elliptic_curves.ell_finite_field.EllipticCurve_finite_field'>\n```\n\nThis means that if you make a curve over Z/pZ then basically nothing works, but if you make the same curve over GF(p), there is tons of functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5856\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: elliptic curve integers mod prime\n\nWe have\n\n```\nsage: type(EllipticCurve(Zmod(11), [1,2]))\n<class 'sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic'>\nsage: type(EllipticCurve(GF(11), [1,2]))\n<class 'sage.schemes.elliptic_curves.ell_finite_field.EllipticCurve_finite_field'>\n```\n\nSee also #5857.\nThis means that if you make a curve over Z/pZ then basically nothing works, but if you make the same curve over GF(p), there is tons of functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5856\n\n",
+    "closed_at": "2009-04-30T09:07:10Z",
     "created_at": "2009-04-22T15:47:38Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "elliptic curves over Z/pZ are treated totally differently than elliptic curves over GF(p)",
+    "title": "[with patch, positive review] elliptic curves over Z/pZ are treated totally differently than elliptic curves over GF(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5856",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @aghitza
 
 CC:  @JohnCremona
+
+Keywords: elliptic curve integers mod prime
 
 We have
 
@@ -28,6 +31,7 @@ sage: type(EllipticCurve(GF(11), [1,2]))
 <class 'sage.schemes.elliptic_curves.ell_finite_field.EllipticCurve_finite_field'>
 ```
 
+See also #5857.
 This means that if you make a curve over Z/pZ then basically nothing works, but if you make the same curve over GF(p), there is tons of functionality.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5856

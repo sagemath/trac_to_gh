@@ -4,6 +4,7 @@ archive/issues_004867.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -i gcc-4.2.1\n...\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n/usr/include/gnu/stubs.h:7:27: error: gnu/stubs-32.h: No such file or directory\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4867\n\n",
+    "closed_at": "2013-08-16T11:11:46Z",
     "created_at": "2008-12-24T05:54:21Z",
     "labels": [
         "component: packages: optional",

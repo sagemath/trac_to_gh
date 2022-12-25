@@ -1,15 +1,16 @@
-# Issue 5348: Implements guard selection in sage -combinat qselect
+# Issue 5348: [with-patch, positive review] Implements guard selection in sage -combinat qselect
 
 archive/issues_005348.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nImplements:\n-  sage -combinat qselect <myguards>\n-  sage -combinat qselect -n <myguards>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5348\n\n",
+    "closed_at": "2009-02-24T19:48:49Z",
     "created_at": "2009-02-23T09:29:29Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Implements guard selection in sage -combinat qselect",
+    "title": "[with-patch, positive review] Implements guard selection in sage -combinat qselect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5348",
     "user": "https://github.com/nthiery"

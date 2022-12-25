@@ -4,9 +4,10 @@ archive/issues_000104.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:\n\n```\n....\nSuccessfully installed moin-1.5.4.p0\n<justin@zippo-w:sage-1.4> sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4, Build Date: 2006-10-01             |\n| Distributed under the GNU General Public License V2. |\n\nsage: wiki() \nServing on localhost:9000\nlocalhost - - [01/Oct/2006 23:14:42] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:42 2006] UnboundLocalError: local variable 'File' referenced before assignment\n\nlocalhost - - [01/Oct/2006 23:14:43] \"GET /favicon.ico HTTP/1.1\" 200 -\nlocalhost - - [01/Oct/2006 23:14:53] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:53 2006] UnboundLocalError: local variable 'File' referenced before assignment\n```\nThe first entry is from my first contact with the wiki (using http://localhost:9000).  If I refresh, I get the second (from the favicon line).\n\nThe first time I contact the wiki, I get a blank page (it's blank when I \"view source\" as well).  If I refresh the page, I get the crud I'll try to attach to this ticket.\n\nOnce I use this the first time, all subsequent attempts, even with a fresh copy of SAGE, give me the crud I'm going to try to attach here.  It's only the very first attempt where I see a totally blank page.\n\nThis is with SAGE 1.4, but this same behavior has been with me since the MSRI workshop.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/104\n\n",
+    "closed_at": "2006-10-15T18:29:18Z",
     "created_at": "2006-10-02T06:34:20Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: user interface",
         "bug"
     ],
     "title": "wiki() doesn't work",

@@ -4,6 +4,7 @@ archive/issues_006475.json:
 ```json
 {
     "body": "Assignee: wstein\n\nCC:  @williamstein acleone @qed777\n\nKeywords: notebook delete file error\n\nIf I delete a data file using the notebook (Data... pop up menu -> file name -> delete file name link), the file is deleted, but the browser then goes to a blank page titled \"Error | Sage Notebook\". The browser is Safari 4 on OS X 10.5, in case that makes a difference.\n\nWilliam Stein reported on Sage-Support:\n\nI've seen this.  This definitely didn't used to happen.  Somebody introduced this bug a few months ago.  Please report it to trac.  I'll fix it in September/October when I work on the notebook, if nobody beats me to it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6475\n\n",
+    "closed_at": "2010-01-25T01:02:39Z",
     "created_at": "2009-07-07T18:22:15Z",
     "labels": [
         "component: notebook",

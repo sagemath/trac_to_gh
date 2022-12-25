@@ -1,16 +1,17 @@
-# Issue 4436: Sage 3.2.a2: numerical noise in sage/calculus/calculus.py
+# Issue 4436: [with patch, positive review] Sage 3.2.a2: numerical noise in sage/calculus/calculus.py
 
 archive/issues_004436.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn an Itanium:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py              \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\nOn an x86:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py               \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 120:\n    sage: float(f(pi))\nExpected:\n    6.1232339957367663e-16\nGot:\n    6.1230317691118863e-16\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4436\n\n",
+    "closed_at": "2008-11-05T23:12:41Z",
     "created_at": "2008-11-04T13:52:39Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.a2: numerical noise in sage/calculus/calculus.py",
+    "title": "[with patch, positive review] Sage 3.2.a2: numerical noise in sage/calculus/calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4436",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 2041: [with doc patch, needs review] tutorial: long lines in verbatim environments get cut off in pdf file
+# Issue 2041: [with new patch, with positive review] tutorial: long lines in verbatim environments get cut off in pdf file
 
 archive/issues_002041.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSee the discussion at\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/99ef95ceff366175/8e44f7219c7394d9\n\nLines longer than about 74 characters in verbatim environments are longer than the text width in the pdf files.  Worse, if they're longer than about 80 characters they just fall off the page and the rest gets cut off.\n\nThe attached doc patch does the following:\n1. Ignore the \"slightly long, but still completely visible\" lines (i.e left them the way they were).  They're not that pretty, but wrapping them only makes things nicer by a marginal amount.\n2. Manually wrapped the really long lines where stuff was lost: when these lines corresponded to sage: input commands, I broke them up in a place that looked ok to me with a backslash and continued on the next line.  I added warnings to the reader not to type in the ....: that appear on subsequent lines then.  If the lines correspond to long sage output, I just broke them after 72 characters, the exact same way that sage would behave if the terminal were 72 characters wide.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2041\n\n",
+    "closed_at": "2008-02-20T14:04:14Z",
     "created_at": "2008-02-03T23:38:23Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with doc patch, needs review] tutorial: long lines in verbatim environments get cut off in pdf file",
+    "title": "[with new patch, with positive review] tutorial: long lines in verbatim environments get cut off in pdf file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2041",
     "user": "https://github.com/aghitza"

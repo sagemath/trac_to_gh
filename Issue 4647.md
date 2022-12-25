@@ -1,9 +1,10 @@
-# Issue 4647: Disable dependency code cacheing in setup.py
+# Issue 4647: [with patch, with positive review] Disable dependency code cacheing in setup.py for now
 
 archive/issues_004647.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUnless we do the following -upgrade will likely break for a ton of people:\n\n```\n[3:57pm] craigcitro: wstein: so i'm only here for 3 seconds between xmas decorating, but i had a thought\n[3:57pm] craigcitro: the dependency checking code in setup.py seems to be causing a lot of heartache\n[3:57pm] craigcitro: so why don't we just not cache it? it still only takes like .6 seconds to build the whole dependency tree\n[3:58pm] mabshoff: +1\n[3:58pm] craigcitro: and if it build fresh every time, we'll avoid a ton of these issues\n[3:58pm] craigcitro: and then when i have time to sit down and debug a bunch of these crazy situations, we can add it back in\n[3:58pm] craigcitro: just comment out all the lines about pickle/unpickle/etc in setup.py\n[4:00pm] ghtdak1 left the chat room. (Remote closed the connection)\n[4:00pm] craigcitro: mabshoff: do you want to make a patch that does that for rc0?\n[4:00pm] craigcitro: and see how it works out?\n[4:00pm] craigcitro: i have to run right now -- getting the tree out of the car and putting up xmas lights. \n[4:00pm] mabshoff: I will put it on my list, but no promises.\n```\nOne problem I see is that currently deleting the Cython cache triggers a full rebuild, so that need to be considered. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4647\n\n",
+    "closed_at": "2008-11-29T07:48:29Z",
     "created_at": "2008-11-29T00:04:28Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004647.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Disable dependency code cacheing in setup.py",
+    "title": "[with patch, with positive review] Disable dependency code cacheing in setup.py for now",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4647",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

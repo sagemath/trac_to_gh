@@ -1,16 +1,17 @@
-# Issue 3934: Eta product modular functions
+# Issue 3934: [with patches; positive review] Eta product modular functions
 
 archive/issues_003934.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nAt the Heilbronn Institute workshop \"Computations with Modular Forms\", Ken McMurdy requested code for handling eta products on X_0(N). Theory background and wish-list here: http://maths.pratum.net/CMF/resources/McMurdyTalk.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3934\n\n",
+    "closed_at": "2008-10-26T04:06:40Z",
     "created_at": "2008-08-23T11:46:53Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Eta product modular functions",
+    "title": "[with patches; positive review] Eta product modular functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3934",
     "user": "https://github.com/loefflerd"

@@ -1,16 +1,18 @@
-# Issue 5994: singular.version() yields an error when first called, has no doctest, and has a strange output imo
+# Issue 5994: singular.version() has no doctest
 
 archive/issues_005994.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kedlaya\n\nKeywords: singular version\n\nFirst of all, `singular.version()` does not work. When one starts sage and calls it, there is an error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.version()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (795, 0))\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/SimonKing/.sage/temp/sage.math.washington.edu/10897/_home_SimonKing__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in version(self)\n   1012         EXAMPLES:\n   1013         \"\"\"\n-> 1014         return singular_version()\n   1015\n   1016     def _function_class(self):\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in singular_version()\n   1807     EXAMPLES:\n   1808     \"\"\"\n-> 1809     return singular.eval('system(\"--version\");')\n   1810\n   1811\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in eval(self, x, allow_semicolon, strip, **kwds)\n    541\n    542         if s.find(\"error\") != -1 or s.find(\"Segment fault\") != -1:\n--> 543             raise RuntimeError, 'Singular error:\\n%s'%s\n    544\n    545         if get_verbose() > 0:\n\nRuntimeError: Singular error:\n   ? cannot open `help.cnf`\nSingular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\nwith\n        factory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\n        GMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\n        namespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\n        CC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\n        CXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\nargv[0]   :     Singular-3-0-4\nSearchPath:     /usr/local/sage/local/LIB\nSingular  :     /usr/local/sage/local/bin/Singular-3-0-4\nBinDir    :     /usr/local/sage/local/bin\nRootDir   :     /usr/local/sage/local\nDefaultDir:     /usr/local/sage/local\nInfoFile  :\nIdxFile   :\nHtmlDir   :\nManualUrl :     http://www.singular.uni-kl.de/Manual/3-0-4\nExDir     :\nPath      :     /usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\nEmacsDir  :\nAvailable HelpBrowsers: dummy, emacs,\nCurrent HelpBrowser: dummy\n   ? error occurred in STDIN line 3: `system(\"--version\");`\n```\n\nSecondly, neither `singular.version` nor `singular_version` have doc tests.\n\nThirdly, if it is called again, it kind of works:\n\n```\nsage: singular.version()\n'Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\\nwith\\n\\tfactory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\\n\\tGMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\\n\\tnamespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\\n\\tCC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\\n\\tCXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\\nargv[0]   :\\tSingular-3-0-4\\nSearchPath:\\t/usr/local/sage/local/LIB\\nSingular  :\\t/usr/local/sage/local/bin/Singular-3-0-4\\nBinDir    :\\t/usr/local/sage/local/bin\\nRootDir   :\\t/usr/local/sage/local\\nDefaultDir:\\t/usr/local/sage/local\\nInfoFile  :\\t\\nIdxFile   :\\t\\nHtmlDir   :\\t\\nManualUrl :\\thttp://www.singular.uni-kl.de/Manual/3-0-4\\nExDir     :\\t\\nPath      :\\t/usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\\nEmacsDir  :\\t\\nAvailable HelpBrowsers: dummy, emacs, \\nCurrent HelpBrowser: dummy '\n```\n\nFinally, I believe that the output of `singular.version` is nasty. If I ask for the version of Singular, I expect to get, say, a tuple of integers, for example:\n\n```\nsage: def my_singular_version():\n....:     return tuple([Integer(x) for x in singular.eval('system(\"version\")')])\n....:\nsage: my_singular_version()\n(3, 0, 4, 4)\n```\n\nI suggest to remake `singular.version` so that it returns a tuple of integers, rather than a cryptic string.\n\nProblem though: Would this break code?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5994\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kedlaya\n\nKeywords: singular version help.cnf\n\nNeither `singular.version` nor `singular_version` have doc tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5994\n\n",
+    "closed_at": "2016-11-02T19:20:02Z",
     "created_at": "2009-05-06T09:46:52Z",
     "labels": [
         "component: interfaces",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.5",
-    "title": "singular.version() yields an error when first called, has no doctest, and has a strange output imo",
+    "title": "singular.version() has no doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5994",
     "user": "https://github.com/simon-king-jena"
@@ -20,94 +22,9 @@ Assignee: @williamstein
 
 CC:  @kedlaya
 
-Keywords: singular version
+Keywords: singular version help.cnf
 
-First of all, `singular.version()` does not work. When one starts sage and calls it, there is an error:
-
-```
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-sage: singular.version()
-ERROR: An unexpected error occurred while tokenizing input
-The following traceback may be corrupted or invalid
-The error message is: ('EOF in multi-line statement', (795, 0))
-| Sage Version 3.4.1, Release Date: 2009-04-21                       |
-| Type notebook() for the GUI, and license() for information.        |
----------------------------------------------------------------------------
-RuntimeError                              Traceback (most recent call last)
-
-/home/SimonKing/.sage/temp/sage.math.washington.edu/10897/_home_SimonKing__sage_init_sage_0.py in <module>()
-
-/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in version(self)
-   1012         EXAMPLES:
-   1013         """
--> 1014         return singular_version()
-   1015
-   1016     def _function_class(self):
-
-/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in singular_version()
-   1807     EXAMPLES:
-   1808     """
--> 1809     return singular.eval('system("--version");')
-   1810
-   1811
-
-/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in eval(self, x, allow_semicolon, strip, **kwds)
-    541
-    542         if s.find("error") != -1 or s.find("Segment fault") != -1:
---> 543             raise RuntimeError, 'Singular error:\n%s'%s
-    544
-    545         if get_verbose() > 0:
-
-RuntimeError: Singular error:
-   ? cannot open `help.cnf`
-Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08
-with
-        factory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),
-        GMP(4.2),NTL(5.4.2),static readline,Plural,DBM,
-        namespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325
-        CC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,
-        CXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))
-argv[0]   :     Singular-3-0-4
-SearchPath:     /usr/local/sage/local/LIB
-Singular  :     /usr/local/sage/local/bin/Singular-3-0-4
-BinDir    :     /usr/local/sage/local/bin
-RootDir   :     /usr/local/sage/local
-DefaultDir:     /usr/local/sage/local
-InfoFile  :
-IdxFile   :
-HtmlDir   :
-ManualUrl :     http://www.singular.uni-kl.de/Manual/3-0-4
-ExDir     :
-Path      :     /usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-EmacsDir  :
-Available HelpBrowsers: dummy, emacs,
-Current HelpBrowser: dummy
-   ? error occurred in STDIN line 3: `system("--version");`
-```
-
-Secondly, neither `singular.version` nor `singular_version` have doc tests.
-
-Thirdly, if it is called again, it kind of works:
-
-```
-sage: singular.version()
-'Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\nwith\n\tfactory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\n\tGMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\n\tnamespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\n\tCC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\n\tCXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\nargv[0]   :\tSingular-3-0-4\nSearchPath:\t/usr/local/sage/local/LIB\nSingular  :\t/usr/local/sage/local/bin/Singular-3-0-4\nBinDir    :\t/usr/local/sage/local/bin\nRootDir   :\t/usr/local/sage/local\nDefaultDir:\t/usr/local/sage/local\nInfoFile  :\t\nIdxFile   :\t\nHtmlDir   :\t\nManualUrl :\thttp://www.singular.uni-kl.de/Manual/3-0-4\nExDir     :\t\nPath      :\t/usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\nEmacsDir  :\t\nAvailable HelpBrowsers: dummy, emacs, \nCurrent HelpBrowser: dummy '
-```
-
-Finally, I believe that the output of `singular.version` is nasty. If I ask for the version of Singular, I expect to get, say, a tuple of integers, for example:
-
-```
-sage: def my_singular_version():
-....:     return tuple([Integer(x) for x in singular.eval('system("version")')])
-....:
-sage: my_singular_version()
-(3, 0, 4, 4)
-```
-
-I suggest to remake `singular.version` so that it returns a tuple of integers, rather than a cryptic string.
-
-Problem though: Would this break code?
+Neither `singular.version` nor `singular_version` have doc tests.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5994
 

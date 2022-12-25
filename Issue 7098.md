@@ -1,16 +1,17 @@
-# Issue 7098: Bring calculus.py to full coverage
+# Issue 7098: [with patch, positive review] Bring calculus.py to full coverage
 
 archive/issues_007098.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @wdjoyner\n\nThere are a few helper functions which are undocumented in calculus/calculus.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7098\n\n",
+    "closed_at": "2009-10-15T07:17:33Z",
     "created_at": "2009-10-02T16:14:25Z",
     "labels": [
         "component: calculus",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Bring calculus.py to full coverage",
+    "title": "[with patch, positive review] Bring calculus.py to full coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7098",
     "user": "https://github.com/kcrisman"

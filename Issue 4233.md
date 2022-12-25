@@ -1,16 +1,17 @@
-# Issue 4233: [with patch, needs review] fix doctest failure due to deprecation warning in calculus/all.py
+# Issue 4233: [with patch, positive review] fix doctest failure due to deprecation warning in calculus/all.py
 
 archive/issues_004233.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: calculus, deprecation\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4233\n\n",
+    "closed_at": "2008-10-02T01:42:19Z",
     "created_at": "2008-10-01T21:33:20Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] fix doctest failure due to deprecation warning in calculus/all.py",
+    "title": "[with patch, positive review] fix doctest failure due to deprecation warning in calculus/all.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4233",
     "user": "https://github.com/jhpalmieri"

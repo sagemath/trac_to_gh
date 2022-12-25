@@ -3,7 +3,8 @@
 archive/issues_009872.json:
 ```json
 {
-    "body": "Assignee: @gvol\n\nCC:  @kcrisman @jasongrout georgsweber mhampton @qed777\n\nKeywords: mac\n\nMany people want a Mac application, but so far none has appeared that was worthy of the name Sage.  This must change!  We need something which can launch terminal sessions, install spkg files, run and provide quicklook support for sage files.  Something that can be used as a MenuExtra, and optionally act as a primitive browser for the notebook.\n\nIs such a thing even possible?  Yes!  In fact such an application is almost here!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9873\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @kcrisman @jasongrout georgsweber mhampton @qed777\n\nKeywords: mac\n\nMany people want a Mac application, but so far none has appeared that was worthy of the name Sage.  This must change!  We need something which can launch terminal sessions, install spkg files, run and provide quicklook support for sage files.  Something that can be used as a MenuExtra, and optionally act as a primitive browser for the notebook.\n\nIs such a thing even possible?  Yes!  In fact such an application is almost here!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9873\n\n",
+    "closed_at": "2010-09-29T23:17:44Z",
     "created_at": "2010-09-08T07:16:09Z",
     "labels": [
         "component: user interface"
@@ -15,7 +16,7 @@ archive/issues_009872.json:
     "user": "https://github.com/gvol"
 }
 ```
-Assignee: @gvol
+Assignee: mhampton
 
 CC:  @kcrisman @jasongrout georgsweber mhampton @qed777
 

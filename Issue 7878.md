@@ -4,6 +4,7 @@ archive/issues_007878.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nOne of the scripts recently added to sage in ticket #7505 has an extra space in the output when the Sun compiler is used on Solaris. The revised version just used 'sed' to strip out any spaces. \n\nThe problem was not see on the testcc.sh, but I thought it prudent to do do both scripts the same. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7878\n\n",
+    "closed_at": "2010-01-31T00:11:07Z",
     "created_at": "2010-01-09T19:11:05Z",
     "labels": [
         "component: build",

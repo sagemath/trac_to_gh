@@ -1,25 +1,31 @@
-# Issue 8511: docstring fix for symbolic expressions
+# Issue 8511: docstring fix for "unexpected indentation"
 
 archive/issues_008511.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nAttached is a trivial fix to make the docstring for the `substitute` method for symbolic expressions look right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8511\n\n",
+    "body": "Assignee: @jhpalmieri\n\nWhen building the reference manual for 4.3.4.alpha1, I get several messages of the form\n\n```\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\nThe attached patch fixes these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8511\n\n",
+    "closed_at": "2010-03-14T08:28:12Z",
     "created_at": "2010-03-12T20:24:55Z",
     "labels": [
-        "component: symbolics",
-        "minor",
+        "component: documentation",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "docstring fix for symbolic expressions",
+    "title": "docstring fix for \"unexpected indentation\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8511",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @burcin
+Assignee: @jhpalmieri
 
-Attached is a trivial fix to make the docstring for the `substitute` method for symbolic expressions look right.
+When building the reference manual for 4.3.4.alpha1, I get several messages of the form
+
+```
+<autodoc>:0: (ERROR/3) Unexpected indentation.
+```
+The attached patch fixes these.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8511
 

@@ -4,6 +4,7 @@ archive/issues_003320.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: gap, linear algebra\n\nThis should be much faster:\n\n```\nsage: A = random_matrix(GF(2),200,200)\nsage: time Am = magma(A)\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\nWall time: 0.50\nsage: time Ag = gap(A) #<-------------\nCPU times: user 10.35 s, sys: 0.63 s, total: 10.98 s\nWall time: 11.76\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3320\n\n",
+    "closed_at": "2013-03-29T18:58:36Z",
     "created_at": "2008-05-28T13:26:33Z",
     "labels": [
         "component: interfaces"

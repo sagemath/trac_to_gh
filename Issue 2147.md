@@ -1,9 +1,10 @@
-# Issue 2147: Make default cyclotomic polynomial be defined over ZZ.
+# Issue 2147: [with patch, with positive review on the mailing list] Make default cyclotomic polynomial be defined over ZZ.
 
 archive/issues_002147.json:
 ```json
 {
     "body": "Assignee: @ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: cyclotomic polynomial default ZZ QQ\n\n`cyclotomic_polynomial` should return an integer polynomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2147\n\n",
+    "closed_at": "2008-02-13T07:56:36Z",
     "created_at": "2008-02-13T03:57:53Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_002147.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Make default cyclotomic polynomial be defined over ZZ.",
+    "title": "[with patch, with positive review on the mailing list] Make default cyclotomic polynomial be defined over ZZ.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2147",
     "user": "https://github.com/ncalexan"

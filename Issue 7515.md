@@ -1,15 +1,16 @@
-# Issue 7515: Improved deprecation and renaming of function and methods.
+# Issue 7515: Improved deprecation and renaming of function and methods
 
 archive/issues_007515.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  combinat\n\nKeywords: deprecation:\n\nAlong the cleanup of combinat, a lot of methods and function get renamed. It is painfull to write backward compatibility aliases.\nThe patch given here should make it easier. I take also the chance to add a version optional argument to `deprecation` to store and print in which version of sage the method/function was deprecated.\n\nHere is an excerpt from the doc:\n\n```\n        sage: from sage.misc.misc import deprecated_function_alias\n        sage: g = deprecated_function_alias(number_of_partitions,\n        ...     'Sage Version 42.132, Release Date: 5123-04-01')\n        sage: g(5)\n        doctest:1: DeprecationWarning: (Since Sage Version 42.132, Release Date: 5123-04-01) g is deprecated. Please use number_of_partitions instead.\n        7\n```\nThis also works for methods:\n\n```\n        sage: from sage.misc.misc import deprecated_method_alias\n        sage: class cls(object):\n        ...      def new_meth(self): return 42\n        ...      old_meth = deprecated_method_alias(new_meth,\n        ...            'Sage Version 42.132, Release Date: 5123-04-01')\n        sage: cls().old_meth()\n        doctest:...: DeprecationWarning: (Since Sage Version 42.132, Release Date: 5123-04-01) old_meth is deprecated. Please use new_meth instead.\n        42\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7515\n\n",
+    "closed_at": "2009-12-01T03:53:49Z",
     "created_at": "2009-11-22T17:19:12Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Improved deprecation and renaming of function and methods.",
+    "title": "Improved deprecation and renaming of function and methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7515",
     "user": "https://github.com/hivert"

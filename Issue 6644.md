@@ -1,9 +1,10 @@
-# Issue 6644: [with patch, needs review] fix doctest error for lazy_attribute and abstract_method
+# Issue 6644: [with patch, positive review] fix doctest error for lazy_attribute and abstract_method
 
 archive/issues_006644.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nAs reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/e1d0c61c235c4554), there are doctest failures for the files lazy_attribute.py and abstract_method.py.  These are caused by ticket #6505, it seems: the patch there changed banner.py, and those changes caused the failures.  Here's a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6644\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAs reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/e1d0c61c235c4554), there are doctest failures for the files lazy_attribute.py and abstract_method.py.  These are caused by ticket #6505, it seems: the patch there changed banner.py, and those changes caused the failures.  Here's a patch.\n\n(In the old version of banner.py, the function banner started on line 72, and now it starts on line 79.  Hence this patch.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6644\n\n",
+    "closed_at": "2009-07-29T10:56:54Z",
     "created_at": "2009-07-27T20:15:38Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_006644.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] fix doctest error for lazy_attribute and abstract_method",
+    "title": "[with patch, positive review] fix doctest error for lazy_attribute and abstract_method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6644",
     "user": "https://github.com/jhpalmieri"
@@ -20,6 +21,9 @@ archive/issues_006644.json:
 Assignee: @jhpalmieri
 
 As reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/e1d0c61c235c4554), there are doctest failures for the files lazy_attribute.py and abstract_method.py.  These are caused by ticket #6505, it seems: the patch there changed banner.py, and those changes caused the failures.  Here's a patch.
+
+(In the old version of banner.py, the function banner started on line 72, and now it starts on line 79.  Hence this patch.)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6644
 

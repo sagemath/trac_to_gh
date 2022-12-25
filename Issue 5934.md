@@ -1,9 +1,10 @@
-# Issue 5934: [with spkg; needs review] networkx -- fix bad spkg
+# Issue 5934: [with spkg; positive review] networkx -- fix bad spkg
 
 archive/issues_005934.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n#4860 was messed up\n\nThe networkx-0.99.p0.spkg currently in Sage contains both networkx 0.36 (what we use) and networkx 0.99.    When installed, only the old version is installed.  This has two negatives:\n\n(1) it wastes disk space\n\n(2) it confuses users, e.g., it made me feel like an idiot when I posted to the networkx-discuss mailing list about all their examples being broken.  I carefully checked Sage had networkx 0.99 by looking in spkg/standard, only to be fooled. \n\nPossible fixes:\n\n1. Just revert to the previous networkx spkg.  This will not solve the problem I ran into though, since sage -upgrade won't downgrade. \n  \n2. Make a new networkx spkg called networkx-0.99.p1-fake_really-0.36 and delete src/networkx-0.99 from it.\n\n\nI've posted an spkg that does 2:\n\nhttp://wstein.org/home/wstein/patches/networkx-0.99.p1-fake_really-0.36.spkg\n\nBy the way, this was all discussed here: http://groups.google.com/group/sage-devel/browse_thread/thread/e677517098468e32\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5934\n\n",
+    "closed_at": "2009-05-12T20:24:44Z",
     "created_at": "2009-04-29T15:32:06Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_005934.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with spkg; needs review] networkx -- fix bad spkg",
+    "title": "[with spkg; positive review] networkx -- fix bad spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5934",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_007587.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  simonking\n\nThe returned result is a list of ETuples, but for people interested in maximum speed it would be useful to provide an option to return plain tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7587\n\n",
+    "closed_at": "2009-12-04T05:40:25Z",
     "created_at": "2009-12-02T22:11:10Z",
     "labels": [
         "component: algebra"

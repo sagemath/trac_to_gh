@@ -1,16 +1,17 @@
-# Issue 2311: remove stupid timeout from sage-location
+# Issue 2311: [with patch; positive review] remove stupid timeout from sage-location
 
 archive/issues_002311.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2311\n\n",
+    "closed_at": "2008-02-26T04:59:37Z",
     "created_at": "2008-02-26T04:44:56Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "remove stupid timeout from sage-location",
+    "title": "[with patch; positive review] remove stupid timeout from sage-location",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2311",
     "user": "https://github.com/williamstein"

@@ -4,10 +4,10 @@ archive/issues_007629.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @dandrake @fchapoton\n\nI'm setting up a campus server, and it would extremely useful if I could require valid email addresses and restrict email addresses to campus addresses.  This would allow anyone with a valid campus email address to create an account.\n\nNote that for this to work, we also need to make it required to confirm email addresses before accounts are activated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7629\n\n",
+    "closed_at": "2020-08-31T08:12:43Z",
     "created_at": "2009-12-08T19:58:17Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make it possible to restrict the domains of email addresses",

@@ -4,6 +4,7 @@ archive/issues_000028.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R.<m> = LaurentSeriesRing(QQ)\n   sage: S.<t> = LaurentSeriesRing(pAdicField(11))\n   sage: S(m^(-2) + 10*m + m^2 + O(m^3))\n   t^1 + 10*t^3 + t^4 + O(t^5) + 10*t^4 + 10*t^3 + t^4 + O(t^5) + t^5 + 10*t^3 + t^4 + O(t^5) + O(t^6 + 10*t^3 + t^4 + O(t^5))\n```\n  \nHuh?\n\nIssue created by migration from https://trac.sagemath.org/ticket/28\n\n",
+    "closed_at": "2007-01-13T01:57:44Z",
     "created_at": "2006-09-12T23:25:31Z",
     "labels": [
         "component: basic arithmetic",

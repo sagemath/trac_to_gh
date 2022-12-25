@@ -1,16 +1,17 @@
-# Issue 1631: update quaddouble to 2.3.1
+# Issue 1631: update quaddouble to 2.3.6
 
 archive/issues_001631.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  tabbott@mit.edu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1631\n\n",
+    "closed_at": "2008-08-19T22:45:41Z",
     "created_at": "2007-12-29T04:43:29Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update quaddouble to 2.3.1",
+    "title": "update quaddouble to 2.3.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1631",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

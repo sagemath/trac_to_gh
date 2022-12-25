@@ -1,16 +1,17 @@
-# Issue 2708: add support for nonsymmetric Macdonald polynomials in type A via HHL formula
+# Issue 2708: [with patch, positive review] add support for nonsymmetric Macdonald polynomials in type A via HHL formula
 
 archive/issues_002708.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2708\n\n",
+    "closed_at": "2008-03-29T00:01:05Z",
     "created_at": "2008-03-28T20:56:37Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "add support for nonsymmetric Macdonald polynomials in type A via HHL formula",
+    "title": "[with patch, positive review] add support for nonsymmetric Macdonald polynomials in type A via HHL formula",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2708",
     "user": "https://github.com/mwhansen"

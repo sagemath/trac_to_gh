@@ -3,7 +3,8 @@
 archive/issues_007748.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  mvngu\n\nWe don't appear to have this, though perhaps it is in Pynac/Ginac already.  We also need to translate Maxima's gamma_incomplete to our gamma_inc or incomplete_gamma as part of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7748\n\n",
+    "body": "Assignee: @zimmermann6\n\nCC:  mvngu\n\nWe don't appear to have this, though perhaps it is in Pynac/Ginac already.  We also need to translate Maxima's gamma_incomplete to our gamma_inc or incomplete_gamma as part of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7748\n\n",
+    "closed_at": "2010-04-15T20:15:07Z",
     "created_at": "2009-12-22T17:18:07Z",
     "labels": [
         "component: symbolics",
@@ -17,7 +18,7 @@ archive/issues_007748.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @burcin
+Assignee: @zimmermann6
 
 CC:  mvngu
 

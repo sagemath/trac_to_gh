@@ -3,7 +3,8 @@
 archive/issues_006409.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro\n\n```\nsage: srange(1,0,include_endpoint=True)\n[]\nsage: srange(1,QQ(0),include_endpoint=True)\n[0]\n```\n\nThese two should agree on something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6409\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro\n\nKeywords: srange\n\n```\nsage: srange(1,0,include_endpoint=True)\n[]\nsage: srange(1,QQ(0),include_endpoint=True)\n[0]\n```\n\nThese two should agree on something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6409\n\n",
+    "closed_at": "2010-07-20T09:17:54Z",
     "created_at": "2009-06-25T16:12:42Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,6 +20,8 @@ archive/issues_006409.json:
 Assignee: somebody
 
 CC:  @robertwb @craigcitro
+
+Keywords: srange
 
 ```
 sage: srange(1,0,include_endpoint=True)

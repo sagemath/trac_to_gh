@@ -1,16 +1,17 @@
-# Issue 6742: Stylesheets are not always loaded in Chrome
+# Issue 6742: [with patch, positive review] Stylesheets are not always loaded in Chrome
 
 archive/issues_006742.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nStart a local Sage notebook server and open a worksheet list or any worksheet in Chrome.  The HTML is rendered strangely, as if `main.css` has not been retrieved.  In particular, \"Searching for Sage server...\" is always visible at the top of a worksheet, as are the slide controls.\n\nHowever, the \"Edit,\" \"Text,\" \"Undo,\" \"Share,\" and \"Publish\" pages, say, are rendered properly.\n\nThis happens in Chrome 2 on Windows XP when connecting to a Fedora 10 Linux Sage notebook server on the same subnet.\n\n[This](http://code.google.com/p/chromium/issues/detail?id=4181) might be relevant.\n\nCuriously, this **does not** happen with worksheets at `sagenb.org`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6742\n\n",
+    "body": "Assignee: boothby\n\nStart a local Sage notebook server and open a worksheet list or any worksheet in Chrome.  The HTML is rendered strangely, as if `main.css` has not been retrieved.  In particular, \"Searching for Sage server...\" is always visible at the top of a worksheet, as are the slide controls.\n\nHowever, the \"Edit,\" \"Text,\" \"Undo,\" \"Share,\" and \"Publish\" pages, say, are rendered properly.\n\nThis happens in Chrome 2 on Windows XP when connecting to a Fedora 10 Linux Sage notebook server on the same subnet.  Chromium 3 on Linux is fine.\n\n[This](http://code.google.com/p/chromium/issues/detail?id=4181) might be relevant.  Or [this](http://code.google.com/p/chromium/issues/detail?id=7448).\n\nCuriously, this **does not** happen with worksheets at `sagenb.org`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6742\n\n",
+    "closed_at": "2009-09-02T05:15:57Z",
     "created_at": "2009-08-14T05:26:01Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Stylesheets are not always loaded in Chrome",
+    "title": "[with patch, positive review] Stylesheets are not always loaded in Chrome",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6742",
     "user": "https://github.com/qed777"
@@ -22,9 +23,9 @@ Start a local Sage notebook server and open a worksheet list or any worksheet in
 
 However, the "Edit," "Text," "Undo," "Share," and "Publish" pages, say, are rendered properly.
 
-This happens in Chrome 2 on Windows XP when connecting to a Fedora 10 Linux Sage notebook server on the same subnet.
+This happens in Chrome 2 on Windows XP when connecting to a Fedora 10 Linux Sage notebook server on the same subnet.  Chromium 3 on Linux is fine.
 
-[This](http://code.google.com/p/chromium/issues/detail?id=4181) might be relevant.
+[This](http://code.google.com/p/chromium/issues/detail?id=4181) might be relevant.  Or [this](http://code.google.com/p/chromium/issues/detail?id=7448).
 
 Curiously, this **does not** happen with worksheets at `sagenb.org`.
 

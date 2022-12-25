@@ -1,15 +1,16 @@
-# Issue 2688: Kuratowski subgraph isolator for planarity checking
+# Issue 2688: [with patch, positive review] Kuratowski subgraph isolator for planarity checking
 
 archive/issues_002688.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2688\n\n",
+    "closed_at": "2008-03-29T21:54:43Z",
     "created_at": "2008-03-27T20:54:59Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Kuratowski subgraph isolator for planarity checking",
+    "title": "[with patch, positive review] Kuratowski subgraph isolator for planarity checking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2688",
     "user": "https://github.com/rlmill"

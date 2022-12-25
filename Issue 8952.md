@@ -3,7 +3,8 @@
 archive/issues_008952.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rbeezer\n\nAdd a function to compute odd girth, and modify Graph.is_perfect accordingly\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8952\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rbeezer\n\nAdd a function to compute odd girth of a graph G.\n\n**Apply**:\n\n1.  [attachment:trac_8952_odd_girth_consolidated.patch]\n2.  [attachment:trac_8952_odd_girth-bugfix.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8952\n\n",
+    "closed_at": "2012-12-18T11:14:28Z",
     "created_at": "2010-05-12T00:24:22Z",
     "labels": [
         "component: graph theory"
@@ -19,9 +20,12 @@ Assignee: jason, ncohen, rlm
 
 CC:  @rbeezer
 
-Add a function to compute odd girth, and modify Graph.is_perfect accordingly
+Add a function to compute odd girth of a graph G.
 
-Nathann
+**Apply**:
+
+1.  [attachment:trac_8952_odd_girth_consolidated.patch]
+2.  [attachment:trac_8952_odd_girth-bugfix.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8952
 

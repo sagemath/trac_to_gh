@@ -4,6 +4,7 @@ archive/issues_002969.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a series of patches that makes the Debian package version numbers get computed automatically from the SAGE spkg version numbers.  \n\nThe code I ran rename the existing spkgs is the following shell one-liner:\n\nfor i in `\\ls *.spkg`; do mv $i `echo $i | sed 's/\\.\\(p.*\\.spkg\\)/-\\1/'`; done\n\nThere are also a few patches that decrease version numbers of some Debian packages whose version numbers were too high, and another patch that fixes the guava Debianization to find the right version number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2969\n\n",
+    "closed_at": "2008-04-20T05:08:14Z",
     "created_at": "2008-04-20T04:20:24Z",
     "labels": [
         "component: debian-package"

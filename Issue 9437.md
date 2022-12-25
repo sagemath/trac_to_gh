@@ -4,6 +4,7 @@ archive/issues_009437.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @videlec\n\nKeywords: group, matrix, special linear\n\nSage is not able to work with special linear group over finite rings (for example iterate over its element). As in the following example, the constructor accept the argument Zmod(4). But the object is not able to do anything due to call to finite field in gap. Curiously, list(G) and G.list() does not raise the same error (but both of them do).\n\n```\nsage: G = SL(2, Zmod(4))\nsage: print G\nsage: list(G)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: variable names have not yet been set using self._assign_names(...)\nerror coercing to finite field\nsage: G.list()\nNameError                                 Traceback (most recent call last)\nNameError: name 'ZmodnZObj' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9437\n\n",
+    "closed_at": "2011-01-28T08:48:31Z",
     "created_at": "2010-07-06T15:24:59Z",
     "labels": [
         "component: algebra",

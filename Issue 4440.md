@@ -1,16 +1,17 @@
-# Issue 4440: Automatic Identation
+# Issue 4440: [with patch, positive work] Automatic Indentation
 
 archive/issues_004440.json:
 ```json
 {
     "body": "Assignee: ahupfer\n\nCC:  @jasongrout\n\nThe patch provides automatic indentation for python after colons and same level identation.\nIt works up to four levels of identation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4440\n\n",
+    "closed_at": "2009-02-20T07:24:49Z",
     "created_at": "2008-11-04T19:26:07Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Automatic Identation",
+    "title": "[with patch, positive work] Automatic Indentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4440",
     "user": "https://trac.sagemath.org/admin/accounts/users/ahupfer"

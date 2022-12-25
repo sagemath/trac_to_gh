@@ -3,7 +3,7 @@
 archive/issues_004754.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  mvngu\n\nBased on the discussion at http://groups.google.com/group/sage-support/browse_thread/thread/3ec4cc026e9c65bd, it would be great to merge the code found at http://arxiv.org/abs/0812.1616 into the Sage library.  Several functions should probably go into the main graph library (e.g., the edge clique cover function), while others probably ought to go into a minimum_rank.sage file.\n\nI am one of the developers and hereby give my permission to incorporate the code into Sage.  I will ask the other developers as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4754\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  mvngu\n\nBased on the discussion at http://groups.google.com/group/sage-support/browse_thread/thread/3ec4cc026e9c65bd, it would be great to merge the code found at http://arxiv.org/abs/0812.1616 into the Sage library.  Several functions should probably go into the main graph library (e.g., the edge clique cover function), while others probably ought to go into a minimum_rank.sage file.\n\nI am one of the developers and hereby give my permission to incorporate the code into Sage.  I will ask the other developers as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4754\n\n",
     "created_at": "2008-12-11T04:15:52Z",
     "labels": [
         "component: graph theory"
@@ -15,7 +15,7 @@ archive/issues_004754.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @rlmill
+Assignee: @jasongrout
 
 CC:  mvngu
 

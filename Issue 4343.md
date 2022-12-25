@@ -1,16 +1,17 @@
-# Issue 4343: gradient needs to be more careful about the variables
+# Issue 4343: [with patch, positive review] gradient needs to be more careful about the variables
 
 archive/issues_004343.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nThe reference manual shows the following example for the gradient()  \nfunction:\n\nsage: x,y = var('x y')\nsage: f = x2+y2\nsage: f.gradient()\n(2*x, 2*y)\n\nHowever, if instead I enter:\n\nsage: x,y,n = var('x y n')\nsage: f = x^n+y^n\nsage: f.gradient()\n(y^n*log(y) + x^n*log(x), n*x^(n - 1), n*y^(n - 1))\n\n(not what I wanted, but I can understand what happened.)\nSo I tried:\n\nsage: f(x,y) = x^n+y^n\nsage: f.gradient()\n((x, y) |--> y^n*log(y) + x^n*log(x), (x, y) |--> n*x^(n - 1), (x, y)  \n|--> n*y^(n - 1))\nSo even if I specify that f is a function of x and y,\ngradient() still insists on also differentiating w.r.t. n\n\nHow do I tell gradient() that n is a constant?\n\nThanks in advance for insights.\nJim Clark\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4343\n\n",
+    "closed_at": "2008-10-26T04:05:06Z",
     "created_at": "2008-10-23T00:28:09Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "gradient needs to be more careful about the variables",
+    "title": "[with patch, positive review] gradient needs to be more careful about the variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4343",
     "user": "https://github.com/jasongrout"

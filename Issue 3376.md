@@ -1,22 +1,23 @@
-# Issue 3376: matrix multiplication should use Strassen's algorithm
+# Issue 3376: [with patch, positive review, depends on #3780] matrix multiplication should use Strassen's algorithm
 
 archive/issues_003376.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
+    "closed_at": "2008-08-31T00:53:27Z",
     "created_at": "2008-06-06T06:54:44Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "matrix multiplication should use Strassen's algorithm",
+    "title": "[with patch, positive review, depends on #3780] matrix multiplication should use Strassen's algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3376",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 CC:  @malb
 

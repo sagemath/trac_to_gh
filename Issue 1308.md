@@ -1,25 +1,25 @@
-# Issue 1308: [graphs] Gordon Royle's graph data in a database
+# Issue 1308: graphs: Gordon Royle's graph data in a database
 
 archive/issues_001308.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  mvngu\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1308\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  mvngu\n\nKeywords: database\n\nFrom Chris Godsil's wishlist.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1308\n\n",
     "created_at": "2007-11-28T19:56:14Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "[graphs] Gordon Royle's graph data in a database",
+    "title": "graphs: Gordon Royle's graph data in a database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1308",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 CC:  mvngu
 
-Keywords: graphs
+Keywords: database
 
 From Chris Godsil's wishlist.
 

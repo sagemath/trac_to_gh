@@ -1,17 +1,17 @@
-# Issue 6301: implement the Hadamard product of two matrices
+# Issue 6301: [with patch, positive review] implement the Hadamard product of two matrices
 
 archive/issues_006301.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rbeezer ylchapuy\n\nKeywords: Hadamard matrix product\n\nThat is, given a matrix A and another matrix B (of the same dimensions), form C such that C[i, j] = A[i, j] * B[i, j].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer ylchapuy\n\nKeywords: elementwise Hadamard matrix product\n\nThat is, given a matrix A and another matrix B (of the same dimensions), form C such that C[i, j] = A[i, j] * B[i, j].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6301\n\n",
+    "closed_at": "2009-07-19T14:50:06Z",
     "created_at": "2009-06-15T16:12:18Z",
     "labels": [
         "component: linear algebra",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "implement the Hadamard product of two matrices",
+    "title": "[with patch, positive review] implement the Hadamard product of two matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6301",
     "user": "https://github.com/ncalexan"
@@ -21,7 +21,7 @@ Assignee: @williamstein
 
 CC:  @rbeezer ylchapuy
 
-Keywords: Hadamard matrix product
+Keywords: elementwise Hadamard matrix product
 
 That is, given a matrix A and another matrix B (of the same dimensions), form C such that C[i, j] = A[i, j] * B[i, j].
 

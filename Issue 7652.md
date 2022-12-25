@@ -4,6 +4,7 @@ archive/issues_007652.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu\n\nFollowing Minh's idea from #6765, here is the first version of this document.\n\nThis patch documents the small improvement from #7637 (which is hence needed by the docstrings)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7652\n\n",
+    "closed_at": "2009-12-14T16:08:06Z",
     "created_at": "2009-12-10T14:54:54Z",
     "labels": [
         "component: documentation"

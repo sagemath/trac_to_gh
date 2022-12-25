@@ -1,9 +1,10 @@
-# Issue 2563: Fix outstanding doc issues for 2.10.4.final
+# Issue 2563: [with patch, positive review] Fix outstanding doc issues for 2.10.4.final
 
 archive/issues_002563.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe are various issues left when building the documentation. The upcoming patch will fix the issues.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2563\n\n",
+    "closed_at": "2008-03-17T02:15:53Z",
     "created_at": "2008-03-17T00:19:57Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002563.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Fix outstanding doc issues for 2.10.4.final",
+    "title": "[with patch, positive review] Fix outstanding doc issues for 2.10.4.final",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2563",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

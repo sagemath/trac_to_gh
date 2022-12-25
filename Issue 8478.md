@@ -3,7 +3,7 @@
 archive/issues_008478.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nThe section Standalone Python/Sage Scripts at http://www.sagemath.org/doc/tutorial/programming.html#section-loadattach seems to have two problems (profuse apologies if these are actually user errors).\n\n1) #!/usr/bin/env sage -python   doesn't work in linux as shebang can't take two arguments. One simple workaround is to use #!/path_to_sage -python\n2) The script itself seems broken. Testing it using sage 4.3.3\n\n./factor 2006\n\nworks as expected.\n\nBut ./factor \"32*x^5-1\"  gives\nTraceback (most recent call last):\n  File \"./factor\", line 11, in <module>\n    print factor(sage_eval(sys.argv[1]))\n  File \"/opt/sage-4.3.3-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/misc/sage_eval.py\", line 199, in sage_eval\n    return eval(source, sage.all.__dict__, locals)\n  File \"<string>\", line 1, in <module>\nNameError: name 'x' is not defined\n\nIssue created by migration from https://trac.sagemath.org/ticket/8478\n\n",
+    "body": "Assignee: mvngu\n\nThe section Standalone !Python/Sage Scripts at http://www.sagemath.org/doc/tutorial/programming.html#section-loadattach seems to have two problems (profuse apologies if these are actually user errors).\n\n1. __`#!/usr/bin/env sage -python`__ doesn't work in linux since a shebang line can only handle a single argument ('sage' in this case). One workaround is to use __`#!/path/to/sage -python`__ -- I have since verified, however, that simply using __`#!/usr/bin/env sage`__ **does** work with sage 5.8.\n2. The script itself seems broken.  When testing it using sage 4.3.3 (and 5.8), running __`./factor 2006`__ works as expected, but __`./factor \"32*x^5-1\"`__ gives:\n\n```\nTraceback (most recent call last):\n  File \"./factor\", line 11, in <module>\n    print factor(sage_eval(sys.argv[1]))\n  File \"/opt/sage-4.3.3-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/misc/sage_eval.py\", line 199, in sage_eval\n    return eval(source, sage.all.__dict__, locals)\n  File \"<string>\", line 1, in <module>\nNameError: name 'x' is not defined\n```\n\nTo correct this, see the comment attached to this ticket which provides a new version of the 'factor' script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8478\n\n",
     "created_at": "2010-03-07T20:11:17Z",
     "labels": [
         "component: documentation",
@@ -17,16 +17,12 @@ archive/issues_008478.json:
 ```
 Assignee: mvngu
 
-The section Standalone Python/Sage Scripts at http://www.sagemath.org/doc/tutorial/programming.html#section-loadattach seems to have two problems (profuse apologies if these are actually user errors).
+The section Standalone !Python/Sage Scripts at http://www.sagemath.org/doc/tutorial/programming.html#section-loadattach seems to have two problems (profuse apologies if these are actually user errors).
 
-1) #!/usr/bin/env sage -python   doesn't work in linux as shebang can't take two arguments. One simple workaround is to use #!/path_to_sage -python
-2) The script itself seems broken. Testing it using sage 4.3.3
+1. __`#!/usr/bin/env sage -python`__ doesn't work in linux since a shebang line can only handle a single argument ('sage' in this case). One workaround is to use __`#!/path/to/sage -python`__ -- I have since verified, however, that simply using __`#!/usr/bin/env sage`__ **does** work with sage 5.8.
+2. The script itself seems broken.  When testing it using sage 4.3.3 (and 5.8), running __`./factor 2006`__ works as expected, but __`./factor "32*x^5-1"`__ gives:
 
-./factor 2006
-
-works as expected.
-
-But ./factor "32*x^5-1"  gives
+```
 Traceback (most recent call last):
   File "./factor", line 11, in <module>
     print factor(sage_eval(sys.argv[1]))
@@ -34,6 +30,9 @@ Traceback (most recent call last):
     return eval(source, sage.all.__dict__, locals)
   File "<string>", line 1, in <module>
 NameError: name 'x' is not defined
+```
+
+To correct this, see the comment attached to this ticket which provides a new version of the 'factor' script.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8478
 

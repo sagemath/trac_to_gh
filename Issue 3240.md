@@ -1,21 +1,24 @@
-# Issue 3240: notebook -- implement page dedicated to worksheet publishing
+# Issue 3240: [with patch; positive review] notebook -- implement page dedicated to worksheet publishing
 
 archive/issues_003240.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCreate a clone of Google Docs' \"Publish this document\" page found by going to a document clicking \"Share\" then \"Publish as web page...\". This involves implementing \"Stop publishing\", \"Automatically re-publish when changes are made\", and \"Re-publish document\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3240\n\n",
+    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nCreate a clone of Google Docs' \"Publish this document\" page found by going to a document clicking \"Share\" then \"Publish as web page...\". This involves implementing \"Stop publishing\", \"Automatically re-publish when changes are made\", and \"Re-publish document\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3240\n\n",
+    "closed_at": "2008-06-23T12:59:57Z",
     "created_at": "2008-05-17T17:53:34Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- implement page dedicated to worksheet publishing",
+    "title": "[with patch; positive review] notebook -- implement page dedicated to worksheet publishing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3240",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: boothby
+
+Keywords: editor_wstein
 
 Create a clone of Google Docs' "Publish this document" page found by going to a document clicking "Share" then "Publish as web page...". This involves implementing "Stop publishing", "Automatically re-publish when changes are made", and "Re-publish document".
 

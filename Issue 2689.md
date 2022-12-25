@@ -1,15 +1,16 @@
-# Issue 2689: compute blocks and cut-vertices of a graph
+# Issue 2689: [with patch, positive review] compute blocks and cut-vertices of a graph
 
 archive/issues_002689.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe blocks of a graph are the cut-vertex free subgraphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2689\n\n",
+    "closed_at": "2008-03-29T00:04:27Z",
     "created_at": "2008-03-27T21:13:33Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "compute blocks and cut-vertices of a graph",
+    "title": "[with patch, positive review] compute blocks and cut-vertices of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2689",
     "user": "https://github.com/rlmill"

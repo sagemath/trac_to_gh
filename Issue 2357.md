@@ -1,22 +1,25 @@
-# Issue 2357: make FLINT the default for ZZ['x']
+# Issue 2357: [with patch, with positive review] make FLINT the default for ZZ['x']
 
 archive/issues_002357.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2357\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: editor_craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2357\n\n",
+    "closed_at": "2008-07-02T19:07:47Z",
     "created_at": "2008-03-01T04:18:07Z",
     "labels": [
-        "component: commutative algebra",
-        "bug"
+        "component: basic arithmetic",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "make FLINT the default for ZZ['x']",
+    "title": "[with patch, with positive review] make FLINT the default for ZZ['x']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2357",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @malb
+Assignee: @burcin
+
+Keywords: editor_craigcitro
 
 
 

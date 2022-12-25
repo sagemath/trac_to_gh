@@ -4,6 +4,7 @@ archive/issues_009914.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: NZMATH\n\nNZMATH uses a subtype of Python's \"long\" for its bignum type.  This works fine with plain mpmath, but when mpmath runs under Sage it uses Cython code that's incompatible with NZMATH.  This patch fixes mpmath-under-sage to fix some incompatibilities with NZMATH.  (It also modifies ZZ to allow initialization from a subclass of int/long/float.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9915\n\n",
+    "closed_at": "2010-09-29T10:48:06Z",
     "created_at": "2010-09-16T08:48:13Z",
     "labels": [
         "component: basic arithmetic",

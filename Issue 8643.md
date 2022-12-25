@@ -3,7 +3,8 @@
 archive/issues_008643.json:
 ```json
 {
-    "body": "Assignee: Boussicault\n\nKeywords: morphism, domain and codomain\n\nIn the categories of modules with basis, the domain (resp. codomain) of a morphism  have to be equals to the codomain (resp. domain) of it's inverse.\n\nIn the current modues_with_basis, it is not the case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8643\n\n",
+    "body": "Assignee: Boussicault\n\nKeywords: morphism, domain and codomain\n\nIn the categories of modules with basis, the domain (resp. codomain) of a morphism  have to be equals to the codomain (resp. domain) of it's inverse.\n\nIn the current modules_with_basis, it is not the case.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8643\n\n",
+    "closed_at": "2010-04-02T14:52:34Z",
     "created_at": "2010-04-02T14:41:00Z",
     "labels": [
         "component: categories",
@@ -21,7 +22,9 @@ Keywords: morphism, domain and codomain
 
 In the categories of modules with basis, the domain (resp. codomain) of a morphism  have to be equals to the codomain (resp. domain) of it's inverse.
 
-In the current modues_with_basis, it is not the case.
+In the current modules_with_basis, it is not the case.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8643
 

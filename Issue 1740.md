@@ -1,9 +1,10 @@
-# Issue 1740: Fix Pentium M detection for ATLAS BLAS
+# Issue 1740: [with spkg] Fix Pentium M detection for ATLAS BLAS
 
 archive/issues_001740.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere is a know problem with ATLAS BLAS that misdetects Pentium Ms as CoreDuos and consequently takes a long, long time tuning to build. This patch by Paul Zimmermann fixes the issue. It has been integrated into \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha1/atlas-3.8.p7.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1740\n\n",
+    "closed_at": "2008-01-10T05:42:00Z",
     "created_at": "2008-01-10T05:05:29Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001740.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Fix Pentium M detection for ATLAS BLAS",
+    "title": "[with spkg] Fix Pentium M detection for ATLAS BLAS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1740",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

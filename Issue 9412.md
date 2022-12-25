@@ -4,6 +4,7 @@ archive/issues_009412.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nIn sage-4.5.alpha1, I see this:\n\n```\nSAGE_ROOT/local/bin$ hg status\n? fsdump\n? fsoids\n? fsrefs\n? fstail\n? mkzeoinst\n? repozo\n? runzeo\n? zdaemon\n? zeoctl\n? zeopack\n? zeopasswd\n```\n\nAs discussed in the thread\n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/7286e07fd3f06375\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9412\n\n",
+    "closed_at": "2010-07-05T22:10:39Z",
     "created_at": "2010-07-02T21:26:03Z",
     "labels": [
         "component: build",

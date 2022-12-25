@@ -1,10 +1,10 @@
-# Issue 3035: calculus/equations.py
-segfault with new cython & -ba
+# Issue 3035: calculus/equations.py segfaults with new cython
 
 archive/issues_003035.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\ncalculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.\n\nThe test in question is \n\n```\n    sage: loads(dumps(eqn)) == eqn \n    True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3035\n\n",
+    "closed_at": "2008-05-01T10:24:26Z",
     "created_at": "2008-04-26T23:48:15Z",
     "labels": [
         "component: calculus",
@@ -12,7 +12,7 @@ archive/issues_003035.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "calculus/equations.py\nsegfault with new cython & -ba",
+    "title": "calculus/equations.py segfaults with new cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3035",
     "user": "https://github.com/garyfurnish"

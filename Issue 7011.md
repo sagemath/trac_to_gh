@@ -1,21 +1,22 @@
-# Issue 7011: fiddle with the number of threads automatically used for parallel testing
+# Issue 7011: [with patch, positive review] fiddle with the number of threads automatically used for parallel testing
 
 archive/issues_007011.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu drkirkby @jhpalmieri\n\nAt #6283, we changed the parallel testing framework so that it automatically uses all the cores/threads available, but perhaps this is not the best solution.\n\nDave says ([comment:9:ticket:6283]) \"I would have personally not allowed the default to exceed 8\", so maybe we can incorporate his limit in a way that still lets ordinary multicore computers be well-used:\n\n* NUM_THREADS defaults to 0, which is now interpreted in the sage-ptest script as min(cpu_count(), 8) -- so the default doesn't exceed 8, as Dave suggested.\n* if NUM_THREADS is -1, it just uses cpu_count().\n\nOn sage-devel, I suggested that a solution that works really well for 99+% of people is a good one -- and since most \"regular\" machines on which Sage is doctested have 8 or fewer cores, this still works fine for them, and with the above suggestion, people won't bring sage.math or t2.math to their knees.\n\nThoughts?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7011\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  mvngu drkirkby @jhpalmieri\n\nAt #6283, we changed the parallel testing framework so that it automatically uses all the cores/threads available, but perhaps this is not the best solution.\n\nDave says ([comment:9:ticket:6283]) \"I would have personally not allowed the default to exceed 8\", so maybe we can incorporate his limit in a way that still lets ordinary multicore computers be well-used:\n\n* NUM_THREADS defaults to 0, which is now interpreted in the sage-ptest script as min(cpu_count(), 8) -- so the default doesn't exceed 8, as Dave suggested.\n* if NUM_THREADS is -1, it just uses cpu_count().\n\nOn sage-devel, I suggested that a solution that works really well for 99+% of people is a good one -- and since most \"regular\" machines on which Sage is doctested have 8 or fewer cores, this still works fine for them, and with the above suggestion, people won't bring sage.math or t2.math to their knees.\n\nThoughts?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7011\n\n",
+    "closed_at": "2009-10-14T01:27:29Z",
     "created_at": "2009-09-25T07:39:05Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "fiddle with the number of threads automatically used for parallel testing",
+    "title": "[with patch, positive review] fiddle with the number of threads automatically used for parallel testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7011",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
 
 CC:  mvngu drkirkby @jhpalmieri
 

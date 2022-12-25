@@ -4,6 +4,7 @@ archive/issues_003368.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi,\n\nThe following is a bug that Bill Page found in Sage.  It is in the combinatorial\nclasses code  (mostly) by Mike Hansen, so maybe he'll fix it. \n\n```\nIn: http://modular.math.washington.edu/msri06/work/kohel/msri_magma.pdf\n\n \"A Brief Magma Tutorial\" by David R. Kohel gives this example:\n\n----------\n\nThe parent structure of a tuple is more important than in the case\nof sequences or sets.\n> C := CartesianProduct(Integers(),RationalField());\n> t := C!<1,1>;\n> Parent(t[2]);\nRational Field\n\n----------\n\nThe analogous computation in Sage 3.0.2 yields:\n\nsage: C = CartesianProduct(Integers(),RationalField())\n\n# case 1\nsage: t=C([1,1/2])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nRational Field\n\n# case 2\nsage: t=C([1,1])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nInteger Ring\n\n---------\n\nNotice that the parent of t[1] is incorrect in the 2nd case.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3368\n\n",
+    "closed_at": "2017-01-21T18:03:11Z",
     "created_at": "2008-06-04T22:07:22Z",
     "labels": [
         "component: combinatorics",

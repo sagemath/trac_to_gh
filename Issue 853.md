@@ -3,7 +3,7 @@
 archive/issues_000853.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb\n\n```\nDavid Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/\nincludes several implementations of PSLQ, written in C++, and is\nlicensed under BSD. However, ARPREC raw multi arithmatic timings\ndon't look too favorable http://pari.math.u-bordeaux.fr/benchs/\ntimings-mpfr.html and one has the same fix-x86 issues as quad-double.\nIt looks like, however, one of the advantages of PSLQ is that it does\nnot require full-precision at many of the intermediate steps. (that's\nwhat this two-level stuff is about in his package--most operations\nare performed with machine-double arithmetic).\n\nZimmermann also has a GPL implementation, based on gmp, which is only\n1000 lines long. http://www.loria.fr/~zimmerma/free/ No idea yet how\nspeeds compare.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/853\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb\n\nDavid Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/\nincludes several implementations of PSLQ, written in C++, and is\nlicensed under BSD. However, ARPREC raw multi arithmetic timings\ndon't look too favorable http://pari.math.u-bordeaux.fr/benchs/timings-mpfr.html and one has the same fix-x86 issues as quad-double.\nIt looks like, however, one of the advantages of PSLQ is that it does\nnot require full-precision at many of the intermediate steps. (that's\nwhat this two-level stuff is about in his package--most operations\nare performed with machine-double arithmetic).\n\nZimmermann also has a GPL implementation, based on gmp, which is only 1000 lines long. No idea yet how speeds compare.\n\nhttps://members.loria.fr/PZimmermann/software/pslq-1.1.c\n\nIssue created by migration from https://trac.sagemath.org/ticket/853\n\n",
     "created_at": "2007-10-12T00:27:12Z",
     "labels": [
         "component: number theory"
@@ -19,21 +19,18 @@ Assignee: @williamstein
 
 CC:  @burcin @robertwb
 
-```
 David Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/
 includes several implementations of PSLQ, written in C++, and is
-licensed under BSD. However, ARPREC raw multi arithmatic timings
-don't look too favorable http://pari.math.u-bordeaux.fr/benchs/
-timings-mpfr.html and one has the same fix-x86 issues as quad-double.
+licensed under BSD. However, ARPREC raw multi arithmetic timings
+don't look too favorable http://pari.math.u-bordeaux.fr/benchs/timings-mpfr.html and one has the same fix-x86 issues as quad-double.
 It looks like, however, one of the advantages of PSLQ is that it does
 not require full-precision at many of the intermediate steps. (that's
 what this two-level stuff is about in his package--most operations
 are performed with machine-double arithmetic).
 
-Zimmermann also has a GPL implementation, based on gmp, which is only
-1000 lines long. http://www.loria.fr/~zimmerma/free/ No idea yet how
-speeds compare.
-```
+Zimmermann also has a GPL implementation, based on gmp, which is only 1000 lines long. No idea yet how speeds compare.
+
+https://members.loria.fr/PZimmermann/software/pslq-1.1.c
 
 Issue created by migration from https://trac.sagemath.org/ticket/853
 

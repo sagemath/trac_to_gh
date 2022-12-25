@@ -1,9 +1,10 @@
-# Issue 2596: Sage 2.11.alpha0: sage/plot/plot.py doctest failure
+# Issue 2596: [with patch; positive review] Sage 2.11.alpha0: sage/plot/plot.py doctest failure
 
 archive/issues_002596.json:
 ```json
 {
-    "body": "Assignee: failure\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py\n**********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2596\n\n",
+    "body": "Assignee: failure\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             File \"plot.py\", line 3513:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 99 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   2 of  28 in __main__.example_111\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [70.3 s]\nexit code: 256\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2596\n\n",
+    "closed_at": "2008-03-28T07:25:28Z",
     "created_at": "2008-03-19T13:31:01Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002596.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Sage 2.11.alpha0: sage/plot/plot.py doctest failure",
+    "title": "[with patch; positive review] Sage 2.11.alpha0: sage/plot/plot.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2596",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,28 +21,20 @@ archive/issues_002596.json:
 Assignee: failure
 
 ```
-sage -t -long devel/sage/sage/plot/plot.py
-----------------------------------------------------------------------
-Total time for all tests: 965.6 seconds
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
-sage -t -long devel/sage-main/sage/plot/plot.py
-**********************************************************************
-File "plot.py", line 3860:
-    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)
-Exception raised:
-    Traceback (most recent call last):
-      File "/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py", line 1212, in __run
-        compileflags, 1) in test.globs
-      File "<doctest __main__.example_118[17]>", line 1, in <module>
-        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:
-    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)
-    AttributeError: 'Graph' object has no attribute '_nxg'
+sage -t -long devel/sage-main/sage/plot/plot.py             File "plot.py", line 3513:
+    sage: plot(x^(1/3), (x,-1,1))
+Expected nothing
+Got:
+    WARNING: When plotting, failed to evaluate function at 99 points.
+    Last error message: 'negative number cannot be raised to a fractional power'
+    <BLANKLINE>
 **********************************************************************
 1 items had failures:
-   1 of  18 in __main__.example_118
-***Test Failed*** 1 failures.
+   2 of  28 in __main__.example_111
+***Test Failed*** 2 failures.
 For whitespace errors, see the file .doctest_plot.py
-         [68.5 s]
+         [70.3 s]
 exit code: 256
 ```
 

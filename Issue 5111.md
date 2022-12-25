@@ -1,25 +1,29 @@
-# Issue 5111: axiom --> fricas
+# Issue 5111: [with patch, positive review] axiom --> fricas ?
 
 archive/issues_005111.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nChange axiom.py to fricas.py and the axiom command to fricas.  \n\nThis is more logical since the doctests test fricas not axiom.  Also, this has been specifically requested by Tim Daly -- the trademark owner on the name Axiom -- and I think it is best to respect his request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5111\n\n",
+    "body": "Assignee: @mwhansen\n\nShould we change axiom.py to fricas.py and the axiom command to fricas.  \n\n**For the change:** This is more logical since the doctests test fricas not axiom.  Also, this has been specifically requested by Tim Daly -- the trademark owner on the name Axiom.\n\n**Against the change:** We have an *axiom* interface already.  The trademark on \"Axiom\" does not mean that we can't legally use the word for the command name in our program. Our interface to sage is an interface to axiom, fricas, etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5111\n\n",
+    "closed_at": "2009-04-24T01:00:23Z",
     "created_at": "2009-01-27T20:33:05Z",
     "labels": [
-        "component: interfaces"
+        "component: interfaces",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "axiom --> fricas",
+    "title": "[with patch, positive review] axiom --> fricas ?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5111",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
-Change axiom.py to fricas.py and the axiom command to fricas.  
+Should we change axiom.py to fricas.py and the axiom command to fricas.  
 
-This is more logical since the doctests test fricas not axiom.  Also, this has been specifically requested by Tim Daly -- the trademark owner on the name Axiom -- and I think it is best to respect his request.
+**For the change:** This is more logical since the doctests test fricas not axiom.  Also, this has been specifically requested by Tim Daly -- the trademark owner on the name Axiom.
+
+**Against the change:** We have an *axiom* interface already.  The trademark on "Axiom" does not mean that we can't legally use the word for the command name in our program. Our interface to sage is an interface to axiom, fricas, etc. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5111
 

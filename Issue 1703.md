@@ -1,16 +1,17 @@
-# Issue 1703: memleak in Singular: one mpz is leaked in longrat.cc triggered by linear_code.py
+# Issue 1703: [with spkg, positive review] memleak in Singular: one mpz is leaked in longrat.cc triggered by linear_code.py
 
 archive/issues_001703.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHi, while valgrinding `linear_code.py` I came across the following:\n\n```\n==32468== 5,296 bytes in 662 blocks are definitely lost in loss record 7,790 of 8,072\n==32468==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==32468==    by 0x6160C87: __gmpz_init (in /tmp/Work-mabshoff/release-cycle/sage-2.10.alpha0/local/lib/libgmp.so.3.4.1)\n==32468==    by 0x128B87AF: nlNormalize(snumber*&) (longrat.cc:1147)\n==32468==    by 0x128DBE70: p_Normalize(spolyrec*, sip_sring*) (polys.cc:800)\n==32468==    by 0x12CB3DB0: __pyx_f_4sage_4libs_8singular_8singular_10Conversion_new_MP (singular.cpp:4552)\n==32468==    by 0x12641F8F: __pyx_f_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular__mul_\nc_impl(__pyx_obj_4sage_5rings_10polynomial_28multi_polynomial_libsingular_MPolynomial_libsingular*, __pyx_obj_4sage_9structu\nre_7element_RingElement*) (multi_polynomial_libsingular.cpp:13961)\n==32468==    by 0x9793833: __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (element.c:18414)\n==32468==    by 0x41580C: binary_op1 (abstract.c:398)\n==32468==    by 0x418F47: PyNumber_Multiply (abstract.c:669)\n==32468==    by 0x47F5BC: PyEval_EvalFrameEx (ceval.c:1072)\n==32468==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==32468==    by 0x48328C: PyEval_EvalFrameEx (ceval.c:3660)\n```\nI tracked this down in `longrat.cc` and am currently testing an updated singular.spkg which should fix this. In case this does I will also send it to the Singular team.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1703\n\n",
+    "closed_at": "2008-01-07T16:38:30Z",
     "created_at": "2008-01-06T22:19:11Z",
     "labels": [
         "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "memleak in Singular: one mpz is leaked in longrat.cc triggered by linear_code.py",
+    "title": "[with spkg, positive review] memleak in Singular: one mpz is leaked in longrat.cc triggered by linear_code.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1703",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

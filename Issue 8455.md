@@ -4,6 +4,7 @@ archive/issues_008455.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8455\n\n",
+    "closed_at": "2010-08-17T18:32:53Z",
     "created_at": "2010-03-06T08:35:07Z",
     "labels": [
         "component: packages: standard",

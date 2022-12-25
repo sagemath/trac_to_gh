@@ -4,6 +4,7 @@ archive/issues_004194.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  mvgnu @mwhansen @jasongrout\n\nKeywords: plot\n\nOn Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:\n> Dear all,\n\n>\n> When I upgraded to 3.1.2, I found that some of my plots generated\n> using pylab in the notebooks miss their bottom bits. It seems to be\n> related to the dpi setting. Example:\n\n{{{\nimport pylab\nx1 = srange(0,1.1,0.01)\nd1 = [2*x+x^2 for x in x1]\npylab.clf() # clear the figure first\npylab.figure(1)\npylab.plot(x1,d1, label=\"d1\")\npylab.ylabel(\"$f(x)$\") # label the axes\npylab.xlabel(\"$x$\")\npylab.savefig('foo.png',dpi=72) # fire!\n}}}\n> If I leave the \"dpi=72\" out in the last line, the plot is larger and\n> complete. This problem did not occur in sage 3.1.1, so I assume that\n> it is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4194\n\n",
+    "closed_at": "2011-10-18T18:25:30Z",
     "created_at": "2008-09-25T10:21:00Z",
     "labels": [
         "component: graphics",

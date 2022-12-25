@@ -1,16 +1,17 @@
-# Issue 6898: update the installation guide
+# Issue 6898: [with patch, positive review] update the installation guide
 
 archive/issues_006898.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6898\n\n",
+    "closed_at": "2009-09-23T01:18:27Z",
     "created_at": "2009-09-06T10:29:20Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "update the installation guide",
+    "title": "[with patch, positive review] update the installation guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6898",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

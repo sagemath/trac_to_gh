@@ -1,15 +1,16 @@
-# Issue 2176: debianize tachyon spkg
+# Issue 2176: [with spkg, with positive review] debianize tachyon spkg
 
 archive/issues_002176.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've created a new spkg for tachyon that adds Debian build support.\n\nhttp://sage.math.washington.edu/home/tabbott/tachyon-0.98beta.p4.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2176\n\n",
+    "closed_at": "2008-02-16T17:38:18Z",
     "created_at": "2008-02-16T02:59:12Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "debianize tachyon spkg",
+    "title": "[with spkg, with positive review] debianize tachyon spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2176",
     "user": "https://github.com/timabbott"

@@ -3,7 +3,8 @@
 archive/issues_003015.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn sage-3.0 on OSX and linux (sage.math.washington.edu) if you do the following:\n\n  sage: from Crypto.Cipher import DES\n  sage: DES??\n\nYou get a bunch of binary garbage on your screen. I tried the same thing in vanilla ipython and it correctly told me that it could not open the source file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3015\n\n",
+    "body": "Assignee: @williamstein\n\nIn sage-3.0 on OSX and linux (sage.math.washington.edu) if you do the following:\n\n```\n  sage: from Crypto.Cipher import DES\n  sage: DES??\n```\nYou get a bunch of binary garbage on your screen. I tried the same thing in vanilla ipython and it correctly told me that it could not open the source file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3015\n\n",
+    "closed_at": "2013-07-22T16:11:46Z",
     "created_at": "2008-04-24T03:54:06Z",
     "labels": [
         "component: user interface",
@@ -20,10 +21,11 @@ Assignee: @williamstein
 
 In sage-3.0 on OSX and linux (sage.math.washington.edu) if you do the following:
 
+```
   sage: from Crypto.Cipher import DES
   sage: DES??
-
-You get a bunch of binary garbage on your screen. I tried the same thing in vanilla ipython and it correctly told me that it could not open the source file.
+```
+You get a bunch of binary garbage on your screen. I tried the same thing in vanilla ipython and it correctly told me that it could not open the source file. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3015
 

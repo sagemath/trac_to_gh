@@ -1,22 +1,23 @@
-# Issue 5902: [with patch, needs review] Try SAGE_ROOT as base of argument to "sage -t"
+# Issue 5902: [with patch, positive review] Try SAGE_ROOT as base of argument to "sage -t"
 
 archive/issues_005902.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRunning\n\n```\nsage -t devel/sage/sage/rings/polynomial/pbori.pyx\n```\nseems to not work for me sometimes when the current working directory is not SAGE_ROOT.  I don't really understand what is going wrong here, since there is a \"cd\" in $SAGE_ROOT/sage, but I've heard other people complain about issues with this.\n\nThe attached patch caused the problems to go away for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5902\n\n",
+    "body": "Assignee: @mwhansen\n\nRunning\n\n```\nsage -t devel/sage/sage/rings/polynomial/pbori.pyx\n```\nseems to not work for me sometimes when the current working directory is not SAGE_ROOT.  I don't really understand what is going wrong here, since there is a \"cd\" in $SAGE_ROOT/sage, but I've heard other people complain about issues with this.\n\nThe attached patch caused the problems to go away for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5902\n\n",
+    "closed_at": "2009-06-26T17:46:36Z",
     "created_at": "2009-04-26T05:51:28Z",
     "labels": [
         "component: doctest coverage",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] Try SAGE_ROOT as base of argument to \"sage -t\"",
+    "title": "[with patch, positive review] Try SAGE_ROOT as base of argument to \"sage -t\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5902",
     "user": "https://github.com/timabbott"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Running
 

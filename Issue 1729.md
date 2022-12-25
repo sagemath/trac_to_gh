@@ -1,9 +1,10 @@
-# Issue 1729: disable password prompt on initial startup
+# Issue 1729: [with patch, positive review] disable password prompt on initial startup
 
 archive/issues_001729.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nBecause the user can always do notebook(reset=True) it isn't a security risk to automatically log you in the web page that pops up. \n\nThis patch fixes this issue. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1729\n\n",
+    "body": "Assignee: @robertwb\n\nBecause the user can always do notebook(reset=True) it isn't a security risk to automatically log you in the web page that pops up. \n\nThis patch fixes this issue. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1729\n\n",
+    "closed_at": "2008-01-09T14:54:06Z",
     "created_at": "2008-01-09T06:07:20Z",
     "labels": [
         "component: notebook",
@@ -11,13 +12,13 @@ archive/issues_001729.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "disable password prompt on initial startup",
+    "title": "[with patch, positive review] disable password prompt on initial startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1729",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: boothby
+Assignee: @robertwb
 
 Because the user can always do notebook(reset=True) it isn't a security risk to automatically log you in the web page that pops up. 
 

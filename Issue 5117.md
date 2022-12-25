@@ -1,16 +1,17 @@
-# Issue 5117: remove (or enhance an rename) the Polyhedron.union()) method
+# Issue 5117: [with patch] Rename the Polyhedron.union(...) method
 
 archive/issues_005117.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  mhampton @vbraun\n\nThe Polyhedron class (in the polyhedra module) has a union method\n\n```\ndef union(self, other):\n    \"\"\"\n    Returns a polyhedron whose vertices are the union of the vertices\n    of the two polyhedra.\n    ....\n```\nThe name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).\n\nThe method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.\n\nThe attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5117\n\n",
+    "closed_at": "2010-06-09T02:19:36Z",
     "created_at": "2009-01-28T13:00:55Z",
     "labels": [
         "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "remove (or enhance an rename) the Polyhedron.union()) method",
+    "title": "[with patch] Rename the Polyhedron.union(...) method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5117",
     "user": "https://trac.sagemath.org/admin/accounts/users/sbarthelemy"

@@ -1,24 +1,25 @@
-# Issue 1187: bug in G.conjugacy_classes_subgroups()
+# Issue 1187: [with patch, positive review] bug in G.conjugacy_classes_subgroups()
 
 archive/issues_001187.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nThe following should work and be instant:\n\n```\nsage: G = SymmetricGroup(5)\nsage: G.conjugacy_classes_subgroups()\n\nRuntimeError:\nGap produced error output\nVariable: 'Sym' must have a value\n\n\n   executing $sage85:=Sym( [ 1 .. 5 ] );;\n```\n\n\nI really wanted this to find out which representative subgroups\nare transitive, but can't do that either since `G.is_transitive()`\nisn't wrapped -- since Gap has IsTransitive, this would be trivial to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1187\n\n",
+    "body": "Assignee: joyner\n\nThe following should work and be instant (this possibly requires the optional `databases_gap` package).\n\n```\nsage: G = SymmetricGroup(5)\nsage: G.conjugacy_classes_subgroups()\n\nRuntimeError:\nGap produced error output\nVariable: 'Sym' must have a value\n\n\n   executing $sage85:=Sym( [ 1 .. 5 ] );;\n```\n\n\nI really wanted this to find out which representative subgroups\nare transitive, but can't do that either since `G.is_transitive()`\nisn't wrapped -- since Gap has `IsTransitive`, this would be trivial to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1187\n\n",
+    "closed_at": "2008-04-25T03:05:09Z",
     "created_at": "2007-11-16T20:45:35Z",
     "labels": [
-        "component: combinatorics",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "bug in G.conjugacy_classes_subgroups()",
+    "title": "[with patch, positive review] bug in G.conjugacy_classes_subgroups()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1187",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @mwhansen
+Assignee: joyner
 
-The following should work and be instant:
+The following should work and be instant (this possibly requires the optional `databases_gap` package).
 
 ```
 sage: G = SymmetricGroup(5)
@@ -35,7 +36,7 @@ Variable: 'Sym' must have a value
 
 I really wanted this to find out which representative subgroups
 are transitive, but can't do that either since `G.is_transitive()`
-isn't wrapped -- since Gap has IsTransitive, this would be trivial to wrap.
+isn't wrapped -- since Gap has `IsTransitive`, this would be trivial to wrap.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1187
 

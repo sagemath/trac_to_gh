@@ -3,7 +3,8 @@
 archive/issues_008157.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\nsage: R = RealField(16777217)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/users/caramel/zimmerma/.sage/temp/patate.loria.fr/31828/_users_caramel_zimmerm\\\na__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField_constructor (sage/rings/real_mpfr.c:3723)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField.__init__ (sage/rings/real_mpfr.c:3945)()\n\nValueError: prec (=16777217) must be >= 2 and <= 16777216.\n```\nNote that 2^24 bits is only slightly above 5M digits, which is\nquite small (Fabrice Bellard recently computed 2700 billions of digits of Pi on a personal desktop, i.e., about 500,000 times more).\nof Pi\n\nIssue created by migration from https://trac.sagemath.org/ticket/8157\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: R = RealField(16777217)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/users/caramel/zimmerma/.sage/temp/patate.loria.fr/31828/_users_caramel_zimmerm\\\na__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField_constructor (sage/rings/real_mpfr.c:3723)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField.__init__ (sage/rings/real_mpfr.c:3945)()\n\nValueError: prec (=16777217) must be >= 2 and <= 16777216.\n```\nNote that 2!^24 bits is only slightly above 5M digits, which is\nquite small (Fabrice Bellard recently computed 2700 billions of digits of Pi on a personal desktop, i.e., about 500,000 times more).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8157\n\n",
+    "closed_at": "2010-03-02T21:11:17Z",
     "created_at": "2010-02-02T21:23:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -34,9 +35,8 @@ a__sage_init_sage_0.py in <module>()
 
 ValueError: prec (=16777217) must be >= 2 and <= 16777216.
 ```
-Note that 2^24 bits is only slightly above 5M digits, which is
+Note that 2!^24 bits is only slightly above 5M digits, which is
 quite small (Fabrice Bellard recently computed 2700 billions of digits of Pi on a personal desktop, i.e., about 500,000 times more).
-of Pi
 
 Issue created by migration from https://trac.sagemath.org/ticket/8157
 

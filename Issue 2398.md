@@ -1,17 +1,18 @@
-# Issue 2398: free modules over ZZ -- major bug
+# Issue 2398: [with patch; positive review] new Hermite normal form code returns a zero row at the top of a matrix.
 
 archive/issues_002398.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nm = lattice_polytope.read_palp_matrix(r\"\"\"4 9\n...    0  0  0  0  0  0  0  0  0\n...    0  3  0 -2  1 -2 -2  1 -2\n...    0  0  3  2  2  5  0  0  3\n...    0  0  0  0  0  0  0  0  0\"\"\")\n\nsage: Ns = (ZZ^4).submodule(m.columns())\nsage: Ns\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 0 0]\n```\n\nWhat's with the 0 row above?!!?  That's insanely wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2398\n\n",
+    "closed_at": "2008-03-07T04:26:23Z",
     "created_at": "2008-03-05T20:23:03Z",
     "labels": [
         "component: linear algebra",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "free modules over ZZ -- major bug",
+    "title": "[with patch; positive review] new Hermite normal form code returns a zero row at the top of a matrix.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2398",
     "user": "https://github.com/williamstein"

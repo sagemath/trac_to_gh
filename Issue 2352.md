@@ -4,6 +4,7 @@ archive/issues_002352.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: univariate polynomial homogenize\n\nTicket #2349 fixes the multivariate case.  This ticket is for the univariate case.  Some examples (these work after like this AFTER #2349 has been applied):\n\n```\nsage: x = Zmod(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(Zmod(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\nsage: x = GF(3)['x'].0; (x^2 + x).homogenize()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x = PolynomialRing(GF(3), 1, 'x').0; (x^2 + x).homogenize()\nx^2 + x*h\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2352\n\n",
+    "closed_at": "2014-07-29T21:39:08Z",
     "created_at": "2008-02-29T08:24:09Z",
     "labels": [
         "component: commutative algebra",

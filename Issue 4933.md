@@ -1,16 +1,17 @@
-# Issue 4933: lots of files in sage.schemes.elliptic_curves are not included in the reference manual
+# Issue 4933: [with patch, positive review] lots of files in sage.schemes.elliptic_curves are not included in the reference manual
 
 archive/issues_004933.json:
 ```json
 {
-    "body": "Assignee: tba\n\nKeywords: documentation\n\nThe following files have useful docstrings but are not included in the ref manual (judging from 3.2.3), all in sage.schemes.elliptic_curves.\n* cm.py\n* ec_database.py\n* ell_field.py\n* ell_local_data.py\n* ell_modular_symbols\n* ell_number_field\n* ell_padic_field\n* ell_point.py\n* ell_tate_curve.py\n* ell_torsion.py\n* kodaira_symbol.py\n* lseries_ell.py\n* padic_lseries.py\n* period_lattice.py\n* sha_tate.py\n* weierstrass_morphism.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/4933\n\n",
+    "body": "Assignee: tba\n\nKeywords: documentation, elliptic curves\n\nThe following files have useful docstrings but are not included in the ref manual (judging from 3.2.3), all in sage.schemes.elliptic_curves.\n* cm.py\n* ec_database.py\n* ell_field.py\n* ell_local_data.py\n* ell_modular_symbols\n* ell_number_field\n* ell_padic_field\n* ell_point.py\n* ell_tate_curve.py\n* ell_torsion.py\n* kodaira_symbol.py\n* lseries_ell.py\n* padic_lseries.py\n* period_lattice.py\n* sha_tate.py\n* weierstrass_morphism.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/4933\n\n",
+    "closed_at": "2009-04-18T01:52:45Z",
     "created_at": "2009-01-03T17:59:06Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "lots of files in sage.schemes.elliptic_curves are not included in the reference manual",
+    "title": "[with patch, positive review] lots of files in sage.schemes.elliptic_curves are not included in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4933",
     "user": "https://github.com/JohnCremona"
@@ -18,7 +19,7 @@ archive/issues_004933.json:
 ```
 Assignee: tba
 
-Keywords: documentation
+Keywords: documentation, elliptic curves
 
 The following files have useful docstrings but are not included in the ref manual (judging from 3.2.3), all in sage.schemes.elliptic_curves.
 * cm.py

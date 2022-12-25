@@ -1,16 +1,17 @@
-# Issue 4036: [with patch, needs review] minor improvements to the Axiom interface
+# Issue 4036: minor improvements to the Axiom interface
 
 archive/issues_004036.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4036\n\n",
+    "closed_at": "2009-10-05T06:53:58Z",
     "created_at": "2008-09-01T23:34:49Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] minor improvements to the Axiom interface",
+    "title": "minor improvements to the Axiom interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4036",
     "user": "https://github.com/mwhansen"

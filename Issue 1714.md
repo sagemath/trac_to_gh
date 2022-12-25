@@ -1,16 +1,16 @@
-# Issue 1714: [with patch, needs review] allow keyword arguments for remote sage methods (sage0)
+# Issue 1714: [with patch, with positive review] allow keyword arguments for remote sage methods (sage0)
 
 archive/issues_001714.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nkeyword arguments were not passed through to the remote sage instance now they are.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1714\n\n",
+    "closed_at": "2008-02-15T00:24:38Z",
     "created_at": "2008-01-07T15:37:02Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] allow keyword arguments for remote sage methods (sage0)",
+    "title": "[with patch, with positive review] allow keyword arguments for remote sage methods (sage0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1714",
     "user": "https://github.com/malb"

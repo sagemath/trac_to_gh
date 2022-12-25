@@ -1,15 +1,16 @@
-# Issue 5457: Refactor symmetric functions
+# Issue 5457: Refactor symmetric functions and k-bounded subspace
 
 archive/issues_005457.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @saliola @dwbump chrisjamesberg @zabrocki simonking\n\nRefactor symmetric functions to:\n- use a single entry point, as in MuPAD-Combinat. Something like:\n       S = SymmetricFunctions(field)\n       S.schur\n       S.jack(t).P\n       S.macdonald(t,q).Q\n       S.kSchur(3).H\n- use the coercion framework\n- use the category framework\n\nSee also:http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5457\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @saliola @dwbump chrisjamesberg @zabrocki simonking\n\nKeywords: symmetric functions, days38, sd40\n\nThis patch restructures the implementation of symmetric functions in sage\n\nThe new implementation makes use of multiple realizations and the category framework. The new access to symmetric functions is via\n\n```\nsage: Sym = SymmetricFunctions(QQ)\n```\nFurther new features that are implemented:\n\n* The ring of symmetric functions is now endowed with a Hopf algebra structure. The coproduct and antipode are implemented (which were missing before).\n\n* A tutorial on how to use symmetric functions in sage is included at the beginning of sf.py which is also accessible via\n\n```\nsage: SymmetricFunctions??\n```\n\n* Symmetric functions should now work a lot better with respect to  specializing parameters like `q` and `t` for Hall-Littlewood, Jack and Macdonald symmetric functions. Certain functionalities before this change were broken or not possible.\n\n* Documentation was added to LLT polynomials (which had very sparse documentation previously).\n\n* The `k`-bounded subspace of the ring of symmetric function was implemented. The `k`-Schur functions now live in the `k`-bounded subspace rather than in the ring of symmetric functions as before.\n\nThis patch gained tremendously by the tutorial on symmetric functions written by Jason Bandlow, a draft on the `k`-bounded subspace by Jason Bandlow, and code multiple realizations written by Franco Saliola.\n\nSee also http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c\n\nApply\n\n* [attachment:trac_5457-symmetric_functions-mz.2.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5457\n\n",
+    "closed_at": "2012-09-04T08:39:49Z",
     "created_at": "2009-03-08T20:53:00Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
-    "title": "Refactor symmetric functions",
+    "title": "Refactor symmetric functions and k-bounded subspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5457",
     "user": "https://github.com/nthiery"
@@ -19,17 +20,39 @@ Assignee: @mwhansen
 
 CC:  sage-combinat @saliola @dwbump chrisjamesberg @zabrocki simonking
 
-Refactor symmetric functions to:
-- use a single entry point, as in MuPAD-Combinat. Something like:
-       S = SymmetricFunctions(field)
-       S.schur
-       S.jack(t).P
-       S.macdonald(t,q).Q
-       S.kSchur(3).H
-- use the coercion framework
-- use the category framework
+Keywords: symmetric functions, days38, sd40
 
-See also:http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c
+This patch restructures the implementation of symmetric functions in sage
+
+The new implementation makes use of multiple realizations and the category framework. The new access to symmetric functions is via
+
+```
+sage: Sym = SymmetricFunctions(QQ)
+```
+Further new features that are implemented:
+
+* The ring of symmetric functions is now endowed with a Hopf algebra structure. The coproduct and antipode are implemented (which were missing before).
+
+* A tutorial on how to use symmetric functions in sage is included at the beginning of sf.py which is also accessible via
+
+```
+sage: SymmetricFunctions??
+```
+
+* Symmetric functions should now work a lot better with respect to  specializing parameters like `q` and `t` for Hall-Littlewood, Jack and Macdonald symmetric functions. Certain functionalities before this change were broken or not possible.
+
+* Documentation was added to LLT polynomials (which had very sparse documentation previously).
+
+* The `k`-bounded subspace of the ring of symmetric function was implemented. The `k`-Schur functions now live in the `k`-bounded subspace rather than in the ring of symmetric functions as before.
+
+This patch gained tremendously by the tutorial on symmetric functions written by Jason Bandlow, a draft on the `k`-bounded subspace by Jason Bandlow, and code multiple realizations written by Franco Saliola.
+
+See also http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c
+
+Apply
+
+* [attachment:trac_5457-symmetric_functions-mz.2.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5457
 

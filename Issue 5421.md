@@ -1,15 +1,16 @@
-# Issue 5421: Speedup is_isomorphic
+# Issue 5421: [with patch, positive review] Speedup is_isomorphic
 
 archive/issues_005421.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @mwhansen\n\nBased on the thread at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1e3928bc2bffe9a6?pli=1\n\nseveral speedups have been implemented:\n\n1. Graphs which can be switched to `c_graph` are automatically switched before isomorphism testing (see thread).\n\n2. Several cheap imports have been moved to module level.\n\n3. One unnecessary step was removed.\n\nBenchmark: Take a list of all isomorphism classes of graphs on 7 vertices. Take one representative from each, and test each unordered pair for isomorphism. With underlying `c_graph` implementation, previously was 31.11 seconds, is now 10.71 seconds.\n\nThis patch also enables the `implementation` syntax in the graph generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5421\n\n",
+    "closed_at": "2009-03-08T06:52:58Z",
     "created_at": "2009-03-02T18:36:52Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Speedup is_isomorphic",
+    "title": "[with patch, positive review] Speedup is_isomorphic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5421",
     "user": "https://github.com/rlmill"

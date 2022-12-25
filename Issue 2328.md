@@ -1,9 +1,10 @@
-# Issue 2328: many docstrings in combinat functions are unhelpful, outdated, or wrong
+# Issue 2328: [with patch, positive review] many docstrings in combinat functions are unhelpful, outdated, or wrong
 
 archive/issues_002328.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n[This link has my original complaints](http://groups.google.com/group/sage-devel/browse_thread/thread/91fb37af7f6bd0a2). On IRC, the consensus was that the uncapitalized versions of these functions should not be used, and may be deprecated in the future. The documentation for such functions should be updated to reflect this, and the documentation for other functions should be improved as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2328\n\n",
+    "closed_at": "2008-03-14T19:56:28Z",
     "created_at": "2008-02-27T06:32:59Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002328.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "many docstrings in combinat functions are unhelpful, outdated, or wrong",
+    "title": "[with patch, positive review] many docstrings in combinat functions are unhelpful, outdated, or wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2328",
     "user": "https://github.com/dandrake"

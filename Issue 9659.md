@@ -3,7 +3,8 @@
 archive/issues_009659.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @JohnCremona @dandrake @nexttime\n\nReported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):\n\n```\nOn 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code) \n[...]\n   sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n   ***************************************************************\n   File \"/home/leif/sage-4.5.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 444:\n       sage: EK.regulator_of_points([P,T])\n   Expected:\n       -1.23259516440783e-32\n   Got:\n       -4.93038065763132e-32\n   ***************************************************************\n   1 items had failures:\n      1 of  42 in __main__.example_5\n   ***Test Failed*** 1 failures.\n   For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py\n            [171.9 s] \n```\n\nSee [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9659\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @JohnCremona @dandrake @nexttime\n\nReported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):\n\n```\nOn 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code) \n[...]\n   sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n   ***************************************************************\n   File \"/home/leif/sage-4.5.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 444:\n       sage: EK.regulator_of_points([P,T])\n   Expected:\n       -1.23259516440783e-32\n   Got:\n       -4.93038065763132e-32\n   ***************************************************************\n   1 items had failures:\n      1 of  42 in __main__.example_5\n   ***Test Failed*** 1 failures.\n   For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py\n            [171.9 s] \n```\n\nSee [this thread](http://groups.google.com/group/sage-release/browse_thread/thread/005cd26b245e9241/75e29c10f46c3b24#75e29c10f46c3b24) for a discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9659\n\n",
+    "closed_at": "2010-08-04T02:18:04Z",
     "created_at": "2010-08-01T10:17:05Z",
     "labels": [
         "component: doctest coverage",
@@ -42,7 +43,7 @@ On 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code)
             [171.9 s] 
 ```
 
-See [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.
+See [this thread](http://groups.google.com/group/sage-release/browse_thread/thread/005cd26b245e9241/75e29c10f46c3b24#75e29c10f46c3b24) for a discussion.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9659
 

@@ -3,7 +3,8 @@
 archive/issues_008765.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nCC:  @wdjoyner mvngu @nexttime\n\nThis is a basic implementation of Huffman's encoding. May it be useful to teach ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8765\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  @wdjoyner mvngu @nexttime\n\nThis is a basic implementation of Huffman's encoding. May it be useful to teach ! :-)\n\nApply patches in this order:\n\n1. [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch)\n2. [trac_8765-clean-ups.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-clean-ups.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8765\n\n",
+    "closed_at": "2010-06-06T08:24:27Z",
     "created_at": "2010-04-25T10:03:59Z",
     "labels": [
         "component: coding theory"
@@ -21,7 +22,10 @@ CC:  @wdjoyner mvngu @nexttime
 
 This is a basic implementation of Huffman's encoding. May it be useful to teach ! :-)
 
-Nathann
+Apply patches in this order:
+
+1. [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch)
+2. [trac_8765-clean-ups.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-clean-ups.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8765
 

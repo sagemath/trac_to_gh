@@ -1,16 +1,17 @@
-# Issue 2114: get gf2x into Sage!
+# Issue 2114: Get gf2x version 1.1 into Sage!
 
 archive/issues_002114.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @malb jpflori @jdemeyer\n\nCheck out http://wwwmaths.anu.edu.au/~brent/gf2x.html\n\nIt's:\n* by very well respected people\n* GPL'd (v2 or later)\n* Small pure C code:\n\n```\ndhcp46-72:gf2x-0.1 was$ ls\nBestToom.c          README              ToomSpace.c         gen_bb_mul_code.c   mul-tc3w.c          mul2t.c             tune1               tuneup.c\nCOPYING             TC.h                cantor              mul-tc3.c           mul-tc4.c           mulfft-bit.c        tunefft.c\nHalfGCD.c           Toom.c              factor.c            mul-tc3u.c          mul.c               patch-wrt-ntl-5.3.1 tunetoom.c\ndhcp46-72:gf2x-0.1 was$ usage\n4\tBestToom.c\n4\tREADME\n4\tTC.h\n4\tToom.c\n4\tToomSpace.c\n4\tpatch-wrt-ntl-5.3.1\n4\ttune1\n4\ttuneup.c\n8\tgen_bb_mul_code.c\n8\tmul2t.c\n8\ttunefft.c\n12\tmul-tc3.c\n12\tmul-tc3u.c\n12\tmul-tc3w.c\n12\tmul-tc4.c\n12\ttunetoom.c\n16\tHalfGCD.c\n16\tmul.c\n20\tCOPYING\n28\tmulfft-bit.c\n40\tfactor.c\n132\tcantor\n368\ttotal\n```\n* and Paul Z. says: \n\n```\nfor your information, on http://wwwmaths.anu.edu.au/~brent/gf2x.html you will\nfind an implementation up to 5 times faster than NTL's GF2X (for degree 2^20).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2114\n\n",
+    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @malb jpflori @jdemeyer\n\nKeywords: spkg gf2x\n\nCheck out http://wwwmaths.anu.edu.au/~brent/gf2x.html\n\nIt's:\n* by very well respected people\n* GPL'd (v2 or later)\n* Small pure C code\n* and Paul Z. says: \n\n```\nfor your information, on http://wwwmaths.anu.edu.au/~brent/gf2x.html you will\nfind an implementation up to 5 times faster than NTL's GF2X (for degree 2^20).\n```\n\nLatest 1.1 version is at http://gf2x.gforge.inria.fr/\n\nUse **spkgs** at:\n* [http://boxen.math.washington.edu/home/jdemeyer/spkg/gf2x-1.1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/gf2x-1.1.spkg) ([attachment:gf2x-1.1.diff spkg diff])\n* [http://boxen.math.washington.edu/home/jdemeyer/spkg/ntl-5.5.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/ntl-5.5.2.p1.spkg)\n\n**Apply** to Sage's root:\n* [attachment:trac_2114-gf2x.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2114\n\n",
+    "closed_at": "2013-06-10T08:41:43Z",
     "created_at": "2008-02-08T15:12:20Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "get gf2x into Sage!",
+    "title": "Get gf2x version 1.1 into Sage!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2114",
     "user": "https://github.com/williamstein"
@@ -20,49 +21,30 @@ Assignee: somebody
 
 CC:  @zimmermann6 @malb jpflori @jdemeyer
 
+Keywords: spkg gf2x
+
 Check out http://wwwmaths.anu.edu.au/~brent/gf2x.html
 
 It's:
 * by very well respected people
 * GPL'd (v2 or later)
-* Small pure C code:
-
-```
-dhcp46-72:gf2x-0.1 was$ ls
-BestToom.c          README              ToomSpace.c         gen_bb_mul_code.c   mul-tc3w.c          mul2t.c             tune1               tuneup.c
-COPYING             TC.h                cantor              mul-tc3.c           mul-tc4.c           mulfft-bit.c        tunefft.c
-HalfGCD.c           Toom.c              factor.c            mul-tc3u.c          mul.c               patch-wrt-ntl-5.3.1 tunetoom.c
-dhcp46-72:gf2x-0.1 was$ usage
-4	BestToom.c
-4	README
-4	TC.h
-4	Toom.c
-4	ToomSpace.c
-4	patch-wrt-ntl-5.3.1
-4	tune1
-4	tuneup.c
-8	gen_bb_mul_code.c
-8	mul2t.c
-8	tunefft.c
-12	mul-tc3.c
-12	mul-tc3u.c
-12	mul-tc3w.c
-12	mul-tc4.c
-12	tunetoom.c
-16	HalfGCD.c
-16	mul.c
-20	COPYING
-28	mulfft-bit.c
-40	factor.c
-132	cantor
-368	total
-```
+* Small pure C code
 * and Paul Z. says: 
 
 ```
 for your information, on http://wwwmaths.anu.edu.au/~brent/gf2x.html you will
 find an implementation up to 5 times faster than NTL's GF2X (for degree 2^20).
 ```
+
+Latest 1.1 version is at http://gf2x.gforge.inria.fr/
+
+Use **spkgs** at:
+* [http://boxen.math.washington.edu/home/jdemeyer/spkg/gf2x-1.1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/gf2x-1.1.spkg) ([attachment:gf2x-1.1.diff spkg diff])
+* [http://boxen.math.washington.edu/home/jdemeyer/spkg/ntl-5.5.2.p1.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/ntl-5.5.2.p1.spkg)
+
+**Apply** to Sage's root:
+* [attachment:trac_2114-gf2x.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2114
 

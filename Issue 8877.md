@@ -4,6 +4,7 @@ archive/issues_008877.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nWe implement new methods in /combinat/partition.py which allow to go from k-bounded partitions to Grassmannian elements in the affine Weyl group of type A and the corresponding reduced word.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8877\n\n",
+    "closed_at": "2010-05-08T21:44:49Z",
     "created_at": "2010-05-04T22:45:42Z",
     "labels": [
         "component: combinatorics",

@@ -1,9 +1,10 @@
-# Issue 2668: loads/dumps do not work with QQbar and AA
+# Issue 2668: [with patch, positive review] loads/dumps do not work with QQbar and AA
 
 archive/issues_002668.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: QQbar AA loads dumps save\n\n```\nsage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/sage_object.pyx in sage.structure.sage_object.loads()\n\n<type 'exceptions.RuntimeError'>: __new__() takes exactly 3 arguments (1 given)\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2668\n\n",
+    "closed_at": "2008-03-28T18:46:07Z",
     "created_at": "2008-03-25T21:42:47Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002668.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "loads/dumps do not work with QQbar and AA",
+    "title": "[with patch, positive review] loads/dumps do not work with QQbar and AA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2668",
     "user": "https://github.com/ncalexan"

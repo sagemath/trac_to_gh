@@ -1,16 +1,17 @@
-# Issue 9810: sage exits with 0, even if it is unable to install a package.
+# Issue 9810: `sage -i ...` exits with 0, even if it is unable to install a package.
 
 archive/issues_009810.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 @jhpalmieri\n\nI wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. \n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package\nForce installing some-non-existant-package\nCalling sage-spkg on some-non-existant-package\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nsome-non-existant-package\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of some-non-existant-package\n/export/home/drkirkby/sage-4.5.2/local/bin/sage-spkg: file some-non-existant-package does not exist\nAttempting to download it.\nhttp://www.sagemath.org//packages/optional/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\n**********************************************************************\n* Unable to download some-non-existant-package\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package some-non-existant-package from http://www.sagemath.org/\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 0: command not found\ndrkirkby@hawk:~/sage-4.5.2$ \n```\n\nIn contrast, if I try this with a well written command like `ls`\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ls some-non-existant-package\nsome-non-existant-package: No such file or directory\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 2: command not found\n```\n\nthe exit code is non-zero - in this case 2. \n\nAlso on a similar theme is #9799, showing that `make` can exit with the wrong code too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9811\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 @jhpalmieri\n\nKeywords: sage-sage return code status pipestatus tee\n\nI wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. \n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package\nForce installing some-non-existant-package\nCalling sage-spkg on some-non-existant-package\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nsome-non-existant-package\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of some-non-existant-package\n/export/home/drkirkby/sage-4.5.2/local/bin/sage-spkg: file some-non-existant-package does not exist\nAttempting to download it.\nhttp://www.sagemath.org//packages/optional/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\n**********************************************************************\n* Unable to download some-non-existant-package\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package some-non-existant-package from http://www.sagemath.org/\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 0: command not found\ndrkirkby@hawk:~/sage-4.5.2$ \n```\n\nThe same happens if one uses `sage -i` to install a package. If it fails, the exit code is still 0. \n\nIn contrast, if I try this with a well written command like `ls`\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ls some-non-existant-package\nsome-non-existant-package: No such file or directory\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 2: command not found\n```\n\nthe exit code is non-zero - in this case 2. \n\n---\n\nAlso on a similar theme is #9799, showing that `make` can exit with the wrong code too. \n\n---\n\nApply\n1. [attachment:trac_9811-use_pipestatus_in_sage-sage.scripts.patch]\nto the Sage **scripts repository**.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9811\n\n",
+    "closed_at": "2011-10-17T07:59:23Z",
     "created_at": "2010-08-26T21:32:46Z",
     "labels": [
-        "component: build",
+        "component: scripts",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "sage exits with 0, even if it is unable to install a package.",
+    "title": "`sage -i ...` exits with 0, even if it is unable to install a package.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9810",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -19,6 +20,8 @@ archive/issues_009810.json:
 Assignee: GeorgSWeber
 
 CC:  @nexttime @qed777 @jhpalmieri
+
+Keywords: sage-sage return code status pipestatus tee
 
 I wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. 
 
@@ -56,6 +59,8 @@ bash: 0: command not found
 drkirkby@hawk:~/sage-4.5.2$ 
 ```
 
+The same happens if one uses `sage -i` to install a package. If it fails, the exit code is still 0. 
+
 In contrast, if I try this with a well written command like `ls`
 
 ```
@@ -67,7 +72,17 @@ bash: 2: command not found
 
 the exit code is non-zero - in this case 2. 
 
-Also on a similar theme is #9799, showing that `make` can exit with the wrong code too.
+---
+
+Also on a similar theme is #9799, showing that `make` can exit with the wrong code too. 
+
+---
+
+Apply
+1. [attachment:trac_9811-use_pipestatus_in_sage-sage.scripts.patch]
+to the Sage **scripts repository**.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9811
 

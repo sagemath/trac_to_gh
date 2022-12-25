@@ -1,16 +1,17 @@
-# Issue 3641: [with spkg, needs review] new Singular upstream release
+# Issue 3641: [with spkg, positive review] new Singular upstream release
 
 archive/issues_003641.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: singular\n\n```\nTue Nov 27 12:16:36 CET 2007 Singular-3-0-4-1\nChanges with respect to 3-0-4\n- dmod.lib: fixes wrt. nc_algebra and documentation\n- allow assignments like: def l=1,2,3;\n```\n\nThe new version also has a memleak we reported eliminated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3641\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: singular, editor_mabshoff\n\n```\nTue Nov 27 12:16:36 CET 2007 Singular-3-0-4-1\nChanges with respect to 3-0-4\n- dmod.lib: fixes wrt. nc_algebra and documentation\n- allow assignments like: def l=1,2,3;\n```\n\nThe new version also has a memleak we reported eliminated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3641\n\n",
+    "closed_at": "2008-08-19T23:08:24Z",
     "created_at": "2008-07-11T15:30:33Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] new Singular upstream release",
+    "title": "[with spkg, positive review] new Singular upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3641",
     "user": "https://github.com/malb"
@@ -18,7 +19,7 @@ archive/issues_003641.json:
 ```
 Assignee: mabshoff
 
-Keywords: singular
+Keywords: singular, editor_mabshoff
 
 ```
 Tue Nov 27 12:16:36 CET 2007 Singular-3-0-4-1

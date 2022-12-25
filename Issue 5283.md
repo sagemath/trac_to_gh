@@ -1,16 +1,17 @@
-# Issue 5283: problem with posets: iterating the subposet construction
+# Issue 5283: [with patch; positive review] problem with posets: iterating the subposet construction
 
 archive/issues_005283.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  sage-combinat\n\nIf I try to create a subposet of a subposet of something, I have problems:\n\n```\nsage: P = BooleanLattice(2)\nsage: above = P.principal_order_filter(0)\nsage: Q = P.subposet(above)\nsage: above_new = Q.principal_order_filter(Q.list()[0])\nsage: Q.subposet(above_new)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/16679/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/combinat/posets/posets.pyc in subposet(self, elements)\n   1036             raise ValueError, \"not a list.\"\n   1037         for element in elements:\n-> 1038             if element not in self:\n   1039                 raise ValueError, \"element not in self\"\n   1040         relations = []\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/combinat/posets/posets.pyc in __contains__(self, x)\n    272         else:\n    273             y = x\n--> 274         return y in self._elements\n    275 \n    276     def __call__(self,element):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/combinat/posets/elements.pyc in __eq__(self, other)\n     50             False\n     51         \"\"\"\n---> 52         return self.parent() == other.parent() \\\n     53                 and self.element == other.element \\\n     54                 and self.vertex == other.vertex\n\nAttributeError: 'int' object has no attribute 'parent'\n```\nI think that the problem is in the `__contains__` method for posets, where the argument x is converted to x.element, which might be an int.  I'm not sure why I have to iterate the subposet construction twice to get this to happen...\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5283\n\n",
+    "closed_at": "2009-05-11T10:00:45Z",
     "created_at": "2009-02-16T07:01:52Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "problem with posets: iterating the subposet construction",
+    "title": "[with patch; positive review] problem with posets: iterating the subposet construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5283",
     "user": "https://github.com/jhpalmieri"

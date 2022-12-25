@@ -4,9 +4,10 @@ archive/issues_007129.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne\n\nA look in $SAGE_HOME/local/lib shows this is being built 32-bit, even when SAGE64 is set to yes. Note how the libraries of libhisotry below are 64-bit (as they should be), but libgpg's are 32-bit. \n\nzlib is another package to suffer this problem - see #7128\n\nlibgcrypt fails to build in 64-bit on Solaris SPARC with gcc (see #7127). This might actually be related and a fault of this package, rather than of libgcrypt, though there is another Solaris issue on that package. \n\n```\nlibgpg-error.la:        commands text\nlibgpg-error.so:        ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibgpg-error.so.0:      ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibgpg-error.so.0.4.0:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibhistory.a:   current ar archive, not a dynamic executable or shared object\nlibhistory.so:  ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibhistory.so.6:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\n```\n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64. \n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX. \n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64. \n\nThe sensible way to resolve this is to add the correct flag on every platform. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7129\n\n",
+    "closed_at": "2011-04-05T15:50:42Z",
     "created_at": "2009-10-05T23:07:56Z",
     "labels": [
-        "component: algebra",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

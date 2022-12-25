@@ -3,11 +3,10 @@
 archive/issues_008158.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nConsider the following example:\n\n```\nsage: var('a,b,c')\n(a, b, c)\nsage: time d=expand((a+b+c+1)^100)\nCPU times: user 2.45 s, sys: 0.07 s, total: 2.52 s\nWall time: 2.53 s\n```\nI thought it would be more efficient to use PolynomialRing(),\nbut it is not:\n\n```\nsage: P.<a,b,c> = PolynomialRing(QQ)\nsage: time d=(a+b+c+1)^100\nCPU times: user 10.28 s, sys: 0.07 s, total: 10.35 s\nWall time: 12.59 s\n```\nHowever if one wants to factor d, then PolynomialRing is faster\n(SymbolicRing seems to loop forever):\n\n```\nsage: time e = d.factor()\nCPU times: user 28.87 s, sys: 0.36 s, total: 29.23 s\nWall time: 34.20 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8158\n\n",
+    "body": "Assignee: tbd\n\nConsider the following example:\n\n```\nsage: var('a,b,c')\n(a, b, c)\nsage: time d=expand((a+b+c+1)^100)\nCPU times: user 2.45 s, sys: 0.07 s, total: 2.52 s\nWall time: 2.53 s\n```\nI thought it would be more efficient to use PolynomialRing(),\nbut it is not:\n\n```\nsage: P.<a,b,c> = PolynomialRing(QQ)\nsage: time d=(a+b+c+1)^100\nCPU times: user 10.28 s, sys: 0.07 s, total: 10.35 s\nWall time: 12.59 s\n```\nHowever if one wants to factor d, then PolynomialRing is faster\n(SymbolicRing seems to loop forever):\n\n```\nsage: time e = d.factor()\nCPU times: user 28.87 s, sys: 0.36 s, total: 29.23 s\nWall time: 34.20 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8158\n\n",
     "created_at": "2010-02-02T22:18:45Z",
     "labels": [
-        "component: commutative algebra",
-        "bug"
+        "component: performance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "efficiency problem with polynomials (SymbolicRing vs PolynomialRing)",
@@ -16,7 +15,7 @@ archive/issues_008158.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @malb
+Assignee: tbd
 
 Consider the following example:
 

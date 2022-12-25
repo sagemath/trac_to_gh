@@ -4,6 +4,7 @@ archive/issues_001190.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe call spkg-check when the env variable SAGE_CHECK is non-empty. This didn't work, but the attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1190\n\n",
+    "closed_at": "2007-11-21T07:58:17Z",
     "created_at": "2007-11-17T06:46:57Z",
     "labels": [
         "component: packages: standard",

@@ -4,6 +4,7 @@ archive/issues_008239.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nCC:  @roed314\n\nThis is kind of misleading:\n\n```\nsage: K.<a> = Qq(25)\nsage: K.teichmuller(K(2/5))\n2*5^-1 + 1 + 2*5 + 5^2 + 3*5^3 + 4*5^4 + 2*5^5 + 3*5^6 + 3*5^8 + 2*5^9 + 2*5^10 + 4*5^12 + 5^13 + 3*5^14 + 2*5^15 + 4*5^16 + 4*5^18 + O(5^19)\n```\n\nIt should raise an exception.\n\nThe prime case behaves as I would expect:\n\n```\nsage: K = Qp(5)\nsage: K.teichmuller(K(2/5))\nTraceback (click to the left of this block for traceback)\n...\nValueError: cannot set negative valuation element to Teichmuller\nrepresentative.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8239\n\n",
+    "closed_at": "2011-11-15T08:55:20Z",
     "created_at": "2010-02-11T19:45:25Z",
     "labels": [
         "component: padics",

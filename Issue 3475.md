@@ -1,9 +1,10 @@
-# Issue 3475: [with patch, needs review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form
+# Issue 3475: [with patch, positive review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form
 
 archive/issues_003475.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\njquery.form.js somehow got dropped from setup.py, which is needed for the web interface, it does *NOT* function correctly without the proper jquery plugin. \n\nThis patch also upgrades jquery, jquery.form to the latest version. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3475\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: editor_mabshoff\n\njquery.form.js somehow got dropped from setup.py, which is needed for the web interface, it does *NOT* function correctly without the proper jquery plugin. \n\nThis patch also upgrades jquery, jquery.form to the latest version. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3475\n\n",
+    "closed_at": "2008-07-03T05:03:30Z",
     "created_at": "2008-06-19T21:47:07Z",
     "labels": [
         "component: dsage",
@@ -11,13 +12,15 @@ archive/issues_003475.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form",
+    "title": "[with patch, positive review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3475",
     "user": "https://github.com/yqiang"
 }
 ```
 Assignee: @williamstein
+
+Keywords: editor_mabshoff
 
 jquery.form.js somehow got dropped from setup.py, which is needed for the web interface, it does *NOT* function correctly without the proper jquery plugin. 
 

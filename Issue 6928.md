@@ -1,16 +1,17 @@
-# Issue 6928: Upgrade the Trac spkg to 0.11.5
+# Issue 6928: [with spkg and patch, positive review] Upgrade the Trac spkg to 0.11.5
 
 archive/issues_006928.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n[Trac](http://trac.edgewall.org/) is a problem tracker for software projects.  For example, see here.\n\nThe latest available Trac spkg is [old](http://www.sagemath.org/packages/optional/).  Version [0.11.5](http://trac.edgewall.org/browser/tags/trac-0.11.5/RELEASE) may include several new features, either [built-in](http://trac.edgewall.org/wiki/TracGuide) or  [added-on](http://trac.edgewall.org/wiki/PluginList) ([more plug-ins](http://trac-hacks.org/)).  Moreover, we can use the spkg to test potential improvements to [Sage trac](http://trac.sagemath.org/sage_trac).\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/257b1e92d98c40d7/724cc866319332a0?#724cc866319332a0) for a discussion of requested features and potentially useful plug-ins.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6928\n\n",
+    "body": "Assignee: tbd\n\n[Trac](http://trac.edgewall.org/) is a problem tracker for software projects.  For example, see here.\n\nThe latest available Trac spkg is [old](http://www.sagemath.org/packages/optional/).  Version [0.11.5](http://trac.edgewall.org/browser/tags/trac-0.11.5/RELEASE) may include several new features, either [built-in](http://trac.edgewall.org/wiki/TracGuide) or  [added-on](http://trac.edgewall.org/wiki/PluginList) ([more plug-ins](http://trac-hacks.org/)).  Moreover, we can use the spkg to test potential improvements to [Sage trac](http://trac.sagemath.org/sage_trac).\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/257b1e92d98c40d7/724cc866319332a0?#724cc866319332a0) for a discussion of requested features and potentially useful plug-ins.\n\nThe new spkg and accompaying patch:\n\n* http://sage.math.washington.edu/home/mpatel/trac/6928/trac-0.11.5.p0.spkg\n* [attachment:trac_6928-trac_spkg.patch]\n\nEasy setup for [Mercurial repository browsing](http://trac.edgewall.org/wiki/TracMercurial):\n\n* `sage -f trac-0.11.5.p0.spkg`\n* `sage: trac(easy_setup=True, open_viewer=True)`\n\nPlease see `SPKG.txt` or the patch for help on creating user and administrator accounts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6928\n\n",
+    "closed_at": "2009-10-15T05:16:48Z",
     "created_at": "2009-09-13T04:15:00Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Upgrade the Trac spkg to 0.11.5",
+    "title": "[with spkg and patch, positive review] Upgrade the Trac spkg to 0.11.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6928",
     "user": "https://github.com/qed777"
@@ -23,6 +24,18 @@ Assignee: tbd
 The latest available Trac spkg is [old](http://www.sagemath.org/packages/optional/).  Version [0.11.5](http://trac.edgewall.org/browser/tags/trac-0.11.5/RELEASE) may include several new features, either [built-in](http://trac.edgewall.org/wiki/TracGuide) or  [added-on](http://trac.edgewall.org/wiki/PluginList) ([more plug-ins](http://trac-hacks.org/)).  Moreover, we can use the spkg to test potential improvements to [Sage trac](http://trac.sagemath.org/sage_trac).
 
 See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/257b1e92d98c40d7/724cc866319332a0?#724cc866319332a0) for a discussion of requested features and potentially useful plug-ins.
+
+The new spkg and accompaying patch:
+
+* http://sage.math.washington.edu/home/mpatel/trac/6928/trac-0.11.5.p0.spkg
+* [attachment:trac_6928-trac_spkg.patch]
+
+Easy setup for [Mercurial repository browsing](http://trac.edgewall.org/wiki/TracMercurial):
+
+* `sage -f trac-0.11.5.p0.spkg`
+* `sage: trac(easy_setup=True, open_viewer=True)`
+
+Please see `SPKG.txt` or the patch for help on creating user and administrator accounts.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6928
 

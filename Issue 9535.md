@@ -3,7 +3,8 @@
 archive/issues_009535.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9535\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: eclib\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9535\n\n",
+    "closed_at": "2014-01-04T02:39:28Z",
     "created_at": "2010-07-18T07:01:21Z",
     "labels": [
         "component: elliptic curves"
@@ -16,6 +17,8 @@ archive/issues_009535.json:
 }
 ```
 Assignee: @JohnCremona
+
+Keywords: eclib
 
 
 

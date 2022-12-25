@@ -1,16 +1,17 @@
-# Issue 1853: update libgpg_error to 1.6
+# Issue 1853: [with spkg] update libgpg_error to 1.6
 
 archive/issues_001853.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAlso make sure to add 64 bit OSX support\n\nIssue created by migration from https://trac.sagemath.org/ticket/1853\n\n",
+    "closed_at": "2008-01-19T22:57:58Z",
     "created_at": "2008-01-19T22:11:08Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update libgpg_error to 1.6",
+    "title": "[with spkg] update libgpg_error to 1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1853",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

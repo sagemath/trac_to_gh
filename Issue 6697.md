@@ -1,16 +1,17 @@
-# Issue 6697: spell-check all modules under sage/functions
+# Issue 6697: [with patch, positive review] spell-check all modules under sage/functions
 
 archive/issues_006697.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6697\n\n",
+    "closed_at": "2009-08-12T05:24:01Z",
     "created_at": "2009-08-09T07:26:16Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/functions",
+    "title": "[with patch, positive review] spell-check all modules under sage/functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6697",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

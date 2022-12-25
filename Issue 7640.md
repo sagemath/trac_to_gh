@@ -4,6 +4,7 @@ archive/issues_007640.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @rlmill @jasongrout mvngu\n\n```\nsage: G = graphs.CubeGraph(5)\nsage: C = G.copy(implementation='c_graph')\nsage: timeit(\"G.shortest_path('01001', '10100')\")\n625 loops, best of 3: 49.3 \u00b5s per loop\nsage: timeit(\"C.shortest_path('01001', '10100')\")\n625 loops, best of 3: 992 \u00b5s per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7640\n\n",
+    "closed_at": "2009-12-14T16:41:40Z",
     "created_at": "2009-12-09T17:00:58Z",
     "labels": [
         "component: graph theory",

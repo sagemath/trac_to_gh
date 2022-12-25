@@ -4,6 +4,7 @@ archive/issues_006026.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs is there is no support for ctypes on 64 bit OSX. I have a binary _ctypes.so for MacIntel that we can drop in, but a clean fix would be nice.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6026\n\n",
+    "closed_at": "2013-02-08T14:22:30Z",
     "created_at": "2009-05-12T07:11:17Z",
     "labels": [
         "component: porting",

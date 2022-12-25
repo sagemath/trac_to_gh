@@ -1,9 +1,10 @@
-# Issue 3790: limit gets stuck without computing anything
+# Issue 3790: [with patch, positive review] limit gets stuck without computing anything
 
 archive/issues_003790.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\n```\n I noticed that for some expressions limit() gets stuck and does not\nreturn to the sage prompt.  It does not seem to be computing anything\nsince the cpu usage is 0.\n For example in Sage 3.0.6 try:\nvars('Ax,Bx,By')\nt = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2 + Bx^2))\nt.limit(Ax=0,dir='above')\n\n It just sits there.  And you need to ctrl-c to get the prompt back.\nIf you set t = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2))\nThen do t.limit(Ax=0,dir='above'), you get a message asking if By is\nzero or nonzero.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3790\n\n",
+    "closed_at": "2008-08-08T23:43:07Z",
     "created_at": "2008-08-07T22:07:41Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_003790.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "limit gets stuck without computing anything",
+    "title": "[with patch, positive review] limit gets stuck without computing anything",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3790",
     "user": "https://github.com/mwhansen"

@@ -1,16 +1,17 @@
-# Issue 5013: Solaris 10/x86: Fix numerical noise failure in sage/ext/fast_eval.py
+# Issue 5013: [with patch, positive review] Solaris 10/x86: Fix numerical noise failure in sage/ext/fast_eval.py
 
 archive/issues_005013.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis patch is due to libm differences. Patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5013\n\n",
+    "closed_at": "2009-01-19T01:36:01Z",
     "created_at": "2009-01-18T13:47:47Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Solaris 10/x86: Fix numerical noise failure in sage/ext/fast_eval.py",
+    "title": "[with patch, positive review] Solaris 10/x86: Fix numerical noise failure in sage/ext/fast_eval.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5013",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

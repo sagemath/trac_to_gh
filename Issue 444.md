@@ -1,21 +1,22 @@
-# Issue 444: solve the rubik's cube fast!
+# Issue 444: [with patch, with positive review] solve the rubik's cube fast!
 
 archive/issues_000444.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHi:\n\nTwo Rubik's cube programs have just been posted to\nhttp://sage.math.washington.edu/home/wdj/rubik/\nBoth one is GPL's (Michael Reid's) and the other is\nunder the MIT license (Dik Winter's). These programs\nhave been around for some time but have never\nbeen licensed until recently (and I thank both the\nauthors for kindly replying to my emails and agreeing\nto an open source license). The tarballs you will find there\nare identical to the author's version except that I have\nadded a license.txt following their email directions.\nNow that the semester has started, I lack the time to\ndo anything but am emailing the list in case anyone\nis interested and has the time to create Python\nwrappers for one (or both) of them. SAGE\ncurrently has a Rubik's cube solver which uses GAP\nand is quite slow and far from optimal. Maybe one of these\ncould be used instead one day?\n --- David Joyner\n\nIssue created by migration from https://trac.sagemath.org/ticket/444\n\n",
+    "body": "Assignee: @robertwb\n\nHi:\n\nTwo Rubik's cube programs have just been posted to\nhttp://sage.math.washington.edu/home/wdj/rubik/\nBoth one is GPL's (Michael Reid's) and the other is\nunder the MIT license (Dik Winter's). These programs\nhave been around for some time but have never\nbeen licensed until recently (and I thank both the\nauthors for kindly replying to my emails and agreeing\nto an open source license). The tarballs you will find there\nare identical to the author's version except that I have\nadded a license.txt following their email directions.\nNow that the semester has started, I lack the time to\ndo anything but am emailing the list in case anyone\nis interested and has the time to create Python\nwrappers for one (or both) of them. SAGE\ncurrently has a Rubik's cube solver which uses GAP\nand is quite slow and far from optimal. Maybe one of these\ncould be used instead one day?\n --- David Joyner\n\nIssue created by migration from https://trac.sagemath.org/ticket/444\n\n",
+    "closed_at": "2007-12-15T11:23:27Z",
     "created_at": "2007-08-18T20:32:09Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "solve the rubik's cube fast!",
+    "title": "[with patch, with positive review] solve the rubik's cube fast!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/444",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 Hi:
 

@@ -4,6 +4,7 @@ archive/issues_000168.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen I do:\n\n```\n  show(plot(lambda x: 1/x,-1,1),frame=True,ymin=-3,ymax=3)\n```\n\nthe ymin and ymax bounds get ignored. Without frame=True, the plot works properly\n\nIssue created by migration from https://trac.sagemath.org/ticket/168\n\n",
+    "closed_at": "2007-01-17T21:05:05Z",
     "created_at": "2006-11-08T21:55:30Z",
     "labels": [
         "component: notebook",

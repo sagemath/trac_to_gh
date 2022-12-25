@@ -4,9 +4,11 @@ archive/issues_008964.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu\n\nHere are two small typos in misc/misc.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/8964\n\n",
+    "closed_at": "2010-05-17T06:48:34Z",
     "created_at": "2010-05-14T15:57:16Z",
     "labels": [
         "component: documentation",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",

@@ -1,15 +1,16 @@
-# Issue 3050: notebook -- add "remember me" checkbox
+# Issue 3050: [with patch; positive review] notebook -- add a "remember me" checkbox to the login page.
 
 archive/issues_003050.json:
 ```json
 {
-    "body": "Assignee: TimothyClemans\n\nPort the attached SVN patch from Knoboo to the Sage Notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3050\n\n",
+    "body": "Assignee: TimothyClemans\n\nMany webpages have a little \"remember me\" checkbox to determine whether you have to enter login credentials every time you visit a web page.  Possibly implement something similar in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3050\n\n",
+    "closed_at": "2008-05-19T06:07:52Z",
     "created_at": "2008-04-28T16:48:26Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- add \"remember me\" checkbox",
+    "title": "[with patch; positive review] notebook -- add a \"remember me\" checkbox to the login page.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3050",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
@@ -17,7 +18,7 @@ archive/issues_003050.json:
 ```
 Assignee: TimothyClemans
 
-Port the attached SVN patch from Knoboo to the Sage Notebook.
+Many webpages have a little "remember me" checkbox to determine whether you have to enter login credentials every time you visit a web page.  Possibly implement something similar in Sage. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3050
 

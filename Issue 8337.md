@@ -4,9 +4,10 @@ archive/issues_008337.json:
 ```json
 {
     "body": "Assignee: @malb\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/72fbc6d6f5a7d746#, with sage 4.3.3:\n\n```\nsage: var('E1, E2, E4, E5, E10, E20'); \nsage: var( 'q' ); \nsage: t=(E20^16*E5^8*q^4*E2^24 + (-E20^16*E5^8*q^4*E4^8*E1^16 + (-E10^24 + E20^8*E5^16)*E4^16*E1^8)) \nsage: factor(t)\n```\ndoes not answer in reasonable time (a few seconds).\n\nMaple 13 answers in less than a second (and says the polynomial\nis irreducible).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8337\n\n",
+    "closed_at": "2013-08-30T08:43:54Z",
     "created_at": "2010-02-23T18:18:55Z",
     "labels": [
-        "component: commutative algebra",
+        "component: performance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

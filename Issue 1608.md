@@ -1,15 +1,15 @@
-# Issue 1608: jsmath fonts -- these should ship with Sage itself and be *vastly* easier to install
+# Issue 1608: Make optional spkg for MathJax png fonts
 
 archive/issues_001608.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen @jasongrout @kini\n\nIt is incredibly confusing for most people to install the jsmath fonts.  Morever, that they must download them off an external site is terrible -- what if they install Sage on an internal network or laptop with no net access, and need the fonts.  The fonts should be included in Sage, and the \"you should install the jsmath fonts\" warning should be much nicer and directly give a link to the fonts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1608\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen @jasongrout @kini\n\nSome older browsers might need extra fonts.  Make them available as an optional spkg.  See discussion below for details.  This depends on #11080 and #9774.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1608\n\n",
+    "closed_at": "2020-03-29T02:02:41Z",
     "created_at": "2007-12-27T04:31:05Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
-    "title": "jsmath fonts -- these should ship with Sage itself and be *vastly* easier to install",
+    "title": "Make optional spkg for MathJax png fonts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1608",
     "user": "https://github.com/williamstein"
@@ -19,7 +19,7 @@ Assignee: boothby
 
 CC:  @williamstein @mwhansen @jasongrout @kini
 
-It is incredibly confusing for most people to install the jsmath fonts.  Morever, that they must download them off an external site is terrible -- what if they install Sage on an internal network or laptop with no net access, and need the fonts.  The fonts should be included in Sage, and the "you should install the jsmath fonts" warning should be much nicer and directly give a link to the fonts.
+Some older browsers might need extra fonts.  Make them available as an optional spkg.  See discussion below for details.  This depends on #11080 and #9774.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1608
 

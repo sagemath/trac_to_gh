@@ -4,6 +4,7 @@ archive/issues_009067.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThis has the same error as #7336.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9067\n\n",
+    "closed_at": "2010-05-27T21:08:17Z",
     "created_at": "2010-05-27T18:41:04Z",
     "labels": [
         "component: porting: cygwin",

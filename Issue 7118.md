@@ -1,15 +1,17 @@
-# Issue 7118: remove quaddouble from sage
+# Issue 7118: [close as fixed] remove quaddouble from sage
 
 archive/issues_007118.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSince quaddouble was deprecated a year ago, and voted out, we should finally actually remove it.  This is motivated also by us getting numerous build failure reports that involve quaddouble lately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7118\n\n",
+    "closed_at": "2009-10-31T16:39:12Z",
     "created_at": "2009-10-04T22:56:48Z",
     "labels": [
-        "component: build"
+        "component: build",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "remove quaddouble from sage",
+    "title": "[close as fixed] remove quaddouble from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7118",
     "user": "https://github.com/williamstein"

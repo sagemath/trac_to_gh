@@ -4,6 +4,7 @@ archive/issues_000716.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graph, graphs\n\n\nWith a directed graph g\n* g.to_directed() forgets multiedges, remembers loops\n* g.to_undirected() forgets multiedges and loops\n\nWith an undirected graph g\n* g.to_directed() forgets multiedges and loops\n* g.to_undirected() forgets multiedges, remembers loops\n\n\nIn each of these cases, both multiedges and loops should be remembered.\n\n```\nsage: g=DiGraph({0:[0,1,1,2],1:[0,1]},loops=True,multiedges=True)\nsage: g.to_directed().multiple_arcs()\nFalse\nsage: g.to_directed().loops()\nTrue\nsage: g.to_undirected().multiple_edges()\nFalse\nsage: g.to_undirected().loops()\nFalse\nsage: g=Graph({0:[0,1,1,2],1:[0,1]},loops=True,multiedges=True)\nsage: g.to_directed().multiple_arcs()\nFalse\nsage: g.to_directed().loops()\nFalse\nsage: g.to_undirected().multiple_edges()\nFalse\nsage: g.to_undirected().loops()\nTrue\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/716\n\n",
+    "closed_at": "2007-10-24T19:04:31Z",
     "created_at": "2007-09-20T20:07:16Z",
     "labels": [
         "component: combinatorics",

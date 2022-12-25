@@ -1,15 +1,16 @@
-# Issue 6354: [with patch, needs review] Advertise and improve sage -fixdoctest
+# Issue 6354: Advertise and improve sage -fixdoctest
 
 archive/issues_006354.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @rlmill\n\nKeywords: fix doctests\n\nAfter this patch, sage -fixdoctest handles multiline doctests,\nand use the line number info of sage -t to be more robust (handles\nmultiple doctests with the same expected output in the same file).\n\nBy the way, sage -advanced advertises sage -fixdoctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6354\n\n",
+    "closed_at": "2009-11-19T17:37:58Z",
     "created_at": "2009-06-18T05:51:15Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] Advertise and improve sage -fixdoctest",
+    "title": "Advertise and improve sage -fixdoctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6354",
     "user": "https://github.com/nthiery"

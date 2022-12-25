@@ -4,6 +4,7 @@ archive/issues_001574.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro @tornaria\n\nWhen applying a patch to a non `pyx|pxi|pxd` file (mwrank.cc in this case) and running `sage -b` odd things happen:\n\n```\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\nTouching a pyx file that the particular file depends upon (mwrank.pyx) in this case fixes the issue and everything is properly recompiled.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1574\n\n",
+    "closed_at": "2008-12-02T01:45:48Z",
     "created_at": "2007-12-20T12:14:49Z",
     "labels": [
         "component: distribution",

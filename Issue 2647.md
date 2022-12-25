@@ -1,15 +1,16 @@
-# Issue 2647: [with spkg; needs review] Fixed Debian support for linbox
+# Issue 2647: [with spkg; positive review] Fixed Debian support for linbox
 
 archive/issues_002647.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nApparently the debian support for linbox didn't make it into the 1.1.5 spkg whenever that was created.  Since the linbox spkg had a bunch of uncommitted changes, I've put the relevant files (with some fixes I needed to do anyway) in a new spkg; the only things changed from the old 1.1.5rc2.p4 spkg should be dist/ and spkg-debian:\n\nhttp://sage.math.washington.edu/home/tabbott/linbox-1.1.5rc2.p5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2647\n\n",
+    "closed_at": "2008-03-22T21:01:49Z",
     "created_at": "2008-03-22T16:55:32Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with spkg; needs review] Fixed Debian support for linbox",
+    "title": "[with spkg; positive review] Fixed Debian support for linbox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2647",
     "user": "https://github.com/timabbott"

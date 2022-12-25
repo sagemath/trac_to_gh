@@ -4,6 +4,7 @@ archive/issues_008035.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nKeywords: sagetex\n\nIn comment:21:ticket:7617, John Palmieri suggested that SageTeX detect version mismatches between the Python module (installed in Sage) and the LaTeX style file. We should implement this.\n\nOne difficulty is that people have lots of old sagetex.sty files around, and whatever mechanism we use would need to work with those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8035\n\n",
+    "closed_at": "2012-06-02T13:26:17Z",
     "created_at": "2010-01-22T00:49:53Z",
     "labels": [
         "component: packages: standard"

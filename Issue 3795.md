@@ -1,16 +1,17 @@
-# Issue 3795: increase coverage of sage/server/notebook/cell.py
+# Issue 3795: [with patch, with positive review] increase coverage of sage/server/notebook/cell.py
 
 archive/issues_003795.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3795\n\n",
+    "closed_at": "2008-08-11T08:19:25Z",
     "created_at": "2008-08-09T15:13:45Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "increase coverage of sage/server/notebook/cell.py",
+    "title": "[with patch, with positive review] increase coverage of sage/server/notebook/cell.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3795",
     "user": "https://github.com/mwhansen"

@@ -1,22 +1,25 @@
-# Issue 1951: reducation map modulo a number field prime ideal still not 100% done
+# Issue 1951: [with patch, positive review] reduction map modulo a number field prime ideal still not 100% done
 
 archive/issues_001951.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: P = [g[0] for g in K.factor_integer(5)]; P\n[Fractional ideal (-i - 2), Fractional ideal (2*i + 1)]\nsage: a = 1/(1+2*i)\nsage: K = [g.residue_field() for g in P]; K\n[Residue field of Fractional ideal (-i - 2), Residue field of Fractional ideal (2*i + 1)]\nsage: F = K[0]\nsage: a.valuation(P[0])\n0\nsage: F(i/7)\n4\nsage: F(a)\nTraceback (most recent call last):\n...\nZeroDivisionError: Inverse does not exist.\n```\n\nThe problem is that a in terms of a basis for the maximal order still has\nsome 5's in the denominator, even though a is P[0]-integral.  To fix this\nin general, one could:\n  \n1. Find an element b of the ring of integers that is 1 modulo P[0] and is 0 modulo all the other P[i] (using the not-implemented-right now CRT),\n\n2. Multiply a through by some power of b.\n\n3. Reduce.  \n\n4. Divide back through by the reduction of b.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1951\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field residue field reduction\n\nThis should work:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: P = [g[0] for g in K.factor_integer(5)]; P\n[Fractional ideal (-i - 2), Fractional ideal (2*i + 1)]\nsage: a = 1/(1+2*i)\nsage: K = [g.residue_field() for g in P]; K\n[Residue field of Fractional ideal (-i - 2), Residue field of Fractional ideal (2*i + 1)]\nsage: F = K[0]\nsage: a.valuation(P[0])\n0\nsage: F(i/7)\n4\nsage: F(a)\nTraceback (most recent call last):\n...\nZeroDivisionError: Inverse does not exist.\n```\n\nThe problem is that a in terms of a basis for the maximal order still has\nsome 5's in the denominator, even though a is P[0]-integral.  To fix this\nin general, one could:\n  \n1. Find an element b of the ring of integers that is 1 modulo P[0] and is 0 modulo all the other P[i] (using the not-implemented-right now CRT),\n\n2. Multiply a through by some power of b.\n\n3. Reduce.  \n\n4. Divide back through by the reduction of b.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1951\n\n",
+    "closed_at": "2008-09-20T22:24:23Z",
     "created_at": "2008-01-27T20:40:44Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "reducation map modulo a number field prime ideal still not 100% done",
+    "title": "[with patch, positive review] reduction map modulo a number field prime ideal still not 100% done",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1951",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
+
+Keywords: number field residue field reduction
 
 This should work:
 

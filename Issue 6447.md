@@ -1,16 +1,17 @@
-# Issue 6447: Add a <canvas> renderer for 3D plotting
+# Issue 6447: [with patch, positive review] Add a <canvas> renderer for 3D plotting
 
 archive/issues_006447.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @saliola @wdjoyner\n\nThis feature would add another backend to 3D plotting, in addition to Jmol and Tachyon, that would render the plot using the new HTML5 <canvas> element, which supports drawing arbitrary shapes to a section of a web page.\n\nThe idea was initially suggested in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/9e0ca32eb97d5757/d47d88b28d292512) on sage-devel.\n\nAlthough JavaScript is significantly slower than Java, a canvas backend is feasible and might provide a nice, compatible, alternative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6447\n\n",
+    "closed_at": "2009-08-30T07:26:00Z",
     "created_at": "2009-06-29T18:43:12Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Add a <canvas> renderer for 3D plotting",
+    "title": "[with patch, positive review] Add a <canvas> renderer for 3D plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6447",
     "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"

@@ -1,9 +1,10 @@
-# Issue 2507: Docstrings and Doctests for rings/quotient_ring_element.py
+# Issue 2507: [with patch; positive review] Docstrings and Doctests for rings/quotient_ring_element.py
 
 archive/issues_002507.json:
 ```json
 {
-    "body": "Assignee: failure\n\nKeywords: docstring, doctest\n\nCurrent coverage in Sage 2.10.3: SCORE quotient_ring_element.py: 3% (1 of 27)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2507\n\n",
+    "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nCurrent coverage in Sage 2.10.3: SCORE quotient_ring_element.py: 3% (1 of 27)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2507\n\n",
+    "closed_at": "2009-05-13T18:35:31Z",
     "created_at": "2008-03-13T17:47:37Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_002507.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Docstrings and Doctests for rings/quotient_ring_element.py",
+    "title": "[with patch; positive review] Docstrings and Doctests for rings/quotient_ring_element.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2507",
     "user": "https://github.com/cswiercz"
 }
 ```
-Assignee: failure
+Assignee: @cswiercz
 
 Keywords: docstring, doctest
 

@@ -4,6 +4,7 @@ archive/issues_002781.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently, it returns False, which makes a return value of False fairly worthless.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2781\n\n",
+    "closed_at": "2008-04-09T06:16:07Z",
     "created_at": "2008-04-02T21:45:36Z",
     "labels": [
         "component: calculus",

@@ -4,6 +4,7 @@ archive/issues_008828.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @pjbruin\n\nImplements Cremona and and Samir Siksek's algorithm for computing lower bounds on canonical heights, with Nook's extensions to number fields. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8828\n\n",
+    "closed_at": "2014-06-04T10:42:23Z",
     "created_at": "2010-04-30T06:44:34Z",
     "labels": [
         "component: elliptic curves"

@@ -1,15 +1,16 @@
-# Issue 5787: [with patch, needs review] Improve doctest coverage for sage/modular/hecke (continued)
+# Issue 5787: [with third patch, with positive review] Improve doctest coverage for sage/modular/hecke (continued)
 
 archive/issues_005787.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nKeywords: doctests\n\nThis is a continuation of #5736. The patch which I am about to upload contains more doctests and bugfixes for sage/modular/hecke. The main change this makes is in the methods for constructing elements of Hecke algebras: previously these accepted more or less arbitrary matrices as input (despite the fact that all Hecke algebras in Sage are supposed to be commutative). Similarly, any element of a full Hecke algebra could be coerced into the corresponding anemic algebra -- including the Hecke operators at primes dividing the level -- which is not great.\n\nI've also added an extra check into the !__mul!__ method of the MatrixMorphism class; what's the point of having morphism objects that remember their domain and codomain if one doesn't check compatibility when composing them?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5787\n\n",
+    "closed_at": "2009-05-11T08:28:35Z",
     "created_at": "2009-04-14T21:06:02Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] Improve doctest coverage for sage/modular/hecke (continued)",
+    "title": "[with third patch, with positive review] Improve doctest coverage for sage/modular/hecke (continued)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5787",
     "user": "https://github.com/loefflerd"

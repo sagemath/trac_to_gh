@@ -1,16 +1,17 @@
-# Issue 3789: [with patch, needs review] graphs(<tab>
+# Issue 3789: [with patch, positive review] graphs(<tab>
 
 archive/issues_003789.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  boothby\n\nNeeds to have documentation on orderly generation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3789\n\n",
+    "closed_at": "2008-08-09T00:43:57Z",
     "created_at": "2008-08-07T18:29:48Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] graphs(<tab>",
+    "title": "[with patch, positive review] graphs(<tab>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3789",
     "user": "https://github.com/rlmill"

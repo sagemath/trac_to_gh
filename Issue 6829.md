@@ -1,15 +1,16 @@
-# Issue 6829: Implement Manin symbols over number fields
+# Issue 6829: [with patch, positive review] Implement Manin symbols over number fields
 
 archive/issues_006829.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  mtaranes\n\nKeywords: modular manin symbols\n\nManin symbols over number fields (related to modular symbols) are used for computing modular forms over those fields.  An implementation valid for general number fields is in prepration by Maite Aranes.\n\nThis will be part of a larger project to implement modular forms over number fields in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6829\n\n",
+    "closed_at": "2009-09-23T01:20:05Z",
     "created_at": "2009-08-26T21:47:59Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Implement Manin symbols over number fields",
+    "title": "[with patch, positive review] Implement Manin symbols over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6829",
     "user": "https://github.com/JohnCremona"

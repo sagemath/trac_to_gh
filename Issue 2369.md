@@ -1,15 +1,17 @@
-# Issue 2369: clean up the Notebook HTML & CSS
+# Issue 2369: Fix all issues reported by the W3C Validator for Notebook HTML & CSS
 
 archive/issues_002369.json:
 ```json
 {
     "body": "Assignee: TimothyClemans\n\nCC:  @williamstein @jhpalmieri\n\nThis is critical to the success of the up-coming manipulate functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2369\n\n",
+    "closed_at": "2020-03-28T15:22:00Z",
     "created_at": "2008-03-02T17:16:05Z",
     "labels": [
-        "component: notebook"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "clean up the Notebook HTML & CSS",
+    "title": "Fix all issues reported by the W3C Validator for Notebook HTML & CSS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2369",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

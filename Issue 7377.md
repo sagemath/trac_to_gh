@@ -3,7 +3,8 @@
 archive/issues_007377.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin @saliola jpflori\n\nThis ticket is dependent on #6781, #7287.\n\nWith maxima-as-an-ecl-library and ecl accessible as a library, we can start interfacing with maxima via a binary library interface.\nThis should be more efficient and more robust, because expressions\ncan be transmitted in a much richer format than text and parsing does\nnot have to recognise error messages and questions (since communication does not go via STDIN/STDOUT anymore)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7377\n\n",
+    "body": "Assignee: @nbruin\n\nCC:  @burcin @saliola jpflori\n\nWith maxima-as-an-ecl-library and ecl accessible as a library, we can start interfacing with maxima via a binary library interface. This should be more efficient and more robust, because expressions can be transmitted in a much richer format than text and parsing does not have to recognise error messages and questions (since communication does not go via STDIN/STDOUT anymore).\n\nApplies cleanly to 4.7.alpha3.\n\nDepends on: #10766, #10773, #10743. #10818 desirable but not essential.\n\nApply:\n\n* [attachment:trac_7377-abstract-maxima_p2.patch]\n* [attachment:trac_7377-maximalib_p2.patch]\n* [attachment:trac_7377-fastcalculus_p2.patch]\n* [attachment:trac_7377-better-ask-error_p2.patch]\n* [attachment:trac_7377-split_and_refactor-p3.patch]\n* [attachment:trac_7377-lazy-maxlib.p2.patch]\n* [attachment:trac_7377-floatcast.patch]\n* [attachment:trac_7377-unicode_to_ecl-p1.patch]\n* [attachment:trac_7377-assumptions-p3.patch]\n* [attachment:trac_7377-doctests-p3.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7377\n\n",
+    "closed_at": "2011-04-26T09:05:15Z",
     "created_at": "2009-11-03T08:05:51Z",
     "labels": [
         "component: symbolics"
@@ -15,16 +16,28 @@ archive/issues_007377.json:
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: @burcin
+Assignee: @nbruin
 
 CC:  @burcin @saliola jpflori
 
-This ticket is dependent on #6781, #7287.
+With maxima-as-an-ecl-library and ecl accessible as a library, we can start interfacing with maxima via a binary library interface. This should be more efficient and more robust, because expressions can be transmitted in a much richer format than text and parsing does not have to recognise error messages and questions (since communication does not go via STDIN/STDOUT anymore).
 
-With maxima-as-an-ecl-library and ecl accessible as a library, we can start interfacing with maxima via a binary library interface.
-This should be more efficient and more robust, because expressions
-can be transmitted in a much richer format than text and parsing does
-not have to recognise error messages and questions (since communication does not go via STDIN/STDOUT anymore)
+Applies cleanly to 4.7.alpha3.
+
+Depends on: #10766, #10773, #10743. #10818 desirable but not essential.
+
+Apply:
+
+* [attachment:trac_7377-abstract-maxima_p2.patch]
+* [attachment:trac_7377-maximalib_p2.patch]
+* [attachment:trac_7377-fastcalculus_p2.patch]
+* [attachment:trac_7377-better-ask-error_p2.patch]
+* [attachment:trac_7377-split_and_refactor-p3.patch]
+* [attachment:trac_7377-lazy-maxlib.p2.patch]
+* [attachment:trac_7377-floatcast.patch]
+* [attachment:trac_7377-unicode_to_ecl-p1.patch]
+* [attachment:trac_7377-assumptions-p3.patch]
+* [attachment:trac_7377-doctests-p3.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7377
 

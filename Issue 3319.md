@@ -4,6 +4,7 @@ archive/issues_003319.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: NTL, linear algebra, GF(2)\n\nWrapping this should be straight forward (KDE calls it a \"Junior\" job) but would be nice for\n* completeness\n* correctness check/comparison for other implementations\n\nIssue created by migration from https://trac.sagemath.org/ticket/3319\n\n",
+    "closed_at": "2008-09-20T15:59:08Z",
     "created_at": "2008-05-28T12:38:39Z",
     "labels": [
         "component: linear algebra",

@@ -4,6 +4,7 @@ archive/issues_000472.json:
 ```json
 {
     "body": "Assignee: @jmbr\n\nTo build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/472\n\n",
+    "closed_at": "2007-08-29T21:13:57Z",
     "created_at": "2007-08-20T23:13:13Z",
     "labels": [
         "component: packages: standard",

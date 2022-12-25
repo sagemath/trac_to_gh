@@ -1,16 +1,17 @@
-# Issue 2283: the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element
+# Issue 2283: [with patch, positive review] the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element
 
 archive/issues_002283.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nIn this example the last print statement goes boom, but should work fine.\n\n```\nclass Foo:\n   def __rmul__(self, left):\n      return 'hello'\n\nH = Foo()\nprint int(3)*H\nprint 3*H\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2283\n\n",
+    "closed_at": "2008-02-28T06:14:01Z",
     "created_at": "2008-02-23T22:32:25Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element",
+    "title": "[with patch, positive review] the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2283",
     "user": "https://github.com/williamstein"

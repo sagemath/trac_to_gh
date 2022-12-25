@@ -1,16 +1,17 @@
-# Issue 4053: [with patch, needs review] more checking for graph6. sparse6 and dig6 formats
+# Issue 4053: [with patch, positive review] more checking for graph6. sparse6 and dig6 formats
 
 archive/issues_004053.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4053\n\n",
+    "closed_at": "2008-09-04T23:22:49Z",
     "created_at": "2008-09-03T20:09:28Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] more checking for graph6. sparse6 and dig6 formats",
+    "title": "[with patch, positive review] more checking for graph6. sparse6 and dig6 formats",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4053",
     "user": "https://github.com/rlmill"

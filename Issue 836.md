@@ -3,7 +3,8 @@
 archive/issues_000836.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries_dokchitser(15)\n```\n\nThis leads to\n\n```\n<type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/836\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries().dokchitser(15)\n```\n\nThis leads to\n\n```\n<type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/836\n\n",
+    "closed_at": "2007-11-03T20:26:55Z",
     "created_at": "2007-10-06T22:59:20Z",
     "labels": [
         "component: number theory",
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 ```
 sage: e = EllipticCurve([1,1,0,-63900,-1964465932632])
-sage: L = e.Lseries_dokchitser(15)
+sage: L = e.Lseries().dokchitser(15)
 ```
 
 This leads to

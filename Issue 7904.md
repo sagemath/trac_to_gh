@@ -4,10 +4,11 @@ archive/issues_007904.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nFrom the docstring : \nA graph is a Gallai tree if and only if it is connected and its `2`-connected components are all isomorphic to complete graphs or odd cycles.\n\nThis patch also slightly touches the function is_clique, which was unnecessarily copying the whole graph 2 times :\n* Firstly, using the subgraph method\n* Secondly, using the to_simple method\n\nIssue created by migration from https://trac.sagemath.org/ticket/7904\n\n",
+    "closed_at": "2010-06-29T16:46:57Z",
     "created_at": "2010-01-12T08:16:07Z",
     "labels": [
         "component: graph theory",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "is_gallai_tree",

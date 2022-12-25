@@ -1,16 +1,18 @@
-# Issue 4557: cos._fast_float_ returns math.sin
+# Issue 4557: [with patch, positive review] cos._fast_float_ returns math.sin
 
 archive/issues_004557.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThis is pretty embarrassing.  Apparently a copy-paste error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4557\n\n",
+    "closed_at": "2008-11-20T09:35:35Z",
     "created_at": "2008-11-19T22:22:36Z",
     "labels": [
         "component: calculus",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "cos._fast_float_ returns math.sin",
+    "title": "[with patch, positive review] cos._fast_float_ returns math.sin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4557",
     "user": "https://github.com/jasongrout"

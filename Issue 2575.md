@@ -1,9 +1,10 @@
-# Issue 2575: GAP doesn't compile with CC='ccache gcc'
+# Issue 2575: [with spkg, with positive review] GAP doesn't compile with CC='ccache gcc'
 
 archive/issues_002575.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ni'm using ccache to speed up compilation. this works very well for other packages, but the configure script of GAP seems to be have an error.\n\nenvironment variables:\n\n```\nCC=ccache gcc\nCXX=ccache g++\n```\n\nGAP message:\n\n```\nHost system\nuname -a:\nLinux edoras 2.6.15-51-686 #1 SMP PREEMPT Tue Feb 12 16:59:15 UTC 2008 i686 GNU/Linux\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nEs werden eingebaute Spezifikationen verwendet.\nZiel: i486-linux-gnu\nKonfiguriert mit: ../src/configure -v --enable-languages=c,c++,java,f95,objc,ada,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --program-suffix=-4.0 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-java-awt=gtk-default --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-4.0-1.4.2.0/jre --enable-mpfr --disable-werror --with-tune=pentium4 --enable-checking=release i486-linux-gnu\nThread-Modell: posix\ngcc-Version 4.0.3 (Ubuntu 4.0.3-1ubuntu5)\n****************************************************\nchecking build system type... i686-pc-linux-gnu\nchecking host system type... i686-pc-linux-gnu\nchecking target system type... i686-pc-linux-gnu\nchecking for gcc... ccache gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether ccache gcc accepts -g... yes\nchecking for ccache gcc option to accept ANSI C... none needed\nchecking whether make sets $(MAKE)... yes\nconfigure: creating ./config.status\nconfig.status: creating Makefile\nconfig.status: creating sysinfo.gap\nconfig.status: creating bin/gap.sh\nBuilding and installing gap-4.4.10\nmake[1]: Betrete Verzeichnis '/local/scratch/schilly/sage/spkg/build/gap-4.4.10.p2/src'\nif test ! -d bin;  then mkdir bin;  fi\nif test ! -d bin/i686-pc-linux-gnu-ccache;  then mkdir bin/i686-pc-linux-gnu-ccache;  fi\ncp cnf/configure.out bin/i686-pc-linux-gnu-ccache/configure\n( cd bin/i686-pc-linux-gnu-ccache ; CC='ccache gcc' ./configure --target=i686-pc-linux-gnu --prefix=/local/scratch/schilly/sage/local PREFIX=/local/scratch/schilly/sage/local CC=ccache gcc CXX=ccache g++ )\nconfigure: WARNING: you should use --build, --host, --target\nconfigure: WARNING: you should use --build, --host, --target\nconfigure: WARNING: invalid host type: g++  \nchecking for gcc-gcc... ccache\nchecking for C compiler default output file name... configure: error: C compiler cannot create executables\nSee `config.log' for more details.\nmake[1]: *** [bin/i686-pc-linux-gnu-ccache/Makefile] Fehler 77\nError building gap.\n```\n\nmy guess:\n\nconfigure script, line 2293: `BASECC=`basename ${CC}``\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2575\n\n",
+    "closed_at": "2008-09-20T20:28:48Z",
     "created_at": "2008-03-17T18:26:01Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_002575.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "GAP doesn't compile with CC='ccache gcc'",
+    "title": "[with spkg, with positive review] GAP doesn't compile with CC='ccache gcc'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2575",
     "user": "https://github.com/haraldschilly"

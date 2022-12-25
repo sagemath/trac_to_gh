@@ -1,16 +1,17 @@
-# Issue 1959: [with spkg] Solaris 9 fixes for rubiks
+# Issue 1959: [with spkg, positive review ] Solaris 9 fixes for rubiks
 
 archive/issues_001959.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc2/rubiks-20070912.p1.spkg\n\nbuilds fine on Solaris 9, OSX and Linux.\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/1959\n\n",
+    "closed_at": "2008-01-28T05:06:11Z",
     "created_at": "2008-01-28T04:37:36Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with spkg] Solaris 9 fixes for rubiks",
+    "title": "[with spkg, positive review ] Solaris 9 fixes for rubiks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1959",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

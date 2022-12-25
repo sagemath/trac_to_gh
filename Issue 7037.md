@@ -3,7 +3,8 @@
 archive/issues_007037.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nCC was set to the Sun C compiler. Despite thousands of lines of C code being built, libm4ri decides the Sun C compiler is broken:\n\n```\nchecking for style of include used by make... GNU\nchecking for gcc... /opt/xxxsunstudio12.1/bin/cc\nchecking for C compiler default output file name...\nconfigure: error: in `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/libm4ri-20090617/src':\nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nError configuring libm4ri\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7037\n\n",
+    "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021 \n\nCC was set to the Sun C compiler. Despite thousands of lines of C code being built, libm4ri decides the Sun C compiler is broken:\n\n```\nchecking for style of include used by make... GNU\nchecking for gcc... /opt/xxxsunstudio12.1/bin/cc\nchecking for C compiler default output file name...\nconfigure: error: in `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/libm4ri-20090617/src':\nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nError configuring libm4ri\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7037\n\n",
+    "closed_at": "2009-11-29T05:28:00Z",
     "created_at": "2009-09-27T15:40:28Z",
     "labels": [
         "component: build",
@@ -23,7 +24,7 @@ Using
 * Solaris 10 update 7 on SPARC
 * sage-4.1.2.alpha2
 * Sun Studio 12.1
-* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
+* An updated configure script to allow the Sun compiler to be used #7021 
 
 CC was set to the Sun C compiler. Despite thousands of lines of C code being built, libm4ri decides the Sun C compiler is broken:
 
@@ -36,6 +37,7 @@ configure: error: C compiler cannot create executables
 See `config.log' for more details.
 Error configuring libm4ri
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7037
 

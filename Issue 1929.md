@@ -1,9 +1,10 @@
-# Issue 1929: add more examples to qqbar.py
+# Issue 1929: [with patch, with positive review] add more examples to qqbar.py
 
 archive/issues_001929.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/5e650e35bd354c17#\n\n```\nWow!  That's all very impressive actually.   It would be great if you\ncould add the above examples to the tutorials for AA and QQbar (i.e.,\nthe tops of the relevant code files).   Nice.\n\n -- William \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1929\n\n",
+    "closed_at": "2008-01-27T01:57:24Z",
     "created_at": "2008-01-25T22:15:03Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_001929.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "add more examples to qqbar.py",
+    "title": "[with patch, with positive review] add more examples to qqbar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1929",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

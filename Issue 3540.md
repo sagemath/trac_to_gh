@@ -1,16 +1,17 @@
-# Issue 3540: [with patch, needs review] Augment messes up the ncols for flat matrices.
+# Issue 3540: [with patch, positive review] Augment messes up the ncols for flat matrices.
 
 archive/issues_003540.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), 0, 0, 0)\nsage: M\n[]\nsage: M.nrows()\n0\nsage: M.ncols()\n0\nsage: N = Matrix(GF(2), 0, 19, 0)\nsage: N\n[]\nsage: N.nrows()\n0\nsage: N.ncols()\n19\nsage: W = M.augment(N)\nsage: W\n[]\nsage: W.nrows()\n0\nsage: W.ncols()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3540\n\n",
+    "closed_at": "2008-07-03T02:53:08Z",
     "created_at": "2008-07-01T19:27:28Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] Augment messes up the ncols for flat matrices.",
+    "title": "[with patch, positive review] Augment messes up the ncols for flat matrices.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3540",
     "user": "https://github.com/rlmill"

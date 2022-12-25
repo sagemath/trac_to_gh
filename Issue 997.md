@@ -4,6 +4,7 @@ archive/issues_000997.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nA command like\n\n```\nfind . -type f | xargs touch\n```\nwhich will touch all files (without spaces) in all subdirectories\nmay be useful.\n\nSorry this ticket is somewhat vague.  The point is mainly that\n\"sage -br\" causes rebuilding everything too often, e.g., after\nextracting a binary, or always if your machine has a huge clock skew, e..g, if your machine things it is a few days before the\ntimestamps on a release that you just downloaded or installed. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/997\n\n",
+    "closed_at": "2007-10-29T07:24:44Z",
     "created_at": "2007-10-25T06:37:32Z",
     "labels": [
         "component: misc"

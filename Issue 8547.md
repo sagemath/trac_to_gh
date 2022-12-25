@@ -3,7 +3,8 @@
 archive/issues_008547.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nCC:  @jasongrout mhampton\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8547\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @jasongrout mhampton\n\nNOTE: After applying this patch(es), the following standard spkg can be completely deleted:\n    ghmm-20080813.p0.spkg\n\nThis patch provides a complete reimplementation of Hidden Markov Models from scratch in Sage.  It is now doctested and the tests should pass on all standard Sage platforms.   Note that that HMM code in sage-4.3.4 and earlier is *NOT* tested at all, can easily segfault in all kinds of cases, leaks huge amounts of memory, etc.  The new code shouldn't have those defects.  Plus we get to delete a standard spkg.   Moreover, this new code is much easier to modify and experiment with.  Performance is generally similar, sometimes better, and sometimes worse, than the old code. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8547\n\n",
+    "closed_at": "2010-04-16T18:43:45Z",
     "created_at": "2010-03-16T08:08:50Z",
     "labels": [
         "component: statistics"
@@ -15,10 +16,14 @@ archive/issues_008547.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: amhou
+Assignee: mhampton
 
 CC:  @jasongrout mhampton
 
+NOTE: After applying this patch(es), the following standard spkg can be completely deleted:
+    ghmm-20080813.p0.spkg
+
+This patch provides a complete reimplementation of Hidden Markov Models from scratch in Sage.  It is now doctested and the tests should pass on all standard Sage platforms.   Note that that HMM code in sage-4.3.4 and earlier is *NOT* tested at all, can easily segfault in all kinds of cases, leaks huge amounts of memory, etc.  The new code shouldn't have those defects.  Plus we get to delete a standard spkg.   Moreover, this new code is much easier to modify and experiment with.  Performance is generally similar, sometimes better, and sometimes worse, than the old code. 
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8547

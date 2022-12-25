@@ -1,22 +1,23 @@
-# Issue 4804: add latex output for ceiling, floor, and derivative functions
+# Issue 4804: [with patch, positive review] add latex output for ceiling, floor, and derivative functions
 
 archive/issues_004804.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis could look better:\n\n```\nsage: latex(ceil(x) + floor(x) + derivative(floor(x)))\n{{d}\\over{d\\,x}}\\,\\left \\lfloor x \\right \\rfloor + \\text{floor} \\left( x \\right) + \\text{ceil} \\left( x \\right)\n```\n\nNotice that floor and ceil do not have special latex support except strangely inside the derivative. Also, the derivative would be better written as a partial derivative, since that's what it is in Sage in general. \n\nAlso, this guy wrote to sage-support 3 or 4 times about this and was ignored:\n\n```\nDear all,\n\nI tried to reply my questions below to an existing thread (notation\nfor derivatives) but for some reason it didn't work. So I opened this\nnew one.\n\nI use the derivative function and want to get an output in latex\nstyle. At the moment the output looks quite good but imho it would be\nnicer if it uses the \"\\partial\" latex command. It is possible to\nimplement this? Further I use the floor and ceil functions. Would it\nbe possible to implement a latex output for these functions too?\n\nThanks,\nAndreas\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4804\n\n",
+    "body": "Assignee: @mwhansen\n\nThis could look better:\n\n```\nsage: latex(ceil(x) + floor(x) + derivative(floor(x)))\n{{d}\\over{d\\,x}}\\,\\left \\lfloor x \\right \\rfloor + \\text{floor} \\left( x \\right) + \\text{ceil} \\left( x \\right)\n```\n\nNotice that floor and ceil do not have special latex support except strangely inside the derivative. Also, the derivative would be better written as a partial derivative, since that's what it is in Sage in general. \n\nAlso, this guy wrote to sage-support 3 or 4 times about this and was ignored:\n\n```\nDear all,\n\nI tried to reply my questions below to an existing thread (notation\nfor derivatives) but for some reason it didn't work. So I opened this\nnew one.\n\nI use the derivative function and want to get an output in latex\nstyle. At the moment the output looks quite good but imho it would be\nnicer if it uses the \"\\partial\" latex command. It is possible to\nimplement this? Further I use the floor and ceil functions. Would it\nbe possible to implement a latex output for these functions too?\n\nThanks,\nAndreas\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4804\n\n",
+    "closed_at": "2009-01-12T01:21:05Z",
     "created_at": "2008-12-15T15:38:30Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add latex output for ceiling, floor, and derivative functions",
+    "title": "[with patch, positive review] add latex output for ceiling, floor, and derivative functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4804",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @burcin
+Assignee: @mwhansen
 
 This could look better:
 

@@ -1,15 +1,16 @@
-# Issue 3213: notebook -- Account Settings page for changing password and e-mail address
+# Issue 3213: [with patch, positive review] notebook -- Account Settings page for changing password and e-mail address
 
 archive/issues_003213.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3213\n\n",
+    "closed_at": "2008-05-17T20:25:24Z",
     "created_at": "2008-05-16T00:22:37Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- Account Settings page for changing password and e-mail address",
+    "title": "[with patch, positive review] notebook -- Account Settings page for changing password and e-mail address",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3213",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

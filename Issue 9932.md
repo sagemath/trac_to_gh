@@ -3,7 +3,8 @@
 archive/issues_009932.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n```\nR = BooleanPolynomialRing(5,'x')\ne = R.random_element()\nprint e\nprint e.lt()\nprint e.lt() in R  ## says false???\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9933\n\n",
+    "body": "Assignee: @malb\n\n```\n> R = BooleanPolynomialRing(5,'x')\n> e = R.random_element()\n> print e\n> print e.lt()\n> print e.lt() in R  ## says false???\n> }}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9933\n\n",
+    "closed_at": "2010-12-02T16:09:35Z",
     "created_at": "2010-09-17T13:57:20Z",
     "labels": [
         "component: commutative algebra",
@@ -20,12 +21,13 @@ archive/issues_009932.json:
 Assignee: @malb
 
 ```
-R = BooleanPolynomialRing(5,'x')
-e = R.random_element()
-print e
-print e.lt()
-print e.lt() in R  ## says false???
-```
+> R = BooleanPolynomialRing(5,'x')
+> e = R.random_element()
+> print e
+> print e.lt()
+> print e.lt() in R  ## says false???
+> }}}
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9933
 

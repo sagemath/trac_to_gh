@@ -1,9 +1,10 @@
-# Issue 5278: On modern fedora 64 installs, sage exists frequently when omalloc things there is no memory left
+# Issue 5278: [with spkg, needs review] On modern fedora 64 installs, sage exits frequently; python thinks it ran out of memory (issue1608818 in Python's bug tracker)
 
 archive/issues_005278.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis is show-stopper bug for using Sage on any modern install of Fedora.  It was discussed a lot in sage-devel.\n\nTo replicate this issue, install Sage on fedora 64-bit and run a doctest a few times.  Every so often (maybe 20% chance) it will exit with this error:\n\n```\nerror: no more memory\nSystem 0k:0k Appl 0k/0k Malloc 0k/0k Valloc 0k/0k Pages 0/0 Regions 0:0\n```\n\nTracing this through with print statements I found that this happens around line 370 of singular.spkg's omalloc/omAllocSystem.c (something similar was posted to sage-devel):\n\n```\nvoid* omAllocFromSystem(size_t size)\n{ \n  void* ptr;\n\n  ptr = OM_MALLOC_FROM_SYSTEM(size);\n  if (ptr == NULL)\n  { \n    OM_MEMORY_LOW_HOOK();\n    ptr = OM_MALLOC_FROM_SYSTEM(size);\n    if (ptr == NULL)\n         BOOM (crash handler called!)\n```\n\nThe first thing that is suspicious is that OM_MALLOC_FROM_SYSTEM is called, fails, and then is called again... for now reason.  That is very hackish code.  Tracing that through it seemed to me that OM_MALLOC_FROM_SYSTEM should just be the system malloc.\nTo test that theory I modified the above code as follows:\nvoid* omAllocFromSystem(size_t size)\n{ \n  void* ptr;\n\n  ptr = OM_MALLOC_FROM_SYSTEM(size);\n  if (ptr == NULL)\n  { \n    OM_MEMORY_LOW_HOOK();\n    ptr = OM_MALLOC_FROM_SYSTEM(size);\n    if (ptr == NULL)\n       ptr = malloc(size);\n       if (ptr == NULL)\n         BOOM (crash handler called!)\n}}}\n\nAfter making that change, the problem vanishes (for me) and doctesting works fine again, at least for me.  I haven't tested doctesting the whole tree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5278\n\n",
+    "body": "Assignee: mabshoff\n\nThis is show-stopper bug for using Sage on any modern install of Fedora.  It was discussed a lot in sage-devel.\n\nTo replicate this issue, install Sage on fedora 64-bit and run a doctest a few times.  Every so often (maybe 20% chance) it will exit with this error:\n\n```\nerror: no more memory\nSystem 0k:0k Appl 0k/0k Malloc 0k/0k Valloc 0k/0k Pages 0/0 Regions 0:0\n```\n\nTracing this through with print statements I found that this happens around line 370 of singular.spkg's omalloc/omAllocSystem.c (something similar was posted to sage-devel):\n\n```\nvoid* omAllocFromSystem(size_t size)\n{ \n  void* ptr;\n\n  ptr = OM_MALLOC_FROM_SYSTEM(size);\n  if (ptr == NULL)\n  { \n    OM_MEMORY_LOW_HOOK();\n    ptr = OM_MALLOC_FROM_SYSTEM(size);\n    if (ptr == NULL)\n         BOOM (crash handler called!)\n```\n\nThe first thing that is suspicious is that OM_MALLOC_FROM_SYSTEM is called, fails, and then is called again... for now reason.  That is very hackish code.  Tracing that through it seemed to me that OM_MALLOC_FROM_SYSTEM should just be the system malloc.\nTo test that theory I modified the above code as follows:\n\n```\nvoid* omAllocFromSystem(size_t size)\n{ \n  void* ptr;\n\n  ptr = OM_MALLOC_FROM_SYSTEM(size);\n  if (ptr == NULL)\n  { \n    OM_MEMORY_LOW_HOOK();\n    ptr = OM_MALLOC_FROM_SYSTEM(size);\n    if (ptr == NULL)\n       ptr = malloc(size);\n       if (ptr == NULL)\n         BOOM (crash handler called!)\n```\n\nAfter making that change, the problem vanishes (for me) and doctesting works fine again, at least for me.  I haven't tested doctesting the whole tree. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5278\n\n",
+    "closed_at": "2009-02-24T22:16:33Z",
     "created_at": "2009-02-15T18:35:51Z",
     "labels": [
         "component: misc",
@@ -11,13 +12,13 @@ archive/issues_005278.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "On modern fedora 64 installs, sage exists frequently when omalloc things there is no memory left",
+    "title": "[with spkg, needs review] On modern fedora 64 installs, sage exits frequently; python thinks it ran out of memory (issue1608818 in Python's bug tracker)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5278",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 This is show-stopper bug for using Sage on any modern install of Fedora.  It was discussed a lot in sage-devel.
 
@@ -46,6 +47,8 @@ void* omAllocFromSystem(size_t size)
 
 The first thing that is suspicious is that OM_MALLOC_FROM_SYSTEM is called, fails, and then is called again... for now reason.  That is very hackish code.  Tracing that through it seemed to me that OM_MALLOC_FROM_SYSTEM should just be the system malloc.
 To test that theory I modified the above code as follows:
+
+```
 void* omAllocFromSystem(size_t size)
 { 
   void* ptr;
@@ -59,9 +62,9 @@ void* omAllocFromSystem(size_t size)
        ptr = malloc(size);
        if (ptr == NULL)
          BOOM (crash handler called!)
-}}}
+```
 
-After making that change, the problem vanishes (for me) and doctesting works fine again, at least for me.  I haven't tested doctesting the whole tree.
+After making that change, the problem vanishes (for me) and doctesting works fine again, at least for me.  I haven't tested doctesting the whole tree. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5278
 

@@ -3,7 +3,7 @@
 archive/issues_006830.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @rharron\n\nKeywords: ideal, hecke\n\nAdded code for ideals of a Hecke algebra.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6830\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @rharron\n\nKeywords: ideal, hecke\n\nAdded code for ideals of a Hecke algebra. This patch depends on the basis of a Hecke algebra code from ticket #6768 (so ignore stuff about Hecke bases).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6830\n\n",
     "created_at": "2009-08-26T22:20:44Z",
     "labels": [
         "component: modular forms"
@@ -20,7 +20,7 @@ CC:  @rharron
 
 Keywords: ideal, hecke
 
-Added code for ideals of a Hecke algebra.
+Added code for ideals of a Hecke algebra. This patch depends on the basis of a Hecke algebra code from ticket #6768 (so ignore stuff about Hecke bases).
 
 Issue created by migration from https://trac.sagemath.org/ticket/6830
 

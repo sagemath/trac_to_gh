@@ -1,16 +1,17 @@
-# Issue 6407: Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm
+# Issue 6407: [with patch, positive review] Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm
 
 archive/issues_006407.json:
 ```json
 {
     "body": "Assignee: @unzvfu\n\nKeywords: formal group elliptic curve\n\nCurrently `EllipticCurveFormalGroup.mult_by_n()` is implemented simply by applying the group law to itself *n* times (except when working over a field of characteristic zero, in which case a fast algorithm is used).  This linear algorithm should be replaced with the logarithmic double-and-add algorithm (i.e. the additive version of the standard square-and-multiply algorithm).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6407\n\n",
+    "closed_at": "2009-07-23T08:18:24Z",
     "created_at": "2009-06-25T14:39:58Z",
     "labels": [
         "component: performance",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm",
+    "title": "[with patch, positive review] Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6407",
     "user": "https://github.com/unzvfu"

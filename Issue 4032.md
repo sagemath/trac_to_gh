@@ -1,16 +1,17 @@
-# Issue 4032: [with spkg, needs review] Add x86 Solaris build support for libSingular
+# Issue 4032: [with spkg, positive review] Add x86 Solaris build support for libSingular
 
 archive/issues_004032.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha4/singular-3-0-4-4-20080711.p1.spkg\n\nfixes three issues:\n\n* remove non-POSIX behavior of tail in spkg-install\n* add options to build libsingular on x86 Solaris\n* work around problem when installing libsingular headers when /usr/bin/install is not installed\n\nIssue created by migration from https://trac.sagemath.org/ticket/4032\n\n",
+    "closed_at": "2008-09-01T10:30:40Z",
     "created_at": "2008-09-01T09:28:07Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] Add x86 Solaris build support for libSingular",
+    "title": "[with spkg, positive review] Add x86 Solaris build support for libSingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4032",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

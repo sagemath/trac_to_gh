@@ -1,16 +1,16 @@
-# Issue 5306: More number field ideal utilities
+# Issue 5306: [with new patch, with positive review] More number field ideal utilities
 
 archive/issues_005306.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @loefflerd mtaranes\n\nFollowing #4688 which wrapped the pari functions ideallog and idealstar, we need to provide functions which access these cleanly from Sage's NumberField and NumberFieldFractionalIdeal classes.\n\nMaite Aranes and John Cremona are working on this and will post a patch based on 3.3 + #4688.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5306\n\n",
+    "closed_at": "2009-04-09T10:00:52Z",
     "created_at": "2009-02-18T17:11:34Z",
     "labels": [
-        "component: number theory",
-        "minor"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "More number field ideal utilities",
+    "title": "[with new patch, with positive review] More number field ideal utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5306",
     "user": "https://github.com/JohnCremona"

@@ -3,7 +3,8 @@
 archive/issues_008188.json:
 ```json
 {
-    "body": "Assignee: Kwankyu Lee\n\nA few enhancements of linear codes functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8188\n\n",
+    "body": "Assignee: @kwankyu\n\nA few enhancements of linear codes functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8188\n\n",
+    "closed_at": "2010-02-11T14:53:27Z",
     "created_at": "2010-02-05T04:01:13Z",
     "labels": [
         "component: coding theory",
@@ -16,7 +17,7 @@ archive/issues_008188.json:
     "user": "https://github.com/kwankyu"
 }
 ```
-Assignee: Kwankyu Lee
+Assignee: @kwankyu
 
 A few enhancements of linear codes functionality.
 

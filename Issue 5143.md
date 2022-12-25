@@ -1,21 +1,23 @@
-# Issue 5143: shift-enter should save and exit tinyMCE
+# Issue 5143: [with patch, positive review] shift-enter should save and exit tinyMCE; new font formatting buttons
 
 archive/issues_005143.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis would be more consistent with calculation cells.\n\nReferences for developement:\n\nIt looks like we might be able to do this with the current key handler attaching an event to the tinymce instance that calls the triggerSave tinyMCE trigger: http://wiki.moxiecode.com/index.php/TinyMCE:Functions#tinyMCE.triggerSave\n\nAlso, see the bottom of the following page for a way to get tinyMCE to associate an event with a keypress:\nhttp://tinymce.moxiecode.com/punbb/viewtopic.php?id=1321\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5143\n\n",
+    "body": "Assignee: @jasongrout\n\nThis would be more consistent with calculation cells.\n\nReferences for developement:\n\nIt looks like we might be able to do this with the current key handler attaching an event to the tinymce instance that calls the triggerSave tinyMCE trigger: http://wiki.moxiecode.com/index.php/TinyMCE:Functions#tinyMCE.triggerSave\n\nAlso, see the bottom of the following page for a way to get tinyMCE to associate an event with a keypress:\nhttp://tinymce.moxiecode.com/punbb/viewtopic.php?id=1321\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5143\n\n",
+    "closed_at": "2009-02-04T01:17:07Z",
     "created_at": "2009-01-30T23:11:30Z",
     "labels": [
-        "component: notebook"
+        "component: notebook",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "shift-enter should save and exit tinyMCE",
+    "title": "[with patch, positive review] shift-enter should save and exit tinyMCE; new font formatting buttons",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5143",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 This would be more consistent with calculation cells.
 

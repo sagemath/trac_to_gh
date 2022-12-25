@@ -1,15 +1,16 @@
-# Issue 5876: [with patch, needs review] Vast speedup in P1List construction
+# Issue 5876: [with patch, positive review] Vast speedup in P1List construction
 
 archive/issues_005876.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  georgsweber mtaranes @williamstein\n\nKeywords: modular manin symbols\n\nThe P1List() constructor for Manin symbols (elements of `P^1(ZZ/NZZ)` was rather inefficient.  It constructed vastly too many symbols, normalised them all and then deleted duplicates.\n\nThis is quite unnecessary since it is easy to generate the list with no duplicates (and with simpler code).\n\nAs reported on sage-nt:\n\nBefore (3.4.1):\n\n```\nsage: time P1List(100000)\nCPU times: user 3.52 s, sys: 0.03 s, total: 3.55 s\nWall time: 3.55 s\nThe projective line over the integers modulo 100000\nsage: time P1List(1000000)\nCPU times: user 129.11 s, sys: 0.64 s, total: 129.75 s\nWall time: 131.96 s\nThe projective line over the integers modulo 1000000\n```\n\nAfter:\n\n```\nsage: time P1List(100000)\nCPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s\nWall time: 0.42 s\nThe projective line over the integers modulo 100000\nsage: time P1List(1000000)\nCPU times: user 8.33 s, sys: 0.12 s, total: 8.45 s\nWall time: 8.80 s\nThe projective line over the integers modulo 1000000\n```\n\nThe patch does this for both versions `p1list_int()` and `p1list_llong()`.\n\nI think similar speedups are possible in the p1_normalise functions which would be significant in practice, and will try to get to that tomorrow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5876\n\n",
+    "closed_at": "2009-04-24T02:32:11Z",
     "created_at": "2009-04-23T16:23:46Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] Vast speedup in P1List construction",
+    "title": "[with patch, positive review] Vast speedup in P1List construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5876",
     "user": "https://github.com/JohnCremona"

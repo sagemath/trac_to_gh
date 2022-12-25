@@ -3,7 +3,8 @@
 archive/issues_008579.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314\n\nThis patch adds the categories Magmas() and AdditiveMagmas()\n(sets with a plain binary operation * or +).\n\nIt factors out some of the code previously in Semigroups / CommutativeAdditiveSemigroups.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8579\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @roed314\n\nKeywords: categories, magma\n\nThis patch adds the categories Magmas() and AdditiveMagmas()\n(sets with a plain binary operation * or +).\n\nIt factors out some of the code previously in Semigroups / CommutativeAdditiveSemigroups.\n\nThis is used by the updated #7555 to make it more general.\n\nDepends trivially on #7880.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8579\n\n",
+    "closed_at": "2010-04-15T20:14:02Z",
     "created_at": "2010-03-22T16:33:34Z",
     "labels": [
         "component: categories",
@@ -20,10 +21,16 @@ Assignee: @nthiery
 
 CC:  sage-combinat @roed314
 
+Keywords: categories, magma
+
 This patch adds the categories Magmas() and AdditiveMagmas()
 (sets with a plain binary operation * or +).
 
 It factors out some of the code previously in Semigroups / CommutativeAdditiveSemigroups.
+
+This is used by the updated #7555 to make it more general.
+
+Depends trivially on #7880.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8579
 

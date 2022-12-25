@@ -3,10 +3,11 @@
 archive/issues_009634.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman jpflori @rwst\n\n```\nsage: var('k')\nk \nsage: binomial(x,3)\n1/6*(x - 2)*(x - 1)*x\nsage: binomial(3,k)\n---------------------------------------------------------------------------\nTypeError: Either m or x-m must be an integer \n```\n\nFrom kcrisman:\nIs this a bug?  I would say yes, because\n\n```\nsage: binomial(x,k)\nbinomial(x, k)\n```\nworks, but maybe we want to have it be a specific integer if the top\nnumber is given?  Any input?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9634\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman jpflori @rwst\n\n```\nsage: var('k')\nk \nsage: binomial(x,3)\n1/6*(x - 2)*(x - 1)*x\nsage: binomial(3,k)\n---------------------------------------------------------------------------\nTypeError: Either m or x-m must be an integer \n```\n\nThis is a bug since\n\n```\nsage: binomial(x,k)\nbinomial(x, k)\n```\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9634\n\n",
+    "closed_at": "2014-02-22T06:45:43Z",
     "created_at": "2010-07-29T07:29:28Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
@@ -16,7 +17,7 @@ archive/issues_009634.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/Henryk.Trappmann"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  @kcrisman jpflori @rwst
 
@@ -30,15 +31,13 @@ sage: binomial(3,k)
 TypeError: Either m or x-m must be an integer 
 ```
 
-From kcrisman:
-Is this a bug?  I would say yes, because
+This is a bug since
 
 ```
 sage: binomial(x,k)
 binomial(x, k)
 ```
-works, but maybe we want to have it be a specific integer if the top
-number is given?  Any input?
+works.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9634
 

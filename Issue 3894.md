@@ -1,9 +1,10 @@
-# Issue 3894: [with patch, needs review] in tutorial, live version, triple dots are not visible
+# Issue 3894: [with patch, positive review] in tutorial, live version, triple dots are not visible
 
 archive/issues_003894.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: tutorial\n\nIn examples like this in the tutorial:\n\n```\nsage: def is_even(n):\n...       return n%2 == 0\n```\nthe three dots are not actually visible in the 'live' version of the documentation.  So change the documentation to try to reflect this.  (It would be better to have text printed conditionally, depending on whether it was for the live version, the static version, or the dvi/pdf version, but I don't know how to do that.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3894\n\n",
+    "closed_at": "2008-09-16T03:50:55Z",
     "created_at": "2008-08-19T03:25:20Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_003894.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] in tutorial, live version, triple dots are not visible",
+    "title": "[with patch, positive review] in tutorial, live version, triple dots are not visible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3894",
     "user": "https://github.com/jhpalmieri"

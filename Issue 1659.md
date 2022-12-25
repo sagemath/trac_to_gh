@@ -4,6 +4,7 @@ archive/issues_001659.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nrishi_: I use scipy very often. To use complex number I have to use the following statement:  sage: a=numpy.complex128(complex(2+3*I)). Is it not possible to avoid 2 conversions?\n[12:29pm] mabshoff: hungry? *ducks*\n[12:29pm] ondrej: mabshoff - like a small dog?\n[12:29pm] mabshoff: yes. a young dog.\n[12:29pm] wstein-1658: We could add a method (2+3*I).complex128().\n[12:29pm] wstein-1658: Want that?\n[12:29pm] wstein-1658: Is I symbolic, by the way?\n[12:29pm] rishi_: yes\n[12:30pm] wstein-1658: Do you want to avoid two conversions because of speed or code cleaness?\n[12:30pm] wstein-1658: Probably clean-ness.\n[12:30pm] rishi_: cleaness\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1659\n\n",
+    "closed_at": "2010-08-26T20:16:48Z",
     "created_at": "2008-01-02T19:33:21Z",
     "labels": [
         "component: coercion"

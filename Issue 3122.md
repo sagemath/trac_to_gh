@@ -1,23 +1,24 @@
-# Issue 3122: after make install, sage tries to write in /usr/local
+# Issue 3122: [with patch, positive review] after make install, sage tries to write in /usr/local
 
 archive/issues_003122.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nI compiled sage-3.0 on the machines of my lab, and installed it under /usr/local/sage-3.0 with make install DESTDIR=/usr/local/sage-3.0.\nI am the Unix owner of the files under /usr/local/sage-3.0. When I run sage myself, it is ok. However, when other people in my lab run it, they get:\n\n```\n< bissogae@hector:~$ sage\n< ----------------------------------------------------------------------\n< | SAGE Version 3.0, Release Date: 2008-04-23                         |\n< | Type notebook() for the GUI, and license() for information.        |\n< ----------------------------------------------------------------------\n< Traceback (most recent call last):\n<   File \"/usr/local/sage-3.0/sage/local/bin/sage-location\", line 66, in <module>\n<     t, R = install_moved()\n<   File \"/usr/local/sage-3.0/sage/local/bin/sage-location\", line 11, in install_moved\n<     O = open(location_file,'w')\n< IOError: [Errno 13] Permission denied: '/usr/local/sage-3.0/sage/local/lib/sage-current-location.txt'\n<\n< sage:\n```\nI'm not sure it is ok that SAGE writes in /usr/local...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3122\n\n",
+    "body": "Assignee: mabshoff\n\nI compiled sage-3.0 on the machines of my lab, and installed it under /usr/local/sage-3.0 with make install DESTDIR=/usr/local/sage-3.0.\nI am the Unix owner of the files under /usr/local/sage-3.0. When I run sage myself, it is ok. However, when other people in my lab run it, they get:\n\n```\n< bissogae@hector:~$ sage\n< ----------------------------------------------------------------------\n< | SAGE Version 3.0, Release Date: 2008-04-23                         |\n< | Type notebook() for the GUI, and license() for information.        |\n< ----------------------------------------------------------------------\n< Traceback (most recent call last):\n<   File \"/usr/local/sage-3.0/sage/local/bin/sage-location\", line 66, in <module>\n<     t, R = install_moved()\n<   File \"/usr/local/sage-3.0/sage/local/bin/sage-location\", line 11, in install_moved\n<     O = open(location_file,'w')\n< IOError: [Errno 13] Permission denied: '/usr/local/sage-3.0/sage/local/lib/sage-current-location.txt'\n<\n< sage:\n```\nI'm not sure it is ok that SAGE writes in /usr/local...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3122\n\n",
+    "closed_at": "2008-12-01T08:54:34Z",
     "created_at": "2008-05-07T12:46:05Z",
     "labels": [
         "component: relocation",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "after make install, sage tries to write in /usr/local",
+    "title": "[with patch, positive review] after make install, sage tries to write in /usr/local",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3122",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 I compiled sage-3.0 on the machines of my lab, and installed it under /usr/local/sage-3.0 with make install DESTDIR=/usr/local/sage-3.0.
 I am the Unix owner of the files under /usr/local/sage-3.0. When I run sage myself, it is ok. However, when other people in my lab run it, they get:

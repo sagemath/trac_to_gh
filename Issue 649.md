@@ -1,24 +1,31 @@
-# Issue 649: symbolic matrices need simplify_* methods
+# Issue 649: [with patch, positive review] create a special symbolic matrix data type
 
 archive/issues_000649.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/649\n\n",
+    "body": "Assignee: @mwhansen\n\nIt should have:\n* simplify_* methods\n* underlying data should be a pointer to a maxima matrix object, so that matrix operations are very fast.\n\n\nThis should also resolve a bug reported by Kate Minola on 20070914 with doctesting \n\n     sage -t devel/sage-main/sage/plot/plot3d/transform.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/649\n\n",
+    "closed_at": "2007-12-22T18:37:41Z",
     "created_at": "2007-09-13T18:44:26Z",
     "labels": [
-        "component: coding theory",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "symbolic matrices need simplify_* methods",
+    "title": "[with patch, positive review] create a special symbolic matrix data type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/649",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
+
+It should have:
+* simplify_* methods
+* underlying data should be a pointer to a maxima matrix object, so that matrix operations are very fast.
 
 
+This should also resolve a bug reported by Kate Minola on 20070914 with doctesting 
+
+     sage -t devel/sage-main/sage/plot/plot3d/transform.pyx
 
 Issue created by migration from https://trac.sagemath.org/ticket/649
 

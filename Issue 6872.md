@@ -1,9 +1,10 @@
-# Issue 6872: #6596 follow-up: typo in docstring
+# Issue 6872: [with patch, positive review] #6596 follow-up: typo in docstring
 
 archive/issues_006872.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @malb\n\nThis is a follow-up to #6596 to fix a typo introduced in a docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6872\n\n",
+    "closed_at": "2009-09-03T09:14:37Z",
     "created_at": "2009-09-03T05:28:35Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006872.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "#6596 follow-up: typo in docstring",
+    "title": "[with patch, positive review] #6596 follow-up: typo in docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6872",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

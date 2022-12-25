@@ -1,9 +1,10 @@
-# Issue 3787: make ATLAS use extended cpuid
+# Issue 3787: [with spkg, positive review] make ATLAS use extended cpuid
 
 archive/issues_003787.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  cwitty @JohnCremona\n\n```\n[7:14pm] cwitty: 1) My spiffy new Xeon-branded core 2 quad computer is\nvery slow at compiling ATLAS.\n[7:14pm] mabshoff: mhhh, how long?\n[7:15pm] cwitty: I think ATLAS doesn't support the extended cpuid.\n[7:15pm] cwitty: About 2 hours.\n[7:15pm] mabshoff: On an Itanium 2 with loads of memory it takes about\n3 hours with loads of cache.\n[7:15pm] mabshoff: Can you check the ARCH in the makefile?\n[7:16pm] cwitty: PIII64SSE3\n[7:17pm] mabshoff: Ok, then it is identified. We might not have tuning\ninfo.\n[7:18pm] mabshoff: Let me check in a little while, but the compile\ntime depends on the L2 size.\n[7:18pm] cwitty: Umm... Pentium 3?  I'm pretty sure it's not a pentium\n3.\n[7:18pm] mabshoff: Oops\n[7:18pm] mabshoff: Yeah, you are right.\n[7:18pm] mabshoff: ATLAS uses cpuid, not extended cpuid.\n[7:18pm] mabshoff: I am not sure if 3.8.2 fixes that, but I can patch\nit in case it does not.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3787\n\n",
+    "closed_at": "2009-01-02T21:54:17Z",
     "created_at": "2008-08-07T03:02:05Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003787.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "make ATLAS use extended cpuid",
+    "title": "[with spkg, positive review] make ATLAS use extended cpuid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3787",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,15 +1,16 @@
-# Issue 1201: add gramm-schmidt to sage
+# Issue 1201: [with patch, with positive review] add gramm-schmidt to sage
 
 archive/issues_001201.json:
 ```json
 {
     "body": "Assignee: was*\n\nAdd function to do gramm schmidt orthogonalization and also to verify the LLL criterion to Sage.\n\nNOTE: I have mostly done this.  This trac is just so I have a place to submit a patch.  So you shouldn't do this :-).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1201\n\n",
+    "closed_at": "2007-12-02T05:54:22Z",
     "created_at": "2007-11-18T21:50:48Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "add gramm-schmidt to sage",
+    "title": "[with patch, with positive review] add gramm-schmidt to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1201",
     "user": "https://github.com/williamstein"

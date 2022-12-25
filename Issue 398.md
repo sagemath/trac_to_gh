@@ -1,16 +1,17 @@
-# Issue 398: Fixing some of David Joyner's desolvers code
+# Issue 398: [merged] Fixing some of David Joyner's desolvers code
 
 archive/issues_000398.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: ode, desolve, maxima\n\nJust some basic work on getting the desolvers.py code to work in the calculus package.   I hope to revamp this more thoroughly, comments are welcome. - Marshall Hampton\n\nIssue created by migration from https://trac.sagemath.org/ticket/398\n\n",
+    "closed_at": "2008-01-26T15:42:55Z",
     "created_at": "2007-07-02T20:41:54Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Fixing some of David Joyner's desolvers code",
+    "title": "[merged] Fixing some of David Joyner's desolvers code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/398",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

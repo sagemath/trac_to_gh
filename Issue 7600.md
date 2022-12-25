@@ -3,7 +3,8 @@
 archive/issues_007600.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  kevin.stueve\n\nAs the title says, this patch implements Graph.vertex_cover.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7600\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  kevin.stueve\n\nAs the title says, this patch implements Graph.vertex_cover.\n\n\nYou could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7600\n\n",
+    "closed_at": "2009-12-19T19:59:11Z",
     "created_at": "2009-12-04T07:49:59Z",
     "labels": [
         "component: graph theory"
@@ -20,6 +21,9 @@ Assignee: @rlmill
 CC:  kevin.stueve
 
 As the title says, this patch implements Graph.vertex_cover.
+
+
+You could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7600
 

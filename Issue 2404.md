@@ -1,9 +1,10 @@
-# Issue 2404: subs_expr claims to take a dictionary, but doesn't
+# Issue 2404: [with patch, positive review] subs_expr claims to take a dictionary, but doesn't
 
 archive/issues_002404.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: calculus, substitution, subs_expr\n\nThe docstring for subs_expr (in calculus.py) says:\n\n> Given a dictionary of key:value pairs, substitute all occurences of key for value in self.\n\n\n...but the function does not accept a dictionary:\n\n```\ndef subs_expr(self, *equations):\n```\n\nIt'll take an arbitrary number of regular parameters (which must be SymbolicEquations), but not a dictionary.\n\nI tried to modify the function to something like the following, but couldn't get it to work. Someone familiar with this code should have no problem implementing it correctly:\n\n```\ndef subs_expr(self, *equations, **equationsdict):\n  for x in equations:\n    if not isinstance(x, SymbolicEquation):\n      raise TypeError, \"each expression must be an equation\"\n\n  R = self.parent()\n  v = ','.join(['%s=%s'%(x.lhs()._maxima_init_(), x.rhs()._maxima_init_()) \\\n                    for x in equations])\n  v = v + ','.join(['%s=%s' % (key._maxima_init_(), \\\n    equationsdict[key]._maxima_init_()) for key in equationsdict.keys()]\n  return R(self._maxima_().subst(v))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2404\n\n",
+    "closed_at": "2009-01-28T15:17:27Z",
     "created_at": "2008-03-06T09:49:43Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_002404.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "subs_expr claims to take a dictionary, but doesn't",
+    "title": "[with patch, positive review] subs_expr claims to take a dictionary, but doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2404",
     "user": "https://github.com/dandrake"

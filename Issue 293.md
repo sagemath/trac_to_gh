@@ -3,10 +3,12 @@
 archive/issues_000293.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  dmharvey@math.harvard.edu\n\nIt appears that `FAST_SEQ_UNSAFE` creates a new reference to the list but never releases it.\n\nIt might be because `PySequence_Fast` returns a new reference, but `PySequence_Fast_ITEMS` doesn't release it.\n\nSee also\n\nhttp://docs.python.org/api/sequence.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/293\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  dmharvey@math.harvard.edu\n\nIt appears that `FAST_SEQ_UNSAFE` creates a new reference to the list but never releases it.\n\nIt might be because `PySequence_Fast` returns a new reference, but `PySequence_Fast_ITEMS` doesn't release it.\n\nSee also\n\nhttp://docs.python.org/api/sequence.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/293\n\n",
+    "closed_at": "2007-08-19T07:54:24Z",
     "created_at": "2007-02-24T16:43:20Z",
     "labels": [
         "component: basic arithmetic",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
@@ -16,7 +18,7 @@ archive/issues_000293.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 CC:  dmharvey@math.harvard.edu
 

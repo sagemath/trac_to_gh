@@ -1,16 +1,17 @@
-# Issue 1247: cremona-20071116.p0.spkg fails to build on Arch linux, 32bit linux, gcc-4.2.2
+# Issue 1247: cremona-20071116.p0.spkg fails to build with gcc 4.2.x
 
 archive/issues_001247.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n Andrzej Giniewicz reported:\n\n```\n not counting plenty (281) warnings in file curvesort.cc (about\ndeprecated conversion from string constant to 'char*') I also get\nWHOLE lot (about 8000) errors all in one nature:\n\n../g0n/curvesort.cc:106: error: jump to case label\n../g0n/curvesort.cc:105: error:   crosses initialization of 'int\n<anonymous>[3]'\n\nwith different numbers only... problems starts from:\n\ng++ -c -fPIC -g -O2 -DNEW_OP_ORDER -DUSE_PARI_FACTORING -I../include -\nDNTL_ALL -I/opt/sage/local/include -I/opt/sage/local/include  tsat3.cc\n-o tsat3_n.o\nIn file included from tsat3.cc:37:\n../g0n/curvesort.cc ....... etc etc\n\nI think there is no sense to attach such big report... I'm running\ncurrent Arch Linux, that is GCC 4.2.2, gLibc 2.7, kernel 2.6.23.8. Is\nthere some workaround? \n```\n\nSee http://groups.google.com/group/sage-support/t/c2140ece9608358e\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1247\n\n",
+    "closed_at": "2007-11-24T15:37:22Z",
     "created_at": "2007-11-23T12:50:51Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
-    "title": "cremona-20071116.p0.spkg fails to build on Arch linux, 32bit linux, gcc-4.2.2",
+    "title": "cremona-20071116.p0.spkg fails to build with gcc 4.2.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1247",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

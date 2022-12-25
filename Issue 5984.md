@@ -1,9 +1,10 @@
-# Issue 5984: cmp related doctest failure in sage/modular/arithgroup/arithgroup_perm.py
+# Issue 5984: [with patch, positive review] cmp related doctest failure in sage/modular/arithgroup/arithgroup_perm.py
 
 archive/issues_005984.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2/sage-3.4.2-eno-gcc-4.3.3/devel/sage-main/sage/modular/arithgroup/arithgroup_perm.py\", line 204:\n    sage: cmp(G, Gamma0(8))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5984\n\n",
+    "closed_at": "2009-05-05T05:38:51Z",
     "created_at": "2009-05-05T04:33:53Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005984.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "cmp related doctest failure in sage/modular/arithgroup/arithgroup_perm.py",
+    "title": "[with patch, positive review] cmp related doctest failure in sage/modular/arithgroup/arithgroup_perm.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5984",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

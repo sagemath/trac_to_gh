@@ -1,9 +1,10 @@
-# Issue 1931: sage.spkg need to depend on ecm.spkg
+# Issue 1931: [with trivial patch] sage.spkg need to depend on ecm.spkg
 
 archive/issues_001931.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSince we now build a library interface for ecm (#1550) ecm.spkg needs to be build before the Sage lib. I fixed this in my tree and an updated deps will be attached shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1931\n\n",
+    "closed_at": "2008-01-26T09:19:31Z",
     "created_at": "2008-01-26T09:01:44Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_001931.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "sage.spkg need to depend on ecm.spkg",
+    "title": "[with trivial patch] sage.spkg need to depend on ecm.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1931",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

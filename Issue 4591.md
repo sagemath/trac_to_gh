@@ -1,16 +1,17 @@
-# Issue 4591: magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14
+# Issue 4591: [with patch; positive review] magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14
 
 archive/issues_004591.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn Magma 2.13 this works:\n\n```\nEllipticCurve('37a').three_selmer_rank()\n```\nbut in Magma 2.14 it doesn't (tested on osx and linux):\n\n```\nsage: EllipticCurve('37a').three_selmer_rank()\n```\n\nThis is implemented by a script I ship that is a modified versin of a magma script.\nI thus need to fix this.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4591\n\n",
+    "closed_at": "2008-11-23T08:18:19Z",
     "created_at": "2008-11-23T04:22:13Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14",
+    "title": "[with patch; positive review] magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4591",
     "user": "https://github.com/williamstein"

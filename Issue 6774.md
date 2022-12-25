@@ -1,15 +1,16 @@
-# Issue 6774: [with patch, needs review] tour Graph Theory
+# Issue 6774: tour Graph Theory
 
 archive/issues_006774.json:
 ```json
 {
-    "body": "Assignee: tba\n\nHello !\n\nI thought it was a pity Sage contained nothing yet about Graph theory. This is what I have written to fix it... Merge any of your ideas in it, it can not hope to be complete !\n\nAnd.... If I forgot your country when coloring the map of Western Europe, or if you do not stand to watch Western Europe being colored while your country is not, just add the data to the document ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6774\n\n",
+    "body": "Assignee: tba\n\nHello !\n\nI thought it was a pity Sage contained nothing yet about Graph theory. This is what I have written to fix it... Merge any of your ideas in it, it can not hope to be complete !\n\nAnd.... If I forgot your country when coloring the map of Western Europe, or if you do not stand to watch Western Europe being colored while your country is not, just add the data to the document ;-)\n\nAs mentionned, this ticket depends on:\n* #6679\n* #6680\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6774\n\n",
+    "closed_at": "2009-12-22T03:58:16Z",
     "created_at": "2009-08-18T17:08:45Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] tour Graph Theory",
+    "title": "tour Graph Theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6774",
     "user": "https://github.com/nathanncohen"
@@ -23,6 +24,9 @@ I thought it was a pity Sage contained nothing yet about Graph theory. This is w
 
 And.... If I forgot your country when coloring the map of Western Europe, or if you do not stand to watch Western Europe being colored while your country is not, just add the data to the document ;-)
 
+As mentionned, this ticket depends on:
+* #6679
+* #6680
 Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/6774

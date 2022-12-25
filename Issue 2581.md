@@ -1,16 +1,17 @@
-# Issue 2581: extend solve_right to all cases; implement solve_left
+# Issue 2581: [with patch, with positive review] extend solve_right to all cases; implement solve_left
 
 archive/issues_002581.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nA.solve_right only worked for A nonsingular, and there was no solve_left.  Now A.solve_right should work for any A and there is a solve_left. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2581\n\n",
+    "closed_at": "2008-03-19T23:58:43Z",
     "created_at": "2008-03-18T02:30:42Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "extend solve_right to all cases; implement solve_left",
+    "title": "[with patch, with positive review] extend solve_right to all cases; implement solve_left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2581",
     "user": "https://github.com/williamstein"

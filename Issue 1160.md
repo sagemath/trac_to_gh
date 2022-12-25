@@ -1,9 +1,10 @@
-# Issue 1160: *major* bug in using the sage notebook as a maxima notebook
+# Issue 1160: [witch patch] *major* bug in using the sage notebook as a maxima notebook
 
 archive/issues_001160.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nOn Nov 12, 2007 10:20 PM, Moreira <fjm@fc.up.pt> wrote:\n> After changing system to Maxima in a worksheet, evaluations of cells\n> do not appear. If I write \"3+1\" in a cell and press SHIFT+ENTER the\n> green bar remains. If I interrupt the computation (option in drop down\n> menus) then,  the result appears immediately after I press the ok\n> button in the  alert message saying \"Unable to immediately interrupt\n> calculation\"\n> \n> The same happens if SAGE is chosen as the active system and I begin\n> the cell with %maxima.\n> \n> However,  writing \"maxima(3+1)\" the result  appears as expected.\n> \n> This happens to me running a vmware image of sage on windows XP and\n> accessing SAGE notebook with firefox 2.09. I also tried the notebook\n> interface at\n> https://sage.math.washington.edu:8103/\n> and I obtained the same \"behaviour\".\n> \n> If I  choose other systems (like sh, html,gp)  everything works fine..\n> \n> Is anybody experiencing this kind of  behaviour or is only a bug with\n> me?!\n\nYes, I see exactly the same bug.   This is a rather serious bug actually,\nand I'm really glad you reported it!  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1160\n\n",
+    "closed_at": "2007-12-02T18:55:06Z",
     "created_at": "2007-11-12T23:32:32Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_001160.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "*major* bug in using the sage notebook as a maxima notebook",
+    "title": "[witch patch] *major* bug in using the sage notebook as a maxima notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1160",
     "user": "https://github.com/williamstein"

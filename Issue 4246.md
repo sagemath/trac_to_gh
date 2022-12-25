@@ -1,16 +1,17 @@
-# Issue 4246: bug in coercing symbolic expressions to polynomial rings
+# Issue 4246: [with patch, positive review] bug in coercing symbolic expressions to polynomial rings
 
 archive/issues_004246.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nThis was reported by William Stein at #4106:\n\n  I did notice this unfortunate property of the _polynomial_ function that is used\n  to implement this patch, namely it does something dumb when given x+y as input: \n\n  {{{\n  sage: var('x')\n  x\n  sage: var('y')\n  y\n  sage: S = PolynomialRing(Integers(4),1,'x')\n  sage: S(x+y)\n  2*x\n  sage: (x+y)._polynomial_(S)\n  2*x\n  }}}\n\n  I think in this case it should raise a TypeError. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4246\n\n",
+    "closed_at": "2008-12-04T14:55:00Z",
     "created_at": "2008-10-05T21:46:40Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "bug in coercing symbolic expressions to polynomial rings",
+    "title": "[with patch, positive review] bug in coercing symbolic expressions to polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4246",
     "user": "https://github.com/aghitza"

@@ -1,22 +1,23 @@
-# Issue 2614: [with patch, needs review] MPolynomial coefficient/polynomial_coefficient merging
+# Issue 2614: [with patch, positive review, rebased] MPolynomial coefficient/polynomial_coefficient merging
 
 archive/issues_002614.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: multivariate coefficient\n\nThis ticket is a continuation and final aim of #2385.  I was hoping to generate a bit of discussion with that patch, but it got merged before the discussion was generated.\n\nThe end result is this (illustrated with ZZ, but applying equally to QQ):\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=(-x^2-x+3)*(y-1)\nsage: f\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient(x^1)\n-1*y + 1\nsage: f.coefficient(x^0)\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient({x:0})\n3*y - 3\nsage: f.coefficient([0,None,None])\n3*y - 3\n```\n\nNote that the \"f.coefficient(x^0)\" is possibly mis-leading and this motivated both #2385 and this ticket.  Note that for ZZ \"f.coefficient(x^0)\" actually returned the constant coefficient as a special case -- I think that was dead wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2614\n\n",
+    "body": "Assignee: @malb\n\nKeywords: multivariate coefficient\n\nThis ticket is a continuation and final aim of #2385.  I was hoping to generate a bit of discussion with that patch, but it got merged before the discussion was generated.\n\nThe end result is this (illustrated with ZZ, but applying equally to QQ):\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=(-x^2-x+3)*(y-1)\nsage: f\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient(x^1)\n-1*y + 1\nsage: f.coefficient(x^0)\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient({x:0})\n3*y - 3\nsage: f.coefficient([0,None,None])\n3*y - 3\n```\n\nNote that the \"f.coefficient(x<sup>0</sup>)\" is possibly mis-leading and this motivated both #2385 and this ticket.  Note that for ZZ \"f.coefficient(x<sup>0</sup>)\" actually returned the constant coefficient as a special case -- I think that was dead wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2614\n\n",
+    "closed_at": "2008-03-28T18:21:12Z",
     "created_at": "2008-03-20T14:46:25Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] MPolynomial coefficient/polynomial_coefficient merging",
+    "title": "[with patch, positive review, rebased] MPolynomial coefficient/polynomial_coefficient merging",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2614",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 Keywords: multivariate coefficient
 
@@ -39,7 +40,7 @@ sage: f.coefficient([0,None,None])
 3*y - 3
 ```
 
-Note that the "f.coefficient(x^0)" is possibly mis-leading and this motivated both #2385 and this ticket.  Note that for ZZ "f.coefficient(x^0)" actually returned the constant coefficient as a special case -- I think that was dead wrong.
+Note that the "f.coefficient(x<sup>0</sup>)" is possibly mis-leading and this motivated both #2385 and this ticket.  Note that for ZZ "f.coefficient(x<sup>0</sup>)" actually returned the constant coefficient as a special case -- I think that was dead wrong.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2614
 

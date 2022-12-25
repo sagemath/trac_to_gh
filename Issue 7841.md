@@ -3,7 +3,8 @@
 archive/issues_007841.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe actual implementation is the generic one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7841\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: NTL polynomials\n\nThe actual implementation is the generic one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7841\n\n",
+    "closed_at": "2010-02-11T15:05:46Z",
     "created_at": "2010-01-04T13:28:16Z",
     "labels": [
         "component: algebra"
@@ -16,6 +17,8 @@ archive/issues_007841.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: NTL polynomials
 
 The actual implementation is the generic one.
 

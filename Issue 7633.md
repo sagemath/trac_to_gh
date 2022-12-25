@@ -4,6 +4,7 @@ archive/issues_007633.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThanks to #7627 I just looked at the very nice notebook settings page, and noticed that the save/cancel buttons are hidden at the bottom.  It would be nice replicate them at the top of the screen too. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7633\n\n",
+    "closed_at": "2010-07-05T10:34:23Z",
     "created_at": "2009-12-09T00:16:38Z",
     "labels": [
         "component: notebook",

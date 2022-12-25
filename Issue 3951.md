@@ -4,6 +4,7 @@ archive/issues_003951.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt would be great to have a Trac report that listed all the tickets in which the logged in user has participated (i.e., created, commented on, in the CC list, in the editor list, etc.)  I think this basically would be a report of all tickets that could possibly email you updates.\n\nFor me, it would serve as a \"Tickets that I should follow up on\" report :)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3951\n\n",
+    "closed_at": "2009-09-29T15:10:32Z",
     "created_at": "2008-08-25T19:52:25Z",
     "labels": [
         "component: website/wiki"

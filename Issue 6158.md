@@ -1,9 +1,10 @@
-# Issue 6158: upgrading sphix problem: any upgrade to sage-4.0 ends this way
+# Issue 6158: [with patch, positive review] upgrading sphinx problem: any upgrade to sage-4.0 ends this way
 
 archive/issues_006158.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\nsphinx-build -b html -d /usr/local/sage/devel/sage/doc/output/doctrees/en/tutorial   .  /usr/local/sage/devel/sage/doc/output/html/en/tutorial\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in /usr/local/sage/devel/sage/doc/output/html/en/tutorial\nTraceback (most recent call last):\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 258, in _wrapper\n    getattr(get_builder(document), name)(*args, **kwds)\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 415, in get_modified_modules\n    added, changed, removed = env.get_outdated_files(False)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx/environment.py\", line 400, in get_outdated_files\n    newmtime = path.getmtime(self.doc2path(docname))\n  File \"/usr/local/sage/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/usr/local/sage/devel/sage-main/doc/en/reference/rings_padic.rst'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6158\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsphinx-build -b html -d /usr/local/sage/devel/sage/doc/output/doctrees/en/tutorial   .  /usr/local/sage/devel/sage/doc/output/html/en/tutorial\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in /usr/local/sage/devel/sage/doc/output/html/en/tutorial\nTraceback (most recent call last):\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 258, in _wrapper\n    getattr(get_builder(document), name)(*args, **kwds)\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 415, in get_modified_modules\n    added, changed, removed = env.get_outdated_files(False)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx/environment.py\", line 400, in get_outdated_files\n    newmtime = path.getmtime(self.doc2path(docname))\n  File \"/usr/local/sage/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/usr/local/sage/devel/sage-main/doc/en/reference/rings_padic.rst'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6158\n\n",
+    "closed_at": "2009-06-01T00:48:17Z",
     "created_at": "2009-05-30T15:37:10Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_006158.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "upgrading sphix problem: any upgrade to sage-4.0 ends this way",
+    "title": "[with patch, positive review] upgrading sphinx problem: any upgrade to sage-4.0 ends this way",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6158",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 ```
 sphinx-build -b html -d /usr/local/sage/devel/sage/doc/output/doctrees/en/tutorial   .  /usr/local/sage/devel/sage/doc/output/html/en/tutorial

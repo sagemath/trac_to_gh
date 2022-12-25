@@ -4,6 +4,7 @@ archive/issues_001484.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n> > > In Mathematica, there's a $Path variable which has a list of directories\n> > > to search when asked to load a file. Is there a corresponding thing in\n> > > Sage?\n> >\n> > Sounds certainly like a good idea.\n> \n> Thanks for considering it.\n\nI have been meaning to implement this but haven't got around to it.\nIt has come up several times.   I think this would be very easy\nto implement, actually -- literally 1 hour or so, plus adding\ndocumentation and examples in the *right* places. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1484\n\n",
+    "closed_at": "2010-02-16T00:04:41Z",
     "created_at": "2007-12-13T07:59:53Z",
     "labels": [
         "component: user interface"

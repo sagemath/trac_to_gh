@@ -4,9 +4,10 @@ archive/issues_006650.json:
 ```json
 {
     "body": "Assignee: boothby\n\nwhile in command-line sage 4.1\n1;\n(with semicolon) shows no output whereas the same input in a notebook cell will (falsely) output the 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6650\n\n",
+    "closed_at": "2010-01-19T08:41:32Z",
     "created_at": "2009-07-28T21:12:24Z",
     "labels": [
-        "component: notebook",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

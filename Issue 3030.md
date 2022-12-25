@@ -1,21 +1,22 @@
-# Issue 3030: Trivial cython patch
+# Issue 3030: [with patch, positive review] Cython working directory command line option patch
 
 archive/issues_003030.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis adds a \"set working directory\" option to cython\n\nIssue created by migration from https://trac.sagemath.org/ticket/3030\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis adds a \"set working directory\" option to cython\n\nIssue created by migration from https://trac.sagemath.org/ticket/3030\n\n",
+    "closed_at": "2008-04-27T04:47:10Z",
     "created_at": "2008-04-26T10:41:16Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Trivial cython patch",
+    "title": "[with patch, positive review] Cython working directory command line option patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3030",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: mabshoff
+Assignee: @garyfurnish
 
 This adds a "set working directory" option to cython
 

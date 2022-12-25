@@ -4,6 +4,7 @@ archive/issues_000659.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSome classes do not raise a ZeroInversionError if `0^(-1)` is called.\n\nIssue created by migration from https://trac.sagemath.org/ticket/659\n\n",
+    "closed_at": "2007-09-15T21:01:22Z",
     "created_at": "2007-09-15T13:06:45Z",
     "labels": [
         "component: basic arithmetic",

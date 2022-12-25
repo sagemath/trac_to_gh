@@ -4,6 +4,7 @@ archive/issues_007023.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJust released Cyton 0.11.3. \n\nhttp://groups.google.com/group/cython-users/browse_thread/thread/a63639d3246bcf48 \n\nIt would be good to have this in Sage. As well as bugfixes and better error reporting, the really nice improvement is the ability to profile Cython code with cProfile and friends. (It's not on by default yet, use the cython.profile directive to enable it for a given module/function). \n\nAll doctests pass after applying the patch, which merely fixes some previously uncaught bugs (useless dead code). \n\nIssue created by migration from https://trac.sagemath.org/ticket/7023\n\n",
+    "closed_at": "2009-11-17T11:05:40Z",
     "created_at": "2009-09-27T07:27:57Z",
     "labels": [
         "component: packages: standard"

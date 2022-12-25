@@ -1,9 +1,10 @@
-# Issue 6510: Adds __nonzero__ method to abelian groups
+# Issue 6510: [with patch, positive review] Adds __nonzero__ method to abelian groups
 
 archive/issues_006510.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: abelian groups\n\n```\n sage: E=EllipticCurve([0,82])\n sage: tor=E.torsion_subgroup()\n sage: if tor:\n ...       print tor.order()\n 1\n```\n\nWe'd like to have tor evaluate to false in boolean context.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6510\n\n",
+    "closed_at": "2009-07-16T21:11:46Z",
     "created_at": "2009-07-10T21:57:38Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_006510.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Adds __nonzero__ method to abelian groups",
+    "title": "[with patch, positive review] Adds __nonzero__ method to abelian groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6510",
     "user": "https://trac.sagemath.org/admin/accounts/users/tsutton"

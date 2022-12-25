@@ -4,6 +4,7 @@ archive/issues_007014.json:
 ```json
 {
     "body": "Assignee: boothby\n\nFeatures:\n\n* Visit [#sage-devel](http://webchat.freenode.net/?channels=sage-devel), say, from a worksheet.\n* Create, join, and send invites to ad hoc [private] chatrooms managed by a notebook server.\n\nA prime candidate is [qwebirc](http://qwebirc.org/).  Apparently, this is the backend for [Freenode's](http://freenode.net/) own [webchat client](http://webchat.freenode.net/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7014\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2009-09-25T13:49:12Z",
     "labels": [
         "component: notebook",

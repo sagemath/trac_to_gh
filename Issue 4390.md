@@ -1,16 +1,17 @@
-# Issue 4390: elliptic curves: heegner_index command broken
+# Issue 4390: [with patch; with positive review] elliptic curves: heegner_index command broken
 
 archive/issues_004390.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: EllipticCurve('675b').heegner_index(-11)\nTraceback (most recent call last):\n...\nTypeError: regulator() got an unexpected keyword argument 'verbose'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4390\n\n",
+    "closed_at": "2008-10-30T05:46:19Z",
     "created_at": "2008-10-30T05:35:53Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "elliptic curves: heegner_index command broken",
+    "title": "[with patch; with positive review] elliptic curves: heegner_index command broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4390",
     "user": "https://github.com/williamstein"

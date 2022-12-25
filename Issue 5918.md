@@ -1,15 +1,16 @@
-# Issue 5918: bring doctest coverage for posets to 100%
+# Issue 5918: [with patch; positive review] bring doctest coverage for posets to 100%
 
 archive/issues_005918.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nI'll post a patch in a few minutes that brings the doctest coverage for posets to 100% (well, except for 2 or 3 nested functions). It also fixes a few bugs that I noticed while adding the doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5918\n\n",
+    "closed_at": "2009-04-30T01:40:16Z",
     "created_at": "2009-04-28T14:29:56Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "bring doctest coverage for posets to 100%",
+    "title": "[with patch; positive review] bring doctest coverage for posets to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5918",
     "user": "https://github.com/saliola"

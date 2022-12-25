@@ -1,16 +1,17 @@
-# Issue 7006: [with patch; needs review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6
+# Issue 7006: [with spkg, positive review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6
 
 archive/issues_007006.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  palmieri mvngu\n\nThe spkg is up here:\n\n  http://sage.math.washington.edu/home/wstein/patches/mpir-1.2.p5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7006\n\n",
+    "closed_at": "2009-09-27T02:28:15Z",
     "created_at": "2009-09-25T00:54:56Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch; needs review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6",
+    "title": "[with spkg, positive review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7006",
     "user": "https://github.com/williamstein"

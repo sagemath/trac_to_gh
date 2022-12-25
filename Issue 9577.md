@@ -3,10 +3,10 @@
 archive/issues_009577.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mvgnu amao@ai7.org @vbraun @dimpase\n\ni found this on the internetz over here:\nhttp://ai7.org/wp/html/682.html\n\ni am unable to build the pdf, but html works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9577\n\n",
+    "body": "Assignee: mvngu\n\nCC:  mvgnu amao@ai7.org @vbraun @dimpase\n\nKeywords: tutorial, chinese\n\ni found this on the internetz over here:\nhttp://ai7.org/wp/html/682.html\n\ni am unable to build the pdf, but html works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9577\n\n",
     "created_at": "2010-07-22T21:34:00Z",
     "labels": [
-        "component: documentation"
+        "component: translations"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
     "title": "chinese translation of the tutorial",
@@ -18,6 +18,8 @@ archive/issues_009577.json:
 Assignee: mvngu
 
 CC:  mvgnu amao@ai7.org @vbraun @dimpase
+
+Keywords: tutorial, chinese
 
 i found this on the internetz over here:
 http://ai7.org/wp/html/682.html

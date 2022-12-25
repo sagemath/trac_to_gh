@@ -1,16 +1,18 @@
-# Issue 1037: arithmetic with Schubert polynomials includes extra fixed points in the permutations
+# Issue 1037: [with patch] arithmetic with Schubert polynomials includes extra fixed points in the permutations
 
 archive/issues_001037.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nFor example,\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5, 7]\n```\n\nshould be\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1037\n\n",
+    "closed_at": "2007-11-01T09:22:16Z",
     "created_at": "2007-10-30T22:49:41Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: combinatorics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "arithmetic with Schubert polynomials includes extra fixed points in the permutations",
+    "title": "[with patch] arithmetic with Schubert polynomials includes extra fixed points in the permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1037",
     "user": "https://github.com/mwhansen"

@@ -1,16 +1,18 @@
-# Issue 3620: minpoly slow for finte fields
+# Issue 3620: [with patch; positive review]  minpoly absurdly slow for elements of finte fields
 
 archive/issues_003620.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIt goes via pari calls, rather than invoking ntl directly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3620\n\n",
+    "body": "Assignee: tbd\n\n```\nIt goes via pari calls, rather than invoking ntl directly. \n\ne.g., computing the minpoly of a random element in GF(2^300)\ntakes about  a minute in sage and a second in Magma.  It's slow\nbecause PARI is really really slow.  Just getting the matrix and\nasking for its charpoly is vastly vaster in sage already, so doing\nthat would be a good first step. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3620\n\n",
+    "closed_at": "2008-07-10T10:04:37Z",
     "created_at": "2008-07-09T00:03:58Z",
     "labels": [
         "component: algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "minpoly slow for finte fields",
+    "title": "[with patch; positive review]  minpoly absurdly slow for elements of finte fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3620",
     "user": "https://github.com/robertwb"
@@ -18,7 +20,15 @@ archive/issues_003620.json:
 ```
 Assignee: tbd
 
-It goes via pari calls, rather than invoking ntl directly.
+```
+It goes via pari calls, rather than invoking ntl directly. 
+
+e.g., computing the minpoly of a random element in GF(2^300)
+takes about  a minute in sage and a second in Magma.  It's slow
+because PARI is really really slow.  Just getting the matrix and
+asking for its charpoly is vastly vaster in sage already, so doing
+that would be a good first step. 
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3620
 

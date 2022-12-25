@@ -1,9 +1,10 @@
-# Issue 1390: fix qbar doctest on 32 bit FC8 Linux
+# Issue 1390: [with patch] fix qqbar doctest on 32 bit FC8 Linux
 
 archive/issues_001390.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJaap reported the issue, the trivial attached patch fixes it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1390\n\n",
+    "closed_at": "2007-12-04T14:28:26Z",
     "created_at": "2007-12-04T01:31:09Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_001390.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "fix qbar doctest on 32 bit FC8 Linux",
+    "title": "[with patch] fix qqbar doctest on 32 bit FC8 Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1390",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

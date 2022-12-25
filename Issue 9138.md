@@ -1,16 +1,17 @@
-# Issue 9138: Introspection is failing on polynomial rings
+# Issue 9138: Categories for all rings
 
 archive/issues_009138.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @robertwb\n\nKeywords: introspection\n\nExample:\n\n```\nsage: R.<x> = QQ[] \nsage: R.su<tab> \nR.sum                               R.summation \nR.summation_from_element_class_add \nsage: R.sum? \nObject `R.sum` not found. \nsage: R.sum() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call last) \n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4780192a11a8b591 for more discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9138\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @robertwb\n\nKeywords: introspection, categories for rings\n\nIntrospection is failing on polynomial rings:\n\n```\nsage: R.<x> = QQ[] \nsage: R.su<tab> \nR.sum                               R.summation \nR.summation_from_element_class_add \nsage: R.sum? \nObject `R.sum` not found. \nsage: R.sum() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call last) \n```\n\nThis is because polynomial rings do not yet set their category properly:\n\n```\nsage: QQ[x]._test_category()\n------------------------------------------------------------\nTraceback (most recent call last):\n...\nAssertionError: category of self improperly initialized\n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4780192a11a8b591 for more discussion.\n\nMany other rings are not properly initialised as well. The aim of this ticket is to change that.\n\n**Apply** [attachment:9138_flat.patch] (rebased on top of #9958, but will still apply with fuzz 2 otherwise).\n\nSee #11900 for a follow-up fixing some speed regressions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9138\n\n",
+    "closed_at": "2012-01-18T08:08:26Z",
     "created_at": "2010-06-04T13:43:04Z",
     "labels": [
         "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Introspection is failing on polynomial rings",
+    "title": "Categories for all rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9138",
     "user": "https://github.com/jbandlow"
@@ -20,9 +21,9 @@ Assignee: @nthiery
 
 CC:  sage-combinat @robertwb
 
-Keywords: introspection
+Keywords: introspection, categories for rings
 
-Example:
+Introspection is failing on polynomial rings:
 
 ```
 sage: R.<x> = QQ[] 
@@ -36,7 +37,23 @@ sage: R.sum()
 AttributeError                            Traceback (most recent call last) 
 ```
 
+This is because polynomial rings do not yet set their category properly:
+
+```
+sage: QQ[x]._test_category()
+------------------------------------------------------------
+Traceback (most recent call last):
+...
+AssertionError: category of self improperly initialized
+```
+
 See http://groups.google.com/group/sage-devel/browse_thread/thread/4780192a11a8b591 for more discussion.
+
+Many other rings are not properly initialised as well. The aim of this ticket is to change that.
+
+**Apply** [attachment:9138_flat.patch] (rebased on top of #9958, but will still apply with fuzz 2 otherwise).
+
+See #11900 for a follow-up fixing some speed regressions.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9138
 

@@ -1,22 +1,23 @@
-# Issue 2299: [with patch, needs review] add zero_matrix constructor.
+# Issue 2299: [with patch, positive review] add zero_matrix constructor.
 
 archive/issues_002299.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: zero matrix identity one\n\nThis adds the `zero_matrix` convenience constructor, just like `identity_matrix`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2299\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: zero matrix identity one\n\nThis adds the `zero_matrix` convenience constructor, just like `identity_matrix`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2299\n\n",
+    "closed_at": "2008-02-28T00:48:29Z",
     "created_at": "2008-02-25T08:10:33Z",
     "labels": [
-        "component: commutative algebra",
+        "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] add zero_matrix constructor.",
+    "title": "[with patch, positive review] add zero_matrix constructor.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2299",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @malb
+Assignee: @williamstein
 
 CC:  @ncalexan
 

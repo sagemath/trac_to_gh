@@ -1,16 +1,17 @@
-# Issue 5215: [with patch, needs review] Remove ipython1-20070130.spkg from Sage
+# Issue 5215: [with patch, positive review] Remove ipython1-20070130.spkg from Sage
 
 archive/issues_005215.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nipython1-20070130.spkg is very outdated and since ipython 0.9.0 the functionality has been migrated into ipython itself. Since we are now shipping ipython 0.9.1 remove the ipython1-20070130.spkg from the Sage distribution. Besides deleting the spkg one also needs to change deps and install.\n\nI will post diff for deps and install momentarily.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5215\n\n",
+    "closed_at": "2009-02-11T06:10:33Z",
     "created_at": "2009-02-09T12:20:24Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Remove ipython1-20070130.spkg from Sage",
+    "title": "[with patch, positive review] Remove ipython1-20070130.spkg from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5215",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

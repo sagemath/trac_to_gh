@@ -4,6 +4,7 @@ archive/issues_008709.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt\n\nOn one platform (an itanium machine running red hat), I see this:\n\n```\nFile \"/home/palmieri/cleo/sage-4.4.alpha0/devel/sage/sage/geometry/polyhedra.py\", line 3147:\n    sage: for lset in polytopes.cross_polytope(2).face_lattice().level_sets(): print lset[0]\nExpected:\n    (None, (0, 1, 2, 3))\n    ((1,), (2, 3))\n    ((1, 2), (3,))\n    ((0, 1, 2, 3), None)\nGot:\n    (None, (0, 1, 2, 3))\n    ((0,), (1, 2))\n    ((1, 2), (3,))\n    ((0, 1, 2, 3), None)\n```\nThis is with Sage 4.4.alpha0, and it comes from the patch in ticket #8650.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8709\n\n",
+    "closed_at": "2010-04-19T05:18:31Z",
     "created_at": "2010-04-18T03:07:19Z",
     "labels": [
         "component: geometry",

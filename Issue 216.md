@@ -4,6 +4,7 @@ archive/issues_000216.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe command optional_packages() raises an exception when run from the notebook:\n\n```\nFile \"/sage/local/lib/python2.5/site-packages/sage/misc/package.py\", line 77, in optional_packages\n    i = X.index('INSTALLED:')\nValueError: list.index(x): x not in list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/216\n\n",
+    "closed_at": "2007-01-25T14:40:35Z",
     "created_at": "2007-01-25T03:42:56Z",
     "labels": [
         "component: notebook",

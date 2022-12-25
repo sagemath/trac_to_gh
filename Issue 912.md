@@ -4,6 +4,7 @@ archive/issues_000912.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee http://sourceforge.net/project/showfiles.php?group_id=1369&package_id=175103\n\nIssue created by migration from https://trac.sagemath.org/ticket/912\n\n",
+    "closed_at": "2008-03-01T22:26:19Z",
     "created_at": "2007-10-17T08:16:11Z",
     "labels": [
         "component: linear algebra"

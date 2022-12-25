@@ -1,16 +1,17 @@
-# Issue 2706: [with patch] Fast bitset implimentation
+# Issue 2706: [with patch, positive review] Fast bitset implimentation
 
 archive/issues_002706.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nSet of functions for manipulating individual bits in lists of longs. This will be especially helpful for the graph isomorphism code as it provides a level of abstraction that should help eliminate bugs. \n\nIt is a pxi file so that the functions can be declared and used inline. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2706\n\n",
+    "closed_at": "2008-03-29T00:02:07Z",
     "created_at": "2008-03-28T20:00:01Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch] Fast bitset implimentation",
+    "title": "[with patch, positive review] Fast bitset implimentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2706",
     "user": "https://github.com/robertwb"

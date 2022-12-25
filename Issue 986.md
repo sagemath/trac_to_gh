@@ -1,9 +1,10 @@
-# Issue 986: sage-2.8.9.rc1: order of .variety() depends on architecture in multi_polynomial_ideal.py
+# Issue 986: [with patch] sage-2.8.9.rc1: order of .variety() depends on architecture in multi_polynomial_ideal.py
 
 archive/issues_000986.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis doctest fails on 32-bit x86 Linux:\n\n```\nFile \"multi_polynomial_ideal.py\", line 1078:\n    sage: V = I.variety(); V\nExpected:\n    [{y: w^2 + 2, x: 2*w}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + w, x: 2*w + 1}]\nGot:\n    [{y: w^2 + w, x: 2*w + 1}, {y: w^2 + 2*w, x: 2*w + 2}, {y: w^2 + 2, x: 2*w}]\n```\n\nHowever, the doctest succeeds on 64-bit x86 Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/986\n\n",
+    "closed_at": "2007-10-25T06:44:27Z",
     "created_at": "2007-10-25T00:57:33Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_000986.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "sage-2.8.9.rc1: order of .variety() depends on architecture in multi_polynomial_ideal.py",
+    "title": "[with patch] sage-2.8.9.rc1: order of .variety() depends on architecture in multi_polynomial_ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/986",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,22 +1,23 @@
-# Issue 3201: notebook -- bug in parsing \ at end of line in %latex mode
+# Issue 3201: [with patch, positive review] notebook -- bug in parsing \ at end of line in %latex mode
 
 archive/issues_003201.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n```\n\nA subtle problem with \"%latex\" cells is illustrated at\n<http://www-maths.swan.ac.uk/staff/fwc/sage-notebook-latex.tiff>\n\nWhen \"\\\\\" occurs at the end of a line it seems to gooble the first\ncharacter in the next line.\n\nI'm using Mac OS X 10.4.11, and the same thing happens both Firefox\nand Safari.\n\nFrancis\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3201\n\n",
+    "body": "Assignee: @mwhansen\n\n```\n\nA subtle problem with \"%latex\" cells is illustrated at\n<http://www-maths.swan.ac.uk/staff/fwc/sage-notebook-latex.tiff>\n\nWhen \"\\\\\" occurs at the end of a line it seems to gooble the first\ncharacter in the next line.\n\nI'm using Mac OS X 10.4.11, and the same thing happens both Firefox\nand Safari.\n\nFrancis\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3201\n\n",
+    "closed_at": "2009-01-28T15:18:49Z",
     "created_at": "2008-05-14T01:18:07Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "notebook -- bug in parsing \\ at end of line in %latex mode",
+    "title": "[with patch, positive review] notebook -- bug in parsing \\ at end of line in %latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3201",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 ```
 

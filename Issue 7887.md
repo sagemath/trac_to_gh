@@ -4,10 +4,10 @@ archive/issues_007887.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @roed314\n\nWrapping zmod_poly directly should be much faster than the current implementation of Frac(GF(p)['t'])\n\nSee also #7585\n\nIssue created by migration from https://trac.sagemath.org/ticket/7887\n\n",
+    "closed_at": "2010-10-20T15:53:45Z",
     "created_at": "2010-01-10T00:10:13Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Fast function field arithmetic",

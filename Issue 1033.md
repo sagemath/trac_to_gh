@@ -1,16 +1,17 @@
-# Issue 1033: new biopython optional package
+# Issue 1033: [with optional spkg] biopython 1.44 optional package
 
 archive/issues_001033.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: biopython\n\nBiopython 1.44 has been released.  An spkg is available at:\nhttp://www.d.umn.edu/~mhampton/biopython-1.44.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1033\n\n",
+    "closed_at": "2007-11-01T02:59:56Z",
     "created_at": "2007-10-30T01:04:22Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "new biopython optional package",
+    "title": "[with optional spkg] biopython 1.44 optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1033",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

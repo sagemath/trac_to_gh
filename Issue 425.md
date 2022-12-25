@@ -4,6 +4,7 @@ archive/issues_000425.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nWhen compiling C code in cython some times \"-Wstrict-prototypes\" is added, causing the following warning:\n\n cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for C/ObjC but not for C++\n\nIssue created by migration from https://trac.sagemath.org/ticket/425\n\n",
+    "closed_at": "2008-08-23T23:19:36Z",
     "created_at": "2007-08-13T01:06:43Z",
     "labels": [
         "component: packages: standard",

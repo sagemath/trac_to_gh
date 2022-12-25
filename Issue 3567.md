@@ -1,22 +1,23 @@
-# Issue 3567: optimize startup of sage -- don't import global transaction module
+# Issue 3567: [with patch; positive review] optimize startup of sage -- don't import global transaction module
 
 archive/issues_003567.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nBEFORE:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n        transaction: 0.104 (sage.databases.db)\n         transaction._transaction: 0.103 (transaction)\n          logging: 0.004 (transaction._transaction)\n          zope: 0.096 (transaction._transaction)\n         transaction._manager: 0.000 (transaction)\n             transaction.interfaces: 0.000 (ZODB.Connection)\n0.104 transaction (sage.databases.db)\n0.103 transaction._transaction (transaction)\n0.096 zope (transaction._transaction)\n```\nand that's *with* disk caching (on os x though). \n\nAFTER this patch:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n             transaction.interfaces: 0.004 (ZODB.Connection)\n              transaction._transaction: 0.003 (transaction.interfaces)\n               zope: 0.000 (transaction._transaction)\n               transaction: 0.001 (transaction._transaction)\n              transaction._manager: 0.000 (transaction.interfaces)\n```\n\nSweet!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3567\n\n",
+    "body": "Assignee: cwitty\n\nBEFORE:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n        transaction: 0.104 (sage.databases.db)\n         transaction._transaction: 0.103 (transaction)\n          logging: 0.004 (transaction._transaction)\n          zope: 0.096 (transaction._transaction)\n         transaction._manager: 0.000 (transaction)\n             transaction.interfaces: 0.000 (ZODB.Connection)\n0.104 transaction (sage.databases.db)\n0.103 transaction._transaction (transaction)\n0.096 zope (transaction._transaction)\n```\nand that's *with* disk caching (on os x though). \n\nAFTER this patch:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n             transaction.interfaces: 0.004 (ZODB.Connection)\n              transaction._transaction: 0.003 (transaction.interfaces)\n               zope: 0.000 (transaction._transaction)\n               transaction: 0.001 (transaction._transaction)\n              transaction._manager: 0.000 (transaction.interfaces)\n```\n\nSweet!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3567\n\n",
+    "closed_at": "2008-07-06T20:09:55Z",
     "created_at": "2008-07-06T19:48:57Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "optimize startup of sage -- don't import global transaction module",
+    "title": "[with patch; positive review] optimize startup of sage -- don't import global transaction module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3567",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: cwitty
 
 BEFORE:
 

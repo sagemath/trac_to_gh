@@ -1,16 +1,17 @@
-# Issue 2196: Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0
+# Issue 2196: [with new patch, with positive review] Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0
 
 archive/issues_002196.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe code for quadratic, quartic and sextic twists of elliptic curves does not check that the twisting parameter is nonzero, and hence fail when a singular curve tries to be constructed.  Instead we output a helpful message.\n\nNote that in characteristic 2, the quadratic twist by 0 is allowed (but gives back the same curve), just as twisting by 1 in odd characteristic.\n\nThe patch provided also enhances the Hasse_bounds function (which should probably be put somewhere other than ell_generic.py).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2196\n\n",
+    "closed_at": "2008-02-17T20:59:05Z",
     "created_at": "2008-02-17T19:09:35Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0",
+    "title": "[with new patch, with positive review] Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2196",
     "user": "https://github.com/JohnCremona"

@@ -4,6 +4,7 @@ archive/issues_009145.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSee discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/d62ea229829048f7\n\nIssue created by migration from https://trac.sagemath.org/ticket/9145\n\n",
+    "closed_at": "2010-06-06T00:44:00Z",
     "created_at": "2010-06-05T04:03:42Z",
     "labels": [
         "component: documentation",

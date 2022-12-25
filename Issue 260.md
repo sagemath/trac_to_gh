@@ -1,29 +1,29 @@
-# Issue 260: transparent graphics output
+# Issue 260: Background color and opacity of graphics output
 
 archive/issues_000260.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @kcrisman\n\n```\n\nIt may be helpful for users who want to use SAGE graphics on their web\npages to be able to set the background as transparent.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/260\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n```\n\nIt may be helpful for users who want to use SAGE graphics on their web\npages to be able to set attributes about the background, like transparency.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/260\n\n",
     "created_at": "2007-02-12T04:20:44Z",
     "labels": [
-        "component: notebook",
+        "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "transparent graphics output",
+    "title": "Background color and opacity of graphics output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/260",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: boothby
+Assignee: @williamstein
 
 CC:  @kcrisman
 
 ```
 
 It may be helpful for users who want to use SAGE graphics on their web
-pages to be able to set the background as transparent.
+pages to be able to set attributes about the background, like transparency.
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/260

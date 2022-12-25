@@ -1,22 +1,23 @@
-# Issue 1077: DSage restarts two workers after timeout
+# Issue 1077: [with patch, with positive review] DSage restarts two workers after timeout
 
 archive/issues_001077.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen a job times out, the worker restarts running two jobs.  This slows things down and is not natural.\n\nAnd when one of those new jobs finishes, it performs a hard reset, killing the second job, which then never gets completed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1077\n\n",
+    "body": "Assignee: @yqiang\n\nWhen a job times out, the worker restarts running two jobs.  This slows things down and is not natural.\n\nAnd when one of those new jobs finishes, it performs a hard reset, killing the second job, which then never gets completed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1077\n\n",
+    "closed_at": "2007-12-15T00:37:34Z",
     "created_at": "2007-11-03T17:07:55Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "DSage restarts two workers after timeout",
+    "title": "[with patch, with positive review] DSage restarts two workers after timeout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1077",
     "user": "https://github.com/jvoight"
 }
 ```
-Assignee: @williamstein
+Assignee: @yqiang
 
 When a job times out, the worker restarts running two jobs.  This slows things down and is not natural.
 

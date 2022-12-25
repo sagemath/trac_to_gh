@@ -3,7 +3,8 @@
 archive/issues_008699.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @williamstein\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8699\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @williamstein\n\nKeywords: 7 years\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\nThis might conflict with ticket #7716. See #8708 for a related ticket.\n\nApply patches in this order:\n\n* [trac_8699-documentation.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8699/trac_8699-documentation.patch) --- Document the doctest coverage script. Don't redefine the built-in function name \"file\"; use \"afile\" instead. Consistently use double quotes wherever possible. General stylistic clean-ups a la [PEP 008](http://www.python.org/dev/peps/pep-0008/).\n* [trac_8699.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8699/trac_8699.patch) --- Allow the doctest coverage script to handle triple single quotes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8699\n\n",
+    "closed_at": "2013-03-07T08:13:44Z",
     "created_at": "2010-04-17T05:37:54Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +21,16 @@ Assignee: tbd
 
 CC:  @jhpalmieri @williamstein
 
+Keywords: 7 years
+
 As the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.
+
+This might conflict with ticket #7716. See #8708 for a related ticket.
+
+Apply patches in this order:
+
+* [trac_8699-documentation.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8699/trac_8699-documentation.patch) --- Document the doctest coverage script. Don't redefine the built-in function name "file"; use "afile" instead. Consistently use double quotes wherever possible. General stylistic clean-ups a la [PEP 008](http://www.python.org/dev/peps/pep-0008/).
+* [trac_8699.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8699/trac_8699.patch) --- Allow the doctest coverage script to handle triple single quotes.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8699
 

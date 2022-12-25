@@ -4,6 +4,7 @@ archive/issues_009688.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nTry doing\n\n  sh.eval? \n\nin the Sage notebook, and the output gets corrupted, because the example in the docstring is complicated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9688\n\n",
+    "closed_at": "2020-09-02T07:48:22Z",
     "created_at": "2010-08-05T04:57:45Z",
     "labels": [
         "component: notebook",

@@ -4,10 +4,10 @@ archive/issues_004339.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  nilsskoruppa\n\nCraig has an email from Nils with this code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4339\n\n",
+    "closed_at": "2010-01-21T18:20:16Z",
     "created_at": "2008-10-22T17:49:42Z",
     "labels": [
-        "component: modular forms",
-        "bug"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "modular forms -- incorporate Nils Skoruppa's code for computing generators for the ring of modular forms of given level",

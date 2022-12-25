@@ -1,16 +1,17 @@
-# Issue 1626: update lcalc to 20070902
+# Issue 1626: [with spkg, patch; positive review] update lcalc to 20080205
 
 archive/issues_001626.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1626\n\n",
+    "closed_at": "2008-04-14T03:56:48Z",
     "created_at": "2007-12-29T04:39:50Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "update lcalc to 20070902",
+    "title": "[with spkg, patch; positive review] update lcalc to 20080205",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1626",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

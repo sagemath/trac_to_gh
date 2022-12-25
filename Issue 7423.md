@@ -4,9 +4,11 @@ archive/issues_007423.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn 4.2.1.alpha0:\n\n```\nsage: f(x,y)=ln(x)\nsage: P=plot3d(f,(x,0,1),(y,0,1))\nsage: P\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (16, 0))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip a lot>\nValueError: math domain error\n```\nSwitch to (x,0.1,1), and all is well.  I am pretty sure the problem is that line 404 in plot/plot3d/parametric_surface.pyx doesn't have an exception handler for log(0) or other such nan type values:\n\n```\nsage: math.log(0)\n<snip>\nValueError: math domain error\n```\nBut in the plotting context, it's silly not to just ignore this; we check for things like this all the time:\n\n```\nsage: plot(log,0,1)\n<works fine>\n```\nFor now it would probably be enough to fix it for the z variable.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7423\n\n",
+    "closed_at": "2021-01-24T10:36:56Z",
     "created_at": "2009-11-10T20:33:44Z",
     "labels": [
         "component: graphics",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",

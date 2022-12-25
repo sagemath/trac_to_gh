@@ -1,9 +1,10 @@
-# Issue 4602: typos in files under sage/catalogue
+# Issue 4602: [with patch, positive review] typos in files under sage/catalogue
 
 archive/issues_004602.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: typos, sage/catalogue\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4602\n\n",
+    "closed_at": "2008-11-24T19:09:56Z",
     "created_at": "2008-11-24T10:27:53Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004602.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "typos in files under sage/catalogue",
+    "title": "[with patch, positive review] typos in files under sage/catalogue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4602",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

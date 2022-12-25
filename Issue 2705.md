@@ -3,11 +3,10 @@
 archive/issues_002705.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreating a 2000x200 full matrix is much faster than creating a 500x500 sparse matrix:\n\n```\nsage: %time A = random_matrix(ZZ,2000)\nCPU times: user 0.97 s, sys: 0.28 s, total: 1.25 s\nWall time: 1.25\n\nsage: %time B = random_matrix(ZZ,500,sparse=True)\nCPU times: user 7.20 s, sys: 0.00 s, total: 7.20 s\nWall time: 7.20\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2705\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: sd31\n\nCreating a 2000x2000 full matrix is much faster than creating a 500x500 sparse matrix:\n\n```\nsage: %time A = random_matrix(ZZ,2000)\nCPU times: user 0.97 s, sys: 0.28 s, total: 1.25 s\nWall time: 1.25\n\nsage: %time B = random_matrix(ZZ,500,sparse=True)\nCPU times: user 7.20 s, sys: 0.00 s, total: 7.20 s\nWall time: 7.20\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2705\n\n",
     "created_at": "2008-03-28T18:41:29Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "random_matrix with sparse=True is very slow",
@@ -18,7 +17,9 @@ archive/issues_002705.json:
 ```
 Assignee: @williamstein
 
-Creating a 2000x200 full matrix is much faster than creating a 500x500 sparse matrix:
+Keywords: sd31
+
+Creating a 2000x2000 full matrix is much faster than creating a 500x500 sparse matrix:
 
 ```
 sage: %time A = random_matrix(ZZ,2000)

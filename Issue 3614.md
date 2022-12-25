@@ -1,17 +1,17 @@
-# Issue 3614: pbuild broken by finance
+# Issue 3614: [with patch, positive review] pbuild broken by finance
 
 archive/issues_003614.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\npbuild is broken by finance compiled modules in 3.0.4.rc0.  The fix is going to be adding the right libraries to the finance include/linker options\n\nIssue created by migration from https://trac.sagemath.org/ticket/3614\n\n",
+    "closed_at": "2008-07-15T01:31:32Z",
     "created_at": "2008-07-08T18:03:43Z",
     "labels": [
         "component: pbuild",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "pbuild broken by finance",
+    "title": "[with patch, positive review] pbuild broken by finance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3614",
     "user": "https://github.com/garyfurnish"

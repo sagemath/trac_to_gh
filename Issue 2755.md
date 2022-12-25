@@ -1,21 +1,23 @@
-# Issue 2755: [with patch, needs review] lattice_polytope.py update
+# Issue 2755: [with patch, positive review] lattice_polytope.py update
 
 archive/issues_002755.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nFinally, the patch with the second version of the module... Does what was proposed on Sage Days 7 and has doctests for all functions (tests for such things as setstate  do not have explicit calls but certainly use the required functions).\n\nADDITIONS:\n\nconvex_hull(), minkowski_sum(), NEFPartition.dual()\n\nReflexivePolytope(), ReflexivePolytopes()\n\nLatticePolytopeClass.plot3d(), LatticePolytopeClass.skeleton* (points, graph, plot)\n\nVertices of polytopes are now computed by default.\n\nLittle shortcuts like edges() or point().\n\nExamples/tests for each function.\n\nATTACHED FILES:\n\nSaved Sage objects for sequences of all reflexive polytopes in 2 and 3 dimensions with some precomputed data and dictionaries to these sequences allowing fast identification of the isomorphism class under GL(Z) action.\n\nThe module assumes they are located in DB_HOME/reflexive_polytopes/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2755\n\n",
+    "body": "Assignee: mabshoff\n\nFinally, the patch with the second version of the module... Does what was proposed on Sage Days 7 and has doctests for all functions (tests for such things as setstate  do not have explicit calls but certainly use the required functions).\n\nADDITIONS:\n\nconvex_hull(), minkowski_sum(), NEFPartition.dual()\n\nReflexivePolytope(), ReflexivePolytopes()\n\nLatticePolytopeClass.plot3d(), LatticePolytopeClass.skeleton* (points, graph, plot)\n\nVertices of polytopes are now computed by default.\n\nLittle shortcuts like edges() or point().\n\nExamples/tests for each function.\n\nATTACHED FILES:\n\nSaved Sage objects for sequences of all reflexive polytopes in 2 and 3 dimensions with some precomputed data and dictionaries to these sequences allowing fast identification of the isomorphism class under GL(Z) action.\n\nThe module assumes they are located in DB_HOME/reflexive_polytopes/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2755\n\n",
+    "closed_at": "2008-05-02T17:38:34Z",
     "created_at": "2008-04-01T17:19:58Z",
     "labels": [
-        "component: geometry"
+        "component: geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch, needs review] lattice_polytope.py update",
+    "title": "[with patch, positive review] lattice_polytope.py update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2755",
     "user": "https://github.com/novoselt"
 }
 ```
-Assignee: mhampton
+Assignee: mabshoff
 
 Finally, the patch with the second version of the module... Does what was proposed on Sage Days 7 and has doctests for all functions (tests for such things as setstate  do not have explicit calls but certainly use the required functions).
 

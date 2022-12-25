@@ -3,7 +3,8 @@
 archive/issues_008720.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @mwhansen\n\nLook at the inconsistency:\n\n```\nsage: RR(0)\n0.000000000000000\nsage: RDF(0)\n0.0\n```\n\nversus\n\n```\nsage: CDF(0)\n0\nsage: CC(0)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8720\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6 @mwhansen\n\nLook at the inconsistency:\n\n```\nsage: RR(0)\n0.000000000000000\nsage: RDF(0)\n0.0\n```\n\nversus\n\n```\nsage: CDF(0)\n0\nsage: CC(0)\n0\n```\n\n\n---\n\nApply [attachment:trac-8720-printing-complex-zero.patch], [attachment:trac_8720-doctests.patch], [attachment:trac_8720-doctests-2.patch]\nand [attachment:trac_8720-doctests-3.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8720\n\n",
+    "closed_at": "2012-04-19T06:43:48Z",
     "created_at": "2010-04-20T02:42:33Z",
     "labels": [
         "component: basic arithmetic",
@@ -37,6 +38,12 @@ sage: CDF(0)
 sage: CC(0)
 0
 ```
+
+
+---
+
+Apply [attachment:trac-8720-printing-complex-zero.patch], [attachment:trac_8720-doctests.patch], [attachment:trac_8720-doctests-2.patch]
+and [attachment:trac_8720-doctests-3.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8720
 

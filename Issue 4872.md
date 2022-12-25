@@ -1,16 +1,17 @@
-# Issue 4872: [with patch; needs review] latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory
+# Issue 4872: [with patch; positive review] use sage_native_execute for dvipng, clean up file handling
 
 archive/issues_004872.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4872\n\n",
+    "closed_at": "2008-12-26T22:50:59Z",
     "created_at": "2008-12-24T18:12:42Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch; needs review] latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory",
+    "title": "[with patch; positive review] use sage_native_execute for dvipng, clean up file handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4872",
     "user": "https://github.com/williamstein"

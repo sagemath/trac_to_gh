@@ -4,6 +4,7 @@ archive/issues_007283.json:
 ```json
 {
     "body": "Assignee: tba\n\nIn http://www.sagemath.org/doc/reference/coercion.html\n\n\"Basic Arithmetic Rules\" has a duplicated paragraph. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7283\n\n",
+    "closed_at": "2009-11-29T05:13:27Z",
     "created_at": "2009-10-25T01:37:24Z",
     "labels": [
         "component: documentation",

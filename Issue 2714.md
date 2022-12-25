@@ -1,16 +1,17 @@
-# Issue 2714: [with patch, needs review] many interfaces have gp-specific code
+# Issue 2714: [with patch, positive review] many interfaces have gp-specific code
 
 archive/issues_002714.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt looks like template.py was created based on gp.py, but kept some vestiges of code that was only useful for gp.  Then, in an excellent display of cargo-cult programming, this useless code was copied to many other interfaces.\n\nThe attached patch cleans up this useless code.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2714\n\n",
+    "closed_at": "2008-03-29T14:24:16Z",
     "created_at": "2008-03-29T02:20:37Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] many interfaces have gp-specific code",
+    "title": "[with patch, positive review] many interfaces have gp-specific code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2714",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -3,7 +3,8 @@
 archive/issues_000504.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe Lie interface doesn't gracefully handle errors, which totally corrupt the io stream. \n\n```\nsage: A4 = lie('A4')\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n\nsage: A4.multiplicative_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/element.pyx in element.RingElement.multiplicative_order()\n\n/home/was/element.pyx in element.RingElement.is_unit()\n\n<type 'exceptions.NotImplementedError'>:\nsage: A4.i_Cartan()\n\nsage: A4.i_Cartan()\nsage0\nsage: A4.i_Cartan()\n\nArgument types do not match in call. Types are: ==(grp, bin).\nValid argument types are for instance: ==(bin, bin).\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/504\n\n",
+    "body": "Assignee: @mwhansen\n\nThe Lie interface doesn't gracefully handle errors, which totally corrupt the io stream. \n\n```\nsage: A4 = lie('A4')\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n\nsage: A4.multiplicative_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/element.pyx in element.RingElement.multiplicative_order()\n\n/home/was/element.pyx in element.RingElement.is_unit()\n\n<type 'exceptions.NotImplementedError'>:\nsage: A4.i_Cartan()\n\nsage: A4.i_Cartan()\nsage0\nsage: A4.i_Cartan()\n\nArgument types do not match in call. Types are: ==(grp, bin).\nValid argument types are for instance: ==(bin, bin).\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/504\n\n",
+    "closed_at": "2007-08-29T00:02:48Z",
     "created_at": "2007-08-28T23:38:44Z",
     "labels": [
         "component: interfaces",
@@ -16,7 +17,7 @@ archive/issues_000504.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 The Lie interface doesn't gracefully handle errors, which totally corrupt the io stream. 
 

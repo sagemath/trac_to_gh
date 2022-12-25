@@ -1,16 +1,17 @@
-# Issue 6388: Logarithm function log(x) is partially broken for x <= 0
+# Issue 6388: [with patch, positive review] Logarithm function log(x) is partially broken for x <= 0
 
 archive/issues_006388.json:
 ```json
 {
     "body": "Keywords: negative argument, log\n\nAlthough log(x) function in new symbolics is appeared to be defined for entire complex plane, it throws out error sometime \n\n(1) Negative argument\n\n```\nsage: log(-1 + 0*I)\nI*pi\nsage: log(-1)\n...\nValueError: self must be positive\n```\nIt behaves differently for mathematically equivalent arguments.\n\n\n(2) Value of log(x) at x=0\n\n```\nsage: log(0)\n...\nValueError: self must be positive\n```\n\nlog(0) should throw out an unevaluated symbolic expression \"log(0)\" instead of raising error. Depending on the way it appears in an expression, one could use it for simplifications.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6388\n\n",
+    "closed_at": "2009-09-07T16:44:24Z",
     "created_at": "2009-06-23T12:36:04Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Logarithm function log(x) is partially broken for x <= 0",
+    "title": "[with patch, positive review] Logarithm function log(x) is partially broken for x <= 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6388",
     "user": "https://github.com/golam-m-hossain"

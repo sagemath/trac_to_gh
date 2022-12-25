@@ -1,15 +1,16 @@
-# Issue 3676: [with patch, needs review] Refactor graph isom code.
+# Issue 3676: [with patch, positive review] Refactor graph isom code.
 
 archive/issues_003676.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  boothby\n\nKeywords: graphs\n\nAfter this patch, `graph_isom` will be essentially obsolete. Brought to the GNU General Public by Google, Inc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3676\n\n",
+    "closed_at": "2008-08-12T05:00:53Z",
     "created_at": "2008-07-19T00:07:34Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] Refactor graph isom code.",
+    "title": "[with patch, positive review] Refactor graph isom code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3676",
     "user": "https://github.com/rlmill"

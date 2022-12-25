@@ -4,6 +4,7 @@ archive/issues_000375.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen installing the biopython-1.43 spkg in SAGE 2.5.3 the installer hangs at:\n\ncopying mx/COPYRIGHT -> /usr/local/sage/local/lib/python2.5/site-packages/mx\ncopying mx/LICENSE -> /usr/local/sage/local/lib/python2.5/site-packages/mx\nrunning install_egg_info\nWriting /usr/local/sage/local/lib/python2.5/site-packages/egenix_mx_base-2.0.6-py2.5.egg-info\nrunning install\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/375\n\n",
+    "closed_at": "2007-11-03T12:04:18Z",
     "created_at": "2007-05-23T16:00:46Z",
     "labels": [
         "component: packages: standard",

@@ -4,6 +4,7 @@ archive/issues_007190.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  loufer\n\nFrench translation of the document: \"A Tour of Sage\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7190\n\n",
+    "closed_at": "2009-11-17T07:55:45Z",
     "created_at": "2009-10-12T02:06:53Z",
     "labels": [
         "component: documentation"

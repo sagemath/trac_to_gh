@@ -3,7 +3,8 @@
 archive/issues_009950.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  ylchapuy @zimmermann6\n\nRunning `sage -b` with 4.6.alpha1 gives:\n\n```\n[...]\nrunning build_py\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\nrunning build_ext\n[...]\n```\nThe solution is to add an \"empty\" `__init__.py` file.  Mercurial may complain if the file is truly empty.  We can use \n\n # This comment is here so the file is non-empty (so Mercurial will check it in).\n\nsay, instead.\n\nThis is a follow-up to #9395.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9951\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  ylchapuy @zimmermann6\n\nRunning `sage -b` with 4.6.alpha1 gives:\n\n```\n[...]\nrunning build_py\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\nrunning build_ext\n[...]\n```\n**Leif Leonhardy reported the missing files on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/01a01378099b9d5e/866d3b5acff11ba8#866d3b5acff11ba8).**\n\nThe solution is to add an \"empty\" `__init__.py` file.  Mercurial may complain if the file is truly empty.  We can use \n\n # This comment is here so the file is non-empty (so Mercurial will check it in).\n\nsay, instead.\n\nThis is a follow-up to #9395.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9951\n\n",
+    "closed_at": "2010-09-28T09:11:03Z",
     "created_at": "2010-09-19T21:36:49Z",
     "labels": [
         "component: misc",
@@ -31,6 +32,8 @@ package init file 'sage/tests/french_book/__init__.py' not found (or not a regul
 running build_ext
 [...]
 ```
+**Leif Leonhardy reported the missing files on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/01a01378099b9d5e/866d3b5acff11ba8#866d3b5acff11ba8).**
+
 The solution is to add an "empty" `__init__.py` file.  Mercurial may complain if the file is truly empty.  We can use 
 
  # This comment is here so the file is non-empty (so Mercurial will check it in).

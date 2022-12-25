@@ -1,9 +1,10 @@
-# Issue 2806: Sage 3.0.a2: numerical noise in sage/misc/prandom.py doctest
+# Issue 2806: [with patch, positive review] Sage 3.0.a2: numerical noise in sage/misc/prandom.py doctest
 
 archive/issues_002806.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @JohnCremona\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/misc/prandom.py\n**********************************************************************\nFile \"/home/jec/sage-3.0.alpha1/tmp/prandom.py\", line 285:\n    sage: [vonmisesvariate(1.0r, 3.0r) for i in range(1, 5)]\nExpected:\n    [0.89832863935542584, 0.67180300070412846, 2.0308777524813397,\n1.7143252537251459]\nGot:\n    [0.89832863935542584, 0.67180300070412846, 2.0308777524813397,\n1.7143252537251454]\n**********************************************************************\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2806\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @JohnCremona\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/misc/prandom.py\n**********************************************************************\nFile \"/home/jec/sage-3.0.alpha1/tmp/prandom.py\", line 285:\n    sage: [vonmisesvariate(1.0r, 3.0r) for i in range(1, 5)]\nExpected:\n    [0.89832863935542584, 0.67180300070412846, 2.0308777524813397,\n1.7143252537251459]\nGot:\n    [0.89832863935542584, 0.67180300070412846, 2.0308777524813397,\n1.7143252537251454]\n**********************************************************************\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2806\n\n",
+    "closed_at": "2008-04-05T16:19:01Z",
     "created_at": "2008-04-05T14:28:33Z",
     "labels": [
         "component: numerical",
@@ -11,13 +12,13 @@ archive/issues_002806.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Sage 3.0.a2: numerical noise in sage/misc/prandom.py doctest",
+    "title": "[with patch, positive review] Sage 3.0.a2: numerical noise in sage/misc/prandom.py doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2806",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: jkantor
+Assignee: mabshoff
 
 CC:  @JohnCremona
 

@@ -4,6 +4,7 @@ archive/issues_008804.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @robertwb\n\nBring plot/plot3d/parametric_surface.pyx to 100% doctest coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8804\n\n",
+    "closed_at": "2010-05-12T22:49:51Z",
     "created_at": "2010-04-28T15:20:22Z",
     "labels": [
         "component: documentation",

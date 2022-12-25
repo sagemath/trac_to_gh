@@ -4,6 +4,7 @@ archive/issues_001647.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe should do the following:\n\n* add a trivial example spkg \n* add a yet to be determined description of SPKG.txt and its content\n* mandate the use of a hg repo for the top level files\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1647\n\n",
+    "closed_at": "2008-08-31T07:57:08Z",
     "created_at": "2007-12-31T18:12:35Z",
     "labels": [
         "component: documentation",

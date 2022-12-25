@@ -1,16 +1,17 @@
-# Issue 3555: [with patch; needs review] notebook -- fix bug where it saved the notebook every tie it checked for idle worksheets
+# Issue 3555: [with patch; postive review] notebook -- fix bug where it saved the notebook every tie it checked for idle worksheets
 
 archive/issues_003555.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe attached patch fixed a tiny bug in the notebook where it was saving the notebook to disk whenever checking for idle timeouts on worksheets.  Since the idle timeout check is small this had major unintended consequences in that it was constantly causing the notebook to get saved to disk *twice*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3555\n\n",
+    "closed_at": "2008-07-06T09:19:35Z",
     "created_at": "2008-07-06T00:06:04Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] notebook -- fix bug where it saved the notebook every tie it checked for idle worksheets",
+    "title": "[with patch; postive review] notebook -- fix bug where it saved the notebook every tie it checked for idle worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3555",
     "user": "https://github.com/williamstein"

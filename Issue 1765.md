@@ -1,15 +1,16 @@
-# Issue 1765: allow list of variables as second input to solve command (very easy to implement)
+# Issue 1765: [with patch; with positive review] allow list of variables as second input to solve command (very easy to implement)
 
 archive/issues_001765.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @dfdeshom\n\n```\nsage: var(\"s,i,b,m,g\");\nsage: sys = [ m*(1-s) - b*s*i, b*s*i-g*i ];\nsage: equilibria = solve(sys,s,i);\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n> solve's\n> syntax seems assymetric as used here.  Shouldn't the second argument\n> be a sequence of variables?\n\nYou mean like this:\n\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\nThat seems like a really good idea.\nNote that right now at least you can do the following\n(note the *) and it will work:\n\nsage: solve(sys, *[s, i])\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n```\n\nThis would be very easy to implement. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1765\n\n",
+    "closed_at": "2008-03-16T01:07:14Z",
     "created_at": "2008-01-13T05:24:26Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "allow list of variables as second input to solve command (very easy to implement)",
+    "title": "[with patch; with positive review] allow list of variables as second input to solve command (very easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1765",
     "user": "https://github.com/williamstein"

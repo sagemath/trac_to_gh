@@ -4,6 +4,7 @@ archive/issues_007246.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch adds the DeBruijn digraph to the ( still very short ) list of digraphs generators.\n\nMore information here : http://en.wikipedia.org/wiki/De_Bruijn_graph\n\nI found no way to define automatically a layout for this graph. If you have an idea, do not hesitate to tell me :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7246\n\n",
+    "closed_at": "2009-10-21T07:20:50Z",
     "created_at": "2009-10-19T07:00:16Z",
     "labels": [
         "component: graph theory"

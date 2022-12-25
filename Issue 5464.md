@@ -4,6 +4,7 @@ archive/issues_005464.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIf I download sage-3.4.rc1 and type 'make', the documentation does not get built.  This means that clicking \"Help\" in the notebook produces a page with dead links to the tutorial, etc.  Sage absolutely needs this documentation easily available.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5464\n\n",
+    "closed_at": "2009-03-10T06:07:55Z",
     "created_at": "2009-03-10T04:32:02Z",
     "labels": [
         "component: build",

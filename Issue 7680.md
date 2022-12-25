@@ -4,6 +4,7 @@ archive/issues_007680.json:
 ```json
 {
     "body": "Assignee: joyner\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7680\n\n",
+    "closed_at": "2009-12-14T16:34:29Z",
     "created_at": "2009-12-14T02:25:25Z",
     "labels": [
         "component: group theory",

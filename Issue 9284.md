@@ -4,6 +4,7 @@ archive/issues_009284.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nCurrently on SAGE online (at least on http://www.sagenb.org/) account user settings, the user cannot choose what language to have one's SAGE session in.  If this were enabled, then more users might be attracted to SAGE.  Having the user specify his preferred SAGE session language as the default when setting up a new account will attract more users worldwide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9284\n\n",
+    "closed_at": "2021-08-20T13:58:41Z",
     "created_at": "2010-06-20T19:46:48Z",
     "labels": [
         "component: user interface"

@@ -1,16 +1,17 @@
-# Issue 9913: Remove unused libraries from extension modules
+# Issue 9913: Remove some libraries from Cython modules in module_list.py
 
 archive/issues_009913.json:
 ```json
 {
-    "body": "Assignee: @nexttime\n\nCC:  @jhpalmieri @mwhansen @qed777 @kcrisman jpflori\n\nKeywords: module_list.py\n\nMany extension modules in `devel/sage/module_list.py` are linked against libraries they do not use, some at least not directly.\n\nThis is inefficient, isn't nice or at least confusing and can (actually does) cause trouble. \n\nSee e.g. [this comment](http://trac.sagemath.org/sage_trac/ticket/9896#comment:18) for a discussion why.\n\nThis ticket will only address the removal of *some* unnecessary libraries listed; there are most probably more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9914\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @jhpalmieri @mwhansen @qed777 @kcrisman jpflori\n\nKeywords: module_list.py PARI ImportError newforms homspace mwrank upgrade update\n\nMany extension modules in `devel/sage/module_list.py` are linked against libraries they do not use, some at least not directly.\n\nThis ticket will only address the removal of *some* unnecessary libraries listed; there are most probably more.\n\n---\n\nApply [attachment:trac_9914.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9914\n\n",
+    "closed_at": "2014-02-04T21:10:19Z",
     "created_at": "2010-09-16T08:16:45Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Remove unused libraries from extension modules",
+    "title": "Remove some libraries from Cython modules in module_list.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9913",
     "user": "https://github.com/nexttime"
@@ -20,15 +21,15 @@ Assignee: @nexttime
 
 CC:  @jhpalmieri @mwhansen @qed777 @kcrisman jpflori
 
-Keywords: module_list.py
+Keywords: module_list.py PARI ImportError newforms homspace mwrank upgrade update
 
 Many extension modules in `devel/sage/module_list.py` are linked against libraries they do not use, some at least not directly.
 
-This is inefficient, isn't nice or at least confusing and can (actually does) cause trouble. 
-
-See e.g. [this comment](http://trac.sagemath.org/sage_trac/ticket/9896#comment:18) for a discussion why.
-
 This ticket will only address the removal of *some* unnecessary libraries listed; there are most probably more.
+
+---
+
+Apply [attachment:trac_9914.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9914
 

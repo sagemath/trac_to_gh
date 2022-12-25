@@ -4,6 +4,7 @@ archive/issues_003817.json:
 ```json
 {
     "body": "Assignee: boothby\n\n I just tried and it seems to \nbe COMPLETELY BROKEN in that it is impossible to login.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3817\n\n",
+    "closed_at": "2008-08-12T22:17:15Z",
     "created_at": "2008-08-12T13:18:47Z",
     "labels": [
         "component: notebook",

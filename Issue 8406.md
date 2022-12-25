@@ -4,6 +4,7 @@ archive/issues_008406.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\ntwo examples:\n\n```\nsage: G=Graph()\nsage: R.<a>=GF(3^3)\nsage: G.add_vertex(a^2)\nsage: G.vertices()\n[9]\n```\nThis should be `[a]`, but `int(a)=9`\n\n```\nsage: R.<x>=GF(3^3,'a')[]\nsage: G.add_vertex(x)\nValueError\n```\nThis should work as `x` is hashable.\n\n`int(x)` return a `ValueError`, but the code only tests for `TypeError`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8406\n\n",
+    "closed_at": "2010-03-11T04:44:27Z",
     "created_at": "2010-03-01T08:28:27Z",
     "labels": [
         "component: graph theory",

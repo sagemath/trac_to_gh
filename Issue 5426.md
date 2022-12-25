@@ -4,6 +4,7 @@ archive/issues_005426.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5426\n\n",
+    "closed_at": "2015-01-13T01:15:55Z",
     "created_at": "2009-03-03T09:24:17Z",
     "labels": [
         "component: coercion",

@@ -1,15 +1,16 @@
-# Issue 2108: atlas tuning info for intel prescott cpus
+# Issue 2108: [with ATLAS tuning info] atlas tuning info for intel prescott cpus
 
 archive/issues_002108.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAttached file includes ATLAS tuning information for Intel prescott cpu's. It was generated using the instructions in ticket:1886.\n\nHere is the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/msg/b61176e3e1a2189e\n\nSince ATLAS doesn't detect my cpu properly, the architecture name it uses is `UNKNOWNx8632SSE3`. Should I do anything to change this?\n\nHere is the output from `/proc/cpuinfo`:\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 15\nmodel           : 6\nmodel name      : Intel(R) Pentium(R) D CPU 3.40GHz\nstepping        : 4\ncpu MHz         : 3400.160\ncache size      : 2048 KB\nphysical id     : 0\nsiblings        : 2\ncore id         : 1\ncpu cores       : 2\nfdiv_bug        : no\nhlt_bug         : no\nf00f_bug        : no\ncoma_bug        : no\nfpu             : yes\nfpu_exception   : yes\ncpuid level     : 6\nwp              : yes\nflags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl est cid cx16 xtpr lahf_lm\nbogomips        : 6800.17\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2108\n\n",
+    "closed_at": "2008-03-20T10:56:57Z",
     "created_at": "2008-02-08T10:36:48Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "atlas tuning info for intel prescott cpus",
+    "title": "[with ATLAS tuning info] atlas tuning info for intel prescott cpus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2108",
     "user": "https://github.com/burcin"

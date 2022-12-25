@@ -1,16 +1,17 @@
-# Issue 2362: Integer digits method
+# Issue 2362: [with patch, positive review] Integer digits method
 
 archive/issues_002362.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe digits method should take large bases.\n\n```\nsage: n=982352935629356293856239856239852352352\nsage: n.digits(928365923856928)\n...\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2362\n\n",
+    "closed_at": "2008-03-16T00:07:23Z",
     "created_at": "2008-03-01T20:09:20Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Integer digits method",
+    "title": "[with patch, positive review] Integer digits method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2362",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

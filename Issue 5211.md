@@ -1,16 +1,18 @@
-# Issue 5211: add charset header to worksheet html header
+# Issue 5211: [with patch, positive review] add charset header to worksheet html header
 
 archive/issues_005211.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nRight now, the html generated for a worksheet does not include a header specifying the encoding, which confuses browsers: http://groups.google.com/group/sage-support/t/3d4b400f5afe66fb\n\nAs suggested by the OP of that thread, we should add\n\n```\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n```\nto the worksheet html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5211\n\n",
+    "closed_at": "2009-03-23T21:36:33Z",
     "created_at": "2009-02-09T04:04:50Z",
     "labels": [
         "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "add charset header to worksheet html header",
+    "title": "[with patch, positive review] add charset header to worksheet html header",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5211",
     "user": "https://github.com/dandrake"

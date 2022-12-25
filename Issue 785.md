@@ -4,6 +4,7 @@ archive/issues_000785.json:
 ```json
 {
     "body": "Assignee: @syazdani77\n\nKeywords: smith_form\n\nThe smith_form function for integer dense matrices are printed backward from the usual notation. This is because pari prints them backward.\n\nThe enclosed patch fixes this problem, by permuting the entries appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/785\n\n",
+    "closed_at": "2007-10-02T13:43:37Z",
     "created_at": "2007-10-02T13:38:16Z",
     "labels": [
         "component: linear algebra",

@@ -4,6 +4,7 @@ archive/issues_009700.json:
 ```json
 {
     "body": "Assignee: @rhinton\n\nCC:  @rlmill @nathanncohen\n\nKeywords: graphs, Cython, sparse\n\nThe current `sparse_graph.pxd` does not export `check_edge_label`, which is necessary to translate Python object edge labels to the internal integer indices.  Exporting this function call enables writing Cython code based on the fast sparse graph implementation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9700\n\n",
+    "closed_at": "2010-08-09T09:49:06Z",
     "created_at": "2010-08-06T19:38:52Z",
     "labels": [
         "component: graph theory"

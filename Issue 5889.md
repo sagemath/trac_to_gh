@@ -1,16 +1,17 @@
-# Issue 5889: [with patch, needs review] random simplicial complexes
+# Issue 5889: [with patch, positive review] random simplicial complexes
 
 archive/issues_005889.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nAdd random simplicial complexes to the class of examples of simplicial complexes, so you can do\n\n```\nsage: simplicial_complexes.RandomComplex(6, 2)\n```\nto get a random simplicial complex with 6 vertices, all possible edges, and the possible 2-dimensional simplices (triangles) randomly included (or not).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5889\n\n",
+    "closed_at": "2009-05-11T13:19:38Z",
     "created_at": "2009-04-24T17:14:45Z",
     "labels": [
-        "component: misc",
+        "component: algebraic topology",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] random simplicial complexes",
+    "title": "[with patch, positive review] random simplicial complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5889",
     "user": "https://github.com/jhpalmieri"

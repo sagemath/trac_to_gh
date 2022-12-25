@@ -1,9 +1,10 @@
-# Issue 2022: [with patch] bug with load and loads when data is not compressed during save
+# Issue 2022: [with patch, with positive review] bug with load and loads when data is not compressed during save
 
 archive/issues_002022.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis also causes a number of other problems I've seen, e.g., one of the problems listed in dsage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2022\n\n",
+    "closed_at": "2008-02-01T04:06:13Z",
     "created_at": "2008-02-01T03:58:56Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_002022.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] bug with load and loads when data is not compressed during save",
+    "title": "[with patch, with positive review] bug with load and loads when data is not compressed during save",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2022",
     "user": "https://github.com/williamstein"

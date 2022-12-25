@@ -1,4 +1,4 @@
-# Issue 5288: cython gray code iterator for k-combinations of a set
+# Issue 5288: [with patch, not ready for review] cython gray code iterator for k-combinations of a set
 
 archive/issues_005288.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_005288.json:
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "cython gray code iterator for k-combinations of a set",
+    "title": "[with patch, not ready for review] cython gray code iterator for k-combinations of a set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5288",
     "user": "https://trac.sagemath.org/admin/accounts/users/dgordon"

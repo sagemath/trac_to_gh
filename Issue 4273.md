@@ -1,9 +1,10 @@
-# Issue 4273: Failure on Jordan form transformation matrices
+# Issue 4273: [with patch, positive review] Failure on Jordan form transformation matrices
 
 archive/issues_004273.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: jordan form, matrix\n\nGetting the change of basis matrix for Jordan forms fails if there are multiple blocks with the same eigenvalue, e.g.:\n\n```\nm = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])\nm.jordan_form(base_ring=QQ, transformation=True) \n```\ngives \n\n```\nValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0\n```\nThis was reported on sage-support by Rob Beezer, subject line is: \"Transformation to Jordan form for tame 6x6 integer matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4273\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @jasongrout\n\nKeywords: jordan form, matrix\n\nGetting the change of basis matrix for Jordan forms fails if there are multiple blocks with the same eigenvalue, e.g.:\n\n```\nm = matrix(QQ,[[0,1,0], [0,0,0], [0,0,0]])\nm.jordan_form(base_ring=QQ, transformation=True) \n```\ngives \n\n```\nValueError: cannot compute the basis of the Jordan block of size 2 with eigenvalue 0\n```\nThis was reported on sage-support by Rob Beezer, subject line is: \"Transformation to Jordan form for tame 6x6 integer matrix\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/4273\n\n",
+    "closed_at": "2008-11-21T08:21:09Z",
     "created_at": "2008-10-13T11:59:45Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_004273.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Failure on Jordan form transformation matrices",
+    "title": "[with patch, positive review] Failure on Jordan form transformation matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4273",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @jasongrout
 

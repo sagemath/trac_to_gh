@@ -1,22 +1,23 @@
-# Issue 5826: add nodoctest to sagedoc.py and sageinspect.py to work around #5806
+# Issue 5826: [with patch, positive review] add nodoctest to sagedoc.py and sageinspect.py to work around #5806
 
 archive/issues_005826.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTo get 3.4.1 out, add nodoctest to sagedoc.py and sageinspect.py to work around the problems found at #5806.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5826\n\n",
+    "body": "Assignee: @dandrake\n\nTo get 3.4.1 out, add nodoctest to sagedoc.py and sageinspect.py to work around the problems found at #5806.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5826\n\n",
+    "closed_at": "2009-04-20T03:23:42Z",
     "created_at": "2009-04-20T03:03:09Z",
     "labels": [
-        "component: algebra",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "add nodoctest to sagedoc.py and sageinspect.py to work around #5806",
+    "title": "[with patch, positive review] add nodoctest to sagedoc.py and sageinspect.py to work around #5806",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5826",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tbd
+Assignee: @dandrake
 
 To get 3.4.1 out, add nodoctest to sagedoc.py and sageinspect.py to work around the problems found at #5806.
 

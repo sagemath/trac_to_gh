@@ -1,4 +1,4 @@
-# Issue 6319: optional doctest failure -- mistake in constructions guide wrt maxima interface
+# Issue 6319: [with patch, needs work] optional doctest failure -- mistake in constructions guide wrt maxima interface
 
 archive/issues_006319.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_006319.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "optional doctest failure -- mistake in constructions guide wrt maxima interface",
+    "title": "[with patch, needs work] optional doctest failure -- mistake in constructions guide wrt maxima interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6319",
     "user": "https://github.com/williamstein"

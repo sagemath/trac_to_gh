@@ -1,15 +1,16 @@
-# Issue 1507: [with patch] plotting -- document how to use pylab / matlab style plotting from sage
+# Issue 1507: [with patch, with positive review] plotting -- document how to use pylab / matlab style plotting from sage
 
 archive/issues_001507.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1507\n\n",
+    "closed_at": "2007-12-15T06:47:58Z",
     "created_at": "2007-12-14T17:53:05Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "[with patch] plotting -- document how to use pylab / matlab style plotting from sage",
+    "title": "[with patch, with positive review] plotting -- document how to use pylab / matlab style plotting from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1507",
     "user": "https://github.com/williamstein"

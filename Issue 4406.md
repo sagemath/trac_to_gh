@@ -1,16 +1,17 @@
-# Issue 4406: make polynomail truncation cpdef method
+# Issue 4406: [with patch, positive review] make polynomial truncation cpdef method
 
 archive/issues_004406.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @craigcitro\n\nCurrently we have _c variants, some of which call one direction, and some which call the other. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4406\n\n",
+    "closed_at": "2008-11-02T00:47:58Z",
     "created_at": "2008-10-30T20:07:21Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "make polynomail truncation cpdef method",
+    "title": "[with patch, positive review] make polynomial truncation cpdef method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4406",
     "user": "https://github.com/robertwb"

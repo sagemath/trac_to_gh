@@ -1,4 +1,4 @@
-# Issue 6467: all primitive roots modulo n
+# Issue 6467: [with patch, needs work] all primitive roots modulo n
 
 archive/issues_006467.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_006467.json:
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "all primitive roots modulo n",
+    "title": "[with patch, needs work] all primitive roots modulo n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6467",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

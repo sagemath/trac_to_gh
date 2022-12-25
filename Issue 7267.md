@@ -4,6 +4,7 @@ archive/issues_007267.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jasongrout @williamstein\n\nA compact alternative to [Farbtastic](http://acko.net/dev/farbtastic) would be useful in space-constrained interacts and notebook/user settings pages.\n\nCandidates:\n\n* [Color Picker](http://www.eyecon.ro/colorpicker/)\n* [jPicker](http://www.digitalmagicpro.com/jPicker/)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7267\n\n",
+    "closed_at": "2009-12-09T01:12:17Z",
     "created_at": "2009-10-23T07:36:06Z",
     "labels": [
         "component: notebook",

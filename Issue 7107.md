@@ -1,9 +1,10 @@
-# Issue 7107: sage does not build on ppc os x 10.4 anymore, failing with mpfr
+# Issue 7107: [with solution, needs patch and review] sage does not build on ppc os x 10.4 anymore, failing with mpfr
 
 archive/issues_007107.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  georgsweber @kcrisman\n\nThe following is on skynet's varro\n\n```\n/bin/sh ../libtool --tag=CC   --mode=link gcc  -O2  -Wl,-search_paths_first  -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib -o troot troot.o libfrtests.la -lm ../libmpfr.la -lgmp\nlibtool: link: gcc -O2 -Wl,-search_paths_first -o .libs/troot troot.o  -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib ./.libs/libfrtests.a -lm ../.libs/libmpfr.dylib /home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib/libgmp.dylib\npowerpc-apple-darwin8-gcc-4.0.1: Internal error: Killed (program collect2)\nPlease submit a full bug report.\nSee <URL:http://developer.apple.com/bugreporter> for instructions.\nmake[4]: *** [troot] Error 1\nmake[3]: *** [check-am] Error 2\nmake[2]: *** [check-recursive] Error 1\nThere was a problem during the mpfr tests.\n\nreal    6m19.637s\nuser    2m23.696s\nsys     2m28.620s\nsage: An error occurred while installing mpfr-2.4.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/spkg/build/mpfr-2.4.1.p0 and type 'make'.\nInstead type \"/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/spkg/build/mpfr-2.4.1.p0\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/mpfr-2.4.1.p0] Error 1\n\nreal    62m55.453s\nuser    34m21.128s\nsys     16m39.873s\nError building Sage.\n./sage -b\nThere is no directory '/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/devel/sage'\n\nreal    0m0.132s\nuser    0m0.019s\nsys     0m0.060s\nmake: *** [testlong] Error 1\nvarro:~/screen/varro wstein$ gcc -v\nUsing built-in specs.\nTarget: powerpc-apple-darwin8\nConfigured with: /var/tmp/gcc/gcc-5370~2/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib --build=powerpc-apple-darwin8 --host=powerpc-apple-darwin8 --target=powerpc-apple-darwin8\nThread model: posix\ngcc version 4.0.1 (Apple Computer, Inc. build 5370)\n```\n\nNote that the above error occurs after mpfr successfully builds during building of the test suite.  Possible fixes:\n\n* do not run spkg-check on OS X 10.4 (then the build continues fine... for a while -- i only watched a few minutes)\n\n* fix the source of the problem (probably a compiler bug on OS X, so impossible)\n\n* deprecate support for OS X 10.4.\n\nI like the first option above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7107\n\n",
+    "closed_at": "2009-10-14T16:09:48Z",
     "created_at": "2009-10-04T06:15:26Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_007107.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "sage does not build on ppc os x 10.4 anymore, failing with mpfr",
+    "title": "[with solution, needs patch and review] sage does not build on ppc os x 10.4 anymore, failing with mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7107",
     "user": "https://github.com/williamstein"

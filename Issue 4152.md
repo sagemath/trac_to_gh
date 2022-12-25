@@ -1,22 +1,23 @@
-# Issue 4152: parametric_plot should take the variable range as (var, min, max) like plot
+# Issue 4152: [with patch, positive review] parametric_plot should take the variable range as (var, min, max) like plot
 
 archive/issues_004152.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work to be consistent with plot:\n\n```\nsage: parametric_plot((2*x, x^2+1), (x,0,1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\nTypeError: parametric_plot() takes exactly 3 arguments (2 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4152\n\n",
+    "body": "Assignee: @mwhansen\n\nThis should work to be consistent with plot:\n\n```\nsage: parametric_plot((2*x, x^2+1), (x,0,1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\nTypeError: parametric_plot() takes exactly 3 arguments (2 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4152\n\n",
+    "closed_at": "2009-01-23T10:02:01Z",
     "created_at": "2008-09-19T16:35:56Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "parametric_plot should take the variable range as (var, min, max) like plot",
+    "title": "[with patch, positive review] parametric_plot should take the variable range as (var, min, max) like plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4152",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 This should work to be consistent with plot:
 

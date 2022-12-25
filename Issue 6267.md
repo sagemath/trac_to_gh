@@ -4,9 +4,11 @@ archive/issues_006267.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  mvngu\n\nKeywords: latex, variables\n\nSage (4.0.1) typesets two different variables as same latex string\n\n```\nvar('xi, xi_')\nlatex(xi)\n\\xi\nlatex(xi_)\n\\xi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6267\n\n",
+    "closed_at": "2010-02-02T05:04:52Z",
     "created_at": "2009-06-12T15:19:15Z",
     "labels": [
         "component: misc",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

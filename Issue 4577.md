@@ -1,16 +1,17 @@
-# Issue 4577: [with patch, needs review] simple interface to scipy.optimize.leastsq
+# Issue 4577: [with patch, positive review] simple interface to scipy.optimize.leastsq
 
 archive/issues_004577.json:
 ```json
 {
     "body": "Assignee: whuss\n\nThis patch adds a function `find_fit()`, which works similarly to Mathematica's `FindFit[]`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4577\n\n",
+    "closed_at": "2008-11-23T09:46:20Z",
     "created_at": "2008-11-21T15:06:00Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] simple interface to scipy.optimize.leastsq",
+    "title": "[with patch, positive review] simple interface to scipy.optimize.leastsq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4577",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

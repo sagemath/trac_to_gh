@@ -3,10 +3,11 @@
 archive/issues_009505.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe following is ok:\n\n```\nsage: var('x,y,z')\nsage: f=x*y*z^2\nsage: f.coeff(z^2)\nx*y\n```\nHowever the following is not:\n\n```\nsage: f.coeff(x*y)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9505\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nThe following is ok:\n\n```\nsage: var('x,y,z')\nsage: f=x*y*z^2\nsage: f.coeff(z^2)\nx*y\n```\nHowever the following is not:\n\n```\nsage: f.coeff(x*y)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9505\n\n",
+    "closed_at": "2014-02-22T06:45:52Z",
     "created_at": "2010-07-15T09:12:14Z",
     "labels": [
-        "component: commutative algebra",
+        "component: symbolics",
         "critical",
         "bug"
     ],
@@ -17,7 +18,9 @@ archive/issues_009505.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @malb
+Assignee: @burcin
+
+Keywords: pynac
 
 The following is ok:
 

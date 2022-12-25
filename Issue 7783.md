@@ -1,17 +1,18 @@
-# Issue 7783: 3d graphics (viewed with jmol) do not work from the command line on OS X 10.6 sage-4.3
+# Issue 7783: 3d graphics (viewed with jmol) do not work from the command line in sage-4.3
 
 archive/issues_007783.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: sphere()\n```\n\ndoesn't work.  The same from the Sage notebook works fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7783\n\n",
+    "closed_at": "2010-01-03T20:44:33Z",
     "created_at": "2009-12-29T06:28:44Z",
     "labels": [
         "component: graphics",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "3d graphics (viewed with jmol) do not work from the command line on OS X 10.6 sage-4.3",
+    "title": "3d graphics (viewed with jmol) do not work from the command line in sage-4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7783",
     "user": "https://github.com/williamstein"

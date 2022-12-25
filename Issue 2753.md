@@ -1,15 +1,16 @@
-# Issue 2753: [with patch, needs review] new "randstate" framework for a global Sage random number seed
+# Issue 2753: [with patch, positive review pending] new "randstate" framework for a global Sage random number seed
 
 archive/issues_002753.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attached patch keeps track of the random number seed used on Sage startup, and lets you set a single random number seed, which gets propagated on demand into random number generators for GMP (+ MPFR), Python, NTL, Pari, gp, GAP, and libc (so far).\n\nAlso, it moves away from libc's random() in favor of the other generators mentioned above, which are portable across operating systems and architectures; this means that doctest results using random numbers are now reproducible, so I've removed many \"# random\" from the doctests.\n\nPasses testall on the platforms I have access to (32-bit x86 Linux, 64-bit x86 Linux, and 32-bit x86 OSX).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2753\n\n",
+    "closed_at": "2008-04-04T05:05:09Z",
     "created_at": "2008-04-01T14:28:37Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] new \"randstate\" framework for a global Sage random number seed",
+    "title": "[with patch, positive review pending] new \"randstate\" framework for a global Sage random number seed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2753",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

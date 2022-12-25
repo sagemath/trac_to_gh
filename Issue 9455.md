@@ -3,7 +3,7 @@
 archive/issues_009455.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nThis is a port of David Kohel's MAGMA code to compute dimensions of the eigenspaces for the Atkin-Lehner operators acting on spaces of cusp forms of weight 2 (see here for the original):\n\nhttp://echidna.maths.usyd.edu.au/echidna/dbs/atkin-lehner/index.html\n\nThese methods do not rely on computing explicit bases of newforms, instead using formulae about the ramification points of the Atkin-Lehner operator. \n\nThese functions use the class number method qfbclassno() from Pari/GP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9455\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nKeywords: atkin lehner\n\nThis is a port of David Kohel's MAGMA code to compute dimensions of the eigenspaces for the Atkin-Lehner operators acting on spaces of cusp forms of weight 2 (see here for the original):\n\nhttp://echidna.maths.usyd.edu.au/echidna/dbs/atkin-lehner/index.html\n\nThese methods do not rely on computing explicit bases of newforms, instead using formulae about the ramification points of the Atkin-Lehner operator. \n\nThese functions use the class number method qfbclassno() from Pari/GP.\n\nNOTES: the functions for newforms are really slow right now (much slower than MAGMA). \n\nThe public methods supplied here are:\n\n```\ndef modular_genusX0(self,w):\ndef atkin_lehner_eigenspace_dimensions(self):\ndef new_subspace_dimensionX0(self):\ndef atkin_lehner_new_eigenspace_dimension(self,w):\ndef old_subspace_dimension(self,M,R,w):\ndef atkin_lehner_new_eigenspace_dimensions(self):\n```\nIs this too many? the most important two are atkin_lehner_eigenspace_dimensions and atkin_lehner_new_eigenspace_dimension as those give the really important data about spaces of modular forms. We could make the others private if we wanted to and not lose (too) much.\n\nApply [attachment:trac_9455_atkin_lehner_dim.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9455\n\n",
     "created_at": "2010-07-08T15:10:40Z",
     "labels": [
         "component: modular forms",
@@ -20,6 +20,8 @@ Assignee: @craigcitro
 
 CC:  @williamstein
 
+Keywords: atkin lehner
+
 This is a port of David Kohel's MAGMA code to compute dimensions of the eigenspaces for the Atkin-Lehner operators acting on spaces of cusp forms of weight 2 (see here for the original):
 
 http://echidna.maths.usyd.edu.au/echidna/dbs/atkin-lehner/index.html
@@ -27,6 +29,22 @@ http://echidna.maths.usyd.edu.au/echidna/dbs/atkin-lehner/index.html
 These methods do not rely on computing explicit bases of newforms, instead using formulae about the ramification points of the Atkin-Lehner operator. 
 
 These functions use the class number method qfbclassno() from Pari/GP.
+
+NOTES: the functions for newforms are really slow right now (much slower than MAGMA). 
+
+The public methods supplied here are:
+
+```
+def modular_genusX0(self,w):
+def atkin_lehner_eigenspace_dimensions(self):
+def new_subspace_dimensionX0(self):
+def atkin_lehner_new_eigenspace_dimension(self,w):
+def old_subspace_dimension(self,M,R,w):
+def atkin_lehner_new_eigenspace_dimensions(self):
+```
+Is this too many? the most important two are atkin_lehner_eigenspace_dimensions and atkin_lehner_new_eigenspace_dimension as those give the really important data about spaces of modular forms. We could make the others private if we wanted to and not lose (too) much.
+
+Apply [attachment:trac_9455_atkin_lehner_dim.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9455
 

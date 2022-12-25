@@ -1,9 +1,10 @@
-# Issue 4679: Spelling errors in documentation for sage.rings.polynomial.polynomial_element
+# Issue 4679: [with patch, positive review] Spelling errors in documentation for sage.rings.polynomial.polynomial_element
 
 archive/issues_004679.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: polynomial, documentation\n\nThere are a number of small spelling errors in the docstrings for the class sage.rings.polynomial.polynomial_element. \n\nA patch will be forthcoming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4679\n\n",
+    "closed_at": "2008-12-04T13:36:25Z",
     "created_at": "2008-12-02T18:17:36Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_004679.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Spelling errors in documentation for sage.rings.polynomial.polynomial_element",
+    "title": "[with patch, positive review] Spelling errors in documentation for sage.rings.polynomial.polynomial_element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4679",
     "user": "https://github.com/tjl"

@@ -1,16 +1,17 @@
-# Issue 3391: update scipy to match the numpy 1.1.0 release
+# Issue 3391: [with spkg, positive review] update scipy to 0.7
 
 archive/issues_003391.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor\n\n#3390 updates numpy to 1.1.0. Since that no longer works with the last stable release we also need to upgrade scipy to svn - figure out which revision to use.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3391\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor\n\nAn spkg for this is at http://sage.math.washington.edu/home/jason/scipy-0.7.spkg \n\nThe patch below should be applied too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3391\n\n",
+    "closed_at": "2009-06-12T06:58:21Z",
     "created_at": "2008-06-10T19:06:36Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "update scipy to match the numpy 1.1.0 release",
+    "title": "[with spkg, positive review] update scipy to 0.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3391",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,7 +21,9 @@ Assignee: mabshoff
 
 CC:  @jasongrout jkantor
 
-#3390 updates numpy to 1.1.0. Since that no longer works with the last stable release we also need to upgrade scipy to svn - figure out which revision to use.
+An spkg for this is at http://sage.math.washington.edu/home/jason/scipy-0.7.spkg 
+
+The patch below should be applied too.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3391
 

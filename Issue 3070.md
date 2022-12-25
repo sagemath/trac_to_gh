@@ -1,16 +1,17 @@
-# Issue 3070: bug in SymmetricGroup(1).cayley_graph()
+# Issue 3070: [with patch, positive review] bug in SymmetricGroup(1).cayley_graph()
 
 archive/issues_003070.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn https://groups.google.com/group/sage-support/browse_thread/thread/443ce49730b43396 M. Fix reported:\n\n```\nHello-\nI input the following:\n\nsage: s1 = SymmetricGroup(1)\nsage: s = s1.cayley_graph()\nsage: s.vertices()\n[]\n\nShouldn't the set of vertices have one element in it for the\nidentity?  s1 reports this element, but as shown the graph does not.\nI suppose this is trivial, but it seems like it should be fixed at\nsome point.  I am, however, still fairly new to SAGE, and could easily\nbe missing something.  Any thoughts on this? \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3070\n\n",
+    "closed_at": "2008-05-02T17:07:53Z",
     "created_at": "2008-05-01T05:20:47Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "bug in SymmetricGroup(1).cayley_graph()",
+    "title": "[with patch, positive review] bug in SymmetricGroup(1).cayley_graph()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3070",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

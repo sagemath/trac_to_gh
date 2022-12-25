@@ -1,16 +1,17 @@
-# Issue 2766: graph adjacency matrix defaults to sparse
+# Issue 2766: [with patch, positive review] graph adjacency matrix defaults to sparse
 
 archive/issues_002766.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nWhen a graph is small or dense, the adjacency matrix should be a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2766\n\n",
+    "closed_at": "2008-04-02T19:27:38Z",
     "created_at": "2008-04-02T02:24:18Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "graph adjacency matrix defaults to sparse",
+    "title": "[with patch, positive review] graph adjacency matrix defaults to sparse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2766",
     "user": "https://github.com/jasongrout"

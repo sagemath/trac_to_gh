@@ -4,6 +4,7 @@ archive/issues_009074.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nthiery @jhpalmieri @jasongrout\n\nExamples of recent progress at:\n\nhttp://wiki.sagemath.org/daysff/tkz-graphs\n\nIssue created by migration from https://trac.sagemath.org/ticket/9074\n\n",
+    "closed_at": "2011-01-12T06:32:24Z",
     "created_at": "2010-05-28T05:33:11Z",
     "labels": [
         "component: graph theory",

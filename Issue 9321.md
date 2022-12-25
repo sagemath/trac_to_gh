@@ -4,9 +4,11 @@ archive/issues_009321.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nWhen did we hijack the sum function? Based on the documentation there, I have (today alone) had four different people come up to me and ask why something like the following doesn't work:\n\n```\nsage: sum(Integer(x), x, 0, 9)\n```\n\nI know the reasons this shouldn't work, but newbies definitely don't. It should say something about how to do\n\n```\nsage: sum( Integer(x) for x in range(10) )\n```\nbefore \"getting all symbolic.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9321\n\n",
+    "closed_at": "2014-06-26T01:50:41Z",
     "created_at": "2010-06-24T00:01:48Z",
     "labels": [
         "component: documentation",
+        "critical",
         "bug"
     ],
     "title": "Documentation for sum() function should indicate Python syntax *first*",

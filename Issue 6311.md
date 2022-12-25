@@ -3,10 +3,11 @@
 archive/issues_006311.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/modular/ssmod/ssmod.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/modular/ssmod/ssmod.py\", line 571:\n    sage: supersingular_j(GF(15073^2,'a'))  # optional -- requires database\nExpected:\n    10630*a + 6033\nGot:\n    4443*a + 13964\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_ssmod.py\n\t [20.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6311\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/modular/ssmod/ssmod.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/modular/ssmod/ssmod.py\", line 571:\n    sage: supersingular_j(GF(15073^2,'a'))  # optional -- requires database\nExpected:\n    10630*a + 6033\nGot:\n    4443*a + 13964\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_ssmod.py\n [20.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6311\n\n",
+    "closed_at": "2015-03-25T00:26:13Z",
     "created_at": "2009-06-16T14:40:29Z",
     "labels": [
-        "component: packages: optional",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -32,7 +33,7 @@ Got:
    1 of   5 in __main__.example_5
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_ssmod.py
-	 [20.9 s]
+ [20.9 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6311

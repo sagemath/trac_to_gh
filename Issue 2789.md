@@ -1,22 +1,26 @@
-# Issue 2789: multivariate polynomials over residue fields of number fields are broken
+# Issue 2789: [with patch, positive review] multivariate polynomials over residue fields of number fields are broken
 
 archive/issues_002789.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis example from Genya Zaytman:\n\n```\nsage: F1.<u> = NumberField(x^6 + 6*x^5 + 124*x^4 + 452*x^3 + 4336*x^2 + 8200*x + 42316)\nsage: reduct_id = F1.factor_integer(47)[0][0]\nsage: Rf = F1.residue_field(reduct_id)   # = GF(47^3)\nsage: R1.<X,Y> = PolynomialRing(Rf)\nsage: ubar = Rf(u)\nsage: I = ideal([ubar*X+Y])\nsage: I.groebner_basis()\n[boom]\n```\n\nBasically all we're doing is working with polynomials over a finite field. Perhaps the singular interface can't handle the way the field is presented, or something like that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2789\n\n",
+    "body": "Assignee: @malb\n\nKeywords: residue field multivariate prime groebner basis\n\nThis example from Genya Zaytman:\n\n```\nsage: F1.<u> = NumberField(x^6 + 6*x^5 + 124*x^4 + 452*x^3 + 4336*x^2 + 8200*x + 42316)\nsage: reduct_id = F1.factor_integer(47)[0][0]\nsage: Rf = F1.residue_field(reduct_id)   # = GF(47^3)\nsage: R1.<X,Y> = PolynomialRing(Rf)\nsage: ubar = Rf(u)\nsage: I = ideal([ubar*X+Y])\nsage: I.groebner_basis()\n[boom]\n```\n\nBasically all we're doing is working with polynomials over a finite field. Perhaps the singular interface can't handle the way the field is presented, or something like that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2789\n\n",
+    "closed_at": "2009-01-23T02:33:12Z",
     "created_at": "2008-04-03T03:50:11Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: commutative algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "multivariate polynomials over residue fields of number fields are broken",
+    "title": "[with patch, positive review] multivariate polynomials over residue fields of number fields are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2789",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: @malb
+
+Keywords: residue field multivariate prime groebner basis
 
 This example from Genya Zaytman:
 

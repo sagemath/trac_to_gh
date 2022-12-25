@@ -4,6 +4,7 @@ archive/issues_008754.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n```\n1. Doctest: \n       sage -t -sagenb \n2. Run the Selenium test suite:\n       sage -python sagenb/testing/run_tests.py \n\nTo use Selenium, you must visit http://seleniumhq.org/download/ and:\n\n      * Download and extract Selenium RC (\"the Selenium Remote Control\")\n\n      * Run it as follows on Linux:\n             $ cd /path/to/selenium-remote-control-1.0.3/selenium-server-1.0.3\n             $ java -jar selenium-server.jar\n             $ cd /path/to/sagenb-0.8/src/sagenb\n             $ sage  -python sagenb/testing/run_tests.py\n\n      * Run it as follows on OS X:\n             $ cd /path/to/selenium-remote-control-1.0.3/selenium-server-1.0.3\n             $ cd /path/to/sagenb-0.8/src/sagenb\n             $ sage\n             sage: import sagenb.testing.run_tests as rt \n             sage: rt.setup_tests('localhost', False, '*firefox')\n             sage: rt.run_any()\n```\n\nThat the instructions for OS X are different is probably a bug. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8754\n\n",
+    "closed_at": "2020-08-19T12:34:43Z",
     "created_at": "2010-04-24T21:00:55Z",
     "labels": [
         "component: notebook",

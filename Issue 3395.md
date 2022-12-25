@@ -1,9 +1,10 @@
-# Issue 3395: [with patch, needs review] pbuild emacs fix
+# Issue 3395: [with patch, positive review] emacs temporary files prevent pbuild from pbuilding
 
 archive/issues_003395.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\nEmacs prevents pbuild from building.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3395\n\n",
+    "closed_at": "2008-06-11T03:50:10Z",
     "created_at": "2008-06-11T03:45:23Z",
     "labels": [
         "component: pbuild",
@@ -11,7 +12,7 @@ archive/issues_003395.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] pbuild emacs fix",
+    "title": "[with patch, positive review] emacs temporary files prevent pbuild from pbuilding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3395",
     "user": "https://github.com/garyfurnish"

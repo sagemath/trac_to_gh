@@ -1,22 +1,23 @@
-# Issue 1361: reimplement graph generation
+# Issue 1361: [with patch, with positive review] reimplement graph generation
 
 archive/issues_001361.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nChanges:\n1. Redefine order to be number of edges.\n2. Start with empty graph.\n3. Augment by adding 1 edge.\n4. Cython-ize.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1361\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nChanges:\n1. Redefine order to be number of edges.\n2. Start with empty graph.\n3. Augment by adding 1 edge.\n4. Cython-ize.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1361\n\n",
+    "closed_at": "2007-12-02T08:09:11Z",
     "created_at": "2007-12-02T04:39:43Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "reimplement graph generation",
+    "title": "[with patch, with positive review] reimplement graph generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1361",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 Keywords: graphs
 

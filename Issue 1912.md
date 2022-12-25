@@ -4,6 +4,7 @@ archive/issues_001912.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n```\n\n> As a final comment, I'll note that the following behavior with objects\n> which automatically display is interesting:\n> \n> sage: C=circle((0,0),1);P=plot(sin,0,1)\n> sage: [C,P]\n> [, ]\n> \n> and then a display of circle above a plot of sin (in the notebook) or\n> two separate pictures (in the command line).  I have no idea what, if\n> any, connection should be made with this work, though.\n\nI think it is just printing out the list for you to see and the \"print\" function for a graphics object displays the object, so you see each object \"printed\" out.\n\nIt would be nice if the text display indicated this, instead of \"[, ]\".  Maybe something like \"[<Graphic object>, <Graphic object>]\", since the objects actually are there.  It misleadingly looks like you have an empty list.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1912\n\n",
+    "closed_at": "2014-03-05T17:00:35Z",
     "created_at": "2008-01-24T16:08:14Z",
     "labels": [
         "component: graphics",

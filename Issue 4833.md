@@ -4,6 +4,7 @@ archive/issues_004833.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  jthurber\n\nI've messed up at least one upgrade by accidentally having mercurial queue patches applied when trying to upgrade.  sage -upgrade should at least warn the user, and maybe give an option of popping off all of the patches before upgrading or just quitting.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4833\n\n",
+    "closed_at": "2014-01-10T08:47:31Z",
     "created_at": "2008-12-19T19:32:57Z",
     "labels": [
         "component: build",

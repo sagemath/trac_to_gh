@@ -1,22 +1,23 @@
-# Issue 5251: preparser bug in parsing the backslash "solve right" notation
+# Issue 5251: [with patch, positive review] preparser bug in parsing the backslash "solve right" notation
 
 archive/issues_005251.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: A \\ matrix(QQ,2,1,[1,2])\n\n[  0]\n[1/2]\nsage: A \\ matrix(QQ,2,1,[1/3,2/3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1))/Integer(3),Integer(2)/Integer(3)])\n                                                                ^\nSyntaxError: invalid syntax\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5251\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: A \\ matrix(QQ,2,1,[1,2])\n\n[  0]\n[1/2]\nsage: A \\ matrix(QQ,2,1,[1/3,2/3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1))/Integer(3),Integer(2)/Integer(3)])\n                                                                ^\nSyntaxError: invalid syntax\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5251\n\n",
+    "closed_at": "2009-02-20T07:37:00Z",
     "created_at": "2009-02-13T00:06:12Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "preparser bug in parsing the backslash \"solve right\" notation",
+    "title": "[with patch, positive review] preparser bug in parsing the backslash \"solve right\" notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5251",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
 ```
 sage: A = matrix(QQ,2,2,[1..4])

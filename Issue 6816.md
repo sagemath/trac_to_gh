@@ -1,16 +1,17 @@
-# Issue 6816: sage/maxima hang when doing an indefinite integral
+# Issue 6816: [with patch, needs review] sage/maxima hang when doing an indefinite integral
 
 archive/issues_006816.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIntegration sometimes hangs in sage-4.1.1.\n\n```\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n[.. and it hangs forever ..]\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIn fact, in Maxima what is happening is the following:\n\n```\n(%i6) integrate(t*cos(-theta*t),t,-inf,inf);\nIs  theta  positive, negative, or zero?\n\npositive       <--- i type this.\n\n;\n(%o6)                                  0\n(%i7) \n```\n\nFor some reason the question \"Is  theta  positive, negative, or zero?\" is not getting seen by pexpect as it should.  Argh!\n\nThis works in Maxima:\n\n```\n(%i1) assume(theta>0);\n(%o1)                             [theta > 0]\n(%i2) integrate(t*cos(-theta*t),t,-inf,inf);\n(%o2)                                  0\n```\n\nThe same doesn't work in Sage though, which is very weird:\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: assume(theta>0)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6816\n\n",
+    "closed_at": "2009-11-06T05:53:32Z",
     "created_at": "2009-08-24T00:07:01Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage/maxima hang when doing an indefinite integral",
+    "title": "[with patch, needs review] sage/maxima hang when doing an indefinite integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6816",
     "user": "https://github.com/williamstein"

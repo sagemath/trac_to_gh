@@ -3,7 +3,8 @@
 archive/issues_007443.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, reference manual\n\nThis is a follow up on #5891, which also includes appropriate links for the later categories defined in #4326, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7443\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: categories, reference manual\n\nThis is a follow up on #5891, which also includes appropriate links for the later categories defined in #4326, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7443\n\n",
+    "closed_at": "2009-11-19T17:01:12Z",
     "created_at": "2009-11-12T10:25:06Z",
     "labels": [
         "component: categories"
@@ -15,7 +16,7 @@ archive/issues_007443.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @nthiery
+Assignee: @hivert
 
 CC:  sage-combinat
 

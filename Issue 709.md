@@ -1,15 +1,16 @@
-# Issue 709: Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.
+# Issue 709: [with patch] Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.
 
 archive/issues_000709.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nScipy and cvxopt tend to appear to build correctly, but then raise exceptions when modules are imported (usually missing symbols). We need doctests so that this is detected when tests are run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/709\n\n",
+    "closed_at": "2007-10-20T19:57:23Z",
     "created_at": "2007-09-20T17:41:37Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.",
+    "title": "[with patch] Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/709",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

@@ -4,6 +4,7 @@ archive/issues_000107.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: R = Integers(125)\nsage: M = Matrix(R, 2, 2, [0, 1, 2, 3])\nsage: V = Vector(R, [2, 3])\nsage: M * V\n---------------------------------------------------------------------------\nexceptions.AttributeError                            Traceback (most recent call last)\n\n/home/dmharvey/sage-1.3.7.3.3/<ipython console> \n\n/home/dmharvey/sage-1.3.7.3.3/matrix_pyx.pyx in matrix_pyx.Matrix.__mul__()\n\n/home/dmharvey/sage-1.3.7.3.3/matrix_pyx.pyx in matrix_pyx.Matrix.vector_matrix_multiply()\n\n/home/dmharvey/sage/local/lib/python2.4/site-packages/sage/modules/free_module_element.py in __add__(self, right)\n     65         if self.parent() is right.parent():\n     66             V = self.parent()\n---> 67         elif self.parent().ambient_vector_space() == right.parent().ambient_vector_space():\n     68             V = self.parent().ambient_vector_space()\n     69         else:\n\nAttributeError: 'FreeModule_ambient' object has no attribute 'ambient_vector_space'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/107\n\n",
+    "closed_at": "2007-01-07T19:42:39Z",
     "created_at": "2006-10-03T17:50:08Z",
     "labels": [
         "component: linear algebra",

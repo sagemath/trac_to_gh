@@ -1,16 +1,17 @@
-# Issue 2015: crap -- twisted contains a bunch of ._ osx crap
+# Issue 2015: [with spkg] crap -- twisted contains a bunch of ._ osx crap
 
 archive/issues_002015.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/auth/._credsetup.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/._demo.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/._setup.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/patches/._web2_gnutls.patch\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/patches/._twisted_gnutls.patch\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/._spkg-install\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2015\n\n",
+    "closed_at": "2008-02-01T02:02:18Z",
     "created_at": "2008-01-31T23:26:55Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- twisted contains a bunch of ._ osx crap",
+    "title": "[with spkg] crap -- twisted contains a bunch of ._ osx crap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2015",
     "user": "https://github.com/williamstein"

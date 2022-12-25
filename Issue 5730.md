@@ -1,16 +1,17 @@
-# Issue 5730: Add a line to the output of "sage -coverage ." which lists how many more tests are needed to get to 75% coverage
+# Issue 5730: [with patch; positive review] Add a line to the output of "sage -coverage ." which lists how many more tests are needed to get to 75% coverage
 
 archive/issues_005730.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5730\n\n",
+    "closed_at": "2009-04-10T02:23:17Z",
     "created_at": "2009-04-10T01:13:55Z",
     "labels": [
         "component: doctest coverage",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Add a line to the output of \"sage -coverage .\" which lists how many more tests are needed to get to 75% coverage",
+    "title": "[with patch; positive review] Add a line to the output of \"sage -coverage .\" which lists how many more tests are needed to get to 75% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5730",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,16 @@
-# Issue 174: all existing open source Hermite Normal Form implementations totally SUCK.
+# Issue 174: [with patch; positive review] Implement a modular Hermite Normal Form algorithm
 
 archive/issues_000174.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nHermite Normal form is the analogue of echelon form over the integers.\nIt's crucial for almost all efficient computations with Z-modules (infinite \nabelian groups, finite abelian groups, lattices, modular abelian varieties\nvia lattices, etc).  \n\nMAGMA is 50 times faster even for small examples, and asymptotically\nmuch faster than GAP, PARI, and NTL. \n\nSee this page http://magma.maths.usyd.edu.au/users/allan/mat/hermite.html\nwhich is mirrored here:\nhttp://sage.math.washington.edu/sage/misc/hermite.html\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/174\n\n",
+    "closed_at": "2008-02-21T03:10:40Z",
     "created_at": "2006-12-01T02:15:15Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "all existing open source Hermite Normal Form implementations totally SUCK.",
+    "title": "[with patch; positive review] Implement a modular Hermite Normal Form algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/174",
     "user": "https://github.com/williamstein"

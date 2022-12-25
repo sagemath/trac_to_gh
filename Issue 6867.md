@@ -1,15 +1,16 @@
-# Issue 6867: [with SPKG, needs review] GLPK ( compatible with the symbolics from MIP )
+# Issue 6867: [with spkg, positive review] GLPK ( compatible with the symbolics from MIP )
 
 archive/issues_006867.json:
 ```json
 {
     "body": "Assignee: tbd\n\nHello everybody !!!\n\nAs I wrote a new numerical.MIP class using symbolics, which will be waaaaaayyyyy easier to use, here is the necessary update of GLPK which can stand all those news !\n\nTo install it :\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p1.spkg\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6867\n\n",
+    "closed_at": "2009-09-10T12:17:59Z",
     "created_at": "2009-09-02T17:33:12Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with SPKG, needs review] GLPK ( compatible with the symbolics from MIP )",
+    "title": "[with spkg, positive review] GLPK ( compatible with the symbolics from MIP )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6867",
     "user": "https://github.com/nathanncohen"

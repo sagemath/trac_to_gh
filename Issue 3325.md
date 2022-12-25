@@ -1,9 +1,10 @@
-# Issue 3325: [with patch, needs review] small error in argument to dvipng in latex.py
+# Issue 3325: [with patch, positive review] small error in argument to dvipng in latex.py
 
 archive/issues_003325.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: %latex, dvipng\n\n%latex calls dvipng if it is available.  Its arguments include '-q*', and my shell tries to expand the *, thus causing %latex to bomb whenever I use it.  In fact, the argument should just be '-q'.  (See the dvipng man page: at one point it says\n\n```\n-q* Run quietly.  Don't chatter about pages converted, etc. to standard output;\n    report no warnings (only errors) to standard error.\n```\nBut earlier it says\n\n```\nMany of the parameterless options listed here can be turned off by suffixing the\noption with a zero (0); for instance, to turn off page reversal, use -r0.  Such\noptions are marked with a trailing *.\n```\nSo the * is not actually part of the argument.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3325\n\n",
+    "closed_at": "2008-05-29T01:10:25Z",
     "created_at": "2008-05-28T19:50:11Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003325.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] small error in argument to dvipng in latex.py",
+    "title": "[with patch, positive review] small error in argument to dvipng in latex.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3325",
     "user": "https://github.com/jhpalmieri"

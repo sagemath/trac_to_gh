@@ -7,7 +7,6 @@ archive/issues_009625.json:
     "created_at": "2010-07-28T14:33:24Z",
     "labels": [
         "component: calculus",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",

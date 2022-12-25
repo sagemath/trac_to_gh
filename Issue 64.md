@@ -3,7 +3,8 @@
 archive/issues_000064.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: 1/(1 + 3*5^5 + O(5^50))\n1 + 2*5^5 + 4*5^6 + 4*5^7 + 4*5^8 + 4*5^9 + 3*5^10 + 5^11 + 3*5^15 + 4*5^16 + 3*5^17\n+ 4*5^18 + 4*5^19 + O(5^20)\n```\n\nThe answer should be returned to precision 50.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/64\n\n",
+    "body": "Assignee: dmharvey\n\n```\nsage: 1/(1 + 3*5^5 + O(5^50))\n1 + 2*5^5 + 4*5^6 + 4*5^7 + 4*5^8 + 4*5^9 + 3*5^10 + 5^11 + 3*5^15 + 4*5^16 + 3*5^17\n+ 4*5^18 + 4*5^19 + O(5^20)\n```\n\nThe answer should be returned to precision 50.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/64\n\n",
+    "closed_at": "2006-10-10T23:56:42Z",
     "created_at": "2006-09-15T21:28:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -15,7 +16,7 @@ archive/issues_000064.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: dmharvey
 
 ```
 sage: 1/(1 + 3*5^5 + O(5^50))

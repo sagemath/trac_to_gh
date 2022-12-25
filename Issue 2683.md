@@ -1,15 +1,16 @@
-# Issue 2683: [with patch, needs review]  Add initial support of k-Schur functions
+# Issue 2683: [with patch, positive review]  Add initial support of k-Schur functions
 
 archive/issues_002683.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2683\n\n",
+    "closed_at": "2008-03-29T00:00:19Z",
     "created_at": "2008-03-27T09:54:26Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review]  Add initial support of k-Schur functions",
+    "title": "[with patch, positive review]  Add initial support of k-Schur functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2683",
     "user": "https://github.com/mwhansen"

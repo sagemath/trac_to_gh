@@ -1,9 +1,10 @@
-# Issue 8378: [trivial to fix] typo in documentation of crt
+# Issue 8378: typo in documentation of crt
 
 archive/issues_008378.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @jasongrout\n\n```\nsage: crt(15,1,30,4)\n...\nValueError: arguments a and b must be coprime\n```\nHowever in the documentation of `crt` a, b are the residues,\nand the moduli are called m, n. Thus the message should be:\n\n```\nValueError: arguments m and n must be coprime\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8378\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @jasongrout\n\n```\nsage: crt(15,1,30,4)\n...\nValueError: arguments a and b must be coprime\n```\nHowever in the documentation of `crt` a, b are the residues,\nand the moduli are called m, n. Thus the message should be:\n\n```\nValueError: arguments m and n must be coprime\n```\n\nAdditionally, this function should be extended to handle non-coprime moduli.\n\nApply patches in this order:\n\n1. [trac_8378-crt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8378/trac_8378-crt.patch)\n2. [trac_8378-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8378/trac_8378-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8378\n\n",
+    "closed_at": "2010-04-29T05:20:35Z",
     "created_at": "2010-02-26T10:14:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_008378.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "[trivial to fix] typo in documentation of crt",
+    "title": "typo in documentation of crt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8378",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @aghitza
+Assignee: @JohnCremona
 
 CC:  @JohnCremona @jasongrout
 
@@ -32,6 +33,13 @@ and the moduli are called m, n. Thus the message should be:
 ```
 ValueError: arguments m and n must be coprime
 ```
+
+Additionally, this function should be extended to handle non-coprime moduli.
+
+Apply patches in this order:
+
+1. [trac_8378-crt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8378/trac_8378-crt.patch)
+2. [trac_8378-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8378/trac_8378-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8378
 

@@ -1,16 +1,17 @@
-# Issue 7003: [with spkg, needs review] update jmol
+# Issue 7003: Update jmol
 
 archive/issues_007003.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @gutow\n\nHere's an spkg updating jmol to 11.8.6 (we currently have 11.6.something).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7003\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @gutow\n\nHere's an spkg updating jmol to 11.8.6 (we currently have 11.6.something).\n\nhttp://sage.math.washington.edu/home/jason/jmol-11.8.6.spkg\n\nDuplicate of #11503.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7003\n\n",
+    "closed_at": "2012-01-23T14:25:51Z",
     "created_at": "2009-09-24T18:01:08Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with spkg, needs review] update jmol",
+    "title": "Update jmol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7003",
     "user": "https://github.com/jasongrout"
@@ -21,6 +22,10 @@ Assignee: mabshoff
 CC:  @gutow
 
 Here's an spkg updating jmol to 11.8.6 (we currently have 11.6.something).
+
+http://sage.math.washington.edu/home/jason/jmol-11.8.6.spkg
+
+Duplicate of #11503.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7003
 

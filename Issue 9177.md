@@ -4,6 +4,7 @@ archive/issues_009177.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @dimpase drkirkby\n\nCddlib's ./configure script should support --with=gmp=<path>. This ticket is a followup to #8730, where a stopgap measure was implemented instead. This ticket will provide rewritten autotools sources (configure.ac and Makefile.am's) to achieve this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9177\n\n",
+    "closed_at": "2010-06-25T15:44:26Z",
     "created_at": "2010-06-07T11:34:42Z",
     "labels": [
         "component: packages: standard"

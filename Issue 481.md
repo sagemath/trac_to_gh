@@ -3,7 +3,8 @@
 archive/issues_000481.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHello,\n\nhave a look at http://sage.math.washington.edu/sage/packages/optional/ - many of those packages have become default packages or are hopelessly out of date. LinBox-1.0.0 anybody?\n\nThat page needs a cleanup. Maybe its generation can be automated by scanning the right directory and creating a static html page via daily cronjob.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/481\n\n",
+    "body": "Assignee: @mwhansen\n\nHello,\n\nhave a look at http://sage.math.washington.edu/sage/packages/optional/ - many of those packages have become default packages or are hopelessly out of date. LinBox-1.0.0 anybody?\n\nThat page needs a cleanup. Maybe its generation can be automated by scanning the right directory and creating a static html page via daily cronjob.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/481\n\n",
+    "closed_at": "2007-09-13T14:10:00Z",
     "created_at": "2007-08-22T21:51:16Z",
     "labels": [
         "component: website/wiki",
@@ -17,7 +18,7 @@ archive/issues_000481.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Hello,
 

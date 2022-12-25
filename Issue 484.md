@@ -4,9 +4,10 @@ archive/issues_000484.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: x,y=PolynomialRing(QQ,2,\"xy\").gens()\nsage: f = 5*x+y-5\nsage: f(1,1)\n 1\nsage: type(f(1,1))\n <type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n```\n\nI usually think of the values of a polynomial as belonging to the\nground ring as opposed to the polynomial ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/484\n\n",
+    "closed_at": "2007-08-30T12:21:45Z",
     "created_at": "2007-08-23T16:53:19Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],

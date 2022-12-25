@@ -1,16 +1,17 @@
-# Issue 9023: ghmm is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes"
+# Issue 9023: ghmm needs compiler flag -m64 when SAGE64 is set to "yes"
 
 archive/issues_009023.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install has the usual dumb code for building 64-bit on OS X. \n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -fPIC -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\nThis should be easy to fix, by removing the OS X requirement. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9023\n\n",
+    "closed_at": "2010-06-22T17:56:19Z",
     "created_at": "2010-05-23T20:59:54Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "ghmm is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to \"yes\"",
+    "title": "ghmm needs compiler flag -m64 when SAGE64 is set to \"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9023",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

@@ -1,16 +1,17 @@
-# Issue 3103: coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2
+# Issue 3103: Coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2
 
 archive/issues_003103.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan rbradshaw @jasongrout\n\nKeywords: vector CDF coerce\n\nWith\n\n```\nsage: version()\n'SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26'\n```\nI get the following coercion errors:\n\n```\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Ambient free module of rank 2 over the principal ideal domain Integer Ring'\nsage: vector(CDF, [2, 2]) * vector(QQ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Rational Field'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3103\n\n",
+    "closed_at": "2013-01-25T13:06:07Z",
     "created_at": "2008-05-05T04:12:05Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.7",
-    "title": "coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2",
+    "title": "Coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3103",
     "user": "https://github.com/ncalexan"

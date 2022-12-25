@@ -1,22 +1,24 @@
-# Issue 4480: [with patch, needs review] cython dependancy checking is too slow
+# Issue 4480: [with new patch, positive review] cython dependancy checking is too slow
 
 archive/issues_004480.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @tornaria\n\nThe attached patch builds the entire dependency tree from scratch in 0.6 seconds, and caches it to disk so subsequent dependency checking takes 0.05 seconds to verify. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4480\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @tornaria\n\nThe attached patch builds the entire dependency tree from scratch in 0.6 seconds, and caches it to disk so subsequent dependency checking takes 0.05 seconds to verify. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4480\n\n",
+    "closed_at": "2008-11-14T04:02:40Z",
     "created_at": "2008-11-09T12:45:56Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] cython dependancy checking is too slow",
+    "title": "[with new patch, positive review] cython dependancy checking is too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4480",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: mabshoff
+Assignee: @craigcitro
 
 CC:  @tornaria
 

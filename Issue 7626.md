@@ -3,7 +3,8 @@
 archive/issues_007626.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nI noticed code like this in the sage-sage script:\n\n```\n \t\t    if [ \"$SAGE_PBUILD\" == \"yes\" ]; then \n \t\t        echo 'Pbuild is currently broken -- defaulting to serial build.' \n \t\t        # if [ \"$@\" ]; then \n \t\t        #     ln -snf \"$SAGE_ROOT\"/devel/sage-\"$@\" \"$SAGE_ROOT\"/devel/sage \n \t\t        # fi \n \t\t        # time python \"$SAGE_ROOT\"/devel/sage/build.py -b \n \t\t        sage-build \"$@\" \n```\n\nNot only is SAGE_PBUILD \"broken\", it has long since been replaced by something better.  So we should just delete this stuff from sage-sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7626\n\n",
+    "body": "Assignee: GeorgSWeber\n\nI noticed code like this in the sage-sage script:\n\n```\n     if [ \"$SAGE_PBUILD\" == \"yes\" ]; then \n         echo 'Pbuild is currently broken -- defaulting to serial build.' \n         # if [ \"$@\" ]; then \n         #     ln -snf \"$SAGE_ROOT\"/devel/sage-\"$@\" \"$SAGE_ROOT\"/devel/sage \n         # fi \n         # time python \"$SAGE_ROOT\"/devel/sage/build.py -b \n         sage-build \"$@\" \n```\n\nNot only is SAGE_PBUILD \"broken\", it has long since been replaced by something better.  So we should just delete this stuff from sage-sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7626\n\n",
+    "closed_at": "2012-03-06T09:20:55Z",
     "created_at": "2009-12-08T19:22:39Z",
     "labels": [
         "component: build",
@@ -22,16 +23,16 @@ Assignee: GeorgSWeber
 I noticed code like this in the sage-sage script:
 
 ```
- 		    if [ "$SAGE_PBUILD" == "yes" ]; then 
- 		        echo 'Pbuild is currently broken -- defaulting to serial build.' 
- 		        # if [ "$@" ]; then 
- 		        #     ln -snf "$SAGE_ROOT"/devel/sage-"$@" "$SAGE_ROOT"/devel/sage 
- 		        # fi 
- 		        # time python "$SAGE_ROOT"/devel/sage/build.py -b 
- 		        sage-build "$@" 
+     if [ "$SAGE_PBUILD" == "yes" ]; then 
+         echo 'Pbuild is currently broken -- defaulting to serial build.' 
+         # if [ "$@" ]; then 
+         #     ln -snf "$SAGE_ROOT"/devel/sage-"$@" "$SAGE_ROOT"/devel/sage 
+         # fi 
+         # time python "$SAGE_ROOT"/devel/sage/build.py -b 
+         sage-build "$@" 
 ```
 
-Not only is SAGE_PBUILD "broken", it has long since been replaced by something better.  So we should just delete this stuff from sage-sage.
+Not only is SAGE_PBUILD "broken", it has long since been replaced by something better.  So we should just delete this stuff from sage-sage. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7626
 

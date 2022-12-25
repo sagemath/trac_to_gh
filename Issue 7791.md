@@ -4,6 +4,7 @@ archive/issues_007791.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  jkantor @qed777\n\nNumpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7791\n\n",
+    "closed_at": "2010-09-21T20:23:58Z",
     "created_at": "2009-12-29T19:19:41Z",
     "labels": [
         "component: packages: standard"

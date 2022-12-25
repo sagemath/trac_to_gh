@@ -1,9 +1,10 @@
-# Issue 2081: Add .coefficients() and .exponents() to univariate polynomials and power series
+# Issue 2081: [with patch, positive review] Add .coefficients() and .exponents() to univariate polynomials and power series
 
 archive/issues_002081.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis should work:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^2+2*x\nsage: f.exponents()\n[1, 2]\nsage: f.coefficients()\n[2, 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2081\n\n",
+    "body": "Assignee: @mwhansen\n\nThis should work:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^2+2*x\nsage: f.exponents()\n[1, 2]\nsage: f.coefficients()\n[2, 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2081\n\n",
+    "closed_at": "2008-02-15T02:16:11Z",
     "created_at": "2008-02-07T07:39:15Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_002081.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "Add .coefficients() and .exponents() to univariate polynomials and power series",
+    "title": "[with patch, positive review] Add .coefficients() and .exponents() to univariate polynomials and power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2081",
     "user": "https://github.com/jbandlow"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 This should work:
 

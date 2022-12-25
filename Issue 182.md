@@ -4,6 +4,7 @@ archive/issues_000182.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: Integers(7).multiplicative_generator()\nTraceback (most recent call last):\n  File \"\", line 1, in   File \"/home/server2/sage_notebook/worksheets/david/code/23.py\", line 4, in Integers(Integer(7)).multiplicative_generator()\n  File \"/sage-1.5/local/lib/python2.5/\", line 1, in     \nAttributeError: 'IntegerModRing_generic' object has no attribute 'multiplicative_generator'\n```\n\nI'm sure this used to work -- the default SAGE on sage.math still accepts it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/182\n\n",
+    "closed_at": "2007-01-09T18:36:37Z",
     "created_at": "2006-12-13T19:15:33Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,22 +1,23 @@
-# Issue 2163: .show?? pops up the graphics item as well as the help page
+# Issue 2163: [with patch, positive review] .show?? pops up the graphics item as well as the help page
 
 archive/issues_002163.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAt the command line:\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
+    "body": "Assignee: @mwhansen\n\nAt the command line:\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
+    "closed_at": "2008-12-05T09:37:33Z",
     "created_at": "2008-02-14T23:00:03Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": ".show?? pops up the graphics item as well as the help page",
+    "title": "[with patch, positive review] .show?? pops up the graphics item as well as the help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2163",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 At the command line:
 

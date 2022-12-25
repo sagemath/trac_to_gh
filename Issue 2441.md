@@ -1,16 +1,17 @@
-# Issue 2441: [with patch, easy review] fix typo in chromatic number
+# Issue 2441: [with patch, positive review] fix typo in chromatic number
 
 archive/issues_002441.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis one is *very* obvious - should probably get merged in 2.10.3...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2441\n\n",
+    "closed_at": "2008-03-09T18:59:39Z",
     "created_at": "2008-03-09T18:53:44Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, easy review] fix typo in chromatic number",
+    "title": "[with patch, positive review] fix typo in chromatic number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2441",
     "user": "https://github.com/rlmill"

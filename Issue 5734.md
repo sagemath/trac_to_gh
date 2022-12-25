@@ -1,16 +1,17 @@
-# Issue 5734: Bring doctests of modular/modsym/manin_symbols.py up to 100%
+# Issue 5734: [with patch, with positive review] Bring doctests of modular/modsym/manin_symbols.py up to 100%
 
 archive/issues_005734.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @loefflerd mtaranes\n\nKeywords: modular symbols\n\nAs of 3.4.1.rc1, we have\n\n```\nSCORE /home/jec/sage-3.4.1.rc1/devel/sage-main/sage/modular/modsym/manin_symbols.py: 2% (2 of 68)\n\nMissing documentation:\n\t * is_ManinSymbol(x):\n\t * __init__(self, weight, list):\n\t * __cmp__(self, right):\n\t * __getitem__(self, n):\n\t * __len__(self):\n\t * apply(self, j, X):\n\t * apply_S(self, j):\n\t * apply_I(self, j):\n\t * apply_T(self, j):\n\t * apply_TT(self, j):\n\t * manin_symbol_list(self):\n\t * manin_symbol(self, i):\n\t * normalize(self, x):\n\t * weight(self):\n\t * __init__(self, level, weight, syms):\n\t * apply_T(self, j):\n\t * apply_TT(self, j):\n\t * level(self):\n\t * normalize(self, x):\n\t * __init__(self, level, weight):\n\t * __repr__(self):\n\t * __init__(self, level, weight):\n\t * __repr__(self):\n\t * __init__(self, group, weight):\n\t * __repr__(self):\n\t * __init__(self, character, weight):\n\t * __repr__(self):\n\t * apply_T(self, j):\n\t * apply_TT(self, j):\n\t * character(self):\n\t * level(self):\n\t * normalize(self, x):\n\t * __init__(self, level, weight):\n\t * __repr__(self):\n\t * apply_T(self, j):\n\t * apply_TT(self, j):\n\t * level(self):\n\t * normalize(self, x):\n\t * tuple(self):\n\t * __get_i(self):\n\t * __get_u(self):\n\t * __get_v(self):\n\t * _repr_(self):\n\t * _latex_(self):\n\t * __cmp__(self, other):\n\t * __mul__(self, matrix):\n\t * copy(self):\n\t * parent(self):\n\t * weight(self):\n\t * _print_polypart(i, j):\n\n\nMissing doctests:\n\t * index(self, x):\n\t * apply_S(self, j):\n\t * apply_I(self, j):\n\t * apply(self, j, m):\n\t * apply_S(self, j):\n\t * apply_I(self, j):\n\t * index(self, x):\n\t * apply_S(self, j):\n\t * apply_I(self, j):\n\t * apply_J(self, j):\n\t * apply(self, j, m):\n\t * __init__(self, parent, t):\n\t * apply(self, a,b,c,d):\n\t * lift_to_sl2z(self, N):\n\t * endpoints(self, N=None):\n\t * modular_symbol_rep(self):\n```\nand I think I might have the right background to fix this!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5734\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @loefflerd mtaranes\n\nKeywords: modular symbols\n\nAs of 3.4.1.rc1, we have\n\n```\nSCORE /home/jec/sage-3.4.1.rc1/devel/sage-main/sage/modular/modsym/manin_symbols.py: 2% (2 of 68)\n\nMissing documentation:\n * is_ManinSymbol(x):\n * __init__(self, weight, list):\n * __cmp__(self, right):\n * __getitem__(self, n):\n * __len__(self):\n * apply(self, j, X):\n * apply_S(self, j):\n * apply_I(self, j):\n * apply_T(self, j):\n * apply_TT(self, j):\n * manin_symbol_list(self):\n * manin_symbol(self, i):\n * normalize(self, x):\n * weight(self):\n * __init__(self, level, weight, syms):\n * apply_T(self, j):\n * apply_TT(self, j):\n * level(self):\n * normalize(self, x):\n * __init__(self, level, weight):\n * __repr__(self):\n * __init__(self, level, weight):\n * __repr__(self):\n * __init__(self, group, weight):\n * __repr__(self):\n * __init__(self, character, weight):\n * __repr__(self):\n * apply_T(self, j):\n * apply_TT(self, j):\n * character(self):\n * level(self):\n * normalize(self, x):\n * __init__(self, level, weight):\n * __repr__(self):\n * apply_T(self, j):\n * apply_TT(self, j):\n * level(self):\n * normalize(self, x):\n * tuple(self):\n * __get_i(self):\n * __get_u(self):\n * __get_v(self):\n * _repr_(self):\n * _latex_(self):\n * __cmp__(self, other):\n * __mul__(self, matrix):\n * copy(self):\n * parent(self):\n * weight(self):\n * _print_polypart(i, j):\n\nMissing doctests:\n * index(self, x):\n * apply_S(self, j):\n * apply_I(self, j):\n * apply(self, j, m):\n * apply_S(self, j):\n * apply_I(self, j):\n * index(self, x):\n * apply_S(self, j):\n * apply_I(self, j):\n * apply_J(self, j):\n * apply(self, j, m):\n * __init__(self, parent, t):\n * apply(self, a,b,c,d):\n * lift_to_sl2z(self, N):\n * endpoints(self, N=None):\n * modular_symbol_rep(self):\n```\nand I think I might have the right background to fix this!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5734\n\n",
+    "closed_at": "2009-04-15T19:57:14Z",
     "created_at": "2009-04-10T16:09:32Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Bring doctests of modular/modsym/manin_symbols.py up to 100%",
+    "title": "[with patch, with positive review] Bring doctests of modular/modsym/manin_symbols.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5734",
     "user": "https://github.com/JohnCremona"
@@ -28,77 +29,77 @@ As of 3.4.1.rc1, we have
 SCORE /home/jec/sage-3.4.1.rc1/devel/sage-main/sage/modular/modsym/manin_symbols.py: 2% (2 of 68)
 
 Missing documentation:
-	 * is_ManinSymbol(x):
-	 * __init__(self, weight, list):
-	 * __cmp__(self, right):
-	 * __getitem__(self, n):
-	 * __len__(self):
-	 * apply(self, j, X):
-	 * apply_S(self, j):
-	 * apply_I(self, j):
-	 * apply_T(self, j):
-	 * apply_TT(self, j):
-	 * manin_symbol_list(self):
-	 * manin_symbol(self, i):
-	 * normalize(self, x):
-	 * weight(self):
-	 * __init__(self, level, weight, syms):
-	 * apply_T(self, j):
-	 * apply_TT(self, j):
-	 * level(self):
-	 * normalize(self, x):
-	 * __init__(self, level, weight):
-	 * __repr__(self):
-	 * __init__(self, level, weight):
-	 * __repr__(self):
-	 * __init__(self, group, weight):
-	 * __repr__(self):
-	 * __init__(self, character, weight):
-	 * __repr__(self):
-	 * apply_T(self, j):
-	 * apply_TT(self, j):
-	 * character(self):
-	 * level(self):
-	 * normalize(self, x):
-	 * __init__(self, level, weight):
-	 * __repr__(self):
-	 * apply_T(self, j):
-	 * apply_TT(self, j):
-	 * level(self):
-	 * normalize(self, x):
-	 * tuple(self):
-	 * __get_i(self):
-	 * __get_u(self):
-	 * __get_v(self):
-	 * _repr_(self):
-	 * _latex_(self):
-	 * __cmp__(self, other):
-	 * __mul__(self, matrix):
-	 * copy(self):
-	 * parent(self):
-	 * weight(self):
-	 * _print_polypart(i, j):
-
+ * is_ManinSymbol(x):
+ * __init__(self, weight, list):
+ * __cmp__(self, right):
+ * __getitem__(self, n):
+ * __len__(self):
+ * apply(self, j, X):
+ * apply_S(self, j):
+ * apply_I(self, j):
+ * apply_T(self, j):
+ * apply_TT(self, j):
+ * manin_symbol_list(self):
+ * manin_symbol(self, i):
+ * normalize(self, x):
+ * weight(self):
+ * __init__(self, level, weight, syms):
+ * apply_T(self, j):
+ * apply_TT(self, j):
+ * level(self):
+ * normalize(self, x):
+ * __init__(self, level, weight):
+ * __repr__(self):
+ * __init__(self, level, weight):
+ * __repr__(self):
+ * __init__(self, group, weight):
+ * __repr__(self):
+ * __init__(self, character, weight):
+ * __repr__(self):
+ * apply_T(self, j):
+ * apply_TT(self, j):
+ * character(self):
+ * level(self):
+ * normalize(self, x):
+ * __init__(self, level, weight):
+ * __repr__(self):
+ * apply_T(self, j):
+ * apply_TT(self, j):
+ * level(self):
+ * normalize(self, x):
+ * tuple(self):
+ * __get_i(self):
+ * __get_u(self):
+ * __get_v(self):
+ * _repr_(self):
+ * _latex_(self):
+ * __cmp__(self, other):
+ * __mul__(self, matrix):
+ * copy(self):
+ * parent(self):
+ * weight(self):
+ * _print_polypart(i, j):
 
 Missing doctests:
-	 * index(self, x):
-	 * apply_S(self, j):
-	 * apply_I(self, j):
-	 * apply(self, j, m):
-	 * apply_S(self, j):
-	 * apply_I(self, j):
-	 * index(self, x):
-	 * apply_S(self, j):
-	 * apply_I(self, j):
-	 * apply_J(self, j):
-	 * apply(self, j, m):
-	 * __init__(self, parent, t):
-	 * apply(self, a,b,c,d):
-	 * lift_to_sl2z(self, N):
-	 * endpoints(self, N=None):
-	 * modular_symbol_rep(self):
+ * index(self, x):
+ * apply_S(self, j):
+ * apply_I(self, j):
+ * apply(self, j, m):
+ * apply_S(self, j):
+ * apply_I(self, j):
+ * index(self, x):
+ * apply_S(self, j):
+ * apply_I(self, j):
+ * apply_J(self, j):
+ * apply(self, j, m):
+ * __init__(self, parent, t):
+ * apply(self, a,b,c,d):
+ * lift_to_sl2z(self, N):
+ * endpoints(self, N=None):
+ * modular_symbol_rep(self):
 ```
 and I think I might have the right background to fix this!
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5734
 

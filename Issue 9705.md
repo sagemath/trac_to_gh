@@ -3,7 +3,8 @@
 archive/issues_009705.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nThe following are three cells in a magma-mode notebook worksheet, together with output (there should be none). Each is valid magma code, but the first one produces an error. The other two examples show that shortening the line by changing its content or by placing a line break make the error go away.\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_6.py\", line 10, in <module>\n    exec compile(u\"print _support_.syseval(magma, u'_<x>:=PolynomialRing(Rationals());\\\\nrepeat\\\\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\\\\nuntil Roots(g) ne [];', __SAGE_TMP_DIR__)\" + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sage/interfaces/magma.py\", line 523, in eval\n    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\nRuntimeError: Error evaluating Magma code.\nIN:_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\nOUT:\n\n>> load \"/home/nobody/.sage//temp/ella.cecm.sfu.ca/21960//interface//tmp21960\"\n   ^\nUser error: bad syntax\n\n>> until Roots(g) ne [];\n   ^\nUser error: bad syntax\n```\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=x^3+b*x+c where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2\n     where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9705\n\n",
+    "body": "Assignee: @williamstein\n\nThe following are three cells in a magma-mode notebook worksheet, together with output (there should be none). Each is valid magma code, but the first one produces an error. The other two examples show that shortening the line by changing its content or by placing a line break make the error go away.\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_6.py\", line 10, in <module>\n    exec compile(u\"print _support_.syseval(magma, u'_<x>:=PolynomialRing(Rationals());\\\\nrepeat\\\\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\\\\nuntil Roots(g) ne [];', __SAGE_TMP_DIR__)\" + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sage/interfaces/magma.py\", line 523, in eval\n    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\nRuntimeError: Error evaluating Magma code.\nIN:_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\nOUT:\n\n>> load \"/home/nobody/.sage//temp/ella.cecm.sfu.ca/21960//interface//tmp21960\"\n   ^\nUser error: bad syntax\n\n>> until Roots(g) ne [];\n   ^\nUser error: bad syntax\n```\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=x^3+b*x+c where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2\n     where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\n**Apply:**\n1. [attachment:trac_9705.patch]\n2. [attachment:trac-9705-magma_block_evaluation-doc.patch]\n3. [attachment:trac-9705-magma_block_evaluation-linebreak.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9705\n\n",
+    "closed_at": "2011-04-11T19:16:01Z",
     "created_at": "2010-08-07T20:53:05Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_009705.json:
     "user": "https://github.com/nbruin"
 }
 ```
-Assignee: jason, was
+Assignee: @williamstein
 
 The following are three cells in a magma-mode notebook worksheet, together with output (there should be none). Each is valid magma code, but the first one produces an error. The other two examples show that shortening the line by changing its content or by placing a line break make the error go away.
 
@@ -68,6 +69,12 @@ repeat
 until Roots(g) ne [];
 ///
 ```
+
+**Apply:**
+1. [attachment:trac_9705.patch]
+2. [attachment:trac-9705-magma_block_evaluation-doc.patch]
+3. [attachment:trac-9705-magma_block_evaluation-linebreak.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9705
 

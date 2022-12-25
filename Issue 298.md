@@ -4,9 +4,11 @@ archive/issues_000298.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kini @jdemeyer\n\n* get Rishi's autotesting of examples directory to work: He developed it under OS X, but it doesn't work on Linux because of differences in how they run scripts, etc.  Plus, it's a really hard challenge to create such automated testing, so it needs to be looked over again.  \n \n\nIssue created by migration from https://trac.sagemath.org/ticket/298\n\n",
+    "closed_at": "2011-10-10T13:35:27Z",
     "created_at": "2007-02-27T02:21:54Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: standard",
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "autotesting of examples",

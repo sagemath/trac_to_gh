@@ -1,22 +1,23 @@
-# Issue 5869: Fix libgpg-error shared library name on FreeBSD
+# Issue 5869: [with patch, positive review] Fix libgpg-error shared library name on FreeBSD
 
 archive/issues_005869.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nEnsure that a symlink is created from libgpg-error.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5869\n\n",
+    "body": "Assignee: @mwhansen\n\nEnsure that a symlink is created from libgpg-error.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5869\n\n",
+    "closed_at": "2009-07-02T22:37:59Z",
     "created_at": "2009-04-23T07:04:38Z",
     "labels": [
-        "component: algebra",
+        "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Fix libgpg-error shared library name on FreeBSD",
+    "title": "[with patch, positive review] Fix libgpg-error shared library name on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5869",
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 Ensure that a symlink is created from libgpg-error.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.
 

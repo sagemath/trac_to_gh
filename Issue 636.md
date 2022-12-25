@@ -4,9 +4,10 @@ archive/issues_000636.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nIf I build cvxopt on any *Linux* system, then it doesn't work, as follows:\n\n```\nsage: import cvxopt.base\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/home2/sage/<ipython console> in <module>()\n\n<type 'exceptions.ImportError'>: /home2/sage/s/local/lib/python2.5/site-packages/cvxopt/base.so: undefined symbol: _g95_ioparm\n```\n\nWe need to:\n1. Figure out why this fails.\n\n2. Add doctests to SAGE core library to illustrate cvxopt and make sure it fully work, so the above sort of thing won't happen again.  Base these on the cvxopt tutorial, etc.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/636\n\n",
+    "closed_at": "2007-10-20T20:21:18Z",
     "created_at": "2007-09-10T21:51:52Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",

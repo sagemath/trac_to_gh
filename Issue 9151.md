@@ -4,6 +4,7 @@ archive/issues_009151.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer\n\nKeywords: ATLAS BLAS LAPACK multi-threading pthreads\n\nHi,\n\nI noted that multi-threading in ATLAS is switched off by default (switch -t 0). I was wondering if it wouldn't be better to make a multi-threaded build the default, since it results in big performance increases on most modern computers.\n\nI attached a patch that enables threading. It works fine for me on a multi-core Linux machine. I tried to make it work for single-core machines (for which atlas might turn of threading automatically) by testing for the presence of the threaded version of the BLAS library before running the make command that builds the shared atlas library. However I haven't tested it on a single-core machine.\n\nKilian\n\nIssue created by migration from https://trac.sagemath.org/ticket/9151\n\n",
+    "closed_at": "2013-04-10T08:06:59Z",
     "created_at": "2010-06-05T17:23:31Z",
     "labels": [
         "component: build"

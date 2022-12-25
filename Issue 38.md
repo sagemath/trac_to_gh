@@ -4,6 +4,7 @@ archive/issues_000038.json:
 ```json
 {
     "body": "Assignee: somebody\n\n bug in notebook: \n\n```\n  sage: sys.stdout.write('hi there')\n  sage: sys.stdout.flush()\n  hi ther\n      ^^^^ ----- where's the e!!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/38\n\n",
+    "closed_at": "2006-10-15T17:57:14Z",
     "created_at": "2006-09-12T23:30:56Z",
     "labels": [
         "component: basic arithmetic",

@@ -4,10 +4,11 @@ archive/issues_001861.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe page here http://www.sagemath.org/emacs has a file sage.el that is slightly modified from the ipython.el file.   The documentation of this fact should be clearly stated in the file sage.el, along with some instructions about how to use it and the above URL. \n\nSomebody could fix this and attach the fixed sage.el to this ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1861\n\n",
+    "closed_at": "2012-06-29T15:35:26Z",
     "created_at": "2008-01-20T02:41:36Z",
     "labels": [
         "component: user interface",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.2",
     "title": "better document sage.el",

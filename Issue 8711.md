@@ -4,6 +4,7 @@ archive/issues_008711.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nHere is a patch to fix the warnings...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8711\n\n",
+    "closed_at": "2010-04-19T05:18:58Z",
     "created_at": "2010-04-18T04:45:17Z",
     "labels": [
         "component: documentation",

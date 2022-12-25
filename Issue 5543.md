@@ -1,16 +1,17 @@
-# Issue 5543: [with patch, needs review] RealIntervalField parents are not unique
+# Issue 5543: [with patch, positive review] RealIntervalField parents are not unique
 
 archive/issues_005543.json:
 ```json
 {
     "body": "Assignee: somebody\n\nNote that the attached patch has an apparently-spurious chunk that adds a single space to rings/polynomial/real_roots.pyx.  This is to force a recompilation for that file (to work around a bug in the dependency tracker); otherwise you end up with a broken Sage because the real_roots module won't load.  (I'll report the dependency tracker bug as a separate ticket in a minute.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5543\n\n",
+    "closed_at": "2009-04-13T02:39:34Z",
     "created_at": "2009-03-17T06:14:11Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] RealIntervalField parents are not unique",
+    "title": "[with patch, positive review] RealIntervalField parents are not unique",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5543",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

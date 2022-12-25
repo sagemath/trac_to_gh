@@ -1,45 +1,49 @@
-# Issue 6905: real(0.0r) is broken
+# Issue 6905: [with patch, positive review] real(0.0r) is broken
 
 archive/issues_006905.json:
 ```json
 {
-    "body": "Keywords: real, symbolic, plot\n\nImplement:\n\n   sage: real(0.0r)\n\nNote: imag(0.0r) seems to readily work (using Maxima if I read it well)!\n\n\nFound after getting the following bug report from Francois Maltey:\n\n\tsage: parametric_plot ((real(exp(i*a)),imag(exp(i*a))),(a,-5,5))\n\nRaises the following warning:\n\n\tverbose 0 (2999: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\n\tverbose 0 (2999: plot.py, generate_plot_points) Last error message: ''float' object is not callable'\n\nand yield an empty plot. Investing this further, I got that\n\n\tsage: var('a'); f = fast_float(real(exp(i*a)),a)\n\nYields a non callable object. Finally Mike H traced it back on IRC to real(0.0r) being broken, because 0.0r.real is an attribute, not a\nmethod.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6905\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: real, symbolic, plot\n\nImplement:\n\nsage: real(0.0r)\n\nNote: imag(0.0r) seems to readily work (using Maxima if I read it well)!\n\n\nFound after getting the following bug report from Francois Maltey:\n\nsage: parametric_plot ((real(exp(i*a)),imag(exp(i*a))),(a,-5,5))\n\nRaises the following warning:\n\nverbose 0 (2999: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\nverbose 0 (2999: plot.py, generate_plot_points) Last error message: ''float' object is not callable'\n\nand yield an empty plot. Investing this further, I got that\n\nsage: var('a'); f = fast_float(real(exp(i*a)),a)\n\nYields a non callable object. Finally Mike H traced it back on IRC to real(0.0r) being broken, because 0.0r.real is an attribute, not a\nmethod.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6905\n\n",
+    "closed_at": "2009-09-11T17:30:58Z",
     "created_at": "2009-09-08T21:09:22Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "real(0.0r) is broken",
+    "title": "[with patch, positive review] real(0.0r) is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6905",
     "user": "https://github.com/nthiery"
 }
 ```
+Assignee: @mwhansen
+
 Keywords: real, symbolic, plot
 
 Implement:
 
-   sage: real(0.0r)
+sage: real(0.0r)
 
 Note: imag(0.0r) seems to readily work (using Maxima if I read it well)!
 
 
 Found after getting the following bug report from Francois Maltey:
 
-	sage: parametric_plot ((real(exp(i*a)),imag(exp(i*a))),(a,-5,5))
+sage: parametric_plot ((real(exp(i*a)),imag(exp(i*a))),(a,-5,5))
 
 Raises the following warning:
 
-	verbose 0 (2999: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.
-	verbose 0 (2999: plot.py, generate_plot_points) Last error message: ''float' object is not callable'
+verbose 0 (2999: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.
+verbose 0 (2999: plot.py, generate_plot_points) Last error message: ''float' object is not callable'
 
 and yield an empty plot. Investing this further, I got that
 
-	sage: var('a'); f = fast_float(real(exp(i*a)),a)
+sage: var('a'); f = fast_float(real(exp(i*a)),a)
 
 Yields a non callable object. Finally Mike H traced it back on IRC to real(0.0r) being broken, because 0.0r.real is an attribute, not a
 method.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6905
 

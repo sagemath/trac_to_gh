@@ -3,7 +3,8 @@
 archive/issues_009298.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  polybori alexanderdreyer jpflori\n\n```\nsage: R.<A,B,C>=QQ[]\nsage: print get_memory_usage()\n180.0390625\nsage: for i in xrange(10000): v = A(1,8,9) # leaks\n....: \nsage: print get_memory_usage()\n181.5390625\nsage: for i in xrange(10000): v = A(1,8,9.0) # good\n....: \nsage: print get_memory_usage()\n181.5390625\nsage: for i in xrange(10000): v = A(1/2,1/3,1/4) # leaks\n....: \nsage: print get_memory_usage()\n183.5390625\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9298\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori alexanderdreyer jpflori\n\n```\nsage: R.<A,B,C>=QQ[]\nsage: print get_memory_usage()\n180.0390625\nsage: for i in xrange(10000): v = A(1,8,9) # leaks\n....: \nsage: print get_memory_usage()\n181.5390625\nsage: for i in xrange(10000): v = A(1,8,9.0) # good\n....: \nsage: print get_memory_usage()\n181.5390625\nsage: for i in xrange(10000): v = A(1/2,1/3,1/4) # leaks\n....: \nsage: print get_memory_usage()\n183.5390625\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9298\n\n",
+    "closed_at": "2013-01-10T09:27:12Z",
     "created_at": "2010-06-21T17:50:56Z",
     "labels": [
         "component: memleak",
@@ -16,7 +17,7 @@ archive/issues_009298.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: @malb
 
 CC:  polybori alexanderdreyer jpflori
 

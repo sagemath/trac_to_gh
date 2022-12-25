@@ -1,22 +1,23 @@
-# Issue 815: doctesting is broken on .sage files
+# Issue 815: [with patch; positive review] doctesting is broken on .sage files
 
 archive/issues_000815.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nRunning sage -t on a `.sage` file incorrectly reports that all tests passed in the situation that a line of output is missing in the doctest. For example, the following text, in a .sage file, incorrectly produces \"All tests passed!\":\n\n```\ndef foo():\n    r\"\"\"                                                                                       \n    EXAMPLES:                                                                                  \n        sage: foo()                                                                            \n        2                                                                                      \n        sage: foo()                                                                            \n        sage: foo()                                                                            \n        2                                                                                      \n    \"\"\"\n    return 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/815\n\n",
+    "body": "Assignee: failure\n\nRunning sage -t on a `.sage` file incorrectly reports that all tests passed in the situation that a line of output is missing in the doctest. For example, the following text, in a .sage file, incorrectly produces \"All tests passed!\":\n\n```\ndef foo():\n    r\"\"\"                                                                                       \n    EXAMPLES:                                                                                  \n        sage: foo()                                                                            \n        2                                                                                      \n        sage: foo()                                                                            \n        sage: foo()                                                                            \n        2                                                                                      \n    \"\"\"\n    return 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/815\n\n",
+    "closed_at": "2008-11-28T07:00:44Z",
     "created_at": "2007-10-03T19:38:22Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "doctesting is broken on .sage files",
+    "title": "[with patch; positive review] doctesting is broken on .sage files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/815",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: failure
 
 Running sage -t on a `.sage` file incorrectly reports that all tests passed in the situation that a line of output is missing in the doctest. For example, the following text, in a .sage file, incorrectly produces "All tests passed!":
 

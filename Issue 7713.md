@@ -4,6 +4,7 @@ archive/issues_007713.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis causes errors, such as those noted in L2261-2266 of `worksheet.py` (UnicodeDecodeError). This is also needed for transition to Python 3, and blocks #7269.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7713\n\n",
+    "closed_at": "2010-01-19T16:14:34Z",
     "created_at": "2009-12-16T13:16:28Z",
     "labels": [
         "component: notebook",

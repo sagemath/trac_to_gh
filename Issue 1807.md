@@ -1,9 +1,10 @@
-# Issue 1807: fix combinatorics section of the reference manual
+# Issue 1807: [with patch] fix combinatorics section of the reference manual
 
 archive/issues_001807.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1807\n\n",
+    "closed_at": "2008-01-17T20:34:11Z",
     "created_at": "2008-01-17T20:18:04Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001807.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "fix combinatorics section of the reference manual",
+    "title": "[with patch] fix combinatorics section of the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1807",
     "user": "https://github.com/mwhansen"

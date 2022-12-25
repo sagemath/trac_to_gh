@@ -3,11 +3,11 @@
 archive/issues_009219.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9219\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\n**Prerequisite:** #9218\n\nIssue created by migration from https://trac.sagemath.org/ticket/9219\n\n",
+    "closed_at": "2010-07-21T10:03:09Z",
     "created_at": "2010-06-11T18:39:11Z",
     "labels": [
-        "component: documentation",
-        "bug"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "add a statistics chapter to the sage reference manual",
@@ -20,7 +20,7 @@ Assignee: mvngu
 
 CC:  @kcrisman
 
-
+**Prerequisite:** #9218
 
 Issue created by migration from https://trac.sagemath.org/ticket/9219
 

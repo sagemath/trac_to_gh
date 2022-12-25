@@ -4,6 +4,7 @@ archive/issues_001955.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n\nHi,\n\nIt seems the __abs__ method for vectors is missing the part that is\nsupposed to square the components before they are added.\n\n[e.g. abs(vector([1..5])) should really be\nsqrt(1+4+9+16+25)=sqrt(55) ]\n\nThe code of the current version is included below.\n\n   def __abs__(self):\n       \"\"\"\n       Return the square root of the sum of the squares of the\nentries of this vector.\n\n       EXAMPLES:\n           sage: v = vector([1..5]); abs(v)\n           sqrt(15)\n           sage: v = vector(RDF, [1..5]); abs(v)\n           3.87298334621\n       \"\"\"\n       return sum(self.list()).sqrt()\n\nThe last line should be something like\n\n       return sum([x*x for x in self.list()]).sqrt()\n\n(not sure if that is the most efficient way).\n\n--Peter\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1955\n\n",
+    "closed_at": "2008-01-28T00:28:02Z",
     "created_at": "2008-01-28T00:25:26Z",
     "labels": [
         "component: basic arithmetic",

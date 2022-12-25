@@ -1,22 +1,23 @@
-# Issue 5223: [with patch; needs review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer
+# Issue 5223: [with patch; positive review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer
 
 archive/issues_005223.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @roed314\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @roed314\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
+    "closed_at": "2009-03-20T20:14:59Z",
     "created_at": "2009-02-09T20:03:19Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer",
+    "title": "[with patch; positive review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5223",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @burcin
 
 CC:  @roed314
 

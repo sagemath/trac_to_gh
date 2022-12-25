@@ -4,6 +4,7 @@ archive/issues_000442.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nFor example:\n\nsage: x = polygen(RDF)\nsage: f = (x-1)^3\nsage: f.roots()\n\n[1.00000859959,\n 0.999995700205 + 7.44736245561e-06*I,\n 0.999995700205 - 7.44736245561e-06*I]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/442\n\n",
+    "closed_at": "2007-08-18T20:33:44Z",
     "created_at": "2007-08-18T19:17:27Z",
     "labels": [
         "component: basic arithmetic",

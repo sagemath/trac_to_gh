@@ -1,9 +1,10 @@
-# Issue 6574: Type issue in is_quadratic_twist
+# Issue 6574: [with patch, positive review] Type issue in is_quadratic_twist
 
 archive/issues_006574.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: elliptic curve, quadratic twist\n\n```\nE = EllipticCurve('32a1')\nD = E.is_quadratic_twist(E)\nD, type(D)\n```\n\nyields\n\n```\n(1, <type 'sage.rings.rational.Rational'>)\n```\n\nbut\n\n```\nD = E.is_quadratic_twist(E.quadratic_twist(5))\nD, type(D)\n```\n\ngives back\n\n```\n(5, <type 'sage.rings.integer.Integer'>)\n```\n\nI think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with\n\n```\nreturn K.one_element()\n```\n\nIn the second case we exit at the end after\nline 394 has changed the type by \n\n```\nif K is rings.QQ:\n    D = D.squarefree_part()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6574\n\n",
+    "closed_at": "2009-07-23T08:40:09Z",
     "created_at": "2009-07-20T23:03:04Z",
     "labels": [
         "component: elliptic curves",
@@ -11,7 +12,7 @@ archive/issues_006574.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Type issue in is_quadratic_twist",
+    "title": "[with patch, positive review] Type issue in is_quadratic_twist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6574",
     "user": "https://github.com/categorie"

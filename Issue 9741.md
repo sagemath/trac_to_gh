@@ -3,7 +3,8 @@
 archive/issues_009741.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nThis patch adds a \"key\" argument to allow custom sorting of the output of the graph method vertices().  It adds to the documentation to make it clear that vertices will not always have a default sort order.\n\nSee:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/40ac90ee3f28d723/\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5adbb850f787373c/\n\nIssue created by migration from https://trac.sagemath.org/ticket/9741\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nThis patch adds a \"key\" argument to allow custom sorting of the output of the graph method vertices().  It adds to the documentation to make it clear that vertices will not always have a default sort order.\n\nSee:\n\n#9742 \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/40ac90ee3f28d723/ \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5adbb850f787373c/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9741\n\n",
+    "closed_at": "2010-09-19T21:57:01Z",
     "created_at": "2010-08-13T17:17:45Z",
     "labels": [
         "component: graph theory",
@@ -22,8 +23,13 @@ This patch adds a "key" argument to allow custom sorting of the output of the gr
 
 See:
 
-http://groups.google.com/group/sage-devel/browse_thread/thread/40ac90ee3f28d723/
+#9742 
+
+http://groups.google.com/group/sage-devel/browse_thread/thread/40ac90ee3f28d723/ 
+
 http://groups.google.com/group/sage-devel/browse_thread/thread/5adbb850f787373c/
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9741
 

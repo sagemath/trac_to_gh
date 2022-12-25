@@ -4,6 +4,7 @@ archive/issues_007076.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: sagenb notebook\n\nThis increases security (prevents a DoS by introspecting constantly), and ensures that it is done in a separate process (which may be in an entirely different server)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7076\n\n",
+    "closed_at": "2009-09-29T20:14:06Z",
     "created_at": "2009-09-29T19:48:30Z",
     "labels": [
         "component: notebook"

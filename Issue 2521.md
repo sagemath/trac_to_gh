@@ -1,16 +1,17 @@
-# Issue 2521: Bug in gauss_sum_numerical in degenerate case (probably easy to fix)
+# Issue 2521: [already fixed] Bug in gauss_sum_numerical in degenerate case (probably easy to fix)
 
 archive/issues_002521.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: G = DirichletGroup(4)\nsage: G(1).gauss_sum_numerical()\nTraceback (most recent call last):\n...\nTypeError: 1 must be coercible into Cyclotomic Field of order 2 and degree 1 (and is not an element)\n```\n\nInstead the result should be 0:\n\n```\nsage: G(1).gauss_sum()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2521\n\n",
+    "closed_at": "2008-04-13T02:53:53Z",
     "created_at": "2008-03-14T21:24:13Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Bug in gauss_sum_numerical in degenerate case (probably easy to fix)",
+    "title": "[already fixed] Bug in gauss_sum_numerical in degenerate case (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2521",
     "user": "https://github.com/williamstein"

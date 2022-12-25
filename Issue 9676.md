@@ -4,6 +4,7 @@ archive/issues_009676.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nThis adds a [RandomTree](RandomTree) constructor to the graphs class. Users can type g=graphs.RandomTree(n) to create a new random tree with n vertices named 0 through n-1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9676\n\n",
+    "closed_at": "2010-09-15T22:52:30Z",
     "created_at": "2010-08-03T18:12:47Z",
     "labels": [
         "component: graph theory"

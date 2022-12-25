@@ -4,10 +4,10 @@ archive/issues_008820.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @jdemeyer rwb\n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-5)\nsage: L = E.change_ring(K).period_lattice(K.places()[0])\nsage: L.elliptic_exponential(CDF(.1,.1))\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/period_lattice.py\", line 1390, in elliptic_exponential\n    pxy = E.pari_curve(prec+5).ellztopoint(w)\n  File \"gen.pyx\", line 9234, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44342)\nPariError: bad argument for an elliptic curve related function (43)\n```\n\nPerhaps Pari doesn't support curve not over Q? \n\nIssue created by migration from https://trac.sagemath.org/ticket/8820\n\n",
+    "closed_at": "2010-10-06T03:17:56Z",
     "created_at": "2010-04-29T09:03:18Z",
     "labels": [
-        "component: elliptic curves",
-        "bug"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "elliptic_exponential broken for curves over number fields",

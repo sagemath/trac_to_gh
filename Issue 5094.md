@@ -1,9 +1,10 @@
-# Issue 5094: Delete/Change SageX references to Cython
+# Issue 5094: [with patch, positive review] Delete/Change SageX references to Cython
 
 archive/issues_005094.json:
 ```json
 {
     "body": "Assignee: tba\n\nIn 3.3.alpha0, there is still a reference to SageX in COPYING.txt.  Any others should also be reported here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5094\n\n",
+    "closed_at": "2009-02-02T17:48:37Z",
     "created_at": "2009-01-25T03:45:34Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005094.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Delete/Change SageX references to Cython",
+    "title": "[with patch, positive review] Delete/Change SageX references to Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5094",
     "user": "https://github.com/kcrisman"

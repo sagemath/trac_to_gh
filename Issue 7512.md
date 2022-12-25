@@ -1,4 +1,4 @@
-# Issue 7512: plot3d variable ranges should respect the named variable, if there is one
+# Issue 7512: fast_callable should respect the variable order in callable symbolic expressions (treating them like lambda functions rather than like expressions)
 
 archive/issues_007512.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_007512.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
-    "title": "plot3d variable ranges should respect the named variable, if there is one",
+    "title": "fast_callable should respect the variable order in callable symbolic expressions (treating them like lambda functions rather than like expressions)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7512",
     "user": "https://github.com/jasongrout"

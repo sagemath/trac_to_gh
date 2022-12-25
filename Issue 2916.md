@@ -1,16 +1,17 @@
-# Issue 2916: [with patch; needs review] invalid coercion between non-prime finite fields
+# Issue 2916: [with patch; positive review] invalid coercion between non-prime finite fields
 
 archive/issues_002916.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAs reported by Kiran Kedlaya on sage-devel:\n\n```\nsage: F9.<a> = GF(9); F81.<b> = GF(81); F81(a)\n0\n```\n\nThis is caused by a missing 'else' in the `FiniteField_givaro` constructor. The attached patch throws a `TypeError` in this case and adds this example as a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2916\n\n",
+    "closed_at": "2008-04-14T20:36:21Z",
     "created_at": "2008-04-14T14:57:13Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] invalid coercion between non-prime finite fields",
+    "title": "[with patch; positive review] invalid coercion between non-prime finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2916",
     "user": "https://github.com/wjp"

@@ -1,9 +1,10 @@
-# Issue 7257: spike_functions has numerical noise on powerpc (followup to #6891)
+# Issue 7257: [with patch; positive review] spike_functions has numerical noise on powerpc (followup to #6891)
 
 archive/issues_007257.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7257\n\n",
+    "closed_at": "2009-10-21T06:57:26Z",
     "created_at": "2009-10-20T21:18:04Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_007257.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "spike_functions has numerical noise on powerpc (followup to #6891)",
+    "title": "[with patch; positive review] spike_functions has numerical noise on powerpc (followup to #6891)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7257",
     "user": "https://github.com/williamstein"

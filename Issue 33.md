@@ -3,11 +3,11 @@
 archive/issues_000033.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nwhen pasting a *huge* input file into the worksheet,\n   the input text area is not sufficiently large.  It\n   stays too small.  Weird.   We need a good way to literally\n   attach a file to the worksheet, then edit it in the worksheet.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/33\n\n",
+    "body": "Assignee: boothby\n\nwhen pasting a *huge* input file into the worksheet,\n   the input text area is not sufficiently large.  It\n   stays too small.  Weird.   We need a good way to literally\n   attach a file to the worksheet, then edit it in the worksheet.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/33\n\n",
+    "closed_at": "2007-09-07T02:35:09Z",
     "created_at": "2006-09-12T23:28:10Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: notebook"
     ],
     "title": "notebook -- paste into worksheet problem",
     "type": "issue",
@@ -15,7 +15,7 @@ archive/issues_000033.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: boothby
 
 when pasting a *huge* input file into the worksheet,
    the input text area is not sufficiently large.  It

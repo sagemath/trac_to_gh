@@ -1,16 +1,17 @@
-# Issue 6142: [with patch, needs review] fix issues with assumptions() doctest due to architecture dependant hashing
+# Issue 6142: [with patch, positive review] fix issues with assumptions() doctest due to architecture dependant hashing
 
 archive/issues_006142.json:
 ```json
 {
     "body": "\n\nIssue created by migration from https://trac.sagemath.org/ticket/6142\n\n",
+    "closed_at": "2009-05-28T06:41:51Z",
     "created_at": "2009-05-28T04:40:16Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] fix issues with assumptions() doctest due to architecture dependant hashing",
+    "title": "[with patch, positive review] fix issues with assumptions() doctest due to architecture dependant hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6142",
     "user": "https://github.com/mwhansen"

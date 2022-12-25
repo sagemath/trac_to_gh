@@ -1,16 +1,17 @@
-# Issue 2992: notebook -- help(foo) in the notebook should not word wrap
+# Issue 2992: [with patch; positive review] notebook -- help(foo) in the notebook should not word wrap
 
 archive/issues_002992.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is *very* easy to implement:\n\n1. Make it so help is a wrapper around internal help.  (Already true?)\n\n2. If in notebook then display the result using html and pre.  Done.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2992\n\n",
+    "closed_at": "2008-05-17T19:55:41Z",
     "created_at": "2008-04-21T17:50:20Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- help(foo) in the notebook should not word wrap",
+    "title": "[with patch; positive review] notebook -- help(foo) in the notebook should not word wrap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2992",
     "user": "https://github.com/williamstein"

@@ -1,15 +1,16 @@
-# Issue 6764: [with patch, needs review]  Independent Set of Reresentatives (uses Linear Programming)
+# Issue 6764: Independent Set of Representatives
 
 archive/issues_006764.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9\n\nThis patch add the ISR() function for graphs. The Independent Set of Representatives is a generalisation of graph coloring and list coloring, but goes way further ! I tried to take care of the documentation, so you will find some more informations in the docstrings if you need it ! ;-)\n\nThis patch uses Linear Programming, so you will have to first install GLPK (just type sage -i glpk 4.38), then the patch AllMIP at #6502 ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6764\n\n",
+    "body": "Assignee: @rlmill\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9\n\nThis patch add the ISR() function for graphs. The Independent Set of Representatives is a generalisation of graph coloring and list coloring, but goes way further ! I tried to take care of the documentation, so you will find some more informations in the docstrings if you need it ! ;-)\n\nThis patch uses Linear Programming, so you will have to first install GLPK (see #6867), then the patch for numerical.MIP at #6869 ;-) \n\nIssue created by migration from https://trac.sagemath.org/ticket/6764\n\n",
+    "closed_at": "2009-12-20T07:26:57Z",
     "created_at": "2009-08-16T17:06:55Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review]  Independent Set of Reresentatives (uses Linear Programming)",
+    "title": "Independent Set of Representatives",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6764",
     "user": "https://github.com/nathanncohen"
@@ -21,7 +22,7 @@ See http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1ea
 
 This patch add the ISR() function for graphs. The Independent Set of Representatives is a generalisation of graph coloring and list coloring, but goes way further ! I tried to take care of the documentation, so you will find some more informations in the docstrings if you need it ! ;-)
 
-This patch uses Linear Programming, so you will have to first install GLPK (just type sage -i glpk 4.38), then the patch AllMIP at #6502 ;-)
+This patch uses Linear Programming, so you will have to first install GLPK (see #6867), then the patch for numerical.MIP at #6869 ;-) 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6764
 

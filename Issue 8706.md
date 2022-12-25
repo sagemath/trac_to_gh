@@ -4,6 +4,7 @@ archive/issues_008706.json:
 ```json
 {
     "body": "Assignee: amhou\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8706\n\n",
+    "closed_at": "2010-04-19T05:17:40Z",
     "created_at": "2010-04-17T19:23:13Z",
     "labels": [
         "component: statistics",

@@ -1,15 +1,16 @@
-# Issue 2622: [with patches, need review] add PolyBoRi to reference manual
+# Issue 2622: [with patches, positive review] add PolyBoRi to reference manual
 
 archive/issues_002622.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nThese patches depend on #2619 and basically add some babel to the top of `sage.rings.polynomial.pbori`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2622\n\n",
+    "closed_at": "2008-03-21T02:22:15Z",
     "created_at": "2008-03-20T23:57:57Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patches, need review] add PolyBoRi to reference manual",
+    "title": "[with patches, positive review] add PolyBoRi to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2622",
     "user": "https://github.com/malb"

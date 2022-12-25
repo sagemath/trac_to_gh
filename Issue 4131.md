@@ -1,16 +1,17 @@
-# Issue 4131: [with patch, needs review] unbreak sage-clone
+# Issue 4131: [with patch, positive review] unbreak sage-clone
 
 archive/issues_004131.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSome bash code snuck into the python script sage-clone. This patch fixes it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4131\n\n",
+    "closed_at": "2008-09-16T03:46:54Z",
     "created_at": "2008-09-16T01:37:36Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] unbreak sage-clone",
+    "title": "[with patch, positive review] unbreak sage-clone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4131",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

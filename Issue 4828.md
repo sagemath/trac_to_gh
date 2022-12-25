@@ -1,16 +1,17 @@
-# Issue 4828: [with patch, needs review] Sage 3.2.2.rc2: Fix documentation build issues
+# Issue 4828: [with patch, positive review] Sage 3.2.2.rc2: Fix documentation build issues
 
 archive/issues_004828.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere are two issues: \n\n* In sage/sage/combinat/ranker.py \"Thi\u00e9ry\" is used without the proper encoding, so change it to \"Thiery\" since that is consistent with the other spellings\n* in doc/ref/files we still include the old word.tex file which no longer exists, so delete that line. The new words documentation will be in 3.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4828\n\n",
+    "closed_at": "2008-12-19T07:07:47Z",
     "created_at": "2008-12-19T06:34:10Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] Sage 3.2.2.rc2: Fix documentation build issues",
+    "title": "[with patch, positive review] Sage 3.2.2.rc2: Fix documentation build issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4828",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

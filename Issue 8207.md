@@ -4,6 +4,7 @@ archive/issues_008207.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe following raises an `IndexError`:\n\n```\nsage: R.<x,y> = CC[]\nsage: R(1).factor()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/data/wpalenst/sage/sage-4.3.1/<ipython console> in <module>()\n\n/data/wpalenst/sage/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in factor(self, proof)\n   1422         # try to use univariate factoring first\n   1423         try:\n-> 1424             F = self.univariate_polynomial().factor()\n   1425             return Factorization([(R(f),m) for f,m in F], unit=F.unit())\n   1426         except TypeError:\n\n/data/wpalenst/sage/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in univariate_polynomial(self, R)\n   1055         #construct ring if None\n   1056         if R is None:\n-> 1057             R = self.base_ring()[str(self.variables()[0])]\n   1058 \n   1059         monomial_coefficients = self._MPolynomial_element__element.dict()\n\nIndexError: tuple index out of range\n```\n\nThe call `R(1).univariate_polynomial()` seems to fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8207\n\n",
+    "closed_at": "2010-06-06T01:01:28Z",
     "created_at": "2010-02-07T13:10:04Z",
     "labels": [
         "component: algebra",

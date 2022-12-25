@@ -4,6 +4,7 @@ archive/issues_007428.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nWhen I try to publish a worksheet, it does not initially show up in the list of published worksheets.  To reproduce, on sagenb.org:\n\n1. Create a new worksheet\n2. Click the Publish tab\n3. Click \"Yes\"\n4. Click the \"Published\" link at the very top right to look at the list of published worksheets.\n\nThe worksheet you just published should be up at the top of this list, but it's not.  This is the bug.\n5. Navigate back to your worksheet\n6. Click the publish tab again\n7. Click \"Re-publish worksheet\"\n8. Again click \"Published\" to go to the list of published worksheets\n\nNow your worksheet is listed at the top of this list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7428\n\n",
+    "closed_at": "2009-12-08T05:39:25Z",
     "created_at": "2009-11-11T07:31:12Z",
     "labels": [
         "component: notebook",

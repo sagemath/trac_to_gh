@@ -4,6 +4,7 @@ archive/issues_007103.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSee #7079\n\nIssue created by migration from https://trac.sagemath.org/ticket/7103\n\n",
+    "closed_at": "2009-11-13T04:57:34Z",
     "created_at": "2009-10-03T23:58:08Z",
     "labels": [
         "component: doctest coverage",

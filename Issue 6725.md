@@ -1,16 +1,17 @@
-# Issue 6725: spell-check all modules under sage/monoids
+# Issue 6725: [with patch, positive review] spell-check all modules under sage/monoids
 
 archive/issues_006725.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6725\n\n",
+    "closed_at": "2009-08-13T07:49:12Z",
     "created_at": "2009-08-10T08:48:38Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/monoids",
+    "title": "[with patch, positive review] spell-check all modules under sage/monoids",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6725",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

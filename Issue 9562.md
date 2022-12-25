@@ -3,7 +3,8 @@
 archive/issues_009562.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu simonking\n\nKeywords: m4ri\n\nM4RIE is a library for linear algebra over small extension of GF(2). It is still in an early stage but already offers performance comparable to Magma for many inputs and is more than 1000 times faster than what we have in Sage right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9562\n\n",
+    "body": "CC:  mvngu simonking\n\nKeywords: m4ri, sd32\n\nM4RIE is a library for linear algebra over small extension of GF(2). It is still in an early stage but already offers performance comparable to Magma for many inputs and is more than 1000 times faster than what we have in Sage right now.\n\nUpstream: http://bitbucket.org/malb/m4rie/\n\nSage Days 24 coding sprint: http://wiki.sagemath.org/days24/projects/gf2e\n\n* **Install** http://sage.math.washington.edu/home/malb/spkgs/libm4rie-20111004.spkg\n* **Apply** [attachment:m4rie_for_sage.patch]\n* **Apply** [attachment:m4rie_spkg.patch] to Sage root repository\n\nThere was a vote on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/bf75a0509d3ec978), recommending to add this as a standard spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9562\n\n",
+    "closed_at": "2011-12-01T08:12:30Z",
     "created_at": "2010-07-21T10:41:53Z",
     "labels": [
         "component: packages: standard"
@@ -15,13 +16,21 @@ archive/issues_009562.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: tbd
-
 CC:  mvngu simonking
 
-Keywords: m4ri
+Keywords: m4ri, sd32
 
 M4RIE is a library for linear algebra over small extension of GF(2). It is still in an early stage but already offers performance comparable to Magma for many inputs and is more than 1000 times faster than what we have in Sage right now.
+
+Upstream: http://bitbucket.org/malb/m4rie/
+
+Sage Days 24 coding sprint: http://wiki.sagemath.org/days24/projects/gf2e
+
+* **Install** http://sage.math.washington.edu/home/malb/spkgs/libm4rie-20111004.spkg
+* **Apply** [attachment:m4rie_for_sage.patch]
+* **Apply** [attachment:m4rie_spkg.patch] to Sage root repository
+
+There was a vote on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/bf75a0509d3ec978), recommending to add this as a standard spkg.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9562
 

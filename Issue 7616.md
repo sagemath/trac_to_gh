@@ -3,7 +3,8 @@
 archive/issues_007616.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @craigcitro @robertwb @williamstein\n\nWhen testing my new S-units code with trivial examples, I found this corner case bug, but it took Robert Bradshaw and me hours to track down the cause, which I believe is in the code from #1083.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7616\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @craigcitro @robertwb @williamstein\n\nWhen testing my new S-units code with trivial examples, I found this corner case bug, but it took Robert Bradshaw and me hours to track down the cause, which I believe is in the code from #1083.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7616\n\n",
+    "closed_at": "2010-01-03T21:42:20Z",
     "created_at": "2009-12-07T19:59:24Z",
     "labels": [
         "component: number fields",
@@ -16,7 +17,7 @@ archive/issues_007616.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @loefflerd
+Assignee: @rlmill
 
 CC:  @craigcitro @robertwb @williamstein
 

@@ -3,7 +3,7 @@
 archive/issues_000707.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCreate a database which contains representations of addition chains for Knuth's Power Tree.  Write a generic_power_knuth(x,n) which utilizes the database in a highly optimal manner.\n\nIssue created by migration from https://trac.sagemath.org/ticket/707\n\n",
+    "body": "Assignee: boothby\n\nCreate a database which contains representations of addition chains for Knuth's Power Tree.  Write a generic_power_knuth(x,n) which utilizes the database in a highly optimal manner.\n\nReferences:\n\n- http://codegolf.stackexchange.com/questions/3177/knuths-power-tree\n\n- The Art of Computer Programming\n\nIssue created by migration from https://trac.sagemath.org/ticket/707\n\n",
     "created_at": "2007-09-20T17:22:41Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,6 +19,12 @@ archive/issues_000707.json:
 Assignee: boothby
 
 Create a database which contains representations of addition chains for Knuth's Power Tree.  Write a generic_power_knuth(x,n) which utilizes the database in a highly optimal manner.
+
+References:
+
+- http://codegolf.stackexchange.com/questions/3177/knuths-power-tree
+
+- The Art of Computer Programming
 
 Issue created by migration from https://trac.sagemath.org/ticket/707
 

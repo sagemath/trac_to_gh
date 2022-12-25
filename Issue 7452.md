@@ -4,6 +4,7 @@ archive/issues_007452.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIn case of build problems the message telling you what to do cannot be easily copied as one command to run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7452\n\n",
+    "closed_at": "2009-12-14T15:53:44Z",
     "created_at": "2009-11-13T17:27:07Z",
     "labels": [
         "component: build",

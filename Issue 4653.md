@@ -1,16 +1,17 @@
-# Issue 4653: Merge sage-words code into Sage
+# Issue 4653: [with patch, positive review] Merge sage-words code into Sage
 
 archive/issues_004653.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  @saliola anakha @seblabbe @mwhansen sage-combinat\n\nKeywords: sage-combinat\n\nThe sage-word project wants to implement a complete package for word manipulation and combinatorics under Sage. The project maintains a [Google code page](http://code.google.com/p/sage-words).\n\nThe code has already been merged into sage-combinat, and although it needs a bit of work, it is ready to be merged into Sage. (By \"needs a bit of work\", I mean that there are some algorithms that need to be improved, but the code greatly improves the rudimentary functionality that exists in Sage.) The code is well documented, and a worksheet highlighting the features of the code can be found here:\n\n* [Sage worksheet](http://www-igm.univ-mlv.fr/~saliola/maths/talks/slides/SageTalk2/06_Words.sws)\n* [PDF file of worksheet](http://www-igm.univ-mlv.fr/~saliola/maths/talks/slides/SageTalk2/06_Words.pdf)\n\nArnaud Bergeron, Amy Glen, S\u00e9bastien Labb\u00e9, and Franco Saliola all contributed to the project, so they all deserve credit for this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4653\n\n",
+    "closed_at": "2008-12-17T16:58:05Z",
     "created_at": "2008-11-29T12:45:28Z",
     "labels": [
         "component: combinatorics",
-        "bug"
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Merge sage-words code into Sage",
+    "title": "[with patch, positive review] Merge sage-words code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4653",
     "user": "https://github.com/saliola"

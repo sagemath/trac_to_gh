@@ -4,6 +4,7 @@ archive/issues_009923.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  alexghitza @novoselt @vbraun\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/geometry/polyhedra.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/geometry/polyhedra.py\", line 1270:\n    sage: p1.projection().show() + p2.projection().show() + p3.projection().show()\nExpected nothing\nGot:\n    doctest:4555: DeprecationWarning: (Since Sage 4.6) use the option 'width' instead of 'thickness'\n    <BLANKLINE>\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9924\n\n",
+    "closed_at": "2010-09-17T03:27:16Z",
     "created_at": "2010-09-16T23:41:58Z",
     "labels": [
         "component: doctest coverage",

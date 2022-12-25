@@ -4,6 +4,7 @@ archive/issues_002758.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nDebian switched from g77 to gfortran while I wasn't looking; these patches should update the Debian packages for iml and linbox to deal with the transition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2758\n\n",
+    "closed_at": "2008-04-01T20:51:00Z",
     "created_at": "2008-04-01T18:52:01Z",
     "labels": [
         "component: debian-package",

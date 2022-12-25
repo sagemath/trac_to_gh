@@ -4,6 +4,7 @@ archive/issues_005473.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @mkoeppe\n\nWhen we currently update the pickle jar we do not keep pickles for older versions around. Due to this we could break unconverted pickles without knowing it. \n\nIn that context it might also be nice to check that format conversion works.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5473\n\n",
+    "closed_at": "2021-10-20T17:49:28Z",
     "created_at": "2009-03-10T20:39:38Z",
     "labels": [
         "component: misc",

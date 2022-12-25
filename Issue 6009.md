@@ -1,22 +1,23 @@
-# Issue 6009: Bring plot/text.py to 100%
+# Issue 6009: [with patch, positive review] Bring plot/text.py to 100%
 
 archive/issues_006009.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nBring plot/text.py to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6009\n\n",
+    "body": "Assignee: @kcrisman\n\nBring plot/text.py to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6009\n\n",
+    "closed_at": "2009-05-11T08:52:14Z",
     "created_at": "2009-05-08T19:14:56Z",
     "labels": [
-        "component: doctest",
+        "component: doctest coverage",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bring plot/text.py to 100%",
+    "title": "[with patch, positive review] Bring plot/text.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6009",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: mabshoff
+Assignee: @kcrisman
 
 Bring plot/text.py to 100%.
 

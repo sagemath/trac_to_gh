@@ -4,6 +4,7 @@ archive/issues_004886.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @wjp\n\nDepends on #4552\n\nIssue created by migration from https://trac.sagemath.org/ticket/4886\n\n",
+    "closed_at": "2009-12-09T14:28:09Z",
     "created_at": "2008-12-29T08:09:34Z",
     "labels": [
         "component: notebook"

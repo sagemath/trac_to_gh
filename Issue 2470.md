@@ -1,16 +1,17 @@
-# Issue 2470: dsage docs in tutorial -- can't tex them
+# Issue 2470: [with patch, positive review] dsage docs in tutorial -- can't tex them
 
 archive/issues_002470.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nI can't tex tut.tex unless the dsage section is commented out.  Also there is some \"to be written...\" section in there -- this is not appropriate for the tutorial, which is meant to be a very very polished documented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2470\n\n",
+    "closed_at": "2008-03-24T16:54:58Z",
     "created_at": "2008-03-11T07:59:09Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "dsage docs in tutorial -- can't tex them",
+    "title": "[with patch, positive review] dsage docs in tutorial -- can't tex them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2470",
     "user": "https://github.com/williamstein"

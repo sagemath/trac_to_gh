@@ -4,10 +4,10 @@ archive/issues_000318.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI use the history mode to get back old stuff. I want it to show the input as it was inputted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/318\n\n",
+    "closed_at": "2007-10-20T18:43:57Z",
     "created_at": "2007-03-11T17:16:21Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "History page for notebook should have a notebook style mode",

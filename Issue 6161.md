@@ -4,6 +4,7 @@ archive/issues_006161.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: coercion polynomial\n\nThe following happens with the 'official' Sage 4.0 on sage.math and on at least one other x_86_64 machine (built from sources and in addition with the singular-3-1-0-spkg). It also occurs at least with sage 3.4.2.\n\n```\nsage: R.<x>=QQ[]\nsage: R._has_coerce_map_from(R)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/SimonKing/.sage/temp/sage.math.washington.edu/2444/_home_SimonKing__sage_init_sage_0.py in <module>()\n\nTypeError: 'dict' object is not callable\nsage: R.<x,y>=QQ[]\nsage: R._has_coerce_map_from(R)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/SimonKing/.sage/temp/sage.math.washington.edu/2444/_home_SimonKing__sage_init_sage_0.py in <module>()\n\nTypeError: 'dict' object is not callable\n```\n\nSo, both uni- and multivariate polynomial rings do not believe that they have a coercion to themselves. Or: Coercion of polynomial rings is seriously broken. \n\nI really wonder why this does not break hundreds of doc tests. I hope it is ok to make this a blocker.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6161\n\n",
+    "closed_at": "2009-05-31T19:25:02Z",
     "created_at": "2009-05-30T22:13:32Z",
     "labels": [
         "component: commutative algebra",

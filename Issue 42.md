@@ -4,6 +4,7 @@ archive/issues_000042.json:
 ```json
 {
     "body": "Assignee: somebody\n\n* (KiranKedlaya) Calling GAP commands via gap(\"command\") reacts badly when the command does not return a value, e.g., gap('Read(\"myfile.txt\")').\n\nIssue created by migration from https://trac.sagemath.org/ticket/42\n\n",
+    "closed_at": "2007-01-12T22:03:04Z",
     "created_at": "2006-09-12T23:32:22Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,23 +1,40 @@
-# Issue 2547: Implement gradient(), hessian() for callable function rings
+# Issue 2547: [with patch, positive review] Implement gradient(), hessian() for callable symbolic expressions
 
 archive/issues_002547.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nThis is the extent of my understanding of what #2143 does, perhaps there are other new methods that should be implemented for function rings, or other rings which should have this.\n\nThis relates to making vectors over function rings see #2546\n\nIssue created by migration from https://trac.sagemath.org/ticket/2547\n\n",
+    "body": "Assignee: @jicama\n\nFix this:\n\n```\nsage: f(x,y) = x+y\nsage: f.gradient()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.3.rc3/devel/sage-main/sage/modular/abvar/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'CallableSymbolicExpression' object has no attribute 'gradient'\n\n\n```\n\n\nSEE ALSO: This is the extent of my understanding of what #2143 does, perhaps there are other new methods that should be implemented for function rings, or other rings which should have this.\n\nThis relates to making vectors over function rings see #2546\n\nIssue created by migration from https://trac.sagemath.org/ticket/2547\n\n",
+    "closed_at": "2008-09-02T10:08:49Z",
     "created_at": "2008-03-16T16:46:18Z",
     "labels": [
-        "component: group_theory"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Implement gradient(), hessian() for callable function rings",
+    "title": "[with patch, positive review] Implement gradient(), hessian() for callable symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2547",
     "user": "https://trac.sagemath.org/admin/accounts/users/edrex"
 }
 ```
-Assignee: joyner
+Assignee: @jicama
 
-This is the extent of my understanding of what #2143 does, perhaps there are other new methods that should be implemented for function rings, or other rings which should have this.
+Fix this:
+
+```
+sage: f(x,y) = x+y
+sage: f.gradient()
+---------------------------------------------------------------------------
+<type 'exceptions.AttributeError'>        Traceback (most recent call last)
+
+/Users/was/build/sage-2.10.3.rc3/devel/sage-main/sage/modular/abvar/<ipython console> in <module>()
+
+<type 'exceptions.AttributeError'>: 'CallableSymbolicExpression' object has no attribute 'gradient'
+
+
+```
+
+
+SEE ALSO: This is the extent of my understanding of what #2143 does, perhaps there are other new methods that should be implemented for function rings, or other rings which should have this.
 
 This relates to making vectors over function rings see #2546
 

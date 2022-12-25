@@ -1,15 +1,16 @@
-# Issue 4348: magma interface -- get doctest coverage to 100% (only _ private methods left to test at this point)
+# Issue 4348: [with patch; positive review] magma interface -- get doctest coverage to 100% (only _ private methods left to test at this point)
 
 archive/issues_004348.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nfinish getting doctesting for the magma interface to 100%.  Just private methods at this point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4348\n\n",
+    "body": "Assignee: @williamstein\n\nfinish getting doctesting for the magma interface to 100%.  Just private methods at this point.needs\n\nIssue created by migration from https://trac.sagemath.org/ticket/4348\n\n",
+    "closed_at": "2008-10-26T00:08:05Z",
     "created_at": "2008-10-23T16:39:33Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "magma interface -- get doctest coverage to 100% (only _ private methods left to test at this point)",
+    "title": "[with patch; positive review] magma interface -- get doctest coverage to 100% (only _ private methods left to test at this point)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4348",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,7 @@ archive/issues_004348.json:
 ```
 Assignee: @williamstein
 
-finish getting doctesting for the magma interface to 100%.  Just private methods at this point.
+finish getting doctesting for the magma interface to 100%.  Just private methods at this point.needs
 
 Issue created by migration from https://trac.sagemath.org/ticket/4348
 

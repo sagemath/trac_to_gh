@@ -3,10 +3,10 @@
 archive/issues_001047.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBoost has a \"visitor\" concept.  Basically, you pass a graph traversal method an object.  As the graph traversal function goes through the graph, it invokes functions from your object.  So it's easy to do a depth-first something, for example.  It applies to stuff beyond depth-first and breadth-first too, for example, creating a spanning tree, etc.\n\nSee [http://www.boost.org/libs/graph/doc/visitor_concepts.html](http://www.boost.org/libs/graph/doc/visitor_concepts.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1047\n\n",
+    "body": "Assignee: @williamstein\n\nBoost has a \"visitor\" concept.  Basically, you pass a graph traversal method an object.  As the graph traversal function goes through the graph, it invokes functions from your object.  So it's easy to do a depth-first something, for example.  It applies to stuff beyond depth-first and breadth-first too, for example, creating a spanning tree, etc.\n\nSee [http://www.boost.org/libs/graph/doc/visitor_concepts.html](http://www.boost.org/libs/graph/doc/visitor_concepts.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1047\n\n",
     "created_at": "2007-11-01T00:03:55Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "graphs: Create the \"visitor\" concept in Boost",
@@ -16,8 +16,6 @@ archive/issues_001047.json:
 }
 ```
 Assignee: @williamstein
-
-Keywords: graphs
 
 Boost has a "visitor" concept.  Basically, you pass a graph traversal method an object.  As the graph traversal function goes through the graph, it invokes functions from your object.  So it's easy to do a depth-first something, for example.  It applies to stuff beyond depth-first and breadth-first too, for example, creating a spanning tree, etc.
 

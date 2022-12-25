@@ -1,16 +1,17 @@
-# Issue 3703: [with patch, needs review] bug in set_edge_label
+# Issue 3703: [with patch, positive review] bug in set_edge_label
 
 archive/issues_003703.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: G = Graph({0:{1:1}}, implementation='c_graph')\nsage: G.num_edges()\n1\nsage: G.set_edge_label(0,1,1)\nsage: G.num_edges()\n2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3703\n\n",
+    "closed_at": "2008-07-30T22:31:39Z",
     "created_at": "2008-07-22T00:17:40Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] bug in set_edge_label",
+    "title": "[with patch, positive review] bug in set_edge_label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3703",
     "user": "https://github.com/rlmill"

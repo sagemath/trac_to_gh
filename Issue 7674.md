@@ -4,6 +4,7 @@ archive/issues_007674.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis was still using the old check to see whether a vertex was in the graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7674\n\n",
+    "closed_at": "2009-12-14T16:04:11Z",
     "created_at": "2009-12-12T20:27:53Z",
     "labels": [
         "component: graph theory",

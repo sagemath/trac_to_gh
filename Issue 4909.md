@@ -1,16 +1,17 @@
-# Issue 4909: convert sage.dsage.* docstrings to Sphinx
+# Issue 4909: [with patch, needs little work] convert sage.dsage.* docstrings to Sphinx
 
 archive/issues_004909.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4909\n\n",
+    "closed_at": "2009-02-24T18:33:39Z",
     "created_at": "2009-01-01T22:50:29Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.dsage.* docstrings to Sphinx",
+    "title": "[with patch, needs little work] convert sage.dsage.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4909",
     "user": "https://github.com/mwhansen"

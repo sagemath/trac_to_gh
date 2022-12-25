@@ -3,10 +3,11 @@
 archive/issues_008271.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe iconv package, which will be added to Sage (#8191), \ndumps core on Solaris 10 SPARC, though all tests pass on Linux, OpenSolaris and OS X.\n\nFull details will be added later -  I created this ticket to get a trac number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8271\n\n",
+    "body": "Assignee: drkirkby\n\nThe iconv package, which will be added to Sage (#8191), \ndumps core on Solaris 10 SPARC, though all tests pass on Linux, OpenSolaris and OS X.\n\nHere are the results from a Sun Blade 2000, with Solaris 10 03/2005. The bug has been reported to bug-gnu-libiconv\nat gnu.org\n\n```\ngcc  -I. -I. -I../include -I./../include -I../srclib -I./../srclib -I../lib -g -O2  ./genutf8.c ../srclib/libicrt.a -o genutf8 && \\\n./genutf8 > UTF-8.TXT && \\\n./check-stateless . UTF-8 && \\\nrm -f -r genutf8 genutf8.dSYM UTF-8.TXT\n./check-stateful . UCS-2BE\n./check-stateful . UCS-2LE\n./check-stateful . UCS-4BE\n./check-stateful . UCS-4LE\n./check-stateful . UTF-16\n./check-stateful . UTF-16BE\n./check-stateful . UTF-16LE\n./check-stateful . UTF-32\n./check-stateful . UTF-32BE\n./check-stateful . UTF-32LE\n./check-stateful . UTF-7\n./check-stateless . ISO-8859-1\n./check-stateless . ISO-8859-2\n./check-stateless . ISO-8859-3\n./check-stateless . ISO-8859-4\n./check-stateless . ISO-8859-5\n./check-stateless . ISO-8859-6\n./check-stateless . ISO-8859-7\n./check-stateless . ISO-8859-8\n./check-stateless . ISO-8859-9\n./check-stateless . ISO-8859-10\n./check-stateless . ISO-8859-11\n./check-stateless . ISO-8859-13\n./check-stateless . ISO-8859-14\n./check-stateless . ISO-8859-15\n./check-stateless . ISO-8859-16\n./check-stateless . KOI8-R\n./check-stateless . KOI8-U\n./check-stateless . KOI8-RU\n./check-stateless . CP1250\n./check-stateless . CP1251\n./check-stateless . CP1252\n./check-stateless . CP1253\n./check-stateless . CP1254\n./check-stateless . CP1255\n./check-stateful . CP1255\n./check-stateless . CP1256\n./check-stateless . CP1257\n./check-stateless . CP1258\n./check-stateful . CP1258\n./check-stateless . CP850\n./check-stateless . CP862\n./check-stateless . CP866\n./check-stateless . CP1131\n./check-stateless . MacRoman\n./check-stateless . MacCentralEurope\n./check-stateless . MacIceland\n./check-stateless . MacCroatian\n./check-stateless . MacRomania\n./check-stateless . MacCyrillic\n./check-stateless . MacUkraine\n./check-stateless . MacGreek\n./check-stateless . MacTurkish\n./check-stateless . MacHebrew\n./check-stateless . MacArabic\n./check-stateless . MacThai\n./check-stateless . HP-ROMAN8\n./check-stateless . NEXTSTEP\n./check-stateless . ARMSCII-8\n./check-stateless . Georgian-Academy\n./check-stateless . Georgian-PS\n./check-stateless . KOI8-T\n./check-stateless . PT154\n./check-stateless . RK1048\n./check-stateless . MuleLao-1\n./check-stateless . CP1133\n./check-stateless . TIS-620\n./check-stateless . CP874\n./check-stateless . VISCII\n./check-stateless . TCVN\n./check-stateful . TCVN\n./check-stateless . ISO646-JP\n./check-stateless . JIS_X0201\n./check-stateless . ISO646-CN\n./check-stateless . ISO-IR-165\n./check-stateless . EUC-JP\n./check-stateless . SHIFT_JIS\n./check-stateless . CP932\n./check-stateful . ISO-2022-JP\n./check-stateful . ISO-2022-JP-2\n./check-stateful . ISO-2022-JP-1\n./check-stateless . EUC-CN\n./check-stateless . GBK\n./check-stateless . CP936\ngcc  -I. -I. -I../include -I./../include -I../srclib -I./../srclib -I../lib -g -O2  ./gengb18030z.c ../srclib/libicrt.a -o gengb18030z && \\\n{ cat ./GB18030-BMP.TXT ; ./gengb18030z ; } | sort > GB18030.TXT && \\\n./check-stateless . GB18030 && \\\nrm -f -r gengb18030z gengb18030z.dSYM GB18030.TXT\n./check-stateful . ISO-2022-CN\n./check-stateful . ISO-2022-CN-EXT\n./check-stateful . HZ\n./check-stateless . EUC-TW\n./check-stateless . BIG5\n./check-stateless . CP950\n./check-stateless . BIG5-HKSCS:1999\n./check-stateful . BIG5-HKSCS:1999\n./check-stateless . BIG5-HKSCS:2001\n./check-stateful . BIG5-HKSCS:2001\n./check-stateless . BIG5-HKSCS:2004\n./check-stateful . BIG5-HKSCS:2004\n./check-stateless . EUC-KR\n./check-stateless . CP949\n./check-stateless . JOHAB\n./check-stateful . ISO-2022-KR\nmake check-extra\nmake[2]: Entering directory `/export/home/drkirkby/iconv-1.13.1/src/tests'\nmake[2]: Nothing to be done for `check-extra'.\nmake[2]: Leaving directory `/export/home/drkirkby/iconv-1.13.1/src/tests'\n./check-translit . Quotes UTF-8 ISO-8859-1\n./check-translit . Quotes UTF-8 ASCII\n./check-translit . Translit1 ISO-8859-1 ASCII\n./check-translitfailure . TranslitFail1 ISO-8859-1 ASCII\n./check-subst\nSegmentation Fault - core dumped\nSegmentation Fault - core dumped\nSegmentation Fault - core dumped\n./test-shiftseq\nmake[1]: Leaving directory `/export/home/drkirkby/iconv-1.13.1/src/tests'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8271\n\n",
+    "closed_at": "2010-02-16T21:31:30Z",
     "created_at": "2010-02-15T10:42:41Z",
     "labels": [
-        "component: algebra",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,12 +17,138 @@ archive/issues_008271.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @aghitza
+Assignee: drkirkby
 
 The iconv package, which will be added to Sage (#8191), 
 dumps core on Solaris 10 SPARC, though all tests pass on Linux, OpenSolaris and OS X.
 
-Full details will be added later -  I created this ticket to get a trac number.
+Here are the results from a Sun Blade 2000, with Solaris 10 03/2005. The bug has been reported to bug-gnu-libiconv
+at gnu.org
+
+```
+gcc  -I. -I. -I../include -I./../include -I../srclib -I./../srclib -I../lib -g -O2  ./genutf8.c ../srclib/libicrt.a -o genutf8 && \
+./genutf8 > UTF-8.TXT && \
+./check-stateless . UTF-8 && \
+rm -f -r genutf8 genutf8.dSYM UTF-8.TXT
+./check-stateful . UCS-2BE
+./check-stateful . UCS-2LE
+./check-stateful . UCS-4BE
+./check-stateful . UCS-4LE
+./check-stateful . UTF-16
+./check-stateful . UTF-16BE
+./check-stateful . UTF-16LE
+./check-stateful . UTF-32
+./check-stateful . UTF-32BE
+./check-stateful . UTF-32LE
+./check-stateful . UTF-7
+./check-stateless . ISO-8859-1
+./check-stateless . ISO-8859-2
+./check-stateless . ISO-8859-3
+./check-stateless . ISO-8859-4
+./check-stateless . ISO-8859-5
+./check-stateless . ISO-8859-6
+./check-stateless . ISO-8859-7
+./check-stateless . ISO-8859-8
+./check-stateless . ISO-8859-9
+./check-stateless . ISO-8859-10
+./check-stateless . ISO-8859-11
+./check-stateless . ISO-8859-13
+./check-stateless . ISO-8859-14
+./check-stateless . ISO-8859-15
+./check-stateless . ISO-8859-16
+./check-stateless . KOI8-R
+./check-stateless . KOI8-U
+./check-stateless . KOI8-RU
+./check-stateless . CP1250
+./check-stateless . CP1251
+./check-stateless . CP1252
+./check-stateless . CP1253
+./check-stateless . CP1254
+./check-stateless . CP1255
+./check-stateful . CP1255
+./check-stateless . CP1256
+./check-stateless . CP1257
+./check-stateless . CP1258
+./check-stateful . CP1258
+./check-stateless . CP850
+./check-stateless . CP862
+./check-stateless . CP866
+./check-stateless . CP1131
+./check-stateless . MacRoman
+./check-stateless . MacCentralEurope
+./check-stateless . MacIceland
+./check-stateless . MacCroatian
+./check-stateless . MacRomania
+./check-stateless . MacCyrillic
+./check-stateless . MacUkraine
+./check-stateless . MacGreek
+./check-stateless . MacTurkish
+./check-stateless . MacHebrew
+./check-stateless . MacArabic
+./check-stateless . MacThai
+./check-stateless . HP-ROMAN8
+./check-stateless . NEXTSTEP
+./check-stateless . ARMSCII-8
+./check-stateless . Georgian-Academy
+./check-stateless . Georgian-PS
+./check-stateless . KOI8-T
+./check-stateless . PT154
+./check-stateless . RK1048
+./check-stateless . MuleLao-1
+./check-stateless . CP1133
+./check-stateless . TIS-620
+./check-stateless . CP874
+./check-stateless . VISCII
+./check-stateless . TCVN
+./check-stateful . TCVN
+./check-stateless . ISO646-JP
+./check-stateless . JIS_X0201
+./check-stateless . ISO646-CN
+./check-stateless . ISO-IR-165
+./check-stateless . EUC-JP
+./check-stateless . SHIFT_JIS
+./check-stateless . CP932
+./check-stateful . ISO-2022-JP
+./check-stateful . ISO-2022-JP-2
+./check-stateful . ISO-2022-JP-1
+./check-stateless . EUC-CN
+./check-stateless . GBK
+./check-stateless . CP936
+gcc  -I. -I. -I../include -I./../include -I../srclib -I./../srclib -I../lib -g -O2  ./gengb18030z.c ../srclib/libicrt.a -o gengb18030z && \
+{ cat ./GB18030-BMP.TXT ; ./gengb18030z ; } | sort > GB18030.TXT && \
+./check-stateless . GB18030 && \
+rm -f -r gengb18030z gengb18030z.dSYM GB18030.TXT
+./check-stateful . ISO-2022-CN
+./check-stateful . ISO-2022-CN-EXT
+./check-stateful . HZ
+./check-stateless . EUC-TW
+./check-stateless . BIG5
+./check-stateless . CP950
+./check-stateless . BIG5-HKSCS:1999
+./check-stateful . BIG5-HKSCS:1999
+./check-stateless . BIG5-HKSCS:2001
+./check-stateful . BIG5-HKSCS:2001
+./check-stateless . BIG5-HKSCS:2004
+./check-stateful . BIG5-HKSCS:2004
+./check-stateless . EUC-KR
+./check-stateless . CP949
+./check-stateless . JOHAB
+./check-stateful . ISO-2022-KR
+make check-extra
+make[2]: Entering directory `/export/home/drkirkby/iconv-1.13.1/src/tests'
+make[2]: Nothing to be done for `check-extra'.
+make[2]: Leaving directory `/export/home/drkirkby/iconv-1.13.1/src/tests'
+./check-translit . Quotes UTF-8 ISO-8859-1
+./check-translit . Quotes UTF-8 ASCII
+./check-translit . Translit1 ISO-8859-1 ASCII
+./check-translitfailure . TranslitFail1 ISO-8859-1 ASCII
+./check-subst
+Segmentation Fault - core dumped
+Segmentation Fault - core dumped
+Segmentation Fault - core dumped
+./test-shiftseq
+make[1]: Leaving directory `/export/home/drkirkby/iconv-1.13.1/src/tests'
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/8271
 

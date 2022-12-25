@@ -1,9 +1,10 @@
-# Issue 5291: notebook - Do not save snapshots if nothing has changed
+# Issue 5291: [with patch, positive review] notebook - Do not save snapshots if nothing has changed
 
 archive/issues_005291.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  timothy.clemans@gmail.com jason-sage@creativetrax.com\n\nThis problem has come up over and over again. Per default Sage saves a snapshot every 3 minutes regardless if anything has changed or not. This can add up to a *lot* of identical snapshots if a computation is left running a long time. And that in turn causes people with quotas to run out of space as reported in \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8544666b8b18660c#\n\nI am making this a critical issue against 3.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5291\n\n",
+    "closed_at": "2009-02-18T00:58:09Z",
     "created_at": "2009-02-17T03:44:45Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005291.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "notebook - Do not save snapshots if nothing has changed",
+    "title": "[with patch, positive review] notebook - Do not save snapshots if nothing has changed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5291",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 1835: [with patch] some minor changes to the documentation of basis_is_groebner
+# Issue 1835: [with patch, with positive review] some minor changes to the documentation of basis_is_groebner
 
 archive/issues_001835.json:
 ```json
 {
     "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1835\n\n",
+    "closed_at": "2008-01-21T06:16:23Z",
     "created_at": "2008-01-18T18:42:32Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] some minor changes to the documentation of basis_is_groebner",
+    "title": "[with patch, with positive review] some minor changes to the documentation of basis_is_groebner",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1835",
     "user": "https://github.com/malb"

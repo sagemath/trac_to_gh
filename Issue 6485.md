@@ -1,9 +1,10 @@
-# Issue 6485: [with patch, needs review] broken links from website index to tutorial, constructions, etc.
+# Issue 6485: [with patch, positive review] broken links from website index to tutorial, constructions, etc.
 
 archive/issues_006485.json:
 ```json
 {
     "body": "Assignee: tba\n\nBuild the HTML documentation, including the website, and navigate to `$SAGE_ROOT/devel/sage/doc/output/html/en/index.html`.  Clicking on a link to an  individual document yields a directory listing, instead of the expected index page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6485\n\n",
+    "closed_at": "2009-07-18T21:17:22Z",
     "created_at": "2009-07-08T17:32:50Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006485.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] broken links from website index to tutorial, constructions, etc.",
+    "title": "[with patch, positive review] broken links from website index to tutorial, constructions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6485",
     "user": "https://github.com/qed777"

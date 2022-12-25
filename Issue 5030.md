@@ -1,15 +1,16 @@
-# Issue 5030: [with patch; needs review] get matrix/constructor.py up to 100% coverage
+# Issue 5030: [with patch; positive review] get matrix/constructor.py up to 100% coverage
 
 archive/issues_005030.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5030\n\n",
+    "closed_at": "2009-01-23T02:54:51Z",
     "created_at": "2009-01-20T04:39:44Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch; needs review] get matrix/constructor.py up to 100% coverage",
+    "title": "[with patch; positive review] get matrix/constructor.py up to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5030",
     "user": "https://github.com/williamstein"

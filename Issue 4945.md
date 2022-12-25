@@ -1,9 +1,10 @@
-# Issue 4945: LaTeX for gp elements shouldn't use verbatim environment
+# Issue 4945: [with patch, positive review] LaTeX for gp elements shouldn't use verbatim environment
 
 archive/issues_004945.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: jsmath\n\nGary wrote: \n \nWhen using the SAGE notebook with typeset on, the command \n\n``` \n  gp(2+2) \n``` \ngives the error `'Unknown environment \"verbatim\"'`. \n \nTyping \n\n``` \n  gp(2+2) \n``` \nin the SAGE command line works fine. I think it is a latex output \nerror. \n \nI can confirm this bug. It is caused by the generic latex method for Expect elements: \n \n``` \nsage: latex(gp(2+2)) \n\\begin{verbatim}4\\end{verbatim} \n``` \n \nwhich apparently doesn't play well with jsMath. \n \n`search_src(\"begin{verbatim}\")` returns 43 hits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4945\n\n",
+    "closed_at": "2009-01-12T02:17:47Z",
     "created_at": "2009-01-06T16:56:57Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004945.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "LaTeX for gp elements shouldn't use verbatim environment",
+    "title": "[with patch, positive review] LaTeX for gp elements shouldn't use verbatim environment",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4945",
     "user": "https://github.com/malb"

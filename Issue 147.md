@@ -3,7 +3,8 @@
 archive/issues_000147.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe build breaks here because of missing headerrs:\n\n    gcc -DHAVE_CONFIG_H -I. -I. -I. -I/SandBox/Justin/sb/sage-1.4/local//include/freetype2 \\\n         -I/SandBox/Justin/sb/sage-1.4/local//include -g -O2 -MT gdft.lo -MD -MP -MF \\\n         .deps/gdft.Tpo -c gdft.c  -fno-common -DPIC -o .libs/gdft.lo\n    gdft.c:1366:35: error: fontconfig/fontconfig.h: No such file or directory\n\nIssue created by migration from https://trac.sagemath.org/ticket/147\n\n",
+    "body": "Assignee: @williamstein\n\nThe build breaks here because of missing headerrs:\n\n```\n    gcc -DHAVE_CONFIG_H -I. -I. -I. -I/SandBox/Justin/sb/sage-1.4/local//include/freetype2 \\\n         -I/SandBox/Justin/sb/sage-1.4/local//include -g -O2 -MT gdft.lo -MD -MP -MF \\\n         .deps/gdft.Tpo -c gdft.c  -fno-common -DPIC -o .libs/gdft.lo\n    gdft.c:1366:35: error: fontconfig/fontconfig.h: No such file or directory\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/147\n\n",
+    "closed_at": "2007-01-12T23:40:04Z",
     "created_at": "2006-10-21T20:51:54Z",
     "labels": [
         "component: algebraic geometry",
@@ -19,10 +20,12 @@ Assignee: @williamstein
 
 The build breaks here because of missing headerrs:
 
+```
     gcc -DHAVE_CONFIG_H -I. -I. -I. -I/SandBox/Justin/sb/sage-1.4/local//include/freetype2 \
          -I/SandBox/Justin/sb/sage-1.4/local//include -g -O2 -MT gdft.lo -MD -MP -MF \
          .deps/gdft.Tpo -c gdft.c  -fno-common -DPIC -o .libs/gdft.lo
     gdft.c:1366:35: error: fontconfig/fontconfig.h: No such file or directory
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/147
 

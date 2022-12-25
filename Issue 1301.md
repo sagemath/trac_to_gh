@@ -1,23 +1,22 @@
-# Issue 1301: nauty interface
+# Issue 1301: graphs: nauty interface
 
 archive/issues_001301.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nIt would be handy to have an interface to nauty like the ones to other software not included with Sage.  We have much of the functionality built-in, but an interface to nauty would let us double-check answers and also may provide speed benefits to those who have nauty installed already.\n\nNauty: http://cs.anu.edu.au/~bdm/nauty/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1301\n\n",
+    "body": "Assignee: @rlmill\n\nIt would be handy to have an interface to nauty like the ones to other software not included with Sage.  We have much of the functionality built-in, but an interface to nauty would let us double-check answers and also may provide speed benefits to those who have nauty installed already.\n\nNauty: http://cs.anu.edu.au/~bdm/nauty/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1301\n\n",
+    "closed_at": "2008-05-23T01:45:49Z",
     "created_at": "2007-11-28T17:36:17Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "nauty interface",
+    "title": "graphs: nauty interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1301",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 It would be handy to have an interface to nauty like the ones to other software not included with Sage.  We have much of the functionality built-in, but an interface to nauty would let us double-check answers and also may provide speed benefits to those who have nauty installed already.
 

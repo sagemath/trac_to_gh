@@ -3,7 +3,8 @@
 archive/issues_002607.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robert-marik @kcrisman\n\nThis was reported by Dean Moore on sage-support.  Consider:\n\n```\nsage: f(x) = -x*sin(x^2)\nsage: f.find_minimum_on_interval(-2.5, 2)\n(-1.3076194129914434, 1.35521114057)\nsage: f.find_minimum_on_interval(-2.5, -1)\n(-2.1827697846777219, -2.19450274985)\n```\n\nSo find_minimum_on_interval() returns a local minimum as opposed to the global one.  (The same issue applies to find_maximum_on_interval.)  This is due to the fact that the function wraps scipy.optimize.fminbound, which is only a local optimizer (Carl Witty pointed this out).  We should instead use one of the global optimizers, i.e. scipy.optimize.anneal or scipy.optimize.brute.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2607\n\n",
+    "body": "Assignee: @jicama\n\nCC:  @robert-marik @kcrisman\n\nKeywords: sd31, sd40.5\n\nThis was reported by Dean Moore on sage-support.  Consider:\n\n```\nsage: f(x) = -x*sin(x^2)\nsage: f.find_minimum_on_interval(-2.5, 2)\n(-1.3076194129914434, 1.35521114057)\nsage: f.find_minimum_on_interval(-2.5, -1)\n(-2.1827697846777219, -2.19450274985)\n```\n\nSo find_minimum_on_interval() returns a local minimum as opposed to the global one.  (The same issue applies to find_maximum_on_interval.)  This is due to the fact that the function wraps scipy.optimize.fminbound, which is only a local optimizer (Carl Witty pointed this out).  We should instead use one of the global optimizers, i.e. scipy.optimize.anneal or scipy.optimize.brute.\n\n**Apply:**\n* [attachment:trac2607.patch]\n* [attachment:trac2607-whitespace.2.patch]\n* [attachment:trac_2607_renaming.3.patch]\n* [attachment:trac2607-doctest-and-spacing.patch]\n* [attachment:trac_2607_update_deprecation.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/2607\n\n",
+    "closed_at": "2012-08-01T12:08:41Z",
     "created_at": "2008-03-19T22:17:25Z",
     "labels": [
         "component: calculus",
@@ -16,9 +17,11 @@ archive/issues_002607.json:
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @jicama
 
 CC:  @robert-marik @kcrisman
+
+Keywords: sd31, sd40.5
 
 This was reported by Dean Moore on sage-support.  Consider:
 
@@ -31,6 +34,13 @@ sage: f.find_minimum_on_interval(-2.5, -1)
 ```
 
 So find_minimum_on_interval() returns a local minimum as opposed to the global one.  (The same issue applies to find_maximum_on_interval.)  This is due to the fact that the function wraps scipy.optimize.fminbound, which is only a local optimizer (Carl Witty pointed this out).  We should instead use one of the global optimizers, i.e. scipy.optimize.anneal or scipy.optimize.brute.
+
+**Apply:**
+* [attachment:trac2607.patch]
+* [attachment:trac2607-whitespace.2.patch]
+* [attachment:trac_2607_renaming.3.patch]
+* [attachment:trac2607-doctest-and-spacing.patch]
+* [attachment:trac_2607_update_deprecation.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/2607
 

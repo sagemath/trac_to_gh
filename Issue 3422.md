@@ -1,22 +1,23 @@
-# Issue 3422: Minor typo in docs for zeta_zeros()
+# Issue 3422: [with patch, positive review] Minor typo in docs for zeta_zeros()
 
 archive/issues_003422.json:
 ```json
 {
-    "body": "Assignee: tba\n\nMichael Yurko reported in http://groups.google.com/group/sage-devel/t/9300a4480eafd679\n\n```\nIn the reference manual (13.7 Tables of zeros of the Riemann-Zeta\nfunction) it states that zeta_zeros() gives a list of the \"first 10000\nimaginary parts.\" However, it should say \"first 100000 imaginary\nparts\" (add a zero to read 100,000). Also, it might serve to mention\nthat this is an optional package that doesn't come by default.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3422\n\n",
+    "body": "Assignee: @jicama\n\nMichael Yurko reported in http://groups.google.com/group/sage-devel/t/9300a4480eafd679\n\n```\nIn the reference manual (13.7 Tables of zeros of the Riemann-Zeta\nfunction) it states that zeta_zeros() gives a list of the \"first 10000\nimaginary parts.\" However, it should say \"first 100000 imaginary\nparts\" (add a zero to read 100,000). Also, it might serve to mention\nthat this is an optional package that doesn't come by default.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3422\n\n",
+    "closed_at": "2008-09-14T11:53:32Z",
     "created_at": "2008-06-13T23:40:55Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Minor typo in docs for zeta_zeros()",
+    "title": "[with patch, positive review] Minor typo in docs for zeta_zeros()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3422",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: @jicama
 
 Michael Yurko reported in http://groups.google.com/group/sage-devel/t/9300a4480eafd679
 

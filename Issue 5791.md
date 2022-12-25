@@ -1,21 +1,22 @@
-# Issue 5791: Allow custom packages to be injected or %latex and the Sage latex mode
+# Issue 5791: [with patch, positive review] Allow custom packages to be injected or %latex and the Sage latex mode
 
 archive/issues_005791.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/39f1d0e71eae2453 for the discussion: It would be great of one could add packages that are automatically included when running LaTeX, i.e. for commutative diagrams.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5791\n\n",
+    "body": "Assignee: @jhpalmieri\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/39f1d0e71eae2453 for the discussion: It would be great of one could add packages that are automatically included when running LaTeX, i.e. for commutative diagrams.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5791\n\n",
+    "closed_at": "2009-04-30T04:09:13Z",
     "created_at": "2009-04-15T06:55:56Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Allow custom packages to be injected or %latex and the Sage latex mode",
+    "title": "[with patch, positive review] Allow custom packages to be injected or %latex and the Sage latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5791",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: cwitty
+Assignee: @jhpalmieri
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/39f1d0e71eae2453 for the discussion: It would be great of one could add packages that are automatically included when running LaTeX, i.e. for commutative diagrams.
 

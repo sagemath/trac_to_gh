@@ -1,9 +1,10 @@
-# Issue 310: Debian testing version of mercurial refers to plugin not included in SAGE mercurial
+# Issue 310: [with spkg] Debian testing version of mercurial refers to plugin not included in SAGE mercurial
 
 archive/issues_000310.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: mercurial\n\nAt least the latest version of mercurial from Debian testing (version 0.9.3-2), and possibly earlier versions as well, have a line in /etc/mercurial/hgrc.d/hgext.rc that tries to load the extension hgext/churn.  Since SAGE mercurial does not include this extension, every mercurial operation gives the following warning:\n\n```\n*** failed to import extension hgext/churn: No module named hgext/churn\n```\n(However, mercurial seems to work fine even with the warning.)\n\nPerhaps SAGE's mercurial should ignore /etc/mercurial, or perhaps SAGE's mercurial should be updated to include the churn extension.\n\nOr, of course, Debian users can remove the line from hgext.rc, or just ignore the warning message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/310\n\n",
+    "closed_at": "2007-10-23T17:42:36Z",
     "created_at": "2007-03-06T06:18:40Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_000310.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Debian testing version of mercurial refers to plugin not included in SAGE mercurial",
+    "title": "[with spkg] Debian testing version of mercurial refers to plugin not included in SAGE mercurial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/310",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

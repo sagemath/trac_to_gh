@@ -3,7 +3,8 @@
 archive/issues_009109.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: finite sets map\n\nA class for dealing with maps between finite sets.\n\nThe patch is in preparation os sage-combinat-queue\n\nIssue created by migration from https://trac.sagemath.org/ticket/9109\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: finite sets map\n\nThe patch implements fast Cython classes for maps between finite sets. The goal in particular is to allow for building easily submonoids of the monoid of all maps from one set to itself.\n\nSee for example class NDPFMonoidPosetNewSet in\n[parking_functions_posets-fh.patch](http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/parking_functions_posets-fh.patch#l1) \n\n\n**Apply:**\n1. [attachment:trac_9109-finite_set_maps-fh.patch]\n\n**Dependencies:** #8702\n\nIssue created by migration from https://trac.sagemath.org/ticket/9109\n\n",
+    "closed_at": "2011-04-13T07:42:50Z",
     "created_at": "2010-06-01T17:08:23Z",
     "labels": [
         "component: combinatorics"
@@ -15,13 +16,20 @@ archive/issues_009109.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: sage-combinat
+Assignee: @hivert
 
 Keywords: finite sets map
 
-A class for dealing with maps between finite sets.
+The patch implements fast Cython classes for maps between finite sets. The goal in particular is to allow for building easily submonoids of the monoid of all maps from one set to itself.
 
-The patch is in preparation os sage-combinat-queue
+See for example class NDPFMonoidPosetNewSet in
+[parking_functions_posets-fh.patch](http://combinat.sagemath.org/hgwebdir.cgi/patches/file/tip/parking_functions_posets-fh.patch#l1) 
+
+
+**Apply:**
+1. [attachment:trac_9109-finite_set_maps-fh.patch]
+
+**Dependencies:** #8702
 
 Issue created by migration from https://trac.sagemath.org/ticket/9109
 

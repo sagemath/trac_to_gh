@@ -3,10 +3,11 @@
 archive/issues_005084.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5084\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5084\n\n",
+    "closed_at": "2013-03-29T18:58:05Z",
     "created_at": "2009-01-24T03:07:31Z",
     "labels": [
-        "component: algebra",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_005084.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

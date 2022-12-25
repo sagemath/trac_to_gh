@@ -4,9 +4,11 @@ archive/issues_004000.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @burcin drkirkby spancratz @mwhansen @malb @jdemeyer @peterjeremy\n\nBill Hart wrote on [sage-devel]:\n\n\"\"\"\nAlmost everything over Q should probably be converted to a problem\nover Z. I haven't seen any polynomial problems over Q which should not\nbe dealt with this way so far, but I suppose they may exist.\n\"\"\"\n\nFurther justification:\n\n```\nsage: f = R.random_element(2000)\nsage: g = R.random_element(2000)\nsage: fD = f.denominator()\nsage: gD = g.denominator()\nsage: fZ = (fD * f).change_ring(ZZ)\nsage: gZ = (gD * g).change_ring(ZZ)\nsage: %time _ = f*g\nCPU times: user 0.63 s, sys: 0.02 s, total: 0.66 s\nWall time: 0.67 s\n\nsage: %time _ = (fZ*gZ)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n\nsage: %time _ = (fZ*gZ)/(fD*gD) \nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\n\nsage: fM = magma(f)\nsage: gM = magma(g)\nsage: t = magma.cputime()\nsage: _ = fM*gM\nsage: magma.cputime(t)\n0.059999999999999998\n```\n\n```\nsage: f = R.random_element(4000) \nsage: g = R.random_element(4000) \nsage: fD = f.denominator()\nsage: gD = g.denominator()\nsage: fZ = (fD * f).change_ring(ZZ)\nsage: gZ = (gD * g).change_ring(ZZ)\nsage: %time _ = f*g\nCPU times: user 2.11 s, sys: 0.00 s, total: 2.12 s\nWall time: 2.14 s\nsage: %time _ = (fZ*gZ)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\nsage: %time _ = (fZ*gZ)/(fD*gD)\nCPU times: user 0.14 s, sys: 0.01 s, total: 0.15 s\nWall time: 0.15 s\nsage: fM = magma(f)\nsage: gM = magma(g)\nsage: t = magma.cputime()\nsage: _ = fM*gM\nsage: magma.cputime(t)\n0.10000000000000001\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4000\n\n",
+    "closed_at": "2010-10-08T22:48:52Z",
     "created_at": "2008-08-30T12:21:46Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: basic arithmetic",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Implement QQ['x'] via Flint ZZ['x'] + denominator",

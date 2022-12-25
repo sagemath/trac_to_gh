@@ -3,7 +3,7 @@
 archive/issues_008074.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @robertwb @williamstein jkantor @zimmermann6 @nexttime\n\nWhat should these return?\n\n```\n\nsage: RR('inf').is_real()\nTrue\nsage: RR('nan').is_real()\nTrue\nsage: RR('inf').is_unit()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8074\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @robertwb @williamstein jkantor @zimmermann6 @nexttime\n\nWhat should these return?\n\n```\n\nsage: RR('inf').is_real()\nTrue\nsage: RR('nan').is_real()\nTrue\nsage: RR('inf').is_unit()\nTrue\nsage: RR('nan')==RR('nan')\nTrue\nsage: RR('nan').__nonzero__()\nFalse\nsage: RR('nan').__pow(0.5)\nException RuntimeError: 'maximum recursion depth exceeded while calling a Python object' in <type 'exceptions.RuntimeError'> ignored\n^CERROR: Internal Python error in the inspect module.\nBelow is the traceback from this internal error.\n\nTraceback (most recent call last):\n  File \"/home/grout/sage/local/lib/python2.6/site-packages/IPython/ultraTB.py\", line 614, in text\n    records = _fixed_getinnerframes(etb, context,self.tb_offset)\n  File \"/home/grout/sage/local/lib/python2.6/site-packages/IPython/ultraTB.py\", line 230, in _fixed_getinnerframes\n    records  = fix_frame_records_filenames(inspect.getinnerframes(etb, context))\n  File \"/home/grout/sage/local/lib/python/inspect.py\", line 942, in getinnerframes\n    framelist.append((tb.tb_frame,) + getframeinfo(tb, context))\n  File \"/home/grout/sage/local/lib/python/inspect.py\", line 902, in getframeinfo\n    filename = getsourcefile(frame) or getfile(frame)\n  File \"/home/grout/sage/local/lib/python/inspect.py\", line 451, in getsourcefile\n    if hasattr(getmodule(object, filename), '__loader__'):\n  File \"/home/grout/sage/local/lib/python/inspect.py\", line 485, in getmodule\n    if ismodule(module) and hasattr(module, '__file__'):\n  File \"/home/grout/sage/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.py\", line 9, in my_sigint\n    raise KeyboardInterrupt\nKeyboardInterrupt\n\nUnfortunately, your original traceback can not be constructed.\nsage: RR('-inf').__pow(0.5)\n+infinity\nsage: sqrt(RR('-inf'))     \n+infinity*I\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8074\n\n",
     "created_at": "2010-01-26T08:37:57Z",
     "labels": [
         "component: numerical",
@@ -30,7 +30,39 @@ sage: RR('nan').is_real()
 True
 sage: RR('inf').is_unit()
 True
+sage: RR('nan')==RR('nan')
+True
+sage: RR('nan').__nonzero__()
+False
+sage: RR('nan').__pow(0.5)
+Exception RuntimeError: 'maximum recursion depth exceeded while calling a Python object' in <type 'exceptions.RuntimeError'> ignored
+^CERROR: Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+
+Traceback (most recent call last):
+  File "/home/grout/sage/local/lib/python2.6/site-packages/IPython/ultraTB.py", line 614, in text
+    records = _fixed_getinnerframes(etb, context,self.tb_offset)
+  File "/home/grout/sage/local/lib/python2.6/site-packages/IPython/ultraTB.py", line 230, in _fixed_getinnerframes
+    records  = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
+  File "/home/grout/sage/local/lib/python/inspect.py", line 942, in getinnerframes
+    framelist.append((tb.tb_frame,) + getframeinfo(tb, context))
+  File "/home/grout/sage/local/lib/python/inspect.py", line 902, in getframeinfo
+    filename = getsourcefile(frame) or getfile(frame)
+  File "/home/grout/sage/local/lib/python/inspect.py", line 451, in getsourcefile
+    if hasattr(getmodule(object, filename), '__loader__'):
+  File "/home/grout/sage/local/lib/python/inspect.py", line 485, in getmodule
+    if ismodule(module) and hasattr(module, '__file__'):
+  File "/home/grout/sage/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.py", line 9, in my_sigint
+    raise KeyboardInterrupt
+KeyboardInterrupt
+
+Unfortunately, your original traceback can not be constructed.
+sage: RR('-inf').__pow(0.5)
++infinity
+sage: sqrt(RR('-inf'))     
++infinity*I
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8074
 

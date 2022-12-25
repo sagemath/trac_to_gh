@@ -1,21 +1,22 @@
-# Issue 6817: [with SPKG, needs review] GLPK for Sage, new version
+# Issue 6817: [with spkg, positive review] GLPK for Sage, new version
 
 archive/issues_006817.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu\n\nNew version of package GLPK for Sage. There is nothing new except that this spkg now embeds the function solveGLPK which was previously included directly into Sage ( stupid, as this is to be an optional package ).\nHence, this code has already been positively reviewed in #6502\n\nAs with package COIN-OR/CBC, the function is now compiled when the package is installed, then loaded by sage.numerical.mip when solve() is called.\n\nThe package can be installed this way\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg\n}}]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6817\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nNew version of package GLPK for Sage. There is nothing new except that this spkg now embeds the function solveGLPK which was previously included directly into Sage ( stupid, as this is to be an optional package ).\nHence, this code has already been positively reviewed in #6502\n\nAs with package COIN-OR/CBC, the function is now compiled when the package is installed, then loaded by sage.numerical.mip when solve() is called.\n\nThe package can be installed this way\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p0.spkg\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6817\n\n",
+    "closed_at": "2009-09-02T16:08:40Z",
     "created_at": "2009-08-24T09:38:08Z",
     "labels": [
-        "component: optional packages"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with SPKG, needs review] GLPK for Sage, new version",
+    "title": "[with spkg, positive review] GLPK for Sage, new version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6817",
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 CC:  mvngu
 
@@ -27,8 +28,8 @@ As with package COIN-OR/CBC, the function is now compiled when the package is in
 The package can be installed this way
 
 ```
-sage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg
-}}]
+sage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p0.spkg
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6817
 

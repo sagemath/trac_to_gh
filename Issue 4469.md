@@ -1,9 +1,10 @@
-# Issue 4469: Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py
+# Issue 4469: [with patch, positive review] Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py
 
 archive/issues_004469.json:
 ```json
 {
     "body": "Assignee: tbd\n\neno:\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/wstein/eno/sage-3.2.alpha3/tmp/number_field.py\", line 1025:\n    sage: [phi(k.0^2) for phi in v]\nExpected:\n    [2.97572074038...,\n     -2.40889943716 + 1.90254105304*I,\n     -2.40889943716 - 1.90254105304*I,\n     0.921039066973 + 3.07553311885*I,\n     0.921039066973 - 3.07553311885*I]\nGot:\n    [2.97572074038, \n     -2.40889943716 + 1.90254105304*I, \n     -2.40889943716 - 1.90254105304*I, \n     0.921039066973 - 3.07553311885*I, \n     0.921039066973 + 3.07553311885*I]\n**********************************************************************\n```\ncicero:\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/wstein/cicero/build/sage-3.2.alpha3/tmp/number_field.py\", line 1032:\n    sage: K.complex_embeddings() \nExpected:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 + 2\n      To:   Complex Double Field \n      Defn: a |--> -1.25992104989...,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 + 2\n      To:   Complex Double Field\n      Defn: a |--> 0.629960524947 - 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 + 2\n      To:   Complex Double Field\n      Defn: a |--> 0.629960524947 + 1.09112363597*I\n    ]\nGot:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 + 2\n      To:   Complex Double Field\n      Defn: a |--> -1.25992104989 + 2.77555756156e-16*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 + 2      To:   Complex Double Field\n      Defn: a |--> 0.629960524947 + 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 + 2\n      To:   Complex Double Field\n      Defn: a |--> 0.629960524947 - 1.09112363597*I\n    ]\n**********************************************************************\n```\nmenas:\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py \n**********************************************************************\nFile \"/home/wstein/menas/build/sage-3.2.alpha3/tmp/number_field.py\", line 1025:\n    sage: [phi(k.0^2) for phi in v]\nExpected:\n    [2.97572074038...,\n     -2.40889943716 + 1.90254105304*I,\n     -2.40889943716 - 1.90254105304*I,\n     0.921039066973 + 3.07553311885*I,\n     0.921039066973 - 3.07553311885*I]\nGot:\n    [2.97572074038, \n     -2.40889943716 + 1.90254105304*I, \n     -2.40889943716 - 1.90254105304*I, \n     0.921039066973 - 3.07553311885*I, \n     0.921039066973 + 3.07553311885*I]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4469\n\n",
+    "closed_at": "2008-11-18T18:18:53Z",
     "created_at": "2008-11-08T20:18:58Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_004469.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py",
+    "title": "[with patch, positive review] Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4469",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

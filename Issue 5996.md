@@ -1,21 +1,22 @@
-# Issue 5996: Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients
+# Issue 5996: [with patch, positive review] Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients
 
 archive/issues_005996.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @certik @jdchristensen\n\nPython file for calculating Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients (integrals over 3 spherical\nharmonics) exactly. \n\nHas already received some positive review at \nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ca312a02de54553e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5996\n\n",
+    "body": "Assignee: jrasch\n\nCC:  @certik @jdchristensen\n\nPython file for calculating Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients (integrals over 3 spherical\nharmonics) exactly. \n\nHas already received some positive review at \nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ca312a02de54553e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5996\n\n",
+    "closed_at": "2009-07-16T21:20:00Z",
     "created_at": "2009-05-06T13:27:07Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients",
+    "title": "[with patch, positive review] Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5996",
     "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
-Assignee: @burcin
+Assignee: jrasch
 
 CC:  @certik @jdchristensen
 

@@ -4,6 +4,7 @@ archive/issues_009382.json:
 ```json
 {
     "body": "Assignee: Mariah Lenox\n\natlas on i686 systems (x86-Linux) is\nnot respecting SAGE_FAT_BINARY.\n\nThe attached mercurial patch adds\ni686 to the list of other architectures\n(i386, x86_64) that respect SAGE_FAT_BINARY.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9382\n\n",
+    "closed_at": "2011-08-03T14:43:14Z",
     "created_at": "2010-06-29T20:18:14Z",
     "labels": [
         "component: packages: standard",

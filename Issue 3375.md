@@ -1,16 +1,17 @@
-# Issue 3375: Fix building ntl on Solaris with make and ld [with patch needs review]
+# Issue 3375: [with patch, mixed review] Fix building ntl on Solaris with make and ld
 
 archive/issues_003375.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  polybori-discuss@lists.sourceforge.net\n\nOK so here is what got me through ntl on David's box.\nThe mfile patch is against the copy in the ntl patch folder \nnot the source. It also patch ntl spkg-install to properly\nsetup and tune ntl as well as cleaning the installation bits\nintroduced to accommodate Tim & I.\nI guess Tim and I will have to fend for ourselves separately.\nAlso we submitted a lot of patch in the ntl style. Since\nI used some GNU-ism for building shared objects most of\nthem will have to be revised.\n\nFrancois\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3375\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori-discuss@lists.sourceforge.net\n\nKeywords: editor_mabshoff\n\nOK so here is what got me through ntl on David's box.\nThe mfile patch is against the copy in the ntl patch folder \nnot the source. It also patch ntl spkg-install to properly\nsetup and tune ntl as well as cleaning the installation bits\nintroduced to accommodate Tim & I.\nI guess Tim and I will have to fend for ourselves separately.\nAlso we submitted a lot of patch in the ntl style. Since\nI used some GNU-ism for building shared objects most of\nthem will have to be revised.\n\nFrancois\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3375\n\n",
+    "closed_at": "2015-02-23T21:00:19Z",
     "created_at": "2008-06-06T01:22:51Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Fix building ntl on Solaris with make and ld [with patch needs review]",
+    "title": "[with patch, mixed review] Fix building ntl on Solaris with make and ld",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3375",
     "user": "https://github.com/kiwifb"
@@ -19,6 +20,8 @@ archive/issues_003375.json:
 Assignee: mabshoff
 
 CC:  polybori-discuss@lists.sourceforge.net
+
+Keywords: editor_mabshoff
 
 OK so here is what got me through ntl on David's box.
 The mfile patch is against the copy in the ntl patch folder 

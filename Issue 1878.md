@@ -1,16 +1,17 @@
-# Issue 1878: [with patch] add new function from mpfr-2.3.0
+# Issue 1878: [with patch, with positive review] add new function from mpfr-2.3.0
 
 archive/issues_001878.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis patch completes #1716. Some new functions are added, also some functions already available\nin SAGE are replaced by their exact mpfr flavour. For example sec(x) was defined as 1/cos(x),\nit now calls directly mpfr_sec.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1878\n\n",
+    "closed_at": "2008-01-21T23:55:02Z",
     "created_at": "2008-01-21T07:12:06Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] add new function from mpfr-2.3.0",
+    "title": "[with patch, with positive review] add new function from mpfr-2.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1878",
     "user": "https://github.com/zimmermann6"

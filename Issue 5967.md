@@ -1,15 +1,16 @@
-# Issue 5967: ElementWrapper: A class for wrapping Sage or Python objects as Sage elements
+# Issue 5967: [with patch, positive review] ElementWrapper: A class for wrapping Sage or Python objects as Sage elements
 
 archive/issues_005967.json:
 ```json
 {
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nThis patch implements a simple class ElementWrapper for wrapping Sage\nor Python objects as Sage elements, with reasonable default\nimplementations of repr, cmp, hash, etc. The typical use case is for\ntrivially constructing new element classes from preexisting Sage or\nPython classes, with a containment relation.\n\nThis class is used extensively in the examples of the upcoming category framework patch #5891.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5967\n\n",
+    "closed_at": "2009-05-31T23:40:42Z",
     "created_at": "2009-05-03T01:26:19Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "ElementWrapper: A class for wrapping Sage or Python objects as Sage elements",
+    "title": "[with patch, positive review] ElementWrapper: A class for wrapping Sage or Python objects as Sage elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5967",
     "user": "https://github.com/nthiery"

@@ -1,30 +1,30 @@
-# Issue 8392: Check when defining a permutation by one-line notation (list of int)
+# Issue 8392: Implement RSK for generalized permutations
 
 archive/issues_008392.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat billey\n\nKeywords: permutation, check, assert\n\nJust check the user give a good entry and for that move a method (robinson_schensted)\n\nFor now, sage accept that:\n\n```\nsage: Permutation([1,1,1,1,1])\n[1, 1, 1, 1, 1]\nsage: Permutation([-12,1,3])\n[-12, 1, 3]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8392\n\n",
+    "body": "Assignee: @tscrim\n\nCC:  sage-combinat billey\n\nKeywords: permutation, check, days38, days45\n\nSince the user is currently very strongly encouraged to use good formatting in #13742, there is no longer a good way to do certain methods which were more designed for words (ex. `robinson_schensted()`)\n\nBefore, sage would accept that:\n\n```\nsage: Permutation([1,1,1,1,1])\n[1, 1, 1, 1, 1]\nsage: Permutation([-12,1,3])\n[-12, 1, 3]\n```\nThis ticket is to give an easy way to run RSK on the first one.\n\nMore explicitly, this ticket separates out the `RSK` into a global function which takes various types of input and runs the row insertion and also does the same for the inverse.\n\n---\n\nApply only: [attachment:trac_8392-check_permutation-ts.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8392\n\n",
+    "closed_at": "2013-06-06T12:31:11Z",
     "created_at": "2010-02-27T21:04:24Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "Check when defining a permutation by one-line notation (list of int)",
+    "title": "Implement RSK for generalized permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8392",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
-Assignee: nborie
+Assignee: @tscrim
 
 CC:  sage-combinat billey
 
-Keywords: permutation, check, assert
+Keywords: permutation, check, days38, days45
 
-Just check the user give a good entry and for that move a method (robinson_schensted)
+Since the user is currently very strongly encouraged to use good formatting in #13742, there is no longer a good way to do certain methods which were more designed for words (ex. `robinson_schensted()`)
 
-For now, sage accept that:
+Before, sage would accept that:
 
 ```
 sage: Permutation([1,1,1,1,1])
@@ -32,6 +32,13 @@ sage: Permutation([1,1,1,1,1])
 sage: Permutation([-12,1,3])
 [-12, 1, 3]
 ```
+This ticket is to give an easy way to run RSK on the first one.
+
+More explicitly, this ticket separates out the `RSK` into a global function which takes various types of input and runs the row insertion and also does the same for the inverse.
+
+---
+
+Apply only: [attachment:trac_8392-check_permutation-ts.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8392
 

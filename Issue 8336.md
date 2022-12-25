@@ -3,7 +3,8 @@
 archive/issues_008336.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff\n\nThis is related to #188 and #2899.\n\n```\nsage: R=RealField(150)\nsage: x=R(3493274823748475345934875398475345349.9343498375)\nsage: y=round(x)\nsage: y, type(y)\n(3.49327482375e+36, <type 'sage.rings.real_double.RealDoubleElement'>)\nsage: z=x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\nIf one performs `ZZ(y)` to convert `y` to an integer, one\nhas a huge loss of accuracy.\n\nI see no point of forcing coercion to RDF, which has limited precision and exponent range.\n\nI would expect `round(x)` to return the same value as `z`,\neither as Integer or RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8336\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff\n\nThis is related to #188 and #2899.\n\n```\nsage: R=RealField(150)\nsage: x=R(3493274823748475345934875398475345349.9343498375)\nsage: y=round(x)\nsage: y, type(y)\n(3.49327482375e+36, <type 'sage.rings.real_double.RealDoubleElement'>)\nsage: z=x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\nIf one performs `ZZ(y)` to convert `y` to an integer, one\nhas a huge loss of accuracy.\n\nI see no point of forcing coercion to RDF, which has limited precision and exponent range.\n\nI would expect `round(x)` to return the same value as `z`,\neither as Integer or RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8336\n\n",
+    "closed_at": "2011-12-18T15:43:29Z",
     "created_at": "2010-02-23T18:00:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +18,7 @@ archive/issues_008336.json:
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @aghitza
+Assignee: @robertwb
 
 CC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff
 

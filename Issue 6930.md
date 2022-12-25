@@ -1,16 +1,17 @@
-# Issue 6930: [with patch, needs review] make 3d axes labels a little more precise
+# Issue 6930: [with patch, positive review] make 3d axes labels a little more precise
 
 archive/issues_006930.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @robertwb wcauchois\n\nThe frame labels on this plot look completely wrong, since they are only printed with 0 digits after the decimal.  The attached patch makes frames with small ranges print with one decimal after the decimal, which makes this plot look all right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6930\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @robertwb wcauchois\n\nThe frame labels on this plot look completely wrong, since they are only printed with 0 digits after the decimal.  The attached patch makes frames with big ranges print with one digit after the decimal, which makes this plot look all right.\n\n```\npoints([(0,0,0), (1, -1, 1), (3, 0.5, -2)])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6930\n\n",
+    "closed_at": "2009-09-23T23:03:10Z",
     "created_at": "2009-09-15T04:03:52Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] make 3d axes labels a little more precise",
+    "title": "[with patch, positive review] make 3d axes labels a little more precise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6930",
     "user": "https://github.com/jasongrout"
@@ -20,7 +21,12 @@ Assignee: @williamstein
 
 CC:  @williamstein @robertwb wcauchois
 
-The frame labels on this plot look completely wrong, since they are only printed with 0 digits after the decimal.  The attached patch makes frames with small ranges print with one decimal after the decimal, which makes this plot look all right.
+The frame labels on this plot look completely wrong, since they are only printed with 0 digits after the decimal.  The attached patch makes frames with big ranges print with one digit after the decimal, which makes this plot look all right.
+
+```
+points([(0,0,0), (1, -1, 1), (3, 0.5, -2)])
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6930
 

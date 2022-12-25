@@ -1,15 +1,15 @@
-# Issue 5128: matplotlib Graphics() wrapper
+# Issue 5128: [with patch, needs work] matplotlib Graphics() wrapper
 
 archive/issues_005128.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nilesjohnson\n\nThis provides an easy way to make a matplotlib image and combine it with other Graphics() objects:\n\n```\nclass Matplotlib_Primitive(GraphicPrimitive):\n    \"\"\"\n    Primitive class that initializes the\n    matrix_plot graphics type \n    \"\"\"\n    def __init__(self, artist, options=None):\n        self.artist = artist\n        GraphicPrimitive.__init__(self, options)        \n\n    def get_minmax_data(self):\n        \"\"\"\n        Returns a dictionary with the bounding box data.\n                \n        EXAMPLES:\n            sage: m = matrix_plot(matrix([[1,3,5,1],[2,4,5,6],[1,3,5,7]]))[0]\n            sage: list(sorted(m.get_minmax_data().items()))\n            [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\n\n        \"\"\"\n        return dict(zip(['xmin', 'xmax', 'ymax', 'ymin'], self.artist.get_extent()))\n\n    def _allowed_options(self):\n        return {}\n\n    def _repr_(self):\n        return \"MatrixPlot defined by a %s x %s data grid\"%(self.xy_array_row, self.xy_array_col)\n\n    def _render_on_subplot(self, subplot):\n        subplot.add_artist(self.artist)\n\ndef matplotlib_plot(mat):\n    from sage.plot.plot import Graphics\n    g = Graphics()\n    g.add_primitive(Matplotlib_Primitive(mat))\n    return g\n```\n\nExample use:\n\n```\nA=random_matrix(RDF,100)\nA.numpy()\nimport pylab\nimport numpy\nB=A.numpy().astype(float)\nim = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)\nmatplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])\n```\n\n\nThis just needs to be put in a file in the plot/ directory and an entry added to all.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5128\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nilesjohnson\n\nKeywords: matplotlib, Graphics\n\nThis provides an easy way to make a matplotlib image and combine it with other Graphics() objects:\n\n```\nclass Matplotlib_Primitive(GraphicPrimitive):\n    \"\"\"\n    Primitive class that initializes the\n    matrix_plot graphics type \n    \"\"\"\n    def __init__(self, artist, options=None):\n        self.artist = artist\n        GraphicPrimitive.__init__(self, options)        \n\n    def get_minmax_data(self):\n        \"\"\"\n        Returns a dictionary with the bounding box data.\n                \n        EXAMPLES:\n            sage: m = matrix_plot(matrix([[1,3,5,1],[2,4,5,6],[1,3,5,7]]))[0]\n            sage: list(sorted(m.get_minmax_data().items()))\n            [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\n\n        \"\"\"\n        return dict(zip(['xmin', 'xmax', 'ymax', 'ymin'], self.artist.get_extent()))\n\n    def _allowed_options(self):\n        return {}\n\n    def _repr_(self):\n        return \"MatrixPlot defined by a %s x %s data grid\"%(self.xy_array_row, self.xy_array_col)\n\n    def _render_on_subplot(self, subplot):\n        subplot.add_artist(self.artist)\n\ndef matplotlib_plot(mat):\n    from sage.plot.plot import Graphics\n    g = Graphics()\n    g.add_primitive(Matplotlib_Primitive(mat))\n    return g\n```\n\nExample use:\n\n```\nA=random_matrix(RDF,100)\nA.numpy()\nimport pylab\nimport numpy\nB=A.numpy().astype(float)\nim = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)\nmatplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])\n```\n\n\nThis just needs to be put in a file in the plot/ directory and an entry added to all.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5128\n\n",
     "created_at": "2009-01-29T11:56:58Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "matplotlib Graphics() wrapper",
+    "title": "[with patch, needs work] matplotlib Graphics() wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5128",
     "user": "https://github.com/jasongrout"
@@ -18,6 +18,8 @@ archive/issues_005128.json:
 Assignee: @williamstein
 
 CC:  @nilesjohnson
+
+Keywords: matplotlib, Graphics
 
 This provides an easy way to make a matplotlib image and combine it with other Graphics() objects:
 

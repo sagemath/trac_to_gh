@@ -3,7 +3,8 @@
 archive/issues_007820.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhampton @williamstein\n\nSee\nhttp://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html\n\nRelease 0.4plus has improved performance and a lot of new functionality.\n\nCcing Marshall and William since they are the package maintainers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7820\n\n",
+    "body": "Assignee: tbd\n\nCC:  mhampton @williamstein\n\nThe new spkg is at\n\nhttp://sage.math.washington.edu/home/ghitza/gfan-0.4plus.spkg\n\n\nSee\nhttp://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html\n\nRelease 0.4plus has improved performance and a lot of new functionality.\n\nThis also takes care of the following issues: remove the debian dist directory (see #5903), clarify the license (see #3043), and separate the clean upstream from the patches needed to build in Sage (see #3338).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7820\n\n",
+    "closed_at": "2010-01-25T14:11:59Z",
     "created_at": "2010-01-02T23:04:14Z",
     "labels": [
         "component: packages: standard"
@@ -19,12 +20,17 @@ Assignee: tbd
 
 CC:  mhampton @williamstein
 
+The new spkg is at
+
+http://sage.math.washington.edu/home/ghitza/gfan-0.4plus.spkg
+
+
 See
 http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html
 
 Release 0.4plus has improved performance and a lot of new functionality.
 
-Ccing Marshall and William since they are the package maintainers.
+This also takes care of the following issues: remove the debian dist directory (see #5903), clarify the license (see #3043), and separate the clean upstream from the patches needed to build in Sage (see #3338).
 
 Issue created by migration from https://trac.sagemath.org/ticket/7820
 

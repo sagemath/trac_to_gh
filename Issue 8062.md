@@ -4,6 +4,7 @@ archive/issues_008062.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nLet spkg-install work with SAGE64=\"yes\" on Open Solaris.\n\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8062\n\n",
+    "closed_at": "2010-02-11T15:16:55Z",
     "created_at": "2010-01-25T21:23:19Z",
     "labels": [
         "component: porting",

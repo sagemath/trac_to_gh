@@ -1,22 +1,23 @@
-# Issue 4547: The Sage Notebook doesn't specify the Content-Type header in its responses
+# Issue 4547: [with patch, positive review] The Sage Notebook doesn't specify the Content-Type header in its responses
 
 archive/issues_004547.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nThis causes Apache rewriting for example to just display plain text instead of HTML.  This hasn't been an issue because browsers are relatively smart about dealing with unspecified Content-Types.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4547\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout\n\nThis causes Apache rewriting for example to just display plain text instead of HTML.  This hasn't been an issue because browsers are relatively smart about dealing with unspecified Content-Types.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4547\n\n",
+    "closed_at": "2009-03-23T21:54:54Z",
     "created_at": "2008-11-19T15:01:12Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "The Sage Notebook doesn't specify the Content-Type header in its responses",
+    "title": "[with patch, positive review] The Sage Notebook doesn't specify the Content-Type header in its responses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4547",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 CC:  @jasongrout
 

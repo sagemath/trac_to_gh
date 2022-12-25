@@ -1,16 +1,17 @@
-# Issue 468: quaddouble wrapper sets fpu precision to 53 bits for entire sage session
+# Issue 468: [with patch] quaddouble wrapper sets fpu precision to 53 bits for entire sage session
 
 archive/issues_000468.json:
 ```json
 {
     "body": "Assignee: bober\n\nKeywords: quaddouble, fpu, ReadQuadDouble\n\nsage/rings/real_rqdf.pyx contains the following code:\n\n```\ncdef class RealQuadDoubleField_class(Field):\n    \"\"\"\n    Real Quad Double Field\n    \"\"\"\n\n    def __init__(self):\n        fpu_fix_start(self.cwf)        \n\n    def __dealloc__(self):\n        fpu_fix_end(self.cwf)\n```\n\nOn systems where `fpu_fix_start()` does something, it sets the fpu precision to 53 bits. A poor side effect of this is that the type `long double` ought to have 64 bits of precision on some systems, but it doesn't when it is used in code run from SAGE.\n\nThe short term fix will be to rewrite the wrapper to have an fpu_fix_start() and fpu_fix_end() call before and after every arithmetic operation on a `RealQuadDouble` element, and nowhere else, to make sure that the quaddouble wrapper doesn't ever unexpected change the fpu precision.\n\nIt would also be nice to have a doctest that can check the fpu precision, so it can be checked that nothing ever changes it unexpectedly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/468\n\n",
+    "closed_at": "2007-10-13T06:42:29Z",
     "created_at": "2007-08-20T20:58:22Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "quaddouble wrapper sets fpu precision to 53 bits for entire sage session",
+    "title": "[with patch] quaddouble wrapper sets fpu precision to 53 bits for entire sage session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/468",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"

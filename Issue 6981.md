@@ -1,23 +1,24 @@
-# Issue 6981: include 64-bit OS X gfortran in standard SAge
+# Issue 6981: [with spkg, positive review] include 64-bit OS X gfortran in standard SAge
 
 archive/issues_006981.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis will make the tarball bigger (by 24MB), but is the only way to go at present.   With this one spkg update, building Sage 64-bit on OS X will be as simple as typing:\n\n```\nexport SAGE64=\"yes\"\nmake\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6981\n\n",
+    "body": "Assignee: mabshoff\n\nThis will make the tarball bigger (by 24MB), but is the only way to go at present.   With this one spkg update, building Sage 64-bit on OS X will be as simple as typing:\n\n```\nexport SAGE64=\"yes\"\nmake\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6981\n\n",
+    "closed_at": "2009-09-27T02:32:55Z",
     "created_at": "2009-09-22T01:42:38Z",
     "labels": [
-        "component: build",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "include 64-bit OS X gfortran in standard SAge",
+    "title": "[with spkg, positive review] include 64-bit OS X gfortran in standard SAge",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6981",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 This will make the tarball bigger (by 24MB), but is the only way to go at present.   With this one spkg update, building Sage 64-bit on OS X will be as simple as typing:
 

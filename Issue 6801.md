@@ -4,6 +4,7 @@ archive/issues_006801.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis gives a weird magma error:\n\n```\nmagma.eval(\"\"\"\nfunction t()\n    a:=1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7;\nend function;\n\"\"\")\n```\n\nThe same thing with a shorter line starting \"a:=\" does not fail. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6801\n\n",
+    "closed_at": "2011-06-20T18:54:53Z",
     "created_at": "2009-08-22T10:22:58Z",
     "labels": [
         "component: interfaces",

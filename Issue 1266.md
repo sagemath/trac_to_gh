@@ -1,22 +1,23 @@
-# Issue 1266: sage.functions.piecewise is missing from reference manual
+# Issue 1266: [with patch] sage.functions.piecewise is missing from reference manual
 
 archive/issues_001266.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThere's nothing in the reference manual about piecewise functions (except for some brief mentions in sage.calculus.wester); the piecewise module is missing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1266\n\n",
+    "body": "Assignee: @mwhansen\n\nThere's nothing in the reference manual about piecewise functions (except for some brief mentions in sage.calculus.wester); the piecewise module is missing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1266\n\n",
+    "closed_at": "2008-01-17T00:59:35Z",
     "created_at": "2007-11-25T14:06:07Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "sage.functions.piecewise is missing from reference manual",
+    "title": "[with patch] sage.functions.piecewise is missing from reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1266",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 There's nothing in the reference manual about piecewise functions (except for some brief mentions in sage.calculus.wester); the piecewise module is missing.
 

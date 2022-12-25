@@ -1,15 +1,16 @@
-# Issue 5500: add remark to tutorial to make defining functions at the command line much clearer
+# Issue 5500: [with patch, positive review] add remark to tutorial to make defining functions at the command line much clearer
 
 archive/issues_005500.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\nFolks,\n\nI have one suggestion for the Sage Tutorial.\n\nIn Section 2.3, after the text\n\n## sage: def is_even(n):\n...       return n%2 == 0\n## I suggest that you add an instruction to press [Enter/Return/Newline]\nafter the\n\n...       return n%2 == 0\n\nto conclude the definition.\n\nWhen I followed the instruction exactly as it is given, without\ninserting a blank line, I got an error like this:\n### sage: def is_even(n):\n....:     return n%2 == 0\n....: sage: is_even(2)\n------------------------------------------------------------\n   File \"<ipython console>\", line 3\n     sage: is_even(Integer(2))\n        ^\nSyntaxError: invalid syntax\n### It was only after I emailed sage-support that I was told I needed to\ninsert a blank line to conclude the definition. Because I am new to\nPython, this was not old hat to me. Hence my suggestion to append:\n#### Insert a blank line here by pressing [Return or Enter]\n\n(after the line\n\n...       return n%2 == 0)\n#### Many thanks.\n\nChandra\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5500\n\n",
+    "closed_at": "2009-03-23T20:34:52Z",
     "created_at": "2009-03-12T05:57:58Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "add remark to tutorial to make defining functions at the command line much clearer",
+    "title": "[with patch, positive review] add remark to tutorial to make defining functions at the command line much clearer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5500",
     "user": "https://github.com/williamstein"

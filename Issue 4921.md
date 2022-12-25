@@ -1,15 +1,16 @@
-# Issue 4921: convert sage.modules.* docstrings to Sphinx
+# Issue 4921: [with patch, needs review] convert sage.modules.* docstrings to Sphinx
 
 archive/issues_004921.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4921\n\n",
+    "closed_at": "2009-02-24T18:51:20Z",
     "created_at": "2009-01-01T22:54:30Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.modules.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.modules.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4921",
     "user": "https://github.com/mwhansen"

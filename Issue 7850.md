@@ -3,7 +3,8 @@
 archive/issues_007850.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: spherical,plot\n\nI've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.\n\nThe code is\n\n```\nvar('phi,theta')\ndef spherical_plot(f,phiran=(phi,0,2*pi),thetaran=(theta,0,pi),**kwds):\n   phi=phiran[0]\n   phi0=phiran[1]\n   phif=phiran[2]\n   theta=thetaran[0]\n   theta0=thetaran[1]\n   thetaf=thetaran[2]\n   Rho=(f*cos(phi)*sin(theta),f*sin(phi)*sin(theta),f*cos(theta))\n   return parametric_plot3d(Rho,(phi,phi0,phif),(theta,theta0,thetaf),**kwds) \n```\n\nSeveral examples can be found in [http://www.sagenb.org/pub/1319/](http://www.sagenb.org/pub/1319/)\n\nI've been suggested to eliminate the dependence on the 'phi' and 'theta' variables. I quite agree that that would be good, but I can't figure how to do it.\n\nAlso, I think I might generalize this into any sort of transform plot. But let's first see how this works out. Especially the variable dependency\n\nIssue created by migration from https://trac.sagemath.org/ticket/7850\n\n",
+    "body": "Assignee: olazo\n\nKeywords: spherical,plot\n\nThis command is now supposed to be derived from the code in this ticket #7872\n\nIssue created by migration from https://trac.sagemath.org/ticket/7850\n\n",
+    "closed_at": "2010-01-24T19:35:42Z",
     "created_at": "2010-01-05T18:06:16Z",
     "labels": [
         "component: graphics",
@@ -16,32 +17,11 @@ archive/issues_007850.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
-Assignee: @williamstein
+Assignee: olazo
 
 Keywords: spherical,plot
 
-I've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.
-
-The code is
-
-```
-var('phi,theta')
-def spherical_plot(f,phiran=(phi,0,2*pi),thetaran=(theta,0,pi),**kwds):
-   phi=phiran[0]
-   phi0=phiran[1]
-   phif=phiran[2]
-   theta=thetaran[0]
-   theta0=thetaran[1]
-   thetaf=thetaran[2]
-   Rho=(f*cos(phi)*sin(theta),f*sin(phi)*sin(theta),f*cos(theta))
-   return parametric_plot3d(Rho,(phi,phi0,phif),(theta,theta0,thetaf),**kwds) 
-```
-
-Several examples can be found in [http://www.sagenb.org/pub/1319/](http://www.sagenb.org/pub/1319/)
-
-I've been suggested to eliminate the dependence on the 'phi' and 'theta' variables. I quite agree that that would be good, but I can't figure how to do it.
-
-Also, I think I might generalize this into any sort of transform plot. But let's first see how this works out. Especially the variable dependency
+This command is now supposed to be derived from the code in this ticket #7872
 
 Issue created by migration from https://trac.sagemath.org/ticket/7850
 

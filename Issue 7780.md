@@ -4,6 +4,7 @@ archive/issues_007780.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: latex\n\nBuilding docs in 4.3, there are some latex errors:\n\n```\nWARNING: display latex u'\\\\mbox{min_bound} \\\\leq \\\\mbox{linear_function} \\\\leq \\\\mbox{max_bound}': latex exited with error:\n```\ncaused by the underscores in min_bound, max_bound and linear_function.  These come from numerical/mip.pyx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7780\n\n",
+    "closed_at": "2009-12-28T17:15:54Z",
     "created_at": "2009-12-28T16:38:16Z",
     "labels": [
         "component: documentation",

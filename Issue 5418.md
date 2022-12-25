@@ -4,6 +4,7 @@ archive/issues_005418.json:
 ```json
 {
     "body": "Assignee: justin\n\nThis is a followup to #4470. The code was merged under the condition that the coverage goes up to 100% before the release.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5418\n\n",
+    "closed_at": "2009-05-15T11:21:48Z",
     "created_at": "2009-03-02T04:17:37Z",
     "labels": [
         "component: quadratic forms",

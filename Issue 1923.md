@@ -1,21 +1,22 @@
-# Issue 1923: Make an obvious checkbox or menu to switch on pretty printing in the notebook
+# Issue 1923: [with patch, positive review] Make an obvious checkbox or menu to switch on pretty printing in the notebook
 
 archive/issues_001923.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe ought to have a very obvious, easy-to-use switch to switch on or off pretty printing in the notebook.  This request is related to the updated work done in #1922 .\n\nSomething like a checkbox up by the menus would be great.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1923\n\n",
+    "body": "Assignee: boothby\n\nWe ought to have a very obvious, easy-to-use switch to switch on or off pretty printing in the notebook.  This request is related to the updated work done in #1922 .\n\nSomething like a checkbox up by the menus would be great.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1923\n\n",
+    "closed_at": "2008-01-29T12:38:20Z",
     "created_at": "2008-01-25T08:15:33Z",
     "labels": [
-        "component: algebraic geometry"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Make an obvious checkbox or menu to switch on pretty printing in the notebook",
+    "title": "[with patch, positive review] Make an obvious checkbox or menu to switch on pretty printing in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1923",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 We ought to have a very obvious, easy-to-use switch to switch on or off pretty printing in the notebook.  This request is related to the updated work done in #1922 .
 

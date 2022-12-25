@@ -4,6 +4,7 @@ archive/issues_005196.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIn particular, the note at the bottom of http://www.sagemath.org/doc/inst/node5.html claims that gcc 4.3 doesn't work yet.\n\nBut probably somebody who knows the current status (that is, mabshoff) should review the entire manual; there are probably lots of other things in there that are wrong now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5196\n\n",
+    "closed_at": "2009-02-12T12:20:48Z",
     "created_at": "2009-02-06T17:44:56Z",
     "labels": [
         "component: documentation",

@@ -1,9 +1,10 @@
-# Issue 9160: Singular - change timestamp of file and sort out SAGE64 isssue.
+# Issue 9160: Singular - change timestamp of files and sort out SAGE64 issue.
 
 archive/issues_009160.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @nexttime @qed777 alexanderdreyer polybori @malb\n\n## The problems\n\nThere were three things wrong with the Singular package, the last of which can cause build failures. \n\n* The ability to build 64-bit was restricted to the OS X operating system, as the -m64 flag was only added if both SAGE64 was set to \"yes\" and the operating system was OS X with the following line of code.\n* The package version was unconventional, with people sometimes updating a date, rather than incrementing the patch level as is standard Sage practice - see the developers guide at http://www.sagemath.org/doc/developer/patching_spkgs.html#overview-of-patching-spkg-s \n* The time stamp of the file `src/Singular/libparse.cc` was one second older than the file it was supposed to be created from ( `src/Singular/libparse.l`), so the build process was trying to use 'flex' to update `src/Singular/libparse.cc`, which fails if flex is not available. \n\n```\nmake install in Singular\nmake[4]: Entering directory `/export/home/drkirkby/32/sage-4.4.3/spkg/build/singular-3-1-0-4-20100214/src/Singular'\nsh flexer.sh -I -Pyylp -t libparse.l >libparse.cc.lmp\nflexer.sh: flex: not found\nflexer.sh: test: argument expected\nmake[4]: *** [libparse.cc] Error 1 \n```\n See http://groups.google.co.uk/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523?hl=en for a discussion of this. \n\n == The solutions ==\nThree very minor changes are made. \n* The following\n\n```\n   if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\n was changed to \n\n```\n   if [ \"x$SAGE64\" = xyes ]; then\n```\n\n to enable 64-bit builds on any platform when SAGE64 is set to \"yes\".\n\n* The time stamp of the file `src/Singular/libparse.cc` made the current time with:\n\n```\ntouch src/Singular/libparse.cc\n``` \n\n* The package name was set in according with the Sage Developers Guide. Had this been done properly, it would be patch level 6, so the package was named singular-3.1.0.4.p6. \n\n == Why a blocker ? ==\nThe incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9160\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @nexttime @qed777 alexanderdreyer polybori @malb\n\n == The problems ==\n\nThere were three things wrong with the Singular package, the last of which can cause build failures. \n\n* The ability to build 64-bit was restricted to the OS X operating system, as the -m64 flag was only added if both SAGE64 was set to \"yes\" and the operating system was OS X with the following line of code.\n* The package version was unconventional, with people sometimes updating a date, rather than incrementing the patch level as is standard Sage practice - see the developers guide at http://www.sagemath.org/doc/developer/patching_spkgs.html#overview-of-patching-spkg-s \n* The time stamp of the file `src/Singular/libparse.cc` was one second older than the file it was supposed to be created from ( `src/Singular/libparse.l`), so the build process was trying to use 'flex' to update `src/Singular/libparse.cc`, which fails if flex is not available. \n\n```\nmake install in Singular\nmake[4]: Entering directory `/export/home/drkirkby/32/sage-4.4.3/spkg/build/singular-3-1-0-4-20100214/src/Singular'\nsh flexer.sh -I -Pyylp -t libparse.l >libparse.cc.lmp\nflexer.sh: flex: not found\nflexer.sh: test: argument expected\nmake[4]: *** [libparse.cc] Error 1 \n```\n See http://groups.google.co.uk/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523?hl=en for a discussion of this. \n\n == The solutions ==\nThree very minor changes are made. \n* The following\n\n```\n   if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\n was changed to \n\n```\n   if [ \"x$SAGE64\" = xyes ]; then\n```\n\n to enable 64-bit builds on any platform when SAGE64 is set to \"yes\".\n\n* The time stamp of the file `src/Singular/libparse.cc` made the current time with:\n\n```\ntouch src/Singular/libparse.cc\n``` \n\n* The package name was set in according with the Sage Developers Guide. Had this been done properly, it would be patch level 6, so the package was named singular-3.1.0.4.p6. \n\n == Why a blocker ? ==\nThe incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too. \n\nI'm not going to report this upstream, as its not a current version of Singular. It will need someone with more knowledge to update the version of Singular. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9160\n\n",
+    "closed_at": "2010-06-09T06:35:22Z",
     "created_at": "2010-06-06T13:13:55Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_009160.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Singular - change timestamp of file and sort out SAGE64 isssue.",
+    "title": "Singular - change timestamp of files and sort out SAGE64 issue.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9160",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -21,7 +22,7 @@ Assignee: GeorgSWeber
 
 CC:  @wjp @nexttime @qed777 alexanderdreyer polybori @malb
 
-## The problems
+ == The problems ==
 
 There were three things wrong with the Singular package, the last of which can cause build failures. 
 
@@ -64,7 +65,9 @@ touch src/Singular/libparse.cc
 * The package name was set in according with the Sage Developers Guide. Had this been done properly, it would be patch level 6, so the package was named singular-3.1.0.4.p6. 
 
  == Why a blocker ? ==
-The incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too.
+The incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too. 
+
+I'm not going to report this upstream, as its not a current version of Singular. It will need someone with more knowledge to update the version of Singular. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9160
 

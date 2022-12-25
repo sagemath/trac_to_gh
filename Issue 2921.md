@@ -1,16 +1,17 @@
-# Issue 2921: gcc 4.3: Fix flintqs.spkg build
+# Issue 2921: [with spkg, positive review] gcc 4.3: Fix flintqs.spkg build
 
 archive/issues_002921.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFlintqs currently doesn't build with gcc 4.3. The following simple patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2921\n\n",
+    "closed_at": "2008-04-14T21:56:45Z",
     "created_at": "2008-04-14T21:27:46Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "gcc 4.3: Fix flintqs.spkg build",
+    "title": "[with spkg, positive review] gcc 4.3: Fix flintqs.spkg build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2921",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

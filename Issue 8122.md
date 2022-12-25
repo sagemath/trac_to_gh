@@ -4,6 +4,7 @@ archive/issues_008122.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies mvngu\n\nThe symmerica package says in SPKG.txt\n\n```\n## Special Update/Build Instructions\n\nAgainst common policy the patches in the patches directory have been applied to \nthe src directory:\n\n * de.patch (Turn off banner)\n * macro.h.patch (Change some return types, this can be avoided)\n * makefile.patch (Fix compiler, inject CFLAGS)\n * sort_sum_rename.patch (rename sort tp sym_sort, sum to sym_sum) \n```\n\nIt would appear various patches have been made to the source code. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/symmetrica-2.0.p5/\n\nhas an updated version of symmetica, which will build with any compiler, and in 64-bit mode. However, it does not resolve the issue of patching the source directly. I modified the makefile, which had already been modified before. A patch was left, so I have tried to recreate the original makefile. But other files have been changed too. The packages is basically a bit of a mess\n\nIssue created by migration from https://trac.sagemath.org/ticket/8122\n\n",
+    "closed_at": "2014-01-04T04:18:20Z",
     "created_at": "2010-01-29T18:51:48Z",
     "labels": [
         "component: build",

@@ -4,6 +4,7 @@ archive/issues_007721.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThere is no constructor for the Circuit digraph !\n\nIssue created by migration from https://trac.sagemath.org/ticket/7721\n\n",
+    "closed_at": "2009-12-19T20:02:38Z",
     "created_at": "2009-12-17T12:50:23Z",
     "labels": [
         "component: graph theory"

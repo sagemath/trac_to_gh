@@ -1,22 +1,23 @@
-# Issue 2523: bug in modular symbols for GammaH subgroup
+# Issue 2523: [with patch, with positive review] bug in modular symbols for GammaH subgroup
 
 archive/issues_002523.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
+    "closed_at": "2008-04-26T21:19:06Z",
     "created_at": "2008-03-15T00:01:36Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "bug in modular symbols for GammaH subgroup",
+    "title": "[with patch, with positive review] bug in modular symbols for GammaH subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2523",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 ```
 sage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()

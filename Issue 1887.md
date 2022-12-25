@@ -1,15 +1,16 @@
-# Issue 1887: [with patch, needs review] graph isomorphism for multiple edges
+# Issue 1887: [with patch, positive review] graph isomorphism for multiple edges
 
 archive/issues_001887.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  boothby\n\nBased on an idea by Tom Boothby for translating multigraphs to plain graphs with more vertices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1887\n\n",
+    "closed_at": "2008-01-29T12:48:37Z",
     "created_at": "2008-01-23T00:50:42Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] graph isomorphism for multiple edges",
+    "title": "[with patch, positive review] graph isomorphism for multiple edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1887",
     "user": "https://github.com/rlmill"

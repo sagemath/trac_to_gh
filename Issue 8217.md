@@ -3,7 +3,8 @@
 archive/issues_008217.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe 4ti2 package should be cleaned up and made into an optional package.\n\nI know of no build issues.  The .DS_Store files from OS X need to be removed, it needs to be under mercurial revision control, and the upstream project should be checked for updates.  After that I know of no reason why this shouldn't be an optional package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8217\n\n",
+    "body": "Assignee: tbd\n\nKeywords: sandpiles\n\nThe 4ti2 package should be cleaned up and made into an optional package.\n\nThis builds on a variety of linux, OS X, and solaris platforms. \n\n---\n\nNew optional spkg: [http://sage.math.washington.edu/home/mhampton/4ti2-1.3.2.p1.spkg](http://sage.math.washington.edu/home/mhampton/4ti2-1.3.2.p1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8217\n\n",
+    "closed_at": "2011-09-17T04:31:27Z",
     "created_at": "2010-02-08T20:28:50Z",
     "labels": [
         "component: packages: optional"
@@ -17,9 +18,15 @@ archive/issues_008217.json:
 ```
 Assignee: tbd
 
+Keywords: sandpiles
+
 The 4ti2 package should be cleaned up and made into an optional package.
 
-I know of no build issues.  The .DS_Store files from OS X need to be removed, it needs to be under mercurial revision control, and the upstream project should be checked for updates.  After that I know of no reason why this shouldn't be an optional package.
+This builds on a variety of linux, OS X, and solaris platforms. 
+
+---
+
+New optional spkg: [http://sage.math.washington.edu/home/mhampton/4ti2-1.3.2.p1.spkg](http://sage.math.washington.edu/home/mhampton/4ti2-1.3.2.p1.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8217
 

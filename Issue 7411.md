@@ -4,6 +4,7 @@ archive/issues_007411.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @hivert @mwhansen sage-combinat\n\nKeywords: Robinson-Schensted\n\nThe main improvement comes from the use of a binary search, just as in #7408.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7411\n\n",
+    "closed_at": "2009-11-12T06:32:55Z",
     "created_at": "2009-11-08T14:01:29Z",
     "labels": [
         "component: combinatorics",

@@ -1,16 +1,17 @@
-# Issue 5919: [with patch, needs review] bug in conversion of polys over GF(2,e) from NTL to singular
+# Issue 5919: [with patch, positive review] bug in conversion of polys over GF(2,e) from NTL to singular
 
 archive/issues_005919.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  alexghitza @malb\n\nKeywords: polynomial finite field\n\nIn 3.4.2.alpha0 we have\n\n```\nsage: F.<a> = GF(2^16)\nsage: R.<x, y> = F[]\nsage: R({(1,2):1})\n0*x*y^2\n```\nwhich Alex Ghitza tracked down to a line in libs/singular/singular.pyx and which I fixed by replacing one character in that line from 'i' to '0'.  After that:\n\n```\nsage: sage: F.<a> = GF(2^16)\nsage: sage: R.<x, y> = F[]\nsage: sage: R({(1,2):1})\nx*y^2\n```\nand hence also\n\n```\nsage: Fx.<b>=GF(2^(4*5))\nsage: Ex=EllipticCurve(Fx,[0,0,1,1,1])\nsage: Ex.defining_polynomial()\nx^3 + y^2*z + x*z^2 + y*z^2 + z^3\n```\nwhich was not working properly (as reported to sage-devel).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5919\n\n",
+    "closed_at": "2009-04-29T22:49:56Z",
     "created_at": "2009-04-28T15:40:18Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] bug in conversion of polys over GF(2,e) from NTL to singular",
+    "title": "[with patch, positive review] bug in conversion of polys over GF(2,e) from NTL to singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5919",
     "user": "https://github.com/JohnCremona"

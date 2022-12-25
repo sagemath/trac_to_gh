@@ -3,11 +3,10 @@
 archive/issues_007682.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb jkantor @williamstein @kcrisman @egourgoulhon\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/06756df51d828bf4\n\n```\nwe probably ought to make this easier to just print the \nfirst n digits after the decimal by default for RR numbers, or to not \nprint out the trailing zeros.  I can't imagine telling my students, for \nexample, that they need to do '%.3f'%num every time they come across a \nnumber, especially since they just want to display the equation, not \nformat it as a string.\n\nWhat do people think about this interface?\n\nsage: RR.print_digits=3\nsage: 3.09384\n3.094\nsage: RR.print_trailing_zeros=False\nsage: RR.print_digits=None\nsage: 3.09384\n3.09384\n\nMake it something like the RR.scientific_notation flag that is currently \nin use.\n```\n\nAdditionally, and more flexibly, we could just have something like:\n\n```\n\nsage: RR.set_print_format('%.3f')\nsage: RR(pi)\n3.142\n```\n\nor more pythonically\n\n```\nsage: RR.print_format = '%.3f'\nsage: RR(pi)\n3.142\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7682\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb jkantor @williamstein @kcrisman @egourgoulhon\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/06756df51d828bf4\n\n```\nwe probably ought to make this easier to just print the \nfirst n digits after the decimal by default for RR numbers, or to not \nprint out the trailing zeros.  I can't imagine telling my students, for \nexample, that they need to do '%.3f'%num every time they come across a \nnumber, especially since they just want to display the equation, not \nformat it as a string.\n\nWhat do people think about this interface?\n\nsage: RR.print_digits=3\nsage: 3.09384\n3.094\nsage: RR.print_trailing_zeros=False\nsage: RR.print_digits=None\nsage: 3.09384\n3.09384\n\nMake it something like the RR.scientific_notation flag that is currently \nin use.\n```\n\nAdditionally, and more flexibly, we could just have something like:\n\n```\n\nsage: RR.set_print_format('%.3f')\nsage: RR(pi)\n3.142\n```\n\nor more pythonically\n\n```\nsage: RR.print_format = '%.3f'\nsage: RR(pi)\n3.142\n```\n\nEdit: the patches below do not allow you to set a C format string or number of digits, but they do provide a framework for setting field-wide printing options, and wrap the current printing options Sage has implemented (plus a few minor extensions, I think).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7682\n\n",
     "created_at": "2009-12-14T20:29:00Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Customize printing of real numbers",
@@ -60,6 +59,8 @@ sage: RR.print_format = '%.3f'
 sage: RR(pi)
 3.142
 ```
+
+Edit: the patches below do not allow you to set a C format string or number of digits, but they do provide a framework for setting field-wide printing options, and wrap the current printing options Sage has implemented (plus a few minor extensions, I think).
 
 Issue created by migration from https://trac.sagemath.org/ticket/7682
 

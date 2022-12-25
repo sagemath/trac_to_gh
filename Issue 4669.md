@@ -1,22 +1,23 @@
-# Issue 4669: CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)
+# Issue 4669: [with patch, positive review] CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)
 
 archive/issues_004669.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
+    "body": "Assignee: @jasongrout\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
+    "closed_at": "2008-12-07T09:59:42Z",
     "created_at": "2008-12-01T15:31:59Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)",
+    "title": "[with patch, positive review] CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4669",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 ```
 > What is really confusing me is that the docstring for

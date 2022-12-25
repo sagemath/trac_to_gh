@@ -4,6 +4,7 @@ archive/issues_000930.json:
 ```json
 {
     "body": "Assignee: @malb\n\nGiven a zero-dimensional ideal $I$ the attached patch implements finding the finite set of points on the variety $V(I)$.\n\nIssue created by migration from https://trac.sagemath.org/ticket/930\n\n",
+    "closed_at": "2007-10-21T03:23:12Z",
     "created_at": "2007-10-19T17:33:56Z",
     "labels": [
         "component: commutative algebra"

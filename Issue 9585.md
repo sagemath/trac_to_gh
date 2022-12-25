@@ -3,7 +3,8 @@
 archive/issues_009585.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nWe've have several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.\n\nSome possibilities:\n\n* [D. Cervone's experimental editor](http://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html) (but see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/28c918d66a421573/3ed595b482b889b4#3ed595b482b889b4))\n\nIssue created by migration from https://trac.sagemath.org/ticket/9585\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nWe've had several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.\n\nSome possibilities:\n\n* [D. Cervone's experimental editor](http://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html) (but see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/28c918d66a421573/3ed595b482b889b4#3ed595b482b889b4))\n\nIssue created by migration from https://trac.sagemath.org/ticket/9585\n\n",
+    "closed_at": "2020-08-19T12:33:40Z",
     "created_at": "2010-07-23T08:47:07Z",
     "labels": [
         "component: notebook"
@@ -19,7 +20,7 @@ Assignee: jason, was
 
 CC:  @fchapoton
 
-We've have several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.
+We've had several requests and discussions ([on the mailing lists](http://groups.google.com/groups/search?q=equation+editor+group%3Asage-devel&btnG=Search&sitesearch=), etc.) for an interactive equation editor for Sage.
 
 Some possibilities:
 

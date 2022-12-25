@@ -3,7 +3,8 @@
 archive/issues_000056.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWe're not sure what to make of this yet:\n\n```\nMAGMA:\nwas@sage:~$ magma\nMagma V2.12-20    Wed Sep 13 2006 16:02:30 on sage     [Seed = 4122492641]\nType ? for help.  Type <Ctrl>-D to quit.\n> two := 2;\n> A := [0..10^5-1];\n> time B := [i + two : i in A];\nTime: 0.030 \n\nSAGE int's:\n\nsage: two=int(2)\nsage: A = range(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\n\nSAGE GMP ints:\n\nsage: two=2\nsage: A = srange(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.36 s, sys: 0.01 s, total: 0.37 s\nWall time: 0.37\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/56\n\n",
+    "body": "Assignee: somebody\n\nWe're not sure what to make of this yet:\n\n```\nMAGMA:\nwas@sage:~$ magma\nMagma V2.12-20    Wed Sep 13 2006 16:02:30 on sage     [Seed = 4122492641]\nType ? for help.  Type <Ctrl>-D to quit.\n> two := 2;\n> A := [0..10^5-1];\n> time B := [i + two : i in A];\nTime: 0.030 \n\nSAGE int's:\n\nsage: two=int(2)\nsage: A = range(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04\n\nSAGE GMP ints:\n\nsage: two=2\nsage: A = srange(10^5)\nsage: time B = [i+two for i in A]\nCPU times: user 0.36 s, sys: 0.01 s, total: 0.37 s\nWall time: 0.37\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/56\n\n",
+    "closed_at": "2008-06-16T00:05:57Z",
     "created_at": "2006-09-13T23:40:58Z",
     "labels": [
         "component: basic arithmetic",
@@ -45,6 +46,8 @@ sage: A = srange(10^5)
 sage: time B = [i+two for i in A]
 CPU times: user 0.36 s, sys: 0.01 s, total: 0.37 s
 Wall time: 0.37
+
+
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/56

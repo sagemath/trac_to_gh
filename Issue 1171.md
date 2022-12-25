@@ -1,22 +1,23 @@
-# Issue 1171: _new() method for quadratic field elements
+# Issue 1171: [with patch, with positive review] _new() method for quadratic field elements
 
 archive/issues_001171.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n`NumberFieldElement_quadratic` should override `_new()` to copy the D attribute from the source object; currently every call to _new() actually calls the base class implementation and then D is copied manually.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1171\n\n",
+    "body": "Assignee: @robertwb\n\n`NumberFieldElement_quadratic` should override `_new()` to copy the D attribute from the source object; currently every call to _new() actually calls the base class implementation and then D is copied manually.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1171\n\n",
+    "closed_at": "2008-02-16T02:10:58Z",
     "created_at": "2007-11-14T22:37:20Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "_new() method for quadratic field elements",
+    "title": "[with patch, with positive review] _new() method for quadratic field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1171",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 `NumberFieldElement_quadratic` should override `_new()` to copy the D attribute from the source object; currently every call to _new() actually calls the base class implementation and then D is copied manually.
 

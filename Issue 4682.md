@@ -1,22 +1,22 @@
-# Issue 4682: Add about 36 people missing from the DevMap for Sage 3.0.6-3.2.1
+# Issue 4682: [with patch, positive review] Add the first set of 12 people missing from the DevMap for Sage 3.0.6-3.2.1
 
 archive/issues_004682.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu @haraldschilly\n\nThere are about 36 people missing at \n\n\n  http://sagemath.org/development-map.html\n\nthat have contributed to Sage. Contact them and if they would like to be added get them on there. This is a join project by Michael Abshoff, Minh Van Nguyen and Harald Schilly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4682\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  mvngu @haraldschilly\n\nThere are about 36 people missing at \n\n\n  http://sagemath.org/development-map.html\n\nthat have contributed to Sage. Contact them and if they would like to be added get them on there. This is a join project by Michael Abshoff, Minh Van Nguyen and Harald Schilly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4682\n\n",
+    "closed_at": "2008-12-04T21:55:45Z",
     "created_at": "2008-12-03T00:38:16Z",
     "labels": [
-        "component: website/wiki",
-        "bug"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Add about 36 people missing from the DevMap for Sage 3.0.6-3.2.1",
+    "title": "[with patch, positive review] Add the first set of 12 people missing from the DevMap for Sage 3.0.6-3.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4682",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 CC:  mvngu @haraldschilly
 

@@ -1,9 +1,10 @@
-# Issue 4295: delete mercurial-howto.txt
+# Issue 4295: [with patch, positive review] delete mercurial-howto.txt
 
 archive/issues_004295.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4295\n\n",
+    "closed_at": "2008-10-15T15:39:12Z",
     "created_at": "2008-10-15T12:57:25Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004295.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
-    "title": "delete mercurial-howto.txt",
+    "title": "[with patch, positive review] delete mercurial-howto.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4295",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

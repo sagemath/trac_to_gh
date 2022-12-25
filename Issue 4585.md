@@ -1,22 +1,23 @@
-# Issue 4585: "sage -upgrade" shall call the "sage-starts" script
+# Issue 4585: "sage -upgrade" shall call the "sage-location" script
 
 archive/issues_004585.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn a system where \"root\" upgrades incrementally a system-wide Sage installation, and only \"normal\" users ever run Sage, there might be trouble.\n\nMore precisely, the rights to create the \"sage-flags.txt\" file --- or also the \"sage-location.txt\" file --- might not be owned by the normal user.\n\nEven if this would be only a corner case, the obvious fix (run \"sage-starts\" once during sage -upgrade\") does not hurt anybody, hence this ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4585\n\n",
+    "body": "Assignee: GeorgSWeber\n\nOn a system where \"root\" upgrades incrementally a system-wide Sage installation, and only \"normal\" users ever run Sage, there might be trouble.\n\nMore precisely, the rights to create the \"sage-flags.txt\" file --- or also the \"sage-location.txt\" file --- might not be owned by the normal user.\n\nEven if this would be only a corner case, the obvious fix (run \"sage-starts\" once during sage -upgrade\") does not hurt anybody, hence this ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4585\n\n",
+    "closed_at": "2013-05-21T07:23:55Z",
     "created_at": "2008-11-22T22:46:31Z",
     "labels": [
         "component: build",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "\"sage -upgrade\" shall call the \"sage-starts\" script",
+    "title": "\"sage -upgrade\" shall call the \"sage-location\" script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4585",
     "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
-Assignee: mabshoff
+Assignee: GeorgSWeber
 
 On a system where "root" upgrades incrementally a system-wide Sage installation, and only "normal" users ever run Sage, there might be trouble.
 

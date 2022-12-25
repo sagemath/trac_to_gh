@@ -3,11 +3,11 @@
 archive/issues_006236.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  brunellus @nvcleemp\n\nWorking code is here: http://sagenb.org/home/pub/417/\n\nThe worksheet also includes code which lists the faces of a planar embedding of a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6236\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  brunellus @nvcleemp\n\nWorking code is here: http://sagenb.org/home/pub/417/\n\nThe worksheet also includes code which lists the faces of a planar embedding of a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6236\n\n",
+    "closed_at": "2017-08-26T09:58:12Z",
     "created_at": "2009-06-06T21:59:04Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "find the dual graph of a planar graph",
@@ -16,7 +16,7 @@ archive/issues_006236.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: tbd
+Assignee: @rlmill
 
 CC:  brunellus @nvcleemp
 

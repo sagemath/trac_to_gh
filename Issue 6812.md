@@ -1,33 +1,35 @@
-# Issue 6812: Enumerate integer list up to the action of a Permutation Group
+# Issue 6812: Enumerate integer vectors modulo the action of a Permutation Group
 
 archive/issues_006812.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nKeywords: enumaration, integer, list, permutation, group\n\nThe goal is to enumerate lists up to the action of a Permutation Group. The final function is generate_list_of_sum(integer) which give all list which sum over all element is the integer.\n\nThe module in patch use the orderly generating algorithm. The goal is to select list which are maximals according the lexicographic order.\n\nThere is a lot of test on this module( strong_generating_system() are also test indirectly in this module... )\n\ndepends on #6647\n\nIssue created by migration from https://trac.sagemath.org/ticket/6812\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: enumeration, integer, list, permutation, group\n\nThe goal of this ticket is to enumerate integer vectors up to the action of a Permutation Group.\n\nThis will produced a Parent : infinite enumerated set whose element are integer vectors (as list of integer)\n\n__Apply__\n\n* [attachment:trac_6812_integer_vectors_mod_permgroup-final.patch] \n* [attachment:trac_6812-reviewer.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6812\n\n",
+    "closed_at": "2012-06-14T06:37:01Z",
     "created_at": "2009-08-23T07:58:26Z",
     "labels": [
-        "component: algebra"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.1",
-    "title": "Enumerate integer list up to the action of a Permutation Group",
+    "title": "Enumerate integer vectors modulo the action of a Permutation Group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6812",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
-Assignee: tbd
+Assignee: nborie
 
 CC:  sage-combinat
 
-Keywords: enumaration, integer, list, permutation, group
+Keywords: enumeration, integer, list, permutation, group
 
-The goal is to enumerate lists up to the action of a Permutation Group. The final function is generate_list_of_sum(integer) which give all list which sum over all element is the integer.
+The goal of this ticket is to enumerate integer vectors up to the action of a Permutation Group.
 
-The module in patch use the orderly generating algorithm. The goal is to select list which are maximals according the lexicographic order.
+This will produced a Parent : infinite enumerated set whose element are integer vectors (as list of integer)
 
-There is a lot of test on this module( strong_generating_system() are also test indirectly in this module... )
+__Apply__
 
-depends on #6647
+* [attachment:trac_6812_integer_vectors_mod_permgroup-final.patch] 
+* [attachment:trac_6812-reviewer.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6812
 

@@ -4,6 +4,7 @@ archive/issues_002782.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis should be an easy 1-2 line fix to change the urls that the links to docs pull up. \n\nI got bitten bigtime during my class today when showing how to use the doc search today, since the dynamic \"live\" docs are too slow. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2782\n\n",
+    "closed_at": "2008-04-08T18:18:05Z",
     "created_at": "2008-04-02T22:14:04Z",
     "labels": [
         "component: notebook",

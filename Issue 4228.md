@@ -1,9 +1,10 @@
-# Issue 4228: eclib-20080310.p6.spkg is broken with 'export MAKE="make -j4"'
+# Issue 4228: [with spkg, positive review] eclib-20080310.p6.spkg is broken with 'export MAKE="make -j4"'
 
 archive/issues_004228.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJust as the title says. spkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4228\n\n",
+    "closed_at": "2008-10-13T00:25:21Z",
     "created_at": "2008-10-01T08:54:28Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004228.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "eclib-20080310.p6.spkg is broken with 'export MAKE=\"make -j4\"'",
+    "title": "[with spkg, positive review] eclib-20080310.p6.spkg is broken with 'export MAKE=\"make -j4\"'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4228",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

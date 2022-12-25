@@ -1,16 +1,17 @@
-# Issue 7638: [with patch, needs review] Cannot create big matrix on 64-bit system
+# Issue 7638: Cannot create big matrix on 64-bit system
 
 archive/issues_007638.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n*64-bit only*\n\nDue to unfortunate parenthesis, it is possible to create 2^31 by 10-matrices, but not 10 by 2^31. See patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/7638\n\n",
+    "body": "Assignee: @williamstein\n\n*64-bit only*\n\nDue to unfortunate parenthesis, it is possible to create 2<sup>31</sup> by 10-matrices, but not 10 by 2<sup>31</sup>. See patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7638\n\n",
+    "closed_at": "2009-12-10T14:24:23Z",
     "created_at": "2009-12-09T14:02:41Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] Cannot create big matrix on 64-bit system",
+    "title": "Cannot create big matrix on 64-bit system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7638",
     "user": "https://trac.sagemath.org/admin/accounts/users/dagss"
@@ -20,7 +21,7 @@ Assignee: @williamstein
 
 *64-bit only*
 
-Due to unfortunate parenthesis, it is possible to create 2^31 by 10-matrices, but not 10 by 2^31. See patch
+Due to unfortunate parenthesis, it is possible to create 2<sup>31</sup> by 10-matrices, but not 10 by 2<sup>31</sup>. See patch.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7638
 

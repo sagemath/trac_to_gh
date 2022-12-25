@@ -1,22 +1,23 @@
-# Issue 5250: But in multiplicative_generator function for Z/NZ
+# Issue 5250: [with patch, positive review] Bug in multiplicative_generator function for Z/NZ
 
 archive/issues_005250.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNotice that (ZZ/162ZZ)^* *is* cyclic:\n\n```\nsage: R = Integers(162)\nsage: R(5).multiplicative_order()\n54\nsage: euler_phi(162)\n54\n```\n\nHowever, Sage gets this totally wrong:\n\n```\nsage: R.multiplicative_generator()\nTraceback (most recent call last):\n...\nValueError: multiplicative group of this ring is not cyclic\n```\n\nThis bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5250\n\n",
+    "body": "Assignee: @loefflerd\n\nNotice that (ZZ/162ZZ)^* *is* cyclic:\n\n```\nsage: R = Integers(162)\nsage: R(5).multiplicative_order()\n54\nsage: euler_phi(162)\n54\n```\n\nHowever, Sage gets this totally wrong:\n\n```\nsage: R.multiplicative_generator()\nTraceback (most recent call last):\n...\nValueError: multiplicative group of this ring is not cyclic\n```\n\nThis bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5250\n\n",
+    "closed_at": "2009-05-11T09:31:11Z",
     "created_at": "2009-02-12T23:41:54Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "But in multiplicative_generator function for Z/NZ",
+    "title": "[with patch, positive review] Bug in multiplicative_generator function for Z/NZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5250",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 Notice that (ZZ/162ZZ)^* *is* cyclic:
 

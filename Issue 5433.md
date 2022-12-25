@@ -1,9 +1,10 @@
-# Issue 5433: [with patch, needs review] LaTeX fixes
+# Issue 5433: [with patch, positive review] LaTeX fixes
 
 archive/issues_005433.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe attached patch fixes some `_latex_` methods: things like \"{\\rm blah}\" have been changed to \"\\mathrm{blah}\", and things like \"\\mbox{\\bf blah}\" have been changed to \"\\mathbf{blah}\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5433\n\n",
+    "closed_at": "2009-03-25T07:52:36Z",
     "created_at": "2009-03-04T02:15:25Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005433.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] LaTeX fixes",
+    "title": "[with patch, positive review] LaTeX fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5433",
     "user": "https://github.com/jhpalmieri"

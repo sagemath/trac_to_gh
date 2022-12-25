@@ -3,7 +3,8 @@
 archive/issues_007388.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7388\n\n",
+    "body": "Assignee: tbd\n\nKeywords: ratpoints\n\nNew spkg can be found here:\n\nhttp://sage.math.washington.edu/home/rlmill/ratpoints-2.1.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7388\n\n",
+    "closed_at": "2010-01-03T22:27:17Z",
     "created_at": "2009-11-04T19:16:32Z",
     "labels": [
         "component: packages: standard"
@@ -17,7 +18,11 @@ archive/issues_007388.json:
 ```
 Assignee: tbd
 
+Keywords: ratpoints
 
+New spkg can be found here:
+
+http://sage.math.washington.edu/home/rlmill/ratpoints-2.1.3.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7388
 

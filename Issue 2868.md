@@ -1,9 +1,10 @@
-# Issue 2868: Weight revision for fastcrystals
+# Issue 2868: [with patch, positive review] Weight revision for fastcrystals
 
 archive/issues_002868.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis extends the revision of the patch in:\n\nhttp://sagetrac.org/sage_trac/ticket/2853\n\nThe previous patch reimplemented the weight function for vertices in crystals of letters and crystals of tableaux. The patch at hand does the corresponding reimplementation for fastcrystals. These are crystals whose definition is limited to types A2, B2, C2. They are isomorphic to crystals of tableaux but have better speed when the crystal is large, since the root operators are implemented by table lookup. \n\nThe revised weight function should be very fast since the weight is computed by adding a few numbers together.\n\nThis patch corrects the same defect for type A2 that the previous patch addressed.\n\nThe tests in the patch were written BEFORE the weight function was reimplemented, so I am confident that it is correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2868\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis extends the revision of the patch in #2853\n\nThe previous patch reimplemented the weight function for vertices in crystals of letters and crystals of tableaux. The patch at hand does the corresponding reimplementation for fastcrystals. These are crystals whose definition is limited to types A2, B2, C2. They are isomorphic to crystals of tableaux but have better speed when the crystal is large, since the root operators are implemented by table lookup. \n\nThe revised weight function should be very fast since the weight is computed by adding a few numbers together.\n\nThis patch corrects the same defect for type A2 that the previous patch addressed.\n\nThe tests in the patch were written BEFORE the weight function was reimplemented, so I am confident that it is correct.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2868\n\n",
+    "closed_at": "2008-04-10T03:35:04Z",
     "created_at": "2008-04-09T23:48:25Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_002868.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Weight revision for fastcrystals",
+    "title": "[with patch, positive review] Weight revision for fastcrystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2868",
     "user": "https://github.com/dwbump"
@@ -21,9 +22,7 @@ Assignee: @mwhansen
 
 CC:  sage-combinat
 
-This extends the revision of the patch in:
-
-http://sagetrac.org/sage_trac/ticket/2853
+This extends the revision of the patch in #2853
 
 The previous patch reimplemented the weight function for vertices in crystals of letters and crystals of tableaux. The patch at hand does the corresponding reimplementation for fastcrystals. These are crystals whose definition is limited to types A2, B2, C2. They are isomorphic to crystals of tableaux but have better speed when the crystal is large, since the root operators are implemented by table lookup. 
 
@@ -32,6 +31,7 @@ The revised weight function should be very fast since the weight is computed by 
 This patch corrects the same defect for type A2 that the previous patch addressed.
 
 The tests in the patch were written BEFORE the weight function was reimplemented, so I am confident that it is correct.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2868
 

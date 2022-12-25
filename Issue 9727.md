@@ -3,7 +3,8 @@
 archive/issues_009727.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen\n\nThis patch creates a new graph constructor called RepresentationGraph. This method generalizes IntervalGraph. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9727\n\n",
+    "body": "CC:  @nathanncohen\n\nThis patch creates a new graph constructor called RepresentationGraph. This method generalizes IntervalGraph. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9727\n\n",
+    "closed_at": "2010-09-08T02:20:47Z",
     "created_at": "2010-08-11T20:43:30Z",
     "labels": [
         "component: graph theory"
@@ -15,8 +16,6 @@ archive/issues_009727.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/edward.scheinerman"
 }
 ```
-Assignee: jason, ncohen, rlm
-
 CC:  @nathanncohen
 
 This patch creates a new graph constructor called RepresentationGraph. This method generalizes IntervalGraph. 

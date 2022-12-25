@@ -1,9 +1,10 @@
-# Issue 6419: [with patch, needs review] fix ref manual warnings for sage.misc.misc
+# Issue 6419: [with patch, positive review] fix ref manual warnings for sage.misc.misc
 
 archive/issues_006419.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nCC:  @mwhansen\n\nThis patch fixes the warnings\n\n```\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: \n(WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass', it reported error: \n\"No module named MainClass\", please check your spelling and sys.path\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: \n(WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass.NestedSubClass', it \nreported error: \"No module named MainClass.NestedClass\", please \ncheck your spelling and sys.path\n```\nproduced by Sphinx when building the html version of the reference manual, by omitting these classes from the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6419\n\n",
+    "closed_at": "2009-07-04T01:41:48Z",
     "created_at": "2009-06-26T02:14:52Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006419.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] fix ref manual warnings for sage.misc.misc",
+    "title": "[with patch, positive review] fix ref manual warnings for sage.misc.misc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6419",
     "user": "https://github.com/jhpalmieri"

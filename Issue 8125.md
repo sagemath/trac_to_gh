@@ -1,22 +1,25 @@
-# Issue 8125: problem with "text"
+# Issue 8125: problem with "text" in matplotlib
 
 archive/issues_008125.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: text(r\"$\\left(2 a=b\\right)$\", (2,3))   # works fine \nsage: text(r\"$(2 \\, a=b)$\", (2,3))   # works fine \nsage: text(r\"$\\left(2 \\, a=b\\right)$\", (2,3))   # error! \nTraceback (click to the left of this block for traceback) \n... \nAttributeError: 'Kern' object has no attribute 'height' \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8125\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matplotlib\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: text(r\"$\\left(2 a=b\\right)$\", (2,3))   # works fine \nsage: text(r\"$(2 \\, a=b)$\", (2,3))   # works fine \nsage: text(r\"$\\left(2 \\, a=b\\right)$\", (2,3))   # error! \nTraceback (click to the left of this block for traceback) \n... \nAttributeError: 'Kern' object has no attribute 'height' \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8125\n\n",
+    "closed_at": "2012-04-04T13:23:16Z",
     "created_at": "2010-01-29T21:09:34Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "problem with \"text\"",
+    "title": "problem with \"text\" in matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8125",
     "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @williamstein
+
+Keywords: matplotlib
 
 In Sage 4.3.2.alpha0:
 

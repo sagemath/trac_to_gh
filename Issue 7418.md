@@ -4,6 +4,7 @@ archive/issues_007418.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nIn the new sage notebook maxima cells do not work anymore for inputs\nstarting with '%'.\n\n```\n%maxima\n%pi\n\nTraceback (click to the left for traceback)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no\nattribute 'eval'\n```\n\nor:\n\n```\n%maxima\n%e^(%i * %pi)\n\nSyntax Error:\n    %e^(%i * %pi)\n```\n\nThis used to work with older Sage versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7418\n\n",
+    "closed_at": "2010-07-11T06:03:52Z",
     "created_at": "2009-11-09T16:47:10Z",
     "labels": [
         "component: notebook",

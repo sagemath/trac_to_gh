@@ -1,9 +1,10 @@
-# Issue 1149: documentation: example output does not agree with 2.8.12
+# Issue 1149: [with patch] documentation: example output does not agree with 2.8.12
 
 archive/issues_001149.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1149\n\n",
+    "closed_at": "2007-11-18T13:54:54Z",
     "created_at": "2007-11-11T23:33:22Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001149.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "documentation: example output does not agree with 2.8.12",
+    "title": "[with patch] documentation: example output does not agree with 2.8.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1149",
     "user": "https://github.com/zimmermann6"

@@ -3,7 +3,8 @@
 archive/issues_008764.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  amca01@gmail.com\n\nAn implementation of the Data Encryption Standard (DES) for educational purposes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8764\n\n",
+    "body": "Assignee: mvngu\n\nCC:  amca01@gmail.com\n\nKeywords: data encryption standard\n\nAn implementation of the Data Encryption Standard (DES) for educational purposes. The file [des.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/des.sage) is a Sage script implementing DES and written by Alasdair McAndrew. This needs to be cleaned up and upload a patch against the Sage library.\n\nApply [attachment:trac_8764-original-des_v2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8764\n\n",
+    "closed_at": "2021-04-30T18:21:32Z",
     "created_at": "2010-04-25T08:05:20Z",
     "labels": [
         "component: cryptography"
@@ -19,7 +20,11 @@ Assignee: mvngu
 
 CC:  amca01@gmail.com
 
-An implementation of the Data Encryption Standard (DES) for educational purposes.
+Keywords: data encryption standard
+
+An implementation of the Data Encryption Standard (DES) for educational purposes. The file [des.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/des.sage) is a Sage script implementing DES and written by Alasdair McAndrew. This needs to be cleaned up and upload a patch against the Sage library.
+
+Apply [attachment:trac_8764-original-des_v2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8764
 

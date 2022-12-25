@@ -1,16 +1,17 @@
-# Issue 6488: "sage -docbuild -help" doesn't mention the --jsmath option
+# Issue 6488: [with patch, do not review] "sage -docbuild -help" doesn't mention the --jsmath option
 
 archive/issues_006488.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @mwhansen @qed777\n\n...so I don't know how to use it. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6488\n\n",
+    "closed_at": "2009-10-15T16:33:19Z",
     "created_at": "2009-07-08T20:20:40Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "\"sage -docbuild -help\" doesn't mention the --jsmath option",
+    "title": "[with patch, do not review] \"sage -docbuild -help\" doesn't mention the --jsmath option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6488",
     "user": "https://github.com/rlmill"

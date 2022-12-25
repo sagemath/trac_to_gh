@@ -1,16 +1,17 @@
-# Issue 6070: Get doctest coverage in sage/modular to 100%
+# Issue 6070: [with new patch, with positive review] Get doctest coverage in sage/modular to 100%
 
 archive/issues_006070.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: documentation, modular symbols\n\nThis is a follow-up of #6042. That patch increased doctest coverage in the modular subdirectory from 91.8% to 96.4%. I have finished off the job by doctesting the last few files in sage/modular/modsym, and will upload a patch soon (once I have got a ticket number to put in the patch header, and run full tests on 4.0.alpha0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6070\n\n",
+    "closed_at": "2009-05-21T00:13:48Z",
     "created_at": "2009-05-18T14:05:40Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Get doctest coverage in sage/modular to 100%",
+    "title": "[with new patch, with positive review] Get doctest coverage in sage/modular to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6070",
     "user": "https://github.com/loefflerd"

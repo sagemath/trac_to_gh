@@ -1,15 +1,16 @@
-# Issue 4169: [with spkg and patch, needs review] zn_poly 0.9 and hypellfrob 2.1.1
+# Issue 4169: [with spkg and patch, positive review] zn_poly 0.9 and hypellfrob 2.1.1
 
 archive/issues_004169.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @timabbott\n\nUpdate to `zn_poly` version 0.9.\n\nAlso included is a minor patch for hypellfrob (this is necessary since hypellfrob was using `zn_poly` internals in a naughty way --- bad design on my part, and now fixed).\n\nYou need to install the spkg first, then apply the hypellfrob patch and force a rebuild (touch {{{devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx if necessary).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4169\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @timabbott\n\nUpdate to `zn_poly` version 0.9.\n\nAlso included is a minor patch for hypellfrob (this is necessary since hypellfrob was using `zn_poly` internals in a naughty way --- bad design on my part, and now fixed).\n\nYou need to install the spkg first, then apply the hypellfrob patch and force a rebuild (touch `devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx` if necessary).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4169\n\n",
+    "closed_at": "2008-09-26T09:01:35Z",
     "created_at": "2008-09-22T19:02:41Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with spkg and patch, needs review] zn_poly 0.9 and hypellfrob 2.1.1",
+    "title": "[with spkg and patch, positive review] zn_poly 0.9 and hypellfrob 2.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4169",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
@@ -23,7 +24,8 @@ Update to `zn_poly` version 0.9.
 
 Also included is a minor patch for hypellfrob (this is necessary since hypellfrob was using `zn_poly` internals in a naughty way --- bad design on my part, and now fixed).
 
-You need to install the spkg first, then apply the hypellfrob patch and force a rebuild (touch {{{devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx if necessary).
+You need to install the spkg first, then apply the hypellfrob patch and force a rebuild (touch `devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx` if necessary).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4169
 

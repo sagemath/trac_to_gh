@@ -1,9 +1,10 @@
-# Issue 5384: pynac symbolics gives very wrong simplifications for simple expressions
+# Issue 5384: [with patch and spkg, positive review] pynac symbolics gives very wrong simplifications for simple expressions
 
 archive/issues_005384.json:
 ```json
 {
-    "body": "In sage 3.4.alpha0 (and sage 3.3):\n\n```\nsage: var('y', ns=1)\ny\nsage: (y-1)*(y-2)\n(y - 2)^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5384\n\n",
+    "body": "Assignee: @burcin\n\nIn sage 3.4.alpha0 (and sage 3.3):\n\n```\nsage: var('y', ns=1)\ny\nsage: (y-1)*(y-2)\n(y - 2)^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5384\n\n",
+    "closed_at": "2009-03-01T06:30:31Z",
     "created_at": "2009-02-26T05:19:16Z",
     "labels": [
         "component: symbolics",
@@ -11,12 +12,14 @@ archive/issues_005384.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "pynac symbolics gives very wrong simplifications for simple expressions",
+    "title": "[with patch and spkg, positive review] pynac symbolics gives very wrong simplifications for simple expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5384",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
+Assignee: @burcin
+
 In sage 3.4.alpha0 (and sage 3.3):
 
 ```

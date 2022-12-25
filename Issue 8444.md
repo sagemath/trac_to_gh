@@ -3,10 +3,12 @@
 archive/issues_008444.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: univariate polynomial ring coercion\n\nAt [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a145a02c8d379b11), Ben Linowitz reported a problem with memory. Apparently it boils down to the following problem:\n\n```\nsage: R.<x> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.51171875\n6673 0.12890625\n8785 0.12890625\n10897 0.12890625\n13009 0.12890625\n15121 0.12890625\n17233 0.12890625\n19345 0.12890625\n21457 0.12890625\n23569 0.12890625\n25681 0.12890625\n27793 0.12890625\n29905 0.12890625\n32017 0.12890625\n34129 0.12890625\n36241 0.12890625\n38353 0.12890625\n40465 0.12890625\n42577 0.12890625\n44689 0.12890625\n46801 0.12890625\n48913 0.12890625\n```\nThis is with sage 4.3.3 on sage.math.\n\nSo, the first 6673 everything is good. Then, after 2112 rounds there is a leak of (if I did not miscompute) 135168 Byte.\n\nThis does not occur for multivariate rings:\n\n```\nsage: R.<x,y> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8444\n\n",
+    "body": "Assignee: tbd\n\nKeywords: univariate polynomial ring coercion, pari, sig_on\n\nAt [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a145a02c8d379b11), Ben Linowitz reported a problem with memory. Apparently it boils down to the following problem:\n\n```\nsage: R.<x> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.51171875\n6673 0.12890625\n8785 0.12890625\n10897 0.12890625\n13009 0.12890625\n15121 0.12890625\n17233 0.12890625\n19345 0.12890625\n21457 0.12890625\n23569 0.12890625\n25681 0.12890625\n27793 0.12890625\n29905 0.12890625\n32017 0.12890625\n34129 0.12890625\n36241 0.12890625\n38353 0.12890625\n40465 0.12890625\n42577 0.12890625\n44689 0.12890625\n46801 0.12890625\n48913 0.12890625\n```\nThis is with sage 4.3.3 on sage.math.\n\nSo, the first 6673 everything is good. Then, regularly after 2112 rounds there is a leak of 135168 Byte. As Yann has observed, we have `135168==2112*64`. Thus it seems that the memory is allocated in chunks, but the leak is 64 Byte in each round.\n\nThe leak does not occur for multivariate rings:\n\n```\nsage: R.<x,y> = QQ[]\nsage: M = get_memory_usage()\nsage: for n in range(50000):\n....:     Mnew = get_memory_usage()\n....:     if Mnew > M:\n....:         print n, Mnew-M\n....:         M=Mnew\n....:     a = R(1)\n....:\n0 1.5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8444\n\n",
+    "closed_at": "2010-04-15T23:52:54Z",
     "created_at": "2010-03-05T12:41:29Z",
     "labels": [
         "component: memleak",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
@@ -18,7 +20,7 @@ archive/issues_008444.json:
 ```
 Assignee: tbd
 
-Keywords: univariate polynomial ring coercion
+Keywords: univariate polynomial ring coercion, pari, sig_on
 
 At [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a145a02c8d379b11), Ben Linowitz reported a problem with memory. Apparently it boils down to the following problem:
 
@@ -57,9 +59,9 @@ sage: for n in range(50000):
 ```
 This is with sage 4.3.3 on sage.math.
 
-So, the first 6673 everything is good. Then, after 2112 rounds there is a leak of (if I did not miscompute) 135168 Byte.
+So, the first 6673 everything is good. Then, regularly after 2112 rounds there is a leak of 135168 Byte. As Yann has observed, we have `135168==2112*64`. Thus it seems that the memory is allocated in chunks, but the leak is 64 Byte in each round.
 
-This does not occur for multivariate rings:
+The leak does not occur for multivariate rings:
 
 ```
 sage: R.<x,y> = QQ[]

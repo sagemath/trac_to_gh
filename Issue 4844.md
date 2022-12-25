@@ -1,9 +1,10 @@
-# Issue 4844: Disable DSage doctests
+# Issue 4844: [with patch, positive review] Disable DSage doctests
 
 archive/issues_004844.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nThe DSage doctests still cause trouble. Disable them for now until we start merging fixes again in 3.4.alpha0.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4844\n\n",
+    "closed_at": "2008-12-21T22:05:40Z",
     "created_at": "2008-12-20T22:58:19Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004844.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Disable DSage doctests",
+    "title": "[with patch, positive review] Disable DSage doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4844",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

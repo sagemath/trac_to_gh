@@ -1,16 +1,17 @@
-# Issue 4058: [with patch, needs review] move integer ring to the new coercion model
+# Issue 4058: [with patch, positive review] move integer ring to the new coercion model
 
 archive/issues_004058.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  alexghitza @malb\n\nA couple of bugfixes are included as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4058\n\n",
+    "closed_at": "2008-09-24T04:22:24Z",
     "created_at": "2008-09-04T04:27:58Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] move integer ring to the new coercion model",
+    "title": "[with patch, positive review] move integer ring to the new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4058",
     "user": "https://github.com/robertwb"

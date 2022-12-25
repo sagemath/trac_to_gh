@@ -1,9 +1,10 @@
-# Issue 4479: sage/logic/logic.py contains a trivial typo: " varaiable"
+# Issue 4479: [with patch, positive review] sage/logic/logic.py contains a trivial typo: " varaiable"
 
 archive/issues_004479.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI noticed a typo in logic.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/4479\n\n",
+    "closed_at": "2008-11-10T09:06:34Z",
     "created_at": "2008-11-09T08:24:49Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004479.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "sage/logic/logic.py contains a trivial typo: \" varaiable\"",
+    "title": "[with patch, positive review] sage/logic/logic.py contains a trivial typo: \" varaiable\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4479",
     "user": "https://github.com/williamstein"

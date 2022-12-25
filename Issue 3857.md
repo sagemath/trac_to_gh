@@ -1,22 +1,23 @@
-# Issue 3857: BinaryQF_reduced_representatives in binry_qf.py produces extra unreduced forms
+# Issue 3857: [with patches, positive review] BinaryQF_reduced_representatives in binary_qf.py produces extra unreduced forms
 
 archive/issues_003857.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: BinaryQF_reduced_representatives(-63)\n\n[2*x^2 - x*y + 8*y^2,\n 4*x^2 - x*y + 4*y^2,\n x^2 + x*y + 16*y^2,\n 2*x^2 + x*y + 8*y^2,\n 4*x^2 + x*y + 4*y^2,\n 3*x^2 + 3*x*y + 6*y^2]\n```\n\nHowever, clearly:\n\n```\n4*x^2 - x*y + 4*y^2\n```\n\nisn't a reduced form.\nBinaryQF_reduced_representatives is incorrectly classifying some forms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3857\n\n",
+    "body": "Assignee: choldsworth\n\nFor example \n\n```\nsage: BinaryQF_reduced_representatives(-63)\n\n[2*x^2 - x*y + 8*y^2,\n 4*x^2 - x*y + 4*y^2,\n x^2 + x*y + 16*y^2,\n 2*x^2 + x*y + 8*y^2,\n 4*x^2 + x*y + 4*y^2,\n 3*x^2 + 3*x*y + 6*y^2]\n```\n\nHowever, clearly:\n\n```\n4*x^2 - x*y + 4*y^2\n```\n\nisn't a reduced form.\nBinaryQF_reduced_representatives is incorrectly classifying some forms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3857\n\n",
+    "closed_at": "2008-09-06T23:50:22Z",
     "created_at": "2008-08-14T21:07:07Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "BinaryQF_reduced_representatives in binry_qf.py produces extra unreduced forms",
+    "title": "[with patches, positive review] BinaryQF_reduced_representatives in binary_qf.py produces extra unreduced forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3857",
     "user": "https://trac.sagemath.org/admin/accounts/users/choldsworth"
 }
 ```
-Assignee: @williamstein
+Assignee: choldsworth
 
 For example 
 

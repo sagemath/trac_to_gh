@@ -1,16 +1,17 @@
-# Issue 4510: Add references for Boyer's planarity code implementation
+# Issue 4510: [with patch, positive review] Add references for Boyer's planarity code implementation
 
 archive/issues_004510.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch adds a few references for the original distribution of this code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4510\n\n",
+    "closed_at": "2008-11-14T03:30:44Z",
     "created_at": "2008-11-13T06:57:53Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Add references for Boyer's planarity code implementation",
+    "title": "[with patch, positive review] Add references for Boyer's planarity code implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4510",
     "user": "https://github.com/jasongrout"

@@ -1,16 +1,17 @@
-# Issue 3908: [with patch, needs review] fix major memory leak in fast_float
+# Issue 3908: [with patch, positive reivew] fix major memory leak in fast_float
 
 archive/issues_003908.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCurrently there is a major memory leak in fast_float because it uses `__del__` instead of `__dealloc__`.  (Python uses `__del__`, Cython uses `__dealloc__`.)\n\nBefore:\n\n```\nsage: from sage.ext.fast_eval import fast_float_constant\nsage: get_memory_usage()\n117.859375\nsage: print sum([fast_float_constant(3.0)] * 2000)\n<sage.ext.fast_eval.FastDoubleFunc object at 0xb7ab4b54>\nsage: get_memory_usage()\n163.6328125\n```\n\nAfter:\n\n```\nsage: from sage.ext.fast_eval import fast_float_constant\nsage: get_memory_usage()\n117.859375\nsage: print sum([fast_float_constant(3.0)] * 2000)\n<sage.ext.fast_eval.FastDoubleFunc object at 0xb7b18b54>\nsage: get_memory_usage()\n117.98828125\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3908\n\n",
+    "closed_at": "2008-08-21T18:51:02Z",
     "created_at": "2008-08-20T02:57:54Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] fix major memory leak in fast_float",
+    "title": "[with patch, positive reivew] fix major memory leak in fast_float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3908",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

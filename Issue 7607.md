@@ -1,16 +1,17 @@
-# Issue 7607: add uncommitted files to the script repository
+# Issue 7607: ignore uncommitted files under the script repository
 
 archive/issues_007607.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @mwhansen\n\nWith Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:\n\n```\n~/Desktop/sage-4.3.alpha1/sage -hg st\n? hmac256\n? jmol\n? pilconvert.py\n? pildriver.py\n? pilfile.py\n? pilfont.py\n? pilprint.py\n? sphinx-autogen\n```\nThose files should be added using \"hg add\" and then checked in with \"hg ci\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7607\n\n",
+    "closed_at": "2009-12-06T08:28:24Z",
     "created_at": "2009-12-05T13:33:46Z",
     "labels": [
-        "component: documentation",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "add uncommitted files to the script repository",
+    "title": "ignore uncommitted files under the script repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7607",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

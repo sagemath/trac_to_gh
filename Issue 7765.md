@@ -4,10 +4,11 @@ archive/issues_007765.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  georgsweber\n\nOn OS X with sage-4.3, if you do \"sage -bdist\" it creates the dist/sage-* directory correctly. However, it doesn't create the dmg anymore.  It can evidently be made to do so by setting environment variables.  But the default \"sage -bdist\" doesn't create a bdist.     This is confusing and very inconsistent with the behavior on all other OS's.  For some reason Ivan Andrus changed this in #7546. \n\nThis will have to be fixed back for 4.3.1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7765\n\n",
+    "closed_at": "2010-04-29T00:36:33Z",
     "created_at": "2009-12-25T09:32:40Z",
     "labels": [
         "component: distribution",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",

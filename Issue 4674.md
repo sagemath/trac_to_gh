@@ -1,49 +1,29 @@
-# Issue 4674: use easy/load.js when loading jsmath
+# Issue 4674: [with patch and spkg, needs review] update to latest jsmath (3.6 at the moment)
 
 archive/issues_004674.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4674\n\n",
+    "body": "Assignee: @jasongrout\n\nAs the subject says. Note that the use of a better load mechanism available in jsmath 3.6 or higher is #4714.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4674\n\n",
+    "closed_at": "2009-01-19T08:03:50Z",
     "created_at": "2008-12-02T15:35:23Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "use easy/load.js when loading jsmath",
+    "title": "[with patch and spkg, needs review] update to latest jsmath (3.6 at the moment)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4674",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
-From http://groups.google.com/group/sage-support/t/178d0bd277044918
+As the subject says. Note that the use of a better load mechanism available in jsmath 3.6 or higher is #4714.
 
-```
-Yes, that looks correct.  I'm not sure why people are getting the 
-error -7 under these conditions.  It means that something has gone 
-wrong when trying to load the fallback method, and that usually means 
-it can't read the image font definition files.  There are a couple of 
-other possibilities as well:  perhaps the noImageFonts plugin was not 
-able to be read (permission issue?) or the unicode fallback file could 
-not be read.  Given your use of noImageFonts, I suspect it may be the 
-latter.  If the users who are getting error -7 are using Firefox3, 
-that may well be it.  There were changes to the same-origin security 
-policy in Firefox3 that prevent jsMath from loading local files from 
-directories other than the one in which the HTML file is found.  I 
-worked around this in jsMath v3.6 (released Sept. 2008), so those 
-users should update to the latest version of jsMath to avoid that 
-problem. 
-> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). 
+Cheers,
 
-Probably because it didn't exist when jsMath support was added to 
-sage.  The easy/load.js file was a relatively late addition to jsMath, 
-but certainly makes things easier for people.  You might consider 
-whether you want to use that instead. 
-
-Davide
-```
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/4674
 

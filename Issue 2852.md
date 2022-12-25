@@ -1,16 +1,17 @@
-# Issue 2852: ctrl-enter broken in firefox/linux
+# Issue 2852: [with patch, positive review] ctrl-enter broken in firefox/linux
 
 archive/issues_002852.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2852\n\n",
+    "closed_at": "2008-04-08T15:33:45Z",
     "created_at": "2008-04-08T05:35:26Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "ctrl-enter broken in firefox/linux",
+    "title": "[with patch, positive review] ctrl-enter broken in firefox/linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2852",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

@@ -1,16 +1,17 @@
-# Issue 5797: raise coverage in matrix1.pyx to 100%
+# Issue 5797: [with patch, with positive review] raise coverage in matrix1.pyx to 97%
 
 archive/issues_005797.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nIn 3.4.1.rc2, matrix1.pyx is missing doctests and documentation. I'll attach a patch that covers all but two functions:\n\n`new_matrix` is just a wrapper around `matrix_space` and `MatrixSpace`. The documentation for `MatrixSpace` isn't complete enough for me to say exactly what all the parameters of `new_matrix` do. Can someone who knows more about this make a suggestion?\n\nThe function `_singular_` has no doctests (and the current docstring is deeply confusing) and -- surprise, surprise -- is broken. I'll open a separate ticket for that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5797\n\n",
+    "closed_at": "2009-04-23T06:18:43Z",
     "created_at": "2009-04-16T03:22:05Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "raise coverage in matrix1.pyx to 100%",
+    "title": "[with patch, with positive review] raise coverage in matrix1.pyx to 97%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5797",
     "user": "https://github.com/dandrake"

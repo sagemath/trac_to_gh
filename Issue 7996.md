@@ -4,6 +4,7 @@ archive/issues_007996.json:
 ```json
 {
     "body": "Assignee: acleone\n\nEditing cells with a dark theme makes the text invisible (white text on a white background).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7996\n\n",
+    "closed_at": "2010-01-25T03:40:07Z",
     "created_at": "2010-01-19T08:14:39Z",
     "labels": [
         "component: notebook",

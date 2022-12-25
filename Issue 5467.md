@@ -3,7 +3,8 @@
 archive/issues_005467.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
+    "body": "Assignee: @mwhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n| Sage Version 3.4.alpha0, Release Date: 2009-02-24                  |\n| Type notebook() for the GUI, and license() for information.        |\nSee also #7897 and #7915.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
+    "closed_at": "2010-07-21T03:30:21Z",
     "created_at": "2009-03-10T18:03:16Z",
     "labels": [
         "component: interfaces",
@@ -31,6 +32,9 @@ sage1
 sage: macaulay2(10^10000)
 sage2
 ```
+| Sage Version 3.4.alpha0, Release Date: 2009-02-24                  |
+| Type notebook() for the GUI, and license() for information.        |
+See also #7897 and #7915.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5467
 

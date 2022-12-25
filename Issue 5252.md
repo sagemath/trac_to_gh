@@ -1,16 +1,17 @@
-# Issue 5252: elliptic curves: P.height() lies about its precision
+# Issue 5252: [with patch, positive review] elliptic curves: P.height() lies about its precision
 
 archive/issues_005252.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is a bit weird because it seems to only happen with some elliptic curves.\n\nAnyway, here's the example:\n\n```\nsage: E = EllipticCurve([1, -1, 1, -2063758701246626370773726978, 32838647793306133075103747085833809114881])\nsage: P = E([-30987785091199, 258909576181697016447])\nsage: P.height()               # default precision: 53 bits\nsage: P.height(precision=100)  # new precision: 100 bits\n25.860317067546190744967149477\nsage: P.height(precision=250)  # new precision: 250 bits\n25.860317067546190744967149477417933667311444878578186035156250000000000000\n```\n\nI don't believe for a second that all the zeroes in the last example are correct.  In fact, if you increase the precision to 1000 bits you only get more zeroes.\n\nThere must be \"simpler\" elliptic curves for which this happens, and I'll try to find some.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5252\n\n",
+    "closed_at": "2009-02-16T08:30:40Z",
     "created_at": "2009-02-13T04:05:11Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "elliptic curves: P.height() lies about its precision",
+    "title": "[with patch, positive review] elliptic curves: P.height() lies about its precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5252",
     "user": "https://github.com/aghitza"

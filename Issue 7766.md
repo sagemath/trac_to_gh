@@ -1,15 +1,16 @@
-# Issue 7766: Upgrade optional spkg valgrind to valgrind-3.6.0.svn
+# Issue 7766: Upgrade optional spkg valgrind to valgrind-3.7.0
 
 archive/issues_007766.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @TimDumol @rlmill @gvol jpflori @kini\n\nKeywords: memory testing\n\nThe optional valgrind-3.1.1 did not build in Fedora 12 x86_64\n\nreason: glibc-11 is not supported. Even in the last released stable valgrind-3.5.0\n\nSo I downloaded from SVN and made an spkg.\n\nSee: [http://sage.math.washington.edu/home/jsp/valgrind-3.6.0.svn.spkg](http://sage.math.washington.edu/home/jsp/valgrind-3.6.0.svn.spkg)\n\nUrgent: we need a maintainer other than me and Michael!\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7766\n\n",
+    "body": "Assignee: tbd\n\nCC:  @TimDumol @rlmill @gvol jpflori @kini\n\nKeywords: memory testing\n\nNew issue: Valgrind versions prior to 3.7.0 do not build on any Linux 3.x kernels, so we really need to upgrade it ASAP.\n\n---\nThe optional valgrind-3.1.1 did not build in Fedora 12 x86_64\n\nreason: glibc-11 is not supported. Even in the last released stable valgrind-3.5.0\n\nSo I downloaded from SVN and made an spkg.\n\nSee: [http://sage.math.washington.edu/home/jsp/valgrind-3.6.0.svn.spkg](http://sage.math.washington.edu/home/jsp/valgrind-3.6.0.svn.spkg)\n\nUrgent: we need a maintainer other than me and Michael!\n\nJaap\n\n---\n\nNew spkg (which works on OS X) at\u00a0[http://perso.telecom-paristech.fr/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech.fr/~flori/sage/valgrind-3.7.0.spkg)\n\n-Ivan\n\nIssue created by migration from https://trac.sagemath.org/ticket/7766\n\n",
+    "closed_at": "2012-03-03T14:01:52Z",
     "created_at": "2009-12-25T20:36:30Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "Upgrade optional spkg valgrind to valgrind-3.6.0.svn",
+    "title": "Upgrade optional spkg valgrind to valgrind-3.7.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7766",
     "user": "https://github.com/jaapspies"
@@ -21,6 +22,9 @@ CC:  @TimDumol @rlmill @gvol jpflori @kini
 
 Keywords: memory testing
 
+New issue: Valgrind versions prior to 3.7.0 do not build on any Linux 3.x kernels, so we really need to upgrade it ASAP.
+
+---
 The optional valgrind-3.1.1 did not build in Fedora 12 x86_64
 
 reason: glibc-11 is not supported. Even in the last released stable valgrind-3.5.0
@@ -32,6 +36,12 @@ See: [http://sage.math.washington.edu/home/jsp/valgrind-3.6.0.svn.spkg](http://s
 Urgent: we need a maintainer other than me and Michael!
 
 Jaap
+
+---
+
+New spkg (which works on OS X) at [http://perso.telecom-paristech.fr/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech.fr/~flori/sage/valgrind-3.7.0.spkg)
+
+-Ivan
 
 Issue created by migration from https://trac.sagemath.org/ticket/7766
 

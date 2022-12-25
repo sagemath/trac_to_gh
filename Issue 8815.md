@@ -4,6 +4,7 @@ archive/issues_008815.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nThis code was clearly never actually tried out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8815\n\n",
+    "closed_at": "2010-05-08T21:53:33Z",
     "created_at": "2010-04-29T04:24:30Z",
     "labels": [
         "component: elliptic curves",

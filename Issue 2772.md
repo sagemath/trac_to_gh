@@ -1,16 +1,17 @@
-# Issue 2772: Update Singular to 3-0-4-2
+# Issue 2772: [with spkg, positive review] Update Singular to 3-0-4-2
 
 archive/issues_002772.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis version has GCC 4.3 support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2772\n\n",
+    "closed_at": "2008-04-06T02:19:03Z",
     "created_at": "2008-04-02T15:33:08Z",
     "labels": [
         "component: commutative algebra",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Update Singular to 3-0-4-2",
+    "title": "[with spkg, positive review] Update Singular to 3-0-4-2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2772",
     "user": "https://github.com/malb"

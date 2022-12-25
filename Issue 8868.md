@@ -3,7 +3,7 @@
 archive/issues_008868.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  drkirkby\n\nSee #8834, where doctests for R graphics had to be made optional.  However, it should be possible for R to always return graphics, if only we understand better how the device selection works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8868\n\n",
+    "body": "Assignee: jason, was\n\nCC:  drkirkby\n\nKeywords: r-project\n\nSee #8834, where doctests for R graphics had to be made optional.  However, it should be possible for R to always return graphics, if only we understand better how the device selection works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8868\n\n",
     "created_at": "2010-05-04T15:21:08Z",
     "labels": [
         "component: graphics",
@@ -19,6 +19,8 @@ archive/issues_008868.json:
 Assignee: jason, was
 
 CC:  drkirkby
+
+Keywords: r-project
 
 See #8834, where doctests for R graphics had to be made optional.  However, it should be possible for R to always return graphics, if only we understand better how the device selection works.
 

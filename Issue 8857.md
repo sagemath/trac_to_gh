@@ -1,16 +1,16 @@
-# Issue 8857: lcm over QQ[x] broken
+# Issue 8857: lcm of constant polynomials
 
 archive/issues_008857.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nReported by Manuel Kauers:\n\n```\nsage: R.<x> = QQ[x]\nsage: R(1/2).lcm(R(1))\n<boom>\nsage: R(2^31).lcm(R(1))\n<boom>\n```\n\nThe backtrace indicates that we call Singular for this, which is completely unnecessary.\n\nWe should check if this persists with #4000 as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8857\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\n* `a.lcm(b)` where `a` and `b` are constant polynomials is broken over a variety of rings:\n  {{{\n  sage: R.<x,y> = RR[]\n  sage: R(2^31).lcm(R(2*x+1)) # Boom\n  }}}\n  {{{\n  sage: R.<x,y> = FractionField(QQ['t'])[]\n  sage: R(2^31).lcm(R(2*x+1)) # Boom\n  }}}\n* In other cases (including the original example of the above problem, reported by Manuel Kauers and now fixed, presumably by #4000), the output is inconsistent with the gcd over the base ring:\n  {{{\n  sage: R.<x> = QQ[x]\n  sage: R(1/2).lcm(R(1))\n  1\n  sage: (1/2).lcm(QQ(1))\n  1\n  }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8857\n\n",
     "created_at": "2010-05-03T14:40:18Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "lcm over QQ[x] broken",
+    "title": "lcm of constant polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8857",
     "user": "https://github.com/burcin"
@@ -20,19 +20,23 @@ Assignee: @aghitza
 
 CC:  @orlitzky
 
-Reported by Manuel Kauers:
-
-```
-sage: R.<x> = QQ[x]
-sage: R(1/2).lcm(R(1))
-<boom>
-sage: R(2^31).lcm(R(1))
-<boom>
-```
-
-The backtrace indicates that we call Singular for this, which is completely unnecessary.
-
-We should check if this persists with #4000 as well.
+* `a.lcm(b)` where `a` and `b` are constant polynomials is broken over a variety of rings:
+  {{{
+  sage: R.<x,y> = RR[]
+  sage: R(2^31).lcm(R(2*x+1)) # Boom
+  }}}
+  {{{
+  sage: R.<x,y> = FractionField(QQ['t'])[]
+  sage: R(2^31).lcm(R(2*x+1)) # Boom
+  }}}
+* In other cases (including the original example of the above problem, reported by Manuel Kauers and now fixed, presumably by #4000), the output is inconsistent with the gcd over the base ring:
+  {{{
+  sage: R.<x> = QQ[x]
+  sage: R(1/2).lcm(R(1))
+  1
+  sage: (1/2).lcm(QQ(1))
+  1
+  }}}
 
 Issue created by migration from https://trac.sagemath.org/ticket/8857
 

@@ -1,16 +1,17 @@
-# Issue 4908: convert sage.databases.* docstrings to Sphinx
+# Issue 4908: [with patch, needs review] convert sage.databases.* docstrings to Sphinx
 
 archive/issues_004908.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4908\n\n",
+    "closed_at": "2009-02-24T18:22:30Z",
     "created_at": "2009-01-01T22:50:10Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.databases.* docstrings to Sphinx",
+    "title": "[with patch, needs review] convert sage.databases.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4908",
     "user": "https://github.com/mwhansen"

@@ -3,7 +3,7 @@
 archive/issues_008105.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout @dandrake @jhpalmieri @robert-marik @kcrisman\n\nThis is an experimental process for converting Latex documents into Sage worksheets.\n\nAttached archive contains code, configuration files, templates and hints to begin using the system.  See README.txt to get started.\n\nOver time, this should get easier through automation of some of the tasks, and more general with cross-worksheet linking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8105\n\n",
+    "body": "Assignee: @rbeezer\n\nCC:  @jasongrout @dandrake @jhpalmieri @robert-marik @kcrisman\n\nThis is an experimental process for converting Latex documents into Sage worksheets.\n\nAttached archive contains code, configuration files, templates and hints to begin using the system.  See README.txt to get started.\n\nOver time, this should get easier through automation of some of the tasks, and more general with cross-worksheet linking.\n\nWiki Page:  http://wiki.sagemath.org/devel/LatexToWorksheet\n\nBitbucket Archive: http://bitbucket.org/rbeezer/tex2sws/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8105\n\n",
     "created_at": "2010-01-28T04:55:08Z",
     "labels": [
         "component: packages: experimental",
@@ -16,7 +16,7 @@ archive/issues_008105.json:
     "user": "https://github.com/rbeezer"
 }
 ```
-Assignee: tbd
+Assignee: @rbeezer
 
 CC:  @jasongrout @dandrake @jhpalmieri @robert-marik @kcrisman
 
@@ -25,6 +25,12 @@ This is an experimental process for converting Latex documents into Sage workshe
 Attached archive contains code, configuration files, templates and hints to begin using the system.  See README.txt to get started.
 
 Over time, this should get easier through automation of some of the tasks, and more general with cross-worksheet linking.
+
+Wiki Page:  http://wiki.sagemath.org/devel/LatexToWorksheet
+
+Bitbucket Archive: http://bitbucket.org/rbeezer/tex2sws/
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8105
 

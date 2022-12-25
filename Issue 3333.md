@@ -1,16 +1,17 @@
-# Issue 3333: [with patch, needs review] Matrix_mod2_dense randomize endianess issue
+# Issue 3333: [with patch, positive review] Matrix_mod2_dense randomize endianess issue
 
 archive/issues_003333.json:
 ```json
 {
     "body": "Assignee: @malb\n\nFixes an endianess issue for random Matrix_mod2_dense matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3333\n\n",
+    "closed_at": "2008-06-04T19:24:37Z",
     "created_at": "2008-05-29T19:59:22Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] Matrix_mod2_dense randomize endianess issue",
+    "title": "[with patch, positive review] Matrix_mod2_dense randomize endianess issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3333",
     "user": "https://github.com/malb"

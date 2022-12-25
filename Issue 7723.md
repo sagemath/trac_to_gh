@@ -6,7 +6,7 @@ archive/issues_007723.json:
     "body": "Assignee: jkantor\n\nHere's the beginnings of my work on sparse double matrices.\n\nThis is based on 4.3.rc0. Note that I have *not* run the entire Sage test suite,\nonly tests in the matrix package. I'm happy to run the entire suite once I know\nthe final revision this will be rebased to, but 4.3.rc0 produces a few test\nfailures in itself (=noise I'm not bothering with for the moment).\n\nThere are three patches, which should be applied and reviewed in this order:\n\n- generic_multiply lets one override matrix multiplication with\n  different parents.  This is in a seperate patch because it changes\n  structure/element.pxd, causing a big recompile.\n\n- double_sparse is the main new classes\n\n- coo_format changes the matrix constructor to accept \"coo=...\" (see docstring\n  in patch)\n\nMore comments:\n\n- I will not introduce seperate classes for real and complex -- there\n  will be other subclasses (Hermitian, strictly-diagonal etc.) and I\n  don't want to double the size of the hierarchy. There are other\n  (and better) ways to get efficient getitem/setitem without a speed\n  penalty (such as introducing a seperate ItemAccessor protocol/class\n  -- though for sparse matrices an if-test won't matter either).\n\n- Once this is accepted (and I have a general feel for what I do\n  right and wrong) I hope to continue with solvers etc. (as I scratch my itches).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7723\n\n",
     "created_at": "2009-12-17T13:47:31Z",
     "labels": [
-        "component: numerical"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Sparse matrices for double fields",

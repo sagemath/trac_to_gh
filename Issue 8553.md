@@ -3,7 +3,8 @@
 archive/issues_008553.json:
 ```json
 {
-    "body": "Assignee: @nexttime\n\nCC:  @haraldschilly @mwhansen @burcin @jasongrout @kcrisman\n\nKeywords: solve, solution_dict\n\nsolve() raises an index error on empty solutions if solution dictionary was requested; returns empty list instead of empty dictionary in other cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8553\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @haraldschilly @mwhansen @burcin @jasongrout @kcrisman\n\nKeywords: solve, solution_dict, beginner\n\n`solve()` raises an `IndexError` on empty solutions if a list of solution *dictionaries* is requested.\n\nThe description/examples may mislead w.r.t. the result type.\n\n\n---\n\nApply [attachment:trac_8553_solve_fix_IndexError.3.patch] and [attachment:trac_8553-review.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8553\n\n",
+    "closed_at": "2011-06-01T07:16:08Z",
     "created_at": "2010-03-17T15:39:40Z",
     "labels": [
         "component: symbolics",
@@ -21,9 +22,16 @@ Assignee: @nexttime
 
 CC:  @haraldschilly @mwhansen @burcin @jasongrout @kcrisman
 
-Keywords: solve, solution_dict
+Keywords: solve, solution_dict, beginner
 
-solve() raises an index error on empty solutions if solution dictionary was requested; returns empty list instead of empty dictionary in other cases.
+`solve()` raises an `IndexError` on empty solutions if a list of solution *dictionaries* is requested.
+
+The description/examples may mislead w.r.t. the result type.
+
+
+---
+
+Apply [attachment:trac_8553_solve_fix_IndexError.3.patch] and [attachment:trac_8553-review.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8553
 

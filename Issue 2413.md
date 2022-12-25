@@ -1,9 +1,10 @@
-# Issue 2413: Correction in "How to use the Sage Notebook"
+# Issue 2413: [probably fixed] Correction in "How to use the Sage Notebook"
 
 archive/issues_002413.json:
 ```json
 {
     "body": "Assignee: tba\n\nIn SAGE Notebook Help:\n\nThe variable DATA contains the directory with data files that you upload into the worksheet. For example, to open a file in that directory, do \"open(DIR+'filename')\".\n\n\nshould be:\n\nThe variable DATA contains the directory with data files that you upload into the worksheet. For example, to open a file in that directory, do \"open(DATA+'filename')\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/2413\n\n",
+    "closed_at": "2008-09-14T05:34:56Z",
     "created_at": "2008-03-06T23:33:19Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002413.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Correction in \"How to use the Sage Notebook\"",
+    "title": "[probably fixed] Correction in \"How to use the Sage Notebook\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2413",
     "user": "https://trac.sagemath.org/admin/accounts/users/hfvillafuerte"

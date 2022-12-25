@@ -1,16 +1,17 @@
-# Issue 3883: Streamline elliptic curve division (torsion) polynomials
+# Issue 3883: [with new patch, positive review] Streamline elliptic curve division (torsion) polynomials
 
 archive/issues_003883.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n#3109 introduced a new bivariate division polynomial for elliptic curves, only implemented for curves in short Weierstrass form, and also very useful functions for dividing points (for arbitrary curves).\n\nIn reviewing #3377 I wanted to use the division_points() function for curvesw defined over number fields and ran into problems.  This led me to reconsider the existing division polynomial code, and this is the result.  I removed the commenting-out # signs from a perfectly good set of three functions pseudo_division_polynomial(), multiple_x_numerator() and multiple_x_denominator().  I rewrote full_division_polynomial() to use these, making it very much simpler and apply to all curves, not just those in short W. form.  I also rewrote division_points(), simplifying it.\n\nI'll shortly post a patch for all this.  In the patch you will find some rather long-winded comments which explain very precisely what the relation is between these functions.  If approved, I'll make use of this and get back to working on #3377.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3883\n\n",
+    "closed_at": "2008-08-28T02:01:43Z",
     "created_at": "2008-08-17T17:33:03Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Streamline elliptic curve division (torsion) polynomials",
+    "title": "[with new patch, positive review] Streamline elliptic curve division (torsion) polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3883",
     "user": "https://github.com/JohnCremona"

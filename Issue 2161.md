@@ -1,15 +1,16 @@
-# Issue 2161: [with patch] some speed improvements for mpolynomials over ZZ
+# Issue 2161: [with patch, with positive review] some speed improvements for mpolynomials over ZZ
 
 archive/issues_002161.json:
 ```json
 {
     "body": "Assignee: @malb\n\nHere's a patch improving some things associated with scalar multiplication over ZZ.\n\nPrior to patch:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=x+y+z\nsage: timeit f*3\n1000 loops, best of 3: 322 \u00c2\u00b5s per loop\n```\n\nAfter patch:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=x+y+z\nsage: timeit f*3\n10000 loops, best of 3: 68 \u00c2\u00b5s per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2161\n\n",
+    "closed_at": "2008-02-15T00:17:35Z",
     "created_at": "2008-02-14T19:18:02Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch] some speed improvements for mpolynomials over ZZ",
+    "title": "[with patch, with positive review] some speed improvements for mpolynomials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2161",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

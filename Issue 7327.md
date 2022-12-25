@@ -4,6 +4,7 @@ archive/issues_007327.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nIt is inconsistent with plot and other functions that this just hangs:\n\n```\nintegrate(sin(x), (x,0,1))\n```\n\nThis patch takes care of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7327\n\n",
+    "closed_at": "2009-11-06T05:10:58Z",
     "created_at": "2009-10-28T00:24:05Z",
     "labels": [
         "component: calculus",

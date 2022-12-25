@@ -1,16 +1,17 @@
-# Issue 1874: [with patch, needs review] implement bipartite graphs
+# Issue 1874: [with patch, positive review] implement bipartite graphs
 
 archive/issues_001874.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @roed314\n\nThis is just an implementation of the barebones minimum. The patch also includes some documentation cleanup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1874\n\n",
+    "closed_at": "2008-01-21T04:04:45Z",
     "created_at": "2008-01-21T00:16:16Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs review] implement bipartite graphs",
+    "title": "[with patch, positive review] implement bipartite graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1874",
     "user": "https://github.com/rlmill"

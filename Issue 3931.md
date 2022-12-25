@@ -4,6 +4,7 @@ archive/issues_003931.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3931\n\n",
+    "closed_at": "2008-08-24T04:50:59Z",
     "created_at": "2008-08-22T18:16:18Z",
     "labels": [
         "component: graph theory"

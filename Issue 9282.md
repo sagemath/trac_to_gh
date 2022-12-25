@@ -4,6 +4,7 @@ archive/issues_009282.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nsage -testall fails at:\n\nsage -t \u00a0\"devel/sage/sage/modular/hecke/submodule.py\"\n\nsage -t \u00a0\"devel/sage/sage/modular/abvar/abvar.py\"\n\nsage -t \u00a0\"devel/sage/sage/lfunctions/sympow.py\"\n\nsage -t \u00a0\"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n\nsage -t \u00a0\"devel/sage/sage/interfaces/qepcad.py\"\n\n\n\nCompiled with: GCC 4.5.0\n\nDistribution: Arch Linux 32 bit\n\nIssue created by migration from https://trac.sagemath.org/ticket/9282\n\n",
+    "closed_at": "2010-06-22T07:45:38Z",
     "created_at": "2010-06-20T12:58:22Z",
     "labels": [
         "component: doctest coverage",

@@ -4,6 +4,7 @@ archive/issues_007358.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nA special case of #7303 ( which is much easier and efficient to implement ) is to find a strongly connected orientation of the edges of a bridgeless connected graph.\n\nThis can be done using the short algorithm given in :\nSchriver Combinatorial optimization\nVolume B \npage 1037\n\nIssue created by migration from https://trac.sagemath.org/ticket/7358\n\n",
+    "closed_at": "2009-12-19T21:54:50Z",
     "created_at": "2009-10-31T08:44:40Z",
     "labels": [
         "component: graph theory"

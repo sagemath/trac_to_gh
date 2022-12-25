@@ -1,16 +1,17 @@
-# Issue 8890: map_support modifies the zero element of a free module!
+# Issue 8890: map_support modifies the zero element of a free module, and related fixes and cleanup
 
 archive/issues_008890.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\n```\nsage: B = CombinatorialFreeModule(ZZ, ['a','b'])\nsage: B.an_element().map_support(lambda i: i)\n2*B['a'] + 2*B['b']\nsage: B.zero()\n2*B['a'] + 2*B['b']\n```\n\nLooking at the code exposes the problem:\n\n```\n        res = self.parent()(0)\n        z_elt = {}\n        for m,c in self.monomial_coefficients().iteritems():\n            z_elt[f(m)] = c\n        res._monomial_coefficients = z_elt\n        return res\n```\n\nWe should not change the dictionary of zero!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8890\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: free modules\n\n```\nsage: B = CombinatorialFreeModule(ZZ, ['a','b'])\nsage: B.an_element().map_support(lambda i: i)\n2*B['a'] + 2*B['b']\nsage: B.zero()\n2*B['a'] + 2*B['b']\n```\n\nLooking at the code exposes the problem:\n\n```\n        res = self.parent()(0)\n        z_elt = {}\n        for m,c in self.monomial_coefficients().iteritems():\n            z_elt[f(m)] = c\n        res._monomial_coefficients = z_elt\n        return res\n```\n\nWe should not change the dictionary of zero!\n\nThe patch fixes this by rewriting the code in a generic way; this fixes by the way another bug when the function f is not injective, and moves the code to ModulesWithBasis. It also deprecates map_term, map_mc in favor of map_item, and also moves _repr_ to ModulesWithBasis to enable subcategories to override it.\n\nDepends on #8881\n\nIssue created by migration from https://trac.sagemath.org/ticket/8890\n\n",
+    "closed_at": "2010-06-06T01:11:50Z",
     "created_at": "2010-05-05T16:12:51Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "map_support modifies the zero element of a free module!",
+    "title": "map_support modifies the zero element of a free module, and related fixes and cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8890",
     "user": "https://github.com/jbandlow"
@@ -19,6 +20,8 @@ archive/issues_008890.json:
 Assignee: @aghitza
 
 CC:  sage-combinat
+
+Keywords: free modules
 
 ```
 sage: B = CombinatorialFreeModule(ZZ, ['a','b'])
@@ -40,6 +43,10 @@ Looking at the code exposes the problem:
 ```
 
 We should not change the dictionary of zero!
+
+The patch fixes this by rewriting the code in a generic way; this fixes by the way another bug when the function f is not injective, and moves the code to ModulesWithBasis. It also deprecates map_term, map_mc in favor of map_item, and also moves _repr_ to ModulesWithBasis to enable subcategories to override it.
+
+Depends on #8881
 
 Issue created by migration from https://trac.sagemath.org/ticket/8890
 

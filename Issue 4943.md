@@ -4,11 +4,11 @@ archive/issues_004943.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: parallel doctest testing\n\nsage -tp is great, except it doesn't print synchronously when only one file is being tested.  It's irritating to wait for output when there are no race problems due to only a single parallel process.  Could we make sage -tp detect a single file and just run sage -t when that's the case?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4943\n\n",
+    "closed_at": "2013-03-15T13:01:09Z",
     "created_at": "2009-01-05T22:35:56Z",
     "labels": [
         "component: doctest coverage",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make sage -tp run sage -t when only one file is specified",

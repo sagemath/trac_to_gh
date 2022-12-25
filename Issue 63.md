@@ -1,9 +1,10 @@
-# Issue 63: in safari notebook, tab key inserts tab AND moves to next cell
+# Issue 63: in safari notebook, tab key inserts tab AND moves to beginning of cell
 
 archive/issues_000063.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  dmharvey@math.harvard.edu\n\nWhen I'm entering e.g. a for loop, it's nice to be able to hit tab to insert indentation. But in Safari, when I hit tab, it inserts the tab and then moves to the next cell.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/63\n\n",
+    "closed_at": "2007-01-22T01:42:59Z",
     "created_at": "2006-09-15T03:38:46Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_000063.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.8",
-    "title": "in safari notebook, tab key inserts tab AND moves to next cell",
+    "title": "in safari notebook, tab key inserts tab AND moves to beginning of cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/63",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

@@ -1,16 +1,16 @@
-# Issue 2891: inline_fortran -- completely rewrite to not save a global variable and *not* got hacked into various global structures all over
+# Issue 2891: Don't use globals() to initialize InlineFortran
 
 archive/issues_002891.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @jdemeyer\n\nThe InlineFortran stuff in misc/inline_fortran.py is bad.  That global variable should be explicitly passed into the __eval__ and __call__ methods, and should *not* be set on creation.   I've attached what the file *should* roughly be, but I can't get it to work.\n\nAlso, it's terrible the hacking in server/support.py to get the fortran stuff in there.  This is just really wrong. \n\nNOTE -- this all works -- it's not a bug.  It's just not good programming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2891\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jdemeyer\n\nThe `InlineFortran` stuff in `src/sage/misc/inline_fortran.py` is bad.  That `globals` variable should be explicitly passed into the `eval` and `__call__` methods, and should *not* be set on creation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2891\n\n",
+    "closed_at": "2014-12-15T17:50:57Z",
     "created_at": "2008-04-12T03:14:41Z",
     "labels": [
-        "component: misc",
-        "bug"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
-    "title": "inline_fortran -- completely rewrite to not save a global variable and *not* got hacked into various global structures all over",
+    "title": "Don't use globals() to initialize InlineFortran",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2891",
     "user": "https://github.com/williamstein"
@@ -20,11 +20,7 @@ Assignee: cwitty
 
 CC:  @jdemeyer
 
-The InlineFortran stuff in misc/inline_fortran.py is bad.  That global variable should be explicitly passed into the __eval__ and __call__ methods, and should *not* be set on creation.   I've attached what the file *should* roughly be, but I can't get it to work.
-
-Also, it's terrible the hacking in server/support.py to get the fortran stuff in there.  This is just really wrong. 
-
-NOTE -- this all works -- it's not a bug.  It's just not good programming.
+The `InlineFortran` stuff in `src/sage/misc/inline_fortran.py` is bad.  That `globals` variable should be explicitly passed into the `eval` and `__call__` methods, and should *not* be set on creation.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2891
 

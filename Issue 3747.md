@@ -1,9 +1,10 @@
-# Issue 3747: incorrect power in modular arithmetic
+# Issue 3747: [with patch, positive review] incorrect power in modular arithmetic
 
 archive/issues_003747.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: R = Integers(17^5)\nsage: R(17)^5\n1419857\n```\n\nThe answer should be zero.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3747\n\n",
+    "closed_at": "2008-07-30T23:15:51Z",
     "created_at": "2008-07-30T14:14:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_003747.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "incorrect power in modular arithmetic",
+    "title": "[with patch, positive review] incorrect power in modular arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3747",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

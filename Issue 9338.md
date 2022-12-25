@@ -3,7 +3,8 @@
 archive/issues_009338.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAs the subject says. The latest version also fixes the issue with ARC2 reported at http://www.securityfocus.com/bid/33674/info. Currently, the PyCrypto spkg maintains patches for this issue. Upgrading to the latest upstream version would mean we no longer need to maintain those patches in the spkg itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9338\n\n",
+    "body": "Assignee: tbd\n\nAs the subject says. The latest version also fixes the issue with ARC2 reported at http://www.securityfocus.com/bid/33674/info. Currently, the PyCrypto spkg maintains patches for this issue. Upgrading to the latest upstream version would mean we no longer need to maintain those patches in the spkg itself.\n\n**Apply:**\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/pycrypto/pycrypto-2.1.0.spkg\n\nChanges in this upgraded spkg include:\n\n* Upgrade to PyCrypto 2.1.0.\n* The bug at http://www.securityfocus.com/bid/33674/info is fixed in PyCrypto 2.1.0, so remove patches/ARC2.c and patches/ARC2.c.patch.\n* Flesh out and update the file SPKG.txt.\n* Add spkg-check to run the test suite of PyCrypto.\n* Add a check to spkg-install to check that PyCrypto installs fine.\n\nMake sure to update #9281 when spkg-check runs the test suite fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9338\n\n",
+    "closed_at": "2010-08-09T09:38:15Z",
     "created_at": "2010-06-25T19:24:19Z",
     "labels": [
         "component: packages: standard"
@@ -18,6 +19,20 @@ archive/issues_009338.json:
 Assignee: tbd
 
 As the subject says. The latest version also fixes the issue with ARC2 reported at http://www.securityfocus.com/bid/33674/info. Currently, the PyCrypto spkg maintains patches for this issue. Upgrading to the latest upstream version would mean we no longer need to maintain those patches in the spkg itself.
+
+**Apply:**
+
+http://sage.math.washington.edu/home/mvngu/spkg/standard/pycrypto/pycrypto-2.1.0.spkg
+
+Changes in this upgraded spkg include:
+
+* Upgrade to PyCrypto 2.1.0.
+* The bug at http://www.securityfocus.com/bid/33674/info is fixed in PyCrypto 2.1.0, so remove patches/ARC2.c and patches/ARC2.c.patch.
+* Flesh out and update the file SPKG.txt.
+* Add spkg-check to run the test suite of PyCrypto.
+* Add a check to spkg-install to check that PyCrypto installs fine.
+
+Make sure to update #9281 when spkg-check runs the test suite fine.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9338
 

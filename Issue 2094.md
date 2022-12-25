@@ -1,15 +1,16 @@
-# Issue 2094: Add jpeg support to gd
+# Issue 2094: [with patch, needs more work] Add jpeg support to gd
 
 archive/issues_002094.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @dimpase\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2094\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @dimpase\n\nKeywords: editor_craigcitro\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2094\n\n",
+    "closed_at": "2020-09-08T18:07:36Z",
     "created_at": "2008-02-08T01:21:07Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Add jpeg support to gd",
+    "title": "[with patch, needs more work] Add jpeg support to gd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2094",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -18,6 +19,8 @@ archive/issues_002094.json:
 Assignee: @williamstein
 
 CC:  @dimpase
+
+Keywords: editor_craigcitro
 
 jpeg is a common format that most people keep their pictures in -- let's support it!
 

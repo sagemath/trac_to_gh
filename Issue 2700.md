@@ -3,7 +3,8 @@
 archive/issues_002700.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n>>  I have tried to plot a graphic in the notebook with a small scale (<1)\n>>  and it end up by showing up nothing:\n>>    sage: var('x')\n>>    sage: plot(sin(x), 0, 0.01)\n>>\n> \n> Try this:\n> \n> sage: plot(sin(x), 0, 0.01).show(0,0.01, 0, 0.01)\n> \n> The problem is plot's default scale isn't good enough.  using show you can force\n> something more useful.\n\n\n(turning this into a dev discussion :)\n\nYou know, we do evaluate the function for lots of points in the interval, so we ought to have a pretty intelligent idea of the max and min of the function.  This ought to let us get a pretty good guess at a ymin and ymax.  If we really wanted to get fancy, we could do a small statistical analysis to throw out outliers too.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2700\n\n",
+    "body": "Assignee: @williamstein\n\n```\n>>  I have tried to plot a graphic in the notebook with a small scale (<1)\n>>  and it end up by showing up nothing:\n>>    sage: var('x')\n>>    sage: plot(sin(x), 0, 0.01)\n>>\n> \n> Try this:\n> \n> sage: plot(sin(x), 0, 0.01).show(0,0.01, 0, 0.01)\n> \n> The problem is plot's default scale isn't good enough. using\n show you can force\n> something more useful.\n\n\n(turning this into a dev discussion :)\n\nYou know, we do evaluate the function for lots of points in the \ninterval, so we ought to have a pretty intelligent idea of the max \nand min of the function.  This ought to let us get a pretty good \nguess at a ymin and ymax.  If we really wanted to get fancy, we \ncould do a small statistical analysis to throw out outliers too.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2700\n\n",
+    "closed_at": "2008-09-02T19:49:18Z",
     "created_at": "2008-03-28T17:13:40Z",
     "labels": [
         "component: graphics",
@@ -29,14 +30,20 @@ Assignee: @williamstein
 > 
 > sage: plot(sin(x), 0, 0.01).show(0,0.01, 0, 0.01)
 > 
-> The problem is plot's default scale isn't good enough.  using show you can force
+> The problem is plot's default scale isn't good enough. using
+ show you can force
 > something more useful.
 
 
 (turning this into a dev discussion :)
 
-You know, we do evaluate the function for lots of points in the interval, so we ought to have a pretty intelligent idea of the max and min of the function.  This ought to let us get a pretty good guess at a ymin and ymax.  If we really wanted to get fancy, we could do a small statistical analysis to throw out outliers too.
+You know, we do evaluate the function for lots of points in the 
+interval, so we ought to have a pretty intelligent idea of the max 
+and min of the function.  This ought to let us get a pretty good 
+guess at a ymin and ymax.  If we really wanted to get fancy, we 
+could do a small statistical analysis to throw out outliers too.
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2700
 

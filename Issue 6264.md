@@ -1,9 +1,10 @@
-# Issue 6264: ReST bug introduced by #5452 (missing '::' before a sage block)
+# Issue 6264: [with patch, positive review] ReST bug introduced by #5452 (missing '::' before a sage block)
 
 archive/issues_006264.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nThe patch I proposed to solve #5452 (merged in 3.4.1) introduced a tiny ReST bug in sage/graphs/graph.py. A single '::' is missing before a sage block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6264\n\n",
+    "closed_at": "2009-06-13T23:02:52Z",
     "created_at": "2009-06-12T03:39:58Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006264.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "ReST bug introduced by #5452 (missing '::' before a sage block)",
+    "title": "[with patch, positive review] ReST bug introduced by #5452 (missing '::' before a sage block)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6264",
     "user": "https://github.com/seblabbe"

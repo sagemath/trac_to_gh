@@ -4,6 +4,7 @@ archive/issues_009633.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n```\nsage: binomial(0.5r,5)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call\nlast)\n\n/home/bo198214/projects/<ipython console> in <module>()\n\n/opt/sage-4.5-linux-32bit-ubuntu_10.04_lts-i686-Linux/local/lib/\npython2.6/site-packages/sage/rings/arith.pyc in binomial(x, m)\n   2887     if isinstance(x, (float, sage.rings.real_mpfr.RealNumber,\n   2888                       sage.rings.real_mpfr.RealLiteral)):\n-> 2889         P = x.parent()\n   2890         if m < 0:\n   2891             return P(0)\n\nAttributeError: 'float' object has no attribute 'parent' \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9633\n\n",
+    "closed_at": "2011-05-03T12:28:45Z",
     "created_at": "2010-07-29T07:23:07Z",
     "labels": [
         "component: basic arithmetic",

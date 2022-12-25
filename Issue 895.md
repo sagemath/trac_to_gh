@@ -4,6 +4,7 @@ archive/issues_000895.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/895\n\n",
+    "closed_at": "2007-10-23T19:48:42Z",
     "created_at": "2007-10-13T23:47:18Z",
     "labels": [
         "component: linear algebra",

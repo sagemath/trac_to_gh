@@ -1,22 +1,23 @@
-# Issue 5640: no way to figure out list of colormaps from matrix plot's docstring
+# Issue 5640: [with patch, positive review] no way to figure out list of colormaps from matrix plot's docstring
 
 archive/issues_005640.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:\n\n```\n                        cmap -- the name of\n                        a predefined colormap, a list of colors\n                        or an instance of a matplotlib Colormap.\n                        Type: import matplotlib.cm; matplotlib.cm.datad.keys()\n                        for available colormap names.\n```\n\nIt should also be in the output here too:\n\n```\nsage: matrix(QQ,1,1).plot(cmap0=0)\n          \t\n\nverbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0\nverbose 0 (84: primitive.py, options) \nThe allowed options for MatrixPlot defined by a 1 x 1 data grid are:\n    cmap           the name of a predefined colormap, \n                        a list of colors or an instance of a \n                        matplotlib Colormap.\n    zorder         The layer level in which to draw                     \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5640\n\n",
+    "body": "Assignee: @kcrisman\n\nThis sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:\n\n```\n                        cmap -- the name of\n                        a predefined colormap, a list of colors\n                        or an instance of a matplotlib Colormap.\n                        Type: import matplotlib.cm; matplotlib.cm.datad.keys()\n                        for available colormap names.\n```\n\nIt should also be in the output here too:\n\n```\nsage: matrix(QQ,1,1).plot(cmap0=0)\n\nverbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0\nverbose 0 (84: primitive.py, options) \nThe allowed options for MatrixPlot defined by a 1 x 1 data grid are:\n    cmap           the name of a predefined colormap, \n                        a list of colors or an instance of a \n                        matplotlib Colormap.\n    zorder         The layer level in which to draw                     \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5640\n\n",
+    "closed_at": "2009-06-26T23:11:50Z",
     "created_at": "2009-03-30T03:16:35Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "no way to figure out list of colormaps from matrix plot's docstring",
+    "title": "[with patch, positive review] no way to figure out list of colormaps from matrix plot's docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5640",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
 This sentence, which is in the help for contour_plot, should also be in the help for the plot method on matrices:
 
@@ -32,7 +33,6 @@ It should also be in the output here too:
 
 ```
 sage: matrix(QQ,1,1).plot(cmap0=0)
-          	
 
 verbose 0 (84: primitive.py, options) WARNING: Ignoring option 'cmap0'=0
 verbose 0 (84: primitive.py, options) 

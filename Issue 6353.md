@@ -4,6 +4,7 @@ archive/issues_006353.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  boothby\n\nAt present, a user cannot log into two different notebooks at the same address with different ports.  For example, if I run two notebooks at\n\nhttp://sage.math.washington.edu:8001\n\nand\n\nhttp://sage.math.washington.edu:8002\n\nthen I can only use one at a time unless I use two separate browsers.  A simple change to the cookies should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6353\n\n",
+    "closed_at": "2010-01-25T00:52:38Z",
     "created_at": "2009-06-18T00:07:45Z",
     "labels": [
         "component: notebook",

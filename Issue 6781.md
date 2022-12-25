@@ -3,10 +3,11 @@
 archive/issues_006781.json:
 ```json
 {
-    "body": "CC:  @burcin\n\necl can be run \"embedded\" and has a fairly clean C interface, which should be tightly wrappable in cython.\nThere are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.\n\nISSUES:\n\n1. I quote from Section 5.2 of the ECL reference manual:\n\nThe collector will not scan the data sectors. If you embed ECL in another program, or link libraries with ECL, you will have to notify ECL which variables point to lisp objects.\n\nSo, cython wrapper objects that keep track of an object under ECL memory management will have to do something, but the manual doesn't say what.\n\n2. Maxima currently gets built as a stand-alone executable. Somewhere in the build process, there must exist a lisp-environment that has Maxima built but not running. In order to communicate with maxima as a library (via ECL's API), one would have to get such an image. It does look like Maxima just store its state in LISP's global state, so just calling maxima routines from LISP should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6781\n\n",
+    "body": "Assignee: @nbruin\n\nCC:  @burcin\n\nKeywords: ecl, library\n\necl can be run \"embedded\" and has a fairly clean C interface, which should be tightly wrappable in cython.\nThere are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.\n\nISSUES:\n\n1. I quote from Section 5.2 of the ECL reference manual:\n\nThe collector will not scan the data sectors. If you embed ECL in another program, or link libraries with ECL, you will have to notify ECL which variables point to lisp objects.\n\nSOLUTION: Boehm does look on the stack for pointers, so the only objects in danger are on the heap, outside of Boehm's control. The easiest solution is to place pointers somewhere in a list or a vector inside lisp's control (in some global variable).\n\n2. Maxima currently gets built as a stand-alone executable. We need Maxima loaded, but not running.\n\nSOLUTION: It is possible to extract the right kind of image.\n a) remove the last line from  init-cl.lisp, since this starts\n    maxima's read-eval-print loop\n b) start ecl and run:\n    (require 'asdf)\n    (load \"maxima-build.lisp\")\n    (asdf:make-build :maxima :type :fasl)\n c) this produces a file \"maxima.fasb\" that can be loaded into ecl\n    after (require 'asdf)\n\n3. ecl installs a signal and error handler that wreaks havoc with\nthe sage environment. It should be possible to turn the error handler / debugger off via common lisp. The signal handler needs to be handled separately\n\n4. after ecl has run in sage, exit triggers a segfault.\n\n---\n\nAll issues have been resolved and ecllib.patch should apply cleanly\nto add Ecl library support. The Ecl package has already been updated\ndue to other reasons (at least in 4.1.2) to a version that supports\nthe necessary options.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6781\n\n",
+    "closed_at": "2010-04-16T17:15:19Z",
     "created_at": "2009-08-20T20:00:57Z",
     "labels": [
-        "component: symbolics"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Library access to ecl",
@@ -15,7 +16,11 @@ archive/issues_006781.json:
     "user": "https://github.com/nbruin"
 }
 ```
+Assignee: @nbruin
+
 CC:  @burcin
+
+Keywords: ecl, library
 
 ecl can be run "embedded" and has a fairly clean C interface, which should be tightly wrappable in cython.
 There are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.
@@ -26,9 +31,31 @@ ISSUES:
 
 The collector will not scan the data sectors. If you embed ECL in another program, or link libraries with ECL, you will have to notify ECL which variables point to lisp objects.
 
-So, cython wrapper objects that keep track of an object under ECL memory management will have to do something, but the manual doesn't say what.
+SOLUTION: Boehm does look on the stack for pointers, so the only objects in danger are on the heap, outside of Boehm's control. The easiest solution is to place pointers somewhere in a list or a vector inside lisp's control (in some global variable).
 
-2. Maxima currently gets built as a stand-alone executable. Somewhere in the build process, there must exist a lisp-environment that has Maxima built but not running. In order to communicate with maxima as a library (via ECL's API), one would have to get such an image. It does look like Maxima just store its state in LISP's global state, so just calling maxima routines from LISP should work.
+2. Maxima currently gets built as a stand-alone executable. We need Maxima loaded, but not running.
+
+SOLUTION: It is possible to extract the right kind of image.
+ a) remove the last line from  init-cl.lisp, since this starts
+    maxima's read-eval-print loop
+ b) start ecl and run:
+    (require 'asdf)
+    (load "maxima-build.lisp")
+    (asdf:make-build :maxima :type :fasl)
+ c) this produces a file "maxima.fasb" that can be loaded into ecl
+    after (require 'asdf)
+
+3. ecl installs a signal and error handler that wreaks havoc with
+the sage environment. It should be possible to turn the error handler / debugger off via common lisp. The signal handler needs to be handled separately
+
+4. after ecl has run in sage, exit triggers a segfault.
+
+---
+
+All issues have been resolved and ecllib.patch should apply cleanly
+to add Ecl library support. The Ecl package has already been updated
+due to other reasons (at least in 4.1.2) to a version that supports
+the necessary options.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6781
 

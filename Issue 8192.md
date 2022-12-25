@@ -3,7 +3,8 @@
 archive/issues_008192.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  polybori @burcin\n\n* gat parser added\n  * Disabled keyboard interrupt handling (but re-raised)\n  * Fixed critical bug in normal form\n  * Naming convention: `minimalElements` -> `minimal_elements`\n  * has_constant_part for variable/monomial\n  * `lead/lex_lead/lead_deg/lex_lead_deg` also for Variable/Monomial\n  * iterator for literal factorization\n  * Added treatment of customizable settings for `BOOST_LIBRARY`,`SHCFLAGS`, `SHCCFLAGS`, and `SHCXXFLAGS`\n  * Improved Sun Studio compatibility\n  * Fix for hpux (CUDD needs `pwd.h`)\n}}}\n\nThis should be relatively straight forward then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8192\n\n",
+    "body": "Assignee: PolyBoRi\n\nCC:  polybori @burcin\n\n* gat parser added\n* Disabled keyboard interrupt handling (but re-raised)\n* Fixed critical bug in normal form\n* Naming convention: `minimalElements` -> `minimal_elements`\n* has_constant_part for variable/monomial\n* `lead/lex_lead/lead_deg/lex_lead_deg` also for Variable/Monomial\n* iterator for literal factorization\n* Added treatment of customizable settings for `BOOST_LIBRARY`,`SHCFLAGS`, `SHCCFLAGS`, and `SHCXXFLAGS`\n* Improved Sun Studio compatibility\n* Fix for hpux (CUDD needs `pwd.h`)\n\nThis should be relatively straight forward then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8192\n\n",
+    "closed_at": "2010-04-29T00:25:41Z",
     "created_at": "2010-02-05T10:59:50Z",
     "labels": [
         "component: packages: standard"
@@ -15,21 +16,20 @@ archive/issues_008192.json:
     "user": "https://github.com/malb"
 }
 ```
-Assignee: tbd
+Assignee: PolyBoRi
 
 CC:  polybori @burcin
 
 * gat parser added
-  * Disabled keyboard interrupt handling (but re-raised)
-  * Fixed critical bug in normal form
-  * Naming convention: `minimalElements` -> `minimal_elements`
-  * has_constant_part for variable/monomial
-  * `lead/lex_lead/lead_deg/lex_lead_deg` also for Variable/Monomial
-  * iterator for literal factorization
-  * Added treatment of customizable settings for `BOOST_LIBRARY`,`SHCFLAGS`, `SHCCFLAGS`, and `SHCXXFLAGS`
-  * Improved Sun Studio compatibility
-  * Fix for hpux (CUDD needs `pwd.h`)
-}}}
+* Disabled keyboard interrupt handling (but re-raised)
+* Fixed critical bug in normal form
+* Naming convention: `minimalElements` -> `minimal_elements`
+* has_constant_part for variable/monomial
+* `lead/lex_lead/lead_deg/lex_lead_deg` also for Variable/Monomial
+* iterator for literal factorization
+* Added treatment of customizable settings for `BOOST_LIBRARY`,`SHCFLAGS`, `SHCCFLAGS`, and `SHCXXFLAGS`
+* Improved Sun Studio compatibility
+* Fix for hpux (CUDD needs `pwd.h`)
 
 This should be relatively straight forward then.
 

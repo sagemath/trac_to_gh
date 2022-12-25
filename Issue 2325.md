@@ -1,16 +1,18 @@
-# Issue 2325: segfault in p-adic extension() method
+# Issue 2325: [with patch; needs review] segfault in p-adic extension() method
 
 archive/issues_002325.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: p-adic extension crash segfault ntl\n\n```\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2325\n\n",
+    "closed_at": "2008-04-26T03:39:00Z",
     "created_at": "2008-02-26T23:05:17Z",
     "labels": [
         "component: number theory",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "segfault in p-adic extension() method",
+    "title": "[with patch; needs review] segfault in p-adic extension() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2325",
     "user": "https://github.com/ncalexan"

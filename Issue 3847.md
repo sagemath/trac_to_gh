@@ -1,9 +1,10 @@
-# Issue 3847: can't make vector of ints
+# Issue 3847: [with patch, with positive review] can't make vector of ints
 
 archive/issues_003847.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nsage: vector([int(0)])\nTraceback (most recent call last):\n...\nTypeError: unable to find a common ring for all elements\n\nShouldn't ints be coerced to Integers?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3847\n\n",
+    "body": "Assignee: tbd\n\n```\nsage: vector([int(0)])\nTraceback (most recent call last):\n...\nTypeError: unable to find a common ring for all elements\n```\nShouldn't ints be coerced to Integers?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3847\n\n",
+    "closed_at": "2008-09-15T03:54:27Z",
     "created_at": "2008-08-14T04:24:35Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_003847.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "can't make vector of ints",
+    "title": "[with patch, with positive review] can't make vector of ints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3847",
     "user": "https://github.com/saliola"
@@ -19,11 +20,12 @@ archive/issues_003847.json:
 ```
 Assignee: tbd
 
+```
 sage: vector([int(0)])
 Traceback (most recent call last):
 ...
 TypeError: unable to find a common ring for all elements
-
+```
 Shouldn't ints be coerced to Integers?
 
 Issue created by migration from https://trac.sagemath.org/ticket/3847

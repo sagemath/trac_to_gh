@@ -1,9 +1,10 @@
-# Issue 4274: assertion failure in rank for elliptic curves
+# Issue 4274: [with patch; positive review] assertion failure in rank for elliptic curves
 
 archive/issues_004274.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona peter@cryptojedi.org\n\nThis was reported to me by Peter Schwabe:\n\n```\nsage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/usr/local/sage-3.1.2/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/tmp/sage-3.1.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm, proof)\n   1274                 proof = True #since we actually provably found the rank\n   1275             i = X.find('Rank = ')\n-> 1276             assert i != -1\n   1277             j = i + X[i:].find('\\n')\n   1278             self.__rank[proof] = Integer(X[i+7:j])\n\nAssertionError: \n```\nWithout proof=False, we get:\n\n```\nsage: EllipticCurve([1,0,0,0,37455]).rank()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage-3.1.2/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/tmp/sage-3.1.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm, proof)\n   1268             if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:\n   1269                 if proof:\n-> 1270                     raise RuntimeError, '%s\\nRank not provably correct.'%X\n   1271                 else:\n   1272                     misc.verbose(\"Warning -- rank not provably correct\", level=1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4274\n\n",
+    "closed_at": "2009-02-15T15:46:05Z",
     "created_at": "2008-10-13T14:45:31Z",
     "labels": [
         "component: algebraic geometry",
@@ -11,7 +12,7 @@ archive/issues_004274.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "assertion failure in rank for elliptic curves",
+    "title": "[with patch; positive review] assertion failure in rank for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4274",
     "user": "https://github.com/zimmermann6"

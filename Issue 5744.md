@@ -1,9 +1,10 @@
-# Issue 5744: Solaris 10: use C99 mode to compile extensions instead of using clumsy extern declarations, properly work around _Complex_I problem in complex.h
+# Issue 5744: [with patch, positive review] Solaris 10: use C99 mode to compile extensions instead of using clumsy extern declarations, properly work around _Complex_I problem in complex.h
 
 archive/issues_005744.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nisinf() and a bunch of friends we right now provide via solaris_fixes.h in various places is available in C99 mode with gcc via math_c99.h which is included in math.h. So building some extensions in C99 mode will allow us to get rid of nearly all Solaris specific workarounds. \n\nAt the same time we have a new problem with _Complex_I which is expected to be provided by the compiler since complex.h just defines _Complex_I to be _Complex_I on Solaris 10. Not good :(\n\nI have a patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5744\n\n",
+    "closed_at": "2009-04-11T04:54:17Z",
     "created_at": "2009-04-11T01:29:28Z",
     "labels": [
         "component: porting: solaris",
@@ -11,7 +12,7 @@ archive/issues_005744.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Solaris 10: use C99 mode to compile extensions instead of using clumsy extern declarations, properly work around _Complex_I problem in complex.h",
+    "title": "[with patch, positive review] Solaris 10: use C99 mode to compile extensions instead of using clumsy extern declarations, properly work around _Complex_I problem in complex.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5744",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

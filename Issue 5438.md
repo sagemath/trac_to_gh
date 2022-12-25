@@ -1,9 +1,10 @@
-# Issue 5438: Incorrect documentation and/or functionality in plot filling
+# Issue 5438: [with patch, positive review] Incorrect documentation and/or functionality in plot filling
 
 archive/issues_005438.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  whuss\n\nKeywords: plot fill\n\nThe following example from documentation seems to work:\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, i+1) for i in [0..3]]))\n```\nbut the behavior is the same as\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, 5) for i in [0..3]]))\n```\nor anything else that evaluates to True as the second element of the dict.  The proper behavior is \n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, [i+1]) for i in [0..3]]))\n```\nwhich is incidentally quite beautiful.\n\nThere are a few other such misleading/wrong example, and the documentation for how to use a dictionary which is a little confusing for people not familiar with Python yet\n\nHowever, this is really related to a bug, namely that for some reason the option of plotting between a function and a line isn't parsing properly.  These should hopefully be easy to fix and are closely related enough that one ticket seemed appropriate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5438\n\n",
+    "body": "Assignee: @kcrisman\n\nCC:  whuss\n\nKeywords: plot fill\n\nThe following example from documentation seems to work:\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, i+1) for i in [0..3]]))\n```\nbut the behavior is the same as\n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, 5) for i in [0..3]]))\n```\nor anything else that evaluates to True as the second element of the dict.  The proper behavior is \n\n```\ndef b(n): return lambda x: bessel_J(n, x) + 0.5*(n-1)\nplot([b(c) for c in [1..5]], 0, 40, fill = dict([(i, [i+1]) for i in [0..3]]))\n```\nwhich is incidentally quite beautiful.\n\nThere are a few other such misleading/wrong example, and the documentation for how to use a dictionary which is a little confusing for people not familiar with Python yet\n\nHowever, this is really related to a bug, namely that for some reason the option of plotting between a function and a line isn't parsing properly.  These should hopefully be easy to fix and are closely related enough that one ticket seemed appropriate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5438\n\n",
+    "closed_at": "2009-05-14T06:49:24Z",
     "created_at": "2009-03-04T17:31:01Z",
     "labels": [
         "component: graphics",
@@ -11,13 +12,13 @@ archive/issues_005438.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Incorrect documentation and/or functionality in plot filling",
+    "title": "[with patch, positive review] Incorrect documentation and/or functionality in plot filling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5438",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
 CC:  whuss
 

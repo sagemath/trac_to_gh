@@ -3,11 +3,11 @@
 archive/issues_006810.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @vbraun\n\nKeywords: doctest schemes homset\n\nThe current coverage is 8% and should be brought up to 100%.\n\nAlso, there are small but annoying bugs such as: the methods that enumerate the points on schemes over finite fields do not sort the list before returning it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6810\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @vbraun\n\nKeywords: doctest schemes homset\n\nThe current coverage is 8% and should be brought up to 100%.\n\nAlso, there are small but annoying bugs such as: the methods that enumerate the points on schemes over finite fields do not sort the list before returning it (this issue is addressed by #9055).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6810\n\n",
+    "closed_at": "2012-02-24T15:05:17Z",
     "created_at": "2009-08-23T01:57:17Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improve doctest coverage in schemes/homset.py",
@@ -24,7 +24,8 @@ Keywords: doctest schemes homset
 
 The current coverage is 8% and should be brought up to 100%.
 
-Also, there are small but annoying bugs such as: the methods that enumerate the points on schemes over finite fields do not sort the list before returning it.
+Also, there are small but annoying bugs such as: the methods that enumerate the points on schemes over finite fields do not sort the list before returning it (this issue is addressed by #9055).
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6810
 

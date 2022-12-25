@@ -4,6 +4,7 @@ archive/issues_002679.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\n> 3. removing the .aux and .toc cache files from the documentation area\n> solved the pdf/html problems.\n\nok, we ought to make sure that we remove all those temp files before\npackaging the documentation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2679\n\n",
+    "closed_at": "2009-02-26T17:27:05Z",
     "created_at": "2008-03-26T18:36:16Z",
     "labels": [
         "component: documentation",

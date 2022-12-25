@@ -1,16 +1,17 @@
-# Issue 6198: stop Sage from trying to download spkg/standard/README.txt on upgrade
+# Issue 6198: [with patch, positive review] stop Sage from trying to download spkg/standard/README.txt on upgrade
 
 archive/issues_006198.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6198\n\n",
+    "closed_at": "2009-06-04T09:05:08Z",
     "created_at": "2009-06-03T18:34:30Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "stop Sage from trying to download spkg/standard/README.txt on upgrade",
+    "title": "[with patch, positive review] stop Sage from trying to download spkg/standard/README.txt on upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6198",
     "user": "https://github.com/mwhansen"

@@ -1,24 +1,27 @@
-# Issue 6384: elliptic curve -- isogeny function seems completely totally broken in first example I try
+# Issue 6384: [with patch, positive review] elliptic curve -- isogeny function is not robust -- it doesn't check validity of its input
 
 archive/issues_006384.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  shumow@gmail.com kohel @JohnCremona\n\nFirst the docstring for E.isogeny? has a typo\n\n```\n(defaul:None)\n```\nNote the missing t.\n\nNext, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: phi = E.isogeny([P]); phi\nIsogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\nsage: phi.codomain().conductor()\n530575705\nsage: phi.codomain().conductor().factor()\n5 * 11 * 1531 * 6301\n```\n\nNote that: \n\n* the two curves are not isogenous, since their conductors are different\n\n* the degree of the isogeny is reported to be 1, but it should be 5.\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/6384\n\n",
+    "body": "Assignee: shumow\n\nCC:  shumow@gmail.com kohel @JohnCremona\n\nKeywords: elliptic curves, isogeny,\n\nFirst the docstring for E.isogeny? has a typo\n\n```\n(defaul:None)\n```\nNote the missing t.\n\nNext, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: phi = E.isogeny([P]); phi\nIsogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\nsage: phi.codomain().conductor()\n530575705\nsage: phi.codomain().conductor().factor()\n5 * 11 * 1531 * 6301\n```\n\nNote that: \n\n* the two curves are not isogenous, since their conductors are different\n\n* the degree of the isogeny is reported to be 1, but it should be 5.\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/6384\n\n",
+    "closed_at": "2009-08-24T05:20:16Z",
     "created_at": "2009-06-21T23:44:06Z",
     "labels": [
-        "component: algebra",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "elliptic curve -- isogeny function seems completely totally broken in first example I try",
+    "title": "[with patch, positive review] elliptic curve -- isogeny function is not robust -- it doesn't check validity of its input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6384",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: shumow
 
 CC:  shumow@gmail.com kohel @JohnCremona
+
+Keywords: elliptic curves, isogeny,
 
 First the docstring for E.isogeny? has a typo
 

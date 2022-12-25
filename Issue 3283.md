@@ -1,16 +1,17 @@
-# Issue 3283: [with patch, needs review] fix some memholes in PolyBoRi interface
+# Issue 3283: [with patch, positive review] fix some memholes in PolyBoRi interface
 
 archive/issues_003283.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nKeywords: PolyBoRi, memleak\n\nAll PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3283\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori\n\nKeywords: PolyBoRi, memleak, editor_malb\n\nAll PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3283\n\n",
+    "closed_at": "2008-07-06T19:11:48Z",
     "created_at": "2008-05-23T17:10:11Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] fix some memholes in PolyBoRi interface",
+    "title": "[with patch, positive review] fix some memholes in PolyBoRi interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3283",
     "user": "https://github.com/malb"
@@ -20,7 +21,7 @@ Assignee: @malb
 
 CC:  @burcin polybori
 
-Keywords: PolyBoRi, memleak
+Keywords: PolyBoRi, memleak, editor_malb
 
 All PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.
 

@@ -1,15 +1,16 @@
-# Issue 5330: Move the docs over to the main repository
+# Issue 5330: [with patch, needs work] Move the docs over to the main repository
 
 archive/issues_005330.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5330\n\n",
+    "closed_at": "2009-02-24T19:24:24Z",
     "created_at": "2009-02-21T19:29:23Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Move the docs over to the main repository",
+    "title": "[with patch, needs work] Move the docs over to the main repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5330",
     "user": "https://github.com/mwhansen"

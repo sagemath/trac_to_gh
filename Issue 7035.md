@@ -3,10 +3,11 @@
 archive/issues_007035.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris gfortran\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler and SAGE_FORTRAN to the Sun Fortran 95 compiler. While R sends the correct flags (-KPIC) to make position independent code to the Sun C and C++ compilers, it does not do so with the Fortran compiler. Instead it used the GNU flag -fPIC. R is however picking up the correct Fortran compiler (f95 and not gfortran)\n\n```\n/opt/xxxsunstudio12.1/bin/cc -I. -I../../src/include -I../../src/include -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/inlcude -DHAVE_CONFIG_H   -KPIC  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib/  -c tabulate.c -o tabulate.o\n/opt/xxxsunstudio12.1/bin/cc -I. -I../../src/include -I../../src/include -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/inlcude -DHAVE_CONFIG_H   -KPIC  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib/  -c uncmin.c -o uncmin.o/opt/xxxsunstudio12.1/bin/cc -I. -I../../src/include -I../../src/include -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/inlcude -DHAVE_CONFIG_H   -KPIC  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib/  -c zeroin.c -o zeroin.osage_fortran  -PIC  -g -c ch2inv.f -o ch2inv.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -PIC  -g -c chol.f -o chol.o\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7035\n\n",
+    "body": "Assignee: tbd\n\nKeywords: solaris gfortran\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler and SAGE_FORTRAN to the Sun Fortran 95 compiler. While R sends the correct flags (-KPIC) to make position independent code to the Sun C and C++ compilers, it does not do so with the Fortran compiler. Instead it used the GNU flag -fPIC. R is however picking up the correct Fortran compiler (f95 and not gfortran)\n\n```\n/opt/xxxsunstudio12.1/bin/cc -I. -I../../src/include -I../../src/include -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/inlcude -DHAVE_CONFIG_H   -KPIC  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib/  -c tabulate.c -o tabulate.o\n/opt/xxxsunstudio12.1/bin/cc -I. -I../../src/include -I../../src/include -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/inlcude -DHAVE_CONFIG_H   -KPIC  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib/  -c uncmin.c -o uncmin.o/opt/xxxsunstudio12.1/bin/cc -I. -I../../src/include -I../../src/include -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/inlcude -DHAVE_CONFIG_H   -KPIC  -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include -L/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/lib/  -c zeroin.c -o zeroin.osage_fortran  -PIC  -g -c ch2inv.f -o ch2inv.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -PIC  -g -c chol.f -o chol.o\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7035\n\n",
+    "closed_at": "2021-10-04T23:44:13Z",
     "created_at": "2009-09-27T15:16:37Z",
     "labels": [
-        "component: build",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -25,7 +26,7 @@ Using
 * Solaris 10 update 7 on SPARC
 * sage-4.1.2.alpha2
 * Sun Studio 12.1
-* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
+* An updated configure script to allow the Sun compiler to be used #7021
 
 CC was set to the Sun C compiler, and CXX to the Sun C++ compiler and SAGE_FORTRAN to the Sun Fortran 95 compiler. While R sends the correct flags (-KPIC) to make position independent code to the Sun C and C++ compilers, it does not do so with the Fortran compiler. Instead it used the GNU flag -fPIC. R is however picking up the correct Fortran compiler (f95 and not gfortran)
 
@@ -35,6 +36,8 @@ CC was set to the Sun C compiler, and CXX to the Sun C++ compiler and SAGE_FORTR
 f95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise
 sage_fortran  -PIC  -g -c chol.f -o chol.o
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7035
 

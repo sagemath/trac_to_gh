@@ -1,15 +1,16 @@
-# Issue 4926: convert sage.schemes.* docstrings to Sphinx
+# Issue 4926: [with patch, with positive  review] convert sage.schemes.* docstrings to Sphinx
 
 archive/issues_004926.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4926\n\n",
+    "closed_at": "2009-02-24T18:56:10Z",
     "created_at": "2009-01-01T22:55:55Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.schemes.* docstrings to Sphinx",
+    "title": "[with patch, with positive  review] convert sage.schemes.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4926",
     "user": "https://github.com/mwhansen"

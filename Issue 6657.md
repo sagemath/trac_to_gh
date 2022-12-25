@@ -3,10 +3,11 @@
 archive/issues_006657.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
+    "body": "Assignee: @JohnCremona\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
+    "closed_at": "2010-01-19T00:08:13Z",
     "created_at": "2009-07-29T23:06:58Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
@@ -16,7 +17,7 @@ archive/issues_006657.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
 
 ```
 I found the following to be rather unexpected:

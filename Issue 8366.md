@@ -3,7 +3,8 @@
 archive/issues_008366.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman wcauchois @robert-marik\n\nWe have an artificial limitation in that contour labels and linestyles don't work when fill=True.  This patch lets these options work with filling.  Furthermore, it draws the contour lines on top of filled plots by default, which (at least I think) makes the plot look a little nicer anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8366\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman wcauchois @robert-marik\n\nKeywords: contour,plot\n\nWe have an artificial limitation in that contour labels and linestyles don't work when fill=True.  This patch lets these options work with filling.  Furthermore, it draws the contour lines on top of filled plots by default, which (at least I think) makes the plot look a little nicer anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8366\n\n",
+    "closed_at": "2010-04-15T23:44:44Z",
     "created_at": "2010-02-25T17:24:26Z",
     "labels": [
         "component: graphics",
@@ -19,6 +20,8 @@ archive/issues_008366.json:
 Assignee: @williamstein
 
 CC:  @kcrisman wcauchois @robert-marik
+
+Keywords: contour,plot
 
 We have an artificial limitation in that contour labels and linestyles don't work when fill=True.  This patch lets these options work with filling.  Furthermore, it draws the contour lines on top of filled plots by default, which (at least I think) makes the plot look a little nicer anyway.
 

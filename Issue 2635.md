@@ -1,9 +1,10 @@
-# Issue 2635: MAJOR NOTEBOOK BUG -- sending unevaluated cells back to the server is severly broken.
+# Issue 2635: [with patch, positive immediately] MAJOR NOTEBOOK BUG -- sending unevaluated cells back to the server is severly broken.
 
 archive/issues_002635.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2635\n\n",
+    "closed_at": "2008-03-22T00:13:52Z",
     "created_at": "2008-03-21T19:10:38Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002635.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "MAJOR NOTEBOOK BUG -- sending unevaluated cells back to the server is severly broken.",
+    "title": "[with patch, positive immediately] MAJOR NOTEBOOK BUG -- sending unevaluated cells back to the server is severly broken.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2635",
     "user": "https://github.com/williamstein"

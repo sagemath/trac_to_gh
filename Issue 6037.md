@@ -1,15 +1,16 @@
-# Issue 6037: Major Upgrade to QuadraticForm Local Density Routines
+# Issue 6037: [with patch; positive review] Major Upgrade to QuadraticForm Local Density Routines
 
 archive/issues_006037.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  mabshoff wstein @tornaria\n\nCompletely rewritten and doctested Local densities routines according to a consistent interface (and algorithms) described in the attached PDF file.\n\nPatch to follow very shortly!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6037\n\n",
+    "body": "Assignee: justin\n\nCC:  mabshoff wstein @tornaria\n\nCompletely rewritten and doctested Local densities routines according to a consistent interface (and algorithms) described in the attached PDF file.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6037\n\n",
+    "closed_at": "2009-05-19T00:38:04Z",
     "created_at": "2009-05-14T10:03:59Z",
     "labels": [
         "component: quadratic forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Major Upgrade to QuadraticForm Local Density Routines",
+    "title": "[with patch; positive review] Major Upgrade to QuadraticForm Local Density Routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6037",
     "user": "https://github.com/jonhanke"
@@ -21,7 +22,6 @@ CC:  mabshoff wstein @tornaria
 
 Completely rewritten and doctested Local densities routines according to a consistent interface (and algorithms) described in the attached PDF file.
 
-Patch to follow very shortly!
 
 Issue created by migration from https://trac.sagemath.org/ticket/6037
 

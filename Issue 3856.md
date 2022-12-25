@@ -4,6 +4,7 @@ archive/issues_003856.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nsage: 1/4*GF(7)['t'](1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/gfurnish/coercion-test/sage-3.1.alpha2-sage.math-only-x86_64-Linux/<ipython console> in <module>()\n\n/home/gfurnish/coercion-test/sage-3.1.alpha2-sage.math-only-x86_64-Linux/element.pyx in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:9190)()\n\n/home/gfurnish/coercion-test/sage-3.1.alpha2-sage.math-only-x86_64-Linux/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6288)()\n\nTypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Univariate Polynomial Ring in t over Finite Field of size 7'\n```\nThis is implied to work by the following doctest in coercion_maps.pyx\n\n```\n            sage: mor = NamedConvertMap(SR, GF(7)[['t']], '_polynomial_')\n            sage: mor(x^2/4+1)\n            1 + 2*t^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3856\n\n",
+    "closed_at": "2008-08-26T09:58:32Z",
     "created_at": "2008-08-14T20:53:11Z",
     "labels": [
         "component: coercion",

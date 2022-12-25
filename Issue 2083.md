@@ -1,16 +1,17 @@
-# Issue 2083: [with patch, needs review] Make number_field .galois_closure require a name and .galois_conjugates take an explicit field.
+# Issue 2083: [with patch, positive review] Make number_field .galois_closure require a name and .galois_conjugates take an explicit field.
 
 archive/issues_002083.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: number field galois closure names\n\n`.galois_closure` used to guess a variable name, which is not very Sage-like.  This and a related issue with `.galois_conjugates` are fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2083\n\n",
+    "closed_at": "2008-02-07T10:33:27Z",
     "created_at": "2008-02-07T08:57:01Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] Make number_field .galois_closure require a name and .galois_conjugates take an explicit field.",
+    "title": "[with patch, positive review] Make number_field .galois_closure require a name and .galois_conjugates take an explicit field.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2083",
     "user": "https://github.com/ncalexan"

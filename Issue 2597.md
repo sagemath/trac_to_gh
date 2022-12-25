@@ -1,16 +1,17 @@
-# Issue 2597: [with patch, needs review] Add reduced adjacency matrix and alist file format support to BipartiteGraph
+# Issue 2597: [with patch, positive review] Add reduced adjacency matrix and alist file format support to BipartiteGraph
 
 archive/issues_002597.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch allows a BipartiteGraph to be created from a reduced adjacency matrix and return the same.  Multi-edge or weighted constructions are supported.  Also, it adds support for creation, loading, and saving bipartite graphs in alist format.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2597\n\n",
+    "closed_at": "2008-03-29T01:32:50Z",
     "created_at": "2008-03-19T15:26:24Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] Add reduced adjacency matrix and alist file format support to BipartiteGraph",
+    "title": "[with patch, positive review] Add reduced adjacency matrix and alist file format support to BipartiteGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2597",
     "user": "https://github.com/rhinton"

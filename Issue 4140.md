@@ -1,9 +1,10 @@
-# Issue 4140: "Naughty" libraries that get called in by sage
+# Issue 4140: OSX: clisp fails to build with Fink libpng.dylib
 
 archive/issues_004140.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: naughty libraries\n\nWhen fink is in the path, sage-check-libraries.py reveals that the following libraries get called in to vanilla sage:\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nAlso, clisp didn't biuld, with \n\n```\ndyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /sw/lib/libJPEG.dylib\n```\n\nand if it had built, maybe more bad linkages would have shown up.  \n\nAt the moment, this ticket is quite open ended, and probably needs to be split into little specific tickets.  Would appreciate any vision on exactly what would go in those tickets.\n\nIf have attached the whitelist built on my system.  (I edited it to remove libraries in /sw.)  It is likely to be incomplete because sage didn't finish building.  It is also likely to have some improper files (/usr/local stuff) that got installed e.g. by GIMP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4140\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: naughty libraries\n\nWhen fink is in the path Clisp didn't build, with \n\n```\ndyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /sw/lib/libJPEG.dylib\n```\n\nand if it had built, maybe more bad linkages would have shown up.  \n\nIf have attached the whitelist built on my system.  (I edited it to remove libraries in /sw.)  It is likely to be incomplete because sage didn't finish building.  It is also likely to have some improper files (/usr/local stuff) that got installed e.g. by GIMP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4140\n\n",
+    "closed_at": "2009-02-16T04:31:23Z",
     "created_at": "2008-09-17T23:13:47Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_004140.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "\"Naughty\" libraries that get called in by sage",
+    "title": "OSX: clisp fails to build with Fink libpng.dylib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4140",
     "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
@@ -21,15 +22,7 @@ Assignee: mabshoff
 
 Keywords: naughty libraries
 
-When fink is in the path, sage-check-libraries.py reveals that the following libraries get called in to vanilla sage:
-
-```
-sage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib
-sage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib
-sage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib
-```
-
-Also, clisp didn't biuld, with 
+When fink is in the path Clisp didn't build, with 
 
 ```
 dyld: Symbol not found: __cg_jpeg_resync_to_restart
@@ -38,8 +31,6 @@ dyld: Symbol not found: __cg_jpeg_resync_to_restart
 ```
 
 and if it had built, maybe more bad linkages would have shown up.  
-
-At the moment, this ticket is quite open ended, and probably needs to be split into little specific tickets.  Would appreciate any vision on exactly what would go in those tickets.
 
 If have attached the whitelist built on my system.  (I edited it to remove libraries in /sw.)  It is likely to be incomplete because sage didn't finish building.  It is also likely to have some improper files (/usr/local stuff) that got installed e.g. by GIMP.
 

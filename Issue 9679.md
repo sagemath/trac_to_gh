@@ -3,10 +3,11 @@
 archive/issues_009679.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @mkoeppe @slel\n\nKeywords: vmware readme\n\nThis readme file has not kept up with the times.  Only a few changes are needed: the hard drive requirements are closer to 4.5GB than 2.5GB, and the Sage notebook can now be started by clicking an icon.  Also, we should change SAGE to Sage throughout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9679\n\n",
+    "body": "Assignee: mvngu, schilly\n\nCC:  @mkoeppe @slel\n\nKeywords: vmware readme\n\nThis readme file has not kept up with the times.  Only a few changes are needed: the hard drive requirements are closer to 4.5GB than 2.5GB, and the Sage notebook can now be started by clicking an icon.  Also, we should change SAGE to Sage throughout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9679\n\n",
+    "closed_at": "2021-09-03T09:10:36Z",
     "created_at": "2010-08-03T22:19:14Z",
     "labels": [
-        "component: documentation",
+        "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_009679.json:
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: mvngu
+Assignee: mvngu, schilly
 
 CC:  @mkoeppe @slel
 

@@ -1,16 +1,17 @@
-# Issue 2295: [with patch, needs review] build cache check fails on paths containing symlinks
+# Issue 2295: [with patch, positive review] build cache check fails on paths containing symlinks
 
 archive/issues_002295.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nMy SAGE_ROOT contains a symlinked component, upgrading from 2.10.2.alpha0 to 2.10.2 failed with the error message in this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d8ee3de015fbf7be\n\nOnly the filename listed was different.\n\nThis is caused by the module_path function in setup.py, assuming os.path.abspath starts with SAGE_ROOT, which is not the case when path contains a symlink. Attached patch fixes this issue.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2295\n\n",
+    "closed_at": "2008-02-24T20:45:35Z",
     "created_at": "2008-02-24T20:00:54Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] build cache check fails on paths containing symlinks",
+    "title": "[with patch, positive review] build cache check fails on paths containing symlinks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2295",
     "user": "https://github.com/burcin"

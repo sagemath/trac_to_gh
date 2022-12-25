@@ -1,16 +1,17 @@
-# Issue 2818: notebook -- document most functions in js.py
+# Issue 2818: [with patch, positive review] notebook -- document most functions in js.py
 
 archive/issues_002818.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis depends on #2813.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2818\n\n",
+    "closed_at": "2008-04-06T06:56:59Z",
     "created_at": "2008-04-06T02:50:17Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- document most functions in js.py",
+    "title": "[with patch, positive review] notebook -- document most functions in js.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2818",
     "user": "https://github.com/williamstein"

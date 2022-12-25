@@ -1,16 +1,17 @@
-# Issue 2322: [with patch] dsage patch for 2.10.3
+# Issue 2322: [with patch, positive review] dsage patch for 2.10.3
 
 archive/issues_002322.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2322\n\n",
+    "body": "Assignee: @williamstein\n\nThis is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2322\n\n",
+    "closed_at": "2008-03-14T17:47:59Z",
     "created_at": "2008-02-26T18:06:30Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch] dsage patch for 2.10.3",
+    "title": "[with patch, positive review] dsage patch for 2.10.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2322",
     "user": "https://github.com/yqiang"
@@ -18,7 +19,7 @@ archive/issues_002322.json:
 ```
 Assignee: @williamstein
 
-This is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2.
+This is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2322
 

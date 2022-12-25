@@ -1,22 +1,23 @@
-# Issue 1901: mistake in the documentation for gens for Finite field pari
+# Issue 1901: [with patches, with positive review] mistake in the documentation for gens for Finite field pari
 
 archive/issues_001901.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: sage.rings.finite_field_ext_pari.FiniteField_ext_pari.gen?\n[...]\nDocstring:\n\n           Return chosen generator of the finite field.  This generator\n           is a root of the defining polynomial of the finite field, and\n           is guaranteed to be a generator for the multiplicative group.\n\n(This is wrong because in this case the generator is not guaranteed to\nbe a generator for the multiplicative group.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1901\n\n",
+    "body": "Assignee: @JohnCremona\n\n```\nsage: sage.rings.finite_field_ext_pari.FiniteField_ext_pari.gen?\n[...]\nDocstring:\n\n           Return chosen generator of the finite field.  This generator\n           is a root of the defining polynomial of the finite field, and\n           is guaranteed to be a generator for the multiplicative group.\n\n(This is wrong because in this case the generator is not guaranteed to\nbe a generator for the multiplicative group.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1901\n\n",
+    "closed_at": "2008-03-12T22:04:12Z",
     "created_at": "2008-01-24T00:36:11Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "mistake in the documentation for gens for Finite field pari",
+    "title": "[with patches, with positive review] mistake in the documentation for gens for Finite field pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1901",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @JohnCremona
 
 ```
 sage: sage.rings.finite_field_ext_pari.FiniteField_ext_pari.gen?

@@ -1,16 +1,17 @@
-# Issue 4410: [with patch, needs review] Map.__pow__ should return identity for power 0
+# Issue 4410: [with patch, positive review] Map.__pow__ should return identity for power 0
 
 archive/issues_004410.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robertwb\n\n`sage.categories.map.Map.__pow__` calls `generic_power`, which messes up power 0. There is this todo note there:\n\n```\n        # todo -- what about the case n=0 -- need to specify the identity map somehow.\n```\n\nAttached patch returns the identity map for power 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4410\n\n",
+    "closed_at": "2008-10-31T15:36:46Z",
     "created_at": "2008-10-31T09:05:10Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] Map.__pow__ should return identity for power 0",
+    "title": "[with patch, positive review] Map.__pow__ should return identity for power 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4410",
     "user": "https://github.com/burcin"

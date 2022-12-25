@@ -1,50 +1,34 @@
-# Issue 8169: include TOPCOM
+# Issue 8169: include TOPCOM as optional spkg
 
 archive/issues_008169.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  mhampton @novoselt\n\nTOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a \"point configuration\", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.\n\nOne problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I suggest the following:\n\n- dynamically link TOPCOM via libtools to reduce size\n- Write a sage<->TOPCOM interface at sage.geometry.triangulation.py\n\nAs an initial submission, my libtoolized TOPCOM spkg is here:\n\nhttp://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg\n\nand a first draft of triangulation.py is attached. The basic usage is\n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\nA triangulation in QQ^2 consisting of 4 simplices.\nsage: triang.plot(axes=False)                                        \n```\n\nAfter we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.\n\nNote: see #8115 for a modified cddlib (required by TOPCOM) that provides a non-static cddlib library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8169\n\n",
+    "body": "Assignee: @vbraun\n\nCC:  mhampton @novoselt\n\nTOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a \"point configuration\", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.\n\nOne problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I changed the TOPCOM build system to dynamically link TOPCOM via libtools to reduce size\n\nMy libtoolized TOPCOM spkg is here:\n\nhttp://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p2.spkg\n\nNone of the patches in this ticket should be applied to the Sage library! The TOPCOM binaries are (optionally) used by the patches in #9918: triangulate point configurations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8169\n\n",
+    "closed_at": "2011-02-06T09:58:18Z",
     "created_at": "2010-02-03T12:11:31Z",
     "labels": [
-        "component: algebra"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "include TOPCOM",
+    "title": "include TOPCOM as optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8169",
     "user": "https://github.com/vbraun"
 }
 ```
-Assignee: @aghitza
+Assignee: @vbraun
 
 CC:  mhampton @novoselt
 
 TOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a "point configuration", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.
 
-One problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I suggest the following:
+One problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I changed the TOPCOM build system to dynamically link TOPCOM via libtools to reduce size
 
-- dynamically link TOPCOM via libtools to reduce size
-- Write a sage<->TOPCOM interface at sage.geometry.triangulation.py
+My libtoolized TOPCOM spkg is here:
 
-As an initial submission, my libtoolized TOPCOM spkg is here:
+http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p2.spkg
 
-http://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg
-
-and a first draft of triangulation.py is attached. The basic usage is
-
-```
-sage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);
-sage: points
-A point configuration in QQ^2 consisting of 5 points.
-sage: triang = points.triangulate()   # find one triangulation       
-sage: triang
-A triangulation in QQ^2 consisting of 4 simplices.
-sage: triang.plot(axes=False)                                        
-```
-
-After we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.
-
-Note: see #8115 for a modified cddlib (required by TOPCOM) that provides a non-static cddlib library.
+None of the patches in this ticket should be applied to the Sage library! The TOPCOM binaries are (optionally) used by the patches in #9918: triangulate point configurations.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8169
 

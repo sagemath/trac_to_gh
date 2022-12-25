@@ -1,16 +1,17 @@
-# Issue 6634: biopython 1.49b broken with python-2.6
+# Issue 6634: [with spkg, positive review] biopython 1.49b broken with python-2.6; biopython upgrade
 
 archive/issues_006634.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: biopython, bioinformatics\n\nBiopython 1.49b doesn't install with python-2.6, so we should update the package.  Currently biopython is at 1.51-beta, for which a spkg is provided, but we should switch to 1.51 as soon as it comes out since it will have significant improvements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6634\n\n",
+    "closed_at": "2009-09-11T18:13:29Z",
     "created_at": "2009-07-27T02:44:06Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "biopython 1.49b broken with python-2.6",
+    "title": "[with spkg, positive review] biopython 1.49b broken with python-2.6; biopython upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6634",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

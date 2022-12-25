@@ -4,6 +4,7 @@ archive/issues_007399.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThis improves the quality of all tachyon plots. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7399\n\n",
+    "closed_at": "2009-11-06T06:13:08Z",
     "created_at": "2009-11-06T03:13:17Z",
     "labels": [
         "component: graphics",

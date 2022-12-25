@@ -4,6 +4,7 @@ archive/issues_007321.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThe solution is to add 'sage_fortran' to the beginning of the list of fortran compilers on the cygwin line in src/numpy/distutils/fcompiler/__init__.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/7321\n\n",
+    "closed_at": "2010-04-29T05:05:53Z",
     "created_at": "2009-10-27T05:17:15Z",
     "labels": [
         "component: porting: cygwin",

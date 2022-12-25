@@ -1,16 +1,17 @@
-# Issue 9061: Fix broken inequalities in add_constraint method
+# Issue 9061: Create an efficient SUM command
 
 archive/issues_009061.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  mvngu abmasse\n\nInequalities using <= and >= still do not work properly... :-/\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9061\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  mvngu abmasse\n\nThis *HAS* to be changed :\n\n```\np = MixedIntegerLinearProgram()\nv = p.new_variable()\nsage: %timeit sum([v[i] for i in xrange(900)])\n5 loops, best of 3: 1.14 s per loop\n```\n\nWith this new function :\n\n```\ndef mipvariables_sum(L):\n    d = {}\n    for v in L:\n        for (id,coeff) in v._f.iteritems():\n            d[id] = coeff + d.get(id,0)\n    return LinearFunction(d)\n```\n\nIt gives :\n\n```\nsage: from sage.numerical.mip import mipvariables_sum\nsage: %timeit mipvariables_sum([v[i] for i in xrange(900)])\n625 loops, best of 3: 1.5 ms per loop\n```\n\nEven though it requires a new function to add MIPVariables, it is still better than nothing for the moment.\n\nThis patch will define the function given, and replace all the occurences of \"sum\" in the graph files to have them use this optimization.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9061\n\n",
+    "closed_at": "2010-07-06T08:20:52Z",
     "created_at": "2010-05-26T22:38:38Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
-    "title": "Fix broken inequalities in add_constraint method",
+    "title": "Create an efficient SUM command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9061",
     "user": "https://github.com/nathanncohen"
@@ -20,7 +21,37 @@ Assignee: jason, jkantor
 
 CC:  mvngu abmasse
 
-Inequalities using <= and >= still do not work properly... :-/
+This *HAS* to be changed :
+
+```
+p = MixedIntegerLinearProgram()
+v = p.new_variable()
+sage: %timeit sum([v[i] for i in xrange(900)])
+5 loops, best of 3: 1.14 s per loop
+```
+
+With this new function :
+
+```
+def mipvariables_sum(L):
+    d = {}
+    for v in L:
+        for (id,coeff) in v._f.iteritems():
+            d[id] = coeff + d.get(id,0)
+    return LinearFunction(d)
+```
+
+It gives :
+
+```
+sage: from sage.numerical.mip import mipvariables_sum
+sage: %timeit mipvariables_sum([v[i] for i in xrange(900)])
+625 loops, best of 3: 1.5 ms per loop
+```
+
+Even though it requires a new function to add MIPVariables, it is still better than nothing for the moment.
+
+This patch will define the function given, and replace all the occurences of "sum" in the graph files to have them use this optimization.
 
 Nathann
 

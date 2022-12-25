@@ -1,9 +1,10 @@
-# Issue 3344: small changes to documentation for erf, n
+# Issue 3344: [with patch, positive review] small changes to documentation for erf, n
 
 archive/issues_003344.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: erf, n, documentation\n\nThe attached patch should be pretty self-explanatory.  When I view the documention for erf, I see 'strong{only}' instead of the intended 'only'.  I also added a space to the math expression, to try to make it more readable.  Finally, in the documentation for n(-), I've emphasized that various of the arguments are optional.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3344\n\n",
+    "closed_at": "2008-06-04T21:15:48Z",
     "created_at": "2008-05-31T21:52:40Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_003344.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "small changes to documentation for erf, n",
+    "title": "[with patch, positive review] small changes to documentation for erf, n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3344",
     "user": "https://github.com/jhpalmieri"

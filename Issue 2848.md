@@ -1,9 +1,10 @@
-# Issue 2848: numerical noise in sage/misc/prandom.py on MacIntel OSX 10.5/
+# Issue 2848: [with patch, positive review] numerical noise in sage/misc/prandom.py on MacIntel OSX 10.5
 
 archive/issues_002848.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  justin\n\nJustin Walker reported:\n\n```\n     sage -t  devel/sage/sage/misc/prandom.py\n     File \"/Users/tmp/sage-3.0.alpha2/tmp/prandom.py\", line 241:\n         sage: [gauss(0, 100) for i in range(3)]\n     Expected:\n         [24.916051749154448, -62.992720615792727, -8.1993122536718097]\n     Got:\n         [24.916051749154448, -62.992720615792727, -8.1993122536718115] \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2848\n\n",
+    "closed_at": "2008-04-07T22:25:37Z",
     "created_at": "2008-04-07T19:49:36Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002848.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "numerical noise in sage/misc/prandom.py on MacIntel OSX 10.5/",
+    "title": "[with patch, positive review] numerical noise in sage/misc/prandom.py on MacIntel OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2848",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

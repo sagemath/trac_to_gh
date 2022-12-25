@@ -4,6 +4,7 @@ archive/issues_008132.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe documentation to ODE solvers is not written in harmony with Sage developers guide and the Sage Constructions are outdated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8132\n\n",
+    "closed_at": "2010-02-02T02:21:30Z",
     "created_at": "2010-01-31T00:32:02Z",
     "labels": [
         "component: documentation",

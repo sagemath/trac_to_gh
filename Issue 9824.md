@@ -1,16 +1,17 @@
-# Issue 9824: desolve_system unable to interpret Maxima's temporary variables
+# Issue 9824: desolve_system unable to interpret ilt and Maxima's temporary variables
 
 archive/issues_009824.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system sometimes generates a Maxima result that includes temporary variables that Sage does not parse correctly.\n\n```\nsage: t = var('t')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = (diff(x1,t) == -3*(x2^2-1))\nsage: de2 = (diff(x2,t) == 1)\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n...\nTypeError: unable to make sense of Maxima expression 'x1(t)=ilt(-((3*laplace(x2(t)^2,t,?g1543)-x1(0))*?g1543-3)/?g1543^2,?g1543,t)' in Sage \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9825\n\n",
+    "closed_at": "2021-03-20T15:27:45Z",
     "created_at": "2010-08-27T16:44:47Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
-    "title": "desolve_system unable to interpret Maxima's temporary variables",
+    "title": "desolve_system unable to interpret ilt and Maxima's temporary variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9824",
     "user": "https://github.com/rhinton"

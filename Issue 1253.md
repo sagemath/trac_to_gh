@@ -3,7 +3,8 @@
 archive/issues_001253.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe checks for workarounds we implemented for 10.5 fail on 10.5.1 because we usually check for \n\n```\nDarwin-9.0.0\n```\nBut 10.5.1 is\n\n```\nDarwin-9.1.0\n```\nSo far we need fixes for\n* gmp\n* python\nBut probably some more down the road. I am taking care of those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1253\n\n",
+    "body": "Assignee: mabshoff\n\nThe checks for workarounds we implemented for 10.5 fail on 10.5.1 because we usually check for \n\n```\nDarwin-9.0.0\n```\nBut 10.5.1 is\n\n```\nDarwin-9.1.0\n```\nwe need the same fix for\n* gmp\n* python\n* clisp\nI am taking care of those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1253\n\n",
+    "closed_at": "2007-11-24T15:47:07Z",
     "created_at": "2007-11-24T12:51:24Z",
     "labels": [
         "component: packages: standard",
@@ -29,10 +30,11 @@ But 10.5.1 is
 ```
 Darwin-9.1.0
 ```
-So far we need fixes for
+we need the same fix for
 * gmp
 * python
-But probably some more down the road. I am taking care of those.
+* clisp
+I am taking care of those.
 
 Cheers,
 

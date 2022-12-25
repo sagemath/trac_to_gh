@@ -1,16 +1,17 @@
-# Issue 3601: Reimplementation of tensor products
+# Issue 3601: [with patch, positive review] Reimplementation of tensor products
 
 archive/issues_003601.json:
 ```json
 {
     "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat-commits@googlegroups.com\n\nKeywords: tensor products of crystals\n\nI split TensorProductOfCrystals into TensorProductOfCrystalsWithGenerators and\nFullTensorProductOfCrystals (with or without the option of being a classical crystal).\nThis makes it possible to have a more efficient way to access list, count, etc for \ntensor products that do not have module generators.\n\nAlso, the distinction between the specifications of module_generators and \nhighest_weight_vectors is made more precise (which made it necessary to slightly \nchange the implementation of Daniel Bump on characters).\n\nThis change is necessary for the upcoming implementation of affine crystals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3601\n\n",
+    "closed_at": "2008-07-16T03:51:27Z",
     "created_at": "2008-07-08T03:30:36Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "Reimplementation of tensor products",
+    "title": "[with patch, positive review] Reimplementation of tensor products",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3601",
     "user": "https://github.com/anneschilling"

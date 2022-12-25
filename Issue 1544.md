@@ -1,16 +1,17 @@
-# Issue 1544: Rich Morin's SAGE Tutorial nits #2
+# Issue 1544: [with patch] Rich Morin's SAGE Tutorial nits #2
 
 archive/issues_001544.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\n\nhttp://sagemath.org/doc/html/tut/node9.html\n\n  SAGE uses = for assignment and ==,<=,>=,<,> for comparison:\n  ---\n  SAGE uses = for assignment.  It uses ==, <=, >=, <, and >\n  for comparison:\n\n\n  ... after the list of variables names.\n                        variable\n\n\n  You can specify multiple inputs,\n  and optional defaults for the inputs.\n  ---\n  You can specify multiple inputs,\n  each of which may have a default value.\n\n\n  In Python  blocks of code are ...\n     Python,\n\n\n  ... because the return          statement is not ...\n                  <tt>return</tt>\n\n\n  If you fix the indentation, then the function works:\n  ---\n  If you fix the indentation, the function works:\n\n\n  ... on one line separate   by semicolons:\n             line, separated\n\n\n  ... multiple lines, use               backslash:\n                          a terminating\n\n\n  In SAGE  you count ...\n     SAGE,\n\n\n  ... is like (for(i=1;i<6;i+=2).\n               for(i=1;i<6;i+=2).\n\n\n  ... is to use string formating.\n                       formatting.\n\n\n  Below  we create three columns ...\n  Below,\n\n\n  ... except      it can be ...\n             that\n\n\n  ... is a powerful techniques that can ...\n                    technique\n\n\n  Below  we define a class ...\n  Below,\n\n\n  ... when it is created, and the ...\n  ---\n  ... when it is created; the ...\n\n\n  ... of numbers  use the list function:\n         numbers,\n\n\n  ... is considered       in ...\n                    to be\n\n  ... the following doesn't, since ...\n  ---\n  ... the following doesn't work, since ...\n\n\n  ... on the mailing      for further details.\n                     list\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1544\n\n",
+    "closed_at": "2008-01-07T17:16:51Z",
     "created_at": "2007-12-17T03:22:35Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "Rich Morin's SAGE Tutorial nits #2",
+    "title": "[with patch] Rich Morin's SAGE Tutorial nits #2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1544",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

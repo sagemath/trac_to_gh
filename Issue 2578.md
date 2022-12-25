@@ -1,22 +1,23 @@
-# Issue 2578: bug in bernoulli_polynomial
+# Issue 2578: [with patch, positive review] make bernoulli_polynomial independent of maxima
 
 archive/issues_002578.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @mwhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
+    "closed_at": "2009-01-23T10:46:32Z",
     "created_at": "2008-03-17T23:29:04Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bug in bernoulli_polynomial",
+    "title": "[with patch, positive review] make bernoulli_polynomial independent of maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2578",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 CC:  @mwhansen
 

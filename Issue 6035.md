@@ -1,15 +1,16 @@
-# Issue 6035: [with patch, needs review] Don't draw vertical asympotes
+# Issue 6035: [with patch, positive review] Don't draw vertical asympotes
 
 archive/issues_006035.json:
 ```json
 {
     "body": "Assignee: whuss\n\nThe attached patch adds an option \"detect_poles\" to the plot command,\nwhich if True detects vertical asymptotes of the plotted function.\n\n```\nsage: plot(gamma(x), (x, -3, 4), detect_poles = True).show(ymin = -5, ymax = 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6035\n\n",
+    "closed_at": "2009-05-21T02:07:47Z",
     "created_at": "2009-05-13T16:43:42Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] Don't draw vertical asympotes",
+    "title": "[with patch, positive review] Don't draw vertical asympotes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6035",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

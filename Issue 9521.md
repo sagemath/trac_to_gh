@@ -4,6 +4,7 @@ archive/issues_009521.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @nathanncohen @nexttime\n\nFrom Cliquer's `spkg-install`:\n\n```sh\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    echo \"Compiling and running the test cases of cliquer...\"\n\n    make testcases\n    if [ $? -ne 0 ]; then\n        echo \"Failed to compile test cases of cliquer... exiting\"\n        exit 1\n    fi\n\n    ./testcases\n    if [ $? -ne 0 ]; then\n        echo \"Failed to run test cases of cliquer... exiting\"\n        exit 1\n    fi\nfi\n```\nWe can move this code (or most of it) to a new `spkg-check`.\n\nSince `SAGE_LOCAL/bin/sage-spkg` contains\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\nwe don't need to check `SAGE_CHECK` in `spkg-install`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9521\n\n",
+    "closed_at": "2014-01-21T14:28:44Z",
     "created_at": "2010-07-17T01:00:09Z",
     "labels": [
         "component: packages: standard",

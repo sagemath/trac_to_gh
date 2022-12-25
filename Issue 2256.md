@@ -1,16 +1,17 @@
-# Issue 2256: matrix inverse over CC raises ZeroDivisionError
+# Issue 2256: [with patch, positive review] matrix inverse over CC raises ZeroDivisionError
 
 archive/issues_002256.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan @jasongrout cwitty @robertwb\n\nKeywords: matrix inverse CC complex\n\n```\nsage: M = matrix(CC, 2, 2, [(-1.00000000000000 - 2.00000000000000*I, 5.00000000000000 - 6.00000000000000*I), (-2.00000000000000 - 2.00000000000000*I, 7.00000000000000 - 8.00000000000000*I)])\nsage: M\n\n[-1.00000000000000 - 2.00000000000000*I  5.00000000000000 - 6.00000000000000*I]\n[-2.00000000000000 - 2.00000000000000*I  7.00000000000000 - 8.00000000000000*I]\nsage: M.determinant()\n-1.00000000000000 - 8.00000000000000*I\nsage: M.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\nsage: M.parent().change_ring(CDF)(M).inverse()\n\n[ 0.876923076923 + 0.984615384615*I -0.661538461538 - 0.707692307692*I]\n[-0.276923076923 + 0.215384615385*I 0.261538461538 - 0.0923076923077*I]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2256\n\n",
+    "closed_at": "2009-06-14T22:49:07Z",
     "created_at": "2008-02-22T08:00:07Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "matrix inverse over CC raises ZeroDivisionError",
+    "title": "[with patch, positive review] matrix inverse over CC raises ZeroDivisionError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2256",
     "user": "https://github.com/ncalexan"

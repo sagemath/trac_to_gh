@@ -4,10 +4,11 @@ archive/issues_008700.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls\nlibpng-1.2.35  spkg-install  SPKG.txt  src\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls libpng-1.2.35/\nspkg-install  SPKG.txt  src\n```\n\nBasically there is an accidental complete copy of the extracted spkg in the spkg!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8700\n\n",
+    "closed_at": "2010-06-16T01:59:49Z",
     "created_at": "2010-04-17T06:35:02Z",
     "labels": [
         "component: packages: standard",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",

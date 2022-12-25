@@ -1,16 +1,17 @@
-# Issue 5485: issue with dimension of ideals in polynomial rings
+# Issue 5485: [with patch, positive review] issue with dimension of ideals in polynomial rings
 
 archive/issues_005485.json:
 ```json
 {
     "body": "Assignee: @malb\n\nConsider this:\n\n```\nsage: R.<x, y> = ZZ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (794: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\nBut judging from the docstring of I.dimension(),this should be the Krull dimension of R/I, which is 3 since R/I is (canonically isomorphic to) R:\n\n```\nsage: R.krull_dimension()\n3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5485\n\n",
+    "closed_at": "2009-04-03T23:29:31Z",
     "created_at": "2009-03-11T08:25:23Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "issue with dimension of ideals in polynomial rings",
+    "title": "[with patch, positive review] issue with dimension of ideals in polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5485",
     "user": "https://github.com/aghitza"

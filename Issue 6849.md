@@ -1,16 +1,18 @@
-# Issue 6849: port Sage to OS X 10.6
+# Issue 6849: [with spkg's] port Sage to OS X 10.6
 
 archive/issues_006849.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @craigcitro drkirkby\n\nAttach to this ticket some of the fixes for getting Sage to build on OS X 10.6 (the new release of OS X).\n\nNote that a Sage build on OS X 10.5 does seem to work fine on 10.6, but Sage does not \"just build\" on 10.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/6849\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro drkirkby\n\nAttach to this ticket some of the fixes for getting Sage to build on OS X 10.6 (the new release of OS X).\n\nNote that a Sage build on OS X 10.5 does seem to work fine on 10.6, but Sage does not \"just build\" on 10.6.\n\n1. We upgrade readline to 6.0, since 5.2 doesn't build on OS X 10.6:\n\n   http://sage.math.washington.edu/home/wstein/tmp/readline-6.0.spkg\n\nor\n\n  http://sage.math.washington.edu/home/kirkby/Solaris-fixes/readline-6.0/readline-6.0.spkg\n\n\nThis new spkg needs to be reviewed and build tested on Linux and OS X 10.4. (I tested it on 10.5.)\n\n\n* Boehm GC -- fixed at trac #6969\n\n* ECL fails to build (for same reasons to Boehm GC) -- fixed at trac #6971\n\n* R  -- see trac #6972\n\n* MPIR -- see trac #7006 -- this is needed if one tries to build without specifying 64-bit explicitly on a 64-bit platform.\n\n* Fortran -- see trac #6981, in particular .p8, which is critically needed to build if one does not specify SAGE64=\"yes\".\n\n* Matplotlib font cache issue -- see trac #7022 \n\nIssue created by migration from https://trac.sagemath.org/ticket/6849\n\n",
+    "closed_at": "2009-10-14T16:10:33Z",
     "created_at": "2009-08-31T01:29:56Z",
     "labels": [
         "component: porting",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "port Sage to OS X 10.6",
+    "title": "[with spkg's] port Sage to OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6849",
     "user": "https://github.com/williamstein"
@@ -22,7 +24,31 @@ CC:  @craigcitro drkirkby
 
 Attach to this ticket some of the fixes for getting Sage to build on OS X 10.6 (the new release of OS X).
 
-Note that a Sage build on OS X 10.5 does seem to work fine on 10.6, but Sage does not "just build" on 10.6
+Note that a Sage build on OS X 10.5 does seem to work fine on 10.6, but Sage does not "just build" on 10.6.
+
+1. We upgrade readline to 6.0, since 5.2 doesn't build on OS X 10.6:
+
+   http://sage.math.washington.edu/home/wstein/tmp/readline-6.0.spkg
+
+or
+
+  http://sage.math.washington.edu/home/kirkby/Solaris-fixes/readline-6.0/readline-6.0.spkg
+
+
+This new spkg needs to be reviewed and build tested on Linux and OS X 10.4. (I tested it on 10.5.)
+
+
+* Boehm GC -- fixed at trac #6969
+
+* ECL fails to build (for same reasons to Boehm GC) -- fixed at trac #6971
+
+* R  -- see trac #6972
+
+* MPIR -- see trac #7006 -- this is needed if one tries to build without specifying 64-bit explicitly on a 64-bit platform.
+
+* Fortran -- see trac #6981, in particular .p8, which is critically needed to build if one does not specify SAGE64="yes".
+
+* Matplotlib font cache issue -- see trac #7022 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6849
 

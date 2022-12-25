@@ -1,25 +1,25 @@
-# Issue 1307: [graphs] Strongly regular graph database
+# Issue 1307: graphs: Strongly regular graph database
 
 archive/issues_001307.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  mvngu @dimpase\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist:\n\n```\n> \n>>> A database of small graphs. Put Ted Spence's strongly regular graphs\n>>> into a\n>>> database. (In this case the important thing is to have the graphs\n>>> themselves,\n>>> we would not necessarily need much data.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1307\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  mvngu @dimpase\n\nKeywords: database\n\nFrom Chris Godsil's wishlist:\n\n```\n> \n>>> A database of small graphs. Put Ted Spence's strongly regular graphs\n>>> into a\n>>> database. (In this case the important thing is to have the graphs\n>>> themselves,\n>>> we would not necessarily need much data.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1307\n\n",
     "created_at": "2007-11-28T19:54:36Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "[graphs] Strongly regular graph database",
+    "title": "graphs: Strongly regular graph database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1307",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
+Assignee: @rlmill
 
 CC:  mvngu @dimpase
 
-Keywords: graphs
+Keywords: database
 
 From Chris Godsil's wishlist:
 

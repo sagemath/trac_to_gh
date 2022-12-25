@@ -1,16 +1,17 @@
-# Issue 4813: [with patch, needs review] contribution to the tests/ directory
+# Issue 4813: [with patch, positive review] add code from arxiv_0812_2725 to the tests/ directory
 
 archive/issues_004813.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-support/msg/3ea7ed2eeab0824a :\n\n> Note that you could also submit a patch to Sage with the code you're doctesting.\n> I did that with all the tests from both of the books I published, and\n> I encourage you and many others to do the same with the code from your\n> article.  The code would go in a file\n  \n>\n>    devel/sage/sage/tests/\n\n>\n> like the file devel/sage/sage/tests/book_stein_modform.py\n\n>\n> In fact, I could imagine having dozens of files in that directory, and\n> when doctests break there, we could notify the authors before\n> releasing the version of Sage that breaks their doctests for feedback\n> -- then they could update their papers or Sage.\n\n\nHere's the code from a preprint I just posted. I tried to follow \"official\" style in writing the code -- comments about the style and so on are welcome.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4813\n\n",
+    "closed_at": "2009-01-28T16:14:54Z",
     "created_at": "2008-12-16T13:48:57Z",
     "labels": [
         "component: doctest coverage",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] contribution to the tests/ directory",
+    "title": "[with patch, positive review] add code from arxiv_0812_2725 to the tests/ directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4813",
     "user": "https://github.com/dandrake"

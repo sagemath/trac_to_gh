@@ -1,4 +1,4 @@
-# Issue 1281: update compilation failure message with uptodate instructions
+# Issue 1281: Build failure => check that latest Sage version is used
 
 archive/issues_001281.json:
 ```json
@@ -6,11 +6,11 @@ archive/issues_001281.json:
     "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\n```\n[10:24] <mabshoff> I think we should change the failure message if Sage fails to compile to first check \n[10:24] <mabshoff> if it is the latest version and try that before contacting the lists\n[10:25] <williamstein> sure.  make it so.\n[10:25] <mabshoff> It should also mention to gzip up the log somewhere and post a link instead of sending \n[10:25] <mabshoff> a couple MB to 230+ people.\n[10:25] <williamstein> agreed.\n[10:25] <mabshoff> Ok, will open tichet.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1281\n\n",
     "created_at": "2007-11-26T09:30:31Z",
     "labels": [
-        "component: packages: standard",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "update compilation failure message with uptodate instructions",
+    "title": "Build failure => check that latest Sage version is used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1281",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

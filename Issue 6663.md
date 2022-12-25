@@ -1,21 +1,22 @@
-# Issue 6663: add new 4ti2 and glpk experimental packages
+# Issue 6663: [with spkg, positive review] add new 4ti2 experimental package
 
 archive/issues_006663.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: 4ti2, glpk, sandpile\n\nThe 4ti2 and glpk packages in experimental are very out of date.  Since there seems to be some growing interest in having them available in sage they should be updated.  If they can be made to work on more platforms they should be moved to optional.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6663\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: 4ti2, glpk, sandpile\n\nThe 4ti2 and glpk packages in experimental are very out of date.  Since there seems to be some growing interest in having them available in sage they should be updated.  If they can be made to work on more platforms they should be moved to optional.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6663\n\n",
+    "closed_at": "2009-09-11T18:11:36Z",
     "created_at": "2009-07-31T20:14:51Z",
     "labels": [
-        "component: algebra"
+        "component: packages: experimental"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "add new 4ti2 and glpk experimental packages",
+    "title": "[with spkg, positive review] add new 4ti2 experimental package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6663",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 Keywords: 4ti2, glpk, sandpile
 

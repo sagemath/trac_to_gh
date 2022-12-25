@@ -1,16 +1,18 @@
-# Issue 9523: Arch linux build fails because our readline spkg is too old
+# Issue 9523: Upgrade the Readline spkg to 6.1
 
 archive/issues_009523.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nUnder Arch linux, Sage fails to build, giving this error message:\n\n```\nbash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook\n```\nin the middle of the sqlite build (the next package built after readline).\n\nThis is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.\n\nWe should upgrade our readline spkg to 6.1; I bet that would fix the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9523\n\n",
+    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nUnder Arch Linux, Sage fails to build, giving this error message:\n\n```\nbash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook\n```\nin the middle of the sqlite build (the next package built after readline).  This can also happen on openSUSE Linux.\n\nThis is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.\n\nWe should upgrade our readline spkg to 6.1; I bet that would fix the problem.\n\nThreads: [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/3f0f6d8c6ead4816/75bb442a9accc9ec?#75bb442a9accc9ec), [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197).\n\nRelated: #9530, #9987\n\nAn updated .spkg can be found at\nhttp://boxen.math.washington.edu/home/kirkby/readline-6.1.spkg \nwhich is based on readline-6.0.p4.spkg from #9530. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9523\n\n",
+    "closed_at": "2011-01-09T18:59:44Z",
     "created_at": "2010-07-17T04:43:30Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Arch linux build fails because our readline spkg is too old",
+    "title": "Upgrade the Readline spkg to 6.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9523",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -20,16 +22,24 @@ Assignee: tbd
 
 CC:  @TimDumol
 
-Under Arch linux, Sage fails to build, giving this error message:
+Under Arch Linux, Sage fails to build, giving this error message:
 
 ```
 bash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook
 ```
-in the middle of the sqlite build (the next package built after readline).
+in the middle of the sqlite build (the next package built after readline).  This can also happen on openSUSE Linux.
 
 This is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.
 
 We should upgrade our readline spkg to 6.1; I bet that would fix the problem.
+
+Threads: [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/3f0f6d8c6ead4816/75bb442a9accc9ec?#75bb442a9accc9ec), [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197).
+
+Related: #9530, #9987
+
+An updated .spkg can be found at
+http://boxen.math.washington.edu/home/kirkby/readline-6.1.spkg 
+which is based on readline-6.0.p4.spkg from #9530. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9523
 

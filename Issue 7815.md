@@ -4,6 +4,7 @@ archive/issues_007815.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  jst @rlmill\n\nThere are several problems in the Flint spkg-install and makefile which prevent it building 64-bit on any platform other than OS X. Apart from the usual changes of adding -m64 to CFLAGS, the makefile has previously been changed to make it work on OS X. However, it does not work on Open Solaris in 64-bit mode, as the -m64 flag is not being added where it should be. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7815\n\n",
+    "closed_at": "2010-01-14T08:12:48Z",
     "created_at": "2010-01-02T06:21:14Z",
     "labels": [
         "component: porting: solaris",

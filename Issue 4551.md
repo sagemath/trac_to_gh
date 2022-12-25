@@ -1,15 +1,16 @@
-# Issue 4551: notebook -- implement Notebook Settings page with email system on/off setting
+# Issue 4551: SageNB: Notebook Settings page
 
 archive/issues_004551.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @wjp @TimDumol @williamstein\n\nDepends on #4550\n\nIssue created by migration from https://trac.sagemath.org/ticket/4551\n\n",
+    "body": "Assignee: boothby\n\nCC:  @wjp @TimDumol @williamstein\n\nDepends on #4550\n\nPlease see the patch descriptions and the comments below for specific dependencies.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4551\n\n",
+    "closed_at": "2009-10-17T07:01:34Z",
     "created_at": "2008-11-19T17:35:01Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "notebook -- implement Notebook Settings page with email system on/off setting",
+    "title": "SageNB: Notebook Settings page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4551",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
@@ -20,6 +21,9 @@ Assignee: boothby
 CC:  @wjp @TimDumol @williamstein
 
 Depends on #4550
+
+Please see the patch descriptions and the comments below for specific dependencies.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4551
 

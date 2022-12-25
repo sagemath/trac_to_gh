@@ -1,16 +1,17 @@
-# Issue 4472: Sage 3.2.a3: more numerical noise in sage/calculus/wester.py
+# Issue 4472: [with patch; positive review] Sage 3.2.a3: more numerical noise in sage/calculus/wester.py
 
 archive/issues_004472.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/calculus/wester.py                   \n********************************************************************** \nFile \"/Users/tmp/sage-3.2.alpha3/tmp/wester.py\", line 261: \n     : [float(f(i/10)) for i in range(1,5)] \nExpected: \n     <BLANKLINE> \n     [-0.00033670040754082975, \n      -0.0027778004096620235, \n      -0.00989099409140..., \n      -0.025411145508414...] \nGot: \n     [-0.00033670040754081587, -0.0027778004096621622,   \n-0.0098909940914039818, -0.025411145508414779] \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4472\n\n",
+    "closed_at": "2008-11-18T18:14:44Z",
     "created_at": "2008-11-09T00:21:19Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.a3: more numerical noise in sage/calculus/wester.py",
+    "title": "[with patch; positive review] Sage 3.2.a3: more numerical noise in sage/calculus/wester.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4472",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,10 +3,11 @@
 archive/issues_005153.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe have\n\n```\nsage: E = EllipticCurve('65a1')\nsage: G = E.change_ring(QuadraticField(-56,'a'))\nsage: G.simon_two_descent()\n(3, 4, [(-9/4 : -3/8*a + 9/8 : 1), (-8/7 : -1/49*a + 4/7 : 1), (1 : 0 : 1), \n  (-6/25*a - 47/25 : 36/125*a - 368/125 : 1), (1/4 : 1/16*a - 1/8 : 1)])\n```\n\nThe documentation for simon_two_descent says that the output of Simon 2-descent is\n\n```\n        OUTPUT:\n            integer -- \"probably\" the rank of self\n            integer -- the 2-rank of the Selmer group\n            list    -- list of independent points on the curve.\n```\n\nOur curve does have rank 3, but the output list above contains *five* points, so they can't be independent!   \n\nOur curve has torsion of order 2, so E(K)/2 E(K) has rank four, so the 3 and four output by Simon descent are right.  The only problem is the list, which has too many points in it. \n\nMaybe this is simply a documentation issue, and the docs for simon_two_descent should be changed to say that list is a list of points that *generate* a subgroup of the MW group of rank r, where r is the first number output by simon_two_descent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5153\n\n",
+    "body": "Keywords: simon_two_descent\n\n[See #15608 for a list of open simon_two_descent tickets]\n\nWe have\n\n```\nsage: E = EllipticCurve('65a1')\nsage: G = E.change_ring(QuadraticField(-56,'a'))\nsage: G.simon_two_descent()\n(3, 4, [(-9/4 : -3/8*a + 9/8 : 1), (-8/7 : -1/49*a + 4/7 : 1), (1 : 0 : 1), \n  (-6/25*a - 47/25 : 36/125*a - 368/125 : 1), (1/4 : 1/16*a - 1/8 : 1)])\n```\n\nThe documentation for simon_two_descent says that the output of Simon 2-descent is\n\n```\n        OUTPUT:\n            integer -- \"probably\" the rank of self\n            integer -- the 2-rank of the Selmer group\n            list    -- list of independent points on the curve.\n```\n\nOur curve does have rank 3, but the output list above contains *five* points, so they can't be independent!   \n\nOur curve has torsion of order 2, so E(K)/2 E(K) has rank four, so the 3 and four output by Simon descent are right.  The only problem is the list, which has too many points in it. \n\nMaybe this is simply a documentation issue, and the docs for simon_two_descent should be changed to say that list is a list of points that *generate* a subgroup of the MW group of rank r, where r is the first number output by simon_two_descent. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5153\n\n",
+    "closed_at": "2014-01-05T02:56:51Z",
     "created_at": "2009-02-01T22:24:47Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
@@ -16,7 +17,9 @@ archive/issues_005153.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Keywords: simon_two_descent
+
+[See #15608 for a list of open simon_two_descent tickets]
 
 We have
 
@@ -41,7 +44,7 @@ Our curve does have rank 3, but the output list above contains *five* points, so
 
 Our curve has torsion of order 2, so E(K)/2 E(K) has rank four, so the 3 and four output by Simon descent are right.  The only problem is the list, which has too many points in it. 
 
-Maybe this is simply a documentation issue, and the docs for simon_two_descent should be changed to say that list is a list of points that *generate* a subgroup of the MW group of rank r, where r is the first number output by simon_two_descent.
+Maybe this is simply a documentation issue, and the docs for simon_two_descent should be changed to say that list is a list of points that *generate* a subgroup of the MW group of rank r, where r is the first number output by simon_two_descent. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5153
 

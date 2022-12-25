@@ -4,6 +4,7 @@ archive/issues_000067.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI'm writing axiom.py, so SAGE can talk with Axiom. \n\nIssue created by migration from https://trac.sagemath.org/ticket/67\n\n",
+    "closed_at": "2006-11-06T08:35:24Z",
     "created_at": "2006-09-17T21:49:05Z",
     "labels": [
         "component: basic arithmetic"

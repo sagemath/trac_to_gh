@@ -1,16 +1,17 @@
-# Issue 915: Make LinBox used PID_Integer instead of using old header as workaround
+# Issue 915: [include patches, with positive review] Make LinBox interface use PID_Integer instead of using old header as workaround
 
 archive/issues_000915.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: LinBox gmp\n\nTo quote William from linbox-use:\n\n```\nI would also like to know the answer to this.  In SAGE were currently do this\nconversion by not using PID_Integer, and instead using an old header file\nfrom an old version of Linbox that defined a GMP Integer wrapper type.\nFast conversion to/from mpz_t is critical for what we're doing.\n```\nDave Saunders came up with the following suggestion:\n\n```\nPID_integer ZZ;\nSparseMatrix<PID_integer> A (ZZ,m,m);  //defines empty sparse matrix\n\nmpz_t x;\nmpz_init_set_ui(x, 5);\n\n\n// Assign x into A, avoiding conversions and double copy.\nmpz_set ( SpyInteger::get_mpz(A.refEntry(1,2)), x);\n\nZZ.write(std::cout, A.getEntry(1,2)) << std::endl;\n\n-dave\n\nPS.  A more direct function could be desirable.\n```\nThis ticket is related to #824. For details see http://groups.google.com/group/linbox-use/t/7a687e8e5a5f4a81\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/915\n\n",
+    "closed_at": "2008-03-03T04:54:17Z",
     "created_at": "2007-10-18T03:04:35Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Make LinBox used PID_Integer instead of using old header as workaround",
+    "title": "[include patches, with positive review] Make LinBox interface use PID_Integer instead of using old header as workaround",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/915",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,21 +1,22 @@
-# Issue 3959: [with patch bundle] General group algebras class
+# Issue 3959: [with patch, positive review] General group algebras class
 
 archive/issues_003959.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI've attempted to write a generic class for group algebras R[G] where R is any commutative ring and G is any group; it derives from the existing Algebra class, and most of the work is done by the existing FormalSums class.\n\nIn the process I've uncovered a bizarre coercion wrinkle: if we try and make elements of R and elements of G coerce into R[G] automatically, it breaks, because (for example) 2 might coerce into G (e.g. if G = GL(n, ZZ)) and the compositions of the obvious maps ZZ -> G -> R[G] and ZZ -> R -> R[G] aren't the same! [*]\n\nI've got around this by not adding automatic coercion from G to R[G], but I'm not sure if this is the right thing. In fact I'd very much appreciate any input on whether or not I've understood Sage's coercion framework and other \"house rules\" generally, as this is my first attempt to contribute anything where that's relevant.\n\nNote: this is rather orthogonal to David Joyner's PermutationGroupRing class deriving from CombinatorialAlgebra -- what I'm trying to do is much more general but has almost no methods, and PermutationGroupRing might work well as a subclass of my general GroupAlgebra.\n\n([*] I seem to recall mentioning this as a theoretical example in a discussion at Sage Days 6, but I can't remember what came of it at the time.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3959\n\n",
+    "body": "Assignee: @loefflerd\n\nI've attempted to write a generic class for group algebras R[G] where R is any commutative ring and G is any group; it derives from the existing Algebra class, and most of the work is done by the existing FormalSums class.\n\nIn the process I've uncovered a bizarre coercion wrinkle: if we try and make elements of R and elements of G coerce into R[G] automatically, it breaks, because (for example) 2 might coerce into G (e.g. if G = GL(n, ZZ)) and the compositions of the obvious maps ZZ -> G -> R[G] and ZZ -> R -> R[G] aren't the same! [*]\n\nI've got around this by not adding automatic coercion from G to R[G], but I'm not sure if this is the right thing. In fact I'd very much appreciate any input on whether or not I've understood Sage's coercion framework and other \"house rules\" generally, as this is my first attempt to contribute anything where that's relevant.\n\nNote: this is rather orthogonal to David Joyner's PermutationGroupRing class deriving from CombinatorialAlgebra -- what I'm trying to do is much more general but has almost no methods, and PermutationGroupRing might work well as a subclass of my general GroupAlgebra.\n\n([*] I seem to recall mentioning this as a theoretical example in a discussion at Sage Days 6, but I can't remember what came of it at the time.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3959\n\n",
+    "closed_at": "2008-10-18T15:11:31Z",
     "created_at": "2008-08-26T17:48:49Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch bundle] General group algebras class",
+    "title": "[with patch, positive review] General group algebras class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3959",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: tbd
+Assignee: @loefflerd
 
 I've attempted to write a generic class for group algebras R[G] where R is any commutative ring and G is any group; it derives from the existing Algebra class, and most of the work is done by the existing FormalSums class.
 

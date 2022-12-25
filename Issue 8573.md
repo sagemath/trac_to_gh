@@ -1,17 +1,18 @@
-# Issue 8573: prod(primes(190)).divisors() crashes
+# Issue 8573: prod(primes_first_n(64)).divisors() crashes
 
 archive/issues_008573.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: product primes 190\n\nExactly what the title says...The divisors of the product of all primes under 190 crashes sage.\n\nThe number has about 74 digits I believe, and finding the divisors of a similar 74 digit prime works.\n\nI believe the crash is due to the fact that the number that comes out of prod(primes(190)) has over 4 million divisors.\n\nThe I probably selected the wrong component, by the way, I chose factorization, but really I'm talking about divisors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8573\n\n",
+    "body": "Assignee: tbd\n\nKeywords: integer divisors\n\n```\nsage: prod(primes_first_n(64)).divisors()\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off().\nSage will now terminate.\n------------------------------------------------------------------------\n```\nThe crash is due to the fact that the number has exactly `2^64` divisors and this overflows a C integer.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8573\n\n",
+    "closed_at": "2014-03-13T02:38:45Z",
     "created_at": "2010-03-21T21:31:02Z",
     "labels": [
-        "component: factorization",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "prod(primes(190)).divisors() crashes",
+    "title": "prod(primes_first_n(64)).divisors() crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8573",
     "user": "https://trac.sagemath.org/admin/accounts/users/asdjughewou9474388"
@@ -19,15 +20,19 @@ archive/issues_008573.json:
 ```
 Assignee: tbd
 
-Keywords: product primes 190
+Keywords: integer divisors
 
-Exactly what the title says...The divisors of the product of all primes under 190 crashes sage.
+```
+sage: prod(primes_first_n(64)).divisors()
+------------------------------------------------------------------------
+Unhandled SIGSEGV: A segmentation fault occurred in Sage.
+This probably occurred because a *compiled* component of Sage has a bug
+in it and is not properly wrapped with sig_on(), sig_off().
+Sage will now terminate.
+------------------------------------------------------------------------
+```
+The crash is due to the fact that the number has exactly `2^64` divisors and this overflows a C integer.
 
-The number has about 74 digits I believe, and finding the divisors of a similar 74 digit prime works.
-
-I believe the crash is due to the fact that the number that comes out of prod(primes(190)) has over 4 million divisors.
-
-The I probably selected the wrong component, by the way, I chose factorization, but really I'm talking about divisors.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8573
 

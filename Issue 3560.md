@@ -1,15 +1,16 @@
-# Issue 3560: optimize import of gnutls_socket_ssl.py
+# Issue 3560: [with patch; positive review] optimize import of gnutls_socket_ssl.py
 
 archive/issues_003560.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nmake it import gnutls.connection\tand gnutls.errors only when needed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3560\n\n",
+    "closed_at": "2008-07-06T09:47:28Z",
     "created_at": "2008-07-06T08:28:29Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "optimize import of gnutls_socket_ssl.py",
+    "title": "[with patch; positive review] optimize import of gnutls_socket_ssl.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3560",
     "user": "https://github.com/williamstein"

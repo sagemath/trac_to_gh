@@ -1,22 +1,23 @@
-# Issue 22: 32/64/32-bit building switch
+# Issue 22: [with patch, positive review] add persistent SAGE64 building switch on OSX and Solaris
 
 archive/issues_000022.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nShould there be something to keep people from building on 32-bit then 64-bit then 32-bit.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/22\n\n",
+    "body": "Assignee: mabshoff\n\nShould there be something to keep people from building on 32-bit then 64-bit then 32-bit.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/22\n\n",
+    "closed_at": "2009-01-23T00:34:46Z",
     "created_at": "2006-09-12T23:21:52Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: build",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "32/64/32-bit building switch",
+    "title": "[with patch, positive review] add persistent SAGE64 building switch on OSX and Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/22",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: mabshoff
 
 Should there be something to keep people from building on 32-bit then 64-bit then 32-bit.
 

@@ -1,22 +1,23 @@
-# Issue 3009: remove spaces after continuation characters "\"
+# Issue 3009: [with patch, positive review] remove spaces after continuation characters "\"
 
 archive/issues_003009.json:
 ```json
 {
-    "body": "Assignee: tba\n\n  \tJohn H Palmieri reports:\n\nIn the section of the tutorial on 3d plotting,\n\n  <http://sagemath.org/doc/html/tut/node22.html>\n\nthe continuation characters \"\\\" all have spaces after them, which\nmesses up cutting and pasting.  Also in the section on Maxima,\n\n  <http://sagemath.org/doc/html/tut/node54.html>\n\ntwo of the backslashes have spaces after them (in the Mobius strip and\nthe Klein bottle examples).\n\nThe same thing happens half a dozen times in \"SAGE Constructions\".\n\nI've only searched the tutorial and the constructions documentation\nfor this issue (by searching the files \"tut.tex\" and \"const.tex\"); I\nhaven't looked at the rest of the documentation. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3009\n\n",
+    "body": "Assignee: @jicama\n\n  \tJohn H Palmieri reports:\n\nIn the section of the tutorial on 3d plotting,\n\n  <http://sagemath.org/doc/html/tut/node22.html>\n\nthe continuation characters \"\\\" all have spaces after them, which\nmesses up cutting and pasting.  Also in the section on Maxima,\n\n  <http://sagemath.org/doc/html/tut/node54.html>\n\ntwo of the backslashes have spaces after them (in the Mobius strip and\nthe Klein bottle examples).\n\nThe same thing happens half a dozen times in \"SAGE Constructions\".\n\nI've only searched the tutorial and the constructions documentation\nfor this issue (by searching the files \"tut.tex\" and \"const.tex\"); I\nhaven't looked at the rest of the documentation. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3009\n\n",
+    "closed_at": "2008-09-14T11:53:18Z",
     "created_at": "2008-04-23T20:45:37Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "remove spaces after continuation characters \"\\\"",
+    "title": "[with patch, positive review] remove spaces after continuation characters \"\\\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3009",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: @jicama
 
   	John H Palmieri reports:
 

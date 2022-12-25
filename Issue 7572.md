@@ -4,6 +4,7 @@ archive/issues_007572.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\nThe GLPK interface `sage_malloc`s various arrays and never frees them. Also the interface uses Python keywords as variable names.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7572\n\n",
+    "closed_at": "2009-12-01T17:05:10Z",
     "created_at": "2009-12-01T15:53:33Z",
     "labels": [
         "component: packages: standard",

@@ -1,15 +1,16 @@
-# Issue 1788: cython annotation in notebook
+# Issue 1788: [with patch, with positive review] cython annotation in notebook
 
 archive/issues_001788.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCython now has the ability to display, in an html format, the c code corresponding to each line of the cython file. This is useful for getting clean, fast cython code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1788\n\n",
+    "closed_at": "2008-01-16T05:18:37Z",
     "created_at": "2008-01-15T22:33:28Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "cython annotation in notebook",
+    "title": "[with patch, with positive review] cython annotation in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1788",
     "user": "https://github.com/robertwb"

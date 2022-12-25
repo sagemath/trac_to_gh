@@ -4,6 +4,7 @@ archive/issues_009390.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  cturner @mstreng\n\nKeywords: galois extension\n\nIn 4.4.4 the following code produces a number field which is Galois over the rationals but (allegedly) not over an intermediate field.\n\n```\nsage: K.<a>=NumberField(x^2+1)\nsage: Kt.<t> = K[]\nsage: L.<b> = K.extension(t^3-3*t-1)\nsage: L.is_galois_absolute()\nTrue\nsage: L.is_galois_relative()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9390\n\n",
+    "closed_at": "2011-01-19T22:21:17Z",
     "created_at": "2010-06-30T04:33:44Z",
     "labels": [
         "component: number fields",

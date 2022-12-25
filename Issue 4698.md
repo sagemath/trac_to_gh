@@ -1,16 +1,17 @@
-# Issue 4698: [with patch, needs review] a single make_element function for pickling is hard to maintain
+# Issue 4698: [with patch, positive review] a single make_element function for pickling is hard to maintain
 
 archive/issues_004698.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robertwb @williamstein\n\nAll subclasses of `sage.structure.element.Element` end up using `sage.structure.element.make_element` for unpickling. This design is very hard to maintain, especially when trying to keep backward compatibility with older pickles. \n\nPython's pickling protocol via `__getstate__()` and `__setstate__()` moves the implementation of pickling/unpickling to the subclasses. [1] Attached patch changes sage.structure.element.Element to use this protocol.\n\n[1] http://www.python.org/doc/2.5/lib/pickle-inst.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4698\n\n",
+    "closed_at": "2008-12-07T08:07:15Z",
     "created_at": "2008-12-04T23:04:26Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] a single make_element function for pickling is hard to maintain",
+    "title": "[with patch, positive review] a single make_element function for pickling is hard to maintain",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4698",
     "user": "https://github.com/burcin"

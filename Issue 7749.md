@@ -4,6 +4,7 @@ archive/issues_007749.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAdd access to the names.gz file (http://www.research.att.com/~njas/sequences/names.gz) to sloane.py so that users can access sequence names while offline.\n\nChange the output from Python ints to Sage (see SloaneEncyclopedia[111111] for an example).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7749\n\n",
+    "closed_at": "2010-01-03T21:22:54Z",
     "created_at": "2009-12-22T18:15:56Z",
     "labels": [
         "component: packages: optional",

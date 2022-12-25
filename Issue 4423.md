@@ -1,9 +1,10 @@
-# Issue 4423: [with patch, needs review] document branch cut for Ei
+# Issue 4423: [with patch, positive review] document branch cut for Ei
 
 archive/issues_004423.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: branch cut\n\nSee [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/815aaba4dc5407cf).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4423\n\n",
+    "closed_at": "2008-11-04T13:36:49Z",
     "created_at": "2008-11-02T17:20:33Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_004423.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] document branch cut for Ei",
+    "title": "[with patch, positive review] document branch cut for Ei",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4423",
     "user": "https://github.com/jhpalmieri"

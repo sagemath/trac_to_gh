@@ -3,7 +3,8 @@
 archive/issues_002258.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nCC:  timothyclemans\n\nKeywords: dsage\n\nCurrently the dsage documentation lies inside it's own module. It would be much better if it were included in the sage-doc package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2258\n\n",
+    "body": "Assignee: @yqiang\n\nCC:  timothyclemans\n\nKeywords: dsage\n\nCurrently the dsage documentation lies inside it's own module. It would be much better if it were included in the sage-doc package. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2258\n\n",
+    "closed_at": "2008-03-07T06:07:58Z",
     "created_at": "2008-02-22T16:49:28Z",
     "labels": [
         "component: documentation",
@@ -22,7 +23,10 @@ CC:  timothyclemans
 
 Keywords: dsage
 
-Currently the dsage documentation lies inside it's own module. It would be much better if it were included in the sage-doc package.
+Currently the dsage documentation lies inside it's own module. It would be much better if it were included in the sage-doc package. 
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2258
 

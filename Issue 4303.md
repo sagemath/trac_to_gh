@@ -4,6 +4,7 @@ archive/issues_004303.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: plotting\n\nFrom the docstring for point2d, the following works fine:\n\nsage: p = point(((0.5, 0.5), (1, 2), (0.5, 0.9), (-1,-1)), rgbcolor=hue(1), pointsize=30); p.show()\n\nHowever\n\nsage: p = point(((0.5, 0.5), (1, 2), (0.5, 0.9)), rgbcolor=hue(1), pointsize=30); p.show()\n\ngives one purple(?) point and two blue points.  This seems to happen if and only if the number of points specified is exactly three, regardless of the specified color.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4303\n\n",
+    "closed_at": "2008-10-15T19:12:47Z",
     "created_at": "2008-10-15T17:33:34Z",
     "labels": [
         "component: user interface",

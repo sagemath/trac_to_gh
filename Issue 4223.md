@@ -1,16 +1,17 @@
-# Issue 4223: upgrade fpLLL to newest upstream release (3.0)
+# Issue 4223: [with spkg, positive review] upgrade fpLLL to newest upstream release (3.0.12)
 
 archive/issues_004223.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n```\nThe main differences between fplll-2.1 and fplll-3.0 are the following:\n\n- short lattice vector enumeration algorithm (by Xavier Pujol).\n- GPL -> LGPLv2\n- no more need to specify the number of rows and columns in the input\nof the fplll binary.\n- new version of dpe.h [Patrick Pelissier and Paul Zimmermann]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4223\n\n",
+    "body": "Assignee: mabshoff\n\n```\nThe main differences between fplll-2.1 and fplll-3.0 are the following:\n\n- short lattice vector enumeration algorithm (by Xavier Pujol).\n- GPL -> LGPLv2\n- no more need to specify the number of rows and columns in the input\nof the fplll binary.\n- new version of dpe.h [Patrick Pelissier and Paul Zimmermann]\n```\n\nNote that #1346 should be resolved since it will actually test fplll from inside Sage. As is we are testing if any internal error pops up or if the doctest segfaults.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4223\n\n",
+    "closed_at": "2009-05-12T17:18:56Z",
     "created_at": "2008-09-30T18:57:46Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "upgrade fpLLL to newest upstream release (3.0)",
+    "title": "[with spkg, positive review] upgrade fpLLL to newest upstream release (3.0.12)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4223",
     "user": "https://github.com/malb"
@@ -27,6 +28,8 @@ The main differences between fplll-2.1 and fplll-3.0 are the following:
 of the fplll binary.
 - new version of dpe.h [Patrick Pelissier and Paul Zimmermann]
 ```
+
+Note that #1346 should be resolved since it will actually test fplll from inside Sage. As is we are testing if any internal error pops up or if the doctest segfaults.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4223
 

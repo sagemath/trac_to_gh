@@ -3,7 +3,8 @@
 archive/issues_002754.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout mvngu\n\n```\n\nOn Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:\n> \n>  How can I specify the range of y coordinates in a 2d plot? I tried\n>  \n>  show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n>  \n>  but the actual plot goes between -0.6, and 0.6, and the curve goes out\n>  of the frame.\n\nI think that's an honest-to-goodness *bug*.  For now you can try\nto workaround it sort of with:\n    show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)\nbut still the curve goes outside the frame.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2754\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout mvngu\n\n```\n\nOn Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:\n> \n>  How can I specify the range of y coordinates in a 2d plot? I tried\n>  \n>  show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n>  \n>  but the actual plot goes between -0.6, and 0.6, and the curve goes out\n>  of the frame.\n\nI think that's an honest-to-goodness *bug*.  For now you can try\nto workaround it sort of with:\n    show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)\nbut still the curve goes outside the frame.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2754\n\n",
+    "closed_at": "2009-09-29T15:58:29Z",
     "created_at": "2008-04-01T15:59:45Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_002754.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  @jasongrout mvngu
 

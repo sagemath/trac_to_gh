@@ -1,22 +1,23 @@
-# Issue 6605: sage -docbuild DOC FORMAT should do better error checking on DOC
+# Issue 6605: [with patch, positive review] sage -docbuild DOC FORMAT should do better error checking on DOC
 
 archive/issues_006605.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIf I run `sage -docbuild hello html`, then a directory \"hello\" is created in `SAGE_ROOT/devel/sage/doc/en`.  Then if I run `sage -docbuild -help`, \"hello\" is listed as one of the options.\n\nError-checking should be done on the \"document\" argument of `sage -docbuild` to make sure this doesn't happen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6605\n\n",
+    "body": "Assignee: @jhpalmieri\n\nIf I run `sage -docbuild hello html`, then a directory \"hello\" is created in `SAGE_ROOT/devel/sage/doc/en`.  Then if I run `sage -docbuild -help`, \"hello\" is listed as one of the options.\n\nError-checking should be done on the \"document\" argument of `sage -docbuild` to make sure this doesn't happen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6605\n\n",
+    "closed_at": "2009-10-15T16:34:36Z",
     "created_at": "2009-07-23T17:48:39Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "sage -docbuild DOC FORMAT should do better error checking on DOC",
+    "title": "[with patch, positive review] sage -docbuild DOC FORMAT should do better error checking on DOC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6605",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 If I run `sage -docbuild hello html`, then a directory "hello" is created in `SAGE_ROOT/devel/sage/doc/en`.  Then if I run `sage -docbuild -help`, "hello" is listed as one of the options.
 

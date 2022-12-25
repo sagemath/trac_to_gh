@@ -1,15 +1,16 @@
-# Issue 3716: [with spkg, needs review] add GINV as experimental/optional package
+# Issue 3716: [with spkg, positive review] add GINV as experimental/optional package
 
 archive/issues_003716.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @burcin\n\nFrom the Ginv website (http://invo.jinr.ru/ginv/index.html)\n\"The open source software GINV implements the Gr\u00f6bner bases method for systems of equations. GINV is a C++ module of Python designed for constructing Gr\u00f6bner bases of ideals and modules in polynomial, differential and difference rings. Gr\u00f6bner bases are constructed by involutive algorithms. GINV is an open source software. The source codes, the installation package for Python, documentation in Russian and English are available on the Web page http://invo.jinr.ru\"\n\nThe package has a pretty good reputation for fast GBs over QQ. It also is reported to have a fast multivariate GCD over QQ and GF(q) and GBs over ZZ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3716\n\n",
+    "closed_at": "2008-07-29T17:11:39Z",
     "created_at": "2008-07-23T19:32:57Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with spkg, needs review] add GINV as experimental/optional package",
+    "title": "[with spkg, positive review] add GINV as experimental/optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3716",
     "user": "https://github.com/malb"

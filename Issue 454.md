@@ -1,44 +1,49 @@
-# Issue 454: VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality
+# Issue 454: memory leaks exposed by modular symbols functionality
 
 archive/issues_000454.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTo see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following. \n\n1. comment out the line \"_cache[key] = weakref.ref(M)\" in sage/modular/modsym/modsym.py\n2. build and observe:\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n174.125\n191.1796875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n191.1796875\n197.6875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n197.6875\n203.5546875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()\n203.546875\n208.12890625\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()\n208.12890625\n210.41796875\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/454\n\n",
+    "body": "Assignee: mabshoff\n\nTo see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following\n(anything leaks -- 501 or something smaller or bigger.)\n\n```\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()\n159.16015625\n185.04296875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()\n185.04296875\n190.796875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()\n190.796875\n195.05859375\n```\n\nValgrind tells us:\n\n```\n==14358== LEAK SUMMARY:\n==14358==    definitely lost: 3,297,622 bytes in 194,267 blocks.\n==14358==    indirectly lost: 703,345 bytes in 4,603 blocks.\n==14358==      possibly lost: 387,022 bytes in 984 blocks.\n==14358==    still reachable: 153,105,982 bytes in 1,028,503 blocks.\n==14358==         suppressed: 0 bytes in 0 blocks.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/454\n\n",
+    "closed_at": "2008-03-15T06:44:33Z",
     "created_at": "2007-08-19T08:42:08Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality",
+    "title": "memory leaks exposed by modular symbols functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/454",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
-To see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following. 
+To see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following
+(anything leaks -- 501 or something smaller or bigger.)
 
-1. comment out the line "_cache[key] = weakref.ref(M)" in sage/modular/modsym/modsym.py
-2. build and observe:
-sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()
-174.125
-191.1796875
-sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()
-191.1796875
-197.6875
-sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()
-197.6875
-203.5546875
-sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()
-203.546875
-208.12890625
-sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()
-208.12890625
-210.41796875
+```
+sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()
+159.16015625
+185.04296875
+sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()
+185.04296875
+190.796875
+sage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache(); get_memory_usage()
+190.796875
+195.05859375
+```
 
-}}}
+Valgrind tells us:
+
+```
+==14358== LEAK SUMMARY:
+==14358==    definitely lost: 3,297,622 bytes in 194,267 blocks.
+==14358==    indirectly lost: 703,345 bytes in 4,603 blocks.
+==14358==      possibly lost: 387,022 bytes in 984 blocks.
+==14358==    still reachable: 153,105,982 bytes in 1,028,503 blocks.
+==14358==         suppressed: 0 bytes in 0 blocks.
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/454
 

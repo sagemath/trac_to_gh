@@ -3,7 +3,8 @@
 archive/issues_009136.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  brunellus\n\nThe [database of common graphs](http://www.sagemath.org/doc/reference/sage/graphs/graph_generators.html) currently implements lots of named graphs. Here is a list of named graphs to add to that database:\n\n* [Balaban 10-cage](http://en.wikipedia.org/wiki/Balaban_10-cage)\n* [Balaban 11-cage](http://en.wikipedia.org/wiki/Balaban_11-cage)\n* [Bidiakis cube](http://en.wikipedia.org/wiki/Bidiakis_cube)\n* [Brinkmann graph](http://en.wikipedia.org/wiki/Brinkmann_graph)\n* [Butterfly graph](http://en.wikipedia.org/wiki/Butterfly_graph)\n* [Double-star snark](http://en.wikipedia.org/wiki/Double-star_snark)\n* [D\u00fcrer graph](http://en.wikipedia.org/wiki/D%C3%BCrer_graph)\n* [Ellingham\u2013Horton graph](http://en.wikipedia.org/wiki/Ellingham%E2%80%93Horton_graph)\n* [Errera graph](http://en.wikipedia.org/wiki/Errera_graph)\n* [Franklin graph](http://en.wikipedia.org/wiki/Franklin_graph)\n* [fullerene graphs](http://en.wikipedia.org/wiki/Gallery_of_named_graphs#Fullerene_graphs)\n* [Goldner\u2013Harary graph](http://en.wikipedia.org/wiki/Goldner%E2%80%93Harary_graph)\n* [Gr\u00f6tzsch graph](http://en.wikipedia.org/wiki/Gr%C3%B6tzsch_graph)\n* [Harries\u2013Wong graph](http://en.wikipedia.org/wiki/Harries-Wong_graph)\n* [Herschel graph](http://en.wikipedia.org/wiki/Herschel_graph)\n* [Hoffman graph](http://en.wikipedia.org/wiki/Hoffman_graph)\n* [Holt graph](http://en.wikipedia.org/wiki/Holt_graph)\n* [Horton graph](http://en.wikipedia.org/wiki/Horton_graph)\n* [Kittell graph](http://mathworld.wolfram.com/KittellGraph.html)\n* [Markstr\u00f6m graph](http://commons.wikimedia.org/wiki/File:Markstr%C3%B6m-Graph.svg)\n* [McGee graph](http://en.wikipedia.org/wiki/McGee_graph)\n* [Meredith graph](http://en.wikipedia.org/wiki/Meredith_graph)\n* [Moser spindle](http://mathworld.wolfram.com/MoserSpindle.html)\n* [Sousselier graph](http://en.wikipedia.org/wiki/File:Sousselier_graph.svg)\n* [Poussin graph](http://mathworld.wolfram.com/PoussinGraph.html)\n* [Robertson graph](http://en.wikipedia.org/wiki/Robertson_graph)\n* [Tutte's fragment](http://en.wikipedia.org/wiki/Tutte%27s_fragment)\n* [Tutte graph](http://en.wikipedia.org/wiki/Tutte_graph)\n* [Young\u2013Fibonacci lattice](http://en.wikipedia.org/wiki/Young%E2%80%93Fibonacci_lattice)\n* [Wagner graph](http://en.wikipedia.org/wiki/Wagner_graph)\n* [Wiener-Araya graph](http://mathworld.wolfram.com/Wiener-ArayaGraph.html)\n* [Clebsch graph](http://en.wikipedia.org/wiki/Clebsch_graph)\n* [Hall\u2013Janko graph](http://en.wikipedia.org/wiki/Hall%E2%80%93Janko_graph)\n* [Paley graph](http://en.wikipedia.org/wiki/Paley_graph)\n* [Shrikhande graph](http://en.wikipedia.org/wiki/Shrikhande_graph)\n* [M\u00f6bius\u2013Kantor graph](http://en.wikipedia.org/wiki/M%C3%B6bius%E2%80%93Kantor_graph)\n* [Nauru graph](http://en.wikipedia.org/wiki/Nauru_graph)\n* [Coxeter graph](http://en.wikipedia.org/wiki/Coxeter_graph)\n* [Tutte\u2013Coxeter graph](http://en.wikipedia.org/wiki/Tutte%E2%80%93Coxeter_graph)\n* [Dyck graph](http://en.wikipedia.org/wiki/Dyck_graph)\n* [Foster graph](http://en.wikipedia.org/wiki/Foster_graph)\n* [Biggs\u2013Smith graph](http://en.wikipedia.org/wiki/Biggs-Smith_graph)\n* [Rado graph](http://en.wikipedia.org/wiki/Rado_graph)\n* [Folkman graph](http://en.wikipedia.org/wiki/Folkman_graph)\n* [Gray graph](http://en.wikipedia.org/wiki/Gray_graph)\n* [Ljubljana graph](http://en.wikipedia.org/wiki/Ljubljana_graph)\n* [Tutte 12-cage](http://en.wikipedia.org/wiki/Tutte_12-cage)\n* [Friendship graph](http://en.wikipedia.org/wiki/Friendship_graph)\n* [Blanu\u0161a snarks](http://en.wikipedia.org/wiki/Blanu%C5%A1a_snarks)\n* [Szekeres snark](http://en.wikipedia.org/wiki/Szekeres_snark)\n* [Tietze's graph](http://en.wikipedia.org/wiki/Tietze_graph)\n* [Watkins snark](http://en.wikipedia.org/wiki/Watkins_snark)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9136\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  brunellus\n\nThe [database of common graphs](http://www.sagemath.org/doc/reference/sage/graphs/graph_generators.html) currently implements lots of named graphs. Below is a list of named graphs to add to that database. See also ticket #2686:\n\n1. [Bidiakis cube](http://en.wikipedia.org/wiki/Bidiakis_cube) --- #10307\n2. [Brinkmann graph](http://en.wikipedia.org/wiki/Brinkmann_graph) --- #10310\n3. [Butterfly graph](http://en.wikipedia.org/wiki/Butterfly_graph) --- #10313\n4. [Friendship graph](http://en.wikipedia.org/wiki/Friendship_graph) --- #10315\n5. [D\u00fcrer graph](http://en.wikipedia.org/wiki/D%C3%BCrer_graph) --- #10316\n6. [Errera graph](http://en.wikipedia.org/wiki/Errera_graph) --- #10321\n7. [Franklin graph](http://en.wikipedia.org/wiki/Franklin_graph) --- #10322\n8. [Goldner\u2013Harary graph](http://en.wikipedia.org/wiki/Goldner%E2%80%93Harary_graph) --- #10329\n9. [Gr\u00f6tzsch graph](http://en.wikipedia.org/wiki/Gr%C3%B6tzsch_graph) --- #10330\n10. [Herschel graph](http://en.wikipedia.org/wiki/Herschel_graph) --- #10337\n11. [Moser spindle](http://mathworld.wolfram.com/MoserSpindle.html) --- #10338\n12. [Balaban 10-cage](http://en.wikipedia.org/wiki/Balaban_10-cage) --- #12942\n13. [Balaban 11-cage](http://en.wikipedia.org/wiki/Balaban_11-cage) --- #12945\n14. [Double-star snark](http://en.wikipedia.org/wiki/Double-star_snark) --- #12952\n15. [Ellingham\u2013Horton graph](http://en.wikipedia.org/wiki/Ellingham%E2%80%93Horton_graph) --- #12989\n16. [fullerene graphs](http://en.wikipedia.org/wiki/Gallery_of_named_graphs#Fullerene_graphs) --- #14618\n17. [Harries graph](http://en.wikipedia.org/wiki/Harries_graph)--- #12952\n18. [Harries\u2013Wong graph](http://en.wikipedia.org/wiki/Harries-Wong_graph) --- #12980\n19. [Hoffman graph](http://en.wikipedia.org/wiki/Hoffman_graph) --- #13038\n20. [Holt graph](http://en.wikipedia.org/wiki/Holt_graph) --- #13411\n21. [Horton graph](http://en.wikipedia.org/wiki/Horton_graph) --- #15049\n22. [Kittell graph](http://mathworld.wolfram.com/KittellGraph.html) --- #15049\n23. [Markstr\u00f6m graph](http://commons.wikimedia.org/wiki/File:Markstr%C3%B6m-Graph.svg) --- #15049\n24. [McGee graph](http://en.wikipedia.org/wiki/McGee_graph) --- #12982 \n25. [Meredith graph](http://en.wikipedia.org/wiki/Meredith_graph) -- #15044\n26. [Sousselier graph](http://en.wikipedia.org/wiki/File:Sousselier_graph.svg) --- #15049\n27. [Poussin graph](http://mathworld.wolfram.com/PoussinGraph.html) --- #15049\n28. [Robertson graph](http://en.wikipedia.org/wiki/Robertson_graph) --- #14911\n29. [Tutte's fragment](http://en.wikipedia.org/wiki/Tutte%27s_fragment)\n30. [Tutte graph](http://en.wikipedia.org/wiki/Tutte_graph) --- #15049\n31. [Young\u2013Fibonacci lattice](http://en.wikipedia.org/wiki/Young%E2%80%93Fibonacci_lattice)\n32. [Wagner graph](http://en.wikipedia.org/wiki/Wagner_graph) --- #12982\n33. [Wiener-Araya graph](http://mathworld.wolfram.com/Wiener-ArayaGraph.html) -- #15049\n34. [Clebsch graph](http://en.wikipedia.org/wiki/Clebsch_graph) --- #13038\n35. [Hall\u2013Janko graph](http://en.wikipedia.org/wiki/Hall%E2%80%93Janko_graph) --- #13058\n36. [Paley graph](http://en.wikipedia.org/wiki/Paley_graph) --- #13088\n37. [Shrikhande graph](http://en.wikipedia.org/wiki/Shrikhande_graph) --- #10781\n38. [M\u00f6bius\u2013Kantor graph](http://en.wikipedia.org/wiki/M%C3%B6bius%E2%80%93Kantor_graph) (done)\n39. [Nauru graph](http://en.wikipedia.org/wiki/Nauru_graph) --- #13862\n40. [Coxeter graph](http://en.wikipedia.org/wiki/Coxeter_graph) --- #13038\n41. [Tutte\u2013Coxeter graph](http://en.wikipedia.org/wiki/Tutte%E2%80%93Coxeter_graph) --- #12982 \n42. [Dyck graph](http://en.wikipedia.org/wiki/Dyck_graph) --- #10790\n43. [Foster graph](http://en.wikipedia.org/wiki/Foster_graph) --- #12952\n44. [Biggs\u2013Smith graph](http://en.wikipedia.org/wiki/Biggs-Smith_graph) --- #12971\n45. [Rado graph](http://en.wikipedia.org/wiki/Rado_graph)\n46. [Folkman graph](http://en.wikipedia.org/wiki/Folkman_graph) --- #14904\n47. [Gray graph](http://en.wikipedia.org/wiki/Gray_graph) --- #12952\n48. [Ljubljana graph](http://en.wikipedia.org/wiki/Ljubljana_graph) --- #12981\n49. [Tutte 12-cage](http://en.wikipedia.org/wiki/Tutte_12-cage) --- #12982 \n50. [Blanu\u0161a snarks](http://en.wikipedia.org/wiki/Blanu%C5%A1a_snarks) -- #15054\n51. [Szekeres snark](http://en.wikipedia.org/wiki/Szekeres_snark) -- #15054\n52. [Tietze's graph](http://en.wikipedia.org/wiki/Tietze_graph) -- #15054\n53. [Watkins snark](http://en.wikipedia.org/wiki/Watkins_snark) -- #15054\n\nIssue created by migration from https://trac.sagemath.org/ticket/9136\n\n",
+    "closed_at": "2014-01-10T08:47:44Z",
     "created_at": "2010-06-03T22:09:47Z",
     "labels": [
         "component: graph theory"
@@ -19,60 +20,61 @@ Assignee: jason, ncohen, rlm
 
 CC:  brunellus
 
-The [database of common graphs](http://www.sagemath.org/doc/reference/sage/graphs/graph_generators.html) currently implements lots of named graphs. Here is a list of named graphs to add to that database:
+The [database of common graphs](http://www.sagemath.org/doc/reference/sage/graphs/graph_generators.html) currently implements lots of named graphs. Below is a list of named graphs to add to that database. See also ticket #2686:
 
-* [Balaban 10-cage](http://en.wikipedia.org/wiki/Balaban_10-cage)
-* [Balaban 11-cage](http://en.wikipedia.org/wiki/Balaban_11-cage)
-* [Bidiakis cube](http://en.wikipedia.org/wiki/Bidiakis_cube)
-* [Brinkmann graph](http://en.wikipedia.org/wiki/Brinkmann_graph)
-* [Butterfly graph](http://en.wikipedia.org/wiki/Butterfly_graph)
-* [Double-star snark](http://en.wikipedia.org/wiki/Double-star_snark)
-* [Dürer graph](http://en.wikipedia.org/wiki/D%C3%BCrer_graph)
-* [Ellingham–Horton graph](http://en.wikipedia.org/wiki/Ellingham%E2%80%93Horton_graph)
-* [Errera graph](http://en.wikipedia.org/wiki/Errera_graph)
-* [Franklin graph](http://en.wikipedia.org/wiki/Franklin_graph)
-* [fullerene graphs](http://en.wikipedia.org/wiki/Gallery_of_named_graphs#Fullerene_graphs)
-* [Goldner–Harary graph](http://en.wikipedia.org/wiki/Goldner%E2%80%93Harary_graph)
-* [Grötzsch graph](http://en.wikipedia.org/wiki/Gr%C3%B6tzsch_graph)
-* [Harries–Wong graph](http://en.wikipedia.org/wiki/Harries-Wong_graph)
-* [Herschel graph](http://en.wikipedia.org/wiki/Herschel_graph)
-* [Hoffman graph](http://en.wikipedia.org/wiki/Hoffman_graph)
-* [Holt graph](http://en.wikipedia.org/wiki/Holt_graph)
-* [Horton graph](http://en.wikipedia.org/wiki/Horton_graph)
-* [Kittell graph](http://mathworld.wolfram.com/KittellGraph.html)
-* [Markström graph](http://commons.wikimedia.org/wiki/File:Markstr%C3%B6m-Graph.svg)
-* [McGee graph](http://en.wikipedia.org/wiki/McGee_graph)
-* [Meredith graph](http://en.wikipedia.org/wiki/Meredith_graph)
-* [Moser spindle](http://mathworld.wolfram.com/MoserSpindle.html)
-* [Sousselier graph](http://en.wikipedia.org/wiki/File:Sousselier_graph.svg)
-* [Poussin graph](http://mathworld.wolfram.com/PoussinGraph.html)
-* [Robertson graph](http://en.wikipedia.org/wiki/Robertson_graph)
-* [Tutte's fragment](http://en.wikipedia.org/wiki/Tutte%27s_fragment)
-* [Tutte graph](http://en.wikipedia.org/wiki/Tutte_graph)
-* [Young–Fibonacci lattice](http://en.wikipedia.org/wiki/Young%E2%80%93Fibonacci_lattice)
-* [Wagner graph](http://en.wikipedia.org/wiki/Wagner_graph)
-* [Wiener-Araya graph](http://mathworld.wolfram.com/Wiener-ArayaGraph.html)
-* [Clebsch graph](http://en.wikipedia.org/wiki/Clebsch_graph)
-* [Hall–Janko graph](http://en.wikipedia.org/wiki/Hall%E2%80%93Janko_graph)
-* [Paley graph](http://en.wikipedia.org/wiki/Paley_graph)
-* [Shrikhande graph](http://en.wikipedia.org/wiki/Shrikhande_graph)
-* [Möbius–Kantor graph](http://en.wikipedia.org/wiki/M%C3%B6bius%E2%80%93Kantor_graph)
-* [Nauru graph](http://en.wikipedia.org/wiki/Nauru_graph)
-* [Coxeter graph](http://en.wikipedia.org/wiki/Coxeter_graph)
-* [Tutte–Coxeter graph](http://en.wikipedia.org/wiki/Tutte%E2%80%93Coxeter_graph)
-* [Dyck graph](http://en.wikipedia.org/wiki/Dyck_graph)
-* [Foster graph](http://en.wikipedia.org/wiki/Foster_graph)
-* [Biggs–Smith graph](http://en.wikipedia.org/wiki/Biggs-Smith_graph)
-* [Rado graph](http://en.wikipedia.org/wiki/Rado_graph)
-* [Folkman graph](http://en.wikipedia.org/wiki/Folkman_graph)
-* [Gray graph](http://en.wikipedia.org/wiki/Gray_graph)
-* [Ljubljana graph](http://en.wikipedia.org/wiki/Ljubljana_graph)
-* [Tutte 12-cage](http://en.wikipedia.org/wiki/Tutte_12-cage)
-* [Friendship graph](http://en.wikipedia.org/wiki/Friendship_graph)
-* [Blanuša snarks](http://en.wikipedia.org/wiki/Blanu%C5%A1a_snarks)
-* [Szekeres snark](http://en.wikipedia.org/wiki/Szekeres_snark)
-* [Tietze's graph](http://en.wikipedia.org/wiki/Tietze_graph)
-* [Watkins snark](http://en.wikipedia.org/wiki/Watkins_snark)
+1. [Bidiakis cube](http://en.wikipedia.org/wiki/Bidiakis_cube) --- #10307
+2. [Brinkmann graph](http://en.wikipedia.org/wiki/Brinkmann_graph) --- #10310
+3. [Butterfly graph](http://en.wikipedia.org/wiki/Butterfly_graph) --- #10313
+4. [Friendship graph](http://en.wikipedia.org/wiki/Friendship_graph) --- #10315
+5. [Dürer graph](http://en.wikipedia.org/wiki/D%C3%BCrer_graph) --- #10316
+6. [Errera graph](http://en.wikipedia.org/wiki/Errera_graph) --- #10321
+7. [Franklin graph](http://en.wikipedia.org/wiki/Franklin_graph) --- #10322
+8. [Goldner–Harary graph](http://en.wikipedia.org/wiki/Goldner%E2%80%93Harary_graph) --- #10329
+9. [Grötzsch graph](http://en.wikipedia.org/wiki/Gr%C3%B6tzsch_graph) --- #10330
+10. [Herschel graph](http://en.wikipedia.org/wiki/Herschel_graph) --- #10337
+11. [Moser spindle](http://mathworld.wolfram.com/MoserSpindle.html) --- #10338
+12. [Balaban 10-cage](http://en.wikipedia.org/wiki/Balaban_10-cage) --- #12942
+13. [Balaban 11-cage](http://en.wikipedia.org/wiki/Balaban_11-cage) --- #12945
+14. [Double-star snark](http://en.wikipedia.org/wiki/Double-star_snark) --- #12952
+15. [Ellingham–Horton graph](http://en.wikipedia.org/wiki/Ellingham%E2%80%93Horton_graph) --- #12989
+16. [fullerene graphs](http://en.wikipedia.org/wiki/Gallery_of_named_graphs#Fullerene_graphs) --- #14618
+17. [Harries graph](http://en.wikipedia.org/wiki/Harries_graph)--- #12952
+18. [Harries–Wong graph](http://en.wikipedia.org/wiki/Harries-Wong_graph) --- #12980
+19. [Hoffman graph](http://en.wikipedia.org/wiki/Hoffman_graph) --- #13038
+20. [Holt graph](http://en.wikipedia.org/wiki/Holt_graph) --- #13411
+21. [Horton graph](http://en.wikipedia.org/wiki/Horton_graph) --- #15049
+22. [Kittell graph](http://mathworld.wolfram.com/KittellGraph.html) --- #15049
+23. [Markström graph](http://commons.wikimedia.org/wiki/File:Markstr%C3%B6m-Graph.svg) --- #15049
+24. [McGee graph](http://en.wikipedia.org/wiki/McGee_graph) --- #12982 
+25. [Meredith graph](http://en.wikipedia.org/wiki/Meredith_graph) -- #15044
+26. [Sousselier graph](http://en.wikipedia.org/wiki/File:Sousselier_graph.svg) --- #15049
+27. [Poussin graph](http://mathworld.wolfram.com/PoussinGraph.html) --- #15049
+28. [Robertson graph](http://en.wikipedia.org/wiki/Robertson_graph) --- #14911
+29. [Tutte's fragment](http://en.wikipedia.org/wiki/Tutte%27s_fragment)
+30. [Tutte graph](http://en.wikipedia.org/wiki/Tutte_graph) --- #15049
+31. [Young–Fibonacci lattice](http://en.wikipedia.org/wiki/Young%E2%80%93Fibonacci_lattice)
+32. [Wagner graph](http://en.wikipedia.org/wiki/Wagner_graph) --- #12982
+33. [Wiener-Araya graph](http://mathworld.wolfram.com/Wiener-ArayaGraph.html) -- #15049
+34. [Clebsch graph](http://en.wikipedia.org/wiki/Clebsch_graph) --- #13038
+35. [Hall–Janko graph](http://en.wikipedia.org/wiki/Hall%E2%80%93Janko_graph) --- #13058
+36. [Paley graph](http://en.wikipedia.org/wiki/Paley_graph) --- #13088
+37. [Shrikhande graph](http://en.wikipedia.org/wiki/Shrikhande_graph) --- #10781
+38. [Möbius–Kantor graph](http://en.wikipedia.org/wiki/M%C3%B6bius%E2%80%93Kantor_graph) (done)
+39. [Nauru graph](http://en.wikipedia.org/wiki/Nauru_graph) --- #13862
+40. [Coxeter graph](http://en.wikipedia.org/wiki/Coxeter_graph) --- #13038
+41. [Tutte–Coxeter graph](http://en.wikipedia.org/wiki/Tutte%E2%80%93Coxeter_graph) --- #12982 
+42. [Dyck graph](http://en.wikipedia.org/wiki/Dyck_graph) --- #10790
+43. [Foster graph](http://en.wikipedia.org/wiki/Foster_graph) --- #12952
+44. [Biggs–Smith graph](http://en.wikipedia.org/wiki/Biggs-Smith_graph) --- #12971
+45. [Rado graph](http://en.wikipedia.org/wiki/Rado_graph)
+46. [Folkman graph](http://en.wikipedia.org/wiki/Folkman_graph) --- #14904
+47. [Gray graph](http://en.wikipedia.org/wiki/Gray_graph) --- #12952
+48. [Ljubljana graph](http://en.wikipedia.org/wiki/Ljubljana_graph) --- #12981
+49. [Tutte 12-cage](http://en.wikipedia.org/wiki/Tutte_12-cage) --- #12982 
+50. [Blanuša snarks](http://en.wikipedia.org/wiki/Blanu%C5%A1a_snarks) -- #15054
+51. [Szekeres snark](http://en.wikipedia.org/wiki/Szekeres_snark) -- #15054
+52. [Tietze's graph](http://en.wikipedia.org/wiki/Tietze_graph) -- #15054
+53. [Watkins snark](http://en.wikipedia.org/wiki/Watkins_snark) -- #15054
 
 Issue created by migration from https://trac.sagemath.org/ticket/9136
 

@@ -1,16 +1,17 @@
-# Issue 5733: bug in 3d plotting of graphs
+# Issue 5733: [with patch, positive review] bug in 3d plotting of graphs
 
 archive/issues_005733.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\nsage: ['c','d','d','d'],'d':['e']})\nsage: G.show3d()\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\nReported by alec`@`mihailovs\n\nIssue created by migration from https://trac.sagemath.org/ticket/5733\n\n",
+    "closed_at": "2009-04-13T06:23:19Z",
     "created_at": "2009-04-10T14:19:31Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "bug in 3d plotting of graphs",
+    "title": "[with patch, positive review] bug in 3d plotting of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5733",
     "user": "https://github.com/williamstein"

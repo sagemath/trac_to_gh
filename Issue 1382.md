@@ -1,22 +1,23 @@
-# Issue 1382: conversion of sage matrices to mathematica is just completely totally broken
+# Issue 1382: [with patch, with positive review] conversion of sage matrices to mathematica is just completely totally broken
 
 archive/issues_001382.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe have\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\nbut we should have\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
+    "body": "Assignee: TimothyClemans\n\nWe have\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\nbut we should have\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
+    "closed_at": "2008-02-24T21:25:13Z",
     "created_at": "2007-12-03T17:09:37Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "conversion of sage matrices to mathematica is just completely totally broken",
+    "title": "[with patch, with positive review] conversion of sage matrices to mathematica is just completely totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1382",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: TimothyClemans
 
 We have
 

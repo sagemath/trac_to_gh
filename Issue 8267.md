@@ -4,6 +4,7 @@ archive/issues_008267.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI just tried building the ratpoints package on Cygwin, and \n\n```\ngcc main.c -o ratpoints -I/home/wstein/build/sage-4.3.3.alpha0/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -DUSE_SSE -L/home/wstein/build/sage-4.3.3.alpha0/local/lib -lgmp -lm -L. -lratpoints                                     \nmain.c:1: warning: -fPIC ignored for target (all code is position independent)                                             \n./libratpoints.a(find_points.o):find_points.c:(.text+0x170): undefined reference to `__imp____gmpz_mul_si' \nBOOM!\n```\n\nThus the fixed that got in from #7015 has been broken before it ever really got to live :-(. \n\nSo this ticket is to implement that fix again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8267\n\n",
+    "closed_at": "2010-02-16T05:08:08Z",
     "created_at": "2010-02-15T00:09:00Z",
     "labels": [
         "component: porting: cygwin",

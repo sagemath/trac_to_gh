@@ -1,9 +1,10 @@
-# Issue 7570: default : list_plot of empty lists
+# Issue 7570: Make plot methods accept 'empty' input to return empty Graphics object
 
 archive/issues_007570.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout ryan\n\nKeywords: list_plot\n\nlist_plot does not accept **empty** lists:\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\ndoes not work, whereas\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout ryan\n\nKeywords: list_plot, beginner\n\nlist_plot does not accept **empty** lists:\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\ndoes not work, whereas\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\n**Apply**: [attachment:trac_7570_empty_graphics.2.2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
+    "closed_at": "2011-02-16T08:49:38Z",
     "created_at": "2009-12-01T14:16:10Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_007570.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "default : list_plot of empty lists",
+    "title": "Make plot methods accept 'empty' input to return empty Graphics object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7570",
     "user": "https://github.com/fchapoton"
@@ -21,7 +22,7 @@ Assignee: @williamstein
 
 CC:  @jasongrout ryan
 
-Keywords: list_plot
+Keywords: list_plot, beginner
 
 list_plot does not accept **empty** lists:
 
@@ -38,6 +39,8 @@ list_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))
 ```
 
 does work. It would be nicer if list_plot of empty lists gives an empty graphics object.
+
+**Apply**: [attachment:trac_7570_empty_graphics.2.2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7570
 

@@ -1,9 +1,10 @@
-# Issue 3731: [with patch, needs review] missing some derivatives in wester
+# Issue 3731: [with patch, with positive review] missing some derivatives in wester
 
 archive/issues_003731.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nKeywords: wester, calculus\n\nThere is an example in sage.calculus.wester starting like this:\n\n```\nsage: # (YES) Expand (1+x)^20, take derivative and factorize. \n```\nThe ensuing calculation involves no derivatives, just expanding and factoring (1+x)^20.\n\nThe patch adds in some derivative calculations.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3731\n\n",
+    "closed_at": "2008-08-11T07:42:06Z",
     "created_at": "2008-07-27T15:32:24Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_003731.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] missing some derivatives in wester",
+    "title": "[with patch, with positive review] missing some derivatives in wester",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3731",
     "user": "https://github.com/jhpalmieri"

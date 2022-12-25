@@ -4,6 +4,7 @@ archive/issues_007476.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThe theorem from Nash-Williams on the existence of k edge-disjoint spanning trees in a graph is both important, useful, and polynomial to compute. This could be implemented using the short proof described in the following article :\n\nhttp://arxiv.org/abs/0911.2809\n\nOr, if we achieve to eventually define in Sage a class Matroid, this could be done through the Matroid Union Theorem as presented in Schrijver's book.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7476\n\n",
+    "closed_at": "2010-06-29T16:43:36Z",
     "created_at": "2009-11-17T06:11:37Z",
     "labels": [
         "component: graph theory"

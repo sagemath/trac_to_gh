@@ -3,10 +3,11 @@
 archive/issues_007938.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nI'm including a patch, but will rebase it against 3.4.1 once it is released.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7938\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nI'm including a patch, but will rebase it against 4.3.1 once it is released.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7938\n\n",
+    "closed_at": "2010-01-23T10:50:36Z",
     "created_at": "2010-01-15T18:50:38Z",
     "labels": [
-        "component: algebra"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "'term' and 'monomial' are inconsistently used in some Category and combinat code",
@@ -19,7 +20,7 @@ Assignee: @aghitza
 
 CC:  sage-combinat
 
-I'm including a patch, but will rebase it against 3.4.1 once it is released.
+I'm including a patch, but will rebase it against 4.3.1 once it is released.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7938
 

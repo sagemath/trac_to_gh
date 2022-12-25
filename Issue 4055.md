@@ -1,9 +1,10 @@
-# Issue 4055: serious bug in polynomial multiplication
+# Issue 4055: [already fixed?] serious bug in polynomial multiplication
 
 archive/issues_004055.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  boothby\n\nSeems to be something with the generic karatsuba, perhaps it should not be used for inexact rings?\n\n```\nsage: R.<x> = RR[]\nsage: (x-1e16)*(x-1e17)\n 1.00000000000000*x^2 + 1.00000000000000e33\n\nsage: R.<x> = RDF['y']['x']\nsage: (x-1e123)*(x-1e100)\n 1.0*x^2 + 1e+223\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4055\n\n",
+    "closed_at": "2009-05-22T02:56:35Z",
     "created_at": "2008-09-04T00:06:57Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_004055.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "serious bug in polynomial multiplication",
+    "title": "[already fixed?] serious bug in polynomial multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4055",
     "user": "https://github.com/robertwb"

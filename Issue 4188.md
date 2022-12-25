@@ -1,16 +1,17 @@
-# Issue 4188: [with spkg, needs review] Fix cvxopt.spkg build on Solaris due to broken complex.h headers
+# Issue 4188: [with spkg, with positive review] Fix cvxopt.spkg build on Solaris due to broken complex.h headers
 
 archive/issues_004188.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ncomplex.h on Solaris is broken - see http://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6549313\n\nThis causes the build of cvxopt to fail. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/cvxopt-0.9.p7.spkg\n\nfixes that problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4188\n\n",
+    "closed_at": "2008-09-24T10:35:48Z",
     "created_at": "2008-09-24T10:11:56Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with spkg, needs review] Fix cvxopt.spkg build on Solaris due to broken complex.h headers",
+    "title": "[with spkg, with positive review] Fix cvxopt.spkg build on Solaris due to broken complex.h headers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4188",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

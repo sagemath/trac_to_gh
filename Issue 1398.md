@@ -1,9 +1,10 @@
-# Issue 1398: Functions on integers which are not object-oriented
+# Issue 1398: [with patch, with positive review] Functions on integers which are not object-oriented
 
 archive/issues_001398.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThere are some functions on integers which SAGE has but which (as far as I know) are not methods for the integers:\n\nprime_to_m_part\n\nprime_divisors\n\ndivisors\n\n--- it would be nice if one could get all of these as N.divisors() etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1398\n\n",
+    "body": "Assignee: @mwhansen\n\nThere are some functions on integers which SAGE has but which (as far as I know) are not methods for the integers:\n\nprime_to_m_part\n\nprime_divisors\n\ndivisors\n\n--- it would be nice if one could get all of these as N.divisors() etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1398\n\n",
+    "closed_at": "2007-12-14T05:16:43Z",
     "created_at": "2007-12-04T22:17:41Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_001398.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Functions on integers which are not object-oriented",
+    "title": "[with patch, with positive review] Functions on integers which are not object-oriented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1398",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 There are some functions on integers which SAGE has but which (as far as I know) are not methods for the integers:
 

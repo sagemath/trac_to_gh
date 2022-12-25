@@ -3,7 +3,8 @@
 archive/issues_009336.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: doctest\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9336\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: doctest\n\nThe patch below adds about 50 new doctests in sage/rings/number_field, particularly in the files maps.py, morphism.py and number_field_morphisms.pyx.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9336\n\n",
+    "closed_at": "2010-07-20T07:52:58Z",
     "created_at": "2010-06-25T15:10:10Z",
     "labels": [
         "component: number fields",
@@ -22,7 +23,7 @@ CC:  @JohnCremona
 
 Keywords: doctest
 
-
+The patch below adds about 50 new doctests in sage/rings/number_field, particularly in the files maps.py, morphism.py and number_field_morphisms.pyx.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9336
 

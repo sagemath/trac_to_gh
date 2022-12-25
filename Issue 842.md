@@ -1,16 +1,18 @@
-# Issue 842: SAGE's Singular build fails to factor simple polynomials
+# Issue 842: [with patch] SAGE's Singular build fails to factor simple polynomials
 
 archive/issues_000842.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe following takes a very long time, possibly forever (I waited several minutes before giving up and killing it):\n\n```\nsage:  MR.<x,w,v,u> = QQ['x','w','v','u']\nsage:  p = (4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4)\nsage:  %time p.factor()\n```\n\nSimilarly, if you run sage -singular, the equivalent code fails again:\n\n```\n> ring r = 0,(x,w,v,u),dp;\n> factorize(4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4);\n```\n\nHowever, if I build my own copy of Singular from the source on the Singular website, or if I download and install the Debian binary package from the Singular website, then this second factorization completes instantly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/842\n\n",
+    "closed_at": "2007-10-13T02:14:59Z",
     "created_at": "2007-10-09T21:07:59Z",
     "labels": [
-        "component: packages",
+        "component: commutative algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "SAGE's Singular build fails to factor simple polynomials",
+    "title": "[with patch] SAGE's Singular build fails to factor simple polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/842",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

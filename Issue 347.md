@@ -1,15 +1,15 @@
-# Issue 347: Get Fernando and Gonzalo's quaternion algebra and related code into SAGE
+# Issue 347: Get Fernando and Gonzalo's quaternion algebra and related code into Sage
 
 archive/issues_000347.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @slel @tornaria @williamstein\n\nInclude all these gp scripts with SAGE and make them easily usable from SAGE itself:\n\n   http://www.ma.utexas.edu/users/villegas/cnt/cnt-no-frames.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/347\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel @tornaria @williamstein\n\nInclude all these gp scripts with Sage and make them easily usable from Sage itself:\n\n- http://www.ma.utexas.edu/users/villegas/cnt/cnt-no-frames.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/347\n\n",
     "created_at": "2007-04-05T19:07:50Z",
     "labels": [
-        "component: packages: standard"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
-    "title": "Get Fernando and Gonzalo's quaternion algebra and related code into SAGE",
+    "title": "Get Fernando and Gonzalo's quaternion algebra and related code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/347",
     "user": "https://github.com/williamstein"
@@ -19,9 +19,9 @@ Assignee: @williamstein
 
 CC:  @slel @tornaria @williamstein
 
-Include all these gp scripts with SAGE and make them easily usable from SAGE itself:
+Include all these gp scripts with Sage and make them easily usable from Sage itself:
 
-   http://www.ma.utexas.edu/users/villegas/cnt/cnt-no-frames.html
+- http://www.ma.utexas.edu/users/villegas/cnt/cnt-no-frames.html
 
 Issue created by migration from https://trac.sagemath.org/ticket/347
 

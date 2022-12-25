@@ -1,16 +1,17 @@
-# Issue 9175: cygwin: pari's sea.gp program just segfaults on Cygwin
+# Issue 9175: cygwin: pari's sea.gp program segfaults on Cygwin
 
 archive/issues_009175.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\", line 865:\n    sage: EllipticCurve(GF(next_prime(10**20)),[1,2,3,4,5]).cardinality(algorithm='sea')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[12]>\", line 1, in <module>\n        EllipticCurve(GF(next_prime(Integer(10)**Integer(20))),[Integer(1),Integer(2),Integer(3),Integer(4),Integer(5)]).cardinality(algorithm='sea')###line 865:\n    sage: EllipticCurve(GF(next_prime(10**20)),[1,2,3,4,5]).cardinality(algorithm='sea')\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\", line 921, in cardinality\n        N = self.cardinality_sea()\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\", line 1155, in cardinality_sea\n        return sea.ellsea(list(self.a_invariants()), p, early_abort=early_abort)\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/sea.py\", line 48, in ellsea\n        raise RuntimeError, \"Error: '%s'\"%N\n    RuntimeError: Error: '  *** CM_CardEFp: bug in GP (Segmentation Fault), please report'\n**********************************************************************\n1 items had failures:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9175\n\n",
+    "closed_at": "2010-09-10T10:48:43Z",
     "created_at": "2010-06-07T04:59:26Z",
     "labels": [
         "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "cygwin: pari's sea.gp program just segfaults on Cygwin",
+    "title": "cygwin: pari's sea.gp program segfaults on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9175",
     "user": "https://github.com/williamstein"

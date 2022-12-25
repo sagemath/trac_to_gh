@@ -1,25 +1,26 @@
-# Issue 960: reconsider how floating point values are printed
+# Issue 960: [with patch] reconsider how floating point values are printed
 
 archive/issues_000960.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n some f-p values are printed like integers, which may confuse the user\n (especially if one copies them with the mouse):\n sage: 2.0^46\n 70368744177664.0\n sage: 2.0^47\n 140737488355328\n I would expect '140737488355328.' or '1.40737488355328e14' in the 2nd case.\n By the way, typing 140737488355328.0 outputs itself, which is inconsistent,\n since 140737488355328.0-2.0^47 gives 0.0000000000000000.\n\n Compare also:\n sage: 2.0^99\n 633825300114115000000000000000\n sage: 2.0^100\n 1.26765060022823e30\n\nMy 2 cents,\nPaul Z.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/960\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsome f-p values are printed like integers, which may confuse the user\n (especially if one copies them with the mouse):\n sage: 2.0^46\n 70368744177664.0\n sage: 2.0^47\n 140737488355328\n I would expect '140737488355328.' or '1.40737488355328e14' in the 2nd case.\n By the way, typing 140737488355328.0 outputs itself, which is inconsistent,\n since 140737488355328.0-2.0^47 gives 0.0000000000000000.\n\n Compare also:\n sage: 2.0^99\n 633825300114115000000000000000\n sage: 2.0^100\n 1.26765060022823e30\n\nMy 2 cents,\nPaul Z.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/960\n\n",
+    "closed_at": "2007-10-27T02:51:54Z",
     "created_at": "2007-10-21T12:41:39Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "reconsider how floating point values are printed",
+    "title": "[with patch] reconsider how floating point values are printed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/960",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 ```
- some f-p values are printed like integers, which may confuse the user
+some f-p values are printed like integers, which may confuse the user
  (especially if one copies them with the mouse):
  sage: 2.0^46
  70368744177664.0

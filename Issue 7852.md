@@ -3,10 +3,12 @@
 archive/issues_007852.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\n---\n\nApply\n1. [attachment:trac_7852-solve-linear-systems-CDF.patch]\n2. [attachment:trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch]\n3. [attachment:trac_7852-fix_noise_errors_in_polys.reviewer.patch]\n4. [attachment:trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch]\n5. [attachment:trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch]\nto the Sage library.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
+    "closed_at": "2011-09-13T12:15:21Z",
     "created_at": "2010-01-05T21:40:18Z",
     "labels": [
         "component: linear algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
@@ -44,6 +46,17 @@ But that is solve_right.
 This was evidently introduced by maybe Grout's "Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.".
 
 Reported by Stephanie Dietzel
+
+---
+
+Apply
+1. [attachment:trac_7852-solve-linear-systems-CDF.patch]
+2. [attachment:trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch]
+3. [attachment:trac_7852-fix_noise_errors_in_polys.reviewer.patch]
+4. [attachment:trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch]
+5. [attachment:trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch]
+to the Sage library.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7852
 

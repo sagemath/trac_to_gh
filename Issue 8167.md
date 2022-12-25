@@ -3,10 +3,12 @@
 archive/issues_008167.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik @jhpalmieri\n\nIn order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need replace several Unicode characters introduced at #7249.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8167\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik @jhpalmieri\n\nIn order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need to replace several Unicode characters introduced at #7249.\n\nThis ticket \"blocks\" #8051.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8167\n\n",
+    "closed_at": "2010-02-05T00:36:13Z",
     "created_at": "2010-02-03T09:23:05Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
@@ -20,7 +22,9 @@ Assignee: @williamstein
 
 CC:  mvngu @robert-marik @jhpalmieri
 
-In order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need replace several Unicode characters introduced at #7249.
+In order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need to replace several Unicode characters introduced at #7249.
+
+This ticket "blocks" #8051.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8167
 

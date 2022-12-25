@@ -1,22 +1,23 @@
-# Issue 7019: update biopython optional package to 1.52
+# Issue 7019: [with spkg, positive review] update biopython optional package to 1.52
 
 archive/issues_007019.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  tkeller\n\nKeywords: biopython\n\nUpdating to biopython-1.52, which was released September 22, 2009.  Main improvements were to alignment and sequence file conversion, population genetics statistics, and the Bio.SeqIO.indexed_dict() for handling large numbers of sequences.\n\nHere is an example that will not work with previous biopython packages:\n\n```\nsage: import urllib2 as U\nsage: f = U.urlopen('http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk')\nsage: orchidfile = file(DATA+\"ls_orchid.gbk\",'w')\nsage: orchidfile.write(f.read())\nsage: orchidfile.close()\nsage: f.close()\nsage: from Bio import SeqIO\nsage: orchid_dict = SeqIO.index(DATA+\"ls_orchid.gbk\", \"genbank\")\nsage: print 'Number of records: ' + str(len(orchid_dict))\nsage: orchid_dict.keys()\nsage: seq_record = orchid_dict[\"Z78475.1\"]\nsage: print 'Description: ' + seq_record.description\nsage: seq_record.seq\n\nNumber of records: 94\nDescription: P.supardii 5.8S rRNA gene and ITS1 and ITS2 DNA.\nSeq('CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTTGAGATCACAT...GGT', IUPACAmbiguousDNA())\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7019\n\n",
+    "body": "Assignee: mhampton\n\nCC:  tkeller\n\nKeywords: biopython\n\nUpdating to biopython-1.52, which was released September 22, 2009.  Main improvements were to alignment and sequence file conversion, population genetics statistics, and the Bio.SeqIO.indexed_dict() for handling large numbers of sequences.\n\nHere is an example that will not work with previous biopython packages:\n\n```\nsage: import urllib2 as U\nsage: f = U.urlopen('http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk')\nsage: orchidfile = file(DATA+\"ls_orchid.gbk\",'w')\nsage: orchidfile.write(f.read())\nsage: orchidfile.close()\nsage: f.close()\nsage: from Bio import SeqIO\nsage: orchid_dict = SeqIO.index(DATA+\"ls_orchid.gbk\", \"genbank\")\nsage: print 'Number of records: ' + str(len(orchid_dict))\nsage: orchid_dict.keys()\nsage: seq_record = orchid_dict[\"Z78475.1\"]\nsage: print 'Description: ' + seq_record.description\nsage: seq_record.seq\n\nNumber of records: 94\nDescription: P.supardii 5.8S rRNA gene and ITS1 and ITS2 DNA.\nSeq('CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTTGAGATCACAT...GGT', IUPACAmbiguousDNA())\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7019\n\n",
+    "closed_at": "2009-10-25T06:52:26Z",
     "created_at": "2009-09-26T14:40:37Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "update biopython optional package to 1.52",
+    "title": "[with spkg, positive review] update biopython optional package to 1.52",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7019",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: tbd
+Assignee: mhampton
 
 CC:  tkeller
 

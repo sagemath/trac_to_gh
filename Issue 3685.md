@@ -3,11 +3,11 @@
 archive/issues_003685.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nMake sure that doing this does not import ipython:\n\n```\nteragon-2:~ was$ sage -python\nPython 2.5.2 (r252:60911, Jul 10 2008, 00:31:06) \n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3685\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: startup time and imports\n\nMake sure that doing this does not import ipython:\n\n```\nteragon-2:~ was$ sage -python\nPython 2.5.2 (r252:60911, Jul 10 2008, 00:31:06) \n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n```\n\nApply:\n* [attachment:trac_3685.patch\u200b]\n* [attachment:trac_3685_remove_tab.patch\u200b]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3685\n\n",
+    "closed_at": "2021-09-10T04:50:10Z",
     "created_at": "2008-07-20T14:49:23Z",
     "labels": [
         "component: misc",
-        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -19,6 +19,8 @@ archive/issues_003685.json:
 ```
 Assignee: cwitty
 
+Keywords: startup time and imports
+
 Make sure that doing this does not import ipython:
 
 ```
@@ -28,6 +30,11 @@ Python 2.5.2 (r252:60911, Jul 10 2008, 00:31:06)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import sage.all
 ```
+
+Apply:
+* [attachment:trac_3685.patch​]
+* [attachment:trac_3685_remove_tab.patch​]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3685
 

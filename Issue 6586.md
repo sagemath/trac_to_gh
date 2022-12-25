@@ -1,15 +1,16 @@
-# Issue 6586: [with spkg; needs review] update Sphinx to version 0.6.2
+# Issue 6586: [with spkg, positive review] update Sphinx to version 0.6.2 or 0.6.3
 
 archive/issues_006586.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mwhansen sage-combinat\n\nAs the summary says.  The spkg can be found at\n\nhttp://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6586\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen sage-combinat\n\nAs the summary says.  The spkg can be found at\n\nhttp://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg\n\nAfter installing it and before building any docs, you will probably need to delete the directory SAGE_ROOT/devel/sage/doc/output -- this holds cached information which may not be compatible between different versions of Sphinx.\n\nSphinx 0.6.3 also uses Jinja2.  Sage includes Jinja, not Jinja2.  As long as you're connected to a network, the installation of Sphinx 0.6.3 downloads Jinja2 and installs it -- it can coexist with Jinja, so it shouldn't mess anything up.  If you're not connected to a network, and for putting in the Sage tar ball, there is an spkg for Jinja2:\n\nhttp://sage.math.washington.edu/home/palmieri/SPKG/jinja2-2.1.1.p0.spkg\n\nFor producing a new Sage tarball, since we're adding a new spkg, I think we need to modify the files `spkg/install` and `spkg/standard/deps`; I've attached new versions of these.\n\nFinally, the patch below (\"inheritance_example.patch\") is not required.  It provides an illustration of a new capability of Sphinx 0.6.3 (and I think it's quite nice), but it's not something that needs to be installed or reviewed for this ticket.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6586\n\n",
+    "closed_at": "2009-10-16T04:45:42Z",
     "created_at": "2009-07-22T05:07:41Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with spkg; needs review] update Sphinx to version 0.6.2",
+    "title": "[with spkg, positive review] update Sphinx to version 0.6.2 or 0.6.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6586",
     "user": "https://github.com/jhpalmieri"
@@ -21,7 +22,18 @@ CC:  @mwhansen sage-combinat
 
 As the summary says.  The spkg can be found at
 
-http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg
+http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg
+
+After installing it and before building any docs, you will probably need to delete the directory SAGE_ROOT/devel/sage/doc/output -- this holds cached information which may not be compatible between different versions of Sphinx.
+
+Sphinx 0.6.3 also uses Jinja2.  Sage includes Jinja, not Jinja2.  As long as you're connected to a network, the installation of Sphinx 0.6.3 downloads Jinja2 and installs it -- it can coexist with Jinja, so it shouldn't mess anything up.  If you're not connected to a network, and for putting in the Sage tar ball, there is an spkg for Jinja2:
+
+http://sage.math.washington.edu/home/palmieri/SPKG/jinja2-2.1.1.p0.spkg
+
+For producing a new Sage tarball, since we're adding a new spkg, I think we need to modify the files `spkg/install` and `spkg/standard/deps`; I've attached new versions of these.
+
+Finally, the patch below ("inheritance_example.patch") is not required.  It provides an illustration of a new capability of Sphinx 0.6.3 (and I think it's quite nice), but it's not something that needs to be installed or reviewed for this ticket.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6586
 

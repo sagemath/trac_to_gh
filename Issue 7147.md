@@ -4,6 +4,7 @@ archive/issues_007147.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne\n\nDue to a bug in Solaris, MPFR can fail tests on sun4v machines.\n\nWe have solved this (#6453) some months back.,I added some code to a shell script that could apply the patch or not depending on whether INCLUDE_MPFR_PATCH was set to 1 (apply patch) or 0 (do not apply). Given other variable in Sage use \"yes\" or \"no\", it would be sensible this was changed to be consistent. Clearly this is a very trivial patch, \n\nIssue created by migration from https://trac.sagemath.org/ticket/7147\n\n",
+    "closed_at": "2009-12-03T04:51:02Z",
     "created_at": "2009-10-07T18:06:42Z",
     "labels": [
         "component: porting: solaris",

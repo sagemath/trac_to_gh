@@ -1,9 +1,10 @@
-# Issue 5284: Set sage-flags.txt up to SSE2 only when building Sage in SSE2 only mode/remove SSSE3 and SSE4 flags (followup to #5219)
+# Issue 5284: [with patch, positive review] Set sage-flags.txt up to SSE2 only when building Sage in SSE2 only mode/remove SSSE3 and SSE4 flags (followup to #5219)
 
 archive/issues_005284.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is a followup to #5219:\n\n* When building ATLAS in SSE2 only mode the sage-flags should be set accordingly to avoid that Sage complains on startup.\n\n* We do not use any SSE instructions beyond PNI (i.e. SSE3) at the moment, yet we check for SSSE3 and SSE4 flags. So do not add them to sage-flags since they will trigger wrong warning.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5284\n\n",
+    "body": "Assignee: mabshoff\n\nThis is a followup to #5219:\n\n* When building ATLAS in SSE2 only mode the sage-flags should be set accordingly to avoid that Sage complains on startup.\n\n* We do not use any SSE instructions beyond PNI (i.e. SSE3) at the moment, yet we check for SSSE3 and SSE4 flags. So do not add them to sage-flags since they will trigger wrong warning.\n\n* Document SAGE_SIMD_MODE in README.txt\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5284\n\n",
+    "closed_at": "2009-04-22T04:12:10Z",
     "created_at": "2009-02-16T11:54:08Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_005284.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Set sage-flags.txt up to SSE2 only when building Sage in SSE2 only mode/remove SSSE3 and SSE4 flags (followup to #5219)",
+    "title": "[with patch, positive review] Set sage-flags.txt up to SSE2 only when building Sage in SSE2 only mode/remove SSSE3 and SSE4 flags (followup to #5219)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5284",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -24,6 +25,8 @@ This is a followup to #5219:
 * When building ATLAS in SSE2 only mode the sage-flags should be set accordingly to avoid that Sage complains on startup.
 
 * We do not use any SSE instructions beyond PNI (i.e. SSE3) at the moment, yet we check for SSSE3 and SSE4 flags. So do not add them to sage-flags since they will trigger wrong warning.
+
+* Document SAGE_SIMD_MODE in README.txt
 
 Cheers,
 

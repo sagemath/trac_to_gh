@@ -3,10 +3,12 @@
 archive/issues_007661.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robert-marik\n\nKeywords: maxima\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c89582242c83a349\n\n```\nOn Fri, 11 Dec 2009 13:46:31 +0100\nNathann Cohen <nathann.cohen@gmail.com> wrote:\n\n> sage: var('delta k')\n> sage: m1=2*delta**2 + 2**2*delta*k\n> sage: n=delta*k+2\n> sage: m2=(2*delta)**2+(k-1)*4\n> sage: m=(delta+delta*k-(delta-1))\n> sage: ((m1/n)-(m2/n)).expand().simplify()\n```\n\nOn 4.3.rc0, I get this:\n\n```\nTypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and\n'<class 'sage.functions.generalized.FunctionDiracDelta'>'\n```\n\nThe Maxima interface seems to give precedence to the global function\ndictionary instead of the local variables when converting Maxima output\nback to Sage expressions.\n\n```\nsage: dirac_delta(x)\ndirac_delta(x)\nsage: maxima(dirac_delta(x))\ndelta(x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7661\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: maxima\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c89582242c83a349\n\n```\nOn Fri, 11 Dec 2009 13:46:31 +0100\nNathann Cohen <nathann.cohen@gmail.com> wrote:\n\n> sage: var('delta k')\n> sage: m1=2*delta**2 + 2**2*delta*k\n> sage: n=delta*k+2\n> sage: m2=(2*delta)**2+(k-1)*4\n> sage: m=(delta+delta*k-(delta-1))\n> sage: ((m1/n)-(m2/n)).expand().simplify()\n```\n\nOn 4.3.rc0, I get this:\n\n```\nTypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and\n'<class 'sage.functions.generalized.FunctionDiracDelta'>'\n```\n\nThe Maxima interface seems to give precedence to the global function\ndictionary instead of the local variables when converting Maxima output\nback to Sage expressions.\n\n```\nsage: dirac_delta(x)\ndirac_delta(x)\nsage: maxima(dirac_delta(x))\ndelta(x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7661\n\n",
+    "closed_at": "2010-04-15T20:15:35Z",
     "created_at": "2009-12-11T14:18:05Z",
     "labels": [
         "component: interfaces",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
@@ -16,7 +18,7 @@ archive/issues_007661.json:
     "user": "https://github.com/burcin"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 CC:  @robert-marik
 

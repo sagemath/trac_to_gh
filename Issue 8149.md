@@ -4,6 +4,7 @@ archive/issues_008149.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThanks to the load/attach rewrite most of the weirdness is gone. My only issue left is that files with space in their names somehow only work with the depreciated style of calling load. This behavior is the same in prompt and notebook.\n\n```\nsage: t=tmp_filename()+' space.py'; open(t,'w').write(\"print 'hello world'\")\nsage: load t\nhello world\nsage: load(t)\n---------------------------------------------------------------------------\nValueError  \n```\n\nI should be able to fix this soon, as probably it is a minor tweak, but if anyone wants to go ahead...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8149\n\n",
+    "closed_at": "2015-03-25T19:21:10Z",
     "created_at": "2010-02-02T07:30:10Z",
     "labels": [
         "component: misc",

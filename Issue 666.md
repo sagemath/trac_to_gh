@@ -1,9 +1,10 @@
-# Issue 666: add spacing in latex output of matrices for increasing readbility
+# Issue 666: [with patch] add spacing in latex output of matrices for increasing readbility
 
 archive/issues_000666.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently, printing of matrices in Latex form is difficult to read. I'm submitting a (trivial) patch\nthat adds more spacing to increase readibility.\n\nExample: \n\n```\nsage: M=MatrixSpace(QQ,2,2)\nsage: A=M([[2,3],[4,5]])\nsage: latex(A)\n```\ncurrently gives:\n\n```\n\\left(\\begin{array}{rr}\n2&3\\\\\n4&5\n\\end{array}\\right)\n```\nMy patch changes this to \n\n```\n\\left(\\begin{array}{rr}\n2 & 3 \\\\\n4 & 5\n\\end{array}\\right)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/666\n\n",
+    "closed_at": "2007-09-21T02:40:03Z",
     "created_at": "2007-09-16T18:43:39Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_000666.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "add spacing in latex output of matrices for increasing readbility",
+    "title": "[with patch] add spacing in latex output of matrices for increasing readbility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/666",
     "user": "https://github.com/pdenapo"

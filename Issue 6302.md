@@ -1,15 +1,16 @@
-# Issue 6302: [with patch; needs review] make openopt an optional spkg
+# Issue 6302: [with patch, positive review] make openopt an optional spkg
 
 archive/issues_006302.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIt's here: \n\n  http://sage.math.washington.edu/home/wstein/patches/openopt-0.24.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6302\n\n",
+    "closed_at": "2009-07-29T12:20:29Z",
     "created_at": "2009-06-15T16:27:20Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch; needs review] make openopt an optional spkg",
+    "title": "[with patch, positive review] make openopt an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6302",
     "user": "https://github.com/williamstein"

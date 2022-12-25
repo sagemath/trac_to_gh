@@ -4,6 +4,7 @@ archive/issues_007609.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe new pynac package and patch from #7490 introduced numerical noise in some doctests. Attached patch should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7609\n\n",
+    "closed_at": "2009-12-07T23:22:25Z",
     "created_at": "2009-12-06T00:38:29Z",
     "labels": [
         "component: symbolics",

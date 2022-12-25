@@ -3,7 +3,8 @@
 archive/issues_000392.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: round, real, arithmetic\n\nThe function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.\n\n```\nsage: a = 5.499999999999999 \nsage: a.prec()\n56\nsage: round(a)  ## This is ok\n5.0\n\nsage: b = 5.4999999999999999\nsage: b.prec()\n59\nsage: round(b)  ## This isn't ok \n6.0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/392\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: round, real, precision, arithmetic\n\nThe function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.\n\n```\nsage: a = 5.499999999999999 \nsage: a.prec()\n56\nsage: round(a)  ## This is ok\n5.0\n\nsage: b = 5.4999999999999999\nsage: b.prec()\n59\nsage: round(b)  ## This isn't ok \n6.0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/392\n\n",
+    "closed_at": "2007-08-18T22:25:01Z",
     "created_at": "2007-06-28T06:03:57Z",
     "labels": [
         "component: algebraic geometry",
@@ -19,7 +20,7 @@ archive/issues_000392.json:
 ```
 Assignee: @williamstein
 
-Keywords: round, real, arithmetic
+Keywords: round, real, precision, arithmetic
 
 The function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.
 

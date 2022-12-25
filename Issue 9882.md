@@ -4,6 +4,7 @@ archive/issues_009882.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux: \n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: L = [R.random_element() for i in range(100)]\nsage: timeit(\"f = S(L)\")\n125 loops, best of 3: 4.79 ms per loop\n```\n\nThat's about 124000 cycles per coefficient conversion. Compare to the cost of multiplying polynomials of the same degree:\n\n```\nsage: f = S([R.random_element() for i in range(100)])\nsage: g = S([R.random_element() for i in range(100)])\nsage: timeit(\"h = f * g\")\n625 loops, best of 3: 31.8 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9883\n\n",
+    "closed_at": "2014-02-11T21:22:19Z",
     "created_at": "2010-09-09T16:00:33Z",
     "labels": [
         "component: performance",

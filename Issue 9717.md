@@ -1,9 +1,10 @@
-# Issue 9717: fix variable substitution in PolyBoRi
+# Issue 9717: fix variable substitution in PolyBoRi + finding M4RI
 
 archive/issues_009717.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  polybori alexanderdreyer @nexttime @qed777\n\nFor some inputs our[This is the Trac macro *PolyBoRi* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PolyBoRi-macro) wrapper throws an error while upstream computes the example just fine. The reason we fail is that some rings don't match and thus coercion goes wrong. The problem was reported by Joan Daemen who also provided an example via private communication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9717\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori alexanderdreyer @nexttime @qed777\n\nFor some inputs our [This is the Trac macro *PolyBoRi* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PolyBoRi-macro) wrapper throws an error while upstream computes the example just fine. The reason we fail is that some rings don't match and thus coercion goes wrong. The problem was reported by Joan Daemen who also provided an example via private communication.\n\n---\n\n## Note to the release managers\n\nWhen merging the [new PolyBoRi 0.6.4.p4 spkg](http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.4.p4.spkg), **apply**\n[the attached patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9717/polybori-0.6.4.p2.patch) **to the Sage library**.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9717\n\n",
+    "closed_at": "2010-08-15T08:03:29Z",
     "created_at": "2010-08-10T12:43:40Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_009717.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "fix variable substitution in PolyBoRi",
+    "title": "fix variable substitution in PolyBoRi + finding M4RI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9717",
     "user": "https://github.com/malb"
@@ -21,7 +22,14 @@ Assignee: @malb
 
 CC:  polybori alexanderdreyer @nexttime @qed777
 
-For some inputs our[This is the Trac macro *PolyBoRi* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PolyBoRi-macro) wrapper throws an error while upstream computes the example just fine. The reason we fail is that some rings don't match and thus coercion goes wrong. The problem was reported by Joan Daemen who also provided an example via private communication.
+For some inputs our [This is the Trac macro *PolyBoRi* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#PolyBoRi-macro) wrapper throws an error while upstream computes the example just fine. The reason we fail is that some rings don't match and thus coercion goes wrong. The problem was reported by Joan Daemen who also provided an example via private communication.
+
+---
+
+## Note to the release managers
+
+When merging the [new PolyBoRi 0.6.4.p4 spkg](http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.4.p4.spkg), **apply**
+[the attached patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9717/polybori-0.6.4.p2.patch) **to the Sage library**.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9717
 

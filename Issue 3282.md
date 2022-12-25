@@ -4,6 +4,7 @@ archive/issues_003282.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nlibecm was moved without updating pbuild and thus pbuild fails to compile sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3282\n\n",
+    "closed_at": "2008-05-23T16:31:56Z",
     "created_at": "2008-05-23T16:31:06Z",
     "labels": [
         "component: pbuild",

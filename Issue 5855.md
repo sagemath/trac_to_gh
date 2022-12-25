@@ -1,16 +1,17 @@
-# Issue 5855: [with patch, needs review] implement squarefree_divisors function
+# Issue 5855: [with patch, with positive review] implement squarefree_divisors function
 
 archive/issues_005855.json:
 ```json
 {
-    "body": "Assignee: somebody\n\ne.g.\n\n```\nsage: list(squarefree_divisors(12))\n[1, 2, 3, 6, -1, -2, -3, -6]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5855\n\n",
+    "body": "Assignee: somebody\n\ne.g.\n\n```\nsage: list(squarefree_divisors(12))\n[1, 2, 3, 6]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5855\n\n",
+    "closed_at": "2009-04-30T05:51:51Z",
     "created_at": "2009-04-22T15:30:53Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] implement squarefree_divisors function",
+    "title": "[with patch, with positive review] implement squarefree_divisors function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5855",
     "user": "https://github.com/rlmill"
@@ -22,7 +23,7 @@ e.g.
 
 ```
 sage: list(squarefree_divisors(12))
-[1, 2, 3, 6, -1, -2, -3, -6]
+[1, 2, 3, 6]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5855

@@ -1,21 +1,22 @@
-# Issue 339: HTML code in src browser and in notebook cells that are not being editing is not showing
+# Issue 339: HTML code in src browser is being interpreted by web browser
 
 archive/issues_000339.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFor example on http://sagenb.com/src_browser?/misc/sagedoc.py, some html code is not showing in the browser, because it has been interpreted by the web browser.\n\nIssue created by migration from https://trac.sagemath.org/ticket/339\n\n",
+    "body": "Assignee: TimothyClemans\n\nFor example on http://sagenb.com/src_browser?/misc/sagedoc.py, some html code is not showing in the browser, because it has been interpreted by the web browser.\n\nIssue created by migration from https://trac.sagemath.org/ticket/339\n\n",
+    "closed_at": "2007-03-31T18:24:37Z",
     "created_at": "2007-03-31T17:53:12Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
-    "title": "HTML code in src browser and in notebook cells that are not being editing is not showing",
+    "title": "HTML code in src browser is being interpreted by web browser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/339",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 For example on http://sagenb.com/src_browser?/misc/sagedoc.py, some html code is not showing in the browser, because it has been interpreted by the web browser.
 

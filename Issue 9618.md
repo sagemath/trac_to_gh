@@ -3,7 +3,8 @@
 archive/issues_009618.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nWe know that the chromatic number of a graph is more than its number of vertices divided by te size of its maximum independent set.\n\nSage did not.\n\nComputations of max clique/independent set are way faster than coloring thanks to Cliquer, by the way !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9618\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nWe know that the chromatic number of a graph is more than its number of vertices divided by te size of its maximum independent set.\n\nSage did not.\n\nComputations of max clique/independent set are way faster than coloring thanks to Cliquer, by the way !\n\nThe different is especially remarquable on random graphs :\n\nAfter :\n\n```\n sage: g = graphs.RandomGNP(40,.3)\n sage: g.graph6_string()\n'geAp`wP`?pwiEc_g{M?Smecc`CIB?OCAcGAa`QO?Q?GgH?CRWQ@_?QOJwG@?????AFDGRO{FU_KGDQLACp`LOHcPCAFHBMJwRB]OMRKSAOSx_`PI_OgRBB?UBTG@IAQPBQO'\n sage: %timeit g.coloring(algorithm = \"MILP\")\n 5 loops, best of 3: 241 ms per loop\n```\n\nBefore :\n\n```\n sage: g = Graph('geAp`wP`?pwiEc_g{M?Smecc`CIB?OCAcGAa`QO?Q?GgH?CRWQ@_?QOJwG@?????AFDGRO{FU_KGDQLACp`LOHcPCAFHBMJwRB]OMRKSAOSx_`PI_OgRBB?UBTG@IAQPBQO')\n sage: %timeit g.coloring(algorithm = \"MILP\")\n5 loops, best of 3: 361 ms per loop\n```\n\nAnd this difference should increase exponentially when the number of vertices increases (on random graphs)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9618\n\n",
+    "closed_at": "2010-12-02T16:09:18Z",
     "created_at": "2010-07-28T04:00:50Z",
     "labels": [
         "component: graph theory"
@@ -22,6 +23,28 @@ We know that the chromatic number of a graph is more than its number of vertices
 Sage did not.
 
 Computations of max clique/independent set are way faster than coloring thanks to Cliquer, by the way !
+
+The different is especially remarquable on random graphs :
+
+After :
+
+```
+ sage: g = graphs.RandomGNP(40,.3)
+ sage: g.graph6_string()
+'geAp`wP`?pwiEc_g{M?Smecc`CIB?OCAcGAa`QO?Q?GgH?CRWQ@_?QOJwG@?????AFDGRO{FU_KGDQLACp`LOHcPCAFHBMJwRB]OMRKSAOSx_`PI_OgRBB?UBTG@IAQPBQO'
+ sage: %timeit g.coloring(algorithm = "MILP")
+ 5 loops, best of 3: 241 ms per loop
+```
+
+Before :
+
+```
+ sage: g = Graph('geAp`wP`?pwiEc_g{M?Smecc`CIB?OCAcGAa`QO?Q?GgH?CRWQ@_?QOJwG@?????AFDGRO{FU_KGDQLACp`LOHcPCAFHBMJwRB]OMRKSAOSx_`PI_OgRBB?UBTG@IAQPBQO')
+ sage: %timeit g.coloring(algorithm = "MILP")
+5 loops, best of 3: 361 ms per loop
+```
+
+And this difference should increase exponentially when the number of vertices increases (on random graphs)
 
 Nathann
 

@@ -1,16 +1,17 @@
-# Issue 5689: hitting control c while computing pi results in wrong answers later
+# Issue 5689: [with patch; positive review] hitting control c while computing pi results in wrong answers later
 
 archive/issues_005689.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nD-69-91-159-159:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: RealField(10^6).pi()\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/wstein/.sage/temp/D_69_91_159_159.dhcp4.washington.edu/27480/_Users_wstein__sage_init_sage_0.py in <module>()\n\nKeyboardInterrupt: \nsage: RealField(10^3).pi()\n3.14159265358979323851280895940618620443274267017841339111328125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\nJeff Blakeslee reported this.\n\nCwitty followed up with:\n\n```\nOh, interesting!  I've always worried about _sig_on/_sig_off, but this\nis the first reproducible bug I've seen them cause.\n\nWhen Sage is computing pi to many digits (and in many other cases), it\nsets up a signal handler; if you press Control-C, then it will longjmp\nout of the signal handler.  This lets you interrupt long-running\ncomputations, but it's a really nasty thing to do... you can easily\nget memory leaks, and I can imagine lots of (somewhat unlikely)\nsituations where you would crash Sage or get wrong answers.\n\nI'm not sure what to do about the problem, though.  The \"right\" fix is\nto go through all the C libraries that Sage calls, and add periodic\nchecks for Control-C; but that's pretty impractical.  Another\npossibility would be to disable _sig_on, so that Control-C doesn't\nwork in long-running C computations.  This would fix the bug, but it\nwould also be vastly annoying.\n\nOne workaround that might fix this particular problem is to catch\nKeyboardInterrupt exceptions in the .pi() method (and in\n.euler_constant(), .catalan_constant(), and .log2()), and call\nmpfr_free_cache() if one is seen.  Hopefully then MPFR would no longer\nbelieve it has a higher precision value computed than it actually does\nhave.\n\nCarl\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5689\n\n",
+    "body": "Assignee: somebody\n\n```\nD-69-91-159-159:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: RealField(10^6).pi()\n^C\n---------------------------------------------------------------------------\nKeyboardInterrupt                         \nTraceback (most recent call last)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/wstein/.sage/temp/D_69_91_159_159.dhcp4.washington.edu/\n27480/_Users_wstein__sage_init_sage_0.py in <module>()\n\nKeyboardInterrupt: \nsage: RealField(10^3).pi()\n3.1415926535897932385128089594061862044327426701784133911132812500\n000000000000000000000000000000000000000000000000000000000000000000\n000000000000000000000000000000000000000000000000000000000000000000\n000000000000000000000000000000000000000000000000000000000000000000\n0000000000000000000000000000000000000\n```\n\nJeff Blakeslee reported this.\n\nCwitty followed up with:\n\n```\nOh, interesting!  I've always worried about _sig_on/_sig_off, but this\nis the first reproducible bug I've seen them cause.\n\nWhen Sage is computing pi to many digits (and in many other cases), it\nsets up a signal handler; if you press Control-C, then it will longjmp\nout of the signal handler.  This lets you interrupt long-running\ncomputations, but it's a really nasty thing to do... you can easily\nget memory leaks, and I can imagine lots of (somewhat unlikely)\nsituations where you would crash Sage or get wrong answers.\n\nI'm not sure what to do about the problem, though.  The \"right\" fix is\nto go through all the C libraries that Sage calls, and add periodic\nchecks for Control-C; but that's pretty impractical.  Another\npossibility would be to disable _sig_on, so that Control-C doesn't\nwork in long-running C computations.  This would fix the bug, but it\nwould also be vastly annoying.\n\nOne workaround that might fix this particular problem is to catch\nKeyboardInterrupt exceptions in the .pi() method (and in\n.euler_constant(), .catalan_constant(), and .log2()), and call\nmpfr_free_cache() if one is seen.  Hopefully then MPFR would no longer\nbelieve it has a higher precision value computed than it actually does\nhave.\n\nCarl\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5689\n\n",
+    "closed_at": "2009-04-06T22:54:55Z",
     "created_at": "2009-04-05T19:06:09Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "hitting control c while computing pi results in wrong answers later",
+    "title": "[with patch; positive review] hitting control c while computing pi results in wrong answers later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5689",
     "user": "https://github.com/williamstein"
@@ -23,15 +24,22 @@ D-69-91-159-159:~ wstein$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: RealField(10^6).pi()
-^C---------------------------------------------------------------------------
-KeyboardInterrupt                         Traceback (most recent call last)
+^C
+---------------------------------------------------------------------------
+KeyboardInterrupt                         
+Traceback (most recent call last)
 | Sage Version 3.4, Release Date: 2009-03-11                         |
 | Type notebook() for the GUI, and license() for information.        |
-/Users/wstein/.sage/temp/D_69_91_159_159.dhcp4.washington.edu/27480/_Users_wstein__sage_init_sage_0.py in <module>()
+/Users/wstein/.sage/temp/D_69_91_159_159.dhcp4.washington.edu/
+27480/_Users_wstein__sage_init_sage_0.py in <module>()
 
 KeyboardInterrupt: 
 sage: RealField(10^3).pi()
-3.14159265358979323851280895940618620443274267017841339111328125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3.1415926535897932385128089594061862044327426701784133911132812500
+000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000
 ```
 
 Jeff Blakeslee reported this.

@@ -3,7 +3,8 @@
 archive/issues_008737.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @robertwb @robert-marik drkirkby mvngu\n\nThis is a followup to [http://trac.sagemath.org/sage_trac/ticket/8424#comment:5](http://trac.sagemath.org/sage_trac/ticket/8424#comment:5).  Without this patch, the Sage library (as of 4.4.alpha0) doesn't build on t2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8737\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @robertwb @robert-marik drkirkby mvngu\n\nThis is a followup to [http://trac.sagemath.org/sage_trac/ticket/8424#comment:5](http://trac.sagemath.org/sage_trac/ticket/8424#comment:5).  Without this patch, the Sage library (as of 4.4.alpha0) doesn't build on t2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8737\n\n",
+    "closed_at": "2010-04-23T17:08:13Z",
     "created_at": "2010-04-21T15:25:00Z",
     "labels": [
         "component: graphics",
@@ -17,7 +18,7 @@ archive/issues_008737.json:
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: jason, was
+Assignee: drkirkby
 
 CC:  @robertwb @robert-marik drkirkby mvngu
 

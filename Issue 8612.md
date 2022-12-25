@@ -4,6 +4,7 @@ archive/issues_008612.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
+    "closed_at": "2010-03-29T22:06:58Z",
     "created_at": "2010-03-26T05:46:26Z",
     "labels": [
         "component: linear algebra",

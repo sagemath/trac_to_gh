@@ -1,16 +1,17 @@
-# Issue 6708: spell-check all modules under sage/groups
+# Issue 6708: [with patch, positive review] spell-check all modules under sage/groups
 
 archive/issues_006708.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6708\n\n",
+    "closed_at": "2009-08-12T05:52:43Z",
     "created_at": "2009-08-09T10:17:32Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/groups",
+    "title": "[with patch, positive review] spell-check all modules under sage/groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6708",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -1,16 +1,17 @@
-# Issue 5354: [with patch, needs review] stop paying attention to <stdlib.h> RAND_MAX (should fix problems on Solaris)
+# Issue 5354: [with patch, positive review] stop paying attention to <stdlib.h> RAND_MAX (should fix problems on Solaris)
 
 archive/issues_005354.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe randstate framework always provides 31-bit random numbers regardless of platform, so RAND_MAX should be ignored.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5354\n\n",
+    "closed_at": "2009-02-24T19:50:21Z",
     "created_at": "2009-02-24T02:21:00Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] stop paying attention to <stdlib.h> RAND_MAX (should fix problems on Solaris)",
+    "title": "[with patch, positive review] stop paying attention to <stdlib.h> RAND_MAX (should fix problems on Solaris)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5354",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

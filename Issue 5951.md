@@ -1,9 +1,10 @@
-# Issue 5951: [with patch, needs review] fix a few minor issues with the reference manual in 3.4.2.rc0
+# Issue 5951: [with patch, positive review] fix a few minor issues with the reference manual in 3.4.2.rc0
 
 archive/issues_005951.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe file latex.py causes some warnings to pop up when building the reference manual (because of my patch at #5791).  This fixes them.  It also adds the file latex_macros.py to the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5951\n\n",
+    "closed_at": "2009-05-01T05:18:38Z",
     "created_at": "2009-05-01T03:19:38Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_005951.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] fix a few minor issues with the reference manual in 3.4.2.rc0",
+    "title": "[with patch, positive review] fix a few minor issues with the reference manual in 3.4.2.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5951",
     "user": "https://github.com/jhpalmieri"

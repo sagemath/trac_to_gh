@@ -4,9 +4,10 @@ archive/issues_007506.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nKeywords: notebook, documentation, server\n\nFrom Chris Wuthrich on sage-edu:\n\"From my perspective the biggest problem was that I did not allocate\nenough resources to the virtual server the notebook was running on.\nI was a bit disappointed with the documentation for setting up a\nserver etc. For instance the docstring of the notebook still contains\nlines like\n  nb = load('./sage/sage_notebook/nb.sobj')\nwhich do not seem to apply any longer. \"\n\nSo at least that needs to be cleaned up in notebook_object.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7506\n\n",
+    "closed_at": "2010-02-11T15:03:29Z",
     "created_at": "2009-11-21T02:46:12Z",
     "labels": [
-        "component: notebook",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",

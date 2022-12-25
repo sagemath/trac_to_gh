@@ -1,16 +1,17 @@
-# Issue 4928: Create Sage 3.2.3 release notes
+# Issue 4928: [with patch, positive review] Create Sage 3.2.3 release notes
 
 archive/issues_004928.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs the summary says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4928\n\n",
+    "closed_at": "2009-01-19T05:10:12Z",
     "created_at": "2009-01-02T23:16:37Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Create Sage 3.2.3 release notes",
+    "title": "[with patch, positive review] Create Sage 3.2.3 release notes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4928",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

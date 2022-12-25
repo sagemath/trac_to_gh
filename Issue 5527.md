@@ -1,9 +1,10 @@
-# Issue 5527: more improvements to Sphinx documentation of sr.py
+# Issue 5527: [with patch, positive review] more improvements to Sphinx documentation of sr.py
 
 archive/issues_005527.json:
 ```json
 {
     "body": "Assignee: tba\n\nWhile reviewing ticket #5493, I noticed that the Sphinx documentation of `sr.py` can be made a little prettier. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5527\n\n",
+    "closed_at": "2009-03-20T20:50:31Z",
     "created_at": "2009-03-16T07:49:17Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005527.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "more improvements to Sphinx documentation of sr.py",
+    "title": "[with patch, positive review] more improvements to Sphinx documentation of sr.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5527",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

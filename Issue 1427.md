@@ -4,6 +4,7 @@ archive/issues_001427.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nThis \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/rpy-1.0.1.spkg\n\nfixes the missing symbols on OSX 10.4\n\nIssue created by migration from https://trac.sagemath.org/ticket/1427\n\n",
+    "closed_at": "2007-12-09T23:52:55Z",
     "created_at": "2007-12-08T11:42:58Z",
     "labels": [
         "component: numerical",

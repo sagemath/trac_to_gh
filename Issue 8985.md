@@ -3,7 +3,8 @@
 archive/issues_008985.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nI looked in COPYING.txt in SAGE_ROOT and it has:\n\n```\n...\ngmp                                  LGPL\n...\nmpfi                                 GPL\nmpfr                                 LGPL\n...\n```\n\nso it includes gmp, but shouldn't, and it doesn't include mpir.  It might be out of date in other ways.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8985\n\n",
+    "body": "Assignee: mvngu\n\nI looked in COPYING.txt in SAGE_ROOT and it has:\n\n```\n...\ngmp                                  LGPL\n...\nmpfi                                 GPL\nmpfr                                 LGPL\n...\n```\n\nso it includes gmp, but shouldn't, and it doesn't include mpir.  It might be out of date in other ways.\n\nSee this [wiki page](http://wiki.sagemath.org/ticket/8985) for work in progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8985\n\n",
+    "closed_at": "2015-04-14T23:03:44Z",
     "created_at": "2010-05-18T05:24:32Z",
     "labels": [
         "component: documentation",
@@ -31,6 +32,8 @@ mpfr                                 LGPL
 ```
 
 so it includes gmp, but shouldn't, and it doesn't include mpir.  It might be out of date in other ways.
+
+See this [wiki page](http://wiki.sagemath.org/ticket/8985) for work in progress.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8985
 

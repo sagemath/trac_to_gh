@@ -1,16 +1,17 @@
-# Issue 4275: [with patch, needs review] improved doctest for elliptic curves (part 2)
+# Issue 4275: [with new patch, with positive review] improved doctest for elliptic curves (part 2)
 
 archive/issues_004275.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThis patch adds missing doctests to ell_modular_symbols.py, ell_number_field.py and\nell_padic_field.py. The conversion to Pari in ell_padic_field.py was broken, and still\nfails in some cases (see example in file), but I don't know if this is a bug in Pari, or\nan invalid input.\n\nI also removed some unused functions in ell_modular_symbols.py, it would be good to check they\nare not needed elsewhere.\n\nNote that some internal functions could not be tested, thus the coverage is not 100%.\n\n```\nbash-3.00$ sage -coverage ell_modular_symbols.py ell_number_field.py ell_padic_field.py\n----------------------------------------------------------------------\nell_modular_symbols.py\nSCORE ell_modular_symbols.py: 100% (6 of 6)\n----------------------------------------------------------------------\n\n----------------------------------------------------------------------\nell_number_field.py\nSCORE ell_number_field.py: 90% (19 of 21)\n\nMissing documentation:\n         * _proot(x, e):\n         * _pquadroots (a, b, c):\n\n----------------------------------------------------------------------\n\n----------------------------------------------------------------------\nell_padic_field.py\nSCORE ell_padic_field.py: 80% (4 of 5)\n\nMissing documentation:\n         * _frob(P):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4275\n\n",
+    "closed_at": "2008-10-18T19:48:29Z",
     "created_at": "2008-10-13T15:58:25Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] improved doctest for elliptic curves (part 2)",
+    "title": "[with new patch, with positive review] improved doctest for elliptic curves (part 2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4275",
     "user": "https://github.com/zimmermann6"

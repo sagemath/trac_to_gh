@@ -1,16 +1,17 @@
-# Issue 6762: [with patch, needs review] add __contains__ to quaternion algebra ideals
+# Issue 6762: [with patch, positive review] add __contains__ to quaternion algebra ideals
 
 archive/issues_006762.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe title is self explanatory. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6762\n\n",
+    "closed_at": "2009-08-31T12:03:14Z",
     "created_at": "2009-08-16T09:16:14Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] add __contains__ to quaternion algebra ideals",
+    "title": "[with patch, positive review] add __contains__ to quaternion algebra ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6762",
     "user": "https://github.com/robertwb"

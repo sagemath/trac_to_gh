@@ -3,10 +3,11 @@
 archive/issues_000476.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNeed to re-organize the chapter in the SAGE reference manual on the notebook, which is a complete mess right now. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/476\n\n",
+    "body": "Assignee: tba\n\nNeed to re-organize the chapter in the SAGE reference manual on the notebook, which is a complete mess right now. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/476\n\n",
+    "closed_at": "2008-10-26T02:32:47Z",
     "created_at": "2007-08-21T21:44:51Z",
     "labels": [
-        "component: user interface",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_000476.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: tba
 
 Need to re-organize the chapter in the SAGE reference manual on the notebook, which is a complete mess right now. 
 

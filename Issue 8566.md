@@ -4,6 +4,7 @@ archive/issues_008566.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nAs reported on sage-support:\n\nhttp://groups.google.com/group/sage-support/msg/c636e1b5b820eb19\n\nthe 'm' option to tar used in prereq is causing a problem on a minimal linux system, as no such option is supported. The option seems to be unnecessary, as Sage seems to build fine without this option, which is only to 'touch' the files. I don't see this being necessary. \n\nI'll update the prereq script, to remove the option - a simple one-byte change. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8566\n\n",
+    "closed_at": "2011-05-09T09:17:45Z",
     "created_at": "2010-03-20T11:00:49Z",
     "labels": [
         "component: build",

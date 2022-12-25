@@ -1,9 +1,10 @@
-# Issue 2850: Docstrings and doctests for permgroup.py
+# Issue 2850: [with patch, positive review] Docstrings and doctests for permgroup.py
 
 archive/issues_002850.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: doctest, docstring\n\nProvide missing docstrings and doctests for groups/perm_gps/permgroup.py (CURRENT SCORE permgroup.py: 81% (59 of 72))\n\nIssue created by migration from https://trac.sagemath.org/ticket/2850\n\n",
+    "closed_at": "2008-04-15T00:30:38Z",
     "created_at": "2008-04-07T22:30:17Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002850.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Docstrings and doctests for permgroup.py",
+    "title": "[with patch, positive review] Docstrings and doctests for permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2850",
     "user": "https://github.com/cswiercz"

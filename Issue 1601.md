@@ -1,22 +1,23 @@
-# Issue 1601: issue with noclobber and building sage
+# Issue 1601: [with patch, positive review] issue with noclobber and building sage
 
 archive/issues_001601.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n```\n\n > Hi, William,\n >\n > I have had trouble getting the most recent versions of sage to\n > compile.  (This is Mac OS X 10.4.11, gcc 4.0.1, 5367.)  My problem\n > started with 2.8.15, and continued with 2.9.  Eventually, I found out\n > that something (I can't figure out what just yet) is returning the\n > string \"noclobber\", which in turn is being passed along as an argument\n > to local/bin/sage-spkg.\n >\n > After the line\n >\n >     PKG_BASE=`echo \"$PKG_NAME\" | sed -e \"s/-.*//\"`\n >\n > I added\n >\n >     if [ $PKG_SRC == \"noclobber\" ]; then\n >       exit 0\n >     fi\n >\n > which cleared up the problem; otherwise, sage tries (and obviously\n > fails) to compile noclobber.spkg.\n >\n > I wish that I had the time to track down which environment variable or\n > alias is causing the problem.  This has something to do with\n > redirecting output, and specifically 2>&1 as an option to some\n > command.  I never quite worked out where the problem is, and I don't\n > think that my work-around could be harmful, so I suggest that you\n > include it in the next release.--Rob\n >\n\nHi,\n\nI found out that I had the line \"set noclobber\" in both my .bashrc and\n.bash_profile files.  Removing that cleared up the problem.  I have no\nclue why I ever put added the line in the first place, nor why it\nwould have caused a problem.--Rob\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1601\n\n",
+    "body": "Assignee: mabshoff\n\n```\n\n > Hi, William,\n >\n > I have had trouble getting the most recent versions of sage to\n > compile.  (This is Mac OS X 10.4.11, gcc 4.0.1, 5367.)  My problem\n > started with 2.8.15, and continued with 2.9.  Eventually, I found out\n > that something (I can't figure out what just yet) is returning the\n > string \"noclobber\", which in turn is being passed along as an argument\n > to local/bin/sage-spkg.\n >\n > After the line\n >\n >     PKG_BASE=`echo \"$PKG_NAME\" | sed -e \"s/-.*//\"`\n >\n > I added\n >\n >     if [ $PKG_SRC == \"noclobber\" ]; then\n >       exit 0\n >     fi\n >\n > which cleared up the problem; otherwise, sage tries (and obviously\n > fails) to compile noclobber.spkg.\n >\n > I wish that I had the time to track down which environment variable or\n > alias is causing the problem.  This has something to do with\n > redirecting output, and specifically 2>&1 as an option to some\n > command.  I never quite worked out where the problem is, and I don't\n > think that my work-around could be harmful, so I suggest that you\n > include it in the next release.--Rob\n >\n\nHi,\n\nI found out that I had the line \"set noclobber\" in both my .bashrc and\n.bash_profile files.  Removing that cleared up the problem.  I have no\nclue why I ever put added the line in the first place, nor why it\nwould have caused a problem.--Rob\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1601\n\n",
+    "closed_at": "2008-02-18T21:28:36Z",
     "created_at": "2007-12-27T01:16:55Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "issue with noclobber and building sage",
+    "title": "[with patch, positive review] issue with noclobber and building sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1601",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 ```
 

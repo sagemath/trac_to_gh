@@ -4,6 +4,7 @@ archive/issues_006309.json:
 ```json
 {
     "body": "Assignee: @antieau\n\nFirst, I cached the graph() of a simplicial complex. These get very big and tedious to compute as the complexes get bigger.\n\nI added the method clique_complex to the graph class. This returns the largest simplicial complex whose 1-skeleton is the given graph. Such simplicial complexes are called flag complexes.\n\nI added is_flag_complex, is_connected, and remove_facet methods to the simplicial complex class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6309\n\n",
+    "closed_at": "2009-11-07T06:13:09Z",
     "created_at": "2009-06-16T06:37:33Z",
     "labels": [
         "component: algebraic topology",

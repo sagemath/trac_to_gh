@@ -1,21 +1,22 @@
-# Issue 3211: rref function for matrices
+# Issue 3211: make echelon_form work over fraction fields (and hermite_form = old echelon_form)
 
 archive/issues_003211.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @kcrisman @rbeezer\n\nThe rref() function would copy the matrix to a matrix over the field of fractions of its base ring, then return echelon_form() of the new matrix.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3211\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @williamstein @kcrisman @rbeezer\n\nThe rref() function would copy the matrix to a matrix over the field of fractions of its base ring, then return echelon_form() of the new matrix.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3211\n\n",
+    "closed_at": "2010-03-02T21:55:51Z",
     "created_at": "2008-05-15T13:43:48Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "rref function for matrices",
+    "title": "make echelon_form work over fraction fields (and hermite_form = old echelon_form)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3211",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @williamstein @kcrisman @rbeezer
 

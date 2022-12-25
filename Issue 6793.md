@@ -1,22 +1,23 @@
-# Issue 6793: 1 doctest timed out in devel/sage/sage/schemes/elliptic_curves/ell_point.py
+# Issue 6793: fix doctest timeout in schemes/elliptic_curves/ell_point.py due to upgrade to Maxima 5.19.0
 
 archive/issues_006793.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n<SNIP>\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6793\n\n",
+    "body": "Keywords: maxima\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n<SNIP>\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6793\n\n",
+    "closed_at": "2013-12-05T08:07:36Z",
     "created_at": "2009-08-20T23:03:45Z",
     "labels": [
-        "component: elliptic curves",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "1 doctest timed out in devel/sage/sage/schemes/elliptic_curves/ell_point.py",
+    "title": "fix doctest timeout in schemes/elliptic_curves/ell_point.py due to upgrade to Maxima 5.19.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6793",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @loefflerd
+Keywords: maxima
 
 On Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1
 

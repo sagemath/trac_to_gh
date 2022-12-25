@@ -1,16 +1,16 @@
-# Issue 4498: The argument function does not work with variables.
+# Issue 4498: Implement a symbolic version of the arg function
 
 archive/issues_004498.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @kcrisman ktkohl\n\n\"The function should return the argument of a complex function.\" - Ronan Paix\u00e3o\n\nIssue created by migration from https://trac.sagemath.org/ticket/4498\n\n",
+    "body": "Assignee: somebody\n\nCC:  @kcrisman ktkohl\n\nKeywords: beginner, sd35.5\n\nIt would be nice if there were a symbolic arg function, just like the symbolic sin, cos, etc., functions.  Then the following would happen:\n\n```\nsage: f = arg(x); f\narg(x)\nsage: f.subs(x=1+I)\narg(1+I)\n```\n\nNow we have\n\n```\nsage: arg(1+I)\n0.785398163397\nsage: type(arg(1+I))\n<type 'sage.rings.real_double.RealDoubleElement'>\n```\n\nI.e., the arg in Sage is currently the numerical person's arg, not the symbolic person's.  It just casts to CDF.\n\n\n\"The function should return the argument of a complex function.\" - Ronan Paix\u00e3o\n\nApply\n* attachment:trac_4498-symbolic_arg.cleanup.patch\n* attachment:trac_4498-arg_evalf.patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/4498\n\n",
+    "closed_at": "2012-02-14T14:20:11Z",
     "created_at": "2008-11-11T23:21:48Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "The argument function does not work with variables.",
+    "title": "Implement a symbolic version of the arg function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4498",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
@@ -20,7 +20,34 @@ Assignee: somebody
 
 CC:  @kcrisman ktkohl
 
+Keywords: beginner, sd35.5
+
+It would be nice if there were a symbolic arg function, just like the symbolic sin, cos, etc., functions.  Then the following would happen:
+
+```
+sage: f = arg(x); f
+arg(x)
+sage: f.subs(x=1+I)
+arg(1+I)
+```
+
+Now we have
+
+```
+sage: arg(1+I)
+0.785398163397
+sage: type(arg(1+I))
+<type 'sage.rings.real_double.RealDoubleElement'>
+```
+
+I.e., the arg in Sage is currently the numerical person's arg, not the symbolic person's.  It just casts to CDF.
+
+
 "The function should return the argument of a complex function." - Ronan Paixão
+
+Apply
+* attachment:trac_4498-symbolic_arg.cleanup.patch
+* attachment:trac_4498-arg_evalf.patch
 
 Issue created by migration from https://trac.sagemath.org/ticket/4498
 

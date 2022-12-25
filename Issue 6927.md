@@ -1,27 +1,28 @@
-# Issue 6927: extend CachedFunction to handle disk-cache
+# Issue 6927: Extend CachedFunction to handle disk-cache
 
 archive/issues_006927.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @williamstein @craigcitro\n\nKeywords: cache database\n\nThe CachedFunction class is a wonderful decorator that provides cacheing of computations, unique rings, etc.  However, for any number of databases, it would be useful if the computed data was to persist between sessions.  So, we should extend the CachedFunction class to enable disk caches, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6927\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @craigcitro\n\nKeywords: cache database\n\nThe CachedFunction class is a wonderful decorator that provides caching of computations, unique rings, etc.  However, for any number of databases, it would be useful if the computed data was to persist between sessions.  So, we should extend the CachedFunction class to enable disk caches, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6927\n\n",
+    "closed_at": "2010-04-19T05:20:02Z",
     "created_at": "2009-09-12T23:24:42Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "extend CachedFunction to handle disk-cache",
+    "title": "Extend CachedFunction to handle disk-cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6927",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: cwitty
+Assignee: boothby
 
 CC:  @williamstein @craigcitro
 
 Keywords: cache database
 
-The CachedFunction class is a wonderful decorator that provides cacheing of computations, unique rings, etc.  However, for any number of databases, it would be useful if the computed data was to persist between sessions.  So, we should extend the CachedFunction class to enable disk caches, too.
+The CachedFunction class is a wonderful decorator that provides caching of computations, unique rings, etc.  However, for any number of databases, it would be useful if the computed data was to persist between sessions.  So, we should extend the CachedFunction class to enable disk caches, too.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6927
 

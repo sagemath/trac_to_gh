@@ -1,15 +1,16 @@
-# Issue 3074: [with spkg] Cyton 0.9.6.14 released
+# Issue 3074: [with spkg, positive review] Cyton 0.9.6.14 released
 
 archive/issues_003074.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis contains all the changes in the latest spkg, as well as better unicode handling (mostly irrelevant for Sage), optimized append method, and the ability to declare cdef variable as python builtin types (list, dict, etc.) \n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/\n\nIssue created by migration from https://trac.sagemath.org/ticket/3074\n\n",
+    "closed_at": "2008-05-02T16:16:23Z",
     "created_at": "2008-05-01T21:42:01Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with spkg] Cyton 0.9.6.14 released",
+    "title": "[with spkg, positive review] Cyton 0.9.6.14 released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3074",
     "user": "https://github.com/robertwb"

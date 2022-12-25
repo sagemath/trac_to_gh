@@ -1,22 +1,23 @@
-# Issue 6091: [with patch, needs review] syntax extended for subfields of number fields
+# Issue 6091: [with new patch, positive review] syntax extended for subfields of number fields
 
 archive/issues_006091.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAt present\n\n```\nsage: C.<z> = CyclotomicField(20)\nsage: D.<w>, phi = C.subfield(z^4)\n```\nfails.\n\nThis is simply because the code uses the name `name` instead of the name `names`.  The patch fixes this, and does the same for `change_generator` (with doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6091\n\n",
+    "body": "Assignee: @williamstein\n\nAt present\n\n```\nsage: C.<z> = CyclotomicField(20)\nsage: D.<w>, phi = C.subfield(z^4)\n```\nfails.\n\nThis is simply because the code uses the name `name` instead of the name `names`.  The patch fixes this, and does the same for `change_generator` (with doctests).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6091\n\n",
+    "closed_at": "2009-06-04T19:08:10Z",
     "created_at": "2009-05-20T06:41:06Z",
     "labels": [
-        "component: algebra",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] syntax extended for subfields of number fields",
+    "title": "[with new patch, positive review] syntax extended for subfields of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6091",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 At present
 

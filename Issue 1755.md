@@ -4,10 +4,10 @@ archive/issues_001755.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAdd the ability to access the functionality of #1732 to the default matrix(...) constructor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1755\n\n",
+    "closed_at": "2019-02-26T13:58:00Z",
     "created_at": "2008-01-11T03:17:59Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Hook block matrices into matrix(...) command",

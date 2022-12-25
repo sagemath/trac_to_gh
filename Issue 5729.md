@@ -1,15 +1,16 @@
-# Issue 5729: Cleanup of crystal code: cartan_type now a method rather than attribute
+# Issue 5729: [with patch, positive review] Cleanup of crystal code: cartan_type now a method rather than attribute
 
 archive/issues_005729.json:
 ```json
 {
-    "body": "Assignee: aschillin\n\nCC:  sage-combinat\n\nChanged the user interface to have cartan type as a method\nrather than attribute\n\nIssue created by migration from https://trac.sagemath.org/ticket/5729\n\n",
+    "body": "Assignee: aschillin\n\nCC:  sage-combinat\n\nCrystals: cartan_type is a method\n- Changed the API to have cartan type as a method rather than attribute\n- Systematically use .parent() instead of ._parent\n- Minor doc improvements\n\nIssue created by migration from https://trac.sagemath.org/ticket/5729\n\n",
+    "closed_at": "2009-04-11T00:43:56Z",
     "created_at": "2009-04-09T20:07:32Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Cleanup of crystal code: cartan_type now a method rather than attribute",
+    "title": "[with patch, positive review] Cleanup of crystal code: cartan_type now a method rather than attribute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5729",
     "user": "https://github.com/anneschilling"
@@ -19,8 +20,10 @@ Assignee: aschillin
 
 CC:  sage-combinat
 
-Changed the user interface to have cartan type as a method
-rather than attribute
+Crystals: cartan_type is a method
+- Changed the API to have cartan type as a method rather than attribute
+- Systematically use .parent() instead of ._parent
+- Minor doc improvements
 
 Issue created by migration from https://trac.sagemath.org/ticket/5729
 

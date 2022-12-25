@@ -1,15 +1,16 @@
-# Issue 8066: New libgpg_error-1.6.p3.spkg works with Open Solaris 64 bit
+# Issue 8066: New libgpg_error-1.6.p3.spkg works with Open Solaris x64 as 64 bit
 
 archive/issues_008066.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nMade the package work with Open Solaris 64 bit SAGE64=\"yes\"\n\nThe package is here:\n[http://boxen.math.washington.edu/home/jsp/ports/libgpg_error-1.6.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/libgpg_error-1.6.p3.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8066\n\n",
+    "closed_at": "2010-02-11T15:17:16Z",
     "created_at": "2010-01-25T22:45:18Z",
     "labels": [
         "component: porting"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "New libgpg_error-1.6.p3.spkg works with Open Solaris 64 bit",
+    "title": "New libgpg_error-1.6.p3.spkg works with Open Solaris x64 as 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8066",
     "user": "https://github.com/jaapspies"

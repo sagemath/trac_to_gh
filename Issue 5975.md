@@ -1,21 +1,22 @@
-# Issue 5975: Implement latex output for (combinatorial) graphs
+# Issue 5975: [with patch, positive review] Implement latex output for (combinatorial) graphs
 
 archive/issues_005975.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jhpalmieri ekirkman\n\nFor a graph  g  the command latex(g)  has not been implemented.  The tkz-graph package provides latex commands for drawing graphs in a variety of ways.  So rather than outputting a graphic image, this command would output latex commands that could be incorporated into latex documents.\n\nThis originated in this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/834be3b28bd7919f) on sage-devel.  The tkz-graph package is described [here](http://altermundus.com/pages/graph.html) and more can be found [here](http://graphtheoryinlatex.blogspot.com/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5975\n\n",
+    "body": "Assignee: @rbeezer\n\nCC:  @jhpalmieri ekirkman\n\nFor a graph  g  the command latex(g)  has not been implemented.  The tkz-graph package provides latex commands for drawing graphs in a variety of ways.  So rather than outputting a graphic image, this command would output latex commands that could be incorporated into latex documents.\n\nThis originated in this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/834be3b28bd7919f) on sage-devel.  The tkz-graph package is described [here](http://altermundus.com/pages/graph.html) and more can be found [here](http://graphtheoryinlatex.blogspot.com/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5975\n\n",
+    "closed_at": "2009-06-13T22:33:07Z",
     "created_at": "2009-05-04T05:36:18Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Implement latex output for (combinatorial) graphs",
+    "title": "[with patch, positive review] Implement latex output for (combinatorial) graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5975",
     "user": "https://github.com/rbeezer"
 }
 ```
-Assignee: @rlmill
+Assignee: @rbeezer
 
 CC:  @jhpalmieri ekirkman
 

@@ -1,21 +1,23 @@
-# Issue 6959: modular forms -- add aplist and anlist for newforms
+# Issue 6959: [with patch; needs work] modular forms -- add aplist and anlist for newforms
 
 archive/issues_006959.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6959\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: newform\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6959\n\n",
     "created_at": "2009-09-19T05:01:49Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "modular forms -- add aplist and anlist for newforms",
+    "title": "[with patch; needs work] modular forms -- add aplist and anlist for newforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6959",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @craigcitro
+
+Keywords: newform
 
 
 

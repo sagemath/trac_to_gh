@@ -1,9 +1,10 @@
-# Issue 5973: Fix spkg-check target for FLINT on OSX 64 bit
+# Issue 5973: [with spkg, positive review] Fix spkg-check target for FLINT on OSX 64 bit
 
 archive/issues_005973.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs the title says. The spgk at #5817 has some issue, so resolve it now.\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5973\n\n",
+    "closed_at": "2009-05-04T05:25:11Z",
     "created_at": "2009-05-04T04:02:43Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005973.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Fix spkg-check target for FLINT on OSX 64 bit",
+    "title": "[with spkg, positive review] Fix spkg-check target for FLINT on OSX 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5973",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

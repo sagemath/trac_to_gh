@@ -1,15 +1,16 @@
-# Issue 3031: [with patch] Add zeta_function method for schemes
+# Issue 3031: [with patch, with positive review] Add zeta_function method for schemes
 
 archive/issues_003031.json:
 ```json
 {
     "body": "Assignee: wstein\n\nCC:  @kedlaya\n\nKeywords: zeta function, schemes, finite fields\n\nThe attached patch (built against 3.0) adds a zeta_function method to the class of schemes over finite fields. It is meant to be a default procedure, to be overridden by something more sensible for particular classes of schemes (e.g., elliptic and hyperelliptic curves).\n\nZeta functions are currently only enabled over prime fields, but it will be trivial to fix that once coercion between nonprime finite fields is supported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3031\n\n",
+    "closed_at": "2008-04-29T00:04:45Z",
     "created_at": "2008-04-26T15:42:49Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch] Add zeta_function method for schemes",
+    "title": "[with patch, with positive review] Add zeta_function method for schemes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3031",
     "user": "https://github.com/kedlaya"

@@ -1,15 +1,16 @@
-# Issue 3228: [with patch; needs review] notebook -- Account Settings Page with auto save, better styling, etc
+# Issue 3228: [with patch; positive review] notebook -- Account Settings Page with auto save, better styling, etc
 
 archive/issues_003228.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is the follow up to #3213. Enhancements to implement on top of this include displaying a message on worksheet listings page when settings changed, inline error reporting, and automated login/logout to deal with changing of password.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3228\n\n",
+    "closed_at": "2008-06-23T12:57:32Z",
     "created_at": "2008-05-16T20:01:38Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] notebook -- Account Settings Page with auto save, better styling, etc",
+    "title": "[with patch; positive review] notebook -- Account Settings Page with auto save, better styling, etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3228",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

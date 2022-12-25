@@ -1,9 +1,10 @@
-# Issue 4499: Fix latex for sech and csch
+# Issue 4499: [with patch, positive review] Fix latex for sech and csch
 
 archive/issues_004499.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCurrently, we have\n\n```\nsage: latex(sech)\n\\sech\nsage: latex(csch)\n\\csch\n```\n\nApparently \\sech and \\csch are not recognized in LaTeX.  These should be\n\n```\nsage: latex(sech)\n\\text{sech}\nsage: latex(csch)\n\\text{csch}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4499\n\n",
+    "body": "Assignee: @mwhansen\n\nCurrently, we have\n\n```\nsage: latex(sech)\n\\sech\nsage: latex(csch)\n\\csch\n```\n\nApparently \\sech and \\csch are not recognized in LaTeX.  These should be\n\n```\nsage: latex(sech)\n\\text{sech}\nsage: latex(csch)\n\\text{csch}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4499\n\n",
+    "closed_at": "2008-11-14T03:30:33Z",
     "created_at": "2008-11-12T01:16:42Z",
     "labels": [
         "component: misc",
@@ -11,13 +12,13 @@ archive/issues_004499.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Fix latex for sech and csch",
+    "title": "[with patch, positive review] Fix latex for sech and csch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4499",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: cwitty
+Assignee: @mwhansen
 
 Currently, we have
 

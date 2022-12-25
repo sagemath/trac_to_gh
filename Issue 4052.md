@@ -1,16 +1,17 @@
-# Issue 4052: [with patch; needs review] readline spkg doesn't build under OpenBSD
+# Issue 4052: [with patch; positive review] readline spkg doesn't build under OpenBSD
 
 archive/issues_004052.json:
 ```json
 {
     "body": "Assignee: anakha\n\nThe spkg-install script looks for the library file libreadline.so, but under OpenBSD, no symbolic link is made and the only file that appears is libreadline.so.5.2.\n\nThe attached patch is a little hack to allow successful completion on OpenBSD, but if there is a better and more general method available, please inform me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4052\n\n",
+    "closed_at": "2008-09-04T01:39:28Z",
     "created_at": "2008-09-03T19:01:06Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch; needs review] readline spkg doesn't build under OpenBSD",
+    "title": "[with patch; positive review] readline spkg doesn't build under OpenBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4052",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

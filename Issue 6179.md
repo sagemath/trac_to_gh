@@ -1,9 +1,10 @@
-# Issue 6179: html -- doctest failure in sage-4.0.1.alpha0
+# Issue 6179: [with patch, positive review] html -- doctest failure in sage-4.0.1.alpha0
 
 archive/issues_006179.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWe have the following on 32-bit OS X Intel:\n\n```\nsage -t -long \"devel/sage/sage/misc/html.py\"\n**********************************************************************\nFile \"/Users/was/build/sage-4.0.1.alpha0/devel/sage/sage/misc/html.py\", line 157:\n    sage: html.table([(i, j, i == j) for i in [0..1] for j in [0..1]])\nExpected:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>  \n    </tbody>\n    </table>\n    </div>\n    </html>\nGot:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    </tbody>\n    </table>\n    </div>\n    </html>\n**********************************************************************\n1 items had failures:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6179\n\n",
+    "body": "Assignee: @mwhansen\n\nWe have the following on 32-bit OS X Intel:\n\n```\nsage -t -long \"devel/sage/sage/misc/html.py\"\n**********************************************************************\nFile \"/Users/was/build/sage-4.0.1.alpha0/devel/sage/sage/misc/html.py\", line 157:\n    sage: html.table([(i, j, i == j) for i in [0..1] for j in [0..1]])\nExpected:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>  \n    </tbody>\n    </table>\n    </div>\n    </html>\nGot:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    </tbody>\n    </table>\n    </div>\n    </html>\n**********************************************************************\n1 items had failures:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6179\n\n",
+    "closed_at": "2009-06-06T00:09:55Z",
     "created_at": "2009-06-01T14:37:18Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_006179.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "html -- doctest failure in sage-4.0.1.alpha0",
+    "title": "[with patch, positive review] html -- doctest failure in sage-4.0.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6179",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 We have the following on 32-bit OS X Intel:
 

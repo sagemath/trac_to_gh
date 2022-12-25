@@ -3,10 +3,11 @@
 archive/issues_009536.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer @embray @nexttime @kiwifb @vbraun\n\nHi,\nseveral packages do use `python setup.py`. This picks up the customized settings from ~/.pydistutils.cfg. This is bad, because it overrides the prefix setting. \n\nFor sage-main, I'll attach a patch: `setup.cfg` in the corresponding directory overrides the usere settings. Maybe there's a global solution.\n\nRegards,\n  Alexander Dreyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9536\n\n",
+    "body": "Assignee: @alexanderdreyer\n\nCC:  @jdemeyer @embray @nexttime @kiwifb @vbraun\n\nHi,\nseveral packages do use `python setup.py`. This picks up the customized settings from ~/.pydistutils.cfg. This is bad, because it overrides the prefix setting. \n\nFor sage-main, I'll attach a patch: `setup.cfg` in the corresponding directory overrides the usere settings. Maybe there's a global solution.\n\nRegards,\n  Alexander Dreyer\n\n......\n\nUpdate for Sage 7.5. The problem reported on this ancient ticket is still present and affects\n- sagelib, \n- packages that are installed directly using `setup.py`\n- packages that are installed using pip.\n\nIt can be tested by creating the following `~/.pydistutils.cfg`:\n\n```\n[install]\nroot=/does-not-exist\n```\n\nThe patch on the ticket uses \n- `pip --isolated` and \n- `setup.py --no-user-cfg`\n\nNote there appear to be some issues regarding these option with early versions of Python 3.x: https://github.com/pypa/pip/issues/3509\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9536\n\n",
+    "closed_at": "2017-01-21T16:35:21Z",
     "created_at": "2010-07-18T14:07:14Z",
     "labels": [
-        "component: algebra",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.6",
@@ -16,7 +17,7 @@ archive/issues_009536.json:
     "user": "https://github.com/alexanderdreyer"
 }
 ```
-Assignee: @aghitza
+Assignee: @alexanderdreyer
 
 CC:  @jdemeyer @embray @nexttime @kiwifb @vbraun
 
@@ -27,6 +28,27 @@ For sage-main, I'll attach a patch: `setup.cfg` in the corresponding directory o
 
 Regards,
   Alexander Dreyer
+
+......
+
+Update for Sage 7.5. The problem reported on this ancient ticket is still present and affects
+- sagelib, 
+- packages that are installed directly using `setup.py`
+- packages that are installed using pip.
+
+It can be tested by creating the following `~/.pydistutils.cfg`:
+
+```
+[install]
+root=/does-not-exist
+```
+
+The patch on the ticket uses 
+- `pip --isolated` and 
+- `setup.py --no-user-cfg`
+
+Note there appear to be some issues regarding these option with early versions of Python 3.x: https://github.com/pypa/pip/issues/3509
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9536
 

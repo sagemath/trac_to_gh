@@ -1,9 +1,10 @@
-# Issue 1442: wrong statement in calculus.py
+# Issue 1442: [with patch, with positive review] wrong statement in calculus.py
 
 archive/issues_001442.json:
 ```json
 {
-    "body": "Assignee: tba\n\nI'm reading calculus.py (this is probably the best way to learn SAGE).\nThis statement seems wrong to me:\n\n```\n\\sage predefines upper and lowercase letters as global\n    indeterminates.\n```\nIndeed, I believe only 'x' is predefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1442\n\n",
+    "body": "Assignee: @mwhansen\n\nI'm reading calculus.py (this is probably the best way to learn SAGE).\nThis statement seems wrong to me:\n\n```\n\\sage predefines upper and lowercase letters as global\n    indeterminates.\n```\nIndeed, I believe only 'x' is predefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1442\n\n",
+    "closed_at": "2007-12-15T11:59:45Z",
     "created_at": "2007-12-09T21:36:34Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_001442.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "wrong statement in calculus.py",
+    "title": "[with patch, with positive review] wrong statement in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1442",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 I'm reading calculus.py (this is probably the best way to learn SAGE).
 This statement seems wrong to me:

@@ -1,16 +1,17 @@
-# Issue 4588: doctest -- get rid of the "feature" where docstrings with require, optional, and package all in them are automatically marked optional
+# Issue 4588: [with patch; positive review] doctest -- get rid of the "feature" where docstrings with require, optional, and package all in them are automatically marked optional
 
 archive/issues_004588.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis \"feature\" that I introduced years ago is incredibly confusing.  3 people at least got very confused by this in the last 3-4 days. \n\nTo close this ticket:\n1. remove this functionality from local/bin/sage-*test*\n\n2. rewrite all the files that use this by tediously marking each optional line with #optional.   This is tedious, but it is much much clearer what is going on.  \n\nNote -- only do this *after* apply #4583, which already does some of part 2 above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4588\n\n",
+    "closed_at": "2009-01-24T15:30:38Z",
     "created_at": "2008-11-23T02:44:06Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "doctest -- get rid of the \"feature\" where docstrings with require, optional, and package all in them are automatically marked optional",
+    "title": "[with patch; positive review] doctest -- get rid of the \"feature\" where docstrings with require, optional, and package all in them are automatically marked optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4588",
     "user": "https://github.com/williamstein"

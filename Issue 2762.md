@@ -4,6 +4,7 @@ archive/issues_002762.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nThis fix makes the Debian build of FLINT on amd64 (and makes it run with the right CFLAGS on i386, too)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2762\n\n",
+    "closed_at": "2008-04-02T00:28:22Z",
     "created_at": "2008-04-01T21:31:17Z",
     "labels": [
         "component: debian-package",

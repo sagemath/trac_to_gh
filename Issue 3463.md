@@ -3,7 +3,8 @@
 archive/issues_003463.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis is a first step in making the Notebook code more modular like Knoboo's. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3463\n\n",
+    "body": "Assignee: TimothyClemans\n\nThis is a first step in making the Notebook code more modular like Knoboo's. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3463\n\n",
+    "closed_at": "2009-11-19T21:46:57Z",
     "created_at": "2008-06-18T19:30:09Z",
     "labels": [
         "component: notebook"
@@ -15,7 +16,7 @@ archive/issues_003463.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 This is a first step in making the Notebook code more modular like Knoboo's. 
 

@@ -1,15 +1,16 @@
-# Issue 2298: [with patch, needs review] implement a way to compute a number field containing given algebraic numbers
+# Issue 2298: [with patch, with positive review] implement a way to compute a number field containing given algebraic numbers
 
 archive/issues_002298.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @jasongrout @ncalexan\n\nThe attached patch implements a way to compute a number field containing given algebraic numbers:\n\n```\nsage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])\n\n(Number Field in a with defining polynomial y^4 - 4*y^2 + 1,\n [-a^3 + 3*a, -a^2 + 2],\n Ring morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 1\n  To:   Algebraic Real Field\n  Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2298\n\n",
+    "closed_at": "2008-03-02T20:47:24Z",
     "created_at": "2008-02-25T03:07:21Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] implement a way to compute a number field containing given algebraic numbers",
+    "title": "[with patch, with positive review] implement a way to compute a number field containing given algebraic numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2298",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

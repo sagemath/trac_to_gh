@@ -1,16 +1,17 @@
-# Issue 1064: applying permutation is coded in a way that behaves badly when input isn't an "expected type"
+# Issue 1064: [with patch] applying permutation is coded in a way that behaves badly when input isn't an "expected type"
 
 archive/issues_001064.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n19:00 < wstein> that permuation application code in #750 is (and has always been) lame.\n19:00 < wstein> watch:\n19:00 < wstein> g = PermutationGroup(['(1,2,3)(4,5)']).gen(0)\n19:00 < wstein> g(x)\n19:00 < wstein> Get a big traceback from Gap.\n19:00 < wstein> It would be trivial to code things to give a much more sensible error.\n19:01 < wstein> This isn't a criticism of #750; just that looking at #750 immediately\n19:01 < wstein> makes me see that there are bad features to the code.\n19:02 < wstein> Even worse:\n19:02 < wstein> sage: g(3/2)\n19:02 < wstein> 1\n19:02 < wstein> That makes no sense!\n}}]\n\nThe problem is this line of code in sage/groups/perm_gps/permgroup_element.py:\n\n{{{\n            return int(gap.eval('%s^%s'%(i, self._gap_().name())))\n}}}\n\nInstead that should be\n\n{{{\n            return int(gap.eval('%s^%s'%(Integer(i), self._gap_().name())))\n}}}\n\nsince then we'll get a sensible error message if i doesn't have a natural\ninterpretation as an integer.\n\nOf course, one must import Integer. \n\nI'm not attaching a patch, since ticket #750 and a text patch would be\ntoo confusing to apply.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1064\n\n",
+    "closed_at": "2007-12-21T00:28:45Z",
     "created_at": "2007-11-02T02:04:43Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "applying permutation is coded in a way that behaves badly when input isn't an \"expected type\"",
+    "title": "[with patch] applying permutation is coded in a way that behaves badly when input isn't an \"expected type\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1064",
     "user": "https://github.com/williamstein"

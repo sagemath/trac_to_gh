@@ -1,16 +1,17 @@
-# Issue 3378: [with patch, needs review] graphs.nauty_geng fails due to missing imports
+# Issue 3378: [with patch, positive review] graphs.nauty_geng fails due to missing imports
 
 archive/issues_003378.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3378\n\n",
+    "closed_at": "2008-06-08T22:57:50Z",
     "created_at": "2008-06-06T17:55:56Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] graphs.nauty_geng fails due to missing imports",
+    "title": "[with patch, positive review] graphs.nauty_geng fails due to missing imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3378",
     "user": "https://github.com/mwhansen"

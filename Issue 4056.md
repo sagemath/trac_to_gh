@@ -4,6 +4,7 @@ archive/issues_004056.json:
 ```json
 {
     "body": "Assignee: boothby\n\nWhen using the notebook with Google Chrome, tab completion does not seem to work; when one hits tab, you just get an orange box around the \"evaluate\" link. It seems to be using tab in the usual way (to move from one input box to another, etc) instead of doing the completion.\n\nOf course, Chrome is so new that this may very well be a bug on their part, but it's worth investigating.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4056\n\n",
+    "closed_at": "2008-09-04T03:30:26Z",
     "created_at": "2008-09-04T02:42:48Z",
     "labels": [
         "component: notebook",

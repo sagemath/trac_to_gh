@@ -1,9 +1,10 @@
-# Issue 2159: Gröbner bases over any field (cont'd)
+# Issue 2159: [with patch, positive review] Gröbner bases over any field (cont'd)
 
 archive/issues_002159.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis is a followup of {#2111}.\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nI.dimension()\n...\n   ? no ring active\n   ? `ideal` is undefined\n   ? error occurred in STDIN line 170: `ideal sage85=[x + 1431655773*y^4, y^12 + 54*y^2];\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2159\n\n",
+    "body": "Assignee: @johnperry-math\n\nThis is a followup of {#2111}.\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nI.dimension()\n...\n   ? no ring active\n   ? `ideal` is undefined\n   ? error occurred in STDIN line 170: `ideal sage85=[x + 1431655773*y^4, y^12 + 54*y^2];\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2159\n\n",
+    "closed_at": "2009-02-02T06:03:55Z",
     "created_at": "2008-02-14T17:25:14Z",
     "labels": [
         "component: commutative algebra",
@@ -11,13 +12,13 @@ archive/issues_002159.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Gr\u00f6bner bases over any field (cont'd)",
+    "title": "[with patch, positive review] Gr\u00f6bner bases over any field (cont'd)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2159",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: @malb
+Assignee: @johnperry-math
 
 This is a followup of {#2111}.
 

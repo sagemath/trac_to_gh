@@ -3,10 +3,10 @@
 archive/issues_008873.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nthiery\n\nConsider the following code:\n\n```\nsage: G = Zmod(5)\nsage: A = CombinatorialFreeModule(QQ, G)\nsage: B = CombinatorialFreeMoudle(ZZ, G)\nsage: A(G(1))\nB[1]\nsage: B(G(1))\nTypeError\n```\n\nThis should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8873\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat @nthiery\n\nConsider the following code:\n\n```\nsage: G = Zmod(5)\nsage: A = CombinatorialFreeModule(QQ, G)\nsage: B = CombinatorialFreeModule(ZZ, G)\nsage: A(G(1))\nB[1]\nsage: B(G(1))\nTypeError\n```\n\nThis should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8873\n\n",
     "created_at": "2010-05-04T19:16:11Z",
     "labels": [
-        "component: categories",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,7 +16,7 @@ archive/issues_008873.json:
     "user": "https://github.com/jbandlow"
 }
 ```
-Assignee: @nthiery
+Assignee: @robertwb
 
 CC:  sage-combinat @nthiery
 
@@ -25,7 +25,7 @@ Consider the following code:
 ```
 sage: G = Zmod(5)
 sage: A = CombinatorialFreeModule(QQ, G)
-sage: B = CombinatorialFreeMoudle(ZZ, G)
+sage: B = CombinatorialFreeModule(ZZ, G)
 sage: A(G(1))
 B[1]
 sage: B(G(1))

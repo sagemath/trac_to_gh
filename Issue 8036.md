@@ -4,6 +4,7 @@ archive/issues_008036.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: non-ASCII characters\n\nEven after applying #8021, the PDF version of the reference manual for Sage 4.3.1 failed to build. This is due to non-ASCII characters in the docstring of the method `prove_BSD()` of the class `EllipticCurve_rational_field` in\n\n```\nsage/schemes/elliptic_curves/ell_rational_field.py\n```\nHere's a snippet of the error message:\n\n```\n! Package inputenc Error: Unicode char \\u8:\u01ce not set up for use with LaTeX.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.364560 C. Tarni\u0163\u01ce\n                     . Computational verification of the Birch and\n?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8036\n\n",
+    "closed_at": "2010-02-01T23:25:10Z",
     "created_at": "2010-01-22T02:31:21Z",
     "labels": [
         "component: documentation",

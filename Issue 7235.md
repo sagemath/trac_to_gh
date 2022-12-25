@@ -4,6 +4,7 @@ archive/issues_007235.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\n>> There is definitely no way the 10.6 OS X binary will work on OS X\n>> 10.4, and I would find it highly unlikely that it would work on 10.5\n>> either.  If the readme says that, it is very misleading (I think the\n>> readme is  refering to the source code).\n>\n> The ReadMe says that.\n\nI see it says:\n\n**\n  These binaries are only for OS X 10.4 or 10.5.  They will not work on OS X 10.3. \n**\n\nHowever, that's simply wrong, since the binaries are only for the platform listed in the name of the dmg.  Argh.  That needs to be changed.  (I was thinking of a different README file when I wrote my response.)    Thanks for the bug report.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7235\n\n",
+    "closed_at": "2009-11-12T06:07:17Z",
     "created_at": "2009-10-17T19:43:21Z",
     "labels": [
         "component: distribution",

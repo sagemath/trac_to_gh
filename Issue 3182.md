@@ -1,16 +1,17 @@
-# Issue 3182: fix 64 bit OSX build support for givaro
+# Issue 3182: [with spkg, with positive review] fix 64 bit OSX build support for givaro
 
 archive/issues_003182.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3182\n\n",
+    "closed_at": "2008-05-19T03:39:06Z",
     "created_at": "2008-05-13T12:44:25Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "fix 64 bit OSX build support for givaro",
+    "title": "[with spkg, with positive review] fix 64 bit OSX build support for givaro",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3182",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

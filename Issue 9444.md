@@ -4,6 +4,7 @@ archive/issues_009444.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nCC:  drkirkby\n\nIn `/rootpool2/local/kirkby/sage-4.5.alpha1` on t2:\n\n```sh\n$ tail spkg/logs/rubiks-20070912.p11.log\nreal    2m30.575s\nuser    2m20.699s\nsys     0m5.083s\nSuccessfully installed rubiks-20070912.p11\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/rootpool2/local/kirkby/sage-4.5.alpha1/spkg/build/rubiks-20070912.p11\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing rubiks-20070912.p11.spkg\n```\nThis leaves an empty directory `SAGE_ROOT/spkg/build/rubiks-20070912.p11`.\n\nIt seems the problem is\n\n```sh\nrm -rf \"$SAGE_PACKAGES/build/$PKG_NAME\"\n```\nnear the end of `SAGE_LOCAL/bin/sage-spkg`.  What if we precede this with `cd ..`, say?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9444\n\n",
+    "closed_at": "2010-08-09T09:39:39Z",
     "created_at": "2010-07-07T05:29:55Z",
     "labels": [
         "component: porting: solaris",

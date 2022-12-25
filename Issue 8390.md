@@ -3,7 +3,8 @@
 archive/issues_008390.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  @robert-marik @kcrisman @mwhansen\n\nKeywords: trigonometric, roots\n\nWhen using\n\n```\nx,y=var('x,y')\nsolve([sin(2*x-pi/6)==1/2],x)\n```\n\nsage returns [x == 1/6*pi]. Which is correct, but we would wish to have all roots. This can be done with:\n\n```\nsolve([sin(2*x-pi/6)==y,y==1/2],[x,y])\n```\n\nwhich returns [[x == 1/2*pi + pi*z5, y == (1/2)], [x == 1/6*pi + pi*z7, y == (1/2)]]\n\nBut this is a very weird way to do things. Surely solve([sin(2*x-pi/6)==y,y==1/2],[x,y]) should also give all roots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8390\n\n",
+    "body": "Assignee: olazo\n\nCC:  @robert-marik @kcrisman @mwhansen\n\nKeywords: trigonometric, roots\n\nWhen using\n\n```\nx,y=var('x,y')\nsolve([sin(2*x-pi/6)==1/2],x)\n```\n\nsage returns [x == 1/6*pi]. Which is correct, but we would wish to have all roots. This can be done with:\n\n```\nsolve([sin(2*x-pi/6)==y,y==1/2],[x,y])\n```\n\nwhich returns [[x == 1/2*pi + pi*z5, y == (1/2)], [x == 1/6*pi + pi*z7, y == (1/2)]]\n\nBut this is a very weird way to do things. Surely \n\n```\nsolve([sin(2*x-pi/6)==1/2],x)\n```\nshould also give all roots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8390\n\n",
+    "closed_at": "2010-04-15T20:11:34Z",
     "created_at": "2010-02-27T19:07:36Z",
     "labels": [
         "component: algebra",
@@ -37,7 +38,12 @@ solve([sin(2*x-pi/6)==y,y==1/2],[x,y])
 
 which returns [[x == 1/2*pi + pi*z5, y == (1/2)], [x == 1/6*pi + pi*z7, y == (1/2)]]
 
-But this is a very weird way to do things. Surely solve([sin(2*x-pi/6)==y,y==1/2],[x,y]) should also give all roots.
+But this is a very weird way to do things. Surely 
+
+```
+solve([sin(2*x-pi/6)==1/2],x)
+```
+should also give all roots.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8390
 

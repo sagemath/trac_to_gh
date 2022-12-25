@@ -1,15 +1,16 @@
-# Issue 630: mhansen's big combinatorics update
+# Issue 630: [with patch] mhansen's big combinatorics update
 
 archive/issues_000630.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIncludes C interface for symmetrica.\n\nIssue created by migration from https://trac.sagemath.org/ticket/630\n\n",
+    "closed_at": "2007-09-20T23:16:43Z",
     "created_at": "2007-09-09T19:18:16Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
-    "title": "mhansen's big combinatorics update",
+    "title": "[with patch] mhansen's big combinatorics update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/630",
     "user": "https://github.com/mwhansen"

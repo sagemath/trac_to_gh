@@ -4,6 +4,7 @@ archive/issues_006210.json:
 ```json
 {
     "body": "Assignee: tba\n\nA sentence in the docs for the property parameter should say something about possibly missing graphs, due to the reasons explained in the docs for the augment parameter.  See http://groups.google.com/group/sage-devel/browse_thread/thread/e8516faf818a6fb7\n\nIssue created by migration from https://trac.sagemath.org/ticket/6210\n\n",
+    "closed_at": "2011-10-17T07:50:51Z",
     "created_at": "2009-06-04T19:48:38Z",
     "labels": [
         "component: documentation",

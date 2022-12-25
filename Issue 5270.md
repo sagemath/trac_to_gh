@@ -1,16 +1,17 @@
-# Issue 5270: [with patch, needs review] implement plotting of affine and projective algebraic curves
+# Issue 5270: [with patch, with positive review] implement plotting of affine and projective algebraic curves
 
 archive/issues_005270.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe patch implements plot() methods for affine and projective algebraic curves.  In the affine case it simply calls the plot() method of the defining ideal of the curve.  In the projective case it calls the plot() method of an affine patch of the curve.\n\nThis is mostly a usability enhancement.  I ran into a few bugs while working on this, so the patch should be applied only after #5267 and #5269 get merged.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5270\n\n",
+    "closed_at": "2009-04-13T06:50:10Z",
     "created_at": "2009-02-14T13:49:49Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] implement plotting of affine and projective algebraic curves",
+    "title": "[with patch, with positive review] implement plotting of affine and projective algebraic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5270",
     "user": "https://github.com/aghitza"

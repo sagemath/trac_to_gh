@@ -1,9 +1,10 @@
-# Issue 5356: 100r returns a Sage integer in the notebook (but commandline works fine)
+# Issue 5356: [with patch, positive review] 100r returns a Sage integer in the notebook (but commandline works fine)
 
 archive/issues_005356.json:
 ```json
 {
     "body": "Assignee: boothby\n\ntype(100r) returns\n\n<type 'sage.rings.integer.Integer'>\n\nin the notebook in 3.3.  Similarly, type(1.0r) returns\n\n<type 'sage.rings.real_mpfr.RealLiteral'>\n\nBoth of these examples work fine on the command line (i.e., return python int and float, respectively).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5356\n\n",
+    "closed_at": "2009-02-24T19:53:26Z",
     "created_at": "2009-02-24T07:53:16Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005356.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "100r returns a Sage integer in the notebook (but commandline works fine)",
+    "title": "[with patch, positive review] 100r returns a Sage integer in the notebook (but commandline works fine)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5356",
     "user": "https://github.com/jasongrout"

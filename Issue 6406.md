@@ -1,9 +1,10 @@
-# Issue 6406: fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case
+# Issue 6406: [with patch, with positive review] fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case
 
 archive/issues_006406.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rlmill\n\nKeywords: elliptic curves, tate shafarevich group,\n\nCurrently the p_primary_bound pretends to give back a proven result when the p-torsion is reducible. That is wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6406\n\n",
+    "closed_at": "2009-06-29T21:10:12Z",
     "created_at": "2009-06-25T14:37:36Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_006406.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case",
+    "title": "[with patch, with positive review] fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6406",
     "user": "https://github.com/categorie"

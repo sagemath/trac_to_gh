@@ -1,16 +1,17 @@
-# Issue 616: sage -coverage improvements
+# Issue 616: [with patch] [tested by cwitty] sage -coverage improvements
 
 archive/issues_000616.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nsage -coverage is currently easy to trick: just add a doctest that doesn't actually test your function. This can also happen by accident: if you copy-paste a function, and then don't look at the docstring, you end up with a function that has fake doctests. (This occurs in various places in the sage source code.) \n\nThis patch makes sage -coverage a little smarter: it looks every time to make sure that the function name occurs in the doctests, and if not, adds the function to a list of \"possibly wrong\" functions that it spits out at the end. If the function begins and ends with __, we don't bother looking for the name in the docstring. Also, if the string 'indirect doctest' occurs anywhere, we don't look. \n\nThis patch also sneaks in a change so that scons is replaced by scons -Q, making it quieter whenever it's called. Time for the first line-item veto in a sage patch? :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/616\n\n",
+    "closed_at": "2007-10-13T06:34:19Z",
     "created_at": "2007-09-07T06:23:11Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "sage -coverage improvements",
+    "title": "[with patch] [tested by cwitty] sage -coverage improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/616",
     "user": "https://github.com/craigcitro"

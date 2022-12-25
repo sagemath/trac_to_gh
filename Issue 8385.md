@@ -4,9 +4,10 @@ archive/issues_008385.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCurrently, if one runs \n\n```\n$ make test\n```\n\na file\n\n```\n$HOME/.sage/tmp/test.log\n```\n\nis created with the results of the tests. However, this stops testing two versions of Sage at the same time - even if the tests take place on different machines. \n\nHence it would be useful if the log file had the hostname, date and time in it. \n\nI would suggest a name like\n\n```\ntest.log-redstart-23:22:57-02:26:2010\n```\n\nwould be useful to indicate\n\n* The hostname was \"redstart\"\n* The time the tests started was \"23:22:57\"\n* The date the tests started was \"02:26:2010\"\n\nThis would allow multiple versions of Sage to be tested on multiple computers at the same time. \n\nAdding the Sage version would be nice too, as below for Sage 4.3.3\n\n```\ntest.log-4.3.3-redstart-23:22:57-02:26:2010\n```\n\n\nDave \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8385\n\n",
+    "closed_at": "2013-05-21T07:24:56Z",
     "created_at": "2010-02-26T23:35:43Z",
     "labels": [
-        "component: doctest"
+        "component: doctest framework"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add hostname, date and time to test.log",

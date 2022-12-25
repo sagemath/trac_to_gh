@@ -1,15 +1,16 @@
-# Issue 6776: [with patch, needs review] plot3d improvement for lattice polytopes
+# Issue 6776: [with patch, positive review] plot3d improvement for lattice polytopes
 
 archive/issues_006776.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nThis patch allows to\n\n- use plot3d for 1- and 2-dimensional polytopes\n\n- specify different colors for different facets\n\n- specify labels for vertices other than their numbers\n\n```\nsage: lattice_polytope.octahedron(2).plot3d(vlabels=[\"A\", \"B\", \"C\", \"D\"])\nsage: o = lattice_polytope.octahedron(3)\nsage: o.plot3d(facet_colors=sage.plot.plot.rainbow(o.nfacets(), 'rgbtuple'))\n```\n\nThe positioning of labels is slightly improved 0 they are now shifted away from the barycenter of the polytope, not just the origin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6776\n\n",
+    "closed_at": "2009-09-22T21:35:32Z",
     "created_at": "2009-08-19T20:11:21Z",
     "labels": [
         "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] plot3d improvement for lattice polytopes",
+    "title": "[with patch, positive review] plot3d improvement for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6776",
     "user": "https://github.com/novoselt"

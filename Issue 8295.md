@@ -3,10 +3,12 @@
 archive/issues_008295.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nAdds documention for new files `kazhdan_lusztig.py` and `iwahori_hecke_algebras.py` to reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8295\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat\n\nAdds documention for new files `kazhdan_lusztig.py` and `iwahori_hecke_algebras.py` to reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8295\n\n",
+    "closed_at": "2010-03-02T22:15:35Z",
     "created_at": "2010-02-17T18:24:49Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
@@ -16,7 +18,7 @@ archive/issues_008295.json:
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: @aghitza
+Assignee: @dwbump
 
 CC:  sage-combinat
 

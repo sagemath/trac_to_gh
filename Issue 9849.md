@@ -3,7 +3,8 @@
 archive/issues_009849.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rbeezer\n\nKeywords: style\n\nThis was proposed in the following thread at `sage-devel`:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/73e3c4c995577df0\n\nand a few people voiced support, so a patch will be attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9850\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rbeezer\n\nKeywords: style\n\nThis was proposed in the following thread at `sage-devel`:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/73e3c4c995577df0\n\nand a few people voiced support, so a patch will be attached.\n\n**Apply:**\n\n1. [attachment:trac_9850-theme-conf.patch]\n2. [attachment:trac_9850-logo.patch]\n3. [attachment:trac_9850-reviewer.patch]\n\nSee these screenshots for previews:\n\n* [attachment:code.png]\n* [attachment:doc-home.png]\n* [attachment:inline-code.png]\n* [attachment:reference-home.png]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9850\n\n",
+    "closed_at": "2010-11-10T22:20:19Z",
     "created_at": "2010-09-02T18:53:58Z",
     "labels": [
         "component: documentation",
@@ -27,6 +28,19 @@ This was proposed in the following thread at `sage-devel`:
 http://groups.google.com/group/sage-devel/browse_thread/thread/73e3c4c995577df0
 
 and a few people voiced support, so a patch will be attached.
+
+**Apply:**
+
+1. [attachment:trac_9850-theme-conf.patch]
+2. [attachment:trac_9850-logo.patch]
+3. [attachment:trac_9850-reviewer.patch]
+
+See these screenshots for previews:
+
+* [attachment:code.png]
+* [attachment:doc-home.png]
+* [attachment:inline-code.png]
+* [attachment:reference-home.png]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9850
 

@@ -1,16 +1,17 @@
-# Issue 2844: Polyhedral improvements, round 2
+# Issue 2844: [with patch, positive review] Polyhedral improvements, round 2
 
 archive/issues_002844.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: polytope, Minkowski sum\n\nI have revamped my new polyhedra module so that it is much, much better.  Minkowski sums are now supported.  This required some minor changes to the 3D rendering in the gfan interface as well.  The module can do just about everything that sage could do through polymake previously - a few more particular polytopes could be predefined.\nAfter this functionality is reviewed, it can be used for making Newton polytopes of multivariable polynomials (and eventually Laurent polynomials as well), but I will put that on a seperate ticket.\nIn the future, I would like to add more 3D support, better 2D rendering, face lattice computations, and more particular cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2844\n\n",
+    "closed_at": "2008-04-08T00:28:50Z",
     "created_at": "2008-04-07T14:44:39Z",
     "labels": [
         "component: geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Polyhedral improvements, round 2",
+    "title": "[with patch, positive review] Polyhedral improvements, round 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2844",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

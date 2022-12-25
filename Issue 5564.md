@@ -1,22 +1,23 @@
-# Issue 5564: [with patch, needs review] fix character encoding problems in the notebook
+# Issue 5564: fix character encoding problems in the notebook
 
 archive/issues_005564.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @jasongrout @dandrake\n\nKeywords: utf-8 tinymce\n\nThis patch when applied on top of #4547 and #5211 will fix the issues people have been having in #2896, #1477, and #4956.\n\nAlso, I'm tired of working on Javascript code in triple-quoted strings, so I have moved the code to its own file.  It breaks history but is less crazy.\n\nI will attach two patches -- one for most of the javascript moving and the other for the interesting changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5564\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jasongrout @dandrake\n\nKeywords: utf-8 tinymce\n\nThis patch when applied on top of #4547 and #5211 will fix the issues people have been having in #2896, #1477, and #4956.\n\nAlso, I'm tired of working on Javascript code in triple-quoted strings, so I have moved the code to its own file.  It breaks history but is less crazy.\n\nI will attach two patches -- one for most of the javascript moving and the other for the interesting changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5564\n\n",
+    "closed_at": "2009-08-26T19:57:19Z",
     "created_at": "2009-03-19T12:06:25Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] fix character encoding problems in the notebook",
+    "title": "fix character encoding problems in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5564",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: boothby
+Assignee: @mwhansen
 
 CC:  @jasongrout @dandrake
 

@@ -1,15 +1,16 @@
-# Issue 1843: [with patch; needs review] cputime for gp interface
+# Issue 1843: [with patch; positive review] cputime for gp interface
 
 archive/issues_001843.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1843\n\n",
+    "closed_at": "2008-01-21T05:57:44Z",
     "created_at": "2008-01-19T01:14:11Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch; needs review] cputime for gp interface",
+    "title": "[with patch; positive review] cputime for gp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1843",
     "user": "https://github.com/williamstein"

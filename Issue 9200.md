@@ -4,6 +4,7 @@ archive/issues_009200.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout @rbeezer\n\n1. Add `from_left` and `from_right` for `dir` keyword.\n\n2. Improve error message `dir` keyword.\n\n3. Add doctests and tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9200\n\n",
+    "closed_at": "2010-09-15T11:13:39Z",
     "created_at": "2010-06-10T02:26:53Z",
     "labels": [
         "component: calculus",

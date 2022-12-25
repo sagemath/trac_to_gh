@@ -1,15 +1,16 @@
-# Issue 7005: [with patch; needs review] singular -- port to cygwin
+# Issue 7005: [with patch; needs work] singular -- port to cygwin
 
 archive/issues_007005.json:
 ```json
 {
     "body": "Assignee: tbd\n\nNew spkg up here: \n\n   http://sage.math.washington.edu/home/wstein/patches/cygwin/singular-3-1-0-4-20090818.p1.spkg\n\nIt just has one line commented out and requirement of libncurses-devel.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7005\n\n",
+    "closed_at": "2010-04-27T17:37:55Z",
     "created_at": "2009-09-25T00:52:43Z",
     "labels": [
         "component: porting"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch; needs review] singular -- port to cygwin",
+    "title": "[with patch; needs work] singular -- port to cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7005",
     "user": "https://github.com/williamstein"

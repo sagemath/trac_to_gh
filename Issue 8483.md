@@ -4,6 +4,7 @@ archive/issues_008483.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis is odd:\n\n```python\nsage: R=GF(2^283,'a')\nsage: x=R.random_element()\nsage: y=R.random_element()\n```\n\nFirst, note that squaring is slower than multiplication:\n\n```python\nsage: %timeit z=x^2\n625 loops, best of 3: 3.79 \u00b5s per loop\n```\n\n```python\nsage: %timeit z=x*y\n625 loops, best of 3: 3.17 \u00b5s per loop\n```\n\nNow observe that squaring done differently is indeed faster:\n\n```python\nsage: %timeit z=x*x\n625 loops, best of 3: 1.91 \u00b5s per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8483\n\n",
+    "closed_at": "2010-11-23T17:35:14Z",
     "created_at": "2010-03-09T15:37:58Z",
     "labels": [
         "component: basic arithmetic"

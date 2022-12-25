@@ -3,7 +3,8 @@
 archive/issues_008792.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8792\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime\n\nAs the subject says. This needs to be coordinated with #8797.\n\n**Prerequisite:** #8796\n\nIssue created by migration from https://trac.sagemath.org/ticket/8792\n\n",
+    "closed_at": "2010-11-11T19:37:16Z",
     "created_at": "2010-04-28T06:49:40Z",
     "labels": [
         "component: documentation"
@@ -19,7 +20,9 @@ Assignee: mvngu
 
 CC:  @nexttime
 
-As the subject says.
+As the subject says. This needs to be coordinated with #8797.
+
+**Prerequisite:** #8796
 
 Issue created by migration from https://trac.sagemath.org/ticket/8792
 

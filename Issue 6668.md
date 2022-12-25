@@ -1,16 +1,17 @@
-# Issue 6668: Allow doctesting of .tex, .rst. .sage files outside the devel tree
+# Issue 6668: [with patch, no longer relevant] Allow doctesting of .tex, .rst. .sage files outside the devel tree
 
 archive/issues_006668.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: sage-doctest\n\nSince 3.4.1 it has not been possible to doctest .tex, .rst or .sage files which were not in the SAGE_ROOT/devel tree.  The patch (for the scripts repository) fixes this, and a few other things are tidied up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6668\n\n",
+    "closed_at": "2009-10-23T16:05:59Z",
     "created_at": "2009-08-03T19:06:43Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Allow doctesting of .tex, .rst. .sage files outside the devel tree",
+    "title": "[with patch, no longer relevant] Allow doctesting of .tex, .rst. .sage files outside the devel tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6668",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

@@ -4,6 +4,7 @@ archive/issues_008404.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis patch is a linear program to compute a H minor of a graph... I hope you will like it ! :-)\n\nWe say that a graph `G` has a `H`-minor (or that it has a graph isomorphic to `H` as a minor), if for all `h\\in H`, there exist disjoint sets `S_h \\subseteq V(G)` such that once the vertices of each `S_h` have been merged to create a new graph `G'`, this new graph contains `H` as a subgraph.\n\nFor more information of minor theory, see http://en.wikipedia.org/wiki/Minor_(graph_theory)\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8404\n\n",
+    "closed_at": "2010-04-15T23:45:51Z",
     "created_at": "2010-02-28T18:45:33Z",
     "labels": [
         "component: graph theory"

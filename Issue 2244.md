@@ -1,16 +1,17 @@
-# Issue 2244: [with patch; needs review] add a randomize=False option to the plot command, to avoid "wiggle" in animations
+# Issue 2244: [with rebased patch; very positive review] add a randomize=False option to the plot command, to avoid "wiggle" in animations
 
 archive/issues_002244.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2244\n\n",
+    "closed_at": "2008-03-15T23:40:02Z",
     "created_at": "2008-02-21T06:41:53Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch; needs review] add a randomize=False option to the plot command, to avoid \"wiggle\" in animations",
+    "title": "[with rebased patch; very positive review] add a randomize=False option to the plot command, to avoid \"wiggle\" in animations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2244",
     "user": "https://github.com/williamstein"

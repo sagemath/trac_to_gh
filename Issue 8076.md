@@ -1,16 +1,17 @@
-# Issue 8076: gap-4.4.12.p2 - please test
+# Issue 8076: upgrade GAP to version 4.4.12
 
 archive/issues_008076.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: gap\n\nPlease test [http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg), in particular on \"exotic\" platforms: ia64 (Itanium Linux), Intel MacOSX, Solaris(?).\nSo far I have done some tests on Linux x86 (stable Debian) and\nPPC MacOSX.\nIt incorporates a long-awaited upstream GAP patches for Itanium.\n\nIt can be combined with \n[http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.12_1.spkg](http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.12_1.spkg) (I am updating this currently, but for the time being\nit should be OK) and\n[http://sage.math.washington.edu/home/wdj/patches/database_gap-4.4.12.spkg](http://sage.math.washington.edu/home/wdj/patches/database_gap-4.4.12.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8076\n\n",
+    "body": "Assignee: tbd\n\nKeywords: gap\n\nPlease test [http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg](http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg), in particular on \"exotic\" platforms:  (Itanium Linux), Solaris(?).\nSo far tests are OK on Linux x86, x86_64, ia64 and\nPPC/Intel MacOSX 10.5/10.6.\nIt incorporates a long-awaited upstream GAP patches for Itanium.\n\nIt can be combined with \n[http://boxen.math.washington.edu/home/dima/packages/gap_packages-4.4.12_2.spkg](http://boxen.math.washington.edu/home/dima/packages/gap_packages-4.4.12_2.spkg) (see also trac ticket #8229)and\n[http://boxen.math.washington.edu/home/dima/packages/database_gap-4.4.12.spkg](http://boxen.math.washington.edu/home/dima/packages/database_gap-4.4.12.spkg)\n\n(please ignore the patch in this ticket, it is obsolete and not needed)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8076\n\n",
+    "closed_at": "2010-02-17T20:49:35Z",
     "created_at": "2010-01-26T11:54:24Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "gap-4.4.12.p2 - please test",
+    "title": "upgrade GAP to version 4.4.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8076",
     "user": "https://github.com/dimpase"
@@ -20,15 +21,17 @@ Assignee: tbd
 
 Keywords: gap
 
-Please test [http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg), in particular on "exotic" platforms: ia64 (Itanium Linux), Intel MacOSX, Solaris(?).
-So far I have done some tests on Linux x86 (stable Debian) and
-PPC MacOSX.
+Please test [http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg](http://boxen.math.washington.edu/home/dima/packages/gap-4.4.12.p2.spkg), in particular on "exotic" platforms:  (Itanium Linux), Solaris(?).
+So far tests are OK on Linux x86, x86_64, ia64 and
+PPC/Intel MacOSX 10.5/10.6.
 It incorporates a long-awaited upstream GAP patches for Itanium.
 
 It can be combined with 
-[http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.12_1.spkg](http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.12_1.spkg) (I am updating this currently, but for the time being
-it should be OK) and
-[http://sage.math.washington.edu/home/wdj/patches/database_gap-4.4.12.spkg](http://sage.math.washington.edu/home/wdj/patches/database_gap-4.4.12.spkg)
+[http://boxen.math.washington.edu/home/dima/packages/gap_packages-4.4.12_2.spkg](http://boxen.math.washington.edu/home/dima/packages/gap_packages-4.4.12_2.spkg) (see also trac ticket #8229)and
+[http://boxen.math.washington.edu/home/dima/packages/database_gap-4.4.12.spkg](http://boxen.math.washington.edu/home/dima/packages/database_gap-4.4.12.spkg)
+
+(please ignore the patch in this ticket, it is obsolete and not needed)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8076
 

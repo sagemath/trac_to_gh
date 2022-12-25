@@ -1,16 +1,18 @@
-# Issue 3113: Major segfault related to modular symbols and pickling
+# Issue 3113: [with patch, with positive review] Major segfault related to modular symbols and pickling
 
 archive/issues_003113.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @wjp\n\n```\nDATA = '/tmp'\ndef ranks(N):\n    filename = '%sranks-%s.sobj'%(DATA,N)\n    if os.path.exists(filename):\n         D = load(filename)\n    else:\n         D = ModularSymbols(N,sign=1).cuspidal_submodule().new_submodule().decomposition()\n    for i,A in enumerate(D):\n        eps = -A.atkin_lehner_operator().matrix()[0,0]\n        winding_element = A.rational_period_mapping()(A.ambient_module()([0,oo]))\n        print N, i, eps, winding_element == 0\n    save(D, filename)\n\n```\n\nthen\n\n```\nsage: ranks(11)\n11 0 1 False\nsage: ranks(11)\nBOOM!\n```\n\nGDB gives\n\n```\nsage: ranks(11)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000001\n0x0077231c in __gmpn_gcd_1 ()\n(gdb) bt\n#0  0x0077231c in __gmpn_gcd_1 ()\n#1  0x0075ba88 in __gmpz_gcd ()\nCannot access memory at address 0x5\n(gdb) The program is running.  Exit anyway? (y or n) lo^H^H\nPlease answer y or n.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3113\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @wjp\n\n```\nDATA = '/tmp/'\ndef ranks(N):\n    filename = '%sranks-%s.sobj'%(DATA,N)\n    if os.path.exists(filename):\n         D = load(filename)\n    else:\n         D = ModularSymbols(N,sign=1).cuspidal_submodule().new_submodule().decomposition()\n    for i,A in enumerate(D):\n        eps = -A.atkin_lehner_operator().matrix()[0,0]\n        winding_element = A.rational_period_mapping()(A.ambient_module()([0,oo]))\n        print N, i, eps, winding_element == 0\n    save(D, filename)\n\n```\n\nthen\n\n```\nsage: ranks(11)\n11 0 1 False\nsage: ranks(11)\nBOOM!\n```\n\nGDB gives\n\n```\nsage: ranks(11)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000001\n0x0077231c in __gmpn_gcd_1 ()\n(gdb) bt\n#0  0x0077231c in __gmpn_gcd_1 ()\n#1  0x0075ba88 in __gmpz_gcd ()\nCannot access memory at address 0x5\n(gdb) The program is running.  Exit anyway? (y or n) lo^H^H\nPlease answer y or n.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3113\n\n",
+    "closed_at": "2008-06-15T08:27:20Z",
     "created_at": "2008-05-06T20:14:27Z",
     "labels": [
         "component: modular forms",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "Major segfault related to modular symbols and pickling",
+    "title": "[with patch, with positive review] Major segfault related to modular symbols and pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3113",
     "user": "https://github.com/williamstein"
@@ -21,7 +23,7 @@ Assignee: @craigcitro
 CC:  @wjp
 
 ```
-DATA = '/tmp'
+DATA = '/tmp/'
 def ranks(N):
     filename = '%sranks-%s.sobj'%(DATA,N)
     if os.path.exists(filename):

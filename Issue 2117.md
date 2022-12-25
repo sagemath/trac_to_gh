@@ -4,6 +4,7 @@ archive/issues_002117.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThe following sequence of events leads to a \"Internal Server Error\" page:\n\n* Start up sage to serve a local notebook (sage -notebook)\n[Browser pops up with \"admin\" already logged in, using a \"startup_token\" url]\n* select some worksheets\n* click \"archive\"\n\nThe notebook seems to be in a sane condition afterwards. If I change the URL to \"https://localhost:8001/\" (i.e., remove the \"?startup_token=...\" part) everything seems as it should be. I guess the notebook barfs at this stage on the \"?\" part in the URL?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2117\n\n",
+    "closed_at": "2009-01-24T01:50:51Z",
     "created_at": "2008-02-08T18:47:44Z",
     "labels": [
         "component: notebook",

@@ -4,6 +4,7 @@ archive/issues_006288.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n> Another thing that does not work is \"sage -\n> lisp\" which gave the clisp prompt. I found this rather convenient\n> since I could just use the clisp within sage. Is there any plan/\n> interest to switch the this lisp interface to ecl? Does ecl use\n> readline?\n\nFor now you can at least start sage then type\n\nsage: !ecl\n\nto start ecl.  It appears to not make any use of ecl.  I don't know if this is just\na compilation problem or an ecl limitation.\n\nThe Sage <--> lisp interface already works fine:\n\nsage: lisp.eval('(+ 2 3)')\n'5'\n\nI'm not sure why %gap works but not %lisp:\n\nsage: %lisp\nERROR: Magic function `lisp` not found.\nsage: %gap\n  --> Switching to Gap <-- \ngap: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6288\n\n",
+    "closed_at": "2014-01-17T04:16:26Z",
     "created_at": "2009-06-14T20:57:48Z",
     "labels": [
         "component: interfaces",

@@ -1,16 +1,16 @@
-# Issue 5038: Add word path support
+# Issue 5038: [with patch, positive review] Add support for word path
 
 archive/issues_005038.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola abmasse\n\nThis module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word\nas a discrete path in a two (or more) dimensions space using a one-to-one\ncorrespondence between the alphabet and a set of vectors called steps. Using combinatorics on words, many problems on discrete polygons on 2d lattice grid may be solved in linear time in length of the perimeter (self-intersecting, area, inertia moment, etc.). For now, the goal is to create all the classes hierarchy. Cool algorithms will come into an other ticket.\n\nHere are some examples taken from the documentation of the current state of paths.py available in the sage-combinat tree.\n\nThe combinatorial class of all paths defined over three given steps:\n\n```\nsage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P\nFinite Word Paths over 3 steps\n```\n\nCreation of a path from the combinatorial class P:\n\n```\nsage: p = P('abaccba'); p\nPath: abaccba\nsage: list(p.points())\n[(0, 0), (1, 2), (-2, 6), (-1, 8), (-1, 5), (-1, 2), (-4, 6), (-3, 8)]\nsage: p.is_closed()\nFalse\nsage: p.plot() \n```\n\nSince p is a finite word, many functions from the word library are available:\n\n```\nsage: p.crochemore_factorization()\n(a.b.a.c.c.ba)\nsage: p.is_palindrome()\nFalse\nsage: p[:3]\nPath: aba\nsage: len(p)\n7 \n```\n\nSome built-in combinatorial classes of paths:\n\n```\nsage: P = WordPaths('abAB', steps='square_grid'); P\nFinite Word Paths on the square grid\n```\n\n```\nsage: D = WordPaths('()', steps='dyck'); D\nFinite Dyck paths\nsage: d = D('()()()(())'); d\nPath: ()()()(())\nsage: d.plot()\n```\n\n```\nsage: P = WordPaths('abcdef', steps='triangle_grid')\nsage: p = P('babaddefadabcadefaadfafabacdefa')\nsage: p.plot() \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5038\n\n",
+    "closed_at": "2009-10-21T11:39:23Z",
     "created_at": "2009-01-20T19:56:41Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Add word path support",
+    "title": "[with patch, positive review] Add support for word path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5038",
     "user": "https://github.com/seblabbe"

@@ -4,6 +4,7 @@ archive/issues_000752.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/752\n\n",
+    "closed_at": "2007-10-21T22:52:39Z",
     "created_at": "2007-09-25T18:21:54Z",
     "labels": [
         "component: algebraic geometry",

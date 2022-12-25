@@ -4,6 +4,7 @@ archive/issues_000204.json:
 ```json
 {
     "body": "Assignee: somebody\n\nfrom Yi\n\n```\nOk, here is a weird bug:\non sage.math.washington.edu\n \nsage: sys.maxint\n9223372036854775807\nsage: sys.maxint >= 0.01\nFalse\n \nsage: sys.maxint >= int(0.01)\nTrue\n \nLooks to be a problem with <type 'sage.rings.real_mpfr.RealNumber'>\n \nAny ideas on how to fix this?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/204\n\n",
+    "closed_at": "2007-01-23T21:50:33Z",
     "created_at": "2007-01-21T03:45:11Z",
     "labels": [
         "component: basic arithmetic",

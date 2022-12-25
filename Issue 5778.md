@@ -1,26 +1,32 @@
-# Issue 5778: More p-adic doctests
+# Issue 5778: [with patch; positive review] Get p-adic doctest coverage to 100% (depends on #5105)
 
 archive/issues_005778.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: doctests\n\nI've added some doctests, and improved ReST compatibility.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5778\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: doctests\n\n**Note**: \n\n* This patch depends on #5105 and will not apply otherwise.\n* It only applies to 3.4.1 at the moment. There are some whitespace changes in 3.4.2.a0 that will need to be sorted out, but I (Michael) will take care of this even if the patches get a positive review against 3.4.1 only. If someone wants to rebase this is fine by me :)\n\nAdded p-adics to the reference manual, 100% doctest coverage, converts p-adics to new coercion model, good ReST compatibility for files up to partway through padic_ZZ_pX_FM_element.pyx (alphabetically), no docbuild errors for files later alphabetically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5778\n\n",
+    "closed_at": "2009-05-11T10:38:53Z",
     "created_at": "2009-04-13T17:44:04Z",
     "labels": [
-        "component: number theory",
+        "component: padics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "More p-adic doctests",
+    "title": "[with patch; positive review] Get p-adic doctest coverage to 100% (depends on #5105)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5778",
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @williamstein
+Assignee: @roed314
 
 Keywords: doctests
 
-I've added some doctests, and improved ReST compatibility.
+**Note**: 
+
+* This patch depends on #5105 and will not apply otherwise.
+* It only applies to 3.4.1 at the moment. There are some whitespace changes in 3.4.2.a0 that will need to be sorted out, but I (Michael) will take care of this even if the patches get a positive review against 3.4.1 only. If someone wants to rebase this is fine by me :)
+
+Added p-adics to the reference manual, 100% doctest coverage, converts p-adics to new coercion model, good ReST compatibility for files up to partway through padic_ZZ_pX_FM_element.pyx (alphabetically), no docbuild errors for files later alphabetically.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5778
 

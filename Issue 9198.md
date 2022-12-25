@@ -4,6 +4,7 @@ archive/issues_009198.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @fchapoton\n\nNon-existent username does not yield error message when sharing worksheet in notebook.  If you attempt to share a worksheet in the notebook with a username that does not exist, it would be useful to have an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9198\n\n",
+    "closed_at": "2020-09-02T11:59:59Z",
     "created_at": "2010-06-09T18:42:22Z",
     "labels": [
         "component: notebook",

@@ -4,6 +4,7 @@ archive/issues_000578.json:
 ```json
 {
     "body": "Assignee: somebody\n\ntrivial typo. See patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/578\n\n",
+    "closed_at": "2007-09-05T04:58:12Z",
     "created_at": "2007-09-03T15:14:44Z",
     "labels": [
         "component: basic arithmetic",

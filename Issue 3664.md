@@ -1,15 +1,16 @@
-# Issue 3664: major updates to root systems
+# Issue 3664: [with patch, positive review] major updates to root systems
 
 archive/issues_003664.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3664\n\n",
+    "closed_at": "2008-08-09T22:24:56Z",
     "created_at": "2008-07-16T00:43:54Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "major updates to root systems",
+    "title": "[with patch, positive review] major updates to root systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3664",
     "user": "https://github.com/mwhansen"

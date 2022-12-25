@@ -1,9 +1,10 @@
-# Issue 6686: [with patch, needs review] Missing closing </center> tag in notebook help page
+# Issue 6686: [with patch, positive review] Missing closing </center> tag in notebook help page
 
 archive/issues_006686.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe notebook help page `http://localhost:8000/help` is not properly centered, because a closing `</center>` tag was omitted at #6225.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6686\n\n",
+    "body": "Assignee: boothby\n\nThe notebook help page (e.g., `http://localhost:8000/help`) is not properly centered, because HTML `<center>` tags were left unbalanced by the merge of #6225.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6686\n\n",
+    "closed_at": "2009-08-26T21:13:32Z",
     "created_at": "2009-08-08T09:56:15Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_006686.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Missing closing </center> tag in notebook help page",
+    "title": "[with patch, positive review] Missing closing </center> tag in notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6686",
     "user": "https://github.com/qed777"
@@ -19,7 +20,7 @@ archive/issues_006686.json:
 ```
 Assignee: boothby
 
-The notebook help page `http://localhost:8000/help` is not properly centered, because a closing `</center>` tag was omitted at #6225.
+The notebook help page (e.g., `http://localhost:8000/help`) is not properly centered, because HTML `<center>` tags were left unbalanced by the merge of #6225.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6686
 

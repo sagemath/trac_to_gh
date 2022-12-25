@@ -1,9 +1,10 @@
-# Issue 2552: fix problems in the combinat reference manual caused by #2432
+# Issue 2552: [with patch, positive review] fix problems in the combinat reference manual caused by #2432
 
 archive/issues_002552.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2552\n\n",
+    "closed_at": "2008-03-16T23:16:05Z",
     "created_at": "2008-03-16T21:12:21Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002552.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "fix problems in the combinat reference manual caused by #2432",
+    "title": "[with patch, positive review] fix problems in the combinat reference manual caused by #2432",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2552",
     "user": "https://github.com/mwhansen"

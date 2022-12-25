@@ -4,6 +4,7 @@ archive/issues_005112.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  mraum\n\nFollowing #5098, here is a generic implementation of Pollard lambda algorithm.\nThere is probably still lots of room for optimization, but it works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5112\n\n",
+    "closed_at": "2009-12-15T16:12:54Z",
     "created_at": "2009-01-27T20:50:07Z",
     "labels": [
         "component: algebra",

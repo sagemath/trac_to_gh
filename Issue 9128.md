@@ -3,7 +3,8 @@
 archive/issues_009128.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nthiery @nexttime @novoselt @mwhansen\n\nKeywords: Sphinx links\n\nThough sphinx is perfectly working with target in the local module he isn't\nable to find reference target from other modules even if they are exported in\nall.py. For example, if I want to link Parent from anywhere but parent.pyx, I\nhave to write the full path (ie. `:class:`~sage.structure.parent.Parent``)\neven if it is imported in my module. I find this extremely annoying since, in\nthe task of improving the category doc, I'm setting up a lot of huge cross\nreferences such as:\n\n```\n    :meth:`Algebras.ParentMethods.algebra_generators()\n    <sage.categories.algebras.Algebras.ParentMethods.algebra_generators>`.\n```\nI would be very happy if I had to write only\n\n```\n    :meth:`Algebras.ParentMethods.algebra_generators`\n```\nThe following patch should solve this issue\n\nIssue created by migration from https://trac.sagemath.org/ticket/9128\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @nthiery @nexttime @novoselt @mwhansen\n\nKeywords: Sphinx links\n\nThough sphinx is perfectly working with target in the local module he isn't\nable to find reference target from other modules even if they are exported in\nall.py. For example, if I want to link Parent from anywhere but parent.pyx, I\nhave to write the full path (ie. `:class:`~sage.structure.parent.Parent``)\neven if it is imported in my module. I find this extremely annoying since, in\nthe task of improving the category doc, I'm setting up a lot of huge cross\nreferences such as:\n\n```\n    :meth:`Algebras.ParentMethods.algebra_generators()\n    <sage.categories.algebras.Algebras.ParentMethods.algebra_generators>`.\n```\nI would be very happy if I had to write only\n\n```\n    :meth:`Algebras.ParentMethods.algebra_generators`\n```\nThe following patch should solve this issue\n\nI set up `intersphinx` so that links to Python's doc are correctly\nresolved. The patch\n[attachment:trac_9128-intersphinx_python_database-fh.patch] contains Python's\ncrossref database downloaded from http://docs.python.org/objects.inv I'm also\nusing intersphinx to solve links to the reference manual from the other\ndocuments.\n\n## New option for docbuild\n\nI added the option `--warn-links` to the documentation build command as in\n\n```\n    sage -docbuild --warn-links reference htm\n```\nWhen the option is used, Sphinx will issue a warning, whenever a link is not resolved.\n\n## Extra features\n\nMoreover, I add a reference target to every automatically created `.rst`\nfile associated to python source files. It can by used to set-up a link toward\nthe file and thus get the title rather than the module. For example\n`:ref:sage.categories.primer` setup a link to the help page with title\n`\"Elements, parents, and categories in Sage: a (draft of) primer\"` rather\nthan\n`sage.categories.primer` which you get with the link\n`:mod:sage.categories.primer`.\n\n## Apply both:\n\nNote: order is irrelevant\n\n- [attachment:trac_9128-intersphinx_python_database-fh.patch]\n- [attachment:trac_9128-sphinx_links_all-fh.patch]\n- [attachment:trac_9128-MANIFEST-fh.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9128\n\n",
+    "closed_at": "2012-03-13T08:21:27Z",
     "created_at": "2010-06-03T12:47:46Z",
     "labels": [
         "component: documentation"
@@ -15,7 +16,7 @@ archive/issues_009128.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: mvngu
+Assignee: @hivert
 
 CC:  @nthiery @nexttime @novoselt @mwhansen
 
@@ -39,6 +40,41 @@ I would be very happy if I had to write only
     :meth:`Algebras.ParentMethods.algebra_generators`
 ```
 The following patch should solve this issue
+
+I set up `intersphinx` so that links to Python's doc are correctly
+resolved. The patch
+[attachment:trac_9128-intersphinx_python_database-fh.patch] contains Python's
+crossref database downloaded from http://docs.python.org/objects.inv I'm also
+using intersphinx to solve links to the reference manual from the other
+documents.
+
+## New option for docbuild
+
+I added the option `--warn-links` to the documentation build command as in
+
+```
+    sage -docbuild --warn-links reference htm
+```
+When the option is used, Sphinx will issue a warning, whenever a link is not resolved.
+
+## Extra features
+
+Moreover, I add a reference target to every automatically created `.rst`
+file associated to python source files. It can by used to set-up a link toward
+the file and thus get the title rather than the module. For example
+`:ref:sage.categories.primer` setup a link to the help page with title
+`"Elements, parents, and categories in Sage: a (draft of) primer"` rather
+than
+`sage.categories.primer` which you get with the link
+`:mod:sage.categories.primer`.
+
+## Apply both:
+
+Note: order is irrelevant
+
+- [attachment:trac_9128-intersphinx_python_database-fh.patch]
+- [attachment:trac_9128-sphinx_links_all-fh.patch]
+- [attachment:trac_9128-MANIFEST-fh.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9128
 

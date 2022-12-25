@@ -3,7 +3,8 @@
 archive/issues_007000.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @jhpalmieri\n\nThe code for running docstrings through Sphinx on-demand could be useful in other contexts:\n\n* Command-line (cf. 6820).\n* Notebook reST editor (cf. [The List](http://wiki.sagemath.org/SageUsability)).\n\nCurrently, the code lives in `cell.py`, but it would be easier to mantain and extend in `sage.misc`, say.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7000\n\n",
+    "body": "Assignee: tba\n\nCC:  @jhpalmieri\n\nThe code for running docstrings through Sphinx on-demand could be useful in other contexts:\n\n* Command-line (cf. #6820).\n* Notebook reST editor (cf. [The List](http://wiki.sagemath.org/SageUsability)).\n\nCurrently, the code lives in `cell.py`, but it would be easier to mantain and extend in `sage.misc`, say.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7000\n\n",
+    "closed_at": "2009-09-30T08:16:35Z",
     "created_at": "2009-09-23T09:25:49Z",
     "labels": [
         "component: documentation",
@@ -22,7 +23,7 @@ CC:  @jhpalmieri
 
 The code for running docstrings through Sphinx on-demand could be useful in other contexts:
 
-* Command-line (cf. 6820).
+* Command-line (cf. #6820).
 * Notebook reST editor (cf. [The List](http://wiki.sagemath.org/SageUsability)).
 
 Currently, the code lives in `cell.py`, but it would be easier to mantain and extend in `sage.misc`, say.

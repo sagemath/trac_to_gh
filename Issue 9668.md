@@ -3,7 +3,8 @@
 archive/issues_009668.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri\n\nSee [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.\n\n```\nHere is how I got the optional package automap to install into a \nbinary sage R. \nGo into the sage directory and edit the following files: \nlocal/bin/R and local/lib/R/bin/R \nand change all the hard-set user variables \"/scratch/....\" to the true \nlocations of R_HOME_DIR, R_HOME, R_INCLUDE_DIR, R_SHARE_DIR and for \ngood measure, R_DOC_DIR. Replace the default string EVERYWHERE in the \nfile. \nI then exported SAGE_HOME as well (Not sure that this is needed.), and \nrun local/bin/R \nInside R, install.packages(\"automap\") \nNo more build errors, and when I restart R, automap loads using \nlibrary. Just have to try it out from sage now. \nAny chance there's a script to find all of these hard-set strings and \nchange them to correct values? \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9668\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @nexttime @jhpalmieri\n\nKeywords: R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR sd32 r-project\n\nSee [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.\n\n```\nHere is how I got the optional package automap to install into a \nbinary sage R. \nGo into the sage directory and edit the following files: \nlocal/bin/R and local/lib/R/bin/R \nand change all the hard-set user variables \"/scratch/....\" to the true \nlocations of R_HOME_DIR, R_HOME, R_INCLUDE_DIR, R_SHARE_DIR and for \ngood measure, R_DOC_DIR. Replace the default string EVERYWHERE in the \nfile. \nI then exported SAGE_HOME as well (Not sure that this is needed.), and \nrun local/bin/R \nInside R, install.packages(\"automap\") \nNo more build errors, and when I restart R, automap loads using \nlibrary. Just have to try it out from sage now. \nAny chance there's a script to find all of these hard-set strings and \nchange them to correct values? \n```\n\n---\n\nRelated (R package):\n* #9906\n* #9847\n* #8274\n* #10967\n\n---\n\nNew spkg: [http://boxen.math.washington.edu/home/palmieri/SPKG/r-2.15.2.p2.spkg](http://boxen.math.washington.edu/home/palmieri/SPKG/r-2.15.2.p2.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9668\n\n",
+    "closed_at": "2013-04-18T10:07:58Z",
     "created_at": "2010-08-02T14:33:47Z",
     "labels": [
         "component: packages: standard",
@@ -16,9 +17,11 @@ archive/issues_009668.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tbd
+Assignee: @nexttime
 
 CC:  @nexttime @jhpalmieri
+
+Keywords: R spkg R.sh.in libR.pc pkg-config hard-coded package installation R_HOME_DIR sd32 r-project
 
 See [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.
 
@@ -39,6 +42,18 @@ library. Just have to try it out from sage now.
 Any chance there's a script to find all of these hard-set strings and 
 change them to correct values? 
 ```
+
+---
+
+Related (R package):
+* #9906
+* #9847
+* #8274
+* #10967
+
+---
+
+New spkg: [http://boxen.math.washington.edu/home/palmieri/SPKG/r-2.15.2.p2.spkg](http://boxen.math.washington.edu/home/palmieri/SPKG/r-2.15.2.p2.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9668
 

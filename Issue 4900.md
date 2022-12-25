@@ -1,16 +1,17 @@
-# Issue 4900: New BSGS point counting on elliptic curves over finite fields
+# Issue 4900: [with new new patch, positive review] New BSGS point counting on elliptic curves over finite fields
 
 archive/issues_004900.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: elliptic curves finite fields\n\nPoint counting on elliptic curves where the j-invariant is not in the prime field has been implemented up to now via the same function that determines the group structure.  The reason was that \"Mestre's trick\" does not always work over non-prime fields (specifically, over F_q where q is square there are always counterexamples).  I worked out how to extend Mestre to the general case about 9 months ago but did not want to contribute the resulting code until it was written up.  That has now been done, in a 4-page note joint with Drew Sutherland.  (See http://www.warwick.ac.uk/staff/J.E.Cremona/papers/MestreNote.pdf;  it should be on ArXiV early January 2009).\n\nThe current patch implements this in a new function cardinality_bsgs().  This will always be used in computing the cardinality of curves whose j-invariant is not in the prime field.  Over prime fields it can be used by giving algorithm='bsgs' to the cardinality() function.  [The old use of algorithm='bsgs' is renamed algorithm='pari' since that's the option to call pari, which is only over prime fields.]\n\nThis also means that the abelian_group() function is simpler since it always computes the cardinality first, which simplifies that code.\n\nLastly, the new code uses quadratic twists, and the quadratic_twist() funtion in ell_generic.py can now be called with no twisting parameter for curves over finite fields, with the single exception of characteristic 2 and j=0.\n\nThe patch applies to 3.2.2 and has been tested on lots of curves (including all the -long tests in sage/schemes/elliptic_curves).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4900\n\n",
+    "closed_at": "2009-01-24T19:55:39Z",
     "created_at": "2009-01-01T15:34:17Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "New BSGS point counting on elliptic curves over finite fields",
+    "title": "[with new new patch, positive review] New BSGS point counting on elliptic curves over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4900",
     "user": "https://github.com/JohnCremona"

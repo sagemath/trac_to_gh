@@ -3,7 +3,8 @@
 archive/issues_009130.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @benjaminfjones\n\nKeywords: special function, pynac\n\nAlthough Maxima has the beta function, Sage doesn't:\n\n```\nsage: a, b, c = var('a b c') \nsage: assume(a > 0) \nsage: assume(b > 0) \nsage: x = var('x') \nsage: beta_dist = x**(a-1) * (1 - x)**(b-1) \nsage: c = integral(beta_dist, x, 0, 1) \nsage: c\nbeta(a, b)\nsage: c(a=.5,b=.5)\nbeta(0.500000000000000, 0.500000000000000)\nsage: c(a=.5,b=.5).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/karl-dietercrisman/<ipython console> in <module>()\n\n/Users/karl-dietercrisman/Desktop/sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17042)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\nThis *is* is Ginac, though, and there is even room for defining it in symbolic/expression.pyx . It probably is also included in some of our other libraries, as a standard special function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9130\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @benjaminfjones\n\nKeywords: special function, pynac, sd35.5 Cernay2012\n\nAlthough Maxima has the beta function, Sage doesn't:\n\n```\nsage: a, b, c = var('a b c') \nsage: assume(a > 0) \nsage: assume(b > 0) \nsage: x = var('x') \nsage: beta_dist = x**(a-1) * (1 - x)**(b-1) \nsage: c = integral(beta_dist, x, 0, 1) \nsage: c\nbeta(a, b)\nsage: c(a=.5,b=.5)\nbeta(0.500000000000000, 0.500000000000000)\nsage: c(a=.5,b=.5).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/karl-dietercrisman/<ipython console> in <module>()\n\n/Users/karl-dietercrisman/Desktop/sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17042)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\nThis *is* is Ginac, though, and there is even room for defining it in symbolic/expression.pyx . It probably is also included in some of our other libraries, as a standard special function.\n\n---\n\nApply \n* Patches at #4498 and #12507\n* [attachment:trac_9130-beta_function.3.patch]\n* [attachment:trac_9130-py_float_segfault.take2.patch]\n* [attachment:trac_9130-reviewer.patch]\n* [attachment:trac_9130-random-tests.2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9130\n\n",
+    "closed_at": "2012-02-27T11:19:47Z",
     "created_at": "2010-06-03T15:06:34Z",
     "labels": [
         "component: symbolics"
@@ -19,7 +20,7 @@ Assignee: @burcin
 
 CC:  @benjaminfjones
 
-Keywords: special function, pynac
+Keywords: special function, pynac, sd35.5 Cernay2012
 
 Although Maxima has the beta function, Sage doesn't:
 
@@ -45,6 +46,15 @@ TypeError                                 Traceback (most recent call last)
 TypeError: cannot evaluate symbolic expression numerically
 ```
 This *is* is Ginac, though, and there is even room for defining it in symbolic/expression.pyx . It probably is also included in some of our other libraries, as a standard special function.
+
+---
+
+Apply 
+* Patches at #4498 and #12507
+* [attachment:trac_9130-beta_function.3.patch]
+* [attachment:trac_9130-py_float_segfault.take2.patch]
+* [attachment:trac_9130-reviewer.patch]
+* [attachment:trac_9130-random-tests.2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9130
 

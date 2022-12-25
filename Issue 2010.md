@@ -1,16 +1,17 @@
-# Issue 2010: crap -- libpng contains lots and lots of weird (OS X?) temp or meta files
+# Issue 2010: [with spkg] crap -- libpng contains lots and lots of weird (OS X?) temp or meta files
 
 archive/issues_002010.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._Y2KINFO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._TODO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._test-pngtest.sh\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._smakefile.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._SCOPTIONS.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.rc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngos2.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makevms.com\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.watcom\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcwin32\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcawin32\n...\nAND MANY MORE\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2010\n\n",
+    "closed_at": "2008-02-01T02:01:14Z",
     "created_at": "2008-01-31T23:21:33Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- libpng contains lots and lots of weird (OS X?) temp or meta files",
+    "title": "[with spkg] crap -- libpng contains lots and lots of weird (OS X?) temp or meta files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2010",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 3888: [with trivial patch, needs 'review'] trivial indentation
+# Issue 3888: [with trivial patch, positive review] trivial indentation
 
 archive/issues_003888.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3888\n\n",
+    "closed_at": "2008-08-18T23:12:52Z",
     "created_at": "2008-08-18T11:38:57Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with trivial patch, needs 'review'] trivial indentation",
+    "title": "[with trivial patch, positive review] trivial indentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3888",
     "user": "https://github.com/malb"

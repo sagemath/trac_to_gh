@@ -1,16 +1,17 @@
-# Issue 3193: fix 64 bit OSX build support for twisted
+# Issue 3193: [with spkg, with positive review] fix 64 bit OSX build support for twisted
 
 archive/issues_003193.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is slightly trickier - see ToDo in http://wiki.sagemath.org/osx64 - but spkg is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3193\n\n",
+    "closed_at": "2008-05-28T13:19:19Z",
     "created_at": "2008-05-13T14:51:37Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "fix 64 bit OSX build support for twisted",
+    "title": "[with spkg, with positive review] fix 64 bit OSX build support for twisted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3193",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

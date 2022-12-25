@@ -1,16 +1,17 @@
-# Issue 1556: [with patch] improve readability of unknown username error page
+# Issue 1556: [with patch, positive review] improve readability of unknown username error page
 
 archive/issues_001556.json:
 ```json
 {
     "body": "Assignee: boothby\n\nKeywords: notebook\n\nThe current page you get when you try to login to the notebook with an unknown username is incredibly hard to read since it does not even alphabetize usernames.  This patch will alphabetize the list and put each username on a single line. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1556\n\n",
+    "closed_at": "2007-12-21T01:20:28Z",
     "created_at": "2007-12-18T02:06:13Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[with patch] improve readability of unknown username error page",
+    "title": "[with patch, positive review] improve readability of unknown username error page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1556",
     "user": "https://github.com/yqiang"

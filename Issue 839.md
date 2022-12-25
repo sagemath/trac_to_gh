@@ -1,17 +1,17 @@
-# Issue 839: write pexpect interface to R
+# Issue 839: [with patch, positive review] write pexpect interface to R
 
 archive/issues_000839.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  @mwhansen @haraldschilly\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/839\n\n",
+    "closed_at": "2008-04-20T05:39:02Z",
     "created_at": "2007-10-07T18:55:13Z",
     "labels": [
         "component: interfaces",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "write pexpect interface to R",
+    "title": "[with patch, positive review] write pexpect interface to R",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/839",
     "user": "https://github.com/mwhansen"

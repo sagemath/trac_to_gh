@@ -1,16 +1,17 @@
-# Issue 8538: Update mpi4py (MPI for Python) to the latest version (1.2.1)
+# Issue 8538: Update mpi4py (MPI for Python) to the latest version (1.2.2)
 
 archive/issues_008538.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAs reported before (#8522) Open MPI fails to build on Solaris. The version is old, so I opened a ticket for an update to Open MPI (#8537). William indicated that mpi4py depends on Open MPI, so I might as well update mpi4py too. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8538\n\n",
+    "closed_at": "2011-12-18T09:50:10Z",
     "created_at": "2010-03-15T00:12:38Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
-    "title": "Update mpi4py (MPI for Python) to the latest version (1.2.1)",
+    "title": "Update mpi4py (MPI for Python) to the latest version (1.2.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8538",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

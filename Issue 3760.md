@@ -1,17 +1,18 @@
-# Issue 3760: sage -t -long ell_finite_field.py fails with an out of memory error on 32-bit intel os x.
+# Issue 3760: creating 666 rings in singular fails with an out of memory error on 32-bit intel os x.
 
 archive/issues_003760.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nTrying:\n    for p in prime_range(Integer(10000)):           #long time (~20s)###line 1014:_sage_    >>> for p in prime_range(10000):           #long time (~20s)\n          if p != Integer(389):\n              G=E.change_ring(GF(p)).abelian_group()\nExpecting nothing\n\nerror: no more memory\nSystem 5116k:5116k Appl 4666k/449k Malloc 4088k/3k Valloc 1024k/445k Pages 159/97 Regions 2:2\n\nhalt 14  \n\n         [19.0 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long --verbose devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\nTotal time for all tests: 19.0 seconds\nbsd:sage-3.1.alpha0 was$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3760\n\n",
+    "closed_at": "2009-02-24T19:39:21Z",
     "created_at": "2008-08-02T19:05:06Z",
     "labels": [
         "component: number theory",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "sage -t -long ell_finite_field.py fails with an out of memory error on 32-bit intel os x.",
+    "title": "creating 666 rings in singular fails with an out of memory error on 32-bit intel os x.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3760",
     "user": "https://github.com/williamstein"

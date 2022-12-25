@@ -4,6 +4,7 @@ archive/issues_007359.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nA graph is said to be k-degenerated if it can be totally decomposed by successively removing vertices of degree <= k.\n\nThere should be in Sage a function answering if a graph is k-degenerated, and in this case giving the order in which the vertices should be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7359\n\n",
+    "closed_at": "2010-10-09T08:43:39Z",
     "created_at": "2009-10-31T08:53:48Z",
     "labels": [
         "component: graph theory"

@@ -4,10 +4,10 @@ archive/issues_009933.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nAn integral divisor class should lift to an integral divisor. But:\n\n```\nsage: rays = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, 0, 1), (2, -1, -1)]\nsage: cones = [(0, 2, 3), (0, 2, 4), (0, 3, 4), (1, 2, 3), (1, 2, 4), (1, 3, 4)]\nsage: X = ToricVariety(Fan(cones=cones, rays=rays))\nsage: X.rational_class_group().gen(1).lift()\n-1/2*V(z0) + 1/2*V(z1)\n```\nThe attached patch fixes this and any doctest fallout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9934\n\n",
+    "closed_at": "2010-09-29T08:39:09Z",
     "created_at": "2010-09-17T14:00:03Z",
     "labels": [
-        "component: algebraic geometry",
-        "bug"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Toric divisor class -> divisor lift should be integral",

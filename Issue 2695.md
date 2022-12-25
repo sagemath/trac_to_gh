@@ -4,10 +4,10 @@ archive/issues_002695.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n[06:27] <mabshoff> wstein: toothpaste's problem is RAM, not [only] disk space.\n[06:27] <wstein> RAM. Wow.\n[06:27] <mabshoff> gcc isn't very efficient.\n[06:27] <wstein> his problem might be lack of a toothbrush.\n[06:27] <mabshoff> And it fails in eclib, so linbox_wrap will be worst.\n[06:28] <wstein> Wow, I see.\n[06:28] <wstein> Dang C++ templates.\n[06:28] <mabshoff> RTFL :)\n[06:28] <wstein> what does rtfl stand for?\n[06:28] <wstein> read the frickin' L?\n[06:28] <mabshoff> read the fine log ;) [edited :)]\n[06:28] <wstein> ahh.\n[06:28] <wstein> good point.\n[06:28] <mabshoff> That was a new failure.\n[06:29] <wstein> Maybe we should check for at least 1GB ram right at the beginning\n[06:29] <mabshoff> I guess the hosted VMs in his case have a rather small, hardcoded limit.\n[06:29] <wstein> of the build, and if the user has less, give an error?\n[06:29] <mabshoff> probably, but 700 MB seems enough.\n[06:29] <wstein> OK, we could check for that.\n[06:29] <wstein> And test that it works using ulimit.\n[06:29] <wstein> That's the sort of thing autohell never does...\n[06:32] <mabshoff> I am not sure if ulimit tests if you have that much memory available.\n[06:33] <mabshoff> It just limits the max allocatable amount.\n[06:33] <wstein> We could just write a small C program that malloc's 700MB.\n[06:33] <wstein> if it fails, then sage doesn't build further.\n[06:33] <mabshoff> Yeah. \n[06:34] <wstein> If this actually sounds like a good idea to you, paste this log in a trac ticket.\n[06:34] <mabshoff> :)\n[06:34] <wstein> If it doesn't, just ignore it.  I leave it up to your taste to decide.\n[06:34] <mabshoff> printf(\"You cheapskate, buy your computer more RAM!\");\n[06:34] <mabshoff> :)\n[06:35] <wstein> :-)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2695\n\n",
+    "closed_at": "2013-06-19T12:20:42Z",
     "created_at": "2008-03-28T06:09:41Z",
     "labels": [
-        "component: build",
-        "bug"
+        "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ensure that we have sufficient amounts of RAM to build Sage",

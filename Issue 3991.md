@@ -1,9 +1,10 @@
-# Issue 3991: [with patch, needs review] Matrix_mod2_dense.__hash__ 32-bit doctest failure
+# Issue 3991: [with patch, positive review] Matrix_mod2_dense.__hash__ 32-bit doctest failure
 
 archive/issues_003991.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @JohnCremona\n\nKeywords: doctest failure\n\nJohn reported this:\n> The third is this:\n\n>> File \"/home/john/sage-3.1.2.alpha1/tmp/matrix_mod2_dense.py\", line 267:\n>>     sage: hex(hash(A))\n\n>> Expected:\n>>     '0xdeadbeed'\n\n>> Got:\n>>     '-0x21524113'\n\nIssue created by migration from https://trac.sagemath.org/ticket/3991\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona\n\nKeywords: doctest failure\n\nJohn reported this:\n> The third is this:\n\n>> File \"/home/john/sage-3.1.2.alpha1/tmp/matrix_mod2_dense.py\", line 267:\n\n```\n    sage: hex(hash(A))\nExpected:\n    '0xdeadbeed'\nGot:\n    '-0x21524113'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3991\n\n",
+    "closed_at": "2008-08-30T18:10:55Z",
     "created_at": "2008-08-29T11:30:54Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_003991.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Matrix_mod2_dense.__hash__ 32-bit doctest failure",
+    "title": "[with patch, positive review] Matrix_mod2_dense.__hash__ 32-bit doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3991",
     "user": "https://github.com/malb"
@@ -27,13 +28,14 @@ John reported this:
 > The third is this:
 
 >> File "/home/john/sage-3.1.2.alpha1/tmp/matrix_mod2_dense.py", line 267:
->>     sage: hex(hash(A))
 
->> Expected:
->>     '0xdeadbeed'
-
->> Got:
->>     '-0x21524113'
+```
+    sage: hex(hash(A))
+Expected:
+    '0xdeadbeed'
+Got:
+    '-0x21524113'
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3991
 

@@ -4,6 +4,7 @@ archive/issues_007942.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\n\nThat is dumb and should be fixed!\n\nsage: latex(I)\nI\nsage: latex(i)\nI\n\nIt should output \"i\" not \"I\".\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7942\n\n",
+    "closed_at": "2010-01-16T09:12:10Z",
     "created_at": "2010-01-16T03:27:15Z",
     "labels": [
         "component: symbolics",

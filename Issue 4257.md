@@ -1,16 +1,17 @@
-# Issue 4257: [with patch, needs review] support for Singular's  'intmat' and 'intvec'
+# Issue 4257: [with patch, positive review] support for Singular's  'intmat' and 'intvec'
 
 archive/issues_004257.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  singular\n\nThis now works:\n\n```\nsage: A = random_matrix(ZZ,3,3); A\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\nsage: As = singular(A); As\n-8     2     0\n 0     1    -1\n 2     1   -95\nsage: As._sage_()\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4257\n\n",
+    "closed_at": "2008-10-11T06:40:58Z",
     "created_at": "2008-10-09T21:54:29Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] support for Singular's  'intmat' and 'intvec'",
+    "title": "[with patch, positive review] support for Singular's  'intmat' and 'intvec'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4257",
     "user": "https://github.com/malb"

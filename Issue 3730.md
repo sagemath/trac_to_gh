@@ -4,6 +4,7 @@ archive/issues_003730.json:
 ```json
 {
     "body": "Assignee: tba\n\nDebian's automated Python byte-compilation tool determines what's a python script based on whether it has extention .py (yeah, I know, pretty lame), and is apparently stupid enough to look in /usr/share/doc/sagemath/examples for things needing byte-compilation.\n\nUnfortunately, /usr/share/doc/sagemath/examples/example.py is a .py with a #!/usr/bin/sage and which apparently isn't entirely valid python (the last line causes the byte-compiler to fail):\n\n```\nCompiling /usr/share/sagemath/examples/example.py ...\n  File \"/usr/share/sagemath/examples/example.py\", line 62\n    time factor(Integer(2)**Integer(127)-Integer(1))\n              ^\nSyntaxError: invalid syntax\n```\n\nThe corresponding file example.sage seems to not exist, so I'm not sure what the story with that file is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3730\n\n",
+    "closed_at": "2012-06-02T12:35:44Z",
     "created_at": "2008-07-27T03:37:25Z",
     "labels": [
         "component: documentation",

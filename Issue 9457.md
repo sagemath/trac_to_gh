@@ -1,17 +1,17 @@
-# Issue 9457: power series comparison should use padded_list
+# Issue 9457: power series equality fails when trailing coefficients are zero
 
 archive/issues_009457.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  simonking @categorie\n\nComparison of power series uses list instead of padded_list; this means that power series equality can fail:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, False, False, True, False, True] # should be all true\nsage: g.add_bigoh(3).list()\n[1]\nsage: g.add_bigoh(3).padded_list()\n[1, 0, 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking @categorie\n\nComparison of power series uses `list` instead of `padded_list`.  This drops trailing zeros, and means that power series equality is buggy:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage: g == t + O(t^3)   # should be True\nFalse\n\nsage: [g == g.add_bigoh(i) for i in range(7)]    # these should all be True\n[True, False, True, False, True, False, True] \n\nsage: g.add_bigoh(3).list()  # drops trailing zero\n[0, 1]\nsage: g.add_bigoh(3).padded_list()\n[0, 1, 0]\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
+    "closed_at": "2014-04-14T16:55:53Z",
     "created_at": "2010-07-08T15:35:20Z",
     "labels": [
         "component: commutative algebra",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
-    "title": "power series comparison should use padded_list",
+    "title": "power series equality fails when trailing coefficients are zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9457",
     "user": "https://github.com/nilesjohnson"
@@ -21,19 +21,26 @@ Assignee: @malb
 
 CC:  simonking @categorie
 
-Comparison of power series uses list instead of padded_list; this means that power series equality can fail:
+Comparison of power series uses `list` instead of `padded_list`.  This drops trailing zeros, and means that power series equality is buggy:
 
 ```
 sage: A.<t> = PowerSeriesRing(ZZ)
 sage: g = t + t^3 + t^5 + O(t^6); g
-t + t^3 + O(t^6)
-sage: [g == g.add_bigoh(i) for i in range(7)]
-[True, True, False, False, True, False, True] # should be all true
-sage: g.add_bigoh(3).list()
-[1]
+t + t^3 + t^5 + O(t^6)
+sage: g == t + O(t^3)   # should be True
+False
+
+sage: [g == g.add_bigoh(i) for i in range(7)]    # these should all be True
+[True, False, True, False, True, False, True] 
+
+sage: g.add_bigoh(3).list()  # drops trailing zero
+[0, 1]
 sage: g.add_bigoh(3).padded_list()
-[1, 0, 0]
+[0, 1, 0]
 ```
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9457
 

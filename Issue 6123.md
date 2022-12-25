@@ -1,15 +1,16 @@
-# Issue 6123: [with patch, needs review] expose partition refinement functions to Python
+# Issue 6123: [with patch, positive review] expose partition refinement functions to Python
 
 archive/issues_006123.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  sage-combinat\n\nThe idea is that it would be nice to use the partition refinement functions for experimentation without having to recompile a lot of times.\n\nIt would be very good to get this into Sage-4.0, since this will allow for patches on the sage-combinat server which don't require excessive compilation time when pushing/popping.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6123\n\n",
+    "closed_at": "2009-06-14T22:45:19Z",
     "created_at": "2009-05-24T07:41:34Z",
     "labels": [
         "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] expose partition refinement functions to Python",
+    "title": "[with patch, positive review] expose partition refinement functions to Python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6123",
     "user": "https://github.com/rlmill"

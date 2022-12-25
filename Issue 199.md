@@ -1,16 +1,17 @@
-# Issue 199: ling long sent some congruence subgroup code -- put in sage.
+# Issue 199: [with code] some congruence subgroup code (from ling long)
 
 archive/issues_000199.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/199\n\n",
+    "closed_at": "2008-02-08T07:03:47Z",
     "created_at": "2007-01-19T11:35:14Z",
     "labels": [
         "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "ling long sent some congruence subgroup code -- put in sage.",
+    "title": "[with code] some congruence subgroup code (from ling long)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/199",
     "user": "https://github.com/williamstein"

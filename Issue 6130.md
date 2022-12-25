@@ -1,22 +1,23 @@
-# Issue 6130: README about documentation is outdated.
+# Issue 6130: [with patch, positive review] README about documentation is outdated.
 
 archive/issues_006130.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\n8. OPTIONAL: Documentation: If you want to (try to) build the\n   documentation, change into SAGE_ROOT/devel/doc and type \"make\n   html\" or \"make pdf\".  This requires having latex and latex2html\n   installed, and there are some issues with the \\url macro.  Note\n   that the latex\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6130\n\n",
+    "body": "Assignee: @mwhansen\n\n```\n8. OPTIONAL: Documentation: If you want to (try to) build the\n   documentation, change into SAGE_ROOT/devel/doc and type \"make\n   html\" or \"make pdf\".  This requires having latex and latex2html\n   installed, and there are some issues with the \\url macro.  Note\n   that the latex\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6130\n\n",
+    "closed_at": "2009-05-28T07:44:14Z",
     "created_at": "2009-05-26T14:32:56Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "README about documentation is outdated.",
+    "title": "[with patch, positive review] README about documentation is outdated.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6130",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 ```
 8. OPTIONAL: Documentation: If you want to (try to) build the

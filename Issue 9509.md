@@ -4,6 +4,7 @@ archive/issues_009509.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby @videlec\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9509\n\n",
+    "closed_at": "2010-07-21T10:27:28Z",
     "created_at": "2010-07-15T14:43:30Z",
     "labels": [
         "component: graph theory"

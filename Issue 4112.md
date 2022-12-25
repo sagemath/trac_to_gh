@@ -1,9 +1,10 @@
-# Issue 4112: 3.1.2.rc2 doctest failure: sage/interfaces/sage0.py
+# Issue 4112: [with patch, positive review] 3.1.2.rc2 doctest failure: sage/interfaces/sage0.py
 
 archive/issues_004112.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI saw the following doctest failure on my Intel OSX 10.5 MacBook Pro:\n\n```\nsage -t  devel/sage-main/sage/interfaces/sage0.py           *******************\n**************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 276:\n    sage: sage0.eval('2+2')\nExpected:\n    '4'\nGot:\n    '4\\n'\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 289:\n    sage: sage0.get('x')\nExpected:\n    '2'\nGot:\n    '2\\n'\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 303:\n    sage: sage0.get('x')\nExpected:\n    '2'\nGot:\n    '2\\n'\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 314:\n    sage: sage0.get('x')\nExpected:\n    '2'\nGot:\n    '2\\n'\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 317:\n    sage: sage0.get('x')\nExpected:\n    \"...NameError: name 'x' is not defined\"\nGot:\n    \"--------------------------------------------------------------------------\n\\nNameError                                 Traceback (most recent call last)\\n\nn/Users/craigcitro/three-oh-two/data/extcode/sage/<ipython console> in <module>\n)\\n\\nNameError: name 'x' is not defined\\n\"\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 326:\n    sage: sage0._contains('2', 'QQ')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 350:\n    sage: sage0.version() == version()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 487:\n    sage: sage0_version() == version()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/craigcitro/three-oh-two/tmp/sage0.py\", line 177:\n    sage: s.eval('2+2')\nExpected:\n    '4'\nGot:\n    '4\\n'\n**********************************************************************\n8 items had failures:\n   1 of   3 in __main__.example_10\n   1 of   4 in __main__.example_11\n   1 of   4 in __main__.example_12\n   2 of   6 in __main__.example_13\n   1 of   3 in __main__.example_14\n   1 of   4 in __main__.example_16\n   1 of   4 in __main__.example_26\n   1 of   5 in __main__.example_5\n***Test Failed*** 9 failures.\nFor whitespace errors, see the file /Users/craigcitro/three-oh-two/tmp/.doctest\nsage0.py\n         [9.7 s]\nexit code: 1024\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4112\n\n",
+    "closed_at": "2008-09-14T09:36:29Z",
     "created_at": "2008-09-14T06:20:47Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_004112.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "3.1.2.rc2 doctest failure: sage/interfaces/sage0.py",
+    "title": "[with patch, positive review] 3.1.2.rc2 doctest failure: sage/interfaces/sage0.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4112",
     "user": "https://github.com/craigcitro"

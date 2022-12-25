@@ -1,22 +1,23 @@
-# Issue 6717: Sage 4.1.1.rc2: doctest failures in sage/symbolic/expression.pyx
+# Issue 6717: [with patch, positive review] Sage 4.1.1.rc2: doctest failures in sage/symbolic/expression.pyx
 
 archive/issues_006717.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nGeorg S. Weber reported the following doctest failures at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5f23ec4032f5e91b) thread:\n\n```\non Mac(Intel) OS X 10.4.11 (XCode 2.5 / gcc 4.0.1 build \"5370\"), Sage\n4.1.1.rc2 builds fine.\nHowever, there are two (reproducible) doctest failures, one known one\nand one I never saw before. The known one is:\n\nsage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.rc2/devel/sage/sage/symbolic/\nexpression.pyx\", line 2515:\n    sage: ((x+y)^a).match(w0^w1)\nExpected:\n    {$1: a, $0: x + y}\nGot:\n    {$0: x + y, $1: a}\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.rc2/devel/sage/sage/symbolic/\nexpression.pyx\", line 2521:\n    sage: ((a+b)*(a+c)).match((a+w0)*(a+w1))\nExpected:\n    {$1: c, $0: b}\nGot:\n    {$0: b, $1: c}\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.rc2/devel/sage/sage/symbolic/\nexpression.pyx\", line 2527:\n    sage: (a*(x+y)+a*z+b).match(a*w0+w1)\nExpected:\n    {$1: a*z + b, $0: x + y}\nGot:\n    {$0: x + y, $1: a*z + b}\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_62\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/Shared/sage/sage-4.1.1.rc2/\ntmp/.doctest_expression.py\n         [73.6 s] \n```\nHere is William Stein's suggestion for fixing the above doctest failures:\n\n```\nThe above doctest should be changed so they don't depend on random hashing,\ne.g., change the dicts to lists of sorted tuples. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6717\n\n",
+    "body": "Assignee: @burcin\n\nGeorg S. Weber reported the following doctest failures at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5f23ec4032f5e91b) thread:\n\n```\non Mac(Intel) OS X 10.4.11 (XCode 2.5 / gcc 4.0.1 build \"5370\"), Sage\n4.1.1.rc2 builds fine.\nHowever, there are two (reproducible) doctest failures, one known one\nand one I never saw before. The known one is:\n\nsage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.rc2/devel/sage/sage/symbolic/\nexpression.pyx\", line 2515:\n    sage: ((x+y)^a).match(w0^w1)\nExpected:\n    {$1: a, $0: x + y}\nGot:\n    {$0: x + y, $1: a}\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.rc2/devel/sage/sage/symbolic/\nexpression.pyx\", line 2521:\n    sage: ((a+b)*(a+c)).match((a+w0)*(a+w1))\nExpected:\n    {$1: c, $0: b}\nGot:\n    {$0: b, $1: c}\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.1.rc2/devel/sage/sage/symbolic/\nexpression.pyx\", line 2527:\n    sage: (a*(x+y)+a*z+b).match(a*w0+w1)\nExpected:\n    {$1: a*z + b, $0: x + y}\nGot:\n    {$0: x + y, $1: a*z + b}\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_62\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/Shared/sage/sage-4.1.1.rc2/\ntmp/.doctest_expression.py\n         [73.6 s] \n```\nHere is William Stein's suggestion for fixing the above doctest failures:\n\n```\nThe above doctest should be changed so they don't depend on random hashing,\ne.g., change the dicts to lists of sorted tuples. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6717\n\n",
+    "closed_at": "2009-08-12T00:03:20Z",
     "created_at": "2009-08-09T18:06:33Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Sage 4.1.1.rc2: doctest failures in sage/symbolic/expression.pyx",
+    "title": "[with patch, positive review] Sage 4.1.1.rc2: doctest failures in sage/symbolic/expression.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6717",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tbd
+Assignee: @burcin
 
 Georg S. Weber reported the following doctest failures at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5f23ec4032f5e91b) thread:
 

@@ -3,7 +3,8 @@
 archive/issues_007181.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: HP-UX Solaris make\n\nAlthough I noticed this issue on HP-UX, I know it affects Solaris too. The 'make' program certainly can not be Sun's on Solaris, and while it looks like a minor mod would allow the 'make' on HP-UX to work, it seems sensible we just check for GNU make.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7181\n\n",
+    "body": "Assignee: tbd\n\nKeywords: HP-UX Solaris make\n\nAlthough I noticed this issue on HP-UX, I know it affects Solaris too. The 'make' program certainly can not be Sun's on Solaris, and while it looks like a minor mod would allow the 'make' on HP-UX to work, it seems sensible we just check for GNU make. \n\nIt would appear that there is an autoconf macros for this, now called \n\nAX_CHECK_GNU_MAKE, though it was called CHECK_GNU_MAKE()\n\nhttp://www.nongnu.org/autoconf-archive/check_gnu_make.html\n\nThere's a bit of information about this at \n\nhttp://ac-archive.sourceforge.net/doc/howto.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7181\n\n",
+    "closed_at": "2009-11-20T06:22:10Z",
     "created_at": "2009-10-10T09:30:33Z",
     "labels": [
         "component: build",
@@ -20,7 +21,19 @@ Assignee: tbd
 
 Keywords: HP-UX Solaris make
 
-Although I noticed this issue on HP-UX, I know it affects Solaris too. The 'make' program certainly can not be Sun's on Solaris, and while it looks like a minor mod would allow the 'make' on HP-UX to work, it seems sensible we just check for GNU make.
+Although I noticed this issue on HP-UX, I know it affects Solaris too. The 'make' program certainly can not be Sun's on Solaris, and while it looks like a minor mod would allow the 'make' on HP-UX to work, it seems sensible we just check for GNU make. 
+
+It would appear that there is an autoconf macros for this, now called 
+
+AX_CHECK_GNU_MAKE, though it was called CHECK_GNU_MAKE()
+
+http://www.nongnu.org/autoconf-archive/check_gnu_make.html
+
+There's a bit of information about this at 
+
+http://ac-archive.sourceforge.net/doc/howto.html
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7181
 

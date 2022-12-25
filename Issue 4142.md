@@ -4,6 +4,7 @@ archive/issues_004142.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nAs discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:\n\n```\nsage: f = sqrt(1-x^2)\nsage: g = diff(f, x); g\n-x/sqrt(1 - x^2)\nsage: limit(g, x=1, dir='below')\n+Infinity\n```\n\nThe last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4142\n\n",
+    "closed_at": "2010-01-04T03:09:14Z",
     "created_at": "2008-09-18T06:14:18Z",
     "labels": [
         "component: calculus",

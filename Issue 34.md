@@ -1,22 +1,22 @@
-# Issue 34: Bug in is_simple() for a space of ModularSymbols
+# Issue 34: [fixed?] Factoring for a subspace of ModularSymbols in general
 
 archive/issues_000034.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n   sage: M = ModularSymbols(Gamma0(22),2,sign=1)\n   sage: M1 = M.decomposition()[1]\n   sage: M1\n   Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 5 for Gamma_0(22) of weight 2 with sign 1 over Rational Field\n   sage: M1.is_simple() ## throws a TypeError\n```\n\nIn fact, I can find lots of examples where this happens: levels 6, 7, 8, and 9 with weight 24 all have subspaces which crash is_simple.\n\nI don't really know if this qualifies as \"critical,\" but it seems more than just \"annoying.\" Maybe the page name should be clarified (at least to me)?\n\n-- Craig Citro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/34\n\n",
+    "body": "Assignee: @williamstein\n\n```\n   sage: M = ModularSymbols(Gamma0(22),2,sign=1)\n   sage: M1 = M.decomposition()[1]\n   sage: M1\n   Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 5 for Gamma_0(22) of weight 2 with sign 1 over Rational Field\n   sage: M1.is_simple() ## throws a TypeError\n```\n\nIn fact, I can find lots of examples where this happens: levels 6, 7, 8, and 9 with weight 24 all have subspaces which crash is_simple.\n\nI don't really know if this qualifies as \"critical,\" but it seems more than just \"annoying.\" Maybe the page name should be clarified (at least to me)?\n\n-- Craig Citro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/34\n\n",
+    "closed_at": "2008-04-19T21:20:01Z",
     "created_at": "2006-09-12T23:28:51Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Bug in is_simple() for a space of ModularSymbols",
+    "title": "[fixed?] Factoring for a subspace of ModularSymbols in general",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/34",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 ```
    sage: M = ModularSymbols(Gamma0(22),2,sign=1)

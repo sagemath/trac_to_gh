@@ -3,10 +3,11 @@
 archive/issues_000256.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\ntitle says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/256\n\n",
+    "body": "Assignee: boothby\n\ntitle says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/256\n\n",
+    "closed_at": "2007-03-22T20:33:38Z",
     "created_at": "2007-02-10T06:32:05Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: notebook",
         "bug"
     ],
     "title": "auto cells not evaluated on restart",
@@ -15,7 +16,7 @@ archive/issues_000256.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: @williamstein
+Assignee: boothby
 
 title says it all.
 

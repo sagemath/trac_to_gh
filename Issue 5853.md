@@ -1,16 +1,17 @@
-# Issue 5853: Restify and include more documentation on elliptic curves
+# Issue 5853: [with patch, with positive review] Restify and include more documentation on elliptic curves
 
 archive/issues_005853.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nKeywords: documentation, elliptic curves\n\nThis is a follow-up on ticket #4933 and #5851. I plan to work on following files\n\n* padic_height.py\n* ell_modular_symbols.py\n* ell_tate_curve.py\n* padic_lseries.py\n* sha_tate.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/5853\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nKeywords: documentation, elliptic curves\n\nThis is a follow-up on ticket #4933 and #5851. I plan to work on following files\n\n* ell_modular_symbols.py\n* ell_tate_curve.py\n* padic_lseries.py\n* sha_tate.py \n\nIssue created by migration from https://trac.sagemath.org/ticket/5853\n\n",
+    "closed_at": "2009-04-30T00:32:31Z",
     "created_at": "2009-04-22T13:26:26Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Restify and include more documentation on elliptic curves",
+    "title": "[with patch, with positive review] Restify and include more documentation on elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5853",
     "user": "https://github.com/categorie"
@@ -24,11 +25,10 @@ Keywords: documentation, elliptic curves
 
 This is a follow-up on ticket #4933 and #5851. I plan to work on following files
 
-* padic_height.py
 * ell_modular_symbols.py
 * ell_tate_curve.py
 * padic_lseries.py
-* sha_tate.py
+* sha_tate.py 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5853
 

@@ -4,6 +4,7 @@ archive/issues_000941.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nDavid,\n\nI'm getting rid of all the lame \"sage.:\"'s in SAGE.  In the padics,\nwe have this doctest:\n\nsage: Zp(next_prime(10^50), 10000)\n100000000000000000000000000000000000000000000000151-adic Ring with capped relative precision 10000\n\nJust trying to run it on my laptop is a disaster, since:\n \nsage: get_memory_usage()\n2320.26171875\n\nWhy does it use so much memory?\n\nI will change the doctest to 1000 instead of 10000, which\nhardly takes any ram.  \n\nWhy is *so* much ram needed though?!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/941\n\n",
+    "closed_at": "2007-10-20T17:59:35Z",
     "created_at": "2007-10-20T09:54:30Z",
     "labels": [
         "component: basic arithmetic",

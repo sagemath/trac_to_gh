@@ -1,16 +1,17 @@
-# Issue 2692: [with patch; needs review] bug displaying list of published worksheets
+# Issue 2692: [with patch; positive review] bug displaying list of published worksheets
 
 archive/issues_002692.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2692\n\n",
+    "closed_at": "2008-03-28T08:04:02Z",
     "created_at": "2008-03-28T00:39:36Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch; needs review] bug displaying list of published worksheets",
+    "title": "[with patch; positive review] bug displaying list of published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2692",
     "user": "https://github.com/williamstein"

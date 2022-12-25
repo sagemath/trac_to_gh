@@ -4,6 +4,7 @@ archive/issues_009514.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe variable sage.symbolic.random_tests.full_functions is ordered in the same order as the .values() method on a dict, which is not necessarily reproducible.  (I'm a little curious as to why the order in fact does seem to be reproducible, across multiple platforms, etc., but changes with the addition of seemingly unrelated code -- but not curious enough to investigate.)\n\nAnyway, the current code is clearly wrong.  I'll have a fix in a few minutes.\n\nThis should fix the strange random_tests.py doctest issue from #8988, and possibly reduce the churn in the random_tests doctest results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9514\n\n",
+    "closed_at": "2010-07-20T08:46:06Z",
     "created_at": "2010-07-16T03:36:32Z",
     "labels": [
         "component: symbolics",

@@ -1,16 +1,17 @@
-# Issue 4113: [with patch, needs review] Doctest failure in free_module.py
+# Issue 4113: [with patch, positive review] Doctest failure in free_module.py
 
 archive/issues_004113.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI added a doctest in #4091 without realizing that it might differ from architecture to architecture, even though this was the reason for adding it. I've added # random and some explanation. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4113\n\n",
+    "closed_at": "2008-09-14T09:12:38Z",
     "created_at": "2008-09-14T06:29:58Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Doctest failure in free_module.py",
+    "title": "[with patch, positive review] Doctest failure in free_module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4113",
     "user": "https://github.com/craigcitro"

@@ -4,6 +4,7 @@ archive/issues_002306.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen I use tab-complete in the command-line interface when typing an object name, the cursor moves to one space after the end of the name. This is unwanted behaviour, because this means that one cannot then type \".\" and tab-complete again to get the list of functions associated to the object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2306\n\n",
+    "closed_at": "2008-09-28T00:09:51Z",
     "created_at": "2008-02-25T23:33:46Z",
     "labels": [
         "component: interfaces",

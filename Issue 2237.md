@@ -4,6 +4,7 @@ archive/issues_002237.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn doing animations like in http://groups.google.com/group/sage-support/browse_thread/thread/8e2edf8165e9ded2\n\nthe adaptive plotting and the randomness added to the x-sample points is very annoying, creating a wiggling graph in the animation.  We ought to have options to plot to turn these things off so that we can get the same graph over and over again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2237\n\n",
+    "closed_at": "2008-02-21T06:58:11Z",
     "created_at": "2008-02-20T22:56:44Z",
     "labels": [
         "component: graphics"

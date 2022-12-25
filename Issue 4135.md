@@ -1,22 +1,22 @@
-# Issue 4135: [with patch, needs review] notebook -- user management features
+# Issue 4135: [with patch, positive review] notebook -- user management features
 
 archive/issues_004135.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nNew features:\n- Reset a user's password\n- Add a new user\n- Suspend/unsuspend a user\n- Temporary password shown for each user if one is set (Created by password reset and add user)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4135\n\n",
+    "body": "Assignee: TimothyClemans\n\nNew features:\n- Reset a user's password\n- Add a new user\n- Suspend/unsuspend a user\n- Temporary password shown for each user if one is set (Created by password reset and add user)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4135\n\n",
+    "closed_at": "2009-09-03T10:40:01Z",
     "created_at": "2008-09-16T16:38:32Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] notebook -- user management features",
+    "title": "[with patch, positive review] notebook -- user management features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4135",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 New features:
 - Reset a user's password

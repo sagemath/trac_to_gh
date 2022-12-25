@@ -1,22 +1,25 @@
-# Issue 3532: [With SPKG, needs review] gdbm spkg
+# Issue 3532: [with spkg, positive review] gdbm spkg
 
 archive/issues_003532.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nGDBM is a prerequisite for M2 #10.  It is an optional/experimental spkg and may be downloaded at http://sage.math.washington.edu/home/gfurnish/spkg/gdbm-1.8.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3532\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: editor_mabshoff\n\nGDBM is a prerequisite for M2 #10.  It is an optional/experimental spkg and may be downloaded at http://sage.math.washington.edu/home/gfurnish/spkg/gdbm-1.8.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3532\n\n",
+    "closed_at": "2008-07-16T18:22:58Z",
     "created_at": "2008-06-29T02:59:20Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[With SPKG, needs review] gdbm spkg",
+    "title": "[with spkg, positive review] gdbm spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3532",
     "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
+
+Keywords: editor_mabshoff
 
 GDBM is a prerequisite for M2 #10.  It is an optional/experimental spkg and may be downloaded at http://sage.math.washington.edu/home/gfurnish/spkg/gdbm-1.8.3.spkg
 

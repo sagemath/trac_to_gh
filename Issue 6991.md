@@ -4,10 +4,11 @@ archive/issues_006991.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nIn the nfacets method, for non-reflexive lattice polytopes this is computed from:\n\n```\nself._nfacets = len(self._facet_normals)\n```\nbut self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be\n\n```\nself._nfacets = self._facet_normals.nrows()\n```\n\nA doctest should also be added for this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6991\n\n",
+    "closed_at": "2009-12-19T00:43:03Z",
     "created_at": "2009-09-22T18:45:43Z",
     "labels": [
         "component: geometry",
-        "minor",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

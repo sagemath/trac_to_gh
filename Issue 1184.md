@@ -1,24 +1,27 @@
-# Issue 1184: OSX: moving sage breaks recompile of libcsage (--rpath issue)
+# Issue 1184: OSX 10.4: moving sage breaks recompile -> NTL related
 
 archive/issues_001184.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis is likely one the first issue to be reported and involves the use of --rpath linker option. On OSX that leads to trouble when moving a Sage installation and recompiling the Sage library. Symptoms are the linker complaining that it cannot find a libgmp.dylib, specifically that gmp symbols with triple underscores are missing.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1184\n\n",
+    "body": "Assignee: mabshoff\n\nMoving a sage install on OSX 10.4 and then upgrading anything that is linked against NTL leads to link errors due to missing gmp symbols. The problem is the link mode with which the dynamic NTL is created. I have a fix, but I am currently verifying that it really fixes the issue. Everything that is linked against NTL needs to be recompiled, i.e. singular and cremona at the moment.\n\nTo add to the confusion: This is not an issue on OSX 10.5.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1184\n\n",
+    "closed_at": "2007-12-02T04:13:49Z",
     "created_at": "2007-11-16T03:39:13Z",
     "labels": [
         "component: relocation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "OSX: moving sage breaks recompile of libcsage (--rpath issue)",
+    "title": "OSX 10.4: moving sage breaks recompile -> NTL related",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1184",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
-This is likely one the first issue to be reported and involves the use of --rpath linker option. On OSX that leads to trouble when moving a Sage installation and recompiling the Sage library. Symptoms are the linker complaining that it cannot find a libgmp.dylib, specifically that gmp symbols with triple underscores are missing.
+Moving a sage install on OSX 10.4 and then upgrading anything that is linked against NTL leads to link errors due to missing gmp symbols. The problem is the link mode with which the dynamic NTL is created. I have a fix, but I am currently verifying that it really fixes the issue. Everything that is linked against NTL needs to be recompiled, i.e. singular and cremona at the moment.
+
+To add to the confusion: This is not an issue on OSX 10.5.
 
 Cheers,
 

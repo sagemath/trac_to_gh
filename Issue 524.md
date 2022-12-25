@@ -4,6 +4,7 @@ archive/issues_000524.json:
 ```json
 {
     "body": "Assignee: somebody\n\nOn addition and multiplication of functions that have fast squaring/doubling routines, it should detect (self is other) and use a faster method. \n\nIssue created by migration from https://trac.sagemath.org/ticket/524\n\n",
+    "closed_at": "2008-11-01T01:07:32Z",
     "created_at": "2007-08-29T23:48:32Z",
     "labels": [
         "component: basic arithmetic"

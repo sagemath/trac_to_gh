@@ -1,15 +1,16 @@
-# Issue 3654: [with patch, needs review] Deprecation warning function
+# Issue 3654: [with patch, positive review] Deprecation warning function
 
 archive/issues_003654.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis function introduces a \"deprecation\" function that sounds a warning when a user calls a function that has been deprecated.  It uses the standard Python mechanism for this sort of thing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3654\n\n",
+    "closed_at": "2008-08-25T22:07:51Z",
     "created_at": "2008-07-14T15:27:47Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Deprecation warning function",
+    "title": "[with patch, positive review] Deprecation warning function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3654",
     "user": "https://github.com/jasongrout"

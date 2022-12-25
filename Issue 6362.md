@@ -1,16 +1,18 @@
-# Issue 6362: [with spkg, needs review] Singular and GCC 4.4
+# Issue 6362: [with spkg, positive review] Singular and GCC 4.4
 
 archive/issues_006362.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb\n\nsingular is last package that don't compile with latest GCC 4.4 for me, it's because of use of strchr function, see GCC 4.4 [porting guide](http://gcc.gnu.org/gcc-4.4/porting_to.html) part \"Strict null-terminated sequence utilities\" - there is used\n\nchar* strchr(const char*, int)\n\nthat silently cast-away const, simple explicit cast to char* removes the error during compilation for me so it's trivial to fix. The strchr function in this form is used twice. \n\nI made spkg that's fixed, wasn't creating patches/spkg for Sage for some time so I ask for strict review even if it's trivial fix :) I tried to remember about everything with spkg creation but something could still slip. There is spkg: [http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6362\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\nsingular is last package that don't compile with latest GCC 4.4 for me, it's because of use of strchr function, see GCC 4.4 [porting guide](http://gcc.gnu.org/gcc-4.4/porting_to.html) part \"Strict null-terminated sequence utilities\" - there is used\n\nchar* strchr(const char*, int)\n\nthat silently cast-away const, simple explicit cast to char* removes the error during compilation for me so it's trivial to fix. The strchr function in this form is used twice. \n\nI made spkg that's fixed, wasn't creating patches/spkg for Sage for some time so I ask for strict review even if it's trivial fix :) I tried to remember about everything with spkg creation but something could still slip. There is spkg: ~~[http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg)~~.\n\nUpdate:\n\nspkg merged with Martins version: ~~[http://giniu.ravenlord.ws/singular-3-1-0-4-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-4-20090620.spkg)~~, and the\nfixed one: http://giniu.ravenlord.ws/singular-3-1-0-4-20090703.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6362\n\n",
+    "closed_at": "2009-07-03T18:32:21Z",
     "created_at": "2009-06-20T08:22:16Z",
     "labels": [
         "component: algebra",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with spkg, needs review] Singular and GCC 4.4",
+    "title": "[with spkg, positive review] Singular and GCC 4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6362",
     "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
@@ -26,7 +28,12 @@ char* strchr(const char*, int)
 
 that silently cast-away const, simple explicit cast to char* removes the error during compilation for me so it's trivial to fix. The strchr function in this form is used twice. 
 
-I made spkg that's fixed, wasn't creating patches/spkg for Sage for some time so I ask for strict review even if it's trivial fix :) I tried to remember about everything with spkg creation but something could still slip. There is spkg: [http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg).
+I made spkg that's fixed, wasn't creating patches/spkg for Sage for some time so I ask for strict review even if it's trivial fix :) I tried to remember about everything with spkg creation but something could still slip. There is spkg: ~~[http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg)~~.
+
+Update:
+
+spkg merged with Martins version: ~~[http://giniu.ravenlord.ws/singular-3-1-0-4-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-4-20090620.spkg)~~, and the
+fixed one: http://giniu.ravenlord.ws/singular-3-1-0-4-20090703.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6362
 

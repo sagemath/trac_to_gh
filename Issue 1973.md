@@ -1,16 +1,17 @@
-# Issue 1973: native partition_associated function
+# Issue 1973: [with patch, with positive review] native partition_associated function
 
 archive/issues_001973.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis patch replaces the wrapper around Gap to give the conjugate partition.  It speeds up the computation quite a bit.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1973\n\n",
+    "closed_at": "2008-02-01T04:24:50Z",
     "created_at": "2008-01-29T16:13:05Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "native partition_associated function",
+    "title": "[with patch, with positive review] native partition_associated function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1973",
     "user": "https://github.com/jasongrout"

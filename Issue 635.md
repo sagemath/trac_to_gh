@@ -1,22 +1,23 @@
-# Issue 635: p-adic height gives incorrect precision
+# Issue 635: [with patch] p-adic height gives incorrect precision
 
 archive/issues_000635.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I ask for precision 10, I get precision 9:\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\nsage: h = E.padic_height(5, 10)\nsage: h(P)\n4*5 + 3*5^2 + 3*5^3 + 4*5^4 + 4*5^5 + 5^6 + 4*5^8 + O(5^9)\n```\n\nIt didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the \"correct\" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/635\n\n",
+    "body": "Assignee: dmharvey\n\nIf I ask for precision 10, I get precision 9:\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\nsage: h = E.padic_height(5, 10)\nsage: h(P)\n4*5 + 3*5^2 + 3*5^3 + 4*5^4 + 4*5^5 + 5^6 + 4*5^8 + O(5^9)\n```\n\nIt didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the \"correct\" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/635\n\n",
+    "closed_at": "2007-10-13T07:19:07Z",
     "created_at": "2007-09-10T19:28:56Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "p-adic height gives incorrect precision",
+    "title": "[with patch] p-adic height gives incorrect precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/635",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: dmharvey
 
 If I ask for precision 10, I get precision 9:
 

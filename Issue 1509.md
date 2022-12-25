@@ -1,15 +1,16 @@
-# Issue 1509: plotting -- improve text support
+# Issue 1509: [with patch, positive review] Allow text rotation in plotting
 
 archive/issues_001509.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\nSince axes_label is broken in plot(), one must resort to adding your\nown custom labels to a plot().\n\nIt would be nice in this application, and others, if one could rotate\ntext objects.  For example, it\nwould be nice to be able to make a custom y-axis label that was\nparallel to the y-axis.  I guess,\nin general, the ability to rotate text would be a useful feature.\n\n```\n\nFor Sage, make sure to look up how Mathematica does text rotation, etc.,\nand use that interface instead of making something up at random. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1509\n\n",
+    "closed_at": "2009-10-15T05:22:22Z",
     "created_at": "2007-12-14T18:05:28Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "plotting -- improve text support",
+    "title": "[with patch, positive review] Allow text rotation in plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1509",
     "user": "https://github.com/williamstein"

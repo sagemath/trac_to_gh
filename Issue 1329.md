@@ -1,16 +1,17 @@
-# Issue 1329: 2.8.14/Solaris: real_rqdf.pyx compile fixes
+# Issue 1329: [with patch, positive review] 2.8.14/Solaris: real_rqdf.pyx compile fixes
 
 archive/issues_001329.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn Solaris we need some of the following two patches to make it compile. Those aren't clean and would break compilation on other platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1329\n\n",
+    "closed_at": "2008-01-30T07:55:25Z",
     "created_at": "2007-11-28T22:28:35Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "2.8.14/Solaris: real_rqdf.pyx compile fixes",
+    "title": "[with patch, positive review] 2.8.14/Solaris: real_rqdf.pyx compile fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1329",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

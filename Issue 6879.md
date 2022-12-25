@@ -1,9 +1,10 @@
-# Issue 6879: Elliptic curve constructor does not check if the base is a field properly
+# Issue 6879: [with patch, positive review] Elliptic curve constructor does not check if the base is a field properly
 
 archive/issues_006879.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  jcooley\n\nKeywords: elliptic curve\n\nExample:\n\n```\nsage: E = EllipticCurve(QQbar,[1,0])\nsage: E.base_field()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jec/sage/isog50.py in <module>()\n\nAttributeError: 'EllipticCurve_generic' object has no attribute 'base_field'\n```\n\nThis is because the curve constructed is an ell_generic and not an ell_field, despite {{{QQbar.is_field()}} returning True.\n\nSimilarly with RR and CC in place of QQbar.\n\nAll that is required is a two-line addition around line 213 of elliptic_curves/constructor.py.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6879\n\n",
+    "closed_at": "2009-09-26T07:05:00Z",
     "created_at": "2009-09-03T16:24:13Z",
     "labels": [
         "component: elliptic curves",
@@ -11,7 +12,7 @@ archive/issues_006879.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Elliptic curve constructor does not check if the base is a field properly",
+    "title": "[with patch, positive review] Elliptic curve constructor does not check if the base is a field properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6879",
     "user": "https://github.com/JohnCremona"

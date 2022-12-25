@@ -3,10 +3,10 @@
 archive/issues_004726.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @lftabera\n\nThe following _should_ create the correct homomorphism (complex conjugation, see #4724):\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: conj = K.hom([-j, b])\nboom!\n```\n\nHowever it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4726\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @lftabera\n\nThe following _should_ create the correct homomorphism (complex conjugation, see #4725):\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: conj = K.hom([-j, b])\nboom!\n```\n\nHowever it doesn't.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4726\n\n",
     "created_at": "2008-12-06T18:41:24Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,11 +16,11 @@ archive/issues_004726.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @lftabera
 
-The following _should_ create the correct homomorphism (complex conjugation, see #4724):
+The following _should_ create the correct homomorphism (complex conjugation, see #4725):
 
 ```
 sage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]
@@ -28,7 +28,8 @@ sage: conj = K.hom([-j, b])
 boom!
 ```
 
-However it doesn't.
+However it doesn't.  
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4726
 

@@ -1,9 +1,10 @@
-# Issue 3077: pbuild does not return properly on failure
+# Issue 3077: [with patch, positive review] pbuild does not return properly on failure
 
 archive/issues_003077.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\npbuild does not return an exceptional value to the operating system on failure.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3077\n\n",
+    "closed_at": "2008-05-02T12:00:41Z",
     "created_at": "2008-05-02T10:06:58Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003077.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "pbuild does not return properly on failure",
+    "title": "[with patch, positive review] pbuild does not return properly on failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3077",
     "user": "https://github.com/garyfurnish"

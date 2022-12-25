@@ -3,7 +3,8 @@
 archive/issues_008802.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb @loefflerd @JohnCremona\n\nThis is inconsistent with other versions of sqrt():\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n```\n\nIn addition, there should be a parameter \"extend\" to handle this:\n\n```\nsage: AA(2).sqrt()\n1.414213562373095?\nsage: AA(-2).sqrt()\n1.414213562373095?*I\n```\nIn the second example, we should not return a root in QQbar unless extend=True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8802\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb @loefflerd @JohnCremona\n\nThis is inconsistent with other versions of sqrt():\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n```\nIn addition, there should be a parameter \"extend\" to handle this:\n\n```\nsage: AA(2).sqrt()\n1.414213562373095?\nsage: AA(-2).sqrt()\n1.414213562373095?*I\n```\nIn the second example, we should not return a root in QQbar unless extend=True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8802\n\n",
+    "closed_at": "2010-06-11T19:16:28Z",
     "created_at": "2010-04-28T14:41:11Z",
     "labels": [
         "component: algebra",
@@ -27,7 +28,6 @@ sage: QQbar(2).sqrt()
 1.414213562373095?
 sage: QQbar(2).sqrt(all=True)
 ```
-
 In addition, there should be a parameter "extend" to handle this:
 
 ```

@@ -3,7 +3,8 @@
 archive/issues_008586.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n```python\nsage: P.<x> = PolynomialRing(GF(32003),1)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n32003\n\nsage: P.<x,y> = PolynomialRing(GF(32003),2)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n1024192009\n\nsage: P.<x,y,z> = PolynomialRing(GF(32003),3)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n-1973539045 # 2^32 - (32003^3) % 2^32 == 1973539045\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8586\n\n",
+    "body": "Assignee: @malb\n\nKeywords: sd109\n\n```python\nsage: P.<x> = PolynomialRing(GF(32003),1)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n32003\n\nsage: P.<x,y> = PolynomialRing(GF(32003),2)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n1024192009\n\nsage: P.<x,y,z> = PolynomialRing(GF(32003),3)\nsage: sage.rings.ideal.FieldIdeal(P).vector_space_dimension()\n-1973539045 # 2^32 - (32003^3) % 2^32 == 1973539045\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8586\n\n",
+    "closed_at": "2021-09-18T17:51:47Z",
     "created_at": "2010-03-23T11:29:29Z",
     "labels": [
         "component: commutative algebra",
@@ -17,6 +18,8 @@ archive/issues_008586.json:
 }
 ```
 Assignee: @malb
+
+Keywords: sd109
 
 ```python
 sage: P.<x> = PolynomialRing(GF(32003),1)

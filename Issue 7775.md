@@ -4,6 +4,7 @@ archive/issues_007775.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThis patches fixes a bad error message in numerical.mip.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7775\n\n",
+    "closed_at": "2010-01-03T20:57:24Z",
     "created_at": "2009-12-27T19:45:04Z",
     "labels": [
         "component: documentation",

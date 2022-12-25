@@ -3,7 +3,8 @@
 archive/issues_008915.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nKeywords: dyck_words\n\ndocumentation in several functions are missing description\n\n```\n    def associated_parenthesis(self, pos):\n        \"\"\"\n        EXAMPLES::\n        \n            sage: DyckWord([1, 0]).associated_parenthesis(0)\n            1\n```\n\nWorking on patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/8915\n\n",
+    "body": "Assignee: @zabrocki\n\nCC:  sage-combinat\n\nKeywords: dyck_words\n\ndocumentation in several functions are missing description\n\n```\n    def associated_parenthesis(self, pos):\n        \"\"\"\n        EXAMPLES::\n        \n            sage: DyckWord([1, 0]).associated_parenthesis(0)\n            1\n```\n\nApply patches in this order:\n\n1. [trac8915.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8915/trac8915.2.patch)\n2. [trac_8915-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8915/trac_8915-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8915\n\n",
+    "closed_at": "2010-05-17T06:49:33Z",
     "created_at": "2010-05-07T16:08:33Z",
     "labels": [
         "component: documentation",
@@ -17,7 +18,7 @@ archive/issues_008915.json:
     "user": "https://github.com/zabrocki"
 }
 ```
-Assignee: mvngu
+Assignee: @zabrocki
 
 CC:  sage-combinat
 
@@ -34,7 +35,10 @@ documentation in several functions are missing description
             1
 ```
 
-Working on patch
+Apply patches in this order:
+
+1. [trac8915.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8915/trac8915.2.patch)
+2. [trac_8915-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8915/trac_8915-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8915
 

@@ -1,16 +1,17 @@
-# Issue 9836: New PARI and new MPIR don't combine
+# Issue 9836: Bug in MPIR 2.1.1 in mpz_divexact()
 
 archive/issues_009836.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCombining #9343 (new PARI) and #8664 (MPIR 2.1.1) gives Segmentation Faults.  This problem is not limited to Sage, it is either a bug in PARI or in MPIR.\n\nTest gp script: [http://sage.math.washington.edu/home/jdemeyer/pari-mpir-bug.gp](http://sage.math.washington.edu/home/jdemeyer/pari-mpir-bug.gp)\n\nSee also [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9837\n\n",
+    "body": "Assignee: tbd\n\nDue to a bug in MPIR 2.1.1, combining #9343 (new PARI) and #8664 (MPIR 2.1.1) gives Segmentation Faults.  This problem is not limited to Sage.\n\n---\n\nCorresponding [mpir-devel thread](http://groups.google.com/group/mpir-devel/browse_thread/thread/bcc54ce971476d8)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9837\n\n",
+    "closed_at": "2010-09-15T11:53:55Z",
     "created_at": "2010-08-29T14:00:49Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "New PARI and new MPIR don't combine",
+    "title": "Bug in MPIR 2.1.1 in mpz_divexact()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9836",
     "user": "https://github.com/jdemeyer"
@@ -18,11 +19,12 @@ archive/issues_009836.json:
 ```
 Assignee: tbd
 
-Combining #9343 (new PARI) and #8664 (MPIR 2.1.1) gives Segmentation Faults.  This problem is not limited to Sage, it is either a bug in PARI or in MPIR.
+Due to a bug in MPIR 2.1.1, combining #9343 (new PARI) and #8664 (MPIR 2.1.1) gives Segmentation Faults.  This problem is not limited to Sage.
 
-Test gp script: [http://sage.math.washington.edu/home/jdemeyer/pari-mpir-bug.gp](http://sage.math.washington.edu/home/jdemeyer/pari-mpir-bug.gp)
+---
 
-See also [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI)
+Corresponding [mpir-devel thread](http://groups.google.com/group/mpir-devel/browse_thread/thread/bcc54ce971476d8)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9837
 

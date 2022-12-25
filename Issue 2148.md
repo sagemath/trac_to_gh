@@ -1,22 +1,23 @@
-# Issue 2148: PolyBoRi inconsistency
+# Issue 2148: [with patch, positive review] PolyBoRi monomial orders are wrong
 
 archive/issues_002148.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: polybori\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')\nsage: x > y\nTrue\n\nsage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n\nThis should be changed because it leads to funny performance figures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2148\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @malb\n\nKeywords: polybori\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')\nsage: x > y\nTrue\n\nsage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n\nThis should be changed because it leads to funny performance figures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2148\n\n",
+    "closed_at": "2008-03-18T00:08:24Z",
     "created_at": "2008-02-13T13:06:07Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "PolyBoRi inconsistency",
+    "title": "[with patch, positive review] PolyBoRi monomial orders are wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2148",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @malb
+Assignee: @burcin
 
 CC:  @malb
 

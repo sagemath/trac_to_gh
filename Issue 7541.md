@@ -4,6 +4,7 @@ archive/issues_007541.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nLex BFS is a variant of the breadth first search. It is used to detect whether a Graph is chordal. Both algorithms are described there :\n\nhttp://en.wikipedia.org/wiki/Lexicographic_breadth-first_search\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7541\n\n",
+    "closed_at": "2009-12-19T21:26:33Z",
     "created_at": "2009-11-27T13:01:17Z",
     "labels": [
         "component: graph theory"

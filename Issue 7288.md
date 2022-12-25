@@ -3,7 +3,8 @@
 archive/issues_007288.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  abmasse\n\nSee http://en.wikipedia.org/wiki/Gomory%E2%80%93Hu_tree.\n\nGomory-Hu tree are a classical decomposition of the edge connectivity of graphs, and this is not very long to write when one has a function for min-st-cut, which should hopefully be merged soon (ticket #6680)...\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7288\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  abmasse\n\nSee http://en.wikipedia.org/wiki/Gomory%E2%80%93Hu_tree. (which explains the algorithm used)\n\nGomory-Hu trees are a classical decomposition of the edge connectivity of graphs, and this is not very long to write when one has a function for min-st-cut.\n\nThis patch also slightly improves edge_cut and vertex_cut, which was needed to implement gomory_hu_tree\n\nNote : until #7311 is reviewed and merged, some exceptions will be raised when testing the file generic_graph\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7288\n\n",
+    "closed_at": "2010-04-15T05:58:32Z",
     "created_at": "2009-10-25T09:14:14Z",
     "labels": [
         "component: graph theory"
@@ -19,9 +20,13 @@ Assignee: @rlmill
 
 CC:  abmasse
 
-See http://en.wikipedia.org/wiki/Gomory%E2%80%93Hu_tree.
+See http://en.wikipedia.org/wiki/Gomory%E2%80%93Hu_tree. (which explains the algorithm used)
 
-Gomory-Hu tree are a classical decomposition of the edge connectivity of graphs, and this is not very long to write when one has a function for min-st-cut, which should hopefully be merged soon (ticket #6680)...
+Gomory-Hu trees are a classical decomposition of the edge connectivity of graphs, and this is not very long to write when one has a function for min-st-cut.
+
+This patch also slightly improves edge_cut and vertex_cut, which was needed to implement gomory_hu_tree
+
+Note : until #7311 is reviewed and merged, some exceptions will be raised when testing the file generic_graph
 
 Nathann
 

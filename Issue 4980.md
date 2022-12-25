@@ -7,7 +7,7 @@ archive/issues_004980.json:
     "created_at": "2009-01-15T06:12:26Z",
     "labels": [
         "component: documentation",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add info about slices to developer guide",

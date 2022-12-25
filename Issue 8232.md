@@ -4,6 +4,7 @@ archive/issues_008232.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nAs discussed on [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/9e90bbeb0328034c), cmp is broken for words. \n\n\n```\nAmusant: this boils down to:\n\nsage: W = Words(['a','b','c'])\nsage: W('a') == W([])\nTrue\nsage: W([]) == W('a')\nFalse\n```\n\nit causes problem else where :\n\n```\nsage: A = AlgebrasWithBasis(QQ).example(); A\nAn example of an algebra with basis: the free algebra on the\ngenerators ('a', 'b', 'c') over Rational Field\nsage: [a,b,c] = A.algebra_generators()\nsage: a.is_one()\nTrue\nsage: b.is_one()\nTrue\nsage: c.is_one()\nTrue\nsage: A.one().is_one()\nTrue\nsage: (a+b).is_one()\nFalse\nsage: (a+A.one()).is_one()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8232\n\n",
+    "closed_at": "2010-02-17T20:38:19Z",
     "created_at": "2010-02-10T16:03:32Z",
     "labels": [
         "component: combinatorics",

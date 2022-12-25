@@ -1,16 +1,17 @@
-# Issue 6653: Add --no-pdf-links option for doc/html/index.html builder.
+# Issue 6653: Add --no-pdf-links option for doc/html/index.html builder
 
 archive/issues_006653.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @haraldschilly\n\nThe top-level `index.html` for Sage documentation now includes links to the corresponding PDF files (cf. #4460).  However, it can be useful to suppress these links.  Building on #6187, this ticket adds an option `--no-pdf-links` to `sage -docbuild`.\n\nSee #4460 for some history and an earlier version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6653\n\n",
+    "closed_at": "2009-11-29T04:45:17Z",
     "created_at": "2009-07-29T08:39:16Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Add --no-pdf-links option for doc/html/index.html builder.",
+    "title": "Add --no-pdf-links option for doc/html/index.html builder",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6653",
     "user": "https://github.com/qed777"

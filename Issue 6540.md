@@ -1,16 +1,17 @@
-# Issue 6540: [with patch, needs review] g.add_edge((u,v), label=l) syntax unsupported for C graphs
+# Issue 6540: [with patch, positive review] g.add_edge((u,v), label=l) syntax unsupported for C graphs
 
 archive/issues_006540.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6540\n\n",
+    "closed_at": "2009-07-19T14:04:11Z",
     "created_at": "2009-07-16T00:53:02Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] g.add_edge((u,v), label=l) syntax unsupported for C graphs",
+    "title": "[with patch, positive review] g.add_edge((u,v), label=l) syntax unsupported for C graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6540",
     "user": "https://github.com/rlmill"

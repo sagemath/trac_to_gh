@@ -4,6 +4,7 @@ archive/issues_005091.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n```\nsage: f(x) = sin(x)-cos(x)\nsage: g = f._fast_float_()\n\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 154 \u00b5s per loop\n\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 24 \u00b5s per loop\n```\n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/927319a4fa61ae3b/9fc80aa9c114e041\n\nIssue created by migration from https://trac.sagemath.org/ticket/5091\n\n",
+    "closed_at": "2017-12-12T08:23:33Z",
     "created_at": "2009-01-24T22:05:03Z",
     "labels": [
         "component: calculus",

@@ -4,6 +4,7 @@ archive/issues_008141.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nFont families (typefaces?) on rendered Sage Notebook pages.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/533afb39f9f8220f).\n\nNote: Server administrators can already save\n\n```\nhttp://server/css/main.css\n```\nto\n\n```\nDOT_SAGE/notebook.css\n```\nand edit the latter, according to taste.\n\nLinks:\n\n* http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml\n* http://safalra.com/web-design/typography/web-safe-fonts-myth/\n* http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/\n\nIssue created by migration from https://trac.sagemath.org/ticket/8141\n\n",
+    "closed_at": "2010-03-04T22:50:55Z",
     "created_at": "2010-02-01T06:23:42Z",
     "labels": [
         "component: notebook",

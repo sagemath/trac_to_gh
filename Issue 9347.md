@@ -4,6 +4,7 @@ archive/issues_009347.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nSee #9343:\n\n   http://trac.sagemath.org/sage_trac/attachment/ticket/9343/trac_9343-part2.patch\n\nfor where this comes up\n\nIssue created by migration from https://trac.sagemath.org/ticket/9347\n\n",
+    "closed_at": "2015-03-25T19:20:55Z",
     "created_at": "2010-06-26T20:20:17Z",
     "labels": [
         "component: misc",

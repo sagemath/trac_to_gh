@@ -1,15 +1,16 @@
-# Issue 545: polish the new symbolic logic code.
+# Issue 545: [with patch, positive review] polish the new symbolic logic code.
 
 archive/issues_000545.json:
 ```json
 {
-    "body": "Assignee: chrisgorecki\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/545\n\n",
+    "body": "Assignee: chrisgorecki\n\nKeywords: editor_wstein\n\nThis is a single commit bundle, so if somebody could extract the patch and post it here it would be a good idea.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/545\n\n",
+    "closed_at": "2009-04-30T03:20:38Z",
     "created_at": "2007-08-31T21:07:33Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "polish the new symbolic logic code.",
+    "title": "[with patch, positive review] polish the new symbolic logic code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/545",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,13 @@ archive/issues_000545.json:
 ```
 Assignee: chrisgorecki
 
+Keywords: editor_wstein
 
+This is a single commit bundle, so if somebody could extract the patch and post it here it would be a good idea.
+
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/545
 

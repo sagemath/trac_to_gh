@@ -1,9 +1,10 @@
-# Issue 1243: Minor spelling mistakes in documentation
+# Issue 1243: [with patch, with positive review] Minor spelling mistakes in documentation
 
 archive/issues_001243.json:
 ```json
 {
-    "body": "Assignee: tba\n\nIn Section 11.1 of the SAGE Reference Manual, there are the following typos:\n\nReturn arithmatic sequence -> Return arithmetic sequence\n\nBest illistrated by examples. -> Best illustrated by examples\n\nemtpy -> empty\n\nWe check whether certain integers are a some -> We check whether certain integers are a sum\n\nThe following use to fail -> The following used to fail\n\nIn \"newton_method_sizes()\", there is a ceil in the LaTeX which should be a \\ceil\n\nIn the Programming Guide, Section 2.3:\n\nSuperingularModule code -> SupersingularModule code\n\nplease let William Stein! -> please let William Stein know!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1243\n\n",
+    "body": "Assignee: @mwhansen\n\nIn Section 11.1 of the SAGE Reference Manual, there are the following typos:\n\nReturn arithmatic sequence -> Return arithmetic sequence\n\nBest illistrated by examples. -> Best illustrated by examples\n\nemtpy -> empty\n\nWe check whether certain integers are a some -> We check whether certain integers are a sum\n\nThe following use to fail -> The following used to fail\n\nIn \"newton_method_sizes()\", there is a ceil in the LaTeX which should be a \\ceil\n\nIn the Programming Guide, Section 2.3:\n\nSuperingularModule code -> SupersingularModule code\n\nplease let William Stein! -> please let William Stein know!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1243\n\n",
+    "closed_at": "2007-12-09T11:51:09Z",
     "created_at": "2007-11-22T19:51:33Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_001243.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Minor spelling mistakes in documentation",
+    "title": "[with patch, with positive review] Minor spelling mistakes in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1243",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 In Section 11.1 of the SAGE Reference Manual, there are the following typos:
 

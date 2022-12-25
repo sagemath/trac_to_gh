@@ -1,9 +1,10 @@
-# Issue 3287: [with patch; needs review] worksheet.py -- doctest failure blocking a release
+# Issue 3287: [with patch; positive review] worksheet.py -- doctest failure blocking a release
 
 archive/issues_003287.json:
 ```json
 {
     "body": "Assignee: failure\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3287\n\n",
+    "closed_at": "2008-05-24T01:00:50Z",
     "created_at": "2008-05-23T17:24:14Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_003287.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] worksheet.py -- doctest failure blocking a release",
+    "title": "[with patch; positive review] worksheet.py -- doctest failure blocking a release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3287",
     "user": "https://github.com/williamstein"

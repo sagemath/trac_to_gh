@@ -1,15 +1,16 @@
-# Issue 4772: make determinants of matrices over GF(2) way faster
+# Issue 4772: [with patch; positive review] make determinants of matrices over GF(2) way faster
 
 archive/issues_004772.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is sad:\n\n```\nwas@sage:~/build/sage-3.2.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = random_matrix(GF(2),100)\nsage: time w.determinant()\nCPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s\nWall time: 0.19 s\n0\nsage: w = random_matrix(GF(3),100)\nsage: time w.determinant()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n0\n```\n| Sage Version 3.2.2.alpha1, Release Date: 2008-12-10                |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix - just compute the rank of the matrix, and if it is less than the nrows, then det is 0.  Otherwise det is 1.  Easy.  Right now, stupid generic code is being used. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4772\n\n",
+    "closed_at": "2008-12-13T09:07:36Z",
     "created_at": "2008-12-12T19:26:24Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "make determinants of matrices over GF(2) way faster",
+    "title": "[with patch; positive review] make determinants of matrices over GF(2) way faster",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4772",
     "user": "https://github.com/williamstein"

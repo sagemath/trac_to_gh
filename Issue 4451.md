@@ -4,6 +4,7 @@ archive/issues_004451.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nWhen using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4451\n\n",
+    "closed_at": "2009-12-09T16:25:02Z",
     "created_at": "2008-11-06T00:14:34Z",
     "labels": [
         "component: notebook",

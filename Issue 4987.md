@@ -1,15 +1,16 @@
-# Issue 4987: [with spkg, not ready for review] Upgrade to Cython 0.11
+# Issue 4987: [with spkg, positive review] Upgrade to Cython 0.11
 
 archive/issues_004987.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/\n\nSage now compiles, most doctests pass. Memory profiling should be done as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4987\n\n",
+    "body": "Assignee: mabshoff\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/\n\nSage now compiles, all doctests passed. Memory profiling should be done as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4987\n\n",
+    "closed_at": "2009-04-10T10:22:28Z",
     "created_at": "2009-01-16T09:01:33Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with spkg, not ready for review] Upgrade to Cython 0.11",
+    "title": "[with spkg, positive review] Upgrade to Cython 0.11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4987",
     "user": "https://github.com/robertwb"
@@ -19,7 +20,7 @@ Assignee: mabshoff
 
 Spkg up at http://sage.math.washington.edu/home/robertwb/cython/
 
-Sage now compiles, most doctests pass. Memory profiling should be done as well.
+Sage now compiles, all doctests passed. Memory profiling should be done as well. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4987
 

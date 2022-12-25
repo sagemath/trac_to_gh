@@ -3,7 +3,8 @@
 archive/issues_005295.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/e7f7ddd0ad86971d\n\n```\nI finally got Sage.app working.  Still there seems \nsomething a bit odd about the fix.  I had, in my home \ndirectory, a .maxima directory with a file named \nmaxima-init.mac that sets certain maxima preferences. \nOnce I deleted this file, everything worked fine.  As I \nunderstand it though, the sage directory is supposed to be \nindependent of the rest of the system.  Evidently, the \nlatest version of sage is reading information from my \nhome directory.  My old sage (v3.0.1) runs fine without \nremoving the file, however. \n\nThe two lines in the maxima-init file were exactly the \nfollowing: \nset_plot_option([gnuplot_term, aqua]); \nset_plot_option([gnuplot_pipes_term, aqua]); \nOf course, now I can no longer plot from my standalone \ncopy of maxima. :) \nOne final comment: George's patch was unnecessary.  I \nhope I didn't send you on a wild goose chase. \n\nMark McClure \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5295\n\n",
+    "body": "Assignee: @nbruin\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/e7f7ddd0ad86971d\n\n```\nI finally got Sage.app working.  Still there seems \nsomething a bit odd about the fix.  I had, in my home \ndirectory, a .maxima directory with a file named \nmaxima-init.mac that sets certain maxima preferences. \nOnce I deleted this file, everything worked fine.  As I \nunderstand it though, the sage directory is supposed to be \nindependent of the rest of the system.  Evidently, the \nlatest version of sage is reading information from my \nhome directory.  My old sage (v3.0.1) runs fine without \nremoving the file, however. \n\nThe two lines in the maxima-init file were exactly the \nfollowing: \nset_plot_option([gnuplot_term, aqua]); \nset_plot_option([gnuplot_pipes_term, aqua]); \nOf course, now I can no longer plot from my standalone \ncopy of maxima. :) \nOne final comment: George's patch was unnecessary.  I \nhope I didn't send you on a wild goose chase. \n\nMark McClure \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5295\n\n",
+    "closed_at": "2010-01-22T22:31:33Z",
     "created_at": "2009-02-17T20:12:49Z",
     "labels": [
         "component: build",
@@ -16,7 +17,7 @@ archive/issues_005295.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @nbruin
 
 From http://groups.google.com/group/sage-devel/browse_thread/thread/e7f7ddd0ad86971d
 

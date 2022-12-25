@@ -1,17 +1,18 @@
-# Issue 9310: sage-4.4.4.alpha1 blocker -- random doctest failure on menas (skynet)
+# Issue 9310: sage-4.4.4.alpha1 build issue -- random doctest failure on menas (skynet)
 
 archive/issues_009310.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 647:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 658:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 661:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 664:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\n\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_22\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_group.py\n         [88.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9310\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\nKeywords: matrix_group random_element doctest failure\n\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 647:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 658:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 661:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 664:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\n\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_22\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_group.py\n         [88.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9310\n\n",
+    "closed_at": "2011-06-18T08:35:30Z",
     "created_at": "2010-06-22T15:00:46Z",
     "labels": [
         "component: doctest coverage",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
-    "title": "sage-4.4.4.alpha1 blocker -- random doctest failure on menas (skynet)",
+    "title": "sage-4.4.4.alpha1 build issue -- random doctest failure on menas (skynet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9310",
     "user": "https://github.com/williamstein"
@@ -20,6 +21,8 @@ archive/issues_009310.json:
 Assignee: mvngu
 
 CC:  @vbraun
+
+Keywords: matrix_group random_element doctest failure
 
 ```
 

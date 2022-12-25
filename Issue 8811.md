@@ -1,15 +1,16 @@
-# Issue 8811: Translation for elements of a root lattice
+# Issue 8811: Translation for elements of a root lattice and related features and fixes
 
 archive/issues_008811.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8811\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: root systems, affine weyl groups, translations\n\nThis patch implements translation for elements of a root lattice and related features and fixes::\n\n- New method `translation` for elements of a root lattice\n\n- New methods `reduced_word_of_alcove_morphism`, `dynkin_diagram_automorphism_of_alcove_morphism`, `reduced_word_of_translation`, `_test_reduced_word_of_translation`\n\n- Added extensive TESTS to compare with Kashiwara's private notes\n\n- Fixed dynkin diagram for type BC\n\n- Fixed CartanType.translation_factors to implement its specification correctly in affine type BC. Imported the full test suite from MuPAD-Combinat. Also fixes and tests for proper typing of the coefficients (ZZ/QQ).\n\n- Bug fix in WeylGroup: the matrices were defined over QQ instead of the base ring of the underlying root lattice realization.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8811\n\n",
+    "closed_at": "2010-06-05T22:27:23Z",
     "created_at": "2010-04-28T22:57:34Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Translation for elements of a root lattice",
+    "title": "Translation for elements of a root lattice and related features and fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8811",
     "user": "https://github.com/anneschilling"
@@ -19,6 +20,21 @@ Assignee: sage-combinat
 
 CC:  sage-combinat
 
+Keywords: root systems, affine weyl groups, translations
+
+This patch implements translation for elements of a root lattice and related features and fixes::
+
+- New method `translation` for elements of a root lattice
+
+- New methods `reduced_word_of_alcove_morphism`, `dynkin_diagram_automorphism_of_alcove_morphism`, `reduced_word_of_translation`, `_test_reduced_word_of_translation`
+
+- Added extensive TESTS to compare with Kashiwara's private notes
+
+- Fixed dynkin diagram for type BC
+
+- Fixed CartanType.translation_factors to implement its specification correctly in affine type BC. Imported the full test suite from MuPAD-Combinat. Also fixes and tests for proper typing of the coefficients (ZZ/QQ).
+
+- Bug fix in WeylGroup: the matrices were defined over QQ instead of the base ring of the underlying root lattice realization.
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8811

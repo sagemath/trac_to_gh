@@ -1,16 +1,17 @@
-# Issue 7106: [with patch, needs review] Add keyboard shortcut ctrl-0 to reference manual
+# Issue 7106: [with patch, positive review] Add keyboard shortcut ctrl-0 to reference manual
 
 archive/issues_007106.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: keyboard shortcuts\n\nThe new parenthesis matching keyboard shortcut ctrl-0 introduced in\n#3646 was not documented in the doc string of config.py. Once all\ninformation is in the doc string, I would suggest to shorten the help\npage text a little.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7106\n\n",
+    "closed_at": "2009-11-11T19:55:50Z",
     "created_at": "2009-10-04T05:45:59Z",
     "labels": [
-        "component: documentation",
-        "bug"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] Add keyboard shortcut ctrl-0 to reference manual",
+    "title": "[with patch, positive review] Add keyboard shortcut ctrl-0 to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7106",
     "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"

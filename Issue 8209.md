@@ -4,6 +4,7 @@ archive/issues_008209.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @qed777\n\nTwo issues: several docstrings contain `\\mathtt{self`}, and jsMath doesn't recognize this command, so it's not typeset correctly, either with introspection from the notebook or in the reference manual.  Do this in the notebook, for example:\n\n```\nsage: a = 5\nsage: a.is_power_of?\n```\nOr look at the docstring for `is_power_of` in sage.rings.integer in the reference manual (assuming you've built the ref manual with the '--jsmath' option).\n\nSecond, several docstrings use dollar signs, and while these are processed correctly for the reference manual (turning `$x=y$` into ``x=y``), they are not dealt with in introspection in the notebook.  Evaluate `sage.categories.g_sets.GSets?`, for example: you'll see `$G$` rather than *G*.\n\nThe attached patch therefore does these things:\n\n- moves the function `process_dollars` from SAGE_ROOT/devel/sage/doc/common/conf.py to SAGE_ROOT/devel/sage/sage/misc/sagedoc.py, where it can be used to format each docstring before displaying it.\n\n- implements a similar function `process_mathtt` which converts `\\mathtt{blah`} to `\\verb|blah|`, which jsMath can handle.  Oh, except on the command line, it just turns `\\mathtt{blah`} to `blah`, which I think is easier to read.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8209\n\n",
+    "closed_at": "2010-02-11T14:54:04Z",
     "created_at": "2010-02-07T17:56:20Z",
     "labels": [
         "component: documentation",

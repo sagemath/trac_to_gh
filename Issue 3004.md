@@ -4,6 +4,7 @@ archive/issues_003004.json:
 ```json
 {
     "body": "Assignee: somebody\n\nbug from Kari Christianson:\n\n```\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\n```\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 15'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3004\n\n",
+    "closed_at": "2008-10-28T16:34:10Z",
     "created_at": "2008-04-22T21:56:35Z",
     "labels": [
         "component: basic arithmetic",

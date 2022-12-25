@@ -1,16 +1,17 @@
-# Issue 7686: Remove all "AppleDouble encoded Macintosh files" from the Sage source distribution
+# Issue 7686: Remove "AppleDouble encoded Macintosh files" from SPKGs
 
 archive/issues_007686.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe spkg's with ._ file crap all over the place are:\n\n* f2c-20070816.p1\n* flintqs-20070817.p4\n* ghmm-20080813.p0\n* lcalc-20080205.p3\n\nThis can be fixed by extracting the spkg, deleting the crap, and remaking it with \"sage -pkg\".  I think \"sage -pkg\" works correctly on OS X now-a-days, but certainly does on Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7686\n\n",
+    "body": "Assignee: tbd\n\nThe spkg's with ._ file crap all over the place are:\n\n* `flintqs-20070817.p8` (standard)\n* `gap_packages-4.4.12.p1` (optional)\n* `boost_1_34_1` (experimental)\n* `quantlib-0.9.6` (experimental)\n* `quantlib_swig-0.9.6` (experimental)\n\nThis can be fixed by extracting the spkg, deleting the crap, and remaking it with \"sage -pkg\".  I think \"sage -pkg\" works correctly on OS X now-a-days, but certainly does on Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7686\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2009-12-15T19:14:07Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Remove all \"AppleDouble encoded Macintosh files\" from the Sage source distribution",
+    "title": "Remove \"AppleDouble encoded Macintosh files\" from SPKGs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7686",
     "user": "https://github.com/williamstein"
@@ -20,10 +21,11 @@ Assignee: tbd
 
 The spkg's with ._ file crap all over the place are:
 
-* f2c-20070816.p1
-* flintqs-20070817.p4
-* ghmm-20080813.p0
-* lcalc-20080205.p3
+* `flintqs-20070817.p8` (standard)
+* `gap_packages-4.4.12.p1` (optional)
+* `boost_1_34_1` (experimental)
+* `quantlib-0.9.6` (experimental)
+* `quantlib_swig-0.9.6` (experimental)
 
 This can be fixed by extracting the spkg, deleting the crap, and remaking it with "sage -pkg".  I think "sage -pkg" works correctly on OS X now-a-days, but certainly does on Linux.
 

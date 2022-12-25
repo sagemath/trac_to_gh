@@ -4,6 +4,7 @@ archive/issues_000861.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patch adds a tiny wrapper around MAGMA's Get/SetVerbose functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/861\n\n",
+    "closed_at": "2007-10-13T06:39:48Z",
     "created_at": "2007-10-12T10:55:46Z",
     "labels": [
         "component: interfaces",

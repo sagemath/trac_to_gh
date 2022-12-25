@@ -1,16 +1,17 @@
-# Issue 764: PolynomialRing returns an MPolynomialRing when the number of variables is explicitly set to be 1.
+# Issue 764: [with patch] repr(PolynomialRing(ZZ, 1, 'x')) is ambiguous
 
 archive/issues_000764.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\nsage: type(PolynomialRing(ZZ, 1, 'x'))\n<class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\n\nsage: type(PolynomialRing(ZZ, 'x'))\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/764\n\n",
+    "closed_at": "2007-10-04T18:21:35Z",
     "created_at": "2007-09-30T07:11:26Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "PolynomialRing returns an MPolynomialRing when the number of variables is explicitly set to be 1.",
+    "title": "[with patch] repr(PolynomialRing(ZZ, 1, 'x')) is ambiguous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/764",
     "user": "https://github.com/mwhansen"

@@ -1,15 +1,16 @@
-# Issue 9418: Add GNU patch as a standard package.
+# Issue 9418: Add GNU patch 2.5.9 as a standard package.
 
 archive/issues_009418.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime\n\nAs discussed here:\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/c566520374106df3\n\nGNU patch\n\nhttp://www.gnu.org/software/patch/\n\nis to be added as a standard package to Sage, to allow the use of 'patch' to be used to make patches, rather than to us 'cp' as now. \n\nA new package may be found here \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n\nbut the file `spkg/standard/deps will need to be updated` too. There are several tickets currently open (#9274, #9351 and #9412) for making updates to 'deps' so these need to be coordinated. \n\nOnce this is done, the [Sage Developers Guide](http://www.sagemath.org/doc/developer/) will need to be updated to reflect a new method to create patches. A separate ticket will be opened for that. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9418\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime\n\nKeywords: patch spkg\n\nAs discussed here:\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/c566520374106df3\n\n[GNU patch](http://www.gnu.org/software/patch/) is to be added as a standard package to Sage, to allow the use of 'patch' to be used to make patches, rather than to us 'cp' as now. \n\nA new package may be found here\n\nhttp://sage.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg\n\nIn order to test this spkg, you could also try installing a new Sphinx spkg using *patch*: [http://sage.math.washington.edu/home/jdemeyer/spkg/sphinx-1.0.4.p3.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/sphinx-1.0.4.p3.spkg) (there is a corresponding .p1 using *cp*, see #10118 for the Sphinx upgrade).\n\nOnce this is done, the [Sage Developers Guide](http://www.sagemath.org/doc/developer/) will need to be updated to reflect a new method to create patches. A separate ticket #9419 has been opened for that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9418\n\n",
+    "closed_at": "2010-11-19T07:54:07Z",
     "created_at": "2010-07-03T08:29:24Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
-    "title": "Add GNU patch as a standard package.",
+    "title": "Add GNU patch 2.5.9 as a standard package.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9418",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -19,25 +20,21 @@ Assignee: GeorgSWeber
 
 CC:  @nexttime
 
+Keywords: patch spkg
+
 As discussed here:
 
 http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c566520374106df3
 
-GNU patch
+[GNU patch](http://www.gnu.org/software/patch/) is to be added as a standard package to Sage, to allow the use of 'patch' to be used to make patches, rather than to us 'cp' as now. 
 
-http://www.gnu.org/software/patch/
+A new package may be found here
 
-is to be added as a standard package to Sage, to allow the use of 'patch' to be used to make patches, rather than to us 'cp' as now. 
+http://sage.math.washington.edu/home/jdemeyer/spkg/patch-2.5.9.spkg
 
-A new package may be found here 
+In order to test this spkg, you could also try installing a new Sphinx spkg using *patch*: [http://sage.math.washington.edu/home/jdemeyer/spkg/sphinx-1.0.4.p3.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/sphinx-1.0.4.p3.spkg) (there is a corresponding .p1 using *cp*, see #10118 for the Sphinx upgrade).
 
-http://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg
-
-but the file `spkg/standard/deps will need to be updated` too. There are several tickets currently open (#9274, #9351 and #9412) for making updates to 'deps' so these need to be coordinated. 
-
-Once this is done, the [Sage Developers Guide](http://www.sagemath.org/doc/developer/) will need to be updated to reflect a new method to create patches. A separate ticket will be opened for that. 
-
-Dave
+Once this is done, the [Sage Developers Guide](http://www.sagemath.org/doc/developer/) will need to be updated to reflect a new method to create patches. A separate ticket #9419 has been opened for that.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9418
 

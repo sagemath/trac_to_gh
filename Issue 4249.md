@@ -1,16 +1,17 @@
-# Issue 4249: Inconsistency in number field integral bases
+# Issue 4249: [with new patch, with positive review] Inconsistency in number field integral bases
 
 archive/issues_004249.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  \"maite aranes\" <m.t.aranes@warwick.ac.uk>\n\nKeywords: number fields\n\nThis is unacceptable (in  my opinion):\n\n```\nsage: K.<a>=NumberField(x^2+23)\nsage: K.integral_basis()\n[1, 1/2*a + 1/2]\nsage: K.ring_of_integers().basis()\n[1/2*a + 1/2, a]\n```\n\nI think these should be the same.  The problem is that K.integral_basis() gets the basis from pari, but when the ring_of_integers is constructed it uses that basis in the constructions but then creates its own, different, basis!\n\nSuggested solution:  make the existing integral_basis() function an internal one used by the ring_of_integers() function only, and have K.integra_basis() return the basis of the ring of integers instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4249\n\n",
+    "closed_at": "2008-11-15T10:27:49Z",
     "created_at": "2008-10-07T11:21:35Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Inconsistency in number field integral bases",
+    "title": "[with new patch, with positive review] Inconsistency in number field integral bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4249",
     "user": "https://github.com/JohnCremona"

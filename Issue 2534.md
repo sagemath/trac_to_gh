@@ -1,9 +1,10 @@
-# Issue 2534: Sage does not handle Symmetrica's large integers
+# Issue 2534: [with patch, positive review] Sage does not handle Symmetrica's large integers
 
 archive/issues_002534.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis causes problems when working with larger partitions.  For example,\n\n```\nsage: s = SFASchur(QQ)\nsage: a = s([8,8])\nsage: a.itensor(a)\n```\ngives the wrong results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2534\n\n",
+    "body": "Assignee: @mwhansen\n\nThis causes problems when working with larger partitions.  For example,\n\n```\nsage: s = SFASchur(QQ)\nsage: a = s([8,8])\nsage: a.itensor(a)\n```\ngives the wrong results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2534\n\n",
+    "closed_at": "2008-03-16T05:23:43Z",
     "created_at": "2008-03-15T23:36:24Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_002534.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Sage does not handle Symmetrica's large integers",
+    "title": "[with patch, positive review] Sage does not handle Symmetrica's large integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2534",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 This causes problems when working with larger partitions.  For example,
 

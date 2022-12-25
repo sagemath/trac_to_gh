@@ -4,6 +4,7 @@ archive/issues_000207.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: time x = [log(n) for n in range(1, 100000)]\nCPU times: user 2.68 s, sys: 0.08 s, total: 2.75 s\nWall time: 2.76\n\nsage: import math\nsage: time x = [math.log(n) for n in range(1, 100000)]\nCPU times: user 0.15 s, sys: 0.01 s, total: 0.17 s\nWall time: 0.17\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/207\n\n",
+    "closed_at": "2007-01-23T19:45:24Z",
     "created_at": "2007-01-23T14:17:33Z",
     "labels": [
         "component: basic arithmetic"

@@ -1,16 +1,17 @@
-# Issue 5522: [with patch; needs work] Fix segfault if libsingular.so can't be found
+# Issue 5522: Fix segfault if libsingular.so can't be found
 
 archive/issues_005522.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  georgsweber\n\nIf for some reason libsingular.so doesn't exist, Sage will segfault when trying to call dlerror() when dlopen() was never called.\n\nI've attached a patch which avoids doing so.\n\nWith this patch, however, Sage then segfaults sometime after trying to raise the ImportError on the next line.\n\nI don't have time to investigate further, but it is easy to reproduce the condition by just moving aside the libsingular.so and trying to start sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5522\n\n",
+    "closed_at": "2015-03-24T10:48:31Z",
     "created_at": "2009-03-15T00:21:22Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch; needs work] Fix segfault if libsingular.so can't be found",
+    "title": "Fix segfault if libsingular.so can't be found",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5522",
     "user": "https://github.com/timabbott"

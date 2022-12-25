@@ -4,6 +4,7 @@ archive/issues_007189.json:
 ```json
 {
     "body": "Assignee: tba\n\nFrench translation of the document \"A Tour of Sage\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7189\n\n",
+    "closed_at": "2009-10-12T02:02:33Z",
     "created_at": "2009-10-12T01:58:28Z",
     "labels": [
         "component: documentation"

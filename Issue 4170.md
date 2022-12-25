@@ -1,16 +1,17 @@
-# Issue 4170: symbolic ring does not accept python longs
+# Issue 4170: [with patch, positive review] symbolic ring does not accept python longs
 
 archive/issues_004170.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because\n\n```\nsage: ZZ.has_coerce_map_from(long)\nTrue\nsage: SR.has_coerce_map_from(ZZ)\nTrue\n```\n\nThis should be handled in the new model, but symbolics are being changed anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4170\n\n",
+    "closed_at": "2008-09-23T01:51:33Z",
     "created_at": "2008-09-23T01:10:30Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "symbolic ring does not accept python longs",
+    "title": "[with patch, positive review] symbolic ring does not accept python longs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4170",
     "user": "https://github.com/robertwb"

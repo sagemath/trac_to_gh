@@ -3,7 +3,7 @@
 archive/issues_002617.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider the following examples (reported by Dean Moore here: http://groups.google.com/group/sage-support/browse_thread/thread/5555e780a76b3343#)\n\n```\nsage: solve(sin(x^2)/x == 0)\n[x == 0]\nsage: solve(sin(x^2)/x^2 == 0)\n[x == 0]\nsage: solve(sin(x^2)/x^3 == 0)\n[x == 0]\n```\nNone of these functions are even defined at x=0, so that should not be returned as a solution.  (The first two functions can be extended to x=0 by taking limits, in which case x=0 is a solution to the first one but not the second; the third function has a vertical asymptote at x=0.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2617\n\n",
+    "body": "Assignee: @williamstein\n\nConsider the following examples (reported by Dean Moore here: http://groups.google.com/group/sage-support/browse_thread/thread/5555e780a76b3343#)\n\n```\nsage: solve(sin(x^2)/x == 0, x)\n[x == 0]\nsage: solve(sin(x^2)/x^2 == 0, x)\n[x == 0]\nsage: solve(sin(x^2)/x^3 == 0, x)\n[x == 0]\n```\nNone of these functions are even defined at x=0, so that should not be returned as a solution.  (The first two functions can be extended to x=0 by taking limits, in which case x=0 is a solution to the first one but not the second; the third function has a vertical asymptote at x=0.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2617\n\n",
     "created_at": "2008-03-20T20:22:24Z",
     "labels": [
         "component: calculus",
@@ -21,11 +21,11 @@ Assignee: @williamstein
 Consider the following examples (reported by Dean Moore here: http://groups.google.com/group/sage-support/browse_thread/thread/5555e780a76b3343#)
 
 ```
-sage: solve(sin(x^2)/x == 0)
+sage: solve(sin(x^2)/x == 0, x)
 [x == 0]
-sage: solve(sin(x^2)/x^2 == 0)
+sage: solve(sin(x^2)/x^2 == 0, x)
 [x == 0]
-sage: solve(sin(x^2)/x^3 == 0)
+sage: solve(sin(x^2)/x^3 == 0, x)
 [x == 0]
 ```
 None of these functions are even defined at x=0, so that should not be returned as a solution.  (The first two functions can be extended to x=0 by taking limits, in which case x=0 is a solution to the first one but not the second; the third function has a vertical asymptote at x=0.)

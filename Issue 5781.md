@@ -1,16 +1,17 @@
-# Issue 5781: [with patch, need review] The empty standard tableau exists ! :-)
+# Issue 5781: [with patch, positive review] The empty standard tableau exists ! :-)
 
 archive/issues_005781.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: tableau\n\nBefore my patch:\n\n```\nsage: [] in StandardTableaux()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/19026/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage/local/lib/python2.5/site-packages/sage/combinat/tableau.pyc in __contains__(self, x)\n   1740             fillings += row\n   1741         fillings.sort()\n-> 1742         if fillings != range(1, max(fillings)+1):\n   1743             return False\n   1744\n\nValueError: max() arg is an empty sequence\n```\n\nNow:\n\n```\nsage: [] in StandardTableaux()\nTrue\n```\n\nFlorent, the specialist of the empty objects !!!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5781\n\n",
+    "closed_at": "2009-04-13T23:22:23Z",
     "created_at": "2009-04-13T22:03:38Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, need review] The empty standard tableau exists ! :-)",
+    "title": "[with patch, positive review] The empty standard tableau exists ! :-)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5781",
     "user": "https://github.com/hivert"

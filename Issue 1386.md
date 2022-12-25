@@ -3,11 +3,11 @@
 archive/issues_001386.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  alexghitza\n\nShould go something like:\n\n```\nsage: K.<a> = SplittingField(QQ, x^5 - 1)\n```\nThen maybe a1, ..., an would be roots of the polynomial not already in `QQ` or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1386\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  alexghitza\n\nShould go something like:\n\n```\nsage: K.<a> = SplittingField(QQ, x^5 - 1)\n```\nThen maybe a1, ..., an would be roots of the polynomial not already in `QQ` or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1386\n\n",
+    "closed_at": "2012-03-20T22:39:07Z",
     "created_at": "2007-12-03T20:38:43Z",
     "labels": [
-        "component: commutative algebra",
-        "bug"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Implement splitting fields",
@@ -16,7 +16,7 @@ archive/issues_001386.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @malb
+Assignee: @rlmill
 
 CC:  alexghitza
 

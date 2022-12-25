@@ -4,11 +4,11 @@ archive/issues_000311.json:
 ```json
 {
     "body": "Assignee: @ncalexan\n\nKeywords: test examples run\n\nThe current testing architecture could use some spring cleaning.\n\nncalexan has started updating it, with the first cut having:\n\n* better error reporting\n* more flexible importing, so that, for example, a test can import its current file without full sage scoping\n* a Python API so testing is integrated into the SAGE shell (and into the notebook, although this is not particularly powerful at this time)\n\nSecondary tools might make it:\n\n* easier to order the tests in some way, such as most recently modified or last failing test first\n* easy to mine the examples for documenting\n* possible to generate statistics and other useful tidbits from the existing examples\n\nIf you're interested in a particular feature, please let ncalexan know.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/311\n\n",
+    "closed_at": "2008-03-21T16:09:33Z",
     "created_at": "2007-03-07T19:01:16Z",
     "labels": [
         "component: user interface",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update sage -t testing structure",

@@ -4,6 +4,7 @@ archive/issues_009340.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nAs the subject says. See [this thread](https://groups.google.com/group/sage-devel/browse_thread/thread/80295483c7bb5348) for a suggested template for spkg-check.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9340\n\n",
+    "closed_at": "2015-09-25T08:07:39Z",
     "created_at": "2010-06-25T20:48:41Z",
     "labels": [
         "component: documentation"

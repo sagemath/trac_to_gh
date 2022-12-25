@@ -4,6 +4,7 @@ archive/issues_007906.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nSee http://groups.google.com/group/sage-nt/browse_thread/thread/23233a74a1037264\n\nIssue created by migration from https://trac.sagemath.org/ticket/7906\n\n",
+    "closed_at": "2010-01-13T08:19:18Z",
     "created_at": "2010-01-12T09:26:45Z",
     "labels": [
         "component: algebra",

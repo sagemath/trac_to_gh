@@ -1,16 +1,17 @@
-# Issue 3060: biopython optional package update (to 1.45)
+# Issue 3060: [with package, positive review] biopython optional package update (to 1.45)
 
 archive/issues_003060.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: biopython, biology, packages\n\nOn March 22, 2008, the biopython devs released version 1.45.  I have put an updated sage package at:\nhttp://www.d.umn.edu/~mhampton/biopython-1.45.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3060\n\n",
+    "closed_at": "2008-05-02T14:04:40Z",
     "created_at": "2008-04-30T01:31:59Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "biopython optional package update (to 1.45)",
+    "title": "[with package, positive review] biopython optional package update (to 1.45)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3060",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

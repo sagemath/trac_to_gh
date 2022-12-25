@@ -1,16 +1,17 @@
-# Issue 5613: [with patch; needs review] fix url to sage hg server; hg_sage.bundle(...)
+# Issue 5613: [with patch; positive review] fix url to sage hg server; hg_sage.bundle(...)
 
 archive/issues_005613.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nThe command\n\n```\n\n  sage: hg_sage.send('foo.hg')\n```\nwas broken because http://www.sagemath.org/hg/sage-main on the new server is now at http://hg.sagemath.org/sage-main/.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5613\n\n",
+    "closed_at": "2009-03-26T20:33:04Z",
     "created_at": "2009-03-26T02:32:40Z",
     "labels": [
         "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] fix url to sage hg server; hg_sage.bundle(...)",
+    "title": "[with patch; positive review] fix url to sage hg server; hg_sage.bundle(...)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5613",
     "user": "https://github.com/williamstein"

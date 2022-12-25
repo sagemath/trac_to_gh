@@ -4,6 +4,7 @@ archive/issues_009441.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nKeywords: modular symbols\n\nThe code in sage/libs/cremona wraps some of Cremona's modular symbols code, including Hecke operators.  The wrapping function incorrectly assumes that the function heckeop(p) only works for primes p not dividing the level, when in fact it works fine for primes dividing the level, in that case returning the matrix of the Atkin-Lehner involution.\n\nThe patch remedies this, with some tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9441\n\n",
+    "closed_at": "2010-07-20T07:47:39Z",
     "created_at": "2010-07-06T20:34:58Z",
     "labels": [
         "component: modular forms",

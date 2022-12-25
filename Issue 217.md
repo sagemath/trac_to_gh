@@ -1,15 +1,16 @@
-# Issue 217: optimize matrix permanents
+# Issue 217: [with updated patch] optimize matrix permanents
 
 archive/issues_000217.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/217\n\n",
+    "closed_at": "2007-11-01T09:31:30Z",
     "created_at": "2007-01-25T18:58:54Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "optimize matrix permanents",
+    "title": "[with updated patch] optimize matrix permanents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/217",
     "user": "https://github.com/williamstein"

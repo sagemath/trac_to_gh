@@ -1,16 +1,17 @@
-# Issue 5292: Error in FractionField conversion
+# Issue 5292: [with patch, positive review] Error in FractionField conversion
 
 archive/issues_005292.json:
 ```json
 {
     "body": "Assignee: tbd\n\nOn Feb 16, 2009, at 4:01 PM, Jason Bandlow wrote:\n\n```\nsage: R.<x> = QQ[]; S.<q,t> = QQ[]; F = FractionField(S);\nsage: x in S   # this is ok\nFalse\nsage: x in F   # this is not\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (857, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (862, 0))\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n...\n/home/jason/<string> in <module>()\n\nNameError: name 'x' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5292\n\n",
+    "closed_at": "2009-02-18T00:26:48Z",
     "created_at": "2009-02-17T08:01:35Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Error in FractionField conversion",
+    "title": "[with patch, positive review] Error in FractionField conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5292",
     "user": "https://github.com/robertwb"

@@ -4,6 +4,7 @@ archive/issues_006957.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis appears to be a duplicate directory tree.\n\nThe other places where there are javascript files appear to not share any files.\n\nI just tried moving $SAGE_DATA/extcode/javascript/jsmath from a sage 4.1.1 binary downloaded from a mirror, and the notebook appears to runs just fine.\n\nIf this is really a duplicate, it can reduce a sage install by around 18Mb.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6957\n\n",
+    "closed_at": "2013-05-16T07:55:30Z",
     "created_at": "2009-09-18T23:10:48Z",
     "labels": [
         "component: packages: standard",

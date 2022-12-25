@@ -1,15 +1,16 @@
-# Issue 5249: implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)
+# Issue 5249: [with patch, positive review] implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)
 
 archive/issues_005249.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  cwitty wcauchois alexghitza\n\nThis is code from Carl Witty, which (almost) implements an implicit_plot3d command to plot isosurfaces of a 3d function.  Carl, would it be fair to say the code is inspired by Jmol's code for generating and displaying isosurfaces?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5249\n\n",
+    "closed_at": "2009-05-13T17:39:26Z",
     "created_at": "2009-02-12T20:33:35Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)",
+    "title": "[with patch, positive review] implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5249",
     "user": "https://github.com/jasongrout"

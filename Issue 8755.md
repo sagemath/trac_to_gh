@@ -4,6 +4,7 @@ archive/issues_008755.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nThe spkg format for Sage requires that:\n\n   (1) the sagenb-*/ directory (that contains spkg-install, SPKG.txt, etc.) has its own hg report, which has spkg-install and SPKG.txt checked in.\n\n   (2) SPKG.txt gets regularly updated with a log message for each new spkg release.\n\nThe goal of this ticket it to change the file src/sagenb/spkg-dist, so that when it it run to create a new spkg, the resulting spkg is *valid* as explained above.  That's it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8755\n\n",
+    "closed_at": "2014-09-18T17:59:02Z",
     "created_at": "2010-04-24T21:38:40Z",
     "labels": [
         "component: notebook",

@@ -1,16 +1,17 @@
-# Issue 1298: [with spkg] To build atlas on osx, we need to actual build lapack on osx.
+# Issue 1298: [with spkg] To build atlas on osx, we need to actually build lapack on osx.
 
 archive/issues_001298.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nThe current lapack.spkg doesn't build on osx (because osx intel has one in /usr/lib)\nSince we will buid atlas on all platforms, we need to build lapack on osx. \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/lapack-20071123.spkg \n\n\n\n\n               \n\nIssue created by migration from https://trac.sagemath.org/ticket/1298\n\n",
+    "closed_at": "2007-12-01T23:25:04Z",
     "created_at": "2007-11-28T09:47:57Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with spkg] To build atlas on osx, we need to actual build lapack on osx.",
+    "title": "[with spkg] To build atlas on osx, we need to actually build lapack on osx.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1298",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

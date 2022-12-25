@@ -1,16 +1,17 @@
-# Issue 2925: [with spkg, needs review] gcc 4.3: givaro-3.2.10.rc3 is broken
+# Issue 2925: [with spkg, positive review] gcc 4.3: givaro-3.2.10.rc3 is broken
 
 archive/issues_002925.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\ngivaro-3.2.10.rc3 does not compile with gcc 4.3. The attached one line patch fixes that.\n\nThe updated spkg can be found at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha5/givaro-3.2.10.rc3.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2925\n\n",
+    "closed_at": "2008-04-14T22:36:27Z",
     "created_at": "2008-04-14T22:15:43Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with spkg, needs review] gcc 4.3: givaro-3.2.10.rc3 is broken",
+    "title": "[with spkg, positive review] gcc 4.3: givaro-3.2.10.rc3 is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2925",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

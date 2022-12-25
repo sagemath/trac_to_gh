@@ -1,9 +1,10 @@
-# Issue 5715: [with patch, needs review] show subdivisions for matrices over GF(2)
+# Issue 5715: [with patch; positive review] show subdivisions for matrices over GF(2)
 
 archive/issues_005715.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nSince `matrix_mod2_dense` defines its own `str` function, it overrides the function for general matrices, so for dense matrices over GF(2), subdivisions are not printed.  (See [this discussion](http://groups.google.com/group/sage-support/browse_frm/thread/a08df4717024f9c0).)\n\nThis patch deletes the `str` method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5715\n\n",
+    "closed_at": "2009-04-13T09:13:43Z",
     "created_at": "2009-04-08T19:17:10Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005715.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] show subdivisions for matrices over GF(2)",
+    "title": "[with patch; positive review] show subdivisions for matrices over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5715",
     "user": "https://github.com/jhpalmieri"

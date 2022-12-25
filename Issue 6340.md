@@ -1,16 +1,17 @@
-# Issue 6340: var('x',ns=False)  -- should go boom but silently gives a new symbolic variable
+# Issue 6340: [with patch, positive review] var('x',ns=False)  -- should go boom but silently gives a new symbolic variable
 
 archive/issues_006340.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nsage: type(var('x',ns=False))\n<type 'sage.symbolic.expression.Expression'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6340\n\n",
+    "closed_at": "2009-09-24T08:29:46Z",
     "created_at": "2009-06-16T19:22:25Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "var('x',ns=False)  -- should go boom but silently gives a new symbolic variable",
+    "title": "[with patch, positive review] var('x',ns=False)  -- should go boom but silently gives a new symbolic variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6340",
     "user": "https://github.com/williamstein"

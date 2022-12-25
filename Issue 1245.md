@@ -3,10 +3,12 @@
 archive/issues_001245.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion coerce multivariate univariate composite\n\nThis works:\n\n```\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)\nx0\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)\nx0\n```\n\nThis doesn't:\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1245\n\n",
+    "body": "Assignee: @malb\n\nCC:  @robertwb\n\nKeywords: coercion coerce multivariate univariate composite\n\nThis works:\n\n```\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)\nx0\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)\nx0\n```\n\nThis doesn't:\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1245\n\n",
+    "closed_at": "2008-11-14T09:41:04Z",
     "created_at": "2007-11-22T23:57:05Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
@@ -16,7 +18,7 @@ archive/issues_001245.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 CC:  @robertwb
 

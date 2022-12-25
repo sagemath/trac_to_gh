@@ -1,16 +1,17 @@
-# Issue 6627: lyndon and standard factorization of words is broken
+# Issue 6627: [with patch, positive review] fix lyndon and standard factorization of words
 
 archive/issues_006627.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  @seblabbe\n\nThe last 1 in the word disappeared:\n\n```\nsage: Word([1,2,1,3,1,2,1]).lyndon_factorization()\n(1213.12)\n```\n\nLyndon factorization of the empty word should work.\n\n```\nsage: Words('01')('').lyndon_factorization()\nTraceback (most recent call last):\n...\nStopIteration\n```\n\nThe standard factorization of 321 is 32.1.\n\n```\nsage: sage: Word([3,2,1]).standard_factorization()\n(321.)\n``` \n\nThe standard factorization of the empty word should return the empty word, and not two copies of the empty word. \n\n```\nsage: Words('123')('').standard_factorization()\n(.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6627\n\n",
+    "closed_at": "2009-08-24T23:54:20Z",
     "created_at": "2009-07-26T09:54:18Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "lyndon and standard factorization of words is broken",
+    "title": "[with patch, positive review] fix lyndon and standard factorization of words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6627",
     "user": "https://github.com/saliola"

@@ -1,16 +1,17 @@
-# Issue 6693: spell-check all modules under sage/databases
+# Issue 6693: [with patch, positive review] spell-check all modules under sage/databases
 
 archive/issues_006693.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6693\n\n",
+    "closed_at": "2009-08-12T05:08:54Z",
     "created_at": "2009-08-09T06:03:00Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/databases",
+    "title": "[with patch, positive review] spell-check all modules under sage/databases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6693",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

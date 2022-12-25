@@ -3,7 +3,8 @@
 archive/issues_002548.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nI like the object resulting from \n`f(x,y)=x<sup>2+y</sup>2`\nbetter than that from\n`var('x,y');g=x<sup>2+y</sup>2`\nHowever, (as I can attest) it's not at all clear to a new user that these are different objects (since what's to the right of the equals sign is the same, which is usually all you need to check -- except in this case)\n\nAnyhow, I'm not sure if that's fixable. What I would like is a syntax for defining callable functions inline. I'm thinking \n`some_python_function(f(x,y)=blah)`\nExcept that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? key=f(x,y)=x^2 looks a bit strange). Any other ideas? Or is this already possible using some other syntax?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2548\n\n",
+    "body": "Assignee: @garyfurnish\n\nI like the object resulting from \n`f(x,y)=x<sup>2+y</sup>2`\nbetter than that from\n`var('x,y');g=x<sup>2+y</sup>2`\nHowever, (as I can attest) it's not at all clear to a new user that these are different objects (since what's to the right of the equals sign is the same, which is usually all you need to check -- except in this case)\n\nAnyhow, I'm not sure if that's fixable. What I would like is a syntax for defining callable functions inline. I'm thinking \n`some_python_function(f(x,y)=blah)`\nExcept that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? `key=f(x,y)=x^2` looks a bit strange). Any other ideas? Or is this already possible using some other syntax?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2548\n\n",
+    "closed_at": "2008-03-16T20:47:06Z",
     "created_at": "2008-03-16T17:01:26Z",
     "labels": [
         "component: misc"
@@ -15,7 +16,7 @@ archive/issues_002548.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/edrex"
 }
 ```
-Assignee: cwitty
+Assignee: @garyfurnish
 
 I like the object resulting from 
 `f(x,y)=x<sup>2+y</sup>2`
@@ -25,7 +26,8 @@ However, (as I can attest) it's not at all clear to a new user that these are di
 
 Anyhow, I'm not sure if that's fixable. What I would like is a syntax for defining callable functions inline. I'm thinking 
 `some_python_function(f(x,y)=blah)`
-Except that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? key=f(x,y)=x^2 looks a bit strange). Any other ideas? Or is this already possible using some other syntax?
+Except that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? `key=f(x,y)=x^2` looks a bit strange). Any other ideas? Or is this already possible using some other syntax?
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2548
 

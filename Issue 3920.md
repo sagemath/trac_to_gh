@@ -1,9 +1,10 @@
-# Issue 3920: [with patch, needs review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_
+# Issue 3920: [with patch, positive review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_
 
 archive/issues_003920.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nWhile reading the Developer's guide update at #3905 it occurred to me that `vector()`/`matrix()` methods are supposed to be called `_vector_`/`_matrix_()` methods so that `matrix(foo)` works. The attached patch changes those functions for finite field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3920\n\n",
+    "body": "Assignee: @malb\n\nCC:  @robertwb\n\nWhile reading the Developer's guide update at #3905 it occurred to me that `vector()`/`matrix()` methods are supposed to be called `_vector_`/`_matrix_()` methods so that `matrix(foo)` works. The attached patch changes those functions for finite field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3920\n\n",
+    "closed_at": "2008-10-18T11:05:47Z",
     "created_at": "2008-08-21T09:01:34Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_003920.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_",
+    "title": "[with patch, positive review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3920",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 CC:  @robertwb
 

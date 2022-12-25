@@ -3,7 +3,8 @@
 archive/issues_007402.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\nKeywords: sagenb notebook\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
+    "closed_at": "2009-12-08T05:33:36Z",
     "created_at": "2009-11-06T11:24:02Z",
     "labels": [
         "component: notebook"
@@ -18,6 +19,8 @@ archive/issues_007402.json:
 Assignee: boothby
 
 CC:  @qed777
+
+Keywords: sagenb notebook
 
 [`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:
 

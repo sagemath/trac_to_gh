@@ -1,9 +1,10 @@
-# Issue 2036: maxima is off by -5 with it's charpoly
+# Issue 2036: [with patch, positive review] maxima is off by -1 with its charpoly
 
 archive/issues_002036.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: matrix(SR, 5, [1..5^2]).charpoly().expand()\n-x^5 + 65*x^4 + 250*x^3\nsage: matrix(QQ, 5, [1..5^2]).charpoly()\nx^5 - 65*x^4 - 250*x^3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2036\n\n",
+    "closed_at": "2008-02-07T10:27:07Z",
     "created_at": "2008-02-03T04:18:45Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_002036.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "maxima is off by -5 with it's charpoly",
+    "title": "[with patch, positive review] maxima is off by -1 with its charpoly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2036",
     "user": "https://github.com/mwhansen"

@@ -1,17 +1,17 @@
-# Issue 1563: dash r
+# Issue 1563: [with patch, with positive review] dash r
 
 archive/issues_001563.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nTo run sage on a different branch that you haven't changed or don't want to compile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1563\n\n",
+    "body": "Assignee: @rlmill\n\nTo run sage on a different branch that you haven't changed or don't want to compile.\n\n```\nsha:sage rlm$ ./sage -r main\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.9, Release Date: 2007-12-16                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: exit\nExiting SAGE (CPU time 0m0.01s, Wall time 0m1.23s).\nsha:sage rlm$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1563\n\n",
+    "closed_at": "2007-12-20T21:43:32Z",
     "created_at": "2007-12-19T04:06:13Z",
     "labels": [
         "component: user interface",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "dash r",
+    "title": "[with patch, with positive review] dash r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1563",
     "user": "https://github.com/rlmill"
@@ -20,6 +20,18 @@ archive/issues_001563.json:
 Assignee: @rlmill
 
 To run sage on a different branch that you haven't changed or don't want to compile.
+
+```
+sha:sage rlm$ ./sage -r main
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| SAGE Version 2.9, Release Date: 2007-12-16                         |
+| Type notebook() for the GUI, and license() for information.        |
+sage: exit
+Exiting SAGE (CPU time 0m0.01s, Wall time 0m1.23s).
+sha:sage rlm$ 
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1563
 

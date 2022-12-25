@@ -4,6 +4,7 @@ archive/issues_003478.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\non my OSX 10.4.11 intel,\n\nthe clisp build was picking up dvipdf from the wrong place (fink or darwinports or something) and failed while trying to build its docs.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3478\n\n",
+    "closed_at": "2009-02-16T01:53:37Z",
     "created_at": "2008-06-19T22:26:24Z",
     "labels": [
         "component: build",

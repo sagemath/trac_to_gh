@@ -3,7 +3,8 @@
 archive/issues_008818.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\nsage: ZZ.range(1r, 10r)\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8818\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: integer_ring, IntegerRing, range()\n\n```\nsage: ZZ.range(1r, 10r)\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8818\n\n",
+    "closed_at": "2010-05-08T21:31:54Z",
     "created_at": "2010-04-29T07:06:09Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,6 +18,8 @@ archive/issues_008818.json:
 }
 ```
 Assignee: @aghitza
+
+Keywords: integer_ring, IntegerRing, range()
 
 ```
 sage: ZZ.range(1r, 10r)

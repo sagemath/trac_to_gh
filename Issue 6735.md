@@ -1,16 +1,17 @@
-# Issue 6735: spell-check all modules under sage/structure
+# Issue 6735: [with patch, positive review] spell-check all modules under sage/structure
 
 archive/issues_006735.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6735\n\n",
+    "closed_at": "2009-08-12T06:26:22Z",
     "created_at": "2009-08-11T10:08:04Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/structure",
+    "title": "[with patch, positive review] spell-check all modules under sage/structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6735",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

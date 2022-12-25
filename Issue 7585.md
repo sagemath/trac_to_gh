@@ -1,16 +1,17 @@
-# Issue 7585: Fast function field arithmatic
+# Issue 7585: Fast function field arithmetic
 
 archive/issues_007585.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @roed314\n\nWrapping flint directly should be much faster than the current implementation of `Frac(GF(p)['t'])`\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7585\n\n",
+    "closed_at": "2010-09-28T11:13:54Z",
     "created_at": "2009-12-02T19:00:33Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Fast function field arithmatic",
+    "title": "Fast function field arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7585",
     "user": "https://github.com/robertwb"

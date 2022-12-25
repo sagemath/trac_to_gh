@@ -1,16 +1,17 @@
-# Issue 7061: [with patch, needs review] add search_src to the developer's guide
+# Issue 7061: [with patch, positive review] add search_src to the developer's guide
 
 archive/issues_007061.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe functions `search_src`, `search_doc`, and `search_def` are important to know about for developers.  This patch adds a paragraph about them to the developer's guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7061\n\n",
+    "closed_at": "2009-10-15T10:07:47Z",
     "created_at": "2009-09-29T03:16:54Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] add search_src to the developer's guide",
+    "title": "[with patch, positive review] add search_src to the developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7061",
     "user": "https://github.com/jhpalmieri"

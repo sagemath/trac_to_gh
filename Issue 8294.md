@@ -3,7 +3,8 @@
 archive/issues_008294.json:
 ```json
 {
-    "body": "Assignee: h\n\nKeywords: Matrix 2x2, mutability, copy\n\n```\nsage: M = sage.matrix.matrix_integer_2x2.MatrixSpace_ZZ_2x2()\nsage: mat = M([3,4,5,6])\nsage: mat.is_mutable()\nTrue\nsage: mat = copy(mat)\nsage: mat.is_mutable()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/hivert/<ipython console> in <module>()\n\n/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.is_mutable (sage/matrix/matrix0.c:3928)()\n\nAttributeError: 'NoneType' object has no attribute 'is_mutable'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8294\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: Matrix 2x2, mutability, copy\n\n```\nsage: M = sage.matrix.matrix_integer_2x2.MatrixSpace_ZZ_2x2()\nsage: mat = M([3,4,5,6])\nsage: mat.is_mutable()\nTrue\nsage: mat = copy(mat)\nsage: mat.is_mutable()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/hivert/<ipython console> in <module>()\n\n/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.is_mutable (sage/matrix/matrix0.c:3928)()\n\nAttributeError: 'NoneType' object has no attribute 'is_mutable'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8294\n\n",
+    "closed_at": "2010-03-03T14:27:07Z",
     "created_at": "2010-02-17T15:31:26Z",
     "labels": [
         "component: linear algebra",
@@ -16,7 +17,7 @@ archive/issues_008294.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: h
+Assignee: @hivert
 
 Keywords: Matrix 2x2, mutability, copy
 

@@ -3,10 +3,11 @@
 archive/issues_003536.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nhttp://sourceforge.net/project/showfiles.php?group_id=23629\n\nIssue created by migration from https://trac.sagemath.org/ticket/3536\n\n",
+    "body": "Assignee: @williamstein\n\nhttp://sourceforge.net/project/showfiles.php?group_id=23629\n\nIssue created by migration from https://trac.sagemath.org/ticket/3536\n\n",
+    "closed_at": "2008-08-20T06:21:09Z",
     "created_at": "2008-06-30T02:16:38Z",
     "labels": [
-        "component: algebra",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_003536.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 http://sourceforge.net/project/showfiles.php?group_id=23629
 

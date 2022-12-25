@@ -4,11 +4,10 @@ archive/issues_007369.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe file graph.py should be split into several files in next release. I am thinking about creating 3 files :\n* generic_graph.py\n* graph.py\n* digraph.py\nBut it is likely many of you will have better ideas. Regardless of what is chosen, this is getting urgent as the best moment to do it is just before releasing a new version, just after all the patches for graph.py have been merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7369\n\n",
+    "closed_at": "2009-12-17T16:24:51Z",
     "created_at": "2009-11-01T15:34:19Z",
     "labels": [
-        "component: graph theory",
-        "blocker",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Split graph.py into several files",

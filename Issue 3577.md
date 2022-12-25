@@ -1,16 +1,17 @@
-# Issue 3577: [with patch; needs review] numpy -- don't import into sage on startup (take 2)
+# Issue 3577: [with patch; positive review] numpy -- don't import into sage on startup (take 2)
 
 archive/issues_003577.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis is a followup to #3561.  It makes it so numpy is definiteley not imported on startup, and even has a test to ensure this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3577\n\n",
+    "closed_at": "2008-07-07T02:59:21Z",
     "created_at": "2008-07-06T23:34:11Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch; needs review] numpy -- don't import into sage on startup (take 2)",
+    "title": "[with patch; positive review] numpy -- don't import into sage on startup (take 2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3577",
     "user": "https://github.com/williamstein"

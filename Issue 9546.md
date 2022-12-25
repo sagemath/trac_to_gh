@@ -4,6 +4,7 @@ archive/issues_009546.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  jthurber\n\nGiven a Graph and a value associating an integer b(v) to each vertex v, this method computes an orientation of G such that each vertex has out_degree at most v, if it exists. \n\nThe method is to use a max flow, which is explained in the patch in several lines.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9546\n\n",
+    "closed_at": "2011-01-19T22:22:07Z",
     "created_at": "2010-07-19T05:48:54Z",
     "labels": [
         "component: graph theory"

@@ -1,22 +1,22 @@
-# Issue 291: strange printing of -1 in multivariate polynomial rings
+# Issue 291: [with patch, positive review] strange printing of -1 in multivariate polynomial rings
 
 archive/issues_000291.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: multivariate polynomial ring printing\n\n```\nsage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']\nsage: R(-r1)\n-1*r1\n```\n\nThis is tricky.  This is an issue with stacking rings... how does QQ['x']['y'] tell (QQ['x'](-1))*y to print as '-y'?  I don't know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/291\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: multivariate polynomial ring printing\n\n```\nsage: R.<r1, r0, s1, s2, z> = QQ['r1', 'r0', 's1', 's2', 'z']\nsage: R(-r1)\n-1*r1\n```\n\nThis is tricky.  This is an issue with stacking rings... how does QQ['x']['y'] tell (QQ['x'](-1))*y to print as '-y'?  I don't know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/291\n\n",
+    "closed_at": "2008-03-21T23:29:58Z",
     "created_at": "2007-02-24T05:13:52Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "strange printing of -1 in multivariate polynomial rings",
+    "title": "[with patch, positive review] strange printing of -1 in multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/291",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: somebody
+Assignee: @ncalexan
 
 Keywords: multivariate polynomial ring printing
 

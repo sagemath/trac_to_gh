@@ -1,9 +1,10 @@
-# Issue 4842: Fix performance regression in eisenstein_submodule.py
+# Issue 4842: [with patch, with positive review] Fix performance regression in eisenstein_submodule.py due to cyclotomic coercion
 
 archive/issues_004842.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @craigcitro @robertwb\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:\n\n```\n> That example was with CyclotomicField(12) and CyclotomicField(132) ... \n\nAh. I bet the time was spent resolving the roots of CyclotomicField \n(132) to high enough precision to distinguish them. If you don't come   \nup with a patch for this, I'll (probably) do it later tonight. \n- Robert \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4842\n\n",
+    "closed_at": "2008-12-21T22:00:02Z",
     "created_at": "2008-12-20T22:54:44Z",
     "labels": [
         "component: coercion",
@@ -11,7 +12,7 @@ archive/issues_004842.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Fix performance regression in eisenstein_submodule.py",
+    "title": "[with patch, with positive review] Fix performance regression in eisenstein_submodule.py due to cyclotomic coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4842",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

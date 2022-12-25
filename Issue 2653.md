@@ -1,9 +1,10 @@
-# Issue 2653: norm and trace of elements of orders are Rational not Integer
+# Issue 2653: [with patch, with positive review] norm and trace of elements of orders are Rational not Integer
 
 archive/issues_002653.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: orders, norm, trace\n\nFor elements of an order, the norm and trace are (mathematically) integers, but Sage returns Rationals.  More generally, the charpoly and minpoly are returned as Rational polynomials when they are (mathematically) in ZZ[].\n\n```\nsage: Zi.<i>=ZZ.extension(x^2+1)\nsage: n=(1+i).norm()\nsage: type(n)\n<type 'sage.rings.rational.Rational'>\nsage: t=(1+i).trace()\nsage: type(t)\n<type 'sage.rings.rational.Rational'>\nsage: p=(1+i).charpoly()\nsage: type(p)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\nsage: p=(1+i).minpoly()\nsage: type(p)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\n```\n\nI would like this to change, as it led to some very inefficient behaviour until I discovered it, and now I am having to manually coerce norms and traces into ZZ.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2653\n\n",
+    "closed_at": "2008-03-26T22:13:02Z",
     "created_at": "2008-03-23T10:34:32Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002653.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "norm and trace of elements of orders are Rational not Integer",
+    "title": "[with patch, with positive review] norm and trace of elements of orders are Rational not Integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2653",
     "user": "https://github.com/JohnCremona"

@@ -1,9 +1,10 @@
-# Issue 2334: $SAGE_LOCAL/include/eclib has wrong permissions
+# Issue 2334: [with spkg, with positive review] $SAGE_LOCAL/include/eclib has wrong permissions
 
 archive/issues_002334.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\ndrwx------ 2 malb georgesk 4.0K 2008-01-29 14:33 eclib\n^^^^^^^^^^^\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2334\n\n",
+    "closed_at": "2008-03-09T07:40:55Z",
     "created_at": "2008-02-27T19:08:17Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002334.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "$SAGE_LOCAL/include/eclib has wrong permissions",
+    "title": "[with spkg, with positive review] $SAGE_LOCAL/include/eclib has wrong permissions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2334",
     "user": "https://github.com/malb"

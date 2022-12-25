@@ -4,6 +4,7 @@ archive/issues_000763.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following are the same L-series twice, but the latex print version is missing the alphas!!\n\n```\nsage: E = EllipticCurve('37a')\nsage: L = E.padic_lseries(3)\nsage: L.series(4)\n(O(3^1))*alpha + (O(3^2)) + ((O(3^-1))*alpha + (2*3^-1 + O(3^0)))*T + ((O(3^-1))*alpha + (2*3^-1 + O(3^0)))*T^2 + ((O(3^-2))*alpha + (O(3^-1)))*T^3 + ((O(3^-1))*alpha + (3^-1 + O(3^0)))*T^4 + O(T^5)\nsage: latex(L.series(4))\n\\left(2 \\cdot 3^{-1} + O(3^{0})\\right)T + \\left(2 \\cdot 3^{-1} + O(3^{0})\\right)T^{2} + \\left(3^{-1} + O(3^{0})\\right)T^{4} + O(\\left(1 + O(3^{5})\\right)T^{5})\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/763\n\n",
+    "closed_at": "2007-10-04T03:25:33Z",
     "created_at": "2007-09-30T05:26:46Z",
     "labels": [
         "component: number theory",

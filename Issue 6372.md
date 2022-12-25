@@ -1,16 +1,17 @@
-# Issue 6372: Move a few 3d plot files into plot3d
+# Issue 6372: [with patch, positive review] Move a few 3d plot files into plot3d
 
 archive/issues_006372.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\ntachyon.py and tri_plot.py really belong in plot/plot3d, and there is an extra texture.py which is unused to remove.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6372\n\n",
+    "closed_at": "2009-06-26T17:41:43Z",
     "created_at": "2009-06-20T19:07:49Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Move a few 3d plot files into plot3d",
+    "title": "[with patch, positive review] Move a few 3d plot files into plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6372",
     "user": "https://github.com/kcrisman"

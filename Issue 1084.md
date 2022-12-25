@@ -1,9 +1,10 @@
-# Issue 1084: invalid use of ring notation gives bizarre post-preparser syntax error
+# Issue 1084: [with patch] invalid use of ring notation gives bizarre post-preparser syntax error
 
 archive/issues_001084.json:
 ```json
 {
     "body": "Assignee: @ncalexan\n\nConsider this example:\n\n```\nsage: QQX = QQ['x']\nsage: K.<x> = QQX\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     K = QQ,names=(u'x',)); (x,) = K._first_ngens(Integer(1))\n                         ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\nI don't care if this actually works; but if it doesn't, it should fail with a friendlier error message.  And where did the 'X' from QQX go?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1084\n\n",
+    "closed_at": "2007-11-06T22:03:39Z",
     "created_at": "2007-11-03T20:09:14Z",
     "labels": [
         "component: user interface",
@@ -11,7 +12,7 @@ archive/issues_001084.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "invalid use of ring notation gives bizarre post-preparser syntax error",
+    "title": "[with patch] invalid use of ring notation gives bizarre post-preparser syntax error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1084",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

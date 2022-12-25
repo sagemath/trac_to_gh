@@ -1,16 +1,17 @@
-# Issue 1604: more locale problems with python exposed by matplotlib
+# Issue 1604: [with patch, spkg, needs review] more locale problems with python exposed by matplotlib
 
 archive/issues_001604.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1604\n\n",
+    "body": "Assignee: @williamstein\n\nOn a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale. \n\nNOTE: This might be hackish -- probably the right fix would be to somehow change matplotlib. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1604\n\n",
+    "closed_at": "2008-01-21T06:31:57Z",
     "created_at": "2007-12-27T02:12:30Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "more locale problems with python exposed by matplotlib",
+    "title": "[with patch, spkg, needs review] more locale problems with python exposed by matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1604",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,9 @@ archive/issues_001604.json:
 ```
 Assignee: @williamstein
 
-On a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale.
+On a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale. 
+
+NOTE: This might be hackish -- probably the right fix would be to somehow change matplotlib. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1604
 

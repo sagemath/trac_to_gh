@@ -4,6 +4,7 @@ archive/issues_008203.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe attached patch fixes several warnings when building the documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8203\n\n",
+    "closed_at": "2010-02-11T14:41:28Z",
     "created_at": "2010-02-07T03:48:02Z",
     "labels": [
         "component: documentation",

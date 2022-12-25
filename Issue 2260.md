@@ -1,22 +1,23 @@
-# Issue 2260: Upgrade ATLAS to 3.8.1
+# Issue 2260: [With Positive Review] Upgrade ATLAS to 3.8.1
 
 archive/issues_002260.json:
 ```json
 {
-    "body": "Assignee: m abs\n\n```\nATLAS 3.8.1 has been released.  It fixes all the known bugs in 3.8.0.  There\nare also several other improvements, but probably the most important is that\nI have finally fixed the Level 1 timing, so that it doesn't die so much with\n\"unable to get timings within tolerance\" when you don't have architectural\ndefaults.\n\nThe ChangeLog entry is below.\n\nCheers,\nClint\nATLAS 3.8.1 released 02/21/08, Changes from 3.8.0:\n   * Fixed bug in slvtst that counted complex flops same as real\n   * Fixed bug causing wrong answer for row-major gemm C=A*A' or A'A \n   * Fixed bug in configure causing Pentium-M to be IDed as CoreDuo\n   * Fixed bug in tfc.c causing memory overwrite when too many samples taken\n   * Improved L1 BLAS timers so they work like the rest of the package, and\n     thus don't die all the time on tolerance failures\n   * Improved ATLAS/tune/blas/gemm/mmsearch.c:\n     - for x86, tried more registers, since smart compiler can reduce A & B\n       regs to 2 (and possibly even 1)\n     - Made it so search tries both load-C-at-top and load-C-at-bottom of\n       M loop.  Bottom is superior for error, and ATLAS originally defaulted\n       to load-C-at-top.\n   * Added configure support for new K10h platform from AMD, as well as\n     basic architectural defaults (no new kernels, just good search)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2260\n\n",
+    "body": "Assignee: mabshoff\n\n```\nATLAS 3.8.1 has been released.  It fixes all the known bugs in 3.8.0.  There\nare also several other improvements, but probably the most important is that\nI have finally fixed the Level 1 timing, so that it doesn't die so much with\n\"unable to get timings within tolerance\" when you don't have architectural\ndefaults.\n\nThe ChangeLog entry is below.\n\nCheers,\nClint\nATLAS 3.8.1 released 02/21/08, Changes from 3.8.0:\n   * Fixed bug in slvtst that counted complex flops same as real\n   * Fixed bug causing wrong answer for row-major gemm C=A*A' or A'A \n   * Fixed bug in configure causing Pentium-M to be IDed as CoreDuo\n   * Fixed bug in tfc.c causing memory overwrite when too many samples taken\n   * Improved L1 BLAS timers so they work like the rest of the package, and\n     thus don't die all the time on tolerance failures\n   * Improved ATLAS/tune/blas/gemm/mmsearch.c:\n     - for x86, tried more registers, since smart compiler can reduce A & B\n       regs to 2 (and possibly even 1)\n     - Made it so search tries both load-C-at-top and load-C-at-bottom of\n       M loop.  Bottom is superior for error, and ATLAS originally defaulted\n       to load-C-at-top.\n   * Added configure support for new K10h platform from AMD, as well as\n     basic architectural defaults (no new kernels, just good search)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2260\n\n",
+    "closed_at": "2008-03-20T10:58:01Z",
     "created_at": "2008-02-22T17:03:07Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Upgrade ATLAS to 3.8.1",
+    "title": "[With Positive Review] Upgrade ATLAS to 3.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2260",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: m abs
+Assignee: mabshoff
 
 ```
 ATLAS 3.8.1 has been released.  It fixes all the known bugs in 3.8.0.  There

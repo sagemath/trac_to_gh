@@ -1,16 +1,17 @@
-# Issue 1495: ATLAS fails to compile on FC7 32 bit with multiple cores
+# Issue 1495: Terminate ATLAS build on Linux when power management is enabled
 
 archive/issues_001495.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAccording to INSTALL.txt: CPU-Throttling, you have to do\n\n```\n/usr/bin/cpufreq-selector -g performance\n```\nBut with two cores you have to force the cpu1 to run at its peak frequency:\n\n```\nAs root:\ncp /sys/devices/system/cpu/cp0/cpufreq/scaling_governor \\\n    /sys/devices/system/cpu/cp1/cpufreq/scaling_governor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1495\n\n",
+    "closed_at": "2008-04-11T22:38:35Z",
     "created_at": "2007-12-13T23:16:08Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "ATLAS fails to compile on FC7 32 bit with multiple cores",
+    "title": "Terminate ATLAS build on Linux when power management is enabled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1495",
     "user": "https://github.com/jaapspies"

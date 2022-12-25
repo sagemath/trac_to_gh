@@ -6,7 +6,7 @@ archive/issues_004128.json:
     "body": "Assignee: mabshoff\n\nhttp://www.nabble.com/Experimental-Valgrind-coverage-tool-(fwd)-td15321809.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4128\n\n",
     "created_at": "2008-09-15T12:19:11Z",
     "labels": [
-        "component: doctest",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",

@@ -4,6 +4,7 @@ archive/issues_008916.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: documentation\n\nThe word NotImplementedError is latexed but it shouldn't be:\n\n```\nEnumeratedSets.ParentMethods.cardinality\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8916\n\n",
+    "closed_at": "2010-05-08T21:51:43Z",
     "created_at": "2010-05-07T16:14:21Z",
     "labels": [
         "component: documentation",

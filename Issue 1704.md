@@ -1,15 +1,16 @@
-# Issue 1704: [with patch] replace _DivPolyContext by _multiply_point
+# Issue 1704: [with patch, with positive review] replace _DivPolyContext by _multiply_point
 
 archive/issues_001704.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch replaces the `_DivPolyContext` class with a new function `_multiply_point`. The main downside of the original `_DivPolyContext` is that it's very recursive, and I started overflowing python's stack for some large problems I needed to play with. The new function is not recursive, and also turns out to be slightly faster.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1704\n\n",
+    "closed_at": "2008-01-21T05:52:54Z",
     "created_at": "2008-01-06T23:19:41Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] replace _DivPolyContext by _multiply_point",
+    "title": "[with patch, with positive review] replace _DivPolyContext by _multiply_point",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1704",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

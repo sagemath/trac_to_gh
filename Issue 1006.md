@@ -3,7 +3,8 @@
 archive/issues_001006.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: Leopard\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1006\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: Leopard, 64 bit\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1006\n\n",
+    "closed_at": "2009-02-08T03:14:10Z",
     "created_at": "2007-10-26T20:44:34Z",
     "labels": [
         "component: distribution",
@@ -18,7 +19,7 @@ archive/issues_001006.json:
 ```
 Assignee: mabshoff
 
-Keywords: Leopard
+Keywords: Leopard, 64 bit
 
 
 

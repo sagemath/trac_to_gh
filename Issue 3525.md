@@ -1,21 +1,24 @@
-# Issue 3525: notebook -- new welcome page
+# Issue 3525: [with patches, don't review] notebook -- new welcome page
 
 archive/issues_003525.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTake the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3525\n\n",
+    "body": "Assignee: TimothyClemans\n\nKeywords: editor_wstein, stale\n\nTake the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3525\n\n",
+    "closed_at": "2014-09-18T17:56:59Z",
     "created_at": "2008-06-28T06:40:47Z",
     "labels": [
-        "component: number theory"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "notebook -- new welcome page",
+    "title": "[with patches, don't review] notebook -- new welcome page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3525",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: @williamstein
+Assignee: TimothyClemans
+
+Keywords: editor_wstein, stale
 
 Take the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.
 

@@ -1,4 +1,4 @@
-# Issue 6432: plot and especially animate are very slow
+# Issue 6432: animate is really slow
 
 archive/issues_006432.json:
 ```json
@@ -6,11 +6,10 @@ archive/issues_006432.json:
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nKeywords: plot speed slow animate\n\nFor anything but the smallest animations, I'm getting very slow times for `animate()` (of course, most of the time is spent writing individual png files).  Is this just the price for python?  Can we improve this to be at least usable for the several hundred frame animations I would like to create?\n\nFor example:\n\n```\nsage: anim\nAnimation with 22 frames\nsage: %time show(anim)\nCPU times: user 6.01 s, sys: 0.14 s, total: 6.15 s\nWall time: 9.68 s\n```\n\nThe frames of this animation are just a few lines and points representing paths in the complex plane.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6432\n\n",
     "created_at": "2009-06-27T16:52:23Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "plot and especially animate are very slow",
+    "title": "animate is really slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6432",
     "user": "https://github.com/ncalexan"

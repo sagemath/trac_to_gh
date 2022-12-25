@@ -1,9 +1,10 @@
-# Issue 4620: setup.py: if the cythonization fails then next "sage -b" starts to build extensions
+# Issue 4620: [with patch, positive review] setup.py: if the cythonization fails then next "sage -b" starts to build extensions
 
 archive/issues_004620.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis is with 3.2.1.alpha1-current. To reproduce do a \"sage -ba\" and have a Cython process fail. Then the next \"sage -b\" will not pick up with the Cythonization again, but start building extensions.\n\nDeleting .cython_deps does not fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4620\n\n",
+    "closed_at": "2008-11-26T09:35:20Z",
     "created_at": "2008-11-25T23:19:49Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004620.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "setup.py: if the cythonization fails then next \"sage -b\" starts to build extensions",
+    "title": "[with patch, positive review] setup.py: if the cythonization fails then next \"sage -b\" starts to build extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4620",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -4,6 +4,7 @@ archive/issues_003990.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @malb @jhpalmieri @mwhansen\n\nThis list includes:\n* `#32-bit` and `#64-bit`\n* `#random`\n* `#optional`\n* `#long`\n\nMost are already mentioned, but 32-bit/64-bit is definitely missing. This ticket should be tackled after the Sphinx-isation of the Developer's guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3990\n\n",
+    "closed_at": "2015-09-12T14:05:41Z",
     "created_at": "2008-08-29T11:29:00Z",
     "labels": [
         "component: documentation",

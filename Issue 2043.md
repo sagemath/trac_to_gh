@@ -4,6 +4,7 @@ archive/issues_002043.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nlibpng.spkg currently relies on the system to provide a libz, so set LDFLAGS properly to pick up Sage's libz.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2043\n\n",
+    "closed_at": "2008-02-17T23:43:59Z",
     "created_at": "2008-02-04T04:29:17Z",
     "labels": [
         "component: packages: standard",

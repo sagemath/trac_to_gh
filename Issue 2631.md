@@ -4,6 +4,7 @@ archive/issues_002631.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThere should be a visual distinction between input cells which have been evaluated and those that have not, and also to indicate when a previously evaluated cell has been edited and thus the (apparent) output is not actually the output of the input cell (cf Mathematica's behavior on this). A simple way to do this would be to change the color of evaluated input cells to blue, or to change the color of the boarder of input box.  One reason to do this is that it is difficult to tell if you have evaluated a cell whose contents don't return anything (e.g. \"a = 1+2\").\n\nIssue created by migration from https://trac.sagemath.org/ticket/2631\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2008-03-21T16:06:47Z",
     "labels": [
         "component: notebook",

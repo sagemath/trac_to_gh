@@ -1,16 +1,17 @@
-# Issue 1762: Create optional graphviz package
+# Issue 1762: [with optional spkg, positive review] Create optional graphviz package
 
 archive/issues_001762.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nGraphviz is licensed under the Common Public License Version 1.0, which is incompatible with the GPL. ([see wikipedia](http://en.wikipedia.org/wiki/Common_Public_License))  So, we can't distribute graphviz packaged with Sage, but we can distribute it separately.\n\nThe dependencies are rather numerous, but most are optional. Of note, GD and libpng are already included in Sage. [http://www.graphviz.org/doc/build.html](http://www.graphviz.org/doc/build.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1762\n\n",
+    "closed_at": "2008-05-23T01:41:20Z",
     "created_at": "2008-01-12T04:42:08Z",
     "labels": [
         "component: graph theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Create optional graphviz package",
+    "title": "[with optional spkg, positive review] Create optional graphviz package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1762",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

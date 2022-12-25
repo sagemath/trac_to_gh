@@ -1,22 +1,23 @@
-# Issue 4190: division of number field order elements doesn't check for membership
+# Issue 4190: [with patches, positive review] division of number field order elements doesn't check for membership
 
 archive/issues_004190.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
+    "closed_at": "2008-11-14T18:48:39Z",
     "created_at": "2008-09-24T11:21:35Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "division of number field order elements doesn't check for membership",
+    "title": "[with patches, positive review] division of number field order elements doesn't check for membership",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4190",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @robertwb
 

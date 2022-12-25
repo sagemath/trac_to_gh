@@ -1,16 +1,17 @@
-# Issue 7042: notebook: remove .pyc files
+# Issue 7042: [with patch, positive review] notebook: remove .pyc files
 
 archive/issues_007042.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7042\n\n",
+    "closed_at": "2009-09-27T20:07:57Z",
     "created_at": "2009-09-27T19:33:12Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "notebook: remove .pyc files",
+    "title": "[with patch, positive review] notebook: remove .pyc files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7042",
     "user": "https://github.com/certik"

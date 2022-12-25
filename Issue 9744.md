@@ -3,10 +3,12 @@
 archive/issues_009744.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI was browsing the docs and noticed this example completely fills the plot black:\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\nThe docs say it should fill the region f(x)<0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9744\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI was browsing the docs and noticed this example completely fills the plot black:\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\nThe docs say it should fill the region f(x)<0.\n\n---\n\nApply: [attachment:trac_9744_v2.patch] and [attachment:trac_9744-reviewer.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/9744\n\n",
+    "closed_at": "2012-02-27T11:19:59Z",
     "created_at": "2010-08-14T09:13:18Z",
     "labels": [
         "component: graphics",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
@@ -29,6 +31,10 @@ implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)
 ```
 
 The docs say it should fill the region f(x)<0.
+
+---
+
+Apply: [attachment:trac_9744_v2.patch] and [attachment:trac_9744-reviewer.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/9744
 

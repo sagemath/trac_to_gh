@@ -1,22 +1,23 @@
-# Issue 982: abs(x) returns incorrect LaTex
+# Issue 982: [with patch] abs(x) returns incorrect LaTex
 
 archive/issues_000982.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: f = abs(x)\nsage: latex(f)\n\\abs \\left( x \\right)\n```\n\nbut it should be\n\n```\nsage: latex(f)\n\\mathrm{abs} \\left| x \\right|\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/982\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: f = abs(x)\nsage: latex(f)\n\\abs \\left( x \\right)\n```\n\nbut it should be\n\n```\nsage: latex(f)\n\\mathrm{abs} \\left| x \\right|\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/982\n\n",
+    "closed_at": "2007-10-24T19:16:39Z",
     "created_at": "2007-10-24T17:39:00Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "abs(x) returns incorrect LaTex",
+    "title": "[with patch] abs(x) returns incorrect LaTex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/982",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 sage: f = abs(x)

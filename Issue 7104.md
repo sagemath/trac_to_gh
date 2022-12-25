@@ -1,16 +1,16 @@
-# Issue 7104: [with patch, needs review] Add config.py back to the reference manual.
+# Issue 7104: [with patch, positive review] Add config.py back to the reference manual.
 
 archive/issues_007104.json:
 ```json
 {
     "body": "Assignee: tba\n\nTicket #6556 adds a much-needed, module-level docstring to `sage/server/notebook/config.py`.  It should be in the Sage reference manual.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/msg/b07018c5c407edc4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7104\n\n",
+    "closed_at": "2009-11-12T04:55:26Z",
     "created_at": "2009-10-04T02:13:53Z",
     "labels": [
-        "component: documentation",
-        "trivial"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "[with patch, needs review] Add config.py back to the reference manual.",
+    "title": "[with patch, positive review] Add config.py back to the reference manual.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7104",
     "user": "https://github.com/qed777"

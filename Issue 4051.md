@@ -1,16 +1,17 @@
-# Issue 4051: [with patch; needs review] Use of tar -j in sage-pkg
+# Issue 4051: [with patch; positive review] Use of tar -j in sage-pkg
 
 archive/issues_004051.json:
 ```json
 {
     "body": "Assignee: anakha\n\nThe -j option to tar is a gnu tar specific option.  Workaround is to pipe output trough bzip2.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4051\n\n",
+    "closed_at": "2008-09-04T00:36:59Z",
     "created_at": "2008-09-03T18:47:22Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch; needs review] Use of tar -j in sage-pkg",
+    "title": "[with patch; positive review] Use of tar -j in sage-pkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4051",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"

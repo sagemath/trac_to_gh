@@ -4,6 +4,7 @@ archive/issues_009001.json:
 ```json
 {
     "body": "Assignee: tbd\n\n```\nsage-4.4.2 with the optional package database_cremona_ellcurve-20071019.p0.spkg has the following test failure:\n\n\ntaurus% ./sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.4.2-x86_64-Linux-nehalem-fc-test2/devel/sage/sage/schemes/elliptic_curves/ell_point.py\", line 1729:\n    sage: Q = E.isomorphism_to(ED.change_ring(K))(P); Q\nExpected:\n    (0 : -7/2*a - 1/2 : 1)\nGot:\n    (0 : 7/2*a - 1/2 : 1)\n**********************************************************************\n1 items had failures:\n   1 of  67 in __main__.example_36\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mariah/.sage//tmp/.doctest_ell_point.py\n         [32.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9001\n\n",
+    "closed_at": "2010-06-04T15:30:10Z",
     "created_at": "2010-05-20T20:37:26Z",
     "labels": [
         "component: packages: optional",

@@ -1,21 +1,22 @@
-# Issue 1106: speed up dense matrix comparison
+# Issue 1106: [with patch, positive review] speed up dense matrix comparison
 
 archive/issues_001106.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe general implementation right now is:\n\n```\ncdef int _cmp_c_impl(self, Element right) except -2:\n    return cmp(self._list(), right._list())\n```\nwhich has a huge memory overhead. This should be optimised. Also, Matrix_modn_dense should have a faster special cmp method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1106\n\n",
+    "body": "Assignee: @mwhansen\n\nThe general implementation right now is:\n\n```\ncdef int _cmp_c_impl(self, Element right) except -2:\n    return cmp(self._list(), right._list())\n```\nwhich has a huge memory overhead. This should be optimised. Also, Matrix_modn_dense should have a faster special cmp method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1106\n\n",
+    "closed_at": "2007-12-22T18:08:35Z",
     "created_at": "2007-11-05T12:22:36Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "speed up dense matrix comparison",
+    "title": "[with patch, positive review] speed up dense matrix comparison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1106",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 The general implementation right now is:
 

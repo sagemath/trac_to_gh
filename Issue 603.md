@@ -3,7 +3,7 @@
 archive/issues_000603.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  mvngu\n\nSee http://www.sagemath.org:9001/ValgrindingSage for a working copy of the document. Once it is deemed usable we should use it to html and merge it into the official documentation.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/603\n\n",
+    "body": "Assignee: @burcin\n\nCC:  mvngu\n\nSee http://wiki.sagemath.org/ValgrindingSage for a working copy of the document. Once it is deemed usable we should use it to html and merge it into the official documentation.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/603\n\n",
     "created_at": "2007-09-06T19:35:54Z",
     "labels": [
         "component: documentation"
@@ -19,7 +19,7 @@ Assignee: @burcin
 
 CC:  mvngu
 
-See http://www.sagemath.org:9001/ValgrindingSage for a working copy of the document. Once it is deemed usable we should use it to html and merge it into the official documentation.
+See http://wiki.sagemath.org/ValgrindingSage for a working copy of the document. Once it is deemed usable we should use it to html and merge it into the official documentation.
 
 Cheers,
 

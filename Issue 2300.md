@@ -1,16 +1,17 @@
-# Issue 2300: A copy method for SingularElement [with patch, needs review]
+# Issue 2300: [merged] A copy method for SingularElement
 
 archive/issues_002300.json:
 ```json
 {
     "body": "Assignee: @simon-king-jena\n\nCC:  malb@informatik.uni-bremen.de\n\nKeywords: copy SingularElement\n\nSo far, there was no method for copying a `SingularElement`. Calling `copy` on a `SingularElement` resulted in an `(invalid object -- defined in terms of closed session)`.\n\nThe patch provides a `__copy__` method. In fact, this is quite easy: For most objects `S` of type `SingularElement`, it suffices to return `singular(S.name())`. One has to make an exception when `S` is a ring, because `singular(S.name)())` would just yield another name for *the same* ring. Therefore, `(S.ringlist()).ring()` is used for duplication of a ring. Examples:\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: M=singular.matrix(3,3,'0,0,-x, 0,y,0, x*y,0,0')\nsage: N=copy(M)\nsage: N[1,1]=singular('x+y')\nsage: N\nx+y,0,-x,\n0,  y,0,\nx*y,0,0\nsage: M\n0,  0,-x,\n0,  y,0,\nx*y,0,0\n```\nHence, N really is a copy of M. Changing N does not affect M\n\n```\nsage: S=copy(R)\nsage: S.set_ring()\nsage: S\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\nsage: R.fetch(M)\n0,  0,-x,\n0,  y,0,\nx*y,0,0\nsage: M\n`sage1`\n```\nNote that in the last example, `M` is unknown after making `S` active. So, `S` is a copy of `R`, but not identical to `R`.\nDefining `S=singular(R.name())` would be a mistake: The matrix `M` would be known in `S`, and any change to `M` when `S` is active would persist after returning to `R`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2300\n\n",
+    "closed_at": "2008-03-04T12:11:28Z",
     "created_at": "2008-02-25T09:57:08Z",
     "labels": [
         "component: commutative algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "A copy method for SingularElement [with patch, needs review]",
+    "title": "[merged] A copy method for SingularElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2300",
     "user": "https://github.com/simon-king-jena"

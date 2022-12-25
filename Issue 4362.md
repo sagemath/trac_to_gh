@@ -1,16 +1,17 @@
-# Issue 4362: Bug fixes in tableaux latex output [with patches at #4355. Needs review.]
+# Issue 4362: [with patch, positive review] Bug fixes in tableaux latex output
 
 archive/issues_004362.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe latex output of tableaux is a broke, which affects the latex output in CrystalOfTableaux. Patches that fix this were attached to #4355 but I should have created a new ticket for these since that ticket really proposes something different.\n\nSee #4355 for the patches.\n\nSee http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/3fff0cbc6b44b483?hl=en for discussion. But in a nutshell try \n\n```\nlatex(Tableau([[1,2,3],[2,2],[3,4],[4]])) \nlatex(Tableau([[1,1,2,3,4],[2,2,2],[3]])) \nlatex(Tableau([[1],[2],[3],[4]])) \nlatex(Tableau([[1,2,3,4]])) \nlatex(Tableau([[1,2,3,4],[5,6,7,8]])) \nlatex(Tableau([[1,2,3,4],[5,6,7,8],[9]])) \nlatex(Tableau([[1,2,],[5,6],[7,9]])) \nlatex(Tableau([[1,2,],[5,6],[7,9],[9]])) \nlatex(Tableau([[1,2,3,4,5,],[6]])) \nlatex(Tableau([[1,2,3,4,5,],[6],[7],[8],[9]])) \n```\n\netc or \n\n```\nCrystalOfTableaux(\"A2\",shape=[3,1]).latex_file(\"/home/bump/tmp/test.tex\")\n```\n\nto see the defect.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4362\n\n",
+    "closed_at": "2008-11-07T16:13:23Z",
     "created_at": "2008-10-24T11:34:13Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Bug fixes in tableaux latex output [with patches at #4355. Needs review.]",
+    "title": "[with patch, positive review] Bug fixes in tableaux latex output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4362",
     "user": "https://github.com/dwbump"

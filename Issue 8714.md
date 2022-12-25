@@ -3,7 +3,8 @@
 archive/issues_008714.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @wdjoyner @dkrenn @dcoudert @nathanncohen\n\nI'm using #698 as a wish list of items to add to the graph theory module of Sage. The purpose of this ticket is to implement the [Bellman-Ford](http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm for finding shortest paths in a weighted graph `G` that may have negative weights. If `G` doesn't have negative weights, Dijkstra's algorithm can be used. However, if `G` has negative weights, we fall back on the Bellman-Ford algorithm. The Bellman-Ford algorithm is able to handle graphs with negative weights, but not graphs that have negative-weight cycles. See also the function [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) in Mathematica's [Combinatorica](http://reference.wolfram.com/mathematica/Combinatorica/guide/CombinatoricaPackage.html) package. See this [graph theory book](http://code.google.com/p/graph-theory-algorithms-book/) for an algorithmic presentation of the Bellman-Ford algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8714\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @wdjoyner @dkrenn @dcoudert @nathanncohen\n\nI'm using #698 as a wish list of items to add to the graph theory module of Sage. The purpose of this ticket is to implement the [Bellman-Ford](http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm for finding shortest paths in a weighted graph `G` that may have negative weights. If `G` doesn't have negative weights, Dijkstra's algorithm can be used. However, if `G` has negative weights, we fall back on the Bellman-Ford algorithm. The Bellman-Ford algorithm is able to handle graphs with negative weights, but not graphs that have negative-weight cycles. See also the function [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) in Mathematica's [Combinatorica](http://reference.wolfram.com/mathematica/Combinatorica/guide/CombinatoricaPackage.html) package. See this [graph theory book](http://code.google.com/p/graph-theory-algorithms-book/) for an algorithmic presentation of the Bellman-Ford algorithm.\n\nSee also the [graph theory roadmap](GraphTheoryRoadmap).\n\n\nAPPLY: \n* [attachment:trac_8714.2.patch]\n* [attachment:trac_8714_addon1.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8714\n\n",
+    "closed_at": "2015-09-12T13:58:34Z",
     "created_at": "2010-04-19T06:30:38Z",
     "labels": [
         "component: graph theory"
@@ -20,6 +21,13 @@ Assignee: jason, ncohen, rlm
 CC:  @wdjoyner @dkrenn @dcoudert @nathanncohen
 
 I'm using #698 as a wish list of items to add to the graph theory module of Sage. The purpose of this ticket is to implement the [Bellman-Ford](http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm for finding shortest paths in a weighted graph `G` that may have negative weights. If `G` doesn't have negative weights, Dijkstra's algorithm can be used. However, if `G` has negative weights, we fall back on the Bellman-Ford algorithm. The Bellman-Ford algorithm is able to handle graphs with negative weights, but not graphs that have negative-weight cycles. See also the function [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) in Mathematica's [Combinatorica](http://reference.wolfram.com/mathematica/Combinatorica/guide/CombinatoricaPackage.html) package. See this [graph theory book](http://code.google.com/p/graph-theory-algorithms-book/) for an algorithmic presentation of the Bellman-Ford algorithm.
+
+See also the [graph theory roadmap](GraphTheoryRoadmap).
+
+
+APPLY: 
+* [attachment:trac_8714.2.patch]
+* [attachment:trac_8714_addon1.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8714
 

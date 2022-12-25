@@ -3,7 +3,8 @@
 archive/issues_007096.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  shumow@gmail.com\n\nKeywords: elliptic curve isogeny\n\n```\nsage: p = 1019\nsage: F = GF(p)\nsage: E = EllipticCurve(F,[1,-1,0,1,1])\nsage: psi = E.division_polynomial(7).factor()[3][0]\nsage: phi = E.isogeny(kernel=psi)\nsage: assert phi.degree()==7\nsage: phi.dual()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jec/.sage/temp/selmer/14232/_home_jec__sage_init_sage_0.py in <module>()\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in dual(self)\n   2998\n   2999         phi_hat.set_pre_isomorphism(pre_isom)\n-> 3000         phi_hat.set_post_isomorphism(post_isom)\n   3001\n   3002         self.__dual = phi_hat\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in set_post_isomorphism(self, postWI)\n   2627\n   2628         if (self.__E2 != WIdom):\n-> 2629             raise ValueError, \"Invalid parameter: isomorphism must have domain curve equal to this isogenies'codomain.\"\n   2630\n   2631         if (None == self.__post_isomorphism):\n\nValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.\n```\n\nThis looks like something which should be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7096\n\n",
+    "body": "CC:  shumow@gmail.com\n\nKeywords: elliptic curve isogeny\n\n```\nsage: p = 1019\nsage: F = GF(p)\nsage: E = EllipticCurve(F,[1,-1,0,1,1])\nsage: psi = E.division_polynomial(7).factor()[3][0]\nsage: phi = E.isogeny(kernel=psi)\nsage: assert phi.degree()==7\nsage: phi.dual()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jec/.sage/temp/selmer/14232/_home_jec__sage_init_sage_0.py in <module>()\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in dual(self)\n   2998\n   2999         phi_hat.set_pre_isomorphism(pre_isom)\n-> 3000         phi_hat.set_post_isomorphism(post_isom)\n   3001\n   3002         self.__dual = phi_hat\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in set_post_isomorphism(self, postWI)\n   2627\n   2628         if (self.__E2 != WIdom):\n-> 2629             raise ValueError, \"Invalid parameter: isomorphism must have domain curve equal to this isogenies'codomain.\"\n   2630\n   2631         if (None == self.__post_isomorphism):\n\nValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.\n```\n\nThis looks like something which should be easy to fix.\n\nOne month of hard work later:  first impressions were deceptive! \n\nIssue created by migration from https://trac.sagemath.org/ticket/7096\n\n",
+    "closed_at": "2009-11-02T04:49:07Z",
     "created_at": "2009-10-02T15:05:02Z",
     "labels": [
         "component: elliptic curves",
@@ -16,8 +17,6 @@ archive/issues_007096.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: @loefflerd
-
 CC:  shumow@gmail.com
 
 Keywords: elliptic curve isogeny
@@ -53,6 +52,8 @@ ValueError: Invalid parameter: isomorphism must have domain curve equal to this 
 ```
 
 This looks like something which should be easy to fix.
+
+One month of hard work later:  first impressions were deceptive! 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7096
 

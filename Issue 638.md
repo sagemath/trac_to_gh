@@ -1,15 +1,16 @@
-# Issue 638: notebook improvement -- allow comment at beginning of text version of notebook
+# Issue 638: [with patch, do not review] notebook improvement -- allow comment at beginning of text version of notebook
 
 archive/issues_000638.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n\n> 2) Also it would be nice if the first line in the text of a\n>    worksheet was allowed to be a comment.  At the moment the\n>    first line is always assumed to be the title even if it\n>    starts with \"<!--\".\n\nThat's quite reasonable. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/638\n\n",
+    "closed_at": "2009-10-21T07:45:07Z",
     "created_at": "2007-09-11T04:40:35Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "notebook improvement -- allow comment at beginning of text version of notebook",
+    "title": "[with patch, do not review] notebook improvement -- allow comment at beginning of text version of notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/638",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,16 @@
-# Issue 8945: Cremona labels messed up
+# Issue 8945: elliptic curve and modular form labels are not consistent
 
 archive/issues_008945.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @williamstein @JohnCremona\n\nIt's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.\n\nThe problem is that they don't match! For instance:\n\n```\nsage: EllipticCurve('225c').aplist(50)                              \n[-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]\nsage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]\n[0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]\n```\n\nThis is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8945\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein @JohnCremona\n\nIt's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.\n\nThe problem is that they don't match! For instance:\n\n```\nsage: EllipticCurve('225c').aplist(50)                              \n[-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]\nsage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]\n[0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]\n```\nHowever\n\n```\nsage: f = Newform('225b', names='a')\nsage: [f[p] for p in prime_range(50)] == EllipticCurve('225c').aplist(50)\nTrue\n```\n\nThis is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8945\n\n",
     "created_at": "2010-05-10T17:01:33Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "Cremona labels messed up",
+    "title": "elliptic curve and modular form labels are not consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8945",
     "user": "https://github.com/loefflerd"
@@ -29,6 +29,13 @@ sage: EllipticCurve('225c').aplist(50)
 [-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]
 sage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]
 [0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]
+```
+However
+
+```
+sage: f = Newform('225b', names='a')
+sage: [f[p] for p in prime_range(50)] == EllipticCurve('225c').aplist(50)
+True
 ```
 
 This is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!

@@ -3,7 +3,8 @@
 archive/issues_000004.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCurrently this:\n\npAdicField(5)(Integers(125)(13))\n\nproduces this:\n\nTraceback (most recent call last):\n...\nTypeError: unable to compute ordp\n\nI think SAGE should be able to perform such a conversion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4\n\n",
+    "body": "Assignee: dmharvey\n\nCurrently this:\n\npAdicField(5)(Integers(125)(13))\n\nproduces this:\n\nTraceback (most recent call last):\n...\nTypeError: unable to compute ordp\n\nI think SAGE should be able to perform such a conversion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4\n\n",
+    "closed_at": "2007-04-13T03:59:59Z",
     "created_at": "2006-09-12T00:41:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +17,7 @@ archive/issues_000004.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: dmharvey
 
 Currently this:
 

@@ -4,6 +4,7 @@ archive/issues_007390.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nIt would be useful to have a HTML report summarizing the results of Sage Notebook tests, including the output and traceback, if any, of each test.\n\nWe can begin with the notebook's functional test suites (cf. #7343), but we could add doctests, eventually.  And with a backend server, we might select, run, and monitor tests remotely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7390\n\n",
+    "closed_at": "2009-12-08T07:31:11Z",
     "created_at": "2009-11-04T20:31:29Z",
     "labels": [
         "component: notebook",

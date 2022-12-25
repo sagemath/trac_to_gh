@@ -1,15 +1,16 @@
-# Issue 7655: notebook: make it so worksheets can be organized into a tree structure
+# Issue 7655: notebook: make it so worksheets can be organized into a tree structure (labels, folders)
 
 archive/issues_007655.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @gvol @jasongrout boothby @kcrisman @jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7655\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @gvol @jasongrout boothby @kcrisman @jhpalmieri\n\nKeywords: labels, folders, notebook, sagenb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7655\n\n",
+    "closed_at": "2020-03-29T15:54:13Z",
     "created_at": "2009-12-11T01:14:14Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "notebook: make it so worksheets can be organized into a tree structure",
+    "title": "notebook: make it so worksheets can be organized into a tree structure (labels, folders)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7655",
     "user": "https://github.com/williamstein"
@@ -18,6 +19,8 @@ archive/issues_007655.json:
 Assignee: @williamstein
 
 CC:  @gvol @jasongrout boothby @kcrisman @jhpalmieri
+
+Keywords: labels, folders, notebook, sagenb
 
 
 

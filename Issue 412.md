@@ -4,9 +4,11 @@ archive/issues_000412.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nHere's a beginning of the huge NTL rewrite which Craig Citro and David Harvey have spent so much time poring over.  All this patch does is fixes some naming conventions to prepare the way for a more piecemeal patching of the rest.  It was getting pretty ugly as a whole.\n\nIssue created by migration from https://trac.sagemath.org/ticket/412\n\n",
+    "closed_at": "2007-08-30T01:24:44Z",
     "created_at": "2007-08-09T02:32:58Z",
     "labels": [
-        "component: interfaces"
+        "component: interfaces",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "Renaming NTL C aliases to make them more futureproof",

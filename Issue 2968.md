@@ -1,15 +1,16 @@
-# Issue 2968: [with patch; needs review] Debian package ntl fixes
+# Issue 2968: [with patch; positive review] Debian package ntl fixes
 
 archive/issues_002968.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached the Debianized version of the SAGE patches against ntl-5.4.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2968\n\n",
+    "closed_at": "2008-04-20T04:39:33Z",
     "created_at": "2008-04-20T04:19:46Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] Debian package ntl fixes",
+    "title": "[with patch; positive review] Debian package ntl fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2968",
     "user": "https://github.com/timabbott"

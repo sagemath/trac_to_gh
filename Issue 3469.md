@@ -4,6 +4,7 @@ archive/issues_003469.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: W = (ZZ^2).span([(1/2,1/2), (0,1)]); W\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   1]\nsage: V = (ZZ^2).span([(1/2,1/2), (0,2)]); V\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   2]\nsage: W(V.gen(0))\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3469\n\n",
+    "closed_at": "2010-01-18T05:00:30Z",
     "created_at": "2008-06-19T07:29:53Z",
     "labels": [
         "component: linear algebra",

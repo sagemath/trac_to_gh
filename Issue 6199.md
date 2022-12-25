@@ -4,6 +4,7 @@ archive/issues_006199.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @robertwb\n\n```\nsage: a = 123\nsage: b = 456\nsage: c = 456r\nsage: timeit(\"a*b\")\n625 loops, best of 3: 312 ns per loop\nsage: timeit(\"a*c\")\n625 loops, best of 3: 2.99 \u00b5s per loop\n```\n\nDitto for +, -. If I understand the code correctly, there always is a coercion to Integer, which could be avoided. I'm not sure how to best fix this since the ring operators are not implemented in the Integer class itself.\n\nFor division and shift, see #6083 and #6118.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6199\n\n",
+    "closed_at": "2010-02-11T14:51:39Z",
     "created_at": "2009-06-03T18:44:59Z",
     "labels": [
         "component: basic arithmetic",

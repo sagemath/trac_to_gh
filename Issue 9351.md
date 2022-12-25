@@ -3,10 +3,11 @@
 archive/issues_009351.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @dandrake drkirkby @qed777\n\nThe prerequisites (given in spkg/standard/deps)  for building the sagetex package are just python, but if you build Sage with SAGE_CHECK=\"yes\", then it tries to run the test suite for sagetex, which requires that all of Sage be installed.  This will fail unless you get lucky and sagetex is installed after Sage. With the new parallel spkg building (#8306), I frequently see sagetex built before Sage.\n\nTo fix this, let's make gap a prerequisite for sagetex.  Since sage is a prerequisite for gap, this should work.  (I don't know if anything in the sagetex test suite uses gap, but it might.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9351\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dandrake drkirkby @qed777\n\nThe prerequisites (given in spkg/standard/deps)  for building the sagetex package are just python, but if you build Sage with SAGE_CHECK=\"yes\", then it tries to run the test suite for sagetex, which requires that all of Sage be installed.  This will fail unless you get lucky and sagetex is installed after Sage. With the new parallel spkg building (#8306), I frequently see sagetex built before Sage.\n\nTo fix this, let's make gap a prerequisite for sagetex.  Since sage is a prerequisite for gap, this should work.  (I don't know if anything in the sagetex test suite uses gap, but it might.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9351\n\n",
+    "closed_at": "2010-07-05T22:34:54Z",
     "created_at": "2010-06-27T16:37:43Z",
     "labels": [
-        "component: algebra",
+        "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -16,7 +17,7 @@ archive/issues_009351.json:
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 CC:  @dandrake drkirkby @qed777
 

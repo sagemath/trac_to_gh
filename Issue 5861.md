@@ -1,16 +1,17 @@
-# Issue 5861: [with patch, needs review] Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken
+# Issue 5861: [with patch, positive review] Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken
 
 archive/issues_005861.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe interfaces \n\n* reduce\n* four_ti_2\n* cocoa\n\nnever worked. The template has also been useless, so get rid of them.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5861\n\n",
+    "closed_at": "2009-04-23T05:44:51Z",
     "created_at": "2009-04-23T04:48:39Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken",
+    "title": "[with patch, positive review] Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5861",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

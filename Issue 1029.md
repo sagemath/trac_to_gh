@@ -1,22 +1,23 @@
-# Issue 1029: update flint in sage again
+# Issue 1029: [with patch, spkg] update flint in sage again to r1047
 
 archive/issues_001029.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nFrom Bill Hart:\n\n```\nHi William,\n\nI've just dug another pile of bugs out of FLINT. All functions in\nfmpz_poly normalise correctly now (or at least they should).\n\nI ran a much more comprehensive set of tests, checking for unusual\ncorner cases. I found a handful of them and removed them.\n\nI've also added a make all to the makefile.\n\nFunctions still may not deal with length zero polynomials correctly\n(though most functions do) and with aliased inputs, so there will\nprobably be more changes over the next few days. But for now, FLINT is\nmuch more bulletproof than it was.\n```\n\nMoreover, the svn revision to get it: 1045\n\nIssue created by migration from https://trac.sagemath.org/ticket/1029\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Bill Hart:\n\n```\nHi William,\n\nI've just dug another pile of bugs out of FLINT. All functions in\nfmpz_poly normalise correctly now (or at least they should).\n\nI ran a much more comprehensive set of tests, checking for unusual\ncorner cases. I found a handful of them and removed them.\n\nI've also added a make all to the makefile.\n\nFunctions still may not deal with length zero polynomials correctly\n(though most functions do) and with aliased inputs, so there will\nprobably be more changes over the next few days. But for now, FLINT is\nmuch more bulletproof than it was.\n```\n\nMoreover, the svn revision to get it: 1045\n\nIssue created by migration from https://trac.sagemath.org/ticket/1029\n\n",
+    "closed_at": "2007-11-18T14:18:44Z",
     "created_at": "2007-10-29T05:39:31Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "update flint in sage again",
+    "title": "[with patch, spkg] update flint in sage again to r1047",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1029",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 From Bill Hart:
 

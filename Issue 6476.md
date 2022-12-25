@@ -1,15 +1,16 @@
-# Issue 6476: upgrade Singular to 3.1.0.4
+# Issue 6476: [with spkg, positive review] upgrade Singular to 3.1.0.4
 
 archive/issues_006476.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  aginiewicz polybori @johnperry-math @williamstein\n\nSee #6470 and #6362 for a bit of history...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6476\n\n",
+    "closed_at": "2009-08-24T04:46:45Z",
     "created_at": "2009-07-07T20:16:38Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "upgrade Singular to 3.1.0.4",
+    "title": "[with spkg, positive review] upgrade Singular to 3.1.0.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6476",
     "user": "https://github.com/rlmill"

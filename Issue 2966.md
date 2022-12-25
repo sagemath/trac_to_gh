@@ -1,16 +1,17 @@
-# Issue 2966: Debian Singular spkg upgrade
+# Issue 2966: [with patch; positive review] Debian Singular spkg upgrade
 
 archive/issues_002966.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nSince many of the SAGE modifications to Singular were fixed in the new upstream, the Debian packaging code needs some patches removed.  Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2966\n\n",
+    "closed_at": "2008-04-20T04:24:34Z",
     "created_at": "2008-04-20T04:05:36Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Debian Singular spkg upgrade",
+    "title": "[with patch; positive review] Debian Singular spkg upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2966",
     "user": "https://github.com/timabbott"

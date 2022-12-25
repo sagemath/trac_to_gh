@@ -1,16 +1,17 @@
-# Issue 2890: [with patch; needs review] html.py --fix up documentation a little and a small bug
+# Issue 2890: [with patch; positive review] html.py --fix up documentation a little and a small bug
 
 archive/issues_002890.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2890\n\n",
+    "closed_at": "2008-04-12T10:51:06Z",
     "created_at": "2008-04-12T03:10:55Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] html.py --fix up documentation a little and a small bug",
+    "title": "[with patch; positive review] html.py --fix up documentation a little and a small bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2890",
     "user": "https://github.com/williamstein"

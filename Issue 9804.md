@@ -3,7 +3,8 @@
 archive/issues_009804.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nTry\n\n```\nsave_session('foo')\n```\nin the notebook.  Boom!\n\nThe problem is these lines in misc/session.pyx:\n\n```\n    if embedded():\n        # Also save D to the data directory if we're using the notebook.\n        save(D, '../../data/' + name)\n```\n\nWhen I rewrote the notebook I forgot to change this appropriately.  I'm not sure exactly what the right fix is, but it is to somehow replace '../../data/' by the data\ndirectory (which is defined by the variable DATA in the notebook).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9805\n\n",
+    "body": "Assignee: jason, was\n\nTry\n\n```\nsave_session('foo')\n```\nin the notebook.  Boom!\n\nThe problem is these lines in misc/session.pyx:\n\n```\n    if embedded():\n        # Also save D to the data directory if we're using the notebook.\n        save(D, '../../data/' + name)\n```\n\nWhen I rewrote the notebook I forgot to change this appropriately.  I'm not sure exactly what the right fix is, but it is to somehow replace '../../data/' by the data\ndirectory (which is defined by the variable DATA in the notebook). \n\n---\nApply [attachment:trac_9805.patch] to devel/sage (it is a workaround)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9805\n\n",
+    "closed_at": "2014-11-14T21:01:43Z",
     "created_at": "2010-08-26T03:09:59Z",
     "labels": [
         "component: notebook",
@@ -34,7 +35,10 @@ The problem is these lines in misc/session.pyx:
 ```
 
 When I rewrote the notebook I forgot to change this appropriately.  I'm not sure exactly what the right fix is, but it is to somehow replace '../../data/' by the data
-directory (which is defined by the variable DATA in the notebook).
+directory (which is defined by the variable DATA in the notebook). 
+
+---
+Apply [attachment:trac_9805.patch] to devel/sage (it is a workaround)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9805
 

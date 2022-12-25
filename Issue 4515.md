@@ -1,16 +1,17 @@
-# Issue 4515: make it so "make check" runs Sage once before running itself, to ensure that sage-location is called, and that sage works
+# Issue 4515: [with patch; positive review] make it so "make check" runs Sage once before running itself, to ensure that sage-location is called, and that sage works
 
 archive/issues_004515.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4515\n\n",
+    "closed_at": "2008-11-15T05:11:16Z",
     "created_at": "2008-11-13T22:52:25Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "make it so \"make check\" runs Sage once before running itself, to ensure that sage-location is called, and that sage works",
+    "title": "[with patch; positive review] make it so \"make check\" runs Sage once before running itself, to ensure that sage-location is called, and that sage works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4515",
     "user": "https://github.com/williamstein"

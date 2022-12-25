@@ -1,22 +1,23 @@
-# Issue 1748: Passing the ipython argument '-wthread' at startup
+# Issue 1748: [with patch, with positive review] Passing the ipython argument '-wthread' at startup
 
 archive/issues_001748.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFrom the thread in gg:sage-devel: Enthought mayavi2 as a library\n\n```\nMy question: Is there a better way to pass the argument \"-wthread\" to ipython?\nAnd than run the real sage.\n\nWhat I do is a kind of cheating: ipython comes back with the prompt\nsage:\n\nSo it looks like sage but it isn't.\n\nJaap\n\n```\n\n\n```\nYes, the issue is really that I explained myself poorly to Jaap.  He's running\n\nimport IPython\nIPython.Shell.IPShellWX().mainloop()\n\nInside an already started Sage session.  But at the exit of that\nmainloop(), ipython will tear down the threading support (absolutely\nnecessary for WX to work without blocking the interactive console).\nThat mainloop is hooked into the WX event loop, so it can't really be\nrestarted.\n\nThe solution is to have Sage start ipython with the wthread option, if\nyou want full Sage support.  As a starter, you can test this. Make a\nlittle file that's simply\n\n#!/path/to/sage/python\nimport IPython\nIPython.Shell.IPShellWX().mainloop()\n\n\nmake it executable, and run it *standalone* in a sage-sh configured\nshell.  This standalone ipython is equivalent to running\n\nipython -wthread\n\nand will simply exit at the end.  If that works and closes without\ncrashing, then someone more familiar than myself with how sage starts\nitself can then offer an option for sage to fire up ipython with\n'-wthread' at startup.  This will ensure that the threads cleanup only\nhappens when sage itself exits, not in the middle of the enclosing\nSage session.\n\nMy originally incomplete explanation led Jaap to have a main event\nloop inside another one.  That's always bad news.\n\nI hope this is now clearer.\n\nCheers,\n\nf\n\n```\n\nThis worked for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1748\n\n",
+    "body": "Assignee: cwitty\n\nFrom the thread in gg:sage-devel: Enthought mayavi2 as a library\n\n```\nMy question: Is there a better way to pass the argument \"-wthread\" to ipython?\nAnd than run the real sage.\n\nWhat I do is a kind of cheating: ipython comes back with the prompt\nsage:\n\nSo it looks like sage but it isn't.\n\nJaap\n\n```\n\n\n```\nYes, the issue is really that I explained myself poorly to Jaap.  He's running\n\nimport IPython\nIPython.Shell.IPShellWX().mainloop()\n\nInside an already started Sage session.  But at the exit of that\nmainloop(), ipython will tear down the threading support (absolutely\nnecessary for WX to work without blocking the interactive console).\nThat mainloop is hooked into the WX event loop, so it can't really be\nrestarted.\n\nThe solution is to have Sage start ipython with the wthread option, if\nyou want full Sage support.  As a starter, you can test this. Make a\nlittle file that's simply\n\n#!/path/to/sage/python\nimport IPython\nIPython.Shell.IPShellWX().mainloop()\n\n\nmake it executable, and run it *standalone* in a sage-sh configured\nshell.  This standalone ipython is equivalent to running\n\nipython -wthread\n\nand will simply exit at the end.  If that works and closes without\ncrashing, then someone more familiar than myself with how sage starts\nitself can then offer an option for sage to fire up ipython with\n'-wthread' at startup.  This will ensure that the threads cleanup only\nhappens when sage itself exits, not in the middle of the enclosing\nSage session.\n\nMy originally incomplete explanation led Jaap to have a main event\nloop inside another one.  That's always bad news.\n\nI hope this is now clearer.\n\nCheers,\n\nf\n\n```\n\nThis worked for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1748\n\n",
+    "closed_at": "2008-03-01T21:29:04Z",
     "created_at": "2008-01-10T15:14:41Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Passing the ipython argument '-wthread' at startup",
+    "title": "[with patch, with positive review] Passing the ipython argument '-wthread' at startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1748",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: @williamstein
+Assignee: cwitty
 
 From the thread in gg:sage-devel: Enthought mayavi2 as a library
 

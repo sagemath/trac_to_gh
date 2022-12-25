@@ -1,22 +1,23 @@
-# Issue 1232: bug in modular symbols over GF(2)
+# Issue 1232: [with patch, with 2 positive reviews] bug in modular symbols over GF(2)
 
 archive/issues_001232.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nRunning\n\n```\nModularSymbols(1,6,0,GF(2)).simple_factors()\n```\n\nresults in\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.AssertionError'>        Traceback (most recent call last)\n\n/home/ghitza/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in simple_factors(self)\n    996         ASSUMPTION: self is a module over the anemic Hecke algebra.\n    997         \"\"\"\n--> 998         return [S for S,_ in self.factorization()]\n    999 \n   1000     def star_eigenvalues(self):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py in factorization(self)\n   1064         D = sage.structure.all.Factorization(D, cr=True)\n   1065         assert r == s, \"bug in factorization --  self has dimension %s, but sum of dimensions of factors is %s\\n%s\"%(\n-> 1066             r, s, D)\n   1067         self._factorization = D\n   1068         return self._factorization\n\n<type 'exceptions.AssertionError'>: bug in factorization --  self has dimension 2, but sum of dimensions of factors is 3\n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2)\n```\n\nOutcome is similar for higher weights, e.g. for weight 100 I get \"self has dimension 33, but sum of dimensions of factors is 65\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1232\n\n",
+    "body": "Assignee: @craigcitro\n\nRunning\n\n```\nModularSymbols(1,6,0,GF(2)).simple_factors()\n```\n\nresults in\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.AssertionError'>        Traceback (most recent call last)\n\n/home/ghitza/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in simple_factors(self)\n    996         ASSUMPTION: self is a module over the anemic Hecke algebra.\n    997         \"\"\"\n--> 998         return [S for S,_ in self.factorization()]\n    999 \n   1000     def star_eigenvalues(self):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py in factorization(self)\n   1064         D = sage.structure.all.Factorization(D, cr=True)\n   1065         assert r == s, \"bug in factorization --  self has dimension %s, but sum of dimensions of factors is %s\\n%s\"%(\n-> 1066             r, s, D)\n   1067         self._factorization = D\n   1068         return self._factorization\n\n<type 'exceptions.AssertionError'>: bug in factorization --  self has dimension 2, but sum of dimensions of factors is 3\n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2)\n```\n\nOutcome is similar for higher weights, e.g. for weight 100 I get \"self has dimension 33, but sum of dimensions of factors is 65\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1232\n\n",
+    "closed_at": "2007-12-15T06:49:14Z",
     "created_at": "2007-11-21T03:49:42Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "bug in modular symbols over GF(2)",
+    "title": "[with patch, with 2 positive reviews] bug in modular symbols over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1232",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 Running
 

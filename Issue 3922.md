@@ -1,16 +1,17 @@
-# Issue 3922: [with patch, needs review] Make nice arrows
+# Issue 3922: [with patch, positive review] Make nice arrows
 
 archive/issues_003922.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWe've been having lots of trouble with arrows looking nice.  In this patch, there is a new matplotlib class that puts an arrow at the end of a line, using the same sort of things they do to put markers on lines.  This way, the arrows:\n\n1. don't depend on the aspect ratio of the plot\n\n2. don't depend on the scale of the plot.\n\nThey always look pretty :).\n\nIt would be nice to eventually upstream this functionality into the matplotlib Line2D class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3922\n\n",
+    "closed_at": "2008-09-04T01:10:51Z",
     "created_at": "2008-08-21T22:41:37Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] Make nice arrows",
+    "title": "[with patch, positive review] Make nice arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3922",
     "user": "https://github.com/jasongrout"

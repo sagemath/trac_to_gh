@@ -1,16 +1,17 @@
-# Issue 2602: plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)
+# Issue 2602: [with patch, positive review] plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)
 
 archive/issues_002602.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee the patch for updated examples.  No new functionality is introduced; the examples are just updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2602\n\n",
+    "closed_at": "2008-03-19T23:40:03Z",
     "created_at": "2008-03-19T19:19:00Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)",
+    "title": "[with patch, positive review] plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2602",
     "user": "https://github.com/jasongrout"

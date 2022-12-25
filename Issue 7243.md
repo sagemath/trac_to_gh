@@ -4,6 +4,7 @@ archive/issues_007243.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @mwhansen\n\nIn the extcode spkg, pari/dokchitser/testall uses bashisms but has a /bin/sh #! line:\n\n#!/bin/sh\necho \"\\\\r ex-bsw\" | sage -gp\necho \"\\\\r ex-chgen\" | sage -gp\n\nWe should change the #! line to\n\n#!/bin/bash\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7243\n\n",
+    "closed_at": "2009-12-19T23:45:35Z",
     "created_at": "2009-10-19T00:09:55Z",
     "labels": [
         "component: porting",

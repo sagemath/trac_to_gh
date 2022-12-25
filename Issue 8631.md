@@ -4,6 +4,7 @@ archive/issues_008631.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nCC:  rkirov @williamstein kevinc\n\nKeywords: graph editor\n\nShould be able to use the graph editor as an input widget for interacts.  \n\nPreliminary proposal on sage-devel:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f5b850969340bc37/\n\nCurrent state of graph editor:  #8222\n\nIssue created by migration from https://trac.sagemath.org/ticket/8631\n\n",
+    "closed_at": "2022-05-11T02:14:43Z",
     "created_at": "2010-03-30T14:54:01Z",
     "labels": [
         "component: interact"

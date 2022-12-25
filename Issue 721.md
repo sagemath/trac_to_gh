@@ -1,15 +1,16 @@
-# Issue 721: refactoring ell_rational_field
+# Issue 721: [with patch] refactoring ell_rational_field
 
 archive/issues_000721.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nell_rational_field is too big.  I therefore propose the following changes.\n\n1.  Create an ell_nf as a common parent for ell_rational_field and ell_number_field.  Factor up as many functions as possible.\n\n2.  Create an Lseries_ell class in sage/schemes/elliptic_curves/lseries_ell.py, and factor out the L-series functions to there (Lseries_dokchitser, Lseries_sympow, Lseries_sympow_derivs, Lseries_zeros, Lseries_zeros_in_interval, Lseries_values_along_line, Lseries_twist_values, Lseries_twist_zeros, Lseries_at1, Lseries_deriv_at1, Lseries, Lseries_extended, L1_vanishes, Lratio, ).\n\n3.  Create a Sha_group class (inheriting from AbelianGroup).  Move the functions (sha_an_numerical, sha_an, sha_an_padic, sha_p_primary_bound, two_selmer_shabound, shabound_kolyvagin, shabound_kato, shabound) to this new class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/721\n\n",
+    "closed_at": "2007-10-13T07:46:08Z",
     "created_at": "2007-09-20T22:32:45Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "refactoring ell_rational_field",
+    "title": "[with patch] refactoring ell_rational_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/721",
     "user": "https://github.com/roed314"

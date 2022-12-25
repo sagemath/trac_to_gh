@@ -1,21 +1,22 @@
-# Issue 5870: Detect blas and atlas libraries for linbox on FreeBSD
+# Issue 5870: [with patch, positive review] Detect blas and atlas libraries for linbox on FreeBSD
 
 archive/issues_005870.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nspkg-install for linbox uses OS-specific code to detect and use the BLAS and Atlas libraries.  Add code to support FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5870\n\n",
+    "body": "Assignee: @mwhansen\n\nspkg-install for linbox uses OS-specific code to detect and use the BLAS and Atlas libraries.  Add code to support FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5870\n\n",
+    "closed_at": "2009-07-02T22:47:41Z",
     "created_at": "2009-04-23T07:12:05Z",
     "labels": [
         "component: porting: bsd"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Detect blas and atlas libraries for linbox on FreeBSD",
+    "title": "[with patch, positive review] Detect blas and atlas libraries for linbox on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5870",
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 spkg-install for linbox uses OS-specific code to detect and use the BLAS and Atlas libraries.  Add code to support FreeBSD.
 

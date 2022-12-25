@@ -1,9 +1,10 @@
-# Issue 3311: dsage.setup() is broken in Sage 3.0.2
+# Issue 3311: [with patch; positive review] dsage.setup() is broken in Sage 3.0.2
 
 archive/issues_003311.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3311\n\n",
+    "body": "Assignee: mabshoff\n\n#3097 broke dsage.setup() since we moved dsage_setup.py and dsage_worker.py into the local/bin repo. For some reason this is neither caught by the Sage doctests now DSage unit tests.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3311\n\n",
+    "closed_at": "2008-05-27T05:42:43Z",
     "created_at": "2008-05-27T02:50:46Z",
     "labels": [
         "component: dsage",
@@ -11,13 +12,15 @@ archive/issues_003311.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "dsage.setup() is broken in Sage 3.0.2",
+    "title": "[with patch; positive review] dsage.setup() is broken in Sage 3.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3311",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
+
+#3097 broke dsage.setup() since we moved dsage_setup.py and dsage_worker.py into the local/bin repo. For some reason this is neither caught by the Sage doctests now DSage unit tests.
 
 
 

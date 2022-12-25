@@ -4,6 +4,7 @@ archive/issues_001806.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFor the upgrade path we need to make sure to rebuild certain python dependent spkgs:\n\n* http://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha4/r-2.6.1.p8.spkg\n* http://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha4/matplotlib-0.91.1.p2.spkg\n* http://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha4/zodb3-3.7.0.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1806\n\n",
+    "closed_at": "2008-01-17T20:17:40Z",
     "created_at": "2008-01-17T20:06:22Z",
     "labels": [
         "component: packages: standard",

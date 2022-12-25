@@ -4,6 +4,7 @@ archive/issues_004167.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  wavetable@gmx.at\n\n[published example of this bug](https://sage.math.washington.edu:8101/home/pub/27/)\n\nPlotting \n\n```\nx=srange(0, 1.1, 0.5)\nw=srange(0, 1.1, 0.5)\nxw = zip(x,w)\nlist_plot(xw, rgbcolor=(0.8, 0.8, 0), pointsize=40)\n```\nproduces blue and brown dots.\n\nPlotting\n\n```\nx=srange(0, 2.1, 0.5)\nw=srange(0, 2.1, 0.5)\nxw = zip(x,w)\nlist_plot(xw, rgbcolor=(0.8, 0.8, 0), pointsize=40)\n```\n\n4 yellow ones.\n\noriginal report:\n\n```\nlist_plot with a list of len == 3 produces 'random' point colors.\nit works with len != 3.\n\ni've created a worksheet on the milnix server, that shows the problem.\nhttp://75.75.6.176/home/pub/17\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4167\n\n",
+    "closed_at": "2008-09-22T22:56:30Z",
     "created_at": "2008-09-22T12:05:05Z",
     "labels": [
         "component: graphics",

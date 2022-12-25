@@ -1,16 +1,17 @@
-# Issue 2037: out-of-date tutorial section on errors and exceptions
+# Issue 2037: [with patch, positive review] out-of-date tutorial section on errors and exceptions
 
 archive/issues_002037.json:
 ```json
 {
     "body": "Assignee: tba\n\nSection 3.5 \"Errors and Exceptions\" in the tutorial appears to be out of date.  The error messages that come up have changed since the section was written, and the debugger is/looks different (ipdb versus Pdb).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2037\n\n",
+    "closed_at": "2008-02-28T00:16:37Z",
     "created_at": "2008-02-03T19:36:03Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "out-of-date tutorial section on errors and exceptions",
+    "title": "[with patch, positive review] out-of-date tutorial section on errors and exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2037",
     "user": "https://github.com/aghitza"

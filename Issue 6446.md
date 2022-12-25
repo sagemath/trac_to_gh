@@ -1,9 +1,10 @@
-# Issue 6446: memory issue from #6394
+# Issue 6446: [with patch,  with positive review] memory issue from #6394
 
 archive/issues_006446.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6446\n\n",
+    "closed_at": "2009-06-29T20:43:05Z",
     "created_at": "2009-06-29T17:29:46Z",
     "labels": [
         "component: memleak",
@@ -11,7 +12,7 @@ archive/issues_006446.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "memory issue from #6394",
+    "title": "[with patch,  with positive review] memory issue from #6394",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6446",
     "user": "https://github.com/rlmill"

@@ -1,16 +1,17 @@
-# Issue 3472: Running sage from a non-existent directory pretends to work
+# Issue 3472: [with proto-patch, positive review] Running sage from a non-existent directory pretends to work
 
 archive/issues_003472.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nRunning sage from a directory that doesn't exist thinks it's working, but really just fails. I'm attaching a new `$SAGE_ROOT/sage` replacement that checks this on startup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3472\n\n",
+    "closed_at": "2008-06-27T00:14:23Z",
     "created_at": "2008-06-19T21:13:49Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "Running sage from a non-existent directory pretends to work",
+    "title": "[with proto-patch, positive review] Running sage from a non-existent directory pretends to work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3472",
     "user": "https://github.com/craigcitro"

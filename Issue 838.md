@@ -4,6 +4,7 @@ archive/issues_000838.json:
 ```json
 {
     "body": "Assignee: failure\n\nCC:  @garyfurnish\n\nOn my machine, every file that gets doctested takes 0.8s for initializing SAGE (before it even gets to running the tests).  It would be nice if this overhead could be eliminated somehow; and I think it might be possible, by having a single process do the SAGE initialization, then fork() before doctesting a particular file.  (This sort of architecture might also make it easier to implement #639.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/838\n\n",
+    "closed_at": "2013-02-08T13:55:52Z",
     "created_at": "2007-10-07T17:03:12Z",
     "labels": [
         "component: doctest coverage"

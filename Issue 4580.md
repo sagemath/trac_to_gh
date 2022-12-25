@@ -1,16 +1,17 @@
-# Issue 4580: [with patch, needs review] move mpfr declarations to a pxd
+# Issue 4580: [with patch, positive review] move mpfr declarations to a pxd
 
 archive/issues_004580.json:
 ```json
 {
     "body": "Assignee: somebody\n\nfor consistency and in preparation for further cython optimizations\n\nIssue created by migration from https://trac.sagemath.org/ticket/4580\n\n",
+    "closed_at": "2008-11-25T02:42:52Z",
     "created_at": "2008-11-22T01:36:22Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] move mpfr declarations to a pxd",
+    "title": "[with patch, positive review] move mpfr declarations to a pxd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4580",
     "user": "https://github.com/robertwb"

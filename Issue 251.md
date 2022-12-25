@@ -4,6 +4,7 @@ archive/issues_000251.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUser can execute collections of cells at once in a worksheet. The cells are grouped by their dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/251\n\n",
+    "closed_at": "2008-03-18T10:05:04Z",
     "created_at": "2007-02-08T15:25:24Z",
     "labels": [
         "component: notebook",

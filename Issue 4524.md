@@ -1,22 +1,23 @@
-# Issue 4524: interact : incomplete default string in the input box
+# Issue 4524: [with patch, positive review] interact : incomplete default string in the input box
 
 archive/issues_004524.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nKeywords: input_box\n\nUsing interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.\nThe folowing example works well \n\n```\n@interact\ndef _(a=input_box(default='interact is \"cool\"',type=str,label='Name:')):\n    print a\n```\n\nand it puts *interact is \"cool\"* in the input box. But in the next one, \n\n```\n@interact\ndef _(a=input_box(default=\"interact is 'cool'\",type=str,label='Name:')):\n    print a\n```\n\nthe default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !\n\nIssue created by migration from https://trac.sagemath.org/ticket/4524\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: input_box\n\nUsing interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.\nThe folowing example works well \n\n```\n@interact\ndef _(a=input_box(default='interact is \"cool\"',type=str,label='Name:')):\n    print a\n```\n\nand it puts *interact is \"cool\"* in the input box. But in the next one, \n\n```\n@interact\ndef _(a=input_box(default=\"interact is 'cool'\",type=str,label='Name:')):\n    print a\n```\n\nthe default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !\n\nIssue created by migration from https://trac.sagemath.org/ticket/4524\n\n",
+    "closed_at": "2009-01-24T18:42:10Z",
     "created_at": "2008-11-14T17:04:23Z",
     "labels": [
         "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "interact : incomplete default string in the input box",
+    "title": "[with patch, positive review] interact : incomplete default string in the input box",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4524",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @itolkov
+Assignee: @mwhansen
 
 Keywords: input_box
 

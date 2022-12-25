@@ -1,16 +1,17 @@
-# Issue 6573: fix docstring from #5651
+# Issue 6573: [with patch, positive review] fix docstring from #5651
 
 archive/issues_006573.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  wcauchois @loefflerd\n\nThat rebased patch at #5651 contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in sage/plot/bar_chart.py:\n\n```\n131\t    Extra options will get passed on to show(), as long as they are valid:\n```\nIn sage/plot/bezier_path.py:\n\n```\n171\t    Extra options will get passed on to show(), as long as they are valid:\n```\nIn sage/plot/matrix_plot.py:\n\n```\n58\t    Extra options will get passed on to show(), as long as they are valid:\n62\t    Extra options will get passed on to show(), as long as they are valid:\n```\nIn sage/plot/polygon.py:\n\n```\n255\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6573\n\n",
+    "body": "Assignee: tba\n\nCC:  wcauchois @loefflerd\n\nThat rebased patch at #5651 contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in sage/plot/bar_chart.py:\n\n```\n131    Extra options will get passed on to show(), as long as they are valid:\n```\nIn sage/plot/bezier_path.py:\n\n```\n171    Extra options will get passed on to show(), as long as they are valid:\n```\nIn sage/plot/matrix_plot.py:\n\n```\n58    Extra options will get passed on to show(), as long as they are valid:\n62    Extra options will get passed on to show(), as long as they are valid:\n```\nIn sage/plot/polygon.py:\n\n```\n255    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6573\n\n",
+    "closed_at": "2009-07-23T05:09:57Z",
     "created_at": "2009-07-20T20:55:23Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "fix docstring from #5651",
+    "title": "[with patch, positive review] fix docstring from #5651",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6573",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -23,23 +24,23 @@ CC:  wcauchois @loefflerd
 That rebased patch at #5651 contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in sage/plot/bar_chart.py:
 
 ```
-131	    Extra options will get passed on to show(), as long as they are valid:
+131    Extra options will get passed on to show(), as long as they are valid:
 ```
 In sage/plot/bezier_path.py:
 
 ```
-171	    Extra options will get passed on to show(), as long as they are valid:
+171    Extra options will get passed on to show(), as long as they are valid:
 ```
 In sage/plot/matrix_plot.py:
 
 ```
-58	    Extra options will get passed on to show(), as long as they are valid:
-62	    Extra options will get passed on to show(), as long as they are valid:
+58    Extra options will get passed on to show(), as long as they are valid:
+62    Extra options will get passed on to show(), as long as they are valid:
 ```
 In sage/plot/polygon.py:
 
 ```
-255	    Extra options will get passed on to show(), as long as they are valid:
+255    Extra options will get passed on to show(), as long as they are valid:
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6573

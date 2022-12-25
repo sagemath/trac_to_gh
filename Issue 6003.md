@@ -4,6 +4,7 @@ archive/issues_006003.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nCC:  @ncalexan\n\nThese are enhancements to #5554, which have been split off here.  Numbering is the same.  See #5554 for more details\n\n2.  Make a positive-definite check the default, with a keyword to turn it off.\n\n3.  Minor improvements to the docstrings.\n\n4.  Warnings about accuracy for generic algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6003\n\n",
+    "closed_at": "2012-09-05T09:39:38Z",
     "created_at": "2009-05-07T19:07:39Z",
     "labels": [
         "component: linear algebra",

@@ -1,22 +1,23 @@
-# Issue 2030: hg_[doc|extcode|scripts] docstring is wrong about the repo
+# Issue 2030: [with patch, positive review] hg_[doc|extcode|scripts] docstring is wrong about the repo
 
 archive/issues_002030.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\n[05:58] <mabshoff> The docstring for hg_scripts also seems to be wrong, i.e.\n[05:58] <mabshoff>         Most commands are directly provided as member functions.  However,\n[05:58] <mabshoff>         you can use the full functionality of hg, i.e.,\n[05:58] <mabshoff>                 hg_sage(\"command line arguments\")\n[05:58] <mabshoff>         is *exactly* the same as typing\n[05:58] <mabshoff>                 cd <SAGE_ROOT>/devel/sage/ && hg command line arguments\n[05:59] <mabshoff> Same for hg_extcode and hg_doc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2030\n\n",
+    "body": "Assignee: @mwhansen\n\n```\n[05:58] <mabshoff> The docstring for hg_scripts also seems to be wrong, i.e.\n[05:58] <mabshoff>         Most commands are directly provided as member functions.  However,\n[05:58] <mabshoff>         you can use the full functionality of hg, i.e.,\n[05:58] <mabshoff>                 hg_sage(\"command line arguments\")\n[05:58] <mabshoff>         is *exactly* the same as typing\n[05:58] <mabshoff>                 cd <SAGE_ROOT>/devel/sage/ && hg command line arguments\n[05:59] <mabshoff> Same for hg_extcode and hg_doc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2030\n\n",
+    "closed_at": "2008-12-08T11:20:30Z",
     "created_at": "2008-02-02T05:17:15Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "hg_[doc|extcode|scripts] docstring is wrong about the repo",
+    "title": "[with patch, positive review] hg_[doc|extcode|scripts] docstring is wrong about the repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2030",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 ```
 [05:58] <mabshoff> The docstring for hg_scripts also seems to be wrong, i.e.

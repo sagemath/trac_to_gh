@@ -3,11 +3,11 @@
 archive/issues_009129.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb @malb @craigcitro @koffie @williamstein @burcin jpflori\n\ncf http://groups.google.com/group/sage-support/browse_thread/thread/8c18b2b91004c35a#:\n\n```\nsage: m = get_memory_usage()\nsage: while True:\n    a = ZZ(randint(2^400,2^800)).sqrt()\n    print get_memory_usage(m)\n```\nI noticed another sqrt-related memory leak:\n\n```\nsage: cat leak.sage\nfor i in range(10^6):\n   Mod(2^32+1,3).sqrt()\n   if i % 10000 == 0:\n      print i, get_memory_usage()\nsage: load leak.sage\n0 947.37109375\n10000 970.4375\n20000 993.8671875\n30000 1017.25\n40000 1040.734375\n50000 1064.19921875\n...\n```\nThis leaks about 23Mb per 10^^4 loops, thus about 2.3Kb per loop!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9129\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb @malb @craigcitro @koffie @williamstein @burcin jpflori\n\nKeywords: sd35.5\n\ncf http://groups.google.com/group/sage-support/browse_thread/thread/8c18b2b91004c35a#\n\n```\nm = get_memory_usage()\ni=0\nwhile True:\n    i+=1\n    a = 2.sqrt()\n    if i%1000==0:\n        print get_memory_usage(m)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9129\n\n",
+    "closed_at": "2014-04-13T19:33:30Z",
     "created_at": "2010-06-03T13:00:22Z",
     "labels": [
         "component: basic arithmetic",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
@@ -21,32 +21,19 @@ Assignee: @aghitza
 
 CC:  @robertwb @malb @craigcitro @koffie @williamstein @burcin jpflori
 
-cf http://groups.google.com/group/sage-support/browse_thread/thread/8c18b2b91004c35a#:
+Keywords: sd35.5
+
+cf http://groups.google.com/group/sage-support/browse_thread/thread/8c18b2b91004c35a#
 
 ```
-sage: m = get_memory_usage()
-sage: while True:
-    a = ZZ(randint(2^400,2^800)).sqrt()
-    print get_memory_usage(m)
+m = get_memory_usage()
+i=0
+while True:
+    i+=1
+    a = 2.sqrt()
+    if i%1000==0:
+        print get_memory_usage(m)
 ```
-I noticed another sqrt-related memory leak:
-
-```
-sage: cat leak.sage
-for i in range(10^6):
-   Mod(2^32+1,3).sqrt()
-   if i % 10000 == 0:
-      print i, get_memory_usage()
-sage: load leak.sage
-0 947.37109375
-10000 970.4375
-20000 993.8671875
-30000 1017.25
-40000 1040.734375
-50000 1064.19921875
-...
-```
-This leaks about 23Mb per 10^^4 loops, thus about 2.3Kb per loop!
 
 Issue created by migration from https://trac.sagemath.org/ticket/9129
 

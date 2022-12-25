@@ -1,15 +1,16 @@
-# Issue 8733: clean up documentation of c_graph.pyx
+# Issue 8733: documentation and stylistic clean-ups of c_graph.pyx
 
 archive/issues_008733.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nAs the subject says. The goal here is to make the documentation of the module `c_graph.pyx` consistent and also to better document the module itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8733\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nAs the subject says. The goal here is to make the documentation of the module `c_graph.pyx` consistent and also to better document the module itself. The coding style of the whole module is inconsistent. Clean that up as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8733\n\n",
+    "closed_at": "2010-04-29T05:40:02Z",
     "created_at": "2010-04-21T04:57:50Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "clean up documentation of c_graph.pyx",
+    "title": "documentation and stylistic clean-ups of c_graph.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8733",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -17,7 +18,7 @@ archive/issues_008733.json:
 ```
 Assignee: jason, ncohen, rlm
 
-As the subject says. The goal here is to make the documentation of the module `c_graph.pyx` consistent and also to better document the module itself.
+As the subject says. The goal here is to make the documentation of the module `c_graph.pyx` consistent and also to better document the module itself. The coding style of the whole module is inconsistent. Clean that up as well.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8733
 

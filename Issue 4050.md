@@ -4,6 +4,7 @@ archive/issues_004050.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCopying a shared worksheet makes a copy for the owner, not the copier, and the copy is unshared.  This is a big problem for my use in classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4050\n\n",
+    "closed_at": "2008-09-04T02:02:50Z",
     "created_at": "2008-09-03T18:33:27Z",
     "labels": [
         "component: notebook",

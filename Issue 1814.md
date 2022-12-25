@@ -1,16 +1,17 @@
-# Issue 1814: [with patch] doctstrings for stream_cipher.py
+# Issue 1814: [with patch, with positive review] doctstrings for stream_cipher.py
 
 archive/issues_001814.json:
 ```json
 {
     "body": "Assignee: tba\n\nsee patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/1814\n\n",
+    "closed_at": "2008-01-21T23:56:44Z",
     "created_at": "2008-01-17T23:06:53Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] doctstrings for stream_cipher.py",
+    "title": "[with patch, with positive review] doctstrings for stream_cipher.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1814",
     "user": "https://github.com/malb"

@@ -4,6 +4,7 @@ archive/issues_007854.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis functions uses LP and has a big overhead because of that... Is many cases, though, the graph is not connected, or not 2-connected.\n\nTo test if a graph is connected, we already have the function is_connected which does the job very efficiently through depth-first-searches.\n\nWe also have a function is_strongly_connected for DiGraphs.\n\nTo test if a Graph is 2-connected, we can first :\n*  compute a strongly_connected_orientation with a linear-time function\n*  check whether the returned graph is strongly-connected ( linear time too )\n\nWithout this, much time is spent over building a useless Linear Program.\n\nNathann\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7854\n\n",
+    "closed_at": "2010-03-03T14:18:55Z",
     "created_at": "2010-01-06T12:27:35Z",
     "labels": [
         "component: graph theory",

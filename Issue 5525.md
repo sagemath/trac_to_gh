@@ -1,16 +1,17 @@
-# Issue 5525: fix bug in intersection of ZZ-modules
+# Issue 5525: [with patch, positive review] fix bug in intersection of ZZ-modules
 
 archive/issues_005525.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nsage: A = (QQ^1).span([[1/3]],ZZ); A\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\nsage: B = (QQ^1).span([[1]],ZZ); B\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1]\nsage: A.intersection(B)\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5525\n\n",
+    "closed_at": "2009-03-31T08:45:39Z",
     "created_at": "2009-03-15T07:37:43Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "fix bug in intersection of ZZ-modules",
+    "title": "[with patch, positive review] fix bug in intersection of ZZ-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5525",
     "user": "https://github.com/williamstein"

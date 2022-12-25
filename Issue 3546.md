@@ -3,7 +3,7 @@
 archive/issues_003546.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @slel\n\n```\nsage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])\n```\n\nWhen rendered with jmol, the lines produced are curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3546\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel\n\nDefine a pentagon in three dimensions.\n\n```\nsage: pts = [[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]]\nsage: p = line3d(pts)\nsage: q = polygon3d(pts, color='teal', opacity=0.25)\nsage: pq = p + q\n```\nWith Three.js, the `line3d` renders\npolygonally as the outline of the pentagon.\n\n```\nsage: pq.show(viewer='threejs')\nLaunched jmol viewer for Graphics3d Object\n```\nWith Jmol, the `line3d` renders curved,\nin the shape of a shield.\n\n```\nsage: pq.show(viewer='jmol')\nLaunched jmol viewer for Graphics3d Object\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3546\n\n",
     "created_at": "2008-07-03T21:27:23Z",
     "labels": [
         "component: graphics",
@@ -21,11 +21,29 @@ Assignee: @williamstein
 
 CC:  @slel
 
+Define a pentagon in three dimensions.
+
 ```
-sage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])
+sage: pts = [[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]]
+sage: p = line3d(pts)
+sage: q = polygon3d(pts, color='teal', opacity=0.25)
+sage: pq = p + q
+```
+With Three.js, the `line3d` renders
+polygonally as the outline of the pentagon.
+
+```
+sage: pq.show(viewer='threejs')
+Launched jmol viewer for Graphics3d Object
+```
+With Jmol, the `line3d` renders curved,
+in the shape of a shield.
+
+```
+sage: pq.show(viewer='jmol')
+Launched jmol viewer for Graphics3d Object
 ```
 
-When rendered with jmol, the lines produced are curves.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3546
 

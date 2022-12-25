@@ -3,7 +3,8 @@
 archive/issues_007576.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThis patch makes several improvements to the prove_BSD function:\n\n- better handling of when the Heegner index is computed\n- speeds up several cases and makes some other cases possible\n\nIssue created by migration from https://trac.sagemath.org/ticket/7576\n\n",
+    "body": "Assignee: @JohnCremona\n\nThis patch makes several improvements to the prove_BSD function:\n\n- better handling of when the Heegner index is computed\n\n- speeds up several cases and makes some other cases possible\n\n- uses results from Dimitar Jetchev's thesis when applying the Kolyvagin bound\n\nIssue created by migration from https://trac.sagemath.org/ticket/7576\n\n",
+    "closed_at": "2010-01-19T05:58:52Z",
     "created_at": "2009-12-01T22:03:36Z",
     "labels": [
         "component: elliptic curves"
@@ -20,7 +21,10 @@ Assignee: @JohnCremona
 This patch makes several improvements to the prove_BSD function:
 
 - better handling of when the Heegner index is computed
+
 - speeds up several cases and makes some other cases possible
+
+- uses results from Dimitar Jetchev's thesis when applying the Kolyvagin bound
 
 Issue created by migration from https://trac.sagemath.org/ticket/7576
 

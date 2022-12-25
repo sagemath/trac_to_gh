@@ -1,16 +1,17 @@
-# Issue 5822: cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's "Arithmetic on Modular Curves"
+# Issue 5822: [with patch; with positive review] cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's "Arithmetic on Modular Curves"
 
 archive/issues_005822.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb @craigcitro\n\nIt would be very useful if for a congruence subgroup G and an integer d coprime to the level N of G, one could compute the action on cusps (modulo G) of `tau_d \\in Gal(Q(zeta_N)/Q)`.   This action is described on page 12 of Steven's \"Arithmetic on Modular Curves\". \n\nNote that Sage does not have a data type for \"equivalence classes of cusps\" yet, and the action is only well defined on equivalence classes.  However, one easy thing to implement (hopefully) is a function so that if G is a congruence subgroup, then we have\n\n```\nsage: G.galois_action_on_cusps(d, alpha)\n```\nwhich returns a cusp beta that is in the class of tau_d([alpha]).\n\nLater when there is a data structure for equivalence classes of cusps, and also one for these Galois groups (as abstract groups), then that will call the above function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5822\n\n",
+    "closed_at": "2009-04-23T07:19:10Z",
     "created_at": "2009-04-19T03:54:35Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's \"Arithmetic on Modular Curves\"",
+    "title": "[with patch; with positive review] cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's \"Arithmetic on Modular Curves\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5822",
     "user": "https://github.com/williamstein"

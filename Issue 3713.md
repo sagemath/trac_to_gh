@@ -3,10 +3,11 @@
 archive/issues_003713.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3713\n\n",
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3713\n\n",
+    "closed_at": "2009-08-12T16:32:08Z",
     "created_at": "2008-07-23T14:09:09Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_003713.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: boothby
 
 
 

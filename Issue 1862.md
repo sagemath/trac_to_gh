@@ -1,16 +1,17 @@
-# Issue 1862: implement at least some sort of useful rudimentary implicit 2d plotting function
+# Issue 1862: [with patch, positive review] implement at least some sort of useful rudimentary implicit 2d plotting function
 
 archive/issues_001862.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  harald.schilly@gmail.com\n\n```\n{{{\nOn Jan 19, 2008 12:44 AM, Dagda <> wrote:\n> \n> Hi,\n> I was wondering if there was a way to plot relations implicitly, in 2D\n> and/or 3D. A simple example would be to plot a circle with something\n> like the following:\n> \n> plot_implicit(x^2+y^2=1)\n\nHere's how do this sort of thing using contour_plot in sage right now.\n(Note -- for efficiency reasons, you definitely want to only plot a Python\nfunction -- i.e., lambda -- at present.  This will change soon.)\n\nFirst, define this function in Sage:\n\ndef implicit_plot(f, x_range, y_range, plot_points=100):\n      return contour_plot(f, x_range, y_range, fill=False, contours=1, plot_points=plot_points)\n\nThen use it:\n\nsage: implicit_plot(lambda x,y: x^2 + y^2 - 1, (-2,2), (-2,2))\nsage: implicit_plot(lambda x,y: x^3 + x*y^2 - 1, (-2,2), (-2,2))\nsage: implicit_plot(lambda x,y: (x-y^2)*(y-x^3), (-2,2), (-2,2))\n\nThe input should be a function f of two variables, and implicit_plot as I've\ndefined it above graphs f(x,y) == 0 in the given region.\n\nThis could be turned into a first version of a genuine implicit plot at some point. \n\nJosh Kantor is also looking into some other more sophisticated related\napproaches.    It would be good to understand precisely how Sage's\ncontour_plot function works (it builds mostly on matplotlib's functions)....\n\nWilliam\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/1862\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  harald.schilly@gmail.com\n\n```\nOn Jan 19, 2008 12:44 AM, Dagda <> wrote:\n> \n> Hi,\n> I was wondering if there was a way to plot relations implicitly, in 2D\n> and/or 3D. A simple example would be to plot a circle with something\n> like the following:\n> \n> plot_implicit(x^2+y^2=1)\n\nHere's how do this sort of thing using contour_plot in sage right now.\n(Note -- for efficiency reasons, you definitely want to only plot a Python\nfunction -- i.e., lambda -- at present.  This will change soon.)\n\nFirst, define this function in Sage:\n\ndef implicit_plot(f, x_range, y_range, plot_points=100):\n      return contour_plot(f, x_range, y_range, fill=False, contours=1, plot_points=plot_points)\n\nThen use it:\n\nsage: implicit_plot(lambda x,y: x^2 + y^2 - 1, (-2,2), (-2,2))\nsage: implicit_plot(lambda x,y: x^3 + x*y^2 - 1, (-2,2), (-2,2))\nsage: implicit_plot(lambda x,y: (x-y^2)*(y-x^3), (-2,2), (-2,2))\n\nThe input should be a function f of two variables, and implicit_plot as I've\ndefined it above graphs f(x,y) == 0 in the given region.\n\nThis could be turned into a first version of a genuine implicit plot at some point. \n\nJosh Kantor is also looking into some other more sophisticated related\napproaches.    It would be good to understand precisely how Sage's\ncontour_plot function works (it builds mostly on matplotlib's functions)....\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1862\n\n",
+    "closed_at": "2008-03-16T02:53:05Z",
     "created_at": "2008-01-20T07:52:09Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "implement at least some sort of useful rudimentary implicit 2d plotting function",
+    "title": "[with patch, positive review] implement at least some sort of useful rudimentary implicit 2d plotting function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1862",
     "user": "https://github.com/williamstein"
@@ -21,7 +22,6 @@ Assignee: @williamstein
 CC:  harald.schilly@gmail.com
 
 ```
-{{{
 On Jan 19, 2008 12:44 AM, Dagda <> wrote:
 > 
 > Hi,
@@ -56,7 +56,7 @@ approaches.    It would be good to understand precisely how Sage's
 contour_plot function works (it builds mostly on matplotlib's functions)....
 
 William
-}}}
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/1862
 

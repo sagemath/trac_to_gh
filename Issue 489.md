@@ -3,7 +3,8 @@
 archive/issues_000489.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNow, that LiE ( http://www-math.univ-poitiers.fr/~maavl/LiE/ ) is officially GPL, we can include it in SAGE.  Things to do:\n\n1) Write an interface to the LiE interpreter.\n\n2) Begin making a C/Pyrex wrapper.  (I've looked at the code, and it looks like it'll be pretty clean.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/489\n\n",
+    "body": "Assignee: @mwhansen\n\nNow, that LiE ( http://www-math.univ-poitiers.fr/~maavl/LiE/ ) is officially GPL, we can include it in SAGE.  Things to do:\n\n1) Write an interface to the LiE interpreter.\n\n2) Begin making a C/Pyrex wrapper.  (I've looked at the code, and it looks like it'll be pretty clean.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/489\n\n",
+    "closed_at": "2007-08-29T01:59:40Z",
     "created_at": "2007-08-24T16:06:44Z",
     "labels": [
         "component: interfaces"
@@ -15,7 +16,7 @@ archive/issues_000489.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Now, that LiE ( http://www-math.univ-poitiers.fr/~maavl/LiE/ ) is officially GPL, we can include it in SAGE.  Things to do:
 

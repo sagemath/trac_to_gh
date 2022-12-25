@@ -3,7 +3,8 @@
 archive/issues_000039.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n      sage: R.<x,y> = PolynomialRing(ZZ, 2)\n        sage: S = R/(x^2 + y^2); S\n        sage: S.<a,b> = R/(x^2 + y^2)\n        sage: a^2 + b^2 == 0\n    << -- *should* be true or give an error -- will require macaulay2... >>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/39\n\n",
+    "body": "Assignee: somebody\n\n```      \nsage: R.<x,y> = PolynomialRing(ZZ, 2)\n        sage: S = R/(x^2 + y^2); S\n        sage: S.<a,b> = R/(x^2 + y^2)\n        sage: a^2 + b^2 == 0\n    << -- *should* be true or give an error -- will require macaulay2... >>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/39\n\n",
+    "closed_at": "2007-01-19T09:22:19Z",
     "created_at": "2006-09-12T23:31:09Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,13 +19,14 @@ archive/issues_000039.json:
 ```
 Assignee: somebody
 
-```
-      sage: R.<x,y> = PolynomialRing(ZZ, 2)
+```      
+sage: R.<x,y> = PolynomialRing(ZZ, 2)
         sage: S = R/(x^2 + y^2); S
         sage: S.<a,b> = R/(x^2 + y^2)
         sage: a^2 + b^2 == 0
     << -- *should* be true or give an error -- will require macaulay2... >>
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/39
 

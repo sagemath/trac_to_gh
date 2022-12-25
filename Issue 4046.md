@@ -1,15 +1,16 @@
-# Issue 4046: add support for Google's new browser to the notebook
+# Issue 4046: [with patch, positive review] add support for Google's new browser to the notebook
 
 archive/issues_004046.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt renders fine (rendering is done by WebKit) but the keyboard input doesn't work completely (since it is a new JS engine I suppose).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4046\n\n",
+    "closed_at": "2009-09-25T08:43:51Z",
     "created_at": "2008-09-03T15:50:53Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "add support for Google's new browser to the notebook",
+    "title": "[with patch, positive review] add support for Google's new browser to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4046",
     "user": "https://github.com/malb"

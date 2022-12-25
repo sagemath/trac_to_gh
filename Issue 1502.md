@@ -1,22 +1,23 @@
-# Issue 1502: calculus -- bug in argument ordering for formal functions
+# Issue 1502: [with patch, with positive review] calculus -- bug in argument ordering for formal functions
 
 archive/issues_001502.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is wrong:\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\nIt should be\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\nNote that this works:\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
+    "body": "Assignee: @mwhansen\n\nThis is wrong:\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\nIt should be\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\nNote that this works:\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
+    "closed_at": "2007-12-15T12:20:20Z",
     "created_at": "2007-12-14T05:41:19Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "calculus -- bug in argument ordering for formal functions",
+    "title": "[with patch, with positive review] calculus -- bug in argument ordering for formal functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1502",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 This is wrong:
 

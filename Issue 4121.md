@@ -1,16 +1,17 @@
-# Issue 4121: [with patch, needs review] correct the translation for automorphism groups of graphs with edge labels
+# Issue 4121: [with patch, positive review] correct the translation for automorphism groups of graphs with edge labels
 
 archive/issues_004121.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4121\n\n",
+    "closed_at": "2008-09-15T01:54:26Z",
     "created_at": "2008-09-14T23:32:27Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] correct the translation for automorphism groups of graphs with edge labels",
+    "title": "[with patch, positive review] correct the translation for automorphism groups of graphs with edge labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4121",
     "user": "https://github.com/rlmill"

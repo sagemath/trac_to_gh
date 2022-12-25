@@ -1,16 +1,17 @@
-# Issue 5914: default edge color is *invisible*
+# Issue 5914: [with patch, positive review] default edge color is *invisible*
 
 archive/issues_005914.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nIf you do\n\nsage: G = graphs.CompleteGraph(5)\nsage: G.show(edge_colors={'red':(0,1)})\n\nwhat you get is one red edge...\n\nThe default color should be black.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5914\n\n",
+    "body": "Assignee: @rlmill\n\nIf you do\n\n```\nsage: G = graphs.CompleteGraph(5)\nsage: G.show(edge_colors={'red':(0,1)})\n```\n\nwhat you get is one red edge...\n\nThe default color should be black.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5914\n\n",
+    "closed_at": "2009-04-30T02:40:15Z",
     "created_at": "2009-04-27T19:06:21Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "default edge color is *invisible*",
+    "title": "[with patch, positive review] default edge color is *invisible*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5914",
     "user": "https://github.com/rlmill"
@@ -20,8 +21,10 @@ Assignee: @rlmill
 
 If you do
 
+```
 sage: G = graphs.CompleteGraph(5)
 sage: G.show(edge_colors={'red':(0,1)})
+```
 
 what you get is one red edge...
 

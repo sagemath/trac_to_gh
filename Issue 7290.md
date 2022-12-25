@@ -3,10 +3,10 @@
 archive/issues_007290.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  r.gaia.cs\n\nThis is a basic functionality of Linear Program which has to be implemented in Sage. This function could use the functions defined in libraries such as GLPK or CBC.\n\nhttp://en.wikipedia.org/wiki/Linear_programming\n\nIssue created by migration from https://trac.sagemath.org/ticket/7290\n\n",
+    "body": "Assignee: jkantor\n\nCC:  r.gaia.cs\n\nKeywords: lp\n\nThis is a basic functionality of Linear Program which has to be implemented in Sage. This function could use the functions defined in libraries such as GLPK or CBC.\n\nhttp://en.wikipedia.org/wiki/Linear_programming\n\nUpdate:\n\nThis old ticket is somewhat vague. Some clarification.\n- For simplex-based solvers, there should be facilities for extracting dual information from the optimal dictionary. Some backends already provide functions like `get_row_dual` (GLPK); #18804 provides a way to expose this information in a more high-level way.\n- For simplex-based solvers, there should be a way to explicitly request using the primal or the dual simplex method. For GLPK, this is possible using solver parameter \"primal_v_dual\". Other solvers support this too, but I don't think the Sage backends expose it. Ideally, there should be a backend-independent way to request a particular method.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7290\n\n",
     "created_at": "2009-10-25T09:19:31Z",
     "labels": [
-        "component: numerical"
+        "component: linear programming"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.2",
     "title": "Dual method for linear programs",
@@ -19,9 +19,18 @@ Assignee: jkantor
 
 CC:  r.gaia.cs
 
+Keywords: lp
+
 This is a basic functionality of Linear Program which has to be implemented in Sage. This function could use the functions defined in libraries such as GLPK or CBC.
 
 http://en.wikipedia.org/wiki/Linear_programming
+
+Update:
+
+This old ticket is somewhat vague. Some clarification.
+- For simplex-based solvers, there should be facilities for extracting dual information from the optimal dictionary. Some backends already provide functions like `get_row_dual` (GLPK); #18804 provides a way to expose this information in a more high-level way.
+- For simplex-based solvers, there should be a way to explicitly request using the primal or the dual simplex method. For GLPK, this is possible using solver parameter "primal_v_dual". Other solvers support this too, but I don't think the Sage backends expose it. Ideally, there should be a backend-independent way to request a particular method.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7290
 

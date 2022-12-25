@@ -1,15 +1,16 @@
-# Issue 4837: implement random_element for number fields
+# Issue 4837: [with patch, with positive review] implement random_element for number fields
 
 archive/issues_004837.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nKeywords: random element number field\n\nAt the moment, if K is a number field then K.random_element() uses a generic implementation that simply returns a random *integer* coerced into K.  It would be useful to have a real implementation that returns an actual random element of K.\n\nA simple idea would be to find a primitive element j that generates K as a field extension over QQ, and to return a random polynomial of degree at most [K:QQ].  This should be easy since random polynomials in one variable are already implemented.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4837\n\n",
+    "closed_at": "2009-01-12T01:20:53Z",
     "created_at": "2008-12-20T15:37:20Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "implement random_element for number fields",
+    "title": "[with patch, with positive review] implement random_element for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4837",
     "user": "https://github.com/aghitza"

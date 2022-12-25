@@ -4,6 +4,7 @@ archive/issues_000777.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @mwhansen\n\nKeywords: sign\n\nShould the following function exist globally?\n\n```\ndef sign(x):\n    if x > 0:\n        return 1\n    if x < 0:\n        return -1\n    return 0\n```\nI'm not sure if this is identical to\n\n```\ndef sign(x):\n    return x.__cmp__(0)\n```\nI'm also ambivalent as to whether this function is called \"sign\", \"signum\", or \"sgn\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/777\n\n",
+    "closed_at": "2009-11-10T16:17:40Z",
     "created_at": "2007-10-02T00:40:40Z",
     "labels": [
         "component: basic arithmetic",

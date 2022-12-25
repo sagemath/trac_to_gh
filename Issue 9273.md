@@ -3,7 +3,8 @@
 archive/issues_009273.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill @williamstein @jhpalmieri\n\n#9127 was supposed to fix this, but it seems the fix is not complete. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.4.alpha1\n\n\n == The error ==\n\n```\nsage -t  -long devel/sage/sage/calculus/riemann.pyx\n         [712.7 s]\n\n-------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # File not found\n-------------------------------------------------------------\nTotal time for all tests: 33947.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9273\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill @williamstein @jhpalmieri\n\nKeywords: ecc2011\n\n#9127 was supposed to fix this, but it seems the fix is not complete. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n* SEAGATE-ST3146807FC 2 Gbit/s 15,000 rpm fiber channel disk (FCAL)\n* UFS (not ZFS) local file system.\n\n == Sage version ==\n* 4.4.4.alpha1\n\n\n == The error ==\n\n```\nsage -t  -long devel/sage/sage/calculus/riemann.pyx\n         [712.7 s]\n\n-------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # File not found\n-------------------------------------------------------------\nTotal time for all tests: 33947.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9273\n\n",
+    "closed_at": "2013-03-07T08:17:35Z",
     "created_at": "2010-06-19T16:01:10Z",
     "labels": [
         "component: elliptic curves",
@@ -20,6 +21,8 @@ Assignee: @JohnCremona
 
 CC:  @robertwb @rlmill @williamstein @jhpalmieri
 
+Keywords: ecc2011
+
 #9127 was supposed to fix this, but it seems the fix is not complete. 
 
 ## Hardware & associated software
@@ -29,6 +32,8 @@ CC:  @robertwb @rlmill @williamstein @jhpalmieri
 * 2 GB RAM
 * Solaris 10 03/2005 (first release of Solaris 10)
 * gcc 4.4.3 (uses Sun linker and assembler)
+* SEAGATE-ST3146807FC 2 Gbit/s 15,000 rpm fiber channel disk (FCAL)
+* UFS (not ZFS) local file system.
 
  == Sage version ==
 * 4.4.4.alpha1

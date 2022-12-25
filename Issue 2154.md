@@ -1,9 +1,10 @@
-# Issue 2154: Infinite memory allocation bug in PermutationGroupElement
+# Issue 2154: [with patch, positive review] Infinite memory allocation bug in PermutationGroupElement
 
 archive/issues_002154.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nRun the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)\n\n```\nPermutationGroup(2)\nPermutationGroupElement([1,1],S,check=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2154\n\n",
+    "body": "Assignee: @robertwb\n\nRun the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)\n\n```\nPermutationGroup(2)\nPermutationGroupElement([1,1],S,check=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2154\n\n",
+    "closed_at": "2008-02-26T01:44:57Z",
     "created_at": "2008-02-14T01:09:40Z",
     "labels": [
         "component: group theory",
@@ -11,13 +12,13 @@ archive/issues_002154.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Infinite memory allocation bug in PermutationGroupElement",
+    "title": "[with patch, positive review] Infinite memory allocation bug in PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2154",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: joyner
+Assignee: @robertwb
 
 Run the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)
 

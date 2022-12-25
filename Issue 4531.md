@@ -1,9 +1,10 @@
-# Issue 4531: Sage 3.2.rc1: automorphism_group() doctest failure on 32 bit in sage/combinat/species/library.py
+# Issue 4531: [with patch, positive review] Sage 3.2.rc1: automorphism_group() doctest failure on 32 bit in sage/combinat/species/library.py
 
 archive/issues_004531.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\n```\nsage -t  devel/sage/sage/combinat/species/library.py \n********************************************************************** \nFile \"/home/john/sage-3.2.rc1/devel/sage/sage/combinat/species/library.py\", \nline 86: \n    sage: a.automorphism_group() \nExpected: \n    Permutation Group with generators [(), ()] \nGot: \n    Permutation Group with generators [()] \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4531\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage -t  devel/sage/sage/combinat/species/library.py \n********************************************************************** \nFile \"/home/john/sage-3.2.rc1/devel/sage/sage/combinat/species/library.py\", \nline 86: \n    sage: a.automorphism_group() \nExpected: \n    Permutation Group with generators [(), ()] \nGot: \n    Permutation Group with generators [()] \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4531\n\n",
+    "closed_at": "2008-11-18T19:40:44Z",
     "created_at": "2008-11-15T20:13:32Z",
     "labels": [
         "component: combinatorics",
@@ -11,13 +12,13 @@ archive/issues_004531.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Sage 3.2.rc1: automorphism_group() doctest failure on 32 bit in sage/combinat/species/library.py",
+    "title": "[with patch, positive review] Sage 3.2.rc1: automorphism_group() doctest failure on 32 bit in sage/combinat/species/library.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4531",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @mwhansen
+Assignee: @williamstein
 
 ```
 sage -t  devel/sage/sage/combinat/species/library.py 

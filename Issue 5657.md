@@ -1,16 +1,17 @@
-# Issue 5657: [with patch; needs review] fix two trivial typos
+# Issue 5657: [with patch; positive review] fix two trivial typos
 
 archive/issues_005657.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nWhen answering a sage-support question I noticed two typos in docstrings.  Fixed in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5657\n\n",
+    "closed_at": "2009-04-03T00:48:16Z",
     "created_at": "2009-04-01T12:55:14Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] fix two trivial typos",
+    "title": "[with patch; positive review] fix two trivial typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5657",
     "user": "https://github.com/williamstein"

@@ -3,10 +3,11 @@
 archive/issues_000715.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  jpflori @zimmermann6 @vbraun @robertwb @nbruin @malb @orlitzky\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/715\n\n",
+    "body": "Assignee: somebody\n\nCC:  jpflori @zimmermann6 @vbraun @robertwb @nbruin @malb @orlitzky\n\nKeywords: weak cache coercion Cernay2012\n\nHere is a small example illustrating the issue.\n\nThe memory footprint of the following piece of code grows indefinitely.\n\n```\nsage: K = GF(1<<55,'t') \nsage: a = K.random_element() \nsage: while 1: \n....: \u00a0 \u00a0 E = EllipticCurve(j=a); P = E.random_point(); 2*P; del E, P;\n\n```\nE and P get deleted, but when 2*P is computed, the action of integers on A, the abelian group of rational points of the ellitpic curve, gets cached in the corecion model.\n\nA key-value pair is left in coercion_model._action_maps dict:\n\n(ZZ,A,*) : IntegerMulAction\n\nMoreover there is at least also references to A in the IntegerMulAction and one in ZZ._action_hash.\n\nSo weak refs should be used in all these places if it does not slow things too much.\n\n**To be merged with #11521**. Apply:\n\n* [attachment:715_all.patch]\n\nand **then** the patches from #11521.\n\nIssue created by migration from https://trac.sagemath.org/ticket/715\n\n",
+    "closed_at": "2012-11-04T08:37:09Z",
     "created_at": "2007-09-20T19:11:58Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
@@ -20,7 +21,34 @@ Assignee: somebody
 
 CC:  jpflori @zimmermann6 @vbraun @robertwb @nbruin @malb @orlitzky
 
+Keywords: weak cache coercion Cernay2012
 
+Here is a small example illustrating the issue.
+
+The memory footprint of the following piece of code grows indefinitely.
+
+```
+sage: K = GF(1<<55,'t') 
+sage: a = K.random_element() 
+sage: while 1: 
+....:     E = EllipticCurve(j=a); P = E.random_point(); 2*P; del E, P;
+
+```
+E and P get deleted, but when 2*P is computed, the action of integers on A, the abelian group of rational points of the ellitpic curve, gets cached in the corecion model.
+
+A key-value pair is left in coercion_model._action_maps dict:
+
+(ZZ,A,*) : IntegerMulAction
+
+Moreover there is at least also references to A in the IntegerMulAction and one in ZZ._action_hash.
+
+So weak refs should be used in all these places if it does not slow things too much.
+
+**To be merged with #11521**. Apply:
+
+* [attachment:715_all.patch]
+
+and **then** the patches from #11521.
 
 Issue created by migration from https://trac.sagemath.org/ticket/715
 

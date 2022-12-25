@@ -1,21 +1,22 @@
-# Issue 5411: QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor
+# Issue 5411: [with patch, positive review] QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor
 
 archive/issues_005411.json:
 ```json
 {
-    "body": "Assignee: gonzalo\n\nThe `hasse_invariant` of a quadratic form doesn't match the standard invariant (brauer class) for quaternion algebras (e.g. for ternary quadratic forms, the ramification of the corresponding quaternion algebra).\n\nThe `clifford_invariant` can defined in terms of the clifford algebra of the quadratic form. See Lam (AMS GSM 67) p. 117 for the definition, and p. 119 for the formula relating it to the Hasse invariant.\n\nIt also has the property that hyperbolic spaces have `clifford_invariant == +1` at all primes.\n\nIt also makes more sense to define a `clifford_conductor` instead of a `hasse_conductor` as the product of all the primes with `clifford_invariant == -1`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5411\n\n",
+    "body": "Assignee: @tornaria\n\nThe `hasse_invariant` of a quadratic form doesn't match the standard invariant (brauer class) for quaternion algebras (e.g. for ternary quadratic forms, the ramification of the corresponding quaternion algebra).\n\nThe `clifford_invariant` can defined in terms of the clifford algebra of the quadratic form. See Lam (AMS GSM 67) p. 117 for the definition, and p. 119 for the formula relating it to the Hasse invariant.\n\nIt also has the property that hyperbolic spaces have `clifford_invariant == +1` at all primes.\n\nIt also makes more sense to define a `clifford_conductor` instead of a `hasse_conductor` as the product of all the primes with `clifford_invariant == -1`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5411\n\n",
+    "closed_at": "2009-03-02T06:37:17Z",
     "created_at": "2009-03-01T15:30:07Z",
     "labels": [
         "component: quadratic forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor",
+    "title": "[with patch, positive review] QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5411",
     "user": "https://github.com/tornaria"
 }
 ```
-Assignee: gonzalo
+Assignee: @tornaria
 
 The `hasse_invariant` of a quadratic form doesn't match the standard invariant (brauer class) for quaternion algebras (e.g. for ternary quadratic forms, the ramification of the corresponding quaternion algebra).
 

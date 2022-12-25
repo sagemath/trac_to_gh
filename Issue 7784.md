@@ -1,15 +1,18 @@
-# Issue 7784: sagenb -- either include setup.cfg if it is human-written or put it in the .hgignore file
+# Issue 7784: Add Makefile, update MANIFEST.in, .hgignore, and spkg-related files
 
 archive/issues_007784.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik\n\nObserve in sagenb-0.4.8:\n\n```\nflat:src wstein$ hg status\nM setup.py\n? release_notes.txt\n? setup.cfg\nflat:src wstein$ more setup.cfg\n[egg_info]\ntag_build =\ntag_date = 0\ntag_svn_revision = 0\n```\n\n\nThis makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7784\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik\n\nBuild-related cleanup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7784\n\n",
+    "closed_at": "2010-02-03T02:17:07Z",
     "created_at": "2009-12-29T08:26:16Z",
     "labels": [
-        "component: notebook"
+        "component: notebook",
+        "critical",
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "sagenb -- either include setup.cfg if it is human-written or put it in the .hgignore file",
+    "title": "Add Makefile, update MANIFEST.in, .hgignore, and spkg-related files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7784",
     "user": "https://github.com/williamstein"
@@ -19,22 +22,7 @@ Assignee: @williamstein
 
 CC:  mvngu @robert-marik
 
-Observe in sagenb-0.4.8:
-
-```
-flat:src wstein$ hg status
-M setup.py
-? release_notes.txt
-? setup.cfg
-flat:src wstein$ more setup.cfg
-[egg_info]
-tag_build =
-tag_date = 0
-tag_svn_revision = 0
-```
-
-
-This makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html
+Build-related cleanup.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7784
 

@@ -4,6 +4,7 @@ archive/issues_004649.json:
 ```json
 {
     "body": "Assignee: boothby\n\nImplement matrix multiplication in generic sparse matrices.  Need not be brilliant, just better than dense multiplication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4649\n\n",
+    "closed_at": "2008-11-29T01:05:57Z",
     "created_at": "2008-11-29T00:59:19Z",
     "labels": [
         "component: linear algebra",

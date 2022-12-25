@@ -1,16 +1,17 @@
-# Issue 2878: notebook -- cython .c and .html links should open in new links (use target="_new"
+# Issue 2878: [with patch; positive review] notebook -- cython .c and .html links should open in new links (use target="_new"
 
 archive/issues_002878.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nDo this, because otherwise user (1) clicks html or c link, then (2) sees the html or c, then (3) presses browser back button, then (4) PANICS! since all their work is gone (actually they can get it back by pressing refresh).  This is VERY confusing, and I've had users ask about it multiple times recently. \n\nAlternatively, is there a way so that when a user navigates to a worksheet page via the back button, the page is automatically refreshed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2878\n\n",
+    "body": "Assignee: boothby\n\nDo this, because otherwise user (1) clicks html or c link, then (2) sees the html or c, then (3) presses browser back button, then (4) PANICS! since all their work is gone (actually they can get it back by pressing refresh).  This is VERY confusing, and I've had users ask about it multiple times recently. \n\nAlternatively, is there a way so that when a user navigates to a worksheet page via the back button, the page is automatically refreshed?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2878\n\n",
+    "closed_at": "2008-04-12T10:49:19Z",
     "created_at": "2008-04-11T16:01:48Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- cython .c and .html links should open in new links (use target=\"_new\"",
+    "title": "[with patch; positive review] notebook -- cython .c and .html links should open in new links (use target=\"_new\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2878",
     "user": "https://github.com/williamstein"
@@ -20,7 +21,7 @@ Assignee: boothby
 
 Do this, because otherwise user (1) clicks html or c link, then (2) sees the html or c, then (3) presses browser back button, then (4) PANICS! since all their work is gone (actually they can get it back by pressing refresh).  This is VERY confusing, and I've had users ask about it multiple times recently. 
 
-Alternatively, is there a way so that when a user navigates to a worksheet page via the back button, the page is automatically refreshed.
+Alternatively, is there a way so that when a user navigates to a worksheet page via the back button, the page is automatically refreshed?
 
 Issue created by migration from https://trac.sagemath.org/ticket/2878
 

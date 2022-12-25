@@ -3,10 +3,11 @@
 archive/issues_005825.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\nI just ran into the following:\n\n```\n<SNIP>\n**********************************************************************\n* Unable to download clisp-2.47\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/Users/mabshoff/sage-3.3.rc3/spkg/build\nbunzip2: Can't open input file clisp-2.47.spkg: No such file or directory.\ntar: clisp-2.47.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg \n/home/mabshoff/clisp-2.47.spkg: bzip2 compressed data, block size = 900k\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .\ncp: ./clisp-2.47.spkg: Permission denied\n```\n\nNote that I do not have write permissions in the local directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5825\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\nFix `sage-spkg` to give a useful error message if `SAGE_PACKAGES` or `SAGE_BUILD_DIR` or `SAGE_LOCAL` isn't writable, while still allowing `sage --info` to work without write access.\n\n**Apply** [attachment:5825_install_perm.patch] to `SAGE_ROOT`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5825\n\n",
+    "closed_at": "2013-05-24T09:39:47Z",
     "created_at": "2009-04-20T01:07:19Z",
     "labels": [
-        "component: packages: standard",
+        "component: scripts",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
@@ -20,27 +21,9 @@ Assignee: mabshoff
 
 CC:  @jhpalmieri
 
-I just ran into the following:
+Fix `sage-spkg` to give a useful error message if `SAGE_PACKAGES` or `SAGE_BUILD_DIR` or `SAGE_LOCAL` isn't writable, while still allowing `sage --info` to work without write access.
 
-```
-<SNIP>
-**********************************************************************
-* Unable to download clisp-2.47
-* Please see http://www.sagemath.org//packages for a list of valid
-* packages or check the package name.
-**********************************************************************
-/Users/mabshoff/sage-3.3.rc3/spkg/build
-bunzip2: Can't open input file clisp-2.47.spkg: No such file or directory.
-tar: clisp-2.47.spkg: Cannot open: No such file or directory
-tar: Error is not recoverable: exiting now
-Second download resulted in a corrupted package.
-varro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg 
-/home/mabshoff/clisp-2.47.spkg: bzip2 compressed data, block size = 900k
-varro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .
-cp: ./clisp-2.47.spkg: Permission denied
-```
-
-Note that I do not have write permissions in the local directory.
+**Apply** [attachment:5825_install_perm.patch] to `SAGE_ROOT`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5825
 

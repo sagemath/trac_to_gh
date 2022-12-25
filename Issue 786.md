@@ -1,16 +1,17 @@
-# Issue 786: standard smith normal form
+# Issue 786: [with patch] standard smith normal form
 
 archive/issues_000786.json:
 ```json
 {
     "body": "Assignee: @syazdani77\n\nKeywords: smith_form\n\nThe smith_form function for integer dense matrices are printed backward from the usual notation. This is because pari prints them backward.\n\nThe enclosed patch fixes this problem, by permuting the entries appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/786\n\n",
+    "closed_at": "2007-10-04T18:57:02Z",
     "created_at": "2007-10-02T13:38:17Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "standard smith normal form",
+    "title": "[with patch] standard smith normal form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/786",
     "user": "https://github.com/syazdani77"

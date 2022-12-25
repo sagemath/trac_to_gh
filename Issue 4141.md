@@ -4,6 +4,7 @@ archive/issues_004141.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nWhen building sage 3.1.2 without hiding fink,\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4141\n\n",
+    "closed_at": "2011-04-26T09:08:36Z",
     "created_at": "2008-09-18T00:39:25Z",
     "labels": [
         "component: distribution",

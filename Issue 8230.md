@@ -1,16 +1,17 @@
-# Issue 8230: strange behaviour
+# Issue 8230: Strange behaviour in addition from not recursively preparsing loaded files
 
 archive/issues_008230.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nHi, I found the following strange behaviour of the addition\n<int> + 1/2. I have a file `MurphyE.sage` which contains:\n\n```\nload E.sage\n\nfoo(2)\n```\nwhere `E.sage` contains:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n```\nThen I get:\n\n```\nsage: load MurphyE.sage\n0 0 <type 'int'> <type 'int'>\n1 1 <type 'int'> <type 'int'>\n```\nNow if instead I replace `load E.sage` in my file by the\ncontent of the procedure `foo`, i.e.:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n\nfoo(2)\n```\nthen I get:\n\n```\nsage: load MurphyE.sage\n0 1/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n1 3/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n```\nwhich is the expected behaviour. Please can someone explain to me\nthe first result? I forgot to say it is with Sage 4.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8230\n\n",
+    "closed_at": "2010-08-15T18:01:15Z",
     "created_at": "2010-02-10T15:17:22Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "strange behaviour",
+    "title": "Strange behaviour in addition from not recursively preparsing loaded files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8230",
     "user": "https://github.com/zimmermann6"

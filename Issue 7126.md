@@ -1,16 +1,18 @@
-# Issue 7126: Doc sidebar broken by Sphinx 0.6.3 JS compression
+# Issue 7126: [with patch, positive review] Doc sidebar broken by Sphinx 0.6.3 JS compression
 
 archive/issues_007126.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe doc sidebar provided by #6507 is broken by the JS compression applied by Sphinx 0.6.3 (#6586). This patch changes line comments to block comments, and adds some missing semicolons.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7126\n\n",
+    "closed_at": "2009-10-16T04:52:02Z",
     "created_at": "2009-10-05T19:02:35Z",
     "labels": [
         "component: documentation",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Doc sidebar broken by Sphinx 0.6.3 JS compression",
+    "title": "[with patch, positive review] Doc sidebar broken by Sphinx 0.6.3 JS compression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7126",
     "user": "https://github.com/TimDumol"

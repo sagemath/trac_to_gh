@@ -1,4 +1,4 @@
-# Issue 6105: [with patch, need review] Additions and changes in Group Algebras
+# Issue 6105: [with patch, needs work] Additions and changes in Group Algebras
 
 archive/issues_006105.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_006105.json:
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch, need review] Additions and changes in Group Algebras",
+    "title": "[with patch, needs work] Additions and changes in Group Algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6105",
     "user": "https://trac.sagemath.org/admin/accounts/users/jlefebvre"

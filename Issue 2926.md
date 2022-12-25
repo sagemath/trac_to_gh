@@ -1,15 +1,16 @@
-# Issue 2926: Minilistic change password page for notebook user
+# Issue 2926: [with patch; positive review] notebook -- Minimalistic change password page for notebook user
 
 archive/issues_002926.json:
 ```json
 {
     "body": "Assignee: TimothyClemans\n\n* Write resource \"passwd\" with inspiration from RegistrationPage\n* Add resource \"passwd\" to UserTopLevel\n* Add link to \"change password\" in the list entries in the function _html_body in notebook.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/2926\n\n",
+    "closed_at": "2008-05-11T10:47:42Z",
     "created_at": "2008-04-15T03:46:38Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Minilistic change password page for notebook user",
+    "title": "[with patch; positive review] notebook -- Minimalistic change password page for notebook user",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2926",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

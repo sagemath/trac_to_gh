@@ -4,6 +4,7 @@ archive/issues_007973.json:
 ```json
 {
     "body": "Assignee: mvngu\n\n\"Producing patches with Mercurial\" is overly informative and thus hides the basic info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7973\n\n",
+    "closed_at": "2010-01-19T00:40:09Z",
     "created_at": "2010-01-18T07:06:59Z",
     "labels": [
         "component: documentation",

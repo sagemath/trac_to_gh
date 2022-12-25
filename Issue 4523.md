@@ -1,16 +1,17 @@
-# Issue 4523: browser cache not cleared when restarting the worksheet
+# Issue 4523: [with patch, positive review] browser cache not cleared when restarting the worksheet
 
 archive/issues_004523.json:
 ```json
 {
     "body": "Assignee: boothby\n\nFrom an email on sage-devel:\n\nThe problem is not in your code.  I think the problem is in your browser caching the image.  When Sage creates the image, it gives it the same name.  Your browser thinks that it is the same image as before, so it doesn't bother to update the image.  If you refresh the page after you first see the wrong image, you'll see the right image appear.\n\nYou'll see the same problem if you have two cells:\n\n`f(x) = x^2`\n\nand \n\n`plot(f, (x, 1, 2))`\n\n\n1. Evaluate the two cells, so you get a plot\n2. Restart the worksheet\n3. Change the function\n4. Evaluate the two cells again.  Notice you get the same plot.\n5. Hit Refresh in the browser.  Now the plot updates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4523\n\n",
+    "closed_at": "2009-01-23T02:34:25Z",
     "created_at": "2008-11-14T16:28:31Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "browser cache not cleared when restarting the worksheet",
+    "title": "[with patch, positive review] browser cache not cleared when restarting the worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4523",
     "user": "https://github.com/jasongrout"

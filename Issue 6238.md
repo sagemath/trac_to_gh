@@ -4,6 +4,7 @@ archive/issues_006238.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  rlm ekirkman\n\n```\nsage: pari('v'), pari('w')\n(v, w)\nsage: w = QQ['w'].0\nsage: v = QQ['w']['v'].0\nsage: f = v^3 - (w^7 + w + 1)\n\nsage: rts = list(set(f.discriminant().roots(QQbar, multiplicities=False)))\nsage: rts = map(CDF, rts)\nsage: xs = map(real_part, rts)\nsage: ys = map(imag_part, rts)\n\nsage: import delaunay\nsage: DT = delaunay.Triangulation(xs, ys)\nsage: G = Graph(DT.node_graph())\nsage: G.set_pos(dict(enumerate(zip(xs, ys))))\nsage: G.is_planar(set_embedding=True, set_pos=False)\nTrue\nsage: G.get_embedding()\n{0: [2, 3, 6],\n 1: [5, 4, 2],\n 2: [6, 1, 4, 5, 3, 0],\n 3: [0, 2, 5],\n 4: [2, 1],\n 5: [3, 2, 1],\n 6: [0, 2]}\n```\n\nThe first face does not have vertices in clockwise order.  At least, not for me :)  Hard to see without show-ing the graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6238\n\n",
+    "closed_at": "2009-07-13T21:32:00Z",
     "created_at": "2009-06-06T23:37:56Z",
     "labels": [
         "component: graph theory",

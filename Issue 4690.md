@@ -1,9 +1,10 @@
-# Issue 4690: [with patch; needs review] Sage hangs on derivative of piecewise function
+# Issue 4690: [with patch; positive review] Sage hangs on derivative of piecewise function
 
 archive/issues_004690.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nDerivatives of piecewise functions where some piece uses multiplication causes Sage to hang. Example code:\n\n```\nPiecewise([[(0,1), x * 2]]).derivative()\n```\n\nIt hangs waiting for Maxima to return a result, which is because the expression it sends to Maxima is not formatted properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4690\n\n",
+    "closed_at": "2008-12-04T14:13:06Z",
     "created_at": "2008-12-04T01:22:32Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_004690.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch; needs review] Sage hangs on derivative of piecewise function",
+    "title": "[with patch; positive review] Sage hangs on derivative of piecewise function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4690",
     "user": "https://trac.sagemath.org/admin/accounts/users/pbutler"

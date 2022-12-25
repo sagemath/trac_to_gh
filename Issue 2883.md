@@ -1,9 +1,10 @@
-# Issue 2883: notebook -- typing in safari is sluggish!
+# Issue 2883: [with patch, positive review] notebook -- typing in safari is sluggish!
 
 archive/issues_002883.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTyping in the current version of the notebook in Safari is significantly slower than typing on an Apple IIe running Windows Vista.  Fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2883\n\n",
+    "closed_at": "2008-04-13T02:03:06Z",
     "created_at": "2008-04-11T23:30:44Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002883.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- typing in safari is sluggish!",
+    "title": "[with patch, positive review] notebook -- typing in safari is sluggish!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2883",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

@@ -3,7 +3,8 @@
 archive/issues_008196.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n```\nsage: a=mod(3,15)\nsage: a.is_square?\n...\n            ALGORITHM: Calculate the Jacobi symbol\n            `(mathtt{self}/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(mathtt{self})` must be even or greater than\n```\nClearly the math formulae are not displayed correctly in tty mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8196\n\n",
+    "body": "Assignee: mvngu\n\n```\nsage: a=mod(3,15)\nsage: a.is_square?\n...\n            ALGORITHM: Calculate the Jacobi symbol\n            `(mathtt{self}/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(mathtt{self})` must be even or greater than\n```\nClearly the math formulae are not displayed correctly in tty mode.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8196\n\n",
+    "closed_at": "2010-02-07T22:43:44Z",
     "created_at": "2010-02-05T20:14:00Z",
     "labels": [
         "component: documentation",
@@ -29,6 +30,8 @@ sage: a.is_square?
             `ord_p(mathtt{self})` must be even or greater than
 ```
 Clearly the math formulae are not displayed correctly in tty mode.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8196
 

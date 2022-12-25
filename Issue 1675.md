@@ -4,6 +4,7 @@ archive/issues_001675.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe attached patch fixes a memleak in pAdicCappedRelativeElement._set_from_Rational\n\nIssue created by migration from https://trac.sagemath.org/ticket/1675\n\n",
+    "closed_at": "2008-01-03T22:20:51Z",
     "created_at": "2008-01-03T21:28:48Z",
     "labels": [
         "component: memleak",

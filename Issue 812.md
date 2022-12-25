@@ -3,7 +3,8 @@
 archive/issues_000812.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd @roed314 @craigcitro @categorie\n\nKeywords: p-adic L-functions\n\nI'm just starting to work on implementing Pollack & Stevens' methods for using overconvergent modular symbols for p-adic L-functions, Stark-Heegner points, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/812\n\n",
+    "body": "Assignee: @mmasdeu\n\nCC:  @loefflerd @roed314 @craigcitro @categorie\n\nKeywords: p-adic L-functions\n\nI'm just starting to work on implementing Pollack & Stevens' methods for using overconvergent modular symbols for p-adic L-functions, Stark-Heegner points, etc. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/812\n\n",
+    "closed_at": "2016-07-01T16:57:15Z",
     "created_at": "2007-10-03T18:12:33Z",
     "labels": [
         "component: modular forms"
@@ -15,13 +16,14 @@ archive/issues_000812.json:
     "user": "https://github.com/craigcitro"
 }
 ```
-Assignee: @craigcitro
+Assignee: @mmasdeu
 
 CC:  @loefflerd @roed314 @craigcitro @categorie
 
 Keywords: p-adic L-functions
 
-I'm just starting to work on implementing Pollack & Stevens' methods for using overconvergent modular symbols for p-adic L-functions, Stark-Heegner points, etc.
+I'm just starting to work on implementing Pollack & Stevens' methods for using overconvergent modular symbols for p-adic L-functions, Stark-Heegner points, etc. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/812
 

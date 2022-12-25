@@ -1,17 +1,18 @@
-# Issue 3898: Make an optional, self contained gcc 4.3.1.spkg
+# Issue 3898: [with spkg, needs work] Make an optional, self contained gcc 4.3.4 spkg
 
 archive/issues_003898.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAs the title says. Make sure to first build static versions of gmp and mpfr to link against those instead of the Sage ones.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3898\n\n",
+    "body": "Assignee: mabshoff\n\nThis spkg requires a working Sage to build and is Linux only for now.\n\nSee #12369 instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3898\n\n",
+    "closed_at": "2012-03-21T11:33:03Z",
     "created_at": "2008-08-19T17:17:37Z",
     "labels": [
         "component: packages: standard",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Make an optional, self contained gcc 4.3.1.spkg",
+    "title": "[with spkg, needs work] Make an optional, self contained gcc 4.3.4 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3898",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,11 +20,9 @@ archive/issues_003898.json:
 ```
 Assignee: mabshoff
 
-As the title says. Make sure to first build static versions of gmp and mpfr to link against those instead of the Sage ones.
+This spkg requires a working Sage to build and is Linux only for now.
 
-Cheers,
-
-Michael
+See #12369 instead.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3898
 

@@ -1,16 +1,17 @@
-# Issue 3496: charpoly for 0 dimensional matrices is broken/wrong most places
+# Issue 3496: [with patch, positive review] charpoly for 0 dimensional matrices is broken for cyclotomic matrices
 
 archive/issues_003496.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  alexghitza\n\nThis should be fixed over all kinds of rings -- it's supposed to be `0` everywhere. It's currently either broken (e.g. over `CyclotomicField`s) or wrong (e.g. it's `1` over `QQ`) in lots of places.\n\nI'll do this soon if no one beats me to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3496\n\n",
+    "closed_at": "2008-10-28T12:18:43Z",
     "created_at": "2008-06-23T19:14:46Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "charpoly for 0 dimensional matrices is broken/wrong most places",
+    "title": "[with patch, positive review] charpoly for 0 dimensional matrices is broken for cyclotomic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3496",
     "user": "https://github.com/craigcitro"

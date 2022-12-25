@@ -1,26 +1,27 @@
-# Issue 5968: increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
+# Issue 5968: [with patch; with positive review] increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
 
 archive/issues_005968.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5968\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona\n\nNote: In doctesting this file, I noticed that the `__cmp__` method was defined in a dumb way, so I fixed that, which required changing a few docstrings in other files (that's what's in the second patch).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5968\n\n",
+    "closed_at": "2009-05-16T01:02:34Z",
     "created_at": "2009-05-03T03:18:16Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%",
+    "title": "[with patch; with positive review] increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5968",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 CC:  @JohnCremona
 
-
+Note: In doctesting this file, I noticed that the `__cmp__` method was defined in a dumb way, so I fixed that, which required changing a few docstrings in other files (that's what's in the second patch).  
 
 Issue created by migration from https://trac.sagemath.org/ticket/5968
 

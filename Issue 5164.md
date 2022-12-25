@@ -1,9 +1,10 @@
-# Issue 5164: NTL.spkg: Set SHAREDFALGS to -fnocommon on Darwin
+# Issue 5164: [with spkg, positive review] NTL.spkg: Set SHAREDFALGS to -fnocommon on Darwin
 
 archive/issues_005164.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIn #5161 I removed some global SHAREDFLAGS setting from sage-env. NTL on Darwin needs -fnocommon to work around some linker stupidity.\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5164\n\n",
+    "closed_at": "2009-02-03T19:55:03Z",
     "created_at": "2009-02-03T05:00:34Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_005164.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "NTL.spkg: Set SHAREDFALGS to -fnocommon on Darwin",
+    "title": "[with spkg, positive review] NTL.spkg: Set SHAREDFALGS to -fnocommon on Darwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5164",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

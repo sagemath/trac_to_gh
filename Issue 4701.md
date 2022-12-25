@@ -1,16 +1,17 @@
-# Issue 4701: magma/sage interface -- coercion for single variable polynomials broken in some cases
+# Issue 4701: [with patch, with positive review] magma/sage interface -- coercion for single variable polynomials broken in some cases
 
 archive/issues_004701.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFix this:\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: magma(x)\nboom\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4701\n\n",
+    "closed_at": "2008-12-07T09:15:46Z",
     "created_at": "2008-12-05T00:32:30Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "magma/sage interface -- coercion for single variable polynomials broken in some cases",
+    "title": "[with patch, with positive review] magma/sage interface -- coercion for single variable polynomials broken in some cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4701",
     "user": "https://github.com/williamstein"

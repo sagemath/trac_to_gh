@@ -1,15 +1,16 @@
-# Issue 2756: [with patch; needs review] Debianize GAP spkg
+# Issue 2756: [with patch; positive review] Debianize GAP spkg
 
 archive/issues_002756.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've attached a patch to add Debian build support to the GAP spkg (it only builds the Guava GAP package).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2756\n\n",
+    "closed_at": "2008-04-01T23:06:58Z",
     "created_at": "2008-04-01T18:41:37Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] Debianize GAP spkg",
+    "title": "[with patch; positive review] Debianize GAP spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2756",
     "user": "https://github.com/timabbott"

@@ -3,7 +3,8 @@
 archive/issues_002071.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: var('x')\nx\nsage: x.conjugate()\nx\n```\n\nUnder the assumption that x might be complex, this should really return conjugate(x).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2071\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\nsage: var('x')\nx\nsage: x.conjugate()\nx\n```\n\nUnder the assumption that x might be complex, this should really return conjugate(x).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2071\n\n",
+    "closed_at": "2009-05-26T16:17:23Z",
     "created_at": "2008-02-06T06:37:57Z",
     "labels": [
         "component: calculus",
@@ -16,7 +17,7 @@ archive/issues_002071.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 ```
 sage: var('x')

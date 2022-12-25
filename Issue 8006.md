@@ -4,6 +4,7 @@ archive/issues_008006.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol @fchapoton\n\nSee #6729\n\nThis fails silently\n\n```\nCELL 1:\n u = 2\n  u = 3\nCELL 2:\nprint u # = 2\n```\n\nThis should fail with an `IdentationError`, as it does in `%python`:\n\n```\nCELL 1:\n u = 2\n  u = 3\n# generates IdentationError\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8006\n\n",
+    "closed_at": "2020-08-29T15:27:35Z",
     "created_at": "2010-01-20T01:52:43Z",
     "labels": [
         "component: notebook",

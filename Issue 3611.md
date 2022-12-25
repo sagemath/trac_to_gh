@@ -1,9 +1,10 @@
-# Issue 3611: sympow: make it use $CC instead of cc
+# Issue 3611: [with spkg, positive review] sympow: make it use $CC instead of cc
 
 archive/issues_003611.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMake sympow default to $CC[=gcc] instead of cc since that can cause trouble by picking up another compiler\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3611\n\n",
+    "closed_at": "2008-07-29T15:33:11Z",
     "created_at": "2008-07-08T17:42:57Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003611.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "sympow: make it use $CC instead of cc",
+    "title": "[with spkg, positive review] sympow: make it use $CC instead of cc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3611",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

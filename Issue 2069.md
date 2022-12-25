@@ -4,6 +4,7 @@ archive/issues_002069.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nChange the year from 2007 to 2008 on http://sagemath.org/pub.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2069\n\n",
+    "closed_at": "2008-02-06T01:06:58Z",
     "created_at": "2008-02-05T23:21:33Z",
     "labels": [
         "component: website/wiki",

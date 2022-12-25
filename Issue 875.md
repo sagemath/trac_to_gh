@@ -1,22 +1,24 @@
-# Issue 875: further work needed on frast Sage --> PARI int conversion
+# Issue 875: [with patch] further work needed on fast Sage --> PARI int conversion
 
 archive/issues_000875.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n22:42 < cwitty_> I was looking at #467, and I just crashed SAGE with a PARI stack overflow.\n22:43 < cwitty_> I thought the stack was supposed to resize automatically, or something?  (Or at least\n                 not crash SAGE.)\n22:44 < cwitty_> sage: n = 10^10000000\n22:44 < cwitty_> sage: %time _ = pari(n)\n22:44 < cwitty_>   ***   the PARI stack overflows !\n22:44 < cwitty_>   current stack size: 8000000 (7.629 Mbytes)\n22:44 < cwitty_>   [hint] you can increase GP stack with allocatemem()\n22:44 < cwitty_> /home/cwitty/sage/local/bin/sage-sage: line 205: 25703 Aborted\n                 sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n22:44 < cwitty_> (This is after I applied the patch from #467.)\n22:45 < williamstein> weird.\n22:45 < williamstein> it should automatically double *if* the author correctly uses _sig_on/_sig_off\n22:47 < cwitty_> This is the ZZ->Pari fast coercion patch, and I'm pretty sure (from skimming the patch)\n                 that he never touches _sig_on/_sig_off.  So that's probably it.\n```\n\n*THE SOLUTION*\n\nNeed to move code for _pari_c to gen.pyx as a method off of the Pari object.\nThen wrap the call to the function in convert.c in _sig_on / _sig_off.\nThe _sig_on / _sig_off macros are specially constructed *only* in gen.pyx \nto automatically double the pari stack if we run out of memory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/875\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is further work needed after #467.\n\n```\n22:42 < cwitty_> I was looking at #467, and I just crashed SAGE with a PARI stack overflow.\n22:43 < cwitty_> I thought the stack was supposed to resize automatically, or something?  (Or at least\n                 not crash SAGE.)\n22:44 < cwitty_> sage: n = 10^10000000\n22:44 < cwitty_> sage: %time _ = pari(n)\n22:44 < cwitty_>   ***   the PARI stack overflows !\n22:44 < cwitty_>   current stack size: 8000000 (7.629 Mbytes)\n22:44 < cwitty_>   [hint] you can increase GP stack with allocatemem()\n22:44 < cwitty_> /home/cwitty/sage/local/bin/sage-sage: line 205: 25703 Aborted\n                 sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n22:44 < cwitty_> (This is after I applied the patch from #467.)\n22:45 < williamstein> weird.\n22:45 < williamstein> it should automatically double *if* the author correctly uses _sig_on/_sig_off\n22:47 < cwitty_> This is the ZZ->Pari fast coercion patch, and I'm pretty sure (from skimming the patch)\n                 that he never touches _sig_on/_sig_off.  So that's probably it.\n```\n\n*THE SOLUTION*\n\nNeed to move code for _pari_c to gen.pyx as a method off of the Pari object.\nThen wrap the call to the function in convert.c in _sig_on / _sig_off.\nThe _sig_on / _sig_off macros are specially constructed *only* in gen.pyx \nto automatically double the pari stack if we run out of memory.\n\nALSO -- I think #467 should be better documented. Craig explained\nto me how he is \"hacking with the internals\" of the python/c api.  This should be explained even more in the code. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/875\n\n",
+    "closed_at": "2007-10-27T19:45:45Z",
     "created_at": "2007-10-13T06:22:51Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "further work needed on frast Sage --> PARI int conversion",
+    "title": "[with patch] further work needed on fast Sage --> PARI int conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/875",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @craigcitro
+
+This is further work needed after #467.
 
 ```
 22:42 < cwitty_> I was looking at #467, and I just crashed SAGE with a PARI stack overflow.
@@ -42,6 +44,10 @@ Need to move code for _pari_c to gen.pyx as a method off of the Pari object.
 Then wrap the call to the function in convert.c in _sig_on / _sig_off.
 The _sig_on / _sig_off macros are specially constructed *only* in gen.pyx 
 to automatically double the pari stack if we run out of memory.
+
+ALSO -- I think #467 should be better documented. Craig explained
+to me how he is "hacking with the internals" of the python/c api.  This should be explained even more in the code. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/875
 

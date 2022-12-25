@@ -1,16 +1,17 @@
-# Issue 6993: [with package, needs review] update pynac to 0.1.9
+# Issue 6993: [with spkg, positive review] update pynac to 0.1.9
 
 archive/issues_006993.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @williamstein @mwhansen @ncalexan\n\nNew pynac package available at:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.9.spkg\n\nChanges to pynac can also be viewed by going here:\n\nhttp://pynac.sagemath.org/hg/rev/beb49aa3cebf\n\nand clicking the link for \"children\" to see the other patches.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6993\n\n",
+    "closed_at": "2009-09-25T22:43:09Z",
     "created_at": "2009-09-22T19:18:06Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with package, needs review] update pynac to 0.1.9",
+    "title": "[with spkg, positive review] update pynac to 0.1.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6993",
     "user": "https://github.com/burcin"

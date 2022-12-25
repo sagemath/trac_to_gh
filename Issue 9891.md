@@ -1,24 +1,25 @@
-# Issue 9891: Eliminate (or minimize) #include <pari/paripriv.h>
+# Issue 9891: Eliminate paripriv.h from interpreters
 
 archive/issues_009891.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe file `include/pari/paripriv.h` is supposed to contain functions which are meant to be used only by PARI/GP itself.  One should check whether the use of `paripriv.h` can be eliminated.  If so, we can also remove the patch for `paripriv.h` for the pari spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9892\n\n",
+    "body": "Assignee: @jdemeyer\n\nNow that `<pari/paripriv.h>` is only used in a few Cython `.pyx` files (hence, a few `.c` files), we don't need to include it in the interpreters in `src/sage/ext/interpreters`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9892\n\n",
+    "closed_at": "2016-03-08T23:30:54Z",
     "created_at": "2010-09-10T21:26:38Z",
     "labels": [
-        "component: packages",
+        "component: cython",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
-    "title": "Eliminate (or minimize) #include <pari/paripriv.h>",
+    "title": "Eliminate paripriv.h from interpreters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9891",
     "user": "https://github.com/jdemeyer"
 }
 ```
-Assignee: tbd
+Assignee: @jdemeyer
 
-The file `include/pari/paripriv.h` is supposed to contain functions which are meant to be used only by PARI/GP itself.  One should check whether the use of `paripriv.h` can be eliminated.  If so, we can also remove the patch for `paripriv.h` for the pari spkg.
+Now that `<pari/paripriv.h>` is only used in a few Cython `.pyx` files (hence, a few `.c` files), we don't need to include it in the interpreters in `src/sage/ext/interpreters`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9892
 

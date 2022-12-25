@@ -1,16 +1,17 @@
-# Issue 2517: ignore bad values in plot
+# Issue 2517: [with patch; positive review] ignore bad values in plot
 
 archive/issues_002517.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n> >  Hi,\n> >\n> >  With sage-2.10.3 the following plot fails:\n> >\n> >  plot(-x*log(x),0,1, plot_points=1000)\n> >\n> >  This worked fine in sage-2.10.2. Note that the left hand limit is\n> >  well-defined and can be approximated:\n> >\n> >  plot(-x*log(x),0.00000000000000001,1, plot_points=1000)\n> >\n> >  Is this a feature or a bug?\n\nIt fails because it used to be that there was a bug where when\nplotting the left and right endpoints were omitted, because the sample\npoints were *all* randomized!  This really\nannoyed a lot of people, especially people making animations,\nbut allowed the above example to work.\n\nI think the solution is to fix our plotting code so that it just automatically\ncompletely ignores a few bad values (like it used to), possibly printing\na warning.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2517\n\n",
+    "closed_at": "2008-03-19T00:34:57Z",
     "created_at": "2008-03-14T16:58:53Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "ignore bad values in plot",
+    "title": "[with patch; positive review] ignore bad values in plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2517",
     "user": "https://github.com/jasongrout"

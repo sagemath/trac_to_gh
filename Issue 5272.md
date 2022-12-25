@@ -1,16 +1,17 @@
-# Issue 5272: [with patch, needs review] extend sage_input to work with RIF, CIF, AA, and QQbar
+# Issue 5272: [with patch, positive review] extend sage_input to work with RIF, CIF, AA, and QQbar
 
 archive/issues_005272.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe attached patch adds support for intervals and for algebraic numbers to the sage_input system.  I'm going to mark it as Milestone 3.3, but I'm feeling no urgency about it... I'm happy to rebase against 3.4.whatever if it doesn't make it into 3.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5272\n\n",
+    "closed_at": "2009-02-15T07:56:24Z",
     "created_at": "2009-02-14T15:20:25Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] extend sage_input to work with RIF, CIF, AA, and QQbar",
+    "title": "[with patch, positive review] extend sage_input to work with RIF, CIF, AA, and QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5272",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

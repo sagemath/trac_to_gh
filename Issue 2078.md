@@ -4,6 +4,7 @@ archive/issues_002078.json:
 ```json
 {
     "body": "Assignee: tba\n\nIt says:\n\n1. clone the main branch\n2. implement new functionality in the clone, test\n3. commit changes to clone\n4. pull changes into main branch\n5. export patch or bundle, and contribute it\n\nThere are good reasons why one shouldn't do step 4, since it taints the main branch with code that hasn't been reviewed, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2078\n\n",
+    "closed_at": "2008-08-31T07:58:49Z",
     "created_at": "2008-02-07T04:23:52Z",
     "labels": [
         "component: documentation",

@@ -1,21 +1,22 @@
-# Issue 3450: notebook -- move HTML code for registration page to template
+# Issue 3450: [with patch, positive review] notebook -- move HTML code for registration page to template
 
 archive/issues_003450.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCurrently the HTML code for the user registration page is in twist.py. It should be moved to a template to set the ground work for inline error reporting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3450\n\n",
+    "body": "Assignee: TimothyClemans\n\nCurrently the HTML code for the user registration page is in twist.py. It should be moved to a template to set the ground work for inline error reporting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3450\n\n",
+    "closed_at": "2008-06-25T04:16:28Z",
     "created_at": "2008-06-17T21:43:02Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- move HTML code for registration page to template",
+    "title": "[with patch, positive review] notebook -- move HTML code for registration page to template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3450",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 Currently the HTML code for the user registration page is in twist.py. It should be moved to a template to set the ground work for inline error reporting.
 

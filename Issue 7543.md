@@ -1,59 +1,62 @@
-# Issue 7543: Add S-adiques to the word generator
+# Issue 7543: Add S-adic to the word generator
 
 archive/issues_007543.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @videlec @saliola\n\nThe definition of S-adiques words is found here :\n\n[Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)\n\nThis patch adds S-adiques to the word generator :\n\n```\n    sage: tm = WordMorphism('a->ab,b->ba')\n    sage: fib = WordMorphism('a->ab,b->a')\n    sage: from itertools import repeat\n\nOne trivial example of infinite s-adique word::\n\n    sage: words.s_adique(repeat(tm),repeat('a'))\n    word: abbabaabbaababbabaababbaabbabaabbaababba...\n\nA less trivial infinite s-adique word::\n\n    sage: m = WordMorphism({0:tm,1:fib})\n    sage: tmword = words.ThueMorseWord()\n    sage: w = m(tmword)\n    sage: words.s_adique(w, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n\nRandom infinite s-adique words::\n\n    sage: from sage.misc.prandom import randint\n    sage: def it():\n    ...     while True: yield randint(0,1)\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n    word: abbaabababbaababbaabbaababbaabababbaabba...\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n```\n\nSee the patch for more examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7543\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @videlec @saliola\n\nThe definition of S-adic words is found here :\n\n[Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)\n\nThis patch adds S-adic to the word generator :\n\n```\n    sage: tm = WordMorphism('a->ab,b->ba')\n    sage: fib = WordMorphism('a->ab,b->a')\n    sage: from itertools import repeat\n\nOne trivial example of infinite s-adic word::\n\n    sage: words.s_adic(repeat(tm),repeat('a'))\n    word: abbabaabbaababbabaababbaabbabaabbaababba...\n\nA less trivial infinite s-adic word::\n\n    sage: m = WordMorphism({0:tm,1:fib})\n    sage: tmword = words.ThueMorseWord()\n    sage: w = m(tmword)\n    sage: words.s_adic(w, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n\nRandom infinite s-adic words::\n\n    sage: from sage.misc.prandom import randint\n    sage: def it():\n    ...     while True: yield randint(0,1)\n    sage: words.s_adic(it(), repeat('a'), [tm,fib])\n    word: abbaabababbaababbaabbaababbaabababbaabba...\n    sage: words.s_adic(it(), repeat('a'), [tm,fib])\n```\n\nSee the patch for more examples.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7543\n\n",
+    "closed_at": "2010-01-18T23:45:53Z",
     "created_at": "2009-11-27T15:27:44Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Add S-adiques to the word generator",
+    "title": "Add S-adic to the word generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7543",
     "user": "https://github.com/seblabbe"
 }
 ```
-Assignee: @mwhansen
+Assignee: @seblabbe
 
 CC:  @videlec @saliola
 
-The definition of S-adiques words is found here :
+The definition of S-adic words is found here :
 
 [Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)
 
-This patch adds S-adiques to the word generator :
+This patch adds S-adic to the word generator :
 
 ```
     sage: tm = WordMorphism('a->ab,b->ba')
     sage: fib = WordMorphism('a->ab,b->a')
     sage: from itertools import repeat
 
-One trivial example of infinite s-adique word::
+One trivial example of infinite s-adic word::
 
-    sage: words.s_adique(repeat(tm),repeat('a'))
+    sage: words.s_adic(repeat(tm),repeat('a'))
     word: abbabaabbaababbabaababbaabbabaabbaababba...
 
-A less trivial infinite s-adique word::
+A less trivial infinite s-adic word::
 
     sage: m = WordMorphism({0:tm,1:fib})
     sage: tmword = words.ThueMorseWord()
     sage: w = m(tmword)
-    sage: words.s_adique(w, repeat('a'))
+    sage: words.s_adic(w, repeat('a'))
     word: abbaababbaabbaabbaababbaababbaabbaababba...
 
-Random infinite s-adique words::
+Random infinite s-adic words::
 
     sage: from sage.misc.prandom import randint
     sage: def it():
     ...     while True: yield randint(0,1)
-    sage: words.s_adique(it(), repeat('a'), [tm,fib])
+    sage: words.s_adic(it(), repeat('a'), [tm,fib])
     word: abbaabababbaababbaabbaababbaabababbaabba...
-    sage: words.s_adique(it(), repeat('a'), [tm,fib])
+    sage: words.s_adic(it(), repeat('a'), [tm,fib])
 ```
 
 See the patch for more examples.
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7543
 

@@ -1,16 +1,17 @@
-# Issue 4877: [with spkg; needs review] update optional spkg to newest version of pyopenssl and get spkg into proper format
+# Issue 4877: [with spkg; needs work] update optional spkg to newest version of pyopenssl and get spkg into proper format
 
 archive/issues_004877.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe new spkg is here:  \n    http://sage.math.washington.edu/home/was/patches/pyopenssl-0.8.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4877\n\n",
+    "closed_at": "2015-04-09T12:12:12Z",
     "created_at": "2008-12-24T20:37:22Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with spkg; needs review] update optional spkg to newest version of pyopenssl and get spkg into proper format",
+    "title": "[with spkg; needs work] update optional spkg to newest version of pyopenssl and get spkg into proper format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4877",
     "user": "https://github.com/williamstein"

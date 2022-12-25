@@ -3,10 +3,11 @@
 archive/issues_001695.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe sage-2.9.2 in the osx 10.4 dmg failed to work because of missing libintl.\nThis failure occurred when starting the notebook.\nPutting  http://sagemath.org/SAGEbin/apple_osx/intel/10.4-extra_files/libintl.3.dylib\nin local/lib fixed it\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1695\n\n",
+    "body": "Assignee: mabshoff\n\nThe sage-2.9.2 in the osx 10.4 dmg failed to work because of missing libintl.\nThis failure occurred when starting the notebook.\nPutting  http://sagemath.org/SAGEbin/apple_osx/intel/10.4-extra_files/libintl.3.dylib\nin local/lib fixed it\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1695\n\n",
+    "closed_at": "2008-03-16T20:33:51Z",
     "created_at": "2008-01-05T23:21:03Z",
     "labels": [
-        "component: notebook",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_001695.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
-Assignee: boothby
+Assignee: mabshoff
 
 The sage-2.9.2 in the osx 10.4 dmg failed to work because of missing libintl.
 This failure occurred when starting the notebook.

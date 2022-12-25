@@ -4,11 +4,11 @@ archive/issues_004984.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSo we currently use several Python/C API calls to speed up the `__getitem__` method in `sage/matrix/matrix0.pyx`. In particular, we do several typechecks against standard Python types, and replacing generic `PY_TYPE_CHECK` calls with specific Python/C API calls (like `PySlice_Check`) provides a significant speedup. Once Cython can do all these things for us, we should clean up `__getitem__` so that it's more readable/portable. \n\nAlternatively, if such functionality still doesn't exist in Cython, one should feel free to go, implement that functionality, get it merged, create a new Cython spkg, and then make these changes. `:)`\n\nIssue created by migration from https://trac.sagemath.org/ticket/4984\n\n",
+    "closed_at": "2016-02-23T22:59:24Z",
     "created_at": "2009-01-16T02:36:55Z",
     "labels": [
         "component: linear algebra",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Clean up __getitem__ for matrices once Cython is smarter",

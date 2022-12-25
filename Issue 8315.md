@@ -3,7 +3,8 @@
 archive/issues_008315.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @hivert @jhpalmieri @nthiery @kwankyu\n\nJavaScript additions to `layout.html` that transform a reference manual HTML page on display.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8315\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @hivert @jhpalmieri @nthiery @kwankyu\n\nWe add potentially useful features to reference manual HTML pages:\n\n* In the sidebar:\n  * Sticky sidebar toggle.\n  * Indented list of links to the page's classes, methods, functions.\n  * Controls to toggle, hide, or show docstrings.\n* In the main content:\n  * Click on an argspec to toggle the corresponding docstring.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8315\n\n",
+    "closed_at": "2022-11-14T19:36:43Z",
     "created_at": "2010-02-20T21:02:10Z",
     "labels": [
         "component: documentation",
@@ -20,7 +21,14 @@ Assignee: mvngu
 
 CC:  @hivert @jhpalmieri @nthiery @kwankyu
 
-JavaScript additions to `layout.html` that transform a reference manual HTML page on display.
+We add potentially useful features to reference manual HTML pages:
+
+* In the sidebar:
+  * Sticky sidebar toggle.
+  * Indented list of links to the page's classes, methods, functions.
+  * Controls to toggle, hide, or show docstrings.
+* In the main content:
+  * Click on an argspec to toggle the corresponding docstring.
 
 See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a34a80097ad47805/2e57eb60d7f9881d?#2e57eb60d7f9881d) for some background.
 

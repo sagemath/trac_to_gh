@@ -1,16 +1,17 @@
-# Issue 2012: crap -- jmol contains some os x files that shouldn't be there
+# Issue 2012: [with spkg] crap -- jmol contains some os x files that shouldn't be there
 
 archive/issues_002012.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/patches/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/jmol/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/._.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2012\n\n",
+    "closed_at": "2008-02-01T02:01:38Z",
     "created_at": "2008-01-31T23:23:21Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- jmol contains some os x files that shouldn't be there",
+    "title": "[with spkg] crap -- jmol contains some os x files that shouldn't be there",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2012",
     "user": "https://github.com/williamstein"

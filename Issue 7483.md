@@ -1,16 +1,16 @@
-# Issue 7483: notebook: weird pointless line
+# Issue 7483: notebook: move preparsing to the worksheet process and out of the server (was: weird pointless line)
 
 archive/issues_007483.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn worksheet.py (at the end of `start_next_comp(self)`) in sagenb we have these lines:\n\n```\n        self.__comp_is_running = True\n        'exec _support_.preparse(base64.b64decode(\"%s\"))'%base64.b64encode(input)\n        self.sage().execute(input, os.path.abspath(self.data_directory()))\n```\n\nThat 'exec ' line in the middle is just sitting there making a string that is just discareded!?!?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7483\n\n",
+    "body": "Assignee: boothby\n\nIn worksheet.py (at the end of `start_next_comp(self)`) in sagenb we have these lines:\n\n```\n        self.__comp_is_running = True\n        'exec _support_.preparse(base64.b64decode(\"%s\"))'%base64.b64encode(input)\n        self.sage().execute(input, os.path.abspath(self.data_directory()))\n```\n\nThat 'exec ' line in the middle is just sitting there making a string that is just discarded?\n\nThe issue is that I thought I had fully implemented moving all preparsing to the worksheet process (out of the server).  Unfortunately, I didn't -- in fact, I only figured out how to do it, but didn't finish. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7483\n\n",
+    "closed_at": "2010-01-04T06:34:13Z",
     "created_at": "2009-11-17T22:28:15Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "notebook: weird pointless line",
+    "title": "notebook: move preparsing to the worksheet process and out of the server (was: weird pointless line)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7483",
     "user": "https://github.com/williamstein"
@@ -26,7 +26,9 @@ In worksheet.py (at the end of `start_next_comp(self)`) in sagenb we have these 
         self.sage().execute(input, os.path.abspath(self.data_directory()))
 ```
 
-That 'exec ' line in the middle is just sitting there making a string that is just discareded!?!?
+That 'exec ' line in the middle is just sitting there making a string that is just discarded?
+
+The issue is that I thought I had fully implemented moving all preparsing to the worksheet process (out of the server).  Unfortunately, I didn't -- in fact, I only figured out how to do it, but didn't finish. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7483
 

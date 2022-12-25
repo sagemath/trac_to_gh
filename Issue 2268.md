@@ -1,15 +1,16 @@
-# Issue 2268: has_coerce_map_from_c performance improvements (patch included)
+# Issue 2268: [with patch, positive review] has_coerce_map_from_c performance improvements
 
 archive/issues_002268.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThe following patch \"makes the common case fast.\"  If there is a trivial coercion map this can improve performance by 30x or more.  Furthermore the previous has_key() was not compiling into fast code, this improves it.  It also cleans up the try statement by replacing it with the if statement that maintains backwards compatibility.  This if statement should be eventually removed, but there is a significant body of doctests that fail because code calls has_coerce_map with nonsensical arguments (sometimes self is not a Parent, for instance).  Non-trivial speedups are not as dramatic but still easily measurable in tight loops.  This code has been verified at the .c file level for reference issues and make checked.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2268\n\n",
+    "closed_at": "2008-02-29T19:59:35Z",
     "created_at": "2008-02-22T22:17:23Z",
     "labels": [
         "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "has_coerce_map_from_c performance improvements (patch included)",
+    "title": "[with patch, positive review] has_coerce_map_from_c performance improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2268",
     "user": "https://github.com/garyfurnish"

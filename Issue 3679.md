@@ -1,15 +1,16 @@
-# Issue 3679: Range Slider Control
+# Issue 3679: [with patches; positive review] Range Slider Control
 
 archive/issues_003679.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nAllows to select a range using a slider with two handles. Includes a jQuery patch.\n\nDepends on #3599 and #3636.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3679\n\n",
+    "closed_at": "2008-07-31T01:25:43Z",
     "created_at": "2008-07-19T06:27:37Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Range Slider Control",
+    "title": "[with patches; positive review] Range Slider Control",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3679",
     "user": "https://github.com/itolkov"

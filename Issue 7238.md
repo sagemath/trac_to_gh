@@ -1,16 +1,17 @@
-# Issue 7238: sagenb notebook: insert new cell *above* text cell
+# Issue 7238: [with patch; needs review] sagenb notebook: insert new cell *above* text cell
 
 archive/issues_007238.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is a longstanding annoying GUI issue with the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7238\n\n",
+    "closed_at": "2009-10-20T23:18:37Z",
     "created_at": "2009-10-18T06:31:05Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "sagenb notebook: insert new cell *above* text cell",
+    "title": "[with patch; needs review] sagenb notebook: insert new cell *above* text cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7238",
     "user": "https://github.com/williamstein"

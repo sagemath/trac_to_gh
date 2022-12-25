@@ -3,10 +3,12 @@
 archive/issues_003979.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @fchapoton\n\nKeywords: power series, composition, precision\n\nThe composition of two power series is sometimes returned with the wrong precision. A trivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + O(u^4))(u)\n1\n```\nwhere the return value should have precision 4 rather than infinity. A more nontrivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + u^2 + O(u^4))(u^2)\n1 + u^4 + O(u^10)\n```\nwhere the return value should have precision 8 instead of 10.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3979\n\n",
+    "body": "Assignee: somebody\n\nCC:  @fchapoton\n\nKeywords: power series, composition, precision\n\nThe composition of two power series is sometimes returned with the wrong precision. A trivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + O(u^4))(u)\n1\n```\nwhere the return value should have precision 4 rather than infinity. A more nontrivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + u^2 + O(u^4))(u^2)\n1 + u^4 + O(u^10)\n```\nwhere the return value should have precision 8 instead of 10.\n\n---\n\nApply \n* [attachment:trac_3979_power_series_substitution_rev5.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3979\n\n",
+    "closed_at": "2012-09-28T07:46:08Z",
     "created_at": "2008-08-28T20:16:02Z",
     "labels": [
-        "component: calculus",
+        "component: algebra",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
@@ -16,7 +18,7 @@ archive/issues_003979.json:
     "user": "https://github.com/kedlaya"
 }
 ```
-Assignee: @burcin
+Assignee: somebody
 
 CC:  @fchapoton
 
@@ -35,6 +37,12 @@ sage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + u^2 + O(u^4))(u^2)
 1 + u^4 + O(u^10)
 ```
 where the return value should have precision 8 instead of 10.
+
+---
+
+Apply 
+* [attachment:trac_3979_power_series_substitution_rev5.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3979
 

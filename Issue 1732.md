@@ -1,21 +1,22 @@
-# Issue 1732: block matrix construction
+# Issue 1732: [with patch, with positive review] block matrix construction
 
 archive/issues_001732.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n```\nIs there a way to construct block matrices in SAGE?\nNot just the \"block_sum\", \"augment\" and \"stack\" functions.\n\nAs an example, let A, B, C, D be matrices and i want to construct a\nmatrix like E=[[A,B],[C,D]]\n\nSuch a feature would be very nice.\n\n-vgermrk-\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1732\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  dfdeshom@gmail.com\n\n```\nIs there a way to construct block matrices in SAGE?\nNot just the \"block_sum\", \"augment\" and \"stack\" functions.\n\nAs an example, let A, B, C, D be matrices and i want to construct a\nmatrix like E=[[A,B],[C,D]]\n\nSuch a feature would be very nice.\n\n-vgermrk-\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1732\n\n",
+    "closed_at": "2008-01-15T03:10:47Z",
     "created_at": "2008-01-09T08:24:23Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "block matrix construction",
+    "title": "[with patch, with positive review] block matrix construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1732",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 CC:  dfdeshom@gmail.com
 

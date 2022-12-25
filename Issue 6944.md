@@ -1,9 +1,10 @@
-# Issue 6944: typos in some installation scripts
+# Issue 6944: [with patch, positive review] typos in some installation scripts
 
 archive/issues_006944.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6944\n\n",
+    "closed_at": "2009-09-22T23:04:38Z",
     "created_at": "2009-09-16T05:39:41Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006944.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "typos in some installation scripts",
+    "title": "[with patch, positive review] typos in some installation scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6944",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

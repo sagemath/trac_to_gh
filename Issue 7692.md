@@ -1,16 +1,17 @@
-# Issue 7692: update the sloane OEIS database to the latest version; it is a little out of date.
+# Issue 7692: update the sloane OEIS database to the latest version; it is a little out of date
 
 archive/issues_007692.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe Sloane database hasn't been updated since 2005, so update it. \n\n   http://sagemath.org/packages/optional/database_sloane_oeis-2005-12.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7692\n\n",
+    "closed_at": "2010-01-03T21:22:07Z",
     "created_at": "2009-12-15T22:25:55Z",
     "labels": [
         "component: packages: optional",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "update the sloane OEIS database to the latest version; it is a little out of date.",
+    "title": "update the sloane OEIS database to the latest version; it is a little out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7692",
     "user": "https://github.com/williamstein"

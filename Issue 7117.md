@@ -1,16 +1,17 @@
-# Issue 7117: [with patch, needs review] latex fix for RIF
+# Issue 7117: [with patch, positive review] latex fix for RIF
 
 archive/issues_007117.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nFrom IRC:\n\n```\nBy the way, if I evaluate \"jsmath(RIF)\" in the notebook, jsMath complains: \"Unknown control sequence '\\I'\". \nIs there a missing macro definition?\n```\nIt looks to me as though the `_latex_` method for RIF has been defined in terms of '\\\\I' for a long time, and it has not worked since at least Sage 3.4.  The attached patch changes it from \"\\\\I \\\\R\" to \"\\\\Bold{I} \\\\Bold{R}\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7117\n\n",
+    "closed_at": "2009-10-15T08:36:07Z",
     "created_at": "2009-10-04T20:53:10Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] latex fix for RIF",
+    "title": "[with patch, positive review] latex fix for RIF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7117",
     "user": "https://github.com/jhpalmieri"

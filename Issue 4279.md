@@ -1,9 +1,10 @@
-# Issue 4279: Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx
+# Issue 4279: [with patch, positive review] Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx
 
 archive/issues_004279.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/rings/real_lazy.pyx \n********************************************************************** \nFile \"/Users/mh/Desktop/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549: \n    sage: complex(CLF(-1)^(1/4)) \nExpected: \n    (0.70710678118654757+0.70710678118654746j) \nGot: \n    (0.70710678118654746+0.70710678118654757j) \n*********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4279\n\n",
+    "closed_at": "2008-10-14T12:25:43Z",
     "created_at": "2008-10-14T09:42:43Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004279.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx",
+    "title": "[with patch, positive review] Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4279",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 2178: latex2html does not like $+$
+# Issue 2178: [with patch, with positive review] latex2html does not like $+$
 
 archive/issues_002178.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nBill Purvis points out (http://groups.google.com/group/sage-support/browse_thread/thread/9531e60cda199e6d#) a problem in the reference manual that seems to be caused by latex2html doing the wrong thing with $+$.\n\nI'll have a patch for this problem shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2178\n\n",
+    "body": "Assignee: cwitty\n\nBill Purvis points out (http://groups.google.com/group/sage-support/browse_thread/thread/9531e60cda199e6d#) a problem in the reference manual that seems to be caused by latex2html doing the wrong thing with $+$.\n\nI'll have a patch that avoids this construct shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2178\n\n",
+    "closed_at": "2008-02-16T18:15:58Z",
     "created_at": "2008-02-16T15:55:18Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "latex2html does not like $+$",
+    "title": "[with patch, with positive review] latex2html does not like $+$",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2178",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -20,7 +21,7 @@ Assignee: cwitty
 
 Bill Purvis points out (http://groups.google.com/group/sage-support/browse_thread/thread/9531e60cda199e6d#) a problem in the reference manual that seems to be caused by latex2html doing the wrong thing with $+$.
 
-I'll have a patch for this problem shortly.
+I'll have a patch that avoids this construct shortly.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2178
 

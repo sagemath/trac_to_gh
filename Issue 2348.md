@@ -1,17 +1,18 @@
-# Issue 2348: MatrixGroup over CyclotomicField is broken
+# Issue 2348: [with patch, positive review] Teach the gap interface about field extensions
 
 archive/issues_002348.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nCC:  @williamstein @wdjoyner\n\nKeywords: matrix group, cyclotomic field\n\nDefine the following:\n\n```\nsage: F = CyclotomicField(8)\nsage: z = F.gen()\nsage: a = z+1/z\nsage: MS = MatrixSpace(F, 2, 2)\nsage: g1 = MS([[1/a,1/a],[1/a,-1/a]])\nsage: b = z^2\nsage: g2 = MS([[1,0],[0,b]])\nsage: g3 = MS([[b,0],[0,1]])\nsage: G = MatrixGroup([g1,g2,g3])\n```\n\nThen, one obtains a traceback by the attempt to see G:\n\n```\nsage: G\n<traceback removed>\n<type 'exceptions.TypeError'>: Gap produced error output\nVariable: 'zeta8' must have a value\n\n\n   executing Read(\"/home/king/.sage//temp/mpc739/6870//interface//tmp\");\n```\n\nNote that in fact `zeta8` is known:\n\n```\nsage: G.base_ring().gen()\nzeta8\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2348\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  @williamstein @wdjoyner\n\nKeywords: gap, field extension\n\nDefine the following:\n\n```\nsage: F = CyclotomicField(8)\nsage: z = F.gen()\nsage: a = z+1/z\nsage: MS = MatrixSpace(F, 2, 2)\nsage: g1 = MS([[1/a,1/a],[1/a,-1/a]])\nsage: b = z^2\nsage: g2 = MS([[1,0],[0,b]])\nsage: g3 = MS([[b,0],[0,1]])\nsage: G = MatrixGroup([g1,g2,g3])\n```\n\nThen, one obtains a traceback by the attempt to see G:\n\n```\nsage: G\n<traceback removed>\n<type 'exceptions.TypeError'>: Gap produced error output\nVariable: 'zeta8' must have a value\n\n\n   executing Read(\"/home/king/.sage//temp/mpc739/6870//interface//tmp\");\n```\n\nNote that in fact `zeta8` is known:\n\n```\nsage: G.base_ring().gen()\nzeta8\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2348\n\n",
+    "closed_at": "2008-03-05T10:47:22Z",
     "created_at": "2008-02-28T18:36:58Z",
     "labels": [
-        "component: group_theory",
+        "component: interfaces",
         "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "MatrixGroup over CyclotomicField is broken",
+    "title": "[with patch, positive review] Teach the gap interface about field extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2348",
     "user": "https://github.com/simon-king-jena"
@@ -21,7 +22,7 @@ Assignee: @wdjoyner
 
 CC:  @williamstein @wdjoyner
 
-Keywords: matrix group, cyclotomic field
+Keywords: gap, field extension
 
 Define the following:
 

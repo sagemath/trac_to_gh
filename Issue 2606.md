@@ -3,7 +3,8 @@
 archive/issues_002606.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nSince running sage -notebook now checks if another instance is already running, it would be fairly straightforward to create an option that kills that notebook process as well.\n\nThe rationale is that it is probably much easier for a user to recreate the circumstances under which the notebook was started, and hence enable sage to find the relevant PID file, than to figure out where that PID file is stored.\n\nGiven the code in sage.server.notebook.run_notebook it can be rather involved to track down where twistd.pid gets stored (and it might change in the future too), being able to get a hold of the pidfile in a general way would make startup scripts much more robust (the location of twistd.pid has already changed once)\n\nAs an example, daemon-like services such as vncserver and dhclient have \"-kill\" and \"-r\" options to kill previously started instances in a way that takes the burden from the user to figure out which PID to kill.\n\nOne should probably first address\n\nhttp://trac.sagemath.org/sage_trac/ticket/2359\n\nIssue created by migration from https://trac.sagemath.org/ticket/2606\n\n",
+    "body": "Assignee: boothby\n\nSince running sage -notebook now checks if another instance is already running, it would be fairly straightforward to create an option that kills that notebook process as well.\n\nThe rationale is that it is probably much easier for a user to recreate the circumstances under which the notebook was started, and hence enable sage to find the relevant PID file, than to figure out where that PID file is stored.\n\nGiven the code in sage.server.notebook.run_notebook it can be rather involved to track down where twistd.pid gets stored (and it might change in the future too), being able to get a hold of the pidfile in a general way would make startup scripts much more robust (the location of twistd.pid has already changed once)\n\nAs an example, daemon-like services such as vncserver and dhclient have \"-kill\" and \"-r\" options to kill previously started instances in a way that takes the burden from the user to figure out which PID to kill.\n\nOne should probably first address #2359\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2606\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2008-03-19T22:06:09Z",
     "labels": [
         "component: notebook",
@@ -26,9 +27,8 @@ Given the code in sage.server.notebook.run_notebook it can be rather involved to
 
 As an example, daemon-like services such as vncserver and dhclient have "-kill" and "-r" options to kill previously started instances in a way that takes the burden from the user to figure out which PID to kill.
 
-One should probably first address
+One should probably first address #2359
 
-http://trac.sagemath.org/sage_trac/ticket/2359
 
 Issue created by migration from https://trac.sagemath.org/ticket/2606
 

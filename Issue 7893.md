@@ -3,7 +3,8 @@
 archive/issues_007893.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nMany users seem to write individually scripts starting and stop a Sage server. It would be good that there is a place where these efforts can be combined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7893\n\n",
+    "body": "Assignee: @kwankyu\n\nKeywords: service daemon mode background\n\nMany users seem to write individually scripts starting and stopping a Sage server. It would be good that there is a place where these efforts can be combined. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7893\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2010-01-11T01:53:51Z",
     "labels": [
         "component: packages: experimental",
@@ -16,9 +17,11 @@ archive/issues_007893.json:
     "user": "https://github.com/kwankyu"
 }
 ```
-Assignee: tbd
+Assignee: @kwankyu
 
-Many users seem to write individually scripts starting and stop a Sage server. It would be good that there is a place where these efforts can be combined.
+Keywords: service daemon mode background
+
+Many users seem to write individually scripts starting and stopping a Sage server. It would be good that there is a place where these efforts can be combined. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7893
 

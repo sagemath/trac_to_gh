@@ -3,7 +3,8 @@
 archive/issues_006763.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThis patch implements a solver for the Bin Packing problem using Linear Programming.. Sorry again, but to test this you will have to first install GLPK (just type sage -i glpk 4.38) and the patch AllMIP #6502 ;-)\n\nI hope you will like the documentation, I tried to make it clean ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6763\n\n",
+    "body": "Assignee: jkantor\n\nThis patch implements a solver for the Bin Packing problem using Linear Programming.. To test this you will have to first install GLPK and one patch, all available on ticket #6869 ;-)\n\nI hope you will like the documentation, I tried to make it clean ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6763\n\n",
+    "closed_at": "2010-06-07T04:52:17Z",
     "created_at": "2009-08-16T16:14:34Z",
     "labels": [
         "component: numerical"
@@ -17,7 +18,7 @@ archive/issues_006763.json:
 ```
 Assignee: jkantor
 
-This patch implements a solver for the Bin Packing problem using Linear Programming.. Sorry again, but to test this you will have to first install GLPK (just type sage -i glpk 4.38) and the patch AllMIP #6502 ;-)
+This patch implements a solver for the Bin Packing problem using Linear Programming.. To test this you will have to first install GLPK and one patch, all available on ticket #6869 ;-)
 
 I hope you will like the documentation, I tried to make it clean ;-)
 

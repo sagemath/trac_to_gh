@@ -1,16 +1,18 @@
-# Issue 6677: [with patch, needs review] Sequence doesn't know how to typeset itself
+# Issue 6677: [with patch, positive review] Sequence doesn't know how to typeset itself
 
 archive/issues_006677.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nIt seems that Sequence objects forgot how to typeset themselves somewhere between 3.4.2 and 4.1.\n\nIn 3.4.2:\n\n```\nsage: res = solve(x^2-2,x)\nsage: latex(res)\n\n\\left[x  =  -\\sqrt{ 2 }, \n x  =  \\sqrt{ 2 }\\right]\n```\n\nIn 4.1:\n\n```\nsage: latex(res)\n\n\\text{[\nx == -sqrt(2),\nx == sqrt(2)\n]}\nsage: latex(res[0])\nx = -\\sqrt{2}\n```\n\nAttached patch adds a `_latex_` method to `sage.structure.sequence.Sequence`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6677\n\n",
+    "closed_at": "2009-08-25T04:29:52Z",
     "created_at": "2009-08-06T11:49:04Z",
     "labels": [
         "component: misc",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Sequence doesn't know how to typeset itself",
+    "title": "[with patch, positive review] Sequence doesn't know how to typeset itself",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6677",
     "user": "https://github.com/burcin"

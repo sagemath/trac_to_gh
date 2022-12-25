@@ -1,16 +1,17 @@
-# Issue 3655: left multiplication in piecewise does not work
+# Issue 3655: [small patch attached, positive review] left multiplication in piecewise does not work
 
 archive/issues_003655.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThis was reported by C Boncelet.\n\n```\nsage: x = PolynomialRing(QQ,'x').gen()\nsage: f = Piecewise([[(0,1),1*x^0]])\nsage: r = f*2\nsage: r = 2*f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n/Users/boncelet/<ipython console> in <module>()\n/Users/boncelet/element.pyx in\nsage.structure.element.RingElement.__mul__ (sage/structure/element.c:\n8545)()\n/Users/boncelet/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/\nstructure/coerce.c:5338)()\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and\n'<type 'instance'>'\n```\n\nHe then suggested simply defining __rmul__ = __mul__:\n\n```\nsage: f.__rmul__ = f.__mul__\nsage: r = f*2\nsage: r = 2*f\nsage: r\nPiecewise defined function with 1 parts, [[(0, 1), 2]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3655\n\n",
+    "closed_at": "2008-08-26T22:54:16Z",
     "created_at": "2008-07-15T01:46:22Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "left multiplication in piecewise does not work",
+    "title": "[small patch attached, positive review] left multiplication in piecewise does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3655",
     "user": "https://github.com/wdjoyner"

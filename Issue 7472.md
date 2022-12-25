@@ -3,7 +3,8 @@
 archive/issues_007472.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: taylor polynomial, derivative\n\nmake taylor(x*y^3,[x,y],[1,-1],4) work\n\nIssue created by migration from https://trac.sagemath.org/ticket/7472\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: taylor polynomial, derivative\n\nmake \n\n```\ntaylor(x*y^3,[x,y],[1,-1],4)\n```\nwork\n\nIssue created by migration from https://trac.sagemath.org/ticket/7472\n\n",
+    "closed_at": "2010-01-18T22:57:36Z",
     "created_at": "2009-11-16T09:26:26Z",
     "labels": [
         "component: calculus"
@@ -19,7 +20,12 @@ Assignee: @burcin
 
 Keywords: taylor polynomial, derivative
 
-make taylor(x*y^3,[x,y],[1,-1],4) work
+make 
+
+```
+taylor(x*y^3,[x,y],[1,-1],4)
+```
+work
 
 Issue created by migration from https://trac.sagemath.org/ticket/7472
 

@@ -4,10 +4,10 @@ archive/issues_001362.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1362\n\n",
+    "closed_at": "2007-12-02T04:51:26Z",
     "created_at": "2007-12-02T04:42:20Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "edge labeled graph isomorphism",

@@ -4,9 +4,11 @@ archive/issues_009274.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @jhpalmieri\n\n```\n\nHere is an excerpt from \"deps\" , the makefile in spkg/standard\n\n$(INST)/$(FORTRAN):\n       $(SAGE_SPKG) $(FORTRAN) 2>&1\n\n$(INST)/$(F2C): $(INST)/$(FORTRAN)\n       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n                    ^^^^^^^ --------------------Notice that this is\nwrong.\n                                              the INST is not needed\nand is wrong.\n$(INST)/$(PIL): $(INST)/$(PYTHON)\n       $(SAGE_SPKG) $(PIL) 2>&1\n\n\nThe only reason it works is that the script that reads it cleans it up\nwith\n\"basename\".\n\nBut that's imperfect.\n\n\nThere are 3 instances, shown in this diff:\n\n\n401c400\n<       $(SAGE_SPKG) $(F2C) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n413c412\n<       $(SAGE_SPKG) $(LAPACK) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(LAPACK) 2>&1\n416c415\n<       $(SAGE_SPKG) $(BLAS) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(BLAS) 2>&1\n\n\n\n\nAlso in deps there are references to   TWISTEDWEB2  but that doesn't\nseem to exist anymore.\n\n\nI do not write access to the code. I hope someone who does will take\nthis\nand do right thing with it.\n\n************************************************\ncarlhansen1234\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9274\n\n",
+    "closed_at": "2010-07-06T03:54:13Z",
     "created_at": "2010-06-19T17:01:07Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",

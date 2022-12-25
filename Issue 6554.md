@@ -1,16 +1,17 @@
-# Issue 6554: [with patch, needs review] plotting sparse matrices converts the matrix to a dense matrix
+# Issue 6554: [with patch, positive review] plotting sparse matrices converts the matrix to a dense matrix
 
 archive/issues_006554.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rbeezer @mwhansen @williamstein wcauchois @robertwb\n\nPlotting big sparse matrices doesn't even work since it automatically converts the matrix to a dense matrix, instead of calling the spy() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6554\n\n",
+    "closed_at": "2009-07-29T12:57:11Z",
     "created_at": "2009-07-18T14:00:55Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] plotting sparse matrices converts the matrix to a dense matrix",
+    "title": "[with patch, positive review] plotting sparse matrices converts the matrix to a dense matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6554",
     "user": "https://github.com/jasongrout"

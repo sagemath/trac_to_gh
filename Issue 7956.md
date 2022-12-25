@@ -3,7 +3,8 @@
 archive/issues_007956.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbff6c2/d3108ab8f2060050\n\nRonald van Luijk encountered the following problem:\n\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 \ngiven)\n\nWe browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as AlgebraicScheme_subscheme_affine._point_morphism_class(), but\nis not accessible since AlgebraicScheme_subscheme_affine is not a superclass of AffineCurve_generic. Comparing it to the projective case, AlgebraicScheme_subscheme_projective _is_ a superclass of ProjectiveCurve_generic.\n\nIs this a simple oversight in the class hierarchy for AffineCurve_generic, or is there a more fundamental reason why this does not yet work?\n\n\nI made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/affine_morphism.patch\n\nThe patch also changes the constructor of SchemeMorphism_on_points_affine_space to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to\nSchemeMorphism_on_points_projective_space by David Kohel from 2007.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7956\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbff6c2/d3108ab8f2060050\n\nRonald van Luijk encountered the following problem:\n\n```\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n\nThis is fixed in current Sage (e.g. 5.0.prealpha1). A doctest is added by\n\n* [attachment:sage-trac_7956.patch]\n\nHere's a description of the other patch, which fixes an apparent oversight in the class hierarchy.\n\nWe browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as `AlgebraicScheme_subscheme_affine._point_morphism_class()`, but\nis not accessible since `AlgebraicScheme_subscheme_affine` is not a superclass of `AffineCurve_generic`. Comparing it to the projective case, `AlgebraicScheme_subscheme_projective` _is_ a superclass of `ProjectiveCurve_generic`.\n\nIs this a simple oversight in the class hierarchy for `AffineCurve_generic`, or is there a more fundamental reason why this does not yet work?\n\n\nwjp made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/affine_morphism.patch\n\nThe patch also changes the constructor of `SchemeMorphism_on_points_affine_space` to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to\n`SchemeMorphism_on_points_projective_space` by David Kohel from 2007.\n\nApply\n\n* [attachment:sage-trac_7956.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7956\n\n",
+    "closed_at": "2012-08-14T07:02:13Z",
     "created_at": "2010-01-16T18:27:44Z",
     "labels": [
         "component: algebraic geometry",
@@ -24,27 +25,38 @@ From http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbf
 
 Ronald van Luijk encountered the following problem:
 
+```
 sage: S.<p,q> = QQ[]
 sage: A1.<r> = AffineSpace(QQ,1)
 sage: A1_emb = Curve(p-2)
 sage: type(A1_emb)
 <class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>
 sage: g = A1.hom([2,r],A1_emb)
-TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 
-given)
+TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)
+```
 
-We browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as AlgebraicScheme_subscheme_affine._point_morphism_class(), but
-is not accessible since AlgebraicScheme_subscheme_affine is not a superclass of AffineCurve_generic. Comparing it to the projective case, AlgebraicScheme_subscheme_projective _is_ a superclass of ProjectiveCurve_generic.
+This is fixed in current Sage (e.g. 5.0.prealpha1). A doctest is added by
 
-Is this a simple oversight in the class hierarchy for AffineCurve_generic, or is there a more fundamental reason why this does not yet work?
+* [attachment:sage-trac_7956.patch]
+
+Here's a description of the other patch, which fixes an apparent oversight in the class hierarchy.
+
+We browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as `AlgebraicScheme_subscheme_affine._point_morphism_class()`, but
+is not accessible since `AlgebraicScheme_subscheme_affine` is not a superclass of `AffineCurve_generic`. Comparing it to the projective case, `AlgebraicScheme_subscheme_projective` _is_ a superclass of `ProjectiveCurve_generic`.
+
+Is this a simple oversight in the class hierarchy for `AffineCurve_generic`, or is there a more fundamental reason why this does not yet work?
 
 
-I made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:
+wjp made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:
 
 http://www.math.leidenuniv.nl/~wpalenst/sage/affine_morphism.patch
 
-The patch also changes the constructor of SchemeMorphism_on_points_affine_space to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to
-SchemeMorphism_on_points_projective_space by David Kohel from 2007.
+The patch also changes the constructor of `SchemeMorphism_on_points_affine_space` to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to
+`SchemeMorphism_on_points_projective_space` by David Kohel from 2007.
+
+Apply
+
+* [attachment:sage-trac_7956.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7956
 

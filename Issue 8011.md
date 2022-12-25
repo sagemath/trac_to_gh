@@ -4,9 +4,11 @@ archive/issues_008011.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman @fchapoton\n\nIt has a nice guide that can be updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8011\n\n",
+    "closed_at": "2020-09-01T15:49:13Z",
     "created_at": "2010-01-20T08:33:48Z",
     "labels": [
         "component: notebook",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -3,7 +3,8 @@
 archive/issues_009432.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen @nexttime\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9432\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen @nexttime\n\nThis patch will also have to remove some code in mip.pyx managing the lack of an installed solver.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9432\n\n",
+    "closed_at": "2010-07-06T11:50:11Z",
     "created_at": "2010-07-05T23:19:19Z",
     "labels": [
         "component: numerical",
@@ -21,7 +22,9 @@ Assignee: jason, jkantor
 
 CC:  @nathanncohen @nexttime
 
+This patch will also have to remove some code in mip.pyx managing the lack of an installed solver.
 
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/9432
 

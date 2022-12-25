@@ -1,16 +1,17 @@
-# Issue 4034: [with spkg, needs review] Fix rubiks.spkg build on Solaris
+# Issue 4034: [with spkg, positive review] Fix rubiks.spkg build on Solaris
 
 archive/issues_004034.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is a similar problem like the singular.spkg: /usr/bin/install does not exist. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha4/rubiks-20070912.p8.spkg\n\nworks around that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4034\n\n",
+    "closed_at": "2008-09-01T11:34:23Z",
     "created_at": "2008-09-01T09:50:03Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] Fix rubiks.spkg build on Solaris",
+    "title": "[with spkg, positive review] Fix rubiks.spkg build on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4034",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

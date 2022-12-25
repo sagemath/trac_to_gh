@@ -1,16 +1,17 @@
-# Issue 6891: Bring functions.spike_functions.py to 100% coverage
+# Issue 6891: [with patch, positive review] Bring functions.spike_functions.py to 100% coverage
 
 archive/issues_006891.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @jasongrout\n\nKeywords: spike_function\n\nThere was nearly no documentation, and no doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6891\n\n",
+    "closed_at": "2009-10-15T07:16:36Z",
     "created_at": "2009-09-04T20:59:54Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Bring functions.spike_functions.py to 100% coverage",
+    "title": "[with patch, positive review] Bring functions.spike_functions.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6891",
     "user": "https://github.com/kcrisman"

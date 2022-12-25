@@ -6,7 +6,8 @@ archive/issues_009669.json:
     "body": "Assignee: olazo\n\nCC:  @kcrisman\n\nThere is an excelent 2d contour_plot. We should also have 3d one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9669\n\n",
     "created_at": "2010-08-02T16:09:00Z",
     "labels": [
-        "component: graphics"
+        "component: graphics",
+        "minor"
     ],
     "title": "Create contour_plot3d",
     "type": "issue",

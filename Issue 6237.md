@@ -4,6 +4,7 @@ archive/issues_006237.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: roots CDF multiplicities\n\n```\nsage: pari('v')\nv\nsage: pari('u')\nu\nsage: u = QQ['u'].0\nsage: v = QQ['u']['v'].0\nsage: f = v^3 - u^7 + 2*u^3*v\nsage: f.discriminant()\n-27*u^14 - 32*u^9\nsage: f.discriminant().roots(CDF, multiplicities=False)\n\n[-1.03456371594,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n 0,\n -0.31969776999 - 0.983928563571*I,\n -0.31969776999 + 0.983928563571*I,\n 0.836979627962 - 0.608101294789*I,\n 0.836979627962 + 0.608101294789*I]\n```\n\nNote the repetition of 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6237\n\n",
+    "closed_at": "2010-01-13T08:29:51Z",
     "created_at": "2009-06-06T22:30:12Z",
     "labels": [
         "component: basic arithmetic",

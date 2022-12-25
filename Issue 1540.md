@@ -1,16 +1,17 @@
-# Issue 1540: lapack.spkg: remove elf binaries from src/INSTALL
+# Issue 1540: [with spkg] lapack: remove elf binaries from src/INSTALL
 
 archive/issues_001540.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs discussed in http://groups.google.com/group/sage-devel/t/13109b350bd5876c  we should remove the Linux elf binaries in src/INSTALL. They seem to cause trouble with certain OSX compilers. An updated  lapack.spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/lapack-20071123.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1540\n\n",
+    "closed_at": "2007-12-18T20:57:20Z",
     "created_at": "2007-12-16T20:26:33Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "lapack.spkg: remove elf binaries from src/INSTALL",
+    "title": "[with spkg] lapack: remove elf binaries from src/INSTALL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1540",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

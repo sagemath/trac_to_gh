@@ -1,21 +1,22 @@
-# Issue 758: Use NTL directly in Z/nZ polynomials
+# Issue 758: [with patch] Use NTL directly in Z/nZ polynomials
 
 archive/issues_000758.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIt can be vastly faster. There are several layers now...stripping them out one by one. \n\n```\nsage: f = Integers(101)['x'](range(10))\nsage: time for _ in range(10^5): g = f*f\nCPU time: 2.97 s,  Wall time: 3.00 s\n\nsage: f = Integers(100)['x'](range(10))\nsage: time for _ in range(10^5): g = f*f\nCPU time: 0.17 s,  Wall time: 0.18 s\n```\n\n(This is not quite fair because one is using ZZ_p and one is using zz_p, but there is only a factor of <2 between those in NTL.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/758\n\n",
+    "body": "Assignee: @robertwb\n\nIt can be vastly faster. There are several layers now...stripping them out one by one. \n\n```\nsage: f = Integers(101)['x'](range(10))\nsage: time for _ in range(10^5): g = f*f\nCPU time: 2.97 s,  Wall time: 3.00 s\n\nsage: f = Integers(100)['x'](range(10))\nsage: time for _ in range(10^5): g = f*f\nCPU time: 0.17 s,  Wall time: 0.18 s\n```\n\n(This is not quite fair because one is using ZZ_p and one is using zz_p, but there is only a factor of <2 between those in NTL.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/758\n\n",
+    "closed_at": "2007-10-23T21:05:15Z",
     "created_at": "2007-09-28T11:52:26Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Use NTL directly in Z/nZ polynomials",
+    "title": "[with patch] Use NTL directly in Z/nZ polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/758",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @robertwb
 
 It can be vastly faster. There are several layers now...stripping them out one by one. 
 

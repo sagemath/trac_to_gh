@@ -1,16 +1,17 @@
-# Issue 5601: predefine colors in Sage
+# Issue 5601: Colors: CSS3/SVG presets, construct from HSL/HSV, blend/lighter/darker methods
 
 archive/issues_005601.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @robertwb wcauchois\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\n\n* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     \n\n```\n    \"red\"   : (1.0,0.0,0.0),\n    \"orange\": (1.0,.5,0.0),\n    \"yellow\": (1.0,1.0,0.0),\n    \"green\" : (0.0,1.0,0.0),\n    \"blue\"  : (0.0,0.0,1.0),\n    \"purple\": (.5,0.0,1.0),\n    \"white\" : (1.0,1.0,1.0),\n    \"black\" : (0.0,0.0,0.0),\n    \"grey\"  : (.5,.5,.5) \n```\n\n* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color\nnamespace, so they would be accessed like color.goldenrod\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @robertwb wcauchois\n\nThe *sage* repository patch\n\n* [attachment:trac_5601-builtin_colors_v7.patch]\n\nmay also cover parts of #5602, #5603, #5604, and #5605.\n\nThe *sagenb* respository patch\n\n* [attachment:trac_5601-sagenb_doctest.patch]\n\nfixes a doctest in `sagenb.notebook.interact` (purple has changed).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
+    "closed_at": "2010-03-06T15:50:53Z",
     "created_at": "2009-03-24T21:26:24Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "predefine colors in Sage",
+    "title": "Colors: CSS3/SVG presets, construct from HSL/HSV, blend/lighter/darker methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5601",
     "user": "https://github.com/jasongrout"
@@ -20,25 +21,17 @@ Assignee: @williamstein
 
 CC:  @kcrisman @robertwb wcauchois
 
-See the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675
+The *sage* repository patch
 
+* [attachment:trac_5601-builtin_colors_v7.patch]
 
-* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     
+may also cover parts of #5602, #5603, #5604, and #5605.
 
-```
-    "red"   : (1.0,0.0,0.0),
-    "orange": (1.0,.5,0.0),
-    "yellow": (1.0,1.0,0.0),
-    "green" : (0.0,1.0,0.0),
-    "blue"  : (0.0,0.0,1.0),
-    "purple": (.5,0.0,1.0),
-    "white" : (1.0,1.0,1.0),
-    "black" : (0.0,0.0,0.0),
-    "grey"  : (.5,.5,.5) 
-```
+The *sagenb* respository patch
 
-* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color
-namespace, so they would be accessed like color.goldenrod
+* [attachment:trac_5601-sagenb_doctest.patch]
+
+fixes a doctest in `sagenb.notebook.interact` (purple has changed).
 
 Issue created by migration from https://trac.sagemath.org/ticket/5601
 

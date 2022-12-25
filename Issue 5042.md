@@ -1,21 +1,22 @@
-# Issue 5042: notebook -- implement folders
+# Issue 5042: notebook -- implement labels like in Gmail
 
 archive/issues_005042.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @dimpase @mkoeppe\n\nCurrent the only supported folders are Active, Archive, and Trash. A user should be able to add and delete folders. See Google Docs' folder functionality for reference. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5042\n\n",
+    "body": "Assignee: TimothyClemans\n\nCC:  @dimpase @mkoeppe\n\nCurrent the only supported folders are Active, Archive, and Trash. A user should be able to add and delete folders. See Google Docs' folder functionality for reference. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5042\n\n",
+    "closed_at": "2020-05-03T09:38:22Z",
     "created_at": "2009-01-21T05:21:42Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "notebook -- implement folders",
+    "title": "notebook -- implement labels like in Gmail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5042",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 CC:  @dimpase @mkoeppe
 

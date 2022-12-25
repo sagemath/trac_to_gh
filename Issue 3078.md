@@ -1,9 +1,10 @@
-# Issue 3078: [with patch; needs review] sage's spkg-install doesn't return failure if build failed
+# Issue 3078: [with patch; positive review] sage's spkg-install doesn't return failure if build failed
 
 archive/issues_003078.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIf `sage -ba-force` failed, `spkg-install` accidentally returns the return value of an `echo` command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3078\n\n",
+    "closed_at": "2008-05-02T11:55:02Z",
     "created_at": "2008-05-02T10:44:38Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003078.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] sage's spkg-install doesn't return failure if build failed",
+    "title": "[with patch; positive review] sage's spkg-install doesn't return failure if build failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3078",
     "user": "https://github.com/wjp"

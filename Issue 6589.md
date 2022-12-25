@@ -4,6 +4,7 @@ archive/issues_006589.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: Laurent series, doctest, coverage\n\nI (Marshall Hampton) am hoping to work on this in late July or August 2009.  If it hasn't been done by September, assume that I didn't get around to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6589\n\n",
+    "closed_at": "2013-02-08T13:24:35Z",
     "created_at": "2009-07-22T13:07:51Z",
     "labels": [
         "component: algebra",

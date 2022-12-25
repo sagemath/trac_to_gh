@@ -1,16 +1,16 @@
-# Issue 3542: [with patch, needs review] multimodular algorithm for Bernoulli numbers
+# Issue 3542: [with patch, with positive review] multimodular algorithm for Bernoulli numbers
 
 archive/issues_003542.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis patch implements the algorithm in my preprint \"A multimodular algorithm for computing Bernoulli numbers\".\n\nhttp://math.harvard.edu/~dmharvey/bernmm/\n\nIt adds a few files into a new bernmm directory, a cython wrapper (bernmm.pyx), modifies setup.py to build those files, removes the old implementation of `bernoulli_mod_p_single`, and adds a new algorithm option and a `num_threads` option to the global `bernoulli()` function.\n\nMy main concern from a build point of view is whether pthreads is supported on all of our target platforms. If not, it will be necessary to modify setup.py to conditionally remove the -lpthreads option and also to #define `USE_THREADS` appropriately.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3542\n\n",
+    "closed_at": "2008-08-11T01:24:55Z",
     "created_at": "2008-07-02T19:22:20Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] multimodular algorithm for Bernoulli numbers",
+    "title": "[with patch, with positive review] multimodular algorithm for Bernoulli numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3542",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

@@ -4,9 +4,10 @@ archive/issues_007844.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @williamstein @dandrake\n\nOn publishing a new worksheet:\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 1316, in render\n            addr += notebook.address\n        exceptions.AttributeError: 'Notebook' object has no attribute 'address'\n```\n\nI think this is a follow-up to #7639.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7844\n\n",
+    "closed_at": "2010-01-05T04:00:36Z",
     "created_at": "2010-01-05T02:24:47Z",
     "labels": [
-        "component: algebra",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",

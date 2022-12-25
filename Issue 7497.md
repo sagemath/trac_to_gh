@@ -3,7 +3,8 @@
 archive/issues_007497.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the notebook, click \"Data --> Upload or create file...\", then edit the file to contain\n\n```\nHi </textarea> foo bar \n```\n\nSave it and re-open it.  The foo bar is *outside* the text area!  This is because this is rendered using the data/sage/html/notebook/download_or_delete_datafile.html template with this line in it:\n\n```\n    <textarea class=\"edit\" name=\"textfield\" rows=17 cols=70 id=\"textfield\">{{ text_file_content }}</textarea>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7497\n\n",
+    "body": "Assignee: boothby\n\nIn the notebook, click \"Data --> Upload or create file...\", then edit the file to contain\n\n```\nHi </textarea> foo bar \n```\n\nSave it and re-open it.  The foo bar is *outside* the text area!  This is because this is rendered using the data/sage/html/notebook/download_or_delete_datafile.html template with this line in it:\n\n```\n    <textarea class=\"edit\" name=\"textfield\" rows=17 cols=70 \n    id=\"textfield\">{{ text_file_content }}</textarea>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7497\n\n",
+    "closed_at": "2010-01-19T03:15:25Z",
     "created_at": "2009-11-20T05:37:45Z",
     "labels": [
         "component: notebook",
@@ -27,7 +28,8 @@ Hi </textarea> foo bar
 Save it and re-open it.  The foo bar is *outside* the text area!  This is because this is rendered using the data/sage/html/notebook/download_or_delete_datafile.html template with this line in it:
 
 ```
-    <textarea class="edit" name="textfield" rows=17 cols=70 id="textfield">{{ text_file_content }}</textarea>
+    <textarea class="edit" name="textfield" rows=17 cols=70 
+    id="textfield">{{ text_file_content }}</textarea>
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/7497

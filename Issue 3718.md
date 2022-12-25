@@ -1,22 +1,23 @@
-# Issue 3718: calculus -- sage treats limits involving floor and ceil completely wrong
+# Issue 3718: [with patch, positive review] calculus -- sage treats limits involving floor and ceil completely wrong
 
 archive/issues_003718.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n```\nHi,\n\nThis email is about the fact that Sage (and Maxima and sympy)\nall give the wrong answer for a certain limit, at least if one follows\nthe standard definition given at wikipedia of limit.  The limit in question\nis\n\n   lim_{x --> 0 from below}   floor(x)\n\nThis problem was reported two weeks ago by John Perry (my old\noffice might from Northern Arizona Univeristy 14 years ago, by\nthe way...)\n\nSee below for full details.\n\n> That looks to me like a bug caused by an underlying bug in maxima.\n> maxima: limit(floor(x),x,0,`minus')\n> does not finish,\n> while\n> maxima: limit(floor(x),x,0)\n> 0\n> John Cremona\n\nIn maxima it would be limit(floor(x),x,0,minus) -- i.e., no quotes, and\nthat does finish.   However the output directly from maxima\nis still 0.   I've cc'd this email to maxima-devel and Robert\nDodier, in case they have a comment.  I've also sent it to\nthe sympy list since sympy also gives the wrong answer\n(see below).\n\n\n---------------------------------------------------\nteragon-2:doc was$ sage -maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) limit(floor(x),x,0,minus);\n(%o1)                                  0\n(%i4) limit(ceiling(x),x,0,plus);\n(%o4)                                  0\n-------------------------------------------------\n\nIf you read the formal definition of limit, e.g., as given at\n\n     http://en.wikipedia.org/wiki/Limit_of_a_function\n\nyou'll see the output of Maxima (and sage) is just plain wrong.\n\n\n-----\n\nHere's sympy (also wrong):\n\nsage: import sympy\nsage: x = sympy.var('x')\nsage: f = sympy.floor(x)\nsage: f.limit(x, 0, '<')\n0\nsage: f.limit(x, 0, '>')\n0\n\n\n\n-----\n\nMaple does exactly the right thing of course, and uses\nbetter names -- left and right -- (imho) than Sage's \n\"minus\" and \"plus\":\n\nsage: maple('limit(floor(x),x=0,left)')\n-1\nsage: maple('limit(floor(x),x=0,right)')\n0\nsage: maple('limit(floor(x),x=0)')\nundefined\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3718\n\n",
+    "body": "Assignee: @aghitza\n\n```\nHi,\n\nThis email is about the fact that Sage (and Maxima and sympy)\nall give the wrong answer for a certain limit, at least if one follows\nthe standard definition given at wikipedia of limit.  The limit in question\nis\n\n   lim_{x --> 0 from below}   floor(x)\n\nThis problem was reported two weeks ago by John Perry (my old\noffice might from Northern Arizona Univeristy 14 years ago, by\nthe way...)\n\nSee below for full details.\n\n> That looks to me like a bug caused by an underlying bug in maxima.\n> maxima: limit(floor(x),x,0,`minus')\n> does not finish,\n> while\n> maxima: limit(floor(x),x,0)\n> 0\n> John Cremona\n\nIn maxima it would be limit(floor(x),x,0,minus) -- i.e., no quotes, and\nthat does finish.   However the output directly from maxima\nis still 0.   I've cc'd this email to maxima-devel and Robert\nDodier, in case they have a comment.  I've also sent it to\nthe sympy list since sympy also gives the wrong answer\n(see below).\n\n\n---------------------------------------------------\nteragon-2:doc was$ sage -maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) limit(floor(x),x,0,minus);\n(%o1)                                  0\n(%i4) limit(ceiling(x),x,0,plus);\n(%o4)                                  0\n-------------------------------------------------\n\nIf you read the formal definition of limit, e.g., as given at\n\n     http://en.wikipedia.org/wiki/Limit_of_a_function\n\nyou'll see the output of Maxima (and sage) is just plain wrong.\n\n\n-----\n\nHere's sympy (also wrong):\n\nsage: import sympy\nsage: x = sympy.var('x')\nsage: f = sympy.floor(x)\nsage: f.limit(x, 0, '<')\n0\nsage: f.limit(x, 0, '>')\n0\n\n\n\n-----\n\nMaple does exactly the right thing of course, and uses\nbetter names -- left and right -- (imho) than Sage's \n\"minus\" and \"plus\":\n\nsage: maple('limit(floor(x),x=0,left)')\n-1\nsage: maple('limit(floor(x),x=0,right)')\n0\nsage: maple('limit(floor(x),x=0)')\nundefined\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3718\n\n",
+    "closed_at": "2009-10-15T05:24:20Z",
     "created_at": "2008-07-24T10:26:47Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "calculus -- sage treats limits involving floor and ceil completely wrong",
+    "title": "[with patch, positive review] calculus -- sage treats limits involving floor and ceil completely wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3718",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @garyfurnish
+Assignee: @aghitza
 
 ```
 Hi,

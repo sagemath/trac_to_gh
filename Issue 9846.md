@@ -1,16 +1,18 @@
-# Issue 9846: Handle a preset R_PROFILE variable
+# Issue 9846: Handle preset R_PROFILE or R_HOME variables
 
 archive/issues_009846.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  ggrafendorfer @kcrisman\n\nA preset `R_PROFILE` variable can cause some R packages to fail to build/install and interfere with doctests.\n\nGeorg Grafendorfer [reported this problem on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/41eab313614e6d2a#41eab313614e6d2a).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9847\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  ggrafendorfer @kcrisman\n\nA preset `R_PROFILE` variable can cause some R packages to fail to build/install and interfere with doctests.\n\nGeorg Grafendorfer [reported this problem on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/41eab313614e6d2a#41eab313614e6d2a).\n\nFor `R_HOME`, this yields a doctest failure if set:\n\n```\n**********************************************************************\nFile \"devel/sage/sage/misc/interpreter.py\", line 187, in sage.misc.interpreter.SageInteractiveShell.system_raw\nFailed example:\n    shell.system_raw('R --version')\nExpected:\n    R version ...\nGot:\n    WARNING: ignoring environment value of R_HOME\n    R version 2.15.2 (2012-10-26) -- \"Trick or Treat\"\n    Copyright (C) 2012 The R Foundation for Statistical Computing\n    ISBN 3-900051-07-0\n    Platform: x86_64-unknown-linux-gnu (64-bit)\n    <BLANKLINE>\n    R is free software and comes with ABSOLUTELY NO WARRANTY.\n    You are welcome to redistribute it under the terms of the\n    GNU General Public License versions 2 or 3.\n    For more information about these matters see\n    http://www.gnu.org/licenses/.\n    <BLANKLINE>\n**********************************************************************\n```\n\n**Apply** [attachment:9847_unset_R.patch] to `SAGE_ROOT`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9847\n\n",
+    "closed_at": "2013-03-28T17:55:25Z",
     "created_at": "2010-09-01T09:45:22Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.9",
-    "title": "Handle a preset R_PROFILE variable",
+    "title": "Handle preset R_PROFILE or R_HOME variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9846",
     "user": "https://github.com/qed777"
@@ -23,6 +25,33 @@ CC:  ggrafendorfer @kcrisman
 A preset `R_PROFILE` variable can cause some R packages to fail to build/install and interfere with doctests.
 
 Georg Grafendorfer [reported this problem on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/41eab313614e6d2a#41eab313614e6d2a).
+
+For `R_HOME`, this yields a doctest failure if set:
+
+```
+**********************************************************************
+File "devel/sage/sage/misc/interpreter.py", line 187, in sage.misc.interpreter.SageInteractiveShell.system_raw
+Failed example:
+    shell.system_raw('R --version')
+Expected:
+    R version ...
+Got:
+    WARNING: ignoring environment value of R_HOME
+    R version 2.15.2 (2012-10-26) -- "Trick or Treat"
+    Copyright (C) 2012 The R Foundation for Statistical Computing
+    ISBN 3-900051-07-0
+    Platform: x86_64-unknown-linux-gnu (64-bit)
+    <BLANKLINE>
+    R is free software and comes with ABSOLUTELY NO WARRANTY.
+    You are welcome to redistribute it under the terms of the
+    GNU General Public License versions 2 or 3.
+    For more information about these matters see
+    http://www.gnu.org/licenses/.
+    <BLANKLINE>
+**********************************************************************
+```
+
+**Apply** [attachment:9847_unset_R.patch] to `SAGE_ROOT`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9847
 

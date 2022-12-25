@@ -1,16 +1,17 @@
-# Issue 4109: The complement of a graph shows as the original graph
+# Issue 4109: The position dictionary of a graph is not cleared when creating a complement.
 
 archive/issues_004109.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\ng=graphs.PathGraph(6)\ng.show()\nh = g.complement()\nh.show()\n```\nThe last command shows the original P_6, not the complement.  However, calling `h.edges()` seems to return the right results.  Also, `Graph(h).show()` shows the correct thing, I think.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4109\n\n",
+    "closed_at": "2008-09-13T18:45:06Z",
     "created_at": "2008-09-13T04:43:20Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "The complement of a graph shows as the original graph",
+    "title": "The position dictionary of a graph is not cleared when creating a complement.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4109",
     "user": "https://github.com/jasongrout"

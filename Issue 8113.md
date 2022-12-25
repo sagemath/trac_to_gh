@@ -4,9 +4,10 @@ archive/issues_008113.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  drkirkby\n\nBuild will be 32 bit, even when SAGE64=\"yes\".\n\nThere is a simple patch coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8113\n\n",
+    "closed_at": "2010-02-11T15:16:29Z",
     "created_at": "2010-01-28T17:24:13Z",
     "labels": [
-        "component: algebra",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",

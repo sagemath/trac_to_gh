@@ -1,15 +1,16 @@
-# Issue 7254: sagenb notebook: automatic worksheet refreshing and synchronization
+# Issue 7254: [with patch; positive review] sagenb notebook: automatic worksheet refreshing and synchronization
 
 archive/issues_007254.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf two users open the same worksheet, one changing it should appear to the other.  If the same person opens the same worksheet in multiple tabs or browser, changing one should update all views.  Finally, hitting the back button after viewing a worksheet (to get back to it) shouldn't result in massive corruption.  This relatively simple patch solves these problems in a very simple and direct manner.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7254\n\n",
+    "closed_at": "2009-11-11T19:47:15Z",
     "created_at": "2009-10-20T07:01:14Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "sagenb notebook: automatic worksheet refreshing and synchronization",
+    "title": "[with patch; positive review] sagenb notebook: automatic worksheet refreshing and synchronization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7254",
     "user": "https://github.com/williamstein"

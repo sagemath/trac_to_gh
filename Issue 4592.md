@@ -1,16 +1,17 @@
-# Issue 4592: new setup.py dependency checking does not handle Cython built-in pxd files
+# Issue 4592: [with patch, positive review] new setup.py dependency checking does not handle Cython built-in pxd files
 
 archive/issues_004592.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @robertwb\n\nI can't get #4580 to compile, and I think this is why:\n\n#4580 adds \"`from python_int cimport PyInt_AS_LONG`\" to a Sage library file.  I believe this is intended to refer to $SAGE_ROOT/local/lib/python2.5/site-packages/Cython/Includes/python_int.pxd, but the setup.py dependency checker doesn't know about these Cython built-in pxd files, so it fails with an error: \n\n```\nIOError: [Errno 2] No such file or directory: 'sage/rings/polynomial/python_int.pxd'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4592\n\n",
+    "closed_at": "2008-11-23T23:47:35Z",
     "created_at": "2008-11-23T04:56:53Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "new setup.py dependency checking does not handle Cython built-in pxd files",
+    "title": "[with patch, positive review] new setup.py dependency checking does not handle Cython built-in pxd files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4592",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -3,7 +3,8 @@
 archive/issues_002978.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jdemeyer\n\nOn most platforms R with Sage does *not* build with png support.  Fix this and revert #2974 once this is fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2978\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @jdemeyer\n\nOn most platforms R with Sage does *not* build with png support.  Fix this and revert #2974 once this is fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2978\n\n",
+    "closed_at": "2011-07-05T10:07:00Z",
     "created_at": "2008-04-21T02:34:11Z",
     "labels": [
         "component: packages: standard",
@@ -16,7 +17,7 @@ archive/issues_002978.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @jasongrout
 
 CC:  @jdemeyer
 

@@ -1,16 +1,17 @@
-# Issue 1353: [with patch] fix easy bug in graph_database.py
+# Issue 1353: [with patch, with positive review] fix easy bug in graph_database.py
 
 archive/issues_001353.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1353\n\n",
+    "closed_at": "2007-12-01T23:31:54Z",
     "created_at": "2007-12-01T21:04:07Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] fix easy bug in graph_database.py",
+    "title": "[with patch, with positive review] fix easy bug in graph_database.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1353",
     "user": "https://github.com/rlmill"

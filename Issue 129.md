@@ -4,6 +4,7 @@ archive/issues_000129.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen you build a sage tree at one location and then move it to another location, introspection is broken. Example:\n\nNumberField?\n\nwould still quote an absolute file name in the old location and\n\nNumberField??\n\nwould fail.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/129\n\n",
+    "closed_at": "2006-10-14T07:07:19Z",
     "created_at": "2006-10-14T05:35:46Z",
     "labels": [
         "component: interfaces",

@@ -1,4 +1,4 @@
-# Issue 5325: Make an optional spkg for basemap
+# Issue 5325: Make an experimental spkg for basemap
 
 archive/issues_005325.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_005325.json:
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "Make an optional spkg for basemap",
+    "title": "Make an experimental spkg for basemap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5325",
     "user": "https://github.com/jasongrout"

@@ -1,23 +1,22 @@
-# Issue 261: a new matrix constructor
+# Issue 261: a new matrix constructor: add lambda support
 
 archive/issues_000261.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKyle Schalm suggests:\n\n```\n \n \nhere is a matrix constructor i would like to see:\n \nMatrix(M, N, f):\n   for i in range(1,M+1):\n     for j in range(1,N+1):\n       self[i][j] = f(i,j)   # or whatever the syntax is\n \n \ni might use it like this:\n \nA = Matrix(3, 3, lambda i,j: i+j)\n \ni'd do it myself, but i don't have a development environment set up,\nand don't wanna do that right now.\n \ncheers,\nkyle\n \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/261\n\n",
+    "body": "CC:  @jasongrout\n\nKyle Schalm suggests:\n\n```\n \n \nhere is a matrix constructor i would like to see:\n \nMatrix(M, N, f):\n   for i in range(1,M+1):\n     for j in range(1,N+1):\n       self[i][j] = f(i,j)   # or whatever the syntax is\n \n \ni might use it like this:\n \nA = Matrix(3, 3, lambda i,j: i+j)\n \ni'd do it myself, but i don't have a development environment set up,\nand don't wanna do that right now.\n \ncheers,\nkyle\n \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/261\n\n",
+    "closed_at": "2010-04-15T05:18:48Z",
     "created_at": "2007-02-14T06:49:52Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "a new matrix constructor",
+    "title": "a new matrix constructor: add lambda support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/261",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
-
 CC:  @jasongrout
 
 Kyle Schalm suggests:

@@ -4,6 +4,7 @@ archive/issues_005049.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf you do\n\n```\nshow(mathematica('2/3'))\n```\n\nin the notebook, you get no output.  Since latex(mathematica(...)) works great, this is stupid. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5049\n\n",
+    "closed_at": "2009-06-05T01:02:34Z",
     "created_at": "2009-01-21T12:07:18Z",
     "labels": [
         "component: interfaces",

@@ -3,7 +3,8 @@
 archive/issues_009411.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  jeremywest @JohnCremona\n\nKeywords: LLL, rank\n\nThis is based on magma code from Cremona.  It takes a set of points on an elliptic curve and uses LLL to return a ZZ-independent set with the same ZZ-span.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9411\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  jeremywest @JohnCremona\n\nKeywords: LLL, rank, sd35.5\n\nThis is based on magma code from Cremona.  It takes a set of points on an elliptic curve and uses LLL to return a ZZ-independent set with the same ZZ-span.\n\nApply:\n* [attachment:trac_9411_lll_reduce_number_field.2.patch]\n* [attachment:trac_9411_review.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9411\n\n",
+    "closed_at": "2013-12-05T08:02:12Z",
     "created_at": "2010-07-02T20:18:16Z",
     "labels": [
         "component: elliptic curves",
@@ -20,9 +21,13 @@ Assignee: @JohnCremona
 
 CC:  jeremywest @JohnCremona
 
-Keywords: LLL, rank
+Keywords: LLL, rank, sd35.5
 
 This is based on magma code from Cremona.  It takes a set of points on an elliptic curve and uses LLL to return a ZZ-independent set with the same ZZ-span.
+
+Apply:
+* [attachment:trac_9411_lll_reduce_number_field.2.patch]
+* [attachment:trac_9411_review.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9411
 

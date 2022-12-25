@@ -1,16 +1,17 @@
-# Issue 2585: [with-patch] padic bugfix - check=False in constructor
+# Issue 2585: [with-patch, positive review] padic bugfix - check=False in constructor
 
 archive/issues_002585.json:
 ```json
 {
     "body": "Assignee: @roed314\n\nFixes bug in Qp, Zp, etc that causes segmentation faults in the constructor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2585\n\n",
+    "closed_at": "2008-03-19T01:23:13Z",
     "created_at": "2008-03-18T12:06:34Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with-patch] padic bugfix - check=False in constructor",
+    "title": "[with-patch, positive review] padic bugfix - check=False in constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2585",
     "user": "https://github.com/roed314"

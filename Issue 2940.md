@@ -4,10 +4,10 @@ archive/issues_002940.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe following should all work \n\n```\nsage: var('x,y')\n(x, y)\nsage: (a < 1) + (b < 2)\nb + a < 3\nsage: (a < 1) + (b <= 2)\na + b < 3\nsage: (a <= 1) + (b == 2)\na + b <= 3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2940\n\n",
+    "closed_at": "2009-06-24T15:15:58Z",
     "created_at": "2008-04-16T09:07:51Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "symbolic equation arithmetic is to restrictive",

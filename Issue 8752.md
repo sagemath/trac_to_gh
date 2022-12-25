@@ -4,6 +4,7 @@ archive/issues_008752.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: integral, numerical conversion\n\nConsider the following (in sage 4.3.5):\n\n```\nsage: integral(exp(-x^2), x, 17, 42)   \n-1/2*sqrt(pi)*erf(17) + 1/2*sqrt(pi)*erf(42)\nsage: N(-1/2*sqrt(pi)*erf(17) + 1/2*sqrt(pi)*erf(42))\n0.000000000000000\n```\nBut:\n\n```\nsage: N(integral(exp(-x^2), x, 17, 42))              \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.5/<ipython console> in <module>()\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/misc/functional.pyc in numerical_approx(x, prec, digits)\n   1161             prec = int((digits+1) * 3.32192) + 1\n   1162     try:\n-> 1163         return x.numerical_approx(prec)\n   1164     except AttributeError:\n   1165         from sage.rings.complex_double import is_ComplexDoubleElement\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17043)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8752\n\n",
+    "closed_at": "2010-04-23T18:21:47Z",
     "created_at": "2010-04-23T15:33:48Z",
     "labels": [
         "component: calculus",

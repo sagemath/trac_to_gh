@@ -1,9 +1,10 @@
-# Issue 2511: fix mistake in the animate docs (trivial to fix)
+# Issue 2511: [already fixed?] fix mistake in the animate docs (trivial to fix)
 
 archive/issues_002511.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nOn Thu, Mar 13, 2008 at 11:41 AM, Hector Villafuerte <hectorvd@gmail.com> wrote:\n> \n>  Hi,\n>  the docstring for animate gives the following example:\n>  \n>  sage: a = animate([sin(x + float(k)) for k in srange(0,4,0.3)],\n>  xmin=0, xmax=2*pi, figsize=[2,1])\n>  sage: a.show()\n>  \n>  \n>  Which fails on my brand new sage-2.10.3 with:\n>  \n>  Traceback (most recent call last):\n>  ...\n>  AttributeError: Unknown property xmin\n>  \n>  \n>  The following code gives the desired animation:\n>  \n>  sage: a = animate([plot(sin(x + float(k)), 0, pi) for k in\n>  srange(0,4,0.3)], xmin=0, xmax=2*pi, figsize=[2,1])\n>  sage: a.show()\n>  \n>  Question: is this a bug? i.e. should animate work as shown in it's\n>  docstring example?\n>  Just for completion, I also tried it on www.sagenb.org and got the same results.\n>  Best,\n\nYes, this is *definitely* a bug.  It wasn't caught because the docstrings\nfor animate are marked optional, since animate currently depends on\nthe convert command being present to make animate gif's (is there any\nbetter way?!).  \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2511\n\n",
+    "closed_at": "2008-03-28T08:45:59Z",
     "created_at": "2008-03-13T22:30:20Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_002511.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "fix mistake in the animate docs (trivial to fix)",
+    "title": "[already fixed?] fix mistake in the animate docs (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2511",
     "user": "https://github.com/williamstein"

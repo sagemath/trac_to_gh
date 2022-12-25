@@ -4,6 +4,7 @@ archive/issues_009680.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nI just found this gem.  Apparently, something replaces \"self\" with the current classname in the documentation.  Amusingly, this almost made something comprehensible by accident.\n\n```\nsage: DLXMatrix?\n...\nThe 0 entry is reserved internally... Blame the original author, or fix it yourDLXMatrix.\n```\n\nwhere it should read \"yourself\" at the end of the sentence.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9680\n\n",
+    "closed_at": "2015-04-23T01:45:07Z",
     "created_at": "2010-08-03T23:32:00Z",
     "labels": [
         "component: documentation",

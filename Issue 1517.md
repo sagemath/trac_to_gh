@@ -4,6 +4,7 @@ archive/issues_001517.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nMany people have run out of disc space while building Sage. So check in `sage-spkg` if at least K MB are free on the partition we are building Sage in. K should be a couple hundred Megabytes in my opinion ;) We might also print a warning once we go below another, higher threshold. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1517\n\n",
+    "closed_at": "2013-06-19T12:21:20Z",
     "created_at": "2007-12-15T02:35:11Z",
     "labels": [
         "component: packages: standard",

@@ -1,16 +1,17 @@
-# Issue 1439: (EASY) make install_package('...') through the notebook far less verbose
+# Issue 1439: make install_package('...') through the notebook far less verbose
 
 archive/issues_001439.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nBackground:\n\n```\nOn Dec 9, 2007 1:00 PM, root <daly@axiom-developer.org> wrote:\n> >The main plus of this packaging for sage is that it builds from\n> >source quickly (in a few minutes) using precompiled clisp files.\n> \n> Well, on my 2Ghz machine with 2 Gig of memory running VMWare and\n> using the sage vmware image (but upgrading the VM to have 1G memory)\n> I started the package-install at 3:30am this morning. It is now\n> 2:10pm and the build is still \"in-process\". They are heavy things,\n> your minutes :-)\n\nOn a 1.8Ghz opteron (sagemath.org) it takes 18 minutes (I just tested \nthe install).   I am completely baffled that it would take > 11 hours to\ninstall into vmware under windows.  I'll look into that next time I get a\nchance to use windows (in my office).   Thanks for reporting the problem. \n\n> Likely a portion of the problem is due to starting the package-install\n> from the notebook. I'm running native windows and sage in the VM and\n> connecting thru the browser.\n\nThat is very likely the problem.  The output of installing packages through\nthe notebook is way too verbose, so this is in fact a likely source of\nthe problem (which could be remedied).   Better would be to login as \"manage\"\nand type \"sage -i fricas-0.3.1\".  \n\n> I suspect a lot of CPU is going into running jsMath to redraw the\n> output page. The Fricas build has a lot of output (which could be\n> suppressed during package-install) and jsMath is not fast. Axiom\n> has a NOISE variable in the Makefiles to suppress most output.\n\nExcellent. \n\n> You might consider a note suggesting that installs be done from\n> inside the virtual machine rather than thru the notebook interface.\n\nBetter would be to fix things so they work through the notebook well.\n\n```\n\nThe fix would likely be to execute the update command, but pipe everything\nto a file, and include a link to that file in the output (so one can look\nat it and press refresh in the browser to test status).  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1439\n\n",
+    "closed_at": "2010-01-19T03:16:50Z",
     "created_at": "2007-12-09T20:06:02Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "(EASY) make install_package('...') through the notebook far less verbose",
+    "title": "make install_package('...') through the notebook far less verbose",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1439",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_005274.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nKeywords: matrix, category check framework\n\nThe coherency check for matrices is now done by hand in matrix/matrix_spaces.py When the automated check framework for categories is finished and integrated, we should use it to automatically ensure that all matrix spaces are checked. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5274\n\n",
+    "closed_at": "2009-10-19T17:21:40Z",
     "created_at": "2009-02-14T17:33:26Z",
     "labels": [
         "component: linear algebra",

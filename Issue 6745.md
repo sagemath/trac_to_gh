@@ -1,15 +1,16 @@
-# Issue 6745: quaternion algebras -- add computation of left and right orders associated to ideals
+# Issue 6745: [with patch, positive review] quaternion algebras -- add computation of left and right orders associated to ideals
 
 archive/issues_006745.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nA big gap in functionality for quaternion algebras right now is that one can't compute the left and right orders associated to ideals (the functions raise NotImplementedError).    I just designed a little algorithm and wrote code to do this for my research and will post a patch here soon. \n\nJust in case I misplace it, some demo code that works is the following:\n\n```\ndef left_order(I):\n    Q = O.quaternion_algebra()\n    M = [matrix([(a*b).coefficient_tuple() for a in Q.basis()]) for b in I.basis()]\n    B = I.basis_matrix()\n    invs = [(B*m^(-1)).row_module(ZZ) for m in M]\n    IS = invs[0].intersection(invs[1]).intersection(invs[2]).intersection(invs[3])\n    ISB = [Q(v) for v in IS.basis()]\n    return Q.quaternion_order(ISB)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6745\n\n",
+    "body": "Assignee: tbd\n\nA big gap in functionality for quaternion algebras right now is that one can't compute the left and right orders associated to ideals (the functions raise NotImplementedError).    I just designed a little algorithm and wrote code to do this for my research and will post a patch here soon. \n\nJust in case I misplace it, some demo code that works is the following:\n\n```\ndef left_order(I):\n    Q = I.quaternion_algebra()\n    M = [matrix([(a*b).coefficient_tuple() for a in Q.basis()]) for b in I.basis()]\n    B = I.basis_matrix()\n    invs = [(B*m^(-1)).row_module(ZZ) for m in M]\n    IS = invs[0].intersection(invs[1]).intersection(invs[2]).intersection(invs[3])\n    ISB = [Q(v) for v in IS.basis()]\n    return Q.quaternion_order(ISB)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6745\n\n",
+    "closed_at": "2009-09-02T15:41:53Z",
     "created_at": "2009-08-14T16:23:57Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "quaternion algebras -- add computation of left and right orders associated to ideals",
+    "title": "[with patch, positive review] quaternion algebras -- add computation of left and right orders associated to ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6745",
     "user": "https://github.com/williamstein"
@@ -23,7 +24,7 @@ Just in case I misplace it, some demo code that works is the following:
 
 ```
 def left_order(I):
-    Q = O.quaternion_algebra()
+    Q = I.quaternion_algebra()
     M = [matrix([(a*b).coefficient_tuple() for a in Q.basis()]) for b in I.basis()]
     B = I.basis_matrix()
     invs = [(B*m^(-1)).row_module(ZZ) for m in M]

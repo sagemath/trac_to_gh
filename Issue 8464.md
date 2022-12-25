@@ -3,7 +3,8 @@
 archive/issues_008464.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nAdd the [FAQ](http://wiki.sagemath.org/faq) on the Sage wiki to the Sage [standard documentation](http://www.sagemath.org/doc/). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8464\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nKeywords: FAQ\n\nAdd the [FAQ](http://wiki.sagemath.org/faq) on the Sage wiki to the Sage [standard documentation](http://www.sagemath.org/doc/). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** The current ticket needs to be coordinated with #8470.\n\n\n\n**Prerequisites:** #8480\n\n\n\n**Apply in this order:**\n\n1. [trac_8464-faq.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-faq.patch)\n2. [trac_8464-ref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-ref.patch)\n3. [trac_8464-faq-general.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-faq-general.2.patch)\n4. [trac_8464-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-doctest.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8464\n\n",
+    "closed_at": "2010-06-09T03:38:32Z",
     "created_at": "2010-03-07T01:52:58Z",
     "labels": [
         "component: documentation"
@@ -19,7 +20,26 @@ Assignee: mvngu
 
 CC:  @jhpalmieri
 
+Keywords: FAQ
+
 Add the [FAQ](http://wiki.sagemath.org/faq) on the Sage wiki to the Sage [standard documentation](http://www.sagemath.org/doc/). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
+
+
+
+**Notes:** The current ticket needs to be coordinated with #8470.
+
+
+
+**Prerequisites:** #8480
+
+
+
+**Apply in this order:**
+
+1. [trac_8464-faq.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-faq.patch)
+2. [trac_8464-ref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-ref.patch)
+3. [trac_8464-faq-general.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-faq-general.2.patch)
+4. [trac_8464-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8464/trac_8464-doctest.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8464
 

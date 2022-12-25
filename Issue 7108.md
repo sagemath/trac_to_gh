@@ -1,9 +1,10 @@
-# Issue 7108: Sage 4.1.2.rc0 doctest failures on 32-bit Fedora 9
+# Issue 7108: Sage 4.1.2.rc0 doctest failures on 32-bit Fedora 9 (cicero on skynet)
 
 archive/issues_007108.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAs the subject says. This was reported to [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c8b23afa63990d0f).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7108\n\n",
+    "closed_at": "2009-10-07T12:47:15Z",
     "created_at": "2009-10-04T06:17:06Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_007108.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Sage 4.1.2.rc0 doctest failures on 32-bit Fedora 9",
+    "title": "Sage 4.1.2.rc0 doctest failures on 32-bit Fedora 9 (cicero on skynet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7108",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

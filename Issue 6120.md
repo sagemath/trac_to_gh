@@ -1,16 +1,17 @@
-# Issue 6120: [with patch, needs review] P(0).total_degree() should return -1 for multivariate polynomial rings
+# Issue 6120: [with patch, positive review] P(0).total_degree() should return -1 for multivariate polynomial rings
 
 archive/issues_006120.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @JohnCremona simonking\n\nbut it returns `0` now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6120\n\n",
+    "closed_at": "2009-05-31T23:57:29Z",
     "created_at": "2009-05-22T10:43:21Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] P(0).total_degree() should return -1 for multivariate polynomial rings",
+    "title": "[with patch, positive review] P(0).total_degree() should return -1 for multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6120",
     "user": "https://github.com/malb"

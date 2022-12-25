@@ -4,6 +4,7 @@ archive/issues_008256.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: misc documentation\n\nThe documentation of the misc directory is a mess. We should sort and organize the file `misc.rst`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8256\n\n",
+    "closed_at": "2015-07-17T20:06:10Z",
     "created_at": "2010-02-13T16:51:49Z",
     "labels": [
         "component: documentation",

@@ -4,6 +4,7 @@ archive/issues_004663.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nAfter the cleanup from #4661 there are still various commented out Extensions in module_list. While some of those will come in potentially useful audit the files and remove potentially dead and terrible code while keeping around the good bits for resurrection. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4663\n\n",
+    "closed_at": "2015-04-14T23:04:10Z",
     "created_at": "2008-11-30T09:34:39Z",
     "labels": [
         "component: build",

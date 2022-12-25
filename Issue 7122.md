@@ -4,6 +4,7 @@ archive/issues_007122.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI try to plot a half-circle with the \n\n```\nvar('m')\nparametric_plot ([real(m+sqrt(1-m^2)), imaginary(m+sqrt(1-m^2))],m,-1,1)\n``` \n\nand get a severe error.\n\nTheses plots are right :\n\n```\nplot([sqrt(m2+1)],m,0,6)\nplot(real (sqrt(m2+1)),m,0,6)\n```\n\nBut this one with AND real(...) or imaginary(...) AND list AND sqrt(...)  fails :\n\n```\nplot([real (sqrt(m2+1))],m,0,6)\n```\n\nOn devel-support kcrisman proposes :\n\n\nAfter looking at the traceback about an extra argument, I have a\nsneaky suspicion this is because sqrt takes an extra keyword prec,\nwhich perhaps is getting caught up in fast_float somehow.  What's\ninteresting is that the problem also only shows up for a list, so\nagain fast_float([]) is what's getting concerned.  Those who know how fast_float and the expression trees work will hopefully check this out as they get an opportunity.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7122\n\n",
+    "closed_at": "2009-10-21T04:04:19Z",
     "created_at": "2009-10-05T15:15:11Z",
     "labels": [
         "component: graphics",

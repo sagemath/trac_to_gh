@@ -4,9 +4,10 @@ archive/issues_007193.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nSince *everybody* is totally stumped about how to fix Sage on OS X 10.6, let's release but print a big warning message about the one remaining bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7193\n\n",
+    "closed_at": "2009-11-12T06:05:57Z",
     "created_at": "2009-10-12T05:10:01Z",
     "labels": [
-        "component: algebra",
+        "component: distribution",
         "blocker",
         "bug"
     ],

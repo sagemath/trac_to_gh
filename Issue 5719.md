@@ -1,16 +1,17 @@
-# Issue 5719: [with patch, needs review] Corrected a bad deprecation message.
+# Issue 5719: [with patch, positive review] Corrected a bad deprecation message.
 
 archive/issues_005719.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Warning message\n\nCurrenctly when calling count on a combinatorial class the deprecation message is:\n   \n   The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n\nWhereas it should be\n\n   The usage of count for combinatorial classes is deprecated. Please use cardinality\n\nCorrected my patch. Apologies for this mistake. Thanks to Daniel Bump for reporting it. \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5719\n\n",
+    "closed_at": "2009-04-08T21:37:17Z",
     "created_at": "2009-04-08T21:20:05Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Corrected a bad deprecation message.",
+    "title": "[with patch, positive review] Corrected a bad deprecation message.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5719",
     "user": "https://github.com/hivert"

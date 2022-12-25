@@ -1,16 +1,17 @@
-# Issue 3274: OSX: delete libpng*.la since we also nuke libpng*.dylib
+# Issue 3274: [with spkg, positive review] OSX: delete libpng*.la since we also nuke libpng*.dylib
 
 archive/issues_003274.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3274\n\n",
+    "closed_at": "2008-05-23T01:15:03Z",
     "created_at": "2008-05-23T00:36:54Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "OSX: delete libpng*.la since we also nuke libpng*.dylib",
+    "title": "[with spkg, positive review] OSX: delete libpng*.la since we also nuke libpng*.dylib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3274",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

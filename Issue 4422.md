@@ -6,8 +6,7 @@ archive/issues_004422.json:
     "body": "Assignee: mabshoff\n\nCC:  @orlitzky @dimpase @isuruf\n\nSympow can use additional data files, but we do not install them. So create an optional spkg that recreates those data since they might be dependent on the big size as well as the endianess of the box. To get various optional doctests to pass run \n\n```\nsympow -new_data 2\nsympow -new_data 1d0\nsympow -new_data 1d1\nsympow -new_data 1d2\n```\nfrom $SAGE_LOCAL. There might be other useful sets of data to create. We should ping Mark Watkins about the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4422\n\n",
     "created_at": "2008-11-02T02:35:04Z",
     "labels": [
-        "component: packages: optional",
-        "bug"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "create new optional sympow_data.spkg",

@@ -1,9 +1,10 @@
-# Issue 3634: minpoly still slow for elements of finte fields
+# Issue 3634: [with patch, positive review] minpoly still slow for elements of finte fields
 
 archive/issues_003634.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe improvement at #3620 is significant, but NTL does have minimal polynomial computations, though provided in http://www.shoup.net/ntl/doc/GF2X.txt rather than http://www.shoup.net/ntl/doc/GF2E.txt . We should probably use the proof flag to decide the algorithm. Trace could be wrapped as well.\n\nAlso, the computation of matrix() is using the completely generic code, which has got to be sub-optimal for manipulating elements of GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3634\n\n",
+    "closed_at": "2008-07-11T18:09:48Z",
     "created_at": "2008-07-10T17:11:44Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_003634.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.5",
-    "title": "minpoly still slow for elements of finte fields",
+    "title": "[with patch, positive review] minpoly still slow for elements of finte fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3634",
     "user": "https://github.com/robertwb"

@@ -3,7 +3,8 @@
 archive/issues_000280.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: extension base field polynomial\n\nClearly ZZ['x'] coerces into K['x'], so this should not be an error.\n\n```\nsage:K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(ZZ['x'].0^2 - 3)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n...\n    821         if polynomial.parent().base_ring() != base:\n--> 822             raise ValueError, \"The polynomial must be defined over the base field\"\n    823 \n    824         # Generate the nf and bnf corresponding to the base field\n\n<type 'exceptions.ValueError'>: The polynomial must be defined over the base field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/280\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: extension base field polynomial\n\nClearly ZZ['x'] coerces into K['x'], so this should not be an error.\n\n```\nsage:K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(ZZ['x'].0^2 - 3)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n...\n    821         if polynomial.parent().base_ring() != base:\n--> 822             raise ValueError, \"The polynomial must be defined over the base field\"\n    823 \n    824         # Generate the nf and bnf corresponding to the base field\n\n<type 'exceptions.ValueError'>: The polynomial must be defined over the base field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/280\n\n",
+    "closed_at": "2007-12-01T14:57:06Z",
     "created_at": "2007-02-23T19:56:45Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +18,7 @@ archive/issues_000280.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: somebody
+Assignee: @ncalexan
 
 Keywords: extension base field polynomial
 

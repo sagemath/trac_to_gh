@@ -4,6 +4,7 @@ archive/issues_003845.json:
 ```json
 {
     "body": "Assignee: boothby\n\nTwo no brainers that would be very nice:\n\n1. Confirm when you click the delete button.  It's scary that there is no confirmation.\n\n2. Make it so one can save ones work without the window closing.  I.e., buttons would be [Save] [Save and Close] and [Cancel].\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3845\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2008-08-14T03:05:34Z",
     "labels": [
         "component: notebook",

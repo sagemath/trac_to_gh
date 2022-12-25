@@ -4,6 +4,7 @@ archive/issues_000014.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSAGE notebook freeze's.  I'm not certain this is still a bug. It might have been fixed in the\nlatest upgrade.  Test it out.  When this is fixed, can make jsmath on for public SAGE Notebook. \n\nIssue created by migration from https://trac.sagemath.org/ticket/14\n\n",
+    "closed_at": "2006-10-19T15:23:31Z",
     "created_at": "2006-09-12T23:13:52Z",
     "labels": [
         "component: basic arithmetic",

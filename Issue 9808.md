@@ -3,7 +3,8 @@
 archive/issues_009808.json:
 ```json
 {
-    "body": "Assignee: someone\n\nKeywords: num_edges,multiedges\n\nIf G is a graph with multiedges that contains two copies of an edge e, and you delete one of the copies, num_edges() doesn't go down by one.  For example,\n\n```\nsage: G = Graph(multiedges = True)\nsage: G.add_edges([(0,1), (0,1)])\nsage: G.delete_edge(0,1)\nsage: G.num_edges()\n2\nsage: G.edges()\n[(0, 1, None)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9809\n\n",
+    "body": "Assignee: somebody\n\nKeywords: num_edges,multiedges\n\nIf G is a graph with multiedges that contains two copies of an edge e, and you delete one of the copies, num_edges() doesn't go down by one.  For example,\n\n```\nsage: G = Graph(multiedges = True)\nsage: G.add_edges([(0,1), (0,1)])\nsage: G.delete_edge(0,1)\nsage: G.num_edges()\n2\nsage: G.edges()\n[(0, 1, None)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9809\n\n",
+    "closed_at": "2010-12-05T11:45:06Z",
     "created_at": "2010-08-26T20:32:56Z",
     "labels": [
         "component: graph theory",
@@ -16,7 +17,7 @@ archive/issues_009808.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/tobiasljohnson"
 }
 ```
-Assignee: someone
+Assignee: somebody
 
 Keywords: num_edges,multiedges
 

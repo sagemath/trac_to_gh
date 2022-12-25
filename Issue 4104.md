@@ -1,15 +1,16 @@
-# Issue 4104: Create plot_slope_field function
+# Issue 4104: [with patch, positive review] Create plot_slope_field function
 
 archive/issues_004104.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patch adds a plot_slope_field function and also exposes a bit more of the quiver API to the vector field plotting routines.  I wish I had had this when I started teaching differential equations!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4104\n\n",
+    "closed_at": "2008-09-19T03:14:04Z",
     "created_at": "2008-09-12T04:15:51Z",
     "labels": [
         "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Create plot_slope_field function",
+    "title": "[with patch, positive review] Create plot_slope_field function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4104",
     "user": "https://github.com/jasongrout"

@@ -3,11 +3,10 @@
 archive/issues_004855.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a followup to $4814 to properly fix the interface. \n\nI suspect that the interface also leaks file handles which causes it to stop working after a while. This issue can be split off if the it cannot be fixed in a timely manner or if there is a patch for the other issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4855\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a followup to #4814 to properly fix the interface. \n\nI suspect that the interface also leaks file handles which causes it to stop working after a while. This issue can be split off if the it cannot be fixed in a timely manner or if there is a patch for the other issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4855\n\n",
     "created_at": "2008-12-22T23:02:48Z",
     "labels": [
-        "component: interfaces",
-        "bug"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "make the ecm pexpect interface use files for large transfers",
@@ -18,7 +17,7 @@ archive/issues_004855.json:
 ```
 Assignee: @williamstein
 
-This is a followup to $4814 to properly fix the interface. 
+This is a followup to #4814 to properly fix the interface. 
 
 I suspect that the interface also leaks file handles which causes it to stop working after a while. This issue can be split off if the it cannot be fixed in a timely manner or if there is a patch for the other issue.
 

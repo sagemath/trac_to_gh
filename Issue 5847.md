@@ -1,26 +1,49 @@
-# Issue 5847: Update GMP-ECM to 6.2.2
+# Issue 5847: Update GMP-ECM to 6.3
 
 archive/issues_005847.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6 @dimpase\n\n```\nChanges between ecm-6.2.1 and ecm-6.2.2:\n* Updated build project files for Visual C by Brian Gladman, also adds\nmissing NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER defines in VC parameter file\n* Fixed uninitialised parameter to P-1 probability computation\n* In tune.c : fixed generation of NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER values,\navoid calling cputime() excessively often when timing short functions,\nfixed access to uninitialised memory\n* Fixed serious split infinitive in configure script (thanks Paul Leyland)\n* Removed unnecessary carry propagation in x86_64 mulredc code, slight\nspeedup (thanks Philip McLaughlin)\n* Fixed non-portable PIC code in x86_64/redc.asm\n* Fixed problem with pattern matching host type names in configure.in\n* Converted binary constants in spv.c and ntt_gfp.c to hexadecimal,\nsome assembler do not support binary constants\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5847\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @zimmermann6 @dimpase\n\nKeywords: sd32 MPIR elliptic curves libecm ecm spkg\n\n```\nChanges between ecm-6.2.3 and ecm-6.3:\n* New assembly code for 64-bit PowerPC (thanks to Philip McLaughlin)\n* Allow several processes to write to the same -save file\n* More routines in new P+-1 stage 2 use multi-threading in OpenMP build\n* Fixed incompatibility with GMP 5.0.0\n* Fixed several bugs, and now check return value from malloc() calls\n* Fixed linking of GMP which prevented successful builds under Darwin \n  (and presumably other systems)\n* Allow use of x86_64 asm code under MinGW\n\nChanges between ecm-6.2.2 and ecm-6.2.3:\n* Fixed incompatibility with GMP 4.3.0 when testing version in configure\n* SSE2 asm code for Visual C added in stage 2 NTT code\n* Small improvement to x86_64 mulredc asm code, slight speedup on Core 2\n* Fixed incorrect carry propagation in subquadratic REDC code which\n  could lead to incorrect arithmetic in rare cases\n* Fixed memory leak with -v parameter when factor was found in ECM stage 1\n* Fixed bug which caused only one ECM curve to be run in spite of -c\n  parameter if input line did not end in newline\n* Assembler mulredc code enabled by default on x86_64\n\nChanges between ecm-6.2.1 and ecm-6.2.2:\n* Updated build project files for Visual C by Brian Gladman, also adds\nmissing NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER defines in VC parameter file\n* Fixed uninitialised parameter to P-1 probability computation\n* In tune.c : fixed generation of NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER values,\navoid calling cputime() excessively often when timing short functions,\nfixed access to uninitialised memory\n* Fixed serious split infinitive in configure script (thanks Paul Leyland)\n* Removed unnecessary carry propagation in x86_64 mulredc code, slight\nspeedup (thanks Philip McLaughlin)\n* Fixed non-portable PIC code in x86_64/redc.asm\n* Fixed problem with pattern matching host type names in configure.in\n* Converted binary constants in spv.c and ntt_gfp.c to hexadecimal,\nsome assembler do not support binary constants\n```\n\n---\n\n**New spkg:** [http://sage.math.washington.edu/home/leif/Sage/spkgs/ecm-6.3.p2.spkg](http://sage.math.washington.edu/home/leif/Sage/spkgs/ecm-6.3.p2.spkg)\n\n**md5sum:** `a19f3d4d0e9881abe076d8a9c0ea7e7f  ecm-6.3.p2.spkg`\n\n\n\n\nApply [attachment:trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch] **to the Sage library**.\n\n(Should be applied *after* installing the new spkg.)\n\n**Note that this patch is only required (i.e., mandatory) on some Fedora and potentially other SELinux-enabled systems**, and apparently only in conjunction with more recent versions of GCC (>= 4.6).\n\nI.e., you should be able to use the new GMP-ECM spkg on other systems without installing any patches or other spkgs.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5847\n\n",
+    "closed_at": "2011-09-12T18:58:14Z",
     "created_at": "2009-04-21T23:49:57Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
-    "title": "Update GMP-ECM to 6.2.2",
+    "title": "Update GMP-ECM to 6.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5847",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @nexttime
 
 CC:  @zimmermann6 @dimpase
 
+Keywords: sd32 MPIR elliptic curves libecm ecm spkg
+
 ```
+Changes between ecm-6.2.3 and ecm-6.3:
+* New assembly code for 64-bit PowerPC (thanks to Philip McLaughlin)
+* Allow several processes to write to the same -save file
+* More routines in new P+-1 stage 2 use multi-threading in OpenMP build
+* Fixed incompatibility with GMP 5.0.0
+* Fixed several bugs, and now check return value from malloc() calls
+* Fixed linking of GMP which prevented successful builds under Darwin 
+  (and presumably other systems)
+* Allow use of x86_64 asm code under MinGW
+
+Changes between ecm-6.2.2 and ecm-6.2.3:
+* Fixed incompatibility with GMP 4.3.0 when testing version in configure
+* SSE2 asm code for Visual C added in stage 2 NTT code
+* Small improvement to x86_64 mulredc asm code, slight speedup on Core 2
+* Fixed incorrect carry propagation in subquadratic REDC code which
+  could lead to incorrect arithmetic in rare cases
+* Fixed memory leak with -v parameter when factor was found in ECM stage 1
+* Fixed bug which caused only one ECM curve to be run in spite of -c
+  parameter if input line did not end in newline
+* Assembler mulredc code enabled by default on x86_64
+
 Changes between ecm-6.2.1 and ecm-6.2.2:
 * Updated build project files for Visual C by Brian Gladman, also adds
 missing NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER defines in VC parameter file
@@ -37,9 +60,23 @@ speedup (thanks Philip McLaughlin)
 some assembler do not support binary constants
 ```
 
-Cheers,
+---
 
-Michael
+**New spkg:** [http://sage.math.washington.edu/home/leif/Sage/spkgs/ecm-6.3.p2.spkg](http://sage.math.washington.edu/home/leif/Sage/spkgs/ecm-6.3.p2.spkg)
+
+**md5sum:** `a19f3d4d0e9881abe076d8a9c0ea7e7f  ecm-6.3.p2.spkg`
+
+
+
+
+Apply [attachment:trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch] **to the Sage library**.
+
+(Should be applied *after* installing the new spkg.)
+
+**Note that this patch is only required (i.e., mandatory) on some Fedora and potentially other SELinux-enabled systems**, and apparently only in conjunction with more recent versions of GCC (>= 4.6).
+
+I.e., you should be able to use the new GMP-ECM spkg on other systems without installing any patches or other spkgs.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5847
 

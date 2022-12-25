@@ -1,22 +1,23 @@
-# Issue 1600: another weird coercion bug
+# Issue 1600: [with patch, with positive review] another weird coercion bug
 
 archive/issues_001600.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nHaven't even started trying to track this one down yet:\n\n```\nsage: S.<s> = LaurentSeriesRing(GF(5))\nsage: T.<t> = PowerSeriesRing(pAdicRing(5))\nsage: \nsage: S(t)\n(1 + O(5^20))*s\nsage: parent(S(t))\nLaurent Series Ring in s over Finite Field of size 5\nsage: parent(S(t)[1])\n5-adic Ring with capped relative precision 20\n```\n\nPretty nasty.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1600\n\n",
+    "body": "Assignee: @craigcitro\n\nHaven't even started trying to track this one down yet:\n\n```\nsage: S.<s> = LaurentSeriesRing(GF(5))\nsage: T.<t> = PowerSeriesRing(pAdicRing(5))\nsage: \nsage: S(t)\n(1 + O(5^20))*s\nsage: parent(S(t))\nLaurent Series Ring in s over Finite Field of size 5\nsage: parent(S(t)[1])\n5-adic Ring with capped relative precision 20\n```\n\nPretty nasty.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1600\n\n",
+    "closed_at": "2008-01-26T11:16:50Z",
     "created_at": "2007-12-26T17:29:30Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "another weird coercion bug",
+    "title": "[with patch, with positive review] another weird coercion bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1600",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: @craigcitro
 
 Haven't even started trying to track this one down yet:
 

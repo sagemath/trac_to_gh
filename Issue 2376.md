@@ -1,9 +1,10 @@
-# Issue 2376: [with patch, needs review] Sage 2.10.3.rc1: various doctest failure in abvar
+# Issue 2376: [with patch, positive review (again)] Sage 2.10.3.rc1: various doctest failure in abvar
 
 archive/issues_002376.json:
 ```json
 {
-    "body": "Assignee: failure\n\nWe have various doctest failures in\n\n```\nsage -t -long devel/sage-main/sage/modular/abvar/abvar.py\nsage -t -long devel/sage-main/sage/modular/abvar/finite_subgroup.py\nsage -t -long devel/sage-main/sage/modular/abvar/torsion_subgroup.py\n```\n\nThe attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2376\n\n",
+    "body": "Assignee: mabshoff\n\nWe have various doctest failures in\n\n```\nsage -t -long devel/sage-main/sage/modular/abvar/abvar.py\nsage -t -long devel/sage-main/sage/modular/abvar/finite_subgroup.py\nsage -t -long devel/sage-main/sage/modular/abvar/torsion_subgroup.py\n```\n\nThe attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2376\n\n",
+    "closed_at": "2008-03-03T17:21:20Z",
     "created_at": "2008-03-03T16:54:38Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_002376.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] Sage 2.10.3.rc1: various doctest failure in abvar",
+    "title": "[with patch, positive review (again)] Sage 2.10.3.rc1: various doctest failure in abvar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2376",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 We have various doctest failures in
 

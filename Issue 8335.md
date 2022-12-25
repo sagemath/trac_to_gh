@@ -1,16 +1,16 @@
-# Issue 8335: Finite Field lattices
+# Issue 8335: Finite field lattices via Conway polynomials
 
 archive/issues_008335.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti\n\nImplements coercion within lattices of finite fields lying above the same prime.\n\n```\nsage: k = GF(9)\nsage: l = GF(27)\nsage: x = k.gen() + l.gen(); x\nz6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1\nsage: x.parent()\nFinite Field in z6 of size 3^6\n```\n\nThis feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.\n\nFinite fields no longer require an explicit variable name (though they still accept one).  If a variable name is given, then outside the range of the Conway polynomial database a random or sparse polynomial is used for speed reasons; if no variable name is given then either a Conway polynomial or pseudo-Conway polynomial is used.\n\nAlso adds methods `any_root` and `squarefree_decomposition` to polynomials over finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8335\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti\n\nKeywords: days49 sd51\n\nImplements coercion within lattices of finite fields lying above the same prime when implemented with Conway polynomials.\n\n```\nsage: k = GF(9, conway=True, prefix='z')\nsage: l = GF(27, conway=True, prefix='z')\nsage: x = k.gen() + l.gen(); x\nz6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1\nsage: x.parent()\nFinite Field in z6 of size 3^6\n```\n\nWhen using the `conway` and `prefix` parameters, one does not need to specify an explicit variable name; if no variable name is given, it is constructed from the `prefix` and the degree (as in the above code snippet).\n\nIn the future, the functionality of this ticket will be incorporated into that for algebraic closures of finite fields.  It will then be possible to construct compatible systems of finite fields outside the range of the Conway polynomial database using the pseudo-Conway polynomials from #14958: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.\n\nApply:\n* [attachment:trac_8335-finite_field_coerce-5.11.b3-14888.patch]\n* [attachment:trac_8335-no_pseudo.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8335\n\n",
+    "closed_at": "2013-10-12T09:45:04Z",
     "created_at": "2010-02-23T17:26:08Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.13",
-    "title": "Finite Field lattices",
+    "title": "Finite field lattices via Conway polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8335",
     "user": "https://github.com/roed314"
@@ -20,22 +20,27 @@ Assignee: @aghitza
 
 CC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti
 
-Implements coercion within lattices of finite fields lying above the same prime.
+Keywords: days49 sd51
+
+Implements coercion within lattices of finite fields lying above the same prime when implemented with Conway polynomials.
 
 ```
-sage: k = GF(9)
-sage: l = GF(27)
+sage: k = GF(9, conway=True, prefix='z')
+sage: l = GF(27, conway=True, prefix='z')
 sage: x = k.gen() + l.gen(); x
 z6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1
 sage: x.parent()
 Finite Field in z6 of size 3^6
 ```
 
-This feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.
+When using the `conway` and `prefix` parameters, one does not need to specify an explicit variable name; if no variable name is given, it is constructed from the `prefix` and the degree (as in the above code snippet).
 
-Finite fields no longer require an explicit variable name (though they still accept one).  If a variable name is given, then outside the range of the Conway polynomial database a random or sparse polynomial is used for speed reasons; if no variable name is given then either a Conway polynomial or pseudo-Conway polynomial is used.
+In the future, the functionality of this ticket will be incorporated into that for algebraic closures of finite fields.  It will then be possible to construct compatible systems of finite fields outside the range of the Conway polynomial database using the pseudo-Conway polynomials from #14958: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.
 
-Also adds methods `any_root` and `squarefree_decomposition` to polynomials over finite fields.
+Apply:
+* [attachment:trac_8335-finite_field_coerce-5.11.b3-14888.patch]
+* [attachment:trac_8335-no_pseudo.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8335
 

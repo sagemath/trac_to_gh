@@ -6,7 +6,7 @@ archive/issues_007163.json:
     "body": "Assignee: tbd\n\n```\n<Submarine> hi\n<Submarine> sage: ker=m.right_kernel(sparse=True)\n<Submarine> sage: type(ker.basis_matrix())\n<Submarine> <type 'sage.matrix.matrix_rational_dense.Matrix_rational_dense'>\n<Submarine> Is it normal I'm getting a dense matrix?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7163\n\n",
     "created_at": "2009-10-08T21:05:55Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",

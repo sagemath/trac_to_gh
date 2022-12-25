@@ -4,6 +4,7 @@ archive/issues_007961.json:
 ```json
 {
     "body": "Assignee: @nbruin\n\nCurrently, the code that recognizes a source file is part of the sage library and hence is run from a different location than where the edit copy lives, is broken due to the python2.5 -> python2.6 upgrade. Attached fixes this problem and makes matching more robust so that it won't break the next time. To illustrate the problem, currently we have\n\n```\nsage: sage.misc.edit_module.file_and_line(edit)\n('/usr/local/sage/4.3/local/lib/python2.6/site-packages/sage/misc/edit_module.py', 194)\n```\nwhich obviously is NOT the file to edit. It should be `.../sage/devel/...` instead. Attached patch fixes this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7961\n\n",
+    "closed_at": "2010-01-19T00:55:34Z",
     "created_at": "2010-01-17T02:41:47Z",
     "labels": [
         "component: misc",

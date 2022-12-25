@@ -1,22 +1,24 @@
-# Issue 7700: Mysterious binary in sage-4.3.rc0/data/extcode/sage/ext/mac-app
+# Issue 7700: Document non-text, non-image files in sage-4.3.rc0/data/extcode/sage/ext/mac-app
 
 archive/issues_007700.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @gvol\n\nThis file:\n\n```\nsage-4.3.rc0/spkg/standard/extcode-4.3.rc0/sage/ext/mac-app/Sage.app/Contents/MacOS/Sage\n```\n\nis a mysterious 80K binary program that does something.  Where did it come from?  What does it do?  Who made it?  How can I easily recreate it from source?    \n\nIf the answer is: \"it's a binary from some random guy of the 'net that nobody knows\"... then maybe we should be worried!\n\nHow to resolve this ticket:  For starters, add a README.txt to the directory: sage-4.3.rc0/data/extcode/sage/ext/mac-app that answers the above questions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7700\n\n",
+    "body": "Assignee: @gvol\n\nCC:  @gvol\n\nThis file:\n\n```\nsage-4.3.rc0/spkg/standard/extcode-4.3.rc0/sage/ext/mac-app/Sage.app/Contents/MacOS/Sage\n```\n\nis a mysterious 80K binary program that does something.  Where did it come from?  What does it do?  Who made it?  How can I easily recreate it from source?    \n\nIf the answer is: \"it's a binary from some random guy of the 'net that nobody knows\"... then maybe we should be worried!\n\nHow to resolve this ticket:  For starters, add a README.txt to the directory: sage-4.3.rc0/data/extcode/sage/ext/mac-app that answers the above questions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7700\n\n",
+    "closed_at": "2010-01-14T07:06:03Z",
     "created_at": "2009-12-16T01:39:55Z",
     "labels": [
-        "component: packages",
+        "component: distribution",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "Mysterious binary in sage-4.3.rc0/data/extcode/sage/ext/mac-app",
+    "title": "Document non-text, non-image files in sage-4.3.rc0/data/extcode/sage/ext/mac-app",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7700",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @gvol
 
 CC:  @gvol
 

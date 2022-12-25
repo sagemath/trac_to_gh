@@ -4,6 +4,7 @@ archive/issues_009855.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @zimmermann6\n\nsee #7199 for a patch improving `stack`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9856\n\n",
+    "closed_at": "2010-09-28T10:58:16Z",
     "created_at": "2010-09-04T20:27:21Z",
     "labels": [
         "component: linear algebra"

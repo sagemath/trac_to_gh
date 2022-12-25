@@ -3,7 +3,8 @@
 archive/issues_009429.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt @robertwb\n\nAll arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:\n\n```\nsage: from sage.rings.quotient_ring_element import QuotientRingElement\nsage: class Q(QuotientRingElement):\n...    pass\n...\nsage: P.<x,y> = PolynomialRing(QQ, 'x, y')\nsage: Pquo = P.quo(x^3)\nsage: q = Q(Pquo, x)\nsage: type(q)\n<class '__main__.Q'>\nsage: type(q^2)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n\nExpected behaviour: `q^2` should have the same (derived) type as `q`.\n\nI am running into this issue because I want to express cohomology classes on toric varieties as derived classes of `QuotientRingElement`, see #9326. I'll write the obvious patch and attach it later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9429\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt @robertwb\n\nKeywords: sd59\n\nAll arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:\n\n```\nsage: from sage.rings.quotient_ring_element import QuotientRingElement\nsage: class Q(QuotientRingElement):\n...    pass\n...\nsage: P.<x,y> = PolynomialRing(QQ, 'x, y')\nsage: Pquo = P.quo(x^3)\nsage: q = Q(Pquo, x)\nsage: type(q)\n<class '__main__.Q'>\nsage: type(q^2)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n\nExpected behaviour: `q^2` should have the same (derived) type as `q`.\n\nI am running into this issue because I want to express cohomology classes on toric varieties as derived classes of `QuotientRingElement`, see #9326. I'll write the obvious patch and attach it later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9429\n\n",
+    "closed_at": "2015-02-17T19:28:25Z",
     "created_at": "2010-07-05T10:44:05Z",
     "labels": [
         "component: algebra",
@@ -19,6 +20,8 @@ archive/issues_009429.json:
 Assignee: @aghitza
 
 CC:  @novoselt @robertwb
+
+Keywords: sd59
 
 All arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:
 

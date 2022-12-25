@@ -1,9 +1,10 @@
-# Issue 6025: Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX
+# Issue 6025: [with patch, positive review] Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX
 
 archive/issues_006025.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n```\nsage -t -long \"devel/sage/sage/libs/pari/gen.pyx\"           \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.2-64/devel/sage/sage/libs/pari/gen.pyx\", line 8945:\n    sage: pari.finitefield_init(7,2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_291[4]>\", line 1, in <module>\n        pari.finitefield_init(Integer(7),Integer(2))###line 8945:\n    sage: pari.finitefield_init(7,2)\n    RuntimeError\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.2-64/devel/sage/sage/libs/pari/gen.pyx\", line 8950:\n    sage: pari.finitefield_init(2,3)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_291[5]>\", line 1, in <module>\n        pari.finitefield_init(Integer(2),Integer(3))###line 8950:\n    sage: pari.finitefield_init(2,3)\n    RuntimeError\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_291\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/mabshoff/sage-3.4.2-64/tmp/.doctest_gen.py\n\t [19.0 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6025\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t -long \"devel/sage/sage/libs/pari/gen.pyx\"           \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.2-64/devel/sage/sage/libs/pari/gen.pyx\", line 8945:\n    sage: pari.finitefield_init(7,2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_291[4]>\", line 1, in <module>\n        pari.finitefield_init(Integer(7),Integer(2))###line 8945:\n    sage: pari.finitefield_init(7,2)\n    RuntimeError\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.2-64/devel/sage/sage/libs/pari/gen.pyx\", line 8950:\n    sage: pari.finitefield_init(2,3)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.4.2-64/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_291[5]>\", line 1, in <module>\n        pari.finitefield_init(Integer(2),Integer(3))###line 8950:\n    sage: pari.finitefield_init(2,3)\n    RuntimeError\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_291\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/mabshoff/sage-3.4.2-64/tmp/.doctest_gen.py\n [19.0 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6025\n\n",
+    "closed_at": "2009-05-13T18:00:57Z",
     "created_at": "2009-05-12T07:10:05Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_006025.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX",
+    "title": "[with patch, positive review] Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6025",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -56,7 +57,7 @@ Exception raised:
    2 of   6 in __main__.example_291
 ***Test Failed*** 2 failures.
 For whitespace errors, see the file /Users/mabshoff/sage-3.4.2-64/tmp/.doctest_gen.py
-	 [19.0 s]
+ [19.0 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6025

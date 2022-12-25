@@ -1,15 +1,16 @@
-# Issue 5910: move logic module boolopt.py to another enhancement ticket
+# Issue 5910: [with patch, needs work] move logic module boolopt.py to another enhancement ticket
 
 archive/issues_005910.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: Quine-McCluskey, logic\n\nThis is a followup to #545. As discussed at #545, the module `boolopt.py` is moved to this enhancement ticket. So basically, #545 no longer requires boolopt.py to reach 100% doctest coverage in order to be merged into Sage. Thus the only work needed to be done here is to bring coverage of boolopt.py to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5910\n\n",
+    "closed_at": "2013-07-23T14:55:02Z",
     "created_at": "2009-04-27T11:53:41Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "move logic module boolopt.py to another enhancement ticket",
+    "title": "[with patch, needs work] move logic module boolopt.py to another enhancement ticket",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5910",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

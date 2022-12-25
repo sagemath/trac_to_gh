@@ -1,29 +1,30 @@
-# Issue 6266: Build problem of sqlite on Solaris 10 with gcc	4.4.0
+# Issue 6266: [with patch; positive review] Build problem of sqlite on Solaris 10 with gcc 4.4.0
 
 archive/issues_006266.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris sqlite\n\nThe sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which runs Solaris 10 update 4, if gcc 4.4.0 is used as the compiler. Error messages are:\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_create@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fcntl@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_join@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_equal@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `close@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to \n`pthread_mutexattr_settype@SUNW_1.2'\n./.libs/libsqlite3.so: undefined reference to `read@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `sleep@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_self@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fsync@SUNW_0.9'\n```\nI've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build fails with similar (but fewer) error messages to those in Sage, so I don't  believe updating to the latest sqlite will solve this. The error messages building the latest sqlite are:\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `dlerror@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlopen@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlsym@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'\n\n```\n\nA search of the web shows the sort of error messages have existed a long time in lots of software, going as far back as at least 2005. The culprit is often indicated to be libtool. \n\nThe developers of sqlite appear to be using a 3-year old version of libtool (1.5.24). \n\nI've downloaded that old version of libtool and found it fails 4 self-tests on t2. The latest version of libtool fails one test, suggesting sqlite would have more chance of working on Solaris if its developers used a later version of libtool. \n\nIf it's possible to get the developers of sqlite to use a later version of libtool, then an update of sqlite might be sensible, but at present it will not achieve anything very useful for Solaris. I'm in the process of trying to get this fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6266\n\n",
+    "body": "Assignee: drkirkby\n\nKeywords: solaris sqlite\n\nThe sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which runs Solaris 10 update 4, if gcc 4.4.0 is used as the compiler. Error messages are:\n\n```\n./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_create@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fcntl@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_join@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_equal@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `close@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to \n`pthread_mutexattr_settype@SUNW_1.2'\n./.libs/libsqlite3.so: undefined reference to `read@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `sleep@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `pthread_self@SUNW_0.9'\n./.libs/libsqlite3.so: undefined reference to `fsync@SUNW_0.9'\n```\nI've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build fails with similar (but fewer) error messages to those in Sage, so I don't  believe updating to the latest sqlite will solve this. The error messages building the latest sqlite are:\n\n```\n\n./.libs/libsqlite3.so: undefined reference to `dlerror@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlopen@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlsym@SUNW_1.22'\n./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'\n```\n\nA search of the web shows the sort of error messages have existed a long time in lots of software, going as far back as at least 2005. The culprit is often indicated to be libtool. \n\nThe developers of sqlite appear to be using a 3-year old version of libtool (1.5.24). \n\nI've downloaded that old version of libtool and found it fails 4 self-tests on t2. The latest version of libtool fails one test, suggesting sqlite would have more chance of working on Solaris if its developers used a later version of libtool. \n\nIf it's possible to get the developers of sqlite to use a later version of libtool, then an update of sqlite might be sensible, but at present it will not achieve anything very useful for Solaris. I'm in the process of trying to get this fixed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6266\n\n",
+    "closed_at": "2009-06-15T23:40:21Z",
     "created_at": "2009-06-12T10:14:59Z",
     "labels": [
         "component: porting: solaris",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Build problem of sqlite on Solaris 10 with gcc\t4.4.0",
+    "title": "[with patch; positive review] Build problem of sqlite on Solaris 10 with gcc 4.4.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6266",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 Keywords: solaris sqlite
 
 The sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which runs Solaris 10 update 4, if gcc 4.4.0 is used as the compiler. Error messages are:
 
 ```
-
 ./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'
 ./.libs/libsqlite3.so: undefined reference to `pthread_create@SUNW_0.9'
 ./.libs/libsqlite3.so: undefined reference to `fcntl@SUNW_0.9'
@@ -45,7 +46,6 @@ I've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build f
 ./.libs/libsqlite3.so: undefined reference to `dlopen@SUNW_1.22'
 ./.libs/libsqlite3.so: undefined reference to `dlsym@SUNW_1.22'
 ./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'
-
 ```
 
 A search of the web shows the sort of error messages have existed a long time in lots of software, going as far back as at least 2005. The culprit is often indicated to be libtool. 
@@ -54,7 +54,9 @@ The developers of sqlite appear to be using a 3-year old version of libtool (1.5
 
 I've downloaded that old version of libtool and found it fails 4 self-tests on t2. The latest version of libtool fails one test, suggesting sqlite would have more chance of working on Solaris if its developers used a later version of libtool. 
 
-If it's possible to get the developers of sqlite to use a later version of libtool, then an update of sqlite might be sensible, but at present it will not achieve anything very useful for Solaris. I'm in the process of trying to get this fixed.
+If it's possible to get the developers of sqlite to use a later version of libtool, then an update of sqlite might be sensible, but at present it will not achieve anything very useful for Solaris. I'm in the process of trying to get this fixed. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6266
 

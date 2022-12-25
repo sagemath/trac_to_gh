@@ -4,9 +4,11 @@ archive/issues_002629.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nWhen working on a notebook, one tends to end up at the bottom of browser window in the final cell.   However: \n\na) If you evaluate this final cell, a new input cell is created, but it is frequently at least partially off-screen and you have to scroll down to get to it.  Currently, window scrolls to accommodate the output of the evaluation, and so should scroll a little more to make the new input cell fully visible.\n\nb) If you do a tab completion or ?-query in the final cell, the output often is partially of screen.   In bad cases, the output is completely off screen and this is very confusing the to user since the program appears to be not responding to their input.   This could be solved either by having the window scroll or having the box appear above the input cell in this instance, though the latter behavior is probably only appropriate for tab completion.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2629\n\n",
+    "closed_at": "2020-03-28T15:21:36Z",
     "created_at": "2008-03-21T16:01:38Z",
     "labels": [
         "component: notebook",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -1,16 +1,16 @@
-# Issue 6603: [with SPKG, need review] COIN-OR / CBC for SAGE
+# Issue 6603: [with spkg, positive review] COIN-OR / CBC for SAGE
 
 archive/issues_006603.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCBC is a Free ( though not GPL-compatible ) Linear Program and Mixed Integer Program Solver from the COIN-OR suite.\n\nEven though it is not Free and will have to remain an optional package, COIN-OR has performances way above GLPK which is to be used by default in SAGE ( see http://trac.sagemath.org/sage_trac/ticket/6502 and http://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f )\n\nThis SPKG contains the last version of CBC and a Cython class to make it available through numerical.mip when installed.\n\nThe SPKG can be found at this address :\nhttp://www-sop.inria.fr/members/Nathann.Cohen/cbc.spkg\n\nI hope you will like it ! ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6603\n\n",
+    "body": "Assignee: jkantor\n\nCBC is a Free ( though not GPL-compatible ) Linear Program and Mixed Integer Program Solver from the COIN-OR suite.\n\nEven though it is not Free and will have to remain an optional package, COIN-OR has performances way above GLPK which is to be used by default in SAGE ( see http://trac.sagemath.org/sage_trac/ticket/6502 and http://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f )\n\nThis SPKG contains the last version of CBC and a Cython class to make it available through numerical.mip when installed.\n\nThe SPKG can be found at this address :\nhttp://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.spkg\n\nI hope you will like it ! ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6603\n\n",
+    "closed_at": "2009-09-02T08:50:33Z",
     "created_at": "2009-07-23T14:35:48Z",
     "labels": [
-        "component: numerical",
-        "bug"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with SPKG, need review] COIN-OR / CBC for SAGE",
+    "title": "[with spkg, positive review] COIN-OR / CBC for SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6603",
     "user": "https://github.com/nathanncohen"
@@ -25,7 +25,7 @@ Even though it is not Free and will have to remain an optional package, COIN-OR 
 This SPKG contains the last version of CBC and a Cython class to make it available through numerical.mip when installed.
 
 The SPKG can be found at this address :
-http://www-sop.inria.fr/members/Nathann.Cohen/cbc.spkg
+http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.spkg
 
 I hope you will like it ! ;-)
 

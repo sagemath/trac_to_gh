@@ -4,6 +4,7 @@ archive/issues_008083.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: latex\n\nAccented letters produced in notebook by command like this\n\n```\n%latex\n\u011b\u0161\u010d\u0159\u017e\u00fd\u00e1\u00ed\u00e9\u010f\u010e\n```\nproduce letters composed from two objects - letter and accent - and this does not look good in some cases, especially the letter \u010f. The solution is to use correct fonts in LaTeX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8083\n\n",
+    "closed_at": "2010-01-30T23:50:32Z",
     "created_at": "2010-01-26T20:53:14Z",
     "labels": [
         "component: notebook"

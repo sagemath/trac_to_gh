@@ -3,10 +3,11 @@
 archive/issues_004492.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @craigcitro @jasongrout @loefflerd\n\nUsing ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.\n\n```\nsage: i=MatrixSpace(ZZ,2,2)(1)\nsage: i\n\n[1 0]\n[0 1]\nsage: block_matrix([1,i,1,1])  # this works as I expect\n\n[1 0|1 0]\n[0 1|0 1]\n[---+---]\n[1 0|1 0]\n[0 1|0 1]\nsage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special\n...\nValueError: Insufficient information to determine dimensions.\n```\nThis feels to me like a hazardous inconsistency.\n\nPerhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4492\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro @jasongrout @loefflerd\n\nUsing ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.\n\n```\nsage: i=MatrixSpace(ZZ,2,2)(1)\nsage: i\n\n[1 0]\n[0 1]\nsage: block_matrix([1,i,1,1])  # this works as I expect\n\n[1 0|1 0]\n[0 1|0 1]\n[---+---]\n[1 0|1 0]\n[0 1|0 1]\nsage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special\n...\nValueError: Insufficient information to determine dimensions.\n```\nThis feels to me like a hazardous inconsistency.\n\nPerhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.\n\n**Apply**:\n1. [attachment:4492_block_matrix_rebased.patch]\n2. [attachment:trac_4492-block-matrix-reviewer.patch]\n3. [attachment:4492_typo.patch]\n4. [attachment:trac_4492-doctest-number-field.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4492\n\n",
+    "closed_at": "2011-01-27T09:56:32Z",
     "created_at": "2008-11-11T15:17:25Z",
     "labels": [
-        "component: algebra",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
@@ -16,7 +17,7 @@ archive/issues_004492.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @craigcitro @jasongrout @loefflerd
 
@@ -42,6 +43,13 @@ ValueError: Insufficient information to determine dimensions.
 This feels to me like a hazardous inconsistency.
 
 Perhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.
+
+**Apply**:
+1. [attachment:4492_block_matrix_rebased.patch]
+2. [attachment:trac_4492-block-matrix-reviewer.patch]
+3. [attachment:4492_typo.patch]
+4. [attachment:trac_4492-doctest-number-field.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4492
 

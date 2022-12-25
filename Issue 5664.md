@@ -1,23 +1,24 @@
-# Issue 5664: Bugs in PermutationGroup_subgroup.__cmp__
+# Issue 5664: [with patch, positive review] Bugs in PermutationGroup_subgroup.__cmp__
 
 archive/issues_005664.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: comparison subgroup\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/533747d48a1f29eb?hl=en\nit was reported that comparision of subgroups of permutation groups does not work as expected:\n\n```\nsage: G = SymmetricGroup(4)\nsage: H = G.subgroup([G((1,2,3))])\nsage: K = G.subgroup([G((2,3,1))]) \nsage: G((1,2,3))==G((2,3,1))\nTrue\nsage: K==H\nFalse\n```\n\nEven worse, comparison may raise an error -- afaik, the Python specification says that `__cmp__` is not supposed to raise errors:\n\n```\nsage: G2=G.subgroup([G((1,2,3,4)),G((1,2))])\nsage: G==G2\nTrue\nsage: G2==G\nTraceback (most recent call last):\n...\nAttributeError: 'SymmetricGroup' object has no attribute 'ambient_group'\n```\n\nSo, `==` is not a symmetric relation.\n\nOf course, G==G2 invokes G.__cmp__(G2), which tests whether G and G2 are the same as PermutationGroup_generic.\nIn contrast, G2==G tests whether G2 and G are the same as PermutationGroup_subgroup.\n\nSo, what do people want?\n1. A symmetric relation? Then K.__cmp__() should invoke PermutationGroup_generic.__cmp__().\n2. Or should K.__cmp__(H) test whether K and H are subgroups of the same PermutationGroup, and then continue with testing whether K and H are subgroup of each other?\n\nNote that the with 1., == would test whether K and H are isomorphic abstract groups, which is the job of K.is_isomorphic(H). \n\nTherefore, I am in favour of 2. \n\nBut then: \n* What should be returned if neither H is a subgroup of K nor K is a subgroup of H?\n* What should be returned if H is subgroup of G1 and K is subgroup of G2, with H contained in K contained in G2 contained in G1? Currently, K.__cmp__(H) would  -1 in this case (hence, H<K although K is contained in H!). Example:\n {{{\nsage: G=SymmetricGroup(6)\nsage: G1=G.subgroup([G((1,2,3,4,5)),G((1,2))])\nsage: G2=G.subgroup([G((1,2,3,4)),G((1,2))])\nsage: K=G2.subgroup([G1((1,2,3))])\nsage: H=G1.subgroup([G2(())])\nsage: H<K\nFalse\nsage: K<H\nTrue\n}}}\n\nSo, the trivial group in G1 is considered greater than a non-trivial group in G2, because G1>G2.\n\nSo, before working on a patch, I'd like to get people's opinion on what is a good specification of 'comparison of subgroups'.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5664\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: comparison subgroup\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/533747d48a1f29eb?hl=en\nit was reported that comparision of subgroups of permutation groups does not work as expected:\n\n```\nsage: G = SymmetricGroup(4)\nsage: H = G.subgroup([G((1,2,3))])\nsage: K = G.subgroup([G((2,3,1))]) \nsage: G((1,2,3))==G((2,3,1))\nTrue\nsage: K==H\nFalse\n```\n\nEven worse, comparison may raise an error -- afaik, the Python specification says that `__cmp__` is not supposed to raise errors:\n\n```\nsage: G2=G.subgroup([G((1,2,3,4)),G((1,2))])\nsage: G==G2\nTrue\nsage: G2==G\nTraceback (most recent call last):\n...\nAttributeError: 'SymmetricGroup' object has no attribute 'ambient_group'\n```\n\nSo, `==` is not a symmetric relation.\n\nOf course, G==G2 invokes `G.__cmp__(G2)`, which tests whether G and G2 are the same as PermutationGroup_generic.\nIn contrast, G2==G tests whether G2 and G are the same as PermutationGroup_subgroup.\n\nSo, what do people want?\n1. A symmetric relation? Then `K.__cmp__()` should invoke `PermutationGroup_generic.__cmp__()`.\n2. Or should `K.__cmp__(H)` test whether K and H are subgroups of the same PermutationGroup, and then continue with testing whether K and H are subgroup of each other?\n\nNote that with 1., == would test whether K and H are isomorphic abstract groups, which is the job of K.is_isomorphic(H). \n\nTherefore, I am in favour of 2. \n\nBut then: \n* What should be returned if neither H is a subgroup of K nor K is a subgroup of H?\n* What should be returned if H is subgroup of G1 and K is subgroup of G2, with H contained in K contained in G2 contained in G1? Currently, `K.__cmp__(H)` would  -1 in this case (hence, K<H although H is contained in K!). Example:\n {{{\nsage: G=SymmetricGroup(6)\nsage: G1=G.subgroup([G((1,2,3,4,5)),G((1,2))])\nsage: G2=G.subgroup([G((1,2,3,4)),G((1,2))])\nsage: K=G2.subgroup([G1((1,2,3))])\nsage: H=G1.subgroup([G2(())])\nsage: H<K\nFalse\nsage: K<H\nTrue\n}}}\n\nSo, the trivial group in G1 is considered greater than a non-trivial group in G2, because G1>G2.\n\nSo, before working on a patch, I'd like to get people's opinion on what is a good specification of 'comparison of subgroups'.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5664\n\n",
+    "closed_at": "2009-05-13T19:04:49Z",
     "created_at": "2009-04-02T06:39:32Z",
     "labels": [
-        "component: algebra",
+        "component: group theory",
         "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Bugs in PermutationGroup_subgroup.__cmp__",
+    "title": "[with patch, positive review] Bugs in PermutationGroup_subgroup.__cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5664",
     "user": "https://github.com/simon-king-jena"
 }
 ```
-Assignee: tbd
+Assignee: @simon-king-jena
 
 Keywords: comparison subgroup
 
@@ -48,20 +49,20 @@ AttributeError: 'SymmetricGroup' object has no attribute 'ambient_group'
 
 So, `==` is not a symmetric relation.
 
-Of course, G==G2 invokes G.__cmp__(G2), which tests whether G and G2 are the same as PermutationGroup_generic.
+Of course, G==G2 invokes `G.__cmp__(G2)`, which tests whether G and G2 are the same as PermutationGroup_generic.
 In contrast, G2==G tests whether G2 and G are the same as PermutationGroup_subgroup.
 
 So, what do people want?
-1. A symmetric relation? Then K.__cmp__() should invoke PermutationGroup_generic.__cmp__().
-2. Or should K.__cmp__(H) test whether K and H are subgroups of the same PermutationGroup, and then continue with testing whether K and H are subgroup of each other?
+1. A symmetric relation? Then `K.__cmp__()` should invoke `PermutationGroup_generic.__cmp__()`.
+2. Or should `K.__cmp__(H)` test whether K and H are subgroups of the same PermutationGroup, and then continue with testing whether K and H are subgroup of each other?
 
-Note that the with 1., == would test whether K and H are isomorphic abstract groups, which is the job of K.is_isomorphic(H). 
+Note that with 1., == would test whether K and H are isomorphic abstract groups, which is the job of K.is_isomorphic(H). 
 
 Therefore, I am in favour of 2. 
 
 But then: 
 * What should be returned if neither H is a subgroup of K nor K is a subgroup of H?
-* What should be returned if H is subgroup of G1 and K is subgroup of G2, with H contained in K contained in G2 contained in G1? Currently, K.__cmp__(H) would  -1 in this case (hence, H<K although K is contained in H!). Example:
+* What should be returned if H is subgroup of G1 and K is subgroup of G2, with H contained in K contained in G2 contained in G1? Currently, `K.__cmp__(H)` would  -1 in this case (hence, K<H although H is contained in K!). Example:
  {{{
 sage: G=SymmetricGroup(6)
 sage: G1=G.subgroup([G((1,2,3,4,5)),G((1,2))])
@@ -77,6 +78,7 @@ True
 So, the trivial group in G1 is considered greater than a non-trivial group in G2, because G1>G2.
 
 So, before working on a patch, I'd like to get people's opinion on what is a good specification of 'comparison of subgroups'.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5664
 

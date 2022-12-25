@@ -1,28 +1,29 @@
-# Issue 169: slice assignment not implemented for PARI C library interface
+# Issue 169: [with patch, positive review] slice assignment not implemented for PARI C library interface
 
 archive/issues_000169.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nFrom \"Luislang\" \n\nFollowing session says it all.\n \n--------------------------------------------------------\n--------------------------------------------------------\n \nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n _2 = [0]\nsage: s[:1]=[1]\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<console>\", line 1, in ?\n  File \"gen.pyx\", line 417, in gen.gen.__setitem__\nIndexError: index (slice(0, 1, None)) must be between 0 and 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/169\n\n",
+    "body": "Assignee: @craigcitro\n\nFrom \"Luislang\" \n\nFollowing session says it all.\n\n``` \n--------------------------------------------------------\n--------------------------------------------------------\n \nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n _2 = [0]\nsage: s[:1]=[1]\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<console>\", line 1, in ?\n  File \"gen.pyx\", line 417, in gen.gen.__setitem__\nIndexError: index (slice(0, 1, None)) must be between 0 and 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/169\n\n",
+    "closed_at": "2008-11-21T07:27:26Z",
     "created_at": "2006-11-15T15:44:35Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "slice assignment not implemented for PARI C library interface",
+    "title": "[with patch, positive review] slice assignment not implemented for PARI C library interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/169",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
-```
 From "Luislang" 
 
 Following session says it all.
- 
+
+``` 
 --------------------------------------------------------
 --------------------------------------------------------
  

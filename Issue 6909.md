@@ -1,15 +1,16 @@
-# Issue 6909: [with patch, needs review]
+# Issue 6909: [with patch, positive review] move some commutative algebra to libSingular functions interface
 
 archive/issues_006909.json:
 ```json
 {
     "body": "Assignee: @malb\n\nImplement a couple of functions using the new libsingular functions interface (#6628).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6909\n\n",
+    "closed_at": "2009-10-16T04:59:39Z",
     "created_at": "2009-09-09T16:36:50Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review]",
+    "title": "[with patch, positive review] move some commutative algebra to libSingular functions interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6909",
     "user": "https://github.com/malb"

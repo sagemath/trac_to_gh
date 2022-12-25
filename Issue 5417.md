@@ -1,4 +1,4 @@
-# Issue 5417: Fix some more deepcopy issues (followup to #5403)
+# Issue 5417: Fix some more deepcopy/caching issues in the quadratic forms code (followup to #5403)
 
 archive/issues_005417.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_005417.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Fix some more deepcopy issues (followup to #5403)",
+    "title": "Fix some more deepcopy/caching issues in the quadratic forms code (followup to #5403)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5417",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

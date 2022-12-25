@@ -1,16 +1,17 @@
-# Issue 7800: dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)
+# Issue 7800: dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial keys!)
 
 archive/issues_007800.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: notebook secure dsage\n\nFor some mysterious reason somebody disabled use of openssl with dsage to create certificates. This new spkg fixes this problem. The actual patch is a simple 1-liner: \n\n```\nwstein@boxen:~/build/referee/sage-4.3/spkg/standard/dsage-1.0.1.p0/src/dsage/scripts$ hg diff\ndiff --git a/dsage/scripts/dsage_setup.py b/dsage/scripts/dsage_setup.py\n--- a/dsage/scripts/dsage_setup.py\n+++ b/dsage/scripts/dsage_setup.py\n@@ -174,7 +174,7 @@\n     print DELIMITER\n     print \"Generating SSL certificate for server...\"\n     \n-    if False and os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n+    if os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n         # We use openssl by default if it exists, since it is *vastly*\n         # faster on Linux.\n         cmd = ['openssl genrsa > %s' % privkey_file]\n```\n\nWithout this, on many platforms -- e.g., sage.math -- it takes hours to generate keys, since GNUtls's key generation program is crap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7800\n\n",
+    "body": "Assignee: tbd\n\nKeywords: notebook secure dsage\n\nSee [sage-devel](http://groups.google.com/group/sage-support/browse_thread/thread/dec883b4fab3b942) for some history.\n\n\n\n\nFor some mysterious reason somebody disabled use of openssl with dsage to create certificates. This new spkg fixes this problem. The actual patch is a simple 1-liner: \n\n```\nwstein@boxen:~/build/referee/sage-4.3/spkg/standard/dsage-1.0.1.p0/src/dsage/scripts$ hg diff\ndiff --git a/dsage/scripts/dsage_setup.py b/dsage/scripts/dsage_setup.py\n--- a/dsage/scripts/dsage_setup.py\n+++ b/dsage/scripts/dsage_setup.py\n@@ -174,7 +174,7 @@\n     print DELIMITER\n     print \"Generating SSL certificate for server...\"\n     \n-    if False and os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n+    if os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n         # We use openssl by default if it exists, since it is *vastly*\n         # faster on Linux.\n         cmd = ['openssl genrsa > %s' % privkey_file]\n```\n\nWithout this, on many platforms -- e.g., sage.math -- it takes hours to generate keys, since GNUtls's key generation program is crap. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7800\n\n",
+    "closed_at": "2010-01-14T07:17:19Z",
     "created_at": "2009-12-31T17:19:50Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)",
+    "title": "dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial keys!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7800",
     "user": "https://github.com/williamstein"
@@ -19,6 +20,11 @@ archive/issues_007800.json:
 Assignee: tbd
 
 Keywords: notebook secure dsage
+
+See [sage-devel](http://groups.google.com/group/sage-support/browse_thread/thread/dec883b4fab3b942) for some history.
+
+
+
 
 For some mysterious reason somebody disabled use of openssl with dsage to create certificates. This new spkg fixes this problem. The actual patch is a simple 1-liner: 
 
@@ -38,7 +44,7 @@ diff --git a/dsage/scripts/dsage_setup.py b/dsage/scripts/dsage_setup.py
          cmd = ['openssl genrsa > %s' % privkey_file]
 ```
 
-Without this, on many platforms -- e.g., sage.math -- it takes hours to generate keys, since GNUtls's key generation program is crap.
+Without this, on many platforms -- e.g., sage.math -- it takes hours to generate keys, since GNUtls's key generation program is crap. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7800
 

@@ -1,9 +1,10 @@
-# Issue 6156: gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)
+# Issue 6156: [with patch; positive review] gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)
 
 archive/issues_006156.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6156\n\n",
+    "closed_at": "2009-06-04T05:55:48Z",
     "created_at": "2009-05-30T04:06:32Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_006156.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)",
+    "title": "[with patch; positive review] gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6156",
     "user": "https://github.com/williamstein"

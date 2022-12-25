@@ -1,22 +1,24 @@
-# Issue 6614: Remove jsMath from version control in the Sage library.
+# Issue 6614: [with patch, positive review] Remove jsMath from version control in the Sage library.
 
 archive/issues_006614.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @rlmill\n\nAfter the merge of #5799, we have jsMath installed in two places: `$SAGE_ROOT/local/notebook/javascript` **and** `$SAGE_DOC/common/static`.  Moreover, all of jsMath is under version control in the Sage library.  However, the standard practice for Sage development is to keep most upstream spkg code out of Mercurial's reach.\n\nIn particular, we'll need to do unnecessary extra work when we upgrade to new upstream versions of jsMath or keep track of local customizations (cf. #4714).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6614\n\n",
+    "body": "Assignee: tba\n\nCC:  @rlmill\n\nAfter the merge of #5799, we have jsMath installed in two places: `$SAGE_ROOT/local/notebook/javascript` **and** `$SAGE_DOC/common/static`.  Moreover, all of jsMath is under version control in the Sage library.  However, the standard practice for Sage development is to keep most upstream spkg code out of Mercurial's reach.\n\nIn particular, we'll need to do unnecessary extra work when we upgrade to new upstream versions of jsMath or keep track of local customizations (cf. #4714).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6614\n\n",
+    "closed_at": "2009-08-30T06:35:53Z",
     "created_at": "2009-07-24T14:50:30Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Remove jsMath from version control in the Sage library.",
+    "title": "[with patch, positive review] Remove jsMath from version control in the Sage library.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6614",
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: tbd
+Assignee: tba
 
 CC:  @rlmill
 

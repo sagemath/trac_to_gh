@@ -4,6 +4,7 @@ archive/issues_008280.json:
 ```json
 {
     "body": "Assignee: tbd\n\nWhen trying to build sage on cygwin, I had to do this:\n\n```\nwstein@winxp ~/build/sage-4.3.3.alpha0/local/lib\n$ ln -s libzn_poly.so libzn_poly.dll\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8280\n\n",
+    "closed_at": "2010-02-17T00:29:39Z",
     "created_at": "2010-02-16T02:08:16Z",
     "labels": [
         "component: porting: cygwin",

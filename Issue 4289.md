@@ -1,9 +1,10 @@
-# Issue 4289: EllipticCurve behaviour
+# Issue 4289: [with patch, with positive review] Fix bug in EllipticCurve constructor
 
 archive/issues_004289.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIf one types in\n`EllipticCurve(1,2)`\nthen one gets\n\n`Elliptic Curve defined by y^2  = x^3 + 5181*x - 5965058 over Rational Field`\n\nthis seemingly unrelated curve has j-invariant 1 and the 2 is ignored. Could the EllipticCurve function test for the presence of two numerical inputs and either raise an error or cast it to\n`EllipticCurve([1,2])`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4289\n\n",
+    "closed_at": "2008-10-15T20:29:53Z",
     "created_at": "2008-10-14T21:30:29Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004289.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
-    "title": "EllipticCurve behaviour",
+    "title": "[with patch, with positive review] Fix bug in EllipticCurve constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4289",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"

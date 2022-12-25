@@ -1,16 +1,17 @@
-# Issue 2272: subgroups of abelian groups have various problems
+# Issue 2272: [duplicate] subgroups of abelian groups have various problems
 
 archive/issues_002272.json:
 ```json
 {
     "body": "Assignee: joyner\n\nWhile nosing around #1284, I ran into some more trouble with subgroups of abelian groups:\n\n```\nsage: A = G.subgroup([a])\nsage: G.<a,b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: a in A   # should return True\nFalse\nsage: A.gens()\n[a]\nsage: A.0      # should return a\nf\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2272\n\n",
+    "closed_at": "2008-05-26T16:43:40Z",
     "created_at": "2008-02-23T00:49:48Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "subgroups of abelian groups have various problems",
+    "title": "[duplicate] subgroups of abelian groups have various problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2272",
     "user": "https://github.com/aghitza"

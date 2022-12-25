@@ -4,6 +4,7 @@ archive/issues_005268.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: combinatorial classes, design\n\nThere are a lot of design issues which concern combinatorial classes. They are currently discussed on the mailing list and on the wiki. See\n    http://groups.google.com/group/sage-combinat-devel/\n    http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/fbf6d9c2ba7cac15\n    http://wiki.sagemath.org/CombinatorialClass \nSomeones has to lead/moderate these discussions, to summarize the result and to incorporate it into sage doc. After this we should emit a bunch of tickets to update the various combinatorial classes to this design. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5268\n\n",
+    "closed_at": "2021-09-10T17:33:19Z",
     "created_at": "2009-02-14T11:01:51Z",
     "labels": [
         "component: combinatorics"

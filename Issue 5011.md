@@ -1,16 +1,17 @@
-# Issue 5011: [with patch, needs review] Solaris: fix get_memory_usage() to use top
+# Issue 5011: [with patch, with positive review] Solaris: fix get_memory_usage() to use top
 
 archive/issues_005011.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nget_memory_usage() falls back to using top when not on Linux. The OSX case is hard coded, but on Solaris we need this patch to make it work.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5011\n\n",
+    "closed_at": "2009-01-18T13:57:52Z",
     "created_at": "2009-01-18T06:45:58Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] Solaris: fix get_memory_usage() to use top",
+    "title": "[with patch, with positive review] Solaris: fix get_memory_usage() to use top",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5011",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

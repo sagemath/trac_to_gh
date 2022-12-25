@@ -1,16 +1,17 @@
-# Issue 2342: [with patch, needs easy review] digraphs show axes...
+# Issue 2342: [with patch, positive review] digraphs show axes...
 
 archive/issues_002342.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis is a mistake from one of mabshoff's merges...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2342\n\n",
+    "closed_at": "2008-02-28T06:26:38Z",
     "created_at": "2008-02-28T05:22:07Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs easy review] digraphs show axes...",
+    "title": "[with patch, positive review] digraphs show axes...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2342",
     "user": "https://github.com/rlmill"

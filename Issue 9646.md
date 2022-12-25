@@ -3,7 +3,8 @@
 archive/issues_009646.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nKeywords: elliptic curve formal group law\n\nIf `F(t1, t2)` is a formal group law, then `F(t1, t2) = t1 + t2 (mod t1*t2)`.  So in particular, the coefficients of `t1^i` and `t2^i` are zero for all `i > 1`.  However the formal group law of an elliptic curve as returned by Sage includes (at least) the terms `-a1<sup>2*t1</sup>3` and `-a1<sup>2*t2</sup>2`, as the following example shows:\n\n```\nsage: P.<a1, a2, a3, a4, a6> = PolynomialRing(ZZ, 5)\nsage: E = EllipticCurve(list(P.gens()))\nsage: F = E.formal().group_law(prec = 4)\nsage: t2 = F.parent().gen()\nsage: t1 = F.parent().base_ring().gen()\nsage: F(t1, 0)\nt1 - a1^2*t1^3   # should be t1\nsage: F(0, t2)\nt2 - a1^2*t2^3\n```\nNote also that the coefficient of `t1^2*t2 + t1*t2^2` returned by sage is `-a1^2 - a2`, whereas, according to Silverman AEC IV.1, it should be simply `-a2`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9646\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nKeywords: elliptic curve formal group law\n\nIf `F(t1, t2)` is a formal group law, then `F(t1, t2) = t1 + t2 (mod t1*t2)`.  So in particular, the coefficients of `t1^i` and `t2^i` are zero for all `i > 1`.  However the formal group law of an elliptic curve as returned by Sage includes (at least) the terms `-a1<sup>2*t1</sup>3` and `-a1<sup>2*t2</sup>2`, as the following example shows:\n\n```\nsage: P.<a1, a2, a3, a4, a6> = PolynomialRing(ZZ, 5)\nsage: E = EllipticCurve(list(P.gens()))\nsage: F = E.formal().group_law(prec = 4)\nsage: t2 = F.parent().gen()\nsage: t1 = F.parent().base_ring().gen()\nsage: F(t1, 0)\nt1 - a1^2*t1^3   # should be t1\nsage: F(0, t2)\nt2 - a1^2*t2^3\n```\nNote also that the coefficient of `t1^2*t2 + t1*t2^2` returned by sage is `-a1^2 - a2`, whereas, according to Silverman AEC IV.1, it should be simply `-a2`.\n\nThis was obtained in Sage 4.4.4 on MacOS X 10.5.8 (32 bit).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9646\n\n",
+    "closed_at": "2011-01-26T22:26:41Z",
     "created_at": "2010-07-30T15:06:26Z",
     "labels": [
         "component: elliptic curves",
@@ -36,6 +37,8 @@ sage: F(0, t2)
 t2 - a1^2*t2^3
 ```
 Note also that the coefficient of `t1^2*t2 + t1*t2^2` returned by sage is `-a1^2 - a2`, whereas, according to Silverman AEC IV.1, it should be simply `-a2`.
+
+This was obtained in Sage 4.4.4 on MacOS X 10.5.8 (32 bit).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9646
 

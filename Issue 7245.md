@@ -1,16 +1,17 @@
-# Issue 7245: sage -merge misses positively reviewed tickets
+# Issue 7245: [with patch, positive review] sage -merge misses positively reviewed tickets
 
 archive/issues_007245.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @craigcitro\n\nKeywords: merge apply ticket\n\nThe ` sage -merge ` script doesn't detect tickets as being marked positively reviewed if they don't have \"positive review\" in the title.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7245\n\n",
+    "closed_at": "2009-10-19T06:03:43Z",
     "created_at": "2009-10-19T05:28:56Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "sage -merge misses positively reviewed tickets",
+    "title": "[with patch, positive review] sage -merge misses positively reviewed tickets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7245",
     "user": "https://github.com/mwhansen"

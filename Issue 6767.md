@@ -1,9 +1,10 @@
-# Issue 6767: typo in totallyreal_rel.py
+# Issue 6767: [with patch, positive review] typo in totallyreal_rel.py
 
 archive/issues_006767.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nA trivial typo is corrected by the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6767\n\n",
+    "closed_at": "2009-08-25T05:00:31Z",
     "created_at": "2009-08-16T21:14:00Z",
     "labels": [
         "component: number fields",
@@ -11,7 +12,7 @@ archive/issues_006767.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "typo in totallyreal_rel.py",
+    "title": "[with patch, positive review] typo in totallyreal_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6767",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

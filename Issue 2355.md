@@ -1,17 +1,17 @@
-# Issue 2355: Write a clearer submatrix implementation
+# Issue 2355: [with patch; with positive review pending (?)] Write a clearer submatrix implementation
 
 archive/issues_002355.json:
 ```json
 {
     "body": "Assignee: @dfdeshom\n\n The current implementation of the submatrix command could be easier to use given that matrix_from_rows_and_columns is nicely suited for this task; ie, this should just work\n\n```\nA.submatrix([1..2],[0..1])\n```\n\nif A is (at least) a 3x2 matrix\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/2355\n\n",
+    "closed_at": "2008-03-28T16:32:14Z",
     "created_at": "2008-02-29T20:30:57Z",
     "labels": [
         "component: linear algebra",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Write a clearer submatrix implementation",
+    "title": "[with patch; with positive review pending (?)] Write a clearer submatrix implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2355",
     "user": "https://github.com/dfdeshom"

@@ -4,10 +4,10 @@ archive/issues_004614.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAs the title says. Also see the discussion at \n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/f7039a71479c47c7\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4614\n\n",
+    "closed_at": "2009-08-12T16:59:15Z",
     "created_at": "2008-11-25T10:44:16Z",
     "labels": [
-        "component: website/wiki",
-        "bug"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "automatically add md5sums for source tarballs to the web site",

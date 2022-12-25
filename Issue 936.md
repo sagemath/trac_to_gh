@@ -4,6 +4,7 @@ archive/issues_000936.json:
 ```json
 {
     "body": "Assignee: failure\n\nDo \n\n   sage -t --optional SAGE_ROOT/devel/sage\n\nand fix the numerous problems.  This requires a Sage install with all optional packages installed,\nand maple,mathematica,matlab,reduce,etc., all installed.  (I.e., sage.math.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/936\n\n",
+    "closed_at": "2007-10-20T23:38:37Z",
     "created_at": "2007-10-20T03:04:59Z",
     "labels": [
         "component: doctest coverage",

@@ -3,11 +3,11 @@
 archive/issues_008702.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  @novoselt @mwhansen sage-combinat\n\nThis is the future Cython replacement for CombinatorialObject. \n\nPatch in preparation in sage-combinat queue\n\nIssue created by migration from https://trac.sagemath.org/ticket/8702\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @novoselt @mwhansen sage-combinat\n\nThe idea is inspired from the \"prototype\" design pattern (see [Pro], [GOF]).\n\nI want to define subclasses of Element with the following behavior: Those\nclasses are intended to be used to model *mathematical* objects, which are by\nessence immutable. However, in many occasions, one wants to construct the\ndata-structure encoding of a new mathematical object by small modifications of\nthe data structure encoding some already built object. This is a very common\nstuff for example in matrices: For example: given a matrix M we want to\nreplace every non_zero position by 1\n\n```\n            res = copy(M)\n            for pos in res._nonzero_positions_by_row():\n                res[pos] = 1\n            res.set_immutable()\n```\nHowever in many cases, for the resulting data-structure to correctly encode\nthe mathematical object, some structural invariants must hold (say for example\nwe want that the matrix is symmetric). One problem is that, in many cases,\nduring the modification process, there is no possibility but to break the\ninvariants. Here there is no way to keep the matrix symmetric during the\nreplacement by 1...\n\nA typical example in combinatorics, in a list modeling a permutation of\n{1,...,n}, the integers must be distinct. A very common operation is to\ntake a permutation to make a copy with some small modifications, like\nexchanging two consecutive values in the list or cycling some values. Though\nthe result is clearly a permutations there's no way to avoid breaking the\npermutations invariants at some point during the modifications.\n\n\nSo the idea is the following: to allows local breaking of invariant on a\nlocally mutable copy and to check that things are restored in a proper state\nat the end. So I wrote a small class called `ClonableElement` and several\nderived subclasses (clone is the standard name for the copy method in the\n\"prototype\" design pattern):\n\nA class C inheriting from ClonableElement must implement the following\ntwo methods\n\n```\n    - obj.__copy__() -- returns a fresh copy of obj\n    - obj.check() -- returns nothing, raise an exception if obj\n      doesn't satisfies the data structure invariants\n```\nThen, given an instance obj of C, the following sequences of\ninstructions ensures that the invariants of new_obj are properly\nrestored at the end\n\n```\n       with obj.clone() as new_obj:\n           ...\n           # lot of invariant breaking modifications on new_obj\n           ...\n       # invariants are ensured to be fulfilled\n```\nThe following equivalent sequence of instructions can be used if speed is\nneeded, in particular in Cython code (unfortunately, the handling of the with\ninstruction make some overhead)...\n\n```\n       new_obj = obj.__copy__()\n       ...\n       # lot of invariant breaking modifications on new_obj\n       ...\n       new_obj.set_immutable()\n       new_obj.check()\n       # invariants are ensured to be fulfilled\n```\nI also took to chance to handle hashing...\n\n\nThis is the future Cython replacement for CombinatorialObject.\n\n\n[Pro] Prototype pattern http://en.wikipedia.org/wiki/Prototype_pattern\n\n[GOF] Design Patterns: Elements of Reusable Object-Oriented\nSoftware. E. Gamma; R. Helm; R. Johnson; J. Vlissides (1994).\nAddison-Wesley. ISBN 0-201-63361-2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8702\n\n",
+    "closed_at": "2011-01-12T06:31:33Z",
     "created_at": "2010-04-17T09:32:15Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Datastructure for objects with prototype (clone) design pattern.",
@@ -20,9 +20,87 @@ Assignee: @hivert
 
 CC:  @novoselt @mwhansen sage-combinat
 
-This is the future Cython replacement for CombinatorialObject. 
+The idea is inspired from the "prototype" design pattern (see [Pro], [GOF]).
 
-Patch in preparation in sage-combinat queue
+I want to define subclasses of Element with the following behavior: Those
+classes are intended to be used to model *mathematical* objects, which are by
+essence immutable. However, in many occasions, one wants to construct the
+data-structure encoding of a new mathematical object by small modifications of
+the data structure encoding some already built object. This is a very common
+stuff for example in matrices: For example: given a matrix M we want to
+replace every non_zero position by 1
+
+```
+            res = copy(M)
+            for pos in res._nonzero_positions_by_row():
+                res[pos] = 1
+            res.set_immutable()
+```
+However in many cases, for the resulting data-structure to correctly encode
+the mathematical object, some structural invariants must hold (say for example
+we want that the matrix is symmetric). One problem is that, in many cases,
+during the modification process, there is no possibility but to break the
+invariants. Here there is no way to keep the matrix symmetric during the
+replacement by 1...
+
+A typical example in combinatorics, in a list modeling a permutation of
+{1,...,n}, the integers must be distinct. A very common operation is to
+take a permutation to make a copy with some small modifications, like
+exchanging two consecutive values in the list or cycling some values. Though
+the result is clearly a permutations there's no way to avoid breaking the
+permutations invariants at some point during the modifications.
+
+
+So the idea is the following: to allows local breaking of invariant on a
+locally mutable copy and to check that things are restored in a proper state
+at the end. So I wrote a small class called `ClonableElement` and several
+derived subclasses (clone is the standard name for the copy method in the
+"prototype" design pattern):
+
+A class C inheriting from ClonableElement must implement the following
+two methods
+
+```
+    - obj.__copy__() -- returns a fresh copy of obj
+    - obj.check() -- returns nothing, raise an exception if obj
+      doesn't satisfies the data structure invariants
+```
+Then, given an instance obj of C, the following sequences of
+instructions ensures that the invariants of new_obj are properly
+restored at the end
+
+```
+       with obj.clone() as new_obj:
+           ...
+           # lot of invariant breaking modifications on new_obj
+           ...
+       # invariants are ensured to be fulfilled
+```
+The following equivalent sequence of instructions can be used if speed is
+needed, in particular in Cython code (unfortunately, the handling of the with
+instruction make some overhead)...
+
+```
+       new_obj = obj.__copy__()
+       ...
+       # lot of invariant breaking modifications on new_obj
+       ...
+       new_obj.set_immutable()
+       new_obj.check()
+       # invariants are ensured to be fulfilled
+```
+I also took to chance to handle hashing...
+
+
+This is the future Cython replacement for CombinatorialObject.
+
+
+[Pro] Prototype pattern http://en.wikipedia.org/wiki/Prototype_pattern
+
+[GOF] Design Patterns: Elements of Reusable Object-Oriented
+Software. E. Gamma; R. Helm; R. Johnson; J. Vlissides (1994).
+Addison-Wesley. ISBN 0-201-63361-2.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8702
 

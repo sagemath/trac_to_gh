@@ -4,6 +4,7 @@ archive/issues_004607.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  p.a.rombouts@home.nl\n\nfrom [public bug collection](http://spreadsheets.google.com/pub?key=pCwvGVwSMxTzT6E2xNdo5fA):\n\nNormally a double backslash '\\\\' forces a new line in LaTeX. However, when I type the following in a notebook input cell:\n\n```\n%latex\nFirst line.\\\\\nSecond line.\n```\nthe output looks like this:\n\n```\n      First line.line.\n```\n\n---\n\nAfter a little fiddling, I discovered this effect can be achieved using three backslashes instead of two, but this is not correct behavior.\nI first discovered this problem when I tried to render something like this in a sage notebook:\n\n```\n%latex\n\\[\\theta(x)=\\begin{cases}\n0 & (x<0) \\\\\n1 & (x\\ge 0)\n\\end{cases}\\]\n```\nThe '1' is missing in the rendered output. The desired output can be obtained by using triple backslashes, but as I noted before, the is not correct behavior.\n\n---\n\nprobably just needs proper escaping.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4607\n\n",
+    "closed_at": "2009-01-20T10:23:26Z",
     "created_at": "2008-11-25T00:05:55Z",
     "labels": [
         "component: notebook",

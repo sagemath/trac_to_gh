@@ -1,16 +1,17 @@
-# Issue 3871: crap in SAGE_ROOT; extending #3759
+# Issue 3871: [with patch; positive review] do not save pngs in SAGE_ROOT; extending #3759
 
 archive/issues_003871.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThese are still left in SAGE_ROOT after testlong:\n\n`sage.png, sage0.png, sage1.png, sage2.png, sage3.png, sage4.png, sage5.png and sage6.png`\n\nSee #3759\n\nIssue created by migration from https://trac.sagemath.org/ticket/3871\n\n",
+    "closed_at": "2009-01-24T13:16:23Z",
     "created_at": "2008-08-15T10:04:25Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "crap in SAGE_ROOT; extending #3759",
+    "title": "[with patch; positive review] do not save pngs in SAGE_ROOT; extending #3759",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3871",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 3421: [with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__
+# Issue 3421: [with patch, positive review] MPolynomialRing_libsingular should accept longs in __call__
 
 archive/issues_003421.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis now works:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: P(\"111111111111111111111111111111111111111111111111111111111\")\n111111111111111111111111111111111111111111111111111111111\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3421\n\n",
+    "closed_at": "2008-06-15T15:09:41Z",
     "created_at": "2008-06-13T22:08:37Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__",
+    "title": "[with patch, positive review] MPolynomialRing_libsingular should accept longs in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3421",
     "user": "https://github.com/malb"

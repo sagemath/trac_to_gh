@@ -4,6 +4,7 @@ archive/issues_008595.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  @videlec\n\nFrom [sage-combinat-devel group](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/3d5e4db608049516?hl=en) :\n\n```\n\n2010/3/23 Vincent Delecroix\n> Hi,\n>\n> I tried the following and get an unexpected error\n>\n> {{{\n> sage: s = WordMorphism({'a1': ['a1','a2'], 'a2':['a1']})\n> sage: s.fixed_point('a1')\n> Traceback\n> ...\n> KeyError: 'a'\n> }}}\n>\n> and it does the same for tuples\n>\n> {{{\n> sage: s = WordMorphism({('a', 1) : [('a', 1), ('a', 2)], ('a', 2) : [('a', 1)]})\n> sage: s.fixed_point(('a', 1))\n> Traceback\n> ...\n> KeyError: 'a'\n> }}}\n>\n> Is it a bug or not the right way to do ?\n>\n> (On this example it looks strange but I really need product alphabet)\n>\n> Cheers,\n> Vincent\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8595\n\n",
+    "closed_at": "2010-04-16T18:49:59Z",
     "created_at": "2010-03-24T14:29:12Z",
     "labels": [
         "component: combinatorics",

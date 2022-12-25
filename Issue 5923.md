@@ -1,9 +1,10 @@
-# Issue 5923: Handling of magma and pari input in ModularForms
+# Issue 5923: [with patch, with positive review] Handling of magma and pari input in ModularForms
 
 archive/issues_005923.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThe ModularForms command has some slightly counter-intuitive behaviour on some types of input:\n\n```\nsage: ModularForms(gp(1),12)\n---------------------------------------------------------------------------\nTypeError     \n\n[much snipped error message]\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[4]=level(sage[3]);\nGP/PARI ERROR:\n  ***   expected character: ',' instead of: sage[4]=level(sage[3]);\n                                                              ^-----\n```\n\nI realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.\n\nWould there be any support for having an if statement in the function to catch magma or pari elements and transform them into their Sage equivalents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5923\n\n",
+    "body": "Assignee: @loefflerd\n\nThe `ModularForms` command has some slightly counter-intuitive behaviour on some types of input:\n\n```\nsage: ModularForms(gp(1),12)\n---------------------------------------------------------------------------\nTypeError     \n\n[much snipped error message]\n\nTypeError: Error executing code in GP/PARI:\nCODE:\n        sage[4]=level(sage[3]);\nGP/PARI ERROR:\n  ***   expected character: ',' instead of: sage[4]=level(sage[3]);\n                                                              ^-----\n```\n\nI realize that this is because the first element is supposed to be a group, although a (Sage) integer is allowed.\n\nWould there be any support for having an if statement in the function to catch magma or pari elements and transform them into their Sage equivalents?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5923\n\n",
+    "closed_at": "2009-05-11T09:53:35Z",
     "created_at": "2009-04-28T22:41:04Z",
     "labels": [
         "component: modular forms",
@@ -11,15 +12,15 @@ archive/issues_005923.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Handling of magma and pari input in ModularForms",
+    "title": "[with patch, with positive review] Handling of magma and pari input in ModularForms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5923",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @craigcitro
+Assignee: @loefflerd
 
-The ModularForms command has some slightly counter-intuitive behaviour on some types of input:
+The `ModularForms` command has some slightly counter-intuitive behaviour on some types of input:
 
 ```
 sage: ModularForms(gp(1),12)

@@ -4,6 +4,7 @@ archive/issues_006533.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe Sage library fails to build (when linking symmetrica) on  ia64-Linux-rhel5.  I am investigating this. Note that sage-4.1.rc0 built fine, and there are minimal changes between rc0 and rc1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6533\n\n",
+    "closed_at": "2009-11-11T17:43:16Z",
     "created_at": "2009-07-14T18:39:01Z",
     "labels": [
         "component: build",

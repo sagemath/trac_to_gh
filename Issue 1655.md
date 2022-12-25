@@ -4,6 +4,7 @@ archive/issues_001655.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHere it is\n\n    http://sage.math.washington.edu/home/was/tmp/jmol-11.5.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1655\n\n",
+    "closed_at": "2008-01-03T13:34:59Z",
     "created_at": "2008-01-02T12:02:48Z",
     "labels": [
         "component: packages: standard",

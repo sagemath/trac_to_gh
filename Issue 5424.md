@@ -1,16 +1,17 @@
-# Issue 5424: Move infinity to new coercion model
+# Issue 5424: [with patch, positive review] Move infinity to new coercion model
 
 archive/issues_005424.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5424\n\n",
+    "closed_at": "2009-03-20T21:05:09Z",
     "created_at": "2009-03-03T09:23:25Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Move infinity to new coercion model",
+    "title": "[with patch, positive review] Move infinity to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5424",
     "user": "https://github.com/robertwb"

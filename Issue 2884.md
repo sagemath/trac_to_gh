@@ -1,16 +1,17 @@
-# Issue 2884: notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)
+# Issue 2884: [with patch; positive review] notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)
 
 archive/issues_002884.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2884\n\n",
+    "body": "Assignee: boothby\n\nTo replicate this bug:\n\n1. Put show(plot(sin)) in a cell and press shift-enter\n\n2. Then in the *same* cell *delete* show(plot(sin)) and replace it by this and press shift-enter:\n\n```\n@interact\ndef _(n=(1,100)):\n   print n^2\n```\n\n3. Observe that the plot of sin is still there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2884\n\n",
+    "closed_at": "2008-05-17T18:45:22Z",
     "created_at": "2008-04-11T23:50:22Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)",
+    "title": "[with patch; positive review] notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2884",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,19 @@ archive/issues_002884.json:
 ```
 Assignee: boothby
 
+To replicate this bug:
 
+1. Put show(plot(sin)) in a cell and press shift-enter
+
+2. Then in the *same* cell *delete* show(plot(sin)) and replace it by this and press shift-enter:
+
+```
+@interact
+def _(n=(1,100)):
+   print n^2
+```
+
+3. Observe that the plot of sin is still there.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2884
 

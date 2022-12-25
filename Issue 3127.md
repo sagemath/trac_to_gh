@@ -1,22 +1,23 @@
-# Issue 3127: abelian groups (are lame?) -- bug in comparison of subgroups with group
+# Issue 3127: [duplicate] abelian groups (are lame?) -- bug in comparison of subgroups with group
 
 archive/issues_003127.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nWARNINGS: \n1. David Roe is recently rumored to be rewriting abelian groups.  \n2. I recently rewrote abelian groups but my patch rotted: #1849\n3. There are other known problems with subgroups of abelian groups: #2272\n\n\nOK, now the bug report.  This is inconsistent and lame:\n\n```\nsage: A = AbelianGroup(1,[6])\nsage: A.subgroup(list(A.gens())) == A\nFalse\nsage: A = AbelianGroup(2,[2,3])\nsage: A.subgroup(list(A.gens())) == A\nTrue\n```\n\nThis is the original email reporting the bug:\n\n```\nHi there,\n\nWhen I define an abelian group\nA = AbelianGroup(1,[6])\nand then generate a subgroup that actually is the whole group itself,\nand then compare it to the original group:\nA.subgroup(list(A.gens())) == A\nthe result may be either True or False. In this example it is False.\nWhen defining A as\nA = AbelianGroup(2,[3,2])\nit is False as well, but when I define it as\nA = AbelianGroup(2,[2,3])\nit is True.\nMy guess is that this is because comparison of finite Abelian groups\nis implemented using their invariant factors, but when you create the\ngroup using factors that are not in canonical form or not in\nincreasing order, these are used instead of the ordered list of\ninvariant factors anyway.\n\nGreetings,\n\nUtpal Sarkar\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3127\n\n",
+    "body": "Assignee: @roed314\n\nWARNINGS: \n1. David Roe is recently rumored to be rewriting abelian groups.  \n2. I recently rewrote abelian groups but my patch rotted: #1849\n3. There are other known problems with subgroups of abelian groups: #2272\n\n\nOK, now the bug report.  This is inconsistent and lame:\n\n```\nsage: A = AbelianGroup(1,[6])\nsage: A.subgroup(list(A.gens())) == A\nFalse\nsage: A = AbelianGroup(2,[2,3])\nsage: A.subgroup(list(A.gens())) == A\nTrue\n```\n\nThis is the original email reporting the bug:\n\n```\nHi there,\n\nWhen I define an abelian group\nA = AbelianGroup(1,[6])\nand then generate a subgroup that actually is the whole group itself,\nand then compare it to the original group:\nA.subgroup(list(A.gens())) == A\nthe result may be either True or False. In this example it is False.\nWhen defining A as\nA = AbelianGroup(2,[3,2])\nit is False as well, but when I define it as\nA = AbelianGroup(2,[2,3])\nit is True.\nMy guess is that this is because comparison of finite Abelian groups\nis implemented using their invariant factors, but when you create the\ngroup using factors that are not in canonical form or not in\nincreasing order, these are used instead of the ordered list of\ninvariant factors anyway.\n\nGreetings,\n\nUtpal Sarkar\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3127\n\n",
+    "closed_at": "2008-05-26T16:43:50Z",
     "created_at": "2008-05-07T22:22:43Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "abelian groups (are lame?) -- bug in comparison of subgroups with group",
+    "title": "[duplicate] abelian groups (are lame?) -- bug in comparison of subgroups with group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3127",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: joyner
+Assignee: @roed314
 
 WARNINGS: 
 1. David Roe is recently rumored to be rewriting abelian groups.  

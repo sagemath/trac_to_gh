@@ -4,6 +4,7 @@ archive/issues_008924.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nComparison between Sage and mpmath numbers works with mpmath numbers on the left, but not on the right:\n\n```\nsage: mpmath.mpf(1) < 3\nTrue\nsage: 1 < mpmath.mpf(3)\nFalse\nsage: 4 == mpmath.mpf(4)\nFalse\n```\n\nFound by Harald Schilly (see #8791).\n\nThis appears to be a bug in Sage (or Cython). Sage's numbers do the pure-Python equivalent of not returning NotImplemented when compared to unrecognized types. For a minimal example:\n\n```\nsage: class X(object):\n....:         def __init__(self, v): self.v = v\n....:     def __lt__(self, other): return self.v < int(other)\n....:     def __gt__(self, other): return self.v > int(other)\n....:\nsage: X(1) < 3\nTrue\nsage: 1 < X(3)\nFalse\nsage: X(1) < int(3)\nTrue\nsage: int(1) < X(3)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8924\n\n",
+    "closed_at": "2016-08-30T13:32:25Z",
     "created_at": "2010-05-07T19:23:24Z",
     "labels": [
         "component: basic arithmetic",

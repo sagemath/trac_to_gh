@@ -1,16 +1,17 @@
-# Issue 6225: [with patch, needs review] add link to irc in notebook help page
+# Issue 6225: [with patch, positive review] add link to irc in notebook help page
 
 archive/issues_006225.json:
 ```json
 {
     "body": "Assignee: boothby\n\nInclude link to sagemath.org's embedded irc java applet. if more people know about the irc channel and have easy access, the more exchange of help will happen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6225\n\n",
+    "closed_at": "2009-06-13T21:39:13Z",
     "created_at": "2009-06-05T14:11:31Z",
     "labels": [
         "component: notebook",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] add link to irc in notebook help page",
+    "title": "[with patch, positive review] add link to irc in notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6225",
     "user": "https://github.com/haraldschilly"

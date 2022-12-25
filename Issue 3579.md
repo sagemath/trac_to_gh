@@ -1,16 +1,17 @@
-# Issue 3579: bug in RandonGNP graph constructor
+# Issue 3579: [with patch, positive review] bug in RandonGNP graph constructor
 
 archive/issues_003579.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\n17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)\n17:32 < itolkov> Traceback ... OverflowError: math range error\n17:32 < itolkov> bug?\n17:34 < wstein-3576> nt necessarily.\n17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.\n17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3579\n\n",
+    "closed_at": "2008-07-15T01:49:19Z",
     "created_at": "2008-07-07T00:37:28Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "bug in RandonGNP graph constructor",
+    "title": "[with patch, positive review] bug in RandonGNP graph constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3579",
     "user": "https://github.com/williamstein"

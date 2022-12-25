@@ -1,16 +1,17 @@
-# Issue 2961: [with patch; needs review] add doctest for alarm function
+# Issue 2961: [with patch; positive review] add doctest for alarm function
 
 archive/issues_002961.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2961\n\n",
+    "closed_at": "2008-04-19T22:23:57Z",
     "created_at": "2008-04-19T22:16:35Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] add doctest for alarm function",
+    "title": "[with patch; positive review] add doctest for alarm function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2961",
     "user": "https://github.com/williamstein"

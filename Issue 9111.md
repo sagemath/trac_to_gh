@@ -4,6 +4,7 @@ archive/issues_009111.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nUsing the C code written by Thierry de Montgolfier and available there :\nhttp://www.liafa.jussieu.fr/~fm/algos/index.html\n\nWe now have a Graph.modular_decomposition function available in Sage !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9111\n\n",
+    "closed_at": "2010-07-21T02:48:04Z",
     "created_at": "2010-06-01T21:53:58Z",
     "labels": [
         "component: graph theory"

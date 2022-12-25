@@ -1,16 +1,17 @@
-# Issue 5555: [with patch, not ready for review] make some TeX macros available to docstrings
+# Issue 5555: [with patch, positive review] make some TeX macros available to docstrings
 
 archive/issues_005555.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nWith the attached patch, you should be able to use \\ZZ, \\CC, \\RR, and \\QQ in docstrings and have them typeset correctly in the html, live html, latex, and pdf versions of the documentation.  To add new macros, edit the file '$SAGE_ROOT/devel/sage/doc/common/sage-macros.tex'.  (I considered just using the existing file 'macros.tex' in the same directory, but decided it was too bloated.)\n\nThe point here is to be able to write docstrings which are readable from interactive help in Sage and which also get typeset correctly in the reference manual; this was discussed on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/74e6bcf5ef716d1c), and people seemed to agree that a docstring like \n\n```\nThis computes the integral homology `H_d(X, \\ZZ)` of `X` in dimension `d`. \n```\nwas better than\n\n```\nThis computes the integral homology `H_d(X, \\mathbb{Z})` of `X` in dimension `d`. \n```\nespecially since the \\ZZ gets turned into ZZ when pre-parsed for interactive help.  \n\nThis point should be kept in mind if anyone wants to add new macros: the name should be short and unambiguous, and there should be a good reason for using it instead of plain LaTeX.  (This was maybe what I meant when I said that macros.tex was too bloated.)\n\nHaving said all of that, I would be happy to add some more macros now.  What else should be added?  Once we seem to have made some sort of decision about that, I'll update the patch and mark this ticket as \"needs review\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5555\n\n",
+    "closed_at": "2009-04-11T00:19:08Z",
     "created_at": "2009-03-17T23:38:59Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, not ready for review] make some TeX macros available to docstrings",
+    "title": "[with patch, positive review] make some TeX macros available to docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5555",
     "user": "https://github.com/jhpalmieri"

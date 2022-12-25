@@ -1,32 +1,33 @@
-# Issue 2180: cython skipping build optimization
+# Issue 2180: [with patch, with positive review] cython skipping (build optimization)
 
 archive/issues_002180.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @bobmoretti\n\nIn 2.10.2.alpha0, there appears to be a small problem with the cython skipping \nstep. \u00a0To illustrate the bug:\n1) \u00a0Start with a 2.10.2.alpha0 (with padic import patch) which is built \nup-to-date\n2) \u00a0Add a new patch which adds a new .pyx file\n3) \u00a0sage -br\n4) \u00a0The bug is that you get a message like: \nbuilding 'sage.rings.polynomial.multi_polynomial_factor' extension\nerror: unknown file type '.pyx' \n(from 'sage/rings/polynomial/multi_polynomial_factor.pyx')\nsage: There was an error installing modified sage library code.\n\n\nThis appears to arise because the new .pyx file is not in the cache and so the \nbuild optimizer believes that there are no .pyx files to build and just lets \nthe ordinary disttools do their work. \u00a0Of course, the ordinary disttools \ndon't know what to do with .pyx files.\n\nA work-around is to 'touch' a .pyx file anywhere in the tree which is already \nin the cache. \u00a0A build after the touch will build the touch'ed file and the \nnew file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2180\n\n",
+    "body": "Assignee: @bobmoretti\n\nCC:  @bobmoretti\n\nIn 2.10.2.alpha0, there appears to be a small problem with the cython skipping \nstep.  To illustrate the bug:\n1)  Start with a 2.10.2.alpha0 (with padic import patch) which is built \nup-to-date\n2)  Add a new patch which adds a new .pyx file\n3)  sage -br\n4)  The bug is that you get a message like: \nbuilding 'sage.rings.polynomial.multi_polynomial_factor' extension\nerror: unknown file type '.pyx' \n(from 'sage/rings/polynomial/multi_polynomial_factor.pyx')\nsage: There was an error installing modified sage library code.\n\n\nThis appears to arise because the new .pyx file is not in the cache and so the \nbuild optimizer believes that there are no .pyx files to build and just lets \nthe ordinary disttools do their work.  Of course, the ordinary disttools \ndon't know what to do with .pyx files.\n\nA work-around is to 'touch' a .pyx file anywhere in the tree which is already \nin the cache.  A build after the touch will build the touch'ed file and the \nnew file.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2180\n\n",
+    "closed_at": "2008-02-24T20:37:50Z",
     "created_at": "2008-02-16T20:56:40Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "cython skipping build optimization",
+    "title": "[with patch, with positive review] cython skipping (build optimization)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2180",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: @bobmoretti
 
 CC:  @bobmoretti
 
 In 2.10.2.alpha0, there appears to be a small problem with the cython skipping 
-step.  To illustrate the bug:
-1)  Start with a 2.10.2.alpha0 (with padic import patch) which is built 
+step.  To illustrate the bug:
+1)  Start with a 2.10.2.alpha0 (with padic import patch) which is built 
 up-to-date
-2)  Add a new patch which adds a new .pyx file
-3)  sage -br
-4)  The bug is that you get a message like: 
+2)  Add a new patch which adds a new .pyx file
+3)  sage -br
+4)  The bug is that you get a message like: 
 building 'sage.rings.polynomial.multi_polynomial_factor' extension
 error: unknown file type '.pyx' 
 (from 'sage/rings/polynomial/multi_polynomial_factor.pyx')
@@ -35,12 +36,13 @@ sage: There was an error installing modified sage library code.
 
 This appears to arise because the new .pyx file is not in the cache and so the 
 build optimizer believes that there are no .pyx files to build and just lets 
-the ordinary disttools do their work.  Of course, the ordinary disttools 
+the ordinary disttools do their work.  Of course, the ordinary disttools 
 don't know what to do with .pyx files.
 
 A work-around is to 'touch' a .pyx file anywhere in the tree which is already 
-in the cache.  A build after the touch will build the touch'ed file and the 
+in the cache.  A build after the touch will build the touch'ed file and the 
 new file.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2180
 

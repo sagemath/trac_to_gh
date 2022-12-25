@@ -1,9 +1,10 @@
-# Issue 3295: misspelled "parrallel" in graphs
+# Issue 3295: [with patch, positive review] misspelled "parrallel" in graphs
 
 archive/issues_003295.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSpelling mistake in CircularLadderGraph docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3295\n\n",
+    "closed_at": "2008-05-25T03:23:30Z",
     "created_at": "2008-05-24T23:21:20Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_003295.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "misspelled \"parrallel\" in graphs",
+    "title": "[with patch, positive review] misspelled \"parrallel\" in graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3295",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

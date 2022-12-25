@@ -1,9 +1,10 @@
-# Issue 3412: sage-3.0.3.alpha2 -- two files that are ? in repo in fresh build
+# Issue 3412: [with patch; positive review] sage-3.0.3.alpha2 -- two files that are ? in repo in fresh build
 
 archive/issues_003412.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nAfter building sage-3.0.3.alpha2:\n\n```\nsage: hg_sage()\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\n? sage/misc/allocator.h\n? sage/server/notebook/a.txt\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3412\n\n",
+    "closed_at": "2008-06-16T18:30:07Z",
     "created_at": "2008-06-13T14:16:21Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_003412.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "sage-3.0.3.alpha2 -- two files that are ? in repo in fresh build",
+    "title": "[with patch; positive review] sage-3.0.3.alpha2 -- two files that are ? in repo in fresh build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3412",
     "user": "https://github.com/williamstein"

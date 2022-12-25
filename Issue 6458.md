@@ -1,16 +1,17 @@
-# Issue 6458: Inverse modulo an ideal in a relative number field
+# Issue 6458: [with patch, positive review] Inverse modulo an ideal in a relative number field
 
 archive/issues_006458.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis adds a few lines to get `inverse_mod` working in the ring of integers of a relative field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6458\n\n",
+    "closed_at": "2009-07-16T21:10:37Z",
     "created_at": "2009-07-02T13:27:16Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Inverse modulo an ideal in a relative number field",
+    "title": "[with patch, positive review] Inverse modulo an ideal in a relative number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6458",
     "user": "https://github.com/loefflerd"

@@ -4,6 +4,7 @@ archive/issues_000175.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: ceil(10^16 * 1.0)\n 10000000000000000\n\nsage: ceil(10^17 * 1.0)\n 3125000000000000\n```\n\nright.......\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/175\n\n",
+    "closed_at": "2007-01-25T19:37:00Z",
     "created_at": "2006-12-02T17:01:48Z",
     "labels": [
         "component: basic arithmetic",

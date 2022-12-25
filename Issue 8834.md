@@ -4,6 +4,7 @@ archive/issues_008834.json:
 ```json
 {
     "body": "Assignee: jason, was\n\n```\nHi,\n\nContinuing this thread, I think that building Sage shouldn't require X11.  E.g., on t2, the new R png tests fail:\n\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/interfaces/r.py\", line 993:\n    sage: r.png(filename='\"%s\"'%filename) # filename not needed in notebook, used for doctesting\nException raised:\n...\n    sage: r.png(filename='\"%s\"'%filename) # filename not needed in notebook, used for doctesting\n      File \"/scratch/wstein/build/sage-4.4.1.alpha2/local/lib/python/site-packages/sage/interfaces/r.py\n\", line 356, in png\n        raise RuntimeError, \"R was not compiled with PNG support\"\n    RuntimeError: R was not compiled with PNG support\n*******************************************************************\n\n---\n\nUnfortunately, this really means that those tests should all be changed to be \n\n   # optional -- x11\n\nThey won't get tested by \"make test\".  However, doing \n\n  ./sage -t -only_optional=x11 devel/sage/sage/\n\nwill test them.  The release manager checklist will suggest to do this check. \n\nI've opened a ticket for this:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8834\n\n",
+    "closed_at": "2010-05-02T23:49:38Z",
     "created_at": "2010-05-01T06:14:29Z",
     "labels": [
         "component: graphics",

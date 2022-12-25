@@ -4,6 +4,7 @@ archive/issues_007630.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nRight now it says in the Settings page \"Require e-mail for account registration\".  This implies to me that an account will not be activated until a valid email address is added.  Furthermore, when this is checked, a new account screen says: \"Your email address is required for account confirmation and recovery. You will be emailed a confirmation link right after you successfully sign up.\"  This definitely implies that an account will not be activated until the user clicks on a link.\n\nHowever, the account is activated, whether or not the user clicks on the link in the email.\n\nIf we're going through the trouble of making a link and confirming email addresses, it makes sense to follow the well-established practice of not letting the user log in until they confirm their email address.\n\nIt seems that this could be a very easy check in the login stage, too.  Just check to see if \"require email address\" is set, and if so, check to make sure the user's email address is confirmed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7630\n\n",
+    "closed_at": "2013-02-08T13:23:54Z",
     "created_at": "2009-12-08T20:04:21Z",
     "labels": [
         "component: notebook",

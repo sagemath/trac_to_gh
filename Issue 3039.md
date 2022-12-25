@@ -1,16 +1,17 @@
-# Issue 3039: [with patch; needs review] Improve auto-generated version numbers for Debian packages
+# Issue 3039: [with patch; positive review] Improve auto-generated version numbers for Debian packages
 
 archive/issues_003039.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3039\n\n",
+    "closed_at": "2008-04-27T02:48:19Z",
     "created_at": "2008-04-27T02:36:29Z",
     "labels": [
         "component: debian-package",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Improve auto-generated version numbers for Debian packages",
+    "title": "[with patch; positive review] Improve auto-generated version numbers for Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3039",
     "user": "https://github.com/timabbott"

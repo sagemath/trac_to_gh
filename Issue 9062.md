@@ -3,7 +3,8 @@
 archive/issues_009062.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nToric lattices are ZZ<sup>n</sup>'s with distinction of their roles (in the simplest case - standard dual lattices M and N).\n\nOnce this patch is finished, it will be the first part of the toric varieties framework #8986-#8989, but so far I made it actually on top of those modules. Creation of cones and fans seems to work as expected. More work is needed on matrix multiplication. Working on it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9062\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nToric lattices are ZZ<sup>n</sup>'s with distinction of their roles (in the simplest case - standard dual lattices M and N).\n\nThis patch is a part of the following series adding support for  cones/fans and toric varieties to Sage:\n\nPrerequisites:\n\n#8675  - Remove `AmbientSpace._constructor` and fix consequences\n\n#8682  - Improve `AlgebraicScheme_subscheme.__init__` and `AmbientSpace._validate`\n\n#8694  - Improve schemes printing and LaTeXing\n\n#8934  - Trivial bug in computing faces of non-full-dimensional lattice  polytopes\n\n#8936  - Expose facet inequalities for lattice polytopes\n\n#8941  - `_latex_` and `origin` for lattice polytopes\n\nMain  patches adding new modules:\n\n#9062  - Add support for toric lattices\n\n#8986  - Add support for convex rational polyhedral cones\n\n#8987  - Add support for rational polyhedral fans\n\n#8988  - Add support for toric varieties\n\n#8989  - Add support for Fano toric varieties\n\nIssue created by migration from https://trac.sagemath.org/ticket/9062\n\n",
+    "closed_at": "2010-07-20T08:46:22Z",
     "created_at": "2010-05-27T04:45:06Z",
     "labels": [
         "component: geometry"
@@ -21,7 +22,33 @@ CC:  @vbraun
 
 Toric lattices are ZZ<sup>n</sup>'s with distinction of their roles (in the simplest case - standard dual lattices M and N).
 
-Once this patch is finished, it will be the first part of the toric varieties framework #8986-#8989, but so far I made it actually on top of those modules. Creation of cones and fans seems to work as expected. More work is needed on matrix multiplication. Working on it!
+This patch is a part of the following series adding support for  cones/fans and toric varieties to Sage:
+
+Prerequisites:
+
+#8675  - Remove `AmbientSpace._constructor` and fix consequences
+
+#8682  - Improve `AlgebraicScheme_subscheme.__init__` and `AmbientSpace._validate`
+
+#8694  - Improve schemes printing and LaTeXing
+
+#8934  - Trivial bug in computing faces of non-full-dimensional lattice  polytopes
+
+#8936  - Expose facet inequalities for lattice polytopes
+
+#8941  - `_latex_` and `origin` for lattice polytopes
+
+Main  patches adding new modules:
+
+#9062  - Add support for toric lattices
+
+#8986  - Add support for convex rational polyhedral cones
+
+#8987  - Add support for rational polyhedral fans
+
+#8988  - Add support for toric varieties
+
+#8989  - Add support for Fano toric varieties
 
 Issue created by migration from https://trac.sagemath.org/ticket/9062
 

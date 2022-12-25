@@ -4,6 +4,7 @@ archive/issues_000604.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe NTL structures in the number field are leaking.\n\nThe attached patch fixes this and some other matters with multiplication and division -- actually making them use NTL.\n\nIssue created by migration from https://trac.sagemath.org/ticket/604\n\n",
+    "closed_at": "2007-09-07T04:43:27Z",
     "created_at": "2007-09-06T21:44:29Z",
     "labels": [
         "component: number theory",

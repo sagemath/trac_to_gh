@@ -3,7 +3,8 @@
 archive/issues_006100.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @jhpalmieri @antieau\n\nAdd functionality so that we can compute a basis for (co)homology in dimension n of a chain complex C_* in terms of a given basis for C_n.\n\nThis will use the patch #5882 of William Stein.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6100\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @jhpalmieri @antieau\n\nAdd functionality so that we can compute a basis for (co)homology in dimension n of a chain complex C_* in terms of a given basis for C_n.\n\nApply: [attachment:trac_6100-basis_homology-ts.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6100\n\n",
+    "closed_at": "2013-06-06T12:30:21Z",
     "created_at": "2009-05-21T03:41:24Z",
     "labels": [
         "component: algebraic topology",
@@ -22,7 +23,7 @@ CC:  @jhpalmieri @antieau
 
 Add functionality so that we can compute a basis for (co)homology in dimension n of a chain complex C_* in terms of a given basis for C_n.
 
-This will use the patch #5882 of William Stein.
+Apply: [attachment:trac_6100-basis_homology-ts.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6100
 

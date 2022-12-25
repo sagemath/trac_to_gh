@@ -4,10 +4,11 @@ archive/issues_007875.json:
 ```json
 {
     "body": "Assignee: tbd\n\nRunning `sage -preparse somefile.sage` fails with\n\n```\nTraceback (most recent call last):\n  File \"/Users/gvol/vcs/cur-sage/local/bin/sage-preparse\", line 230, in <module>\n    do_preparse(f)\n  File \"/Users/gvol/vcs/cur-sage/local/bin/sage-preparse\", line 119, in do_preparse\n    G = preparse_file(F, magic=False, do_time=True, ignore_prompts=False)\nTypeError: preparse_file() got an unexpected keyword argument 'magic'\n```\n\nIt looks like local/bin/sage-preparse wasn't updated to remove magic and ignore_prompts when sage/misc/preparser.py was.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7875\n\n",
+    "closed_at": "2010-01-13T04:41:41Z",
     "created_at": "2010-01-09T13:41:58Z",
     "labels": [
         "component: misc",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",

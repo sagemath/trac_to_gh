@@ -4,6 +4,7 @@ archive/issues_008032.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nDocument block matrix with 0 entries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8032\n\n",
+    "closed_at": "2010-01-24T01:21:38Z",
     "created_at": "2010-01-21T20:26:10Z",
     "labels": [
         "component: linear algebra",

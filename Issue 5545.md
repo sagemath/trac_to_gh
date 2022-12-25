@@ -4,6 +4,7 @@ archive/issues_005545.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nTo reproduce: Start with Sage 3.4.  Apply the attached patch (dependency-tracker-bug-testcase.patch).  Rebuild with \"sage -b\", then run Sage.  Type:\n\n```\nsage: import sage.rings.polynomial.real_roots\n```\nYou will get an error:\n\n```\nTypeError: sage.rings.real_mpfi.RealIntervalField is not a type object\n```\nBut if you touch real_roots.pyx and rebuild, the error goes away.\n\nSo somehow real_roots.pyx depends on real_mpfi.pyx in a way that the dependency tracker doesn't catch.  (It's not obvious how, because real_roots.pyx never even mentions `mpfi`.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5545\n\n",
+    "closed_at": "2014-09-09T14:52:58Z",
     "created_at": "2009-03-17T06:22:21Z",
     "labels": [
         "component: build",

@@ -4,6 +4,7 @@ archive/issues_008206.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  mvngu @roed314\n\nThe command  hg qnew -f would be good to include in the discussion on Mercurial queues (and replace some uncertainty).\n\nAs well as a mention of the record extensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8206\n\n",
+    "closed_at": "2010-02-11T14:43:14Z",
     "created_at": "2010-02-07T06:25:18Z",
     "labels": [
         "component: documentation",

@@ -1,17 +1,17 @@
-# Issue 8626: qqbar quadratic elements
+# Issue 8626: qqbar and SR
 
 archive/issues_008626.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nIt would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., \n\n```\nsage: QQbar(sqrt(2))\nsqrt(2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8626\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nIt would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., \n\n```\nsage: QQbar(sqrt(2))\nsqrt(2)\n```\n\nAdditionally, it would be nice if we could wrap qqbar elements as SR objects.\n\nThe first patch just affects printing of qqbar elements.  The second lets you do more than just print (e.g., SR(QQbar(sqrt(2))) should give you sqrt(2), not just print sqrt(2))\n\nIssue created by migration from https://trac.sagemath.org/ticket/8626\n\n",
+    "closed_at": "2014-12-18T07:39:13Z",
     "created_at": "2010-03-29T19:24:06Z",
     "labels": [
-        "component: algebra",
-        "minor",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "qqbar quadratic elements",
+    "title": "qqbar and SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8626",
     "user": "https://github.com/jasongrout"
@@ -27,6 +27,10 @@ It would be nice if roots of quadratics printed using the quadratic formula in Q
 sage: QQbar(sqrt(2))
 sqrt(2)
 ```
+
+Additionally, it would be nice if we could wrap qqbar elements as SR objects.
+
+The first patch just affects printing of qqbar elements.  The second lets you do more than just print (e.g., SR(QQbar(sqrt(2))) should give you sqrt(2), not just print sqrt(2))
 
 Issue created by migration from https://trac.sagemath.org/ticket/8626
 

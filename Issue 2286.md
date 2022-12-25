@@ -1,15 +1,16 @@
-# Issue 2286: [with patch, needs review] create and document a new "fp_rank" concept
+# Issue 2286: [with patch, positive review] create and document a new "fp_rank" concept
 
 archive/issues_002286.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis gives a new way to measure the diameter (quality) of a floating-point interval: by counting the number of floating-point values within the interval.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2286\n\n",
+    "closed_at": "2008-02-28T00:18:49Z",
     "created_at": "2008-02-24T01:08:19Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] create and document a new \"fp_rank\" concept",
+    "title": "[with patch, positive review] create and document a new \"fp_rank\" concept",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2286",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

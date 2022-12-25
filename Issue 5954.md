@@ -1,15 +1,16 @@
-# Issue 5954: Added documentation/doctests for all quadratic form genus symbol routines
+# Issue 5954: [with patch, positive review] Added documentation/doctests for all quadratic form genus symbol routines
 
 archive/issues_005954.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @tornaria mabshoff wstein @JohnCremona\n\nKeywords: QuadraticForm\n\nThis patch documents and brings doctest coverage to 100% for all routines in:\n\n```\nquadratic_forms/quadratic_form__genus.py\nquadratic_forms/genera/genus.py\n```\n\nIt also rewrote a few signature routines and the rational_diagonal_form() routine which was causing the bug reported in Ticket #5837:\n\n```\nsage: Q2=QuadraticForm(ZZ,3,[ -3,2,0 , 3,-2 , 5 ])\nsage: Q2.rational_diagonal_form()\n\nQuadratic form in 3 variables over Rational Field with coefficients: \n[ -3 0 0 ]\n[ * 10/3 0 ]\n[ * * 47/10 ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5954\n\n",
+    "closed_at": "2009-05-19T00:37:00Z",
     "created_at": "2009-05-01T05:59:31Z",
     "labels": [
-        "component: algebra"
+        "component: quadratic forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Added documentation/doctests for all quadratic form genus symbol routines",
+    "title": "[with patch, positive review] Added documentation/doctests for all quadratic form genus symbol routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5954",
     "user": "https://github.com/jonhanke"

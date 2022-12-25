@@ -1,39 +1,32 @@
-# Issue 7510: Primes is missing is_finite.
+# Issue 7510: is_finite method in categories (was Primes is missing is_finite)
 
 archive/issues_007510.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Primes, is_finite\n\nPrimes has no methods `is_finite`. This breaks several thing including: \n\n```\nsage: contre_exemples = (p for p in Primes() and not is_prime(mersenne(p)))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/25868/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage-4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Set_generic.__nonzero__ (sage/structure/parent.c:14641)()\n\nAttributeError: 'Primes_with_category' object has no attribute 'is_finite'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7510\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: Primes, is_finite\n\nI found that Primes has no methods `is_finite`. This is actually not a problem of `Prime` but should be dealt in categories. I put a small patch here though i'm not sure we want to do this. Isn't this redundent with categories ? \n\nCheers,\n\nFlorent\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/7510\n\n",
+    "closed_at": "2009-12-01T05:30:54Z",
     "created_at": "2009-11-21T15:20:15Z",
     "labels": [
-        "component: number theory",
+        "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Primes is missing is_finite.",
+    "title": "is_finite method in categories (was Primes is missing is_finite)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7510",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @williamstein
+Assignee: @hivert
 
 Keywords: Primes, is_finite
 
-Primes has no methods `is_finite`. This breaks several thing including: 
+I found that Primes has no methods `is_finite`. This is actually not a problem of `Prime` but should be dealt in categories. I put a small patch here though i'm not sure we want to do this. Isn't this redundent with categories ? 
 
-```
-sage: contre_exemples = (p for p in Primes() and not is_prime(mersenne(p)))
+Cheers,
 
----------------------------------------------------------------------------
-AttributeError                            Traceback (most recent call last)
-
-/home/averell/.sage/temp/tomahawk/25868/_home_averell__sage_init_sage_0.py in <module>()
-
-/usr/local/sage/sage-4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Set_generic.__nonzero__ (sage/structure/parent.c:14641)()
-
-AttributeError: 'Primes_with_category' object has no attribute 'is_finite'
-```
+Florent
+ 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7510
 

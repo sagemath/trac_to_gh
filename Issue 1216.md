@@ -4,6 +4,7 @@ archive/issues_001216.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nI have got a simple patch that fixes the issue. It will be added to this ticket shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1216\n\n",
+    "closed_at": "2007-11-20T23:24:58Z",
     "created_at": "2007-11-20T15:37:07Z",
     "labels": [
         "component: packages: standard",

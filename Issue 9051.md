@@ -3,7 +3,8 @@
 archive/issues_009051.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  minz\n\nFollowup to #7585, which also did many, many other things. \n\nWrapping flint directly is much faster than the current implementation of Frac(GF(p)['t'])\n\nIssue created by migration from https://trac.sagemath.org/ticket/9051\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  minz\n\nFollowup to #7585, which also did many, many other things. \n\nWrapping flint directly is much faster than the current implementation of `Frac(GF(p)['t'])`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9051\n\n",
+    "closed_at": "2010-07-20T09:28:45Z",
     "created_at": "2010-05-26T00:27:53Z",
     "labels": [
         "component: algebra",
@@ -22,7 +23,7 @@ CC:  minz
 
 Followup to #7585, which also did many, many other things. 
 
-Wrapping flint directly is much faster than the current implementation of Frac(GF(p)['t'])
+Wrapping flint directly is much faster than the current implementation of `Frac(GF(p)['t'])`
 
 Issue created by migration from https://trac.sagemath.org/ticket/9051
 

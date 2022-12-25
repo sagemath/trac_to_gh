@@ -1,16 +1,17 @@
-# Issue 4417: [with patch, needs review] fix steenrod algebra 'optional' doctest
+# Issue 4417: [with patch, positive review] fix steenrod algebra 'optional' doctest
 
 archive/issues_004417.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nKeywords: steenrod algebra\n\nIn [response to mabshoff](http://groups.google.com/group/sage-devel/browse_frm/thread/be920ff2cef4a376), here is a patch to fix the failed 'optional' doctest in steenrod_algebra.py.  I don't actually know why this was only caught with optional; perhaps because the words 'package', 'long', and 'optional' appear somewhere in the file (although they're nowhere near each other or this test)?  Anyway, I fixed the doctest to be what it should be (i.e., what Sage was computing, which is also what I get by hand), and I changed 'package' to 'module' everywhere so that sage -t will test the same things as sage -t -optional.\n\n  John\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4417\n\n",
+    "closed_at": "2008-11-01T21:06:07Z",
     "created_at": "2008-11-01T02:39:53Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] fix steenrod algebra 'optional' doctest",
+    "title": "[with patch, positive review] fix steenrod algebra 'optional' doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4417",
     "user": "https://github.com/jhpalmieri"

@@ -1,16 +1,17 @@
-# Issue 4640: Do not dot out the number of pickles in the pickle jar doctest in sage/structure/sage_object.pyx
+# Issue 4640: [with patch, positive review] Do not dot out the number of pickles in the pickle jar doctest in sage/structure/sage_object.pyx, update pickle jar
 
 archive/issues_004640.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n[7:17pm] mabshoff: ws-4083: In the pickle jar doctest the number of pickles is dotted out. Shouldn't we hard code that number and update it every time we do the latest pickle jar?\n[7:17pm] ws-4083 is now known as ws-3621.\n[7:17pm] ws-3621: mabshoff -- sure, we could.\n[7:18pm] ws-3621: I don't see why not.\n[7:18pm] ws-3621: good idea.\n[7:18pm] mabshoff: mk, ticket coming up.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4640\n\n",
+    "closed_at": "2009-03-10T20:43:07Z",
     "created_at": "2008-11-28T03:21:17Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Do not dot out the number of pickles in the pickle jar doctest in sage/structure/sage_object.pyx",
+    "title": "[with patch, positive review] Do not dot out the number of pickles in the pickle jar doctest in sage/structure/sage_object.pyx, update pickle jar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4640",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

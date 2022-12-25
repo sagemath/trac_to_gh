@@ -1,4 +1,4 @@
-# Issue 4986: import audit
+# Issue 4986: [with patch, do not review] import audit class to sage/all.py
 
 archive/issues_004986.json:
 ```json
@@ -6,11 +6,10 @@ archive/issues_004986.json:
     "body": "Assignee: mabshoff\n\nCC:  @craigcitro @nexttime @kcrisman\n\nIt is currently way to easy to introduce circular imports in Sage, and a mess to try and hunt time down. An order in which things are imported is found in sage.all, but due to the cascade of imports in sage.misc (and elsewhere) this is not an accurate representation of what actually happens. This could stand to be cleaned up a lot. Ideally, little/none of sage.foo.* should be used before sage.foo.all is imported. \n\nThis patch prints out imports as they happen, and where they're initiated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4986\n\n",
     "created_at": "2009-01-16T04:04:46Z",
     "labels": [
-        "component: performance",
-        "bug"
+        "component: performance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "import audit",
+    "title": "[with patch, do not review] import audit class to sage/all.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4986",
     "user": "https://github.com/robertwb"

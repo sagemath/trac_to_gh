@@ -1,9 +1,10 @@
-# Issue 6230: [with patch, needs review] Fix numerical noise and dictionary sorting issues in 4.0.1.rc2.
+# Issue 6230: [with patch, positive review] Fix numerical noise and dictionary sorting issues in 4.0.1.rc2.
 
 archive/issues_006230.json:
 ```json
 {
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6230\n\n",
+    "closed_at": "2009-06-05T23:59:01Z",
     "created_at": "2009-06-05T23:12:29Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_006230.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "[with patch, needs review] Fix numerical noise and dictionary sorting issues in 4.0.1.rc2.",
+    "title": "[with patch, positive review] Fix numerical noise and dictionary sorting issues in 4.0.1.rc2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6230",
     "user": "https://github.com/mwhansen"

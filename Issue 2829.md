@@ -1,9 +1,10 @@
-# Issue 2829: [with patch, needs review] PyLint cleanup of crypto.mq.sr
+# Issue 2829: [with patch, positive review] PyLint cleanup of crypto.mq.sr
 
 archive/issues_002829.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: pylint\n\nThe attached patch fixes a couple issues reported by [PyLint](http://www.logilab.org/857):\n* \"a,b\" -> \"a, b\"\n* remove unused variables\n* remove unused imports\n* avoid overwriting built-in names\n\nIssue created by migration from https://trac.sagemath.org/ticket/2829\n\n",
+    "closed_at": "2008-04-06T16:25:54Z",
     "created_at": "2008-04-06T13:27:09Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_002829.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] PyLint cleanup of crypto.mq.sr",
+    "title": "[with patch, positive review] PyLint cleanup of crypto.mq.sr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2829",
     "user": "https://github.com/malb"

@@ -1,16 +1,17 @@
-# Issue 4881: [with spkgs, needs review] Experimental spkg for ETS-3.1.1 (including Chaco and Mayavi2)
+# Issue 4881: [with spkgs, positive review] Experimental ets-3.1.1.rev23241.spkg (including Chaco and Mayavi2)
 
 archive/issues_004881.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: 2D and 3D plotting\n\nThe Enthought Tool Suite [http://code.enthought.com/projects/](http://code.enthought.com/projects/)\nhas a lot of external dependencies,\n\nThe easiest way to install ets-3.1.1.spkg is\n\n* download the spkgs from [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/) into\na $SAGE_ROOT of a reasonable recent sage\n\n* download the shell script [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/install_ets.sh](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/install_ets.sh) and run it in $SAGE_ROOT\n\n* wait a long time :)\n\nAfter installation do a ./sage -sh and type mayavi2 to test the installation of\nmayavi.\n\nYou can use mayavi mlab from within sage by starting with ./sage -wthread\n\nSee some screenshots: [http://picasaweb.google.com/j.spies88/ScreenshotsMlabMayavi210#](http://picasaweb.google.com/j.spies88/ScreenshotsMlabMayavi210#)\n\nThe user guide of Mayavi2 is Sphinxyfied: [http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/](http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/)\n\nCheers,\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4881\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: 2D and 3D plotting\n\nThe Enthought Tool Suite [http://code.enthought.com/projects/](http://code.enthought.com/projects/)\nhas a lot of external dependencies,\n\nThe easiest way to install ets-3.1.1.spkg is\n\n* download the spkgs from [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/) into\na $SAGE_ROOT of a reasonable recent sage\n\n* See the README.txt [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/README.txt](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/README.txt) and follow the instructions\n\n* wait a long time :)\n\nAfter installation do a ./sage -sh and type mayavi2 to test the installation of\nmayavi.\n\nYou can use mayavi mlab from within sage by starting with ./sage -wthread\n\nSee some screenshots: [http://picasaweb.google.com/j.spies88/ScreenshotsMlabMayavi210#](http://picasaweb.google.com/j.spies88/ScreenshotsMlabMayavi210#)\n\nThe user guide of Mayavi2 is Sphinxyfied: [http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/](http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/)\n\nCheers,\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4881\n\n",
+    "closed_at": "2009-04-01T05:39:53Z",
     "created_at": "2008-12-26T15:52:24Z",
     "labels": [
         "component: packages: experimental",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with spkgs, needs review] Experimental spkg for ETS-3.1.1 (including Chaco and Mayavi2)",
+    "title": "[with spkgs, positive review] Experimental ets-3.1.1.rev23241.spkg (including Chaco and Mayavi2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4881",
     "user": "https://github.com/jaapspies"
@@ -28,7 +29,7 @@ The easiest way to install ets-3.1.1.spkg is
 * download the spkgs from [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/) into
 a $SAGE_ROOT of a reasonable recent sage
 
-* download the shell script [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/install_ets.sh](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/install_ets.sh) and run it in $SAGE_ROOT
+* See the README.txt [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/README.txt](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/README.txt) and follow the instructions
 
 * wait a long time :)
 
@@ -44,6 +45,7 @@ The user guide of Mayavi2 is Sphinxyfied: [http://code.enthought.com/projects/ma
 Cheers,
 
 Jaap
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4881
 

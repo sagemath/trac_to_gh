@@ -4,6 +4,7 @@ archive/issues_004268.json:
 ```json
 {
     "body": "Assignee: ekirkman\n\nSQLAlchemy is far more robust and intuitive than the current relational database and query classes in Sage.  The classes should instead be based on SQLAlchemy with extensions written to cover the current capabilities.  This will be my main focus during Sage Days 10 and if anyone is interested in helping they should contact me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4268\n\n",
+    "closed_at": "2015-01-25T12:55:01Z",
     "created_at": "2008-10-12T13:53:52Z",
     "labels": [
         "component: misc"

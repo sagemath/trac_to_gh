@@ -1,9 +1,10 @@
-# Issue 756: modify how foo.derivative(...) works
+# Issue 756: [with new patch, needs review] modify how foo.derivative(...) works
 
 archive/issues_000756.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nOn 9/26/07, David Joyner <wdjoyner@gmail.com> wrote:\n> I'm not sure if this is a bug or not but just in case,\n> here is the way diff is behaving for me.\n>\n> - David Joyner\n>\n> sage: version()\n> 'SAGE Version 2.8.5, Release Date: 2007-09-21'\n> sage: R1.<a> = PolynomialRing(QQ)\n> sage: R2.<x> = PowerSeriesRing(R1)\n> sage: y = a*x\n> sage: y.derivative()\n> a\n> sage: diff(y,x)\n> ---------------------------------------------------------------------------\n> <type 'exceptions.TypeError'>             Traceback (most recent call last)\n>\n> /mnt/hd200/sagefiles/sage-2.8.3.rc3/<ipython console> in <module>()\n\n\nOne should slightly rewrite the derivative function for\npolynomials (and power series) to take\nan optional argument (the variable).  If the\ninnput variable is the same as the parent\ngen, then differentiate as before; otherwise\nattempt to call derivative on the coefficients -- if\nthat works, good; if not, return 0.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/756\n\n",
+    "closed_at": "2008-03-03T16:11:22Z",
     "created_at": "2007-09-26T20:48:58Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_000756.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "modify how foo.derivative(...) works",
+    "title": "[with new patch, needs review] modify how foo.derivative(...) works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/756",
     "user": "https://github.com/williamstein"

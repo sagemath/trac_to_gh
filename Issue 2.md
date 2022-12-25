@@ -3,10 +3,11 @@
 archive/issues_000002.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCurrently it is possible to run two SAGE notebooks on the same directory,\nwhich is potentially VERY VERY bad.  It would be better if when a SAGE\nnotebook server starts up it checks for the presence of a lock file.  This\nfile would contain the pid of a running SAGE notebook process -- if the file\nand that process exist, then the notebook won't start.  When the notebook\nfinishes it should delete that lock file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2\n\n",
+    "body": "Assignee: boothby\n\nCurrently it is possible to run two SAGE notebooks on the same directory,\nwhich is potentially VERY VERY bad.  It would be better if when a SAGE\nnotebook server starts up it checks for the presence of a lock file.  This\nfile would contain the pid of a running SAGE notebook process -- if the file\nand that process exist, then the notebook won't start.  When the notebook\nfinishes it should delete that lock file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2\n\n",
+    "closed_at": "2007-08-24T05:30:56Z",
     "created_at": "2006-09-11T04:04:32Z",
     "labels": [
-        "component: basic arithmetic"
+        "component: notebook"
     ],
     "title": "Notebook locking",
     "type": "issue",
@@ -14,7 +15,7 @@ archive/issues_000002.json:
     "user": "wstein@gmail.com"
 }
 ```
-Assignee: somebody
+Assignee: boothby
 
 Currently it is possible to run two SAGE notebooks on the same directory,
 which is potentially VERY VERY bad.  It would be better if when a SAGE

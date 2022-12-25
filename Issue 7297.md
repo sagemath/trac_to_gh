@@ -4,6 +4,7 @@ archive/issues_007297.json:
 ```json
 {
     "body": "Assignee: whuss\n\nKeywords: video, animation\n\nPackages for libogg and libtheora. The libtheora spkg installs the\ncommand line tool \"png2theora\" which can be used to encode a series\nof PNG images into a Theora video.\n\nhttp://www.math.tugraz.at/~huss/spkg/libogg-1.1.4.spkg \n\nhttp://www.math.tugraz.at/~huss/spkg/libtheora-1.1.1.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7297\n\n",
+    "closed_at": "2010-06-07T05:06:31Z",
     "created_at": "2009-10-25T15:47:27Z",
     "labels": [
         "component: packages: optional"

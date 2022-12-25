@@ -4,6 +4,7 @@ archive/issues_003508.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere are various issues at play here:\n\n* configure from patches is from GMP 4.2.1\n* the Core2 patches do not apply since Jason's script detects the version mismatch\n* GMP 4.2.2 in general misdetects some very new Core2 Quads and Core2 Xeons as 32 bit Intel CPUs\n\nFix all those issues!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3508\n\n",
+    "closed_at": "2008-08-30T02:57:01Z",
     "created_at": "2008-06-25T02:06:47Z",
     "labels": [
         "component: build",

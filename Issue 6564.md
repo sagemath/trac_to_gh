@@ -1,22 +1,23 @@
-# Issue 6564: ecl will not build on Solaris - looks like make exiting when it tries to delete non-existant file.
+# Issue 6564: [with spkg, positive review] Update ECL to the latest 9.8.4, needed for Solaris.
 
 archive/issues_006564.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris ecl config.h\n\nI've not looked into debugging this yet, but ecl fails on Solaris. This is on a Sun Blade 2000 - not 't2' though I expect it would fail on that too. \n\nIt looks like a failure to remove the non-existant file config.h is causing this. Perhaps rm -f would be acceptable?? It's possible that rm on Solaris exits with a non-zero exit code if it can't delete a file, but on other systems this does not happen. I don't know, and have not investigated yet. \n\nSee below.\n\n```\nsed '/-CUT-/,$d' ./ecl/config.h > ./ecl/config-install.h\n/export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/install.sh -c -m 644 ./ecl/*.h /export/home/drkirkby/sage/sage-4.1/local/include//ecl\nif (echo c | grep gc); then \\\n /bin/bash /export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/mkinstalldirs /export/home/drkirkby/sage/sage-4.1/local/include//ecl/gc/private; \\\n  /export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/install.sh -c -m 644 ./ecl/gc/*.h /export/home/drkirkby/sage/sage-4.1/local/include//ecl/gc; \\\n  /export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/install.sh -c -m 644 ./ecl/gc/private/*.h /export/home/drkirkby/sage/sage-4.1/local/include//ecl/gc/private; \\\nfi\nrm /export/home/drkirkby/sage/sage-4.1/local/include//ecl/config.h\n/export/home/drkirkby/sage/sage-4.1/local/include//ecl/config.h: No such file or directory\nmake[3]: *** [install-base] Error 2\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/build'\nmake[2]: *** [install] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src'\nFailed to install ECL ... exiting\n\nreal    8m24.691s\nuser    7m7.665s\nsys     1m2.739s\nsage: An error occurred while installing ecl-9.4.1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6564\n\n",
+    "body": "Assignee: drkirkby\n\nKeywords: solaris ecl config.h\n\nI've not looked into debugging this yet, but ecl fails on Solaris. This is on a Sun Blade 2000 - not 't2' though I expect it would fail on that too. \n\nIt looks like a failure to remove the non-existant file config.h is causing this. Perhaps rm -f would be acceptable?? It's possible that rm on Solaris exits with a non-zero exit code if it can't delete a file, but on other systems this does not happen. I don't know, and have not investigated yet. \n\nSee below.\n\n```\nsed '/-CUT-/,$d' ./ecl/config.h > ./ecl/config-install.h\n/export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/install.sh -c -m 644 ./ecl/*.h /export/home/drkirkby/sage/sage-4.1/local/include//ecl\nif (echo c | grep gc); then \\\n /bin/bash /export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/mkinstalldirs /export/home/drkirkby/sage/sage-4.1/local/include//ecl/gc/private; \\\n  /export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/install.sh -c -m 644 ./ecl/gc/*.h /export/home/drkirkby/sage/sage-4.1/local/include//ecl/gc; \\\n  /export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/src/install.sh -c -m 644 ./ecl/gc/private/*.h /export/home/drkirkby/sage/sage-4.1/local/include//ecl/gc/private; \\\nfi\nrm /export/home/drkirkby/sage/sage-4.1/local/include//ecl/config.h\n/export/home/drkirkby/sage/sage-4.1/local/include//ecl/config.h: No such file or directory\nmake[3]: *** [install-base] Error 2\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src/build'\nmake[2]: *** [install] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1/spkg/build/ecl-9.4.1/src'\nFailed to install ECL ... exiting\n\nreal    8m24.691s\nuser    7m7.665s\nsys     1m2.739s\nsage: An error occurred while installing ecl-9.4.1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6564\n\n",
+    "closed_at": "2009-09-02T10:45:01Z",
     "created_at": "2009-07-20T00:23:56Z",
     "labels": [
-        "component: solaris",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "ecl will not build on Solaris - looks like make exiting when it tries to delete non-existant file.",
+    "title": "[with spkg, positive review] Update ECL to the latest 9.8.4, needed for Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6564",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 Keywords: solaris ecl config.h
 

@@ -1,16 +1,17 @@
-# Issue 4369: [with patch, needs review] completed reference
+# Issue 4369: [with patch, positive review] completed reference
 
 archive/issues_004369.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4369\n\n",
+    "closed_at": "2008-10-26T13:16:56Z",
     "created_at": "2008-10-26T12:42:59Z",
     "labels": [
         "component: documentation",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] completed reference",
+    "title": "[with patch, positive review] completed reference",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4369",
     "user": "https://github.com/zimmermann6"

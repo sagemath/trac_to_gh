@@ -1,22 +1,23 @@
-# Issue 1633: update sympy to 0.5.9
+# Issue 1633: [with borken spkg] update sympy to 0.5.11
 
 archive/issues_001633.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1633\n\n",
+    "body": "Assignee: ondrej\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1633\n\n",
+    "closed_at": "2008-04-16T09:52:48Z",
     "created_at": "2007-12-29T04:45:16Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update sympy to 0.5.9",
+    "title": "[with borken spkg] update sympy to 0.5.11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1633",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: ondrej
 
 
 

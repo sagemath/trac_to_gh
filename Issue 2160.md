@@ -1,16 +1,17 @@
-# Issue 2160: leftovers from python to cython translation
+# Issue 2160: [with patch, with positive review] leftovers from python to cython translation
 
 archive/issues_002160.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn matrix/matrix_integer_dense.pyx and matrix//matrix_rational_dense.pyx we delete the line:\n\ntmp = []\n\nbecause tmp is never used\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2160\n\n",
+    "closed_at": "2008-02-14T21:33:22Z",
     "created_at": "2008-02-14T17:42:19Z",
     "labels": [
         "component: linear algebra",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "leftovers from python to cython translation",
+    "title": "[with patch, with positive review] leftovers from python to cython translation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2160",
     "user": "https://github.com/jaapspies"

@@ -1,16 +1,17 @@
-# Issue 5261: Straigten out some annoyances with the OSX Sage.app bundle
+# Issue 5261: Make it so OS X app bundles can have space in the name
 
 archive/issues_005261.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @kcrisman\n\nThis is somewhat of a multi issue ticket, but I don't think that doing all four of them individually will give us much of a benefit.\n\n* default the name to Sage-x.y.z.app - that way you can have many Sage releases in parallel :) \n* fix a bug that causes the app to fail to start if the name of the app contains spaces \n* remove the extra copyright work in credits as well as give credit to \"William Stein and the Sage Development Team\" \n* do not put the app skeleton in a tar.gz in the ext repo since it makes applying patches very expensive and opaque \n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5261\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kcrisman\n\nFix the bug that causes the app to fail to start if the name of the app contains spaces.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5261\n\n",
+    "closed_at": "2009-12-09T02:44:34Z",
     "created_at": "2009-02-14T00:09:23Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Straigten out some annoyances with the OSX Sage.app bundle",
+    "title": "Make it so OS X app bundles can have space in the name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5261",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,17 +21,8 @@ Assignee: mabshoff
 
 CC:  @kcrisman
 
-This is somewhat of a multi issue ticket, but I don't think that doing all four of them individually will give us much of a benefit.
+Fix the bug that causes the app to fail to start if the name of the app contains spaces.
 
-* default the name to Sage-x.y.z.app - that way you can have many Sage releases in parallel :) 
-* fix a bug that causes the app to fail to start if the name of the app contains spaces 
-* remove the extra copyright work in credits as well as give credit to "William Stein and the Sage Development Team" 
-* do not put the app skeleton in a tar.gz in the ext repo since it makes applying patches very expensive and opaque 
-
-
-Cheers,
-
-Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/5261
 

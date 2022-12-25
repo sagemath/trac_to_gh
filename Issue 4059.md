@@ -1,17 +1,17 @@
-# Issue 4059: libm4ri configure is seriously broken on anything not x86
+# Issue 4059: [with spkg; positive review] libm4ri configure is seriously broken on anything not x86
 
 archive/issues_004059.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHere is the tail of the build log for libm4ri. \n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\nError configuring libm4ri\n\nreal\t0m17.957s\nuser\t0m3.904s\nsys\t0m8.981s\nsage: An error occurred while installing libm4ri-20080901\n```\n\nThe first error is a typo of a variable name and an unprotected expand of it in a shell test.  This test only occurs on systems that do not have\n\n/sys/devices/system/cpu/cpu0/cache/index0/size\n\nwhich are gratuitously assumed to all be running x86 except if the cpu vendor is Intel in which case they are assumed to not have a cache.  \n\nAnd this leads us to the second problem, on non-x86 cpus, since the cache size cannot be discovered with cpuid, a later conversion of this cache size from hex fails miserably.\n\nThis is a mess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4059\n\n",
+    "body": "Assignee: mabshoff\n\nHere is the tail of the build log for libm4ri. \n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\nError configuring libm4ri\n\nreal 0m17.957s\nuser 0m3.904s\nsys 0m8.981s\nsage: An error occurred while installing libm4ri-20080901\n```\n\nThe first error is a typo of a variable name and an unprotected expand of it in a shell test.  This test only occurs on systems that do not have\n\n/sys/devices/system/cpu/cpu0/cache/index0/size\n\nwhich are gratuitously assumed to all be running x86 except if the cpu vendor is Intel in which case they are assumed to not have a cache.  \n\nAnd this leads us to the second problem, on non-x86 cpus, since the cache size cannot be discovered with cpuid, a later conversion of this cache size from hex fails miserably.\n\nThis is a mess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4059\n\n",
+    "closed_at": "2008-09-06T00:29:17Z",
     "created_at": "2008-09-04T05:52:37Z",
     "labels": [
         "component: build",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "libm4ri configure is seriously broken on anything not x86",
+    "title": "[with spkg; positive review] libm4ri configure is seriously broken on anything not x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4059",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
@@ -36,9 +36,9 @@ checking for x86 cpuid 0x80000006 output... unknown
 ./configure: line 21618: 16#unknown: value too great for base (error token is "16#unknown")
 Error configuring libm4ri
 
-real	0m17.957s
-user	0m3.904s
-sys	0m8.981s
+real 0m17.957s
+user 0m3.904s
+sys 0m8.981s
 sage: An error occurred while installing libm4ri-20080901
 ```
 

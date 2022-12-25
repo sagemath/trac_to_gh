@@ -1,16 +1,17 @@
-# Issue 4174: Do not run "make install" in python.spkg in parallel
+# Issue 4174: [with spkg, with positive review] Do not run "make install" in python.spkg in parallel
 
 archive/issues_004174.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nTitle says it all, spkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4174\n\n",
+    "closed_at": "2008-09-24T10:19:58Z",
     "created_at": "2008-09-23T06:49:46Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Do not run \"make install\" in python.spkg in parallel",
+    "title": "[with spkg, with positive review] Do not run \"make install\" in python.spkg in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4174",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

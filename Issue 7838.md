@@ -3,7 +3,8 @@
 archive/issues_007838.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies vengoroso@gmail.com\n\nKeywords: ctypes atlas\n\n#1497 added a few lines of code \n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriosuly broken on many platforms, including\n\n* Older linux-x86 build failures\n* aix-powerpc build failures\n* linux-ia64 build failures\n* solaris-sparc build failures\n* solaris-x86 build failures\n* hpux-parisc libffi not ported to PA-RISC arch\n* hpux-ia64 build failures\n* win64\n\nHence the code needs replacing with something less broken\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
+    "closed_at": "2010-01-14T02:35:54Z",
     "created_at": "2010-01-04T03:07:50Z",
     "labels": [
         "component: build",
@@ -20,6 +21,8 @@ Assignee: GeorgSWeber
 
 CC:  @jaapspies vengoroso@gmail.com
 
+Keywords: ctypes atlas
+
 #1497 added a few lines of code 
 
 ```/usr/bin/env
@@ -30,20 +33,20 @@ into the ATLAS build process, which reports the number of bits Sage was compiled
 
 http://docs.activestate.com/activepython/2.5/whatsincluded.html
 
-shows that ctypes is seriouly on many platforms, including
+shows that ctypes is seriosuly broken on many platforms, including
 
-* Older linux-x86 - build failures
-* aix-powerpc	build failures
-* linux-ia64	build failures
+* Older linux-x86 build failures
+* aix-powerpc build failures
+* linux-ia64 build failures
 * solaris-sparc build failures
-* solaris-x86	build failures
-* hpux-parisc	libffi not ported to PA-RISC arch
-* hpux-ia64	build failures
-* win64	
+* solaris-x86 build failures
+* hpux-parisc libffi not ported to PA-RISC arch
+* hpux-ia64 build failures
+* win64
 
 Hence the code needs replacing with something less broken
 
-Dave
+Dave 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7838
 

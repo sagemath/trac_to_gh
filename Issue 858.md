@@ -1,21 +1,22 @@
-# Issue 858: add support for numpy arrays with integer entries
+# Issue 858: [with patch] [tested by cwitty] add support for numpy arrays with integer entries
 
 archive/issues_000858.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: numpy\n\n```\nsage: import numpy\nsage: a = numpy.array([[1,2],[3,4]],'int32')\nsage: matrix(a)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mhansen/sage/devel/sage-856/<ipython console> in <module>()\n\n/home/mhansen/sage/local/lib/python2.5/site-packages/sage/matrix/constructor.py in matrix(arg0, arg1, arg2, arg3, sparse)\n    399                     raise TypeError(\"cannot convert numpy matrix to SAGE matrix\")\n    400             else:\n--> 401                 raise TypeError(\"cannot convert numpy matrix to SAGE matrix\")\n    402 \n    403         else:\n\n<type 'exceptions.TypeError'>: cannot convert numpy matrix to SAGE matrix\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/858\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: numpy\n\n```\nsage: import numpy\nsage: a = numpy.array([[1,2],[3,4]],'int32')\nsage: matrix(a)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mhansen/sage/devel/sage-856/<ipython console> in <module>()\n\n/home/mhansen/sage/local/lib/python2.5/site-packages/sage/matrix/constructor.py in matrix(arg0, arg1, arg2, arg3, sparse)\n    399                     raise TypeError(\"cannot convert numpy matrix to SAGE matrix\")\n    400             else:\n--> 401                 raise TypeError(\"cannot convert numpy matrix to SAGE matrix\")\n    402 \n    403         else:\n\n<type 'exceptions.TypeError'>: cannot convert numpy matrix to SAGE matrix\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/858\n\n",
+    "closed_at": "2007-10-13T08:02:04Z",
     "created_at": "2007-10-12T04:51:54Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "add support for numpy arrays with integer entries",
+    "title": "[with patch] [tested by cwitty] add support for numpy arrays with integer entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/858",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Keywords: numpy
 

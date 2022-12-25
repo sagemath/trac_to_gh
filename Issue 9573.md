@@ -3,7 +3,8 @@
 archive/issues_009573.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @novoselt @vbraun @loefflerd\n\nBuilding the PDF reference manual for the forthcoming Sage 4.5.2.alpha0 on sage.math, I get\n\n```\n[4610] [4611]\nUnderfull \\hbox (badness 10000) in paragraph at lines 373276--373277\n\n[4612] [4613] [4614] [4615] [4616] [4617] [4618]\n(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-4.def)\n! Undefined control sequence.\n\\u-default-1065 #1->\\CYRSHCH\n\nl.373945 ...@PYGaB[\"]@PYGaB[\u0429@_45]@PYGaB[\"]@rb[])\n\n?\n```\nThe problem *may* be in `schemes/generic/toric_variety.py` (cf. #8988).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9573\n\n",
+    "body": "Assignee: @novoselt\n\nCC:  @novoselt @vbraun @loefflerd\n\nBuilding the PDF reference manual for the forthcoming Sage 4.5.2.alpha0 on sage.math, I get\n\n```\n[4610] [4611]\nUnderfull \\hbox (badness 10000) in paragraph at lines 373276--373277\n\n[4612] [4613] [4614] [4615] [4616] [4617] [4618]\n(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-4.def)\n! Undefined control sequence.\n\\u-default-1065 #1->\\CYRSHCH\n\nl.373945 ...@PYGaB[\"]@PYGaB[\u0429@_45]@PYGaB[\"]@rb[])\n\n?\n```\nThe problem *may* be in `schemes/generic/toric_variety.py` (cf. #8988).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9573\n\n",
+    "closed_at": "2010-07-23T02:22:44Z",
     "created_at": "2010-07-22T04:52:45Z",
     "labels": [
         "component: documentation",
@@ -17,7 +18,7 @@ archive/issues_009573.json:
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: mvngu
+Assignee: @novoselt
 
 CC:  @novoselt @vbraun @loefflerd
 

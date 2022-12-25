@@ -1,22 +1,23 @@
-# Issue 2421: .round(), .floor(), .ceil(), and .trunc() on RealNumber should have the same return type
+# Issue 2421: [with patch, positive review] .round(), .floor(), .ceil(), and .trunc() on RealNumber should have the same return type
 
 archive/issues_002421.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCurrently the `RealNumber` methods .round() and .trunc() return `RealNumber`, but .floor() and .ceil() return `Integer`.  I think that all four methods should return `Integer`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2421\n\n",
+    "body": "Assignee: @dfdeshom\n\nCurrently the `RealNumber` methods .round() and .trunc() return `RealNumber`, but .floor() and .ceil() return `Integer`.  I think that all four methods should return `Integer`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2421\n\n",
+    "closed_at": "2008-03-12T19:41:47Z",
     "created_at": "2008-03-07T15:23:43Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": ".round(), .floor(), .ceil(), and .trunc() on RealNumber should have the same return type",
+    "title": "[with patch, positive review] .round(), .floor(), .ceil(), and .trunc() on RealNumber should have the same return type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2421",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: somebody
+Assignee: @dfdeshom
 
 Currently the `RealNumber` methods .round() and .trunc() return `RealNumber`, but .floor() and .ceil() return `Integer`.  I think that all four methods should return `Integer`.
 

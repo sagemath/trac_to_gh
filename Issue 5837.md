@@ -1,17 +1,17 @@
-# Issue 5837: bug in rational_diagonal_form() from QuadraticForm class
+# Issue 5837: [with patch, needs review] bug in rational_diagonal_form() from QuadraticForm class
 
 archive/issues_005837.json:
 ```json
 {
     "body": "Assignee: LBerlioz\n\nCC:  @tornaria\n\nKeywords: QuadraticForm diagonal\n\nThe following returns a non-diagonal QuadraticForm:\n\n```\nsage: Q=QuadraticForm(2*A) \nsage: Q.rational_diagonal_form()\nQuadratic form in 3 variables over Rational Field with coefficients:\n[ -3 -32 5184 ]\n[ * -81 26240 ]\n[ * * -2125111 ] \n```\n\nThis method works only when the matrix has a diagonal of only ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5837\n\n",
+    "closed_at": "2009-05-19T00:39:26Z",
     "created_at": "2009-04-20T20:12:46Z",
     "labels": [
         "component: quadratic forms",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "bug in rational_diagonal_form() from QuadraticForm class",
+    "title": "[with patch, needs review] bug in rational_diagonal_form() from QuadraticForm class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5837",
     "user": "https://trac.sagemath.org/admin/accounts/users/LBerlioz"

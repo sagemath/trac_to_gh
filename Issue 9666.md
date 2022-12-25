@@ -4,6 +4,7 @@ archive/issues_009666.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nI propose to use a HNF Z-basis of number field ideals to compute the hash of an ideal.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9666\n\n",
+    "closed_at": "2010-08-14T00:55:46Z",
     "created_at": "2010-08-01T21:41:36Z",
     "labels": [
         "component: number fields",

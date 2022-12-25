@@ -1,16 +1,17 @@
-# Issue 1657: make a build-from-source version of jmol spkg
+# Issue 1657: [with spkg, positive review] make a build-from-source version of jmol spkg
 
 archive/issues_001657.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is very important.\n\n```\nOn Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> In principle, all one would need is javac (and the java runtime\n> binaries). If they're going to be using java at all, they'll have that.\n>\n> It looks like they use the ant build tool which is a nice make system\n> for java. http://ant.apache.org/ For those interested in building the\n> java components from source, we could make an .spkg for this too (if\n> they don't have it already). I used ant for the java3d stuff too.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1657\n\n",
+    "closed_at": "2008-01-15T02:58:09Z",
     "created_at": "2008-01-02T19:08:00Z",
     "labels": [
         "component: packages: standard",
         "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "make a build-from-source version of jmol spkg",
+    "title": "[with spkg, positive review] make a build-from-source version of jmol spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1657",
     "user": "https://github.com/williamstein"

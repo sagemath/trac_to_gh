@@ -4,6 +4,7 @@ archive/issues_006245.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  cwitty @hivert @mwhansen @kcrisman\n\nIt would be nice to incorporate the code developed in http://groups.google.com/group/sage-devel/browse_thread/thread/100de89e7d402134/fe89570b403344ae (and in the same spirit as the backslash operator).  An example of the final developed code is at http://sagenb.org/home/pub/565.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6245\n\n",
+    "closed_at": "2010-04-23T17:11:37Z",
     "created_at": "2009-06-08T11:46:12Z",
     "labels": [
         "component: misc"

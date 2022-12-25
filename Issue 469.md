@@ -1,25 +1,31 @@
-# Issue 469: Integrate the PolyBoRi framework
+# Issue 469: [new package & bundle] Integrate the PolyBoRi framework
 
 archive/issues_000469.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nPolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gr\u00f6bner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/469\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @malb\n\nPolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring\n\n```\nF_2[x_1,...,x_n]/<x_1^2+x_1,x_n^2+x_n>\n```\nFrom the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gr\u00f6bner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/469\n\n",
+    "closed_at": "2007-12-12T18:37:38Z",
     "created_at": "2007-08-20T22:01:34Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Integrate the PolyBoRi framework",
+    "title": "[new package & bundle] Integrate the PolyBoRi framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/469",
     "user": "https://github.com/malb"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 CC:  @malb
 
-PolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring F_2[x_1,...,x_n]/<x_1<sup>2+x_1,x_n</sup>2+x_n>. From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gröbner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.
+PolyBoRi is a framework for doing computation within the boolean ring, i.e. the ring
+
+```
+F_2[x_1,...,x_n]/<x_1^2+x_1,x_n^2+x_n>
+```
+From the benchmarks presented in http://www.itwm.fraunhofer.de/zentral/download/berichte/bericht122.pdf it not only features very fast arithmetic in that ring but also a very fast Gröbner basis engine. PolyBoRi is GPL'd and should be wrapped for SAGE.
 
 Issue created by migration from https://trac.sagemath.org/ticket/469
 

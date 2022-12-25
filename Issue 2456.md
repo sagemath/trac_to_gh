@@ -1,9 +1,10 @@
-# Issue 2456: matrix_symbolic_dense doctest failures
+# Issue 2456: [with patch, positive review] matrix_symbolic_dense doctest failures
 
 archive/issues_002456.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nFile \"matrix_symbolic_dense.pyx\", line 873:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n```\nBut inside sage:\n\n```\nsage: a = matrix(SR, 5, [1..5^2]) \nsage: a.fcp()\n(x^2 - 65*x - 250) * x^3\nsage: list(a.fcp())\n[(x^2 - 65*x - 250, 1), (x, 3)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2456\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\nFile \"matrix_symbolic_dense.pyx\", line 873:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n```\nBut inside sage:\n\n```\nsage: a = matrix(SR, 5, [1..5^2]) \nsage: a.fcp()\n(x^2 - 65*x - 250) * x^3\nsage: list(a.fcp())\n[(x^2 - 65*x - 250, 1), (x, 3)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2456\n\n",
+    "closed_at": "2008-03-10T17:19:46Z",
     "created_at": "2008-03-10T13:53:55Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_002456.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "matrix_symbolic_dense doctest failures",
+    "title": "[with patch, positive review] matrix_symbolic_dense doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2456",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 ```
 File "matrix_symbolic_dense.pyx", line 873:

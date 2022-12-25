@@ -4,6 +4,7 @@ archive/issues_009960.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nSage should be able to solve ODE\n\n```\nx*diff(y,x)-x*sqrt(y^2+x^2)-y == 0\n```\nunder assumptions \n\n```\nx>0,y>0\n```\n\nNow \n\n```\ny=function('y',x)\nassume(y>0)\n```\npasses\n\n```\nassume(y(x)>0)\n```\nto Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9961\n\n",
+    "closed_at": "2010-09-28T09:11:50Z",
     "created_at": "2010-09-21T19:29:55Z",
     "labels": [
         "component: symbolics",

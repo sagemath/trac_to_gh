@@ -4,6 +4,7 @@ archive/issues_003562.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCurrently `-tp` doctests the three pbuild files \n\n* sagebuild.py\n* clib.py\n* build.py\n\nDon't do it :).\n\nI need to check if `-t` also picks up those files or if they are treated differently. We certainly don't doctest setup.py.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3562\n\n",
+    "closed_at": "2008-07-06T17:43:04Z",
     "created_at": "2008-07-06T11:35:14Z",
     "labels": [
         "component: build",

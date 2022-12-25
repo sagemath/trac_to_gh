@@ -1,21 +1,22 @@
-# Issue 5090: upgrade numpy to 1.2.1
+# Issue 5090: [with spkg, needs work] upgrade numpy to 1.2.1
 
 archive/issues_005090.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAn spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5090\n\n",
+    "body": "Assignee: mabshoff\n\nAn spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5090\n\n",
+    "closed_at": "2009-06-12T06:56:00Z",
     "created_at": "2009-01-24T16:35:47Z",
     "labels": [
-        "component: linear algebra"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "upgrade numpy to 1.2.1",
+    "title": "[with spkg, needs work] upgrade numpy to 1.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5090",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 An spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg
 

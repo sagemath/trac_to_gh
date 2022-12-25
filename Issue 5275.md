@@ -6,8 +6,7 @@ archive/issues_005275.json:
     "body": "Assignee: @robertwb\n\nWould it be possible to add the following functionality (with whatever\nappropriate syntax):\n\n\tdeclare_conversion(source, target, morphism)\n\nwhich would add the morphism from source to target to the conversion\nlist (and probably similarly for coercions). Having some restrictions\non it (like making sure it's called before any coercion/conversion is\nattempted) is no problem.\n\nThis functionality will make it possible for each category to\nautomatically declare the relevant morphisms, independently of the other\ncategories (like if A is in Algebras(K), then this category will\ndeclare the morphism from K to A).\n\nThanks in advance!\n\t\t\t\t\tNicolas\n\nIssue created by migration from https://trac.sagemath.org/ticket/5275\n\n",
     "created_at": "2009-02-14T18:16:50Z",
     "labels": [
-        "component: coercion",
-        "bug"
+        "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "One-by-one declaration of morphisms to the coercion mechanism",

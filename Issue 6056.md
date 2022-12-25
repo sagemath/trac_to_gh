@@ -1,16 +1,17 @@
-# Issue 6056: HISTORY.txt for sage-4.0.alpha0 needs updating
+# Issue 6056: [positive review] HISTORY.txt for sage-4.0.alpha0 needs updating
 
 archive/issues_006056.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @rlmill boothby\n\nThe file starts:\n\n#####################################################################\nSAGE-3.2.3: January 5th, 2009\n#####################################################################\n\nIssue created by migration from https://trac.sagemath.org/ticket/6056\n\n",
+    "body": "Assignee: tba\n\nCC:  @rlmill boothby\n\nThe file starts:\n\n```\n#####################################################################\nSAGE-3.2.3: January 5th, 2009\n#####################################################################\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6056\n\n",
+    "closed_at": "2009-07-07T03:51:41Z",
     "created_at": "2009-05-17T08:40:03Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "HISTORY.txt for sage-4.0.alpha0 needs updating",
+    "title": "[positive review] HISTORY.txt for sage-4.0.alpha0 needs updating",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6056",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -22,9 +23,12 @@ CC:  @rlmill boothby
 
 The file starts:
 
+```
 #####################################################################
 SAGE-3.2.3: January 5th, 2009
 #####################################################################
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6056
 

@@ -1,16 +1,17 @@
-# Issue 5391: [with patch, needs review]  Update sage-combinat script to use combinat.sagemath.org/patches/
+# Issue 5391: [with patch, positive review]  Update sage-combinat script to use combinat.sagemath.org/patches/
 
 archive/issues_005391.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5391\n\n",
+    "closed_at": "2009-02-28T16:06:02Z",
     "created_at": "2009-02-27T15:17:12Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review]  Update sage-combinat script to use combinat.sagemath.org/patches/",
+    "title": "[with patch, positive review]  Update sage-combinat script to use combinat.sagemath.org/patches/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5391",
     "user": "https://github.com/mwhansen"

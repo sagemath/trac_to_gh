@@ -1,16 +1,16 @@
-# Issue 5345: Optimize transpose for dense matrices
+# Issue 5345: [with patch, positive review] Optimize transpose, antitranspose for dense matrices
 
 archive/issues_005345.json:
 ```json
 {
-    "body": "Assignee: @rbeezer\n\nKeywords: transpose\n\nThis patch has two changes to the transpose method in matrix_dense.pyx to provide about a 15% speedup.  If this is accepted, I'll look into the other non-sparse routines for transpose and antitranspose.\n\n1.  A double loop indexes into the list of matrix entries using multiplication to create a reordered list for the transpose.  The effect of the multiplications is replaced by repeated additions.\n\n2.  Retrieving the list in the original matrix makes a copy with list().  This has been replaced by the internal _list() to just reference the original.\n\nPasses  sage -t  for  matrix2.pyx  and  matrix_dense.pyx\n\n```\nm = identity_matrix(5000)\ntime m.transpose()\n```\nTimings (user + system):\n\n11.94s : Stock 3.3\n\n11.20s : No multiplication\n\n10.18s : No multiplication, with _list()\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5345\n\n",
+    "body": "Assignee: @rbeezer\n\nKeywords: transpose\n\nThis patch has two changes to the transpose method in matrix_dense.pyx to provide about a 15% speedup.  If this is accepted, I'll look into the other non-sparse routines for transpose and antitranspose.\n\n1.  A double loop indexes into the list of matrix entries using multiplication to create a reordered list for the transpose.  The effect of the multiplications is replaced by repeated additions.\n\n2.  Retrieving the list in the original matrix makes a copy with list().  This has been replaced by the internal _list() to just reference the original.\n\nPasses  sage -t  for  matrix2.pyx  and  matrix_dense.pyx\n\n```\nm = identity_matrix(5000)\ntime m.transpose()\n```\nTimings (user + system):\n\n* 11.94s : Stock 3.3\n* 11.20s : No multiplication\n* 10.18s : No multiplication, with _list()\n\nIssue created by migration from https://trac.sagemath.org/ticket/5345\n\n",
+    "closed_at": "2009-02-28T21:03:31Z",
     "created_at": "2009-02-23T02:02:11Z",
     "labels": [
-        "component: linear algebra",
-        "trivial"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Optimize transpose for dense matrices",
+    "title": "[with patch, positive review] Optimize transpose, antitranspose for dense matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5345",
     "user": "https://github.com/rbeezer"
@@ -34,12 +34,9 @@ time m.transpose()
 ```
 Timings (user + system):
 
-11.94s : Stock 3.3
-
-11.20s : No multiplication
-
-10.18s : No multiplication, with _list()
-
+* 11.94s : Stock 3.3
+* 11.20s : No multiplication
+* 10.18s : No multiplication, with _list()
 
 Issue created by migration from https://trac.sagemath.org/ticket/5345
 

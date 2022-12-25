@@ -4,6 +4,7 @@ archive/issues_001090.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nGet it here:\n   http://moinmo.in/MoinMoinDownload\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1090\n\n",
+    "closed_at": "2008-06-26T06:58:44Z",
     "created_at": "2007-11-03T23:56:09Z",
     "labels": [
         "component: packages: standard",

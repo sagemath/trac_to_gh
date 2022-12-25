@@ -4,10 +4,10 @@ archive/issues_000726.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis shouldn't be needed unless the output from a cell needs it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/726\n\n",
+    "closed_at": "2007-10-20T18:45:37Z",
     "created_at": "2007-09-21T03:14:28Z",
     "labels": [
         "component: notebook",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",

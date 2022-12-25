@@ -3,10 +3,12 @@
 archive/issues_008753.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nRight now:\n\n```\nfunction.cpp:1886:29: warning: deprecated conversion from string constant to \u2018char*\u2019\nfunction.cpp: In member function \u2018GiNaC::ex GiNaC::function::power(const GiNaC::ex&) const\u2019:\nfunction.cpp:2186:15: error: expected type-specifier\nfunction.cpp:2186:15: error: expected \u2018)\u2019\nfunction.cpp:2187:72: error: conversion from \u2018int*\u2019 to \u2018GiNaC::ex\u2019 is ambiguous\nex.h:297:1: note: candidates are: GiNaC::ex::ex(long unsigned int) <near match>\nex.h:291:1: note:                 GiNaC::ex::ex(long int) <near match>\nex.h:285:1: note:                 GiNaC::ex::ex(unsigned int) <near match>\nex.h:273:1: note:                 GiNaC::ex::ex(int) <near match>\nmv -f .deps/color.Tpo .deps/color.Plo\n\n\n```\n\nThere is a new spkg posted on trac, but it doesn't fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8753\n\n",
+    "body": "Assignee: GeorgSWeber\n\nRight now:\n\n```\nfunction.cpp:1886:29: warning: deprecated conversion from string constant to \u2018char*\u2019\nfunction.cpp: In member function \u2018GiNaC::ex GiNaC::function::power(const GiNaC::ex&) const\u2019:\nfunction.cpp:2186:15: error: expected type-specifier\nfunction.cpp:2186:15: error: expected \u2018)\u2019\nfunction.cpp:2187:72: error: conversion from \u2018int*\u2019 to \u2018GiNaC::ex\u2019 is ambiguous\nex.h:297:1: note: candidates are: GiNaC::ex::ex(long unsigned int) <near match>\nex.h:291:1: note:                 GiNaC::ex::ex(long int) <near match>\nex.h:285:1: note:                 GiNaC::ex::ex(unsigned int) <near match>\nex.h:273:1: note:                 GiNaC::ex::ex(int) <near match>\nmv -f .deps/color.Tpo .deps/color.Plo\n\n\n```\n\nThere is a new spkg posted on trac #8644, but it doesn't fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8753\n\n",
+    "closed_at": "2010-04-28T19:26:08Z",
     "created_at": "2010-04-23T22:50:04Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
@@ -35,7 +37,7 @@ mv -f .deps/color.Tpo .deps/color.Plo
 
 ```
 
-There is a new spkg posted on trac, but it doesn't fix this.
+There is a new spkg posted on trac #8644, but it doesn't fix this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8753
 

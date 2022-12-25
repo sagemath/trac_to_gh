@@ -3,7 +3,8 @@
 archive/issues_007552.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen @jaapspies\n\n[Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7552\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen @jaapspies\n\n[Twisted](http://twistedmatrix.com) has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).\n\nRelease notes:\nhttp://twistedmatrix.com/trac/browser/tags/releases/twisted-9.0.0/NEWS?format=raw\n\n---\nNew package up at http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7552\n\n",
+    "closed_at": "2010-03-02T22:45:29Z",
     "created_at": "2009-11-29T08:12:32Z",
     "labels": [
         "component: packages: standard"
@@ -19,7 +20,13 @@ Assignee: tbd
 
 CC:  @mwhansen @jaapspies
 
-[Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).
+[Twisted](http://twistedmatrix.com) has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).
+
+Release notes:
+http://twistedmatrix.com/trac/browser/tags/releases/twisted-9.0.0/NEWS?format=raw
+
+---
+New package up at http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7552
 

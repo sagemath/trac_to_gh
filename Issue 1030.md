@@ -4,10 +4,11 @@ archive/issues_001030.json:
 ```json
 {
     "body": "Assignee: somebody\n\nHere's an exhibition of the bug:\n\n```\nsage: R.<x,w,v,u> = QQ['x','w','v','u']\nsage: f=(1-x)*(1-w)*(2-2*v)\nsage: f\n-2*x*w*v + 2*x*w + 2*x*v + 2*w*v - 2*x - 2*w - 2*v + 2\nsage: f.factor()\n(-2) * (x - 1) * (w - 1) * (v - 1)\nsage: f\nx*w*v - x*w - x*v - w*v + x + w + v - 1\n```\n\nThe fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1030\n\n",
+    "closed_at": "2007-11-01T10:10:51Z",
     "created_at": "2007-10-29T16:21:37Z",
     "labels": [
         "component: basic arithmetic",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",

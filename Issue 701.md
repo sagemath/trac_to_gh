@@ -1,15 +1,16 @@
-# Issue 701: port srange to Cython for speed
+# Issue 701: [with patch] port srange to Cython for speed
 
 archive/issues_000701.json:
 ```json
 {
     "body": "Assignee: somebody\n\nWilliam complained about srange being slow several times now. Let's fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/701\n\n",
+    "closed_at": "2007-10-04T03:16:54Z",
     "created_at": "2007-09-20T10:31:27Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "port srange to Cython for speed",
+    "title": "[with patch] port srange to Cython for speed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/701",
     "user": "https://github.com/malb"

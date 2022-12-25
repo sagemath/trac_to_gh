@@ -4,6 +4,7 @@ archive/issues_009647.json:
 ```json
 {
     "body": "Assignee: jason, jkantor\n\nCC:  @kcrisman @nathanncohen\n\nAdd an example from sage-support to the head of mip.pyx [see here](http://groups.google.com/group/sage-support/browse_thread/thread/e5ebaf0f6f657ab2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9647\n\n",
+    "closed_at": "2010-08-09T09:40:18Z",
     "created_at": "2010-07-30T17:06:42Z",
     "labels": [
         "component: numerical",

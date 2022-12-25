@@ -3,7 +3,8 @@
 archive/issues_008783.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux eno 2.6.32.10-90.fc12.x86_64 #1 SMP Tue Mar 23 09:47:08 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc\nThread model: posix\ngcc version 4.5.0 (GCC)\n****************************************************\nmkdir -p bin/release/\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /home/wstein/screen/eno/sage-4.3/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function \u2018int main(int, const char**)\u2019:\nsrc/main.cpp:30:16: error: \u2018srand\u2019 was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m0.614s\nuser    0m0.283s\nsys     0m0.052s\nsage: An error occurred while installing frobby-0.7.6\nPlease email sage-devel http://groups.google.com/group/sag\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8783\n\n",
+    "body": "Assignee: tbd\n\nKeywords: sd32\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux eno 2.6.32.10-90.fc12.x86_64 #1 SMP Tue Mar 23 09:47:08 UTC 2010\nx86_64 x86_64 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-\ncore2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-\nlanguages=c,c++,fortran --with-gnu-as --with-gnu-\nas=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as\n--with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-\ngcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2\n-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-\nmpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2\n-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh\n--prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc\nThread model: posix\ngcc version 4.5.0 (GCC)\n****************************************************\nmkdir -p bin/release/\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-\nparameter -Werror -isystem /home/wstein/screen/eno/sage-4.3/local/include\n-O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function \u2018int main(int, const char**)\u2019:\nsrc/main.cpp:30:16: error: \u2018srand\u2019 was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m0.614s\nuser    0m0.283s\nsys     0m0.052s\nsage: An error occurred while installing frobby-0.7.6\nPlease email sage-devel http://groups.google.com/group/sag\n```\n\n---\n\nNew **optional** spkg: [http://sage.math.washington.edu/home/bjarke/frobby-0.7.6.p1.spkg](http://sage.math.washington.edu/home/bjarke/frobby-0.7.6.p1.spkg)\n\n---\n\nThe spkg has to be brought into place to \"merge\" it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8783\n\n",
+    "closed_at": "2012-05-26T01:11:06Z",
     "created_at": "2010-04-27T20:14:41Z",
     "labels": [
         "component: packages: optional",
@@ -18,6 +19,8 @@ archive/issues_008783.json:
 ```
 Assignee: tbd
 
+Keywords: sd32
+
 ```
 frobby-0.7.6/src/test/transform/t3.gen.m2
 frobby-0.7.6/src/test/transform/t3.gen.nm
@@ -25,21 +28,33 @@ Finished extraction
 ****************************************************
 Host system
 uname -a:
-Linux eno 2.6.32.10-90.fc12.x86_64 #1 SMP Tue Mar 23 09:47:08 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux
+Linux eno 2.6.32.10-90.fc12.x86_64 #1 SMP Tue Mar 23 09:47:08 UTC 2010
+x86_64 x86_64 x86_64 GNU/Linux
 ****************************************************
 ****************************************************
 CC Version
 gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
-COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-
+core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper
 Target: x86_64-unknown-linux-gnu
-Configured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc
+Configured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-
+languages=c,c++,fortran --with-gnu-as --with-gnu-
+as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as
+--with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-
+gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2
+-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-
+mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2
+-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh
+--prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc
 Thread model: posix
 gcc version 4.5.0 (GCC)
 ****************************************************
 mkdir -p bin/release/
-g++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /home/wstein/screen/eno/sage-4.3/local/include -O3 -c src/main.cpp -o bin/release/main.o
+g++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-
+parameter -Werror -isystem /home/wstein/screen/eno/sage-4.3/local/include
+-O3 -c src/main.cpp -o bin/release/main.o
 src/main.cpp: In function ‘int main(int, const char**)’:
 src/main.cpp:30:16: error: ‘srand’ was not declared in this scope
 make: *** [bin/release/main.o] Error 1
@@ -51,6 +66,15 @@ sys     0m0.052s
 sage: An error occurred while installing frobby-0.7.6
 Please email sage-devel http://groups.google.com/group/sag
 ```
+
+---
+
+New **optional** spkg: [http://sage.math.washington.edu/home/bjarke/frobby-0.7.6.p1.spkg](http://sage.math.washington.edu/home/bjarke/frobby-0.7.6.p1.spkg)
+
+---
+
+The spkg has to be brought into place to "merge" it.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8783
 

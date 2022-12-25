@@ -3,10 +3,11 @@
 archive/issues_003351.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee \n\n   http://www.math.utexas.edu/pipermail/maxima/2008/011882.html\n\nwhere we learn that Maxima is GPLv2 only, not GPLv2+.  This means that\nwe can not binary link Maxima and Sage. \n\nSomething from the email at the above link should be mentioned in the\nCOPYING.txt file, and the statement at the top of COPYING.txt that\n\n\"Every component of SAGE except jsmath is licensed under a GPL v2 (or\nlater) compatible license.\" may need to be changed to\n\n\"Every component of SAGE except jsmath is licensed under a GPL v2 compatible\nor GPLv2+  compatible license.  All components that are binary linked\nto Sage are GPLv2+.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3351\n\n",
+    "body": "Assignee: mabshoff\n\nSee \n\n   http://www.math.utexas.edu/pipermail/maxima/2008/011882.html\n\nwhere we learn that Maxima is GPLv2 only, not GPLv2+.  This means that\nwe can not binary link Maxima and Sage. \n\nSomething from the email at the above link should be mentioned in the\nCOPYING.txt file, and the statement at the top of COPYING.txt that\n\n\"Every component of SAGE except jsmath is licensed under a GPL v2 (or\nlater) compatible license.\" may need to be changed to\n\n\"Every component of SAGE except jsmath is licensed under a GPL v2 compatible\nor GPLv2+  compatible license.  All components that are binary linked\nto Sage are GPLv2+.\"\n\n\nALTERNATIVELY: I would greatly prefer to just have the GPLv2 only\nstuff in Maxima changed to GPLv2+ to avoid this problem altogether. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3351\n\n",
+    "closed_at": "2014-08-20T20:32:45Z",
     "created_at": "2008-06-02T13:43:34Z",
     "labels": [
-        "component: cygwin",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -34,6 +35,12 @@ later) compatible license." may need to be changed to
 "Every component of SAGE except jsmath is licensed under a GPL v2 compatible
 or GPLv2+  compatible license.  All components that are binary linked
 to Sage are GPLv2+."
+
+
+ALTERNATIVELY: I would greatly prefer to just have the GPLv2 only
+stuff in Maxima changed to GPLv2+ to avoid this problem altogether. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3351
 

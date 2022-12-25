@@ -1,15 +1,16 @@
-# Issue 6040: Added Doctests for QuadraticForms methods
+# Issue 6040: [with patch, positive review] Added Doctests for QuadraticForms methods
 
 archive/issues_006040.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  mabshoff wstein @tornaria\n\nKeywords: quadraticform\n\nAdding Doctests to bring coverage up to 100% (coming soon).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6040\n\n",
+    "body": "Assignee: justin\n\nCC:  mabshoff wstein @tornaria\n\nKeywords: quadraticform\n\nAdding Doctests to bring coverage up to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6040\n\n",
+    "closed_at": "2009-05-19T00:41:25Z",
     "created_at": "2009-05-15T03:40:59Z",
     "labels": [
         "component: quadratic forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Added Doctests for QuadraticForms methods",
+    "title": "[with patch, positive review] Added Doctests for QuadraticForms methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6040",
     "user": "https://github.com/jonhanke"
@@ -21,7 +22,7 @@ CC:  mabshoff wstein @tornaria
 
 Keywords: quadraticform
 
-Adding Doctests to bring coverage up to 100% (coming soon).
+Adding Doctests to bring coverage up to 100%.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6040
 

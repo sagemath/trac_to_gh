@@ -1,16 +1,17 @@
-# Issue 2897: [with new spkg] GAP: replace guava 3.4 by new and improved guava 3.4
+# Issue 2897: [with spkg, positive review] GAP: replace guava 3.4 by new and improved guava 3.4
 
 archive/issues_002897.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThere was a small bug in the previous version of guava 3.4 which caused it to fail the (GAP) guava.tst file. This version is fixed. Also, some file permissions were \"wrong\" and those are fixed. The SPKG.txt file was updated. Other than these, the spkg is the same. It has been copied to \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.p6.spkg and was\ntested using sage -f. Seems to work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2897\n\n",
+    "closed_at": "2008-04-12T16:10:37Z",
     "created_at": "2008-04-12T14:42:49Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with new spkg] GAP: replace guava 3.4 by new and improved guava 3.4",
+    "title": "[with spkg, positive review] GAP: replace guava 3.4 by new and improved guava 3.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2897",
     "user": "https://github.com/wdjoyner"

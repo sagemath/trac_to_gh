@@ -1,16 +1,17 @@
-# Issue 5394: [with patch, needs review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory
+# Issue 5394: [with patch, positive review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory
 
 archive/issues_005394.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5394\n\n",
+    "closed_at": "2009-02-27T23:07:33Z",
     "created_at": "2009-02-27T17:14:13Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "[with patch, needs review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory",
+    "title": "[with patch, positive review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5394",
     "user": "https://github.com/mwhansen"

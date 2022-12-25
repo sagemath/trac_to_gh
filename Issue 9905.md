@@ -3,11 +3,12 @@
 archive/issues_009905.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @kcrisman @vbraun @kini\n\nWe include the RPy spkg in the R spkg and install the former from the latter.  It would be less potentially confusing to move RPy outside of R but make it depend on R and any other prerequisites in `spkg/standard/deps`.\n\nRelated: #3086.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9906\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @nexttime @kcrisman @vbraun @kini\n\nKeywords: r-project spkg\n\nWe include the RPy spkg in the R spkg and install the former from the latter.  It would be less potentially confusing to move RPy outside of R but make it depend on R and any other prerequisites in `spkg/standard/deps`.\n\nThe necessary changes to `spkg/install` and `spkg/standard/deps` are already there, but currently commented out. Apply the following patch **to the Sage root repository** to activate them:\n\n [attachment:trac_9906-Activate_separate_RPy_spkg.root-repo.patch]\n\n---\n\n**spkg**:\n1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/r-2.14.0.p5.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/r-2.14.0.p5.spkg) (diff: [attachment:r-2.14.0.p5.diff])\n2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/rpy2-2.0.8.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/rpy2-2.0.8.p0.spkg) (diff: [attachment:rpy2-2.0.8.p0.diff])\n\n---\n\nRelated: #3086 (closed as duplicate).  See also #9668 and #9847 for what could or should be addressed, too.  Previous R upgrade: #12057.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9906\n\n",
+    "closed_at": "2012-09-06T05:23:52Z",
     "created_at": "2010-09-13T23:08:55Z",
     "labels": [
         "component: packages: standard",
-        "minor"
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
     "title": "Move the RPy package outside of the R package",
@@ -16,13 +17,27 @@ archive/issues_009905.json:
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: tbd
+Assignee: @nexttime
 
 CC:  @nexttime @kcrisman @vbraun @kini
 
+Keywords: r-project spkg
+
 We include the RPy spkg in the R spkg and install the former from the latter.  It would be less potentially confusing to move RPy outside of R but make it depend on R and any other prerequisites in `spkg/standard/deps`.
 
-Related: #3086.
+The necessary changes to `spkg/install` and `spkg/standard/deps` are already there, but currently commented out. Apply the following patch **to the Sage root repository** to activate them:
+
+ [attachment:trac_9906-Activate_separate_RPy_spkg.root-repo.patch]
+
+---
+
+**spkg**:
+1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/r-2.14.0.p5.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/r-2.14.0.p5.spkg) (diff: [attachment:r-2.14.0.p5.diff])
+2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/rpy2-2.0.8.p0.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/rpy2-2.0.8.p0.spkg) (diff: [attachment:rpy2-2.0.8.p0.diff])
+
+---
+
+Related: #3086 (closed as duplicate).  See also #9668 and #9847 for what could or should be addressed, too.  Previous R upgrade: #12057.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9906
 

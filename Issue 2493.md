@@ -1,16 +1,17 @@
-# Issue 2493: Updated experimental vtk spkg (vtk-5.0.4.spkg)
+# Issue 2493: [with spkg, two positive reviews] Updated experimental vtk spkg (vtk-5.0.4.spkg)
 
 archive/issues_002493.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nUpdated to vtk-5.0.4\n\nNow compiles with GL2EPS enabled. So it is possible to save pictures as eps, ps and pdf files.\n\nDepency cmake updated to cmake-2.4.8\n\nFiles see:\n\n```\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/cmake-2.4.8.spkg\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/vtk-5.0.4.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2493\n\n",
+    "closed_at": "2008-03-22T05:23:05Z",
     "created_at": "2008-03-12T14:44:00Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Updated experimental vtk spkg (vtk-5.0.4.spkg)",
+    "title": "[with spkg, two positive reviews] Updated experimental vtk spkg (vtk-5.0.4.spkg)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2493",
     "user": "https://github.com/jaapspies"

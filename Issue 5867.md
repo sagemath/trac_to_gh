@@ -1,22 +1,23 @@
-# Issue 5867: Fix gd build on FreeBSD
+# Issue 5867: [with patch, positive review] Fix gd build on FreeBSD
 
 archive/issues_005867.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn FreeBSD, libiconv will be installed in /usr/local/lib - which is not searched by default.  Explicitly add /usr/local/lib to LDFLAGS to ensure it is correctly detected by the gd configure script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5867\n\n",
+    "body": "Assignee: @mwhansen\n\nOn FreeBSD, libiconv will be installed in /usr/local/lib - which is not searched by default.  Explicitly add /usr/local/lib to LDFLAGS to ensure it is correctly detected by the gd configure script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5867\n\n",
+    "closed_at": "2009-07-02T22:26:58Z",
     "created_at": "2009-04-23T06:56:11Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Fix gd build on FreeBSD",
+    "title": "[with patch, positive review] Fix gd build on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5867",
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 On FreeBSD, libiconv will be installed in /usr/local/lib - which is not searched by default.  Explicitly add /usr/local/lib to LDFLAGS to ensure it is correctly detected by the gd configure script.
 

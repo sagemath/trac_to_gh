@@ -3,7 +3,8 @@
 archive/issues_003668.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  sage-combinat\n\nIn the documentation for the function \"Set\" (Reference Manual 11.8) it would be helpful to explicitly point out that Set allows objects of different types, so \n\n```\nsage: Set([Sequence(my_seq),3,QQ])\n{Rational Field, 3, [2, 3]}}}}\n\nis perfectly OK.\n\nAlso, it would be nice if Set allowed one to use lists, so\n\n`Set([[2,3]])`\n\nworked, rather than giving the error message ``TypeError: list objects are unhashable''.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3668\n\n",
+    "body": "Assignee: @tscrim\n\nCC:  sage-combinat\n\nKeywords: documentation\n\nIn the documentation for the function \"Set\" (Reference Manual 11.8) it would be helpful to explicitly point out that Set allows objects of different types, so \n\n```\nsage: Set([Sequence(my_seq),3,QQ])\nRational Field, 3, [2, 3]\n```\n\nis perfectly OK.\n\nAlso, it would be nice if Set allowed one to use lists, so\n\n`Set([This is the Trac macro *2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2,3-macro))`\n\nworked, rather than giving the error message ``TypeError: list objects are unhashable''.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3668\n\n",
+    "closed_at": "2013-08-16T21:17:12Z",
     "created_at": "2008-07-16T22:25:58Z",
     "labels": [
         "component: documentation",
@@ -17,23 +18,27 @@ archive/issues_003668.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: tba
+Assignee: @tscrim
 
 CC:  sage-combinat
+
+Keywords: documentation
 
 In the documentation for the function "Set" (Reference Manual 11.8) it would be helpful to explicitly point out that Set allows objects of different types, so 
 
 ```
 sage: Set([Sequence(my_seq),3,QQ])
-{Rational Field, 3, [2, 3]}}}}
+Rational Field, 3, [2, 3]
+```
 
 is perfectly OK.
 
 Also, it would be nice if Set allowed one to use lists, so
 
-`Set([[2,3]])`
+`Set([This is the Trac macro *2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2,3-macro))`
 
 worked, rather than giving the error message ``TypeError: list objects are unhashable''.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3668
 

@@ -1,16 +1,17 @@
-# Issue 5264: [with patch, needs review] optimize small permgroup elements
+# Issue 5264: [with patch, positive review] optimize small permgroup elements
 
 archive/issues_005264.json:
 ```json
 {
     "body": "Assignee: joyner\n\nAvoid allocation for very small permutation group elements (which can be a significant cost of element creation). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5264\n\n",
+    "closed_at": "2009-04-16T11:35:23Z",
     "created_at": "2009-02-14T06:49:24Z",
     "labels": [
         "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] optimize small permgroup elements",
+    "title": "[with patch, positive review] optimize small permgroup elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5264",
     "user": "https://github.com/robertwb"

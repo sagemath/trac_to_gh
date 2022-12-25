@@ -4,6 +4,7 @@ archive/issues_009184.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nMPFI doesn't provide it, but as Gamma is increasing for most s, it's pretty easy to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9184\n\n",
+    "closed_at": "2010-07-20T09:29:41Z",
     "created_at": "2010-06-08T03:18:48Z",
     "labels": [
         "component: algebra"

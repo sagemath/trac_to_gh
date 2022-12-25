@@ -1,16 +1,17 @@
-# Issue 4096: pari precision interface
+# Issue 4096: [with patches, positive review] pari precision interface
 
 archive/issues_004096.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  alexghitza\n\nThis is a follow-up from 4064.  Alex Ghitza and I are doing a big job sorting out the interface with the pari library with respect to (real and complex) precision, where there is currently confusion leading to weird results when word-precision, bit-precision and decimal precision are being confused.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4096\n\n",
+    "closed_at": "2008-09-26T04:07:01Z",
     "created_at": "2008-09-10T08:44:01Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "pari precision interface",
+    "title": "[with patches, positive review] pari precision interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4096",
     "user": "https://github.com/JohnCremona"

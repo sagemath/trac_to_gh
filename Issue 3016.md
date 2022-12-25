@@ -4,6 +4,7 @@ archive/issues_003016.json:
 ```json
 {
     "body": "Assignee: boothby\n\nEdit Area is one of several javascript code editors.  Here is a simple (*very* simple) spkg which installs the necessary files in sage/data/extcode/notebook/javascript/edit_area/ and also a patch to enable the functionality.\n\nThe patch currently only enables the toggle switch (between new editor and old functionality) for the first cell (the input_cell_0 cell).  That should be enough to evaluate it, though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3016\n\n",
+    "closed_at": "2008-06-20T04:51:18Z",
     "created_at": "2008-04-24T08:51:55Z",
     "labels": [
         "component: notebook"

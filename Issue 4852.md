@@ -3,7 +3,8 @@
 archive/issues_004852.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  ekirkman\n\nWe really probably ought to use the very nice `@`option and `@`suboption functionality for doing plots of graphs. That would make it easier to specify edge/vertex options, for example, and to retrieve existing defaults, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4852\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  ekirkman\n\nWe really probably ought to use the very nice `@`option and `@`suboption functionality for doing plots of graphs. That would make it easier to specify edge/vertex options, for example, and to retrieve existing defaults, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4852\n\n",
+    "closed_at": "2012-06-02T12:33:18Z",
     "created_at": "2008-12-22T18:37:25Z",
     "labels": [
         "component: graph theory"
@@ -15,7 +16,7 @@ archive/issues_004852.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @rlmill
+Assignee: @jasongrout
 
 CC:  ekirkman
 

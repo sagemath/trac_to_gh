@@ -1,15 +1,16 @@
-# Issue 6085: [with patch, not ready] Finish full implementation of c_graphs
+# Issue 6085: [with patch, positive review] Finish full implementation of c_graphs
 
 archive/issues_006085.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  rdingman mvngu @saliola boothby\n\nThe goal is for c_graphs to be able to take over as the default implementation of graphs in Sage. With the first patch, all that remains to be done is:\n\n1. We need support for arbitrary hashable vertices.\n\n2. We need support for arbitrary edge labels.\n\n3. We need pickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6085\n\n",
+    "closed_at": "2009-06-25T17:52:35Z",
     "created_at": "2009-05-19T17:06:07Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, not ready] Finish full implementation of c_graphs",
+    "title": "[with patch, positive review] Finish full implementation of c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6085",
     "user": "https://github.com/rlmill"

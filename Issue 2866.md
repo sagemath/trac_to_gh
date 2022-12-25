@@ -1,16 +1,17 @@
-# Issue 2866: [with patch, needs review] use tempfile.NamedTemporaryFile for unit tests
+# Issue 2866: [with patch, positive review] use tempfile.NamedTemporaryFile for unit tests
 
 archive/issues_002866.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nSwitch from using hard coded 'test.db' to use the tempfile module's NamedTemporaryFile().\n\nIssue created by migration from https://trac.sagemath.org/ticket/2866\n\n",
+    "closed_at": "2008-04-10T03:14:16Z",
     "created_at": "2008-04-09T23:05:27Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch, needs review] use tempfile.NamedTemporaryFile for unit tests",
+    "title": "[with patch, positive review] use tempfile.NamedTemporaryFile for unit tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2866",
     "user": "https://github.com/yqiang"

@@ -4,6 +4,7 @@ archive/issues_006737.json:
 ```json
 {
     "body": "Assignee: tba\n\nAll occurrences of \"Pyrex\" should now be changed to \"Cython\". See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b9b7eea2d9575a7f) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6737\n\n",
+    "closed_at": "2010-01-19T00:26:13Z",
     "created_at": "2009-08-11T20:04:35Z",
     "labels": [
         "component: documentation",

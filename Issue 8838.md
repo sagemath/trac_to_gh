@@ -3,7 +3,8 @@
 archive/issues_008838.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman ryan\n\nA convention we have is that graphics commands do the right thing depending on if 2d or 3d input is passed.  We should make arrow() take 3-tuples to produce a 3d plot (by calling arrow3d).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8838\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman ryan\n\nKeywords: beginner\n\nA convention we have is that graphics commands do the right thing depending on if 2d or 3d input is passed.  We should make arrow() take 3-tuples to produce a 3d plot (by calling arrow3d).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8838\n\n",
+    "closed_at": "2010-09-15T10:40:32Z",
     "created_at": "2010-05-01T19:25:58Z",
     "labels": [
         "component: graphics"
@@ -18,6 +19,8 @@ archive/issues_008838.json:
 Assignee: jason, was
 
 CC:  @kcrisman ryan
+
+Keywords: beginner
 
 A convention we have is that graphics commands do the right thing depending on if 2d or 3d input is passed.  We should make arrow() take 3-tuples to produce a 3d plot (by calling arrow3d).
 

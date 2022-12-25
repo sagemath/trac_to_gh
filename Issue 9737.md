@@ -4,6 +4,7 @@ archive/issues_009737.json:
 ```json
 {
     "body": "Assignee: itolkov, jason\n\nCC:  @mkoeppe @dimpase @slel @tscrim\n\nMoved the interact that shows an induced subgraph obtained on deleting a vertex, from the wiki to library. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9737\n\n",
+    "closed_at": "2021-01-13T08:15:27Z",
     "created_at": "2010-08-12T20:39:21Z",
     "labels": [
         "component: interact"

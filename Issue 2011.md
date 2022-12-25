@@ -1,16 +1,17 @@
-# Issue 2011: crap -- mpfi ships with two precompiled binaries
+# Issue 2011: [with spkg] crap -- mpfi ships with two precompiled binaries
 
 archive/issues_002011.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_trigo\nsage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_mpfi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2011\n\n",
+    "closed_at": "2008-02-01T02:01:25Z",
     "created_at": "2008-01-31T23:22:07Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- mpfi ships with two precompiled binaries",
+    "title": "[with spkg] crap -- mpfi ships with two precompiled binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2011",
     "user": "https://github.com/williamstein"

@@ -3,7 +3,8 @@
 archive/issues_009251.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @nthiery\n\nKeywords: Lazy Attributes\n\nA request `Parent.element_class?` gives the doc of the class `lazy_attribute` instead of the doc of the function itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9251\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nKeywords: Lazy Attributes\n\nA request `Parent.element_class?` gives the doc of the class `lazy_attribute` instead of the doc of the function itself.\n\nApply only [trac_9251-lazy_attribute_cython-fh.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9251/trac_9251-lazy_attribute_cython-fh.2.patch) (sorry for the mess)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9251\n\n",
+    "closed_at": "2010-07-22T07:54:16Z",
     "created_at": "2010-06-16T23:29:05Z",
     "labels": [
         "component: misc",
@@ -17,13 +18,15 @@ archive/issues_009251.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @jasongrout
+Assignee: @hivert
 
 CC:  @nthiery
 
 Keywords: Lazy Attributes
 
 A request `Parent.element_class?` gives the doc of the class `lazy_attribute` instead of the doc of the function itself.
+
+Apply only [trac_9251-lazy_attribute_cython-fh.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9251/trac_9251-lazy_attribute_cython-fh.2.patch) (sorry for the mess)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9251
 

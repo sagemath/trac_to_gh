@@ -4,6 +4,7 @@ archive/issues_008018.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nIn `sage/modular/modform/numerical.py`, the last half of `_eigenvectors` looks for eigenvectors with eigenvalues having multiplicty 1.  The eigenvalues get sorted for openers, but the eigenvectors in `B` don't follow along.\n\nPrint statements before and after the sort, and then running doctests on just this file, produces output like:\n\n```\n    Hecke: before sort [-283.0, 108.522012456, -92.2176402155, -90.3043722401, 142.0]\n    Hecke: after sort [-283.0, -92.2176402155, -90.3043722401, 108.522012456, 142.0]\n```\n\nOne fix would be to delete the sorting if the order of the eigenvectors is not important.\n\nAll the doctests in this module that call this code lack eigenvalues of multiplicity greater than 1, so maybe a new doctest could test this case.\n\nAlso, it appears the cached value returned differs from the return at the bottom of the function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8018\n\n",
+    "closed_at": "2010-04-15T20:12:52Z",
     "created_at": "2010-01-21T00:24:52Z",
     "labels": [
         "component: modular forms",

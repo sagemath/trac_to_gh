@@ -1,21 +1,22 @@
-# Issue 4206: convert RDF and CDF vectors to use numpy
+# Issue 4206: [with patch, positive review] convert RDF and CDF vectors to use numpy
 
 archive/issues_004206.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4206\n\n",
+    "body": "Assignee: @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4206\n\n",
+    "closed_at": "2008-12-09T09:40:51Z",
     "created_at": "2008-09-27T09:39:25Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "convert RDF and CDF vectors to use numpy",
+    "title": "[with patch, positive review] convert RDF and CDF vectors to use numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4206",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 
 

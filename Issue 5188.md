@@ -4,6 +4,7 @@ archive/issues_005188.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @wjp\n\nIn particular this isn't good:\n\n```\nsage: factor(-1)\n-1\nsage: (factor(-1))^2\n-1\nsage: (factor(-1)^2).value() == -1 \nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5188\n\n",
+    "closed_at": "2009-06-04T20:46:42Z",
     "created_at": "2009-02-05T21:39:31Z",
     "labels": [
         "component: algebra",

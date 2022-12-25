@@ -1,22 +1,23 @@
-# Issue 3357: [with patch, needs review] Refactor pool code in integer.pyx
+# Issue 3357: [with new patch, positive review] Refactor pool code in integer.pyx
 
 archive/issues_003357.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nThis patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3357\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @robertwb\n\nThis patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3357\n\n",
+    "closed_at": "2008-06-11T03:44:39Z",
     "created_at": "2008-06-03T07:15:22Z",
     "labels": [
         "component: basic arithmetic",
         "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] Refactor pool code in integer.pyx",
+    "title": "[with new patch, positive review] Refactor pool code in integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3357",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: somebody
+Assignee: @garyfurnish
 
 CC:  @robertwb
 

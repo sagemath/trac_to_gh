@@ -1,22 +1,25 @@
-# Issue 911: hash() on Graph objects changes as the object is mutated
+# Issue 911: [with patch] hash() on Graph objects changes as the object is mutated
 
 archive/issues_000911.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is bad:\n\n```\nsage: foo = Graph()\nsage: hash(foo)\n1033452963\nsage: foo.add_vertex(1)\nsage: hash(foo)\n1537218837\n```\n\n__hash__ on Graph objects should be overridden to raise a TypeError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/911\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThis is bad:\n\n```\nsage: foo = Graph()\nsage: hash(foo)\n1033452963\nsage: foo.add_vertex(1)\nsage: hash(foo)\n1537218837\n```\n\n__hash__ on Graph objects should be overridden to raise a TypeError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/911\n\n",
+    "closed_at": "2007-10-21T00:48:45Z",
     "created_at": "2007-10-17T06:20:15Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "hash() on Graph objects changes as the object is mutated",
+    "title": "[with patch] hash() on Graph objects changes as the object is mutated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/911",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
+
+Keywords: graphs
 
 This is bad:
 

@@ -1,16 +1,17 @@
-# Issue 4300: [with patch, needs review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1
+# Issue 4300: [with patch, positive review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1
 
 archive/issues_004300.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPatch attached as the title says.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4300\n\n",
+    "closed_at": "2008-10-15T16:14:01Z",
     "created_at": "2008-10-15T16:08:51Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
-    "title": "[with patch, needs review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1",
+    "title": "[with patch, positive review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4300",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

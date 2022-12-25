@@ -4,6 +4,7 @@ archive/issues_007151.json:
 ```json
 {
     "body": "Assignee: joyner\n\nCC:  @wdjoyner @mwhansen\n\nKeywords: group quaternion\n\nIt is easy to create most of the small groups (n < 16) as permutation groups with existing constructions.  This is one group that is \"missing\" - the non-abelian, non-dihedral group of order 8.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7151\n\n",
+    "closed_at": "2010-01-03T05:21:35Z",
     "created_at": "2009-10-08T05:49:18Z",
     "labels": [
         "component: group theory",

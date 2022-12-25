@@ -3,7 +3,8 @@
 archive/issues_009476.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein @categorie\n\nKeywords: eclib modular symbols\n\nI have made several enhancements to eclib:\n\n1. Support for minus space modular symbols\n2. Some sparse linear algebra improvements\n\nThe new version is called eclib-20100711 since it is more than just a patch-level change.  New spkgs will be linked here shortly.\n\nThe interface in sage/libs/cremona has been updated accordingly in the patch (to appear shortly);  this depends on #9441\n\nIssue created by migration from https://trac.sagemath.org/ticket/9476\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein @categorie\n\nKeywords: eclib modular symbols\n\nI have made several enhancements to eclib:\n\n1. Support for minus space modular symbols\n2. Some sparse linear algebra improvements\n\nThe new version is called eclib-20100711 since it is more than just a patch-level change.  See below for a link to the spkg.\n\nThe interface in sage/libs/cremona has been updated accordingly in the patch;  this depends on #9441\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9476\n\n",
+    "closed_at": "2010-08-09T09:49:55Z",
     "created_at": "2010-07-11T20:36:54Z",
     "labels": [
         "component: packages: standard",
@@ -27,9 +28,12 @@ I have made several enhancements to eclib:
 1. Support for minus space modular symbols
 2. Some sparse linear algebra improvements
 
-The new version is called eclib-20100711 since it is more than just a patch-level change.  New spkgs will be linked here shortly.
+The new version is called eclib-20100711 since it is more than just a patch-level change.  See below for a link to the spkg.
 
-The interface in sage/libs/cremona has been updated accordingly in the patch (to appear shortly);  this depends on #9441
+The interface in sage/libs/cremona has been updated accordingly in the patch;  this depends on #9441
+
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9476
 

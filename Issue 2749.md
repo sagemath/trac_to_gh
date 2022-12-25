@@ -1,16 +1,17 @@
-# Issue 2749: [with spkg, not ready for review] Upgrade to FLINT-1.1
+# Issue 2749: [with spkg, invalid] Upgrade to FLINT-1.1
 
 archive/issues_002749.json:
 ```json
 {
     "body": "Assignee: boothby\n\nUpgrade FLINT spkg to version 1.1.  A developer version is located at http://sage.math.washington.edu/home/boothby/SPKG/flint-1.1-devel.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2749\n\n",
+    "closed_at": "2008-06-27T14:47:28Z",
     "created_at": "2008-04-01T03:36:13Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with spkg, not ready for review] Upgrade to FLINT-1.1",
+    "title": "[with spkg, invalid] Upgrade to FLINT-1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2749",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

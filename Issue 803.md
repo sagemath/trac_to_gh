@@ -4,6 +4,7 @@ archive/issues_000803.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCalls like:\n\n```\nalgebras/algebra_order.py:        elif isinstance(x, RingElement) and x in self.base_ring():\nalgebras/algebra_order_ideal.py:        elif isinstance(x, RingElement) and x in self.base_ring():\nalgebras/free_algebra_quotient_element.py:        elif isinstance(x, RingElement) and not isinstance(x, AlgebraElement) and x in R:\nrings/infinity.py:        elif isinstance(x, RingElement) or isinstance(x, (int,long,float,complex)):\nrings/infinity.py:        elif isinstance(x, RingElement):\n```\n\nshould actually be checking to see if the parents are of the appropriate type.  The element types are not always reliable: parents more accurately reflect the mathematical structure (mostly because they can have multiple inheritance).\n\nThere may be more instances in addition to those above (I just ran `search_src(\"isinstance(x, RingElement)\")`)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/803\n\n",
+    "closed_at": "2015-04-14T23:05:29Z",
     "created_at": "2007-10-03T08:13:00Z",
     "labels": [
         "component: basic arithmetic",

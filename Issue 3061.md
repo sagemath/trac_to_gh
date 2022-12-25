@@ -1,16 +1,17 @@
-# Issue 3061: use readlink and realpatch so that symlinking sage works
+# Issue 3061: [with patch, with positive review] use readlink and realpatch so that symlinking sage works
 
 archive/issues_003061.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMax Murphy suggests:\n\n```\nDear All,\n\nI just tried making a symlink to sage and it broke because it defaults\nto using $0 to work out where SAGE_DIR is.  I'd like to propose a\nsmall change that allows symlinks to be used:\n\n---------------------------\nTHE FILE: is the shell script called sage in the root of the install\ntree and which starts:\n\n#!/bin/sh\n\n# Set SAGE_ROOT to the location of the sage install.\nSAGE_ROOT=\".....\"\n\nCUR=\"`pwd`\"   # save the current directory, so can change back after\nstartup\n\nif [ \"$SAGE_ROOT\" = \".....\" ];  then\n    SAGE_ROOT=`echo \"$0\" | sed -e 's/....$//g'`\n-----------------------------\nBEFORE:  The line I'd like to change is:\n\n    SAGE_ROOT=`echo \"$0\" | sed -e 's/....$//g'`\n\n----------------------------\nAFTER:\n\n    SAGE_ROOT=`readlink -f \"$0\"` 2>/dev/null || \\\n    SAGE_ROOT=`realpath    \"$0\"` 2>/dev/null || \\\n    SAGE_ROOT=\"$0\"\n\n    SAGE_ROOT=\"${SAGE_ROOT%/*}/\"\n\n--------------------------\nDISCUSSION:\nreadlink -f  and  realpath do the same thing - they get a clean path\nfree of relative components and symlinks.\n\nThe reason for trying both is that some systems have only the one or\nthe other.  Trying raw $0 is there as a last resort just in case.\nDon't want to break any existing installs!\n\nThe final line does -almost- the same as the sed.  The sed removes\nfour characters (sage), the new code removes the file part of the\npath.  Debatable but it's a bit quicker than spawning a sed process\nand allows for name changes.  You never know.. it might become\nfennel.  All right, this part of the argument is pretty weak!\n\nBut the upside is that I can now make symlinks to sage and everything\nworks dandy, which it didn't before.\n\nHave fun!\n\nAnd sorry about not using [code] tags .. I couldn't find the button!\n(wimp)\n\nRegards, Max  (new to this forum) \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3061\n\n",
+    "closed_at": "2008-04-30T06:11:15Z",
     "created_at": "2008-04-30T01:35:11Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "use readlink and realpatch so that symlinking sage works",
+    "title": "[with patch, with positive review] use readlink and realpatch so that symlinking sage works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3061",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

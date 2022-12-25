@@ -4,6 +4,7 @@ archive/issues_001003.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCarl Witty reported:\n\n```\nOn my 32-bit linux box, I had an additional failure:\n **********************************************************************\nFile \"finite_field_element.py\", line 18:\n    sage: c = a^e\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/sage/local/lib/python2.5/doctest.py\", line\n1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[9]>\", line 1, in <module>\n        c = a**e###line 18:\n    sage: c = a^e\n      File \"finite_field_ntl_gf2e.pyx\", line 925, in\nfinite_field_ntl_gf2e.FiniteField_ntl_gf2eElement.__pow__\n        GF2E_power(r.x, (<FiniteField_ntl_gf2eElement>self).x, exp)\n    OverflowError: long int too large to convert to int\n**********************************************************************\n```\n\nThe attached patch should fix that issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1003\n\n",
+    "closed_at": "2007-10-27T04:52:09Z",
     "created_at": "2007-10-26T09:23:15Z",
     "labels": [
         "component: basic arithmetic",

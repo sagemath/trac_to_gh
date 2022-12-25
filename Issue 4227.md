@@ -1,9 +1,10 @@
-# Issue 4227: Sage 3.1.3.alpha2: many Magma doctests are not option
+# Issue 4227: [with patch, positive review] Sage 3.1.3.alpha2: many Magma doctests that should are not optional
 
 archive/issues_004227.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nALex Ghitza reported a bunch of doctest failures at\n\nhttp://www.ms.unimelb.edu.au/~aghitza/sage/failures\n\nThose failures are cause by Magma doctests not being marked \"optional\"\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4227\n\n",
+    "closed_at": "2008-10-01T13:15:49Z",
     "created_at": "2008-10-01T07:21:42Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_004227.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Sage 3.1.3.alpha2: many Magma doctests are not option",
+    "title": "[with patch, positive review] Sage 3.1.3.alpha2: many Magma doctests that should are not optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4227",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,7 +3,8 @@
 archive/issues_009601.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\ncvxopt requires C99 math functions that are not part of the base FreeBSD libraries.  #9543 uses cephes to provide these missing functions but referencing them requires that cvxopt search $SAGE_LOCAL/include.  The attached patch modified spkg-install to\ninclude this.\n\nThis patch is local to Sage and does not need to be reported upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9601\n\n",
+    "body": "Assignee: @peterjeremy\n\nKeywords: sd40.5\n\ncvxopt requires C99 math functions that are not part of the base FreeBSD libraries.  #9543 uses cephes to provide these missing functions but referencing them requires that cvxopt search $SAGE_LOCAL/include.  The attached patch modified spkg-install to\ninclude this.\n\nThis patch is local to Sage and does not need to be reported upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9601\n\n",
+    "closed_at": "2012-06-02T12:44:24Z",
     "created_at": "2010-07-26T11:12:31Z",
     "labels": [
         "component: porting: bsd",
@@ -17,6 +18,8 @@ archive/issues_009601.json:
 }
 ```
 Assignee: @peterjeremy
+
+Keywords: sd40.5
 
 cvxopt requires C99 math functions that are not part of the base FreeBSD libraries.  #9543 uses cephes to provide these missing functions but referencing them requires that cvxopt search $SAGE_LOCAL/include.  The attached patch modified spkg-install to
 include this.

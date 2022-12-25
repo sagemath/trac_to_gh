@@ -1,9 +1,10 @@
-# Issue 4093: [with patch, needs review] fix numerical fuzz in period_lattice for 3.1.2
+# Issue 4093: [with patch, positive review] fix numerical fuzz in period_lattice for 3.1.2
 
 archive/issues_004093.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve period lattice\n\n3.1.2.rc1 has this doctest failure:\n\n```\nFile \"/home/john/sage-3.1.2.rc1/tmp/period_lattice.py\", line 281:\n    sage: EllipticCurve('389a1').period_lattice().sigma(CC(2,1))\nExpected:\n    2.609121635701083769 - 0.20086508082458695134*I\nGot:\n    2.609121635701083769 - 0.20086508082458695200*I\n```\n\nThe patch fixes this by replacin the last 3 digits above by \"...\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4093\n\n",
+    "closed_at": "2008-09-10T01:10:55Z",
     "created_at": "2008-09-09T19:28:19Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004093.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] fix numerical fuzz in period_lattice for 3.1.2",
+    "title": "[with patch, positive review] fix numerical fuzz in period_lattice for 3.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4093",
     "user": "https://github.com/JohnCremona"

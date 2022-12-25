@@ -1,16 +1,17 @@
-# Issue 3968: Magma interface sometimes fails on long inputs
+# Issue 3968: [with patch, positive review] Magma interface sometimes fails on long inputs
 
 archive/issues_003968.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis fails:\n\n```\n%magma\nQt<t> := RationalFunctionField(Rationals());\nR<w,x,y,z> := PolynomialRing(Qt, 4);\nP0 := w^3 + x^3 + y^3 + z^3;\nP := P0 + (w+x)*(w+2*y)*(w+3*z) + x*y*z;\nPt := P0 + t*P;\nPt_gradient := [Derivative(Pt, w), Derivative(Pt, x), Derivative(Pt, y), Derivative(Pt, z)];\nPt_jac := IdealWithFixedBasis(Pt_gradient);\nPt_gradient_long := Append(Pt_gradient, (1+t)*w*x*y*z);\nPt_jac_long := IdealWithFixedBasis(Pt_gradient_long);\nb := (1+t)*w*x*y*z;\ndiffbasis := [2*w*P, 2*x*P, 2*y*P, 2*z*P, 3*b*P];\ntemp := Coordinates(Pt_jac, diffbasis[5]);\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + \\\n    Derivative(temp[3],y) + Derivative(temp[4],z)) / (-3);\n```\nwith the error: \n\n```\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"Loading \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/22570//interface//tmp\"\"\"\")\n                                                                                             ^\nSyntaxError: EOL while scanning single-quoted string\n```\nbut if you replace the last two lines by\n\n```\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y))/(-3);\n```\nthen nothing breaks.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3968\n\n",
+    "closed_at": "2008-08-28T20:40:00Z",
     "created_at": "2008-08-27T17:27:14Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Magma interface sometimes fails on long inputs",
+    "title": "[with patch, positive review] Magma interface sometimes fails on long inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3968",
     "user": "https://github.com/kedlaya"

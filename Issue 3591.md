@@ -1,16 +1,17 @@
-# Issue 3591: notebook -- remove notebook.save()  from Logout
+# Issue 3591: [with patch, with positive review] notebook -- remove notebook.save()  from Logout
 
 archive/issues_003591.json:
 ```json
 {
     "body": "Assignee: TimothyClemans\n\nOn sagenb.org it takes several seconds to logout because in class Logout(resource.Resource) in twist.py notebook.save() is called. That is very bad.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3591\n\n",
+    "closed_at": "2008-08-11T02:40:15Z",
     "created_at": "2008-07-07T21:16:19Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "notebook -- remove notebook.save()  from Logout",
+    "title": "[with patch, with positive review] notebook -- remove notebook.save()  from Logout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3591",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

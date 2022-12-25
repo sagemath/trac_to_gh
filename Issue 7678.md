@@ -4,6 +4,7 @@ archive/issues_007678.json:
 ```json
 {
     "body": "Assignee: tbd\n\nOn sage.math, before the patch:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/arith.py\"         \n         [162.6 s]\n```\n\nAnd after the patch:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/arith.py\"         \n         [50.2 s]\n```\n\nI'm putting the milestone as 4.3 only because this is almost certainly not going to break anything whatsoever.  Please change it to 4.3.1 if you think that's more appropriate.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7678\n\n",
+    "closed_at": "2010-01-03T22:16:45Z",
     "created_at": "2009-12-13T22:32:51Z",
     "labels": [
         "component: doctest coverage",

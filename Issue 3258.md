@@ -4,6 +4,7 @@ archive/issues_003258.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCreate a portal for Notebook admins supporting the creation and banning of users. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3258\n\n",
+    "closed_at": "2010-01-19T02:58:48Z",
     "created_at": "2008-05-19T19:22:17Z",
     "labels": [
         "component: notebook"

@@ -1,9 +1,10 @@
-# Issue 1717: [with bundle] trivial fixes in the programming guide (mostly typos)
+# Issue 1717: [with patch, with positive review] trivial fixes in the programming guide (mostly typos)
 
 archive/issues_001717.json:
 ```json
 {
     "body": "Assignee: tba\n\nThe attached bundle fixes a bunch of typos in the programming guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1717\n\n",
+    "closed_at": "2008-01-09T14:59:49Z",
     "created_at": "2008-01-07T22:15:26Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001717.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with bundle] trivial fixes in the programming guide (mostly typos)",
+    "title": "[with patch, with positive review] trivial fixes in the programming guide (mostly typos)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1717",
     "user": "https://github.com/aghitza"

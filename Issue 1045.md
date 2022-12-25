@@ -1,15 +1,16 @@
-# Issue 1045: [with patch] graphs: add eulerian testing and circuit-finding
+# Issue 1045: [with patch] [tested] graphs: add eulerian testing and circuit-finding
 
 archive/issues_001045.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThis patch adds is_eulerian to graphs and digraphs and adds an eulerian_circuit function which uses Fleury's algorithm to find an eulerian circuit in a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1045\n\n",
+    "closed_at": "2007-11-01T09:59:02Z",
     "created_at": "2007-10-31T21:47:58Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
-    "title": "[with patch] graphs: add eulerian testing and circuit-finding",
+    "title": "[with patch] [tested] graphs: add eulerian testing and circuit-finding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1045",
     "user": "https://github.com/jasongrout"

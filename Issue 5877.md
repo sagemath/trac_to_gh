@@ -1,16 +1,17 @@
-# Issue 5877: calling a group character is broken
+# Issue 5877: [with patch; with positive review] calling a group character is broken
 
 archive/issues_005877.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  @wdjoyner\n\n```\nsage: G = SymmetricGroup(3)\nsage: h = G((2,3))\nsage: triv = G.trivial_character()\nsage: triv(h)\nTraceback ...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5877\n\n",
+    "closed_at": "2009-04-30T02:31:23Z",
     "created_at": "2009-04-23T16:38:58Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "calling a group character is broken",
+    "title": "[with patch; with positive review] calling a group character is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5877",
     "user": "https://github.com/saliola"

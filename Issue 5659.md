@@ -1,16 +1,17 @@
-# Issue 5659: [with patch, needs review] Use CRT to speed up solve_mod
+# Issue 5659: [with patch, positive review] Use CRT to speed up solve_mod
 
 archive/issues_005659.json:
 ```json
 {
     "body": "Assignee: whuss\n\nThe attached patch uses the Chinese Remainder Theorem to speed up \nsolve_mod if the modulus can be factorized into small numbers.\n\nIt also adds the option solution_dict for consistency with solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5659\n\n",
+    "closed_at": "2009-04-13T02:16:31Z",
     "created_at": "2009-04-01T15:41:31Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Use CRT to speed up solve_mod",
+    "title": "[with patch, positive review] Use CRT to speed up solve_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5659",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

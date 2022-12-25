@@ -1,16 +1,16 @@
-# Issue 9533: Update GSL to the latest upstream release
+# Issue 9533: Update GSL to the latest upstream release (1.14) & permit parallel building.
 
 archive/issues_009533.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777\n\nThe version of the [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) in Sage is 1.10, which is almost 3 years old. The latest, 1.14 was released about 4 months ago. \n\nThere is also a large number of bugs in the `spkg-check` and `spkg-install` files\n \n* `spkg-check` did not exit with a non-zero error code if the `make check` failed. It did however report the error, but it is highly likely to be missed in a large log file. This issue was reported at #9531, so that ticket can be closed when this one is closed. \n* `spkg-install` did not exit if `configure` failed to configure properly. Again the error was reported. \n* `spkg-install` did not exit if `make` failed to build GSL correctly. Again the error was reported. \n* `spkg-install` did not exit if `make install` failed to install GSL properly. Again the error was reported. \n* The self-tests were failing on some platforms, due to the fact `/bin/rm: cannot remove `libtoolT`. This was also true of the latest version, but exporting RM to \"rm -f\" solved that, as discussed at [solution for libtoolT error](http://toxpenguin.blogspot.com/2009/09/solution-for-libtoolt-error.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9533\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777\n\nThe version of the [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) in Sage is 1.10, which is almost 3 years old. The latest, 1.14 was released about 4 months ago. \n\nThere is also a large number of bugs in the `spkg-check` and `spkg-install` files\n \n* `spkg-check` did not exit with a non-zero error code if the `make check` failed. It did however report the error, but it is highly likely to be missed in a large log file. This issue was reported at #9531, so that ticket can be closed when this one is closed. \n* `spkg-install` did not exit if `configure` failed to configure properly. Again the error was reported. \n* `spkg-install` did not exit if `make` failed to build GSL correctly. Again the error was reported. \n* `spkg-install` did not exit if `make install` failed to install GSL properly. Again the error was reported. \n* The self-tests were failing on some platforms, due to the fact `/bin/rm: cannot remove `libtoolT`. This was also true of the latest version, but exporting RM to \"rm -f\" solved that, as suggested at http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=523750\n\n\n\n == Note to the release managers ==\n\nThe positively reviewed package can be found here.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/gsl-1.14.spkg\n\nAll patches are in the repository in the .spkg - nothing needs to be added to the Sage library. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9533\n\n",
+    "closed_at": "2010-08-09T09:38:45Z",
     "created_at": "2010-07-17T21:00:52Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Update GSL to the latest upstream release",
+    "title": "Update GSL to the latest upstream release (1.14) & permit parallel building.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9533",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -28,7 +28,19 @@ There is also a large number of bugs in the `spkg-check` and `spkg-install` file
 * `spkg-install` did not exit if `configure` failed to configure properly. Again the error was reported. 
 * `spkg-install` did not exit if `make` failed to build GSL correctly. Again the error was reported. 
 * `spkg-install` did not exit if `make install` failed to install GSL properly. Again the error was reported. 
-* The self-tests were failing on some platforms, due to the fact `/bin/rm: cannot remove `libtoolT`. This was also true of the latest version, but exporting RM to "rm -f" solved that, as discussed at [solution for libtoolT error](http://toxpenguin.blogspot.com/2009/09/solution-for-libtoolt-error.html)
+* The self-tests were failing on some platforms, due to the fact `/bin/rm: cannot remove `libtoolT`. This was also true of the latest version, but exporting RM to "rm -f" solved that, as suggested at http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=523750
+
+
+
+ == Note to the release managers ==
+
+The positively reviewed package can be found here.
+
+http://boxen.math.washington.edu/home/kirkby/patches/gsl-1.14.spkg
+
+All patches are in the repository in the .spkg - nothing needs to be added to the Sage library. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9533
 

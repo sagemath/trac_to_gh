@@ -3,7 +3,8 @@
 archive/issues_009245.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nHere is some initial shot at constructing toric varieties \"by name\". It might be useful to write doctests for the toric varieties. Once the dust has settled we might want to load pickled objects, but for now we construct the fans from generating cones.\n\nObviously this relies on #8988, which isn't finished yet. Also, I haven't added the import to `all.py` to avoid patch rejects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9245\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nHere is some initial shot at constructing toric varieties \"by name\". It might be useful to write doctests for the toric varieties. We construct the fans from generating cones and store them in a dictionary to expedite repeated requests.\n\nThis patch relies on \n* #8988 (toric varieties) \n* #8989 (CPR-Fano toric varieties)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9245\n\n",
+    "closed_at": "2010-07-20T10:03:18Z",
     "created_at": "2010-06-15T15:22:17Z",
     "labels": [
         "component: algebraic geometry"
@@ -19,9 +20,13 @@ Assignee: @aghitza
 
 CC:  @novoselt
 
-Here is some initial shot at constructing toric varieties "by name". It might be useful to write doctests for the toric varieties. Once the dust has settled we might want to load pickled objects, but for now we construct the fans from generating cones.
+Here is some initial shot at constructing toric varieties "by name". It might be useful to write doctests for the toric varieties. We construct the fans from generating cones and store them in a dictionary to expedite repeated requests.
 
-Obviously this relies on #8988, which isn't finished yet. Also, I haven't added the import to `all.py` to avoid patch rejects.
+This patch relies on 
+* #8988 (toric varieties) 
+* #8989 (CPR-Fano toric varieties)
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9245
 

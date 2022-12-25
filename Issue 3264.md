@@ -1,16 +1,17 @@
-# Issue 3264: Upgrade PolyBoRi to 0.4 release
+# Issue 3264: [with patch+spkg, positive review] Upgrade PolyBoRi to 0.5rc
 
 archive/issues_003264.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  polybori @malb\n\nMake sure to revert #3104 in case we do end up using less memory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3264\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori @malb\n\nKeywords: editor_mabshoff\n\nMake sure to revert #3104 in case we do end up using less memory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3264\n\n",
+    "closed_at": "2008-09-07T00:46:59Z",
     "created_at": "2008-05-21T13:19:54Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Upgrade PolyBoRi to 0.4 release",
+    "title": "[with patch+spkg, positive review] Upgrade PolyBoRi to 0.5rc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3264",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,6 +20,8 @@ archive/issues_003264.json:
 Assignee: mabshoff
 
 CC:  polybori @malb
+
+Keywords: editor_mabshoff
 
 Make sure to revert #3104 in case we do end up using less memory.
 

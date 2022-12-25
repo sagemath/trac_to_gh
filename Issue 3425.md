@@ -1,15 +1,16 @@
-# Issue 3425: [with patch; needs review] setup.py -- change the description, author, author_email.
+# Issue 3425: [with patch; positive review] setup.py -- change the description, author, author_email.
 
 archive/issues_003425.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3425\n\n",
+    "closed_at": "2008-06-15T17:08:11Z",
     "created_at": "2008-06-14T20:32:40Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; needs review] setup.py -- change the description, author, author_email.",
+    "title": "[with patch; positive review] setup.py -- change the description, author, author_email.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3425",
     "user": "https://github.com/williamstein"

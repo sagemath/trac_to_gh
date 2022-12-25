@@ -1,9 +1,10 @@
-# Issue 2953: gcc 4.3/Itanium: fix givaro 3.2.10.rc3 build
+# Issue 2953: [with spkg, positive review] gcc 4.3/Itanium: fix givaro 3.2.10.rc3 build
 
 archive/issues_002953.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn Itanium with gcc 4.3 we need to add climits to gmp++.h. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha6/givaro-3.2.10.rc3.p1.spkg\n\nfixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2953\n\n",
+    "closed_at": "2008-04-19T05:06:36Z",
     "created_at": "2008-04-19T02:20:34Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_002953.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "gcc 4.3/Itanium: fix givaro 3.2.10.rc3 build",
+    "title": "[with spkg, positive review] gcc 4.3/Itanium: fix givaro 3.2.10.rc3 build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2953",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

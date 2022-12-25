@@ -1,9 +1,10 @@
-# Issue 3088: [with patch; needs review] Fixes for Debian gfan build
+# Issue 3088: [with patch; positive review] Fixes for Debian gfan build
 
 archive/issues_003088.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nAttached is a patch that makes gfan build correctly for the Debian package.  I'm not sure why it stopped working in the first place, but this version is more Debian policy compliant than the old one anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3088\n\n",
+    "closed_at": "2008-05-03T14:16:37Z",
     "created_at": "2008-05-03T05:02:38Z",
     "labels": [
         "component: debian-package",
@@ -11,7 +12,7 @@ archive/issues_003088.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with patch; needs review] Fixes for Debian gfan build",
+    "title": "[with patch; positive review] Fixes for Debian gfan build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3088",
     "user": "https://github.com/timabbott"

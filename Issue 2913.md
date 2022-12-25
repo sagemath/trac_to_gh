@@ -1,16 +1,17 @@
-# Issue 2913: [with patch; needs review] notebook -- deleting a running cell results in a bug
+# Issue 2913: [with patch; positive review] notebook -- deleting a running cell results in a bug
 
 archive/issues_002913.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nToday when I was using the notebook I got this:\n\nhttp://skitch.com/yqiang/jqwb/notebook-bug\n\nIs this a known bug? It happened when I deleted a cell while it was\nstill running and trying to produce output.\n\nCheers,\nYi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2913\n\n",
+    "closed_at": "2008-04-14T04:58:26Z",
     "created_at": "2008-04-14T03:27:27Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] notebook -- deleting a running cell results in a bug",
+    "title": "[with patch; positive review] notebook -- deleting a running cell results in a bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2913",
     "user": "https://github.com/williamstein"

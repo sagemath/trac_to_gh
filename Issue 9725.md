@@ -3,7 +3,8 @@
 archive/issues_009725.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @haraldschilly\n\nKeywords: Documentation Tutorial German\n\nCreate a German translation of the Sage Tutorial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9725\n\n",
+    "body": "Assignee: phil\n\nCC:  @haraldschilly\n\nKeywords: Documentation Tutorial German\n\nCreate a German translation of the Sage Tutorial.\n\n**Apply:**\n1. [attachment:trac_9725.patch]\n2. [attachment:trac_9725B.patch]\n3. [attachment:trac_9725C.patch]\n4. [attachment:9725_TESTDIRS.patch] to the SAGE_ROOT repository\n\nIssue created by migration from https://trac.sagemath.org/ticket/9725\n\n",
+    "closed_at": "2011-06-01T07:10:43Z",
     "created_at": "2010-08-11T16:45:47Z",
     "labels": [
         "component: documentation",
@@ -16,13 +17,19 @@ archive/issues_009725.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/phil"
 }
 ```
-Assignee: mvngu
+Assignee: phil
 
 CC:  @haraldschilly
 
 Keywords: Documentation Tutorial German
 
 Create a German translation of the Sage Tutorial.
+
+**Apply:**
+1. [attachment:trac_9725.patch]
+2. [attachment:trac_9725B.patch]
+3. [attachment:trac_9725C.patch]
+4. [attachment:9725_TESTDIRS.patch] to the SAGE_ROOT repository
 
 Issue created by migration from https://trac.sagemath.org/ticket/9725
 

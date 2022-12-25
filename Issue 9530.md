@@ -1,16 +1,18 @@
-# Issue 9530: Improve/fix readline workarounds for Arch Linux and openSuSE
+# Issue 9530: Improve/fix readline workarounds for Arch Linux and openSUSE, again broken on OpenSUSE 11.2 and 11.3
 
 archive/issues_009530.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime drkirkby @qed777 @hivert\n\nKeywords: Arch Linux SuSE readline\n\nSage currently has workarounds against building an incompatible libreadline on openSuSE 11.1 and Arch Linux - instead of building it, the system version is copied.\n\nThe SuSE workaround should be applied to openSuSE 11.2 and 11.3, too. Furthermore, SuSE offers libreadline.so.5 in addition to .so.6, so we only copy .6.\n\nThe workaround on Arch Linux is unreliable, as it detects Arch Linux by \"-ARCH\" in the kernel version (which is the default, but might be different). Instead, the presence of /etc/arch-release should be used to determine that.\n\nI am attaching a patch that fixes those problems and changes 'cp' to 'cp -a' to not turn a symlink into a file. Without this patch, sage fails to build on my SuSE or Arch systems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9530\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime drkirkby @qed777 @hivert\n\nKeywords: Arch Linux SuSE readline\n\nSage currently has workarounds against building an incompatible libreadline on openSuSE 11.1 and Arch Linux - instead of building it, the system version is copied.\n\nThe SuSE workaround should be applied to openSuSE 11.2 and 11.3, too. Furthermore, SuSE offers libreadline.so.5 in addition to .so.6, so we only copy .6.\n\nThe workaround on Arch Linux is unreliable, as it detects Arch Linux by \"-ARCH\" in the kernel version (which is the default, but might be different). Instead, the presence of /etc/arch-release should be used to determine that.\n\nI am attaching a patch that fixes those problems and changes 'cp' to 'cp -a' to not turn a symlink into a file. Without this patch, sage fails to build on my SuSE or Arch systems.\n\nNew spkg:\n\n http://spkg-upload.googlecode.com/files/readline-6.0.p4.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9530\n\n",
+    "closed_at": "2010-10-30T10:38:40Z",
     "created_at": "2010-07-17T14:31:52Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Improve/fix readline workarounds for Arch Linux and openSuSE",
+    "title": "Improve/fix readline workarounds for Arch Linux and openSUSE, again broken on OpenSUSE 11.2 and 11.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9530",
     "user": "https://trac.sagemath.org/admin/accounts/users/baechler"
@@ -29,6 +31,10 @@ The SuSE workaround should be applied to openSuSE 11.2 and 11.3, too. Furthermor
 The workaround on Arch Linux is unreliable, as it detects Arch Linux by "-ARCH" in the kernel version (which is the default, but might be different). Instead, the presence of /etc/arch-release should be used to determine that.
 
 I am attaching a patch that fixes those problems and changes 'cp' to 'cp -a' to not turn a symlink into a file. Without this patch, sage fails to build on my SuSE or Arch systems.
+
+New spkg:
+
+ http://spkg-upload.googlecode.com/files/readline-6.0.p4.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/9530
 

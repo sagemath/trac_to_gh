@@ -1,22 +1,22 @@
-# Issue 4744: [with patch, needs review] congruence number for elliptic curves
+# Issue 4744: [with patch, positive review] congruence number for elliptic curves
 
 archive/issues_004744.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n```\n            sage: E = EllipticCurve('37a')\n            sage: E.congruence_number()\n            2\n            sage: E = EllipticCurve('54b')\n            sage: E.congruence_number()\n            6\n            sage: E.modular_degree()\n            2\n            sage: E = EllipticCurve('242a1')\n            sage: E.modular_degree()\n            16\n            sage: E.congruence_number()  # long time\n            176\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4744\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\n```\n            sage: E = EllipticCurve('37a')\n            sage: E.congruence_number()\n            2\n            sage: E = EllipticCurve('54b')\n            sage: E.congruence_number()\n            6\n            sage: E.modular_degree()\n            2\n            sage: E = EllipticCurve('242a1')\n            sage: E.modular_degree()\n            16\n            sage: E.congruence_number()  # long time\n            176\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4744\n\n",
+    "closed_at": "2008-12-12T17:49:45Z",
     "created_at": "2008-12-08T22:44:35Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] congruence number for elliptic curves",
+    "title": "[with patch, positive review] congruence number for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4744",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @williamstein
 

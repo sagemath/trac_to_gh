@@ -1,9 +1,10 @@
-# Issue 3874: Moebius plot bug
+# Issue 3874: [with patch, positive review] Moebius plot bug
 
 archive/issues_003874.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nplot(moebius) plots the Moebius function nicely from 0 to 50.\nplot(moebius,50,100) plots the y-values of the Moebius function nicely from 50 to 100. Unfortunately, the x-values are still from 0 to 50!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3874\n\n",
+    "body": "Assignee: @kcrisman\n\nplot(moebius) plots the Moebius function nicely from 0 to 50.\nplot(moebius,50,100) plots the y-values of the Moebius function nicely from 50 to 100. Unfortunately, the x-values are still from 0 to 50!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3874\n\n",
+    "closed_at": "2008-08-18T23:15:42Z",
     "created_at": "2008-08-15T13:20:01Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_003874.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Moebius plot bug",
+    "title": "[with patch, positive review] Moebius plot bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3874",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
 plot(moebius) plots the Moebius function nicely from 0 to 50.
 plot(moebius,50,100) plots the y-values of the Moebius function nicely from 50 to 100. Unfortunately, the x-values are still from 0 to 50!

@@ -3,7 +3,8 @@
 archive/issues_009355.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9355\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: quadratic forms\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9355\n\n",
+    "closed_at": "2010-07-21T10:07:30Z",
     "created_at": "2010-06-27T21:48:38Z",
     "labels": [
         "component: documentation",
@@ -17,6 +18,8 @@ archive/issues_009355.json:
 }
 ```
 Assignee: mvngu
+
+Keywords: quadratic forms
 
 
 

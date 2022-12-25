@@ -1,16 +1,17 @@
-# Issue 4485: notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)
+# Issue 4485: [with patch; positive review] notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)
 
 archive/issues_004485.json:
 ```json
 {
     "body": "Assignee: boothby\n\nOn the command line in sage-3.1.4:\n\n```\nsage: implicit_multiplication(True)\nsage: 3x\n3*x\n```\n\nIn the Sage notebook using exactly the same version of Sage (in fact, on sagenb.org):\n\n```\nsage: implicit_multiplication(True)\nsage: 3 x\n line 4\n    _sage_const_3  x\n                   ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4485\n\n",
+    "closed_at": "2008-11-14T03:31:05Z",
     "created_at": "2008-11-09T23:06:57Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)",
+    "title": "[with patch; positive review] notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4485",
     "user": "https://github.com/williamstein"

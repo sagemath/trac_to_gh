@@ -3,7 +3,8 @@
 archive/issues_008524.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: DisjointUnionEnumeratedSets, inheritance\n\nIn order to be easily inherited from, `DisjointUnionEnumeratedSets` should have a private `__classcall__` method. Indeed most of the time, when inheriting from it, the family used in the union will be constructed in the `__init__` method of the subclass. Having `__classcall__` inherited force the user to have its own `__classcall__`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8524\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: DisjointUnionEnumeratedSets, inheritance\n\nIn order to be easily inherited from, `DisjointUnionEnumeratedSets` should have a private `__classcall__` method. Indeed most of the time, when inheriting from it, the family used in the union will be constructed in the `__init__` method of the subclass. Having `__classcall__` inherited force the user to have its own `__classcall__`. \n\nThere isn't yet any example of that in Sage but there are at least three of them comming in sage-combinat (trees, parking functions, Transitive groups). Dozens of them will follow along the cleanup of combinat. \n\nHowever, as expected :-), there is already a counterexample (crystal). I took care of it. Due to the need of both behavior, I've written two small demo examples of this two use cases.\n\nI also took the chance to fixe some typos in the doc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8524\n\n",
+    "closed_at": "2010-04-19T05:14:12Z",
     "created_at": "2010-03-13T14:53:53Z",
     "labels": [
         "component: combinatorics",
@@ -16,13 +17,19 @@ archive/issues_008524.json:
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: sage-combinat
+Assignee: @hivert
 
 CC:  sage-combinat
 
 Keywords: DisjointUnionEnumeratedSets, inheritance
 
-In order to be easily inherited from, `DisjointUnionEnumeratedSets` should have a private `__classcall__` method. Indeed most of the time, when inheriting from it, the family used in the union will be constructed in the `__init__` method of the subclass. Having `__classcall__` inherited force the user to have its own `__classcall__`.
+In order to be easily inherited from, `DisjointUnionEnumeratedSets` should have a private `__classcall__` method. Indeed most of the time, when inheriting from it, the family used in the union will be constructed in the `__init__` method of the subclass. Having `__classcall__` inherited force the user to have its own `__classcall__`. 
+
+There isn't yet any example of that in Sage but there are at least three of them comming in sage-combinat (trees, parking functions, Transitive groups). Dozens of them will follow along the cleanup of combinat. 
+
+However, as expected :-), there is already a counterexample (crystal). I took care of it. Due to the need of both behavior, I've written two small demo examples of this two use cases.
+
+I also took the chance to fixe some typos in the doc.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8524
 

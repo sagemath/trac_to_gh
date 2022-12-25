@@ -3,7 +3,8 @@
 archive/issues_007615.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nFrom [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/9fba0850f4211fd9):\n\n```\nAs you mentioned, the documentation instructed \nme that arctan2(y,x)=arctan(y/x) and so I thought that arctan2(0,x) \nwould always equal 0. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7615\n\n",
+    "body": "Assignee: mvngu\n\nFrom [this thread](http://groups.google.com/group/sage-support/browse_thread/thread/9fba0850f4211fd9):\n\n```\nAs you mentioned, the documentation instructed \nme that arctan2(y,x)=arctan(y/x) and so I thought that arctan2(0,x) \nwould always equal 0. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7615\n\n",
+    "closed_at": "2009-12-09T02:47:40Z",
     "created_at": "2009-12-07T12:07:00Z",
     "labels": [
         "component: documentation",
@@ -26,6 +27,7 @@ As you mentioned, the documentation instructed
 me that arctan2(y,x)=arctan(y/x) and so I thought that arctan2(0,x) 
 would always equal 0. 
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7615
 

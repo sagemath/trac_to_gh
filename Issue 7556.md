@@ -1,15 +1,16 @@
-# Issue 7556: change default rounding behavior for QQ to
+# Issue 7556: change default rounding behavior for QQ to 'away'
 
 archive/issues_007556.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThis is inconsistent:\n\n```\nsage: (9/2).round()\n4\nsage: RDF('4.5').round()\n5\nsage: import __builtin__\nsage: __builtin__.round(float('4.5'))\n5.0\nsage: RR('4.5').round()\n5\n```\n\nIt's also inconsistent for negatives.  The simple fix is to make the default rounding direction 'away' in rational.pyx. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7556\n\n",
+    "closed_at": "2009-12-01T05:09:52Z",
     "created_at": "2009-11-29T23:34:16Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "change default rounding behavior for QQ to",
+    "title": "change default rounding behavior for QQ to 'away'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7556",
     "user": "https://github.com/williamstein"

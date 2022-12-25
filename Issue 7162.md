@@ -4,6 +4,7 @@ archive/issues_007162.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @williamstein drkirkby @jaapspies\n\nI'm trying to build sage-4.1.2 on disk.math.washington.edu (opensolaris x86) and had to change the spkg-install of gd-2.0.35.p2:\n\n```\n# We explicitly disable X support, since (1) X is not a SAGE dependency,\n# and (2) the gd build fails on a lot of OS X PPC machines when X is enabled.\n./configure --prefix=\"$SAGE_LOCAL\" --without-jpeg --without-x --without-xpm --with-zlib=\"$SAGE_LOCAL\" --with-freetype=\"$SAGE_LOCAL\"\n```\n\nI added `--without-xpm`.\n\nMaybe we should make this standard?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7162\n\n",
+    "closed_at": "2010-01-03T22:07:43Z",
     "created_at": "2009-10-08T20:07:15Z",
     "labels": [
         "component: porting: solaris",

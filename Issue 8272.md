@@ -4,6 +4,7 @@ archive/issues_008272.json:
 ```json
 {
     "body": "Assignee: amhou\n\nR has long since wanted iconv support, although there was an option to disable it. That option has now been removed, and R **must** have iconv. However, there is junk left over in R's spkg-install which tries to disable iconv, and reports it is doing so. \n\n```\nDisabling libiconv support on Solaris\n```\n\nIt likewise tries to do that same on OS X. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8272\n\n",
+    "closed_at": "2010-07-19T07:39:59Z",
     "created_at": "2010-02-15T11:17:11Z",
     "labels": [
         "component: statistics",

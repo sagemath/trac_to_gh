@@ -1,16 +1,17 @@
-# Issue 3829: wester.py disagrees with Wester!!!
+# Issue 3829: [with patch, positive review] wester.py disagrees with Wester!!!
 
 archive/issues_003829.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n```\nsage: f = log(tan(x/2 + pi/4)) - arcsin(tan(x))\nsage: bool(f == 0)\nFalse\n```\n\nThis just plain disagrees with Wester's benchmarks. The function is identically zero. I'm going to go through `wester.py` and check to see if there are any more...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3829\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\nsage: # (YES) Ln(Tan(x/2+Pi/4))-ArcSinh(Tan(x))=0\nsage: # Yes, in that the thing is clearly not equal to 0!\nsage: f = log(tan(x/2 + pi/4)) - arcsin(tan(x))\nsage: bool(f == 0)\nFalse\n```\n\nThe problem with this doctest is actually quite simple:\n\n```\nArcSinh != arcsin\n```\n\nAAARRRRGGGHGHHHHH!!!!!!\n\nBut the proof was fun...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3829\n\n",
+    "closed_at": "2009-06-13T20:33:12Z",
     "created_at": "2008-08-13T00:51:01Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "wester.py disagrees with Wester!!!",
+    "title": "[with patch, positive review] wester.py disagrees with Wester!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3829",
     "user": "https://github.com/rlmill"
@@ -19,12 +20,22 @@ archive/issues_003829.json:
 Assignee: @garyfurnish
 
 ```
+sage: # (YES) Ln(Tan(x/2+Pi/4))-ArcSinh(Tan(x))=0
+sage: # Yes, in that the thing is clearly not equal to 0!
 sage: f = log(tan(x/2 + pi/4)) - arcsin(tan(x))
 sage: bool(f == 0)
 False
 ```
 
-This just plain disagrees with Wester's benchmarks. The function is identically zero. I'm going to go through `wester.py` and check to see if there are any more...
+The problem with this doctest is actually quite simple:
+
+```
+ArcSinh != arcsin
+```
+
+AAARRRRGGGHGHHHHH!!!!!!
+
+But the proof was fun...
 
 Issue created by migration from https://trac.sagemath.org/ticket/3829
 

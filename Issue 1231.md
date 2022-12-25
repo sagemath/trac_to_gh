@@ -1,22 +1,23 @@
-# Issue 1231: seg fault when computing with modular symbols over a finite field
+# Issue 1231: [with patch, with positive review] seg fault when computing with modular symbols over a finite field
 
 archive/issues_001231.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere is the troublesome code:\n\n```\nModularSymbols(1,8,0,GF(3)).simple_factors()\n```\n\nwhich results in\n\n```\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n8 is the smallest weight for which this happens over GF(3).  The same issue occurs with all of the following (again, smallest weight):\n\n```\nModularSymbols(1,12,0,GF(5)).simple_factors()\nModularSymbols(1,12,0,GF(7)).simple_factors()\nModularSymbols(1,12,0,GF(11)).simple_factors()\nModularSymbols(1,12,0,GF(13)).simple_factors()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1231\n\n",
+    "body": "Assignee: @craigcitro\n\nHere is the troublesome code:\n\n```\nModularSymbols(1,8,0,GF(3)).simple_factors()\n```\n\nwhich results in\n\n```\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n8 is the smallest weight for which this happens over GF(3).  The same issue occurs with all of the following (again, smallest weight):\n\n```\nModularSymbols(1,12,0,GF(5)).simple_factors()\nModularSymbols(1,12,0,GF(7)).simple_factors()\nModularSymbols(1,12,0,GF(11)).simple_factors()\nModularSymbols(1,12,0,GF(13)).simple_factors()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1231\n\n",
+    "closed_at": "2007-12-02T20:14:32Z",
     "created_at": "2007-11-21T03:45:15Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "seg fault when computing with modular symbols over a finite field",
+    "title": "[with patch, with positive review] seg fault when computing with modular symbols over a finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1231",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 Here is the troublesome code:
 

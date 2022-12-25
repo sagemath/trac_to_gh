@@ -4,6 +4,7 @@ archive/issues_008323.json:
 ```json
 {
     "body": "Assignee: tbd\n\nTry the following:\n\n```\nsage: name\n'KodairaSymbol'\nsage: type(name)\n<type 'str'>\n```\n\nI'm not sure where this gets imported, but it seems wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8323\n\n",
+    "closed_at": "2010-03-02T21:02:08Z",
     "created_at": "2010-02-22T02:33:45Z",
     "labels": [
         "component: misc",

@@ -1,22 +1,23 @@
-# Issue 4963: Make a screen-full of whitespace at the bottom of the notebook cells
+# Issue 4963: [with patch, positive review] Make a screen-full of whitespace at the bottom of the notebook cells
 
 archive/issues_004963.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen tclemans\n\nNot having this causes interacts to jump off the page when updating, for example.  See http://groups.google.com/group/sage-devel/browse_thread/thread/51b538c8212fa2a/b61655921eb0ebab\n\nIssue created by migration from https://trac.sagemath.org/ticket/4963\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @mwhansen tclemans\n\nNot having this causes interacts to jump off the page when updating, for example.  See http://groups.google.com/group/sage-devel/browse_thread/thread/51b538c8212fa2a/b61655921eb0ebab\n\nIssue created by migration from https://trac.sagemath.org/ticket/4963\n\n",
+    "closed_at": "2009-01-23T09:40:00Z",
     "created_at": "2009-01-11T00:55:31Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Make a screen-full of whitespace at the bottom of the notebook cells",
+    "title": "[with patch, positive review] Make a screen-full of whitespace at the bottom of the notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4963",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: boothby
+Assignee: @jasongrout
 
 CC:  @mwhansen tclemans
 

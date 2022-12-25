@@ -3,7 +3,8 @@
 archive/issues_005864.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nChange 'make' to ${MAKE} - is the recommended way to recursively invoke make to ensure that the subordinate make is the same as the parent make (and also ensures that the two make instances will communicate on things like '-jX').\n\nExplicitly use gmake instead of make on FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5864\n\n",
+    "body": "Assignee: @mwhansen\n\nChange 'make' to ${MAKE} - is the recommended way to recursively invoke make to ensure that the subordinate make is the same as the parent make (and also ensures that the two make instances will communicate on things like '-jX').\n\nExplicitly use gmake instead of make on FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5864\n\n",
+    "closed_at": "2010-07-13T20:05:51Z",
     "created_at": "2009-04-23T06:35:45Z",
     "labels": [
         "component: porting: bsd",
@@ -16,7 +17,7 @@ archive/issues_005864.json:
     "user": "https://github.com/peterjeremy"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Change 'make' to ${MAKE} - is the recommended way to recursively invoke make to ensure that the subordinate make is the same as the parent make (and also ensures that the two make instances will communicate on things like '-jX').
 

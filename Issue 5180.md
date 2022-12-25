@@ -1,21 +1,22 @@
-# Issue 5180: [with patch, needs review] Improvements to congruence subgroups
+# Issue 5180: [with new patch, positive review] Improvements to congruence subgroups
 
 archive/issues_005180.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro georgsweber\n\nKeywords: congruence subgroups\n\nThe attached patch splits up the code for congruence subgroups into several files in a directory sage/modular/congroups. The old file sage/modular/congroup.py still exists, so pickles created with previous versions should unpickle safely under the new one.\n\nI've added a little functionality in the process: congruence subgroups can now calculate the width and regularity of their cusps, and their number of elliptic points.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5180\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @craigcitro georgsweber\n\nKeywords: congruence subgroups\n\nThe attached patch splits up the code for congruence subgroups into several files in a directory sage/modular/congroups. The old file sage/modular/congroup.py still exists, so pickles created with previous versions should unpickle safely under the new one.\n\nI've added a little functionality in the process: congruence subgroups can now calculate the width and regularity of their cusps, and their number of elliptic points.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5180\n\n",
+    "closed_at": "2009-04-05T01:08:37Z",
     "created_at": "2009-02-04T18:35:29Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Improvements to congruence subgroups",
+    "title": "[with new patch, positive review] Improvements to congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5180",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: @craigcitro
+Assignee: @loefflerd
 
 CC:  @craigcitro georgsweber
 

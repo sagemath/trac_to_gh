@@ -1,16 +1,17 @@
-# Issue 6077: simplicial complex method for polytopes
+# Issue 6077: [with patch, positive review] simplicial complex method for polytopes
 
 archive/issues_006077.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nCC:  @jhpalmieri\n\nKeywords: polytopes, simplicial\n\nThis just adds a simplicial complex method for the polytope class, which requires lrs to compute a triangulation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6077\n\n",
+    "closed_at": "2009-05-21T01:41:00Z",
     "created_at": "2009-05-18T22:06:08Z",
     "labels": [
         "component: geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "simplicial complex method for polytopes",
+    "title": "[with patch, positive review] simplicial complex method for polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6077",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

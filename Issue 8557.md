@@ -4,6 +4,7 @@ archive/issues_008557.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nIt would be useful to have a way of checking whether a projective curve has any singular points. \nA patch to do this is on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8557\n\n",
+    "closed_at": "2010-04-19T05:19:29Z",
     "created_at": "2010-03-18T15:09:13Z",
     "labels": [
         "component: algebraic geometry",

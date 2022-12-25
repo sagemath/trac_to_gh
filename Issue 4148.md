@@ -1,16 +1,17 @@
-# Issue 4148: Upgrade to givaro-3.2.13rc1
+# Issue 4148: [with spkg, positive review] Upgrade to givaro-3.2.13rc2
 
 archive/issues_004148.json:
 ```json
 {
     "body": "Assignee: @ClementPernet\n\nUpgrade the givaro spkg to upstream version 3.2.13rc1.\nThis is required for the resolution of ticket #4147 and is therefore a defect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4148\n\n",
+    "closed_at": "2008-09-20T02:46:16Z",
     "created_at": "2008-09-19T00:39:53Z",
     "labels": [
         "component: finite rings",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Upgrade to givaro-3.2.13rc1",
+    "title": "[with spkg, positive review] Upgrade to givaro-3.2.13rc2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4148",
     "user": "https://github.com/ClementPernet"

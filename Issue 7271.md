@@ -3,7 +3,8 @@
 archive/issues_007271.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin polybori drkirkby\n\nKeywords: polybori, crypto\n\n* implement var()\n  * variables() is an iterator\n\nIssue created by migration from https://trac.sagemath.org/ticket/7271\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin polybori drkirkby\n\nKeywords: polybori, crypto\n\n* implement var()\n* implemented new functions required by PolyBoRi\n* fixed a few things in MPolynomialSystem\n\nIssue created by migration from https://trac.sagemath.org/ticket/7271\n\n",
+    "closed_at": "2010-01-04T03:24:03Z",
     "created_at": "2009-10-23T16:41:21Z",
     "labels": [
         "component: commutative algebra",
@@ -24,7 +25,8 @@ CC:  @burcin polybori drkirkby
 Keywords: polybori, crypto
 
 * implement var()
-  * variables() is an iterator
+* implemented new functions required by PolyBoRi
+* fixed a few things in MPolynomialSystem
 
 Issue created by migration from https://trac.sagemath.org/ticket/7271
 

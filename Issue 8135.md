@@ -3,7 +3,7 @@
 archive/issues_008135.json:
 ```json
 {
-    "body": "Assignee: Kevin Stueve\n\nCC:  @nexttime\n\nKeywords: prime counting function Riemann zeta zeros\n\nGet an analytic approximation to prime_pi, the prime counting function that uses the nontrivial zeros of the Riemann zeta function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8135\n\n",
+    "body": "Assignee: Kevin Stueve\n\nCC:  @nexttime\n\nKeywords: prime counting function Riemann zeta zeros\n\nGet into Sage an analytic approximation to prime_pi, the prime counting function, that uses the nontrivial zeros of the Riemann zeta function.\n\nSincere apologies for misspelling Tom\u00e1s Oliveira e Silva's name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8135\n\n",
     "created_at": "2010-01-31T06:20:29Z",
     "labels": [
         "component: number theory"
@@ -20,7 +20,9 @@ CC:  @nexttime
 
 Keywords: prime counting function Riemann zeta zeros
 
-Get an analytic approximation to prime_pi, the prime counting function that uses the nontrivial zeros of the Riemann zeta function.
+Get into Sage an analytic approximation to prime_pi, the prime counting function, that uses the nontrivial zeros of the Riemann zeta function.
+
+Sincere apologies for misspelling Tomás Oliveira e Silva's name.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8135
 

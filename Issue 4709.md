@@ -1,15 +1,16 @@
-# Issue 4709: [with patch; needs review] sage/magma hyperelliptic curve conversion
+# Issue 4709: [with patch, with positive review] sage/magma hyperelliptic curve conversion
 
 archive/issues_004709.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch depends on #4702.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4709\n\n",
+    "closed_at": "2008-12-07T09:06:21Z",
     "created_at": "2008-12-05T05:41:53Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch; needs review] sage/magma hyperelliptic curve conversion",
+    "title": "[with patch, with positive review] sage/magma hyperelliptic curve conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4709",
     "user": "https://github.com/williamstein"

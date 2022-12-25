@@ -3,7 +3,7 @@
 archive/issues_009391.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nKeywords: kolyvagin classes\n\nIf P is a 'kolyvagin_point' created from an elliptic curve, the doc string says\n\n```\nDefinition:\tP.kolyvagin_cohomology_class(self, n=None)\nDocstring:\n       INPUT:\n    \n          * n -- positive integer that divides the gcd of a_p and p+1 for\n            all p dividing the conductor.  If n is None, choose the\n            largest valid n.\n```\nIn fact, if \"n\" is None, a ValueError is thrown.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9391\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: kolyvagin classes\n\nIf P is a 'kolyvagin_point' created from an elliptic curve, the doc string says\n\n```\nDefinition: P.kolyvagin_cohomology_class(self, n=None)\nDocstring:\n       INPUT:\n    \n          * n -- positive integer that divides the gcd of a_p and p+1 for\n            all p dividing the conductor.  If n is None, choose the\n            largest valid n.\n```\nIn fact, if \"n\" is None, a ValueError is thrown.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9391\n\n",
     "created_at": "2010-06-30T05:27:57Z",
     "labels": [
         "component: elliptic curves",
@@ -22,7 +22,7 @@ Keywords: kolyvagin classes
 If P is a 'kolyvagin_point' created from an elliptic curve, the doc string says
 
 ```
-Definition:	P.kolyvagin_cohomology_class(self, n=None)
+Definition: P.kolyvagin_cohomology_class(self, n=None)
 Docstring:
        INPUT:
     
@@ -31,6 +31,7 @@ Docstring:
             largest valid n.
 ```
 In fact, if "n" is None, a ValueError is thrown.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9391
 

@@ -4,6 +4,7 @@ archive/issues_005410.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @mwhansen\n\nWhen building Sage we should install the ReST documentation into $SAGE_LOCAL somewhere, i.e. $SAGE_LOCAL/documentation/sage.\n\nThere is also no documentation in \"sage -advanced\" on how to build the documentation and that ought to be fixed before 3.4 gets out :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5410\n\n",
+    "closed_at": "2009-03-09T19:42:19Z",
     "created_at": "2009-03-01T07:12:19Z",
     "labels": [
         "component: documentation",

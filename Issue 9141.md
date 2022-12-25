@@ -4,6 +4,7 @@ archive/issues_009141.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill\n\nThis patch adds a function to the graphs object that finds cospectral graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9141\n\n",
+    "closed_at": "2010-07-22T01:02:13Z",
     "created_at": "2010-06-04T20:29:27Z",
     "labels": [
         "component: graph theory",

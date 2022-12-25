@@ -3,7 +3,8 @@
 archive/issues_008870.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\n* Requires #8364\n\nIssue created by migration from https://trac.sagemath.org/ticket/8870\n\n",
+    "body": "Assignee: @nathanncohen\n\nMultiflow in Sage :-)\n\nhttp://en.wikipedia.org/wiki/Multi-commodity_flow_problem\n\n* Requires #9269\n* requires #8781\n* requires #9230\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8870\n\n",
+    "closed_at": "2010-06-29T16:46:07Z",
     "created_at": "2010-05-04T17:27:20Z",
     "labels": [
         "component: graph theory",
@@ -16,9 +17,17 @@ archive/issues_008870.json:
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: jason, ncohen, rlm
+Assignee: @nathanncohen
 
-* Requires #8364
+Multiflow in Sage :-)
+
+http://en.wikipedia.org/wiki/Multi-commodity_flow_problem
+
+* Requires #9269
+* requires #8781
+* requires #9230
+
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/8870
 

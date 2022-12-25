@@ -1,16 +1,17 @@
-# Issue 4004: [with patch, needs review] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py
+# Issue 4004: [with patch, needs work] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py
 
 archive/issues_004004.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4004\n\n",
+    "closed_at": "2008-08-31T06:02:34Z",
     "created_at": "2008-08-30T18:00:40Z",
     "labels": [
         "component: interfaces",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py",
+    "title": "[with patch, needs work] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4004",
     "user": "https://github.com/mwhansen"

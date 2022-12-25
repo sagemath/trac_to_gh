@@ -1,16 +1,17 @@
-# Issue 2135: [with patch, needs easy review] allow for specifying initial position in spring layout
+# Issue 2135: [with patch, with positive review] allow for specifying initial position in spring layout
 
 archive/issues_002135.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nsuggested by Peter Jipsen (does he have a track account yet?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2135\n\n",
+    "closed_at": "2008-02-25T01:38:18Z",
     "created_at": "2008-02-10T01:06:42Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs easy review] allow for specifying initial position in spring layout",
+    "title": "[with patch, with positive review] allow for specifying initial position in spring layout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2135",
     "user": "https://github.com/rlmill"

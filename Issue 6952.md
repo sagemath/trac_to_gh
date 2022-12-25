@@ -1,15 +1,17 @@
-# Issue 6952: follow-up to #6774: fix warnings and stylistic niceties
+# Issue 6952: [with patch, positive review] follow-up to #6774: fix warnings and stylistic niceties
 
 archive/issues_006952.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  @nathanncohen @jasongrout\n\nThis is a follow-up to ticket #6774.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6952\n\n",
+    "closed_at": "2009-09-19T19:34:08Z",
     "created_at": "2009-09-17T23:02:29Z",
     "labels": [
-        "component: documentation"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "follow-up to #6774: fix warnings and stylistic niceties",
+    "title": "[with patch, positive review] follow-up to #6774: fix warnings and stylistic niceties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6952",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

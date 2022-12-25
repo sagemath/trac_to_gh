@@ -1,26 +1,29 @@
-# Issue 6058: Add basic statistics functionality at the top level
+# Issue 6058: [with patch, needs comments] Add basic statistics functionality at the top level
 
 archive/issues_006058.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nSage should provide basic statistics functionality at the top level.  These functions might use scipy.stats or R or a new native implementation.  For graphics in particular we should probably bypass R.  \n\nThis ticket will merely start this process with one patch, but will not completely address the needed functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6058\n\n",
+    "body": "Assignee: mhampton\n\nSage should provide basic statistics functionality at the top level.  These functions might use scipy.stats or R or a new native implementation.  For graphics in particular we should probably bypass R.  \n\nThis ticket will merely start this process with one patch, but will not completely address the needed functionality.\n\nDuplicate of #7197\n\nIssue created by migration from https://trac.sagemath.org/ticket/6058\n\n",
+    "closed_at": "2012-06-02T12:34:28Z",
     "created_at": "2009-05-17T21:02:12Z",
     "labels": [
-        "component: numerical",
+        "component: statistics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Add basic statistics functionality at the top level",
+    "title": "[with patch, needs comments] Add basic statistics functionality at the top level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6058",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: jkantor
+Assignee: mhampton
 
 Sage should provide basic statistics functionality at the top level.  These functions might use scipy.stats or R or a new native implementation.  For graphics in particular we should probably bypass R.  
 
 This ticket will merely start this process with one patch, but will not completely address the needed functionality.
+
+Duplicate of #7197
 
 Issue created by migration from https://trac.sagemath.org/ticket/6058
 

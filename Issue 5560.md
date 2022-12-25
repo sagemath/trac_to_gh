@@ -1,15 +1,16 @@
-# Issue 5560: [with patch, needs review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq
+# Issue 5560: [with patch, positive review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq
 
 archive/issues_005560.json:
 ```json
 {
     "body": "Assignee: @rhinton\n\nCC:  @malb\n\nI want to use the `GF2X::MinPolySeq` function from my Cython application in Sage, but the function declaration and input data type, vec_GF2, are not included in the current NTL interface shim.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5560\n\n",
+    "closed_at": "2009-03-25T23:47:26Z",
     "created_at": "2009-03-18T16:38:46Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq",
+    "title": "[with patch, positive review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5560",
     "user": "https://github.com/rhinton"

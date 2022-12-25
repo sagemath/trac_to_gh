@@ -1,16 +1,17 @@
-# Issue 5851: [with patch, needs review] Convert 3 more elliptic curves files to ReST and add to reference manual
+# Issue 5851: [with patch, positive review] Convert 3 more elliptic curves files to ReST and add to reference manual
 
 archive/issues_005851.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: elliptic curve documentation\n\nThe patch fully ReST-ifies the files\n* ell_field.py\n* ec_database.py\n* kodaira_symbol.py\nin sage/schemes/elliptic_curves, and adds them to the reference manual.\n\nThese are all quite short and simple.  The patch is based on 3.4.1.rc4.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5851\n\n",
+    "closed_at": "2009-04-24T02:00:59Z",
     "created_at": "2009-04-22T10:41:17Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch, needs review] Convert 3 more elliptic curves files to ReST and add to reference manual",
+    "title": "[with patch, positive review] Convert 3 more elliptic curves files to ReST and add to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5851",
     "user": "https://github.com/JohnCremona"

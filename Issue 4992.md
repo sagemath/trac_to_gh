@@ -1,16 +1,17 @@
-# Issue 4992: OSX 64 bit: add 64 bit build support for pynac
+# Issue 4992: [with spkg, positive review] OSX 64 bit: add 64 bit build support for pynac
 
 archive/issues_004992.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4992\n\n",
+    "closed_at": "2009-01-23T00:14:02Z",
     "created_at": "2009-01-17T15:33:17Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "OSX 64 bit: add 64 bit build support for pynac",
+    "title": "[with spkg, positive review] OSX 64 bit: add 64 bit build support for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4992",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

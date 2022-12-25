@@ -4,10 +4,10 @@ archive/issues_002070.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAlmost always one wants to clone sage-main, rather than the current branch. There should be a warning and a prompt when one is not cloning sage-main\n\nIssue created by migration from https://trac.sagemath.org/ticket/2070\n\n",
+    "closed_at": "2014-04-09T09:49:42Z",
     "created_at": "2008-02-06T04:27:38Z",
     "labels": [
-        "component: user interface",
-        "bug"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Warning on cloning from other branches",

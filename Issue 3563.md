@@ -1,9 +1,10 @@
-# Issue 3563: sage/misc/cython.py: make "def atlas()" deal with the Accelerate Framework on OSX
+# Issue 3563: [with patch, positive review] sage/misc/cython.py: make "def atlas()" deal with the Accelerate Framework on OSX
 
 archive/issues_003563.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe review of #3530 exposed a bug hidden in sage/misc/cython.py: \"def atlas()\" would not return anything useful on OSX since we need to link against the Accelerate Framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3563\n\n",
+    "closed_at": "2008-09-15T12:22:50Z",
     "created_at": "2008-07-06T12:04:15Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_003563.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "sage/misc/cython.py: make \"def atlas()\" deal with the Accelerate Framework on OSX",
+    "title": "[with patch, positive review] sage/misc/cython.py: make \"def atlas()\" deal with the Accelerate Framework on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3563",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

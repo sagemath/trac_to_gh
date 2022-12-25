@@ -4,6 +4,7 @@ archive/issues_008279.json:
 ```json
 {
     "body": "Assignee: tbd\n\nBuilding the sage library fails because the cliquer shared object library is named incorrectly on cygwin.  It should be named with .dll but is named with .so.\n\n```\n   [ ] fails not finding cliquer:\ngcc -shared -Wl,--enable-auto-image-base build/temp.cygwin-1.7.1-i686-2.6/sage/graphs/cliquer.o -L/home/wstein/build/sage-\\\n4.3.3.alpha0/local//lib -L/home/wstein/build/sage-4.3.3.alpha0/local/lib/python2.6/config -lcsage -lcliquer -lstdc++ -lntl\\\n -lpython2.6 -o build/lib.cygwin-1.7.1-i686-2.6/sage/graphs/cliquer.dll\n/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../../i686-pc-cygwin/bin/ld: cannot find -lcliquer\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\n\n  The problem is due to a misnamed library:\n\n$ cd local/lib/\n$ ls -lh *cliq*\n-rwxr-xr-x 1 wstein None 167K 2010-02-12 22:40 libcliquer.so\n$ ln -s libcliquer.so libcliquer.dll\n\nThat works.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8279\n\n",
+    "closed_at": "2010-02-17T00:23:26Z",
     "created_at": "2010-02-16T01:26:20Z",
     "labels": [
         "component: porting: cygwin",

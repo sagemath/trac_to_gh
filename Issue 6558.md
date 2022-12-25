@@ -1,24 +1,25 @@
-# Issue 6558: Be more selective in patching ATLAS on Solaris
+# Issue 6558: [with spkg, positive review] Be more selective in patching ATLAS on Solaris
 
 archive/issues_006558.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: solaris atlas sun4v\n\nTrac ticket #6276 was a patch I added to the ATLAS code, as the tuning process had dumped core on a Sun T5240 machine called ('t2'). This machine is based on the latest T2+ processor from Sun. The patch was suggested by Clint Whaley - the main ATLAS developer.\n\nDespite no known problems with ATLAS dumping core on any of the older systems, or Solaris systems based on the x86 processor, I had applied this patch to all Solaris systems. However, it is really a hack more than a patch, as it allows ATLAS to build by returning a reasonable value for a parameter that the system could not tune properly. \n\nThis patch is an improvement, which simply checks if the system is Solaris and the architecture is 'sun4v' before applying the hack. So only Solaris systems with Sun T1, T2 or T2+ processors will be patched. Those would form only a small fraction of the Solaris machines. On the vast majority of systems in use today, the patch will no longer be applied, so the tuning process will be more accurate. \n\nA patch for this will be very simple. Although I have not checked it yet, I believe changing:\n\n\n\n```\nif os.uname()[0] == 'SunOS' :    \n   shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n\n```\n\nto \n\n\n```\nif os.uname()[0] == 'SunOS' and os.uname()[4] == 'sun4v':\n   shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n```\n\nwill fix this. \n\nI'll attach a patch for review, once its operation has been carefully checked both on a Sun T5240 (a sun4v machine called 't2') and a Sun Blade 2000 (a sun4u machine called 'kestrel'). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6558\n\n",
+    "body": "Assignee: drkirkby\n\nKeywords: solaris atlas sun4v sun4m\n\nTrac ticket #6276 was a patch I added to the ATLAS code, as the tuning process had dumped core on a Sun T5240 machine called ('t2'). This machine is based on the latest T2+ processor from Sun. The patch was suggested by Clint Whaley - the main ATLAS developer.\n\nDespite no known problems with ATLAS dumping core on any of the older systems, or Solaris systems based on the x86 processor, I had applied this patch to all Solaris systems. However, it is really a hack more than a patch, as it allows ATLAS to build by returning a reasonable value for a parameter that the system could not tune properly. \n\nThis patch is an improvement, which simply checks if the system is Solaris and the architecture is 'sun4v' before applying the hack. So only Solaris systems with Sun T1, T2 or T2+ processors will be patched. Those would form only a small fraction of the Solaris machines. On the vast majority of systems in use today, the patch will no longer be applied, so the tuning process will be more accurate. \n\nA patch for this will be very simple. Although I have not checked it yet, I believe changing:\n\n\n\n```\nif os.uname()[0] == 'SunOS' :    \n   shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n\n```\n\nto \n\n\n```\nif os.uname()[0] == 'SunOS' and os.uname()[4] == 'sun4v':\n   shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n```\n\nwill fix this. \n\nI'll attach a patch for review, once its operation has been carefully checked both on a Sun T5240 (a sun4v machine called 't2') and a Sun Blade 2000 (a sun4u machine called 'kestrel'). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6558\n\n",
+    "closed_at": "2009-07-23T23:38:08Z",
     "created_at": "2009-07-19T00:39:23Z",
     "labels": [
         "component: porting: solaris",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Be more selective in patching ATLAS on Solaris",
+    "title": "[with spkg, positive review] Be more selective in patching ATLAS on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6558",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
-Keywords: solaris atlas sun4v
+Keywords: solaris atlas sun4v sun4m
 
 Trac ticket #6276 was a patch I added to the ATLAS code, as the tuning process had dumped core on a Sun T5240 machine called ('t2'). This machine is based on the latest T2+ processor from Sun. The patch was suggested by Clint Whaley - the main ATLAS developer.
 

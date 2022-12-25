@@ -1,16 +1,17 @@
-# Issue 5801: Delete sage/server/notebook/{test.txt|todo.txt} and move their content to documentation trac
+# Issue 5801: Delete sage/server/notebook/{test.txt|todo.txt} and move useful content from there to documentation and/or trac
 
 archive/issues_005801.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @williamstein @mwhansen\n\nWhile looking around for something else I noticed test.txt and todo.txt. Both are surprisingly related to notebook development. Both files should be looked at and dealt with since they do not belong inside the tree. \n\n* test.txt can probably be removed since we have a webtesting framework written by Mike Hansen\n* todo.txt should be looked over and the issues in there that aren't in trac yet should have tickets opened. Then the file should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5801\n\n",
+    "closed_at": "2014-05-01T10:25:00Z",
     "created_at": "2009-04-16T06:14:35Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Delete sage/server/notebook/{test.txt|todo.txt} and move their content to documentation trac",
+    "title": "Delete sage/server/notebook/{test.txt|todo.txt} and move useful content from there to documentation and/or trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5801",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

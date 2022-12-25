@@ -4,6 +4,7 @@ archive/issues_000263.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\nsage: I=CyclotomicField(4).gen()\nsage: import pickle\nsage: pickle.dumps(I)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n```\n\nThe traceback is through a bunch of non-SAGE code.  It was not clear to me where to begin to look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/263\n\n",
+    "closed_at": "2007-02-16T07:24:25Z",
     "created_at": "2007-02-15T22:26:27Z",
     "labels": [
         "component: basic arithmetic",

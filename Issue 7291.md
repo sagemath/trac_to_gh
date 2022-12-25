@@ -4,6 +4,7 @@ archive/issues_007291.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nMax cut is a NP-Hard problem, which could as usual be written as a LP if no better solution is found.\n\nhttp://en.wikipedia.org/wiki/Maximum_cut\n\nIssue created by migration from https://trac.sagemath.org/ticket/7291\n\n",
+    "closed_at": "2009-12-19T22:53:05Z",
     "created_at": "2009-10-25T09:20:40Z",
     "labels": [
         "component: graph theory"

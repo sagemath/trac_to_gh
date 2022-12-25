@@ -4,6 +4,7 @@ archive/issues_009194.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: symmetric functions\n\nSage needs a good thematic tutorial on symmetric functions. An embryo is in sage.combinat.sf.symmetric_functions, but it's quite indigent (I wrote it, and take the blame):\n\n- Reference it from doc/en/reference/combinat/symmetric_functions.rst and highlight it as the *main* entry point for symmetric functions\n- Make sure `sage.combinat.sf?` points to this tutorial\n- Extend it! (for general use, but also for kschur and the like)\n\nReferences:\n\n- [MuPAD-Combinat's tutorial on Symmetric functions](http://mupad-combinat.sourceforge.net/doc/en/index/guidedTour-predefinedCombinatorialAlgebras.html#index-guidedTour-symmetricFunctions) ([Sources](http://mupad-combinat.svn.sourceforge.net/viewvc/mupad-combinat/trunk/MuPAD-Combinat/lib/DOC/guidedTour-predefinedCombinatorialAlgebras.mupdoc))\n\n- [Francois's advanced tutorial for MuPAD-Combinat](http://mupad-combinat.sourceforge.net/Papers/TutorialSymFcts.pdf)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9194\n\n",
+    "closed_at": "2013-03-06T13:55:49Z",
     "created_at": "2010-06-09T07:52:41Z",
     "labels": [
         "component: combinatorics"

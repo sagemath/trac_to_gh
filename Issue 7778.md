@@ -4,6 +4,7 @@ archive/issues_007778.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  drkirkby @robert-marik @TimDumol @williamstein\n\nPost-#7467, the SageNB install path depends on its version, but `jsmath-image-fonts-1.4.p2.spkg` expects a slightly different format.\n\nThis ticket just updates `spkg-install`.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/82304cb7adbb22f9), [sage-devel](http://groups.google.com/group/sage-devel/msg/10b3e588e9110322).\n\nRelated tickets: #7196, #7229, #7467, #7755.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7778\n\n",
+    "closed_at": "2010-01-04T02:08:04Z",
     "created_at": "2009-12-28T05:32:11Z",
     "labels": [
         "component: notebook",

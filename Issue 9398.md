@@ -4,6 +4,7 @@ archive/issues_009398.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nSage currently removes any soft resource limits set. If those limits are set, it's probably with good reason, so it would be better if it kept limits in place\n\n```\nsh-3.2$ ulimit -S -v 1000000\nsh-3.2$ ulimit -v\n1000000\nsh-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import os\nsage: os.system(\"ulimit -v\")\nunlimited\n0\n```\n| Sage Version 4.4.4, Release Date: 2010-06-23                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/9398\n\n",
+    "closed_at": "2010-07-22T08:26:24Z",
     "created_at": "2010-06-30T22:11:44Z",
     "labels": [
         "component: misc",

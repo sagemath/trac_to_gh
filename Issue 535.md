@@ -4,6 +4,7 @@ archive/issues_000535.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nFrom Sage 2.8.3rc3:\n\n```\n==25034== Mismatched free() / delete / delete []\n==25034==    at 0x4A05130: operator delete(void*) (vg_replace_malloc.c:244)\n==25034==    by 0x923CCB6: del_charstar (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libcsage.so)\n==25034==    by 0x17AC7793: __pyx_f_3ntl_string_delete (ntl.c:996)\n==25034==    by 0x17AC7F88: __pyx_f_3ntl_9ntl_ZZ_pX___repr__ (ntl.c:6314)\n==25034==    by 0x443C61: _PyObject_Str (object.c:406)\n==25034==    by 0x443D0A: PyObject_Str (object.c:426)\n==25034==    by 0x44EA8F: string_new (stringobject.c:3892)\n==25034==    by 0x45A272: type_call (typeobject.c:422)\n==25034==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==25034==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==25034==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==25034==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/535\n\n",
+    "closed_at": "2007-09-13T19:39:52Z",
     "created_at": "2007-08-30T18:53:30Z",
     "labels": [
         "component: memleak",

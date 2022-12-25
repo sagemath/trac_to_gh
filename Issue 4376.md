@@ -3,7 +3,8 @@
 archive/issues_004376.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  salmanhb@gmail.com @loefflerd @nilesjohnson @jdemeyer\n\nKeywords: power series pari\n\nsalmanhb`@`gmail.com would like to be able to do linear algebra over `GF(p)[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` using pari, but currently conversion of power series in `R[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` to pari is only implemented when R=QQ or R=ZZ (via strings).\n\nWe should improve the _pari_() function for power series rings to allow R to be any ring in which pari conversion is already defined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4376\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  salmanhb@gmail.com @loefflerd @nilesjohnson @jdemeyer\n\nKeywords: power series pari gp\n\nsalmanhb`@`gmail.com would like to be able to do linear algebra over `GF(p)[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` using pari, but currently conversion of power series in `R[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` to pari is only implemented when R=QQ or R=ZZ (via strings).\n\nWe should improve the _pari_() function for power series rings to allow R to be any ring in which pari conversion is already defined.\n\nDepends on #7644\n\nIssue created by migration from https://trac.sagemath.org/ticket/4376\n\n",
+    "closed_at": "2011-03-24T20:39:02Z",
     "created_at": "2008-10-28T09:44:11Z",
     "labels": [
         "component: interfaces"
@@ -19,11 +20,13 @@ Assignee: @williamstein
 
 CC:  salmanhb@gmail.com @loefflerd @nilesjohnson @jdemeyer
 
-Keywords: power series pari
+Keywords: power series pari gp
 
 salmanhb`@`gmail.com would like to be able to do linear algebra over `GF(p)[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` using pari, but currently conversion of power series in `R[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` to pari is only implemented when R=QQ or R=ZZ (via strings).
 
 We should improve the _pari_() function for power series rings to allow R to be any ring in which pari conversion is already defined.
+
+Depends on #7644
 
 Issue created by migration from https://trac.sagemath.org/ticket/4376
 

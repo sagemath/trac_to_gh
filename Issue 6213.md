@@ -1,23 +1,24 @@
-# Issue 6213: easy addition of an alias to eta product (trivial ticket to deal with)
+# Issue 6213: [with patch, positive review] easy addition of an alias to eta product (trivial ticket to deal with)
 
 archive/issues_006213.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n```\n    Hi David,\n\n    This is inconsistent:\n\n\n    sage: e =EtaProduct(3, {3:12, 1:-12})\n    sage: e.qexp(10)  # but no q_expansion function\n\n    Everywhere else in Sage we write \"q_expansion\" and have qexp as an alias. It thus took me a while to find e.qexp, since I expected e.q_expansion. What do you think?\n\n\nAgreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6213\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\n```\n    Hi David,\n\n    This is inconsistent:\n\n\n    sage: e =EtaProduct(3, {3:12, 1:-12})\n    sage: e.qexp(10)  # but no q_expansion function\n\n    Everywhere else in Sage we write \"q_expansion\" and have qexp as an alias. It thus took me a while to find e.qexp, since I expected e.q_expansion. What do you think?\n\n\nAgreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6213\n\n",
+    "closed_at": "2009-06-13T21:07:51Z",
     "created_at": "2009-06-04T21:01:26Z",
     "labels": [
-        "component: number theory",
+        "component: modular forms",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "easy addition of an alias to eta product (trivial ticket to deal with)",
+    "title": "[with patch, positive review] easy addition of an alias to eta product (trivial ticket to deal with)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6213",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 CC:  @loefflerd
 

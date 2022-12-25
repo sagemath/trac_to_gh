@@ -1,16 +1,17 @@
-# Issue 6688: spell-check all modules under sage/calculus
+# Issue 6688: [with patch, positive review] spell-check all modules under sage/calculus
 
 archive/issues_006688.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6688\n\n",
+    "closed_at": "2009-08-12T02:55:06Z",
     "created_at": "2009-08-08T17:02:32Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/calculus",
+    "title": "[with patch, positive review] spell-check all modules under sage/calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6688",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

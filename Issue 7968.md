@@ -4,9 +4,11 @@ archive/issues_007968.json:
 ```json
 {
     "body": "Assignee: tbd\n\nOn cicero, Fedora 12, 32-bit, Pentium 4,\nand also on cleo, Red Hat Enterprise Linux Server 5.3, 64-bit, IA-64,\nas well as on Mac OS X 10.4, Core2Duo, 32 bit:\n\n[mvngu`@`cicero sage-4.3.1.rc0]$ ./sage -t -long\ndevel/sage-main/sage/schemes/elliptic_curves/heegner.py\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/tmp/mvngu/sage-4.3.1.rc0/devel/sage-main/sage/schemes/elliptic_curves/heegner.py\",\nline 1486:\n    sage: s.__cmp__(0)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n\nIssue created by migration from https://trac.sagemath.org/ticket/7968\n\n",
+    "closed_at": "2010-01-18T22:26:34Z",
     "created_at": "2010-01-17T19:34:31Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",

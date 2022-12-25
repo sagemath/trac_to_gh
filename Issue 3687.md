@@ -1,9 +1,10 @@
-# Issue 3687: trivial problems in the sage_scripts spkg
+# Issue 3687: [with patch, positive review] trivial problems in the sage_scripts spkg
 
 archive/issues_003687.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nBelow is a list trivial problems in the sage_scripts spkg that were found by Debian's automatic package quality checking tools:\n\n# Scripts missing #!/bin/sh lines in sage_scripts-3.0.5.spkg:\nsage-pull\nsage-push\nsage-mirror\nsage-mirror-darcs-scripts\nsage-osx-open\n\n# Scripts missing #!/usr/bin/python lines in sage_scripts-3.0.5.dpkg:\nsage-startuptime.py\nsage-gdb-pythonstartup\ndsage_setup.py\n\n# Files unnecessarily marked as executable in sage_scripts-3.0.5.spkg\nsage-banner\nsage-gdb-commands\nsage-maxima.lisp\n\n# Scripts that use #!sage or #!sage.bin as their interpreter in sage_scripts-3.0.5.spkg\n# You want to use #!/usr/bin/env sage\nsage-ipython \nsage-location\nsage-preparse\nsage-run \nsage-run2\n\n# Weird files in sage_scripts-3.0.5.spkg marked executable\nsage-README-osx.txt (duplicate of file of the same name in the root of the sage distribution)\nsage-verify-pyc (this one is just weird)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3687\n\n",
+    "closed_at": "2009-07-23T09:42:35Z",
     "created_at": "2008-07-21T05:46:02Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003687.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "trivial problems in the sage_scripts spkg",
+    "title": "[with patch, positive review] trivial problems in the sage_scripts spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3687",
     "user": "https://github.com/timabbott"

@@ -1,16 +1,17 @@
-# Issue 5151: linear codes decoding algorithms in Sage
+# Issue 5151: [with patch, positive review] linear codes decoding algorithms in Sage
 
 archive/issues_005151.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe goal of this patch is to move some more of the algorithms in (the GAP package for error-correcting codes) Guava over to Sage. Currently Guava is included in Sage (in fact, Guava is the only GAP package included in Sage), but once the commands are implemented in Python (or Cython) it will be possible to remove Guava from Sage, while keeping Guava as an optional package. \n\nThe patch adds a new file/module with 2 decoding methods implemented but does not import it into the namespace. Instead, methods from linear_code import them locally as needed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5151\n\n",
+    "closed_at": "2009-02-07T01:38:05Z",
     "created_at": "2009-02-01T21:11:09Z",
     "labels": [
         "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "linear codes decoding algorithms in Sage",
+    "title": "[with patch, positive review] linear codes decoding algorithms in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5151",
     "user": "https://github.com/wdjoyner"

@@ -4,6 +4,7 @@ archive/issues_000135.json:
 ```json
 {
     "body": "Assignee: somebody\n\nhttp://www.math.jmu.edu/~martin/gmp-4.2.1-porting-to-Mac-Pro.tar.gz\n\nIssue created by migration from https://trac.sagemath.org/ticket/135\n\n",
+    "closed_at": "2007-08-09T21:48:16Z",
     "created_at": "2006-10-16T17:38:57Z",
     "labels": [
         "component: basic arithmetic"

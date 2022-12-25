@@ -1,22 +1,23 @@
-# Issue 674: Solaris 10: sympow is broken
+# Issue 674: Solaris 10/x86: sympow is broken
 
 archive/issues_000674.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  drkirkby\n\nKeywords: Solaris 10, sympow\n\n```\n-bash-3.00$ sympow\nsympow 1.018 RELEASE  (c) Mark Watkins -**ERROR** QD_check failed at x[1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/674\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  drkirkby\n\nKeywords: Solaris 10, sympow\n\n```\n-bash-3.00$ sympow\nsympow 1.018 RELEASE  (c) Mark Watkins -**ERROR** QD_check failed at x[1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/674\n\n",
+    "closed_at": "2010-08-26T20:35:34Z",
     "created_at": "2007-09-17T00:36:38Z",
     "labels": [
-        "component: packages",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Solaris 10: sympow is broken",
+    "title": "Solaris 10/x86: sympow is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/674",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: somebody
+Assignee: mabshoff
 
 CC:  drkirkby
 

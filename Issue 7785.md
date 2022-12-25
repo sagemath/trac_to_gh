@@ -1,9 +1,10 @@
-# Issue 7785: notebook -- include version >= 0.4.9 in sage-4.3.1
+# Issue 7785: notebook -- include version 0.5 in sage-4.3.1.alpha2
 
 archive/issues_007785.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7785\n\n",
+    "closed_at": "2010-01-13T04:41:01Z",
     "created_at": "2009-12-29T09:14:15Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_007785.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "notebook -- include version >= 0.4.9 in sage-4.3.1",
+    "title": "notebook -- include version 0.5 in sage-4.3.1.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7785",
     "user": "https://github.com/williamstein"

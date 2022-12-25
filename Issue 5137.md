@@ -1,15 +1,16 @@
-# Issue 5137: [with patch, needs review] create variables 's' only once in sr if multiple plaintexts are considered
+# Issue 5137: [with patch, positive review] create variables 's' only once in sr if multiple plaintexts are considered
 
 archive/issues_005137.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5137\n\n",
+    "closed_at": "2009-02-05T10:37:30Z",
     "created_at": "2009-01-30T14:50:23Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] create variables 's' only once in sr if multiple plaintexts are considered",
+    "title": "[with patch, positive review] create variables 's' only once in sr if multiple plaintexts are considered",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5137",
     "user": "https://github.com/malb"

@@ -3,7 +3,8 @@
 archive/issues_008976.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nKeywords: squarefree_part()\n\n```\nsage: squarefree_part(216)\n6\nsage: squarefree_part(216r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/leif/sage-4.4.1.rc0/devel/sage-8799/<ipython console> in <module>()\n\n/home/leif/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sage/misc/functional.pyc in squarefree_part(x)\n   1478         pass\n   1479     F = factor(x)\n-> 1480     n = x.parent()(1)\n   1481     for p, e in F:\n   1482         if e%2 != 0:\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8976\n\n",
+    "body": "Assignee: @jasongrout\n\nKeywords: squarefree_part(), beginner\n\n```\nsage: squarefree_part(216)\n6\nsage: squarefree_part(216r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/leif/sage-4.4.1.rc0/devel/sage-8799/<ipython console> in <module>()\n\n/home/leif/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sage/misc/functional.pyc in squarefree_part(x)\n   1478         pass\n   1479     F = factor(x)\n-> 1480     n = x.parent()(1)\n   1481     for p, e in F:\n   1482         if e%2 != 0:\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8976\n\n",
+    "closed_at": "2010-07-22T07:40:41Z",
     "created_at": "2010-05-15T23:54:38Z",
     "labels": [
         "component: misc",
@@ -19,7 +20,7 @@ archive/issues_008976.json:
 ```
 Assignee: @jasongrout
 
-Keywords: squarefree_part()
+Keywords: squarefree_part(), beginner
 
 ```
 sage: squarefree_part(216)

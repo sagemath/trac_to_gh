@@ -1,16 +1,17 @@
-# Issue 3073: allow variable width text input_box in interact
+# Issue 3073: [with patch, positive review] allow variable width text input_box in interact
 
 archive/issues_003073.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @williamstein\n\nKeywords: interact, input_box\n\nThis is just a tiny patch so that the text inputs for `@`interact can be changed in size.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3073\n\n",
+    "closed_at": "2008-06-15T20:03:33Z",
     "created_at": "2008-05-01T17:49:26Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "allow variable width text input_box in interact",
+    "title": "[with patch, positive review] allow variable width text input_box in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3073",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

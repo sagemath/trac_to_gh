@@ -3,10 +3,12 @@
 archive/issues_006576.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nNow that #1510 is resolved due to inclusion of 2.6, we should be using it (rather than our hand-construction) in simple/twist.py. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6576\n\n",
+    "body": "Assignee: boothby\n\nNow that #1510 is resolved due to inclusion of 2.6, we should be using it (rather than our hand-construction) in simple/twist.py. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6576\n\n",
+    "closed_at": "2010-02-01T08:24:19Z",
     "created_at": "2009-07-21T07:45:23Z",
     "labels": [
-        "component: algebra"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use JSON package for simple server",
@@ -15,7 +17,7 @@ archive/issues_006576.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: boothby
 
 Now that #1510 is resolved due to inclusion of 2.6, we should be using it (rather than our hand-construction) in simple/twist.py. 
 

@@ -4,6 +4,7 @@ archive/issues_005507.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: sage-sage\n\nI think there is a superfluous \"shift\" in the \"sage-sage\" script, because this works:\n\n    $ sage -sh -c -c \"echo hi there\"\n\n    Starting subshell with Sage environment variables set.\n    Be sure to exit when you are done and do not do anything\n    with other copies of Sage!\n\n    Bypassing shell configuration files ...\n\n    hi there\n    Exited Sage subshell.\n\nbut this doesn't:\n\n    $ sage -sh -c \"echo hi there\"\n\n    Starting subshell with Sage environment variables set.\n    Be sure to exit when you are done and do not do anything\n    with other copies of Sage!\n\n    Bypassing shell configuration files ...\n\n    bash: echo hi there: No such file or directory\n    Exited Sage subshell.\n\n\n--\n\n$ sage --version\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n\nIssue created by migration from https://trac.sagemath.org/ticket/5507\n\n",
+    "closed_at": "2010-02-02T06:55:11Z",
     "created_at": "2009-03-13T03:04:47Z",
     "labels": [
         "component: user interface",

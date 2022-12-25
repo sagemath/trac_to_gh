@@ -3,7 +3,7 @@
 archive/issues_000965.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan\n\nThe code is attached to this ticket and is GPL'd now. \n\nActually, the code is here:\n   http://sage.math.washington.edu/tmp/smalljac.tar.bz2\n\nIssue created by migration from https://trac.sagemath.org/ticket/965\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan\n\nKeywords: drew sutherland smalljac point counting hyperelliptic curve genus 2 jacobian\n\nThe latest version of the code is here:\n\n  http://sage.math.washington.edu/home/drew/newsmalljac\n\nIssue created by migration from https://trac.sagemath.org/ticket/965\n\n",
     "created_at": "2007-10-21T20:34:08Z",
     "labels": [
         "component: number theory"
@@ -19,10 +19,11 @@ Assignee: @williamstein
 
 CC:  @jbalakrishnan
 
-The code is attached to this ticket and is GPL'd now. 
+Keywords: drew sutherland smalljac point counting hyperelliptic curve genus 2 jacobian
 
-Actually, the code is here:
-   http://sage.math.washington.edu/tmp/smalljac.tar.bz2
+The latest version of the code is here:
+
+  http://sage.math.washington.edu/home/drew/newsmalljac
 
 Issue created by migration from https://trac.sagemath.org/ticket/965
 

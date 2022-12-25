@@ -1,9 +1,10 @@
-# Issue 2466: 2.10.3: doctest failure in const.tex
+# Issue 2466: [with patch, positive review] 2.10.3: doctest failure in const.tex
 
 archive/issues_002466.json:
 ```json
 {
     "body": "Assignee: failure\n\n```\nsage -t -long devel/doc-main/const/const.tex\n**********************************************************************\nFile \"const.py\", line 1544:\n    : A.eigenspaces() #random output\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc4/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_47[5]>\", line 1, in <module>\n        print \"ignore this\";  A.eigenspaces() #random output###line 1544:\n    : A.eigenspaces() #random output\n      File \"matrix2.pyx\", line 2198, in sage.matrix.matrix2.Matrix.eigenspaces\n    NotImplementedError: won't use generic algorithm for inexact base rings, pass the option even_if_inexact=True if you really want this.\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2466\n\n",
+    "closed_at": "2008-03-11T02:24:36Z",
     "created_at": "2008-03-11T01:47:54Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002466.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "2.10.3: doctest failure in const.tex",
+    "title": "[with patch, positive review] 2.10.3: doctest failure in const.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2466",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

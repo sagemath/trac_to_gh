@@ -4,6 +4,7 @@ archive/issues_007760.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nCC:  @craigcitro\n\nWe need to make sure the hg qpush command is failing with the proper exit code and handle it appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7760\n\n",
+    "closed_at": "2010-01-19T00:42:51Z",
     "created_at": "2009-12-24T11:03:04Z",
     "labels": [
         "component: build",

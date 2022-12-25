@@ -1,16 +1,17 @@
-# Issue 2659: Elliptic curve cardinality sometimes Rational with bad consequences for efficiency
+# Issue 2659: [with patch, positive review] Elliptic curve cardinality sometimes Rational with bad consequences for efficiency
 
 archive/issues_002659.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSome of the code for computing the cardinality of an elliptic curve over a non-prime finite field manages to cache a value of type Rational  instead of Integer.  [This is caused by norms from orders being of type Rational -- see #2653.]\n\nAs a consequence the code for computing orders of points can fail to make use of the cached group order which sloes it down a lot (it has to use bsgs).\n\nExample:  before patching (2.11.alpha1)\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: P=E.random_point()\nsage: E.cardinality()\n1152921512387208375\nsage: P.order() #long time\n...\nsage: E.abelian_group() # long time\n...\n```\n\nAfter patching:\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: E.cardinality()\n1152921512387208375\nsage: P=E.random_point()\nsage: P.order()\n1152921512387208375\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C1152921512387208375,\n ((181097701*a + 46508078 : 638908311*a + 187734235 : 1),))\n```\n -- all very fast.\n\nAttached patch should apply to 2.11.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2659\n\n",
+    "closed_at": "2008-04-04T22:43:24Z",
     "created_at": "2008-03-24T12:01:44Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Elliptic curve cardinality sometimes Rational with bad consequences for efficiency",
+    "title": "[with patch, positive review] Elliptic curve cardinality sometimes Rational with bad consequences for efficiency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2659",
     "user": "https://github.com/JohnCremona"

@@ -1,9 +1,10 @@
-# Issue 5436: more miscellaneous typos
+# Issue 5436: [with patch, positive review] more miscellaneous typos
 
 archive/issues_005436.json:
 ```json
 {
     "body": "Assignee: tba\n\nWhile reviewing ticket #5416, I came across a number of typos I saw in the rebased patch for that ticket. These problems were *not* introduced by the patch; they were not addressed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5436\n\n",
+    "closed_at": "2009-03-04T22:31:07Z",
     "created_at": "2009-03-04T04:40:41Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005436.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "more miscellaneous typos",
+    "title": "[with patch, positive review] more miscellaneous typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5436",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

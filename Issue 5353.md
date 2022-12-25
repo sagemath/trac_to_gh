@@ -1,9 +1,10 @@
-# Issue 5353: add xgcd for polynomial over GF(2)
+# Issue 5353: [with patch, positive review] add xgcd for polynomial over GF(2)
 
 archive/issues_005353.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCurrently, this fails:\n\n```\nsage: R.<x> = GF(2)[]\nsage: fr = ((x+1)/(x^3+x+1) + (x+1)/(x^3+x^2+1));\nsage: fr.partial_fraction_decomposition() \n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/mhansen/.sage/temp/sage.math.washington.edu/19940/_home_mhansen__sage_init_sage_0.py in <module>()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement.partial_fraction_decomposition (sage/rings/fraction_field_element.c:3052)()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.inverse_mod (sage/rings/polynomial/polynomial_element.c:8191)()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_gf2x.so in sage.rings.polynomial.polynomial_gf2x.Polynomial_template.xgcd (sage/rings/polynomial/polynomial_gf2x.cpp:5685)()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_gf2x.so in sage.rings.polynomial.polynomial_gf2x.celement_xgcd (sage/rings/polynomial/polynomial_gf2x.cpp:3517)()\n\nNotImplementedError: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5353\n\n",
+    "body": "Assignee: @mwhansen\n\nCurrently, this fails:\n\n```\nsage: R.<x> = GF(2)[]\nsage: fr = ((x+1)/(x^3+x+1) + (x+1)/(x^3+x^2+1));\nsage: fr.partial_fraction_decomposition() \n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/mhansen/.sage/temp/sage.math.washington.edu/19940/_home_mhansen__sage_init_sage_0.py in <module>()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement.partial_fraction_decomposition (sage/rings/fraction_field_element.c:3052)()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.inverse_mod (sage/rings/polynomial/polynomial_element.c:8191)()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_gf2x.so in sage.rings.polynomial.polynomial_gf2x.Polynomial_template.xgcd (sage/rings/polynomial/polynomial_gf2x.cpp:5685)()\n\n/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_gf2x.so in sage.rings.polynomial.polynomial_gf2x.celement_xgcd (sage/rings/polynomial/polynomial_gf2x.cpp:3517)()\n\nNotImplementedError: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5353\n\n",
+    "closed_at": "2009-03-25T06:01:22Z",
     "created_at": "2009-02-23T23:51:42Z",
     "labels": [
         "component: commutative algebra",
@@ -11,13 +12,13 @@ archive/issues_005353.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "add xgcd for polynomial over GF(2)",
+    "title": "[with patch, positive review] add xgcd for polynomial over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5353",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @malb
+Assignee: @mwhansen
 
 Currently, this fails:
 

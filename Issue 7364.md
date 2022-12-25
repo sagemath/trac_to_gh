@@ -1,15 +1,16 @@
-# Issue 7364: Implement eulerian orientation of a graph
+# Issue 7364: Eulerian orientation of a graph
 
 archive/issues_007364.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nImplement a method in Graph returning a DiGraph which corresponds to an eulerian orientation of the graph.\n\nAn eulerian orientation of an eulerian graph is an orientation such that d^+ = d^- = d/2 for any vertex.\n\nIf the graph is not eulerian, this method should return a DiGraph such that d^+ + d^- = d and | d^+ - d^- | <= 1\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7364\n\n",
+    "body": "Assignee: @rlmill\n\nImplements Graph.eulerian_orientation which returns a DiGraph corresponding to an eulerian orientation of the graph :\n\nAn eulerian orientation of an eulerian graph is an orientation such that \n\n```\nd^{+} = d^{-} = d/2 \n```\nfor any vertex.\n\nIf the graph is not eulerian, this method returns a DiGraph such that \n\n```\nd^{+} + d^{-} = d \n```\nand \n\n```\n```\n| d^{+} - d^{-} | <= 1\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7364\n\n",
+    "closed_at": "2009-11-29T05:24:11Z",
     "created_at": "2009-10-31T20:48:07Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Implement eulerian orientation of a graph",
+    "title": "Eulerian orientation of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7364",
     "user": "https://github.com/nathanncohen"
@@ -17,12 +18,25 @@ archive/issues_007364.json:
 ```
 Assignee: @rlmill
 
-Implement a method in Graph returning a DiGraph which corresponds to an eulerian orientation of the graph.
+Implements Graph.eulerian_orientation which returns a DiGraph corresponding to an eulerian orientation of the graph :
 
-An eulerian orientation of an eulerian graph is an orientation such that d^+ = d^- = d/2 for any vertex.
+An eulerian orientation of an eulerian graph is an orientation such that 
 
-If the graph is not eulerian, this method should return a DiGraph such that d^+ + d^- = d and | d^+ - d^- | <= 1
+```
+d^{+} = d^{-} = d/2 
+```
+for any vertex.
 
+If the graph is not eulerian, this method returns a DiGraph such that 
+
+```
+d^{+} + d^{-} = d 
+```
+and 
+
+```
+```
+| d^{+} - d^{-} | <= 1
 Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/7364

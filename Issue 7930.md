@@ -4,6 +4,7 @@ archive/issues_007930.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @williamstein @robertwb\n\nThe following code\n\n```\nE = EllipticCurve('99d1')\n\nR.<X> = QQ[]\nK.<t> = NumberField(X^3 + X^2 - 2*X - 1)\nL.<s> = NumberField(X^3 + X^2 - 36*X - 4)\n\nEK = E.base_extend(K)\ntoK = EK.torsion_order()\nda = EK.local_data()\n\nEL = E.base_extend(L)\nda = EL.local_data()\n```\n\nproduces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7930\n\n",
+    "closed_at": "2010-07-20T07:12:40Z",
     "created_at": "2010-01-14T15:00:57Z",
     "labels": [
         "component: elliptic curves",

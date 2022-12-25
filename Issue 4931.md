@@ -1,16 +1,17 @@
-# Issue 4931: [with patch, needs review] Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library
+# Issue 4931: [with patch, positive review] Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library
 
 archive/issues_004931.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere are a couple buglets in the Sage library that cause build issues on Solaris. The attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4931\n\n",
+    "closed_at": "2009-01-03T06:43:03Z",
     "created_at": "2009-01-03T04:47:39Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with patch, needs review] Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library",
+    "title": "[with patch, positive review] Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4931",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

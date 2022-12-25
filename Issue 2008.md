@@ -1,16 +1,17 @@
-# Issue 2008: crap -- cython contains a stupid OSX file
+# Issue 2008: [with spkg] crap -- cython contains a stupid OSX file
 
 archive/issues_002008.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nin Sage-2.10.1.rc3:\n\n```\nsage-2.10.1.rc3/spkg/standard/cython-0.9.6.11b/Includes/._.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2008\n\n",
+    "closed_at": "2008-02-01T02:00:47Z",
     "created_at": "2008-01-31T23:20:03Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- cython contains a stupid OSX file",
+    "title": "[with spkg] crap -- cython contains a stupid OSX file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2008",
     "user": "https://github.com/williamstein"

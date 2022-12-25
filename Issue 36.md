@@ -4,6 +4,7 @@ archive/issues_000036.json:
 ```json
 {
     "body": "Assignee: somebody\n\n```\n   sage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nw = %e^-x*(3*sin(x) + cos(x))\nsage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\n(output looks funny)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/36\n\n",
+    "closed_at": "2007-01-13T02:08:31Z",
     "created_at": "2006-09-12T23:29:29Z",
     "labels": [
         "component: basic arithmetic",

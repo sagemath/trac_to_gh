@@ -1,22 +1,24 @@
-# Issue 3167: notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work
+# Issue 3167: [with patch, positive review] notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work
 
 archive/issues_003167.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n1. Go to the 3d plots section of the reference manual, e.g.,\n   http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html\n\n2. Hit shift-enter to evaluate a plot.\n\n3. Observe that the plot doesn't work. \n\n\nThis should be easy to replicate on all operating systems, etc.  This bug was \nreported by walter neumann on March 11, 2008.\n\n\n---\n\nAs a temporary workaround you can do the following:\n\n1. View the page of the html reference manual of interest to you that contains 3d plotting code.\n2. Click in the upper left on File -> Copy Worksheet.\n\nYou'll get a complete copy of the page of the reference manual\nas a normal worksheet.  You can then use shift-enter to evaluate\n3d plots and they should work fine in that copy (since it is\njust a normal worksheet).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3167\n\n",
+    "body": "Assignee: @mwhansen\n\n1. Go to the 3d plots section of the reference manual, e.g.,\n   http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html\n\n2. Hit shift-enter to evaluate a plot.\n\n3. Observe that the plot doesn't work. \n\n\nThis should be easy to replicate on all operating systems, etc.  This bug was \nreported by walter neumann on March 11, 2008.\n\n\n---\n\nAs a temporary workaround you can do the following:\n\n1. View the page of the html reference manual of interest to you that contains 3d plotting code.\n2. Click in the upper left on File -> Copy Worksheet.\n\nYou'll get a complete copy of the page of the reference manual\nas a normal worksheet.  You can then use shift-enter to evaluate\n3d plots and they should work fine in that copy (since it is\njust a normal worksheet).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3167\n\n",
+    "closed_at": "2009-07-03T17:09:42Z",
     "created_at": "2008-05-12T03:58:55Z",
     "labels": [
         "component: graphics",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work",
+    "title": "[with patch, positive review] notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3167",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 1. Go to the 3d plots section of the reference manual, e.g.,
    http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html

@@ -4,6 +4,7 @@ archive/issues_008156.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nI'm missing in Sage a function equivalent to \"readdata\" in Maple,\nwhich reads a file with one object per line, and convert it to a\nlist of the given type. Here is a tentative implementation:\n\n```\ndef readdata(f,typ):\n   fp = open(f,\"r\")\n   l = []\n   while true:\n      s = fp.readline()\n      if s == '':\n         break\n      l.append(typ(s))\n   fp.close()\n   return l\n```\nFor example readdata(\"integers\", ZZ) will read a file containing one\ninteger per line, and convert it to a list of integers. One could\nalso extend the function to read n objects per line.\n\nIf a similar function already exists in Sage, please forgive me.\n\nThe function name might be renamed to read_data.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8156\n\n",
+    "closed_at": "2010-07-22T23:37:01Z",
     "created_at": "2010-02-02T20:57:48Z",
     "labels": [
         "component: interfaces",

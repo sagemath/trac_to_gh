@@ -1,15 +1,16 @@
-# Issue 3514: Free modules revision
+# Issue 3514: [with patch, positive review] Free modules revision
 
 archive/issues_003514.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @craigcitro @ncalexan\n\nKeywords: free modules\n\nThis separates quadratic modules into free_quadratic_module.py -- these \nare free modules with a user-specified inner product.\n\nThis adds 100% documentation to free_module.py and free_quadratic_module.py.\n\nTODO: Probably we want to revise free module elements to make efficient use \nof diagonal inner_product_matrices.  I still intend to generalize the inner \nproduct matrix to support different image ring (real, complex, p-adic) for \nthe pairing, as well as integral pairings which are given by rational matrices.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3514\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro @ncalexan\n\nKeywords: free modules editor_mhansen\n\nThis separates quadratic modules into free_quadratic_module.py -- these \nare free modules with a user-specified inner product.\n\nThis adds 100% documentation to free_module.py and free_quadratic_module.py.\n\nTODO: Probably we want to revise free module elements to make efficient use \nof diagonal inner_product_matrices.  I still intend to generalize the inner \nproduct matrix to support different image ring (real, complex, p-adic) for \nthe pairing, as well as integral pairings which are given by rational matrices.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3514\n\n",
+    "closed_at": "2008-08-11T06:29:16Z",
     "created_at": "2008-06-26T15:28:01Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Free modules revision",
+    "title": "[with patch, positive review] Free modules revision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3514",
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
@@ -19,7 +20,7 @@ Assignee: tbd
 
 CC:  @craigcitro @ncalexan
 
-Keywords: free modules
+Keywords: free modules editor_mhansen
 
 This separates quadratic modules into free_quadratic_module.py -- these 
 are free modules with a user-specified inner product.

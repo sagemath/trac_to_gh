@@ -1,16 +1,17 @@
-# Issue 2623: 2.11.alpha0: repo consistency issue with sage/schemes/hyperelliptic_curves/hypellfrob/README
+# Issue 2623: [with patch, with positive review] 2.11.alpha0: repo consistency issue with sage/schemes/hyperelliptic_curves/hypellfrob/README
 
 archive/issues_002623.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nsage/schemes/hyperelliptic_curves/hypellfrob/README needs to be added to MANIFEST.in so that `-sdist` picks it up.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2623\n\n",
+    "closed_at": "2008-03-21T00:06:58Z",
     "created_at": "2008-03-21T00:00:42Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "2.11.alpha0: repo consistency issue with sage/schemes/hyperelliptic_curves/hypellfrob/README",
+    "title": "[with patch, with positive review] 2.11.alpha0: repo consistency issue with sage/schemes/hyperelliptic_curves/hypellfrob/README",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2623",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

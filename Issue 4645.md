@@ -1,15 +1,16 @@
-# Issue 4645: in setup.py module_list.py is hidden with no comment.  VERY CONFUSING
+# Issue 4645: [with patch, with positive review] in setup.py module_list.py is hidden with no comment
 
 archive/issues_004645.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nRight in the middle of setup.py we find:\n\n```\n\nfrom module_list import ext_modules\n\n```\nwithout further comment.\n\nMove this line to the very top of setup.py and surround it be huge helpful comments.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4645\n\n",
+    "closed_at": "2008-11-29T07:36:51Z",
     "created_at": "2008-11-28T21:47:12Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "in setup.py module_list.py is hidden with no comment.  VERY CONFUSING",
+    "title": "[with patch, with positive review] in setup.py module_list.py is hidden with no comment",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4645",
     "user": "https://github.com/williamstein"

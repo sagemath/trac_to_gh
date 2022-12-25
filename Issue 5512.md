@@ -4,6 +4,7 @@ archive/issues_005512.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: species\n\n```\nsage: T = species.BinaryTreeSpecies()\nsage: t = T.structures([1,2,3])[0]; t\n1*(2*3)\nsage: t[0], t[1][0]\n1, 2\nsage: t[0] == t[1][0]\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5512\n\n",
+    "closed_at": "2012-08-12T18:58:28Z",
     "created_at": "2009-03-13T17:31:47Z",
     "labels": [
         "component: combinatorics",

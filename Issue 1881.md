@@ -1,16 +1,17 @@
-# Issue 1881: Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()
+# Issue 1881: [with trivial patch, positive review] Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()
 
 archive/issues_001881.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nInitially reported by Jaap:\n\n```\nsage -t  tut.tex                                            \n**********************************************************************\nFile \"tut.py\", line 3574:\n    : factor(f)\nExpected:\n    9 * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\nGot:\n    (9) * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1881\n\n",
+    "closed_at": "2008-01-22T01:44:26Z",
     "created_at": "2008-01-21T22:00:18Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()",
+    "title": "[with trivial patch, positive review] Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1881",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

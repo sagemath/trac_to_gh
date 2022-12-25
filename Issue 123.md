@@ -4,6 +4,7 @@ archive/issues_000123.json:
 ```json
 {
     "body": "Assignee: somebody\n\nWhen I start up SAGE in a non-main branch, it prints the branch name. It should print something nicer, like \"Current branch is: ...\"\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/123\n\n",
+    "closed_at": "2006-10-10T05:48:04Z",
     "created_at": "2006-10-09T23:31:55Z",
     "labels": [
         "component: basic arithmetic",

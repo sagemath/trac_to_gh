@@ -3,10 +3,11 @@
 archive/issues_000940.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n    sage: t = '\"%s\"'%10^10000   # ten thousand character string.\n    sage: a = octave(t)\n```\nIf you now try to print a, it take forever.\n\nIssue created by migration from https://trac.sagemath.org/ticket/940\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: octave\n\n```\n    sage: t = '\"%s\"'%10^10000   # ten thousand character string.\n    sage: a = octave(t)\n```\nIf you now try to print a, it take forever.\n\nIssue created by migration from https://trac.sagemath.org/ticket/940\n\n",
+    "closed_at": "2018-10-30T22:37:40Z",
     "created_at": "2007-10-20T08:27:01Z",
     "labels": [
-        "component: interfaces",
+        "component: interfaces: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.5",
@@ -16,7 +17,9 @@ archive/issues_000940.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
+
+Keywords: octave
 
 ```
     sage: t = '"%s"'%10^10000   # ten thousand character string.

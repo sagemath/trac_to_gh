@@ -1,16 +1,17 @@
-# Issue 3196: fix 64 bit OSX build support for R
+# Issue 3196: [with spkg, needs positive review] fix 64 bit OSX build support for R
 
 archive/issues_003196.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up. One issue is that OSX 10.5 does not have a 64 bit libiconv, so that support is disabled.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3196\n\n",
+    "closed_at": "2008-05-28T13:19:29Z",
     "created_at": "2008-05-13T15:40:32Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "fix 64 bit OSX build support for R",
+    "title": "[with spkg, needs positive review] fix 64 bit OSX build support for R",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3196",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

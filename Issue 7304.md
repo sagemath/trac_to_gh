@@ -1,16 +1,16 @@
-# Issue 7304: [With patch, needs review] Contract edge in graph
+# Issue 7304: Contract edge in graph
 
 archive/issues_007304.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  brunellus lkeough @dcoudert @tscrim stefan yomcat\n\nThis patch contract an edge (u,v) in a graph. In the resulting graph vertex u is merged into vertex v.\n\nThe variables u and v can be passed as variables, a tuple (u,v) or a 3-tuple (u,v,'label'). The last allows us to use an element from G.edges() for contraction.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7304\n\n",
+    "closed_at": "2017-08-16T18:46:08Z",
     "created_at": "2009-10-25T20:04:34Z",
     "labels": [
-        "component: graph theory",
-        "bug"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
-    "title": "[With patch, needs review] Contract edge in graph",
+    "title": "Contract edge in graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7304",
     "user": "https://github.com/haaninjo"

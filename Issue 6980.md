@@ -1,16 +1,17 @@
-# Issue 6980: add _nonzero_positions_by_column to sparse integer matrices
+# Issue 6980: [with patch, positive review] add _nonzero_positions_by_column to sparse integer matrices
 
 archive/issues_006980.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nwe still use the dense version:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 5.12 s, sys: 0.01 s, total: 5.14 s\nWall time: 5.19 s\n[]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6980\n\n",
+    "closed_at": "2009-09-25T06:32:20Z",
     "created_at": "2009-09-21T22:20:34Z",
     "labels": [
         "component: linear algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "add _nonzero_positions_by_column to sparse integer matrices",
+    "title": "[with patch, positive review] add _nonzero_positions_by_column to sparse integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6980",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

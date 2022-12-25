@@ -4,6 +4,7 @@ archive/issues_000224.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\nTimothy clemens:\nWhy is some code just as on\nhttp://sage.math.washington.edu:8100/doc_browser?/prog/?node43.html\nnon-excutable in that worksheet?\n```\n\nBecause the doc parser doesn't know about \"notebook input format\",\nironically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/224\n\n",
+    "closed_at": "2009-01-19T13:25:15Z",
     "created_at": "2007-01-28T04:54:42Z",
     "labels": [
         "component: notebook",

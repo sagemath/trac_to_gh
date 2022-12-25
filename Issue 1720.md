@@ -4,6 +4,7 @@ archive/issues_001720.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis updates the numpy package to the latest version \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/numpy-20080104-1.0.4.spkg\n\n(note I have removed a section of the spkg-install that was allowing numpy to build without\natlas if the inital build didn't work. I saw that this was happengin when using gfortran. I think I fixed the initial problem but this may cause build failures that were going unnoticed to become manifest. I want to know so I can fix them.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1720\n\n",
+    "closed_at": "2008-01-09T01:57:47Z",
     "created_at": "2008-01-08T10:05:30Z",
     "labels": [
         "component: packages: standard",

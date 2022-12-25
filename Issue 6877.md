@@ -1,16 +1,17 @@
-# Issue 6877: Boolean function for crypto, small bugfixes and improvement
+# Issue 6877: [with patch, positive review] Boolean function for crypto, small bugfixes and improvement
 
 archive/issues_006877.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @malb\n\nNot even in sage, but already a bug fix...\n\nThe bug comes from the different ordering for enumerating finite fields depending on the implementation (givaro or ntl in this case).\n\nThe improvements are:\n\n- an option to output the truth table in hexadecimal\n- the computation of the algebraic normal form\n\nIssue created by migration from https://trac.sagemath.org/ticket/6877\n\n",
+    "closed_at": "2009-09-03T21:39:36Z",
     "created_at": "2009-09-03T12:21:59Z",
     "labels": [
         "component: cryptography",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Boolean function for crypto, small bugfixes and improvement",
+    "title": "[with patch, positive review] Boolean function for crypto, small bugfixes and improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6877",
     "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"

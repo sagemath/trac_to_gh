@@ -1,16 +1,17 @@
-# Issue 2690: add circular argument to genus command
+# Issue 2690: [with patch, positive review] add circular argument to genus command
 
 archive/issues_002690.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2690\n\n",
+    "body": "Assignee: @rlmill\n\nLooks good, passes tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2690\n\n",
+    "closed_at": "2008-03-28T05:03:09Z",
     "created_at": "2008-03-27T22:14:53Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "add circular argument to genus command",
+    "title": "[with patch, positive review] add circular argument to genus command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2690",
     "user": "https://github.com/rlmill"
@@ -18,7 +19,7 @@ archive/issues_002690.json:
 ```
 Assignee: @rlmill
 
-
+Looks good, passes tests.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2690
 

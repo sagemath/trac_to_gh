@@ -3,7 +3,8 @@
 archive/issues_007746.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @wdjoyner\n\nKeywords: Blum-Goldwasser, probabilistic encryption\n\nThe Blum-Goldwasser probabilistic public-key encryption scheme. This scheme was originally described by (Blum and Goldwasser 1985). See also section 8.7.2 of (Menezes et al. 1996) and the [Wikipedia article](http://en.wikipedia.org/wiki/Blum-Goldwasser_cryptosystem) on this scheme.\n\n* (Blum and Goldwasser 1985) M. Blum and S. Goldwasser. An Efficient Probabilistic Public-Key Encryption Scheme Which Hides All Partial Information. In Proceedings of CRYPTO 84 on Advances in Cryptology, pp. 289\u2013299, Springer, 1985.\n\n* (Menezes et al. 1996) A. J. Menezes, P. C. van Oorschot, and S. A. Vanstone. Handbook of Applied Cryptography. CRC Press, 1996.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7746\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner\n\nKeywords: Blum-Goldwasser, probabilistic encryption\n\nThe Blum-Goldwasser probabilistic public-key encryption scheme. This scheme was originally described by (Blum and Goldwasser 1985). See also section 8.7.2 of (Menezes et al. 1996) and the [Wikipedia article](http://en.wikipedia.org/wiki/Blum-Goldwasser_cryptosystem) on this scheme.\n\n* (Blum and Goldwasser 1985) M. Blum and S. Goldwasser. An Efficient Probabilistic Public-Key Encryption Scheme Which Hides All Partial Information. In Proceedings of CRYPTO 84 on Advances in Cryptology, pp. 289\u2013299, Springer, 1985.\n\n* (Menezes et al. 1996) A. J. Menezes, P. C. van Oorschot, and S. A. Vanstone. Handbook of Applied Cryptography. CRC Press, 1996.\n\nSee #8246 for a follow-up ticket that implements the Carmichael lambda function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7746\n\n",
+    "closed_at": "2010-02-15T03:42:09Z",
     "created_at": "2009-12-21T03:37:12Z",
     "labels": [
         "component: cryptography"
@@ -26,6 +27,8 @@ The Blum-Goldwasser probabilistic public-key encryption scheme. This scheme was 
 * (Blum and Goldwasser 1985) M. Blum and S. Goldwasser. An Efficient Probabilistic Public-Key Encryption Scheme Which Hides All Partial Information. In Proceedings of CRYPTO 84 on Advances in Cryptology, pp. 289–299, Springer, 1985.
 
 * (Menezes et al. 1996) A. J. Menezes, P. C. van Oorschot, and S. A. Vanstone. Handbook of Applied Cryptography. CRC Press, 1996.
+
+See #8246 for a follow-up ticket that implements the Carmichael lambda function.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7746
 

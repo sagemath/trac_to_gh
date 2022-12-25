@@ -3,7 +3,8 @@
 archive/issues_008084.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFrom [this thread in sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f7961d6de8646b26?tvc=2):\n\n```\nwhen doing in notebook \nsage: show('x^2') \nor \nsage: show(type(factor)) \nI get error Unknown control sequence '\\texttt' \n```\nThere are other problems, too; for example, from the command line (not the notebook), \n\n```\nsage: view(type(factor))\nsage: view(identity_matrix)\n```\nproduce odd-looking output -- see the attached pngs.  (The old versions are before the patch, the new ones afterwards.  If you wanted output like the old version of `view(identity_matrix)`, it's probably better to do `browse_sage_doc(identity_matrix)` instead.)\n\nThe attached patch should fix these problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8084\n\n",
+    "body": "Assignee: tbd\n\nKeywords: latex, jsmath\n\nFrom [this thread in sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f7961d6de8646b26?tvc=2):\n\n```\nwhen doing in notebook \nsage: show('x^2') \nor \nsage: show(type(factor)) \nI get error Unknown control sequence '\\texttt' \n```\nThere are other problems, too; for example, from the command line (not the notebook), \n\n```\nsage: view(type(factor))\nsage: view(identity_matrix)\n```\nproduce odd-looking output -- see the attached pngs.  (The old versions are before the patch, the new ones afterwards.  If you wanted output like the old version of `view(identity_matrix)`, it's probably better to do `browse_sage_doc(identity_matrix)` instead.)\n\nThe attached patch should fix these problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8084\n\n",
+    "closed_at": "2010-01-30T23:47:44Z",
     "created_at": "2010-01-26T21:28:05Z",
     "labels": [
         "component: misc",
@@ -18,6 +19,8 @@ archive/issues_008084.json:
 }
 ```
 Assignee: tbd
+
+Keywords: latex, jsmath
 
 From [this thread in sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f7961d6de8646b26?tvc=2):
 

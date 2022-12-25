@@ -1,26 +1,27 @@
-# Issue 9389: sage crashing when computing local_data() for an EC
+# Issue 9389: Bug in polynomials over residue fields (was: sage crashing when computing local_data() for an EC)
 
 archive/issues_009389.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein cturner ylchapuy\n\nKeywords: segfault crash local_data\n\nIn 4.4.4 the following crashes Sage:\n\n```\nsage: K.<b3> = NumberField(x^6 + 15*x^4 + 2*x^3 + 156*x^2 - 48*x + 701)\nsage: E = EllipticCurve(K, [0, 1116/38413*b3^5+54/38413*b3^4+20460/38413*b3^3+3222/38413*b3^2+88752/38413*b3-34404/38413, 0, 54/38413*b3^5+3720/38413*b3^4+990/38413*b3^3+29895/38413*b3^2+19164/38413*b3+485313/38413, 0])\nsage: E.local_data()\n```\n\nBoom!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9389\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein cturner ylchapuy\n\nKeywords: segfault polynomial finite field\n\nIn 4.4.4 the following crashes Sage:\n\n```\nsage: K.<b3> = NumberField(x^6 + 15*x^4 + 2*x^3 + 156*x^2 - 48*x + 701)\nsage: E = EllipticCurve(K, [0, 1116/38413*b3^5+54/38413*b3^4+20460/38413*b3^3+3222/38413*b3^2+88752/38413*b3-34404/38413, 0, 54/38413*b3^5+3720/38413*b3^4+990/38413*b3^3+29895/38413*b3^2+19164/38413*b3+485313/38413, 0])\nsage: E.local_data()\n```\n\nBoom!\n\nHere's a simpler example:\n\n```\nsage: K.<a> = NumberField(x^4-32*x^2+324) # i, sqrt(17)\nsage: E = EllipticCurve(K, [0,0,1,-3,-5])\nsage: E.local_data(K.ideal(3).factor()[0][0])\n```\n\nAgain: boom!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9389\n\n",
+    "closed_at": "2011-10-09T11:11:15Z",
     "created_at": "2010-06-30T03:26:30Z",
     "labels": [
-        "component: algebra",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sage crashing when computing local_data() for an EC",
+    "title": "Bug in polynomials over residue fields (was: sage crashing when computing local_data() for an EC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9389",
     "user": "https://github.com/arminstraub"
 }
 ```
-Assignee: @aghitza
+Assignee: @loefflerd
 
 CC:  @williamstein cturner ylchapuy
 
-Keywords: segfault crash local_data
+Keywords: segfault polynomial finite field
 
 In 4.4.4 the following crashes Sage:
 
@@ -31,6 +32,16 @@ sage: E.local_data()
 ```
 
 Boom!
+
+Here's a simpler example:
+
+```
+sage: K.<a> = NumberField(x^4-32*x^2+324) # i, sqrt(17)
+sage: E = EllipticCurve(K, [0,0,1,-3,-5])
+sage: E.local_data(K.ideal(3).factor()[0][0])
+```
+
+Again: boom!
 
 Issue created by migration from https://trac.sagemath.org/ticket/9389
 

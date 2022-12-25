@@ -1,9 +1,10 @@
-# Issue 6360: [with spkg, needs review] Change -O2 to -O0 in singular spkg
+# Issue 6360: [with spkg, positive review] Change -O2 to -O0 in singular spkg
 
 archive/issues_006360.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @malb wstein\n\nCurrently, singular seems to segfault on some architecture/OS combinations, such as SuSE and ia64. (See #6240 for more details.) The spkg available at `/scratch/craigcitro/patches/singular-3-1-0-2-20090618.spkg` on `sage.math` changes `-O2` to `-O0` to fix this problem until we can get to the root of it (i.e. until we fix #6240). \n\nIssue created by migration from https://trac.sagemath.org/ticket/6360\n\n",
+    "closed_at": "2009-06-19T06:51:35Z",
     "created_at": "2009-06-19T04:37:01Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_006360.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with spkg, needs review] Change -O2 to -O0 in singular spkg",
+    "title": "[with spkg, positive review] Change -O2 to -O0 in singular spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6360",
     "user": "https://github.com/craigcitro"

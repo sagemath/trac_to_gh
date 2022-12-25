@@ -3,7 +3,8 @@
 archive/issues_008805.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nBring doctest for sage/functions folder to 100%.  Specifically:\n\n```\nfunctions/orthogonal_polys.py: 91% (11 of 12)\nfunctions/other.py: 92% (26 of 28)\nfunctions/piecewise.py: 93% (43 of 46)\nfunctions/special.py: 69% (30 of 43)\nfunctions/transcendental.py: 86% (13 of 15)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8805\n\n",
+    "body": "Assignee: mvngu\n\nBring doctest for sage/functions folder to 100%.  Specifically:\n\n```\nfunctions/orthogonal_polys.py: 91% (11 of 12)\nfunctions/other.py: 92% (26 of 28)\nfunctions/piecewise.py: 93% (43 of 46)\nfunctions/special.py: 69% (30 of 43)\nfunctions/transcendental.py: 86% (13 of 15)\n```\n\nApply patches in this order:\n\n1. [trac_8805-functions-dir-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8805/trac_8805-functions-dir-doctest.patch)\n2. [trac_8805-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8805/trac_8805-reviewer.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8805\n\n",
+    "closed_at": "2010-05-08T21:50:53Z",
     "created_at": "2010-04-28T15:24:51Z",
     "labels": [
         "component: documentation",
@@ -27,6 +28,11 @@ functions/piecewise.py: 93% (43 of 46)
 functions/special.py: 69% (30 of 43)
 functions/transcendental.py: 86% (13 of 15)
 ```
+
+Apply patches in this order:
+
+1. [trac_8805-functions-dir-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8805/trac_8805-functions-dir-doctest.patch)
+2. [trac_8805-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8805/trac_8805-reviewer.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8805
 

@@ -4,6 +4,7 @@ archive/issues_007347.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @jasongrout @kcrisman\n\n```\nsage: numerical_integral(SR(0), 0, 1)\nTraceback (most recent call last):\n...\nValueError: Integrand has wrong number of parameters\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7347\n\n",
+    "closed_at": "2011-08-22T08:09:43Z",
     "created_at": "2009-10-29T07:12:05Z",
     "labels": [
         "component: numerical",

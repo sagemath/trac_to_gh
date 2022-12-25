@@ -3,7 +3,7 @@
 archive/issues_005355.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nIf a number field comes with an embedding into the complex numbers, QQbar should allow coercions (or at least conversions) from that number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5355\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: qqbar, coercion\n\nIf a number field comes with an embedding into the complex numbers, QQbar should allow coercions (or at least conversions) from that number field.\nFor example:\n\n```\nsage: K.<a> = NumberField(x^3 - x + 1, embedding=-1.32)\nsage: QQbar.coerce_map_from(K)\nRing morphism:\n  From: Number Field in a with defining polynomial x^3 - x + 1\n  To:   Algebraic Field\n  Defn: a |--> -1.324717957244746?\n```\nCurrently, this map can already be created using `K.hom([QQbar(a)])` (see #13041).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5355\n\n",
     "created_at": "2009-02-24T04:14:09Z",
     "labels": [
         "component: coercion"
@@ -17,7 +17,20 @@ archive/issues_005355.json:
 ```
 Assignee: cwitty
 
+Keywords: qqbar, coercion
+
 If a number field comes with an embedding into the complex numbers, QQbar should allow coercions (or at least conversions) from that number field.
+For example:
+
+```
+sage: K.<a> = NumberField(x^3 - x + 1, embedding=-1.32)
+sage: QQbar.coerce_map_from(K)
+Ring morphism:
+  From: Number Field in a with defining polynomial x^3 - x + 1
+  To:   Algebraic Field
+  Defn: a |--> -1.324717957244746?
+```
+Currently, this map can already be created using `K.hom([QQbar(a)])` (see #13041).
 
 Issue created by migration from https://trac.sagemath.org/ticket/5355
 

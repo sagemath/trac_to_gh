@@ -1,16 +1,17 @@
-# Issue 3407: [with patch, needs review] better error handling for GB calculations
+# Issue 3407: [with patch, positive review] better error handling for GB calculations
 
 archive/issues_003407.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @JohnCremona wstein @mwhansen\n\n* bail out of toy_buchberger if the term ordering is unknown\n* bail out of Singular conversion if number field is relative. Singular supports this, but our conversion not just yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3407\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona wstein @mwhansen\n\nKeywords: editor_malb\n\n* bail out of toy_buchberger if the term ordering is unknown\n* bail out of Singular conversion if number field is relative. Singular supports this, but our conversion not just yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3407\n\n",
+    "closed_at": "2008-06-25T00:39:36Z",
     "created_at": "2008-06-12T22:42:15Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] better error handling for GB calculations",
+    "title": "[with patch, positive review] better error handling for GB calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3407",
     "user": "https://github.com/malb"
@@ -19,6 +20,8 @@ archive/issues_003407.json:
 Assignee: @malb
 
 CC:  @JohnCremona wstein @mwhansen
+
+Keywords: editor_malb
 
 * bail out of toy_buchberger if the term ordering is unknown
 * bail out of Singular conversion if number field is relative. Singular supports this, but our conversion not just yet.

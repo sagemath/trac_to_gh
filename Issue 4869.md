@@ -4,6 +4,7 @@ archive/issues_004869.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nKeywords: relative number field polynomial\n\nJohn Cremona remarked at #4837:\n\nfor an absolute extension we can create an element from a polynomial over the base field, but not for a relative extension:\n\n```\nsage: K.<z>=CyclotomicField(7)\nsage: Ky.<y>=PolynomialRing(K)\nsage: L.<a>=K.extension(y^2+1)\nsage: K(K.polynomial_ring().random_element())\nz + 1\nsage: L(L.polynomial_ring().random_element())\n---------------------------------------------------------------------------\nTypeError           \n...\nTypeError: Unable to coerce 7/2*z^5 + 1/2*z^4 + z^3 - 37/2*z to a rational\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4869\n\n",
+    "closed_at": "2009-01-29T05:45:02Z",
     "created_at": "2008-12-24T12:41:46Z",
     "labels": [
         "component: number theory",

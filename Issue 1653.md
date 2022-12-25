@@ -1,22 +1,23 @@
-# Issue 1653: Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)
+# Issue 1653: [with patch, positive review] Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)
 
 archive/issues_001653.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is a bug:\n\n```\nsage: 2^float(3.1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/integer.pyx in sage.rings.integer.Integer.__pow__()\n\n<type 'exceptions.TypeError'>: exponent (=3.1) must be an integer.\nCoerce your numbers to real or complex numbers first.\n\nNote:\nsage: int(2)^float(3.1)\n8.574187700290345\nsage: (2/1)^float(3.1)\n8.574187700290345\n```\n\nNote that\n\nIssue created by migration from https://trac.sagemath.org/ticket/1653\n\n",
+    "body": "Assignee: dmharvey\n\nThis is a bug:\n\n```\nsage: 2^float(3.1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/integer.pyx in sage.rings.integer.Integer.__pow__()\n\n<type 'exceptions.TypeError'>: exponent (=3.1) must be an integer.\nCoerce your numbers to real or complex numbers first.\n\nNote:\nsage: int(2)^float(3.1)\n8.574187700290345\nsage: (2/1)^float(3.1)\n8.574187700290345\n```\n\nNote that\n\nIssue created by migration from https://trac.sagemath.org/ticket/1653\n\n",
+    "closed_at": "2008-01-20T03:16:33Z",
     "created_at": "2008-01-02T06:29:41Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)",
+    "title": "[with patch, positive review] Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1653",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: dmharvey
 
 This is a bug:
 

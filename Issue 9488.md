@@ -4,6 +4,7 @@ archive/issues_009488.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nThe code in setup.py to pull the parallelization parameter out of the MAKE environment variable can't handle the extra space, but could easily be re-written. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9488\n\n",
+    "closed_at": "2013-05-21T07:22:48Z",
     "created_at": "2010-07-13T05:17:47Z",
     "labels": [
         "component: build",

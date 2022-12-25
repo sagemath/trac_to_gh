@@ -1,9 +1,10 @@
-# Issue 7683: sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!
+# Issue 7683: sphinx reference manual documentation has a major issue: in some cases the input parameters to functions are completely omitted causing great confusion!
 
 archive/issues_007683.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nSee\n\nhttp://sagemath.org/doc/reference/sage/rings/integer.html#sage.rings.integer.Integer.jacobi\n\nNotice that the input parameter b is simply totally omitted from the function signature. In sharp contrast, if you type\n\n```\nsage: a = 5\nsage: a.jacobi(<tab>\n```\nin the notebook, then you'll see the correct sphinx-rendered documentation *with* the other input argument.  This is very bad and confusing for some users who trust reference manuals, especially because evidently the use of INPUT/OUTPUT blocks to describe parameters of functions is not being used nearly as much as it should be (there will be another ticket about that).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7683\n\n",
+    "closed_at": "2009-12-16T02:23:29Z",
     "created_at": "2009-12-15T02:01:17Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_007683.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!",
+    "title": "sphinx reference manual documentation has a major issue: in some cases the input parameters to functions are completely omitted causing great confusion!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7683",
     "user": "https://github.com/williamstein"

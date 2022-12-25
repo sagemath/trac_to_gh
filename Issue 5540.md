@@ -1,22 +1,23 @@
-# Issue 5540: search_doc produces incorrect URLs
+# Issue 5540: [with patch; positive review] search_doc produces incorrect URLs
 
 archive/issues_005540.json:
 ```json
 {
-    "body": "Assignee: tba\n\nKeywords: sphinx, documentation, search_doc\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/t/2da54338e1dda0fe):\n\n```\nIf I do search_doc(\"orbit\") in sage 3.4 (in the notebook), I get\n(amongst others) a link:\n\nhttps://localhost:8000/doc/live/html/en/reference/genindex-F.html\n\nwhich leads to a \"resource cannot be found\". The appropriate link\nseems to be\n\nhttps://localhost:8000/doc/live/reference/genindex-F.html\n\nIt could be that my sage is just screwed up, but if someone else can\nconfirm this error, a ticket should be opened. I bet it's easy to fix.}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/5540\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: sphinx, documentation, search_doc\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/t/2da54338e1dda0fe):\n\n```\nIf I do search_doc(\"orbit\") in sage 3.4 (in the notebook), I get\n(amongst others) a link:\n\nhttps://localhost:8000/doc/live/html/en/reference/genindex-F.html\n\nwhich leads to a \"resource cannot be found\". The appropriate link\nseems to be\n\nhttps://localhost:8000/doc/live/reference/genindex-F.html\n\nIt could be that my sage is just screwed up, but if someone else can\nconfirm this error, a ticket should be opened. I bet it's easy to fix.}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/5540\n\n",
+    "closed_at": "2009-03-25T07:34:19Z",
     "created_at": "2009-03-17T02:26:54Z",
     "labels": [
-        "component: documentation",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "search_doc produces incorrect URLs",
+    "title": "[with patch; positive review] search_doc produces incorrect URLs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5540",
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 Keywords: sphinx, documentation, search_doc
 

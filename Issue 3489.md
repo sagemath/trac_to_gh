@@ -4,6 +4,7 @@ archive/issues_003489.json:
 ```json
 {
     "body": "Assignee: ghtdak\n\nImplement general Distributed Object Computing (DOC) in Sage.  This includes parallel computation, exogenous event handling, and general distributed services (e.g. persistence).\n\nhttp://wiki.sagemath.org/CategoryDsageNg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3489\n\n",
+    "closed_at": "2008-07-10T19:44:03Z",
     "created_at": "2008-06-20T23:55:23Z",
     "labels": [
         "component: dsage"

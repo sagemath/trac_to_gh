@@ -1,9 +1,10 @@
-# Issue 3017: invalid link after make install
+# Issue 3017: [with spkg, positive review] invalid link after make install
 
 archive/issues_003017.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAn invalid link is present in sage 3.0 (after make install):\n\n```\n[root@achille local]# ls -l ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori\nlrwxrwxrwx 1 zimmerma cacao 39 2008-04-24 14:43 ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori -> ../../../share/polybori/pyroot/polybori\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3017\n\n",
+    "closed_at": "2008-04-26T06:49:59Z",
     "created_at": "2008-04-24T12:54:29Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_003017.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "invalid link after make install",
+    "title": "[with spkg, positive review] invalid link after make install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3017",
     "user": "https://github.com/zimmermann6"

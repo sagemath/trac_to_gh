@@ -4,10 +4,10 @@ archive/issues_009740.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @rbeezer @kcrisman\n\nThis patch:\n* flips the matrix so that it is right side up, and flips the y-axis to correctly label the rows, unless origin='lower' is specified.\n* Adds matplotlib's vmin and vmax parameters, which control the scaling\n* Adds matplotlib's norm parameter, which also controls the scaling\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9740\n\n",
+    "closed_at": "2010-10-03T06:36:03Z",
     "created_at": "2010-08-13T08:14:04Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "matrix plot is upside down and should wrap more matplotlib options",

@@ -4,6 +4,7 @@ archive/issues_007717.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nKeywords: coverage\n\nAdds features to the sage-coverage script.\n\n- rewrite for modularity and easier addition of features\n- changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.\n- adds option to check cdef'd functions\n- adds option to check docstrings on classes\n- adds option to check for the existence of INPUT block\n- adds option to check that parameters are all listed in the INPUT block.\n- adds option to check for the existence of OUTPUT block\n\nSo that we don't bring our coverage level way down, these aren't turned on automatically.  Instead, they can be invoked from the command line by using options ( -cdefs, -classes, -input, -output and -params)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7717\n\n",
+    "closed_at": "2009-12-17T01:47:40Z",
     "created_at": "2009-12-17T01:44:07Z",
     "labels": [
         "component: documentation"

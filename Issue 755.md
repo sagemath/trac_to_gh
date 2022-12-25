@@ -1,16 +1,17 @@
-# Issue 755: graphs: adjacency_matrix() does not call multiple_edges correctly.
+# Issue 755: [with patch] graphs: adjacency_matrix() does not call multiple_edges correctly.
 
 archive/issues_000755.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nA line in adjacency_matrix() calls self.multiple_edges instead of self.multiple_edges(), causing adjacency_matrix() to never return a matrix over IntegerModRing(2), like it apparently was designed to return.  However, kirchhoff_matrix() relies on this bug, as it does a list(-M), where M is the adjacency matrix, which doesn't work when M is a binary matrix.  So kirchhoff_matrix() needs to be fixed (so it doesn't rely on the faulty behavior).\n\nIssue created by migration from https://trac.sagemath.org/ticket/755\n\n",
+    "closed_at": "2007-10-04T19:52:39Z",
     "created_at": "2007-09-26T15:49:08Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "graphs: adjacency_matrix() does not call multiple_edges correctly.",
+    "title": "[with patch] graphs: adjacency_matrix() does not call multiple_edges correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/755",
     "user": "https://github.com/jasongrout"

@@ -4,10 +4,11 @@ archive/issues_000517.json:
 ```json
 {
     "body": "Assignee: boothby\n\nImplementation uses slow algorithms, where O(1) algorithms are easy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/517\n\n",
+    "closed_at": "2008-08-02T03:09:19Z",
     "created_at": "2007-08-29T21:25:29Z",
     "labels": [
         "component: basic arithmetic",
-        "minor"
+        "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "abelian_group_element / dual_abelian_group_element classes need rewrite",

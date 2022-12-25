@@ -1,9 +1,10 @@
-# Issue 5594: better error message for list_plot
+# Issue 5594: [with patch, positive review] better error message for list_plot
 
 archive/issues_005594.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWe might consider testing whether the second argument to list_plot (which is \"plotjoined\", should be boolean) is a list or tuple, and then print a warning, because perhaps someone ran \"list_plot([list1], [list2])\" without meaning to.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5594\n\n",
+    "closed_at": "2009-06-24T10:06:43Z",
     "created_at": "2009-03-23T21:22:32Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_005594.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "better error message for list_plot",
+    "title": "[with patch, positive review] better error message for list_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5594",
     "user": "https://github.com/jasongrout"

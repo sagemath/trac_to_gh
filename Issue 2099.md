@@ -1,21 +1,22 @@
-# Issue 2099: Make sage-test execute multiple doctests in parallel
+# Issue 2099: [with patch, positive review] Make sage-test execute multiple doctests in parallel
 
 archive/issues_002099.json:
 ```json
 {
-    "body": "Assignee: @ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: sage test doctest multiple parallel\n\nIt would greatly speed testing if `sage-test` doctested multiple files in parallel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2099\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  ncalexander@gmail.com\n\nKeywords: sage test doctest multiple parallel\n\nIt would greatly speed testing if `sage-test` doctested multiple files in parallel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2099\n\n",
+    "closed_at": "2008-03-03T04:55:40Z",
     "created_at": "2008-02-08T04:40:23Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Make sage-test execute multiple doctests in parallel",
+    "title": "[with patch, positive review] Make sage-test execute multiple doctests in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2099",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @ncalexan
+Assignee: @garyfurnish
 
 CC:  ncalexander@gmail.com
 

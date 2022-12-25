@@ -1,16 +1,17 @@
-# Issue 2485: Complete docstrings and doctests for schemes/elliptic_curves
+# Issue 2485: [with patches,  with positive review] Complete docstrings and doctests for schemes/elliptic_curves
 
 archive/issues_002485.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @ncalexan\n\nKeywords: elliptic curves\n\nFollowing Doc Days 2 on 2008-03-09 I am working on making the docstrings and tests for schemes/elliptic_curves as complete as I can.  A patch based on 2.10.3 will be posted here in time for 2.10.4, I hope.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2485\n\n",
+    "closed_at": "2008-03-15T19:27:00Z",
     "created_at": "2008-03-12T09:25:54Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Complete docstrings and doctests for schemes/elliptic_curves",
+    "title": "[with patches,  with positive review] Complete docstrings and doctests for schemes/elliptic_curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2485",
     "user": "https://github.com/JohnCremona"

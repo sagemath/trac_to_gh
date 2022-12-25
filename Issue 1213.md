@@ -1,9 +1,10 @@
-# Issue 1213: strange unused file sage/plot/mpl_wrapper.py should be fixed or deleted
+# Issue 1213: [with patch, positive review] strange unused file sage/plot/mpl_wrapper.py should be deleted
 
 archive/issues_001213.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.\n\nAlso, in mpl_wrapper.py it mentions the \"sage -mpl\" option.  In sage-sage, it says\n\n```\n    echo \"  -mpl          -- run with matplotlib support (requires optional matplotlib package)\"\n```\nbut \"sage -mpl\" does not act obviously different than just \"sage\".  I'm guessing that all the \"-mpl\" stuff should be removed from sage-sage, as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1213\n\n",
+    "body": "Assignee: mabshoff\n\nI think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.\n\nAlso, in mpl_wrapper.py it mentions the \"sage -mpl\" option.  In sage-sage, it says\n\n```\n    echo \"  -mpl          -- run with matplotlib support (requires optional matplotlib package)\"\n```\nbut \"sage -mpl\" does not act obviously different than just \"sage\".  I'm guessing that all the \"-mpl\" stuff should be removed from sage-sage, as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1213\n\n",
+    "closed_at": "2008-08-31T05:14:11Z",
     "created_at": "2007-11-20T05:16:21Z",
     "labels": [
         "component: misc",
@@ -11,13 +12,13 @@ archive/issues_001213.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "strange unused file sage/plot/mpl_wrapper.py should be fixed or deleted",
+    "title": "[with patch, positive review] strange unused file sage/plot/mpl_wrapper.py should be deleted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1213",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 I think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.
 

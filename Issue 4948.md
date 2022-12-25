@@ -1,21 +1,22 @@
-# Issue 4948: implement the transfer of Mathematica lists back to Sage
+# Issue 4948: [with patch, positive review] implement the transfer of Mathematica lists back to Sage
 
 archive/issues_004948.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @jasongrout\n\nMake the following work:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: slist = [1,2,3]\nsage: mathematica(slist) \n{1, 2, 3}\nsage: list(mathematica(slist))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mabshoff/.sage/temp/sage/11670/_home_mabshoff__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __len__(self)\n   1345 \n   1346     def __len__(self):\n-> 1347         raise NotImplementedError\n   1348 \n   1349     def __reduce__(self):\n\nNotImplementedError: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4948\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nMake the following work:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: slist = [1,2,3]\nsage: mathematica(slist) \n{1, 2, 3}\nsage: list(mathematica(slist))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mabshoff/.sage/temp/sage/11670/_home_mabshoff__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __len__(self)\n   1345 \n   1346     def __len__(self):\n-> 1347         raise NotImplementedError\n   1348 \n   1349     def __reduce__(self):\n\nNotImplementedError: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4948\n\n",
+    "closed_at": "2009-09-17T08:24:26Z",
     "created_at": "2009-01-07T03:55:28Z",
     "labels": [
-        "component: misc"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "implement the transfer of Mathematica lists back to Sage",
+    "title": "[with patch, positive review] implement the transfer of Mathematica lists back to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4948",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: cwitty
+Assignee: @williamstein
 
 CC:  @jasongrout
 

@@ -1,16 +1,17 @@
-# Issue 6936: [with patch, needs review] Implement generic testing from #6343 for matrices
+# Issue 6936: Implement generic testing from #6343 for matrices
 
 archive/issues_006936.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @nthiery @hivert @rbeezer\n\nThe patch calls TestSuite().run() every time load(dumps()) is called in the matrix directory.  I also added a _test_minpoly() function, and fixed an existing _test_pickle() function.\n\nRunning doctests in matrix/*.pyx now fails for a number of files.  In other words, this testing infrastructure works and is uncovering bugs!\n\nThe bugs should be dealt with on other tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6936\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @nthiery @hivert @rbeezer\n\nKeywords: TestSuite\n\nThe patch calls TestSuite().run() every time load(dumps()) was called in the matrix directory.  I also renamed and adapted an existing _test_pickle() into _test_reduce().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6936\n\n",
+    "closed_at": "2010-01-19T05:33:07Z",
     "created_at": "2009-09-15T18:20:03Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
-    "title": "[with patch, needs review] Implement generic testing from #6343 for matrices",
+    "title": "Implement generic testing from #6343 for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6936",
     "user": "https://github.com/jasongrout"
@@ -20,11 +21,10 @@ Assignee: @williamstein
 
 CC:  @kcrisman @nthiery @hivert @rbeezer
 
-The patch calls TestSuite().run() every time load(dumps()) is called in the matrix directory.  I also added a _test_minpoly() function, and fixed an existing _test_pickle() function.
+Keywords: TestSuite
 
-Running doctests in matrix/*.pyx now fails for a number of files.  In other words, this testing infrastructure works and is uncovering bugs!
+The patch calls TestSuite().run() every time load(dumps()) was called in the matrix directory.  I also renamed and adapted an existing _test_pickle() into _test_reduce().
 
-The bugs should be dealt with on other tickets.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6936
 

@@ -1,16 +1,17 @@
-# Issue 4995: OSX 64 bit: add 64 bit build support for boehm_gc
+# Issue 4995: [with spkg, positive review] OSX 64 bit: add 64 bit build support for boehm_gc
 
 archive/issues_004995.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4995\n\n",
+    "closed_at": "2009-01-23T00:29:00Z",
     "created_at": "2009-01-17T15:36:26Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "OSX 64 bit: add 64 bit build support for boehm_gc",
+    "title": "[with spkg, positive review] OSX 64 bit: add 64 bit build support for boehm_gc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4995",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

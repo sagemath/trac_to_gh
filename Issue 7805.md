@@ -1,16 +1,17 @@
-# Issue 7805: MixedIntegerLinearProgram.show should use the variables' and constraints' names
+# Issue 7805: MixedIntegerLinearProgram.show should use the constraints' names
 
 archive/issues_007805.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nAs the title says, this function currently doesn't use them ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7805\n\n",
+    "closed_at": "2010-04-15T23:42:55Z",
     "created_at": "2010-01-01T14:33:09Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "MixedIntegerLinearProgram.show should use the variables' and constraints' names",
+    "title": "MixedIntegerLinearProgram.show should use the constraints' names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7805",
     "user": "https://github.com/nathanncohen"

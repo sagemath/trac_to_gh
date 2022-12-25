@@ -4,6 +4,7 @@ archive/issues_007756.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/95aa96ca848ef135) and [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/47f6756f00df1f72/6f3dd9ce745832e4?#6f3dd9ce745832e4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7756\n\n",
+    "closed_at": "2009-12-24T06:56:16Z",
     "created_at": "2009-12-24T06:18:37Z",
     "labels": [
         "component: notebook",

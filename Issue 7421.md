@@ -1,16 +1,17 @@
-# Issue 7421: Weaker precondition for registering a new coercion.
+# Issue 7421: Weaker precondition for registering a new coercion
 
 archive/issues_007421.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  sage-combinat @robertwb\n\nKeywords: coercion\n\nWith the attached patch, the precondition for registering a new\ncoercion from P to Q with register_coercion becomes: \n\n \"no over coercion from P to Q has been registered or discovered earlier\"\n\nWhich is a bit weaker than the previous:\n\n \"no coercion into P has been queried\"\n\nThis should still be quite safe, while covering all the formerly\nproblematic practical use cases coming up in the category code #5981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7421\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat @robertwb\n\nKeywords: coercion\n\nWith the attached patch, the precondition for registering a new\ncoercion from P to Q with register_coercion becomes: \n\n \"no coercion into P has been queried, or no coercion from P to Q has been registered or discovered earlier\"\n\nWhich is a bit weaker than the previous:\n\n \"no coercion into P has been queried\"\n\nThis should still be quite safe, while covering all the formerly\nproblematic practical use cases coming up in the category code #5981.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7421\n\n",
+    "closed_at": "2009-11-17T05:53:42Z",
     "created_at": "2009-11-10T01:02:16Z",
     "labels": [
         "component: coercion",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Weaker precondition for registering a new coercion.",
+    "title": "Weaker precondition for registering a new coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7421",
     "user": "https://github.com/nthiery"
@@ -25,7 +26,7 @@ Keywords: coercion
 With the attached patch, the precondition for registering a new
 coercion from P to Q with register_coercion becomes: 
 
- "no over coercion from P to Q has been registered or discovered earlier"
+ "no coercion into P has been queried, or no coercion from P to Q has been registered or discovered earlier"
 
 Which is a bit weaker than the previous:
 
@@ -33,6 +34,7 @@ Which is a bit weaker than the previous:
 
 This should still be quite safe, while covering all the formerly
 problematic practical use cases coming up in the category code #5981.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7421
 

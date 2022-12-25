@@ -3,7 +3,8 @@
 archive/issues_002827.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe code suspect code is the following (which doesn't isn't flexible enough:\n\n```\nif len(sys.argv) > 1:\n    notebook(*sys.argv[1:])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2827\n\n",
+    "body": "Assignee: boothby\n\nThe suspect code is the following (which isn't flexible enough):\n\n```\nif len(sys.argv) > 1:\n    notebook(*sys.argv[1:])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2827\n\n",
+    "closed_at": "2020-03-29T02:12:30Z",
     "created_at": "2008-04-06T10:05:02Z",
     "labels": [
         "component: notebook",
@@ -19,7 +20,7 @@ archive/issues_002827.json:
 ```
 Assignee: boothby
 
-The code suspect code is the following (which doesn't isn't flexible enough:
+The suspect code is the following (which isn't flexible enough):
 
 ```
 if len(sys.argv) > 1:

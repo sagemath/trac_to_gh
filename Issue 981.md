@@ -1,9 +1,10 @@
-# Issue 981: bug in the method conjugacy_classes_subgroups
+# Issue 981: [with patch] bug in the method conjugacy_classes_subgroups
 
 archive/issues_000981.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nthere is a bug in the module permgroup.py, at line 1226,\nthe method conjugacy_classes_subgroups calls PermutationGroupElement;\nI think it should be PermutationGroup.\nreported by Biel\n\nIssue created by migration from https://trac.sagemath.org/ticket/981\n\n",
+    "closed_at": "2007-10-24T19:14:37Z",
     "created_at": "2007-10-24T14:16:00Z",
     "labels": [
         "component: combinatorics",
@@ -11,7 +12,7 @@ archive/issues_000981.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "bug in the method conjugacy_classes_subgroups",
+    "title": "[with patch] bug in the method conjugacy_classes_subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/981",
     "user": "https://github.com/wdjoyner"

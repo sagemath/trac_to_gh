@@ -1,9 +1,10 @@
-# Issue 4231: magma -- long input too verbose in some cases
+# Issue 4231: [with patch, positive review]  magma -- long input too verbose in some cases
 
 archive/issues_004231.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\n```\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x) +\n> Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> I get the funny error message:\n> ---\n> Loading\n> \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/5272//interface//tmp5272\"\n> ---\n> but I think the calculation goes through. I'm guessing this is because\n> Magma is returning a long output which gets saved to  a temporary\n> file. But does the notebook user really need to see this message? I\n> don't.\n>\n> Incidentally, if I change the last line to the following two lines:\n> ---\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x);\n> temp2 := temp2 + Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> then I don't get any error message.\n\nI believe that Sage uses temp files for inputs larger than a certain\nsize.  It seems this long input passed that size and you're seeing a\n\"verbose loading\" message.  Not really an error message, but I'm sure\nWilliam can add it to his list of Magma interface things to do.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4231\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\n```\nWhen evaluating this in the notebook:\n\n%magma\npolt<t> := RationalFunctionField(Rationals());\nR<w,x,y,z> := PolynomialRing(polt, 4);\nQ0 := w^3 + x^3 + y^3 + z^3;\nQ := (w+x)*(w+2*y)*(w+3*z) + 3*x*y*(w+x+z);\nQt := Q0 + t*Q;\nQt_gradient := [Derivative(Qt, w), Derivative(Qt, x), Derivative(Qt, y), Derivative(Qt, z)];\nQt_jac := IdealWithFixedBasis(Qt_gradient);\nb := w*x*y*z;\ntemp := Coordinates(Qt_jac, 3*b*Q);\ntemp2 := Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y) + Derivative(temp[4],z);\n\n\n> ---\n> I get the funny error message:\n> ---\n> Loading\n> \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/5272//interface//tmp5272\"\n> ---\n> but I think the calculation goes through. I'm guessing this is because\n> Magma is returning a long output which gets saved to  a temporary\n> file. But does the notebook user really need to see this message? I\n> don't.\n>\n> Incidentally, if I change the last line to the following two lines:\n> ---\n> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x);\n> temp2 := temp2 + Derivative(temp[3],y) + Derivative(temp[4],z);\n> ---\n> then I don't get any error message.\n \nI believe that Sage uses temp files for inputs larger than a certain\nsize.  It seems this long input passed that size and you're seeing a\n\"verbose loading\" message.  Not really an error message, but I'm sure\nWilliam can add it to his list of Magma interface things to do.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4231\n\n",
+    "closed_at": "2008-10-12T15:33:49Z",
     "created_at": "2008-10-01T16:18:13Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_004231.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "magma -- long input too verbose in some cases",
+    "title": "[with patch, positive review]  magma -- long input too verbose in some cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4231",
     "user": "https://github.com/williamstein"
@@ -22,8 +23,21 @@ Assignee: @williamstein
 CC:  georgsweber
 
 ```
-> temp2 := Derivative(temp[1],w) + Derivative(temp[2],x) +
-> Derivative(temp[3],y) + Derivative(temp[4],z);
+When evaluating this in the notebook:
+
+%magma
+polt<t> := RationalFunctionField(Rationals());
+R<w,x,y,z> := PolynomialRing(polt, 4);
+Q0 := w^3 + x^3 + y^3 + z^3;
+Q := (w+x)*(w+2*y)*(w+3*z) + 3*x*y*(w+x+z);
+Qt := Q0 + t*Q;
+Qt_gradient := [Derivative(Qt, w), Derivative(Qt, x), Derivative(Qt, y), Derivative(Qt, z)];
+Qt_jac := IdealWithFixedBasis(Qt_gradient);
+b := w*x*y*z;
+temp := Coordinates(Qt_jac, 3*b*Q);
+temp2 := Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y) + Derivative(temp[4],z);
+
+
 > ---
 > I get the funny error message:
 > ---
@@ -41,7 +55,7 @@ CC:  georgsweber
 > temp2 := temp2 + Derivative(temp[3],y) + Derivative(temp[4],z);
 > ---
 > then I don't get any error message.
-
+ 
 I believe that Sage uses temp files for inputs larger than a certain
 size.  It seems this long input passed that size and you're seeing a
 "verbose loading" message.  Not really an error message, but I'm sure

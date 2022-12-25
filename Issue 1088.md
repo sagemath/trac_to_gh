@@ -4,6 +4,7 @@ archive/issues_001088.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nHere's an implementation of a minimum spanning tree function.  Well, actually 3 implementations, defaulting to Kruskal's algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1088\n\n",
+    "closed_at": "2007-11-06T23:54:16Z",
     "created_at": "2007-11-03T20:45:05Z",
     "labels": [
         "component: combinatorics"

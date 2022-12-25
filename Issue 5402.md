@@ -4,6 +4,7 @@ archive/issues_005402.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jbandlow\n\nKeywords: determinant\n\nThe following timings should be able to be improved.\n\n```\n       sage: dd = {(0,0):1}\n       sage: %timeit matrix(8,dd).det()\n       10 loops, best of 3: 213 ms per loop\n       sage: %timeit matrix(8,dd,sparse = False).det()\n       100 loops, best of 3: 629 \u00b5s per loop\n```\nWilliam suggested:\nLikely the fix will be to implement\na 1-line function that is just\n\n```\n  return self.dense_matrix().det(*args, **kwds)\n```\nuntil there is somebody who wants to implement a sparse algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5402\n\n",
+    "closed_at": "2013-01-09T09:00:11Z",
     "created_at": "2009-02-28T20:16:47Z",
     "labels": [
         "component: linear algebra"

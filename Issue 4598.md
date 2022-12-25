@@ -1,9 +1,10 @@
-# Issue 4598: add sage/libs/gmp/__init__.py to MANIFEST.in
+# Issue 4598: [with patch, positive review] add sage/libs/gmp/__init__.py to MANIFEST.in
 
 archive/issues_004598.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis causes build failures of the Sage library in Sage 3.2.1.alpha0.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4598\n\n",
+    "closed_at": "2008-11-25T13:46:13Z",
     "created_at": "2008-11-23T21:20:17Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004598.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "add sage/libs/gmp/__init__.py to MANIFEST.in",
+    "title": "[with patch, positive review] add sage/libs/gmp/__init__.py to MANIFEST.in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4598",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

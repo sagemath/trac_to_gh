@@ -1,17 +1,18 @@
-# Issue 6258: Improve accuracy of graph eigenvalues
+# Issue 6258: [with patch, positive review] Improve accuracy of graph eigenvalues
 
 archive/issues_006258.json:
 ```json
 {
     "body": "Assignee: @rbeezer\n\nCC:  @jasongrout\n\nEigenspaces and eigenvalues of graphs are computed by converting the adjacency matrix to have RDF as the base ring, but there are now better routines in place for eigenvalues of integer matrices, so the `eigenspaces()` and `eigenvalues()` methods should be using those.\n\nAt present, the approximate values of the eigenvalues lead to eigenspaces \"splitting\" into pieces (i.e. several eigenspaces that should all be one), so in that regard current results are inaccurate.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6258\n\n",
+    "closed_at": "2009-07-02T20:34:00Z",
     "created_at": "2009-06-11T03:02:30Z",
     "labels": [
         "component: graph theory",
-        "minor",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Improve accuracy of graph eigenvalues",
+    "title": "[with patch, positive review] Improve accuracy of graph eigenvalues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6258",
     "user": "https://github.com/rbeezer"

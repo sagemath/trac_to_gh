@@ -4,6 +4,7 @@ archive/issues_008991.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  alubovsky\n\n```\nhg qinit\nhg -f qnew\n```\n\nare deprecated in newer versions of Mercurial (1.5) which some may be using (ie not using the version distributed with Sage).  This patch includes text to transition to the new state of the syntax without abandoning the old.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8991\n\n",
+    "closed_at": "2010-05-19T07:49:57Z",
     "created_at": "2010-05-19T00:09:26Z",
     "labels": [
         "component: documentation",

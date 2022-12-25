@@ -3,7 +3,8 @@
 archive/issues_008640.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rhinton\n\nFor the moment, Sage's documentation does not include the BipartiteGraph class. \n\nFor the moment, patches #8329 #8421 and #8425 are still to be merged, and waiting for them to be is a lazy way to avoid conflicts :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8640\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rhinton\n\nFor the moment, Sage's documentation does not include the BipartiteGraph class. \n\nFor the moment, patches #8329 #8421 and #8425 are still to be merged, and waiting for them to be is a lazy way to avoid conflicts :-)\n\n**Prerequisites:** #8819, #8831\n\nApply patches in this order:\n\n1. #8819\n2. #8831\n3. [trac_8640-bipartite.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8640/trac_8640-bipartite.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8640\n\n",
+    "closed_at": "2010-05-12T22:47:52Z",
     "created_at": "2010-04-01T14:32:22Z",
     "labels": [
         "component: documentation",
@@ -24,7 +25,13 @@ For the moment, Sage's documentation does not include the BipartiteGraph class.
 
 For the moment, patches #8329 #8421 and #8425 are still to be merged, and waiting for them to be is a lazy way to avoid conflicts :-)
 
-Nathann
+**Prerequisites:** #8819, #8831
+
+Apply patches in this order:
+
+1. #8819
+2. #8831
+3. [trac_8640-bipartite.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8640/trac_8640-bipartite.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8640
 

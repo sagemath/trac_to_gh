@@ -1,16 +1,17 @@
-# Issue 1212: make gfortran mandatory on OSX 10.5
+# Issue 1212: update g95 for OSX 10.5
 
 archive/issues_001212.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nscipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So on 10.5 make gfortran mandatory and otherwise error out early.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1212\n\n",
+    "body": "Assignee: @williamstein\n\nscipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So update g95 from \n\nhttp://ftp.g95.org/g95-x86-osx.tgz\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1212\n\n",
+    "closed_at": "2007-11-20T09:39:21Z",
     "created_at": "2007-11-20T00:36:10Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
-    "title": "make gfortran mandatory on OSX 10.5",
+    "title": "update g95 for OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1212",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -18,7 +19,9 @@ archive/issues_001212.json:
 ```
 Assignee: @williamstein
 
-scipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So on 10.5 make gfortran mandatory and otherwise error out early.
+scipy and cvxopt still fail to build on 10.5 with the binary g95 compiled for 10.4. So update g95 from 
+
+http://ftp.g95.org/g95-x86-osx.tgz
 
 Cheers,
 

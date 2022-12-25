@@ -3,10 +3,11 @@
 archive/issues_003388.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIn http://groups.google.com/group/sage-devel/t/ba359f3b1ba435d David wrote:\n\n```\nOkay, I can confirm that with sage 3.0.1, sage -gp has the same speed  \nas my standalone GP build. So mostly likely the change to GMP 4.2.2  \nintroduced a speed regression (probably the core 2 patches not being  \napplied properly).\n\ndavid \n```\nFix this!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3388\n\n",
+    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-devel/t/ba359f3b1ba435d David wrote:\n\n```\nOkay, I can confirm that with sage 3.0.1, sage -gp has the same speed  \nas my standalone GP build. So mostly likely the change to GMP 4.2.2  \nintroduced a speed regression (probably the core 2 patches not being  \napplied properly).\n\ndavid \n```\nFix this!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3388\n\n",
+    "closed_at": "2008-08-30T07:06:43Z",
     "created_at": "2008-06-10T02:35:04Z",
     "labels": [
-        "component: algebra",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -17,7 +18,7 @@ archive/issues_003388.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 In http://groups.google.com/group/sage-devel/t/ba359f3b1ba435d David wrote:
 

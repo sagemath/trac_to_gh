@@ -1,22 +1,23 @@
-# Issue 1724: Creating ModularForms from q-expansions
+# Issue 1724: [with patch, positive review] Creating ModularForms from q-expansions
 
 archive/issues_001724.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is a way of creating modular forms from their Fourier expansions; for instance\n\n```\nS12=CuspForms(1,12)\nPSR.<q>=PowerSeriesRing(QQ)\nS12(q- 24*q^2 + 252*q^3 - 1472*q^4)\n```\ngives\n\n```\nq - 24*q^2 + 252*q^3 - 1472*q^4 + 4830*q^5 + O(q^6)\n```\n\nHowever, one needs strictly more than the Sturm bound's worth of Fourier coefficients to make this work:\n\n```\nS12(q+O(q^2))\n```\ngives\n\n```\nException (click to the left for traceback):\n...\nTypeError: q-expansion needed to at least precision 4\n```\n\n... as here the Sturm bound is 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1724\n\n",
+    "body": "Assignee: @craigcitro\n\nThere is a way of creating modular forms from their Fourier expansions; for instance\n\n```\nS12=CuspForms(1,12)\nPSR.<q>=PowerSeriesRing(QQ)\nS12(q- 24*q^2 + 252*q^3 - 1472*q^4)\n```\ngives\n\n```\nq - 24*q^2 + 252*q^3 - 1472*q^4 + 4830*q^5 + O(q^6)\n```\n\nHowever, one needs strictly more than the Sturm bound's worth of Fourier coefficients to make this work:\n\n```\nS12(q+O(q^2))\n```\ngives\n\n```\nException (click to the left for traceback):\n...\nTypeError: q-expansion needed to at least precision 4\n```\n\n... as here the Sturm bound is 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1724\n\n",
+    "closed_at": "2008-01-25T23:21:23Z",
     "created_at": "2008-01-08T21:20:05Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Creating ModularForms from q-expansions",
+    "title": "[with patch, positive review] Creating ModularForms from q-expansions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1724",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 There is a way of creating modular forms from their Fourier expansions; for instance
 

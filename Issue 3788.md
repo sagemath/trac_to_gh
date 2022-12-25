@@ -1,16 +1,17 @@
-# Issue 3788: [with patch, needs review] many matrix_dense_modn operations are unreasonably slow
+# Issue 3788: [with patch, positive review] many matrix_dense_modn operations are unreasonably slow
 
 archive/issues_003788.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is because they use the generic algorithms (extracting each element as a Python object). \n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/dae70440d7fd41\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3788\n\n",
+    "closed_at": "2008-08-08T23:37:55Z",
     "created_at": "2008-08-07T10:04:21Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] many matrix_dense_modn operations are unreasonably slow",
+    "title": "[with patch, positive review] many matrix_dense_modn operations are unreasonably slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3788",
     "user": "https://github.com/robertwb"

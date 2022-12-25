@@ -1,9 +1,10 @@
-# Issue 6154: [with patch; needs review] fix some numerical noise in rc2
+# Issue 6154: [with patch; positive review] fix some numerical noise in rc2
 
 archive/issues_006154.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6154\n\n",
+    "closed_at": "2009-05-30T04:59:58Z",
     "created_at": "2009-05-30T03:39:19Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_006154.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] fix some numerical noise in rc2",
+    "title": "[with patch; positive review] fix some numerical noise in rc2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6154",
     "user": "https://github.com/williamstein"

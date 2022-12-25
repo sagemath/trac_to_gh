@@ -1,16 +1,18 @@
-# Issue 2722: [with patch; needs trivial review] interact -- a doctest problem
+# Issue 2722: [with patch; with positive review] interact -- a doctest problem
 
 archive/issues_002722.json:
 ```json
 {
     "body": "Assignee: boothby\n\n```\n>  Fedora 7 32 bits:\n>  \n>  sage -t  devel/sage-main/sage/server/notebook/interact.py   **********************************************************************\n>  File \"interact.py\", line 1420:\n>      sage: slider([1, 'x', 'abc', 2/3], None, None, 3, 'alpha')\n>  Expected:\n>      Slider: alpha [abc--|1|---1]\n>  Got:\n>      Slider: alpha [2/3--|1|---x]\n>  **********************************************************************\n>  1 items had failures:\n>     1 of   3 in __main__.example_62\n>  ***Test Failed*** 1 failures.\n>  For whitespace errors, see the file .doctest_interact.py\n>           [2.4 s]\n\n\nGood catch.  The right fix is to change the input that causes\nthat failure to:\n   sage: slider([1, 'x', 'abc', 2/3], None, None, 'abc', 'alpha')\n\nThis was caused by a change in the definition of the slider\nfunction, which results in extreme cases in system-specific\nbehavior.  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2722\n\n",
+    "closed_at": "2008-03-29T18:50:43Z",
     "created_at": "2008-03-29T17:43:25Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch; needs trivial review] interact -- a doctest problem",
+    "title": "[with patch; with positive review] interact -- a doctest problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2722",
     "user": "https://github.com/williamstein"

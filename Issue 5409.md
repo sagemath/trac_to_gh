@@ -1,15 +1,16 @@
-# Issue 5409: rewrite quaternion algebras -- the current implementation isn't sufficiently good
+# Issue 5409: [with patch; positive review] rewrite quaternion algebras -- the current implementation isn't sufficiently good
 
 archive/issues_005409.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  bober\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5409\n\n",
+    "body": "Assignee: tbd\n\nCC:  bober\n\nThe goal of this ticket is to rewrite QuaternionAlgebra so that it is very very fast.  \n\nSince QuaternionAlgebra is used nowhere else in Sage and much of the code for orders has 0% coverage and is totally broken, and moreover the design of QuaternionAlgebras is a bit odd (according to Gonzalo T. and John Voight), we will remove some functions.   I think deprecation isn't necessary here since this code simply isn't used much if at all by anyone.\n\nNote that the code in sage <=3.3 is between 50 and 250 times slower than Magma on benchmarks I tried... so it's hard to imagine it ever being used for anything.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5409\n\n",
+    "closed_at": "2009-03-10T19:52:49Z",
     "created_at": "2009-03-01T06:57:40Z",
     "labels": [
         "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "rewrite quaternion algebras -- the current implementation isn't sufficiently good",
+    "title": "[with patch; positive review] rewrite quaternion algebras -- the current implementation isn't sufficiently good",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5409",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,11 @@ Assignee: tbd
 
 CC:  bober
 
+The goal of this ticket is to rewrite QuaternionAlgebra so that it is very very fast.  
 
+Since QuaternionAlgebra is used nowhere else in Sage and much of the code for orders has 0% coverage and is totally broken, and moreover the design of QuaternionAlgebras is a bit odd (according to Gonzalo T. and John Voight), we will remove some functions.   I think deprecation isn't necessary here since this code simply isn't used much if at all by anyone.
+
+Note that the code in sage <=3.3 is between 50 and 250 times slower than Magma on benchmarks I tried... so it's hard to imagine it ever being used for anything.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5409
 

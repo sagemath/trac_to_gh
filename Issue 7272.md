@@ -4,6 +4,7 @@ archive/issues_007272.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCython 0.12 isn't released yet, but should be shortly, and this ticket is about getting Sage to compile and pass all tests.\n\nSpkg at http://sage.math.washington.edu/home/robertwb/cython/cython-0.12.spkg\n\nAlso depends on patch at #7023 (to be applied before the attached patch). \n\nIssue created by migration from https://trac.sagemath.org/ticket/7272\n\n",
+    "closed_at": "2009-12-07T23:19:15Z",
     "created_at": "2009-10-23T17:04:56Z",
     "labels": [
         "component: packages: standard",

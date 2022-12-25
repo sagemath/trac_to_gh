@@ -3,10 +3,10 @@
 archive/issues_001134.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nOn Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:\n[...]\n> > Woah!  Can someone explain to me the various calls above?  I'd think\n> > this should take epsilon time to coerce the elements of the sequence.\n> > Or perhaps is there another better way to coerce into Z_F (or,\n> > equivalently for me, F)?\n> >\n> \n> There is without a doubt something fishy going on with coercion. See\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> also malb's report with polynomial rings at\n> http://www.sagetrac.org/sage_trac/ticket/1046\n\nI have some doubt that John Voight's observation above has  to do with\nMalb's speed regression report.    I think it's just that a particular way\nof constructing elements in an order (coercing from a list) hasn't been optimized\none speck since when we implement orders a month ago.   And code that\nhas had zero optimization tends to be slow.  The sort answer is that *right now*\nit's vastly faster to construct the element of the order via doing arithmetic\ninstead of explicitly coercing in a list, since we've optimized arithmetic more.\nSee the timings and examples in the worksheet below. \n```\n\ncoerce speed question from john voight\nsystem:sage\n\n```\nid=0|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     for i in range(n):\n         Z_F([5,1])\n```\n\n```\nid=1|\ntime stupid_function(10^4)\n///\nCPU time: 7.88 s,  Wall time: 9.31 s\n```\n\n```\nid=10|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     a,b = Z_F.gens()\n     for i in range(n):\n         w = a + 5*b\n```\n\n```\nid=11|\ntime stupid_function(10^4)\n///\nCPU time: 0.05 s,  Wall time: 0.05 s\n```\n\n```\nid=2|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     for i in range(n):\n         K([5,1])\n```\n\n```\nid=3|\ntime stupid_function(10^4)\n///\nCPU time: 4.81 s,  Wall time: 4.88 s\n```\n\n```\nid=4|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     v = [5,1]\n     for i in range(n):\n         K(v)\n```\n\n```\nid=5|\ntime stupid_function(10^4)\n///\nCPU time: 4.78 s,  Wall time: 4.81 s\n```\n\n```\nid=6|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     one = K(1); t = K.gen(); five = K(5)\n     for i in range(n):\n         w = five*t + one\n```\n\n```\nid=7|\ntime stupid_function(10^4)\n///\nCPU time: 0.04 s,  Wall time: 0.04 s\n```\n\n```\nid=8|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     t = K.gen()\n     for i in range(n):\n         w = 5*t + 1\n```\n\n```\nid=9|\ntime stupid_function(10^4)\n///\nCPU time: 0.38 s,  Wall time: 0.38 s\n```\n\n\n\n```\nid=12|\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1134\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nOn Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:\n[...]\n> > Woah!  Can someone explain to me the various calls above?  I'd think\n> > this should take epsilon time to coerce the elements of the sequence.\n> > Or perhaps is there another better way to coerce into Z_F (or,\n> > equivalently for me, F)?\n> >\n> \n> There is without a doubt something fishy going on with coercion. See\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> also malb's report with polynomial rings at\n> http://www.sagetrac.org/sage_trac/ticket/1046\n\nI have some doubt that John Voight's observation above has  to do with\nMalb's speed regression report.    I think it's just that a particular way\nof constructing elements in an order (coercing from a list) hasn't been optimized\none speck since when we implement orders a month ago.   And code that\nhas had zero optimization tends to be slow.  The sort answer is that *right now*\nit's vastly faster to construct the element of the order via doing arithmetic\ninstead of explicitly coercing in a list, since we've optimized arithmetic more.\nSee the timings and examples in the worksheet below. \n```\n\ncoerce speed question from john voight\nsystem:sage\n\n```\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     for i in range(n):\n         Z_F([5,1])\n```\n\n```\ntime stupid_function(10^4)\n///\nCPU time: 7.88 s,  Wall time: 9.31 s\n```\n\n```\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     a,b = Z_F.gens()\n     for i in range(n):\n         w = a + 5*b\n```\n\n```\ntime stupid_function(10^4)\n///\nCPU time: 0.05 s,  Wall time: 0.05 s\n```\n\n```\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     for i in range(n):\n         K([5,1])\n```\n\n```\ntime stupid_function(10^4)\n///\nCPU time: 4.81 s,  Wall time: 4.88 s\n```\n\n```\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     v = [5,1]\n     for i in range(n):\n         K(v)\n```\n\n```\ntime stupid_function(10^4)\n///\nCPU time: 4.78 s,  Wall time: 4.81 s\n```\n\n```\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     one = K(1); t = K.gen(); five = K(5)\n     for i in range(n):\n         w = five*t + one\n```\n\n```\ntime stupid_function(10^4)\n///\nCPU time: 0.04 s,  Wall time: 0.04 s\n```\n\n```\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     t = K.gen()\n     for i in range(n):\n         w = 5*t + 1\n```\n\n```\ntime stupid_function(10^4)\n///\nCPU time: 0.38 s,  Wall time: 0.38 s\n```\n\n\n\n```\nid=12|\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1134\n\n",
     "created_at": "2007-11-09T08:20:30Z",
     "labels": [
-        "component: number theory"
+        "component: number fields"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "optimize creating elements of orders and number fields by coercing in lists",
@@ -15,7 +15,7 @@ archive/issues_001134.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 ```
 On Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:
@@ -45,7 +45,6 @@ coerce speed question from john voight
 system:sage
 
 ```
-id=0|
 def stupid_function(n):
      Z_F = NumberField(x^2-x-1, 't').maximal_order()
      for i in range(n):
@@ -53,14 +52,12 @@ def stupid_function(n):
 ```
 
 ```
-id=1|
 time stupid_function(10^4)
 ///
 CPU time: 7.88 s,  Wall time: 9.31 s
 ```
 
 ```
-id=10|
 def stupid_function(n):
      Z_F = NumberField(x^2-x-1, 't').maximal_order()
      a,b = Z_F.gens()
@@ -69,14 +66,12 @@ def stupid_function(n):
 ```
 
 ```
-id=11|
 time stupid_function(10^4)
 ///
 CPU time: 0.05 s,  Wall time: 0.05 s
 ```
 
 ```
-id=2|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      for i in range(n):
@@ -84,14 +79,12 @@ def stupid_function(n):
 ```
 
 ```
-id=3|
 time stupid_function(10^4)
 ///
 CPU time: 4.81 s,  Wall time: 4.88 s
 ```
 
 ```
-id=4|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      v = [5,1]
@@ -100,14 +93,12 @@ def stupid_function(n):
 ```
 
 ```
-id=5|
 time stupid_function(10^4)
 ///
 CPU time: 4.78 s,  Wall time: 4.81 s
 ```
 
 ```
-id=6|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      one = K(1); t = K.gen(); five = K(5)
@@ -116,14 +107,12 @@ def stupid_function(n):
 ```
 
 ```
-id=7|
 time stupid_function(10^4)
 ///
 CPU time: 0.04 s,  Wall time: 0.04 s
 ```
 
 ```
-id=8|
 def stupid_function(n):
      K = NumberField(x^2-x-1, 't')
      t = K.gen()
@@ -132,7 +121,6 @@ def stupid_function(n):
 ```
 
 ```
-id=9|
 time stupid_function(10^4)
 ///
 CPU time: 0.38 s,  Wall time: 0.38 s

@@ -1,9 +1,10 @@
-# Issue 9553: sage -ba (build all) waits for input, making it harder to use in scripts
+# Issue 9553: Mention 'sage -ba-force' in the 'sage -ba' prompt
 
 archive/issues_009553.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen doing \"sage -ba\" from the shell, one gets a prompt:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that \"sage -ba\" continues anyway when nothing has been typed for 30 seconds or so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
+    "body": "Assignee: @williamstein\n\nRunning `sage -ba` from the shell gives\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  However, there is `sage -ba-force`, which does not wait.  This ticket just adds a note about `-ba-force` to the prompt above.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
+    "closed_at": "2010-08-31T03:20:35Z",
     "created_at": "2010-07-20T08:44:27Z",
     "labels": [
         "component: user interface",
@@ -11,7 +12,7 @@ archive/issues_009553.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "sage -ba (build all) waits for input, making it harder to use in scripts",
+    "title": "Mention 'sage -ba-force' in the 'sage -ba' prompt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9553",
     "user": "https://github.com/jdemeyer"
@@ -19,7 +20,7 @@ archive/issues_009553.json:
 ```
 Assignee: @williamstein
 
-When doing "sage -ba" from the shell, one gets a prompt:
+Running `sage -ba` from the shell gives
 
 ```
  *** WARNING ***
@@ -28,7 +29,7 @@ When doing "sage -ba" from the shell, one gets a prompt:
  Do you want to proceed? [y/n]
 ```
 
-Since this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that "sage -ba" continues anyway when nothing has been typed for 30 seconds or so.
+Since this waits forever for user input, it is harder to use in non-interactive scripts.  However, there is `sage -ba-force`, which does not wait.  This ticket just adds a note about `-ba-force` to the prompt above.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9553
 

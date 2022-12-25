@@ -1,16 +1,17 @@
-# Issue 5710: [with patch; needs review] solaris -- fix "is monic" issue with NTL in number_field_element.pyx
+# Issue 5710: [with patch; positive review] solaris -- fix "is monic" issue with NTL in number_field_element.pyx
 
 archive/issues_005710.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5710\n\n",
+    "closed_at": "2009-04-09T06:11:25Z",
     "created_at": "2009-04-08T02:11:50Z",
     "labels": [
         "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] solaris -- fix \"is monic\" issue with NTL in number_field_element.pyx",
+    "title": "[with patch; positive review] solaris -- fix \"is monic\" issue with NTL in number_field_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5710",
     "user": "https://github.com/williamstein"

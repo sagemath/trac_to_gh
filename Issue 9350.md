@@ -3,7 +3,8 @@
 archive/issues_009350.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nImplementation of a max-flow algorithm which does not use Linear Programming.\n\nI will update it right after #8870 is merged\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9350\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nImplementation of a max-flow algorithm which does not use Linear Programming. A tad faster than the current LP implementation.\n\nThis ticket also updates several other methods which formerly used flows (or could be made to), so that they may use the speedup !\n\n```\nsage: g = graphs.PetersenGraph()\nsage: %timeit g.flow(0,1, method = \"LP\")\n125 loops, best of 3: 2.85 ms per loop\nsage: %timeit g.flow(0,1)\n625 loops, best of 3: 1.19 ms per loop\n```\n\n```\nsage: g = graphs.RandomGNP(200,0.1)\nsage: %timeit g.flow(0,1, method = \"LP\")\n5 loops, best of 3: 322 ms per loop\nsage: %timeit g.flow(0,1)\n5 loops, best of 3: 73.5 ms per loop\n```\n\n```\nsage: %timeit g.edge_cut(0,1, method=\"LP\")\n5 loops, best of 3: 377 ms per loop\nsage: %timeit g.edge_cut(0,1)\n5 loops, best of 3: 72.5 ms per loop\n```\n\n```\ng = graphs.RandomGNP(50,0.2)\nsage: %timeit g.gomory_hu_tree()\n5 loops, best of 3: 4.22 s per loop\nsage: %timeit g.gomory_hu_tree(method=\"LP\")\n5 loops, best of 3: 5.38 s per loop\n```\n\nI expected a much better speedup for gomory_hu, by the way.... It's odd, it sounds like the bottleneck is somewhere else... O_o\n\n___This patch is dedicated to anybody who ever refused one of my patches for lack of doctests. I wouldn't have noticed half of the bugs in this patch without the help of those doctests in the functions that use flow... I won't ever complain anymore because of that ! :-D___\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9350\n\n",
+    "closed_at": "2010-09-15T22:52:26Z",
     "created_at": "2010-06-27T10:19:03Z",
     "labels": [
         "component: graph theory"
@@ -17,11 +18,47 @@ archive/issues_009350.json:
 ```
 Assignee: jason, mvngu, ncohen, rlm
 
-Implementation of a max-flow algorithm which does not use Linear Programming.
+Implementation of a max-flow algorithm which does not use Linear Programming. A tad faster than the current LP implementation.
 
-I will update it right after #8870 is merged
+This ticket also updates several other methods which formerly used flows (or could be made to), so that they may use the speedup !
+
+```
+sage: g = graphs.PetersenGraph()
+sage: %timeit g.flow(0,1, method = "LP")
+125 loops, best of 3: 2.85 ms per loop
+sage: %timeit g.flow(0,1)
+625 loops, best of 3: 1.19 ms per loop
+```
+
+```
+sage: g = graphs.RandomGNP(200,0.1)
+sage: %timeit g.flow(0,1, method = "LP")
+5 loops, best of 3: 322 ms per loop
+sage: %timeit g.flow(0,1)
+5 loops, best of 3: 73.5 ms per loop
+```
+
+```
+sage: %timeit g.edge_cut(0,1, method="LP")
+5 loops, best of 3: 377 ms per loop
+sage: %timeit g.edge_cut(0,1)
+5 loops, best of 3: 72.5 ms per loop
+```
+
+```
+g = graphs.RandomGNP(50,0.2)
+sage: %timeit g.gomory_hu_tree()
+5 loops, best of 3: 4.22 s per loop
+sage: %timeit g.gomory_hu_tree(method="LP")
+5 loops, best of 3: 5.38 s per loop
+```
+
+I expected a much better speedup for gomory_hu, by the way.... It's odd, it sounds like the bottleneck is somewhere else... O_o
+
+___This patch is dedicated to anybody who ever refused one of my patches for lack of doctests. I wouldn't have noticed half of the bugs in this patch without the help of those doctests in the functions that use flow... I won't ever complain anymore because of that ! :-D___
 
 Nathann
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9350
 

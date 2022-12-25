@@ -1,16 +1,17 @@
-# Issue 2965: extcode spkg build failure on Debian
+# Issue 2965: [with patch; needs review] extcode spkg build failure on Debian
 
 archive/issues_002965.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nNow that there's a dist/debian directory in the extcode spkg, my Debian scripts try to build extcode as a separate package.  This doesn't work; I've attached a trivial patch to make this not happen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2965\n\n",
+    "closed_at": "2008-04-20T04:17:21Z",
     "created_at": "2008-04-20T04:02:32Z",
     "labels": [
         "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "extcode spkg build failure on Debian",
+    "title": "[with patch; needs review] extcode spkg build failure on Debian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2965",
     "user": "https://github.com/timabbott"

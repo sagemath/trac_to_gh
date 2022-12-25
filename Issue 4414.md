@@ -4,6 +4,7 @@ archive/issues_004414.json:
 ```json
 {
     "body": "Assignee: ahupfer\n\nCC:  @jasongrout\n\nEvery user action should result in immediate feedback. If the feedback is not available some placeholder animation should be displayed during the calculation is done or until the feedback is received. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4414\n\n",
+    "closed_at": "2014-09-18T18:00:17Z",
     "created_at": "2008-10-31T21:46:28Z",
     "labels": [
         "component: notebook",

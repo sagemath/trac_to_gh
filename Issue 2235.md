@@ -3,10 +3,11 @@
 archive/issues_002235.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  ncalexander@gmail.com\n\nSo I ran into some weird issue earlier with a doctest, and the problem seems to be this: combining # long with # 32-bit / # 64-bit seems to completely ignore the # long directive. Nick can probably tell me more about why it fails, or if his new stuff should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2235\n\n",
+    "body": "Assignee: failure\n\nCC:  ncalexander@gmail.com\n\nCombining # long with # 32-bit / # 64-bit seems to completely ignore the # long directive.\n\nThere's a long doctest in sage/rings/number_field/totallyreal_rel.py that is what caused me to notice this; I've made that a # no doctest for now, because it was causing timeouts on some machines. When this bug is fixed, that needs to be changed into a # long. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2235\n\n",
+    "closed_at": "2013-03-17T15:31:52Z",
     "created_at": "2008-02-20T20:29:27Z",
     "labels": [
-        "component: doctest",
+        "component: doctest framework",
         "minor",
         "bug"
     ],
@@ -21,7 +22,9 @@ Assignee: failure
 
 CC:  ncalexander@gmail.com
 
-So I ran into some weird issue earlier with a doctest, and the problem seems to be this: combining # long with # 32-bit / # 64-bit seems to completely ignore the # long directive. Nick can probably tell me more about why it fails, or if his new stuff should fix it.
+Combining # long with # 32-bit / # 64-bit seems to completely ignore the # long directive.
+
+There's a long doctest in sage/rings/number_field/totallyreal_rel.py that is what caused me to notice this; I've made that a # no doctest for now, because it was causing timeouts on some machines. When this bug is fixed, that needs to be changed into a # long. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2235
 

@@ -1,16 +1,17 @@
-# Issue 6497: [with patch, needs review] symbolic functions should understand numpy arrays
+# Issue 6497: [with patch, positive review] symbolic functions should understand numpy arrays
 
 archive/issues_006497.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nWe want\n\n```\nsage: import numpy\nsage: sin(numpy.arange(5))\narray([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6497\n\n",
+    "closed_at": "2009-09-10T09:41:40Z",
     "created_at": "2009-07-09T10:14:40Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] symbolic functions should understand numpy arrays",
+    "title": "[with patch, positive review] symbolic functions should understand numpy arrays",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6497",
     "user": "https://github.com/robertwb"

@@ -1,16 +1,17 @@
-# Issue 8983: solve(erf(x)==0,x) should return x==0 as a solution
+# Issue 8983: erf(0) should return 0
 
 archive/issues_008983.json:
 ```json
 {
-    "body": "Assignee: RossK\n\nCC:  @burcin @kcrisman\n\nKeywords: erf zero\n\nCurrently it doesnt...\n\n```\nsage: solve(erf(x)==0,x)\n[erf(x) == 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8983\n\n",
+    "body": "Assignee: RossK\n\nCC:  @burcin @kcrisman\n\nKeywords: erf, beginner\n\nCurrently it doesnt...\n\n```\nsage: erf(0)\nerf(0)\n```\n\n---\n\nApply: \n* [attachment:trac_8983_v3.patch] to `$SAGE_ROOT/devel/sage`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8983\n\n",
+    "closed_at": "2012-02-22T10:44:00Z",
     "created_at": "2010-05-17T13:15:56Z",
     "labels": [
         "component: symbolics",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "solve(erf(x)==0,x) should return x==0 as a solution",
+    "title": "erf(0) should return 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8983",
     "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
@@ -20,14 +21,19 @@ Assignee: RossK
 
 CC:  @burcin @kcrisman
 
-Keywords: erf zero
+Keywords: erf, beginner
 
 Currently it doesnt...
 
 ```
-sage: solve(erf(x)==0,x)
-[erf(x) == 0]
+sage: erf(0)
+erf(0)
 ```
+
+---
+
+Apply: 
+* [attachment:trac_8983_v3.patch] to `$SAGE_ROOT/devel/sage`
 
 Issue created by migration from https://trac.sagemath.org/ticket/8983
 

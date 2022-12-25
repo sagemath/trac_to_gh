@@ -1,16 +1,17 @@
-# Issue 399: PHCpack interface improvement
+# Issue 399: [with patch] PHCpack interface improvement
 
 archive/issues_000399.json:
 ```json
 {
     "body": "Assignee: mhampton\n\nKeywords: phc, homotopy, polynomial solutions\n\nI have rewritten the PHCpack interface (phc.py in interfaces) to work in blackbox mode and to parse the solutions into a list of dictionaries.  The solutions are given as elements of the ComplexField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/399\n\n",
+    "closed_at": "2007-10-19T01:45:09Z",
     "created_at": "2007-07-03T16:57:24Z",
     "labels": [
         "component: numerical",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "PHCpack interface improvement",
+    "title": "[with patch] PHCpack interface improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/399",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

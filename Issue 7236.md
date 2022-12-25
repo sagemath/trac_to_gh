@@ -3,7 +3,8 @@
 archive/issues_007236.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: partitions cell\n\nAfter a vote on `sage-combinat-devel`, see\n\n```\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91\n```\nit was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.\n\nI also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7236\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: partitions cell, leg, arm, hook\n\nAfter a vote on `sage-combinat-devel`, see\n\n```\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91\n```\nit was decided that in a partition diagram a square should be called a cell instead of a box. The following patch implement this choice. In particular, the following methods are renamed:\n\n- add_box -> add_cell, remove_box -> remove_cell, boxes -> cells\n\nI also took the occasion to fix an indentation problem which prevents some doc to be correctly typeset, and to further rename:\n\n- leg -> leg_length\n- arm -> arm_length\n- hook -> hook_length\n\nCheers,\n\nFlorent  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7236\n\n",
+    "closed_at": "2009-10-19T05:49:09Z",
     "created_at": "2009-10-17T20:38:04Z",
     "labels": [
         "component: combinatorics",
@@ -20,20 +21,27 @@ Assignee: @hivert
 
 CC:  sage-combinat
 
-Keywords: partitions cell
+Keywords: partitions cell, leg, arm, hook
 
 After a vote on `sage-combinat-devel`, see
 
 ```
 http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91
 ```
-it was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.
+it was decided that in a partition diagram a square should be called a cell instead of a box. The following patch implement this choice. In particular, the following methods are renamed:
 
-I also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.
+- add_box -> add_cell, remove_box -> remove_cell, boxes -> cells
+
+I also took the occasion to fix an indentation problem which prevents some doc to be correctly typeset, and to further rename:
+
+- leg -> leg_length
+- arm -> arm_length
+- hook -> hook_length
 
 Cheers,
 
-Florent
+Florent  
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7236
 

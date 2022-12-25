@@ -1,9 +1,10 @@
-# Issue 5218: Update Pyhton to 2.5.4
+# Issue 5218: [with spkg, positive review] Update Python to 2.5.4 (latest 2.5 upstream) (depends on #5286)
 
 archive/issues_005218.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nPython 2.5.4 fixes a couple of security problems in Python 2.5.2. So let's update to it since the difference to 2.5.2 are minimal.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5218\n\n",
+    "closed_at": "2009-05-29T17:34:02Z",
     "created_at": "2009-02-09T12:31:43Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005218.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Update Pyhton to 2.5.4",
+    "title": "[with spkg, positive review] Update Python to 2.5.4 (latest 2.5 upstream) (depends on #5286)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5218",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

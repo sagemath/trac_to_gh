@@ -1,16 +1,17 @@
-# Issue 5974: [with patch; needs review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch
+# Issue 5974: [with patch; positive review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch
 
 archive/issues_005974.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nBehold.  By replacing about 40 confusing lines by 2 trivial lines, I get a *speedup* by more than a factor of 10!\n\n```\nBEFORE:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n125 loops, best of 3: 5.48 ms per loop\n\nAFTER:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n625 loops, best of 3: 503 \u00b5s per loop\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5974\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nBehold.  By replacing about 40 confusing lines by 2 trivial lines, I get a *speedup* by more than a factor of 10!\n\n```\nBEFORE:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n125 loops, best of 3: 5.48 ms per loop\n\nAFTER:\nsage: A = random_matrix(QQ,50)\nsage: v = [1..50]\nsage: timeit('A.linear_combination_of_rows(v)')\n625 loops, best of 3: 503 \u00b5s per loop\n\n```\n\nWe also uncover several bugs in matrix multiply, which this patch also fixes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5974\n\n",
+    "closed_at": "2009-05-11T12:41:38Z",
     "created_at": "2009-05-04T05:22:33Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch",
+    "title": "[with patch; positive review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5974",
     "user": "https://github.com/williamstein"
@@ -36,6 +37,8 @@ sage: timeit('A.linear_combination_of_rows(v)')
 625 loops, best of 3: 503 µs per loop
 
 ```
+
+We also uncover several bugs in matrix multiply, which this patch also fixes.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5974
 

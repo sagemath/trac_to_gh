@@ -4,6 +4,7 @@ archive/issues_007675.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @dimpase @dcoudert\n\nThis modification would avoid the building of the shortest path, which is interesting for a function so often used !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7675\n\n",
+    "closed_at": "2017-06-09T18:38:03Z",
     "created_at": "2009-12-13T11:05:00Z",
     "labels": [
         "component: graph theory"

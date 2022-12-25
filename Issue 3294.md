@@ -1,91 +1,131 @@
-# Issue 3294: linear code bug: minimum_distance breaks over "large" fields
+# Issue 3294: [with patch, positive review] GAP interface broken after CTRL-C
 
 archive/issues_003294.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThis seems to be caused by a change in the interface to GAP. Related methods\n(like spectrum) are also broken.\n\n```\nsage: C = ReedSolomonCode(4,3,GF(5)); C\nLinear code of length 4, dimension 3 over Finite Field of size 5\nsage: C.gen_mat()\n\n[1 1 1 1]\n[0 1 2 3]\n[0 1 4 4]\nsage: C.minimum_distance()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/<ipython console> in <module>()\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/coding/linear_code.py in minimum_distance(self)\n   1366         q = F.order()\n   1367         G = self.gen_mat()\n-> 1368         gapG = gap(G)\n   1369         Gstr = \"%s*Z(%s)^0\"%(gapG, q)\n   1370         return hamming_weight(min_wt_vec(Gstr,F))\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    948             return cls(self, x)\n    949         try:\n--> 950             return self._coerce_from_special_method(x)\n    951         except TypeError:\n    952             raise\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _coerce_from_special_method(self, x)\n    972             s = '_gp_'\n    973         try:\n--> 974             return (x.__getattribute__(s))(self)\n    975         except AttributeError:\n    976             return self(x._interface_init_())\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/sage_object.pyx in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2257)()\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/sage_object.pyx in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:1884)()\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/matrix1.pyx in sage.matrix.matrix1.Matrix._gap_init_ (sage/matrix/matrix1.c:1287)()\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_abstract._gap_init_ (sage/rings/integer_mod.c:3124)()\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)\n    307         if len(x) == 0 or x[len(x) - 1] != ';':\n    308             x += ';'\n--> 309         s = Expect.eval(self, x)\n    310         if newlines:\n    311             return s\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, synchronize, **kwds)\n    915         try:\n    916             with gc_disabled():\n--> 917                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    918         except KeyboardInterrupt:\n    919             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    508                         return ''\n    509                 else:\n--> 510                     raise RuntimeError, message\n    511\n    512         except KeyboardInterrupt:\n\nRuntimeError: Unexpected EOF from Gap executing Int(Z(5));\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3294\n\n",
+    "body": "Assignee: @mwhansen\n\nFor example (you need to hit CTRL-C pretty quickly to beat the first line...):\n\n```\nsage: gap.eval('B := ExtendedBinaryGolayCode();')\n^CInterrupting Gap...\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.6/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)\n    307         if len(x) == 0 or x[len(x) - 1] != ';':\n    308             x += ';'\n--> 309         s = Expect.eval(self, x)\n    310         if newlines:\n    311             return s\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, synchronize, **kwds)\n    915         try:\n    916             with gc_disabled():\n--> 917                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    918         except KeyboardInterrupt:\n    919             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    511 \n    512         except KeyboardInterrupt:\n--> 513             self._keyboard_interrupt()\n    514             raise KeyboardInterrupt, \"Ctrl-c pressed while running %s\"%self\n    515 #        i = out.find(\"\\n\")\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _keyboard_interrupt(self)\n    448         print \"Interrupting %s...\"%self\n    449         os.killpg(self._expect.pid, 2)\n--> 450         raise KeyboardInterrupt, \"Ctrl-c pressed while running %s\"%self\n    451 \n    452     def _eval_line_using_file(self, line):\n\nKeyboardInterrupt: Ctrl-c pressed while running Gap\n```\n\nNow we try to do something else using GAP:\n\n```\nsage: C = ReedSolomonCode(4,3,GF(5)); C\nLinear code of length 4, dimension 3 over Finite Field of size 5\nsage: C.minimum_distance()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/rlmill/sage-3.0.6/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/coding/linear_code.py in minimum_distance(self)\n   1366         q = F.order()\n   1367         G = self.gen_mat()\n-> 1368         gapG = gap(G)\n   1369         Gstr = \"%s*Z(%s)^0\"%(gapG, q)\n   1370         return hamming_weight(min_wt_vec(Gstr,F))\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x, name)\n    945             return cls(self, x, name=name)\n    946         try:\n--> 947             return self._coerce_from_special_method(x)\n    948         except TypeError:\n    949             raise\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _coerce_from_special_method(self, x)\n    969             s = '_gp_'\n    970         try:\n--> 971             return (x.__getattribute__(s))(self)\n    972         except AttributeError:\n    973             return self(x._interface_init_())\n\n/Users/rlmill/sage-3.0.6/sage_object.pyx in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2456)()\n\n/Users/rlmill/sage-3.0.6/sage_object.pyx in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2082)()\n\n/Users/rlmill/sage-3.0.6/matrix1.pyx in sage.matrix.matrix1.Matrix._gap_init_ (sage/matrix/matrix1.c:1447)()\n\n/Users/rlmill/sage-3.0.6/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_abstract._gap_init_ (sage/rings/integer_mod.c:3315)()\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)\n    307         if len(x) == 0 or x[len(x) - 1] != ';':\n    308             x += ';'\n--> 309         s = Expect.eval(self, x)\n    310         if newlines:\n    311             return s\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, synchronize, **kwds)\n    915         try:\n    916             with gc_disabled():\n--> 917                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    918         except KeyboardInterrupt:\n    919             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    508                         return ''\n    509                 else:\n--> 510                     raise RuntimeError, message\n    511 \n    512         except KeyboardInterrupt:\n\nRuntimeError: Gap produced error output\nuser interrupt while printing\n\n   executing Int(Z(5));\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3294\n\n",
+    "closed_at": "2009-01-24T16:28:17Z",
     "created_at": "2008-05-24T20:22:18Z",
     "labels": [
-        "component: coding theory",
+        "component: interfaces",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "linear code bug: minimum_distance breaks over \"large\" fields",
+    "title": "[with patch, positive review] GAP interface broken after CTRL-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3294",
     "user": "https://github.com/wdjoyner"
 }
 ```
-Assignee: @rlmill
+Assignee: @mwhansen
 
-This seems to be caused by a change in the interface to GAP. Related methods
-(like spectrum) are also broken.
+For example (you need to hit CTRL-C pretty quickly to beat the first line...):
 
 ```
-sage: C = ReedSolomonCode(4,3,GF(5)); C
-Linear code of length 4, dimension 3 over Finite Field of size 5
-sage: C.gen_mat()
-
-[1 1 1 1]
-[0 1 2 3]
-[0 1 4 4]
-sage: C.minimum_distance()
+sage: gap.eval('B := ExtendedBinaryGolayCode();')
+^CInterrupting Gap...
 ---------------------------------------------------------------------------
-RuntimeError                              Traceback (most recent call last)
+KeyboardInterrupt                         Traceback (most recent call last)
 
-/home/wdj/sagefiles/sage-3.0.2.rc3/<ipython console> in <module>()
+/Users/rlmill/sage-3.0.6/<ipython console> in <module>()
 
-/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/coding/linear_code.py in minimum_distance(self)
-   1366         q = F.order()
-   1367         G = self.gen_mat()
--> 1368         gapG = gap(G)
-   1369         Gstr = "%s*Z(%s)^0"%(gapG, q)
-   1370         return hamming_weight(min_wt_vec(Gstr,F))
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)
-    948             return cls(self, x)
-    949         try:
---> 950             return self._coerce_from_special_method(x)
-    951         except TypeError:
-    952             raise
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _coerce_from_special_method(self, x)
-    972             s = '_gp_'
-    973         try:
---> 974             return (x.__getattribute__(s))(self)
-    975         except AttributeError:
-    976             return self(x._interface_init_())
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/sage_object.pyx in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2257)()
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/sage_object.pyx in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:1884)()
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/matrix1.pyx in sage.matrix.matrix1.Matrix._gap_init_ (sage/matrix/matrix1.c:1287)()
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_abstract._gap_init_ (sage/rings/integer_mod.c:3124)()
-
-/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)
     307         if len(x) == 0 or x[len(x) - 1] != ';':
     308             x += ';'
 --> 309         s = Expect.eval(self, x)
     310         if newlines:
     311             return s
 
-/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, synchronize, **kwds)
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, synchronize, **kwds)
     915         try:
     916             with gc_disabled():
 --> 917                 return '\n'.join([self._eval_line(L, **kwds) for L in code.split('\n') if L != ''])
     918         except KeyboardInterrupt:
     919             # DO NOT CATCH KeyboardInterrupt, as it is being caught
 
-/home/wdj/sagefiles/sage-3.0.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)
+    511 
+    512         except KeyboardInterrupt:
+--> 513             self._keyboard_interrupt()
+    514             raise KeyboardInterrupt, "Ctrl-c pressed while running %s"%self
+    515 #        i = out.find("\n")
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _keyboard_interrupt(self)
+    448         print "Interrupting %s..."%self
+    449         os.killpg(self._expect.pid, 2)
+--> 450         raise KeyboardInterrupt, "Ctrl-c pressed while running %s"%self
+    451 
+    452     def _eval_line_using_file(self, line):
+
+KeyboardInterrupt: Ctrl-c pressed while running Gap
+```
+
+Now we try to do something else using GAP:
+
+```
+sage: C = ReedSolomonCode(4,3,GF(5)); C
+Linear code of length 4, dimension 3 over Finite Field of size 5
+sage: C.minimum_distance()
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+
+/Users/rlmill/sage-3.0.6/<ipython console> in <module>()
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/coding/linear_code.py in minimum_distance(self)
+   1366         q = F.order()
+   1367         G = self.gen_mat()
+-> 1368         gapG = gap(G)
+   1369         Gstr = "%s*Z(%s)^0"%(gapG, q)
+   1370         return hamming_weight(min_wt_vec(Gstr,F))
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x, name)
+    945             return cls(self, x, name=name)
+    946         try:
+--> 947             return self._coerce_from_special_method(x)
+    948         except TypeError:
+    949             raise
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _coerce_from_special_method(self, x)
+    969             s = '_gp_'
+    970         try:
+--> 971             return (x.__getattribute__(s))(self)
+    972         except AttributeError:
+    973             return self(x._interface_init_())
+
+/Users/rlmill/sage-3.0.6/sage_object.pyx in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:2456)()
+
+/Users/rlmill/sage-3.0.6/sage_object.pyx in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2082)()
+
+/Users/rlmill/sage-3.0.6/matrix1.pyx in sage.matrix.matrix1.Matrix._gap_init_ (sage/matrix/matrix1.c:1447)()
+
+/Users/rlmill/sage-3.0.6/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_abstract._gap_init_ (sage/rings/integer_mod.c:3315)()
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in eval(self, x, newlines, strip)
+    307         if len(x) == 0 or x[len(x) - 1] != ';':
+    308             x += ';'
+--> 309         s = Expect.eval(self, x)
+    310         if newlines:
+    311             return s
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, synchronize, **kwds)
+    915         try:
+    916             with gc_disabled():
+--> 917                 return '\n'.join([self._eval_line(L, **kwds) for L in code.split('\n') if L != ''])
+    918         except KeyboardInterrupt:
+    919             # DO NOT CATCH KeyboardInterrupt, as it is being caught
+
+/Users/rlmill/sage-3.0.6/local/lib/python2.5/site-packages/sage/interfaces/gap.py in _eval_line(self, line, allow_use_file, wait_for_prompt)
     508                         return ''
     509                 else:
 --> 510                     raise RuntimeError, message
-    511
+    511 
     512         except KeyboardInterrupt:
 
-RuntimeError: Unexpected EOF from Gap executing Int(Z(5));
+RuntimeError: Gap produced error output
+user interrupt while printing
+
+   executing Int(Z(5));
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3294

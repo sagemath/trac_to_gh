@@ -4,6 +4,7 @@ archive/issues_001414.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThis should work but doesn't\n\n```\nsage: p = 17; q = (p-1)//2\nsage: inject_on()\nRedefining: Frac FreeMonoid GF FractionField FiniteField PolynomialRing quotient NumberField LaurentSeriesRing quo \nsage: R = MPolynomialRing(GF(p),q,\"x\")\nDefining x\nDefining x0, x1, x2, x3, x4, x5, x6, x7\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1414\n\n",
+    "closed_at": "2008-08-23T23:04:22Z",
     "created_at": "2007-12-07T02:15:00Z",
     "labels": [
         "component: commutative algebra"

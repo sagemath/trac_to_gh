@@ -3,7 +3,8 @@
 archive/issues_006296.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: A=matrix(GF(3),2,[0,0,1,2])\n> sage: R.<x>=GF(3)[]\n> sage: D={ x:0 , x+1:0 , x^2+x:0 }\n> sage: for i in range(100000):\n> ....:         D[A._minpoly_linbox()]+=1\n> ....:\n> sage: D\n> {x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\nsage: A=matrix(GF(3),2,[0,0,1,2])\nsage: R.<x>=GF(3)[]\nsage: D={ x:0 , x+1:0 , x^2+x:0 }\nsage: for i in range(10000): D[A._minpoly_linbox()]+=1\n\nsage: D\n{x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
+    "closed_at": "2010-02-11T14:37:52Z",
     "created_at": "2009-06-15T10:51:54Z",
     "labels": [
         "component: linear algebra",
@@ -28,14 +29,13 @@ On Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:
 > | Sage Version 4.0.1, Release Date: 2009-06-06                       |
 > | Type notebook() for the GUI, and license() for information.        |
 > ----------------------------------------------------------------------
-> sage: A=matrix(GF(3),2,[0,0,1,2])
-> sage: R.<x>=GF(3)[]
-> sage: D={ x:0 , x+1:0 , x^2+x:0 }
-> sage: for i in range(100000):
-> ....:         D[A._minpoly_linbox()]+=1
-> ....:
-> sage: D
-> {x: 38266, x + 1: 29397, x^2 + x: 32337}
+sage: A=matrix(GF(3),2,[0,0,1,2])
+sage: R.<x>=GF(3)[]
+sage: D={ x:0 , x+1:0 , x^2+x:0 }
+sage: for i in range(10000): D[A._minpoly_linbox()]+=1
+
+sage: D
+{x: 38266, x + 1: 29397, x^2 + x: 32337}
 >
 
 

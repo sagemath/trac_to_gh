@@ -1,16 +1,17 @@
-# Issue 2473: [with patch, needs review] BipartiteGraph.__init__ does not properly initialize for some inputs
+# Issue 2473: [with patch, positive review] BipartiteGraph.__init__ does not properly initialize for some inputs
 
 archive/issues_002473.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nBipartiteGraph.__init__ does not call the base class __init__ for some inputs, leaving the object unusable.  For example, \n\n```\nsage: B = BipartiteGraph(None)\nsage: B\n```\nwill throw an exception because the base class attributes have not been initialized.  The attached patch ensures the base class __init__ is called.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2473\n\n",
+    "closed_at": "2008-03-13T12:45:52Z",
     "created_at": "2008-03-11T22:03:53Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] BipartiteGraph.__init__ does not properly initialize for some inputs",
+    "title": "[with patch, positive review] BipartiteGraph.__init__ does not properly initialize for some inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2473",
     "user": "https://github.com/rhinton"

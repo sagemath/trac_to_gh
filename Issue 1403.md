@@ -1,16 +1,17 @@
-# Issue 1403: mwrank: crash upon exit
+# Issue 1403: mwrank has termination issues
 
 archive/issues_001403.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nJustin Walker reported:\n\n```\n'mwrank' doesn't like it if you just exit (by typing \"^D\" or, more or  \nless equivalently, by \"ending a file\").\n\nThus, if you run 'mwrank' and give it a file containing, for example,  \n\"[0,0,1,-1,0]\" and nothing else, it will barf at the end.  If your  \nfile contains \"[0,0,0,0,0]\", the program sweetly closes up shop (when  \nit reads this) and quits.\n\nThe error I get is\n   bad ZZ input\n   Abort trap\n\nAnyone know why this doesn't show up in the test logs?  Is it worth  \ntracking down?\n\nThe issue is that the terminating condition for input processing in  \n'getcurve()' is a \"null curve\" (\"\"[0,0,0,0,0]\"\"), rather than EOF.  \nAn EOF is an error condition, hence the abort(). \n```\n\nSee also #1402.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1403\n\n",
+    "closed_at": "2007-12-06T13:13:22Z",
     "created_at": "2007-12-05T11:42:07Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "mwrank: crash upon exit",
+    "title": "mwrank has termination issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1403",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

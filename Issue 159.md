@@ -4,6 +4,7 @@ archive/issues_000159.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nKeywords: bessel functions\n\nInconsistent behaviour:\n\n```\nsage: bessel_J(2,5.135,\"maxima\")\n0.00021138927993558099\nsage: bessel_J(2,5.136,\"maxima\")\n-0.00012828753895466338\nsage: bessel_J(2,5.135)\n0.0056034700919736996\nsage: bessel_J(2,5.136)\n0.0055939359540343476\nsage: bessel_J(2,5.136,\"pari\")\n0.0055939359540343476\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/159\n\n",
+    "closed_at": "2007-01-13T00:30:01Z",
     "created_at": "2006-10-28T16:22:30Z",
     "labels": [
         "component: numerical",

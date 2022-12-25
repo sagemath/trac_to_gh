@@ -1,9 +1,10 @@
-# Issue 3735: Interact - header Javascript code executes on update
+# Issue 3735: [with patch; positive review] Interact - header Javascript code executes on update
 
 archive/issues_003735.json:
 ```json
 {
     "body": "Assignee: boothby\n\nHere is an illustration (requires #3636):\n\n```\n@interact\ndef _(t=text_control(\"n = <span id='n'>0</span>\\\n        <script>n=parseInt($('#n').text()); $('#n').text(1+n);</script>\"),\n    l=[\"Increment\"]\n): pass\n```\n\nPressing \"Increment\" increments n, which implies that the line of Javascript code *in the header* is executed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3735\n\n",
+    "closed_at": "2008-08-09T23:23:20Z",
     "created_at": "2008-07-28T18:53:48Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003735.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Interact - header Javascript code executes on update",
+    "title": "[with patch; positive review] Interact - header Javascript code executes on update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3735",
     "user": "https://github.com/itolkov"

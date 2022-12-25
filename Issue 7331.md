@@ -4,6 +4,7 @@ archive/issues_007331.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @williamstein @rlmill\n\nKeywords: sha, tate-shafarevich group,  primary bound\n\n`p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.\n\n```\nE = EllipticCurve('270b')\nE.sha().p_primary_bound(5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7331\n\n",
+    "closed_at": "2009-10-31T16:27:15Z",
     "created_at": "2009-10-28T09:56:17Z",
     "labels": [
         "component: elliptic curves",

@@ -1,16 +1,17 @@
-# Issue 2537: a.frac() should return x-x.floor()
+# Issue 2537: [with patch, needs review] a.frac() should return x-x.floor()
 
 archive/issues_002537.json:
 ```json
 {
     "body": "Assignee: @rishikesha\n\nfrac(-2.9) should be .1\n\nIssue created by migration from https://trac.sagemath.org/ticket/2537\n\n",
+    "closed_at": "2008-03-16T01:32:25Z",
     "created_at": "2008-03-16T01:09:45Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "a.frac() should return x-x.floor()",
+    "title": "[with patch, needs review] a.frac() should return x-x.floor()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2537",
     "user": "https://github.com/rishikesha"

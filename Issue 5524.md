@@ -1,9 +1,10 @@
-# Issue 5524: attrcall missing __cmp__
+# Issue 5524: Fix missing equality test in attrcall
 
 archive/issues_005524.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat @jbandlow\n\nsage: f = attrcall(\"bla\")\nsage: dumps(f)\nsage: loads(dumps(f)) == f\nFalse\n\nThis is because AttrCallObject doesn't have a __cmp__ method:\n\nIssue created by migration from https://trac.sagemath.org/ticket/5524\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @jbandlow\n\nKeywords: attrcall, pickling\n\nThe patch fixes the missing equality test methods in attrcall:\n\n```\nsage: attrcall(\"bla\") == attrcall(\"bla\")\nFalse\n```\nwhich was, among others, breaking pickling tests.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5524\n\n",
+    "closed_at": "2010-01-30T23:45:49Z",
     "created_at": "2009-03-15T05:03:19Z",
     "labels": [
         "component: misc",
@@ -11,22 +12,26 @@ archive/issues_005524.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "attrcall missing __cmp__",
+    "title": "Fix missing equality test in attrcall",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5524",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: cwitty
+Assignee: @nthiery
 
 CC:  sage-combinat @jbandlow
 
-sage: f = attrcall("bla")
-sage: dumps(f)
-sage: loads(dumps(f)) == f
-False
+Keywords: attrcall, pickling
 
-This is because AttrCallObject doesn't have a __cmp__ method:
+The patch fixes the missing equality test methods in attrcall:
+
+```
+sage: attrcall("bla") == attrcall("bla")
+False
+```
+which was, among others, breaking pickling tests.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5524
 

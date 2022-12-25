@@ -1,15 +1,15 @@
-# Issue 3256: [with patch; needs review] soname and correct -fPIC handling for zn_poly
+# Issue 3256: [with patch; mixed review] soname and correct -fPIC handling for zn_poly
 
 archive/issues_003256.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  f.r.bissey@massey.ac.nz dmharvey\n\nI've attached a patch (developed with Francois Bissey) that should make zn_poly have shared library versioning and build the shared library with -fPIC but the static library without -fPIC.\n\nMy patch includes the relevant changes to the Debian packaging to make it fully Debian policy-compliant.\n\nIt also includes the relevant changes to spkg-install and SAGE-style copy patches that should make SAGE use the new version, though I haven't tested that part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3256\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  f.r.bissey@massey.ac.nz dmharvey\n\nKeywords: editor_mabshoff\n\nI've attached a patch (developed with Francois Bissey) that should make zn_poly have shared library versioning and build the shared library with -fPIC but the static library without -fPIC.\n\nMy patch includes the relevant changes to the Debian packaging to make it fully Debian policy-compliant.\n\nIt also includes the relevant changes to spkg-install and SAGE-style copy patches that should make SAGE use the new version, though I haven't tested that part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3256\n\n",
     "created_at": "2008-05-19T18:43:23Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "[with patch; needs review] soname and correct -fPIC handling for zn_poly",
+    "title": "[with patch; mixed review] soname and correct -fPIC handling for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3256",
     "user": "https://github.com/timabbott"
@@ -18,6 +18,8 @@ archive/issues_003256.json:
 Assignee: mabshoff
 
 CC:  f.r.bissey@massey.ac.nz dmharvey
+
+Keywords: editor_mabshoff
 
 I've attached a patch (developed with Francois Bissey) that should make zn_poly have shared library versioning and build the shared library with -fPIC but the static library without -fPIC.
 

@@ -1,16 +1,17 @@
-# Issue 5146: implement MPolynomial_ideal.varierty() for GF(p) with p > than what Singular supports
+# Issue 5146: [with patch; positive review] implement MPolynomial_ideal.variety() for GF(p) with p > than what Singular supports
 
 archive/issues_005146.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5146\n\n",
+    "closed_at": "2009-03-26T00:08:41Z",
     "created_at": "2009-01-31T18:06:25Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "implement MPolynomial_ideal.varierty() for GF(p) with p > than what Singular supports",
+    "title": "[with patch; positive review] implement MPolynomial_ideal.variety() for GF(p) with p > than what Singular supports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5146",
     "user": "https://github.com/malb"

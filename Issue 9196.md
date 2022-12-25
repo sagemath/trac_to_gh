@@ -3,10 +3,11 @@
 archive/issues_009196.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nAs discussed here\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/f3fa4f8737437d7f/5528028cc0c16975?lnk=gst&q=atlas#5528028cc0c16975\n\nATLAS needs to be updated. I'll take on that task. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9196\n\n",
+    "body": "Assignee: tbd\n\nAs discussed here\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/f3fa4f8737437d7f/5528028cc0c16975?lnk=gst&q=atlas#5528028cc0c16975\n\nATLAS needs to be updated. I'll take on that task. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9196\n\n",
+    "closed_at": "2013-05-24T12:19:26Z",
     "created_at": "2010-06-09T14:02:49Z",
     "labels": [
-        "component: algebra"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update ATLAS to the latest upstream souce",
@@ -15,7 +16,7 @@ archive/issues_009196.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 As discussed here
 

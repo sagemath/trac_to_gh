@@ -1,16 +1,17 @@
-# Issue 5192: Improve factor documentation
+# Issue 5192: [with patch, positive review] Improve factor documentation
 
 archive/issues_005192.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIntegers which result from symbolic expressions live in the symbolic ring, so they are not factored by factor().  E.g.\n\n```\nsage: f(n)=n^2+n+41\nsage: a=f(40)\nsage: factor(a),is_prime(a),a\n(1681, False, 1681)\nsage: factor(1681)\n41^2\n```\nBut this is not obvious from the documentation of factor(), which only refers to e.g. a.factor? as the source of this.  Some example like this should be added to the documentation of the global factor().\n\nIssue created by migration from https://trac.sagemath.org/ticket/5192\n\n",
+    "closed_at": "2009-02-07T00:55:57Z",
     "created_at": "2009-02-06T01:17:59Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Improve factor documentation",
+    "title": "[with patch, positive review] Improve factor documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5192",
     "user": "https://github.com/kcrisman"

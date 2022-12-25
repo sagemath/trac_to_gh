@@ -1,16 +1,17 @@
-# Issue 5688: update to sympy 0.6.4
+# Issue 5688: [with spkg, positive review] update to sympy 0.6.4
 
 archive/issues_005688.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe spkg package is at:\n\nhttp://sympy.googlecode.com/files/sympy-0.6.4.spkg\n\nAll calculus tests run fine, I am now testing the whole sage. When it's done, I'll append the log.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5688\n\n",
+    "closed_at": "2009-04-06T04:55:31Z",
     "created_at": "2009-04-05T08:13:22Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "update to sympy 0.6.4",
+    "title": "[with spkg, positive review] update to sympy 0.6.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5688",
     "user": "https://github.com/certik"

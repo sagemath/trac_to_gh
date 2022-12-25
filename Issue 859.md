@@ -1,16 +1,17 @@
-# Issue 859: Cannot coerce numpy integral types to ZZ
+# Issue 859: [with patch] [tested by cwitty] Cannot coerce numpy integral types to ZZ
 
 archive/issues_000859.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\nsage: import numpy\nsage: ZZ(numpy.int64(3))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/integer_ring.pyx in integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/859\n\n",
+    "closed_at": "2007-10-13T07:41:51Z",
     "created_at": "2007-10-12T05:16:54Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "Cannot coerce numpy integral types to ZZ",
+    "title": "[with patch] [tested by cwitty] Cannot coerce numpy integral types to ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/859",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

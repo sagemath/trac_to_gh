@@ -1,9 +1,10 @@
-# Issue 5099: rank for mod n sparse matrices is broken
+# Issue 5099: [with patch, positive review] rank for trivial mod n sparse matrices is broken
 
 archive/issues_005099.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: sparse, rank\n\nOn both sage.math (sage 3.2.3) and on my iMac (sage 3.3.alpha1), running\n\n```\nmatrix(GF(3), 0, 0, {}).rank()\n```\nis broken: sometimes I get 0, sometimes I get 1, sometimes I get `RuntimeError`. Same goes for \n\n```\nmatrix(GF(3), 0, 0, sparse=True).rank()\n```\nand \n\n```\nmatrix(GF(3), 0, 10, sparse=True).rank()\n```\nFor what it's worth, `matrix(GF(3), 10, 0, sparse=True).rank()` seems okay.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5099\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: sparse, rank\n\nOn both sage.math (sage 3.2.3) and on my iMac (sage 3.3.alpha1), running\n\n```\nmatrix(GF(3), 0, 0, {}).rank()\n```\nis broken: sometimes I get 0, sometimes I get 1, sometimes I get `RuntimeError`. Same goes for \n\n```\nmatrix(GF(3), 0, 0, sparse=True).rank()\n```\nand \n\n```\nmatrix(GF(3), 0, 10, sparse=True).rank()\n```\nFor what it's worth, `matrix(GF(3), 10, 0, sparse=True).rank()` seems okay.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5099\n\n",
+    "closed_at": "2009-03-05T00:45:39Z",
     "created_at": "2009-01-25T16:46:23Z",
     "labels": [
         "component: linear algebra",
@@ -11,13 +12,13 @@ archive/issues_005099.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "rank for mod n sparse matrices is broken",
+    "title": "[with patch, positive review] rank for trivial mod n sparse matrices is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5099",
     "user": "https://github.com/jhpalmieri"
 }
 ```
-Assignee: @williamstein
+Assignee: @hivert
 
 Keywords: sparse, rank
 

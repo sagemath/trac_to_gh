@@ -4,6 +4,7 @@ archive/issues_009861.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nKeywords: interval graph\n\nThis is a reimplementation of the `IntervalGraph()` constructor to allow repeated intervals in the list of intervals. The input is a list of intervals. The output is a graph whose vertices are numbered 0 through n-1 (where n is the length of the list). Vertices u and v are adjacent iff the u'th and v'th intervals in the input list intersect. The intervals associated with these vertices are saved with the graph using `set_vertex` and can be retrieved later using `get_vertex` or `get_vertices`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9862\n\n",
+    "closed_at": "2010-09-15T22:52:34Z",
     "created_at": "2010-09-06T18:53:29Z",
     "labels": [
         "component: graph theory"

@@ -4,6 +4,7 @@ archive/issues_000288.json:
 ```json
 {
     "body": "Assignee: Robert Bradshaw\n\n* list indexing now 5 times faster\n* conditional expressions\n* 2**20 bug\n* ETC!\n\nIssue created by migration from https://trac.sagemath.org/ticket/288\n\n",
+    "closed_at": "2007-08-10T19:33:08Z",
     "created_at": "2007-02-24T02:40:38Z",
     "labels": [
         "component: packages: standard"

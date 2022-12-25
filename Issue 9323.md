@@ -4,6 +4,7 @@ archive/issues_009323.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nWhy?  'cause Mike Hansen says so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9323\n\n",
+    "closed_at": "2010-07-21T03:22:25Z",
     "created_at": "2010-06-24T03:43:49Z",
     "labels": [
         "component: documentation",

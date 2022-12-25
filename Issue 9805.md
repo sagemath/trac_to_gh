@@ -3,10 +3,11 @@
 archive/issues_009805.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  @videlec @slel\n\nKeywords: constellation, permutation, surfaces, graphs\n\nA constellation is a combinatorial description (via elements of the symmetric group) of graphs embedded in surfaces (also called G-map). This ticket aims to implement a basic class for it with:\n* fast data type\n* normal form and isomorphism test\n* enumeration/generation with constraints\n\nIssue created by migration from https://trac.sagemath.org/ticket/9806\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @videlec @slel\n\nKeywords: constellation, permutation, surfaces, graphs\n\nA constellation is a combinatorial description (via elements of the symmetric group) of graphs embedded in surfaces (also called G-map). This ticket aims to implement a basic class for it with:\n* fast data type\n* normal form and isomorphism test\n* action of the braid group\n* enumeration/generation with constraints\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9806\n\n",
+    "closed_at": "2016-05-28T12:13:45Z",
     "created_at": "2010-08-26T14:18:20Z",
     "labels": [
-        "component: algebra"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
     "title": "Constellations",
@@ -24,7 +25,9 @@ Keywords: constellation, permutation, surfaces, graphs
 A constellation is a combinatorial description (via elements of the symmetric group) of graphs embedded in surfaces (also called G-map). This ticket aims to implement a basic class for it with:
 * fast data type
 * normal form and isomorphism test
+* action of the braid group
 * enumeration/generation with constraints
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9806
 

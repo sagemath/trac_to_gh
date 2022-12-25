@@ -3,10 +3,10 @@
 archive/issues_006426.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @JohnCremona @craigcitro @unzvfu @williamstein @ncalexan @mstreng\n\nThis is a repository of Magma code for arithmetic geometry and number theory.  The latest spkg is echidna-2.0.spkg, can be downloaded from:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/\n\nThis should be tested with the Sage worksheet:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.sws\n\nA printed pdf version is here:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.pdf\n\nThis spkg is submitted for consideration as an optional \npackage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6426\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @craigcitro @unzvfu @williamstein @ncalexan @mstreng\n\nThis is a repository of Magma code for arithmetic geometry and number theory.  The latest spkg is echidna-2.0.spkg, can be downloaded from:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/\n\nThis should be tested with the Sage worksheet:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.sws\n\nA printed pdf version is here:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.pdf\n\nThis spkg is submitted for consideration as an optional \npackage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6426\n\n",
     "created_at": "2009-06-26T17:27:06Z",
     "labels": [
-        "component: algebra"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "ECHIDNA (Elliptic Curves and Higher Dimensional Analogues)",
@@ -15,7 +15,7 @@ archive/issues_006426.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
-Assignee: tbd
+Assignee: @williamstein
 
 CC:  @JohnCremona @craigcitro @unzvfu @williamstein @ncalexan @mstreng
 

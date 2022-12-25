@@ -3,11 +3,11 @@
 archive/issues_009443.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: infinite polynomial ring\n\nOther implementations of is_integral_domain allow an argument 'proof' whose default value is False.  Infinite polynomial ring omits this argument in its definition of is_integral_domain:\n\nsage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')\nsage: W.is_integral_domain()\n\n---\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_integral_domain() takes exactly 1 argument (2 given)\n\n\nsage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')\n\n---\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_field() got an unexpected keyword argument 'proof'\n\nIssue created by migration from https://trac.sagemath.org/ticket/9443\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: infinite polynomial ring\n\nOther implementations of is_integral_domain allow an argument 'proof' whose default value is False.  Infinite polynomial ring omits this argument in its definition of is_integral_domain:\n\n```\nsage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')\nsage: W.is_integral_domain()\n-------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_integral_domain() takes exactly 1 argument (2 given)\n```\n\nsame goes for is_field:\n\n```\nsage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: is_field() got an unexpected keyword argument 'proof'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9443\n\n",
+    "closed_at": "2010-09-15T11:14:08Z",
     "created_at": "2010-07-07T02:52:26Z",
     "labels": [
         "component: algebra",
-        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
@@ -23,21 +23,24 @@ Keywords: infinite polynomial ring
 
 Other implementations of is_integral_domain allow an argument 'proof' whose default value is False.  Infinite polynomial ring omits this argument in its definition of is_integral_domain:
 
+```
 sage: W = PolynomialRing(InfinitePolynomialRing(QQ,'a'),2,'x,y')
 sage: W.is_integral_domain()
-
----
+-------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 ...
 TypeError: is_integral_domain() takes exactly 1 argument (2 given)
+```
 
+same goes for is_field:
 
+```
 sage: W = PowerSeriesRing(InfinitePolynomialRing(QQ,'a'),'x')
-
----
+---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 ...
 TypeError: is_field() got an unexpected keyword argument 'proof'
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/9443
 

@@ -1,16 +1,16 @@
-# Issue 3401: extend li to work with complex input
+# Issue 3401: Make Li symbolic and work with complex input
 
 archive/issues_003401.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  myurko @benjaminfjones\n\nHere is some example code from M. Yurko that explains how to do this.\nI think something based on this should be put into the Li function itself.\n\n```\nO.K. I defined li(x) as follows:\n\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 1:\n       return -infinity\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\nThe first part uses SAGE's built in Li(x) but adjusts for the offset.\nThe second part should be self explanatory. The third part uses a\nformula involving the incomplete gamma function which I found on the\nWolfram Functions website. On testing different values with an\nexternal calculator,  the third statement appears to only be valid for\nnegative reals and complex numbers. This leaves the interval [0,2)\nundefined. Please note that I have no background in complex analysis\nand that my above statements about domain are only based upon\nexperimentation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3401\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  myurko @benjaminfjones\n\nKeywords: beginner, Li, log, integral, symbolics, calculus\n\nMake Li symbolic and work with complex input\n\nJust use mpmath and the ideas from #11143.  Probably will have to do a little work to keep the doctests from earlier, maybe deprecate a keyword or two related to precision.\n\n---\n\n\nHere is some example code from M. Yurko that explains how to do this.\nI think something based on this should be put into the Li function itself.\n\n```\nO.K. I defined li(x) as follows:\n\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 1:\n       return -infinity\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\nThe first part uses SAGE's built in Li(x) but adjusts for the offset.\nThe second part should be self explanatory. The third part uses a\nformula involving the incomplete gamma function which I found on the\nWolfram Functions website. On testing different values with an\nexternal calculator,  the third statement appears to only be valid for\nnegative reals and complex numbers. This leaves the interval [0,2)\nundefined. Please note that I have no background in complex analysis\nand that my above statements about domain are only based upon\nexperimentation.\n```\n\n---\n\nApply [attachment:trac_3401.v2.patch] to the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3401\n\n",
+    "closed_at": "2012-08-23T12:45:34Z",
     "created_at": "2008-06-11T17:46:09Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.3",
-    "title": "extend li to work with complex input",
+    "title": "Make Li symbolic and work with complex input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3401",
     "user": "https://github.com/williamstein"
@@ -19,6 +19,15 @@ archive/issues_003401.json:
 Assignee: @garyfurnish
 
 CC:  myurko @benjaminfjones
+
+Keywords: beginner, Li, log, integral, symbolics, calculus
+
+Make Li symbolic and work with complex input
+
+Just use mpmath and the ideas from #11143.  Probably will have to do a little work to keep the doctests from earlier, maybe deprecate a keyword or two related to precision.
+
+---
+
 
 Here is some example code from M. Yurko that explains how to do this.
 I think something based on this should be put into the Li function itself.
@@ -48,6 +57,10 @@ undefined. Please note that I have no background in complex analysis
 and that my above statements about domain are only based upon
 experimentation.
 ```
+
+---
+
+Apply [attachment:trac_3401.v2.patch] to the Sage library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3401
 

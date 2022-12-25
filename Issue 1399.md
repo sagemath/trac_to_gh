@@ -1,22 +1,23 @@
-# Issue 1399: Problems with arithmetic
+# Issue 1399: [with patch, with positive review] improve and document integer is_prime and is_irreducible
 
 archive/issues_001399.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThere are some operations which are either unimplemented or give (what I would consider to be) wrong answers:\n\nN=-7\n\nN.is_prime()\n>>false\n\n\nI believe that this should give the answer \"true\".\n\nAlso, if one tries\n`ZZ.ideal(N).is_prime()`\n\none gets a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1399\n\n",
+    "body": "Assignee: @mwhansen\n\nThere are some operations which are either unimplemented or give (what I would consider to be) wrong answers:\n\nN=-7\n\nN.is_prime()\n>>false\n\n\nI believe that this should give the answer \"true\".\n\nAlso, if one tries\n`ZZ.ideal(N).is_prime()`\n\none gets a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1399\n\n",
+    "closed_at": "2008-02-24T21:19:03Z",
     "created_at": "2007-12-04T22:49:22Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Problems with arithmetic",
+    "title": "[with patch, with positive review] improve and document integer is_prime and is_irreducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1399",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 There are some operations which are either unimplemented or give (what I would consider to be) wrong answers:
 

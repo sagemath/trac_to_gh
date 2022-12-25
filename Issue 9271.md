@@ -4,6 +4,7 @@ archive/issues_009271.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThe doctests marked \"optional: needs CHomP\" are not formatted properly: see #9270 and \n[http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af](http://groups.google.com/group/sage-devel/browse_thread/thread/71d958feced948af).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9271\n\n",
+    "closed_at": "2010-07-20T08:45:37Z",
     "created_at": "2010-06-19T02:47:43Z",
     "labels": [
         "component: algebraic topology",

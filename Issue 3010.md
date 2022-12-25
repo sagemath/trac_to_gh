@@ -1,22 +1,24 @@
-# Issue 3010: Numerical noise doctest failure in rings/complex_double.pyx
+# Issue 3010: [with patch, positive review] Numerical noise doctest failure in rings/complex_double.pyx
 
 archive/issues_003010.json:
 ```json
 {
-    "body": "Assignee: failure\n\nAndrzej Giniewicz reported:\n\n```\nsage -t  devel/sage-main/sage/rings/complex_double.pyx\n**********************************************************************\nFile \"/opt/sage-3.0.rc1/tmp/complex_double.py\", line 1659:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + ...e-16*I\nGot:\n    2.22044604925e-16\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_93\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-3.0.rc1/\ntmp/.doctest_complex_double.py\n         [4.1 s]\nexit code: 1024\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3010\n\n",
+    "body": "Assignee: mabshoff\n\nAndrzej Giniewicz reported:\n\n```\nsage -t  devel/sage-main/sage/rings/complex_double.pyx\n**********************************************************************\nFile \"/opt/sage-3.0.rc1/tmp/complex_double.py\", line 1659:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + ...e-16*I\nGot:\n    2.22044604925e-16\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_93\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-3.0.rc1/\ntmp/.doctest_complex_double.py\n         [4.1 s]\nexit code: 1024\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3010\n\n",
+    "closed_at": "2008-05-03T16:33:59Z",
     "created_at": "2008-04-23T21:07:14Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Numerical noise doctest failure in rings/complex_double.pyx",
+    "title": "[with patch, positive review] Numerical noise doctest failure in rings/complex_double.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3010",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 Andrzej Giniewicz reported:
 

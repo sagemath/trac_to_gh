@@ -1,17 +1,17 @@
-# Issue 1778: plot() does not follow the same interval range conventions as plot3d()
+# Issue 1778: [with patch, positive review] plot() does not follow the same interval range conventions as plot3d()
 
 archive/issues_001778.json:
 ```json
 {
-    "body": "Assignee: @bobmoretti\n\nKeywords: plotting, plot3d, plot\n\nsage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))\n\nis valid, however, to do a 2d plot, you use the syntax\n\nsage: plot(x^2, x, -2, 2).\n\nI spoke with William about this, he wants to deprecate the plot(x^2, -2, 2) syntax for 2d plotting and introduce a new preferred syntax:\n\nsage: plot(x^2, (x, -2, 2))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1778\n\n",
+    "body": "Assignee: @bobmoretti\n\nKeywords: plotting, plot3d, plot\n\n`sage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))`\n\nis valid, however, to do a 2d plot, you use the syntax\n\n`sage: plot(x^2, x, -2, 2).`\n\nI spoke with William about this, he wants to deprecate the `plot(x^2, -2, 2)` syntax for 2d plotting and introduce a new preferred syntax:\n\n`sage: plot(x^2, (x, -2, 2))`\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1778\n\n",
+    "closed_at": "2008-01-15T07:12:50Z",
     "created_at": "2008-01-14T22:58:12Z",
     "labels": [
         "component: graphics",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "plot() does not follow the same interval range conventions as plot3d()",
+    "title": "[with patch, positive review] plot() does not follow the same interval range conventions as plot3d()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1778",
     "user": "https://github.com/bobmoretti"
@@ -21,15 +21,17 @@ Assignee: @bobmoretti
 
 Keywords: plotting, plot3d, plot
 
-sage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))
+`sage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))`
 
 is valid, however, to do a 2d plot, you use the syntax
 
-sage: plot(x^2, x, -2, 2).
+`sage: plot(x^2, x, -2, 2).`
 
-I spoke with William about this, he wants to deprecate the plot(x^2, -2, 2) syntax for 2d plotting and introduce a new preferred syntax:
+I spoke with William about this, he wants to deprecate the `plot(x^2, -2, 2)` syntax for 2d plotting and introduce a new preferred syntax:
 
-sage: plot(x^2, (x, -2, 2))
+`sage: plot(x^2, (x, -2, 2))`
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1778
 

@@ -1,15 +1,16 @@
-# Issue 5520: implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices
+# Issue 5520: [with patch; positive review] implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices
 
 archive/issues_005520.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  bober\n\nI started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. \n\nSee http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5520\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  bober\n\nI started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. \n\nSee http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper. \n\n\nThe attached patch has no dependencies and should apply cleanly to sage-3.4.\n\nCREDIT GOES TO: \n- Jon Bober\n- Alia Hamieh\n- Victoria de Quehen\n- William Stein\n- Gonzalo Tornaria\n\n\nTO APPLY this to 3.4.1.alpha0, apply these three in order:\n\n* trac_5520-rebase3.4.1.alpha0.patch\n* trac_5520-rebase3.4.1.alpha0-part2.patch\n* trac_5520-rebase3.4.1.alpha0-part3.patch\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5520\n\n",
+    "closed_at": "2009-03-31T03:45:09Z",
     "created_at": "2009-03-14T22:17:05Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices",
+    "title": "[with patch; positive review] implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5520",
     "user": "https://github.com/williamstein"
@@ -21,7 +22,25 @@ CC:  bober
 
 I started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. 
 
-See http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper.
+See http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper. 
+
+
+The attached patch has no dependencies and should apply cleanly to sage-3.4.
+
+CREDIT GOES TO: 
+- Jon Bober
+- Alia Hamieh
+- Victoria de Quehen
+- William Stein
+- Gonzalo Tornaria
+
+
+TO APPLY this to 3.4.1.alpha0, apply these three in order:
+
+* trac_5520-rebase3.4.1.alpha0.patch
+* trac_5520-rebase3.4.1.alpha0-part2.patch
+* trac_5520-rebase3.4.1.alpha0-part3.patch
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5520
 

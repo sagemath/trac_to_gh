@@ -1,16 +1,18 @@
-# Issue 1514: fix breakage and lameness in foo? and foo?? especially in the notebook.
+# Issue 1514: [with patch, with positive review] fix breakage and lameness in foo? and foo?? especially in the notebook.
 
 archive/issues_001514.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI'm sick of foo? or foo?? failing with tracebacks.  They should never do that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1514\n\n",
+    "closed_at": "2007-12-15T07:21:37Z",
     "created_at": "2007-12-15T00:17:52Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "fix breakage and lameness in foo? and foo?? especially in the notebook.",
+    "title": "[with patch, with positive review] fix breakage and lameness in foo? and foo?? especially in the notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1514",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,18 @@
-# Issue 6065: [with patch, needs review] implement some missing trig methods on RealIntervalFieldElement
+# Issue 6065: [with patch, positive review] implement some missing trig methods on RealIntervalFieldElement
 
 archive/issues_006065.json:
 ```json
 {
     "body": "Assignee: somebody\n\nAt William's request, I'm implementing a few methods that RR had and RIF didn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6065\n\n",
+    "closed_at": "2009-05-21T00:36:23Z",
     "created_at": "2009-05-18T06:38:06Z",
     "labels": [
         "component: basic arithmetic",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] implement some missing trig methods on RealIntervalFieldElement",
+    "title": "[with patch, positive review] implement some missing trig methods on RealIntervalFieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6065",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -4,6 +4,7 @@ archive/issues_007824.json:
 ```json
 {
     "body": "Assignee: @peterjeremy\n\nCC:  nathann.cohen@gmail.com\n\ncliquer aborts with the error\n\n```\nCannot determine your platform or it is not supported... exiting\n```\nunless the platform is explicitly listed as supported.  This patch adds FreeBSD support - which is the same as Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7824\n\n",
+    "closed_at": "2010-01-24T14:38:15Z",
     "created_at": "2010-01-03T02:10:25Z",
     "labels": [
         "component: porting: bsd",

@@ -1,27 +1,29 @@
-# Issue 3131: README.txt: update recommendations for dev work with binaries
+# Issue 3131: README and developer guide should warn against developing with binaries
 
 archive/issues_003131.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\nAside from all the other issues: You should *always* rebuild the Sage\nlibrary of a binary build before running clone. Otherwise each clone\nrequires a complete rebuild. Aside from that it is *highly*\nrecommended to build from source if you are developing since mixing\nand matching different compiler releases [even on OSX] can lead to odd\nresults, i.e. Heisenbugs and segfaults.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3131\n\n",
+    "body": "Assignee: btdhall\n\nKeywords: beginner\n\n```\nAside from that it is *highly*\nrecommended to build from source if you are developing since mixing\nand matching different compiler releases [even on OSX] can lead to odd\nresults, i.e. Heisenbugs and segfaults.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3131\n\n",
+    "closed_at": "2016-07-08T07:09:33Z",
     "created_at": "2008-05-08T12:47:56Z",
     "labels": [
         "component: documentation",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.3",
-    "title": "README.txt: update recommendations for dev work with binaries",
+    "title": "README and developer guide should warn against developing with binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3131",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: tba
+Assignee: btdhall
+
+Keywords: beginner
 
 ```
-Aside from all the other issues: You should *always* rebuild the Sage
-library of a binary build before running clone. Otherwise each clone
-requires a complete rebuild. Aside from that it is *highly*
+Aside from that it is *highly*
 recommended to build from source if you are developing since mixing
 and matching different compiler releases [even on OSX] can lead to odd
 results, i.e. Heisenbugs and segfaults.

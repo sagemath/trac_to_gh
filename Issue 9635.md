@@ -3,10 +3,11 @@
 archive/issues_009635.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n```\nsage: (n,k,j)=var('n,k,j')\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n0\nsage: (n,j)=(5,3)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j) for k in range(j\n+1,n+1))\n1 \n```\nThe above sum should be 1 for n>=j and 0 otherwise.\n\nFrom kcrisman:\nThis appears to be a bug in Maxima. \n\n```\n(%i1) load(simplify_sum);\n<snip>\n(%i3) simplify_sum(sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j\n+1,n));\n\n(%o3)                                  0\n(%i4) simplify_sum(sum(binomial(5,k)*binomial(k-1,3)*(-1)**(k-1-3),k,\n4,5));\n(%o4)                                  1\n(%i5) 5*1*1+1*4*(-1);\n(%o5)                                  1 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9635\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: (n,k,j)=var('n,k,j')\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j+1,n)\n0\nsage: (n,j)=(5,3)\nsage: sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j) for k in range(j\n+1,n+1))\n1 \n```\nThe above sum should be 1 for n>=j and 0 otherwise.\n\nFrom kcrisman:\nThis appears to be a bug in Maxima. \n\n```\n(%i1) load(simplify_sum);\n<snip>\n(%i3) simplify_sum(sum(binomial(n,k)*binomial(k-1,j)*(-1)**(k-1-j),k,j\n+1,n));\n\n(%o3)                                  0\n(%i4) simplify_sum(sum(binomial(5,k)*binomial(k-1,3)*(-1)**(k-1-3),k,\n4,5));\n(%o4)                                  1\n(%i5) 5*1*1+1*4*(-1);\n(%o5)                                  1 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9635\n\n",
+    "closed_at": "2015-02-08T15:26:26Z",
     "created_at": "2010-07-29T07:34:28Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
@@ -16,7 +17,7 @@ archive/issues_009635.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/Henryk.Trappmann"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 ```
 sage: (n,k,j)=var('n,k,j')

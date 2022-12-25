@@ -1,16 +1,17 @@
-# Issue 3347: [with patches, needs review] lots of changes to the tutorial
+# Issue 3347: [with patches, positive review] lots of changes to the tutorial
 
 archive/issues_003347.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nKeywords: tutorial\n\nI've been working on rewriting the tutorial, moving sections around, deleting things, adding things, etc.  I'm done with a first draft of the \"guided tour\" (chapter 2).  I'll try to get to the rest eventually.\n\nPlease let me know if I've deleted your very favorite section or something like that...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3347\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: tutorial, editor_mhansen\n\nI've been working on rewriting the tutorial, moving sections around, deleting things, adding things, etc.  I'm done with a first draft of the \"guided tour\" (chapter 2).  I'll try to get to the rest eventually.\n\nPlease let me know if I've deleted your very favorite section or something like that...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3347\n\n",
+    "closed_at": "2008-06-23T11:39:02Z",
     "created_at": "2008-06-01T05:46:17Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patches, needs review] lots of changes to the tutorial",
+    "title": "[with patches, positive review] lots of changes to the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3347",
     "user": "https://github.com/jhpalmieri"
@@ -18,7 +19,7 @@ archive/issues_003347.json:
 ```
 Assignee: @jhpalmieri
 
-Keywords: tutorial
+Keywords: tutorial, editor_mhansen
 
 I've been working on rewriting the tutorial, moving sections around, deleting things, adding things, etc.  I'm done with a first draft of the "guided tour" (chapter 2).  I'll try to get to the rest eventually.
 

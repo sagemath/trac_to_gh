@@ -1,16 +1,17 @@
-# Issue 3142: [with patch, needs review] MPolynomialIdeal.homogenize bugfix
+# Issue 3142: [with patch, positive review] MPolynomialIdeal.homogenize bugfix
 
 archive/issues_003142.json:
 ```json
 {
     "body": "Assignee: @malb\n\nhomogenization could fail if the first polynomial in the list is homogenious but later polynomials aren't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3142\n\n",
+    "closed_at": "2008-05-11T13:40:09Z",
     "created_at": "2008-05-09T10:44:15Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch, needs review] MPolynomialIdeal.homogenize bugfix",
+    "title": "[with patch, positive review] MPolynomialIdeal.homogenize bugfix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3142",
     "user": "https://github.com/malb"

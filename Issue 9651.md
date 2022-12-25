@@ -3,7 +3,8 @@
 archive/issues_009651.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: addition of dictionaries, CombinatorialFreeModule\n\nAt the moment, adding (and taking negative, substracting,...) for CombinatorialFreeModule is not done in a very efficient way.\n\nThis patch\n\n- provides a cythonized version of a pointwise addition of dictionaries, together with multiple options\n\n- uses this addition of dictionaries to provide fast methods for CombinatorialFreeModule\n\n- is (indirectly) based on the patch in Ticket #9648\n\nIssue created by migration from https://trac.sagemath.org/ticket/9651\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: addition of dictionaries, CombinatorialFreeModule\n\nAt the moment, adding (and taking negative, substracting,...) for CombinatorialFreeModule is not done in a very efficient way.\n\nThis patch\n\n- provides a cythonized version of a pointwise addition of dictionaries, together with multiple options\n\n- uses this addition of dictionaries to provide fast methods for CombinatorialFreeModule\n\n- is (indirectly) based on the patch in Ticket #9648\n\n======================================\n\nprerequisite:\ntrac_9648_modulemorphism_codomain_extension.2.patch\n\napply that patch and\ntrac_9651_CombinatorialFreeModule_Addition-cs.4.patch,\nwhich supercedes the previously posted patches on this page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9651\n\n",
+    "closed_at": "2010-11-01T10:09:06Z",
     "created_at": "2010-07-31T18:23:15Z",
     "labels": [
         "component: combinatorics"
@@ -28,6 +29,15 @@ This patch
 - uses this addition of dictionaries to provide fast methods for CombinatorialFreeModule
 
 - is (indirectly) based on the patch in Ticket #9648
+
+======================================
+
+prerequisite:
+trac_9648_modulemorphism_codomain_extension.2.patch
+
+apply that patch and
+trac_9651_CombinatorialFreeModule_Addition-cs.4.patch,
+which supercedes the previously posted patches on this page.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9651
 

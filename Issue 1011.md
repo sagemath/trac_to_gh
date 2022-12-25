@@ -3,7 +3,8 @@
 archive/issues_001011.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis used to not work: `bool(magma('true'))` with the attached tiny patch it does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1011\n\n",
+    "body": "Assignee: @malb\n\nThis used to not work: `bool(magma('true'))` with the attached tiny patch it does.    applied to 2.8.11.alpha0\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1011\n\n",
+    "closed_at": "2007-11-01T09:41:09Z",
     "created_at": "2007-10-27T13:59:24Z",
     "labels": [
         "component: interfaces",
@@ -18,7 +19,9 @@ archive/issues_001011.json:
 ```
 Assignee: @malb
 
-This used to not work: `bool(magma('true'))` with the attached tiny patch it does.
+This used to not work: `bool(magma('true'))` with the attached tiny patch it does.    applied to 2.8.11.alpha0
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1011
 

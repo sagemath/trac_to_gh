@@ -3,7 +3,8 @@
 archive/issues_006135.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ohanar\n\n#4073 has not been fixed in 4.0.alpha0 and 4.0.rc0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6135\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ohanar\n\nKeywords: sd59\n\n#4073 has not been fixed in 4.0.alpha0 and 4.0.rc0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6135\n\n",
+    "closed_at": "2014-06-23T19:16:39Z",
     "created_at": "2009-05-26T23:49:30Z",
     "labels": [
         "component: interfaces",
@@ -19,6 +20,8 @@ archive/issues_006135.json:
 Assignee: @williamstein
 
 CC:  @ohanar
+
+Keywords: sd59
 
 #4073 has not been fixed in 4.0.alpha0 and 4.0.rc0.
 

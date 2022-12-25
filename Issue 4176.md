@@ -1,16 +1,18 @@
-# Issue 4176: matplotlib build failure due to broken tcl/tk detection
+# Issue 4176: [with spkg; positive review] matplotlib build failure due to broken tcl/tk detection
 
 archive/issues_004176.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jaapspies\n\n```\nBUILDING MATPLOTLIB \n            matplotlib: 0.98.3 \n                python: 2.5.2 (r252:60911, Sep 23 2008, 17:09:57) \n[GCC \n                        4.3.0 20080428 (Red Hat 4.3.0-8)] \n              platform: linux2 \nREQUIRED DEPENDENCIES \n                 numpy: 1.1.0 \n             freetype2: 9.16.3 \nOPTIONAL BACKEND DEPENDENCIES \n                libpng: 1.2.29 \nTraceback (most recent call last): \n  File \"setup.py\", line 125, in <module> \n    if check_for_tk() or (options['build_tkagg'] is True): \n  File \"/home/abhishek/sage-3.1.2/spkg/build/matplotlib-0.98.3.p1/src/ \nsetupext.py\", line 846, in check_for_tk \n    explanation = add_tk_flags(module) \n  File \"/home/abhishek/sage-3.1.2/spkg/build/matplotlib-0.98.3.p1/src/ \nsetupext.py\", line 1106, in add_tk_flags \n    module.libraries.extend(['tk' + tk_ver, 'tcl' + tk_ver]) \nUnboundLocalError: local variable 'tk_ver' referenced before \nassignment \nError building matplotlib package. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4176\n\n",
+    "closed_at": "2008-11-27T02:21:59Z",
     "created_at": "2008-09-23T18:12:53Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "matplotlib build failure due to broken tcl/tk detection",
+    "title": "[with spkg; positive review] matplotlib build failure due to broken tcl/tk detection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4176",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

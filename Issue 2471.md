@@ -1,16 +1,17 @@
-# Issue 2471: [with patch; needs review] doctest failures in graph.py and factorization.py (caused by architecture dependence)
+# Issue 2471: [with patch; with positive review] doctest failures in graph.py and factorization.py (caused by architecture dependence)
 
 archive/issues_002471.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2471\n\n",
+    "closed_at": "2008-03-11T15:37:11Z",
     "created_at": "2008-03-11T08:10:25Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch; needs review] doctest failures in graph.py and factorization.py (caused by architecture dependence)",
+    "title": "[with patch; with positive review] doctest failures in graph.py and factorization.py (caused by architecture dependence)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2471",
     "user": "https://github.com/williamstein"

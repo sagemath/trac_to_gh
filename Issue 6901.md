@@ -1,9 +1,10 @@
-# Issue 6901: follow-up to #6839: fix warnings when building reference manual
+# Issue 6901: [with patch, positive review] follow-up to #6839: fix warnings when building reference manual
 
 archive/issues_006901.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  sage-combinat\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6901\n\n",
+    "closed_at": "2009-09-23T07:08:51Z",
     "created_at": "2009-09-07T17:22:31Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006901.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "follow-up to #6839: fix warnings when building reference manual",
+    "title": "[with patch, positive review] follow-up to #6839: fix warnings when building reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6901",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

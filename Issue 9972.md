@@ -1,16 +1,17 @@
-# Issue 9972: Remove empty directory data/extcode/pari/SEA
+# Issue 9972: Remove empty directories after PARI upgrade
 
 archive/issues_009972.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @qed777\n\nIn #9343, all files in the directory `data/extcode/pari/SEA` were removed, but the directory structure is still there.\n\nThere is no patch for this, the release manager should remove the directory manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9973\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @qed777\n\nIn #9343, all files in the directory `data/extcode/pari/SEA` and `data/extcode/pari/cremona` were removed, but the directory structure is still there.\n\nThere is no patch for this, the release manager should remove the directories manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9973\n\n",
+    "closed_at": "2010-09-29T09:08:17Z",
     "created_at": "2010-09-23T08:37:20Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Remove empty directory data/extcode/pari/SEA",
+    "title": "Remove empty directories after PARI upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9972",
     "user": "https://github.com/jdemeyer"
@@ -20,9 +21,9 @@ Assignee: @jasongrout
 
 CC:  @qed777
 
-In #9343, all files in the directory `data/extcode/pari/SEA` were removed, but the directory structure is still there.
+In #9343, all files in the directory `data/extcode/pari/SEA` and `data/extcode/pari/cremona` were removed, but the directory structure is still there.
 
-There is no patch for this, the release manager should remove the directory manually.
+There is no patch for this, the release manager should remove the directories manually.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9973
 

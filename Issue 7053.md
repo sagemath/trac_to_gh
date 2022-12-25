@@ -1,16 +1,17 @@
-# Issue 7053: SageNB fails to display uploaded files
+# Issue 7053: [with patch; positive review] SageNB fails to display uploaded files
 
 archive/issues_007053.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\nsagenb failes to display uploaded files due to a bug in template parameters.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7053\n\n",
+    "closed_at": "2009-09-28T17:32:34Z",
     "created_at": "2009-09-28T17:27:06Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "SageNB fails to display uploaded files",
+    "title": "[with patch; positive review] SageNB fails to display uploaded files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7053",
     "user": "https://github.com/TimDumol"

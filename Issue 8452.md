@@ -3,10 +3,12 @@
 archive/issues_008452.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @hivert @jhpalmieri @nthiery\n\nFlorent Hivert has recently devised a nice way to use Sphinx to test that nested classes in Sage are picklable.  Please see [attachment:ticket:7448:trac_7448-nested_class_sphinx-fh.4.patch V4] at #7448.  From #7448's description:\n\n   \"I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.\"\n\nThis ticket is about implementing Hivert's idea.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8452\n\n",
+    "body": "Assignee: tbd\n\nCC:  @hivert @jhpalmieri @nthiery\n\nFlorent Hivert has recently devised a nice way to use Sphinx to test that nested classes in Sage are picklable.  Please see [attachment:ticket:7448:trac_7448-nested_class_sphinx-fh.4.patch V4] at #7448.  From #7448's description:\n\n   \"I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.\"\n\nThis ticket is about implementing Hivert's idea.\n\nFor the record, here a the tickets about bugs caught this way:\n#8388, #8475. More have been caught on sage-combinat patch queue, before entering sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8452\n\n",
+    "closed_at": "2010-03-09T07:46:53Z",
     "created_at": "2010-03-06T00:43:33Z",
     "labels": [
-        "component: misc"
+        "component: misc",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Code check: Pickling of nested classes",
@@ -24,6 +26,9 @@ Florent Hivert has recently devised a nice way to use Sphinx to test that nested
    "I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this."
 
 This ticket is about implementing Hivert's idea.
+
+For the record, here a the tickets about bugs caught this way:
+#8388, #8475. More have been caught on sage-combinat patch queue, before entering sage. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8452
 

@@ -1,16 +1,17 @@
-# Issue 1068: turn off inplace optimizations
+# Issue 1068: turn off inplace optimizations because of numpy problems
 
 archive/issues_001068.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n> The inplace optimizations should be something that have to be\n> > explicitly turned on, and they should be off by default.  I know they\n> > make certain things faster, but correctness by default is *always* a\n> > much more important consideration with serious mathematical software\n> > such as Sage.  Always.\n> >\n> > I will very likely disable in-place optimization for sage-2.8.11,\n> > until this issue gets properly discussed and resolved.\n\n:-(, but I have to concede to your logic. The line to change is 148  \nof coerce.pxi. Setting this value to 0 will turn them completely off.  \nOther than numpy, (and the builtin libraries), do we use any other  \nextension types? If there is a finite list of things for which it  \nwon't work, it would be possible to disable it just for those.\n\n- Robert\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1068\n\n",
+    "closed_at": "2007-11-02T19:20:12Z",
     "created_at": "2007-11-02T19:04:12Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "turn off inplace optimizations",
+    "title": "turn off inplace optimizations because of numpy problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1068",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

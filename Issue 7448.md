@@ -1,16 +1,17 @@
-# Issue 7448: Improve sphinx rendering of categories in reference manual.
+# Issue 7448: Sphinx nested class rendering.
 
 archive/issues_007448.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  @mwhansen @nthiery @jhpalmieri\n\nKeywords: Sphinx categories.\n\nSince #7443, categories now appear in the reference manual. But Sphinx rendering in very poor. In particular, I can't manage to get nested class appearing in the doc though I've read that they are supported by Sphinx. Once someone (Mike ?) explain me the solution, I'll be glad to implement it. \n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7448\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @mwhansen @nthiery @jhpalmieri\n\nKeywords: Sphinx, nested classes\n\nThis patch fixes rendering of nested class in Sage.\n\nThe particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python get in the way of Sphinx because it change the `__name__` of the nested class.\nWe have to make Sphinx aware of those particular classes and to update its configuration.\n\nI also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.  Addendum: See #8452 for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7448\n\n",
+    "closed_at": "2010-03-06T23:55:49Z",
     "created_at": "2009-11-12T20:45:17Z",
     "labels": [
-        "component: categories",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "Improve sphinx rendering of categories in reference manual.",
+    "title": "Sphinx nested class rendering.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7448",
     "user": "https://github.com/hivert"
@@ -20,13 +21,14 @@ Assignee: @hivert
 
 CC:  @mwhansen @nthiery @jhpalmieri
 
-Keywords: Sphinx categories.
+Keywords: Sphinx, nested classes
 
-Since #7443, categories now appear in the reference manual. But Sphinx rendering in very poor. In particular, I can't manage to get nested class appearing in the doc though I've read that they are supported by Sphinx. Once someone (Mike ?) explain me the solution, I'll be glad to implement it. 
+This patch fixes rendering of nested class in Sage.
 
-Cheers,
+The particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python get in the way of Sphinx because it change the `__name__` of the nested class.
+We have to make Sphinx aware of those particular classes and to update its configuration.
 
-Florent
+I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.  Addendum: See #8452 for this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7448
 

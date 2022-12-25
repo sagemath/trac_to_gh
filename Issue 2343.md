@@ -1,15 +1,16 @@
-# Issue 2343: [with patch, needs review] for zero-dimensional ideals, allow computation of varieties over arbitrary fields
+# Issue 2343: [with patch, positive review] for zero-dimensional ideals, allow computation of varieties over arbitrary fields
 
 archive/issues_002343.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis lets you start with an ideal over a polynomial ring with rational coefficients, then compute the entire real (or entire complex) variety.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2343\n\n",
+    "closed_at": "2008-03-02T21:08:28Z",
     "created_at": "2008-02-28T05:24:11Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] for zero-dimensional ideals, allow computation of varieties over arbitrary fields",
+    "title": "[with patch, positive review] for zero-dimensional ideals, allow computation of varieties over arbitrary fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2343",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

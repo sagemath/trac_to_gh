@@ -1,16 +1,17 @@
-# Issue 2468: inverting a non-invertible matrix over RDF returns weird results
+# Issue 2468: [with patch; positive review] inverting a non-invertible matrix over RDF returns weird results
 
 archive/issues_002468.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCheck this out:\n\n```\nsage: A = Matrix(RDF, [[1, 0], [0, 0]])\nsage: A.inverse()\n\n[nan nan]\n[nan inf]\n```\n\nThis is, to say the least, weird.  This should throw a ZeroDivisionError instead.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2468\n\n",
+    "closed_at": "2008-03-18T03:22:49Z",
     "created_at": "2008-03-11T02:46:35Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "inverting a non-invertible matrix over RDF returns weird results",
+    "title": "[with patch; positive review] inverting a non-invertible matrix over RDF returns weird results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2468",
     "user": "https://github.com/aghitza"

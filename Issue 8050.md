@@ -4,6 +4,7 @@ archive/issues_008050.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @vbraun alexghitza mhampton\n\nThe file SPKG.txt in the cddlib spkg does not respect the rules at\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8050\n\n",
+    "closed_at": "2010-02-20T17:31:46Z",
     "created_at": "2010-01-24T03:23:23Z",
     "labels": [
         "component: packages: standard",

@@ -4,6 +4,7 @@ archive/issues_002386.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWe should be able to somehow get a printout of a matrix that is suitable for pasting into an input cell.\n\nI think that is what repr is supposed to do.  Currently, repr is the same as str, which seems like a bug considering the python convention.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2386\n\n",
+    "closed_at": "2008-03-04T20:46:41Z",
     "created_at": "2008-03-04T16:21:12Z",
     "labels": [
         "component: porting: cygwin",

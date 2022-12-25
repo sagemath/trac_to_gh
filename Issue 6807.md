@@ -1,16 +1,17 @@
-# Issue 6807: bug in blocks_and_cut_vertices() of a graph where a cut vertex can be listed more than once
+# Issue 6807: [with patch, positive review] bug in blocks_and_cut_vertices() of a graph where a cut vertex can be listed more than once
 
 archive/issues_006807.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout\n\nThere is another bug in blocks_and_cut_vertices() where cut vertices can appear more than once in the returned list of cut vertices.  Jason Grout pointed out this problem in ticket [#6632](http://trac.sagemath.org/sage_trac/ticket/6632#comment:5).\n\n```\nsage: graphs.StarGraph(3).blocks_and_cut_vertices()\n([[1, 0], [2, 0], [3, 0]], [0, 0, 0])\n```\n\nThe problem occurs because the list C of cut vertices should be treated as a set, not a list: membership should be tested before adding a vertex to the list.\n\nFollowing a suggestion of Jason's, I also changed the initialization of the parent array to None.\n\nPatch will be attached below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6807\n\n",
+    "closed_at": "2009-08-25T22:25:44Z",
     "created_at": "2009-08-22T21:30:28Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "bug in blocks_and_cut_vertices() of a graph where a cut vertex can be listed more than once",
+    "title": "[with patch, positive review] bug in blocks_and_cut_vertices() of a graph where a cut vertex can be listed more than once",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6807",
     "user": "https://trac.sagemath.org/admin/accounts/users/hartke"

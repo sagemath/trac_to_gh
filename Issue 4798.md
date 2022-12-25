@@ -1,9 +1,10 @@
-# Issue 4798: Update Cython to 0.10.3 (latest stable upstream)
+# Issue 4798: [with spkg, positive review] Update Cython to 0.10.2.p0
 
 archive/issues_004798.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nThis is from #4639:\n\n```\nInstall cython-0.10.3.spkg at http://sage.math.washington.edu/home/robertwb/cython/ ,\nwhich contains a fix to http://trac.cython.org/cython_trac/ticket/162 and I think is \nthe underlying cause here (and probably elsewhere). \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4798\n\n",
+    "closed_at": "2008-12-14T17:19:57Z",
     "created_at": "2008-12-14T17:08:53Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004798.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Update Cython to 0.10.3 (latest stable upstream)",
+    "title": "[with spkg, positive review] Update Cython to 0.10.2.p0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4798",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

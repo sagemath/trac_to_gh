@@ -1,21 +1,22 @@
-# Issue 3587: calculus -- implement symbolic summation
+# Issue 3587: calculus -- wrap maxima's symbolic summation
 
 archive/issues_003587.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @jasongrout\n\nMaxima has good symbolic summation and it would be easy to wrap in the calculus package.\nWe are constantly getting stuff like this:\n\n```\n02:53 < nagyv> \ufeffhello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity\n03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?\n```\n\nProbably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.\nThat is *not* a good enough reason, and don't worry, the work won't be lost.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3587\n\n",
+    "body": "Assignee: whuss\n\nCC:  @burcin @jasongrout\n\nMaxima has good symbolic summation and it would be easy to wrap in the calculus package.\nWe are constantly getting stuff like this:\n\n```\n02:53 < nagyv> hello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity\n03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?\n```\n\nProbably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.\nThat is *not* a good enough reason, and don't worry, the work won't be lost.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3587\n\n",
+    "closed_at": "2009-11-29T14:27:30Z",
     "created_at": "2008-07-07T15:52:57Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "calculus -- implement symbolic summation",
+    "title": "calculus -- wrap maxima's symbolic summation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3587",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @garyfurnish
+Assignee: whuss
 
 CC:  @burcin @jasongrout
 
@@ -23,12 +24,12 @@ Maxima has good symbolic summation and it would be easy to wrap in the calculus 
 We are constantly getting stuff like this:
 
 ```
-02:53 < nagyv> ﻿hello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity
+02:53 < nagyv> hello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity
 03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?
 ```
 
 Probably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.
-That is *not* a good enough reason, and don't worry, the work won't be lost.
+That is *not* a good enough reason, and don't worry, the work won't be lost.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/3587
 

@@ -4,6 +4,7 @@ archive/issues_000303.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: m = CuspForms(64,2)\nsage: m.integral_basis()\nTraceback (most recent call last):\n...\nArithmeticError: basis vectors must be linearly independent.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/303\n\n",
+    "closed_at": "2007-08-19T01:08:59Z",
     "created_at": "2007-03-01T17:58:02Z",
     "labels": [
         "component: modular forms",

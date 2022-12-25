@@ -1,15 +1,16 @@
-# Issue 1230: Quit worksheet behaviour
+# Issue 1230: [with patch; positive review] Quit worksheet behaviour
 
 archive/issues_001230.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThree points:\n\n1) Currently, the notebook has a \"quit worksheet\" function that kills the background sage engine. Currently, this leaves the browser on the worksheet in question. I find that confusing: If I \"quit\" a worksheet, I expect that I leave the worksheet. Therefore, I think that the appropriate behaviour is that \"quitting\" a worksheet brings you to your index page (where it will not have the \"active\" attribute)\n\n2) The fact that \"active\" worksheets are \"not archived\" worksheets is clashing terminology with a worksheet being \"active\" (there is a sage process associated to it) versus a worksheet being \"not active\".\n\nThe second use could be called \"running\" versus \"not running\" instead.\n\n3) In the index page, it would be good to have an option to \"quit\" selected worksheets. After working for a bit, one can easily end up with a whole bunch of worksheets running. It is a pain to have to enter each of those worksheets to \"quit\" them.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1230\n\n",
+    "closed_at": "2008-05-11T08:40:20Z",
     "created_at": "2007-11-21T00:53:19Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "Quit worksheet behaviour",
+    "title": "[with patch; positive review] Quit worksheet behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1230",
     "user": "https://github.com/nbruin"

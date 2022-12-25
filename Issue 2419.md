@@ -1,17 +1,18 @@
-# Issue 2419: Gap interface and resultant destroy the Singular interface on some machines
+# Issue 2419: [with patch; positive review] Gap interface and resultant destroy the Singular interface on some machines
 
 archive/issues_002419.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @wdjoyner @williamstein\n\nKeywords: gap singular resultant\n\nI consider the following bug critical, because it completely corrupts the Singular interface. However, it seems that the error only occurs on very few machines - so far, only one other person can reproduce the bug - see discussions at http://groups.google.com/group/sage-support/browse_thread/thread/5006f9a839723e27?hl=en\n\nCreating a univariate polynomial ring R over the rationals, computing the resultant of two polynomials in that ring and using the gap interface for the Integers makes the singular interface fail on R (on some machines). To be precise:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + x + 1;  g = x^3 - x - 1\nsage: r = f.resultant(g)\nsage: gap(ZZ)\nIntegers\nsage: singular(R).typeof()    # this should yield 'ring' !\nprint(sage8);\nsage: singular(R).name()   # this is correct ...\n'sage0'\nsage: singular('sage0')   # ... hence, this should return a ring - but it doesn't\nprint(sage9);\nsage: singular('sage0')\nprint(sage10);\nsage: singular('sage0')\nprint(sage11);\n```\n\nNote that computing the resultant is important. If i replace it with, say, `singular(R)`, then the error does not occur. Also, if `gap(ZZ)` is done *before* computing the resultant, the error does not occur.\n\nDavid Joyner observed that on both machines showing that error, there is an rpm based Linux. However, i know a machine with the same Linux that does not show that error.\nAgain, see http://groups.google.com/group/sage-support/browse_thread/thread/5006f9a839723e27?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2419\n\n",
+    "closed_at": "2008-04-21T00:41:55Z",
     "created_at": "2008-03-07T08:10:10Z",
     "labels": [
         "component: interfaces",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Gap interface and resultant destroy the Singular interface on some machines",
+    "title": "[with patch; positive review] Gap interface and resultant destroy the Singular interface on some machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2419",
     "user": "https://github.com/simon-king-jena"

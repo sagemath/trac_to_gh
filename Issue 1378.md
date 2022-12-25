@@ -1,22 +1,23 @@
-# Issue 1378: add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.
+# Issue 1378: [with patch, with positive review] add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.
 
 archive/issues_001378.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\nno, there was no ssh-keygen installed, after installation (on Debian\nEtch ssh-keygen is provided by the package ssh-client) it works\nperfectly now without options, just notebook(),\n\nthis should be annotated in the installation manual in the list of\nrequired packages,\nand the possibility notebook(secure=false) if it's not installed\n\nthank you very much....\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1378\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nno, there was no ssh-keygen installed, after installation (on Debian\nEtch ssh-keygen is provided by the package ssh-client) it works\nperfectly now without options, just notebook(),\n\nthis should be annotated in the installation manual in the list of\nrequired packages,\nand the possibility notebook(secure=false) if it's not installed\n\nthank you very much....\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1378\n\n",
+    "closed_at": "2007-12-09T10:18:30Z",
     "created_at": "2007-12-03T06:25:02Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.",
+    "title": "[with patch, with positive review] add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1378",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 ```
 no, there was no ssh-keygen installed, after installation (on Debian

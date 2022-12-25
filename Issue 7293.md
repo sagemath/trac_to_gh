@@ -4,9 +4,10 @@ archive/issues_007293.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  r.gaia.cs\n\nMixedIntegerLinearProgram should accept a constraint matrix as its input, as it could be produces by other means in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7293\n\n",
+    "closed_at": "2014-08-05T13:17:33Z",
     "created_at": "2009-10-25T09:24:54Z",
     "labels": [
-        "component: numerical",
+        "component: linear programming",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

@@ -1,16 +1,17 @@
-# Issue 925: valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable
+# Issue 925: [with patch, positive review] valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable
 
 archive/issues_000925.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCurrently, running `sage -valgrind` or `sage -callgrind` uses a hardcoded set of command-line arguments (in local/bin/sage-valgrind and local/bin/sage-callgrind respectively).  There should be some way to change the arguments.\n\nIssue created by migration from https://trac.sagemath.org/ticket/925\n\n",
+    "closed_at": "2008-09-15T11:30:50Z",
     "created_at": "2007-10-19T06:35:35Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable",
+    "title": "[with patch, positive review] valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/925",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

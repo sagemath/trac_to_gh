@@ -4,10 +4,10 @@ archive/issues_002909.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777\n\nThe canonical example to get to work is the following (submitted by Jason Grout):\n\n```\nfor i in range(5):\n    print html('<script>alert(%s)</script>'%i)\n    sleep(1)\n```\n\nwould pop up a dialog box about every second.\n\n\nThis feature was requested by `gerhard <ge01705`@`yahoo.de>`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2909\n\n",
+    "closed_at": "2020-03-29T02:03:43Z",
     "created_at": "2008-04-13T18:04:03Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- implement a way of parsing script tags in output as they appear (but none that already appeared)",

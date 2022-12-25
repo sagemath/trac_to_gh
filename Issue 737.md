@@ -1,16 +1,17 @@
-# Issue 737: inrange, better name for irange
+# Issue 737: [with patch] inrange, better name for irange
 
 archive/issues_000737.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis is a follow up on ticket #706\n\nThe name inrange seems to be more acceptable\n\nExample:\n\nsage: sum(k for k in inrange(1, 10))\n\n55\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/737\n\n",
+    "closed_at": "2007-10-05T04:29:40Z",
     "created_at": "2007-09-22T19:21:31Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
-    "title": "inrange, better name for irange",
+    "title": "[with patch] inrange, better name for irange",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/737",
     "user": "https://github.com/jaapspies"

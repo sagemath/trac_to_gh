@@ -4,10 +4,10 @@ archive/issues_000230.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf in a notebook I use:\n\n```\n%sh\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\nand then\n\n```\nload \"hello.spyx\"\n```\nthe notebook hangs. In the server log I get:\n\n```\n  ...\n  File \"/usr/local/sage/default/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 957, in _load_file\n    t = self.do_sage_extensions_preparsing(t,\nUnboundLocalError: local variable 't' referenced before assignment\n```\nThis is not due to the file not being found: If I try to load or attach a non-existent file, I get an appropriate error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/230\n\n",
+    "closed_at": "2007-09-06T22:56:51Z",
     "created_at": "2007-01-29T19:12:08Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Notebook \"load\" or \"attach\" does not work",

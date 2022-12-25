@@ -4,6 +4,7 @@ archive/issues_000909.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nLoading a file in sage by\n  load foo.spyx \nseems to result in a recompile every time--or at least it is doing something that takes time.  Is this really necessary, or is something else going on?  Shouldn't it instead check to see if there has been a change to foo.spyx?  (This recompiling is expensive if the Cython file is quite long!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/909\n\n",
+    "closed_at": "2008-10-03T00:01:00Z",
     "created_at": "2007-10-16T18:42:53Z",
     "labels": [
         "component: interfaces",

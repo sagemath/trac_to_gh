@@ -1,17 +1,18 @@
-# Issue 3823: Interact - get rid of default height
+# Issue 3823: [with patch; positive review] Interact - get rid of default height
 
 archive/issues_003823.json:
 ```json
 {
     "body": "Assignee: @itolkov\n\nInteractions have a minimum height of 400px, which consumes space when only part of it is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3823\n\n",
+    "closed_at": "2008-08-29T00:58:22Z",
     "created_at": "2008-08-12T20:38:42Z",
     "labels": [
-        "component: notebook",
+        "component: interact",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Interact - get rid of default height",
+    "title": "[with patch; positive review] Interact - get rid of default height",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3823",
     "user": "https://github.com/itolkov"

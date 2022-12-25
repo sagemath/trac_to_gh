@@ -1,15 +1,16 @@
-# Issue 6679: [with patch, needs review] Vertex Coloring, Edge Coloring (uses Linear Programming)
+# Issue 6679: Vertex Coloring, Edge Coloring
 
 archive/issues_006679.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nHello everybody !!!\n\nHere are two new functions for the Graph class in Sage : vertex_coloring and edge_coloring.\n\nThose new functions both use Linear programming, so to use them you will have to install the patches MIP-1 to MIP-5 in #6502 along with the package GLPK :\n\nhttp://trac.sagemath.org/sage_trac/ticket/6502\n\nIf you want them to be ever more efficient, you can also install COIN-OR/CBC ( from #6603 ) with this line :\n\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.spkg\n\nI hope I learned what I had to with my previous patch, as I hope you will find those functions sufficiently and correctly documented. These functions should be ---way--- more efficient than the previous ones, regardless of the Linear Solver you chose to use.\n\n( I have to add that I will be absent next week, but even though I will be able to answer any of your questions and to post fixes until tomorrow evening. I chosed to post these two functions now hoping they could be integrated with the patch for LP into the next release of Sage )\n\nIssue created by migration from https://trac.sagemath.org/ticket/6679\n\n",
+    "body": "Assignee: @rlmill\n\nHello everybody !!!\n\nHere are two new functions for the Graph class in Sage : vertex_coloring and edge_coloring.\n\nIf you have no LP Solver installed, you can download GLPK or CBC from this address : http://www.sagemath.org/packages/optional/\n\nThese functions should be ---way--- more efficient than the previous ones, regardless of the Linear Solver you chose to use.\n\nDEPENDS ON #7270 !!!!!!!!!!!!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6679\n\n",
+    "closed_at": "2009-12-02T09:50:40Z",
     "created_at": "2009-08-06T15:10:42Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] Vertex Coloring, Edge Coloring (uses Linear Programming)",
+    "title": "Vertex Coloring, Edge Coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6679",
     "user": "https://github.com/nathanncohen"
@@ -21,17 +22,11 @@ Hello everybody !!!
 
 Here are two new functions for the Graph class in Sage : vertex_coloring and edge_coloring.
 
-Those new functions both use Linear programming, so to use them you will have to install the patches MIP-1 to MIP-5 in #6502 along with the package GLPK :
+If you have no LP Solver installed, you can download GLPK or CBC from this address : http://www.sagemath.org/packages/optional/
 
-http://trac.sagemath.org/sage_trac/ticket/6502
+These functions should be ---way--- more efficient than the previous ones, regardless of the Linear Solver you chose to use.
 
-If you want them to be ever more efficient, you can also install COIN-OR/CBC ( from #6603 ) with this line :
-
-sage -f http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.spkg
-
-I hope I learned what I had to with my previous patch, as I hope you will find those functions sufficiently and correctly documented. These functions should be ---way--- more efficient than the previous ones, regardless of the Linear Solver you chose to use.
-
-( I have to add that I will be absent next week, but even though I will be able to answer any of your questions and to post fixes until tomorrow evening. I chosed to post these two functions now hoping they could be integrated with the patch for LP into the next release of Sage )
+DEPENDS ON #7270 !!!!!!!!!!!!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/6679
 

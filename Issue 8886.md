@@ -3,7 +3,8 @@
 archive/issues_008886.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime @nthiery\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8275334246de4531) thread for some background information. This should be coordinated with #8470.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8886\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @nexttime @nthiery\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8275334246de4531) thread for some background information. This should be coordinated with #8470.\n\n**Apply:**\n\n1. [attachment:trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8886\n\n",
+    "closed_at": "2011-10-08T18:15:05Z",
     "created_at": "2010-05-05T11:12:50Z",
     "labels": [
         "component: documentation"
@@ -15,11 +16,16 @@ archive/issues_008886.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: mvngu
+Assignee: @hivert
 
 CC:  @nexttime @nthiery
 
 As the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8275334246de4531) thread for some background information. This should be coordinated with #8470.
+
+**Apply:**
+
+1. [attachment:trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch]
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8886
 

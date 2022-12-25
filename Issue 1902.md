@@ -1,22 +1,23 @@
-# Issue 1902: mistake in the documentation for gens for Finite field givaro
+# Issue 1902: [with patch, positive review] mistake in the documentation for gens for Finite field givaro
 
 archive/issues_001902.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\n> sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?\n> [...]\n> Docstring:\n> \n>             Return a generator of self. All elements x of self are\n>             expressed as log_{self.gen()}(p) internally. If self is\n>             a prime field this method returns 1.\n> \n> (The sentence \"If self is a prime field...\" is wrong, but the first\n> sentence is correct.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1902\n\n",
+    "body": "Assignee: @JohnCremona\n\n```\n> sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?\n> [...]\n> Docstring:\n> \n>             Return a generator of self. All elements x of self are\n>             expressed as log_{self.gen()}(p) internally. If self is\n>             a prime field this method returns 1.\n> \n> (The sentence \"If self is a prime field...\" is wrong, but the first\n> sentence is correct.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1902\n\n",
+    "closed_at": "2008-03-02T17:12:17Z",
     "created_at": "2008-01-24T00:37:08Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "mistake in the documentation for gens for Finite field givaro",
+    "title": "[with patch, positive review] mistake in the documentation for gens for Finite field givaro",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1902",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @JohnCremona
 
 ```
 > sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?

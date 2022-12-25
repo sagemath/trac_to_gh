@@ -1,16 +1,17 @@
-# Issue 5226: convert sage.structure.* to ReST
+# Issue 5226: convert sage.structure.* docstrings to Sphinx
 
 archive/issues_005226.json:
 ```json
 {
     "body": "Assignee: tba\n\nI was going to review this one, and noticed it wasn't there. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5226\n\n",
+    "closed_at": "2009-02-24T19:18:13Z",
     "created_at": "2009-02-10T02:53:29Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.structure.* to ReST",
+    "title": "convert sage.structure.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5226",
     "user": "https://github.com/robertwb"

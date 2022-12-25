@@ -1,15 +1,16 @@
-# Issue 1658: sage -bdist on osx should output a dmg instead of a tar.bz2
+# Issue 1658: [with patch, with positive review] sage -bdist on osx should output a dmg instead of a tar.bz2
 
 archive/issues_001658.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1658\n\n",
+    "closed_at": "2008-01-03T13:40:42Z",
     "created_at": "2008-01-02T19:25:04Z",
     "labels": [
         "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "sage -bdist on osx should output a dmg instead of a tar.bz2",
+    "title": "[with patch, with positive review] sage -bdist on osx should output a dmg instead of a tar.bz2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1658",
     "user": "https://github.com/williamstein"

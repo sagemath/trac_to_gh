@@ -4,6 +4,7 @@ archive/issues_007631.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n1. Create a worksheet\n\n2. Publish it\n\n3. Change the title of the original worksheet and republish it.\n\nThe title of the published worksheet doesn't change. \n\nI only noticed this because of #7433.  Without #7433 this bug isn't observable. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7631\n\n",
+    "closed_at": "2010-01-25T00:52:25Z",
     "created_at": "2009-12-08T23:10:37Z",
     "labels": [
         "component: notebook",

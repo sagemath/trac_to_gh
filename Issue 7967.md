@@ -4,6 +4,7 @@ archive/issues_007967.json:
 ```json
 {
     "body": "Assignee: tbd\n\nUsing `hg_sage` is raising a `DeprecationWarning`:\n\n```\n/data/sage/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7967\n\n",
+    "closed_at": "2010-01-19T00:55:56Z",
     "created_at": "2010-01-17T18:34:34Z",
     "labels": [
         "component: misc",

@@ -4,6 +4,7 @@ archive/issues_003595.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nDelete or move your $HOME/.sage then:\n\n```\nbsd:sage-3.0.4.alpha2 was$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ncp: /Users/was/build/sage-3.0.4.alpha2/matplotlibrc: No such file or directory\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3595\n\n",
+    "closed_at": "2008-07-07T23:16:36Z",
     "created_at": "2008-07-07T23:14:18Z",
     "labels": [
         "component: misc",

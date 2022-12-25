@@ -1,15 +1,16 @@
-# Issue 2726: [with patch; needs review] SAGE debian build system update
+# Issue 2726: [with patch; positive review] SAGE debian build system update
 
 archive/issues_002726.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI've updated the SAGE Debian build system to support uploading to an apt repository as things build (so that the building of packages later in the build process can get their dependencies via apt).  Attached are the relevant patches.\n\nOne thing that's kinda annoying is that renaming SbuildHack.pm to sage-SbuildHack.pm was problematic because perl modules can't have dashes in their name.  We should figure out how to get SbuildHack.pm installed now that it's name doesn't start with sage.\n\nI'm trying to get a version of the code in SbuildHack.pm into mainline sbuild so that we don't need to bother with this, but am uncertain how long that will take.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2726\n\n",
+    "closed_at": "2008-04-01T20:33:01Z",
     "created_at": "2008-03-29T22:15:57Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] SAGE debian build system update",
+    "title": "[with patch; positive review] SAGE debian build system update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2726",
     "user": "https://github.com/timabbott"

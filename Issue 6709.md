@@ -1,22 +1,23 @@
-# Issue 6709: There are many doctest failues on Solaris.
+# Issue 6709: There are many doctest failues on Solaris 32-bit builds.
 
 archive/issues_006709.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @dimpase\n\nI'll post a couple of logs later, but thought I'd create a ticket for this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6709\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  david.kirkby@onetel.net @dimpase\n\nI'll post a couple of logs later, but thought I'd create a ticket for this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6709\n\n",
+    "closed_at": "2020-07-15T07:18:41Z",
     "created_at": "2009-08-09T10:24:07Z",
     "labels": [
         "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "There are many doctest failues on Solaris.",
+    "title": "There are many doctest failues on Solaris 32-bit builds.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6709",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  david.kirkby@onetel.net @dimpase
 

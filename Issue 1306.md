@@ -1,23 +1,22 @@
-# Issue 1306: [graphs] Bundles of graphs
+# Issue 1306: [with patch, positive review] Bundles of graphs
 
 archive/issues_001306.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist (reply by Jason Grout, second reply by Robert Miller)\n\n```\n>>> (e) Bundles: Start with a base graph G with vertices {1, . . . , n}.\n>>> For each\n>>> vertex i we are given a graph Ci . For each edge ij we are given a\n>>> bipartite\n>>> graph joining V (Ci ) to V (Cj ). (There is an implicit orientation here.)\n>>> Some examples:\n>>> (i) The Petersen graph: n = 2, C1 is the 5-cycle, C2 is its complement\n>>> and the bipartite graph is a 5-matching.\n>>> (ii) The Hoffman-Singleton graph can be constructed with n = 2, where\n>>> C1 is an independent set on 15 vertices, C2 is a nice distance regular\n>>> graph on 35 vertices,. . .\n>>> (iii) Covering graphs. Here the graphs Ci are empty on r vertices, and\n>>> each bipartite graphs is either an r-matching or is empty.\n>> Huh, I used this idea extensively in my dissertation and a research\n>> paper. I used the \"blowup graph\" terminology, though, from extremal\n>> graph theory. Is anyone working on this? If not, I'll make a trac ticket.\n> Nobody I know of. If you did this type of stuff in your dissertation,\n> then I nominate you! Create a ticket.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1306\n\n",
+    "body": "Assignee: @rlmill\n\nFrom Chris Godsil's wishlist (reply by Jason Grout, second reply by Robert Miller)\n\n```\n>>> (e) Bundles: Start with a base graph G with vertices {1, . . . , n}.\n>>> For each\n>>> vertex i we are given a graph Ci . For each edge ij we are given a\n>>> bipartite\n>>> graph joining V (Ci ) to V (Cj ). (There is an implicit orientation here.)\n>>> Some examples:\n>>> (i) The Petersen graph: n = 2, C1 is the 5-cycle, C2 is its complement\n>>> and the bipartite graph is a 5-matching.\n>>> (ii) The Hoffman-Singleton graph can be constructed with n = 2, where\n>>> C1 is an independent set on 15 vertices, C2 is a nice distance regular\n>>> graph on 35 vertices,. . .\n>>> (iii) Covering graphs. Here the graphs Ci are empty on r vertices, and\n>>> each bipartite graphs is either an r-matching or is empty.\n>> Huh, I used this idea extensively in my dissertation and a research\n>> paper. I used the \"blowup graph\" terminology, though, from extremal\n>> graph theory. Is anyone working on this? If not, I'll make a trac ticket.\n> Nobody I know of. If you did this type of stuff in your dissertation,\n> then I nominate you! Create a ticket.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1306\n\n",
+    "closed_at": "2008-01-21T04:06:16Z",
     "created_at": "2007-11-28T19:53:26Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[graphs] Bundles of graphs",
+    "title": "[with patch, positive review] Bundles of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1306",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 From Chris Godsil's wishlist (reply by Jason Grout, second reply by Robert Miller)
 

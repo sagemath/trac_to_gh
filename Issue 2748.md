@@ -1,16 +1,17 @@
-# Issue 2748: Permutation constructor does not accept lists of tuples
+# Issue 2748: [with patch, positive review] Permutation constructor does not accept lists of tuples
 
 archive/issues_002748.json:
 ```json
 {
     "body": "Assignee: @dandrake\n\nCC:  sage-combinat\n\nKeywords: combinat, permutations\n\nThe following works:\n\n```\nsage: p = ((1, 2, 4, 5, 3, 6))\nsage: q = Permutation(p)\nsage: q.to_cycles()\n[(1, 2, 4, 5, 3, 6)]\nsage: q.cycle_type()\n[6]\n```\n\n...but if `p` is a list of tuples, it doesn't, and Permutation doesn't tell you that it's not happy with the input:\n\n```\nsage: p = [(1, 2, 4, 5, 3, 6)]\nsage: q = Permutation(p)\nsage: q.to_cycles()\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/drake/code/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/combinat/permutation.py in to_cycles(self, singletons)\n    415             else:\n    416                 cycle.append( next )    \n--> 417                 l.remove( next )\n    418                 toConsider = next\n    419 \n\n<type 'exceptions.ValueError'>: list.remove(x): x not in list\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2748\n\n",
+    "closed_at": "2008-04-07T14:44:35Z",
     "created_at": "2008-04-01T01:42:23Z",
     "labels": [
         "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Permutation constructor does not accept lists of tuples",
+    "title": "[with patch, positive review] Permutation constructor does not accept lists of tuples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2748",
     "user": "https://github.com/dandrake"

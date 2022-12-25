@@ -3,7 +3,8 @@
 archive/issues_008306.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @mwhansen mvngu\n\nAlong with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4c915ae814dd6514) for some information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8306\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @mwhansen mvngu\n\nAlong with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.  See [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4c915ae814dd6514) for some information.\n\nTo build multiple spkgs in parallel:\n\n* Start with Sage 4.4.4.\n* Update [attachment:makefile], `spkg/`[attachment:install], and `spkg/standard/`[attachment:deps].\n* Copy [attachment:pipestatus] to `spkg/`.\n* Copy the latest spkgs from #8645 (Maxima), #9185 (Singular), #9186 (R), and #9264 (ECL) to `spkg/standard`.\n* `export SAGE_PARALLEL_SPKG_BUILD=\"yes\"`\n* `export MAKE=\"make -jX\"` where `X > 1`\n* `make`\n\nAlso:\n\n* Apply [attachment:trac_8306_scripts-spkg_log_files.2.patch] to the scripts repository.  This makes `sage -i foo-X.Y.spkg` *also* append to `spkg/logs/foo-X.Y.log`.\n\n* Apply [attachment:trac_8306_scripts-pipestatus.patch] to the scripts repository.  This ensures that `sage -sdist <VERSION>` includes `pipestatus` in a new Sage source distribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8306\n\n",
+    "closed_at": "2010-06-25T15:40:56Z",
     "created_at": "2010-02-19T11:31:16Z",
     "labels": [
         "component: build"
@@ -19,9 +20,23 @@ Assignee: GeorgSWeber
 
 CC:  @mwhansen mvngu
 
-Along with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.
+Along with a primed [ccache](http://ccache.samba.org/), compiling multiple spkgs in parallel may significantly speed up Sage builds on multicore machines.  See [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4c915ae814dd6514) for some information.
 
-See [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4c915ae814dd6514) for some information.
+To build multiple spkgs in parallel:
+
+* Start with Sage 4.4.4.
+* Update [attachment:makefile], `spkg/`[attachment:install], and `spkg/standard/`[attachment:deps].
+* Copy [attachment:pipestatus] to `spkg/`.
+* Copy the latest spkgs from #8645 (Maxima), #9185 (Singular), #9186 (R), and #9264 (ECL) to `spkg/standard`.
+* `export SAGE_PARALLEL_SPKG_BUILD="yes"`
+* `export MAKE="make -jX"` where `X > 1`
+* `make`
+
+Also:
+
+* Apply [attachment:trac_8306_scripts-spkg_log_files.2.patch] to the scripts repository.  This makes `sage -i foo-X.Y.spkg` *also* append to `spkg/logs/foo-X.Y.log`.
+
+* Apply [attachment:trac_8306_scripts-pipestatus.patch] to the scripts repository.  This ensures that `sage -sdist <VERSION>` includes `pipestatus` in a new Sage source distribution.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8306
 

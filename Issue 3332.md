@@ -1,16 +1,17 @@
-# Issue 3332: Switch pbuild to -O2
+# Issue 3332: [with patch, positive review] Switch pbuild to -O2
 
 archive/issues_003332.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\npbuild and sbuild currently compile with -O3; we should use -O2 for stability reasons (and -O3 may result in larger, slower code).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3332\n\n",
+    "closed_at": "2008-06-09T21:20:21Z",
     "created_at": "2008-05-29T19:27:26Z",
     "labels": [
         "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "Switch pbuild to -O2",
+    "title": "[with patch, positive review] Switch pbuild to -O2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3332",
     "user": "https://github.com/garyfurnish"

@@ -1,9 +1,10 @@
-# Issue 1429: spelling error in tutorial
+# Issue 1429: [with attempted patch] spelling error in tutorial
 
 archive/issues_001429.json:
 ```json
 {
-    "body": "Assignee: tba\n\n```\n> Your tutorial is very well written!\n\nThanks. \n\n> One small thing is that \"axes\" was misspelled as \"ases\" at the top of page\n> 32.\n\nThanks!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1429\n\n",
+    "body": "Assignee: tba\n\nFrom Haydn Huntley \n\n```\n> Your tutorial is very well written!\n\nThanks. \n\n> One small thing is that \"axes\" was misspelled as \"ases\" at the top of page\n> 32.\n\nThanks!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1429\n\n",
+    "closed_at": "2008-01-13T18:47:58Z",
     "created_at": "2007-12-08T22:16:01Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,15 @@ archive/issues_001429.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "spelling error in tutorial",
+    "title": "[with attempted patch] spelling error in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1429",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
+
+From Haydn Huntley 
 
 ```
 > Your tutorial is very well written!

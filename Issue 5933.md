@@ -1,16 +1,17 @@
-# Issue 5933: Bring primes.py to 100%
+# Issue 5933: [with patch, with positive review] Bring primes.py to 100%
 
 archive/issues_005933.json:
 ```json
 {
     "body": "Assignee: tba\n\nBring primes.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5933\n\n",
+    "closed_at": "2009-04-29T23:26:36Z",
     "created_at": "2009-04-29T14:41:34Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "Bring primes.py to 100%",
+    "title": "[with patch, with positive review] Bring primes.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5933",
     "user": "https://github.com/kcrisman"

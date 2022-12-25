@@ -1,16 +1,18 @@
-# Issue 987: integrate(1/sqrt(9+x^2)) fails
+# Issue 987: [with patch] integrate(1/sqrt(9+x^2)) fails
 
 archive/issues_000987.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nintegrate(1/sqrt(9+x^2))\nx/3\n\nI tried this at home and numerous times on sagenb.org.  Every other\nplausible syntax of this integral I tried (-1 power, more parentheses,\nswitch the summands, etc.) yields the same result\n\nHere's the reason\n\n```\n(%i1) integrate(1/sqrt(9+x^2),x)\n;\n                                         x\n(%o1)                              asinh(-)\n                                         3\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/987\n\n",
+    "closed_at": "2007-10-25T06:44:35Z",
     "created_at": "2007-10-25T01:03:00Z",
     "labels": [
         "component: calculus",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "integrate(1/sqrt(9+x^2)) fails",
+    "title": "[with patch] integrate(1/sqrt(9+x^2)) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/987",
     "user": "https://github.com/mwhansen"

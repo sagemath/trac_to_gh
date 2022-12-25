@@ -1,22 +1,23 @@
-# Issue 4337: modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms
+# Issue 4337: [with patch, with positive review] modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms
 
 archive/issues_004337.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n```\nsage: ModularForms(Gamma1(11),2).hecke_matrix(2)\nboom!\n```\n\nand a genuine bug:\n\n```\nsage: ModularForms(GammaH(11, [2]),2).hecke_matrix(2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4337\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nsage: ModularForms(Gamma1(11),2).hecke_matrix(2)\nboom!\n```\n\nand a genuine bug:\n\n```\nsage: ModularForms(GammaH(11, [2]),2).hecke_matrix(2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4337\n\n",
+    "closed_at": "2009-05-11T07:47:10Z",
     "created_at": "2008-10-22T17:46:16Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms",
+    "title": "[with patch, with positive review] modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4337",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @craigcitro
+Assignee: @loefflerd
 
 ```
 sage: ModularForms(Gamma1(11),2).hecke_matrix(2)

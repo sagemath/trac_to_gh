@@ -1,22 +1,23 @@
-# Issue 2888: matrix slicing fails in degenerate cases
+# Issue 2888: [with patch; positive review, needs rebase] matrix slicing fails in degenerate cases
 
 archive/issues_002888.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
+    "body": "Assignee: @dfdeshom\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
+    "closed_at": "2008-04-13T05:09:50Z",
     "created_at": "2008-04-12T00:47:43Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "matrix slicing fails in degenerate cases",
+    "title": "[with patch; positive review, needs rebase] matrix slicing fails in degenerate cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2888",
     "user": "https://github.com/aghitza"
 }
 ```
-Assignee: @williamstein
+Assignee: @dfdeshom
 
 Keywords: slice
 

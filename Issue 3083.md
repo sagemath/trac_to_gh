@@ -1,9 +1,10 @@
-# Issue 3083: Print does not include documentation
+# Issue 3083: Make shift-enter docstrings appear in printed / published worksheets
 
 archive/issues_003083.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nIf I type `sage.graphs.chrompoly??` for example in a cell, and evaluate, I get a nice chunk of code. But when I hit \"print\", all I get is the input. Docs should be included in the printed worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3083\n\n",
+    "closed_at": "2010-01-25T00:57:52Z",
     "created_at": "2008-05-02T19:43:37Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_003083.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "Print does not include documentation",
+    "title": "Make shift-enter docstrings appear in printed / published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3083",
     "user": "https://github.com/rlmill"

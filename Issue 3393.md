@@ -3,10 +3,11 @@
 archive/issues_003393.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\n> There is no function \"sage_search\", which is surely causing a lot\n> of confusion here.\n\nAha.  Maybe I took the top of page 9 of the posted PDF of _Sage\nProgramming Guide_ too literally:\n\n\"Using sage_search from the Sage prompt or grep one can easily find\naforementioned keywords . . . .\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3393\n\n",
+    "body": "Assignee: tba\n\n```\n> There is no function \"sage_search\", which is surely causing a lot\n> of confusion here.\n\nAha.  Maybe I took the top of page 9 of the posted PDF of _Sage\nProgramming Guide_ too literally:\n\n\"Using sage_search from the Sage prompt or grep one can easily find\naforementioned keywords . . . .\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3393\n\n",
+    "closed_at": "2008-08-31T07:59:19Z",
     "created_at": "2008-06-11T02:11:05Z",
     "labels": [
-        "component: algebra",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
@@ -16,7 +17,7 @@ archive/issues_003393.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: tba
 
 ```
 > There is no function "sage_search", which is surely causing a lot

@@ -1,16 +1,17 @@
-# Issue 9191: Running pyx files from the command line doesn't work anymore
+# Issue 9191: Running .spyx files from the command line doesn't work anymore
 
 archive/issues_009191.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCreate a file like this:\n\n```\nflat:tmp wstein$ cat a.spyx\nprint \"hello\"\n```\n\nWe have:\n\n```\nflat:tmp wstein$ sage a.spyx\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/build/sage/local/bin/sage-sagex\", line 5, in <module>\n    from sage.misc.interpreter import load_sagex\nImportError: cannot import name load_sagex\n```\n\nNote that .pyx files work fine:\n\n```\nflat:x wstein$ cp a.spyx a.pyx\nflat:x wstein$ sage a.pyx\nhello\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9191\n\n",
+    "body": "Assignee: @jasongrout\n\nCreate a file like this:\n\n```\nflat:tmp wstein$ cat a.spyx\nprint \"hello\"\n```\n\nWe have:\n\n```\nflat:tmp wstein$ sage a.spyx\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/build/sage/local/bin/sage-sagex\", line 5, in <module>\n    from sage.misc.interpreter import load_sagex\nImportError: cannot import name load_sagex\n```\n\n**Apply**\n1. [attachment:9191_run_cython.patch] to the SCRIPTS repo.\n2. [attachment:9191_doctest_spyx.patch] to the SAGE library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9191\n\n",
+    "closed_at": "2012-11-12T21:57:03Z",
     "created_at": "2010-06-09T02:02:52Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.5",
-    "title": "Running pyx files from the command line doesn't work anymore",
+    "title": "Running .spyx files from the command line doesn't work anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9191",
     "user": "https://github.com/williamstein"
@@ -35,13 +36,9 @@ Traceback (most recent call last):
 ImportError: cannot import name load_sagex
 ```
 
-Note that .pyx files work fine:
-
-```
-flat:x wstein$ cp a.spyx a.pyx
-flat:x wstein$ sage a.pyx
-hello
-```
+**Apply**
+1. [attachment:9191_run_cython.patch] to the SCRIPTS repo.
+2. [attachment:9191_doctest_spyx.patch] to the SAGE library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9191
 

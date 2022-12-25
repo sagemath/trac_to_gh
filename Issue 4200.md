@@ -1,15 +1,16 @@
-# Issue 4200: Update numpy to 1.2.0
+# Issue 4200: [with spkg, positive review] Update numpy to 1.2.0
 
 archive/issues_004200.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nNumpy 1.2.0 came out today.  An updated spkg is here: http://sage.math.washington.edu/home/jason/numpy-1.2.0.spkg\n\nCrazily, apparently some parts of numpy are deprecated and throw warnings, while other parts still use the deprecated functions.  The upshot is that Sage, upon importing scipy, displays several warnings about deprecated numpy stuff.  Also, using numpy, like in the solve_left function, triggers deprecation warnings about other parts of numpy.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4200\n\n",
+    "closed_at": "2008-09-27T06:46:39Z",
     "created_at": "2008-09-26T04:47:29Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Update numpy to 1.2.0",
+    "title": "[with spkg, positive review] Update numpy to 1.2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4200",
     "user": "https://github.com/jasongrout"

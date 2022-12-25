@@ -1,21 +1,22 @@
-# Issue 6602: [with SPKG, need review] GLPK for SAGE
+# Issue 6602: [with spkg, positive review] GLPK for Sage
 
 archive/issues_006602.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  wstein mvngu\n\nGLPK ( http://www.gnu.org/software/glpk/ ) is a Linear Program solver from GNU. It can also solve Mixed Integer Programs, and is needed for :\nhttp://trac.sagemath.org/sage_trac/ticket/6502\n\nMore informations on :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f\n\nIssue created by migration from https://trac.sagemath.org/ticket/6602\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein mvngu\n\nGLPK ( http://www.gnu.org/software/glpk/ ) is a Linear Program solver from GNU. It can also solve Mixed Integer Programs, and is needed for :\nhttp://trac.sagemath.org/sage_trac/ticket/6502\n\nMore informations on :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f\n\nSPKG available there : http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6602\n\n",
+    "closed_at": "2009-08-04T09:15:35Z",
     "created_at": "2009-07-23T14:08:35Z",
     "labels": [
-        "component: numerical"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with SPKG, need review] GLPK for SAGE",
+    "title": "[with spkg, positive review] GLPK for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6602",
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: jkantor
+Assignee: tbd
 
 CC:  wstein mvngu
 
@@ -24,6 +25,8 @@ http://trac.sagemath.org/sage_trac/ticket/6502
 
 More informations on :
 http://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f
+
+SPKG available there : http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/6602
 

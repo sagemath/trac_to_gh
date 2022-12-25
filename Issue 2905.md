@@ -1,16 +1,17 @@
-# Issue 2905: Various speedups
+# Issue 2905: [with patch, positive review] Various speedups
 
 archive/issues_002905.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThis patch moves some things to cpdef and fixes various slowdowns.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2905\n\n",
+    "closed_at": "2008-04-13T18:35:54Z",
     "created_at": "2008-04-13T06:02:46Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Various speedups",
+    "title": "[with patch, positive review] Various speedups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2905",
     "user": "https://github.com/garyfurnish"

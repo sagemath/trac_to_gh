@@ -1,9 +1,10 @@
-# Issue 4957: inconsistent integer hashing
+# Issue 4957: [with patch, positive review] inconsistent integer hashing
 
 archive/issues_004957.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage: z = 18446462603027742720\nsage: hash(z)\n66912258\nsage: hash(int(z))\n-131071\nsage: hash(long(z))\n-131071\n```\n\nThis causes problems with looking up values in hashtables...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4957\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: z = 18446462603027742720\nsage: hash(z)\n66912258\nsage: hash(int(z))\n-131071\nsage: hash(long(z))\n-131071\n```\n\nThis causes problems with looking up values in hashtables...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4957\n\n",
+    "closed_at": "2009-01-25T21:01:36Z",
     "created_at": "2009-01-09T02:26:00Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_004957.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "inconsistent integer hashing",
+    "title": "[with patch, positive review] inconsistent integer hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4957",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @craigcitro
 
 ```
 sage: z = 18446462603027742720

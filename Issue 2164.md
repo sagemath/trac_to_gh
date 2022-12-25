@@ -1,17 +1,17 @@
-# Issue 2164: add fast iterator for partitions
+# Issue 2164: [with patch, with positive review] add fast iterator for partitions
 
 archive/issues_002164.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nwhich only returns lists rather than Partition_class objects.\n\n\nThis is also useful where you don't necessarily need the Partition_class object, you just need the values.\n\n\nBefore the patch:\n\n```\nsage: timeit a = Partitions(40).list()\n10 loops, best of 3: 1.4 s per loop\n```\n\nAfter the patch:\n\n```\nsage: timeit a = Partitions(40).list()\n10 loops, best of 3: 280 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2164\n\n",
+    "closed_at": "2008-02-15T05:00:45Z",
     "created_at": "2008-02-14T23:15:56Z",
     "labels": [
         "component: combinatorics",
-        "minor",
-        "bug"
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "add fast iterator for partitions",
+    "title": "[with patch, with positive review] add fast iterator for partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2164",
     "user": "https://github.com/mwhansen"

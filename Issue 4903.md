@@ -1,22 +1,23 @@
-# Issue 4903: convert sage.calculus.* docstrings to Sphinx
+# Issue 4903: [with patch, positive review] convert sage.calculus.* docstrings to Sphinx
 
 archive/issues_004903.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4903\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4903\n\n",
+    "closed_at": "2009-02-24T17:58:00Z",
     "created_at": "2009-01-01T22:46:01Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.calculus.* docstrings to Sphinx",
+    "title": "[with patch, positive review] convert sage.calculus.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4903",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 
 

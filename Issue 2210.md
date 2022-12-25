@@ -4,6 +4,7 @@ archive/issues_002210.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nMany build problems on OSX reported to sage-devel and sage-support are due to old or even ancient XCode releases. One contributing factor seems to be that Apple's update service does not automatically update XCode.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2210\n\n",
+    "closed_at": "2012-05-21T08:04:24Z",
     "created_at": "2008-02-19T18:01:31Z",
     "labels": [
         "component: distribution",

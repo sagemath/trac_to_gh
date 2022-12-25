@@ -1,9 +1,10 @@
-# Issue 4879: [with spkg, needs review] Update FLINT to 1.0.21 (latest 1.0.x upstream)
+# Issue 4879: [with spkg, positive review] Update FLINT to 1.0.21 (latest 1.0.x upstream)
 
 archive/issues_004879.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe latest FLINT fixes a 32 bit specific bug \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4879\n\n",
+    "closed_at": "2008-12-26T22:49:05Z",
     "created_at": "2008-12-25T19:25:20Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004879.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "[with spkg, needs review] Update FLINT to 1.0.21 (latest 1.0.x upstream)",
+    "title": "[with spkg, positive review] Update FLINT to 1.0.21 (latest 1.0.x upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4879",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

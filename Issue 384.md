@@ -1,9 +1,10 @@
-# Issue 384: latex formatting issues with symbolic expressions
+# Issue 384: [with patch, positive review] latex formatting issues with symbolic expressions
 
 archive/issues_000384.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere are two latex formatting issues for the symbolic expressions.\n\n1)  The \\cdot's for implicit multiplication take up a lot of room and confuse my eyes.\n\n2)  I have expressions which are a product of about 5 things and \nthey are output with excessive parentheses, for example:\n(((1+a)(1+b))(1+c))(1+d)\nThe parenthesis check in the code just adds parentheses if the left \nsubexpression contains a minus or plus.  Of course, it should check if there \nis a minus or plus that isn't already bracketed or something like that (but, who am I \nto claim to know what should be done :) ).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/384\n\n",
+    "closed_at": "2008-01-27T03:02:25Z",
     "created_at": "2007-06-01T15:29:03Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_000384.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "latex formatting issues with symbolic expressions",
+    "title": "[with patch, positive review] latex formatting issues with symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/384",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

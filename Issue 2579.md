@@ -1,16 +1,17 @@
-# Issue 2579: Inconsistency in integer quotient
+# Issue 2579: [with patch, positive review] Inconsistency in integer quotient
 
 archive/issues_002579.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nsage: a=-17\nsage: a//4\n-5\nsage: a.div(4)\n-4\nsage: a.mod(4)\n3\n\n\nI recommend we redefine\n\ndef div(self, other):\n    q,_ = self.quo_rem(other)\n    return q\n\nIssue created by migration from https://trac.sagemath.org/ticket/2579\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: a=-17\nsage: a//4\n-5\nsage: a.div(4)\n-4\nsage: a.mod(4)\n3\n```\n\nI recommend we redefine\n\n```\ndef div(self, other):\n    q,_ = self.quo_rem(other)\n    return q\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2579\n\n",
+    "closed_at": "2008-03-20T00:18:51Z",
     "created_at": "2008-03-18T01:29:11Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Inconsistency in integer quotient",
+    "title": "[with patch, positive review] Inconsistency in integer quotient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2579",
     "user": "https://github.com/rishikesha"
@@ -18,6 +19,7 @@ archive/issues_002579.json:
 ```
 Assignee: somebody
 
+```
 sage: a=-17
 sage: a//4
 -5
@@ -25,13 +27,15 @@ sage: a.div(4)
 -4
 sage: a.mod(4)
 3
-
+```
 
 I recommend we redefine
 
+```
 def div(self, other):
     q,_ = self.quo_rem(other)
     return q
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/2579
 

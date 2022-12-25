@@ -3,7 +3,8 @@
 archive/issues_007017.json:
 ```json
 {
-    "body": "Assignee: kevin.stueve\n\nCC:  @craigcitro\n\nKeywords: prime_range, primes, prime number theory, prime\n\nI am having trouble with the following lines.  I am on a \nMacBook pro. kevin.stueve\n\nfrom sage.rings.fast_arith import prime_range \nprint prime_range(10<sup>16,10</sup>16+100) \n\nTraceback (most recent call last): \n File \"<stdin>\", line 1, in <module> \n File \"/Users/guestadmin/.sage/sage_notebook/worksheets/admin/3/code/ \n22.py\", \nline 8, in <module> \n   print prime_range(_sage_const_10 **_sage_const_16 ,_sage_const_10 \n**_sage_const_16 +_sage_const_100 ) \n File \"\", line 1, in <module> \n\n File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range \n(sage/rings/fast_arith.c:3813) \n File \"fast_arith.pyx\", line 105, in \nsage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3580) \n File \"gen.pyx\", line 8629, in \nsage.libs.pari.gen.PariInstance.primes_up_to_n \n(sage/libs/pari/gen.c:40808) \nOverflowError: long int too large to convert to int\n\n\n\n\nThose two lines gave me a segfault on sage.math: \n\n```\n[mvngu@sage ~]$ sage \n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: from sage.rings.fast_arith import prime_range \nsage: print prime_range(10^16,10^16+100) \n/usr/local/sage/local/bin/sage-sage: line 199:  9892 Segmentation \nfault      sage-ipython \"$@\" -i \n| Sage Version 4.1.1, Release Date: 2009-08-14                       | \n| Type notebook() for the GUI, and license() for information.        | \n```\n\nMinh Van Nguyen\n\nIssue created by migration from https://trac.sagemath.org/ticket/7017\n\n",
+    "body": "Assignee: kevin.stueve\n\nCC:  @craigcitro\n\nKeywords: prime_range, primes, prime number theory, prime\n\nI am having trouble with the following lines.  I am on a \nMacBook pro. kevin.stueve\n\n```\nsage: from sage.rings.fast_arith import prime_range \nsage: print prime_range(10^16,10^16+100) \n\nTraceback (most recent call last): \n File \"<stdin>\", line 1, in <module> \n File \"/Users/guestadmin/.sage/sage_notebook/worksheets/admin/3/code/ \n22.py\", \nline 8, in <module> \n   print prime_range(_sage_const_10 **_sage_const_16 ,_sage_const_10 \n**_sage_const_16 +_sage_const_100 ) \n File \"\", line 1, in <module> \n\n File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range \n(sage/rings/fast_arith.c:3813) \n File \"fast_arith.pyx\", line 105, in \nsage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3580) \n File \"gen.pyx\", line 8629, in \nsage.libs.pari.gen.PariInstance.primes_up_to_n \n(sage/libs/pari/gen.c:40808) \nOverflowError: long int too large to convert to int\n\n```\n\n\nThose two lines gave me a segfault on sage.math: \n\n```\n[mvngu@sage ~]$ sage \n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: from sage.rings.fast_arith import prime_range \nsage: print prime_range(10^16,10^16+100) \n/usr/local/sage/local/bin/sage-sage: line 199:  9892 Segmentation \nfault      sage-ipython \"$@\" -i \n| Sage Version 4.1.1, Release Date: 2009-08-14                       | \n| Type notebook() for the GUI, and license() for information.        | \n```\n\nMinh Van Nguyen\n\nIssue created by migration from https://trac.sagemath.org/ticket/7017\n\n",
+    "closed_at": "2010-01-19T01:14:26Z",
     "created_at": "2009-09-26T03:16:02Z",
     "labels": [
         "component: number theory",
@@ -25,8 +26,9 @@ Keywords: prime_range, primes, prime number theory, prime
 I am having trouble with the following lines.  I am on a 
 MacBook pro. kevin.stueve
 
-from sage.rings.fast_arith import prime_range 
-print prime_range(10<sup>16,10</sup>16+100) 
+```
+sage: from sage.rings.fast_arith import prime_range 
+sage: print prime_range(10^16,10^16+100) 
 
 Traceback (most recent call last): 
  File "<stdin>", line 1, in <module> 
@@ -46,7 +48,7 @@ sage.libs.pari.gen.PariInstance.primes_up_to_n
 (sage/libs/pari/gen.c:40808) 
 OverflowError: long int too large to convert to int
 
-
+```
 
 
 Those two lines gave me a segfault on sage.math: 

@@ -1,16 +1,17 @@
-# Issue 3153: make finite_field_ntl_gf2e use randstate framework
+# Issue 3153: [with patch, positive review] make finite_field_ntl_gf2e use randstate framework
 
 archive/issues_003153.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThe patch from #3020 added a new call to a pseudo-random-number generator, not under the control of the Sage randstate framework.  This patch fixes that up, as well as adding some new documentation to randstate.  Applies on top of the patch from #3020.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3153\n\n",
+    "closed_at": "2008-05-17T18:31:11Z",
     "created_at": "2008-05-10T22:41:39Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "make finite_field_ntl_gf2e use randstate framework",
+    "title": "[with patch, positive review] make finite_field_ntl_gf2e use randstate framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3153",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,22 +1,23 @@
-# Issue 5026: numerical noise doctest failure in rings/polynomial/complex_roots.py
+# Issue 5026: [with patch, positive review] numerical noise doctest failure in rings/polynomial/complex_roots.py
 
 archive/issues_005026.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nKeywords: complex roots, polynomial\n\nOn sage-3.3.alpha0 I get this doctest failure on an intel mac:\n\n```\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/complex_roots.py\", line\n270:\n    sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n    [(-14.61803398874990?..., 1), (-12.38196601125010? + 0.?e-27*I,\n1)]\nGot:\n    [(-14.61803398874990? + 0.?e-27*I, 1), (-12.38196601125011? + 0.?\ne-27*I, 1)]\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5026\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: complex roots, polynomial\n\nOn sage-3.3.alpha0 I get this doctest failure on an intel mac:\n\n```\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/complex_roots.py\", line\n270:\n    sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n    [(-14.61803398874990?..., 1), (-12.38196601125010? + 0.?e-27*I,\n1)]\nGot:\n    [(-14.61803398874990? + 0.?e-27*I, 1), (-12.38196601125011? + 0.?\ne-27*I, 1)]\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5026\n\n",
+    "closed_at": "2009-01-24T13:18:27Z",
     "created_at": "2009-01-19T16:11:44Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "numerical noise doctest failure in rings/polynomial/complex_roots.py",
+    "title": "[with patch, positive review] numerical noise doctest failure in rings/polynomial/complex_roots.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5026",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: jkantor
+Assignee: @craigcitro
 
 Keywords: complex roots, polynomial
 

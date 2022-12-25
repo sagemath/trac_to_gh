@@ -1,16 +1,17 @@
-# Issue 3781: [with patch, needs review] add a cached_method decorator
+# Issue 3781: [with patch, with positive review] add a cached_method decorator
 
 archive/issues_003781.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3781\n\n",
+    "body": "Assignee: cwitty\n\n\n```\nmhansen: Does anyone feel up for reviewing #3781 for me?\n[4:21pm] ncalexan: I'll look at it, one moment.  I've wanted \nthis for a while.\n[4:22pm] mhansen: Awesome.  It doesn't work on C extension \ntypes though since they don't have a __dict__.  This could \nbe done by storing the cache in the decorator object with \na weakref though.\n[4:22pm] ncalexan: The problem is much more complicated \nthan this.\n[4:23pm] ncalexan: Okay, there are other problems too, \nlike un-hashable arguments will break it.\n[4:23pm] mhansen: Yep\n[4:23pm] ncalexan: And there is no way to clear the cache...\n[4:23pm] ncalexan: And the tests don't actually demonstrate \nthat the cache is workin.\n[4:24pm] ncalexan: (One could touch the cache with an \nincorrect answer, then verify it is \"correctly\" returning \nthat value)\n[4:25pm] ncalexan: For what it is, though, it's fine.  It \nwill hurt nothing -- shall I review positive?\n[4:26pm] mhansen: If you could, that'd be great.  I do \nknow it's limitations, but there are some big patches \ngoing in that depend on it.  I'll make a ticket with \nyour comments for improvement.\n[4:28pm] ncalexan: How big are the big patches?  In fact, \nI don't care -- this declares the intent nicely and can be \nupgraded independently later.  One moment.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3781\n\n",
+    "closed_at": "2008-08-08T22:38:45Z",
     "created_at": "2008-08-06T16:31:38Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] add a cached_method decorator",
+    "title": "[with patch, with positive review] add a cached_method decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3781",
     "user": "https://github.com/mwhansen"
@@ -18,6 +19,36 @@ archive/issues_003781.json:
 ```
 Assignee: cwitty
 
+
+```
+mhansen: Does anyone feel up for reviewing #3781 for me?
+[4:21pm] ncalexan: I'll look at it, one moment.  I've wanted 
+this for a while.
+[4:22pm] mhansen: Awesome.  It doesn't work on C extension 
+types though since they don't have a __dict__.  This could 
+be done by storing the cache in the decorator object with 
+a weakref though.
+[4:22pm] ncalexan: The problem is much more complicated 
+than this.
+[4:23pm] ncalexan: Okay, there are other problems too, 
+like un-hashable arguments will break it.
+[4:23pm] mhansen: Yep
+[4:23pm] ncalexan: And there is no way to clear the cache...
+[4:23pm] ncalexan: And the tests don't actually demonstrate 
+that the cache is workin.
+[4:24pm] ncalexan: (One could touch the cache with an 
+incorrect answer, then verify it is "correctly" returning 
+that value)
+[4:25pm] ncalexan: For what it is, though, it's fine.  It 
+will hurt nothing -- shall I review positive?
+[4:26pm] mhansen: If you could, that'd be great.  I do 
+know it's limitations, but there are some big patches 
+going in that depend on it.  I'll make a ticket with 
+your comments for improvement.
+[4:28pm] ncalexan: How big are the big patches?  In fact, 
+I don't care -- this declares the intent nicely and can be 
+upgraded independently later.  One moment.
+```
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3781

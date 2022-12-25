@@ -1,9 +1,10 @@
-# Issue 3973: [with patch, needs review] short_weierstrass_model in characteristic 2 and 3
+# Issue 3973: [with patch, with positive review] short_weierstrass_model in characteristic 3
 
 archive/issues_003973.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nthis is to correct a small thing in short_weierstrass_model. It used to return an error in characteristic 3 for each curve, even if the curve was given in short weierstrass form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3973\n\n",
+    "closed_at": "2008-08-28T20:39:47Z",
     "created_at": "2008-08-28T11:51:02Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_003973.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] short_weierstrass_model in characteristic 2 and 3",
+    "title": "[with patch, with positive review] short_weierstrass_model in characteristic 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3973",
     "user": "https://github.com/categorie"

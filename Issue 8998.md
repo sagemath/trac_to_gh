@@ -4,6 +4,7 @@ archive/issues_008998.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nTicket  #5822 implemented the action of Galois on cusps.  I think the algorithm was only designed to work for Gamma_0(N).  However, the code runs for other groups, and doesn't raise an error.  Unfortunately, it gives completely wrong results in some cases, e.g., \n\n```\nsage: G = Gamma1(19)\nsage: rational_cusps = [c for c in G.cusps() if c.galois_action(2,19).is_gamma1_equiv(c,19)]\nsage: rational_cusps\n[0, 2/19, 1/9, 1/8, 1/7, 3/19, 1/6, 1/5, 4/19, 1/4, 5/19, 6/19, 1/3,\n7/19, 8/19, 9/19, 1/2, Infinity]\n```\n\nHowever, exactly half the cusps are rational (see, e.g., my paper http://wstein.org/papers/j1p/ or the work of Kubert-Lang).  \n\nThis came up in research that Michael Stoll and I were doing, and it was temporarily very confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8998\n\n",
+    "closed_at": "2011-04-13T07:42:34Z",
     "created_at": "2010-05-20T05:29:16Z",
     "labels": [
         "component: modular forms",

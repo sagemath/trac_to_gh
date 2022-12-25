@@ -1,9 +1,10 @@
-# Issue 2340: Docstrings and doctests for rings/ring.pyx
+# Issue 2340: [with patch; positive review] Docstrings and doctests for rings/ring.pyx
 
 archive/issues_002340.json:
 ```json
 {
     "body": "Assignee: @cswiercz\n\nKeywords: doctest\n\nProvide missing doctests for the file rings/ring.pyx on all non-underscore functions. These include\n\nrandom_element\nkrull_dimension\nideal_monoid\nquotient_ring\nis_integral_domain\nis_integrally_closed\nis_field\nis_noetherian\n\nkrull_dimension\nis_integrally_closed\nintegral_closure\nis_noetherian\ngcd\nparameter\ncategory\nfraction_field\nmodulus\ncharacteristic\nis_commutative\n\nIssue created by migration from https://trac.sagemath.org/ticket/2340\n\n",
+    "closed_at": "2008-03-09T17:27:37Z",
     "created_at": "2008-02-28T04:43:31Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_002340.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Docstrings and doctests for rings/ring.pyx",
+    "title": "[with patch; positive review] Docstrings and doctests for rings/ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2340",
     "user": "https://github.com/cswiercz"

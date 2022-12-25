@@ -3,7 +3,8 @@
 archive/issues_006660.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThe following code creates a Graph and computes its chromatic number :\n\nsage: h=Graph(\":I`ASWCaG`WaJC{afP\")\n\nsage: h.chromatic_number()\n\n4\n\nsage: h.coloring()\n\n[[6, 8], [9], [0, 4, 7, 3], [1, 2, 5]]\n\nMeanwhile, you can check that the coloring [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]] is valid with this code that checks that each class is actually an independent set.\n:\n\nfor c in [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]]:\n\n      print h.subgraph(c).connected_components_number()==len(c)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6660\n\n",
+    "body": "Assignee: @rlmill\n\n(see : http://groups.google.com/group/sage-devel/browse_thread/thread/2707c2ef0362b8b0 )\n\nThe following code creates a Graph and computes its chromatic number :\n\n  sage: h=Graph(\":I`ASWCaG`WaJC{afP\")\n  \n  sage: h.chromatic_number()\n  \n  4\n\n  sage: h.coloring()\n  \n  [[6, 8], [9], [0, 4, 7, 3], [1, 2, 5]]\n\nMeanwhile, you can check that the coloring [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]] is valid with this code that checks that each class is actually an independent set.\n:\n\n  for c in [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]]:\n  \n      print h.subgraph(c).connected_components_number()==len(c)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6660\n\n",
+    "closed_at": "2009-07-30T16:55:48Z",
     "created_at": "2009-07-30T12:40:05Z",
     "labels": [
         "component: graph theory",
@@ -18,24 +19,28 @@ archive/issues_006660.json:
 ```
 Assignee: @rlmill
 
+(see : http://groups.google.com/group/sage-devel/browse_thread/thread/2707c2ef0362b8b0 )
+
 The following code creates a Graph and computes its chromatic number :
 
-sage: h=Graph(":I`ASWCaG`WaJC{afP")
+  sage: h=Graph(":I`ASWCaG`WaJC{afP")
+  
+  sage: h.chromatic_number()
+  
+  4
 
-sage: h.chromatic_number()
-
-4
-
-sage: h.coloring()
-
-[[6, 8], [9], [0, 4, 7, 3], [1, 2, 5]]
+  sage: h.coloring()
+  
+  [[6, 8], [9], [0, 4, 7, 3], [1, 2, 5]]
 
 Meanwhile, you can check that the coloring [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]] is valid with this code that checks that each class is actually an independent set.
 :
 
-for c in [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]]:
-
+  for c in [[3, 9, 1], [9, 4, 0, 3], [3, 8, 5]]:
+  
       print h.subgraph(c).connected_components_number()==len(c)
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6660
 

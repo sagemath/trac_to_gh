@@ -3,7 +3,8 @@
 archive/issues_008781.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nThis patch defines the (very short) function is_overfull (http://en.wikipedia.org/wiki/Overfull_graph), and updates the edge_coloring function to support it. \n\nI also fixed a mistake in this code : I had mixed g.order() with max(g.degree()) for complete graphs ^^;\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8781\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nThis patch defines the (very short) function is_overfull (http://en.wikipedia.org/wiki/Overfull_graph), and updates the edge_coloring function to support it. \n\nI also fixed a mistake in this code : I had mixed g.order() with max(g.degree()) for complete graphs ^^;\n\nThis is a prerequisite for #9230.\n\n**Apply:**\n\n1. #8166\n2. [trac_8781.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8781/trac_8781.patch)\n3. [trac_8781-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8781/trac_8781-reviewer.patch)\n4. [trac_8781-fix2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8781/trac_8781-fix2.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8781\n\n",
+    "closed_at": "2010-06-29T16:44:50Z",
     "created_at": "2010-04-27T12:11:34Z",
     "labels": [
         "component: graph theory"
@@ -21,7 +22,14 @@ This patch defines the (very short) function is_overfull (http://en.wikipedia.or
 
 I also fixed a mistake in this code : I had mixed g.order() with max(g.degree()) for complete graphs ^^;
 
-Nathann
+This is a prerequisite for #9230.
+
+**Apply:**
+
+1. #8166
+2. [trac_8781.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8781/trac_8781.patch)
+3. [trac_8781-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8781/trac_8781-reviewer.patch)
+4. [trac_8781-fix2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8781/trac_8781-fix2.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/8781
 

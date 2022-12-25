@@ -1,16 +1,17 @@
-# Issue 4776: random element of multivariate polynomial ring in one variable is totally broken
+# Issue 4776: [with patch, positive review] random element of multivariate polynomial ring in one variable is totally broken
 
 archive/issues_004776.json:
 ```json
 {
     "body": "Assignee: @malb\n\n```\nsage: R.<x> = PolynomialRing(Integers(3), 1)\nsage: R.random_element()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/devel/sage-main/sage/rings/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring_generic.so in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element (sage/rings/polynomial/multi_polynomial_ring_generic.c:7404)()\n\nTypeError: Cannot compute polynomial with more terms than exist.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4776\n\n",
+    "closed_at": "2008-12-21T12:37:08Z",
     "created_at": "2008-12-13T02:07:22Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "random element of multivariate polynomial ring in one variable is totally broken",
+    "title": "[with patch, positive review] random element of multivariate polynomial ring in one variable is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4776",
     "user": "https://github.com/williamstein"

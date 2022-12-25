@@ -1,16 +1,17 @@
-# Issue 5749: [with patch, needs review] Bring coverage of sage/rings/power_series_poly.pyx to 100%.
+# Issue 5749: [with patch, positive review] Bring coverage of sage/rings/power_series_poly.pyx to 100%.
 
 archive/issues_005749.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe attached patch brings up coverage for the `power_series_poly.pyx` file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5749\n\n",
+    "closed_at": "2009-04-12T21:04:39Z",
     "created_at": "2009-04-11T08:25:28Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Bring coverage of sage/rings/power_series_poly.pyx to 100%.",
+    "title": "[with patch, positive review] Bring coverage of sage/rings/power_series_poly.pyx to 100%.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5749",
     "user": "https://github.com/craigcitro"

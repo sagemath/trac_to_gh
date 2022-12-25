@@ -4,6 +4,7 @@ archive/issues_001690.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is a leftover from #1149.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1690\n\n",
+    "closed_at": "2008-04-08T04:37:40Z",
     "created_at": "2008-01-05T02:23:13Z",
     "labels": [
         "component: notebook",

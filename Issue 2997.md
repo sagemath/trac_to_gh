@@ -1,16 +1,17 @@
-# Issue 2997: [with patch; needs review] notebook -- change current directory before running notebook
+# Issue 2997: [with patch; negative review] notebook -- change current directory before running notebook
 
 archive/issues_002997.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is a better implementation of the desired functionality, but rebased against 3.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2997\n\n",
+    "closed_at": "2008-05-11T21:42:41Z",
     "created_at": "2008-04-22T15:54:37Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "[with patch; needs review] notebook -- change current directory before running notebook",
+    "title": "[with patch; negative review] notebook -- change current directory before running notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2997",
     "user": "https://github.com/williamstein"

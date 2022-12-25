@@ -3,7 +3,8 @@
 archive/issues_000447.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\na = 90123.1293081203890128\na.round?\n```\noutputs crap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/447\n\n",
+    "body": "Assignee: @mwhansen\n\n```\na = 90123.1293081203890128\na.round?\n```\noutputs crap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/447\n\n",
+    "closed_at": "2007-08-18T23:23:56Z",
     "created_at": "2007-08-18T22:25:34Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +18,7 @@ archive/issues_000447.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 ```
 a = 90123.1293081203890128

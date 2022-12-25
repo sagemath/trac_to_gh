@@ -1,9 +1,10 @@
-# Issue 3082: sage-3.0.1.alpha1: a twist.py doctest failure
+# Issue 3082: [with patch, positive review] sage-3.0.1.alpha1: a twist.py doctest failure
 
 archive/issues_003082.json:
 ```json
 {
     "body": "Assignee: failure\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3082\n\n",
+    "closed_at": "2008-05-02T16:14:35Z",
     "created_at": "2008-05-02T15:19:41Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_003082.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "sage-3.0.1.alpha1: a twist.py doctest failure",
+    "title": "[with patch, positive review] sage-3.0.1.alpha1: a twist.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3082",
     "user": "https://github.com/williamstein"

@@ -1,23 +1,24 @@
-# Issue 2515: ExtendedRationalField not so extended
+# Issue 2515: [resolved by #5735] ExtendedRationalField not so extended
 
 archive/issues_002515.json:
 ```json
 {
-    "body": "Assignee: joyner\n\n```\nExtendedRationalField(1)/ExtendedRationalField(0)\n```\nyields\n\n```\nZeroDivisionError: Rational division by zero\n```\nSame for ExtendedIntegerRing(1)/ExtendedIntegerRing(0)\n\nPresumably these should both yield +Infinity?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2515\n\n",
+    "body": "Assignee: cwitty\n\n```\nExtendedRationalField(1)/ExtendedRationalField(0)\n```\nyields\n\n```\nZeroDivisionError: Rational division by zero\n```\nSame for ExtendedIntegerRing(1)/ExtendedIntegerRing(0)\n\nPresumably these should both yield +Infinity?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2515\n\n",
+    "closed_at": "2009-04-13T04:10:22Z",
     "created_at": "2008-03-14T08:10:23Z",
     "labels": [
-        "component: group_theory",
+        "component: misc",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "ExtendedRationalField not so extended",
+    "title": "[resolved by #5735] ExtendedRationalField not so extended",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2515",
     "user": "https://trac.sagemath.org/admin/accounts/users/edrex"
 }
 ```
-Assignee: joyner
+Assignee: cwitty
 
 ```
 ExtendedRationalField(1)/ExtendedRationalField(0)

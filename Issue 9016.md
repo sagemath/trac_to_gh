@@ -3,10 +3,11 @@
 archive/issues_009016.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nApply: [attachment:trac_9016-morphism_hash.take7.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
+    "closed_at": "2012-12-21T09:32:03Z",
     "created_at": "2010-05-22T15:36:30Z",
     "labels": [
-        "component: algebra",
+        "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
@@ -30,6 +31,8 @@ Attached patch makes morphisms hashable in a reasonably fast way by defining the
 It also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.
 
 While testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.
+
+Apply: [attachment:trac_9016-morphism_hash.take7.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9016
 

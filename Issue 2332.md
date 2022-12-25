@@ -1,16 +1,17 @@
-# Issue 2332: notebook -- the evaluate link doesn't
+# Issue 2332: [with patch, positive review] notebook -- the evaluate link doesn't
 
 archive/issues_002332.json:
 ```json
 {
     "body": "Assignee: boothby\n\nProblems with the evaluate link that appears in the active notebook cell have\nbeen reported by several people on the Sage mailing lists.  Here's the latest\nbug report, which has some interesting ideas about possible solutions. \n\n```\n\nOn Tue, Feb 26, 2008 at 8:24 AM, Francis Clarke <> wrote:\n> \n>  The \"evaluate\" links for the notebook introduced in SAGE 2.9.2 have\n>  never worked for me (Mac OS X 10.4.11, SAGE 2.9.2 -- 2.10.2 + either\n>  Safari or Firefox).  The links appears when they should and seem to be\n>  correct, e.g., (reformatted):\n>  \n>     <a href  = \"javascript:evaluate_cell(115,0)\"\n>        class = \"eval_button\"\n>        id    = \"eval_button115\"\n>        alt   = \"Click here or press shift-return to evaluate\">\n>     evaluate\n>     </a>\n>  \n>  but clicking on the link has no effect.  This is a pity, as it's a\n>  (potentially) very nice feature.  The cells evaluate perfectly well\n>  with shift-return.\n\nI just want to point out that the evaluate link *does* work for me\nand most people in Firefox.   It does not work for me in Safari.\nI don't understand why it doesn't work, but all your hints in this\nemail will help.  Thanks!  We're tracking this issue at \n \n\n>  \n>  Looking at this link, and cell.py line 575, where it's created, I fail\n>  to see what is wrong.  Perhaps the javascript function evaluate_cell\n>  (defined in js.py) can't be found in this context?\n>  \n>  One thing I did notice is the attribute\n>     alt=\"Click here or press shift-return to evaluate\"\n>  There is no alt attribute for the A element in HTML 4.01, so it has no\n>  effect here.  Probably 'alt' should be replaced by 'title'.  Though,\n>  of course, this isn't the cause of my main problem.\n>  \n>  \n>  A couple of other details from cell.py noticed in passing:\n>  \n>  line  64: math_parse is defined in html.py not cell.py\n>  \n>  line 577: has no effect.  Presumably it should have been commented out\n>  along with lines 579--584.\n>  \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2332\n\n",
+    "closed_at": "2008-03-17T04:29:50Z",
     "created_at": "2008-02-27T12:50:54Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "notebook -- the evaluate link doesn't",
+    "title": "[with patch, positive review] notebook -- the evaluate link doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2332",
     "user": "https://github.com/williamstein"

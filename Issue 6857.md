@@ -1,16 +1,17 @@
-# Issue 6857: [with patch, needs review] in automorphism_group, orbits=True does not translate vertices back
+# Issue 6857: [with patch, positive review] in automorphism_group, orbits=True does not translate vertices back
 
 archive/issues_006857.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nReported by Chris Godsil\n\nIssue created by migration from https://trac.sagemath.org/ticket/6857\n\n",
+    "closed_at": "2009-09-07T18:42:48Z",
     "created_at": "2009-09-02T01:00:23Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] in automorphism_group, orbits=True does not translate vertices back",
+    "title": "[with patch, positive review] in automorphism_group, orbits=True does not translate vertices back",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6857",
     "user": "https://github.com/rlmill"

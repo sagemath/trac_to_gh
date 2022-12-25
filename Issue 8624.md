@@ -3,10 +3,11 @@
 archive/issues_008624.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nThe integral of abs(cos(x))*sin(x) returns the result as if abs() is ignored:\n\n```\nsage: integral(abs(cos(x))*sin(x),(x,pi/2,pi))\n-1/2\n```\nwhile\n\n```\nsage: numerical_integral(abs(cos(x))*sin(x),pi/2,pi)\n(0.49999999999999994, 5.5511151231257819e-15)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8624\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nThe integral of abs(cos(x))*sin(x) returns the result as if abs() is ignored:\n\n```\nsage: integral(abs(cos(x))*sin(x),(x,pi/2,pi))\n-1/2\n```\nwhile\n\n```\nsage: numerical_integral(abs(cos(x))*sin(x),pi/2,pi)\n(0.49999999999999994, 5.5511151231257819e-15)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8624\n\n",
+    "closed_at": "2010-12-06T12:11:44Z",
     "created_at": "2010-03-29T16:04:59Z",
     "labels": [
-        "component: algebra",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -17,7 +18,7 @@ archive/issues_008624.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jeroen"
 }
 ```
-Assignee: @aghitza
+Assignee: @burcin
 
 CC:  @kcrisman
 

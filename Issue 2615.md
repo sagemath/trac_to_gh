@@ -1,30 +1,33 @@
-# Issue 2615: wish: compute the jordan basis together with the jordan canonical form
+# Issue 2615: [with patch, positive review] compute the jordan basis together with the jordan canonical form
 
 archive/issues_002615.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSage has now an implementation of the Jordan canonical form (see #874)\n\nHowever for most applications (like computing the exponential of a matrix,\nsee #2273) we would need to be able to compute not only the Jordan form, but\nthe Jordan basis as well (or what is equivalent the coordinate-change matrix P\nsuch that P^(-1) A P = J, where A is the matrix, and J is its Jordan normal form)\n\n(As far as I know, Maple can do that)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2615\n\n",
+    "body": "Assignee: @mwhansen\n\n\nSage has now an implementation of the Jordan canonical form (see #874)\n\nHowever for most applications (like computing the exponential of a matrix,\nsee #2273) we would need to be able to compute not only the Jordan form, but\nthe Jordan basis as well (or what is equivalent the coordinate-change matrix P\nsuch that `P^(-1) A P = J`, where A is the matrix, and J is its Jordan normal form)\n\n(As far as I know, Maple can do that)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2615\n\n",
+    "closed_at": "2008-04-16T01:43:44Z",
     "created_at": "2008-03-20T14:51:21Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "wish: compute the jordan basis together with the jordan canonical form",
+    "title": "[with patch, positive review] compute the jordan basis together with the jordan canonical form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2615",
     "user": "https://github.com/pdenapo"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
+
 
 Sage has now an implementation of the Jordan canonical form (see #874)
 
 However for most applications (like computing the exponential of a matrix,
 see #2273) we would need to be able to compute not only the Jordan form, but
 the Jordan basis as well (or what is equivalent the coordinate-change matrix P
-such that P^(-1) A P = J, where A is the matrix, and J is its Jordan normal form)
+such that `P^(-1) A P = J`, where A is the matrix, and J is its Jordan normal form)
 
 (As far as I know, Maple can do that)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2615
 

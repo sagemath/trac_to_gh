@@ -1,17 +1,18 @@
-# Issue 4639: bad memory leak with exponentiation
+# Issue 4639: [with patch, positive review] bad memory leak with exponentiation
 
 archive/issues_004639.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @robertwb\n\nI think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)\n\nAlso, I believe that these examples had no problems in sage 3.0.2.\n\n```\nbober@bober:~/math/tests$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: get_memory_usage()\n114.5546875\nsage: for z in xrange(10000):\n   ...:     a = 3^i\n   ...:     \nsage: get_memory_usage()\n121.4375\nsage: for z in xrange(10000):\n    a = 3^CC.0\n   ...:     \nsage: get_memory_usage()\n128.96484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ...:     \nsage: get_memory_usage()\n187.36328125\nsage: var('t')\nt\nsage: for z in xrange(10000):\n    a = 3.0^t\n   ....:     \nsage: get_memory_usage()\n231.4609375\nsage: #But, integer^integer is OK:\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage\n<function get_memory_usage at 0x8415f0c>\nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ....:     \nsaget_memory_usage()\n290.1640625\nsage: for z in xrange(10000):\n    a = CC.0^CC.0\n   ....:     \nsage: get_memory_usage()\n290.1640625\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4639\n\n",
+    "closed_at": "2008-12-17T14:01:23Z",
     "created_at": "2008-11-27T19:06:08Z",
     "labels": [
         "component: basic arithmetic",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "bad memory leak with exponentiation",
+    "title": "[with patch, positive review] bad memory leak with exponentiation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4639",
     "user": "https://trac.sagemath.org/admin/accounts/users/bober"

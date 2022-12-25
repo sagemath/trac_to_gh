@@ -1,15 +1,16 @@
-# Issue 6110: [with patch, needs review] implement a "decorator" to allow pickling nested classes
+# Issue 6110: [with patch, positive review] implement a "decorator" to allow pickling nested classes
 
 archive/issues_006110.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nCC:  @craigcitro\n\nThe nested_pickle decorator modifies nested classes to be picklable.  (In Python 2.6 it should be usable as a decorator, although that hasn't been tested; Python 2.5 doesn't support class decorators, so you can't use that syntax in Sage until it upgrades.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6110\n\n",
+    "closed_at": "2009-06-13T21:53:38Z",
     "created_at": "2009-05-21T09:10:24Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] implement a \"decorator\" to allow pickling nested classes",
+    "title": "[with patch, positive review] implement a \"decorator\" to allow pickling nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6110",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

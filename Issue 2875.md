@@ -1,16 +1,18 @@
-# Issue 2875: notebook -- save_session is completely broken in the notebook
+# Issue 2875: [with patch; positive review] notebook -- save_session is completely broken in the notebook
 
 archive/issues_002875.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2875\n\n",
+    "body": "Assignee: boothby\n\nThis is a very serious bug, since it's basic functionality that is completely broken.\n\nBy the way, it's the inline fortran stuff that *really* broke it.   See #2891.  This patch programs around that problem, and *also* fixes another path bug, which wasn't a show stopper but did result in some very stupid behavior. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2875\n\n",
+    "closed_at": "2008-04-13T23:54:43Z",
     "created_at": "2008-04-11T04:39:23Z",
     "labels": [
         "component: notebook",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "notebook -- save_session is completely broken in the notebook",
+    "title": "[with patch; positive review] notebook -- save_session is completely broken in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2875",
     "user": "https://github.com/williamstein"
@@ -18,7 +20,9 @@ archive/issues_002875.json:
 ```
 Assignee: boothby
 
+This is a very serious bug, since it's basic functionality that is completely broken.
 
+By the way, it's the inline fortran stuff that *really* broke it.   See #2891.  This patch programs around that problem, and *also* fixes another path bug, which wasn't a show stopper but did result in some very stupid behavior. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2875
 

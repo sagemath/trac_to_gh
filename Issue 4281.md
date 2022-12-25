@@ -1,16 +1,17 @@
-# Issue 4281: [with patch, needs review] elliptic curve doctest coverage (part 4)
+# Issue 4281: [with patch,with positive review] elliptic curve doctest coverage (part 4)
 
 archive/issues_004281.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis is for the file ell_tate_curve.py. I was unable to doctest the _height function, which is used\nas a closure. Also, the missing loads(dumps(..)) test fails:\n\n```\nsage: e = EllipticCurve('130a1')\nsage: eq = e.tate_curve(5)\nsage: eq == loads(dumps(eq))\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4281\n\n",
+    "closed_at": "2008-10-20T14:01:54Z",
     "created_at": "2008-10-14T13:47:05Z",
     "labels": [
         "component: algebraic geometry",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch, needs review] elliptic curve doctest coverage (part 4)",
+    "title": "[with patch,with positive review] elliptic curve doctest coverage (part 4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4281",
     "user": "https://github.com/zimmermann6"

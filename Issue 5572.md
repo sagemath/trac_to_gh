@@ -3,7 +3,7 @@
 archive/issues_005572.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb @TimDumol @eviatarbach @novoselt @orlitzky\n\nThe code at #5093 is very good and ready to go in, but there are several improvements that have been suggested and agreed work on at a later date. They are posted here so we can merge and close the other ticket. \n\nSpecifically, \n\nNot fixed:\n\n* Robert's suggestion: an option that uses a fast domain, if it's there, but ignores the domain parameter if it's not (I don't mind the idea, and the implementation is easy; what should the syntax be? Part of my problem picking a syntax is that I don't want to promise that a specialized interpreter is always faster than the Python-object interpreter, so I don't particularly want to use the word \"fast\" in any option names.)\n\n* fast_callable on list,tuple,vector,matrix arguments\n\n* any interaction with #5413 (my plan is to wait until either #5093 or #5413 gets a positive review, then fix the other one to match)\n\n* fast_callable on constant arguments (waiting for a spec from Jason!)\n\n* fast_callable of a zero multivariate polynomial returns a zero of the base ring, without paying attention to the types of the arguments\n\nIssue created by migration from https://trac.sagemath.org/ticket/5572\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb @TimDumol @eviatarbach @novoselt @orlitzky\n\nThe code at #5093 is very good and ready to go in, but there are several improvements that have been suggested and agreed work on at a later date. They are posted here so we can merge and close the other ticket. \n\nSpecifically, this ticket addresses these issues:\n\n* `fast_callable` on `list`, `tuple`, `vector`, `matrix` arguments\n\n* `fast_callable` on constant arguments\n\n* `fast_callable` of a zero multivariate polynomial returns a zero of the base ring, without paying attention to the types of the arguments\n\n* in general replaces calls to `fast_float` with calls to `fast_callable`. \n\n* Carries out the deprecation in #5413 (removes the functionality deprecated there)\n\n* `fast_float` sometimes returns symbolic values instead of floating-point values (see #17684, which patches `density_plot` to work around this bug)\n\n\nBecause of some of the far-reaching changes, this should probably not be merged in a point-point release.\n\nWhat is not fixed:\n\n* Robert's suggestion: an option that uses a fast domain, if it's there, but ignores the domain parameter if it's not (I don't mind the idea, and the implementation is easy; what should the syntax be? Part of my problem picking a syntax is that I don't want to promise that a specialized interpreter is always faster than the Python-object interpreter, so I don't particularly want to use the word \"fast\" in any option names.)\n\n\n\n\n\nThe work on this ticket:\n\n* Makes #8450 easy, probably\n* Makes #7512 invalid, probably\n\nSee also\n* #10087\n* #7165\n* #11766 -- rewrite some of `fast_callable` to have its own recursion stack\n\nIssue created by migration from https://trac.sagemath.org/ticket/5572\n\n",
     "created_at": "2009-03-19T23:55:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,25 +16,46 @@ archive/issues_005572.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: cwitty
 
 CC:  @robertwb @TimDumol @eviatarbach @novoselt @orlitzky
 
 The code at #5093 is very good and ready to go in, but there are several improvements that have been suggested and agreed work on at a later date. They are posted here so we can merge and close the other ticket. 
 
-Specifically, 
+Specifically, this ticket addresses these issues:
 
-Not fixed:
+* `fast_callable` on `list`, `tuple`, `vector`, `matrix` arguments
+
+* `fast_callable` on constant arguments
+
+* `fast_callable` of a zero multivariate polynomial returns a zero of the base ring, without paying attention to the types of the arguments
+
+* in general replaces calls to `fast_float` with calls to `fast_callable`. 
+
+* Carries out the deprecation in #5413 (removes the functionality deprecated there)
+
+* `fast_float` sometimes returns symbolic values instead of floating-point values (see #17684, which patches `density_plot` to work around this bug)
+
+
+Because of some of the far-reaching changes, this should probably not be merged in a point-point release.
+
+What is not fixed:
 
 * Robert's suggestion: an option that uses a fast domain, if it's there, but ignores the domain parameter if it's not (I don't mind the idea, and the implementation is easy; what should the syntax be? Part of my problem picking a syntax is that I don't want to promise that a specialized interpreter is always faster than the Python-object interpreter, so I don't particularly want to use the word "fast" in any option names.)
 
-* fast_callable on list,tuple,vector,matrix arguments
 
-* any interaction with #5413 (my plan is to wait until either #5093 or #5413 gets a positive review, then fix the other one to match)
 
-* fast_callable on constant arguments (waiting for a spec from Jason!)
 
-* fast_callable of a zero multivariate polynomial returns a zero of the base ring, without paying attention to the types of the arguments
+
+The work on this ticket:
+
+* Makes #8450 easy, probably
+* Makes #7512 invalid, probably
+
+See also
+* #10087
+* #7165
+* #11766 -- rewrite some of `fast_callable` to have its own recursion stack
 
 Issue created by migration from https://trac.sagemath.org/ticket/5572
 

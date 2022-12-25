@@ -1,9 +1,10 @@
-# Issue 3751: Type of output returned by QuadraticField(-1).class_number()
+# Issue 3751: [with patch, with positive review] Type of output returned by QuadraticField(-1).class_number()
 
 archive/issues_003751.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe output of the class_number() method for QuadraticFields is a Python integer. Would it be possible to change this so that it returned a Sage integer?\n\n```\nsage: K=QuadraticField(-1,'a')\nsage: K.class_number()\n1\nsage: type(K.class_number())\n<type 'int'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3751\n\n",
+    "closed_at": "2008-08-11T00:15:54Z",
     "created_at": "2008-07-31T20:37:09Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_003751.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Type of output returned by QuadraticField(-1).class_number()",
+    "title": "[with patch, with positive review] Type of output returned by QuadraticField(-1).class_number()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3751",
     "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"

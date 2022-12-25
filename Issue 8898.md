@@ -3,11 +3,12 @@
 archive/issues_008898.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @fredrik-johansson\n\nthe following 4 files in the sage spkg have dos line ending rather than unix ones:\nsage/libs/mpmath/ext_impl.pxd\nsage/libs/mpmath/ext_main.pyx\nsage/libs/mpmath/ext_main.pxd\nsage/libs/mpmath/ext_libmp.pyx\n\nI found about this while trying to build sage with python-2.6.5\nwhich absolutely refused to parse these files as is.\nNot sure how to submit a patch for line endings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8898\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @fredrik-johansson\n\nVarious files in the sage spkg have dos line ending rather than unix ones.\n\nI found about this while trying to build sage with python-2.6.5\nwhich absolutely refused to parse these files as is.\nNot sure how to submit a patch for line endings.\n\n**Execute from SAGE_ROOT/devel/sage:**\n\n1. [attachment:8898.sh]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8898\n\n",
+    "closed_at": "2010-11-15T23:24:39Z",
     "created_at": "2010-05-05T23:01:42Z",
     "labels": [
-        "component: algebra",
-        "minor",
+        "component: misc",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
@@ -17,19 +18,19 @@ archive/issues_008898.json:
     "user": "https://github.com/kiwifb"
 }
 ```
-Assignee: @aghitza
+Assignee: @jasongrout
 
 CC:  @fredrik-johansson
 
-the following 4 files in the sage spkg have dos line ending rather than unix ones:
-sage/libs/mpmath/ext_impl.pxd
-sage/libs/mpmath/ext_main.pyx
-sage/libs/mpmath/ext_main.pxd
-sage/libs/mpmath/ext_libmp.pyx
+Various files in the sage spkg have dos line ending rather than unix ones.
 
 I found about this while trying to build sage with python-2.6.5
 which absolutely refused to parse these files as is.
 Not sure how to submit a patch for line endings.
+
+**Execute from SAGE_ROOT/devel/sage:**
+
+1. [attachment:8898.sh]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8898
 

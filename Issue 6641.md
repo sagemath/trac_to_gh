@@ -1,15 +1,16 @@
-# Issue 6641: switch the poset antichains method to use GenericBacktracker and add antichains_iterator.
+# Issue 6641: [with patch, needs work] switch the poset antichains method to use GenericBacktracker and add antichains_iterator.
 
 archive/issues_006641.json:
 ```json
 {
     "body": "Assignee: @saliola\n\nCC:  @fchapoton\n\nThe current implementation of antichains must construct the complete set of antichains, but it can be done via an iterator (using the `GenericBacktracker` class).\n\nI have a patch that I will post shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6641\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2009-07-27T15:01:27Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "switch the poset antichains method to use GenericBacktracker and add antichains_iterator.",
+    "title": "[with patch, needs work] switch the poset antichains method to use GenericBacktracker and add antichains_iterator.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6641",
     "user": "https://github.com/saliola"

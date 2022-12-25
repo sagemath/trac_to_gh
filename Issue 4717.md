@@ -1,16 +1,17 @@
-# Issue 4717: [with patch, needs review] matrix_plot should also accept numpy arrays
+# Issue 4717: [with patch, positive review] matrix_plot should also accept numpy arrays
 
 archive/issues_004717.json:
 ```json
 {
     "body": "Assignee: whuss\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4717\n\n",
+    "closed_at": "2008-12-10T07:52:53Z",
     "created_at": "2008-12-05T13:22:19Z",
     "labels": [
         "component: graphics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review] matrix_plot should also accept numpy arrays",
+    "title": "[with patch, positive review] matrix_plot should also accept numpy arrays",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4717",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

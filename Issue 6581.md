@@ -3,10 +3,11 @@
 archive/issues_006581.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wstein @malb\n\nI'm not sure if this is a problem in the multivariate polynomials (which seem to raise the actual error) or somewhere in the symbolics.\n\nsage: R2.<a,b> = SR[]\nsage: I2 = [a*b+a, a*a] * R2\nsage: G2 = I2.groebner_basis()\nverbose 0 (2247: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.\n\n---\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'MPolynomialRing_polydict' object has no attribute 'monomial_divides'\nsage:\n\nIssue created by migration from https://trac.sagemath.org/ticket/6581\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein @malb\n\nI'm not sure if this is a problem in the multivariate polynomials (which seem to raise the actual error) or somewhere in the symbolics.\n\n```\nsage: R2.<a,b> = SR[]\nsage: I2 = [a*b+a, a*a] * R2\nsage: G2 = I2.groebner_basis()\nverbose 0 (2247: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'MPolynomialRing_polydict' object has no attribute 'monomial_divides'\nsage: \n```\n\n**Apply:**\n\n    [attachment:trac_6581_enable_more_ideals_for_toy_buchberger.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6581\n\n",
+    "closed_at": "2012-02-14T14:19:32Z",
     "created_at": "2009-07-21T17:11:12Z",
     "labels": [
-        "component: algebra",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
@@ -22,16 +23,21 @@ CC:  wstein @malb
 
 I'm not sure if this is a problem in the multivariate polynomials (which seem to raise the actual error) or somewhere in the symbolics.
 
+```
 sage: R2.<a,b> = SR[]
 sage: I2 = [a*b+a, a*a] * R2
 sage: G2 = I2.groebner_basis()
 verbose 0 (2247: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.
-
----
+---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
 ...
 AttributeError: 'MPolynomialRing_polydict' object has no attribute 'monomial_divides'
-sage:
+sage: 
+```
+
+**Apply:**
+
+    [attachment:trac_6581_enable_more_ideals_for_toy_buchberger.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6581
 

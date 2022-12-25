@@ -1,22 +1,23 @@
-# Issue 3631: pbuild broken by binary *.pyc files in extcode
+# Issue 3631: Delete *.pyc files when building Sage specific spkgs like extcode
 
 archive/issues_003631.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThe pbuild install in 3.0.4 was broken by (among other things) *.pyc files left in data/extcode/sagebuild.  All pyc files here should automatically get nuked when the spkg is created. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3631\n\n",
+    "body": "Assignee: mabshoff\n\nThe pbuild install in 3.0.4 was broken by (among other things) *.pyc files left in data/extcode/sagebuild.  All pyc files here should automatically get nuked when the spkg is created. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3631\n\n",
+    "closed_at": "2012-03-12T21:30:02Z",
     "created_at": "2008-07-10T08:57:57Z",
     "labels": [
         "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "pbuild broken by binary *.pyc files in extcode",
+    "title": "Delete *.pyc files when building Sage specific spkgs like extcode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3631",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: @garyfurnish
+Assignee: mabshoff
 
 The pbuild install in 3.0.4 was broken by (among other things) *.pyc files left in data/extcode/sagebuild.  All pyc files here should automatically get nuked when the spkg is created. 
 

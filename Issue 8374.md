@@ -3,7 +3,8 @@
 archive/issues_008374.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\n## The computer hardware & software\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM \n* Solaris 10 03/2005 - the first release of Solaris 10. \n\n == The Sage software ==\nSage 4.3.3 with various patches to get it to compile on Solaris. (The notebook is not working properly though). \n\n == The test failure == \n\n```\n****************************************************************\nFile \"/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/constants_c.pyx\", line 197:\n    sage: e.__float__()\nExpected:\n    2.7182818284590451\nGot:\n    2.7182818284590455\n****************************************************************\n``` \n \nThis failure on SPARC when displaying E has been seen before.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8374\n\n",
+    "body": "Assignee: drkirkby\n\n == The computer hardware & software ==\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM \n* Solaris 10 03/2005 - the first release of Solaris 10. \n\n == The Sage software ==\nSage 4.3.3 with various patches to get it to compile on Solaris. (The notebook is not working properly though). \n\n == The test failures == \n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/constants_c.pyx\", line 195:\n    sage: float(e)\nExpected:\n    2.7182818284590451\nGot:\n    2.7182818284590455\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/constants_c.pyx\", line 197:\n    sage: e.__float__()\nExpected:\n    2.7182818284590451\nGot:\n    2.7182818284590455\n**********************************************************************\n```\nThis failure on SPARC when displaying E has been seen before. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8374\n\n",
+    "closed_at": "2010-03-06T08:25:12Z",
     "created_at": "2010-02-26T08:56:12Z",
     "labels": [
         "component: porting: solaris",
@@ -18,7 +19,7 @@ archive/issues_008374.json:
 ```
 Assignee: drkirkby
 
-## The computer hardware & software
+ == The computer hardware & software ==
 * Sun Blade 1000
 * 2 x 900 MHz UltraSPARC III+ CPUs
 * 2 GB RAM 
@@ -27,20 +28,26 @@ Assignee: drkirkby
  == The Sage software ==
 Sage 4.3.3 with various patches to get it to compile on Solaris. (The notebook is not working properly though). 
 
- == The test failure == 
+ == The test failures == 
 
 ```
-****************************************************************
+**********************************************************************
+File "/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/constants_c.pyx", line 195:
+    sage: float(e)
+Expected:
+    2.7182818284590451
+Got:
+    2.7182818284590455
+**********************************************************************
 File "/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/constants_c.pyx", line 197:
     sage: e.__float__()
 Expected:
     2.7182818284590451
 Got:
     2.7182818284590455
-****************************************************************
-``` 
- 
-This failure on SPARC when displaying E has been seen before.
+**********************************************************************
+```
+This failure on SPARC when displaying E has been seen before. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8374
 

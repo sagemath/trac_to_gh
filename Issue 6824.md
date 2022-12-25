@@ -1,16 +1,18 @@
-# Issue 6824: cdef in timeseries.pyx follows use of variable
+# Issue 6824: [with patch, positive review] cdef in timeseries.pyx follows use of variable
 
 archive/issues_006824.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\n> During sage -upgrade (from a mirror)\n> \n> <snip>\n> python `which cython` --embed-positions --incref-local-binop -I/usr/local/src/sage-4.1/devel/sage-main -o sage/finance/time_series.c sage/finance/time_series.pyx\n> warning: /usr/local/src/sage-4.1/devel/sage-main/sage/finance/time_series.pyx:1722:24: cdef variable 'j' declared after it is used\n\n\n\n\nInteresting.  We have in that function:\n\n        `v = [(mn + j*step, mn + (j+1)*step) for j in range(bins)]`\n\nand then a few lines later:\n\n        `cdef Py_ssize_t j`\n\n\nThat's probably a bad idea.  The cdef line should be above that first line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6824\n\n",
+    "closed_at": "2009-09-26T05:55:50Z",
     "created_at": "2009-08-25T15:36:37Z",
     "labels": [
         "component: finance",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cdef in timeseries.pyx follows use of variable",
+    "title": "[with patch, positive review] cdef in timeseries.pyx follows use of variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6824",
     "user": "https://github.com/jasongrout"

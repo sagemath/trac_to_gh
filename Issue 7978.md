@@ -1,16 +1,16 @@
-# Issue 7978: The file sage/combinat/affine.py contains lots of 'tab' characters
+# Issue 7978: Cleanup of crystal code
 
 archive/issues_007978.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nThey should be replaced with spaces.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7978\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: crystals\n\nFixed some issues in crystals, such as\n- Comparison of elements\n- Latex output\n- Fixes whitespaces in /combinat/crystals/affine.py (as reported by Jason Bandlow)\n- All crystals have unique representation\n- Preparation of categorification of crystals:\n   - C.element_class -> C.Element\n   - All crystals are at least in the EnumeratedSets category\n   - Use rename, or define _repr_, instead of setting _name\n     Eventually, crystals should only use _repr_\n   => Removed dependency upon deprecated CombinatorialClass\n- Systematic use of TestSuite instead of loads/dumps test\n- Fixed bug in fast_crystal: delpat is not immutable (which should be\n  eventually be fixed), and was accidentally changed by the weight\n  method). This was caught by turning on unique representation which\n  made the crystals to be reused longer in the tests.\n\nDepends on #8028 (element wrapper improvement)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7978\n\n",
+    "closed_at": "2010-02-11T14:48:23Z",
     "created_at": "2010-01-18T14:43:28Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "The file sage/combinat/affine.py contains lots of 'tab' characters",
+    "title": "Cleanup of crystal code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7978",
     "user": "https://github.com/jbandlow"
@@ -20,7 +20,27 @@ Assignee: sage-combinat
 
 CC:  sage-combinat
 
-They should be replaced with spaces.
+Keywords: crystals
+
+Fixed some issues in crystals, such as
+- Comparison of elements
+- Latex output
+- Fixes whitespaces in /combinat/crystals/affine.py (as reported by Jason Bandlow)
+- All crystals have unique representation
+- Preparation of categorification of crystals:
+   - C.element_class -> C.Element
+   - All crystals are at least in the EnumeratedSets category
+   - Use rename, or define _repr_, instead of setting _name
+     Eventually, crystals should only use _repr_
+   => Removed dependency upon deprecated CombinatorialClass
+- Systematic use of TestSuite instead of loads/dumps test
+- Fixed bug in fast_crystal: delpat is not immutable (which should be
+  eventually be fixed), and was accidentally changed by the weight
+  method). This was caught by turning on unique representation which
+  made the crystals to be reused longer in the tests.
+
+Depends on #8028 (element wrapper improvement)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7978
 

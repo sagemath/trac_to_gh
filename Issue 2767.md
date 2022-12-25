@@ -1,9 +1,10 @@
-# Issue 2767: error in elem.matrix(F) and elem.norm(F) for F == elem.parent() a number field
+# Issue 2767: [with patch, with positive review] error in elem.matrix(F) and elem.norm(F) for F == elem.parent() a number field
 
 archive/issues_002767.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: number field norm matrix\n\n```\nsage: F.<z> = CyclotomicField(5)\nsage: F.<z> = CyclotomicField(5)\nsage: t = 3*z^3 + 4*z^2 + 2\nsage: t.norm()\n251\nsage: t.norm(F)\n2\nsage: t.matrix(F)\n[2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2767\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @ncalexan\n\nKeywords: number field norm matrix\n\n```\nsage: F.<z> = CyclotomicField(5)\nsage: F.<z> = CyclotomicField(5)\nsage: t = 3*z^3 + 4*z^2 + 2\nsage: t.norm()\n251\nsage: t.norm(F)\n2\nsage: t.matrix(F)\n[2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2767\n\n",
+    "closed_at": "2008-04-03T08:51:56Z",
     "created_at": "2008-04-02T04:54:31Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_002767.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "error in elem.matrix(F) and elem.norm(F) for F == elem.parent() a number field",
+    "title": "[with patch, with positive review] error in elem.matrix(F) and elem.norm(F) for F == elem.parent() a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2767",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 CC:  @ncalexan
 

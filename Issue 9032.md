@@ -3,7 +3,8 @@
 archive/issues_009032.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n```\nsage: a=8\nsage: a.n()\n8.00000000000000\nsage: a.numerical_approx()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/zimmerma/<ipython console> in <module>()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2628)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2828)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2595)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'\n```\nThe same holds for a=17/2 for example.\n\nSince `n` is a shortcut for `numerical_approx`,\nit should work with `numerical_approx` too. In addition,\nif one uses a variable `n` is a program, it would be more\nportable to use `numerical_approx`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9032\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nKeywords: beginner\n\n```\nsage: a=8\nsage: a.n()\n8.00000000000000\nsage: a.numerical_approx()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/zimmerma/<ipython console> in <module>()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2628)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2828)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2595)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'\n```\nThe same holds for a=17/2 for example.\n\nSince `n` is a shortcut for `numerical_approx`,\nit should work with `numerical_approx` too. In addition,\nif one uses a variable `n` is a program, it would be more\nportable to use `numerical_approx`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9032\n\n",
+    "closed_at": "2011-01-25T08:14:34Z",
     "created_at": "2010-05-24T09:12:23Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,6 +20,8 @@ archive/issues_009032.json:
 Assignee: @aghitza
 
 CC:  @kcrisman
+
+Keywords: beginner
 
 ```
 sage: a=8

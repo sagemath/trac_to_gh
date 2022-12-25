@@ -4,6 +4,7 @@ archive/issues_000776.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nV=VectorSpace(QQ,3)\nid=V.Hom(V)(identity_matrix(QQ,3))\nnull=V.Hom(V)(0*identity_matrix(QQ,3))\nid.kernel()\n```\nproduces\n\n```\n<type 'exceptions.TypeError'>: entries must be coercible to a list or integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/776\n\n",
+    "closed_at": "2007-10-01T21:44:35Z",
     "created_at": "2007-10-01T21:28:02Z",
     "labels": [
         "component: linear algebra",

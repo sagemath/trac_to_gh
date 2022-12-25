@@ -1,15 +1,16 @@
-# Issue 2849: Bug in elliptic curve cardinality for j=0 in char. 3
+# Issue 2849: [with patch, positive review] Bug in elliptic curve cardinality for j=0 in char. 3
 
 archive/issues_002849.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nDustin Moody reported\n\n```\n    While working on some things, I found a bug in SAGE:\n\n sage:k.<a>=GF(3^5)\n\n sage:E=EllipticCurve(k,[-1,-1])\n\n sage:E.trace_of_frobenius()\n 0\n\n This isn't correct.  It should be -27.  I also discovered you can get\naround it.\n\n sage:E.cardinality_exhaustive()\n 271\n\n sage:E.trace_of_frobenius()\n -27\n\n Somehow, doing .cardinality_exhaustive() fixes the bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2849\n\n",
+    "closed_at": "2008-04-07T22:20:12Z",
     "created_at": "2008-04-07T20:35:32Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
-    "title": "Bug in elliptic curve cardinality for j=0 in char. 3",
+    "title": "[with patch, positive review] Bug in elliptic curve cardinality for j=0 in char. 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2849",
     "user": "https://github.com/JohnCremona"

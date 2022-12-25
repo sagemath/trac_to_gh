@@ -4,6 +4,7 @@ archive/issues_001753.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nWhen trying to run install_scripts()  (i.e. installing from an RPM), the desired installation directory is /usr/bin so that when the files are installed, they are available in the $PATH. This causes problems with the kash and M2 scripts. Since in order for the install_scripts() to detect those executables they have to be in the path (usually /usr/bin also), install_scripts() will try to overwrite those files with the script version. This is a problem. A possible improvement is to install the kash and M2 scripts as sage.kash or sage.M2 if install_scripts() detects that it will be overwriting the respective executables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1753\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2008-01-10T22:19:51Z",
     "labels": [
         "component: relocation",

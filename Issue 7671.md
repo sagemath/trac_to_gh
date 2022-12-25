@@ -3,7 +3,8 @@
 archive/issues_007671.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThe function strongly_connected_components uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7671\n\n",
+    "body": "Assignee: @rlmill\n\nThe function strongly_connected_components uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nThis functions should be able to return two types of data :\n* A list of lists : as the function connected_components\n* A digraph whose vertices are [immutable Sets representing a set of vertices defining a strongly connected components] and such that there is an edge between A and B if there is an arc from one vertex of A to one vertex of B.\n\nThis because, the graph strongly connected components is acyclic, which is sometimes useful.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7671\n\n",
+    "closed_at": "2010-03-03T14:17:20Z",
     "created_at": "2009-12-12T18:13:25Z",
     "labels": [
         "component: graph theory"
@@ -18,6 +19,14 @@ archive/issues_007671.json:
 Assignee: @rlmill
 
 The function strongly_connected_components uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.
+
+This functions should be able to return two types of data :
+* A list of lists : as the function connected_components
+* A digraph whose vertices are [immutable Sets representing a set of vertices defining a strongly connected components] and such that there is an edge between A and B if there is an arc from one vertex of A to one vertex of B.
+
+This because, the graph strongly connected components is acyclic, which is sometimes useful.
+
+Nathann
 
 Issue created by migration from https://trac.sagemath.org/ticket/7671
 

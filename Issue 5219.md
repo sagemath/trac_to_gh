@@ -1,17 +1,18 @@
-# Issue 5219: Build ATLAS on dist mode with SSE2 only
+# Issue 5219: [with spkg, positive review] Build ATLAS in dist mode with SSE2 only
 
 archive/issues_005219.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nMany times the binaries cause trouble since we are building ATLAS with SSE3. So add a special flag which given the following settings\n\n* SAGE_DIST_MODE=yes\n* SAGE_DIST_MODE_ISASET=SSE2\n\nproduce an SSE2 only binary. If those flags are set we also need to make sure that sage-flags are set to sse2 only, i.e. no pni, no ssse3 or sse4_*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5219\n\n",
+    "body": "Assignee: mabshoff\n\nMany times the binaries cause trouble since we are building ATLAS with SSE3. So add a special flag which given the following setting\n\n```\nSAGE_SIMD_MODE=SSE2\n```\nproduce an SSE2 only binary. If those flags are set we also need to make sure that sage-flags are set to sse2 only, i.e. no pni, no ssse3 or sse4_*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5219\n\n",
+    "closed_at": "2009-04-18T23:23:47Z",
     "created_at": "2009-02-09T13:05:07Z",
     "labels": [
         "component: distribution",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Build ATLAS on dist mode with SSE2 only",
+    "title": "[with spkg, positive review] Build ATLAS in dist mode with SSE2 only",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5219",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -19,11 +20,11 @@ archive/issues_005219.json:
 ```
 Assignee: mabshoff
 
-Many times the binaries cause trouble since we are building ATLAS with SSE3. So add a special flag which given the following settings
+Many times the binaries cause trouble since we are building ATLAS with SSE3. So add a special flag which given the following setting
 
-* SAGE_DIST_MODE=yes
-* SAGE_DIST_MODE_ISASET=SSE2
-
+```
+SAGE_SIMD_MODE=SSE2
+```
 produce an SSE2 only binary. If those flags are set we also need to make sure that sage-flags are set to sse2 only, i.e. no pni, no ssse3 or sse4_*.
 
 Cheers,

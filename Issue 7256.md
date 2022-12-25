@@ -4,6 +4,7 @@ archive/issues_007256.json:
 ```json
 {
     "body": "Assignee: wstein\n\nKeywords: reset, notebook,sage-4.1.2\n\nIn sage-4.1.2, reset() causes problems by deleting 'sagenb' from the namespace; there may be other important things deleted as well.\n\nA simple fix might be to add 'sagenb' to the sage.misc.reset.EXCLUDE list.  But perhaps a more extensive rewrite of this function would be better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7256\n\n",
+    "closed_at": "2009-10-20T19:53:49Z",
     "created_at": "2009-10-20T19:52:35Z",
     "labels": [
         "component: notebook",

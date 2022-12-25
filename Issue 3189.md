@@ -1,16 +1,17 @@
-# Issue 3189: add 64 bit OSX build support to pycrypto
+# Issue 3189: [with spkg, positive review] add 64 bit OSX build support to pycrypto
 
 archive/issues_003189.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3189\n\n",
+    "closed_at": "2008-05-19T04:36:17Z",
     "created_at": "2008-05-13T14:23:26Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add 64 bit OSX build support to pycrypto",
+    "title": "[with spkg, positive review] add 64 bit OSX build support to pycrypto",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3189",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -3,7 +3,7 @@
 archive/issues_006629.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat vivianepons @tscrim @opechenik\n\nKeywords: multivariate polynomials, schubert polynomials, non symmetric polynomials\n\nSee: http://wiki.sagemath.org/combinat/MultivariatePolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/6629\n\n",
+    "body": "Assignee: @VivianePons\n\nCC:  sage-combinat vivianepons @tscrim @opechenik\n\nKeywords: multivariate polynomials, schubert polynomials, non symmetric polynomials, days54, fpsac2019\n\nWe build an implantation of polynomials as formal sum of exponents. This allows to work on any number of variables with some easy morphism. We use some actions of Weyl group on the exponents to create operators (especially divided difference operators). \n\nThese operators allow us to build different bases that comes from geometry and have nice combinatorial description.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6629\n\n",
     "created_at": "2009-07-26T19:55:34Z",
     "labels": [
         "component: combinatorics",
@@ -16,13 +16,15 @@ archive/issues_006629.json:
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: @mwhansen
+Assignee: @VivianePons
 
 CC:  sage-combinat vivianepons @tscrim @opechenik
 
-Keywords: multivariate polynomials, schubert polynomials, non symmetric polynomials
+Keywords: multivariate polynomials, schubert polynomials, non symmetric polynomials, days54, fpsac2019
 
-See: http://wiki.sagemath.org/combinat/MultivariatePolynomials
+We build an implantation of polynomials as formal sum of exponents. This allows to work on any number of variables with some easy morphism. We use some actions of Weyl group on the exponents to create operators (especially divided difference operators). 
+
+These operators allow us to build different bases that comes from geometry and have nice combinatorial description.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6629
 

@@ -1,32 +1,40 @@
-# Issue 2329: [with patch, needs review] add interface to Pari's rnfisnorm
+# Issue 2329: Add interface to PARI's rnfisnorm()
 
 archive/issues_002329.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @mstreng @jdemeyer\n\nThis patch adds support to solve norm equations via Pari. \n\nQuick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `False` if `x` is not a norm from `L`, and if `x` is a norm from `L`, will return an element of `L` whose norm is `x`. \n\nAccording to the Pari documentation, these functions depend on GRH when `L/K` is not known to be Galois, and work independent of any such hypothesis otherwise (at least, that's what I got from reading the Pari manual). \n\nThe data used by Pari to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2329\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @ncalexan @mstreng @jdemeyer\n\nKeywords: editor_craigcitro pari\n\nThis patch adds support to solve norm equations via PARI. \n\nQuick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `True` if and only if `x` is a norm from `L`. It is also able to return an element of `L` whose norm is `x`. \n\nThe data used by PARI to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and hopefully in a later version its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.\n\n**Dependencies**: #10677\n\n**Apply**:\n1. [attachment:trac_2329_rnfisnorm5.patch] (positive_review)\n2. [attachment:2329_reviewer.patch] (positive_review)\n3. [attachment:2329_selmer.patch] (needs_review)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2329\n\n",
+    "closed_at": "2011-03-17T19:23:55Z",
     "created_at": "2008-02-27T09:03:44Z",
     "labels": [
-        "component: number theory",
-        "minor"
+        "component: number fields",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
-    "title": "[with patch, needs review] add interface to Pari's rnfisnorm",
+    "title": "Add interface to PARI's rnfisnorm()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2329",
     "user": "https://github.com/craigcitro"
 }
 ```
-Assignee: @williamstein
+Assignee: @craigcitro
 
 CC:  @ncalexan @mstreng @jdemeyer
 
-This patch adds support to solve norm equations via Pari. 
+Keywords: editor_craigcitro pari
 
-Quick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `False` if `x` is not a norm from `L`, and if `x` is a norm from `L`, will return an element of `L` whose norm is `x`. 
+This patch adds support to solve norm equations via PARI. 
 
-According to the Pari documentation, these functions depend on GRH when `L/K` is not known to be Galois, and work independent of any such hypothesis otherwise (at least, that's what I got from reading the Pari manual). 
+Quick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `True` if and only if `x` is a norm from `L`. It is also able to return an element of `L` whose norm is `x`. 
 
-The data used by Pari to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.
+The data used by PARI to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and hopefully in a later version its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.
+
+**Dependencies**: #10677
+
+**Apply**:
+1. [attachment:trac_2329_rnfisnorm5.patch] (positive_review)
+2. [attachment:2329_reviewer.patch] (positive_review)
+3. [attachment:2329_selmer.patch] (needs_review)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2329
 

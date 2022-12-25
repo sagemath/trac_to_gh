@@ -4,6 +4,7 @@ archive/issues_000840.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI'm submitting my real root isolation algorithm for SAGE (this was the subject of my talk at SD4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/840\n\n",
+    "closed_at": "2007-10-13T05:18:48Z",
     "created_at": "2007-10-07T19:43:26Z",
     "labels": [
         "component: numerical"

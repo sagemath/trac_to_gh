@@ -1,29 +1,45 @@
-# Issue 5120: abstract class for unique representation
+# Issue 5120: [with patch, positive review] An alternative implementation of the Unique Representation design pattern
 
 archive/issues_005120.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat\n\nImplement a sage.structure.UniqueRepresentation class. \nSubclasses inherit from it a unique representation behavior for its elements.\n\nPatch under construction, starting from sage.categories.category.uniq.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5120\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: unique representation\n\nClass deriving from sage.structure.UniqueRepresentation inherit a\nunique representation behavior for their instances (and consistent\ndefault implementations of equality testing, copying, pickling, ...).\n\nSee the documentation for a brief discussion of the relative merits of\nUniqueRepresentation? and UniqueFactory?.\n\nAs a prerequisite, this patch implements sage.misc.ClasscallMetaclass,\na (trivial) metaclass for customizing class calls via a static method\nof the class.\n\nThis class is used extensively in upcoming sage-combinat patches:\n- #5879 (crystals)\n- #5891 categories\n- free modules\n- automatic monoid\n\n~500 lines of doctest for 15 lines of code\n\nIssue created by migration from https://trac.sagemath.org/ticket/5120\n\n",
+    "closed_at": "2009-05-21T00:59:10Z",
     "created_at": "2009-01-28T19:47:27Z",
     "labels": [
-        "component: misc",
-        "minor"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "abstract class for unique representation",
+    "title": "[with patch, positive review] An alternative implementation of the Unique Representation design pattern",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5120",
     "user": "https://github.com/nthiery"
 }
 ```
-Assignee: cwitty
+Assignee: @nthiery
 
 CC:  sage-combinat
 
-Implement a sage.structure.UniqueRepresentation class. 
-Subclasses inherit from it a unique representation behavior for its elements.
+Keywords: unique representation
 
-Patch under construction, starting from sage.categories.category.uniq.
+Class deriving from sage.structure.UniqueRepresentation inherit a
+unique representation behavior for their instances (and consistent
+default implementations of equality testing, copying, pickling, ...).
+
+See the documentation for a brief discussion of the relative merits of
+UniqueRepresentation? and UniqueFactory?.
+
+As a prerequisite, this patch implements sage.misc.ClasscallMetaclass,
+a (trivial) metaclass for customizing class calls via a static method
+of the class.
+
+This class is used extensively in upcoming sage-combinat patches:
+- #5879 (crystals)
+- #5891 categories
+- free modules
+- automatic monoid
+
+~500 lines of doctest for 15 lines of code
 
 Issue created by migration from https://trac.sagemath.org/ticket/5120
 

@@ -3,7 +3,8 @@
 archive/issues_007885.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @roed314 @saraedum fschulze\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7885\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @roed314 @saraedum fschulze\n\nKeywords: sd35\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7885\n\n",
+    "closed_at": "2015-09-30T21:54:50Z",
     "created_at": "2010-01-09T20:15:48Z",
     "labels": [
         "component: number theory"
@@ -18,6 +19,8 @@ archive/issues_007885.json:
 Assignee: @williamstein
 
 CC:  @roed314 @saraedum fschulze
+
+Keywords: sd35
 
 
 

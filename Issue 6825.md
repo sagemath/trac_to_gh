@@ -4,9 +4,11 @@ archive/issues_006825.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nMariah Lenox reported the following doctest failure when running the test suite:\n\n```\nsage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.1.1-x86_64-Linux-core2-fc-move/devel/sage/sage/modules/vector_real_double_dense.pyx\",\nline 72:\n   sage: v.stats_skew()\nExpected:\n   0.0\nGot:\n   doctest:106: SyntaxWarning: assertion is always true, perhaps\nremove parentheses?\n   0.0\n**********************************************************************\n1 items had failures:\n```\nBut if you run doctest again on `sage/modules/vector_real_double_dense.pyx`, the failure would disappear. This is an intermittent failure I came across while managing the release of Sage 4.1.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6825\n\n",
+    "closed_at": "2009-11-12T07:04:35Z",
     "created_at": "2009-08-25T17:18:55Z",
     "labels": [
         "component: doctest coverage",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",

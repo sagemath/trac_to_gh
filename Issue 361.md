@@ -1,21 +1,22 @@
-# Issue 361: implement tate's algorithm over number fields.
+# Issue 361: [with GPLed magma code] implement tate's algorithm over number fields.
 
 archive/issues_000361.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSee attached file.\n\n```\nFrom John Cremona:\n\nSorry I promised this a while ago.\n\nThis is essentially the file I gave to Magma in '02 or '03 which became\ntheir package/Geometry/CrvEll/minmodel.m after a bit of work by Nils\nBruin and Geoff Bailey.  From what I can tell their changes are only\ncosmetic (e.g. replacing my intrinsic with function somewhere, and also\nfiddling with the input & output parameters to make the order of terms\nconsistent with other Magma functions.\n\nApart from that I just replaced UniformizingParameter() with\nMyUniformizingParameter() as explained in the comment.\n\nYou can do what you like with this now!\n\nJohn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/361\n\n",
+    "body": "Assignee: @roed314\n\nSee attached file.\n\n```\nFrom John Cremona:\n\nSorry I promised this a while ago.\n\nThis is essentially the file I gave to Magma in '02 or '03 which became\ntheir package/Geometry/CrvEll/minmodel.m after a bit of work by Nils\nBruin and Geoff Bailey.  From what I can tell their changes are only\ncosmetic (e.g. replacing my intrinsic with function somewhere, and also\nfiddling with the input & output parameters to make the order of terms\nconsistent with other Magma functions.\n\nApart from that I just replaced UniformizingParameter() with\nMyUniformizingParameter() as explained in the comment.\n\nYou can do what you like with this now!\n\nJohn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/361\n\n",
+    "closed_at": "2008-04-07T19:41:20Z",
     "created_at": "2007-05-07T16:18:33Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "implement tate's algorithm over number fields.",
+    "title": "[with GPLed magma code] implement tate's algorithm over number fields.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/361",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @roed314
 
 See attached file.
 

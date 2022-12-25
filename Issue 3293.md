@@ -1,16 +1,17 @@
-# Issue 3293: [with patch, needs review] MPolynomialRing_generic.random_element returns tuple when degree=0
+# Issue 3293: [with patch, positive review] MPolynomialRing_generic.random_element returns tuple when degree=0
 
 archive/issues_003293.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nAttached patch changes `MPolynomialRing_generic.random_element` so that a random element from the base ring is returned when a degree 0 polynomial is requested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3293\n\n",
+    "closed_at": "2008-05-25T03:27:14Z",
     "created_at": "2008-05-24T18:00:26Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch, needs review] MPolynomialRing_generic.random_element returns tuple when degree=0",
+    "title": "[with patch, positive review] MPolynomialRing_generic.random_element returns tuple when degree=0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3293",
     "user": "https://github.com/burcin"

@@ -3,10 +3,11 @@
 archive/issues_000672.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest, complex double\n\n```\nsage -t  rings/complex_double.pyx                           **********************************************************************\nFile \"complex_double.pyx\", line 621:\n    sage: ~(0*CDF(0,1))\nExpected:\n    nan + nan*I\nGot:\n    -NaN + NaN*I\n**********************************************************************\nFile \"complex_double.pyx\", line 1470:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + 1.11022302463e-16*I\nGot:\n    2.22044604925e-16 + 2.22044604925e-16*I\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/672\n\n",
+    "body": "Assignee: failure\n\nKeywords: Solaris 10, doctest, complex double\n\n```\nsage -t  rings/complex_double.pyx                           **********************************************************************\nFile \"complex_double.pyx\", line 621:\n    sage: ~(0*CDF(0,1))\nExpected:\n    nan + nan*I\nGot:\n    -NaN + NaN*I\n**********************************************************************\nFile \"complex_double.pyx\", line 1470:\n    sage: z^2 - z + 1\nExpected:\n    2.22044604925e-16 + 1.11022302463e-16*I\nGot:\n    2.22044604925e-16 + 2.22044604925e-16*I\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/672\n\n",
+    "closed_at": "2009-04-17T10:54:06Z",
     "created_at": "2007-09-17T00:33:34Z",
     "labels": [
-        "component: packages",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
@@ -16,7 +17,7 @@ archive/issues_000672.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: failure
 
 Keywords: Solaris 10, doctest, complex double
 

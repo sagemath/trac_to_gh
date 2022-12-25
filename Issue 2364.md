@@ -1,22 +1,25 @@
-# Issue 2364: animate .show() method is poorly documented
+# Issue 2364: [with patch, positive review] animate .show() method is poorly documented
 
 archive/issues_002364.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
+    "body": "Assignee: tba\n\nKeywords: animate, documentation, doctest\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
+    "closed_at": "2008-10-30T16:20:10Z",
     "created_at": "2008-03-01T22:14:14Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "animate .show() method is poorly documented",
+    "title": "[with patch, positive review] animate .show() method is poorly documented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2364",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @williamstein
+Assignee: tba
+
+Keywords: animate, documentation, doctest
 
 It should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:
 

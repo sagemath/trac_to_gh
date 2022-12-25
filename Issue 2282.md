@@ -1,16 +1,17 @@
-# Issue 2282: [with link to spkg, needs review] readline currently not building dynamic library on Mac
+# Issue 2282: [with link to spkg, positive review] readline currently not building dynamic library on Mac
 
 archive/issues_002282.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCurrently, readline fails to build a dynamic library on Mac, and the sage installer doesn't notice this at all. Once this happens, other things (notably Pari) can't find readline, and know not to build against the system-wide fake readline (Mac ships a pseudo-readline for licensing reasons). Pari then doesn't have readline support, and is annoying to use. Luckily, there was a fix on the [FAQ](http://www.ufr-mi.u-bordeaux.fr/~belabas/pari/doc/faq.html#mac10readline:Pari), which I've added to our spkg-install for readline when we're on a Mac. \n\nSo there are really two things I've changed:\n\n* Add the fix for building readline (this involves changing `dynamic` to \n `dynamiclib` in the generated Makefile)\n* Change `-o` to `-a` in `spkg-install`: this is why we weren't noticing that\n readline failed to build.\n\nOf course, I don't know why it was `-o` instead of `-a` in the first place: if there was a good reason for that, someone should let me know and I'll change it back in the non-Mac case.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2282\n\n",
+    "closed_at": "2008-02-24T19:18:50Z",
     "created_at": "2008-02-23T22:14:53Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with link to spkg, needs review] readline currently not building dynamic library on Mac",
+    "title": "[with link to spkg, positive review] readline currently not building dynamic library on Mac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2282",
     "user": "https://github.com/craigcitro"

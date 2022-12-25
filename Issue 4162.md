@@ -4,6 +4,7 @@ archive/issues_004162.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTrac 0.11.1 is the newest stable release of trac.  Upgrading to trac 0.11 will allow us to make the ticket review process an actual process (with discrete stages and a workflow that we can send tickets through), instead of the current adhoc keyword-based method.  I'm sure there are other things that are good too.\n\nOne thing that may need to be done is to make sure that Robert's extension to display bundles works.\n\nSee the suggestions in http://groups.google.com/group/sage-devel/browse_thread/thread/d794dcc6f98c17fe/cd75d577420d1764?lnk=gst&q=needs+review+needs+more+info#cd75d577420d1764 to see if we can implement these better with the new trac.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4162\n\n",
+    "closed_at": "2009-02-21T08:38:18Z",
     "created_at": "2008-09-21T02:26:42Z",
     "labels": [
         "component: website/wiki"

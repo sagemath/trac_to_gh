@@ -4,6 +4,7 @@ archive/issues_003417.json:
 ```json
 {
     "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat\n\nKeywords: promotion; reflection\n\nI added a two new functions \npromotion and promotion_inverse\nfor rectangular tableaux.\n\nI also added a reflection operator\nfor the crystal library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3417\n\n",
+    "closed_at": "2008-06-13T18:33:29Z",
     "created_at": "2008-06-13T18:29:47Z",
     "labels": [
         "component: combinatorics",

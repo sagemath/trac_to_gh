@@ -3,11 +3,11 @@
 archive/issues_008621.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro\n\nI have added access to two new functions in lcalc wrapper.\n\ncompute_rank and hardy_z_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/8621\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro\n\nKeywords: lcalc\n\nI have added access to two new functions in lcalc wrapper.\n\ncompute_rank and hardy_z_function. This patch depends on #5396.\n\n---\nApply:\n\n* [attachment:trac8621.patch]\n* [attachment:trac8621_review_rebase.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8621\n\n",
+    "closed_at": "2014-02-03T22:59:12Z",
     "created_at": "2010-03-29T00:36:00Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "New functions in lcalc wrapper",
@@ -20,9 +20,17 @@ Assignee: @williamstein
 
 CC:  bober @JohnCremona @craigcitro
 
+Keywords: lcalc
+
 I have added access to two new functions in lcalc wrapper.
 
-compute_rank and hardy_z_function
+compute_rank and hardy_z_function. This patch depends on #5396.
+
+---
+Apply:
+
+* [attachment:trac8621.patch]
+* [attachment:trac8621_review_rebase.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8621
 

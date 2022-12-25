@@ -1,21 +1,26 @@
-# Issue 3222: sqlite -- add cygwin support to sqlite
+# Issue 3222: [with patch; positive review] sqlite -- add cygwin support to sqlite
 
 archive/issues_003222.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSee the related trac ticket #3176. \n\nThis spkg:\n\n* adds an hg repo\n* patches the Makefile.in\n* adds an SPKG.txt (but probably not as complete as some would want, since maybe already mabshoff did that for #3176!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3222\n\n",
+    "body": "Assignee: mabshoff\n\nThe new spkg:\n\n   http://sage.math.washington.edu/home/was/cygwin/sqlite-3.5.3.p2.spkg\n\nSee the related trac ticket #3176. \n\nThis spkg:\n\n* adds an hg repo\n* patches the Makefile.in\n* adds an SPKG.txt (but probably not as complete as some would want, since maybe already mabshoff did that for #3176!).\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3222\n\n",
+    "closed_at": "2008-05-18T12:43:55Z",
     "created_at": "2008-05-16T17:29:15Z",
     "labels": [
         "component: porting: cygwin"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "sqlite -- add cygwin support to sqlite",
+    "title": "[with patch; positive review] sqlite -- add cygwin support to sqlite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3222",
     "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
+
+The new spkg:
+
+   http://sage.math.washington.edu/home/was/cygwin/sqlite-3.5.3.p2.spkg
 
 See the related trac ticket #3176. 
 
@@ -24,6 +29,7 @@ This spkg:
 * adds an hg repo
 * patches the Makefile.in
 * adds an SPKG.txt (but probably not as complete as some would want, since maybe already mabshoff did that for #3176!).
+  
 
 Issue created by migration from https://trac.sagemath.org/ticket/3222
 

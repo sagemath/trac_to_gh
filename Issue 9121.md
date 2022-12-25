@@ -3,7 +3,8 @@
 archive/issues_009121.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis test now fails, since it really just compares types and as sage grows types get loaded into different places in memory:\n\n```\n            sage: Primes() < Set(QQ)\n            True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9121\n\n",
+    "body": "Assignee: tbd\n\nKeywords: Sets comparison\n\nThis test now fails in set.py:\n\n```\n            sage: Primes() < Set(QQ)\n            True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9121\n\n",
+    "closed_at": "2010-06-04T15:18:19Z",
     "created_at": "2010-06-03T03:23:06Z",
     "labels": [
         "component: doctest coverage",
@@ -19,12 +20,16 @@ archive/issues_009121.json:
 ```
 Assignee: tbd
 
-This test now fails, since it really just compares types and as sage grows types get loaded into different places in memory:
+Keywords: Sets comparison
+
+This test now fails in set.py:
 
 ```
             sage: Primes() < Set(QQ)
             True
 ```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9121
 

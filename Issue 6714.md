@@ -1,16 +1,17 @@
-# Issue 6714: spell-check all modules under sage/libs
+# Issue 6714: [with patch, positive review] spell-check all modules under sage/libs
 
 archive/issues_006714.json:
 ```json
 {
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6714\n\n",
+    "closed_at": "2009-08-14T10:41:09Z",
     "created_at": "2009-08-09T15:29:58Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "spell-check all modules under sage/libs",
+    "title": "[with patch, positive review] spell-check all modules under sage/libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6714",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

@@ -1,22 +1,23 @@
-# Issue 4049: Don't use the -i option to tar as it does not exist on most BSDs
+# Issue 4049: [with patch; positive review] Don't use the -i option to tar as it does not exist on most BSDs
 
 archive/issues_004049.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nWhile trying to compile sage under OpenBSD, the first problem I encountered was that it could not extract the spkgs because it passes the -i option to tar which is not recognized.  \n\nAfter reading the description of the meaning of that option on a linux man page:\n\n `--ignore-zeros'\n `-i'\n      With this option, `tar' will ignore zeroed blocks in the archive,\n      which normally signals EOF. \n\nAnd additional information about what is a zero block:\n\n Normally, `tar' stops reading when it encounters a block of zeros\n between file entries (which usually indicates the end of the archive).\n `--ignore-zeros' (`-i') allows `tar' to completely read an archive\n which contains a block of zeros before the end (i.e. a damaged archive,\n or one which was created by concatenating several archives together).\n\nI concluded that unless some spkgs are created by concatenating several tar archives together this option can be safely removed.\n\nIf there is a consensus to keep the option, I could always make a new patch \n\nIssue created by migration from https://trac.sagemath.org/ticket/4049\n\n",
+    "body": "Assignee: anakha\n\nWhile trying to compile sage under OpenBSD, the first problem I encountered was that it could not extract the spkgs because it passes the -i option to tar which is not recognized.  \n\nAfter reading the description of the meaning of that option on a linux man page:\n\n `--ignore-zeros'\n `-i'\n      With this option, `tar' will ignore zeroed blocks in the archive,\n      which normally signals EOF. \n\nAnd additional information about what is a zero block:\n\n Normally, `tar' stops reading when it encounters a block of zeros\n between file entries (which usually indicates the end of the archive).\n `--ignore-zeros' (`-i') allows `tar' to completely read an archive\n which contains a block of zeros before the end (i.e. a damaged archive,\n or one which was created by concatenating several archives together).\n\nI concluded that unless some spkgs are created by concatenating several tar archives together this option can be safely removed.\n\nIf there is a consensus to keep the option, I could always make a new patch \n\nIssue created by migration from https://trac.sagemath.org/ticket/4049\n\n",
+    "closed_at": "2008-09-04T00:31:38Z",
     "created_at": "2008-09-03T17:59:15Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Don't use the -i option to tar as it does not exist on most BSDs",
+    "title": "[with patch; positive review] Don't use the -i option to tar as it does not exist on most BSDs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4049",
     "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
-Assignee: cwitty
+Assignee: anakha
 
 While trying to compile sage under OpenBSD, the first problem I encountered was that it could not extract the spkgs because it passes the -i option to tar which is not recognized.  
 

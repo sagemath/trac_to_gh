@@ -1,15 +1,16 @@
-# Issue 5566: Groebner bases of Symmetric Ideals
+# Issue 5566: [with patch, positive review] Symmetric Groebner bases and Infinitely Generated Polynomial Rings
 
 archive/issues_005566.json:
 ```json
 {
-    "body": "Assignee: @simon-king-jena\n\nCC:  @mwhansen @malb\n\nThis ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.\n\n**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0502078/), meaning \"ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations\"; it was shown that they are finitely generated. \n\nLater on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. \n\nMy aim is to implement this into Sage. The patch provides classes for the Symmetric Polynomial Rings, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gr\u00f6bner bases.\n\nHere are some examples showing the main features\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\n```\n\nNow, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.\n\nWe can do polynomial arithmetic in X, and we can create ideals in the usual way:\n\n```\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\n```\n\nNow, we can compute a Gr\u00f6bner basis; the default monomial order is lexicographic (see below).\n\n```\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nWe can do ideal membership test by computing normal forms (symmetric reduction):\n\n```\nsage: I.reduce(J)\nIdeal (0, 0) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nNote that J is not point-wise symmetric. E.g., we have\n\n```\nsage: G=J.gens()\nsage: P=Permutation([1, 4, 3, 2])\nsage: G[2]\nx2^2 - x1^2\nsage: G[2]^P\nx4^2 - x1^2\nsage: G.__contains__(G[2]^P)\nFalse\n```\n\nBut it is set-wise symmetric, e.g.:\n\n```\nsage: [(p^P).reduce(J) for p in G]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\nAs usual, it is a special feature of Gr\u00f6bner bases that they produce unique normal forms. I is not a Gr\u00f6bner basis, and thus ideal membership test wouldn't work:\n\n```\nsage: [p.reduce(I) for p in G]\n\n[x1^4 + x1^3,\n x2*x1^2 - x1^3,\n x2^2 - x1^2,\n y1*x1^3 + y1*x1^2,\n y1*x2 + y1*x1^2,\n y1^2 + x1^2,\n y2*x1 + y1*x1^2]\n```\n\nNote that various monomial orders are supported: lex (default), deglex, and degrevlex. \n\nNote that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gr\u00f6bner basis depends on the ordering:\n\n```\nsage: Y.<x,y> = SymmetricPolynomialRing(QQ,order='degrevlex')\nsage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J2=I2.groebner_basis()\nsage: J2\nIdeal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nNote that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gr\u00f6bner basis:\n\n```\nsage: J.reduce(J2)\nIdeal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nIn any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).\n\nProbably the doc tests should be improved, and I think it would also be nice to overload the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We should have `(X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])`.\nAlso, it may be that there should be no coercion between X and Y in the above situation.\n\nTherefore I am uncertain whether it is 'needs review' or 'needs work'. I think I leave it as 'with patch'...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5566\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @mwhansen @malb\n\nKeywords: Symmetric Ideal\n\n*Attachments*\nPlease only use the attachment 'SymmetricIdeals.patch' and disregard the other attachments (I don't know how to delete them. It should apply to `sage-3.4.1.rc2`.\n\n**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0411514/), meaning \"ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations\"; it was shown that they are finitely generated. \n\nLater on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. \n\nMy aim is to implement this into Sage. The patch provides classes for the Polynomial Rings with countably many variables, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gr\u00f6bner bases.\n\nHere are some examples showing the main features\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\n```\n\nNow, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.\n\nWe can do polynomial arithmetic in X, and we can create ideals in the usual way:\n\n```\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\n```\n\nNow, we can compute a Gr\u00f6bner basis; the default monomial order is lexicographic (see below).\n\n```\nsage: J=I.groebner_basis()\nsage: J\n[x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2]\n```\n\nWe can do ideal membership test by computing normal forms (symmetric reduction):\n\n```\nsage: I.reduce(J)\nSymmetric Ideal (0, 0) of Infinite polynomial ring in x, y over Rational Field\n```\n\nNote that J is not point-wise symmetric. E.g., we have\n\n```\nsage: P=Permutation([1, 4, 3, 2])\nsage: J[2]\nx2^2 - x1^2\nsage: J[2]^P\nx4^2 - x1^2\nsage: J.__contains__(J[2]^P)\nFalse\n```\n\nBut it is set-wise symmetric, e.g.:\n\n```\nsage: [[(p^P).reduce(J) for p in J] for P in Permutations(4)]\n\n[[0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0],\n [0, 0, 0, 0, 0, 0, 0]]\n```\n\nAs usual, it is a special feature of Gr\u00f6bner bases that they produce unique normal forms. I is not a Gr\u00f6bner basis, and thus ideal membership test wouldn't work:\n\n```\nsage: [p.reduce(I) for p in J]\n\n[x1^4 + x1^3,\n x2*x1^2 - x1^3,\n x2^2 - x1^2,\n y1*x1^3 + y1*x1^2,\n y1*x2 + y1*x1^2,\n y1^2 + x1^2,\n y2*x1 + y1*x1^2]\n```\n\nNote that various monomial orders are supported: lex (default), deglex, and degrevlex. \n\nAschenbrenner and Hillar obtained their results using lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gr\u00f6bner basis depends on the ordering:\n\n```\nsage: Y.<x,y> = InfinitePolynomialRing(QQ,order='degrevlex')\nsage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J2=I2.groebner_basis()\nsage: J2\n[y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3]\n```\n\nNote that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J is no *degrevlex* Gr\u00f6bner basis:\n\n```\nsage: [p.reduce(J) for p in J2]\n[y3*x1 - y2*x1,\n 0,\n 0,\n 0,\n 0,\n 0,\n y2*x1^2 + y2*x1,\n y2*x2*x1 + y2*x1,\n y2*y1*x1 + x1^3,\n 0]\n```\n\nIn any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).\n\nI overloaded the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We must have \n\n```\nsage: (X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5566\n\n",
+    "closed_at": "2009-05-15T07:37:51Z",
     "created_at": "2009-03-19T15:25:02Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "Groebner bases of Symmetric Ideals",
+    "title": "[with patch, positive review] Symmetric Groebner bases and Infinitely Generated Polynomial Rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5566",
     "user": "https://github.com/simon-king-jena"
@@ -19,18 +20,21 @@ Assignee: @simon-king-jena
 
 CC:  @mwhansen @malb
 
-This ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.
+Keywords: Symmetric Ideal
 
-**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0502078/), meaning "ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations"; it was shown that they are finitely generated. 
+*Attachments*
+Please only use the attachment 'SymmetricIdeals.patch' and disregard the other attachments (I don't know how to delete them. It should apply to `sage-3.4.1.rc2`.
+
+**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0411514/), meaning "ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations"; it was shown that they are finitely generated. 
 
 Later on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. 
 
-My aim is to implement this into Sage. The patch provides classes for the Symmetric Polynomial Rings, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gröbner bases.
+My aim is to implement this into Sage. The patch provides classes for the Polynomial Rings with countably many variables, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gröbner bases.
 
 Here are some examples showing the main features
 
 ```
-sage: X.<x,y> = SymmetricPolynomialRing(QQ)
+sage: X.<x,y> = InfinitePolynomialRing(QQ)
 ```
 
 Now, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.
@@ -46,40 +50,63 @@ Now, we can compute a Gröbner basis; the default monomial order is lexicographi
 ```
 sage: J=I.groebner_basis()
 sage: J
-Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field
+[x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2]
 ```
 
 We can do ideal membership test by computing normal forms (symmetric reduction):
 
 ```
 sage: I.reduce(J)
-Ideal (0, 0) of Symmetric polynomial ring in x, y over Rational Field
+Symmetric Ideal (0, 0) of Infinite polynomial ring in x, y over Rational Field
 ```
 
 Note that J is not point-wise symmetric. E.g., we have
 
 ```
-sage: G=J.gens()
 sage: P=Permutation([1, 4, 3, 2])
-sage: G[2]
+sage: J[2]
 x2^2 - x1^2
-sage: G[2]^P
+sage: J[2]^P
 x4^2 - x1^2
-sage: G.__contains__(G[2]^P)
+sage: J.__contains__(J[2]^P)
 False
 ```
 
 But it is set-wise symmetric, e.g.:
 
 ```
-sage: [(p^P).reduce(J) for p in G]
-[0, 0, 0, 0, 0, 0, 0]
+sage: [[(p^P).reduce(J) for p in J] for P in Permutations(4)]
+
+[[0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0]]
 ```
 
 As usual, it is a special feature of Gröbner bases that they produce unique normal forms. I is not a Gröbner basis, and thus ideal membership test wouldn't work:
 
 ```
-sage: [p.reduce(I) for p in G]
+sage: [p.reduce(I) for p in J]
 
 [x1^4 + x1^3,
  x2*x1^2 - x1^3,
@@ -92,29 +119,41 @@ sage: [p.reduce(I) for p in G]
 
 Note that various monomial orders are supported: lex (default), deglex, and degrevlex. 
 
-Note that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gröbner basis depends on the ordering:
+Aschenbrenner and Hillar obtained their results using lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gröbner basis depends on the ordering:
 
 ```
-sage: Y.<x,y> = SymmetricPolynomialRing(QQ,order='degrevlex')
+sage: Y.<x,y> = InfinitePolynomialRing(QQ,order='degrevlex')
 sage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])
 sage: J2=I2.groebner_basis()
 sage: J2
-Ideal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field
+[y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3]
 ```
 
-Note that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gröbner basis:
+Note that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J is no *degrevlex* Gröbner basis:
 
 ```
-sage: J.reduce(J2)
-Ideal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field
+sage: [p.reduce(J) for p in J2]
+[y3*x1 - y2*x1,
+ 0,
+ 0,
+ 0,
+ 0,
+ 0,
+ y2*x1^2 + y2*x1,
+ y2*x2*x1 + y2*x1,
+ y2*y1*x1 + x1^3,
+ 0]
 ```
 
 In any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).
 
-Probably the doc tests should be improved, and I think it would also be nice to overload the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We should have `(X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])`.
-Also, it may be that there should be no coercion between X and Y in the above situation.
+I overloaded the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We must have 
 
-Therefore I am uncertain whether it is 'needs review' or 'needs work'. I think I leave it as 'with patch'...
+```
+sage: (X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])
+True
+```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5566
 

@@ -1,22 +1,22 @@
-# Issue 2624: parallel testing: sage -tp foo/bar/file.py is broken
+# Issue 2624: [with patch, positive review] parallel testing: sage -tp foo/bar/file.py should assume 1 thread
 
 archive/issues_002624.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nOops: \n\n```\n./sage -tp -long devel/sage/sage/plot/plot.py\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\nUsage: sage -t <files or directories>.\nFor more information, type 'sage -help'.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2624\n\n",
+    "body": "Assignee: @jhpalmieri\n\nOops: \n\n```\n./sage -tp -long devel/sage/sage/plot/plot.py\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\nUsage: sage -t <files or directories>.\nFor more information, type 'sage -help'.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2624\n\n",
+    "closed_at": "2009-09-25T06:24:27Z",
     "created_at": "2008-03-21T00:46:53Z",
     "labels": [
-        "component: doctest coverage",
-        "bug"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "parallel testing: sage -tp foo/bar/file.py is broken",
+    "title": "[with patch, positive review] parallel testing: sage -tp foo/bar/file.py should assume 1 thread",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2624",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @garyfurnish
+Assignee: @jhpalmieri
 
 Oops: 
 

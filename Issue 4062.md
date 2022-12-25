@@ -1,16 +1,17 @@
-# Issue 4062: Problems with Eisenstein series code?
+# Issue 4062: [with patch, positive review] Problems with Eisenstein series code?
 
 archive/issues_004062.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis was reported to `sage-support`:\n\n```\nHi,\n\nWhen computing Eisenstein series with a given character, Sage may\nreturn some forms with a wrong character.  The following lines show an\nexample of this:\n\nsage: G = DirichletGroup(7)\nsage: E = EisensteinForms(G[4]).eisenstein_series()\nsage: E[0].character() == G[4]\nFalse\n\nThe problem appears to be caused by the condition\n\n if chi*psi == eps:\n\nin the function __find_eisen_chars in modular/modform/eis_series.py.\nAccording to Miyake, _Modular Forms_, Lemma 7.1.1 (cited in a comment\nin this function), it should be\n\n if chi == eps*psi:\n\nAnother bug is that Sage uses an incorrect formula to compute q-\nexpansions of Eisenstein series.  Here the origin of the problem seems\nto be formula (5.3.1) in Stein, _Modular Forms: A Computational\nApproach_, where the psi(n) should be replaced by its complex\nconjugate (cf. Miyake, _Modular Forms_, Theorem 4.7.1 and the first\nthree lines of page 271).  The method __compute_general_case of the\nclass EisensteinSeries in modular/modform/element.py reproduces this\nformula in the form\n\n v.append(sum([psi(n)*chi(m/n)*n**(k-1) for n in rings.divisors(m)]))\n\nHere psi should be ~psi.\n\nThanks,\n\nPeter Bruin\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4062\n\n",
+    "closed_at": "2008-11-04T14:05:28Z",
     "created_at": "2008-09-04T15:58:27Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "Problems with Eisenstein series code?",
+    "title": "[with patch, positive review] Problems with Eisenstein series code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4062",
     "user": "https://github.com/craigcitro"

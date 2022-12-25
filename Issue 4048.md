@@ -1,16 +1,17 @@
-# Issue 4048: missing minpoly for GF(p)
+# Issue 4048: [with patch, positive review] missing minpoly for GF(p)
 
 archive/issues_004048.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNick Alexander reports in https://groups.google.com/group/sage-devel/browse_thread/thread/e5538e40d2b89002\n\n```\nsage: GF(241^2, 'a')(1).minpoly() \nx + 240 \nsage: GF(241, 'a')(1).minpoly() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call   \nlast) \n... \nAttributeError: 'sage.rings.integer_mod.IntegerMod_int' object has no   \nattribute 'minpoly' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4048\n\n",
+    "closed_at": "2009-01-24T17:13:57Z",
     "created_at": "2008-09-03T17:43:18Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "missing minpoly for GF(p)",
+    "title": "[with patch, positive review] missing minpoly for GF(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4048",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

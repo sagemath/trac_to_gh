@@ -1,9 +1,10 @@
-# Issue 5987: fix a few more bad comparison doctests
+# Issue 5987: [with patch, needs work] fix a few more bad comparison doctests
 
 archive/issues_005987.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @embray\n\nTo make up for my past mistakes, here's a simple patch that modifies or removes a few bad comparison doctests (not all of which were introduced by me).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5987\n\n",
+    "closed_at": "2019-02-26T13:58:00Z",
     "created_at": "2009-05-05T07:35:47Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005987.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "fix a few more bad comparison doctests",
+    "title": "[with patch, needs work] fix a few more bad comparison doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5987",
     "user": "https://github.com/aghitza"

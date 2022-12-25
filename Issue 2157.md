@@ -4,6 +4,7 @@ archive/issues_002157.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn reviewing #2134, it seems that we could easily (and should) phase NetworkX out of the graph plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2157\n\n",
+    "closed_at": "2009-01-25T01:48:09Z",
     "created_at": "2008-02-14T05:47:17Z",
     "labels": [
         "component: graphics",

@@ -1,9 +1,10 @@
-# Issue 4222: Building R fails due to problem with readline
+# Issue 4222: [with spkg, positive review] R fails to build when global readline headers are not present
 
 archive/issues_004222.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: R, readline, .d-files\n\nUnder GNU/Linux i686, the built of R failed, and the complaint is\n`  making sys-std.d from sys-std.c`\n`  sys-std.c:401:33: error: readline/readline.h: No such file or directory`\n`  sys-std.c:431:32: error: readline/history.h: No such file or directory`\n\nmabshoff reportedly has hit that problem before, it seems to be a bug in R when doing processing on .d files, but it isn't fixed yet.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4222\n\n",
+    "closed_at": "2008-09-30T18:17:33Z",
     "created_at": "2008-09-30T13:09:01Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004222.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Building R fails due to problem with readline",
+    "title": "[with spkg, positive review] R fails to build when global readline headers are not present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4222",
     "user": "https://github.com/simon-king-jena"

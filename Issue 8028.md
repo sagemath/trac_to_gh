@@ -3,7 +3,8 @@
 archive/issues_008028.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: ElementWrapper, partial order\n\nImprovements to element_wrapper:\n\n- Don't define __cmp__ by default to not force a total order on subclasses\n- Define __lt__ to have elements incomparable by default\n- Provide alternative implementations as _cmp_by_value, _lt_by_value\n- Update accordingly:\n  - FiniteSemigroups().example\n- Misc polishing (copyright header, whitespace, ...)\n\nThis will be used by upcoming patches for crystals, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8028\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: ElementWrapper, partial order\n\nImprovements to element_wrapper:\n\n- Do not define __cmp__ by default to not force a total order on subclasses\n- Define __lt__ to have elements incomparable by default\n- Provide alternative implementations as _cmp_by_value, _lt_by_value\n- Update accordingly:\n  - FiniteSemigroups().example(), FiniteCoxeterGroups().example()\n- Misc polishing (copyright header, whitespace, ...)\n\n\nThis will be used by upcoming patches for crystals, ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8028\n\n",
+    "closed_at": "2010-01-23T14:00:52Z",
     "created_at": "2010-01-21T17:08:34Z",
     "labels": [
         "component: combinatorics"
@@ -21,12 +22,13 @@ Keywords: ElementWrapper, partial order
 
 Improvements to element_wrapper:
 
-- Don't define __cmp__ by default to not force a total order on subclasses
+- Do not define __cmp__ by default to not force a total order on subclasses
 - Define __lt__ to have elements incomparable by default
 - Provide alternative implementations as _cmp_by_value, _lt_by_value
 - Update accordingly:
-  - FiniteSemigroups().example
+  - FiniteSemigroups().example(), FiniteCoxeterGroups().example()
 - Misc polishing (copyright header, whitespace, ...)
+
 
 This will be used by upcoming patches for crystals, ...
 

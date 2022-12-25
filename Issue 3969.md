@@ -1,16 +1,17 @@
-# Issue 3969: Matrix_mod2_dense hashs follow-up (see #3724)
+# Issue 3969: [with patch, positive review] Matrix_mod2_dense hashs follow-up (see #3724)
 
 archive/issues_003969.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nRobert wrote:\n\"\"\"\n\n```\nMatrix hashes are specifically designed to be compatible with each other: \nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3969\n\n",
+    "closed_at": "2008-09-01T12:21:05Z",
     "created_at": "2008-08-27T19:52:53Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Matrix_mod2_dense hashs follow-up (see #3724)",
+    "title": "[with patch, positive review] Matrix_mod2_dense hashs follow-up (see #3724)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3969",
     "user": "https://github.com/malb"

@@ -1,9 +1,10 @@
-# Issue 2249: [with patch; needs review] comments to indicate in docstrings that log is not finished in some cases for p-adics
+# Issue 2249: [with patch; with positive review] comments to indicate in docstrings that log is not finished in some cases for p-adics
 
 archive/issues_002249.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe point of this patch is that log isn't implemented, we need to make this release, and this patch just makes the doctests pass and clearly state that log isn't implemented in a certain case yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2249\n\n",
+    "closed_at": "2008-02-21T19:25:23Z",
     "created_at": "2008-02-21T19:19:05Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_002249.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch; needs review] comments to indicate in docstrings that log is not finished in some cases for p-adics",
+    "title": "[with patch; with positive review] comments to indicate in docstrings that log is not finished in some cases for p-adics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2249",
     "user": "https://github.com/williamstein"

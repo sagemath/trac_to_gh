@@ -1,15 +1,16 @@
-# Issue 2379: Merge sage-ptest into sage-test
+# Issue 2379: [with patch, positive reiview] Merge sage-ptest into sage-test
 
 archive/issues_002379.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nWhen stable, merge sage-ptest into sage-test. This will also give us tex file failures in the list of failures when testing.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2379\n\n",
+    "closed_at": "2008-04-08T11:02:55Z",
     "created_at": "2008-03-03T22:42:17Z",
     "labels": [
         "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "Merge sage-ptest into sage-test",
+    "title": "[with patch, positive reiview] Merge sage-ptest into sage-test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2379",
     "user": "https://github.com/garyfurnish"

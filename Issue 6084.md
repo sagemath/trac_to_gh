@@ -3,11 +3,11 @@
 archive/issues_006084.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nilesjohnson @kedlaya jpflori\n\nA reimplementation of p-adic polynomials in Cython with many different ways for handling precision.  Needed for more generic p-adic rings and fields and factoring of p-adic polynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/6084\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @nilesjohnson @kedlaya jpflori\n\nA reimplementation of p-adic polynomials in Cython with many different ways for handling precision.  Needed for more generic p-adic rings and fields and factoring of p-adic polynomials\n\nShould apply cleanly and build against sage-4.7.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6084\n\n",
+    "closed_at": "2015-08-14T07:34:21Z",
     "created_at": "2009-05-19T08:23:45Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: padics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Improved p-adic polynomials",
@@ -16,11 +16,13 @@ archive/issues_006084.json:
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: tbd
+Assignee: @roed314
 
 CC:  @nilesjohnson @kedlaya jpflori
 
 A reimplementation of p-adic polynomials in Cython with many different ways for handling precision.  Needed for more generic p-adic rings and fields and factoring of p-adic polynomials
+
+Should apply cleanly and build against sage-4.7.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6084
 

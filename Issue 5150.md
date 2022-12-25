@@ -1,9 +1,10 @@
-# Issue 5150: update Nils-Peter Skoruppa's contributions
+# Issue 5150: [with patch, positive review] update Nils-Peter Skoruppa's contributions
 
 archive/issues_005150.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  mabshoff @haraldschilly\n\nKeywords: devmap\n\nAs the subject says. The devmap entry of Nils-Peter Skoruppa as listed at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ndoesn't do justice to his contributions. Looking through #3857, notice that he has also contributed to optimizing some binary quadratic forms code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5150\n\n",
+    "closed_at": "2009-02-02T18:29:47Z",
     "created_at": "2009-02-01T12:34:08Z",
     "labels": [
         "component: website/wiki",
@@ -11,7 +12,7 @@ archive/issues_005150.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "update Nils-Peter Skoruppa's contributions",
+    "title": "[with patch, positive review] update Nils-Peter Skoruppa's contributions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5150",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

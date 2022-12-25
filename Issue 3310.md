@@ -3,11 +3,12 @@
 archive/issues_003310.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n1. Make a fresh clone of a 3.0.2 build.\n2. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx\n3. sage -b\n4. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/wrap.cc\n5. sage -b\n\n...produces this:\n\n```\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\nbut then after doing again\n\n```\ntouch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx\n```\nsage -br works fine.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3310\n\n",
+    "body": "Assignee: @williamstein\n\n\n1. Make a fresh clone of a 3.0.2 build.\n2. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx\n3. sage -b\n4. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/wrap.cc\n5. sage -b\n\n...produces this:\n\n```\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\nbut then after doing again\n\n```\ntouch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx\n```\nsage -br works fine.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3310\n\n",
+    "closed_at": "2008-11-10T08:41:26Z",
     "created_at": "2008-05-26T19:26:46Z",
     "labels": [
         "component: build",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
@@ -17,7 +18,7 @@ archive/issues_003310.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
 
 1. Make a fresh clone of a 3.0.2 build.

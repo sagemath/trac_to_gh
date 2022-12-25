@@ -1,16 +1,17 @@
-# Issue 7734: edge_coloring ( and possibly vertex_coloring ) loop forever when GLPK is not installed
+# Issue 7734: edge_coloring loops forever when GLPK is not installed
 
 archive/issues_007734.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nAs the title says... :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7734\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nAs the title says... :-)\n\nThis patch can be qualified of \"short\" :p\n\nIssue created by migration from https://trac.sagemath.org/ticket/7734\n\n",
+    "closed_at": "2009-12-19T20:13:01Z",
     "created_at": "2009-12-18T08:45:30Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "edge_coloring ( and possibly vertex_coloring ) loop forever when GLPK is not installed",
+    "title": "edge_coloring loops forever when GLPK is not installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7734",
     "user": "https://github.com/nathanncohen"
@@ -21,6 +22,8 @@ Assignee: @rlmill
 CC:  @rlmill
 
 As the title says... :-)
+
+This patch can be qualified of "short" :p
 
 Issue created by migration from https://trac.sagemath.org/ticket/7734
 

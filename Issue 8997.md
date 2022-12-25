@@ -3,10 +3,11 @@
 archive/issues_008997.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  rkirov minz oleksandrmotsak\n\nSee the file schemes/plane_curves/projective_curve.py, where it says\n\n```\n\n        The following example illustrates that the Riemann-Roch space\n        function in Singular doesn't *not* work correctly.\n        \n        ::\n        \n            sage: R.<x,y,z> = GF(5)[]\n            sage: f = x^7 + y^7 + z^7\n            sage: C = Curve(f); pts = C.rational_points()\n            sage: D = C.divisor([ (3, pts[0]), (-1,pts[1]), (10, pts[5]) ])\n            sage: C.riemann_roch_basis(D)    # output is random (!!!!)\n            [x/(y + x), (z + y)/(y + x)]\n        \n        The answer has dimension 2 (confirmed via Magma). But it varies\n        between 1 and quite large with Singular.\n```\n\nThe problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8997\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  rkirov minz oleksandrmotsak\n\nSee the file schemes/plane_curves/projective_curve.py, where it says\n\n```\n\n        The following example illustrates that the Riemann-Roch space\n        function in Singular doesn't *not* work correctly.\n        \n        ::\n        \n            sage: R.<x,y,z> = GF(5)[]\n            sage: f = x^7 + y^7 + z^7\n            sage: C = Curve(f); pts = C.rational_points()\n            sage: D = C.divisor([ (3, pts[0]), (-1,pts[1]), (10, pts[5]) ])\n            sage: C.riemann_roch_basis(D)    # output is random (!!!!)\n            [x/(y + x), (z + y)/(y + x)]\n        \n        The answer has dimension 2 (confirmed via Magma). But it varies\n        between 1 and quite large with Singular.\n```\n\nThe problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.\n\n**Apply**: [attachment:trac_8997_fix_rr_basis_and_doc.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8997\n\n",
+    "closed_at": "2011-01-19T22:19:54Z",
     "created_at": "2010-05-20T00:19:02Z",
     "labels": [
-        "component: algebra",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
@@ -41,6 +42,8 @@ See the file schemes/plane_curves/projective_curve.py, where it says
 ```
 
 The problem can be solved by learning how the relevant code in Singular works then correctly wrapping it.
+
+**Apply**: [attachment:trac_8997_fix_rr_basis_and_doc.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8997
 

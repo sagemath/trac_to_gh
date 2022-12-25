@@ -1,15 +1,16 @@
-# Issue 8494: docstring f or digits() should mention its inverse
+# Issue 8494: docstring for digits() should mention its inverse
 
 archive/issues_008494.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nOne can use the `digits()` method to go from an integer to a list of digits, but it would be nice if the docstring explained how to do the inverse:\n\n```\nZ(x.digits(base), base)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8494\n\n",
+    "body": "Assignee: mvngu\n\nOne can use the `digits()` method to go from an integer to a list of digits, but it would be nice if the docstring explained how to do the inverse:\n\n```\nZZ(x.digits(base), base)\n```\nAlso, the ZZ() docstring doesn't seem to mention that this is a way to create an integer, so we should add some documentation there, too.\n\nAlso, there's an obvious doctest that should be added, to make sure that these functions are inverses; something like:\n\n```\nx = some integer\nx == ZZ(x.digits())\nx == ZZ(x.digits(base=13), 13)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8494\n\n",
+    "closed_at": "2010-03-14T08:25:50Z",
     "created_at": "2010-03-11T05:40:42Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
-    "title": "docstring f or digits() should mention its inverse",
+    "title": "docstring for digits() should mention its inverse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8494",
     "user": "https://github.com/dandrake"
@@ -20,8 +21,19 @@ Assignee: mvngu
 One can use the `digits()` method to go from an integer to a list of digits, but it would be nice if the docstring explained how to do the inverse:
 
 ```
-Z(x.digits(base), base)
+ZZ(x.digits(base), base)
 ```
+Also, the ZZ() docstring doesn't seem to mention that this is a way to create an integer, so we should add some documentation there, too.
+
+Also, there's an obvious doctest that should be added, to make sure that these functions are inverses; something like:
+
+```
+x = some integer
+x == ZZ(x.digits())
+x == ZZ(x.digits(base=13), 13)
+```
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8494
 

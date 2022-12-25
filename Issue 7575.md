@@ -1,16 +1,17 @@
-# Issue 7575: EllipticCurve.gens: height bounds not handled well in two_descent
+# Issue 7575: mwrank interface improvements
 
 archive/issues_007575.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThe documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\nDespite:\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7575\n\n",
+    "body": "Assignee: @JohnCremona\n\nTicket TODO list:\n\n* `src/qrank/mrank1.cc` needs to be patched, as John described.\n\n* Switch all uses of mwrank from the interface to the library.\n\n* Make sure that all options to mwrank are properly used.\n\n* Make sure that all output from mwrank is available.\n\n* ...?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7575\n\n",
+    "closed_at": "2010-02-11T14:32:34Z",
     "created_at": "2009-12-01T21:56:26Z",
     "labels": [
         "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "EllipticCurve.gens: height bounds not handled well in two_descent",
+    "title": "mwrank interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7575",
     "user": "https://github.com/rlmill"
@@ -18,32 +19,17 @@ archive/issues_007575.json:
 ```
 Assignee: @JohnCremona
 
-The documentation for `EllipticCurve.gens` says:
+Ticket TODO list:
 
-```
-HINT: If you would like to control the height bounds used in the
-2-descent, first call the two_descent function with those height
-bounds. However that function, while it displays a lot of output,
-returns no values.
-```
+* `src/qrank/mrank1.cc` needs to be patched, as John described.
 
-However, this doesn't work, because `EllipticCurve.gens` doesn't know about it:
+* Switch all uses of mwrank from the interface to the library.
 
-```
-sage: x,y=var('x,y')
-sage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)
-sage: E.two_descent(second_limit=11, verbose=False)
-sage: E.gens()
-*BOOM*
-```
+* Make sure that all options to mwrank are properly used.
 
-Despite:
+* Make sure that all output from mwrank is available.
 
-```
-sage: A = E.mwrank_curve()
-sage: A.gens()
-[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]
-```
+* ...?
 
 Issue created by migration from https://trac.sagemath.org/ticket/7575
 

@@ -1,16 +1,17 @@
-# Issue 1776: symbolic function preparser bug
+# Issue 1776: [with patch, positive review] symbolic function preparser bug
 
 archive/issues_001776.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: preparse('f(x) = x')\n'_=var(\"x\");f=symbolic_expression(x).function(x)'\nsage: preparse('f(x) =+x')\n'f(x) =+x'\nsage: preparse('f(x) =-x')\n'f(x) =-x'\n```\n\nThis was found by Jason Grout, with input by Jaap Spies and John Cremona.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1776\n\n",
+    "closed_at": "2008-01-14T16:49:18Z",
     "created_at": "2008-01-14T14:14:50Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "symbolic function preparser bug",
+    "title": "[with patch, positive review] symbolic function preparser bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1776",
     "user": "https://github.com/williamstein"

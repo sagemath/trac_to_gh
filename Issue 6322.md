@@ -3,10 +3,12 @@
 archive/issues_006322.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 92:\n    sage: K.galois_group(type=\"gap\", algorithm='magma')    # optional\nExpected:\n    verbose...\n    Galois group Transitive group number 2 of degree 3 of\n    the Number Field in a with defining polynomial x^3 - 2\nGot:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 - 2\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_nf_galois_groups.py\n\t [12.4 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6322\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 92:\n    sage: K.galois_group(type=\"gap\", algorithm='magma')    # optional\nExpected:\n    verbose...\n    Galois group Transitive group number 2 of degree 3 of\n    the Number Field in a with defining polynomial x^3 - 2\nGot:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 - 2\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_nf_galois_groups.py\n [12.4 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6322\n\n",
+    "closed_at": "2015-10-18T19:11:21Z",
     "created_at": "2009-06-16T14:52:53Z",
     "labels": [
         "component: packages: optional",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.10",
@@ -34,7 +36,7 @@ Got:
    1 of   4 in __main__.example_2
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_nf_galois_groups.py
-	 [12.4 s]
+ [12.4 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6322

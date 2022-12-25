@@ -1,16 +1,17 @@
-# Issue 3136: the readme for osx should be changed to delete the line about inotebook()
+# Issue 3136: [with patch; positive review] the readme for osx should be changed to delete the line about inotebook()
 
 archive/issues_003136.json:
 ```json
 {
     "body": "Assignee: tba\n\n the readme for osx should be changed to delete the line about inotebook()\n\nIssue created by migration from https://trac.sagemath.org/ticket/3136\n\n",
+    "closed_at": "2008-05-11T09:53:28Z",
     "created_at": "2008-05-08T20:50:54Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "the readme for osx should be changed to delete the line about inotebook()",
+    "title": "[with patch; positive review] the readme for osx should be changed to delete the line about inotebook()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3136",
     "user": "https://github.com/jasongrout"

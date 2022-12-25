@@ -4,6 +4,7 @@ archive/issues_001676.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAttached patch fixes a memleak in pAdicCappedAbsoluteElement.multiplicate_order,\nand removes an unused variable in pAdicCappedAbsoluteElement.__pow__ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/1676\n\n",
+    "closed_at": "2008-01-03T22:21:03Z",
     "created_at": "2008-01-03T21:41:02Z",
     "labels": [
         "component: memleak",

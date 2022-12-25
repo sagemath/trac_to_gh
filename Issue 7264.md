@@ -3,7 +3,8 @@
 archive/issues_007264.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n```\nOn Wed, 21 Oct 2009 19:49:58 -0700 (PDT)\nIchnich <warmbau@web.de> wrote:\n\n> Hi,\n> \n> something does not work anymore in my notebook (with version 4.1.2\n> ubuntu 64bit):\n>\n> var('a,b,c,I')\n> model(I)=a*I+b\n> model_exp = exp(I)**a*(b)\n> sol1_l={b: 5.0, a: 1.1}\n> model_sol1_l(I)=model_exp.subs(sol1_l)\n> \n> The notebook hangs-up. It's critical on the parameter a, if you change\n> it to 1.0 it's o.k.\n```\n\nI can reproduce this:\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp = exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916\nSegmentation fault      sage-ipython \"$@\" -i\n```\n\nThe cause might be #6948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7264\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\n```\nOn Wed, 21 Oct 2009 19:49:58 -0700 (PDT)\nIchnich <warmbau@web.de> wrote:\n\n> Hi,\n> \n> something does not work anymore in my notebook (with version 4.1.2\n> ubuntu 64bit):\n>\n> var('a,b,c,I')\n> model(I)=a*I+b\n> model_exp = exp(I)**a*(b)\n> sol1_l={b: 5.0, a: 1.1}\n> model_sol1_l(I)=model_exp.subs(sol1_l)\n> \n> The notebook hangs-up. It's critical on the parameter a, if you change\n> it to 1.0 it's o.k.\n```\n\nI can reproduce this:\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp = exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916\nSegmentation fault      sage-ipython \"$@\" -i\n```\n\nThe cause might be #6948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7264\n\n",
+    "closed_at": "2009-12-10T14:22:03Z",
     "created_at": "2009-10-22T08:25:50Z",
     "labels": [
         "component: symbolics",
@@ -18,6 +19,8 @@ archive/issues_007264.json:
 }
 ```
 Assignee: @burcin
+
+Keywords: pynac
 
 ```
 On Wed, 21 Oct 2009 19:49:58 -0700 (PDT)

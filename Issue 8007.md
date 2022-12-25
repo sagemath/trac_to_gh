@@ -4,6 +4,7 @@ archive/issues_008007.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @williamstein boothby spancratz\n\nIn the process of looking at #3436, I noticed that generation of random number field elements was slow. I was hoping that speeding it up would make it fast enough that we could use a \"generic\" algorithm for generating matrices over cyclotomic fields. I did get a **100-150X** speedup for generating random elements of number fields, but amazingly, this **still** wasn't quite fast enough to beat the more \"quick and dirty\" approaches for cyclotomic matrices. However, I think this code is probably still worth merging.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8007\n\n",
+    "closed_at": "2010-02-17T20:43:14Z",
     "created_at": "2010-01-20T04:50:23Z",
     "labels": [
         "component: number fields",

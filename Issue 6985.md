@@ -1,22 +1,23 @@
-# Issue 6985: complex_plot needs to use fast_callable
+# Issue 6985: [with patch, positive review] complex_plot needs to use fast_callable
 
 archive/issues_006985.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nTiming differences:\n\n```\n{{{\nsage: f(x) = x^2                   \nsage: %time P = complex_plot(f, (-10, 10), (-10, 10))\nCPU times: user 1.99 s, sys: 0.00 s, total: 2.00 s\nWall time: 2.02 s\nsage: g = fast_callable(f, domain=CC, vars='x')\nsage: %time Q = complex_plot(g, (-10, 10), (-10, 10))\nCPU times: user 0.54 s, sys: 0.01 s, total: 0.55 s\nWall time: 0.57 s\nsage: h = fast_callable(f, domain=CDF, vars='x')\nsage: %time R = complex_plot(h, (-10, 10), (-10, 10))\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6985\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @kcrisman\n\nTiming differences:\n\n```\n{{{\nsage: f(x) = x^2                   \nsage: %time P = complex_plot(f, (-10, 10), (-10, 10))\nCPU times: user 1.99 s, sys: 0.00 s, total: 2.00 s\nWall time: 2.02 s\nsage: g = fast_callable(f, domain=CC, vars='x')\nsage: %time Q = complex_plot(g, (-10, 10), (-10, 10))\nCPU times: user 0.54 s, sys: 0.01 s, total: 0.55 s\nWall time: 0.57 s\nsage: h = fast_callable(f, domain=CDF, vars='x')\nsage: %time R = complex_plot(h, (-10, 10), (-10, 10))\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6985\n\n",
+    "closed_at": "2009-09-25T15:06:41Z",
     "created_at": "2009-09-22T14:32:34Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "complex_plot needs to use fast_callable",
+    "title": "[with patch, positive review] complex_plot needs to use fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6985",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  @kcrisman
 

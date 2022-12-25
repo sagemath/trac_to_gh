@@ -1,29 +1,33 @@
-# Issue 6655: Clean up and new feature in partition
+# Issue 6655: Cleanups and new features about corners and cells in partition and tableau
 
 archive/issues_006655.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: Parition\n\nI add a following new feature in partition:\na method returns a list of boxes in the arm.\nand so more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6655\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Partition cells arm legs\n\nThe main goal of the patch was to add two functions namely `arm_cells` and `leg_cells`. On the way I found several bugs or inconsistencies:\n\nWhereas the various cells methods returns the cells as tuple `(i,j)` Partition.corner used to return them as lists `[i,j]`. I changed them to return tuples. Various methods had to be fixed methods accordingly...\n\nOn the way I found that `Tableaux.slide` which uses `Partition.Corner` was modifying it's argument.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6655\n\n",
+    "closed_at": "2010-05-08T21:39:34Z",
     "created_at": "2009-07-29T14:25:13Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "Clean up and new feature in partition",
+    "title": "Cleanups and new features about corners and cells in partition and tableau",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6655",
     "user": "https://trac.sagemath.org/admin/accounts/users/numata"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat
 
-Keywords: Parition
+Keywords: Partition cells arm legs
 
-I add a following new feature in partition:
-a method returns a list of boxes in the arm.
-and so more.
+The main goal of the patch was to add two functions namely `arm_cells` and `leg_cells`. On the way I found several bugs or inconsistencies:
+
+Whereas the various cells methods returns the cells as tuple `(i,j)` Partition.corner used to return them as lists `[i,j]`. I changed them to return tuples. Various methods had to be fixed methods accordingly...
+
+On the way I found that `Tableaux.slide` which uses `Partition.Corner` was modifying it's argument.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6655
 

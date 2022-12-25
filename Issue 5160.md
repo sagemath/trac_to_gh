@@ -3,7 +3,8 @@
 archive/issues_005160.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSince #5094 is merged, I'll open this ticket.  It seems to be a worthwhile idea.  \n\nIt appears to only be used in misc/all.py and rings/polynomial/polynomial_compiled.pyx/.pxd, so need to change those in theory to pull this off.  I'm putting this under \"documentation\" component because it's really just a nomenclature holdover.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5160\n\n",
+    "body": "Assignee: tba\n\nSince #5094 is merged, I'll open this ticket.  It seems to be a worthwhile idea.  \n\nRename `sage/misc/sagex_ds.pyx` to `sage/misc/binary_tree.pyx`, which also conveys much better what this file is about.  Also fix some doctest formatting, and add the random tester.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5160\n\n",
+    "closed_at": "2012-09-28T07:46:46Z",
     "created_at": "2009-02-02T18:58:33Z",
     "labels": [
         "component: documentation",
@@ -20,7 +21,7 @@ Assignee: tba
 
 Since #5094 is merged, I'll open this ticket.  It seems to be a worthwhile idea.  
 
-It appears to only be used in misc/all.py and rings/polynomial/polynomial_compiled.pyx/.pxd, so need to change those in theory to pull this off.  I'm putting this under "documentation" component because it's really just a nomenclature holdover.
+Rename `sage/misc/sagex_ds.pyx` to `sage/misc/binary_tree.pyx`, which also conveys much better what this file is about.  Also fix some doctest formatting, and add the random tester.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5160
 

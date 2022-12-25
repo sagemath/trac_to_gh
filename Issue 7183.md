@@ -1,17 +1,18 @@
-# Issue 7183: HP-UX issue: Evert package "date: bad format character - s
+# Issue 7183: HP-UX issue: Every package "date: bad format character - s
 
 archive/issues_007183.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne\n\nI assume this is in one of the files that gets called for every single .spkg. It appears 'date -s' is not portable\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7183\n\n",
+    "closed_at": "2015-09-12T14:05:56Z",
     "created_at": "2009-10-10T10:32:35Z",
     "labels": [
-        "component: build",
+        "component: porting: aix or hp-ux",
         "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "HP-UX issue: Evert package \"date: bad format character - s",
+    "title": "HP-UX issue: Every package \"date: bad format character - s",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7183",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"

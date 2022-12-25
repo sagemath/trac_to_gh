@@ -1,9 +1,10 @@
-# Issue 5298: hg_sage.apply($URL) broken due to swith to trac 0.11.3
+# Issue 5298: [with patch, positive review] hg_sage.apply($URL) broken due to swith to trac 0.11.3
 
 archive/issues_005298.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe new trac install unlike the old one does not require to append `?format=raw` to download a patch, hence the functionality is broken.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5298\n\n",
+    "closed_at": "2009-02-18T00:25:51Z",
     "created_at": "2009-02-17T23:33:25Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_005298.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "hg_sage.apply($URL) broken due to swith to trac 0.11.3",
+    "title": "[with patch, positive review] hg_sage.apply($URL) broken due to swith to trac 0.11.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5298",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

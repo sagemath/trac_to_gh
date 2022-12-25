@@ -1,16 +1,17 @@
-# Issue 4471: name worksheet when creating a new worksheet
+# Issue 4471: [with patch; needs work] name worksheet when creating a new worksheet
 
 archive/issues_004471.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIt would be better, I think, to have the worksheet named when it is created. Right now it is given the name 'untitled' and one needs to click on the title or select 'rename' from the menu. This ends up in a lot of worksheets being left named 'untitled'.\n\nSo please change so that the user is given a naming window when creating a new worksheet which can default to 'untitled' if the user doesn't enter a name.\n\nWilliam agrees that this would be a good idea.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4471\n\n",
+    "closed_at": "2009-11-03T21:03:14Z",
     "created_at": "2008-11-08T21:36:12Z",
     "labels": [
         "component: notebook",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
-    "title": "name worksheet when creating a new worksheet",
+    "title": "[with patch; needs work] name worksheet when creating a new worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4471",
     "user": "https://trac.sagemath.org/admin/accounts/users/mrubinst"

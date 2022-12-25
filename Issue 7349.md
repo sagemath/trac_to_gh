@@ -4,6 +4,7 @@ archive/issues_007349.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nThe fixes from #6848 have not been included in `sagenb.misc.sageinspect`. This ports them to SageNB\n\nIssue created by migration from https://trac.sagemath.org/ticket/7349\n\n",
+    "closed_at": "2009-11-11T19:51:43Z",
     "created_at": "2009-10-29T15:26:22Z",
     "labels": [
         "component: notebook",

@@ -1,16 +1,17 @@
-# Issue 3501: [with patch, needs review] charpoly of zero matrix over a cyclotomic field fails
+# Issue 3501: [with patch, with positive review] charpoly of zero matrix over a cyclotomic field fails
 
 archive/issues_003501.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis is broken:\n\n```\nsage: Matrix(CyclotomicField(13),3).charpoly()\n```\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3501\n\n",
+    "closed_at": "2008-06-25T01:09:23Z",
     "created_at": "2008-06-24T07:51:07Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "[with patch, needs review] charpoly of zero matrix over a cyclotomic field fails",
+    "title": "[with patch, with positive review] charpoly of zero matrix over a cyclotomic field fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3501",
     "user": "https://github.com/craigcitro"

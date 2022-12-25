@@ -1,9 +1,10 @@
-# Issue 5694: [with patch; needs review] _ for previous output is completely broken in the notebook due to the preparser
+# Issue 5694: [with patch; positive review] _ for previous output is completely broken in the notebook due to the preparser
 
 archive/issues_005694.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn the notebook we have the following confusing bug, which caused a lot of trouble during my last Sage tutorial:\n\n```\nsage: 2 + 3\n5\nsage: _\n5\nsage: f(x,y) = x+y\nsage: 2 + 10\n12\nsage: _\n(x, y)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5694\n\n",
+    "closed_at": "2009-04-06T23:10:31Z",
     "created_at": "2009-04-06T18:05:33Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_005694.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch; needs review] _ for previous output is completely broken in the notebook due to the preparser",
+    "title": "[with patch; positive review] _ for previous output is completely broken in the notebook due to the preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5694",
     "user": "https://github.com/williamstein"

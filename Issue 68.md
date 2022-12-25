@@ -3,10 +3,11 @@
 archive/issues_000068.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/68\n\n",
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/68\n\n",
+    "closed_at": "2008-01-27T12:50:28Z",
     "created_at": "2006-09-17T21:49:47Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
@@ -16,7 +17,7 @@ archive/issues_000068.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: boothby
 
 
 

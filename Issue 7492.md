@@ -1,15 +1,16 @@
-# Issue 7492: Decomposition of a doubly stochastic matrix as a convex sum of permutations
+# Issue 7492: Decomposition of a doubly stochastic matrix as a convex sum of permutations (Birkhoff–von Neumann Theorem)
 
 archive/issues_007492.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nAs the title says, there is a theorem saying that any doubly stochastic matrix ( http://en.wikipedia.org/wiki/Doubly_stochastic_matrix ) can be written as a convex sum of permutations.\n\nA proof and an algorithm can be found in this book : http://www.thi.informatik.uni-frankfurt.de/~jukna/EC_Book/\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7492\n\n",
+    "body": "Assignee: @mwhansen\n\nAs the title says, the Birkhoff\u2013von Neumann Theorem (http://en.wikipedia.org/wiki/Birkhoff%E2%80%93von_Neumann_Theorem) says that any doubly stochastic matrix ( http://en.wikipedia.org/wiki/Doubly_stochastic_matrix ) can be written as a convex sum of permutations.\n\nThis patch requires several other patches to be applied first ( or merged into Sage ) :\n\n* #8364\n* #8166 (non-optional matching function !)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7492\n\n",
+    "closed_at": "2010-06-05T22:41:10Z",
     "created_at": "2009-11-19T09:50:11Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Decomposition of a doubly stochastic matrix as a convex sum of permutations",
+    "title": "Decomposition of a doubly stochastic matrix as a convex sum of permutations (Birkhoff\u2013von Neumann Theorem)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7492",
     "user": "https://github.com/nathanncohen"
@@ -17,9 +18,12 @@ archive/issues_007492.json:
 ```
 Assignee: @mwhansen
 
-As the title says, there is a theorem saying that any doubly stochastic matrix ( http://en.wikipedia.org/wiki/Doubly_stochastic_matrix ) can be written as a convex sum of permutations.
+As the title says, the Birkhoff–von Neumann Theorem (http://en.wikipedia.org/wiki/Birkhoff%E2%80%93von_Neumann_Theorem) says that any doubly stochastic matrix ( http://en.wikipedia.org/wiki/Doubly_stochastic_matrix ) can be written as a convex sum of permutations.
 
-A proof and an algorithm can be found in this book : http://www.thi.informatik.uni-frankfurt.de/~jukna/EC_Book/
+This patch requires several other patches to be applied first ( or merged into Sage ) :
+
+* #8364
+* #8166 (non-optional matching function !)
 
 Nathann
 

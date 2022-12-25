@@ -3,7 +3,8 @@
 archive/issues_007594.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAs the title say, implement a LP formulation of the Dominating set problem ( and the independent vertsion of it )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7594\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title say, implement a LP formulation of the Dominating set problem ( and the independent vertsion of it )\n\n\nYou could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7594\n\n",
+    "closed_at": "2009-12-19T21:14:12Z",
     "created_at": "2009-12-03T14:55:14Z",
     "labels": [
         "component: graph theory"
@@ -18,6 +19,9 @@ archive/issues_007594.json:
 Assignee: @rlmill
 
 As the title say, implement a LP formulation of the Dominating set problem ( and the independent vertsion of it )
+
+
+You could be in need of #7270 and GLPK from http://sagemath.org/packages/optional/glpk-4.38.p4.spkg depending on the version of Sage you are using !!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/7594
 

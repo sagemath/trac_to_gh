@@ -1,15 +1,16 @@
-# Issue 6768: [with patch, needs review] Basis of a Hecke algebra
+# Issue 6768: [with patch, positive review] Basis of a Hecke algebra
 
 archive/issues_006768.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nKeywords: hecke, basis\n\nAdded new code for the basis of a Hecke algebra as a free module over the integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6768\n\n",
+    "closed_at": "2009-08-26T22:14:59Z",
     "created_at": "2009-08-17T01:13:11Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Basis of a Hecke algebra",
+    "title": "[with patch, positive review] Basis of a Hecke algebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6768",
     "user": "https://trac.sagemath.org/admin/accounts/users/wakep"

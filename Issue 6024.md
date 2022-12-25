@@ -1,9 +1,10 @@
-# Issue 6024: ecl->clisp switch
+# Issue 6024: [with spkg, positive review] clisp-->ecl switch
 
 archive/issues_006024.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis is required for gcc 4.4.0, Solaris and so on.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6024\n\n",
+    "closed_at": "2009-05-16T00:27:14Z",
     "created_at": "2009-05-12T06:11:52Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_006024.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "ecl->clisp switch",
+    "title": "[with spkg, positive review] clisp-->ecl switch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6024",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

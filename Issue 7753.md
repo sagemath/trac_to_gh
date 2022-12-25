@@ -3,7 +3,8 @@
 archive/issues_007753.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Bruhat order, Weak order\n\nNew methods:\n- bruhat_le (code inspired from code by Daniel Bump)\n- weak_le\n- bruhat_poset (finite Coxeter groups)\n- weak_poset   (finite Coxeter groups)\n\nImproved doctests for related methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/7753\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Bruhat order, Weak order\n\nNew methods:\n- bruhat_le (code inspired from code by Daniel Bump)\n- weak_le\n- bruhat_poset (finite Coxeter groups)\n- weak_poset   (finite Coxeter groups)\n\nImproved doctests for related methods\n\n(Trivially) depends on #7842\n\nIssue created by migration from https://trac.sagemath.org/ticket/7753\n\n",
+    "closed_at": "2010-01-13T09:45:58Z",
     "created_at": "2009-12-23T22:55:34Z",
     "labels": [
         "component: combinatorics"
@@ -28,6 +29,8 @@ New methods:
 - weak_poset   (finite Coxeter groups)
 
 Improved doctests for related methods
+
+(Trivially) depends on #7842
 
 Issue created by migration from https://trac.sagemath.org/ticket/7753
 

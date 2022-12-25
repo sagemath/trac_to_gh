@@ -3,7 +3,8 @@
 archive/issues_003277.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @mezzarobba @EmmanuelCharpentier\n\none should be able to do something like\n\n```\nwith assumptions(x<0):\n    ...\n```\n\nwhere assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3277\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @mezzarobba @EmmanuelCharpentier\n\nKeywords: assume\n\none should be able to do something like\n\n```\nwith assumptions(x<0):\n    ...\n```\n\nwhere assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3277\n\n",
+    "closed_at": "2020-08-22T07:10:24Z",
     "created_at": "2008-05-23T08:15:57Z",
     "labels": [
         "component: calculus"
@@ -18,6 +19,8 @@ archive/issues_003277.json:
 Assignee: @garyfurnish
 
 CC:  @mezzarobba @EmmanuelCharpentier
+
+Keywords: assume
 
 one should be able to do something like
 

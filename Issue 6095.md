@@ -1,15 +1,15 @@
-# Issue 6095: implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)
+# Issue 6095: [with patch; needs work] implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)
 
 archive/issues_006095.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\ninteresting because almost digits of e.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6095\n\n",
+    "body": "Assignee: @mwhansen\n\ninteresting because almost digits of e (and on a t-shirt).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6095\n\n",
     "created_at": "2009-05-20T21:20:44Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)",
+    "title": "[with patch; needs work] implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6095",
     "user": "https://github.com/williamstein"
@@ -17,7 +17,7 @@ archive/issues_006095.json:
 ```
 Assignee: @mwhansen
 
-interesting because almost digits of e.
+interesting because almost digits of e (and on a t-shirt).
 
 Issue created by migration from https://trac.sagemath.org/ticket/6095
 

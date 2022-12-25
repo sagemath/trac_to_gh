@@ -1,9 +1,10 @@
-# Issue 5428: Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst
+# Issue 5428: [with patch, positive review] Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst
 
 archive/issues_005428.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nJohn Palmieri reported this first in sage-3.4.alpha. I is still here\nin rc0:\n\n\n```\nFile \"/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\", line 25:\n    sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\nExpected:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,\n     -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\nGot:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_0\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5428\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nJohn Palmieri reported this in sage-3.4.alpha. I is still here in rc0:\n\n```\nFile \"/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\", line 25:\n     sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\nExpected:\n     (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,\n      -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\nGot:\n     (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n**********************************************************************\n1 items had failures:\n    1 of   7 in __main__.example_0\n\n```\n\n\n\nIn sage-3.3 we have:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.3, Release Date: 2009-02-21                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\n (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n```\n\n\nversus\n\n```\n(3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\n```\nin sage-3.4.xxx\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5428\n\n",
+    "closed_at": "2009-03-08T07:12:51Z",
     "created_at": "2009-03-03T13:01:22Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005428.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst",
+    "title": "[with patch, positive review] Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5428",
     "user": "https://github.com/jaapspies"
@@ -21,26 +22,45 @@ Assignee: mabshoff
 
 CC:  georgsweber @williamstein
 
-John Palmieri reported this first in sage-3.4.alpha. I is still here
-in rc0:
-
+John Palmieri reported this in sage-3.4.alpha. I is still here in rc0:
 
 ```
 File "/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst", line 25:
-    sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
+     sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
 Expected:
-    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,
-     -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)
+     (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,
+      -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)
 Got:
-    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)
+     (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)
 **********************************************************************
 1 items had failures:
-   1 of   7 in __main__.example_0
+    1 of   7 in __main__.example_0
 
 ```
 
 
+
+In sage-3.3 we have:
+
+```
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+| Sage Version 3.3, Release Date: 2009-02-21                         |
+| Type notebook() for the GUI, and license() for information.        |
+sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
+ (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)
+```
+
+
+versus
+
+```
+(3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)
+```
+in sage-3.4.xxx
+
 Jaap
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5428
 

@@ -1,15 +1,16 @@
-# Issue 6115: make symbolic matrices use pynac symbolics
+# Issue 6115: [with patch, positive review] make symbolic matrices use pynac symbolics
 
 archive/issues_006115.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently, it looks like the symbolic matrix code in `matrix/matrix_symbolic_dense.pyx` goes to maxima for everything.  This makes things **slow** and, at least in 3.4.2, it was easy to crash Maxima by calculating a 6x6 determinant, for example.\n\nHere is an example of how the current general algorithms in Sage can speed things up (even before making the matrix be stored in Sage instead of Maxima).\n\n```\nsage: var('x00,x01,x10,x11')\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n10 loops, best of 3: 218 ms per loop\n```\n\nI went into matrix/matrix_symbolic_dense.pyx and just commented out the determinant routine.  This way, it uses the generic determinant routine for matrices.  Note that we still have to get values from maxima for this, but the multiplication and things are done in pynac.\n\nGeneric determinant algorithm:\n\n```\nsage: var('x00,x01,x10,x11')\n(x00, x01, x10, x11)\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n100000 loops, best of 3: 5.85 \u00b5s per loop\nsage: %timeit a.det()\n100000 loops, best of 3: 6.15 \u00b5s per loop\n```\n\nSo, the generic Sage code with pynac took about 3% of the time it took to call maxima and ask it for the determinant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6115\n\n",
+    "closed_at": "2009-05-28T06:04:44Z",
     "created_at": "2009-05-21T18:39:36Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "make symbolic matrices use pynac symbolics",
+    "title": "[with patch, positive review] make symbolic matrices use pynac symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6115",
     "user": "https://github.com/jasongrout"

@@ -1,16 +1,18 @@
-# Issue 3360: Upgarde sympow to the 1.019 release
+# Issue 3360: Upgrade sympow to 2.023.6 (for GCC 10 support)
 
 archive/issues_003360.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @slel @timokau @saraedum @isuruf @antonio-rojas @orlitzky @embray @dimpase @tscrim\n\nSympow 1.019 is already upstream in Debian, so let's upgrade.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3360\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @slel @timokau @saraedum @isuruf @antonio-rojas @orlitzky @embray @dimpase @tscrim\n\nKeywords: upgrade, sympow\n\nFork now maintained by the debian sympow maintainer (gh-jgmbenoit).\n\nhttps://gitlab.com/rezozer/forks/sympow\n\nUpstream URL: see checksums.ini\n\nSee also:\n- #25856 Elliptic curve failures in 8.3.rc0: sympow issue\n\nIssue created by migration from https://trac.sagemath.org/ticket/3360\n\n",
+    "closed_at": "2020-08-07T19:05:26Z",
     "created_at": "2008-06-04T15:51:07Z",
     "labels": [
         "component: packages: standard",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.2",
-    "title": "Upgarde sympow to the 1.019 release",
+    "title": "Upgrade sympow to 2.023.6 (for GCC 10 support)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3360",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -20,11 +22,16 @@ Assignee: mabshoff
 
 CC:  @slel @timokau @saraedum @isuruf @antonio-rojas @orlitzky @embray @dimpase @tscrim
 
-Sympow 1.019 is already upstream in Debian, so let's upgrade.
+Keywords: upgrade, sympow
 
-Cheers,
+Fork now maintained by the debian sympow maintainer (gh-jgmbenoit).
 
-Michael
+https://gitlab.com/rezozer/forks/sympow
+
+Upstream URL: see checksums.ini
+
+See also:
+- #25856 Elliptic curve failures in 8.3.rc0: sympow issue
 
 Issue created by migration from https://trac.sagemath.org/ticket/3360
 

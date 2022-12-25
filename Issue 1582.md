@@ -4,6 +4,7 @@ archive/issues_001582.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nJaap reported:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph.py\n**********************************************************************\nFile \"graph.py\", line 4150:\n     sage: E[1][0]\nExpected:\n     Vector space of degree 5 and dimension 1 over Real Double Field\n     User basis matrix:\n     [ 0.632455532034 -0.632455532034   -0.4472135955 -0.013900198608 0.0738411279702]\nGot:\n     Vector space of degree 5 and dimension 1 over Real Double Field\n     User basis matrix:\n     [  0.632455532034  -0.632455532034    -0.4472135955   0.047561829961 -0.0797092534371]\n********************************************************************** \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1582\n\n",
+    "closed_at": "2007-12-21T22:13:42Z",
     "created_at": "2007-12-21T12:27:52Z",
     "labels": [
         "component: doctest coverage",

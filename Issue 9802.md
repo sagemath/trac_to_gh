@@ -3,7 +3,8 @@
 archive/issues_009802.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  bwonderly @mwhansen @wdjoyner @jasongrout\n\nThis will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).\n\nIt will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9820.\n\nSee #9720 for motivating discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9803\n\n",
+    "body": "Assignee: jason, was\n\nCC:  bwonderly @mwhansen @wdjoyner @jasongrout\n\nThis will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).\n\nIt will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9802.\n\nSee #9720 for motivating discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9803\n\n",
+    "closed_at": "2010-09-15T09:52:57Z",
     "created_at": "2010-08-26T00:27:48Z",
     "labels": [
         "component: linear algebra"
@@ -21,7 +22,7 @@ CC:  bwonderly @mwhansen @wdjoyner @jasongrout
 
 This will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).
 
-It will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9820.
+It will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9802.
 
 See #9720 for motivating discussion.
 

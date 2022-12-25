@@ -1,9 +1,10 @@
-# Issue 6209: fix flint
+# Issue 6209: [with spkg, with positive review] fix flint
 
 archive/issues_006209.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nin fmpz.c change\n\n#include \"zn_poly/zn_poly.h\"\n\nto\n\n#include \"zn_poly/src/zn_poly.h\"\n\nAlso, in the FLINT makefile\n\n-DNEBUG -> -DNDEBUG\n\nin a couple of places. David Harvey found these.\n\nThese will fix the issues you note. The next version of FLINT due at\nthe end of June will have these fixes.\n\n -- Bill Hart\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6209\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nin fmpz.c change\n\n#include \"zn_poly/zn_poly.h\"\n\nto\n\n#include \"zn_poly/src/zn_poly.h\"\n\nAlso, in the FLINT makefile\n\n-DNEBUG -> -DNDEBUG\n\nin a couple of places. David Harvey found these.\n\nThese will fix the issues you note. The next version of FLINT due at\nthe end of June will have these fixes.\n\n -- Bill Hart\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6209\n\n",
+    "closed_at": "2009-06-04T19:39:59Z",
     "created_at": "2009-06-04T17:02:22Z",
     "labels": [
         "component: build",
@@ -11,13 +12,13 @@ archive/issues_006209.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "fix flint",
+    "title": "[with spkg, with positive review] fix flint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6209",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tbd
+Assignee: @mwhansen
 
 ```
 in fmpz.c change

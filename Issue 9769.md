@@ -3,7 +3,8 @@
 archive/issues_009769.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nIn the following list `l`, some elements repeat quite often:\n\n```\nsage: l = [ SphericalDistribution(dimension=2).get_random_element() for _ in range(1000)]\nsage: uniq = []\nsage: for x in l:\n    if x not in uniq:\n        uniq.append(x)\n....:\nsage: len(uniq)\n34\n```\n\nThe output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output.\tIt works fine if SphericalDistribution is only instantiated once!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9770\n\n",
+    "body": "Assignee: amhou\n\nIn the following list `l`, some elements repeat quite often:\n\n```\nsage: l = [ SphericalDistribution(dimension=2).get_random_element() for _ in range(1000)]\nsage: uniq = []\nsage: for x in l:\n    if x not in uniq:\n        uniq.append(x)\n....:\nsage: len(uniq)\n34\n```\n\nThe output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output. It works fine if SphericalDistribution is only instantiated once!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9770\n\n",
+    "closed_at": "2012-03-21T22:03:58Z",
     "created_at": "2010-08-20T10:50:32Z",
     "labels": [
         "component: statistics",
@@ -31,7 +32,7 @@ sage: len(uniq)
 34
 ```
 
-The output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output.	It works fine if SphericalDistribution is only instantiated once!
+The output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output. It works fine if SphericalDistribution is only instantiated once!
 
 Issue created by migration from https://trac.sagemath.org/ticket/9770
 

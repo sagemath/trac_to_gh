@@ -1,15 +1,16 @@
-# Issue 1971: notebook/jsmath -- make an optional spkg with the image fonts
+# Issue 1971: [with patch, with positive review] notebook/jsmath -- make an optional spkg with the image fonts
 
 archive/issues_001971.json:
 ```json
 {
     "body": "Assignee: boothby\n\nFrom the jsmath author:\n\n```\nThe real solution is, of course, to install the jsMath TeX fonts and\navoid the whole issue.  For a private installation (like I expect most\nsage installations are), where you are the only person looking at the\nweb pages that use jsMath, it is reasonable not to install the image\nfonts because once you have the jsMath TeX fonts, there is no need for\nanything else.  On the other hand, if you are hosting a public site,\nwhere you don't know whether your reader has installed the fonts or\nnot, then you have to decide whether it is worth the space in order to\ngive those users a better view of the mathematics on your site.  My\nown feeling is that the image fonts are so much superior to the\nunicode results that it is worth it to me (because I know that most\npeople won't install the TeX fonts, so image-font mode turns out to be\nthe primary mode used by most viewers).  While I would like a method\nwith a smaller footprint on the server, I haven't found one that is as\nreliable and maintainable as the image fonts.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1971\n\n",
+    "closed_at": "2008-02-16T14:27:37Z",
     "created_at": "2008-01-29T12:21:42Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "notebook/jsmath -- make an optional spkg with the image fonts",
+    "title": "[with patch, with positive review] notebook/jsmath -- make an optional spkg with the image fonts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1971",
     "user": "https://github.com/williamstein"

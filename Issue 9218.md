@@ -3,7 +3,8 @@
 archive/issues_009218.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9218\n\n",
+    "body": "Assignee: mvngu\n\nThis is a dependency for #9219.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9218\n\n",
+    "closed_at": "2010-07-21T09:56:17Z",
     "created_at": "2010-06-11T18:19:19Z",
     "labels": [
         "component: documentation"
@@ -17,7 +18,7 @@ archive/issues_009218.json:
 ```
 Assignee: mvngu
 
-
+This is a dependency for #9219.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9218
 

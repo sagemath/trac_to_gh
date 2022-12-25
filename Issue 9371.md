@@ -4,6 +4,7 @@ archive/issues_009371.json:
 ```json
 {
     "body": "Assignee: weigandt\n\nCC:  @JohnCremona\n\nKeywords: elliptic curves, two torsion rank\n\nThe function E.two_torsion_rank() can easily be made to work over number fields. The current implementation over QQ calls E.torsion_subgroup() and makes nontrivial use of Mazur's torsion theorem. This should be more efficient and more general by considering the 2-division polynomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9371\n\n",
+    "closed_at": "2011-04-12T08:04:54Z",
     "created_at": "2010-06-29T04:12:52Z",
     "labels": [
         "component: elliptic curves"

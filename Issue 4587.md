@@ -1,15 +1,16 @@
-# Issue 4587: [with patch, needs review] Installation of the latest version of a package
+# Issue 4587: [with patch, positive review] Installation of the latest version of a package
 
 archive/issues_004587.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: installing package latest version\n\nWilliam wrote at http://groups.google.com/group/sage-devel/browse_thread/thread/de91554d761c5f1b?hl=en\n\n''I think nobody every implemented a \"install latest version of package foo\" \nyet for Sage.  That's been on the todo list for *years*. ''\n\nIt is not difficult to implement, using the existing functtions from sage.misc.package, namely `install_package` and `optional_package` etc.\n\nI implemented a function `install_latest_version` in `package.py` and included it in `all.py`.\n\nNow, one can install the optional pil-1.1.6 package with\n\n```\nsage: install_latest_version('pi')\n```\nRepeating the command yields the Traceback\n\n```\nValueError                                Traceback (most recent call last)\n...\nValueError: There is no uninstalled package whose name starts with 'pi'.\n```\nForced re-installation is then possible with\n\n```\nsage: install_latest_version('pi',forced=True)\n```\n\nIf there is no possible package name extension, a Traceback results. There is also a Traceback if the extension is not unique. In that case, before raising the error, a list of all possible extensions is shown.\n\n```\nsage: install_latest_version('p',forced=True)\nPossible packages are:\n  palp-1.1.p1\n  pari-2.3.3.p0\n  pexpect-2.0.p1\n  polybori-0.5rc.p5\n  polytopes_db-20080430\n  pycrypto-2.0.1.p2\n  pygments-0.11.1\n  pynac-0.1.1\n  pyprocessing-0.52\n  python-2.5.2.p8\n  python_gnutls-1.1.4.p3\n  pil-1.1.6\n...\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\nOr should this function not raise an error?\n\nUnfortunately I have no idea how to have a non-destructive doc-test. Certainly it'd not be acceptable to have a doc-test installing something.\n\n\nUnfortunately, I have no idea how a non-destructive doc-test may look like. Certainly it would hardly be acceptable to have a doc-test that installs something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4587\n\n",
+    "closed_at": "2008-11-29T04:19:42Z",
     "created_at": "2008-11-23T01:01:01Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] Installation of the latest version of a package",
+    "title": "[with patch, positive review] Installation of the latest version of a package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4587",
     "user": "https://github.com/simon-king-jena"

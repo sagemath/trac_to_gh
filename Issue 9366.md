@@ -3,7 +3,8 @@
 archive/issues_009366.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @malb\n\nthe input was badly checked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9366\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @malb\n\nthe input size was badly checked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9366\n\n",
+    "closed_at": "2010-07-20T10:05:06Z",
     "created_at": "2010-06-28T21:40:43Z",
     "labels": [
         "component: cryptography",
@@ -20,7 +21,7 @@ Assignee: mvngu
 
 CC:  @malb
 
-the input was badly checked.
+the input size was badly checked.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9366
 

@@ -4,6 +4,7 @@ archive/issues_008221.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThere used to be blank space (via CSS) at the bottom of the notebook that would prevent interacts from jumping when updated.  See  #4963 for the CSS code that was used and the reason for it.  In 4.3.2, it seems that the blank space was removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8221\n\n",
+    "closed_at": "2010-03-09T05:10:02Z",
     "created_at": "2010-02-09T15:45:41Z",
     "labels": [
         "component: notebook",

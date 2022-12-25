@@ -4,6 +4,7 @@ archive/issues_009110.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nTypo in EllipticCurve.change_weierstrass_model() documentation. See patch that will be attached shortly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9110\n\n",
+    "closed_at": "2010-07-21T10:08:21Z",
     "created_at": "2010-06-01T19:17:23Z",
     "labels": [
         "component: documentation",

@@ -1,16 +1,18 @@
-# Issue 9821: Cookies are still causing problems in SageNB (Safari)
+# Issue 9821: Sage only examines the last cookie for a username
 
 archive/issues_009821.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @kcrisman @qed777 boothby\n\nc.f. http://groups.google.com/group/sage-support/msg/2fd79e5ccfceb728 and http://groups.google.com/group/sage-support/msg/10a3d906b6a0e675\n\nIssue created by migration from https://trac.sagemath.org/ticket/9822\n\n",
+    "closed_at": "2010-10-04T01:34:54Z",
     "created_at": "2010-08-27T15:29:01Z",
     "labels": [
         "component: notebook",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Cookies are still causing problems in SageNB (Safari)",
+    "title": "Sage only examines the last cookie for a username",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9821",
     "user": "https://github.com/TimDumol"

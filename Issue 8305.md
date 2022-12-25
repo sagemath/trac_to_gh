@@ -3,7 +3,8 @@
 archive/issues_008305.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  jpflori\n\nKeywords: Monsky-Washnitzer, elliptic curves, hyperelliptic curves\n\nThe code in schemes/elliptic_curves/monsky_washnitzer.py largely dates from a time (early 2007) before Sage documentation and doctesting standards had been codified. As a result, its coverage is terrible (26 of 107).\n\nIt may also be worth a mild refactor: since it now applies more generally to hyperelliptic curves, it probably should be under schemes/hyperelliptic_curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8305\n\n",
+    "body": "Assignee: @kedlaya\n\nCC:  jpflori\n\nKeywords: Monsky-Washnitzer, elliptic curves, hyperelliptic curves\n\nThe code in schemes/elliptic_curves/monsky_washnitzer.py largely dates from a time (early 2007) before Sage documentation and doctesting standards had been codified. As a result, its coverage is terrible (26 of 107).\n\nIt may also be worth a mild refactor: since it now applies more generally to hyperelliptic curves, it probably should be under schemes/hyperelliptic_curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8305\n\n",
+    "closed_at": "2014-01-10T07:29:50Z",
     "created_at": "2010-02-19T03:34:22Z",
     "labels": [
         "component: elliptic curves",
@@ -16,7 +17,7 @@ archive/issues_008305.json:
     "user": "https://github.com/kedlaya"
 }
 ```
-Assignee: @JohnCremona
+Assignee: @kedlaya
 
 CC:  jpflori
 

@@ -4,6 +4,7 @@ archive/issues_007643.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nCC:  @ncalexan\n\n```\nsage: K.<a> = QuadraticField(-5)\nsage: L.<b> = QuadraticField(-47)\nsage: K.composite_fields(L, names='c')\n[]\nsage: K.<a> = NumberField(x^2 + 5)\nsage: L.<b> = NumberField(x^2 + 47)\nsage: K.composite_fields(L, names='c')\n[Number Field in c0 with defining polynomial x^4 + 104*x^2 + 1764]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7643\n\n",
+    "closed_at": "2010-04-29T05:10:19Z",
     "created_at": "2009-12-09T20:12:28Z",
     "labels": [
         "component: number fields",

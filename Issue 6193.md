@@ -1,16 +1,17 @@
-# Issue 6193: [with patch, needs review] implement elliptic logarithm
+# Issue 6193: [with patch, positive review] implement elliptic logarithm
 
 archive/issues_006193.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nDepends on #6021.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6193\n\n",
+    "closed_at": "2009-06-13T20:41:52Z",
     "created_at": "2009-06-03T06:58:06Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] implement elliptic logarithm",
+    "title": "[with patch, positive review] implement elliptic logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6193",
     "user": "https://github.com/robertwb"

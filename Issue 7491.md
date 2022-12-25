@@ -4,6 +4,7 @@ archive/issues_007491.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\nsage: solve([x==x],x)\n```\ngives an exception.\n\nMaxima says this:\n\n```\n$ maxima -q\n(%i1) solve([x=x],x);\n(%o1)                                 all\n(%i2) \n```\n\nThere is a short [discussion](http://groups.google.cz/group/sage-devel/browse_thread/thread/ce3a256a9102c7fc) about this topic. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7491\n\n",
+    "closed_at": "2009-12-14T16:45:44Z",
     "created_at": "2009-11-19T07:36:11Z",
     "labels": [
         "component: symbolics",

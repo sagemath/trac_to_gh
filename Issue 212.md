@@ -4,6 +4,7 @@ archive/issues_000212.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: m = MatrixSpace(RDF,1000).random_element()\nsage: time n=m.numpy('f')\nCPU time: 2.97 s,  Wall time: 3.00 s\nsage: import numpy\nsage: time k=numpy.dot(n,n)\nCPU time: 0.20 s,  Wall time: 0.11 s\nsage: time z=m*m\nCPU time: 3.69 s,  Wall time: 3.79 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/212\n\n",
+    "closed_at": "2008-02-23T03:09:55Z",
     "created_at": "2007-01-24T02:25:08Z",
     "labels": [
         "component: linear algebra"

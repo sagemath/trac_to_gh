@@ -1,16 +1,17 @@
-# Issue 2499: cython -- issues with cython-ing on the fly (fix one instance of lame code; also fix a bug)
+# Issue 2499: [with patch; positive review] cython -- issues with cython-ing on the fly (fix one instance of lame code; also fix a bug)
 
 archive/issues_002499.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe attached patch (1) cleans up some ugly code, and (2) Fixes a bug that occurs on some NFS mounted filesystems.  \n\nThe (2) uses except: since I don't know the exact exception that occurs.  This could be fixed later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2499\n\n",
+    "closed_at": "2008-03-14T17:13:59Z",
     "created_at": "2008-03-12T16:25:55Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "cython -- issues with cython-ing on the fly (fix one instance of lame code; also fix a bug)",
+    "title": "[with patch; positive review] cython -- issues with cython-ing on the fly (fix one instance of lame code; also fix a bug)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2499",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 6766: faster powers of factorizations
+# Issue 6766: [with patch, positive review] faster powers of factorizations
 
 archive/issues_006766.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nThe patch provides a much faster method for computing powers of commutative factorizations.  This implements a suggestion made by John Cremona in #5188. \nThe speed-up is most marked for factorizations of ideals in number fields.\nBefore:\n\n```\nsage: f = NumberField(x^2 + 23, 'a').factor(47)\nsage: timeit('f^10')\n5 loops, best of 3: 134 ms per loop\n```\nAfter:\n\n```\nsage: f = NumberField(x^2 + 23, 'a').factor(47)\nsage: timeit('f^10')\n625 loops, best of 3: 571 \u00b5s per loop\n```\n\nIn addition, five redundant lines have been removed from the `__init__` function of the `Factorization` class.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6766\n\n",
+    "closed_at": "2009-08-25T04:44:10Z",
     "created_at": "2009-08-16T21:08:14Z",
     "labels": [
         "component: algebra",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "faster powers of factorizations",
+    "title": "[with patch, positive review] faster powers of factorizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6766",
     "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"

@@ -1,9 +1,10 @@
-# Issue 893: 2.8.7-alpha0: doctest failure in const.tex
+# Issue 893: [with-patch] 2.8.7-alpha0: doctest failure in const.tex
 
 archive/issues_000893.json:
 ```json
 {
     "body": "Assignee: tba\n\nThere are three failures, but the last two are direct consequences of the first one:\n\n```\nFile \"const.py\", line 749:\n    sage: vals = E.Lseries_values_along_line(1-I, 1+10*I, 100) # critical line\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in\n __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[1]>\", line 1, in <module>\n        vals = E.Lseries_values_along_line(Integer(1)-I, Integer(1)+Integer(10)*\nI, Integer(100)) # critical line###line 749:\n    sage: vals = E.Lseries_values_along_line(1-I, 1+10*I, 100) # critical line\n    AttributeError: 'EllipticCurve_rational_field' object has no attribute 'Lser\nies_values_along_line'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/893\n\n",
+    "closed_at": "2007-10-14T22:54:12Z",
     "created_at": "2007-10-13T20:51:36Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_000893.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "2.8.7-alpha0: doctest failure in const.tex",
+    "title": "[with-patch] 2.8.7-alpha0: doctest failure in const.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/893",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

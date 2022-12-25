@@ -3,7 +3,8 @@
 archive/issues_009690.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @haraldschilly\n\nThe Developer's Guide should distinguish between the following Sage packages: standard, optional, and experimental. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85f94526238f6e6a/) thread for a start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9690\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @haraldschilly\n\nThe Developer's Guide should distinguish between the following Sage packages: standard, optional, and experimental. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85f94526238f6e6a/) thread for a start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9690\n\n",
+    "closed_at": "2015-09-25T08:07:50Z",
     "created_at": "2010-08-05T09:18:16Z",
     "labels": [
         "component: documentation"
@@ -15,7 +16,7 @@ archive/issues_009690.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: mvngu
+Assignee: drkirkby
 
 CC:  @haraldschilly
 

@@ -4,6 +4,7 @@ archive/issues_008176.json:
 ```json
 {
     "body": "Assignee: drkirkby\n\nSetting SAGE64=yes is only working on Darwin. To make it work on Open Solaris and possibly on other platforms a small edit of spkg-install is needed.\n\nA patch is coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8176\n\n",
+    "closed_at": "2010-02-11T15:17:22Z",
     "created_at": "2010-02-03T18:01:21Z",
     "labels": [
         "component: porting",

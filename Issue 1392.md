@@ -4,6 +4,7 @@ archive/issues_001392.json:
 ```json
 {
     "body": "Assignee: somebody\n\nfactors of factorizations weren't fully sorted -- they were only sorted based on the degree and exponent, but not the actual irreducible factor.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1392\n\n",
+    "closed_at": "2007-12-04T07:19:23Z",
     "created_at": "2007-12-04T04:54:43Z",
     "labels": [
         "component: basic arithmetic",

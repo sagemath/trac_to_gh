@@ -1,16 +1,16 @@
-# Issue 7660: arithmetic with inequalities confusing
+# Issue 7660: arithmetic with equations and inequalities confusing
 
 archive/issues_007660.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/951d510c814f894f\n\n\nArithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:\n\n```\nOn Thu, 10 Dec 2009 00:37:10 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> sage: f = x + 3 < y - 2\n> sage: f*(-1)\n> -x - 3 < -y + 2\n```\n\nIt seems MMA doesn't apply any automatic simplification in this case:\n\n```\nOn Thu, 10 Dec 2009 09:54:36 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Mathematica does something weird and formal:\n> \n> In[1]:= f := x+3 < y-2;\n> In[3]:= f*(-1)\n> Out[3]= -(3 + x < -2 + y)\n```\n\nMaple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:\n\n```\nOn Thu, 10 Dec 2009 14:15:53 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Here is what Maple does:\n> \n> flat:release_notes wstein$ maple\n>     |\\^/|     Maple 13 (APPLE UNIVERSAL OSX)\n> ._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple\n> Inc. 2009 \\  MAPLE  /  All rights reserved. Maple is a trademark of\n>  <____ ____>  Waterloo Maple Inc.\n>       |       Type ? for help.\n> > f := x < y;  \n>                                   f := x < y\n> \n> > f*(-3);  \n>                                   -3 y < -3 x\n> \n> > f*z;  \n>                                   *(x < y, z)\n> \n> > f*a;  \n>                                   *(x < y, a)\n```\n\n\nWe should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.\n\nNote that GiNaC leaves everything formal, like MMA, by default:\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.3)\n  __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> f= x < y;\nx<y\n> f*-1;\n-(x<y)\n> f*-5;\n-5*(x<y)\n> f*-z;\n-z*(x<y)\n> f*z;\nz*(x<y)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7660\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: inequality, solver, maxima\n\nEquations and relations should behave like this:\nequations:\n* `(a==b) +-*/ c` same as:\n  - `(a==b).add_to_both_sides(c)`\n  - `(a==b).subtract_from_both_sides(c)`\n  - `(a==b).multiply_both_sides(c)`\n  - `(a==b).divide_both_sides(c)`\n  - `False` if `*/0`\n* `(a==b)^c` --> `a^c == b^c`\n* `f(a==b)` --> `f(a)==f(b)`\nrelations:\n* `(a<b) +- c` same as:\n  - `(a<b).add_to_both_sides(c)`\n  - `(a<b).subtract_from_both_sides(c)`\n* `(a<b) */ c` same as:\n  - `a*/c > b*/c` for `c` real and negative, or if `c` is assumed negative\n  - `a*/c < b*/c` for `c` real and positive, or if `c` is assumed positive\n  - `False` if `c=0` or assumed zero\n  - if `c` contains variables (and no assumptions exist about it) raise `ArithmeticError: missing assumption: is ...>0?`\n  - if `c` contains no variables `ArithmeticError: multiplication of inequality with irreal`\n* `(a<b)^c` --> `(a<b)^c`\n* `f(a<b)`  --> `f(a<b)`\n\nOriginal description:\n\nFrom the following sage-devel thread: \n\n\nhttp://groups.google.com/group/sage-devel/t/951d510c814f894f \n\n\n \nArithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example: \n\n\n``` \nOn Thu, 10 Dec 2009 00:37:10 -0800 (PST) \n     \"marik@mendelu.cz\" <marik@mendelu.cz> wrote: \n      \n     > sage: f = x + 3 < y - 2 \n     > sage: f*(-1) \n     > -x - 3 < -y + 2 \n     }}} \n      \n     It seems MMA doesn't apply any automatic simplification in this case: \n      \n     {{{ \n     On Thu, 10 Dec 2009 09:54:36 -0800 \n     William Stein <wstein@gmail.com> wrote: \n      \n     > Mathematica does something weird and formal: \n     >  \n     > In[1]:= f := x+3 < y-2; \n     > In[3]:= f*(-1) \n     > Out[3]= -(3 + x < -2 + y) \n     }}} \n      \n     Maple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO: \n      \n     {{{ \n     On Thu, 10 Dec 2009 14:15:53 -0800 \n     William Stein <wstein@gmail.com> wrote: \n      \n     > Here is what Maple does: \n     >  \n     > flat:release_notes wstein$ maple \n     >     |\\^/|     Maple 13 (APPLE UNIVERSAL OSX) \n     > ._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple \n     > Inc. 2009 \\  MAPLE  /  All rights reserved. Maple is a trademark of \n     >  <____ ____>  Waterloo Maple Inc. \n     >       |       Type ? for help. \n     > > f := x < y;   \n     >                                   f := x < y \n     >  \n     > > f*(-3);   \n     >                                   -3 y < -3 x \n     >  \n     > > f*z;   \n     >                                   *(x < y, z) \n     >  \n     > > f*a;   \n     >                                   *(x < y, a) \n     }}} \n      \n      \n     We should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative. \n      \n     Note that GiNaC leaves everything formal, like MMA, by default: \n      \n     {{{ \n     ginsh - GiNaC Interactive Shell (ginac V1.5.3) \n       __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz, \n      (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY. \n       ._) i N a C | You are welcome to redistribute it under certain conditions. \n     <-------------' For details type `warranty;'. \n      \n     Type ?? for a list of help topics. \n     > f= x < y; \n     x<y \n     > f*-1; \n     -(x<y) \n     > f*-5; \n     -5*(x<y) \n     > f*-z; \n     -z*(x<y) \n     > f*z; \n     z*(x<y) \n     }}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7660\n\n",
     "created_at": "2009-12-11T13:55:02Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
-    "title": "arithmetic with inequalities confusing",
+    "title": "arithmetic with equations and inequalities confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7660",
     "user": "https://github.com/burcin"
@@ -20,86 +20,117 @@ Assignee: @burcin
 
 CC:  @kcrisman
 
-From the following sage-devel thread:
+Keywords: inequality, solver, maxima
 
-http://groups.google.com/group/sage-devel/t/951d510c814f894f
+Equations and relations should behave like this:
+equations:
+* `(a==b) +-*/ c` same as:
+  - `(a==b).add_to_both_sides(c)`
+  - `(a==b).subtract_from_both_sides(c)`
+  - `(a==b).multiply_both_sides(c)`
+  - `(a==b).divide_both_sides(c)`
+  - `False` if `*/0`
+* `(a==b)^c` --> `a^c == b^c`
+* `f(a==b)` --> `f(a)==f(b)`
+relations:
+* `(a<b) +- c` same as:
+  - `(a<b).add_to_both_sides(c)`
+  - `(a<b).subtract_from_both_sides(c)`
+* `(a<b) */ c` same as:
+  - `a*/c > b*/c` for `c` real and negative, or if `c` is assumed negative
+  - `a*/c < b*/c` for `c` real and positive, or if `c` is assumed positive
+  - `False` if `c=0` or assumed zero
+  - if `c` contains variables (and no assumptions exist about it) raise `ArithmeticError: missing assumption: is ...>0?`
+  - if `c` contains no variables `ArithmeticError: multiplication of inequality with irreal`
+* `(a<b)^c` --> `(a<b)^c`
+* `f(a<b)`  --> `f(a<b)`
 
+Original description:
 
-Arithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:
-
-```
-On Thu, 10 Dec 2009 00:37:10 -0800 (PST)
-"marik@mendelu.cz" <marik@mendelu.cz> wrote:
-
-> sage: f = x + 3 < y - 2
-> sage: f*(-1)
-> -x - 3 < -y + 2
-```
-
-It seems MMA doesn't apply any automatic simplification in this case:
-
-```
-On Thu, 10 Dec 2009 09:54:36 -0800
-William Stein <wstein@gmail.com> wrote:
-
-> Mathematica does something weird and formal:
-> 
-> In[1]:= f := x+3 < y-2;
-> In[3]:= f*(-1)
-> Out[3]= -(3 + x < -2 + y)
-```
-
-Maple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:
-
-```
-On Thu, 10 Dec 2009 14:15:53 -0800
-William Stein <wstein@gmail.com> wrote:
-
-> Here is what Maple does:
-> 
-> flat:release_notes wstein$ maple
->     |\^/|     Maple 13 (APPLE UNIVERSAL OSX)
-> ._|\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple
-> Inc. 2009 \  MAPLE  /  All rights reserved. Maple is a trademark of
->  <____ ____>  Waterloo Maple Inc.
->       |       Type ? for help.
-> > f := x < y;  
->                                   f := x < y
-> 
-> > f*(-3);  
->                                   -3 y < -3 x
-> 
-> > f*z;  
->                                   *(x < y, z)
-> 
-> > f*a;  
->                                   *(x < y, a)
-```
+From the following sage-devel thread: 
 
 
-We should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.
+http://groups.google.com/group/sage-devel/t/951d510c814f894f 
 
-Note that GiNaC leaves everything formal, like MMA, by default:
 
-```
-ginsh - GiNaC Interactive Shell (ginac V1.5.3)
-  __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz,
- (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.
-  ._) i N a C | You are welcome to redistribute it under certain conditions.
-<-------------' For details type `warranty;'.
+ 
+Arithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example: 
 
-Type ?? for a list of help topics.
-> f= x < y;
-x<y
-> f*-1;
--(x<y)
-> f*-5;
--5*(x<y)
-> f*-z;
--z*(x<y)
-> f*z;
-z*(x<y)
-```
+
+``` 
+On Thu, 10 Dec 2009 00:37:10 -0800 (PST) 
+     "marik@mendelu.cz" <marik@mendelu.cz> wrote: 
+      
+     > sage: f = x + 3 < y - 2 
+     > sage: f*(-1) 
+     > -x - 3 < -y + 2 
+     }}} 
+      
+     It seems MMA doesn't apply any automatic simplification in this case: 
+      
+     {{{ 
+     On Thu, 10 Dec 2009 09:54:36 -0800 
+     William Stein <wstein@gmail.com> wrote: 
+      
+     > Mathematica does something weird and formal: 
+     >  
+     > In[1]:= f := x+3 < y-2; 
+     > In[3]:= f*(-1) 
+     > Out[3]= -(3 + x < -2 + y) 
+     }}} 
+      
+     Maple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO: 
+      
+     {{{ 
+     On Thu, 10 Dec 2009 14:15:53 -0800 
+     William Stein <wstein@gmail.com> wrote: 
+      
+     > Here is what Maple does: 
+     >  
+     > flat:release_notes wstein$ maple 
+     >     |\^/|     Maple 13 (APPLE UNIVERSAL OSX) 
+     > ._|\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple 
+     > Inc. 2009 \  MAPLE  /  All rights reserved. Maple is a trademark of 
+     >  <____ ____>  Waterloo Maple Inc. 
+     >       |       Type ? for help. 
+     > > f := x < y;   
+     >                                   f := x < y 
+     >  
+     > > f*(-3);   
+     >                                   -3 y < -3 x 
+     >  
+     > > f*z;   
+     >                                   *(x < y, z) 
+     >  
+     > > f*a;   
+     >                                   *(x < y, a) 
+     }}} 
+      
+      
+     We should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative. 
+      
+     Note that GiNaC leaves everything formal, like MMA, by default: 
+      
+     {{{ 
+     ginsh - GiNaC Interactive Shell (ginac V1.5.3) 
+       __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz, 
+      (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY. 
+       ._) i N a C | You are welcome to redistribute it under certain conditions. 
+     <-------------' For details type `warranty;'. 
+      
+     Type ?? for a list of help topics. 
+     > f= x < y; 
+     x<y 
+     > f*-1; 
+     -(x<y) 
+     > f*-5; 
+     -5*(x<y) 
+     > f*-z; 
+     -z*(x<y) 
+     > f*z; 
+     z*(x<y) 
+     }}}
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7660
 

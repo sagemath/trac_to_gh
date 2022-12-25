@@ -1,25 +1,26 @@
-# Issue 622: SAGE's factor function is not provably correct
+# Issue 622: SAGE's factor function is not probably correct
 
 archive/issues_000622.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIn short, modify the factor function in SAGE to test primality with isprime of\nall factors < 10**15.  The best place to put this is libs/pari/gen.pyx, by\nmodifying the isprime function there to have an extra proof flag that defaults\nto True. \n\n```\nOn 9/7/07, Bill Hart <goodwillhart@googlemail.com> wrote:\n>\n\n>\n> Are there other algorithms available in SAGE from Pari that rely on\n> conjectures? This would include the stuff for totally real fields that\n> relies on the Stark conjectures.\n\nmwrank uses the pari library for factorization of integers, so the\ncorrectness of mwrank funtions (and in particular, elliptic curve\nranks) relies on pari giving actual prime numbers when asked to\nfactor.\n\nThe pari manual says (about factor(x)):\n\nIf $x$ is of type integer or rational, the factors are \\var{pseudoprimes}\n(see \\kbd{ispseudoprime}), and in general not rigorously proven primes. In\nfact, any factor which is $\\leq 10^{15}$ is a genuine prime number. Use\n\\kbd{isprime} to prove primality of other factors,\n\nI would need to change the mwrank code to test \"primes\" > 10^15 for\nprimality as recommended.   A better solution would be to ask the pari\ndevelopers to add an optional \"proof=true\" flag to factor() which does\nthe isprime() calls automatically.  I will do that.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/622\n\n",
+    "body": "Assignee: @williamstein\n\nIn short, modify the factor function in SAGE to test primality with isprime of\nall factors > 10**15.  The best place to put this is libs/pari/gen.pyx, by\nmodifying the isprime function there to have an extra proof flag that defaults\nto True. \n\n```\nOn 9/7/07, Bill Hart <goodwillhart@googlemail.com> wrote:\n>\n\n>\n> Are there other algorithms available in SAGE from Pari that rely on\n> conjectures? This would include the stuff for totally real fields that\n> relies on the Stark conjectures.\n\nmwrank uses the pari library for factorization of integers, so the\ncorrectness of mwrank funtions (and in particular, elliptic curve\nranks) relies on pari giving actual prime numbers when asked to\nfactor.\n\nThe pari manual says (about factor(x)):\n\nIf $x$ is of type integer or rational, the factors are \\var{pseudoprimes}\n(see \\kbd{ispseudoprime}), and in general not rigorously proven primes. In\nfact, any factor which is $\\leq 10^{15}$ is a genuine prime number. Use\n\\kbd{isprime} to prove primality of other factors,\n\nI would need to change the mwrank code to test \"primes\" > 10^15 for\nprimality as recommended.   A better solution would be to ask the pari\ndevelopers to add an optional \"proof=true\" flag to factor() which does\nthe isprime() calls automatically.  I will do that.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/622\n\n",
+    "closed_at": "2007-09-12T18:32:59Z",
     "created_at": "2007-09-07T17:25:19Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
-    "title": "SAGE's factor function is not provably correct",
+    "title": "SAGE's factor function is not probably correct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/622",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 In short, modify the factor function in SAGE to test primality with isprime of
-all factors < 10**15.  The best place to put this is libs/pari/gen.pyx, by
+all factors > 10**15.  The best place to put this is libs/pari/gen.pyx, by
 modifying the isprime function there to have an extra proof flag that defaults
 to True. 
 

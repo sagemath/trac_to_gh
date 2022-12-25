@@ -1,15 +1,16 @@
-# Issue 5308: Removing __len__ for combinatorial classes
+# Issue 5308: [with patch, positive review] Removing __len__ for combinatorial classes (depend on #5200,#4549)
 
 archive/issues_005308.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: __len__, count, combinatorial class\n\nAfter some discussion on sage-combinat-devel, it was decided that __len__ should no be used to get the size of a combinatorial class because. Indeed the specifications of __len__ says that it has to return a plain python int, whereas we want to deal with huge and even infinite sets. Unfortunately due to __len__ being called by list / filter / map and maybe some other functions, it is not possible to issue a warning. So it was decided to simply remove it and issue an error, telling to call .count() instead. \n\nSome part of combinat has to be fixed accordingly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5308\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: __len__, count, combinatorial class\n\nAfter some discussion on sage-combinat-devel, it was decided that `__len__` should no be used to get the size of a combinatorial class. Indeed the specifications of `__len__` says that it has to return a plain python int, whereas we want to deal with huge and even infinite sets. Unfortunately due to `__len__` being called by `list / filter / map` and maybe some other functions, it is not possible to issue a warning. So it was decided to simply remove it and issue an error, telling to call `.cardinality()` instead. The former usage of `.count()` is also deprecated.\n\nCombinat has to be adapted to this and also to the deprecation of `iterator` in favor of `__iter__`\n\nI'm preparing a patch to solve those issues. \n\nCheers,\n\nFlorent\n \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5308\n\n",
+    "closed_at": "2009-04-05T23:52:59Z",
     "created_at": "2009-02-18T19:04:08Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Removing __len__ for combinatorial classes",
+    "title": "[with patch, positive review] Removing __len__ for combinatorial classes (depend on #5200,#4549)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5308",
     "user": "https://github.com/hivert"
@@ -21,9 +22,17 @@ CC:  sage-combinat
 
 Keywords: __len__, count, combinatorial class
 
-After some discussion on sage-combinat-devel, it was decided that __len__ should no be used to get the size of a combinatorial class because. Indeed the specifications of __len__ says that it has to return a plain python int, whereas we want to deal with huge and even infinite sets. Unfortunately due to __len__ being called by list / filter / map and maybe some other functions, it is not possible to issue a warning. So it was decided to simply remove it and issue an error, telling to call .count() instead. 
+After some discussion on sage-combinat-devel, it was decided that `__len__` should no be used to get the size of a combinatorial class. Indeed the specifications of `__len__` says that it has to return a plain python int, whereas we want to deal with huge and even infinite sets. Unfortunately due to `__len__` being called by `list / filter / map` and maybe some other functions, it is not possible to issue a warning. So it was decided to simply remove it and issue an error, telling to call `.cardinality()` instead. The former usage of `.count()` is also deprecated.
 
-Some part of combinat has to be fixed accordingly.
+Combinat has to be adapted to this and also to the deprecation of `iterator` in favor of `__iter__`
+
+I'm preparing a patch to solve those issues. 
+
+Cheers,
+
+Florent
+ 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5308
 

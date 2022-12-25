@@ -4,6 +4,7 @@ archive/issues_001075.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attached patch provides a custom __hash__ function for fraction field elements so that fractions with a denominator of 1 hash the same as the hash of the numerator as an element in the ring.  A charming side effect is that __hash__ is *much* faster now for fraction field elements of MPoly's over QQ.\n\nThis fixes some bugs (IMO) in the subs method of ParentWithGens when passing a dictionary.\n\nI don't think there is any problems with hash's changing from one version to the next -- I guess there might be something I'm missing here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1075\n\n",
+    "closed_at": "2007-11-15T22:08:44Z",
     "created_at": "2007-11-03T12:42:09Z",
     "labels": [
         "component: basic arithmetic",

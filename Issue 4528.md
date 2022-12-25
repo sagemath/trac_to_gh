@@ -1,9 +1,10 @@
-# Issue 4528: [with patch, needs review] Implement Krull dimension for orders in number fields
+# Issue 4528: [with patch, with positive review] Implement Krull dimension for orders in number fields
 
 archive/issues_004528.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: number fields, orders\n\nThis is a triviality, but I noticed it while doing something else. All order in number fields have Krull dimension 1, but this was not implemented -- not even for the maximal order.  Now it is.\n\nPatch based on 3.2.rc1, touches rings/ring.pyx and rings/number_field/order.py\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4528\n\n",
+    "closed_at": "2008-11-21T11:26:11Z",
     "created_at": "2008-11-15T16:56:35Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_004528.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with patch, needs review] Implement Krull dimension for orders in number fields",
+    "title": "[with patch, with positive review] Implement Krull dimension for orders in number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4528",
     "user": "https://github.com/JohnCremona"

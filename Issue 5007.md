@@ -1,22 +1,23 @@
-# Issue 5007: [with patch, needs review] sage-native-execute uses bashism
+# Issue 5007: [with patch, with positive review] sage-native-execute uses bashism
 
 archive/issues_005007.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5007\n\n",
+    "body": "Assignee: mabshoff\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5007\n\n",
+    "closed_at": "2009-01-18T14:03:57Z",
     "created_at": "2009-01-18T06:11:30Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] sage-native-execute uses bashism",
+    "title": "[with patch, with positive review] sage-native-execute uses bashism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5007",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: cwitty
+Assignee: mabshoff
 
 Patch coming up.
 

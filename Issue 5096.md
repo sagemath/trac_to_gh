@@ -1,15 +1,16 @@
-# Issue 5096: implement beautiful printing support for pynac
+# Issue 5096: [with patch and spkg, positive review] pynac interface enhancements
 
 archive/issues_005096.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5096\n\n",
+    "closed_at": "2009-02-02T17:20:02Z",
     "created_at": "2009-01-25T08:14:36Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "implement beautiful printing support for pynac",
+    "title": "[with patch and spkg, positive review] pynac interface enhancements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5096",
     "user": "https://github.com/williamstein"

@@ -1,9 +1,10 @@
-# Issue 5927: [with patch; needs review] singular prompt problem on solaris sparc
+# Issue 5927: [with patch; positive review] singular prompt problem on solaris sparc
 
 archive/issues_005927.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCredit to William Stein, Mike Hansen, and Michael Abshoff?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5927\n\n",
+    "body": "Assignee: @mwhansen\n\nCredit to William Stein, Mike Hansen, and Michael Abshoff?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5927\n\n",
+    "closed_at": "2009-05-22T13:17:37Z",
     "created_at": "2009-04-29T01:36:52Z",
     "labels": [
         "component: porting",
@@ -11,13 +12,13 @@ archive/issues_005927.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] singular prompt problem on solaris sparc",
+    "title": "[with patch; positive review] singular prompt problem on solaris sparc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5927",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @mwhansen
 
 Credit to William Stein, Mike Hansen, and Michael Abshoff?
 

@@ -1,21 +1,22 @@
-# Issue 837: RealNumber should have abs method
+# Issue 837: [with patch] RealNumber should have abs method
 
 archive/issues_000837.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis violates the principle of least surprise, at least for me:\n\n```\nsage: x = -2.0\nsage: x.abs()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'abs'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/837\n\n",
+    "body": "Assignee: cwitty\n\nThis violates the principle of least surprise, at least for me:\n\n```\nsage: x = -2.0\nsage: x.abs()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'abs'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/837\n\n",
+    "closed_at": "2007-10-23T21:00:25Z",
     "created_at": "2007-10-07T15:22:26Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "RealNumber should have abs method",
+    "title": "[with patch] RealNumber should have abs method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/837",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: cwitty
 
 This violates the principle of least surprise, at least for me:
 

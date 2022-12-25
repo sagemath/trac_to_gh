@@ -1,16 +1,17 @@
-# Issue 6038: add implicit_plot3d to the reference manual (and maybe an example in the tutorial)
+# Issue 6038: [with patch, positive review] add implicit_plot3d to the reference manual (and maybe an example in the tutorial)
 
 archive/issues_006038.json:
 ```json
 {
     "body": "Assignee: tba\n\nCC:  wcauchois\n\nPlease add the wonderful implicit_plot3d to the reference manual, and possibly even add an example to the tutorial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6038\n\n",
+    "closed_at": "2009-05-26T16:49:29Z",
     "created_at": "2009-05-14T15:26:53Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "add implicit_plot3d to the reference manual (and maybe an example in the tutorial)",
+    "title": "[with patch, positive review] add implicit_plot3d to the reference manual (and maybe an example in the tutorial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6038",
     "user": "https://github.com/williamstein"

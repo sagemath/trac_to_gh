@@ -1,9 +1,10 @@
-# Issue 5016: bump ecmgmp, make libecm extension depend on local/include/ecm.h
+# Issue 5016: [with spkg, positive review] bump ecmgmp
 
 archive/issues_005016.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAs the above states. Note that this is required to force a rebuild due to the MPIR update from #4966.\n\nSpkg and patch coming up shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5016\n\n",
+    "closed_at": "2009-01-19T11:10:23Z",
     "created_at": "2009-01-18T16:58:00Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005016.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bump ecmgmp, make libecm extension depend on local/include/ecm.h",
+    "title": "[with spkg, positive review] bump ecmgmp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5016",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

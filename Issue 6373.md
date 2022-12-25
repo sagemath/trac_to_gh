@@ -1,16 +1,17 @@
-# Issue 6373: AA and QQbar have no is_square method
+# Issue 6373: [with patch, positive review] AA and QQbar have no is_square method
 
 archive/issues_006373.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  cwitty jcooley\n\nKeywords: algebraic field is square\n\n```\nsage: QQbar(5).is_square()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n...\n\nAttributeError: 'AlgebraicNumber' object has no attribute 'is_square'\n```\n\nbut of course:\n\n```\nsage: QQbar(5).sqrt()\n2.236067977499790?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6373\n\n",
+    "closed_at": "2009-09-25T14:35:32Z",
     "created_at": "2009-06-20T19:48:21Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "AA and QQbar have no is_square method",
+    "title": "[with patch, positive review] AA and QQbar have no is_square method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6373",
     "user": "https://github.com/ncalexan"

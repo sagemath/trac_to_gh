@@ -3,10 +3,10 @@
 archive/issues_006366.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: K.<a> = NumberField(x^2 + 3)\nsage: P = K.factor(5)[0][0]; P\nFractional ideal (5)\nsage: F = P.residue_field()\nsage: z = F.gen() + 2; z\nabar + 2\nsage: F.lift(z)\n6*a + 2\nsage: z.lift()\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.finite_field_givaro.FiniteField_givaroE' object has no attribute 'lift'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6366\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nsage: K.<a> = NumberField(x^2 + 3)\nsage: P = K.factor(5)[0][0]; P\nFractional ideal (5)\nsage: F = P.residue_field()\nsage: z = F.gen() + 2; z\nabar + 2\nsage: F.lift(z)\n6*a + 2\nsage: z.lift()\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.finite_field_givaro.FiniteField_givaroE' object has no attribute 'lift'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6366\n\n",
     "created_at": "2009-06-20T15:14:45Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
@@ -16,7 +16,7 @@ archive/issues_006366.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 ```
 sage: K.<a> = NumberField(x^2 + 3)

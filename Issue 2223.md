@@ -1,9 +1,10 @@
-# Issue 2223: sage-2.10.2.alpha1 -- bessel_J -- precision errors
+# Issue 2223: [with patch, positive review, needs rebase] sage-2.10.2.alpha1 -- bessel_J -- precision errors
 
 archive/issues_002223.json:
 ```json
 {
     "body": "Assignee: somebody\n\nOn OSX \n\n```\nsage -t  devel/sage-main/sage/functions/special.py          **********************************************************************\nFile \"special.py\", line 506:\n    sage: bessel_J(3,10,\"scipy\")\nExpected:\n    0.0583793793052... - 1.65905485529...e-17*I\nGot:\n    0.0583793793052000 - 2.93425242844000e-17*I\n**********************************************************************\n1 items had failures:\n```\n\nThoughts:\n\nIt's likely a theorem that bessel_J is always real\nfor integer first argument?  If so, let's just return\nthe real part and be done with these weird imaginary\npart issues:\n\n```\nsage: bessel_J(3,10,\"scipy\")\n0.0583793793052000 - 2.93425242844000e-17*I\nsage: bessel_J(4,10,\"scipy\")\n9.69299109301000e-17*I - 0.219602686102000\nsage: bessel_J(5,10,\"scipy\")\n1.11203257018000e-16*I - 0.234061528187000\nsage: bessel_J(10,10,\"scipy\")\n0.207486106633000 - 1.17732704470000e-16*I\nsage: bessel_J(10,20,\"scipy\")\n0.186482558024000 - 2.10019326787000e-16*I\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2223\n\n",
+    "closed_at": "2008-02-22T01:06:16Z",
     "created_at": "2008-02-20T06:54:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_002223.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "sage-2.10.2.alpha1 -- bessel_J -- precision errors",
+    "title": "[with patch, positive review, needs rebase] sage-2.10.2.alpha1 -- bessel_J -- precision errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2223",
     "user": "https://github.com/williamstein"

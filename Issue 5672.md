@@ -1,9 +1,10 @@
-# Issue 5672: [with spkg, needs review] Update MPIR to 1.0.rc5 (latest upstream)
+# Issue 5672: [with spkg, positive review] Update MPIR to 1.0.rc5 (latest upstream)
 
 archive/issues_005672.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nMPIR 1.0 brings significant speed improvements. An spkg can be found at\n\n/home/mabshoff/build-3.3/sage-3.3-fulvia/spkg/build/gmp-mpir-1.0.rc5\n\nI have integrated two fixes for OSX and Solaris/x86 so that the test suite passes on both systems which will be in the final MPIR 1.0.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5672\n\n",
+    "body": "Assignee: mabshoff\n\nMPIR 1.0 brings significant speed improvements. An spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc0/gmp-mpir-1.0.rc5.spkg\n\nI have integrated two fixes for OSX and Solaris/x86 so that the test suite passes on both systems which will be in the final MPIR 1.0.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5672\n\n",
+    "closed_at": "2009-04-04T22:34:03Z",
     "created_at": "2009-04-03T01:37:18Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005672.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with spkg, needs review] Update MPIR to 1.0.rc5 (latest upstream)",
+    "title": "[with spkg, positive review] Update MPIR to 1.0.rc5 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5672",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -21,7 +22,7 @@ Assignee: mabshoff
 
 MPIR 1.0 brings significant speed improvements. An spkg can be found at
 
-/home/mabshoff/build-3.3/sage-3.3-fulvia/spkg/build/gmp-mpir-1.0.rc5
+http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc0/gmp-mpir-1.0.rc5.spkg
 
 I have integrated two fixes for OSX and Solaris/x86 so that the test suite passes on both systems which will be in the final MPIR 1.0.
 

@@ -1,15 +1,16 @@
-# Issue 3705: upgrade Mercurial to 1.01
+# Issue 3705: [with spkg, needs review] upgrade Mercurial to 1.01
 
 archive/issues_003705.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThere is an updated spkg at http://sage.math.washington.edu/home/mhansen/mercurial-1.01.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3705\n\n",
+    "closed_at": "2008-07-31T02:35:39Z",
     "created_at": "2008-07-22T04:55:08Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "upgrade Mercurial to 1.01",
+    "title": "[with spkg, needs review] upgrade Mercurial to 1.01",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3705",
     "user": "https://github.com/mwhansen"

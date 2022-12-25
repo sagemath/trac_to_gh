@@ -1,22 +1,23 @@
-# Issue 1828: add 3d graphics to the reference manual
+# Issue 1828: [with patch; needs review] add 3d graphics to the reference manual
 
 archive/issues_001828.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThe reference manual needs sections on the new 3d graphics in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1828\n\n",
+    "body": "Assignee: @williamstein\n\nThe reference manual needs sections on the new 3d graphics in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1828\n\n",
+    "closed_at": "2008-01-18T23:18:47Z",
     "created_at": "2008-01-18T06:04:38Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "add 3d graphics to the reference manual",
+    "title": "[with patch; needs review] add 3d graphics to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1828",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: tba
+Assignee: @williamstein
 
 The reference manual needs sections on the new 3d graphics in sage.
 

@@ -3,10 +3,11 @@
 archive/issues_000027.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/27\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/27\n\n",
+    "closed_at": "2008-03-16T07:48:07Z",
     "created_at": "2006-09-12T23:24:50Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: modular forms",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_000027.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: @williamstein
 
 
 

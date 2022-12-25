@@ -1,22 +1,23 @@
-# Issue 4488: notebook -- login page not given when logged out and trying to view your worksheets
+# Issue 4488: [with patch, positive review] notebook -- login page not given when logged out and trying to view your worksheets
 
 archive/issues_004488.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nShould redirect to login page instead of giving an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4488\n\n",
+    "body": "Assignee: TimothyClemans\n\nCC:  @mwhansen\n\nShould redirect to login page instead of giving an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4488\n\n",
+    "closed_at": "2008-11-29T00:48:58Z",
     "created_at": "2008-11-10T03:28:03Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "notebook -- login page not given when logged out and trying to view your worksheets",
+    "title": "[with patch, positive review] notebook -- login page not given when logged out and trying to view your worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4488",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 CC:  @mwhansen
 

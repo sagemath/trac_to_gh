@@ -1,9 +1,10 @@
-# Issue 5799: [with patch, needs review] jsMath, favicon, and logo for live, static, and offline docs
+# Issue 5799: [with patch, positive review] jsMath, favicon, and logo for live, static, and offline docs
 
 archive/issues_005799.json:
 ```json
 {
     "body": "Assignee: tba\n\nA few changes to\n\n* Enable jsMath in static and offline docs.\n\n* Display a Sage favicon in static and offline docs.\n\n* Display a Sage logo in live, static, and offline docs.\n\n\"Offline\" docs are just those accessed via file:///.\n\nI'm not sure whether/how Mercurial handles binary files, so I've attached two patches.  One mentions the added favicon and logo files; the other doesn't.  To get the png files themselves in the right place, I first created doc/common/static.  Then, in this directory I did\n\nwget http://www.sagemath.org/pix/sageicon.png\n\nand\n\nln -s ../../../../../data/extcode/notebook/images/sagelogo.png .\n\nI've attached these, too.\n\nNote: There's a favicon.ico in the same extcode directory, but it's not transparent.  There is another sagelogo.png in SAGE_ROOT/data/extcode/images, but its dimensions are larger.\n\nThe jsMath issue was mentioned on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/40eab3f9610e061d/eb93a3930e79ea3a?#eb93a3930e79ea3a\n\nThe favicon and logo were mentioned in connection with a doc sidebar toggle:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8c8fe7c5d0c0f725/4807f5553bdbd6b0?#4807f5553bdbd6b0\n\nI'll make a separate ticket for the toggle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5799\n\n",
+    "closed_at": "2009-07-07T21:22:17Z",
     "created_at": "2009-04-16T04:35:32Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_005799.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "[with patch, needs review] jsMath, favicon, and logo for live, static, and offline docs",
+    "title": "[with patch, positive review] jsMath, favicon, and logo for live, static, and offline docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5799",
     "user": "https://github.com/qed777"

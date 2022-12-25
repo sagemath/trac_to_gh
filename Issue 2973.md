@@ -1,9 +1,10 @@
-# Issue 2973: RDF doctest failures on arch linux (gcc 4.3)
+# Issue 2973: [with spkg, positive review] RDF doctest failures on arch linux (gcc 4.3)
 
 archive/issues_002973.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nsage -t  devel/sage/sage/rings/real_double.pyx              **********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/real_double.py\", line 544:\n    sage: a = -RDF(1)/RDF(0); a.str()\nExpected:\n    '-inf'\nGot:\n    'inf'\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/real_double.py\", line 979:\n    sage: a.is_positive_infinity()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/real_double.py\", line 991:\n    sage: a.is_negative_infinity()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n3 items had failures:\n   1 of   6 in __main__.example_35\n   1 of   5 in __main__.example_67\n   1 of   5 in __main__.example_68\n***Test Failed*** 3 failures.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2973\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/rings/real_double.pyx              **********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/real_double.py\", line 544:\n    sage: a = -RDF(1)/RDF(0); a.str()\nExpected:\n    '-inf'\nGot:\n    'inf'\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/real_double.py\", line 979:\n    sage: a.is_positive_infinity()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/real_double.py\", line 991:\n    sage: a.is_negative_infinity()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n3 items had failures:\n   1 of   6 in __main__.example_35\n   1 of   5 in __main__.example_67\n   1 of   5 in __main__.example_68\n***Test Failed*** 3 failures.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2973\n\n",
+    "closed_at": "2008-04-21T04:54:26Z",
     "created_at": "2008-04-20T21:03:23Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_002973.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "RDF doctest failures on arch linux (gcc 4.3)",
+    "title": "[with spkg, positive review] RDF doctest failures on arch linux (gcc 4.3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2973",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: somebody
+Assignee: mabshoff
 
 ```
 sage -t  devel/sage/sage/rings/real_double.pyx              **********************************************************************

@@ -3,7 +3,8 @@
 archive/issues_000876.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/876\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/876\n\n",
+    "closed_at": "2012-07-17T08:34:38Z",
     "created_at": "2007-10-13T09:03:20Z",
     "labels": [
         "component: combinatorics"
@@ -15,7 +16,7 @@ archive/issues_000876.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
+Assignee: @robertwb
 
 
 

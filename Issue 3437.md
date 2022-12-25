@@ -4,6 +4,7 @@ archive/issues_003437.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe file is rather long and any change in that file basically triggers a rebuild of the Sage library since so much stuff depends on NTL.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3437\n\n",
+    "closed_at": "2008-10-15T17:46:03Z",
     "created_at": "2008-06-16T05:45:01Z",
     "labels": [
         "component: misc",

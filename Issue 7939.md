@@ -1,22 +1,23 @@
-# Issue 7939: shorten doctests in sage/rings/multi_polynomial_ideal.py
+# Issue 7939: shorten doctests in sage/rings/polynomial/multi_polynomial_ideal.py
 
 archive/issues_007939.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  polybori\n\nSome of these doctests need to be marked `# long time`, at the very least.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7939\n\n",
+    "body": "Assignee: tbd\n\nCC:  polybori\n\nSome of these doctests need to be marked `# long time`, at the very least.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7939\n\n",
+    "closed_at": "2010-01-24T17:38:54Z",
     "created_at": "2010-01-16T02:42:29Z",
     "labels": [
-        "component: algebra",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "shorten doctests in sage/rings/multi_polynomial_ideal.py",
+    "title": "shorten doctests in sage/rings/polynomial/multi_polynomial_ideal.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7939",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: @aghitza
+Assignee: tbd
 
 CC:  polybori
 

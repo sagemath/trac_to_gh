@@ -3,7 +3,8 @@
 archive/issues_009078.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: fraction field, random element\n\nHi,\n\nRandom element in fraction fields is broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9078\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: fraction field, random element\n\nRandom element in fraction fields is broken. The current behavior is to take two random elements from the base and return its quotient. Having bad luck, that might return division by zero.\n\nExample code:\n\n```\nsage: R = GF(3)['t']\nsage: f = FractionField(R).random_element()\n```\nThe attached patch fixes the bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9078\n\n",
+    "closed_at": "2010-05-31T18:33:29Z",
     "created_at": "2010-05-28T21:59:34Z",
     "labels": [
         "component: algebra",
@@ -20,9 +21,16 @@ Assignee: @aghitza
 
 Keywords: fraction field, random element
 
-Hi,
+Random element in fraction fields is broken. The current behavior is to take two random elements from the base and return its quotient. Having bad luck, that might return division by zero.
 
-Random element in fraction fields is broken.
+Example code:
+
+```
+sage: R = GF(3)['t']
+sage: f = FractionField(R).random_element()
+```
+The attached patch fixes the bug.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9078
 

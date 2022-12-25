@@ -4,6 +4,7 @@ archive/issues_000612.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nI fixed #376 and discovered that I needed to do something to make homomorphisms work, i.e. make phi(a) work. This patch does that.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/612\n\n",
+    "closed_at": "2007-09-07T04:41:52Z",
     "created_at": "2007-09-07T03:28:41Z",
     "labels": [
         "component: number theory",

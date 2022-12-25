@@ -4,6 +4,7 @@ archive/issues_002092.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2092\n\n",
+    "closed_at": "2008-02-08T01:29:01Z",
     "created_at": "2008-02-08T00:49:58Z",
     "labels": [
         "component: graphics"

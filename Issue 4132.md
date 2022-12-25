@@ -1,22 +1,22 @@
-# Issue 4132: complex arithmetic passes via pari
+# Issue 4132: [with new patch, with positive review] complex arithmetic passes via pari
 
 archive/issues_004132.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nPassing through pari for every simple operation is probably unnecessary and slow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4132\n\n",
+    "body": "Assignee: @aghitza\n\nPassing through pari for every simple operation is probably unnecessary and slow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4132\n\n",
+    "closed_at": "2008-09-30T23:48:16Z",
     "created_at": "2008-09-16T04:58:32Z",
     "labels": [
-        "component: basic arithmetic",
-        "bug"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "complex arithmetic passes via pari",
+    "title": "[with new patch, with positive review] complex arithmetic passes via pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4132",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @aghitza
 
 Passing through pari for every simple operation is probably unnecessary and slow...
 

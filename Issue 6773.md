@@ -6,7 +6,7 @@ archive/issues_006773.json:
     "body": "Assignee: tbd\n\nI've not no idea why anyone would want to do this, but freetype (along with lcalc) is one of the guilty parties. \n\n /opt/sunstudio12.1/bin/cc -I/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/freetype-2.3.5.p1/src/objs -I./builds/unix -I/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/freetype-2.3.5.p1/src/include -c -g -DFT_CONFIG_OPTION_SYSTEM_ZLIB \"-DFT_CONFIG_CONFIG_H=<ftconfig.h>\" -DFT2_BUILD_LIBRARY \"-DFT_CONFIG_MODULES_H=<ftmodule.h>\" -I/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/freetype-2.3.5.p1/src/src/pshinter /export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/freetype-2.3.5.p1/src/src/pshinter/pshinter.c -o /export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/freetype-2.3.5.p1/src/objs/pshinter.o >/dev/null 2>&1\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6773\n\n",
     "created_at": "2009-08-17T10:11:21Z",
     "labels": [
-        "component: build"
+        "component: packages: standard"
     ],
     "title": "Freetype hides warning messages by sending output to /dev/null",
     "type": "issue",

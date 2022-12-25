@@ -1,16 +1,17 @@
-# Issue 6531: Add generic ring classes to reference manual
+# Issue 6531: [with patch, positive review] Add generic ring classes to reference manual
 
 archive/issues_006531.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: rings documentation doctest\n\nModule `sage.rings.ring` contains 11 base classes for various types of ring. This should be added to the reference manual. The file also needs a few more doctests to get to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6531\n\n",
+    "closed_at": "2009-08-31T06:03:39Z",
     "created_at": "2009-07-14T09:59:29Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Add generic ring classes to reference manual",
+    "title": "[with patch, positive review] Add generic ring classes to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6531",
     "user": "https://github.com/loefflerd"

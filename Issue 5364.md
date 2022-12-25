@@ -4,6 +4,7 @@ archive/issues_005364.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nsome functions are not wraped which makes e.g. identity_matrix or transpose awfully slow for matrices over SR.\n(we do not use maxime.ident nor maxima.transpose)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5364\n\n",
+    "closed_at": "2009-06-05T01:35:37Z",
     "created_at": "2009-02-24T23:42:26Z",
     "labels": [
         "component: linear algebra",

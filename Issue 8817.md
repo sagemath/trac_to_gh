@@ -4,6 +4,7 @@ archive/issues_008817.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI doctested after I think #7665 and this file Rplot001.png appeared in SAGE_ROOT.  That's obnoxious. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8817\n\n",
+    "closed_at": "2010-05-02T23:57:20Z",
     "created_at": "2010-04-29T06:06:26Z",
     "labels": [
         "component: doctest coverage",

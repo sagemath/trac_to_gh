@@ -1,16 +1,17 @@
-# Issue 1851: [with patch, needs (easy) review] increase documentation...
+# Issue 1851: [with patch, with positive review] increase documentation...
 
 archive/issues_001851.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nIn sage/graphs/bruhat_sn.pyx, a file nobody likely uses much...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1851\n\n",
+    "closed_at": "2008-01-19T21:03:57Z",
     "created_at": "2008-01-19T20:47:32Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch, needs (easy) review] increase documentation...",
+    "title": "[with patch, with positive review] increase documentation...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1851",
     "user": "https://github.com/rlmill"

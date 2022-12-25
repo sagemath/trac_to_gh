@@ -4,6 +4,7 @@ archive/issues_009860.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @rlmill mvngu\n\nThe table of contents of the Graph Theory module is a bit hard to parse at the moment [1]. The file graph.py is even entitled \"Graph Theory\" itself, which must have remained from before this file was split into three, and the depth of 2 does not really help.\n\nThis patch is a possible way to clean it and make it.... readable ! I don't expect this patch to be merged as it is, as you probably have a different view of how it should be.. `:-)`\n\nNathann\n\n[1] http://www.sagemath.org/doc/reference/graphs.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9861\n\n",
+    "closed_at": "2010-09-15T11:38:22Z",
     "created_at": "2010-09-06T17:34:24Z",
     "labels": [
         "component: documentation"

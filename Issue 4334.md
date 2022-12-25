@@ -1,16 +1,17 @@
-# Issue 4334: [with spkg, needs review] Updated experimental Mayavi2 spkg
+# Issue 4334: [with spkg, positive review] Updated experimental Mayavi2 spkg
 
 archive/issues_004334.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nUpdated to mayavi_2.2.1\n\n\n[http://sage.math.washington.edu/home/jsp/mayavi_2.2.1.spkg](http://sage.math.washington.edu/home/jsp/mayavi_2.2.1.spkg)\n\nDepends on on experimental spkgs:\nvtk-5.2, cmake-2.4.8 and wxPython-2.8.7.1\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4334\n\n",
+    "closed_at": "2008-11-29T07:02:25Z",
     "created_at": "2008-10-21T13:06:04Z",
     "labels": [
         "component: packages: experimental",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "[with spkg, needs review] Updated experimental Mayavi2 spkg",
+    "title": "[with spkg, positive review] Updated experimental Mayavi2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4334",
     "user": "https://github.com/jaapspies"

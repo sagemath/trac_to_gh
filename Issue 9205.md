@@ -4,6 +4,7 @@ archive/issues_009205.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAt present, we have a discrete log function which claims to work for Z/NZ when this group is cyclic, but it can be wrong when N is not prime, as in this example:\n\n```\nsage: Mod(5,9).log(Mod(2, 9))\n6\nsage: sage: discrete_log(Mod(5, 9), Mod(2, 9))\n5\n```\n\nThe first answer is totally wrong, because Pari's znlog function is intended to be used with a prime modulus and silently returns junk in the non-prime case.\n\nI need to be able to express elements of Z/NZ* in terms of generators in the non-cyclic case anway, so I will fix this in the process.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9205\n\n",
+    "closed_at": "2010-07-20T07:18:59Z",
     "created_at": "2010-06-10T14:11:02Z",
     "labels": [
         "component: number theory",

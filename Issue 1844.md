@@ -1,16 +1,17 @@
-# Issue 1844: [with bundle] Get doctest coverage in sage/modular/modform up to 100%
+# Issue 1844: [with patch, needs review] Get doctest coverage in sage/modular/modform up to 100%
 
 archive/issues_001844.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nThis patch brings doctest coverage up to 100% for every file in sage/modular/modform except for find_generators.py, which isn't imported into sage by default anyway. Needless to say, there are lots of small fixes and whatnot. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1844\n\n",
+    "closed_at": "2008-01-21T04:26:48Z",
     "created_at": "2008-01-19T01:50:38Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with bundle] Get doctest coverage in sage/modular/modform up to 100%",
+    "title": "[with patch, needs review] Get doctest coverage in sage/modular/modform up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1844",
     "user": "https://github.com/craigcitro"

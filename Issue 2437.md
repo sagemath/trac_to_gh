@@ -1,16 +1,17 @@
-# Issue 2437: update eclib.spkg to eclib-20080304.spkg
+# Issue 2437: [with spkg, postive review] update eclib.spkg to eclib-20080304.spkg
 
 archive/issues_002437.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThis spkg is required for #2394 to wrap newforms\n\nIssue created by migration from https://trac.sagemath.org/ticket/2437\n\n",
+    "closed_at": "2008-03-19T11:35:24Z",
     "created_at": "2008-03-09T06:45:02Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "update eclib.spkg to eclib-20080304.spkg",
+    "title": "[with spkg, postive review] update eclib.spkg to eclib-20080304.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2437",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

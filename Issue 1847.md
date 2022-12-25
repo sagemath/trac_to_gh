@@ -1,16 +1,17 @@
-# Issue 1847: add nice print method for Sha(Elliptic curve) [trivial to implement -- requires taste]
+# Issue 1847: [with patch, positive review] add nice print method for Sha(Elliptic curve)
 
 archive/issues_001847.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPrinting of Sha is ugly:\n\n```\nsage: E = EllipticCurve('37a')\nsage: Sha = E.sha(); Sha\n<class 'sage.schemes.elliptic_curves.sha.Sha'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1847\n\n",
+    "closed_at": "2009-01-28T14:10:39Z",
     "created_at": "2008-01-19T12:46:42Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "add nice print method for Sha(Elliptic curve) [trivial to implement -- requires taste]",
+    "title": "[with patch, positive review] add nice print method for Sha(Elliptic curve)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1847",
     "user": "https://github.com/williamstein"

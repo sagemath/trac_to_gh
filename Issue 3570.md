@@ -1,16 +1,17 @@
-# Issue 3570: more import improvements to db.py
+# Issue 3570: [with patch, positive review] more import improvements to db.py
 
 archive/issues_003570.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3570\n\n",
+    "closed_at": "2008-07-07T02:34:39Z",
     "created_at": "2008-07-06T20:15:50Z",
     "labels": [
         "component: misc",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "more import improvements to db.py",
+    "title": "[with patch, positive review] more import improvements to db.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3570",
     "user": "https://github.com/mwhansen"

@@ -4,6 +4,7 @@ archive/issues_008508.json:
 ```json
 {
     "body": "Assignee: @burcin\n\ncf http://groups.google.com/group/sage-support/msg/55dafb49058a55c6\n\n```\nsage: var('y');\nsage: max(x,y)\nx\nsage: max(y,x)\ny\n```\nWe expect both to give `max(x,y)` of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8508\n\n",
+    "closed_at": "2010-03-12T18:07:20Z",
     "created_at": "2010-03-12T17:19:56Z",
     "labels": [
         "component: calculus",

@@ -4,6 +4,7 @@ archive/issues_000927.json:
 ```json
 {
     "body": "Assignee: @malb\n\nthe attached patch fixes that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/927\n\n",
+    "closed_at": "2007-10-21T03:21:41Z",
     "created_at": "2007-10-19T10:02:32Z",
     "labels": [
         "component: commutative algebra",

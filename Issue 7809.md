@@ -4,6 +4,7 @@ archive/issues_007809.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe call `region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))` passes the following function to setup_for_eval_on_grid: `(y, x) |--> -2/x - 1/y + 1/(x*y)`, but passes the variables in the order (x,y).  The problem is the equify function.  This patch simplifies the code in equify to not try to put an ordering on the variables, but to just pass back an expression (not a function).\n\nIn practice, since variables would be substituted by name, I don't think this will make a difference.  But it does make the code cleaner and more correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7809\n\n",
+    "closed_at": "2010-01-13T11:24:24Z",
     "created_at": "2010-01-01T18:44:22Z",
     "labels": [
         "component: graphics",

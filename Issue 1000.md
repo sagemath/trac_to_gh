@@ -3,7 +3,8 @@
 archive/issues_001000.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1000\n\n",
+    "body": "Assignee: @williamstein\n\nADD DESCRIPTION\n\nIssue created by migration from https://trac.sagemath.org/ticket/1000\n\n",
+    "closed_at": "2008-01-09T06:16:42Z",
     "created_at": "2007-10-25T16:48:05Z",
     "labels": [
         "component: distribution",
@@ -16,9 +17,9 @@ archive/issues_001000.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @williamstein
 
-
+ADD DESCRIPTION
 
 Issue created by migration from https://trac.sagemath.org/ticket/1000
 

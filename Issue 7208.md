@@ -3,7 +3,8 @@
 archive/issues_007208.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Family, enumerated set\n\nLog of the attached patch:\n\n- Families are parents, in the (Finite/Infinite)EnumeratedSets category\n- New class EnumeratedFamily; Family accept any (Finite)EnumeratedSet as input\n- Improves the output of lazy families, and update accordingly the\n  doctests in CombinatorialFreeModule, ...\n- Clean trailing whitespaces\n- Use TestSuite\n\nIssue created by migration from https://trac.sagemath.org/ticket/7208\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Family, enumerated set\n\nLog of the attached patch:\n\n* Families are parents, in the (Finite/Infinite)EnumeratedSets category\n* New class EnumeratedFamily; Family accept any (Finite)EnumeratedSet as input\n* Improves the output of lazy families, and update accordingly the\n  doctests in CombinatorialFreeModule, ...\n* Clean trailing whitespaces\n* Use TestSuite\n* Fix enumeration for FiniteFamily\n\nDepends on #5891\n\nIssue created by migration from https://trac.sagemath.org/ticket/7208\n\n",
+    "closed_at": "2009-11-19T16:57:44Z",
     "created_at": "2009-10-14T12:44:35Z",
     "labels": [
         "component: combinatorics"
@@ -23,12 +24,15 @@ Keywords: Family, enumerated set
 
 Log of the attached patch:
 
-- Families are parents, in the (Finite/Infinite)EnumeratedSets category
-- New class EnumeratedFamily; Family accept any (Finite)EnumeratedSet as input
-- Improves the output of lazy families, and update accordingly the
+* Families are parents, in the (Finite/Infinite)EnumeratedSets category
+* New class EnumeratedFamily; Family accept any (Finite)EnumeratedSet as input
+* Improves the output of lazy families, and update accordingly the
   doctests in CombinatorialFreeModule, ...
-- Clean trailing whitespaces
-- Use TestSuite
+* Clean trailing whitespaces
+* Use TestSuite
+* Fix enumeration for FiniteFamily
+
+Depends on #5891
 
 Issue created by migration from https://trac.sagemath.org/ticket/7208
 

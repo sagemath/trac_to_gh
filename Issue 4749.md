@@ -1,23 +1,26 @@
-# Issue 4749: improve coercion of points between elliptic curves and reduction of points mod p
+# Issue 4749: [with patch; with positive review] improve coercion of points between elliptic curves and reduction of points mod p
 
 archive/issues_004749.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @cswiercz\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: elliptic curves\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
+    "closed_at": "2008-12-21T12:37:24Z",
     "created_at": "2008-12-10T01:00:06Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "improve coercion of points between elliptic curves and reduction of points mod p",
+    "title": "[with patch; with positive review] improve coercion of points between elliptic curves and reduction of points mod p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4749",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @cswiercz
 
 CC:  @cswiercz
+
+Keywords: elliptic curves
 
 If I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:
 
@@ -36,7 +39,7 @@ def reduce(R, p):
     d = LCM(x.denominator(), y.denominator())
     return R.curve().change_ring(GF(p))([x*d,y*d,d])
 ```
-}}}
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4749
 

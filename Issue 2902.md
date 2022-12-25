@@ -4,6 +4,7 @@ archive/issues_002902.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nWhen you paste into a cell it should resize as a result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2902\n\n",
+    "closed_at": "2010-01-19T02:58:15Z",
     "created_at": "2008-04-13T02:31:29Z",
     "labels": [
         "component: notebook",

@@ -1,9 +1,10 @@
-# Issue 1687: makefile program -- "make distclean" doesn't delete test.log
+# Issue 1687: [with positive review] makefile program -- "make distclean" doesn't delete test.log
 
 archive/issues_001687.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1687\n\n",
+    "closed_at": "2008-01-05T00:28:23Z",
     "created_at": "2008-01-05T00:25:19Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_001687.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
-    "title": "makefile program -- \"make distclean\" doesn't delete test.log",
+    "title": "[with positive review] makefile program -- \"make distclean\" doesn't delete test.log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1687",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_009885.json:
 ```json
 {
     "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\nThis is not:\n\n```\nsage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 37.9 \u00b5s per loop\n```\n\nWow. See also #9885 for a not-quite-as-insane version of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9886\n\n",
+    "closed_at": "2014-03-31T15:04:49Z",
     "created_at": "2010-09-09T16:07:25Z",
     "labels": [
         "component: performance",

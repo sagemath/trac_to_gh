@@ -1,15 +1,16 @@
-# Issue 1357: the polynomial .roots() method should work with ring=QQbar
+# Issue 1357: [with patch, with positive review] the polynomial .roots() method should work with ring=QQbar
 
 archive/issues_001357.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nSomething like this should work:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + x + 1).roots(ring=QQbar)\n```\nbut currently it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1357\n\n",
+    "closed_at": "2007-12-02T20:11:58Z",
     "created_at": "2007-12-02T01:28:37Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "the polynomial .roots() method should work with ring=QQbar",
+    "title": "[with patch, with positive review] the polynomial .roots() method should work with ring=QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1357",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

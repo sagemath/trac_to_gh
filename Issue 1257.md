@@ -4,6 +4,7 @@ archive/issues_001257.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n`MPolynomialRing_libsingular.__dealloc__` changes the global Singular \"current ring\" to its wrapped ring, and then deletes the ring.  Since `__dealloc__` can get called at essentially random times (it can be called by the Python garbage collector, which can be called on any Python memory allocation), this means that at any time the Singular \"current ring\" may be changed to an invalid, deleted ring.\n\nMy patch changes the \"current ring\" back to its old value, after deleting the wrapped ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1257\n\n",
+    "closed_at": "2007-11-25T05:37:06Z",
     "created_at": "2007-11-25T03:46:59Z",
     "labels": [
         "component: algebraic geometry",

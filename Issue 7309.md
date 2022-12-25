@@ -4,6 +4,7 @@ archive/issues_007309.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nThe url layout serves `main.js` and `keyboard/` under `/javascript/`, yet serves everything else under its own directory -- `/javascript/jquery/`, `/javascript/sage3d`, etc. This patch moves `main.js` and `keyboard/` under `/javascript/sage/`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7309\n\n",
+    "closed_at": "2009-11-11T19:32:24Z",
     "created_at": "2009-10-26T13:23:14Z",
     "labels": [
         "component: notebook",

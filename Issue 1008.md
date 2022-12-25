@@ -1,16 +1,17 @@
-# Issue 1008: dumb mistake in setup.py -- touching has adverse consequences
+# Issue 1008: [with patch] dumb mistake in setup.py -- touching has adverse consequences
 
 archive/issues_001008.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI made a stupid change to setup.py that solved one rare problem, while introducing a very annoying one.  This patch fixes that. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1008\n\n",
+    "closed_at": "2007-10-27T04:55:23Z",
     "created_at": "2007-10-27T03:28:04Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "dumb mistake in setup.py -- touching has adverse consequences",
+    "title": "[with patch] dumb mistake in setup.py -- touching has adverse consequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1008",
     "user": "https://github.com/williamstein"

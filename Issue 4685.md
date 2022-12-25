@@ -1,16 +1,16 @@
-# Issue 4685: Add "South America", "Asia" and "Australia" links to the DevMap
+# Issue 4685: [positive review] Add "South America", "Asia" and "Australia" links to the DevMap
 
 archive/issues_004685.json:
 ```json
 {
     "body": "Assignee: @haraldschilly\n\nAt http://sagemath.org/development-map.html we have the \"US (East, West, UW)\" and \"Europe\", but we are missing \"South America\", \"Asia\" and \"Australia\". Sine we are in the processing of adding quite a number of people to Australia as well as another person to Korea it would be good to add those links. \n\nAdding the people itself is #4682. \n\nI am opening these tickets so Harald gets proper credit for his work on the website :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4685\n\n",
+    "closed_at": "2008-12-03T21:41:39Z",
     "created_at": "2008-12-03T06:39:01Z",
     "labels": [
-        "component: website/wiki",
-        "bug"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Add \"South America\", \"Asia\" and \"Australia\" links to the DevMap",
+    "title": "[positive review] Add \"South America\", \"Asia\" and \"Australia\" links to the DevMap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4685",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

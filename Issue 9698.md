@@ -3,7 +3,8 @@
 archive/issues_009698.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby @nathanncohen\n\nRandomized backtracking for finding hamiltonian cycles.\n\nA path P is maintained during the execution of the algorithm. Initially the path will contain an edge of the graph. Every 10 iterations the path is reversed. Every ``reset_bound`` iterations the path will be cleared and procedure is restarted. Every ``backtrack_bound`` steps we discard the last five vertices and continue with the procedure. The total number of steps in the algorithm is controlled by ``max_iter``. If a hamiltonian cycle is found it is returned. If the number of steps reaches ``max_iter`` \nthen a longest path is returned. See OUTPUT for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9698\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby @nathanncohen\n\nRandomized backtracking for finding hamiltonian cycles.\n\nA path P is maintained during the execution of the algorithm. Initially the path will contain an edge of the graph. Every 10 iterations the path is reversed. Every ``reset_bound`` iterations the path will be cleared and procedure is restarted. Every ``backtrack_bound`` steps we discard the last five vertices and continue with the procedure. The total number of steps in the algorithm is controlled by ``max_iter``. If a hamiltonian cycle is found it is returned. If the number of steps reaches ``max_iter`` \nthen a longest path is returned. See OUTPUT for more details.\n\nApply first :\n\n* #10043\n* #10101\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9698\n\n",
+    "closed_at": "2011-01-05T08:19:13Z",
     "created_at": "2010-08-06T19:17:39Z",
     "labels": [
         "component: graph theory"
@@ -23,6 +24,12 @@ Randomized backtracking for finding hamiltonian cycles.
 
 A path P is maintained during the execution of the algorithm. Initially the path will contain an edge of the graph. Every 10 iterations the path is reversed. Every ``reset_bound`` iterations the path will be cleared and procedure is restarted. Every ``backtrack_bound`` steps we discard the last five vertices and continue with the procedure. The total number of steps in the algorithm is controlled by ``max_iter``. If a hamiltonian cycle is found it is returned. If the number of steps reaches ``max_iter`` 
 then a longest path is returned. See OUTPUT for more details.
+
+Apply first :
+
+* #10043
+* #10101
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9698
 

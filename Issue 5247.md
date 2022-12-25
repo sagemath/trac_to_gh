@@ -4,6 +4,7 @@ archive/issues_005247.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nSal reports: The following computation should produce identical values in the last line:\n\n```\nE=EllipticCurve('37b2')\nh=E.modular_form()\nLh = h.cuspform_lseries()\nLE=E.lseries()\nh.elliptic_curve()==E, Lh(1), LE(1)\n```\nThe output is:\n\n```\n(True, 0, 0.725681061936153)\n```\nI'm running Sage 3.3.alpha3 of sage.math.\n\nThe problem seems to be the sign of the functional equation -- it looks like the cuspform_lseries() incorrectly computes it to be -1, forcing the value at s=1 to be 0. In sage/modular/modform/element.py the sign of the functional equation fed into the Dokchister is computed by\n\n```\ne = (-1)**(l/2)*n.atkin_lehner_operator().matrix()[0,0]\n```\nwhich Gonzalo and Mark tell me is not correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5247\n\n",
+    "closed_at": "2009-02-14T02:52:41Z",
     "created_at": "2009-02-12T16:43:56Z",
     "labels": [
         "component: modular forms",

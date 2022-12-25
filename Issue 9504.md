@@ -3,7 +3,8 @@
 archive/issues_009504.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nFollowing discussion of #9296, I am rewriting toric lattices to allow construction of sublattices.\n\nApply after #9245.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9504\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nFollowing discussion of #9296, I am rewriting toric lattices to allow construction of sublattices.\n\nSee the tracker bug #9604 for details on dependencies.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9504\n\n",
+    "closed_at": "2010-09-15T10:00:58Z",
     "created_at": "2010-07-15T07:40:09Z",
     "labels": [
         "component: geometry"
@@ -21,7 +22,7 @@ CC:  @vbraun
 
 Following discussion of #9296, I am rewriting toric lattices to allow construction of sublattices.
 
-Apply after #9245.
+See the tracker bug #9604 for details on dependencies.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9504
 

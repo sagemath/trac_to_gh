@@ -4,9 +4,10 @@ archive/issues_005332.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @malb\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/21d861876918e668\n\n```\n> While I looked at ideal's docstring I noticed plenty of construct like \n>     sage: R, x = PolynomialRing(ZZ, 'x').objgen() \n> Shouldn't we get those cleaned up to read \n>    sage: R.<x>=ZZ[] \n> or am I missing the point? I have seen too many people use the above \n> old objgen() constuct and I find it rather hideous. \n\n\nYeah, its just old and noone got around cleaning that up. \n\nMartin \n```\n\nThere are some more places, to find them run\n\n```\ngrep \"PolynomialRing\" .doctest* | grep objgen\n```\nin $SAGE_ROOT/tmp\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5332\n\n",
+    "closed_at": "2015-04-21T00:10:52Z",
     "created_at": "2009-02-21T22:50:25Z",
     "labels": [
-        "component: doctest coverage",
+        "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",

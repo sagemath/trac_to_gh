@@ -1,16 +1,17 @@
-# Issue 3880: Bad behavior of arrows
+# Issue 3880: [with patch, positive review] Bad behavior of arrows
 
 archive/issues_003880.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAccording to the arrow documentation,\n\n```\nAn arrow from (xmin, ymin) to (xmax, ymax).\n```\n\nHowever, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).\n\nFor example:\n\n```\nsage: arrow((1, 1), (-1,-1))\n```\nwill draw an arrow from (1,1) to (0,0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3880\n\n",
+    "closed_at": "2008-08-19T02:03:18Z",
     "created_at": "2008-08-16T19:22:55Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Bad behavior of arrows",
+    "title": "[with patch, positive review] Bad behavior of arrows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3880",
     "user": "https://github.com/itolkov"

@@ -1,28 +1,31 @@
-# Issue 5243: [with patch, needs review] non decreasing parking functions
+# Issue 5243: [with patch, positive review] non decreasing parking functions (depend now on 5255)
 
 archive/issues_005243.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @dandrake\n\nKeywords: parking functions / Dyck words\n\nThis patch implement the combinatorial classes of non decreassing parking function with the usual methods (counting/listing/!__contains!__/iterating)... It also implements bijections from and to Dyck words.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5243\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat @dandrake\n\nKeywords: parking functions / Dyck words\n\nThis patch implement the combinatorial classes of non decreassing parking function with the usual methods (counting/listing/!__contains!__/iterating)... It also implements bijections from and to Dyck words.  \n\nAuthor: Florent Hivert\n\nIssue created by migration from https://trac.sagemath.org/ticket/5243\n\n",
+    "closed_at": "2009-10-15T07:26:07Z",
     "created_at": "2009-02-12T13:45:37Z",
     "labels": [
         "component: combinatorics",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "[with patch, needs review] non decreasing parking functions",
+    "title": "[with patch, positive review] non decreasing parking functions (depend now on 5255)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5243",
     "user": "https://github.com/hivert"
 }
 ```
-Assignee: @mwhansen
+Assignee: @hivert
 
 CC:  sage-combinat @dandrake
 
 Keywords: parking functions / Dyck words
 
-This patch implement the combinatorial classes of non decreassing parking function with the usual methods (counting/listing/!__contains!__/iterating)... It also implements bijections from and to Dyck words.
+This patch implement the combinatorial classes of non decreassing parking function with the usual methods (counting/listing/!__contains!__/iterating)... It also implements bijections from and to Dyck words.  
+
+Author: Florent Hivert
 
 Issue created by migration from https://trac.sagemath.org/ticket/5243
 

@@ -3,7 +3,8 @@
 archive/issues_009798.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @jdemeyer drkirkby @kiwifb\n\nThis line in SAGE_ROOT/make\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n```\nwill *always* return an exit status of 0, even if the build fails miserably.  This leads to much confusion down the line, as explained in this sage-devel post:\n    \n   \nThe fix is probably to do what is described here:\n\n \n      http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9799\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @jdemeyer drkirkby @kiwifb\n\nKeywords: makefile\n\nThis line in SAGE_ROOT/make\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n```\nwill *always* return an exit status of 0, even if the build fails miserably.  This leads to much confusion down the line, as explained in this sage-devel post:\n    \nhttp://groups.google.com/group/sage-devel/browse_thread/thread/3487f96fda36b6f0/09be2d4dc50493f1#09be2d4dc50493f1   \n\nThe fix is probably to do what is described here:\n\n \n      http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html\n\nAs part of the patch, `makefile` should be renamed to `Makefile` (this is a more standard name).\n\nFollow-up tickets: #10156, #10157\n\nIssue created by migration from https://trac.sagemath.org/ticket/9799\n\n",
+    "closed_at": "2010-11-01T10:04:35Z",
     "created_at": "2010-08-25T01:01:15Z",
     "labels": [
         "component: build",
@@ -21,6 +22,8 @@ Assignee: GeorgSWeber
 
 CC:  @nexttime @jdemeyer drkirkby @kiwifb
 
+Keywords: makefile
+
 This line in SAGE_ROOT/make
 
 ```
@@ -28,11 +31,16 @@ cd spkg && ./install all 2>&1 | tee -a ../install.log
 ```
 will *always* return an exit status of 0, even if the build fails miserably.  This leads to much confusion down the line, as explained in this sage-devel post:
     
-   
+http://groups.google.com/group/sage-devel/browse_thread/thread/3487f96fda36b6f0/09be2d4dc50493f1#09be2d4dc50493f1   
+
 The fix is probably to do what is described here:
 
  
       http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html
+
+As part of the patch, `makefile` should be renamed to `Makefile` (this is a more standard name).
+
+Follow-up tickets: #10156, #10157
 
 Issue created by migration from https://trac.sagemath.org/ticket/9799
 

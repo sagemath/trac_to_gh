@@ -1,16 +1,17 @@
-# Issue 7255: sagenb notebook: reset() causes the worksheet to stop working.  fix this.
+# Issue 7255: [with patch; positive review] sagenb notebook: reset() causes the worksheet to stop working.  fix this.
 
 archive/issues_007255.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7255\n\n",
+    "closed_at": "2009-10-24T06:17:52Z",
     "created_at": "2009-10-20T19:28:49Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "sagenb notebook: reset() causes the worksheet to stop working.  fix this.",
+    "title": "[with patch; positive review] sagenb notebook: reset() causes the worksheet to stop working.  fix this.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7255",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 5529: bring documentation of classical.py to 100%
+# Issue 5529: [with patch, positive review] bring documentation of classical.py to 100%
 
 archive/issues_005529.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: classical.py, doctest\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5529\n\n",
+    "closed_at": "2009-03-23T21:02:06Z",
     "created_at": "2009-03-16T10:44:03Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "bring documentation of classical.py to 100%",
+    "title": "[with patch, positive review] bring documentation of classical.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5529",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

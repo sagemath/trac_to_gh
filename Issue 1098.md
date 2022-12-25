@@ -1,16 +1,17 @@
-# Issue 1098: make rpy work with SAGE data types
+# Issue 1098: [with patch] make rpy work with SAGE data types
 
 archive/issues_001098.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1098\n\n",
+    "closed_at": "2007-11-06T22:22:26Z",
     "created_at": "2007-11-04T03:00:11Z",
     "labels": [
         "component: packages: standard",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "make rpy work with SAGE data types",
+    "title": "[with patch] make rpy work with SAGE data types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1098",
     "user": "https://github.com/mwhansen"

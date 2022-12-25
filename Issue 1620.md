@@ -1,22 +1,23 @@
-# Issue 1620: update cvxopt to 0.9.1
+# Issue 1620: update cvxopt to 1.0
 
 archive/issues_001620.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1620\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1620\n\n",
+    "closed_at": "2010-02-02T07:14:11Z",
     "created_at": "2007-12-29T04:34:42Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "update cvxopt to 0.9.1",
+    "title": "update cvxopt to 1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1620",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 
 

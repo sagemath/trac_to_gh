@@ -1,15 +1,16 @@
-# Issue 1407: deciding that generators don't generate an order in some extensions can be way way too slow.
+# Issue 1407: [with patch, with positive review] deciding that generators don't generate an order in some extensions can be way way too slow.
 
 archive/issues_001407.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nConsider this:\n\n```\nsage: P.<a,b,c> = QQ[2^(1/2), 2^(1/3), 2^(1/5)]\nsage: P.order([1,a])\n*should* go boom very quickly... but runs forever and runs out of RAM\n```\n\nIn the situation above, a satisfies only a quadratic polynomial so \nthere is no possible way it will generate an order in a degree 8 field,\nsince the index [O_K : ZZ[a]] is clearly infinite.   Sage should\nquickly detect this and give an error message, but doesn't for some\nreason. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1407\n\n",
+    "closed_at": "2007-12-15T11:57:19Z",
     "created_at": "2007-12-06T04:02:24Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "deciding that generators don't generate an order in some extensions can be way way too slow.",
+    "title": "[with patch, with positive review] deciding that generators don't generate an order in some extensions can be way way too slow.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1407",
     "user": "https://github.com/williamstein"

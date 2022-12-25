@@ -1,16 +1,17 @@
-# Issue 2638: complex QQbar expressions exceed maximum recursion depth when exact computation is triggered
+# Issue 2638: [with patch, positive review] complex QQbar expressions exceed maximum recursion depth when exact computation is triggered
 
 archive/issues_002638.json:
 ```json
 {
     "body": "Assignee: somebody\n\nFor example, \n\n```\nsage: s = SFASchur(QQ)\nsage: a=s([3,2]).expand(8)(flatten([[QQbar.zeta(3)^d for d in range(3)], [QQbar.zeta(5)^d for d in range(5)]]))\nsage: a.exactify() \n```\n(as reported in http://groups.google.com/group/sage-devel/browse_thread/thread/8cf79f359cceef3d/e931afceebf3fe35#e931afceebf3fe35)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2638\n\n",
+    "closed_at": "2009-01-24T19:31:05Z",
     "created_at": "2008-03-21T22:01:45Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "complex QQbar expressions exceed maximum recursion depth when exact computation is triggered",
+    "title": "[with patch, positive review] complex QQbar expressions exceed maximum recursion depth when exact computation is triggered",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2638",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

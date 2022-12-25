@@ -1,15 +1,16 @@
-# Issue 8500: Add number_of_transitive_group function
+# Issue 8500: Add the set of TransitiveGroups
 
 archive/issues_008500.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: transitive group\n\nTransitiveGroup are already in Sage and work only if you have the right database installed. As I offen test systematicly over all transitive groups, I will be happy to get this number in Sage.\n\n```\nsage: TransitiveGroup(7,7)\nTransitive group number 7 of degree 7\nsage: TransitiveGroup(7,8)\nverbose 0 (846: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\nTransitive group number 8 of degree 7\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8500\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: transitive groups\n\nThis patch implements the finite enumerated set of transitive\npermutation groups of a given degree, and the infinite enumerated set\nof all transitive permutation groups. The later is built as a disjoint\nunion of the former.\n\nThis allows a user to do:\n\n```\nsage: TransitiveGroups(4).cardinality()\n\nsage: for G in TransitiveGroups(i):\n...       any_test(G)  # any test over all transitive groups of a given degree\n\nsage: for G in TransitiveGroups():\n...       other_test(G) # test over all transitive groups\n```\n\nThis requires the optional database_gap which contains all the\ntransitive permutation groups of degree <= 30. Therefore, in practice,\nthe enumeration stops with a NonImplementedError at degree 30.\n\nDepends on #8524.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8500\n\n",
+    "closed_at": "2010-06-05T22:28:58Z",
     "created_at": "2010-03-11T20:49:20Z",
     "labels": [
         "component: group theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Add number_of_transitive_group function",
+    "title": "Add the set of TransitiveGroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8500",
     "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
@@ -19,17 +20,31 @@ Assignee: nborie
 
 CC:  sage-combinat
 
-Keywords: transitive group
+Keywords: transitive groups
 
-TransitiveGroup are already in Sage and work only if you have the right database installed. As I offen test systematicly over all transitive groups, I will be happy to get this number in Sage.
+This patch implements the finite enumerated set of transitive
+permutation groups of a given degree, and the infinite enumerated set
+of all transitive permutation groups. The later is built as a disjoint
+union of the former.
+
+This allows a user to do:
 
 ```
-sage: TransitiveGroup(7,7)
-Transitive group number 7 of degree 7
-sage: TransitiveGroup(7,8)
-verbose 0 (846: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.
-Transitive group number 8 of degree 7
+sage: TransitiveGroups(4).cardinality()
+
+sage: for G in TransitiveGroups(i):
+...       any_test(G)  # any test over all transitive groups of a given degree
+
+sage: for G in TransitiveGroups():
+...       other_test(G) # test over all transitive groups
 ```
+
+This requires the optional database_gap which contains all the
+transitive permutation groups of degree <= 30. Therefore, in practice,
+the enumeration stops with a NonImplementedError at degree 30.
+
+Depends on #8524.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8500
 

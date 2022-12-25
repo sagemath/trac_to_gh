@@ -1,16 +1,16 @@
-# Issue 3924: making sage on os x build, when python is built as a framework
+# Issue 3924: [with patch; needs work] Build Python as a framework build on OS X
 
 archive/issues_003924.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  dphilp prabhu @cswiercz\n\nKeywords: framework\n\nI'm trying to build sage on mac with a shareable python library.  The current version, being built without the --enable-framework option, cannot be linked to other libraries because of the environ variable.  I think getting this working would be useful, and I would like eventually to see it the default build on OS X.\n\nThe following recipe works, though it is clearly a defective approach:\n\n1. build vanilla sage from source \n\n2. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework=SAGE_ROOT/local/Frameworks\n\n3. rebuild sage.  This creates SAGE_ROOT/Frameworks/Python.framework\n\n4. all doctests pass, and I can link to libpython from boost python\n\nIdeally, the following steps would work:\n\n1. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework= SAGE_ROOT/local/Frameworks\n\n2. build sage.\n\nIt doesn't work so simply.  I've managed to help it along a few steps, but am stuck with cvxopt\n\n1. The build of mercurial crashes.  When it crashes, create two symlinks:\n\n2a. local/lib/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/lib/python2.5/\n\n1b. local/include/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/include/python2.5/\n\n1c. Restart make\n\n2. The build of the sage package crashes, with a similar error.  \n\n2a. Delete the busted symlink at \nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n\n2b. Create a symlink:\nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n--->devel/sage/build/sage\n\n2c. Delete half-built files, restart make.\n\n3. The build of cvxopt crashes, with a duplicate symbol error.  I'm not in a position to debug this one.\n\nAny attention appreciated!  For my part, I can muddle along with the duplicate builds but I would like to get this working.\n\nD\n\nIssue created by migration from https://trac.sagemath.org/ticket/3924\n\n",
+    "body": "Assignee: jkantor\n\nCC:  dphilp prabhu @cswiercz\n\nKeywords: framework\n\nBuild Python as a framework build on OS X. \n\nspkg up at \n\nhttp://sage.math.washington.edu/home/wstein/patches/prabhu/\n\nThis needs thorough testing.  In particular, try building sage from scratch with this spkg.  Also, worry about upgrading from one sage version to another.\n\nAnyway, ASAP I think this should be made the standard version of python for OS X, so that we can get matplotlib + full native gui support by default.  Plus, we should provide an optional spkg that makes it trivial to make nice native GUI apps on OS X (??).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3924\n\n",
     "created_at": "2008-08-22T01:38:43Z",
     "labels": [
         "component: build",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "making sage on os x build, when python is built as a framework",
+    "title": "[with patch; needs work] Build Python as a framework build on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3924",
     "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
@@ -22,52 +22,15 @@ CC:  dphilp prabhu @cswiercz
 
 Keywords: framework
 
-I'm trying to build sage on mac with a shareable python library.  The current version, being built without the --enable-framework option, cannot be linked to other libraries because of the environ variable.  I think getting this working would be useful, and I would like eventually to see it the default build on OS X.
+Build Python as a framework build on OS X. 
 
-The following recipe works, though it is clearly a defective approach:
+spkg up at 
 
-1. build vanilla sage from source 
+http://sage.math.washington.edu/home/wstein/patches/prabhu/
 
-2. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework=SAGE_ROOT/local/Frameworks
+This needs thorough testing.  In particular, try building sage from scratch with this spkg.  Also, worry about upgrading from one sage version to another.
 
-3. rebuild sage.  This creates SAGE_ROOT/Frameworks/Python.framework
-
-4. all doctests pass, and I can link to libpython from boost python
-
-Ideally, the following steps would work:
-
-1. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework= SAGE_ROOT/local/Frameworks
-
-2. build sage.
-
-It doesn't work so simply.  I've managed to help it along a few steps, but am stuck with cvxopt
-
-1. The build of mercurial crashes.  When it crashes, create two symlinks:
-
-2a. local/lib/python2.5 
----> local/Frameworks/Python.framework/Versions/Current/lib/python2.5/
-
-1b. local/include/python2.5 
----> local/Frameworks/Python.framework/Versions/Current/include/python2.5/
-
-1c. Restart make
-
-2. The build of the sage package crashes, with a similar error.  
-
-2a. Delete the busted symlink at 
-local/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage
-
-2b. Create a symlink:
-local/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage
---->devel/sage/build/sage
-
-2c. Delete half-built files, restart make.
-
-3. The build of cvxopt crashes, with a duplicate symbol error.  I'm not in a position to debug this one.
-
-Any attention appreciated!  For my part, I can muddle along with the duplicate builds but I would like to get this working.
-
-D
+Anyway, ASAP I think this should be made the standard version of python for OS X, so that we can get matplotlib + full native gui support by default.  Plus, we should provide an optional spkg that makes it trivial to make nice native GUI apps on OS X (??).
 
 Issue created by migration from https://trac.sagemath.org/ticket/3924
 

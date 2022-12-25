@@ -1,16 +1,17 @@
-# Issue 3948: [with spkg, needs review] Add 64 bit OSX build support for clisp
+# Issue 3948: [with spkg, positive review] Add 64 bit OSX build support for clisp
 
 archive/issues_003948.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nAN updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha1/clisp-2.46.p7.spkg\n\nIt disables readline since we cannot build clisp in 64 bit mode.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3948\n\n",
+    "closed_at": "2008-08-25T19:50:30Z",
     "created_at": "2008-08-25T07:34:09Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] Add 64 bit OSX build support for clisp",
+    "title": "[with spkg, positive review] Add 64 bit OSX build support for clisp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3948",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,16 +1,17 @@
-# Issue 6270: [with patch, needs review] add some files from the plot directory to the reference manual
+# Issue 6270: [with patch, positive review] add some files from the plot directory to the reference manual
 
 archive/issues_006270.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nThis adds the 8 files to the reference manual (since kcrisman has put so much work into getting them to 100% coverage).  It also adds a few cross-references to plot.py and makes one or two small changes (e.g., it removes a reference to `rgbcolor` at the beginning of plot.py, since that function isn't in the global name space, and its mention suggested that it might be).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6270\n\n",
+    "closed_at": "2009-06-13T21:42:53Z",
     "created_at": "2009-06-12T18:20:59Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch, needs review] add some files from the plot directory to the reference manual",
+    "title": "[with patch, positive review] add some files from the plot directory to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6270",
     "user": "https://github.com/jhpalmieri"

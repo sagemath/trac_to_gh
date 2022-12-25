@@ -3,7 +3,8 @@
 archive/issues_007367.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nCurrently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.\n\nWe should update this section with docstrings from the recently separated [SageNB](http://nb.sagemath.org/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7367\n\n",
+    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nCurrently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.\n\nWe should update this section with docstrings from the recently separated [SageNB](http://nb.sagemath.org/).\n\nSee also: #7384.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7367\n\n",
+    "closed_at": "2009-11-12T07:30:39Z",
     "created_at": "2009-11-01T13:35:58Z",
     "labels": [
         "component: doctest coverage",
@@ -24,6 +25,8 @@ CC:  @TimDumol
 Currently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.
 
 We should update this section with docstrings from the recently separated [SageNB](http://nb.sagemath.org/).
+
+See also: #7384.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7367
 

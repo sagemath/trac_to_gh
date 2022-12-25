@@ -4,6 +4,7 @@ archive/issues_008759.json:
 ```json
 {
     "body": "Assignee: acleone\n\nCC:  acleone @williamstein @TimDumol\n\nSass is the templating engine Sage uses for it's CSS.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8759\n\n",
+    "closed_at": "2014-12-11T18:36:35Z",
     "created_at": "2010-04-24T23:19:58Z",
     "labels": [
         "component: notebook",

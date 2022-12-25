@@ -1,9 +1,10 @@
-# Issue 2304: sparse_poly should probably be removed
+# Issue 2304: [with patch, with positive reivew] sparse_poly should probably be removed
 
 archive/issues_002304.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIt looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.\n\nfrom IRC:\n\n```\ncwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2304\n\n",
+    "body": "Assignee: mabshoff\n\nIt looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.\n\nfrom IRC:\n\n```\ncwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2304\n\n",
+    "closed_at": "2008-11-23T00:04:58Z",
     "created_at": "2008-02-25T21:31:04Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_002304.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "sparse_poly should probably be removed",
+    "title": "[with patch, with positive reivew] sparse_poly should probably be removed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2304",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: mabshoff
 
 It looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.
 

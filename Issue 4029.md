@@ -3,7 +3,8 @@
 archive/issues_004029.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @gvol\n\nKeywords: sage-env source\n\nSourcing sage-env from any directory other than SAGE_ROOT or SAGE_LOCAL/bin kills the shell.  This is considerably disconcerting behaviour.  An explanatory message would be nice (if not a proper fix).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4029\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @gvol\n\nKeywords: sage-env source\n\nSourcing sage-env from any directory other than SAGE_ROOT or SAGE_LOCAL/bin kills the shell.  This is considerably disconcerting behaviour.  An explanatory message would be nice (if not a proper fix).\n\n---\n\nOnce #9960 is merged, this can be closed. Don't merge any of the patches here!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4029\n\n",
+    "closed_at": "2011-05-13T06:12:45Z",
     "created_at": "2008-09-01T04:03:55Z",
     "labels": [
         "component: distribution",
@@ -24,6 +25,11 @@ CC:  @gvol
 Keywords: sage-env source
 
 Sourcing sage-env from any directory other than SAGE_ROOT or SAGE_LOCAL/bin kills the shell.  This is considerably disconcerting behaviour.  An explanatory message would be nice (if not a proper fix).
+
+---
+
+Once #9960 is merged, this can be closed. Don't merge any of the patches here!
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/4029
 

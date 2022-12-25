@@ -1,16 +1,17 @@
-# Issue 766: Duplicate method in structure/formal_sum.py:FormalSums_generic
+# Issue 766: [with bundle] Duplicate method in structure/formal_sum.py:FormalSums_generic
 
 archive/issues_000766.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe method an_element_impl() is defined twice (lines 60, 103).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/766\n\n",
+    "closed_at": "2007-11-03T23:48:47Z",
     "created_at": "2007-09-30T21:01:13Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "Duplicate method in structure/formal_sum.py:FormalSums_generic",
+    "title": "[with bundle] Duplicate method in structure/formal_sum.py:FormalSums_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/766",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"

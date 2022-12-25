@@ -1,16 +1,17 @@
-# Issue 4902: convert sage.algebras.* docstrings to Sphinx
+# Issue 4902: [with patch, positive review] convert sage.algebras.* docstrings to Sphinx
 
 archive/issues_004902.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4902\n\n",
+    "closed_at": "2009-02-24T18:48:47Z",
     "created_at": "2009-01-01T22:45:35Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.algebras.* docstrings to Sphinx",
+    "title": "[with patch, positive review] convert sage.algebras.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4902",
     "user": "https://github.com/mwhansen"

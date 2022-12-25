@@ -4,6 +4,7 @@ archive/issues_000350.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\nHi.\nI am quite happy that rational_points() of a hyperelliptic curve over\na finite field lists the poitn at infinity twice, but I don't\nunderstand why it also lists other points twice.\n\nChris.\n\n\n```\nf = x^8+x+1\nft = f.change_ring(GF(7))\nC = HyperellipticCurve(ft)\nC.rational_points()\n///\n[(2 : 0 : 1), (4 : 0 : 1), (2 : 0 : 1), (4 : 0 : 1), (0 : 1 : 1), (6 :\n1 : 1), (0 : 6 : 1), (6 : 6 : 1), (0 : 1 : 0), (0 : 1 : 0)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/350\n\n",
+    "closed_at": "2007-08-18T17:29:12Z",
     "created_at": "2007-04-11T01:53:05Z",
     "labels": [
         "component: algebraic geometry",

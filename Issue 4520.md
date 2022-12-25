@@ -1,16 +1,17 @@
-# Issue 4520: segfault in cyclotomic matrices
+# Issue 4520: [with patch, with positive review] segfault in cyclotomic matrices
 
 archive/issues_004520.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\n```\nsage: M = matrix(CyclotomicField(5), 5, 2, 5)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4520\n\n",
+    "closed_at": "2008-11-14T17:19:13Z",
     "created_at": "2008-11-14T06:52:59Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "segfault in cyclotomic matrices",
+    "title": "[with patch, with positive review] segfault in cyclotomic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4520",
     "user": "https://github.com/robertwb"

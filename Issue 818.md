@@ -1,15 +1,16 @@
-# Issue 818: Convert of prod to Cython
+# Issue 818: [with patch] Convert of prod to Cython
 
 archive/issues_000818.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI rewrote the prod function in Cython.  Some timings illustrating the improvement:\n\nBEFORE:\nsage: l=[1]*15\nsage: time for i in xrange(10000): _=prod(l)\nCPU times: user 0.18 s, sys: 0.01 s, total: 0.19 s\nWall time: 0.19\n\nAFTER:\nsage: l=[1]*15\nsage: time for i in xrange(10000): _=prod(l)\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06\n\nThose times make it look pretty good, but most real-world multiplications are very dominated by the actual arithmetic.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/818\n\n",
+    "closed_at": "2007-10-04T18:09:50Z",
     "created_at": "2007-10-04T01:33:44Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
-    "title": "Convert of prod to Cython",
+    "title": "[with patch] Convert of prod to Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/818",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

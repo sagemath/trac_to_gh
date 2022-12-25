@@ -1,9 +1,10 @@
-# Issue 1927: dots in symbolic variable names should not be allowed, etc. (probably easy to fix)
+# Issue 1927: [with patch, with positive review] dots in symbolic variable names should not be allowed, etc. (probably easy to fix)
 
 archive/issues_001927.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
+    "body": "Assignee: @mwhansen\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
+    "closed_at": "2008-02-15T04:48:43Z",
     "created_at": "2008-01-25T17:21:18Z",
     "labels": [
         "component: calculus",
@@ -11,13 +12,13 @@ archive/issues_001927.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "dots in symbolic variable names should not be allowed, etc. (probably easy to fix)",
+    "title": "[with patch, with positive review] dots in symbolic variable names should not be allowed, etc. (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1927",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 Variable names made with the var command should be valid identifiers, but
 

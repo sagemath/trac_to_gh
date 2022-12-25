@@ -1,17 +1,18 @@
-# Issue 4823: [with patch, needs review]
+# Issue 4823: [with patch, positive review] better fix for determinant bug with speed regression fix
 
 archive/issues_004823.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ClementPernet\n\nThe fix at #3887 computes way to many primes, making det and hnf very slow. The attached patch resolves this issue and still gives correct output. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4823\n\n",
+    "closed_at": "2008-12-18T14:58:40Z",
     "created_at": "2008-12-18T00:26:15Z",
     "labels": [
         "component: linear algebra",
-        "critical",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "[with patch, needs review]",
+    "title": "[with patch, positive review] better fix for determinant bug with speed regression fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4823",
     "user": "https://github.com/robertwb"

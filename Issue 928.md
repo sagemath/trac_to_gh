@@ -6,7 +6,7 @@ archive/issues_000928.json:
     "body": "Assignee: mabshoff\n\nKeywords: valgrind, callgrind\n\nIf you pass\n\n```\n --instr-atstart=no\n```\nto callgrind profiling is disabled until you tell callgrind via \n\n```\ncallgrind-control\n```\nto turn on profiling. After you have finished profiling your code you can use callgrind-contorl again to turn profiling off again. This can be very useful because if you only want to profile certain bits and also saves potentially a whole lot of time if it takes a long time to get to the part of the computation you want to profile.\n\nCarl Witty suggested this in #sage-devel yesterday.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/928\n\n",
     "created_at": "2007-10-19T16:49:03Z",
     "labels": [
-        "component: packages: standard"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add delayed profiling mode for callgrind",

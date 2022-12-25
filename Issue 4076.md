@@ -1,16 +1,17 @@
-# Issue 4076: notebook -- <$> ... </$> and <$$> ... </$$> don't work in the notebook as the help page claims
+# Issue 4076: [with patch, positive review] notebook -- <$> ... </$> and <$$> ... </$$> don't work in the notebook as the help page claims
 
 archive/issues_004076.json:
 ```json
 {
     "body": "Assignee: boothby\n\nHelp page claims:\n\n```\nBegin an input block with %html and it will be output as HTML. Use the <sage>...</sage> tag to do computations in an HTML block and have the typeset output inserted. Use <$>...</$> and <$$>...</$$> to insert typeset math in the HTML block. This does not require latex.\n```\n\n\nThe html function clearly doesn't properly deal with the < and >. \n\n```\nsage: html(r'let <$>K = \\mathbb{Q} 17 (\\sqrt{-2})</$>')\n<html><font color='black'>let <<span class=\"math\">>K = \\mathbb{Q} 17 (\\sqrt{-2})</</span>></font></html>\n\nsage: html(r'let <$$>K = \\mathbb{Q} 17 (\\sqrt{-2})</$$>')\n<html><font color='black'>let <<div class=\"math\">>K = \\mathbb{Q} 17 (\\sqrt{-2})</</div>></font></html>\n```\n\nThe output should be the same as \n\n```\nsage: html(r'let $K = \\mathbb{Q} 17 (\\sqrt{-2})$')\n<html><font color='black'>let <span class=\"math\">K = \\mathbb{Q} 17 (\\sqrt{-2})</span></font></html>\n\nsage: html(r'let $$K = \\mathbb{Q} 17 (\\sqrt{-2})$$')\n<html><font color='black'>let <div class=\"math\">K = \\mathbb{Q} 17 (\\sqrt{-2})</div></font></html>\n```\n\nThis is based on the bug report given on 8/25/08 by john.perry`@`usm.edu available at http://spreadsheets.google.com/pub?key=pCwvGVwSMxTzT6E2xNdo5fA\n\nIssue created by migration from https://trac.sagemath.org/ticket/4076\n\n",
+    "closed_at": "2008-10-27T02:11:25Z",
     "created_at": "2008-09-08T12:38:54Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "notebook -- <$> ... </$> and <$$> ... </$$> don't work in the notebook as the help page claims",
+    "title": "[with patch, positive review] notebook -- <$> ... </$> and <$$> ... </$$> don't work in the notebook as the help page claims",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4076",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"

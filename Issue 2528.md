@@ -1,9 +1,10 @@
-# Issue 2528: File sage/modular/dims_doc.py should be removed soon
+# Issue 2528: [with patch; positive review] File sage/modular/dims_doc.py should be removed soon
 
 archive/issues_002528.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis file existed for only including certain parts of dims.py into the reference manual; this is no longer necessary, and the file should be removed. Care needs to be taken to not break the reference manual -- William has a fix that he's going to submit when I post this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2528\n\n",
+    "closed_at": "2008-03-15T22:30:07Z",
     "created_at": "2008-03-15T05:53:18Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_002528.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "File sage/modular/dims_doc.py should be removed soon",
+    "title": "[with patch; positive review] File sage/modular/dims_doc.py should be removed soon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2528",
     "user": "https://github.com/craigcitro"

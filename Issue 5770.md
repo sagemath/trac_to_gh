@@ -1,16 +1,17 @@
-# Issue 5770: [with patch, needs review] Bring doctests of modular/modsym/p1list.py up to 100%
+# Issue 5770: [with patch, positive review] Bring doctests of modular/modsym/p1list.py up to 100%
 
 archive/issues_005770.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nKeywords: modular form documentation\n\nThe attached patch completes all docstrings and doctests for the file modular/modsym/p1list.py.  I also checked that the html and pdf output in the reference manual look good.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5770\n\n",
+    "closed_at": "2009-04-13T22:06:08Z",
     "created_at": "2009-04-12T17:25:24Z",
     "labels": [
         "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] Bring doctests of modular/modsym/p1list.py up to 100%",
+    "title": "[with patch, positive review] Bring doctests of modular/modsym/p1list.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5770",
     "user": "https://github.com/JohnCremona"

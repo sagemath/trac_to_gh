@@ -3,7 +3,8 @@
 archive/issues_000568.json:
 ```json
 {
-    "body": "Assignee: wdjoyner\n\nThere is a doctest (or doctests) in \n\n```\n    sage -t --long coding/code_constructions.py \n```\nthat take many *hours*.  Run the above with --verbose and fix the doctests so they run in a reasonable\namount of time.  An example that never finishes is broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/568\n\n",
+    "body": "Assignee: wdjoyner\n\nThere is a doctest (or doctests) in \n\n```\n    sage -t --long coding/code_constructions.py \n```\nthat take many *hours*.  Run the above with --verbose and fix the doctests so they run in a reasonable\namount of time.  An example that never finishes is broken. \n\nBasically, for starters do\n\n```\n    sage -t --verbose --long coding/code_constructions.py \n```\nand see what happens.  Also, consider doing\n\n```\n    grep \"sage:\" coding/code_constructions.py | sage\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/568\n\n",
+    "closed_at": "2007-09-06T17:21:03Z",
     "created_at": "2007-09-02T17:34:58Z",
     "labels": [
         "component: coding theory",
@@ -24,7 +25,18 @@ There is a doctest (or doctests) in
     sage -t --long coding/code_constructions.py 
 ```
 that take many *hours*.  Run the above with --verbose and fix the doctests so they run in a reasonable
-amount of time.  An example that never finishes is broken.
+amount of time.  An example that never finishes is broken. 
+
+Basically, for starters do
+
+```
+    sage -t --verbose --long coding/code_constructions.py 
+```
+and see what happens.  Also, consider doing
+
+```
+    grep "sage:" coding/code_constructions.py | sage
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/568
 

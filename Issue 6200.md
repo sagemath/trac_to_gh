@@ -1,15 +1,16 @@
-# Issue 6200: Use mpmath to compute constants
+# Issue 6200: [with patch, positive review] Use mpmath to compute constants
 
 archive/issues_006200.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nAssumes that mpmath has been added to Sage (#6196)\n\nPatch summary:\n\nUse mpmath to compute numerical values of constants.\n\nPreviously khinchin, mertens and twinprime were LimitedPrecisionConstant,\nbut with this patch they can be computed to any precision.\n\nThe patch also adds the Glaisher constant (which is available in mpmath)\nand corrects the name of the Mertens constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6200\n\n",
+    "closed_at": "2009-07-03T16:55:53Z",
     "created_at": "2009-06-03T20:29:36Z",
     "labels": [
         "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Use mpmath to compute constants",
+    "title": "[with patch, positive review] Use mpmath to compute constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6200",
     "user": "https://github.com/fredrik-johansson"

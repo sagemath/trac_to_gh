@@ -1,16 +1,17 @@
-# Issue 5821: preparser incorrectly handles backslash operator inside strings (sometimes)
+# Issue 5821: [with patch, positive review] preparser incorrectly handles backslash operator inside strings (sometimes)
 
 archive/issues_005821.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: preparser\n\nWhen reviewing #5595, I tried typing this:\n\n```\nsage: import re\nsage: dep_regex = re.compile(r'^ *(?:(?:cimport +([\\w\\. ,]+))|(?:from +(\\w+) +cimport)|(?:include *[\\'\"]([^\\'\"]+)[\\'\"])|(?:cdef *extern *from *[\\'\"]([^\\'\"]+)[\\'\"]))', re.M)\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     dep_regex = re.compile(r'^ *(?:(?:cimport +([\\w\\. ,]+))|(?:from +(\\w+) +cimport)|(?:include *[\\'\"]([^\\'\"]+)[ * BackslashOperator() * '\"])|(?:cdef *extern *from *[\\'\"]([^\\'\"]+)[\\'\"]))', re.M)\n                                                                                                                                                                          ^\nSyntaxError: invalid syntax\n```\n\nNote that the preparser has turned a backslash from the middle of the regular expression into `\" * BackslashOperator() * \"`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5821\n\n",
+    "closed_at": "2009-04-23T07:58:45Z",
     "created_at": "2009-04-19T03:31:24Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "preparser incorrectly handles backslash operator inside strings (sometimes)",
+    "title": "[with patch, positive review] preparser incorrectly handles backslash operator inside strings (sometimes)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5821",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

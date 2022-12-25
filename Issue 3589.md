@@ -1,9 +1,10 @@
-# Issue 3589: numerical noise -- number_field.py
+# Issue 3589: [with patch; with positive review] numerical noise -- number_field.py
 
 archive/issues_003589.json:
 ```json
 {
-    "body": "Assignee: failure\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.0.4.alpha2-x86-Linux-fc8/tmp/number_field.py\",\nline 3630:\n   sage: K.embeddings(CC)\nExpected:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\nGot:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3589\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.0.4.alpha2-x86-Linux-fc8/tmp/number_field.py\",\nline 3630:\n   sage: K.embeddings(CC)\nExpected:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\nGot:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3589\n\n",
+    "closed_at": "2008-07-07T22:35:59Z",
     "created_at": "2008-07-07T20:31:16Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_003589.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "numerical noise -- number_field.py",
+    "title": "[with patch; with positive review] numerical noise -- number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3589",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 ```
 sage -t  devel/sage/sage/rings/number_field/number_field.py

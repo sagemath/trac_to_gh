@@ -4,6 +4,7 @@ archive/issues_009527.json:
 ```json
 {
     "body": "Assignee: @jasongrout\n\nCC:  @malb\n\nWhen doing `sage -sh`, the result is very, very confusing, since it has the SAGE_ROOT path displayed unlabeled, which causes confusion, and does not show the current path, which also causes confusion.  This patch adds a label and the current path, to help reduce confusion some.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9527\n\n",
+    "closed_at": "2010-07-22T23:42:14Z",
     "created_at": "2010-07-17T11:55:26Z",
     "labels": [
         "component: misc",

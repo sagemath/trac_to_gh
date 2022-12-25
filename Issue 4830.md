@@ -1,9 +1,10 @@
-# Issue 4830: [with patch, needs review] remove duplicate code lines in real_mpfr.pyx
+# Issue 4830: remove duplicate code lines in real_mpfr.pyx
 
 archive/issues_004830.json:
 ```json
 {
     "body": "Assignee: tbd\n\njust deletes some duplicate lines of code\n\nIssue created by migration from https://trac.sagemath.org/ticket/4830\n\n",
+    "closed_at": "2008-12-19T13:06:30Z",
     "created_at": "2008-12-19T11:32:34Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_004830.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[with patch, needs review] remove duplicate code lines in real_mpfr.pyx",
+    "title": "remove duplicate code lines in real_mpfr.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4830",
     "user": "https://github.com/haraldschilly"

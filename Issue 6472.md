@@ -3,10 +3,11 @@
 archive/issues_006472.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis is wrong:\n\n```\nsage: R.<a,b,c,d>=PolynomialRing(QQ,order=\"lex\")\nsage: ideal(a-b^16,b-c^16,c-d^1024).groebner_basis()\n[a - d^4096, b - d^16384, c - d^1024]\n```\n\nThe correct answer as given by Macaulay 2:\n\n```\ni30 : R=QQ[a,b,c,d, MonomialOrder=>Lex];\ni31 : I=ideal(a-b^16,b-c^16,c-d^1024);\ni32 : gens gb I\no32 = | c-d1024 b-d16384 a-d262144 |\n```\n\nIn particular the binomial involving a should raise d to the power 262144=2<sup>18</sup>, not 4096=2<sup>12</sup> as Sage reports.\n\nI suspect that the reason is that by default Sage uses Singular to implement groebner_basis, and Singular has limitations on the size of exponents. See http://www.singular.uni-kl.de/Manual/latest/sing_343.htm#SEC384 which in particular says\n\n```\nthe maximal allowed exponent of a ring variable depends on the ordering of the ring and is at least 32767.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6472\n\n",
+    "body": "Assignee: tbd\n\nThis is wrong:\n\n```\nsage: R.<a,b,c,d>=PolynomialRing(QQ,order=\"lex\")\nsage: ideal(a-b^16,b-c^16,c-d^1024).groebner_basis()\n[a - d^4096, b - d^16384, c - d^1024]\n```\n\nThe correct answer as given by Macaulay 2:\n\n```\ni30 : R=QQ[a,b,c,d, MonomialOrder=>Lex];\ni31 : I=ideal(a-b^16,b-c^16,c-d^1024);\ni32 : gens gb I\no32 = | c-d1024 b-d16384 a-d262144 |\n```\n\nIn particular the binomial involving a should raise d to the power 262144=2<sup>18</sup>, not 4096=2<sup>12</sup> as Sage reports.\n\nI suspect that the reason is that by default Sage uses Singular to implement groebner_basis, and Singular has limitations on the size of exponents. See https://www.singular.uni-kl.de/Manual/4-0-2/sing_455.htm which in particular says\n\n```\nthe maximal allowed exponent of a ring variable depends on the ordering of the ring\nand is at least 32767.\n```\n(I suppose \"least\" is a typo, should be \"most\"...)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6472\n\n",
+    "closed_at": "2018-08-14T17:30:02Z",
     "created_at": "2009-07-07T04:49:45Z",
     "labels": [
-        "component: algebra",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -37,11 +38,14 @@ o32 = | c-d1024 b-d16384 a-d262144 |
 
 In particular the binomial involving a should raise d to the power 262144=2<sup>18</sup>, not 4096=2<sup>12</sup> as Sage reports.
 
-I suspect that the reason is that by default Sage uses Singular to implement groebner_basis, and Singular has limitations on the size of exponents. See http://www.singular.uni-kl.de/Manual/latest/sing_343.htm#SEC384 which in particular says
+I suspect that the reason is that by default Sage uses Singular to implement groebner_basis, and Singular has limitations on the size of exponents. See https://www.singular.uni-kl.de/Manual/4-0-2/sing_455.htm which in particular says
 
 ```
-the maximal allowed exponent of a ring variable depends on the ordering of the ring and is at least 32767.
+the maximal allowed exponent of a ring variable depends on the ordering of the ring
+and is at least 32767.
 ```
+(I suppose "least" is a typo, should be "most"...)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6472
 

@@ -1,22 +1,24 @@
-# Issue 2643: [with patch; needs review] Fix Debian Sections
+# Issue 2643: [with patch; positive review] Fix Debian Sections
 
 archive/issues_002643.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nI failed to correctly setup the Section fields of some of the Debian control files.  Attached are a series of patches to fix these problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2643\n\n",
+    "body": "Assignee: mabshoff\n\nI failed to correctly setup the Section fields of some of the Debian control files.  Attached are a series of patches to fix these problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2643\n\n",
+    "closed_at": "2008-04-12T17:29:11Z",
     "created_at": "2008-03-22T03:40:43Z",
     "labels": [
         "component: debian-package",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] Fix Debian Sections",
+    "title": "[with patch; positive review] Fix Debian Sections",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2643",
     "user": "https://github.com/timabbott"
 }
 ```
-Assignee: @timabbott
+Assignee: mabshoff
 
 I failed to correctly setup the Section fields of some of the Debian control files.  Attached are a series of patches to fix these problems.
 

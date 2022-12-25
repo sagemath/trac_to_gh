@@ -1,21 +1,24 @@
-# Issue 6902: log(x) is typeset as \ln x
+# Issue 6902: [with patch, positive review] log(x) is typeset as \ln x
 
 archive/issues_006902.json:
 ```json
 {
-    "body": "```\nsage: log(x)\nlog(x)\nsage: latex(log(x))\n\\ln\\left(x\\right)\n```\n\nWe should switch back to `\\log`. See this thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/dc6530a2071bd6db\n\nIssue created by migration from https://trac.sagemath.org/ticket/6902\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: log(x)\nlog(x)\nsage: latex(log(x))\n\\ln\\left(x\\right)\n```\n\nWe should switch back to `\\log`. See this thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/dc6530a2071bd6db\n\nIssue created by migration from https://trac.sagemath.org/ticket/6902\n\n",
+    "closed_at": "2009-09-25T22:44:59Z",
     "created_at": "2009-09-07T19:05:26Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "log(x) is typeset as \\ln x",
+    "title": "[with patch, positive review] log(x) is typeset as \\ln x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6902",
     "user": "https://github.com/burcin"
 }
 ```
+Assignee: @burcin
+
 ```
 sage: log(x)
 log(x)

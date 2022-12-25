@@ -1,16 +1,17 @@
-# Issue 3650: [with patch, needs review] Infinite recursion in pbuild by recursive pxd imports
+# Issue 3650: [with patch, positive review] Infinite recursion in pbuild by recursive pxd imports
 
 archive/issues_003650.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nIn some cases, having pxds with recursive imports may cause pbuild to use recursion to go to infinity.  This patch fixes this issue.  In many cases this will just cause Cython to throw an error later, but pbuild should still behave better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3650\n\n",
+    "closed_at": "2008-07-15T23:38:02Z",
     "created_at": "2008-07-13T11:22:50Z",
     "labels": [
         "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "[with patch, needs review] Infinite recursion in pbuild by recursive pxd imports",
+    "title": "[with patch, positive review] Infinite recursion in pbuild by recursive pxd imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3650",
     "user": "https://github.com/garyfurnish"

@@ -1,15 +1,16 @@
-# Issue 3569: optimize import of sage.dsage.interface.dsage_interface
+# Issue 3569: [with patch; positive review] optimize import of sage.dsage.interface.dsage_interface
 
 archive/issues_003569.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nBEFORE\n\n```\nteragon-2:misc was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.092 (dist_function)\n         twisted.cred.credentials: 0.009 (sage.dsage.interface.dsage_interface)\n         twisted.internet.threads: 0.011 (sage.dsage.interface.dsage_interface)\n         twisted.internet.interfaces: 0.040 (sage.dsage.interface.dsage_interface)\n0.092 sage.dsage.interface.dsage_interface (dist_function)\n0.040 twisted.internet.interfaces (sage.dsage.interface.dsage_interface)\n```\n\nThis is after using it multiple times (so caching).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3569\n\n",
+    "closed_at": "2008-07-07T02:38:12Z",
     "created_at": "2008-07-06T20:13:04Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "optimize import of sage.dsage.interface.dsage_interface",
+    "title": "[with patch; positive review] optimize import of sage.dsage.interface.dsage_interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3569",
     "user": "https://github.com/williamstein"

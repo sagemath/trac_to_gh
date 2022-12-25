@@ -1,9 +1,10 @@
-# Issue 4378: 3.2.alpha1: -sdist does not copy html from template directory
+# Issue 4378: [with patch, positive review] 3.2.alpha1: -sdist does not copy html from template directory
 
 archive/issues_004378.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n-sdist needs to copy the new html files in the template directory. Otherwise Sage does not start up and all the tests fail on \"make check\"\n\nThese html files need to be added to MANIFEST.in\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4378\n\n",
+    "closed_at": "2008-10-31T23:47:46Z",
     "created_at": "2008-10-28T18:31:17Z",
     "labels": [
         "component: distribution",
@@ -11,7 +12,7 @@ archive/issues_004378.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "3.2.alpha1: -sdist does not copy html from template directory",
+    "title": "[with patch, positive review] 3.2.alpha1: -sdist does not copy html from template directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4378",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

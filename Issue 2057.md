@@ -1,16 +1,17 @@
-# Issue 2057: followup to #1983 -- 0^0 for 0 a rational
+# Issue 2057: [with patch; positive review] followup to #1983 -- 0^0 for 0 a rational
 
 archive/issues_002057.json:
 ```json
 {
     "body": "Assignee: somebody\n\nBefore patch:\n\n```\n\nsage: (0/1) ^ (0/1)\n\n---------------------------------------------------------------------------\n<type 'exceptions.ArithmeticError'>       Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/rational.pyx in sage.rings.rational.Rational.__pow__()\n\n<type 'exceptions.ArithmeticError'>: 0^0 is undefined.\n```\n\nAfter patch:\n\n```\nsage: (0/1) ^ (0/1)\n1\nsage: type(_)\n<type 'sage.rings.rational.Rational'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2057\n\n",
+    "closed_at": "2008-02-07T05:15:08Z",
     "created_at": "2008-02-05T15:25:10Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "followup to #1983 -- 0^0 for 0 a rational",
+    "title": "[with patch; positive review] followup to #1983 -- 0^0 for 0 a rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2057",
     "user": "https://github.com/williamstein"

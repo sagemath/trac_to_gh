@@ -1,9 +1,10 @@
-# Issue 6988: error building PDF version of reference manual on Sage 4.1.2.alpha2
+# Issue 6988: [with patch, positive review] error building PDF version of reference manual on Sage 4.1.2.alpha2
 
 archive/issues_006988.json:
 ```json
 {
-    "body": "Assignee: tba\n\nAs the subject says. I'm making this a blocker as it's critical to have both the HTML and PDF versions of every document in the standard documentation build without errors. We do distribute those documents separately from the source and binary tarballs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6988\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAs the subject says. I'm making this a blocker as it's critical to have both the HTML and PDF versions of every document in the standard documentation build without errors. We do distribute those documents separately from the source and binary tarballs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6988\n\n",
+    "closed_at": "2009-09-22T19:24:40Z",
     "created_at": "2009-09-22T16:52:09Z",
     "labels": [
         "component: documentation",
@@ -11,13 +12,13 @@ archive/issues_006988.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "error building PDF version of reference manual on Sage 4.1.2.alpha2",
+    "title": "[with patch, positive review] error building PDF version of reference manual on Sage 4.1.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6988",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-Assignee: tba
+Assignee: @jhpalmieri
 
 As the subject says. I'm making this a blocker as it's critical to have both the HTML and PDF versions of every document in the standard documentation build without errors. We do distribute those documents separately from the source and binary tarballs.
 

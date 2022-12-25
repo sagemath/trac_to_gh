@@ -4,6 +4,7 @@ archive/issues_002557.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nVarious users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2557\n\n",
+    "closed_at": "2008-03-16T21:53:53Z",
     "created_at": "2008-03-16T21:41:38Z",
     "labels": [
         "component: dsage",

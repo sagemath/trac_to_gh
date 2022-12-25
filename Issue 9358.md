@@ -3,7 +3,8 @@
 archive/issues_009358.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies\n\nznpoly passes about 40 self-tests, but fails to install properly. \n\n```\nzn_array_mulmid_fft()... ok\nzn_array_mul_fft_dft()... ok\nzn_array_invert()... ok\n\nAll tests passed.\ngcc -O3 -g -m64 -fPIC -L. -I/export/home/drkirkby/sage-4.5.alpha0/local/include \n-I./include -DNDEBUG -o src/tuning.o -c src/tuning.c\nIn file included from ./include/zn_poly.h:75,\n                 from ./include/zn_poly_internal.h:41,\n                 from src/tuning.c:28:\n./include/wide_arith.h:297:2: warning: #warning No assembly implementation of wi\nde multiplication available for this machine; using generic C code instead.\nar -r libzn_poly.a src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mu\nlmid_ks.o src/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o \nsrc/mul_ks.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/z\nn_mod.o\nar: creating libzn_poly.a\nranlib libzn_poly.a\ngcc -shared -m64  -Wl,-soname,libzn_poly-`cat VERSION`.so -o libzn_poly-`cat VER\nSION`.so src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mulmid_ks.o \nsrc/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o src/mul_ks\n.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/zn_mod.o -L\n/export/home/drkirkby/sage-4.5.alpha0/local/lib -lgmp -lm\nld: warning: option -o appears more than once, first setting taken\nld: fatal: file libzn_poly-0.9.so: unknown file type\nld: fatal: File processing errors. No output written to libzn_poly-0.9.so\ncollect2: ld returned 1 exit status\nmake: *** [libzn_poly.so] Error 1\nError building zn_poly shared library.\n\nreal\t1m38.825s\nuser\t1m34.368s\nsys\t0m3.849s\nsage: An error occurred while installing zn_poly-0.9.p4\n```\n\nThis looks like a problem in spkg-install, which is undoubtedly my fault. The script has in if/elif/else/fi which considers\n\n* A 64-bit build\n* A Solaris build with the Sun linker. \n\nIt does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. \n\nThis should be hopefully quite easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9358\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies\n\n## Hardware & associated software\n\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* 8 GB swap\n* Solaris 10 03/2005 (first release of Solaris 10)\n* 147 GB SEAGATE-ST3146807FC 2 Gbit/s 15,000 rpm fiber channel disk (FCAL)\n* UFS local file systems. \n* gcc 4.4.3 (uses Sun linker and assembler)\n* 64-bit build - SAGE64 was exported to \"yes\"\n\n## How GCC was configured\nGCC can be configured several ways on Solaris. For Solaris 10 SPARC, use of both the Sun linker and Sun assembler are usually recommended, which is what was done here. \n\n```\ndrkirkby@redstart:~$ gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n```\n\n## The problem\nznpoly passes about 40 self-tests, but fails to install properly. \n\n```\nzn_array_mulmid_fft()... ok\nzn_array_mul_fft_dft()... ok\nzn_array_invert()... ok\n\nAll tests passed.\ngcc -O3 -g -m64 -fPIC -L. -I/export/home/drkirkby/sage-4.5.alpha0/local/include \n-I./include -DNDEBUG -o src/tuning.o -c src/tuning.c\nIn file included from ./include/zn_poly.h:75,\n                 from ./include/zn_poly_internal.h:41,\n                 from src/tuning.c:28:\n./include/wide_arith.h:297:2: warning: #warning No assembly implementation of wi\nde multiplication available for this machine; using generic C code instead.\nar -r libzn_poly.a src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mu\nlmid_ks.o src/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o \nsrc/mul_ks.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/z\nn_mod.o\nar: creating libzn_poly.a\nranlib libzn_poly.a\ngcc -shared -m64  -Wl,-soname,libzn_poly-`cat VERSION`.so -o libzn_poly-`cat VER\nSION`.so src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mulmid_ks.o \nsrc/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o src/mul_ks\n.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/zn_mod.o -L\n/export/home/drkirkby/sage-4.5.alpha0/local/lib -lgmp -lm\nld: warning: option -o appears more than once, first setting taken\nld: fatal: file libzn_poly-0.9.so: unknown file type\nld: fatal: File processing errors. No output written to libzn_poly-0.9.so\ncollect2: ld returned 1 exit status\nmake: *** [libzn_poly.so] Error 1\nError building zn_poly shared library.\n\nreal 1m38.825s\nuser 1m34.368s\nsys 0m3.849s\nsage: An error occurred while installing zn_poly-0.9.p4\n```\n\nThis looks like a problem in spkg-install, which was written to consider two Solaris/64-bit releated possibilities.\n\n* A 64-bit build\n* A Solaris build with the Sun linker. \n\nIt does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. Clearly that was an oversight on my part. \n\n## Likely solution\nThis should be hopefully quite easy to fix. spkg-install needs to consider the possibility of a 64-bit Solaris build with the Sun linker. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9358\n\n",
+    "closed_at": "2010-08-15T08:04:25Z",
     "created_at": "2010-06-28T16:47:26Z",
     "labels": [
         "component: porting: solaris",
@@ -20,6 +21,32 @@ Assignee: drkirkby
 
 CC:  @jhpalmieri @jaapspies
 
+## Hardware & associated software
+
+
+* Sun Blade 1000
+* 2 x 900 MHz UltraSPARC III+ CPUs
+* 2 GB RAM
+* 8 GB swap
+* Solaris 10 03/2005 (first release of Solaris 10)
+* 147 GB SEAGATE-ST3146807FC 2 Gbit/s 15,000 rpm fiber channel disk (FCAL)
+* UFS local file systems. 
+* gcc 4.4.3 (uses Sun linker and assembler)
+* 64-bit build - SAGE64 was exported to "yes"
+
+## How GCC was configured
+GCC can be configured several ways on Solaris. For Solaris 10 SPARC, use of both the Sun linker and Sun assembler are usually recommended, which is what was done here. 
+
+```
+drkirkby@redstart:~$ gcc -v
+Using built-in specs.
+Target: sparc-sun-solaris2.10
+Configured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran
+Thread model: posix
+gcc version 4.4.3 (GCC)
+```
+
+## The problem
 znpoly passes about 40 self-tests, but fails to install properly. 
 
 ```
@@ -53,20 +80,23 @@ collect2: ld returned 1 exit status
 make: *** [libzn_poly.so] Error 1
 Error building zn_poly shared library.
 
-real	1m38.825s
-user	1m34.368s
-sys	0m3.849s
+real 1m38.825s
+user 1m34.368s
+sys 0m3.849s
 sage: An error occurred while installing zn_poly-0.9.p4
 ```
 
-This looks like a problem in spkg-install, which is undoubtedly my fault. The script has in if/elif/else/fi which considers
+This looks like a problem in spkg-install, which was written to consider two Solaris/64-bit releated possibilities.
 
 * A 64-bit build
 * A Solaris build with the Sun linker. 
 
-It does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. 
+It does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. Clearly that was an oversight on my part. 
 
-This should be hopefully quite easy to fix.
+## Likely solution
+This should be hopefully quite easy to fix. spkg-install needs to consider the possibility of a 64-bit Solaris build with the Sun linker. 
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9358
 

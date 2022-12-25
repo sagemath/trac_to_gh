@@ -1,9 +1,10 @@
-# Issue 3759: make testlong leaves all kinds of crap in SAGE_ROOT
+# Issue 3759: [with patch; positive review] make testlong leaves all kinds of crap in SAGE_ROOT
 
 archive/issues_003759.json:
 ```json
 {
     "body": "Assignee: failure\n\n```\nbsd:sage-3.1.alpha0 was$ ls\n0.png                   devel                   sage.png\n1.png                   doc                     sage0.png\n2.png                   docs-0.html             sage1.png\n3.png                   examples                sage2.png\n4.png                   install.log             sage3.png\n5.png                   ipython                 sage4.png\n6.png                   isogeny_graph.png       sage5.png\n7.png                   local                   sage6.png\n8.png                   makefile                search_tree.png\n9.png                   matplotlibrc            simon.db\nCOPYING.txt             sage                    spkg\nHISTORY.txt             sage-README-osx.txt     test.sobj\nREADME.txt              sage-python             testlong.log\na.png                   sage.db                 tmp\ndata                    sage.eps                tmp.sws\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3759\n\n",
+    "closed_at": "2008-08-15T10:10:10Z",
     "created_at": "2008-08-02T19:01:19Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_003759.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "make testlong leaves all kinds of crap in SAGE_ROOT",
+    "title": "[with patch; positive review] make testlong leaves all kinds of crap in SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3759",
     "user": "https://github.com/williamstein"

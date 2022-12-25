@@ -1,16 +1,17 @@
-# Issue 3386: zn_poly test code is still being run
+# Issue 3386: [with spkg, with positive review] zn_poly test code is still being run
 
 archive/issues_003386.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe build process is still running the full `zn_poly` test suite. This is probably no longer necessary, and makes the build time somewhat longer than it needs to be.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3386\n\n",
+    "closed_at": "2008-06-09T21:14:59Z",
     "created_at": "2008-06-09T14:17:58Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "zn_poly test code is still being run",
+    "title": "[with spkg, with positive review] zn_poly test code is still being run",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3386",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"

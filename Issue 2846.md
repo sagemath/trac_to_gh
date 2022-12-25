@@ -1,16 +1,17 @@
-# Issue 2846: [with patch] no need for bitset.h with new Cython
+# Issue 2846: [with patch, positive review] no need for bitset.h with new Cython
 
 archive/issues_002846.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nI've modified the .pxi file\n\nIssue created by migration from https://trac.sagemath.org/ticket/2846\n\n",
+    "closed_at": "2008-04-07T20:50:30Z",
     "created_at": "2008-04-07T18:36:43Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch] no need for bitset.h with new Cython",
+    "title": "[with patch, positive review] no need for bitset.h with new Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2846",
     "user": "https://github.com/robertwb"

@@ -1,16 +1,17 @@
-# Issue 3199: fix 64 bit OSX build support for zn_poly
+# Issue 3199: [with spkg, positive review] fix 64 bit OSX build support for zn_poly
 
 archive/issues_003199.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/3199\n\n",
+    "closed_at": "2008-08-20T00:26:48Z",
     "created_at": "2008-05-13T16:34:31Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "fix 64 bit OSX build support for zn_poly",
+    "title": "[with spkg, positive review] fix 64 bit OSX build support for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3199",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

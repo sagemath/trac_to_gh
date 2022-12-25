@@ -1,16 +1,17 @@
-# Issue 3175: add 64 bit OSX build support to zlib
+# Issue 3175: [with spkg, positive review] add 64 bit OSX build support to zlib
 
 archive/issues_003175.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3175\n\n",
+    "closed_at": "2008-08-19T01:43:35Z",
     "created_at": "2008-05-13T01:55:59Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "add 64 bit OSX build support to zlib",
+    "title": "[with spkg, positive review] add 64 bit OSX build support to zlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3175",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,9 +1,10 @@
-# Issue 2085: [with patch, needs review] bug in graph_isom and binary_code
+# Issue 2085: [with patch, positive review] bug in graph_isom and binary_code
 
 archive/issues_002085.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThis bug was only exposed by changing the refinement procedure to always return 0: although this slows the algorithm down, it should not change correctness, but errors were cropping up as low as three vertices for digraphs. Since the only way to expose the bug is to slow down the algorithm, there isn't a clear way to add a doctest for it. However, it is imperative that this typo fix get merged in...\n\nAlso, there is a new function included in the bundle, which plays the role of the refinement procedure, but also does some checks to make sure that the assumptions being made on the function are true. This is the first of several \"automatic debugging\" measures I will be taking, to solidify the isomorphism programs.\n\nNOTE: This bundle depends on tickets #1304 and #2082.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2085\n\n",
+    "closed_at": "2008-02-19T15:21:16Z",
     "created_at": "2008-02-07T11:05:30Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_002085.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] bug in graph_isom and binary_code",
+    "title": "[with patch, positive review] bug in graph_isom and binary_code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2085",
     "user": "https://github.com/rlmill"

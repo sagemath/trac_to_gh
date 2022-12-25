@@ -3,10 +3,11 @@
 archive/issues_005491.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nKeywords: sylow_subgoup PSL\n\nThis gives a syntax error:\n\nPSL(8,2).sylow_subgroup(7)\n\nI attach a file showing the details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5491\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nKeywords: sylow_subgroup PSL\n\nThis gives a syntax error:\n\nPSL(8,2).sylow_subgroup(7)\n\nI attach a file showing the details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5491\n\n",
+    "closed_at": "2012-03-04T21:19:59Z",
     "created_at": "2009-03-11T22:33:28Z",
     "labels": [
-        "component: algebra",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
@@ -16,11 +17,11 @@ archive/issues_005491.json:
     "user": "https://github.com/DanGrayson"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
 CC:  @orlitzky
 
-Keywords: sylow_subgoup PSL
+Keywords: sylow_subgroup PSL
 
 This gives a syntax error:
 

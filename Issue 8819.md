@@ -1,17 +1,18 @@
-# Issue 8819: warnings in building documentation of Sage 4.4.1.alpha2
+# Issue 8819: warnings in building documentation of Sage 4.4.2.alpha0
 
 archive/issues_008819.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nBuilding the documentation of Sage 4.4.1.alpha2 results in the following warnings in the reference manual:\n\n```\ndocstring of sage.calculus.interpolators.CCSpline.derivative:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.calculus.interpolators.CCSpline.value:6: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.calculus.interpolators.PSpline.derivative:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.calculus.interpolators.PSpline.value:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sage/modular/modsym/space.py:docstring of sage.modular.modsym.space.ModularSymbolsSpace.abvarquo_rational_cuspidal_subgroup:13: (WARNING/2) Literal block expected; none found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8819\n\n",
+    "body": "Assignee: mvngu\n\nBuilding the documentation of Sage 4.4.1.alpha2 results in the following warnings in the reference manual:\n\n```\ndocstring of sage.calculus.interpolators.CCSpline.derivative:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.calculus.interpolators.CCSpline.value:6: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.calculus.interpolators.PSpline.derivative:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndocstring of sage.calculus.interpolators.PSpline.value:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sage/modular/modsym/space.py:docstring of sage.modular.modsym.space.ModularSymbolsSpace.abvarquo_rational_cuspidal_subgroup:13: (WARNING/2) Literal block expected; none found.\n```\n\nThe same warnings also appear when building the reference manual of Sage 4.4.2.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8819\n\n",
+    "closed_at": "2010-05-12T22:46:28Z",
     "created_at": "2010-04-29T08:26:34Z",
     "labels": [
         "component: documentation",
-        "blocker",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "warnings in building documentation of Sage 4.4.1.alpha2",
+    "title": "warnings in building documentation of Sage 4.4.2.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8819",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
@@ -28,6 +29,8 @@ docstring of sage.calculus.interpolators.PSpline.derivative:7: (WARNING/2) Bulle
 docstring of sage.calculus.interpolators.PSpline.value:7: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 /dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sage/modular/modsym/space.py:docstring of sage.modular.modsym.space.ModularSymbolsSpace.abvarquo_rational_cuspidal_subgroup:13: (WARNING/2) Literal block expected; none found.
 ```
+
+The same warnings also appear when building the reference manual of Sage 4.4.2.alpha0.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8819
 

@@ -4,6 +4,7 @@ archive/issues_007877.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @rbeezer mvngu\n\nA lot of the great stuff in the docstrings for the matrix __getitem__ and __setitem__ functions should be in the reference manual somewhere, maybe http://sagemath.org/doc/reference/sage/matrix/docs.html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7877\n\n",
+    "closed_at": "2010-03-02T21:59:54Z",
     "created_at": "2010-01-09T17:51:19Z",
     "labels": [
         "component: documentation",

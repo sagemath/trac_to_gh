@@ -1,15 +1,16 @@
-# Issue 4022: [with patch, needs review] Gröbner bases over Z and Z/nZ
+# Issue 4022: [with patch, positive review] Gröbner bases over Z and Z/nZ
 
 archive/issues_004022.json:
 ```json
 {
     "body": "Assignee: @malb\n\nThe attached patch implements -- in a slow, lame way -- Gr\u00f6bner bases over `ZZ` and `IntegerModRing` as defined in the Becker & Weispfenning. This code should be replaced by the new Singular code soon-ish, but it can't hurt to have a clean toy implementation.\n\nWhile I think that the `d_basis` implementation is correct, I recommend somebody double checks. Particularly, the `MPolynomial_libsingular.reduce` implementation  for ZZ should receive some careful examination.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4022\n\n",
+    "closed_at": "2008-09-28T18:15:39Z",
     "created_at": "2008-08-31T17:13:50Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] Gr\u00f6bner bases over Z and Z/nZ",
+    "title": "[with patch, positive review] Gr\u00f6bner bases over Z and Z/nZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4022",
     "user": "https://github.com/malb"

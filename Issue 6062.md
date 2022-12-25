@@ -1,16 +1,17 @@
-# Issue 6062: [with patch; needs review] QQ method is_padic_square fails when argument is python int
+# Issue 6062: [with patch; with positive review] QQ method is_padic_square fails when argument is python int
 
 archive/issues_006062.json:
 ```json
 {
     "body": "Assignee: @tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
+    "closed_at": "2009-05-19T00:42:39Z",
     "created_at": "2009-05-18T05:08:40Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch; needs review] QQ method is_padic_square fails when argument is python int",
+    "title": "[with patch; with positive review] QQ method is_padic_square fails when argument is python int",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6062",
     "user": "https://github.com/tornaria"

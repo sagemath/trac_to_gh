@@ -1,16 +1,17 @@
-# Issue 5407: fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)
+# Issue 5407: [with patch; positive review] fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)
 
 archive/issues_005407.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThis patch fixes the bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5407\n\n",
+    "closed_at": "2009-03-02T04:31:50Z",
     "created_at": "2009-03-01T05:59:34Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)",
+    "title": "[with patch; positive review] fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5407",
     "user": "https://github.com/williamstein"

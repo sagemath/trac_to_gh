@@ -1,16 +1,17 @@
-# Issue 6964: implement computation of Dirichlet character of irreducible cuspidal modular symbols space
+# Issue 6964: [with patch, positive review] implement computation of Dirichlet character of irreducible cuspidal modular symbols space
 
 archive/issues_006964.json:
 ```json
 {
     "body": "Assignee: tbd\n\nImplement this function q_eigenform_character described below:\n\n```\nsage: f = ModularSymbols(Gamma1(13),2,sign=1).cuspidal_subspace().decomposition()[0]\nsage: f.q_eigenform(5,'a')\nq + a*q^2 + (-2*a - 4)*q^3 + (-a - 1)*q^4 + O(q^5)\nsage: f.q_eigenform_character('a')\nTraceback (most recent call last):\n...\nAttributeError: 'ModularSymbolsSubspace' object has no attribute 'q_eigenform_character'\n```\n\nIn case f.character() is not None, the above function should be easy to implement -- just return the character.  Otherwise it is harder.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6964\n\n",
+    "closed_at": "2009-09-24T16:13:54Z",
     "created_at": "2009-09-20T00:43:57Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "implement computation of Dirichlet character of irreducible cuspidal modular symbols space",
+    "title": "[with patch, positive review] implement computation of Dirichlet character of irreducible cuspidal modular symbols space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6964",
     "user": "https://github.com/williamstein"

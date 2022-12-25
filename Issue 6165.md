@@ -4,6 +4,7 @@ archive/issues_006165.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen mvngu\n\nThe spkg applies the patch given by Robert Dodier in this thread: http://www.math.utexas.edu/pipermail/maxima/2009/017242.html\n\nBasically, it makes Maxima return eigenvectors associated with each eigenvalue separately, rather than just returning a list of eigenvectors.  It makes it possible to determine the eigenvector associated with an eigenvalue when algebraic multiplicities do not match up with geometric multiplicities.  See the mailing list thread above for an example.\n\nThe new spkg is here: http://sage.math.washington.edu/home/jason/maxima-5.16.3.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6165\n\n",
+    "closed_at": "2009-09-25T06:04:14Z",
     "created_at": "2009-05-31T04:35:49Z",
     "labels": [
         "component: packages: standard",

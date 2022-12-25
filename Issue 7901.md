@@ -3,7 +3,8 @@
 archive/issues_007901.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies @jhpalmieri\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.\n\n     http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package may break. The fix is to simply replace $MKDIR with 'mkdir' in spkg-install. \n\nAn updated .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/pari-2.3.3.p7/ari-2.3.3.p7.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7901\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies @jhpalmieri\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.\n\n     http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package may break. The fix is to simply replace $MKDIR with 'mkdir' in spkg-install. \n\nAn updated .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/pari-2.3.3.p7/pari-2.3.3.p7.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7901\n\n",
+    "closed_at": "2010-01-14T03:01:28Z",
     "created_at": "2010-01-12T04:33:03Z",
     "labels": [
         "component: build",
@@ -28,7 +29,7 @@ It was agreed recently that variables would not be used for very common commands
 
 An updated .spkg can be found at 
 
-http://boxen.math.washington.edu/home/kirkby/portability/pari-2.3.3.p7/ari-2.3.3.p7.spkg
+http://boxen.math.washington.edu/home/kirkby/portability/pari-2.3.3.p7/pari-2.3.3.p7.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/7901
 

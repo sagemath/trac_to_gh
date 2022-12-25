@@ -1,16 +1,17 @@
-# Issue 9879: Segfault in PyNaC 0.2.0.p4
+# Issue 9879: Pynac comparison functions do not provide a SWO
 
 archive/issues_009879.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @zimmermann6\n\nKeywords: pynac\n\nHere is a short example found by Burcin and reproducing the bug:\n\nb = [var('b_%s'%i) for i in range(4)]\n\nprecomp = (2^b_2 + 2)*(2^b_1 + 2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0)\n- 2<sup>(-b_1)*2</sup>b_0 - 2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9) + (2^b_1 +\n2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0) - 2<sup>(-b_1)*2</sup>b_0 -\n2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9)/2^b_2\n\nrepl_dict = {b_0: b_0, b_3: b_1, b_2: b_3, b_1: b_2}\nP = precomp.substitute(repl_dict)\nP.expand() \n\nThis is already being discussed here:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/7c85f02c76012722\n\nIssue created by migration from https://trac.sagemath.org/ticket/9880\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @zimmermann6\n\nKeywords: pynac spkg\n\nHere is a short example found by Burcin and reproducing the bug:\n\n```\nb = [var('b_%s'%i) for i in range(4)]\n\nprecomp = (2^b_2 + 2)*(2^b_1 + 2^(-b_1) + 2^b_1*2^b_0 - 2^b_1*2^(-b_0)\n- 2^(-b_1)*2^b_0 - 2^(-b_1)*2^(-b_0) + 2^b_0 + 2^(-b_0) - 9) + (2^b_1 +\n2^(-b_1) + 2^b_1*2^b_0 - 2^b_1*2^(-b_0) - 2^(-b_1)*2^b_0 -\n2^(-b_1)*2^(-b_0) + 2^b_0 + 2^(-b_0) - 9)/2^b_2\n\nrepl_dict = {b_0: b_0, b_3: b_1, b_2: b_3, b_1: b_2}\nP = precomp.substitute(repl_dict)\nP.expand() \n```\nThis is already being discussed here: http://groups.google.com/group/sage-support/browse_thread/thread/7c85f02c76012722\n\nThe following patches are for the Sage library to enable access to the PyNaC order and randomly test that it is a SWO:\n\nInstall the package from here: http://boxen.math.washington.edu/home/jpflori/spkg/pynac-0.3.0.spkg\n\nThen apply \n1. [attachment:trac_9880_pynac_order-sage_5_10_beta2.patch]\n2. [attachment:trac_9880_randomized_testing-sage_5_10_beta2.patch]\n3. [attachment:trac_9880-doctest_for_9046-sage_5_10_beta2.patch]\n4. [attachment:trac_9880-add_doctests-sage_5_10_beta2.patch]\n5. [attachment:trac_9880-fix_doctests-sage_5_10_beta2.take3.patch]\n6. [attachment:trac_9880-review.patch]\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9880\n\n",
+    "closed_at": "2013-06-06T12:35:30Z",
     "created_at": "2010-09-09T09:01:09Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "Segfault in PyNaC 0.2.0.p4",
+    "title": "Pynac comparison functions do not provide a SWO",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9879",
     "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
@@ -20,23 +21,37 @@ Assignee: @burcin
 
 CC:  @kcrisman @zimmermann6
 
-Keywords: pynac
+Keywords: pynac spkg
 
 Here is a short example found by Burcin and reproducing the bug:
 
+```
 b = [var('b_%s'%i) for i in range(4)]
 
-precomp = (2^b_2 + 2)*(2^b_1 + 2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0)
-- 2<sup>(-b_1)*2</sup>b_0 - 2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9) + (2^b_1 +
-2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0) - 2<sup>(-b_1)*2</sup>b_0 -
-2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9)/2^b_2
+precomp = (2^b_2 + 2)*(2^b_1 + 2^(-b_1) + 2^b_1*2^b_0 - 2^b_1*2^(-b_0)
+- 2^(-b_1)*2^b_0 - 2^(-b_1)*2^(-b_0) + 2^b_0 + 2^(-b_0) - 9) + (2^b_1 +
+2^(-b_1) + 2^b_1*2^b_0 - 2^b_1*2^(-b_0) - 2^(-b_1)*2^b_0 -
+2^(-b_1)*2^(-b_0) + 2^b_0 + 2^(-b_0) - 9)/2^b_2
 
 repl_dict = {b_0: b_0, b_3: b_1, b_2: b_3, b_1: b_2}
 P = precomp.substitute(repl_dict)
 P.expand() 
+```
+This is already being discussed here: http://groups.google.com/group/sage-support/browse_thread/thread/7c85f02c76012722
 
-This is already being discussed here:
-http://groups.google.com/group/sage-support/browse_thread/thread/7c85f02c76012722
+The following patches are for the Sage library to enable access to the PyNaC order and randomly test that it is a SWO:
+
+Install the package from here: http://boxen.math.washington.edu/home/jpflori/spkg/pynac-0.3.0.spkg
+
+Then apply 
+1. [attachment:trac_9880_pynac_order-sage_5_10_beta2.patch]
+2. [attachment:trac_9880_randomized_testing-sage_5_10_beta2.patch]
+3. [attachment:trac_9880-doctest_for_9046-sage_5_10_beta2.patch]
+4. [attachment:trac_9880-add_doctests-sage_5_10_beta2.patch]
+5. [attachment:trac_9880-fix_doctests-sage_5_10_beta2.take3.patch]
+6. [attachment:trac_9880-review.patch]
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9880
 

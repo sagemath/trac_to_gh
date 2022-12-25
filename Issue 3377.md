@@ -1,16 +1,17 @@
-# Issue 3377: [with patch, needs review] torsion for elliptic curves over number fields
+# Issue 3377: [with new patch, positive review]  torsion and other functions for elliptic curves over number fields
 
 archive/issues_003377.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n \n It computes the torsion subgroup of an elliptic curve over a number field. The method is the usual idea: Find an upper bound for the order, by considering a few reductions of the elliptic curve at places of small residue fields. Then construct the points by finding roots of the division polynomials over the number field.\n\n This patch changes the file ell_number_field.py and adds a file ell_nf_torsion.py.\n\n\n (sorry, if I am doing something wrong here : I am a trac-newbie !)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3377\n\n",
+    "closed_at": "2008-09-03T16:13:07Z",
     "created_at": "2008-06-06T17:16:06Z",
     "labels": [
         "component: number theory",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] torsion for elliptic curves over number fields",
+    "title": "[with new patch, positive review]  torsion and other functions for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3377",
     "user": "https://github.com/categorie"

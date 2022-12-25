@@ -1,22 +1,23 @@
-# Issue 4713: make an apply_map function for vectors
+# Issue 4713: [with patch, positive review] make an apply_map function for vectors
 
 archive/issues_004713.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMatrices have the function; it would be handy for vectors to also have this utility function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4713\n\n",
+    "body": "Assignee: @jasongrout\n\nMatrices have the function; it would be handy for vectors to also have this utility function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4713\n\n",
+    "closed_at": "2008-12-07T09:06:44Z",
     "created_at": "2008-12-05T08:08:13Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "make an apply_map function for vectors",
+    "title": "[with patch, positive review] make an apply_map function for vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4713",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 Matrices have the function; it would be handy for vectors to also have this utility function.
 

@@ -1,15 +1,16 @@
-# Issue 6962: [with patch, needs review] Feedback vertex set, Feedback arc set
+# Issue 6962: Feedback vertex set, Feedback arc set
 
 archive/issues_006962.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\nor CBC \n\n```\nsage: install_package('glpk') \n```\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function min_vertex_cover from #6680.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
+    "body": "Assignee: @rlmill\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\nor CBC \n\n```\nsage: install_package('glpk') \n```\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function vertex_cover from #7600 and #7721\n\nNathann\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
+    "closed_at": "2009-12-19T20:06:08Z",
     "created_at": "2009-09-19T18:45:45Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "[with patch, needs review] Feedback vertex set, Feedback arc set",
+    "title": "Feedback vertex set, Feedback arc set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6962",
     "user": "https://github.com/nathanncohen"
@@ -37,9 +38,11 @@ sage: install_package('glpk')
 ```
 installed. You will find a helpful documentation about the construction of the Linear Program in the docstring.
 
-One of the docstrings uses the function min_vertex_cover from #6680.
+One of the docstrings uses the function vertex_cover from #7600 and #7721
 
 Nathann
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6962
 

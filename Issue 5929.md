@@ -1,24 +1,31 @@
-# Issue 5929: switch from clisp to ecl
+# Issue 5929: [with patch, positive review] Fix CTRL-C assumption problem with clisp
 
 archive/issues_005929.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nReplace clisp by ECL in Sage.  Need for the Solaris port.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5929\n\n",
+    "body": "Assignee: @tornaria\n\nCurrently when encountering assumptions in Maxima we send two CTRL-C and then rerun the computation with assumptions set. This is slow, not particularly robust, i.e. it regularly fails on 64 bit OSX, Solaris and so on. The two patches by Gonzalo do fix the problem.\n\nNote that this came up during the debugging of the ecl->clisp switch, but all that has been moved to #6024.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5929\n\n",
+    "closed_at": "2009-05-12T06:34:51Z",
     "created_at": "2009-04-29T01:50:33Z",
     "labels": [
         "component: porting",
         "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "switch from clisp to ecl",
+    "title": "[with patch, positive review] Fix CTRL-C assumption problem with clisp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5929",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mabshoff
+Assignee: @tornaria
 
-Replace clisp by ECL in Sage.  Need for the Solaris port.
+Currently when encountering assumptions in Maxima we send two CTRL-C and then rerun the computation with assumptions set. This is slow, not particularly robust, i.e. it regularly fails on 64 bit OSX, Solaris and so on. The two patches by Gonzalo do fix the problem.
+
+Note that this came up during the debugging of the ecl->clisp switch, but all that has been moved to #6024.
+
+Cheers,
+
+Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/5929
 

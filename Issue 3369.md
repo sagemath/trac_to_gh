@@ -4,6 +4,7 @@ archive/issues_003369.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nCC:  cwitty @jasongrout\n\nSee, e.g. discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/bcdc671d2791056e/e086a9d59ff4b9ba\n\nIssue created by migration from https://trac.sagemath.org/ticket/3369\n\n",
+    "closed_at": "2008-06-09T06:16:26Z",
     "created_at": "2008-06-05T00:08:53Z",
     "labels": [
         "component: calculus",

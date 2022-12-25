@@ -4,6 +4,7 @@ archive/issues_007526.json:
 ```json
 {
     "body": "Assignee: tbd\n\ne.g. in __mod__, we should coerce other only if needed.\nThis gives great speed up, e.g:\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 677 \u00b5s per loop  #Before\n625 loops, best of 3: 60.3 \u00b5s per loop #After\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7526\n\n",
+    "closed_at": "2009-11-29T05:48:24Z",
     "created_at": "2009-11-24T21:57:05Z",
     "labels": [
         "component: performance",

@@ -1,9 +1,10 @@
-# Issue 2645: arrow3d is sometimes too long
+# Issue 2645: [with patch, with positive review] arrow3d is sometimes too long
 
 archive/issues_002645.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe patch below cuts off the shaft and part of the head if an arrow3d is too long for the given vector.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2645\n\n",
+    "closed_at": "2008-03-27T07:42:10Z",
     "created_at": "2008-03-22T15:41:23Z",
     "labels": [
         "component: graphics",
@@ -11,7 +12,7 @@ archive/issues_002645.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "arrow3d is sometimes too long",
+    "title": "[with patch, with positive review] arrow3d is sometimes too long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2645",
     "user": "https://github.com/jasongrout"

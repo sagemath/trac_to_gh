@@ -1,16 +1,17 @@
-# Issue 6552: bug in depth-first searching
+# Issue 6552: [with patch, positive review] bug in depth-first searching
 
 archive/issues_006552.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nHere is a bug in the depth-first searching of a graph:\n\n```\n\nsage: D = DiGraph( { 0: [1,2,3], 1: [4,5], 2: [5], 3: [6], 5: [7], 6: [7], 7: [0]})\nsage: list(D.depth_first_search(0, ignore_direction=True))                         \n[0, 7, 6, 5, 3, 2, 1, 4]\n```\n\nIt should be `[0, 7, 6, 3, 5, 2, 1, 4]`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6552\n\n",
+    "closed_at": "2009-07-23T03:37:20Z",
     "created_at": "2009-07-18T10:28:04Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "bug in depth-first searching",
+    "title": "[with patch, positive review] bug in depth-first searching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6552",
     "user": "https://github.com/jasongrout"

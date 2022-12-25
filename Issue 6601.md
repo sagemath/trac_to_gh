@@ -4,6 +4,7 @@ archive/issues_006601.json:
 ```json
 {
     "body": "Assignee: tbd\n\nI tried to run a script and python crashed trying to load pbori. Sage_crash_report.txt is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6601\n\n",
+    "closed_at": "2010-01-16T23:30:42Z",
     "created_at": "2009-07-23T12:14:56Z",
     "labels": [
         "component: algebra",

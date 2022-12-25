@@ -1,15 +1,16 @@
-# Issue 1275: [with bundle] implementation of QQbar
+# Issue 1275: [with bundle, three cheers] implementation of QQbar
 
 archive/issues_001275.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe attached qqbar.hg bundle provides an implementation of QQbar (the algebraic closure of the rationals), with an embedding into CC.  (The embedding is built-in, so there's no version without the embedding.)\n\ntestall passes on both 32-bit and 64-bit x86 Linux.\n\nThe bundle requires the new MPFI spkg from #1268, and the patches from #1270 and #1273.\n\nThe bundle contains two patches.  The first has all the actual functionality; the second only handles the file rename from algebraic_real.py to qqbar.py.  I'm going to also attach a copy of this first patch, for review purposes; but it should not be applied separately--apply the bundle instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1275\n\n",
+    "closed_at": "2007-12-02T05:39:09Z",
     "created_at": "2007-11-25T22:50:06Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with bundle] implementation of QQbar",
+    "title": "[with bundle, three cheers] implementation of QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1275",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

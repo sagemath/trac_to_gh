@@ -1,22 +1,23 @@
-# Issue 2492: Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables
+# Issue 2492: [with patch, with positive review] Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables
 
 archive/issues_002492.json:
 ```json
 {
-    "body": "Assignee: tba\n\nThere seems to be a lot of duplication now coverage is at 100%\n\nMaybe the Examples in __init__ and friends should be suppressed?\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2492\n\n",
+    "body": "Assignee: @mwhansen\n\nThere seems to be a lot of duplication now coverage is at 100%\n\nMaybe the Examples in __init__ and friends should be suppressed?\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2492\n\n",
+    "closed_at": "2008-03-16T23:10:48Z",
     "created_at": "2008-03-12T14:21:34Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables",
+    "title": "[with patch, with positive review] Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2492",
     "user": "https://github.com/jaapspies"
 }
 ```
-Assignee: tba
+Assignee: @mwhansen
 
 There seems to be a lot of duplication now coverage is at 100%
 

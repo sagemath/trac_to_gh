@@ -1,9 +1,10 @@
-# Issue 6260: sage -startuptime is totally broken in sage-4.0.1
+# Issue 6260: [with patch; positive review] sage -startuptime is totally broken in sage-4.0.1
 
 archive/issues_006260.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nsubject says it all.  This has something to do with hitting new code because of factoring out dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6260\n\n",
+    "closed_at": "2009-06-13T22:54:33Z",
     "created_at": "2009-06-11T15:31:33Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_006260.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "sage -startuptime is totally broken in sage-4.0.1",
+    "title": "[with patch; positive review] sage -startuptime is totally broken in sage-4.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6260",
     "user": "https://github.com/williamstein"

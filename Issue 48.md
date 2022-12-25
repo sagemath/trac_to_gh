@@ -3,10 +3,11 @@
 archive/issues_000048.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nOn Tue, 12 Sep 2006 17:32:37 -0700, Rob Gross <gross`@`bc.edu> wrote:\n \nI finally found my error, by deleting every alias and environment\nvariable in turn and seeing if I could then build sage successfully\nfrom scratch.  I'm still not sure why defining the environment\nvariable TMPDIR as /tmp caused a problem, but it did.  TMPDIR defaults\nto /tmp anyway, according to \"man ar\" which is why I'm a bit confused\nwhy it caused a problem.\n \nI can't remember why I had bothered to define TMPDIR in the first\nplace, but there must have been some other build at some other time\nthat needed it to be defined.\n \nThanks for all of your help.  I suppose that adding a check to make\nsure that no one else commits this particular act of stupidity might\nbe a good idea, but it's impossible to guess at all of the potential\nthings that could go wrong.--Rob\n \nI can put \"unset TMPDIR\" in the spkg-install file for singular.  I'm\nreally glad you tracked this down precisely!\n \nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/48\n\n",
+    "body": "Assignee: somebody\n\nOn Tue, 12 Sep 2006 17:32:37 -0700, Rob Gross <gross`@`bc.edu> wrote:\n\nI finally found my error, by deleting every alias and environment\nvariable in turn and seeing if I could then build sage successfully\nfrom scratch.  I'm still not sure why defining the environment\nvariable TMPDIR as /tmp caused a problem, but it did.  TMPDIR defaults\nto /tmp anyway, according to \"man ar\" which is why I'm a bit confused\nwhy it caused a problem.\n\nI can't remember why I had bothered to define TMPDIR in the first\nplace, but there must have been some other build at some other time\nthat needed it to be defined.\n\nThanks for all of your help.  I suppose that adding a check to make\nsure that no one else commits this particular act of stupidity might\nbe a good idea, but it's impossible to guess at all of the potential\nthings that could go wrong.--Rob\n\nI can put \"unset TMPDIR\" in the spkg-install file for singular.  I'm\nreally glad you tracked this down precisely!\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/48\n\n",
+    "closed_at": "2007-01-13T02:10:56Z",
     "created_at": "2006-09-13T09:28:23Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -19,26 +20,26 @@ archive/issues_000048.json:
 Assignee: somebody
 
 On Tue, 12 Sep 2006 17:32:37 -0700, Rob Gross <gross`@`bc.edu> wrote:
- 
+
 I finally found my error, by deleting every alias and environment
 variable in turn and seeing if I could then build sage successfully
 from scratch.  I'm still not sure why defining the environment
 variable TMPDIR as /tmp caused a problem, but it did.  TMPDIR defaults
 to /tmp anyway, according to "man ar" which is why I'm a bit confused
 why it caused a problem.
- 
+
 I can't remember why I had bothered to define TMPDIR in the first
 place, but there must have been some other build at some other time
 that needed it to be defined.
- 
+
 Thanks for all of your help.  I suppose that adding a check to make
 sure that no one else commits this particular act of stupidity might
 be a good idea, but it's impossible to guess at all of the potential
 things that could go wrong.--Rob
- 
+
 I can put "unset TMPDIR" in the spkg-install file for singular.  I'm
 really glad you tracked this down precisely!
- 
+
 William
 
 Issue created by migration from https://trac.sagemath.org/ticket/48

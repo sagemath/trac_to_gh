@@ -4,6 +4,7 @@ archive/issues_009050.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis is so that Cygwin will find the shared library before it finds the static library; otherwise, there are lots of segfaults in Sage under Cygwin\n\nIssue created by migration from https://trac.sagemath.org/ticket/9050\n\n",
+    "closed_at": "2010-05-26T01:08:21Z",
     "created_at": "2010-05-25T22:54:28Z",
     "labels": [
         "component: porting: cygwin",

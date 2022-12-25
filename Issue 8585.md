@@ -4,6 +4,7 @@ archive/issues_008585.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  sage-combinat nborie\n\nKeywords: Empty Set, PermutationGroup\n\nSage can't properly work with SymmetricGroup(0) or PermutationsGroup on the\nempty set.\n\n```\nsage: SymmetricGroup(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n[...]\nValueError: min() arg is an empty sequence\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8585\n\n",
+    "closed_at": "2010-04-19T05:14:41Z",
     "created_at": "2010-03-23T09:01:45Z",
     "labels": [
         "component: group theory",

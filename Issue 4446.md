@@ -1,15 +1,16 @@
-# Issue 4446: [with patch, needs work] New module complex_mpc using lib mpc for complex multiprecision arithmetic
+# Issue 4446: New module complex_mpc using lib mpc for complex multiprecision arithmetic
 
 archive/issues_004446.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @robertwb @williamstein @mwhansen mvngu @haraldschilly @nexttime\n\nHerewith and there ([http://www.loria.fr/~thevenyp/complex_mpc.patch](http://www.loria.fr/~thevenyp/complex_mpc.patch) 38K) is a patch with new classes using the MPC library for complex multi-precision arithmetic (see ticket #4308 for the associated spackage).\n\nThis is an adaptation of the module real_mpfr and of ComplexField and [ComplexNumber](ComplexNumber) classes. It adds a class MPComplexField with precision (common to both part) and rounding modes (specific to each part) and a class MPComplexNumber.\n\nThis first attempt implements only the complex arithmetic.\n\nThe test suite does fail due to coercion problems I can't solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4446\n\n",
+    "closed_at": "2010-09-30T00:48:14Z",
     "created_at": "2008-11-05T18:04:29Z",
     "labels": [
-        "component: optional packages"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "[with patch, needs work] New module complex_mpc using lib mpc for complex multiprecision arithmetic",
+    "title": "New module complex_mpc using lib mpc for complex multiprecision arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4446",
     "user": "https://trac.sagemath.org/admin/accounts/users/thevenyp"

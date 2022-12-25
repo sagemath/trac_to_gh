@@ -3,7 +3,8 @@
 archive/issues_009795.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nSee http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix\n\nIssue created by migration from https://trac.sagemath.org/ticket/9796\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nKeywords: beginner\n\nSee http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix\n\nIssue created by migration from https://trac.sagemath.org/ticket/9796\n\n",
+    "closed_at": "2011-02-16T08:49:58Z",
     "created_at": "2010-08-24T15:54:40Z",
     "labels": [
         "component: linear algebra"
@@ -18,6 +19,8 @@ archive/issues_009795.json:
 Assignee: jason, was
 
 CC:  @kcrisman
+
+Keywords: beginner
 
 See http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix
 

@@ -1,16 +1,17 @@
-# Issue 7071: palp-1.1.p1 ignores CC variable and uses gcc, so fails with Sun Studio.
+# Issue 7071: palp spkg ignores global CC and CFLAGS variables
 
 archive/issues_007071.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nThis is one of the many packages that ignore the setting of the variable CC. \n\n```\npalp-1.1.p1/src/GNUmakefile\npalp-1.1.p1/src/mori.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/palp-1.1.p1/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Coord.o Coord.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7071\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021\n\nThis is one of the many packages that ignore the setting of the variable CC. \n\n```\npalp-1.1.p1/src/GNUmakefile\npalp-1.1.p1/src/mori.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/palp-1.1.p1/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Coord.o Coord.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat.c\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c\n\n```\n\nTo update:\n* Replace the palp spkg with [http://wstein.org/home/ohanar/spkgs/palp-2.0.p1.spkg](http://wstein.org/home/ohanar/spkgs/palp-2.0.p1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7071\n\n",
+    "closed_at": "2012-03-04T21:19:52Z",
     "created_at": "2009-09-29T13:27:04Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
-    "title": "palp-1.1.p1 ignores CC variable and uses gcc, so fails with Sun Studio.",
+    "title": "palp spkg ignores global CC and CFLAGS variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7071",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
@@ -50,6 +51,9 @@ gcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Rat.o Rat
 gcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o Vertex.o Vertex.c
 
 ```
+
+To update:
+* Replace the palp spkg with [http://wstein.org/home/ohanar/spkgs/palp-2.0.p1.spkg](http://wstein.org/home/ohanar/spkgs/palp-2.0.p1.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/7071
 

@@ -1,16 +1,17 @@
-# Issue 2391: module docstring bug running filename.sage from the command line
+# Issue 2391: [with patch; positive review] module docstring bug running filename.sage from the command line
 
 archive/issues_002391.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n\n\nOn Thu, Feb 28, 2008 at 9:36 AM, Kate <kate01123@gmail.com> wrote:\n> \n>  What gives with the following session below?\n>  More specifically, what happens to the file docstring\n>  when the file has a .sage extension?\n\nThere is a bug in the .sage --> .py conversion process that\nyour example below illustrates.  We are tracking this at\n\n\n>  \n>  =============== begin shell session ===============\n>  \n>  $ cat > sanity\n>  #!/usr/bin/env sage\n>  r\"\"\"Here is a docstring for this file.\"\"\"\n>  print __doc__\n>  <control-d>\n>  $ cat sanity\n>  #!/usr/bin/env sage\n>  r\"\"\"Here is a docstring for this file.\"\"\"\n>  print __doc__\n>  $ chmod +x sanity\n>  $ ./sanity\n>  Here is a docstring for this file.\n>  $ cp sanity madness.sage\n>  $ ./madness.sage\n>  None\n>  $\n>  \n>  =============== end shell session ===============\n>  \n>  Kate\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2391\n\n",
+    "closed_at": "2008-03-05T05:47:32Z",
     "created_at": "2008-03-05T00:41:57Z",
     "labels": [
         "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "module docstring bug running filename.sage from the command line",
+    "title": "[with patch; positive review] module docstring bug running filename.sage from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2391",
     "user": "https://github.com/williamstein"

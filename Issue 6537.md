@@ -1,9 +1,10 @@
-# Issue 6537: [with patch, needs review] Memleak in C graphs
+# Issue 6537: [with patch, positive review] Memleak in C graphs
 
 archive/issues_006537.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nShouldn't have needed valgrind to spot this one...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6537\n\n",
+    "closed_at": "2009-07-18T09:05:57Z",
     "created_at": "2009-07-15T16:25:06Z",
     "labels": [
         "component: memleak",
@@ -11,7 +12,7 @@ archive/issues_006537.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "[with patch, needs review] Memleak in C graphs",
+    "title": "[with patch, positive review] Memleak in C graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6537",
     "user": "https://github.com/rlmill"

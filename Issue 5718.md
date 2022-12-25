@@ -1,16 +1,17 @@
-# Issue 5718: notebook -- %hide works fine in the worksheet but shows up when printing
+# Issue 5718: [with patch, positive review] notebook -- %hide works fine in the worksheet but shows up when printing
 
 archive/issues_005718.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI was able to easily reproduce the following bug in sage-3.4.\n\n```\nHello,\n\n%hide works fine in the worksheet but shows up when printing.  Any\nadvice is appreciated.\n\n - Sage3.4 VMWare Image\n - Dell Vostro 200 desktop\n\nThanks,\nlmc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5718\n\n",
+    "closed_at": "2009-06-04T18:31:09Z",
     "created_at": "2009-04-08T19:40:13Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "notebook -- %hide works fine in the worksheet but shows up when printing",
+    "title": "[with patch, positive review] notebook -- %hide works fine in the worksheet but shows up when printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5718",
     "user": "https://github.com/williamstein"

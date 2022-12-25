@@ -1,16 +1,17 @@
-# Issue 2316: dsage.start_all() can leave zombie workers around
+# Issue 2316: [with patch, positive review] dsage.start_all() can leave zombie workers around
 
 archive/issues_002316.json:
 ```json
 {
     "body": "Assignee: @yqiang\n\nCC:  @williamstein\n\nKeywords: dsage\n\nIf you do dsage.start_all() and kill the server without killing the workers, the workers will be left hanging around so that the next time you do dsage.start_all(), you'll have twice as many workers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2316\n\n",
+    "closed_at": "2008-04-07T01:18:59Z",
     "created_at": "2008-02-26T17:40:08Z",
     "labels": [
         "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "dsage.start_all() can leave zombie workers around",
+    "title": "[with patch, positive review] dsage.start_all() can leave zombie workers around",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2316",
     "user": "https://github.com/yqiang"

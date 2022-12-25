@@ -1,16 +1,17 @@
-# Issue 708: performance issue -- Magma is way faster at testing some polynomials for irreducibility
+# Issue 708: [with patch, positive review] performance issue -- Magma is way faster at testing some polynomials for irreducibility
 
 archive/issues_000708.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @burcin\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 31.45 s, sys: 0.10 s, total: 31.54 s\nWall time: 31.79\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 2.57\ntrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/708\n\n",
+    "closed_at": "2008-08-30T01:48:25Z",
     "created_at": "2007-09-20T17:40:44Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "performance issue -- Magma is way faster at testing some polynomials for irreducibility",
+    "title": "[with patch, positive review] performance issue -- Magma is way faster at testing some polynomials for irreducibility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/708",
     "user": "https://github.com/williamstein"

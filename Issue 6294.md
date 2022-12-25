@@ -1,16 +1,17 @@
-# Issue 6294: lisp command in sage is now totally broken (because of ecl switch)
+# Issue 6294: [with patch, positive review] lisp command in sage is now totally broken (because of ecl switch)
 
 archive/issues_006294.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @maxthemouse\n\n```\nwstein@bsd:~/build/sage-4.0.2.alpha3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: lisp.eval('(+ 2 3)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.0.2.alpha3, Release Date: 2009-06-13                |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/was/.sage/temp/bsd.local/80207/_Users_was__sage_init_sage_0.py in <module>()\n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.pyc in eval(self, code, strip, **kwds)\n    116         \"\"\"\n    117         with gc_disabled():\n--> 118             self._synchronize()\n    119             code = str(code)\n    120             code = code.strip()\n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.pyc in _synchronize(self)\n    192         E = self._expect\n    193         if E is None:\n--> 194             self._start()\n    195             E = self._expect\n    196         r = random.randrange(2147483647)\n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.pyc in _start(self, *args, **kwds)\n    186             True\n    187         \"\"\"\n--> 188         Expect._start(self, *args, **kwds)\n    189         self.__in_seq = 1\n    190 \n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in _start(self, alt_message, block_during_init)\n    457             failed_to_start.append(self.__name)\n    458             raise RuntimeError, \"Unable to start %s because the command '%s' failed.\\n%s\"%(\n--> 459                 self.__name, cmd, self._install_hints())\n    460 \n    461         os.chdir(current_path)\n\nRuntimeError: Unable to start Lisp because the command 'clisp-noreadline --silent -on-error abort' failed.\n\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6294\n\n",
+    "closed_at": "2009-08-30T12:23:26Z",
     "created_at": "2009-06-15T09:21:19Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "lisp command in sage is now totally broken (because of ecl switch)",
+    "title": "[with patch, positive review] lisp command in sage is now totally broken (because of ecl switch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6294",
     "user": "https://github.com/williamstein"

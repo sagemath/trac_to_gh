@@ -1,15 +1,16 @@
-# Issue 5860: delete sage/catalogue
+# Issue 5860: [with patch; with positive review] delete sage/catalogue
 
 archive/issues_005860.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThis turned out to be a bad idea. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5860\n\n",
+    "closed_at": "2009-04-30T05:03:33Z",
     "created_at": "2009-04-22T23:34:15Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "delete sage/catalogue",
+    "title": "[with patch; with positive review] delete sage/catalogue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5860",
     "user": "https://github.com/williamstein"

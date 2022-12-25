@@ -1,15 +1,16 @@
-# Issue 8740: Upgrade sqlalchemy to 0.6.0
+# Issue 8740: Upgrade sqlalchemy to 0.7.6
 
 archive/issues_008740.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  tdumol @kiwifb\n\nThe latest version of SQLAlchemy is now [0.6.0](http://www.sqlalchemy.org/trac/wiki/06Migration). This brings a bunch of changes, notably a native unicode mode, which would be a lot faster for unicode rich applications, such as the Sage Notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8740\n\n",
+    "body": "Assignee: tbd\n\nCC:  tdumol @kiwifb\n\nThe latest version of SQLAlchemy is now 0.7.6. This brings a bunch of changes, notably a native unicode mode, which would be a lot faster for unicode rich applications, such as the Sage Notebook.\n\nThe new package is at http://sage.math.washington.edu/home/mhansen/sqlalchemy-0.7.6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8740\n\n",
+    "closed_at": "2014-08-20T20:33:56Z",
     "created_at": "2010-04-21T19:28:18Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Upgrade sqlalchemy to 0.6.0",
+    "title": "Upgrade sqlalchemy to 0.7.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8740",
     "user": "https://github.com/TimDumol"
@@ -19,7 +20,9 @@ Assignee: tbd
 
 CC:  tdumol @kiwifb
 
-The latest version of SQLAlchemy is now [0.6.0](http://www.sqlalchemy.org/trac/wiki/06Migration). This brings a bunch of changes, notably a native unicode mode, which would be a lot faster for unicode rich applications, such as the Sage Notebook.
+The latest version of SQLAlchemy is now 0.7.6. This brings a bunch of changes, notably a native unicode mode, which would be a lot faster for unicode rich applications, such as the Sage Notebook.
+
+The new package is at http://sage.math.washington.edu/home/mhansen/sqlalchemy-0.7.6.spkg
 
 Issue created by migration from https://trac.sagemath.org/ticket/8740
 

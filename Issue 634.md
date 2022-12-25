@@ -4,6 +4,7 @@ archive/issues_000634.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nTitel says it all.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/634\n\n",
+    "closed_at": "2007-09-15T22:44:59Z",
     "created_at": "2007-09-10T04:06:28Z",
     "labels": [
         "component: interfaces"

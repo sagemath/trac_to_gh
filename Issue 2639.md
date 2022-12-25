@@ -1,15 +1,16 @@
-# Issue 2639: ZZ(QQbar(0)) fails
+# Issue 2639: [with patch, positive review] ZZ(QQbar(0)) fails
 
 archive/issues_002639.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nValues in QQbar cannot be coerced to integers, as reported here: http://groups.google.com/group/sage-devel/browse_thread/thread/8cf79f359cceef3d/e931afceebf3fe35#\n\nIssue created by migration from https://trac.sagemath.org/ticket/2639\n\n",
+    "closed_at": "2008-03-22T09:11:29Z",
     "created_at": "2008-03-21T22:04:39Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "ZZ(QQbar(0)) fails",
+    "title": "[with patch, positive review] ZZ(QQbar(0)) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2639",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -1,21 +1,22 @@
-# Issue 2962: modify .name() method for ExpectElements to allow renaming
+# Issue 2962: [with patch, with positive review] modify .name() method for ExpectElements to allow renaming
 
 archive/issues_002962.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2962\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2962\n\n",
+    "closed_at": "2008-06-23T06:19:27Z",
     "created_at": "2008-04-20T01:34:20Z",
     "labels": [
         "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "modify .name() method for ExpectElements to allow renaming",
+    "title": "[with patch, with positive review] modify .name() method for ExpectElements to allow renaming",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2962",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 
 

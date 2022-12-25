@@ -1,9 +1,10 @@
-# Issue 5351: Sage 3.3 broke the update of  easy-install.pth
+# Issue 5351: [with patch, positive review] Sage 3.3 broke the update of  easy-install.pth
 
 archive/issues_005351.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen unpacking a Sage 3.3 binary the update of easy-install.pth is broken:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\nWarning: something went wrong updating the easy-install.pth file.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5351\n\n",
+    "closed_at": "2009-03-02T05:24:29Z",
     "created_at": "2009-02-23T19:06:18Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_005351.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Sage 3.3 broke the update of  easy-install.pth",
+    "title": "[with patch, positive review] Sage 3.3 broke the update of  easy-install.pth",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5351",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

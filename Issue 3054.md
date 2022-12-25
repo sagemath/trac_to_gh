@@ -1,16 +1,17 @@
-# Issue 3054: copying a graph doesn't copy _pos or _boundary
+# Issue 3054: [with patch, positive review] copying a graph doesn't copy _pos or _boundary
 
 archive/issues_003054.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis means that changing the position of nodes in the copy will affect the original.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3054\n\n",
+    "closed_at": "2008-04-30T02:17:36Z",
     "created_at": "2008-04-29T20:40:10Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "copying a graph doesn't copy _pos or _boundary",
+    "title": "[with patch, positive review] copying a graph doesn't copy _pos or _boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3054",
     "user": "https://github.com/jasongrout"

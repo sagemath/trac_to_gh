@@ -1,22 +1,23 @@
-# Issue 2712: Add 'scalar_part()' and other methods for quaternion elements
+# Issue 2712: [with patch, positive review] Add 'scalar_part()' and other methods for quaternion elements
 
 archive/issues_002712.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFollowing John Cremona's suggestion, I've added 'scalar_part()\", 'pure_part()', and 'is_pure()' for quaternions.\n\nThe method 'is_scalar()' is already implemented, so in a sense, this completes the picture.  This was spurred on by a request on the support list (from Chris Godsil).\n\nThe implementation assumes characteristic not 2, which is OK since it's implicitly or explicitly assumed throughout the quaternion code.\n\nI think the terms 'scalar' and 'pure', for a value in the base ring and having trace 0 (and being non-zero), respectively, is fairly standard.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2712\n\n",
+    "body": "Assignee: cwitty\n\nFollowing John Cremona's suggestion, I've added 'scalar_part()\", 'pure_part()', and 'is_pure()' for quaternions.\n\nThe method 'is_scalar()' is already implemented, so in a sense, this completes the picture.  This was spurred on by a request on the support list (from Chris Godsil).\n\nThe implementation assumes characteristic not 2, which is OK since it's implicitly or explicitly assumed throughout the quaternion code.\n\nI think the terms 'scalar' and 'pure', for a value in the base ring and having trace 0 (and being non-zero), respectively, is fairly standard.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2712\n\n",
+    "closed_at": "2008-03-29T00:44:53Z",
     "created_at": "2008-03-28T21:39:20Z",
     "labels": [
-        "component: cygwin",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Add 'scalar_part()' and other methods for quaternion elements",
+    "title": "[with patch, positive review] Add 'scalar_part()' and other methods for quaternion elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2712",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: mabshoff
+Assignee: cwitty
 
 Following John Cremona's suggestion, I've added 'scalar_part()", 'pure_part()', and 'is_pure()' for quaternions.
 

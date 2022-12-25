@@ -3,10 +3,11 @@
 archive/issues_005903.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nCC:  @nexttime\n\nThe dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.\n\nThese directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:\n\n```\ncddlib-094f\neclib-20080310.p7\nextcode-3.4.1\nflint-1.2.4.p1\nflintqs-20070817.p4\ngap-4.4.10.p11\ngenus2reduction-0.3.p5\ngfan-0.3.p4\ngivaro-3.2.13rc2\niml-1.0.1.p11\njmol-11.6.16.p0\nlcalc-20080205.p2\nlibfplll-2.1.6-20071129.p5\nlibm4ri-20090128\nlinbox-1.1.6\nntl-5.4.2.p6\npalp-1.1.p1\npolybori-0.5rc.p6\nrubiks-20070912.p8\nscipy_sandbox-20071020.p3\nsingular-3-0-4-4-20080711.p4\nsymmetrica-2.0.p2\nsympow-1.018.1.p6\ntachyon-0.98beta.p8\nzn_poly-0.9.p0\n```\n\nSince this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
+    "body": "Assignee: @timabbott\n\nCC:  @nexttime\n\nKeywords: sd32\n\nThe `dist/` directories currently shipped in various Sage `.spkg`'s are no longer used and should be removed.  The list of packages needing this treatment is:\n\n* rubiks\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
+    "closed_at": "2014-01-10T07:29:52Z",
     "created_at": "2009-04-26T06:03:37Z",
     "labels": [
-        "component: debian-package"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "Remove dist directories from Sage distribution",
@@ -19,39 +20,12 @@ Assignee: @timabbott
 
 CC:  @nexttime
 
-The dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.
+Keywords: sd32
 
-These directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:
+The `dist/` directories currently shipped in various Sage `.spkg`'s are no longer used and should be removed.  The list of packages needing this treatment is:
 
-```
-cddlib-094f
-eclib-20080310.p7
-extcode-3.4.1
-flint-1.2.4.p1
-flintqs-20070817.p4
-gap-4.4.10.p11
-genus2reduction-0.3.p5
-gfan-0.3.p4
-givaro-3.2.13rc2
-iml-1.0.1.p11
-jmol-11.6.16.p0
-lcalc-20080205.p2
-libfplll-2.1.6-20071129.p5
-libm4ri-20090128
-linbox-1.1.6
-ntl-5.4.2.p6
-palp-1.1.p1
-polybori-0.5rc.p6
-rubiks-20070912.p8
-scipy_sandbox-20071020.p3
-singular-3-0-4-4-20080711.p4
-symmetrica-2.0.p2
-sympow-1.018.1.p6
-tachyon-0.98beta.p8
-zn_poly-0.9.p0
-```
+* rubiks
 
-Since this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5903
 

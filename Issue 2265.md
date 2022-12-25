@@ -1,16 +1,17 @@
-# Issue 2265: fix shortest_path_all_pairs
+# Issue 2265: [with patch, positive review] fix shortest_path_all_pairs
 
 archive/issues_002265.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.shortest_paths('0000')\n\n{'0000': ['0000'],\n...\n '1111': ['0000', '0100', '0110', '1110', '1111']}\nsage: C.shortest_path_all_pairs()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/rlmill/sage/<ipython console> in <module>()\n\n/Users/rlmill/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in shortest_path_all_pairs(self)\n   2245             for u in verts:\n   2246                 for v in verts:\n-> 2247                     if dist[u][v] > dist[u][w] + dist[w][v]:\n   2248                         dist[u][v] = dist[u][w] + dist[w][v]\n   2249                         pred[u][v] = pred[w][v]\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for +: 'int' and 'NoneType'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2265\n\n",
+    "closed_at": "2008-02-24T18:14:47Z",
     "created_at": "2008-02-22T19:29:13Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "fix shortest_path_all_pairs",
+    "title": "[with patch, positive review] fix shortest_path_all_pairs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2265",
     "user": "https://github.com/rlmill"

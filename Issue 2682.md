@@ -1,9 +1,10 @@
-# Issue 2682: [with patch] balanced product for generators/iterators
+# Issue 2682: [with patch, positive review] balanced product for generators/iterators
 
 archive/issues_002682.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nProducts of lists were balanced, but for iterators the factors were multiplied in sequence (which can greatly degrade performance). This patch addresses that. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2682\n\n",
+    "body": "Assignee: @mwhansen\n\nProducts of lists were balanced, but for iterators the factors were multiplied in sequence (which can greatly degrade performance). This patch addresses that. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2682\n\n",
+    "closed_at": "2008-04-11T22:35:04Z",
     "created_at": "2008-03-27T06:22:55Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,13 +12,13 @@ archive/issues_002682.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch] balanced product for generators/iterators",
+    "title": "[with patch, positive review] balanced product for generators/iterators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2682",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: somebody
+Assignee: @mwhansen
 
 Products of lists were balanced, but for iterators the factors were multiplied in sequence (which can greatly degrade performance). This patch addresses that. 
 

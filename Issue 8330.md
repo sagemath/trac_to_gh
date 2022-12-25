@@ -1,16 +1,17 @@
-# Issue 8330: BipartiteGraph needs to hook delete_vertex() and delete_vertices()
+# Issue 8330: BipartiteGraph needs to override methods to add and delete vertices and edges
 
 archive/issues_008330.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to hook delete_vertex() and delete_vertices().\n\n```\n```\n\nIt should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8330\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to hook delete_vertex() and delete_vertices().\n\n```\nsage: g = BipartiteGraph(graphs.CycleGraph(4))\nsage: (g.left, g.right)\n([0, 2], [1, 3])\nsage: g.delete_vertex(0)\nsage: g.left\n[0, 2]\n```\nNote vertex 0 still shows up in the left partition.\n\nIt should also override add_vertex()\n\n```\nsage: g = BipartiteGraph()\nsage: g.add_vertex('a')\nsage: g.left\n[]\nsage: g.right  # where did it go?\n[]\n```\nand add_edge().\n\n```\nsage: g = BipartiteGraph(Graph({'a':['b','c']}))\nsage: g.left\n['a']\nsage: g.right\n['b','c']\nsage: g.add_edge('b', 'c')  # violates bipartition, should raise exception\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8330\n\n",
+    "closed_at": "2010-04-15T23:48:34Z",
     "created_at": "2010-02-22T21:23:20Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
-    "title": "BipartiteGraph needs to hook delete_vertex() and delete_vertices()",
+    "title": "BipartiteGraph needs to override methods to add and delete vertices and edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8330",
     "user": "https://github.com/rhinton"
@@ -25,9 +26,36 @@ Keywords: BipartiteGraph
 BipartiteGraph needs to hook delete_vertex() and delete_vertices().
 
 ```
+sage: g = BipartiteGraph(graphs.CycleGraph(4))
+sage: (g.left, g.right)
+([0, 2], [1, 3])
+sage: g.delete_vertex(0)
+sage: g.left
+[0, 2]
+```
+Note vertex 0 still shows up in the left partition.
+
+It should also override add_vertex()
+
+```
+sage: g = BipartiteGraph()
+sage: g.add_vertex('a')
+sage: g.left
+[]
+sage: g.right  # where did it go?
+[]
+```
+and add_edge().
+
+```
+sage: g = BipartiteGraph(Graph({'a':['b','c']}))
+sage: g.left
+['a']
+sage: g.right
+['b','c']
+sage: g.add_edge('b', 'c')  # violates bipartition, should raise exception
 ```
 
-It should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8330
 

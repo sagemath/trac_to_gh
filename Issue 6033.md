@@ -1,22 +1,23 @@
-# Issue 6033: Bring plot/disk.py to 100% coverage
+# Issue 6033: [with patch, positive review] Bring plot/disk.py to 100% coverage
 
 archive/issues_006033.json:
 ```json
 {
-    "body": "Assignee: tba\n\nBring plot/disk.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6033\n\n",
+    "body": "Assignee: @kcrisman\n\nBring plot/disk.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6033\n\n",
+    "closed_at": "2009-06-04T19:37:28Z",
     "created_at": "2009-05-13T01:38:15Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Bring plot/disk.py to 100% coverage",
+    "title": "[with patch, positive review] Bring plot/disk.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6033",
     "user": "https://github.com/kcrisman"
 }
 ```
-Assignee: tba
+Assignee: @kcrisman
 
 Bring plot/disk.py to 100% coverage.
 

@@ -1,22 +1,22 @@
-# Issue 2697: stupid bug in integrate (easy to fix)
+# Issue 2697: [with patch, positive review] allow integration without explicit variable declaration
 
 archive/issues_002697.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThis is right:\n\n```\nsage: integrate(x, x,-1,1)\n0\n```\n\nThis error message (which is because I forgot to give the variable of integration) is\ncompletely broken. The \"raise err\" line in the source code should be just \"raise\", i.e., delete err, which makes no sense. Or?  Anyway, this is just wrong as is.\n\n```\nsage: integrate(x, -1,1)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    255         return f.integral(*args, **kwds)\n    256     except ValueError, err:\n--> 257         raise err\n    258     except AttributeError:\n    259         pass\n\n<type 'exceptions.ValueError'>: variable name is not a valid Python identifier\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2697\n\n",
+    "body": "Assignee: @kcrisman\n\nCC:  @robertwb\n\nThis is right:\n\n```\nsage: integrate(x, x,-1,1)\n0\n```\n\nThis error message (which is because I forgot to give the variable of integration) is\ncompletely broken. The \"raise err\" line in the source code should be just \"raise\", i.e., delete err, which makes no sense. Or?  Anyway, this is just wrong as is.\n\n```\nsage: integrate(x, -1,1)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    255         return f.integral(*args, **kwds)\n    256     except ValueError, err:\n--> 257         raise err\n    258     except AttributeError:\n    259         pass\n\n<type 'exceptions.ValueError'>: variable name is not a valid Python identifier\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2697\n\n",
+    "closed_at": "2009-01-24T18:41:51Z",
     "created_at": "2008-03-28T07:39:54Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "stupid bug in integrate (easy to fix)",
+    "title": "[with patch, positive review] allow integration without explicit variable declaration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2697",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @kcrisman
 
 CC:  @robertwb
 

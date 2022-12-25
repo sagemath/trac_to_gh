@@ -3,7 +3,8 @@
 archive/issues_009763.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nThis ticket is a fork from #9400.\n\n* implement hashing for number field ideals that isn't a stupid string repr, hence vastly faster \n\n* make number field ideals *not* print in reduced form; this will look uglier, but is massively faster and more sensible for any real applications, as people learned constantly at sage days 22.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9764\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nKeywords: number field ideal hash\n\nThis ticket is a fork from #9400.\n\n* implement hashing for number field ideals that isn't a stupid string repr, hence vastly faster \n\n* make number field ideals *not* print in reduced form; this will look uglier, but is massively faster and more sensible for any real applications, as people learned constantly at sage days 22.\n\nDependencies: #9898, #9753\n\nApply only [attachment: 9764_ideal_repr_new.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9764\n\n",
+    "closed_at": "2010-09-28T10:56:31Z",
     "created_at": "2010-08-18T21:57:52Z",
     "labels": [
         "component: number fields"
@@ -19,11 +20,17 @@ Assignee: @loefflerd
 
 CC:  @williamstein
 
+Keywords: number field ideal hash
+
 This ticket is a fork from #9400.
 
 * implement hashing for number field ideals that isn't a stupid string repr, hence vastly faster 
 
 * make number field ideals *not* print in reduced form; this will look uglier, but is massively faster and more sensible for any real applications, as people learned constantly at sage days 22.
+
+Dependencies: #9898, #9753
+
+Apply only [attachment: 9764_ideal_repr_new.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/9764
 

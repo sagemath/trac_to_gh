@@ -4,6 +4,7 @@ archive/issues_001094.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nntl_ZZ_pEX.py\n\n```\n==4652== 408 (24 direct, 384 indirect) bytes in 3 blocks are definitely lost in loss record 635 of 1,862\n==4652==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4652==    by 0x6041AB6: ZZ_pE_to_ZZ_pX (in /tmp/Work-mabshoff/sage-2.8.11/devel/sage-main/c_lib/libcsage.so)\n==4652==    by 0xCE6A067: __pyx_f_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE_get_as_ZZ_pX (ntl_ZZ_pE.cpp:2514)\n==4652==    by 0xCE6889E: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE___reduce__(_object*, _object*) (ntl_ZZ_pE.cpp:1661\n)\n==4652==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4652==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4652==    by 0x4589BF: object_reduce_ex (typeobject.c:2786)\n==4652==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4652==    by 0x76F0743: save (cPickle.c:2495)\n==4652==    by 0x76F1EEC: batch_list (cPickle.c:1558)\n==4652==    by 0x76F0C7B: save (cPickle.c:1626)\n==4652==    by 0x76F025F: save_tuple (cPickle.c:1381)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1094\n\n",
+    "closed_at": "2008-01-08T02:00:49Z",
     "created_at": "2007-11-04T00:06:18Z",
     "labels": [
         "component: memleak",

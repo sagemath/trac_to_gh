@@ -1,16 +1,17 @@
-# Issue 2206: Factorizations
+# Issue 2206: [with patch, with positive review] some fixes of Factorizations
 
 archive/issues_002206.json:
 ```json
 {
     "body": "Assignee: somebody\n\nA few miscellaneous improvements/fixes to Factorizations from mhansen's patches at 2028.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2206\n\n",
+    "closed_at": "2008-02-25T04:17:52Z",
     "created_at": "2008-02-18T21:24:31Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Factorizations",
+    "title": "[with patch, with positive review] some fixes of Factorizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2206",
     "user": "https://github.com/jasongrout"

@@ -4,6 +4,7 @@ archive/issues_009052.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nKeywords: Hasse invariant\n\nCreates a method to compute the Hasse invariant of an elliptic curve over a function field of positive characteristic. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9052\n\n",
+    "closed_at": "2010-05-28T19:28:08Z",
     "created_at": "2010-05-26T01:41:30Z",
     "labels": [
         "component: elliptic curves",

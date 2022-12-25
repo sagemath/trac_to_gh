@@ -3,12 +3,12 @@
 archive/issues_000433.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: version root branch\n\n Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.\n\nUseful from the command line.\n\nVersion information is taken from sage-banner; I would prefer it to be taken from the mercurial tags, but these are not kept updated.\n\nThe root information is taken from the environment via sage-env.\n\nThe branch information is taken from readlink SAGE_ROOT/devel/sage.\n\nmero:~/sage/local/bin ncalexan$ sage -v\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -version\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -branch\nnca\n\nmero:~/sage/local/bin ncalexan$ sage -root\n/Users/ncalexan/sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/433\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: version root branch\n\n Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.\n\nUseful from the command line.\n\nVersion information is taken from sage-banner; I would prefer it to be taken from the mercurial tags, but these are not kept updated.\n\nThe root information is taken from the environment via sage-env.\n\nThe branch information is taken from readlink SAGE_ROOT/devel/sage.\n\nmero:~/sage/local/bin ncalexan$ sage -v\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -version\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -branch\nnca\n\nmero:~/sage/local/bin ncalexan$ sage -root\n/Users/ncalexan/sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/433\n\n",
+    "closed_at": "2007-08-19T00:47:08Z",
     "created_at": "2007-08-16T20:06:59Z",
     "labels": [
         "component: user interface",
-        "trivial",
-        "bug"
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.",
@@ -17,7 +17,7 @@ archive/issues_000433.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @ncalexan
 
 Keywords: version root branch
 

@@ -4,6 +4,7 @@ archive/issues_008093.json:
 ```json
 {
     "body": "Assignee: abmasse\n\nCC:  @seblabbe\n\nKeywords: palindrome, prefix\n\nAdds three functions to iterate over prefixes and palindrome prefixes of finite and infinite words.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8093\n\n",
+    "closed_at": "2010-02-11T14:47:23Z",
     "created_at": "2010-01-27T12:20:13Z",
     "labels": [
         "component: combinatorics"

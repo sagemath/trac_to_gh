@@ -1,16 +1,17 @@
-# Issue 4021: [with patch, needs review] MPolynomial_libsingular over ZZ
+# Issue 4021: [with patch, positive review] MPolynomial_libsingular over ZZ
 
 archive/issues_004021.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @williamstein\n\nKeywords: libsingular, singular, ZZ, multivariate\n\nThere it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4021\n\n",
+    "closed_at": "2008-09-28T19:22:43Z",
     "created_at": "2008-08-31T17:08:10Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "[with patch, needs review] MPolynomial_libsingular over ZZ",
+    "title": "[with patch, positive review] MPolynomial_libsingular over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4021",
     "user": "https://github.com/malb"

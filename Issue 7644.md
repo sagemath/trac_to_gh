@@ -3,7 +3,8 @@
 archive/issues_007644.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  fwclarke\n\nMake the following work over any base ring:\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1/(1-x) - 1; f\nx + x^2 + x^3 + x^4 + x^5 + x^6 + x^7 + x^8 + x^9 + x^10 + x^11 + x^12\n+ x^13 + x^14 + x^15 + x^16 + x^17 + x^18 + x^19 + O(x^20)\nsage: g = f.reversion(); g\nx - x^2 + x^3 - x^4 + x^5 - x^6 + x^7 - x^8 + x^9 - x^10 + x^11 - x^12\n+ x^13 - x^14 + x^15 - x^16 + x^17 - x^18 + x^19 + O(x^20)\nsage: f(g)\nx + O(x^20)\n```\n\nMatt Bainbridge says about power series reversion, which uses pari in some cases, and maybe isn't there in others:\n\n```\nIts easy enough to code this in sage.  This seems to work over any\nfield:\n\n\ndef ps_inverse(f):\n   if f.prec() is infinity:\n       raise ValueError, \"series must have finite precision for\nreversion\"\n   if f.valuation() != 1:\n       raise ValueError, \"series must have valuation one for\nreversion\"\n   t = parent(f).gen()\n   a = 1/f.coefficients()[0]\n   g = a*t\n   for i in range(2, f.prec()):\n       g -=  ps_coefficient((f + O(t^(i+1)))(g),i)*a*t^i\n   g += O(t^f.prec())\n   return g\n\ndef ps_coefficient(f,i):\n   if i >= f.prec():\n       raise ValueError, \"that coefficient is undefined\"\n   else:\n       return f.padded_list(f.prec())[i]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7644\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  fwclarke\n\nKeywords: lagrange, reversion\n\nFrom this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/34fdf02add8100b6) thread: Make the following work over any base ring:\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1/(1-x) - 1; f\nx + x^2 + x^3 + x^4 + x^5 + x^6 + x^7 + x^8 + x^9 + x^10 + x^11 + x^12\n+ x^13 + x^14 + x^15 + x^16 + x^17 + x^18 + x^19 + O(x^20)\nsage: g = f.reversion(); g\nx - x^2 + x^3 - x^4 + x^5 - x^6 + x^7 - x^8 + x^9 - x^10 + x^11 - x^12\n+ x^13 - x^14 + x^15 - x^16 + x^17 - x^18 + x^19 + O(x^20)\nsage: f(g)\nx + O(x^20)\n```\n\nMatt Bainbridge says about power series reversion, which uses pari in some cases, and maybe isn't there in others:\n\n```\nIts easy enough to code this in sage.  This seems to work over any\nfield:\n\n\ndef ps_inverse(f):\n   if f.prec() is infinity:\n       raise ValueError, \"series must have finite precision for\nreversion\"\n   if f.valuation() != 1:\n       raise ValueError, \"series must have valuation one for\nreversion\"\n   t = parent(f).gen()\n   a = 1/f.coefficients()[0]\n   g = a*t\n   for i in range(2, f.prec()):\n       g -=  ps_coefficient((f + O(t^(i+1)))(g),i)*a*t^i\n   g += O(t^f.prec())\n   return g\n\ndef ps_coefficient(f,i):\n   if i >= f.prec():\n       raise ValueError, \"that coefficient is undefined\"\n   else:\n       return f.padded_list(f.prec())[i]\n```\n\n## Apply\n\n1. [attachment:trac_7644_reversion_lagrange_6.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7644\n\n",
+    "closed_at": "2011-01-19T22:19:24Z",
     "created_at": "2009-12-09T20:20:14Z",
     "labels": [
         "component: algebra"
@@ -19,7 +20,9 @@ Assignee: @aghitza
 
 CC:  fwclarke
 
-Make the following work over any base ring:
+Keywords: lagrange, reversion
+
+From this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/34fdf02add8100b6) thread: Make the following work over any base ring:
 
 ```
 sage: R.<x> = QQ[[]]
@@ -61,6 +64,10 @@ def ps_coefficient(f,i):
    else:
        return f.padded_list(f.prec())[i]
 ```
+
+## Apply
+
+1. [attachment:trac_7644_reversion_lagrange_6.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7644
 

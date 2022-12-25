@@ -4,6 +4,7 @@ archive/issues_000155.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThis is good:\n\n```\nsage: x = PolynomialRing(QQ,\"x\").gen()\nsage: f = x^2-1\nsage: factor(f)\n(x - 1) * (x + 1)\n```\nThis is bad:\n\n```\nsage: x = PolynomialRing(RR,\"x\").gen()\nsage: f = x^2-1\nsage: factor(f)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n...\n```\nI didn't see this entered in the bug tracker.\n\nIssue created by migration from https://trac.sagemath.org/ticket/155\n\n",
+    "closed_at": "2007-01-13T00:18:04Z",
     "created_at": "2006-10-27T01:25:32Z",
     "labels": [
         "component: basic arithmetic",

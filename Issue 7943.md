@@ -4,6 +4,7 @@ archive/issues_007943.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  drkirkby georgsweber @jhpalmieri @tornaria\n\nAs of Sage 4.3, every time you make a clone or build an spkg, the whole documentation is also rebuilt. This is very annoying. See this [sage-devel](http://groups.google.com/group/sage-devel/msg/f6d2c21372a7d1d7) message for the vote to move the docbuild commands to their own targets in the script `SAGE_ROOT/makefile`. Or at least make it so that creating a clone or rebuilding an spkg doesn't also trigger a rebuild of the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7943\n\n",
+    "closed_at": "2010-03-09T07:49:28Z",
     "created_at": "2010-01-16T09:10:54Z",
     "labels": [
         "component: documentation",

@@ -1,9 +1,10 @@
-# Issue 6645: make sure bdist of sage-4.1.1 works before release
+# Issue 6645: [with patch, positive review] make sure bdist of sage-4.1.1 works before release
 
 archive/issues_006645.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @mwhansen\n\n```\nHi,\n\nI took the sage-4.1.1.alpha1 release build I had, then did \"./sage -bdist\", took the result, extracted it, and did \"make test\". \n\n 1) It sits there and builds the documentation again, which takes a *long* time.  It shouldn't do this for a binary.\n\n 2) Worse, every single test failed, with errors like this:\n\nsage -t  \"/home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/buil\nder.py\"\n  File \"./builder.py\", line 18\n    from /home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/build\ner import *\n         ^\n\n  3) I tried do \"./sage\" to run Sage, then typed \"make test\" again about 10 minutes ago.  For some reason, the docs are building again... and I expect the same behavior as above after that finally finishes.\n\nBuiding Sage, doing \"./sage -bdist\", then extracting the result and having \"make test\" 100% is a blocker for making the sage-4.1.1 release.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6645\n\n",
+    "closed_at": "2009-08-14T11:13:38Z",
     "created_at": "2009-07-28T03:01:36Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_006645.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "make sure bdist of sage-4.1.1 works before release",
+    "title": "[with patch, positive review] make sure bdist of sage-4.1.1 works before release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6645",
     "user": "https://github.com/williamstein"

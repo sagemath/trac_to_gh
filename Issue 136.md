@@ -4,6 +4,7 @@ archive/issues_000136.json:
 ```json
 {
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/136\n\n",
+    "closed_at": "2006-12-03T21:08:59Z",
     "created_at": "2006-10-18T23:50:06Z",
     "labels": [
         "component: notebook",

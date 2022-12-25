@@ -1,22 +1,23 @@
-# Issue 360: Port Cremona's implementation of elliptic curve height bounds to SAGE
+# Issue 360: Implementation of elliptic curve height bounds in Sage
 
 archive/issues_000360.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @pjbruin\n\nJohn Cremona has implemented a wide range of height bounds for elliptic curves in \nthis magma program:\n\n  http://www.maths.nott.ac.uk/personal/jec/ftp/progs/magma/nfhtbound.m\n\n(see also attached file).  Upon my request he GPL'd this program.  Thus we can\nlegally port it line-by-line to SAGE.  \n\nwilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/360\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @pjbruin\n\nJohn Cremona has implemented a wide range of height bounds for elliptic curves in \nthis magma program:\n\n  http://www.maths.nott.ac.uk/personal/jec/ftp/progs/magma/nfhtbound.m\n\n(see also attached file).  Upon my request he GPL'd this program.  Thus we can\nlegally port it line-by-line to SAGE.  \n\nwilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/360\n\n",
+    "closed_at": "2018-05-18T17:16:26Z",
     "created_at": "2007-04-27T16:15:33Z",
     "labels": [
-        "component: number theory",
+        "component: elliptic curves",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Port Cremona's implementation of elliptic curve height bounds to SAGE",
+    "title": "Implementation of elliptic curve height bounds in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/360",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
 
 CC:  @JohnCremona @pjbruin
 

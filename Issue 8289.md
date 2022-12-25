@@ -4,6 +4,7 @@ archive/issues_008289.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n`WordMorphism.__call__` is doing a conversion of the input into the domain which is not necessary. Basicly, all what is needed is that the input be iterable. Here are some timing improvements :\n\nBEFORE:\n\n```\nsage: m = WordMorphism('a->aab,b->ba')\nsage: %timeit w = m('a'*100)\n1000 loops, best of 3: 343 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: m = WordMorphism('a->aab,b->ba')\nsage: %timeit w = m('a'*100)\n1000 loops, best of 3: 242 \u00b5s per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8289\n\n",
+    "closed_at": "2010-03-02T21:32:23Z",
     "created_at": "2010-02-16T22:17:45Z",
     "labels": [
         "component: combinatorics"

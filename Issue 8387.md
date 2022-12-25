@@ -3,7 +3,8 @@
 archive/issues_008387.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein mvngu\n\nUsing Sage 4.3.3\n\nhelp(notebook) shows \n\n```\n |      - ``interface`` -- string (default: ``'localhost'``), address\n |        of network interface to listen on; give ``''`` to listen on\n |        all interfaces.  You may use ``address`` here for backwards\n |        compatibility, but this is deprecated and will be removed in\n |        the future.\n\n```\n\nThen the second and fourth examples use 'address'. \n\n```\n |         notebook(address='', secure=True)\n\n |         notebook(address='', server_pool=['sage1@localhost'],\n |         ulimit='-v 500000', accounts=True)\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8387\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein mvngu\n\nUsing Sage 4.3.3\n\nhelp(notebook) shows \n\n```\n |      - ``interface`` -- string (default: ``'localhost'``), address\n |        of network interface to listen on; give ``''`` to listen on\n |        all interfaces.  You may use ``address`` here for backwards\n |        compatibility, but this is deprecated and will be removed in\n |        the future.\n\n```\n\nThen the second and fourth examples use 'address'. \n\n```\n |         notebook(address='', secure=True)\n\n |         notebook(address='', server_pool=['sage1@localhost'],\n |         ulimit='-v 500000', accounts=True)\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8387\n\n",
+    "closed_at": "2010-03-04T22:52:12Z",
     "created_at": "2010-02-27T15:59:48Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_008387.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: @williamstein
+Assignee: drkirkby
 
 CC:  @williamstein mvngu
 

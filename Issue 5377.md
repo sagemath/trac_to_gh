@@ -3,10 +3,11 @@
 archive/issues_005377.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.class_group()\nClass group of order 1 with structure  of Number Field in a with defining polynomial x^2 + 1\n```\n\nThere is something missing after \"structure\".\n\nThis is possibly related to #2574 (which is marked as fixed...)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5377\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.class_group()\nClass group of order 1 with structure  of Number Field in a with defining polynomial x^2 + 1\n```\n\nThere is something missing after \"structure\".\n\nThis is possibly related to #2574 (which is marked as fixed...)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5377\n\n",
+    "closed_at": "2011-10-09T10:47:31Z",
     "created_at": "2009-02-26T00:53:26Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "minor",
         "bug"
     ],
@@ -17,7 +18,7 @@ archive/issues_005377.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 ```
 sage: K.<a> = NumberField(x^2 + 1)

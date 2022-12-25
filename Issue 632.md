@@ -4,6 +4,7 @@ archive/issues_000632.json:
 ```json
 {
     "body": "Assignee: somebody\n\nNotice that the second timing below is \"0 seconds\", which is clearly completely wrong.\nThe notation \"3r\" means the unpreparsed 3, i.e., the Python *integer* 3.  There\nis a *noticeable amount of time* that passes when the input is given.  So something\nis very very wrong.  This happens on intel os x and on 64-bit opteron linux (and\nprobably all other os's). \n\n```\nsage: time n=int(3)**int(999999)\nCPU times: user 0.76 s, sys: 0.00 s, total: 0.76 s\nWall time: 0.76\nsage: time n= 3r ** 999999r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: preparse('time n= 3r ** 999999r')\n'time n= 3 ** 999999'\nsage: preparse('time n=int(3)**int(999999)')\n'time n=int(Integer(3))**int(Integer(999999))'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/632\n\n",
+    "closed_at": "2008-10-24T10:35:10Z",
     "created_at": "2007-09-09T23:27:42Z",
     "labels": [
         "component: basic arithmetic",

@@ -1,17 +1,17 @@
-# Issue 5360: Redeading of #4927 convert sage.server.* docstrings to Sphinx
+# Issue 5360: Re-reading of #4927 convert sage.server.* docstrings to Sphinx
 
 archive/issues_005360.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: sphinx transform.\n\n## File: sage/server/introspect.py\n\n* Some pairs of single quote are transformed to double quote\n\n```\n- sage: nb.add_user('Mark','password','',force=True) \n+ sage: nb.add_user('Mark','password',\",force=True)\n```\n\n```\n- sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) \n+ sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', \", W) \n```\nIt looks like a bad Idea...\n\nI probably miss some so that a systematic replace `,\",` by `,'',` should solve the problem.    \n\n\n* Also in edit_text. the transformation\n\n```\nReturns a plain-text version of the worksheet with \\{\\{\\{\\}\\}\\} wiki-formatting,\n```\ninto \n\n```\nReturns a plain-text version of the worksheet with `` \n```\nlooks suspicious to me. \n\n* function edit_save: lost ` {{{` }}}:\n\n```\nignore_ids -- bool (default: False); if True ignore all the \n              id's in the `` code block. \n```\nis now:\n\n```\n-  ``ignore_ids`` - bool (default: False); if True \n   ignore all the id's in the code block. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5360\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\n## File: sage/server/introspect.py\n\n* Some pairs of single quote are transformed to double quote\n\n```\n- sage: nb.add_user('Mark','password','',force=True) \n+ sage: nb.add_user('Mark','password',\",force=True)\n```\n\n```\n- sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) \n+ sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', \", W) \n```\nIt looks like a bad Idea...\n\nI probably miss some so that a systematic replace `,\",` by `,'',` should solve the problem.    \n\n\n* Also in edit_text. the transformation\n\n```\nReturns a plain-text version of the worksheet with \\{\\{\\{\\}\\}\\} wiki-formatting,\n```\ninto \n\n```\nReturns a plain-text version of the worksheet with `` \n```\nlooks suspicious to me. \n\n* function edit_save: lost ` {{{` }}}:\n\n```\nignore_ids -- bool (default: False); if True ignore all the \n              id's in the `` code block. \n```\nis now:\n\n```\n-  ``ignore_ids`` - bool (default: False); if True \n   ignore all the id's in the code block. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5360\n\n",
+    "closed_at": "2009-08-31T12:12:45Z",
     "created_at": "2009-02-24T18:09:05Z",
     "labels": [
         "component: documentation",
-        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Redeading of #4927 convert sage.server.* docstrings to Sphinx",
+    "title": "Re-reading of #4927 convert sage.server.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5360",
     "user": "https://github.com/hivert"
@@ -20,8 +20,6 @@ archive/issues_005360.json:
 Assignee: tba
 
 CC:  @mwhansen
-
-Keywords: sphinx transform.
 
 ## File: sage/server/introspect.py
 

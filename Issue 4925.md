@@ -1,15 +1,16 @@
-# Issue 4925: convert sage.rings.* docstrings to Sphinx
+# Issue 4925: [with patch, needs work] convert sage.rings.* docstrings to Sphinx
 
 archive/issues_004925.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4925\n\n",
+    "closed_at": "2009-02-24T18:19:42Z",
     "created_at": "2009-01-01T22:55:48Z",
     "labels": [
         "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "convert sage.rings.* docstrings to Sphinx",
+    "title": "[with patch, needs work] convert sage.rings.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4925",
     "user": "https://github.com/mwhansen"

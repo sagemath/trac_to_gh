@@ -4,6 +4,7 @@ archive/issues_003261.json:
 ```json
 {
     "body": "Assignee: somebody\n\nKeywords: auto, notebook\n\nSo far this only seems to affect me, and not Tom Boothby. So it needs more investigation.  \n\nWhen I try to use #auto cells that are not the very first cell in a worksheet, they do not autoevaluate.  This happens for me in both 2.11 and 3.0.1, but Tom didn't see it in 3.0.  So I have no idea what is going on. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3261\n\n",
+    "closed_at": "2009-01-20T10:13:14Z",
     "created_at": "2008-05-20T19:17:30Z",
     "labels": [
         "component: notebook",

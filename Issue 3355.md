@@ -4,10 +4,11 @@ archive/issues_003355.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nAll the *.la files in $SAGE_LOCAL/lib have their libdir variable rewritten when Sage is moved. Do this also when installing any spkg since we might have moved the tree. This will likely cause a number of upgrade problems.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3355\n\n",
+    "closed_at": "2013-03-29T19:00:51Z",
     "created_at": "2008-06-03T05:33:54Z",
     "labels": [
         "component: relocation",
-        "blocker",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",

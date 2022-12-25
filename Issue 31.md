@@ -4,6 +4,7 @@ archive/issues_000031.json:
 ```json
 {
     "body": "Assignee: somebody\n\n q_eigenform on old factors doesn't work:\n\n```\nsage: M = ModularSymbols(63,2,sign=1).cuspidal_subspace()\nsage: M[2].q_eigenform()\nTraceback (most recent call last):\n    M[2].q_eigenform()\n...\nAttributeError: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'subspace_generated_by_images'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/31\n\n",
+    "closed_at": "2007-01-13T02:04:50Z",
     "created_at": "2006-09-12T23:27:20Z",
     "labels": [
         "component: basic arithmetic",

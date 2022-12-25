@@ -4,6 +4,7 @@ archive/issues_005054.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nIf we want to ship a collection of worksheets in the future, we need some way to doctest them.\n\nOne solution would be to go through a worksheet text file, run through the cells, and make sure newly computed output matches up with the output stored in the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5054\n\n",
+    "closed_at": "2009-08-12T07:32:36Z",
     "created_at": "2009-01-22T13:05:57Z",
     "labels": [
         "component: doctest coverage"

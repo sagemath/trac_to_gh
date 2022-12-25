@@ -1,39 +1,35 @@
-# Issue 9281: METATICKET - missing spkg-check files / OpenSolaris test results.
+# Issue 9281: METATICKET - missing spkg-check files / OpenSolaris & Solaris 10 test results.
 
 archive/issues_009281.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jaapspies @nexttime jpflori jakobkroeker @fchapoton\n\nThe purposes of this ticket are to \n* Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)\n* Document whether the package builds on OpenSolaris x64\n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on OpenSolaris x64. \n\nThe following lists: \n\n* The standard packages in Sage\n* Whether the package builds on OpenSolaris x64\n* Whether the package has an spkg-check file\n* Test results when running 'make' while SAGE_CHECK=\"yes\" on OpenSolaris x64\n* Notes, with ticket number if needed for resolving test issues.\n\nThe aim of this ticket is not to give details about build issues for the packages. For that, see #9026. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9281\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @nexttime jpflori jakobkroeker @fchapoton\n\nThe purposes of this ticket are to\n\n* Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)\n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on OpenSolaris x64. (Currently, neither Maxima or R build on OpenSolaris, and the resulting build is very unstable - segfaulting just trying to run it). \n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on Solaris 10 on SPARC, compiled as 32-bit.\n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on Solaris 10 on SPARC, compiled as 64-bit. (Currently, the 64-bit build of Sage needs various patches, and is rather unstable)\n* Add any **brief** notes - giving a reference to a ticket number if possible. \n\nThe aim of this ticket is not to give details about build issues for the packages. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9281\n\n",
+    "closed_at": "2020-04-01T14:22:15Z",
     "created_at": "2010-06-20T03:42:55Z",
     "labels": [
         "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "METATICKET - missing spkg-check files / OpenSolaris test results.",
+    "title": "METATICKET - missing spkg-check files / OpenSolaris & Solaris 10 test results.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9281",
     "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
-Assignee: tbd
+Assignee: drkirkby
 
 CC:  @jaapspies @nexttime jpflori jakobkroeker @fchapoton
 
-The purposes of this ticket are to 
+The purposes of this ticket are to
+
 * Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)
-* Document whether the package builds on OpenSolaris x64
-* Document whether the package passes tests when Sage is built with SAGE_CHECK="yes" on OpenSolaris x64. 
+* Document whether the package passes tests when Sage is built with SAGE_CHECK="yes" on OpenSolaris x64. (Currently, neither Maxima or R build on OpenSolaris, and the resulting build is very unstable - segfaulting just trying to run it). 
+* Document whether the package passes tests when Sage is built with SAGE_CHECK="yes" on Solaris 10 on SPARC, compiled as 32-bit.
+* Document whether the package passes tests when Sage is built with SAGE_CHECK="yes" on Solaris 10 on SPARC, compiled as 64-bit. (Currently, the 64-bit build of Sage needs various patches, and is rather unstable)
+* Add any **brief** notes - giving a reference to a ticket number if possible. 
 
-The following lists: 
-
-* The standard packages in Sage
-* Whether the package builds on OpenSolaris x64
-* Whether the package has an spkg-check file
-* Test results when running 'make' while SAGE_CHECK="yes" on OpenSolaris x64
-* Notes, with ticket number if needed for resolving test issues.
-
-The aim of this ticket is not to give details about build issues for the packages. For that, see #9026. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are. 
+The aim of this ticket is not to give details about build issues for the packages. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are.
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9281

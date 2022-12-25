@@ -1,15 +1,16 @@
-# Issue 4255: WYSIWYG in-place editing of text cells (using tinyMCE and jEditable)
+# Issue 4255: [with patch and spkgs, superseded by #4267] WYSIWYG in-place editing of text cells (using tinyMCE and jEditable)
 
 archive/issues_004255.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis provides in-place editing of text cells using tinyMCE and jEditable (spkgs provided below).  Basically, you create a text cell by inserting something between the cells (between the ending }}} and the starting {{{ of the next cell) in the \"Edit\" view.  Switching back to the worksheet view, you can then doubleclick on the html text and an in-place TinyMCE editor pops up letting you edit the html text.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4255\n\n",
+    "closed_at": "2008-12-06T06:37:39Z",
     "created_at": "2008-10-09T01:49:42Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "WYSIWYG in-place editing of text cells (using tinyMCE and jEditable)",
+    "title": "[with patch and spkgs, superseded by #4267] WYSIWYG in-place editing of text cells (using tinyMCE and jEditable)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4255",
     "user": "https://github.com/jasongrout"

@@ -4,6 +4,7 @@ archive/issues_006940.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  mvngu\n\nWe should factor the CSS info out of css.py into a .css file, like we did with the javascript stuff.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6940\n\n",
+    "closed_at": "2009-09-17T20:49:09Z",
     "created_at": "2009-09-15T22:12:12Z",
     "labels": [
         "component: notebook",

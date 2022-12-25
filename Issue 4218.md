@@ -1,22 +1,23 @@
-# Issue 4218: Extensions of Finite Fields don't work well
+# Issue 4218: [with patch, with positive review] Extensions of Finite Fields don't work well
 
 archive/issues_004218.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe following sage snippets show (some of) the problems.  First, we set\nthe stage:\n\n```\nsage: F1.<a> = GF(2^7)\nsage: P1.<x>=PolynomialRing(F1)\nsage: f=x^2+x+F1(1)\nsage: F2=F1.extension(f,'u')\nsage: F2\nUnivariate Quotient Polynomial Ring in u over Finite Field in a of size 2^7 with modulus u^2 + u + 1\nsage: a in F2\nTrue\n```\n\nFirst problem:\n\n```\nsage: for i in xrange(100):\n   ....:         r = F2.random_element()\n   ....:     if r != F2(0) and r != F2(1):\n   ....:             print \"Yoicks! r=%s\"%r\n   ....: \nsage: \n```\nNo output means that 100 random elements of F2 are either\n0 or 1, which seems somehow incorrect.\n\nThe next oddity is\n\n```\nsage: F1.order()\n128\nsage: F2.order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/SandBox/Justin/sb/sage-3.1.1/<ipython console> in <module>()\n\n/SandBox/Justin/sb/sage-3.1.1/ring.pyx in sage.rings.ring.Ring.order (sage/rings/ring.c:4108)()\n\nNotImplementedError: \n```\nShouldn't .order() work for extensions as well as those directly defined?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4218\n\n",
+    "body": "Assignee: @aghitza\n\nThe following sage snippets show (some of) the problems.  First, we set\nthe stage:\n\n```\nsage: F1.<a> = GF(2^7)\nsage: P1.<x>=PolynomialRing(F1)\nsage: f=x^2+x+F1(1)\nsage: F2=F1.extension(f,'u')\nsage: F2\nUnivariate Quotient Polynomial Ring in u over Finite Field in a of size 2^7 with modulus u^2 + u + 1\nsage: a in F2\nTrue\n```\n\nFirst problem:\n\n```\nsage: for i in xrange(100):\n   ....:         r = F2.random_element()\n   ....:     if r != F2(0) and r != F2(1):\n   ....:             print \"Yoicks! r=%s\"%r\n   ....: \nsage: \n```\nNo output means that 100 random elements of F2 are either\n0 or 1, which seems somehow incorrect.\n\nThe next oddity is\n\n```\nsage: F1.order()\n128\nsage: F2.order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/SandBox/Justin/sb/sage-3.1.1/<ipython console> in <module>()\n\n/SandBox/Justin/sb/sage-3.1.1/ring.pyx in sage.rings.ring.Ring.order (sage/rings/ring.c:4108)()\n\nNotImplementedError: \n```\nShouldn't .order() work for extensions as well as those directly defined?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4218\n\n",
+    "closed_at": "2008-12-21T22:39:46Z",
     "created_at": "2008-09-29T20:21:44Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "Extensions of Finite Fields don't work well",
+    "title": "[with patch, with positive review] Extensions of Finite Fields don't work well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4218",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: tbd
+Assignee: @aghitza
 
 The following sage snippets show (some of) the problems.  First, we set
 the stage:

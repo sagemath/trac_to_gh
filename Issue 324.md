@@ -4,6 +4,7 @@ archive/issues_000324.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI'm just building sage on a dual core G5 powerpc and noticed that NTL seems to get built in 32-bit mode, even though it's a 64-bit machine... here's part of the build log:\n\n```\nThis is NTL version 5.4\n\nGOOD NEWS: compatible machine.\nsummary of machine characteristics:\nbits per long = 32\nbits per int = 32\nbits per size_t = 32\narith right shift = yes\ndouble precision = 53\nNBITS (maximum) = 30\nsingle mul ok = yes\nregister double precision = 53\ndouble rounding detected = no\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/324\n\n",
+    "closed_at": "2007-03-21T22:40:14Z",
     "created_at": "2007-03-20T15:57:14Z",
     "labels": [
         "component: packages: standard",

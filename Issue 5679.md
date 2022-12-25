@@ -1,16 +1,16 @@
-# Issue 5679: fix a bug in solve and polynomial generators
+# Issue 5679: solve should convert additional args to SR
 
 archive/issues_005679.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n```\nSome code that used to work in sage-3.0.6 (or something close like\n3.0.3), now break with this error message:\n\n>>> R.<x0,x1,x2> = PolynomialRing(RR, 3)\n>>> solve([symbolic_expression(x0) == 0], x0, x1, x2)\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/Users/anakha/.sage/sage_notebook/worksheets/admin/12/code/30.py\",\nline 8, in <module>\n   solve(x0 == _sage_const_0 , x0, x1, x2)\n File \"/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\",\nline 1, in <module>\n\n File \"/Volumes/Place/anakha/Applications/sage-3.4/local/lib/python2.5/site-packages/sage/calculus/equations.py\",\nline 1563, in solve\n   raise TypeError, \"%s is not a valid variable.\"%v\nTypeError: not all arguments converted during string formatting\n\nThe printing problem is due to the fact that Polynomials have an\nimplicit conversion to sequence types triggered by this code:\n\n       try:\n           variables = tuple(args[0])\n       except TypeError:\n           variables = args\n\nnear the start of solve(), (Hint: tuple(args[0]) works if the first\nvariable is a PolynomialElement and thus the rest of the vars are\nignored and you get the bogus ((1.0000000, x0),) tuple as variables)\n\nIf that is fixed, then you get this message which does not help much more:\n\n>>> R.<x0,x1,x2> = PolynomialRing(RR, 3)\n>>> solve([symbolic_expression(x0) == 0], x0, x1, x2)\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/Users/anakha/.sage/sage_notebook/worksheets/admin/12/code/55.py\",\nline 8, in <module>\n   solve(x0 == _sage_const_0 , x0, x1, x2)\n File \"/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\",\nline 1, in <module>\n\n File \"/Users/anakha/.sage/sage_notebook/worksheets/admin/12/code/54.py\",\nline 22, in solve\n   raise TypeError, \"%s is not a valid variable.\"%v\nTypeError: x0 is not a valid variable.\n\nFurthermore, if you disable the type checking that is done on the\ninput variables, then it works as before:\n\n>>> R.<x0,x1,x2> = PolynomialRing(RR, 3)\n>>> solve([symbolic_expression(x0) == 0], x0, x1, x2)\n[[x0 == 0, x1 == r10, x2 == r9]]\n\nI don't think killing the typecheck is the way to go, but maybe\nextending it to cover the polynomial elements.\n\nOr maybe another better way to do this has come up.\n\nArnaud\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5679\n\n",
+    "body": "Assignee: @burcin\n\n```\nSome code that used to work in sage-3.0.6 (or something close like\n3.0.3), now break with this error message:\n\n>>> R.<x0,x1,x2> = PolynomialRing(RR, 3)\n>>> solve([symbolic_expression(x0) == 0], x0, x1, x2)\n\nTypeError: not all arguments converted during string formatting\n\nBUT:\nsage: solve([symbolic_expression(x0) == 0], SR(x0), SR(x1), SR(x2))\n([{x0: 0}], [1])\n\nThe printing problem is due to the fact that Polynomials have an\nimplicit conversion to sequence types triggered by this code:\n\n       try:\n           variables = tuple(args[0])\n       except TypeError:\n           variables = args\n\nnear the start of solve(), (Hint: tuple(args[0]) works if the first\nvariable is a PolynomialElement and thus the rest of the vars are\nignored and you get the bogus ((1.0000000, x0),) tuple as variables)\n\nIf that is fixed, then you get this message which does not help much more:\n\n>>> R.<x0,x1,x2> = PolynomialRing(RR, 3)\n>>> solve([symbolic_expression(x0) == 0], x0, x1, x2)\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/Users/anakha/.sage/sage_notebook/worksheets/admin/12/code/55.py\",\nline 8, in <module>\n   solve(x0 == _sage_const_0 , x0, x1, x2)\n File \"/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\",\nline 1, in <module>\n\n File \"/Users/anakha/.sage/sage_notebook/worksheets/admin/12/code/54.py\",\nline 22, in solve\n   raise TypeError, \"%s is not a valid variable.\"%v\nTypeError: x0 is not a valid variable.\n\nFurthermore, if you disable the type checking that is done on the\ninput variables, then it works as before:\n\n>>> R.<x0,x1,x2> = PolynomialRing(RR, 3)\n>>> solve([symbolic_expression(x0) == 0], x0, x1, x2)\n[[x0 == 0, x1 == r10, x2 == r9]]\n\nI don't think killing the typecheck is the way to go, but maybe\nextending it to cover the polynomial elements.\n\nOr maybe another better way to do this has come up.\n\nArnaud\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5679\n\n",
     "created_at": "2009-04-04T04:49:15Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "fix a bug in solve and polynomial generators",
+    "title": "solve should convert additional args to SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5679",
     "user": "https://github.com/williamstein"
@@ -24,18 +24,12 @@ Some code that used to work in sage-3.0.6 (or something close like
 
 >>> R.<x0,x1,x2> = PolynomialRing(RR, 3)
 >>> solve([symbolic_expression(x0) == 0], x0, x1, x2)
-Traceback (most recent call last):
- File "<stdin>", line 1, in <module>
- File "/Users/anakha/.sage/sage_notebook/worksheets/admin/12/code/30.py",
-line 8, in <module>
-   solve(x0 == _sage_const_0 , x0, x1, x2)
- File "/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/",
-line 1, in <module>
 
- File "/Volumes/Place/anakha/Applications/sage-3.4/local/lib/python2.5/site-packages/sage/calculus/equations.py",
-line 1563, in solve
-   raise TypeError, "%s is not a valid variable."%v
 TypeError: not all arguments converted during string formatting
+
+BUT:
+sage: solve([symbolic_expression(x0) == 0], SR(x0), SR(x1), SR(x2))
+([{x0: 0}], [1])
 
 The printing problem is due to the fact that Polynomials have an
 implicit conversion to sequence types triggered by this code:

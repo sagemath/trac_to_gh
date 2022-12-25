@@ -4,6 +4,7 @@ archive/issues_008310.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nAs the subject says.\n\n**Prerequisites:** #8295\n\nIssue created by migration from https://trac.sagemath.org/ticket/8310\n\n",
+    "closed_at": "2010-03-02T22:17:13Z",
     "created_at": "2010-02-20T11:58:29Z",
     "labels": [
         "component: documentation",

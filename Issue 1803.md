@@ -4,6 +4,7 @@ archive/issues_001803.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHISTORY.txt contains all release notes from \"Thu Apr 7 15:59:18 2005\" until Sage 2.9.3. It will need more cleanup, but this is a good first approximation.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1803\n\n",
+    "closed_at": "2008-01-17T20:26:14Z",
     "created_at": "2008-01-17T19:35:56Z",
     "labels": [
         "component: documentation",

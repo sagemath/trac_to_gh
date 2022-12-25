@@ -1,16 +1,17 @@
-# Issue 5887: major bug in images of homorphisms of R-modules
+# Issue 5887: [with patch; positive review] major bugs in morphisms of R-modules
 
 archive/issues_005887.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe image method on homomorphisms of R-modules is completely wrong.  Here is a simple example that illustrates this serious bug.  I start with V, which is a submodule of index 2 in `ZZ^2`, and define the identity map from V to V.  The image is `ZZ^2`, which is totally wrong.  I think the problem is that the image is being computed over the fraction field. \n\n```\nsage: V = (ZZ^2).span([[1,2],[3,4]])\nsage: phi = V.Hom(V)(identity_matrix(ZZ,2))\nsage: phi(V.0) == V.0\nTrue\nsage: phi(V.1) == V.1\nTrue\nsage: phi.image()\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 0]\n[0 1]\nsage: phi.image() == V\nFalse\n```\n\nIn fact, the image isn't even contained in the codomain!\n\n```\nsage: phi.image() == phi.codomain()\nFalse\nsage: phi.image().is_submodule( phi.codomain() )\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5887\n\n",
+    "body": "Assignee: @williamstein\n\nThe image method on homomorphisms of R-modules is completely wrong.  Here is a simple example that illustrates this serious bug.  I start with V, which is a submodule of index 2 in `ZZ^2`, and define the identity map from V to V.  The image is `ZZ^2`, which is totally wrong.  I think the problem is that the image is being computed over the fraction field. \n\n```\nsage: V = (ZZ^2).span([[1,2],[3,4]])\nsage: phi = V.Hom(V)(identity_matrix(ZZ,2))\nsage: phi(V.0) == V.0\nTrue\nsage: phi(V.1) == V.1\nTrue\nsage: phi.image()\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 0]\n[0 1]\nsage: phi.image() == V\nFalse\n```\n\nIn fact, the image isn't even contained in the codomain!\n\n```\nsage: phi.image() == phi.codomain()\nFalse\nsage: phi.image().is_submodule( phi.codomain() )\nFalse\n```\n\nAlso, the restrict_domain() function is broken:\n\n```\nsage: V = ZZ^2; phi = V.hom([3*V.0, 2*V.1])\nsage: phi.restrict_domain(V.span([V.0]))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/5779/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/modules/matrix_morphism.pyc in restrict_domain(self, sub)\n    383         D  = self.domain()\n    384         B  = sub.basis()\n--> 385         ims= sum([(self(D(b)).coordinate_vector()).list() for b in B],[])\n    386         \n    387         MS = matrix.MatrixSpace(self.base_ring(), len(B), self.codomain().rank())\n\nAttributeError: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'coordinate_vector'\n```\n\nDEPENDENCIES: This patch depends on #5886.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5887\n\n",
+    "closed_at": "2009-05-04T16:13:24Z",
     "created_at": "2009-04-24T05:01:35Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "major bug in images of homorphisms of R-modules",
+    "title": "[with patch; positive review] major bugs in morphisms of R-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5887",
     "user": "https://github.com/williamstein"
@@ -44,6 +45,28 @@ False
 sage: phi.image().is_submodule( phi.codomain() )
 False
 ```
+
+Also, the restrict_domain() function is broken:
+
+```
+sage: V = ZZ^2; phi = V.hom([3*V.0, 2*V.1])
+sage: phi.restrict_domain(V.span([V.0]))
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+
+/Users/wstein/.sage/temp/teragon.local/5779/_Users_wstein__sage_init_sage_0.py in <module>()
+
+/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/modules/matrix_morphism.pyc in restrict_domain(self, sub)
+    383         D  = self.domain()
+    384         B  = sub.basis()
+--> 385         ims= sum([(self(D(b)).coordinate_vector()).list() for b in B],[])
+    386         
+    387         MS = matrix.MatrixSpace(self.base_ring(), len(B), self.codomain().rank())
+
+AttributeError: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'coordinate_vector'
+```
+
+DEPENDENCIES: This patch depends on #5886.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5887
 

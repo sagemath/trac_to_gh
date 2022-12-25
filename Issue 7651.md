@@ -4,6 +4,7 @@ archive/issues_007651.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @jasongrout\n\nThis is because the data structure for sparse graphs is itself directed, and in_neighbors is a slow function, as it needs to check each node.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7651\n\n",
+    "closed_at": "2009-12-15T17:23:20Z",
     "created_at": "2009-12-10T06:17:45Z",
     "labels": [
         "component: graph theory"

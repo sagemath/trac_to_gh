@@ -4,9 +4,11 @@ archive/issues_002072.json:
 ```json
 {
     "body": "Assignee: somebody\n\nUnary arithmetic operations don't benefit from the coercion model, `__neg__` and `__invert__` should be used instead. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2072\n\n",
+    "closed_at": "2015-04-23T03:21:52Z",
     "created_at": "2008-02-06T07:20:25Z",
     "labels": [
         "component: basic arithmetic",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.7",

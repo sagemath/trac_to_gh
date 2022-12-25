@@ -1,30 +1,30 @@
-# Issue 3086: Update R to the 2.7 release and split off rpy.spkg
+# Issue 3086: Update R to the 2.9.2 release and split off rpy.spkg
 
 archive/issues_003086.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nR 2.7 is out, so let's upgrade. We should also more rpy to its own top level spkg and update to rpy 1.0.2\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3086\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @jasongrout\n\n* R 2.9.2 is out, so let's upgrade. \n\n* Evaluate using rpy2, which is a lower-level interface between R and python.  Make rpy2 its own spkg.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3086\n\n",
+    "closed_at": "2009-09-22T17:02:49Z",
     "created_at": "2008-05-03T03:24:25Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Update R to the 2.7 release and split off rpy.spkg",
+    "title": "Update R to the 2.9.2 release and split off rpy.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3086",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: @jasongrout
 
 CC:  @jasongrout
 
-R 2.7 is out, so let's upgrade. We should also more rpy to its own top level spkg and update to rpy 1.0.2
+* R 2.9.2 is out, so let's upgrade. 
 
-Cheers,
+* Evaluate using rpy2, which is a lower-level interface between R and python.  Make rpy2 its own spkg.
 
-Michael
 
 Issue created by migration from https://trac.sagemath.org/ticket/3086
 

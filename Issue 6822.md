@@ -3,7 +3,8 @@
 archive/issues_006822.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nFollowup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6822\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\nKeywords: bdist spkg\n\nFor binary distributions, we ship fake .spkg files in spkg/standard. This was introduced to work around some bug but that bug doesn't exist anymore. So stop shipping those fake packages.\n\nApply:\n\n- [attachment:trac_6822-root.patch] to the root repo\n- [attachment:trac_6822-scripts.patch] to the scripts repo\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6822\n\n",
+    "closed_at": "2012-11-12T21:56:54Z",
     "created_at": "2009-08-25T04:46:21Z",
     "labels": [
         "component: distribution",
@@ -19,7 +20,15 @@ Assignee: tbd
 
 CC:  @jhpalmieri
 
-Followup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.
+Keywords: bdist spkg
+
+For binary distributions, we ship fake .spkg files in spkg/standard. This was introduced to work around some bug but that bug doesn't exist anymore. So stop shipping those fake packages.
+
+Apply:
+
+- [attachment:trac_6822-root.patch] to the root repo
+- [attachment:trac_6822-scripts.patch] to the scripts repo
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6822
 

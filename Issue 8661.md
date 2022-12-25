@@ -6,8 +6,7 @@ archive/issues_008661.json:
     "body": "Assignee: tbd\n\nCC:  @wdjoyner hartke @nathanncohen @dimpase\n\nSee http://www.math.unl.edu/~shartke2/files/ for the spkg.\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/94f30bf9a589d88e/fc9f4e7b63836151 for previous discussion.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8661\n\n",
     "created_at": "2010-04-08T19:48:55Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "add lpsolve spkg",

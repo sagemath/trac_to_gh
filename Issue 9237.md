@@ -1,15 +1,16 @@
-# Issue 9237: create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory
+# Issue 9237: create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory and load an old-format worksheet
 
 archive/issues_009237.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nCreating this test will justify not doctesting the rest of this directory, and ensure that if somehow the stuff in this directory gets totally broken, then we'll know. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9237\n\n",
+    "closed_at": "2021-08-26T03:44:19Z",
     "created_at": "2010-06-14T15:21:30Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory",
+    "title": "create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory and load an old-format worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9237",
     "user": "https://github.com/williamstein"

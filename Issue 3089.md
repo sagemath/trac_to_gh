@@ -3,10 +3,11 @@
 archive/issues_003089.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe help page given by attach? claims:\n\n```\n        Type attached_files() for a list of all currently attached files.\n        You can remove files from this list to stop them from being watched. \n```\n\nIn fact, this has no effect when I try it:\n\n```\nsage: version()\n'SAGE Version 2.10.1, Release Date: 2008-02-02'\nsage: attached_files()\n['/mit/price/tmp/hessian.sage']\nsage: attached_files().pop()\n'/mit/price/tmp/hessian.sage'\nsage: attached_files()\n['/mit/price/tmp/hessian.sage']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3089\n\n",
+    "body": "Assignee: tba\n\nThe help page given by attach? claims:\n\n```\n        Type attached_files() for a list of all currently attached files.\n        You can remove files from this list to stop them from being watched. \n```\n\nIn fact, this has no effect when I try it:\n\n```\nsage: version()\n'SAGE Version 2.10.1, Release Date: 2008-02-02'\nsage: attached_files()\n['/mit/price/tmp/hessian.sage']\nsage: attached_files().pop()\n'/mit/price/tmp/hessian.sage'\nsage: attached_files()\n['/mit/price/tmp/hessian.sage']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3089\n\n",
+    "closed_at": "2010-01-17T14:13:17Z",
     "created_at": "2008-05-03T06:51:25Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
@@ -16,7 +17,7 @@ archive/issues_003089.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/gnprice"
 }
 ```
-Assignee: somebody
+Assignee: tba
 
 The help page given by attach? claims:
 

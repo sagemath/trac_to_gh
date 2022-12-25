@@ -3,7 +3,8 @@
 archive/issues_009790.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n```\nimport weave\nfrom weave import converters\n```\n\nshould be\n\n```\nfrom scipy.weave import converters\n```\n\nSee http://ask.sagemath.org/question/56/error-while-trying-to-import-weave#comment-213\n\nIssue created by migration from https://trac.sagemath.org/ticket/9791\n\n",
+    "body": "Assignee: mvngu\n\n```\nimport weave\nfrom weave import converters\n```\n\nshould be\n\n```\nfrom scipy.weave import converters\nfrom scipy import weave\n```\n\nSee http://ask.sagemath.org/question/56/error-while-trying-to-import-weave#comment-213\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9791\n\n",
+    "closed_at": "2011-01-28T13:47:51Z",
     "created_at": "2010-08-24T01:38:43Z",
     "labels": [
         "component: documentation",
@@ -27,9 +28,12 @@ should be
 
 ```
 from scipy.weave import converters
+from scipy import weave
 ```
 
 See http://ask.sagemath.org/question/56/error-while-trying-to-import-weave#comment-213
+
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/9791
 

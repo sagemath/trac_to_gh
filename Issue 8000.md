@@ -3,7 +3,8 @@
 archive/issues_008000.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol mvngu\n\nAdding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors \n\n```\nreading sources... [ 99%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\nraised when we build the reference manual.\n\nThis is partly a followup to #7249, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8000\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol mvngu\n\nAdding the pragma now to all Python files in SageNB may prevent some of the increasingly common docbuild errors raised when we build the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8000\n\n",
+    "closed_at": "2010-01-25T00:53:14Z",
     "created_at": "2010-01-19T16:26:52Z",
     "labels": [
         "component: notebook",
@@ -20,16 +21,8 @@ Assignee: @williamstein
 
 CC:  @TimDumol mvngu
 
-Adding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors 
+Adding the pragma now to all Python files in SageNB may prevent some of the increasingly common docbuild errors raised when we build the reference manual.
 
-```
-reading sources... [ 99%] sagenb/notebook/worksheet
-Sphinx error:
-'utf8' codec can't decode bytes in position 420-422: invalid data
-```
-raised when we build the reference manual.
-
-This is partly a followup to #7249, I think.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8000
 

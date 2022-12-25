@@ -4,6 +4,7 @@ archive/issues_001469.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nThe doctest script sage-doctest should try to import the namespace of the file being tested. It is not very convenient to add\n\n```\nfrom sage.foo import bar\n```\n\nat the beginning of every doctest in a file.\n\nThis would simplify some of the doctests in ~100 files, removing ~450 lines.\n\nImporting the module might have an impact on the speed of the doctests. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1469\n\n",
+    "closed_at": "2007-12-12T12:17:39Z",
     "created_at": "2007-12-12T08:56:24Z",
     "labels": [
         "component: doctest coverage",

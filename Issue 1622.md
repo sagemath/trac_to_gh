@@ -1,22 +1,23 @@
-# Issue 1622: update gnutls to 2.2.0
+# Issue 1622: [with spkg] update gnutls to 2.2.1
 
 archive/issues_001622.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1622\n\n",
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1622\n\n",
+    "closed_at": "2008-01-19T23:15:16Z",
     "created_at": "2007-12-29T04:36:21Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "update gnutls to 2.2.0",
+    "title": "[with spkg] update gnutls to 2.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1622",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 
 

@@ -1,9 +1,10 @@
-# Issue 3026: multivariate polynomial ring with no variables do not print properly
+# Issue 3026: [with patch, positive review] multivariate polynomial rings with no variables do not print properly
 
 archive/issues_003026.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe following output from sage does not make too much sense.\n\nsage: PolynomialRing(QQ, names=[])\nMultivariate Polynomial Ring in  over Rational Field\n\nwstein suggested that it might print something like the following.\n\nMultivariate Polynomial Ring in no variables over Rational Field\n\nIssue created by migration from https://trac.sagemath.org/ticket/3026\n\n",
+    "body": "Assignee: broune\n\nThe following output from sage does not make too much sense.\n\n```\nsage: PolynomialRing(QQ, names=[])\nMultivariate Polynomial Ring in  over Rational Field\n```\nwstein suggested that it might print something like the following.\n\n```\nMultivariate Polynomial Ring in no variables over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3026\n\n",
+    "closed_at": "2008-05-11T09:22:07Z",
     "created_at": "2008-04-26T00:24:06Z",
     "labels": [
         "component: commutative algebra",
@@ -11,22 +12,25 @@ archive/issues_003026.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "multivariate polynomial ring with no variables do not print properly",
+    "title": "[with patch, positive review] multivariate polynomial rings with no variables do not print properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3026",
     "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
-Assignee: @malb
+Assignee: broune
 
 The following output from sage does not make too much sense.
 
+```
 sage: PolynomialRing(QQ, names=[])
 Multivariate Polynomial Ring in  over Rational Field
-
+```
 wstein suggested that it might print something like the following.
 
+```
 Multivariate Polynomial Ring in no variables over Rational Field
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3026
 

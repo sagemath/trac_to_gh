@@ -4,6 +4,7 @@ archive/issues_007060.json:
 ```json
 {
     "body": "Assignee: boothby\n\nI realized that sage-4.1.2.alpha4 contains Tim Dumol's notebook patch, and many patches on top of that... but in separating the notebook off we found that that patch contains many errors which causes at least 6 serious bugs.  \n\nOur options:\n\n* revert that patch and everything on top of it.\n\n* switch to the new separated notebook for sage-4.1.2.\n\nThis is unfortunate and is entirely my fault since I refereed this notebook templating code, and though I did try everything in the notebook, I clearly wasn't sufficiently careful.   Sorry people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7060\n\n",
+    "closed_at": "2009-10-14T16:08:38Z",
     "created_at": "2009-09-29T03:13:33Z",
     "labels": [
         "component: notebook",

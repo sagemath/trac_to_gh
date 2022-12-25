@@ -1,16 +1,17 @@
-# Issue 6544: remove graph_isom.pxd
+# Issue 6544: [with patch, positive review] remove graph_isom.pxd
 
 archive/issues_006544.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis should have been part of #6112, but it was missed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6544\n\n",
+    "closed_at": "2009-07-18T17:26:53Z",
     "created_at": "2009-07-16T18:54:09Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "remove graph_isom.pxd",
+    "title": "[with patch, positive review] remove graph_isom.pxd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6544",
     "user": "https://github.com/rlmill"

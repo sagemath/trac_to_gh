@@ -4,10 +4,11 @@ archive/issues_008449.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThis docstring should be a raw string (i.e., r\"\"\" ... \"\"\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8449\n\n",
+    "closed_at": "2010-05-11T05:16:16Z",
     "created_at": "2010-03-05T21:53:57Z",
     "labels": [
         "component: documentation",
-        "minor",
+        "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",

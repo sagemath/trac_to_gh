@@ -1,15 +1,16 @@
-# Issue 5586: [with patch, needs review]
+# Issue 5586: [with patch, positive review] faster & more convenient sr
 
 archive/issues_005586.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin rpw\n\nKeywords: crypto, aes\n\n**Before**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 23.46 s, sys: 0.07 s, total: 23.52 s\nWall time: 23.61 s\n```\n\n**After**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 3.58 s, sys: 0.04 s, total: 3.62 s\nWall time: 3.63 s\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s\nWall time: 2.05 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5586\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin rpw\n\nKeywords: crypto, aes\n\n**Before**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 23.46 s, sys: 0.07 s, total: 23.52 s\nWall time: 23.61 s\n```\n\n**After**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 3.58 s, sys: 0.04 s, total: 3.62 s\nWall time: 3.63 s\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s\nWall time: 2.05 s\n```\n\nAlso, this now works:\n\n```\nsage: sr = mq.SR(1, 1, 1, 4, gf2=True, polybori=True)\nsage: R = sr.R\nsage: vn = sr.varstrs(\"P\",0,1,4) + R.variable_names() + sr.varstrs(\"C\",0,1,4)\nsage: R = BooleanPolynomialRing(len(vn),vn)\nsage: sr.R = R\n\nsage: C = sr.vars(\"C\",0); C\n(C000, C001, C002, C003)\nsage: P = sr.vars(\"P\",0)\nsage: F,s = sr.polynomial_system(P=P,C=C)\nsage: F\nPolynomial System with 36 Polynomials in 28 Variables\nsage: F.round(0)\n(P000 + w100 + k000, P001 + w101 + k001, P002 + w102 + k002, P003 + w103 + k003)\nsage: F.round(-2)\n(k100 + x100 + x102 + x103 + C000, k101 + x100 + x101 + x103 + C001 + 1, ...)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5586\n\n",
+    "closed_at": "2009-05-12T17:15:48Z",
     "created_at": "2009-03-22T17:54:03Z",
     "labels": [
         "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review]",
+    "title": "[with patch, positive review] faster & more convenient sr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5586",
     "user": "https://github.com/malb"
@@ -40,6 +41,27 @@ Wall time: 3.63 s
 sage: %time F,s = sr.polynomial_system()
 CPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s
 Wall time: 2.05 s
+```
+
+Also, this now works:
+
+```
+sage: sr = mq.SR(1, 1, 1, 4, gf2=True, polybori=True)
+sage: R = sr.R
+sage: vn = sr.varstrs("P",0,1,4) + R.variable_names() + sr.varstrs("C",0,1,4)
+sage: R = BooleanPolynomialRing(len(vn),vn)
+sage: sr.R = R
+
+sage: C = sr.vars("C",0); C
+(C000, C001, C002, C003)
+sage: P = sr.vars("P",0)
+sage: F,s = sr.polynomial_system(P=P,C=C)
+sage: F
+Polynomial System with 36 Polynomials in 28 Variables
+sage: F.round(0)
+(P000 + w100 + k000, P001 + w101 + k001, P002 + w102 + k002, P003 + w103 + k003)
+sage: F.round(-2)
+(k100 + x100 + x102 + x103 + C000, k101 + x100 + x101 + x103 + C001 + 1, ...)
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5586

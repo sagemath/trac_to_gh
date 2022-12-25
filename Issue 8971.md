@@ -4,6 +4,7 @@ archive/issues_008971.json:
 ```json
 {
     "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen\n\nThis error happens when trying to link Sage's CBC spkg to CPLEX on OSX 10.6:\n\nhttp://www.ibm.com/developerworks/forums/thread.jspa?messageID=14458988&tstart=0\n\nThe website notes a work-around.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8971\n\n",
+    "closed_at": "2020-04-20T12:37:19Z",
     "created_at": "2010-05-14T22:54:37Z",
     "labels": [
         "component: numerical",

@@ -4,6 +4,7 @@ archive/issues_007266.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  robertwb cremona\n\nThe Silverman height bound isn't necessarily as tight at the CPS bound, but it works uniformly over all field extensions, which makes it very useful for some applications, e.g., computing mordell-weil groups over number fields.   So let's add it to Sage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7266\n\n",
+    "closed_at": "2009-10-31T15:48:36Z",
     "created_at": "2009-10-23T03:16:15Z",
     "labels": [
         "component: number theory"

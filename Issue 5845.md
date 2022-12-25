@@ -1,9 +1,10 @@
-# Issue 5845: Fix precision bug in hilbert_class_polynomial()
+# Issue 5845: [with patch, positive review] Fix precision bug in hilbert_class_polynomial()
 
 archive/issues_005845.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: hilbert class polynomial quadratic form\n\nThe code introduced in #4990 uses an incorrect precision bound in a paper of Enge.  Enge has supplied a corrected bound, and the code fixed to use it.  At the same time, \n* The code has been extended to non-fundamental discriminants\n* It has been moved to sage/schemes/elliptic_curves/cm.py which had a similar function requiring Magma;  the method for number fields now calls this.\n* The function elliptic_j has been added to sage/functions/special.py\n* A new method is_primitive() has been added for integral binary quadratic forms, as well as a primitive_only flag to the function `BinaryQF_reduced_representatives`.\n* Last but not least, sage/schemes/elliptic_curves/cm.py has been ReST-ified and added to the reference manual\n\nThis started out as just a conversion of one small file with only 3 functions in it to ReST!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5845\n\n",
+    "closed_at": "2009-06-13T21:12:28Z",
     "created_at": "2009-04-21T10:41:47Z",
     "labels": [
         "component: algebra",
@@ -11,7 +12,7 @@ archive/issues_005845.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "Fix precision bug in hilbert_class_polynomial()",
+    "title": "[with patch, positive review] Fix precision bug in hilbert_class_polynomial()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5845",
     "user": "https://github.com/JohnCremona"

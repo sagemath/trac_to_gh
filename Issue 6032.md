@@ -1,9 +1,10 @@
-# Issue 6032: split boost-1.34.1.cropped off the polybori.spkg
+# Issue 6032: [with spkg, positive review] split boost-1.34.1.cropped off the polybori.spkg
 
 archive/issues_006032.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nTo make it easier to update boost it should be split off the polybori.spkg. Some time in the future we should also update to a more current release. \n\nNote the following should be added to SPKG.txt since it makes the creation of the cropped boost automatic:\n\n```\nextract BoRing.tar.gz in src\nextract boost-jam-3.1.14.tar.gz in src\ncopy cropped boost to src/boost_${BOOST_VER}.cropped\n\tcreate cropped boost with\n\tbcp --boost=boost_1_34_1 --scan PolyBoRi/M4RI/* PolyBoRi/polybori/include/* PolyBoRi/groebner/src/* PolyBoRi/PyPolyBoRi/* ../boost/t/boost_new/\n\n\tboost build subset\n\ttar jcvf boost.build.crop.tar.bz2 tools/build/v2/{kernel,util,build,tools,*.jam} boost-build.jam project-root.jam Jamfile.v2 Jamrules\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6032\n\n",
+    "body": "Assignee: mabshoff\n\nTo make it easier to update boost it should be split off the polybori.spkg. Some time in the future we should also update to a more current release. \n\nNote the following should be added to SPKG.txt since it makes the creation of the cropped boost automatic:\n\n```\nextract BoRing.tar.gz in src\nextract boost-jam-3.1.14.tar.gz in src\ncopy cropped boost to src/boost_${BOOST_VER}.cropped\ncreate cropped boost with\nbcp --boost=boost_1_34_1 --scan PolyBoRi/M4RI/* PolyBoRi/polybori/include/* PolyBoRi/groebner/src/* PolyBoRi/PyPolyBoRi/* ../boost/t/boost_new/\n\nboost build subset\ntar jcvf boost.build.crop.tar.bz2 tools/build/v2/{kernel,util,build,tools,*.jam} boost-build.jam project-root.jam Jamfile.v2 Jamrules\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6032\n\n",
+    "closed_at": "2009-05-16T00:21:48Z",
     "created_at": "2009-05-12T18:11:48Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_006032.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "split boost-1.34.1.cropped off the polybori.spkg",
+    "title": "[with spkg, positive review] split boost-1.34.1.cropped off the polybori.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6032",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -27,11 +28,11 @@ Note the following should be added to SPKG.txt since it makes the creation of th
 extract BoRing.tar.gz in src
 extract boost-jam-3.1.14.tar.gz in src
 copy cropped boost to src/boost_${BOOST_VER}.cropped
-	create cropped boost with
-	bcp --boost=boost_1_34_1 --scan PolyBoRi/M4RI/* PolyBoRi/polybori/include/* PolyBoRi/groebner/src/* PolyBoRi/PyPolyBoRi/* ../boost/t/boost_new/
+create cropped boost with
+bcp --boost=boost_1_34_1 --scan PolyBoRi/M4RI/* PolyBoRi/polybori/include/* PolyBoRi/groebner/src/* PolyBoRi/PyPolyBoRi/* ../boost/t/boost_new/
 
-	boost build subset
-	tar jcvf boost.build.crop.tar.bz2 tools/build/v2/{kernel,util,build,tools,*.jam} boost-build.jam project-root.jam Jamfile.v2 Jamrules
+boost build subset
+tar jcvf boost.build.crop.tar.bz2 tools/build/v2/{kernel,util,build,tools,*.jam} boost-build.jam project-root.jam Jamfile.v2 Jamrules
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6032

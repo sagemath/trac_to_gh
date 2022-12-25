@@ -1,22 +1,23 @@
-# Issue 2951: checkbox is not defined in interact
+# Issue 2951: [with patch; positive review] checkbox is not defined in interact
 
 archive/issues_002951.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: interact, notebook, checkbox\n\nThe checkbox function/class is never actually defined in interact.py; all the examples I can find use the shorthand method of constructing one.  To match the documentation and provide full options this should be added.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2951\n\n",
+    "body": "Assignee: somebody\n\nKeywords: interact, notebook, checkbox\n\nThe checkbox function/class is never actually defined in interact.py; all the examples I can find use the shorthand method of constructing one.  To match the documentation and provide full options this should be added.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2951\n\n",
+    "closed_at": "2008-04-18T20:17:29Z",
     "created_at": "2008-04-18T11:37:03Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "checkbox is not defined in interact",
+    "title": "[with patch; positive review] checkbox is not defined in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2951",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: boothby
+Assignee: somebody
 
 Keywords: interact, notebook, checkbox
 

@@ -1,16 +1,18 @@
-# Issue 5455: gap-4.4.12 -- broken on iras (itanium Linux)
+# Issue 5455: [with patch; positive review] gap-4.4.12 -- workspaces broken on iras (itanium Linux)
 
 archive/issues_005455.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSaving and loading workspaces is broke in gap Itanium (SUSE). Also, loading of any packages is now mysteriously broken:\n\n```\nsage: !gap\n    \n            #########           ######         ###########           ###  \n         #############          ######         ############         ####  \n        ##############         ########        #############       #####  \n       ###############         ########        #####   ######      #####  \n      ######         #         #########       #####    #####     ######  \n     ######                   ##########       #####    #####    #######  \n     #####                    ##### ####       #####   ######   ########  \n     ####                    #####  #####      #############   ###  ####  \n     #####     #######       ####    ####      ###########    ####  ####  \n     #####     #######      #####    #####     ######        ####   ####  \n     #####     #######      #####    #####     #####         #############\n      #####      #####     ################    #####         #############\n      ######     #####     ################    #####         #############\n      ################    ##################   #####                ####  \n       ###############    #####        #####   #####                ####  \n         #############    #####        #####   #####                ####  \n          #########      #####          #####  #####                ####  \n                                                                          \n     Information at:  http://www.gap-system.org\n     Try '?help' for help. See also  '?copyright' and  '?authors'\n    \n   Loading the library. Please be patient, this may take a while.\nGAP4, Version: 4.4.12 of 17-Dec-2008, ia64-unknown-linux-gnu-gcc\ngap> LoadPackage(\"braid\");\nfail\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5455\n\n",
+    "body": "Assignee: mabshoff\n\nSaving workspaces is broken in GAP SUSE Itanium. \n\n```\nsage: !gap\n    \n            #########           ######         ###########           ###  \n         #############          ######         ############         ####  \n        ##############         ########        #############       #####  \n       ###############         ########        #####   ######      #####  \n      ######         #         #########       #####    #####     ######  \n     ######                   ##########       #####    #####    #######  \n     #####                    ##### ####       #####   ######   ########  \n     ####                    #####  #####      #############   ###  ####  \n     #####     #######       ####    ####      ###########    ####  ####  \n     #####     #######      #####    #####     ######        ####   ####  \n     #####     #######      #####    #####     #####         #############\n      #####      #####     ################    #####         #############\n      ######     #####     ################    #####         #############\n      ################    ##################   #####                ####  \n       ###############    #####        #####   #####                ####  \n         #############    #####        #####   #####                ####  \n          #########      #####          #####  #####                ####  \n                                                                          \n     Information at:  http://www.gap-system.org\n     Try '?help' for help. See also  '?copyright' and  '?authors'\n    \n   Loading the library. Please be patient, this may take a while.\nGAP4, Version: 4.4.12 of 17-Dec-2008, ia64-unknown-linux-gnu-gcc\ngap> SaveWorkspace(\"a\");\ntrue\ngap>\nwstein@iras:/tmp/wstein/sage-3.4.alpha0-ia64-Linux/x> ls\n?\u01ce?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5455\n\n",
+    "closed_at": "2009-03-10T16:23:28Z",
     "created_at": "2009-03-08T05:53:51Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "gap-4.4.12 -- broken on iras (itanium Linux)",
+    "title": "[with patch; positive review] gap-4.4.12 -- workspaces broken on iras (itanium Linux)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5455",
     "user": "https://github.com/williamstein"
@@ -18,7 +20,7 @@ archive/issues_005455.json:
 ```
 Assignee: mabshoff
 
-Saving and loading workspaces is broke in gap Itanium (SUSE). Also, loading of any packages is now mysteriously broken:
+Saving workspaces is broken in GAP SUSE Itanium. 
 
 ```
 sage: !gap
@@ -46,8 +48,11 @@ sage: !gap
     
    Loading the library. Please be patient, this may take a while.
 GAP4, Version: 4.4.12 of 17-Dec-2008, ia64-unknown-linux-gnu-gcc
-gap> LoadPackage("braid");
-fail
+gap> SaveWorkspace("a");
+true
+gap>
+wstein@iras:/tmp/wstein/sage-3.4.alpha0-ia64-Linux/x> ls
+?ǎ?
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/5455

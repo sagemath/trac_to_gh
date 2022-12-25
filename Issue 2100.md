@@ -3,11 +3,11 @@
 archive/issues_002100.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman mhampton @qed777\n\nIf we are plotting a circle or sphere with circle.show(), we ought to see a circle and not have to manually specify the aspect ratio.  The aspect ratio should have sensible defaults that depend on the thing that is being plotted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2100\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kcrisman mhampton @qed777\n\nKeywords: sd31\n\nWe have two concepts of \"aspect ratio\" that we'd like to expose to the user.\n\nThis patch exposes the following behavior:\n\n```\n    * Figure aspect ratio -- controls the final image size, including any text labels, etc. This will be set using the following options:\n          o figsize\n                + single number - use this as a base size for the width of the figure canvas\n                + two numbers - an actual figure size in inches\n                + None - use the default size in Matplotlib\n          o fit_tight\n                + if True, clip or extend the resulting figure to the plot objects (so the resulting figure will probably not have figsize dimensions\n                + if False, the resulting figure has exactly figsize dimensions, but items in the plot may be clipped or there may be excessive padding around drawn objects\n    * Pixel aspect ratio\n          o aspect_ratio -- the ratio height/width for a unit square\n                + 1 -- a unit square appears to have equal height and width.  This will be the default for Graphics objects (so if a default is not explicitly set, the default is this.)\n                + 'auto' -- plot the given data limits in the given (or computed) figsize, filling the figure (default for plot and list_plot)\n                + number -- ratio of height to width.\n```\n\nTo patchbot/reviewers: Apply attachment:trac_2100-aspect-ratio-rebase.patch and attachment:trac_2100-auto-automatic-and-vector.patch\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2100\n\n",
+    "closed_at": "2011-07-22T12:48:14Z",
     "created_at": "2008-02-08T04:49:50Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.2",
     "title": "sensible defaults for aspect ratio",
@@ -16,11 +16,34 @@ archive/issues_002100.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @kcrisman mhampton @qed777
 
-If we are plotting a circle or sphere with circle.show(), we ought to see a circle and not have to manually specify the aspect ratio.  The aspect ratio should have sensible defaults that depend on the thing that is being plotted.
+Keywords: sd31
+
+We have two concepts of "aspect ratio" that we'd like to expose to the user.
+
+This patch exposes the following behavior:
+
+```
+    * Figure aspect ratio -- controls the final image size, including any text labels, etc. This will be set using the following options:
+          o figsize
+                + single number - use this as a base size for the width of the figure canvas
+                + two numbers - an actual figure size in inches
+                + None - use the default size in Matplotlib
+          o fit_tight
+                + if True, clip or extend the resulting figure to the plot objects (so the resulting figure will probably not have figsize dimensions
+                + if False, the resulting figure has exactly figsize dimensions, but items in the plot may be clipped or there may be excessive padding around drawn objects
+    * Pixel aspect ratio
+          o aspect_ratio -- the ratio height/width for a unit square
+                + 1 -- a unit square appears to have equal height and width.  This will be the default for Graphics objects (so if a default is not explicitly set, the default is this.)
+                + 'auto' -- plot the given data limits in the given (or computed) figsize, filling the figure (default for plot and list_plot)
+                + number -- ratio of height to width.
+```
+
+To patchbot/reviewers: Apply attachment:trac_2100-aspect-ratio-rebase.patch and attachment:trac_2100-auto-automatic-and-vector.patch
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/2100
 

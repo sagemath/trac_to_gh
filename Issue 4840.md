@@ -1,22 +1,23 @@
-# Issue 4840: FLINT: call the stack cleanup function at exit
+# Issue 4840: [with patch, positive review] FLINT: call the stack cleanup function at exit
 
 archive/issues_004840.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nFLINT uses its own memory pool. In order to clean up Sage's valgrind log call  flint_stack_cleanup() right before unloading FLINT.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4840\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nFLINT uses its own memory pool. In order to clean up Sage's valgrind log call  flint_stack_cleanup() right before unloading FLINT.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4840\n\n",
+    "closed_at": "2009-01-24T17:45:49Z",
     "created_at": "2008-12-20T22:11:53Z",
     "labels": [
-        "component: linear algebra",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "FLINT: call the stack cleanup function at exit",
+    "title": "[with patch, positive review] FLINT: call the stack cleanup function at exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4840",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: @burcin
 
 CC:  @burcin
 

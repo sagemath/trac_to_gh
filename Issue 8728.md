@@ -1,22 +1,25 @@
-# Issue 8728: Incorrect integral from Maxima
+# Issue 8728: doctest fixed integral from Maxima
 
 archive/issues_008728.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom #sage-devel:\n\n```\nBoulemans left the chat room. (Read error: Connection reset by peer)\n[11:58am] Boule joined the chat room.\n[11:58am] Boule: (laptop shutdown due to power supply)\n[11:59am] Boule: e, T, w = var(\"e T w\"); assume(1 = e^2)>0; integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi) should give -2*pi e cos w/(1-e^2)^3/2 instead of 0\n[11:59am] Boule: can someone help?\n[12:00pm] wjp: yeah, sage seems to have some trouble with this integral. You could try http://groups.google.com/group/sage-support since the right people don't seem to be here currently\n[12:00pm] Boule: ok, thanx\n[12:08pm] kcrisman: By the way, I just tried this and get a hang in Maxima.  Can you type the exact commands which lead to an answer of 0?\n[12:08pm] kcrisman: If I plug something (.5, .75) in for e in Maxima in Sage, I do get zero as an output.\n[12:12pm] Boule: don't know maxima, but with numerical values for e and w at wolfram-alfa, it gives something different than 0\n[12:13pm] wjp: *nod* maple gives non-zeros too\n[12:13pm] kcrisman: Can you give the *exact* sequence of commands which yield zero in Sage itself? \n[12:14pm] Boule: e = var('e')\n[12:14pm] Boule: T = var('T')\n[12:14pm] Boule: w = var('w')\n[12:14pm] baali1 joined the chat room.\n[12:14pm] baali left the chat room. (Quit: Leaving.)\n[12:15pm] Boule: assume(1-e^2>0)\n[12:15pm] Boule:  integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)\n[12:15pm] kcrisman: Okay, that's what I thought.\n[12:16pm] kcrisman: Okay, it takes a while but I do get 0.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8728\n\n",
+    "body": "Assignee: @burcin\n\nThis is fixed now and needs a doctest:\n\nFrom #sage-devel:\n\n```\nBoulemans left the chat room. (Read error: Connection reset by peer)\n[11:58am] Boule joined the chat room.\n[11:58am] Boule: (laptop shutdown due to power supply)\n[11:59am] Boule: e, T, w = var(\"e T w\"); assume(1 = e^2)>0; integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi) should give -2*pi e cos w/(1-e^2)^3/2 instead of 0\n[11:59am] Boule: can someone help?\n[12:00pm] wjp: yeah, sage seems to have some trouble with this integral. You could try http://groups.google.com/group/sage-support since the right people don't seem to be here currently\n[12:00pm] Boule: ok, thanx\n[12:08pm] kcrisman: By the way, I just tried this and get a hang in Maxima.  Can you type the exact commands which lead to an answer of 0?\n[12:08pm] kcrisman: If I plug something (.5, .75) in for e in Maxima in Sage, I do get zero as an output.\n[12:12pm] Boule: don't know maxima, but with numerical values for e and w at wolfram-alfa, it gives something different than 0\n[12:13pm] wjp: *nod* maple gives non-zeros too\n[12:13pm] kcrisman: Can you give the *exact* sequence of commands which yield zero in Sage itself? \n[12:14pm] Boule: e = var('e')\n[12:14pm] Boule: T = var('T')\n[12:14pm] Boule: w = var('w')\n[12:14pm] baali1 joined the chat room.\n[12:14pm] baali left the chat room. (Quit: Leaving.)\n[12:15pm] Boule: assume(1-e^2>0)\n[12:15pm] Boule:  integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)\n[12:15pm] kcrisman: Okay, that's what I thought.\n[12:16pm] kcrisman: Okay, it takes a while but I do get 0.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8728\n\n",
+    "closed_at": "2016-08-07T20:01:30Z",
     "created_at": "2010-04-20T16:22:21Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.4",
-    "title": "Incorrect integral from Maxima",
+    "title": "doctest fixed integral from Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8728",
     "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @burcin
+
+This is fixed now and needs a doctest:
 
 From #sage-devel:
 
@@ -43,6 +46,7 @@ Boulemans left the chat room. (Read error: Connection reset by peer)
 [12:15pm] kcrisman: Okay, that's what I thought.
 [12:16pm] kcrisman: Okay, it takes a while but I do get 0.
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8728
 

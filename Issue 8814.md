@@ -4,6 +4,7 @@ archive/issues_008814.json:
 ```json
 {
     "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona\n\nThese were doing nothing but slowing things down. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8814\n\n",
+    "closed_at": "2010-05-08T21:52:28Z",
     "created_at": "2010-04-29T04:11:13Z",
     "labels": [
         "component: elliptic curves"

@@ -1,9 +1,10 @@
-# Issue 3850: Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only)
+# Issue 3850: [with patch, needs review] Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only)
 
 archive/issues_003850.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n```\n********************************************************************* \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 543: \n    sage: l.index(A) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[7]>\", line 1, in <module> \n        l.index(A)###line 543: \n    sage: l.index(A) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 545: \n    sage: l.index(B) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[8]>\", line 1, in <module> \n        l.index(B)###line 545: \n    sage: l.index(B) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 551: \n    sage: l.index(A) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[9]>\", line 1, in <module> \n        l.index(A)###line 551: \n    sage: l.index(A) \n    SystemError: error return without exception set \n********************************************************************** \nFile \"/Users/palmieri/Desktop/sage-3.1.alpha2/tmp/matrix_space.py\", \nline 553: \n    sage: l.index(C) \nException raised: \n    Traceback (most recent call last): \n      File \"/Users/palmieri/Desktop/sage-3.1.alpha2/local/lib/ \npython2.5/doctest.py\", line 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[10]>\", line 1, in <module> \n        l.index(C)###line 553: \n    sage: l.index(C) \n    SystemError: error return without exception set \n********************************************************************** \n1 items had failures: \n   4 of  35 in __main__.example_12 \n***Test Failed*** 4 failures. \nFor whitespace errors, see the file /Users/palmieri/Desktop/ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3850\n\n",
+    "closed_at": "2008-08-15T09:38:48Z",
     "created_at": "2008-08-14T16:19:07Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_003850.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only)",
+    "title": "[with patch, needs review] Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3850",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

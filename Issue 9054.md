@@ -3,7 +3,8 @@
 archive/issues_009054.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @burcin khwilson @koffie @mstreng @novoselt @pjbruin minz @saraedum\n\nOne of the first things we learned at Sage Days 21: Function Fields, is that it is not even possible to really define or even do arithmetic in function fields *at all* in Sage!  It's amazing that this most basic arithmetic still isn't supported, but it isn't (maybe it used to be via generic machinery, but got broken...?).  The point of this ticket is to create classes for standard function field structures, along with support for arithmetic.   This should be organized in a way similar to number fields. \n\nFor this code, the main point is to establish an API that works solidly.  It will be insanely slow.  A subsequent patch will make things fast.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9054\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin khwilson @koffie @mstreng @novoselt @pjbruin minz @saraedum\n\nOne of the first things we learned at Sage Days 21: Function Fields, is that it is not even possible to really define or even do arithmetic in function fields *at all* in Sage!  It's amazing that this most basic arithmetic still isn't supported, but it isn't (maybe it used to be via generic machinery, but got broken...?).  The point of this ticket is to create classes for standard function field structures, along with support for arithmetic.   This should be organized in a way similar to number fields. \n\nFor this code, the main point is to establish an API that works solidly.  It will be insanely slow.  A subsequent patch will make things fast. \n\nSee also: #9069, #9051, #9094, #9095.\n\nNote that the dependancy on #9138 is only because of a really minor change in the doctests. This ticket already has a positive review so I suspect this will get merged first. If that ticket eventually gets rejected it will be trivial to rebase the patch withouth that ticket.\n\nApply [attachment:9054_function_fields.patch] to the Sage library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9054\n\n",
+    "closed_at": "2012-02-02T12:52:09Z",
     "created_at": "2010-05-26T11:21:12Z",
     "labels": [
         "component: algebra"
@@ -15,13 +16,19 @@ archive/issues_009054.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @aghitza
+Assignee: @williamstein
 
 CC:  @burcin khwilson @koffie @mstreng @novoselt @pjbruin minz @saraedum
 
 One of the first things we learned at Sage Days 21: Function Fields, is that it is not even possible to really define or even do arithmetic in function fields *at all* in Sage!  It's amazing that this most basic arithmetic still isn't supported, but it isn't (maybe it used to be via generic machinery, but got broken...?).  The point of this ticket is to create classes for standard function field structures, along with support for arithmetic.   This should be organized in a way similar to number fields. 
 
-For this code, the main point is to establish an API that works solidly.  It will be insanely slow.  A subsequent patch will make things fast.
+For this code, the main point is to establish an API that works solidly.  It will be insanely slow.  A subsequent patch will make things fast. 
+
+See also: #9069, #9051, #9094, #9095.
+
+Note that the dependancy on #9138 is only because of a really minor change in the doctests. This ticket already has a positive review so I suspect this will get merged first. If that ticket eventually gets rejected it will be trivial to rebase the patch withouth that ticket.
+
+Apply [attachment:9054_function_fields.patch] to the Sage library.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9054
 

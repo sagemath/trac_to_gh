@@ -1,16 +1,17 @@
-# Issue 6511: merge script: syntax error when doing "sage -merge <ticket-number>"
+# Issue 6511: [with patch, positive review] merge script: syntax error when doing "sage -merge <ticket-number>"
 
 archive/issues_006511.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: merge script\n\nSee this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2391d93c9eb12eea) for some background discussions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6511\n\n",
+    "closed_at": "2009-07-16T21:31:51Z",
     "created_at": "2009-07-11T09:34:20Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "merge script: syntax error when doing \"sage -merge <ticket-number>\"",
+    "title": "[with patch, positive review] merge script: syntax error when doing \"sage -merge <ticket-number>\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6511",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

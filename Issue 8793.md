@@ -3,7 +3,8 @@
 archive/issues_008793.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8793\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: beginner doctest documentation\n\nAs the subject says. This needs to be coordinated with #8797.\n\n\n---\n\nApply:\n\n* [attachment:trac_8793_new_version_2013_10.patch\u200b]\n\nIssue created by migration from https://trac.sagemath.org/ticket/8793\n\n",
+    "closed_at": "2013-12-05T08:02:28Z",
     "created_at": "2010-04-28T06:50:43Z",
     "labels": [
         "component: documentation"
@@ -17,7 +18,16 @@ archive/issues_008793.json:
 ```
 Assignee: mvngu
 
-As the subject says.
+Keywords: beginner doctest documentation
+
+As the subject says. This needs to be coordinated with #8797.
+
+
+---
+
+Apply:
+
+* [attachment:trac_8793_new_version_2013_10.patch​]
 
 Issue created by migration from https://trac.sagemath.org/ticket/8793
 

@@ -4,6 +4,7 @@ archive/issues_008045.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nThe documentation strings for classes like `elliptic_ec` are contained in their `__init__` methods, and so doesn't show up in the reference manual.  This patch fixes that by moving the documentation to the class definition.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8045\n\n",
+    "closed_at": "2010-02-02T03:23:58Z",
     "created_at": "2010-01-23T17:19:12Z",
     "labels": [
         "component: documentation",

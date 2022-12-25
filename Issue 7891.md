@@ -1,15 +1,15 @@
-# Issue 7891: spkg's for PyQt4 and QScintilla2
+# Issue 7891: spkg's QScintilla2
 
 archive/issues_007891.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nPackages for sip, PyQt4 and QScintilla2. sip is a required library for the other ones. PyQt4 allows to call Qt libraries from Python and Sage code, using the system-wide Qt installation. QScintilla2 is a plug-in for text input with syntax highlighting.\nCurrent files are in experimental packages and in http://sourceforge.net/projects/lorienlabs/files/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/7891\n\n",
+    "body": "Assignee: tbd\n\nPackage for QScintilla2 - QScintilla2 is a plug-in for text input with syntax highlighting.\nCurrent files are in experimental packages and in http://sourceforge.net/projects/lorienlabs/files/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/7891\n\n",
     "created_at": "2010-01-10T19:37:03Z",
     "labels": [
         "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
-    "title": "spkg's for PyQt4 and QScintilla2",
+    "title": "spkg's QScintilla2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7891",
     "user": "https://trac.sagemath.org/admin/accounts/users/a.serrano"
@@ -17,7 +17,7 @@ archive/issues_007891.json:
 ```
 Assignee: tbd
 
-Packages for sip, PyQt4 and QScintilla2. sip is a required library for the other ones. PyQt4 allows to call Qt libraries from Python and Sage code, using the system-wide Qt installation. QScintilla2 is a plug-in for text input with syntax highlighting.
+Package for QScintilla2 - QScintilla2 is a plug-in for text input with syntax highlighting.
 Current files are in experimental packages and in http://sourceforge.net/projects/lorienlabs/files/ .
 
 Issue created by migration from https://trac.sagemath.org/ticket/7891

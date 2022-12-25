@@ -3,7 +3,8 @@
 archive/issues_009697.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\n[rlm-book standard]$ tar xf flint-1.5.0.p5.spkg \ntar: copyfile unpack (flint-1.5.0.p5/src/zn_poly/demo/bernoulli/.svn/prop-base/.DS_Store.svn-base) failed: No such file or directory\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9697\n\n",
+    "body": "Assignee: pdehaye\n\nNew **spkg**: [http://boxen.math.washington.edu/home/pdehaye/spkg/flint-1.5.2.p2.spkg](http://boxen.math.washington.edu/home/pdehaye/spkg/flint-1.5.2.p2.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9697\n\n",
+    "closed_at": "2012-10-17T20:52:18Z",
     "created_at": "2010-08-06T17:33:52Z",
     "labels": [
         "component: packages: standard",
@@ -16,12 +17,9 @@ archive/issues_009697.json:
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: tbd
+Assignee: pdehaye
 
-```
-[rlm-book standard]$ tar xf flint-1.5.0.p5.spkg 
-tar: copyfile unpack (flint-1.5.0.p5/src/zn_poly/demo/bernoulli/.svn/prop-base/.DS_Store.svn-base) failed: No such file or directory
-```
+New **spkg**: [http://boxen.math.washington.edu/home/pdehaye/spkg/flint-1.5.2.p2.spkg](http://boxen.math.washington.edu/home/pdehaye/spkg/flint-1.5.2.p2.spkg)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9697
 

@@ -3,7 +3,8 @@
 archive/issues_009308.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nGnuTLS is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as GnuTLS has a test suite.\n\nAfter adding the required file, the test suite is run and at least on my OpenSolaris laptop, passes all tests. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9308\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nGnuTLS is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as GnuTLS has a test suite.\n\nAfter adding the required file, the test suite is run and at least on my OpenSolaris laptop, passes all tests. \n\nDave \n\n---\n\nTicket #9975 supercedes this ticket. When ticket #9975 is closed, this ticket may be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9308\n\n",
+    "closed_at": "2012-10-05T09:11:12Z",
     "created_at": "2010-06-22T13:28:23Z",
     "labels": [
         "component: spkg-check",
@@ -24,7 +25,11 @@ GnuTLS is one of the many standard packages in Sage (see #9281 for a list), whic
 
 After adding the required file, the test suite is run and at least on my OpenSolaris laptop, passes all tests. 
 
-Dave
+Dave 
+
+---
+
+Ticket #9975 supercedes this ticket. When ticket #9975 is closed, this ticket may be closed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9308
 

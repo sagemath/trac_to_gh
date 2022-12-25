@@ -1,15 +1,16 @@
-# Issue 7962: Add link to download all worksheets as a zip file
+# Issue 7962: Add link to download all worksheets as a zip file for accounts=True
 
 archive/issues_007962.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nCC:  @jasongrout @williamstein\n\nThis is already present in the codebase introduced by Robert Bradshaw and revised by William Stein, but there is no link to the url for the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7962\n\n",
+    "closed_at": "2010-01-25T00:51:07Z",
     "created_at": "2010-01-17T08:40:55Z",
     "labels": [
-        "component: algebra"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "Add link to download all worksheets as a zip file",
+    "title": "Add link to download all worksheets as a zip file for accounts=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7962",
     "user": "https://github.com/TimDumol"

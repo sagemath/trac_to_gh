@@ -1,9 +1,10 @@
-# Issue 6971: port ECL spkg to os x 10.6
+# Issue 6971: [with spkg, positive review] port ECL spkg to os x 10.6
 
 archive/issues_006971.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\nha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c -o mach_dep.o\nIn file included from /Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[5]: *** [mach_dep.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [libeclgc.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6971\n\n",
+    "body": "Assignee: tbd\n\n```\nha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c -o mach_dep.o\nIn file included from /Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[5]: *** [mach_dep.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [libeclgc.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6971\n\n",
+    "closed_at": "2009-09-27T02:05:15Z",
     "created_at": "2009-09-20T22:28:14Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_006971.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "port ECL spkg to os x 10.6",
+    "title": "[with spkg, positive review] port ECL spkg to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6971",
     "user": "https://github.com/williamstein"
@@ -30,6 +31,7 @@ make[2]: *** [all] Error 2
 Failed to build ECL ... exiting
 
 ```
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/6971
 

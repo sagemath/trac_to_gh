@@ -1,16 +1,17 @@
-# Issue 6272: upgrade to flint-1.3.0
+# Issue 6272: [with spkg, positive review] upgrade to flint-1.3.0
 
 archive/issues_006272.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @craigcitro\n\npackages on sage.math, Craig knows where.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6272\n\n",
+    "closed_at": "2009-06-14T22:31:06Z",
     "created_at": "2009-06-12T18:51:11Z",
     "labels": [
         "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "upgrade to flint-1.3.0",
+    "title": "[with spkg, positive review] upgrade to flint-1.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6272",
     "user": "https://github.com/ncalexan"

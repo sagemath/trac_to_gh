@@ -3,7 +3,8 @@
 archive/issues_009691.json:
 ```json
 {
-    "body": "Assignee: mvngu, schilly\n\nCC:  @embray @slel\n\nOr something like that.  The problem is that Search at the top gives all tickets, closed or open, with the content, while often one wants just to search open tickets.  Since the only other option is clicking View Tickets, then Custom Query, etc. (notice that even the Search tab doesn't do anything useful different from the Search box), and THEN clicking all the non-'closed' options, we should improve this.  \n\nI'm putting component website/wiki, but only because there isn't a trac component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9691\n\n",
+    "body": "Assignee: mvngu, schilly\n\nCC:  @embray @slel\n\nKeywords: Trac\n\nOr something like that.  The problem is that Search at the top gives all tickets, closed or open, with the content, while often one wants just to search open tickets.  Since the only other option is clicking View Tickets, then Custom Query, etc. (notice that even the Search tab doesn't do anything useful different from the Search box), and THEN clicking all the non-'closed' options, we should improve this.  \n\nI'm putting component website/wiki, but only because there isn't a trac component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9691\n\n",
+    "closed_at": "2018-08-03T17:25:33Z",
     "created_at": "2010-08-05T15:11:13Z",
     "labels": [
         "component: website/wiki"
@@ -18,6 +19,8 @@ archive/issues_009691.json:
 Assignee: mvngu, schilly
 
 CC:  @embray @slel
+
+Keywords: Trac
 
 Or something like that.  The problem is that Search at the top gives all tickets, closed or open, with the content, while often one wants just to search open tickets.  Since the only other option is clicking View Tickets, then Custom Query, etc. (notice that even the Search tab doesn't do anything useful different from the Search box), and THEN clicking all the non-'closed' options, we should improve this.  
 

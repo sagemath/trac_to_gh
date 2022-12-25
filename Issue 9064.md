@@ -4,6 +4,7 @@ archive/issues_009064.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nThere's a single file in matrix/padics and it is an empty __init__.py.\n\nSays David Roe: \"Yeah, oversight.\u00a0 At some point I was planning on working on p-adic matrices, and I guess the __init__.py file got put in then.\u00a0 Since I'm not going to work on it anytime soon, it can safely be removed.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9064\n\n",
+    "closed_at": "2010-08-31T03:20:20Z",
     "created_at": "2010-05-27T08:20:44Z",
     "labels": [
         "component: linear algebra",

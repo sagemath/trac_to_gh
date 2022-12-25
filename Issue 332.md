@@ -4,6 +4,7 @@ archive/issues_000332.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIf I do not click on an input cell then when I hit slideshow I see a zero and\na blank page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/332\n\n",
+    "closed_at": "2007-10-21T02:28:43Z",
     "created_at": "2007-03-26T04:04:47Z",
     "labels": [
         "component: notebook",

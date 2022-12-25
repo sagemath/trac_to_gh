@@ -3,7 +3,8 @@
 archive/issues_007209.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nWith the attached patch, sage -coverage looks for either a loads/dumps test or TestSuite, and suggests using the later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7209\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: TestSuite, coverage\n\nWith the attached patch for sage/local/bin, `sage -coverage` scans for either a loads(dumps(s)) or a TestSuite(s).run() doctest, and suggests using the later.\n\nAlso refines the test whether the file defines a class.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7209\n\n",
+    "closed_at": "2009-10-21T04:01:53Z",
     "created_at": "2009-10-14T13:50:22Z",
     "labels": [
         "component: doctest coverage"
@@ -19,7 +20,12 @@ Assignee: @nthiery
 
 CC:  sage-combinat
 
-With the attached patch, sage -coverage looks for either a loads/dumps test or TestSuite, and suggests using the later.
+Keywords: TestSuite, coverage
+
+With the attached patch for sage/local/bin, `sage -coverage` scans for either a loads(dumps(s)) or a TestSuite(s).run() doctest, and suggests using the later.
+
+Also refines the test whether the file defines a class.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7209
 

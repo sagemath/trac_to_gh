@@ -4,6 +4,7 @@ archive/issues_000810.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIt's annoying that number field ideals have a `gens_reduced()` method, but ideals of ZZ do not. This patch fixes this by adding a `gens_reduced()` method to the base ideal class, whose default implementation just calls `gens()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/810\n\n",
+    "closed_at": "2007-10-04T15:15:23Z",
     "created_at": "2007-10-03T16:39:57Z",
     "labels": [
         "component: algebraic geometry",

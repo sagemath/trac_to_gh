@@ -1,16 +1,17 @@
-# Issue 8205: sagenb -- the url for published worksheets that's displayed right after publishing is still wrong
+# Issue 8205: Document ProxyPreserveHost (was: fix the base URL for published worksheet)
 
 archive/issues_008205.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  acleone @TimDumol\n\nI upgraded sagenb.org to sagenb-0.7.4, and excitedly hoped that when I click publish to publish a worksheet it would give me the correct URL.    Now it says:\n\n\"Worksheet is publicly viewable at http://localhost:8888/home/pub/1153\"\n\nThis is wrong.  This might even be considered worse than before, since before it did \"... http://:8888/home/pub/1153\" which was obviously wrong.  The above looks less obviously wrong. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8205\n\n",
+    "closed_at": "2014-12-11T18:35:23Z",
     "created_at": "2010-02-07T05:19:27Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "sagenb -- the url for published worksheets that's displayed right after publishing is still wrong",
+    "title": "Document ProxyPreserveHost (was: fix the base URL for published worksheet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8205",
     "user": "https://github.com/williamstein"

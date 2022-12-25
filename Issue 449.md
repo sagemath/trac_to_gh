@@ -1,16 +1,17 @@
-# Issue 449: lrank Solaris build fixes
+# Issue 449: lcalc Solaris build fixes
 
 archive/issues_000449.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n* spkg-install: needs sh compability fix: DEFINES=\"\"; export DEFINES\n* llrint workaround needed for SunOS:\n  #define llrint(d) ((long long)rint(d))\n* ./include/getopt.h: line 147: do not define \"extern int getopt ();\"\non Solaris\n* needs -liberty for symbol getopt_long when __sun is defined\n\nIn general: The Makefile sucks:\n\ng++  -DINCLUDE_PARI   \\\n      -I/extra/home/mabshoff/SAGE-build/sage-2.8/local/include/pari \\\n      -I/extra/home/mabshoff/SAGE-build/sage-2.8/local/include \\\n      -I ../include/ -L/extra/home/mabshoff/SAGE-build/sage-2.8/local/\nlib \\\n      cmdline.c \\\n      Lcommandline.cc Lcommandline_elliptic.cc Lcommandline_globals.cc\n\\\n      Lcommandline_misc.cc Lcommandline_numbertheory.cc \\\n      Lcommandline_twist.cc Lcommandline_values_zeros.cc \\\n      Lgamma.cc Lglobals.cc Lmisc.cc Lriemannsiegel.cc \\\n            -o lcalc -lpari -lmpfr -lgmpxx -lgmp -liberty\n\nCleanup:\n* compile each file individually\n* crush gcc 4.2 warnings about const string to char*\n\nIssue created by migration from https://trac.sagemath.org/ticket/449\n\n",
+    "body": "Assignee: mabshoff\n\nAll that is needed to make the lcalc.spkg from #1626 to install is to add -liberty to the linker flags.\n\nIssue created by migration from https://trac.sagemath.org/ticket/449\n\n",
+    "closed_at": "2008-04-14T03:57:39Z",
     "created_at": "2007-08-19T07:49:45Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "lrank Solaris build fixes",
+    "title": "lcalc Solaris build fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/449",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -18,31 +19,7 @@ archive/issues_000449.json:
 ```
 Assignee: mabshoff
 
-* spkg-install: needs sh compability fix: DEFINES=""; export DEFINES
-* llrint workaround needed for SunOS:
-  #define llrint(d) ((long long)rint(d))
-* ./include/getopt.h: line 147: do not define "extern int getopt ();"
-on Solaris
-* needs -liberty for symbol getopt_long when __sun is defined
-
-In general: The Makefile sucks:
-
-g++  -DINCLUDE_PARI   \
-      -I/extra/home/mabshoff/SAGE-build/sage-2.8/local/include/pari \
-      -I/extra/home/mabshoff/SAGE-build/sage-2.8/local/include \
-      -I ../include/ -L/extra/home/mabshoff/SAGE-build/sage-2.8/local/
-lib \
-      cmdline.c \
-      Lcommandline.cc Lcommandline_elliptic.cc Lcommandline_globals.cc
-\
-      Lcommandline_misc.cc Lcommandline_numbertheory.cc \
-      Lcommandline_twist.cc Lcommandline_values_zeros.cc \
-      Lgamma.cc Lglobals.cc Lmisc.cc Lriemannsiegel.cc \
-            -o lcalc -lpari -lmpfr -lgmpxx -lgmp -liberty
-
-Cleanup:
-* compile each file individually
-* crush gcc 4.2 warnings about const string to char*
+All that is needed to make the lcalc.spkg from #1626 to install is to add -liberty to the linker flags.
 
 Issue created by migration from https://trac.sagemath.org/ticket/449
 

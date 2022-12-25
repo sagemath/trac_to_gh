@@ -3,7 +3,8 @@
 archive/issues_007722.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAnother one of the big holes we have to fill !\n\nIssue created by migration from https://trac.sagemath.org/ticket/7722\n\n",
+    "body": "Assignee: @rlmill\n\nAnother one of the big holes we have to fill !\n\nlen(BFS) + reverse + len(BFS)\n\nrequires #7720\n\nIssue created by migration from https://trac.sagemath.org/ticket/7722\n\n",
+    "closed_at": "2009-12-21T11:04:30Z",
     "created_at": "2009-12-17T13:01:40Z",
     "labels": [
         "component: graph theory",
@@ -19,6 +20,10 @@ archive/issues_007722.json:
 Assignee: @rlmill
 
 Another one of the big holes we have to fill !
+
+len(BFS) + reverse + len(BFS)
+
+requires #7720
 
 Issue created by migration from https://trac.sagemath.org/ticket/7722
 

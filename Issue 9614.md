@@ -4,9 +4,10 @@ archive/issues_009614.json:
 ```json
 {
     "body": "Assignee: tbd\n\nA \"bdisted\" copy of Sage contains only placeholders for spkg files, and does not include the directory SAGE_ROOT/spkg/base. This means it is impossible for \"sage -sdist\" to work on such a copy of Sage unless the sdist script somehow downloads the necessary files.\n\nThe sdist script should detect this problem and fail in this situation, preferably with instructions to the user for fixing it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9614\n\n",
+    "closed_at": "2011-02-07T08:14:35Z",
     "created_at": "2010-07-28T01:29:52Z",
     "labels": [
-        "component: distribution",
+        "component: scripts",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",

@@ -1,22 +1,23 @@
-# Issue 781: Matrix from Matrix_integer_dense() blows up (Dup of 799 for formatting)
+# Issue 781: Matrix from Matrix_integer_dense() blows up (Dup of 779 for formatting)
 
 archive/issues_000781.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I create a matrix with Matrix_integer_dense(), and try to display it, sage blows chunks. It appears to happen inside the gmp library. This is with 2.8.5.1 on a Core 2 Duo (Mac OS X, 10.4.10).\n\nTwo different examples, printing the whole matrix:\n\n```\nsage: from sage.matrix.matrix_integer_dense import Matrix_integer_dense\nsage: a = Matrix_integer_dense.new(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)\nsage: a.ncols() 3 sage: a.nrows() 3 sage: a\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0x013af000 0x00777991 in gmpn_copyi ()\n\n(gdb) bt\n#0 0x00777991 in gmpn_copyi ()\n#1 0x0075c4a0 in gmpz_set ()\nPrevious frame inner to this frame (corrupt stack?)\n```\n\nand printing a single entry:\n\n```\nsage: from sage.matrix.matrix_integer_dense import Matrix_integer_dense\nsage: a = Matrix_integer_dense.new(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)\nsage: for i in range(a.nrows()):\n    ...: for j in range(a.ncols()):\n        ...: print a[i,j] ...:\n0\npython(16613) malloc: *** vm_allocate(size=1680302080) failed (error code=3)\npython(16613) malloc: *** error: can't allocate region\npython(16613) malloc: *** set a breakpoint in szone_error to debug\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000000\n0x0076a0b7 in gmpn_sqr_basecase ()\n(gdb)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/781\n\n",
+    "body": "Assignee: mabshoff\n\nIf I create a matrix with Matrix_integer_dense(), and try to display it, sage blows chunks. It appears to happen inside the gmp library. This is with 2.8.5.1 on a Core 2 Duo (Mac OS X, 10.4.10).\n\nTwo different examples, printing the whole matrix:\n\n```\nsage: from sage.matrix.matrix_integer_dense import Matrix_integer_dense\nsage: a = Matrix_integer_dense.new(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)\nsage: a.ncols() 3 sage: a.nrows() 3 sage: a\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0x013af000 0x00777991 in gmpn_copyi ()\n\n(gdb) bt\n#0 0x00777991 in gmpn_copyi ()\n#1 0x0075c4a0 in gmpz_set ()\nPrevious frame inner to this frame (corrupt stack?)\n```\n\nand printing a single entry:\n\n```\nsage: from sage.matrix.matrix_integer_dense import Matrix_integer_dense\nsage: a = Matrix_integer_dense.new(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)\nsage: for i in range(a.nrows()):\n    ...: for j in range(a.ncols()):\n        ...: print a[i,j] ...:\n0\npython(16613) malloc: *** vm_allocate(size=1680302080) failed (error code=3)\npython(16613) malloc: *** error: can't allocate region\npython(16613) malloc: *** set a breakpoint in szone_error to debug\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000000\n0x0076a0b7 in gmpn_sqr_basecase ()\n(gdb)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/781\n\n",
+    "closed_at": "2007-10-24T01:06:41Z",
     "created_at": "2007-10-02T02:41:13Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "Matrix from Matrix_integer_dense() blows up (Dup of 799 for formatting)",
+    "title": "Matrix from Matrix_integer_dense() blows up (Dup of 779 for formatting)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/781",
     "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 If I create a matrix with Matrix_integer_dense(), and try to display it, sage blows chunks. It appears to happen inside the gmp library. This is with 2.8.5.1 on a Core 2 Duo (Mac OS X, 10.4.10).
 

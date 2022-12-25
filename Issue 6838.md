@@ -1,22 +1,23 @@
-# Issue 6838: error creating matrices over GF(2) from elements of QQ
+# Issue 6838: [with patch, positive review] error creating matrices over GF(2) from elements of QQ
 
 archive/issues_006838.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  was rbradshaw malb\n\nYet another thing I can't understand:\n\n```\nsage: GF(2)(1/3)\n1\nsage: MatrixSpace(GF(2), 1, 1)([1/3])\n[0]\n```\n\nFor the record:\n\n```\nsage: MatrixSpace(Zmod(4), 1, 1)([1/3])\n[3]\nsage: Zmod(4)(1/3)\n3\n```\n\nSo it's not always broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6838\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  was rbradshaw malb\n\nYet another thing I can't understand:\n\n```\nsage: GF(2)(1/3)\n1\nsage: MatrixSpace(GF(2), 1, 1)([1/3])\n[0]\n```\n\nFor the record:\n\n```\nsage: MatrixSpace(Zmod(4), 1, 1)([1/3])\n[3]\nsage: Zmod(4)(1/3)\n3\n```\n\nSo it's not always broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6838\n\n",
+    "closed_at": "2009-09-02T16:50:06Z",
     "created_at": "2009-08-28T21:05:10Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "error creating matrices over GF(2) from elements of QQ",
+    "title": "[with patch, positive review] error creating matrices over GF(2) from elements of QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6838",
     "user": "https://github.com/ncalexan"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 CC:  was rbradshaw malb
 

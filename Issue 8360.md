@@ -3,7 +3,7 @@
 archive/issues_008360.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat jean-eric.pin@liafa.jussieu.fr abmasse @tscrim\n\nKeywords: Semigroupes\n\nAdd an interface to Jean-Eric Pin's Semigroupe package\n\nhttp://www.liafa.jussieu.fr/~jep/semigroupes.html\n\nPatch and spkg under development on the Sage-Combinat server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8360\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat jean-eric.pin@liafa.jussieu.fr abmasse @tscrim\n\nKeywords: Semigroupes\n\nAdd an interface to Jean-Eric Pin's Semigroupe package\n\nhttp://www.liafa.jussieu.fr/~jep/semigroupes.html\n\nAn experimental spkg is now on trac; here is the patch taken from the old Sage-Combinat patch server:\n\n:attachment:trac_8360_semigroupe-interface-nt.patch\n\nStatus: advanced proof of concept, with interactions in both directions (building a semigroup in Semigroupe from Sage data). Main show stopper: one can only manipulate one semigroup at a time.\n\nThe following should hopefully get you started:\n\n```\n   sage -f http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8360/semigroupe-2.0-2.spkg\n   sage -combinat update\n   sage -br\n\n   sage: semigroupe?\n   sage: semigroupe.tutorial?\n```\n\nBeware 'sage -f an_url' does not redownload the package if sage\nalready has a copy of it. So you may have to first do:\n\n```\n        rm <SAGE_ROOT>/spkg/optional/semigroupe-2.0.spkg\n```\n\n\nUpdate 2016-12-05: James Mitchel is reimplementing Semigroupe in C++, which will lift the main limitation (a single semigroup at a time):\nhttps://james-d-mitchell.github.io/semigroupsplusplus/\n\nThis could be the occasion to revive this old code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8360\n\n",
     "created_at": "2010-02-25T09:00:20Z",
     "labels": [
         "component: algebra"
@@ -25,7 +25,35 @@ Add an interface to Jean-Eric Pin's Semigroupe package
 
 http://www.liafa.jussieu.fr/~jep/semigroupes.html
 
-Patch and spkg under development on the Sage-Combinat server.
+An experimental spkg is now on trac; here is the patch taken from the old Sage-Combinat patch server:
+
+:attachment:trac_8360_semigroupe-interface-nt.patch
+
+Status: advanced proof of concept, with interactions in both directions (building a semigroup in Semigroupe from Sage data). Main show stopper: one can only manipulate one semigroup at a time.
+
+The following should hopefully get you started:
+
+```
+   sage -f http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8360/semigroupe-2.0-2.spkg
+   sage -combinat update
+   sage -br
+
+   sage: semigroupe?
+   sage: semigroupe.tutorial?
+```
+
+Beware 'sage -f an_url' does not redownload the package if sage
+already has a copy of it. So you may have to first do:
+
+```
+        rm <SAGE_ROOT>/spkg/optional/semigroupe-2.0.spkg
+```
+
+
+Update 2016-12-05: James Mitchel is reimplementing Semigroupe in C++, which will lift the main limitation (a single semigroup at a time):
+https://james-d-mitchell.github.io/semigroupsplusplus/
+
+This could be the occasion to revive this old code.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8360
 

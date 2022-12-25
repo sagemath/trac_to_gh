@@ -4,6 +4,7 @@ archive/issues_007603.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  fmaltey@nerim.fr\n\nAttached patch adds `_is_symbol()`, `_is_constant()` and `_is_numeric()` methods to `sage.symbolic.expression.Expression` objects.\n\nThese methods are just a thin wrapper around the `is_a<*>()` methods from pynac. They should provide a straightforward interface to query the internal representation of a symbolic expression when `.operator()` returns None.\n\nSome relevant discussion on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/msg/6323b473af195bc7\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7603\n\n",
+    "closed_at": "2009-12-06T08:31:01Z",
     "created_at": "2009-12-04T13:07:45Z",
     "labels": [
         "component: symbolics",

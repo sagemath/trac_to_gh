@@ -4,9 +4,11 @@ archive/issues_008923.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nHere is a patch adding a constructor for this family ! 10 lines :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8923\n\n",
+    "closed_at": "2010-06-29T16:47:29Z",
     "created_at": "2010-05-07T19:12:53Z",
     "labels": [
-        "component: graph theory"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "CompleteMultipartiteGraph generator",

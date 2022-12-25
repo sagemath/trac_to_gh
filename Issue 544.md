@@ -3,7 +3,8 @@
 archive/issues_000544.json:
 ```json
 {
-    "body": "Assignee: wdjoyner\n\nIt is very annoying that doctesting const.tex causes a bunch of windows to pop up.\nThis should not happen.  Stop this by putting #optional after all doctests that\nwould pop up a window, so they aren't actually run, except in the rare cases when\nI'm running all optional doctests (and then popups are fine). \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/544\n\n",
+    "body": "Assignee: @mwhansen\n\nIt is very annoying that doctesting const.tex causes a bunch of windows to pop up.\nThis should not happen.  Stop this by putting #optional after all doctests that\nwould pop up a window, so they aren't actually run, except in the rare cases when\nI'm running all optional doctests (and then popups are fine). \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/544\n\n",
+    "closed_at": "2007-09-07T03:16:08Z",
     "created_at": "2007-08-31T20:12:03Z",
     "labels": [
         "component: documentation",
@@ -16,7 +17,7 @@ archive/issues_000544.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: wdjoyner
+Assignee: @mwhansen
 
 It is very annoying that doctesting const.tex causes a bunch of windows to pop up.
 This should not happen.  Stop this by putting #optional after all doctests that

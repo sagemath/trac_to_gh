@@ -1,4 +1,4 @@
-# Issue 2816: unify eigen* functions for different matrix classes
+# Issue 2816: [with patch, needs work] unify eigen* functions for different matrix classes
 
 archive/issues_002816.json:
 ```json
@@ -9,7 +9,7 @@ archive/issues_002816.json:
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "unify eigen* functions for different matrix classes",
+    "title": "[with patch, needs work] unify eigen* functions for different matrix classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2816",
     "user": "https://github.com/jasongrout"

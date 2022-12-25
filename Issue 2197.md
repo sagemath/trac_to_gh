@@ -4,6 +4,7 @@ archive/issues_002197.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe code for quadratic, quartic and sextic twists of elliptic curves does not check that the twisting parameter is nonzero, and hence fail when a singular curve tries to be constructed.  Instead we output a helpful message.\n\nNote that in characteristic 2, the quadratic twist by 0 is allowed (but gives back the same curve), just as twisting by 1 in odd characteristic.\n\nThe patch provided also enhances the Hasse_bounds function (which should probably be put somewhere other than ell_generic.py).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2197\n\n",
+    "closed_at": "2008-02-17T21:16:23Z",
     "created_at": "2008-02-17T19:10:18Z",
     "labels": [
         "component: algebraic geometry",

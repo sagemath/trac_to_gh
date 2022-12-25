@@ -4,6 +4,7 @@ archive/issues_002255.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nKeywords: matrix transpose subdivision subdivide\n\n```\nsage: tau = CC(I)*matrix(2, 2, [2, 0, 0, 2])\nsage: B = block_matrix([tau, tau, tau, tau], 2, 2)\nsage: B\n\n[2.00000000000000*I                  0|2.00000000000000*I                  0]\n[                 0 2.00000000000000*I|                 0 2.00000000000000*I]\n[-------------------------------------+-------------------------------------]\n[2.00000000000000*I                  0|2.00000000000000*I                  0]\n[                 0 2.00000000000000*I|                 0 2.00000000000000*I]\nsage: B.transpose()\n\n[2.00000000000000*I                  0 2.00000000000000*I                  0]\n[                 0 2.00000000000000*I                  0 2.00000000000000*I]\n[2.00000000000000*I                  0 2.00000000000000*I                  0]\n[                 0 2.00000000000000*I                  0 2.00000000000000*I]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2255\n\n",
+    "closed_at": "2008-03-06T08:36:47Z",
     "created_at": "2008-02-22T05:43:57Z",
     "labels": [
         "component: linear algebra",

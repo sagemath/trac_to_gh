@@ -4,6 +4,7 @@ archive/issues_003302.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOk, you seem to have moved the Sage install from\n\n    /Users/saliola/Desktop/sage-3.0.1/\n\nto\n\n    /Users/saliola/sage-3.0.1/\n\nConsequently the linker does not find some libraries:\n\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: warning can't open dynamic library: /Users/saliola/Desktop/sage-3.0.1/local/lib/libgpg-error.0.dylib referenced from: /Users/saliola/sage-3.0.1/local/lib//libgcrypt.dylib (checking for undefined symbols may be affected) (No such file or directory, errno = 2)\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: warning can't open dynamic library: /Users/saliola/Desktop/sage-3.0.1/local/lib/libz.1.dylib referenced from: /Users/saliola/sage-3.0.1/local/lib//libgnutls.dylib (checking for undefined symbols may be affected) (No such file or directory, errno = 2)\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: warning can't open dynamic library: /Users/saliola/Desktop/sage-3.0.1/local/lib/libopencdk.10.dylib referenced from: /Users/saliola/sage-3.0.1/local/lib//libgnutls-extra.dylib (checking for undefined symbols may be affected) (No such file or directory, errno = 2)\n\n\nThis can probably be fixed by adding \"-L$SAGE_LOCAL/lib\" to the build flags.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3302\n\n",
+    "closed_at": "2012-10-05T09:16:24Z",
     "created_at": "2008-05-25T20:54:34Z",
     "labels": [
         "component: packages: standard",

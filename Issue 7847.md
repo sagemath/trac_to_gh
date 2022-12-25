@@ -4,6 +4,7 @@ archive/issues_007847.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @jhpalmieri @jasongrout\n\nThis is also a problem in IE8 on Windows XP.\n\nThis is a follow-up to #5100.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7847\n\n",
+    "closed_at": "2010-01-19T03:31:58Z",
     "created_at": "2010-01-05T03:41:39Z",
     "labels": [
         "component: notebook",

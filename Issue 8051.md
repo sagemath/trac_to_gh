@@ -1,24 +1,35 @@
-# Issue 8051: SageNB 0.7
+# Issue 8051: SageNB 0.7.x
 
 archive/issues_008051.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNew spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8051\n\n",
+    "body": "The new spkg is at\n\n* http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.4.spkg\n\nMerged in 0.7: #7249, #7962, #7969, #4217, #3083, #6182, #5263, #7631, #6353, #7207, #8000, #4450, #7848, #7963, #7752, #7996, #6475, #5675, #7435, #3844, #6368, #7434.\n\nMerged in 0.7.1: #8103.\n\nMerged in 0.7.2:  #3083's \"notruncate\" patch.\n\nMerged in 0.7.3: #7784.\n\nMerged in 0.7.4: #8167, #8102, #8160.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8051\n\n",
+    "closed_at": "2010-02-10T09:34:55Z",
     "created_at": "2010-01-24T18:53:29Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
-    "title": "SageNB 0.7",
+    "title": "SageNB 0.7.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8051",
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: @williamstein
+The new spkg is at
 
-New spkg.
+* http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.4.spkg
+
+Merged in 0.7: #7249, #7962, #7969, #4217, #3083, #6182, #5263, #7631, #6353, #7207, #8000, #4450, #7848, #7963, #7752, #7996, #6475, #5675, #7435, #3844, #6368, #7434.
+
+Merged in 0.7.1: #8103.
+
+Merged in 0.7.2:  #3083's "notruncate" patch.
+
+Merged in 0.7.3: #7784.
+
+Merged in 0.7.4: #8167, #8102, #8160.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8051
 

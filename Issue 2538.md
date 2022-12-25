@@ -1,9 +1,10 @@
-# Issue 2538: Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530
+# Issue 2538: [with patch, postive review] Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530
 
 archive/issues_002538.json:
 ```json
 {
-    "body": "Assignee: wstein\n\n```\nsage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage-main/sage/server/notebook/interact.py\n**********************************************************************\nFile \"interact.py\", line 1641:\n    sage: selector([1,2,7], default=2).default()\nExpected:\n    2\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   1 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_interact.py\n         [2.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2538\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage-main/sage/server/notebook/interact.py\n**********************************************************************\nFile \"interact.py\", line 1641:\n    sage: selector([1,2,7], default=2).default()\nExpected:\n    2\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   1 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_interact.py\n         [2.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2538\n\n",
+    "closed_at": "2008-03-16T06:45:28Z",
     "created_at": "2008-03-16T01:24:51Z",
     "labels": [
         "component: doctest coverage",
@@ -11,13 +12,13 @@ archive/issues_002538.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530",
+    "title": "[with patch, postive review] Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2538",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: wstein
+Assignee: mabshoff
 
 ```
 sage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py

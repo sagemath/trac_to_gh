@@ -1,16 +1,17 @@
-# Issue 970: ntl.GF2E
+# Issue 970: [with patch] ntl.GF2E
 
 archive/issues_000970.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attached patches implement a partial rewrite of ntl.GF2E to reflect the design decisions made for the ntl interface. \n\nThis patch depends on #966 to be applied.\n\nIssue created by migration from https://trac.sagemath.org/ticket/970\n\n",
+    "closed_at": "2007-10-23T21:12:46Z",
     "created_at": "2007-10-22T22:42:35Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
-    "title": "ntl.GF2E",
+    "title": "[with patch] ntl.GF2E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/970",
     "user": "https://github.com/malb"

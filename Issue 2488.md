@@ -1,9 +1,10 @@
-# Issue 2488: unused/broken hanke and pari pxy files
+# Issue 2488: [with patch, positive review] remove unused/broken hanke and pari pxy files
 
 archive/issues_002488.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis file does not compile with cython currently but is in the tree. It is currently disabled in setup.py and should be removed or fixed. This is a significant priority as it makes the development of efficient(parallel) build systems problematic and wastes space, especially for files which have not been touched in ages. Code that does not build should not be in the main repository. \n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n290 problem.\n\"\"\"\n\n\n\ninclude 'interrupt.pxi'\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/hanke/hanke.pyx:17:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o hanke.c hanke.pyx\n```\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n                ^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pxd:5:17: Special methods must be declared with 'def', not 'cdef'\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pyx:3:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o test.c test.pyx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2488\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis file does not compile with cython currently but is in the tree. It is currently disabled in setup.py and should be removed or fixed. This is a significant priority as it makes the development of efficient(parallel) build systems problematic and wastes space, especially for files which have not been touched in ages. Code that does not build should not be in the main repository. \n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n290 problem.\n\"\"\"\n\n\n\ninclude 'interrupt.pxi'\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/hanke/hanke.pyx:17:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o hanke.c hanke.pyx\n```\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n                ^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pxd:5:17: Special methods must be declared with 'def', not 'cdef'\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pyx:3:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o test.c test.pyx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2488\n\n",
+    "closed_at": "2008-03-14T22:34:41Z",
     "created_at": "2008-03-12T09:34:44Z",
     "labels": [
         "component: interfaces",
@@ -11,13 +12,13 @@ archive/issues_002488.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "unused/broken hanke and pari pxy files",
+    "title": "[with patch, positive review] remove unused/broken hanke and pari pxy files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2488",
     "user": "https://github.com/garyfurnish"
 }
 ```
-Assignee: @williamstein
+Assignee: @garyfurnish
 
 This file does not compile with cython currently but is in the tree. It is currently disabled in setup.py and should be removed or fixed. This is a significant priority as it makes the development of efficient(parallel) build systems problematic and wastes space, especially for files which have not been touched in ages. Code that does not build should not be in the main repository. 
 

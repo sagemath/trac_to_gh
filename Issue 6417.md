@@ -1,15 +1,16 @@
-# Issue 6417: Unicode in LaTeX
+# Issue 6417: [with patch, positive review] Unicode in LaTeX
 
 archive/issues_006417.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nKeywords: unicode LaTeX\n\nIn a %latex cell I couldn't use any accentuated letter. I had to write \\\"o to get \u00f6.\n\nUsing this patch I can write unicode characters directly. For example Hungarian chars:\n\n http://www.math.bme.hu/~morap/sage_unicode_latex.png\n\nThis feature is important because most of the world uses more than the first 128 characters of ANSII.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6417\n\n",
+    "closed_at": "2009-07-04T00:58:47Z",
     "created_at": "2009-06-25T21:53:59Z",
     "labels": [
         "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Unicode in LaTeX",
+    "title": "[with patch, positive review] Unicode in LaTeX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6417",
     "user": "https://trac.sagemath.org/admin/accounts/users/mora"

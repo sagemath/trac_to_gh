@@ -1,9 +1,10 @@
-# Issue 3909: Updating jmol package to latest [Needs Review]
+# Issue 3909: [with spkg, positive review] Updating jmol package to latest
 
 archive/issues_003909.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe jmol package hasn't been updated recently and i've experienced frequent crashes (on windows) so I have updated the package to latest. I have only currently tested it on OSX, so validation on other browsers would be good. \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/jmol-11.6.RC8.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3909\n\n",
+    "closed_at": "2008-08-28T23:57:49Z",
     "created_at": "2008-08-20T06:16:59Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_003909.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Updating jmol package to latest [Needs Review]",
+    "title": "[with spkg, positive review] Updating jmol package to latest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3909",
     "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"

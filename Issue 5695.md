@@ -1,9 +1,10 @@
-# Issue 5695: Sgae 3.4.1.rc1: doctest failure in combinat/words/words.py on 32 bit boxen
+# Issue 5695: [with patch, positive review] Sage 3.4.1.rc1: doctest failure in combinat/words/words.py on 32 bit boxen
 
 archive/issues_005695.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @hivert @saliola\n\nThis looks like fallout from #5308:\n\n```\nsage -t -long \"devel/sage/sage/combinat/words/words.py\"     \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 760:\n    sage: Words(7,13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 763:\n    sage: Words(['a','b','c','d','e','f','g'],13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_31\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/mabshoff/sage-3.4.1.rc1/tmp/.doctest_words.py\n\t [18.4 s]\nexit code: 1024\n```\n\nTrivial patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5695\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @hivert @saliola\n\nThis looks like fallout from #5308:\n\n```\nsage -t -long \"devel/sage/sage/combinat/words/words.py\"     \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 760:\n    sage: Words(7,13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 763:\n    sage: Words(['a','b','c','d','e','f','g'],13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_31\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/mabshoff/sage-3.4.1.rc1/tmp/.doctest_words.py\n [18.4 s]\nexit code: 1024\n```\n\nTrivial patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5695\n\n",
+    "closed_at": "2009-04-06T21:17:11Z",
     "created_at": "2009-04-06T18:31:14Z",
     "labels": [
         "component: doctest coverage",
@@ -11,7 +12,7 @@ archive/issues_005695.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Sgae 3.4.1.rc1: doctest failure in combinat/words/words.py on 32 bit boxen",
+    "title": "[with patch, positive review] Sage 3.4.1.rc1: doctest failure in combinat/words/words.py on 32 bit boxen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5695",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
@@ -44,7 +45,7 @@ Got:
    2 of  12 in __main__.example_31
 ***Test Failed*** 2 failures.
 For whitespace errors, see the file /Users/mabshoff/sage-3.4.1.rc1/tmp/.doctest_words.py
-	 [18.4 s]
+ [18.4 s]
 exit code: 1024
 ```
 

@@ -1,16 +1,17 @@
-# Issue 3792: fix Sage build when there is a broken systemwide freetype library
+# Issue 3792: [with spkg, positive review] fix Sage build when there is a broken systemwide freetype library
 
 archive/issues_003792.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe problem and fix is in this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d1c8996964802ab1\n\n\nwhat remains to be done is to extract this fix, create a patch and new spkgs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3792\n\n",
+    "closed_at": "2008-08-27T09:30:39Z",
     "created_at": "2008-08-08T20:05:52Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "fix Sage build when there is a broken systemwide freetype library",
+    "title": "[with spkg, positive review] fix Sage build when there is a broken systemwide freetype library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3792",
     "user": "https://github.com/certik"

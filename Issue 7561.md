@@ -1,16 +1,17 @@
-# Issue 7561: Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var'
+# Issue 7561: Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var', and bug fixing in constraints()
 
 archive/issues_007561.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nInfinitePolynomialRing was responsible for some bugs and extreme slowness in the utilisation of MixedINtegerLinearProgram for LP containing more than 1000 variables.\n\nBy replacing this polynomial ring by 'var', this is settled and waaaaayyyy mroe efficient !!\n\nThis patch depends on #7270\n\nIssue created by migration from https://trac.sagemath.org/ticket/7561\n\n",
+    "body": "Assignee: jkantor\n\nInfinitePolynomialRing was responsible for some bugs and extreme slowness in the utilisation of MixedINtegerLinearProgram for LP containing more than 1000 variables.\n\nBy replacing this polynomial ring by 'var', this is settled and waaaaayyyy mroe efficient !!\n\nOne simple bug in constraints() is also fixed in this patch. A nasty -1 was shifting all the constraints compared to their bounds. This only affected the functions show() and constraints() and is of no incidence on the solve() function.\n\nThis patch depends on #7270\n\nIssue created by migration from https://trac.sagemath.org/ticket/7561\n\n",
+    "closed_at": "2009-12-06T08:51:22Z",
     "created_at": "2009-11-30T17:40:24Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var'",
+    "title": "Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var', and bug fixing in constraints()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7561",
     "user": "https://github.com/nathanncohen"
@@ -21,6 +22,8 @@ Assignee: jkantor
 InfinitePolynomialRing was responsible for some bugs and extreme slowness in the utilisation of MixedINtegerLinearProgram for LP containing more than 1000 variables.
 
 By replacing this polynomial ring by 'var', this is settled and waaaaayyyy mroe efficient !!
+
+One simple bug in constraints() is also fixed in this patch. A nasty -1 was shifting all the constraints compared to their bounds. This only affected the functions show() and constraints() and is of no incidence on the solve() function.
 
 This patch depends on #7270
 

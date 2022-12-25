@@ -4,10 +4,10 @@ archive/issues_001086.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nPatch at /home/jvoight/totallyreal/totallyreal.hg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1086\n\n",
+    "closed_at": "2007-11-03T20:20:35Z",
     "created_at": "2007-11-03T20:17:17Z",
     "labels": [
-        "component: number theory",
-        "bug"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Enumeration of totally real fields",

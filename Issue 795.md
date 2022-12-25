@@ -4,6 +4,7 @@ archive/issues_000795.json:
 ```json
 {
     "body": "Assignee: tba\n\nThis patch is way to simple to describe it here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/795\n\n",
+    "closed_at": "2007-10-04T03:08:43Z",
     "created_at": "2007-10-02T21:23:49Z",
     "labels": [
         "component: documentation",

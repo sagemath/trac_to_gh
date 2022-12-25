@@ -1,16 +1,17 @@
-# Issue 3197: fix 64 bit OSX build support for m4ri
+# Issue 3197: [with spkg, positive review] fix 64 bit OSX build support for m4ri
 
 archive/issues_003197.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3197\n\n",
+    "closed_at": "2008-05-19T05:49:28Z",
     "created_at": "2008-05-13T16:24:45Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "fix 64 bit OSX build support for m4ri",
+    "title": "[with spkg, positive review] fix 64 bit OSX build support for m4ri",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3197",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

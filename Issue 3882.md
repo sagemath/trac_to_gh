@@ -4,6 +4,7 @@ archive/issues_003882.json:
 ```json
 {
     "body": "Assignee: tba\n\nIn the sage programming guide (and maybe on the wiki too), it should be explained how to distribute a patch to the source of an spkg.  The way I think about it (thanks to wstein and mabshoff!) is that the end result of the patches should be cached in whole files, which are then copied over the sources at install time.  Thus, at spkg-install time, there should be no reliance on patch and friends; only files copied over onto the sources.\n\nSo one way to do it would be to maintain a set of patches to the sources.  When the spkg is created, apply all the patches and copy the affected files to a patches-cached (or patches-applied or something) directory.  When the spkg is installed, just copy the affected files over the source files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3882\n\n",
+    "closed_at": "2010-02-14T14:39:26Z",
     "created_at": "2008-08-17T03:13:45Z",
     "labels": [
         "component: documentation",

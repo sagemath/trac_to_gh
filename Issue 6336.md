@@ -1,16 +1,17 @@
-# Issue 6336: optional doctest failure -- constructions calculus tests hang forever
+# Issue 6336: [with patch, positive review] optional doctest failure -- constructions calculus tests hang forever
 
 archive/issues_006336.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n```\n\t [32.9 s]\nsage -t -long --optional devel/sage/doc/en/constructions/calculus.rst\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6336\n\n",
+    "body": "Assignee: tbd\n\n```\n [32.9 s]\nsage -t -long --optional devel/sage/doc/en/constructions/calculus.rst\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\n*** *** Error: TIMED OUT! *** ***\n [1800.1 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6336\n\n",
+    "closed_at": "2009-06-24T10:01:54Z",
     "created_at": "2009-06-16T15:20:05Z",
     "labels": [
         "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "optional doctest failure -- constructions calculus tests hang forever",
+    "title": "[with patch, positive review] optional doctest failure -- constructions calculus tests hang forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6336",
     "user": "https://github.com/williamstein"
@@ -19,7 +20,7 @@ archive/issues_006336.json:
 Assignee: tbd
 
 ```
-	 [32.9 s]
+ [32.9 s]
 sage -t -long --optional devel/sage/doc/en/constructions/calculus.rst
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***
@@ -30,7 +31,7 @@ xprop:  unable to open display ''
 Error: no "view" rule for type "application/x-dvi" passed its test case
        (for more information, add "--debug=1" on the command line)
 *** *** Error: TIMED OUT! *** ***
-	 [1800.1 s]
+ [1800.1 s]
 ```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6336

@@ -3,7 +3,8 @@
 archive/issues_007706.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nThe Sage source distribution must ship with a bare minimum of opaque potentially dangerous binary files.   Pickles (i.e. sobjs) are opaque binary files that can invoke arbitrary code when being unpickled.  Also, sobj's have the drawback that they can someday break, and can be very hard to update and extend later.  They are also hard to scan for virus.     There are currently three places in the Sage source code that includes pickles:  \n* the pickle jar,\n* the database of lattice polytopes\n* the world map graph\n\nFor this ticket, please find a way to replace the lattice polytopes database spkg with something that contains no pickles.  One solution would be to put plain text files in polytopes_db-*.spkg that described the 2d and 3d lattice polytopes. Then make the sobj's only when the spkg is installed.   This would require making the spkg depend on the sage library (which is very reasonable). \n\nAnother possibility would be to change your code so that the first time the lattice polytope table is needed, a plain text file is parsed (so there is never an sobj).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7706\n\n",
+    "body": "Assignee: @novoselt\n\nThe Sage source distribution must ship with a bare minimum of opaque potentially dangerous binary files.   Pickles (i.e. sobjs) are opaque binary files that can invoke arbitrary code when being unpickled.  Also, sobj's have the drawback that they can someday break, and can be very hard to update and extend later.  They are also hard to scan for virus.     There are currently three places in the Sage source code that includes pickles:  \n* the pickle jar,\n* the database of lattice polytopes\n* the world map graph\n\nFor this ticket, please find a way to replace the lattice polytopes database spkg with something that contains no pickles.  One solution would be to put plain text files in polytopes_db-*.spkg that described the 2d and 3d lattice polytopes. Then make the sobj's only when the spkg is installed.   This would require making the spkg depend on the sage library (which is very reasonable). \n\nAnother possibility would be to change your code so that the first time the lattice polytope table is needed, a plain text file is parsed (so there is never an sobj).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7706\n\n",
+    "closed_at": "2010-02-11T15:04:42Z",
     "created_at": "2009-12-16T08:53:07Z",
     "labels": [
         "component: geometry",
@@ -16,7 +17,7 @@ archive/issues_007706.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: mhampton
+Assignee: @novoselt
 
 The Sage source distribution must ship with a bare minimum of opaque potentially dangerous binary files.   Pickles (i.e. sobjs) are opaque binary files that can invoke arbitrary code when being unpickled.  Also, sobj's have the drawback that they can someday break, and can be very hard to update and extend later.  They are also hard to scan for virus.     There are currently three places in the Sage source code that includes pickles:  
 * the pickle jar,

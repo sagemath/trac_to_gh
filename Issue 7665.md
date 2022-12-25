@@ -3,7 +3,8 @@
 archive/issues_007665.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com\n\nKeywords: plot, R, graphics, statistics\n\nThis is probably hard.  It would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).\n\nExamples from the recommended (not currently installed) MASS package; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.\n\n```\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\n\nWarning message:\nIn grid.newpage() : No png support in this version of R\n\nsage: r.histogram('~ MPG.highway',data='Cars93')\n\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 9'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 9', text='M'\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 7.1982421875'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 7.1982421875', text='0'\n\nsage: r.plot('MPG.highway ~ Weight', data='Cars93')\nNULL\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7665\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com\n\nKeywords: plot, R, graphics, statistics\n\nThis would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).\n\nExamples follow; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.\n\n```\nsage: r.library('MASS')\nsage: r.library('lattice')\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\n\nWarning message:\nIn grid.newpage() : No png support in this version of R\n\nsage: r.histogram('~ MPG.highway',data='Cars93')\n\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 9'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 9', text='M'\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 7.1982421875'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 7.1982421875', text='0'\n\nsage: r.plot('MPG.highway ~ Weight', data='Cars93')\nNULL\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7665\n\n",
+    "closed_at": "2010-04-29T05:26:14Z",
     "created_at": "2009-12-11T20:23:06Z",
     "labels": [
         "component: graphics",
@@ -22,11 +23,13 @@ CC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com
 
 Keywords: plot, R, graphics, statistics
 
-This is probably hard.  It would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).
+This would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).
 
-Examples from the recommended (not currently installed) MASS package; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.
+Examples follow; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.
 
 ```
+sage: r.library('MASS')
+sage: r.library('lattice')
 sage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')
 
 Warning message:

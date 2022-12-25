@@ -1,9 +1,10 @@
-# Issue 2601: problem with change_ring
+# Issue 2601: [with patch; positive review] problem with _mpoly_dict_recursive()
 
 archive/issues_002601.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: ideal, change_ring\n\nThe following produces errors:\n\n```\nsage: testR.<a,b,c> = PolynomialRing(QQ,3)\nsage: id_ringA = ideal([a^2-b,b^2-c,c^2-a])\nsage: id_ringB = ideal(id_ringA.gens()).change_ring(PolynomialRing(QQ,'c,b,a')) \n```\n\nalthough this does not:\n\n```\nsage: testR.<a,b,c> = PolynomialRing(QQ,3)\nsage: id_ringA = ideal([a^2-b,b^2-c,c^2-a])\nsage: id_ringB = ideal(id_ringA.gens()).change_ring(PolynomialRing(QQ,'c,a,b')) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2601\n\n",
+    "closed_at": "2009-01-28T12:59:46Z",
     "created_at": "2008-03-19T19:14:33Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_002601.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "problem with change_ring",
+    "title": "[with patch; positive review] problem with _mpoly_dict_recursive()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2601",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"

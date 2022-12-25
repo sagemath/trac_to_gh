@@ -1,15 +1,16 @@
-# Issue 7501: notebook -- include codemirror in sage
+# Issue 7501: Include CodeMirror in SageNB and use it to edit data files
 
 archive/issues_007501.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nAfter an extensive evaluation, we all decided that codemirror http://marijn.haverbeke.nl/codemirror/ is the best Javascript code editor to include in Sage.  It's faster and more robust than editarea.  Initially, we will include it *only* for editing `Data --> file`, then maybe later adapt it for input cells. \n\nSee this screenshot:  http://wstein.org/home/wstein/patches/codemirror.png\n\nIssue created by migration from https://trac.sagemath.org/ticket/7501\n\n",
+    "body": "Assignee: boothby\n\nAfter an extensive evaluation, we all decided that [CodeMirror](http://marijn.haverbeke.nl/codemirror/) is the best JavaScript code editor to include in Sage.  It's faster and more robust than [EditArea](http://www.cdolivet.com/index.php?page=editArea).  Initially, we will include it **only** for editing `Data --> file`, then maybe later adapt it for input cells. \n\nSee this [screenshot](http://wstein.org/home/wstein/patches/codemirror.png).\n\nApply both\n\n* http://boxen.math.washington.edu/home/mpatel/trac/7501/trac_7501-codemirror_partA.patch\n* http://boxen.math.washington.edu/home/mpatel/trac/7501/trac_7501-codemirror_partB.patch\n\nto SageNB 0.7.4 (cf. #8051) OR get a trial spkg from #8194.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7501\n\n",
+    "closed_at": "2010-05-04T04:44:19Z",
     "created_at": "2009-11-20T09:20:21Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
-    "title": "notebook -- include codemirror in sage",
+    "title": "Include CodeMirror in SageNB and use it to edit data files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7501",
     "user": "https://github.com/williamstein"
@@ -17,9 +18,16 @@ archive/issues_007501.json:
 ```
 Assignee: boothby
 
-After an extensive evaluation, we all decided that codemirror http://marijn.haverbeke.nl/codemirror/ is the best Javascript code editor to include in Sage.  It's faster and more robust than editarea.  Initially, we will include it *only* for editing `Data --> file`, then maybe later adapt it for input cells. 
+After an extensive evaluation, we all decided that [CodeMirror](http://marijn.haverbeke.nl/codemirror/) is the best JavaScript code editor to include in Sage.  It's faster and more robust than [EditArea](http://www.cdolivet.com/index.php?page=editArea).  Initially, we will include it **only** for editing `Data --> file`, then maybe later adapt it for input cells. 
 
-See this screenshot:  http://wstein.org/home/wstein/patches/codemirror.png
+See this [screenshot](http://wstein.org/home/wstein/patches/codemirror.png).
+
+Apply both
+
+* http://boxen.math.washington.edu/home/mpatel/trac/7501/trac_7501-codemirror_partA.patch
+* http://boxen.math.washington.edu/home/mpatel/trac/7501/trac_7501-codemirror_partB.patch
+
+to SageNB 0.7.4 (cf. #8051) OR get a trial spkg from #8194.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7501
 

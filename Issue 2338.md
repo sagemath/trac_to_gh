@@ -1,16 +1,17 @@
-# Issue 2338: [with patch, needs review] add p.lexLmDeg to PolyBoRi polynomials
+# Issue 2338: [with patch, positive review] add p.lexLmDeg to PolyBoRi polynomials
 
 archive/issues_002338.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nsome PolyBoRi functions need it, e.g. ll_encode\n\nIssue created by migration from https://trac.sagemath.org/ticket/2338\n\n",
+    "closed_at": "2008-02-28T00:32:41Z",
     "created_at": "2008-02-27T20:47:58Z",
     "labels": [
         "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "[with patch, needs review] add p.lexLmDeg to PolyBoRi polynomials",
+    "title": "[with patch, positive review] add p.lexLmDeg to PolyBoRi polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2338",
     "user": "https://github.com/malb"

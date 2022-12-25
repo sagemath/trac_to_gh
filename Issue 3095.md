@@ -1,22 +1,23 @@
-# Issue 3095: Notebook, Documentation of DATA has a small error
+# Issue 3095: [with patch, positive review] Notebook, Documentation of DATA has a small error
 
 archive/issues_003095.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWhen I click on Help in the Notebook, the help text for \"**DATA** variable\" reads:\n\nThe variable **DATA** contains the directory with data files that you upload into the worksheet. For example, to open a file in that directory, do \"open(***DIR***+'filename')\".\n\nThe example should use DATA.\n\nThis applies to \nsage0_version()\nSAGE Version 3.0, Release Date: 2008-04-23\n\nWith best regards,\n\nLars Fischer\n\nIssue created by migration from https://trac.sagemath.org/ticket/3095\n\n",
+    "body": "Assignee: mabshoff\n\nWhen I click on Help in the Notebook, the help text for \"**DATA** variable\" reads:\n\nThe variable **DATA** contains the directory with data files that you upload into the worksheet. For example, to open a file in that directory, do \"open(***DIR***+'filename')\".\n\nThe example should use DATA.\n\nThis applies to \nsage0_version()\nSAGE Version 3.0, Release Date: 2008-04-23\n\nWith best regards,\n\nLars Fischer\n\nIssue created by migration from https://trac.sagemath.org/ticket/3095\n\n",
+    "closed_at": "2008-05-03T19:43:18Z",
     "created_at": "2008-05-03T14:39:01Z",
     "labels": [
         "component: notebook",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "Notebook, Documentation of DATA has a small error",
+    "title": "[with patch, positive review] Notebook, Documentation of DATA has a small error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3095",
     "user": "https://trac.sagemath.org/admin/accounts/users/lars.fischer"
 }
 ```
-Assignee: boothby
+Assignee: mabshoff
 
 When I click on Help in the Notebook, the help text for "**DATA** variable" reads:
 

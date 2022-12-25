@@ -4,6 +4,7 @@ archive/issues_000794.json:
 ```json
 {
     "body": "Assignee: somebody\n\nThe attached patch adds the jacob method to multivariate polynomials. This method returns a list of partial derivatives ordered by the generators of the parent ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/794\n\n",
+    "closed_at": "2007-10-04T17:58:44Z",
     "created_at": "2007-10-02T21:19:00Z",
     "labels": [
         "component: basic arithmetic",

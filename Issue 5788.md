@@ -1,9 +1,10 @@
-# Issue 5788: Fix MPIR build problem on OSX 10.4 exposed by linbox
+# Issue 5788: [with spkg, positive review] Fix MPIR build problem on OSX 10.4 exposed by linbox, update to latest upstream
 
 archive/issues_005788.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nOn OSX 10.4 a problem in libgmpxx.la leads to linbox linking gmpxx, mpir **and** gmp at the same time resulting in duplicate symbol errors. The latest upstream release (MPIR 1.0) fixes that.\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5788\n\n",
+    "closed_at": "2009-04-18T23:13:48Z",
     "created_at": "2009-04-15T00:52:01Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005788.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Fix MPIR build problem on OSX 10.4 exposed by linbox",
+    "title": "[with spkg, positive review] Fix MPIR build problem on OSX 10.4 exposed by linbox, update to latest upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5788",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

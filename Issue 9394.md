@@ -4,6 +4,7 @@ archive/issues_009394.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nReported by Mike Witt on sage-support:\n\n```\nsage: latex(t)\n\\left(2 I\\right) \\, \\pi n x + \\left(-2 I\\right) \\, \\pi n\n```\n\n`+ (-2 I )` looks really ugly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9394\n\n",
+    "closed_at": "2010-10-06T03:20:02Z",
     "created_at": "2010-06-30T12:05:02Z",
     "labels": [
         "component: symbolics",

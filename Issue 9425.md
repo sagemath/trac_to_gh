@@ -4,6 +4,7 @@ archive/issues_009425.json:
 ```json
 {
     "body": "Assignee: jason, was\n\n```\nsage: V = span([[1/7,0,0] ,[0,1,0]], ZZ); V\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/7   0   0]\n[  0   1   0]\nsage: T = matrix(ZZ,3,[1,0,0,0,0,0,0,0,0]); T\n[1 0 0]\n[0 0 0]\n[0 0 0]\nsage: W = T.kernel_on(V); W.basis()\n[\n(0, 1, 0)\n]\nsage: W.is_submodule(V)\nFalse\n```\nThis is surprising, isn't it? (Patch comes up in a minute, but I need to create the ticket first.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9425\n\n",
+    "closed_at": "2010-07-20T08:21:11Z",
     "created_at": "2010-07-04T21:31:40Z",
     "labels": [
         "component: linear algebra",

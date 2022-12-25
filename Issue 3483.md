@@ -1,21 +1,22 @@
-# Issue 3483: notebook -- major improvements to registration page
+# Issue 3483: [with patch, positive review] notebook -- major improvements to registration page
 
 archive/issues_003483.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3483\n\n",
+    "body": "Assignee: TimothyClemans\n\nKeywords: editor_wstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3483\n\n",
+    "closed_at": "2008-06-25T06:05:56Z",
     "created_at": "2008-06-20T07:47:41Z",
     "labels": [
         "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
-    "title": "notebook -- major improvements to registration page",
+    "title": "[with patch, positive review] notebook -- major improvements to registration page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3483",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
 Keywords: editor_wstein
 

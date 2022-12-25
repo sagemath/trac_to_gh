@@ -1,16 +1,17 @@
-# Issue 7165: an other bug in plot, real_part, imaginary_part and sqrt.
+# Issue 7165: sage fails to plot a quarter circle when it should
 
 archive/issues_007165.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI use sage 4.1.2alpha4. This plot is right with this version :\n\n`parametric_plot([real(exp(i*m)),imaginary(exp(i*m))],m,0,7)`\n\nI apply the patch 7122 by copy/paste in emacs and run sage -br.\nNow this plot is also right, it draw a half-circle :\n\n`parametric_plot([real(m+sqrt(m<sup>2-1)),imaginary(m+sqrt(m</sup>2-1))],m,-5,5)` \n\nI also get it by this function :\n\n```\ndef solve2pplot (eq) : return [real(eq.rhs()),imaginary(eq.rhs())]\nres = solve(z^2+2*m*z+1,z)\nparametric_plot (solve2pplot (res[0]), m, -5,5)\n```\n\nNow I solve this 4 degree equation. The solve is right with sqrt at 2 levels.\n\nBut I get an error in the parametric_plot :\n\n```\nres = solve(z^4+2*m*z^2+1,z)\nparametric_plot (solve2pplot (res[0]), m, -5,5)\n```\n\nThe local `solve2pplot(res[0])` generates a long formula.\n\nreal axe and imaginary axe are right. \n\nBut sage doesn't plot the quarter-circle between axes at position 1=(1,0) and i=(0,1) and claims `failed to evaluate function at 40 points`. So the plot is a line between the 2 axes.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7165\n\n",
+    "closed_at": "2020-01-09T23:44:40Z",
     "created_at": "2009-10-09T17:33:18Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.1",
-    "title": "an other bug in plot, real_part, imaginary_part and sqrt.",
+    "title": "sage fails to plot a quarter circle when it should",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7165",
     "user": "https://trac.sagemath.org/admin/accounts/users/fmaltey"

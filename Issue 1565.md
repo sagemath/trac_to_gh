@@ -1,9 +1,10 @@
-# Issue 1565: RealDoubleField documentation missing
+# Issue 1565: [Invalid?] RealDoubleField documentation missing
 
 archive/issues_001565.json:
 ```json
 {
     "body": "Assignee: tba\n\nSomewhere I read that missing documentation should be considered as a bug:\nsage version 2.9\n\n```\nRealDoubleField?\n```\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server4/sage_notebook/worksheets/phatsphere/0/code/11.py\", line 4, in <module>\n    print _support_.docstring(\"RealDoubleField\", globals())\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/server/support.py\", line 142, in docstring\n    s += 'Definition:  %s\\n'%sageinspect.sage_getdef(obj, obj_name)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 276, in sage_getdef\n    spec = sage_getargspec(obj)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 249, in sage_getargspec\n    return _sage_getargspec_cython(source)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 201, in _sage_getargspec_cython\n    raise ValueError, \"Could not parse cython argspec\"\nValueError: Could not parse cython argspec\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1565\n\n",
+    "closed_at": "2008-06-16T19:05:30Z",
     "created_at": "2007-12-19T10:50:37Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001565.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "RealDoubleField documentation missing",
+    "title": "[Invalid?] RealDoubleField documentation missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1565",
     "user": "https://trac.sagemath.org/admin/accounts/users/phatsphere"

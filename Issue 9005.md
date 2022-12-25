@@ -4,6 +4,7 @@ archive/issues_009005.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @nathanncohen @ppurka\n\nKeywords: derangements\n\nThe current implementation in Sage for derangements is a wrapper for the GAP \"derangements\" and \"number_of_derangements\" which is very restrictive.  For example, it doesn't allow derangements of arbitrary lists or strings.  The documentation observes \n\n\"Warning - Wraps GAP - hence mset must be a list of objects that have string representations that can be interpreted by the GAP interpreter. If mset consists of at all complicated Sage objects, this function does not do what you expect. A proper function should be written! (TODO!)\" \n\nThis file is an attempt to provide that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9005\n\n",
+    "closed_at": "2013-04-28T10:32:09Z",
     "created_at": "2010-05-21T10:20:57Z",
     "labels": [
         "component: combinatorics",

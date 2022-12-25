@@ -1,25 +1,33 @@
-# Issue 5976: [with patch; needs work] Add an Elliptic Curve Isogeny object
+# Issue 5976: [with patches; with positive review] Add an Elliptic Curve Isogeny object
 
 archive/issues_005976.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  kohel\n\nKeywords: Elliptic Curves\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5976\n\n",
+    "body": "Assignee: shumow\n\nCC:  kohel\n\nKeywords: Elliptic Curves\n\nAttached is the beginning of a class for elliptic curve isogenies.\n\nThere are several large areas for improvement:\n\n1)  Implementing more algorithms for computing isogenies (such as algorithms that use range and domain curves as input.\n2)  Implementing an algorithm for calculating the dual isogeny (this is easy once (1) is implemented.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5976\n\n",
+    "closed_at": "2009-06-13T20:24:28Z",
     "created_at": "2009-05-04T05:40:10Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with patch; needs work] Add an Elliptic Curve Isogeny object",
+    "title": "[with patches; with positive review] Add an Elliptic Curve Isogeny object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5976",
     "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
-Assignee: @williamstein
+Assignee: shumow
 
 CC:  kohel
 
 Keywords: Elliptic Curves
+
+Attached is the beginning of a class for elliptic curve isogenies.
+
+There are several large areas for improvement:
+
+1)  Implementing more algorithms for computing isogenies (such as algorithms that use range and domain curves as input.
+2)  Implementing an algorithm for calculating the dual isogeny (this is easy once (1) is implemented.)
 
 
 

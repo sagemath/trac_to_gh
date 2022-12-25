@@ -1,17 +1,18 @@
-# Issue 3214: gcd needs improved coersion
+# Issue 3214: [with patch, with positive review] uniformise the behaviour of gcd for rational numbers
 
 archive/issues_003214.json:
 ```json
 {
     "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro @JohnCremona @burcin\n\nI got very confused by the first line since I used to use gcd for clearing denominators:\n\n```\nsage: gcd((1, 2/3, 1/6, 1/6))\n1\nsage: gcd((2/3, 1/6, 1/6))\n1/6\nsage: gcd((2/3, 1, 1/6, 1/6))\nTraceback (most recent call last):\n...\nTypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rational, got sage.rings.integer.Integer)\nsage: gcd((2/3, 2/2, 1/6, 1/6))\n1/6\n```\n\nI'd expect all calls above to return 1/6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3214\n\n",
+    "closed_at": "2009-02-09T08:25:18Z",
     "created_at": "2008-05-16T02:25:48Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "gcd needs improved coersion",
+    "title": "[with patch, with positive review] uniformise the behaviour of gcd for rational numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3214",
     "user": "https://github.com/novoselt"

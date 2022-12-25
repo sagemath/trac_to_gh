@@ -1,15 +1,16 @@
-# Issue 2819: edge_style option for directed graphs
+# Issue 2819: [with patch, positive review] edge_style option for directed graphs
 
 archive/issues_002819.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThis adds an edge_style option for passing options to the arrow() command that draws edges of directed graphs.  It is a (small) step towards #2817.  In order for more to be done, we have to write graph-drawing (really, vertex and edge-drawing) code, since now we just pass everything off to networkx.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2819\n\n",
+    "closed_at": "2008-04-06T05:06:06Z",
     "created_at": "2008-04-06T03:46:46Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "edge_style option for directed graphs",
+    "title": "[with patch, positive review] edge_style option for directed graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2819",
     "user": "https://github.com/jasongrout"

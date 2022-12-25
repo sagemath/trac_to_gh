@@ -4,6 +4,7 @@ archive/issues_008633.json:
 ```json
 {
     "body": "Assignee: tbd\n\nTry this in the notebook with the \"Typeset\" box checked:\n\n```\nrandom_matrix(ZZ, 5, 5).eigenvalues()\n```\nYou will see a box saying \"Unknown control sequence '\\texttt'\".  The attached patch fixes this by replacing \"\\texttt\" with \"\\hbox\" before processing the LaTeX string with jsMath.\n\nThis was reported on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/b35dc4f890f48677?tvc=2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8633\n\n",
+    "closed_at": "2010-04-16T18:54:38Z",
     "created_at": "2010-03-30T17:40:22Z",
     "labels": [
         "component: misc",

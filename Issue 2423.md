@@ -1,9 +1,10 @@
-# Issue 2423: notebook() opens up to the entire world by default
+# Issue 2423: [with patch, positive review] notebook() opens up to the entire world by default
 
 archive/issues_002423.json:
 ```json
 {
     "body": "Assignee: boothby\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/3aeb27037554491b\n\nThe meat of the issue is that notebook() by default allows connections from anyone to the local computer.  This patch fixes it by calling the \"interface\" option of twisted to only allow connections from a specific interface.\n\nQuoting Yi Qiang in the email discussion:\n\n```\nThe problem is that the notebook is never launched to bound to a specific\ninterface. Could you please file a trac# against this?\n\nThe specific issue is that in twistedconf.tac, we start the server like so:\n\nstrports.service('tls:8000:privateKey=/Users/yqiang/.sage/notebook/private.pem:certKey=/Users/yqiang/.sage/notebook/public.pem',\nfactory)\n\nIt should read something like\n\nstrports.service('tls:8000:interface=\n127.0.0.1:privateKey=/Users/yqiang/.sage/notebook/private.pem:certKey=/Users/yqiang/.sage/notebook/public.pem',\nfactory)\n\nto only listen on localhost.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2423\n\n",
+    "closed_at": "2008-03-07T23:22:25Z",
     "created_at": "2008-03-07T22:41:35Z",
     "labels": [
         "component: notebook",
@@ -11,7 +12,7 @@ archive/issues_002423.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "notebook() opens up to the entire world by default",
+    "title": "[with patch, positive review] notebook() opens up to the entire world by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2423",
     "user": "https://github.com/jasongrout"

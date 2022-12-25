@@ -1,23 +1,23 @@
-# Issue 4463: modular/abvar/homspace.py doctests are long
+# Issue 4463: [with patch, positive review] modular/abvar/homspace.py doctests are long
 
 archive/issues_004463.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\nKeywords: abvar, homspace, long\n\nThe doctests in modular/abvar/homspace.py timeout on my PPC mac, so something in there takes long enough that it should get the \"# long time\" comment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4463\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nKeywords: abvar, homspace, long\n\nThe doctests in modular/abvar/homspace.py timeout on my PPC mac, so something in there takes long enough that it should get the \"# long time\" comment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4463\n\n",
+    "closed_at": "2008-11-24T19:35:37Z",
     "created_at": "2008-11-07T17:08:32Z",
     "labels": [
-        "component: doctest",
-        "minor",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "modular/abvar/homspace.py doctests are long",
+    "title": "[with patch, positive review] modular/abvar/homspace.py doctests are long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4463",
     "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
-Assignee: mabshoff
+Assignee: @craigcitro
 
 CC:  @williamstein
 

@@ -1,16 +1,17 @@
-# Issue 6506: further numpy type conversions
+# Issue 6506: [with patch, positive review] further numpy type conversions
 
 archive/issues_006506.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  cwitty\n\nFollowup to #5081.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6506\n\n",
+    "body": "Assignee: jkantor\n\nCC:  cwitty\n\nFollowup to #5081, depends on Python 2.6\n\nBetter handling of ZZ, QQ and CC now supported. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6506\n\n",
+    "closed_at": "2009-07-29T13:46:57Z",
     "created_at": "2009-07-10T06:53:49Z",
     "labels": [
         "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "further numpy type conversions",
+    "title": "[with patch, positive review] further numpy type conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6506",
     "user": "https://github.com/robertwb"
@@ -20,7 +21,9 @@ Assignee: jkantor
 
 CC:  cwitty
 
-Followup to #5081.
+Followup to #5081, depends on Python 2.6
+
+Better handling of ZZ, QQ and CC now supported. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6506
 

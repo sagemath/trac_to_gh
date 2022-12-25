@@ -1,15 +1,16 @@
-# Issue 6654: [with patch, needs review] new features in group algebra category
+# Issue 6654: New features in group algebra category
 
 archive/issues_006654.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: group algebra, center\n\nI added features in the category of group algebras (especially linked to the center).\n\nMoreover, the symmetric group algebra now is a parent of this category.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6654\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: group algebra, center\n\nI added features in the category of group algebras (especially linked to the center).\n\nMoreover, the symmetric group algebra now is a parent of this category.\n\nNote : I have folded it with a previous patch on the same features, so look at the new version of the file (sorry, I should have worked on the same patch since the beginning)\n\nApply [attachment:group_algebras_feature_central_vf.v2.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6654\n\n",
+    "closed_at": "2012-09-11T07:57:52Z",
     "created_at": "2009-07-29T13:16:54Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.4",
-    "title": "[with patch, needs review] new features in group algebra category",
+    "title": "New features in group algebra category",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6654",
     "user": "https://trac.sagemath.org/admin/accounts/users/vferay"
@@ -22,6 +23,10 @@ Keywords: group algebra, center
 I added features in the category of group algebras (especially linked to the center).
 
 Moreover, the symmetric group algebra now is a parent of this category.
+
+Note : I have folded it with a previous patch on the same features, so look at the new version of the file (sorry, I should have worked on the same patch since the beginning)
+
+Apply [attachment:group_algebras_feature_central_vf.v2.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/6654
 

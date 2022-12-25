@@ -4,6 +4,7 @@ archive/issues_000436.json:
 ```json
 {
     "body": "Assignee: boothby\n\nSuppose a secure notebook is run on localhost:8000. Then presently, one has to type the URL `https://localhost:8000`. Would it be possible to let port localhost:8000 respond to plain http requests with a redirect to `https://localhost:8000` ? The advantage is that browsers like firefox complete `localhost:8000` to `http://localhost:8000`, and a lot of users (well, at least me) are used to this shortcut.\n\nIssue created by migration from https://trac.sagemath.org/ticket/436\n\n",
+    "closed_at": "2009-11-19T21:23:24Z",
     "created_at": "2007-08-17T18:02:26Z",
     "labels": [
         "component: notebook"

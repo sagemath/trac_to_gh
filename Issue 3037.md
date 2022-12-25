@@ -1,16 +1,17 @@
-# Issue 3037: [with spkg, needs trivial review] cython-0.9.6.13.tip
+# Issue 3037: [with spkg, positive review] cython-0.9.6.13.tip
 
 archive/issues_003037.json:
 ```json
 {
     "body": "Assignee: @garyfurnish\n\nThis is a new cython spkg with several enhancements:\nIt has a working -w feature, it is upgraded to tip in cython-devel, has the unicode bug fix, and it has a improved circular cdef import algorithm.  \n\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/cython-0.9.6.13.tip.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3037\n\n",
+    "closed_at": "2008-04-27T04:46:01Z",
     "created_at": "2008-04-27T01:12:56Z",
     "labels": [
         "component: build",
         "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "[with spkg, needs trivial review] cython-0.9.6.13.tip",
+    "title": "[with spkg, positive review] cython-0.9.6.13.tip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3037",
     "user": "https://github.com/garyfurnish"

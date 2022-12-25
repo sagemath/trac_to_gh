@@ -3,7 +3,8 @@
 archive/issues_008355.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n```\nsage: hue(.5,.5,.5)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: can't multiply sequence by non-int of type 'float'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8355\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: beginner\n\n```\nsage: hue(.5,.5,.5)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: can't multiply sequence by non-int of type 'float'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8355\n\n",
+    "closed_at": "2011-01-19T22:19:30Z",
     "created_at": "2010-02-25T00:25:00Z",
     "labels": [
         "component: graphics",
@@ -20,6 +21,8 @@ archive/issues_008355.json:
 Assignee: @williamstein
 
 CC:  @kcrisman
+
+Keywords: beginner
 
 ```
 sage: hue(.5,.5,.5)

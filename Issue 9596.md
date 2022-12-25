@@ -3,7 +3,8 @@
 archive/issues_009596.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @mstreng\n\nKeywords: real_embeddings is_totally_positive algebraic real numbers proven output\n\nThe number field function `real_embeddings` gives embeddings into finite precision real numbers, hence cannot be used for functions whose values are supposed to be proven (like `is_totally_positive`).\n\nA patch for this ticket should correct the usage of `real_embeddings` and give `real_embeddings` a warning in the documentation string.\n\nFor more info, see\n\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd](http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd) and\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48](http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48)\n\n```\nsage: a = 30122754096401; b = 21300003689580\nsage: (a/b)^2 > 2\nTrue\nsage: K.<sqrt2> = QuadraticField(2)\nsage: (a/b+sqrt2).is_totally_positive()\nFalse\n```\nBoth should be `True`.\n\nI'm creating a patch right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9596\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @mstreng\n\nKeywords: real_embeddings is_totally_positive algebraic real numbers proven output\n\nThe number field function `real_embeddings` gives embeddings into finite precision real numbers, hence cannot be used for functions whose outputs are supposed to be proven (like `is_totally_positive`).\n\nCorrect the usage of `real_embeddings` and give `real_embeddings` a warning in the documentation string.\n\nFor more info, see\n\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd](http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd) and\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48](http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48)\n\n```\nsage: a = 30122754096401; b = 21300003689580\nsage: (a/b)^2 > 2\nTrue\nsage: K.<sqrt2> = QuadraticField(2)\nsage: (a/b+sqrt2).is_totally_positive()\nFalse\n```\nBoth should be `True`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9596\n\n",
+    "closed_at": "2010-09-29T04:23:26Z",
     "created_at": "2010-07-25T12:45:28Z",
     "labels": [
         "component: number fields",
@@ -22,9 +23,9 @@ CC:  @mstreng
 
 Keywords: real_embeddings is_totally_positive algebraic real numbers proven output
 
-The number field function `real_embeddings` gives embeddings into finite precision real numbers, hence cannot be used for functions whose values are supposed to be proven (like `is_totally_positive`).
+The number field function `real_embeddings` gives embeddings into finite precision real numbers, hence cannot be used for functions whose outputs are supposed to be proven (like `is_totally_positive`).
 
-A patch for this ticket should correct the usage of `real_embeddings` and give `real_embeddings` a warning in the documentation string.
+Correct the usage of `real_embeddings` and give `real_embeddings` a warning in the documentation string.
 
 For more info, see
 
@@ -40,8 +41,6 @@ sage: (a/b+sqrt2).is_totally_positive()
 False
 ```
 Both should be `True`.
-
-I'm creating a patch right now.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9596
 

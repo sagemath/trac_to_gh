@@ -1,22 +1,23 @@
-# Issue 5403: fix "from ... import *" in class QuadraticForm (cf #4470)
+# Issue 5403: [with patch, positive review] fix "from ... import *" in class QuadraticForm (cf #4470)
 
 archive/issues_005403.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere are a number of \"from ... import *\" in the new quadratic forms code. This messes up tab completion (among other issues).\n\nThe attached patch fixes the issue by explicitly listing every function defined in the quadratic forms files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5403\n\n",
+    "body": "Assignee: @tornaria\n\nThere are a number of \"from ... import *\" in the new quadratic forms code. This messes up tab completion (among other issues).\n\nThe attached patch fixes the issue by explicitly listing every function defined in the quadratic forms files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5403\n\n",
+    "closed_at": "2009-03-02T04:00:25Z",
     "created_at": "2009-02-28T21:30:35Z",
     "labels": [
-        "component: algebra",
+        "component: quadratic forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "fix \"from ... import *\" in class QuadraticForm (cf #4470)",
+    "title": "[with patch, positive review] fix \"from ... import *\" in class QuadraticForm (cf #4470)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5403",
     "user": "https://github.com/tornaria"
 }
 ```
-Assignee: mabshoff
+Assignee: @tornaria
 
 There are a number of "from ... import *" in the new quadratic forms code. This messes up tab completion (among other issues).
 

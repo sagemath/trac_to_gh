@@ -1,16 +1,17 @@
-# Issue 1112: Integer.__pow__
+# Issue 1112: [with patch] Integer.__pow__
 
 archive/issues_001112.json:
 ```json
 {
     "body": "Assignee: somebody\n\nthe attached patch makes this work:\n\n```\nsage: pow(10,20,17)\n4\nsage: pow?\n    pow(x, y[, z]) -> number\n\n    With two arguments, equivalent to x**y.  With three arguments,\n    equivalent to (x**y) % z, but may be more efficient (e.g. for longs).\n```\n\nthis is required such that e.g. the Crypto.RSA module works with SAGE integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1112\n\n",
+    "closed_at": "2007-11-06T22:14:12Z",
     "created_at": "2007-11-06T16:22:17Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
-    "title": "Integer.__pow__",
+    "title": "[with patch] Integer.__pow__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1112",
     "user": "https://github.com/malb"

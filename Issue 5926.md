@@ -1,9 +1,10 @@
-# Issue 5926: [with patch; needs review] solaris top sometimes fails due to race condition
+# Issue 5926: [with patch; positive review] solaris top sometimes fails due to race condition
 
 archive/issues_005926.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5926\n\n",
+    "closed_at": "2009-04-30T09:22:25Z",
     "created_at": "2009-04-29T01:26:10Z",
     "labels": [
         "component: porting",
@@ -11,7 +12,7 @@ archive/issues_005926.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "[with patch; needs review] solaris top sometimes fails due to race condition",
+    "title": "[with patch; positive review] solaris top sometimes fails due to race condition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5926",
     "user": "https://github.com/williamstein"

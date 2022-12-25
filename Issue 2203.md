@@ -1,27 +1,34 @@
-# Issue 2203: Integrate concorde in Sage
+# Issue 2203: Add a traveling salesman problem solver
 
 archive/issues_002203.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nConcorde is a state-of-the-art traveling salesman problem solver and it's GPL! :)\n\nhttp://www.tsp.gatech.edu/concorde/index.html\n\nI have a student that might be interested in implementing an interface, so email me if you plan on working on this and I'll forward it to him.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2203\n\n",
+    "body": "Assignee: @nathanncohen\n\nConcorde is a state-of-the-art traveling salesman problem solver and it's GPL! :)\n\nhttp://www.tsp.gatech.edu/concorde/index.html\n\nI have a student that might be interested in implementing an interface, so email me if you plan on working on this and I'll forward it to him.\n\n**Apply:**\n\n1. #8364\n2. #8166\n3. [trac_2203-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/2203/trac_2203-rebase.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2203\n\n",
+    "closed_at": "2010-06-06T07:08:48Z",
     "created_at": "2008-02-18T15:37:09Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
-    "title": "Integrate concorde in Sage",
+    "title": "Add a traveling salesman problem solver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2203",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @rlmill
+Assignee: @nathanncohen
 
 Concorde is a state-of-the-art traveling salesman problem solver and it's GPL! :)
 
 http://www.tsp.gatech.edu/concorde/index.html
 
 I have a student that might be interested in implementing an interface, so email me if you plan on working on this and I'll forward it to him.
+
+**Apply:**
+
+1. #8364
+2. #8166
+3. [trac_2203-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/2203/trac_2203-rebase.patch)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2203
 

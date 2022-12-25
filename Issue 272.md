@@ -4,9 +4,11 @@ archive/issues_000272.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nIn the current version of SAGE, when I input Ctrl-D at the prompt, sage does exit, but it generates a crash report too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/272\n\n",
+    "closed_at": "2007-08-19T09:08:53Z",
     "created_at": "2007-02-20T23:52:28Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: user interface",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",

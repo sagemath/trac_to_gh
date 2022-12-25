@@ -1,16 +1,17 @@
-# Issue 7831: numpy-1.3.0.p2 fixes for FreeBSD
+# Issue 7831: numpy-1.5.0 fixes for FreeBSD
 
 archive/issues_007831.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\n* !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:\n\n```\nRunning from numpy source directory.\nF2PY Version 2\nblas_opt_info:\nblas_mkl_info:\n  libraries mkl,vml,guide not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_threads_info:\nSetting PTATLAS=ATLAS\n  libraries ptf77blas,ptcblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_info:\n  libraries f77blas,cblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\n/home/peter/sage/sage-4.3/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/system_info.py:1383: UserWarning: \n    Atlas (http://math-atlas.sourceforge.net/) libraries not found.\n    Directories to search for the libraries can be specified in the\n    numpy/distutils/site.cfg file (section [atlas]) or by setting\n    the ATLAS environment variable.\n  warnings.warn(AtlasNotFoundError.__doc__)\nblas_info:\n  FOUND:\n    libraries = ['blas']\n    library_dirs = ['/home/peter/sage/sage-4.3/local/lib']\n    language = f77\n\n  FOUND:\n```\n\nThis also causes matplotlib to die with\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: no\n                        * You must install numpy 1.1 or later to build\n                        * matplotlib.\n```\n\n* By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7831\n\n",
+    "body": "Assignee: @peterjeremy\n\n* By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.\n\n* A patch to spkg-install is required to ensure that the <math.h> in $SAGE_LOCAL/include is used in place of the system <math.h>, otherwise the additional maths functions provided by cephes are not prototyped, leading to lots of \"implicit declaration\" warnings whilst compiling (eg) numpy/core/src/npymath/npy_math_complex.c.src\n\nIssue created by migration from https://trac.sagemath.org/ticket/7831\n\n",
+    "closed_at": "2012-07-04T07:11:32Z",
     "created_at": "2010-01-03T09:14:11Z",
     "labels": [
         "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "numpy-1.3.0.p2 fixes for FreeBSD",
+    "title": "numpy-1.5.0 fixes for FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7831",
     "user": "https://github.com/peterjeremy"
@@ -18,50 +19,9 @@ archive/issues_007831.json:
 ```
 Assignee: @peterjeremy
 
-* !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:
-
-```
-Running from numpy source directory.
-F2PY Version 2
-blas_opt_info:
-blas_mkl_info:
-  libraries mkl,vml,guide not found in /home/peter/sage/sage-4.3/local/lib
-  NOT AVAILABLE
-
-atlas_blas_threads_info:
-Setting PTATLAS=ATLAS
-  libraries ptf77blas,ptcblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib
-  NOT AVAILABLE
-
-atlas_blas_info:
-  libraries f77blas,cblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib
-  NOT AVAILABLE
-
-/home/peter/sage/sage-4.3/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/system_info.py:1383: UserWarning: 
-    Atlas (http://math-atlas.sourceforge.net/) libraries not found.
-    Directories to search for the libraries can be specified in the
-    numpy/distutils/site.cfg file (section [atlas]) or by setting
-    the ATLAS environment variable.
-  warnings.warn(AtlasNotFoundError.__doc__)
-blas_info:
-  FOUND:
-    libraries = ['blas']
-    library_dirs = ['/home/peter/sage/sage-4.3/local/lib']
-    language = f77
-
-  FOUND:
-```
-
-This also causes matplotlib to die with
-
-```
-REQUIRED DEPENDENCIES
-                 numpy: no
-                        * You must install numpy 1.1 or later to build
-                        * matplotlib.
-```
-
 * By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.
+
+* A patch to spkg-install is required to ensure that the <math.h> in $SAGE_LOCAL/include is used in place of the system <math.h>, otherwise the additional maths functions provided by cephes are not prototyped, leading to lots of "implicit declaration" warnings whilst compiling (eg) numpy/core/src/npymath/npy_math_complex.c.src
 
 Issue created by migration from https://trac.sagemath.org/ticket/7831
 

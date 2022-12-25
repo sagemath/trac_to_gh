@@ -1,16 +1,17 @@
-# Issue 4015: [with patch, needs review] add docs to tests/benchmark.py
+# Issue 4015: [with patch, positive review] add docs to tests/benchmark.py
 
 archive/issues_004015.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4015\n\n",
+    "closed_at": "2008-08-31T07:34:27Z",
     "created_at": "2008-08-31T06:49:01Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] add docs to tests/benchmark.py",
+    "title": "[with patch, positive review] add docs to tests/benchmark.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4015",
     "user": "https://github.com/rlmill"

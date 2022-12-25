@@ -4,6 +4,7 @@ archive/issues_008778.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: jinja\n\nI don't think that jinja1 is used anymore in Sage since the notebook has switched over to jinja2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8778\n\n",
+    "closed_at": "2010-04-27T06:27:36Z",
     "created_at": "2010-04-27T04:47:37Z",
     "labels": [
         "component: packages: standard",

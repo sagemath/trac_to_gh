@@ -1,4 +1,4 @@
-# Issue 5544: multipolynomial __call__ not consistant
+# Issue 5544: multipolynomial __call__ not consistent
 
 archive/issues_005544.json:
 ```json
@@ -10,7 +10,7 @@ archive/issues_005544.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "multipolynomial __call__ not consistant",
+    "title": "multipolynomial __call__ not consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5544",
     "user": "https://github.com/robertwb"

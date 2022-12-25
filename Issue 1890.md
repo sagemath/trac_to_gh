@@ -1,16 +1,17 @@
-# Issue 1890: Sage 2.10.1.alpha2: interfaces/libecm.pyx doctest failure
+# Issue 1890: [with patch, with positive review] Sage 2.10.1.alpha2: interfaces/libecm.pyx doctest failure
 
 archive/issues_001890.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nI get the following doctest failure on sage.math with 2.10.1.alpha1 plus the libecm patch applied:\n\n```\nsage -t  devel/sage-main/sage/interfaces/libecm.pyx\n**********************************************************************\nFile \"libecm.pyx\", line 18:\n    sage: ecmfactor(999, 0.00, verbose=True)\nExpected:\n    Performing one curve with B1=0\n    Found factor in step 1: 999\n    (True, 999)\nGot:\n    Performing one curve with B1=0\n    Found factor in step 1: 27\n    (True, 27)\n**********************************************************************\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1890\n\n",
+    "closed_at": "2008-01-24T00:34:30Z",
     "created_at": "2008-01-23T10:55:01Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "Sage 2.10.1.alpha2: interfaces/libecm.pyx doctest failure",
+    "title": "[with patch, with positive review] Sage 2.10.1.alpha2: interfaces/libecm.pyx doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1890",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

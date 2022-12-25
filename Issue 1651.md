@@ -1,9 +1,10 @@
-# Issue 1651: bug in decode
+# Issue 1651: [with bundle, with positive review] bug in decode
 
 archive/issues_001651.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nReported by Harald Schilly:\n\nHere what I've tried (documentation does it a bit more \"difficult\",\nbut should be the same -- at least I hope so)\nhttp://www.sagemath.org/doc/html/const/node37.html\n\nC = HammingCode(2,GF(5))\nv = matrix(GF(5),[This is the Trac macro *1,0,0,2,1,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,0,2,1,0-macro))\nC.decode(v)\n\nworks (at least no errors), but\n\nv = vector(GF(5),[1,0,0,2,1,0])\nC.decode(v)\n\nsays:\n\nTypeError: Gap produced error output\nPermutation: <expr> must be a positive integer (not a integer)\nexecuting $sage333:=(1, 0, 0, 2, 1, 0);;\n\nI can see the different braces in the output, but internally a 1xn/nx1\nmatrix should handled in some way the same as a vector.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1651\n\n",
+    "closed_at": "2008-02-16T17:25:32Z",
     "created_at": "2008-01-01T14:46:56Z",
     "labels": [
         "component: coding theory",
@@ -11,7 +12,7 @@ archive/issues_001651.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "bug in decode",
+    "title": "[with bundle, with positive review] bug in decode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1651",
     "user": "https://github.com/wdjoyner"

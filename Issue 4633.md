@@ -1,16 +1,17 @@
-# Issue 4633: fix additional "Fortran-style" names and a coercion
+# Issue 4633: [with patch, needs work] fix additional "Fortran-style" names and a coercion (depends on #4036)
 
 archive/issues_004633.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: axiom\n\nIn order to run the the comparison of integration results between FriCAS and Maxima, it is also necessary to make some simple additions to the 'axiom.py' interface:\n\n```\nwspage@debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff\ndiff -r ed3f78f99d2a sage/interfaces/axiom.py\n--- a/sage/interfaces/axiom.py  Tue Nov 25 23:45:43 2008 -0500\n+++ b/sage/interfaces/axiom.py  Wed Nov 26 19:43:59 2008 -0500\n@@ -729,7 +729,10 @@\n        s = P.eval('unparse(%s::InputForm)'%self._name)\n        if 'translation error' in s or 'Cannot convert' in s:\n            raise NotImplementedError\n-        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+                              'DLOG(':'log(',\n+                              'DEXP(':'exp(',\n+                              '::(':'', ',Symbol)':'',\n                              'DSIN(':'sin(',\n                              'DCOS(':'cos(',\n                              'DTAN(':'tan(',\n\n```\n\n---\n\nIntegration produce some additional \"Fortran-style\" names and a\ncoercion that have to be translated before the input form can be\nprocessed by Sage.\n\nWith this change we can do:\n\n```\n  test_int = integrand.integrate(x)\n  fricas_int = axiom.integrate(integrand,x).sage()\n  fricas_cmp = (test_int.simplify_full()-fricas_int.simplify_full()).simplify_full()\n  if (fricas_cmp == 0):\n      print \"FriCAS agrees with Maxima.\"\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4633\n\n",
+    "closed_at": "2014-10-27T16:26:00Z",
     "created_at": "2008-11-27T01:42:53Z",
     "labels": [
         "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "fix additional \"Fortran-style\" names and a coercion",
+    "title": "[with patch, needs work] fix additional \"Fortran-style\" names and a coercion (depends on #4036)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4633",
     "user": "https://trac.sagemath.org/admin/accounts/users/bpage"

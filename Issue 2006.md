@@ -1,16 +1,17 @@
-# Issue 2006: crap -- gap contains a binary
+# Issue 2006: [with spkg] crap -- gap contains a binary
 
 archive/issues_002006.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nGap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2006\n\n",
+    "closed_at": "2008-02-01T02:00:21Z",
     "created_at": "2008-01-31T23:16:28Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "crap -- gap contains a binary",
+    "title": "[with spkg] crap -- gap contains a binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2006",
     "user": "https://github.com/williamstein"

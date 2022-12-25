@@ -1,16 +1,17 @@
-# Issue 1182: update freetype.spkg to 2.3.5
+# Issue 1182: [with spkg]  update freetype.spkg to 2.3.5
 
 archive/issues_001182.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWilliam did mention it somewhere on sage-devel and I cannot find the reference, but the freetype spkg we ship is very out of date. So update to the current (2.3.5 at the moment of this bug report) release.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1182\n\n",
+    "closed_at": "2007-12-09T10:06:57Z",
     "created_at": "2007-11-16T02:22:09Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "update freetype.spkg to 2.3.5",
+    "title": "[with spkg]  update freetype.spkg to 2.3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1182",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

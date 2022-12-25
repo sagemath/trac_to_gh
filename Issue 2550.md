@@ -1,9 +1,10 @@
-# Issue 2550: [with trivial patch, needs review] remove UTF-8 garbage from SBox file
+# Issue 2550: [with trivial patch, positive review] remove UTF-8 garbage from SBox file
 
 archive/issues_002550.json:
 ```json
 {
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2550\n\n",
+    "closed_at": "2008-03-16T23:13:31Z",
     "created_at": "2008-03-16T18:24:05Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_002550.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with trivial patch, needs review] remove UTF-8 garbage from SBox file",
+    "title": "[with trivial patch, positive review] remove UTF-8 garbage from SBox file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2550",
     "user": "https://github.com/malb"

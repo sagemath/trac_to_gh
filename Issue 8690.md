@@ -4,6 +4,7 @@ archive/issues_008690.json:
 ```json
 {
     "body": "Assignee: tbd\n\nIn #329, a method for adding checksums to spkg files to verify their integrity is proposed; if we implement that method, it would be very useful to have `sage -pkg` automatically add those checksums. Making `sage -pkg`  the canonical way to produce a spkg file will be convenient for users and allow us to guarantee that the spkg conforms to our standards.\n\nThis ticket depends on #8679 and #329.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8690\n\n",
+    "closed_at": "2014-11-07T16:49:20Z",
     "created_at": "2010-04-15T00:40:11Z",
     "labels": [
         "component: packages: standard"

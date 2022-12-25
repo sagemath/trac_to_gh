@@ -1,16 +1,17 @@
-# Issue 6929: Docs in functional and a few ring methods
+# Issue 6929: [with patch, positive review] Docs in functional and a few ring methods
 
 archive/issues_006929.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: integer, integral closure\n\nThis patch mostly brings misc/functional.py to (nearly) 100%, but also does a few useful things like allow MUCH wider usage of the functional base_field and say that the integer ring is, in fact, integrally closed!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6929\n\n",
+    "closed_at": "2009-09-24T14:04:24Z",
     "created_at": "2009-09-14T19:54:27Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "Docs in functional and a few ring methods",
+    "title": "[with patch, positive review] Docs in functional and a few ring methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6929",
     "user": "https://github.com/kcrisman"

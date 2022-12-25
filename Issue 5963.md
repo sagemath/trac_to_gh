@@ -1,22 +1,23 @@
-# Issue 5963: 3.4.2.a0: prime_pi returns wrong results on some platforms for large input
+# Issue 5963: [with patch, positive review] 3.4.2.a0: prime_pi returns wrong results on some platforms for large input
 
 archive/issues_005963.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAlex reports: \n\nI can't get this to segfault. I tried on sage.math and on my laptop (macbook running 32-bit archlinux). The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's \"known\" to be a good approximation to prime_pi):\n\n```\nx     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x))/2\n2^46   2280998753949                2280998753949               2.28099863535e+12\n2^47   4461632979717                4454203917918               4.46163280359e+12\n2^48   8731188863470                8612800813048               8.73118897751e+12\n2^49  17094432576778               15793194017311               1.70944327138e+13\n2^50  33483379603407               21969300962685               3.34833795774e+13\n```\nSo it seems that the problem starts somewhere between 2^46 and 2^47, and that the sage.math output is most likely correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5963\n\n",
+    "body": "Assignee: mabshoff\n\nAlex reports: \n\nI can't get this to segfault. I tried on sage.math and on my laptop (macbook running 32-bit archlinux). The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's \"known\" to be a good approximation to prime_pi):\n\n```\nx     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x))/2\n2^46   2280998753949                2280998753949               2.28099863535e+12\n2^47   4461632979717                4454203917918               4.46163280359e+12\n2^48   8731188863470                8612800813048               8.73118897751e+12\n2^49  17094432576778               15793194017311               1.70944327138e+13\n2^50  33483379603407               21969300962685               3.34833795774e+13\n```\nSo it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5963\n\n",
+    "closed_at": "2009-05-04T09:31:39Z",
     "created_at": "2009-05-02T20:15:21Z",
     "labels": [
         "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
-    "title": "3.4.2.a0: prime_pi returns wrong results on some platforms for large input",
+    "title": "[with patch, positive review] 3.4.2.a0: prime_pi returns wrong results on some platforms for large input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5963",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 Alex reports: 
 
@@ -30,7 +31,8 @@ x     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x)
 2^49  17094432576778               15793194017311               1.70944327138e+13
 2^50  33483379603407               21969300962685               3.34833795774e+13
 ```
-So it seems that the problem starts somewhere between 2^46 and 2^47, and that the sage.math output is most likely correct.
+So it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5963
 

@@ -3,7 +3,8 @@
 archive/issues_009104.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: CombinatorialFreeModule name\n\nThis is a followup to #8882\n\nIn the `__init__` of `CombinatorialFreeModule`, an attribute `_name` is set if it wasn't before. However it can be used during the initialization of Parent by the coercion mechanism leading to some failure. The patch fixes the problem.\n\nNote: right now the problem does appear but it will in the upcomming #8881\n\nIssue created by migration from https://trac.sagemath.org/ticket/9104\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: CombinatorialFreeModule name\n\nThis is a followup to #8882\n\nIn the `__init__` of `CombinatorialFreeModule`, an attribute `_name` is set if it wasn't before. However it can be used during the initialization of Parent by the coercion mechanism leading to some failures. The patch fixes the problem.\n\nNote: the problem was not caught by the current doctests, but became apparent in the upcoming #8881.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9104\n\n",
+    "closed_at": "2010-06-05T21:39:43Z",
     "created_at": "2010-05-31T13:07:27Z",
     "labels": [
         "component: combinatorics",
@@ -22,9 +23,9 @@ Keywords: CombinatorialFreeModule name
 
 This is a followup to #8882
 
-In the `__init__` of `CombinatorialFreeModule`, an attribute `_name` is set if it wasn't before. However it can be used during the initialization of Parent by the coercion mechanism leading to some failure. The patch fixes the problem.
+In the `__init__` of `CombinatorialFreeModule`, an attribute `_name` is set if it wasn't before. However it can be used during the initialization of Parent by the coercion mechanism leading to some failures. The patch fixes the problem.
 
-Note: right now the problem does appear but it will in the upcomming #8881
+Note: the problem was not caught by the current doctests, but became apparent in the upcoming #8881.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9104
 

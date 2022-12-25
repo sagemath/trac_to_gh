@@ -1,28 +1,38 @@
-# Issue 5281: Update tachyon to Version 0.98.1 (latest upstream)
+# Issue 5281: Update tachyon to Version 0.98.9 (latest upstream)
 
 archive/issues_005281.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  drkirkby mhampton @vbraun\n\nIn Sage we are currently shipping some 0.98.beta release of tachyon. Update to the official upstream release 0.98.1.\n\nThis will require cleaning up SPKG.txt\n\nIssue created by migration from https://trac.sagemath.org/ticket/5281\n\n",
+    "body": "Assignee: mhampton\n\nCC:  drkirkby mhampton @vbraun\n\nIn Sage we are currently shipping some 0.98.beta release of tachyon.\n\nUpdate to the official upstream release 0.98.9 (released January 18th 2010; still current on August 26th 2010).\n\nThis will (not only) require cleaning up SPKG.txt.\n\n---\n\nUpstream link: http://jedi.ks.uiuc.edu/~johns/raytracer/\n\nNew spkg: [http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg](http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg)\n\nSuperseded by: [http://www.math.leidenuniv.nl/~wpalenst/sage/tachyon-0.98.9.p1.spkg](http://www.math.leidenuniv.nl/~wpalenst/sage/tachyon-0.98.9.p1.spkg) (#10609)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5281\n\n",
+    "closed_at": "2011-01-19T22:19:10Z",
     "created_at": "2009-02-16T04:41:49Z",
     "labels": [
-        "component: packages: standard",
-        "bug"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "Update tachyon to Version 0.98.1 (latest upstream)",
+    "title": "Update tachyon to Version 0.98.9 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5281",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: mabshoff
+Assignee: mhampton
 
 CC:  drkirkby mhampton @vbraun
 
-In Sage we are currently shipping some 0.98.beta release of tachyon. Update to the official upstream release 0.98.1.
+In Sage we are currently shipping some 0.98.beta release of tachyon.
 
-This will require cleaning up SPKG.txt
+Update to the official upstream release 0.98.9 (released January 18th 2010; still current on August 26th 2010).
+
+This will (not only) require cleaning up SPKG.txt.
+
+---
+
+Upstream link: http://jedi.ks.uiuc.edu/~johns/raytracer/
+
+New spkg: [http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg](http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg)
+
+Superseded by: [http://www.math.leidenuniv.nl/~wpalenst/sage/tachyon-0.98.9.p1.spkg](http://www.math.leidenuniv.nl/~wpalenst/sage/tachyon-0.98.9.p1.spkg) (#10609)
 
 Issue created by migration from https://trac.sagemath.org/ticket/5281
 

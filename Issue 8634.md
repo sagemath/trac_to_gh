@@ -3,7 +3,8 @@
 archive/issues_008634.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nh1, h2, h9 (and perhaps some others) are converted into binomial coefficients. This disallows to solve an equation involving variable h1.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: h1=var('h1'); h1._maxima_()\nbinomial(n,k)*x^k\nsage: h2=var('h2'); h2._maxima_()\nbinomial(a,k)*binomial(b,n-k)\nsage: h=var('h'); h._maxima_()\nh\nsage: h_1=var('h_1'); h_1._maxima_()\nh_1\nsage: h23=var('h23'); h23._maxima_()\nh23\nsage: ch1=var('ch1'); ch1._maxima_()\nch1\nsage: h9=var('h9'); h9._maxima_()\nn!/(k!*(m+k)!*(n-m-2*k)!)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8634\n\n",
+    "body": "Assignee: @robert-marik\n\nCC:  @kcrisman @burcin\n\nh1, h2, h9 (and perhaps some others) are converted into binomial coefficients. This disallows to solve an equation involving variable h1.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: h1=var('h1'); h1._maxima_()\nbinomial(n,k)*x^k\nsage: h2=var('h2'); h2._maxima_()\nbinomial(a,k)*binomial(b,n-k)\nsage: h=var('h'); h._maxima_()\nh\nsage: h_1=var('h_1'); h_1._maxima_()\nh_1\nsage: h23=var('h23'); h23._maxima_()\nh23\nsage: ch1=var('ch1'); ch1._maxima_()\nch1\nsage: h9=var('h9'); h9._maxima_()\nn!/(k!*(m+k)!*(n-m-2*k)!)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8634\n\n",
+    "closed_at": "2010-04-21T13:25:09Z",
     "created_at": "2010-03-31T09:23:12Z",
     "labels": [
         "component: symbolics",
@@ -16,7 +17,7 @@ archive/issues_008634.json:
     "user": "https://github.com/robert-marik"
 }
 ```
-Assignee: @burcin
+Assignee: @robert-marik
 
 CC:  @kcrisman @burcin
 

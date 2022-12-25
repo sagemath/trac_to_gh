@@ -1,16 +1,17 @@
-# Issue 3741: notebook -- the files for the revision history of a worksheet *do* get published
+# Issue 3741: [with patch, positive review] notebook -- the files for the revision history of a worksheet *do* get published
 
 archive/issues_003741.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is bad from the point of view of security, and it also wastes a ton of disk space. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3741\n\n",
+    "closed_at": "2008-08-10T04:50:21Z",
     "created_at": "2008-07-29T15:38:58Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "notebook -- the files for the revision history of a worksheet *do* get published",
+    "title": "[with patch, positive review] notebook -- the files for the revision history of a worksheet *do* get published",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3741",
     "user": "https://github.com/williamstein"

@@ -1,16 +1,17 @@
-# Issue 2598: [with patch, needs review] allow ZZ element to be constructed from GF(2) list
+# Issue 2598: [with patch, positive review] allow ZZ element to be constructed from GF(2) list
 
 archive/issues_002598.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis works for some time now:\n\n```\nsage: ZZ([1,0], 2)\n1\n```\n\nand after the patch this also works:\n\n```\nsage: ZZ([GF(2)(1),GF(2)(0)], 2)\n1\n```\n\nIt is -- at least for my applications -- common to get a list of bits, do some bitstuff with them and combine them again to an integer.\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/2598\n\n",
+    "body": "Assignee: somebody\n\nThis works for some time now:\n\n```\nsage: ZZ([1,0], 2)\n1\n```\n\nand after the patch this also works:\n\n```\nsage: ZZ([GF(2)(1),GF(2)(0)], 2)\n1\n```\n\nIt is -- at least for my applications -- common to get a list of bits, do some bitstuff with them and combine them again to an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2598\n\n",
+    "closed_at": "2008-03-21T02:30:19Z",
     "created_at": "2008-03-19T16:04:10Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] allow ZZ element to be constructed from GF(2) list",
+    "title": "[with patch, positive review] allow ZZ element to be constructed from GF(2) list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2598",
     "user": "https://github.com/malb"
@@ -33,8 +34,6 @@ sage: ZZ([GF(2)(1),GF(2)(0)], 2)
 ```
 
 It is -- at least for my applications -- common to get a list of bits, do some bitstuff with them and combine them again to an integer.
-
-}}}
 
 Issue created by migration from https://trac.sagemath.org/ticket/2598
 

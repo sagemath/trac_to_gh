@@ -3,10 +3,11 @@
 archive/issues_003465.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nKeywords: relative number fields\n\nWhen creating towers of number fields, the base rings don't behave as I think they should.  The following is from the coercion branch (the opposite problem exists in the normal branch).\n\nsage: sage: L.<cuberoot2, zeta3> = CyclotomicField(3).extension(x^3 - 2)\nsage: type(L)\n<class 'sage.rings.number_field.number_field.NumberField_relative'>\nsage: L.ngens()\n1 (2 in current Sage, I think it should be 1)\nsage: L.base_ring()\nCyclotomic Field of order 3 and degree 2 (I agree)\nsage: L.base_field()\nCyclotomic Field of order 3 and degree 2 (I agree)\nsage: L.base()\nRational Field (I think it should be Cyclotomic Field of order 3 and degree 2)\nsage: K.<a, b> = NumberField( [x^2 + x + 1, x^3 + 2] )\nsage: K.ngens()\n1 (2 in current Sage, I think it should be 2)sage: type(K)\n<class 'sage.rings.number_field.number_field.NumberField_relative'>  \nsage: K.base_ring()\nNumber Field in b with defining polynomial x^3 + 2 (I think it should be Rational Field)\nsage: K.base_field()\nNumber Field in b with defining polynomial x^3 + 2 (I think it should be Rational Field)\nsage: K.base()\nRational Field (um... ok, I agree)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3465\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @craigcitro\n\nKeywords: relative number fields\n\nWhen creating towers of number fields, the base rings don't behave as I think they should.  The following is from the coercion branch (the opposite problem exists in the normal branch).\n\n```\nsage: sage: L.<cuberoot2, zeta3> = CyclotomicField(3).extension(x^3 - 2)\nsage: type(L)\n<class 'sage.rings.number_field.number_field.NumberField_relative'>\nsage: L.ngens()\n1 (2 in current Sage, I think it should be 1)\nsage: L.base_ring()\nCyclotomic Field of order 3 and degree 2 (I agree)\nsage: L.base_field()\nCyclotomic Field of order 3 and degree 2 (I agree)\nsage: L.base()\nRational Field (I think it should be Cyclotomic Field of order 3 and degree 2)\nsage: K.<a, b> = NumberField( [x^2 + x + 1, x^3 + 2] )\nsage: K.ngens()\n1 (2 in current Sage, I think it should be 2)sage: type(K)\n<class 'sage.rings.number_field.number_field.NumberField_relative'>  \nsage: K.base_ring()\nNumber Field in b with defining polynomial x^3 + 2 (I think it should be Rational Field)\nsage: K.base_field()\nNumber Field in b with defining polynomial x^3 + 2 (I think it should be Rational Field)\nsage: K.base()\nRational Field (um... ok, I agree)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3465\n\n",
+    "closed_at": "2010-07-20T07:03:14Z",
     "created_at": "2008-06-18T22:29:07Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
@@ -16,7 +17,7 @@ archive/issues_003465.json:
     "user": "https://github.com/roed314"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
 CC:  @craigcitro
 
@@ -24,6 +25,7 @@ Keywords: relative number fields
 
 When creating towers of number fields, the base rings don't behave as I think they should.  The following is from the coercion branch (the opposite problem exists in the normal branch).
 
+```
 sage: sage: L.<cuberoot2, zeta3> = CyclotomicField(3).extension(x^3 - 2)
 sage: type(L)
 <class 'sage.rings.number_field.number_field.NumberField_relative'>
@@ -45,6 +47,7 @@ sage: K.base_field()
 Number Field in b with defining polynomial x^3 + 2 (I think it should be Rational Field)
 sage: K.base()
 Rational Field (um... ok, I agree)
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3465
 

@@ -1,16 +1,17 @@
-# Issue 3989: [with spkg, needs review] autotools issues with gd-2.0.35
+# Issue 3989: [with spkg, with positive review] autotools issues with gd-2.0.35
 
 archive/issues_003989.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe new hg package has various issues and we need to run a bunch of autohell and libtool commands to create proper sources. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/gd-2.0.35.p1.spkg\n\nfixes that issue. It builds on the Itanium boxen that up to now failed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3989\n\n",
+    "closed_at": "2008-08-29T09:11:14Z",
     "created_at": "2008-08-29T08:54:08Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with spkg, needs review] autotools issues with gd-2.0.35",
+    "title": "[with spkg, with positive review] autotools issues with gd-2.0.35",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3989",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

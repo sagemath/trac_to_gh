@@ -1,9 +1,10 @@
-# Issue 2454: [with patch, needs review] Start improving doctest coverage in modular/modsym/
+# Issue 2454: [with patch, positive review] Start improving doctest coverage in modular/modsym/
 
 archive/issues_002454.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nDoctest coverage is currently 14.2% in sage/modular/modsym/ ... this patch brings it up to the (meager) 25.3%. I plan on continuing to push this further soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2454\n\n",
+    "closed_at": "2008-03-16T00:56:45Z",
     "created_at": "2008-03-10T08:13:01Z",
     "labels": [
         "component: modular forms",
@@ -11,7 +12,7 @@ archive/issues_002454.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "[with patch, needs review] Start improving doctest coverage in modular/modsym/",
+    "title": "[with patch, positive review] Start improving doctest coverage in modular/modsym/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2454",
     "user": "https://github.com/craigcitro"

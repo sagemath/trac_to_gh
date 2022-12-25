@@ -4,6 +4,7 @@ archive/issues_000307.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently vector/vector multiplication returns a vector, when it should just return a scalar:\n\n```\nsage: b = vector([0,1,2]); u= vector([1,3,5]);\nsage: u*b\n(0, 3, 10)\n```\n\nIn this particular case, the answer should just be 13\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/307\n\n",
+    "closed_at": "2007-03-04T21:22:08Z",
     "created_at": "2007-03-04T06:20:56Z",
     "labels": [
         "component: linear algebra",

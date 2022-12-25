@@ -1,16 +1,17 @@
-# Issue 3498: make numpy the backend for matrices over CDF and RDF
+# Issue 3498: [with patch, positive review] make numpy the backend for matrices over CDF and RDF
 
 archive/issues_003498.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\n[20:17] <wstein-3053> numpy is usually better.\n[20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?\n[20:18] <wstein-3053> jason-- please do.\n[20:19] <jason--> okay; ticket coming right up.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3498\n\n",
+    "closed_at": "2008-11-09T18:20:27Z",
     "created_at": "2008-06-23T22:51:33Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "make numpy the backend for matrices over CDF and RDF",
+    "title": "[with patch, positive review] make numpy the backend for matrices over CDF and RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3498",
     "user": "https://github.com/jasongrout"

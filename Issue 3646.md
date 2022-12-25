@@ -1,16 +1,17 @@
-# Issue 3646: Implement paren matching
+# Issue 3646: [with patch, positive review] Implement paren matching
 
 archive/issues_003646.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein tclemans yiqiang\n\nPeople have been complaining about a lack of paren matching in the notebook.  Do something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3646\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein tclemans yiqiang\n\nPeople have been complaining about a lack of paren matching in the notebook.  Do something.\n\nDiscussions: [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f32d3c432aca590), [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/0fef21d0334766e4/6a209ab618a508ac?#6a209ab618a508ac).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3646\n\n",
+    "closed_at": "2009-09-24T07:54:10Z",
     "created_at": "2008-07-11T22:15:08Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "Implement paren matching",
+    "title": "[with patch, positive review] Implement paren matching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3646",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -21,6 +22,8 @@ Assignee: boothby
 CC:  @williamstein tclemans yiqiang
 
 People have been complaining about a lack of paren matching in the notebook.  Do something.
+
+Discussions: [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f32d3c432aca590), [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/0fef21d0334766e4/6a209ab618a508ac?#6a209ab618a508ac).
 
 Issue created by migration from https://trac.sagemath.org/ticket/3646
 

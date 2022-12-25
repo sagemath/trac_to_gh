@@ -1,16 +1,17 @@
-# Issue 8165: title cuts off on worksheet upload
+# Issue 8165: Title cut off on worksheet download
 
 archive/issues_008165.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI just tried uploading the following worksheet:\n\nhttp://sagenb.org/home/pub/1139/\n\nby pasting the URL into the middle box of the upload page on a (fairly fresh) 4.3.1 install.  When I opened up the worksheet on the local server, the title was cut off to be about 14 characters long.  This is a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8165\n\n",
+    "closed_at": "2010-02-10T18:32:38Z",
     "created_at": "2010-02-03T05:39:24Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
-    "title": "title cuts off on worksheet upload",
+    "title": "Title cut off on worksheet download",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8165",
     "user": "https://github.com/jasongrout"

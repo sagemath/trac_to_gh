@@ -1,16 +1,17 @@
-# Issue 4291: [with patch, needs review] Fix problem with IPython and init.sage
+# Issue 4291: [with patch, with positive review] Fix problem with IPython and init.sage
 
 archive/issues_004291.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4291\n\n",
+    "closed_at": "2008-10-15T15:41:53Z",
     "created_at": "2008-10-15T10:48:58Z",
     "labels": [
         "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.4",
-    "title": "[with patch, needs review] Fix problem with IPython and init.sage",
+    "title": "[with patch, with positive review] Fix problem with IPython and init.sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4291",
     "user": "https://github.com/mwhansen"

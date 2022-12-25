@@ -1,16 +1,17 @@
-# Issue 2796: Integer digits/ndigit disagree on default base
+# Issue 2796: [with patches, positive review] Integer digits/ndigit disagree on default base
 
 archive/issues_002796.json:
 ```json
 {
     "body": "Assignee: somebody\n\nI find this quite non-intuitive:\n\n```\nsage: n=15\nsage: n.digits()\n[1, 1, 1, 1]\nsage: n.ndigits()\n2\nsage: n.bits()\n4\n```\n\nThe reason is that digits and ndigits have a different default for the base parameter.  I think they should both default to base=10.\n\nI also think that 'bits' should be renamed to 'nbits' and possibly the 'bits' method should call 'digits(base=2)'.  I enter this with-out a patch for the moment because I wanted some feedback before I submit a patch which could break user code.  Please vote in this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2796\n\n",
+    "closed_at": "2008-12-12T13:48:20Z",
     "created_at": "2008-04-04T12:56:01Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Integer digits/ndigit disagree on default base",
+    "title": "[with patches, positive review] Integer digits/ndigit disagree on default base",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2796",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"

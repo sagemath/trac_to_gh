@@ -3,7 +3,8 @@
 archive/issues_008325.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx warnings from building the HTML reference manual include:\n\n```\nmatrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\nRelated: #8244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8325\n\n",
+    "body": "CC:  @jhpalmieri\n\nSphinx warnings from building the HTML reference manual include:\n\n```\nmatrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\nRelated: #8244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8325\n\n",
+    "closed_at": "2010-03-09T05:00:49Z",
     "created_at": "2010-02-22T05:45:15Z",
     "labels": [
         "component: documentation",
@@ -17,8 +18,6 @@ archive/issues_008325.json:
     "user": "https://github.com/qed777"
 }
 ```
-Assignee: mvngu
-
 CC:  @jhpalmieri
 
 Sphinx warnings from building the HTML reference manual include:

@@ -4,6 +4,7 @@ archive/issues_006247.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nReported by `somos` on `#sage-devel` on IRC\n\n```\n<somos> when I do 'sage -optional' it tried to make a temp file in SAGE_ROOT\n...\n<somos> This is ok if you are running as root user.\n...\n<mvngu> From the help:\n<mvngu> -optional     -- list all optional packages that can be downloaded\n<somos> Anyway, the problem is the temp file in SAGE_ROOT.\n<somos> It should be in /tmp instead.\n<mvngu> Can you explain why it should be in /tmp ?\n<somos> Becuase SAGE_ROOT requires root permissions.\n...\n<somos> So, my suggestion is to avoid the temp file. #1\n<somos> If a temp file is needed, I suggest TMP or TMPDIR instead.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6247\n\n",
+    "closed_at": "2013-08-16T11:10:59Z",
     "created_at": "2009-06-08T14:37:40Z",
     "labels": [
         "component: misc",

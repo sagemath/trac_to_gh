@@ -4,10 +4,10 @@ archive/issues_008418.json:
 ```json
 {
     "body": "Assignee: jleroy\n\nCC:  abmasse @seblabbe\n\nAdding the function reduced_rauzy_graph in word.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/8418\n\n",
+    "closed_at": "2010-03-06T09:37:09Z",
     "created_at": "2010-03-02T13:06:20Z",
     "labels": [
-        "component: combinatorics",
-        "minor"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Reduced Rauzy graph",

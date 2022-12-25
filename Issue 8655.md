@@ -3,7 +3,8 @@
 archive/issues_008655.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\n```\nsage: G = Graph(multiedges=True)\nsage: G.add_edge(0,1)\nsage: G.add_edge(0,1)\nsage: G.genus()\n1\nsage: G.to_simple().genus()\n0\n```\n\nAdding parallel edges to a graph never changes the minimal genus.  I'm concerned that genus() might be entirely broken... but maybe it's just on multigraphs?  At the very least, removing parallel edges will speed things up and fix this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8655\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: G = Graph(multiedges=True)\nsage: G.add_edge(0,1)\nsage: G.add_edge(0,1)\nsage: G.add_edge(0,1)\nsage: G.genus()\n1\nsage: G.to_simple().genus()\n0\n```\n\nAdding parallel edges to a graph never changes the minimal genus.  I'm concerned that genus() might be entirely broken... but maybe it's just on multigraphs?  At the very least, removing parallel edges will speed things up and fix this bug.\n\nStrangely, the code works correctly on the graph with 2 parallel edges, but the bug occurs on the graph with 3 parallel edges.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8655\n\n",
+    "closed_at": "2010-06-05T22:07:50Z",
     "created_at": "2010-04-06T19:42:13Z",
     "labels": [
         "component: graph theory",
@@ -16,10 +17,11 @@ archive/issues_008655.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-Assignee: jason, ncohen, rlm
+Assignee: @rlmill
 
 ```
 sage: G = Graph(multiedges=True)
+sage: G.add_edge(0,1)
 sage: G.add_edge(0,1)
 sage: G.add_edge(0,1)
 sage: G.genus()
@@ -29,6 +31,8 @@ sage: G.to_simple().genus()
 ```
 
 Adding parallel edges to a graph never changes the minimal genus.  I'm concerned that genus() might be entirely broken... but maybe it's just on multigraphs?  At the very least, removing parallel edges will speed things up and fix this bug.
+
+Strangely, the code works correctly on the graph with 2 parallel edges, but the bug occurs on the graph with 3 parallel edges.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8655
 

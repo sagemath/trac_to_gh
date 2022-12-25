@@ -1,16 +1,17 @@
-# Issue 5452: Graph broken on a input of type dict of dicts
+# Issue 5452: [with patch, positive review] Graph broken on a input of type dict of dicts
 
 archive/issues_005452.json:
 ```json
 {
     "body": "Assignee: @seblabbe\n\nIn sage-3.2.3 the code below was fine, but it is broken in sage-3.3 and sage-3.4.rc0 :\n\n```\nsage: a,b,c,d,e,f=sorted(SymmetricGroup(3))\nsage: Graph({b:{d:'c',e:'p'}, c:{d:'p',e:'c'}})\n\n...\n\n/sage/graphs/graph.pyc in __init__(self, data, pos, loops, format, boundary, weighted, implementation, sparse, vertex_labels, **kwds)\n   8261                     if v not in verts: verts.append(v)\n   8262                     if hash(u) > hash(v):\n-> 8263                         if u in data[v]:\n   8264                             if data[u][v] != data[v][u]:\n   8265                                 raise ValueError(\"Dict does not agree on edge (%s,%s)\"%(u,v))\n\nKeyError: (1,2,3)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5452\n\n",
+    "closed_at": "2009-03-20T20:23:31Z",
     "created_at": "2009-03-07T17:15:45Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Graph broken on a input of type dict of dicts",
+    "title": "[with patch, positive review] Graph broken on a input of type dict of dicts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5452",
     "user": "https://github.com/seblabbe"

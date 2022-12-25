@@ -3,10 +3,11 @@
 archive/issues_004430.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen one creates a new worksheet, it would be nice if the sage process started up in the background right then, rather than wait till one types the first command. Currently there is an annoying lag...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4430\n\n",
+    "body": "Assignee: boothby\n\nWhen one creates a new worksheet, it would be nice if the sage process started up in the background right then, rather than wait till one types the first command. Currently there is an annoying lag...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4430\n\n",
+    "closed_at": "2010-01-25T16:05:52Z",
     "created_at": "2008-11-03T17:53:13Z",
     "labels": [
-        "component: algebra"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optimize new worksheet startup",
@@ -15,7 +16,7 @@ archive/issues_004430.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: tbd
+Assignee: boothby
 
 When one creates a new worksheet, it would be nice if the sage process started up in the background right then, rather than wait till one types the first command. Currently there is an annoying lag...
 

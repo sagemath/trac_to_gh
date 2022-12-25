@@ -1,16 +1,17 @@
-# Issue 1816: rename MPolynomialRing.repr_long method to __str__
+# Issue 1816: [with patch, with negative review] rename MPolynomialRing.repr_long method to __str__
 
 archive/issues_001816.json:
 ```json
 {
     "body": "Assignee: @malb\n\nJust as symbolic variables behave (and what is the Python-way IIRC):\n\n```\nsage: f = x/var('y')\nsage: f\nx/y\nsage: str(f)\n'                                       x\\r\\n                                       -\\r\\n                                       y'\nsage: print str(f)\n                                       x\n                                       -\n                                       y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1816\n\n",
+    "closed_at": "2008-04-01T12:06:41Z",
     "created_at": "2008-01-17T23:38:32Z",
     "labels": [
         "component: commutative algebra",
         "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "rename MPolynomialRing.repr_long method to __str__",
+    "title": "[with patch, with negative review] rename MPolynomialRing.repr_long method to __str__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1816",
     "user": "https://github.com/malb"

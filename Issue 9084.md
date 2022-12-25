@@ -1,16 +1,18 @@
-# Issue 9084: Move sage/gsl into libs directory.
+# Issue 9084: Move sage/gsl
 
 archive/issues_009084.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9084\n\n",
+    "body": "Assignee: jason, jkantor\n\nAs discussed in \n\nhttps://groups.google.com/forum/#!searchin/sage-devel/gsl%7Csort:relevance/sage-devel/vCeJAicIG9I/Fas5z8JVmEEJ\n\nthe proper place for `src/sage/gsl` is somewhere else. The goal of this ticket is to move all files in `src/sage/gsl`.\n\nThe plan is as follows:\n\n- `dft` discrete fourier transform -> `src/sage/calculus/transforms`\n- `dwt` dicrete wavelet transform -> `src/sage/calculus/transforms`\n- `fft` fast fourier transform -> `src/sage/calculus/transforms`\n- `gsl_array` -> `src/sage/libs/gsl` and renamed to `array` \n- `integration` numerical integral -> `src/sage/calculus`\n- `interpolation` -> `src/sage/calculus`\n- `ode` ordinary differential equation -> `src/sage/calculus`\n- `probability_distribution` -> `src/sage/probability`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9084\n\n",
+    "closed_at": "2017-01-23T22:52:27Z",
     "created_at": "2010-05-29T08:46:10Z",
     "labels": [
-        "component: numerical",
+        "component: relocation",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.5",
-    "title": "Move sage/gsl into libs directory.",
+    "title": "Move sage/gsl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9084",
     "user": "https://github.com/robertwb"
@@ -18,7 +20,22 @@ archive/issues_009084.json:
 ```
 Assignee: jason, jkantor
 
+As discussed in 
 
+https://groups.google.com/forum/#!searchin/sage-devel/gsl%7Csort:relevance/sage-devel/vCeJAicIG9I/Fas5z8JVmEEJ
+
+the proper place for `src/sage/gsl` is somewhere else. The goal of this ticket is to move all files in `src/sage/gsl`.
+
+The plan is as follows:
+
+- `dft` discrete fourier transform -> `src/sage/calculus/transforms`
+- `dwt` dicrete wavelet transform -> `src/sage/calculus/transforms`
+- `fft` fast fourier transform -> `src/sage/calculus/transforms`
+- `gsl_array` -> `src/sage/libs/gsl` and renamed to `array` 
+- `integration` numerical integral -> `src/sage/calculus`
+- `interpolation` -> `src/sage/calculus`
+- `ode` ordinary differential equation -> `src/sage/calculus`
+- `probability_distribution` -> `src/sage/probability`
 
 Issue created by migration from https://trac.sagemath.org/ticket/9084
 

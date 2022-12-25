@@ -4,6 +4,7 @@ archive/issues_001939.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nThe latest r.spkg from \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc0/r-2.6.1.p13.spkg\n\nneeds the attached patch to properly import libR.dylib. `DYLD_LIBRARY_PATH` is properly set, but from some reason import fails. By adding the R's `lib` directory to `DY_LDLIBRARY_PATH` in `sage-env` the issue is resolved. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1939\n\n",
+    "closed_at": "2008-01-26T13:49:46Z",
     "created_at": "2008-01-26T13:45:33Z",
     "labels": [
         "component: packages: standard",

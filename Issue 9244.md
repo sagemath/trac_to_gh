@@ -3,7 +3,8 @@
 archive/issues_009244.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nI was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) \n\nI have a patch for this, depending on #9242, which I will upload as soon as someone explains how to squash the `_test_category()` error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9244\n\n",
+    "body": "Assignee: @loefflerd\n\nI was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) \n\nI have a patch for this, (which used to depend on #9242 but no longer does), which I will upload as soon as someone explains how to squash the `_test_category()` error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9244\n\n",
+    "closed_at": "2010-07-20T07:52:39Z",
     "created_at": "2010-06-15T10:49:08Z",
     "labels": [
         "component: number fields",
@@ -20,7 +21,7 @@ Assignee: @loefflerd
 
 I was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) 
 
-I have a patch for this, depending on #9242, which I will upload as soon as someone explains how to squash the `_test_category()` error.
+I have a patch for this, (which used to depend on #9242 but no longer does), which I will upload as soon as someone explains how to squash the `_test_category()` error.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9244
 

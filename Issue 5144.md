@@ -1,9 +1,10 @@
-# Issue 5144: [with patch, needs review] speed up right_nullity for matrices
+# Issue 5144: [with patch, positive review] speed up right_nullity for matrices
 
 archive/issues_005144.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: right_nullity\n\nleft_nullity currently functions by computing the difference between self.nrows() and self.rank().\n\nright_nullity currently functions by calling left_nullity on the transpose of the matrix, and so it can be sped up if it instead computes self.ncols() - self.rank().  The attached patch does this.\n\nTo see the effect, try timing some things with\n\n```\nsage: m = random_matrix(ZZ, 50, x=2^16)\n```\nOn my machine, I get\n\n```\nsage: timeit('m.left_nullity()')\n625 loops, best of 3: 2.29 \u00b5s per loop\ntimeit('m.transpose()')\n125 loops, best of 3: 1.72 ms per loop\n```\nso the transpose operation is really slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5144\n\n",
+    "closed_at": "2009-02-06T22:28:31Z",
     "created_at": "2009-01-31T01:13:24Z",
     "labels": [
         "component: linear algebra",
@@ -11,7 +12,7 @@ archive/issues_005144.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] speed up right_nullity for matrices",
+    "title": "[with patch, positive review] speed up right_nullity for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5144",
     "user": "https://github.com/jhpalmieri"

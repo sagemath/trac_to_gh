@@ -1,16 +1,18 @@
-# Issue 4642: Limit sage-flags.txt to vector math flags
+# Issue 4642: [with patch; positive review] Limit sage-flags.txt to vector math flags
 
 archive/issues_004642.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nJeffrey reported:\n\n```\nI've just downloaded and launched Sage on an Ubuntu 8.10 box.  I \nunzipped the file and ran ./sage and got this: \n  WARNING!  This Sage install was built on a machine that supports \n  instructions that are not available on this computer.  Sage will \n  likely fail with ILLEGAL INSTRUCTION errors! The following processor \n  flags were on the build machine but are not on this computer: \n  nx up \nI downloaded this image of Sage: \n  sage-3.2-ubuntu32bit-intel-i686-Linux.tar.gz \nIs there anything I can do? \nThanks in advance \nJeffrey \n```\n\nThe problem is that nx for example is a no execute flag and has zero impact on compatibility for binaries. We should only trac sse, sse2 and see3 flags (and potentially others, but I will do some research here.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4642\n\n",
+    "closed_at": "2008-11-29T04:28:57Z",
     "created_at": "2008-11-28T07:41:37Z",
     "labels": [
         "component: build",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "Limit sage-flags.txt to vector math flags",
+    "title": "[with patch; positive review] Limit sage-flags.txt to vector math flags",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4642",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

@@ -1,28 +1,26 @@
-# Issue 6536: Constructor in sage.rings.number_field.order.Order calls a method of the wrong class
+# Issue 6536: [with patch, positive review] Constructor in sage.rings.number_field.order.Order calls a method of the wrong class
 
 archive/issues_006536.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAt the moment the `__init__` method of class `sage.rings.number_field.order.Order` calls `DedekindDomain.__init__`, despite the fact that `Order` doesn't inherit from `DedekindDomain`. This hasn't caused any problems yet, since `DedekindDomain` inherits its `__init__` function from `IntegralDomain` (which *is* the correct base class for `Order`). But nonetheless it is sloppy coding, and if the Dedekind domain class is either deleted or added to it will cause weird behaviour.\n\n\ninherits from `sage.rings.ring.IntegralDomain`, but its `__init__` method , despite the fact that\n\nIssue created by migration from https://trac.sagemath.org/ticket/6536\n\n",
+    "body": "Assignee: @loefflerd\n\nAt the moment the `__init__` method of class `sage.rings.number_field.order.Order` calls `DedekindDomain.__init__`, despite the fact that `Order` doesn't inherit from `DedekindDomain`. This hasn't caused any problems yet, since `DedekindDomain` inherits its `__init__` function from `IntegralDomain` (which /is/ the correct base class for `Order`). But nonetheless it is sloppy coding, and if the Dedekind domain class is either deleted or added to it will cause weird behaviour.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6536\n\n",
+    "closed_at": "2009-07-23T08:30:00Z",
     "created_at": "2009-07-15T07:37:59Z",
     "labels": [
-        "component: number theory",
+        "component: number fields",
         "trivial",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
-    "title": "Constructor in sage.rings.number_field.order.Order calls a method of the wrong class",
+    "title": "[with patch, positive review] Constructor in sage.rings.number_field.order.Order calls a method of the wrong class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6536",
     "user": "https://github.com/loefflerd"
 }
 ```
-Assignee: @williamstein
+Assignee: @loefflerd
 
-At the moment the `__init__` method of class `sage.rings.number_field.order.Order` calls `DedekindDomain.__init__`, despite the fact that `Order` doesn't inherit from `DedekindDomain`. This hasn't caused any problems yet, since `DedekindDomain` inherits its `__init__` function from `IntegralDomain` (which *is* the correct base class for `Order`). But nonetheless it is sloppy coding, and if the Dedekind domain class is either deleted or added to it will cause weird behaviour.
-
-
-inherits from `sage.rings.ring.IntegralDomain`, but its `__init__` method , despite the fact that
+At the moment the `__init__` method of class `sage.rings.number_field.order.Order` calls `DedekindDomain.__init__`, despite the fact that `Order` doesn't inherit from `DedekindDomain`. This hasn't caused any problems yet, since `DedekindDomain` inherits its `__init__` function from `IntegralDomain` (which /is/ the correct base class for `Order`). But nonetheless it is sloppy coding, and if the Dedekind domain class is either deleted or added to it will cause weird behaviour.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6536
 

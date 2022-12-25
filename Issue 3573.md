@@ -1,15 +1,16 @@
-# Issue 3573: Finance - Implementation of opentick
+# Issue 3573: [with patch, with spkg, needs to be rebased] finance - Implementation of Sage interface to opentick
 
 archive/issues_003573.json:
 ```json
 {
-    "body": "Assignee: @cswiercz\n\nCC:  @robertwb\n\nKeywords: finance, opentick,\n\nopentick is a collection of APIs for obtaining free real-time and historical market data for trading systems and trading platforms. With these APIs, we will enable Sage to be able to stream and manipulate real-time market data.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3573\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @robertwb\n\nKeywords: finance, opentick\n\nopentick is a collection of APIs for obtaining free real-time and historical market data for trading systems and trading platforms. With these APIs, we will enable Sage to be able to stream and manipulate real-time market data.\n\nThis ticket depends on #3621.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3573\n\n",
+    "closed_at": "2021-10-25T15:39:21Z",
     "created_at": "2008-07-06T21:45:34Z",
     "labels": [
         "component: finance"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Finance - Implementation of opentick",
+    "title": "[with patch, with spkg, needs to be rebased] finance - Implementation of Sage interface to opentick",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3573",
     "user": "https://github.com/cswiercz"
@@ -19,9 +20,11 @@ Assignee: @cswiercz
 
 CC:  @robertwb
 
-Keywords: finance, opentick,
+Keywords: finance, opentick
 
 opentick is a collection of APIs for obtaining free real-time and historical market data for trading systems and trading platforms. With these APIs, we will enable Sage to be able to stream and manipulate real-time market data.
+
+This ticket depends on #3621.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3573
 

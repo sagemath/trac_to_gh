@@ -1,22 +1,24 @@
-# Issue 1587: M.kernel() gives the kernel when M acts on row vectors from the right.
+# Issue 1587: [with patch, positive review] M.kernel() gives the kernel when M acts on row vectors from the right -- Document this; add better examples
 
 archive/issues_001587.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza @jasongrout\n\nKeywords: matrix, kernel\n\n```\nsage: M = matrix([[1,2,3],[1,2,4],[2,4,7]])\nsage: M.kernel()\n\nFree module of degree 3 and rank 1 over Integer Ring\nEchelon basis matrix:\n[ 1  1 -1]\nsage: v = vector([1, 1, -1])\nsage: M*v\n(0, -1, -1)\nsage: v*M\n(0, 0, 0)\n```\n\nThis is not what most people expect.  Either the behavior should be changed so that it gives the kernel when acting on columns from the left or some documentation should make the current behavior very clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1587\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  alexghitza @jasongrout\n\nKeywords: matrix, kernel\n\n```\nsage: M = matrix([[1,2,3],[1,2,4],[2,4,7]])\nsage: M.kernel()\n\nFree module of degree 3 and rank 1 over Integer Ring\nEchelon basis matrix:\n[ 1  1 -1]\nsage: v = vector([1, 1, -1])\nsage: M*v\n(0, -1, -1)\nsage: v*M\n(0, 0, 0)\n```\n\nThis is not what most people expect.  Either the behavior should be changed so that it gives the kernel when acting on columns from the left or some documentation should make the current behavior very clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1587\n\n",
+    "closed_at": "2009-01-25T02:20:24Z",
     "created_at": "2007-12-22T13:06:38Z",
     "labels": [
         "component: linear algebra",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "M.kernel() gives the kernel when M acts on row vectors from the right.",
+    "title": "[with patch, positive review] M.kernel() gives the kernel when M acts on row vectors from the right -- Document this; add better examples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1587",
     "user": "https://github.com/mwhansen"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  alexghitza @jasongrout
 

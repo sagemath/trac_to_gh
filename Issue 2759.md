@@ -1,15 +1,16 @@
-# Issue 2759: [with patch; needs review] SAGE debian/ directory updates
+# Issue 2759: [with patch; positive review] SAGE debian/ directory updates
 
 archive/issues_002759.json:
 ```json
 {
     "body": "Assignee: @timabbott\n\nI'm attaching the changes to the SAGE debian/ directory that were needed to make it actually do Debian builds\n\nIssue created by migration from https://trac.sagemath.org/ticket/2759\n\n",
+    "closed_at": "2008-04-01T19:28:55Z",
     "created_at": "2008-04-01T19:02:19Z",
     "labels": [
         "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "[with patch; needs review] SAGE debian/ directory updates",
+    "title": "[with patch; positive review] SAGE debian/ directory updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2759",
     "user": "https://github.com/timabbott"

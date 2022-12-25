@@ -1,21 +1,23 @@
-# Issue 9467: p-adic l-series associated to modular Jacobians
+# Issue 9467: p-adic L-series associated to modular Jacobians
 
 archive/issues_009467.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a first attempt at merging the code William and I wrote during Sage Days 22 to compute p-adic L-series associated to modular Jacobians.\n\nBelow is an example of a p-adic L-series associated to the rank 2 Jacobian of a curve (level N = 188) in \n\"Empirical evidence for the Birch and Swinnerton-Dyer conjectures for modular Jacobians of genus 2 curves\" (Flynn, Leprevost, Schaefer, Stein, Stoll, Wetherell).\n\nI realize the naming isn't quite right (this is the L-series of a\ncurve whose Jacobian is a certain quotient of J_0(N) ...), but here's the main function:\n\n```\n\nsage: J = J0(188)\nsage: L = J.padic_lseries(7)\nsage: f = L.series(5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9467\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: lseries\n\nThis is a first attempt at merging the code William and I wrote during Sage Days 22 to compute p-adic L-series associated to modular Jacobians.\n\nBelow is an example of a p-adic L-series associated to the rank 2 Jacobian of a curve (level N = 188) in \n\"Empirical evidence for the Birch and Swinnerton-Dyer conjectures for modular Jacobians of genus 2 curves\" (Flynn, Leprevost, Schaefer, Stein, Stoll, Wetherell).\n\nI realize the naming isn't quite right (this is the L-series of a\ncurve whose Jacobian is a certain quotient of J_0(N) ...), but here's the main function:\n\n```\n\nsage: J = J0(188)\nsage: L = J.padic_lseries(7)\nsage: f = L.series(5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9467\n\n",
     "created_at": "2010-07-09T20:15:29Z",
     "labels": [
         "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "p-adic l-series associated to modular Jacobians",
+    "title": "p-adic L-series associated to modular Jacobians",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9467",
     "user": "https://github.com/jbalakrishnan"
 }
 ```
 Assignee: @williamstein
+
+Keywords: lseries
 
 This is a first attempt at merging the code William and I wrote during Sage Days 22 to compute p-adic L-series associated to modular Jacobians.
 

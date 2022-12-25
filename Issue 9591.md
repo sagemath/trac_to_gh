@@ -1,16 +1,18 @@
-# Issue 9591: Upgrade genus2reduction to pari 2.4.3
+# Issue 9591: Upgrade genus2reduction due to Pari upgrade to svn snapshot 12577 - a pre-release of Pari 2.4.3
 
 archive/issues_009591.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAfter upgrading PARI/GP to version 2.4.3 (#9343), genus2reduction no longer compiles properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9591\n\n",
+    "body": "Assignee: tbd\n\nAfter upgrading PARI/GP (#9343) to svn snapshot 12577 (a pre-release of Pari 2.4.3), genus2reduction no longer compiles properly.\n\nSee [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.\n\n---\n\n**Final spkg: http://sage.math.washington.edu/home/mpatel/trac/9591/genus2reduction-0.3.p8.spkg** \n\nIssue created by migration from https://trac.sagemath.org/ticket/9591\n\n",
+    "closed_at": "2010-09-10T10:39:31Z",
     "created_at": "2010-07-24T11:56:21Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
-    "title": "Upgrade genus2reduction to pari 2.4.3",
+    "title": "Upgrade genus2reduction due to Pari upgrade to svn snapshot 12577 - a pre-release of Pari 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9591",
     "user": "https://github.com/jdemeyer"
@@ -18,7 +20,13 @@ archive/issues_009591.json:
 ```
 Assignee: tbd
 
-After upgrading PARI/GP to version 2.4.3 (#9343), genus2reduction no longer compiles properly.
+After upgrading PARI/GP (#9343) to svn snapshot 12577 (a pre-release of Pari 2.4.3), genus2reduction no longer compiles properly.
+
+See [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.
+
+---
+
+**Final spkg: http://sage.math.washington.edu/home/mpatel/trac/9591/genus2reduction-0.3.p8.spkg** 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9591
 

@@ -1,9 +1,10 @@
-# Issue 1433: Fix some documentation typos pointed out by Rich Morin
+# Issue 1433: [with patch, with positive enough review] Fix some documentation typos pointed out by Rich Morin
 
 archive/issues_001433.json:
 ```json
 {
     "body": "Assignee: tba\n\nRich Morin, who does technical editing, pointed out some typos in the tutorial and docs.  The attached patches fix them. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1433\n\n",
+    "closed_at": "2007-12-09T19:59:16Z",
     "created_at": "2007-12-09T06:53:09Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_001433.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "Fix some documentation typos pointed out by Rich Morin",
+    "title": "[with patch, with positive enough review] Fix some documentation typos pointed out by Rich Morin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1433",
     "user": "https://github.com/williamstein"

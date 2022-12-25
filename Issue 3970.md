@@ -1,9 +1,10 @@
-# Issue 3970: MaximaElements should not coerce into SR.
+# Issue 3970: [with patch, positive review] MaximaElements should not coerce into SR.
 
 archive/issues_003970.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3970\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: f = maxima.function('x','sin(x)')\nsage: f + x  #correct\nsin(x)+x\nsage: x+f    #wrong\nx + sage6\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3970\n\n",
+    "closed_at": "2009-10-15T05:49:38Z",
     "created_at": "2008-08-27T22:48:14Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_003970.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
-    "title": "MaximaElements should not coerce into SR.",
+    "title": "[with patch, positive review] MaximaElements should not coerce into SR.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3970",
     "user": "https://github.com/mwhansen"
@@ -19,7 +20,13 @@ archive/issues_003970.json:
 ```
 Assignee: @burcin
 
-
+```
+sage: f = maxima.function('x','sin(x)')
+sage: f + x  #correct
+sin(x)+x
+sage: x+f    #wrong
+x + sage6
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/3970
 

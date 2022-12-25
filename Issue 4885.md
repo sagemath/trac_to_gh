@@ -1,16 +1,17 @@
-# Issue 4885: fix fallout from sloppy review of 4535
+# Issue 4885: [with patch; positive review] fix fallout from sloppy review of 4535
 
 archive/issues_004885.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI refereed trac #4535 and I made some serious mistakes in accepting that patch.  This ticket will be about fixing all of those mistakes.\n\n* the function xmin/xmax/ymin/ymax were all removed.  They *must* be all added back exactly as before.  There is a lot of code out there that depends on it.  Also, we do not just delete functions in sage without deprecating them for at least 6 months first.\n\n* some of the new functions get_* have no documentation or docstrings.  Fix this. \n\n* Do \"sage -t\" on the *old* plot.py using the newest version of sage, and make sure nothing breaks (e.g., examples that use .xmin, etc.)  Fix anything that does, or at least *discuss* it.\n\n\nUnless somebody beats me to it, I'll do this, since it is my fault #4535 got a positive review.  I'll post to this ticket, as soon as I work on this, so if I haven't posted a message below that I'm working on it, I haven't started. \n\n  -- William \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4885\n\n",
+    "closed_at": "2009-01-02T22:15:09Z",
     "created_at": "2008-12-28T23:25:41Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
-    "title": "fix fallout from sloppy review of 4535",
+    "title": "[with patch; positive review] fix fallout from sloppy review of 4535",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4885",
     "user": "https://github.com/williamstein"

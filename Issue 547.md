@@ -4,9 +4,11 @@ archive/issues_000547.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/547\n\n",
+    "closed_at": "2007-11-03T22:27:10Z",
     "created_at": "2007-08-31T23:10:59Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: packages: standard",
+        "critical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",

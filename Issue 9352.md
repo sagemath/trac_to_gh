@@ -4,6 +4,7 @@ archive/issues_009352.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  drkirkby\n\nThe file spkg-check in the givaro spkg prints the following if testing fails: \"Error while running the R testsuite ... exiting\".  The new spkg changes \"R\" to \"Givaro\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9352\n\n",
+    "closed_at": "2010-08-09T09:35:55Z",
     "created_at": "2010-06-27T17:18:32Z",
     "labels": [
         "component: spkg-check",

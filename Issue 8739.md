@@ -4,6 +4,7 @@ archive/issues_008739.json:
 ```json
 {
     "body": "Assignee: sage-combinat\n\nCC:  @seblabbe tmonteil\n\nKeywords: Kolakoski, words\n\nThe Kolakoski words are important in combinatorics on words and there are many interesting conjectures that one would like to solve using Sage.\n\nThis ticket intends to add a constructor of such words.\n\nBy definition, the Kolakoski word is the infinite word `K = 22112122...` fixed under the `Delta` operator. The `Delta` of a word is simply the word describing its runs. For instance, if `w = 122112 = 1^1 2^2 1^2 2^1`, then `Delta(w) = 1221`. One can see that over the alphabet '{1,2}', the unique words fixed by `Delta` are `K` and `1K`. Moreover, this notion is naturally generalized to any alphabet `{a,b}` where `a` and `b` are two distinct positive integers.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8739\n\n",
+    "closed_at": "2011-01-12T06:31:50Z",
     "created_at": "2010-04-21T17:20:15Z",
     "labels": [
         "component: combinatorics",

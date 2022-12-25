@@ -6,8 +6,7 @@ archive/issues_007392.json:
     "body": "Assignee: @williamstein\n\nRight now, we rely on the horrible (for floating point) generic echelon implementation to calculate the rank of an RDF/CDF matrix.\n\nIn fact, over RR, it wouldn't hurt to call numpy/scipy either.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7392\n\n",
     "created_at": "2009-11-04T21:37:51Z",
     "labels": [
-        "component: linear algebra",
-        "bug"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "RDF/CDF matrices should call scipy for rank",

@@ -1,16 +1,17 @@
-# Issue 5948: Coleman integrals of df*f
+# Issue 5948: [with patch, positive review] Coleman integrals of df*f
 
 archive/issues_005948.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  mabshoff @robertwb\n\nThis is a problem arising from the computation of iterated Coleman integrals. It seems that (single) Coleman integrals of df*f for f coming from the MW-reduction are wrong.\n\nHere's the setup:\n\n```\nsage: R.<x> = QQ['x']\nsage: E= HyperellipticCurve(x^3-4*x+4)\nsage: K = Qp(5,10)\nsage: EK = E.change_ring(K)\nsage: P = EK(2,2)\nsage: Q = EK(-2,-2)\nsage: P = EK.teichmuller(P)\nsage: Q = EK.teichmuller(Q)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as monsky_washnitzer\nsage: M_frob, forms = monsky_washnitzer.matrix_of_frobenius_hyperelliptic(EK)\nsage: f = forms[0]\n```\n\nWe know that int(df df,P,Q) = 1/2*int(df,P,Q)<sup>2</sup>, where the integral\non the LHS is iterated and the integral on the RHS is a usual Coleman integral. Using a single Coleman integral to compute this gives\n\n```\nsage: 1/2*EK.coleman_integral(f.diff(),P,Q)^2\n3*5^2 + 5^3 + 5^4 + 5^5 + 4*5^6 + 2*5^7 + 4*5^8 + 5^9 + 3*5^10 + 4*5^11 + O(5^12)\n```\nWe also can expand int(df df,P,Q) = f(Q)*(f(Q)-f(P)) - int(df*f,P,Q) (*)\n\nNow let's check the things on the RHS of (*)\n\n```\nsage: EK.coleman_integral(-f.diff(),P,Q) == f(Q[0],Q[1])-f(P[0],P[1])\nTrue\n```\n\nSo the first term is computed consistently (modulo the minor problem\nwith f.diff() -- see #5947). The second term is the problem, and here's why:\nintegrating by parts, we have\nint(f*df,P,Q) + int(df*f, P,Q) = f<sup>2</sup>(Q)-f<sup>2</sup>(P), which gives\nint(df*f,P, Q) = 1/2*(f<sup>2</sup>(Q)-f<sup>2</sup>(P)).                   (**)\n\nComputing the LHS of (**)  gives:\n\n```\nsage: EK.coleman_integral(-f.diff()*f,P,Q)\n2*5^2 + 2*5^3 + 2*5^4 + 5^6 + 5^7 + 4*5^8 + 2*5^10 + 3*5^11 + O(5^12)\n```\n\nComputing the RHS of (**) gives\n\n```\nsage: g = f^2\nsage: 1/2*(g(Q[0],Q[1])-g(P[0],P[1]))\n2*5^2 + 2*5^3 + 2*5^6 + 4*5^7 + 3*5^8 + 2*5^9 + 2*5^11 + O(5^12)\n```\n\nSo they're good up to 2 digits, but no more. The RHS is the correct one:\n\n```\nsage: f(Q[0],Q[1])*(f(Q[0],Q[1])-f(P[0],P[1])) -\n1/2*(g(Q[0],Q[1])-g(P[0],P[1])) ==\n1/2*EK.coleman_integral(-f.diff(),P,Q)^2\nTrue\n```\n\nThus the bug is with \n\n```\nEK.coleman_integral(-f0.diff()*f0,P,Q)\n```\n\nI looked at the code briefly, but at first glance, it doesn't look like the coercion into MonskyWashnitzerDifferentialRing changes much :\n\n```\nsage: EK.coleman_integral(-f0.diff()*f0,P,Q,True)         #skipping\nthe coercion step\n2*5^2 + 2*5^3 + 2*5^4 + 5^6 + 5^7 + 4*5^8 + 5^11 + O(5^12)\nsage: EK.coleman_integral(-f0.diff()*f0,P,Q,False)       #the usual\n2*5^2 + 2*5^3 + 2*5^4 + 5^6 + 5^7 + 4*5^8 + 2*5^10 + 3*5^11 + O(5^12)\n```\n\nSo maybe it's something with the reduction?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5948\n\n",
+    "closed_at": "2009-06-01T05:33:14Z",
     "created_at": "2009-04-30T15:12:20Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
-    "title": "Coleman integrals of df*f",
+    "title": "[with patch, positive review] Coleman integrals of df*f",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5948",
     "user": "https://github.com/jbalakrishnan"

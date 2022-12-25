@@ -1,16 +1,17 @@
-# Issue 1734: [with patch] variable jmol translucency
+# Issue 1734: [with patch, positive review] variable jmol translucency
 
 archive/issues_001734.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCurrently it has only two settings, opaque and translucent. This allows multiple alpha levels. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1734\n\n",
+    "closed_at": "2008-01-16T17:27:08Z",
     "created_at": "2008-01-09T09:56:32Z",
     "labels": [
         "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
-    "title": "[with patch] variable jmol translucency",
+    "title": "[with patch, positive review] variable jmol translucency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1734",
     "user": "https://github.com/robertwb"

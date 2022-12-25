@@ -1,16 +1,17 @@
-# Issue 6086: [with patch, needs review] fixed laplacian_matrix in graph.py
+# Issue 6086: [with patch, positive review] fixed laplacian_matrix in graph.py
 
 archive/issues_006086.json:
 ```json
 {
     "body": "Assignee: dperkinson\n\nCC:  ekirkman\n\nKeywords: kirchhoff laplacian matrix\n\nThe kirchhoff_matrix/laplacian_matrix did not handle graphs with loops correctly.\n\nThe patch fixes the bug and adds a doctest that fails without the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6086\n\n",
+    "closed_at": "2009-05-19T20:24:54Z",
     "created_at": "2009-05-19T19:51:13Z",
     "labels": [
         "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
-    "title": "[with patch, needs review] fixed laplacian_matrix in graph.py",
+    "title": "[with patch, positive review] fixed laplacian_matrix in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6086",
     "user": "https://trac.sagemath.org/admin/accounts/users/dperkinson"

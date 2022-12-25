@@ -4,6 +4,7 @@ archive/issues_007427.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @qed777\n\nI find myself lots of times needing an angle for input in an interact.  It would be cool to have a \"wheel\" widget like this:\n\nhttp://wiki.jqueryui.com/Wheel\n\nSee also http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7427\n\n",
+    "closed_at": "2017-07-04T14:27:48Z",
     "created_at": "2009-11-11T04:01:57Z",
     "labels": [
         "component: notebook"

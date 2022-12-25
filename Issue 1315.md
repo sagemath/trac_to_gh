@@ -1,23 +1,22 @@
-# Issue 1315: [graphs] find edge colorings of a graph
+# Issue 1315: graphs: find edge colorings of a graph
 
 archive/issues_001315.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1315\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1315\n\n",
+    "closed_at": "2009-10-18T14:48:26Z",
     "created_at": "2007-11-28T20:03:08Z",
     "labels": [
-        "component: combinatorics"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "[graphs] find edge colorings of a graph",
+    "title": "graphs: find edge colorings of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1315",
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @mwhansen
-
-Keywords: graphs
+Assignee: @rlmill
 
 
 

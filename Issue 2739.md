@@ -4,6 +4,7 @@ archive/issues_002739.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nFrom the thread 'benchmarking CAS' in newsgroup sci.math.symbolic\n\nSzH>\n\n```\nI am not a SAGE user, but the sagemath.org website created the\nimpression that SAGE is just some kind of front end to other\npackages.  I wanted to learn more about this system, but there is no\n\"About SAGE\" link on the front page and the FAQ is not very\ninformative.\n```\n\nand\n\n```\n\n> SAGE might be a useful program, but the current website is somehow not\n> convincing (and not informative) enough to persuade me to attempt a\n> 500 MB download of something that will only run on a linux system\n> running inside an emulator ...  Just compare it with e.g. the orders\n> of magnitude better Yacas website to see what I mean.\n\n```\n\nMe>\n\n```\nYou are right! There is no 'about Sage' page on the web site. \n```\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2739\n\n",
+    "closed_at": "2008-07-31T03:32:14Z",
     "created_at": "2008-03-31T15:50:14Z",
     "labels": [
         "component: website/wiki",

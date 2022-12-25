@@ -1,9 +1,10 @@
-# Issue 1683: sage -t cubegroup.py & stops instead of running in background
+# Issue 1683: [with workaround, needs proper patch] sage -t cubegroup.py & stops instead of running in background
 
 archive/issues_001683.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nWhen running sage -t cubegroup.py & (to run it in the background), the process is stopped.\n\nThis is caused by pexpect.sendeof() (called from rubik.py) calling termios.tcsetattr() on stdin which causes the process to be stopped with a SIGTTOU (=write to tty from a background process).\n\nThe pexpect.sendeof() function has been entirely changed in the current version of pexpect, and using that new sendeof() fixes this problem. So, updating to a newer pexpect (ticket #502) should fix this as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1683\n\n",
+    "closed_at": "2013-07-22T13:51:12Z",
     "created_at": "2008-01-04T22:38:30Z",
     "labels": [
         "component: interfaces",
@@ -11,7 +12,7 @@ archive/issues_001683.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
-    "title": "sage -t cubegroup.py & stops instead of running in background",
+    "title": "[with workaround, needs proper patch] sage -t cubegroup.py & stops instead of running in background",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1683",
     "user": "https://github.com/wjp"

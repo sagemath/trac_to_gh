@@ -1,16 +1,17 @@
-# Issue 8214: add better error message when symbolic expressions are called
+# Issue 8214: Remove callable symbolic expressions
 
 archive/issues_008214.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom sage-devel:\n\n```\nOn Sun, 7 Feb 2010 10:36:29 -0800 (PST)\nGustav Delius <gustav.delius@gmail.com> wrote:\n\n> I wonder whether it would be possible to give a better error message\n> when a user leaves out the multiplication operator in something like\n> x(x+1). Perhaps somthing like: \"Warning: you may have forgotten a\n> multiplication operator.\"\n> \n> Currently one gets the error message: \"DeprecationWarning:\n> Substitution using function-call syntax and unnamed arguments is\n> deprecated and will be removed from a future release of Sage; you can\n> use named arguments instead, like EXPR(x=...,y=...)\". This error\n> message is meaningful only to people who know the history of sage and\n> know that there used to be a confusing shorthand notation that allowed\n> something like x=a^2 to be interpreted as x(a)=a^2. I am glad that was\n> deprecated, but I think that the deprecation warning should be\n> preceeded by the warning about the possibility of a missing *.\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/de97f91d548cc0ec\n\nIncidentally, it's almost a year since this was deprecated, #5413. Maybe we can remove the deprecation message for good. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8214\n\n",
+    "body": "Assignee: @burcin\n\nFrom sage-devel:\n\n```\nOn Sun, 7 Feb 2010 10:36:29 -0800 (PST)\nGustav Delius <gustav.delius@gmail.com> wrote:\n\n> I wonder whether it would be possible to give a better error message\n> when a user leaves out the multiplication operator in something like\n> x(x+1). Perhaps somthing like: \"Warning: you may have forgotten a\n> multiplication operator.\"\n> \n> Currently one gets the error message: \"DeprecationWarning:\n> Substitution using function-call syntax and unnamed arguments is\n> deprecated and will be removed from a future release of Sage; you can\n> use named arguments instead, like EXPR(x=...,y=...)\". This error\n> message is meaningful only to people who know the history of sage and\n> know that there used to be a confusing shorthand notation that allowed\n> something like x=a^2 to be interpreted as x(a)=a^2. I am glad that was\n> deprecated, but I think that the deprecation warning should be\n> preceeded by the warning about the possibility of a missing *.\n```\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/de97f91d548cc0ec\n\nIncidentally, it's almost a year since this was deprecated, #5413. Maybe we can remove the deprecation message for good. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8214\n\n",
+    "closed_at": "2015-02-08T15:28:10Z",
     "created_at": "2010-02-08T13:36:24Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "add better error message when symbolic expressions are called",
+    "title": "Remove callable symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8214",
     "user": "https://github.com/burcin"
@@ -39,7 +40,6 @@ Gustav Delius <gustav.delius@gmail.com> wrote:
 > deprecated, but I think that the deprecation warning should be
 > preceeded by the warning about the possibility of a missing *.
 ```
-
 Here is the thread:
 
 http://groups.google.com/group/sage-devel/t/de97f91d548cc0ec

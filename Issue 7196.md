@@ -4,6 +4,7 @@ archive/issues_007196.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nReorganize `sagenb/data` around packages.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7196\n\n",
+    "closed_at": "2009-10-15T01:24:39Z",
     "created_at": "2009-10-12T17:16:48Z",
     "labels": [
         "component: notebook"

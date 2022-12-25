@@ -4,6 +4,7 @@ archive/issues_006398.json:
 ```json
 {
     "body": "Assignee: tbd\n\nAfter this last round of merging:\n\n```\nsage -t -long sage/schemes/elliptic_curves/sha_tate.py\n         [891.9 s]\n```\n\nThis is 15 minutes, and the second longest doctest takes just over 4 minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6398\n\n",
+    "closed_at": "2009-07-09T05:07:23Z",
     "created_at": "2009-06-24T19:31:44Z",
     "labels": [
         "component: doctest coverage",

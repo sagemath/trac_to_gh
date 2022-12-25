@@ -4,6 +4,7 @@ archive/issues_005835.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nSteps to reproduce:\n\n* Upload a file to a worksheet using the Data... menu\n* Click on the filename in the Data... menu\n* Click the link to delete the file.\n\nMy guess is that it deletes the file, but then tries to display it.  Instead, it should either go back to the worksheet view or to some list of all files in the DATA directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5835\n\n",
+    "closed_at": "2010-01-19T03:11:32Z",
     "created_at": "2009-04-20T17:09:44Z",
     "labels": [
         "component: notebook",

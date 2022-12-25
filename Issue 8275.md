@@ -4,6 +4,7 @@ archive/issues_008275.json:
 ```json
 {
     "body": "Assignee: tbd\n\nWe should upgrade to the latest released ecl version:\n\n          http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8275\n\n",
+    "closed_at": "2010-03-02T23:01:35Z",
     "created_at": "2010-02-15T18:45:00Z",
     "labels": [
         "component: packages: standard"

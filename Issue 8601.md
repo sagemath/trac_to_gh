@@ -3,7 +3,8 @@
 archive/issues_008601.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\n```\nOn Mar 24, 2010, at 10:35 AM, mb wrote:\n\nHi,\n\nThe following seems like strange behavior to me.\n\nIn [1]: V=VectorSpace(GF(2),2)\nIn [2]: V([1,3])\nOut[2]: (1, 1)\nIn [3]: V([1,-3])\nOut[3]: (1, 0)\n\nI would expect the last answer to be (1,1).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8601\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/f18b1f77ea5d529f):\n\n```\nOn Mar 24, 2010, at 10:35 AM, mb wrote:\n\nHi,\n\nThe following seems like strange behavior to me.\n\nIn [1]: V=VectorSpace(GF(2),2)\nIn [2]: V([1,3])\nOut[2]: (1, 1)\nIn [3]: V([1,-3])\nOut[3]: (1, 0)\n\nI would expect the last answer to be (1,1).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8601\n\n",
+    "closed_at": "2010-05-12T22:52:46Z",
     "created_at": "2010-03-24T17:47:43Z",
     "labels": [
         "component: linear algebra",
@@ -20,6 +21,8 @@ archive/issues_008601.json:
 Assignee: @williamstein
 
 CC:  @rbeezer
+
+From [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/f18b1f77ea5d529f):
 
 ```
 On Mar 24, 2010, at 10:35 AM, mb wrote:

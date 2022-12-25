@@ -1,16 +1,16 @@
-# Issue 3916: Make a %wiki cell mode for the notebook
+# Issue 3916: Make a %wiki (or %markdown or %rest) cell mode for the notebook
 
 archive/issues_003916.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  timothyclemans\n\nCurrently it seems that the only way to get nice text between cells is to do a %html cell or to edit the worksheet directly.  Either way, you have to write html code by hand.\n\nIt would be nice if there was a %wiki cell mode, like %html, but let you put in wiki markup which would then be converted to HTML to display.\n\nHere are some CREOLE parsers (with examples that convert to html):\n\n[http://creoleparser.googlepages.com/](http://creoleparser.googlepages.com/)\n\n[http://wiki.sheep.art.pl/Wiki%20Creole%20Parser%20in%20Python](http://wiki.sheep.art.pl/Wiki%20Creole%20Parser%20in%20Python)\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3916\n\n",
+    "closed_at": "2009-12-09T16:27:17Z",
     "created_at": "2008-08-20T20:36:08Z",
     "labels": [
-        "component: notebook",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "Make a %wiki cell mode for the notebook",
+    "title": "Make a %wiki (or %markdown or %rest) cell mode for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3916",
     "user": "https://github.com/jasongrout"

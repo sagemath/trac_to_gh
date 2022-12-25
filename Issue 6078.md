@@ -3,10 +3,12 @@
 archive/issues_006078.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe patches at #5954, #6037 and #6040 bring doctest coverage for quadratic forms up to 100%. In this patch series some functions were removed or renamed, so we should add compatibility functions.\n\nThese are the functions I propose we should handle:\n- count_modp__by_gauss_sum renamed to count_modp_solutions__by_Gauss_sum.\n- count_local_type was renamed to count_congruence_solutions.\n- count_local_good_type was renamed to count_congruence_solutions__good_type.\n- count_local_zero_type was renamed to count_congruence_solutions__zero_type. \n- count_local_bad_type was renamed to count_congruence_solutions__bad_type. \n- count_local_bad_typeI was renamed to count_congruence_solutions__bad_type_I. \n- count_local_bad_typeII was renamed to count_congruence_solutions__bad_type_II.\n- GHY_mass_maximal was renamed to GHY_mass__maximal.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6078\n\n",
+    "body": "Assignee: justin\n\nThe patches at #5954, #6037 and #6040 bring doctest coverage for quadratic forms up to 100%. In this patch series some functions were removed or renamed, so we should add compatibility functions.\n\nThese are the functions I propose we should handle:\n- `count_modp__by_gauss_sum` renamed to `count_modp_solutions__by_Gauss_sum`.\n- `count_local_type` was renamed to `count_congruence_solutions`.\n- `count_local_good_type` was renamed to `count_congruence_solutions__good_type`.\n- `count_local_zero_type` was renamed to `count_congruence_solutions__zero_type`. \n- `count_local_bad_type` was renamed to `count_congruence_solutions__bad_type`. \n- `count_local_bad_typeI` was renamed to `count_congruence_solutions__bad_type_I`. \n- `count_local_bad_typeII` was renamed to `count_congruence_solutions__bad_type_II`.\n- `GHY_mass_maximal` was renamed to `GHY_mass__maximal`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6078\n\n",
+    "closed_at": "2009-06-15T23:31:12Z",
     "created_at": "2009-05-19T00:53:35Z",
     "labels": [
-        "component: algebra",
+        "component: quadratic forms",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
@@ -16,19 +18,19 @@ archive/issues_006078.json:
     "user": "https://github.com/tornaria"
 }
 ```
-Assignee: tbd
+Assignee: justin
 
 The patches at #5954, #6037 and #6040 bring doctest coverage for quadratic forms up to 100%. In this patch series some functions were removed or renamed, so we should add compatibility functions.
 
 These are the functions I propose we should handle:
-- count_modp__by_gauss_sum renamed to count_modp_solutions__by_Gauss_sum.
-- count_local_type was renamed to count_congruence_solutions.
-- count_local_good_type was renamed to count_congruence_solutions__good_type.
-- count_local_zero_type was renamed to count_congruence_solutions__zero_type. 
-- count_local_bad_type was renamed to count_congruence_solutions__bad_type. 
-- count_local_bad_typeI was renamed to count_congruence_solutions__bad_type_I. 
-- count_local_bad_typeII was renamed to count_congruence_solutions__bad_type_II.
-- GHY_mass_maximal was renamed to GHY_mass__maximal.
+- `count_modp__by_gauss_sum` renamed to `count_modp_solutions__by_Gauss_sum`.
+- `count_local_type` was renamed to `count_congruence_solutions`.
+- `count_local_good_type` was renamed to `count_congruence_solutions__good_type`.
+- `count_local_zero_type` was renamed to `count_congruence_solutions__zero_type`. 
+- `count_local_bad_type` was renamed to `count_congruence_solutions__bad_type`. 
+- `count_local_bad_typeI` was renamed to `count_congruence_solutions__bad_type_I`. 
+- `count_local_bad_typeII` was renamed to `count_congruence_solutions__bad_type_II`.
+- `GHY_mass_maximal` was renamed to `GHY_mass__maximal`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6078
 

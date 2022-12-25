@@ -1,26 +1,25 @@
-# Issue 3849: notebook -- Internal Server Error given when input to File upload or Data attachment is invalid
+# Issue 3849: notebook --get rid of internal server errors when uploading a worksheet
 
 archive/issues_003849.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n(1) In Google Docs if one fills in both \"Browse your computer ...\" and \"Or enter the url of a ...\", the server just deals with the first input box. The Notebook instead deals with the second. Do what Google does.\n\n(2) Google uses JavaScript alert boxes to report errors. The Notebook just gives a \"Internal Server Error.\" The Notebook should do inline error reporting just as is done on the Registration page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3849\n\n",
+    "body": "Assignee: TimothyClemans\n\nIf you upload a worksheet that doesn't exist or leave the worksheet upload page blank, or enter an invalid url, there are currently internal server errors. Fix this.  See also the related #7495 for the same problem for uploading data (where there is also a critical security vulnerability). \n\nIssue created by migration from https://trac.sagemath.org/ticket/3849\n\n",
+    "closed_at": "2009-12-08T05:29:34Z",
     "created_at": "2008-08-14T12:54:59Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
-    "title": "notebook -- Internal Server Error given when input to File upload or Data attachment is invalid",
+    "title": "notebook --get rid of internal server errors when uploading a worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3849",
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-Assignee: boothby
+Assignee: TimothyClemans
 
-(1) In Google Docs if one fills in both "Browse your computer ..." and "Or enter the url of a ...", the server just deals with the first input box. The Notebook instead deals with the second. Do what Google does.
-
-(2) Google uses JavaScript alert boxes to report errors. The Notebook just gives a "Internal Server Error." The Notebook should do inline error reporting just as is done on the Registration page.
+If you upload a worksheet that doesn't exist or leave the worksheet upload page blank, or enter an invalid url, there are currently internal server errors. Fix this.  See also the related #7495 for the same problem for uploading data (where there is also a critical security vulnerability). 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3849
 

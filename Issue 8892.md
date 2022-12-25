@@ -3,7 +3,8 @@
 archive/issues_008892.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nHello everybody !!!\n\nI noticed working on something quite different that many doctests were failing in Sage's graph library because of the recent update of NetworkX... The reason is easy : the default edge label is not \"None\" anymore but {}. Besides, dictionary are not hashable !!!\n\nThis patch fixes it ! \n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8892\n\n",
+    "body": "Assignee: @nathanncohen\n\nHello everybody !!!\n\nI noticed working on something quite different that many doctests were failing in Sage's graph library because of the recent update of NetworkX... The reason is easy : the default edge label is not \"None\" anymore but {}. Besides, dictionary are not hashable !!!\n\nThis patch fixes it ! \n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8892\n\n",
+    "closed_at": "2010-05-12T22:48:50Z",
     "created_at": "2010-05-05T17:44:26Z",
     "labels": [
         "component: graph theory",
@@ -16,7 +17,7 @@ archive/issues_008892.json:
     "user": "https://github.com/nathanncohen"
 }
 ```
-Assignee: jason, ncohen, rlm
+Assignee: @nathanncohen
 
 Hello everybody !!!
 

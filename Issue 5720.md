@@ -1,16 +1,17 @@
-# Issue 5720: [with patch, needs review] notebook -- new worksheets open in new page/tab
+# Issue 5720: [with patch, positive review] notebook -- new worksheets open in new page/tab
 
 archive/issues_005720.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nAlong the lines of #5681: this patch makes the \"new worksheet\" button open up in a new tab.\n\nNote that the new system with this patch (or even just with #5681) is not perfect: if you open up a worksheet, work for a while, then hit \"Save & Quit\" or \"Discard & Quit\", you now have two tabs open listing your active worksheets.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5720\n\n",
+    "closed_at": "2009-04-09T21:22:33Z",
     "created_at": "2009-04-08T22:51:51Z",
     "labels": [
         "component: notebook",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "[with patch, needs review] notebook -- new worksheets open in new page/tab",
+    "title": "[with patch, positive review] notebook -- new worksheets open in new page/tab",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5720",
     "user": "https://github.com/jhpalmieri"

@@ -4,6 +4,7 @@ archive/issues_008173.json:
 ```json
 {
     "body": "Assignee: @malb\n\nCC:  polybori\n\nKeywords: singular\n\nOn 4.3.2.alpha2:\n\n```\nsage: R.<x,y,a,b,u>=PolynomialRing(ZZ, 5)\nsage: r = (x^4*y^2+x^2*y-y).resultant(x*y-y*a-x*b+a*b+u,x)\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0xb7d8b8c0 (LWP 28007)]\n0xb72844c5 in __gmpn_copyi ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\nCurrent language:  auto; currently asm\n(gdb) bt\n#0  0xb72844c5 in __gmpn_copyi ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\n#1  0xb72647f2 in __gmpz_init_set ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\n#2  0x00000005 in ?? ()\n#3  0xbfe225b8 in ?? ()\n#4  0xbfe225f8 in ?? ()\n#5  0xb3d7fcb5 in conv_SingPFactoryP (p=0xb3efa4a0, r=0xb3db7980)\n    at clapconv.cc:143\nBacktrace stopped: previous frame inner to this frame (corrupt stack?)\n```\n\nSage calls `singclap_resultant()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8173\n\n",
+    "closed_at": "2010-07-21T01:45:02Z",
     "created_at": "2010-02-03T13:40:53Z",
     "labels": [
         "component: commutative algebra",

@@ -1,9 +1,10 @@
-# Issue 2124: [with patch, needs review] minor bug in f.root_field()
+# Issue 2124: [with patch, positive review] minor bug in f.root_field()
 
 archive/issues_002124.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nf.root_field() currently does is_IntegralDomain(f.parent()) instead of f.parent().is_integral_domain(), which is bad. The attached patch fixes it.\n\nBefore:\n\n```\nsage: R.<x> = PolynomialRing(Integers(31))\n\nsage: h = x+5\n\nsage: h.root_field('a')\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/Users/craigcitro/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.root_field()\n\n<type 'exceptions.ValueError'>: the base ring must be a domain\n\nsage: h.base_ring()\n Ring of integers modulo 31\n```\n\nAfter:\n\n```\nsage: R.<x> = PolynomialRing(Integers(31))\n\nsage: h = x+5\n\nsage: h.root_field('a')\n Ring of integers modulo 31\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2124\n\n",
+    "closed_at": "2008-02-10T00:58:23Z",
     "created_at": "2008-02-09T05:15:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -11,7 +12,7 @@ archive/issues_002124.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] minor bug in f.root_field()",
+    "title": "[with patch, positive review] minor bug in f.root_field()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2124",
     "user": "https://github.com/craigcitro"

@@ -3,7 +3,8 @@
 archive/issues_009362.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  brunellus\n\nThe following indicates to me a huge problem:\n\n```\nsage: G = Graph()\nsage: G.add_edge(None, 1)\nsage: G.show()\n```\n\nthe resulting plot has three vertices, one blank, one labeled \"1\" and the other labeled \"None\".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.\n\nThis indicates to me that we should not accept \"None\" as a valid vertex label.\n\nOther places where a vertex labeled None will obviously cause problems:\n\n`spanning_trees_count`, `add_vertex`, `add_edge`, `delete_edge`, `has_edge`, `edge_label`, `eccentricity`, `layout_tree`\n\nthis is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9362\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  brunellus\n\nKeywords: sd35.5\n\nThe following indicates to me a huge problem:\n\n```\nsage: G = Graph()\nsage: G.add_edge(None, 1)\nsage: G.show()\n```\n\nthe resulting plot has three vertices, one blank, one labeled \"1\" and the other labeled \"None\".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.\n\nOther places where a vertex labeled None will obviously cause problems:\n\n`spanning_trees_count`, `add_vertex`, `add_edge`, `delete_edge`, `has_edge`, `edge_label`, `eccentricity`, `layout_tree`\n\nthis is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).\n\nThis indicates to me that we should not accept \"None\" as a valid vertex label.\n\nApply [attachment:trac_9362_None_is_no_name.2.patch] only.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9362\n\n",
+    "closed_at": "2012-02-22T10:44:08Z",
     "created_at": "2010-06-28T19:27:02Z",
     "labels": [
         "component: graph theory",
@@ -20,6 +21,8 @@ Assignee: jason, mvngu, ncohen, rlm
 
 CC:  brunellus
 
+Keywords: sd35.5
+
 The following indicates to me a huge problem:
 
 ```
@@ -30,13 +33,15 @@ sage: G.show()
 
 the resulting plot has three vertices, one blank, one labeled "1" and the other labeled "None".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.
 
-This indicates to me that we should not accept "None" as a valid vertex label.
-
 Other places where a vertex labeled None will obviously cause problems:
 
 `spanning_trees_count`, `add_vertex`, `add_edge`, `delete_edge`, `has_edge`, `edge_label`, `eccentricity`, `layout_tree`
 
 this is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).
+
+This indicates to me that we should not accept "None" as a valid vertex label.
+
+Apply [attachment:trac_9362_None_is_no_name.2.patch] only.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9362
 

@@ -1,9 +1,10 @@
-# Issue 4125: Build breaks entirely or pulls in non-standard libraries with fink and macports
+# Issue 4125: [with patch, postitve review] Build breaks entirely or pulls in non-standard libraries with fink and macports
 
 archive/issues_004125.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  dphilp\n\nThe Sage build process pulls in non-standard libraries if they are easily found.  Fink and MacPorts have a habit of making their libraries easily found, because they fiddle with $PATH, etc.  This sometimes means that the build fails, or works, but the resulting product is broken.  \n\nThe fix is simple: move /sw and /opt/local during the build process.  However, this is not at all obvious the first time.  This script runs a simple test to check whether fink or ports are likely to interfere, and gives a useful error message.\n\n```/bin/bash\n\n# Try to find ports automatically.\nPORTS_PATH=`which port`\n\n# Try to find fink automatically.\nFINK_PATH=`which fink`\n\nif [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ] ; then\n  echo \"Found either MacPorts or Fink in your path, which often prevents Sage from compiling.\"\n  if [ \"$SAGE_COMPILE_DESPITE_PORTS_AND_FINK\" ] ; then\n    echo \"Continuing because SAGE_COMPILE_DESPITE_PORTS_AND_FINK is set.\"\n  else\n    echo \"If you want to want to compile, you should rename /opt/local and /sw\"\n    echo \"during the build process.  (Once Sage is built, you can move them to\"\n    echo \"their original location.)\"\n    exit 1\n  fi\nfi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4125\n\n",
+    "closed_at": "2008-10-07T11:56:46Z",
     "created_at": "2008-09-15T01:53:19Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004125.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Build breaks entirely or pulls in non-standard libraries with fink and macports",
+    "title": "[with patch, postitve review] Build breaks entirely or pulls in non-standard libraries with fink and macports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4125",
     "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"

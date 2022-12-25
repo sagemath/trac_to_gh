@@ -1,15 +1,16 @@
-# Issue 4859: basic covering design module
+# Issue 4859: [with patch, positive review] basic covering design module
 
 archive/issues_004859.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI maintain a database of covering designs (k-subsets of a v-set such that all t-sets are\nin at least one of the k-sets) at http://www.ccrwest.org/cover.html.  This patch implements\ncovering designs in Sage using the IncidenceStructure class, and allows a user to get coverings\nfrom the website.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4859\n\n",
+    "closed_at": "2009-01-28T13:02:47Z",
     "created_at": "2008-12-23T17:18:59Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "basic covering design module",
+    "title": "[with patch, positive review] basic covering design module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4859",
     "user": "https://trac.sagemath.org/admin/accounts/users/dgordon"

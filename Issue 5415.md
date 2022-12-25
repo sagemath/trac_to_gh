@@ -1,26 +1,40 @@
-# Issue 5415: wrong definition of multifactorial?
+# Issue 5415: problems with multifactorial?
 
 archive/issues_005415.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nThe multifactorial method on integers is different than the one at http://mathworld.wolfram.com/Multifactorial.html and http://www.research.att.com/~njas/sequences/A007661; unless there are multiple competing definitions of multifactorial, this is a bug.\n\n(The references give, for example, (5).multifactorial(3) == 10, whereas Sage currently returns 5.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5415\n\n",
+    "body": "Assignee: iconjack\n\nThe multifactorial method on integers is different than the one at http://mathworld.wolfram.com/Multifactorial.html and http://www.research.att.com/~njas/sequences/A007661; unless there are multiple competing definitions of multifactorial, this is a bug.\n\n(The references give, for example, (5).multifactorial(3) == 10, whereas Sage currently returns 5.)\n\nThere are further problems: k is assumed to be a C-int. Hence,\n\n```\nsage: a=2^64\nsage: a.multifactorial(a)\n```\ndoesn't work, whereas the appropriate value, a, would be no problem to represent.\n\nHow badly do people need these numbers? for which ranges should the computation be optimized? The current implementation can easily be adjusted to give answers that agree with the definition elsewhere, fairly efficiently, for ranges where k fits easily in a \"long\".\n\nIndeed, the current implementation refuses to compute the multifactorial if n itself doesn't fit in a long. The claim in the current error message, \"This is probably OK, since the answer would have billions of digits.\" is not quite true: if the number of digits is about (n/k) times the number of digits in n, so as long as n/k isn't too large, there isn't really an issue. It may well be that applications of multifactorial never venture in those ranges, though.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5415\n\n",
+    "closed_at": "2017-05-27T23:42:49Z",
     "created_at": "2009-03-01T22:56:37Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
-    "title": "wrong definition of multifactorial?",
+    "title": "problems with multifactorial?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5415",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
-Assignee: @robertwb
+Assignee: iconjack
 
 The multifactorial method on integers is different than the one at http://mathworld.wolfram.com/Multifactorial.html and http://www.research.att.com/~njas/sequences/A007661; unless there are multiple competing definitions of multifactorial, this is a bug.
 
 (The references give, for example, (5).multifactorial(3) == 10, whereas Sage currently returns 5.)
+
+There are further problems: k is assumed to be a C-int. Hence,
+
+```
+sage: a=2^64
+sage: a.multifactorial(a)
+```
+doesn't work, whereas the appropriate value, a, would be no problem to represent.
+
+How badly do people need these numbers? for which ranges should the computation be optimized? The current implementation can easily be adjusted to give answers that agree with the definition elsewhere, fairly efficiently, for ranges where k fits easily in a "long".
+
+Indeed, the current implementation refuses to compute the multifactorial if n itself doesn't fit in a long. The claim in the current error message, "This is probably OK, since the answer would have billions of digits." is not quite true: if the number of digits is about (n/k) times the number of digits in n, so as long as n/k isn't too large, there isn't really an issue. It may well be that applications of multifactorial never venture in those ranges, though.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5415
 

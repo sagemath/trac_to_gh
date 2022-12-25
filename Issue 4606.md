@@ -3,10 +3,11 @@
 archive/issues_004606.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @craigcitro @categorie\n\nMake it so one can do:\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0); A\nFractional ideal class (2, -1/2*a)\nsage: L = e.lseries_gross_zagier(A)  \nsage: L(2)\n0\nsage: L.taylor_series(2,5)\nnobody has seen this!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4606\n\n",
+    "body": "CC:  @williamstein @craigcitro @categorie\n\nMake it so one can do:\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0); A\nFractional ideal class (2, -1/2*a)\nsage: L = e.lseries_gross_zagier(A)  \nsage: L(1)\n0.000000000000000\nsage: L.taylor_series(1,5)\n0.000000000000000 - 5.51899839494458*z + 13.6297841350649*z^2 - 16.2292417817675*z^3 + 7.94788823722712*z^4 + O(z^5)\n```\nnobody had seen this!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4606\n\n",
+    "closed_at": "2015-06-29T22:31:25Z",
     "created_at": "2008-11-24T22:59:03Z",
     "labels": [
-        "component: number theory"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "elliptic curves -- implement gross-Zagier L-functions",
@@ -15,8 +16,6 @@ archive/issues_004606.json:
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @williamstein
-
 CC:  @williamstein @craigcitro @categorie
 
 Make it so one can do:
@@ -27,11 +26,12 @@ sage: K.<a> = QuadraticField(-40)
 sage: A = K.class_group().gen(0); A
 Fractional ideal class (2, -1/2*a)
 sage: L = e.lseries_gross_zagier(A)  
-sage: L(2)
-0
-sage: L.taylor_series(2,5)
-nobody has seen this!
+sage: L(1)
+0.000000000000000
+sage: L.taylor_series(1,5)
+0.000000000000000 - 5.51899839494458*z + 13.6297841350649*z^2 - 16.2292417817675*z^3 + 7.94788823722712*z^4 + O(z^5)
 ```
+nobody had seen this!
 
 Issue created by migration from https://trac.sagemath.org/ticket/4606
 

@@ -6,7 +6,7 @@ archive/issues_007300.json:
     "body": "Assignee: jkantor\n\nIt is often useful when solving linear programs to see which constraints are tight.... And so there should be a way to do it in Sage !!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7300\n\n",
     "created_at": "2009-10-25T19:42:04Z",
     "labels": [
-        "component: numerical"
+        "component: linear programming"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Display tight constraints",

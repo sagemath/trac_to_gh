@@ -1,15 +1,16 @@
-# Issue 4119: [with patch, needs review] doctests + fixes for SymbolicData interface
+# Issue 4119: [with patch, positive review] doctests + fixes for SymbolicData interface
 
 archive/issues_004119.json:
 ```json
 {
     "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4119\n\n",
+    "closed_at": "2008-09-15T01:54:12Z",
     "created_at": "2008-09-14T16:07:41Z",
     "labels": [
         "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "[with patch, needs review] doctests + fixes for SymbolicData interface",
+    "title": "[with patch, positive review] doctests + fixes for SymbolicData interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4119",
     "user": "https://github.com/malb"

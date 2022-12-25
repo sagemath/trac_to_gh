@@ -1,9 +1,10 @@
-# Issue 1561: [with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.
+# Issue 1561: [with patch, positive review] add ._matrix_() and .transpose() to vector/FreeModuleElement.
 
 archive/issues_001561.json:
 ```json
 {
     "body": "Assignee: @malb\n\nKeywords: matrix vector transpose FreeModuleElement\n\nThis makes `matrix(vector(2, 3, 4))` and `transpose(vector(2, 3, 4))` work -- very handy when translating PARI code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1561\n\n",
+    "closed_at": "2007-12-21T22:37:48Z",
     "created_at": "2007-12-18T19:36:47Z",
     "labels": [
         "component: commutative algebra",
@@ -11,7 +12,7 @@ archive/issues_001561.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
-    "title": "[with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.",
+    "title": "[with patch, positive review] add ._matrix_() and .transpose() to vector/FreeModuleElement.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1561",
     "user": "https://github.com/ncalexan"

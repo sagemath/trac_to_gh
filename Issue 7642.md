@@ -3,7 +3,7 @@
 archive/issues_007642.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: lca suffix_tree\n\nI have implemented the linear time preprocessing, constant-time queries algorithm for the lowest common ancestor (LCA) in the context of the suffix trees for words.\n\nThe only thing I'm not very sure about is where to place the bit manipulation functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7642\n\n",
+    "body": "Keywords: lca suffix_tree\n\nI have implemented the linear time preprocessing, constant-time queries algorithm for the lowest common ancestor (LCA) in the context of the suffix trees for words.\n\nThe only thing I'm not very sure about is where to place the bit manipulation functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7642\n\n",
     "created_at": "2009-12-09T18:43:15Z",
     "labels": [
         "component: combinatorics"
@@ -14,8 +14,6 @@ archive/issues_007642.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
-Assignee: sage-combinat
-
 Keywords: lca suffix_tree
 
 I have implemented the linear time preprocessing, constant-time queries algorithm for the lowest common ancestor (LCA) in the context of the suffix trees for words.

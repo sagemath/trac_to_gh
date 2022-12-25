@@ -1,22 +1,23 @@
-# Issue 2775: multivariate factoring over some rings gives incorrect results
+# Issue 2775: [with patch, positive review] multivariate factoring over some rings gives incorrect results
 
 archive/issues_002775.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis example is from Genya Zaytman:\n\n```\nsage: version()\n'SAGE Version sage-2.11, Release Date: 2008-03-30'\nsage: q = 1073741789\nsage: T.<aa, bb> = PolynomialRing(GF(q))\nsage: f = aa^2 + 12124343*bb*aa + 32434598*bb^2; f\naa^2 + 12124343*aa*bb + 32434598*bb^2\nsage: f.factor()\n(32434598) * (16373350*aa^2 + 437239695*aa*bb + bb^2)\nsage: g = (32434598) * (16373350*aa^2 + 437239695*aa*bb + bb^2); g\naa^2 - 49344938*aa*bb + 32434598*bb^2\nsage: f == g\nFalse\n```\n\nMichael Abshoff reports that this is a bug in Singular itself.\n\nSee also\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bb040b4580b44184\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2775\n\n",
+    "body": "Assignee: tbd\n\nThis example is from Genya Zaytman:\n\n```\nsage: version()\n'SAGE Version sage-2.11, Release Date: 2008-03-30'\nsage: q = 1073741789\nsage: T.<aa, bb> = PolynomialRing(GF(q))\nsage: f = aa^2 + 12124343*bb*aa + 32434598*bb^2; f\naa^2 + 12124343*aa*bb + 32434598*bb^2\nsage: f.factor()\n(32434598) * (16373350*aa^2 + 437239695*aa*bb + bb^2)\nsage: g = (32434598) * (16373350*aa^2 + 437239695*aa*bb + bb^2); g\naa^2 - 49344938*aa*bb + 32434598*bb^2\nsage: f == g\nFalse\n```\n\nMichael Abshoff reports that this is a bug in Singular itself.\n\nSee also\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bb040b4580b44184\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2775\n\n",
+    "closed_at": "2008-04-06T03:09:36Z",
     "created_at": "2008-04-02T16:16:26Z",
     "labels": [
-        "component: basic arithmetic",
+        "component: factorization",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "multivariate factoring over some rings gives incorrect results",
+    "title": "[with patch, positive review] multivariate factoring over some rings gives incorrect results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2775",
     "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
-Assignee: somebody
+Assignee: tbd
 
 This example is from Genya Zaytman:
 

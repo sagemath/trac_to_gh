@@ -4,6 +4,7 @@ archive/issues_007248.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nI'm not sure whether this is an upgrade or a new spkg, but the plan is to switch the notebook to Jinja2, which will require updating/replacing the current Jinja spkg.\n\nJohn Palmieri has a proposed spkg at #6586.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7248\n\n",
+    "closed_at": "2009-10-20T05:32:51Z",
     "created_at": "2009-10-19T08:42:29Z",
     "labels": [
         "component: notebook"

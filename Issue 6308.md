@@ -1,9 +1,10 @@
-# Issue 6308: [with spkg, needs review] Fix scipy spkg to play nicely with gfortran and g95
+# Issue 6308: [with spkg, positive review] Fix scipy spkg to play nicely with gfortran and g95
 
 archive/issues_006308.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor wstein\n\nKeywords: scipy\n\nThe new `scipy-0.7.spkg` from #3391 is great -- except that it accidentally forgets to include a fix to `scipy.optimize.optimize` if `gfortran` is used instead of `g95`. There's a new spkg up that fixes that here: \n\n  http://sage.math.washington.edu/scratch/craigcitro/patches/scipy-0.7.p1.spkg \n\nIndeed, I spoke with Jason Grout, and he confirmed that the new `optimize.py` should be patched in regardless of what fortran compiler we use.\n\nI'm adding a few potential reviewers to the cc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6308\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor wstein\n\nKeywords: scipy\n\nThe new `scipy-0.7.spkg` from #3391 is great -- except that it accidentally forgets to include a fix to `scipy.optimize.optimize` if `gfortran` is used instead of `g95`. There's a new spkg up that fixes that here (on sage.math):\n\n  /scratch/craigcitro/patches/scipy-0.7.p1.spkg \n\nIndeed, I spoke with Jason Grout, and he confirmed that the new `optimize.py` should be patched in regardless of what fortran compiler we use.\n\nI'm adding a few potential reviewers to the cc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6308\n\n",
+    "closed_at": "2009-06-18T02:06:57Z",
     "created_at": "2009-06-16T06:32:32Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_006308.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "[with spkg, needs review] Fix scipy spkg to play nicely with gfortran and g95",
+    "title": "[with spkg, positive review] Fix scipy spkg to play nicely with gfortran and g95",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6308",
     "user": "https://github.com/craigcitro"
@@ -23,13 +24,13 @@ CC:  @jasongrout jkantor wstein
 
 Keywords: scipy
 
-The new `scipy-0.7.spkg` from #3391 is great -- except that it accidentally forgets to include a fix to `scipy.optimize.optimize` if `gfortran` is used instead of `g95`. There's a new spkg up that fixes that here: 
+The new `scipy-0.7.spkg` from #3391 is great -- except that it accidentally forgets to include a fix to `scipy.optimize.optimize` if `gfortran` is used instead of `g95`. There's a new spkg up that fixes that here (on sage.math):
 
-  http://sage.math.washington.edu/scratch/craigcitro/patches/scipy-0.7.p1.spkg 
+  /scratch/craigcitro/patches/scipy-0.7.p1.spkg 
 
 Indeed, I spoke with Jason Grout, and he confirmed that the new `optimize.py` should be patched in regardless of what fortran compiler we use.
 
-I'm adding a few potential reviewers to the cc.
+I'm adding a few potential reviewers to the cc. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6308
 

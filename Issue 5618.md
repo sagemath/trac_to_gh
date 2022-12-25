@@ -1,16 +1,17 @@
-# Issue 5618: Cyclotomic field elements are not convert to Gap correctly.
+# Issue 5618: Cyclotomic field elements are not converted to Gap correctly
 
 archive/issues_005618.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  joyner\n\nAlthough this works:\n\n```\nsage: K = CyclotomicField(3)\nsage: z = K.an_element(); z\nzeta3\nsage: gap(z)\nzeta3\n```\nthe resulting gap element doesn't have the correct properties:\n\n```\nsage: K(gap.E(3)) == z  # Good!\nTrue\nsage: gap(K(gap.E(3))) == gap.E(3)  # Bad!\nFalse\n```\n\nThis causes the following problem with group characters.\n\n```\nsage: H = AlternatingGroup(4)\nsage: g = H.list()[1]\nsage: K = H.subgroup([g])\nsage: z = CyclotomicField(3).an_element(); z\nsage: c = K.character([1,z,z**2])\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `CONDUCTOR' on 1 arguments\n```\nNote: the above works if one takes z = gap.E(3).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5618\n\n",
+    "body": "Assignee: tbd\n\nCC:  joyner\n\nKeywords: gap interface cyclotomic field\n\nAlthough this works:\n\n```\nsage: K = CyclotomicField(3)\nsage: z = K.an_element(); z\nzeta3\nsage: gap(z)\nzeta3\n```\nthe resulting gap element doesn't have the correct properties:\n\n```\nsage: K(gap.E(3)) == z  # Good!\nTrue\nsage: gap(K(gap.E(3))) == gap.E(3)  # Bad!\nFalse\n```\n\nThis causes the following problem with group characters.\n\n```\nsage: H = AlternatingGroup(4)\nsage: g = H.list()[1]\nsage: K = H.subgroup([g])\nsage: z = CyclotomicField(3).an_element(); z\nsage: c = K.character([1,z,z**2])\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `CONDUCTOR' on 1 arguments\n```\nNote: the above works if one takes z = gap.E(3).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5618\n\n",
+    "closed_at": "2011-01-25T08:13:50Z",
     "created_at": "2009-03-26T19:40:53Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "Cyclotomic field elements are not convert to Gap correctly.",
+    "title": "Cyclotomic field elements are not converted to Gap correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5618",
     "user": "https://github.com/saliola"
@@ -19,6 +20,8 @@ archive/issues_005618.json:
 Assignee: tbd
 
 CC:  joyner
+
+Keywords: gap interface cyclotomic field
 
 Although this works:
 

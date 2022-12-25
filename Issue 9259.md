@@ -4,6 +4,7 @@ archive/issues_009259.json:
 ```json
 {
     "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nKeywords: CombinatorialClass map\n\nThe markup ``\\{f(x) x in self\\}`` looks bad in the html doc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9259\n\n",
+    "closed_at": "2010-07-21T10:10:55Z",
     "created_at": "2010-06-18T09:30:12Z",
     "labels": [
         "component: documentation",

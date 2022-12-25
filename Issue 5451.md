@@ -1,16 +1,17 @@
-# Issue 5451: Bug in addition of rational functions over a finite field
+# Issue 5451: [with patch, positive review] Bug in addition of rational functions over a finite field
 
 archive/issues_005451.json:
 ```json
 {
     "body": "Assignee: tbd\n\nKeywords: rational function addition\n\nAlex Lara reported on sage-support on 20090307:\n\n```\nI recently upgrade sage from 3.2.3 to 3.3. I'm also have sage 3.1.1\nThe thing is that the following commands give different results:\n\nF.<theta>=FiniteField(9)\nA.<t> = PolynomialRing(F)\nK.<t> = FractionField(A)\nf= 2/(t^2+2*t); g =t^9/(t^18 + t^10 + t^2);f+g\n\nIn 3.1.1 gives the right answer (I guess) but in 3.2.3 give an error:\n\nZeroDivisionError                         Traceback (most recent call\nlast)\n...\nZeroDivisionError: division by zero in finite field.\n```\n\nIn more detail that traceback is\n\n```\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/30503/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.__add__ (sage/structure/element.c:5746)()\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement._add_ (sage/rings/fraction_field_element.c:3975)()\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.PrincipalIdealDomainElement.gcd (sage/structure/element.c:11697)()\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in _gcd(self, other)\n    558         Return the GCD of self and other, as a monic polynomial.\n    559         \"\"\"\n--> 560         g = EuclideanDomainElement._gcd(self, other)\n    561         c = g.leading_coefficient()\n    562         if c.is_unit():\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.EuclideanDomainElement._gcd (sage/structure/element.c:11939)()\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in quo_rem(self, other)\n    542         Q = P.zero_element()\n    543         while R.degree() >= B.degree():\n--> 544             aaa = R.leading_coefficient()/B.leading_coefficient()\n    545             diff_deg=R.degree()-B.degree()\n    546             Q += P(aaa).shift(diff_deg)\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9099)()\n\n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaroElement._div_ (sage/rings/finite_field_givaro.cpp:9661)()\n\nZeroDivisionError: division by zero in finite field.\n```\n\nwhich shows that somewhere in a gcd computation, a leading coefficient of 0 is being returned.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5451\n\n",
+    "closed_at": "2009-03-25T23:01:45Z",
     "created_at": "2009-03-07T14:35:16Z",
     "labels": [
         "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
-    "title": "Bug in addition of rational functions over a finite field",
+    "title": "[with patch, positive review] Bug in addition of rational functions over a finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5451",
     "user": "https://github.com/JohnCremona"

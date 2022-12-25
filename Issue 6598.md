@@ -4,6 +4,7 @@ archive/issues_006598.json:
 ```json
 {
     "body": "Assignee: tbd\n\nCC:  @dimpase @jhpalmieri\n\n```\n> Nonetheless, we should be checking the error code after every line\n> executes, one way or another.  Is there a way to automatically do this\n> in bash?\n\n\"set -e\" should do it.\n\nGoogle brings up this page, besides lots of others:\n\nhttp://www.davidpashley.com/articles/writing-robust-shell-scripts.html\n\n\nCheers,\nBurcin\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6598\n\n",
+    "closed_at": "2020-10-04T07:53:46Z",
     "created_at": "2009-07-23T09:46:34Z",
     "labels": [
         "component: build",

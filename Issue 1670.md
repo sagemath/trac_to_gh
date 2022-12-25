@@ -4,6 +4,7 @@ archive/issues_001670.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nHi,\n\nThis is the latest 3d bundle.\n\nThere will still be some doctest failures in 3d -- just put nodoctest in the files.\n\nThis can be included in Sage, but much work remains before it is released. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1670\n\n",
+    "closed_at": "2008-01-04T11:15:12Z",
     "created_at": "2008-01-03T16:06:53Z",
     "labels": [
         "component: graphics",

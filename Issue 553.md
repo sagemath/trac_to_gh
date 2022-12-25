@@ -1,22 +1,22 @@
-# Issue 553: calling of symbolic expressions is sometimes ridiculous
+# Issue 553: [with patch, positive review] calling of symbolic expressions is sometimes ridiculous
 
 archive/issues_000553.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
+    "body": "Assignee: @mwhansen\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
+    "closed_at": "2007-12-15T11:26:45Z",
     "created_at": "2007-09-01T17:22:55Z",
     "labels": [
-        "component: calculus",
-        "bug"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
-    "title": "calling of symbolic expressions is sometimes ridiculous",
+    "title": "[with patch, positive review] calling of symbolic expressions is sometimes ridiculous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/553",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @mwhansen
 
 ```
 

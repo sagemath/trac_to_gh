@@ -1,16 +1,17 @@
-# Issue 2640: add sage-edu to list of mailing lists
+# Issue 2640: [fixed website, positive review] add sage-edu to list of mailing lists
 
 archive/issues_002640.json:
 ```json
 {
     "body": "Assignee: tba\n\n```\nYou may also be interested in joining sage-edu, which is\nunfortunately not on http://www.sagemath.org/lists.html\nbut can be found here: http://groups.google.com/group/sage-edu\n```\n\n(to resolve this ticket one has to be sudo on sagemath.org, i.e.,\nme, mabshoff or robertwb)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2640\n\n",
+    "closed_at": "2008-03-22T01:23:45Z",
     "created_at": "2008-03-22T00:37:15Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "add sage-edu to list of mailing lists",
+    "title": "[fixed website, positive review] add sage-edu to list of mailing lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2640",
     "user": "https://github.com/williamstein"

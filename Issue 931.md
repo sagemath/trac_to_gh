@@ -1,15 +1,16 @@
-# Issue 931: Optimize permanent code for matrices over ZZ
+# Issue 931: [with patch] Optimize permanent code for matrices over ZZ
 
 archive/issues_000931.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nI think SAGE is still the only mathematical\nsoftware with an implementation of the permanent function for\nnon-square matrices over an arbitrary field!\n\nBut it is frickin' slow, as William could have said.\nCalculating the permanent of a 13 x 17 matrix with a 'band' of 4 1's\nover the main diagonal.\n\n\nOver ZZ:\n> sage: time f(13,4)\n> CPU times: user 3.98 s, sys: 0.07 s, total: 4.05 s\n> Wall time: 4.08\n>  1596800\n\n\n\nOver QQ\n> sage: time f(13,4)\n> CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s\n> Wall time: 8.56\n>  1596800\n\n\nMy all C-program with ints based on gmp:\n> [jaap`@`paix perm_gmp]$ time ./ds 13 4\n> 1596800\n> real    0m0.328s\n> user    0m0.326s\n> sys     0m0.003s\n> [jaap`@`paix perm_gmp]$ \n\n\nIn the reference manual it still says that the code is optimized\nonly for matrices over QQ :-)!\n\nWhat we need is optimization for integer matrices (followed by more\noptimization for (0,1) matrices, eventually for (-1,0,1) matrices.\nThat are the matrices that 'count' in applications.).\n\nA speed boost can be achieved replacing 'my' pure Python function\n_combinations, to be found in sage.structure.sequence, with a real fast\nimplementation in C/Cython.\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/931\n\n",
+    "closed_at": "2007-10-27T02:43:18Z",
     "created_at": "2007-10-19T18:44:51Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
-    "title": "Optimize permanent code for matrices over ZZ",
+    "title": "[with patch] Optimize permanent code for matrices over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/931",
     "user": "https://github.com/jaapspies"

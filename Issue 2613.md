@@ -1,15 +1,16 @@
-# Issue 2613: Moving "all_paths()" to "GenericGraph"
+# Issue 2613: [with patch, positive review] Moving "all_paths()" to "GenericGraph"
 
 archive/issues_002613.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nThe class Graph has a method \"all_paths\", but DiGraph don't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2613\n\n",
+    "closed_at": "2008-03-22T04:02:15Z",
     "created_at": "2008-03-20T14:29:48Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "Moving \"all_paths()\" to \"GenericGraph\"",
+    "title": "[with patch, positive review] Moving \"all_paths()\" to \"GenericGraph\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2613",
     "user": "https://github.com/m-r-k"

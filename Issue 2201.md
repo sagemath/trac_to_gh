@@ -1,9 +1,10 @@
-# Issue 2201: [with patch, needs review] doctest failure on 2.10.2.alpha0: number_field.py
+# Issue 2201: [with patch, with positive review] doctest failure on 2.10.2.alpha0: number_field.py
 
 archive/issues_002201.json:
 ```json
 {
     "body": "Assignee: @craigcitro\n\nCC:  @jaapspies\n\nJaap reported the following doctest failure on sage-devel:\n\n```\njaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************\nFile \"number_field.py\", line 2087:\n    sage: F.reduced_basis()\nExpected:\n    [1, alpha, alpha^2 - 15*alpha + 1, alpha^3 - 16*alpha^2 + 469*alpha + 267109]\nGot:\n    [1, alpha, alpha^2 - 15*alpha, alpha^3 - 16*alpha^2 + 469*alpha + 267109]\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_60\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [33.8 s]\nexit code: 256\n```\n\nThis is due to different precision getting used to compute an embedding somewhere -- the fix was to add an optional `prec` argument, which is useful in its own right, and then make the doctests call with a specific precision. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2201\n\n",
+    "closed_at": "2008-02-18T13:34:28Z",
     "created_at": "2008-02-18T01:24:56Z",
     "labels": [
         "component: number theory",
@@ -11,7 +12,7 @@ archive/issues_002201.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch, needs review] doctest failure on 2.10.2.alpha0: number_field.py",
+    "title": "[with patch, with positive review] doctest failure on 2.10.2.alpha0: number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2201",
     "user": "https://github.com/craigcitro"

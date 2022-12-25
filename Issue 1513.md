@@ -3,7 +3,8 @@
 archive/issues_001513.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe title pretty much says it all. make 3.79.1 doesn't support make -B, and I'm likely not the only person with a slightly outdated version of make, so we should see if this can be switched around at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1513\n\n",
+    "body": "Assignee: mabshoff\n\nThe title pretty much says it all. make 3.79.1 doesn't support make -B, and I'm likely not the only person with a slightly outdated version of make, so we should see if this can be switched around at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1513\n\n",
+    "closed_at": "2007-12-14T23:44:41Z",
     "created_at": "2007-12-14T23:21:40Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +18,7 @@ archive/issues_001513.json:
     "user": "https://github.com/craigcitro"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
 
 The title pretty much says it all. make 3.79.1 doesn't support make -B, and I'm likely not the only person with a slightly outdated version of make, so we should see if this can be switched around at all.
 

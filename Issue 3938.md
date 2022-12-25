@@ -1,16 +1,17 @@
-# Issue 3938: coercion framework converts built-in types to Sage types when it should not
+# Issue 3938: [with patch, with positive review] coercion framework converts built-in types to Sage types when it should not
 
 archive/issues_003938.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  cwitty\n\nThis came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:\n\n```\nsage: 1.0r/8\n1/8\n```\n\nThat's because of this code in coerce.pyx, which does a conversion rather than a coercion:\n\n```\n        elif PY_IS_NUMERIC(x):\n            try:\n                x = yp(x)\n                if PY_TYPE_CHECK(yp, type): return x,y\n```\n\nI tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3938\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  cwitty\n\nThis came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:\n\n```\nsage: 1.0r/8\n1/8\n```\n\nThat's because of this code in coerce.pyx, which does a conversion rather than a coercion:\n\n```\n        elif PY_IS_NUMERIC(x):\n            try:\n                x = yp(x)\n                if PY_TYPE_CHECK(yp, type): return x,y\n```\n\nI tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.\n\n[Once this ticket has been reviewed and merged #2898 should be closed]\n\nIssue created by migration from https://trac.sagemath.org/ticket/3938\n\n",
+    "closed_at": "2009-01-28T15:22:03Z",
     "created_at": "2008-08-23T21:02:17Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "coercion framework converts built-in types to Sage types when it should not",
+    "title": "[with patch, with positive review] coercion framework converts built-in types to Sage types when it should not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3938",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
@@ -37,6 +38,8 @@ That's because of this code in coerce.pyx, which does a conversion rather than a
 ```
 
 I tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.
+
+[Once this ticket has been reviewed and merged #2898 should be closed]
 
 Issue created by migration from https://trac.sagemath.org/ticket/3938
 

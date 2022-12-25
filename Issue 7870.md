@@ -3,7 +3,8 @@
 archive/issues_007870.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI ran the magma optional test suite on skynet (eno):\n\n```\n./sage -t --only_optional=magma devel/sage/sage > magma.out&\n```\n\nAnd the failures are:\n\n```\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 364.0 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7870\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: Magma\n\nI ran the magma optional test suite on skynet (eno):\n\n```\n./sage -t --only_optional=magma devel/sage/sage > magma.out&\n```\n\nAnd the failures are:\n\n```\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 364.0 seconds\n```\n\n**Apply:**\n1. [attachment:trac-7870-magma-doctest-review3.patch]\n2. [attachment:trac-7870-magma-doctest-review4.patch]\n\nIssue created by migration from https://trac.sagemath.org/ticket/7870\n\n",
+    "closed_at": "2011-03-18T13:42:36Z",
     "created_at": "2010-01-07T20:51:18Z",
     "labels": [
         "component: interfaces",
@@ -16,7 +17,9 @@ archive/issues_007870.json:
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: @JohnCremona
+
+Keywords: Magma
 
 I ran the magma optional test suite on skynet (eno):
 
@@ -36,6 +39,10 @@ And the failures are:
         sage -t --only_optional=magma "devel/sage/sage/symbolic/expression.pyx"
 Total time for all tests: 364.0 seconds
 ```
+
+**Apply:**
+1. [attachment:trac-7870-magma-doctest-review3.patch]
+2. [attachment:trac-7870-magma-doctest-review4.patch]
 
 Issue created by migration from https://trac.sagemath.org/ticket/7870
 

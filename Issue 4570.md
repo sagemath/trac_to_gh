@@ -1,9 +1,10 @@
-# Issue 4570: change the numpy include to the standard place
+# Issue 4570: [with patch, positive review] change the numpy include to the standard place
 
 archive/issues_004570.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nThe standard numpy cython include is \"numpy/arrayobject.h\".  This changes Sage to use the standard include.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4570\n\n",
+    "closed_at": "2008-11-21T10:28:36Z",
     "created_at": "2008-11-20T21:54:40Z",
     "labels": [
         "component: build",
@@ -11,7 +12,7 @@ archive/issues_004570.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
-    "title": "change the numpy include to the standard place",
+    "title": "[with patch, positive review] change the numpy include to the standard place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4570",
     "user": "https://github.com/jasongrout"

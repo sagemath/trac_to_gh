@@ -4,6 +4,7 @@ archive/issues_002778.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCreate a class that lets us combine SymbolicEquations using logical operators (and, or, not, xor, etc.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2778\n\n",
+    "closed_at": "2009-04-16T11:25:46Z",
     "created_at": "2008-04-02T18:48:30Z",
     "labels": [
         "component: calculus"

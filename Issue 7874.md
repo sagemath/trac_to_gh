@@ -4,6 +4,7 @@ archive/issues_007874.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nCan we typeset the labels of interact controls\n\n```python\n@interact\ndef test(x=slider(-2,2,1, label='$x^2$')):\n    print \"Doing nothing in an interact\"\n```\n?\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/312cab9514bece7c).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7874\n\n",
+    "closed_at": "2010-01-25T00:55:41Z",
     "created_at": "2010-01-08T21:34:57Z",
     "labels": [
         "component: notebook",

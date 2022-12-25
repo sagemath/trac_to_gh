@@ -1,15 +1,16 @@
-# Issue 3637: [with patch, needs review] jacobi sums implementation
+# Issue 3637: [with patch, positive review] jacobi sums implementation
 
 archive/issues_003637.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nImplement Jacobi sums of Dirichlet characters.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3637\n\n",
+    "closed_at": "2008-08-12T00:47:37Z",
     "created_at": "2008-07-10T21:55:11Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch, needs review] jacobi sums implementation",
+    "title": "[with patch, positive review] jacobi sums implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3637",
     "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"

@@ -4,6 +4,7 @@ archive/issues_009507.json:
 ```json
 {
     "body": "Assignee: GeorgSWeber\n\nSee trac #9368. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9507\n\n",
+    "closed_at": "2010-07-19T11:20:34Z",
     "created_at": "2010-07-15T13:14:03Z",
     "labels": [
         "component: build"

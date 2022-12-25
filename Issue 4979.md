@@ -4,6 +4,7 @@ archive/issues_004979.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @dimpase @mkoeppe\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/f037b3c4cc4509eb for a discussion about the problem.\n\nxdg-open is not available on Solaris, so we should be using a Solaris specific mechanism to open the default browser. It is unclear at least to me at the moment what this would be.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4979\n\n",
+    "closed_at": "2020-05-03T09:38:33Z",
     "created_at": "2009-01-15T00:54:44Z",
     "labels": [
         "component: porting: solaris",

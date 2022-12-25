@@ -1,16 +1,17 @@
-# Issue 3771: [with patch; needs review] make it so typing "sage -br" for new binary sage installs doesn't require rebuilding everything
+# Issue 3771: [with patch; with positive review] make it so typing "sage -br" for new binary sage installs doesn't require rebuilding everything
 
 archive/issues_003771.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nHundreds of times people have been very annoyed when the install a fresh binary sage install, change something in the core library and type\n\n```\n  sage -br\n```\nonly to find that everything has to be built.   It turns out there is a trivial 2-line fix to make this not be the case.  That's attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3771\n\n",
+    "closed_at": "2008-08-09T00:56:11Z",
     "created_at": "2008-08-04T00:35:32Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
-    "title": "[with patch; needs review] make it so typing \"sage -br\" for new binary sage installs doesn't require rebuilding everything",
+    "title": "[with patch; with positive review] make it so typing \"sage -br\" for new binary sage installs doesn't require rebuilding everything",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3771",
     "user": "https://github.com/williamstein"

@@ -1,23 +1,23 @@
-# Issue 5029: Better diffs for trac
+# Issue 5029: [with .egg, positive review] Better diffs for trac
 
 archive/issues_005029.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nI got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments, so I updated the hg plugin to show this info. I'm using this for trac.cython.org. \n\nThis just needs to go into the plugin directory of this trac server, and then restart the trac server. Make sure the filename matches the python version (e.g. py2.4 or py2.5), just rename it if not. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5029\n\n",
+    "body": "Assignee: mabshoff\n\nI got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments, so I updated the hg plugin to show this info. I'm using this for trac.cython.org. \n\nThis just needs to go into the plugin directory of this trac server, and then restart the trac server. Make sure the filename matches the python version (e.g. py2.4 or py2.5), just rename it if not. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5029\n\n",
+    "closed_at": "2009-01-24T12:53:33Z",
     "created_at": "2009-01-19T20:17:13Z",
     "labels": [
         "component: website/wiki",
-        "critical",
-        "bug"
+        "critical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Better diffs for trac",
+    "title": "[with .egg, positive review] Better diffs for trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5029",
     "user": "https://github.com/robertwb"
 }
 ```
-Assignee: @haraldschilly
+Assignee: mabshoff
 
 I got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments, so I updated the hg plugin to show this info. I'm using this for trac.cython.org. 
 

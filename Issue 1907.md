@@ -1,16 +1,17 @@
-# Issue 1907: matrix nullity returns wrong value
+# Issue 1907: [with patch, with positive review] matrix kernel() is broken (disagrees with nullity())
 
 archive/issues_001907.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nThe nullity() function for matrices is supposed to return the dimension of the kernel, but:\n\n```\nsage: M=Matrix(QQ,[[1,0,0,1],[0,1,1,0],[1,1,1,0]])\nsage: M.nullity()\n1\nsage: M.kernel().dimension()\n0\n```\n\nThe correct value is indeed 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1907\n\n",
+    "closed_at": "2008-03-12T22:04:20Z",
     "created_at": "2008-01-24T03:43:52Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "matrix nullity returns wrong value",
+    "title": "[with patch, with positive review] matrix kernel() is broken (disagrees with nullity())",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1907",
     "user": "https://github.com/aghitza"

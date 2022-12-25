@@ -4,6 +4,7 @@ archive/issues_007718.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nKeywords: coercion, segfault\n\nA segfault is caused by failure to check whether elements are None.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7718\n\n",
+    "closed_at": "2009-12-19T20:07:07Z",
     "created_at": "2009-12-17T07:27:13Z",
     "labels": [
         "component: coercion",

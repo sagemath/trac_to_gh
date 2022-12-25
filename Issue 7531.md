@@ -4,6 +4,7 @@ archive/issues_007531.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nAll this patch does is to add a Python interface to `mzd_lqup` which might be handy for some people. It doesn't have any impact on existing functions etc. and thus should be a fairly low risk merge.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7531\n\n",
+    "closed_at": "2009-11-29T05:50:00Z",
     "created_at": "2009-11-25T17:49:48Z",
     "labels": [
         "component: linear algebra"

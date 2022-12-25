@@ -1,15 +1,16 @@
-# Issue 849: Cython 0.9.6.7
+# Issue 849: [with patch] [tested by cwitty] Cython 0.9.6.7
 
 archive/issues_000849.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nNew release of Cython at http://cython.org/cython-0.9.6.7.spkg . Everything builds and all doctests pass with 2.8.6 and patch below. \n\nThere will probably be another release soon (merging in latest Pyrex release, no promise on how long that will take) but this has the overrideable cdef methods (now rdef) that would be good to start taking advantage of. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/849\n\n",
+    "closed_at": "2007-10-13T07:24:49Z",
     "created_at": "2007-10-11T10:16:14Z",
     "labels": [
         "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "Cython 0.9.6.7",
+    "title": "[with patch] [tested by cwitty] Cython 0.9.6.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/849",
     "user": "https://github.com/robertwb"

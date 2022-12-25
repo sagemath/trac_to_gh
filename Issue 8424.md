@@ -3,7 +3,8 @@
 archive/issues_008424.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @robert-marik drkirkby\n\nRobert Marik pointed out that there is a bug in the bounding box calculation of the following plot:\n\n```\nvar('y')\nplot3d(sqrt(sin(x)*sin(y)), (x,0,2*pi),(y,0,2*pi))\n```\n\nThe problem is that there are lots of NaNs generated in the evaluation of the plot, and these are not handled well by the bounding box calculation.\n\nThe attached patch fixes the issues in two of the three places the bounding box is calculated.  A third place is not touched in plot3d/transform.pyx, where I don't have time to make sure the fix is the right one and supply the necessary doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8424\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @robertwb @robert-marik drkirkby\n\nRobert Marik pointed out that there is a bug in the bounding box calculation of the following plot:\n\n```\nvar('y')\nplot3d(sqrt(sin(x)*sin(y)), (x,0,2*pi),(y,0,2*pi))\n```\n\nThe problem is that there are lots of NaNs generated in the evaluation of the plot, and these are not handled well by the bounding box calculation.\n\nThe attached patch fixes the issues in two of the three places the bounding box is calculated.  A third place is not touched in plot3d/transform.pyx, where I don't have time to make sure the fix is the right one and supply the necessary doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8424\n\n",
+    "closed_at": "2010-04-15T23:50:54Z",
     "created_at": "2010-03-02T19:14:58Z",
     "labels": [
         "component: graphics",
@@ -16,7 +17,7 @@ archive/issues_008424.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-Assignee: @williamstein
+Assignee: @jasongrout
 
 CC:  @robertwb @robert-marik drkirkby
 

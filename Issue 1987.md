@@ -1,16 +1,17 @@
-# Issue 1987: [with patch] unintuitive return values for "forall" and "exists"
+# Issue 1987: [with patch, with positive review] "forall" and "exists" need pointers in docstring to "all" and "any
 
 archive/issues_001987.json:
 ```json
 {
     "body": "Assignee: cwitty\n\nThe names of \"forall\" and \"exists\" suggest that these are predicates that can be used where a conditional is needed. In fact, doing so does not result in an error but in unintended results:\n`len([ i for i in [1..300] if forall(prime_divisors(i),lambda i: i<10)])`\nreturns\n`300`\nwhich does not reflect the apparent meaning of the expression. The proper result is returned by inserting an index:\n`len([ i for i in [1..300] if forall(prime_divisors(i),lambda i: i<10)[0]])`\nwhich returns\n`82`\n\nI would suggest an optional parameter to \"forall\" and \"exists\", say, witness=True to return a second return value giving the index. The default should be index=False in my opinion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1987\n\n",
+    "closed_at": "2008-02-16T20:45:58Z",
     "created_at": "2008-01-30T22:28:41Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "[with patch] unintuitive return values for \"forall\" and \"exists\"",
+    "title": "[with patch, with positive review] \"forall\" and \"exists\" need pointers in docstring to \"all\" and \"any",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1987",
     "user": "https://github.com/nbruin"

@@ -1,15 +1,16 @@
-# Issue 4452: [with patch; needs review] optimize next_prime
+# Issue 4452: [with patch; positive review] optimize next_prime
 
 archive/issues_004452.json:
 ```json
 {
     "body": "Assignee: somebody\n\nSage's next_prime is slow, but this patch makes it (\"ten times\"?!) faster, especially for small input. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4452\n\n",
+    "closed_at": "2008-11-07T17:03:14Z",
     "created_at": "2008-11-06T00:43:43Z",
     "labels": [
         "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
-    "title": "[with patch; needs review] optimize next_prime",
+    "title": "[with patch; positive review] optimize next_prime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4452",
     "user": "https://github.com/williamstein"

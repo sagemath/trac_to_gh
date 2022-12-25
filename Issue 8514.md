@@ -3,7 +3,8 @@
 archive/issues_008514.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional database_gap-4.4.12 ==\n\n```\ndatabase_gap-4.4.12/.hg/requires\ndatabase_gap-4.4.12/.hg/00changelog.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.015s\nuser    0m0.004s\nsys     0m0.011s\nsage: An error occurred while installing database_gap-4.4.12\n```\n\n == The solution ==\n\nspkg-install looks a bit of a mess to me. I will need to try to work out what the author intended. SPKG.txt gives no idea of the author or anything very useful. It's contents are just:\n\n```\nGAP's databases of finite groups and table of marks.\n```\n\nI need to be a bit of a detective to work this out!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8514\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\n == Hardware & associated software == \n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow optional packages to install. \n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional database_gap-4.4.12 ==\n\n```\ndatabase_gap-4.4.12/.hg/requires\ndatabase_gap-4.4.12/.hg/00changelog.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.015s\nuser    0m0.004s\nsys     0m0.011s\nsage: An error occurred while installing database_gap-4.4.12\n```\n\n == The solution ==\n\nspkg-install looks a bit of a mess to me. I will need to try to work out what the author intended. SPKG.txt gives no idea of the author or anything very useful. It's contents are just:\n\n```\nGAP's databases of finite groups and table of marks.\n```\n\nI need to be a bit of a detective to work this out!! \n\nIssue created by migration from https://trac.sagemath.org/ticket/8514\n\n",
+    "closed_at": "2010-04-20T22:51:04Z",
     "created_at": "2010-03-13T01:13:49Z",
     "labels": [
         "component: packages: optional",
@@ -20,7 +21,7 @@ Assignee: tbd
 
 CC:  @wdjoyner
 
-## Hardware & associated software
+ == Hardware & associated software == 
 
 * Sun Blade 1000
 * 2 x 900 MHz UltraSPARC III+ CPUs
@@ -30,6 +31,7 @@ CC:  @wdjoyner
 
  == Sage version ==
 * 4.3.4.alpha1
+* Patch #8509 removing the -o option to grep to allow optional packages to install. 
 
 This builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. 
 
@@ -69,7 +71,7 @@ spkg-install looks a bit of a mess to me. I will need to try to work out what th
 GAP's databases of finite groups and table of marks.
 ```
 
-I need to be a bit of a detective to work this out!!
+I need to be a bit of a detective to work this out!! 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8514
 

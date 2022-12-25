@@ -1,23 +1,23 @@
-# Issue 1144: mpfr to RQDF coercion
+# Issue 1144: [is invalid?] mpfr to RQDF coercion
 
 archive/issues_001144.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nI do not understand the following in RQDF??:\n\n        The rings that canonically coerce to the real quad double field are:\n* the mpfr real field, if its precision is at least 212 bits\n                                           <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^\n\nOn the contrary, RealField(p) should coerce to RQDF **exactly** for p <= 212 (in fact this\nshould be 215 = 53 + 1 + 53 + 1 + 53 + 1 + 53 since if you round to nearest, then the remainder\nis smaller than 1/2 ulp of the most significant part).\n\nThus coercion from RealField() to RQDF should always work.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1144\n\n",
+    "body": "Assignee: cwitty\n\nI do not understand the following in RQDF??:\n\n        The rings that canonically coerce to the real quad double field are:\n* the mpfr real field, if its precision is at least 212 bits\n                                           <sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup><sup>^</sup>^^\n\nOn the contrary, RealField(p) should coerce to RQDF **exactly** for p <= 212 (in fact this\nshould be 215 = 53 + 1 + 53 + 1 + 53 + 1 + 53 since if you round to nearest, then the remainder\nis smaller than 1/2 ulp of the most significant part).\n\nThus coercion from RealField() to RQDF should always work.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1144\n\n",
+    "closed_at": "2008-11-14T08:34:05Z",
     "created_at": "2007-11-11T13:09:12Z",
     "labels": [
         "component: basic arithmetic",
-        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "mpfr to RQDF coercion",
+    "title": "[is invalid?] mpfr to RQDF coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1144",
     "user": "https://github.com/zimmermann6"
 }
 ```
-Assignee: somebody
+Assignee: cwitty
 
 I do not understand the following in RQDF??:
 

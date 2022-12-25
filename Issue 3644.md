@@ -4,11 +4,10 @@ archive/issues_003644.json:
 ```json
 {
     "body": "Assignee: boothby\n\nThis is basically the same as #3643.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3644\n\n",
+    "closed_at": "2009-11-14T08:46:51Z",
     "created_at": "2008-07-11T18:42:21Z",
     "labels": [
-        "component: notebook",
-        "blocker",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "re-enable server/simple/twist.py",

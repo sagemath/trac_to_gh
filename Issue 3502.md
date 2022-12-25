@@ -1,15 +1,16 @@
-# Issue 3502: modular symbols -- implement apply_sparse, which is needed for fast eigenvalue computation
+# Issue 3502: [with patch; positive review] modular symbols -- optimize fast computation of hecke eigenvalues on weight 2 modular symbols for gamma0
 
 archive/issues_003502.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nImplement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3502\n\n",
+    "body": "Assignee: @craigcitro\n\n1. Implement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.\n\n2. Make very very fast code for applying many Hecke operators to a single vector with one nonzero entry. \n\nNOTE: The higher weight patches (starting with patch 10) depend on upgrading flint, since flint had a bug: #3523.\n\nNOTE: A cumulative bundle with all possible dependencies is here: \n   http://sage.math.washington.edu/home/was/patches/3502.hg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3502\n\n",
+    "closed_at": "2008-09-20T21:59:50Z",
     "created_at": "2008-06-24T15:40:11Z",
     "labels": [
         "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "modular symbols -- implement apply_sparse, which is needed for fast eigenvalue computation",
+    "title": "[with patch; positive review] modular symbols -- optimize fast computation of hecke eigenvalues on weight 2 modular symbols for gamma0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3502",
     "user": "https://github.com/williamstein"
@@ -17,7 +18,14 @@ archive/issues_003502.json:
 ```
 Assignee: @craigcitro
 
-Implement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.
+1. Implement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.
+
+2. Make very very fast code for applying many Hecke operators to a single vector with one nonzero entry. 
+
+NOTE: The higher weight patches (starting with patch 10) depend on upgrading flint, since flint had a bug: #3523.
+
+NOTE: A cumulative bundle with all possible dependencies is here: 
+   http://sage.math.washington.edu/home/was/patches/3502.hg
 
 Issue created by migration from https://trac.sagemath.org/ticket/3502
 

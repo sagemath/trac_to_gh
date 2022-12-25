@@ -4,10 +4,10 @@ archive/issues_004342.json:
 ```json
 {
     "body": "Assignee: anakha\n\nCC:  @kcrisman slosoi @novoselt abergeron @jhpalmieri mvngu\n\nAdd support for placing legends on plots using the matplotlib facility for doing so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4342\n\n",
+    "closed_at": "2010-10-03T06:35:52Z",
     "created_at": "2008-10-22T22:48:14Z",
     "labels": [
-        "component: graphics",
-        "bug"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Add legends to plot.py",

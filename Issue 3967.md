@@ -1,9 +1,10 @@
-# Issue 3967: Totallyreal "just print" feature added
+# Issue 3967: [with patch, with positive review] Totallyreal "just print" feature added
 
 archive/issues_003967.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nI added a small feature to \"just print\" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3967\n\n",
+    "body": "Assignee: @jvoight\n\nCC:  @craigcitro\n\nI added a small feature to \"just print\" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3967\n\n",
+    "closed_at": "2008-09-23T00:09:36Z",
     "created_at": "2008-08-27T17:21:54Z",
     "labels": [
         "component: number theory",
@@ -11,13 +12,13 @@ archive/issues_003967.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Totallyreal \"just print\" feature added",
+    "title": "[with patch, with positive review] Totallyreal \"just print\" feature added",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3967",
     "user": "https://github.com/jvoight"
 }
 ```
-Assignee: @williamstein
+Assignee: @jvoight
 
 CC:  @craigcitro
 

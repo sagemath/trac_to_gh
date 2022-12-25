@@ -3,10 +3,11 @@
 archive/issues_005945.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @zimmermann6\n\nFLINT can factor faster than PARI for integers smaller than 2^50 or so.  So by default, we should use FLINT for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5945\n\n",
+    "body": "Assignee: tbd\n\nCC:  @zimmermann6\n\nFLINT can factor faster than PARI for integers smaller than 2<sup>50</sup> or so.  So by default, we should use FLINT for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5945\n\n",
+    "closed_at": "2011-01-19T22:19:17Z",
     "created_at": "2009-04-30T06:15:16Z",
     "labels": [
-        "component: algebra"
+        "component: factorization"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "fastify factorization of inferior integers with flint",
@@ -19,7 +20,7 @@ Assignee: tbd
 
 CC:  @zimmermann6
 
-FLINT can factor faster than PARI for integers smaller than 2^50 or so.  So by default, we should use FLINT for this.
+FLINT can factor faster than PARI for integers smaller than 2<sup>50</sup> or so.  So by default, we should use FLINT for this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5945
 

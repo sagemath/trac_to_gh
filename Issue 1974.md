@@ -1,16 +1,17 @@
-# Issue 1974: notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)
+# Issue 1974: [with patch, positive review] notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)
 
 archive/issues_001974.json:
 ```json
 {
     "body": "Assignee: boothby\n\n...and I was born in 1974 :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1974\n\n",
+    "closed_at": "2008-03-16T23:08:14Z",
     "created_at": "2008-01-30T02:31:54Z",
     "labels": [
         "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)",
+    "title": "[with patch, positive review] notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1974",
     "user": "https://github.com/williamstein"

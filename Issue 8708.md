@@ -3,7 +3,8 @@
 archive/issues_008708.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ranosch\n\nAs the subject says. This is related to #8699. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8708\n\n",
+    "body": "Assignee: tbd\n\nCC:  ranosch\n\nKeywords: sd41\n\nAs the subject says. This is related to #8699. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\n---\n\nApply \n\n- [attachment:trac_8708-jhp.v2.patch] to the **scripts repository**\n- [attachment:trac_8708-doctests.patch] to the Sage repository.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8708\n\n",
+    "closed_at": "2013-03-07T08:17:01Z",
     "created_at": "2010-04-18T00:46:47Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +21,17 @@ Assignee: tbd
 
 CC:  ranosch
 
+Keywords: sd41
+
 As the subject says. This is related to #8699. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.
+
+---
+
+Apply 
+
+- [attachment:trac_8708-jhp.v2.patch] to the **scripts repository**
+- [attachment:trac_8708-doctests.patch] to the Sage repository.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/8708
 

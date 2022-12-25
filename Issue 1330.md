@@ -1,22 +1,23 @@
-# Issue 1330: [with patch] 2.8.14/Solaris: fix sympy doctest - numerical noise
+# Issue 1330: [with patch, with positive review] 2.8.14/Solaris: fix sympy doctest - numerical noise
 
 archive/issues_001330.json:
 ```json
 {
-    "body": "Assignee: failure\n\nOn Solaris I get the following doctest failures due to numerical noise:\n\n```\nsage -t  devel/sage-main/sage/calculus/test_sympy.py        **********************************************************************\nFile \"test_sympy.py\", line 23:\n    : float(pi + exp(1))\nExpected:\n    5.8598744820488378\nGot:\n    5.8598744820488387\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1330\n\n",
+    "body": "Assignee: mabshoff\n\nOn Solaris I get the following doctest failures due to numerical noise:\n\n```\nsage -t  devel/sage-main/sage/calculus/test_sympy.py        **********************************************************************\nFile \"test_sympy.py\", line 23:\n    : float(pi + exp(1))\nExpected:\n    5.8598744820488378\nGot:\n    5.8598744820488387\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1330\n\n",
+    "closed_at": "2007-12-01T11:27:49Z",
     "created_at": "2007-11-28T23:17:59Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "[with patch] 2.8.14/Solaris: fix sympy doctest - numerical noise",
+    "title": "[with patch, with positive review] 2.8.14/Solaris: fix sympy doctest - numerical noise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1330",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-Assignee: failure
+Assignee: mabshoff
 
 On Solaris I get the following doctest failures due to numerical noise:
 

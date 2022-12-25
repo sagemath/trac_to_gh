@@ -3,10 +3,12 @@
 archive/issues_009436.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime\n\n```\nJust for the record:\n\ngrep -i downloading $SAGE_ROOT/install.log:\n\nDownloading http://download.zope.org/distribution/zdaemon-2.0.0.tar.gz\nDownloading http://download.zope.org/distribution/ZConfig-2.5.tar.gz\nDownloading http://download.zope.org/distribution/zope.testing-3.5.0.tar.gz\nDownloading http://download.zope.org/distribution/zope.proxy-3.4.0.tar.gz\n\n\n-Leif\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9436\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime\n\nKeywords: undesired download, zope, zodb3\n\n```\nJust for the record:\n\ngrep -i downloading $SAGE_ROOT/install.log:\n\nDownloading http://download.zope.org/distribution/zdaemon-2.0.0.tar.gz\nDownloading http://download.zope.org/distribution/ZConfig-2.5.tar.gz\nDownloading http://download.zope.org/distribution/zope.testing-3.5.0.tar.gz\nDownloading http://download.zope.org/distribution/zope.proxy-3.4.0.tar.gz\n\n\n-Leif\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9436\n\n",
+    "closed_at": "2010-07-08T19:08:18Z",
     "created_at": "2010-07-06T14:21:08Z",
     "labels": [
         "component: packages: standard",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
@@ -19,6 +21,8 @@ archive/issues_009436.json:
 Assignee: tbd
 
 CC:  @nexttime
+
+Keywords: undesired download, zope, zodb3
 
 ```
 Just for the record:

@@ -1,16 +1,17 @@
-# Issue 59: optimize elliptic curve arithmetic
+# Issue 59: optimize elliptic curve arithmetic: 2*P much slower than P+P
 
 archive/issues_000059.json:
 ```json
 {
     "body": "Assignee: somebody\n\nWilliam, my student noticed some slow performance with elliptic curves \ngroup law.  I think there was a huge overhead in duplication:\n \nsage: E = EllipticCurve([GF(101)(1),3])\nsage: P = E([-1,1,1])\nsage: timeit 2*P\n100 loops, best of 3: 3.81 ms per loop\nsage: timeit P+P\n1000 loops, best of 3: 1.81 ms per loop\n \nBasically n*P was passing through all sorts of high-level layers for \ngroup schemes, abelian groups, and the like.\n \nI've started teaching two courses here, and at the latest, will have to \nadapt to becoming a Dad next Tuesday (my wife Martine is overdue). But I \nmay be able to add some code in the next three weeks.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/59\n\n",
+    "closed_at": "2007-08-29T02:05:01Z",
     "created_at": "2006-09-14T12:37:01Z",
     "labels": [
         "component: basic arithmetic",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
-    "title": "optimize elliptic curve arithmetic",
+    "title": "optimize elliptic curve arithmetic: 2*P much slower than P+P",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/59",
     "user": "https://github.com/williamstein"

@@ -4,6 +4,7 @@ archive/issues_009450.json:
 ```json
 {
     "body": "Assignee: @loefflerd\n\nThe attached patch implements a factor() function for number field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9450\n\n",
+    "closed_at": "2010-07-20T07:53:15Z",
     "created_at": "2010-07-07T21:06:36Z",
     "labels": [
         "component: number fields"

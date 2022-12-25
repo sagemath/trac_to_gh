@@ -1,16 +1,16 @@
-# Issue 2271: Include Antti Ajanki's DLX library
+# Issue 2271: [with patch; massively positive review] Include Antti Ajanki's DLX library
 
 archive/issues_002271.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nThe Dancing Links algorithm (DLX) is sweet.  It solves the Exact Cover problem with the quickness.\n\nArguments for including Ajanki's code:\n    1) It's the only Python implementation of DLX I've seen.\n    2) I emailed the author, who happily added the \"or later\" bit after the GPL2\n    3) With my Sage Matrix -> DLXMatrix code (plus docstrings to everything I\nadded), the file dlx.py is only 8kB!\n    4) It will resolve tickets #1311 and #1313\n\nIssue created by migration from https://trac.sagemath.org/ticket/2271\n\n",
+    "body": "Assignee: @mwhansen\n\nThe Dancing Links algorithm (DLX) is sweet.  It solves the Exact Cover problem with the quickness.\n\nArguments for including Ajanki's code:\n* It's the only Python implementation of DLX I've seen.\n* I emailed the author, who happily added the \"or later\" bit after the GPL2\n* With my Sage Matrix -> DLXMatrix code (plus docstrings to everything I added), the file dlx.py is only 8kB!\n* It will resolve tickets #1311 and #1313\n\nIssue created by migration from https://trac.sagemath.org/ticket/2271\n\n",
+    "closed_at": "2008-02-25T20:35:35Z",
     "created_at": "2008-02-22T23:27:49Z",
     "labels": [
-        "component: combinatorics",
-        "bug"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
-    "title": "Include Antti Ajanki's DLX library",
+    "title": "[with patch; massively positive review] Include Antti Ajanki's DLX library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2271",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
@@ -21,11 +21,10 @@ Assignee: @mwhansen
 The Dancing Links algorithm (DLX) is sweet.  It solves the Exact Cover problem with the quickness.
 
 Arguments for including Ajanki's code:
-    1) It's the only Python implementation of DLX I've seen.
-    2) I emailed the author, who happily added the "or later" bit after the GPL2
-    3) With my Sage Matrix -> DLXMatrix code (plus docstrings to everything I
-added), the file dlx.py is only 8kB!
-    4) It will resolve tickets #1311 and #1313
+* It's the only Python implementation of DLX I've seen.
+* I emailed the author, who happily added the "or later" bit after the GPL2
+* With my Sage Matrix -> DLXMatrix code (plus docstrings to everything I added), the file dlx.py is only 8kB!
+* It will resolve tickets #1311 and #1313
 
 Issue created by migration from https://trac.sagemath.org/ticket/2271
 

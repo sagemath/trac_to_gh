@@ -3,7 +3,8 @@
 archive/issues_001891.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nTo fix trac #1083, I added a workaround due to a bug in Pari. The code is fixed in their svn version, but it's unlikely that we'll see a new release terribly soon. However, when one comes along, someone should go to sage/rings/number_field/number_field.py and undo the following patch:\n\n-        g = self.__rnf.rnfeltabstorel(pari(f))\n+        if self.__K.degree() == 1:\n+            g = -1*self.__rnf[0][0]*f[1] + f[0]\n+        else:\n+            g = self.__rnf.rnfeltabstorel(pari(f))\n\nOr, if whoever is updating the pari spkg sends me an email, I'll take care of this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1891\n\n",
+    "body": "Assignee: @craigcitro\n\nTo fix trac #1083, I added a workaround due to a bug in Pari. The code is fixed in their svn version, but it's unlikely that we'll see a new release terribly soon. However, when one comes along, someone should go to sage/rings/number_field/number_field.py and undo the following patch:\n\n```\n-        g = self.__rnf.rnfeltabstorel(pari(f))\n+        if self.__K.degree() == 1:\n+            g = -1*self.__rnf[0][0]*f[1] + f[0]\n+        else:\n+            g = self.__rnf.rnfeltabstorel(pari(f))\n```\nOr, if whoever is updating the pari spkg sends me an email, I'll take care of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1891\n\n",
+    "closed_at": "2010-06-25T04:12:15Z",
     "created_at": "2008-01-23T11:25:28Z",
     "labels": [
         "component: packages: standard",
@@ -20,13 +21,15 @@ Assignee: @craigcitro
 
 To fix trac #1083, I added a workaround due to a bug in Pari. The code is fixed in their svn version, but it's unlikely that we'll see a new release terribly soon. However, when one comes along, someone should go to sage/rings/number_field/number_field.py and undo the following patch:
 
+```
 -        g = self.__rnf.rnfeltabstorel(pari(f))
 +        if self.__K.degree() == 1:
 +            g = -1*self.__rnf[0][0]*f[1] + f[0]
 +        else:
 +            g = self.__rnf.rnfeltabstorel(pari(f))
-
+```
 Or, if whoever is updating the pari spkg sends me an email, I'll take care of this.
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/1891
 

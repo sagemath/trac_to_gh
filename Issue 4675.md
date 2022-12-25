@@ -1,16 +1,17 @@
-# Issue 4675: Get Josh Kantor's "Numerical Computing with SAGE" into the Sage documentation
+# Issue 4675: sphinxify SAGE_ROOT/devel/doc/overviews/
 
 archive/issues_004675.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nSee http://www.math.washington.edu/~jkantor/Numerical_Sage/Numerical_Sage.html\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4675\n\n",
+    "closed_at": "2009-02-26T17:44:45Z",
     "created_at": "2008-12-02T15:52:14Z",
     "labels": [
         "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
-    "title": "Get Josh Kantor's \"Numerical Computing with SAGE\" into the Sage documentation",
+    "title": "sphinxify SAGE_ROOT/devel/doc/overviews/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4675",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

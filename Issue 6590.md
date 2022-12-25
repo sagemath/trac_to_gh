@@ -1,16 +1,17 @@
-# Issue 6590: [with patch, needs review] Cython __new__ should be __cinit__
+# Issue 6590: [with patch, positive review] Cython __new__ should be __cinit__
 
 archive/issues_006590.json:
 ```json
 {
     "body": "Assignee: tbd\n\nThis changed a while back, but as long as the old form is in the library we won't be able to really implement a (Python-style) `__new__` and also people will keep using it in new code by analogy. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6590\n\n",
+    "closed_at": "2009-08-24T13:06:16Z",
     "created_at": "2009-07-22T14:21:15Z",
     "labels": [
         "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "[with patch, needs review] Cython __new__ should be __cinit__",
+    "title": "[with patch, positive review] Cython __new__ should be __cinit__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6590",
     "user": "https://github.com/robertwb"

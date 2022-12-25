@@ -1,16 +1,17 @@
-# Issue 1813: [with patch] misc enhancements for ref.pdf
+# Issue 1813: [with patch, with positive review] misc enhancements for ref.pdf
 
 archive/issues_001813.json:
 ```json
 {
     "body": "Assignee: tba\n\n* SAGE => Sage (this is the official spelling now)\n* some options for the hyperlink\n\nIssue created by migration from https://trac.sagemath.org/ticket/1813\n\n",
+    "closed_at": "2008-01-19T20:09:34Z",
     "created_at": "2008-01-17T22:48:17Z",
     "labels": [
         "component: documentation",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
-    "title": "[with patch] misc enhancements for ref.pdf",
+    "title": "[with patch, with positive review] misc enhancements for ref.pdf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1813",
     "user": "https://github.com/malb"

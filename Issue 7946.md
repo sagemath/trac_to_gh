@@ -1,16 +1,17 @@
-# Issue 7946: Spec(...) does not specify its category
+# Issue 7946: Fix TestSuite failures for schemes
 
 archive/issues_007946.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\n```\nsage: C = Spec(ZZ)\nsage: C.category()\nCategory of sets\nsage: isinstance(C, C.category().element_class)\nFalse\n```\n\nCaught with #7921; please write patch on top of it to avoid conflicts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7946\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nConsider the following situation:\n\n```\nsage: S = Spec(ZZ)\nsage: x = S.an_element()\n```\nRunning `TestSuite(S)` and `TestSuite(x)` yields several failures.  A related problem is\n\n```\nsage: S\nSpectrum of Integer Ring\nsage: parent(x)\nSet of rational points of Spectrum of Integer Ring\n```\nwhereas we expect `parent(x) is S`.\n\nHere is the complete `TestSuite` report:\n\n```\nsage: TestSuite(S).run()\nFailure in _test_an_element:\nTraceback (most recent call last):\n...\nNotImplementedError\n------------------------------------------------------------\n  Failure in _test_category:\n  Traceback (most recent call last):\n  ...\n  AssertionError: False is not true\n  ------------------------------------------------------------\n  Failure in _test_pickling:\n  Traceback (most recent call last):\n  ...\n  AssertionError: Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring != Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring\n  ------------------------------------------------------------\n  The following tests failed: _test_category, _test_pickling\nFailure in _test_elements\nFailure in _test_some_elements:\nTraceback (most recent call last):\n...\nNotImplementedError\n------------------------------------------------------------\nThe following tests failed: _test_an_element, _test_elements, _test_some_elements\n```\n\n```\nsage: TestSuite(x).run()\nFailure in _test_category:\nTraceback (most recent call last):\n...\nAssertionError: False is not true\n------------------------------------------------------------\nFailure in _test_pickling:\nTraceback (most recent call last):\n...\nAssertionError: Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring != Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring\n------------------------------------------------------------\nThe following tests failed: _test_category, _test_pickling\n```\n\n(Note: the `NotImplementedError` that one gets after applying #16158 is a different one than before.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7946\n\n",
+    "closed_at": "2014-11-14T21:01:45Z",
     "created_at": "2010-01-16T12:37:52Z",
     "labels": [
         "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
-    "title": "Spec(...) does not specify its category",
+    "title": "Fix TestSuite failures for schemes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7946",
     "user": "https://github.com/nthiery"
@@ -20,15 +21,68 @@ Assignee: @aghitza
 
 CC:  @vbraun
 
+Consider the following situation:
+
 ```
-sage: C = Spec(ZZ)
-sage: C.category()
-Category of sets
-sage: isinstance(C, C.category().element_class)
-False
+sage: S = Spec(ZZ)
+sage: x = S.an_element()
+```
+Running `TestSuite(S)` and `TestSuite(x)` yields several failures.  A related problem is
+
+```
+sage: S
+Spectrum of Integer Ring
+sage: parent(x)
+Set of rational points of Spectrum of Integer Ring
+```
+whereas we expect `parent(x) is S`.
+
+Here is the complete `TestSuite` report:
+
+```
+sage: TestSuite(S).run()
+Failure in _test_an_element:
+Traceback (most recent call last):
+...
+NotImplementedError
+------------------------------------------------------------
+  Failure in _test_category:
+  Traceback (most recent call last):
+  ...
+  AssertionError: False is not true
+  ------------------------------------------------------------
+  Failure in _test_pickling:
+  Traceback (most recent call last):
+  ...
+  AssertionError: Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring != Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring
+  ------------------------------------------------------------
+  The following tests failed: _test_category, _test_pickling
+Failure in _test_elements
+Failure in _test_some_elements:
+Traceback (most recent call last):
+...
+NotImplementedError
+------------------------------------------------------------
+The following tests failed: _test_an_element, _test_elements, _test_some_elements
 ```
 
-Caught with #7921; please write patch on top of it to avoid conflicts.
+```
+sage: TestSuite(x).run()
+Failure in _test_category:
+Traceback (most recent call last):
+...
+AssertionError: False is not true
+------------------------------------------------------------
+Failure in _test_pickling:
+Traceback (most recent call last):
+...
+AssertionError: Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring != Point on Spectrum of Integer Ring defined by the Principal ideal (991) of Integer Ring
+------------------------------------------------------------
+The following tests failed: _test_category, _test_pickling
+```
+
+(Note: the `NotImplementedError` that one gets after applying #16158 is a different one than before.)
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/7946
 

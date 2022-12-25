@@ -1,16 +1,17 @@
-# Issue 9003: Doctest failure on Mac PPC in free_module.py
+# Issue 9003: Doctest (or whatever???) failure on Mac OS X in free_module.py
 
 archive/issues_009003.json:
 ```json
 {
     "body": "Assignee: tbd\n\nOn Mac PPC G4 with 10.4:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module.py\"           \n**********************************************************************\n    sage: V.base_extend(QQ)\nExpected:\n    Vector space of dimension 7 over Rational Field\nGot:\n    V\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9003\n\n",
+    "closed_at": "2010-08-09T09:49:38Z",
     "created_at": "2010-05-21T00:04:26Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
-    "title": "Doctest failure on Mac PPC in free_module.py",
+    "title": "Doctest (or whatever???) failure on Mac OS X in free_module.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9003",
     "user": "https://github.com/kcrisman"

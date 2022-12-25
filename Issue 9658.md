@@ -3,7 +3,8 @@
 archive/issues_009658.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @robertwb\n\nWe can't include vector_rational_sparse_c.pxi in a cython file because of a typo.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9658\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @robertwb\n\nThis patch fixes a typo in the affected file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9658\n\n",
+    "closed_at": "2010-09-29T04:23:36Z",
     "created_at": "2010-08-01T05:00:21Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +21,7 @@ Assignee: jason, was
 
 CC:  @robertwb
 
-We can't include vector_rational_sparse_c.pxi in a cython file because of a typo.  This patch fixes this.
+This patch fixes a typo in the affected file.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9658
 

@@ -4,6 +4,7 @@ archive/issues_006483.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nIn Firefox 3.5 on Linux, jsMath's `cmmi10` font appears to be decoded improperly.  Try this [test](http://www.math.union.edu/~dpvc/jsMath/symbols/cmmi10.html).  Other fonts seem fine.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61bf1226d39ecf1d/c330223e1970d9c6?#c330223e1970d9c6) for more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6483\n\n",
+    "closed_at": "2009-10-01T05:49:42Z",
     "created_at": "2009-07-08T13:26:34Z",
     "labels": [
         "component: notebook",

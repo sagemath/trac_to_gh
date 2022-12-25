@@ -1,9 +1,10 @@
-# Issue 6222: typos in super-increasing code
+# Issue 6222: [with patch, positive review] typos in super-increasing code
 
 archive/issues_006222.json:
 ```json
 {
     "body": "Assignee: tba\n\nKeywords: knapsack.py\n\nI notice some typos in the patch at #5827. Here we fix those typos.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6222\n\n",
+    "closed_at": "2009-06-13T21:16:57Z",
     "created_at": "2009-06-05T05:48:21Z",
     "labels": [
         "component: documentation",
@@ -11,7 +12,7 @@ archive/issues_006222.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "typos in super-increasing code",
+    "title": "[with patch, positive review] typos in super-increasing code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6222",
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"

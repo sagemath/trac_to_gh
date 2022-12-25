@@ -3,7 +3,8 @@
 archive/issues_007357.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  myurko @benjaminfjones\n\nAdd the logarithmic integral, Li, with integration starting at 0 rather than 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7357\n\n",
+    "body": "Assignee: @burcin\n\nCC:  myurko @benjaminfjones\n\nKeywords: beginner\n\nAdd the logarithmic integral, Li, with integration starting at 0 rather than 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7357\n\n",
+    "closed_at": "2012-06-19T13:28:24Z",
     "created_at": "2009-10-30T16:49:49Z",
     "labels": [
         "component: calculus",
@@ -19,6 +20,8 @@ archive/issues_007357.json:
 Assignee: @burcin
 
 CC:  myurko @benjaminfjones
+
+Keywords: beginner
 
 Add the logarithmic integral, Li, with integration starting at 0 rather than 2.
 

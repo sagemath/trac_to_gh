@@ -4,6 +4,7 @@ archive/issues_008503.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nMultiline input like\n\n```\n8+\\\n2\n```\nwhich works in command line does not work in notebook and returns error.\n\nJason at [sage-notebook](http://groups.google.cz/group/sage-notebook/browse_thread/thread/9ee2472e1857edcb) wrote\n\n```\nDoes it have to do with the preparser?  Note:\n\nsage: preparse(\"1+\\\\n2\")\n'Integer(1)+ * BackslashOperator() * n2'\n\nMaybe on the command line, ipython joins the two lines before the\npreparser gets to it, but that doesn't happen in the notebook? \n```\n\nAnd further:\n\n```\nplot(x,\\\n(x,-2,2))\n```\ndoes not produce the plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8503\n\n",
+    "closed_at": "2020-09-03T08:57:50Z",
     "created_at": "2010-03-11T23:20:44Z",
     "labels": [
         "component: notebook",

@@ -4,6 +4,7 @@ archive/issues_009142.json:
 ```json
 {
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill\n\nThe Fuzzy Ball graphs are cospectral with respect to the normalized laplacian matrix.  This patch makes a function to construct such graphs.  I will be adding a reference in a separate patch once we publish our paper :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9142\n\n",
+    "closed_at": "2010-06-06T07:21:51Z",
     "created_at": "2010-06-04T21:18:55Z",
     "labels": [
         "component: graph theory"

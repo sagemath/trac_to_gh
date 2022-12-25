@@ -4,6 +4,7 @@ archive/issues_008136.json:
 ```json
 {
     "body": "Assignee: @wdjoyner\n\nCC:  spancratz\n\nBuilding the reference manual in 4.3.2.alpha0 produces some warnings for the file linear_code.py, I think coming from #6486.  The attached patch fixes them.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8136\n\n",
+    "closed_at": "2010-02-02T00:27:13Z",
     "created_at": "2010-01-31T06:48:52Z",
     "labels": [
         "component: coding theory",

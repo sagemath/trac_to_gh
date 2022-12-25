@@ -1,22 +1,25 @@
-# Issue 381: SAGE daemon mode
+# Issue 381: Sage daemon mode
 
 archive/issues_000381.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: Sage server background process service\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
+    "closed_at": "2016-06-12T12:02:30Z",
     "created_at": "2007-05-28T21:14:39Z",
     "labels": [
         "component: user interface",
         "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "SAGE daemon mode",
+    "title": "Sage daemon mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/381",
     "user": "https://github.com/williamstein"
 }
 ```
-Assignee: @williamstein
+Assignee: mabshoff
+
+Keywords: Sage server background process service
 
 ```
 On May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:

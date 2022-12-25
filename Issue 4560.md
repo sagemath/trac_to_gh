@@ -1,16 +1,17 @@
-# Issue 4560: SR and containment broken
+# Issue 4560: [with patch, positive review] SR and containment broken
 
 archive/issues_004560.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThis is bad\n\n```\nsage: sqrt(2) in CC\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4560\n\n",
+    "closed_at": "2009-01-29T02:46:54Z",
     "created_at": "2008-11-20T01:35:11Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "SR and containment broken",
+    "title": "[with patch, positive review] SR and containment broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4560",
     "user": "https://github.com/robertwb"

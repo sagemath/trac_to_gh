@@ -1,15 +1,16 @@
-# Issue 871: [with patch] graphs: circulant graph creating function
+# Issue 871: [with patch] [tested by cwitty] graphs: circulant graph creating function
 
 archive/issues_000871.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nPatch to graph_generators to create circulant graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/871\n\n",
+    "closed_at": "2007-10-13T07:56:29Z",
     "created_at": "2007-10-13T03:07:15Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
-    "title": "[with patch] graphs: circulant graph creating function",
+    "title": "[with patch] [tested by cwitty] graphs: circulant graph creating function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/871",
     "user": "https://github.com/jasongrout"

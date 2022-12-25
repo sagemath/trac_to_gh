@@ -1,16 +1,17 @@
-# Issue 5078: bug in factoring out constant literal
+# Issue 5078: [with patch, positive review] bug in factoring out constant literal
 
 archive/issues_005078.json:
 ```json
 {
     "body": "Assignee: cwitty\n\n```\nsage: R1 = PolynomialRing(QQ, 'x,y,z')\nsage: R1.0\nTraceback (most recent call last):\n...\nNameError: name 'R1_sage_const_p0' is not defined\nsage: R1.gen(0)\nx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5078\n\n",
+    "closed_at": "2009-01-24T16:28:32Z",
     "created_at": "2009-01-23T22:23:39Z",
     "labels": [
         "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "bug in factoring out constant literal",
+    "title": "[with patch, positive review] bug in factoring out constant literal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5078",
     "user": "https://github.com/williamstein"

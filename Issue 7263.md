@@ -4,6 +4,7 @@ archive/issues_007263.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.\n\n```\nI'm having trouble with jmol from the command line in 4.1.2 and\n4.2.alpha0.  E.g.,\nsage: var('A,B,C')\n(A, B, C)\nsage: implicit_plot3d(sin(A)*cos(B)+sin(B)*cos(C)+sin(C)*cos(A),\n(A,-2*pi,2*pi),(B,-2*pi,2*pi),(C,-2*pi,2*pi))\ndoes nothing.  Adding .show() also fails, and quicker.  On\nalpha.sagenb.org I don't have the same problems (though sometimes I\nget the featureless black box), so I think it may be a command-line\nissue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel\nrunning OSX 10.5.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7263\n\n",
+    "closed_at": "2009-10-23T09:03:21Z",
     "created_at": "2009-10-21T23:21:15Z",
     "labels": [
         "component: graphics",

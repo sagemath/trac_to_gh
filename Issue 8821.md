@@ -3,7 +3,8 @@
 archive/issues_008821.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @robertwb\n\nKeywords: tutorial coercion\n\nSo far, the word \"coercion\" has only been used twice in the tutorial - without explanation or reference. I believe coercion is far too important to not cover it in the tutorial, and moreover some pitfalls may be confusing for mathematicians, while programmers might confuse it with implicit type conversion.\n\nMy patch adds such section.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8821\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @robertwb\n\nKeywords: tutorial coercion\n\nSo far, the word \"coercion\" has only been used twice in the tutorial - without explanation or reference. I believe coercion is far too important to not cover it in the tutorial, and moreover some pitfalls may be confusing for mathematicians, while programmers might confuse it with implicit type conversion.\n\nMy patch adds such section.\n\nApply [attachment:trac_8821-tutorial-coercion.patch] and [attachment:trac_8821-ref.patch].\n\nIssue created by migration from https://trac.sagemath.org/ticket/8821\n\n",
+    "closed_at": "2011-08-02T19:44:52Z",
     "created_at": "2010-04-29T09:58:47Z",
     "labels": [
         "component: documentation"
@@ -24,6 +25,8 @@ Keywords: tutorial coercion
 So far, the word "coercion" has only been used twice in the tutorial - without explanation or reference. I believe coercion is far too important to not cover it in the tutorial, and moreover some pitfalls may be confusing for mathematicians, while programmers might confuse it with implicit type conversion.
 
 My patch adds such section.
+
+Apply [attachment:trac_8821-tutorial-coercion.patch] and [attachment:trac_8821-ref.patch].
 
 Issue created by migration from https://trac.sagemath.org/ticket/8821
 

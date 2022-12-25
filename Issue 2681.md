@@ -1,16 +1,17 @@
-# Issue 2681: [with patch, needs review] improve doctest coverage in libs/pari/gen.pyx
+# Issue 2681: [with patch, positive review] improve doctest coverage in libs/pari/gen.pyx
 
 archive/issues_002681.json:
 ```json
 {
     "body": "Assignee: failure\n\nKeywords: doctest pari elliptic\n\nI added a number of doctests to gen.pyx (mostly for the functions dealing with elliptic curves), and did some general cleaning up.  (In the process I ran into a couple of PARI bugs and reported them upstream.)\n\nI intend to continue this at some point, but the patch is getting large so I decided to submit it for review.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2681\n\n",
+    "closed_at": "2008-03-28T05:07:25Z",
     "created_at": "2008-03-27T03:39:00Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] improve doctest coverage in libs/pari/gen.pyx",
+    "title": "[with patch, positive review] improve doctest coverage in libs/pari/gen.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2681",
     "user": "https://github.com/aghitza"

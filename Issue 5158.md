@@ -1,9 +1,10 @@
-# Issue 5158: [with patch, needs review] bug in symbolic factorial
+# Issue 5158: [with patch, positive review] bug in symbolic factorial
 
 archive/issues_005158.json:
 ```json
 {
     "body": "Assignee: whuss\n\n```\nsage: factorial(x)^2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n...\n\nTypeError: unable to make sense of Maxima expression 'x!^2' in Sage\n```\n\nThe attached patch fixes this.\n\nCheers,\n\nWilfried\n\nIssue created by migration from https://trac.sagemath.org/ticket/5158\n\n",
+    "closed_at": "2009-02-05T11:09:52Z",
     "created_at": "2009-02-02T13:52:16Z",
     "labels": [
         "component: calculus",
@@ -11,7 +12,7 @@ archive/issues_005158.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] bug in symbolic factorial",
+    "title": "[with patch, positive review] bug in symbolic factorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5158",
     "user": "https://trac.sagemath.org/admin/accounts/users/whuss"

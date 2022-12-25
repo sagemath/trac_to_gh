@@ -1,16 +1,17 @@
-# Issue 3346: [with patch; not ready for review] finance -- add a very very basic first little tiny amount of quantitative finance functionality to sage
+# Issue 3346: [with patch; positive review with comments] finance -- add a very very basic first little tiny amount of quantitative finance functionality to sage
 
 archive/issues_003346.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nJust add something.  Nothing much.  Probably this will get deleted anyways once there is a grand plan.  But something like this is needed to get some momentum.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3346\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a first tentative step toward Sage having some little amount of FAST useful finance functionality.  This patch provides:\n\n1. finance.[tab] for some new functions\n\n\n2. finance.Stock -- gets historical stock data\n\n3. finance.TimeSeries(...) -- highly optimized object for working with double precision time series.  This does many basic calculations, like moving averages, standard deviations, histograms, all surprisingly much faster than numpy and R.\n\n\nSee also #3356, which has the next step after this gets reviewed. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3346\n\n",
+    "closed_at": "2008-06-08T23:33:30Z",
     "created_at": "2008-06-01T01:22:16Z",
     "labels": [
         "component: finance",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
-    "title": "[with patch; not ready for review] finance -- add a very very basic first little tiny amount of quantitative finance functionality to sage",
+    "title": "[with patch; positive review with comments] finance -- add a very very basic first little tiny amount of quantitative finance functionality to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3346",
     "user": "https://github.com/williamstein"
@@ -18,7 +19,18 @@ archive/issues_003346.json:
 ```
 Assignee: @williamstein
 
-Just add something.  Nothing much.  Probably this will get deleted anyways once there is a grand plan.  But something like this is needed to get some momentum.
+This is a first tentative step toward Sage having some little amount of FAST useful finance functionality.  This patch provides:
+
+1. finance.[tab] for some new functions
+
+
+2. finance.Stock -- gets historical stock data
+
+3. finance.TimeSeries(...) -- highly optimized object for working with double precision time series.  This does many basic calculations, like moving averages, standard deviations, histograms, all surprisingly much faster than numpy and R.
+
+
+See also #3356, which has the next step after this gets reviewed. 
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/3346
 

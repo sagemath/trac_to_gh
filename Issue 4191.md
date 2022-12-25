@@ -1,9 +1,10 @@
-# Issue 4191: Update eclib to eclib-20080310.p6.spkg
+# Issue 4191: [with spkg, postitive review] Update eclib to eclib-20080310.p6.spkg
 
 archive/issues_004191.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nKeywords: eclib\n\nI applied the patch supplied by Arnaud Bergeron to use ${MAKE} instead of make.  At the same time I changed one line in src/g0n/Makefile, adding ecnf to PROGS since otherwise that binary was being left behind after \"make veryclean\".\n\nI seem to remember that mabsoff said that the effect would be negligible since my Makefiles use gnu-isms anyway, but here it is.\n\nSee also #3358.\n\nI just checked that this installs ok on a fresh 3.1.3.alpha1 build.  A fresh spkg is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4191\n\n",
+    "closed_at": "2008-09-25T00:54:33Z",
     "created_at": "2008-09-24T14:54:48Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_004191.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
-    "title": "Update eclib to eclib-20080310.p6.spkg",
+    "title": "[with spkg, postitive review] Update eclib to eclib-20080310.p6.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4191",
     "user": "https://github.com/JohnCremona"

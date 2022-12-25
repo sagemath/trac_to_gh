@@ -4,6 +4,7 @@ archive/issues_008575.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @qed777\n\nKeywords: Sphinx, warning\n\nIn some cases, for example when an enumerated list is ill formated, in text mode ouput sphinx returns silently an empty string. It should at least raise some warning. See #8572 for an instance of the problem.\nAt this point, I don't know if it's a bug of sphinx or the way we call it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8575\n\n",
+    "closed_at": "2011-04-05T16:00:07Z",
     "created_at": "2010-03-22T09:50:40Z",
     "labels": [
         "component: documentation",

@@ -1,9 +1,10 @@
-# Issue 4832: [with patch, needs review] prevent search_src and search_doc from printing the sage banner
+# Issue 4832: [with patch, with positive review] prevent search_src and search_doc from printing the sage banner
 
 archive/issues_004832.json:
 ```json
 {
     "body": "Assignee: @jhpalmieri\n\nKeywords: search_src, banner\n\nRight now, running `search_src` from the command line with a single argument prints the sage banner as well as the search results.  If you include more than one argument, then the banner is not printed. (This isn't true if there enough results to feed into the pager.)  The same goes for `search_doc`.  The reason is that these functions all call `sage -grep` which prints the banner, but including an extra argument calls grep on the output, and the banner won't match.  The function `search_def` doesn't have this problem, because it just calls `search_src` with an extra argument \"def\".\n\nHere's an example:\n\n```\nsage: search_src('noncommutative')\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nalgebras/quaternion_algebra.py:        Return False always, since all quaternion algebras are noncommutative and all fields are commutative.\nalgebras/quaternion_algebra.py:        Return False always, since all quaternion algebras are noncommutative and integral domains are commutative (in SAGE).\nmatrix/matrix_space.py:commutative or noncommutative ring.\nmatrix/matrix0.pyx:        EXAMPLE of matrix multiplication over a noncommutative base ring:\nmatrix/matrix0.pyx:        EXAMPLE of scalar multiplication in the noncommutative case:\n| Sage Version 3.2.2.rc1, Release Date: 2008-12-17                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: search_src('noncommutative', 'ring')\nmatrix/matrix_space.py:commutative or noncommutative ring.\nmatrix/matrix0.pyx:        EXAMPLE of matrix multiplication over a noncommutative base ring:\n\n```\n\nThe attached patch prevents the banner from printing by temporarily setting the environment variable SAGE_BANNER to be \"no\". \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4832\n\n",
+    "closed_at": "2009-01-23T10:27:08Z",
     "created_at": "2008-12-19T16:06:44Z",
     "labels": [
         "component: misc",
@@ -11,7 +12,7 @@ archive/issues_004832.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] prevent search_src and search_doc from printing the sage banner",
+    "title": "[with patch, with positive review] prevent search_src and search_doc from printing the sage banner",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4832",
     "user": "https://github.com/jhpalmieri"

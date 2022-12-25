@@ -1,16 +1,17 @@
-# Issue 5068: change_ring fails for polynomials over finite fields in many cases
+# Issue 5068: [with patch; positive review] change_ring fails for polynomials over finite fields in many cases
 
 archive/issues_005068.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: x.change_ring(GF(3))\nBOOM!\n\nsage: R.<x,y> = GF(9,'a')[]\nsage: x.change_ring(GF(3))\nBOOM!\nTypeError: unable to coerce <type 'sage.rings.finite_field_givaro.FiniteField_givaroElement'> to an integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5068\n\n",
+    "closed_at": "2009-01-24T14:48:20Z",
     "created_at": "2009-01-23T10:38:14Z",
     "labels": [
         "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "change_ring fails for polynomials over finite fields in many cases",
+    "title": "[with patch; positive review] change_ring fails for polynomials over finite fields in many cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5068",
     "user": "https://github.com/williamstein"

@@ -1,15 +1,16 @@
-# Issue 2664: [with patch, needs review] implement a symplectic form for finding symplectic bases
+# Issue 2664: [with patch, with positive review] implement a symplectic form for finding symplectic bases
 
 archive/issues_002664.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: symplectic basis form integer matrix\n\nImplement a `symplectic_form` for computing symplectic bases for alternating, anti-symmetric matrices.  This is essential for computing with polarized Abelian varieties.\n\nThe attached patch computes symplectic forms over fields and the integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2664\n\n",
+    "closed_at": "2008-03-28T21:51:52Z",
     "created_at": "2008-03-25T19:26:39Z",
     "labels": [
         "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
-    "title": "[with patch, needs review] implement a symplectic form for finding symplectic bases",
+    "title": "[with patch, with positive review] implement a symplectic form for finding symplectic bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2664",
     "user": "https://github.com/ncalexan"

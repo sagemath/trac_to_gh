@@ -1,22 +1,23 @@
-# Issue 4110: Memory leak in saving matrices
+# Issue 4110: [with patch, positive review] Memory leak in pickling matrices of GF(2)
 
 archive/issues_004110.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb\n\nThis is in sage-3.1.2.rc1.\n\nIf I do\n\n```\nsage: L = [random_matrix(GF(2), 20, 20) for _ in xrange(10^5)]\n```\nthen my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    25   0  446m 131m  17m S    0  0.2   0:06.30 sage-ipython\n```\n\nThen I do the following:\n\n```\nsage: save(L, 'crap')\nsage: del L\n```\n\nAnd my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    16   0 1471m 1.1g  17m S    0  1.8   1:02.37 sage-ipython\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4110\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @malb\n\nThis is in sage-3.1.2.rc1.\n\nIf I do\n\n```\nsage: L = [random_matrix(GF(2), 20, 20) for _ in xrange(10^5)]\n```\nthen my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    25   0  446m 131m  17m S    0  0.2   0:06.30 sage-ipython\n```\n\nThen I do the following:\n\n```\nsage: save(L, 'crap')\nsage: del L\n```\n\nAnd my process is here:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          \n15889 rlmill    16   0 1471m 1.1g  17m S    0  1.8   1:02.37 sage-ipython\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4110\n\n",
+    "closed_at": "2008-09-14T02:24:28Z",
     "created_at": "2008-09-13T19:00:31Z",
     "labels": [
-        "component: algebra",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Memory leak in saving matrices",
+    "title": "[with patch, positive review] Memory leak in pickling matrices of GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4110",
     "user": "https://github.com/rlmill"
 }
 ```
-Assignee: tbd
+Assignee: mabshoff
 
 CC:  @malb
 

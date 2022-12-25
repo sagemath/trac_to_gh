@@ -1,22 +1,23 @@
-# Issue 1413: added _sig_on/_sig_off to mpolynomial_libsingular
+# Issue 1413: [with patch, with positive review] added _sig_on/_sig_off to mpolynomial_libsingular
 
 archive/issues_001413.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nA few of these were annoying me so I tried to do all the obvious ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1413\n\n",
+    "body": "Assignee: @malb\n\nA few of these were annoying me so I tried to do all the obvious ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1413\n\n",
+    "closed_at": "2008-02-14T18:33:01Z",
     "created_at": "2007-12-06T20:34:55Z",
     "labels": [
-        "component: algebraic geometry",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
-    "title": "added _sig_on/_sig_off to mpolynomial_libsingular",
+    "title": "[with patch, with positive review] added _sig_on/_sig_off to mpolynomial_libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1413",
     "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
-Assignee: @williamstein
+Assignee: @malb
 
 A few of these were annoying me so I tried to do all the obvious ones.
 

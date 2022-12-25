@@ -1,9 +1,10 @@
-# Issue 5024: [with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux
+# Issue 5024: [with spkg, positive review] Solaris 10: Do not create dynamic liblpack on non-Linux
 
 archive/issues_005024.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nWhen we create a dynamic liblapack.so on non-Linux it often creates broken imports for numpy and scipy, so don't do it for now.\n\nThe atlas.spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha0/atlas-3.8.2.p1.spkg\n\nfixes the problem.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5024\n\n",
+    "closed_at": "2009-01-19T11:55:59Z",
     "created_at": "2009-01-19T11:07:40Z",
     "labels": [
         "component: packages: standard",
@@ -11,7 +12,7 @@ archive/issues_005024.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux",
+    "title": "[with spkg, positive review] Solaris 10: Do not create dynamic liblpack on non-Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5024",
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"

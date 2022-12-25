@@ -1,16 +1,18 @@
-# Issue 2859: plotting the vector (0,0,-1) really plots (0,0,1)
+# Issue 2859: [with patch, positive review] arrow3d((0,0,0), (0,0,-1)) plots an *upward* pointing arrow
 
 archive/issues_002859.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nTry the following:\n\n```\nplot(vector((0,0,-1)))\n```\n\nThe resulting vector points up, but should point down.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2859\n\n",
+    "closed_at": "2008-04-09T10:01:04Z",
     "created_at": "2008-04-08T21:10:09Z",
     "labels": [
         "component: graphics",
+        "blocker",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
-    "title": "plotting the vector (0,0,-1) really plots (0,0,1)",
+    "title": "[with patch, positive review] arrow3d((0,0,0), (0,0,-1)) plots an *upward* pointing arrow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2859",
     "user": "https://github.com/jasongrout"

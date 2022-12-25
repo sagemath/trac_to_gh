@@ -1,15 +1,16 @@
-# Issue 8407: word paths isometries + improve construction
+# Issue 8407: more practical construction of word paths
 
 archive/issues_008407.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n1. Add a function that returns the isometries of word paths on the square grid.\n\n2. Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8407\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nImprove the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8407\n\n",
+    "closed_at": "2010-04-29T05:21:10Z",
     "created_at": "2010-03-01T13:09:35Z",
     "labels": [
         "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
-    "title": "word paths isometries + improve construction",
+    "title": "more practical construction of word paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8407",
     "user": "https://github.com/seblabbe"
@@ -19,9 +20,7 @@ Assignee: @seblabbe
 
 CC:  abmasse
 
-1. Add a function that returns the isometries of word paths on the square grid.
-
-2. Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).
+Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).
 
 Issue created by migration from https://trac.sagemath.org/ticket/8407
 

@@ -1,21 +1,24 @@
-# Issue 4770: [with patch, needs review] implement maxima.cputime()
+# Issue 4770: [with patch, positive review] implement maxima.cputime()
 
 archive/issues_004770.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis should work:\n\n```\nsage: t = maxima.cputime()\nsage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])\nsage: maxima.cputime(t)\n0.568913\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4770\n\n",
+    "body": "Assignee: @malb\n\nKeywords: maxima, cputime\n\nThis should work:\n\n```\nsage: t = maxima.cputime()\nsage: _ = maxima.de_solve('diff(y,x,2) + 3*x = y', ['x','y'], [1,1,1])\nsage: maxima.cputime(t)\n0.568913\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4770\n\n",
+    "closed_at": "2009-01-28T16:16:11Z",
     "created_at": "2008-12-12T16:34:29Z",
     "labels": [
         "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "[with patch, needs review] implement maxima.cputime()",
+    "title": "[with patch, positive review] implement maxima.cputime()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4770",
     "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
+
+Keywords: maxima, cputime
 
 This should work:
 

@@ -3,7 +3,8 @@
 archive/issues_000247.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n```\nage: R.<x,y,z,w> = ZZ['x,y,z,w']\nsage: i = ideal(x^2 + y^2 - z^2 - w^2, x-y)\nsage: j = i^2\nsage: j.groebner_basis()\n[y^2 - 2*x*y + x^2, y*w^2 + y*z^2 - 2*y^3 - x*w^2 - x*z^2 + 2*x*y^2, w^4 + 2*z^2*w^2 + z^4 - 4*y^2*w^2 - 4*y^2*z^2 + 4*y^4]\nsage: y^2 - 2*x*y + x^2 in j\nFalse\nsage: 0 in j\nFalse\n```\n\nThe last two lines are WRONG!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/247\n\n",
+    "body": "Assignee: @malb\n\n```\nage: R.<x,y,z,w> = ZZ['x,y,z,w']\nsage: i = ideal(x^2 + y^2 - z^2 - w^2, x-y)\nsage: j = i^2\nsage: j.groebner_basis()\n[y^2 - 2*x*y + x^2, y*w^2 + y*z^2 - 2*y^3 - x*w^2 - x*z^2 + 2*x*y^2, w^4 + 2*z^2*w^2 + z^4 - 4*y^2*w^2 - 4*y^2*z^2 + 4*y^4]\nsage: y^2 - 2*x*y + x^2 in j\nFalse\nsage: 0 in j\nFalse\n```\n\nThe last two lines are WRONG!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/247\n\n",
+    "closed_at": "2007-02-07T05:02:39Z",
     "created_at": "2007-02-07T04:22:07Z",
     "labels": [
         "component: basic arithmetic",
@@ -15,7 +16,7 @@ archive/issues_000247.json:
     "user": "William Stein"
 }
 ```
-Assignee: somebody
+Assignee: @malb
 
 ```
 age: R.<x,y,z,w> = ZZ['x,y,z,w']

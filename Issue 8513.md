@@ -4,9 +4,11 @@ archive/issues_008513.json:
 ```json
 {
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @rlmill\n\nKeywords: documentation, graph theory\n\nI noticed a few weeks ago while reviewing a patch that important files in the graph theory folder were not appearing anywhere in the reference manual. For instance, functions such as `vertex_cut` or `edge_cut` do not appear, as well as all functions defined only for directed graphs.\n\nAt that time, I thought about adding the missing files with the patch, but since there were a lot of warnings displayed by Sphinx while generating the documentation, I changed my mind.\n\nI think it would be a good idea to use this ticket to fix this, but since it touches many files of graph theory, it may be hard to do it in a clean way. Someone has an idea of what would be the best approach ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8513\n\n",
+    "closed_at": "2010-04-16T18:46:01Z",
     "created_at": "2010-03-12T23:52:07Z",
     "labels": [
         "component: graph theory",
+        "minor",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",

@@ -1,16 +1,17 @@
-# Issue 6956: cannot differentiate cotangent
+# Issue 6956: [with patch, positive review] cannot differentiate cotangent
 
 archive/issues_006956.json:
 ```json
 {
     "body": "CC:  @jasongrout @kcrisman\n\nFrom sage-support:\n\n```\nOn Fri, 18 Sep 2009 13:15:46 -0500\nJason Grout <jason-sage@creativetrax.com> wrote:\n\n> On alpha.sagenb.org, I get the following:\n> \n> sage: t=var('t')\n> sage: diff(cot(t),t)\n> D[0](cot)(t)\n> sage: diff(cos(t)/sin(t),t)\n> -cos(t)^2/sin(t)^2 - 1\n> \n> \n> Does Sage not know that cot(t) is cos(t)/sin(t)? \n```\nUnfortunately it doesn't. \n\nGiNaC doesn't define the function `cot`. Sage defines it in the file\n`sage/functions/trig.py` starting at line 184. I suppose it was written quickly by Mike during the symbolics switch.\n\nDefining a custom derivative function (named `_derivative_`) in that\nclass should fix this.\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/752de34c876720cc\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6956\n\n",
+    "closed_at": "2009-09-24T15:21:00Z",
     "created_at": "2009-09-18T18:32:18Z",
     "labels": [
         "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
-    "title": "cannot differentiate cotangent",
+    "title": "[with patch, positive review] cannot differentiate cotangent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6956",
     "user": "https://github.com/burcin"

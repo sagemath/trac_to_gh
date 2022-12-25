@@ -4,6 +4,7 @@ archive/issues_009608.json:
 ```json
 {
     "body": "Assignee: mvngu\n\nCC:  @dandrake @mwhansen rossk @nexttime\n\nDocbuild warnings in Sage 4.5.2.alpha1:\n\n```sh\n$ ./sage -docbuild all html -j\n[...]\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/interfaces/matlab.py:docstring of sage.interfaces.matlab.Matlab.strip_answer:6: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/interfaces/matlab.py:docstring of sage.interfaces.matlab.Matlab.strip_answer:9: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n[...]\n```\n\nPossibly related ticket: #2119.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9608\n\n",
+    "closed_at": "2010-07-29T04:50:55Z",
     "created_at": "2010-07-27T07:08:40Z",
     "labels": [
         "component: documentation",

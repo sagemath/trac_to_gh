@@ -1,16 +1,17 @@
-# Issue 5015: Horrible bug in old (and new) symbolic calculus: f(x)=1; f*e --> BOOM!
+# Issue 5015: [with patch, positive review] Horrible bug in old (and new) symbolic calculus: f(x)=1; f*e --> BOOM!
 
 archive/issues_005015.json:
 ```json
 {
     "body": "Assignee: @burcin\n\n```\n\n\nOn Sun, Jan 18, 2009 at 7:08 AM, YannLC  wrote:\n>\n> but in fact the same error occurs without ns=1...\n>\n> ----------------------------------------------------------------------\n> | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: f(x)=1\n> sage: f*e\n> [...]\n> RuntimeError: maximum recursion depth exceeded\n\nThat is weird.  What a horrible bug!   Thanks for reporting this.  It is now trac #\n```\n\nIt also happens with ns=1.  I've verified this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5015\n\n",
+    "closed_at": "2009-01-19T04:14:59Z",
     "created_at": "2009-01-18T15:18:36Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
-    "title": "Horrible bug in old (and new) symbolic calculus: f(x)=1; f*e --> BOOM!",
+    "title": "[with patch, positive review] Horrible bug in old (and new) symbolic calculus: f(x)=1; f*e --> BOOM!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5015",
     "user": "https://github.com/williamstein"

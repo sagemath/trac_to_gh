@@ -4,6 +4,7 @@ archive/issues_009732.json:
 ```json
 {
     "body": "Assignee: jason, was\n\nThis was from sage-devel on 14 Jul.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9732\n\n",
+    "closed_at": "2017-07-04T13:52:37Z",
     "created_at": "2010-08-12T06:38:10Z",
     "labels": [
         "component: notebook"

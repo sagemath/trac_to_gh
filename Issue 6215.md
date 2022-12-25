@@ -1,16 +1,17 @@
-# Issue 6215: Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect
+# Issue 6215: [with patch, positive review] Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect
 
 archive/issues_006215.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: jucys_murphy\n\nThis mini patch adds some more doctests for #6126, taken from\nanother patch by Valentin Ferray  on sage-combinat for the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6215\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: jucys_murphy\n\nThis mini patch adds some more doctests for #6126, taken from\nanother patch by Valentin Ferray  on sage-combinat for the same problem.\n\nPositive review from myself, but since I put the patch together\nconfirmation from someone else would be good.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6215\n\n",
+    "closed_at": "2009-06-24T10:13:39Z",
     "created_at": "2009-06-04T23:28:06Z",
     "labels": [
-        "component: algebra",
-        "bug"
+        "component: combinatorics",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
-    "title": "Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect",
+    "title": "[with patch, positive review] Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6215",
     "user": "https://github.com/nthiery"
@@ -24,6 +25,9 @@ Keywords: jucys_murphy
 
 This mini patch adds some more doctests for #6126, taken from
 another patch by Valentin Ferray  on sage-combinat for the same problem.
+
+Positive review from myself, but since I put the patch together
+confirmation from someone else would be good.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6215
 

@@ -3,7 +3,8 @@
 archive/issues_008038.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  acleone @TimDumol\n\nWhen a user is signing up for a notebook account, the email address field does not accept + in the address, even though such addresses are valid -- Gmail, for example, does this. If your account is foo`@`gmail.com, then foo+whatever`@`gmail.com automatically gets delivered to you.\n\nTesting with Gmail, things like \"foo++\", \"foo+bar+\" and so on all are accepted. We need to update the regular expression in sagenb/notebook/twist.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8038\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  acleone @TimDumol\n\nWhen a user is signing up for a notebook account, the email address field does not accept + in the address, even though such addresses are valid -- Gmail, for example, does this. If your account is foo`@`gmail.com, then foo+whatever`@`gmail.com automatically gets delivered to you.\n\nTesting with Gmail, things like \"foo++\", \"foo+bar+\" and so on all are accepted. We need to update the regular expression in sagenb/notebook/twist.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8038\n\n",
+    "closed_at": "2010-05-04T04:44:23Z",
     "created_at": "2010-01-22T07:07:08Z",
     "labels": [
         "component: notebook",
@@ -16,7 +17,7 @@ archive/issues_008038.json:
     "user": "https://github.com/dandrake"
 }
 ```
-Assignee: @williamstein
+Assignee: @dandrake
 
 CC:  acleone @TimDumol
 

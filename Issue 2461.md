@@ -1,16 +1,17 @@
-# Issue 2461: vector norms should have a reasonable default
+# Issue 2461: [with patch, with positive review] vector norms should have a reasonable default
 
 archive/issues_002461.json:
 ```json
 {
     "body": "Assignee: somebody\n\nv.norm() should work without any arguments, returning the (standard) Euclidean norm. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2461\n\n",
+    "closed_at": "2008-03-14T02:27:28Z",
     "created_at": "2008-03-10T18:05:31Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
-    "title": "vector norms should have a reasonable default",
+    "title": "[with patch, with positive review] vector norms should have a reasonable default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2461",
     "user": "https://github.com/robertwb"

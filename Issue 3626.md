@@ -1,9 +1,10 @@
-# Issue 3626: Graph.set_boundary only takes lists
+# Issue 3626: [with patch, positive review] Graph.set_boundary only takes lists
 
 archive/issues_003626.json:
 ```json
 {
     "body": "Assignee: boothby\n\nCC:  @rlmill\n\n```\nsage: G = Graph(\"George\")\nsage: G.set_boundary(set([1,2,3]))\nsage: G.get_boundary()\n[]\n```\n\n... which makes sense, given the code...\n\n```\n    def set_boundary(self, boundary):\n        ...\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\n    def set_embedding(self, embedding):\n        ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3626\n\n",
+    "closed_at": "2008-07-16T00:42:12Z",
     "created_at": "2008-07-09T18:49:36Z",
     "labels": [
         "component: graph theory",
@@ -11,7 +12,7 @@ archive/issues_003626.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
-    "title": "Graph.set_boundary only takes lists",
+    "title": "[with patch, positive review] Graph.set_boundary only takes lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3626",
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"

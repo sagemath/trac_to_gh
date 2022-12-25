@@ -4,6 +4,7 @@ archive/issues_008193.json:
 ```json
 {
     "body": "Assignee: @aghitza\n\nThe title says all!  The code in sage/schemes/plane_curves/projective_curve.py for finding all points on a plane curve over a finite field just enumerates all point in `P^2` and tests every one, which is less than optimal.\n\nA patch to improve this is on its way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8193\n\n",
+    "closed_at": "2010-02-11T15:05:18Z",
     "created_at": "2010-02-05T12:29:54Z",
     "labels": [
         "component: algebraic geometry"

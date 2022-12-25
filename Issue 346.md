@@ -4,11 +4,10 @@ archive/issues_000346.json:
 ```json
 {
     "body": "Assignee: boothby\n\nIn Firefox 1.5 (which is still what ships standard with, say Redhat), the following happens:\nIf I select text by dragging in a cell that currently does not have input focus, then the cell that did have focus loses it, but the cell in which I select the text does not gain focus.\n\nThe result is that the usual reflex for deleting the selection (press backspace) doesn't get sent to the cell but to the browser window, where it means the back button!\n\nIf I first put the cell in focus and then select the text, things work as expected, so there is a work-around. However, it does involve unlearning a reflex that works almost everywhere else. The penalty, getting sent to the previously visited page, is also a rather shocking experience.\n\nI understand that this behaviour might be out of the control of sage, but it would be nice if you could work around it.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/346\n\n",
+    "closed_at": "2008-03-17T04:48:58Z",
     "created_at": "2007-04-03T21:04:31Z",
     "labels": [
-        "component: notebook",
-        "minor",
-        "bug"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Notebook input cell focus",

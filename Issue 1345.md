@@ -1,16 +1,17 @@
-# Issue 1345: I is sometimes wrapped in SymbolicConstant, sometimes not
+# Issue 1345: [with patch, with positive review] I is sometimes wrapped in SymbolicConstant, sometimes not
 
 archive/issues_001345.json:
 ```json
 {
     "body": "Assignee: @mwhansen\n\nThis behavior seems strange:\n\n```\n sage: foo = I+I\n sage: foo._operands\n [I, I]\n sage: [type(i) for i in foo._operands]\n [<class 'sage.calculus.calculus.SymbolicConstant'>,\n  <class 'sage.functions.constants.I_class'>]\n```\nAnd here's another strange thing (probably the same bug):\n\n```\n sage: is_SymbolicExpression(SR(I))\n False\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1345\n\n",
+    "closed_at": "2007-12-01T11:14:47Z",
     "created_at": "2007-11-30T22:20:45Z",
     "labels": [
         "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
-    "title": "I is sometimes wrapped in SymbolicConstant, sometimes not",
+    "title": "[with patch, with positive review] I is sometimes wrapped in SymbolicConstant, sometimes not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1345",
     "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"

@@ -3,7 +3,8 @@
 archive/issues_008442.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  sage-combinat @nilesjohnson\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8442\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  sage-combinat @nilesjohnson\n\nThis patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.\n\nA copy of the html documentation built with dvipng may be found at:\n\nhttp://match.stanford.edu/bump/thematic_tutorials/lie.html\n\nor built with jsmath:\n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie.html\n\nNote: only the second js version is up to date. I will update the other one later.\n\nApply:\n\n1. [attachment:trac_8442-rebased-4.6.1.patch]\n2. [attachment:trac_8442-png-files.patch]\n3. [attachment:trac_8442-ref-spacing.patch]\n4. [attachment:8442_manifest.patch]\n\nThen build the doc with\n\n```\nsage -docbuild thematic_tutorials html\n```\n\nadd the `-j` flag to use jsmath.\n\nSee also #8470.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8442\n\n",
+    "closed_at": "2011-01-28T08:48:05Z",
     "created_at": "2010-03-05T03:08:27Z",
     "labels": [
         "component: documentation"
@@ -15,11 +16,38 @@ archive/issues_008442.json:
     "user": "https://github.com/dwbump"
 }
 ```
-Assignee: mvngu
+Assignee: @dwbump
 
 CC:  sage-combinat @nilesjohnson
 
+This patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.
 
+A copy of the html documentation built with dvipng may be found at:
+
+http://match.stanford.edu/bump/thematic_tutorials/lie.html
+
+or built with jsmath:
+
+http://match.stanford.edu/bump/thematic_tutorials-js/lie.html
+
+Note: only the second js version is up to date. I will update the other one later.
+
+Apply:
+
+1. [attachment:trac_8442-rebased-4.6.1.patch]
+2. [attachment:trac_8442-png-files.patch]
+3. [attachment:trac_8442-ref-spacing.patch]
+4. [attachment:8442_manifest.patch]
+
+Then build the doc with
+
+```
+sage -docbuild thematic_tutorials html
+```
+
+add the `-j` flag to use jsmath.
+
+See also #8470.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8442
 

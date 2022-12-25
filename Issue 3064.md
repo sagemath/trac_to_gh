@@ -1,16 +1,17 @@
-# Issue 3064: empty matrices: density() function throws a ZeroDivisionError
+# Issue 3064: [with patch; positive review] empty matrices: density() function throws a ZeroDivisionError
 
 archive/issues_003064.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\n```\nsage: a = matrix([])\n\nsage: a.density()\n---------------------------------------------------------------------------\n\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3064\n\n",
+    "closed_at": "2008-05-01T05:45:57Z",
     "created_at": "2008-04-30T15:12:48Z",
     "labels": [
         "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
-    "title": "empty matrices: density() function throws a ZeroDivisionError",
+    "title": "[with patch; positive review] empty matrices: density() function throws a ZeroDivisionError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3064",
     "user": "https://github.com/dfdeshom"

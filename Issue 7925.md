@@ -4,6 +4,7 @@ archive/issues_007925.json:
 ```json
 {
     "body": "Assignee: jkantor\n\nCC:  @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7925\n\n",
+    "closed_at": "2010-01-16T03:55:58Z",
     "created_at": "2010-01-14T06:13:14Z",
     "labels": [
         "component: numerical",

@@ -1,9 +1,10 @@
-# Issue 3710: Segfault in Tachyon on some latest GCC versions
+# Issue 3710: [with spkg, positive review] Segfault in Tachyon on some latest GCC versions
 
 archive/issues_003710.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSegfault confirmed on 32 bit linux with GCC 4.3.1 and GCC 4.2.4, versions prior to GCC 4.2.3 including should work, status of version 4.3.0 is still not known, also status of 64 bit builds is not known. This bug is bug in gcc or bug in Tachyon that showed up after some changes to GCC somewhere in between 2008-02-01 and 2008-05-19. Status of 64 bit version is unknown because I have no access to hardware with those compile versions.\n\nWhen 32 bit threaded version of Tachyon is built using \"make linux-thr\" and used to render attached scene, it segfaults around 59%. Non threaded version works (one built with \"make linux\"), threaded version works when -fno-crossjumping -fno-reorder-blocks compilation flags are added.\n\nStill working to get smaller test case and informations on gcc 4.3.0, there will hopefully be patch/spkg soon.\n\nThis ticket is follow-up of report from \"Sage 3.0.6.alpha0 released\" sage-devel thread.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3710\n\n",
+    "body": "Assignee: aginiewicz\n\nSegfault confirmed on 32 bit linux with GCC 4.3.1 and GCC 4.2.4, versions prior to GCC 4.2.3 including should work, status of version 4.3.0 is still not known, also status of 64 bit builds is not known. This bug is bug in gcc or bug in Tachyon that showed up after some changes to GCC somewhere in between 2008-02-01 and 2008-05-19. Status of 64 bit version is unknown because I have no access to hardware with those compile versions.\n\nWhen 32 bit threaded version of Tachyon is built using \"make linux-thr\" and used to render attached scene, it segfaults around 59%. Non threaded version works (one built with \"make linux\"), threaded version works when -fno-crossjumping -fno-reorder-blocks compilation flags are added.\n\nStill working to get smaller test case and informations on gcc 4.3.0, there will hopefully be patch/spkg soon.\n\nThis ticket is follow-up of report from \"Sage 3.0.6.alpha0 released\" sage-devel thread.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3710\n\n",
+    "closed_at": "2008-08-22T21:42:38Z",
     "created_at": "2008-07-23T00:18:44Z",
     "labels": [
         "component: graphics",
@@ -11,13 +12,13 @@ archive/issues_003710.json:
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
-    "title": "Segfault in Tachyon on some latest GCC versions",
+    "title": "[with spkg, positive review] Segfault in Tachyon on some latest GCC versions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3710",
     "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
-Assignee: @williamstein
+Assignee: aginiewicz
 
 Segfault confirmed on 32 bit linux with GCC 4.3.1 and GCC 4.2.4, versions prior to GCC 4.2.3 including should work, status of version 4.3.0 is still not known, also status of 64 bit builds is not known. This bug is bug in gcc or bug in Tachyon that showed up after some changes to GCC somewhere in between 2008-02-01 and 2008-05-19. Status of 64 bit version is unknown because I have no access to hardware with those compile versions.
 

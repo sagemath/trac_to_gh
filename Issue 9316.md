@@ -4,6 +4,7 @@ archive/issues_009316.json:
 ```json
 {
     "body": "Assignee: @wjp\n\nCC:  @nexttime\n\nMany people have reported a \"File not found\" error that is reported at the end of \"make test\" when *in fact* a timeout occurred. \n\nThis is caused by some weird code introduced in #7993 (see sage-test):\n\n```\n...\n    s = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd) + ' \"%s\"' % F\n    err = os.system(s)\n    # On unix systems, the return value of os.system has the process return\n    # value in the second byte.\n    err = err // 256\n\n    # Check the process exit code that sage-doctest returns\n\n    if err == 1: # process exit code 1: File not found\n        failed.append(sage_test_command(F)+\" # File not found\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9316\n\n",
+    "closed_at": "2010-07-22T07:59:57Z",
     "created_at": "2010-06-23T04:19:18Z",
     "labels": [
         "component: doctest coverage",

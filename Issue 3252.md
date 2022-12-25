@@ -1,15 +1,16 @@
-# Issue 3252: add kbase functionality to libsingular
+# Issue 3252: [with patch, positive review] add kbase functionality to libsingular
 
 archive/issues_003252.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nimplemented a cython wrapper for singular's kbase command. This is significantly faster than doing singular.kbase() because it doesn't have the pexpect overhead. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3252\n\n",
+    "closed_at": "2008-05-18T16:18:01Z",
     "created_at": "2008-05-18T03:35:33Z",
     "labels": [
         "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
-    "title": "add kbase functionality to libsingular",
+    "title": "[with patch, positive review] add kbase functionality to libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3252",
     "user": "https://github.com/yqiang"

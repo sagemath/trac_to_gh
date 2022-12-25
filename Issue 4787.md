@@ -1,22 +1,25 @@
-# Issue 4787: Race condition in sage-doctest folder creation
+# Issue 4787: [with patch, positive review] Race condition in sage-doctest folder creation
 
 archive/issues_004787.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThere is a race condition in sage-doctest during folder creation at line 586, which is in a function called at line 441.  This can cause doctesting a file to fail with file not found errors.  This is different then the other file not found error that was in ptest.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4787\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: mabshoff\n\nThere is a race condition in sage-doctest during folder creation at line 586, which is in a function called at line 441.  This can cause doctesting a file to fail with file not found errors.  This is different then the other file not found error that was in ptest.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4787\n\n",
+    "closed_at": "2008-12-14T05:43:01Z",
     "created_at": "2008-12-14T00:58:37Z",
     "labels": [
         "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
-    "title": "Race condition in sage-doctest folder creation",
+    "title": "[with patch, positive review] Race condition in sage-doctest folder creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4787",
     "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
+
+Keywords: mabshoff
 
 There is a race condition in sage-doctest during folder creation at line 586, which is in a function called at line 441.  This can cause doctesting a file to fail with file not found errors.  This is different then the other file not found error that was in ptest.  
 

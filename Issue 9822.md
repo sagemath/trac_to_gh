@@ -4,6 +4,7 @@ archive/issues_009822.json:
 ```json
 {
     "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system fails for a system with only one equation:\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de1 = diff(x,t) + 1 == 0\nsage: desolve_system([de1], [x]) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9823\n\n",
+    "closed_at": "2010-09-29T08:38:49Z",
     "created_at": "2010-08-27T16:40:56Z",
     "labels": [
         "component: calculus",

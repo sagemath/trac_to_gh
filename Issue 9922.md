@@ -1,15 +1,16 @@
-# Issue 9922: Minimum Feedback Arc/Edge set through constraint generation
+# Issue 9922: Minimum Feedback Arc/Vertex set through constraint generation
 
 archive/issues_009922.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  abmasse mvngu\n\nBecause of the friend who made me work on Feedback Arc Set and is already the cause of #9911, I implemented another LP formulation of this problem using constraint generation. The performances are....... IMPROVED `:-)`\n\nIf you have any question while reviewing this, please do not hesitate. As usual, I tried my best to make the code understandable `:-)`\n\nRequire #9911\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9923\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  abmasse mvngu\n\nBecause of the friend who made me work on Feedback Arc Set and is already the cause of #9911, I implemented another LP formulation of this problem using constraint generation. The performances are....... IMPROVED `:-)`\n\nIf you have any question while reviewing this, please do not hesitate. As usual, I tried my best to make the code understandable `:-)`\n\nRequires :\n\n* #9911\n* #10432\n\nApply only : trac_9923-python.patch. \n\nThe other version is written in Cython, but I thought it better to have a more readable code if the difference in performances is not needed. It is nice to keep the Cython version somewhere, just in case it would be needed in the future.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9923\n\n",
+    "closed_at": "2011-01-26T22:26:46Z",
     "created_at": "2010-09-16T20:25:16Z",
     "labels": [
         "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
-    "title": "Minimum Feedback Arc/Edge set through constraint generation",
+    "title": "Minimum Feedback Arc/Vertex set through constraint generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9922",
     "user": "https://github.com/nathanncohen"
@@ -23,7 +24,14 @@ Because of the friend who made me work on Feedback Arc Set and is already the ca
 
 If you have any question while reviewing this, please do not hesitate. As usual, I tried my best to make the code understandable `:-)`
 
-Require #9911
+Requires :
+
+* #9911
+* #10432
+
+Apply only : trac_9923-python.patch. 
+
+The other version is written in Cython, but I thought it better to have a more readable code if the difference in performances is not needed. It is nice to keep the Cython version somewhere, just in case it would be needed in the future.
 
 Nathann
 

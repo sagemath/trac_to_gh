@@ -1,22 +1,23 @@
-# Issue 6201: CC() raises exception instead of returning 0
+# Issue 6201: [with patch, positive review] CC() raises exception instead of returning 0
 
 archive/issues_006201.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is inconsistent:\n\n```\nZZ(); QQ(); RR(); CC()\n\n0\n0\n0.000000000000000\nTraceback (click to the left for traceback)\n...\nTypeError: __call__() takes at least 2 arguments (1 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6201\n\n",
+    "body": "Assignee: @aghitza\n\nThis is inconsistent:\n\n```\nZZ(); QQ(); RR(); CC()\n\n0\n0\n0.000000000000000\nTraceback (click to the left for traceback)\n...\nTypeError: __call__() takes at least 2 arguments (1 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6201\n\n",
+    "closed_at": "2009-06-13T21:19:45Z",
     "created_at": "2009-06-03T21:14:11Z",
     "labels": [
         "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
-    "title": "CC() raises exception instead of returning 0",
+    "title": "[with patch, positive review] CC() raises exception instead of returning 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6201",
     "user": "https://github.com/fredrik-johansson"
 }
 ```
-Assignee: somebody
+Assignee: @aghitza
 
 This is inconsistent:
 

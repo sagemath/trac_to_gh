@@ -4,6 +4,7 @@ archive/issues_006995.json:
 ```json
 {
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nNotice that this plot is mostly white, but the white space represents two different values---one is above the top contour, the other is below the bottom contour.\n\nWe ought to make it so that stuff above/below the requested contours is shaded appropriately.\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6995\n\n",
+    "closed_at": "2009-11-12T06:57:59Z",
     "created_at": "2009-09-22T21:32:13Z",
     "labels": [
         "component: graphics",

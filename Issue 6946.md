@@ -4,6 +4,7 @@ archive/issues_006946.json:
 ```json
 {
     "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nThe delaunay packages appears to be the same, with just some name changes.\n\nBut the mpmath while providing the same feature, has a significant large amount of patches.\n\nIn either case, if patching sage to use sympy/mpmath and mpatplotlib/delaunay, the doctests works, but there may exit some special reason to use mpmath instead of sympy/mpmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6946\n\n",
+    "closed_at": "2015-06-19T08:41:47Z",
     "created_at": "2009-09-16T20:19:33Z",
     "labels": [
         "component: packages: standard",

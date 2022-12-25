@@ -3,11 +3,11 @@
 archive/issues_009892.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @nexttime @robertwb\n\nIn Sage, there is no reason for the PARI library to catch signals (by default, it catches SIGBUS, SIGFPE, SIGINT, SIGBREAK, SIGPIPE, SIGSEGV).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9893\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @robertwb\n\nKeywords: pari signals\n\nIn Sage, there is no reason for the PARI library to catch signals (by default, it catches SIGBUS, SIGFPE, SIGINT, SIGBREAK, SIGPIPE, SIGSEGV).\n\nThe attached patch also simplifies `PariInstance.__init__()` and removes some unused variables.\n\nParts of an earlier version this patch has been moved to #9678.\n\nRelated: #9678\nDependency: #10115\n\nIssue created by migration from https://trac.sagemath.org/ticket/9893\n\n",
+    "closed_at": "2010-11-15T23:26:38Z",
     "created_at": "2010-09-10T21:59:30Z",
     "labels": [
-        "component: c_lib",
-        "minor"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Make PARI *not* catch signals",
@@ -16,11 +16,20 @@ archive/issues_009892.json:
     "user": "https://github.com/jdemeyer"
 }
 ```
-Assignee: tba
+Assignee: @williamstein
 
 CC:  @nexttime @robertwb
 
+Keywords: pari signals
+
 In Sage, there is no reason for the PARI library to catch signals (by default, it catches SIGBUS, SIGFPE, SIGINT, SIGBREAK, SIGPIPE, SIGSEGV).
+
+The attached patch also simplifies `PariInstance.__init__()` and removes some unused variables.
+
+Parts of an earlier version this patch has been moved to #9678.
+
+Related: #9678
+Dependency: #10115
 
 Issue created by migration from https://trac.sagemath.org/ticket/9893
 

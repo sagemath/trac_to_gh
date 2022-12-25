@@ -1,16 +1,17 @@
-# Issue 9627: converting from symbolic ring to int is broken,
+# Issue 9627: converting from symbolic ring to int is broken
 
 archive/issues_009627.json:
 ```json
 {
     "body": "Assignee: @robertwb\n\nCC:  @katestange @orlitzky\n\nHere is simple example:\n\n```\nsage: h = 3^64;\nsage: int(h)==int(SR(h))\nFALSE\n```\nLooking a bit deeper into this, it seems that the first 100 bits are correct, and after that int(SR(h)) is just zeroes. (As a side note, the conversion to ZZ works without a problem.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9627\n\n",
+    "closed_at": "2012-06-19T13:29:25Z",
     "created_at": "2010-07-28T20:33:03Z",
     "labels": [
-        "component: coercion",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
-    "title": "converting from symbolic ring to int is broken,",
+    "title": "converting from symbolic ring to int is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9627",
     "user": "https://github.com/syazdani77"
